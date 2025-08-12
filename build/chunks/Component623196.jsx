@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 623196, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk891170 = require("./891170.js");
+  Chunk189047 = require("./189047.js");
 let j = e => {
   let {
     onConfirm: t
@@ -78,7 +78,7 @@ function E() {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.GDPR_REQUEST_DATA)
       })
     }), v ? (0, Chunk255367.jsx)(Chunk481060.Zbd, {
-      className: Chunk891170.card,
+      className: Chunk189047.card,
       children: (0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk388032.intl.format(Chunk388032.t.RNDlV1, {
@@ -86,7 +86,7 @@ function E() {
         })
       })
     }) : (0, Chunk255367.jsx)("div", {
-      className: Chunk891170.button,
+      className: Chunk189047.button,
       children: (0, Chunk255367.jsx)(Chunk481060.ua7, {
         text: module.isStaff() ? Chunk388032.intl.string(Chunk388032.t.ZPQLHx) : module.verified ? null : Chunk388032.intl.string(Chunk388032.t["c1f88/"]),
         children: e => {

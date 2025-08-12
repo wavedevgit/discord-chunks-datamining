@@ -39,7 +39,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk151189 = require("./151189.jsx"),
   Chunk611480 = require("./611480.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk655304 = require("./655304.js");
+  Chunk102873 = require("./102873.js");
 
 function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -160,7 +160,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
             }), (0, u.ZDy)(async () => {
               let {
                 default: t
-              } = await Promise.all([n.e("93626"), n.e("61547")]).then(n.bind(n, 136735));
+              } = await Promise.all([n.e("93626"), n.e("72865")]).then(n.bind(n, 136735));
               return n => (0, r.jsx)(t, B({
                 guildId: e.guild_id
               }, n))

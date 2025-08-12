@@ -7,17 +7,17 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk462508 = require("./462508.js");
+  Chunk769311 = require("./769311.js");
 
 function s() {
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk462508.container,
+    className: Chunk769311.container,
     children: [(0, Chunk255367.jsx)("div", {
-      className: o()(Chunk462508.placeholderItem, Chunk462508.chatTextAreaPlaceholder)
+      className: o()(Chunk769311.placeholderItem, Chunk769311.chatTextAreaPlaceholder)
     }), (0, Chunk255367.jsx)("div", {
-      className: o()(Chunk462508.placeholderItem, Chunk462508.appLauncherPlaceholder)
+      className: o()(Chunk769311.placeholderItem, Chunk769311.appLauncherPlaceholder)
     }), (0, Chunk255367.jsx)("div", {
-      className: o()(Chunk462508.placeholderItem, Chunk462508.entryPointAppCommandPlaceholder)
+      className: o()(Chunk769311.placeholderItem, Chunk769311.entryPointAppCommandPlaceholder)
     })]
   })
 }

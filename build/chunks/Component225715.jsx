@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk41959 = require("./41959.jsx"),
   Chunk245561 = require("./245561.jsx"),
-  Chunk890515 = require("./890515.js");
+  Chunk231222 = require("./231222.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -104,7 +104,7 @@ let m = e => {
 
 function E() {
   return (0, Chunk255367.jsx)("hr", {
-    className: Chunk890515.divider
+    className: Chunk231222.divider
   })
 }
 let b = e => {

@@ -1,9 +1,9 @@
-/** Chunk was on 72939 **/
-/** chunk id: 588797, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 98098 **/
+/** chunk id: 588797, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 });
-let o = (0, require("./818083.js").B)({
+let l = (0, require("./818083.js").B)({
   kind: "user",
   id: "2023-06_guild_boosting_legacy_pricing_fix_experiment",
   label: "Guild Boosting Legacy Pricing Fix Experiment",

@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 64914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk40713 = require("./40713.js");
+  Chunk909862 = require("./909862.js");
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -101,7 +101,7 @@ function O() {
     }), (0, Chunk255367.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,
       children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
-        className: module ? "" : Chunk40713.formSwitchExtension,
+        className: module ? "" : Chunk909862.formSwitchExtension,
         value: module,
         onChange: N,
         note: Chunk388032.intl.string(Chunk388032.t.Afc7l5),
@@ -113,7 +113,7 @@ function O() {
         look: Chunk494620.z.WARNING,
         children: Chunk388032.intl.string(Chunk388032.t.j7S6IS)
       }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
-        className: Chunk40713.infoBoxDivider
+        className: Chunk909862.infoBoxDivider
       })]
     }), (0, Chunk255367.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,

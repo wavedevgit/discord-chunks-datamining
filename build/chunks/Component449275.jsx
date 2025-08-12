@@ -7,7 +7,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk770146 = require("./770146.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk716147 = require("./716147.js");
+  Chunk539167 = require("./539167.js");
 class s extends Chunk73800.PureComponent {
   render() {
     let {
@@ -19,7 +19,7 @@ class s extends Chunk73800.PureComponent {
       children: [(0, Chunk255367.jsx)(Chunk770146.Z, {
         children: Chunk388032.intl.string(Chunk388032.t.m8OiMj)
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk716147.content,
+        className: Chunk539167.content,
         children: exports.legalNotice
       })]
     })

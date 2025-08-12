@@ -26,7 +26,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk921944 = require("./921944.js"),
   Chunk871465 = require("./871465.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk394049 = require("./394049.js");
+  Chunk810644 = require("./810644.js");
 
 function x(e, t) {
   let n = b.Y.useExperiment({
@@ -50,7 +50,7 @@ function E() {
     }),
     [t] = (0, Chunk706140.cv)([Chunk704215.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE]);
   return module.enabled && module.nestedEntry && exports === Chunk704215.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE && (0, Chunk255367.jsx)(Chunk481060.IGR, {
-    className: Chunk394049.newBadge,
+    className: Chunk810644.newBadge,
     text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
   })
 }
@@ -122,7 +122,7 @@ function I(e, t, a, x) {
     action: e !== y.aIL ? () => (0, o.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("5863"), n.e("59322")]).then(n.bind(n, 751212));
+      } = await Promise.all([n.e("5863"), n.e("56959")]).then(n.bind(n, 751212));
       return n => {
         var i, l;
         return (0, r.jsx)(t, (i = function(e) {

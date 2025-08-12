@@ -1,4 +1,4 @@
-/** Chunk was on 34779 **/
+/** Chunk was on 26628 **/
 /** chunk id: 428127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk934415 = require("./934415.js"),
   Chunk968847 = require("./968847.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk762039 = require("./762039.js");
+  Chunk76260 = require("./76260.js");
 let b = {
   friction: 30,
   tension: 300

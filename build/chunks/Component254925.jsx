@@ -1,4 +1,4 @@
-/** Chunk was on 22988 **/
+/** Chunk was on 5533 **/
 /** chunk id: 254925, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -29,7 +29,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk131085 = require("./131085.js"),
   Chunk195196 = require("./195196.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk602268 = require("./602268.js");
+  Chunk8498 = require("./8498.js");
 let P = function() {
   var e, t, n, P;
   (0, Chunk388032.useSyncMessages)(Chunk195196.messagesLoader);
@@ -46,7 +46,7 @@ let P = function() {
     }, []), Chunk73800.useEffect(() => {
       D === Chunk314852.a.NOT_FETCHED && Z()
     }, [Z, D]), D !== Chunk314852.a.FETCHED) return (0, Chunk255367.jsx)("div", {
-    className: Chunk602268.spinnerContainer,
+    className: Chunk8498.spinnerContainer,
     children: (0, Chunk255367.jsx)(Chunk481060.$jN, {})
   });
   if (null == w || null == R) return null;
@@ -58,7 +58,7 @@ let P = function() {
     U = null != (n = R.badgeColorSecondary) ? require : Chunk131085.Ek["0"].secondary,
     B = (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
       children: [(0, Chunk255367.jsx)(Chunk388661.Z, {
-        className: Chunk602268.section,
+        className: Chunk8498.section,
         guildId: w.id,
         isDisabled: L,
         tag: null != (P = R.tag) ? P : "",
@@ -66,11 +66,11 @@ let P = function() {
         primaryColor: G,
         secondaryColor: U
       }), (0, Chunk255367.jsx)(Chunk835887.Z, {
-        className: Chunk602268.section,
+        className: Chunk8498.section,
         selectedBadge: M,
         guildId: w.id
       }), (0, Chunk255367.jsx)(Chunk500230.Z, {
-        className: Chunk602268.section,
+        className: Chunk8498.section,
         guildId: w.id,
         badge: M,
         primaryColor: G,
@@ -79,15 +79,15 @@ let P = function() {
     });
   return (0, Chunk255367.jsxs)("div", {
     children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
-      className: Chunk602268.title,
+      className: Chunk8498.title,
       variant: "heading-lg/semibold",
       children: Chunk388032.intl.string(Chunk195196.default.mf2OwM)
     }), (0, Chunk255367.jsxs)("div", {
-      className: Chunk602268.container,
+      className: Chunk8498.container,
       children: [(0, Chunk255367.jsxs)("div", {
-        className: Chunk602268.leftContent,
+        className: Chunk8498.leftContent,
         children: [(0, Chunk255367.jsxs)("div", {
-          className: Chunk602268.descriptionContainer,
+          className: Chunk8498.descriptionContainer,
           children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
             variant: "text-sm/medium",
             color: "text-secondary",
@@ -100,7 +100,7 @@ let P = function() {
               }
             })
           }), !A && (0, Chunk255367.jsx)(Chunk494620.Z, {
-            className: Chunk602268.privateProfileWarning,
+            className: Chunk8498.privateProfileWarning,
             children: (0, Chunk255367.jsx)(Chunk481060.Text, {
               variant: "text-xs/medium",
               children: Chunk388032.intl.format(Chunk195196.default.CRbkIy, {
@@ -109,7 +109,7 @@ let P = function() {
             })
           })]
         }), k ? (0, Chunk255367.jsxs)("div", {
-          className: Chunk602268.enableSwitchContainer,
+          className: Chunk8498.enableSwitchContainer,
           children: [(0, Chunk255367.jsx)("label", {
             htmlFor: "enable-server-tag",
             children: (0, Chunk255367.jsx)(Chunk481060.Text, {
@@ -135,7 +135,7 @@ let P = function() {
             }
           })]
         }) : (0, Chunk255367.jsx)("div", {
-          className: Chunk602268.boostingLinkContainer,
+          className: Chunk8498.boostingLinkContainer,
           children: (0, Chunk255367.jsx)(Chunk70086.P, {
             onClick: () => {
               (0, Chunk441536.Z)(w.id, Chunk100527.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), Chunk434404.Z.close()
@@ -143,12 +143,12 @@ let P = function() {
           })
         }), L ? (0, Chunk255367.jsx)(Chunk481060.nuw, {
           children: (0, Chunk255367.jsx)("div", {
-            className: Chunk602268.disabledForm,
+            className: Chunk8498.disabledForm,
             children: B
           })
         }) : B]
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk602268.sidebarContainer,
+        className: Chunk8498.sidebarContainer,
         children: [(0, Chunk255367.jsx)(Chunk742409.Z, {
           guildId: w.id,
           tag: R.tag,

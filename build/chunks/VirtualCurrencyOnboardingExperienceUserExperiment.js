@@ -1,9 +1,10 @@
-/** Chunk was on 94784 **/
-/** chunk id: 278401, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 96910 **/
+/** chunk id: 278401, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => a
 });
-let r = (0, require("./818083.js").B)({
+let n = (0, require("./818083.js").B)({
     kind: "user",
     id: "2025-05_virtual_currency_onboarding_experience",
     label: "Virtual Currency Onboarding Experience",
@@ -18,4 +19,4 @@ let r = (0, require("./818083.js").B)({
       }
     }]
   }),
-  a = 12633 == require.j ? r : null
+  a = 12633 == require.j ? n : null

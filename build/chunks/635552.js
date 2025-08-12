@@ -1,4 +1,4 @@
-/** Chunk was on 45620 **/
+/** Chunk was on 96910 **/
 /** chunk id: 635552, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -16,25 +16,25 @@ let u = e => {
     product: t,
     onSuccess: u,
     onError: d
-  } = e, [p, g] = n.useState(false), {
-    firstAvatarDecoration: f,
-    firstProfileEffect: b
-  } = (0, s.Rj)(t), h = (0, o.x6)(t) ? c.intl.string(c.t.tf1ZZ2) : t.type === l.Z.AVATAR_DECORATION ? c.intl.string(c.t.zOA4a2) : t.type === l.Z.NAMEPLATE ? c.intl.string(c.t.gOzMv7) : c.intl.string(c.t.SWm2am);
+  } = e, [p, b] = n.useState(false), {
+    firstAvatarDecoration: h,
+    firstProfileEffect: f
+  } = (0, s.Rj)(t), v = (0, o.x6)(t) ? c.intl.string(c.t.tf1ZZ2) : t.type === a.Z.AVATAR_DECORATION ? c.intl.string(c.t.zOA4a2) : t.type === a.Z.NAMEPLATE ? c.intl.string(c.t.gOzMv7) : c.intl.string(c.t.SWm2am);
   return {
     handleUseNow: n.useCallback(async () => {
-      g(true);
+      b(true);
       try {
-        if (null != f && await (0, a.Mn)({
-            avatarDecoration: f
-          }), null != b) {
+        if (null != h && await (0, i.Mn)({
+            avatarDecoration: h
+          }), null != f) {
           let e = {
-            profile_effect_id: b.id
+            profile_effect_id: f.id
           };
-          await (0, i.Z)(e)
+          await (0, l.Z)(e)
         }
-        if (t.type === l.Z.NAMEPLATE) {
+        if (t.type === a.Z.NAMEPLATE) {
           let e = t.items[0];
-          await (0, a.Mn)({
+          await (0, i.Mn)({
             nameplate: e
           })
         } {
@@ -42,10 +42,10 @@ let u = e => {
             ToastPosition: e,
             ToastType: t,
             createToast: n,
-            popToast: l,
-            showToast: a
+            popToast: a,
+            showToast: i
           } = await Promise.resolve().then(r.bind(r, 481060));
-          l(), a(n(h, t.MESSAGE, {
+          a(), i(n(v, t.MESSAGE, {
             duration: 6e3,
             position: e.TOP
           }))
@@ -54,9 +54,9 @@ let u = e => {
       } catch (e) {
         null == d || d(e)
       } finally {
-        g(false)
+        b(false)
       }
-    }, [f, b, t, u, h, d]),
+    }, [h, f, t, u, v, d]),
     isApplying: p
   }
 }

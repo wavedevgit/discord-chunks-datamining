@@ -1,4 +1,4 @@
-/** Chunk was on 34779 **/
+/** Chunk was on 26628 **/
 /** chunk id: 175281, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk264549 = require("./264549.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk268751 = require("./268751.js");
+  Chunk257002 = require("./257002.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,7 +71,7 @@ function N(e) {
 function w() {
   let e = Chunk73800.useMemo(() => u()((0, Chunk612226.Rv)()).groupBy(e => e.group).value(), []);
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk268751.keyboardShortcutList,
+    className: Chunk257002.keyboardShortcutList,
     children: P.map(t => {
       let n = e[t],
         i = (0, g.UD)(t),
@@ -133,40 +133,40 @@ class Z extends Chunk73800.PureComponent {
       RIGHT: i
     } = this.state;
     return (0, Chunk255367.jsxs)(Chunk748780.Z.div, {
-      className: Chunk268751.keyboardShortcutsModal,
+      className: Chunk257002.keyboardShortcutsModal,
       style: this.getStyles(),
       children: [(0, Chunk255367.jsxs)(Chunk481060.H, {
-        className: Chunk268751.modalTitle,
+        className: Chunk257002.modalTitle,
         children: [(0, Chunk255367.jsx)("div", {
-          className: Chunk268751.content,
+          className: Chunk257002.content,
           children: Chunk388032.intl.string(Chunk388032.t["1BdUt7"])
         }), (0, Chunk255367.jsx)(Chunk481060.M2$, {
           shortcut: "mod+/"
         })]
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk268751.modalSubtitle,
+        className: Chunk257002.modalSubtitle,
         children: Chunk388032.intl.string(Chunk388032.t["2t19lZ"])
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk268751.ddrArrows,
+        className: Chunk257002.ddrArrows,
         children: [(0, Chunk255367.jsx)(T, {
           arrow: "LEFT",
           isActive: require,
-          className: Chunk268751.left,
+          className: Chunk257002.left,
           children: "left"
         }), (0, Chunk255367.jsx)(T, {
           arrow: "DOWN",
           isActive: exports,
-          className: Chunk268751.down,
+          className: Chunk257002.down,
           children: "down"
         }), (0, Chunk255367.jsx)(T, {
           arrow: "UP",
           isActive: module,
-          className: Chunk268751.up,
+          className: Chunk257002.up,
           children: "up"
         }), (0, Chunk255367.jsx)(T, {
           arrow: "RIGHT",
           isActive: Chunk73800,
-          className: Chunk268751.right,
+          className: Chunk257002.right,
           children: "right"
         })]
       }), (0, Chunk255367.jsx)(Chunk481060.yWw, {

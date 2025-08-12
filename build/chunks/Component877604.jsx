@@ -7,7 +7,7 @@ var s, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
-  Chunk191724 = require("./191724.js");
+  Chunk216224 = require("./216224.js");
 
 function l(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
@@ -79,8 +79,8 @@ class c extends(s = Chunk73800.PureComponent) {
         Object.defineProperty(t, i, Object.getOwnPropertyDescriptor(e, i))
       }), module),
       children: (0, Chunk255367.jsx)("img", {
-        className: r()(Chunk191724.image, p, {
-          [Chunk191724.loaded]: f
+        className: r()(Chunk216224.image, p, {
+          [Chunk216224.loaded]: f
         }),
         width: Chunk120356,
         height: d,

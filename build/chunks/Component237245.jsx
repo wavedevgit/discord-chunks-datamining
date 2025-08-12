@@ -1,4 +1,4 @@
-/** Chunk was on 22988 **/
+/** Chunk was on 5533 **/
 /** chunk id: 237245, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   w: () => E
@@ -179,7 +179,7 @@ function I(e) {
         if (D && A > 0 && l.joinType !== j.A.APPLY) return void(0, a.ZDy)(async () => {
           let {
             default: t
-          } = await n.e("55009").then(n.bind(n, 185141));
+          } = await n.e("55009").then(n.bind(n, 826390));
           return n => (0, r.jsx)(t, N(C({}, n), {
             guildId: T,
             submittedGuildJoinRequestsCount: A,

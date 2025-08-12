@@ -1,4 +1,4 @@
-/** Chunk was on 34779 **/
+/** Chunk was on 26628 **/
 /** chunk id: 770202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -20,7 +20,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk473403 = require("./473403.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk490897 = require("./490897.js"),
-  Chunk915887 = require("./915887.js");
+  Chunk81252 = require("./81252.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,11 +60,11 @@ class E extends Chunk98597.ZP {
       canReorderChannel: s
     } = this.props, a = (0, Chunk255367.jsx)("li", {
       className: o()(this.getClassName(), {
-        [Chunk915887.disabled]: this.isDisabled()
+        [Chunk81252.disabled]: this.isDisabled()
       }),
       "data-dnd-name": module.name,
       children: (0, Chunk255367.jsxs)(Chunk473403.ZP, {
-        className: Chunk915887.iconVisibility,
+        className: Chunk81252.iconVisibility,
         channel: module,
         selected: exports,
         onClick: this.handleClick,

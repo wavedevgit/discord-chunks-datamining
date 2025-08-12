@@ -18,7 +18,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk872801 = require("./872801.js"),
   Chunk302901 = require("./302901.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk36344 = require("./36344.js");
+  Chunk712502 = require("./712502.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -397,8 +397,8 @@ class D extends(r = Chunk73800.Component) {
     } = this.state;
     return (0, Chunk255367.jsx)("div", {
       className: s()({
-        [Chunk36344.clickTrapContainer]: true,
-        [Chunk36344.trapClicks]: Chunk120356
+        [Chunk712502.clickTrapContainer]: true,
+        [Chunk712502.trapClicks]: Chunk120356
       }),
       children: (0, Chunk255367.jsx)(Chunk710260.C1, {
         children: a => {

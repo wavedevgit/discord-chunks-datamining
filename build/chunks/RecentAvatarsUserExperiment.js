@@ -1,10 +1,10 @@
-/** Chunk was on 75708 **/
-/** chunk id: 373230, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 99339 **/
+/** chunk id: 373230, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  T: () => r,
-  c: () => i
+  T: () => o,
+  c: () => n
 });
-let i = (0, require("./818083.js").B)({
+let n = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-01_recent_avatars",
   label: "Recent Avatars",
@@ -26,16 +26,16 @@ let i = (0, require("./818083.js").B)({
   }]
 });
 
-function r(e) {
+function o(e) {
   let {
     location: t,
-    autoTrackExposure: n = true
+    autoTrackExposure: a = true
   } = e, {
-    enabled: r
-  } = i.useExperiment({
+    enabled: o
+  } = n.useExperiment({
     location: t
   }, {
-    autoTrackExposure: n
+    autoTrackExposure: a
   });
-  return r
+  return o
 }

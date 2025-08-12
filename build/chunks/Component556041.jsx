@@ -10,7 +10,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk245315 = require("./245315.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk49791 = require("./49791.js");
+  Chunk444030 = require("./444030.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -54,32 +54,32 @@ let _ = () => (0, Chunk255367.jsxs)(Chunk600164.Z, {
   align: Chunk600164.Z.Align.CENTER,
   justify: Chunk600164.Z.Justify.CENTER,
   direction: Chunk600164.Z.Direction.VERTICAL,
-  className: Chunk49791.popout,
+  className: Chunk444030.popout,
   children: [(0, Chunk255367.jsx)("img", {
     alt: "",
     src: (0, Chunk245315.QA)(),
-    className: Chunk49791.avatar
+    className: Chunk444030.avatar
   }), (0, Chunk255367.jsxs)(Chunk600164.Z, {
     align: Chunk600164.Z.Align.CENTER,
     justify: Chunk600164.Z.Justify.CENTER,
-    className: Chunk49791.nameWrapper,
+    className: Chunk444030.nameWrapper,
     children: [(0, Chunk255367.jsx)(Chunk481060.ua7, {
       text: Chunk388032.intl.string(Chunk388032.t.oMx98P),
       children: e => (0, r.jsx)("div", f(u({}, e), {
         className: l.staffBadge
       }))
     }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
-      className: Chunk49791.header,
+      className: Chunk444030.header,
       variant: "heading-md/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.xfAlNz)
     })]
   }), (0, Chunk255367.jsx)(Chunk481060.Text, {
-    className: Chunk49791.description,
+    className: Chunk444030.description,
     color: "header-secondary",
     variant: "text-sm/normal",
     children: Chunk388032.intl.string(Chunk388032.t.BUZ0sr)
   }), (0, Chunk255367.jsx)(Chunk481060.Text, {
-    className: Chunk49791.description,
+    className: Chunk444030.description,
     color: "header-secondary",
     variant: "text-sm/normal",
     children: Chunk388032.intl.string(Chunk388032.t.w5beJC)

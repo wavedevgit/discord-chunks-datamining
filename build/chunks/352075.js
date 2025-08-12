@@ -1,8 +1,0 @@
-/** Chunk was on 49152 **/
-/** chunk id: 352075, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  gatedContent: "gatedContent__7184c",
-  image: "image__7184c",
-  title: "title__7184c",
-  description: "description__7184c"
-}

@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk733789 = require("./733789.jsx"),
   Chunk4962 = require("./4962.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk868454 = require("./868454.js");
+  Chunk283118 = require("./283118.js");
 class E extends Chunk73800.Component {
   renderReasons(e, t, n) {
     return 0 === e.length && 0 === t.length ? null : (0, r.jsx)("div", {
@@ -61,13 +61,13 @@ class E extends Chunk73800.Component {
     if (0 === module.length && 0 === exports.length && null == require.staffNotes) return null;
     let o = this.getReviewToRender();
     return (0, Chunk255367.jsxs)("div", {
-      className: a()(Chunk868454.root, Chunk120356),
+      className: a()(Chunk283118.root, Chunk120356),
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk868454.header,
+        className: Chunk283118.header,
         children: Chunk388032.intl.string(Chunk388032.t.qABFpa)
       }), this.renderReasons(module, exports, Chunk73800), null != Chunk442837 ? (0, Chunk255367.jsx)(Chunk4962.Z, {
         data: Chunk442837,
-        className: Chunk868454.review
+        className: Chunk283118.review
       }) : null]
     })
   }

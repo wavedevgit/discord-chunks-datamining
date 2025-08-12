@@ -58,9 +58,9 @@ var l, Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk821022 = require("./821022.js"),
-  Chunk20493 = require("./20493.js"),
-  Chunk264589 = require("./264589.js"),
+  Chunk652631 = require("./652631.js"),
+  Chunk881488 = require("./881488.js"),
+  Chunk555597 = require("./555597.js"),
   Chunk622577 = require("./622577.js");
 
 function eu(e, t, n) {
@@ -196,10 +196,10 @@ class ep extends(l = Chunk73800.PureComponent) {
       inviteChannel: e
     } = this.props;
     return (0, Chunk447003.Z)(module) ? (0, Chunk255367.jsxs)("div", {
-      className: Chunk821022.warningContainer,
+      className: Chunk652631.warningContainer,
       children: [(0, Chunk255367.jsx)(Chunk481060.Mgn, {
         size: "custom",
-        className: Chunk821022.warningIcon,
+        className: Chunk652631.warningIcon,
         color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css,
         width: 12
       }), (0, Chunk255367.jsx)(Chunk481060.Text, {
@@ -233,9 +233,9 @@ class ep extends(l = Chunk73800.PureComponent) {
       }), null != u) {
       let e = (0, Chunk471445.KS)(u, exports);
       null != module && (m = (0, Chunk255367.jsxs)("div", {
-        className: Chunk821022.headerChannelContainer,
+        className: Chunk652631.headerChannelContainer,
         children: [(0, Chunk255367.jsx)(module, {
-          className: Chunk821022.channelIcon
+          className: Chunk652631.channelIcon
         }), (0, Chunk255367.jsx)(Chunk481060.Text, {
           color: "interactive-normal",
           variant: "text-md/normal",
@@ -244,9 +244,9 @@ class ep extends(l = Chunk73800.PureComponent) {
       }))
     }
     return h = exports.features.has(Chunk981631.oNc.HUB) ? (0, Chunk255367.jsxs)("div", {
-      className: Chunk821022.hubHeader,
+      className: Chunk652631.hubHeader,
       children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
-        className: a()(Chunk821022.hubInviteTitle, Chunk821022.headerCloseButtonSpacing),
+        className: a()(Chunk652631.hubInviteTitle, Chunk652631.headerCloseButtonSpacing),
         id: this._headerId,
         variant: "heading-xl/semibold",
         color: "header-primary",
@@ -258,7 +258,7 @@ class ep extends(l = Chunk73800.PureComponent) {
       }), require && (0, Chunk255367.jsx)(Chunk481060.E1j, {
         size: "sm",
         query: Chunk990547,
-        className: Chunk821022.hubFriendSearch,
+        className: Chunk652631.hubFriendSearch,
         onChange: this.handleQueryChange,
         placeholder: Chunk388032.intl.string(Chunk388032.t.CmSHY2),
         "aria-label": Chunk388032.intl.string(Chunk388032.t.CmSHY2),
@@ -266,56 +266,56 @@ class ep extends(l = Chunk73800.PureComponent) {
         onClear: this.handleClearSearch
       })]
     }) : require ? (0, Chunk255367.jsxs)("div", {
-      className: Chunk821022.header,
+      className: Chunk652631.header,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk821022.__invalid_headerTopRow,
+        className: Chunk652631.__invalid_headerTopRow,
         children: (0, Chunk255367.jsx)(Chunk481060.vwX, {
           id: this._headerId,
           tag: "h2",
-          className: a()(Chunk20493.marginBottom4, Chunk821022.headerCloseButtonSpacing, Chunk821022.headerText),
+          className: a()(Chunk881488.marginBottom4, Chunk652631.headerCloseButtonSpacing, Chunk652631.headerText),
           children: module
         })
       }), Chunk442837, (0, Chunk255367.jsx)(Chunk481060.E1j, {
         size: "sm",
         query: Chunk990547,
-        className: Chunk821022.searchBar,
+        className: Chunk652631.searchBar,
         onChange: this.handleQueryChange,
         placeholder: Chunk388032.intl.string(Chunk388032.t.CmSHY2),
         autoFocus: true,
         onClear: this.handleClearSearch
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk20493.marginTop8,
+        className: Chunk881488.marginTop8,
         children: this.renderChannelWarning()
       })]
     }) : (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
         id: this._headerId,
         tag: "h2",
-        className: a()(Chunk20493.marginReset, Chunk821022.headerCloseButtonSpacing, Chunk821022.headerText),
+        className: a()(Chunk881488.marginReset, Chunk652631.headerCloseButtonSpacing, Chunk652631.headerText),
         children: module
       }), Chunk442837, this.renderChannelWarning()]
     }), (0, Chunk255367.jsxs)(Chunk481060.xBx, {
       separator: require,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk821022.closeButton,
+        className: Chunk652631.closeButton,
         children: (0, Chunk255367.jsx)(Chunk481060.olH, {
           onClick: c
         })
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk821022.headerContainer,
+        className: Chunk652631.headerContainer,
         children: [Chunk512722 && (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
           children: [(0, Chunk255367.jsx)("img", {
-            className: Chunk821022.welcomeImage,
+            className: Chunk652631.welcomeImage,
             src: Chunk622577,
             alt: ""
           }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
             variant: "heading-lg/semibold",
-            className: Chunk821022.welcomeHeading,
+            className: Chunk652631.welcomeHeading,
             children: Chunk388032.intl.string(Chunk388032.t.DpoBNz)
           }), (0, Chunk255367.jsx)(Chunk481060.Text, {
             variant: "text-md/normal",
             color: "text-secondary",
-            className: Chunk821022.welcomeSubheading,
+            className: Chunk652631.welcomeSubheading,
             children: Chunk388032.intl.string(Chunk388032.t["wJ/ouL"])
           })]
         }), null != Chunk73800 ? (0, Chunk255367.jsx)(Chunk648159.Z, {}) : null, Chunk533800]
@@ -327,17 +327,17 @@ class ep extends(l = Chunk73800.PureComponent) {
       rows: e
     } = this.props, t = this.getInviteKey();
     return 0 === module.length ? (0, Chunk255367.jsx)(Chunk481060.hzk, {
-      className: Chunk821022.inviteRowEmptyState,
+      className: Chunk652631.inviteRowEmptyState,
       children: (0, Chunk255367.jsx)(Chunk481060.OZU, {
         children: Chunk388032.intl.string(Chunk388032.t.ojoWgY)
       })
     }) : null == exports ? (0, Chunk255367.jsx)(Chunk481060.hzk, {
-      className: Chunk821022.inviteRowEmptyState,
+      className: Chunk652631.inviteRowEmptyState,
       children: (0, Chunk255367.jsx)(Chunk481060.OZU, {
         children: Chunk388032.intl.string(Chunk388032.t.hzPwGB)
       })
     }) : (0, Chunk255367.jsx)(Chunk481060.YAO, {
-      className: Chunk821022.scroller,
+      className: Chunk652631.scroller,
       sections: [module.length],
       renderSection: this.renderSection,
       sectionHeight: 0,
@@ -363,12 +363,12 @@ class ep extends(l = Chunk73800.PureComponent) {
     u()(null != a, "InstantInviteModal: user cannot be undefined");
     let o = (0, Chunk601964.eM)(exports, a) ? Chunk388032.intl.string(Chunk388032.t.HFbByM) : Chunk388032.intl.string(Chunk388032.t.ueBhAw);
     return null != l ? o = Chunk388032.intl.string(Chunk388032.t.CXpS1N) : null != Chunk73800 && (o = Chunk388032.intl.string(Chunk388032.t.ueCrHB)), (0, Chunk255367.jsx)(Chunk481060.hzk, {
-      className: Chunk821022.noScroll,
+      className: Chunk652631.noScroll,
       children: (0, Chunk255367.jsxs)(Chunk600164.Z, {
         direction: Chunk600164.Z.Direction.VERTICAL,
-        className: Chunk20493.marginBottom20,
+        className: Chunk881488.marginBottom20,
         children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
-          className: Chunk821022.subText,
+          className: Chunk652631.subText,
           variant: "text-sm/normal",
           children: Chunk512722
         }), (0, Chunk255367.jsx)(Chunk603236.I, ec(ed({}, this.props), {
@@ -395,10 +395,10 @@ class ep extends(l = Chunk73800.PureComponent) {
       let e = Chunk388032.intl.string(Chunk388032.t.MLkj7O);
       null != Chunk73800 ? e = Chunk388032.intl.string(Chunk388032.t["1b9nen"]) : null != Chunk120356 ? e = Chunk388032.intl.string(Chunk388032.t.iI1gMj) : null != l ? e = Chunk388032.intl.string(Chunk388032.t.KaWCyM) : (null == Chunk512722 ? true : Chunk512722.isGuildStageVoice()) && (e = Chunk388032.intl.string(Chunk388032.t["2frWa2"])), c = (0, Chunk255367.jsxs)(Chunk600164.Z, {
         direction: Chunk600164.Z.Direction.VERTICAL,
-        className: Chunk821022.content,
+        className: Chunk652631.content,
         children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
           tag: "h5",
-          className: Chunk20493.marginBottom8,
+          className: Chunk881488.marginBottom8,
           children: module
         }), (0, Chunk255367.jsx)(Chunk603236.I, ec(ed({}, this.props), {
           setInviteFlags: this.handleSetInviteFlags,
@@ -407,7 +407,7 @@ class ep extends(l = Chunk73800.PureComponent) {
       })
     } else exports || (c = (0, Chunk255367.jsxs)(Chunk600164.Z, {
       justify: Chunk600164.Z.Justify.BETWEEN,
-      className: Chunk20493.marginTop20,
+      className: Chunk881488.marginTop20,
       children: [(0, Chunk255367.jsx)(Chunk481060.XZJ, {
         size: 18,
         type: Chunk481060.XZJ.Types.INVERTED,
@@ -439,8 +439,8 @@ class ep extends(l = Chunk73800.PureComponent) {
     }));
     return null != c ? (0, Chunk255367.jsx)(Chunk481060.mzw, {
       className: a()({
-        [Chunk821022.noPadding]: !require,
-        [Chunk821022.footer]: require
+        [Chunk652631.noPadding]: !require,
+        [Chunk652631.footer]: require
       }),
       children: c
     }) : null
@@ -477,7 +477,7 @@ class ep extends(l = Chunk73800.PureComponent) {
       guild: n
     } = this.props;
     return (0, Chunk255367.jsx)("div", {
-      className: this.props.showFriends ? Chunk821022.wrapper : true,
+      className: this.props.showFriends ? Chunk652631.wrapper : true,
       children: (0, Chunk255367.jsx)(Chunk481060.Y0X, {
         impression: {
           impressionName: Chunk990547.ImpressionNames.GUILD_INVITE,
@@ -488,7 +488,7 @@ class ep extends(l = Chunk73800.PureComponent) {
         },
         "aria-labelledby": this._headerId,
         transitionState: module,
-        className: Chunk821022.modal,
+        className: Chunk652631.modal,
         parentComponent: "InstantInvite",
         children: this.getModalContent()
       })

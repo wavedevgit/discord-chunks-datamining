@@ -17,9 +17,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk451478 = require("./451478.js"),
   Chunk584511 = require("./584511.jsx"),
   Chunk354459 = require("./354459.js"),
-  Chunk95072 = require("./95072.js"),
-  Chunk893354 = require("./893354.js"),
-  Chunk565128 = require("./565128.js");
+  Chunk416038 = require("./416038.js"),
+  Chunk794287 = require("./794287.js"),
+  Chunk584783 = require("./584783.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -129,15 +129,15 @@ class S extends Chunk73800.PureComponent {
       theme: e,
       children: t,
       className: n
-    } = this.props, i = (0, Chunk780384.wj)(module), o = a()(Chunk95072.sprite, {
-      [Chunk565128.crossWhite]: Chunk73800,
-      [Chunk565128.crossGrey]: !Chunk73800
+    } = this.props, i = (0, Chunk780384.wj)(module), o = a()(Chunk416038.sprite, {
+      [Chunk584783.crossWhite]: Chunk73800,
+      [Chunk584783.crossGrey]: !Chunk73800
     });
     return (0, Chunk255367.jsxs)(Chunk748780.Z.div, {
-      className: a()(Chunk95072.transition, require),
+      className: a()(Chunk416038.transition, require),
       style: this.getWidthStyle(),
       children: [(0, Chunk255367.jsx)("div", {
-        className: a()(Chunk95072.spriteWrapper, Chunk893354.horizontal, Chunk893354.justifyCenter, Chunk893354.alignCenter),
+        className: a()(Chunk416038.spriteWrapper, Chunk794287.horizontal, Chunk794287.justifyCenter, Chunk794287.alignCenter),
         children: (0, Chunk255367.jsx)(Chunk748780.Z.div, {
           className: Chunk120356,
           style: this.getSpriteStyle()

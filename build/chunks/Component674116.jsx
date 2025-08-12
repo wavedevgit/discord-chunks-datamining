@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 674116, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => V
@@ -39,7 +39,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk20493 = require("./20493.js");
+  Chunk881488 = require("./881488.js");
 let U = "".concat(Chunk63063.Z.getArticleURL(Chunk981631.BhN.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
 
 function V() {
@@ -67,13 +67,13 @@ function V() {
       }), (0, Chunk255367.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.VOICE_AND_VIDEO_MIC_TEST,
         children: [(0, Chunk255367.jsx)(Chunk823087.Z, {}), (0, Chunk255367.jsx)(Chunk481060.R94, {
-          className: Chunk20493.marginBottom20,
+          className: Chunk881488.marginBottom20,
           type: Chunk481060.R94.Types.DESCRIPTION,
           children: Chunk388032.intl.format(Chunk388032.t["V+B3FB"], {
             guideURL: U
           })
         }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
-          className: Chunk20493.marginBottom20
+          className: Chunk881488.marginBottom20
         })]
       }), (0, Chunk255367.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.VOICE_AND_VIDEO_INPUT_MODE,
@@ -82,7 +82,7 @@ function V() {
         setting: Chunk726985.s6.VOICE_AND_VIDEO_SENSITIVITY,
         children: module === Chunk65154.pM.VOICE_ACTIVITY && (0, Chunk255367.jsx)(Chunk269876.Z, {})
       }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
-        className: Chunk20493.marginBottom40
+        className: Chunk881488.marginBottom40
       })]
     }), (0, Chunk255367.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_SOUNDBOARD,
@@ -108,7 +108,7 @@ function V() {
       children: (0, Chunk255367.jsxs)(Chunk481060.y5t, {
         component: (0, Chunk255367.jsx)(Chunk481060.vwX, {
           tag: Chunk481060.RB0.H1,
-          className: Chunk20493.marginBottom20,
+          className: Chunk881488.marginBottom20,
           children: Chunk388032.intl.string(Chunk388032.t["8/udY2"])
         }),
         children: [(0, Chunk255367.jsx)(Chunk726763.Z, {}), (0, Chunk255367.jsx)(Chunk267006.Z, {}), (0, Chunk255367.jsx)(Chunk921801.F, {
@@ -117,7 +117,7 @@ function V() {
         }), (0, Chunk255367.jsx)(Chunk520384.Z, {}), (0, Chunk255367.jsx)(Chunk232388.Z, {}), (0, Chunk255367.jsx)(Chunk429789.Z, {}), Chunk981631 && (0, Chunk255367.jsx)(Chunk186934.Z, {}), (0, Chunk255367.jsx)(Chunk208113.Z, {}), (0, Chunk255367.jsx)(Chunk546997.Z, {}), (0, Chunk255367.jsx)(Chunk716210.Z, {}), (0, Chunk255367.jsx)(Chunk459674.Z, {
           refreshStyles: true
         }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
-          className: Chunk20493.marginBottom40
+          className: Chunk881488.marginBottom40
         }), (0, Chunk255367.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
           children: (0, Chunk255367.jsx)(Chunk710808.Z, {})

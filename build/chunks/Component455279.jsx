@@ -1,13 +1,13 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 58120 **/
 /** chunk id: 455279, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E,
-  c: () => x
+  Z: () => D,
+  c: () => _
 }), require("./388685.js");
 var i, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk879443 = require("./879443.js"),
   c = require.n(Chunk879443),
   Chunk392711 = require("./392711.js"),
@@ -16,9 +16,9 @@ var i, Chunk255367 = require("./255367.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk13140 = require("./13140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk556707 = require("./556707.js");
+  Chunk450898 = require("./450898.js");
 
-function b(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,12 +26,12 @@ function b(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var x = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
-let _ = {
-  DEFAULT: Chunk556707.__invalid_default,
-  RECORDING: Chunk556707.recording
+var _ = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
+let E = {
+  DEFAULT: Chunk450898.__invalid_default,
+  RECORDING: Chunk450898.recording
 };
-class j extends Chunk73800.PureComponent {
+class y extends Chunk73800.PureComponent {
   componentWillUnmount() {
     null != this._unregisterNativeRecorder && this._unregisterNativeRecorder()
   }
@@ -65,13 +65,13 @@ class j extends Chunk73800.PureComponent {
         onClick: this.handleClick,
         onMouseDown: this.handleMouseDown,
         ref: this._containerRef,
-        className: l()(Chunk556707.recorderContainer, _[exports], {
-          [Chunk556707.containerDisabled]: i
+        className: a()(Chunk450898.recorderContainer, E[exports], {
+          [Chunk450898.containerDisabled]: i
         }),
         children: (0, Chunk255367.jsxs)(Chunk600164.Z, {
-          className: Chunk556707.recorderLayout,
+          className: Chunk450898.recorderLayout,
           children: [(0, Chunk255367.jsx)(Chunk600164.Z.Child, {
-            className: Chunk556707.keybindInput,
+            className: Chunk450898.keybindInput,
             children: (0, Chunk255367.jsx)("input", {
               id: this._inputId,
               placeholder: Chunk388032.intl.string(Chunk388032.t.nWRdnp),
@@ -82,7 +82,7 @@ class j extends Chunk73800.PureComponent {
               disabled: "RECORDING" !== this.props.mode || i
             })
           }), (0, Chunk255367.jsx)("div", {
-            className: Chunk556707.buttonContainer,
+            className: Chunk450898.buttonContainer,
             children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
               size: "sm",
               variant: "RECORDING" === this.props.mode ? "critical-secondary" : "secondary",
@@ -98,7 +98,7 @@ class j extends Chunk73800.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), b(this, "_inputId", u().uniqueId("key-recorder-")), b(this, "_unregisterNativeRecorder", null), b(this, "_mousedownMode", null), b(this, "_inputRef", s.createRef()), b(this, "_containerRef", s.createRef()), b(this, "setInputRef", e => {
+    super(...e), g(this, "_inputId", u().uniqueId("key-recorder-")), g(this, "_unregisterNativeRecorder", null), g(this, "_mousedownMode", null), g(this, "_inputRef", s.createRef()), g(this, "_containerRef", s.createRef()), g(this, "setInputRef", e => {
       var t;
       let {
         registerNativeRecorder: n,
@@ -110,16 +110,16 @@ class j extends Chunk73800.PureComponent {
         } catch (e) {
           this._unregisterNativeRecorder = null
         } else null != i && (new(c())(e).handleKey = i)
-    }), b(this, "handleClick", e => {
+    }), g(this, "handleClick", e => {
       e.stopPropagation(), e.preventDefault();
       let {
         onClick: t,
         disableOnClickWhileRecording: n
       } = this.props;
       n && "RECORDING" === this._mousedownMode || t()
-    }), b(this, "handleMouseDown", () => {
+    }), g(this, "handleMouseDown", () => {
       this._mousedownMode = this.props.mode
     })
   }
 }
-let E = j
+let D = y

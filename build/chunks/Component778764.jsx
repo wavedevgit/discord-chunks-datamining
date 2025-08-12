@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 778764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk755733 = require("./755733.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk49149 = require("./49149.js");
+  Chunk482948 = require("./482948.js");
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -247,13 +247,13 @@ function T() {
   let [n, s] = Chunk73800.useState(false);
   return (0, Chunk255367.jsxs)(Chunk481060.hjN, {
     title: Chunk388032.intl.string(Chunk388032.t.y7SXYW),
-    className: Chunk49149.settings,
+    className: Chunk482948.settings,
     children: [(0, Chunk255367.jsx)(Chunk481060.R94, {
       type: Chunk481060.R94.Types.DESCRIPTION,
-      className: Chunk49149.description,
+      className: Chunk482948.description,
       children: Chunk388032.intl.string(Chunk388032.t.TMukAA)
     }), module.length > 0 && (0, Chunk255367.jsx)("div", {
-      className: Chunk49149.credentialList,
+      className: Chunk482948.credentialList,
       children: module.map(e => (0, i.jsxs)("div", {
         className: E.credentialItem,
         children: [(0, i.jsx)(o.Text, {

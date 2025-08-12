@@ -54,7 +54,7 @@ var i, Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk690200 = require("./690200.js");
+  Chunk477961 = require("./477961.js");
 
 function en(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -198,10 +198,10 @@ class el extends(i = Chunk73800.PureComponent) {
     return (0, Chunk255367.jsx)(Chunk518084.ZP.Body, {
       className: s()({
         [Chunk477690.Z.VOICE_WIDGET_TOP_MARGIN]: Chunk73800,
-        [Chunk690200.lockedContainer]: Chunk73800
+        [Chunk477961.lockedContainer]: Chunk73800
       }),
       children: (0, Chunk255367.jsx)(Chunk597998.eJ, {
-        className: Chunk690200.voiceList,
+        className: Chunk477961.voiceList,
         children: Chunk239091
       })
     })
@@ -213,32 +213,32 @@ class el extends(i = Chunk73800.PureComponent) {
       isPreviewingInGame: n
     } = this.props;
     return (0, Chunk255367.jsxs)(Chunk518084.ZP.Bar, {
-      className: s()(Chunk690200.draggableStartArea, {
-        [Chunk690200.preview]: require
+      className: s()(Chunk477961.draggableStartArea, {
+        [Chunk477961.preview]: require
       }),
       children: [(0, Chunk255367.jsxs)(Chunk518084.ZP.Content, {
         dynamicSize: true,
-        className: s()(Chunk690200.content, {
-          [Chunk690200.hidden]: require
+        className: s()(Chunk477961.content, {
+          [Chunk477961.hidden]: require
         }),
         children: [(0, Chunk255367.jsx)(Chunk481060.Vni, {
           size: "custom",
           color: Chunk692547.Z.unsafe_rawColors.WHITE_500.css,
           width: 20,
           height: 20,
-          className: s()(Chunk690200.icon, Chunk690200.faded, Chunk690200.dragIcon)
+          className: s()(Chunk477961.icon, Chunk477961.faded, Chunk477961.dragIcon)
         }), (0, Chunk255367.jsx)(Chunk481060.gj8, {
           size: "custom",
           color: Chunk692547.Z.unsafe_rawColors.WHITE_500.css,
           width: 20,
           height: 20,
-          className: s()(Chunk690200.icon, Chunk690200.faded, Chunk690200.speakerIcon)
+          className: s()(Chunk477961.icon, Chunk477961.faded, Chunk477961.speakerIcon)
         }), (0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           style: {
             color: Chunk692547.Z.unsafe_rawColors.PRIMARY_200.css
           },
-          className: Chunk690200.title,
+          className: Chunk477961.title,
           children: exports
         })]
       }), require ? null : (0, Chunk255367.jsx)(Chunk518084.ZP.Icon, {
@@ -275,26 +275,26 @@ class el extends(i = Chunk73800.PureComponent) {
       title: f
     } = (0, Chunk914923.Z)(Chunk442837);
     return (0, Chunk255367.jsx)(Chunk518084.ZP.Bar, {
-      className: s()(Chunk690200.streamerControls, {
-        [Chunk690200.hidden]: i,
-        [Chunk690200.unpinned]: !require
+      className: s()(Chunk477961.streamerControls, {
+        [Chunk477961.hidden]: i,
+        [Chunk477961.unpinned]: !require
       }),
       children: (0, Chunk255367.jsxs)(Chunk518084.ZP.Content, {
-        className: Chunk690200.streamerContent,
+        className: Chunk477961.streamerContent,
         dynamicSize: true,
         children: [(0, Chunk255367.jsxs)("div", {
-          className: Chunk690200.streamerInner,
+          className: Chunk477961.streamerInner,
           children: [(null == Chunk692547 ? true : Chunk692547.id) != null && Chunk692547.id === (null == Chunk120356 ? true : Chunk120356.id) ? (0, Chunk255367.jsx)(Chunk925329.Z, {
-            className: Chunk690200.gameIcon,
+            className: Chunk477961.gameIcon,
             game: Chunk120356
           }) : (0, Chunk255367.jsx)(Chunk165393.Z, {
             title: Chunk239091
           }), (0, Chunk255367.jsxs)(Chunk600164.Z, {
             direction: Chunk600164.Z.Direction.VERTICAL,
             justify: Chunk600164.Z.Justify.BETWEEN,
-            className: Chunk690200.streamerInfo,
+            className: Chunk477961.streamerInfo,
             children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
-              className: Chunk690200.streaming,
+              className: Chunk477961.streaming,
               variant: "text-sm/normal",
               children: Chunk388032.intl.string(Chunk388032.t.XKYej4)
             }), (0, Chunk255367.jsx)(Chunk345243.Z, {
@@ -304,20 +304,20 @@ class el extends(i = Chunk73800.PureComponent) {
         }), (0, Chunk255367.jsxs)(Chunk600164.Z, {
           grow: 0,
           children: [(0, Chunk255367.jsx)("div", {
-            className: Chunk690200.streamerIconWrapper,
+            className: Chunk477961.streamerIconWrapper,
             children: (0, Chunk255367.jsx)(Chunk786915.Z, {
               stream: Chunk477690,
-              iconClassName: Chunk690200.streamerIcon,
+              iconClassName: Chunk477961.streamerIcon,
               appContext: Chunk981631.IlC.OVERLAY
             })
           }), (0, Chunk255367.jsx)("div", {
-            className: Chunk690200.streamerIconWrapper,
+            className: Chunk477961.streamerIconWrapper,
             children: (0, Chunk255367.jsx)(Chunk7188.Z, {
               stream: Chunk477690,
               appContext: Chunk981631.IlC.OVERLAY
             })
           }), (0, Chunk255367.jsx)("div", {
-            className: Chunk690200.streamerIconWrapper,
+            className: Chunk477961.streamerIconWrapper,
             children: (0, Chunk255367.jsx)(Chunk481060.DY3, {
               text: Chunk388032.intl.string(Chunk388032.t.S5anIS),
               children: (0, Chunk255367.jsx)(Chunk755721.zx, {
@@ -327,7 +327,7 @@ class el extends(i = Chunk73800.PureComponent) {
                 children: (0, Chunk255367.jsx)(Chunk481060.g5r, {
                   size: "md",
                   color: "currentColor",
-                  className: Chunk690200.streamerIcon
+                  className: Chunk477961.streamerIcon
                 })
               })
             })
@@ -369,10 +369,10 @@ class el extends(i = Chunk73800.PureComponent) {
       width: 380,
       children: [require ? null : this.renderHeader(), this.renderVoiceUsers(), this.renderStreamerSettings(), require ? null : (0, Chunk255367.jsx)(Chunk244073.Z, {
         className: s()({
-          [Chunk690200.preview]: Chunk73800
+          [Chunk477961.preview]: Chunk73800
         }),
         contentClassName: s()({
-          [Chunk690200.hidden]: Chunk73800
+          [Chunk477961.hidden]: Chunk73800
         }),
         channel: Chunk120356,
         lobbyId: exports,

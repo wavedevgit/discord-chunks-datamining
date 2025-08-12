@@ -17,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk731971 = require("./731971.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk190981 = require("./190981.js");
+  Chunk90438 = require("./90438.js");
 let h = () => {
   var e;
   let [n, t] = Chunk73800.useState(false), a = Chunk695346.G6.useSetting(), {
@@ -35,11 +35,11 @@ let h = () => {
     location: "InviteSettingsControls"
   });
   return (0, Chunk255367.jsxs)("div", {
-    className: r()(Chunk190981.editProfileContainer, {
-      [Chunk190981.opened]: exports
+    className: r()(Chunk90438.editProfileContainer, {
+      [Chunk90438.opened]: exports
     }),
     children: [(0, Chunk255367.jsxs)(Chunk481060.P3F, {
-      className: Chunk190981.header,
+      className: Chunk90438.header,
       onClick: () => {
         exports || Chunk626135.default.track(Chunk981631.rMx.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
           guild_id: A,
@@ -47,12 +47,12 @@ let h = () => {
         }), require(!exports)
       },
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk190981.headerIconWrapper,
+        className: Chunk90438.headerIconWrapper,
         children: (0, Chunk255367.jsx)(Chunk481060.ewm, {
           size: "md"
         })
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk190981.title,
+        className: Chunk90438.title,
         children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "eyebrow",
           color: "header-secondary",
@@ -63,8 +63,8 @@ let h = () => {
           children: Chunk388032.intl.string(Chunk388032.t.UKCSER)
         })]
       }), (0, Chunk255367.jsx)("div", {
-        className: r()(Chunk190981.caret, {
-          [Chunk190981.opened]: exports
+        className: r()(Chunk90438.caret, {
+          [Chunk90438.opened]: exports
         }),
         children: (0, Chunk255367.jsx)(Chunk259580.Z, {
           width: 18,
@@ -73,11 +73,11 @@ let h = () => {
         })
       })]
     }), (0, Chunk255367.jsxs)("div", {
-      className: r()(Chunk190981.customizationSection, {
-        [Chunk190981.opened]: exports
-      }, L ? null : Chunk190981.condensed),
+      className: r()(Chunk90438.customizationSection, {
+        [Chunk90438.opened]: exports
+      }, L ? null : Chunk90438.condensed),
       children: [L && (0, Chunk255367.jsxs)("div", {
-        className: Chunk190981.serverNickname,
+        className: Chunk90438.serverNickname,
         children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "eyebrow",
           color: "header-secondary",

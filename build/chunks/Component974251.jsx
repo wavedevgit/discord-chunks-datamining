@@ -41,7 +41,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk356659 = require("./356659.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk911777 = require("./911777.js");
+  Chunk326218 = require("./326218.js");
 
 function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -115,7 +115,7 @@ function Y(e) {
     (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("2668"), n.e("72739")]).then(n.bind(n, 542055));
+      } = await Promise.all([n.e("2668"), n.e("27330")]).then(n.bind(n, 542055));
       return t => (0, r.jsx)(e, H(F({}, t), {
         channelId: V.id
       }))

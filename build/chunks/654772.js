@@ -1,0 +1,9 @@
+/** Chunk was on 93886 **/
+/** chunk id: 654772, original params: e,t,a (module,exports,require) **/
+module.exports = {
+  container: "container_e2461d",
+  innerContainer: "innerContainer_e2461d",
+  iconWrapper: "iconWrapper_e2461d",
+  star: "star_e2461d",
+  sparkle: "sparkle_e2461d"
+}

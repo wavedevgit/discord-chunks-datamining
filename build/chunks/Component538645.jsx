@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 538645, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -15,7 +15,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk25251 = require("./25251.js"),
   Chunk373071 = require("./373071.js"),
   Chunk782691 = require("./782691.jsx"),
-  Chunk662583 = require("./662583.js");
+  Chunk189270 = require("./189270.js");
 let f = "Make sure you're only uploading text files!",
   b = e => {
     var t, n, r;
@@ -77,18 +77,18 @@ function _() {
     (0, u.Kr)(e.currentTarget.files, v, u.Eo)
   }, [v]);
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk662583.root,
+    className: Chunk189270.root,
     children: [null == require && (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
       children: [(0, Chunk255367.jsxs)("div", {
-        className: Chunk662583.col,
+        className: Chunk189270.col,
         children: [(0, Chunk255367.jsx)("div", {
-          className: Chunk662583.section,
+          className: Chunk189270.section,
           children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
             variant: "heading-xl/bold",
             children: "Custom Profile Effects"
           })
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk662583.grid,
+          className: Chunk189270.grid,
           children: Object.values(module).map(e => (0, i.jsx)(b, {
             effect: e,
             onClick: e => {
@@ -97,9 +97,9 @@ function _() {
           }, e.id))
         })]
       }), (0, Chunk255367.jsxs)("div", {
-        className: a()(Chunk662583.row, Chunk662583.end, Chunk662583.section),
+        className: a()(Chunk189270.row, Chunk189270.end, Chunk189270.section),
         children: [(0, Chunk255367.jsxs)("div", {
-          className: Chunk662583.uploadButton,
+          className: Chunk189270.uploadButton,
           children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
             variant: "text-md/normal",
             color: "always-white",
@@ -117,7 +117,7 @@ function _() {
           }
         })]
       }), (0, Chunk255367.jsx)("hr", {}), (0, Chunk255367.jsxs)("div", {
-        className: Chunk662583.section,
+        className: Chunk189270.section,
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
           variant: "heading-xl/bold",
           children: "All Effects"
@@ -127,7 +127,7 @@ function _() {
             C(e.target.value)
           }
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk662583.pfxGrid,
+          className: Chunk189270.pfxGrid,
           children: O.map(e => (0, i.jsx)(c.P3F, {
             className: h.pfxListItem,
             style: {

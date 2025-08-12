@@ -1,4 +1,4 @@
-/** Chunk was on 34779 **/
+/** Chunk was on 26628 **/
 /** chunk id: 591190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -7,12 +7,12 @@ var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk113087 = require("./113087.js");
+  Chunk984664 = require("./984664.js");
 let s = () => (0, Chunk255367.jsx)("div", {
-    className: Chunk113087.spacer
+    className: Chunk984664.spacer
   }),
   a = () => (0, Chunk255367.jsx)("div", {
-    className: Chunk113087.category
+    className: Chunk984664.category
   }),
   c = e => {
     let {

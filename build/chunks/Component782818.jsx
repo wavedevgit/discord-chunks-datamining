@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk486324 = require("./486324.js"),
   Chunk485696 = require("./485696.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk240639 = require("./240639.js");
+  Chunk206392 = require("./206392.js");
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -142,7 +142,7 @@ function C(e) {
       (0, o.ZDy)(async () => {
         let {
           default: a
-        } = await Promise.all([n.e("59732"), n.e("58989")]).then(n.bind(n, 712451));
+        } = await Promise.all([n.e("59732"), n.e("46689")]).then(n.bind(n, 712451));
         return n => (0, r.jsx)(a, x({
           imageUri: c,
           file: new File([l], d, {

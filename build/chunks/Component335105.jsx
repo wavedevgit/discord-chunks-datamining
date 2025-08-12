@@ -10,7 +10,7 @@ var Chunk780384 = require("./780384.js"),
   Chunk176332 = require("./176332.jsx"),
   Chunk210642 = require("./210642.jsx"),
   Chunk859218 = require("./859218.jsx"),
-  Chunk297100 = require("./297100.js");
+  Chunk704106 = require("./704106.js");
 let d = (t, e) => {
     let n = (0, s.wj)(e) ? "white" : "black";
     switch (t) {

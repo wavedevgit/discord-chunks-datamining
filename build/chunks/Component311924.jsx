@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk37113 = require("./37113.js"),
   Chunk676462 = require("./676462.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk496958 = require("./496958.js");
+  Chunk403467 = require("./403467.js");
 
 function S(e) {
   let {
@@ -67,7 +67,7 @@ function C() {
     }
   });
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk496958.root,
+    className: Chunk403467.root,
     children: [(0, Chunk255367.jsx)(S, {
       label: Chunk388032.intl.string(Chunk676462.default["7eHfrq"]),
       children: (0, Chunk255367.jsx)(Chunk481060.PhF, {
@@ -97,7 +97,7 @@ function C() {
     }), (0, Chunk255367.jsx)(S, {
       label: Chunk388032.intl.string(Chunk676462.default.PYBXFR),
       children: (0, Chunk255367.jsx)(Chunk481060.sY7, {
-        className: Chunk496958.segmentedControl,
+        className: Chunk403467.segmentedControl,
         options: B,
         look: "pill",
         disabled: D,
@@ -118,7 +118,7 @@ function C() {
     }), (0, Chunk255367.jsx)(S, {
       label: Chunk388032.intl.string(Chunk676462.default["/ssDMT"]),
       children: (0, Chunk255367.jsx)(Chunk481060.sY7, {
-        className: Chunk496958.segmentedControl,
+        className: Chunk403467.segmentedControl,
         disabled: D,
         options: U,
         value: L,

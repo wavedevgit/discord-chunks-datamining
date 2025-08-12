@@ -10,7 +10,7 @@ var Chunk920981 = require("./920981.js"),
   Chunk481060 = require("./481060.js"),
   Chunk335131 = require("./335131.js"),
   Chunk52030 = require("./52030.js"),
-  Chunk977003 = require("./977003.js");
+  Chunk898746 = require("./898746.js");
 let d = () => {
   let e = (0, Chunk442837.e7)([Chunk52030.Z], () => Chunk52030.Z.getShopHomeConfigOverride()),
     t = [{
@@ -21,12 +21,12 @@ let d = () => {
       value: e
     }))];
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk977003.container,
+    className: Chunk898746.container,
     children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       children: "Shop Home Override"
     }), (0, Chunk255367.jsx)(Chunk481060.q4e, {
-      className: Chunk977003.selector,
+      className: Chunk898746.selector,
       options: exports,
       value: module,
       onChange: e => {

@@ -23,7 +23,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk707878 = require("./707878.jsx"),
   Chunk518084 = require("./518084.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk901939 = require("./901939.js");
+  Chunk834943 = require("./834943.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,7 +73,7 @@ class C extends Chunk73800.Component {
       showOpacitySlider: g
     } = this.state;
     return Chunk523746 && !require ? (0, Chunk255367.jsxs)(Chunk518084.ZP.Bar, {
-      className: Chunk901939.opacityHeader,
+      className: Chunk834943.opacityHeader,
       children: [(0, Chunk255367.jsx)(Chunk707878.Z, {}), (0, Chunk255367.jsx)(Chunk984370.Z.Icon, {
         icon: Chunk481060.Dio,
         onClick: this.handleCloseOpacitySettings,
@@ -82,7 +82,7 @@ class C extends Chunk73800.Component {
     }) : (0, Chunk255367.jsx)(Chunk518084.ZP.Background, {
       opacityOverride: require || Chunk933557 ? null : 1,
       children: (0, Chunk255367.jsx)("div", {
-        className: l()(module, exports, Chunk901939.headerContainer),
+        className: l()(module, exports, Chunk834943.headerContainer),
         onMouseDown: Chunk13245,
         onContextMenu: Chunk287734,
         children: (0, Chunk255367.jsxs)(Chunk984370.Z, {
@@ -93,7 +93,7 @@ class C extends Chunk73800.Component {
           children: [Chunk933557 || require || Chunk131704 ? null : (0, Chunk255367.jsx)(Chunk481060.Vni, {
             size: "custom",
             color: "currentColor",
-            className: l()(Chunk901939.dragIcon, exports),
+            className: l()(Chunk834943.dragIcon, exports),
             width: 20,
             height: 20
           }), (0, Chunk910611.ud)({

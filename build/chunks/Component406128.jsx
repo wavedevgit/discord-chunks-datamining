@@ -10,7 +10,7 @@ var Chunk255367 = require("./255367.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
-  Chunk42656 = require("./42656.js");
+  Chunk250504 = require("./250504.js");
 class u extends Chunk73800.PureComponent {
   render() {
     let {
@@ -20,23 +20,23 @@ class u extends Chunk73800.PureComponent {
       className: i
     } = this.props;
     return (0, Chunk255367.jsx)("div", {
-      className: a()(Chunk42656.wrapper, Chunk73800),
+      className: a()(Chunk250504.wrapper, Chunk73800),
       children: (0, Chunk255367.jsxs)(Chunk600164.Z, {
-        className: Chunk42656.flexWrapper,
+        className: Chunk250504.flexWrapper,
         direction: Chunk600164.Z.Direction.VERTICAL,
         align: Chunk600164.Z.Align.CENTER,
         justify: Chunk600164.Z.Justify.CENTER,
         children: [(0, Chunk255367.jsx)(Chunk600164.Z.Child, {
           grow: 0,
-          className: Chunk42656.image
+          className: Chunk250504.image
         }), (0, Chunk255367.jsxs)(Chunk600164.Z.Child, {
           grow: 0,
-          className: Chunk42656.text,
+          className: Chunk250504.text,
           children: [(0, Chunk255367.jsx)(Chunk481060.H, {
-            className: Chunk42656.title,
+            className: Chunk250504.title,
             children: exports
           }), null != module ? (0, Chunk255367.jsx)("div", {
-            className: Chunk42656.note,
+            className: Chunk250504.note,
             children: module
           }) : null]
         }), require]

@@ -56,7 +56,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk921944 = require("./921944.js"),
   Chunk761274 = require("./761274.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk347226 = require("./347226.js"),
+  Chunk84162 = require("./84162.js"),
   Chunk402163 = require("./402163.js");
 
 function ei(e) {
@@ -247,10 +247,10 @@ function eo(e) {
       })
     } else e2()
   }
-  let e4 = i.useCallback(e => {
+  let e8 = i.useCallback(e => {
       eL(e), null != e && (ey && (null == e ? true : e.id.startsWith("camera:")) !== true ? e1(e.id.split(":")[1]) : e1(true), eE(3), eR(true))
     }, [ey]),
-    e8 = i.useCallback(e => {
+    e4 = i.useCallback(e => {
       eq(e);
       var t = 3;
       eE(B ? 2 : 3)
@@ -393,7 +393,7 @@ function eo(e) {
                 children: (0, r.jsx)("div", {
                   className: en.modalSize,
                   children: (0, r.jsx)(V.Z, {
-                    onSelectGuild: e8
+                    onSelectGuild: e4
                   })
                 })
               }), (0, r.jsx)(h.Mi4, {
@@ -401,10 +401,10 @@ function eo(e) {
                 children: (0, r.jsx)("div", {
                   className: en.modalSize,
                   children: ey ? (0, r.jsx)(Y.se, {
-                    onSourceSelect: e4
+                    onSourceSelect: e8
                   }) : (0, r.jsx)(Y.oA, {
                     selectedSource: ek,
-                    onChangeSelectedSource: e4
+                    onChangeSelectedSource: e8
                   })
                 })
               }), (0, r.jsx)(h.Mi4, {
@@ -425,7 +425,7 @@ function eo(e) {
                     onChangeSelectedResolution: e => e5(eU, e, eH),
                     onChangeSelectedPreset: e => e5(e, eW, eH),
                     onChangeSelectedChannelId: eM,
-                    onChangeSelectedSource: e4,
+                    onChangeSelectedSource: e8,
                     onChangeSource: () => tt(),
                     onChangeAudioDevice: e => eB(e),
                     onChangeGuild: () => eE(0),

@@ -12,25 +12,25 @@ var Chunk255367 = require("./255367.js"),
   Chunk18582 = require("./18582.jsx"),
   Chunk603571 = require("./603571.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk854335 = require("./854335.js"),
+  Chunk55784 = require("./55784.js"),
   Chunk527474 = require("./527474.js"),
   Chunk476657 = require("./476657.js");
 
 function g() {
   let [e, t] = (0, Chunk73800.useState)(false), [n, g] = (0, Chunk73800.useState)(false), b = (0, Chunk73800.useRef)(false), y = (0, Chunk442837.e7)([Chunk120421.Z], () => Chunk120421.Z.volume), h = (0, Chunk442837.e7)([Chunk120421.Z], () => Chunk120421.Z.isMuted);
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk854335.volume,
+    className: Chunk55784.volume,
     onMouseEnter: () => exports(true),
     onMouseLeave: () => exports(false),
     children: [(0, Chunk255367.jsx)(Chunk18582.Z, {
       onClick: () => (0, Chunk668826.Zj)(!h),
       children: (0, Chunk255367.jsx)("img", {
-        className: Chunk854335.icon,
+        className: Chunk55784.icon,
         src: h ? Chunk476657 : Chunk527474,
         alt: Chunk388032.intl.string(Chunk603571.default["3Kvtn5"])
       })
     }), module || require ? (0, Chunk255367.jsx)(Chunk481060.iRW, {
-      className: Chunk854335.volumeSlider,
+      className: Chunk55784.volumeSlider,
       initialValue: h ? 0 : 100 * y,
       minValue: 0,
       maxValue: 100,

@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 8231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
@@ -22,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk694338 = require("./694338.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk528880 = require("./528880.js"),
+  Chunk220965 = require("./220965.js"),
   Chunk102655 = require("./102655.js"),
   Chunk768236 = require("./768236.js"),
   Chunk314907 = require("./314907.js"),
@@ -60,17 +60,17 @@ function N(e, t) {
   }), e
 }
 let y = () => (0, Chunk255367.jsx)("div", {
-    className: Chunk528880.comparisonTablePill,
+    className: Chunk220965.comparisonTablePill,
     children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
-      className: Chunk528880.mostPopularText,
+      className: Chunk220965.mostPopularText,
       variant: "text-xs/bold",
       children: Chunk388032.intl.string(Chunk388032.t.TR2B4e)
     })
   }),
   A = () => (0, Chunk255367.jsx)("div", {
-    className: Chunk528880.comparisonTablePill,
+    className: Chunk220965.comparisonTablePill,
     children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
-      className: Chunk528880.mostPopularText,
+      className: Chunk220965.mostPopularText,
       variant: "heading-deprecated-12/extrabold",
       children: Chunk388032.intl.string(Chunk388032.t.IBYG5e)
     })
@@ -186,24 +186,24 @@ let y = () => (0, Chunk255367.jsx)("div", {
   },
   k = () => (0, Chunk255367.jsx)("thead", {
     children: (0, Chunk255367.jsxs)("tr", {
-      className: a()(Chunk528880.headerRow, Chunk528880.topBorderRadius),
+      className: a()(Chunk220965.headerRow, Chunk220965.topBorderRadius),
       children: [(0, Chunk255367.jsx)("th", {
         scope: "col",
-        className: Chunk528880.headerLabelCell,
+        className: Chunk220965.headerLabelCell,
         children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
-          className: Chunk528880.__invalid_textColor,
+          className: Chunk220965.__invalid_textColor,
           variant: "heading-xl/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.XXENra)
         })
       }), (0, Chunk255367.jsx)("th", {
         scope: "col",
-        className: Chunk528880.headerCell,
+        className: Chunk220965.headerCell,
         children: (0, Chunk255367.jsx)(w, {
           premiumType: Chunk474936.p9.TIER_0
         })
       }), (0, Chunk255367.jsx)("th", {
         scope: "col",
-        className: a()(Chunk528880.headerCell, Chunk528880.topBorderRadius),
+        className: a()(Chunk220965.headerCell, Chunk220965.topBorderRadius),
         children: (0, Chunk255367.jsx)(w, {
           premiumType: Chunk474936.p9.TIER_2
         })

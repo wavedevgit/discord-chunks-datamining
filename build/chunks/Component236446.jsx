@@ -32,8 +32,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk630724 = require("./630724.js"),
   Chunk436620 = require("./436620.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk183170 = require("./183170.js"),
-  Chunk20493 = require("./20493.js");
+  Chunk385595 = require("./385595.js"),
+  Chunk881488 = require("./881488.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,9 +71,9 @@ class L extends Chunk73800.PureComponent {
     return (0, Chunk255367.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk255367.jsx)(Chunk388905.Ee, {
         src: require("./167969.js"),
-        className: Chunk20493.marginBottom8
+        className: Chunk881488.marginBottom8
       }), (0, Chunk255367.jsx)(Chunk388905.Dx, {
-        className: o()(Chunk20493.marginTop8, Chunk20493.marginBottom8),
+        className: o()(Chunk881488.marginTop8, Chunk881488.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.C7ZRNz)
       }), (0, Chunk255367.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t.A6MwXF)
@@ -83,7 +83,7 @@ class L extends Chunk73800.PureComponent {
   renderAppOpened() {
     return (0, Chunk255367.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk255367.jsx)(Chunk388905.Dx, {
-        className: Chunk20493.marginBottom8,
+        className: Chunk881488.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.csrAMD)
       }), (0, Chunk255367.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t["m1+IBg"])
@@ -95,7 +95,7 @@ class L extends Chunk73800.PureComponent {
       guildTemplate: e
     } = this.props;
     return (a()(null != module, "guild template must not be null"), module.state === Chunk260539.Rj.RESOLVING) ? (0, Chunk255367.jsx)(Chunk388905.ZP, {
-      className: Chunk183170.authBox,
+      className: Chunk385595.authBox,
       children: (0, Chunk255367.jsx)(Chunk306453.Z, {
         guildTemplate: module
       })

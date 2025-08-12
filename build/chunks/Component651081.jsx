@@ -29,7 +29,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk22864 = require("./22864.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk869322 = require("./869322.js"),
+  Chunk824782 = require("./824782.js"),
   Chunk144452 = require("./144452.js");
 let I = Chunk566006.O.VOTE;
 
@@ -47,8 +47,8 @@ function P() {
       }
     }), (0, Chunk255367.jsx)(Chunk481060.OZU, {
       note: Chunk388032.intl.string(Chunk388032.t.bwytdn),
-      noteClassName: Chunk869322.emptyText,
-      className: Chunk869322.emptyTitle,
+      noteClassName: Chunk824782.emptyText,
+      className: Chunk824782.emptyTitle,
       children: Chunk388032.intl.string(Chunk388032.t.vhQK3t)
     })]
   })

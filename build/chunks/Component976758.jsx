@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 976758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk131951 = require("./131951.js"),
   Chunk36703 = require("./36703.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk245095 = require("./245095.js");
+  Chunk398897 = require("./398897.js");
 let p = (0, Chunk313201.hQ)(),
   g = (0, Chunk313201.hQ)();
 
@@ -28,9 +28,9 @@ function h() {
     outputVolume: Chunk131951.Z.getOutputVolume()
   }));
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk245095.volumes,
+    className: Chunk398897.volumes,
     children: [(0, Chunk255367.jsx)("div", {
-      className: Chunk245095.column,
+      className: Chunk398897.column,
       children: (0, Chunk255367.jsx)(Chunk481060.xJW, {
         title: Chunk388032.intl.string(Chunk388032.t.OX2Bnp),
         titleId: p,
@@ -43,7 +43,7 @@ function h() {
         })
       })
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk245095.column,
+      className: Chunk398897.column,
       children: (0, Chunk255367.jsx)(Chunk481060.xJW, {
         title: Chunk388032.intl.string(Chunk388032.t.eATD2N),
         titleId: g,

@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk816398 = require("./816398.js");
+  Chunk741923 = require("./741923.js");
 let a = () => (0, Chunk255367.jsx)("div", {
-  className: Chunk816398.loadingWrapper,
+  className: Chunk741923.loadingWrapper,
   children: (0, Chunk255367.jsx)(Chunk481060.bbz, {
     dotRadius: 4,
     themed: true

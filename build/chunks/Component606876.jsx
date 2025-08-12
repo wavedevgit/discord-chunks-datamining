@@ -10,62 +10,62 @@ var Chunk255367 = require("./255367.js"),
   Chunk203377 = require("./203377.js"),
   Chunk93841 = require("./93841.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk606055 = require("./606055.js");
+  Chunk727565 = require("./727565.js");
 
 function d() {
   let [e, t] = Chunk73800.useState("");
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk606055.container,
+    className: Chunk727565.container,
     children: [(0, Chunk255367.jsxs)("div", {
-      className: Chunk606055.demo,
+      className: Chunk727565.demo,
       children: [(0, Chunk255367.jsxs)("div", {
-        className: Chunk606055.previewCard,
+        className: Chunk727565.previewCard,
         children: [(0, Chunk255367.jsx)("div", {
-          className: Chunk606055.avatar,
+          className: Chunk727565.avatar,
           children: (0, Chunk255367.jsx)(Chunk481060.gw7, {
             size: "custom",
             width: 24,
             height: 24
           })
         }), (0, Chunk255367.jsxs)("div", {
-          className: Chunk606055.previewCardMessage,
+          className: Chunk727565.previewCardMessage,
           children: [(0, Chunk255367.jsxs)("div", {
-            className: Chunk606055.messageHeaderSkeleton,
+            className: Chunk727565.messageHeaderSkeleton,
             children: [(0, Chunk255367.jsx)("div", {
-              className: Chunk606055.usernameSkeleton
+              className: Chunk727565.usernameSkeleton
             }), (0, Chunk255367.jsx)("div", {
-              className: Chunk606055.timestampSkeleton
+              className: Chunk727565.timestampSkeleton
             })]
           }), (0, Chunk255367.jsxs)("div", {
-            className: Chunk606055.previewCardUrl,
+            className: Chunk727565.previewCardUrl,
             children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
               variant: "text-sm/medium",
               color: "text-tertiary",
-              className: Chunk606055.baseUrl,
+              className: Chunk727565.baseUrl,
               children: "".concat(Chunk203377.mf, "/")
             }), (0, Chunk255367.jsx)(Chunk481060.Text, {
               variant: "text-sm/medium",
               color: "text-link",
-              className: Chunk606055.vanityCode,
+              className: Chunk727565.vanityCode,
               children: module
             })]
           }), (0, Chunk255367.jsxs)("div", {
-            className: Chunk606055.messageEmbed,
+            className: Chunk727565.messageEmbed,
             children: [(0, Chunk255367.jsx)("div", {
-              className: Chunk606055.messageEmbedHeaderSkeleton
+              className: Chunk727565.messageEmbedHeaderSkeleton
             }), (0, Chunk255367.jsxs)("div", {
-              className: Chunk606055.messageEmbedContent,
+              className: Chunk727565.messageEmbedContent,
               children: [(0, Chunk255367.jsx)("div", {
-                className: Chunk606055.messageEmbedContentIconSkeleton
+                className: Chunk727565.messageEmbedContentIconSkeleton
               }), (0, Chunk255367.jsxs)("div", {
-                className: Chunk606055.messageEmbedContentLines,
+                className: Chunk727565.messageEmbedContentLines,
                 children: [(0, Chunk255367.jsx)("div", {
-                  className: Chunk606055.messageEmbedContenPrimaryLineSkeleton
+                  className: Chunk727565.messageEmbedContenPrimaryLineSkeleton
                 }), (0, Chunk255367.jsx)("div", {
-                  className: Chunk606055.messageEmbedContentSecondaryLineSkeleton
+                  className: Chunk727565.messageEmbedContentSecondaryLineSkeleton
                 })]
               }), (0, Chunk255367.jsx)("div", {
-                className: Chunk606055.messageEmbedContentActionSkeleton
+                className: Chunk727565.messageEmbedContentActionSkeleton
               })]
             })]
           })]
@@ -74,12 +74,12 @@ function d() {
         autoFocus: true,
         value: module,
         onChange: exports,
-        className: Chunk606055.vanityUrlInput
+        className: Chunk727565.vanityUrlInput
       })]
     }), (0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
       color: "text-tertiary",
-      className: Chunk606055.disclaimer,
+      className: Chunk727565.disclaimer,
       children: Chunk388032.intl.string(Chunk93841.default.u5iNb2)
     })]
   })

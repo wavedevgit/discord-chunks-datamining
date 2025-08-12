@@ -28,7 +28,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk871118 = require("./871118.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk768780 = require("./768780.js");
+  Chunk736540 = require("./736540.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -136,13 +136,13 @@ class x extends Chunk73800.PureComponent {
       hideTip: s
     } = this.props;
     return null == require ? null : (0, Chunk255367.jsx)("div", {
-      className: a()(Chunk768780.streamPreviewWrapper, {
-        [Chunk768780.mounted]: Chunk73800
+      className: a()(Chunk736540.streamPreviewWrapper, {
+        [Chunk736540.mounted]: Chunk73800
       }),
       children: (0, Chunk255367.jsxs)("div", {
-        className: Chunk768780.streamPreview,
+        className: Chunk736540.streamPreview,
         children: [this.renderPreview(require), (0, Chunk255367.jsxs)("div", {
-          className: Chunk768780.body,
+          className: Chunk736540.body,
           children: [null != module ? (0, Chunk255367.jsx)(Chunk717881.Z, {
             hideHeader: true,
             type: Chunk717881.P.STREAM_PREVIEW,
@@ -163,12 +163,12 @@ class x extends Chunk73800.PureComponent {
             user: exports,
             guildId: require.guildId,
             channelId: require.channelId,
-            className: Chunk768780.activityActions,
-            color: Chunk768780.watchButton,
+            className: Chunk736540.activityActions,
+            color: Chunk736540.watchButton,
             onAction: Chunk120356
           }), !Chunk442837 && (0, Chunk255367.jsx)(Chunk576855.Z, {
             type: Chunk576855.Z.Types.INLINE,
-            className: Chunk768780.protip,
+            className: Chunk736540.protip,
             children: __OVERLAY__ ? Chunk388032.intl.string(Chunk388032.t["YRdw7+"]) : Chunk388032.intl.string(Chunk388032.t.CCTgbG)
           })]
         })]

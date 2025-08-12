@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 720734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => tg,
@@ -121,7 +121,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk46140 = require("./46140.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk239692 = require("./239692.js");
+  Chunk452414 = require("./452414.js");
 
 function ti(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -329,7 +329,7 @@ class tu extends Chunk73800.PureComponent {
         activities: exports,
         applicationStream: require,
         voiceChannel: Chunk392711 ? o : true,
-        textClassName: Chunk239692.activityStatusText,
+        textClassName: Chunk452414.activityStatusText,
         hideTooltip: true
       })
     });
@@ -344,8 +344,8 @@ class tu extends Chunk73800.PureComponent {
       forceHover: module,
       children: (0, Chunk255367.jsx)(Chunk427217.Z, {
         activity: Chunk374470,
-        emojiClassName: Chunk239692.emoji,
-        className: Chunk239692.customStatus
+        emojiClassName: Chunk452414.emoji,
+        className: Chunk452414.customStatus
       })
     }) : null != Chunk120356 && Chunk120356 !== Chunk981631.Skl.UNKNOWN && Chunk73800.hasUniqueUsername() ? (0, Chunk255367.jsx)(Chunk570928.Z, {
       hoverText: a,

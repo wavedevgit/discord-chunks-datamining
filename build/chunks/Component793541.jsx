@@ -9,13 +9,13 @@ require("./73800.js");
 var Chunk723484 = require("./723484.jsx"),
   Chunk51499 = require("./51499.jsx"),
   Chunk27034 = require("./27034.jsx"),
-  Chunk312186 = require("./312186.js");
+  Chunk662067 = require("./662067.js");
 
 function l() {
   return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
     children: [(0, Chunk255367.jsx)(Chunk51499.Z, {}), (0, Chunk255367.jsx)(Chunk27034.C3, {
       children: (0, Chunk255367.jsx)(Chunk723484.F, {
-        className: Chunk312186.awaitingAuthenticationStep
+        className: Chunk662067.awaitingAuthenticationStep
       })
     })]
   })

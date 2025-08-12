@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 586920, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   i: () => f
@@ -13,7 +13,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk594135 = require("./594135.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk735912 = require("./735912.js"),
+  Chunk971492 = require("./971492.js"),
   Chunk997892 = require("./997892.js"),
   Chunk234286 = require("./234286.js");
 let f = () => {
@@ -48,7 +48,7 @@ let f = () => {
       actions: v,
       onClose: async () => exports(),
       children: (0, Chunk255367.jsx)("div", {
-        className: Chunk735912.offerDetailContainer,
+        className: Chunk971492.offerDetailContainer,
         children: (0, Chunk255367.jsx)(Chunk10508.o, {
           offerState: Chunk10508.w.APPLIED,
           userDiscountOffer: b

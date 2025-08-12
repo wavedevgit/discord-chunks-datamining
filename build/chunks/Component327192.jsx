@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 327192, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => J
@@ -42,8 +42,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk856651 = require("./856651.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk741138 = require("./741138.js"),
-  Chunk20493 = require("./20493.js");
+  Chunk154040 = require("./154040.js"),
+  Chunk881488 = require("./881488.js");
 
 function H(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -433,11 +433,11 @@ function Y() {
       dismissAction: Chunk921944.L.AUTO
     })
   }, []), (0, Chunk255367.jsxs)("div", {
-    className: Chunk741138.connectContainer,
+    className: Chunk154040.connectContainer,
     children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
       variant: "heading-md/bold",
       color: "interactive-active",
-      className: Chunk741138.connectHeader,
+      className: Chunk154040.connectHeader,
       children: Chunk388032.intl.string(Chunk388032.t.ZeDrUV)
     }), (0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
@@ -469,7 +469,7 @@ function q() {
   }
   let t = (0, Chunk122021.fq)();
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk741138.connectionsContainer,
+    className: Chunk154040.connectionsContainer,
     children: [exports.slice(0, 10).map(e => (0, i.jsx)(f.Z, {
       type: e.type,
       className: G.__invalid_accountButton,
@@ -547,7 +547,7 @@ let J = () => {
   return (Chunk73800.useEffect(() => {
     Chunk457330.Z.fetch()
   }, []), module) ? (0, Chunk255367.jsx)(Chunk497321.Z, {}) : (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-    className: Chunk741138.__invalid_connections,
+    className: Chunk154040.__invalid_connections,
     tag: Chunk481060.RB0.H1,
     title: Chunk388032.intl.string(Chunk388032.t["3fe7U1"]),
     children: [(0, Chunk255367.jsx)(Y, {}), (0, Chunk255367.jsx)(X, {

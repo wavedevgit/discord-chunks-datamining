@@ -14,7 +14,7 @@ var s, Chunk255367 = require("./255367.js"),
   Chunk133853 = require("./133853.jsx"),
   Chunk686694 = require("./686694.jsx"),
   Chunk898625 = require("./898625.js"),
-  Chunk126649 = require("./126649.js");
+  Chunk554371 = require("./554371.js");
 
 function m(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
@@ -106,8 +106,8 @@ class b extends(s = Chunk73800.PureComponent) {
       height: s
     } = this.state;
     return null != module ? (0, Chunk255367.jsx)(Chunk877604.Z, {
-      className: r()(Chunk126649.rightSplit, {
-        [Chunk126649.embedded]: exports
+      className: r()(Chunk554371.rightSplit, {
+        [Chunk554371.embedded]: exports
       }),
       src: module,
       width: require,
@@ -130,7 +130,7 @@ class b extends(s = Chunk73800.PureComponent) {
       updateWaveState: exports,
       hideFallback: !Chunk73800
     }) : (0, Chunk255367.jsx)("div", {
-      className: Chunk126649.mobileWave
+      className: Chunk554371.mobileWave
     })
   }
   renderContent() {
@@ -145,12 +145,12 @@ class b extends(s = Chunk73800.PureComponent) {
     } = this.state;
     return (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
       children: [this.renderWave(), (0, Chunk255367.jsxs)("div", {
-        className: r()(Chunk126649.leftSplit, {
-          [Chunk126649.nonEmbeddedLeftSplit]: Chunk120356
+        className: r()(Chunk554371.leftSplit, {
+          [Chunk554371.nonEmbeddedLeftSplit]: Chunk120356
         }),
         children: [require ? (0, Chunk255367.jsx)(Chunk133853.Z, {
           show: !Chunk477690 || exports === Chunk898625.hO.ENTERED && exports !== Chunk898625.hO.FILLING,
-          className: r()(Chunk126649.logo, s)
+          className: r()(Chunk554371.logo, s)
         }) : null, module]
       })]
     })
@@ -160,7 +160,7 @@ class b extends(s = Chunk73800.PureComponent) {
       className: t
     } = this.props;
     return (0, Chunk255367.jsxs)("div", {
-      className: r()(module, Chunk126649.wrapper),
+      className: r()(module, Chunk554371.wrapper),
       children: [this.renderSplashArt(), this.renderContent()]
     })
   }

@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk145597 = require("./145597.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk302615 = require("./302615.js");
+  Chunk134494 = require("./134494.js");
 let g = () => (0, Chunk51596.$Z)("DM_SEARCH"),
   m = Chunk73800.memo(function() {
     let e = (0, Chunk442837.e7)([Chunk237997.default], () => Chunk237997.default.isLocked((0, Chunk145597.getPID)()) ? "true" : "false"),
@@ -25,12 +25,12 @@ let g = () => (0, Chunk51596.$Z)("DM_SEARCH"),
         return t
       });
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk302615.privateChannels,
+      className: Chunk134494.privateChannels,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk302615.searchBar,
+        className: Chunk134494.searchBar,
         children: (0, Chunk255367.jsx)("button", {
           type: "button",
-          className: Chunk302615.searchBarComponent,
+          className: Chunk134494.searchBarComponent,
           onClick: g,
           children: Chunk388032.intl.string(Chunk388032.t.LzcpeX)
         })
@@ -40,7 +40,7 @@ let g = () => (0, Chunk51596.$Z)("DM_SEARCH"),
         version: module,
         selectedChannelId: exports
       }), (0, Chunk255367.jsx)("section", {
-        className: Chunk302615.panels,
+        className: Chunk134494.panels,
         "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWF),
         children: (0, Chunk255367.jsx)(Chunk840780.Z, {
           guildId: null

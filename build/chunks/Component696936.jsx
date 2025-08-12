@@ -9,11 +9,11 @@ require("./73800.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk956542 = require("./956542.js");
+  Chunk729329 = require("./729329.js");
 let a = {
-  RED: Chunk956542.redMessageBlock,
-  YELLOW: Chunk956542.yellowMessageBlock,
-  BROWN: Chunk956542.brownMessageBlock
+  RED: Chunk729329.redMessageBlock,
+  YELLOW: Chunk729329.yellowMessageBlock,
+  BROWN: Chunk729329.brownMessageBlock
 };
 
 function c(e) {

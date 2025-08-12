@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk410575 = require("./410575.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk128654 = require("./128654.js");
+  Chunk479098 = require("./479098.js");
 
 function E(e) {
   var t, n;
@@ -73,14 +73,14 @@ let y = Chunk73800.memo(function() {
     document.body.style.setProperty("--custom-app-panels-height", "".concat(t, "px"))
   }, []), (0, Chunk255367.jsx)("section", {
     ref: module,
-    className: Chunk128654.panels,
+    className: Chunk479098.panels,
     "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWF),
     children: (0, Chunk255367.jsxs)(Chunk708816.Jc, {
       containerRef: module,
       children: [(0, Chunk255367.jsx)(Chunk316173.Z, {}), (0, Chunk255367.jsx)(Chunk210724.Z, {}), (0, Chunk255367.jsx)(Chunk235555.Z, {}), (0, Chunk255367.jsx)(Chunk410575.Z, {
         section: Chunk981631.jXE.ACTIVITY_PANEL,
         children: (0, Chunk255367.jsx)(E, {
-          className: Chunk128654.activityPanel
+          className: Chunk479098.activityPanel
         })
       }), (0, Chunk255367.jsx)(Chunk410575.Z, {
         section: Chunk981631.jXE.RTC_CONNECTION_PANEL,

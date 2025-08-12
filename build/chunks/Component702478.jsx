@@ -1,4 +1,4 @@
-/** Chunk was on 22988 **/
+/** Chunk was on 5533 **/
 /** chunk id: 702478, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk190378 = require("./190378.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk24304 = require("./24304.js");
+  Chunk79840 = require("./79840.js");
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -72,7 +72,7 @@ let I = function(e, t, n) {
     let [e, t] = Chunk73800.useState(false), n = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildId());
     return (0, Chunk255367.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: Chunk24304.developerPortalCta,
+      className: Chunk79840.developerPortalCta,
       children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.Uskgx8),
@@ -124,9 +124,9 @@ let I = function(e, t, n) {
       (0, Chunk142497.Kw)(Chunk190378.v.GUILD_ANALYTICS_GUILD_SETTINGS_MENU)
     }, []);
     let P = null != Chunk640358 ? (0, Chunk255367.jsx)("div", {
-      className: Chunk24304.__invalid_guildAnalyticsOverviewWrapper,
+      className: Chunk79840.__invalid_guildAnalyticsOverviewWrapper,
       children: (0, Chunk255367.jsxs)("div", {
-        className: Chunk24304.overviewData,
+        className: Chunk79840.overviewData,
         children: [(0, Chunk255367.jsx)(Chunk841470.Z, N({
           title: Chunk388032.intl.string(Chunk388032.t.i0Nora),
           tooltipText: Chunk388032.intl.string(Chunk388032.t.KiRbLC)
@@ -148,16 +148,16 @@ let I = function(e, t, n) {
         type: Chunk481060.geA.DESCRIPTION,
         children: Chunk388032.intl.format(Chunk388032.t.NIZ60d, {})
       }), E(Chunk544891, T), (0, Chunk255367.jsxs)("div", {
-        className: Chunk24304.developerPortalCtaWrapper,
+        className: Chunk79840.developerPortalCtaWrapper,
         children: [(0, Chunk255367.jsx)("div", {
-          className: Chunk24304.placeholderImage
+          className: Chunk79840.placeholderImage
         }), (0, Chunk255367.jsx)(Chunk481060.Text, {
-          className: Chunk24304.developerPortalCtaText,
+          className: Chunk79840.developerPortalCtaText,
           variant: "text-sm/normal",
           children: Chunk388032.intl.string(Chunk388032.t.A5vsws)
         }), (0, Chunk255367.jsx)(S, {})]
       }), Chunk626135 ? (0, Chunk255367.jsx)("div", {
-        className: Chunk24304.streamerMode,
+        className: Chunk79840.streamerMode,
         children: (0, Chunk255367.jsx)(Chunk497321.Z, {})
       }) : P]
     })

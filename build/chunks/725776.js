@@ -1,10 +1,17 @@
-/** Chunk was on web.js **/
-/** chunk id: 725776, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 73628 **/
+/** chunk id: 725776, original params: e,t,A (module,exports,require) **/
 module.exports = {
-  menu: "menu__77820",
-  optionLabel: "optionLabel__77820",
-  optionIcon: "optionIcon__77820",
-  badge: "badge__77820",
-  optionName: "optionName__77820"
+  container: "container_f8a8fa",
+  uploadArea: "uploadArea_f8a8fa",
+  addFileButtonLook: "addFileButtonLook_f8a8fa",
+  addFileButton: "addFileButton_f8a8fa",
+  addFileButtonIcon: "addFileButtonIcon_f8a8fa",
+  separator: "separator_f8a8fa",
+  attachedFilesContainer: "attachedFilesContainer_f8a8fa",
+  attachedFileCard: "attachedFileCard_f8a8fa",
+  attachedFileCardSpinner: "attachedFileCardSpinner_f8a8fa",
+  attachedFileCardError: "attachedFileCardError_f8a8fa",
+  attachedFileCardUploading: "attachedFileCardUploading_f8a8fa",
+  deleteButton: "deleteButton_f8a8fa",
+  deleteButtonInner: "deleteButtonInner_f8a8fa"
 }

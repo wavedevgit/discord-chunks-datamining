@@ -22,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk74538 = require("./74538.js"),
   Chunk204418 = require("./204418.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk520271 = require("./520271.js");
+  Chunk896830 = require("./896830.js");
 let v = [{
     avatarSize: Chunk481060.EFr.SIZE_40,
     showStatus: false

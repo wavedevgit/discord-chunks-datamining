@@ -26,7 +26,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk905656 = require("./905656.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk64648 = require("./64648.js");
+  Chunk759105 = require("./759105.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -79,56 +79,56 @@ class P extends Chunk73800.PureComponent {
       let i = this._loadingText,
         l = null;
       return null != this._eventLoadingText && (i = this._eventLoadingText), null != exports && (i = exports.name, l = exports.incident_updates[0].body), (0, Chunk255367.jsxs)("div", {
-        className: Chunk64648.container,
+        className: Chunk759105.container,
         "data-fade": require,
         style: {
           "--connecting-container-fade-duration": "".concat(200, "ms"),
           "--connecting-content-fade-duration": "".concat(150, "ms")
         },
         children: [(0, Chunk255367.jsxs)("div", {
-          className: Chunk64648.content,
+          className: Chunk759105.content,
           children: [(0, Chunk255367.jsx)(Chunk905656.Z, {
             autoPlay: true,
             loop: !module,
             setRef: this.setVideoRef,
             onReady: this.handleReady,
-            className: a()(Chunk64648.spinner, this.state.ready ? Chunk64648.ready : "")
+            className: a()(Chunk759105.spinner, this.state.ready ? Chunk759105.ready : "")
           }), (0, Chunk255367.jsxs)("div", {
-            className: Chunk64648.text,
+            className: Chunk759105.text,
             children: [null != exports ? null : (0, Chunk255367.jsx)("div", {
-              className: Chunk64648.tipTitle,
+              className: Chunk759105.tipTitle,
               children: Chunk388032.intl.string(Chunk388032.t.v0R1Li)
             }), (0, Chunk255367.jsx)("div", {
-              className: null != exports ? Chunk64648.title : Chunk64648.tip,
+              className: null != exports ? Chunk759105.title : Chunk759105.tip,
               children: Chunk73800
             }), (0, Chunk255367.jsx)("div", {
-              className: Chunk64648.body,
+              className: Chunk759105.body,
               children: Chunk120356
             })]
           })]
         }), (0, Chunk255367.jsxs)("div", {
-          className: a()(Chunk64648.problems, {
-            [Chunk64648.slideIn]: this.state.problems
+          className: a()(Chunk759105.problems, {
+            [Chunk759105.slideIn]: this.state.problems
           }),
           children: [(0, Chunk255367.jsx)("div", {
-            className: Chunk64648.problemsText,
+            className: Chunk759105.problemsText,
             children: Chunk388032.intl.string(Chunk388032.t.AG2zPD)
           }), (0, Chunk255367.jsxs)("div", {
             children: [(0, Chunk255367.jsxs)(Chunk481060.eee, {
-              className: Chunk64648.twitterLink,
+              className: Chunk759105.twitterLink,
               href: Chunk981631.yXt.TWITTER_SUPPORT,
               target: "_blank",
               children: [(0, Chunk255367.jsx)(Chunk481060.TAi, {
                 size: "xs",
                 color: "currentColor",
-                className: Chunk64648.icon
+                className: Chunk759105.icon
               }), Chunk388032.intl.string(Chunk388032.t.KlyTbm)]
             }), (0, Chunk255367.jsxs)(Chunk481060.eee, {
-              className: Chunk64648.statusLink,
+              className: Chunk759105.statusLink,
               href: Chunk981631.yXt.STATUS,
               target: "_blank",
               children: [(0, Chunk255367.jsx)(Chunk820254.Z, {
-                className: Chunk64648.icon
+                className: Chunk759105.icon
               }), Chunk388032.intl.string(Chunk388032.t.AgXXy8)]
             })]
           })]

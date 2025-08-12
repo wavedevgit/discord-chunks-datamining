@@ -1,12 +1,13 @@
-/** Chunk was on 66317 **/
+/** Chunk was on 96910 **/
 /** chunk id: 479766, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => s
 }), require("./539854.js");
 var n, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function i(e, t, r) {
+function l(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: true,
@@ -133,8 +134,8 @@ class o extends(n = Chunk442837.ZP.Store) {
       VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY: e => {
         this.setBalancePillOverlay(e.balancePillOverlay)
       }
-    }), i(this, "_entitlements", null), i(this, "_redeemingSkuId", null), i(this, "_isRedeemingVirtualCurrency", false), i(this, "_redeemVirtualCurrencyError", null), i(this, "_balance", null), i(this, "_fetchBalanceError", null), i(this, "_isFetchingBalance", false), i(this, "_onboardingModalOpenedPrior", false), i(this, "_earnedOrbsCoachmarkOpen", false), i(this, "_earnedOrbsCoachmarkDedupeKeys", []), i(this, "_earnedOrbsCoachmarkQuantity", 0), i(this, "_balancePillOverlay", false)
+    }), l(this, "_entitlements", null), l(this, "_redeemingSkuId", null), l(this, "_isRedeemingVirtualCurrency", false), l(this, "_redeemVirtualCurrencyError", null), l(this, "_balance", null), l(this, "_fetchBalanceError", null), l(this, "_isFetchingBalance", false), l(this, "_onboardingModalOpenedPrior", false), l(this, "_earnedOrbsCoachmarkOpen", false), l(this, "_earnedOrbsCoachmarkDedupeKeys", []), l(this, "_earnedOrbsCoachmarkQuantity", 0), l(this, "_balancePillOverlay", false)
   }
 }
-i(o, "displayName", "VirtualCurrencyStore");
-let u = new o
+l(o, "displayName", "VirtualCurrencyStore");
+let s = new o

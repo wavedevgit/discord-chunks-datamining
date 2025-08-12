@@ -11,7 +11,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk717401 = require("./717401.js"),
   Chunk286961 = require("./286961.js"),
   Chunk897942 = require("./897942.jsx"),
-  Chunk154422 = require("./154422.js");
+  Chunk977631 = require("./977631.js");
 
 function m() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
@@ -23,21 +23,21 @@ function m() {
   if (null == m || null == exports || 0 === exports.length) return null;
   let C = (0, Chunk717401.Tl)(m.gradientConfig);
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk154422.promotionalGiftMessage,
+    className: Chunk977631.promotionalGiftMessage,
     style: C,
     children: [(0, Chunk255367.jsxs)("div", {
-      className: Chunk154422.promotionalTextSection,
+      className: Chunk977631.promotionalTextSection,
       children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
-        className: Chunk154422.promotionalGiftMessageText,
+        className: Chunk977631.promotionalGiftMessageText,
         variant: "text-sm/semibold",
         children: m.heading()
       }), null != m.subheading && exports.length > 1 && (0, Chunk255367.jsx)(Chunk481060.Text, {
-        className: Chunk154422.promotionalGiftMessageText,
+        className: Chunk977631.promotionalGiftMessageText,
         variant: "text-sm/normal",
         children: m.subheading(exports.length)
       })]
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk154422.avatar,
+      className: Chunk977631.avatar,
       children: (0, Chunk255367.jsx)(Chunk897942.Z, {
         maxRewardImageSrc: m.getImageUrl(true, module),
         claimableRewards: exports,

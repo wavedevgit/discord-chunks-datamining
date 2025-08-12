@@ -1,4 +1,4 @@
-/** Chunk was on 34779 **/
+/** Chunk was on 26628 **/
 /** chunk id: 373274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => eC,
@@ -67,7 +67,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk789123 = require("./789123.js");
+  Chunk432178 = require("./432178.js");
 
 function ef(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -202,14 +202,14 @@ class eO extends(r = Chunk73800.PureComponent) {
       guildChannelsVersion: s
     } = this.props;
     return (0, Chunk255367.jsx)("div", {
-      className: Chunk789123.positionedContainer,
+      className: Chunk432178.positionedContainer,
       children: (0, Chunk255367.jsx)(Chunk950969.Z, {
         ref: this.unreadTopRef,
         textUnread: Chunk388032.intl.string(Chunk388032.t.FCRiT0),
         textMention: Chunk388032.intl.string(Chunk388032.t["8zH0LC"]),
         hide: null == module && (r || null != exports || null != require),
-        className: Chunk789123.unreadTop,
-        barClassName: Chunk789123.unreadBar,
+        className: Chunk432178.unreadTop,
+        barClassName: Chunk432178.unreadBar,
         guildId: Chunk73800,
         guildChannels: Chunk392711,
         guildChannelsVersion: s,
@@ -234,8 +234,8 @@ class eO extends(r = Chunk73800.PureComponent) {
       textUnread: Chunk388032.intl.string(Chunk388032.t.FCRiT0),
       textMention: Chunk388032.intl.string(Chunk388032.t["8zH0LC"]),
       hide: null == r && Chunk73800,
-      className: Chunk789123.unreadBottom,
-      barClassName: Chunk789123.unreadBar,
+      className: Chunk432178.unreadBottom,
+      barClassName: Chunk432178.unreadBar,
       guildId: module,
       guildChannels: exports,
       guildChannelsVersion: require,

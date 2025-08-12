@@ -1,4 +1,4 @@
-/** Chunk was on 715 **/
+/** Chunk was on 33784 **/
 /** chunk id: 596583, original params: e,r,t (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -26,7 +26,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk263885 = require("./263885.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk974149 = require("./974149.js");
+  Chunk18557 = require("./18557.js");
 let U = (e, r) => {
     _.Z.hasLayers() && (0, c.xf)(), p.Z.openPrivateChannel({
       recipientIds: e

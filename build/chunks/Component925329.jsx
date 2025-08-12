@@ -13,14 +13,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk565138 = require("./565138.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk235831 = require("./235831.js");
+  Chunk87863 = require("./87863.js");
 let f = {
-  XXSMALL: Chunk235831.xxsmall,
-  XSMALL: Chunk235831.xsmall,
-  SMALL: Chunk235831.small,
-  MEDIUM: Chunk235831.medium,
-  LARGE: Chunk235831.large,
-  XLARGE: Chunk235831.xlarge
+  XXSMALL: Chunk87863.xxsmall,
+  XSMALL: Chunk87863.xsmall,
+  SMALL: Chunk87863.small,
+  MEDIUM: Chunk87863.medium,
+  LARGE: Chunk87863.large,
+  XLARGE: Chunk87863.xlarge
 };
 
 function _(e) {

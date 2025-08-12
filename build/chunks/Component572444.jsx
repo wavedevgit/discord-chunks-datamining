@@ -17,8 +17,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk131951 = require("./131951.js"),
   Chunk246992 = require("./246992.js"),
   Chunk65154 = require("./65154.js"),
-  Chunk203759 = require("./203759.js"),
-  Chunk616257 = require("./616257.js");
+  Chunk439693 = require("./439693.js"),
+  Chunk881291 = require("./881291.js");
 
 function j(e) {
   let {
@@ -155,9 +155,9 @@ function _() {
     label: "Disabled",
     value: "NONE"
   }), (0, Chunk255367.jsx)(Chunk481060.zJl, {
-    className: Chunk616257.panel,
+    className: Chunk881291.panel,
     children: (0, Chunk255367.jsxs)("div", {
-      className: Chunk203759.innerPanel,
+      className: Chunk439693.innerPanel,
       children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-lg/bold",
         children: "Krisp Tester"

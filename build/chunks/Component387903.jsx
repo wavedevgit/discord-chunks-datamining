@@ -43,7 +43,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk701488 = require("./701488.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk636424 = require("./636424.js");
+  Chunk572606 = require("./572606.js");
 
 function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -94,7 +94,7 @@ let z = {
   q = (0, Chunk438139.Z)(class extends Chunk73800.PureComponent {
     render() {
       return (0, Chunk255367.jsx)("div", {
-        className: Chunk636424.timestamp,
+        className: Chunk572606.timestamp,
         children: this.props.message
       })
     }
@@ -197,7 +197,7 @@ class J extends(r = Chunk73800.PureComponent) {
   }
   renderXboxImage() {
     return (0, Chunk255367.jsx)("div", {
-      className: Chunk636424.assets,
+      className: Chunk572606.assets,
       children: (0, Chunk255367.jsx)("img", {
         alt: "",
         src: Chunk726542.Z.get(Chunk981631.ABu.XBOX).icon.customPNG,
@@ -526,13 +526,13 @@ class J extends(r = Chunk73800.PureComponent) {
     return (0, Chunk255367.jsxs)("div", {
       className: s()(this.getTypeClass("activity"), r),
       children: [this.renderHeader(Chunk833858), (0, Chunk255367.jsx)("div", {
-        className: s()(Chunk410030 ? Chunk636424.bodyAlignCenter : Chunk636424.bodyNormal),
+        className: s()(Chunk410030 ? Chunk572606.bodyAlignCenter : Chunk572606.bodyNormal),
         children: (0, Chunk255367.jsxs)("div", {
-          className: Chunk636424.activityDetails,
+          className: Chunk572606.activityDetails,
           children: [module, this.isStreamerOnTypeActivityFeed() ? null : (0, Chunk255367.jsxs)(Chunk600164.Z.Child, {
-            className: s()((0, Chunk153066.l)(Chunk636424, "content", Chunk410030 ? "GameImage" : null != module ? "Images" : "NoImages", exports)),
+            className: s()((0, Chunk153066.l)(Chunk572606, "content", Chunk410030 ? "GameImage" : null != module ? "Images" : "NoImages", exports)),
             children: [(0, Chunk255367.jsxs)(Chunk481060.P3F, {
-              className: s()(null != Chunk512722 && Chunk636424.openGameProfile),
+              className: s()(null != Chunk512722 && Chunk572606.openGameProfile),
               onClick: null != Chunk512722 ? e => {
                 l(e), null == a || a()
               } : true,

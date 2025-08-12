@@ -1,4 +1,4 @@
-/** Chunk was on 49152 **/
+/** Chunk was on 21087 **/
 /** chunk id: 9145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -40,11 +40,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk918559 = require("./918559.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk199570 = require("./199570.js");
+  Chunk757728 = require("./757728.js");
 let H = Chunk884338.u8.SIZE_32,
   G = {
-    [Chunk918559.MI.NO_CHAT]: Chunk199570.noChat,
-    [Chunk918559.MI.RESIZABLE]: Chunk199570.resizable
+    [Chunk918559.MI.NO_CHAT]: Chunk757728.noChat,
+    [Chunk918559.MI.RESIZABLE]: Chunk757728.resizable
   };
 
 function B(e) {

@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk560768 = require("./560768.js"),
   Chunk812206 = require("./812206.js"),
   Chunk405701 = require("./405701.jsx"),
-  Chunk843693 = require("./843693.js"),
+  Chunk339478 = require("./339478.js"),
   Chunk246642 = require("./246642.jsx"),
   Chunk624030 = require("./624030.js"),
   Chunk314897 = require("./314897.js"),
@@ -33,7 +33,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk5192 = require("./5192.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk486850 = require("./486850.js");
+  Chunk588670 = require("./588670.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -118,11 +118,11 @@ class U extends Chunk73800.PureComponent {
       activity: e
     } = this.props;
     return (0, Chunk255367.jsxs)("div", {
-      className: a()(Chunk486850.activityInviteEducation, {
-        [Chunk486850.activityInviteEducationFadeIn]: this.state.fadeIn
+      className: a()(Chunk588670.activityInviteEducation, {
+        [Chunk588670.activityInviteEducationFadeIn]: this.state.fadeIn
       }),
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk486850.activityInviteEducationArrow
+        className: Chunk588670.activityInviteEducationArrow
       }), (0, Chunk255367.jsx)("span", {
         children: Chunk388032.intl.format(Chunk388032.t["i/MoCg"], {
           game: module.name,

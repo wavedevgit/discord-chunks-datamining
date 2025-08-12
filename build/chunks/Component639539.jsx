@@ -13,7 +13,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
   Chunk70956 = require("./70956.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk819496 = require("./819496.js");
+  Chunk944075 = require("./944075.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -141,11 +141,11 @@ let E = e => {
     });
     return (0, Chunk255367.jsxs)(Chunk717976.animated.div, {
       style: require,
-      className: Chunk819496.colonContainer,
+      className: Chunk944075.colonContainer,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk819496.tinyDot
+        className: Chunk944075.tinyDot
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk819496.tinyDot
+        className: Chunk944075.tinyDot
       })]
     })
   },

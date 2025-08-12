@@ -40,7 +40,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk701476 = require("./701476.js"),
   Chunk436620 = require("./436620.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk20493 = require("./20493.js");
+  Chunk881488 = require("./881488.js");
 
 function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -166,9 +166,9 @@ class H extends Chunk73800.PureComponent {
     return (0, Chunk255367.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk255367.jsx)(Chunk388905.Ee, {
         src: require("./167969.js"),
-        className: Chunk20493.marginBottom8
+        className: Chunk881488.marginBottom8
       }), (0, Chunk255367.jsx)(Chunk388905.Dx, {
-        className: o()(Chunk20493.marginTop8, Chunk20493.marginBottom8),
+        className: o()(Chunk881488.marginTop8, Chunk881488.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.kux01N)
       }), (0, Chunk255367.jsx)(Chunk388905.DK, {
         children: module ? Chunk388032.intl.string(Chunk388032.t["5AkWAQ"]) : Chunk388032.intl.string(Chunk388032.t["+qUJAg"])
@@ -176,7 +176,7 @@ class H extends Chunk73800.PureComponent {
         onClick: () => window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.INVALID_INVITES), "_blank"),
         look: Chunk388905.zx.Looks.LINK,
         color: Chunk388905.zx.Colors.LINK,
-        className: Chunk20493.marginTop8,
+        className: Chunk881488.marginTop8,
         children: Chunk388032.intl.string(Chunk388032.t.urIwn5)
       })]
     })
@@ -226,7 +226,7 @@ class H extends Chunk73800.PureComponent {
       invite: e
     } = this.props;
     return (null != module.stage_instance || null != module.guild_scheduled_event) && null != module.guild ? (0, Chunk255367.jsx)(Chunk388905.ZP, {
-      className: Chunk20493.marginTop20,
+      className: Chunk881488.marginTop20,
       children: (0, Chunk255367.jsx)(Chunk792766.y, {
         guild: module.guild,
         onlineCount: module.approximate_presence_count

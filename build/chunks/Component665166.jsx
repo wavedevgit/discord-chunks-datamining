@@ -1,11 +1,11 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 665166, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
-  Chunk515149 = require("./515149.js"),
+  Chunk125697 = require("./125697.js"),
   Chunk481060 = require("./481060.js"),
   Chunk832840 = require("./832840.js"),
   Chunk200951 = require("./200951.js"),
@@ -15,7 +15,7 @@ function d() {
   Chunk73800.useSyncExternalStore(Chunk388032.intl.onLocaleChange, () => Chunk388032.intl.currentLocale);
   let [, e] = Chunk73800.useState({});
   return Chunk73800.useEffect(() => {
-    (0, Chunk515149.waitForAllDefaultIntlMessagesLoaded)().then(() => {
+    (0, Chunk125697.waitForAllDefaultIntlMessagesLoaded)().then(() => {
       module({})
     })
   }, []), (0, Chunk255367.jsxs)(Chunk255367.Fragment, {

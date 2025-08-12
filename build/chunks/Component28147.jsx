@@ -31,7 +31,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk314734 = require("./314734.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk946908 = require("./946908.js");
+  Chunk427845 = require("./427845.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -319,12 +319,12 @@ function W() {
     children: [(0, Chunk255367.jsx)(Chunk41558.Z, {
       title: Chunk388032.intl.string(Chunk388032.t["0hKkS0"])
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk946908.sectionContentContainer,
+      className: Chunk427845.sectionContentContainer,
       children: M.map(e => (0, r.jsx)(A.Z, {}, e))
     }), (0, Chunk255367.jsx)(Chunk41558.Z, {
       title: Chunk388032.intl.string(Chunk388032.t.PHjkRE)
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk946908.sectionContentContainer,
+      className: Chunk427845.sectionContentContainer,
       children: k.map(e => (0, r.jsx)(A.Z, {}, e))
     })]
   })

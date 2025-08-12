@@ -28,9 +28,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk37113 = require("./37113.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk347226 = require("./347226.js"),
-  Chunk480197 = require("./480197.js"),
-  Chunk20493 = require("./20493.js");
+  Chunk84162 = require("./84162.js"),
+  Chunk856933 = require("./856933.js"),
+  Chunk881488 = require("./881488.js");
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -80,13 +80,13 @@ function P(e) {
 
 function R() {
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk480197.toolTipTextContainer,
+    className: Chunk856933.toolTipTextContainer,
     children: [(0, Chunk255367.jsx)(Chunk481060.SrA, {
       size: "md",
       color: Chunk436774.JX.PREMIUM_TIER_2,
-      className: Chunk480197.premiumIcon
+      className: Chunk856933.premiumIcon
     }), (0, Chunk255367.jsx)(Chunk481060.Text, {
-      className: Chunk480197.upsellText,
+      className: Chunk856933.upsellText,
       variant: "text-sm/medium",
       children: Chunk388032.intl.string(Chunk388032.t.sEAnVF)
     })]

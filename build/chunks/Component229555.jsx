@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 229555, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -13,7 +13,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk848572 = require("./848572.js"),
   Chunk787528 = require("./787528.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk536564 = require("./536564.js");
+  Chunk622329 = require("./622329.js");
 let p = (e, t) => (null == e ? true : e.status) === c.Vq.EARNED ? u.intl.format(u.t.Hu4jfn, {
     date: null != t ? t : new Date
   }) : (null == e ? true : e.status) === c.Vq.UPCOMING ? u.intl.format(u.t.E85flp, {
@@ -35,24 +35,24 @@ let p = (e, t) => (null == e ? true : e.status) === c.Vq.EARNED ? u.intl.format(
       "--custom-badge-glow-color": (0, Chunk302221.rj)(exports.glowColor, .5)
     };
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk536564.container,
+      className: Chunk622329.container,
       style: j,
       children: [(0, Chunk255367.jsx)("div", {}), " ", (0, Chunk255367.jsx)("img", {
         src: Chunk120356,
         alt: x,
-        className: s()(Chunk536564.badgeImage, {
-          [Chunk536564.upcomingBadge]: exports.status === Chunk848572.Vq.UPCOMING,
-          [Chunk536564.wide]: b
+        className: s()(Chunk622329.badgeImage, {
+          [Chunk622329.upcomingBadge]: exports.status === Chunk848572.Vq.UPCOMING,
+          [Chunk622329.wide]: b
         })
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk536564.textColumn,
+        className: Chunk622329.textColumn,
         children: [(0, Chunk255367.jsx)(Chunk793030.xv, {
           variant: "text-lg/semibold",
-          className: Chunk536564.badgeText,
+          className: Chunk622329.badgeText,
           children: x
         }), (0, Chunk255367.jsx)(Chunk793030.xv, {
           variant: "text-md/normal",
-          className: Chunk536564.badgeText,
+          className: Chunk622329.badgeText,
           children: _
         }), (0, Chunk255367.jsx)(Chunk793030.xv, {
           variant: "text-xs/normal",

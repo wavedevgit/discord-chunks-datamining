@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 659947, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -17,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk914010 = require("./914010.js"),
   Chunk727785 = require("./727785.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk484671 = require("./484671.js");
+  Chunk881819 = require("./881819.js");
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -85,11 +85,11 @@ function S() {
 
 function T() {
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk484671.voiceListSearchEmpty,
+    className: Chunk881819.voiceListSearchEmpty,
     children: (0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       color: "text-muted",
-      className: Chunk484671.noVoiceChannelSelected,
+      className: Chunk881819.noVoiceChannelSelected,
       children: Chunk388032.intl.string(Chunk388032.t.zHjCd3)
     })
   })

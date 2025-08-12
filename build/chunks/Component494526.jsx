@@ -27,8 +27,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk84879 = require("./84879.js"),
-  Chunk20493 = require("./20493.js");
+  Chunk749537 = require("./749537.js"),
+  Chunk881488 = require("./881488.js");
 let Chunk515695 = require("./515695.js"),
   T = new Chunk710845.Z("LoginQRSocket");
 

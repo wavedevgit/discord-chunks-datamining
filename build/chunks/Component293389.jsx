@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 293389, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => U
@@ -27,10 +27,10 @@ var Chunk255367 = require("./255367.js"),
   Chunk210887 = require("./210887.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk443474 = require("./443474.js"),
-  Chunk20795 = require("./20795.js"),
-  Chunk893354 = require("./893354.js"),
-  Chunk20493 = require("./20493.js");
+  Chunk762712 = require("./762712.js"),
+  Chunk210297 = require("./210297.js"),
+  Chunk794287 = require("./794287.js"),
+  Chunk881488 = require("./881488.js");
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -357,14 +357,14 @@ function k(e) {
 
 function L() {
   return (0, Chunk255367.jsx)("div", {
-    className: a()(Chunk893354.flexCenter, Chunk443474.notDetected, Chunk443474.activeGame),
+    className: a()(Chunk794287.flexCenter, Chunk762712.notDetected, Chunk762712.activeGame),
     children: (0, Chunk255367.jsxs)("div", {
-      className: a()(Chunk443474.gameNameLastPlayed, Chunk893354.vertical),
+      className: a()(Chunk762712.gameNameLastPlayed, Chunk794287.vertical),
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk443474.gameName,
+        className: Chunk762712.gameName,
         children: Chunk388032.intl.string(Chunk388032.t["H68X9/"])
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk443474.lastPlayed,
+        className: Chunk762712.lastPlayed,
         children: Chunk388032.intl.string(Chunk388032.t.T5Ilm5)
       })]
     })

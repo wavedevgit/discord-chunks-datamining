@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk225932 = require("./225932.js");
+  Chunk18172 = require("./18172.js");
 let g = Object.values(Chunk987650.wF).map(e => 100 * e),
   m = (0, Chunk313201.hQ)();
 class y extends Chunk73800.PureComponent {
@@ -28,14 +28,14 @@ class y extends Chunk73800.PureComponent {
   }
   render() {
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk225932.container,
+      className: Chunk18172.container,
       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
         id: m,
         tag: Chunk481060.RB0.H5,
-        className: Chunk225932.title,
+        className: Chunk18172.title,
         children: Chunk388032.intl.string(Chunk388032.t.OVovCQ)
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk225932.sliderContainer,
+        className: Chunk18172.sliderContainer,
         children: (0, Chunk255367.jsx)(Chunk481060.iRW, {
           mini: true,
           initialValue: this.initialValue,

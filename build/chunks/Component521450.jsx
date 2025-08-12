@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 521450, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -19,8 +19,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk930441 = require("./930441.js"),
   Chunk916723 = require("./916723.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk128607 = require("./128607.js"),
-  Chunk20493 = require("./20493.js");
+  Chunk125040 = require("./125040.js"),
+  Chunk881488 = require("./881488.js");
 let E = () => {
   let e = Chunk695346.Ex.useSetting(),
     {
@@ -30,20 +30,20 @@ let E = () => {
   return Chunk73800.useEffect(() => {
     null == require && (0, Chunk960412.Y7)()
   }, [require]), (0, Chunk255367.jsxs)("div", {
-    className: Chunk128607.container,
+    className: Chunk125040.container,
     children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "eyebrow",
       color: "text-muted",
       children: Chunk388032.intl.string(Chunk916723.default.USIXU1)
     }), (0, Chunk255367.jsx)(Chunk481060.j7V, {
-      className: a()(Chunk20493.marginTop8, Chunk20493.marginBottom20),
+      className: a()(Chunk881488.marginTop8, Chunk881488.marginBottom20),
       value: module,
       note: Chunk388032.intl.string(Chunk916723.default["5MdB3t"]),
       hideBorder: true,
       onChange: Chunk695346.Ex.updateSetting,
       children: Chunk388032.intl.string(Chunk916723.default.zkEceX)
     }), module ? (0, Chunk255367.jsx)(Chunk481060.Zbd, {
-      className: Chunk128607.enableCard,
+      className: Chunk125040.enableCard,
       type: Chunk481060.Zbd.Types.CUSTOM,
       outline: true,
       children: (0, Chunk255367.jsxs)(Chunk435935.k, {
@@ -67,12 +67,12 @@ let E = () => {
           })
         }), (0, Chunk255367.jsx)(Chunk481060.G2e, {
           icon: Chunk481060.ZSh,
-          className: Chunk128607.arrow,
+          className: Chunk125040.arrow,
           disableColor: true
         })]
       })
     }) : null, (0, Chunk255367.jsx)(Chunk481060.j7V, {
-      className: a()(Chunk20493.marginTop20, Chunk20493.marginBottom20),
+      className: a()(Chunk881488.marginTop20, Chunk881488.marginBottom20),
       value: !!exports[Chunk930441.$Z.FAMILY_CENTER_DIGEST],
       note: Chunk388032.intl.string(Chunk916723.default["y34S4+"]),
       hideBorder: true,

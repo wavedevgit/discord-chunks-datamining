@@ -11,7 +11,7 @@ var i, Chunk255367 = require("./255367.js"),
   l = require.n(Chunk120356),
   Chunk58654 = require("./58654.js"),
   Chunk84735 = require("./84735.js"),
-  Chunk283574 = require("./283574.js");
+  Chunk951173 = require("./951173.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -163,7 +163,7 @@ class y extends(i = Chunk73800.PureComponent) {
     let a = _({}, this.state, exports);
     return (0, Chunk255367.jsx)(Chunk84735.t, {
       children: (0, Chunk255367.jsx)("textarea", h(_({}, i), {
-        className: l()(require, Chunk283574.scrollbarGhostHairline),
+        className: l()(require, Chunk951173.scrollbarGhostHairline),
         ref: this.handleSetRef,
         style: Chunk73800,
         onChange: this.handleChange

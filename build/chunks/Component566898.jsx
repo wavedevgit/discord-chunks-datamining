@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
-  Chunk881448 = require("./881448.js");
+  Chunk156178 = require("./156178.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,7 +51,7 @@ function _() {
 
 function p() {
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk881448.avatar,
+    className: Chunk156178.avatar,
     style: {
       opacity: .08
     }

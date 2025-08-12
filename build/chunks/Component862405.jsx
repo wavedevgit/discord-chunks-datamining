@@ -20,7 +20,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk477839 = require("./477839.js"),
   Chunk603571 = require("./603571.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk182643 = require("./182643.js");
+  Chunk692313 = require("./692313.js");
 let Chunk450862 = require("./450862.js"),
   j = [Chunk477839.FK.LEVEL_1, Chunk477839.FK.LEVEL_2, Chunk477839.FK.LEVEL_3, Chunk477839.FK.LEVEL_4];
 
@@ -119,9 +119,9 @@ function C() {
       pointsWhenUnlocked: require
     })
   }, []), (0, Chunk255367.jsxs)("div", {
-    className: Chunk182643.leveling,
+    className: Chunk692313.leveling,
     children: [(0, Chunk255367.jsxs)("div", {
-      className: Chunk182643.levelInfo,
+      className: Chunk692313.levelInfo,
       children: [(0, Chunk255367.jsx)(Chunk763283.Z, {
         variant: "text-lg/bold",
         color: "clicker-game-brand",
@@ -129,7 +129,7 @@ function C() {
           level: Z
         })
       }), (0, Chunk255367.jsx)(Chunk763283.Z, {
-        className: Chunk182643.experience,
+        className: Chunk692313.experience,
         variant: "text-sm/medium",
         color: "clicker-game-brand",
         children: Chunk388032.intl.format(Chunk603571.default.Rfy3Cg, {
@@ -145,7 +145,7 @@ function C() {
     }), (0, Chunk255367.jsx)(_, {
       percent: S / I * 100
     }), k < Z ? (0, Chunk255367.jsx)(Chunk144931.Z, {
-      className: Chunk182643.claimButton,
+      className: Chunk692313.claimButton,
       onClick: A,
       children: Chunk388032.intl.format(Chunk603571.default.IUF6np, {
         points: M,

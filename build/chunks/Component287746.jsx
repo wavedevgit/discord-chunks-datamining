@@ -70,7 +70,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk400023 = require("./400023.jsx"),
   Chunk64078 = require("./64078.js"),
   Chunk351780 = require("./351780.js"),
-  Chunk843693 = require("./843693.js"),
+  Chunk339478 = require("./339478.js"),
   Chunk217871 = require("./217871.jsx"),
   Chunk139577 = require("./139577.js"),
   Chunk247944 = require("./247944.jsx"),
@@ -116,8 +116,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk100658 = require("./100658.js"),
-  Chunk672 = require("./672.js");
+  Chunk149771 = require("./149771.js"),
+  Chunk793398 = require("./793398.js");
 
 function e9(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -281,7 +281,7 @@ class tc extends Chunk73800.PureComponent {
       textValue: this.state.textValue,
       richValue: this.state.richValue,
       focused: exports,
-      className: Chunk100658.channelTextArea,
+      className: Chunk149771.channelTextArea,
       channel: module,
       placeholder: Chunk106351,
       accessibilityLabel: Chunk442837,
@@ -304,7 +304,7 @@ class tc extends Chunk73800.PureComponent {
       textValue: this.state.textValue,
       richValue: this.state.richValue,
       focused: exports,
-      className: Chunk100658.channelTextArea,
+      className: Chunk149771.channelTextArea,
       channel: module,
       placeholder: Chunk106351,
       accessibilityLabel: Chunk442837,
@@ -347,7 +347,7 @@ class tc extends Chunk73800.PureComponent {
       children: () => Chunk904245 ? (0, Chunk255367.jsx)(Chunk481060.UkV, {
         isShaking: Chunk430742 > 0,
         intensity: Chunk430742,
-        className: Chunk100658.shaker,
+        className: Chunk149771.shaker,
         children: Chunk607070
       }) : Chunk607070
     })
@@ -681,11 +681,11 @@ class tu extends Chunk73800.PureComponent {
       B = Chunk442837 === Chunk541716.Ie.SIDEBAR;
     n = Chunk752305 && Chunk73800.type === Chunk981631.d4z.GUILD_VOICE ? Chunk388032.t.pnnyFR : Chunk752305 && Chunk73800.type === Chunk981631.d4z.GUILD_STAGE_VOICE ? Chunk388032.t.YInSkp : Chunk106351.T.THREADS.has(Chunk73800.type) ? Chunk388032.t["OkzL+f"] : Chunk388032.t.UbNmGR;
     let Z = (0, Chunk255367.jsx)("div", {
-        className: Chunk100658.channelBottomBarArea,
+        className: Chunk149771.channelBottomBarArea,
         children: (0, Chunk255367.jsx)(Chunk685722.Z, {})
       }),
       F = (0, Chunk255367.jsxs)("div", {
-        className: Chunk100658.channelBottomBarArea,
+        className: Chunk149771.channelBottomBarArea,
         children: [(0, Chunk255367.jsx)(Chunk155409.Z, {
           childRef: this.containerDomRef,
           tutorialId: "writing-messages",
@@ -720,8 +720,8 @@ class tu extends Chunk73800.PureComponent {
       V = Chunk993766 && Chunk989573 || Chunk895924,
       H = Chunk974251 ? Chunk190210 : Chunk516887,
       Y = a()({
-        [Chunk672.barWithAppLauncherButton]: Chunk450936,
-        [Chunk672.barWithAppsDMsUI]: Chunk993766
+        [Chunk793398.barWithAppLauncherButton]: Chunk450936,
+        [Chunk793398.barWithAppsDMsUI]: Chunk993766
       }),
       {
         enabled: W
@@ -753,8 +753,8 @@ class tu extends Chunk73800.PureComponent {
               handler: this.handleOpenAppLauncher
             }), (0, Chunk255367.jsxs)(ts, {
               isSidebar: Chunk752305,
-              className: a()(Chunk100658.chatContent, {
-                [Chunk100658.hasWallpaper]: null == Chunk555573 ? true : Chunk555573.isViewable,
+              className: a()(Chunk149771.chatContent, {
+                [Chunk149771.hasWallpaper]: null == Chunk555573 ? true : Chunk555573.isViewable,
                 [Chunk168551.e3]: Chunk680835 ? null == Chunk555573 ? true : Chunk555573.isViewable : true,
                 [null != (e = (0, Chunk481060.QeD)(Chunk533379)) ? module : ""]: Chunk680835 ? null == Chunk555573 ? true : Chunk555573.isViewable : true
               }),
@@ -799,8 +799,8 @@ class tu extends Chunk73800.PureComponent {
                 })) ? exports : (0, Chunk255367.jsxs)("form", {
                   ref: this.inputFormRef,
                   onSubmit: to,
-                  className: a()(Chunk100658.form, {
-                    [Chunk100658.formWithLoadedChatInput]: !Chunk974251
+                  className: a()(Chunk149771.form, {
+                    [Chunk149771.formWithLoadedChatInput]: !Chunk974251
                   }),
                   children: [Chunk857595 && (0, Chunk255367.jsx)(Chunk217871.Z, {
                     channelId: Chunk73800.id

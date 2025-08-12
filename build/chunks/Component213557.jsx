@@ -33,7 +33,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk287746 = require("./287746.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk560460 = require("./560460.js");
+  Chunk895762 = require("./895762.js");
 
 function k(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -107,7 +107,7 @@ function R(e) {
           (0, o.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("24783"), n.e("49220")]).then(n.bind(n, 439635));
+            } = await Promise.all([n.e("24783"), n.e("45735")]).then(n.bind(n, 439635));
             return t => (0, l.jsx)(e, B(k({}, t), {
               channel: M,
               guild: H

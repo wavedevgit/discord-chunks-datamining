@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk823379 = require("./823379.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk602192 = require("./602192.js");
+  Chunk211721 = require("./211721.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -127,7 +127,7 @@ class b extends Chunk73800.PureComponent {
     let {
       guild: e
     } = this.props, t = new Set(module.features);
-    return exports.has(Chunk981631.oNc.INTERNAL_EMPLOYEE_ONLY) ? this.renderBadge(1, Chunk481060.Ymb, Chunk602192.staff) : exports.has(Chunk981631.oNc.VERIFIED) && exports.has(Chunk981631.oNc.HUB) ? this.renderBadge(4, Chunk481060.aVH, Chunk602192.verifiedHub) : exports.has(Chunk981631.oNc.HUB) ? this.renderBadge(5, Chunk481060.aVH, Chunk602192.hub) : exports.has(Chunk981631.oNc.VERIFIED) && exports.has(Chunk981631.oNc.PARTNERED) ? this.renderBadge(3, Chunk481060.kmB, Chunk602192.verified) : exports.has(Chunk981631.oNc.VERIFIED) ? this.renderBadge(2, Chunk481060.kmB, Chunk602192.verified) : exports.has(Chunk981631.oNc.PARTNERED) ? this.renderBadge(0, (0, Chunk481060.GSL)(Chunk665786.Z), Chunk602192.partnered) : null
+    return exports.has(Chunk981631.oNc.INTERNAL_EMPLOYEE_ONLY) ? this.renderBadge(1, Chunk481060.Ymb, Chunk211721.staff) : exports.has(Chunk981631.oNc.VERIFIED) && exports.has(Chunk981631.oNc.HUB) ? this.renderBadge(4, Chunk481060.aVH, Chunk211721.verifiedHub) : exports.has(Chunk981631.oNc.HUB) ? this.renderBadge(5, Chunk481060.aVH, Chunk211721.hub) : exports.has(Chunk981631.oNc.VERIFIED) && exports.has(Chunk981631.oNc.PARTNERED) ? this.renderBadge(3, Chunk481060.kmB, Chunk211721.verified) : exports.has(Chunk981631.oNc.VERIFIED) ? this.renderBadge(2, Chunk481060.kmB, Chunk211721.verified) : exports.has(Chunk981631.oNc.PARTNERED) ? this.renderBadge(0, (0, Chunk481060.GSL)(Chunk665786.Z), Chunk211721.partnered) : null
   }
 }
 let y = b

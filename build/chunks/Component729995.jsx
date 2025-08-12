@@ -1,4 +1,4 @@
-/** Chunk was on 22988 **/
+/** Chunk was on 5533 **/
 /** chunk id: 729995, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -23,7 +23,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk677892 = require("./677892.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk276 = require("./276.js");
+  Chunk490880 = require("./490880.js");
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -190,16 +190,16 @@ function I(e) {
 function E() {
   let e = "• ";
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk276.notice,
+    className: Chunk490880.notice,
     children: [(0, Chunk255367.jsx)("img", {
-      className: Chunk276.wumpus,
+      className: Chunk490880.wumpus,
       src: require("./33631.js"),
       alt: "wumpus"
     }), (0, Chunk255367.jsxs)("div", {
       children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
         variant: "heading-md/semibold",
         color: "header-primary",
-        className: Chunk276.header,
+        className: Chunk490880.header,
         children: Chunk388032.intl.string(Chunk388032.t.WslWRE)
       }), (0, Chunk255367.jsxs)(Chunk481060.Text, {
         variant: "text-sm/medium",

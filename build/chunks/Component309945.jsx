@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk905128 = require("./905128.js"),
   Chunk93841 = require("./93841.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk45355 = require("./45355.js");
+  Chunk200985 = require("./200985.js");
 
 function g(e) {
   let {
@@ -23,16 +23,16 @@ function g(e) {
   } = e, g = (0, a.e7)([d.Z], () => {
     var e, n;
     return null != (n = null == (e = d.Z.getStateForGuild(t)) ? true : e.appliedBoosts) ? n : 0
-  }), x = (0, a.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), _ = g - o.useMemo(() => {
+  }), x = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(t), [t]), v = g - o.useMemo(() => {
     var e, t, n;
     return null != (n = null == x || null == (t = x.filter) || null == (e = t.call(x, e => !e.ended && null == e.endsAt)) ? true : e.length) ? n : 0
   }, [x]);
-  if (_ <= 0) return null;
-  let v = n.some(e => e.skuId === i.A$);
+  if (v <= 0) return null;
+  let _ = n.some(e => e.skuId === i.A$);
   return (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(l.Mgn, {
-      color: c.Z.colors.TEXT_FEEDBACK_WARNING,
+      color: u.Z.colors.TEXT_FEEDBACK_WARNING,
       className: m.icon
     }), (0, r.jsx)(s.xv, {
       variant: "text-md/semibold",
@@ -41,9 +41,9 @@ function g(e) {
     }), (0, r.jsxs)(s.xv, {
       variant: "text-sm/medium",
       children: [f.intl.formatToPlainString(p.default.iAaAiI, {
-        boostCount: _,
+        boostCount: v,
         perksString: n.map(e => e.title).join(", ")
-      }), v && (0, r.jsx)(s.xv, {
+      }), _ && (0, r.jsx)(s.xv, {
         variant: "text-sm/medium",
         color: "text-feedback-warning",
         children: f.intl.string(p.default.Sfr0Jy)

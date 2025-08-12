@@ -47,8 +47,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk651427 = require("./651427.js"),
-  Chunk104327 = require("./104327.js");
+  Chunk591858 = require("./591858.js"),
+  Chunk418478 = require("./418478.js");
 
 function K(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -280,9 +280,7 @@ function ee(e) {
     eQ = () => {
       if (eO === y.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null != eg) return (0, r.jsx)(M.Z, {
         sectionTitle: H.intl.string(H.t.B3miEx),
-        className: a()(W.customGiftMessageWrapper, {
-          [W.compactCustomGiftMessageWrapper]: eo
-        }),
+        className: W.customGiftMessageWrapper,
         innerClassName: W.customGiftMessage,
         onTextChange: e => eg(e),
         pendingText: em,

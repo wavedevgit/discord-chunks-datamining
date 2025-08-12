@@ -16,9 +16,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk246992 = require("./246992.js"),
   Chunk232867 = require("./232867.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk123393 = require("./123393.js"),
-  Chunk546147 = require("./546147.js"),
-  Chunk616257 = require("./616257.js");
+  Chunk225183 = require("./225183.js"),
+  Chunk743549 = require("./743549.js"),
+  Chunk881291 = require("./881291.js");
 let v = {
     [Chunk981631.kNB.QUEST_REWARD]: "Quest Reward",
     [Chunk981631.kNB.DEVELOPER_GIFT]: "Developer Gift",
@@ -93,11 +93,11 @@ function _() {
   return Chunk73800.useEffect(() => {
     v(P(E)), y(w(E))
   }, [E]), (0, Chunk255367.jsx)(Chunk481060.zJl, {
-    className: Chunk616257.panel,
+    className: Chunk881291.panel,
     children: (0, Chunk255367.jsxs)("div", {
-      className: Chunk546147.panelInner,
+      className: Chunk743549.panelInner,
       children: [(0, Chunk255367.jsxs)("div", {
-        className: Chunk546147.headerWrapper,
+        className: Chunk743549.headerWrapper,
         children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
           style: {
             marginBottom: "8px"
@@ -106,7 +106,7 @@ function _() {
           children: "Manage Fractional Nitro"
         }), (0, Chunk255367.jsxs)(Chunk481060.P3F, {
           onClick: () => exports(!module),
-          className: Chunk123393.clickableGroup,
+          className: Chunk225183.clickableGroup,
           children: [(0, Chunk255367.jsx)("div", {
             children: (0, Chunk255367.jsx)(Chunk481060.Text, {
               variant: "text-md/normal",
@@ -139,7 +139,7 @@ function _() {
         style: {
           marginBottom: "8px"
         },
-        className: i()([Chunk123393.section, Chunk546147.buttons]),
+        className: i()([Chunk225183.section, Chunk743549.buttons]),
         children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: " Fractional Premium SKU "
@@ -155,12 +155,12 @@ function _() {
           onClick: () => N(require)
         })]
       }), (0, Chunk255367.jsxs)("section", {
-        className: Chunk123393.section,
+        className: Chunk225183.section,
         children: [(0, Chunk255367.jsxs)("div", {
           style: {
             flexWrap: "wrap"
           },
-          className: Chunk546147.headerWrapper,
+          className: Chunk743549.headerWrapper,
           children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
             style: {
               marginBottom: "8px"
@@ -168,7 +168,7 @@ function _() {
             variant: "text-lg/semibold",
             children: "Entitlements"
           }), (0, Chunk255367.jsxs)("div", {
-            className: Chunk123393.buttonGroup,
+            className: Chunk225183.buttonGroup,
             children: [(0, Chunk255367.jsx)(Chunk755721.zx, {
               disabled: S,
               size: Chunk755721.zx.Sizes.TINY,

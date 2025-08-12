@@ -1,4 +1,4 @@
-/** Chunk was on 34779 **/
+/** Chunk was on 26628 **/
 /** chunk id: 79556, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -34,7 +34,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk304471 = require("./304471.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
-  Chunk915887 = require("./915887.js");
+  Chunk81252 = require("./81252.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -82,7 +82,7 @@ class k extends Chunk98597.ZP {
       channelInfo: e
     } = this.props;
     return null == module ? null : (0, Chunk255367.jsx)("div", {
-      className: Chunk915887.channelInfo,
+      className: Chunk81252.channelInfo,
       children: module
     })
   }
@@ -112,8 +112,8 @@ class k extends Chunk98597.ZP {
       location: "text_channel"
     }).entrypoints, I = Chunk9156 && null != Chunk430824 && Chunk430824.length > 0, P = (0, Chunk873696.D)(Chunk665906), N = (0, Chunk255367.jsx)("li", {
       className: o()(this.getClassName(), {
-        [Chunk915887.disabled]: this.isDisabled(),
-        [Chunk915887.selected]: require
+        [Chunk81252.disabled]: this.isDisabled(),
+        [Chunk81252.selected]: require
       }),
       "data-dnd-name": module.name,
       onMouseEnter: Chunk493683 || Chunk109446 ? this.handleMouseEnter : true,
@@ -127,7 +127,7 @@ class k extends Chunk98597.ZP {
         shouldShow: Chunk493683 && this.state.shouldShowThreadsPopout || Chunk109446 && this.state.shouldShowActivities,
         children: () => (0, Chunk255367.jsxs)(Chunk473403.ZP, {
           ref: this.channelItemRef,
-          className: Chunk915887.iconVisibility,
+          className: Chunk81252.iconVisibility,
           channel: module,
           guild: exports,
           selected: !Chunk22082 && require,
@@ -221,7 +221,7 @@ class k extends Chunk98597.ZP {
       if (t.type === T.d4z.GROUP_DM) return void(0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("57789"), n.e("2016")]).then(n.bind(n, 354741));
+        } = await Promise.all([n.e("79695"), n.e("57789"), n.e("38592")]).then(n.bind(n, 354741));
         return n => (0, r.jsx)(e, M(L({}, n), {
           channel: t,
           selected: true
@@ -232,7 +232,7 @@ class k extends Chunk98597.ZP {
         null != i && (0, u.jW)(e, async () => {
           let {
             default: e
-          } = await Promise.all([n.e("79695"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("45903")]).then(n.bind(n, 131404));
+          } = await Promise.all([n.e("79695"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("39544")]).then(n.bind(n, 131404));
           return n => (0, r.jsx)(e, M(L({}, n), {
             user: i,
             channel: t,

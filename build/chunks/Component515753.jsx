@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 515753, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Qj: () => eu,
@@ -58,7 +58,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk425154 = require("./425154.js");
+  Chunk565757 = require("./565757.js");
 
 function en(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -158,17 +158,17 @@ let es = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
   eo = () => (0, Chunk255367.jsx)(Chunk481060.r7p, {
     size: "xs",
     color: "currentColor",
-    className: Chunk425154.favoriteIcon
+    className: Chunk565757.favoriteIcon
   }),
   ec = () => (0, Chunk255367.jsx)(Chunk481060.kZF, {
     size: "xs",
     color: "currentColor",
-    className: Chunk425154.favoriteIcon
+    className: Chunk565757.favoriteIcon
   }),
   ed = () => (0, Chunk255367.jsx)(Chunk481060.t6m, {
     size: "xs",
     color: "currentColor",
-    className: Chunk425154.favoriteIcon
+    className: Chunk565757.favoriteIcon
   }),
   eu = e => {
     var {
@@ -291,7 +291,7 @@ function em(e) {
     eh(true), t.isMultiUserDM() ? (0, f.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("70205"), n.e("57789"), n.e("19549")]).then(n.bind(n, 354741));
+      } = await Promise.all([n.e("79695"), n.e("70205"), n.e("57789"), n.e("53129")]).then(n.bind(n, 354741));
       return n => (0, i.jsx)(e, ei(en({}, n), {
         channel: t,
         selected: l
@@ -303,7 +303,7 @@ function em(e) {
     }) : (0, f.jW)(e, async () => {
       let {
         default: e
-      } = s ? await n.e("56167").then(n.bind(n, 416951)) : await Promise.all([n.e("79695"), n.e("70205"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("67326")]).then(n.bind(n, 131404));
+      } = s ? await n.e("56167").then(n.bind(n, 416951)) : await Promise.all([n.e("79695"), n.e("70205"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("88333")]).then(n.bind(n, 131404));
       return n => (0, i.jsx)(e, ei(en({}, n), {
         user: m,
         channel: t,
@@ -448,9 +448,7 @@ function em(e) {
           }), (0, i.jsx)(c.rU, ei(en({
             innerRef: ef,
             to: $.Z5c.CHANNEL($.ME, t.id),
-            className: a()(et.link, {
-              [et.linkPlated]: eB
-            }),
+            className: et.link,
             "aria-label": (0, S.ZP)({
               channel: t,
               unread: eD
@@ -475,34 +473,39 @@ function em(e) {
               }) : null,
               withDisplayNameStyles: e3
             })
-          })), ew && !eg ? (0, i.jsx)(eo, {}) : null, eA ? (0, i.jsx)(ec, {}) : null, eP ? (0, i.jsx)(ed, {}) : null, ek ? (0, i.jsx)(g.ua7, {
-            text: ee.intl.string(eC ? ee.t.Et8qws : ee.t["d+e27u"]),
-            delay: 500,
-            targetElementRef: eM,
-            children: e => {
-              var {
-                onClick: t
-              } = e, n = er(e, ["onClick"]);
-              return (0, i.jsx)(el, ei(en({}, n), {
-                icon: g.xhG,
-                "aria-label": ee.intl.string(ee.t.PdRCRk),
-                onClick: e => {
-                  null == t || t(), eK(e)
-                },
-                onMouseDown: eW,
-                nameplate: z,
-                forceShow: eg,
-                visibleElementRef: eM
-              }))
-            }
-          }) : (0, i.jsx)(el, {
-            icon: g.Dio,
-            "aria-label": eC ? ee.intl.string(ee.t["26C4oq"]) : ee.intl.string(ee.t.jsvgc3),
-            onClick: eC ? eq : eH,
-            onMouseDown: eW,
-            nameplate: z,
-            reducedClickTarget: true,
-            visibleElementRef: eM
+          })), (0, i.jsxs)("div", {
+            className: a()(et.iconsContainer, {
+              [et.nameplated]: eB
+            }),
+            children: [ew && !eg ? (0, i.jsx)(eo, {}) : null, eA ? (0, i.jsx)(ec, {}) : null, eP ? (0, i.jsx)(ed, {}) : null, ek ? (0, i.jsx)(g.ua7, {
+              text: ee.intl.string(eC ? ee.t.Et8qws : ee.t["d+e27u"]),
+              delay: 500,
+              targetElementRef: eM,
+              children: e => {
+                var {
+                  onClick: t
+                } = e, n = er(e, ["onClick"]);
+                return (0, i.jsx)(el, ei(en({}, n), {
+                  icon: g.xhG,
+                  "aria-label": ee.intl.string(ee.t.PdRCRk),
+                  onClick: e => {
+                    null == t || t(), eK(e)
+                  },
+                  onMouseDown: eW,
+                  nameplate: z,
+                  forceShow: eg,
+                  visibleElementRef: eM
+                }))
+              }
+            }) : (0, i.jsx)(el, {
+              icon: g.Dio,
+              "aria-label": eC ? ee.intl.string(ee.t["26C4oq"]) : ee.intl.string(ee.t.jsvgc3),
+              onClick: eC ? eq : eH,
+              onMouseDown: eW,
+              nameplate: z,
+              reducedClickTarget: true,
+              visibleElementRef: eM
+            })]
           })]
         })]
       })

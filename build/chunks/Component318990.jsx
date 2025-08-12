@@ -10,7 +10,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk518950 = require("./518950.js"),
   Chunk357355 = require("./357355.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk356883 = require("./356883.js");
+  Chunk275041 = require("./275041.js");
 
 function d() {
   let e = (0, Chunk442837.e7)([Chunk357355.Z], () => Chunk357355.Z.affinities.slice(0, 3)),
@@ -30,7 +30,7 @@ function d() {
       username: m(module[0])
     }) : "", [module]);
   return 0 === module.length ? null : (0, Chunk255367.jsxs)("div", {
-    className: Chunk356883.container,
+    className: Chunk275041.container,
     children: [(0, Chunk255367.jsx)(Chunk481060.qEK, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var i = null != arguments[t] ? arguments[t] : {},
@@ -49,12 +49,12 @@ function d() {
       }
       return e
     }({
-      className: Chunk356883.__invalid_icon,
+      className: Chunk275041.__invalid_icon,
       src: require,
       "aria-label": exports.username,
       size: Chunk481060.EFr.SIZE_24
     }, d)), (0, Chunk255367.jsx)(Chunk481060.Text, {
-      className: Chunk356883.text,
+      className: Chunk275041.text,
       variant: "text-sm/normal",
       color: "always-white",
       children: C

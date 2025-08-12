@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 807160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eo
@@ -47,7 +47,7 @@ var i, Chunk255367 = require("./255367.js"),
   Chunk474936 = require("./474936.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk468590 = require("./468590.js");
+  Chunk885869 = require("./885869.js");
 
 function q(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -264,31 +264,31 @@ class el extends(i = Chunk73800.PureComponent) {
     switch (module.status) {
       case Chunk981631.PyE.PENDING:
         return (0, Chunk255367.jsx)("span", {
-          className: Chunk468590.statusTagGrey,
+          className: Chunk885869.statusTagGrey,
           children: Chunk388032.intl.string(Chunk388032.t.y7F0RU)
         });
       case Chunk981631.PyE.FAILED:
         return (0, Chunk255367.jsx)("span", {
-          className: Chunk468590.statusTagRed,
+          className: Chunk885869.statusTagRed,
           children: Chunk388032.intl.string(Chunk388032.t.Yo4ru7)
         });
       case Chunk981631.PyE.REFUNDED:
         if (module.amountRefunded !== module.amount) return (0, Chunk255367.jsx)("span", {
-          className: Chunk468590.statusTagGreen,
+          className: Chunk885869.statusTagGreen,
           children: Chunk388032.intl.string(Chunk388032.t.lYbZz8)
         });
         return (0, Chunk255367.jsx)("span", {
-          className: Chunk468590.statusTagGreen,
+          className: Chunk885869.statusTagGreen,
           children: Chunk388032.intl.string(Chunk388032.t.ZBb6ND)
         });
       case Chunk981631.PyE.REVERSED:
         return (0, Chunk255367.jsx)("span", {
-          className: Chunk468590.statusTagRed,
+          className: Chunk885869.statusTagRed,
           children: Chunk388032.intl.string(Chunk388032.t.YQv9Li)
         });
       case Chunk981631.PyE.CANCELED:
         return (0, Chunk255367.jsx)("span", {
-          className: Chunk468590.statusTagRed,
+          className: Chunk885869.statusTagRed,
           children: Chunk388032.intl.string(Chunk388032.t.ttkBh4)
         });
       default:
@@ -300,7 +300,7 @@ class el extends(i = Chunk73800.PureComponent) {
       payment: e
     } = this.props, t = module.amount - module.amountRefunded;
     return (0, Chunk255367.jsx)("span", {
-      className: Chunk468590.price,
+      className: Chunk885869.price,
       children: (0, Chunk937615.T4)(exports, module.currency)
     })
   }
@@ -309,9 +309,9 @@ class el extends(i = Chunk73800.PureComponent) {
       payment: e
     } = this.props;
     return (0, Chunk255367.jsx)("li", {
-      className: Chunk468590.paymentDetail,
+      className: Chunk885869.paymentDetail,
       children: (0, Chunk255367.jsxs)("div", {
-        className: Chunk468590.paymentInfo,
+        className: Chunk885869.paymentInfo,
         children: [(0, Chunk255367.jsx)("div", {
           children: Chunk388032.intl.string(Chunk388032.t["UQim+v"])
         }), (0, Chunk255367.jsx)(ei, {
@@ -335,17 +335,17 @@ class el extends(i = Chunk73800.PureComponent) {
       currency: d
     } = module, u = null == require ? true : require.guildId;
     return (0, Chunk255367.jsxs)("div", {
-      className: l()(Chunk468590.paymentText, Chunk468590.paymentBreakdown),
+      className: l()(Chunk885869.paymentText, Chunk885869.paymentBreakdown),
       children: [null != module.paymentSource ? (0, Chunk255367.jsx)(Chunk244526.Z, {
         paymentSource: module.paymentSource,
         locale: exports,
-        descriptionClassName: Chunk468590.paymentText,
+        descriptionClassName: Chunk885869.paymentText,
         showLabels: true,
         showPaymentSourceIcon: true
       }) : module.paymentGateway === Chunk231338.gg.APPLE_PARTNER ? (0, Chunk255367.jsx)(Chunk244526.Z, {
         paymentSource: new Chunk46141.$z({}),
         locale: exports,
-        descriptionClassName: Chunk468590.paymentText,
+        descriptionClassName: Chunk885869.paymentText,
         showLabels: true,
         showPaymentSourceIcon: true
       }) : null, (0, Chunk255367.jsxs)("ul", {
@@ -414,10 +414,10 @@ class el extends(i = Chunk73800.PureComponent) {
       playtimeLimit: 2
     }), (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
       children: [(0, Chunk255367.jsx)(Chunk481060.H, {
-        className: Chunk468590.paymentHeader,
+        className: Chunk885869.paymentHeader,
         children: Chunk388032.intl.string(Chunk388032.t["n/27pq"])
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk468590.paymentText,
+        className: Chunk885869.paymentText,
         children: [(0, Chunk255367.jsx)("div", {
           children: module
         }), this.renderRefundActions(i)]
@@ -497,8 +497,8 @@ class el extends(i = Chunk73800.PureComponent) {
         tier: null == Chunk442837 ? true : Chunk442837.name
       })) : require.push(Chunk388032.intl.string(Chunk388032.t["9czSYm"])));
       t = 0 !== require.length ? require.join(", ") : i.description, e = (0, Chunk255367.jsx)(Chunk925329.Z, {
-        className: Chunk468590.descriptionIcon,
-        guildClassName: Chunk468590.guildDescriptionIcon,
+        className: Chunk885869.descriptionIcon,
+        guildClassName: Chunk885869.guildDescriptionIcon,
         game: Chunk120356,
         guild: l,
         size: Chunk925329.Z.Sizes.XSMALL,
@@ -512,7 +512,7 @@ class el extends(i = Chunk73800.PureComponent) {
           disableAnimation: !Chunk314877,
           isInteracting: Chunk314877,
           sticker: exports,
-          className: Chunk468590.descriptionIcon,
+          className: Chunk885869.descriptionIcon,
           size: 24
         })
       } else e = (null == (f = i.sku) ? true : Chunk812206.productLine) === Chunk981631.POd.COLLECTIBLES ? (0, Chunk255367.jsx)(Chunk481060.EOn, {
@@ -520,10 +520,10 @@ class el extends(i = Chunk73800.PureComponent) {
         width: 23,
         height: 23,
         color: "currentColor",
-        className: Chunk468590.shopIcon
+        className: Chunk885869.shopIcon
       }) : (0, Chunk255367.jsx)(Chunk925329.Z, {
-        className: Chunk468590.descriptionIcon,
-        guildClassName: Chunk468590.guildDescriptionIcon,
+        className: Chunk885869.descriptionIcon,
+        guildClassName: Chunk885869.guildDescriptionIcon,
         game: Chunk120356,
         guild: l,
         size: Chunk925329.Z.Sizes.XSMALL,
@@ -532,10 +532,10 @@ class el extends(i = Chunk73800.PureComponent) {
     } else e = (0, Chunk255367.jsx)(Chunk481060.SrA, {
       size: "md",
       color: "currentColor",
-      className: Chunk468590.descriptionIcon
+      className: Chunk885869.descriptionIcon
     }), t = i.description;
     let b = (0, Chunk255367.jsx)("div", {
-        className: Chunk468590.date,
+        className: Chunk885869.date,
         children: (0, Chunk55935.vc)(c()(i.createdAt), "MM/DD/YYYY")
       }),
       x = i.isGift ? (0, Chunk255367.jsx)(Chunk481060.ua7, {
@@ -547,13 +547,13 @@ class el extends(i = Chunk73800.PureComponent) {
         }, e))
       }) : null;
     return require ? (0, Chunk255367.jsxs)("div", {
-      className: Chunk468590.description,
+      className: Chunk885869.description,
       children: [module, (0, Chunk255367.jsxs)("div", {
         children: [exports, Chunk593061]
       }), Chunk600164]
     }) : (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
       children: [Chunk593061, (0, Chunk255367.jsxs)("div", {
-        className: Chunk468590.description,
+        className: Chunk885869.description,
         children: [module, (0, Chunk255367.jsx)("div", {
           children: exports
         }), Chunk600164]
@@ -568,9 +568,9 @@ class el extends(i = Chunk73800.PureComponent) {
     } = this.props, i = null == exports ? true : exports.guildId;
     return module.isGuildProductPurchase ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk468590.sectionDivider
+        className: Chunk885869.sectionDivider
       }), module.isSoftDeletedProduct ? (0, Chunk255367.jsx)(Chunk539290.Z, {
-        className: Chunk468590.warningBlock,
+        className: Chunk885869.warningBlock,
         buttonPosition: Chunk539290.E.RIGHT,
         notice: Chunk388032.intl.string(Chunk388032.t["3AvulJ"]),
         ctaLabel: Chunk388032.intl.string(Chunk388032.t.zoztQE),
@@ -585,9 +585,9 @@ class el extends(i = Chunk73800.PureComponent) {
     return (0, Chunk255367.jsx)(Chunk481060.P3F, {
       onClick: e => e.stopPropagation(),
       children: (0, Chunk255367.jsxs)("div", {
-        className: Chunk468590.expandedInfo,
+        className: Chunk885869.expandedInfo,
         children: [(0, Chunk255367.jsx)(Chunk481060.H, {
-          className: Chunk468590.paymentHeader,
+          className: Chunk885869.paymentHeader,
           children: Chunk388032.intl.string(Chunk388032.t.nyzoFR)
         }), this.renderPaymentBreakdown(), this.renderGuildProductBenefits(), this.renderInvoiceDownload(), this.renderRefundDetails()]
       })

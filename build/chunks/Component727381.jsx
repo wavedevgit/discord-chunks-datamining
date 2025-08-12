@@ -1,4 +1,4 @@
-/** Chunk was on 12097 **/
+/** Chunk was on 873 **/
 /** chunk id: 727381, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -19,13 +19,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk908474 = require("./908474.jsx"),
   Chunk467014 = require("./467014.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk12740 = require("./12740.js");
+  Chunk983843 = require("./983843.js");
 
 function f() {
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk12740.header,
+    className: Chunk983843.header,
     children: [(0, Chunk255367.jsxs)("div", {
-      className: Chunk12740.headerTitle,
+      className: Chunk983843.headerTitle,
       children: [(0, Chunk255367.jsx)(Chunk777288.Z, {
         width: 16,
         height: 16
@@ -36,8 +36,8 @@ function f() {
     }), (0, Chunk255367.jsx)("div", {
       children: (0, Chunk255367.jsx)(Chunk481060.M2$, {
         shortcut: "esc",
-        keyClassName: Chunk12740.keyComboInner,
-        className: Chunk12740.keyComboContainer
+        keyClassName: Chunk983843.keyComboInner,
+        className: Chunk983843.keyComboContainer
       })
     })]
   })

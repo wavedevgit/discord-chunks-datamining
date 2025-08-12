@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 393411, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => F,
@@ -36,7 +36,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk4856 = require("./4856.js");
+  Chunk79793 = require("./79793.js");
 
 function w(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -158,12 +158,12 @@ function V(e) {
 
 function G() {
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk4856.wordMark,
+    className: Chunk79793.wordMark,
     children: [(0, Chunk255367.jsx)(Chunk754347.Z, {
-      className: Chunk4856.discordWordmark,
+      className: Chunk79793.discordWordmark,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["FSOz7+"])
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk4856.classicWordmark
+      className: Chunk79793.classicWordmark
     })]
   })
 }
@@ -175,11 +175,11 @@ function F() {
   return (0, Chunk255367.jsx)(U, {
     wordMark: (0, Chunk255367.jsx)(G, {}),
     subscriptionInfo: (0, Chunk255367.jsx)("div", {
-      className: Chunk4856.planInfo,
+      className: Chunk79793.planInfo,
       children: Chunk388032.intl.string(Chunk388032.t.R0GJLy)
     }),
     buttons: (0, Chunk255367.jsx)(Chunk987997.Z, {
-      className: Chunk4856.toolsButton,
+      className: Chunk79793.toolsButton,
       onClick: () => (0, Chunk963249.Z)({
         subscriptionTier: Chunk474936.Si.TIER_1,
         analyticsLocations: module,
@@ -188,7 +188,7 @@ function F() {
       children: Chunk388032.intl.string(Chunk388032.t["/ygMUV"])
     }),
     statusClasses: {
-      [Chunk4856.tier1]: true
+      [Chunk79793.tier1]: true
     }
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 22988 **/
+/** Chunk was on 5533 **/
 /** chunk id: 353890, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk889369 = require("./889369.js"),
   Chunk838324 = require("./838324.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk281310 = require("./281310.js");
+  Chunk578024 = require("./578024.js");
 
 function b(e) {
   let {
@@ -43,15 +43,15 @@ function b(e) {
 
 function x() {
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk281310.emptyState,
+    className: Chunk578024.emptyState,
     children: [(0, Chunk255367.jsx)("div", {
-      className: Chunk281310.emptyStateIcon,
+      className: Chunk578024.emptyStateIcon,
       children: (0, Chunk255367.jsx)(Chunk481060.VL1, {
         size: "md",
         color: "currentColor"
       })
     }), (0, Chunk255367.jsx)(Chunk481060.Text, {
-      className: Chunk281310.channelName,
+      className: Chunk578024.channelName,
       variant: "text-md/normal",
       color: "text-muted",
       children: Chunk388032.intl.string(Chunk388032.t["Qj6O9/"])
@@ -74,7 +74,7 @@ function j(e) {
 
 function v() {
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk281310.divider
+    className: Chunk578024.divider
   })
 }
 

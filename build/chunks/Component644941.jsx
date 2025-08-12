@@ -41,9 +41,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk978313 = require("./978313.jsx"),
   Chunk206583 = require("./206583.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk263930 = require("./263930.js");
+  Chunk110568 = require("./110568.js");
 let H = () => (0, Chunk255367.jsxs)("div", {
-  className: Chunk263930.gameBadge,
+  className: Chunk110568.gameBadge,
   children: [(0, Chunk255367.jsx)(Chunk481060.YqE, {
     size: "xxs"
   }), (0, Chunk255367.jsx)(Chunk481060.Text, {

@@ -9,14 +9,14 @@ var Chunk255367 = require("./255367.js"),
   i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk90641 = require("./90641.js"),
-  Chunk355730 = require("./355730.js"),
-  Chunk616257 = require("./616257.js");
+  Chunk4426 = require("./4426.js"),
+  Chunk881291 = require("./881291.js");
 
 function u() {
   let e = Chunk73800.useRef(null);
   return (0, Chunk255367.jsx)("div", {
     ref: module,
-    className: i()(Chunk616257.panel, Chunk355730.panel),
+    className: i()(Chunk881291.panel, Chunk4426.panel),
     children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
       variant: "primary",
       size: "sm",

@@ -1,7 +1,0 @@
-/** Chunk was on 46746 **/
-/** chunk id: 134933, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  root: "root__34117",
-  largePreview: "largePreview__34117",
-  backButton: "backButton__34117"
-}

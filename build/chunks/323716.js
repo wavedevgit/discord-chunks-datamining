@@ -117,7 +117,7 @@ function b(e) {
         "X-Captcha-Key": n
       };
       null != r && (o["X-Captcha-Rqtoken"] = r), null != i && (o["X-Captcha-Session-Id"] = i), t(o)
-    }).catch(r), true) : 401 === e.statusCode && (null == (o = e.body) ? true : o.code) === p.evJ.MFA_REQUIRED && (null == (c = e.body) ? true : c.mfa) ? (Promise.all([n.e("52030"), n.e("36833")]).then(n.bind(n, 24031)).then(n => {
+    }).catch(r), true) : 401 === e.statusCode && (null == (o = e.body) ? true : o.code) === p.evJ.MFA_REQUIRED && (null == (c = e.body) ? true : c.mfa) ? (Promise.all([n.e("52030"), n.e("79640")]).then(n.bind(n, 24031)).then(n => {
       let {
         openMFAModal: i
       } = n;

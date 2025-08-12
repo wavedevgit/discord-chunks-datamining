@@ -1,4 +1,4 @@
-/** Chunk was on 45620 **/
+/** Chunk was on 96910 **/
 /** chunk id: 755007, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -7,21 +7,21 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk960919 = require("./960919.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk595392 = require("./595392.js");
+  Chunk553399 = require("./553399.js");
 
 function u(e) {
   let {
     orbAmount: t,
     className: r
   } = e;
-  return (0, n.jsxs)(i.Text, {
+  return (0, n.jsxs)(l.Text, {
     variant: "text-md/semibold",
-    className: a()(c.orbPriceTag, r),
-    children: [(0, n.jsx)(i.nn4, {
+    className: i()(c.orbPriceTag, r),
+    children: [(0, n.jsx)(l.nn4, {
       children: s.intl.format(s.t["a/Y8PD"], {
         orbAmount: t
       })

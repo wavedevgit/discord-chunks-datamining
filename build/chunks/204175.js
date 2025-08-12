@@ -1,0 +1,5 @@
+/** Chunk was on 36878 **/
+/** chunk id: 204175, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  accordion: "accordion_a1f93f"
+}

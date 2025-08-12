@@ -1,54 +1,55 @@
-/** Chunk was on 96887 **/
+/** Chunk was on 96910 **/
 /** chunk id: 876917, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk802433 = require("./802433.js"),
   Chunk680295 = require("./680295.jsx"),
-  Chunk313305 = require("./313305.js"),
+  Chunk941447 = require("./941447.js"),
   Chunk241822 = require("./241822.js");
-let u = e => {
+let d = e => {
   let {
     profileEffectId: t,
     isHovering: r,
     forCollectedModal: i = false,
-    isPurchased: u,
-    removeSetHeight: f = false
-  } = e, v = i ? 250 : .1, [p, h] = n.useState(true);
-  return (n.useEffect(() => {
-    if (true !== i) h(false);
+    isPurchased: d,
+    removeSetHeight: p = false
+  } = e, b = i ? 250 : .1, [h, f] = a.useState(true);
+  return (a.useEffect(() => {
+    if (true !== i) f(false);
     else {
       let e = setTimeout(() => {
-        h(false)
-      }, v);
+        f(false)
+      }, b);
       return () => {
         clearTimeout(e)
       }
     }
-  }, [v, i]), null != t) ? (0, a.jsxs)("div", {
-    className: s()(c.previewContainer, {
+  }, [b, i]), null != t) ? (0, n.jsxs)("div", {
+    className: l()(c.previewContainer, {
       [c.previewContainerAnimation]: i,
-      [c.previewContainerSetHeight]: !f
+      [c.previewContainerSetHeight]: !p
     }),
-    children: [(0, a.jsx)("img", {
-      src: d,
+    children: [(0, n.jsx)("img", {
+      src: u,
       alt: " ",
       className: i ? c.previewForCollected : c.preview,
       "aria-hidden": true
-    }), !p && (0, a.jsx)("div", {
-      className: u ? c.purchasedEffect : true,
-      children: (0, a.jsx)(l.Z, {
+    }), !h && (0, n.jsx)("div", {
+      className: d ? c.purchasedEffect : true,
+      children: (0, n.jsx)(s.Z, {
         profileEffectId: t,
         useThumbnail: true,
         autoPlay: i,
         restartMethod: o.j.FromStart,
         resetOnHover: true,
         isHovering: r,
-        introDelay: v,
+        introDelay: b,
         useOpacityOnHover: false,
         shopPreview: true
       })

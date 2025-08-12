@@ -54,7 +54,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk710352 = require("./710352.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk37448 = require("./37448.js");
+  Chunk655410 = require("./655410.js");
 
 function ee(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -266,7 +266,7 @@ class el extends Chunk73800.PureComponent {
       t = (0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-xs/normal",
         color: "header-secondary",
-        className: Chunk37448.subtitle,
+        className: Chunk655410.subtitle,
         children: Chunk388032.intl.format(Chunk388032.t.L1zJgY, {
           categoryName: null != (e = null == require ? true : require.name) ? module : ""
         })
@@ -275,16 +275,16 @@ class el extends Chunk73800.PureComponent {
     return (0, Chunk255367.jsxs)(Chunk481060.xBx, {
       separator: false,
       children: [(0, Chunk255367.jsxs)("div", {
-        className: Chunk37448.header,
+        className: Chunk655410.header,
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
           id: this.headerId,
           variant: "heading-lg/semibold",
-          className: Chunk37448.title,
+          className: Chunk655410.title,
           children: Chunk512722
         }), exports]
       }), (0, Chunk255367.jsx)(Chunk481060.olH, {
         onClick: Chunk120356,
-        className: Chunk37448.closeButton
+        className: Chunk655410.closeButton
       })]
     })
   }
@@ -300,19 +300,19 @@ class el extends Chunk73800.PureComponent {
     (null == Chunk120356 ? true : Chunk120356.name) != null && (e = (0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
       color: "text-danger",
-      className: Chunk37448.error,
+      className: Chunk655410.error,
       children: Chunk120356.name
     }));
     let a = l === Chunk981631.d4z.GUILD_CATEGORY,
       o = Chunk512722 ? Chunk388032.intl.string(Chunk388032.t.OCAkGB) : Chunk388032.intl.string(Chunk388032.t.PVbHDg),
       d = null != exports ? (0, Chunk255367.jsx)(Chunk481060.R94, {
-        className: Chunk37448.channelNameNote,
+        className: Chunk655410.channelNameNote,
         type: Chunk481060.R94.Types.DESCRIPTION,
         children: Chunk388032.intl.format(Chunk388032.t.s2ZzZW, {
           name: (0, Chunk933557.F6)(exports, Chunk594174.default, Chunk699516.Z, true)
         })
       }) : l === Chunk981631.d4z.GUILD_FORUM ? (0, Chunk255367.jsx)(Chunk481060.R94, {
-        className: Chunk37448.channelNameNote,
+        className: Chunk655410.channelNameNote,
         type: Chunk481060.R94.Types.DESCRIPTION,
         children: Chunk388032.intl.format(Chunk388032.t.tbVWyc, {
           forumUpsellHook: (e, t) => (0, i.jsx)(g.eee, {
@@ -344,10 +344,10 @@ class el extends Chunk73800.PureComponent {
               return Q.intl.string(Q.t["bw/b8P"])
           }
         }(l),
-        className: Chunk37448.inputWrapper,
-        inputClassName: Chunk512722 ? true : Chunk37448.inputInner,
+        className: Chunk655410.inputWrapper,
+        inputClassName: Chunk512722 ? true : Chunk655410.inputInner,
         prefixElement: Chunk512722 ? null : (0, Chunk255367.jsx)(c, {
-          className: Chunk37448.inputPrefix,
+          className: Chunk655410.inputPrefix,
           size: "xs",
           color: "currentColor"
         }),
@@ -393,7 +393,7 @@ class el extends Chunk73800.PureComponent {
     if (null != module || Chunk512722 === Chunk981631.d4z.GUILD_CATEGORY) return;
     let d = null != exports && exports.length > 0;
     return (0, Chunk255367.jsx)(Chunk481060.xJW, {
-      className: Chunk37448.type,
+      className: Chunk655410.type,
       title: Chunk388032.intl.string(Chunk388032.t["7ZcXGx"]),
       children: (0, Chunk255367.jsx)(Chunk481060.FXm, {
         options: function(e) {
@@ -515,7 +515,7 @@ class el extends Chunk73800.PureComponent {
         value: Chunk512722,
         size: Chunk481060.FXm.Sizes.NOT_SET,
         onChange: this.handleTypeChange,
-        itemInfoClassName: Chunk37448.radioBarLabel
+        itemInfoClassName: Chunk655410.radioBarLabel
       })
     })
   }
@@ -542,7 +542,7 @@ class el extends Chunk73800.PureComponent {
         placeholder: Chunk388032.intl.string(Chunk388032.t["3XfCPT"]),
         value: exports,
         onChange: this.handleApplicationChange,
-        className: Chunk37448.storeChannelOptionSelector
+        className: Chunk655410.storeChannelOptionSelector
       }), null != exports ? (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
         children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
           tag: "h5",
@@ -551,7 +551,7 @@ class el extends Chunk73800.PureComponent {
           applicationId: exports,
           onChange: this.handleSKUChange,
           selectedSkuId: require,
-          className: Chunk37448.storeChannelOptionSelector
+          className: Chunk655410.storeChannelOptionSelector
         }, exports)]
       }) : null, null != exports && Chunk512722 ? (0, Chunk255367.jsxs)(Chunk481060.j7V, {
         hideBorder: true,
@@ -563,7 +563,7 @@ class el extends Chunk73800.PureComponent {
         children: [(0, Chunk255367.jsx)(Chunk481060._m8, {
           size: "md",
           color: "currentColor",
-          className: Chunk37448.switchIcon
+          className: Chunk655410.switchIcon
         }), Chunk388032.intl.string(Chunk388032.t["3e9mHx"])]
       }) : null, null != exports ? (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
         children: [l ? (0, Chunk255367.jsx)(Chunk481060.vwX, {
@@ -575,7 +575,7 @@ class el extends Chunk73800.PureComponent {
           selectedBranchId: Chunk120356,
           hide: !l,
           onHasBranchesChange: this.handleHasBranchesChange,
-          className: Chunk37448.storeChannelOptionSelector
+          className: Chunk655410.storeChannelOptionSelector
         }, exports)]
       }) : null]
     })
@@ -599,7 +599,7 @@ class el extends Chunk73800.PureComponent {
         children: [(0, Chunk255367.jsx)(Chunk481060.mBM, {
           size: "md",
           color: "currentColor",
-          className: Chunk37448.switchIcon
+          className: Chunk655410.switchIcon
         }), Chunk73800]
       })
     }, "privacy-switch")
@@ -645,7 +645,7 @@ class el extends Chunk73800.PureComponent {
     e = exports === Chunk981631.d4z.GUILD_CATEGORY ? Chunk388032.intl.string(Chunk388032.t["ISN+ND"]) : Chunk388032.intl.string(Chunk388032.t["fUYU+v"]);
     let l = Chunk120356 || Chunk73800 === Chunk981631.d4z.GUILD_STAGE_VOICE;
     return (0, Chunk255367.jsx)(Chunk481060.mzw, {
-      className: Chunk37448.modalFooter,
+      className: Chunk655410.modalFooter,
       children: (0, Chunk255367.jsxs)(Chunk481060.hE2, {
         direction: "horizontal-reverse",
         children: [l ? (0, Chunk255367.jsx)(Chunk481060.zxk, {
@@ -712,11 +712,11 @@ class el extends Chunk73800.PureComponent {
     } = this.props;
     return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
       children: [this.renderHeader(), (0, Chunk255367.jsxs)(Chunk481060.hzk, {
-        className: Chunk37448.modalContent,
+        className: Chunk655410.modalContent,
         children: [this.renderType(), this.renderName(), module === Chunk981631.d4z.GUILD_STORE ? this.renderStoreOptions() : null, (0, Chunk255367.jsx)(Chunk636816.Z, {
           guildId: exports,
           channelType: module,
-          className: Chunk37448.channelTypeDescription
+          className: Chunk655410.channelTypeDescription
         }), module === Chunk981631.d4z.GUILD_STAGE_VOICE ? null : this.renderPrivacyOptions()]
       }), this.renderError(), this.renderFooter()]
     })
@@ -734,24 +734,24 @@ class el extends Chunk73800.PureComponent {
         separator: false,
         children: [(0, Chunk255367.jsxs)(Chunk481060.Kqy, {
           gap: 4,
-          className: Chunk37448.header,
+          className: Chunk655410.header,
           children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
             variant: "heading-lg/semibold",
-            className: Chunk37448.title,
+            className: Chunk655410.title,
             children: l ? Chunk388032.intl.string(Chunk388032.t["S/6zHB"]) : Chunk388032.intl.string(Chunk388032.t.dMJ3Y2)
           }), (0, Chunk255367.jsxs)(Chunk481060.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            className: Chunk37448.subtitle,
+            className: Chunk655410.subtitle,
             children: [(0, Chunk255367.jsx)(Chunk120356, {
               size: "xs",
               color: "currentColor",
-              className: Chunk37448.subtitleIcon
+              className: Chunk655410.subtitleIcon
             }), module]
           })]
         }), (0, Chunk255367.jsx)(Chunk481060.olH, {
           onClick: Chunk73800,
-          className: Chunk37448.closeButton
+          className: Chunk655410.closeButton
         })]
       }), this.renderError(true), (0, Chunk255367.jsx)(es, {
         onChange: this.handlePermissionOverwriteChange,
@@ -792,7 +792,7 @@ class el extends Chunk73800.PureComponent {
     } = this.props;
     return (0, Chunk255367.jsx)(Chunk481060.Y0X, {
       transitionState: module,
-      className: Chunk37448.modal,
+      className: Chunk655410.modal,
       "aria-labelledby": this.headerId,
       size: Chunk481060.CgR.DYNAMIC,
       parentComponent: "CreateChannel",

@@ -1,4 +1,4 @@
-/** Chunk was on 45620 **/
+/** Chunk was on 96910 **/
 /** chunk id: 680942, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,18 +24,18 @@ let _ = e => {
     product: t,
     primary: r,
     selectedVariantIndex: _,
-    returnRef: v,
+    returnRef: g,
     onSuccess: O,
-    tooltipDelay: C
+    tooltipDelay: y
   } = e, {
-    analyticsLocations: E
-  } = (0, o.ZP)(), S = l.useRef(null), y = (0, p.hv)("CollectiblesShopGiftButton"), x = (0, u.sp)(), j = (0, g.Z)();
-  return (0, d.x6)(t) ? null : (0, n.jsx)(i.ua7, {
+    analyticsLocations: C
+  } = (0, o.ZP)(), j = a.useRef(null), P = (0, p.hv)("CollectiblesShopGiftButton"), E = (0, u.sp)(), x = (0, b.Z)();
+  return (0, d.x6)(t) ? null : (0, n.jsx)(l.ua7, {
     text: m.intl.string(m.t["JCFN//"]),
-    delay: C,
+    delay: y,
     children: e => {
-      var l, o;
-      return (0, n.jsx)(i.hU, (l = function(e) {
+      var a, o;
+      return (0, n.jsx)(l.hU, (a = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -54,36 +54,36 @@ let _ = e => {
         return e
       }({}, e), o = o = {
         "aria-label": m.intl.string(m.t["JCFN//"]),
-        buttonRef: S,
+        buttonRef: j,
         variant: r ? "primary" : "secondary",
-        icon: i.OgN,
+        icon: l.OgN,
         size: "md",
         onClick: e => {
-          e.stopPropagation(), c.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-            collectibles_shop_session_id: null == x ? true : x.sessionId,
+          e.stopPropagation(), c.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            collectibles_shop_session_id: null == E ? true : E.sessionId,
             sku_id: t.skuId,
-            page_section: null == x ? true : x.pageSection,
-            page_category: null == x ? true : x.pageCategory,
-            tile_type: a.Z[t.type],
-            tile_position: String(null == x ? true : x.tilePosition),
+            page_section: null == E ? true : E.pageSection,
+            page_category: null == E ? true : E.pageCategory,
+            tile_type: i.Z[t.type],
+            tile_position: String(null == E ? true : E.tilePosition),
             cta_name: "gift button",
-            page_type: j || "home"
+            page_type: x || "home"
           }), (0, s.Z)({
-            skuId: (0, f.S)({
+            skuId: (0, h.S)({
               product: t,
               selectedVariantIndex: _
             }),
             isGift: true,
-            giftingOrigin: h.Wt.SHOP_PAGE,
-            analyticsLocations: E,
-            returnRef: v,
-            variantsReturnStyle: y,
+            giftingOrigin: v.Wt.SHOP_PAGE,
+            analyticsLocations: C,
+            returnRef: g,
+            variantsReturnStyle: P,
             onClose: null != O ? e => {
               e && O()
             } : true
           })
         }
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
@@ -91,8 +91,8 @@ let _ = e => {
         }
         return r
       })(Object(o)).forEach(function(e) {
-        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
-      }), l))
+        Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(o, e))
+      }), a))
     }
   })
 }

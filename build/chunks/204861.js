@@ -1,0 +1,12 @@
+/** Chunk was on 37979 **/
+/** chunk id: 204861, original params: e,t,l (module,exports,require) **/
+module.exports = {
+  label: "label__95e0a",
+  sublabel: "sublabel__95e0a",
+  clearFilters: "clearFilters__95e0a",
+  filterSection: "filterSection__95e0a",
+  dateFilter: "dateFilter__95e0a",
+  dateFilterSelect: "dateFilterSelect__95e0a",
+  removeDateFilterButton: "removeDateFilterButton__95e0a",
+  trashIcon: "trashIcon__95e0a"
+}

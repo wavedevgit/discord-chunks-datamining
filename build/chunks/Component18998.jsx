@@ -1,4 +1,4 @@
-/** Chunk was on 34779 **/
+/** Chunk was on 26628 **/
 /** chunk id: 18998, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -12,7 +12,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk748780 = require("./748780.js"),
   Chunk902704 = require("./902704.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk161421 = require("./161421.js");
+  Chunk80948 = require("./80948.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -88,14 +88,14 @@ class b extends Chunk73800.Component {
       onClick: r
     } = this.props;
     return (0, Chunk255367.jsx)(Chunk748780.Z.div, {
-      className: s()(Chunk161421.bar, module, {
-        [Chunk161421.hidden]: require
+      className: s()(Chunk80948.bar, module, {
+        [Chunk80948.hidden]: require
       }),
       onClick: r,
       style: this.getAnimatedStyle(),
       "aria-hidden": require,
       children: (0, Chunk255367.jsx)("span", {
-        className: Chunk161421.text,
+        className: Chunk80948.text,
         children: exports
       })
     })
@@ -151,7 +151,7 @@ class O extends(r = Chunk73800.PureComponent) {
       className: null != Chunk120356 ? Chunk120356 : true,
       children: (0, Chunk255367.jsx)(b, {
         hide: true === c || null == module && null == exports,
-        className: s()(Chunk954955, null != exports ? Chunk161421.mention : Chunk161421.unread),
+        className: s()(Chunk954955, null != exports ? Chunk80948.mention : Chunk80948.unread),
         text: null != exports ? require : r,
         reverse: Chunk73800,
         animate: Chunk748780 && !Chunk902704.enabled,
@@ -215,7 +215,7 @@ class O extends(r = Chunk73800.PureComponent) {
   }
 }
 f(O, "contextType", Chunk481060.Sfi), f(O, "defaultProps", {
-  className: Chunk161421.container,
+  className: Chunk80948.container,
   reverse: false,
   hide: false,
   animate: true

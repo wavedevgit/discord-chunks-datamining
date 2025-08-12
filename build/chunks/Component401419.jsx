@@ -11,7 +11,7 @@ var Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk729594 = require("./729594.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk519222 = require("./519222.js");
+  Chunk496271 = require("./496271.js");
 let c = ["sessionshare.sp-int.playstation.com", "session-share.playstation.com"],
   u = (e, t, n) => "https://".concat(e, "/embed/").concat(t, "?locale=").concat(n),
   d = 400,

@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk258356 = require("./258356.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk534962 = require("./534962.js");
+  Chunk522976 = require("./522976.js");
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -60,7 +60,7 @@ function N(e, t) {
 
 function y() {
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk534962.centerFlex,
+    className: Chunk522976.centerFlex,
     children: (0, Chunk255367.jsx)(Chunk481060.$jN, {})
   })
 }

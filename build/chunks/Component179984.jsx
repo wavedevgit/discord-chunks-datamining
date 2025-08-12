@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 179984, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -32,7 +32,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk21023 = require("./21023.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk554074 = require("./554074.js"),
+  Chunk89637 = require("./89637.js"),
   Chunk102655 = require("./102655.js"),
   Chunk768236 = require("./768236.js"),
   Chunk314907 = require("./314907.js"),
@@ -60,14 +60,14 @@ let M = () => {
     let e = (0, Chunk346497.W)();
     return (0, Chunk255367.jsx)(Chunk382791.Cy, {
       text: module,
-      className: Chunk554074.bogoPillWithSparkles,
+      className: Chunk89637.bogoPillWithSparkles,
       colorOptions: Chunk382791.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     })
   },
   B = () => (0, Chunk255367.jsx)("div", {
-    className: Chunk554074.mostPopularPill,
+    className: Chunk89637.mostPopularPill,
     children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
-      className: Chunk554074.mostPopularText,
+      className: Chunk89637.mostPopularText,
       variant: "heading-deprecated-12/extrabold",
       children: Chunk388032.intl.string(Chunk388032.t["o/oRJC"])
     })

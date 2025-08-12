@@ -8,7 +8,7 @@ var r, i, Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk974393 = require("./974393.js");
+  Chunk571475 = require("./571475.js");
 let d = {
     UP: "up",
     RIGHT: "right",
@@ -17,9 +17,9 @@ let d = {
   },
   f = {
     [d.UP]: "",
-    [d.RIGHT]: Chunk974393.right,
-    [d.DOWN]: Chunk974393.down,
-    [d.LEFT]: Chunk974393.left
+    [d.RIGHT]: Chunk571475.right,
+    [d.DOWN]: Chunk571475.down,
+    [d.LEFT]: Chunk571475.left
   };
 class p extends(i = Chunk73800.PureComponent) {
   render() {

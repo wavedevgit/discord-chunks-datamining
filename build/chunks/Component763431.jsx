@@ -8,7 +8,7 @@ require("./73800.js");
 var Chunk481060 = require("./481060.js"),
   Chunk565138 = require("./565138.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk179979 = require("./179979.js");
+  Chunk834240 = require("./834240.js");
 let o = e => {
   let {
     guild: t

@@ -13,13 +13,13 @@ var Chunk255367 = require("./255367.js"),
   Chunk321051 = require("./321051.jsx"),
   Chunk669079 = require("./669079.js"),
   Chunk479446 = require("./479446.js"),
-  Chunk646476 = require("./646476.js"),
+  Chunk47280 = require("./47280.js"),
+  Chunk543995 = require("./543995.js"),
   Chunk981632 = require("./981632.jsx"),
   Chunk96848 = require("./96848.jsx"),
   Chunk703926 = require("./703926.jsx"),
-  Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk651427 = require("./651427.js");
+  Chunk591858 = require("./591858.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -94,21 +94,15 @@ let S = e => {
     orientation: "horizontal"
   }), {
     ref: L
-  } = D, x = I(D, ["ref"]), M = (0, u.MY)(b, t), k = M === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, j = M !== u.xr.DEFAULT, U = (0, f.rK)(), {
-    enabled: G
-  } = f.ZP.useExperiment({
-    location: "premiumGiftSelect_GiftAnimationOptions"
-  }, {
-    autoTrackExposure: U
-  }), B = null;
-  j && (B = U && G ? m.kJ : m.QI);
-  let Z = e => {
+  } = D, x = I(D, ["ref"]), M = (0, u.MY)(b, t), k = M === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, j = M !== u.xr.DEFAULT, U = (0, _.m)(), G = (0, f.ZP)({
+    location: "GiftAnimationOptions"
+  }), B = e => {
     null != C && C(null == e ? true : e)
   };
   return (0, r.jsxs)("div", {
     children: [j && (0, r.jsxs)("div", {
       className: a()(E.giftMainAnimation, n),
-      children: [null != O ? (0, r.jsx)(_.Z, {
+      children: [null != O ? (0, r.jsx)(p.Z, {
         giftStyle: O,
         defaultAnimationState: d.SR.ACTION,
         idleAnimationState: d.SR.LOOP,
@@ -117,19 +111,13 @@ let S = e => {
       }) : (0, r.jsx)(s.$jN, {
         className: E.spinner
       }), k && (0, r.jsxs)("div", {
-        className: E.soundEmojiContainer,
-        children: [(0, r.jsx)("div", {
-          className: E.sound,
-          children: (0, r.jsx)(c.Z, {
-            sound: A,
-            onSelect: Z
-          })
-        }), (0, r.jsx)("div", {
-          className: E.emoji,
-          children: (0, r.jsx)(p.Z, {
-            setEmojiConfetti: N,
-            emojiConfetti: null == S ? true : S
-          })
+        className: a()(E.soundEmojiContainer, G && E.refresh),
+        children: [(0, r.jsx)(c.Z, {
+          sound: A,
+          onSelect: B
+        }), (0, r.jsx)(h.Z, {
+          setEmojiConfetti: N,
+          emojiConfetti: null == S ? true : S
         })]
       })]
     }), (0, r.jsx)("div", v(y({
@@ -142,7 +130,7 @@ let S = e => {
       "aria-label": g.intl.string(g.t.v54NrK),
       ref: L
     }, x), {
-      children: null != B && B.map((e, t) => (0, r.jsx)(h.m, {
+      children: null != U && !G && U.map((e, t) => (0, r.jsx)(m.m, {
         isSelected: O === e,
         giftStyle: e,
         setSelectedGiftStyle: T,

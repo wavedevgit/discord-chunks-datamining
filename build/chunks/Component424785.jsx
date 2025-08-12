@@ -1,4 +1,4 @@
-/** Chunk was on 34779 **/
+/** Chunk was on 26628 **/
 /** chunk id: 424785, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => q
@@ -42,8 +42,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk915887 = require("./915887.js"),
-  Chunk185346 = require("./185346.js");
+  Chunk81252 = require("./81252.js"),
+  Chunk684474 = require("./684474.js");
 
 function H(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -99,11 +99,11 @@ class K extends Chunk98597.ZP {
       sortingPosition: t,
       isUserOver: n
     } = this.props;
-    if (require) return Chunk915887.containerUserOver;
+    if (require) return Chunk81252.containerUserOver;
     if (null != exports)
-      if (module > exports) return Chunk915887.containerDragAfter;
-      else return Chunk915887.containerDragBefore;
-    return Chunk915887.containerDefault
+      if (module > exports) return Chunk81252.containerDragAfter;
+      else return Chunk81252.containerDragBefore;
+    return Chunk81252.containerDefault
   }
   renderVoiceUsers() {
     let {
@@ -148,7 +148,7 @@ class K extends Chunk98597.ZP {
       shouldShowGuildVerificationPopout: C
     } = this.state, v = this.getVoiceStatesCount(), j = (0, Chunk255367.jsxs)("li", {
       className: o()(this.getModeClass(), {
-        [Chunk915887.disabled]: this.isDisabled()
+        [Chunk81252.disabled]: this.isDisabled()
       }),
       "data-dnd-name": module.name,
       children: [(0, Chunk255367.jsx)(Chunk481060.yRy, {

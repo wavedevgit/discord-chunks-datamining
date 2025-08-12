@@ -40,7 +40,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk474936 = require("./474936.js"),
   Chunk671147 = require("./671147.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk882903 = require("./882903.js");
+  Chunk33769 = require("./33769.js");
 
 function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -108,7 +108,7 @@ function Y(e) {
 
 function W() {
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk882903.headerContainer,
+    className: Chunk33769.headerContainer,
     children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "text-md/bold",
       children: Chunk388032.intl.string(Chunk671147.default["AsmU8/"])

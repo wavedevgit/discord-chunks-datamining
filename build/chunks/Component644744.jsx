@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 644744, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -12,7 +12,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk490529 = require("./490529.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk962311 = require("./962311.js");
+  Chunk784390 = require("./784390.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -23,14 +23,14 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let g = {
-    [Chunk981631.gkr.HOUSE_1]: Chunk962311.membershipDialogHouse1,
-    [Chunk981631.gkr.HOUSE_2]: Chunk962311.membershipDialogHouse2,
-    [Chunk981631.gkr.HOUSE_3]: Chunk962311.membershipDialogHouse3
+    [Chunk981631.gkr.HOUSE_1]: Chunk784390.membershipDialogHouse1,
+    [Chunk981631.gkr.HOUSE_2]: Chunk784390.membershipDialogHouse2,
+    [Chunk981631.gkr.HOUSE_3]: Chunk784390.membershipDialogHouse3
   },
   h = {
-    [Chunk981631.gkr.HOUSE_1]: Chunk962311.houseLogoHouse1,
-    [Chunk981631.gkr.HOUSE_2]: Chunk962311.__invalid_houseLogoHouse2,
-    [Chunk981631.gkr.HOUSE_3]: Chunk962311.__invalid_houseLogoHouse3
+    [Chunk981631.gkr.HOUSE_1]: Chunk784390.houseLogoHouse1,
+    [Chunk981631.gkr.HOUSE_2]: Chunk784390.__invalid_houseLogoHouse2,
+    [Chunk981631.gkr.HOUSE_3]: Chunk784390.__invalid_houseLogoHouse3
   },
   f = {
     [Chunk981631.gkr.HOUSE_1]: require("./246300.js"),
@@ -55,42 +55,42 @@ class x extends Chunk73800.Component {
         houseName: (0, Chunk490529.X8)(module)
       });
       return (0, Chunk255367.jsx)("div", {
-        className: a()(Chunk962311.membershipDialog, g[module]),
+        className: a()(Chunk784390.membershipDialog, g[module]),
         children: (0, Chunk255367.jsxs)("div", {
-          className: Chunk962311.membershipDialogContent,
+          className: Chunk784390.membershipDialogContent,
           children: [(0, Chunk255367.jsxs)(Chunk600164.Z, {
             children: [(0, Chunk255367.jsxs)(Chunk600164.Z.Child, {
               grow: 1,
               shrink: 1,
               children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
-                className: Chunk962311.membershipDialogHeading,
+                className: Chunk784390.membershipDialogHeading,
                 variant: "text-xs/bold",
                 children: Chunk388032.intl.string(Chunk388032.t.KZoEIy)
               }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
-                className: Chunk962311.membershipDialogHouseName,
+                className: Chunk784390.membershipDialogHouseName,
                 variant: "heading-sm/semibold",
                 children: exports
               }), (0, Chunk255367.jsx)(Chunk481060.Text, {
-                className: Chunk962311.membershipDialogHouseDescription,
+                className: Chunk784390.membershipDialogHouseDescription,
                 variant: "text-md/normal",
                 children: b(module)
               })]
             }), (0, Chunk255367.jsx)(Chunk600164.Z.Child, {
-              className: Chunk962311.houseLogoWrapper,
+              className: Chunk784390.houseLogoWrapper,
               grow: 0,
               shrink: 0,
               wrap: true,
               children: (0, Chunk255367.jsx)("img", {
-                className: a()(Chunk962311.houseLogo, h[module]),
+                className: a()(Chunk784390.houseLogo, h[module]),
                 src: f[module],
                 alt: exports
               })
             })]
           }), (0, Chunk255367.jsxs)(Chunk481060.Text, {
-            className: Chunk962311.membershipDialogSwitchHouses,
+            className: Chunk784390.membershipDialogSwitchHouses,
             variant: "text-md/normal",
             children: [Chunk388032.intl.string(Chunk388032.t.zD3mqK), (0, Chunk255367.jsx)(Chunk481060.P3F, {
-              className: Chunk962311.membershipDialogSwitchHousesAction,
+              className: Chunk784390.membershipDialogSwitchHousesAction,
               onClick: this.handleJoinHypeSquadClick,
               tag: "span",
               children: Chunk388032.intl.string(Chunk388032.t.LzBgrq)
@@ -100,9 +100,9 @@ class x extends Chunk73800.Component {
       })
     }
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk962311.joinCTAWrapper,
+      className: Chunk784390.joinCTAWrapper,
       children: [(0, Chunk255367.jsxs)(Chunk600164.Z, {
-        className: Chunk962311.joinCTA,
+        className: Chunk784390.joinCTA,
         align: Chunk600164.Z.Align.CENTER,
         justify: Chunk600164.Z.Justify.CENTER,
         direction: Chunk600164.Z.Direction.HORIZONTAL,
@@ -123,7 +123,7 @@ class x extends Chunk73800.Component {
           })
         })]
       }), (0, Chunk255367.jsx)(Chunk481060.Text, {
-        className: Chunk962311.newsletterWarning,
+        className: Chunk784390.newsletterWarning,
         variant: "text-sm/normal",
         children: Chunk388032.intl.string(Chunk388032.t["3kUvgo"])
       })]

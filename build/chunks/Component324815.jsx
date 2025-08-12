@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 324815, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -7,10 +7,10 @@ var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk18582 = require("./18582.jsx"),
-  Chunk610902 = require("./610902.js");
+  Chunk586379 = require("./586379.js");
 let o = {
-  white: Chunk610902.borderWhite,
-  green: Chunk610902.borderGreen
+  white: Chunk586379.borderWhite,
+  green: Chunk586379.borderGreen
 };
 
 function c(e) {

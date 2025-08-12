@@ -1,19 +1,19 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 58120 **/
 /** chunk id: 825209, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js"), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk921738 = require("./921738.js"),
-  a = require.n(Chunk921738),
+  o = require.n(Chunk921738),
   Chunk213005 = require("./213005.js"),
   Chunk455279 = require("./455279.jsx"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,7 +22,7 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 let p = Chunk358085.isPlatformEmbedded && null != Chunk998502.ZP.getDiscordUtils().inputCaptureRegisterElement;
-class g extends Chunk73800.PureComponent {
+class b extends Chunk73800.PureComponent {
   componentDidMount() {
     this._mounted = true
   }
@@ -43,7 +43,7 @@ class g extends Chunk73800.PureComponent {
     } = this.state, {
       onChange: n
     } = this.props;
-    t === o.c.RECORDING && (null != n && n(e), this.setState({
+    t === l.c.RECORDING && (null != n && n(e), this.setState({
       codes: e
     }))
   }
@@ -66,19 +66,19 @@ class g extends Chunk73800.PureComponent {
     })
   }
   constructor(e) {
-    super(e), m(this, "_input", true), m(this, "gs", true), m(this, "_mounted", false), m(this, "recordStart", () => {
-      c.isPlatformEmbedded && !p && (this.gs = new l.Z, this.gs.on("change", this.handleGSChange)), this.setState({
-        mode: o.c.RECORDING
+    super(e), h(this, "_input", true), h(this, "gs", true), h(this, "_mounted", false), h(this, "recordStart", () => {
+      c.isPlatformEmbedded && !p && (this.gs = new a.Z, this.gs.on("change", this.handleGSChange)), this.setState({
+        mode: l.c.RECORDING
       })
-    }), m(this, "recordEnd", () => {
+    }), h(this, "recordEnd", () => {
       this.cleanUp(), this.setState({
-        mode: o.c.DEFAULT
+        mode: l.c.DEFAULT
       })
-    }), m(this, "toggleRecordMode", () => {
-      this.state.mode === o.c.DEFAULT ? this.recordStart() : this.recordEnd()
-    }), m(this, "handleComboKeys", (e, t, n) => {
+    }), h(this, "toggleRecordMode", () => {
+      this.state.mode === l.c.DEFAULT ? this.recordStart() : this.recordEnd()
+    }), h(this, "handleComboKeys", (e, t, n) => {
       if (n.preventDefault(), "keydown" === n.type) {
-        let e = t.map(e => [u.MoX.KEYBOARD_KEY, a()(e), u.CgE.BROWSER]),
+        let e = t.map(e => [u.MoX.KEYBOARD_KEY, o()(e), u.CgE.BROWSER]),
           {
             keyCode: i
           } = n;
@@ -87,11 +87,11 @@ class g extends Chunk73800.PureComponent {
           return i === t
         }) && e.push([u.MoX.KEYBOARD_KEY, i, u.CgE.BROWSER]), this.handleComboChange(e)
       }
-    }), m(this, "handleGSChange", e => {
+    }), h(this, "handleGSChange", e => {
       if (false === this._mounted) return;
       let t = [...e.combo];
       this.handleComboChange(t)
-    }), m(this, "handleNativeChange", e => {
+    }), h(this, "handleNativeChange", e => {
       e.length > 0 && this.handleComboChange(e), this.recordEnd()
     });
     let {
@@ -99,8 +99,8 @@ class g extends Chunk73800.PureComponent {
     } = e;
     this.state = {
       codes: t,
-      mode: o.c.DEFAULT
+      mode: l.c.DEFAULT
     }
   }
 }
-let h = g
+let f = b

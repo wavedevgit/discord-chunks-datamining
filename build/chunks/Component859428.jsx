@@ -18,8 +18,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk900849 = require("./900849.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk8940 = require("./8940.js"),
-  Chunk240211 = require("./240211.js");
+  Chunk282375 = require("./282375.js"),
+  Chunk902029 = require("./902029.js");
 let b = () => {
   let e = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId(), []),
     t = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(module), [module]),
@@ -39,25 +39,25 @@ let b = () => {
       }
     };
   return (0, Chunk255367.jsxs)("div", {
-    className: a()(Chunk8940.notice, Chunk240211.notice),
+    className: a()(Chunk282375.notice, Chunk902029.notice),
     children: [(0, Chunk255367.jsxs)(Chunk755721.zx, {
       look: Chunk755721.zx.Looks.OUTLINED,
       color: Chunk755721.zx.Colors.WHITE,
       size: Chunk755721.zx.Sizes.NONE,
-      className: a()(Chunk8940.button, Chunk8940.back),
-      innerClassName: Chunk8940.iconButton,
+      className: a()(Chunk282375.button, Chunk282375.back),
+      innerClassName: Chunk282375.iconButton,
       onClick: b,
       children: [(0, Chunk255367.jsx)(Chunk481060.whL, {
         size: "xs",
         color: "currentColor",
-        className: Chunk8940.arrow
+        className: Chunk282375.arrow
       }), Chunk388032.intl.string(Chunk388032.t["13/7kZ"])]
     }), (0, Chunk255367.jsx)(Chunk481060.Text, {
-      className: Chunk8940.header,
+      className: Chunk282375.header,
       variant: "text-sm/normal",
       children: Chunk388032.intl.string(Chunk388032.t["N/y2WF"])
     }), (0, Chunk255367.jsx)(Chunk755721.zx, {
-      className: Chunk8940.button,
+      className: Chunk282375.button,
       look: Chunk755721.zx.Looks.OUTLINED,
       color: Chunk755721.zx.Colors.WHITE,
       size: Chunk755721.zx.Sizes.NONE,

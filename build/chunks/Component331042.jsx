@@ -31,7 +31,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk391594 = require("./391594.js"),
   Chunk302800 = require("./302800.js"),
   Chunk215023 = require("./215023.js"),
-  Chunk854402 = require("./854402.js");
+  Chunk629755 = require("./629755.js");
 let R = e => {
     let t = (0, _.o)("CollectiblesCollectedModal"),
       l = (0, s.e7)([f.default], () => {

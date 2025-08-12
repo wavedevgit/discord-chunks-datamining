@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 532495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -32,7 +32,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk596677 = require("./596677.js");
+  Chunk479973 = require("./479973.js");
 
 function R() {
   var e, t, n, r, R, D, Z, w;
@@ -100,7 +100,7 @@ function R() {
     en = (null != (R = null == (t = Y.bio) ? true : exports.length) ? R : 0) > 0 ? Y.bio : null != (D = null == q ? true : q.bio) ? D : [],
     ei = (0, Chunk396402.w)();
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk596677.sectionsContainer,
+    className: Chunk479973.sectionsContainer,
     children: [(0, Chunk255367.jsx)(Chunk349177.Z, {
       placeholder: k.username,
       errors: et,

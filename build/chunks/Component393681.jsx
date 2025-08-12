@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 393681, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => X
@@ -45,8 +45,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk801461 = require("./801461.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk951839 = require("./951839.js"),
-  Chunk20493 = require("./20493.js");
+  Chunk94563 = require("./94563.js"),
+  Chunk881488 = require("./881488.js");
 
 function Y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -96,7 +96,7 @@ class q extends Chunk73800.PureComponent {
     if (!module.isClaimed()) {
       let e = (0, Chunk255367.jsxs)("section", {
         children: [(0, Chunk255367.jsx)("div", {
-          className: Chunk951839.accountWarningBodyText,
+          className: Chunk94563.accountWarningBodyText,
           children: Chunk388032.intl.string(Chunk388032.t.qKs3vr)
         }), (0, Chunk255367.jsx)(Chunk755721.zx, {
           look: Chunk755721.iL.OUTLINED,
@@ -108,7 +108,7 @@ class q extends Chunk73800.PureComponent {
       });
       return (0, Chunk255367.jsx)(Chunk481060.ToO, {
         type: Chunk481060.ToO.Types.DANGER,
-        className: Chunk20493.marginBottom20,
+        className: Chunk881488.marginBottom20,
         imageData: {
           src: require("./418558.js"),
           width: 60,
@@ -122,7 +122,7 @@ class q extends Chunk73800.PureComponent {
     if (!module.verified) {
       let e = (0, Chunk255367.jsxs)("section", {
         children: [(0, Chunk255367.jsx)("div", {
-          className: Chunk951839.accountWarningBodyText,
+          className: Chunk94563.accountWarningBodyText,
           children: Chunk388032.intl.string(Chunk388032.t.NAzplJ)
         }), (0, Chunk255367.jsx)(Chunk418632.Z, {
           size: Chunk755721.Ph.SMALL,
@@ -131,7 +131,7 @@ class q extends Chunk73800.PureComponent {
       });
       return (0, Chunk255367.jsx)(Chunk481060.ToO, {
         type: Chunk481060.ToO.Types.PRIMARY,
-        className: Chunk20493.marginBottom20,
+        className: Chunk881488.marginBottom20,
         imageData: {
           src: require("./449125.js"),
           width: 60,
@@ -144,10 +144,10 @@ class q extends Chunk73800.PureComponent {
   }
   renderPomeloWarning() {
     return this.props.shouldRenderPomeloWarning ? (0, Chunk255367.jsxs)(Chunk481060.Wn, {
-      className: Chunk951839.accountWarningBodyText,
+      className: Chunk94563.accountWarningBodyText,
       messageType: Chunk481060.QYI.WARNING,
       children: [Chunk388032.intl.format(Chunk388032.t.pdYZys, {}), " ", "", (0, Chunk255367.jsx)(Chunk690221.Z, {
-        className: Chunk951839.noticeTextButton,
+        className: Chunk94563.noticeTextButton,
         onClick: () => (0, Chunk303172.Z)(Chunk801461.Kq.USER_SETTINGS),
         children: Chunk388032.intl.string(Chunk388032.t.LhlgY2)
       })]
@@ -171,15 +171,15 @@ class q extends Chunk73800.PureComponent {
       theme: r
     } = this.props, s = (0, Chunk780384.wj)(Chunk73800) ? require("./555702.js") : require("./610802.js");
     return (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-      className: a()(Chunk951839.userSettingsSecurity, Chunk20493.marginTop40),
+      className: a()(Chunk94563.userSettingsSecurity, Chunk881488.marginTop40),
       title: Chunk388032.intl.string(Chunk388032.t.pKSjEh),
       tag: "h1",
       children: [exports.mfaEnabled ? (0, Chunk255367.jsx)(Chunk481060.hjN, {
         children: (0, Chunk255367.jsxs)(Chunk481060.vwX, {
-          className: a()(Chunk951839.isEnabled, Chunk20493.marginBottom20),
+          className: a()(Chunk94563.isEnabled, Chunk881488.marginBottom20),
           children: [(0, Chunk255367.jsx)("img", {
             alt: "",
-            className: Chunk951839.lockIcon,
+            className: Chunk94563.lockIcon,
             src: require("./511391.js")
           }), Chunk388032.intl.string(Chunk388032.t.FsmBy8)]
         })
@@ -188,7 +188,7 @@ class q extends Chunk73800.PureComponent {
         children: (0, Chunk255367.jsx)("div", {
           children: (0, Chunk255367.jsx)("div", {
             "data-button-hoisted-classname-wrapper": true,
-            className: Chunk951839.changePasswordButton,
+            className: Chunk94563.changePasswordButton,
             children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
               variant: "primary",
               size: "sm",
@@ -214,7 +214,7 @@ class q extends Chunk73800.PureComponent {
             grow: 0,
             children: (0, Chunk255367.jsx)("img", {
               src: Chunk120356,
-              className: Chunk951839.userSettingsSecurityImage,
+              className: Chunk94563.userSettingsSecurityImage,
               alt: ""
             })
           })]
@@ -307,7 +307,7 @@ class q extends Chunk73800.PureComponent {
       userTeamsLoading: t
     } = this.props;
     return (0, Chunk255367.jsx)(Chunk888256.Z, {
-      className: Chunk20493.marginTop40,
+      className: Chunk881488.marginTop40,
       currentUser: module,
       disabled: exports,
       handleDisableAccount: () => this.handleDisableAccount(false),
@@ -337,7 +337,7 @@ class q extends Chunk73800.PureComponent {
       children: (0, Chunk255367.jsx)(Chunk526156.Z, {
         parentSetting: Chunk726985.s6.ACCOUNT,
         settingsSection: Chunk981631.oAB.ACCOUNT,
-        panelClassName: Chunk951839.tabPanel,
+        panelClassName: Chunk94563.tabPanel,
         onTabChange: e => {
           P.default.track(G.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
             target_tab_name: e === V.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"

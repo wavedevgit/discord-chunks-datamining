@@ -1,67 +1,67 @@
-/** Chunk was on 99133 **/
-/** chunk id: 810123, original params: A,t,e (module,exports,require) **/
+/** Chunk was on 86590 **/
+/** chunk id: 810123, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  E: () => i,
-  Z: () => a
+  E: () => d,
+  Z: () => m
 });
-var r, Chunk255367 = require("./255367.js"),
+var l, Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
-  n = require.n(Chunk120356),
+  c = require.n(Chunk120356),
   Chunk471445 = require("./471445.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk601964 = require("./601964.js"),
-  Chunk292895 = require("./292895.js"),
-  i = ((r = {}).SMALL_32 = "SMALL_32", r);
-let o = {
+  Chunk110681 = require("./110681.js"),
+  d = ((l = {}).SMALL_32 = "SMALL_32", l);
+let f = {
     SMALL_32: 24
   },
-  C = {
+  h = {
     SMALL_32: [13, 11, 10, 10, 10, 10, 10]
   },
-  a = function(A) {
+  m = function(e) {
     let {
-      className: t,
-      iconClassName: e,
-      size: r,
-      channel: v,
-      guild: i,
-      locked: a,
-      hasActiveThreads: w
-    } = A;
-    if (null == i) return null;
-    let s = (0, h.EB)(i, 48),
-      Q = C[r],
-      H = o[r],
-      c = (0, f.KS)(v, i, {
-        locked: a,
-        hasActiveThreads: w
+      className: n,
+      iconClassName: t,
+      size: l,
+      channel: i,
+      guild: d,
+      locked: m,
+      hasActiveThreads: p
+    } = e;
+    if (null == d) return null;
+    let j = (0, s.EB)(d, 48),
+      b = h[l],
+      g = f[l],
+      y = (0, o.KS)(i, d, {
+        locked: m,
+        hasActiveThreads: p
       });
-    if (null == c) return null;
-    let D = null != i ? (0, h.gM)(i) : "";
-    return (0, g.jsxs)("div", {
+    if (null == y) return null;
+    let O = null != d ? (0, s.gM)(d) : "";
+    return (0, r.jsxs)("div", {
       role: "img",
-      className: t,
-      children: [(0, g.jsx)(B.ZP, {
-        mask: B.QS.GUILD_ICON_WITH_CHANNEL_TYPE,
-        children: null != s ? (0, g.jsx)("img", {
+      className: n,
+      children: [(0, r.jsx)(a.ZP, {
+        mask: a.QS.GUILD_ICON_WITH_CHANNEL_TYPE,
+        children: null != j ? (0, r.jsx)("img", {
           alt: "",
-          src: s,
-          className: l.channelGuildIcon,
+          src: j,
+          className: u.channelGuildIcon,
           style: {
-            width: H,
-            height: H
+            width: g,
+            height: g
           }
-        }) : (0, g.jsx)("div", {
-          className: n()(l.channelGuildIcon, l.acronym),
+        }) : (0, r.jsx)("div", {
+          className: c()(u.channelGuildIcon, u.acronym),
           style: {
-            fontSize: D.length - 1 > Q.length ? Q[Q.length - 1] : Q[D.length - 1],
-            width: H,
-            height: H
+            fontSize: O.length - 1 > b.length ? b[b.length - 1] : b[O.length - 1],
+            width: g,
+            height: g
           },
-          children: D
+          children: O
         })
-      }), (0, g.jsx)(c, {
-        className: n()(l.icon, l.iconWithGuildIcon, e),
+      }), (0, r.jsx)(y, {
+        className: c()(u.icon, u.iconWithGuildIcon, t),
         color: "currentColor"
       })]
     })

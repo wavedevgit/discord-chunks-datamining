@@ -6,13 +6,13 @@ require.d(exports, {
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
-var Chunk196773 = require("./196773.js"),
+var Chunk151155 = require("./151155.js"),
   Chunk192029 = require("./192029.js"),
   Chunk527119 = require("./527119.js");
 
 function s() {
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk196773.container,
+    className: Chunk151155.container,
     children: (0, Chunk255367.jsxs)("svg", {
       width: "224",
       height: "148",

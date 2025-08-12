@@ -1,4 +1,4 @@
-/** Chunk was on 49152 **/
+/** Chunk was on 21087 **/
 /** chunk id: 823748, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => tc
@@ -79,7 +79,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk6025 = require("./6025.js"),
   Chunk897473 = require("./897473.js"),
   Chunk922482 = require("./922482.js"),
-  Chunk856393 = require("./856393.jsx"),
+  Chunk504185 = require("./504185.jsx"),
   Chunk657218 = require("./657218.jsx"),
   Chunk407908 = require("./407908.jsx"),
   Chunk66556 = require("./66556.jsx"),
@@ -120,7 +120,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk440493 = require("./440493.js"),
   Chunk157925 = require("./157925.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk100658 = require("./100658.js");
+  Chunk149771 = require("./149771.js");
 
 function tr(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -157,10 +157,10 @@ function tl(e, t) {
   }), e
 }
 let ta = (0, Chunk663993.Un)({
-  createPromise: () => Promise.all([require.e("22173"), require.e("71879")]).then(require.bind(require, 346975)),
+  createPromise: () => Promise.all([require.e("22173"), require.e("54214")]).then(require.bind(require, 346975)),
   webpackId: 346975,
   renderLoader: () => (0, Chunk255367.jsx)("div", {
-    className: Chunk100658.loader,
+    className: Chunk149771.loader,
     children: (0, Chunk255367.jsx)(Chunk481060.$jN, {})
   }),
   name: "ForumChannel"
@@ -181,7 +181,7 @@ class ts extends Chunk73800.PureComponent {
     o()(null != t, "Missing channel in Channel.openChannelContextMenu"), o()(null != i, "Missing guild in Channel.openChannelContextMenu"), (0, y.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("24783"), n.e("49220")]).then(n.bind(n, 439635));
+      } = await Promise.all([n.e("24783"), n.e("45735")]).then(n.bind(n, 439635));
       return n => (0, r.jsx)(e, tl(ti({}, n), {
         channel: t,
         guild: i
@@ -204,7 +204,7 @@ class ts extends Chunk73800.PureComponent {
     o()(null != i, "Missing user in Channel.openDMContextMenu"), (0, y.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("70205"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("91850")]).then(n.bind(n, 131404));
+      } = await Promise.all([n.e("79695"), n.e("70205"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("2783")]).then(n.bind(n, 131404));
       return n => (0, r.jsx)(e, tl(ti({}, n), {
         user: i,
         channelSelected: true,
@@ -228,7 +228,7 @@ class ts extends Chunk73800.PureComponent {
     if (o()(null != module, "Missing channel in Channel.renderCall"), !this.shouldRenderCall()) return null;
     switch (module.type) {
       case Chunk981631.d4z.GUILD_STAGE_VOICE:
-        return (0, Chunk255367.jsx)(Chunk856393.Z, {
+        return (0, Chunk255367.jsx)(Chunk504185.Z, {
           channel: module
         }, module.id);
       case Chunk981631.d4z.GUILD_VOICE:
@@ -431,7 +431,7 @@ class ts extends Chunk73800.PureComponent {
           style: {
             width: Chunk981631.$Y6
           },
-          className: Chunk100658.guildSidebar,
+          className: Chunk149771.guildSidebar,
           children: (0, Chunk255367.jsx)(Chunk613464.Z, {
             guildId: module,
             userId: exports,
@@ -477,20 +477,20 @@ class ts extends Chunk73800.PureComponent {
         subsection: null != require ? require : true
       }), (0, Chunk255367.jsxs)("div", {
         "data-has-border": module.type !== Chunk981631.d4z.GUILD_VOICE,
-        className: a()(Chunk100658.chat, {
-          [Chunk100658.threadSidebarOpen]: Chunk952265 || Chunk755721,
-          [Chunk100658.threadSidebarFloating]: Chunk952265 && Chunk442837
+        className: a()(Chunk149771.chat, {
+          [Chunk149771.threadSidebarOpen]: Chunk952265 || Chunk755721,
+          [Chunk149771.threadSidebarFloating]: Chunk952265 && Chunk442837
         }),
         children: [Chunk481060 ? (0, Chunk255367.jsx)(Chunk561472.Z, {
           style: {
             right: Chunk952265 ? Chunk114858 : true
           },
-          className: Chunk100658.uploadArea,
+          className: Chunk149771.uploadArea,
           channel: module,
           draftType: Chunk703558.d.ChannelMessage
         }) : null, Chunk704215 || u ? null : this.renderHeaderBar(), this.renderCall(), this.renderEmbeddedActivityPanel(), (0, Chunk255367.jsxs)("div", {
-          className: a()(Chunk100658.content, {
-            [Chunk100658.noChat]: Chunk120356 === Chunk981631.AEg.NO_CHAT
+          className: a()(Chunk149771.content, {
+            [Chunk149771.noChat]: Chunk120356 === Chunk981631.AEg.NO_CHAT
           }),
           children: [this.renderChat(), this.renderSidebar()]
         })]
@@ -509,19 +509,19 @@ class ts extends Chunk73800.PureComponent {
       null != e && (0, ex.Kh)(e.id)
     }), tr(this, "_handleContextMenu", (e, t) => {
       switch (t.type) {
-        case e7.d4z.GUILD_VOICE:
-        case e7.d4z.GUILD_ANNOUNCEMENT:
-        case e7.d4z.GUILD_TEXT:
-        case e7.d4z.GUILD_FORUM:
-        case e7.d4z.GUILD_MEDIA:
+        case e8.d4z.GUILD_VOICE:
+        case e8.d4z.GUILD_ANNOUNCEMENT:
+        case e8.d4z.GUILD_TEXT:
+        case e8.d4z.GUILD_FORUM:
+        case e8.d4z.GUILD_MEDIA:
           this.openChannelContextMenu(e, t);
           break;
-        case e7.d4z.ANNOUNCEMENT_THREAD:
-        case e7.d4z.PUBLIC_THREAD:
-        case e7.d4z.PRIVATE_THREAD:
+        case e8.d4z.ANNOUNCEMENT_THREAD:
+        case e8.d4z.PUBLIC_THREAD:
+        case e8.d4z.PRIVATE_THREAD:
           this.openThreadContextMenu(e, t);
           break;
-        case e7.d4z.DM:
+        case e8.d4z.DM:
           this.openDMContextMenu(e, t)
       }
     }), tr(this, "handleContextMenu", e => {
@@ -547,7 +547,7 @@ class ts extends Chunk73800.PureComponent {
       let {
         channel: e
       } = this.props;
-      return (null == e ? true : e.hasFlag(e8.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) ? (0, r.jsx)(K.Z, {
+      return (null == e ? true : e.hasFlag(e7.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) ? (0, r.jsx)(K.Z, {
         channelId: e.id,
         showTrailingDivider: true
       }) : null
@@ -564,7 +564,7 @@ class ts extends Chunk73800.PureComponent {
         selectedParticipant: e,
         premiumIndicatorEnabled: t
       } = this.props;
-      return (null == e ? true : e.type) !== e5.fO.STREAM ? null : (0, r.jsx)(z.Z, {
+      return (null == e ? true : e.type) !== e2.fO.STREAM ? null : (0, r.jsx)(z.Z, {
         size: e3.ZP.Sizes.LARGE,
         participant: e,
         showQuality: true,
@@ -583,10 +583,10 @@ class ts extends Chunk73800.PureComponent {
       let s = [];
       if (e.isSystemDM()) return s;
       switch (e.type) {
-        case e7.d4z.GUILD_STAGE_VOICE:
-        case e7.d4z.GUILD_VOICE:
+        case e8.d4z.GUILD_STAGE_VOICE:
+        case e8.d4z.GUILD_VOICE:
           break;
-        case e7.d4z.DM:
+        case e8.d4z.DM:
           s.push(this.renderClipsEnabledIndicatorToolbarItem()), s.push(this.renderStreamQualityLiveIndicatorToolbarItem()), s.push((0, r.jsx)(eo.Z, {
             channel: e
           }, "calls")), s.push((0, r.jsx)(en.Z, {
@@ -604,7 +604,7 @@ class ts extends Chunk73800.PureComponent {
             channel: e
           }, "chat-wallpaper"));
           break;
-        case e7.d4z.GROUP_DM:
+        case e8.d4z.GROUP_DM:
           if (s.push(this.renderJoinRequestInterviewButtons()), s.push(this.renderClipsEnabledIndicatorToolbarItem()), s.push(this.renderStreamQualityLiveIndicatorToolbarItem()), s.push((0, r.jsx)(eo.Z, {
               channel: e
             }, "calls")), s.push((0, r.jsx)(en.Z, {
@@ -623,9 +623,9 @@ class ts extends Chunk73800.PureComponent {
             channel: e
           }, "chat-wallpaper"));
           break;
-        case e7.d4z.ANNOUNCEMENT_THREAD:
-        case e7.d4z.PRIVATE_THREAD:
-        case e7.d4z.PUBLIC_THREAD:
+        case e8.d4z.ANNOUNCEMENT_THREAD:
+        case e8.d4z.PRIVATE_THREAD:
+        case e8.d4z.PUBLIC_THREAD:
           s.push((0, r.jsx)(eI.Z, {
             channel: e
           })), null == t || t.isForumLikeChannel() || s.push((0, r.jsx)(eZ.Z, {
@@ -644,8 +644,8 @@ class ts extends Chunk73800.PureComponent {
             channel: e
           }, "threads-overflow"));
           break;
-        case e7.d4z.GUILD_ANNOUNCEMENT:
-        case e7.d4z.GUILD_TEXT:
+        case e8.d4z.GUILD_ANNOUNCEMENT:
+        case e8.d4z.GUILD_TEXT:
           s.push((0, r.jsx)(G.Z, {
             channel: e
           }, "favorites")), s.push((0, r.jsx)(eZ.Z, {
@@ -660,8 +660,8 @@ class ts extends Chunk73800.PureComponent {
             channel: e
           }, "summaries"));
           break;
-        case e7.d4z.GUILD_FORUM:
-        case e7.d4z.GUILD_MEDIA:
+        case e8.d4z.GUILD_FORUM:
+        case e8.d4z.GUILD_MEDIA:
           n || (s.push((0, r.jsx)(el.Z, {
             channel: e
           }, "forum-onboarding")), s.push((0, r.jsx)(et.Z, {
@@ -670,7 +670,7 @@ class ts extends Chunk73800.PureComponent {
             channelId: e.id
           }, "members"));
           break;
-        case e7.d4z.GUILD_DIRECTORY:
+        case e8.d4z.GUILD_DIRECTORY:
           s.push((0, r.jsx)(ee.Z, {
             channelId: e.id
           }, "members"))
@@ -684,27 +684,27 @@ class ts extends Chunk73800.PureComponent {
       let t = [];
       if (e.isSystemDM()) return t;
       switch (e.type) {
-        case e7.d4z.GUILD_STAGE_VOICE:
-        case e7.d4z.GUILD_VOICE:
-        case e7.d4z.DM:
+        case e8.d4z.GUILD_STAGE_VOICE:
+        case e8.d4z.GUILD_VOICE:
+        case e8.d4z.DM:
           break;
-        case e7.d4z.GROUP_DM:
+        case e8.d4z.GROUP_DM:
           t.push((0, r.jsx)(ee.Z, {
             channelId: e.id
           }, "members"));
           break;
-        case e7.d4z.ANNOUNCEMENT_THREAD:
-        case e7.d4z.PRIVATE_THREAD:
-        case e7.d4z.PUBLIC_THREAD:
+        case e8.d4z.ANNOUNCEMENT_THREAD:
+        case e8.d4z.PRIVATE_THREAD:
+        case e8.d4z.PUBLIC_THREAD:
           e.isArchivedThread() || t.push((0, r.jsx)(ee.Z, {
             channelId: e.id
           }, "members"));
           break;
-        case e7.d4z.GUILD_ANNOUNCEMENT:
-        case e7.d4z.GUILD_TEXT:
-        case e7.d4z.GUILD_FORUM:
-        case e7.d4z.GUILD_MEDIA:
-        case e7.d4z.GUILD_DIRECTORY:
+        case e8.d4z.GUILD_ANNOUNCEMENT:
+        case e8.d4z.GUILD_TEXT:
+        case e8.d4z.GUILD_FORUM:
+        case e8.d4z.GUILD_MEDIA:
+        case e8.d4z.GUILD_DIRECTORY:
           t.push((0, r.jsx)(ee.Z, {
             channelId: e.id
           }, "members"))
@@ -752,7 +752,7 @@ class ts extends Chunk73800.PureComponent {
       return (0, r.jsxs)("div", {
         className: tn.subtitleContainer,
         children: [(0, r.jsx)(m.f6W, {
-          theme: h && c ? e7.BRd.DARK : true,
+          theme: h && c ? e8.BRd.DARK : true,
           children: e => (0, r.jsxs)(ea.Z, {
             guildId: s,
             channelId: t.id,
@@ -762,7 +762,7 @@ class ts extends Chunk73800.PureComponent {
             toolbar: this.renderHeaderToolbar(),
             mobileToolbar: this.renderMobileToolbar(),
             className: a()(tn.title, e, {
-              [tn.gdm]: t.type === e7.d4z.GROUP_DM
+              [tn.gdm]: t.type === e8.d4z.GROUP_DM
             }),
             transparent: _,
             showToolbar: j,
@@ -821,7 +821,7 @@ let to = (0, Chunk112724.Z)(ts),
     }, [R, c, v, C]);
     let D = (0, h.e7)([I.ZP], () => I.ZP.getCurrentEmbeddedActivity()),
       k = (0, h.e7)([I.ZP], () => I.ZP.getActivityPanelMode()),
-      L = null != D && !(0, P.Z)(null == c ? true : c.id) && k === e2.Ez.PANEL,
+      L = null != D && !(0, P.Z)(null == c ? true : c.id) && k === e5.Ez.PANEL,
       M = (0, h.e7)([eK.Z], () => null != c && c.isVocalThread() && !u().isEmpty(eK.Z.getVoiceStatesForChannel(c.id)), [c]),
       U = null != c && c.isPrivate() && !L && j,
       F = (null == c ? true : c.isGuildVocal()) || U || M,
@@ -831,7 +831,7 @@ let to = (0, Chunk112724.Z)(ts),
       } = (0, d.TH)(),
       z = (0, h.e7)([eg.Z], () => null != c && eg.Z.isLurking(c.guild_id), [c]),
       Y = (0, h.e7)([ek.Z], () => ek.Z.hasSeen(null == c ? true : c.guild_id, z), [c, z]),
-      q = (0, h.e7)([A.Z, I.ZP], () => null != I.ZP.getConnectedActivityLocation() && I.ZP.getActivityPanelMode() === e2.Ez.PANEL ? I.ZP.getFocusedLayout() === e2.MI.NO_CHAT ? e7.AEg.NO_CHAT : e7.AEg.NORMAL : null != s ? A.Z.getLayout(s) : e7.AEg.NORMAL, [s]),
+      q = (0, h.e7)([A.Z, I.ZP], () => null != I.ZP.getConnectedActivityLocation() && I.ZP.getActivityPanelMode() === e5.Ez.PANEL ? I.ZP.getFocusedLayout() === e5.MI.NO_CHAT ? e8.AEg.NO_CHAT : e8.AEg.NORMAL : null != s ? A.Z.getLayout(s) : e8.AEg.NORMAL, [s]),
       K = (0, h.e7)([A.Z], () => null != c ? A.Z.getSelectedParticipant(c.id) : null),
       Q = (0, h.e7)([eq.default], () => eq.default.getCurrentUser()),
       J = (0, ep.Z)(null == x ? true : x.id),
@@ -845,7 +845,7 @@ let to = (0, Chunk112724.Z)(ts),
       }), [s, c]),
       en = null == x ? true : x.id,
       er = (0, h.e7)([eM.ZP], () => eM.ZP.getGuildSidebarState(en), [en]),
-      ei = (0, h.e7)([eY.Z], () => eY.Z.getGuildId()) === e7.I_8,
+      ei = (0, h.e7)([eY.Z], () => eY.Z.getGuildId()) === e8.I_8,
       el = (0, em.D)(),
       ea = (0, eQ.ZP)(c),
       es = (0, eQ.ZP)(c, true),
@@ -909,11 +909,11 @@ let to = (0, Chunk112724.Z)(ts),
       showActivityPanel: L,
       showFramePanel: G,
       nsfwAgree: (0, h.e7)([eG.Z], () => eG.Z.didAgree(null == c ? true : c.guild_id)),
-      isMobile: (0, h.e7)([eW.Z], () => (null == c ? true : c.type) === e7.d4z.DM && eW.Z.isMobileOnline(c.getRecipientId()), [c]),
+      isMobile: (0, h.e7)([eW.Z], () => (null == c ? true : c.type) === e8.d4z.DM && eW.Z.isMobileOnline(c.getRecipientId()), [c]),
       isUnavailable: (0, h.e7)([eH.Z], () => (null == c ? true : c.guild_id) != null && eH.Z.isUnavailable(c.guild_id), [c]),
       showRealNameModal: J,
       showWelcomeModal: !Y && $,
-      showFollowButton: (null == c ? true : c.type) === e7.d4z.GUILD_ANNOUNCEMENT && (null == x ? true : x.features.has(e7.oNc.NEWS)) || false
+      showFollowButton: (null == c ? true : c.type) === e8.d4z.GUILD_ANNOUNCEMENT && (null == x ? true : x.features.has(e8.oNc.NEWS)) || false
     }, (0, h.cj)([eK.Z], () => ({
       hasVideo: null != c && eK.Z.hasVideo(c.id)
     }), [c])), {

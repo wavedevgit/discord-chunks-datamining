@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk240211 = require("./240211.js");
+  Chunk902029 = require("./902029.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,19 +77,19 @@ function g(e, t) {
   return i
 }
 let E = Object.freeze({
-  DEFAULT: Chunk240211.colorDefault,
-  NEUTRAL: Chunk240211.colorNeutral,
-  BRAND: Chunk240211.colorBrand,
-  WARNING: Chunk240211.colorWarning,
-  DANGER: Chunk240211.colorDanger,
-  INFO: Chunk240211.colorInfo,
-  STREAMER_MODE: Chunk240211.colorStreamerMode,
-  CUSTOM: Chunk240211.colorCustom,
-  SPOTIFY: Chunk240211.colorSpotify,
-  PLAYSTATION: Chunk240211.colorPlayStation,
-  PREMIUM_TIER_0: Chunk240211.colorPremiumTier0,
-  PREMIUM_TIER_1: Chunk240211.colorPremiumTier1,
-  PREMIUM_TIER_2: Chunk240211.colorPremiumTier2
+  DEFAULT: Chunk902029.colorDefault,
+  NEUTRAL: Chunk902029.colorNeutral,
+  BRAND: Chunk902029.colorBrand,
+  WARNING: Chunk902029.colorWarning,
+  DANGER: Chunk902029.colorDanger,
+  INFO: Chunk902029.colorInfo,
+  STREAMER_MODE: Chunk902029.colorStreamerMode,
+  CUSTOM: Chunk902029.colorCustom,
+  SPOTIFY: Chunk902029.colorSpotify,
+  PLAYSTATION: Chunk902029.colorPlayStation,
+  PREMIUM_TIER_0: Chunk902029.colorPremiumTier0,
+  PREMIUM_TIER_1: Chunk902029.colorPremiumTier1,
+  PREMIUM_TIER_2: Chunk902029.colorPremiumTier2
 });
 
 function b(e) {

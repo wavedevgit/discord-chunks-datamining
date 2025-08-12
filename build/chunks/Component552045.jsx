@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 552045, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -16,8 +16,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk292352 = require("./292352.js"),
   Chunk916723 = require("./916723.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk864903 = require("./864903.js"),
-  Chunk589608 = require("./589608.js"),
+  Chunk970872 = require("./970872.js"),
+  Chunk843249 = require("./843249.js"),
   Chunk633488 = require("./633488.js"),
   Chunk361848 = require("./361848.js");
 let _ = () => {
@@ -27,7 +27,7 @@ let _ = () => {
         handleTabChange: n
       } = (0, Chunk841409.Z)();
     return (0, Chunk631885.VM)() || exports && module.length > 0 ? null : (0, Chunk255367.jsx)("div", {
-      className: Chunk864903.button,
+      className: Chunk970872.button,
       children: exports ? (0, Chunk255367.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.LhlgY2),
@@ -44,11 +44,11 @@ let _ = () => {
         articleLink: "https://support.discord.com/hc/articles/14155043715735"
       }));
     return (0, Chunk255367.jsxs)("div", {
-      className: s()(Chunk864903.container, Chunk589608.box),
+      className: s()(Chunk970872.container, Chunk843249.box),
       children: [(0, Chunk255367.jsxs)("div", {
         children: [(0, Chunk255367.jsx)("div", {
           children: (0, Chunk255367.jsxs)("div", {
-            className: Chunk864903.headerText,
+            className: Chunk970872.headerText,
             children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
               variant: "heading-xl/medium",
               children: (0, Chunk255367.jsx)(Chunk481060.y5t, {
@@ -62,7 +62,7 @@ let _ = () => {
           })
         }), (0, Chunk255367.jsx)(_, {})]
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk864903.headerImage,
+        className: Chunk970872.headerImage,
         children: (0, Chunk255367.jsx)("img", {
           src: module ? Chunk633488 : Chunk361848,
           alt: Chunk388032.intl.string(Chunk916723.default.ffg6xc)

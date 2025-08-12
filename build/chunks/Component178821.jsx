@@ -18,8 +18,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk38618 = require("./38618.js"),
-  Chunk917356 = require("./917356.js"),
-  Chunk616257 = require("./616257.js");
+  Chunk265658 = require("./265658.js"),
+  Chunk881291 = require("./881291.js");
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -477,9 +477,9 @@ function F() {
   let e = (0, Chunk442837.e7)([Chunk38618.Z], () => Chunk38618.Z.getSocket()),
     [t, r] = Chunk73800.useState(false);
   return I(), (0, Chunk255367.jsx)("div", {
-    className: s()(Chunk616257.panel, Chunk917356.panel),
+    className: s()(Chunk881291.panel, Chunk265658.panel),
     children: (0, Chunk255367.jsxs)(Chunk481060.zJl, {
-      className: Chunk917356.panel,
+      className: Chunk265658.panel,
       children: [(0, Chunk255367.jsx)(w, {
         socket: module,
         isAverageFrameTime: exports

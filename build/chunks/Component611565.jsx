@@ -13,11 +13,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk592125 = require("./592125.js"),
   Chunk787879 = require("./787879.js"),
   Chunk370774 = require("./370774.js"),
-  Chunk94091 = require("./94091.js"),
-  Chunk616257 = require("./616257.js");
+  Chunk70120 = require("./70120.js"),
+  Chunk881291 = require("./881291.js");
 let p = [{
     key: "channelName",
-    cellClassName: l()(Chunk94091.cell, Chunk94091.channelName),
+    cellClassName: l()(Chunk70120.cell, Chunk70120.channelName),
     render(e) {
       let {
         channelName: t
@@ -29,7 +29,7 @@ let p = [{
     }
   }, {
     key: "channelId",
-    cellClassName: l()(Chunk94091.cell, Chunk94091.channelId),
+    cellClassName: l()(Chunk70120.cell, Chunk70120.channelId),
     render(e) {
       let {
         channelId: t
@@ -42,7 +42,7 @@ let p = [{
   }],
   b = [{
     key: "channelName",
-    cellClassName: l()(Chunk94091.cell, Chunk94091.channelName),
+    cellClassName: l()(Chunk70120.cell, Chunk70120.channelName),
     render(e) {
       let {
         channelName: t
@@ -54,7 +54,7 @@ let p = [{
     }
   }, {
     key: "loadState",
-    cellClassName: l()(Chunk94091.cell, Chunk94091.loadState),
+    cellClassName: l()(Chunk70120.cell, Chunk70120.loadState),
     render(e) {
       let {
         loadState: t
@@ -66,7 +66,7 @@ let p = [{
     }
   }, {
     key: "channelId",
-    cellClassName: l()(Chunk94091.cell, Chunk94091.channelId),
+    cellClassName: l()(Chunk70120.cell, Chunk70120.channelId),
     render(e) {
       let {
         channelId: t
@@ -105,9 +105,9 @@ function f() {
     return e[t] = null != a ? a : null, e
   }, {})), C = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getInboxMessages()), N = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getDevOverrides().navOnClick);
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk616257.panel,
+    className: Chunk881291.panel,
     children: (0, Chunk255367.jsxs)(Chunk481060.zJl, {
-      className: Chunk94091.content,
+      className: Chunk70120.content,
       children: [(0, Chunk255367.jsxs)("div", {
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
           variant: "heading-lg/semibold",

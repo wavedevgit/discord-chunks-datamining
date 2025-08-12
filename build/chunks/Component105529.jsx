@@ -13,15 +13,15 @@ var Chunk255367 = require("./255367.js"),
   Chunk234368 = require("./234368.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk808353 = require("./808353.js");
+  Chunk180799 = require("./180799.js");
 
 function m(e) {
   let {
     guildId: t,
     perk: n,
     markAsDismissed: m
-  } = e, g = u._k[n], x = async () => {
-    let e = a.Z.getSortedRoles(t).find(c.YB);
+  } = e, g = c._k[n], x = async () => {
+    let e = a.Z.getSortedRoles(t).find(u.YB);
     await s.Z.open(t, d.pNK.ROLES), null != e && await s.Z.selectRole(e.id), m(p.L.SECONDARY)
   };
   return (0, r.jsxs)("div", {

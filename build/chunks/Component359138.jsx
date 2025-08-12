@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 359138, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -10,7 +10,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk747545 = require("./747545.jsx"),
   Chunk131951 = require("./131951.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk959963 = require("./959963.js");
+  Chunk944856 = require("./944856.js");
 let u = {
   width: 387,
   height: 218
@@ -22,9 +22,9 @@ function m() {
     [n, m] = Chunk73800.useState(false),
     p = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isVideoAvailable());
   return require ? (0, Chunk255367.jsx)("div", {
-    className: Chunk959963.cameraWrapper,
+    className: Chunk944856.cameraWrapper,
     children: (0, Chunk255367.jsxs)("div", {
-      className: Chunk959963.camera,
+      className: Chunk944856.camera,
       children: [(0, Chunk255367.jsx)(module, {
         deviceId: exports,
         width: u.width,
@@ -33,7 +33,7 @@ function m() {
       }), (0, Chunk255367.jsx)(Chunk747545.S, {})]
     })
   }) : (0, Chunk255367.jsx)("div", {
-    className: Chunk959963.cameraWrapper,
+    className: Chunk944856.cameraWrapper,
     children: (0, Chunk255367.jsx)(Chunk481060.ua7, {
       text: p ? null : Chunk388032.intl.string(Chunk388032.t["8jSzSU"]),
       children: e => {

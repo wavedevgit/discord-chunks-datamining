@@ -22,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk149203 = require("./149203.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk386683 = require("./386683.js");
+  Chunk788510 = require("./788510.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -90,18 +90,18 @@ class N extends Chunk73800.PureComponent {
       case Chunk981631.wI2.FAVORITES:
         return (0, Chunk255367.jsx)(Chunk481060.vwX, {
           tag: "h5",
-          className: Chunk386683.searchHeader,
+          className: Chunk788510.searchHeader,
           children: Chunk388032.intl.string(Chunk388032.t.y3LQCA)
         });
       case Chunk981631.wI2.TRENDING_GIFS:
         return (0, Chunk255367.jsx)(Chunk481060.vwX, {
           tag: "h5",
-          className: Chunk386683.searchHeader,
+          className: Chunk788510.searchHeader,
           children: Chunk388032.intl.string(Chunk388032.t.H6zNFx)
         });
       default:
         return (0, Chunk255367.jsx)(Chunk481060.E1j, {
-          className: Chunk386683.searchBar,
+          className: Chunk788510.searchBar,
           query: module,
           onChange: this.handleChangeQuery,
           onClear: this.handleClearQuery,
@@ -118,7 +118,7 @@ class N extends Chunk73800.PureComponent {
     } = this.state, t = null;
     return null != module && (t = (0, Chunk255367.jsx)(Chunk481060.P3F, {
       onClick: this.handleClearQuery,
-      className: Chunk386683.backButton,
+      className: Chunk788510.backButton,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["13/7kZ"]),
       children: (0, Chunk255367.jsx)(Chunk481060.whL, {
         size: "md",
@@ -171,14 +171,14 @@ class N extends Chunk73800.PureComponent {
       id: Chunk149203.vO,
       role: "tabpanel",
       "aria-labelledby": Chunk149203._3,
-      className: a()(Chunk386683.container, module),
+      className: a()(Chunk788510.container, module),
       onClick: A,
       ref: exports,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk386683.header,
+        className: Chunk788510.header,
         children: this.renderHeader()
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk386683.content,
+        className: Chunk788510.content,
         children: this.renderContent()
       })]
     })

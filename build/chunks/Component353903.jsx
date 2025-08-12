@@ -11,7 +11,7 @@ var r, Chunk255367 = require("./255367.js"),
   s = require.n(Chunk392711),
   Chunk748780 = require("./748780.js"),
   Chunk692547 = require("./692547.js"),
-  Chunk194240 = require("./194240.js");
+  Chunk185215 = require("./185215.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -38,7 +38,7 @@ class p extends Chunk73800.PureComponent {
         height: module,
         backgroundColor: exports
       },
-      className: Chunk194240.gif
+      className: Chunk185215.gif
     })
   }
   constructor(...e) {
@@ -75,7 +75,7 @@ class h extends(r = Chunk73800.Component) {
       blocks: e
     } = this.state;
     return (0, Chunk255367.jsxs)(Chunk748780.Z.div, {
-      className: Chunk194240.column,
+      className: Chunk185215.column,
       style: this.getAnimatedStyle(),
       children: [module.map((e, t) => (0, i.jsx)(p, {
         height: e
@@ -133,7 +133,7 @@ class g extends Chunk73800.PureComponent {
       renderColumn: t
     } = this.props;
     return (0, Chunk255367.jsx)("div", {
-      className: Chunk194240.container,
+      className: Chunk185215.container,
       children: Array(module).fill(null).map((n, r) => t(e, r))
     })
   }

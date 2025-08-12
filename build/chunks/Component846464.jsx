@@ -1,4 +1,4 @@
-/** Chunk was on 31505 **/
+/** Chunk was on 63024 **/
 /** chunk id: 846464, original params: e,r,n (module,exports,require) **/
 require.d(exports, {
   q: () => L
@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk48175 = require("./48175.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk677163 = require("./677163.js");
+  Chunk442818 = require("./442818.js");
 
 function L(e) {
   let {
@@ -37,7 +37,7 @@ function L(e) {
   } = (0, u.JL)(), {
     isGift: b,
     claimableRewards: y
-  } = (0, p.wD)(), S = b && null != y && y.length > 0, v = (0, C.N)(i), E = (0, l.Nx)(), I = (0, s.Z)({
+  } = (0, p.wD)(), S = b && null != y && y.length > 0, v = (0, C.N)(i), E = (0, l.Nx)(), I = (0, s.ZP)({
     location: "PremiumPaymentSelect"
   });
   return (0, t.jsx)(g, {

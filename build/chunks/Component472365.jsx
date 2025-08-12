@@ -36,8 +36,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk911042 = require("./911042.js"),
-  Chunk20493 = require("./20493.js");
+  Chunk454135 = require("./454135.js"),
+  Chunk881488 = require("./881488.js");
 
 function U() {
   let {
@@ -63,16 +63,16 @@ function U() {
       },
       analyticsLocations: module
     }),
-    className: Chunk911042.experimentUpsellError,
+    className: Chunk454135.experimentUpsellError,
     children: [(0, Chunk255367.jsx)(Chunk481060.SrA, {
       size: "md",
-      className: Chunk911042.experimentUpsellIcon,
+      className: Chunk454135.experimentUpsellIcon,
       color: Chunk436774.JX.PREMIUM_TIER_2
     }), (0, Chunk255367.jsx)("span", {
-      className: Chunk911042.experimentUpsellText,
+      className: Chunk454135.experimentUpsellText,
       children: Chunk388032.intl.string(Chunk388032.t["4/W4Pz"])
     }), (0, Chunk255367.jsx)("span", {
-      className: Chunk911042.experimentGetNitro,
+      className: Chunk454135.experimentGetNitro,
       children: Chunk388032.intl.string(Chunk388032.t.b6KOkJ)
     })]
   })

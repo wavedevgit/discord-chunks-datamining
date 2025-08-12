@@ -19,7 +19,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk451478 = require("./451478.js"),
   Chunk956664 = require("./956664.js"),
   Chunk153066 = require("./153066.js"),
-  Chunk812737 = require("./812737.js");
+  Chunk228684 = require("./228684.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -114,7 +114,7 @@ class R extends Chunk73800.PureComponent {
       iconSrc: t
     } = this.props;
     return null != module.icon || null != exports ? null : (0, Chunk255367.jsx)("div", {
-      className: Chunk812737.acronym,
+      className: Chunk228684.acronym,
       children: (0, Chunk601964.gM)(module)
     })
   }
@@ -127,7 +127,7 @@ class R extends Chunk73800.PureComponent {
       badgeTooltipDelay: o
     } = this.props;
     return module ? (0, Chunk255367.jsx)(Chunk372769.Z, {
-      className: Chunk812737.guildIconBadge,
+      className: Chunk228684.guildIconBadge,
       guild: exports,
       badgeStrokeColor: require,
       tooltipColor: r,
@@ -162,10 +162,10 @@ class R extends Chunk73800.PureComponent {
       L = null != Chunk451478 ? Chunk481060.P3F : "div",
       x = (0, Chunk601964.gM)(r);
     return (0, Chunk255367.jsxs)(L, I(O({
-      className: s()(Chunk812737.icon, Chunk73800, (0, Chunk153066.l)(Chunk812737, "iconSize", Chunk442837), {
-        [null != (e = (0, Chunk153066.l)(Chunk812737, "iconActive", Chunk442837)) ? module : ""]: Chunk688642,
-        [Chunk812737.iconInactive]: !Chunk688642,
-        [Chunk812737.noIcon]: null == r.icon
+      className: s()(Chunk228684.icon, Chunk73800, (0, Chunk153066.l)(Chunk228684, "iconSize", Chunk442837), {
+        [null != (e = (0, Chunk153066.l)(Chunk228684, "iconActive", Chunk442837)) ? module : ""]: Chunk688642,
+        [Chunk228684.iconInactive]: !Chunk688642,
+        [Chunk228684.noIcon]: null == r.icon
       }),
       "aria-hidden": N,
       style: null == r.icon ? O({

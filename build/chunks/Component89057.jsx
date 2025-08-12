@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk211242 = require("./211242.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk747168 = require("./747168.js"),
+  Chunk782071 = require("./782071.js"),
   Chunk51125 = require("./51125.js"),
   Chunk47268 = require("./47268.js");
 
@@ -54,7 +54,7 @@ function E(e) {
 
 function b() {
   return (0, Chunk255367.jsx)(E, {
-    className: Chunk747168.settings
+    className: Chunk782071.settings
   })
 }
 

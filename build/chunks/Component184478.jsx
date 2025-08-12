@@ -19,33 +19,33 @@ var Chunk793030 = require("./793030.js"),
   Chunk981631 = require("./981631.js"),
   Chunk93841 = require("./93841.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk466649 = require("./466649.js");
+  Chunk382573 = require("./382573.js");
 
 function b(e) {
   let {
     guildId: t
-  } = e, n = (0, i.e7)([u.Z], () => u.Z.getGuild(t)), {
+  } = e, n = (0, i.e7)([c.Z], () => c.Z.getGuild(t)), {
     available: b,
     spent: j,
     total: h
   } = (0, p.Z)(t);
   if (null != n) return (0, r.jsxs)("div", {
-    className: v.container,
+    className: _.container,
     children: [(0, r.jsxs)("div", {
-      className: v.headerContainer,
+      className: _.headerContainer,
       children: [(0, r.jsx)(o.xv, {
         variant: "eyebrow",
         color: "text-secondary",
-        children: _.intl.string(x.default.hjvcLC)
+        children: v.intl.string(x.default.hjvcLC)
       }), (0, r.jsx)(o.xv, {
-        className: v.learnMore,
+        className: _.learnMore,
         variant: "text-xs/semibold",
-        children: _.intl.format(x.default.fXE30d, {
+        children: v.intl.format(x.default.fXE30d, {
           helpDeskArticle: d.Z.getArticleURL(g.BhN.GUILD_BOOSTING_FAQ)
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: v.contentContainer,
+      className: _.contentContainer,
       children: [(0, r.jsx)(m.Z, {
         count: b,
         type: m.b.AVAILABLE
@@ -57,7 +57,7 @@ function b(e) {
         type: m.b.TOTAL
       })]
     }), (0, r.jsx)(a.Z, {
-      className: v.boostButton,
+      className: _.boostButton,
       guild: n,
       analyticsLocation: {
         page: g.ZY5.GUILD_POWERUPS_OVERVIEW,
@@ -65,9 +65,9 @@ function b(e) {
       },
       color: l.Tt.CUSTOM,
       size: l.Ph.LARGE,
-      intent: c.P.NONE,
+      intent: u.P.NONE,
       icon: (0, r.jsx)(s.$Eu, {
-        className: v.boostButtonIcon,
+        className: _.boostButtonIcon,
         size: "sm",
         color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
       })

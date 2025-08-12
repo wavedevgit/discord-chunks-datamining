@@ -9,7 +9,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk565138 = require("./565138.jsx"),
   Chunk430824 = require("./430824.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk680006 = require("./680006.js");
+  Chunk936155 = require("./936155.js");
 let c = e => {
   let {
     stageInstance: t

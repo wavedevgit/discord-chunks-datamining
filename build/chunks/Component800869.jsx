@@ -9,7 +9,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk921944 = require("./921944.js"),
   Chunk93841 = require("./93841.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk305063 = require("./305063.js"),
+  Chunk820222 = require("./820222.js"),
   Chunk719119 = require("./719119.js");
 
 function d(e) {
@@ -17,11 +17,11 @@ function d(e) {
     markAsDismissed: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: c.container,
+    className: u.container,
     children: [(0, r.jsx)("img", {
       alt: "",
-      className: c.image,
-      src: u
+      className: u.image,
+      src: c
     }), (0, r.jsx)(o.xv, {
       color: "always-white",
       variant: "text-md/semibold",
@@ -31,8 +31,8 @@ function d(e) {
       variant: "text-sm/medium",
       children: a.intl.string(s.default.pycxTk)
     }), (0, r.jsx)(i.olH, {
-      className: c.close,
-      innerClassName: c.innerClose,
+      className: u.close,
+      innerClassName: u.innerClose,
       onClick: () => {
         t(l.L.USER_DISMISS)
       }

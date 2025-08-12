@@ -27,7 +27,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk93841 = require("./93841.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk302794 = require("./302794.js"),
+  Chunk860834 = require("./860834.js"),
   Chunk350618 = require("./350618.js");
 let N = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk99690.Z;
 
@@ -38,14 +38,14 @@ function Z(e) {
   } = e, d = (0, s.e7)([j.Z], () => j.Z.getGuild(o)), C = (0, s.e7)([b.Z], () => b.Z.getSortedRoles(o).find(e => {
     var t;
     return (null == (t = e.tags) ? true : t.premium_subscriber) === null
-  })), Z = (0, s.e7)([h.default], () => h.default.getCurrentUser()), S = null == Z ? true : Z.id, T = (0, s.e7)([v.ZP], () => null != S ? v.ZP.getMember(o, S) : true, [S, o]), A = (null == T ? true : T.premiumSince) != null, R = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
+  })), Z = (0, s.e7)([h.default], () => h.default.getCurrentUser()), S = null == Z ? true : Z.id, T = (0, s.e7)([_.ZP], () => null != S ? _.ZP.getMember(o, S) : true, [S, o]), A = (null == T ? true : T.premiumSince) != null, R = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
     avatarDecorationSrc: k,
     avatarSrc: L,
     eventHandlers: D
-  } = (0, _.Z)({
+  } = (0, v.Z)({
     userId: null == Z ? true : Z.id,
     guildId: o,
-    size: u.EFr.SIZE_40,
+    size: c.EFr.SIZE_40,
     animateOnHover: !R
   });
   return null == d || null == T || null == Z ? null : (0, r.jsxs)(a.$, {
@@ -95,7 +95,7 @@ function Z(e) {
         user: Z,
         src: L,
         avatarDecoration: k,
-        size: u.EFr.SIZE_40,
+        size: c.EFr.SIZE_40,
         "aria-hidden": true,
         animate: true
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -108,7 +108,7 @@ function Z(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)),
-      username: (0, r.jsx)(u.PUh, {
+      username: (0, r.jsx)(c.PUh, {
         variant: "text-md/semibold",
         name: E.ZP.getName(o, null, Z),
         colorString: C.colorString,
@@ -116,8 +116,8 @@ function Z(e) {
       }),
       className: i()(P.content, P.exampleMessage),
       message: y.intl.string(y.t["6OSasb"]),
-      decorations: (0, r.jsx)(u.$Eu, {
-        color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
+      decorations: (0, r.jsx)(c.$Eu, {
+        color: c.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
         className: P.boostIcon
       })
     }), (0, r.jsx)(m.Z, {
@@ -127,11 +127,11 @@ function Z(e) {
         page: I.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: I.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
-      color: c.Tt.BRAND,
-      size: c.Ph.MEDIUM,
+      color: u.Tt.BRAND,
+      size: u.Ph.MEDIUM,
       intent: g.P.NONE,
       fullWidth: true,
-      icon: (0, r.jsx)(u.$Eu, {
+      icon: (0, r.jsx)(c.$Eu, {
         color: "currentColor",
         size: "sm"
       })

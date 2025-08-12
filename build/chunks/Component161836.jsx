@@ -7,23 +7,23 @@ var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk248999 = require("./248999.js");
+  Chunk130774 = require("./130774.js");
 let s = () => (0, Chunk255367.jsxs)("div", {
-  className: Chunk248999.container,
+  className: Chunk130774.container,
   children: [(0, Chunk255367.jsx)("div", {
-    className: Chunk248999.iconContainer,
+    className: Chunk130774.iconContainer,
     children: (0, Chunk255367.jsx)("div", {
-      className: Chunk248999.icon
+      className: Chunk130774.icon
     })
   }), (0, Chunk255367.jsx)(Chunk481060.Text, {
     color: "header-primary",
     variant: "text-lg/semibold",
-    className: Chunk248999.header,
+    className: Chunk130774.header,
     children: Chunk388032.intl.string(Chunk388032.t.PAnzbW)
   }), (0, Chunk255367.jsx)(Chunk481060.Text, {
     color: "header-secondary",
     variant: "text-sm/normal",
-    className: Chunk248999.description,
+    className: Chunk130774.description,
     children: Chunk388032.intl.format(Chunk388032.t["8Kp48/"], {})
   })]
 })

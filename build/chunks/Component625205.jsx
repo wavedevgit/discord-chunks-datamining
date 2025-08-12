@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 625205, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -17,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk494620 = require("./494620.jsx"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk209782 = require("./209782.js");
+  Chunk404773 = require("./404773.js");
 let x = Chunk358085.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
 
 function _() {
@@ -78,11 +78,11 @@ function _() {
     }, s)
   }
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk209782.devices,
+    className: Chunk404773.devices,
     children: [(0, Chunk255367.jsxs)("div", {
-      className: Chunk209782.deviceColumns,
+      className: Chunk404773.deviceColumns,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk209782.column,
+        className: Chunk404773.column,
         children: (0, Chunk255367.jsx)(Chunk481060.xJW, {
           title: Chunk388032.intl.string(Chunk388032.t.hHMYbW),
           children: (0, Chunk255367.jsx)(Chunk670863.j, {
@@ -94,7 +94,7 @@ function _() {
           })
         })
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk209782.column,
+        className: Chunk404773.column,
         children: (0, Chunk255367.jsx)(Chunk481060.xJW, {
           title: Chunk388032.intl.string(Chunk388032.t.dl18zc),
           children: (0, Chunk255367.jsx)(Chunk670863.j, {

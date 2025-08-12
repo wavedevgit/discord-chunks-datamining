@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 715495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk711325 = require("./711325.jsx"),
   Chunk852630 = require("./852630.jsx"),
   Chunk731994 = require("./731994.js"),
-  Chunk396921 = require("./396921.js");
+  Chunk619911 = require("./619911.js");
 
 function _(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -99,9 +99,9 @@ function E() {
     null != y.current && (document.removeEventListener("mousemove", y.current), y.current = null), null != A.current && (document.removeEventListener("mouseup", A.current), A.current = null)
   }, []), (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
     children: [(0, Chunk255367.jsxs)("div", {
-      className: Chunk396921.controls,
+      className: Chunk619911.controls,
       children: [(0, Chunk255367.jsxs)("div", {
-        className: Chunk396921.toggles,
+        className: Chunk619911.toggles,
         children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
           size: "sm",
           onClick: () => {
@@ -118,7 +118,7 @@ function E() {
           text: "Toggle Gradients"
         })]
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk396921.themePicker,
+        className: Chunk619911.themePicker,
         children: [exports && (0, Chunk255367.jsx)(Chunk329013.i, {}), Chunk442837 && (0, Chunk255367.jsx)(Chunk711325.Z, {
           selected: null == Chunk594174 || null == (e = Chunk594174.palette) ? true : module.name,
           onSelect: e => {
@@ -127,10 +127,10 @@ function E() {
         })]
       })]
     }), (0, Chunk255367.jsxs)("div", {
-      className: Chunk396921.main,
+      className: Chunk619911.main,
       children: [(0, Chunk255367.jsxs)("div", {
         ref: N,
-        className: Chunk396921.previews,
+        className: Chunk619911.previews,
         style: {
           width: "".concat(Chunk852630, "px")
         },
@@ -150,11 +150,11 @@ function E() {
         }), (0, Chunk255367.jsx)(I, {
           nameplate: Chunk594174
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk396921.resizeHandle,
+          className: Chunk619911.resizeHandle,
           onMouseDown: B
         })]
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk396921.buttons,
+        className: Chunk619911.buttons,
         children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
           children: "Drag background image to screen"
@@ -169,7 +169,7 @@ function E() {
             Z(t, t, (0, p.xh)(i)), R(t, t, m.jD)
           }
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk396921.uploadedArea,
+          className: Chunk619911.uploadedArea,
           children: Object.values(P).map(e => {
             let {
               url: t

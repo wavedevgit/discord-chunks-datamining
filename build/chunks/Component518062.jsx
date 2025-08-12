@@ -1,7 +1,7 @@
-/** Chunk was on 75708 **/
-/** chunk id: 518062, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 49289 **/
+/** chunk id: 518062, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => _
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -11,36 +11,36 @@ var Chunk442837 = require("./442837.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk122890 = require("./122890.js"),
   Chunk110818 = require("./110818.jsx"),
-  Chunk523726 = require("./523726.js");
+  Chunk567440 = require("./567440.js");
 
-function u(e) {
+function _(e) {
   let {
-    purchaseState: t,
-    currentStep: n,
-    onClose: u
-  } = e, [m, p] = (0, o.z)({
-    purchaseState: t,
-    currentStep: n,
-    initialScene: c.fe.Scenes.ENTRY,
-    purchaseScene: c.fe.Scenes.STARS,
-    errorScene: c.fe.Scenes.ERROR,
-    successScene: c.fe.Scenes.SUCCESS
-  }), g = (0, r.e7)([a.Z], () => a.Z.useReducedMotion);
-  return (0, i.jsxs)(s.xBx, {
+    purchaseState: n,
+    currentStep: t,
+    onClose: _
+  } = e, [u, d] = (0, c.z)({
+    purchaseState: n,
+    currentStep: t,
+    initialScene: s.fe.Scenes.ENTRY,
+    purchaseScene: s.fe.Scenes.STARS,
+    errorScene: s.fe.Scenes.ERROR,
+    successScene: s.fe.Scenes.SUCCESS
+  }), f = (0, r.e7)([a.Z], () => a.Z.useReducedMotion);
+  return (0, o.jsxs)(i.xBx, {
     align: l.Z.Align.START,
-    className: d.header,
+    className: p.header,
     separator: false,
-    children: [(0, i.jsx)(c.fe, {
-      className: d.animation,
-      nextScene: m,
-      onScenePlay: e => p(c.fe.getNextScene(e)),
+    children: [(0, o.jsx)(s.fe, {
+      className: p.animation,
+      nextScene: u,
+      onScenePlay: e => d(s.fe.getNextScene(e)),
       pauseWhileUnfocused: false,
-      pause: g
-    }), (0, i.jsx)("div", {
-      className: d.headerTitle
-    }), (0, i.jsx)(s.olH, {
-      onClick: u,
-      className: d.closeButton
+      pause: f
+    }), (0, o.jsx)("div", {
+      className: p.headerTitle
+    }), (0, o.jsx)(i.olH, {
+      onClick: _,
+      className: p.closeButton
     })]
   })
 }

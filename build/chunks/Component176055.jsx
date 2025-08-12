@@ -25,7 +25,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk843445 = require("./843445.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk629811 = require("./629811.js");
+  Chunk575602 = require("./575602.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -42,19 +42,19 @@ class T extends Chunk73800.PureComponent {
       approximatePresenceCount: t
     } = this.props.guild;
     return null == module || null == exports ? null : (0, Chunk255367.jsxs)(Chunk600164.Z, {
-      className: Chunk629811.memberInfo,
+      className: Chunk575602.memberInfo,
       align: Chunk600164.Z.Align.CENTER,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk629811.dotOnline
+        className: Chunk575602.dotOnline
       }), (0, Chunk255367.jsx)("span", {
-        className: Chunk629811.memberText,
+        className: Chunk575602.memberText,
         children: Chunk388032.intl.format(Chunk388032.t["LC+S+v"], {
           membersOnline: exports
         })
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk629811.dotOffline
+        className: Chunk575602.dotOffline
       }), (0, Chunk255367.jsx)("span", {
-        className: Chunk629811.memberText,
+        className: Chunk575602.memberText,
         children: Chunk388032.intl.format(Chunk388032.t.zRl6XV, {
           count: module
         })
@@ -77,38 +77,38 @@ class T extends Chunk73800.PureComponent {
       f = this.handleJoinOrView,
       b = Chunk755721.zx.Looks.FILLED,
       _ = Chunk755721.zx.Colors.PRIMARY;
-    return Chunk120356 ? require ? (b = Chunk755721.zx.Looks.OUTLINED, _ = Chunk629811.buttonColorInGuild, p = (0, Chunk255367.jsxs)(Chunk600164.Z, {
+    return Chunk120356 ? require ? (b = Chunk755721.zx.Looks.OUTLINED, _ = Chunk575602.buttonColorInGuild, p = (0, Chunk255367.jsxs)(Chunk600164.Z, {
       align: Chunk600164.Z.Align.CENTER,
       children: [(0, Chunk255367.jsx)("div", {
         children: Chunk388032.intl.string(Chunk388032.t.cEnaW1)
       }), (0, Chunk255367.jsx)(Chunk481060.dz2, {
         size: "md",
         color: "currentColor",
-        className: Chunk629811.joinedCheckmark
+        className: Chunk575602.joinedCheckmark
       })]
     })) : Chunk73800 && exports && (p = Chunk388032.intl.string(Chunk388032.t.XpeFYm)) : (p = Chunk388032.intl.string(Chunk388032.t.dKhVQE), f = this.handleLogin), (0, Chunk255367.jsxs)("div", {
-      className: a()(Chunk593473, Chunk442837 === Chunk843445.b.SMALL ? Chunk629811.inviteSmall : Chunk629811.inviteLarge),
+      className: a()(Chunk593473, Chunk442837 === Chunk843445.b.SMALL ? Chunk575602.inviteSmall : Chunk575602.inviteLarge),
       children: [(0, Chunk255367.jsx)(Chunk770146.Z, {
         children: Chunk388032.intl.string(Chunk388032.t.s1KcLi)
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk629811.content,
+        className: Chunk575602.content,
         children: [(0, Chunk255367.jsxs)("div", {
-          className: Chunk629811.info,
+          className: Chunk575602.info,
           children: [(0, Chunk255367.jsx)(Chunk565138.Z, {
             guild: Chunk749210,
             active: true,
             size: Chunk565138.Z.Sizes.LARGE,
-            className: Chunk629811.guildIcon
+            className: Chunk575602.guildIcon
           }), (0, Chunk255367.jsxs)("div", {
-            className: Chunk629811.infoText,
+            className: Chunk575602.infoText,
             children: [(0, Chunk255367.jsx)("div", {
-              className: Chunk629811.name,
+              className: Chunk575602.name,
               children: module.name
             }), this.renderMemberInfo()]
           })]
         }), (0, Chunk255367.jsx)(Chunk755721.zx, {
           size: Chunk755721.zx.Sizes.SMALL,
-          className: Chunk629811.actionButton,
+          className: Chunk575602.actionButton,
           fullWidth: true,
           color: Chunk703656,
           look: Chunk41776,

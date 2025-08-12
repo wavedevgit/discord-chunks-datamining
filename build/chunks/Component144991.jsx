@@ -1,4 +1,4 @@
-/** Chunk was on 13616 **/
+/** Chunk was on 8725 **/
 /** chunk id: 144991, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -14,8 +14,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk996987 = require("./996987.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk326946 = require("./326946.js"),
-  Chunk20493 = require("./20493.js");
+  Chunk151584 = require("./151584.js"),
+  Chunk881488 = require("./881488.js");
 class f extends Chunk73800.PureComponent {
   getOverwriteValue(e) {
     let {
@@ -131,13 +131,13 @@ class f extends Chunk73800.PureComponent {
       children: (0, Chunk255367.jsxs)(Chunk481060.y5t, {
         component: (0, Chunk255367.jsx)(Chunk481060.vwX, {
           tag: Chunk481060.RB0.H5,
-          className: null != module.description ? Chunk20493.marginBottom8 : Chunk20493.marginBottom20,
+          className: null != module.description ? Chunk881488.marginBottom8 : Chunk881488.marginBottom20,
           children: module.title
         }),
         children: [null != module.description && (0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          className: Chunk20493.marginBottom20,
+          className: Chunk881488.marginBottom20,
           children: module.description
         }), module.permissions.map(this.renderComponent, this)]
       })

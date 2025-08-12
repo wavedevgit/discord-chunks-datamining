@@ -25,11 +25,11 @@ var Chunk120356 = require("./120356.js"),
   Chunk65154 = require("./65154.js"),
   Chunk676462 = require("./676462.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk326879 = require("./326879.js");
+  Chunk473866 = require("./473866.js");
 
 function O() {
   return (0, Chunk255367.jsx)("span", {
-    className: Chunk326879.ellipsis,
+    className: Chunk473866.ellipsis,
     children: "•"
   })
 }

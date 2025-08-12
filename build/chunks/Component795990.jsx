@@ -1,4 +1,4 @@
-/** Chunk was on 11776 **/
+/** Chunk was on 29458 **/
 /** chunk id: 795990, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -12,7 +12,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk86419 = require("./86419.js"),
   Chunk247397 = require("./247397.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk436860 = require("./436860.js");
+  Chunk949237 = require("./949237.js");
 
 function p(e) {
   let {
@@ -118,9 +118,9 @@ function b(e) {
 
 function j() {
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk436860.empty,
+    className: Chunk949237.empty,
     children: [(0, Chunk255367.jsxs)("div", {
-      className: Chunk436860.textContainer,
+      className: Chunk949237.textContainer,
       children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
         variant: "heading-md/medium",
         color: "header-primary",
@@ -131,7 +131,7 @@ function j() {
         children: Chunk388032.intl.string(Chunk388032.t.O9SQ1d)
       })]
     }), (0, Chunk255367.jsx)("ul", {
-      className: Chunk436860.widgetGrid,
+      className: Chunk949237.widgetGrid,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["+EIBSE"]),
       children: Chunk247397.r.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(b, {

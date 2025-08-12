@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 554042, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk210887 = require("./210887.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk560030 = require("./560030.js");
+  Chunk775607 = require("./775607.js");
 let _ = [{
   label: "Latin alphabet",
   value: "aBcDeFgHiJkLmNoPqRsTuVwXyZ"
@@ -85,7 +85,7 @@ function j() {
     children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H1,
       children: [(0, Chunk255367.jsxs)("div", {
-        className: Chunk560030.toolbar,
+        className: Chunk775607.toolbar,
         children: [(0, Chunk255367.jsxs)("div", {
           children: [(0, Chunk255367.jsxs)(Chunk481060.Text, {
             tag: "div",
@@ -106,14 +106,14 @@ function j() {
           }) : null]
         }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
           children: (0, Chunk255367.jsx)(Chunk481060.q4e, {
-            className: Chunk560030.select,
+            className: Chunk775607.select,
             options: _,
             onChange: e => A(e),
             value: N
           })
         }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
           children: (0, Chunk255367.jsx)("div", {
-            className: Chunk560030.input,
+            className: Chunk775607.input,
             children: (0, Chunk255367.jsx)(Chunk481060.oil, {
               placeholder: "Enter custom input...",
               value: null != T ? T : "",
@@ -122,11 +122,11 @@ function j() {
           })
         })]
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk560030.toolbar,
+        className: Chunk775607.toolbar,
         children: [(0, Chunk255367.jsx)(Chunk481060.xJW, {
           children: (0, Chunk255367.jsx)(Chunk481060.FXm, {
             withTransparentBackground: true,
-            className: Chunk560030.theme,
+            className: Chunk775607.theme,
             orientation: "horizontal",
             options: [{
               name: Chunk388032.intl.string(Chunk388032.t.b8Cei4),
@@ -145,7 +145,7 @@ function j() {
         }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
           children: (0, Chunk255367.jsx)(Chunk481060.FXm, {
             withTransparentBackground: true,
-            className: Chunk560030.theme,
+            className: Chunk775607.theme,
             orientation: "horizontal",
             options: [{
               name: "Upright",
@@ -164,7 +164,7 @@ function j() {
           })
         })]
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk560030.textGrid,
+        className: Chunk775607.textGrid,
         children: [(0, Chunk255367.jsx)("div", {}), C.map(e => (0, i.jsx)("div", {
           className: x.columnHeading,
           children: (0, i.jsx)(o.X6q, {

@@ -45,7 +45,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk87671 = require("./87671.js"),
+  Chunk203336 = require("./203336.js"),
   Chunk13299 = require("./13299.js"),
   Chunk606199 = require("./606199.js"),
   Chunk164792 = require("./164792.js");
@@ -153,7 +153,7 @@ let X = function() {
       onAssetLoadComplete: Chunk451478
     },
     children: (0, Chunk255367.jsx)("div", {
-      className: Chunk87671.container,
+      className: Chunk203336.container,
       children: Chunk672188 ? (0, Chunk255367.jsx)(Chunk466962.t.Provider, {
         value: Q,
         children: (0, Chunk255367.jsxs)(Chunk283293.Z, {
@@ -187,7 +187,7 @@ let X = function() {
               }), (0, Chunk255367.jsx)(Chunk755721.zx, {
                 look: Chunk755721.iL.LINK,
                 color: Chunk755721.Tt.CUSTOM,
-                className: Chunk87671.orbsTermsButton,
+                className: Chunk203336.orbsTermsButton,
                 onClick: Chunk606199,
                 children: Chunk388032.intl.string(Chunk388032.t["7kTAgI"])
               })]
@@ -198,12 +198,12 @@ let X = function() {
               icon: Chunk481060.Gr1,
               iconPosition: "end"
             }),
-            className: a()(Chunk87671.bannerContainer, {
-              [Chunk87671.orbsContainer]: Chunk672188
+            className: a()(Chunk203336.bannerContainer, {
+              [Chunk203336.orbsContainer]: Chunk672188
             }),
             children: [(0, Chunk255367.jsx)("div", {
-              className: a()(Chunk87671.bannerGradient, {
-                [Chunk87671.orbsGradient]: Chunk672188
+              className: a()(Chunk203336.bannerGradient, {
+                [Chunk203336.orbsGradient]: Chunk672188
               })
             }), (0, Chunk255367.jsx)(q, {
               onLoadComplete: Chunk451478
@@ -218,7 +218,7 @@ let X = function() {
         children: [(0, Chunk255367.jsxs)(Chunk611928.ZP, {
           variant: Chunk611928._6.OVERLAY,
           children: [(0, Chunk255367.jsx)("div", {
-            className: Chunk87671.dragRegion
+            className: Chunk203336.dragRegion
           }), (0, Chunk255367.jsx)(Chunk611928.z6, {
             scrollPosition: Chunk442837
           }), (0, Chunk255367.jsx)(Chunk611928.aV, {
@@ -239,19 +239,19 @@ let X = function() {
                 icon: Chunk481060.Gr1,
                 iconPosition: "end"
               }),
-              className: a()(Chunk87671.bannerContainer, {
-                [Chunk87671.orbsContainer]: Chunk672188
+              className: a()(Chunk203336.bannerContainer, {
+                [Chunk203336.orbsContainer]: Chunk672188
               }),
               children: [(0, Chunk255367.jsx)("div", {
-                className: a()(Chunk87671.bannerGradient, {
-                  [Chunk87671.orbsGradient]: Chunk672188
+                className: a()(Chunk203336.bannerGradient, {
+                  [Chunk203336.orbsGradient]: Chunk672188
                 })
               }), (0, Chunk255367.jsx)(q, {
                 onLoadComplete: Chunk451478
               })]
             }), (0, Chunk255367.jsxs)(Chunk374939.Z, {
               children: [(0, Chunk255367.jsx)("div", {
-                className: Chunk87671.tabs,
+                className: Chunk203336.tabs,
                 children: (0, Chunk255367.jsx)(Chunk233374.Z, {
                   tabs: require,
                   selectedTab: module,

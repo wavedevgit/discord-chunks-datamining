@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 14676, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -10,14 +10,14 @@ var Chunk481060 = require("./481060.js"),
   Chunk703656 = require("./703656.js"),
   Chunk272008 = require("./272008.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk283294 = require("./283294.js");
+  Chunk114311 = require("./114311.js");
 let d = function() {
   return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
     children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "Quest Minor Reward Capping Config"
     }), (0, Chunk255367.jsxs)("div", {
-      className: Chunk283294.container,
+      className: Chunk114311.container,
       children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-feedback-info",

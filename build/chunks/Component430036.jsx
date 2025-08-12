@@ -56,7 +56,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk763917 = require("./763917.js");
+  Chunk893157 = require("./893157.js");
 
 function ei(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -315,10 +315,10 @@ class ec extends Chunk73800.PureComponent {
       channelId: exports.id
     }) : (0, Chunk255367.jsx)(Chunk400023.Z, {
       channel: exports,
-      className: Chunk763917.messages,
+      className: Chunk893157.messages,
       forceCompact: Chunk239091,
       showNewMessagesBar: !Chunk144144,
-      scrollerClassName: Chunk239091 ? Chunk763917.scroller : true,
+      scrollerClassName: Chunk239091 ? Chunk893157.scroller : true,
       showingQuarantineBanner: false
     }, exports.id), (0, Chunk255367.jsx)(Chunk249458.G.Provider, {
       value: {
@@ -332,9 +332,9 @@ class ec extends Chunk73800.PureComponent {
         }), (0, Chunk255367.jsx)(Chunk518084.ZP.Background, {
           opacityOverride: a || Chunk430742 ? null : es,
           children: (0, Chunk255367.jsx)("div", {
-            className: l()(Chunk763917.messagesContainer, {
-              [Chunk763917.isDragging]: Chunk904245,
-              [Chunk763917.disableHoverStates]: Chunk239091 && a && !Chunk442837
+            className: l()(Chunk893157.messagesContainer, {
+              [Chunk893157.isDragging]: Chunk904245,
+              [Chunk893157.disableHoverStates]: Chunk239091 && a && !Chunk442837
             }),
             children: module
           })
@@ -342,27 +342,27 @@ class ec extends Chunk73800.PureComponent {
           children: Chunk655687 ? (0, Chunk255367.jsx)(Chunk518084.ZP.Background, {
             opacityOverride: a || Chunk430742 ? null : es,
             children: (0, Chunk255367.jsxs)("div", {
-              className: Chunk763917.footerContent,
+              className: Chunk893157.footerContent,
               children: [(0, Chunk255367.jsx)(ea, {
                 channel: exports,
                 placeholder: require,
                 isTemporarilyActive: Chunk442837,
                 pendingReply: Chunk13245
               }), (0, Chunk255367.jsx)("div", {
-                className: Chunk763917.typingWrapper,
+                className: Chunk893157.typingWrapper,
                 children: (0, Chunk255367.jsx)(Chunk738619.ZP, {
                   channel: exports,
-                  className: Chunk763917.typing,
+                  className: Chunk893157.typing,
                   isInTextChannel: true
                 })
               })]
             })
           }) : (0, Chunk255367.jsx)("div", {
-            className: Chunk763917.activateContainer,
+            className: Chunk893157.activateContainer,
             children: (0, Chunk255367.jsx)(Chunk518084.ZP.Background, {
               opacityOverride: Chunk987650.wF.LOWER,
               children: (0, Chunk255367.jsx)("div", {
-                className: l()(Chunk763917.activateKeybind, Chunk763917.__invalid_mediumBackgroundOpacity),
+                className: l()(Chunk893157.activateKeybind, Chunk893157.__invalid_mediumBackgroundOpacity),
                 children: null != exports.name && exports.name.length > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["9TkYMD"], {
                   keybind: Chunk481060,
                   channelName: exports.isMultiUserDM() ? exports.name : "#".concat(exports.name)
@@ -427,8 +427,8 @@ class ec extends Chunk73800.PureComponent {
     if (null == exports || !this.shouldDisplay()) return null;
     let s = (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
       children: [(0, Chunk255367.jsx)(Chunk786906.Z, {
-        draggableClassName: Chunk763917.draggableStartArea,
-        className: Chunk763917.headerDefault,
+        draggableClassName: Chunk893157.draggableStartArea,
+        className: Chunk893157.headerDefault,
         channel: exports,
         locked: module,
         pinned: require,
@@ -438,7 +438,7 @@ class ec extends Chunk73800.PureComponent {
         onContextMenu: this.handleContextMenu,
         onMouseDown: this.moveDragStart
       }), this.renderContent(), module || Chunk120356 ? null : (0, Chunk255367.jsx)("div", {
-        className: Chunk763917.resizeIcon,
+        className: Chunk893157.resizeIcon,
         onMouseDown: this.resizeDragStart
       })]
     });
@@ -463,7 +463,7 @@ class ec extends Chunk73800.PureComponent {
       null != t && null != r && (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("45903")]).then(n.bind(n, 131404));
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("39544")]).then(n.bind(n, 131404));
         return n => (0, i.jsx)(e, eo(er({}, n), {
           user: r,
           channelSelected: true,

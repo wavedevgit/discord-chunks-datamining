@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk621600 = require("./621600.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk529651 = require("./529651.js");
+  Chunk941498 = require("./941498.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -86,18 +86,18 @@ class N extends Chunk73800.PureComponent {
     }) : Chunk388032.intl.string(Chunk388032.t.uIzfCA);
     return (0, Chunk255367.jsxs)(Chunk600164.Z, {
       grow: 1,
-      className: Chunk529651.nameContainer,
+      className: Chunk941498.nameContainer,
       children: [null != Chunk73800 ? (0, Chunk255367.jsx)(Chunk73800, {
-        className: Chunk529651.icon
+        className: Chunk941498.icon
       }) : null, (0, Chunk255367.jsxs)("div", {
-        className: Chunk529651.channelNameContainer,
+        className: Chunk941498.channelNameContainer,
         children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
-          className: Chunk529651.channelName,
+          className: Chunk941498.channelName,
           children: (0, Chunk933557.F6)(require, Chunk594174.default, Chunk699516.Z)
         }), (0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-xs/normal",
-          className: Chunk529651.channelNameByline,
+          className: Chunk941498.channelNameByline,
           children: exports
         })]
       })]
@@ -111,32 +111,32 @@ class N extends Chunk73800.PureComponent {
     return (0, Chunk255367.jsxs)(Chunk600164.Z, {
       grow: 0,
       shrink: 0,
-      className: Chunk529651.checkboxGroup,
+      className: Chunk941498.checkboxGroup,
       justify: Chunk600164.Z.Justify.AROUND,
       align: Chunk600164.Z.Align.CENTER,
       children: [(0, Chunk255367.jsx)(Chunk600164.Z.Child, {
         wrap: true,
         grow: 0,
         shrink: 0,
-        className: exports ? Chunk529651.checkboxContainerMuted : Chunk529651.checkboxContainer,
+        className: exports ? Chunk941498.checkboxContainerMuted : Chunk941498.checkboxContainer,
         children: this.renderMessageNotificationsRadioOption(Chunk981631.bL.ALL_MESSAGES)
       }), (0, Chunk255367.jsx)(Chunk600164.Z.Child, {
         wrap: true,
         grow: 0,
         shrink: 0,
-        className: exports ? Chunk529651.checkboxContainerMuted : Chunk529651.checkboxContainer,
+        className: exports ? Chunk941498.checkboxContainerMuted : Chunk941498.checkboxContainer,
         children: this.renderMessageNotificationsRadioOption(Chunk981631.bL.ONLY_MENTIONS)
       }), (0, Chunk255367.jsx)(Chunk600164.Z.Child, {
         wrap: true,
         grow: 0,
         shrink: 0,
-        className: exports ? Chunk529651.checkboxContainerMuted : Chunk529651.checkboxContainer,
+        className: exports ? Chunk941498.checkboxContainerMuted : Chunk941498.checkboxContainer,
         children: this.renderMessageNotificationsRadioOption(Chunk981631.bL.NO_MESSAGES)
       }), (0, Chunk255367.jsx)(Chunk600164.Z.Child, {
         wrap: true,
         grow: 0,
         shrink: 0,
-        className: Chunk529651.checkboxMute,
+        className: Chunk941498.checkboxMute,
         children: (0, Chunk255367.jsx)(Chunk481060.XZJ, {
           value: module,
           shape: Chunk481060.XZJ.Shapes.BOX,
@@ -154,9 +154,9 @@ class N extends Chunk73800.PureComponent {
       ref: this.contentDomRef,
       outline: true,
       editable: true,
-      className: module ? Chunk529651.overrideHighlight : Chunk529651.override,
+      className: module ? Chunk941498.overrideHighlight : Chunk941498.override,
       children: [this.renderName(), this.renderOptions(), (0, Chunk255367.jsx)(Chunk225433.Z, {
-        className: Chunk529651.removeOverride,
+        className: Chunk941498.removeOverride,
         onClick: this.handleDelete
       })]
     })

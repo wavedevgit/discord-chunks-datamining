@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 612226, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q2: () => V,
@@ -28,7 +28,7 @@ var i, Chunk2818 = require("./2818.js"),
   Chunk777019 = require("./777019.js"),
   Chunk523147 = require("./523147.js"),
   Chunk400332 = require("./400332.js"),
-  Chunk908552 = require("./908552.js"),
+  Chunk510761 = require("./510761.js"),
   Chunk189509 = require("./189509.js"),
   Chunk673553 = require("./673553.js"),
   Chunk280492 = require("./280492.js"),
@@ -84,8 +84,8 @@ function H() {
   })
 }
 let z = {
-  [Chunk981631.EkH.SERVER_NEXT]: Chunk908552.nq,
-  [Chunk981631.EkH.SERVER_PREV]: Chunk908552.X3,
+  [Chunk981631.EkH.SERVER_NEXT]: Chunk510761.nq,
+  [Chunk981631.EkH.SERVER_PREV]: Chunk510761.X3,
   [Chunk981631.EkH.CHANNEL_NEXT]: Chunk185514.tQ,
   [Chunk981631.EkH.CHANNEL_PREV]: Chunk185514.x5,
   [Chunk981631.EkH.NAVIGATE_BACK]: Chunk185514.Nx,

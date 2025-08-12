@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk435064 = require("./435064.js"),
-  Chunk892983 = require("./892983.js");
+  Chunk771737 = require("./771737.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,11 +59,11 @@ function p() {
     return null == exports ? [] : Chunk435064.Z.getClips().slice(0, _).filter(e => t.includes(e.id))
   });
   return (0, Chunk255367.jsx)("div", {
-    className: o()(Chunk892983.thumbnailStack, {
-      [Chunk892983["height-1"]]: 1 === module.length,
-      [Chunk892983["height-2"]]: 2 === module.length,
-      [Chunk892983["height-3"]]: 3 === module.length,
-      [Chunk892983["height-max"]]: module.length >= 4
+    className: o()(Chunk771737.thumbnailStack, {
+      [Chunk771737["height-1"]]: 1 === module.length,
+      [Chunk771737["height-2"]]: 2 === module.length,
+      [Chunk771737["height-3"]]: 3 === module.length,
+      [Chunk771737["height-max"]]: module.length >= 4
     }),
     children: Array.from(f(u({}, module), {
       length: _

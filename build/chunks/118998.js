@@ -1,9 +1,9 @@
-/** Chunk was on 56236 **/
+/** Chunk was on 96492 **/
 /** chunk id: 118998, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  H: () => i
+  H: () => l
 });
-let i = e => {
+let l = e => {
   let {
     guildId: n,
     guildEventId: t

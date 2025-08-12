@@ -97,7 +97,7 @@ function k(e) {
   (0, s.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("27458"), n.e("37082"), n.e("61643")]).then(n.bind(n, 985866));
+    } = await Promise.all([n.e("27458"), n.e("56184"), n.e("61643")]).then(n.bind(n, 985866));
     return n => (0, r.jsx)(e, L(w({}, n), {
       questId: t,
       questContentPosition: o,
@@ -114,7 +114,7 @@ function j(e, t) {
   (null == (i = e.userStatus) ? true : i.claimedAt) == null ? (0, s.ZDy)(async () => {
     let {
       default: i
-    } = await Promise.all([n.e("8016"), n.e("58011")]).then(n.bind(n, 824393));
+    } = await Promise.all([n.e("8016"), n.e("81329")]).then(n.bind(n, 824393));
     return n => (0, r.jsx)(i, L(w({}, n), {
       quest: e,
       location: t
@@ -139,7 +139,7 @@ function G(e, t) {
   (0, s.ZDy)(async () => {
     let {
       default: i
-    } = await Promise.all([n.e("66317"), n.e("94784")]).then(n.bind(n, 383294));
+    } = await Promise.all([n.e("66317"), n.e("2667")]).then(n.bind(n, 383294));
     return n => (0, r.jsx)(i, L(w({}, n), {
       quest: e,
       location: t
@@ -214,7 +214,7 @@ function V(e) {
 }
 
 function H() {
-  return Promise.all([require.e("66816"), require.e("27458"), require.e("32249"), require.e("60333")]).then(require.bind(require, 536687))
+  return Promise.all([require.e("66816"), require.e("27458"), require.e("32249"), require.e("7766")]).then(require.bind(require, 536687))
 }
 
 function Y(e) {

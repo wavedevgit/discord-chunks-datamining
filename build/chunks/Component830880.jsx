@@ -15,7 +15,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk526761 = require("./526761.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk306194 = require("./306194.js");
+  Chunk903548 = require("./903548.js");
 
 function m() {
   let [e, t] = (0, Chunk243778.US)([Chunk704215.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE]);
@@ -27,7 +27,7 @@ function m() {
       })
     },
     dismissNotice: () => exports(Chunk921944.L.USER_DISMISS),
-    className: Chunk306194.blockedIgnoredSettingsNotice,
+    className: Chunk903548.blockedIgnoredSettingsNotice,
     noticeType: Chunk484710.nq.RESTRICTED_ACCOUNTS_SETTING_NOTICE
   }) : null
 }

@@ -22,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk22267 = require("./22267.jsx"),
   Chunk302800 = require("./302800.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk182685 = require("./182685.js"),
+  Chunk181004 = require("./181004.js"),
   Chunk593639 = require("./593639.js"),
   Chunk945182 = require("./945182.js"),
   Chunk234286 = require("./234286.js");
@@ -53,7 +53,7 @@ let C = e => {
     } = e, [i] = t.items, o = null == r ? true : r.items[0], b = (0, u.e7)([h.default], () => {
       let e = h.default.getCurrentUser();
       return s()(null != e, "User cannot be undefined"), e
-    }), x = Object.values(d.a).includes(t.skuId), C = (0, v.Z)({
+    }), x = Object.values(d.a).includes(t.skuId), C = (0, v.ZP)({
       location: "CollectiblesProductPreview"
     });
     return (0, l.EQ)(t.type).with(c.Z.PROFILE_EFFECT, () => (0, a.jsx)("div", {
@@ -65,7 +65,7 @@ let C = e => {
     })).with(c.Z.AVATAR_DECORATION, () => (s()(i.type === c.Z.AVATAR_DECORATION, "ts-match already checked the type"), null != o && o.type === c.Z.AVATAR_DECORATION) ? (0, a.jsxs)("div", {
       children: [(0, a.jsx)("div", {
         className: O.avatarDecorationPairOne,
-        children: (0, a.jsx)(g.R, {
+        children: (0, a.jsx)(m.R, {
           item: i,
           user: b,
           avatarSize: f.EFr.SIZE_120,
@@ -74,13 +74,13 @@ let C = e => {
         })
       }), (0, a.jsx)("div", {
         className: O.avatarDecorationPairTwo,
-        children: (0, a.jsx)(g.R, {
+        children: (0, a.jsx)(m.R, {
           item: o,
           avatarSize: f.EFr.SIZE_120,
           isPurchased: false
         })
       })]
-    }) : (0, a.jsx)(g.R, {
+    }) : (0, a.jsx)(m.R, {
       item: i,
       user: b,
       avatarSize: f.EFr.SIZE_120,
@@ -109,16 +109,16 @@ let C = e => {
       if (x)
         if (n) return (0, a.jsx)("img", {
           src: C ? E : _,
-          alt: w.intl.string(w.t["Q+BB29"]),
+          alt: w.intl.string(w.t.t0xkSE),
           style: {
             width: "100%"
           }
         });
         else return (0, a.jsx)("img", {
           src: j,
-          alt: w.intl.string(w.t["+PHEo6"])
+          alt: w.intl.string(w.t.g5W1g4)
         });
-      return (0, a.jsx)(m.b, {
+      return (0, a.jsx)(g.b, {
         product: t
       })
     }).otherwise(() => null)

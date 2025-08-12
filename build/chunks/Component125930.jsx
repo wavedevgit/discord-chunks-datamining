@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk843445 = require("./843445.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk208039 = require("./208039.js");
+  Chunk406688 = require("./406688.js");
 let b = {
   [Chunk981631.TaA.WINDOWS]: Chunk358085.PlatformTypes.WINDOWS,
   [Chunk981631.TaA.MACOS]: Chunk358085.PlatformTypes.OSX,
@@ -33,12 +33,12 @@ class _ extends Chunk73800.PureComponent {
     return (0, Chunk255367.jsx)(Chunk755721.zx, {
       size: Chunk120356 ? Chunk755721.zx.Sizes.MIN : Chunk755721.zx.Sizes.LARGE,
       fullWidth: !Chunk120356,
-      color: module ? Chunk208039.tabSelectedColor : Chunk208039.tabNotSelectedColor,
+      color: module ? Chunk406688.tabSelectedColor : Chunk406688.tabNotSelectedColor,
       className: a()({
-        [Chunk208039.tabPageLarge]: Chunk120356,
-        [Chunk208039.tabPageSmall]: !Chunk120356,
-        [Chunk208039.tabSelected]: module,
-        [Chunk208039.tabNotSelected]: !module
+        [Chunk406688.tabPageLarge]: Chunk120356,
+        [Chunk406688.tabPageSmall]: !Chunk120356,
+        [Chunk406688.tabSelected]: module,
+        [Chunk406688.tabNotSelected]: !module
       }),
       onClick: Chunk73800,
       children: exports
@@ -95,9 +95,9 @@ class E extends Chunk73800.PureComponent {
       selectedOperatingSystem: n
     } = this.state, i = Object.keys(exports);
     return 1 === Chunk73800.length ? null : (0, Chunk255367.jsxs)(Chunk600164.Z, {
-      className: Chunk208039.tabs,
+      className: Chunk406688.tabs,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk208039.separator
+        className: Chunk406688.separator
       }), Chunk73800.map(t => (0, r.jsx)(_, {
         active: t === n,
         onClick: () => this.handleSelectOperatingSystem(t),
@@ -141,7 +141,7 @@ class E extends Chunk73800.PureComponent {
       recommended: t
     } = this.props.systemRequirements[this.state.selectedOperatingSystem];
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk208039.requirementsContainer,
+      className: Chunk406688.requirementsContainer,
       children: [this.renderRequirementsSection(module, Chunk388032.intl.string(Chunk388032.t.QCCMXF)), this.renderRequirementsSection(exports, Chunk388032.intl.string(Chunk388032.t.He39ws))]
     })
   }

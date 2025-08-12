@@ -11,8 +11,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
   Chunk695346 = require("./695346.js"),
   Chunk246992 = require("./246992.js"),
-  Chunk616257 = require("./616257.js"),
-  Chunk386 = require("./386.js");
+  Chunk881291 = require("./881291.js"),
+  Chunk726271 = require("./726271.js");
 let x = [{
   label: "Unset",
   value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET
@@ -32,7 +32,7 @@ function h() {
     t = Chunk695346.JG.useSetting();
   return (0, Chunk255367.jsxs)("div", {
     ref: module,
-    className: i()(Chunk616257.panel, Chunk386.panel),
+    className: i()(Chunk881291.panel, Chunk726271.panel),
     children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       children: "Receive DMs In Game"

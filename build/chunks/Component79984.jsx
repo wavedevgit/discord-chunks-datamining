@@ -11,7 +11,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
-  Chunk847800 = require("./847800.js");
+  Chunk837000 = require("./837000.js");
 
 function d() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
@@ -27,28 +27,28 @@ function d() {
       }
     }), []);
   return (0, Chunk255367.jsxs)("div", {
-    className: a()(Chunk847800.container, {
-      [Chunk847800.noAnimation]: module
+    className: a()(Chunk837000.container, {
+      [Chunk837000.noAnimation]: module
     }),
     children: [(0, Chunk255367.jsx)("div", {
-      className: Chunk847800.iconPlaceholder
+      className: Chunk837000.iconPlaceholder
     }), (0, Chunk255367.jsxs)("div", {
-      className: Chunk847800.textContainer,
+      className: Chunk837000.textContainer,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk847800.textPlaceholder,
+        className: Chunk837000.textPlaceholder,
         style: exports,
         children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
-          className: Chunk847800.hidden,
+          className: Chunk837000.hidden,
           variant: "heading-md/semibold",
           color: "header-primary",
           lineClamp: 1,
           children: "_"
         })
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk847800.textPlaceholder,
+        className: Chunk837000.textPlaceholder,
         style: require,
         children: (0, Chunk255367.jsx)(Chunk481060.Text, {
-          className: Chunk847800.hidden,
+          className: Chunk837000.hidden,
           variant: "text-sm/normal",
           color: "text-secondary",
           lineClamp: 1,
@@ -56,7 +56,7 @@ function d() {
         })
       })]
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk847800.underline
+      className: Chunk837000.underline
     })]
   })
 }

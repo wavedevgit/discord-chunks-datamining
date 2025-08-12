@@ -1,4 +1,4 @@
-/** Chunk was on 34779 **/
+/** Chunk was on 26628 **/
 /** chunk id: 315174, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => D,
@@ -25,7 +25,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk917669 = require("./917669.js");
+  Chunk609345 = require("./609345.js");
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -145,7 +145,7 @@ function N() {
   return (0, Chunk255367.jsx)(Chunk481060.r7p, {
     size: "custom",
     color: "currentColor",
-    className: Chunk917669.favoritesIcon,
+    className: Chunk609345.favoritesIcon,
     height: 20,
     width: 20
   })
@@ -221,7 +221,7 @@ function R(e) {
   } = e, d = i.useRef(null), h = (0, c.e7)([g.Z], () => g.Z.theme), m = i.useCallback(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("87154"), n.e("42018")]).then(n.bind(n, 859432));
+    } = await Promise.all([n.e("87154"), n.e("94617")]).then(n.bind(n, 859432));
     return t => {
       let {
         closePopout: n
@@ -241,7 +241,7 @@ function R(e) {
     O ? (0, u.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("41832")]).then(n.bind(n, 560114));
       return t => (0, r.jsx)(e, x(S({}, t), {
         guild: l,
         source: C.t4x.GUILD_HEADER

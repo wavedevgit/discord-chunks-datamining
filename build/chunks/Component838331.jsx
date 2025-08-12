@@ -20,7 +20,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk993365 = require("./993365.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk953408 = require("./953408.js");
+  Chunk291228 = require("./291228.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,8 +81,8 @@ function v(e, t) {
 let I = "data-listbox-item-id",
   T = 40,
   S = Object.freeze({
-    STANDARD: Chunk953408.selected,
-    BRAND: Chunk953408.selectedBrand
+    STANDARD: Chunk291228.selected,
+    BRAND: Chunk291228.selectedBrand
   });
 
 function A(e) {
@@ -319,7 +319,7 @@ D.Colors = S, D.Label = function(e) {
     selected: e
   } = Chunk73800.useContext(R), t = Chunk73800.useContext(w);
   return module.has(exports) ? (0, Chunk255367.jsx)("span", {
-    className: Chunk953408.itemCheckbox,
+    className: Chunk291228.itemCheckbox,
     children: (0, Chunk255367.jsx)(Chunk481060.owK, {
       size: "custom",
       color: "currentColor",

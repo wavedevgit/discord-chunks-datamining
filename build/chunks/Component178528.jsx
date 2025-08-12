@@ -35,7 +35,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk506098 = require("./506098.js");
+  Chunk839233 = require("./839233.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -167,8 +167,8 @@ class M extends Chunk73800.PureComponent {
         controller: Chunk619915,
         renderBanner: Chunk554747,
         bannerVisible: Chunk598056,
-        className: Chunk506098.guildHeader,
-        headerClassName: Chunk506098.guildHeaderInner,
+        className: Chunk839233.guildHeader,
+        headerClassName: Chunk839233.guildHeaderInner,
         onMouseDown: Chunk73800,
         disableBannerAnimation: false,
         communityInfoVisible: Chunk905423,
@@ -184,7 +184,7 @@ class M extends Chunk73800.PureComponent {
         })
       }) : null,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk506098.channelList,
+        className: Chunk839233.channelList,
         children: null != Chunk442837 ? (0, Chunk255367.jsx)(Chunk680089, (e = L({}, Chunk717976), t = t = {
           guild: Chunk442837,
           disableManageChannels: true,
@@ -202,7 +202,7 @@ class M extends Chunk73800.PureComponent {
           withBannerPadding: false
         })
       }), null != Chunk442837 && (0, Chunk255367.jsx)("section", {
-        className: Chunk506098.panels,
+        className: Chunk839233.panels,
         "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWF),
         children: (0, Chunk255367.jsx)(Chunk840780.Z, {
           guildId: Chunk442837.id

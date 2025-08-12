@@ -51,7 +51,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk689079 = require("./689079.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk355563 = require("./355563.js");
+  Chunk997438 = require("./997438.js");
 let Q = [],
   J = 4,
   $ = 4,
@@ -131,9 +131,9 @@ function eo(e) {
 
 function ea() {
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk355563.developerShelfControlsContainer,
+    className: Chunk997438.developerShelfControlsContainer,
     children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
-      className: Chunk355563.developerShelfControlsLabel,
+      className: Chunk997438.developerShelfControlsLabel,
       variant: "text-sm/normal",
       children: Chunk388032.intl.string(Chunk388032.t.tZ3FNj)
     }), (0, Chunk255367.jsx)(Chunk427996.W, {

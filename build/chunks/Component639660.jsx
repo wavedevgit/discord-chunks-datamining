@@ -20,11 +20,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk93841 = require("./93841.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk106180 = require("./106180.js");
+  Chunk695124 = require("./695124.js");
 
 function h() {
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk106180.staffContainer,
+    className: Chunk695124.staffContainer,
     children: (0, Chunk255367.jsx)(Chunk793030.xv, {
       variant: "text-sm/medium",
       children: Chunk388032.intl.string(Chunk93841.default.l9n4QU)
@@ -37,13 +37,13 @@ function E(e) {
     guildId: t
   } = e, n = (0, i.e7)([a.Z], () => {
     var e;
-    return (null == (e = a.Z.getGuild(t)) ? true : e.features.has(_.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
-  }), E = (0, u.Z)(t), C = E.length > 0, {
+    return (null == (e = a.Z.getGuild(t)) ? true : e.features.has(v.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
+  }), E = (0, c.Z)(t), C = E.length > 0, {
     shouldShow: I,
     notificationConfig: O
   } = (0, g._)(t, "GuildPowerupNotificationContainer"), y = [];
   I && y.push(l.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
-  let [P, w] = (0, s.ZT)(y, t), N = null != P && null != O, Z = (0, c.W)(t, "GuildPowerupNotificationContainer"), S = [];
+  let [P, w] = (0, s.ZT)(y, t), N = null != P && null != O, Z = (0, u.W)(t, "GuildPowerupNotificationContainer"), S = [];
   N || C || (S.push(l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK), Z && S.push(l.z.BOOSTER_ENHANCED_ROLE_COLORS_ADMIN_UPSELL));
   let [T, A] = (0, s.US)(S), R = (e => {
     let n = [];
@@ -68,7 +68,7 @@ function E(e) {
     children: [(0, r.jsx)(o.xv, {
       variant: "eyebrow",
       color: "text-secondary",
-      children: b.intl.string(v.default["3FRira"])
+      children: b.intl.string(_.default["3FRira"])
     }), n && (0, r.jsx)(h, {}), R.map(e => e)]
   }) : null
 }

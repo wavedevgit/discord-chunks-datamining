@@ -22,12 +22,12 @@ var Chunk255367 = require("./255367.js"),
   Chunk957115 = require("./957115.js"),
   Chunk531578 = require("./531578.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk297849 = require("./297849.js"),
-  Chunk135771 = require("./135771.js");
+  Chunk745248 = require("./745248.js"),
+  Chunk228274 = require("./228274.js");
 
 function C() {
   return (0, Chunk255367.jsx)(Chunk481060.Text, {
-    className: Chunk297849.helpdeskLink,
+    className: Chunk745248.helpdeskLink,
     variant: "text-xs/normal",
     color: "text-muted",
     children: Chunk388032.intl.format(Chunk388032.t.ybi2tL, {

@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk590305 = require("./590305.js");
+  Chunk120846 = require("./120846.js");
 
 function C() {
   let {
@@ -45,12 +45,12 @@ function C() {
     })
   }, [Chunk255835]);
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk590305.filterBar,
+    className: Chunk120846.filterBar,
     children: [(0, Chunk255367.jsxs)("div", {
-      className: i()(Chunk590305.filterSection, Chunk590305.itemType),
+      className: i()(Chunk120846.filterSection, Chunk120846.itemType),
       children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-md/semibold",
-        className: Chunk590305.filterTitle,
+        className: Chunk120846.filterTitle,
         children: Chunk388032.intl.string(Chunk388032.t.Qk6r1d)
       }), Chunk215023.xg.map(e => (0, n.jsx)(E, {
         filter: e,

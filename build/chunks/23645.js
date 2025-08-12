@@ -1,13 +1,14 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 77720 **/
 /** chunk id: 23645, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => l
+  Z: () => s
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk817080 = require("./817080.js"),
   Chunk579806 = require("./579806.js"),
   Chunk358085 = require("./358085.js");
-class l extends Chunk73800.Component {
+class s extends Chunk73800.Component {
   getFileContents() {
     let {
       fileContents: e
@@ -15,13 +16,13 @@ class l extends Chunk73800.Component {
     return "function" == typeof module && (e = module()), module
   }
   downloadNative(e, t) {
-    s.Z.fileManager.saveWithDialog(e, t)
+    i.Z.fileManager.saveWithDialog(e, t)
   }
   downloadHtml5(e, t) {
     let n = new Blob([e], {
       type: this.props.contentType
     });
-    (0, r.saveAs)(n, t)
+    (0, o.saveAs)(n, t)
   }
   render() {
     let {
@@ -38,9 +39,9 @@ class l extends Chunk73800.Component {
       let t = this.getFileContents(),
         {
           fileName: n,
-          onDownload: i
+          onDownload: r
         } = this.props;
-      a.isPlatformEmbedded ? this.downloadNative(t, n) : this.downloadHtml5(t, n), null == i || i()
+      a.isPlatformEmbedded ? this.downloadNative(t, n) : this.downloadHtml5(t, n), null == r || r()
     }, t in this ? Object.defineProperty(this, t, {
       value: n,
       enumerable: true,

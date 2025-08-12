@@ -1,4 +1,4 @@
-/** Chunk was on 11776 **/
+/** Chunk was on 29458 **/
 /** chunk id: 840367, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -14,7 +14,7 @@ var Chunk624238 = require("./624238.js"),
   Chunk881410 = require("./881410.jsx"),
   Chunk825354 = require("./825354.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk196880 = require("./196880.js");
+  Chunk678299 = require("./678299.js");
 let m = {
   [Chunk296009.l.FAVORITE_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.sUQar6),
   [Chunk296009.l.CURRENT_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.SqNnur),

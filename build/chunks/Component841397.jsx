@@ -6,22 +6,22 @@ require.d(exports, {
 });
 var Chunk255367 = require("./255367.js"),
   Chunk998502 = require("./998502.js"),
-  Chunk15594 = require("./15594.js");
+  Chunk20748 = require("./20748.js");
 
 function a() {
   return (0, Chunk255367.jsx)("div", {
     children: (0, Chunk255367.jsxs)("div", {
-      className: Chunk15594.gradientBackground,
+      className: Chunk20748.gradientBackground,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk15594.leftDarkEllipse
+        className: Chunk20748.leftDarkEllipse
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk15594.leftLightEllipse
+        className: Chunk20748.leftLightEllipse
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk15594.rightDarkEllipse
+        className: Chunk20748.rightDarkEllipse
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk15594.rightLightEllipse
+        className: Chunk20748.rightLightEllipse
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk15594.centerEllipse
+        className: Chunk20748.centerEllipse
       })]
     })
   })

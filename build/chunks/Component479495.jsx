@@ -23,7 +23,7 @@ var n, Chunk255367 = require("./255367.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk20493 = require("./20493.js");
+  Chunk881488 = require("./881488.js");
 
 function v(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,14 +56,14 @@ class P extends(n = Chunk73800.PureComponent) {
       children: [(0, Chunk255367.jsx)("img", {
         alt: "",
         src: null == Chunk593473 ? require("./26230.js") : require("./935227.js"),
-        className: Chunk20493.marginBottom20
+        className: Chunk881488.marginBottom20
       }), (0, Chunk255367.jsx)(Chunk388905.Dx, {
         children: Chunk388032.intl.string(Chunk388032.t["1LV6Ki"])
       }), (0, Chunk255367.jsxs)(Chunk388905.gO, {
-        className: Chunk20493.marginTop20,
+        className: Chunk881488.marginTop20,
         children: [(0, Chunk255367.jsx)(Chunk388905.II, {
           label: Chunk388032.intl.string(Chunk388032.t["8dM4FB"]),
-          className: Chunk20493.marginBottom20,
+          className: Chunk881488.marginBottom20,
           name: "password",
           value: module,
           onChange: e => this.setState({
@@ -78,7 +78,7 @@ class P extends(n = Chunk73800.PureComponent) {
           submitting: Chunk73800,
           children: Chunk388032.intl.string(Chunk388032.t["FRep5+"])
         }), n ? (0, Chunk255367.jsx)(Chunk388905.zx, {
-          className: Chunk20493.marginTop8,
+          className: Chunk881488.marginTop8,
           onClick: this.handleGoToLogin,
           submitting: Chunk73800,
           color: Chunk388905.zx.Colors.PRIMARY,
@@ -133,9 +133,9 @@ class P extends(n = Chunk73800.PureComponent) {
       children: [(0, Chunk255367.jsx)("img", {
         alt: "",
         src: require("./26230.js"),
-        className: o()(Chunk20493.marginBottom20, Chunk873546.tq ? Chunk20493.marginTop20 : "")
+        className: o()(Chunk881488.marginBottom20, Chunk873546.tq ? Chunk881488.marginTop20 : "")
       }), (0, Chunk255367.jsx)(Chunk388905.Dx, {
-        className: Chunk20493.marginBottom40,
+        className: Chunk881488.marginBottom40,
         children: Chunk388032.intl.string(Chunk388032.t.WAUOoK)
       }), (0, Chunk255367.jsx)(Chunk388905.zx, {
         onClick: this.handleOpenApp,

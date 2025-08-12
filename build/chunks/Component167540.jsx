@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 167540, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk726985 = require("./726985.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk20493 = require("./20493.js");
+  Chunk881488 = require("./881488.js");
 
 function b() {
   return (0, Chunk255367.jsx)(Chunk481060.ToO, {
@@ -25,7 +25,7 @@ function b() {
     body: Chunk388032.intl.string(Chunk388032.t.wVjKGh),
     button: (0, Chunk255367.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: Chunk20493.marginTop20,
+      className: Chunk881488.marginTop20,
       children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
         variant: "primary",
         size: "sm",

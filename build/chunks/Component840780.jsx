@@ -1,4 +1,4 @@
-/** Chunk was on 34779 **/
+/** Chunk was on 26628 **/
 /** chunk id: 840780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eu
@@ -59,7 +59,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk441248 = require("./441248.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk918559 = require("./918559.js"),
-  Chunk864989 = require("./864989.js");
+  Chunk811842 = require("./811842.js");
 
 function eo(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -102,11 +102,11 @@ class ec extends Chunk73800.PureComponent {
       return module
     }
     return (0, Chunk255367.jsx)("div", {
-      className: Chunk864989.sparkleContainer,
+      className: Chunk811842.sparkleContainer,
       children: (0, Chunk255367.jsx)(Chunk481060.Fmz, {
         importData: exports,
         shouldAnimate: !module,
-        className: Chunk864989.sparkles
+        className: Chunk811842.sparkles
       })
     })
   }
@@ -140,25 +140,25 @@ class ec extends Chunk73800.PureComponent {
       sanitizedTitle: l
     } = (0, Chunk914923.Z)(exports);
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk864989.gameWrapper,
+      className: Chunk811842.gameWrapper,
       children: [module ? (0, Chunk255367.jsx)(Chunk165393.Z, {
         title: Chunk120356,
         icon: null == exports ? true : exports.sourceIcon
       }) : (0, Chunk255367.jsx)(Chunk194082.ZP, {
         look: Chunk194082.ZP.Looks.GRAY,
         size: Chunk194082.ZP.Sizes.SMALL,
-        className: Chunk864989.liveIndicator
+        className: Chunk811842.liveIndicator
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk864989.info,
+        className: Chunk811842.info,
         children: [(0, Chunk255367.jsx)(Chunk115530.Z, {
           children: Chunk73800
         }), null != require && (0, Chunk255367.jsxs)("div", {
-          className: Chunk864989.perksDemoContainer,
+          className: Chunk811842.perksDemoContainer,
           children: [(0, Chunk255367.jsx)(Chunk481060.SrA, {
             size: "xxs",
             color: Chunk436774.JX.PREMIUM_TIER_2
           }), (0, Chunk255367.jsx)(Chunk759198.Z, {
-            className: Chunk864989.perksDemoText,
+            className: Chunk811842.perksDemoText,
             variant: "text-xxs/semibold",
             children: require
           })]
@@ -186,7 +186,7 @@ class ec extends Chunk73800.PureComponent {
         href: module,
         onClick: this.handleChannelLinkClick,
         children: (0, Chunk255367.jsx)(Chunk345243.Z, {
-          className: Chunk864989.channel,
+          className: Chunk811842.channel,
           children: Chunk481060
         })
       }),
@@ -194,20 +194,20 @@ class ec extends Chunk73800.PureComponent {
         href: module,
         onClick: this.handleApplicationLinkClick,
         children: (0, Chunk255367.jsx)(Chunk115530.Z, {
-          className: Chunk864989.underlineOnHover,
+          className: Chunk811842.underlineOnHover,
           children: exports.name
         })
       }),
       p = (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
         children: [(0, Chunk255367.jsx)(Chunk925329.Z, {
-          className: Chunk864989.gameIcon,
+          className: Chunk811842.gameIcon,
           game: exports,
           size: Chunk925329.Z.Sizes.SMALL
         }), (0, Chunk255367.jsx)(Chunk736409.j, {
           isForceShowSharingPopout: Chunk512722,
           setIsForceShowSharingPopout: a,
           children: (0, Chunk255367.jsxs)("div", {
-            className: Chunk864989.info,
+            className: Chunk811842.info,
             children: [Chunk475179, null != Chunk73800 && (0, Chunk131704.Qm)(Chunk73800.type) ? Chunk570140 : (0, Chunk255367.jsx)(ea, {
               timestamps: Chunk442837
             })]
@@ -215,7 +215,7 @@ class ec extends Chunk73800.PureComponent {
         })]
       });
     return (0, Chunk255367.jsx)("div", {
-      className: Chunk864989.gameWrapper,
+      className: Chunk811842.gameWrapper,
       children: Chunk925549
     })
   }
@@ -231,9 +231,9 @@ class ec extends Chunk73800.PureComponent {
       className: c
     } = this.props;
     return Chunk73800 || ((0, Chunk339144.y)(Chunk512722, a, exports) || module) && (null != require || null != exports) ? (0, Chunk255367.jsx)("div", {
-      className: o()(Chunk864989.panel, Chunk442837),
+      className: o()(Chunk811842.panel, Chunk442837),
       children: (0, Chunk255367.jsxs)("div", {
-        className: Chunk864989.body,
+        className: Chunk811842.body,
         children: [null == require || Chunk73800 && (null == Chunk120356 ? true : Chunk120356.pid) == null ? null != exports ? this.renderEmbeddedActivity() : this.renderScreenshare() : this.renderGame(), this.renderActions()]
       })
     }) : null

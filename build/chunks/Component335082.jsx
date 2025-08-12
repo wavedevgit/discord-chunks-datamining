@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 335082, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -15,7 +15,7 @@ var Chunk524437 = require("./524437.js"),
   Chunk726985 = require("./726985.js"),
   Chunk29953 = require("./29953.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk154947 = require("./154947.js");
+  Chunk513710 = require("./513710.js");
 
 function h(e) {
   let {
@@ -63,23 +63,23 @@ function f() {
       name: Chunk388032.intl.string(Chunk29953.default.m3oL7e)
     }];
   return (0, Chunk255367.jsx)(Chunk481060.hjN, {
-    className: Chunk154947.formSection,
+    className: Chunk513710.formSection,
     children: (0, Chunk255367.jsxs)(Chunk481060.y5t, {
       component: (0, Chunk255367.jsxs)("div", {
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
-          className: Chunk154947.formTitle,
+          className: Chunk513710.formTitle,
           variant: "heading-lg/semibold",
           color: "header-primary",
           children: Chunk388032.intl.string(Chunk29953.default.TG0Qsb)
         }), (0, Chunk255367.jsx)(Chunk481060.R94, {
-          className: Chunk154947.formDescription,
+          className: Chunk513710.formDescription,
           type: Chunk481060.R94.Types.DESCRIPTION,
           children: Chunk388032.intl.string(Chunk29953.default.OO17Li)
         })]
       }),
       children: [(0, Chunk255367.jsxs)("div", {
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
-          className: Chunk154947.defaultSetting,
+          className: Chunk513710.defaultSetting,
           variant: "heading-md/medium",
           color: "header-primary",
           children: Chunk388032.intl.string(Chunk29953.default["/LHVbm"])
@@ -89,16 +89,16 @@ function f() {
           onChange: e => n(e.value)
         })]
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk154947.myServersContainer,
+        className: Chunk513710.myServersContainer,
         children: [(0, Chunk255367.jsxs)("div", {
-          className: Chunk154947.myServersHeaderContainer,
+          className: Chunk513710.myServersHeaderContainer,
           children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
-            className: Chunk154947.myServersTitle,
+            className: Chunk513710.myServersTitle,
             variant: "heading-md/medium",
             color: "header-primary",
             children: Chunk388032.intl.string(Chunk388032.t.TqdOvL)
           }), !module && (0, Chunk255367.jsx)(Chunk481060.Wn, {
-            className: Chunk154947.myServersIgnoredWarning,
+            className: Chunk513710.myServersIgnoredWarning,
             messageType: Chunk481060.QYI.WARNING,
             textColor: "text-feedback-warning",
             children: Chunk388032.intl.string(Chunk29953.default["xxI0/f"])
@@ -115,10 +115,10 @@ function b() {
   return (0, Chunk255367.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
     children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-      className: Chunk154947.formSection,
+      className: Chunk513710.formSection,
       children: [(0, Chunk255367.jsx)("div", {
         children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
-          className: Chunk154947.formTitle,
+          className: Chunk513710.formTitle,
           variant: "heading-lg/semibold",
           color: "header-primary",
           children: Chunk388032.intl.string(Chunk29953.default["5rYBAQ"])
@@ -146,15 +146,15 @@ function x() {
   return (0, Chunk255367.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_STATUS,
     children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-      className: Chunk154947.formSection,
+      className: Chunk513710.formSection,
       children: [(0, Chunk255367.jsx)("div", {
         children: (0, Chunk255367.jsx)(Chunk481060.R94, {
-          className: Chunk154947.formDescription,
+          className: Chunk513710.formDescription,
           type: Chunk481060.R94.Types.DESCRIPTION,
           children: Chunk388032.intl.string(Chunk29953.default.t2Ysra)
         })
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk154947.switchContainer,
+        className: Chunk513710.switchContainer,
         children: (0, Chunk255367.jsx)(h, {
           label: Chunk388032.intl.string(Chunk29953.default.WhdCGB),
           sublabel: exports,

@@ -20,8 +20,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk55406 = require("./55406.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk875231 = require("./875231.js"),
-  Chunk321250 = require("./321250.js");
+  Chunk544965 = require("./544965.js"),
+  Chunk841655 = require("./841655.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -31,7 +31,7 @@ function y(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let k = Chunk454585.Z.reactParserFor(Chunk55406.default.getDefaultRules(Chunk875231)),
+let k = Chunk454585.Z.reactParserFor(Chunk55406.default.getDefaultRules(Chunk544965)),
   S = {};
 class E extends Chunk73800.PureComponent {
   track(e, t, n) {
@@ -39,10 +39,10 @@ class E extends Chunk73800.PureComponent {
   }
   renderFooter() {
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk875231.footer,
+      className: Chunk544965.footer,
       children: [(0, Chunk255367.jsx)(Chunk481060.eee, {
         "aria-label": Chunk388032.intl.string(Chunk388032.t["/84uiI"]),
-        className: Chunk875231.socialLink,
+        className: Chunk544965.socialLink,
         href: (0, Chunk299379.Z)(Chunk981631.RK.TWITTER),
         target: "blank",
         children: (0, Chunk255367.jsx)(Chunk481060.TAi, {
@@ -51,7 +51,7 @@ class E extends Chunk73800.PureComponent {
         })
       }), (0, Chunk255367.jsx)(Chunk481060.eee, {
         "aria-label": Chunk388032.intl.string(Chunk388032.t["h0or/v"]),
-        className: Chunk875231.socialLink,
+        className: Chunk544965.socialLink,
         href: Chunk981631.fK7.FACEBOOK_URL,
         target: "blank",
         children: (0, Chunk255367.jsx)(Chunk481060.tdR, {
@@ -60,7 +60,7 @@ class E extends Chunk73800.PureComponent {
         })
       }), (0, Chunk255367.jsx)(Chunk481060.eee, {
         "aria-label": Chunk388032.intl.string(Chunk388032.t["5uVPyc"]),
-        className: Chunk875231.socialLink,
+        className: Chunk544965.socialLink,
         href: Chunk981631.fK7.INSTAGRAM_URL,
         target: "blank",
         children: (0, Chunk255367.jsx)(Chunk481060.gST, {
@@ -78,7 +78,7 @@ class E extends Chunk73800.PureComponent {
       changeLog: e
     } = this.props, t = module.youtube_video_id, l = module.video, o = module.image;
     if (null != exports && "" !== exports) return (0, Chunk255367.jsx)(Chunk446411.BC, {
-      className: Chunk875231.video,
+      className: Chunk544965.video,
       allowFullScreen: false,
       href: "https://youtu.be/".concat(exports),
       thumbnail: {
@@ -111,7 +111,7 @@ class E extends Chunk73800.PureComponent {
         loop: true,
         muted: true,
         autoPlay: true,
-        className: Chunk875231.video,
+        className: Chunk544965.video,
         onPlay: () => {
           this.track(Chunk981631.rMx.CHANGE_LOG_VIDEO_INTERACTED, {}, true)
         }
@@ -121,7 +121,7 @@ class E extends Chunk73800.PureComponent {
     {
       let e = Chunk120356.startsWith("https://") ? Chunk120356 : require("./595173.js")("./".concat(Chunk120356));
       return (0, Chunk255367.jsx)("img", {
-        className: Chunk875231.image,
+        className: Chunk544965.image,
         alt: "",
         src: module,
         width: 451,
@@ -135,7 +135,7 @@ class E extends Chunk73800.PureComponent {
     } = this.props;
     return (0, Chunk255367.jsxs)(Chunk481060.Y0X, {
       transitionState: Chunk481060.Dvm.ENTERED,
-      className: Chunk321250.modal,
+      className: Chunk841655.modal,
       parentComponent: "ChangelogStandardTemplate",
       children: [(0, Chunk255367.jsxs)(Chunk481060.xBx, {
         align: Chunk600164.Z.Justify.BETWEEN,
@@ -147,7 +147,7 @@ class E extends Chunk73800.PureComponent {
           })
         })]
       }), (0, Chunk255367.jsx)(Chunk481060.hzk, {
-        className: a()(Chunk321250.content, Chunk875231.container, {}),
+        className: a()(Chunk841655.content, Chunk544965.container, {}),
         scrollerRef: this.scrollerRef,
         onScroll: this.handleScroll,
         children: (0, Chunk255367.jsxs)("div", {

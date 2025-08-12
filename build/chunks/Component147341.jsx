@@ -8,24 +8,24 @@ require("./73800.js");
 var Chunk481060 = require("./481060.js"),
   Chunk144717 = require("./144717.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk677973 = require("./677973.js");
+  Chunk563968 = require("./563968.js");
 
 function s() {
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk677973.wrapper,
+    className: Chunk563968.wrapper,
     children: (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
-      className: Chunk677973.textContainer,
+      className: Chunk563968.textContainer,
       gap: 16,
       padding: 32,
       children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
         variant: "heading-xxl/normal",
         color: "header-primary",
-        className: Chunk677973.heading,
+        className: Chunk563968.heading,
         children: Chunk388032.intl.string(Chunk144717.default["VAK+h4"])
       }), (0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-lg/normal",
         color: "text-tertiary",
-        className: Chunk677973.text,
+        className: Chunk563968.text,
         children: Chunk388032.intl.string(Chunk144717.default.dcpdhI)
       })]
     })

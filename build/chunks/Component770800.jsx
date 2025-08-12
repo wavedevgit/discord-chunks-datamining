@@ -23,8 +23,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk513547 = require("./513547.jsx"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk442122 = require("./442122.js"),
-  Chunk20493 = require("./20493.js");
+  Chunk312305 = require("./312305.js"),
+  Chunk881488 = require("./881488.js");
 class R extends Chunk73800.PureComponent {
   render() {
     var e, t;
@@ -111,9 +111,9 @@ class R extends Chunk73800.PureComponent {
     return (0, Chunk255367.jsxs)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H2,
       title: Chunk388032.intl.string(Chunk388032.t.wU9INz) + (null != Chunk73800 ? " - " + Chunk73800 : ""),
-      className: Chunk442122.allowSelection,
+      className: Chunk312305.allowSelection,
       children: [(0, Chunk481250.a)(Chunk226961), 0 === Chunk476221.length ? null : (0, Chunk255367.jsx)(Chunk481060.$i$, {
-        className: Chunk20493.marginBottom20
+        className: Chunk881488.marginBottom20
       }), (0, Chunk481250.a)(Chunk476221)]
     })
   }

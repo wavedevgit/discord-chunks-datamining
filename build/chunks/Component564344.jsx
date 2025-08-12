@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 564344, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk526761 = require("./526761.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk545784 = require("./545784.js");
+  Chunk148030 = require("./148030.js");
 
 function S() {
   Chunk254901.Z.useExperiment({
@@ -69,17 +69,17 @@ function S() {
       children: Chunk388032.intl.string(Chunk388032.t["vi7f+v"])
     }),
     children: [(0, Chunk255367.jsxs)(Chunk481060.njP, {
-      className: Chunk545784.tabBar,
+      className: Chunk148030.tabBar,
       type: "top",
       look: "brand",
       selectedItem: I,
       onItemSelect: P,
       children: [D ? (0, Chunk255367.jsx)(Chunk481060.njP.Item, {
-        className: Chunk545784.tabBarItem,
+        className: Chunk148030.tabBarItem,
         id: Chunk526761.NB.USER_PROFILE,
         children: Chunk388032.intl.string(Chunk388032.t["2p07FR"])
       }, Chunk526761.NB.USER_PROFILE) : null, R ? (0, Chunk255367.jsx)(Chunk481060.njP.Item, {
-        className: Chunk545784.tabBarItem,
+        className: Chunk148030.tabBarItem,
         id: Chunk526761.NB.GUILD,
         children: Chunk388032.intl.string(Chunk388032.t.kPHroa)
       }, Chunk526761.NB.GUILD) : null]

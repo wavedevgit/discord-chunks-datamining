@@ -9,18 +9,18 @@ var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk933282 = require("./933282.js"),
+  Chunk585753 = require("./585753.js"),
   l = function(e) {
     return e.PREMIUM = "premium", e.LIMITED = "limited", e
   }({});
 let c = {
     premium: {
-      border: Chunk933282.premiumFeatureBorder,
-      background: Chunk933282.premiumBackground
+      border: Chunk585753.premiumFeatureBorder,
+      background: Chunk585753.premiumBackground
     },
     limited: {
-      border: Chunk933282.limitedFeatureBorder,
-      background: Chunk933282.limitedBackground
+      border: Chunk585753.limitedFeatureBorder,
+      background: Chunk585753.limitedBackground
     }
   },
   u = Chunk73800.forwardRef(function(e, t) {

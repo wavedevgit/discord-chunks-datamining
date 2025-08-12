@@ -1,4 +1,4 @@
-/** Chunk was on 88934 **/
+/** Chunk was on 54844 **/
 /** chunk id: 359993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -13,12 +13,12 @@ function o(e) {
   let {
     application: t,
     showMutualGuilds: n = true
-  } = e, o = (0, a.e7)([s.Z], () => s.Z.getGuildIdsForApplication(null == t ? true : t.id), [t]), c = (0, a.e7)([i.Z], () => i.Z.isConnected());
+  } = e, o = (0, i.e7)([s.Z], () => s.Z.getGuildIdsForApplication(null == t ? true : t.id), [t]), c = (0, i.e7)([l.Z], () => l.Z.isConnected());
   return r.useMemo(() => {
     let e = [];
     if (!c || !n || null == o || null == t) return e;
     for (let t of o) {
-      let n = l.Z.getGuild(t);
+      let n = a.Z.getGuild(t);
       null != n && e.push(n)
     }
     return e

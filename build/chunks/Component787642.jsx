@@ -15,7 +15,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk125631 = require("./125631.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk507750 = require("./507750.js");
+  Chunk958122 = require("./958122.js");
 let m = (0, Chunk313201.hQ)(),
   b = "".concat(m, "-decription");
 
@@ -52,10 +52,10 @@ function O() {
     };
   return (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
     children: [(0, Chunk255367.jsxs)("header", {
-      className: Chunk507750.header,
+      className: Chunk958122.header,
       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
         tag: "h1",
-        className: Chunk507750.title,
+        className: Chunk958122.title,
         children: Chunk388032.intl.string(Chunk388032.t.IuMx1d)
       }), (0, Chunk255367.jsx)(Chunk481060.R94, {
         id: b,
@@ -67,7 +67,7 @@ function O() {
         })
       })]
     }), (0, Chunk255367.jsxs)("div", {
-      className: Chunk507750.grid,
+      className: Chunk958122.grid,
       children: [module.map(e => _(d.ZP.getGuildIconURL({
         id: e.id,
         icon: e.icon,

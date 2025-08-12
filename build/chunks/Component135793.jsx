@@ -32,7 +32,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk956589 = require("./956589.js"),
+  Chunk508242 = require("./508242.js"),
   Chunk99713 = require("./99713.js");
 
 function D(e, t, n) {
@@ -373,10 +373,10 @@ let F = e => {
     if (null == exports || 0 === exports) return null;
     let n = (null == module ? true : module.type) === Chunk981631.qc2.DEVELOPER_GIFT ? Chunk388032.t["b+P6ra"] : Chunk388032.t.RiQ4cn;
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk956589.remaining,
+      className: Chunk508242.remaining,
       children: [(0, Chunk255367.jsx)(Chunk481060.l22, {
         color: "currentColor",
-        className: Chunk956589.shootingStar
+        className: Chunk508242.shootingStar
       }), (0, Chunk255367.jsx)(Chunk481060.Text, {
         color: "none",
         variant: "text-sm/semibold",
@@ -430,9 +430,9 @@ let F = e => {
     })
   },
   z = () => (0, Chunk255367.jsx)("div", {
-    className: Chunk956589.anomaly,
+    className: Chunk508242.anomaly,
     children: (0, Chunk255367.jsxs)("div", {
-      className: Chunk956589.error,
+      className: Chunk508242.error,
       children: [(0, Chunk255367.jsx)(Chunk481060.Eep, {
         src: Chunk99713,
         width: j,
@@ -444,9 +444,9 @@ let F = e => {
     })
   }),
   q = () => (0, Chunk255367.jsx)("div", {
-    className: Chunk956589.anomaly,
+    className: Chunk508242.anomaly,
     children: (0, Chunk255367.jsx)("div", {
-      className: Chunk956589.spinner,
+      className: Chunk508242.spinner,
       children: (0, Chunk255367.jsx)(Chunk481060.$jN, {})
     })
   })

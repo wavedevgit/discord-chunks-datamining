@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 277329, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -17,7 +17,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk332325 = require("./332325.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk881328 = require("./881328.js");
+  Chunk958102 = require("./958102.js");
 
 function b() {
   let e = (0, Chunk326528.b)(),
@@ -25,11 +25,11 @@ function b() {
     n = null != exports && module.some(e => e.id === t) ? exports : module[0].id;
   return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
     children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
-      className: Chunk881328.heading,
+      className: Chunk958102.heading,
       variant: "heading-xl/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.URyqtL)
     }), (0, Chunk255367.jsx)(Chunk481060.njP, {
-      className: Chunk881328.tabBar,
+      className: Chunk958102.tabBar,
       selectedItem: require,
       onItemSelect: e => {
         a.Z.setSection(g.oAB.GAMES, e)
@@ -53,23 +53,23 @@ function b() {
       switch (require) {
         case Chunk332325.Z.CLIPS:
           return (0, Chunk255367.jsx)(Chunk574755.Z, {
-            className: Chunk881328.body,
+            className: Chunk958102.body,
             showHeader: false
           });
         case Chunk332325.Z.OVERLAY:
           return (0, Chunk255367.jsx)(Chunk327885.Z, {
-            className: Chunk881328.body,
+            className: Chunk958102.body,
             showHeader: false
           });
         case Chunk332325.Z.ACTIVITY_PRIVACY:
           return (0, Chunk255367.jsx)(Chunk309739.Z, {
-            className: Chunk881328.body,
+            className: Chunk958102.body,
             showHeader: false
           });
         case Chunk332325.Z.MY_GAMES:
         default:
           return (0, Chunk255367.jsx)(Chunk293389.Z, {
-            className: Chunk881328.body,
+            className: Chunk958102.body,
             showHeader: false
           })
       }

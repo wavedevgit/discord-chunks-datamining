@@ -2,7 +2,7 @@
 /** chunk id: 223356, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Tj: () => m,
-  WG: () => u,
+  WG: () => c,
   ZD: () => h,
   pD: () => d
 }), require("./953529.js"), require("./539854.js");
@@ -14,7 +14,7 @@ require("./358085.js");
 var Chunk573261 = require("./573261.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-async function u() {
+async function c() {
   return (await Chunk544891.tn.get({
     url: Chunk981631.ANM.BUG_REPORTS,
     rejectWithError: false
@@ -22,8 +22,8 @@ async function u() {
 }
 
 function d(e) {
-  var t, n;
-  return null != (n = null != (t = null == e ? true : e.name) ? t : "" + (null == e ? true : e.squad)) ? n : ""
+  var t;
+  return null != (t = null == e ? true : e.name) ? t : "" + (null == e ? true : e.squad)
 }
 
 function m() {
@@ -50,8 +50,8 @@ function m() {
   }]
 }
 async function h(e, t, n) {
-  var r, c;
-  let u = [{
+  var r, u;
+  let c = [{
     name: "name",
     value: e.name
   }, {
@@ -64,44 +64,44 @@ async function h(e, t, n) {
     name: "theme",
     value: a.Z.theme
   }];
-  "" !== e.description && u.push({
+  "" !== e.description && c.push({
     name: "description",
     value: e.description
-  }), "" !== e.url && u.push({
+  }), "" !== e.url && c.push({
     name: "external_url",
     value: e.url
-  }), null != e.buildOverride && u.push({
+  }), null != e.buildOverride && c.push({
     name: "build_override",
     value: e.buildOverride
   });
   let d = null == (r = e.feature) ? true : r.asana_inbox_id;
-  null != d && "" !== d && u.push({
+  null != d && "" !== d && c.push({
     name: "asana_inbox_id",
     value: "".concat(d)
   });
-  let m = null == (c = e.feature) ? true : c.name;
-  null != m && "" !== m && u.push({
+  let m = null == (u = e.feature) ? true : u.name;
+  null != m && "" !== m && c.push({
     name: "feature_name",
     value: m
-  }), t.overridePlatformInformation && (u.push({
+  }), t.overridePlatformInformation && (c.push({
     name: "device",
     value: t.device
-  }), u.push({
+  }), c.push({
     name: "os",
     value: t.operatingSystem
-  }), u.push({
+  }), c.push({
     name: "os_version",
     value: t.operatingSystemVersion
-  }), u.push({
+  }), c.push({
     name: "client_version",
     value: t.clientVersion
-  }), u.push({
+  }), c.push({
     name: "client_build_number",
     value: t.clientBuildNumber
-  }), u.push({
+  }), c.push({
     name: "release_channel",
     value: window.GLOBAL_ENV.RELEASE_CHANNEL
-  }), u.push({
+  }), c.push({
     name: "locale",
     value: t.locale
   })), (0, l.E)(s.GU0.WEB_APP);
@@ -109,7 +109,7 @@ async function h(e, t, n) {
     return await o.Z.post({
       url: s.ANM.BUG_REPORTS,
       attachments: n,
-      fields: u,
+      fields: c,
       trackedActionData: {
         event: i.NetworkActionNames.BUG_REPORT_SUBMIT,
         properties: {

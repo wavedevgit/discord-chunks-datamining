@@ -52,7 +52,7 @@ class g extends Chunk73800.PureComponent {
       (0, l.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("41832")]).then(n.bind(n, 560114));
         return n => {
           var i, l;
           return (0, r.jsx)(t, (i = function(e) {

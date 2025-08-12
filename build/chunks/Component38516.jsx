@@ -11,8 +11,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk810568 = require("./810568.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk263930 = require("./263930.js"),
-  Chunk242177 = require("./242177.js");
+  Chunk110568 = require("./110568.js"),
+  Chunk871365 = require("./871365.js");
 let m = [Chunk643872.p.OFFICIAL, Chunk643872.p.TWITTER, Chunk643872.p.YOUTUBE];
 
 function g(e) {

@@ -29,7 +29,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk676462 = require("./676462.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk152965 = require("./152965.js");
+  Chunk45011 = require("./45011.js");
 
 function T(e) {
   let {
@@ -144,13 +144,13 @@ function E(e) {
 
 function P() {
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk152965.emptyState,
+    className: Chunk45011.emptyState,
     children: [(0, Chunk255367.jsx)(Chunk481060._Ve, {
-      className: Chunk152965.emptyIcon,
+      className: Chunk45011.emptyIcon,
       size: "md",
       color: Chunk481060.TVs.colors.ICON_MUTED
     }), (0, Chunk255367.jsx)(Chunk481060.Text, {
-      className: Chunk152965.emptyHeader,
+      className: Chunk45011.emptyHeader,
       variant: "text-lg/medium",
       color: "header-primary",
       children: Chunk388032.intl.string(Chunk676462.default.sWGfr6)

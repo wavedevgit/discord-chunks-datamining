@@ -1,4 +1,4 @@
-/** Chunk was on 34779 **/
+/** Chunk was on 26628 **/
 /** chunk id: 940777, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -31,7 +31,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk603274 = require("./603274.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk940751 = require("./940751.js");
+  Chunk448424 = require("./448424.js");
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -121,7 +121,7 @@ function R() {
       selected: V,
       hovered: L,
       unread: H && !k,
-      className: Chunk940751.pill
+      className: Chunk448424.pill
     }), (0, Chunk255367.jsx)(Chunk603274.Z, {
       onShow: K,
       children: (0, Chunk255367.jsx)(Chunk110977.S, {
@@ -154,13 +154,13 @@ function R() {
               })
             },
             children: (0, Chunk255367.jsx)("div", {
-              className: o()(Chunk940751.ring, {
-                [Chunk940751.ringActive]: R
+              className: o()(Chunk448424.ring, {
+                [Chunk448424.ringActive]: R
               }),
               children: (0, Chunk255367.jsx)(Chunk481060.r7p, {
                 size: "custom",
                 color: "currentColor",
-                className: Chunk940751.favoriteIcon,
+                className: Chunk448424.favoriteIcon,
                 width: 20,
                 height: 20
               })

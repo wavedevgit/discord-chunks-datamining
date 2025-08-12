@@ -10,14 +10,14 @@ var Chunk481060 = require("./481060.js"),
   Chunk376340 = require("./376340.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk28901 = require("./28901.js"),
+  Chunk338975 = require("./338975.js"),
   Chunk38920 = require("./38920.js");
 
 function u() {
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk28901.__invalid_getCrunchyrollApp,
+    className: Chunk338975.__invalid_getCrunchyrollApp,
     children: (0, Chunk255367.jsx)("div", {
-      className: Chunk28901.__invalid_getCrunchyrollAppBody,
+      className: Chunk338975.__invalid_getCrunchyrollAppBody,
       children: (0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",

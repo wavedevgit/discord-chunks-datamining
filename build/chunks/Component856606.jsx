@@ -47,7 +47,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk188857 = require("./188857.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk483112 = require("./483112.js");
+  Chunk753965 = require("./753965.js");
 
 function z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -387,7 +387,7 @@ function K() {
       }, "".concat(a, "-").concat(e.id))
     }).value();
   return (0, Chunk255367.jsx)(Chunk325476.ZP.Sidebar, {
-    className: Chunk483112.layoutStyle,
+    className: Chunk753965.layoutStyle,
     scrollable: true,
     children: (0, Chunk255367.jsxs)(Chunk481060.njP, {
       onItemSelect: Chunk741361.Aj,
@@ -444,7 +444,7 @@ function ee() {
   if (null == (0, Chunk442837.e7)([Chunk430824.Z], () => null != module ? Chunk430824.Z.getGuild(module.getGuildId()) : null) || null == module || null == exports || null == require) return null;
   let l = exports[require];
   return (0, Chunk255367.jsxs)(Chunk325476.ZP, {
-    className: Chunk483112.container,
+    className: Chunk753965.container,
     children: [(0, Chunk255367.jsx)(K, {}), (0, Chunk255367.jsx)(q, {
       overwrite: Chunk73800
     })]

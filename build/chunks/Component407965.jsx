@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 407965, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   n: () => j
@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk45474 = require("./45474.js"),
   Chunk594135 = require("./594135.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk515622 = require("./515622.js");
+  Chunk83764 = require("./83764.js");
 let _ = e => {
     let {
       churnUserDiscountOffer: t
@@ -57,7 +57,7 @@ let _ = e => {
       }
     });
     let v = [];
-    return null != Chunk515622 ? v.push({
+    return null != Chunk83764 ? v.push({
       text: Chunk388032.intl.string(Chunk388032.t.zrCzVF),
       onClick: () => Chunk512722(Chunk45474.R.CONFIRM_DISCOUNT),
       variant: Chunk10508 ? "primary" : "secondary",
@@ -69,14 +69,14 @@ let _ = e => {
     }), v.push({
       text: O ? Chunk388032.intl.string(Chunk388032.t.PfnxqK) : Chunk388032.intl.string(Chunk388032.t["3PatS0"]),
       onClick: () => Chunk512722(Chunk45474.R.CONFIRM),
-      variant: null !== Chunk515622 && Chunk10508 ? "secondary" : "primary"
-    }), Chunk10508 && null !== Chunk515622 && v.reverse(), (0, Chunk255367.jsx)(Chunk82659.Modal, {
+      variant: null !== Chunk83764 && Chunk10508 ? "secondary" : "primary"
+    }), Chunk10508 && null !== Chunk83764 && v.reverse(), (0, Chunk255367.jsx)(Chunk82659.Modal, {
       transitionState: module,
       title: Chunk388032.intl.string(Chunk388032.t.PWq8TE),
       subtitle: Chunk388032.intl.formatToPlainString(Chunk388032.t.nsGVzs, {}),
       actions: v,
-      preview: null !== Chunk515622 && (0, Chunk255367.jsx)(_, {
-        churnUserDiscountOffer: Chunk515622
+      preview: null !== Chunk83764 && (0, Chunk255367.jsx)(_, {
+        churnUserDiscountOffer: Chunk83764
       }),
       onClose: async () => exports(),
       children: (0, Chunk255367.jsx)(Chunk807163.g, {

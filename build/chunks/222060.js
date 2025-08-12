@@ -1,0 +1,6 @@
+/** Chunk was on 27978 **/
+/** chunk id: 222060, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  applicationIcon: "applicationIcon_c4891f",
+  seasonalIcon: "seasonalIcon_c4891f"
+}

@@ -1,9 +1,9 @@
-/** Chunk was on 82875 **/
-/** chunk id: 484614, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 77710 **/
+/** chunk id: 484614, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => u
 });
-var r, Chunk255367 = require("./255367.js"),
+var o, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk846519 = require("./846519.js"),
   Chunk755721 = require("./755721.js"),
@@ -11,82 +11,82 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk572004 = require("./572004.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e, n, t) {
-  return n in e ? Object.defineProperty(e, n, {
-    value: t,
+function l(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[n] = t, e
+  }) : e[t] = n, e
 }
-class _ extends(r = Chunk73800.PureComponent) {
+class b extends(o = Chunk73800.PureComponent) {
   componentWillUnmount() {
     this._timeout.stop()
   }
   render() {
-    var e, n;
+    var e, t;
     let {
-      text: t
+      text: n
     } = this.props, {
-      mode: r
-    } = this.state, i = r === Chunk481060.kO8.Modes.SUCCESS ? Chunk388032.intl.string(Chunk388032.t["t5VZ8/"]) : require;
+      mode: o
+    } = this.state, r = o === Chunk481060.kO8.Modes.SUCCESS ? Chunk388032.intl.string(Chunk388032.t["t5VZ8/"]) : require;
     return (0, Chunk255367.jsx)(Chunk481060.kO8, (e = function(e) {
-      for (var n = 1; n < arguments.length; n++) {
-        var t = null != arguments[n] ? arguments[n] : {},
-          r = Object.keys(t);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(t, e).enumerable
-        }))), r.forEach(function(n) {
-          u(e, n, t[n])
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          o = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), o.forEach(function(t) {
+          l(e, t, n[t])
         })
       }
       return e
-    }({}, this.props), n = n = {
+    }({}, this.props), t = t = {
       onCopy: this.handleCopy,
-      mode: r,
+      mode: o,
       text: Chunk73800,
       supportsCopy: Chunk572004.wS
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, n) {
-      var t = Object.keys(e);
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
+      var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t.push.apply(t, r)
+        var o = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, o)
       }
-      return t
-    })(Object(exports)).forEach(function(t) {
-      Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+      return n
+    })(Object(exports)).forEach(function(n) {
+      Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), module))
   }
   handleCopy(e) {
     let {
-      onCopy: n,
-      delay: t = 1e3
+      onCopy: t,
+      delay: n = 1e3
     } = this.props;
-    (0, s.JG)(e, () => this.setState({
+    (0, d.JG)(e, () => this.setState({
       mode: c.kO8.Modes.SUCCESS
     }), () => this.setState({
       mode: c.kO8.Modes.ERROR
-    })), this._timeout.start(t, () => this.setState({
+    })), this._timeout.start(n, () => this.setState({
       mode: c.kO8.Modes.DEFAULT
-    })), null == n || n(e)
+    })), null == t || t(e)
   }
   getVerticalButtonColor(e) {
     switch (e) {
       case c.kO8.Modes.SUCCESS:
-        return l.zx.Colors.GREEN;
+        return _.zx.Colors.GREEN;
       case c.kO8.Modes.ERROR:
-        return l.zx.Colors.RED;
+        return _.zx.Colors.RED;
       default:
-        return l.zx.Colors.BRAND
+        return _.zx.Colors.BRAND
     }
   }
   constructor(e) {
-    super(e), u(this, "_timeout", true), this.state = {
+    super(e), l(this, "_timeout", true), this.state = {
       mode: c.kO8.Modes.DEFAULT
     }, this._timeout = new a.V7, this.handleCopy = this.handleCopy.bind(this)
   }
 }
-u(_, "defaultProps", {
+l(b, "defaultProps", {
   delay: 1e3
 });
-let b = _
+let u = b

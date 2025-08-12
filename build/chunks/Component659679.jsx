@@ -15,24 +15,24 @@ var Chunk793030 = require("./793030.js"),
   Chunk884902 = require("./884902.js"),
   Chunk93841 = require("./93841.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk326319 = require("./326319.js");
+  Chunk991206 = require("./991206.js");
 
 function g(e) {
   let {
     boost: t
-  } = e, n = new Date(u.default.extractTimestamp(t.id)), {
+  } = e, n = new Date(c.default.extractTimestamp(t.id)), {
     username: g,
     roleColor: x,
-    roleColorStrings: _
-  } = (0, i.cj)([c.ZP], () => {
+    roleColorStrings: v
+  } = (0, i.cj)([u.ZP], () => {
     var e, n, r, o;
-    let i = c.ZP.getMember(t.guildId, t.userId);
+    let i = u.ZP.getMember(t.guildId, t.userId);
     return {
-      username: null != (n = c.ZP.getNick(t.guildId, t.userId)) ? n : null == (e = t.user) ? true : e.username,
+      username: null != (n = u.ZP.getNick(t.guildId, t.userId)) ? n : null == (e = t.user) ? true : e.username,
       roleColor: null != (r = null == i ? true : i.colorString) ? r : null,
       roleColorStrings: null != (o = null == i ? true : i.colorStrings) ? o : null
     }
-  }, [t]), v = (0, d.X7)(t.guildId, t.userId, null != _ ? _ : null);
+  }, [t]), _ = (0, d.X7)(t.guildId, t.userId, null != v ? v : null);
   return (0, r.jsx)(a.Z, {
     className: m.systemMessageContainer,
     contentClassName: m.systemMessageContent,
@@ -53,7 +53,7 @@ function g(e) {
         variant: "text-md/semibold",
         name: g,
         colorString: null != x ? x : null,
-        colorStrings: v
+        colorStrings: _
       }), (0, r.jsx)(o.xv, {
         variant: "text-md/medium",
         lineClamp: 1,

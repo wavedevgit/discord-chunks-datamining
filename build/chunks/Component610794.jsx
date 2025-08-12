@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 610794, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk856651 = require("./856651.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk6318 = require("./6318.js");
+  Chunk690382 = require("./690382.js");
 
 function C(e) {
   var t;
@@ -178,10 +178,10 @@ function v() {
       a(t => [...t, e.id])
     }), []);
   return 0 === exports.length ? null : (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-    className: Chunk6318.container,
+    className: Chunk690382.container,
     children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
       tag: Chunk481060.RB0.H5,
-      className: Chunk6318.title,
+      className: Chunk690382.title,
       children: Chunk388032.intl.string(Chunk388032.t.aw0GVV)
     }), exports.map(e => (0, i.jsx)(O, {
       account: e,

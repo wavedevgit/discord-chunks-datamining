@@ -1,4 +1,4 @@
-/** Chunk was on 34779 **/
+/** Chunk was on 26628 **/
 /** chunk id: 333834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -30,7 +30,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk144717 = require("./144717.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk709701 = require("./709701.js");
+  Chunk659444 = require("./659444.js");
 
 function Z(e) {
   e.stopPropagation()
@@ -71,7 +71,7 @@ function R() {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.NOTIFICATIONS_INBOX);
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk709701.emptyStateContainer,
+    className: Chunk659444.emptyStateContainer,
     children: (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
       gap: 24,
       align: "center",

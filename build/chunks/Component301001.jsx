@@ -10,7 +10,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk726542 = require("./726542.js"),
   Chunk656649 = require("./656649.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk554500 = require("./554500.js");
+  Chunk735126 = require("./735126.js");
 
 function u() {
   let {
@@ -21,12 +21,12 @@ function u() {
   return (0, Chunk255367.jsxs)(Chunk656649.UV, {
     platformType: exports,
     children: [(0, Chunk255367.jsx)("div", {
-      className: Chunk554500.message,
+      className: Chunk735126.message,
       children: Chunk388032.intl.format(Chunk388032.t.RzEB5u, {
         name: require.name
       })
     }), (0, Chunk255367.jsx)("div", {
-      className: i()(Chunk554500.message, Chunk554500.details),
+      className: i()(Chunk735126.message, Chunk735126.details),
       children: Chunk388032.intl.string(Chunk388032.t["Q+lNwc"])
     })]
   })

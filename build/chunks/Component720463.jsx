@@ -22,28 +22,28 @@ var Chunk255367 = require("./255367.js"),
   Chunk335346 = require("./335346.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk806539 = require("./806539.js"),
-  Chunk293401 = require("./293401.js"),
+  Chunk213659 = require("./213659.js"),
+  Chunk103747 = require("./103747.js"),
   Chunk447489 = require("./447489.js"),
   Chunk484885 = require("./484885.js");
 let k = () => {
     let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
     return (0, Chunk255367.jsx)("div", {
-      className: Chunk293401.centerContent,
+      className: Chunk103747.centerContent,
       children: module ? (0, Chunk255367.jsx)("img", {
         src: Chunk447489.Z,
-        className: Chunk293401.orbAsset,
+        className: Chunk103747.orbAsset,
         alt: "Orb"
       }) : (0, Chunk255367.jsxs)(Chunk70097.Z, {
         autoPlay: true,
         loop: true,
-        className: Chunk293401.orbAsset,
+        className: Chunk103747.orbAsset,
         children: [(0, Chunk255367.jsx)("source", {
           src: Chunk484885.Z,
           type: "video/webm"
         }), (0, Chunk255367.jsx)("img", {
           src: Chunk447489.Z,
-          className: Chunk293401.orbAsset,
+          className: Chunk103747.orbAsset,
           alt: "Orb"
         })]
       })

@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk570140 = require("./570140.js"),
   Chunk596454 = require("./596454.jsx"),
   Chunk607070 = require("./607070.js"),
-  Chunk640264 = require("./640264.js");
+  Chunk134780 = require("./134780.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -38,7 +38,7 @@ function h(e) {
   return e
 }
 let m = 50,
-  g = [Chunk640264.emoji1, Chunk640264.emoji2, Chunk640264.emoji3, Chunk640264.emoji4],
+  g = [Chunk134780.emoji1, Chunk134780.emoji2, Chunk134780.emoji3, Chunk134780.emoji4],
   E = Chunk73800.memo(function(e) {
     var t;
     let {

@@ -1,4 +1,4 @@
-/** Chunk was on 70911 **/
+/** Chunk was on 396 **/
 /** chunk id: 436457, original params: e,t,n (module,exports,require) **/
 let r, o;
 require.d(exports, {
@@ -17,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk782605 = require("./782605.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk145575 = require("./145575.js");
+  Chunk885256 = require("./885256.js");
 let N = (r = window.GLOBAL_ENV.INVITE_HOST, o = "", null == r && (r = location.host, o = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(o, "/"));
 
 function y(e) {

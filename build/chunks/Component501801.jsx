@@ -1,4 +1,4 @@
-/** Chunk was on 12097 **/
+/** Chunk was on 873 **/
 /** chunk id: 501801, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   mp: () => x,
@@ -28,16 +28,16 @@ var Chunk255367 = require("./255367.js"),
   Chunk909746 = require("./909746.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk677234 = require("./677234.js");
+  Chunk123007 = require("./123007.js");
 
 function v(e, t) {
   let n = p.vc[e.targetType];
   return null != n && true === n[t.key]
 }
 let D = {
-  [Chunk981631.vB8.CREATE]: Chunk677234.typeCreate,
-  [Chunk981631.vB8.UPDATE]: Chunk677234.typeUpdate,
-  [Chunk981631.vB8.DELETE]: Chunk677234.typeDelete
+  [Chunk981631.vB8.CREATE]: Chunk123007.typeCreate,
+  [Chunk981631.vB8.UPDATE]: Chunk123007.typeUpdate,
+  [Chunk981631.vB8.DELETE]: Chunk123007.typeDelete
 };
 
 function b(e) {
@@ -65,32 +65,32 @@ class x extends Chunk73800.PureComponent {
       targetType: t,
       action: n,
       themeOverride: l
-    } = this.props, s = null != Chunk73800 ? Chunk677234["themeOverride".concat((0, Chunk624138.De)(Chunk73800))] : null, a = i()(Chunk677234.icon, D[module], require === Chunk981631.rsA.MESSAGE_DELETE ? Chunk677234.targetMessage : require === Chunk981631.rsA.AUTO_MODERATION_BLOCK_MESSAGE || require === Chunk981631.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || require === Chunk981631.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || require === Chunk981631.rsA.AUTO_MODERATION_QUARANTINE_USER ? Chunk677234.autoModerationBlockMessage : ({
-      [Chunk981631.KFR.ALL]: Chunk677234.targetAll,
-      [Chunk981631.KFR.GUILD]: Chunk677234.targetGuild,
-      [Chunk981631.KFR.CHANNEL]: Chunk677234.targetChannel,
-      [Chunk981631.KFR.CHANNEL_OVERWRITE]: Chunk677234.targetChannel,
-      [Chunk981631.KFR.USER]: Chunk677234.targetMember,
-      [Chunk981631.KFR.ROLE]: Chunk677234.targetRole,
-      [Chunk981631.KFR.ONBOARDING_PROMPT]: Chunk677234.targetOnboarding,
-      [Chunk981631.KFR.GUILD_ONBOARDING]: Chunk677234.targetOnboarding,
-      [Chunk981631.KFR.HOME_SETTINGS]: Chunk677234.targetOnboarding,
-      [Chunk981631.KFR.INTEGRATION]: Chunk677234.targetIntegration,
-      [Chunk981631.KFR.INVITE]: Chunk677234.targetInvite,
-      [Chunk981631.KFR.WEBHOOK]: Chunk677234.targetWebhook,
-      [Chunk981631.KFR.EMOJI]: Chunk677234.targetEmoji,
-      [Chunk981631.KFR.STICKER]: Chunk677234.targetSticker,
-      [Chunk981631.KFR.STAGE_INSTANCE]: Chunk677234.targetStageInstance,
-      [Chunk981631.KFR.GUILD_SCHEDULED_EVENT]: Chunk677234.targetGuildScheduledEvent,
-      [Chunk981631.KFR.GUILD_SCHEDULED_EVENT_EXCEPTION]: Chunk677234.targetGuildScheduledEvent,
-      [Chunk981631.KFR.THREAD]: Chunk677234.thread,
-      [Chunk981631.KFR.APPLICATION_COMMAND]: Chunk677234.applicationCommand,
-      [Chunk981631.KFR.AUTO_MODERATION_RULE]: Chunk677234.autoModerationRule,
-      [Chunk981631.KFR.GUILD_HOME]: Chunk677234.targetGuildHome,
-      [Chunk981631.KFR.GUILD_SOUNDBOARD]: Chunk677234.targetGuildSoundboard,
-      [Chunk981631.KFR.VOICE_CHANNEL_STATUS]: Chunk677234.targetChannel,
-      [Chunk981631.KFR.GUILD_MEMBER_VERIFICATION]: Chunk677234.targetMember,
-      [Chunk981631.KFR.GUILD_PROFILE]: Chunk677234.targetGuild
+    } = this.props, s = null != Chunk73800 ? Chunk123007["themeOverride".concat((0, Chunk624138.De)(Chunk73800))] : null, a = i()(Chunk123007.icon, D[module], require === Chunk981631.rsA.MESSAGE_DELETE ? Chunk123007.targetMessage : require === Chunk981631.rsA.AUTO_MODERATION_BLOCK_MESSAGE || require === Chunk981631.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || require === Chunk981631.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || require === Chunk981631.rsA.AUTO_MODERATION_QUARANTINE_USER ? Chunk123007.autoModerationBlockMessage : ({
+      [Chunk981631.KFR.ALL]: Chunk123007.targetAll,
+      [Chunk981631.KFR.GUILD]: Chunk123007.targetGuild,
+      [Chunk981631.KFR.CHANNEL]: Chunk123007.targetChannel,
+      [Chunk981631.KFR.CHANNEL_OVERWRITE]: Chunk123007.targetChannel,
+      [Chunk981631.KFR.USER]: Chunk123007.targetMember,
+      [Chunk981631.KFR.ROLE]: Chunk123007.targetRole,
+      [Chunk981631.KFR.ONBOARDING_PROMPT]: Chunk123007.targetOnboarding,
+      [Chunk981631.KFR.GUILD_ONBOARDING]: Chunk123007.targetOnboarding,
+      [Chunk981631.KFR.HOME_SETTINGS]: Chunk123007.targetOnboarding,
+      [Chunk981631.KFR.INTEGRATION]: Chunk123007.targetIntegration,
+      [Chunk981631.KFR.INVITE]: Chunk123007.targetInvite,
+      [Chunk981631.KFR.WEBHOOK]: Chunk123007.targetWebhook,
+      [Chunk981631.KFR.EMOJI]: Chunk123007.targetEmoji,
+      [Chunk981631.KFR.STICKER]: Chunk123007.targetSticker,
+      [Chunk981631.KFR.STAGE_INSTANCE]: Chunk123007.targetStageInstance,
+      [Chunk981631.KFR.GUILD_SCHEDULED_EVENT]: Chunk123007.targetGuildScheduledEvent,
+      [Chunk981631.KFR.GUILD_SCHEDULED_EVENT_EXCEPTION]: Chunk123007.targetGuildScheduledEvent,
+      [Chunk981631.KFR.THREAD]: Chunk123007.thread,
+      [Chunk981631.KFR.APPLICATION_COMMAND]: Chunk123007.applicationCommand,
+      [Chunk981631.KFR.AUTO_MODERATION_RULE]: Chunk123007.autoModerationRule,
+      [Chunk981631.KFR.GUILD_HOME]: Chunk123007.targetGuildHome,
+      [Chunk981631.KFR.GUILD_SOUNDBOARD]: Chunk123007.targetGuildSoundboard,
+      [Chunk981631.KFR.VOICE_CHANNEL_STATUS]: Chunk123007.targetChannel,
+      [Chunk981631.KFR.GUILD_MEMBER_VERIFICATION]: Chunk123007.targetMember,
+      [Chunk981631.KFR.GUILD_PROFILE]: Chunk123007.targetGuild
     })[exports], Chunk120356);
     return (0, Chunk255367.jsx)("div", {
       className: Chunk392711

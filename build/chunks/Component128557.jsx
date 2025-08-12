@@ -32,7 +32,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231873 = require("./231873.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk646863 = require("./646863.js");
+  Chunk269651 = require("./269651.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -119,7 +119,7 @@ function k(e) {
       }), null != e && (0, u.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("7654"), n.e("49049"), n.e("29328")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("49049"), n.e("36264")]).then(n.bind(n, 560114));
         return n => (0, r.jsx)(t, x(D({}, n), {
           guild: e,
           source: N.t4x.CHANNEL_WELCOME,

@@ -13,7 +13,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk726115 = require("./726115.js"),
   Chunk294330 = require("./294330.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk849781 = require("./849781.js");
+  Chunk525012 = require("./525012.js");
 let h = {
   page: Chunk981631.ZY5.GUILD_DISCOVERY,
   object: Chunk981631.qAy.CARD,

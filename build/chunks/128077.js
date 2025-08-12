@@ -1,14 +1,15 @@
-/** Chunk was on 66317 **/
+/** Chunk was on 96910 **/
 /** chunk id: 128077, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  f: () => i
+  f: () => l
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk751648 = require("./751648.js"),
   Chunk388032 = require("./388032.jsx");
 
-function i() {
-  let [e, t] = (0, Chunk73800.useState)(""), [r, i] = (0, Chunk73800.useState)([]), [o, u] = (0, Chunk73800.useState)(null), [c, s] = (0, Chunk73800.useState)(false);
+function l() {
+  let [e, t] = (0, Chunk73800.useState)(""), [r, l] = (0, Chunk73800.useState)([]), [o, s] = (0, Chunk73800.useState)(null), [c, u] = (0, Chunk73800.useState)(false);
   return (0, Chunk73800.useEffect)(() => {
     if (null != o) return void exports(Chunk388032.intl.format(Chunk388032.t["7gHWra"], {
       amount: "1 orb",
@@ -36,13 +37,13 @@ function i() {
         skuId: e,
         loadId: t,
         onRedeemStart: () => {
-          s(true), u(null)
+          u(true), s(null)
         },
         onRedeemSucceed: e => {
-          i(e), s(false), null == r || r(e)
+          l(e), u(false), null == r || r(e)
         },
         onRedeemFail: e => {
-          u(e), s(false)
+          s(e), u(false)
         }
       })
     }

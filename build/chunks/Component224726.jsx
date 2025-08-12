@@ -1,4 +1,4 @@
-/** Chunk was on 22988 **/
+/** Chunk was on 5533 **/
 /** chunk id: 224726, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -26,7 +26,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk474024 = require("./474024.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk83951 = require("./83951.js");
+  Chunk825539 = require("./825539.js");
 let E = function() {
   let {
     analyticsLocations: e
@@ -55,14 +55,14 @@ let E = function() {
   }, []), S === Chunk314852.a.FETCHED && null == T) ? (0, Chunk255367.jsx)(Chunk509798.g, {
     forceFetchGuildProfile: Z
   }) : S === Chunk314852.a.NOT_FETCHED || S === Chunk314852.a.FETCHING ? (0, Chunk255367.jsx)("main", {
-    className: Chunk83951.spinner,
+    className: Chunk825539.spinner,
     children: (0, Chunk255367.jsx)(Chunk481060.$jN, {})
   }) : null == exports || null == T ? null : (0, Chunk255367.jsx)(Chunk906732.Gt, {
     value: module,
     children: (0, Chunk255367.jsxs)("main", {
-      className: Chunk83951.content,
+      className: Chunk825539.content,
       children: [(0, Chunk255367.jsxs)("div", {
-        className: Chunk83951.leftColumn,
+        className: Chunk825539.leftColumn,
         children: [(0, Chunk255367.jsxs)("div", {
           children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
             variant: "heading-lg/semibold",
@@ -71,51 +71,51 @@ let E = function() {
           }), (0, Chunk255367.jsx)(Chunk481060.Text, {
             variant: "text-sm/medium",
             color: "header-secondary",
-            className: Chunk83951.description,
+            className: Chunk825539.description,
             children: Chunk388032.intl.string(Chunk388032.t["5PGZWV"])
           })]
         }), (0, Chunk255367.jsx)(Chunk343397.Z, {
           profile: T,
           canManageGuild: P
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk83951.divider
+          className: Chunk825539.divider
         }), (0, Chunk255367.jsx)(Chunk979664.Z, {
           profile: T,
           canManageGuild: P,
           onIconChange: w
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk83951.divider
+          className: Chunk825539.divider
         }), (0, Chunk255367.jsx)(Chunk12078.Z, {
           profile: T,
           onCustomBannerChange: R,
           canManageGuild: P
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk83951.divider
+          className: Chunk825539.divider
         }), (0, Chunk255367.jsx)(Chunk75733.Z, {
           profile: T,
           canManageGuild: P
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk83951.divider
+          className: Chunk825539.divider
         }), (0, Chunk255367.jsx)(Chunk934638.Z, {
           profile: T,
           canManageGuild: P
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk83951.divider
+          className: Chunk825539.divider
         }), (0, Chunk255367.jsx)(Chunk566036.Z, {
           profile: T,
           canManageGuild: P
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk83951.divider
+          className: Chunk825539.divider
         }), (0, Chunk255367.jsx)(Chunk474024.Z, {
           profile: T,
           canManageGuild: P
         })]
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk83951.rightColumn,
+        className: Chunk825539.rightColumn,
         children: (0, Chunk255367.jsx)(Chunk481060.Ttm, {
-          className: Chunk83951.profilePreviewContainer,
+          className: Chunk825539.profilePreviewContainer,
           children: (0, Chunk255367.jsx)(Chunk798476.ZP, {
-            className: Chunk83951.profilePreview,
+            className: Chunk825539.profilePreview,
             profile: T,
             disableCTA: true,
             onIconChange: P ? w : true,

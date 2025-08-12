@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk656649 = require("./656649.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk776699 = require("./776699.js");
+  Chunk242752 = require("./242752.js");
 let p = "https://dis.gd/Amazon-Music-Connection",
   x = null != window.opener;
 
@@ -29,7 +29,7 @@ function j() {
     switch (exports) {
       case Chunk981631.ABu.AMAZON_MUSIC:
         return (0, Chunk255367.jsx)("div", {
-          className: a()(Chunk776699.message, Chunk776699.details),
+          className: a()(Chunk242752.message, Chunk242752.details),
           children: Chunk873546.tq ? Chunk388032.intl.format(Chunk388032.t["0EikXl"], {
             link: () => (0, Chunk255367.jsx)(Chunk481060.eee, {
               href: p,
@@ -44,7 +44,7 @@ function j() {
         });
       case Chunk981631.ABu.YOUTUBE:
         if (require === Chunk981631.evJ.UNKNOWN_ACCOUNT.toString()) return (0, Chunk255367.jsx)("div", {
-          className: a()(Chunk776699.message, Chunk776699.details),
+          className: a()(Chunk242752.message, Chunk242752.details),
           children: Chunk388032.intl.format(Chunk388032.t.nQPJdH, {
             link: "https://support.google.com/youtube/answer/1646861"
           })
@@ -59,19 +59,19 @@ function j() {
   return (0, Chunk255367.jsxs)(Chunk656649.UV, {
     platformType: exports,
     children: [(0, Chunk255367.jsx)("div", {
-      className: a()(Chunk776699.message, Chunk776699.error),
+      className: a()(Chunk242752.message, Chunk242752.error),
       children: Chunk388032.intl.format(Chunk388032.t.E62dXl, {
         name: b.name
       })
     }), (0, Chunk255367.jsx)("div", {
-      className: a()(Chunk776699.message, Chunk776699.details),
+      className: a()(Chunk242752.message, Chunk242752.details),
       children: Chunk388032.intl.string(Chunk388032.t.Ra6lcn)
     }), j, x ? (0, Chunk255367.jsx)(Chunk755721.zx, {
-      className: Chunk776699.btn,
+      className: Chunk242752.btn,
       onClick: Chunk120356,
       children: Chunk388032.intl.string(Chunk388032.t.i4jeWV)
     }) : null, null != require ? (0, Chunk255367.jsx)("div", {
-      className: a()(Chunk776699.message, Chunk776699.errorDetails),
+      className: a()(Chunk242752.message, Chunk242752.errorDetails),
       children: Chunk388032.intl.format(Chunk388032.t.LElyIC, {
         errorCode: require
       })

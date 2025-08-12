@@ -1,4 +1,4 @@
-/** Chunk was on 90350 **/
+/** Chunk was on 57155 **/
 /** chunk id: 746882, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   default: () => C
@@ -30,7 +30,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk723359 = require("./723359.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk951408 = require("./951408.js");
+  Chunk472343 = require("./472343.js");
 
 function C(t) {
   let {
@@ -98,7 +98,7 @@ function C(t) {
         className: T.container,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: n(559325),
+          src: n(462991),
           className: T.img
         }), (0, r.jsx)(d.X6q, {
           variant: "heading-xl/semibold",
@@ -168,7 +168,7 @@ function C(t) {
           className: T.container,
           children: [(0, r.jsx)("img", {
             alt: "",
-            src: n(559325),
+            src: n(462991),
             className: T.img
           }), (0, r.jsx)(d.X6q, {
             variant: "heading-xl/semibold",

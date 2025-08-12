@@ -14,7 +14,7 @@ require.r(exports), require.d(exports, {
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
-  Chunk515149 = require("./515149.js"),
+  Chunk125697 = require("./125697.js"),
   Chunk159635 = require("./159635.js"),
   s = require.n(Chunk159635),
   Chunk253185 = require("./253185.js"),
@@ -65,11 +65,11 @@ function h(e) {
 }
 let m = h("en-US"),
   g = (0, Chunk424395.YI)(m, "en-US"),
-  E = new Chunk515149.IntlManager({
+  E = new Chunk125697.IntlManager({
     initialLocale: g,
     defaultLocale: "en-US"
   }).withFormatters({
-    format: (0, Chunk515149.makeReactFormatter)({
+    format: (0, Chunk125697.makeReactFormatter)({
       $i: (e, t) => (0, r.jsx)("em", {
         children: e
       }, t),
@@ -107,8 +107,8 @@ let m = h("en-US"),
         }), e)
       }
     }),
-    formatToPlainString: Chunk515149.stringFormatter,
-    formatToMarkdownString: Chunk515149.markdownFormatter,
-    formatToParts: Chunk515149.astFormatter
+    formatToPlainString: Chunk125697.stringFormatter,
+    formatToMarkdownString: Chunk125697.markdownFormatter,
+    formatToParts: Chunk125697.astFormatter
   }),
   b = e => (0, c.j1)(e, E)

@@ -1,4 +1,4 @@
-/** Chunk was on 34779 **/
+/** Chunk was on 26628 **/
 /** chunk id: 831700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => en
@@ -50,7 +50,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk915887 = require("./915887.js");
+  Chunk81252 = require("./81252.js");
 
 function Q(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -109,11 +109,11 @@ class ee extends Chunk98597.ZP {
       sortingPosition: t,
       isUserOver: n
     } = this.props;
-    if (require) return Chunk915887.containerUserOver;
+    if (require) return Chunk81252.containerUserOver;
     if (null != exports)
-      if (module > exports) return Chunk915887.containerDragAfter;
-      else return Chunk915887.containerDragBefore;
-    return Chunk915887.containerDefault
+      if (module > exports) return Chunk81252.containerDragAfter;
+      else return Chunk81252.containerDragBefore;
+    return Chunk81252.containerDefault
   }
   renderSubtitle() {
     var e;
@@ -158,7 +158,7 @@ class ee extends Chunk98597.ZP {
       channelInfo: e
     } = this.props;
     return null == module ? null : (0, Chunk255367.jsx)("div", {
-      className: Chunk915887.channelInfo,
+      className: Chunk81252.channelInfo,
       children: module
     })
   }
@@ -193,7 +193,7 @@ class ee extends Chunk98597.ZP {
     }).entrypoints, w = this.getVoiceStatesCount(), T = (0, Chunk255367.jsxs)("li", {
       ref: this.ref,
       className: o()(this.getModeClass(), {
-        [Chunk915887.disabled]: this.isDisabled()
+        [Chunk81252.disabled]: this.isDisabled()
       }),
       "data-dnd-name": module.name,
       children: [(0, Chunk255367.jsx)("div", {

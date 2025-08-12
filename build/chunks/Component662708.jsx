@@ -11,7 +11,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk771845 = require("./771845.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk48025 = require("./48025.js");
+  Chunk191441 = require("./191441.js");
 
 function d(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -39,7 +39,7 @@ class m extends Chunk73800.PureComponent {
       size: Chunk481060.CgR.DYNAMIC,
       parentComponent: "GuildFolderSettings",
       children: [(0, Chunk255367.jsxs)(Chunk481060.xBx, {
-        className: Chunk48025.header,
+        className: Chunk191441.header,
         separator: false,
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
           variant: "heading-lg/semibold",
@@ -52,7 +52,7 @@ class m extends Chunk73800.PureComponent {
           onSubmit: this.handleSubmit,
           children: [(0, Chunk255367.jsx)(Chunk481060.xJW, {
             title: Chunk388032.intl.string(Chunk388032.t.tGRbjI),
-            className: Chunk48025.formItem,
+            className: Chunk191441.formItem,
             children: (0, Chunk255367.jsx)(Chunk481060.oil, {
               maxLength: Chunk981631.dYL,
               value: exports,
@@ -62,7 +62,7 @@ class m extends Chunk73800.PureComponent {
             })
           }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
             title: Chunk388032.intl.string(Chunk388032.t.xpurRE),
-            className: Chunk48025.formItem,
+            className: Chunk191441.formItem,
             children: (0, Chunk255367.jsx)(u, {
               defaultColor: Chunk981631.Wyy,
               colors: Chunk981631.pmI,

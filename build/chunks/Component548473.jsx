@@ -30,7 +30,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk535170 = require("./535170.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk597094 = require("./597094.js");
+  Chunk989970 = require("./989970.js");
 
 function S(a) {
   for (var i = 1; i < arguments.length; i++) {
@@ -84,10 +84,10 @@ function P(a) {
 function T() {
   let a = P(Chunk180504);
   return (0, Chunk255367.jsx)("div", {
-    className: s()(Chunk597094.leftArt, Chunk597094.altFloat),
+    className: s()(Chunk989970.leftArt, Chunk989970.altFloat),
     children: (0, Chunk255367.jsx)("div", {
       ref: module,
-      className: Chunk597094.grillingIsland
+      className: Chunk989970.grillingIsland
     })
   })
 }
@@ -95,10 +95,10 @@ function T() {
 function w() {
   let a = P(Chunk535170);
   return (0, Chunk255367.jsx)("div", {
-    className: s()(Chunk597094.rightArt, Chunk597094.altFloat),
+    className: s()(Chunk989970.rightArt, Chunk989970.altFloat),
     children: (0, Chunk255367.jsx)("div", {
       ref: module,
-      className: Chunk597094.waffleIsland
+      className: Chunk989970.waffleIsland
     })
   })
 }

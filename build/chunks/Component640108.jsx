@@ -35,8 +35,8 @@ var r, i, Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk480183 = require("./480183.js"),
-  Chunk893354 = require("./893354.js");
+  Chunk413284 = require("./413284.js"),
+  Chunk794287 = require("./794287.js");
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -183,32 +183,32 @@ class X extends(r = Chunk73800.Component) {
       disabled: a
     } = this.props;
     return module ? (0, Chunk255367.jsx)(Chunk481060.P3F, {
-      className: Chunk480183.videoButton,
+      className: Chunk413284.videoButton,
       onClick: r,
       tabIndex: Chunk73800 ? false : 0,
       "aria-label": Chunk388032.intl.string(Chunk388032.t.ZcgDJS),
       children: (0, Chunk255367.jsx)(Chunk481060.fpf, {
         size: "xs",
         color: "currentColor",
-        className: Chunk480183.controlIcon
+        className: Chunk413284.controlIcon
       }, "pause")
     }) : null != exports && exports === require ? (0, Chunk255367.jsx)(Chunk481060.P3F, {
-      className: Chunk480183.videoButton,
+      className: Chunk413284.videoButton,
       onClick: i,
       tabIndex: Chunk73800 ? false : 0,
       "aria-label": Chunk388032.intl.string(Chunk388032.t.hsvh0t),
       children: (0, Chunk255367.jsx)(Chunk181058.Z, {
-        className: Chunk480183.controlIcon
+        className: Chunk413284.controlIcon
       }, "replay")
     }) : (0, Chunk255367.jsx)(Chunk481060.P3F, {
-      className: Chunk480183.videoButton,
+      className: Chunk413284.videoButton,
       onClick: i,
       tabIndex: Chunk73800 ? false : 0,
       "aria-label": Chunk388032.intl.string(Chunk388032.t.RscU7O),
       children: (0, Chunk255367.jsx)(Chunk481060.o1U, {
         size: "xs",
         color: "currentColor",
-        className: Chunk480183.controlIcon
+        className: Chunk413284.controlIcon
       }, "play")
     })
   }
@@ -230,7 +230,7 @@ class X extends(r = Chunk73800.Component) {
       type: h
     } = this.props, m = "string" == typeof Chunk283693 || Chunk283693 > 250;
     return (0, Chunk255367.jsxs)(Chunk748780.Z.div, {
-      className: Chunk70097 === Y.VIDEO ? Chunk480183.videoControls : Chunk480183.audioControls,
+      className: Chunk70097 === Y.VIDEO ? Chunk413284.videoControls : Chunk413284.audioControls,
       onClick: e => e.stopPropagation(),
       onDoubleClick: e => e.stopPropagation(),
       style: this.getAnimatedStyle(),
@@ -246,7 +246,7 @@ class X extends(r = Chunk73800.Component) {
         type: Chunk540026.Z.Types.DURATION,
         ref: this.setDurationRef
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk893354.flex,
+        className: Chunk794287.flex,
         children: (0, Chunk255367.jsx)(Chunk793148.Z, {
           ref: this.setVolumeButtonRef,
           muted: i,
@@ -258,9 +258,9 @@ class X extends(r = Chunk73800.Component) {
           onToggleMute: Chunk392711,
           onVolumeShow: u,
           onVolumeHide: Chunk374470,
-          iconClassName: Chunk480183.controlIcon,
+          iconClassName: Chunk413284.controlIcon,
           iconColor: "currentColor",
-          sliderWrapperClassName: Chunk480183.volumeSliderWrapper
+          sliderWrapperClassName: Chunk413284.volumeSliderWrapper
         })
       }), exports]
     })
@@ -340,10 +340,10 @@ class J extends Chunk73800.Component {
       play: e
     } = this.state, t = module ? Chunk481060.o1U : Chunk481060.fpf;
     return (0, Chunk255367.jsx)(Chunk748780.Z.div, {
-      className: Chunk480183.playPausePop,
+      className: Chunk413284.playPausePop,
       style: this.getAnimatedStyle(),
       children: (0, Chunk255367.jsx)(exports, {
-        className: Chunk480183.playPausePopIcon
+        className: Chunk413284.playPausePopIcon
       })
     })
   }
@@ -664,7 +664,7 @@ class et extends(i = Chunk73800.PureComponent) {
       fullscreen: s
     } = this.state, l = this.getWidth(), c = this.getHeight();
     return require ? (0, Chunk255367.jsx)(Chunk70097.Z, {
-      className: Chunk480183.video,
+      className: Chunk413284.video,
       controls: false,
       height: Chunk392711,
       poster: exports,
@@ -674,7 +674,7 @@ class et extends(i = Chunk73800.PureComponent) {
       playsInline: true,
       autoPlay: Chunk73800
     }) : (0, Chunk255367.jsx)(Chunk70097.Z, {
-      className: Chunk480183.video,
+      className: Chunk413284.video,
       controls: false,
       playsInline: true,
       autoPlay: Chunk73800,
@@ -701,7 +701,7 @@ class et extends(i = Chunk73800.PureComponent) {
   }
   renderAudio() {
     return (0, Chunk255367.jsx)("audio", {
-      className: Chunk480183.audio,
+      className: Chunk413284.audio,
       controls: false,
       onClick: this.handleVideoClick,
       onEnded: this.handleEnded,
@@ -766,8 +766,8 @@ class et extends(i = Chunk73800.PureComponent) {
       disabled: !r,
       children: exports === Y.VIDEO ? (0, Chunk255367.jsx)(Chunk268353.Z, {
         "aria-label": Chunk388032.intl.string(Chunk388032.t["2nM3Pj"]),
-        className: Chunk480183.videoButton,
-        iconClassName: Chunk480183.controlIcon,
+        className: Chunk413284.videoButton,
+        iconClassName: Chunk413284.controlIcon,
         guestWindow: window,
         onClick: this.toggleFullscreen,
         node: (0, Chunk228488.fn)(null == module ? true : module.parentNode, module)
@@ -831,12 +831,12 @@ class et extends(i = Chunk73800.PureComponent) {
       fullscreen: d,
       hideControls: f,
       playing: _
-    } = this.state, h = Chunk480183.wrapperPaused;
-    if (exports === Y.AUDIO ? h = Chunk480183.wrapperAudio : Chunk374470 ? h = Chunk480183.wrapperControlsHidden : Chunk283693 && (h = Chunk480183.wrapperPlaying), r && exports === Y.VIDEO) {
+    } = this.state, h = Chunk413284.wrapperPaused;
+    if (exports === Y.AUDIO ? h = Chunk413284.wrapperAudio : Chunk374470 ? h = Chunk413284.wrapperControlsHidden : Chunk283693 && (h = Chunk413284.wrapperPlaying), r && exports === Y.VIDEO) {
       let t = this.getWidth();
       return (0, Chunk255367.jsxs)("div", {
         className: l()(Chunk70097, {
-          [Chunk480183.wrapperMediaMosaic]: Chunk392711 === Chunk217702.hV.MOSAIC
+          [Chunk413284.wrapperMediaMosaic]: Chunk392711 === Chunk217702.hV.MOSAIC
         }),
         style: Chunk120356 ? true : {
           width: exports,
@@ -845,9 +845,9 @@ class et extends(i = Chunk73800.PureComponent) {
         onKeyDown: this.handleKeyDown,
         tabIndex: 0,
         children: [this.renderMetadata(), this.renderVideo(), (0, Chunk255367.jsx)("div", {
-          className: Chunk480183.playCenter,
+          className: Chunk413284.playCenter,
           children: (0, Chunk255367.jsx)(Chunk283756.Z, {
-            className: Chunk480183.__invalid_playButton,
+            className: Chunk413284.__invalid_playButton,
             externalURL: require,
             renderLinkComponent: Chunk73800
           })
@@ -855,8 +855,8 @@ class et extends(i = Chunk73800.PureComponent) {
       })
     }
     return (0, Chunk255367.jsxs)("div", {
-      className: l()(Chunk70097, Chunk480183.newMosaicStyle, i, {
-        [Chunk480183.wrapperMediaMosaic]: Chunk392711 === Chunk217702.hV.MOSAIC
+      className: l()(Chunk70097, Chunk413284.newMosaicStyle, i, {
+        [Chunk413284.wrapperMediaMosaic]: Chunk392711 === Chunk217702.hV.MOSAIC
       }),
       "data-fullscreen": Chunk748780,
       onMouseEnter: this.handleMouseEnter,
@@ -873,7 +873,7 @@ class et extends(i = Chunk73800.PureComponent) {
         })
       }), exports === Y.VIDEO ? this.renderPlayPausePop() : null, null != u ? (0, Chunk255367.jsx)("div", {
         className: l()({
-          [Chunk480183.overlayContentHidden]: Chunk283693 || Chunk748780
+          [Chunk413284.overlayContentHidden]: Chunk283693 || Chunk748780
         }),
         children: u()
       }) : null]

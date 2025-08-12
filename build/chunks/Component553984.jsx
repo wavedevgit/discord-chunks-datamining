@@ -1,4 +1,4 @@
-/** Chunk was on 34779 **/
+/** Chunk was on 26628 **/
 /** chunk id: 553984, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v,
@@ -17,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk334426 = require("./334426.js"),
   Chunk982183 = require("./982183.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk381231 = require("./381231.js");
+  Chunk603706 = require("./603706.js");
 
 function b(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -90,13 +90,13 @@ function v() {
       setSelectedFilter: u
     } = (0, Chunk725739.Z)();
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk381231.filters,
+    className: Chunk603706.filters,
     children: [(0, Chunk255367.jsx)(Chunk481060.njP, {
       look: "grey",
       orientation: "horizontal",
       onItemSelect: Chunk804932,
       selectedItem: Chunk377171,
-      className: Chunk381231.tabBar,
+      className: Chunk603706.tabBar,
       children: exports.flatMap(t => (0, r.jsx)(s.njP.Item, {
         id: t,
         "aria-label": t,

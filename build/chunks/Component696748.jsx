@@ -19,8 +19,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk50611 = require("./50611.js"),
-  Chunk20493 = require("./20493.js");
+  Chunk611319 = require("./611319.js"),
+  Chunk881488 = require("./881488.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -74,10 +74,10 @@ class v extends Chunk73800.PureComponent {
         children: [(0, Chunk255367.jsx)(Chunk600164.Z, {
           justify: Chunk600164.Z.Justify.CENTER,
           children: (0, Chunk255367.jsx)("div", {
-            className: Chunk50611.errorArt
+            className: Chunk611319.errorArt
           })
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk50611.description,
+          className: Chunk611319.description,
           children: Chunk388032.intl.format(Chunk388032.t.RAaWyc, {
             applicationName: module.name
           })
@@ -86,8 +86,8 @@ class v extends Chunk73800.PureComponent {
         children: (0, Chunk255367.jsxs)(Chunk600164.Z, {
           justify: Chunk600164.Z.Justify.BETWEEN,
           children: [(0, Chunk255367.jsx)(Chunk755721.zx, {
-            className: Chunk50611.linkButton,
-            size: Chunk50611.linkButtonSize,
+            className: Chunk611319.linkButton,
+            size: Chunk611319.linkButtonSize,
             look: Chunk755721.zx.Looks.LINK,
             color: Chunk755721.zx.Colors.PRIMARY,
             onClick: this.onClose,
@@ -97,7 +97,7 @@ class v extends Chunk73800.PureComponent {
             justify: Chunk600164.Z.Justify.END,
             children: [(0, Chunk255367.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
-              className: Chunk50611.retryButton,
+              className: Chunk611319.retryButton,
               children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
                 variant: "secondary",
                 text: Chunk388032.intl.string(Chunk388032.t["5911LS"]),
@@ -120,24 +120,24 @@ class v extends Chunk73800.PureComponent {
     } = this.props;
     if (exports.type !== Chunk981631.TzF.CONFLICT) throw Error("Cannot render conflict for non conflict type");
     return (0, Chunk255367.jsxs)(Chunk481060.hzk, {
-      className: Chunk20493.marginBottom20,
+      className: Chunk881488.marginBottom20,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk50611.description,
+        className: Chunk611319.description,
         children: Chunk388032.intl.format(Chunk388032.t.eyXUPz, {
           applicationName: module.name
         })
-      }), this.renderConflictButton(Chunk388032.intl.string(Chunk388032.t.AQUmkp), exports.remote.timestamp, Chunk50611.conflictDownloadArt, this.handleChooseDownload), (0, Chunk255367.jsxs)(Chunk600164.Z, {
-        className: Chunk50611.choiceWrapper,
+      }), this.renderConflictButton(Chunk388032.intl.string(Chunk388032.t.AQUmkp), exports.remote.timestamp, Chunk611319.conflictDownloadArt, this.handleChooseDownload), (0, Chunk255367.jsxs)(Chunk600164.Z, {
+        className: Chunk611319.choiceWrapper,
         align: Chunk600164.Z.Align.CENTER,
         children: [(0, Chunk255367.jsx)("div", {
-          className: Chunk50611.choiceLine
+          className: Chunk611319.choiceLine
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk50611.choiceTitle,
+          className: Chunk611319.choiceTitle,
           children: Chunk388032.intl.string(Chunk388032.t.WUsA2N)
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk50611.choiceLine
+          className: Chunk611319.choiceLine
         })]
-      }), this.renderConflictButton(Chunk388032.intl.string(Chunk388032.t.AXVws7), exports.next.timestamp, Chunk50611.conflictUploadArt, this.handleChooseUpload)]
+      }), this.renderConflictButton(Chunk388032.intl.string(Chunk388032.t.AXVws7), exports.next.timestamp, Chunk611319.conflictUploadArt, this.handleChooseUpload)]
     })
   }
   render() {
@@ -147,17 +147,17 @@ class v extends Chunk73800.PureComponent {
     } = this.props, n = module.type === Chunk981631.TzF.CONFLICT ? Chunk388032.intl.string(Chunk388032.t.oNbO1d) : Chunk388032.intl.string(Chunk388032.t.as4Tgo);
     return (0, Chunk255367.jsxs)(Chunk481060.Y0X, {
       transitionState: exports,
-      className: Chunk50611.modal,
+      className: Chunk611319.modal,
       "aria-label": require,
       parentComponent: "CloudSyncResolutionModal",
       children: [(0, Chunk255367.jsxs)(Chunk481060.xBx, {
         separator: false,
         children: [(0, Chunk255367.jsx)(Chunk481060.olH, {
-          className: Chunk50611.closeButton,
+          className: Chunk611319.closeButton,
           onClick: this.onClose
         }), (0, Chunk255367.jsx)(Chunk481060.vwX, {
           tag: "h2",
-          className: Chunk20493.marginReset,
+          className: Chunk881488.marginReset,
           children: require
         })]
       }), module.type === Chunk981631.TzF.CONFLICT ? this.renderConflict() : this.renderError()]

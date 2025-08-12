@@ -32,7 +32,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk302463 = require("./302463.js"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk800515 = require("./800515.js");
+  Chunk182753 = require("./182753.js");
 
 function w(e) {
   let {
@@ -107,28 +107,28 @@ function M() {
     };
   return (0, Chunk255367.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.BRAND,
-    className: Chunk800515.notice,
+    className: Chunk182753.notice,
     children: [(0, Chunk255367.jsxs)(w, {
       onClick: () => U({
         backToSettings: true
       }),
-      className: Chunk800515.backButton,
+      className: Chunk182753.backButton,
       children: [(0, Chunk255367.jsx)(Chunk671533.Z, {
         width: 16,
         height: 16,
         direction: Chunk671533.Z.Directions.LEFT,
-        className: Chunk800515.backArrow
+        className: Chunk182753.backArrow
       }), M]
     }), j && Chunk755721 ? (0, Chunk255367.jsx)("div", {
-      className: Chunk800515.noticeContents,
+      className: Chunk182753.noticeContents,
       children: (0, Chunk255367.jsx)("div", {
-        className: Chunk800515.noticeText,
+        className: Chunk182753.noticeText,
         children: Chunk388032.intl.string(Chunk388032.t.PxbiAQ)
       })
     }) : (0, Chunk255367.jsxs)("div", {
-      className: Chunk800515.noticeContents,
+      className: Chunk182753.noticeContents,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk800515.noticeText,
+        className: Chunk182753.noticeText,
         children: Chunk755721 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["0PHahI"], {
           numRoles: Object.keys(Chunk120356).length
         }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.vMlK8v, {
@@ -156,14 +156,14 @@ function M() {
           })
         }
       }), Chunk755721 && (0, Chunk255367.jsx)(Chunk481060.DY3, {
-        className: Chunk800515.previewWarning,
+        className: Chunk182753.previewWarning,
         text: Chunk388032.intl.string(Chunk388032.t.mW4DUF),
         children: (0, Chunk255367.jsx)(Chunk481060.Mgn, {
           size: "xs",
           color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css
         })
       }), Chunk358085 && (0, Chunk255367.jsx)(Chunk481060.DY3, {
-        className: Chunk800515.previewWarning,
+        className: Chunk182753.previewWarning,
         text: Chunk388032.intl.formatToPlainString(Chunk388032.t.eummvb, {
           maxTiers: Chunk293810.fF,
           maxProducts: Chunk302463.dD

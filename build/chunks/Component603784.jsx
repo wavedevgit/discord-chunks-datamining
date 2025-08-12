@@ -1,4 +1,4 @@
-/** Chunk was on 22988 **/
+/** Chunk was on 5533 **/
 /** chunk id: 603784, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -27,7 +27,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk501801 = require("./501801.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk677234 = require("./677234.js");
+  Chunk123007 = require("./123007.js");
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -68,7 +68,7 @@ class P extends Chunk73800.PureComponent {
     } = this.props;
     return (0, Chunk255367.jsxs)("span", {
       onContextMenu: exports,
-      className: Chunk677234.userHook,
+      className: Chunk123007.userHook,
       children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk51144.ZP.getUserTag(module, {
@@ -76,7 +76,7 @@ class P extends Chunk73800.PureComponent {
         })
       }), "0" !== module.discriminator && (0, Chunk255367.jsxs)(Chunk481060.Text, {
         variant: "text-xs/normal",
-        className: Chunk677234.discrim,
+        className: Chunk123007.discrim,
         children: ["#", module.discriminator]
       })]
     })

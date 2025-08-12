@@ -18,7 +18,7 @@ var Chunk296009 = require("./296009.js"),
   Chunk455731 = require("./455731.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk789101 = require("./789101.js");
+  Chunk663161 = require("./663161.js");
 let y = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     component: Chunk566007.Z,

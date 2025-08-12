@@ -14,18 +14,18 @@ var Chunk120356 = require("./120356.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk760858 = require("./760858.js"),
+  Chunk337917 = require("./337917.js"),
   u = function(e) {
     return e.RED = "RED", e.GRAY = "GRAY", e
   }({});
 let d = {
-    LARGE: Chunk760858.liveLarge,
-    SMALL: Chunk760858.liveSmall
+    LARGE: Chunk337917.liveLarge,
+    SMALL: Chunk337917.liveSmall
   },
   f = {
-    [Chunk481060.Dv2.ROUND]: Chunk760858.liveShapeRound,
-    [Chunk481060.Dv2.ROUND_LEFT]: Chunk760858.liveShapeRoundLeft,
-    [Chunk481060.Dv2.ROUND_RIGHT]: Chunk760858.liveShapeRoundRight,
+    [Chunk481060.Dv2.ROUND]: Chunk337917.liveShapeRound,
+    [Chunk481060.Dv2.ROUND_LEFT]: Chunk337917.liveShapeRoundLeft,
+    [Chunk481060.Dv2.ROUND_RIGHT]: Chunk337917.liveShapeRoundRight,
     [Chunk481060.Dv2.SQUARE]: ""
   };
 

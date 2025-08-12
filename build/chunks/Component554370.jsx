@@ -1,4 +1,4 @@
-/** Chunk was on 89298 **/
+/** Chunk was on 9646 **/
 /** chunk id: 554370, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => er
@@ -46,11 +46,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk987650 = require("./987650.js"),
   Chunk757744 = require("./757744.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk960972 = require("./960972.js");
+  Chunk374907 = require("./374907.js");
 let Y = !Chunk358085.isPlatformEmbedded && false,
   Q = Y ? (0, Chunk255367.jsx)(Chunk70097.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
-    className: Chunk960972.videoDev,
+    className: Chunk374907.videoDev,
     autoPlay: true,
     loop: true,
     muted: true

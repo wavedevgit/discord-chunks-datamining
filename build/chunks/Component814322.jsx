@@ -24,19 +24,19 @@ var Chunk255367 = require("./255367.js"),
   Chunk423915 = require("./423915.jsx"),
   Chunk477839 = require("./477839.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk412190 = require("./412190.js");
+  Chunk730740 = require("./730740.js");
 
 function _() {
   let e = Math.floor((0, Chunk442837.e7)([Chunk120421.Z], () => Chunk120421.Z.currentPoints)),
     t = module.toString().length,
     n = "0".repeat(Math.max(0, Chunk477839.eg - exports));
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk412190.points,
+    className: Chunk730740.points,
     children: [(0, Chunk255367.jsx)("span", {
-      className: Chunk412190.pointsPadding,
+      className: Chunk730740.pointsPadding,
       children: require
     }), (0, Chunk255367.jsx)("span", {
-      className: Chunk412190.pointsValue,
+      className: Chunk730740.pointsValue,
       children: module
     })]
   })

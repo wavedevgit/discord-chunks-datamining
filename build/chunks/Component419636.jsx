@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 419636, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -10,7 +10,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk447293 = require("./447293.jsx"),
   Chunk58839 = require("./58839.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk842123 = require("./842123.js");
+  Chunk267320 = require("./267320.js");
 let d = {
   offset: {
     top: false
@@ -19,19 +19,19 @@ let d = {
 
 function u() {
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk842123.socialLinks,
+    className: Chunk267320.socialLinks,
     children: [(0, Chunk255367.jsx)(Chunk481060.eee, {
       target: "_blank",
       tabIndex: false,
       rel: "author",
       title: "X",
       href: (0, Chunk299379.Z)(Chunk981631.RK.TWITTER),
-      className: Chunk842123.link,
+      className: Chunk267320.link,
       focusProps: d,
       children: (0, Chunk255367.jsx)(Chunk481060.TAi, {
         size: "xs",
         color: "currentColor",
-        colorClass: Chunk842123.foreground,
+        colorClass: Chunk267320.foreground,
         "aria-hidden": true
       })
     }), (0, Chunk255367.jsx)(Chunk481060.eee, {
@@ -40,12 +40,12 @@ function u() {
       title: "Instagram",
       tabIndex: false,
       href: Chunk981631.fK7.INSTAGRAM_URL,
-      className: Chunk842123.link,
+      className: Chunk267320.link,
       focusProps: d,
       children: (0, Chunk255367.jsx)(Chunk481060.gST, {
         size: "xs",
         color: "currentColor",
-        colorClass: Chunk842123.foreground,
+        colorClass: Chunk267320.foreground,
         "aria-hidden": true
       })
     }), (0, Chunk255367.jsx)(Chunk481060.eee, {
@@ -54,12 +54,12 @@ function u() {
       title: "Facebook",
       tabIndex: false,
       href: Chunk981631.fK7.FACEBOOK_URL,
-      className: Chunk842123.link,
+      className: Chunk267320.link,
       focusProps: d,
       children: (0, Chunk255367.jsx)(Chunk481060.tdR, {
         size: "xs",
         color: "currentColor",
-        colorClass: Chunk842123.foreground,
+        colorClass: Chunk267320.foreground,
         "aria-hidden": true
       })
     }), (0, Chunk255367.jsx)(Chunk481060.eee, {
@@ -68,12 +68,12 @@ function u() {
       title: "YouTube",
       tabIndex: false,
       href: Chunk981631.fK7.YOUTUBE_URL,
-      className: Chunk842123.link,
+      className: Chunk267320.link,
       focusProps: d,
       children: (0, Chunk255367.jsx)(Chunk58839.Z, {
         width: 16,
         height: 16,
-        foreground: Chunk842123.foreground,
+        foreground: Chunk267320.foreground,
         "aria-hidden": true
       })
     }), (0, Chunk255367.jsx)(Chunk481060.eee, {
@@ -82,12 +82,12 @@ function u() {
       title: "TikTok",
       tabIndex: false,
       href: Chunk981631.fK7.TIKTOK_URL,
-      className: Chunk842123.link,
+      className: Chunk267320.link,
       focusProps: d,
       children: (0, Chunk255367.jsx)(Chunk447293.Z, {
         width: 16,
         height: 16,
-        foreground: Chunk842123.foreground,
+        foreground: Chunk267320.foreground,
         "aria-hidden": true
       })
     })]

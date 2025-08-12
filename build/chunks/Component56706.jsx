@@ -11,8 +11,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk358820 = require("./358820.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk616257 = require("./616257.js"),
-  Chunk493733 = require("./493733.js");
+  Chunk881291 = require("./881291.js"),
+  Chunk2837 = require("./2837.js");
 
 function x() {
   let [e, t] = Chunk73800.useState(30), a = () => {
@@ -27,15 +27,15 @@ function x() {
     })
   }, []);
   return (0, Chunk255367.jsx)(Chunk481060.zJl, {
-    className: Chunk616257.panel,
+    className: Chunk881291.panel,
     children: (0, Chunk255367.jsxs)("div", {
-      className: Chunk493733.panelInner,
+      className: Chunk2837.panelInner,
       children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
-        className: Chunk493733.panelHeader,
+        className: Chunk2837.panelHeader,
         variant: "text-lg/bold",
         children: "Voice Filters"
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk493733.panelRow,
+        className: Chunk2837.panelRow,
         children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Set number of seconds remaining in countdown"
@@ -51,7 +51,7 @@ function x() {
           onClick: () => require()
         })]
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk493733.panelRow,
+        className: Chunk2837.panelRow,
         children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Reset to API values"
@@ -64,7 +64,7 @@ function x() {
           }
         })]
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk493733.panelRow,
+        className: Chunk2837.panelRow,
         children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Pretend the native module is loading so when you close your app it'll look as if it crashed on load"
@@ -75,7 +75,7 @@ function x() {
           onClick: x
         })]
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk493733.panelRow,
+        className: Chunk2837.panelRow,
         children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
           size: "sm",

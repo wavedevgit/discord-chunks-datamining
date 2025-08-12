@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk335131 = require("./335131.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk279248 = require("./279248.js");
+  Chunk37912 = require("./37912.js");
 let _ = e => {
   let {
     onClose: t
@@ -39,7 +39,6 @@ let _ = e => {
       })
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      color: "header-primary",
       children: d.intl.format(d.t.twSHtb, {
         checkItOut: e => (0, r.jsx)(i.P3F, {
           className: f.link,

@@ -1,4 +1,4 @@
-/** Chunk was on 45620 **/
+/** Chunk was on 96910 **/
 /** chunk id: 297651, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -17,19 +17,19 @@ var Chunk73800 = require("./73800.js"),
 function p(e, t) {
   let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "product",
     p = (0, o.sp)(),
-    g = (0, l.e7)([s.Z], () => s.Z.getProduct(e)),
-    f = (0, u.x)(),
-    b = i.ZP.canUseCollectibles(f),
-    h = n.useRef(null),
+    b = (0, a.e7)([s.Z], () => s.Z.getProduct(e)),
+    h = (0, u.x)(),
+    f = l.ZP.canUseCollectibles(h),
+    v = n.useRef(null),
     m = n.useCallback(() => {
-      let n = null != g ? (0, c.Vw)(g, b, false) : null,
-        l = null != g ? (0, c.eu)(g, b, false) : true;
-      a.default.track(d.rMx.COLLECTIBLES_TILE_IMPRESSION, {
+      let n = null != b ? (0, c.Vw)(b, f, false) : null,
+        a = null != b ? (0, c.eu)(b, f, false) : true;
+      i.default.track(d.rMx.COLLECTIBLES_TILE_IMPRESSION, {
         collectibles_shop_session_id: null == p ? true : p.sessionId,
         sku_id: e,
         display_price: null == n ? true : n.amount,
         display_price_currency: null == n ? true : n.currency.toString(),
-        display_price_strikethrough: l,
+        display_price_strikethrough: a,
         position: null == p ? true : p.tilePosition,
         page_type: t,
         page_category: null == p ? true : p.pageCategory,
@@ -37,14 +37,14 @@ function p(e, t) {
         type: r,
         category_position: null == p ? true : p.categoryPosition
       })
-    }, [null == p ? true : p.sessionId, null == p ? true : p.categoryPosition, null == p ? true : p.pageCategory, null == p ? true : p.pageSection, null == p ? true : p.tilePosition, b, t, g, e, r]),
+    }, [null == p ? true : p.sessionId, null == p ? true : p.categoryPosition, null == p ? true : p.pageCategory, null == p ? true : p.pageSection, null == p ? true : p.tilePosition, f, t, b, e, r]),
     _ = n.useCallback(e => {
-      e ? null === h.current && (h.current = setTimeout(() => {
-        m(), h.current = null
-      }, 1e3)) : null !== h.current && (clearTimeout(h.current), h.current = null)
+      e ? null === v.current && (v.current = setTimeout(() => {
+        m(), v.current = null
+      }, 1e3)) : null !== v.current && (clearTimeout(v.current), v.current = null)
     }, [m]);
   return n.useEffect(() => () => {
-    null !== h.current && (clearTimeout(h.current), h.current = null)
+    null !== v.current && (clearTimeout(v.current), v.current = null)
   }, []), {
     handleCardVisibilityChange: _
   }

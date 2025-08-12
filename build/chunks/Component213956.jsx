@@ -1,4 +1,4 @@
-/** Chunk was on 22988 **/
+/** Chunk was on 5533 **/
 /** chunk id: 213956, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -22,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk598622 = require("./598622.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk296205 = require("./296205.js");
+  Chunk889400 = require("./889400.js");
 
 function y() {
   let e, t = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildId()),
@@ -65,15 +65,15 @@ function y() {
   }
   return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
     children: [y !== Chunk740903.u.OVERVIEW && (0, Chunk255367.jsxs)(Chunk755721.zx, {
-      className: Chunk296205.back,
-      innerClassName: Chunk296205.backButton,
+      className: Chunk889400.back,
+      innerClassName: Chunk889400.backButton,
       look: Chunk755721.zx.Looks.BLANK,
       size: Chunk755721.zx.Sizes.MIN,
       onClick: () => {
         (0, Chunk84613.K)(Chunk740903.u.OVERVIEW)
       },
       children: [(0, Chunk255367.jsx)(Chunk768762.Z, {
-        className: Chunk296205.__invalid_arrow,
+        className: Chunk889400.__invalid_arrow,
         direction: Chunk768762.Z.Directions.LEFT
       }), (0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-sm/semibold",

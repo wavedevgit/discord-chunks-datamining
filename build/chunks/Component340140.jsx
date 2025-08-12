@@ -12,8 +12,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk698066 = require("./698066.js"),
   Chunk648159 = require("./648159.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk424698 = require("./424698.js"),
-  Chunk679335 = require("./679335.js");
+  Chunk284165 = require("./284165.js"),
+  Chunk112900 = require("./112900.js");
 
 function f(t, e, n) {
   return e in t ? Object.defineProperty(t, e, {
@@ -39,18 +39,18 @@ class p extends Chunk73800.PureComponent {
       parentComponent: "ReportProblem",
       children: [(0, Chunk255367.jsx)(Chunk648159.Z, {}), (0, Chunk255367.jsxs)(Chunk481060.xBx, {
         separator: false,
-        className: Chunk424698.modalHeader,
+        className: Chunk284165.modalHeader,
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
           variant: "text-md/semibold",
-          className: Chunk679335.title,
+          className: Chunk112900.title,
           children: Chunk388032.intl.string(Chunk388032.t.qnJ9W1)
         }), (0, Chunk255367.jsx)(Chunk481060.olH, {
-          className: Chunk679335.closeButton,
-          innerClassName: Chunk424698.modalInnerCloseButton,
+          className: Chunk112900.closeButton,
+          innerClassName: Chunk284165.modalInnerCloseButton,
           onClick: require
         })]
       }), (0, Chunk255367.jsxs)(Chunk481060.hzk, {
-        className: Chunk679335.content,
+        className: Chunk112900.content,
         children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
           children: Chunk388032.intl.string(Chunk388032.t["7vw0h4"])
@@ -68,10 +68,10 @@ class p extends Chunk73800.PureComponent {
             maxVisibleItems: 4
           })
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk424698.art
+          className: Chunk284165.art
         })]
       }), (0, Chunk255367.jsxs)(Chunk481060.mzw, {
-        className: Chunk679335.__invalid_footer,
+        className: Chunk112900.__invalid_footer,
         children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: Chunk388032.intl.string(Chunk388032.t.E48BIS),

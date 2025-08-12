@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 889029, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -17,8 +17,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk700195 = require("./700195.js"),
-  Chunk20493 = require("./20493.js");
+  Chunk752983 = require("./752983.js"),
+  Chunk881488 = require("./881488.js");
 
 function x() {
   let {
@@ -52,14 +52,14 @@ function x() {
     })
   };
   return (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-    className: Chunk700195.container,
+    className: Chunk752983.container,
     tag: Chunk481060.RB0.H1,
     title: Chunk388032.intl.string(Chunk388032.t.S5GfOT),
     children: [(0, Chunk255367.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.STREAMER_MODE_INTEGRATIONS,
       children: (0, Chunk255367.jsx)(Chunk481060.ToO, {
-        className: Chunk20493.marginBottom40,
-        iconClassName: Chunk700195.noticeIcon,
+        className: Chunk881488.marginBottom40,
+        iconClassName: Chunk752983.noticeIcon,
         type: Chunk481060.Dd5.PRIMARY,
         imageData: {
           src: require("./560264.js"),
@@ -93,7 +93,7 @@ function x() {
       })()]
     }), (0, Chunk255367.jsxs)("div", {
       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-        className: s()(Chunk20493.marginTop40, Chunk20493.marginBottom8, Chunk700195.sectionLabel),
+        className: s()(Chunk881488.marginTop40, Chunk881488.marginBottom8, Chunk752983.sectionLabel),
         children: Chunk388032.intl.string(Chunk388032.t["+1H47u"])
       }), (0, Chunk255367.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,

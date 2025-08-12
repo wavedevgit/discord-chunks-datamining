@@ -1,4 +1,4 @@
-/** Chunk was on 11776 **/
+/** Chunk was on 29458 **/
 /** chunk id: 430790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -7,7 +7,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk607813 = require("./607813.js");
+  Chunk915642 = require("./915642.js");
 
 function c() {
   let e = Chunk73800.useCallback(() => {
@@ -38,7 +38,7 @@ function c() {
     })
   }, []);
   return (0, Chunk255367.jsxs)(Chunk481060.P3F, {
-    className: Chunk607813.addWidgetButton,
+    className: Chunk915642.addWidgetButton,
     onClick: module,
     children: [(0, Chunk255367.jsx)(Chunk481060.qJs, {
       size: "sm",

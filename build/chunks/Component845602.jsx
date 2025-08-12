@@ -21,8 +21,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk131085 = require("./131085.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk606217 = require("./606217.js"),
-  Chunk183375 = require("./183375.js");
+  Chunk968946 = require("./968946.js"),
+  Chunk482985 = require("./482985.js");
 
 function y() {
   var e;
@@ -43,14 +43,14 @@ function y() {
     animateGradient: true
   });
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk606217.container,
+    className: Chunk968946.container,
     children: [(0, Chunk255367.jsx)("div", {
-      className: Chunk606217.messageContainer,
+      className: Chunk968946.messageContainer,
       children: (0, Chunk255367.jsx)(Chunk742409.l, {
         avatar: Chunk957537.Z,
         username: "Cherry",
         usernameStyle: Chunk120356,
-        usernameClassName: a()(Chunk839008, Chunk183375.animateGradient),
+        usernameClassName: a()(Chunk839008, Chunk482985.animateGradient),
         message: Chunk388032.intl.string(Chunk388032.t["6OSasb"])
       })
     }), (0, Chunk255367.jsx)(Chunk797967.default, {

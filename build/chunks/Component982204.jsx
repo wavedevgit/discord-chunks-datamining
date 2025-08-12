@@ -23,7 +23,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk937615 = require("./937615.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk63477 = require("./63477.js");
+  Chunk176985 = require("./176985.js");
 let O = (e, t, n) => null != n && e.productLine === E.POd.COLLECTIBLES && n.type !== l.Z.BUNDLE && t ? "THREE_COLUMN" : "TWO_COLUMN",
   v = e => {
     if (null == e.discounts || 0 === e.discounts.length) return null;

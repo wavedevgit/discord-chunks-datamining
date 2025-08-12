@@ -15,19 +15,19 @@ var Chunk255367 = require("./255367.js"),
   Chunk535396 = require("./535396.js"),
   Chunk93841 = require("./93841.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk475338 = require("./475338.js");
+  Chunk574524 = require("./574524.js");
 
 function x(e) {
   var t, n, x;
-  let _, {
-      guildId: v,
+  let v, {
+      guildId: _,
       group: b,
       powerups: j
     } = e,
     [h, E] = o.useState(false),
-    C = (0, a.Gv)(v, j),
+    C = (0, a.Gv)(_, j),
     I = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
-    O = (0, u.Z)(b, v);
+    O = (0, c.Z)(b, _);
   if (true === O || j.length <= 0) return null;
   let y = C.some(e => e.type !== p.A3.INACTIVE),
     P = (0, d.d)(y),
@@ -37,10 +37,10 @@ function x(e) {
       } = t, r = null == n ? true : n.ends_at;
       return null == r ? e : null == e || r < e ? r : e
     }, true);
-  true !== w ? _ = {
+  true !== w ? v = {
     type: "expiring",
     expiringAt: w
-  } : y && (_ = {
+  } : y && (v = {
     type: "active",
     statusText: m.intl.string(f.default.FFLkm5)
   });
@@ -68,8 +68,9 @@ function x(e) {
     T = y ? N : Z,
     A = !y && S > T ? "+" : true,
     R = !I && h ? O.image.animatedUrl : O.image.staticUrl,
-    k = null != O.viewCta && "" !== O.viewCta ? O.viewCta : m.intl.string(f.default["27GkOj"]);
-  return (0, r.jsxs)(c.aB, {
+    k = null != O.viewCta && "" !== O.viewCta ? O.viewCta : m.intl.string(f.default["27GkOj"]),
+    L = null != O.viewCtaTooltip && "" !== O.viewCtaTooltip ? O.viewCtaTooltip : true;
+  return (0, r.jsxs)(u.aB, {
     label: O.title,
     isActive: y,
     badge: O.badge,
@@ -80,11 +81,11 @@ function x(e) {
       alt: "",
       src: R,
       className: g.image
-    }), (0, r.jsx)(c.Q9, {
+    }), (0, r.jsx)(u.Q9, {
       title: O.title,
       textColor: P,
-      footer: (0, r.jsx)(c.uf, {
-        status: _,
+      footer: (0, r.jsx)(u.uf, {
+        status: v,
         cost: T,
         costDecorator: A
       }),
@@ -94,8 +95,14 @@ function x(e) {
         variant: "text-sm/medium",
         children: O.description
       })
-    }), (0, r.jsx)(c.N4, {
-      children: (0, r.jsx)(l.zxk, {
+    }), (0, r.jsx)(u.N4, {
+      children: null != L ? (0, r.jsx)(l.DY3, {
+        text: L,
+        children: (0, r.jsx)(l.zxk, {
+          text: k,
+          fullWidth: true
+        })
+      }) : (0, r.jsx)(l.zxk, {
         text: k,
         fullWidth: true
       })

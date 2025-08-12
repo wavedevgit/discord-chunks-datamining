@@ -26,7 +26,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk843445 = require("./843445.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk681205 = require("./681205.js");
+  Chunk356998 = require("./356998.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,10 +68,10 @@ class j extends Chunk73800.PureComponent {
       isAuthenticated: e,
       location: t
     } = this.props, n = module ? (0, Chunk255367.jsx)("div", {
-      className: Chunk681205.applicationStore,
+      className: Chunk356998.applicationStore,
       children: this.renderContent()
     }) : (0, Chunk255367.jsx)(T, {
-      className: Chunk681205.applicationStore,
+      className: Chunk356998.applicationStore,
       location: exports,
       render: this.renderContent
     });

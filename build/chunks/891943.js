@@ -1,9 +1,10 @@
-/** Chunk was on 90350 **/
-/** chunk id: 891943, original params: t,e,n (module,exports,require) **/
-require.d(exports, {
-  Z: () => r
-});
+/** Chunk was on 67244 **/
+/** chunk id: 891943, original params: e,t,r (module,exports,require) **/
+"use strict";
 
-function r(t, e) {
-  if (!(t instanceof e)) throw TypeError("Cannot call a class as a function")
+function a(e, t) {
+  if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
+require.d(exports, {
+  Z: () => a
+})

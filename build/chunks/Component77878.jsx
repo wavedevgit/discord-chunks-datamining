@@ -8,7 +8,7 @@ require("./73800.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk981631 = require("./981631.js"),
-  Chunk659195 = require("./659195.js");
+  Chunk553133 = require("./553133.js");
 let s = "1",
   c = "2",
   u = "3",
@@ -22,19 +22,19 @@ let s = "1",
   _ = "5",
   O = {
     [Chunk981631.aIt.ESRB]: {
-      [s]: Chunk659195.esrbEveryone,
-      [c]: Chunk659195.esrbEveryoneTenPlus,
-      [u]: Chunk659195.esrbTeen,
-      [d]: Chunk659195.esrbMature,
-      [p]: Chunk659195.esrbAdult,
-      [f]: Chunk659195.esrbRatingPending
+      [s]: Chunk553133.esrbEveryone,
+      [c]: Chunk553133.esrbEveryoneTenPlus,
+      [u]: Chunk553133.esrbTeen,
+      [d]: Chunk553133.esrbMature,
+      [p]: Chunk553133.esrbAdult,
+      [f]: Chunk553133.esrbRatingPending
     },
     [Chunk981631.aIt.PEGI]: {
-      [h]: Chunk659195.pegiThree,
-      [g]: Chunk659195.pegiSeven,
-      [m]: Chunk659195.pegiTwelve,
-      [b]: Chunk659195.pegiSixteen,
-      [_]: Chunk659195.pegiEighteen
+      [h]: Chunk553133.pegiThree,
+      [g]: Chunk553133.pegiSeven,
+      [m]: Chunk553133.pegiTwelve,
+      [b]: Chunk553133.pegiSixteen,
+      [_]: Chunk553133.pegiEighteen
     }
   },
   E = e => {

@@ -10,7 +10,7 @@ var n, o, a, Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
   c = require.n(Chunk120356),
   Chunk569499 = require("./569499.js"),
-  Chunk634715 = require("./634715.js");
+  Chunk309318 = require("./309318.js");
 
 function f(e, r, t) {
   return r in e ? Object.defineProperty(e, r, {
@@ -67,7 +67,7 @@ class b extends(o = Chunk73800.PureComponent) {
         height: n.size,
         backgroundColor: n.bgColor
       },
-      className: c()(Chunk634715.qrCodeContainer, exports),
+      className: c()(Chunk309318.qrCodeContainer, exports),
       children: (0, Chunk255367.jsx)(Chunk569499.default, C({
         value: require,
         level: "M"
@@ -86,11 +86,11 @@ class g extends(a = Chunk73800.PureComponent) {
       overlaySize: e
     } = this.props, r = p[null != module ? module : "SIZE_40"];
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk634715.qrCodeOverlayContainer,
+      className: Chunk309318.qrCodeOverlayContainer,
       children: [(0, Chunk255367.jsx)(b, C({}, this.props)), (0, Chunk255367.jsx)("div", {
-        className: Chunk634715.qrCodeOverlay,
+        className: Chunk309318.qrCodeOverlay,
         children: (0, Chunk255367.jsx)("img", {
-          className: Chunk634715[exports],
+          className: Chunk309318[exports],
           src: Chunk515695,
           alt: ""
         })

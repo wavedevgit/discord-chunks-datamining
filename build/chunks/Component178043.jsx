@@ -27,7 +27,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk477839 = require("./477839.js"),
   Chunk603571 = require("./603571.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk652202 = require("./652202.js"),
+  Chunk26707 = require("./26707.js"),
   Chunk300090 = require("./300090.js"),
   Chunk965084 = require("./965084.js"),
   Chunk702536 = require("./702536.js");
@@ -67,7 +67,7 @@ function k(e, t) {
 function M() {
   let [e, t] = (0, Chunk73800.useState)(false);
   return (0, Chunk255367.jsxs)("svg", {
-    className: Chunk652202.mainImage,
+    className: Chunk26707.mainImage,
     xmlns: "http://www.w3.org/2000/svg",
     width: "387",
     height: "445",
@@ -190,7 +190,7 @@ function M() {
       text: (0, Chunk255367.jsx)(Chunk763283.Z, {
         variant: "text-xs/medium",
         color: "always-white",
-        className: Chunk652202.tooltipText,
+        className: Chunk26707.tooltipText,
         children: Chunk388032.intl.format(Chunk603571.default.HB1We3, {
           thanksHook: (e, t) => (0, r.jsx)(v.Z, {
             className: Z.link,
@@ -299,9 +299,9 @@ function A() {
       lifetimePoints: Chunk73800
     });
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk652202.stats,
+    className: Chunk26707.stats,
     children: [(0, Chunk255367.jsx)(Chunk763283.Z, {
-      className: Chunk652202.statsHeader,
+      className: Chunk26707.statsHeader,
       variant: "heading-xxl/medium",
       color: "none",
       children: Chunk388032.intl.string(Chunk603571.default.Z84a2d)

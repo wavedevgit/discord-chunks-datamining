@@ -1,4 +1,4 @@
-/** Chunk was on 71879 **/
+/** Chunk was on 54214 **/
 /** chunk id: 474366, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk710111 = require("./710111.js"),
   Chunk130883 = require("./130883.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk773967 = require("./773967.js");
+  Chunk943273 = require("./943273.js");
 
 function O(e) {
   let {
@@ -114,7 +114,7 @@ function w(e) {
 function P() {
   let e = Chunk73800.useRef(null);
   return (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
-    className: Chunk773967.container,
+    className: Chunk943273.container,
     direction: "vertical",
     align: "center",
     justify: "center",
@@ -132,11 +132,11 @@ function P() {
       align: "center",
       justify: "center",
       children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
-        className: Chunk773967.header,
+        className: Chunk943273.header,
         variant: "heading-md/medium",
         children: Chunk388032.intl.string(Chunk130883.default.h6QNk5)
       }), (0, Chunk255367.jsx)(Chunk481060.Text, {
-        className: Chunk773967.text,
+        className: Chunk943273.text,
         variant: "text-md/medium",
         color: "text-secondary",
         children: Chunk388032.intl.format(Chunk130883.default["8N4c5+"], {

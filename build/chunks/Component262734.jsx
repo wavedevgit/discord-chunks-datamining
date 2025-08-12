@@ -21,10 +21,10 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk918559 = require("./918559.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk574682 = require("./574682.js");
+  Chunk43022 = require("./43022.js");
 let v = {
-  [Chunk918559.MI.NO_CHAT]: Chunk574682.noChat,
-  [Chunk918559.MI.RESIZABLE]: Chunk574682.resizable
+  [Chunk918559.MI.NO_CHAT]: Chunk43022.noChat,
+  [Chunk918559.MI.RESIZABLE]: Chunk43022.resizable
 };
 
 function I(e) {

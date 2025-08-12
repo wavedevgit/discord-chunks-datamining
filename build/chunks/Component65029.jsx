@@ -13,7 +13,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk819758 = require("./819758.jsx"),
   Chunk149203 = require("./149203.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk669486 = require("./669486.js");
+  Chunk847982 = require("./847982.js");
 let f = e => {
     let {
       emojiSubCategory: t

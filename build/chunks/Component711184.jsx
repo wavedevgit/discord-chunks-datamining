@@ -15,8 +15,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk368003 = require("./368003.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk147972 = require("./147972.js"),
-  Chunk20493 = require("./20493.js");
+  Chunk450501 = require("./450501.js"),
+  Chunk881488 = require("./881488.js");
 
 function b(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -36,9 +36,9 @@ let j = e => (0, n.jsx)("div", {
     [Chunk981631.gkr.HOUSE_3]: require("./497494.js")
   },
   y = {
-    [Chunk981631.gkr.HOUSE_1]: Chunk147972.quizResultLogoWrapperHouse1,
-    [Chunk981631.gkr.HOUSE_2]: Chunk147972.quizResultLogoWrapperHouse2,
-    [Chunk981631.gkr.HOUSE_3]: Chunk147972.quizResultLogoWrapperHouse3
+    [Chunk981631.gkr.HOUSE_1]: Chunk450501.quizResultLogoWrapperHouse1,
+    [Chunk981631.gkr.HOUSE_2]: Chunk450501.quizResultLogoWrapperHouse2,
+    [Chunk981631.gkr.HOUSE_3]: Chunk450501.quizResultLogoWrapperHouse3
   },
   S = e => ({
     [h.gkr.HOUSE_1]: g.intl.string(g.t["hNL/nJ"]),
@@ -61,7 +61,7 @@ class k extends Chunk73800.Component {
     return (0, Chunk255367.jsx)(Chunk57875.Z, {
       children: (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
-          className: Chunk147972.quizResultHeading,
+          className: Chunk450501.quizResultHeading,
           variant: "heading-xl/semibold",
           children: Chunk388032.intl.string(Chunk388032.t["8A8ry8"])
         }), (0, Chunk255367.jsx)(Chunk481060.Text, {
@@ -85,18 +85,18 @@ class k extends Chunk73800.Component {
     return (0, Chunk255367.jsx)(Chunk57875.Z, {
       children: (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
         children: [(0, Chunk255367.jsx)("div", {
-          className: o()(Chunk147972.quizResultLogoWrapper, y[module], Chunk20493.marginBottom20),
+          className: o()(Chunk450501.quizResultLogoWrapper, y[module], Chunk881488.marginBottom20),
           children: (0, Chunk255367.jsx)("img", {
             alt: exports,
-            className: Chunk147972.quizResultLogo,
+            className: Chunk450501.quizResultLogo,
             src: f[module]
           })
         }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
-          className: Chunk147972.quizResultHeading,
+          className: Chunk450501.quizResultHeading,
           variant: "heading-xl/semibold",
           children: exports
         }), (0, Chunk255367.jsx)(Chunk481060.Text, {
-          className: Chunk147972.quizResultBody,
+          className: Chunk450501.quizResultBody,
           variant: "text-sm/normal",
           children: S(module)
         })]
@@ -136,7 +136,7 @@ class k extends Chunk73800.Component {
   renderNewsletterWarning() {
     return (0, Chunk255367.jsx)(Chunk57875.Z, {
       children: (0, Chunk255367.jsx)(Chunk481060.Text, {
-        className: Chunk147972.nameFormPreface,
+        className: Chunk450501.nameFormPreface,
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t["3kUvgo"])
       })
@@ -205,7 +205,7 @@ class k extends Chunk73800.Component {
           children: this.renderHeaderCopy()
         })
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk147972.outerContentWrapper,
+        className: Chunk450501.outerContentWrapper,
         children: (0, Chunk255367.jsx)(Chunk215569.W, {
           component: j,
           children: this.renderContent()

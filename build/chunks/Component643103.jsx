@@ -11,7 +11,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk982905 = require("./982905.js"),
   Chunk431138 = require("./431138.js"),
   Chunk330711 = require("./330711.js"),
-  Chunk795177 = require("./795177.js");
+  Chunk185972 = require("./185972.js");
 
 function _(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,26 +51,26 @@ class N extends Chunk73800.PureComponent {
         }), e.name]
       }, e.code)
     })), (0, Chunk255367.jsxs)("div", {
-      className: l()(Chunk795177.localePicker, Chunk120356),
+      className: l()(Chunk185972.localePicker, Chunk120356),
       onMouseEnter: this.open,
       onMouseLeave: this.close,
       onClick: this.toggle,
       children: [(0, Chunk255367.jsxs)(Chunk435935.k, {
         align: Chunk435935.k.Align.CENTER,
-        className: (0, Chunk982905.l)(Chunk795177, "opener", module ? "Open" : null),
+        className: (0, Chunk982905.l)(Chunk185972, "opener", module ? "Open" : null),
         children: [(0, Chunk255367.jsx)("span", {
-          className: Chunk795177.line
+          className: Chunk185972.line
         }), (0, Chunk255367.jsx)("img", {
-          className: Chunk795177.localeIcon,
+          className: Chunk185972.localeIcon,
           src: Chunk431138.r.ICON_TRANSLATE,
           alt: "Choose Locale"
         }), (0, Chunk255367.jsx)("img", {
-          className: Chunk795177.arrowIcon,
+          className: Chunk185972.arrowIcon,
           src: Chunk431138.r.ICON_ARROW_DOWN,
           alt: "Open Locale"
         })]
       }), (0, Chunk255367.jsx)("ul", {
-        className: (0, Chunk982905.l)(Chunk795177, "localeList", module ? "Open" : "Closed"),
+        className: (0, Chunk982905.l)(Chunk185972, "localeList", module ? "Open" : "Closed"),
         children: Chunk330711
       })]
     })

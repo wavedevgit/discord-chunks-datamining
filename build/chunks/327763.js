@@ -1,9 +1,19 @@
-/** Chunk was on web.js **/
-/** chunk id: 327763, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 8653 **/
+/** chunk id: 327763, original params: e,t,r (module,exports,require) **/
 module.exports = {
-  body: "body_b25217",
-  infoNotice: "infoNotice_b25217",
-  paymentModalBreadcrumbs: "paymentModalBreadcrumbs_b25217",
-  paymentModalError: "paymentModalError_b25217"
+  akaBadge: "akaBadge__910e1",
+  header: "header__910e1",
+  subHeader: "subHeader__910e1",
+  miniAvatar: "miniAvatar__910e1",
+  miniGuildIcon: "miniGuildIcon__910e1",
+  akaTransfer: "akaTransfer__910e1",
+  guildTransfer: "guildTransfer__910e1",
+  guildName: "guildName__910e1",
+  nickname: "nickname__910e1",
+  spacing: "spacing__910e1",
+  fromToWrapper: "fromToWrapper__910e1 spacing__910e1",
+  from: "from__910e1",
+  to: "to__910e1",
+  protectedText: "protectedText__910e1",
+  roleSubscriptionText: "roleSubscriptionText__910e1"
 }

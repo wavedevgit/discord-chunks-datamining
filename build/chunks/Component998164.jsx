@@ -1,4 +1,4 @@
-/** Chunk was on 22988 **/
+/** Chunk was on 5533 **/
 /** chunk id: 998164, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -13,7 +13,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk969632 = require("./969632.js"),
   Chunk430677 = require("./430677.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk773100 = require("./773100.js");
+  Chunk193204 = require("./193204.js");
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -50,11 +50,11 @@ let f = [];
 
 function b() {
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk773100.actionItemContainer,
+    className: Chunk193204.actionItemContainer,
     children: (0, Chunk255367.jsxs)("div", {
-      className: Chunk773100.actionItem,
+      className: Chunk193204.actionItem,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk773100.actionItemEmojiWrapper,
+        className: Chunk193204.actionItemEmojiWrapper,
         children: (0, Chunk255367.jsx)(Chunk481060.snC, {
           size: "custom",
           color: "currentColor",
@@ -62,7 +62,7 @@ function b() {
           width: 22
         })
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk773100.actionItemText,
+        className: Chunk193204.actionItemText,
         children: (0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
           color: "header-primary",

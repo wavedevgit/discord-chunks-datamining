@@ -8,7 +8,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk780775 = require("./780775.js"),
+  Chunk887269 = require("./887269.js"),
   l = function(e) {
     return e[e.VIEW_MORE = 0] = "VIEW_MORE", e[e.VIEW_LESS = 1] = "VIEW_LESS", e
   }(l || {});
@@ -44,10 +44,10 @@ c.buttonTypes = l, c.Loading = function() {
     width: "".concat(10 + 20 * Math.random(), "%")
   }), []);
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk780775.loadingHeader,
+    className: Chunk887269.loadingHeader,
     style: module,
     children: (0, Chunk255367.jsx)(Chunk481060.Text, {
-      className: Chunk780775.hidden,
+      className: Chunk887269.hidden,
       variant: "text-md/medium",
       color: "header-primary",
       children: "_"

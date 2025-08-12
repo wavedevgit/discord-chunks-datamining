@@ -52,7 +52,7 @@ function c(e, t, o, s, c) {
   return null != u ? (0, i.jW)(e, async () => {
     let {
       default: e
-    } = await Promise.all([n.e("8982"), n.e("80125"), n.e("61866")]).then(n.bind(n, 357823));
+    } = await Promise.all([n.e("8982"), n.e("80125"), n.e("62787")]).then(n.bind(n, 357823));
     return n => (0, r.jsx)(e, l(a({}, n), {
       user: t,
       channel: o,
@@ -62,7 +62,7 @@ function c(e, t, o, s, c) {
   }, s) : (0, i.jW)(e, async () => {
     let {
       default: e
-    } = await Promise.all([n.e("80125"), n.e("47452")]).then(n.bind(n, 238296));
+    } = await Promise.all([n.e("80125"), n.e("56046")]).then(n.bind(n, 238296));
     return n => (0, r.jsx)(e, l(a({}, n), {
       user: t,
       channel: o,

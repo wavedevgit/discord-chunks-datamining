@@ -19,8 +19,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk793613 = require("./793613.js"),
-  Chunk20493 = require("./20493.js");
+  Chunk962194 = require("./962194.js"),
+  Chunk881488 = require("./881488.js");
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -134,15 +134,15 @@ let I = {
       children: (0, Chunk255367.jsx)(Chunk481060.$jN, {})
     }) : null != require && require.length > 0 && (0, Chunk255367.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk255367.jsx)(Chunk388905.Dx, {
-        className: Chunk20493.marginBottom8,
+        className: Chunk881488.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.Z11w19)
       }), (0, Chunk255367.jsx)(Chunk388905.DK, {
-        className: Chunk20493.marginBottom8,
+        className: Chunk881488.marginBottom8,
         children: Chunk388032.intl.format(Chunk388032.t["532l+v"], {
           supportURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.COPYRIGHT_AND_IP_POLICY)
         })
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk793613.container,
+        className: Chunk962194.container,
         children: require.map(e => null == I[e] ? null : (0, r.jsx)(O, {
           title: x.intl.string(I[e]),
           menuType: e

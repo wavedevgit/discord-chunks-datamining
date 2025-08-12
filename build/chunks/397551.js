@@ -1,0 +1,16 @@
+/** Chunk was on 26628 **/
+/** chunk id: 397551, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  messageContainer: "messageContainer_f6bd5f",
+  messageSpinner: "messageSpinner_f6bd5f",
+  channelMessageAndCancelButton: "channelMessageAndCancelButton_f6bd5f",
+  messageSendScheduled: "messageSendScheduled_f6bd5f",
+  messageSendError: "messageSendError_f6bd5f",
+  messageState: "messageState_f6bd5f",
+  cancelMessageButton: "cancelMessageButton_f6bd5f",
+  message: "message_f6bd5f",
+  container: "container_f6bd5f " + require("./193578.js").recentMentionsPopout,
+  widerInbox: "widerInbox_f6bd5f " + require("./193578.js").widerInbox,
+  channelRow: "channelRow_f6bd5f",
+  loadingPlaceholder: "loadingPlaceholder_f6bd5f"
+}

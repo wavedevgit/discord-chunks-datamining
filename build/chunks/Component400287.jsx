@@ -1,4 +1,4 @@
-/** Chunk was on 75708 **/
+/** Chunk was on 20501 **/
 /** chunk id: 400287, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk20493 = require("./20493.js");
+  Chunk881488 = require("./881488.js");
 
 function x() {
   let e = Chunk695346.fq.useSetting(),
@@ -44,12 +44,12 @@ function x() {
     children: [(0, Chunk255367.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.CHAT_INLINE_MEDIA,
       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-        className: Chunk20493.marginBottom8,
+        className: Chunk881488.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.U68Dgo)
       }), (0, Chunk255367.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.CHAT_INLINE_MEDIA_LINKS,
         children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
-          className: s()(Chunk20493.marginTop8, Chunk20493.marginBottom20),
+          className: s()(Chunk881488.marginTop8, Chunk881488.marginBottom20),
           value: O,
           onChange: Chunk695346.RS.updateSetting,
           children: Chunk388032.intl.string(Chunk388032.t.U47N1t)
@@ -57,7 +57,7 @@ function x() {
       }), (0, Chunk255367.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.CHAT_INLINE_MEDIA_UPLOADS,
         children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
-          className: s()(Chunk20493.marginTop8, Chunk20493.marginBottom20),
+          className: s()(Chunk881488.marginTop8, Chunk881488.marginBottom20),
           value: C,
           note: Chunk388032.intl.formatToPlainString(Chunk388032.t.qjjvqK, {
             maxSize: 10
@@ -68,7 +68,7 @@ function x() {
       }), (0, Chunk255367.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.CHAT_INLINE_MEDIA_IMAGE_DESCRIPTIONS,
         children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
-          className: s()(Chunk20493.marginTop8, Chunk20493.marginBottom40),
+          className: s()(Chunk881488.marginTop8, Chunk881488.marginBottom40),
           value: j,
           note: Chunk388032.intl.string(Chunk388032.t.T0rbtL),
           onChange: Chunk695346.H1.updateSetting,
@@ -78,12 +78,12 @@ function x() {
     }), (0, Chunk255367.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.CHAT_EMBEDS,
       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-        className: Chunk20493.marginBottom8,
+        className: Chunk881488.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.PWZOn5)
       }), (0, Chunk255367.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.CHAT_EMBEDS_LINK_PREVIEWS,
         children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
-          className: s()(Chunk20493.marginTop8, Chunk20493.marginBottom40),
+          className: s()(Chunk881488.marginTop8, Chunk881488.marginBottom40),
           value: v,
           onChange: Chunk695346.NA.updateSetting,
           children: Chunk388032.intl.string(Chunk388032.t.xX0ZTE)
@@ -92,12 +92,12 @@ function x() {
     }), (0, Chunk255367.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.CHAT_EMOJI,
       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-        className: Chunk20493.marginBottom8,
+        className: Chunk881488.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.sMOuub)
       }), (0, Chunk255367.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.CHAT_EMOJI_REACTIONS,
         children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
-          className: s()(Chunk20493.marginTop8, Chunk20493.marginBottom20),
+          className: s()(Chunk881488.marginTop8, Chunk881488.marginBottom20),
           value: S,
           onChange: Chunk695346.nc.updateSetting,
           children: Chunk388032.intl.string(Chunk388032.t.Iv24sr)
@@ -105,7 +105,7 @@ function x() {
       }), (0, Chunk255367.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.CHAT_EMOJI_EMOTICONS,
         children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
-          className: Chunk20493.marginBottom40,
+          className: Chunk881488.marginBottom40,
           value: E,
           note: Chunk454585.Z.parse(Chunk388032.intl.string(Chunk388032.t["20dvub"])),
           onChange: Chunk695346.ev.updateSetting,
@@ -115,14 +115,14 @@ function x() {
     }), (0, Chunk255367.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.CHAT_STICKERS,
       children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-        className: Chunk20493.marginBottom8,
+        className: Chunk881488.marginBottom8,
         children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-          className: Chunk20493.marginBottom8,
+          className: Chunk881488.marginBottom8,
           children: Chunk388032.intl.string(Chunk388032.t["6NtAuL"])
         }), (0, Chunk255367.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.CHAT_STICKERS_AUTOCOMPLETE,
           children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
-            className: Chunk20493.marginBottom40,
+            className: Chunk881488.marginBottom40,
             value: module,
             note: Chunk388032.intl.string(Chunk388032.t["/eVrj4"]),
             onChange: e => {
@@ -141,14 +141,14 @@ function x() {
     }), require && (0, Chunk255367.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.CHAT_SOUNDMOJI,
       children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-        className: Chunk20493.marginBottom8,
+        className: Chunk881488.marginBottom8,
         children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-          className: Chunk20493.marginBottom8,
+          className: Chunk881488.marginBottom8,
           children: Chunk388032.intl.string(Chunk388032.t.EHlAMT)
         }), (0, Chunk255367.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.CHAT_SOUNDMOJI_AUTOCOMPLETE,
           children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
-            className: Chunk20493.marginBottom40,
+            className: Chunk881488.marginBottom40,
             value: exports,
             note: Chunk388032.intl.string(Chunk388032.t.hrSIhI),
             onChange: e => {
@@ -166,14 +166,14 @@ function x() {
     }), (0, Chunk255367.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.CHAT_TEXT_BOX,
       children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-        className: Chunk20493.marginBottom8,
+        className: Chunk881488.marginBottom8,
         children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-          className: Chunk20493.marginBottom8,
+          className: Chunk881488.marginBottom8,
           children: Chunk388032.intl.string(Chunk388032.t.afR0pK)
         }), (0, Chunk255367.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.CHAT_TEXT_BOX_PREVIEW,
           children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
-            className: s()(Chunk20493.marginTop8, Chunk20493.marginBottom40),
+            className: s()(Chunk881488.marginTop8, Chunk881488.marginBottom40),
             value: Chunk120356,
             onChange: e => {
               m.default.track(h.rMx.PREVIEW_MARKDOWN_TOGGLED, {
@@ -190,14 +190,14 @@ function x() {
     }), (0, Chunk255367.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.CHAT_THREADS,
       children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-        className: Chunk20493.marginBottom40,
+        className: Chunk881488.marginBottom40,
         children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-          className: Chunk20493.marginBottom8,
+          className: Chunk881488.marginBottom8,
           children: Chunk388032.intl.string(Chunk388032.t.B2panJ)
         }), (0, Chunk255367.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.CHAT_THREADS_SPLIT_VIEW,
           children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
-            className: Chunk20493.marginTop8,
+            className: Chunk881488.marginTop8,
             value: _,
             onChange: Chunk695346.vF.updateSetting,
             children: Chunk388032.intl.string(Chunk388032.t.AInv5u)
@@ -210,7 +210,7 @@ function x() {
         title: Chunk388032.intl.string(Chunk388032.t.QgwmV1),
         children: [(0, Chunk255367.jsx)(Chunk481060.R94, {
           type: Chunk481060.R94.Types.DESCRIPTION,
-          className: Chunk20493.marginBottom8,
+          className: Chunk881488.marginBottom8,
           children: Chunk388032.intl.string(Chunk388032.t.TYnRkZ)
         }), (0, Chunk255367.jsx)(Chunk481060.FXm, {
           options: [{

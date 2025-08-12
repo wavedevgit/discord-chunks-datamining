@@ -12,7 +12,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk20493 = require("./20493.js");
+  Chunk881488 = require("./881488.js");
 
 function p(t, e, n) {
   return e in t ? Object.defineProperty(t, e, {
@@ -52,7 +52,7 @@ class x extends Chunk73800.Component {
         children: (0, Chunk255367.jsx)(Chunk481060.Text, {
           tag: "strong",
           variant: "text-md/normal",
-          className: Chunk20493.marginBottom20,
+          className: Chunk881488.marginBottom20,
           children: Chunk388032.intl.string(Chunk388032.t.UCEXPj)
         })
       }), (0, Chunk255367.jsx)(Chunk481060.mzw, {

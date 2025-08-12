@@ -46,7 +46,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk599706 = require("./599706.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk147049 = require("./147049.js");
+  Chunk954275 = require("./954275.js");
 let K = {
     SMALL: 64,
     LARGE: 160
@@ -100,7 +100,7 @@ class ee extends Chunk73800.Component {
       start: require.start,
       end: require.end,
       location: Chunk707409.ZP.Locations.USER_ACTIVITY,
-      className: Chunk147049.__invalid_playTime
+      className: Chunk954275.__invalid_playTime
     }))
   }
   render() {
@@ -116,26 +116,26 @@ class ee extends Chunk73800.Component {
     } = this.props;
     return (0, Chunk255367.jsx)($, {
       children: (0, Chunk255367.jsxs)("div", {
-        className: Chunk147049.activitySection,
+        className: Chunk954275.activitySection,
         children: [null != r && 0 !== Object.keys(r).length ? (0, Chunk255367.jsxs)("div", {
-          className: Chunk147049.activitySectionAssets,
+          className: Chunk954275.activitySectionAssets,
           children: [(0, Chunk255367.jsx)("img", {
             alt: null != (e = r.large_text) ? module : "",
             src: Chunk692547(Chunk442837, r.large_image, [K.LARGE, K.LARGE]),
-            className: o()(Chunk147049.largeImage, {
-              [Chunk147049.largeImageMask]: null != r.small_image
+            className: o()(Chunk954275.largeImage, {
+              [Chunk954275.largeImageMask]: null != r.small_image
             })
           }), null != r.small_image ? (0, Chunk255367.jsx)("img", {
             alt: null != (t = r.small_text) ? exports : "",
             src: Chunk692547(Chunk442837, r.small_image, [K.SMALL, K.SMALL]),
-            className: Chunk147049.smallImage
+            className: Chunk954275.smallImage
           }) : null]
         }) : (0, Chunk255367.jsx)("div", {
-          className: Chunk147049.activitySectionAssets,
+          className: Chunk954275.activitySectionAssets,
           children: (0, Chunk255367.jsx)("img", {
             alt: "",
             src: require("./211827.js"),
-            className: Chunk147049.largeImage
+            className: Chunk954275.largeImage
           })
         }), (0, Chunk255367.jsxs)("div", {
           children: [X(null != Chunk73800 && "" !== Chunk73800 ? Chunk73800 : Chunk388032.intl.string(Chunk388032.t["2TbM/P"])), null != Chunk120356 ? Q(Chunk120356) : null, this.renderTimePlayed()]

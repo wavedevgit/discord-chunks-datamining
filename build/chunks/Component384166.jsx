@@ -15,7 +15,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk224724 = require("./224724.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk900365 = require("./900365.js");
+  Chunk967187 = require("./967187.js");
 
 function h() {
   let [e, t] = Chunk73800.useState(false), {
@@ -42,23 +42,23 @@ function h() {
       Chunk592183.Z.clearPendingWidgets()
     }, []);
   return require ? (0, Chunk255367.jsx)("div", {
-    className: a()(Chunk900365.container, {
-      [Chunk900365.visible]: require
+    className: a()(Chunk967187.container, {
+      [Chunk967187.visible]: require
     }),
     role: "status",
     children: (0, Chunk255367.jsxs)("div", {
-      className: a()(Chunk900365.content, {
-        [Chunk900365.emphasized]: module
+      className: a()(Chunk967187.content, {
+        [Chunk967187.emphasized]: module
       }),
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk900365.message,
+        className: Chunk967187.message,
         children: (0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           color: "text-primary",
           children: Chunk388032.intl.string(Chunk388032.t["/lQiX1"])
         })
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk900365.actions,
+        className: Chunk967187.actions,
         children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
           size: "sm",
           variant: "secondary",

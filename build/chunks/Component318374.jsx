@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk5192 = require("./5192.js"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk223390 = require("./223390.js");
+  Chunk362221 = require("./362221.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,12 +61,12 @@ function y() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk481060.EFr.SIZE_24;
   switch (module) {
     case Chunk481060.EFr.SIZE_16:
-      return Chunk223390.size16;
+      return Chunk362221.size16;
     case Chunk481060.EFr.SIZE_20:
-      return Chunk223390.size20;
+      return Chunk362221.size20;
     case Chunk481060.EFr.SIZE_24:
     default:
-      return Chunk223390.size24
+      return Chunk362221.size24
   }
 }
 

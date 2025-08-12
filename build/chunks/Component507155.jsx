@@ -1,7 +1,7 @@
 /** Chunk was on 64767 **/
 /** chunk id: 507155, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 }), require("./388685.js"), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -16,26 +16,26 @@ var Chunk255367 = require("./255367.js"),
   Chunk279604 = require("./279604.jsx"),
   Chunk787188 = require("./787188.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk153013 = require("./153013.js");
+  Chunk162338 = require("./162338.js");
 
-function v(e) {
+function x(e) {
   let {
     canUseBoosts: t,
     guildId: r,
     powerup: a
-  } = e, [v, C] = o.useState(false), g = (0, d.ZP)(r, a), b = (0, x._)(a, g, false), h = (0, d.UP)(g), {
-    disabled: y
-  } = (0, l.Z)(r, a, h), {
-    onShowDeactivate: O,
-    onActivate: k
-  } = (0, f.ZP)(r, a), P = !t || y, _ = h && !P, w = (0, n.jsxs)(n.Fragment, {
+  } = e, [x, b] = o.useState(false), g = (0, c.ZP)(r, a), O = (0, m._)(a, g, false), y = (0, c.UP)(g), {
+    disabled: C
+  } = (0, l.Z)(r, a, y), {
+    onShowDeactivate: h,
+    onActivate: P
+  } = (0, f.ZP)(r, a), k = !t || C, _ = y && !k, w = (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)("div", {
       className: i()(j.perkCardImage, {
-        [j.active]: h
+        [j.active]: y
       }),
       children: (0, n.jsx)(u.m, {
         powerup: a,
-        isHovering: v
+        isHovering: x
       })
     }), (0, n.jsxs)("div", {
       className: j.footerContainer,
@@ -44,17 +44,17 @@ function v(e) {
         children: [(0, n.jsx)("div", {
           children: (0, n.jsx)(s.Text, {
             variant: "text-sm/medium",
-            color: h || v ? "text-primary" : "text-secondary",
+            color: (y || x) && !k ? "text-primary" : "text-secondary",
             children: a.description
           })
         }), (0, n.jsxs)("div", {
-          children: [(null == b ? true : b.type) === "expiring" && (0, n.jsx)(c.rL, {
-            dateString: b.expiringAt
-          }), (null == b ? true : b.type) === "removing" && (0, n.jsx)(c.c, {
-            removingAt: b.removingAt
-          }), (null == b ? true : b.type) === "active" && (0, n.jsx)(c.P2, {
-            text: b.statusText
-          }), null == b && (0, n.jsxs)("div", {
+          children: [(null == O ? true : O.type) === "expiring" && (0, n.jsx)(d.rL, {
+            dateString: O.expiringAt
+          }), (null == O ? true : O.type) === "removing" && (0, n.jsx)(d.c, {
+            removingAt: O.removingAt
+          }), (null == O ? true : O.type) === "active" && (0, n.jsx)(d.P2, {
+            text: O.statusText
+          }), null == O && (0, n.jsxs)("div", {
             className: j.statusContainer,
             children: [(0, n.jsx)(s.$Eu, {
               size: "sm",
@@ -62,7 +62,7 @@ function v(e) {
             }), (0, n.jsx)(s.Text, {
               variant: "text-sm/medium",
               color: "text-secondary",
-              children: m.intl.formatToPlainString(m.t.t2Wbo6, {
+              children: v.intl.formatToPlainString(v.t.t2Wbo6, {
                 required: a.cost,
                 decorator: ""
               })
@@ -74,27 +74,27 @@ function v(e) {
         iconSize: "md",
         guildId: r,
         powerup: a,
-        onClick: O,
+        onClick: h,
         className: j.toggleButton
       })]
     })]
   });
-  return h ? (0, n.jsx)("div", {
+  return y ? (0, n.jsx)("div", {
     className: i()(j.perkCard, j.activeCard, {
-      [j.disabled]: P
+      [j.disabled]: k
     }),
-    onMouseEnter: () => C(true),
-    onMouseLeave: () => C(false),
+    onMouseEnter: () => b(true),
+    onMouseLeave: () => b(false),
     children: w
   }) : (0, n.jsx)(s.P3F, {
     className: i()(j.perkCard, {
-      [j.disabled]: P
+      [j.disabled]: k
     }),
-    onMouseEnter: () => C(true),
-    onMouseLeave: () => C(false),
-    "aria-disabled": P,
+    onMouseEnter: () => b(true),
+    onMouseLeave: () => b(false),
+    "aria-disabled": k,
     onClick: e => {
-      e.stopPropagation(), P || null == k || k(e, {
+      e.stopPropagation(), k || null == P || P(e, {
         shouldCloseAllModals: false
       })
     },
