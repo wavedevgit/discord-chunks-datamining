@@ -97,11 +97,11 @@ function v(t) {
       startingFractionalPremiumEndsAt: U
     } = t,
     {
-      enablePremiumBrandRefresh: b,
-      isDisplayingWowMomentConfirmation: k
+      enablePremiumBrandRefresh: k,
+      isDisplayingWowMomentConfirmation: w
     } = (0, u.JL)(),
     {
-      theme: w
+      theme: b
     } = (0, C.TCT)(),
     A = (0, r.e7)([M.Z], () => null != v ? M.Z.get(v.id) : null),
     O = (0, Z.qH)(U);
@@ -170,7 +170,7 @@ function v(t) {
     skuName: A.name
   }) : _ ? T.intl.string(T.t.QJ9EyM) : null != R ? T.intl.string(T.t.ta3cXV) : T.intl.string(T.t.TkTvBw);
   let y = () => p.X7u.has(null != P ? P : p.HeQ.UNKNOWN) ? x.ZP.Types.PREMIUM_PAYMENT_STARTED : null != L ? x.ZP.Types.PREMIUM_UPDATED : x.ZP.Types.PREMIUM_ACTIVATED;
-  return k ? (0, i.jsx)(f.Z, {
+  return w ? (0, i.jsx)(f.Z, {
     type: y(),
     text: e,
     buttonText: n,
@@ -178,12 +178,12 @@ function v(t) {
     onClose: H
   }) : (0, i.jsxs)("div", {
     className: I.confirmation,
-    children: [b ? (0, i.jsx)(g.Z, {
+    children: [k ? (0, i.jsx)(g.Z, {
       type: y(),
-      theme: w
+      theme: b
     }) : (0, i.jsx)(x.ZP, {
       className: I.banner,
-      theme: w,
+      theme: b,
       premiumType: X,
       type: y()
     }), e, j ? null : (0, i.jsx)("div", {
