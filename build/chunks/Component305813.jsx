@@ -65,24 +65,24 @@ function E(e) {
     selectedFontId: n,
     selectedEffectId: l,
     selectedColors: E,
-    onClose: T
+    onClose: N
   } = e, D = new x.Z(k(v({}, t), {
     displayNameStyles: {
       fontId: n,
       effectId: l,
       colors: E
     }
-  })), w = (0, s.ZP)(), I = (0, a.wjy)(w), [R, A] = (0, o.useState)(I), L = (0, g.ZP)(t.id, null), {
+  })), w = (0, s.ZP)(), R = (0, a.wjy)(w), [I, A] = (0, o.useState)(R), L = (0, g.ZP)(t.id, null), {
     bannerSrc: B
   } = (0, h.Z)({
     displayProfile: L,
     size: 413,
     canAnimate: false
-  }), M = R ? S.BRd.DARK : S.BRd.LIGHT;
-  (I && R || !I && !R) && (M = w);
+  }), M = I ? S.BRd.DARK : S.BRd.LIGHT;
+  (R && I || !R && !I) && (M = w);
   let Z = (0, o.useCallback)(() => {
-      j.default.track(S.rMx.DISPLAY_NAME_STYLES_CLOSED), T()
-    }, [T]),
+      j.default.track(S.rMx.DISPLAY_NAME_STYLES_CLOSED), N()
+    }, [N]),
     Y = (0, o.useCallback)(e => {
       A(e === S.BRd.DARK), j.default.track(S.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
         dark: e === S.BRd.DARK
@@ -130,7 +130,7 @@ function E(e) {
           author: (0, p.ij)(D, null),
           message: (0, d.e5)(k(v({}, (0, u.ZP)({
             channelId: "1337",
-            content: O.intl.string(y.default.h5Cuen)
+            content: y.intl.string(O.default.h5Cuen)
           })), {
             state: S.yb.SENT,
             id: "0"
@@ -151,37 +151,39 @@ function E(e) {
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: O.intl.format(y.default.prQba2, {
+        children: y.intl.format(O.default.prQba2, {
           helpArticleLink: _.Z.getArticleURL(S.BhN.DISPLAY_NAME_STYLES)
         })
-      }), (0, r.jsx)(N, {
-        darkPreview: R,
+      }), (0, r.jsx)(T, {
+        darkPreview: I,
         onToggleTheme: Y
       })]
     })]
   })
 }
 
-function N(e) {
+function T(e) {
   let {
     darkPreview: t,
     onToggleTheme: n
-  } = e;
+  } = e, o = t ? S.BRd.DARK : S.BRd.LIGHT;
   return (0, r.jsx)(a.sY7, {
     className: P.themeToggleControl,
     optionClassName: P.themeToggleOption,
     options: [{
       name: "",
-      tooltip: O.intl.string(O.t.b8Cei4),
+      tooltip: y.intl.string(y.t.b8Cei4),
       value: S.BRd.DARK,
-      icon: a.Z6G
+      icon: a.Z6G,
+      className: o === S.BRd.DARK ? P.themeToggleOptionSelected : true
     }, {
       name: "",
-      tooltip: O.intl.string(O.t.K2sFfn),
+      tooltip: y.intl.string(y.t.K2sFfn),
       value: S.BRd.LIGHT,
-      icon: a.chG
+      icon: a.chG,
+      className: o === S.BRd.LIGHT ? P.themeToggleOptionSelected : true
     }],
-    value: t ? S.BRd.DARK : S.BRd.LIGHT,
+    value: o,
     onChange: e => {
       let {
         value: t

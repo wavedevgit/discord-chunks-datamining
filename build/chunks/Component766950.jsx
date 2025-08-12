@@ -1,7 +1,7 @@
 /** Chunk was on 47495 **/
 /** chunk id: 766950, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => R
+  default: () => I
 }), require("./953529.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -52,7 +52,7 @@ function w(e) {
   return e
 }
 
-function I(e) {
+function R(e) {
   let {
     onApply: t,
     onSurpriseMe: n,
@@ -65,11 +65,11 @@ function I(e) {
     onClick: n,
     icon: d.T$Z,
     iconPosition: "start",
-    text: T.intl.string(N.default.NOGFdn)
+    text: N.intl.string(T.default.NOGFdn)
   }), c = (0, r.jsxs)("div", {
     className: D.subscriberButtonContainer,
     children: [s, (0, r.jsx)(d.ua7, {
-      text: T.intl.string(N.default.cVTpnp),
+      text: N.intl.string(T.default.cVTpnp),
       shouldShow: !l,
       children: e => {
         var n, o;
@@ -77,7 +77,7 @@ function I(e) {
           onClick: t,
           disabled: !l || i,
           loading: i,
-          text: T.intl.string(T.t["1Qm829"]),
+          text: N.intl.string(N.t["1Qm829"]),
           variant: "primary",
           size: "md",
           fullWidth: true
@@ -98,7 +98,7 @@ function I(e) {
     children: [(0, r.jsxs)("div", {
       className: D.descriptionContainer,
       children: [(0, r.jsx)(d.ua7, {
-        text: T.intl.string(T.t["5AFxuL"]),
+        text: N.intl.string(N.t["5AFxuL"]),
         children: e => (0, r.jsx)(d.SrA, w({
           size: "md",
           colorClass: D.nitroIcon
@@ -107,7 +107,7 @@ function I(e) {
         variant: "text-md/medium",
         color: "text-default",
         className: D.description,
-        children: T.intl.format(N.default.PWf0xc, {
+        children: N.intl.format(T.default.PWf0xc, {
           onClickNitro: () => {
             x.default.track(k.rMx.DISPLAY_NAME_STYLES_NITRO_CLICKED), (0, m.$)(o)
           }
@@ -131,14 +131,14 @@ function I(e) {
   })
 }
 
-function R(e) {
-  var t, n, m, g, h, E, w, R, A, L;
+function I(e) {
+  var t, n, m, g, h, E, w, I, A, L;
   let {
     transitionState: B,
     analyticsLocations: M,
     guild: Z,
     onClose: Y
-  } = e, G = (0, s.e7)([b.default], () => b.default.getCurrentUser()), H = null != (w = null == G || null == (t = G.displayNameStyles) ? true : t.colors) ? w : [], [z, F] = o.useState(null != (R = null == G || null == (n = G.displayNameStyles) ? true : n.fontId) ? R : a.C.DEFAULT), [U, X] = o.useState(null != (A = null == G || null == (m = G.displayNameStyles) ? true : m.effectId) ? A : i.m.SOLID), K = (0, v.R)(U), q = (0, v.R)(i.m.GRADIENT), [V, W] = o.useState(H.length > 0 && U !== i.m.GRADIENT ? H[0] : K.defaultColors[0]), [$, J] = o.useState(H.length > 0 && U === i.m.GRADIENT ? H : q.defaultColors);
+  } = e, G = (0, s.e7)([b.default], () => b.default.getCurrentUser()), H = null != (w = null == G || null == (t = G.displayNameStyles) ? true : t.colors) ? w : [], [z, F] = o.useState(null != (I = null == G || null == (n = G.displayNameStyles) ? true : n.fontId) ? I : a.C.DEFAULT), [U, K] = o.useState(null != (A = null == G || null == (m = G.displayNameStyles) ? true : m.effectId) ? A : i.m.SOLID), X = (0, v.R)(U), q = (0, v.R)(i.m.GRADIENT), [V, W] = o.useState(H.length > 0 && U !== i.m.GRADIENT ? H[0] : X.defaultColors[0]), [$, J] = o.useState(H.length > 0 && U === i.m.GRADIENT ? H : q.defaultColors);
   (0, f.Z)({
     type: l.ImpressionTypes.POPOUT,
     name: l.ImpressionNames.DISPLAY_NAME_STYLES_MODAL
@@ -182,16 +182,16 @@ function R(e) {
               className: D.sectionHeader,
               children: (0, r.jsx)(d.X6q, {
                 variant: "heading-lg/semibold",
-                children: T.intl.string(N.default.ZPMAlZ)
+                children: N.intl.string(T.default.ZPMAlZ)
               })
-            }), (0, r.jsx)(O.Z, {
+            }), (0, r.jsx)(y.Z, {
               selectedFontId: z,
               setSelectedFontId: F,
               className: D.selectionSubSection
-            }), (0, r.jsx)(y.Z, {
+            }), (0, r.jsx)(O.Z, {
               selectedEffectId: U,
               setSelectedEffectId: e => {
-                X(e)
+                K(e)
               },
               className: D.selectionSubSection
             }), (0, r.jsx)(C.Z, {
@@ -201,21 +201,21 @@ function R(e) {
               },
               selectedEffectId: U,
               className: D.selectionSubSection,
-              defaultColor: K.defaultColors[0]
+              defaultColor: X.defaultColors[0]
             })]
           }), (0, r.jsx)(P.Z, {
             user: G,
             selectedFontId: z,
             selectedEffectId: U,
-            selectedColors: U === i.m.SOLID && (0, c.E)(en, K.defaultColors) ? [] : en,
+            selectedColors: U === i.m.SOLID && (0, c.E)(en, X.defaultColors) ? [] : en,
             onClose: Y
           })]
-        }), (0, r.jsx)(I, {
+        }), (0, r.jsx)(R, {
           isApplying: et,
           onApply: () => {
             if (er) {
               let e = en;
-              U === i.m.SOLID && en.length > 0 && en[0] === K.defaultColors[0] && (e = []), ee({
+              U === i.m.SOLID && en.length > 0 && en[0] === X.defaultColors[0] && (e = []), ee({
                 fontId: z,
                 effectId: U,
                 colors: e
@@ -228,7 +228,7 @@ function R(e) {
           },
           onSurpriseMe: () => {
             let e = (0, _.aY)();
-            F(e.fontId), X(e.effectId), W(e.colors[0]), J(e.colors), x.default.track(k.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
+            F(e.fontId), K(e.effectId), W(e.colors[0]), J(e.colors), x.default.track(k.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
           },
           onClose: Y,
           canApply: er,

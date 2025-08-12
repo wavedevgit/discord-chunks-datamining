@@ -331,15 +331,26 @@ function es(e) {
 }
 
 function ea() {
-  let [e, t] = Chunk73800.useState("md"), [n, s] = Chunk73800.useState("start"), [a, o] = Chunk73800.useState(true), c = ["primary", "secondary", "critical-primary", "critical-secondary", "active", "overlay-primary", "overlay-secondary"], d = [...Chunk442837, "expressive"].map(t => (0, i.jsx)(es, {
-    component: u.z,
-    variant: t,
-    text: "".concat((0, l.capitalize)(t), " ").concat(e.toUpperCase()),
-    size: e,
-    icon: "none" !== n ? T.gw7 : true,
-    iconPosition: n,
-    showLoadingAnimation: a
-  }, t + e)), g = [...Chunk442837, "icon-only"].map(t => (0, i.jsx)(es, {
+  let [e, t] = Chunk73800.useState("md"), [n, s] = Chunk73800.useState("start"), [a, o] = Chunk73800.useState(true), c = ["primary", "secondary", "critical-primary", "critical-secondary", "active", "overlay-primary", "overlay-secondary"], d = [...Chunk442837, "expressive"].map(t => (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(es, {
+      component: u.z,
+      variant: t,
+      text: "".concat((0, l.capitalize)(t), " ").concat(e.toUpperCase()),
+      size: e,
+      icon: "none" !== n ? T.gw7 : true,
+      iconPosition: n,
+      showLoadingAnimation: a
+    }, t + e), (0, i.jsx)(es, {
+      component: u.z,
+      variant: t,
+      text: "".concat((0, l.capitalize)(t), " ").concat(e.toUpperCase()),
+      size: e,
+      icon: "none" !== n ? T.gw7 : true,
+      iconPosition: n,
+      showLoadingAnimation: a,
+      disabled: true
+    }, t + e + "disabled")]
+  })), g = [...Chunk442837, "icon-only"].map(t => (0, i.jsx)(es, {
     component: p.h,
     variant: t,
     icon: T.gw7,

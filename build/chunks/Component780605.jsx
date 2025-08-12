@@ -184,7 +184,8 @@ function A(e) {
         children: [et && (0, r.jsx)(C, {
           hasReducedMotion: en.reducedMotion.enabled,
           buttonRef: ee,
-          isLightMode: er
+          isLightMode: er,
+          disabled: V
         }), null == D ? (0, r.jsx)("div", {
           className: g.buttonChildrenWrapper,
           children: eo
@@ -233,32 +234,33 @@ function C(e) {
   let {
     hasReducedMotion: t,
     buttonRef: n,
-    isLightMode: o
-  } = e, s = i.useRef(null);
+    isLightMode: o,
+    disabled: s
+  } = e, l = i.useRef(null);
   return i.useEffect(() => {
-    if (t) {
+    if (!s && t) {
       let e = n.current,
         t = () => {
           var e;
-          null == (e = s.current) || e.play()
+          null == (e = l.current) || e.play()
         },
         r = () => {
           var e;
-          null == (e = s.current) || e.pause()
+          null == (e = l.current) || e.pause()
         };
       return null == e || e.addEventListener("mouseenter", t, true), null == e || e.addEventListener("mouseleave", r, true), () => {
         null == e || e.removeEventListener("mouseenter", t, true), null == e || e.removeEventListener("mouseleave", r, true)
       }
     }
-  }, [t, n]), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(u.GlowButtonRive, {
+  }, [t, n, s]), (0, r.jsxs)(r.Fragment, {
+    children: [!s && (0, r.jsx)(u.GlowButtonRive, {
       className: a()(g.expressiveRive, g.expressiveBackground),
       eventTargetRef: n,
       fit: "layout",
       artboard: "BaseGlowRemapped",
-      ref: s,
+      ref: l,
       withReducedMotion: "short-loop"
-    }), !t && (0, r.jsx)(u.GlowButtonRive, {
+    }), !t && !s && (0, r.jsx)(u.GlowButtonRive, {
       className: a()(g.expressiveRive, g.expressiveHoverContainer),
       fit: "layout",
       artboard: o ? "HoverLightmode" : "HoverDarkmode"

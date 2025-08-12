@@ -12,5 +12,6 @@ module.exports = {
   themeToggleControl: "themeToggleControl__4671c",
   themeToggleOption: "themeToggleOption__4671c",
   backgroundThemeContainer: "backgroundThemeContainer__4671c",
-  bannerBackground: "bannerBackground__4671c"
+  bannerBackground: "bannerBackground__4671c",
+  themeToggleOptionSelected: "themeToggleOptionSelected__4671c"
 }
