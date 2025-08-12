@@ -288,7 +288,7 @@ function ee(e) {
                       className: $.profileBanner
                     }), (0, r.jsx)("div", {
                       className: $.profileButtons,
-                      children: (0, r.jsx)(W.Z, {
+                      children: (0, r.jsx)(H.Z, {
                         user: n,
                         currentUser: ee,
                         guildId: et,
@@ -323,7 +323,7 @@ function ee(e) {
                     }), eD.length > 0 && (0, r.jsx)(K.Z, {
                       heading: Q.intl.string(Q.t["3fe7U1"]),
                       scrollIntoView: ea === J.Tb.CONNECTIONS,
-                      children: (0, r.jsx)(H.Z, {
+                      children: (0, r.jsx)(W.Z, {
                         connections: eD,
                         userId: n.id,
                         className: $.profileAppConnections

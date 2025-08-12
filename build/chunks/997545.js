@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => x
-}), require("./388685.js"), require("./290780.js"), require("./415506.js"), require("./49124.js"), require("./642613.js"), require("./35282.js"), require("./539854.js");
+}), require("./388685.js"), require("./415506.js"), require("./49124.js"), require("./642613.js"), require("./35282.js"), require("./539854.js");
 var Chunk595182 = require("./595182.js"),
   i = require.n(Chunk595182),
   Chunk117806 = require("./117806.js"),
@@ -116,12 +116,7 @@ class x extends Chunk839548.Z {
               encode: e.encode,
               decode: e.decode
             }
-          })], n.experimentFlags.has(O.V8.SIGNAL_RED) && (0, b.eJ)(v.eR.AUDIO_CODEC_RED) && n.codecs.unshift({
-            type: "audio",
-            name: v.ad.RED,
-            priority: 1,
-            payloadType: 121
-          }), n.setCodecs(v.ad.OPUS, v.ad.H264, e), n.conn.startReplay()
+          })], n.setCodecs(v.ad.OPUS, v.ad.H264, e), n.conn.startReplay()
         })
       },
       o = r.createReplayConnection("default", i, t);
@@ -171,12 +166,7 @@ class x extends Chunk839548.Z {
               encode: e.encode,
               decode: e.decode
             }
-          })], this.experimentFlags.has(O.V8.SIGNAL_RED) && (0, b.eJ)(v.eR.AUDIO_CODEC_RED) && this.codecs.unshift({
-            type: "audio",
-            name: v.ad.RED,
-            priority: 1,
-            payloadType: 121
-          }), this.logger.info("Audio codecs: ".concat(this.codecs.filter(e => "audio" === e.type).map(e => e.name))), this.logger.info("Video codecs: ".concat(this.codecs.filter(e => "video" === e.type).map(e => e.name + "[encode: " + e.encode + ", decode: " + e.decode + "]"))), t.getEncryptionModes(r => {
+          })], this.logger.info("Audio codecs: ".concat(this.codecs.filter(e => "audio" === e.type).map(e => e.name))), this.logger.info("Video codecs: ".concat(this.codecs.filter(e => "video" === e.type).map(e => e.name + "[encode: " + e.encode + ", decode: " + e.decode + "]"))), t.getEncryptionModes(r => {
             var i, o, c, u, d, f, _, p, h, g, E, b, y;
             this.logger.info("Encryption modes: ".concat(r)), t.setTransportOptions(this.getConnectionTransportOptions()), t.setSelfMute(this.selfMute || this.context === v.Yn.STREAM), t.setSelfDeafen(this.selfDeaf), t.setOnSpeakingCallback(this.handleSpeakingNative), null == (i = t.setOnNativeMuteToggleCallback) || i.call(t, this.handleNativeMuteToggled), null == (o = t.setOnNativeMuteChangedCallback) || o.call(t, this.handleNativeMuteChanged), null == (c = t.setOnSpeakingWhileMutedCallback) || c.call(t, this.handleSpeakingWhileMuted), null == (u = t.setPingInterval) || u.call(t, v.$B), t.setPingCallback(this.handlePing), null == (d = t.setPingTimeoutCallback) || d.call(t, this.handlePingTimeout), null == (f = t.setOnVideoEncoderFallbackCallback) || f.call(t, this.handleVideoEncoderFallback), null == (_ = t.setOnRtcpMessageCallback) || _.call(t, this.handleRTCPMessage), n.setTransportOptions({
               builtInEchoCancellation: true,

@@ -48,8 +48,8 @@ function S(e) {
     onClose: G,
     sourceAnalyticsLocations: M = []
   } = e, U = S === Z.ME ? true : S, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, w, t), Y = (0, c.Dt)(), {
-    analyticsLocations: W
-  } = (0, a.ZP)([...M, o.Z.USER_PROFILE_MODAL]), H = (0, d.ZB)({
+    analyticsLocations: H
+  } = (0, a.ZP)([...M, o.Z.USER_PROFILE_MODAL]), W = (0, d.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: L,
@@ -59,9 +59,9 @@ function S(e) {
     roleId: C
   }), K = (0, P.Z)(t);
   return (0, r.jsx)(a.Gt, {
-    value: W,
+    value: H,
     children: (0, r.jsx)(d.Mt, {
-      value: H,
+      value: W,
       openedAt: B,
       fetchStartedAt: null == F ? true : F.fetchStartedAt,
       fetchEndedAt: null == F ? true : F.fetchEndedAt,

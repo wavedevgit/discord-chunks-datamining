@@ -158,7 +158,7 @@ var Y = function(e) {
     return e.REMB = "remb", e
   }({}),
   $ = function(e) {
-    return e.VIDEOTOOLBOX_RATE_CONTROL = "videotoolbox_rate_control", e.SIGNAL_AV1 = "signal_av1", e.SIGNAL_AV1_DECODE = "signal_av1_decode", e.SIGNAL_AV1_HARDWARE_DECODE = "signal_av1_hardware_decode", e.STREAMER_CLIP = "streamer_clip", e.VIEWER_CLIP = "viewer_clip", e.MUTE_BEFORE_PROCESSING = "mute_before_processing", e.PTT_BEFORE_PROCESSING = "ptt_before_processing", e.SKIP_ENCODE = "skip_encode", e.RESET_DECODER_ON_ERRORS = "reset_decoder_on_errors", e.SOFTWARE_FALLBACK_ON_ERRORS = "software_fallback_on_errors", e.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS = "software_fallback_on_consecutive_errors", e.SIGNAL_RED = "signal_red", e
+    return e.VIDEOTOOLBOX_RATE_CONTROL = "videotoolbox_rate_control", e.SIGNAL_AV1 = "signal_av1", e.SIGNAL_AV1_DECODE = "signal_av1_decode", e.SIGNAL_AV1_HARDWARE_DECODE = "signal_av1_hardware_decode", e.STREAMER_CLIP = "streamer_clip", e.VIEWER_CLIP = "viewer_clip", e.MUTE_BEFORE_PROCESSING = "mute_before_processing", e.PTT_BEFORE_PROCESSING = "ptt_before_processing", e.SKIP_ENCODE = "skip_encode", e.RESET_DECODER_ON_ERRORS = "reset_decoder_on_errors", e.SOFTWARE_FALLBACK_ON_ERRORS = "software_fallback_on_errors", e.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS = "software_fallback_on_consecutive_errors", e
   }({}),
   ee = function(e) {
     return e[e.AUTO = 1] = "AUTO", e[e.FULL = 2] = "FULL", e

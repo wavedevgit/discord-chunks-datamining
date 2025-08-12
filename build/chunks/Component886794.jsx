@@ -53,7 +53,7 @@ function S(e) {
     channelId: S,
     messageId: w,
     roleId: A
-  }), Y = l.useRef(null), W = (0, o.Z)(Y);
+  }), Y = l.useRef(null), H = (0, o.Z)(Y);
   return (0, r.jsx)(c.Gt, {
     value: F,
     children: (0, r.jsx)(f.Mt, {
@@ -152,7 +152,7 @@ function S(e) {
           })
         }), (null == G ? true : G.profileEffectId) != null && (0, r.jsx)(d.Z, {
           profileEffectId: null == G ? true : G.profileEffectId,
-          isHovering: W
+          isHovering: H
         })]
       })
     })

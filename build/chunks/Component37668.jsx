@@ -36,15 +36,14 @@ function g(t) {
     onClose: g
   } = t, w = r.useCallback(() => {
     (0, o.y8)(i.type), g()
-  }, [i.type, g]), v = (0, s.e7)([c.default], () => c.default.getUser(u));
-  return null == v ? null : (0, n.jsxs)(a.Modal, {
+  }, [i.type, g]), m = (0, s.e7)([c.default], () => c.default.getUser(u));
+  return null == m ? null : (0, n.jsxs)(l.Modal, {
     transitionState: e,
     onClose: g,
     title: x.intl.string(x.t.Mm07YW),
     subtitle: x.intl.format(x.t["x+djIy"], {
       helpUrl: d.w
     }),
-    actionBarInput: (0, n.jsx)("div", {}),
     actions: [{
       variant: "secondary",
       text: x.intl.string(x.t["ETE/oK"]),
@@ -58,11 +57,11 @@ function g(t) {
       className: h.widgetPreview,
       children: (0, n.jsx)(p, {
         widget: i,
-        user: v
+        user: m
       })
     }), (0, n.jsx)("div", {
       className: h.hintText,
-      children: (0, n.jsx)(l.Text, {
+      children: (0, n.jsx)(a.Text, {
         color: "text-secondary",
         variant: "text-sm/normal",
         children: x.intl.string(x.t.bQNGeX)
