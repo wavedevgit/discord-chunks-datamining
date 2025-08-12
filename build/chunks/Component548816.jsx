@@ -50,8 +50,8 @@ function u(e) {
     className: u,
     children: d,
     onClick: p,
-    ref: h
-  } = e, f = function(e, t) {
+    ref: f
+  } = e, h = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -67,7 +67,7 @@ function u(e) {
     return i
   }(e, ["padded", "inset", "active", "className", "children", "onClick", "ref"]);
   return null != p ? (0, r.jsx)(a.P3F, c(s({
-    innerRef: h,
+    innerRef: f,
     onClick: p,
     tabIndex: null != p ? 0 : false,
     className: l()(u, {
@@ -77,17 +77,17 @@ function u(e) {
       [o.active]: i,
       [o.interactive]: null != p
     })
-  }, f), {
+  }, h), {
     children: d
   })) : (0, r.jsx)("div", c(s({
-    ref: h,
+    ref: f,
     className: l()(u, {
       [o.outer]: !n,
       [o.inset]: n,
       [o.padded]: t,
       [o.active]: i
     })
-  }, f), {
+  }, h), {
     children: d
   }))
 }

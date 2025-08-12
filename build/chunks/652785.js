@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 652785, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  HG: () => h,
+  HG: () => f,
   Iv: () => d,
   XN: () => p
 });
@@ -41,4 +41,4 @@ let d = "lastHiddenChannelNotice",
     type: Chunk981631.vID.LINKED_ROLES_ADMIN,
     dismissibleContentType: Chunk704215.z.LINKED_ROLE_ADMIN_GUILD
   }],
-  h = p.map(e => e.store).filter(Chunk823379.lm)
+  f = p.map(e => e.store).filter(Chunk823379.lm)

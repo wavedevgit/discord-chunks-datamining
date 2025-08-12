@@ -106,7 +106,9 @@ function T(e) {
     }), n.isMultiUserDM() && (0, r.jsxs)(a.h, {
       className: b.buttonContainer,
       children: [(0, r.jsx)(h.l, {
-        channel: n
+        channel: n,
+        text: E.intl.string(E.t["6Qgren"]),
+        icon: s.ejJ
       }), (0, r.jsx)(o.z, {
         icon: s.vdY,
         variant: "secondary",

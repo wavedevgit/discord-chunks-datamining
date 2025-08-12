@@ -20,8 +20,8 @@ var Chunk704215 = require("./704215.js"),
 let m = e => {
   var t;
   let n = d.Z.getGuild(e),
-    r = !!(null == n ? true : n.features.has(f.oNc.COMMUNITY)),
-    l = p.Z.can(f.Plq.MANAGE_CHANNELS, n),
+    r = !!(null == n ? true : n.features.has(h.oNc.COMMUNITY)),
+    l = p.Z.can(h.Plq.MANAGE_CHANNELS, n),
     a = (0, s.zu)(i.z.FORUM_CHANNEL_UPSELL_MODAL),
     o = null != (t = u.Z.getMemberCount(e)) ? t : 0;
   return r && l && !a && o >= 200
@@ -38,7 +38,7 @@ class b extends Chunk317770.Z {
       guildId: t
     } = e;
     if (null == t || !m(t)) return;
-    (0, h.qz)(), (0, c.kk)(i.z.FORUM_CHANNEL_UPSELL_MODAL);
+    (0, f.qz)(), (0, c.kk)(i.z.FORUM_CHANNEL_UPSELL_MODAL);
     let a = function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : g.L.DISMISS;
       (0, s.Q3)(i.z.FORUM_CHANNEL_UPSELL_MODAL, {
@@ -89,7 +89,7 @@ class b extends Chunk317770.Z {
       onCloseCallback: () => (0, s.Q3)(i.z.FORUM_CHANNEL_UPSELL_MODAL, {
         dismissAction: g.L.DISMISS
       }),
-      onCloseRequest: f.VqG
+      onCloseRequest: h.VqG
     })
   }
 }

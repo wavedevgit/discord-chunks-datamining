@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 626421, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -13,7 +13,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk566840 = require("./566840.js"),
   Chunk921944 = require("./921944.js"),
   Chunk648106 = require("./648106.js");
-let h = Chunk73800.memo(function(e) {
+let f = Chunk73800.memo(function(e) {
   let {
     state: t,
     markAsDismissed: n
@@ -32,7 +32,7 @@ let h = Chunk73800.memo(function(e) {
   })
 });
 
-function f() {
+function h() {
   let e = (0, Chunk399606.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     t = (0, Chunk566840.Eg)(module),
     [n, i] = (0, Chunk243778.US)(Object.values(exports).filter(e => {
@@ -50,7 +50,7 @@ function f() {
   let l = exports[require];
   return null == Chunk120356 ? null : (0, Chunk255367.jsx)("div", {
     className: Chunk648106.container,
-    children: (0, Chunk255367.jsx)(h, {
+    children: (0, Chunk255367.jsx)(f, {
       state: Chunk120356,
       markAsDismissed: Chunk73800
     })

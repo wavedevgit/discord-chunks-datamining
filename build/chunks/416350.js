@@ -9,6 +9,7 @@ module.exports = {
   familyCenterLinkButton: "familyCenterLinkButton__35e86",
   friendsButtonContainer: "friendsButtonContainer__35e86",
   friendsBadge: "friendsBadge__35e86",
+  createDMButtonContainer: "createDMButtonContainer__35e86",
   confetti: "confetti__35e86",
   themedHeaderMobile: "themedHeaderMobile__35e86",
   familyCenterButtonContainer: "familyCenterButtonContainer__35e86",

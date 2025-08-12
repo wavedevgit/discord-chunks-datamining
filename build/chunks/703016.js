@@ -121,11 +121,11 @@ function B(e) {
   let u = g.Z.getChannel(o);
   if (null == u) returnfalse;
   let d = v.Z.getChannelId(),
-    b = f.ZP.getCurrentSidebarChannelId(d),
+    b = h.ZP.getCurrentSidebarChannelId(d),
     _ = o === d || o === b,
     C = p.OW.getSetting() && s.tts && _,
     N = E.Z.getTTSType(),
-    T = (null == (t = s.author) ? true : t.id) !== h.default.getId() && (N === j.PrB.ALL_CHANNELS || N === j.PrB.SELECTED_CHANNEL && _);
+    T = (null == (t = s.author) ? true : t.id) !== f.default.getId() && (N === j.PrB.ALL_CHANNELS || N === j.PrB.SELECTED_CHANNEL && _);
   if ((C || T) && !y.Z.isBlockedOrIgnoredForMessage(s)) {
     if (A.indexOf(s.id) >= 0) returnfalse;
     A.unshift(s.id) > 10 && A.pop();

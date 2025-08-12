@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 258220, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => f,
-  r: () => h
+  default: () => h,
+  r: () => f
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,18 +14,18 @@ var Chunk255367 = require("./255367.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let h = "Activity Encourages Hardware Acceleration";
+let f = "Activity Encourages Hardware Acceleration";
 
-function f(e) {
+function h(e) {
   var t;
   let {
     applicationId: n,
-    transitionState: f,
+    transitionState: h,
     onClose: g
   } = e, [m, b] = i.useState(false), [_] = (0, s.Z)([n]), O = null != (t = null == _ ? true : _.name) ? t : "This Activity";
   i.useEffect(() => {
     c.default.track(d.rMx.OPEN_MODAL, {
-      type: h
+      type: f
     })
   }, []);
   let E = async () => {
@@ -33,7 +33,7 @@ function f(e) {
     m && (e = "permanent", o.ZP.updatedUnsyncedSettings({
       disableActivityHardwareAccelerationPrompt: true
     })), c.default.track(d.rMx.MODAL_DISMISSED, {
-      type: h,
+      type: f,
       dismiss_type: e
     }), await g()
   }, y = async () => {
@@ -43,7 +43,7 @@ function f(e) {
   };
   return (0, r.jsx)(l.Modal, {
     size: "md",
-    transitionState: f,
+    transitionState: h,
     onClose: E,
     "aria-label": p.intl.string(p.t.NQkK4u),
     title: p.intl.string(p.t.NQkK4u),

@@ -1,6 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 43169, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
+  jX: () => a,
   kF: () => l
 });
 var Chunk818083 = require("./818083.js"),
@@ -20,4 +21,15 @@ let l = (0, Chunk818083.B)({
       inHoldout: true
     }
   }]
-})
+});
+
+function a(e) {
+  let {
+    inHoldout: t
+  } = l.useExperiment({
+    location: e
+  }, {
+    autoTrackExposure: false
+  });
+  return t
+}

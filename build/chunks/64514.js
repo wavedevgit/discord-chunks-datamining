@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 64514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js");
 var Chunk846519 = require("./846519.js"),
   Chunk570140 = require("./570140.js"),
@@ -21,7 +21,7 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class h extends Chunk317770.Z {
+class f extends Chunk317770.Z {
   _initialize() {
     this.focusedOrForegrounded = (0, Chunk127438.H)(), Chunk570140.Z.subscribe("WINDOW_FOCUS", this.handleWindowFocus), Chunk570140.Z.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), Chunk570140.Z.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), Chunk570140.Z.subscribe("LOGIN_SUCCESS", this.handleLogin), Chunk570140.Z.subscribe("LOGOUT", this.handleLogout), this.scheduleHeartbeatTracking()
   }
@@ -88,4 +88,4 @@ class h extends Chunk317770.Z {
     })
   }
 }
-let f = new h
+let h = new f

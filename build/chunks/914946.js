@@ -136,7 +136,7 @@ function B(e) {
     }).map(U),
     n = b.Z.getChannel(e.channel_id),
     r = null != e.author ? new m.Z(e.author) : true,
-    i = null != e.author ? (0, h.ij)(r, n) : true;
+    i = null != e.author ? (0, f.ij)(r, n) : true;
   return {
     id: e.id,
     blocked: e.blocked,
@@ -265,10 +265,10 @@ async function J(e, t, n) {
       }, "Invalid Origin")
     } else {
       let e = await Q(t);
-      if (r = f.ZP.createFromServer(e), !V(n, e.rpc_origins)) throw new P.Z({
+      if (r = h.ZP.createFromServer(e), !V(n, e.rpc_origins)) throw new P.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
-    } null == r && (r = f.ZP.createFromServer(await Q(t)));
+    } null == r && (r = h.ZP.createFromServer(await Q(t)));
   let {
     id: i,
     name: l,

@@ -58,8 +58,8 @@ let b = function(e) {
   return (0, r.jsxs)(u.Z, {
     onScroll: t,
     children: [(0, r.jsx)(s.Z, {
-      title: f.intl.string(f.t.X5xPlZ),
-      description: f.intl.string(f.t["F/IQCA"]),
+      title: h.intl.string(h.t.X5xPlZ),
+      description: h.intl.string(h.t["F/IQCA"]),
       children: (0, r.jsx)(o.Z, {})
     }), (0, r.jsxs)(c.Z, {
       children: [n.length > 0 ? (0, r.jsxs)(r.Fragment, {
@@ -67,10 +67,10 @@ let b = function(e) {
           className: g.sectionTitle,
           variant: "heading-lg/semibold",
           color: "header-primary",
-          children: f.intl.string(f.t["2DfZIS"])
+          children: h.intl.string(h.t["2DfZIS"])
         }), (0, r.jsxs)("div", {
           className: g.content,
-          children: [b.map(e => (0, r.jsx)(h.VD, {
+          children: [b.map(e => (0, r.jsx)(f.VD, {
             guild: e,
             onClick: () => a.Z.transitionToGuildSync(e.id)
           }, e.id)), (0, r.jsx)(d.Z, {
@@ -90,12 +90,12 @@ let b = function(e) {
           className: m.text,
           variant: "text-sm/medium",
           color: "header-secondary",
-          children: [f.intl.string(f.t.O1k9XV), " "]
+          children: [h.intl.string(h.t.O1k9XV), " "]
         }), (0, r.jsx)(l.Text, {
           className: m.text,
           variant: "text-sm/medium",
           color: "header-secondary",
-          children: f.intl.string(f.t.FV5dvr)
+          children: h.intl.string(h.t.FV5dvr)
         })]
       })]
     })]

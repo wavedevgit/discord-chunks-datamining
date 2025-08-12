@@ -22,7 +22,7 @@ function c(e) {
     d = (0, s.k5)(e),
     {
       isStageNoticeHidden: p,
-      isEventNoticeHidden: h
+      isEventNoticeHidden: f
     } = (0, r.cj)([o.Z], () => ({
       isStageNoticeHidden: o.Z.isLiveChannelNoticeHidden({
         stageId: null == u ? true : u.id
@@ -33,7 +33,7 @@ function c(e) {
     }), [u, d]);
   if (null != d)
     if (null != u) return !p;
-    else return !h;
+    else return !f;
   return null != u && !p
 }
 require("./765305.js"), require("./231338.js")

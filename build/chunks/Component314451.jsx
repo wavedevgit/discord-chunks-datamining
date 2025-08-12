@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,11 +32,11 @@ function h(e) {
   }
   return e
 }
-let f = () => (0, Chunk481060.ZDy)(async () => {
+let h = () => (0, Chunk481060.ZDy)(async () => {
   let {
     default: e
   } = await require.e("83051").then(require.bind(require, 115072));
-  return t => (0, r.jsx)(e, h({}, t))
+  return t => (0, r.jsx)(e, f({}, t))
 });
 
 function g(e) {
@@ -76,7 +76,7 @@ function g(e) {
               id: "staff-help-bug-reporter",
               label: p.intl.string(p.t["5Lqopa"]),
               icon: a.nnZ,
-              action: f
+              action: h
             }), n && (0, r.jsx)(a.sNh, {
               id: "staff-devtools",
               label: "Toggle DevTools",
@@ -98,9 +98,9 @@ function g(e) {
         let {
           isShown: l
         } = i;
-        return (0, r.jsx)(d.JO, h({
+        return (0, r.jsx)(d.JO, f({
           ref: E,
-          onClick: f,
+          onClick: h,
           icon: a.nnZ,
           "aria-label": p.intl.string(p.t.cqEoj4),
           selected: l,

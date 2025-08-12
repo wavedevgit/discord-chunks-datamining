@@ -1,12 +1,14 @@
 /** Chunk was on 34779 **/
 /** chunk id: 831218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => B
+  Z: () => F
 }), require("./388685.js");
 var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
+  Chunk120356 = require("./120356.js"),
+  s = require.n(Chunk120356),
   Chunk299608 = require("./299608.js"),
-  s = require.n(Chunk299608),
+  c = require.n(Chunk299608),
   Chunk91192 = require("./91192.jsx"),
   Chunk924826 = require("./924826.js"),
   Chunk442837 = require("./442837.js"),
@@ -36,7 +38,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk555614 = require("./555614.js");
 
-function L(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,20 +47,20 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function U(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
 }
 
-function k(e, t) {
+function G(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -70,7 +72,7 @@ function k(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let U = Chunk73800.memo(function() {
+let B = Chunk73800.memo(function() {
   return (0, Chunk255367.jsxs)("svg", {
     width: "184",
     height: "428",
@@ -197,7 +199,7 @@ let U = Chunk73800.memo(function() {
     })]
   })
 });
-class G extends(r = Chunk73800.Component) {
+class V extends(r = Chunk73800.Component) {
   static getDerivedStateFromProps(e) {
     let {
       children: t,
@@ -226,7 +228,7 @@ class G extends(r = Chunk73800.Component) {
     null != module && null != exports && exports.indexOf(module) >= 0 && this.scrollToChannel(module), this.reportAnalytics()
   }
   shouldComponentUpdate(e) {
-    return !(0, d.Z)(this.props, e, ["children"])
+    return !(0, p.Z)(this.props, e, ["children"])
   }
   componentDidUpdate(e) {
     let {
@@ -276,18 +278,18 @@ class G extends(r = Chunk73800.Component) {
           }
           return i
         }(r, ["ref", "role"]);
-        return (0, i.jsx)(h.Wdt, {
-          children: r => (0, i.jsx)(h.aVo, M({
+        return (0, i.jsx)(f.Wdt, {
+          children: r => (0, i.jsx)(f.aVo, U({
             fade: true,
             innerRole: o,
-            innerAriaLabel: R.intl.string(R.t.YUU0RE),
+            innerAriaLabel: L.intl.string(L.t.YUU0RE),
             innerTag: "ul",
             ref: e => {
               var t;
               this._list = e, this.props.listRef.current = e, l.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
             onScroll: this.handleScroll,
-            className: D.scroller,
+            className: M.scroller,
             sectionHeight: this.getSectionHeight,
             paddingTop: t,
             paddingBottom: 8,
@@ -301,12 +303,12 @@ class G extends(r = Chunk73800.Component) {
     })
   }
   constructor(...e) {
-    super(...e), L(this, "state", {
+    super(...e), k(this, "state", {
       initialized: false,
       preRenderedChildren: 0,
       totalRowCount: 0,
       nonNullChildren: []
-    }), L(this, "_list", null), L(this, "hasReportedAnalytics", false), L(this, "reportAnalytics", () => {
+    }), k(this, "_list", null), k(this, "hasReportedAnalytics", false), k(this, "reportAnalytics", () => {
       var e;
       if (this.hasReportedAnalytics) return;
       let t = null == (e = this._list) ? true : e.getScrollerState();
@@ -321,27 +323,27 @@ class G extends(r = Chunk73800.Component) {
       let o = Math.round((t.offsetHeight - 44 * i) / 44),
         s = o > n.length ? n.slice(0, o + 1) : n,
         a = s.map(e => null != r[e] ? r[e].getRecipientId() : null),
-        c = n.some(e => (0, _.Z)(e)),
+        c = n.some(e => (0, C.Z)(e)),
         u = {
           num_users_visible: s.length,
-          num_users_visible_with_mobile_indicator: a.filter(e => null != e && Z.Z.isMobileOnline(e)).length
+          num_users_visible_with_mobile_indicator: a.filter(e => null != e && A.Z.isMobileOnline(e)).length
         };
-      this.hasReportedAnalytics = true, m.ZP.trackWithMetadata(A.rMx.DM_LIST_VIEWED, k(M({}, u, (0, O.X)()), {
+      this.hasReportedAnalytics = true, O.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, G(U({}, u, (0, y.X)()), {
         visible_user_ids: a.filter(e => null != e),
         changelog_dm_visible: c
       }))
-    }), L(this, "getSectionHeight", e => {
+    }), k(this, "getSectionHeight", e => {
       let {
         showDMHeader: t
       } = this.props;
       return 0 === e ? 0 : 24 * !!t
-    }), L(this, "handleScroll", s()(() => {
+    }), k(this, "handleScroll", c()(() => {
       if (null != this._list) {
         let e = this._list.getScrollerNode();
-        null != e && p.Z.updateChannelListScroll(A.ME, e.scrollTop)
+        null != e && g.Z.updateChannelListScroll(D.ME, e.scrollTop)
       }
       true !== this.props.onHandleScroll && this.props.onHandleScroll()
-    }, 100)), L(this, "renderDM", (e, t) => {
+    }, 100)), k(this, "renderDM", (e, t) => {
       let {
         privateChannelIds: n,
         channels: r,
@@ -350,13 +352,13 @@ class G extends(r = Chunk73800.Component) {
         totalRowCount: o,
         preRenderedChildren: s
       } = this.state, a = r[n[t]];
-      return null == a ? null : (0, i.jsx)(y.W, {
+      return null == a ? null : (0, i.jsx)(v.W, {
         channel: a,
         selected: a.id === l,
         "aria-posinset": s + t + 1,
         "aria-setsize": o
       }, a.id)
-    }), L(this, "renderChild", e => {
+    }), k(this, "renderChild", e => {
       let {
         nonNullChildren: t,
         totalRowCount: n
@@ -365,37 +367,46 @@ class G extends(r = Chunk73800.Component) {
         "aria-setsize": n,
         "aria-posinset": e + 1
       }) : r
-    }), L(this, "renderRow", e => {
+    }), k(this, "renderRow", e => {
       let {
         section: t,
         row: n
       } = e, {
         privateChannelIds: r
       } = this.props;
-      return 0 === t ? this.renderChild(n) : 0 === n && 0 === r.length ? (0, i.jsx)(U, {}, "no-private-channels") : this.renderDM(t, n)
-    }), L(this, "renderSection", e => {
+      return 0 === t ? this.renderChild(n) : 0 === n && 0 === r.length ? (0, i.jsx)(B, {}, "no-private-channels") : this.renderDM(t, n)
+    }), k(this, "renderSection", e => {
       let {
         section: t
       } = e, {
-        showDMHeader: n
+        showDMHeader: n,
+        createDMCTAButtonVariant: r
       } = this.props;
-      return 0 !== t && n ? (0, i.jsxs)(C.Z, {
-        className: D.privateChannelsHeaderContainer,
+      return 0 !== t && n ? (0, i.jsxs)(j.Z, {
+        className: s()(M.privateChannelsHeaderContainer, {
+          [M.tall]: "side" === r
+        }),
         children: [(0, i.jsx)("span", {
-          className: D.headerText,
-          children: R.intl.string(R.t.YUU0RE)
-        }), (0, i.jsx)(S.Z, {
+          className: M.headerText,
+          children: L.intl.string(L.t.YUU0RE)
+        }), null == r && (0, i.jsx)(I.Z, {
           location: "PrivateChannelsList-CreateDMButton",
-          tooltip: R.intl.string(R.t["6Urw1t"]),
+          tooltip: L.intl.string(L.t["6Urw1t"]),
           tooltipPosition: "top",
           popoutAlign: "left",
-          className: D.privateChannelRecipientsInviteButtonIconContainer,
-          iconClassName: D.privateChannelRecipientsInviteButtonIcon,
-          icon: h.BRu,
+          className: M.privateChannelRecipientsInviteButtonIconContainer,
+          iconClassName: M.privateChannelRecipientsInviteButtonIcon,
+          icon: f.BRu,
+          subscribeToGlobalHotkey: true
+        }), "side" === r && (0, i.jsx)(I.l, {
+          popoutAlign: "left",
+          icon: f.kL_,
+          text: L.intl.string(L.t["6Urw1t"]),
+          size: "sm",
           subscribeToGlobalHotkey: true
         })]
       }, t) : null
-    }), L(this, "getRowHeight", (e, t) => {
+    }), k(this, "getRowHeight", (e, t) => {
       let {
         privateChannelIds: n,
         density: r
@@ -413,33 +424,34 @@ class G extends(r = Chunk73800.Component) {
     })
   }
 }
-L(G, "defaultProps", {
+k(V, "defaultProps", {
   padding: 8
 });
-let B = e => {
+let F = e => {
   let {
     density: t
-  } = (0, h.TCT)(), {
+  } = (0, f.TCT)(), {
     version: n,
     theme: r,
     children: o,
     showDMHeader: s,
-    listScrollerRef: d
-  } = e, p = l.Children.count(o), m = w.Z.getMutablePrivateChannels(), O = (0, I.k1)(m), _ = (0, u.Wu)([T.Z, x.Z, P.Z], () => {
-    let e = T.Z.getPrivateChannelIds();
-    return (0, I.tU)(e, [x.Z, P.Z])
+    listScrollerRef: a,
+    createDMCTAButtonVariant: c
+  } = e, p = l.Children.count(o), g = T.Z.getMutablePrivateChannels(), O = (0, N.k1)(g), y = (0, h.Wu)([R.Z, P.Z, w.Z], () => {
+    let e = R.Z.getPrivateChannelIds();
+    return (0, N.tU)(e, [P.Z, w.Z])
   }, []);
-  (0, E.z)(j.R);
+  (0, x.z)(S.R);
   let {
-    analyticsLocations: y
-  } = (0, b.ZP)(g.Z.CONTACTS_LIST), C = (0, N.Ll)(), {
-    keyboardModeEnabled: S,
-    version: Z
-  } = (0, u.cj)([f.Z, w.Z], () => ({
-    keyboardModeEnabled: f.Z.keyboardModeEnabled,
-    version: null != n ? "".concat(n, ":").concat(w.Z.getPrivateChannelsVersion()) : w.Z.getPrivateChannelsVersion()
-  })), A = l.useRef(null), R = null != d ? d : A, D = l.useCallback(e => {
-    let t = R.current,
+    analyticsLocations: C
+  } = (0, _.ZP)(b.Z.CONTACTS_LIST), v = (0, Z.Ll)(), {
+    keyboardModeEnabled: j,
+    version: I
+  } = (0, h.cj)([m.Z, T.Z], () => ({
+    keyboardModeEnabled: m.Z.keyboardModeEnabled,
+    version: null != n ? "".concat(n, ":").concat(T.Z.getPrivateChannelsVersion()) : T.Z.getPrivateChannelsVersion()
+  })), A = l.useRef(null), D = null != a ? a : A, L = l.useCallback(e => {
+    let t = D.current,
       n = document.querySelector(e);
     null != t && null != n && t.scrollIntoViewNode({
       node: n,
@@ -452,39 +464,40 @@ let B = e => {
         })
       }
     })
-  }, [R]), L = l.useCallback(() => new Promise(e => {
-    let t = R.current;
+  }, [D]), M = l.useCallback(() => new Promise(e => {
+    let t = D.current;
     if (null == t) return e();
     t.scrollToTop({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), [R]), U = l.useCallback(() => new Promise(e => {
-    let t = R.current;
+  }), [D]), k = l.useCallback(() => new Promise(e => {
+    let t = D.current;
     if (null == t) return e();
     t.scrollToBottom({
       callback() {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [R]), B = (0, v.Dt)(), V = (0, c.ZP)({
+  }), [D]), B = (0, E.Dt)(), F = (0, d.ZP)({
     id: "private-channels-".concat(B),
-    isEnabled: S,
-    scrollToStart: L,
-    scrollToEnd: U,
+    isEnabled: j,
+    scrollToStart: M,
+    scrollToEnd: k,
     defaultFocused: (p + +!!s).toString(),
-    setFocus: D
+    setFocus: L
   });
-  return (0, i.jsx)(b.Gt, {
-    value: y,
-    children: (0, i.jsx)(a.bG, {
-      navigator: V,
-      children: (0, i.jsx)(G, k(M({}, e), {
+  return (0, i.jsx)(_.Gt, {
+    value: C,
+    children: (0, i.jsx)(u.bG, {
+      navigator: F,
+      children: (0, i.jsx)(V, G(U({}, e), {
         density: t,
         channels: O,
-        privateChannelIds: _,
-        listRef: R,
-        theme: null != C ? C : r,
-        version: Z
+        privateChannelIds: y,
+        listRef: D,
+        theme: null != v ? v : r,
+        version: I,
+        createDMCTAButtonVariant: c
       }))
     })
   })

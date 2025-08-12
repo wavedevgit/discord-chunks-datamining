@@ -70,7 +70,7 @@ function N(e) {
     status: b.Z.getStatus(e),
     isMobile: b.Z.isMobileOnline(e),
     activities: b.Z.getActivities(e),
-    applicationStream: f.Z.getAnyStreamForUser(e)
+    applicationStream: h.Z.getAnyStreamForUser(e)
   }
 }
 
@@ -106,7 +106,7 @@ class j {
         }, S(n), N(n), T(n)), {
           spam: _.Z.isSpam(n),
           ignoredUser: _.Z.isIgnored(n),
-          giftIntentType: r === E.OGo.FRIEND && h.Z.isTopAffinityFriendAnniversary({
+          giftIntentType: r === E.OGo.FRIEND && f.Z.isTopAffinityFriendAnniversary({
             userId: n
           }) ? y.hX.FRIEND_ANNIVERSARY : true,
           applicationId: _.Z.getOriginApplicationId(n)

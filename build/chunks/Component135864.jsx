@@ -80,7 +80,7 @@ function S(e) {
         if (!N) return (0, O.transitionToGlobalDiscovery)({
           tab: t
         });
-        h.Z.resetState(), f.Z.resetState();
+        f.Z.resetState(), h.Z.resetState();
         return;
       default:
         return (0, O.transitionToGlobalDiscovery)({

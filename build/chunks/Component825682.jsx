@@ -18,8 +18,8 @@ let d = function(e) {
     activities: n,
     applicationStream: d,
     status: p,
-    user: h,
-    userIgnored: f
+    user: f,
+    userIgnored: h
   } = e, {
     voiceActivityStatusEnabled: g
   } = (0, i.U)({
@@ -27,9 +27,9 @@ let d = function(e) {
   }), {
     voiceChannel: m
   } = (0, a.Z)({
-    userId: null == h ? true : h.id
+    userId: null == f ? true : f.id
   }), b = g ? m : true;
-  return f ? (0, r.jsx)("div", {
+  return h ? (0, r.jsx)("div", {
     className: u.text,
     children: c.intl.string(c.t.tFY5ZW)
   }) : (0, l.Z)({
@@ -44,7 +44,7 @@ let d = function(e) {
     applicationStream: d,
     voiceChannel: b,
     animateEmoji: t,
-    user: h,
+    user: f,
     textSize: "sm"
   }) : (0, r.jsx)("div", {
     className: u.text,

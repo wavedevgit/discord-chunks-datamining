@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 214143, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -18,13 +18,13 @@ let p = (e, t) => {
   })
 };
 
-function h(e) {
+function f(e) {
   let {
     embedId: t,
     className: n,
     style: a
-  } = e, o = (0, l.e7)([c.Z], () => c.Z.getConnectedFrame()), h = ((0, l.e7)([c.Z], () => c.Z.getFrameLayoutMode()), null != o && u.U.FOCUSED, window), f = i.useRef(null), g = i.useCallback(() => {
-    null != f.current && p(t, f.current.getBoundingClientRect())
+  } = e, o = (0, l.e7)([c.Z], () => c.Z.getConnectedFrame()), f = ((0, l.e7)([c.Z], () => c.Z.getFrameLayoutMode()), null != o && u.U.FOCUSED, window), h = i.useRef(null), g = i.useCallback(() => {
+    null != h.current && p(t, h.current.getBoundingClientRect())
   }, [t]);
   i.useLayoutEffect(() => {
     g()
@@ -33,20 +33,20 @@ function h(e) {
     g()
   }), [g]);
   return i.useLayoutEffect(() => {
-    let e = f.current;
+    let e = h.current;
     if (null != e) return m.observe(e), () => m.unobserve(e)
   }, [m]), i.useLayoutEffect(() => {
     let e = () => g(),
       t = () => g();
-    return h.addEventListener("scroll", e, true), h.addEventListener("resize", t), () => {
-      h.removeEventListener("scroll", e, true), h.removeEventListener("resize", t)
+    return f.addEventListener("scroll", e, true), f.addEventListener("resize", t), () => {
+      f.removeEventListener("scroll", e, true), f.removeEventListener("resize", t)
     }
-  }, [g, h]), i.useLayoutEffect(() => (s.S.subscribe(d.CkL.MANUAL_IFRAME_RESIZING, g), () => {
+  }, [g, f]), i.useLayoutEffect(() => (s.S.subscribe(d.CkL.MANUAL_IFRAME_RESIZING, g), () => {
     s.S.unsubscribe(d.CkL.MANUAL_IFRAME_RESIZING, g)
   }), [g]), i.useLayoutEffect(() => () => {
     p(t, null)
   }, [t]), (0, r.jsx)("div", {
-    ref: f,
+    ref: h,
     className: n,
     style: a
   })

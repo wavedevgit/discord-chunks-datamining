@@ -151,15 +151,15 @@ let eZ = (0, Chunk608787.Un)({
   eG = e => {
     let {
       match: t
-    } = e, n = (0, E.l)(), i = (0, p.e7)([ec.Z, eh.Z], () => {
-      let e = eh.Z.getChannelId();
+    } = e, n = (0, E.l)(), i = (0, p.e7)([ec.Z, ef.Z], () => {
+      let e = ef.Z.getChannelId();
       return ec.Z.getChannel(e)
     }), {
       guildId: l,
       channelId: a,
       messageId: o,
       threadId: c
-    } = t.params, u = (0, p.e7)([ep.Z], () => ep.Z.getGuild(l)), d = (0, p.e7)([ed.ZP], () => null == l ? null : ed.ZP.getSelfMember(l)), h = (0, p.e7)([F.Z], () => {
+    } = t.params, u = (0, p.e7)([ep.Z], () => ep.Z.getGuild(l)), d = (0, p.e7)([ed.ZP], () => null == l ? null : ed.ZP.getSelfMember(l)), f = (0, p.e7)([F.Z], () => {
       if (null == l) return;
       let e = F.Z.getData(l);
       if ((null == e ? true : e.type) === z.z.SERVER_SHOP) switch (e.initialTab) {
@@ -172,10 +172,10 @@ let eZ = (0, Chunk608787.Un)({
       }
     });
     (0, en.WF)(a) && (0, en.WF)(c) || (null != u && (0, eo.uL)(eS.Z5c.CHANNEL(u.id, (0, er.Z)(u))), (0, W.V)());
-    let f = (0, j.C4)(l, "channel_renderer");
+    let h = (0, j.C4)(l, "channel_renderer");
     if (null != l && null != a && (0, eN.AB)(a)) switch (a) {
       case eN.oC.ROLE_SUBSCRIPTIONS:
-        return f ? (0, r.jsx)(eL, {
+        return h ? (0, r.jsx)(eL, {
           guildId: l,
           initialTab: x.y.GUILD_ROLE_SUBSCRIPTIONS
         }) : (0, r.jsx)(G.Z, {
@@ -185,7 +185,7 @@ let eZ = (0, Chunk608787.Un)({
         return (0, r.jsx)(eL, {
           guildId: l,
           productId: o,
-          initialTab: h
+          initialTab: f
         });
       case eN.oC.MEMBER_APPLICATIONS:
         return (0, r.jsx)(s.l_, {
@@ -420,7 +420,7 @@ function e5(e) {
   i.useLayoutEffect(() => {
     if (m) {
       var e;
-      let t = parseInt(null != (e = h.K.get(ev.nT)) ? e : "");
+      let t = parseInt(null != (e = f.K.get(ev.nT)) ? e : "");
       Number.isNaN(t) && (t = ev.qO), t = Math.min(Math.max(t, ev.li), ev.zx), !m && t <= ev.p8 && (t = ev.qO), e8(t);
       let n = e => {
         e.metaKey && "b" === e.key && P.useAppSidebarState.setState(e => ({
@@ -435,7 +435,7 @@ function e5(e) {
     if (E) e8(ev.p8);
     else {
       var e;
-      let t = parseInt(null != (e = h.K.get(ev.nT)) ? e : "");
+      let t = parseInt(null != (e = f.K.get(ev.nT)) ? e : "");
       Number.isNaN(t) && (t = ev.qO), e8(t)
     }
   }, [E]);
@@ -455,7 +455,7 @@ function e5(e) {
     }, []),
     S = i.useCallback(e => {
       var t;
-      document.body.classList.remove(ex.dragging), document.body.classList.remove(ex.draggingMin), document.body.classList.remove(ex.draggingMax), document.body.classList.remove(ex.collapsing), null == (t = y.current) || t.style.setProperty("--custom-overdrag", "0px"), h.K.set(ev.nT, e), eg.default.track(eS.rMx.CHANNEL_SIDEBAR_RESIZED, {
+      document.body.classList.remove(ex.dragging), document.body.classList.remove(ex.draggingMin), document.body.classList.remove(ex.draggingMax), document.body.classList.remove(ex.collapsing), null == (t = y.current) || t.style.setProperty("--custom-overdrag", "0px"), f.K.set(ev.nT, e), eg.default.track(eS.rMx.CHANNEL_SIDEBAR_RESIZED, {
         width: e
       })
     }, []),
@@ -482,7 +482,7 @@ function e5(e) {
       [ex.sidebarListRounded]: !t
     })
   };
-  return (0, r.jsx)(f.f6W, {
+  return (0, r.jsx)(h.f6W, {
     theme: n,
     children: e => {
       var t, i;
@@ -509,7 +509,7 @@ function e5(e) {
             return n
           })(Object(i)).forEach(function(e) {
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
-          }), t)), (0, r.jsx)(f.P3F, {
+          }), t)), (0, r.jsx)(h.P3F, {
             onClick: T,
             "aria-label": "Resize Sidebar",
             className: ex.sidebarResizeHandle,
@@ -547,9 +547,9 @@ function e4() {
       let t = (0, Chunk114858.TH)();
       return (null == (e = (0, Chunk114858.LX)(exports.pathname, Chunk981631.Z5c.COLLECTIBLES_SHOP_FULLSCREEN)) ? true : module.isExact) === true
     }(),
-    h = (0, Chunk442837.e7)([Chunk659971.Z], () => Chunk659971.Z.getIsOpen()),
+    f = (0, Chunk442837.e7)([Chunk659971.Z], () => Chunk659971.Z.getIsOpen()),
     {
-      notificationCenterVariant: f
+      notificationCenterVariant: h
     } = (0, Chunk821020.pN)({
       location: "Sidebar"
     }),

@@ -36,11 +36,11 @@ let m = new Set([Chunk701488.Fu, Chunk701488.JT]),
         } = e;
         (0, u.bu)(t.transport);
         let p = (0, u._f)(t.application),
-          f = l.Z.get(n);
-        if (null == f) throw new c.Z({
+          h = l.Z.get(n);
+        if (null == h) throw new c.Z({
           errorCode: g.lT.INVALID_PROVIDER
         }, 'Platform not found for provider "'.concat(n, '"'));
-        if (n === h.ABu.AMAZON_MUSIC) {
+        if (n === f.ABu.AMAZON_MUSIC) {
           if (!m.has(p)) throw new c.Z({
             errorCode: g.lT.UNAUTHORIZED_FOR_APPLICATION
           }, "Command not available for this application")
@@ -52,8 +52,8 @@ let m = new Set([Chunk701488.Fu, Chunk701488.JT]),
           if (null == l) {
             function u(t) {
               var n;
-              if (null == f) return;
-              let r = (null != (n = t.accounts) ? n : []).find(e => e.type === f.type);
+              if (null == h) return;
+              let r = (null != (n = t.accounts) ? n : []).find(e => e.type === h.type);
               null != r && (e({
                 access_token: r.access_token
               }), m())
@@ -66,15 +66,15 @@ let m = new Set([Chunk701488.Fu, Chunk701488.JT]),
             }
 
             function m() {
-              r.Z.unsubscribe("USER_CONNECTIONS_UPDATE", u), s.S.unsubscribe(h.CkL.CONNECTIONS_CALLBACK_ERROR, p)
+              r.Z.unsubscribe("USER_CONNECTIONS_UPDATE", u), s.S.unsubscribe(f.CkL.CONNECTIONS_CALLBACK_ERROR, p)
             }
-            r.Z.subscribe("USER_CONNECTIONS_UPDATE", u), s.S.subscribe(h.CkL.CONNECTIONS_CALLBACK_ERROR, p), (0, a.Z)({
-              platformType: f.type,
-              location: h.Sbl.ACTIVITY_RPC,
+            r.Z.subscribe("USER_CONNECTIONS_UPDATE", u), s.S.subscribe(f.CkL.CONNECTIONS_CALLBACK_ERROR, p), (0, a.Z)({
+              platformType: h.type,
+              location: f.Sbl.ACTIVITY_RPC,
               successRedirect: d
             })
           } else try {
-            let t = await i.Z.refreshAccessToken(f.type, l.id);
+            let t = await i.Z.refreshAccessToken(h.type, l.id);
             if (null == t) throw new c.Z({
               errorCode: g.lT.OAUTH2_ERROR
             }, "Refreshing access token did not return a new access token");
@@ -107,7 +107,7 @@ let m = new Set([Chunk701488.Fu, Chunk701488.JT]),
         if (null == a) throw new c.Z({
           errorCode: g.lT.INVALID_PROVIDER
         }, 'Platform not found for provider "'.concat(n, '"'));
-        if (n === h.ABu.AMAZON_MUSIC) {
+        if (n === f.ABu.AMAZON_MUSIC) {
           if (!m.has(r)) throw new c.Z({
             errorCode: g.lT.UNAUTHORIZED_FOR_APPLICATION
           }, "Command not available for this application")

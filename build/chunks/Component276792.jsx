@@ -70,16 +70,16 @@ function E(e) {
   switch (null == (E = I.button) ? true : E.buttonAction) {
     case l.Wc.OPEN_MARKETING_PAGE:
       v = () => {
-        (0, c.uL)(f.Z5c.APPLICATION_STORE), j()
+        (0, c.uL)(h.Z5c.APPLICATION_STORE), j()
       };
       break;
     case l.Wc.OPEN_TIER_1_PAYMENT_MODAL:
       v = () => (0, s.Z)({
-        subscriptionTier: h.Si.TIER_1,
+        subscriptionTier: f.Si.TIER_1,
         analyticsLocations: S,
         analyticsObject: O(_({}, N), {
-          object: f.qAy.BUTTON_CTA,
-          objectType: f.Qqv.TIER_1
+          object: h.qAy.BUTTON_CTA,
+          objectType: h.Qqv.TIER_1
         }),
         onClose: e => {
           e && j()
@@ -90,11 +90,11 @@ function E(e) {
     case l.Wc.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
     default:
       v = () => (0, s.Z)({
-        subscriptionTier: h.Si.TIER_2,
+        subscriptionTier: f.Si.TIER_2,
         analyticsLocations: S,
         analyticsObject: O(_({}, N), {
-          object: f.qAy.BUTTON_CTA,
-          objectType: f.Qqv.TIER_2
+          object: h.qAy.BUTTON_CTA,
+          objectType: h.Qqv.TIER_2
         }),
         onClose: e => {
           e && j()
@@ -148,7 +148,7 @@ function E(e) {
         wrapperClassName: m.tier2Gradient,
         size: a.zx.Sizes.SMALL,
         onClick: () => {
-          u.default.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
+          u.default.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
             change_log_id: P,
             cta_type: A,
             seconds_open: Math.round((Date.now() - e) / 1e3),

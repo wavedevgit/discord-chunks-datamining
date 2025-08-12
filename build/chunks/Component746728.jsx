@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 746728, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => f,
+  I: () => h,
   Z: () => m
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk112471 = require("./112471.js"),
   Chunk384506 = require("./384506.js");
 
-function f(e) {
+function h(e) {
   let {
     categoryId: t,
     loadId: n
@@ -37,7 +37,7 @@ function g(e) {
     categoryId: n,
     count: l
   } = e, c = i.useCallback(() => {
-    f({
+    h({
       categoryId: n,
       loadId: t
     })
@@ -46,16 +46,16 @@ function g(e) {
   });
   return (0, r.jsxs)(o.P3F, {
     onClick: c,
-    className: a()(h.category, {
-      [h.selected]: p
+    className: a()(f.category, {
+      [f.selected]: p
     }),
     children: [(0, r.jsx)(o.Text, {
-      className: h.name,
+      className: f.name,
       variant: "text-sm/medium",
       color: "header-primary",
       children: m
     }), (0, r.jsx)(o.Text, {
-      className: h.count,
+      className: f.count,
       variant: "text-sm/normal",
       color: "text-muted",
       children: g
@@ -67,7 +67,7 @@ let m = function(e) {
     loadId: t
   } = e, n = (0, p.q)();
   return null == n ? null : (0, r.jsx)("div", {
-    className: h.categories,
+    className: f.categories,
     children: n.map(e => {
       let [n, i] = e;
       return (0, r.jsx)(g, {

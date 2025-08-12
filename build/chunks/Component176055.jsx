@@ -74,7 +74,7 @@ class T extends Chunk73800.PureComponent {
     if (exports && require) return null;
     let d = (0, Chunk411198.B3)(module),
       p = Chunk388032.intl.string(Chunk388032.t.pxwdrK),
-      h = this.handleJoinOrView,
+      f = this.handleJoinOrView,
       b = Chunk755721.zx.Looks.FILLED,
       _ = Chunk755721.zx.Colors.PRIMARY;
     return Chunk120356 ? require ? (b = Chunk755721.zx.Looks.OUTLINED, _ = Chunk629811.buttonColorInGuild, p = (0, Chunk255367.jsxs)(Chunk600164.Z, {
@@ -86,7 +86,7 @@ class T extends Chunk73800.PureComponent {
         color: "currentColor",
         className: Chunk629811.joinedCheckmark
       })]
-    })) : Chunk73800 && exports && (p = Chunk388032.intl.string(Chunk388032.t.XpeFYm)) : (p = Chunk388032.intl.string(Chunk388032.t.dKhVQE), h = this.handleLogin), (0, Chunk255367.jsxs)("div", {
+    })) : Chunk73800 && exports && (p = Chunk388032.intl.string(Chunk388032.t.XpeFYm)) : (p = Chunk388032.intl.string(Chunk388032.t.dKhVQE), f = this.handleLogin), (0, Chunk255367.jsxs)("div", {
       className: a()(Chunk593473, Chunk442837 === Chunk843445.b.SMALL ? Chunk629811.inviteSmall : Chunk629811.inviteLarge),
       children: [(0, Chunk255367.jsx)(Chunk770146.Z, {
         children: Chunk388032.intl.string(Chunk388032.t.s1KcLi)

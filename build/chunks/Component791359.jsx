@@ -46,11 +46,11 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
       quest: a
     }), {
       partiedMembers: p,
-      applicationStreams: h,
-      currentActivities: f,
+      applicationStreams: f,
+      currentActivities: h,
       voiceChannels: g
-    } = t, m = p.length, b = h.length, O = f.length, E = g.length > 0, S = i.useCallback(() => {
-      let e = f.filter(e => {
+    } = t, m = p.length, b = f.length, O = h.length, E = g.length > 0, S = i.useCallback(() => {
+      let e = h.filter(e => {
         var t, n;
         return (null == (t = e.game) ? true : t.name) != null && (0, _.isGameApplicationType)(null == (n = e.game) ? true : n.type)
       }).map(e => e.game.name);
@@ -61,7 +61,7 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
         in_voice_channel: E,
         games_detected: e
       })
-    }, [m, b, O, E, f]), T = s()(S, x);
+    }, [m, b, O, E, h]), T = s()(S, x);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",
@@ -152,8 +152,8 @@ function w() {
       });
       return exports
     }, [module, Chunk954955]),
-    f = null;
-  return exports ? f = module.length > 0 ? module.map(e => {
+    h = null;
+  return exports ? h = module.length > 0 ? module.map(e => {
     let {
       party: t
     } = e;

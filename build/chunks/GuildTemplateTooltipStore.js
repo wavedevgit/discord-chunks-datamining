@@ -45,7 +45,7 @@ let u = "hasSeenGuildTemplatePromotionTooltip",
   d = {},
   p = true === Chunk433517.K.get(u);
 
-function h(e) {
+function f(e) {
   let {
     guildId: t
   } = e;
@@ -53,7 +53,7 @@ function h(e) {
     [t]: false
   })
 }
-class f extends(r = Chunk442837.ZP.Store) {
+class h extends(r = Chunk442837.ZP.Store) {
   shouldShowGuildTemplateDirtyTooltip(e) {
     var t;
     return null != (t = d[e]) && t
@@ -62,8 +62,8 @@ class f extends(r = Chunk442837.ZP.Store) {
     return !p
   }
 }
-o(f, "displayName", "GuildTemplateTooltipStore");
-let g = new f(Chunk570140.Z, {
+o(h, "displayName", "GuildTemplateTooltipStore");
+let g = new h(Chunk570140.Z, {
   GUILD_TEMPLATE_DIRTY_TOOLTIP_REFRESH: function(e) {
     let {
       guildTemplate: t
@@ -80,6 +80,6 @@ let g = new f(Chunk570140.Z, {
       [e.guildTemplate.source_guild_id]: false
     })
   },
-  GUILD_TEMPLATE_DIRTY_TOOLTIP_HIDE: h,
-  GUILD_TEMPLATE_DELETE_SUCCESS: h
+  GUILD_TEMPLATE_DIRTY_TOOLTIP_HIDE: f,
+  GUILD_TEMPLATE_DELETE_SUCCESS: f
 })

@@ -79,7 +79,7 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       item: r,
       tooltip: l
     } = e, a = r.libraryApplication.hasFlag(t);
-    return (0, i.jsx)(h.ua7, {
+    return (0, i.jsx)(f.ua7, {
       text: l,
       children: e => (0, i.jsx)(n, Z({
         className: o()(x.settingIcon, {
@@ -105,9 +105,9 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
         children: [(0, i.jsx)("div", {
           className: x.nameCellText,
           children: e.libraryApplication.getBranchedName(e.application)
-        }), e.libraryApplication.hasFlag(P.eHb.PREMIUM) ? (0, i.jsx)(h.ua7, {
+        }), e.libraryApplication.hasFlag(P.eHb.PREMIUM) ? (0, i.jsx)(f.ua7, {
           text: j.intl.string(j.t.tG2SzM),
-          children: e => (0, i.jsx)(h.SrA, Z({
+          children: e => (0, i.jsx)(f.SrA, Z({
             size: "md",
             color: "currentColor",
             className: x.nitroIcon
@@ -161,12 +161,12 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
           children: [(0, i.jsx)(k, {
             flag: P.eHb.PRIVATE,
             item: e,
-            icon: h.kZF,
+            icon: f.kZF,
             tooltip: j.intl.string(j.t.NozAoq)
           }), (0, i.jsx)(k, {
             flag: P.eHb.OVERLAY_DISABLED,
             item: e,
-            icon: h.o8v,
+            icon: f.o8v,
             tooltip: j.intl.string(j.t.Az9eqq)
           }), (0, i.jsx)(T.Z, {
             className: o()(x.settingIcon, {
@@ -248,7 +248,7 @@ class G extends(r = Chunk73800.PureComponent) {
     let t = this.props.activeRowKey;
     if (null != t && e.activeRowKey !== t && this.props.isNavigatingByKeyboard) {
       let e = this._rowRefs[t];
-      null != e && (f.Z.wait(g.Zy), this.props.scrollToRow(e, L))
+      null != e && (h.Z.wait(g.Zy), this.props.scrollToRow(e, L))
     }
   }
   handleHighlightedApplicationKey() {
@@ -442,7 +442,7 @@ function V(e) {
       sortKey: u,
       sortDirection: d,
       activeRowKey: p,
-      isNavigatingByKeyboard: h
+      isNavigatingByKeyboard: f
     } = (0, c.cj)([I.Z], () => ({
       sortKey: I.Z.sortKey,
       sortDirection: I.Z.sortDirection,
@@ -458,7 +458,7 @@ function V(e) {
     sortKey: u,
     sortDirection: d,
     activeRowKey: p,
-    isNavigatingByKeyboard: h
+    isNavigatingByKeyboard: f
   }))
 }
 A(G, "defaultProps", {

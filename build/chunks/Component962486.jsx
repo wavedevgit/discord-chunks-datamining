@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk294330 = require("./294330.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk849781 = require("./849781.js");
-let f = {
+let h = {
   page: Chunk981631.ZY5.GUILD_DISCOVERY,
   object: Chunk981631.qAy.CARD,
   section: Chunk981631.jXE.DISCOVER_POPULAR
@@ -36,7 +36,7 @@ function g(e) {
       t.push((0, r.jsx)(d.Eo, {
         guildId: null != (i = n[a]) ? i : null,
         index: a,
-        onClick: e => m(e, a, y, f),
+        onClick: e => m(e, a, y, h),
         onView: e => b(e, y)
       }, null != (l = n[a]) ? l : a))
     }
@@ -50,12 +50,12 @@ function g(e) {
       children: (0, r.jsx)(a.Z, {})
     }), (0, r.jsxs)(s.Z, {
       children: [(0, r.jsx)(l.X6q, {
-        className: h.sectionTitle,
+        className: f.sectionTitle,
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: E
       }), (0, r.jsx)("div", {
-        className: h.content,
+        className: f.content,
         children: v
       })]
     })]

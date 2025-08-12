@@ -76,9 +76,9 @@ function D(e) {
       speakers: s,
       listenerCount: u,
       isEventNoticeHidden: d,
-      isStageNoticeHidden: h,
+      isStageNoticeHidden: f,
       isStudyRoomNotice: m
-    } = e, _ = null != n && null != i && !h, O = null != t ? (0, y.DK)(t) : null;
+    } = e, _ = null != n && null != i && !f, O = null != t ? (0, y.DK)(t) : null;
     if (m && null != i) {
       let e = (0, p.KS)(i);
       return {
@@ -173,7 +173,7 @@ function D(e) {
       if (null == e) return {
         noticeType: null
       };
-      let n = f.ZP.getUserCount(t.id, O);
+      let n = h.ZP.getUserCount(t.id, O);
       return {
         noticeType: 1,
         title: t.name,
@@ -209,7 +209,7 @@ function D(e) {
       }
     } else if (t.entity_type === w.WX.VOICE && null != i) {
       let e = (0, p.KS)(i),
-        n = f.ZP.getUserCount(t.id, O);
+        n = h.ZP.getUserCount(t.id, O);
       return {
         noticeType: 2,
         title: t.name,
@@ -310,7 +310,7 @@ function D(e) {
           if (X) null != l && null != l.getGuildId() && ((0, I.Cq)(l), (0, v.XU)(l.getGuildId(), l.id));
           else {
             if (null == d) return;
-            (0, h.bO)({
+            (0, f.bO)({
               eventId: d.id
             })
           }
