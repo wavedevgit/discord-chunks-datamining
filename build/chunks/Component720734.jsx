@@ -378,7 +378,7 @@ class tu extends Chunk73800.PureComponent {
       markRecurringAvatarDcAsDismissed: s
     } = this.props;
     if (null == t) return null;
-    if (!this.props.isQuestBarEmpty) return this.renderAvatarWithPopout({
+    if (!(null != this.avatarWithPopoutRef.current && this.props.isQuestBarEmpty)) return this.renderAvatarWithPopout({
       focusSectionProps: e
     });
     if (r === u.z.GUILD_TAG_AVAILABLE_COACHMARK) {

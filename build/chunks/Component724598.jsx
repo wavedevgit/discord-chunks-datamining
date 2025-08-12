@@ -67,6 +67,7 @@ function g(e) {
           }), r && (0, n.jsx)(l.zx, {
             text: f.intl.string(f.t.oyzLpK),
             icon: s.ZSh,
+            iconPosition: "end",
             size: "md",
             onClick: () => {
               var e, r;
