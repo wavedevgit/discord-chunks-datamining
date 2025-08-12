@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
-/** chunk id: 684082, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 820047, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  _: () => p
+  z: () => p
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
-var Chunk647000 = require("./647000.js"),
+var Chunk525729 = require("./525729.js"),
   Chunk931989 = require("./931989.jsx"),
   Chunk396704 = require("./396704.js");
 
@@ -68,18 +68,19 @@ function f(e, t) {
 }
 let _ = {
   Base: {
+    EntryTrigger: "trigger",
     ExitTrigger: "trigger",
     PosX: "number",
     PosY: "number"
   },
-  "Nitro Illustration — Lightning": {},
   "Nitro Illustration — Spaceship": {},
+  "Nitro Illustration — Lightning": {},
   "Nitro Illustration — Power Jar": {},
   Wumpus: {},
   "Nitro Illustration — Box": {},
   "Nitro Illustration — Battery": {},
-  "Nitro Illustration — Star": {},
-  "Nitro Illustration — Key": {}
+  "Nitro Illustration — Key": {},
+  "Nitro Illustration — Star": {}
 };
 
 function p(e) {
@@ -97,4 +98,4 @@ function p(e) {
     artboardProperties: _
   }), n))
 }
-p.riveSrc = Chunk647000.Z
+p.riveSrc = Chunk525729.Z

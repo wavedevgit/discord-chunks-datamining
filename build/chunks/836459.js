@@ -4,12 +4,12 @@
 require.r(exports), require.d(exports, {
   AVSurveyFacesRive: () => Chunk550851.m,
   GlowButtonRive: () => Chunk573365.Q,
+  JetpackWumpusWithTrinketsRive: () => Chunk820047.z,
   PerfTestRive: () => Chunk587825.t,
   PulseGradientRive: () => Chunk327705.z,
-  WandAndSparklesRive: () => Chunk827596.x,
-  WowMomentConfirmationWumpusRive: () => Chunk684082._
+  WandAndSparklesRive: () => Chunk827596.x
 });
-var Chunk684082 = require("./684082.jsx"),
+var Chunk820047 = require("./820047.jsx"),
   Chunk827596 = require("./827596.jsx"),
   Chunk327705 = require("./327705.jsx"),
   Chunk587825 = require("./587825.jsx"),
