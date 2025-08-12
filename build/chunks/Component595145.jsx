@@ -111,8 +111,8 @@ function ee(e) {
     eS = (0, m.p)({
       location: "UserProfileModalV2"
     }),
-    ew = l.useMemo(() => null != es ? es : (0, g.Z)(), [es]),
-    eA = (0, X.Z)({
+    eA = l.useMemo(() => null != es ? es : (0, g.Z)(), [es]),
+    ew = (0, X.Z)({
       user: n,
       currentUser: ee
     }),
@@ -197,7 +197,7 @@ function ee(e) {
                   ref: (null == eI ? true : eI.profileEffectId) != null ? ej : true,
                   children: [(0, r.jsxs)("div", {
                     className: $.profileHeader,
-                    children: [(0, r.jsx)(A.Z, {
+                    children: [(0, r.jsx)(w.Z, {
                       user: n,
                       displayProfile: eI,
                       themeType: J.lY.MODAL_V2
@@ -219,7 +219,7 @@ function ee(e) {
                       channelId: en,
                       themeType: J.lY.MODAL_V2,
                       hasEntered: ec === a.Dvm.ENTERED,
-                      prompt: eS && n.id === ee.id ? ew : null,
+                      prompt: eS && n.id === ee.id ? eA : null,
                       disableToolbar: em
                     })]
                   }), (0, r.jsxs)(a.Ttm, {
@@ -235,7 +235,7 @@ function ee(e) {
                       }),
                       nicknameVariant: "heading-xl/semibold",
                       pronouns: null == eI ? true : eI.pronouns,
-                      tags: (0, r.jsx)(w.Z, {
+                      tags: (0, r.jsx)(A.Z, {
                         displayProfile: eI,
                         themeType: J.lY.MODAL_V2,
                         onClose: eu
@@ -283,7 +283,7 @@ function ee(e) {
                     }), n.id === ee.id && (0, r.jsx)(L.Z, {
                       isPremiumUser: (0, I.I5)(ee),
                       onInteraction: eu
-                    }), (0, r.jsx)(B.Z, {
+                    }), (0, r.jsx)(G.Z, {
                       user: n,
                       className: $.profileBanner
                     }), (0, r.jsx)("div", {
@@ -307,7 +307,7 @@ function ee(e) {
                       })
                     }), (0, r.jsx)(K.Z, {
                       heading: Q.intl.string(Q.t.a6XYDw),
-                      children: (0, r.jsx)(G.Z, {
+                      children: (0, r.jsx)(B.Z, {
                         userId: n.id,
                         guildId: null == eI ? true : eI.guildId,
                         tooltipDelay: J.vB
@@ -367,7 +367,7 @@ function ee(e) {
                   displayProfile: eI,
                   guildId: et,
                   channelId: en,
-                  items: eA,
+                  items: ew,
                   initialSection: eo,
                   initialSubsection: ea,
                   onClose: eu

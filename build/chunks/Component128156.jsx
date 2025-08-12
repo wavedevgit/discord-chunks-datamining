@@ -40,10 +40,10 @@ function P(e) {
     voiceActivityStatusEnabled: S
   } = (0, o.U)({
     location: "UserProfileModalV2Activity"
-  }), w = (0, f.b)({
+  }), A = (0, f.b)({
     location: "UserProfileModalV2Activity"
   }), {
-    live: A,
+    live: w,
     recent: C,
     stream: L
   } = (0, p.Z)(t.id), {
@@ -52,10 +52,10 @@ function P(e) {
   } = (0, m.Z)({
     userId: t.id,
     guildId: E
-  }), k = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), M = t.id === n.id, G = (0, l.e7)([d.Z, s.Z], () => {
+  }), k = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), M = t.id === n.id, B = (0, l.e7)([d.Z, s.Z], () => {
     let e = M ? d.Z.getStatus() : s.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), B = A.length > 0 || null != L, U = S && null == L && null == R && null != D, F = !G && (B || U), V = C.length > 0;
+  }), G = w.length > 0 || null != L, U = S && null == L && null == R && null != D, F = !B && (G || U), V = C.length > 0;
   if (!F && !V && k) return (0, r.jsx)("div", {
     className: I.cards,
     children: Array.from({
@@ -89,7 +89,7 @@ function P(e) {
       heading: _.intl.string(_.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: I.cards,
-        children: [!w && U && (0, r.jsx)("li", {
+        children: [!A && U && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -105,7 +105,7 @@ function P(e) {
             onClose: N,
             profileGuildId: null == P ? true : P.guildId
           })
-        }), A.map((e, l) => (0, r.jsx)("li", {
+        }), w.map((e, l) => (0, r.jsx)("li", {
           children: (0, r.jsx)(g.Z, {
             user: t,
             currentUser: n,
@@ -113,7 +113,7 @@ function P(e) {
             onClose: N,
             profileGuildId: null == P ? true : P.guildId
           })
-        }, "live-".concat(l))), w && U && (0, r.jsx)("li", {
+        }, "live-".concat(l))), A && U && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,

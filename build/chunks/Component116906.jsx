@@ -42,8 +42,8 @@ function I(e) {
     location: "UserProfileModalActivity"
   }), {
     live: S,
-    recent: w,
-    stream: A
+    recent: A,
+    stream: w
   } = (0, f.Z)(t.id), {
     voiceChannel: C,
     voiceActivity: L
@@ -53,27 +53,27 @@ function I(e) {
   }), D = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, k = (0, l.e7)([s.Z, c.Z], () => {
     let e = R ? s.Z.getStatus() : c.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), M = S.length > 0 || null != A, G = T && null == A && null == L && null != C, B = !k && (M || G), U = w.length > 0;
-  return B || U || !D ? (0, r.jsxs)(i.zJl, {
+  }), M = S.length > 0 || null != w, B = T && null == w && null == L && null != C, G = !k && (M || B), U = A.length > 0;
+  return G || U || !D ? (0, r.jsxs)(i.zJl, {
     className: v.scroller,
     fade: true,
-    children: [B ? (0, r.jsx)(m.Z, {
+    children: [G ? (0, r.jsx)(m.Z, {
       "aria-label": O.intl.string(O.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: v.activityList,
-        children: [!N && G && (0, r.jsx)("li", {
+        children: [!N && B && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
             voiceChannel: C,
             onClose: Z
           })
-        }), null != A && (0, r.jsx)("li", {
+        }), null != w && (0, r.jsx)("li", {
           children: (0, r.jsx)(j.Z, {
             location: "UserProfileModalActivity",
             user: t,
             currentUser: n,
-            stream: A,
+            stream: w,
             onClose: Z,
             profileGuildId: null == I ? true : I.guildId
           })
@@ -98,7 +98,7 @@ function I(e) {
       scrollIntoView: E === x.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: v.activityList,
-        children: w.map(e => (0, r.jsx)("li", {
+        children: A.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(b.Z, {
             location: "UserProfileModalActivity",
             user: t,

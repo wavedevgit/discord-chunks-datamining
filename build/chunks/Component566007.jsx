@@ -29,14 +29,12 @@ function o(e) {
     }
     return l
   }(e, ["user", "widget", "isGameFetching", "disableInteraction"]);
-  let s = n.games.length > 0,
-    d = n.games[0];
+  let s = n.games[0];
   return (0, r.jsx)(l.Z, {
     userId: t.id,
     widget: n,
-    reachedMaxGamesLimit: s,
     disableInteraction: a,
-    children: null != d && (0, r.jsx)(i.Z, function(e) {
+    children: null != s && (0, r.jsx)(i.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -55,8 +53,8 @@ function o(e) {
       return e
     }({
       user: t,
-      game: d,
-      loading: o(d.applicationId),
+      game: s,
+      loading: o(s.applicationId),
       disableInteraction: a
     }, c))
   })

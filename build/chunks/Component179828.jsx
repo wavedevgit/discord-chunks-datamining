@@ -143,7 +143,7 @@ function T(e) {
     });
     let l = null != (r = null == _ ? true : _.filter(t => t !== e.id)) ? r : [];
     (null == (n = e.tags) ? true : n.guild_connections) === null ? s.Z.unassignGuildRoleConnection(i, e.id) : d.Z.updateMemberRoles(i, t.id, l, [], [e.id])
-  }, [_, i, t.id, a]), w = l.useCallback(e => {
+  }, [_, i, t.id, a]), A = l.useCallback(e => {
     a({
       action: "ADD_ROLE"
     });
@@ -151,8 +151,8 @@ function T(e) {
     n.includes(e) || (n = [...n, e]), d.Z.updateMemberRoles(i, t.id, n, [e], [])
   }, [_, i, t.id, a]);
   if (null == y) return null;
-  let A = N && null != h;
-  return 0 !== T.length || A ? (0, r.jsx)(x.Z, P(I({
+  let w = N && null != h;
+  return 0 !== T.length || w ? (0, r.jsx)(x.Z, P(I({
     heading: v.intl.string(v.t.LPJmLy)
   }, o), {
     children: (0, r.jsx)(Z, {
@@ -163,7 +163,7 @@ function T(e) {
       roles: T,
       highestRole: g.e9(y, n.id),
       canManageRoles: N,
-      onAddRole: w,
+      onAddRole: A,
       onRemoveRole: S
     })
   })) : null

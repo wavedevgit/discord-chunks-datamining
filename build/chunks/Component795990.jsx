@@ -83,7 +83,7 @@ function b(e) {
   return (0, r.jsxs)(o.P3F, {
     className: f.widgetPromptContainer,
     onClick: n,
-    "aria-label": "Add widget: ".concat(u.intl.string(d.NP[t])),
+    "aria-label": "Add widget: ".concat(u.intl.string(d.N[t])),
     children: [(() => {
       switch (t) {
         case i.l.FAVORITE_GAMES:
@@ -110,7 +110,7 @@ function b(e) {
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: u.intl.string(d.NP[t])
+        children: u.intl.string(d.N[t])
       })]
     })]
   })
@@ -133,7 +133,7 @@ function j() {
     }), (0, Chunk255367.jsx)("ul", {
       className: Chunk436860.widgetGrid,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["+EIBSE"]),
-      children: Chunk247397.rR.map(e => (0, r.jsx)("li", {
+      children: Chunk247397.r.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(b, {
           widgetType: e
         })

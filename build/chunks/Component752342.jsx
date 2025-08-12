@@ -37,25 +37,25 @@ function S(e) {
     user: t,
     currentUser: n,
     guildId: S,
-    channelId: w,
-    messageId: A,
+    channelId: A,
+    messageId: w,
     roleId: C,
     sessionId: L,
     initialSection: D,
     initialSubsection: R,
     transitionState: k,
     openedAt: M,
-    onClose: G,
-    sourceAnalyticsLocations: B = []
-  } = e, U = S === Z.ME ? true : S, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, w, t), Y = (0, c.Dt)(), {
+    onClose: B,
+    sourceAnalyticsLocations: G = []
+  } = e, U = S === Z.ME ? true : S, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, A, t), Y = (0, c.Dt)(), {
     analyticsLocations: H
-  } = (0, a.ZP)([...B, o.Z.USER_PROFILE_MODAL]), W = (0, d.ZB)({
+  } = (0, a.ZP)([...G, o.Z.USER_PROFILE_MODAL]), W = (0, d.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: L,
     guildId: U,
-    channelId: w,
-    messageId: A,
+    channelId: A,
+    messageId: w,
     roleId: C
   }), K = (0, P.Z)(t);
   return (0, r.jsx)(a.Gt, {
@@ -90,7 +90,7 @@ function S(e) {
               children: (0, r.jsx)(x.Z, {
                 user: t,
                 guildId: U,
-                onCloseProfile: G
+                onCloseProfile: B
               })
             }), (0, r.jsxs)("div", {
               children: [(0, r.jsx)(m.Z, {
@@ -103,14 +103,14 @@ function S(e) {
                   user: t,
                   displayProfile: F,
                   guildId: U,
-                  channelId: w,
+                  channelId: A,
                   themeType: E.lY.MODAL
                 }), (0, r.jsx)(_.Z, {
                   location: "BotUserProfileModal",
                   user: t,
                   themeType: E.lY.MODAL,
                   hasEntered: k === l.Dvm.ENTERED,
-                  onCloseProfile: G,
+                  onCloseProfile: B,
                   disableToolbar: true
                 }), (0, r.jsxs)("div", {
                   className: N.headerButtons,
@@ -147,7 +147,7 @@ function S(e) {
                 tags: (0, r.jsx)(p.Z, {
                   displayProfile: F,
                   themeType: E.lY.MODAL,
-                  onClose: G
+                  onClose: B
                 })
               }), (0, r.jsx)(I.Z, {
                 user: t,
@@ -157,7 +157,7 @@ function S(e) {
                 items: K,
                 initialSection: null != D ? D : E.oh.BOT_INFO,
                 initialSubsection: R,
-                onClose: G
+                onClose: B
               })]
             })]
           })

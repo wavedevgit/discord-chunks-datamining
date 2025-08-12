@@ -90,7 +90,7 @@ function f(e) {
     children: e => (0, r.jsx)("div", {
       ref: p,
       children: (0, r.jsx)(o.zxk, u({
-        variant: "primary",
+        variant: "secondary",
         size: "sm",
         text: s.intl.string(s.t.uqw8wM),
         disabled: t

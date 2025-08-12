@@ -1,20 +1,19 @@
 /** Chunk was on 11776 **/
 /** chunk id: 455731, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
-var Chunk624238 = require("./624238.js"),
-  Chunk750312 = require("./750312.jsx"),
+var Chunk750312 = require("./750312.jsx"),
   Chunk30344 = require("./30344.jsx");
 
-function a(e) {
+function o(e) {
   var {
     user: t,
     widget: n,
-    disableInteraction: a
-  } = e, c = function(e, t) {
+    disableInteraction: o
+  } = e, a = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -29,13 +28,11 @@ function a(e) {
     }
     return l
   }(e, ["user", "widget", "disableInteraction"]);
-  let s = n.games.length >= l.k.want_to_play_games;
-  return (0, r.jsx)(i.Z, {
+  return (0, r.jsx)(l.Z, {
     userId: t.id,
     widget: n,
-    reachedMaxGamesLimit: s,
-    disableInteraction: a,
-    children: (0, r.jsx)(o.Z, function(e) {
+    disableInteraction: o,
+    children: (0, r.jsx)(i.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -55,7 +52,7 @@ function a(e) {
     }({
       userId: t.id,
       games: n.games,
-      disableInteraction: a
-    }, c))
+      disableInteraction: o
+    }, a))
   })
 }

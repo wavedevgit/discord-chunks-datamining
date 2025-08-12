@@ -54,13 +54,13 @@ function I(e) {
     openedAt: T,
     onHide: N,
     sourceAnalyticsLocations: S = []
-  } = e, w = n === h.ME ? true : n, A = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
+  } = e, A = n === h.ME ? true : n, w = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: C
-  } = (0, c.ZP)([...S, A ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), L = (0, f.ZB)({
+  } = (0, c.ZP)([...S, w ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), L = (0, f.ZB)({
     layout: "MODAL_V2",
     userId: t.id,
     showGuildProfile: true,
-    guildId: w,
+    guildId: A,
     channelId: I,
     messageId: P,
     roleId: E
@@ -69,8 +69,8 @@ function I(e) {
     description: O.intl.string(O.t.kcuWvb)
   }, {
     icon: o.owK,
-    description: O.intl.string(A ? O.t.QxrDY2 : O.t.W6fjkZ)
-  }], R = (0, m.ZP)(t.id, w), k = u.ZP.getName(null == R ? true : R.guildId, I, t), M = O.intl.formatToPlainString(O.t.KRe1Fh, {
+    description: O.intl.string(w ? O.t.QxrDY2 : O.t.W6fjkZ)
+  }], R = (0, m.ZP)(t.id, A), k = u.ZP.getName(null == R ? true : R.guildId, I, t), M = O.intl.formatToPlainString(O.t.KRe1Fh, {
     name: k
   });
   return (0, r.jsx)(c.Gt, {
@@ -97,7 +97,7 @@ function I(e) {
             className: v.content,
             children: [(0, r.jsx)(g.Z, {
               user: t,
-              guildId: w,
+              guildId: A,
               iconColor: o.TVs.colors.TEXT_DEFAULT
             }), (0, r.jsxs)("div", {
               className: v.textContainer,
@@ -108,7 +108,7 @@ function I(e) {
               }), (0, r.jsx)(o.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
-                children: O.intl.format(A ? O.t.T7QiLi : O.t.MnEow8, {
+                children: O.intl.format(w ? O.t.T7QiLi : O.t.MnEow8, {
                   username: k
                 })
               })]
@@ -130,10 +130,10 @@ function I(e) {
               align: "center",
               children: [(0, r.jsx)(y.Z, {
                 size: i.Ph.MEDIUM,
-                isBlocked: A,
+                isBlocked: w,
                 onClick: () => {
                   N(), (0, p.pQ)(_({
-                    action: A ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+                    action: w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: C
                   }, L))
                 }

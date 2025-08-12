@@ -2,15 +2,17 @@
 /** chunk id: 86419, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ES: () => S,
-  X6: () => N,
-  np: () => E,
-  qH: () => I,
-  tk: () => C,
-  vH: () => A,
-  y8: () => T
+  ES: () => A,
+  X6: () => C,
+  kQ: () => P,
+  np: () => b,
+  qH: () => T,
+  tk: () => R,
+  vH: () => N,
+  y8: () => S
 }), require("./388685.js"), require("./642613.js");
-var Chunk296009 = require("./296009.js"),
+var Chunk624238 = require("./624238.js"),
+  Chunk296009 = require("./296009.js"),
   Chunk224706 = require("./224706.js"),
   Chunk594174 = require("./594174.js"),
   Chunk621853 = require("./621853.js"),
@@ -20,7 +22,7 @@ var Chunk296009 = require("./296009.js"),
   Chunk925434 = require("./925434.js"),
   Chunk570911 = require("./570911.js");
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,20 +31,20 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,30 +55,30 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e) {
+function g(e) {
   return e[Math.floor(Math.random() * e.length)]
 }
 
-function g(e, t) {
+function E(e, t) {
   return [...e].sort(() => .5 - Math.random()).slice(0, t)
 }
 
-function E(e) {
+function b(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : new Set,
-    n = d.J6.filter(e => !t.has(e)),
-    i = {
-      applicationId: m(n.length > 0 ? n : d.J6)
+    n = f.J6.filter(e => !t.has(e)),
+    r = {
+      applicationId: g(n.length > 0 ? n : f.J6)
     };
-  return e === r.l.FAVORITE_GAMES && (i.comment = Math.random() > .5 ? m(u.x) : true), e === r.l.CURRENT_GAMES && (i.tags = Math.random() > .3 ? g(u.T, Math.floor(3 * Math.random()) + 1) : true), i
+  return e === i.l.FAVORITE_GAMES && (r.comment = Math.random() > .5 ? g(d.x) : true), e === i.l.CURRENT_GAMES && (r.tags = Math.random() > .3 ? E(d.T, Math.floor(3 * Math.random()) + 1) : true), r
 }
 
-function b() {
+function y() {
   var e, t;
   if (Chunk224724.Z.hasPendingChanges()) return null != (e = Chunk224724.Z.getPendingWidgets()) ? module : [];
   {
@@ -86,13 +88,13 @@ function b() {
   }
 }
 
-function y(e) {
-  return e.sort((e, t) => c.rR.indexOf(e.type) - c.rR.indexOf(t.type))
+function O(e) {
+  return e.sort((e, t) => u.r.indexOf(e.type) - u.r.indexOf(t.type))
 }
 
-function O(e) {
+function v(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
-  return h(_({}, {
+  return m(p({}, {
     id: e
   }), {
     type: e,
@@ -100,40 +102,40 @@ function O(e) {
   })
 }
 
-function v(e, t) {
+function I(e, t) {
   let n = e.filter(e => e.type !== t.type);
-  return y([t, ...n])
-}
-
-function I(e) {
-  let t = b();
-  if (null != t.find(t => t.type === e)) return;
-  let n = O(e);
-  s.Z.setPendingWidgets(y([n, ...t]))
+  return O([t, ...n])
 }
 
 function T(e) {
-  let t = b().filter(t => t.type !== e);
-  s.Z.setPendingWidgets(t)
+  let t = y();
+  if (null != t.find(t => t.type === e)) return;
+  let n = v(e);
+  l.Z.setPendingWidgets(O([n, ...t]))
 }
 
-function S(e, t) {
-  let n, o = b(),
-    a = o.find(t => t.type === e),
-    l = c.Xe[e];
-  if (null != a) {
+function S(e) {
+  let t = y().filter(t => t.type !== e);
+  l.Z.setPendingWidgets(t)
+}
+
+function A(e, t) {
+  let n, a = y(),
+    s = a.find(t => t.type === e),
+    c = r.k[e];
+  if (null != s) {
     var u, d;
-    if ((null != (d = null == (u = a.games) ? true : u.length) ? d : 0) >= l) return
+    if ((null != (d = null == (u = s.games) ? true : u.length) ? d : 0) >= c) return
   }
   let f = {
     applicationId: t
   };
-  n = null != a ? e === r.l.FAVORITE_GAMES ? [f] : [...a.games || [], f] : [f];
-  let _ = v(o, O(e, n));
-  s.Z.setPendingWidgets(_), i.Z.getDetectableGamesSupplemental([t])
+  n = null != s ? e === i.l.FAVORITE_GAMES ? [f] : [...s.games || [], f] : [f];
+  let _ = I(a, v(e, n));
+  l.Z.setPendingWidgets(_), o.Z.getDetectableGamesSupplemental([t])
 }
 
-function A(e) {
+function N(e) {
   let t = e => ({
       game_id: e.applicationId,
       comment: e.comment,
@@ -147,7 +149,7 @@ function A(e) {
     }
   }
 }
-async function N() {
+async function C() {
   let e = Chunk224724.Z.getPendingWidgets();
   if (null !== module) try {
     await Chunk592183.Z.savePendingWidgets(module)
@@ -155,10 +157,15 @@ async function N() {
     console.error("Failed to save sample widgets:", module)
   }
 }
-async function C() {
+async function R() {
   try {
     await Chunk592183.Z.savePendingWidgets([])
   } catch (e) {
     console.error("Failed to clear saved widgets", module)
   }
+}
+
+function P(e) {
+  let t = r.k[e.type];
+  return e.games.length >= t
 }
