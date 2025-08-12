@@ -34,7 +34,7 @@ function S(e, t) {
 function x(e) {
   var t;
   let n = (0, i.e7)([y.ZP], () => y.ZP.isMuted(e)),
-    r = j.Z.useExperiment({
+    r = j.Z.useConfig({
       location: "useGuildMediaState"
     }).enabled,
     E = n && !r,

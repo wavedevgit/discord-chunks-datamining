@@ -3,18 +3,15 @@
 require.d(exports, {
   Z: () => r
 });
-let r = (0, require("./818083.js").B)({
+let r = (0, require("./427164.js").le)({
   kind: "user",
-  id: "2025-08_always_guild_media",
-  label: "Always Show Guild Media",
+  name: "2025-08_always_guild_media",
   defaultConfig: {
     enabled: false
   },
-  treatments: [{
-    id: 1,
-    label: "Show guild media for muted guilds",
-    config: {
+  variations: {
+    1: {
       enabled: true
     }
-  }]
+  }
 })
