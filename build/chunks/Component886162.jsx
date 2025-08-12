@@ -39,47 +39,47 @@ function g(e) {
       separator: false,
       children: (0, r.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
-        children: f.intl.string(f.t["7glvXl"])
+        children: h.intl.string(h.t["7glvXl"])
       })
     }), (0, r.jsxs)(o.hzk, {
       children: [(0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: g === p.c2C.AGREEMENTS ? f.intl.format(f.t.zHolhY, {}) : null
+        children: g === p.c2C.AGREEMENTS ? h.intl.format(h.t.zHolhY, {}) : null
       }), (0, r.jsxs)("div", {
-        className: h.container,
+        className: f.container,
         children: [(0, r.jsxs)("ul", {
-          className: h.links,
+          className: f.links,
           children: [(0, r.jsx)("li", {
-            children: f.intl.format(f.t.iw0hFh, {
+            children: h.intl.format(h.t.iw0hFh, {
               url: p.EYA.TERMS
             })
           }), (0, r.jsx)("li", {
-            children: f.intl.format(f.t["36klnJ"], {
+            children: h.intl.format(h.t["36klnJ"], {
               url: p.EYA.PAID_TERMS
             })
           }), (0, r.jsx)("li", {
-            children: f.intl.format(f.t.TquFBA, {
+            children: h.intl.format(h.t.TquFBA, {
               url: p.EYA.PRIVACY
             })
           }), (0, r.jsx)("li", {
-            children: f.intl.format(f.t.ia96TU, {
+            children: h.intl.format(h.t.ia96TU, {
               url: p.EYA.GUIDELINES
             })
           })]
         }), (0, r.jsx)("img", {
-          className: h.image,
+          className: f.image,
           alt: "",
           src: n(146714)
         })]
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        className: h.agreementDescription,
-        children: f.intl.string(f.t["+USXQE"])
+        className: f.agreementDescription,
+        children: h.intl.string(h.t["+USXQE"])
       })]
     }), (0, r.jsx)(o.mzw, {
       children: (0, r.jsx)(o.zxk, {
         variant: "active",
-        text: f.intl.string(f.t["+TBKLy"]),
+        text: h.intl.string(h.t["+TBKLy"]),
         loading: m,
         onClick: O
       })

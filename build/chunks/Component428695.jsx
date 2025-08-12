@@ -43,7 +43,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
     }, [t.id, m]);
     let P = null;
     "function" == typeof C ? P = C() : null != C && (P = (0, r.jsx)(s.zx, {
-      className: h.button,
+      className: f.button,
       size: s.zx.Sizes.SMALL,
       onClick: () => {
         null != m && d.default.track(p.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
@@ -60,53 +60,53 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
     "function" == typeof n ? j = n() : null != n && (j = (0, r.jsx)(c.Text, {
       variant: "text-md/medium",
       color: "header-primary",
-      className: a()(h.title, {
-        [h.noImageTitle]: null == o
+      className: a()(f.title, {
+        [f.noImageTitle]: null == o
       }, {
-        [h.center]: N
+        [f.center]: N
       }),
       children: n
     }));
     let x = null;
     "function" == typeof l ? x = l() : null != l && (x = (0, r.jsx)(c.Text, {
       className: a()({
-        [h.center]: N
+        [f.center]: N
       }),
       variant: "text-sm/normal",
       color: "text-muted",
       children: l
     }));
-    let A = null != _ ? "".concat(_, "px") : "16px";
+    let Z = null != _ ? "".concat(_, "px") : "16px";
     return (0, r.jsxs)("div", {
-      className: a()(h.container, T),
+      className: a()(f.container, T),
       children: [true === y ? null : (0, r.jsx)(c.P3F, {
         onClick: () => {
           u.ZP.trackWithMetadata(p.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: m
           }), null == v || v()
         },
-        className: h.close,
-        "aria-label": f.intl.string(f.t.WAI6xs),
+        className: f.close,
+        "aria-label": h.intl.string(h.t.WAI6xs),
         children: (0, r.jsx)(c.Dio, {
           size: "md",
           color: "currentColor",
-          className: h.closeIcon
+          className: f.closeIcon
         })
       }), null != o && (0, r.jsx)("div", {
-        className: h.imageContainer,
+        className: f.imageContainer,
         style: {
           marginTop: "".concat(O, "px"),
-          marginLeft: A,
-          marginRight: A
+          marginLeft: Z,
+          marginRight: Z
         },
         children: (0, r.jsx)("img", {
-          className: h.image,
+          className: f.image,
           style: b,
           src: o,
           alt: ""
         })
       }), (0, r.jsxs)("div", {
-        className: h.message,
+        className: f.message,
         children: [j, x, P]
       })]
     })

@@ -45,7 +45,8 @@ function _(e, t) {
         return {
           title: c,
           description: _,
-          openModal: e => {
+          openModal: function(e) {
+            let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
             (0, l.ZDy)(async () => {
               let {
                 default: i
@@ -79,6 +80,8 @@ function _(e, t) {
                   onClick: y
                 } : true
               }, n))
+            }, {
+              onCloseCallback: null == i ? true : i.onModalClose
             })
           },
           viewCta: h,

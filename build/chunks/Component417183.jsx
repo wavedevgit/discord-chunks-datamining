@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk617015 = require("./617015.js"),
   Chunk562101 = require("./562101.js");
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,14 +23,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -77,7 +77,7 @@ class m extends Chunk73800.PureComponent {
       children: l,
       user: u,
       onClick: d,
-      isActive: f,
+      isActive: h,
       className: m,
       activeClassName: b
     } = this.props;
@@ -88,11 +88,11 @@ class m extends Chunk73800.PureComponent {
           left: false,
           right: false
         },
-        children: (0, r.jsx)(o.Z.div, g(h({
+        children: (0, r.jsx)(o.Z.div, g(f({
           className: a()(m, p.peopleListItem, null != b ? {
-            [b]: f || i
+            [b]: h || i
           } : null, {
-            [p.active]: f || i
+            [p.active]: h || i
           }),
           onContextMenu: e => this.handleContextMenu(e, u),
           onMouseEnter: this.handleMouseEnter,
@@ -103,18 +103,18 @@ class m extends Chunk73800.PureComponent {
             opacity: t
           }
         }, s), {
-          children: l(n || f || i)
+          children: l(n || h || i)
         }))
       })
     })
   }
   constructor(...e) {
-    super(...e), f(this, "state", {
+    super(...e), h(this, "state", {
       height: new o.Z.Value(d.NV),
       opacity: new o.Z.Value(1),
       hovered: false,
       isContextMenuActive: false
-    }), f(this, "handleMouseEnter", () => {
+    }), h(this, "handleMouseEnter", () => {
       let {
         isFocused: e,
         isActive: t,
@@ -125,18 +125,18 @@ class m extends Chunk73800.PureComponent {
       this.setState({
         hovered: e
       }), !e || t || r || null == n || n()
-    }), f(this, "handleMouseLeave", () => {
+    }), h(this, "handleMouseLeave", () => {
       this.setState({
         hovered: false
       })
-    }), f(this, "handleContextMenu", (e, t) => {
+    }), h(this, "handleContextMenu", (e, t) => {
       this.setState({
         isContextMenuActive: true
       }), (0, u.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
-        return n => (0, r.jsx)(e, g(h({}, n), {
+        return n => (0, r.jsx)(e, g(f({}, n), {
           user: t
         }))
       }, {

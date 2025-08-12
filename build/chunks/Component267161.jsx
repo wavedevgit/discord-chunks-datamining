@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 267161, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => W,
-  useAppSidebarState: () => F
+  default: () => J,
+  useAppSidebarState: () => K
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -27,6 +27,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk340137 = require("./340137.jsx"),
   Chunk522474 = require("./522474.js"),
   Chunk141321 = require("./141321.jsx"),
+  Chunk819439 = require("./819439.js"),
+  Chunk296241 = require("./296241.jsx"),
+  Chunk165017 = require("./165017.js"),
   Chunk984802 = require("./984802.js"),
   Chunk592125 = require("./592125.js"),
   Chunk430824 = require("./430824.js"),
@@ -38,13 +41,14 @@ var Chunk255367 = require("./255367.js"),
   Chunk228488 = require("./228488.js"),
   Chunk950796 = require("./950796.jsx"),
   Chunk981631 = require("./981631.js"),
+  Chunk176505 = require("./176505.js"),
   Chunk741764 = require("./741764.js"),
   Chunk408491 = require("./408491.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk916723 = require("./916723.js"),
   Chunk538778 = require("./538778.js");
 
-function H(e) {
+function W(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -63,7 +67,7 @@ function H(e) {
   return e
 }
 
-function B(e, t) {
+function Y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -75,77 +79,113 @@ function B(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let F = (0, Chunk97519.U)(() => ({
+let K = (0, Chunk97519.U)(() => ({
   isOpen: true
 }));
 
-function z() {
-  let e, t = (0, Chunk114858.TH)(),
-    n = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId()),
-    i = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
-    a = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(require), [require]),
-    c = null != Chunk73800 ? Chunk73800 : null == Chunk97519 ? true : Chunk97519.guild_id,
-    d = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(Chunk230711), [Chunk230711]),
-    p = (0, Chunk916069.Z)(),
-    f = (0, Chunk370774.D)(),
+function q(e) {
+  let t, {
+      selectedChannelId: n
+    } = e,
+    i = (0, l.TH)(),
+    a = (0, o.e7)([w.Z], () => w.Z.getGuildId()),
+    c = (0, o.e7)([x.Z], () => x.Z.getChannel(n), [n]),
+    d = null != a ? a : null == c ? true : c.guild_id,
+    p = (0, o.e7)([Z.Z], () => Z.Z.getGuild(d), [d]),
+    h = (0, f.Z)(),
+    m = (0, v.D)(),
     {
-      application: m,
-      isFrameInFocusedMode: _
-    } = (0, Chunk442837.cj)([Chunk812206.Z, Chunk591472.Z], () => {
-      let e = Chunk591472.Z.getConnectedFrame();
+      application: _,
+      isFrameInFocusedMode: O
+    } = (0, o.cj)([u.Z, g.Z], () => {
+      let e = g.Z.getConnectedFrame();
       return {
-        application: Chunk812206.Z.getApplication(null == module ? true : module.applicationId),
-        isFrameInFocusedMode: Chunk591472.Z.getFrameLayoutMode() === Chunk408491.U.FOCUSED
+        application: u.Z.getApplication(null == e ? true : e.applicationId),
+        isFrameInFocusedMode: g.Z.getFrameLayoutMode() === B.U.FOCUSED
       }
     }),
-    O = null != Chunk111666 ? Chunk768581.ZP.getApplicationIconURL({
-      id: Chunk111666.id,
-      icon: Chunk111666.icon,
-      bot: Chunk111666.bot
+    E = null != _ ? R.ZP.getApplicationIconURL({
+      id: _.id,
+      icon: _.icon,
+      bot: _.bot
     }) : true,
-    E = null;
-  return null != Chunk111666 && Chunk300986 ? (e = Chunk111666.name, E = (0, Chunk255367.jsx)("img", {
-    className: Chunk538778.appIcon,
-    alt: Chunk388032.intl.string(Chunk388032.t.X4IxWF),
-    src: Chunk314451,
+    y = null;
+  return null != _ && O ? (t = _.name, y = (0, r.jsx)("img", {
+    className: z.appIcon,
+    alt: H.intl.string(H.t.X4IxWF),
+    src: E,
     "aria-hidden": true,
     draggable: false
-  })) : Chunk540059 ? (e = Chunk388032.intl.string(Chunk388032.t.HcoRu7), E = (0, Chunk255367.jsx)(Chunk481060.Dkj, {
+  })) : m ? (t = H.intl.string(H.t.HcoRu7), y = (0, r.jsx)(s.Dkj, {
     size: "xs"
-  })) : null != Chunk174556 ? (E = Chunk320007 ? (0, Chunk255367.jsx)(Chunk481060.r7p, {
+  })) : null != p ? (y = h ? (0, r.jsx)(s.r7p, {
     size: "xs"
-  }) : (0, Chunk255367.jsx)(Chunk565138.Z, {
-    guild: Chunk174556,
-    size: Chunk565138.Z.Sizes.MINI,
+  }) : (0, r.jsx)(b.Z, {
+    guild: p,
+    size: b.Z.Sizes.MINI,
     active: true,
-    className: Chunk538778.guildIcon
-  }), e = Chunk174556.name) : null != Chunk97519 && (Chunk97519.isDM() || Chunk97519.isGroupDM()) ? (e = Chunk388032.intl.string(Chunk388032.t.YUU0RE), E = (0, Chunk255367.jsx)(Chunk481060.gw7, {
+    className: z.guildIcon
+  }), t = p.name) : null != c && (c.isDM() || c.isGroupDM()) ? (t = H.intl.string(H.t.YUU0RE), y = (0, r.jsx)(s.gw7, {
     size: "xs"
-  })) : exports.pathname.startsWith(Chunk981631.Z5c.GLOBAL_DISCOVERY) ? (e = Chunk388032.intl.string(Chunk388032.t["4nEZLi"]), E = (0, Chunk255367.jsx)(Chunk481060.Jmo, {
+  })) : i.pathname.startsWith(U.Z5c.GLOBAL_DISCOVERY) ? (t = H.intl.string(H.t["4nEZLi"]), y = (0, r.jsx)(s.Jmo, {
     size: "xs"
-  })) : exports.pathname.startsWith(Chunk981631.Z5c.NITRO_HOME) ? (e = Chunk388032.intl.string(Chunk388032.t.Ipxkoq), E = (0, Chunk255367.jsx)(Chunk481060.SrA, {
+  })) : i.pathname.startsWith(U.Z5c.NITRO_HOME) ? (t = H.intl.string(H.t.Ipxkoq), y = (0, r.jsx)(s.SrA, {
     size: "xs"
-  })) : exports.pathname.startsWith(Chunk981631.Z5c.COLLECTIBLES_SHOP) ? (e = Chunk388032.intl.string(Chunk388032.t.pWG4zc), E = (0, Chunk255367.jsx)(Chunk481060.EOn, {
+  })) : i.pathname.startsWith(U.Z5c.COLLECTIBLES_SHOP) ? (t = H.intl.string(H.t.pWG4zc), y = (0, r.jsx)(s.EOn, {
     size: "xs"
-  })) : exports.pathname.startsWith(Chunk981631.Z5c.FRIENDS) ? (e = Chunk388032.intl.string(Chunk388032.t.TdEu5e), E = (0, Chunk255367.jsx)(Chunk481060.iFz, {
+  })) : i.pathname.startsWith(U.Z5c.FRIENDS) ? (t = H.intl.string(H.t.TdEu5e), y = (0, r.jsx)(s.iFz, {
     size: "xs"
-  })) : exports.pathname.startsWith(Chunk981631.Z5c.FAMILY_CENTER) && (e = Chunk388032.intl.string(Chunk916723.default.RZqaJi), E = (0, Chunk255367.jsx)(Chunk481060.BFJ, {
+  })) : i.pathname.startsWith(U.Z5c.FAMILY_CENTER) && (t = H.intl.string(F.default.RZqaJi), y = (0, r.jsx)(s.BFJ, {
     size: "xs"
-  })), null != module && "" !== module && (0, Chunk255367.jsxs)("div", {
-    className: Chunk538778.title,
-    children: [Chunk35583, (0, Chunk255367.jsx)(Chunk481060.Text, {
+  })), null != t && "" !== t && (0, r.jsxs)("div", {
+    className: z.title,
+    children: [y, (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       lineClamp: 1,
-      children: module
+      children: t
     })]
   })
 }
-let W = Chunk73800.memo(function() {
+
+function X(e) {
+  let {
+    selectedChannelId: t
+  } = e, n = (0, o.e7)([w.Z, x.Z], () => {
+    let e = w.Z.getGuildId(),
+      n = x.Z.getChannel(t);
+    return null != e ? e : null == n ? true : n.guild_id
+  }), i = (0, P.H)({
+    guildId: n,
+    channelId: t
+  });
+  return null == i ? (0, r.jsx)(q, {
+    selectedChannelId: t
+  }) : (0, r.jsx)(T.Z, {
+    searchContext: i
+  })
+}
+
+function Q() {
+  let e = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId()),
+    t = (0, Chunk819439.$)({
+      location: "TitleText"
+    }),
+    n = (0, Chunk442837.e7)([Chunk592125.Z], () => {
+      let t = Chunk592125.Z.getChannel(module);
+      return null != exports && !exports.isDirectory() && !exports.isGuildVocal()
+    });
+  return exports && null != module && !(0, Chunk176505.AB)(module) && require ? (0, Chunk255367.jsx)(X, {
+    selectedChannelId: module
+  }) : (0, Chunk255367.jsx)(q, {
+    selectedChannelId: module
+  })
+}
+let J = Chunk73800.memo(function() {
   Chunk73800.useLayoutEffect(() => {
     Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
   }, []);
   let e = (0, Chunk540059.T)("AppTitleBar"),
-    t = F(e => e.isOpen),
+    t = K(e => e.isOpen),
     {
       notificationCenterVariant: n,
       entrypoint: l
@@ -160,14 +200,14 @@ let W = Chunk73800.memo(function() {
       autoTrackExposure: false
     }),
     u = !exports && module,
-    h = null !== require && Chunk114858 === Chunk821020.u3.TITLE_BAR_LEFT,
+    f = null !== require && Chunk114858 === Chunk821020.u3.TITLE_BAR_LEFT,
     g = null === require;
   Chunk73800.useLayoutEffect(() => {
     Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
   }, []);
   let b = (0, Chunk984802.Ll)(),
     v = (0, Chunk442837.e7)([Chunk451478.Z, Chunk522474.Z], () => (0, Chunk228488.rB)()),
-    T = function(e) {
+    N = function(e) {
       let {
         showCollapsedSidebarIcons: t,
         showNotificationsInbox: n,
@@ -182,49 +222,49 @@ let W = Chunk73800.memo(function() {
   return Chunk370774 ? null : (0, Chunk255367.jsx)(Chunk481060.Wdt, {
     children: e => (0, r.jsx)(s.f6W, {
       theme: b,
-      children: t => (0, r.jsx)(R.TF, {
+      children: t => (0, r.jsx)(M.TF, {
         className: t,
         leading: (0, r.jsxs)(r.Fragment, {
           children: [u && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(s.P3F, B(H({}, "SIDEBAR" === T ? e : {}), {
-              className: V.button,
+            children: [(0, r.jsx)(s.P3F, Y(W({}, "SIDEBAR" === N ? e : {}), {
+              className: z.button,
               onClick: () => {
-                F.setState({
-                  isOpen: !F.getState().isOpen
+                K.setState({
+                  isOpen: !K.getState().isOpen
                 })
               },
-              children: (0, r.jsx)(Y, {})
+              children: (0, r.jsx)($, {})
             })), (0, r.jsx)(s.P3F, {
-              className: V.button,
+              className: z.button,
               onClick: () => {
-                c.Z.open(D.oAB.ACCOUNT)
+                c.Z.open(U.oAB.ACCOUNT)
               },
               children: (0, r.jsx)(s.ewm, {
                 size: "xs",
                 color: "currentColor"
               })
             })]
-          }), h && (0, r.jsx)(I.Z, {
-            focusSectionProps: "NOTIFICATIONS_INBOX" === T ? e : true
+          }), f && (0, r.jsx)(I.Z, {
+            focusSectionProps: "NOTIFICATIONS_INBOX" === N ? e : true
           })]
         }),
-        title: (0, r.jsx)(z, {}),
+        title: (0, r.jsx)(Q, {}),
         trailing: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(m.Z, {
-            className: V.button
+            className: z.button
           }), (0, r.jsx)(p.Z, {
             canShowReminder: true,
-            className: V.button
-          }), g && (0, r.jsx)(S.Z, B(H({}, "RECENTS" === T ? e : {}), {
-            className: V.button
+            className: z.button
+          }), g && (0, r.jsx)(S.Z, Y(W({}, "RECENTS" === N ? e : {}), {
+            className: z.button
           })), a ? (0, r.jsx)(O.Z, {
-            focusSectionProps: "HELP" === T ? e : true,
-            className: V.button
+            focusSectionProps: "HELP" === N ? e : true,
+            className: z.button
           }) : (0, r.jsx)(_.Z, {
-            focusSectionProps: "HELP" === T ? e : true,
-            className: V.button
+            focusSectionProps: "HELP" === N ? e : true,
+            className: z.button
           }), (0, r.jsx)(E.Z, {
-            className: V.button
+            className: z.button
           })]
         })
       })
@@ -232,7 +272,7 @@ let W = Chunk73800.memo(function() {
   })
 });
 
-function Y() {
+function $() {
   return (0, Chunk255367.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     className: Chunk538778.icon,

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 331114, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -53,7 +53,7 @@ class p extends(r = Chunk442837.ZP.Store) {
   }
 }
 o(p, "displayName", "GlobalDiscoveryServersSearchCountStore");
-let f = new p(Chunk570140.Z, {
+let h = new p(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
     s.clear()
   },

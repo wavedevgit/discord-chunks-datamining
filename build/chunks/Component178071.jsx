@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 178071, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h,
+  Z: () => f,
   y: () => p
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
@@ -27,7 +27,7 @@ let p = {
   Colors: Chunk585237.Z.Colors,
   Looks: Chunk585237.Z.Looks
 };
-class f extends Chunk73800.PureComponent {
+class h extends Chunk73800.PureComponent {
   render() {
     var e, t;
     let n = this.props,
@@ -53,8 +53,8 @@ class f extends Chunk73800.PureComponent {
         }
         return i
       }(require, ["storeListings", "primaryStoreListing", "skuId", "onStoreListingSelect", "currentStoreListingId"]),
-      f = +(null != Chunk442837);
-    return (f += Chunk73800.length) < 2 ? null : (0, Chunk255367.jsx)(Chunk585237.Z, (e = function(e) {
+      h = +(null != Chunk442837);
+    return (h += Chunk73800.length) < 2 ? null : (0, Chunk255367.jsx)(Chunk585237.Z, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -108,7 +108,7 @@ class f extends Chunk73800.PureComponent {
     })
   }
 }
-let h = Chunk442837.ZP.connectStores([Chunk551428.Z], e => {
+let f = Chunk442837.ZP.connectStores([Chunk551428.Z], e => {
   let {
     skuId: t
   } = e;
@@ -116,4 +116,4 @@ let h = Chunk442837.ZP.connectStores([Chunk551428.Z], e => {
     storeListings: c.Z.getUnpublishedForSKU(t),
     primaryStoreListing: c.Z.getForSKU(t)
   }
-})(f)
+})(h)

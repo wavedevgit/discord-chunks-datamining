@@ -26,7 +26,7 @@ let b = e => {
   (0, s.Z)({
     guildId: b.id,
     groupListingId: null == _ ? true : _.id,
-    location: h.Sbl.ROLE_SUBSCRIPTIONS_TAB,
+    location: f.Sbl.ROLE_SUBSCRIPTIONS_TAB,
     relevantSubscriptionListingIds: null == _ ? true : _.subscription_listings_ids
   });
   let {
@@ -35,7 +35,7 @@ let b = e => {
     editStateIds: v
   } = a.B7(null != (t = null == _ ? true : _.id) ? t : null, b.id);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(f.Z, {
+    children: [(0, r.jsxs)(h.Z, {
       title: g.intl.format(g.t["rm+ojI"], {
         serverName: b.name
       }),
@@ -58,7 +58,7 @@ let b = e => {
             guildId: b.id,
             groupListingId: null != (t = null == _ ? true : _.id) ? t : "",
             listingId: e,
-            analyticsLocation: h.Sbl.ROLE_SUBSCRIPTIONS_TAB
+            analyticsLocation: f.Sbl.ROLE_SUBSCRIPTIONS_TAB
           }, e)
         })
       })

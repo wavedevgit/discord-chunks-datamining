@@ -192,13 +192,10 @@ class y extends(r = Chunk73800.PureComponent) {
       query: e,
       focusedIndex: t,
       navId: n,
-      width: r
+      className: r
     } = this.props, o = "" === module.trim();
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk333146.container,
-      style: {
-        width: r
-      },
+      className: s()(Chunk333146.container, r),
       onMouseDown: E,
       role: "listbox",
       id: require,
@@ -244,7 +241,6 @@ class y extends(r = Chunk73800.PureComponent) {
 }
 _(y, "defaultProps", {
   renderInitialState: () => null,
-  hideQuery: false,
-  width: 320
+  hideQuery: false
 });
 let O = y

@@ -30,16 +30,16 @@ function x(e) {
     O = (0, c.Z)(b, _);
   if (true === O || j.length <= 0) return null;
   let y = C.some(e => e.type !== p.A3.INACTIVE),
-    P = (0, d.d)(y),
-    w = C.reduce((e, t) => {
+    w = (0, d.d)(y),
+    P = C.reduce((e, t) => {
       let {
         sourceEntitlement: n
       } = t, r = null == n ? true : n.ends_at;
       return null == r ? e : null == e || r < e ? r : e
     }, true);
-  true !== w ? v = {
+  true !== P ? v = {
     type: "expiring",
-    expiringAt: w
+    expiringAt: P
   } : y && (v = {
     type: "active",
     statusText: m.intl.string(f.default.FFLkm5)
@@ -83,7 +83,7 @@ function x(e) {
       className: g.image
     }), (0, r.jsx)(u.Q9, {
       title: O.title,
-      textColor: P,
+      textColor: w,
       footer: (0, r.jsx)(u.uf, {
         status: v,
         cost: T,
@@ -91,7 +91,7 @@ function x(e) {
       }),
       children: (0, r.jsx)(l.Text, {
         className: g.description,
-        color: P,
+        color: w,
         variant: "text-sm/medium",
         children: O.description
       })

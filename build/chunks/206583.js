@@ -23,7 +23,7 @@ var r = function(e) {
 let a = 1e4,
   s = 7,
   l = ["1395438911366627454"],
-  c = ["432980957394370572", "1377010135989223574"];
+  c = ["432980957394370572", "1402418703554842694", "1377010135989223574"];
 var u = function(e) {
   return e[e.SPOTIFY = 1] = "SPOTIFY", e[e.CRUNCHYROLL = 2] = "CRUNCHYROLL", e[e.XBOX = 3] = "XBOX", e[e.PLAYSTATION = 4] = "PLAYSTATION", e
 }({})

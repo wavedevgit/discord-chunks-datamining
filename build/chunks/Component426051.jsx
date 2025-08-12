@@ -44,7 +44,7 @@ function b(e) {
   }), N = I || C, T = N || S;
   return (0, r.jsxs)("div", {
     className: m.container,
-    children: [(0, r.jsx)(f.Z, {
+    children: [(0, r.jsx)(h.Z, {
       otherUser: n,
       channel: b,
       active: t
@@ -59,7 +59,7 @@ function b(e) {
         },
         disabled: T,
         loading: N
-      }), (0, r.jsx)(h.Z, {
+      }), (0, r.jsx)(f.Z, {
         channel: b
       })]
     })]

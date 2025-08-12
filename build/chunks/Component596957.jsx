@@ -32,7 +32,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk271251 = require("./271251.js");
 
-function A(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function A(e) {
   return e
 }
 
-function Z(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -76,7 +76,7 @@ function R() {
     let {
       default: e
     } = await require.e("36312").then(require.bind(require, 153932));
-    return t => (0, r.jsx)(e, A({}, t))
+    return t => (0, r.jsx)(e, Z({}, t))
   })
 }
 
@@ -98,7 +98,7 @@ let k = function(e) {
     titleId: t
   } = e, {
     analyticsLocations: n
-  } = (0, h.ZP)(f.Z.FRIENDS_LIST), {
+  } = (0, f.ZP)(h.Z.FRIENDS_LIST), {
     rows: l,
     section: u
   } = (0, o.cj)([_.ZP], () => _.ZP.getState()), L = (0, o.e7)([O.Z], () => O.Z.isFocused()), {
@@ -131,26 +131,26 @@ let k = function(e) {
     }(e, ["key"]);
     switch (u) {
       case P.pJs.PENDING:
-        return (0, r.jsx)(v.Z, Z(A({}, n), {
+        return (0, r.jsx)(v.Z, A(Z({}, n), {
           isFocused: L
         }), t);
       case P.pJs.SUGGESTIONS:
-        return (0, r.jsx)(N.Z, Z(A({}, n), {
+        return (0, r.jsx)(N.Z, A(Z({}, n), {
           isFocused: L
         }), t);
       case P.pJs.ONLINE:
       case P.pJs.ALL:
       default:
-        return (0, r.jsx)(E.Z, Z(A({}, n), {
+        return (0, r.jsx)(E.Z, A(Z({}, n), {
           isFocused: L
         }), t)
     }
-  }, [L, u]), H = i.useCallback(e => {
-    G(Z(A({}, U), {
+  }, [L, u]), B = i.useCallback(e => {
+    G(A(Z({}, U), {
       [u]: e
     }))
-  }, [U, u]), B = i.useCallback(() => {
-    G(Z(A({}, U), {
+  }, [U, u]), H = i.useCallback(() => {
+    G(A(Z({}, U), {
       [u]: ""
     }))
   }, [U, u]), F = i.useMemo(() => u === P.pJs.PENDING && (l.filter(P.pJs.SPAM).length > 0 || l.filter(P.pJs.PENDING_IGNORED).length > 0), [l, u]), z = i.useMemo(() => l.filter(u, U[u]), [l, U, u]), W = u === P.pJs.PENDING, Y = i.useMemo(() => {
@@ -234,15 +234,15 @@ let k = function(e) {
   });
   let $ = "" !== U[u],
     ee = 0 === z.length && $;
-  return (0, r.jsx)(h.Gt, {
+  return (0, r.jsx)(f.Gt, {
     value: n,
     children: (0, r.jsxs)(p.Z, {
       section: P.jXE.FRIENDS_LIST,
       children: [M && (0, r.jsx)(C.R, {}), (0, r.jsx)(c.E1j, {
         className: a()(x.searchBar, ee ? x.searchEmptyState : null),
         query: U[u],
-        onChange: H,
-        onClear: B
+        onChange: B,
+        onClear: H
       }), (0, r.jsx)(I.Z, {
         rows: K,
         renderRow: V,

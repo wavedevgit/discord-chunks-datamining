@@ -140,7 +140,7 @@ class d extends Chunk495852.C {
   }
 }
 let p = new d;
-class f extends Chunk495852.C {
+class h extends Chunk495852.C {
   create(e) {
     let t = {
       heroArtLocalizedVideoLinksDarkTheme: {},
@@ -271,7 +271,7 @@ class f extends Chunk495852.C {
     }])
   }
 }
-let h = new f;
+let f = new h;
 class g extends Chunk495852.C {
   create(e) {
     let t = {
@@ -400,7 +400,7 @@ class b extends Chunk495852.C {
           l.heroArtVideoSubtitles.push(m.internalBinaryRead(e, e.uint32(), n));
           break;
         case 14:
-          l.storage = h.internalBinaryRead(e, e.uint32(), n, l.storage);
+          l.storage = f.internalBinaryRead(e, e.uint32(), n, l.storage);
           break;
         default:
           let a = n.readUnknownField;
@@ -416,7 +416,7 @@ class b extends Chunk495852.C {
     for (let r = 0; r < e.featureCards.length; r++) u.internalBinaryWrite(e.featureCards[r], t.tag(5, i.TD.LengthDelimited).fork(), n).join();
     e.button && p.internalBinaryWrite(e.button, t.tag(6, i.TD.LengthDelimited).fork(), n).join(), "" !== e.dismissKey && t.tag(7, i.TD.LengthDelimited).string(e.dismissKey), "" !== e.heroArtVideoLinkLightTheme && t.tag(8, i.TD.LengthDelimited).string(e.heroArtVideoLinkLightTheme), "" !== e.heroArtImageLinkDarkTheme && t.tag(9, i.TD.LengthDelimited).string(e.heroArtImageLinkDarkTheme), "" !== e.heroArtImageLinkLightTheme && t.tag(10, i.TD.LengthDelimited).string(e.heroArtImageLinkLightTheme), "" !== e.modalTopPill && t.tag(11, i.TD.LengthDelimited).string(e.modalTopPill), "" !== e.body && t.tag(12, i.TD.LengthDelimited).string(e.body);
     for (let r = 0; r < e.heroArtVideoSubtitles.length; r++) m.internalBinaryWrite(e.heroArtVideoSubtitles[r], t.tag(13, i.TD.LengthDelimited).fork(), n).join();
-    e.storage && h.internalBinaryWrite(e.storage, t.tag(14, i.TD.LengthDelimited).fork(), n).join();
+    e.storage && f.internalBinaryWrite(e.storage, t.tag(14, i.TD.LengthDelimited).fork(), n).join();
     let r = n.writeUnknownFields;
     returnfalse !== r && (true == r ? i.z.onWrite : r)(this.typeName, e, t), t
   }
@@ -492,7 +492,7 @@ class b extends Chunk495852.C {
       no: 14,
       name: "storage",
       kind: "message",
-      T: () => h
+      T: () => f
     }])
   }
 }

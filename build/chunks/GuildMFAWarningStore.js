@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 192513, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var r, i, l, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -15,7 +15,7 @@ function p() {
   if (null == module || module.mfaEnabled === d) returnfalse;
   d = module.mfaEnabled
 }
-class f extends(l = Chunk442837.ZP.Store) {
+class h extends(l = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk594174.default, Chunk984933.ZP), this.syncWith([Chunk594174.default, Chunk984933.ZP], p)
   }
@@ -23,13 +23,13 @@ class f extends(l = Chunk442837.ZP.Store) {
     return null != e && e.mfaLevel === u.BpS.ELEVATED && false === d && s.ZP.hasElevatedPermissions(e.id)
   }
 }
-i = "GuildMFAWarningStore", (r = "displayName") in f ? Object.defineProperty(f, r, {
+i = "GuildMFAWarningStore", (r = "displayName") in h ? Object.defineProperty(h, r, {
   value: i,
   enumerable: true,
   configurable: true,
   writable: true
-}) : f[r] = i;
-let h = new f(Chunk570140.Z, {
+}) : h[r] = i;
+let f = new h(Chunk570140.Z, {
   CONNECTION_OPEN: p,
   GUILD_UPDATE: function() {
     returntrue

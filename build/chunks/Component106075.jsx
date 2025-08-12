@@ -41,8 +41,8 @@ function C() {
     j = !Chunk128449.MU.has(N),
     {
       searchQuery: x,
-      onSearchTextChange: A,
-      onClearSearch: Z,
+      onSearchTextChange: Z,
+      onClearSearch: A,
       onSearchSubmit: w,
       isSearchVisible: L
     } = (0, Chunk28494.H)({
@@ -58,30 +58,30 @@ function C() {
       isSearchBarVisible: j,
       isSearchBarEmpty: "" === x.trim(),
       searchBarState: R,
-      setSearchBarState: e => h.Z.setState({
+      setSearchBarState: e => f.Z.setState({
         searchBarState: e
       })
     }),
     G = Chunk164991.Z.useField("fetchedQuery"),
     V = Chunk73800.useCallback(e => {
-      T(e), L && Z()
-    }, [L, Z, T]),
-    H = Chunk73800.useMemo(() => L ? S.filter(e => {
+      T(e), L && A()
+    }, [L, A, T]),
+    B = Chunk73800.useMemo(() => L ? S.filter(e => {
       let {
         id: t
       } = e;
       return !E.MU.has(t)
     }) : S, [S, L]),
-    B = Chunk73800.useRef(new Chunk444324.Z(P)),
+    H = Chunk73800.useRef(new Chunk444324.Z(P)),
     {
       onGuildCardSeen: F,
       onGuildCardClick: z
     } = (0, Chunk750910.H)({
-      guildDiscoveryCardSeenManager: B.current,
+      guildDiscoveryCardSeenManager: H.current,
       loadId: module.current
     });
   return Chunk73800.useEffect(() => {
-    B.current.flushSeenGuilds(module.current)
+    H.current.flushSeenGuilds(module.current)
   }, [P]), Chunk73800.useEffect(() => {
     C()
   }, [N, C]), Chunk73800.useEffect(() => {
@@ -96,12 +96,12 @@ function C() {
         scrollPosition: require
       }), L ? (0, Chunk255367.jsx)(Chunk611928.Cm, {
         icon: Chunk481060.j9r,
-        onClick: Z
+        onClick: A
       }) : (0, Chunk255367.jsx)(Chunk611928.aV, {
         icon: Chunk481060.QTo
       }), !L && (0, Chunk255367.jsx)(c.Z, {
         className: U,
-        tabs: H,
+        tabs: B,
         selectedTab: L ? null : N,
         onTabSelect: V,
         onAvailableWidthChange: D
@@ -115,8 +115,8 @@ function C() {
       }), j && (0, Chunk255367.jsx)(Chunk680180.Z, {
         query: x,
         placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOD"]),
-        onTextChange: A,
-        onClear: Z,
+        onTextChange: Z,
+        onClear: A,
         onSubmit: w,
         onCollapsedClick: k,
         state: L ? Chunk49898.GlobalDiscoverySearchBarState.DEFAULT : R,

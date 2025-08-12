@@ -81,7 +81,7 @@ let m = e => {
     size: b = f.MEDIUM,
     allowUnknownGameIcon: y = true
   } = e;
-  if (null != c && (t = p(c)), null != n && null == t && (t = n.getIconURL(_(b))), null == (t = (0, s.Z)(m, t)) && null != i) {
+  if (null != c && (t = p(c)), null != n && null == t && (t = n.getIconURL(_(b))), true === (t = (0, s.Z)(m, t)) && null != i) {
     let e = h(b);
     return (0, r.jsx)(l.Z, {
       className: o()(d.gameIcon, E, g),
@@ -89,7 +89,7 @@ let m = e => {
       size: e
     })
   }
-  if (null == t) return y ? (0, r.jsx)(a.IMN, {
+  if (true === t || "" === t) return y ? (0, r.jsx)(a.IMN, {
     size: "md",
     color: "currentColor",
     className: o()(d.gameIcon, b, g)

@@ -15,7 +15,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk533583 = require("./533583.js"),
   Chunk65154 = require("./65154.js");
 
-function h(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -84,7 +84,7 @@ class N extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return v
   }
 }
-h(N, "displayName", "ConnectedDeviceStore"), h(N, "persistKey", "ConnectedDeviceStore"), h(N, "migrations", [e => {
+f(N, "displayName", "ConnectedDeviceStore"), f(N, "persistKey", "ConnectedDeviceStore"), f(N, "migrations", [e => {
   if (null == e.ignoredDevices) {
     var t, n;
     return t = function(e) {
@@ -94,7 +94,7 @@ h(N, "displayName", "ConnectedDeviceStore"), h(N, "persistKey", "ConnectedDevice
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          h(e, t, n[t])
+          f(e, t, n[t])
         })
       }
       return e
@@ -120,7 +120,7 @@ let T = new N(Chunk570140.Z, {
       outputDevices: n
     } = e, r = {};
     y.justChanged = false, t.forEach(e => {
-      if (r[C(e)] = e.id, e.id === f.w5) {
+      if (r[C(e)] = e.id, e.id === h.w5) {
         var t;
         let n = null != (t = e.originalId) ? t : e.originalName;
         n !== y.id && (y.justChanged = true), y.id = n
@@ -128,7 +128,7 @@ let T = new N(Chunk570140.Z, {
     });
     let i = {};
     if (v.justChanged = false, n.forEach(e => {
-        if (i[C(e)] = e.id, e.id === f.w5) {
+        if (i[C(e)] = e.id, e.id === h.w5) {
           var t;
           let n = null != (t = e.originalId) ? t : e.originalName;
           n !== v.id && (v.justChanged = true), v.id = n

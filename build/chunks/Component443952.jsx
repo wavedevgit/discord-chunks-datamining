@@ -43,7 +43,7 @@ var Chunk243814 = require("./243814.js"),
 async function U(e, t, n, r) {
   let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : "",
     l = v.Z.getApplicationActivity(t);
-  if (null == l || null == l.secrets || !(0, A.t9)(r, l.party, l.secrets)) throw new x.Z({
+  if (null == l || null == l.secrets || !(0, Z.t9)(r, l.party, l.secrets)) throw new x.Z({
     errorCode: k.lTL.NO_ELIGIBLE_ACTIVITY
   }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
   let a = (0, m.Z)(l, I.Z);
@@ -105,7 +105,7 @@ let G = {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk186901.lH]
     },
-    validation: e => (0, Z.Z)(e).required().keys({
+    validation: e => (0, A.Z)(e).required().keys({
       user_id: e.string().required(),
       type: e.number().required().valid([k.mFx.JOIN]),
       content: e.string().min(0).max(1024),
@@ -131,7 +131,7 @@ let G = {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk186901.lH]
     },
-    validation: e => (0, Z.Z)(e).required().keys({
+    validation: e => (0, A.Z)(e).required().keys({
       type: e.number().required().valid([k.mFx.JOIN]),
       user_id: e.string().required(),
       session_id: e.string().required(),
@@ -259,7 +259,7 @@ let G = {
       return new Promise((e, t) => {
         ! function(e, t) {
           let n;
-          if ((0, f.R)()) n = O.Z.getWindow(k.KJ3.ACTIVITY_POPOUT);
+          if ((0, h.R)()) n = O.Z.getWindow(k.KJ3.ACTIVITY_POPOUT);
           else {
             var r;
             let e = C.Z.getLastFocusedWindowId();
@@ -281,7 +281,7 @@ let G = {
             l()
           }), n.document.body.addEventListener("focus", l, true), n.document.body.appendChild(i), i.click()
         }(async n => {
-          let l = await (0, h.kv)(r, i, n);
+          let l = await (0, f.kv)(r, i, n);
           (0, N.lm)(l) && (0, N.lm)(l.url) && !(l instanceof d.Z) ? e({
             image_url: l.url
           }): t(l)
@@ -306,7 +306,7 @@ let G = {
           mediaUrl: r
         }
       } = e;
-      (0, A.bu)(n.transport);
+      (0, Z.bu)(n.transport);
       let i = n.application.id;
       if (null == i) throw new x.Z({
         errorCode: k.lTL.INVALID_COMMAND
@@ -353,8 +353,8 @@ let G = {
       if (!(0, S.yE)(null != (t = r.application.flags) ? t : 0, k.udG.EMBEDDED)) throw new x.Z({
         errorCode: k.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
-      let f = (0, w.Z)();
-      if (null == f && s) throw new x.Z({
+      let h = (0, w.Z)();
+      if (null == h && s) throw new x.Z({
         errorCode: k.lTL.INVALID_COMMAND
       }, "No channel found");
       if (null !== l || null !== o || null !== c) {
@@ -381,7 +381,7 @@ let G = {
           l = a.z1l;
         (O.Z.getWindowOpen(k.KJ3.ACTIVITY_POPOUT) || r.context === k.IlC.POPOUT) && (l = a.u1M), (0, _.M)({
           applicationId: p,
-          channel: f,
+          channel: h,
           command: {
             name: i,
             options: u

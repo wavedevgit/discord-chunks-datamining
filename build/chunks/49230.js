@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 49230, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $: () => h,
+  $: () => f,
   h: () => g
 }), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
@@ -17,7 +17,7 @@ try {
   d = (0, Chunk304809.N)()
 } catch (e) {}
 let p = new Map;
-async function f(e) {
+async function h(e) {
   let t = p.get(e);
   if (null != t) return t;
   let n = await (await fetch(e)).arrayBuffer(),
@@ -25,7 +25,7 @@ async function f(e) {
   return null != r && p.set(e, r), r
 }
 
-function h(e) {
+function f(e) {
   let {
     soundKey: t,
     soundURL: n,
@@ -33,7 +33,7 @@ function h(e) {
     reportSoundStartedPlaying: a
   } = e;
   return new Promise(async e => {
-    let o = await f(n);
+    let o = await h(n);
     null == o && e(), c.Z.getMediaEngine().eachConnection(n => {
       n.context === l.Yn.DEFAULT && (a(), i()(null != o, "audioBuffer cannot be null here"), n.startSamplesLocalPlayback(t, o, r, () => {
         e()

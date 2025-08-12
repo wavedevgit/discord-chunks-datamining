@@ -22,8 +22,8 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let f = "STAGE_INVITED_TO_SPEAK_MODAL";
-class h extends Chunk317770.Z {
+let h = "STAGE_INVITED_TO_SPEAK_MODAL";
+class f extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
   }
@@ -35,18 +35,18 @@ class h extends Chunk317770.Z {
       var t;
       let {
         voiceStates: l
-      } = e, a = o.default.getId(), h = null == (t = c.Z.getSession()) ? true : t.sessionId, g = l.find(e => e.userId === a && e.sessionId === h);
+      } = e, a = o.default.getId(), f = null == (t = c.Z.getSession()) ? true : t.sessionId, g = l.find(e => e.userId === a && e.sessionId === f);
       if (null == g) return;
       let m = g.channelId;
       if (null == m) {
-        (0, i.nfh)(f) && (0, i.Mr3)(f);
+        (0, i.nfh)(h) && (0, i.Mr3)(h);
         return
       }
       let b = s.Z.getChannel(m);
       if (!(null == b ? true : b.isGuildStageVoice())) return;
       let _ = (0, u.gf)(g) === u.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
       if (null != b && _) {
-        if ((0, i.nfh)(f)) return;
+        if ((0, i.nfh)(h)) return;
         (0, i.ZDy)(async () => {
           let {
             default: e
@@ -78,11 +78,11 @@ class h extends Chunk317770.Z {
             }), n))
           }
         }, {
-          modalKey: f,
+          modalKey: h,
           onCloseRequest: d.VqG
         })
       }
     })
   }
 }
-let g = new h
+let g = new f

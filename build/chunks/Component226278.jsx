@@ -41,7 +41,7 @@ function g(e) {
     children: v
   } = e, _ = (0, s.Z)(n), b = (0, a.ZP)(n, p), j = b.type !== f.A3.INACTIVE, h = (null == (t = b.sourceEntitlement) ? true : t.ends_at) != null, E = (0, l.Z)(n, p, "GuildPowerupCard"), C = o.useRef(null), {
     onShowMore: I
-  } = (0, d.ZP)(n, p), [O, y] = o.useState(false), P = (0, i.O)(y, 1);
+  } = (0, d.ZP)(n, p), [O, y] = o.useState(false), w = (0, i.O)(y, 1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.aB, {
       label: p.title,
@@ -54,7 +54,7 @@ function g(e) {
       onMouseLeave: () => null == x ? true : x(false),
       className: g,
       ref: e => {
-        C.current = e, P.current = e
+        C.current = e, w.current = e
       },
       children: v
     }), !E && _ && (0, r.jsx)(c.Z, {

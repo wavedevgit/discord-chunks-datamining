@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 665807, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,10 +14,10 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk254580 = require("./254580.js"),
   Chunk882008 = require("./882008.js");
-let h = function(e) {
+let f = function(e) {
   let {
     loadId: t
-  } = e, n = s.Z.useField("categoryId"), h = (0, l.e7)([c.Z], () => c.Z.getCategoryName(n)), g = i.useCallback(() => {
+  } = e, n = s.Z.useField("categoryId"), f = (0, l.e7)([c.Z], () => c.Z.getCategoryName(n)), g = i.useCallback(() => {
     s.Z.setState({
       categoryId: u.Hk
     }), o.Z.loadCategoryResults({
@@ -27,7 +27,7 @@ let h = function(e) {
       languageCode: s.Z.getField("languageCode")
     })
   }, [t]), m = n === u.Hk ? d.intl.string(d.t.Ivw1Ii) : d.intl.formatToPlainString(d.t["+1WAFR"], {
-    categoryName: h
+    categoryName: f
   }), b = n === u.Hk ? d.intl.string(d.t.aXvEjY) : d.intl.format(d.t.XLioqq, {
     onClick: g
   });
@@ -35,7 +35,7 @@ let h = function(e) {
     className: p.container,
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: f,
+      src: h,
       className: p.image
     }), (0, r.jsx)(a.X6q, {
       variant: "heading-xl/semibold",

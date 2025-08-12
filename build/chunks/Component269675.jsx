@@ -32,10 +32,10 @@ var Chunk255367 = require("./255367.js"),
 function P(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, a.e7)([h.Z], () => h.Z.isConnected()), j = (0, p.Z)(t), x = (0, O.Z)(t), A = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, _.f)(), {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, a.e7)([f.Z], () => f.Z.isConnected()), j = (0, p.Z)(t), x = (0, O.Z)(t), Z = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), A = (0, _.f)(), {
     shouldHideGuildPurchaseEntryPoints: w,
     restrictionsLoading: L
-  } = (0, f.uP)(t), R = null == n || !Z || A || L;
+  } = (0, h.uP)(t), R = null == n || !A || Z || L;
   (0, u.Tt)({
     subsection: N.intl.string(N.t["KzCF//"]),
     location: null == n ? true : n.name

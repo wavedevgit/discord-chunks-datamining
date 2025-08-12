@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 322701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -13,12 +13,12 @@ var Chunk255367 = require("./255367.js"),
   Chunk607070 = require("./607070.js"),
   Chunk981631 = require("./981631.js"),
   Chunk271251 = require("./271251.js");
-let f = function(e) {
+let h = function(e) {
   let {
     rows: t,
     renderRow: n,
-    renderSection: f,
-    hasSearchQuery: h,
+    renderSection: h,
+    hasSearchQuery: f,
     sectionFilter: g,
     footer: m
   } = e, b = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), _ = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), O = (0, l.ZP)({
@@ -26,13 +26,13 @@ let f = function(e) {
     isEnabled: b,
     async scrollToStart() {},
     async scrollToEnd() {}
-  }), E = g !== d.pJs.ONLINE && g !== d.pJs.ALL, y = _ || h || E, v = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
-    children: [f(t), e.map(n)]
+  }), E = g !== d.pJs.ONLINE && g !== d.pJs.ALL, y = _ || f || E, v = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
+    children: [h(t), e.map(n)]
   }, t) : (0, r.jsxs)(s.W, {
     transitionAppear: false,
     component: "div",
-    children: [f(t), e.map(n)]
-  }, t)), [n, f, t, y]);
+    children: [h(t), e.map(n)]
+  }, t)), [n, h, t, y]);
   return (0, r.jsx)(a.bG, {
     navigator: O,
     children: (0, r.jsx)(a.SJ, {

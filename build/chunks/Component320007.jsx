@@ -23,7 +23,7 @@ function _(e) {
   let {
     canShowReminder: t = false,
     className: _
-  } = e, O = (0, f.Z)(u.Z), {
+  } = e, O = (0, h.Z)(u.Z), {
     showClipsHeaderEntrypoint: E
   } = d.NV.useExperiment({
     location: "ClipsButton"
@@ -41,12 +41,12 @@ function _(e) {
     lastClipsSession: p.Z.getLastClipsSession(),
     remindersEnabled: p.Z.getSettings().remindersEnabled,
     hasAnyClipAnimations: p.Z.hasAnyClipAnimations()
-  })), N = null != I && I.newClipIds.length > 0, T = (0, h.n)(e => e.clipsButtonRef), P = (0, h.n)(e => e.setClipsButtonRef), j = (0, l.e7)([c.Z], () => c.Z.hasLayers()), {
+  })), N = null != I && I.newClipIds.length > 0, T = (0, f.n)(e => e.clipsButtonRef), P = (0, f.n)(e => e.setClipsButtonRef), j = (0, l.e7)([c.Z], () => c.Z.hasLayers()), {
     preventIdle: x,
-    allowIdle: A
+    allowIdle: Z
   } = (0, s.Y)("animation");
 
-  function Z() {
+  function A() {
     (0, a.ZDy)(async () => {
       let {
         default: e
@@ -73,11 +73,11 @@ function _(e) {
       modalKey: m.Qr
     })
   }
-  return (i.useEffect(() => (S ? x() : A(), () => A()), [S, x, A]), E && O && y) ? (0, r.jsxs)(r.Fragment, {
+  return (i.useEffect(() => (S ? x() : Z(), () => Z()), [S, x, Z]), E && O && y) ? (0, r.jsxs)(r.Fragment, {
     children: [null != T && t && C && N && !(0, a.$sL)() && !j && (0, r.jsx)(g.Z, {
       clipIconRef: T,
       lastClipsSession: I,
-      onOpenClipsGallery: Z
+      onOpenClipsGallery: A
     }), (0, r.jsx)("div", {
       ref: P,
       children: (0, r.jsx)(o.JO, {
@@ -85,7 +85,7 @@ function _(e) {
         icon: a.AlX,
         showBadge: v,
         tooltip: b.intl.string(b.t.MXaLEB),
-        onClick: Z
+        onClick: A
       })
     })]
   }) : null

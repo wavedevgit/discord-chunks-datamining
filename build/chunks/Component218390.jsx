@@ -184,7 +184,6 @@ function el() {
             }), (0, Chunk37234.xf)(), (0, Chunk703656.uL)(Chunk981631.Z5c.APPLICATION_STORE)
           },
           children: (0, Chunk255367.jsx)(Chunk481060.Text, {
-            className: Chunk371335.__invalid_managePlanButtonCTA,
             variant: "text-sm/medium",
             color: "always-white",
             children: Chunk913527 ? Chunk388032.intl.string(Chunk388032.t.VR2iVF) : Chunk388032.intl.string(Chunk388032.t.T1aUAQ)
@@ -216,7 +215,6 @@ function el() {
             }), Chunk230711.Z.open(Chunk981631.oAB.SUBSCRIPTIONS)
           },
           children: (0, Chunk255367.jsx)(Chunk481060.Text, {
-            className: Chunk371335.__invalid_managePlanButtonCTA,
             variant: "text-sm/medium",
             color: "always-white",
             children: Chunk388032.intl.string(Chunk388032.t["9uDy6O"])
@@ -365,11 +363,9 @@ let ed = function() {
     value: require,
     children: (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
       children: [(0, Chunk255367.jsxs)("div", {
-        className: Chunk371335.__invalid_container,
         children: [(0, Chunk255367.jsx)(el, {}), Chunk410030 && (0, Chunk255367.jsx)(Chunk386733.Z, {
           isInSettings: true
         }), (0, Chunk255367.jsx)(ec, {}), (0, Chunk255367.jsx)(Chunk179984.Z, {
-          className: Chunk371335.__invalid_planComparisonTable,
           hideCTAs: true,
           headingOverride: Chunk388032.intl.string(Chunk388032.t.dnVvQU),
           hidePill: !Chunk74538,

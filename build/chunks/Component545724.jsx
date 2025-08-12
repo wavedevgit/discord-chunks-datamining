@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk687683 = require("./687683.js"),
   Chunk173519 = require("./173519.js");
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function f(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ let g = function(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
-      return n => (0, r.jsx)(e, h(f({}, n), {
+      return n => (0, r.jsx)(e, f(h({}, n), {
         user: t
       }))
     }, {
@@ -81,7 +81,7 @@ let g = function(e) {
         left: false,
         right: false
       },
-      children: (0, r.jsx)(o.Z.div, h(f({
+      children: (0, r.jsx)(o.Z.div, f(h({
         className: a()(p.messageRequestItem, y, {
           [p.active]: O || C,
           [p.firstItem]: 0 === t

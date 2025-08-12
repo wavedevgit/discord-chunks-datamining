@@ -2,7 +2,7 @@
 /** chunk id: 277053, original params: e,t,n (module,exports,require) **/
 let r, i;
 require.d(exports, {
-  Z: () => Z
+  Z: () => A
 }), require("./388685.js");
 var l, Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
@@ -71,7 +71,7 @@ function x() {
   let e = C.getGuildId();
   I = v = j(C), null == v[N] && (N = module), i = null != S, r = Chunk700785.o4(C, S), T = null, y = false, E = Chunk981631.QZA.CLOSED, O.clear()
 }
-class A extends(l = Chunk442837.ZP.Store) {
+class Z extends(l = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk388610.Z, Chunk592125.Z)
   }
@@ -112,13 +112,13 @@ class A extends(l = Chunk442837.ZP.Store) {
     return P
   }
 }
-m(A, "displayName", "ChannelSettingsPermissionsStore");
-let Z = new A(Chunk570140.Z, {
+m(Z, "displayName", "ChannelSettingsPermissionsStore");
+let A = new Z(Chunk570140.Z, {
   CHANNEL_SETTINGS_SET_SECTION: function(e) {
     let {
       section: t
     } = e;
-    if (null != C || t !== h.CoT.PERMISSIONS) returnfalse;
+    if (null != C || t !== f.CoT.PERMISSIONS) returnfalse;
     x()
   },
   CHANNEL_SETTINGS_PERMISSIONS_INIT: x,
@@ -134,7 +134,7 @@ let Z = new A(Chunk570140.Z, {
       deny: i
     }), v = _(b({}, v), {
       [t]: l
-    }), O.add(t), E = h.QZA.OPEN, y = !o().isEqual(v, I), r = d.o4(C, S)
+    }), O.add(t), E = f.QZA.OPEN, y = !o().isEqual(v, I), r = d.o4(C, S)
   },
   CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION: function(e) {
     let {
@@ -159,7 +159,7 @@ let Z = new A(Chunk570140.Z, {
     if (null == C) returnfalse;
     let n = false;
     for (let e of t) false !== function(e) {
-      if (null == C || C.id !== e || null == (C = f.Z.getChannel(e))) returnfalse;
+      if (null == C || C.id !== e || null == (C = h.Z.getChannel(e))) returnfalse;
       S = p.Z.getCategory();
       let t = C.getGuildId();
       if (null == t) returnfalse;
@@ -178,7 +178,7 @@ let Z = new A(Chunk570140.Z, {
     let {
       silent: t
     } = e;
-    t ? E = h.QZA.OPEN : (E = h.QZA.CLOSED, x())
+    t ? E = f.QZA.OPEN : (E = f.QZA.CLOSED, x())
   },
   CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE: function(e) {
     let {

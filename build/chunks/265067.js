@@ -46,12 +46,12 @@ let m = {
       await (0, l.w)();
       let r = u.default.getCurrentUser(),
         o = a.Z.getSound(t, n),
-        p = (0, f.Z)(),
-        h = null != o && null != r && (0, s.Nq)(r, o, p);
+        p = (0, h.Z)(),
+        f = null != o && null != r && (0, s.Nq)(r, o, p);
       if (null == p) throw new d.Z({
         errorCode: g.lT.INVALID_CHANNEL
       }, "Invalid Channel.");
-      if (h)
+      if (f)
         if ((0, c.Z)(p)) null != o && (0, s.GN)(o, p.id, [i.Z.RPC]);
         else throw new d.Z({
           errorCode: g.lT.INVALID_PERMISSIONS

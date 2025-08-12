@@ -19,6 +19,7 @@ require.d(exports, {
   Us: () => c,
   XW: () => _,
   ad: () => p,
+  am: () => w,
   d5: () => T,
   os: () => P,
   uc: () => I
@@ -160,4 +161,5 @@ let R = new Set([Chunk494497.MB, Chunk494497.Vk]),
   P = {
     1: new Set([Chunk494497.A$]),
     2: R
-  }
+  },
+  w = "powerupId"

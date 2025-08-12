@@ -18,12 +18,12 @@ let p = (0, Chunk663993.Un)({
     webpackId: 223455,
     name: "PopoutWindowChannelCall"
   }),
-  f = (0, Chunk663993.Un)({
+  h = (0, Chunk663993.Un)({
     createPromise: () => require.e("20176").then(require.bind(require, 432472)),
     webpackId: 432472,
     name: "PopoutWindowStageChannelCall"
   }),
-  h = (0, Chunk663993.Un)({
+  f = (0, Chunk663993.Un)({
     createPromise: () => require.e("80960").then(require.bind(require, 945778)),
     webpackId: 945778,
     name: "PopoutWindowRTCDebug"
@@ -44,7 +44,7 @@ class m extends Chunk317770.Z {
     let {
       channel: t
     } = e;
-    c.bA(u.KJ3.CHANNEL_CALL_POPOUT, e => t.isGuildStageVoice() ? (0, r.jsx)(f, {
+    c.bA(u.KJ3.CHANNEL_CALL_POPOUT, e => t.isGuildStageVoice() ? (0, r.jsx)(h, {
       windowKey: e,
       channelId: t.id
     }) : (0, r.jsx)(p, {
@@ -74,7 +74,7 @@ class m extends Chunk317770.Z {
     null != this._observer && (this._observer.disconnect(), this._observer = null)
   }
   handleOpenRTCDebugPopout() {
-    Chunk788983.bA(Chunk981631.KJ3.RTC_DEBUG_POPOUT, e => (0, r.jsx)(h, {
+    Chunk788983.bA(Chunk981631.KJ3.RTC_DEBUG_POPOUT, e => (0, r.jsx)(f, {
       windowKey: e
     }), {
       defaultWidth: 854,

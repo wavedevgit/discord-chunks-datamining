@@ -19,11 +19,11 @@ function d(e, t, n) {
 }
 let p = {};
 
-function f(e, t) {
+function h(e, t) {
   let n = p[e];
   return !(null == n || n.has(t)) && (p[e] = new Set(n.add(t)), true)
 }
-class h extends(r = Chunk442837.ZP.PersistedStore) {
+class f extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(a.default, s.Z), p = {}, null != e && c.default.keys(e).forEach(t => {
       let n = e[t];
@@ -41,12 +41,12 @@ class h extends(r = Chunk442837.ZP.PersistedStore) {
     return p
   }
 }
-d(h, "displayName", "GuildProgressStore"), d(h, "persistKey", "GuildProgressStore"), new h(Chunk570140.Z, {
+d(f, "displayName", "GuildProgressStore"), d(f, "persistKey", "GuildProgressStore"), new f(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
     let e = [];
     Chunk709054.default.keys(p).forEach(t => {
       p[t].has(u.Rg.COMPLETED) && e.push(t)
-    }), module.forEach(e => f(e, u.Rg.DISMISSED))
+    }), module.forEach(e => h(e, u.Rg.DISMISSED))
   },
   GUILD_PROGRESS_INITIALIZE: function(e) {
     let {
@@ -65,7 +65,7 @@ d(h, "displayName", "GuildProgressStore"), d(h, "persistKey", "GuildProgressStor
     let {
       guildId: t
     } = e;
-    return f(t, u.Rg.DISMISSED)
+    return h(t, u.Rg.DISMISSED)
   },
   GUILD_CREATE: function(e) {
     let {
@@ -81,20 +81,20 @@ d(h, "displayName", "GuildProgressStore"), d(h, "persistKey", "GuildProgressStor
     let {
       channel: t
     } = e;
-    return null != t && null != t.guild_id && null != p[t.guild_id] && f(t.guild_id, u.Rg.CHANNEL)
+    return null != t && null != t.guild_id && null != p[t.guild_id] && h(t.guild_id, u.Rg.CHANNEL)
   },
   CHANNEL_UPDATES: function(e) {
     let {
       channels: t
     } = e, n = false;
-    for (let e of t) null != e && null != e.guild_id && null != p[e.guild_id] && false !== f(e.guild_id, u.Rg.CHANNEL) && (n = true);
+    for (let e of t) null != e && null != e.guild_id && null != p[e.guild_id] && false !== h(e.guild_id, u.Rg.CHANNEL) && (n = true);
     return n
   },
   GUILD_SETTINGS_SUBMIT_SUCCESS: function(e) {
     let {
       guild: t
     } = e;
-    return null != t && null != t.id && null != p[t.id] && null != t.icon && f(t.id, u.Rg.AVATAR)
+    return null != t && null != t.id && null != p[t.id] && null != t.icon && h(t.id, u.Rg.AVATAR)
   },
   MESSAGE_CREATE: function(e) {
     var t;
@@ -102,13 +102,13 @@ d(h, "displayName", "GuildProgressStore"), d(h, "persistKey", "GuildProgressStor
       channelId: n,
       message: r
     } = e, i = o.Z.getChannel(n);
-    return (null == (t = r.author) ? true : t.id) === a.default.getId() && null != i && null != p[i.guild_id] && f(i.guild_id, u.Rg.MESSAGE)
+    return (null == (t = r.author) ? true : t.id) === a.default.getId() && null != i && null != p[i.guild_id] && h(i.guild_id, u.Rg.MESSAGE)
   },
   GUILD_MEMBER_LIST_UPDATE: function(e) {
     let {
       guildId: t,
       memberCount: n
     } = e;
-    return null != p[t] && n > 1 && f(t, u.Rg.INVITE)
+    return null != p[t] && n > 1 && h(t, u.Rg.INVITE)
   }
 })

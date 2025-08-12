@@ -1,8 +1,8 @@
 /** Chunk was on 44799 **/
 /** chunk id: 504392, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
-}), require("./539854.js"), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./953529.js");
+  Z: () => A
+}), require("./539854.js"), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./35282.js"), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
@@ -12,6 +12,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk984370 = require("./984370.jsx"),
+  Chunk703656 = require("./703656.js"),
   Chunk713081 = require("./713081.js"),
   Chunk905128 = require("./905128.js"),
   Chunk639777 = require("./639777.js"),
@@ -31,53 +32,60 @@ var Chunk255367 = require("./255367.js"),
   Chunk93841 = require("./93841.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk941818 = require("./941818.js");
-let S = [Chunk535396.Us.LEVEL, Chunk535396.Us.PERK];
+let T = [Chunk535396.Us.LEVEL, Chunk535396.Us.PERK];
 
-function T(e) {
+function A(e) {
   let {
     guildId: t,
     powerupListingId: i
   } = e;
   o.useEffect(() => {
-    (0, p.Sn)(t), (0, p.Fm)(t)
-  }, [t]), (0, I.Wj)(t);
-  let T = (0, s.e7)([f.Z], () => f.Z.getStateForGuild(t)),
-    A = (0, m.Z)(t),
-    R = o.useRef(false),
+    (0, f.Sn)(t), (0, f.Fm)(t)
+  }, [t]), (0, O.Wj)(t);
+  let A = (0, s.e7)([m.Z], () => m.Z.getStateForGuild(t)),
+    R = (0, g.Z)(t),
+    k = o.useRef(false),
     {
-      shouldShow: k,
-      modalConfig: L
-    } = (0, C.K)(t, "GuildPowerupsOverview"),
-    D = null == i && null != L,
-    U = [];
-  k && D && U.push(a.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
-  let [V, M] = (0, c.US)(U), B = o.useMemo(() => S.reduce((e, t) => {
-    let n = null == T ? true : T.powerupCatalog[t];
+      shouldShow: L,
+      modalConfig: D
+    } = (0, I.K)(t, "GuildPowerupsOverview"),
+    U = null == i && null != D,
+    V = [];
+  L && U && V.push(a.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
+  let [M, B] = (0, c.US)(V), G = o.useMemo(() => T.reduce((e, t) => {
+    let n = null == A ? true : A.powerupCatalog[t];
     if (null == n) return e;
-    let r = (0, g.S)(n);
+    let r = (0, x.S)(n);
     return e.push({
       type: t,
       listings: r
     }), e
-  }, []), [null == T ? true : T.powerupCatalog]), G = B.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), W = (0, O.f)(G, t);
+  }, []), [null == A ? true : A.powerupCatalog]), W = G.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), z = (0, y.f)(W, t);
   return (o.useEffect(() => {
-    if (null != i && !R.current)
-      for (let e of B)
+    if (null != i && !k.current)
+      for (let e of G)
         for (let n of e.listings) {
           if (("singleLevel" === n.type || "singlePerk" === n.type) && n.powerup.skuId === i) {
-            (0, E.KE)(t, n.powerup), R.current = true;
+            (0, C.KE)(t, n.powerup), k.current = true;
             return
           }
           if ("multiPerk" === n.type && (n.group === i || n.powerups.some(e => e.skuId === i))) {
-            R.current = true;
-            let e = W[n.group];
+            k.current = true;
+            let e = z[n.group];
             if (null == e) return;
-            e.openModal(n.powerups);
+            e.openModal(n.powerups, {
+              onModalClose: () => {
+                let e = new URL(window.location.href);
+                e.searchParams.delete(w.am);
+                let t = e.pathname + e.search + e.hash;
+                (0, p.dL)(t), k.current = false
+              }
+            });
             return
           }
         }
-  }, [t, i, B, W]), o.useEffect(() => {
-    null != V && null != L && (0, u.ZDy)(async () => {
+  }, [t, i, G, z]), o.useEffect(() => {
+    null != M && null != D && (0, u.ZDy)(async () => {
       let {
         default: e
       } = await n.e("61879").then(n.bind(n, 802426));
@@ -99,32 +107,32 @@ function T(e) {
         }
         return e
       }({
-        modalConfig: L,
-        markAsDismissed: M
+        modalConfig: D,
+        markAsDismissed: B
       }, t))
     }, {
       onCloseCallback: () => {
-        M(P.L.USER_DISMISS)
+        B(P.L.USER_DISMISS)
       },
-      modalKey: "dismissible_content_".concat(V)
+      modalKey: "dismissible_content_".concat(M)
     })
-  }, [t, V, M, L]), (null == T ? true : T.powerupCatalog) == null) ? null : (0, r.jsxs)("div", {
-    className: Z.container,
+  }, [t, M, B, D]), (null == A ? true : A.powerupCatalog) == null) ? null : (0, r.jsxs)("div", {
+    className: S.container,
     children: [(0, r.jsxs)(d.Z, {
-      className: Z.toolbar,
+      className: S.toolbar,
       hideSearch: true,
       toolbar: (0, r.jsx)("div", {}),
       children: [(0, r.jsx)(d.Z.Icon, {
         icon: u.$Eu,
         "aria-label": ""
       }), (0, r.jsx)(d.Z.Title, {
-        children: N.intl.string(w.default.yv3DJC)
+        children: Z.intl.string(N.default.yv3DJC)
       })]
     }), (0, r.jsxs)("div", {
-      className: Z.contentContainer,
+      className: S.contentContainer,
       children: [(0, r.jsx)(u.zJl, {
-        className: Z.powerupsContainer,
-        children: B.map(e => {
+        className: S.powerupsContainer,
+        children: G.map(e => {
           let {
             type: n,
             listings: o
@@ -133,20 +141,20 @@ function T(e) {
             description: s
           } = function(e) {
             switch (e) {
-              case y.Us.LEVEL:
+              case w.Us.LEVEL:
                 return {
-                  title: N.intl.string(w.default["TXY/b2"]), description: N.intl.string(w.default.aJv4PD)
+                  title: Z.intl.string(N.default["TXY/b2"]), description: Z.intl.string(N.default.aJv4PD)
                 };
-              case y.Us.PERK:
+              case w.Us.PERK:
                 return {
-                  title: N.intl.string(w.default.TV3Vm5), description: N.intl.string(w.default.STx9ho)
+                  title: Z.intl.string(N.default.TV3Vm5), description: Z.intl.string(N.default.STx9ho)
                 }
             }
-          }(n), a = n === y.Us.LEVEL ? u.zJl : "div";
+          }(n), a = n === w.Us.LEVEL ? u.zJl : "div";
           return (0, r.jsxs)("div", {
-            className: Z.powerupsSection,
+            className: S.powerupsSection,
             children: [(0, r.jsxs)("div", {
-              className: Z.powerupHorizontalPadding,
+              className: S.powerupHorizontalPadding,
               children: [(0, r.jsx)(u.X6q, {
                 color: "header-primary",
                 variant: "heading-lg/semibold",
@@ -158,27 +166,27 @@ function T(e) {
               })]
             }), (0, r.jsx)(a, {
               orientation: "horizontal",
-              className: l()(Z.powerupContainer, Z.powerupHorizontalPadding, {
-                [Z.powerupsLevelContainer]: n === y.Us.LEVEL
+              className: l()(S.powerupContainer, S.powerupHorizontalPadding, {
+                [S.powerupsLevelContainer]: n === w.Us.LEVEL
               }),
               fade: true,
               children: o.map((e, n) => {
                 switch (e.type) {
                   case "singleLevel":
                     var i;
-                    return (0, r.jsx)(x.ZP, {
+                    return (0, r.jsx)(v.ZP, {
                       guildId: t,
                       index: n,
                       powerup: e.powerup,
                       nextPowerup: null == (i = o[n + 1]) ? true : i.powerup
                     }, "powerup-".concat(e.powerup.skuId));
                   case "singlePerk":
-                    return (0, r.jsx)(_.Z, {
+                    return (0, r.jsx)(b.Z, {
                       guildId: t,
                       powerup: e.powerup
                     }, "powerup-".concat(e.powerup.skuId));
                   case "multiPerk":
-                    return (0, r.jsx)(v.Z, {
+                    return (0, r.jsx)(_.Z, {
                       guildId: t,
                       group: e.group,
                       powerups: e.powerups
@@ -189,12 +197,12 @@ function T(e) {
           }, "section-".concat(n))
         })
       }), (0, r.jsxs)("div", {
-        className: Z.sidebarContainer,
-        children: [A ? (0, r.jsx)(b.Z, {
+        className: S.sidebarContainer,
+        children: [R ? (0, r.jsx)(j.Z, {
           guildId: t
-        }) : (0, r.jsx)(j.Z, {
+        }) : (0, r.jsx)(h.Z, {
           guildId: t
-        }), (0, r.jsx)(h.Z, {
+        }), (0, r.jsx)(E.Z, {
           guildId: t
         })]
       })]

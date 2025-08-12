@@ -67,7 +67,7 @@ let U = e => {
       onClick: n,
       icon: i
     } = e;
-    return (0, r.jsx)(f.ua7, {
+    return (0, r.jsx)(h.ua7, {
       text: t,
       children: e => {
         let {
@@ -91,7 +91,7 @@ let U = e => {
     })
   };
 
-function H(e, t) {
+function B(e, t) {
   switch (t) {
     case R.f07.POST_INSTALL_SCRIPTS:
     case R.f07.PLANNING:
@@ -99,12 +99,12 @@ function H(e, t) {
     case R.f07.ALLOCATING_DISK:
       return "".concat(e);
     default:
-      return (0, A.BU)(e, {
+      return (0, Z.BU)(e, {
         useKibibytes: true
       })
   }
 }
-let B = {
+let H = {
   [Chunk981631.vxO.INSTALLING]: {
     [Chunk707409.J6.NONE]: (e, t, n, r) => D.intl.formatToPlainString(D.t.JfJt9f, {
       percent: e,
@@ -183,7 +183,7 @@ let B = {
 };
 
 function F(e, t, n, r, i) {
-  let l = B[t],
+  let l = H[t],
     a = null != l ? Object.keys(l) : [],
     {
       unit: o,
@@ -204,7 +204,7 @@ function z(e) {
     progress: i,
     total: l,
     secondsRemaining: a
-  } = e, o = H(l, n), s = H(i, n);
+  } = e, o = B(l, n), s = B(i, n);
   switch (n) {
     case R.f07.QUEUED:
       if (0 === i) return D.intl.string(D.t.RpfBqa);
@@ -271,9 +271,9 @@ class W extends Chunk73800.PureComponent {
     } = e;
     return (0, r.jsxs)(v.Z, {
       direction: v.Z.Direction.VERTICAL,
-      children: [(0, r.jsx)(f.Exd, {
+      children: [(0, r.jsx)(h.Exd, {
         percent: t,
-        size: f.Exd.Sizes.SMALL,
+        size: h.Exd.Sizes.SMALL,
         foregroundColor: (0, y.Lq)(n),
         foregroundGradientColor: null != i ? [(0, y.Lq)(i[0]), (0, y.Lq)(i[1])] : true,
         animate: this.isFocused
@@ -290,9 +290,9 @@ class W extends Chunk73800.PureComponent {
     } = e;
     return (0, r.jsxs)(v.Z, {
       direction: v.Z.Direction.VERTICAL,
-      children: [(0, r.jsx)(f.yGy, {
+      children: [(0, r.jsx)(h.yGy, {
         percents: t,
-        size: f.yGy.Sizes.SMALL,
+        size: h.yGy.Sizes.SMALL,
         foregroundColors: G,
         animate: this.isFocused
       }), (0, r.jsx)("div", {
@@ -327,8 +327,8 @@ class W extends Chunk73800.PureComponent {
         stage: l
       } = require;
       if (null != Chunk255367 && null != Chunk73800) {
-        let n = H(Chunk73800, Chunk120356),
-          a = H(Chunk255367, Chunk120356),
+        let n = B(Chunk73800, Chunk120356),
+          a = B(Chunk255367, Chunk120356),
           o = Math.floor(t = Chunk780570.xI(Chunk255367, Chunk73800));
         e = Chunk120356 === Chunk981631.f07.PAUSING ? Chunk388032.intl.formatToPlainString(Chunk388032.t.vjxhWl, {
           percent: Chunk392711,
@@ -446,8 +446,8 @@ class W extends Chunk73800.PureComponent {
         readerProgress: o
       } = n;
       if (null == i || null == l || null == r) return null;
-      let s = Z.xI(i, l),
-        c = Z.xI(null != o ? o : 0, l),
+      let s = A.xI(i, l),
+        c = A.xI(null != o ? o : 0, l),
         u = e[e.length - 1] / t * 1e3,
         d = l - i,
         p = z({
@@ -480,7 +480,7 @@ let Y = () => (0, Chunk255367.jsx)(V, {
       item: t
     } = e;
     return (0, r.jsx)(V, {
-      icon: f.wj7,
+      icon: h.wj7,
       tooltip: D.intl.string(D.t["Eqb+LC"]),
       onClick: () => m.A1(t.applicationId, t.branchId)
     })
@@ -490,7 +490,7 @@ let Y = () => (0, Chunk255367.jsx)(V, {
       item: t
     } = e;
     return (0, r.jsx)(V, {
-      icon: f.Dio,
+      icon: h.Dio,
       tooltip: D.intl.string(D.t["0lFmCw"]),
       onClick: () => m.al(t.applicationId, t.branchId)
     })
@@ -554,7 +554,7 @@ class J extends Chunk73800.PureComponent {
       applications: e
     } = this.props;
     module.forEach(e => {
-      e.finished && h.Z.wait(() => {
+      e.finished && f.Z.wait(() => {
         m.wi(e.applicationId, e.branchId)
       })
     }), window.removeEventListener("resize", this.throttledUpdateHeight), this.isUnmounted = true

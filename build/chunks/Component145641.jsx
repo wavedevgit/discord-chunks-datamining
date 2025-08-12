@@ -17,8 +17,8 @@ let p = function(e) {
     rows: t,
     renderRow: n,
     renderSection: p,
-    footer: f
-  } = e, h = e => {
+    footer: h
+  } = e, f = e => {
     let {
       section: r,
       row: i
@@ -102,13 +102,13 @@ let p = function(e) {
               var n;
               b.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
             },
-            renderRow: h,
+            renderRow: f,
             rowHeight: u.NV,
             renderSection: g,
             sectionHeight: u.aS,
             sections: v,
             className: d.peopleList
-          }, n)), f]
+          }, n)), h]
         })
       }
     })

@@ -22,9 +22,9 @@ function b(e) {
   var t;
   let n = null != (t = null == e ? true : e.id) ? t : g.lds,
     r = (0, l.e7)([p.Z], () => p.Z.isVisible(e)),
-    m = (0, l.e7)([h.Z], () => h.Z.isVisible(e)),
+    m = (0, l.e7)([f.Z], () => f.Z.isVisible(e)),
     b = (0, o.m)(n),
-    _ = (0, l.e7)([f.Z], () => f.Z.isVisible(e)),
+    _ = (0, l.e7)([h.Z], () => h.Z.isVisible(e)),
     O = u.Z.useShouldShowChannelNotice(n),
     E = (0, d.h6)(e),
     {

@@ -62,7 +62,7 @@ class b extends Chunk73800.Component {
         inputSkuId: i,
         fetchStoreListing: this.fetchStoreListing,
         location: t,
-        pageSize: (0, f.getPageSize)(l)
+        pageSize: (0, h.getPageSize)(l)
       })
     })
   }

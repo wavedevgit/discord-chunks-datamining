@@ -110,8 +110,8 @@ function P(e) {
     modalDismissibleContent: P,
     modalTopExtra: j,
     header: x,
-    headerClassName: A,
-    subHeader: Z,
+    headerClassName: Z,
+    subHeader: A,
     subHeaderExtra: w,
     featureCards: L,
     changeLogId: R,
@@ -120,7 +120,7 @@ function P(e) {
   } = e, {
     onClose: M,
     transitionState: U
-  } = n, G = (0, p.Dt)(), V = L.length % 2 == 0, H = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [B, F] = i.useState(Date.now()), [z, W] = i.useState(0), [Y, K] = i.useState(0), [q, X] = i.useState(false), [Q, J] = i.useState(true), $ = i.useRef(B), ee = i.useRef(z), et = i.useRef(Y), en = i.useRef(q), er = i.useRef(Q), [ei, el] = i.useState(S), ea = i.useRef(false);
+  } = n, G = (0, p.Dt)(), V = L.length % 2 == 0, B = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [H, F] = i.useState(Date.now()), [z, W] = i.useState(0), [Y, K] = i.useState(0), [q, X] = i.useState(false), [Q, J] = i.useState(true), $ = i.useRef(H), ee = i.useRef(z), et = i.useRef(Y), en = i.useRef(q), er = i.useRef(Q), [ei, el] = i.useState(S), ea = i.useRef(false);
 
   function eo() {
     let e = Date.now(),
@@ -157,8 +157,8 @@ function P(e) {
       URL.revokeObjectURL(e.src)
     })
   }, [ei]), i.useEffect(() => {
-    $.current = B, ee.current = z, et.current = Y, en.current = q, er.current = Q
-  }, [B, z, Y, q, Q]), i.useEffect(() => () => {
+    $.current = H, ee.current = z, et.current = Y, en.current = q, er.current = Q
+  }, [H, z, Y, q, Q]), i.useEffect(() => () => {
     if ("video" === l.type || "embed" === l.type) {
       let [e, t] = eo();
       b.default.track(O.rMx.CHANGE_LOG_VIDEO_PLAYED, {
@@ -178,7 +178,7 @@ function P(e) {
       b.default.track(O.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: R,
         seconds_open: Math.round((Date.now() - e) / 1e3)
-      }), null != P && (0, h.Q3)(P, {
+      }), null != P && (0, f.Q3)(P, {
         dismissAction: E.L.DISMISS
       })
     }
@@ -197,11 +197,11 @@ function P(e) {
       className: v.content,
       children: [(0, r.jsx)(s.X6q, {
         variant: "display-md",
-        className: a()(v.headerText, A),
+        className: a()(v.headerText, Z),
         children: x
-      }), "video" === l.type ? (0, r.jsx)(f.Z, {
+      }), "video" === l.type ? (0, r.jsx)(h.Z, {
         className: a()(v.video, N),
-        autoPlay: !H,
+        autoPlay: !B,
         loop: true,
         muted: true,
         controls: true,
@@ -258,7 +258,7 @@ function P(e) {
         variant: "text-md/normal",
         color: "text-secondary",
         className: v.subHeader,
-        children: [Z, null == w ? true : w()]
+        children: [A, null == w ? true : w()]
       }), null != k && (0, r.jsx)(s.X6q, {
         variant: "heading-md/medium",
         className: v.bodyText,

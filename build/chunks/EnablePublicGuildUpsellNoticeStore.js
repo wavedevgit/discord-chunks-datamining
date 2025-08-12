@@ -11,17 +11,17 @@ var r, i, l, Chunk442837 = require("./442837.js"),
   Chunk496675 = require("./496675.js"),
   Chunk135899 = require("./135899.js"),
   Chunk981631 = require("./981631.js");
-let h = "publicUpsellChannelNoticeGuilds",
+let f = "publicUpsellChannelNoticeGuilds",
   g = new Set;
 class m extends(r = Chunk442837.ZP.Store) {
   initialize() {
     var e;
-    this.waitFor(Chunk496675.Z, Chunk430824.Z, Chunk650774.Z), this.syncWith([Chunk496675.Z, Chunk430824.Z, Chunk650774.Z], Chunk981631.dG4), g = (e = new Set(Chunk433517.K.get(h)), module)
+    this.waitFor(Chunk496675.Z, Chunk430824.Z, Chunk650774.Z), this.syncWith([Chunk496675.Z, Chunk430824.Z, Chunk650774.Z], Chunk981631.dG4), g = (e = new Set(Chunk433517.K.get(f)), module)
   }
   isVisible(e) {
     if (null == e) return;
     let t = c.Z.getMemberCount(e.id);
-    return !g.has(e.id) && null != t && t >= p.U3 && d.Z.can(f.Plq.ADMINISTRATOR, e) && !e.features.has(f.oNc.COMMUNITY)
+    return !g.has(e.id) && null != t && t >= p.U3 && d.Z.can(h.Plq.ADMINISTRATOR, e) && !e.features.has(h.oNc.COMMUNITY)
   }
 }
 l = "EnablePublicGuildUpsellNoticeStore", (i = "displayName") in m ? Object.defineProperty(m, i, {
@@ -33,6 +33,6 @@ l = "EnablePublicGuildUpsellNoticeStore", (i = "displayName") in m ? Object.defi
 let b = new m(Chunk570140.Z, {
   PUBLIC_UPSELL_NOTICE_DISMISS: function(e) {
     let t = e.guildId;
-    if (!g.has(t)) return g.add(t), o.K.set(h, g), true
+    if (!g.has(t)) return g.add(t), o.K.set(f, g), true
   }
 })

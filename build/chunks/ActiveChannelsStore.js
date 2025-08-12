@@ -9,7 +9,7 @@ var r, i, l, a, Chunk392711 = require("./392711.js"),
 require("./914010.js");
 var Chunk709054 = require("./709054.js"),
   Chunk176505 = require("./176505.js");
-let h = {},
+let f = {},
   g = {},
   m = {},
   b = {};
@@ -28,7 +28,7 @@ function _(e) {
 }
 
 function O(e, t, n, r) {
-  h[e].add(t);
+  f[e].add(t);
   let i = m[t];
   (null == i || i + 3e5 > Date.now()) && _(t), null == g[t] && (g[t] = []), g[t].push({
     id: n,
@@ -47,14 +47,14 @@ class y extends(a = Chunk442837.ZP.Store) {
     return b[e]
   }
   getActiveChannelIds(e) {
-    return h[e]
+    return f[e]
   }
   getChannelMessageData(e) {
     return g[e]
   }
   shouldFetch(e) {
     var t;
-    return null == h[e] && !(null == (t = b[e]) ? true : t.loading)
+    return null == f[e] && !(null == (t = b[e]) ? true : t.loading)
   }
 }
 l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty(r, i, {
@@ -68,8 +68,8 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
       channelId: t,
       guildId: n
     } = e;
-    if (!(0, f.ME)(t) || null == n) returnfalse;
-    let r = h[n];
+    if (!(0, h.ME)(t) || null == n) returnfalse;
+    let r = f[n];
     if (null == r) returnfalse;
     r.forEach(e => {
       var t;
@@ -79,7 +79,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
       var t, n;
       return -(null != (n = null == (t = g[e]) ? true : t.length) ? n : 0)
     }).value();
-    h[n] = new Set(i)
+    f[n] = new Set(i)
   },
   MESSAGE_CREATE: function(e) {
     var t;
@@ -93,14 +93,14 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
     let a = d.Z.getChannel(n);
     if (null == a) returnfalse;
     let o = a.guild_id;
-    if (null == o || null == h[o]) returnfalse;
+    if (null == o || null == f[o]) returnfalse;
     O(o, n, r.id, null == (t = r.author) ? true : t.id)
   },
   GUILD_DELETE: function(e) {
     let {
       guild: t
     } = e;
-    delete h[t.id]
+    delete f[t.id]
   },
   CHANNEL_DELETE: E,
   THREAD_DELETE: E,
@@ -123,7 +123,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
       loading: false,
       error: null,
       fetchedAt: Date.now()
-    }, h[t] = new Set, n.forEach(e => {
+    }, f[t] = new Set, n.forEach(e => {
       let {
         channel_id: n,
         messages: r

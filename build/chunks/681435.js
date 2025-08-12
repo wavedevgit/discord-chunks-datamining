@@ -14,7 +14,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk794324 = require("./794324.js"),
   Chunk302800 = require("./302800.js"),
   Chunk921944 = require("./921944.js");
-let h = (e, t) => {
+let f = (e, t) => {
     var n, r, i, a, o, s, c, u;
     if ((null == t ? true : t.type) === l.Z.COACHTIP || e.hasPreviewAssets) {
       let i = null != t ? {
@@ -87,7 +87,7 @@ let h = (e, t) => {
       n = !(0, Chunk481060.$sL)(),
       [l, p] = (0, Chunk243778.XR)(require ? Chunk704215.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == exports ? true : exports.version) ? module : 0, true, true),
       g = (0, Chunk794324.mB)(exports),
-      m = null != Chunk264181 ? h(g, exports) : null,
+      m = null != Chunk264181 ? f(g, exports) : null,
       b = Chunk73800.useCallback(() => {
         null != m && Chunk302800(Chunk921944.L.AUTO)
       }, [m, Chunk302800]);

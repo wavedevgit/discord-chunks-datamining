@@ -39,12 +39,12 @@ let g = e => {
     title: t.title(),
     body: t.body(),
     asset: (0, r.jsx)("img", {
-      className: h.art,
+      className: f.art,
       src: O,
       alt: ""
     }),
     actions: [{
-      text: f.intl.string(f.t.fYfGgI),
+      text: h.intl.string(h.t.fYfGgI),
       variant: "primary",
       onClick: () => {
         null == m || m(), (0, u.uL)(p.Z5c.COLLECTIBLES_SHOP), (0, d.mK)({

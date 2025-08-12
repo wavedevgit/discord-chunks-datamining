@@ -19,7 +19,7 @@ function d(e) {
     className: n,
     channel: d,
     user: p,
-    hasSingleMessageRequest: f
+    hasSingleMessageRequest: h
   } = e;
   return (0, r.jsx)(s.Z, {
     index: t,
@@ -31,7 +31,7 @@ function d(e) {
       e.stopPropagation(), i.Z.openPrivateChannelAsSidebar({
         channelId: d.id,
         baseChannelId: l.uZ,
-        hasSingleMessageRequest: f
+        hasSingleMessageRequest: h
       }), a.default.track(u.rMx.MESSAGE_REQUEST_PREVIEW_VIEWED, {
         is_spam: true,
         channel_id: d.id,

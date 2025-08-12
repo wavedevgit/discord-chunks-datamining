@@ -77,7 +77,7 @@ function S(e) {
           }, 1e4)
         },
         a = (t, n, l) => {
-          var a, o, s, c, u, d, p, h;
+          var a, o, s, c, u, d, p, f;
           if (!g.Z.isFriend(t)) returnfalse;
           let b = m.default.getUser(t);
           if (null == b) returnfalse;
@@ -97,10 +97,10 @@ function S(e) {
             } else(null == (o = r.current[t]) ? true : o.presence) != null && (_ = true, e(t, "presence", null))
           }
           if (null != l) {
-            let n = f.Z.getChannel(l);
+            let n = h.Z.getChannel(l);
             if (null != n) {
               let i = "voice-".concat(n.id);
-              (null == (h = r.current[t]) ? true : h.voice) !== i && (_ = true, e(t, "voice", i), O = {
+              (null == (f = r.current[t]) ? true : f.voice) !== i && (_ = true, e(t, "voice", i), O = {
                 user: b,
                 voiceChannel: n
               })
@@ -111,7 +111,7 @@ function S(e) {
         o = e => {
           for (let t of e.updates) {
             let e = t.user.id,
-              n = h.Z.getPrimaryActivity(e);
+              n = f.Z.getPrimaryActivity(e);
             if (a(e, n)) break
           }
         },

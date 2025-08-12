@@ -15,7 +15,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk589148 = require("./589148.js");
 
-function h(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,7 +45,7 @@ class g extends Chunk73800.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "handleInvite", () => {
+    super(...e), f(this, "handleInvite", () => {
       let {
         guild: e
       } = this.props;
@@ -62,7 +62,7 @@ class g extends Chunk73800.PureComponent {
               "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), r.forEach(function(t) {
-                h(e, t, n[t])
+                f(e, t, n[t])
               })
             }
             return e
@@ -81,7 +81,7 @@ class g extends Chunk73800.PureComponent {
           }), i))
         }
       })
-    }), h(this, "handleClose", () => {
+    }), f(this, "handleClose", () => {
       let e = s.Z.getChannelId(),
         t = p.intl.formatToPlainString(p.t.DEn7np, {
           invitePeople: this.getInviteText()
