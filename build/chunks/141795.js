@@ -370,31 +370,27 @@ class x extends Chunk476326.ZP {
     return this.item = S({}, this.item, Chunk432877), this.reactNativeFilePrepped = true, this
   }
   async maybeConvertToWebP() {
-    let e = (0, Chunk893601.U)({
-      location: "CloudUpload.maybeConvertToWebP"
-    });
-    if (!module.enabled) return;
+    if (!(0, Chunk893601.U)({
+        location: "CloudUpload.maybeConvertToWebP"
+      }).enabled) return;
     if (null == this.item.file) return void C.warn("webp conversion skipped for ".concat(this.id, ": no file"));
     if (this._aborted) return;
-    let t = performance.now();
+    let e = performance.now();
     try {
-      let t = await (0, Chunk125186.LF)([this.item.file], {
-        minFileSizeBytes: module.minFileSizeBytes,
-        minSizeReductionPercent: module.minSizeReductionPercent
-      });
+      let e = await (0, Chunk125186.LF)([this.item.file]);
       if (this._aborted) return;
-      if (exports.length > 0 && exports[0].success) {
-        let e = exports[0];
-        this.item.file = (0, Chunk125186.ub)(module), this.currentSize = this.item.file.size, this.uploadAnalytics.convertedMimeType = "image/webp", null != module.hashTimeMs && (this.uploadAnalytics.timing.hashTimeMs = module.hashTimeMs), C.log("webp conversion worked for ".concat(this.id, ": ").concat(module.sizeBefore, " -> ").concat(module.sizeAfter, " bytes (").concat(module.compressionRatio.toFixed(2), "x)"))
+      if (module.length > 0 && module[0].success) {
+        let t = module[0];
+        this.item.file = (0, Chunk125186.ub)(exports), this.currentSize = this.item.file.size, this.uploadAnalytics.convertedMimeType = "image/webp", null != exports.hashTimeMs && (this.uploadAnalytics.timing.hashTimeMs = exports.hashTimeMs), C.log("webp conversion worked for ".concat(this.id, ": ").concat(exports.sizeBefore, " -> ").concat(exports.sizeAfter, " bytes (").concat(exports.compressionRatio.toFixed(2), "x)"))
       } else {
-        var n, r;
-        let e = null != (r = null == (n = exports[0]) ? true : require.reason) ? Chunk392711 : "unknown";
-        this.uploadAnalytics.conversionFailureReason = module, C.log("webp conversion skipped for ".concat(this.id, ": ").concat(module))
+        var t, n;
+        let r = null != (n = null == (t = module[0]) ? true : exports.reason) ? require : "unknown";
+        this.uploadAnalytics.conversionFailureReason = Chunk392711, C.log("webp conversion skipped for ".concat(this.id, ": ").concat(Chunk392711))
       }
     } catch (e) {
       this.uploadAnalytics.conversionFailureReason = "unknown_error", C.warn("webp conversion failed for ".concat(this.id, ":"), module)
     }
-    this.uploadAnalytics.timing.compressTimeMs = Math.round(performance.now() - exports)
+    this.uploadAnalytics.timing.compressTimeMs = Math.round(performance.now() - module)
   }
   handleError(e) {
     this.setStatus("ERROR"), this.error = e, this.trackUploadFinished("ERROR");

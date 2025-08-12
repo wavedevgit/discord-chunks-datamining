@@ -11,33 +11,19 @@ let o = (0, Chunk818083.B)({
   id: "2025-07_image_attachment_mezzanine",
   label: "Convert attachment images to WebP format for size optimization",
   defaultConfig: {
-    enabled: false,
-    minFileSizeBytes: 204800,
-    minSizeReductionPercent: .1
+    enabled: false
   },
   treatments: [{
     id: 1,
     label: "Control - No WebP conversion",
     config: {
-      enabled: false,
-      minFileSizeBytes: 204800,
-      minSizeReductionPercent: .1
+      enabled: false
     }
   }, {
     id: 2,
     label: "WebP conversion enabled",
     config: {
-      enabled: true,
-      minFileSizeBytes: 204800,
-      minSizeReductionPercent: .1
-    }
-  }, {
-    id: 3,
-    label: "WebP conversion enabled - Lower threshold",
-    config: {
-      enabled: true,
-      minFileSizeBytes: 102400,
-      minSizeReductionPercent: .1
+      enabled: true
     }
   }]
 });
