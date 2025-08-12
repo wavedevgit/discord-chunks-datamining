@@ -88,7 +88,7 @@ function S(e) {
                 user: t
               })
             }), (0, r.jsxs)("div", {
-              children: [(0, r.jsx)(b.Z, {
+              children: [(0, r.jsx)(g.Z, {
                 user: t,
                 displayProfile: B,
                 themeType: I.lY.MODAL
@@ -110,20 +110,20 @@ function S(e) {
                 nickname: G,
                 pronouns: null == B ? true : B.pronouns,
                 nicknameVariant: "heading-xl/bold",
-                tags: (0, r.jsx)(g.Z, {
+                tags: (0, r.jsx)(b.Z, {
                   displayProfile: B,
                   themeType: I.lY.MODAL,
                   onClose: R
                 })
               }), (0, r.jsxs)("div", {
-                className: N.container,
+                className: T.container,
                 children: [(0, r.jsx)(i.njP, {
-                  className: N.tabBar,
+                  className: T.tabBar,
                   type: "top",
                   selectedItem: I.oh.BOT_INFO,
                   onItemSelect: P.dG4,
                   children: (0, r.jsx)(i.njP.Item, {
-                    className: N.tabBarItem,
+                    className: T.tabBarItem,
                     id: I.oh.BOT_INFO,
                     "aria-label": E.intl.string(E.t.jGoPJS),
                     children: (0, r.jsx)(i.Text, {
@@ -133,7 +133,7 @@ function S(e) {
                   }, I.oh.BOT_INFO)
                 }), (0, r.jsxs)(i.zJl, {
                   fade: true,
-                  className: T.scroller,
+                  className: N.scroller,
                   children: [(0, r.jsx)(j.Z, {
                     userId: t.id,
                     userBio: null == B ? true : B.bio,

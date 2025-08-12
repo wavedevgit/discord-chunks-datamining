@@ -49,13 +49,13 @@ function m(e) {
   } = e, n = t === i.l.WANT_TO_PLAY_GAMES ? [c.LM.ROBLOX, c.LM.VALORANT, c.LM.LEAGUE_OF_LEGENDS] : [c.LM.ZENLESS_ZONE_ZERO, c.LM.ELDEN_RING, c.LM.RED_DEAD_REDEMPTION_2];
   return (0, r.jsx)("div", {
     className: f.placeholderCoverGrid,
-    children: n.map((e, t) => (0, r.jsx)(g, {
+    children: n.map((e, t) => (0, r.jsx)(b, {
       applicationId: e
     }, t))
   })
 }
 
-function g(e) {
+function b(e) {
   let {
     applicationId: t
   } = e, {
@@ -74,7 +74,7 @@ function g(e) {
   })
 }
 
-function b(e) {
+function g(e) {
   let {
     widgetType: t
   } = e, n = l.useCallback(() => {
@@ -134,7 +134,7 @@ function j() {
       className: Chunk949237.widgetGrid,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["+EIBSE"]),
       children: Chunk247397.r.map(e => (0, r.jsx)("li", {
-        children: (0, r.jsx)(b, {
+        children: (0, r.jsx)(g, {
           widgetType: e
         })
       }, e))

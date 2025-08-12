@@ -1,7 +1,7 @@
 /** Chunk was on 29458 **/
 /** chunk id: 311044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -17,11 +17,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk264481 = require("./264481.jsx"),
   Chunk824754 = require("./824754.js");
 
-function b(e) {
+function g(e) {
   let {
     user: t,
     guildId: n,
-    channelId: b,
+    channelId: g,
     onClose: j
   } = e, {
     analyticsLocations: y
@@ -35,12 +35,12 @@ function b(e) {
   return l.useEffect(() => {
     (0, u.Z)(t.id, _)
   }, [t.id, _]), (0, r.jsx)(i.Ttm, {
-    className: g.scroller,
+    className: b.scroller,
     fade: true,
     children: null == O ? Array.from({
       length: null != v ? v : 10
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: g.friendsLoadingItem,
+      className: b.friendsLoadingItem,
       children: [(0, r.jsx)(c.ZT, {
         width: 40,
         opacity: .08
@@ -58,7 +58,7 @@ function b(e) {
         user: l,
         status: i,
         guildId: n,
-        channelId: b,
+        channelId: g,
         onSelect: () => {
           var e, t;
           null == j || j(), h({

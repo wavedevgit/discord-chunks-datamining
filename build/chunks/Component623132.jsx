@@ -18,7 +18,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk896270 = require("./896270.js"),
   Chunk358340 = require("./358340.js");
 
-function b(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -77,12 +77,12 @@ function y(e) {
     sourceUserId: n,
     trackEntryPointImpression: true
   });
-  return null == s ? (0, r.jsx)(l.X6q, j(b({}, c), {
+  return null == s ? (0, r.jsx)(l.X6q, j(g({}, c), {
     children: a
-  })) : (0, r.jsx)(l.X6q, j(b({}, c), {
+  })) : (0, r.jsx)(l.X6q, j(g({}, c), {
     children: (0, r.jsx)(l.P3F, {
       onClick: s,
-      className: g.clickableText,
+      className: b.clickableText,
       children: a
     })
   }))
@@ -99,7 +99,7 @@ function x(e) {
     children: [(0, r.jsx)(l.PEf, {
       size: "xxs",
       color: l.TVs.colors.ICON_TERTIARY,
-      className: g.icon
+      className: b.icon
     }), (0, r.jsx)(l.nn4, {
       children: f.intl.format(f.t.TM0XDQ, {
         name: a.ZP.getName(i, o, n)
@@ -149,11 +149,11 @@ function O(e) {
     color: "text-default"
   };
   return a ? (0, r.jsxs)("div", {
-    className: g.card,
+    className: b.card,
     children: [(0, r.jsx)("div", {
       className: m.loadingCover
     }), (0, r.jsx)("div", {
-      className: g.details,
+      className: b.details,
       children: (0, r.jsxs)("div", {
         className: p.placeholderText,
         children: [(0, r.jsx)("div", {
@@ -164,7 +164,7 @@ function O(e) {
       })
     })]
   }) : (0, r.jsxs)("div", {
-    className: g.card,
+    className: b.card,
     children: [(0, r.jsx)(s.Z, {
       imageSrc: O,
       gameName: u,
@@ -172,10 +172,10 @@ function O(e) {
       userId: t.id,
       disableInteraction: c
     }), (0, r.jsxs)("div", {
-      className: g.details,
-      children: [c ? (0, r.jsx)(l.X6q, j(b({}, P), {
+      className: b.details,
+      children: [c ? (0, r.jsx)(l.X6q, j(g({}, P), {
         children: u
-      })) : (0, r.jsx)(y, b({
+      })) : (0, r.jsx)(y, g({
         applicationId: v,
         userId: t.id,
         gameName: u
@@ -187,7 +187,7 @@ function O(e) {
       }), (0, r.jsx)(d.Z, {
         tags: I
       }), !c && (0, r.jsx)(h, {
-        className: g.socialProof,
+        className: b.socialProof,
         applicationId: v,
         guildId: n,
         channelId: i

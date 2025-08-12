@@ -1,7 +1,7 @@
 /** Chunk was on 29458 **/
 /** chunk id: 817053, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -77,12 +77,12 @@ function m(e) {
       gameName: n
     })
   });
-  let g = d.intl.formatToPlainString(d.t["8QLQBw"], {
+  let b = d.intl.formatToPlainString(d.t["8QLQBw"], {
     gameName: null != n ? n : d.intl.string(d.t.GIWFlJ)
   });
   return (0, r.jsx)(a.P3F, {
     onClick: m,
-    "aria-label": g,
+    "aria-label": b,
     className: o()(u.clickable, f),
     children: (0, r.jsx)(p, {
       imageSrc: t,
@@ -91,7 +91,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function b(e) {
   var {
     applicationId: t,
     userId: n,

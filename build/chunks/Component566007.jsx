@@ -13,8 +13,9 @@ function o(e) {
     user: t,
     widget: n,
     isGameFetching: o,
-    disableInteraction: a
-  } = e, c = function(e, t) {
+    containerClassName: a,
+    disableInteraction: c
+  } = e, s = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -28,13 +29,14 @@ function o(e) {
       for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
     return l
-  }(e, ["user", "widget", "isGameFetching", "disableInteraction"]);
-  let s = n.games[0];
+  }(e, ["user", "widget", "isGameFetching", "containerClassName", "disableInteraction"]);
+  let d = n.games[0];
   return (0, r.jsx)(l.Z, {
     userId: t.id,
     widget: n,
-    disableInteraction: a,
-    children: null != s && (0, r.jsx)(i.Z, function(e) {
+    className: a,
+    disableInteraction: c,
+    children: null != d && (0, r.jsx)(i.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -53,9 +55,9 @@ function o(e) {
       return e
     }({
       user: t,
-      game: s,
-      loading: o(s.applicationId),
-      disableInteraction: a
-    }, c))
+      game: d,
+      loading: o(d.applicationId),
+      disableInteraction: c
+    }, s))
   })
 }

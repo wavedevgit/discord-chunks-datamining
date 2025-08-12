@@ -1,7 +1,7 @@
 /** Chunk was on 29458 **/
 /** chunk id: 993160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -17,12 +17,12 @@ var Chunk755721 = require("./755721.js"),
   Chunk562831 = require("./562831.js"),
   Chunk981631 = require("./981631.js");
 
-function g(e) {
+function b(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: g,
-    channelId: b,
+    guildId: b,
+    channelId: g,
     displayProfile: j,
     relationshipType: y,
     onClose: x
@@ -30,8 +30,8 @@ function g(e) {
     newestAnalyticsLocation: h
   } = (0, o.ZP)(), O = (0, a.Z)({
     user: t,
-    guildId: g,
-    channelId: b,
+    guildId: b,
+    channelId: g,
     displayProfile: j,
     onClose: x
   }), {
@@ -44,14 +44,14 @@ function g(e) {
   return y === m.OGo.BLOCKED ? null : t.id === n.id ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       user: t,
-      guildId: g,
+      guildId: b,
       onClose: x
     }), (0, r.jsx)(u.Z, {
       onClose: x
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: g,
+      guildId: b,
       viewProfileItem: O,
       themeColor: "secondary"
     })]
@@ -64,7 +64,7 @@ function g(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: g,
+      guildId: b,
       viewProfileItem: O,
       themeColor: "secondary"
     })]
@@ -78,7 +78,7 @@ function g(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: g,
+      guildId: b,
       themeColor: "secondary"
     })]
   }) : y === m.OGo.FRIEND || y === m.OGo.PENDING_OUTGOING ? (0, r.jsxs)(r.Fragment, {
@@ -98,7 +98,7 @@ function g(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: g,
+      guildId: b,
       viewProfileItem: O,
       themeColor: "secondary"
     })]
@@ -122,7 +122,7 @@ function g(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: g,
+      guildId: b,
       viewProfileItem: O,
       themeColor: "secondary"
     })]
@@ -141,7 +141,7 @@ function g(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: g,
+      guildId: b,
       viewProfileItem: O,
       themeColor: "secondary"
     })]

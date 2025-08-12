@@ -35,10 +35,10 @@ function I(e) {
     subsection: E,
     onClose: Z
   } = e, {
-    voiceActivityStatusEnabled: T
+    voiceActivityStatusEnabled: N
   } = (0, o.U)({
     location: "UserProfileModalActivity"
-  }), N = (0, u.b)({
+  }), T = (0, u.b)({
     location: "UserProfileModalActivity"
   }), {
     live: S,
@@ -53,7 +53,7 @@ function I(e) {
   }), D = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, k = (0, l.e7)([s.Z, c.Z], () => {
     let e = R ? s.Z.getStatus() : c.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), M = S.length > 0 || null != w, B = T && null == w && null == L && null != C, G = !k && (M || B), U = A.length > 0;
+  }), M = S.length > 0 || null != w, B = N && null == w && null == L && null != C, G = !k && (M || B), U = A.length > 0;
   return G || U || !D ? (0, r.jsxs)(i.zJl, {
     className: v.scroller,
     fade: true,
@@ -61,7 +61,7 @@ function I(e) {
       "aria-label": O.intl.string(O.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: v.activityList,
-        children: [!N && B && (0, r.jsx)("li", {
+        children: [!T && B && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -78,7 +78,7 @@ function I(e) {
             profileGuildId: null == I ? true : I.guildId
           })
         }), S.map((e, l) => (0, r.jsx)("li", {
-          children: (0, r.jsx)(g.Z, {
+          children: (0, r.jsx)(b.Z, {
             user: t,
             currentUser: n,
             activity: e,
@@ -99,7 +99,7 @@ function I(e) {
       children: (0, r.jsx)("ul", {
         className: v.activityList,
         children: A.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(g.Z, {
             location: "UserProfileModalActivity",
             user: t,
             currentUser: n,

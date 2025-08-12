@@ -15,13 +15,13 @@ var Chunk255367 = require("./255367.js"),
 function u(e) {
   let {
     tags: t
-  } = e, n = null == t ? true : t.filter(e => null != (0, c.z)(e)), i = (0, l.useRef)(new Map), o = (0, l.useRef)(null), [s, u] = (0, l.useState)(0), [b, j] = (0, l.useState)(false), {
+  } = e, n = null == t ? true : t.filter(e => null != (0, c.z)(e)), i = (0, l.useRef)(new Map), o = (0, l.useRef)(null), [s, u] = (0, l.useState)(0), [g, j] = (0, l.useState)(false), {
     trackUserProfileAction: y
-  } = (0, a.KZ)(), x = g(o, n, i, u);
+  } = (0, a.KZ)(), x = b(o, n, i, u);
   if ((0, l.useEffect)(() => (x(), window.addEventListener("resize", x), () => {
       window.removeEventListener("resize", x)
     }), [x, null == n ? true : n.join("")]), null == n || 0 === n.length) return null;
-  let h = b ? n : n.slice(0, n.length - s);
+  let h = g ? n : n.slice(0, n.length - s);
   return (0, r.jsxs)("div", {
     className: d.tagListContainer,
     children: [h.map(e => (0, r.jsx)(f, {
@@ -29,7 +29,7 @@ function u(e) {
       ref: t => {
         null != t && i.current.set(e, t)
       }
-    }, e)), s > 0 && (b ? (0, r.jsx)(m, {
+    }, e)), s > 0 && (g ? (0, r.jsx)(m, {
       onClick: () => {
         j(false), y({
           action: "COLLAPSE_GAME_TAGS"
@@ -110,7 +110,7 @@ let f = e => {
       })
     })
   },
-  g = (e, t, n, r) => (0, l.useCallback)(() => {
+  b = (e, t, n, r) => (0, l.useCallback)(() => {
     var l, i;
     if (null == t) return void r(0);
     let o = null != (i = null == (l = e.current) ? true : l.getBoundingClientRect().width) ? i : 0,

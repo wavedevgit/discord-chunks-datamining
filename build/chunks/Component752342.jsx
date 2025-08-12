@@ -69,7 +69,7 @@ function S(e) {
       children: (0, r.jsx)(l.Y0X, {
         "data-migration-pending": true,
         transitionState: k,
-        className: N.root,
+        className: T.root,
         hideShadow: true,
         "aria-labelledby": Y,
         parentComponent: "BotUserProfileModal",
@@ -77,12 +77,12 @@ function S(e) {
           component: (0, r.jsx)(l.nn4, {
             children: (0, r.jsx)(l.H, {
               id: Y,
-              children: T.intl.format(T.t.KRe1Fh, {
+              children: N.intl.format(N.t.KRe1Fh, {
                 name: V
               })
             })
           }),
-          children: (0, r.jsxs)(b.Z, {
+          children: (0, r.jsxs)(g.Z, {
             user: t,
             displayProfile: F,
             themeType: E.lY.MODAL,
@@ -98,7 +98,7 @@ function S(e) {
                 displayProfile: F,
                 themeType: E.lY.MODAL
               }), (0, r.jsxs)("div", {
-                className: N.headerInner,
+                className: T.headerInner,
                 children: [(0, r.jsx)(f.Z, {
                   user: t,
                   displayProfile: F,
@@ -113,17 +113,17 @@ function S(e) {
                   onCloseProfile: B,
                   disableToolbar: true
                 }), (0, r.jsxs)("div", {
-                  className: N.headerButtons,
+                  className: T.headerButtons,
                   children: [(0, r.jsx)(v.Z, {
                     type: "text",
                     userId: t.id,
                     onClose: i.Z.popAll,
-                    className: N.messageTextButton
+                    className: T.messageTextButton
                   }), (0, r.jsx)(v.Z, {
                     type: "icon",
                     userId: t.id,
                     onClose: i.Z.popAll,
-                    tooltipContainerClassName: N.messageIconButton
+                    tooltipContainerClassName: T.messageIconButton
                   }), (0, r.jsx)(h.Z, {
                     user: t,
                     guildId: U
@@ -133,14 +133,14 @@ function S(e) {
                 })]
               })]
             }), (0, r.jsxs)("div", {
-              className: N.body,
+              className: T.body,
               children: [(0, r.jsx)(j.Z, {
-                className: N.username,
+                className: T.username,
                 user: t,
                 nickname: V,
                 pronouns: null == F ? true : F.pronouns,
                 nicknameVariant: "heading-xl/bold",
-                nicknameIcons: (0, r.jsx)(g.Z, {
+                nicknameIcons: (0, r.jsx)(b.Z, {
                   size: "sm",
                   userId: t.id
                 }),

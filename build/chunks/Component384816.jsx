@@ -35,13 +35,13 @@ function I(e) {
     onClose: E
   } = e, {
     trackUserProfileAction: Z
-  } = (0, f.KZ)(), T = (0, l.e7)([d.Z], () => d.Z.getGuildId()), N = (0, a.Y)({
+  } = (0, f.KZ)(), N = (0, l.e7)([d.Z], () => d.Z.getGuildId()), T = (0, a.Y)({
     userId: t.id
   }), S = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), A = (0, l.e7)([s.default], () => s.default.locale), w = (0, m.Z)(t.id), C = (0, p.Z)(t.id);
   return (0, r.jsxs)(i.zJl, {
     fade: true,
     className: _.scroller,
-    children: [(null == I ? true : I.bio) != null && (null == I ? true : I.bio) !== "" && !S && (0, r.jsx)(g.Z, {
+    children: [(null == I ? true : I.bio) != null && (null == I ? true : I.bio) !== "" && !S && (0, r.jsx)(b.Z, {
       userBio: I.bio,
       setLineClamp: false
     }), (null == I ? true : I.guildId) != null && (0, r.jsx)(h.Z, {
@@ -59,10 +59,10 @@ function I(e) {
       children: (0, r.jsx)(c.n, {
         userId: t.id
       })
-    }), N.length > 0 && (0, r.jsx)(x.Z, {
+    }), T.length > 0 && (0, r.jsx)(x.Z, {
       heading: v.intl.string(v.t["Uv/eT0"]),
       children: (0, r.jsx)(j.Z, {
-        applicationIds: N
+        applicationIds: T
       })
     }), (0, r.jsx)(x.Z, {
       heading: v.intl.string(v.t.a6XYDw),
@@ -74,7 +74,7 @@ function I(e) {
     }), w.length > 0 && (0, r.jsx)(x.Z, {
       heading: v.intl.string(v.t["3fe7U1"]),
       scrollIntoView: P === O.Tb.CONNECTIONS,
-      children: (0, r.jsx)(b.ZP, {
+      children: (0, r.jsx)(g.ZP, {
         connectedAccounts: w,
         className: _.connections,
         userId: t.id,
@@ -82,7 +82,7 @@ function I(e) {
       })
     }), C.length > 0 && (0, r.jsx)(x.Z, {
       heading: v.intl.string(v.t.PHjkRE),
-      children: C.map(e => (0, r.jsx)(b.tH, {
+      children: C.map(e => (0, r.jsx)(g.tH, {
         className: _.appsConnections,
         applicationRoleConnection: e,
         locale: A,
@@ -91,7 +91,7 @@ function I(e) {
             action: "PRESS_APP_CONNECTION"
           }), E()
         },
-        selectedGuildId: null != T ? T : true
+        selectedGuildId: null != N ? N : true
       }, e.application.id))
     }), (0, r.jsx)(x.Z, {
       heading: v.intl.string(v.t["mQKv+v"]),

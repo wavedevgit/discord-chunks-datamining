@@ -51,8 +51,8 @@ function I(e) {
     messageId: P,
     roleId: E,
     transitionState: Z,
-    openedAt: T,
-    onHide: N,
+    openedAt: N,
+    onHide: T,
     sourceAnalyticsLocations: S = []
   } = e, A = n === h.ME ? true : n, w = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: C
@@ -77,7 +77,7 @@ function I(e) {
     value: C,
     children: (0, r.jsx)(f.Mt, {
       value: L,
-      openedAt: T,
+      openedAt: N,
       fetchStartedAt: null == R ? true : R.fetchStartedAt,
       fetchEndedAt: null == R ? true : R.fetchEndedAt,
       isLoaded: null == R ? true : R.isLoaded,
@@ -87,7 +87,7 @@ function I(e) {
         className: v.root,
         "aria-label": M,
         parentComponent: "RestrictedUserProfileModalV2",
-        children: (0, r.jsxs)(b.Z, {
+        children: (0, r.jsxs)(g.Z, {
           user: t,
           displayProfile: R,
           themeType: x.lY.MODAL_V2,
@@ -95,7 +95,7 @@ function I(e) {
             className: v.background
           }), (0, r.jsxs)("div", {
             className: v.content,
-            children: [(0, r.jsx)(g.Z, {
+            children: [(0, r.jsx)(b.Z, {
               user: t,
               guildId: A,
               iconColor: o.TVs.colors.TEXT_DEFAULT
@@ -132,7 +132,7 @@ function I(e) {
                 size: i.Ph.MEDIUM,
                 isBlocked: w,
                 onClick: () => {
-                  N(), (0, p.pQ)(_({
+                  T(), (0, p.pQ)(_({
                     action: w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: C
                   }, L))
@@ -140,7 +140,7 @@ function I(e) {
               }), (0, r.jsx)(j.Z, {
                 userId: t.id,
                 onClick: () => {
-                  N(), (0, p.pQ)(_({
+                  T(), (0, p.pQ)(_({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                     analyticsLocations: C
                   }, L))

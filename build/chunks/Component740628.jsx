@@ -32,23 +32,23 @@ function h(e) {
     channelId: c,
     onClose: s
   } = e;
-  return t === b.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
+  return t === g.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
     user: l,
     currentUser: i,
     displayProfile: o,
     guildId: a,
     onClose: s
-  }) : t === b.oh.MUTUAL_FRIENDS ? (0, r.jsx)(m.Z, {
+  }) : t === g.oh.MUTUAL_FRIENDS ? (0, r.jsx)(m.Z, {
     user: l,
     guildId: a,
     channelId: c,
     onClose: s
-  }) : t === b.oh.MUTUAL_GUILDS ? (0, r.jsx)(g.Z, {
+  }) : t === g.oh.MUTUAL_GUILDS ? (0, r.jsx)(b.Z, {
     user: l,
     onClose: s
-  }) : t === b.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
+  }) : t === g.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
     user: l
-  }) : t === b.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
+  }) : t === g.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
     user: l,
     currentUser: i,
     displayProfile: o,
@@ -71,8 +71,8 @@ function O(e) {
     currentUser: f,
     displayProfile: p,
     guildId: m,
-    items: g,
-    initialSection: O = b.oh.USER_INFO,
+    items: b,
+    initialSection: O = g.oh.USER_INFO,
     initialSubsection: v,
     onClose: _
   } = e, {
@@ -80,30 +80,30 @@ function O(e) {
   } = (0, s.KZ)(), P = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), [{
     section: E,
     subsection: Z
-  }, T] = l.useState({
-    section: null != (d = null == (t = g.find(e => {
+  }, N] = l.useState({
+    section: null != (d = null == (t = b.find(e => {
       let {
         section: t
       } = e;
       return t === O
-    })) ? true : t.section) ? d : null == (n = g[0]) ? true : n.section,
+    })) ? true : t.section) ? d : null == (n = b[0]) ? true : n.section,
     subsection: v
   });
   l.useEffect(() => {
-    null == g.find(e => e.section === E) && T({
-      section: g[0].section,
+    null == b.find(e => e.section === E) && N({
+      section: b[0].section,
       subsection: true
     })
-  }, [g, E]);
-  let N = l.useCallback(e => {
+  }, [b, E]);
+  let T = l.useCallback(e => {
     I({
       action: "PRESS_SECTION",
       section: e
-    }), T({
+    }), N({
       section: e,
       subsection: true
     })
-  }, [I, T]);
+  }, [I, N]);
   return P ? (0, r.jsx)("div", {
     className: x.container,
     children: (0, r.jsxs)("div", {
@@ -121,8 +121,8 @@ function O(e) {
       className: x.tabBar,
       type: "top",
       selectedItem: E,
-      onItemSelect: N,
-      children: g.map(e => {
+      onItemSelect: T,
+      children: b.map(e => {
         let {
           section: t,
           text: n
@@ -138,7 +138,7 @@ function O(e) {
         }, t)
       })
     }), (0, r.jsx)(h, {
-      items: g,
+      items: b,
       section: E,
       subsection: Z,
       user: u,

@@ -23,12 +23,12 @@ function p(e) {
     trackUserProfileAction: p
   } = (0, c.KZ)(), {
     mutualGuilds: m,
-    isFetching: g
+    isFetching: b
   } = (0, s.Z)(t);
   return (0, r.jsx)(l.Ttm, {
     className: f.scroller,
     fade: true,
-    children: null == m && g ? Array.from({
+    children: null == m && b ? Array.from({
       length: 10
     }).map((e, t) => (0, r.jsxs)("div", {
       className: f.guildsLoadingItem,
@@ -39,7 +39,7 @@ function p(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : (null != m || g) && (null == m ? true : m.length) !== 0 ? null == m ? true : m.map(e => {
+    }, t)) : (null != m || b) && (null == m ? true : m.length) !== 0 ? null == m ? true : m.map(e => {
       let {
         guild: l,
         nick: o

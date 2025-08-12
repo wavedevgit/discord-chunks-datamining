@@ -12,8 +12,9 @@ function o(e) {
   var {
     user: t,
     widget: n,
-    disableInteraction: o
-  } = e, a = function(e, t) {
+    containerClassName: o,
+    disableInteraction: a
+  } = e, c = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -27,11 +28,12 @@ function o(e) {
       for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
     return l
-  }(e, ["user", "widget", "disableInteraction"]);
+  }(e, ["user", "widget", "containerClassName", "disableInteraction"]);
   return (0, r.jsx)(l.Z, {
     userId: t.id,
     widget: n,
-    disableInteraction: o,
+    className: o,
+    disableInteraction: a,
     children: (0, r.jsx)(i.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -52,7 +54,7 @@ function o(e) {
     }({
       user: t,
       games: n.games,
-      disableInteraction: o
-    }, a))
+      disableInteraction: a
+    }, c))
   })
 }
