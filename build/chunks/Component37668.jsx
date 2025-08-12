@@ -1,7 +1,7 @@
 /** Chunk was on 70887 **/
 /** chunk id: 37668, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  default: () => w
+  default: () => g
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -24,22 +24,22 @@ function p(t) {
     widget: e,
     user: i,
     isGameFetching: () => false,
-    showHeaderActionButtons: false
+    disableInteraction: true
   })
 }
 
-function w(t) {
+function g(t) {
   let {
     transitionState: e,
     widget: i,
     userId: u,
-    onClose: w
-  } = t, g = r.useCallback(() => {
-    (0, o.y8)(i.type), w()
-  }, [i.type, w]), v = (0, s.e7)([c.default], () => c.default.getUser(u));
+    onClose: g
+  } = t, w = r.useCallback(() => {
+    (0, o.y8)(i.type), g()
+  }, [i.type, g]), v = (0, s.e7)([c.default], () => c.default.getUser(u));
   return null == v ? null : (0, n.jsxs)(a.Modal, {
     transitionState: e,
-    onClose: w,
+    onClose: g,
     title: x.intl.string(x.t.Mm07YW),
     subtitle: x.intl.format(x.t["x+djIy"], {
       helpUrl: d.w
@@ -48,11 +48,11 @@ function w(t) {
     actions: [{
       variant: "secondary",
       text: x.intl.string(x.t["ETE/oK"]),
-      onClick: w
+      onClick: g
     }, {
       variant: "critical-primary",
       text: x.intl.string(x.t.Mm07YW),
-      onClick: g
+      onClick: w
     }],
     children: [(0, n.jsx)("div", {
       className: h.widgetPreview,

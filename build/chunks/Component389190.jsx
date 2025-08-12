@@ -25,9 +25,9 @@ function g(e) {
   } = e, {
     mutualFriends: j
   } = (0, s.Z)(t), {
-    analyticsLocations: h
+    analyticsLocations: x
   } = (0, a.ZP)(), {
-    context: x,
+    context: h,
     trackUserProfileAction: y
   } = (0, c.KZ)(), v = (0, o.Z)();
   l.useEffect(() => {
@@ -52,9 +52,9 @@ function g(e) {
         })
       }
       return e
-    }({}, x), n = n = {
+    }({}, h), n = n = {
       userId: e,
-      sourceAnalyticsLocations: h
+      sourceAnalyticsLocations: x
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -67,18 +67,18 @@ function g(e) {
     }), t))
   };
   return (0, r.jsx)(i.zJl, {
-    className: p.listScroller,
+    className: m.listScroller,
     fade: true,
     children: null == j ? (0, r.jsx)("div", {
-      className: p.empty,
+      className: m.empty,
       children: (0, r.jsx)(i.$jN, {})
     }) : 0 === j.length ? (0, r.jsxs)("div", {
-      className: p.empty,
+      className: m.empty,
       children: [(0, r.jsx)("div", {
-        className: p.emptyIconFriends
+        className: m.emptyIconFriends
       }), (0, r.jsx)("div", {
-        className: p.emptyText,
-        children: m.intl.string(m.t["/5p4g4"])
+        className: m.emptyText,
+        children: p.intl.string(p.t["/5p4g4"])
       })]
     }) : j.map(e => {
       let {

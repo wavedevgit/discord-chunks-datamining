@@ -32,31 +32,31 @@ function P(e) {
     user: t,
     currentUser: n,
     displayProfile: P,
-    guildId: Z,
-    channelId: N,
+    guildId: E,
+    channelId: Z,
     subsection: T,
-    onClose: E
+    onClose: N
   } = e, {
-    voiceActivityStatusEnabled: w
+    voiceActivityStatusEnabled: S
   } = (0, o.U)({
     location: "UserProfileModalV2Activity"
-  }), S = (0, f.b)({
+  }), A = (0, f.b)({
     location: "UserProfileModalV2Activity"
   }), {
-    live: A,
+    live: w,
     recent: C,
     stream: L
-  } = (0, m.Z)(t.id), {
-    voiceChannel: D,
-    voiceActivity: k
-  } = (0, p.Z)({
+  } = (0, p.Z)(t.id), {
+    voiceChannel: R,
+    voiceActivity: D
+  } = (0, m.Z)({
     userId: t.id,
-    guildId: Z
-  }), B = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, M = (0, l.e7)([d.Z, s.Z], () => {
-    let e = R ? d.Z.getStatus() : s.Z.getStatus(t.id);
+    guildId: E
+  }), M = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), k = t.id === n.id, G = (0, l.e7)([d.Z, s.Z], () => {
+    let e = k ? d.Z.getStatus() : s.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), G = A.length > 0 || null != L, U = w && null == L && null == k && null != D, F = !M && (G || U), V = C.length > 0;
-  if (!F && !V && B) return (0, r.jsx)("div", {
+  }), B = w.length > 0 || null != L, U = S && null == L && null == D && null != R, F = !G && (B || U), V = C.length > 0;
+  if (!F && !V && M) return (0, r.jsx)("div", {
     className: I.cards,
     children: Array.from({
       length: 8
@@ -71,15 +71,15 @@ function P(e) {
       })]
     }, t))
   });
-  if (!F && !V && !B) {
+  if (!F && !V && !M) {
     var Y;
-    return R ? (0, r.jsx)(x.Uf, {
-      onClose: E
-    }) : (0, r.jsx)(x.P9, {
+    return k ? (0, r.jsx)(h.Uf, {
+      onClose: N
+    }) : (0, r.jsx)(h.P9, {
       user: t,
       guildId: null != (Y = null == P ? true : P.guildId) ? Y : true,
-      channelId: N,
-      onClose: E
+      channelId: Z,
+      onClose: N
     })
   }
   return (0, r.jsxs)(i.Ttm, {
@@ -89,12 +89,12 @@ function P(e) {
       heading: _.intl.string(_.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: I.cards,
-        children: [!S && U && (0, r.jsx)("li", {
-          children: (0, r.jsx)(h.Z, {
+        children: [!A && U && (0, r.jsx)("li", {
+          children: (0, r.jsx)(x.Z, {
             user: t,
             currentUser: n,
-            voiceChannel: D,
-            onClose: E
+            voiceChannel: R,
+            onClose: N
           })
         }), null != L && (0, r.jsx)("li", {
           children: (0, r.jsx)(j.Z, {
@@ -102,29 +102,29 @@ function P(e) {
             user: t,
             currentUser: n,
             stream: L,
-            onClose: E,
+            onClose: N,
             profileGuildId: null == P ? true : P.guildId
           })
-        }), A.map((e, l) => (0, r.jsx)("li", {
+        }), w.map((e, l) => (0, r.jsx)("li", {
           children: (0, r.jsx)(g.Z, {
             user: t,
             currentUser: n,
             activity: e,
-            onClose: E,
+            onClose: N,
             profileGuildId: null == P ? true : P.guildId
           })
-        }, "live-".concat(l))), S && U && (0, r.jsx)("li", {
-          children: (0, r.jsx)(h.Z, {
+        }, "live-".concat(l))), A && U && (0, r.jsx)("li", {
+          children: (0, r.jsx)(x.Z, {
             user: t,
             currentUser: n,
-            voiceChannel: D,
-            onClose: E
+            voiceChannel: R,
+            onClose: N
           })
         })]
       })
     }) : null, V ? (0, r.jsx)(y.Z, {
       heading: _.intl.string(_.t.jzgEoK),
-      introText: R ? _.intl.format(_.t["4bk9Ag"], {
+      introText: k ? _.intl.format(_.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(i.eee, {
           href: u.Z.getArticleURL(O.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
@@ -140,7 +140,7 @@ function P(e) {
             currentUser: n,
             entry: e,
             profileGuildId: null == P ? true : P.guildId,
-            onClose: E
+            onClose: N
           })
         }, e.id))
       })

@@ -109,7 +109,11 @@ function A() {
 let N = () => true;
 
 function C() {
-  return null != Chunk78839.Z.getPremiumTypeSubscription() && (b.userDiscountOffers = {}, b.userTrialOffers = {}, true)
+  return null != Chunk78839.Z.getPremiumTypeSubscription() && (null != b.userDiscountOffers[Chunk474936.dT] ? b.userDiscountOffers = {
+    [Chunk474936.dT]: b.userDiscountOffers[Chunk474936.dT]
+  } : null != b.userDiscountOffers[Chunk474936.dB] ? b.userDiscountOffers = {
+    [Chunk474936.dB]: b.userDiscountOffers[Chunk474936.dB]
+  } : b.userDiscountOffers = {}, b.userTrialOffers = {}, true)
 }
 
 function R() {

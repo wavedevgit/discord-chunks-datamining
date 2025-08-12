@@ -26,19 +26,20 @@ function d(e, t) {
 
 function f(e, t) {
   let n = (0, i.e7)([s.Z], () => s.Z.getUserDiscountOffer(e)),
-    [c, d] = r.useState(u(n)),
-    f = (0, i.e7)([a.default], () => (0, l.I5)(a.default.getCurrentUser()));
+    [d, f] = r.useState(u(n)),
+    _ = (0, i.e7)([a.default], () => (0, l.I5)(a.default.getCurrentUser())),
+    p = e === c.dT || e === c.dB;
   return r.useEffect(() => {
     if (null == n || null == n.expires_at) return;
     let e = new o.V7,
       t = () => {
         let r = null != n.expires_at ? Date.parse(n.expires_at) - Date.now() : 0;
         null == e || e.start(r, () => {
-          !c && u(n) ? d(true) : t()
+          !d && u(n) ? f(true) : t()
         })
       };
     return t(), () => e.stop()
-  }, [c, n]), c || f && !t ? null : n
+  }, [d, n]), !d && (!_ || t || p) ? n : null
 }
 
 function _() {

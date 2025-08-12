@@ -8,16 +8,16 @@ var Chunk255367 = require("./255367.js"),
   Chunk296009 = require("./296009.js"),
   Chunk481060 = require("./481060.js"),
   Chunk210753 = require("./210753.js"),
+  Chunk804919 = require("./804919.js"),
   Chunk86419 = require("./86419.js"),
   Chunk247397 = require("./247397.js"),
-  Chunk570911 = require("./570911.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk436860 = require("./436860.js");
 
-function m(e) {
+function p(e) {
   let {
     widgetType: t
-  } = e, n = t === i.l.FAVORITE_GAMES ? d.J6["23"] : d.J6["58"], {
+  } = e, n = t === i.l.FAVORITE_GAMES ? c.LM.BALDURS_GATE_3 : c.LM.CYBERPUNK_2077, {
     coverImageUrl: l,
     localizedName: o
   } = (0, a.$)(n);
@@ -43,10 +43,10 @@ function m(e) {
   })
 }
 
-function p(e) {
+function m(e) {
   let {
     widgetType: t
-  } = e, n = t === i.l.WANT_TO_PLAY_GAMES ? [d.J6["0"], d.J6["1"], d.J6["2"]] : [d.J6["20"], d.J6["35"], d.J6["42"]];
+  } = e, n = t === i.l.WANT_TO_PLAY_GAMES ? [c.LM.ROBLOX, c.LM.VALORANT, c.LM.LEAGUE_OF_LEGENDS] : [c.LM.ZENLESS_ZONE_ZERO, c.LM.ELDEN_RING, c.LM.RED_DEAD_REDEMPTION_2];
   return (0, r.jsx)("div", {
     className: f.placeholderCoverGrid,
     children: n.map((e, t) => (0, r.jsx)(g, {
@@ -78,22 +78,22 @@ function b(e) {
   let {
     widgetType: t
   } = e, n = l.useCallback(() => {
-    (0, c.qH)(t)
+    (0, s.qH)(t)
   }, [t]);
   return (0, r.jsxs)(o.P3F, {
     className: f.widgetPromptContainer,
     onClick: n,
-    "aria-label": "Add widget: ".concat(u.intl.string(s.NP[t])),
+    "aria-label": "Add widget: ".concat(u.intl.string(d.NP[t])),
     children: [(() => {
       switch (t) {
         case i.l.FAVORITE_GAMES:
         case i.l.CURRENT_GAMES:
-          return (0, r.jsx)(m, {
+          return (0, r.jsx)(p, {
             widgetType: t
           });
         case i.l.WANT_TO_PLAY_GAMES:
         case i.l.PLAYED_GAMES:
-          return (0, r.jsx)(p, {
+          return (0, r.jsx)(m, {
             widgetType: t
           });
         default:
@@ -110,7 +110,7 @@ function b(e) {
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: u.intl.string(s.NP[t])
+        children: u.intl.string(d.NP[t])
       })]
     })]
   })

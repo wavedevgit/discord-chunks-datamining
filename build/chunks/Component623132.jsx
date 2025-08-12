@@ -1,7 +1,7 @@
 /** Chunk was on 11776 **/
 /** chunk id: 623132, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => y
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -31,7 +31,7 @@ function j(e) {
       color: i.TVs.colors.ICON_TERTIARY,
       className: b.icon
     }), (0, r.jsx)(i.nn4, {
-      children: m.intl.format(m.t.TM0XDQ, {
+      children: p.intl.format(p.t.TM0XDQ, {
         name: c.ZP.getName(l, o, n)
       })
     }), (0, r.jsx)(i.Text, {
@@ -42,7 +42,7 @@ function j(e) {
   })
 }
 
-function h(e) {
+function x(e) {
   let {
     applicationId: t,
     userId: n,
@@ -57,20 +57,38 @@ function h(e) {
     trackEntryPointImpression: true
   }), f = l.useCallback(e => {
     e.target === e.currentTarget && (null == u || u(e))
-  }, [u]), p = null != c ? c : m.intl.string(m.t.GIWFlJ), g = null != u;
+  }, [u]), m = null != c ? c : p.intl.string(p.t.GIWFlJ), g = null != u;
   return (0, r.jsxs)("div", {
     className: s,
     children: [g && (0, r.jsx)(i.P3F, {
       className: b.clickableCard,
-      "aria-label": m.intl.formatToPlainString(m.t["8QLQBw"], {
-        gameName: p
+      "aria-label": p.intl.formatToPlainString(p.t["8QLQBw"], {
+        gameName: m
       }),
       onClick: f
     }), d]
   })
 }
 
-function x(e) {
+function h(e) {
+  let {
+    applicationId: t,
+    guildId: n,
+    channelId: l,
+    className: i
+  } = e, o = (0, f.Z)(t);
+  return o.length > 0 ? (0, r.jsx)(s.Z, {
+    label: p.intl.formatToPlainString(p.t.ujhJdH, {
+      numFriends: o.length
+    }),
+    className: i,
+    users: o,
+    guildId: n,
+    channelId: l
+  }) : null
+}
+
+function y(e) {
   let {
     user: t,
     guildId: n,
@@ -79,16 +97,16 @@ function x(e) {
     loading: a = false,
     disableInteraction: c = false
   } = e, {
-    gameName: x,
-    imageSrc: y,
-    applicationId: v,
-    comment: O,
-    tags: _
-  } = o, I = (0, f.Z)(o.applicationId), P = I.length > 0, Z = () => (0, r.jsxs)(r.Fragment, {
+    gameName: s,
+    imageSrc: f,
+    applicationId: p,
+    comment: y,
+    tags: v
+  } = o, O = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
-      imageSrc: y,
-      gameName: x,
-      applicationId: v,
+      imageSrc: f,
+      gameName: s,
+      applicationId: p,
       userId: t.id,
       disableInteraction: true
     }), (0, r.jsxs)("div", {
@@ -96,20 +114,17 @@ function x(e) {
       children: [(0, r.jsx)(i.X6q, {
         variant: "text-md/normal",
         color: "text-default",
-        children: x
-      }), null != O && (0, r.jsx)(j, {
-        text: O,
+        children: s
+      }), null != y && (0, r.jsx)(j, {
+        text: y,
         user: t,
         guildId: n,
         channelId: l
       }), (0, r.jsx)(u.Z, {
-        tags: _
-      }), P && (0, r.jsx)(s.Z, {
-        label: m.intl.formatToPlainString(m.t.ujhJdH, {
-          numFriends: I.length
-        }),
+        tags: v
+      }), !c && (0, r.jsx)(h, {
         className: b.socialProof,
-        users: I,
+        applicationId: p,
         guildId: n,
         channelId: l
       })]
@@ -122,22 +137,22 @@ function x(e) {
     }), (0, r.jsx)("div", {
       className: b.details,
       children: (0, r.jsxs)("div", {
-        className: p.placeholderText,
+        className: m.placeholderText,
         children: [(0, r.jsx)("div", {
-          className: p.placeholderBar
+          className: m.placeholderBar
         }), (0, r.jsx)("div", {
-          className: p.placeholderBar
+          className: m.placeholderBar
         })]
       })
     })]
   }) : c ? (0, r.jsx)("div", {
     className: b.card,
-    children: Z()
-  }) : (0, r.jsx)(h, {
-    applicationId: v,
+    children: O()
+  }) : (0, r.jsx)(x, {
+    applicationId: p,
     userId: t.id,
-    gameName: x,
+    gameName: s,
     className: b.card,
-    children: Z()
+    children: O()
   })
 }

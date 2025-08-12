@@ -49,55 +49,55 @@ function I(e) {
     guildId: n,
     channelId: I,
     messageId: P,
-    roleId: Z,
-    transitionState: N,
+    roleId: E,
+    transitionState: Z,
     openedAt: T,
-    onHide: E,
-    sourceAnalyticsLocations: w = []
-  } = e, S = n === y.ME ? true : n, A = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
+    onHide: N,
+    sourceAnalyticsLocations: S = []
+  } = e, A = n === y.ME ? true : n, w = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: C
-  } = (0, c.ZP)([...w, A ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), L = (0, f.ZB)({
+  } = (0, c.ZP)([...S, w ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), L = (0, f.ZB)({
     layout: "MODAL_V2",
     userId: t.id,
     showGuildProfile: true,
-    guildId: S,
+    guildId: A,
     channelId: I,
     messageId: P,
-    roleId: Z
-  }), D = [{
+    roleId: E
+  }), R = [{
     icon: o.owK,
     description: v.intl.string(v.t.kcuWvb)
   }, {
     icon: o.owK,
-    description: v.intl.string(A ? v.t.QxrDY2 : v.t.W6fjkZ)
-  }], k = (0, p.ZP)(t.id, S), B = u.ZP.getName(null == k ? true : k.guildId, I, t), R = v.intl.formatToPlainString(v.t.KRe1Fh, {
-    name: B
+    description: v.intl.string(w ? v.t.QxrDY2 : v.t.W6fjkZ)
+  }], D = (0, m.ZP)(t.id, A), M = u.ZP.getName(null == D ? true : D.guildId, I, t), k = v.intl.formatToPlainString(v.t.KRe1Fh, {
+    name: M
   });
   return (0, r.jsx)(c.Gt, {
     value: C,
     children: (0, r.jsx)(f.Mt, {
       value: L,
       openedAt: T,
-      fetchStartedAt: null == k ? true : k.fetchStartedAt,
-      fetchEndedAt: null == k ? true : k.fetchEndedAt,
-      isLoaded: null == k ? true : k.isLoaded,
+      fetchStartedAt: null == D ? true : D.fetchStartedAt,
+      fetchEndedAt: null == D ? true : D.fetchEndedAt,
+      isLoaded: null == D ? true : D.isLoaded,
       children: (0, r.jsx)(o.Y0X, {
         "data-migration-pending": true,
-        transitionState: N,
+        transitionState: Z,
         className: O.root,
-        "aria-label": R,
+        "aria-label": k,
         parentComponent: "RestrictedUserProfileModalV2",
         children: (0, r.jsxs)(b.Z, {
           user: t,
-          displayProfile: k,
-          themeType: x.lY.MODAL_V2,
+          displayProfile: D,
+          themeType: h.lY.MODAL_V2,
           children: [(0, r.jsx)("div", {
             className: O.background
           }), (0, r.jsxs)("div", {
             className: O.content,
             children: [(0, r.jsx)(g.Z, {
               user: t,
-              guildId: S,
+              guildId: A,
               iconColor: o.TVs.colors.TEXT_DEFAULT
             }), (0, r.jsxs)("div", {
               className: O.textContainer,
@@ -108,13 +108,13 @@ function I(e) {
               }), (0, r.jsx)(o.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
-                children: v.intl.format(A ? v.t.T7QiLi : v.t.MnEow8, {
-                  username: B
+                children: v.intl.format(w ? v.t.T7QiLi : v.t.MnEow8, {
+                  username: M
                 })
               })]
             }), (0, r.jsx)("div", {
               className: O.safetyTable,
-              children: D.map((e, t) => {
+              children: R.map((e, t) => {
                 let {
                   icon: n,
                   description: l
@@ -128,19 +128,19 @@ function I(e) {
               })
             }), (0, r.jsxs)(o.Kqy, {
               align: "center",
-              children: [(0, r.jsx)(h.Z, {
+              children: [(0, r.jsx)(x.Z, {
                 size: i.Ph.MEDIUM,
-                isBlocked: A,
+                isBlocked: w,
                 onClick: () => {
-                  E(), (0, m.pQ)(_({
-                    action: A ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+                  N(), (0, p.pQ)(_({
+                    action: w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: C
                   }, L))
                 }
               }), (0, r.jsx)(j.Z, {
                 userId: t.id,
                 onClick: () => {
-                  E(), (0, m.pQ)(_({
+                  N(), (0, p.pQ)(_({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                     analyticsLocations: C
                   }, L))

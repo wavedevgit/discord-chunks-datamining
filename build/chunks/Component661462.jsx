@@ -1,7 +1,7 @@
 /** Chunk was on 11776 **/
 /** chunk id: 661462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk228168 = require("./228168.js"),
   Chunk662776 = require("./662776.js");
 
-function m(e) {
+function p(e) {
   let {
     user: t,
     currentUser: n,
@@ -22,46 +22,46 @@ function m(e) {
     subsection: i,
     displayProfile: o,
     guildId: f,
-    channelId: m,
-    onClose: p
+    channelId: p,
+    onClose: m
   } = e;
   return l === u.oh.ACTIVITY ? (0, r.jsx)(a.Z, {
     user: t,
     currentUser: n,
     displayProfile: o,
     guildId: f,
-    channelId: m,
+    channelId: p,
     subsection: i,
-    onClose: p
+    onClose: m
   }) : l === u.oh.MUTUAL_FRIENDS ? (0, r.jsx)(c.Z, {
     user: t,
     guildId: f,
-    channelId: m,
-    onClose: p
+    channelId: p,
+    onClose: m
   }) : l === u.oh.MUTUAL_GUILDS ? (0, r.jsx)(s.Z, {
     user: t,
-    onClose: p
+    onClose: m
   }) : l === u.oh.WIDGETS ? (0, r.jsx)(d.C, {
     user: t,
     guildId: f,
-    channelId: m
+    channelId: p
   }) : null
 }
 
-function p(e) {
+function m(e) {
   var t, n, a;
   let {
     user: c,
     currentUser: s,
     displayProfile: d,
     guildId: u,
-    channelId: p,
+    channelId: m,
     items: g,
     initialSection: b,
     initialSubsection: j,
-    onClose: h
+    onClose: x
   } = e, {
-    trackUserProfileAction: x
+    trackUserProfileAction: h
   } = (0, o.KZ)(), [{
     section: y,
     subsection: v,
@@ -112,7 +112,7 @@ function p(e) {
         look: "custom",
         selectedItem: y,
         onItemSelect: e => {
-          x({
+          h({
             action: "PRESS_SECTION",
             section: e
           }), _(t => {
@@ -131,15 +131,15 @@ function p(e) {
       id: y,
       "aria-label": O,
       className: f.tabBarPanel,
-      children: (0, r.jsx)(m, {
+      children: (0, r.jsx)(p, {
         user: c,
         currentUser: s,
         displayProfile: d,
         guildId: u,
-        channelId: p,
+        channelId: m,
         section: y,
         subsection: v,
-        onClose: h
+        onClose: x
       })
     })]
   })

@@ -35,7 +35,7 @@ function f(e) {
   let {
     disabled: t,
     widgetType: n
-  } = e, [f] = (0, o.ynZ)(), m = l.useRef(null), p = l.useCallback(e => {
+  } = e, [f] = (0, o.ynZ)(), p = l.useRef(null), m = l.useCallback(e => {
     (0, c.ES)(n, e)
   }, [n]), {
     options: g,
@@ -56,7 +56,7 @@ function f(e) {
     }), t))
   }, [g, b]);
   return (0, r.jsx)(o.yRy, {
-    targetElementRef: m,
+    targetElementRef: p,
     position: "bottom",
     align: "center",
     renderPopout: e => {
@@ -69,7 +69,7 @@ function f(e) {
         autoFocus: true,
         value: f,
         onChange: e => {
-          p(e), t()
+          m(e), t()
         },
         onClose: t,
         multiSelect: false,
@@ -88,7 +88,7 @@ function f(e) {
       })
     },
     children: e => (0, r.jsx)("div", {
-      ref: m,
+      ref: p,
       children: (0, r.jsx)(o.zxk, u({
         variant: "primary",
         size: "sm",

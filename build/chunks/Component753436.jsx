@@ -19,8 +19,8 @@ function d(e) {
     guildId: d,
     channelId: u,
     loading: f = false,
-    disableInteraction: m = false
-  } = e, p = (0, o.Z)(t.applicationId), g = p.length > 0;
+    disableInteraction: p = false
+  } = e, m = (0, o.Z)(t.applicationId), g = m.length > 0;
   return f ? (0, r.jsx)("div", {
     className: c.loadingCover
   }) : (0, r.jsxs)("div", {
@@ -30,14 +30,14 @@ function d(e) {
       gameName: t.gameName,
       applicationId: t.applicationId,
       userId: n,
-      disableInteraction: m,
+      disableInteraction: p,
       className: g ? s.socialProofBackdrop : true
-    }), g && (0, r.jsx)(l.Z, {
+    }), !p && g && (0, r.jsx)(l.Z, {
       label: a.intl.formatToPlainString(a.t.ujhJdH, {
-        numFriends: p.length
+        numFriends: m.length
       }),
       className: s.socialProof,
-      users: p,
+      users: m,
       guildId: d,
       channelId: u,
       visuallyHideLabel: true

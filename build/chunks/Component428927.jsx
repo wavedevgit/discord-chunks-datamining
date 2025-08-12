@@ -21,18 +21,18 @@ function f(e) {
   } = e, {
     trackUserProfileAction: f
   } = (0, a.KZ)(), {
-    mutualGuilds: m,
-    isFetching: p
+    mutualGuilds: p,
+    isFetching: m
   } = (0, c.Z)(t), g = e => {
     (0, o.X)(e), n(), (0, i.xf)()
   };
   return (0, r.jsx)(l.zJl, {
     className: u.listScroller,
     fade: true,
-    children: null == m && p ? (0, r.jsx)("div", {
+    children: null == p && m ? (0, r.jsx)("div", {
       className: u.empty,
       children: (0, r.jsx)(l.$jN, {})
-    }) : (null != m || p) && (null == m ? true : m.length) !== 0 ? null == m ? true : m.map(e => {
+    }) : (null != p || m) && (null == p ? true : p.length) !== 0 ? null == p ? true : p.map(e => {
       let {
         guild: n,
         nick: l

@@ -24,8 +24,8 @@ function g(e) {
     guildId: g,
     channelId: b,
     displayProfile: j,
-    relationshipType: h,
-    onClose: x
+    relationshipType: x,
+    onClose: h
   } = e, {
     newestAnalyticsLocation: y
   } = (0, o.ZP)(), v = (0, a.Z)({
@@ -33,21 +33,21 @@ function g(e) {
     guildId: g,
     channelId: b,
     displayProfile: j,
-    onClose: x
+    onClose: h
   }), {
     gameFriends: O,
     hasOutgoingPendingGameFriends: _,
     hasIncomingPendingGameFriends: I
-  } = (0, m.H)({
+  } = (0, p.H)({
     userId: t.id
   }), P = O.length > 0 || _ || I;
-  return h === p.OGo.BLOCKED ? null : t.id === n.id ? (0, r.jsxs)(r.Fragment, {
+  return x === m.OGo.BLOCKED ? null : t.id === n.id ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       user: t,
       guildId: g,
-      onClose: x
+      onClose: h
     }), (0, r.jsx)(u.Z, {
-      onClose: x
+      onClose: h
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
@@ -68,7 +68,7 @@ function g(e) {
       viewProfileItem: v,
       themeColor: "secondary"
     })]
-  }) : h === p.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
+  }) : x === m.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       type: "text",
       userId: t.id,
@@ -81,7 +81,7 @@ function g(e) {
       guildId: g,
       themeColor: "secondary"
     })]
-  }) : h === p.OGo.FRIEND || h === p.OGo.PENDING_OUTGOING ? (0, r.jsxs)(r.Fragment, {
+  }) : x === m.OGo.FRIEND || x === m.OGo.PENDING_OUTGOING ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       type: "text",
       userId: t.id,
@@ -91,7 +91,7 @@ function g(e) {
     }), (0, r.jsx)(f.g, {
       type: "icon",
       user: t,
-      relationshipType: h,
+      relationshipType: x,
       shouldShowTooltip: true,
       themeColor: "secondary",
       analyticsLocation: y
@@ -102,7 +102,7 @@ function g(e) {
       viewProfileItem: v,
       themeColor: "secondary"
     })]
-  }) : h === p.OGo.NONE && P ? (0, r.jsxs)(r.Fragment, {
+  }) : x === m.OGo.NONE && P ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       type: "text",
       userId: t.id,

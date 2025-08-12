@@ -49,11 +49,11 @@ let _ = () => (0, Chunk266454.zu)(Chunk704215.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE
   },
   g = () => (0, Chunk266454.zu)(Chunk704215.z.REFERRAL_PROGRAM_POPOVER),
   E = () => {
-    let e = (0, Chunk533525.b)("useIsReferralProgramPopoverShowable"),
-      t = g(),
-      n = (0, Chunk442837.e7)([Chunk276444.Z], () => Chunk276444.Z.getReferralsRemaining()),
-      i = Chunk870041.ZP.useExperiment({
+    let e = Chunk870041.ZP.useExperiment({
         location: "useIsReferralProgramPopoverShowable"
-      });
-    return module && false === exports && null !== require && require > 0 && Chunk704215.cohort !== Chunk870041.xI.Control
+      }),
+      t = (0, Chunk533525.b)("useIsReferralProgramPopoverShowable", module.cohort === Chunk870041.xI.Control),
+      n = g(),
+      i = (0, Chunk442837.e7)([Chunk276444.Z], () => Chunk276444.Z.getReferralsRemaining());
+    return exports && false === require && null !== Chunk704215 && Chunk704215 > 0 && module.cohort !== Chunk870041.xI.Control
   }

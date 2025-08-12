@@ -33,9 +33,9 @@ function y(e) {
     analyticsLocations: I
   } = (0, c.ZP)(a.Z.USER_PROFILE_RECENT_ACTIVITY_CARD), {
     themeType: P
-  } = (0, p.z)(), {
-    interactionSource: Z,
-    interactionSourceId: N
+  } = (0, m.z)(), {
+    interactionSource: E,
+    interactionSourceId: Z
   } = (0, u.Xo)(), T = (0, d.Z)({
     display: "recent",
     user: t,
@@ -46,7 +46,7 @@ function y(e) {
     value: I,
     children: (0, r.jsx)(g.Z, {
       targetElementRef: _,
-      sourceType: h.n_.ACTIVITY,
+      sourceType: x.n_.ACTIVITY,
       user: t,
       children: (0, r.jsx)(f.Z, {
         user: t,
@@ -55,13 +55,13 @@ function y(e) {
         sourceId: n.id,
         entry: n,
         onAction: T,
-        sourceType: h.n_.ACTIVITY,
-        children: () => (0, r.jsx)(m.Z, {
+        sourceType: x.n_.ACTIVITY,
+        children: () => (0, r.jsx)(p.Z, {
           ref: _,
           user: t,
-          className: x.toolbarContainer,
+          className: h.toolbarContainer,
           interactionSourceId: n.id,
-          sourceType: h.n_.ACTIVITY,
+          sourceType: x.n_.ACTIVITY,
           onAction: T,
           onShowToolbar: () => T({
             action: "HOVER_ACTIVITY_CARD"
@@ -78,7 +78,7 @@ function y(e) {
             user: t,
             onClose: v,
             className: o()(y, {
-              [x.hoisted]: Z === h.n_.ACTIVITY && N === n.id
+              [h.hoisted]: E === x.n_.ACTIVITY && Z === n.id
             })
           })
         })

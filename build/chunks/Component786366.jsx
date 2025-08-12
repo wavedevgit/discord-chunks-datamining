@@ -50,8 +50,8 @@ function f(e) {
     return null == (e = c.Z.getUserProfile(t.id)) ? true : e.application
   }), {
     hasMessageContent: f,
-    hasGuildPresences: m,
-    hasGuildMembers: p
+    hasGuildPresences: p,
+    hasGuildMembers: m
   } = (0, a.w)({
     flags: null == n ? true : n.flags
   });
@@ -62,11 +62,11 @@ function f(e) {
       icon: o.kBi,
       title: s.intl.string(s.t["7Tmhfn"]),
       description: s.intl.string(s.t["eu5x7+"])
-    }), m && (0, r.jsx)(u, {
+    }), p && (0, r.jsx)(u, {
       icon: o.iWm,
       title: s.intl.string(s.t.awYSsL),
       description: s.intl.string(s.t.TpsXoK)
-    }), p && (0, r.jsx)(u, {
+    }), m && (0, r.jsx)(u, {
       icon: o.BFJ,
       title: s.intl.string(s.t.WuKeSE),
       description: s.intl.string(s.t.wOBmtb)

@@ -1,7 +1,7 @@
 /** Chunk was on 11776 **/
 /** chunk id: 666520, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => p
 }), require("./35282.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,31 +14,31 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk343074 = require("./343074.js");
 
-function m(e) {
+function p(e) {
   let {
     autoFocus: t = false,
     className: n,
-    userId: m,
-    onUpdate: p
+    userId: p,
+    onUpdate: m
   } = e, g = (0, i.e7)([s.Z], () => s.Z.hidePersonalInformation), {
     loading: b,
     note: j
-  } = (0, c.Z)(m), h = l.useRef(null);
+  } = (0, c.Z)(p), x = l.useRef(null);
   return (l.useEffect(() => {
     if (!t || g) return;
-    let e = h.current;
+    let e = x.current;
     (null == e ? true : e.selectionStart) != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
   }, [t, g]), g) ? null : (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)(o.lcI, {
-      ref: h,
+      ref: x,
       className: f.textarea,
       disabled: b,
       placeholder: b ? u.intl.string(u.t["WLKx//"]) : u.intl.string(u.t.VBhOe3),
       "aria-label": u.intl.string(u.t.PbMNh4),
       onBlur: e => {
         let t = e.currentTarget.value;
-        (null != j ? j : "") !== t && (null == p || p(), a.Z.updateNote(m, t))
+        (null != j ? j : "") !== t && (null == m || m(), a.Z.updateNote(p, t))
       },
       onKeyPress: e => {
         if (13 === e.which)
