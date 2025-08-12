@@ -83,7 +83,7 @@ function U(e) {
     guildId: e.guildId,
     ReadStateStore_: y.ZP,
     GuildStore_: O.Z
-  }) && C.default.compare(e.id, P) > 0 && !(0, I.Tj)(e, x.Z.selectedItemInfo))), D = (0, a.Wu)([y.ZP, O.Z, x.Z], () => N.filter(e => (0, I.YH)({
+  }) && !(0, I.Tj)(e, x.Z.selectedItemInfo))), D = (0, a.Wu)([y.ZP, O.Z, x.Z], () => N.filter(e => (0, I.YH)({
     messageId: e.id,
     channelId: e.channelId,
     guildId: e.guildId,
@@ -92,7 +92,8 @@ function U(e) {
   }) || (0, I.Tj)(e, x.Z.selectedItemInfo))), U = i.useCallback(e => {
     p !== A.V5.BOOKMARKS && j.Z.loadMoreInbox({
       viewId: s,
-      loadingTrigger: e
+      loadingTrigger: e,
+      onlyMentions: p === A.V5.MENTIONS
     })
   }, [p, s]), {
     hasLoadedEver: G,
@@ -137,8 +138,8 @@ function U(e) {
         message: n
       }]
     }), [K]),
-    q = B(w, p),
-    X = B(D, p);
+    q = B(w, p, P),
+    X = B(D, p, null);
   (0, h.ZP)(() => {
     var e;
     u.Z.dispatch({
@@ -255,22 +256,23 @@ function G(e) {
   })
 }
 
-function B(e, t) {
+function B(e, t, n) {
   return i.useMemo(() => 0 === e.length ? [] : e.filter(e => {
     let {
-      id: n,
-      channelId: r,
-      kind: i
+      id: r,
+      channelId: i,
+      kind: l
     } = e;
-    if (C.default.age(n) > A.ib) returnfalse;
+    if (C.default.age(r) > A.ib) returnfalse;
+    if (t === A.V5.MENTIONS) return l === A.fL.MENTION;
+    if (null != n && 0 >= C.default.compare(r, n)) returnfalse;
     if (t === A.V5.ALL) returntrue;
-    if (t === A.V5.MENTIONS) return i === A.fL.MENTION;
     if (t === A.V5.ANNOUNCEMENTS) {
-      let e = b.Z.getBasicChannel(r);
+      let e = b.Z.getBasicChannel(i);
       return (null == e ? true : e.type) === R.d4z.GUILD_ANNOUNCEMENT
     }
     returnfalse
-  }), [e, t])
+  }), [e, t, n])
 }
 
 function V() {

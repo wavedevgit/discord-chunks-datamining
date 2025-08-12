@@ -7,7 +7,7 @@ var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk755721 = require("./755721.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk367907 = require("./367907.js"),
   Chunk357352 = require("./357352.js"),
@@ -64,11 +64,10 @@ function g(e) {
             variant: "text-lg/medium",
             color: "header-primary",
             children: f.intl.string(f.t["67arYG"])
-          }), r && (0, n.jsxs)(s.gtL, {
-            size: l.zx.Sizes.MEDIUM,
-            className: b.getStartedButton,
-            innerClassName: b.getStartedButtonContents,
-            shineSize: s.gtL.ShineSizes.SMALL,
+          }), r && (0, n.jsx)(l.zx, {
+            text: f.intl.string(f.t.oyzLpK),
+            icon: s.ZSh,
+            size: "md",
             onClick: () => {
               var e, r;
               u.default.track(p.rMx.GUILD_SHOP_PREVIEW_CLICK, (e = function(e) {
@@ -100,12 +99,7 @@ function g(e) {
               })(Object(r)).forEach(function(t) {
                 Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
               }), e)), d.Z.open(t, p.pNK.GUILD_PRODUCTS)
-            },
-            children: [f.intl.string(f.t.oyzLpK), (0, n.jsx)(s.ZSh, {
-              size: "md",
-              color: "currentColor",
-              className: b.getStartedArrow
-            })]
+            }
           })]
         })]
       }), (0, n.jsxs)("div", {

@@ -238,10 +238,10 @@ function er() {
 function ei(e) {
   let {
     preload: t,
-    finished: n,
+    hasMoreToLoad: n,
     analyticsPayload: r
   } = e;
-  x = false, t ? j = true : (G = true !== n, k = true), Z = null != r ? r : null
+  x = false, t ? j = true : (null != n && (G = n), k = true), Z = null != r ? r : null
 }
 
 function eo(e) {

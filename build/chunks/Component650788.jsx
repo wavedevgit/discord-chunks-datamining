@@ -50,11 +50,11 @@ function E(e) {
     isPhantomPreview: u,
     categoryTabs: C
   } = (0, O.m)(), p = !o || null == l;
-  return null == s || !u && p ? (0, n.jsx)(a.$jN, {}) : (0, n.jsx)(x.Z, {
+  return null == s || !u && p ? (0, n.jsx)(a.$jN, {}) : (0, n.jsx)(m.Z, {
     defaultSortOption: null != (t = null == l ? true : l.store_page_guild_products_default_sort) ? t : Z.zJ.NAME,
     children: (0, n.jsxs)("div", {
       className: k.contentContainer,
-      children: [(0, n.jsx)(L.C, {
+      children: [(0, n.jsx)(S.C, {
         guild: s,
         subscriptionsSettings: l
       }), (0, n.jsx)(a.LZC, {
@@ -83,17 +83,17 @@ function M(e) {
     guildId: t,
     productId: r
   } = e, o = (0, c.e7)([p.Z], () => p.Z.isConnected()), h = (0, c.e7)([g.Z], () => g.Z.getGuild(t)), {
-    shouldHideGuildPurchaseEntryPoints: x,
+    shouldHideGuildPurchaseEntryPoints: m,
     restrictionsLoading: v
   } = (0, C.uP)(t), {
     selectedTab: y,
     isPhantomPreview: _,
     categoryTabs: w
-  } = (0, O.m)(), P = o && (null == h || 0 === w.length && !_ || x && !v);
+  } = (0, O.m)(), P = o && (null == h || 0 === w.length && !_ || m && !v);
   return i.useEffect(() => {
-    P && (0, m.M)(t, N.oC.GUILD_SHOP)
+    P && (0, x.M)(t, D.oC.GUILD_SHOP)
   }, [t, P]), (0, d.Z)({
-    type: D.n.PAGE,
+    type: N.n.PAGE,
     name: s.ImpressionNames.GUILD_SHOP_PAGE,
     properties: {
       product_id: r,
@@ -111,7 +111,7 @@ function M(e) {
         color: u.Z.INTERACTIVE_ACTIVE
       }), (0, n.jsx)(j.Z.Title, {
         children: T.intl.string(T.t.al5EXF)
-      }), (0, n.jsx)(S.Z, {})]
+      }), (0, n.jsx)(L.Z, {})]
     }), (0, n.jsx)(a.u2D, {
       className: k.content,
       children: o ? (0, n.jsx)(E, {

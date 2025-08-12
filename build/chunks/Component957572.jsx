@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
-var Chunk755721 = require("./755721.js"),
+var Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk847033 = require("./847033.jsx"),
   Chunk544978 = require("./544978.js"),
@@ -29,12 +29,11 @@ function d() {
         className: Chunk707753.previewNoticeText,
         children: module === Chunk544978.y.GUILD_PRODUCTS_PREVIEW ? Chunk388032.intl.string(Chunk388032.t.F4Z0nZ) : Chunk388032.intl.string(Chunk388032.t.pzTFpK)
       })]
-    }), (0, Chunk255367.jsx)(Chunk755721.zx, {
-      size: Chunk755721.zx.Sizes.MIN,
-      color: Chunk755721.zx.Colors.PRIMARY,
-      className: Chunk707753.removePreviewButton,
-      onClick: require,
-      children: module === Chunk544978.y.GUILD_PRODUCTS_PREVIEW ? Chunk388032.intl.string(Chunk388032.t.YF35pa) : Chunk388032.intl.string(Chunk388032.t.r30bk5)
+    }), (0, Chunk255367.jsx)(Chunk159691.zx, {
+      text: module === Chunk544978.y.GUILD_PRODUCTS_PREVIEW ? Chunk388032.intl.string(Chunk388032.t.YF35pa) : Chunk388032.intl.string(Chunk388032.t.r30bk5),
+      size: "sm",
+      variant: "secondary",
+      onClick: require
     })]
   }) : null
 }

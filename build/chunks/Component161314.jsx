@@ -11,7 +11,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk990547 = require("./990547.js"),
   Chunk831209 = require("./831209.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk367907 = require("./367907.js"),
   Chunk213609 = require("./213609.js"),
@@ -134,19 +134,12 @@ function C(e) {
             })
           })
         })]
-      }), (0, r.jsx)(u.zx, {
+      }), (0, r.jsx)("div", {
         className: S.guildShopEmbedCta,
-        onClick: w,
-        children: (0, r.jsxs)("div", {
-          className: S.guildShopEmbedCtaContent,
-          children: [(0, r.jsx)(v.Z, {
-            height: "18px",
-            width: "18px"
-          }), (0, r.jsx)(d.Text, {
-            variant: "text-sm/medium",
-            color: "always-white",
-            children: T.intl.string(T.t.jXx1CA)
-          })]
+        children: (0, r.jsx)(u.zx, {
+          onClick: w,
+          icon: v.P,
+          text: T.intl.string(T.t.jXx1CA)
         })
       })]
     })]

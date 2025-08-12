@@ -91,34 +91,36 @@ function T(e) {
 }
 async function S(e) {
   var t, {
-      preload: n = false
+      preload: n = false,
+      onlyMentions: r = false
     } = e,
-    r = E(e, ["preload"]);
-  let o = Date.now(),
-    a = _.Z.getNotifyingChannelIds();
-  if (null == a) return;
-  let s = n ? [] : T(a),
-    c = l.ZP.getMentions(),
-    u = null != c && c.length > 0 ? c[c.length - 1].id : null,
-    d = false;
-  if (l.ZP.hasMore && !l.ZP.loading && (s.push(v(u)), d = true), 0 === s.length) return void i.Z.dispatch({
+    o = E(e, ["preload", "onlyMentions"]);
+  let a = Date.now(),
+    s = _.Z.getNotifyingChannelIds();
+  if (null == s) return;
+  let c = n || r ? [] : T(s),
+    u = l.ZP.getMentions(),
+    d = null != u && u.length > 0 ? u[u.length - 1].id : null,
+    h = false;
+  if (!l.ZP.hasMore && l.ZP.hasLoadedEver || l.ZP.loading || (c.push(v(d)), h = true), 0 === c.length) return void i.Z.dispatch({
     type: "NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS",
     preload: n,
-    finished: true
+    hasMoreToLoad: !!r && true
   });
   try {
-    await Promise.all(s);
+    await Promise.all(c);
     let e = {
-      timeToLoad: Date.now() - o,
-      loadingTrigger: null != (t = r.loadingTrigger) ? t : p.X.UNKNOWN,
-      viewId: r.viewId,
-      channelsFetched: s.length - +!!d,
-      mentionsFetched: d
+      timeToLoad: Date.now() - a,
+      loadingTrigger: null != (t = o.loadingTrigger) ? t : p.X.UNKNOWN,
+      viewId: o.viewId,
+      channelsFetched: c.length - +!!h,
+      mentionsFetched: h
     };
     n && (0, f.CP)(e), i.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS",
       preload: n,
-      analyticsPayload: e
+      analyticsPayload: e,
+      hasMoreToLoad: !r || true
     })
   } catch (e) {
     i.Z.dispatch({
@@ -130,8 +132,9 @@ let A = {
   loadMoreInbox() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
     var {
-      preload: t = false
-    } = module, n = E(module, ["preload"]);
+      preload: t = false,
+      onlyMentions: n = false
+    } = module, r = E(module, ["preload", "onlyMentions"]);
     if (!Chunk787879.Z.canLoadMore({
         preload: exports
       })) returnfalse;
@@ -139,8 +142,9 @@ let A = {
       type: "NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_START",
       preload: exports
     }), I(g({
-      preload: exports
-    }, require))
+      preload: exports,
+      onlyMentions: require
+    }, Chunk392711))
   },
   inboxItemClick: function(e) {
     let {

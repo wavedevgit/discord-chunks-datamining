@@ -1,7 +1,7 @@
 /** Chunk was on 78431 **/
 /** chunk id: 175390, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => x
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -70,7 +70,7 @@ function h() {
   })
 }
 
-function m(e) {
+function x(e) {
   let {
     guildId: t
   } = e;

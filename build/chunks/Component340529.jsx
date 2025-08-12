@@ -85,7 +85,7 @@ function _(e) {
     setSelectedTab: o,
     categoryTabs: _,
     handlePreviewDismiss: w
-  } = (0, p.m)(), P = "false" === s.K.get(h.Hr, "false"), S = (0, l.e7)([a.Z], () => a.Z.useReducedMotion), L = _.map(e => {
+  } = (0, p.m)(), P = "false" === s.K.get(h.Hr, "false"), L = (0, l.e7)([a.Z], () => a.Z.useReducedMotion), S = _.map(e => {
     switch (e) {
       case f.y.GUILD_PRODUCTS:
         return (0, n.jsx)(y, {
@@ -106,7 +106,7 @@ function _(e) {
           }),
           title: O.intl.string(O.t["KzCF//"]),
           body: r ? O.intl.string(O.t["jqz+l5"]) : O.intl.format(O.t.ycs4oK, {
-            openRoleSubPage: () => (0, u.uL)(m.Z5c.CHANNEL(t.id, x.oC.ROLE_SUBSCRIPTIONS))
+            openRoleSubPage: () => (0, u.uL)(x.Z5c.CHANNEL(t.id, m.oC.ROLE_SUBSCRIPTIONS))
           }),
           disabled: !r,
           selected: i === f.y.GUILD_ROLE_SUBSCRIPTIONS,
@@ -115,7 +115,7 @@ function _(e) {
       case f.y.GUILD_PRODUCTS_PREVIEW:
         return (0, n.jsx)(y, {
           icon: P ? (0, n.jsx)("img", {
-            src: S ? (0, d.b)("server_products/storefront/question-mark.png") : (0, d.b)("server_products/storefront/question-mark.gif"),
+            src: L ? (0, d.b)("server_products/storefront/question-mark.png") : (0, d.b)("server_products/storefront/question-mark.gif"),
             className: v.questionMark,
             alt: ""
           }) : (0, n.jsx)(c.OgN, {
@@ -149,7 +149,7 @@ function _(e) {
       className: v.filters,
       children: [(0, n.jsx)("div", {
         className: v.tabs,
-        children: L
+        children: S
       }), i === f.y.GUILD_PRODUCTS && (0, n.jsx)(g.Z, {})]
     })]
   })

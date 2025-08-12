@@ -655,7 +655,8 @@ class eI extends Chunk47770.Z {
             time_3_media_engine_create_native_connection: null == (o = h.transportInfo) ? true : o.createConnectionTime,
             time_4_media_engine_connect_to_socket: null == (a = h.transportInfo) ? true : a.connectTime,
             time_5_scheduling_connected_callback: (null == (l = this._connection) || null == (s = l.transportInfo) ? true : s.connectCallbackScheduledMs) == null ? false : performance.now() - (null == (u = this._connection) || null == (c = u.transportInfo) ? true : c.connectCallbackScheduledMs),
-            time_6_state_connected_to_end_measure: (null == (d = this._connection) ? true : d.onConnectStarted) == null ? false : performance.now() - (null == (f = this._connection) ? true : f.onConnectStarted)
+            time_6_state_connected_to_end_measure: (null == (d = this._connection) ? true : d.onConnectStarted) == null ? false : performance.now() - (null == (f = this._connection) ? true : f.onConnectStarted),
+            connect_count: this._connectCount
           })
         }
         null == (r = this._localMediaSinkWantsManager) || r.setConnection(h), null == (i = this._goLiveQualityManager) || i.update(), this._connectCompletedTime = (0, _.zO)(), this._connected = true, this._connecting = false, this._encountered_socket_failure = false
