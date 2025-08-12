@@ -26,10 +26,7 @@ let s = [],
   };
 class d extends(r = Chunk442837.ZP.Store) {
   getUserDiscounts() {
-    let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    if (module) return l;
-    let t = Date.now();
-    return l.filter(e => null == e.expiresAt || e.expiresAt.getTime() > t)
+    return l
   }
 }
 a(d, "displayName", "CollectiblesUserDiscountStore");

@@ -131,6 +131,7 @@ let k = e => {
             sortedSkuIds: g,
             buttonContainerClassName: (null == t ? true : t.type) === o.z.IMMERSIVE_BANNER ? L.feedblockInteractiveBackground : true,
             hasSorting: c === j.AW.HOME,
+            prioritizeUserDiscounts: c === j.AW.HOME,
             tab: c
           }, l);
           break;

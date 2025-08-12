@@ -35,6 +35,7 @@ function g(t) {
     }(t, i ? r.a : a.$));
   return t => (function t(e, i, s) {
     if (Array.isArray(e)) e.forEach(e => t(e, i, s));
+    else if ("list" === e.type) e.items.forEach(e => t(e, i, s));
     else if ("string" == typeof e.content && "codeBlock" !== e.type) {
       let t = [],
         n = "";
