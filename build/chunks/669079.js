@@ -97,7 +97,10 @@ function G(e) {
 function B(e) {
   return e.replace(/[^A-Za-z0-9]/g, "")
 }
-let Z = e => (null == e ? true : e.type) === h.uaV.CUSTOM_GIFT && (null == e ? true : e.embeds.length) === 1 && (null == e ? true : e.embeds[0].type) === h.hBH.GIFT,
+let Z = e => {
+    var t;
+    return (null == e ? true : e.type) === h.uaV.CUSTOM_GIFT && (null == e || null == (t = e.embeds) ? true : t.length) === 1 && (null == e ? true : e.embeds[0].type) === h.hBH.GIFT
+  },
   F = e => {
     let t;
     if (null == e) return [];

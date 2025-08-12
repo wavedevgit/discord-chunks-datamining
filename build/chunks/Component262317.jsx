@@ -175,7 +175,7 @@ function H(e) {
     hangStatusActivity: eh,
     requestToStreamActivity: em,
     showHangStatus: eg
-  } = e, eE = i.useRef(null), [eb, ey] = i.useState(false), [eO, ev] = i.useState(false), eI = null != em, eT = () => {
+  } = e, eE = i.useRef(null), [eb, ey] = i.useState(false), [eO, ev] = i.useState(false), eI = (null == em ? true : em.session_id) != null, eT = () => {
     ey(!eb)
   }, eS = () => {
     (ee || eg || eI) && (null == eo || eo(_.id))

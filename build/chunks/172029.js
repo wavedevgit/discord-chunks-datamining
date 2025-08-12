@@ -2,7 +2,7 @@
 /** chunk id: 172029, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => v
 }), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -49,25 +49,30 @@ function d(e, t) {
   }), e
 }
 let f = {},
-  _ = {};
+  _ = {},
+  p = null;
 
-function p(e) {
+function h() {
+  _ = {}, f = {}
+}
+
+function m(e) {
   let {
     channelId: t,
     currentVoiceChannelId: n
   } = e;
   if (t === n) returnfalse;
-  _ = {}, f = {}
+  h()
 }
 
-function h(e) {
+function g(e) {
   let {
     id: t
   } = e;
   for (let [e, n] of(delete f[t], Object.entries(_))) t === n && delete _[e]
 }
 
-function m(e) {
+function E(e) {
   var t, n;
   let {
     channelId: r,
@@ -88,7 +93,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function b(e) {
   let {
     streamKey: t
   } = e, {
@@ -97,14 +102,29 @@ function g(e) {
   if (null == _[n]) returnfalse;
   delete _[n]
 }
-class E extends Chunk442837.ZP.Store {
+
+function y() {
+  if (Chunk19780.Z.getWasMoved()) {
+    if (Chunk19780.Z.getChannelId() === p) returnfalse;
+    p = Chunk19780.Z.getChannelId(), h()
+  } else {
+    if (null == p) returnfalse;
+    p = null
+  }
+}
+class O extends Chunk442837.ZP.Store {
+  initialize() {
+    this.waitFor(Chunk19780.Z)
+  }
   getPendingRequestForUser(e) {
     return _[e]
   }
 }
-let b = new E(Chunk570140.Z, {
-  STREAM_WATCH: g,
-  MESSAGE_CREATE: m,
-  MESSAGE_DELETE: h,
-  VOICE_CHANNEL_SELECT: p
+let v = new O(Chunk570140.Z, {
+  STREAM_WATCH: b,
+  MESSAGE_CREATE: E,
+  MESSAGE_DELETE: g,
+  VOICE_CHANNEL_SELECT: m,
+  VOICE_STATE_UPDATES: y,
+  LOGOUT: h
 })

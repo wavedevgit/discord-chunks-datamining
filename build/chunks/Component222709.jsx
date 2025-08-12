@@ -2,63 +2,63 @@
 /** chunk id: 222709, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => f
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk528963 = require("./528963.js"),
   Chunk143740 = require("./143740.jsx"),
   Chunk212342 = require("./212342.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk577490 = require("./577490.js");
-let _ = e => {
+let f = e => {
   let {
     channelId: t,
     messageId: n
-  } = e, _ = (0, o.e7)([u.Z], () => u.Z.shouldShowBump(n), [n]), p = i.useCallback(() => {
-    l.Z.dismissPublishBump(n), (0, c.Z)(t, n)
-  }, [t, n]), h = i.useCallback(() => {
-    l.Z.dismissPublishBump(n)
-  }, [n]), m = i.useCallback(() => {
-    l.Z.permanentlyHidePublishBump(t)
+  } = e, f = (0, o.e7)([c.Z], () => c.Z.shouldShowBump(n), [n]), _ = i.useCallback(() => {
+    s.Z.dismissPublishBump(n), (0, l.Z)(t, n)
+  }, [t, n]), p = i.useCallback(() => {
+    s.Z.dismissPublishBump(n)
+  }, [n]), h = i.useCallback(() => {
+    s.Z.permanentlyHidePublishBump(t)
   }, [t]);
-  return _ ? (0, r.jsxs)("div", {
-    className: f.container,
+  return f ? (0, r.jsxs)("div", {
+    className: d.container,
     children: [(0, r.jsxs)("div", {
-      className: f.bumpBox,
-      children: [(0, r.jsx)(s.MqZ, {
+      className: d.bumpBox,
+      children: [(0, r.jsx)(a.MqZ, {
         size: "xs",
         color: "currentColor",
-        className: f.icon
-      }), (0, r.jsx)(s.X6q, {
+        className: d.icon
+      }), (0, r.jsx)(a.X6q, {
         variant: "heading-sm/normal",
-        className: f.tagline,
-        children: d.intl.string(d.t.hasZoa)
-      }), (0, r.jsx)(a.zx, {
-        color: a.zx.Colors.LINK,
-        look: a.zx.Looks.LINK,
-        size: a.zx.Sizes.MIN,
-        className: f.publish,
+        className: d.tagline,
+        children: u.intl.string(u.t.hasZoa)
+      }), (0, r.jsx)(a.Text, {
+        color: "text-brand",
+        className: d.publish,
+        variant: "text-sm/normal",
+        children: (0, r.jsx)(a.P3F, {
+          onClick: _,
+          children: u.intl.string(u.t["MFGE5+"])
+        })
+      }), (0, r.jsx)(a.P3F, {
         onClick: p,
-        children: d.intl.string(d.t["MFGE5+"])
-      }), (0, r.jsx)(s.P3F, {
-        onClick: h,
-        children: (0, r.jsx)(s.k$p, {
+        children: (0, r.jsx)(a.k$p, {
           size: "xs",
           color: "currentColor",
-          className: f.closeIcon
+          className: d.closeIcon
         })
       })]
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(a.Text, {
       color: "text-muted",
-      className: f.hidePermanently,
+      className: d.hidePermanently,
       variant: "text-sm/normal",
-      children: (0, r.jsx)(s.P3F, {
-        onClick: m,
-        children: d.intl.string(d.t.efSkDg)
+      children: (0, r.jsx)(a.P3F, {
+        onClick: h,
+        children: u.intl.string(u.t.efSkDg)
       })
     })]
   }) : null

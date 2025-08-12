@@ -128,7 +128,7 @@ let Z = Chunk73800.memo(e => {
       isGuest: Y,
       isSelf: j,
       requestToStreamActivity: el ? q : true,
-      application: es ? X : true,
+      application: es && (null == q ? true : q.session_id) != null ? X : true,
       showHangStatus: er && en && (j || null != eo),
       hangStatusActivity: j ? ei : eo
     }))

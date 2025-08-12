@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk158776 = require("./158776.js"),
   Chunk19780 = require("./19780.js"),
   Chunk594174 = require("./594174.js"),
-  Chunk172029 = require("./172029.js"),
+  Chunk877912 = require("./877912.js"),
   Chunk762578 = require("./762578.js"),
   Chunk981631 = require("./981631.js"),
   Chunk704483 = require("./704483.js"),
@@ -31,7 +31,7 @@ function T(e) {
     activity: t,
     channel: n,
     userId: o
-  } = e, c = (0, d.IX)(t.application_id).data, f = (0, a.e7)([g.Z], () => null != g.Z.getPendingRequestForUser(o)), [_, p] = i.useState(false), [m, E] = i.useState(false), T = (0, a.e7)([h.Z], () => h.Z.getChannelId() !== n.id);
+  } = e, c = (0, d.IX)(t.application_id).data, f = (0, g.Z)(o), [_, p] = i.useState(false), [m, E] = i.useState(false), T = (0, a.e7)([h.Z], () => h.Z.getChannelId() !== n.id);
   async function S() {
     E(true);
     try {
