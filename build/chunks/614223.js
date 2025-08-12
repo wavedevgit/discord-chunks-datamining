@@ -40,7 +40,7 @@ function l(e) {
 
 function c(e, t, n) {
   let r = false;
-  return e && null != t && null == t.invoiceItems.find(e => e.subscriptionPlanId === n.id) && (r = true), r
+  return e && null != t && null == t.findInvoiceItemByPlanId(n.id) && (r = true), r
 }
 
 function u(e, t, n) {

@@ -1174,12 +1174,7 @@ function eB(e) {
 }
 
 function eZ(e, t, n) {
-  let r = e.invoiceItems.find(e => {
-      let {
-        subscriptionPlanId: t
-      } = e;
-      return t === n.id
-    }),
+  let r = e.findInvoiceItemByPlanId(n.id),
     i = null == r ? Y(n.id, false, false, {
       paymentSourceId: t.paymentSourceId,
       currency: t.currency

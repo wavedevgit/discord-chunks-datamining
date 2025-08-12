@@ -31,6 +31,10 @@ class a extends Chunk81825.Z {
       status: e.status
     })
   }
+  findInvoiceItemByPlanId(e) {
+    var t;
+    return null != (t = this.invoiceItems.find(t => t.subscriptionPlanId === e)) ? t : null
+  }
   constructor(e) {
     super(), o(this, "id", true), o(this, "invoiceItems", true), o(this, "total", true), o(this, "subtotal", true), o(this, "currency", true), o(this, "tax", true), o(this, "taxInclusive", true), o(this, "subscriptionPeriodStart", true), o(this, "subscriptionPeriodEnd", true), o(this, "status", true), this.id = e.id, this.invoiceItems = e.invoiceItems, this.total = e.total, this.subtotal = e.subtotal, this.currency = e.currency, this.tax = e.tax, this.taxInclusive = e.taxInclusive, this.subscriptionPeriodStart = e.subscriptionPeriodStart, this.subscriptionPeriodEnd = e.subscriptionPeriodEnd, this.status = e.status
   }
