@@ -174,10 +174,6 @@ class N extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     var e;
     return null != (e = y.darkSidebar) && module
   }
-  get useMobileChatCustomRenderer() {
-    var e;
-    return null != (e = y.useMobileChatCustomRenderer) && module
-  }
   get saveCameraUploadsToDevice() {
     var e;
     return null == (e = y.saveCameraUploadsToDevice) || module

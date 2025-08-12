@@ -61,10 +61,10 @@ function h(e) {
     }
   }, [t.id, n, l, b, h.textValue]);
   i.useEffect(() => {
-    m(false), f(false), l({
+    m(false), f(false), t.id === c.parentChannelId && n !== c.parentMessageId && l({
       name: ""
     })
-  }, [n, l]), i.useEffect(() => {
+  }, [n, l, t.id, c.parentChannelId, c.parentMessageId]), i.useEffect(() => {
     (null == c.name || "" === c.name.trim()) && !g && b && null != n && (m(true), y())
   }, [t.id, n, l, c.name, g, b, y]);
   let x = i.useCallback(function() {

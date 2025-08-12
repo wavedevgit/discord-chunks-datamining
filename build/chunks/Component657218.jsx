@@ -148,25 +148,30 @@ function X(e) {
     setThreadSettings: f,
     updateThreadSettings: m
   } = function(e, t) {
-    let [n, r] = i.useState({}), l = i.useCallback(n => {
-      var i, l;
-      r(e => Y({}, e, n)), u.Z.changeThreadSettings(e.id, (i = Y({}, n), l = l = {
-        parentMessageId: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-      }), i))
-    }, [e.id, t]);
+    let n = (0, s.e7)([T.Z], () => {
+        var t;
+        return null != (t = T.Z.getThreadSettings(e.id)) ? t : {}
+      }, [e.id]),
+      [r, l] = i.useState(n),
+      a = i.useCallback(n => {
+        var r, i;
+        l(e => Y({}, e, n)), u.Z.changeThreadSettings(e.id, (r = Y({}, n), i = i = {
+          parentMessageId: t
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(i)).forEach(function(e) {
+          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+        }), r))
+      }, [e.id, t]);
     return {
-      threadSettings: n,
-      setThreadSettings: r,
-      updateThreadSettings: l
+      threadSettings: r,
+      setThreadSettings: l,
+      updateThreadSettings: a
     }
   }(t, n), {
     textAreaState: b,
