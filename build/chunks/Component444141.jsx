@@ -56,9 +56,9 @@ function p(e) {
     sourceAnalyticsLocations: j
   } = (0, i.ZP)(), {
     context: y,
-    trackUserProfileAction: x
-  } = (0, a.KZ)(), h = (0, s.ZP)(t.id, n);
-  return (null == h ? true : h.guildId) == null || null == y ? null : (null == m ? true : m.guildId) != null ? (0, r.jsx)(l.sNh, {
+    trackUserProfileAction: O
+  } = (0, a.KZ)(), x = (0, s.ZP)(t.id, n);
+  return (null == x ? true : x.guildId) == null || null == y ? null : (null == m ? true : m.guildId) != null ? (0, r.jsx)(l.sNh, {
     id: "view-main-profile",
     label: d.intl.string(d.t.GISTtb),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
@@ -68,7 +68,7 @@ function p(e) {
       null == b || b(), (0, c.openUserProfileModal)(f(u({}, y), {
         showGuildProfile: false,
         sourceAnalyticsLocations: j
-      })), x(u({
+      })), O(u({
         action: "PRESS_VIEW_MAIN_PROFILE",
         analyticsLocations: g
       }, y))
@@ -83,7 +83,7 @@ function p(e) {
       null == b || b(), (0, c.openUserProfileModal)(f(u({}, y), {
         showGuildProfile: true,
         sourceAnalyticsLocations: j
-      })), x(u({
+      })), O(u({
         action: "PRESS_VIEW_SERVER_PROFILE",
         analyticsLocations: g
       }, y))

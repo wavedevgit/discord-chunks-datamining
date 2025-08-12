@@ -25,15 +25,15 @@ function b(e) {
     channelId: g,
     displayProfile: j,
     relationshipType: y,
-    onClose: x
+    onClose: O
   } = e, {
-    newestAnalyticsLocation: h
-  } = (0, o.ZP)(), O = (0, a.Z)({
+    newestAnalyticsLocation: x
+  } = (0, o.ZP)(), h = (0, a.Z)({
     user: t,
     guildId: b,
     channelId: g,
     displayProfile: j,
-    onClose: x
+    onClose: O
   }), {
     gameFriends: v,
     hasOutgoingPendingGameFriends: _,
@@ -45,14 +45,14 @@ function b(e) {
     children: [(0, r.jsx)(c.Z, {
       user: t,
       guildId: b,
-      onClose: x
+      onClose: O
     }), (0, r.jsx)(u.Z, {
-      onClose: x
+      onClose: O
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
       guildId: b,
-      viewProfileItem: O,
+      viewProfileItem: h,
       themeColor: "secondary"
     })]
   }) : t.bot ? (0, r.jsxs)(r.Fragment, {
@@ -65,7 +65,7 @@ function b(e) {
       type: "icon",
       user: t,
       guildId: b,
-      viewProfileItem: O,
+      viewProfileItem: h,
       themeColor: "secondary"
     })]
   }) : y === m.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
@@ -94,12 +94,12 @@ function b(e) {
       relationshipType: y,
       shouldShowTooltip: true,
       themeColor: "secondary",
-      analyticsLocation: h
+      analyticsLocation: x
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
       guildId: b,
-      viewProfileItem: O,
+      viewProfileItem: h,
       themeColor: "secondary"
     })]
   }) : y === m.OGo.NONE && P ? (0, r.jsxs)(r.Fragment, {
@@ -111,7 +111,7 @@ function b(e) {
     }), (0, r.jsx)(f.k9, {
       type: "icon",
       user: t,
-      analyticsLocation: h,
+      analyticsLocation: x,
       themeColor: "secondary",
       gameFriends: v,
       tooltipPosition: "top",
@@ -123,14 +123,14 @@ function b(e) {
       type: "icon",
       user: t,
       guildId: b,
-      viewProfileItem: O,
+      viewProfileItem: h,
       themeColor: "secondary"
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z7, {
       type: "text",
       userId: t.id,
-      analyticsLocation: h,
+      analyticsLocation: x,
       color: l.zx.Colors.BRAND,
       autoFocus: true
     }), (0, r.jsx)(s.Z, {
@@ -142,7 +142,7 @@ function b(e) {
       type: "icon",
       user: t,
       guildId: b,
-      viewProfileItem: O,
+      viewProfileItem: h,
       themeColor: "secondary"
     })]
   })

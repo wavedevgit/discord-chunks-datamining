@@ -56,6 +56,7 @@ function o(e) {
     }({
       user: t,
       game: d,
+      widgetType: n.type,
       loading: o(d.applicationId),
       disableInteraction: c
     }, s))

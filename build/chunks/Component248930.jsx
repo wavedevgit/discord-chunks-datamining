@@ -1,7 +1,7 @@
 /** Chunk was on 29458 **/
 /** chunk id: 248930, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -21,13 +21,13 @@ var Chunk255367 = require("./255367.js"),
   Chunk228168 = require("./228168.js"),
   Chunk861242 = require("./861242.js");
 
-function h(e) {
+function x(e) {
   let {
     user: t,
     entry: n,
     profileGuildId: i,
-    className: h,
-    onClose: O,
+    className: x,
+    onClose: h,
     hideContextMenu: v = false
   } = e, _ = l.useRef(null), {
     analyticsLocations: I
@@ -36,7 +36,7 @@ function h(e) {
   } = (0, m.z)(), {
     interactionSource: E,
     interactionSourceId: Z
-  } = (0, u.Xo)(), N = (0, d.Z)({
+  } = (0, u.Xo)(), T = (0, d.Z)({
     display: "recent",
     user: t,
     entry: n,
@@ -54,31 +54,31 @@ function h(e) {
         themeType: P,
         sourceId: n.id,
         entry: n,
-        onAction: N,
+        onAction: T,
         sourceType: y.n_.ACTIVITY,
         children: () => (0, r.jsx)(p.Z, {
           ref: _,
           user: t,
-          className: x.toolbarContainer,
+          className: O.toolbarContainer,
           interactionSourceId: n.id,
           sourceType: y.n_.ACTIVITY,
-          onAction: N,
-          onShowToolbar: () => N({
+          onAction: T,
+          onShowToolbar: () => T({
             action: "HOVER_ACTIVITY_CARD"
           }),
           renderMoreButtonPopout: v ? true : e => (0, r.jsx)(j.Z, {
             display: "recent",
             entry: n,
             user: t,
-            onClose: O,
+            onClose: h,
             children: e
           }),
           children: (0, r.jsx)(g.Z, {
             entry: n,
             user: t,
-            onClose: O,
-            className: o()(h, {
-              [x.hoisted]: E === y.n_.ACTIVITY && Z === n.id
+            onClose: h,
+            className: o()(x, {
+              [O.hoisted]: E === y.n_.ACTIVITY && Z === n.id
             })
           })
         })

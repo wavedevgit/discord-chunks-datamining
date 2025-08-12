@@ -11,8 +11,9 @@ var Chunk623132 = require("./623132.jsx"),
 function o(e) {
   var {
     games: t,
-    isGameFetching: n
-  } = e, o = function(e, t) {
+    widgetType: n,
+    isGameFetching: o
+  } = e, a = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -26,7 +27,7 @@ function o(e) {
       for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
     return l
-  }(e, ["games", "isGameFetching"]);
+  }(e, ["games", "widgetType", "isGameFetching"]);
   return (0, r.jsx)("ul", {
     className: i.cardList,
     children: t.map((e, t) => (0, r.jsx)("li", {
@@ -49,8 +50,9 @@ function o(e) {
         return e
       }({
         game: e,
-        loading: n(e.applicationId)
-      }, o))
+        widgetType: n,
+        loading: o(e.applicationId)
+      }, a))
     }, "".concat(e.applicationId, "-").concat(t)))
   })
 }

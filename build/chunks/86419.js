@@ -2,13 +2,14 @@
 /** chunk id: 86419, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  $b: () => N,
   ES: () => A,
-  X6: () => C,
-  kQ: () => P,
+  X6: () => R,
+  kQ: () => w,
   np: () => b,
   qH: () => T,
-  tk: () => R,
-  vH: () => N,
+  tk: () => P,
+  vH: () => C,
   y8: () => S
 }), require("./388685.js"), require("./642613.js");
 var Chunk624238 = require("./624238.js"),
@@ -135,7 +136,17 @@ function A(e, t) {
   l.Z.setPendingWidgets(_), o.Z.getDetectableGamesSupplemental([t])
 }
 
-function N(e) {
+function N(e, t) {
+  let n = y(),
+    r = n.find(t => t.type === e);
+  if (null == r) return;
+  let i = (null != r.games ? r.games : []).filter(e => e.applicationId !== t);
+  if (0 === i.length) return void S(e);
+  let o = I(n, v(e, i));
+  l.Z.setPendingWidgets(o)
+}
+
+function C(e) {
   let t = e => ({
       game_id: e.applicationId,
       comment: e.comment,
@@ -149,7 +160,7 @@ function N(e) {
     }
   }
 }
-async function C() {
+async function R() {
   let e = Chunk224724.Z.getPendingWidgets();
   if (null !== module) try {
     await Chunk592183.Z.savePendingWidgets(module)
@@ -157,7 +168,7 @@ async function C() {
     console.error("Failed to save sample widgets:", module)
   }
 }
-async function R() {
+async function P() {
   try {
     await Chunk592183.Z.savePendingWidgets([])
   } catch (e) {
@@ -165,7 +176,7 @@ async function R() {
   }
 }
 
-function P(e) {
+function w(e) {
   let t = r.k[e.type];
   return e.games.length >= t
 }

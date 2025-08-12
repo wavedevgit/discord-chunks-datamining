@@ -1,24 +1,26 @@
 /** Chunk was on 29458 **/
 /** chunk id: 623132, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => _
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk481060 = require("./481060.js"),
   Chunk810568 = require("./810568.js"),
   Chunk168524 = require("./168524.js"),
+  Chunk594174 = require("./594174.js"),
   Chunk5192 = require("./5192.js"),
   Chunk971082 = require("./971082.jsx"),
   Chunk817053 = require("./817053.jsx"),
   Chunk879877 = require("./879877.jsx"),
+  Chunk533815 = require("./533815.jsx"),
   Chunk853072 = require("./853072.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk949237 = require("./949237.js"),
   Chunk896270 = require("./896270.js"),
   Chunk358340 = require("./358340.js");
 
-function g(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +39,7 @@ function g(e) {
   return e
 }
 
-function j(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +52,7 @@ function j(e, t) {
   }), e
 }
 
-function y(e) {
+function x(e) {
   var {
     applicationId: t,
     userId: n,
@@ -77,18 +79,18 @@ function y(e) {
     sourceUserId: n,
     trackEntryPointImpression: true
   });
-  return null == s ? (0, r.jsx)(l.X6q, j(g({}, c), {
+  return null == s ? (0, r.jsx)(l.X6q, O(y({}, c), {
     children: a
-  })) : (0, r.jsx)(l.X6q, j(g({}, c), {
+  })) : (0, r.jsx)(l.X6q, O(y({}, c), {
     children: (0, r.jsx)(l.P3F, {
       onClick: s,
-      className: b.clickableText,
+      className: j.clickableText,
       children: a
     })
   }))
 }
 
-function x(e) {
+function h(e) {
   let {
     text: t,
     user: n,
@@ -99,10 +101,10 @@ function x(e) {
     children: [(0, r.jsx)(l.PEf, {
       size: "xxs",
       color: l.TVs.colors.ICON_TERTIARY,
-      className: b.icon
+      className: j.icon
     }), (0, r.jsx)(l.nn4, {
-      children: f.intl.format(f.t.TM0XDQ, {
-        name: a.ZP.getName(i, o, n)
+      children: m.intl.format(m.t.TM0XDQ, {
+        name: c.ZP.getName(i, o, n)
       })
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
@@ -112,15 +114,15 @@ function x(e) {
   })
 }
 
-function h(e) {
+function v(e) {
   let {
     applicationId: t,
     guildId: n,
     channelId: l,
     className: i
-  } = e, o = (0, u.Z)(t);
-  return o.length > 0 ? (0, r.jsx)(c.Z, {
-    label: f.intl.formatToPlainString(f.t.ujhJdH, {
+  } = e, o = (0, p.Z)(t);
+  return o.length > 0 ? (0, r.jsx)(s.Z, {
+    label: m.intl.formatToPlainString(m.t.ujhJdH, {
       numFriends: o.length
     }),
     className: i,
@@ -130,68 +132,74 @@ function h(e) {
   }) : null
 }
 
-function O(e) {
+function _(e) {
   let {
     user: t,
     guildId: n,
     channelId: i,
     game: o,
-    loading: a = false,
-    disableInteraction: c = false
+    widgetType: c,
+    loading: s = false,
+    disableInteraction: p = false
   } = e, {
-    gameName: u = f.intl.string(f.t.GIWFlJ),
-    imageSrc: O,
-    applicationId: v,
-    comment: _,
-    tags: I
-  } = o, P = {
+    gameName: _ = m.intl.string(m.t.GIWFlJ),
+    imageSrc: I,
+    applicationId: P,
+    comment: E,
+    tags: Z
+  } = o, T = {
     variant: "text-md/normal",
     color: "text-default"
-  };
-  return a ? (0, r.jsxs)("div", {
-    className: b.card,
+  }, N = a.default.getCurrentUser(), S = (null == N ? true : N.id) === t.id;
+  return s ? (0, r.jsxs)("div", {
+    className: j.card,
     children: [(0, r.jsx)("div", {
-      className: m.loadingCover
+      className: g.loadingCover
     }), (0, r.jsx)("div", {
-      className: b.details,
+      className: j.details,
       children: (0, r.jsxs)("div", {
-        className: p.placeholderText,
+        className: b.placeholderText,
         children: [(0, r.jsx)("div", {
-          className: p.placeholderBar
+          className: b.placeholderBar
         }), (0, r.jsx)("div", {
-          className: p.placeholderBar
+          className: b.placeholderBar
         })]
       })
     })]
   }) : (0, r.jsxs)("div", {
-    className: b.card,
-    children: [(0, r.jsx)(s.Z, {
-      imageSrc: O,
-      gameName: u,
-      applicationId: v,
+    className: j.card,
+    children: [(0, r.jsx)(d.Z, {
+      imageSrc: I,
+      gameName: _,
+      applicationId: P,
       userId: t.id,
-      disableInteraction: c
+      disableInteraction: p
     }), (0, r.jsxs)("div", {
-      className: b.details,
-      children: [c ? (0, r.jsx)(l.X6q, j(g({}, P), {
-        children: u
-      })) : (0, r.jsx)(y, g({
-        applicationId: v,
+      className: j.details,
+      children: [p ? (0, r.jsx)(l.X6q, O(y({}, T), {
+        children: _
+      })) : (0, r.jsx)(x, y({
+        applicationId: P,
         userId: t.id,
-        gameName: u
-      }, P)), null != _ && (0, r.jsx)(x, {
-        text: _,
+        gameName: _
+      }, T)), null != E && (0, r.jsx)(h, {
+        text: E,
         user: t,
         guildId: n,
         channelId: i
-      }), (0, r.jsx)(d.Z, {
-        tags: I
-      }), !c && (0, r.jsx)(h, {
-        className: b.socialProof,
-        applicationId: v,
+      }), (0, r.jsx)(u.Z, {
+        tags: Z
+      }), !p && (0, r.jsx)(v, {
+        className: j.socialProof,
+        applicationId: P,
         guildId: n,
         channelId: i
       })]
+    }), !p && S && (0, r.jsx)(f.Z, {
+      game: o,
+      widgetType: c,
+      userId: t.id,
+      className: j.removeGameButton
     })]
   })
 }

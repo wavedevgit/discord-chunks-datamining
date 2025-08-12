@@ -17,14 +17,14 @@ function u(e) {
     tags: t
   } = e, n = null == t ? true : t.filter(e => null != (0, c.z)(e)), i = (0, l.useRef)(new Map), o = (0, l.useRef)(null), [s, u] = (0, l.useState)(0), [g, j] = (0, l.useState)(false), {
     trackUserProfileAction: y
-  } = (0, a.KZ)(), x = b(o, n, i, u);
-  if ((0, l.useEffect)(() => (x(), window.addEventListener("resize", x), () => {
-      window.removeEventListener("resize", x)
-    }), [x, null == n ? true : n.join("")]), null == n || 0 === n.length) return null;
-  let h = g ? n : n.slice(0, n.length - s);
+  } = (0, a.KZ)(), O = b(o, n, i, u);
+  if ((0, l.useEffect)(() => (O(), window.addEventListener("resize", O), () => {
+      window.removeEventListener("resize", O)
+    }), [O, null == n ? true : n.join("")]), null == n || 0 === n.length) return null;
+  let x = g ? n : n.slice(0, n.length - s);
   return (0, r.jsxs)("div", {
     className: d.tagListContainer,
-    children: [h.map(e => (0, r.jsx)(f, {
+    children: [x.map(e => (0, r.jsx)(f, {
       tag: e,
       ref: t => {
         null != t && i.current.set(e, t)

@@ -1,3 +1,3 @@
 /** Chunk was on 37993 **/
-/** chunk id: 483592, original params: p (module,exports,require) **/
-module.exports = JSON.parse('{"5+172d":"Стрийм"}')
+/** chunk id: 483592, original params: a (module,exports,require) **/
+module.exports = JSON.parse('{"o/An3t":[[1,"username"]," те помоли да стриймнеш ",[1,"applicationName"]],"DKHheX":"Заявка за стрийм","8qq+Hx":["Заявка за стрийм на ",[1,"applicationName"]],"s7bMT0":[[1,"username"]," те моли да стриймнеш ",[1,"applicationName"]],"7pndSk":["Ти помоли някого да стриймва ",[1,"applicationName"]],"P0wwmJ":"Вече се стриймва","u4QmWl":"Времето за заявката изтече","qRXatr":"Извън гласовия канал","43zohI":"Не играе игра","8HU1Mz":"Заявката е в изчакване","5+172d":"Стрийм","jTbTAA":[[8,"$b",[[1,"username"]]]," иска да те гледа как играеш ",[8,"$b",[[1,"game"]]],". Ще се включиш ли на живо?"]}')

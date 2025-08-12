@@ -1,7 +1,7 @@
 /** Chunk was on 29458 **/
 /** chunk id: 740628, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => h
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk889080 = require("./889080.js"),
   Chunk860130 = require("./860130.js");
 
-function h(e) {
+function x(e) {
   let {
     section: t,
     subsection: n,
@@ -64,7 +64,7 @@ function h(e) {
   })
 }
 
-function O(e) {
+function h(e) {
   var t, n, d;
   let {
     user: u,
@@ -72,7 +72,7 @@ function O(e) {
     displayProfile: p,
     guildId: m,
     items: b,
-    initialSection: O = g.oh.USER_INFO,
+    initialSection: h = g.oh.USER_INFO,
     initialSubsection: v,
     onClose: _
   } = e, {
@@ -80,32 +80,32 @@ function O(e) {
   } = (0, s.KZ)(), P = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), [{
     section: E,
     subsection: Z
-  }, N] = l.useState({
+  }, T] = l.useState({
     section: null != (d = null == (t = b.find(e => {
       let {
         section: t
       } = e;
-      return t === O
+      return t === h
     })) ? true : t.section) ? d : null == (n = b[0]) ? true : n.section,
     subsection: v
   });
   l.useEffect(() => {
-    null == b.find(e => e.section === E) && N({
+    null == b.find(e => e.section === E) && T({
       section: b[0].section,
       subsection: true
     })
   }, [b, E]);
-  let T = l.useCallback(e => {
+  let N = l.useCallback(e => {
     I({
       action: "PRESS_SECTION",
       section: e
-    }), N({
+    }), T({
       section: e,
       subsection: true
     })
-  }, [I, N]);
+  }, [I, T]);
   return P ? (0, r.jsx)("div", {
-    className: x.container,
+    className: O.container,
     children: (0, r.jsxs)("div", {
       className: y.empty,
       children: [(0, r.jsx)("div", {
@@ -116,19 +116,19 @@ function O(e) {
       })]
     })
   }) : (0, r.jsxs)("div", {
-    className: x.container,
+    className: O.container,
     children: [(0, r.jsx)(o.n, {
-      className: x.tabBar,
+      className: O.tabBar,
       type: "top",
       selectedItem: E,
-      onItemSelect: T,
+      onItemSelect: N,
       children: b.map(e => {
         let {
           section: t,
           text: n
         } = e;
         return (0, r.jsx)(o.n.Item, {
-          className: x.tabBarItem,
+          className: O.tabBarItem,
           id: t,
           "aria-label": n,
           children: (0, r.jsx)(a.Text, {
@@ -137,7 +137,7 @@ function O(e) {
           })
         }, t)
       })
-    }), (0, r.jsx)(h, {
+    }), (0, r.jsx)(x, {
       items: b,
       section: E,
       subsection: Z,
