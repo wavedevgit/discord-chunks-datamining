@@ -8,14 +8,22 @@ var Chunk73800 = require("./73800.js"),
   Chunk522942 = require("./522942.js"),
   Chunk481060 = require("./481060.js");
 
-function a() {
-  let e = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.TEXT_DEFAULT).int();
-  return Chunk73800.useMemo(() => ({
-    [Chunk522942.m.SOLID]: [module],
-    [Chunk522942.m.GRADIENT]: [7183099, 6082490],
-    [Chunk522942.m.GLOW]: [0xbaedca],
-    [Chunk522942.m.TOON]: [0xf42098],
-    [Chunk522942.m.NEON]: [6888941],
-    [Chunk522942.m.POP]: [1036166]
-  }), [module])
+function a(e) {
+  let t = (0, o.dQu)(o.TVs.colors.TEXT_DEFAULT).int();
+  return r.useMemo(() => {
+    switch (e) {
+      case i.m.GRADIENT:
+      case i.m.GLOW:
+        return [7183099, 6082490];
+      case i.m.TOON:
+        return [0xf42098];
+      case i.m.NEON:
+        return [6888941];
+      case i.m.POP:
+        return [1036166];
+      case i.m.SOLID:
+      default:
+        return [t]
+    }
+  }, [t, e])
 }

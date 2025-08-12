@@ -50,16 +50,15 @@ let v = Chunk73800.memo(function(e) {
     location: "useDisplayNameStylesFont"
   }), D = (0, m.Y)({
     location: "UserNameWithEffects"
-  }), L = (0, f.dQu)(f.TVs.colors.BACKGROUND_BASE_LOW).hex(), x = null != (t = null == o ? true : o.effectId) ? t : c.m.SOLID, M = (0, b.J)(), k = (0, f.qgQ)(n), j = (0, d.EJ)(k, x === c.m.TOON ? O.emoji : true), U = i.useMemo(() => null != o && D ? o.colors.map(e => {
-    var t, n;
-    let r = a()(e);
-    return P && (r = r.desaturate(1 - R)), (0, p.aP)(r.hex(), x === c.m.TOON ? "#333" : L, null != (n = null == (t = M[x]) ? true : t.minContrastRatio) ? n : 3)
-  }) : [], [o, x, D, P, R, L, M]);
+  }), L = (0, f.dQu)(f.TVs.colors.BACKGROUND_BASE_LOW).hex(), x = (0, b.R)(null != (t = null == o ? true : o.effectId) ? t : c.m.SOLID), M = (0, f.qgQ)(n), k = (0, d.EJ)(M, (null == o ? true : o.effectId) === c.m.TOON ? O.emoji : true), j = i.useMemo(() => null != o && D ? o.colors.map(e => {
+    let t = a()(e);
+    return P && (t = t.desaturate(1 - R)), (0, p.aP)(t.hex(), (null == o ? true : o.effectId) === c.m.TOON ? "#333" : L, x.minContrastRatio)
+  }) : [], [o, D, P, R, L, x]);
   if (!D || !v && !w || null == o) return n;
-  let G = (0, E.K)(x, U, {
+  let U = (0, E.K)(o.effectId, j, {
       shouldWrap: A
     }),
-    B = I(x);
+    G = I(o.effectId);
   return (0, r.jsxs)("div", {
     className: l()(O.container, N, T, {
       [O.showEffect]: s !== g.F.PLAIN,
@@ -67,15 +66,15 @@ let v = Chunk73800.memo(function(e) {
       [O.loop]: S,
       [O.inProfile]: v
     }),
-    style: G,
+    style: U,
     children: [(0, r.jsx)("span", {
-      "data-username-with-effects": k,
-      className: l()(O.innerContainer, null == B ? true : B.effectClassName),
-      children: j
-    }), (null == B ? true : B.glowClassName) != null && (0, r.jsx)("span", {
-      className: l()(O.glowContainer, O.innerContainer, B.glowClassName),
-      "aria-hidden": true,
+      "data-username-with-effects": M,
+      className: l()(O.innerContainer, null == G ? true : G.effectClassName),
       children: k
+    }), (null == G ? true : G.glowClassName) != null && (0, r.jsx)("span", {
+      className: l()(O.glowContainer, O.innerContainer, G.glowClassName),
+      "aria-hidden": true,
+      children: M
     })]
   })
 });
@@ -83,6 +82,7 @@ let v = Chunk73800.memo(function(e) {
 function I(e) {
   switch (e) {
     case c.m.GRADIENT:
+    case c.m.GLOW:
       return {
         effectClassName: O.gradient
       };
@@ -99,10 +99,9 @@ function I(e) {
         effectClassName: O.pop
       };
     case c.m.SOLID:
+    default:
       return {
         effectClassName: O.solid
-      };
-    default:
-      return
+      }
   }
 }

@@ -60,9 +60,7 @@ function u(e) {
   } = i.f.useExperiment({
     location: "useDisplayNameStylesFont"
   });
-  if (!(0, o.Y)({
-      location: "useDisplayNameStylesFont"
-    }) || !r && !a || null == n) return "";
-  let s = c[n.fontId];
-  return null != (t = null == s ? true : s.className) ? t : ""
+  return (0, o.Y)({
+    location: "useDisplayNameStylesFont"
+  }) && (r || a) && null != n ? (null != (t = c[n.fontId]) ? t : l).className : ""
 }

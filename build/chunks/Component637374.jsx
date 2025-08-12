@@ -225,7 +225,9 @@ class K extends Chunk73800.Component {
     let s = r.isPreorder() ? G.intl.formatToPlainString(G.t.evinTU, {
       name: r.name
     }) : r.name;
-    if (e.redeemed) return e.isSubscription || (0, g.mO)(e) ? G.intl.string(G.t.mVC3Cg) : G.intl.format(G.t["ss/L+/"], {
+    if (e.redeemed) return e.isSubscription || (0, g.mO)(e) || (0, D.HL)({
+      productLine: null == r ? true : r.productLine
+    }) ? G.intl.string(G.t.mVC3Cg) : G.intl.format(G.t["ss/L+/"], {
       skuName: s,
       onViewInLibrary: this.handleViewLibrary
     });

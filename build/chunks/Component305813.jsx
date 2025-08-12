@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk22267 = require("./22267.jsx"),
@@ -72,36 +72,36 @@ function E(e) {
       effectId: l,
       colors: E
     }
-  })), w = (0, s.ZP)(), I = (0, i.wjy)(w), [A, L] = (0, o.useState)(I), R = (0, g.ZP)(t.id, null), {
+  })), w = (0, s.ZP)(), I = (0, a.wjy)(w), [R, A] = (0, o.useState)(I), L = (0, g.ZP)(t.id, null), {
     bannerSrc: B
   } = (0, h.Z)({
-    displayProfile: R,
+    displayProfile: L,
     size: 413,
     canAnimate: false
-  }), M = A ? S.BRd.DARK : S.BRd.LIGHT;
-  (I && A || !I && !A) && (M = w);
+  }), M = R ? S.BRd.DARK : S.BRd.LIGHT;
+  (I && R || !I && !R) && (M = w);
   let Z = (0, o.useCallback)(() => {
       j.default.track(S.rMx.DISPLAY_NAME_STYLES_CLOSED), T()
     }, [T]),
     Y = (0, o.useCallback)(e => {
-      L(e === S.BRd.DARK), j.default.track(S.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
+      A(e === S.BRd.DARK), j.default.track(S.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
         dark: e === S.BRd.DARK
       })
     }, []);
   return (0, r.jsxs)("div", {
     className: P.previewSection,
-    children: [(0, r.jsx)(i.xBx, {
+    children: [(0, r.jsx)(a.xBx, {
       "data-migration-pending": true,
       separator: false,
       className: P.sectionHeader,
-      children: (0, r.jsx)(i.olH, {
+      children: (0, r.jsx)(a.olH, {
         "data-migration-pending": true,
         onClick: Z,
         innerClassName: P.closeButton
       })
     }), null != B && (0, r.jsx)(b.Z, {
       user: D,
-      displayProfile: R,
+      displayProfile: L,
       themeType: C.lY.MODAL_V2,
       className: P.backgroundThemeContainer,
       forceUserTheme: true,
@@ -111,10 +111,10 @@ function E(e) {
           backgroundImage: "url(".concat(B, ")")
         }
       })
-    }), (0, r.jsx)(i.f6W, {
+    }), (0, r.jsx)(a.f6W, {
       theme: M,
       children: e => (0, r.jsxs)("div", {
-        className: a()(P.previewCards, e),
+        className: i()(P.previewCards, e),
         inert: true,
         children: [(0, r.jsx)(m.Z, {
           user: D,
@@ -148,14 +148,14 @@ function E(e) {
       })
     }), (0, r.jsxs)("div", {
       className: P.themeToggleSection,
-      children: [(0, r.jsx)(i.Text, {
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: O.intl.format(y.default.prQba2, {
           helpArticleLink: _.Z.getArticleURL(S.BhN.DISPLAY_NAME_STYLES)
         })
       }), (0, r.jsx)(N, {
-        darkPreview: A,
+        darkPreview: R,
         onToggleTheme: Y
       })]
     })]
@@ -167,19 +167,19 @@ function N(e) {
     darkPreview: t,
     onToggleTheme: n
   } = e;
-  return (0, r.jsx)(i.sY7, {
+  return (0, r.jsx)(a.sY7, {
     className: P.themeToggleControl,
     optionClassName: P.themeToggleOption,
     options: [{
       name: "",
       tooltip: O.intl.string(O.t.b8Cei4),
       value: S.BRd.DARK,
-      icon: i.Z6G
+      icon: a.Z6G
     }, {
       name: "",
       tooltip: O.intl.string(O.t.K2sFfn),
       value: S.BRd.LIGHT,
-      icon: i.chG
+      icon: a.chG
     }],
     value: t ? S.BRd.DARK : S.BRd.LIGHT,
     onChange: e => {
