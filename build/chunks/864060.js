@@ -2,10 +2,10 @@
 /** chunk id: 864060, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   FI: () => G,
-  LL: () => w,
+  LL: () => L,
   N_: () => M,
   Xi: () => H,
-  eF: () => L
+  eF: () => w
 }), require("./997841.js"), require("./953529.js"), require("./415506.js");
 var Chunk317381 = require("./317381.js"),
   Chunk933557 = require("./933557.js"),
@@ -41,14 +41,14 @@ var Chunk842619 = require("./842619.js"),
   Chunk124368 = require("./124368.js"),
   Chunk388032 = require("./388032.jsx");
 
-function w(t, e, n) {
+function L(t, e, n) {
   let i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
   if (e.hasFlag(R.xW$.SPAMMER) || n.isManaged()) returnfalse;
   let l = n.getGuildId();
   return !(null != l && o.Z.isLurking(l) || !i.ignoreSameUser && e.id === t.id || h.Z.isBlockedOrIgnored(e.id) || !i.ignoreStatus && A.Z.getStatus() === R.Skl.DND || E.QZ.getSetting() || !i.ignoreNoMessagesSetting && v.ZP.allowNoMessages(n))
 }
 
-function L(t, e) {
+function w(t, e) {
   var n, l;
   let a = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3];
@@ -57,7 +57,7 @@ function L(t, e) {
   t.type === R.uaV.THREAD_STARTER_MESSAGE && (o = N.Z.getChannel(null == o ? true : o.parent_id));
   let s = m.default.getCurrentUser(),
     d = m.default.getUser(null == (n = t.author) ? true : n.id);
-  if (null == o || null == s || null == d || o.type === R.d4z.GROUP_DM && t.type === R.uaV.RECIPIENT_REMOVE || U.Z.areSlayerNotificationsSuppressed() && ((l = o).type === R.d4z.DM || null != l.linkedLobby) || !w(s, d, o, {
+  if (null == o || null == s || null == d || o.type === R.d4z.GROUP_DM && t.type === R.uaV.RECIPIENT_REMOVE || U.Z.areSlayerNotificationsSuppressed() && ((l = o).type === R.d4z.DM || null != l.linkedLobby) || !L(s, d, o, {
       ignoreStatus: r,
       ignoreSameUser: R.V$x.SELF_MENTIONABLE_SYSTEM.has(t.type)
     }) || u.Z.isMessageRequest(e)) returnfalse;
@@ -109,7 +109,7 @@ function G(t, e) {
     i = arguments.length > 3 && true !== arguments[3] && arguments[3],
     l = m.default.getCurrentUser(),
     a = m.default.getUser(t.ownerId);
-  return !(null == e || null == l || null == a || !w(l, a, e, {
+  return !(null == e || null == l || null == a || !L(l, a, e, {
     ignoreStatus: i,
     ignoreNoMessagesSetting: true
   }) || v.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)) && (!!n || C.Z.getChannelId(Z.Z.getGuildId()) !== e.id) && v.ZP.getNewForumThreadsCreated(e)

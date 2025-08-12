@@ -305,7 +305,7 @@ tc(tD, "displayName", "NotificationStore"), new tD(Chunk570140.Z, __OVERLAY__ ? 
       icon: m,
       title: y,
       body: R
-    } = (0, D.Xi)(f, u, _), w = !(0, U._x)("NotificationStore.handleMessage", null == E ? true : E.id);
+    } = (0, D.Xi)(f, u, _), L = !(0, U._x)("NotificationStore.handleMessage", null == E ? true : E.id);
     if (s.Z.dispatch({
         type: "RPC_NOTIFICATION_CREATE",
         channelId: f.id,
@@ -314,7 +314,7 @@ tc(tD, "displayName", "NotificationStore"), new tD(Chunk570140.Z, __OVERLAY__ ? 
         title: y,
         body: R
       }), (0, O.R)(u, f.guild_id), z.Z.getDesktopType() === tu.qrD.NEVER) return N && to.Z.playNotificationSound(tg, t_, C), false;
-    let L = null != (r = q.Z.getMessage(o, u.id)) ? r : (0, P.e5)(u);
+    let w = null != (r = q.Z.getMessage(o, u.id)) ? r : (0, P.e5)(u);
     to.Z.showNotification(m, y, R, {
       notif_type: "MESSAGE_CREATE",
       notif_user_id: null == (i = u.author) ? true : i.id,
@@ -323,9 +323,9 @@ tc(tD, "displayName", "NotificationStore"), new tD(Chunk570140.Z, __OVERLAY__ ? 
       channel_id: f.id,
       channel_type: f.type,
       guild_id: f.guild_id,
-      badge: (0, X.Ex)(L, E)
+      badge: (0, X.Ex)(w, E)
     }, {
-      omitViewTracking: w,
+      omitViewTracking: L,
       tag: u.id,
       sound: N ? tg : true,
       soundpack: C,
@@ -334,7 +334,8 @@ tc(tD, "displayName", "NotificationStore"), new tD(Chunk570140.Z, __OVERLAY__ ? 
         (0, M.Kh)(f.id), (f.type === tu.d4z.GUILD_VOICE || f.type === tu.d4z.GUILD_STAGE_VOICE) && c.Z.updateChatOpen(f.id, true), g.default.clickedNotification()
       },
       isUserAvatar: true,
-      messageRecord: L
+      messageRecord: w,
+      fallbackDeepLink: (0, to.W)(tu.Z5c.CHANNEL(f.guild_id, f.id, u.id))
     }).then(t => {
       null != t && tZ.track(f.id, t.notification, t.trackingProps)
     })
@@ -564,7 +565,7 @@ tc(tD, "displayName", "NotificationStore"), new tD(Chunk570140.Z, __OVERLAY__ ? 
     if (tP() || null == n || null == i || null == a) returnfalse;
     let {
       enableInAppNotifications: o
-    } = w.Z.getCurrentConfig({
+    } = L.Z.getCurrentConfig({
       location: "desktopNotification"
     }, {
       autoTrackExposure: true

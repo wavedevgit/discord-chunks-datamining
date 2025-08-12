@@ -2,14 +2,15 @@
 /** chunk id: 206583, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  $f: () => l,
   G: () => s,
-  Hw: () => l,
+  Hw: () => c,
   Kd: () => i,
   YN: () => r,
   k4: () => a,
-  kG: () => u,
+  kG: () => d,
   xP: () => o,
-  yh: () => c
+  yh: () => u
 });
 var r = function(e) {
     return e.GLOBAL_FEED = "global feed", e.GAME_PROFILE_FEED = "game profile feed", e
@@ -22,8 +23,9 @@ var r = function(e) {
   }({});
 let a = 1e4,
   s = 7,
-  l = ["1395438911366627454"],
-  c = ["432980957394370572", "1402418703554842694", "1377010135989223574"];
-var u = function(e) {
+  l = "https://www.igdb.com/about",
+  c = ["1395438911366627454"],
+  u = ["432980957394370572", "1402418703554842694", "1377010135989223574"];
+var d = function(e) {
   return e[e.SPOTIFY = 1] = "SPOTIFY", e[e.CRUNCHYROLL = 2] = "CRUNCHYROLL", e[e.XBOX = 3] = "XBOX", e[e.PLAYSTATION = 4] = "PLAYSTATION", e
 }({})

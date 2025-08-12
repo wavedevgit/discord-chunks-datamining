@@ -8,15 +8,14 @@ require.d(exports, {
   JP: () => s,
   KZ: () => _,
   Lr: () => d,
-  NV: () => g,
   V5: () => p,
   Vv: () => m,
-  X: () => b,
-  a7: () => E,
+  X: () => E,
+  a7: () => g,
   fL: () => h,
   ib: () => c,
-  ln: () => y,
-  r0: () => O
+  ln: () => b,
+  r0: () => y
 });
 var Chunk70956 = require("./70956.js"),
   Chunk411198 = require("./411198.js"),
@@ -28,10 +27,10 @@ let s = "Notifications Inbox",
   u = 50,
   d = "notifications-inbox";
 
-function f() {
-  return (0, Chunk411198.yS)({
-    id: Chunk981631.STv,
-    name: Chunk388032.intl.string(Chunk388032.t.HcoRu7),
+function f(e) {
+  return (0, i.yS)({
+    id: o.STv,
+    name: "bookmarks" === e ? a.intl.string(a.t["2pAkDA"]) : a.intl.string(a.t.HcoRu7),
     description: "",
     icon: true,
     features: []
@@ -41,7 +40,7 @@ var _ = function(e) {
     return e.UNREAD = "UNREAD", e.TODAY = "TODAY", e.YESTERDAY = "YESTERDAY", e.OLDER = "OLDER", e
   }({}),
   p = function(e) {
-    return e.ALL = "all", e.ANNOUNCEMENTS = "announcements", e.MENTIONS = "mentions", e.BOOKMARKS = "bookmarks", e
+    return e.ALL = "all", e.BOOKMARKS = "bookmarks", e
   }({}),
   h = function(e) {
     return e.ALL_MESSAGES_CHANNEL = "ALL_MESSAGES_CHANNEL", e.MENTION = "MENTION", e.BOOKMARK = "BOOKMARK", e
@@ -52,24 +51,15 @@ let m = {
   YESTERDAY: Chunk388032.t.gnv4pK,
   OLDER: Chunk388032.t.exrPZm
 };
-
-function g() {
-  return {
-    all: Chunk388032.intl.string(Chunk388032.t.iWyjNj),
-    bookmarks: Chunk388032.intl.string(Chunk388032.t["+rlGYW"]),
-    announcements: Chunk388032.intl.string(Chunk388032.t.jR39HB),
-    mentions: Chunk388032.intl.string(Chunk388032.t["GRZF9/"])
-  }
-}
-var E = function(e) {
+var g = function(e) {
     return e.UNLOADED = "unloaded", e.LOADED = "loaded", e.LOADED_UNREAD = "loadedUnread", e
   }({}),
-  b = function(e) {
+  E = function(e) {
     return e.AUTO_LOAD = "auto_load", e.ON_OPEN = "on_open", e.FILL_SCROLLER = "fill_scroller", e.USER_SCROLL = "user_scroll", e.UNKNOWN = "unknown", e
   }({}),
-  y = function(e) {
+  b = function(e) {
     return e.MENTION = "MENTION", e.REPLY = "REPLY", e.REACTION = "REACTION", e.ANNOUNCEMENT = "ANNOUNCEMENT", e.MESSAGE = "MESSAGE", e
   }({}),
-  O = function(e) {
+  y = function(e) {
     return e.ACK = "ACK", e.BOOKMARK = "BOOKMARK", e.SETTINGS = "SETTINGS", e
   }({})

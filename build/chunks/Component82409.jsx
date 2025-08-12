@@ -1,7 +1,7 @@
 /** Chunk was on 26628 **/
 /** chunk id: 82409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => G
+  Z: () => B
 }), require("./361932.js"), require("./187205.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -57,21 +57,22 @@ function M(e) {
   }
   return e
 }
-let k = {
-  controller: new Chunk717976.Controller({
-    value: 1,
-    immediate: true
-  }),
-  renderBanner: false,
-  bannerVisible: false,
-  communityInfoVisible: false,
-  shouldShowSubscribeTooltip: false,
-  bannerVisibleHeight: Chunk982183.$J,
-  hasGuildSubheader: false,
-  disableBannerAnimation: true
-};
+let k = [],
+  U = {
+    controller: new Chunk717976.Controller({
+      value: 1,
+      immediate: true
+    }),
+    renderBanner: false,
+    bannerVisible: false,
+    communityInfoVisible: false,
+    shouldShowSubscribeTooltip: false,
+    bannerVisibleHeight: Chunk982183.$J,
+    hasGuildSubheader: false,
+    disableBannerAnimation: true
+  };
 
-function U(e) {
+function G(e) {
   var t, n;
   let {
     includePanelSpacing: l
@@ -89,22 +90,21 @@ function U(e) {
     guildId: e.guildId,
     ReadStateStore_: y.ZP,
     GuildStore_: O.Z
-  }) || (0, I.Tj)(e, x.Z.selectedItemInfo))), U = i.useCallback(e => {
+  }) || (0, I.Tj)(e, x.Z.selectedItemInfo))), G = i.useCallback(e => {
     p !== A.V5.BOOKMARKS && j.Z.loadMoreInbox({
       viewId: s,
-      loadingTrigger: e,
-      onlyMentions: p === A.V5.MENTIONS
+      loadingTrigger: e
     })
   }, [p, s]), {
-    hasLoadedEver: G,
+    hasLoadedEver: B,
     canLoadMore: W
   } = (0, a.cj)([x.Z], () => ({
     hasLoadedEver: x.Z.hasLoadedEver,
     canLoadMore: x.Z.canLoadMore({})
   }));
   i.useEffect(() => {
-      W && !G && U(A.X.ON_OPEN)
-    }, [W, G, U]),
+      W && !B && G(A.X.ON_OPEN)
+    }, [W, B, G]),
     function(e) {
       let {
         unreadChannelIds: t
@@ -123,14 +123,14 @@ function U(e) {
           }, true)
         })
       }, [e, t])
-    }(G ? D : null);
+    }(B ? D : null);
   let K = (0, a.Wu)([m.Z], () => m.Z.getSavedMessages()),
     Y = i.useMemo(() => K.flatMap(e => {
       var t;
       let {
         message: n
       } = e;
-      return null == n ? [] : [{
+      return null == n ? k : [{
         id: n.id,
         channelId: n.channel_id,
         guildId: null == (t = b.Z.getBasicChannel(n.channel_id)) ? true : t.guild_id,
@@ -138,8 +138,8 @@ function U(e) {
         message: n
       }]
     }), [K]),
-    q = B(w, p, P),
-    X = B(D, p, null);
+    q = V(w, p, P),
+    X = V(D, p, null);
   (0, h.ZP)(() => {
     var e;
     u.Z.dispatch({
@@ -203,7 +203,7 @@ function U(e) {
     entrypoints: J
   } = (0, g._k)({
     location: "NotificationsInboxSidebar"
-  }), $ = Q === v.v8.DROPDOWN && p !== A.V5.ALL, ee = (0, A.H_)();
+  }), $ = Q === v.v8.DROPDOWN && p !== A.V5.ALL, ee = (0, A.H_)(p);
   return (0, r.jsx)("nav", {
     className: o()(L.container, {
       [L.panelSpacing]: l
@@ -213,7 +213,7 @@ function U(e) {
       component: (0, r.jsx)(f.ZP, (t = M({
         hasSubheader: true,
         guild: ee
-      }, k), n = n = {
+      }, U), n = n = {
         children: (0, r.jsx)(c.Kqy, {
           direction: "horizontal",
           gap: 4,
@@ -232,54 +232,44 @@ function U(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)),
-      children: [Q === v.v8.TABS && (0, r.jsx)(Z.Z, {}), p === A.V5.ALL && (0, r.jsx)(H, {
-        hideBanner: !G || p !== A.V5.ALL
-      }), $ && (0, r.jsx)(z, {
-        filter: p
+      children: [p === A.V5.ALL && (0, r.jsx)(z, {
+        hideBanner: !B || p !== A.V5.ALL
+      }), $ && (0, r.jsx)(c.LZC, {
+        size: 8
       }), (0, r.jsx)(T.Z, {
         className: L.messageList,
-        renderMessageGroup: F,
+        renderMessageGroup: H,
         messages: p === A.V5.BOOKMARKS ? Y : q,
         unreadMessages: p === A.V5.BOOKMARKS ? [] : X,
         listName: "notifications-inbox",
-        renderLoadingState: V,
+        renderLoadingState: F,
         ignoreGrouping: p === A.V5.BOOKMARKS,
-        loadMore: U
+        loadMore: G
       })]
     })
   })
 }
 
-function G(e) {
+function B(e) {
   return (0, r.jsx)(E.HP, {
-    children: (0, r.jsx)(U, M({}, e))
+    children: (0, r.jsx)(G, M({}, e))
   })
 }
 
-function B(e, t, n) {
-  return i.useMemo(() => 0 === e.length ? [] : e.filter(e => {
+function V(e, t, n) {
+  return i.useMemo(() => 0 === e.length || t === A.V5.BOOKMARKS ? k : e.filter(e => {
     let {
-      id: r,
-      channelId: i,
-      kind: l
+      id: r
     } = e;
-    if (C.default.age(r) > A.ib) returnfalse;
-    if (t === A.V5.MENTIONS) return l === A.fL.MENTION;
-    if (null != n && 0 >= C.default.compare(r, n)) returnfalse;
-    if (t === A.V5.ALL) returntrue;
-    if (t === A.V5.ANNOUNCEMENTS) {
-      let e = b.Z.getBasicChannel(i);
-      return (null == e ? true : e.type) === R.d4z.GUILD_ANNOUNCEMENT
-    }
-    returnfalse
+    return !(C.default.age(r) > A.ib || null != n && 0 >= C.default.compare(r, n)) && t === A.V5.ALL
   }), [e, t, n])
 }
 
-function V() {
+function F() {
   return (0, Chunk255367.jsx)(Chunk862149.Z, {})
 }
 
-function F(e, t) {
+function H(e, t) {
   return (0, r.jsx)(w.Z, {
     message: e[0],
     groupedMessages: e.slice(1),
@@ -287,7 +277,7 @@ function F(e, t) {
   }, e[0].id)
 }
 
-function H(e) {
+function z(e) {
   let {
     hideBanner: t
   } = e, n = (0, P.d)(e => e.shouldHide());
@@ -308,16 +298,4 @@ function H(e) {
       })]
     })
   })
-}
-
-function z(e) {
-  let {
-    filter: t
-  } = e, n = (0, A.NV)();
-  return (0, r.jsx)(c.X6q, {
-    color: "text-primary",
-    variant: "text-sm/semibold",
-    className: L.filterHeaderWrap,
-    children: n[t]
-  }, "filter-header")
 }
