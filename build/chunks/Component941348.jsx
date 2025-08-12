@@ -23,44 +23,50 @@ let p = function(e) {
     onCtxMenuClosed: x,
     onCtxMenuSelection: h,
     quest: j,
-    useReducedMotion: _,
-    collapsedHeight: b
-  } = e, v = s.useRef(null), C = s.useRef(null), y = (null == (t = j.userStatus) ? true : t.enrolledAt) != null, O = (0, o.Rf)(j);
+    useReducedMotion: b,
+    collapsedHeight: _,
+    shouldShowRewardsCTAWhenCollapsed: v
+  } = e, C = s.useRef(null), y = s.useRef(null), O = (null == (t = j.userStatus) ? true : t.enrolledAt) != null, E = (0, o.Rf)(j);
   return (0, r.jsxs)(i.p, {
     expandedContentRef: n,
-    collapsedContentRef: v,
+    collapsedContentRef: C,
     expansionSpring: p,
     children: [(0, r.jsx)(l.Z, {
-      ref: v,
+      ref: C,
       className: d.content,
       expansionSpring: p,
       isExpanded: m,
       isExpansionAnimationComplete: g,
       quest: j,
-      useReducedMotion: _,
-      taskDetails: O
-    }), (0, r.jsx)(c.Z, {
-      expansionSpring: p,
-      className: d.content,
-      collapsedHeight: b,
+      useReducedMotion: b,
+      taskDetails: E,
       onCtxMenuOpen: f,
       onCtxMenuClose: x,
       onCtxMenuSelect: h,
-      overlayRef: C,
+      overlayRef: y,
+      shouldShowRewardsCTAWhenCollapsed: v
+    }, v ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
+      expansionSpring: p,
+      className: d.content,
+      collapsedHeight: _,
+      onCtxMenuOpen: f,
+      onCtxMenuClose: x,
+      onCtxMenuSelect: h,
+      overlayRef: y,
       isExpanded: m,
       isExpansionAnimationComplete: g,
       quest: j,
-      useReducedMotion: _,
+      useReducedMotion: b,
       ref: n,
-      taskDetails: O,
+      taskDetails: E,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(u.Z, {
           expansionSpring: p,
           isExpanded: m
-        }), !y && (0, r.jsx)(a.Z, {
+        }), !O && (0, r.jsx)(a.Z, {
           quest: j,
           expansionSpring: p,
-          useReducedMotion: _,
+          useReducedMotion: b,
           isExpanded: m,
           isExpansionAnimationComplete: g,
           onCtxMenuOpen: f,
@@ -69,7 +75,7 @@ let p = function(e) {
         })]
       })
     }), (0, r.jsx)("div", {
-      ref: C,
+      ref: y,
       className: d.overlay
     })]
   })

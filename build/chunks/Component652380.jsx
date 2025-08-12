@@ -57,7 +57,7 @@ function k(e) {
   return e
 }
 
-function I(e, t) {
+function q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,9 +69,9 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let q = ["png", "gif", "webp"],
-  D = [...q, "jpg", "jpeg"],
-  Q = Array.from(new Set([...D, "gif", "mp4", "webm"]));
+let I = ["png", "gif", "webp"],
+  Q = [...I, "jpg", "jpeg"],
+  D = Array.from(new Set([...Q, "gif", "mp4", "webm"]));
 
 function V(e) {
   var t, n;
@@ -85,7 +85,7 @@ function V(e) {
   }
 }
 
-function L() {
+function M() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     {
       streamProgressSeconds: t = 0,
@@ -106,12 +106,12 @@ function L() {
     progress: {}
   }
 }
-let M = "1193992107035983872",
+let L = "1193992107035983872",
   Z = {
-    id: M,
+    id: L,
     preview: true,
     config: {
-      id: M,
+      id: L,
       configVersion: 2,
       startsAt: "2024-01-01T00:00:00+00:00",
       expiresAt: "2030-01-01T00:00:00+00:00",
@@ -175,24 +175,24 @@ let M = "1193992107035983872",
   };
 
 function W() {
-  var e, t, o, u, B, V, M, W;
-  let [U, H] = Chunk73800.useState(Z), z = Chunk73800.useCallback(e => {
-    H(I(k({}, e), {
+  var e, t, o, u, B, V, L, W;
+  let [U, H] = Chunk73800.useState(Z), F = Chunk73800.useCallback(e => {
+    H(q(k({}, e), {
       preview: true
     }))
-  }, []), [F, X] = Chunk73800.useState(Chunk899457.a.UNENROLLED), [K, Y] = Chunk73800.useState(false), [G, J] = Chunk73800.useState(false), [$, ee] = Chunk73800.useState(null), et = (W = U.config, (0, Chunk278074.EQ)(W).with({
+  }, []), [z, X] = Chunk73800.useState(Chunk899457.a.UNENROLLED), [K, Y] = Chunk73800.useState(false), [G, J] = Chunk73800.useState(false), [$, ee] = Chunk73800.useState(null), et = (W = U.config, (0, Chunk278074.EQ)(W).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
   function en(e, t) {
     if ("hero" === e || "questBarHero" === e || "gameTile" === e || "logotype" === e || "heroVideo" === e || "questBarHeroVideo" === e) {
       var n, r;
-      z(I(k({}, U), {
+      F(q(k({}, U), {
         config: (n = U.config, r = {
           [e]: t
         }, (0, i.EQ)(n).with({
           configVersion: 2
-        }, e => I(k({}, e), {
+        }, e => q(k({}, e), {
           assets: k({}, e.assets, r)
         })).exhaustive())
       }))
@@ -216,18 +216,18 @@ function W() {
         };
         break;
       case "videoPlayerThumbnail":
-        s.video = I(k({}, s.video), {
+        s.video = q(k({}, s.video), {
           thumbnail: t
         });
         break;
       default:
         return
     }
-    z(I(k({}, U), {
-      config: I(k({}, U.config), {
-        taskConfigV2: I(k({}, U.config.taskConfigV2), {
-          tasks: I(k({}, n), {
-            [l.X.WATCH_VIDEO]: I(k({}, r), {
+    F(q(k({}, U), {
+      config: q(k({}, U.config), {
+        taskConfigV2: q(k({}, U.config.taskConfigV2), {
+          tasks: q(k({}, n), {
+            [l.X.WATCH_VIDEO]: q(k({}, r), {
               assets: s
             })
           })
@@ -238,11 +238,11 @@ function W() {
 
   function es(e, t) {
     var n, r, s;
-    z(I(k({}, U), {
-      config: I(k({}, U.config), {
-        videoMetadata: I(k({}, U.config.videoMetadata), {
+    F(q(k({}, U), {
+      config: q(k({}, U.config), {
+        videoMetadata: q(k({}, U.config.videoMetadata), {
           messages: null != (s = null == (n = U.config.videoMetadata) ? true : n.messages) ? s : {},
-          assets: I(k({}, null == (r = U.config.videoMetadata) ? true : r.assets), {
+          assets: q(k({}, null == (r = U.config.videoMetadata) ? true : r.assets), {
             [e]: t
           })
         })
@@ -253,12 +253,12 @@ function W() {
   function eo(e, t) {
     if ("questName" === e || "gameTitle" === e || "gamePublisher" === e) {
       var n, r;
-      z(I(k({}, U), {
+      F(q(k({}, U), {
         config: (n = U.config, r = {
           [e]: t
         }, (0, i.EQ)(n).with({
           configVersion: 2
-        }, e => I(k({}, e), {
+        }, e => q(k({}, e), {
           messages: k({}, e.messages, r)
         })).exhaustive())
       }))
@@ -269,14 +269,14 @@ function W() {
     let n = U.config.taskConfigV2.tasks,
       r = n[l.X.WATCH_VIDEO];
     if (null == r) return;
-    let s = I(k({}, r.messages), {
+    let s = q(k({}, r.messages), {
       [e]: t
     });
-    z(I(k({}, U), {
-      config: I(k({}, U.config), {
-        taskConfigV2: I(k({}, U.config.taskConfigV2), {
-          tasks: I(k({}, n), {
-            [l.X.WATCH_VIDEO]: I(k({}, r), {
+    F(q(k({}, U), {
+      config: q(k({}, U.config), {
+        taskConfigV2: q(k({}, U.config.taskConfigV2), {
+          tasks: q(k({}, n), {
+            [l.X.WATCH_VIDEO]: q(k({}, r), {
               messages: s
             })
           })
@@ -288,14 +288,14 @@ function W() {
   function ei(e, t, n) {
     if ("name" === e || "nameWithArticle" === e) {
       var r, s;
-      z(I(k({}, U), {
+      F(q(k({}, U), {
         config: (r = U.config, s = {
           [e]: t
         }, (0, i.EQ)(r).with({
           configVersion: 2
-        }, e => I(k({}, e), {
-          rewardsConfig: I(k({}, e.rewardsConfig), {
-            rewards: e.rewardsConfig.rewards.map((e, t) => t === n ? I(k({}, e), {
+        }, e => q(k({}, e), {
+          rewardsConfig: q(k({}, e.rewardsConfig), {
+            rewards: e.rewardsConfig.rewards.map((e, t) => t === n ? q(k({}, e), {
               messages: k({}, e.messages, s)
             }) : e)
           })
@@ -305,9 +305,9 @@ function W() {
   }
 
   function el(e, t) {
-    z(I(k({}, U), {
-      config: I(k({}, U.config), {
-        colors: I(k({}, U.config.colors), {
+    F(q(k({}, U), {
+      config: q(k({}, U.config), {
+        colors: q(k({}, U.config.colors), {
           [e]: t
         })
       })
@@ -341,14 +341,14 @@ function W() {
       children: (0, Chunk255367.jsx)(Chunk916028.Z, {
         onSelect: function(e) {
           ee(e), null != e && (X(function(e) {
-            if (null == e.userStatus) return A.a.UNENROLLED;
-            if (null != e.userStatus.claimedAt) return A.a.CLAIMED;
-            if (null != e.userStatus.completedAt) return A.a.COMPLETED_100;
+            if (null == e.userStatus) return N.a.UNENROLLED;
+            if (null != e.userStatus.claimedAt) return N.a.CLAIMED;
+            if (null != e.userStatus.completedAt) return N.a.COMPLETED_100;
             let t = (0, m.il)(e),
               n = t.progressSeconds,
               r = t.targetSeconds;
-            return n / r >= 1 ? A.a.COMPLETED_100 : n / r >= .75 ? A.a.COMPLETED_75 : n / r >= .5 ? A.a.COMPLETED_50 : n / r >= .25 ? A.a.COMPLETED_25 : A.a.ENROLLED
-          }(e)), z(e))
+            return n / r >= 1 ? N.a.COMPLETED_100 : n / r >= .75 ? N.a.COMPLETED_75 : n / r >= .5 ? N.a.COMPLETED_50 : n / r >= .25 ? N.a.COMPLETED_25 : N.a.ENROLLED
+          }(e)), F(e))
         },
         quest: $
       })
@@ -362,8 +362,8 @@ function W() {
         taskDuration: eu,
         taskConfigV2: U.config.taskConfigV2,
         onSelect: function(e) {
-          z(I(k({}, U), {
-            config: I(k({}, U.config), {
+          F(q(k({}, U), {
+            config: q(k({}, U.config), {
               taskConfigV2: e
             })
           }))
@@ -418,68 +418,68 @@ function W() {
         title: "Hero",
         assetKey: "hero",
         onFileChange: en,
-        filters: Q,
+        filters: D,
         initialValue: U.config.assets.hero
       }), (0, Chunk255367.jsx)(Chunk210851.Z, {
         title: "Hero Video (optional)",
         assetKey: "heroVideo",
         onFileChange: en,
-        filters: Q,
+        filters: D,
         initialValue: null != (V = U.config.assets.heroVideo) ? V : true
       }), (0, Chunk255367.jsx)(Chunk210851.Z, {
         title: "Quest Bar Hero",
         assetKey: "questBarHero",
         onFileChange: en,
-        filters: Q,
+        filters: D,
         initialValue: U.config.assets.questBarHero
       }), (0, Chunk255367.jsx)(Chunk210851.Z, {
         title: "Quest Bar Hero Video (optional)",
         assetKey: "questBarHeroVideo",
         onFileChange: en,
-        filters: Q,
-        initialValue: null != (M = U.config.assets.questBarHeroVideo) ? M : true
+        filters: D,
+        initialValue: null != (L = U.config.assets.questBarHeroVideo) ? L : true
       }), (0, Chunk255367.jsx)(Chunk210851.Z, {
         title: "Game Tile",
         assetKey: "gameTile",
         onFileChange: en,
-        filters: [...D, "svg"],
+        filters: [...Q, "svg"],
         initialValue: U.config.assets.gameTile
       }), (0, Chunk255367.jsx)(Chunk210851.Z, {
         title: "Logotype",
         assetKey: "logotype",
         onFileChange: en,
-        filters: [...q, "svg"],
+        filters: [...I, "svg"],
         initialValue: U.config.assets.logotype
       }), ed && (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
         children: [(0, Chunk255367.jsx)(Chunk210851.Z, {
           title: "Quest Video",
           assetKey: "videoPlayerVideo",
           onFileChange: er,
-          filters: Q,
+          filters: D,
           initialValue: null == ep ? true : ep.assets.video.url
         }), (0, Chunk255367.jsx)(Chunk210851.Z, {
           title: "Quest Video (Low Resolution)",
           assetKey: "videoPlayerVideoLowRes",
           onFileChange: er,
-          filters: Q,
+          filters: D,
           initialValue: null == ep || null == (e = ep.assets.videoLowRes) ? true : module.url
         }), (0, Chunk255367.jsx)(Chunk210851.Z, {
           title: "Video Player Thumbnail (optional)",
           assetKey: "videoPlayerThumbnail",
           onFileChange: er,
-          filters: D,
+          filters: Q,
           initialValue: null == ep ? true : ep.assets.video.thumbnail
         }), (0, Chunk255367.jsx)(Chunk210851.Z, {
           title: "Quest Bar Preview Video (optional)",
           assetKey: "questBarPreviewVideo",
           onFileChange: es,
-          filters: Q,
+          filters: D,
           initialValue: null == (t = U.config.videoMetadata) ? true : exports.assets.questBarPreviewVideo
         }), (0, Chunk255367.jsx)(Chunk210851.Z, {
           title: "Quest Home Video (optional)",
           assetKey: "questHomeVideo",
           onFileChange: es,
-          filters: Q,
+          filters: D,
           initialValue: null == (o = U.config.videoMetadata) ? true : Chunk512722.assets.questHomeVideo
         })]
       })]
@@ -506,12 +506,12 @@ function W() {
           onFileChange: (e, n) => (function(e, t, n) {
             if ("asset" === e) {
               var r;
-              z(I(k({}, U), {
+              F(q(k({}, U), {
                 config: (r = U.config, (0, i.EQ)(r).with({
                   configVersion: 2
-                }, e => I(k({}, e), {
-                  rewardsConfig: I(k({}, e.rewardsConfig), {
-                    rewards: e.rewardsConfig.rewards.map((e, r) => r === n ? I(k({}, e), {
+                }, e => q(k({}, e), {
+                  rewardsConfig: q(k({}, e.rewardsConfig), {
+                    rewards: e.rewardsConfig.rewards.map((e, r) => r === n ? q(k({}, e), {
                       asset: t,
                       skuId: ""
                     }) : e)
@@ -520,7 +520,7 @@ function W() {
               }))
             }
           })(e, n, t),
-          filters: Q,
+          filters: D,
           initialValue: e.asset
         }), (0, r.jsxs)(d.xJW, {
           children: [(0, r.jsx)(d.vwX, {
@@ -560,54 +560,54 @@ function W() {
       }), (0, Chunk255367.jsx)(Chunk899457.Z, {
         onChange: function(e) {
           switch (X(e), e) {
-            case A.a.UNENROLLED:
-              z(I(k({}, U), {
+            case N.a.UNENROLLED:
+              F(q(k({}, U), {
                 userStatus: null
               }));
               break;
-            case A.a.ENROLLED:
-              z(I(k({}, U), {
-                userStatus: L({
+            case N.a.ENROLLED:
+              F(q(k({}, U), {
+                userStatus: M({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
-            case A.a.COMPLETED_25:
-              z(I(k({}, U), {
-                userStatus: L({
+            case N.a.COMPLETED_25:
+              F(q(k({}, U), {
+                userStatus: M({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .25 * eu
                 })
               }));
               break;
-            case A.a.COMPLETED_50:
-              z(I(k({}, U), {
-                userStatus: L({
+            case N.a.COMPLETED_50:
+              F(q(k({}, U), {
+                userStatus: M({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .5 * eu
                 })
               }));
               break;
-            case A.a.COMPLETED_75:
-              z(I(k({}, U), {
-                userStatus: L({
+            case N.a.COMPLETED_75:
+              F(q(k({}, U), {
+                userStatus: M({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .75 * eu
                 })
               }));
               break;
-            case A.a.COMPLETED_100:
-              z(I(k({}, U), {
-                userStatus: L({
+            case N.a.COMPLETED_100:
+              F(q(k({}, U), {
+                userStatus: M({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: eu
                 })
               }));
               break;
-            case A.a.CLAIMED:
-              z(I(k({}, U), {
-                userStatus: L({
+            case N.a.CLAIMED:
+              F(q(k({}, U), {
+                userStatus: M({
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
@@ -616,7 +616,7 @@ function W() {
               }))
           }
         },
-        value: F
+        value: z
       })]
     }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/bold",
@@ -737,7 +737,7 @@ function W() {
               } = await Promise.all([require.e("66816"), require.e("32249"), require.e("63942")]).then(require.bind(require, 536687));
               return t => {
                 var n;
-                return (0, r.jsx)(e, I(k({}, t), {
+                return (0, r.jsx)(e, q(k({}, t), {
                   openStartClockTime: performance.now(),
                   videoSessionId: "fake-quest-session-id",
                   questId: null != (n = U.id) ? n : "fake-quest-id",

@@ -1,7 +1,7 @@
 /** Chunk was on 37082 **/
 /** chunk id: 415104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -20,17 +20,17 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk168989 = require("./168989.js");
 
-function _(e) {
+function b(e) {
   var t, n;
   let {
     quest: o,
     className: u,
     questContent: d,
-    contentPosition: _,
-    rowIndex: b,
+    contentPosition: b,
+    rowIndex: _,
     impressionRef: v,
     sourceQuestContent: C
-  } = e, [y, O] = s.useState(false), [E, S] = s.useState([]), T = (0, c.qb)(o), w = s.useMemo(() => (0, l.q8)(o), [o]), P = (0, i._F)(), N = s.useCallback(() => {
+  } = e, [y, O] = s.useState(false), [E, S] = s.useState([]), T = (0, c.qb)(o), w = s.useMemo(() => (0, l.q8)(o), [o]), P = (0, i._F)(), A = s.useCallback(() => {
     O(true), P({
       questId: o.id,
       event: h.rMx.QUEST_HOVER,
@@ -40,7 +40,7 @@ function _(e) {
       },
       sourceQuestContent: C
     }), w && (0, p.loadVideoQuestModal)()
-  }, [P, o.id, d, w, C]), A = s.useCallback(() => {
+  }, [P, o.id, d, w, C]), N = s.useCallback(() => {
     O(false), P({
       questId: o.id,
       event: h.rMx.QUEST_HOVER_OFF,
@@ -72,10 +72,10 @@ function _(e) {
       v.current = e, B.current = e
     },
     className: a()(j.container, u),
-    onMouseEnter: N,
-    onMouseLeave: A,
-    onFocus: N,
-    onBlur: A,
+    onMouseEnter: A,
+    onMouseLeave: N,
+    onFocus: A,
+    onBlur: N,
     children: [(0, r.jsx)(f.Z, {
       quest: o,
       isHovering: y,
@@ -87,8 +87,8 @@ function _(e) {
       quest: o,
       questContent: d,
       isHovering: y,
-      contentPosition: _,
-      rowIndex: b,
+      contentPosition: b,
+      rowIndex: _,
       onReceiveErrorHints: S,
       isVisibleInViewport: k,
       sourceQuestContent: C
@@ -96,7 +96,7 @@ function _(e) {
   })
 }
 
-function b(e) {
+function _(e) {
   return (0, r.jsx)(d.A, {
     questOrQuests: e.quest,
     questContent: e.questContent,
@@ -106,7 +106,7 @@ function b(e) {
     sourceQuestContent: e.sourceQuestContent,
     children: t => {
       var n, s;
-      return (0, r.jsx)(_, (n = function(e) {
+      return (0, r.jsx)(b, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

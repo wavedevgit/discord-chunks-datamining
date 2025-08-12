@@ -54,26 +54,26 @@ function S(e) {
     transitionState: S,
     onClose: w,
     sourceQuestContent: P
-  } = e, N = (0, h.sf)(n);
-  null == N && w();
-  let [A, R] = (0, s.useState)(o), B = (0, h.KX)(), k = (0, g.O5)(), I = null == (t = (0, f.WD)()) ? true : t.getId(), q = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), D = (0, b.g2)({
-    useReducedMotion: q,
+  } = e, A = (0, h.sf)(n);
+  null == A && w();
+  let [N, R] = (0, s.useState)(o), B = (0, h.KX)(), k = (0, g.O5)(), q = null == (t = (0, f.WD)()) ? true : t.getId(), I = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, _.g2)({
+    useReducedMotion: I,
     className: y.colorTransition
-  }), Q = A.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), V = (0, x.Bz)(N), L = (0, i.e7)([m.Z], () => m.Z.getState().theme), M = (0, l.wj)(L) ? v.BRd.DARK : v.BRd.LIGHT, {
+  }), D = N.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), V = (0, x.Bz)(A), M = (0, i.e7)([m.Z], () => m.Z.getState().theme), L = (0, l.wj)(M) ? v.BRd.DARK : v.BRd.LIGHT, {
     startConsoleQuest: Z,
     startingConsoleQuest: W
   } = (0, h.GI)({
-    questId: N.id,
+    questId: A.id,
     beforeRequest: () => {
-      D.startAnimation(), k({
-        questId: N.id,
+      Q.startAnimation(), k({
+        questId: A.id,
         questContent: j.jn.CONNECTIONS_MODAL,
         questContentCTA: g.jZ.DEFIBRILLATOR,
         sourceQuestContent: P
       })
     },
     afterRequest: e => {
-      D.stopAnimation(), R(e)
+      Q.stopAnimation(), R(e)
     }
   });
   return (0, r.jsxs)(u.Y0X, {
@@ -120,7 +120,7 @@ function S(e) {
             [y.disabled]: W
           }),
           onClick: Z,
-          children: [D.render(), (0, r.jsx)(u.Text, {
+          children: [Q.render(), (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
             className: y.colorTransition,
@@ -139,14 +139,14 @@ function S(e) {
             size: "sm"
           }),
           text: C.intl.string(C.t.XF4wuL),
-          errors: V ? true : Q.map(e => e.message),
+          errors: V ? true : D.map(e => e.message),
           gameTile: V ? (0, r.jsx)(u.ua7, {
-            "aria-label": N.config.messages.gameTitle,
+            "aria-label": A.config.messages.gameTitle,
             text: () => (0, r.jsxs)("div", {
               className: y.tooltip,
               children: [(0, r.jsx)(u.Text, {
                 variant: "text-sm/medium",
-                children: N.config.messages.gameTitle
+                children: A.config.messages.gameTitle
               }), (0, r.jsx)(u.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
@@ -157,8 +157,8 @@ function S(e) {
               var t, n;
               return (0, r.jsx)("img", (t = E({}, e), n = n = {
                 className: y.gameTile,
-                alt: N.config.messages.gameTitle,
-                src: (0, _.fh)(N, _.eC.GAME_TILE, M).url
+                alt: A.config.messages.gameTitle,
+                src: (0, b.fh)(A, b.eC.GAME_TILE, L).url
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -185,11 +185,11 @@ function S(e) {
         text: C.intl.string(C.t["qiS+xs"]),
         onClick: () => {
           w(), (0, x.V$)({
-            quest: N
+            quest: A
           }, {
             content: j.jn.CONNECTIONS_MODAL,
             ctaContent: g.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
-            impressionId: I,
+            impressionId: q,
             sourceQuestContent: P
           })
         }

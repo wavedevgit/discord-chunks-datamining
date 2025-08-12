@@ -1,7 +1,7 @@
 /** Chunk was on 37082 **/
 /** chunk id: 308069, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,13 +19,13 @@ var Chunk255367 = require("./255367.js"),
   Chunk303385 = require("./303385.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk74783 = require("./74783.js");
-let _ = e => {
+let b = e => {
   let {
     quest: t,
     expansionSpring: n,
     onCtxMenuSelect: o,
-    onCtxMenuOpen: _,
-    onCtxMenuClose: b,
+    onCtxMenuOpen: b,
+    onCtxMenuClose: _,
     useReducedMotion: v,
     isExpanded: C,
     isExpansionAnimationComplete: y
@@ -97,8 +97,8 @@ let _ = e => {
           className: j.promotedBadgeIcon
         })]
       }), (0, r.jsx)(f.r, {
-        onOpen: _,
-        onClose: b,
+        onOpen: b,
+        onClose: _,
         onSelect: o,
         questContent: p.jn.QUEST_BAR_V2,
         quest: t,

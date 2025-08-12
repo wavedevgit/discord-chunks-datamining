@@ -25,11 +25,11 @@ let h = function(e) {
     expansionSpring: s,
     isExpanded: h,
     isExpansionAnimationComplete: j,
-    quest: _,
-    useReducedMotion: b
-  } = e, v = (null == (t = _.userStatus) ? true : t.enrolledAt) != null, {
+    quest: b,
+    useReducedMotion: _
+  } = e, v = (null == (t = b.userStatus) ? true : t.enrolledAt) != null, {
     percentComplete: C
-  } = (0, l.Rf)(_), y = (0, l.Jf)(_), O = null != y ? y.percentComplete > 0 : C > 0;
+  } = (0, l.Rf)(b), y = (0, l.Jf)(b), O = null != y ? y.percentComplete > 0 : C > 0;
   return (0, r.jsxs)(a.animated.div, {
     "aria-hidden": h && j,
     className: o()(n, x.contentCollapsed, {
@@ -43,22 +43,22 @@ let h = function(e) {
       })
     },
     children: [(0, r.jsx)(m.Z, {
-      quest: _,
-      useReducedMotion: b
+      quest: b,
+      useReducedMotion: _
     }), (0, r.jsx)("div", {
       className: x.contentCollapsedWrapper,
       children: v ? (0, r.jsxs)("div", {
         className: x.questProgressWrapper,
         children: [(0, r.jsx)(p.Z, {
           className: x.questProgressRewardTile,
-          quest: _,
+          quest: b,
           questContent: c.jn.QUEST_BAR,
           autoplay: false,
           location: g.dr.QUESTS_BAR,
           sourceQuestContent: c.jn.QUEST_BAR
         }), O ? (0, r.jsx)(d.Z, {
           className: x.questProgressBar,
-          quest: _
+          quest: b
         }) : (0, r.jsx)(i.Text, {
           className: x.questProgressHint,
           color: "always-white",
@@ -69,13 +69,13 @@ let h = function(e) {
         className: x.brandingWrapper,
         children: [(0, r.jsx)(u.ZP, {
           className: x.partnerBranding,
-          quest: _
+          quest: b
         }), (0, r.jsx)(i.X6q, {
           color: "always-white",
           variant: "heading-sm/medium",
           className: x.questName,
           children: f.intl.format(f.t.EAYZAg, {
-            questName: _.config.messages.questName
+            questName: b.config.messages.questName
           })
         })]
       })

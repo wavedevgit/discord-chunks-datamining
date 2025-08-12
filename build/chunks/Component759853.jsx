@@ -1,7 +1,7 @@
 /** Chunk was on 37082 **/
 /** chunk id: 759853, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,25 +19,27 @@ var Chunk255367 = require("./255367.js"),
   Chunk513940 = require("./513940.js"),
   Chunk197857 = require("./197857.js");
 let j = ["#51BC9D"],
-  _ = e => {
+  b = e => {
     var t;
     let {
       expansionSpring: n,
       overlayRef: o,
-      quest: _,
-      progressBarRef: b,
-      isExpanded: v
+      quest: b,
+      progressBarRef: _,
+      isExpanded: v,
+      isHovered: C,
+      shouldShowRewardsCTAWhenCollapsed: y
     } = e, {
-      completionSpring: C,
-      startCompletionAnimation: y
-    } = (0, g.G)(), O = (null == (t = _.userStatus) ? true : t.completedAt) != null, E = s.useRef(false), S = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), T = s.useRef(null), w = (0, u.e7)([m.Z], () => m.Z.hasLayers()), P = (0, d.Z)(w), [N, A] = s.useState(null), [R, B] = s.useState(null), k = s.useRef(new i.qA({
+      completionSpring: O,
+      startCompletionAnimation: E
+    } = (0, g.G)(), S = (null == (t = b.userStatus) ? true : t.completedAt) != null, T = s.useRef(false), w = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), P = s.useRef(null), A = (0, u.e7)([m.Z], () => m.Z.hasLayers()), N = (0, d.Z)(A), [R, B] = s.useState(null), [k, q] = s.useState(null), I = s.useRef(new i.qA({
       gravity: 0,
       wind: 0
-    })), I = (0, i.uR)(N, R), q = s.useCallback(() => {
-      if (S) return;
-      let e = b.current,
-        t = T.current;
-      if (null != t && null != e && I.isReady) {
+    })), Q = (0, i.uR)(R, k), D = s.useCallback(() => {
+      if (w) return;
+      let e = _.current,
+        t = P.current;
+      if (null != t && null != e && Q.isReady) {
         var n, r, s, o, a, i;
         let {
           x: l,
@@ -46,7 +48,7 @@ let j = ["#51BC9D"],
           x: u,
           y: d
         } = t.getBoundingClientRect();
-        I.createMultipleConfetti((n = l - u, r = c - d, s = e.clientHeight, o = e.clientWidth, a = function(e) {
+        Q.createMultipleConfetti((n = l - u, r = c - d, s = e.clientHeight, o = e.clientWidth, a = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -111,28 +113,30 @@ let j = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [b, T, I, S]), D = (0, d.Z)(v);
+    }, [_, P, Q, w]), V = (0, d.Z)(v);
     return (s.useEffect(() => {
-      O && v && !D && (y(), q())
-    }, [v, O, y, q, D]), s.useEffect(() => {
-      O && !w && P && setTimeout(() => {
-        y(), q()
+      S && v && !V && (E(), D())
+    }, [v, S, E, D, V]), s.useEffect(() => {
+      S && !A && N && setTimeout(() => {
+        E(), D()
       }, 200)
-    }, [O, P, w, y, q]), s.useEffect(() => {
-      I.isReady && (!E.current && O && (y(), q()), E.current = O)
-    }, [O, E, q, y, I]), S) ? null : (0, r.jsxs)("div", {
+    }, [S, N, A, E, D]), s.useEffect(() => {
+      Q.isReady && (!T.current && S && (E(), D()), T.current = S)
+    }, [S, T, D, E, Q]), s.useEffect(() => {
+      C && y && (E(), D())
+    }, [C, y, E, D]), w) ? null : (0, r.jsxs)("div", {
       className: x.wrapper,
       "aria-hidden": "true",
-      ref: T,
+      ref: P,
       children: [(0, r.jsx)(c.animated.div, {
         className: x.background,
         style: {
-          opacity: C
+          opacity: O
         }
       }), (0, r.jsx)(c.animated.div, {
         className: a()(x.borders, x.bordersTopLeft),
         style: {
-          opacity: C
+          opacity: O
         }
       }), (0, r.jsxs)(c.animated.div, {
         className: x.confettiWrapper,
@@ -143,11 +147,11 @@ let j = ["#51BC9D"],
           }).to(e => "translateY(".concat(e, "px)"))
         },
         children: [(0, r.jsx)(i.O_, {
-          ref: A,
-          className: x.confetti,
-          environment: k.current
-        }), (0, r.jsx)(i.Ji, {
           ref: B,
+          className: x.confetti,
+          environment: I.current
+        }), (0, r.jsx)(i.Ji, {
+          ref: q,
           sprites: [h],
           colors: j,
           spriteWidth: f.Ko,
@@ -155,7 +159,7 @@ let j = ["#51BC9D"],
         }), null != o.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
           className: a()(x.borders, x.bordersBottom),
           style: {
-            opacity: C
+            opacity: O
           }
         }), o.current)]
       })]

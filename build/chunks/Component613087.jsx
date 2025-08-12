@@ -67,7 +67,7 @@ let d = Chunk73800.createContext({
       unregisterComponent: f,
       expansionSpring: x,
       mountPoints: h
-    } = s.useContext(d), j = s.useRef(null), _ = s.useRef(null), b = s.useRef(true);
+    } = s.useContext(d), j = s.useRef(null), b = s.useRef(null), _ = s.useRef(true);
     s.useEffect(() => {
       m()
     }, [m]), s.useLayoutEffect(() => {
@@ -80,7 +80,7 @@ let d = Chunk73800.createContext({
       let {
         height: t
       } = e;
-      b.current !== t && (m(), b.current = t)
+      _.current !== t && (m(), _.current = t)
     }, [m]);
     (0, i.PM)(j, v);
     let C = null == (n = h.get(c)) ? true : n.current,
@@ -94,7 +94,7 @@ let d = Chunk73800.createContext({
             output: [1, 0]
           })
         },
-        children: l(_)
+        children: l(b)
       }), C), "expanded" === u && (0, o.createPortal)((0, r.jsx)(a.animated.div, {
         style: {
           position: "absolute",
@@ -103,9 +103,9 @@ let d = Chunk73800.createContext({
             output: [0, 1]
           })
         },
-        children: l(_)
+        children: l(b)
       }), C)]
-    }) : "collapsed" === u && (y = (0, o.createPortal)(l(_), C)), (0, r.jsxs)("div", {
+    }) : "collapsed" === u && (y = (0, o.createPortal)(l(b), C)), (0, r.jsxs)("div", {
       style: {
         opacity: +(null == y && "collapsed" === u || null == C)
       },
@@ -150,7 +150,7 @@ let d = Chunk73800.createContext({
         let n = new Map(t);
         return n.delete(e), n
       })
-    }, []), _ = s.useCallback(() => {
+    }, []), b = s.useCallback(() => {
       let e = [];
       for (let t in i) {
         if (null == i[t] || null == n.current || null == o.current) continue;
@@ -187,7 +187,7 @@ let d = Chunk73800.createContext({
         animatedComponents: i,
         expandedContentRef: n,
         collapsedContentRef: o,
-        recalculateAnimationPositions: _,
+        recalculateAnimationPositions: b,
         animatedComponentProps: m,
         expansionSpring: a,
         mountPoints: f

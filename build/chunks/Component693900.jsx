@@ -40,18 +40,18 @@ function m(e) {
     height: x = null
   } = (0, l.ZP)(), h = null != (t = (0, c.Z)(x)) ? t : null, [{
     height: j
-  }, _] = (0, i.q_F)(() => ({
+  }, b] = (0, i.q_F)(() => ({
     from: {
       height: 0
     },
     config: p
   }));
   return s.useLayoutEffect(() => {
-    null !== x && _({
+    null !== x && b({
       height: x,
       immediate: !m || g || null === h
     })
-  }, [x, _, m, g, h]), (0, r.jsx)(o.animated.div, {
+  }, [x, b, m, g, h]), (0, r.jsx)(o.animated.div, {
     style: {
       height: null === h ? "auto" : j,
       overflow: "hidden"
