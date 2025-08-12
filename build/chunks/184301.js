@@ -36,7 +36,7 @@ function s() {
     u = s[1];
   if ("string" == typeof c && ("string" == typeof u || null == u)) e = c, t = u, n = s[2];
   else if (c instanceof Chunk598077.Z && ("object" == typeof u || null == u)) e = c.id, t = c.getAvatarURL(true, 80), n = u;
-  else throw Error("Invalid arguments");
+  else throw Error("[preloadUserProfileForPopout] Invalid arguments");
   return null == module ? Promise.resolve() : (0, Chunk484459.Z)(module, exports, a({
     withMutualFriends: true,
     withMutualGuilds: true,

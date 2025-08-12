@@ -2,7 +2,7 @@
 /** chunk id: 686380, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => B
 }), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -23,12 +23,10 @@ var Chunk255367 = require("./255367.js"),
   Chunk78839 = require("./78839.js"),
   Chunk626135 = require("./626135.js"),
   Chunk55935 = require("./55935.js"),
-  Chunk70956 = require("./70956.js"),
   Chunk63063 = require("./63063.js"),
   Chunk74538 = require("./74538.js"),
   Chunk276444 = require("./276444.js"),
   Chunk623879 = require("./623879.js"),
-  Chunk857262 = require("./857262.js"),
   Chunk93237 = require("./93237.js"),
   Chunk740594 = require("./740594.jsx"),
   Chunk786397 = require("./786397.js"),
@@ -39,7 +37,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk754761 = require("./754761.js"),
   Chunk295234 = require("./295234.js");
 
-function j(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,120 +46,61 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function U(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      M(e, t, n[t])
     })
   }
   return e
 }
-let G = "???",
-  B = e => {
+let j = "???",
+  U = e => {
     let {
       analyticsLocations: t
     } = e;
-    y.default.track(D.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+    y.default.track(P.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
       location_stack: t
     }), (0, f.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("83667"), n.e("67825")]).then(n.bind(n, 656139));
-      return t => (0, r.jsx)(e, U({}, t))
+      return t => (0, r.jsx)(e, k({}, t))
     })
   };
-class Z extends Chunk73800.Component {
+class G extends Chunk73800.Component {
   getTitleText() {
     let e = Chunk594174.default.getUser(this.trialOffer.user_id),
-      t = null != module ? module.username : G,
+      t = null != module ? module.username : j,
       n = Chunk594174.default.getUser(this.trialOffer.referrer_id),
-      r = null != require ? require.username : G;
-    if (this.recipientHasNitro && true === this.trialOffer.redeemed_at) return Chunk388032.intl.formatToPlainString(Chunk388032.t.Mptau7, {
+      r = null != require ? require.username : j;
+    return this.recipientHasNitro && true === this.trialOffer.redeemed_at ? Chunk388032.intl.formatToPlainString(Chunk388032.t.Mptau7, {
       username: exports
-    });
-    if (this.offerExpired) return this.isSender ? Chunk388032.intl.string(Chunk388032.t["9SNdf3"]) : Chunk388032.intl.formatToPlainString(Chunk388032.t["H0+MxM"], {
+    }) : this.offerExpired ? this.isSender ? Chunk388032.intl.string(Chunk388032.t["9SNdf3"]) : Chunk388032.intl.formatToPlainString(Chunk388032.t["H0+MxM"], {
       userName: Chunk255367
-    });
-    switch (Chunk857262.Z.getCurrentConfig({
-        location: "renderTitle"
-      }, {
-        autoTrackExposure: false
-      }).treatmentGroup) {
-      case 1:
-        return Chunk388032.intl.formatToPlainString(Chunk388032.t["L/leCw"], {
-          receiver: exports
-        });
-      case 2:
-        return Chunk388032.intl.formatToPlainString(Chunk388032.t.febG6u, {
-          receiver: exports
-        });
-      case 3:
-        return Chunk388032.intl.formatToPlainString(Chunk388032.t.zz1MYm, {
-          sender: Chunk255367,
-          receiver: exports
-        });
-      case 4:
-        return Chunk388032.intl.formatToPlainString(Chunk388032.t.PVQOi4, {
-          receiver: exports
-        });
-      default:
-        return Chunk388032.intl.formatToPlainString(Chunk388032.t.IiWKws, {
-          senderUserName: Chunk255367,
-          recipientUserName: exports
-        })
-    }
+    }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.IiWKws, {
+      senderUserName: Chunk255367,
+      recipientUserName: exports
+    })
   }
   getBodyText() {
-    if (this.recipientHasNitro && !this.isSender && true === this.trialOffer.redeemed_at) return Chunk388032.intl.format(Chunk388032.t.LwCwT0, {
+    return this.recipientHasNitro && !this.isSender && true === this.trialOffer.redeemed_at ? Chunk388032.intl.format(Chunk388032.t.LwCwT0, {
       helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM)
-    });
-    if (this.offerExpired) return null;
-    let e = Chunk594174.default.getUser(this.trialOffer.referrer_id),
-      t = null != module ? module.username : G;
-    switch (Chunk857262.Z.getCurrentConfig({
-        location: "renderBody"
-      }, {
-        autoTrackExposure: false
-      }).treatmentGroup) {
-      case 1:
-        return Chunk388032.intl.format(Chunk388032.t.Ylrdnp, {
-          sender: exports
-        });
-      case 2:
-        return Chunk388032.intl.format(Chunk388032.t["8XzXzc"], {
-          sender: exports
-        });
-      case 3:
-        return Chunk388032.intl.string(Chunk388032.t.Ym5LAw);
-      case 4:
-        let n = Date.now(),
-          r = Math.floor((Date.parse(this.trialOffer.expires_at) - require) / Chunk70956.Z.Millis.HOUR / 24);
-        return Chunk388032.intl.formatToPlainString(Chunk388032.t["/3ho7u"], {
-          sender: exports,
-          nDaysRemaining: Chunk255367
-        });
-      default:
-        return Chunk388032.intl.string(Chunk388032.t.lQLlOT)
-    }
+    }) : this.offerExpired ? null : Chunk388032.intl.string(Chunk388032.t.lQLlOT)
   }
   renderActions() {
-    let e = Chunk857262.Z.getCurrentConfig({
-        location: "renderActions"
-      }, {
-        autoTrackExposure: false
-      }),
-      t = this.currentUser.id !== this.trialOffer.user_id || (0, Chunk74538.I5)(this.currentUser) || !this.currentUser.verified || (0, Chunk786397.B)(this.trialOffer),
-      n = this.renderExpirationDate();
+    let e = this.currentUser.id !== this.trialOffer.user_id || (0, Chunk74538.I5)(this.currentUser) || !this.currentUser.verified || (0, Chunk786397.B)(this.trialOffer),
+      t = this.renderExpirationDate();
     return (0, Chunk255367.jsxs)("div", {
       className: Chunk681782.buttonContainer,
       children: [(0, Chunk255367.jsx)("div", {
         children: (0, Chunk255367.jsx)(Chunk755721.zx, {
           "data-migration-pending": true,
-          disabled: exports,
+          disabled: module,
           color: Chunk755721.zx.Colors.BRAND,
           size: Chunk755721.zx.Sizes.SMALL,
           onClick: () => {
@@ -175,9 +114,9 @@ class Z extends Chunk73800.Component {
           },
           children: Chunk388032.intl.string(Chunk388032.t.O0etsL)
         })
-      }), 4 !== module.treatmentGroup && (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk255367.jsx)("div", {
         className: Chunk681782.metadata,
-        children: require
+        children: exports
       })]
     })
   }
@@ -204,9 +143,9 @@ class Z extends Chunk73800.Component {
     let {
       emphasis: t
     } = e, n = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(R.Z, {
-        subscriptionTier: w.Si.TIER_2,
-        buttonTextOverride: L.intl.string(L.t.O0etsL),
+      children: [(0, r.jsx)(N.Z, {
+        subscriptionTier: R.Si.TIER_2,
+        buttonTextOverride: w.intl.string(w.t.O0etsL),
         size: "md",
         variantOverride: "expressive"
       }), (0, r.jsx)(f.Text, {
@@ -218,28 +157,28 @@ class Z extends Chunk73800.Component {
       disabled: false,
       color: d.zx.Colors.BRAND,
       size: d.zx.Sizes.MEDIUM,
-      onClick: () => B({
+      onClick: () => U({
         analyticsLocations: []
       }),
-      children: L.intl.string(L.t.Lm2nFR)
+      children: w.intl.string(w.t.Lm2nFR)
     }), o = this.isSender ? i : n, a = "SOCIAL" === t ? (0, r.jsx)(f.Eep, {
-      src: k.Z,
+      src: x.Z,
       height: 84,
       width: 144,
-      className: x.imgDMEmbedXP
+      className: D.imgDMEmbedXP
     }) : (0, r.jsx)(f.Eep, {
-      src: M.Z,
+      src: L.Z,
       height: 137,
       width: 144,
-      className: x.imgDMEmbedXP
+      className: D.imgDMEmbedXP
     });
     return (0, r.jsxs)(m.Z, {
       compact: false,
-      contentClassName: x.containerDMEmbedXP,
+      contentClassName: D.containerDMEmbedXP,
       children: [a, (0, r.jsxs)("div", {
-        className: x.contentDMEmbedXP,
+        className: D.contentDMEmbedXP,
         children: [(0, r.jsxs)("div", {
-          className: x.contentTextDMEmbedXP,
+          className: D.contentTextDMEmbedXP,
           children: [(0, r.jsx)(f.X6q, {
             variant: "heading-md/semibold",
             color: "header-primary",
@@ -250,7 +189,7 @@ class Z extends Chunk73800.Component {
             children: this.getBodyText()
           })]
         }), (0, r.jsx)("div", {
-          className: x.buttonContainerDMEmbedXP,
+          className: D.buttonContainerDMEmbedXP,
           children: o
         })]
       })]
@@ -289,31 +228,31 @@ class Z extends Chunk73800.Component {
     }
   }
   constructor(e) {
-    super(e), j(this, "trialOffer", true), j(this, "currentUser", true), j(this, "recipientHasNitro", true), j(this, "trialEndsAt", true), j(this, "analyticsLocations", true), j(this, "offerExpired", true), j(this, "isSender", true), j(this, "dmRefreshXPCohort", true), this.trialOffer = e.trialOffer, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.dmRefreshXPCohort = e.dmRefreshXPCohort, this.offerExpired = (0, P.B)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
+    super(e), M(this, "trialOffer", true), M(this, "currentUser", true), M(this, "recipientHasNitro", true), M(this, "trialEndsAt", true), M(this, "analyticsLocations", true), M(this, "offerExpired", true), M(this, "isSender", true), M(this, "dmRefreshXPCohort", true), this.trialOffer = e.trialOffer, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.dmRefreshXPCohort = e.dmRefreshXPCohort, this.offerExpired = (0, C.B)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
   }
 }
 
-function F(e) {
+function B(e) {
   let {
     userTrialOfferId: t,
     canRenderReferralEmbed: n
   } = e, {
     trialOffer: i,
     isResolving: o
-  } = (0, u.cj)([S.Z], () => ({
-    trialOffer: n ? S.Z.getRelevantUserTrialOffer(t) : null,
-    isResolving: !!n && S.Z.isResolving(t)
-  }), [n, t]), a = E.default.getCurrentUser(), s = (0, u.e7)([E.default], () => null != i && (0, T.I5)(true !== a && i.user_id === a.id ? a : E.default.getUser(i.user_id))), l = (0, u.e7)([b.Z], () => {
+  } = (0, u.cj)([T.Z], () => ({
+    trialOffer: n ? T.Z.getRelevantUserTrialOffer(t) : null,
+    isResolving: !!n && T.Z.isResolving(t)
+  }), [n, t]), a = E.default.getCurrentUser(), s = (0, u.e7)([E.default], () => null != i && (0, I.I5)(true !== a && i.user_id === a.id ? a : E.default.getUser(i.user_id))), l = (0, u.e7)([b.Z], () => {
     var e;
     return s ? null == (e = b.Z.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
   }), {
     analyticsLocations: d
-  } = (0, h.ZP)(p.Z.SHARE_NITRO_EMBED), f = A.ZP.useExperiment({
+  } = (0, h.ZP)(p.Z.SHARE_NITRO_EMBED), f = S.ZP.useExperiment({
     location: "ConnectedReferralTrialEmbed"
   });
   return o ? (0, r.jsx)(_.OR, {
     isHorizontal: !c.tq
-  }) : n && null != i && true !== a ? (0, r.jsx)(Z, {
+  }) : n && null != i && true !== a ? (0, r.jsx)(G, {
     trialOffer: i,
     currentUser: a,
     recipientHasNitro: s,
@@ -321,9 +260,9 @@ function F(e) {
     analyticsLocations: d,
     dmRefreshXPCohort: f.cohort
   }) : (0, r.jsx)("div", {
-    className: x.invalidWrapper,
+    className: D.invalidWrapper,
     children: (0, r.jsx)("div", {
-      className: x.invalid
+      className: D.invalid
     })
   })
 }

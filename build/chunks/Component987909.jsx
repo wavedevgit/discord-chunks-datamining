@@ -2,18 +2,16 @@
 /** chunk id: 987909, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => C
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk159691 = require("./159691.js"),
   Chunk755721 = require("./755721.js"),
   Chunk904245 = require("./904245.js"),
   Chunk541716 = require("./541716.js"),
   Chunk419922 = require("./419922.jsx"),
   Chunk665906 = require("./665906.js"),
-  Chunk223750 = require("./223750.js"),
   Chunk271383 = require("./271383.js"),
   Chunk496675 = require("./496675.js"),
   Chunk594174 = require("./594174.js"),
@@ -23,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk817803 = require("./817803.js");
 
-function O(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,20 +30,20 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function O(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,40 +54,40 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e) {
+function I(e) {
   let {
     channel: t,
     message: n,
     currentUser: r
   } = e;
-  return (0, o.e7)([p.Z, _.ZP], () => {
+  return (0, o.e7)([f.Z, d.ZP], () => {
     var e;
     let i = t.guild_id;
     if (null == r || null == i) returnfalse;
-    let o = (0, d.xl)(t),
-      a = p.Z.can(b.Plq.SEND_MESSAGES, t),
-      s = null == (e = _.ZP.getMember(i, r.id)) ? true : e.isPending,
+    let o = (0, u.xl)(t),
+      a = f.Z.can(g.Plq.SEND_MESSAGES, t),
+      s = null == (e = d.ZP.getMember(i, r.id)) ? true : e.isPending,
       l = n.author.bot;
     return a && !o && !s && !l
   })
 }
 
-function A(e) {
+function T(e) {
   let {
     assets: t,
     currentUser: n,
     message: r
-  } = e, i = (g.default.extractTimestamp(n.id) + g.default.extractTimestamp(r.id)) % t.length;
+  } = e, i = (h.default.extractTimestamp(n.id) + h.default.extractTimestamp(r.id)) % t.length;
   return t[i]
 }
 
-function N(e) {
+function S(e) {
   let {
     channel: t,
     message: n,
@@ -100,78 +98,73 @@ function N(e) {
     shouldMention: true,
     showMentionToggle: true
   };
-  l.Z.sendGreetMessage(t.id, r.id, l.Z.getSendMessageOptionsForReply(i))
+  s.Z.sendGreetMessage(t.id, r.id, s.Z.getSendMessageOptionsForReply(i))
 }
 
-function C(e) {
+function A(e) {
   let {
     sticker: t,
     event: n,
     eventProperties: r
   } = e;
-  null != n && m.default.track(n, T(v({}, r), {
+  null != n && p.default.track(n, v(y({}, r), {
     sticker_id: t.id
   }))
 }
 
-function R(e) {
+function N(e) {
   let {
     currentUser: t,
     channel: n,
     message: o,
-    buttonLabels: l,
-    stickers: d,
-    event: _,
-    eventProperties: p
-  } = e, h = (0, f.t)(), [m, g] = i.useState(false), b = i.useMemo(() => A({
-    assets: d,
+    buttonLabels: s,
+    stickers: u,
+    event: d,
+    eventProperties: f
+  } = e, [_, p] = i.useState(false), h = i.useMemo(() => T({
+    assets: u,
     currentUser: t,
     message: o
-  }), [d, t, o]), O = i.useMemo(() => A({
-    assets: l,
+  }), [u, t, o]), g = i.useMemo(() => T({
+    assets: s,
     currentUser: t,
     message: o
-  }), [l, t, o]), v = i.useCallback(async () => {
+  }), [s, t, o]), b = i.useCallback(async () => {
     let {
       valid: e
-    } = await (0, E.v)({
-      type: c.Ie.FORM,
+    } = await (0, m.v)({
+      type: l.Ie.FORM,
       content: "",
       channel: n
     });
-    e && (N({
+    e && (S({
       channel: n,
       message: o,
-      sticker: b
-    }), C({
-      sticker: b,
-      event: _,
-      eventProperties: p
+      sticker: h
+    }), A({
+      sticker: h,
+      event: d,
+      eventProperties: f
     }))
-  }, [n, o, b, _, p]);
-  return h ? (0, r.jsx)(a.zx, {
-    variant: "secondary",
-    size: "md",
-    onClick: v,
-    text: O
-  }) : (0, r.jsxs)(s.zx, {
+  }, [n, o, h, d, f]);
+  return (0, r.jsxs)(a.zx, {
     "data-migration-pending": true,
-    className: y.CTAMessageButtonOuter,
-    innerClassName: y.CTAMessageButton,
-    color: s.Tt.PRIMARY,
-    onMouseEnter: () => g(true),
-    onMouseLeave: () => g(false),
-    onClick: v,
-    children: [(0, r.jsx)(u.Z, {
-      className: y.CTAMessageSticker,
-      isInteracting: m,
-      sticker: b,
+    className: E.CTAMessageButtonOuter,
+    innerClassName: E.CTAMessageButton,
+    color: a.Tt.PRIMARY,
+    onMouseEnter: () => p(true),
+    onMouseLeave: () => p(false),
+    onClick: b,
+    children: [(0, r.jsx)(c.Z, {
+      className: E.CTAMessageSticker,
+      isInteracting: _,
+      sticker: h,
       size: 28
-    }), O]
+    }), g]
   })
 }
 
-function P(e) {
+function C(e) {
   let {
     channel: t,
     message: n,
@@ -179,14 +172,14 @@ function P(e) {
     stickers: o,
     event: a,
     eventProperties: s
-  } = e, l = h.default.getCurrentUser(), c = S({
+  } = e, l = _.default.getCurrentUser(), c = I({
     channel: t,
     message: n,
     currentUser: l
   });
   return null != l && c ? (0, r.jsx)("div", {
-    className: y.CTAMessage,
-    children: (0, r.jsx)(R, {
+    className: E.CTAMessage,
+    children: (0, r.jsx)(N, {
       currentUser: l,
       channel: t,
       message: n,
