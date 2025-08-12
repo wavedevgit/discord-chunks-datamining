@@ -4,8 +4,6 @@
 module.exports = {
   root: "root__4ad81",
   art: "art__4ad81",
-  buttonContainer: "buttonContainer__4ad81",
-  buttonContents: "buttonContents__4ad81",
   heading: "heading__4ad81",
   checkboxContainer: "checkboxContainer__4ad81",
   closeButton: "closeButton__4ad81",
