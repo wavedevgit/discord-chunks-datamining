@@ -2,11 +2,12 @@
 /** chunk id: 56744, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk627050 = require("./627050.js"),
   Chunk905405 = require("./905405.js"),
   Chunk869765 = require("./869765.js"),
   Chunk699516 = require("./699516.js"),
@@ -14,39 +15,42 @@ var Chunk255367 = require("./255367.js"),
   Chunk739566 = require("./739566.js"),
   Chunk267128 = require("./267128.jsx"),
   Chunk981631 = require("./981631.js");
-let _ = Chunk73800.memo(function(e) {
+let p = Chunk73800.memo(function(e) {
   let {
     baseMessage: t,
     channel: n,
-    referencedMessage: f,
-    compact: _ = false
-  } = e, p = f.state === s.Y.LOADED ? f.message : true, h = (0, a.p)(), m = i.useMemo(() => (null == p ? true : p.content) != null && "" !== p.content ? (0, c.ZP)(p, {
+    referencedMessage: _,
+    compact: p = false
+  } = e, h = _.state === l.Y.LOADED ? _.message : true, m = (0, s.p)(), g = a.d.useExperiment({
+    location: "repliedMessage"
+  }).enabled, E = i.useMemo(() => (null == h ? true : h.content) != null && "" !== h.content ? (0, u.ZP)(h, {
     formatInline: true,
-    shouldFilterKeywords: h
-  }).content : null, [p, h]), {
-    isReplyAuthorBlocked: g,
-    isReplyAuthorIgnored: E
-  } = (0, o.cj)([l.Z], () => ({
-    isReplyAuthorBlocked: null != p && l.Z.isBlockedForMessage(p),
-    isReplyAuthorIgnored: null != p && l.Z.isIgnoredForMessage(p)
-  }), [p]), b = (0, u.Uj)(p), y = (0, u.Uj)(t);
-  return (0, r.jsx)(d.Z, {
-    repliedAuthor: b,
-    baseAuthor: y,
+    allowGameMentions: g,
+    shouldFilterKeywords: m
+  }).content : null, [h, m, g]), {
+    isReplyAuthorBlocked: b,
+    isReplyAuthorIgnored: y
+  } = (0, o.cj)([c.Z], () => ({
+    isReplyAuthorBlocked: null != h && c.Z.isBlockedForMessage(h),
+    isReplyAuthorIgnored: null != h && c.Z.isIgnoredForMessage(h)
+  }), [h]), O = (0, d.Uj)(h), v = (0, d.Uj)(t);
+  return (0, r.jsx)(f.Z, {
+    repliedAuthor: O,
+    baseAuthor: v,
     baseMessage: t,
     channel: n,
-    referencedMessage: f,
-    content: m,
-    compact: _,
-    isReplyAuthorBlocked: g,
-    isReplyAuthorIgnored: E,
+    referencedMessage: _,
+    content: E,
+    compact: p,
+    isReplyAuthorBlocked: b,
+    isReplyAuthorIgnored: y,
     isReplySpineClickable: false,
     showReplySpine: true
   })
 });
 
-function p(e, t, n, i, o) {
-  return e.type !== f.uaV.REPLY || null == n ? null : (0, r.jsx)(_, {
+function h(e, t, n, i, o) {
+  return e.type !== _.uaV.REPLY || null == n ? null : (0, r.jsx)(p, {
     baseMessage: e,
     channel: t,
     referencedMessage: i,

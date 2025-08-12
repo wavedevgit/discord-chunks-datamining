@@ -2,16 +2,16 @@
 /** chunk id: 208884, original params: t,i,E (module,exports,require) **/
 require.d(exports, {
   FX: () => M,
-  Ny: () => _,
+  Ny: () => o,
   WV: () => N,
-  WW: () => A,
+  WW: () => s,
   _u: () => O,
-  aW: () => T,
+  aW: () => g,
   kv: () => I,
-  s4: () => s,
+  s4: () => A,
   uu: () => R,
-  vq: () => o,
-  xU: () => g,
+  vq: () => _,
+  xU: () => T,
   zO: () => P
 }), require("./539854.js"), require("./781311.js");
 var Chunk823379 = require("./823379.js"),
@@ -32,7 +32,7 @@ function e(t, i) {
   return t.map(t => i[t.toString()])
 }
 
-function A(t) {
+function s(t) {
   var i, E;
   return {
     [l.Pl.VIEW_CHANNEL.toString()]: {
@@ -146,8 +146,8 @@ function A(t) {
       flag: l.Pl.USE_EXTERNAL_STICKERS
     },
     [l.Pl.MENTION_EVERYONE.toString()]: {
-      title: S.intl.string(S.t.Y78KGB),
-      description: S.t.ryj6Nz,
+      title: t.inGameMentionsExperiment ? S.intl.string(S.t.lEO7Wl) : S.intl.string(S.t.Y78KGB),
+      description: t.inGameMentionsExperiment ? S.intl.string(S.t.wdHpIC) : S.intl.string(S.t.ryj6Nz),
       flag: l.Pl.MENTION_EVERYONE
     },
     [l.Pl.MANAGE_MESSAGES.toString()]: {
@@ -294,8 +294,8 @@ function A(t) {
   }
 }
 
-function s(t) {
-  let i, E = A(t),
+function A(t) {
+  let i, E = s(t),
     n = [function(t, i) {
       let E = [l.Pl.VIEW_CHANNEL, l.Pl.MANAGE_CHANNELS, l.Pl.MANAGE_ROLES, l.Pl.CREATE_GUILD_EXPRESSIONS, l.Pl.MANAGE_GUILD_EXPRESSIONS, l.Pl.VIEW_AUDIT_LOG, l.Pl.VIEW_GUILD_ANALYTICS];
       return i.showCreatorMonetizationAnalyticsPermission && E.push(l.Pl.VIEW_CREATOR_MONETIZATION_ANALYTICS), E.push(l.Pl.MANAGE_WEBHOOKS), E.push(l.Pl.MANAGE_GUILD), r({
@@ -346,14 +346,14 @@ function P(t, i) {
   }
 }
 
-function _(t, i) {
+function o(t, i) {
   return {
     title: i,
     permissions: e([l.Pl.CREATE_INSTANT_INVITE], t)
   }
 }
 
-function o(t, i, E) {
+function _(t, i, E) {
   let n = [l.Pl.SEND_MESSAGES, l.Pl.SEND_MESSAGES_IN_THREADS, l.Pl.CREATE_PUBLIC_THREADS, l.Pl.CREATE_PRIVATE_THREADS, l.Pl.EMBED_LINKS, l.Pl.ATTACH_FILES, l.Pl.ADD_REACTIONS, l.Pl.USE_EXTERNAL_EMOJIS, l.Pl.USE_EXTERNAL_STICKERS, l.Pl.USE_EXTERNAL_SOUNDS, l.Pl.MENTION_EVERYONE, l.Pl.MANAGE_MESSAGES, l.Pl.PIN_MESSAGES, l.Pl.MANAGE_THREADS, l.Pl.READ_MESSAGE_HISTORY, l.Pl.SEND_TTS_MESSAGES, l.Pl.SEND_VOICE_MESSAGES, l.Pl.SEND_POLLS];
   return E.inSoundmojiExperiment || (n = n.filter(t => t !== l.Pl.USE_EXTERNAL_SOUNDS)), E.showPrivateThreads && E.showCreateThreads || (n = n.filter(t => t !== l.Pl.CREATE_PRIVATE_THREADS)), E.showCreateThreads || (n = n.filter(t => t !== l.Pl.CREATE_PUBLIC_THREADS)), E.inPinPermissionExperiment || (n = n.filter(t => t !== l.Pl.PIN_MESSAGES)), {
     title: i,
@@ -369,7 +369,7 @@ function N(t, i) {
   }
 }
 
-function T(t, i, E) {
+function g(t, i, E) {
   let n = [l.Pl.SEND_MESSAGES, l.Pl.EMBED_LINKS, l.Pl.ATTACH_FILES, l.Pl.ADD_REACTIONS, l.Pl.USE_EXTERNAL_EMOJIS, l.Pl.USE_EXTERNAL_STICKERS, l.Pl.USE_EXTERNAL_SOUNDS, l.Pl.MENTION_EVERYONE, l.Pl.MANAGE_MESSAGES, l.Pl.READ_MESSAGE_HISTORY, l.Pl.SEND_TTS_MESSAGES, l.Pl.SEND_VOICE_MESSAGES, l.Pl.SEND_POLLS];
   return E.inSoundmojiExperiment || (n = n.filter(t => t !== l.Pl.USE_EXTERNAL_SOUNDS)), {
     title: i,
@@ -378,7 +378,7 @@ function T(t, i, E) {
   }
 }
 
-function g(t, i) {
+function T(t, i) {
   let E = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
     showActivities: true
   };

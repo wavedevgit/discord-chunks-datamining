@@ -813,7 +813,7 @@ let e4 = (0, Chunk251625.oH)((e, t, n) => {
       }, {
         autoTrackExposure: true
       }).enabled;
-      return r && v && null != eZ && g < _ && o()(b, eZ().test) && (O.push(eZ()), g += 1), {
+      return r && v && null != eZ && (g < _ || 0 === b.length) && o()(b, eZ().test) && (g >= _ && (O.length > 0 ? O.pop() : y.length > 0 ? y.pop() : m.length > 0 && m.pop()), O.push(eZ()), g += 1), {
         users: m,
         globals: O,
         roles: y

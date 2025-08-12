@@ -1,7 +1,7 @@
 /** Chunk was on 33648 **/
 /** chunk id: 646746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  O: () => b
+  O: () => y
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -10,6 +10,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk392711 = require("./392711.js"),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
+  Chunk627050 = require("./627050.js"),
   Chunk124347 = require("./124347.jsx"),
   Chunk499376 = require("./499376.js"),
   Chunk937889 = require("./937889.js"),
@@ -19,106 +20,109 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk909016 = require("./909016.js");
 
-function b(e) {
+function y(e) {
   let {
     message: t,
     forwardOptions: n,
     channel: a
-  } = e, b = m.jU.useSetting(), {
-    attachments: y,
-    embeds: v,
-    hasContent: x,
-    contentMessage: E
-  } = (0, g.c)({
+  } = e, y = g.jU.useSetting(), {
+    attachments: v,
+    embeds: x,
+    hasContent: E,
+    contentMessage: C
+  } = (0, _.c)({
     message: t,
     channel: a,
     forwardOptions: n
-  }), C = r.useMemo(() => x ? (0, h.ZP)(t, {
+  }), S = u.d.useExperiment({
+    location: "forward_preview"
+  }).enabled, O = r.useMemo(() => E ? (0, f.ZP)(t, {
     formatInline: true,
     allowLinks: true,
     allowHeading: true,
     allowList: true,
+    allowGameMentions: S,
     hideSimpleEmbedContent: false,
-    contentMessage: E
-  }).content : null, [E, x, t]), S = y.length, O = null, P = null, w = null;
-  if (S > 0 || v.length > 0) {
-    var Z, N, j, I;
-    let e = (0, s.countBy)(y, e => (0, d.aw)(e, true)),
-      t = null != (j = e.IMAGE) ? j : 0,
-      n = null != (I = e.VIDEO) ? I : 0;
-    t > 0 && n > 0 ? (O = _.intl.formatToPlainString(_.t.Lr0Toq, {
+    contentMessage: C
+  }).content : null, [C, E, t, S]), P = v.length, w = null, Z = null, N = null;
+  if (P > 0 || x.length > 0) {
+    var j, I, T, L;
+    let e = (0, s.countBy)(v, e => (0, h.aw)(e, true)),
+      t = null != (T = e.IMAGE) ? T : 0,
+      n = null != (L = e.VIDEO) ? L : 0;
+    t > 0 && n > 0 ? (w = p.intl.formatToPlainString(p.t.Lr0Toq, {
       image_count: t,
       video_count: n
-    }), P = o.Ka2) : n > 0 ? (O = _.intl.formatToPlainString(_.t.SJ6pPT, {
+    }), Z = o.Ka2) : n > 0 ? (w = p.intl.formatToPlainString(p.t.SJ6pPT, {
       count: n
-    }), P = o.g8d) : t > 0 ? (O = _.intl.formatToPlainString(_.t.h4pFfX, {
+    }), Z = o.g8d) : t > 0 ? (w = p.intl.formatToPlainString(p.t.h4pFfX, {
       count: t
-    }), P = 1 === t ? o.XBm : o.Ka2) : (O = _.intl.formatToPlainString(_.t["89ihS0"], {
-      count: S
-    }), P = o.Ujz), n > 0 && S === n ? w = (0, l.jsxs)("div", {
-      className: i()(p.attachmentPreview, p.attachmentPreviewVideo),
-      children: [(0, l.jsx)(u.ZP, {
-        className: p.thumbnail,
-        src: y[0].proxy_url,
+    }), Z = 1 === t ? o.XBm : o.Ka2) : (w = p.intl.formatToPlainString(p.t["89ihS0"], {
+      count: P
+    }), Z = o.Ujz), n > 0 && P === n ? N = (0, l.jsxs)("div", {
+      className: i()(b.attachmentPreview, b.attachmentPreviewVideo),
+      children: [(0, l.jsx)(d.ZP, {
+        className: b.thumbnail,
+        src: v[0].proxy_url,
         width: 56,
         height: 56
       }), (0, l.jsx)(o.g8d, {
-        className: p.playIcon,
+        className: b.playIcon,
         size: "md",
         color: "white"
       })]
-    }) : S > 0 ? w = (0, l.jsx)("div", {
-      className: p.attachmentPreview,
-      children: (0, l.jsx)(u.ZP, {
-        src: y[0].proxy_url,
+    }) : P > 0 ? N = (0, l.jsx)("div", {
+      className: b.attachmentPreview,
+      children: (0, l.jsx)(d.ZP, {
+        src: v[0].proxy_url,
         width: 56,
         height: 56
       })
-    }) : (null == (N = v[0]) || null == (Z = N.thumbnail) ? true : Z.proxyURL) != null && (w = (0, l.jsx)("div", {
-      className: p.attachmentPreview,
-      children: (0, l.jsx)(u.ZP, {
-        src: v[0].thumbnail.proxyURL,
+    }) : (null == (I = x[0]) || null == (j = I.thumbnail) ? true : j.proxyURL) != null && (N = (0, l.jsx)("div", {
+      className: b.attachmentPreview,
+      children: (0, l.jsx)(d.ZP, {
+        src: x[0].thumbnail.proxyURL,
         width: 56,
         height: 56
       })
     }))
   }
-  return S > 1 && null != w && (w = (0, l.jsxs)("div", {
-    className: p.attachmentPreviewOverflow,
+  return P > 1 && null != N && (N = (0, l.jsxs)("div", {
+    className: b.attachmentPreviewOverflow,
     children: [(0, l.jsx)(c.ZP, {
       mask: c.ZP.Masks.FORWARD_ATTACHMENT_PILE_OVERFLOW,
       width: 56,
       height: 56,
-      children: w
+      children: N
     }), (0, l.jsxs)(o.Text, {
-      className: p.overflowCount,
+      className: b.overflowCount,
       variant: "text-xs/semibold",
       color: "text-default",
-      children: ["+", S - 1]
+      children: ["+", P - 1]
     })]
   })), (0, l.jsxs)("div", {
-    className: p.forwardPreview,
+    className: b.forwardPreview,
     children: [(0, l.jsx)("div", {
-      className: p.quote
+      className: b.quote
     }), (0, l.jsxs)("div", {
-      className: p.contentWrapper,
-      children: [x && (0, l.jsx)(f.ZP, {
-        className: i()(p.forwardPreviewMessage, S > 0 && p.hasAttachments),
+      className: b.contentWrapper,
+      children: [E && (0, l.jsx)(m.ZP, {
+        className: i()(b.forwardPreviewMessage, P > 0 && b.hasAttachments),
         message: t,
-        content: C,
-        compact: b
-      }), S > 0 && (0, l.jsxs)("div", {
-        className: p.attachmentRow,
-        children: [null != P && (0, l.jsx)(P, {
+        content: O,
+        compact: y
+      }), P > 0 && (0, l.jsxs)("div", {
+        className: b.attachmentRow,
+        children: [null != Z && (0, l.jsx)(Z, {
           size: "custom",
-          width: x ? 18 : 20,
+          width: E ? 18 : 20,
           color: o.TVs.colors.TEXT_LOW_CONTRAST
-        }), null != O && (0, l.jsx)(o.Text, {
-          variant: x ? "text-sm/medium" : "text-md/medium",
+        }), null != w && (0, l.jsx)(o.Text, {
+          variant: E ? "text-sm/medium" : "text-md/medium",
           color: "text-low-contrast",
-          children: O
+          children: w
         })]
       })]
-    }), w]
+    }), N]
   })
 }
