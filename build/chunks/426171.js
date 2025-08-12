@@ -20,14 +20,14 @@ var Chunk73800 = require("./73800.js"),
   Chunk258939 = require("./258939.js"),
   Chunk956472 = require("./956472.js"),
   Chunk981631 = require("./981631.js");
-let P = "".concat("#").concat("itemSkuId", "="),
-  g = new RegExp("^".concat(P, "(\\d+)$")),
+let b = "".concat("#").concat("itemSkuId", "="),
+  g = new RegExp("^".concat(b, "(\\d+)$")),
   x = [Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.COLLECTIBLES_SHOP_FULLSCREEN],
   j = e => {
     let t = (0, i.TH)();
     r.useEffect(() => {
       if (null != e && x.includes(t.pathname)) return () => {
-        window.location.hash.startsWith(P) && window.location.replace("#")
+        window.location.hash.startsWith(b) && window.location.replace("#")
       }
     }, [e, t.pathname])
   },

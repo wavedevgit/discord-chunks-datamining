@@ -22,15 +22,15 @@ let p = Chunk73800.memo(function(e) {
     compact: p,
     className: v,
     isGroupStart: h,
-    hideSimpleEmbedContent: b = true,
-    disableInteraction: P,
+    hideSimpleEmbedContent: P = true,
+    disableInteraction: b,
     previewGuildId: g,
     preview: x,
     author: j
   } = e, O = null != g ? g : (0, s.k)(n), _ = (0, o.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
     content: w
   } = (0, u.Z)(n, {
-    hideSimpleEmbedContent: b,
+    hideSimpleEmbedContent: P,
     allowList: _,
     allowHeading: _,
     allowLinks: true,
@@ -77,7 +77,7 @@ let p = Chunk73800.memo(function(e) {
     }),
     childrenHeader: C,
     childrenMessageContent: (0, d.Z)(e, w),
-    disableInteraction: P,
+    disableInteraction: b,
     author: j,
     preview: x
   })

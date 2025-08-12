@@ -35,8 +35,8 @@ function x(e) {
     themeType: P
   } = (0, m.z)(), {
     interactionSource: E,
-    interactionSourceId: Z
-  } = (0, u.Xo)(), T = (0, d.Z)({
+    interactionSourceId: T
+  } = (0, u.Xo)(), Z = (0, d.Z)({
     display: "recent",
     user: t,
     entry: n,
@@ -54,7 +54,7 @@ function x(e) {
         themeType: P,
         sourceId: n.id,
         entry: n,
-        onAction: T,
+        onAction: Z,
         sourceType: y.n_.ACTIVITY,
         children: () => (0, r.jsx)(p.Z, {
           ref: _,
@@ -62,8 +62,8 @@ function x(e) {
           className: O.toolbarContainer,
           interactionSourceId: n.id,
           sourceType: y.n_.ACTIVITY,
-          onAction: T,
-          onShowToolbar: () => T({
+          onAction: Z,
+          onShowToolbar: () => Z({
             action: "HOVER_ACTIVITY_CARD"
           }),
           renderMoreButtonPopout: v ? true : e => (0, r.jsx)(j.Z, {
@@ -78,7 +78,7 @@ function x(e) {
             user: t,
             onClose: h,
             className: o()(x, {
-              [O.hoisted]: E === y.n_.ACTIVITY && Z === n.id
+              [O.hoisted]: E === y.n_.ACTIVITY && T === n.id
             })
           })
         })

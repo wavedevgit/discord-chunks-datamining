@@ -50,13 +50,13 @@ function I(e) {
     channelId: I,
     messageId: P,
     roleId: E,
-    transitionState: Z,
-    openedAt: T,
+    transitionState: T,
+    openedAt: Z,
     onHide: N,
     sourceAnalyticsLocations: S = []
   } = e, w = n === x.ME ? true : n, A = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: C
-  } = (0, c.ZP)([...S, A ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), L = (0, f.ZB)({
+  } = (0, c.ZP)([...S, A ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), D = (0, f.ZB)({
     layout: "MODAL_V2",
     userId: t.id,
     showGuildProfile: true,
@@ -64,28 +64,28 @@ function I(e) {
     channelId: I,
     messageId: P,
     roleId: E
-  }), D = [{
+  }), L = [{
     icon: o.owK,
     description: h.intl.string(h.t.kcuWvb)
   }, {
     icon: o.owK,
     description: h.intl.string(A ? h.t.QxrDY2 : h.t.W6fjkZ)
-  }], R = (0, m.ZP)(t.id, w), k = u.ZP.getName(null == R ? true : R.guildId, I, t), B = h.intl.formatToPlainString(h.t.KRe1Fh, {
+  }], R = (0, m.ZP)(t.id, w), k = u.ZP.getName(null == R ? true : R.guildId, I, t), G = h.intl.formatToPlainString(h.t.KRe1Fh, {
     name: k
   });
   return (0, r.jsx)(c.Gt, {
     value: C,
     children: (0, r.jsx)(f.Mt, {
-      value: L,
-      openedAt: T,
+      value: D,
+      openedAt: Z,
       fetchStartedAt: null == R ? true : R.fetchStartedAt,
       fetchEndedAt: null == R ? true : R.fetchEndedAt,
       isLoaded: null == R ? true : R.isLoaded,
       children: (0, r.jsx)(o.Y0X, {
         "data-migration-pending": true,
-        transitionState: Z,
+        transitionState: T,
         className: v.root,
-        "aria-label": B,
+        "aria-label": G,
         parentComponent: "RestrictedUserProfileModalV2",
         children: (0, r.jsxs)(g.Z, {
           user: t,
@@ -114,7 +114,7 @@ function I(e) {
               })]
             }), (0, r.jsx)("div", {
               className: v.safetyTable,
-              children: D.map((e, t) => {
+              children: L.map((e, t) => {
                 let {
                   icon: n,
                   description: l
@@ -135,7 +135,7 @@ function I(e) {
                   N(), (0, p.pQ)(_({
                     action: A ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: C
-                  }, L))
+                  }, D))
                 }
               }), (0, r.jsx)(j.Z, {
                 userId: t.id,
@@ -143,7 +143,7 @@ function I(e) {
                   N(), (0, p.pQ)(_({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                     analyticsLocations: C
-                  }, L))
+                  }, D))
                 }
               })]
             })]

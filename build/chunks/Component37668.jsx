@@ -1,7 +1,7 @@
 /** Chunk was on 70887 **/
 /** chunk id: 37668, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => b
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -12,10 +12,12 @@ var Chunk255367 = require("./255367.js"),
   Chunk63063 = require("./63063.js"),
   Chunk86419 = require("./86419.js"),
   Chunk778414 = require("./778414.jsx"),
+  Chunk247989 = require("./247989.js"),
+  Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk680148 = require("./680148.js");
 
-function p(t) {
+function w(t) {
   let {
     widget: e,
     user: i
@@ -28,43 +30,43 @@ function p(t) {
   })
 }
 
-function g(t) {
+function b(t) {
   let {
     transitionState: e,
     widget: i,
     userId: u,
-    onClose: g
-  } = t, w = r.useCallback(() => {
-    (0, o.y8)(i.type), g()
-  }, [i.type, g]), m = (0, s.e7)([c.default], () => c.default.getUser(u));
-  return null == m ? null : (0, n.jsxs)(l.Modal, {
+    onClose: b
+  } = t, m = r.useCallback(() => {
+    (0, o.y8)(i.type), b(), (0, x.L$)(h.qb.WIDGET_REMOVED)
+  }, [i.type, b]), v = (0, s.e7)([c.default], () => c.default.getUser(u));
+  return null == v ? null : (0, n.jsxs)(l.Modal, {
     transitionState: e,
-    onClose: g,
-    title: x.intl.string(x.t.Mm07YW),
-    subtitle: x.intl.format(x.t["x+djIy"], {
+    onClose: b,
+    title: p.intl.string(p.t.Mm07YW),
+    subtitle: p.intl.format(p.t["x+djIy"], {
       helpUrl: d.w
     }),
     actions: [{
       variant: "secondary",
-      text: x.intl.string(x.t["ETE/oK"]),
-      onClick: g
+      text: p.intl.string(p.t["ETE/oK"]),
+      onClick: b
     }, {
       variant: "critical-primary",
-      text: x.intl.string(x.t.Mm07YW),
-      onClick: w
+      text: p.intl.string(p.t.Mm07YW),
+      onClick: m
     }],
     children: [(0, n.jsx)("div", {
-      className: h.widgetPreview,
-      children: (0, n.jsx)(p, {
+      className: g.widgetPreview,
+      children: (0, n.jsx)(w, {
         widget: i,
-        user: m
+        user: v
       })
     }), (0, n.jsx)("div", {
-      className: h.hintText,
+      className: g.hintText,
       children: (0, n.jsx)(a.Text, {
         color: "text-secondary",
         variant: "text-sm/normal",
-        children: x.intl.string(x.t.bQNGeX)
+        children: p.intl.string(p.t.bQNGeX)
       })
     })]
   })

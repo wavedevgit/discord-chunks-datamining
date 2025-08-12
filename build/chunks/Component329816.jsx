@@ -75,10 +75,11 @@ let Q = (0, Chunk663993.Un)({
     let e = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
       t = (0, Chunk526665.wy)("AppSkeleton"),
       n = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.getLayers().includes(Chunk981631.S9g.USER_SETTINGS)),
-      i = (0, Chunk481060.s9z)(Chunk481060.$sL);
+      i = (0, Chunk481060.s9z)(Chunk481060.$sL),
+      o = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.isAuthenticated());
     if (!require || !exports) return (0, Chunk255367.jsx)(Chunk950796.Dg, {
       fixed: true,
-      show: module || Chunk73800 || !Chunk314897.default.isAuthenticated()
+      show: module || Chunk73800 || !Chunk120356
     })
   }),
   ee = function(e) {

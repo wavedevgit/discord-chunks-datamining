@@ -29,7 +29,7 @@ class p {
   }
   constructor(e) {
     var t;
-    _(this, "shopBlocks", true), _(this, "categories", true), _(this, "user_discounts", true), this.shopBlocks = e.shop_blocks.map(e => {
+    _(this, "shopBlocks", true), _(this, "categories", true), _(this, "userDiscounts", true), this.shopBlocks = e.shop_blocks.map(e => {
       switch (e.type) {
         case r.z.HERO:
           return c.s.fromServer(e);
@@ -48,6 +48,6 @@ class p {
         default:
           return
       }
-    }).filter(e => true !== e), this.categories = e.categories.map(e => i.Z.fromServer(e)), this.user_discounts = null == (t = e.user_discounts) ? true : t.map(e => o.h.fromServer(e))
+    }).filter(e => true !== e), this.categories = e.categories.map(e => i.Z.fromServer(e)), this.userDiscounts = null == (t = e.user_discounts) ? true : t.map(e => o.h.fromServer(e))
   }
 }

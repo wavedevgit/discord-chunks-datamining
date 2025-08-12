@@ -285,12 +285,7 @@ let ei = (0, Chunk560997.Zc)("privacy", "dropsOptedOut", e => {
 }, e => a.D5.create({
   value: e
 }));
-(0, Chunk560997.Zc)("privacy", "quests3PDataOptedOut", e => {
-  var t;
-  return null != (t = null == e ? true : e.value) && t
-}, e => a.D5.create({
-  value: e
-})), (0, Chunk560997.Zc)("voiceAndVideo", "nativePhoneIntegrationEnabled", e => {
+(0, Chunk560997.Zc)("voiceAndVideo", "nativePhoneIntegrationEnabled", e => {
   var t;
   return null == (t = null == e ? true : e.value) || t
 }, e => a.D5.create({

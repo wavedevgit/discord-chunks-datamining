@@ -33,9 +33,9 @@ function I(e) {
     displayProfile: I,
     guildId: P,
     subsection: E,
-    onClose: Z
+    onClose: T
   } = e, {
-    voiceActivityStatusEnabled: T
+    voiceActivityStatusEnabled: Z
   } = (0, o.U)({
     location: "UserProfileModalActivity"
   }), N = (0, u.b)({
@@ -46,27 +46,27 @@ function I(e) {
     stream: A
   } = (0, f.Z)(t.id), {
     voiceChannel: C,
-    voiceActivity: L
+    voiceActivity: D
   } = (0, p.Z)({
     userId: t.id,
     guildId: P
-  }), D = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, k = (0, l.e7)([s.Z, c.Z], () => {
+  }), L = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, k = (0, l.e7)([s.Z, c.Z], () => {
     let e = R ? s.Z.getStatus() : c.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), B = S.length > 0 || null != A, G = T && null == A && null == L && null != C, M = !k && (B || G), U = w.length > 0;
-  return M || U || !D ? (0, r.jsxs)(i.zJl, {
+  }), G = S.length > 0 || null != A, M = Z && null == A && null == D && null != C, B = !k && (G || M), U = w.length > 0;
+  return B || U || !L ? (0, r.jsxs)(i.zJl, {
     className: v.scroller,
     fade: true,
-    children: [M ? (0, r.jsx)(m.Z, {
+    children: [B ? (0, r.jsx)(m.Z, {
       "aria-label": h.intl.string(h.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: v.activityList,
-        children: [!N && G && (0, r.jsx)("li", {
+        children: [!N && M && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
             voiceChannel: C,
-            onClose: Z
+            onClose: T
           })
         }), null != A && (0, r.jsx)("li", {
           children: (0, r.jsx)(j.Z, {
@@ -74,7 +74,7 @@ function I(e) {
             user: t,
             currentUser: n,
             stream: A,
-            onClose: Z,
+            onClose: T,
             profileGuildId: null == I ? true : I.guildId
           })
         }), S.map((e, l) => (0, r.jsx)("li", {
@@ -82,7 +82,7 @@ function I(e) {
             user: t,
             currentUser: n,
             activity: e,
-            onClose: Z,
+            onClose: T,
             profileGuildId: null == I ? true : I.guildId
           })
         }, "live-".concat(l)))]
@@ -105,7 +105,7 @@ function I(e) {
             currentUser: n,
             entry: e,
             profileGuildId: null == I ? true : I.guildId,
-            onClose: Z
+            onClose: T
           })
         }, e.id))
       })

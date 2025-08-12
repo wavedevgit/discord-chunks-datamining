@@ -146,8 +146,8 @@ function _(e) {
     imageSrc: I,
     applicationId: P,
     comment: E,
-    tags: Z
-  } = o, T = {
+    tags: T
+  } = o, Z = {
     variant: "text-md/normal",
     color: "text-default"
   }, N = a.default.getCurrentUser(), S = (null == N ? true : N.id) === t.id;
@@ -176,19 +176,19 @@ function _(e) {
       disableInteraction: p
     }), (0, r.jsxs)("div", {
       className: j.details,
-      children: [p ? (0, r.jsx)(l.X6q, O(y({}, T), {
+      children: [p ? (0, r.jsx)(l.X6q, O(y({}, Z), {
         children: _
       })) : (0, r.jsx)(x, y({
         applicationId: P,
         userId: t.id,
         gameName: _
-      }, T)), null != E && (0, r.jsx)(h, {
+      }, Z)), null != E && (0, r.jsx)(h, {
         text: E,
         user: t,
         guildId: n,
         channelId: i
       }), (0, r.jsx)(u.Z, {
-        tags: Z
+        tags: T
       }), !p && (0, r.jsx)(v, {
         className: j.socialProof,
         applicationId: P,

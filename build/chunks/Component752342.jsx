@@ -40,29 +40,29 @@ function S(e) {
     channelId: w,
     messageId: A,
     roleId: C,
-    sessionId: L,
-    initialSection: D,
+    sessionId: D,
+    initialSection: L,
     initialSubsection: R,
     transitionState: k,
-    openedAt: B,
-    onClose: G,
-    sourceAnalyticsLocations: M = []
-  } = e, U = S === Z.ME ? true : S, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, w, t), Y = (0, c.Dt)(), {
+    openedAt: G,
+    onClose: M,
+    sourceAnalyticsLocations: B = []
+  } = e, U = S === T.ME ? true : S, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, w, t), Y = (0, c.Dt)(), {
     analyticsLocations: H
-  } = (0, a.ZP)([...M, o.Z.USER_PROFILE_MODAL]), W = (0, d.ZB)({
+  } = (0, a.ZP)([...B, o.Z.USER_PROFILE_MODAL]), W = (0, d.ZB)({
     layout: "MODAL",
     userId: t.id,
-    sourceSessionId: L,
+    sourceSessionId: D,
     guildId: U,
     channelId: w,
     messageId: A,
     roleId: C
-  }), K = (0, P.Z)(t);
+  }), z = (0, P.Z)(t);
   return (0, r.jsx)(a.Gt, {
     value: H,
     children: (0, r.jsx)(d.Mt, {
       value: W,
-      openedAt: B,
+      openedAt: G,
       fetchStartedAt: null == F ? true : F.fetchStartedAt,
       fetchEndedAt: null == F ? true : F.fetchEndedAt,
       isLoaded: null == F ? true : F.isLoaded,
@@ -77,7 +77,7 @@ function S(e) {
           component: (0, r.jsx)(l.nn4, {
             children: (0, r.jsx)(l.H, {
               id: Y,
-              children: T.intl.format(T.t.KRe1Fh, {
+              children: Z.intl.format(Z.t.KRe1Fh, {
                 name: V
               })
             })
@@ -90,7 +90,7 @@ function S(e) {
               children: (0, r.jsx)(O.Z, {
                 user: t,
                 guildId: U,
-                onCloseProfile: G
+                onCloseProfile: M
               })
             }), (0, r.jsxs)("div", {
               children: [(0, r.jsx)(m.Z, {
@@ -110,7 +110,7 @@ function S(e) {
                   user: t,
                   themeType: E.lY.MODAL,
                   hasEntered: k === l.Dvm.ENTERED,
-                  onCloseProfile: G,
+                  onCloseProfile: M,
                   disableToolbar: true
                 }), (0, r.jsxs)("div", {
                   className: N.headerButtons,
@@ -147,17 +147,17 @@ function S(e) {
                 tags: (0, r.jsx)(p.Z, {
                   displayProfile: F,
                   themeType: E.lY.MODAL,
-                  onClose: G
+                  onClose: M
                 })
               }), (0, r.jsx)(I.Z, {
                 user: t,
                 currentUser: n,
                 displayProfile: F,
                 guildId: U,
-                items: K,
-                initialSection: null != D ? D : E.oh.BOT_INFO,
+                items: z,
+                initialSection: null != L ? L : E.oh.BOT_INFO,
                 initialSubsection: R,
-                onClose: G
+                onClose: M
               })]
             })]
           })
