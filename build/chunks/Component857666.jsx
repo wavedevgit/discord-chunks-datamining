@@ -6,6 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
+  Chunk494497 = require("./494497.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk434404 = require("./434404.js"),
@@ -13,7 +14,6 @@ var Chunk255367 = require("./255367.js"),
   Chunk639777 = require("./639777.js"),
   Chunk169010 = require("./169010.js"),
   Chunk279604 = require("./279604.jsx"),
-  Chunk535396 = require("./535396.js"),
   Chunk981631 = require("./981631.js"),
   Chunk93841 = require("./93841.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -22,32 +22,32 @@ var Chunk255367 = require("./255367.js"),
 
 function _(e, t) {
   var _;
-  let b = null != (_ = (0, u.Z)(t)) && _,
-    j = (0, i.e7)([a.Z], () => {
+  let b = null != (_ = (0, c.Z)(t)) && _,
+    j = (0, l.e7)([u.Z], () => {
       var e;
-      return null == (e = a.Z.getStateForGuild(t)) ? true : e.allPowerups
+      return null == (e = u.Z.getStateForGuild(t)) ? true : e.allPowerups
     }),
-    h = (0, i.e7)([a.Z], () => {
+    h = (0, l.e7)([u.Z], () => {
       var e;
-      return null == (e = a.Z.getStateForGuild(t)) ? true : e.unlockedPowerups
+      return null == (e = u.Z.getStateForGuild(t)) ? true : e.unlockedPowerups
     });
   return o.useMemo(() => {
     let o = e => "guildTagsBadgePacks" === e ? function(e) {
         let {
           guildId: t,
           canUseBoosts: o,
-          allPowerups: i,
-          unlockedPowerups: a,
-          skuIds: u
-        } = e, c = g.intl.string(m.default.KC9HRU), _ = g.intl.string(m.default.GJiSmJ), b = null == i ? true : i[p.IN], j = (null == a ? true : a[p.IN]) != null, h = g.intl.string(m.default["/egwJC"]), E = j ? true : g.intl.string(m.default.W6Vwn5), C = j ? true : g.intl.string(m.default.lvk1GR), I = j ? g.intl.string(m.default["9CfkLC"]) : g.intl.string(m.default.NTuNw8), O = j ? "secondary" : "primary", y = o ? () => {
-          j ? s.Z.open(t, f.pNK.TAG, f.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != b && (0, d.KE)(t, b), (0, l.pTH)()
+          allPowerups: l,
+          unlockedPowerups: u,
+          skuIds: c
+        } = e, d = g.intl.string(m.default.KC9HRU), _ = g.intl.string(m.default.GJiSmJ), b = null == l ? true : l[i.IN], j = (null == u ? true : u[i.IN]) != null, h = g.intl.string(m.default["/egwJC"]), E = j ? true : g.intl.string(m.default.W6Vwn5), C = j ? true : g.intl.string(m.default.lvk1GR), I = j ? g.intl.string(m.default["9CfkLC"]) : g.intl.string(m.default.NTuNw8), O = j ? "secondary" : "primary", y = o ? () => {
+          j ? a.Z.open(t, f.pNK.TAG, f.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != b && (0, p.KE)(t, b), (0, s.pTH)()
         } : true;
         return {
-          title: c,
+          title: d,
           description: _,
           openModal: function(e) {
             let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-            (0, l.ZDy)(async () => {
+            (0, s.ZDy)(async () => {
               let {
                 default: i
               } = await n.e("64767").then(n.bind(n, 754887));
@@ -70,7 +70,7 @@ function _(e, t) {
                 return e
               }({
                 guildId: t,
-                title: c,
+                title: d,
                 description: g.intl.string(m.default.BBRFRU),
                 powerups: e,
                 footerInfoText: C,
@@ -91,21 +91,21 @@ function _(e, t) {
             staticUrl: v.Z,
             animatedUrl: x.Z
           },
-          skuIds: u
+          skuIds: c
         }
       }({
         guildId: t,
         canUseBoosts: b,
         allPowerups: j,
         unlockedPowerups: h,
-        skuIds: c.z[e]
+        skuIds: d.z[e]
       }) : true,
-      i = {};
+      l = {};
     for (let t of e) {
       let e = o(t);
-      null != e && (i[t] = e)
+      null != e && (l[t] = e)
     }
-    return i
+    return l
   }, [e, t, b, j, h])
 }
 

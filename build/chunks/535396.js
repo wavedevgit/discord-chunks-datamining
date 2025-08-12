@@ -2,27 +2,24 @@
 /** chunk id: 535396, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A3: () => N,
-  Cp: () => m,
-  Du: () => C,
-  Fq: () => h,
-  H2: () => O,
-  Hk: () => S,
-  IN: () => b,
-  If: () => y,
-  NL: () => R,
+  A3: () => v,
+  Cp: () => _,
+  Du: () => I,
+  Fq: () => f,
+  H2: () => m,
+  Hk: () => y,
+  NL: () => T,
   NO: () => u,
-  Q1: () => E,
-  Rx: () => A,
-  T1: () => g,
-  Tg: () => v,
+  Q1: () => h,
+  Rx: () => O,
+  T1: () => p,
+  Tg: () => g,
   Us: () => c,
-  XW: () => _,
-  ad: () => p,
-  am: () => w,
-  d5: () => T,
-  os: () => P,
-  uc: () => I
+  ad: () => d,
+  am: () => A,
+  d5: () => b,
+  os: () => S,
+  uc: () => E
 }), require("./388685.js");
 var Chunk494497 = require("./494497.js"),
   Chunk704215 = require("./704215.js"),
@@ -34,39 +31,34 @@ var Chunk494497 = require("./494497.js"),
     return e.PERK = "perk", e.LEVEL = "level", e
   }({});
 let u = "1340102344645283891",
-  d = "1341586379779604621",
-  f = "1341586379779604622",
-  _ = "1341586379779604623",
-  p = new Set([d, f, _]),
-  h = "525479941211684874",
-  m = {
-    [Chunk981631.Eu4.TIER_1]: d,
-    [Chunk981631.Eu4.TIER_2]: f,
-    [Chunk981631.Eu4.TIER_3]: _,
+  d = new Set([Chunk494497.h_, Chunk494497.NJ, Chunk494497.XW]),
+  f = "525479941211684874",
+  _ = {
+    [Chunk981631.Eu4.TIER_1]: Chunk494497.h_,
+    [Chunk981631.Eu4.TIER_2]: Chunk494497.NJ,
+    [Chunk981631.Eu4.TIER_3]: Chunk494497.XW,
     [Chunk981631.Eu4.NONE]: true
   },
-  g = {
-    [d]: Chunk981631.Eu4.TIER_1,
-    [f]: Chunk981631.Eu4.TIER_2,
-    [_]: Chunk981631.Eu4.TIER_3
+  p = {
+    [Chunk494497.h_]: Chunk981631.Eu4.TIER_1,
+    [Chunk494497.NJ]: Chunk981631.Eu4.TIER_2,
+    [Chunk494497.XW]: Chunk981631.Eu4.TIER_3
   },
-  E = {
+  h = {
     [Chunk981631.Eu4.TIER_1]: Chunk704215.C.GUILD_POWERUP_LEVEL_1_COACHMARK,
     [Chunk981631.Eu4.TIER_2]: Chunk704215.C.GUILD_POWERUP_LEVEL_2_COACHMARK,
     [Chunk981631.Eu4.TIER_3]: Chunk704215.C.GUILD_POWERUP_LEVEL_3_COACHMARK,
     [Chunk981631.Eu4.NONE]: true
   },
-  b = "1351706802684952639",
-  y = "1354906318279807056",
-  O = "guild_powerup_modal",
-  v = [
-    [b],
-    [y],
+  m = "guild_powerup_modal",
+  g = [
+    [Chunk494497.IN],
+    [Chunk494497.If],
     [Chunk494497.A$],
     [Chunk494497.MB, Chunk494497.Vk]
   ],
-  I = new Set([b, y, Chunk494497.A$]),
-  T = () => ({
+  E = new Set([Chunk494497.IN, Chunk494497.If, Chunk494497.A$]),
+  b = () => ({
     [Chunk981631.oNc.VIDEO_BITRATE_ENHANCED]: {
       perkIcon: Chunk267642.Ro.STREAM,
       description: Chunk388032.intl.string(Chunk388032.t.y4ft4O)
@@ -126,7 +118,7 @@ let u = "1340102344645283891",
       })
     }
   }),
-  S = {
+  y = {
     [Chunk981631.oNc.VANITY_URL]: {
       boostPrice: 5,
       includedInLevel: Chunk981631.Eu4.TIER_3
@@ -148,18 +140,18 @@ let u = "1340102344645283891",
       includedInLevel: true
     }
   },
-  A = {
+  O = {
     [Chunk494497.A$]: Chunk981631.Eu4.TIER_3
   };
-var N = function(e) {
+var v = function(e) {
     return e.INACTIVE = "inactive", e.POWERUP_ACTIVATED = "powerup_activated", e.LEVEL_ACTIVATED = "level_activated", e.TIER_OVERRIDE_ACTIVATED = "tier_override_activated", e
   }({}),
-  C = function(e) {
+  I = function(e) {
     return e[e.VANITY_URL = 1] = "VANITY_URL", e[e.GUILD_TAG_BADGE_PACKS_WAVE_ONE = 2] = "GUILD_TAG_BADGE_PACKS_WAVE_ONE", e
   }({});
-let R = new Set([Chunk494497.MB, Chunk494497.Vk]),
-  P = {
+let T = new Set([Chunk494497.MB, Chunk494497.Vk]),
+  S = {
     1: new Set([Chunk494497.A$]),
-    2: R
+    2: T
   },
-  w = "powerupId"
+  A = "powerupId"

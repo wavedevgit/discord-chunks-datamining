@@ -13,10 +13,10 @@ var Chunk73800 = require("./73800.js"),
 function c(e, t) {
   let n = r.useCallback(n => {
     if (n.stopPropagation(), t.type !== s.Us.LEVEL) switch ((0, l.Mr3)(s.H2), t.skuId) {
-      case s.IN:
+      case o.IN:
         a.Z.open(e, i.pNK.TAG, i.jXE.GUILD_POWERUPS_OVERVIEW_CARD);
         return;
-      case s.If:
+      case o.If:
         a.Z.open(e, i.pNK.ROLES, i.jXE.GUILD_POWERUPS_OVERVIEW_CARD);
         return;
       case o.A$:

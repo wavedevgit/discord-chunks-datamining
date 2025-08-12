@@ -60,14 +60,14 @@ function j(e) {
         return (null == (t = u.Z.getGuild(e)) ? true : t.vanityURLCode) != null
       }),
       p = (0, f.g1)(e, "Powerup Deactivate Modal"),
-      x = (0, i.e7)([d.Z], () => t.skuId !== g.If || null == m ? 0 : d.Z.getSortedRoles(e).reduce((e, t) => {
+      x = (0, i.e7)([d.Z], () => t.skuId !== a.If || null == m ? 0 : d.Z.getSortedRoles(e).reduce((e, t) => {
         var n, r;
         return (null == (n = t.colorStrings) ? true : n.secondaryColor) == null ? e : e + (null != (r = m[t.id]) ? r : 0)
       }, 0), [e, t.skuId, m]);
     return o.useMemo(() => {
       let e;
       switch (t.skuId) {
-        case g.If:
+        case a.If:
           e = x > 0 ? v.intl.formatToPlainString(k.default["4jSvr6"], {
             perk: t.title,
             memberCount: x
@@ -96,7 +96,7 @@ function j(e) {
             memberCount: n
           })
       }
-      return b && t.skuId === g.XW && (e = (0, r.jsxs)(r.Fragment, {
+      return b && t.skuId === a.XW && (e = (0, r.jsxs)(r.Fragment, {
         children: [e, (0, r.jsx)(s.Text, {
           color: "text-danger",
           variant: "text-sm/semibold",
