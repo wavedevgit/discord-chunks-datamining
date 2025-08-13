@@ -122,9 +122,9 @@ function en(e) {
       userId: n.id
     }),
     eR = (0, b.vh)(n.id),
-    ek = (0, Z.Z)(n.id),
-    eG = (0, p.Dt)(),
-    eM = ee.intl.format(ee.t.KRe1Fh, {
+    eG = (0, Z.Z)(n.id),
+    ek = (0, p.Dt)(),
+    eB = ee.intl.format(ee.t.KRe1Fh, {
       name: eT
     });
   return l.useEffect(() => {
@@ -154,16 +154,16 @@ function en(e) {
             hideShadow: true,
             className: et.root,
             transitionState: ed,
-            "aria-labelledby": eG,
+            "aria-labelledby": ek,
             parentComponent: "UserProfileModalV2",
             children: [eb ? (0, r.jsxs)("div", {
               className: et.previewBar,
               children: [(0, r.jsxs)(a.X6q, {
-                id: eG,
+                id: ek,
                 variant: "heading-sm/normal",
                 color: "text-primary",
                 children: [(0, r.jsx)(a.nn4, {
-                  children: "".concat(ee.intl.string(ee.t.apViam), ": ").concat(eM)
+                  children: "".concat(ee.intl.string(ee.t.apViam), ": ").concat(eB)
                 }), (0, r.jsx)("span", {
                   "aria-hidden": true,
                   children: ee.intl.string(ee.t.apViam)
@@ -177,8 +177,8 @@ function en(e) {
               })]
             }) : (0, r.jsx)(a.nn4, {
               children: (0, r.jsx)(a.H, {
-                id: eG,
-                children: eM
+                id: ek,
+                children: eB
               })
             }), (0, r.jsx)(a.y5t, {
               children: (0, r.jsxs)(U.Z, {
@@ -206,7 +206,7 @@ function en(e) {
                       user: n,
                       displayProfile: eE,
                       themeType: Q.lY.MODAL_V2
-                    }), (0, r.jsx)(G.Z, {
+                    }), (0, r.jsx)(k.Z, {
                       userId: n.id,
                       onClose: ep,
                       className: et.interactionToast
@@ -247,7 +247,7 @@ function en(e) {
                       })
                     }), eZ === $.OGo.PENDING_INCOMING && (0, r.jsx)(U.Z.Overlay, {
                       className: et.profileOverlay,
-                      children: (0, r.jsx)(k.Z, {
+                      children: (0, r.jsx)(G.Z, {
                         user: n,
                         applicationId: eN,
                         guildId: null != (t = null == eE ? true : eE.guildId) ? t : true,
@@ -261,7 +261,7 @@ function en(e) {
                       } = e;
                       return (0, r.jsx)(U.Z.Overlay, {
                         className: et.profileOverlay,
-                        children: (0, r.jsx)(k.Z, {
+                        children: (0, r.jsx)(G.Z, {
                           user: n,
                           guildId: null != (t = null == eE ? true : eE.guildId) ? t : true,
                           channelId: el,
@@ -288,7 +288,7 @@ function en(e) {
                     }), n.id === en.id && (0, r.jsx)(D.Z, {
                       isPremiumUser: (0, I.I5)(en),
                       onInteraction: ep
-                    }), (0, r.jsx)(B.Z, {
+                    }), (0, r.jsx)(M.Z, {
                       user: n,
                       className: et.profileBanner
                     }), (0, r.jsx)("div", {
@@ -312,7 +312,7 @@ function en(e) {
                       })
                     }), (0, r.jsx)(z.Z, {
                       heading: ee.intl.string(ee.t.a6XYDw),
-                      children: (0, r.jsx)(M.Z, {
+                      children: (0, r.jsx)(B.Z, {
                         userId: n.id,
                         guildId: null == eE ? true : eE.guildId,
                         tooltipDelay: Q.vB
@@ -325,11 +325,11 @@ function en(e) {
                       headingVariant: "text-xs/medium",
                       headingColor: "currentColor",
                       scrollIntoView: es === Q.Tb.ROLES
-                    }), ek.length > 0 && (0, r.jsx)(z.Z, {
+                    }), eG.length > 0 && (0, r.jsx)(z.Z, {
                       heading: ee.intl.string(ee.t["3fe7U1"]),
                       scrollIntoView: es === Q.Tb.CONNECTIONS,
                       children: (0, r.jsx)(H.Z, {
-                        connections: ek,
+                        connections: eG,
                         userId: n.id,
                         className: et.profileAppConnections
                       })

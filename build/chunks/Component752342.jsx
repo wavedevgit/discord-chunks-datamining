@@ -43,13 +43,13 @@ function S(e) {
     sessionId: D,
     initialSection: L,
     initialSubsection: R,
-    transitionState: k,
-    openedAt: G,
-    onClose: M,
-    sourceAnalyticsLocations: B = []
+    transitionState: G,
+    openedAt: k,
+    onClose: B,
+    sourceAnalyticsLocations: M = []
   } = e, U = S === T.ME ? true : S, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, w, t), Y = (0, c.Dt)(), {
     analyticsLocations: W
-  } = (0, a.ZP)([...B, o.Z.USER_PROFILE_MODAL]), H = (0, d.ZB)({
+  } = (0, a.ZP)([...M, o.Z.USER_PROFILE_MODAL]), H = (0, d.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: D,
@@ -62,13 +62,13 @@ function S(e) {
     value: W,
     children: (0, r.jsx)(d.Mt, {
       value: H,
-      openedAt: G,
+      openedAt: k,
       fetchStartedAt: null == F ? true : F.fetchStartedAt,
       fetchEndedAt: null == F ? true : F.fetchEndedAt,
       isLoaded: null == F ? true : F.isLoaded,
       children: (0, r.jsx)(l.Y0X, {
         "data-migration-pending": true,
-        transitionState: k,
+        transitionState: G,
         className: N.root,
         hideShadow: true,
         "aria-labelledby": Y,
@@ -90,7 +90,7 @@ function S(e) {
               children: (0, r.jsx)(x.Z, {
                 user: t,
                 guildId: U,
-                onCloseProfile: M
+                onCloseProfile: B
               })
             }), (0, r.jsxs)("div", {
               children: [(0, r.jsx)(m.Z, {
@@ -109,8 +109,8 @@ function S(e) {
                   location: "BotUserProfileModal",
                   user: t,
                   themeType: E.lY.MODAL,
-                  hasEntered: k === l.Dvm.ENTERED,
-                  onCloseProfile: M,
+                  hasEntered: G === l.Dvm.ENTERED,
+                  onCloseProfile: B,
                   disableToolbar: true
                 }), (0, r.jsxs)("div", {
                   className: N.headerButtons,
@@ -147,7 +147,7 @@ function S(e) {
                 tags: (0, r.jsx)(p.Z, {
                   displayProfile: F,
                   themeType: E.lY.MODAL,
-                  onClose: M
+                  onClose: B
                 })
               }), (0, r.jsx)(I.Z, {
                 user: t,
@@ -157,7 +157,7 @@ function S(e) {
                 items: z,
                 initialSection: null != L ? L : E.oh.BOT_INFO,
                 initialSubsection: R,
-                onClose: M
+                onClose: B
               })]
             })]
           })

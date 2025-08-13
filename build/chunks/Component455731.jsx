@@ -55,6 +55,7 @@ function a(e) {
     }({
       userId: t.id,
       games: n.games,
+      widgetType: n.type,
       disableInteraction: c
     }, s)) : (0, r.jsx)(i.Z, {
       widgetType: n.type

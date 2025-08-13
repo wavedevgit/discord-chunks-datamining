@@ -2,7 +2,7 @@
 /** chunk id: 997545, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js"), require("./415506.js"), require("./49124.js"), require("./642613.js"), require("./35282.js"), require("./539854.js");
 var Chunk595182 = require("./595182.js"),
   i = require.n(Chunk595182),
@@ -66,26 +66,22 @@ function A(e, t) {
 let N = 50,
   C = .9,
   R = .1,
-  P = 0,
-  w = {
-    fec: true,
-    packetLossRate: .3
-  };
+  P = 0;
 
-function D(e) {
+function w(e) {
   return (null != e ? e : v.Qx) / v.Qx
 }
 
-function L(e) {
+function D(e) {
   return null != e && 0 !== e ? e + 1 : 0
 }
-class x extends Chunk839548.Z {
+class L extends Chunk839548.Z {
   static create(e, t, n) {
-    let r = new x(e, t, true);
+    let r = new L(e, t, true);
     return r.initialize(n), r
   }
   static createReplay(e, t) {
-    let n = new x(e, "0", true),
+    let n = new L(e, "0", true),
       r = (0, b.zS)();
     n.initializeStreamParameters([{
       type: O.Tr.VIDEO,
@@ -102,7 +98,7 @@ class x extends Chunk839548.Z {
           n.codecs = [{
             type: "audio",
             name: v.ad.OPUS,
-            priority: 2,
+            priority: 1,
             payloadType: 120
           }, ...(0, g.yQ)(t, r).map((e, t) => {
             let n = t + 1,
@@ -152,7 +148,7 @@ class x extends Chunk839548.Z {
           this.logger.info("Experimental codecs: ".concat(JSON.stringify(i))), this.codecs = [{
             type: "audio",
             name: v.ad.OPUS,
-            priority: 2,
+            priority: 1,
             payloadType: 120
           }, ...(0, g.yQ)(r, i).map((e, t) => {
             let n = t + 1,
@@ -211,13 +207,7 @@ class x extends Chunk839548.Z {
     this.conn.destroy(), Object.keys(this.localSpeakingFlags).filter(e => e !== this.userId).forEach(e => this.emit(m.Sh.Speaking, e, v.Dg.NONE, this.remoteAudioSSRCs[e])), this.setConnectionState(Chunk149396.$j.DISCONNECTED), super.destroy()
   }
   setCodecs(e, t, n) {
-    this.logger.info("Setting codecs for context: ".concat(n, ": ").concat(e, " ").concat(t));
-    let r = this.getCodecOptions(e, t, n),
-      i = e === v.ad.RED ? {
-        fec: false,
-        packetLossRate: 0
-      } : w;
-    this.conn.setTransportOptions(T({}, r, i)), this.videoEncoderFallbackPending && (this.videoEncoderFallbackPending = false)
+    this.conn.setTransportOptions(this.getCodecOptions(e, t, n)), this.videoEncoderFallbackPending && (this.videoEncoderFallbackPending = false)
   }
   getStats() {
     return this.connectionState === Chunk149396.$j.DISCONNECTED ? Promise.resolve(null) : (0, Chunk420994.timeout)(new Promise(e => {
@@ -240,7 +230,7 @@ class x extends Chunk839548.Z {
           ssrc: t,
           videoSsrc: r,
           videoSsrcs: n,
-          rtxSsrc: L(r),
+          rtxSsrc: D(r),
           mute: this.getLocalMute(e),
           volume: this.getLocalVolume(e)
         };
@@ -327,7 +317,7 @@ class x extends Chunk839548.Z {
   }
   getLocalVolume(e) {
     let t = this.localVolumes[e];
-    return null == t && (t = this.context === v.Yn.DEFAULT ? v.Qx : v.Yh), D(t)
+    return null == t && (t = this.context === v.Yn.DEFAULT ? v.Qx : v.Yh), w(t)
   }
   setLocalVolume(e, t) {
     this.localVolumes[e] = t;
@@ -579,7 +569,7 @@ class x extends Chunk839548.Z {
       c = false !== l && this.videoStreamParameters.length > l,
       u = this.videoQualityManager.shouldEnableGoliveSimulcastForHqQuality(i),
       d = c && this.videoStreamParameters[l].active !== u;
-    c && (this.videoStreamParameters[l].active = u, this.simulcastLQDisabledSsrc = u ? true : this.videoStreamParameters[l].ssrc), (a || d) && (this.emit(m.Sh.Video, this.userId, null, this.audioSSRC, this.videoStreamParameters[s].ssrc, L(this.videoStreamParameters[s].ssrc), this.videoStreamParameters), this.conn.setTransportOptions(this.applyQualityConstraints().constraints))
+    c && (this.videoStreamParameters[l].active = u, this.simulcastLQDisabledSsrc = u ? true : this.videoStreamParameters[l].ssrc), (a || d) && (this.emit(m.Sh.Video, this.userId, null, this.audioSSRC, this.videoStreamParameters[s].ssrc, D(this.videoStreamParameters[s].ssrc), this.videoStreamParameters), this.conn.setTransportOptions(this.applyQualityConstraints().constraints))
   }
   setSDP(e) {}
   setRemoteVideoSinkWants(e) {
@@ -660,7 +650,7 @@ class x extends Chunk839548.Z {
         ssrc: this.remoteAudioSSRCs[e],
         videoSsrc: t,
         videoSsrcs: this.remoteVideoSSRCs[e],
-        rtxSsrc: L(t),
+        rtxSsrc: D(t),
         mute: this.getLocalMute(e),
         volume: this.getLocalVolume(e)
       }
@@ -708,21 +698,15 @@ class x extends Chunk839548.Z {
   }
   getCodecOptions(e, t, n) {
     var r, i, o;
-    let a, s;
-    if (e === v.ad.RED) {
-      let t = this.codecs.find(t => t.name === e);
-      s = null == t ? true : t.payloadType, e = v.ad.OPUS
-    }
-    let l = {
+    let a, s = {
         type: null != (r = null == (a = this.codecs.find(t => t.name === e)) ? true : a.payloadType) ? r : 0,
         name: e,
         freq: 48e3,
         pacsize: 960,
         channels: 1,
-        rate: 64e3,
-        redPayloadType: s
+        rate: 64e3
       },
-      c = this.codecs.filter(e => "audio" === e.type).map(e => {
+      l = this.codecs.filter(e => "audio" === e.type).map(e => {
         var t;
         return {
           type: null != (t = null == e ? true : e.payloadType) ? t : 0,
@@ -734,9 +718,9 @@ class x extends Chunk839548.Z {
           }
         }
       });
-    n === v.Yn.STREAM && (l.channels = 2);
-    let u = [],
-      d = {
+    n === v.Yn.STREAM && (s.channels = 2);
+    let c = [],
+      u = {
         name: "",
         type: 0,
         rtxType: 0,
@@ -752,15 +736,15 @@ class x extends Chunk839548.Z {
       };
       this.experimentFlags.has(O.V8.RESET_DECODER_ON_ERRORS) && (n.params["reset-on-errors"] = "1"), this.experimentFlags.has(O.V8.SOFTWARE_FALLBACK_ON_ERRORS) && (n.params["fallback-after-errors"] = "3"), this.experimentFlags.has(O.V8.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS) && (n.params["fallback-on-consecutive-errors"] = "1"), this.experimentFlags.has(O.V8.SIGNAL_AV1_HARDWARE_DECODE) && (n.params["hardware-av1-decode"] = "1");
       let r = this.hardwareH264 && this.useElectronVideo ? "1" : "0";
-      n.params["hardware-h264"] = r, u.push(n), a.name === t && (d = A(T({}, n), {
+      n.params["hardware-h264"] = r, c.push(n), a.name === t && (u = A(T({}, n), {
         params: this.getCodecParams(a.name, false)
-      }), this.experimentFlags.has(O.V8.VIDEOTOOLBOX_RATE_CONTROL) && (d.params["fixed-rate-presentation-timestamps"] = "1"), d.params["hardware-h264"] = r)
+      }), this.experimentFlags.has(O.V8.VIDEOTOOLBOX_RATE_CONTROL) && (u.params["fixed-rate-presentation-timestamps"] = "1"), u.params["hardware-h264"] = r)
     }
     return {
-      videoEncoder: d,
-      videoDecoders: u,
-      audioEncoder: l,
-      audioDecoders: c
+      videoEncoder: u,
+      videoDecoders: c,
+      audioEncoder: s,
+      audioDecoders: l
     }
   }
   getKeyFrameInterval() {
@@ -773,7 +757,9 @@ class x extends Chunk839548.Z {
       inputModeOptions: this.createInputModeOptions(),
       minimumJitterBufferLevel: this.minimumJitterBufferLevel,
       postponeDecodeLevel: this.postponeDecodeLevel
-    }, this.getAttenuationOptions(), w), {
+    }, this.getAttenuationOptions()), {
+      fec: true,
+      packetLossRate: .3,
       qos: this.qos,
       prioritySpeakerDucking: Chunk149396.jg,
       encodingVoiceBitRate: this.voiceBitrate,
@@ -889,7 +875,7 @@ class x extends Chunk839548.Z {
             })
           }
         })
-      }) : t > 0 ? (i[0].active = true, i[0].ssrc = t, i[0].rtxSsrc = L(t)) : i[0].active = false : t > 0 && (true !== this.remoteVideoSSRCs[e] ? this.remoteVideoSSRCs[e].includes(t) || (this.remoteVideoSSRCs[e] = [...this.remoteVideoSSRCs[e], t]) : this.remoteVideoSSRCs[e] = [t]), this.videoStreamParameters = i, this.emit(m.Sh.Video, e, null != n && "" !== n ? n : null, e === this.userId ? this.audioSSRC : this.remoteAudioSSRCs[e], t, L(t), this.videoStreamParameters)
+      }) : t > 0 ? (i[0].active = true, i[0].ssrc = t, i[0].rtxSsrc = D(t)) : i[0].active = false : t > 0 && (true !== this.remoteVideoSSRCs[e] ? this.remoteVideoSSRCs[e].includes(t) || (this.remoteVideoSSRCs[e] = [...this.remoteVideoSSRCs[e], t]) : this.remoteVideoSSRCs[e] = [t]), this.videoStreamParameters = i, this.emit(m.Sh.Video, e, null != n && "" !== n ? n : null, e === this.userId ? this.audioSSRC : this.remoteAudioSSRCs[e], t, D(t), this.videoStreamParameters)
     }), I(this, "handleFirstFrame", (e, t, n) => {
       this.emit(m.Sh.FirstFrame, e, t, n)
     }), I(this, "handleNoInput", e => {

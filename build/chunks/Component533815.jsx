@@ -49,8 +49,9 @@ function f(e) {
     game: t,
     widgetType: l,
     userId: f,
-    className: p
-  } = e, m = e => {
+    iconSize: p = "refresh_sm",
+    className: m
+  } = e, g = e => {
     if (e.shiftKey) return void(0, a.$b)(l, t.applicationId);
     (0, o.ZDy)(async () => {
       let {
@@ -66,13 +67,13 @@ function f(e) {
   return (0, r.jsx)(o.ua7, {
     text: c.intl.string(c.t.HUvyDQ),
     children: e => (0, r.jsx)(o.P3F, u(d({}, e), {
-      onClick: m,
+      onClick: g,
       "aria-label": c.intl.string(c.t.HUvyDQ),
       role: "button",
       tabIndex: 0,
-      className: i()(p, s.clickable),
+      className: i()(m, s.clickable),
       children: (0, r.jsx)(o.XHJ, {
-        size: "md",
+        size: p,
         color: o.TVs.colors.STATUS_DANGER
       })
     }))

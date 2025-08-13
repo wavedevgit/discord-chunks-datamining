@@ -42,14 +42,14 @@ function S(e) {
     transitionState: D,
     openedAt: L,
     onClose: R,
-    sourceAnalyticsLocations: k = []
-  } = e, G = n === P.ME ? true : n, M = (0, p.ZP)(t.id, G), B = u.ZP.getName(G, S, t), U = (0, s.Dt)(), {
+    sourceAnalyticsLocations: G = []
+  } = e, k = n === P.ME ? true : n, B = (0, p.ZP)(t.id, k), M = u.ZP.getName(k, S, t), U = (0, s.Dt)(), {
     analyticsLocations: F
-  } = (0, c.ZP)([...k, a.Z.USER_PROFILE_MODAL]), V = (0, f.ZB)({
+  } = (0, c.ZP)([...G, a.Z.USER_PROFILE_MODAL]), V = (0, f.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: C,
-    guildId: G,
+    guildId: k,
     channelId: S,
     messageId: w,
     roleId: A
@@ -59,9 +59,9 @@ function S(e) {
     children: (0, r.jsx)(f.Mt, {
       value: V,
       openedAt: L,
-      fetchStartedAt: null == M ? true : M.fetchStartedAt,
-      fetchEndedAt: null == M ? true : M.fetchEndedAt,
-      isLoaded: null == M ? true : M.isLoaded,
+      fetchStartedAt: null == B ? true : B.fetchStartedAt,
+      fetchEndedAt: null == B ? true : B.fetchEndedAt,
+      isLoaded: null == B ? true : B.isLoaded,
       children: (0, r.jsxs)(i.Y0X, {
         "data-migration-pending": true,
         transitionState: D,
@@ -74,15 +74,15 @@ function S(e) {
             children: (0, r.jsx)(i.H, {
               id: U,
               children: E.intl.format(E.t.KRe1Fh, {
-                name: B
+                name: M
               })
             })
           }),
           children: (0, r.jsxs)(O.Z, {
             user: t,
-            displayProfile: M,
+            displayProfile: B,
             themeType: I.lY.MODAL,
-            ref: (null == M ? true : M.profileEffectId) != null ? Y : true,
+            ref: (null == B ? true : B.profileEffectId) != null ? Y : true,
             children: [(0, r.jsx)(_.Z, {
               children: (0, r.jsx)(v.Z, {
                 user: t
@@ -90,14 +90,14 @@ function S(e) {
             }), (0, r.jsxs)("div", {
               children: [(0, r.jsx)(b.Z, {
                 user: t,
-                displayProfile: M,
+                displayProfile: B,
                 themeType: I.lY.MODAL
               }), (0, r.jsx)("div", {
                 className: T.headerInner,
                 children: (0, r.jsx)(m.Z, {
                   user: t,
-                  displayProfile: M,
-                  guildId: G,
+                  displayProfile: B,
+                  guildId: k,
                   channelId: S,
                   themeType: I.lY.MODAL
                 })
@@ -107,11 +107,11 @@ function S(e) {
               children: [(0, r.jsx)(h.Z, {
                 className: T.username,
                 user: t,
-                nickname: B,
-                pronouns: null == M ? true : M.pronouns,
+                nickname: M,
+                pronouns: null == B ? true : B.pronouns,
                 nicknameVariant: "heading-xl/bold",
                 tags: (0, r.jsx)(g.Z, {
-                  displayProfile: M,
+                  displayProfile: B,
                   themeType: I.lY.MODAL,
                   onClose: R
                 })
@@ -136,13 +136,13 @@ function S(e) {
                   className: Z.scroller,
                   children: [(0, r.jsx)(j.Z, {
                     userId: t.id,
-                    userBio: null == M ? true : M.bio,
+                    userBio: null == B ? true : B.bio,
                     setLineClamp: false
                   }), (0, r.jsx)(x.Z, {
                     heading: E.intl.string(E.t["A//N4u"]),
                     children: (0, r.jsx)(y.Z, {
                       userId: t.id,
-                      guildId: G,
+                      guildId: k,
                       tooltipDelay: I.vB
                     })
                   })]
@@ -150,8 +150,8 @@ function S(e) {
               })]
             })]
           })
-        }), (null == M ? true : M.profileEffectId) != null && (0, r.jsx)(d.Z, {
-          profileEffectId: null == M ? true : M.profileEffectId,
+        }), (null == B ? true : B.profileEffectId) != null && (0, r.jsx)(d.Z, {
+          profileEffectId: null == B ? true : B.profileEffectId,
           isHovering: W
         })]
       })

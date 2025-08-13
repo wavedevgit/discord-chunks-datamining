@@ -55,7 +55,8 @@ function a(e) {
     }({
       userId: t.id,
       games: n.games,
-      disableInteraction: c
+      disableInteraction: c,
+      widgetType: n.type
     }, s)) : (0, r.jsx)(i.Z, {
       widgetType: n.type
     })
