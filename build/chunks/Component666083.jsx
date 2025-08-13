@@ -1,7 +1,7 @@
-/** Chunk was on 13965 **/
+/** Chunk was on 35323 **/
 /** chunk id: 666083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => m
+  default: () => j
 }), require("./388685.js"), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -18,37 +18,37 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk726999 = require("./726999.js");
 
-function m(e) {
+function j(e) {
   var t, n, {
-      guildId: m,
-      powerup: j
+      guildId: j,
+      powerup: y
     } = e,
-    g = function(e, t) {
+    O = function(e, t) {
       if (null == e) return {};
       var n, r, o = function(e, t) {
         if (null == e) return {};
         var n, r, o = {},
-          i = Object.keys(e);
-        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+          a = Object.keys(e);
+        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
         return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+        var a = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
       return o
     }(e, ["guildId", "powerup"]);
-  let v = (0, l.e7)([c.Z], () => c.Z.useReducedMotion),
-    x = o.useRef(null),
-    P = o.useRef(new i.qA),
-    [w, _] = o.useState(null),
-    h = f.uc.has(j.skuId);
+  let g = (0, c.e7)([s.Z], () => s.Z.useReducedMotion),
+    C = o.useRef(null),
+    x = o.useRef(new a.qA),
+    [v, h] = o.useState(null),
+    w = d.uc.has(y.skuId);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(i.O_, {
-      ref: _,
-      className: y.confettiCanvas,
-      environment: P.current
-    }), (0, r.jsxs)(a.Y0X, (t = function(e) {
+    children: [(0, r.jsx)(a.O_, {
+      ref: h,
+      className: _.confettiCanvas,
+      environment: x.current
+    }), (0, r.jsxs)(i.Y0X, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -66,55 +66,55 @@ function m(e) {
       }
       return e
     }({
-      className: y.modal,
-      size: a.CgR.DYNAMIC
-    }, g), n = n = {
+      className: _.modal,
+      size: i.CgR.DYNAMIC
+    }, O), n = n = {
       parentComponent: "GuildPowerupActivateModal",
-      children: [(0, r.jsx)(a.hzk, {
-        className: y.modalContentContainer,
+      children: [(0, r.jsx)(i.hzk, {
+        className: _.modalContentContainer,
         scrollbarType: "none",
         children: (0, r.jsxs)("div", {
-          className: y.container,
-          ref: x,
-          children: [(0, r.jsx)(d.m, {
-            className: y.image,
-            powerup: j
+          className: _.container,
+          ref: C,
+          children: [(0, r.jsx)(f.m, {
+            className: _.image,
+            powerup: y
           }), (0, r.jsxs)("div", {
-            className: y.contentContainer,
-            children: [(0, r.jsx)(a.X6q, {
+            className: _.contentContainer,
+            children: [(0, r.jsx)(i.X6q, {
               variant: "heading-xl/extrabold",
-              children: O.intl.formatToPlainString(b.default.lFuOFB, {
-                perkName: j.title
+              children: m.intl.formatToPlainString(b.default.lFuOFB, {
+                perkName: y.title
               })
-            }), (0, r.jsx)(a.Text, {
+            }), (0, r.jsx)(i.Text, {
               tag: "span",
-              className: y.description,
+              className: _.description,
               variant: "text-sm/normal",
-              children: O.intl.formatToPlainString(b.default.y3wHoq, {
-                perkName: j.title
+              children: m.intl.formatToPlainString(b.default.y3wHoq, {
+                perkName: y.title
               })
-            }), h ? (0, r.jsx)(p.ms, {
-              className: y.button,
-              guildId: m,
-              powerup: j,
-              onClick: g.onClose
+            }), w ? (0, r.jsx)(p.ms, {
+              className: _.button,
+              guildId: j,
+              powerup: y,
+              onClick: O.onClose
             }) : (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
-              className: y.button,
-              children: (0, r.jsx)(a.zxk, {
+              className: _.button,
+              children: (0, r.jsx)(i.zxk, {
                 variant: "primary",
-                text: O.intl.string(O.t.cpT0Cg),
-                onClick: g.onClose
+                text: m.intl.string(m.t.cpT0Cg),
+                onClick: O.onClose
               })
             })]
           })]
         })
-      }), (0, r.jsx)(a.olH, {
-        className: y.close,
-        onClick: g.onClose
-      }), !v && (0, r.jsx)(s.Z, {
-        confettiTarget: x.current,
-        confettiCanvas: w,
+      }), (0, r.jsx)(i.olH, {
+        className: _.close,
+        onClick: O.onClose
+      }), !g && (0, r.jsx)(l.Z, {
+        confettiTarget: C.current,
+        confettiCanvas: v,
         sprites: (0, u.vK)()
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

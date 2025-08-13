@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 309945, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => _
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -16,37 +16,37 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk200985 = require("./200985.js");
 
-function g(e) {
+function _(e) {
   let {
     guildId: t,
     powerups: n
-  } = e, g = (0, a.e7)([d.Z], () => {
+  } = e, _ = (0, s.e7)([d.Z], () => {
     var e, n;
     return null != (n = null == (e = d.Z.getStateForGuild(t)) ? true : e.appliedBoosts) ? n : 0
-  }), x = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(t), [t]), v = g - o.useMemo(() => {
+  }), x = (0, s.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), g = _ - o.useMemo(() => {
     var e, t, n;
     return null != (n = null == x || null == (t = x.filter) || null == (e = t.call(x, e => !e.ended && null == e.endsAt)) ? true : e.length) ? n : 0
   }, [x]);
-  if (v <= 0) return null;
-  let _ = n.some(e => e.skuId === i.A$);
+  if (g <= 0) return null;
+  let v = n.some(e => e.skuId === i.A$);
   return (0, r.jsxs)("div", {
-    className: m.container,
+    className: f.container,
     children: [(0, r.jsx)(l.Mgn, {
-      color: u.Z.colors.TEXT_FEEDBACK_WARNING,
-      className: m.icon
-    }), (0, r.jsx)(s.xv, {
+      color: c.Z.colors.TEXT_FEEDBACK_WARNING,
+      className: f.icon
+    }), (0, r.jsx)(a.xv, {
       variant: "text-md/semibold",
       color: "text-feedback-warning",
-      children: f.intl.string(p.default.n5hQhY)
-    }), (0, r.jsxs)(s.xv, {
+      children: m.intl.string(p.default.n5hQhY)
+    }), (0, r.jsxs)(a.xv, {
       variant: "text-sm/medium",
-      children: [f.intl.formatToPlainString(p.default.iAaAiI, {
-        boostCount: v,
+      children: [m.intl.formatToPlainString(p.default.iAaAiI, {
+        boostCount: g,
         perksString: n.map(e => e.title).join(", ")
-      }), _ && (0, r.jsx)(s.xv, {
+      }), v && (0, r.jsx)(a.xv, {
         variant: "text-sm/medium",
         color: "text-feedback-warning",
-        children: f.intl.string(p.default.Sfr0Jy)
+        children: m.intl.string(p.default.Sfr0Jy)
       })]
     })]
   })

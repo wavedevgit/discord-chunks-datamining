@@ -2,7 +2,7 @@
 /** chunk id: 857666, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b,
-  f: () => _
+  f: () => v
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -20,16 +20,16 @@ var Chunk255367 = require("./255367.js"),
   Chunk46310 = require("./46310.js"),
   Chunk175435 = require("./175435.js");
 
-function _(e, t) {
-  var _;
-  let b = null != (_ = (0, c.Z)(t)) && _,
-    j = (0, l.e7)([u.Z], () => {
+function v(e, t) {
+  var v;
+  let b = null != (v = (0, u.Z)(t)) && v,
+    h = (0, l.e7)([c.Z], () => {
       var e;
-      return null == (e = u.Z.getStateForGuild(t)) ? true : e.allPowerups
+      return null == (e = c.Z.getStateForGuild(t)) ? true : e.allPowerups
     }),
-    h = (0, l.e7)([u.Z], () => {
+    j = (0, l.e7)([c.Z], () => {
       var e;
-      return null == (e = u.Z.getStateForGuild(t)) ? true : e.unlockedPowerups
+      return null == (e = c.Z.getStateForGuild(t)) ? true : e.unlockedPowerups
     });
   return o.useMemo(() => {
     let o = e => "guildTagsBadgePacks" === e ? function(e) {
@@ -37,17 +37,17 @@ function _(e, t) {
           guildId: t,
           canUseBoosts: o,
           allPowerups: l,
-          unlockedPowerups: u,
-          skuIds: c
-        } = e, d = g.intl.string(m.default.KC9HRU), _ = g.intl.string(m.default.GJiSmJ), b = null == l ? true : l[i.IN], j = (null == u ? true : u[i.IN]) != null, h = g.intl.string(m.default["/egwJC"]), E = j ? true : g.intl.string(m.default.W6Vwn5), C = j ? true : g.intl.string(m.default.lvk1GR), I = j ? g.intl.string(m.default["9CfkLC"]) : g.intl.string(m.default.NTuNw8), O = j ? "secondary" : "primary", y = o ? () => {
-          j ? a.Z.open(t, f.pNK.TAG, f.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != b && (0, p.KE)(t, b), (0, s.pTH)()
+          unlockedPowerups: c,
+          skuIds: u
+        } = e, d = _.intl.string(f.default.KC9HRU), v = _.intl.string(f.default.GJiSmJ), b = null == l ? true : l[i.IN], h = (null == c ? true : c[i.IN]) != null, j = _.intl.string(f.default["/egwJC"]), C = h ? true : _.intl.string(f.default.W6Vwn5), E = h ? true : _.intl.string(f.default.lvk1GR), I = h ? _.intl.string(f.default["9CfkLC"]) : _.intl.string(f.default.NTuNw8), N = h ? "secondary" : "primary", w = o ? () => {
+          h ? s.Z.open(t, m.pNK.TAG, m.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != b && (0, p.KE)(t, b), (0, a.pTH)()
         } : true;
         return {
           title: d,
-          description: _,
+          description: v,
           openModal: function(e) {
             let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-            (0, s.ZDy)(async () => {
+            (0, a.ZDy)(async () => {
               let {
                 default: i
               } = await n.e("64767").then(n.bind(n, 754887));
@@ -71,33 +71,33 @@ function _(e, t) {
               }({
                 guildId: t,
                 title: d,
-                description: g.intl.string(m.default.BBRFRU),
+                description: _.intl.string(f.default.BBRFRU),
                 powerups: e,
-                footerInfoText: C,
-                footerAction: o && null != y && null != I ? {
-                  variant: null != O ? O : "secondary",
+                footerInfoText: E,
+                footerAction: o && null != w && null != I ? {
+                  variant: null != N ? N : "secondary",
                   text: I,
-                  onClick: y
+                  onClick: w
                 } : true
               }, n))
             }, {
               onCloseCallback: null == i ? true : i.onModalClose
             })
           },
-          viewCta: h,
-          viewCtaTooltip: E,
+          viewCta: j,
+          viewCtaTooltip: C,
           badge: "beta",
           image: {
-            staticUrl: v.Z,
+            staticUrl: g.Z,
             animatedUrl: x.Z
           },
-          skuIds: c
+          skuIds: u
         }
       }({
         guildId: t,
         canUseBoosts: b,
-        allPowerups: j,
-        unlockedPowerups: h,
+        allPowerups: h,
+        unlockedPowerups: j,
         skuIds: d.z[e]
       }) : true,
       l = {};
@@ -106,9 +106,9 @@ function _(e, t) {
       null != e && (l[t] = e)
     }
     return l
-  }, [e, t, b, j, h])
+  }, [e, t, b, h, j])
 }
 
 function b(e, t) {
-  return _([e], t)[e]
+  return v([e], t)[e]
 }

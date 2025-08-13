@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 877362, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => y
 });
 var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
@@ -29,41 +29,41 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk860834 = require("./860834.js"),
   Chunk350618 = require("./350618.js");
-let N = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk99690.Z;
+let S = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk99690.Z;
 
-function Z(e) {
+function y(e) {
   var t, n;
   let {
     guildId: o
-  } = e, d = (0, s.e7)([j.Z], () => j.Z.getGuild(o)), C = (0, s.e7)([b.Z], () => b.Z.getSortedRoles(o).find(e => {
+  } = e, d = (0, a.e7)([h.Z], () => h.Z.getGuild(o)), E = (0, a.e7)([b.Z], () => b.Z.getSortedRoles(o).find(e => {
     var t;
     return (null == (t = e.tags) ? true : t.premium_subscriber) === null
-  })), Z = (0, s.e7)([h.default], () => h.default.getCurrentUser()), S = null == Z ? true : Z.id, T = (0, s.e7)([_.ZP], () => null != S ? _.ZP.getMember(o, S) : true, [S, o]), A = (null == T ? true : T.premiumSince) != null, R = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
-    avatarDecorationSrc: k,
-    avatarSrc: L,
-    eventHandlers: D
-  } = (0, v.Z)({
-    userId: null == Z ? true : Z.id,
+  })), y = (0, a.e7)([j.default], () => j.default.getCurrentUser()), T = null == y ? true : y.id, O = (0, a.e7)([v.ZP], () => null != T ? v.ZP.getMember(o, T) : true, [T, o]), A = (null == O ? true : O.premiumSince) != null, R = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), {
+    avatarDecorationSrc: L,
+    avatarSrc: k,
+    eventHandlers: U
+  } = (0, g.Z)({
+    userId: null == y ? true : y.id,
     guildId: o,
-    size: c.EFr.SIZE_40,
+    size: u.EFr.SIZE_40,
     animateOnHover: !R
   });
-  return null == d || null == T || null == Z ? null : (0, r.jsxs)(a.$, {
-    className: w.container,
+  return null == d || null == O || null == y ? null : (0, r.jsxs)(s.$, {
+    className: Z.container,
     children: [(0, r.jsx)("img", {
       alt: "",
-      className: w.image,
+      className: Z.image,
       src: P
     }), (0, r.jsxs)("div", {
-      className: w.textContainer,
+      className: Z.textContainer,
       children: [(0, r.jsx)(l.xv, {
         variant: "text-md/semibold",
-        children: y.intl.string(A ? O.default.KSWK1d : O.default.XXXX5u)
+        children: w.intl.string(A ? N.default.KSWK1d : N.default.XXXX5u)
       }), (0, r.jsx)(l.xv, {
         variant: "text-sm/medium",
-        children: y.intl.format(A ? O.default["7fWTg4"] : O.default["7PXeeX"], {
+        children: w.intl.format(A ? N.default["7fWTg4"] : N.default["7PXeeX"], {
           onClick: () => {
-            (0, f.f)({
+            (0, m.f)({
               guildId: o,
               location: {
                 section: I.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
@@ -73,8 +73,8 @@ function Z(e) {
           }
         })
       })]
-    }), null != C && !A && (0, r.jsx)(x.l, {
-      avatar: (0, r.jsx)(N, (t = function(e) {
+    }), null != E && !A && (0, r.jsx)(x.l, {
+      avatar: (0, r.jsx)(S, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -91,11 +91,11 @@ function Z(e) {
           })
         }
         return e
-      }({}, D), n = n = {
-        user: Z,
-        src: L,
-        avatarDecoration: k,
-        size: c.EFr.SIZE_40,
+      }({}, U), n = n = {
+        user: y,
+        src: k,
+        avatarDecoration: L,
+        size: u.EFr.SIZE_40,
         "aria-hidden": true,
         animate: true
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -108,30 +108,30 @@ function Z(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)),
-      username: (0, r.jsx)(c.PUh, {
+      username: (0, r.jsx)(u.PUh, {
         variant: "text-md/semibold",
-        name: E.ZP.getName(o, null, Z),
-        colorString: C.colorString,
-        colorStrings: C.colorStrings
+        name: C.ZP.getName(o, null, y),
+        colorString: E.colorString,
+        colorStrings: E.colorStrings
       }),
-      className: i()(w.content, w.exampleMessage),
-      message: y.intl.string(y.t["6OSasb"]),
-      decorations: (0, r.jsx)(c.$Eu, {
-        color: c.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-        className: w.boostIcon
+      className: i()(Z.content, Z.exampleMessage),
+      message: w.intl.string(w.t["6OSasb"]),
+      decorations: (0, r.jsx)(u.$Eu, {
+        color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
+        className: Z.boostIcon
       })
-    }), (0, r.jsx)(m.Z, {
+    }), (0, r.jsx)(f.Z, {
       guild: d,
-      className: w.content,
+      className: Z.content,
       analyticsLocation: {
         page: I.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: I.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
-      color: u.Tt.BRAND,
-      size: u.Ph.MEDIUM,
-      intent: g.P.NONE,
+      color: c.Tt.BRAND,
+      size: c.Ph.MEDIUM,
+      intent: _.P.NONE,
       fullWidth: true,
-      icon: (0, r.jsx)(c.$Eu, {
+      icon: (0, r.jsx)(u.$Eu, {
         color: "currentColor",
         size: "sm"
       })

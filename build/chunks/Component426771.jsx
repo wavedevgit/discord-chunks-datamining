@@ -19,91 +19,91 @@ var Chunk255367 = require("./255367.js"),
 
 function x(e) {
   var t, n, x;
-  let v, {
-      guildId: _,
+  let g, {
+      guildId: v,
       group: b,
-      powerups: j
+      powerups: h
     } = e,
-    [h, E] = o.useState(false),
-    C = (0, a.Gv)(_, j),
-    I = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
-    O = (0, c.Z)(b, _);
-  if (true === O || j.length <= 0) return null;
-  let y = C.some(e => e.type !== p.A3.INACTIVE),
-    w = (0, d.d)(y),
-    P = C.reduce((e, t) => {
+    [j, C] = o.useState(false),
+    E = (0, s.Gv)(v, h),
+    I = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
+    N = (0, u.Z)(b, v);
+  if (true === N || h.length <= 0) return null;
+  let w = E.some(e => e.type !== p.A3.INACTIVE),
+    Z = (0, d.d)(w),
+    P = E.reduce((e, t) => {
       let {
         sourceEntitlement: n
       } = t, r = null == n ? true : n.ends_at;
       return null == r ? e : null == e || r < e ? r : e
     }, true);
-  true !== P ? v = {
+  true !== P ? g = {
     type: "expiring",
     expiringAt: P
-  } : y && (v = {
+  } : w && (g = {
     type: "active",
-    statusText: m.intl.string(f.default.FFLkm5)
+    statusText: f.intl.string(m.default.FFLkm5)
   });
-  let N = C.reduce((e, t) => {
+  let S = E.reduce((e, t) => {
       let {
         type: n,
         powerup: r
       } = t;
       return n === p.A3.POWERUP_ACTIVATED ? e + r.cost : e
     }, 0),
-    Z = C.reduce((e, t) => {
+    y = E.reduce((e, t) => {
       var n, r;
       let {
         powerup: o
       } = t;
       return e < (null != (n = null == o ? true : o.cost) ? n : 0) ? e : null != (r = null == o ? true : o.cost) ? r : 0
-    }, null != (x = null == (n = C[0]) || null == (t = n.powerup) ? true : t.cost) ? x : 0),
-    S = C.reduce((e, t) => {
+    }, null != (x = null == (n = E[0]) || null == (t = n.powerup) ? true : t.cost) ? x : 0),
+    T = E.reduce((e, t) => {
       var n;
       let {
         powerup: r
       } = t;
       return e + (null != (n = null == r ? true : r.cost) ? n : 0)
     }, 0),
-    T = y ? N : Z,
-    A = !y && S > T ? "+" : true,
-    R = !I && h ? O.image.animatedUrl : O.image.staticUrl,
-    k = null != O.viewCta && "" !== O.viewCta ? O.viewCta : m.intl.string(f.default["27GkOj"]),
-    L = null != O.viewCtaTooltip && "" !== O.viewCtaTooltip ? O.viewCtaTooltip : true;
-  return (0, r.jsxs)(u.aB, {
-    label: O.title,
-    isActive: y,
-    badge: O.badge,
-    onClick: () => O.openModal(j),
-    onMouseOver: () => E(true),
-    onMouseLeave: () => E(false),
+    O = w ? S : y,
+    A = !w && T > O ? "+" : true,
+    R = !I && j ? N.image.animatedUrl : N.image.staticUrl,
+    L = null != N.viewCta && "" !== N.viewCta ? N.viewCta : f.intl.string(m.default["27GkOj"]),
+    k = null != N.viewCtaTooltip && "" !== N.viewCtaTooltip ? N.viewCtaTooltip : true;
+  return (0, r.jsxs)(c.aB, {
+    label: N.title,
+    isActive: w,
+    badge: N.badge,
+    onClick: () => N.openModal(h),
+    onMouseOver: () => C(true),
+    onMouseLeave: () => C(false),
     children: [(0, r.jsx)("img", {
       alt: "",
       src: R,
-      className: g.image
-    }), (0, r.jsx)(u.Q9, {
-      title: O.title,
-      textColor: w,
-      footer: (0, r.jsx)(u.uf, {
-        status: v,
-        cost: T,
+      className: _.image
+    }), (0, r.jsx)(c.Q9, {
+      title: N.title,
+      textColor: Z,
+      footer: (0, r.jsx)(c.uf, {
+        status: g,
+        cost: O,
         costDecorator: A
       }),
       children: (0, r.jsx)(l.Text, {
-        className: g.description,
-        color: w,
+        className: _.description,
+        color: Z,
         variant: "text-sm/medium",
-        children: O.description
+        children: N.description
       })
-    }), (0, r.jsx)(u.N4, {
-      children: null != L ? (0, r.jsx)(l.DY3, {
-        text: L,
+    }), (0, r.jsx)(c.N4, {
+      children: null != k ? (0, r.jsx)(l.DY3, {
+        text: k,
         children: (0, r.jsx)(l.zxk, {
-          text: k,
+          text: L,
           fullWidth: true
         })
       }) : (0, r.jsx)(l.zxk, {
-        text: k,
+        text: L,
         fullWidth: true
       })
     })]

@@ -1,13 +1,13 @@
-/** Chunk was on 59256 **/
+/** Chunk was on 1150 **/
 /** chunk id: 845602, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E: () => O,
-  Z: () => y
+  E: () => C,
+  Z: () => k
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk957537 = require("./957537.js"),
   Chunk839008 = require("./839008.js"),
@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk968946 = require("./968946.js"),
   Chunk482985 = require("./482985.js");
 
-function y() {
+function k() {
   var e;
   let [t, n] = Chunk73800.useState(() => {
     let e = Math.floor(Math.random() * Chunk141006.tl.length);
@@ -34,7 +34,7 @@ function y() {
       tertiary_color: null
     }
   }), {
-    gradientStyle: l,
+    gradientStyle: o,
     gradientClassname: c
   } = (0, Chunk481060.Icv)({
     colorStrings: (0, Chunk606318.DX)(exports),
@@ -50,7 +50,7 @@ function y() {
         avatar: Chunk957537.Z,
         username: "Cherry",
         usernameStyle: Chunk120356,
-        usernameClassName: a()(Chunk839008, Chunk482985.animateGradient),
+        usernameClassName: s()(Chunk839008, Chunk482985.animateGradient),
         message: Chunk388032.intl.string(Chunk388032.t["6OSasb"])
       })
     }), (0, Chunk255367.jsx)(Chunk797967.default, {
@@ -59,7 +59,7 @@ function y() {
       value: exports.primary_color,
       secondaryValue: null != (e = exports.secondary_color) ? module : true,
       onChange: e => {
-        var r, o;
+        var r, a;
         return n((r = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -77,17 +77,17 @@ function y() {
             })
           }
           return e
-        }({}, t), o = o = {
+        }({}, t), a = a = {
           primary_color: e
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(o)).forEach(function(e) {
-          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(o, e))
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
         }), r))
       },
       onChangeGradientColors: e => n({
@@ -100,34 +100,34 @@ function y() {
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     guildId: t
-  } = e, [n, l] = o.useState(_.x_.HEART), a = (0, m.Z)(), s = o.useMemo(() => ({
-    unlockedBadges: a.unlockedBadges.slice(0, 10),
+  } = e, [n, o] = a.useState(h.x_.HEART), s = (0, g.Z)(), l = a.useMemo(() => ({
+    unlockedBadges: s.unlockedBadges.slice(0, 10),
     lockedBadges: []
-  }), [a]);
+  }), [s]);
   return (0, r.jsxs)("div", {
-    className: x.container,
+    className: j.container,
     children: [(0, r.jsx)("div", {
-      className: x.messageContainer,
+      className: j.messageContainer,
       children: (0, r.jsx)(p.l, {
         avatar: c.Z,
         username: "Roka",
         usernameStyle: {
           color: "var(--brand-400)"
         },
-        message: j.intl.string(j.t["6OSasb"]),
-        decorations: (0, r.jsx)(f.S, {
+        message: x.intl.string(x.t["6OSasb"]),
+        decorations: (0, r.jsx)(m.S, {
           guildId: t,
           tag: "GGEZ",
           badge: n
         })
       })
-    }), (0, r.jsx)(d.g, {
+    }), (0, r.jsx)(u.g, {
       selectedBadge: n,
-      onBadgeClicked: l,
-      badgeCollection: s
+      onBadgeClicked: o,
+      badgeCollection: l
     })]
   })
 }

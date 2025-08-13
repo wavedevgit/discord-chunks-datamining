@@ -57,7 +57,7 @@ let u = "1340102344645283891",
     [Chunk494497.A$],
     [Chunk494497.MB, Chunk494497.Vk]
   ],
-  E = new Set([Chunk494497.IN, Chunk494497.If, Chunk494497.A$]),
+  E = new Set([Chunk494497.IN, Chunk494497.If, Chunk494497.A$, Chunk494497.MB, Chunk494497.Vk]),
   b = () => ({
     [Chunk981631.oNc.VIDEO_BITRATE_ENHANCED]: {
       perkIcon: Chunk267642.Ro.STREAM,

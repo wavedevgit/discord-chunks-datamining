@@ -1,4 +1,4 @@
-/** Chunk was on 59256 **/
+/** Chunk was on 5533 **/
 /** chunk id: 927160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -13,10 +13,10 @@ function a(e) {
     onChange: n,
     error: a,
     disabled: s,
-    className: i,
+    className: o,
     autoFocus: c = false
   } = e;
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(i.Z, {
     prefix: "".concat(l.mf, "/"),
     value: t,
     onChange: e => {
@@ -25,7 +25,7 @@ function a(e) {
     maxLength: 25,
     error: a,
     disabled: s,
-    className: i,
+    className: o,
     autoFocus: c
   })
 }

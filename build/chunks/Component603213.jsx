@@ -1,7 +1,7 @@
-/** Chunk was on 59256 **/
+/** Chunk was on 1150 **/
 /** chunk id: 603213, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => d
+  q: () => u
 });
 var Chunk255367 = require("./255367.js"),
   Chunk494497 = require("./494497.js"),
@@ -12,15 +12,15 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk824701 = require("./824701.js");
 
-function d(e) {
+function u(e) {
   let {
     powerup: t
   } = e;
-  return t.skuId === o.A$ ? (0, r.jsx)(l.xv, {
-    className: u.learnMore,
+  return t.skuId === a.A$ ? (0, r.jsx)(o.xv, {
+    className: d.learnMore,
     variant: "text-sm/medium",
     children: c.intl.format(i.default.fXE30d, {
-      helpDeskArticle: a.Z.getArticleURL(s.BhN.GUILD_VANITY_URL)
+      helpDeskArticle: s.Z.getArticleURL(l.BhN.GUILD_VANITY_URL)
     })
   }) : null
 }

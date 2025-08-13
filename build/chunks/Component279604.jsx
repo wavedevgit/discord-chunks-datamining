@@ -59,7 +59,7 @@ function O(e, t) {
       case f.Us.PERK: {
         let {
           default: i
-        } = await n.e("59256").then(n.bind(n, 326055));
+        } = await Promise.all([n.e("97844"), n.e("1150")]).then(n.bind(n, 326055));
         return n => (0, r.jsx)(i, m({
           guildId: e,
           powerup: t
@@ -113,7 +113,7 @@ function _(e, t) {
             s && (0, o.pTH)(), (0, o.ZDy)(async () => {
               let {
                 default: e
-              } = await n.e("13965").then(n.bind(n, 666083));
+              } = await Promise.all([n.e("97844"), n.e("35323")]).then(n.bind(n, 666083));
               return n => (0, r.jsx)(e, m({
                 guildId: C.id,
                 powerup: t
@@ -125,7 +125,7 @@ function _(e, t) {
         s && (0, o.pTH)(), (0, o.ZDy)(async () => {
           let {
             default: e
-          } = await n.e("13965").then(n.bind(n, 666083));
+          } = await Promise.all([n.e("97844"), n.e("35323")]).then(n.bind(n, 666083));
           return n => (0, r.jsx)(e, m({
             guildId: C.id,
             powerup: t

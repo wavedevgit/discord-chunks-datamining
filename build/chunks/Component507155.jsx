@@ -35,7 +35,7 @@ function x(e) {
       }),
       children: (0, n.jsx)(u.m, {
         powerup: a,
-        isHovering: x
+        isHovering: !k && x
       })
     }), (0, n.jsxs)("div", {
       className: j.footerContainer,

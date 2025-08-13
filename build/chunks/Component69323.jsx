@@ -22,20 +22,20 @@ function x(e) {
     powerup: t,
     targetRef: n,
     isCardVisible: x
-  } = e, v = (0, l.e7)([d.Z], () => d.Z.hasLayers()), _ = (0, a.f9)(), b = t.skuId === i.A$ ? {
-    title: g.intl.string(m.default.YWo6VF),
-    body: g.intl.string(m.default.gXVvKS),
-    dismissibleContentType: s.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
-  } : null, j = [];
-  null == b || v || !x || _ || j.push(b.dismissibleContentType);
-  let [h, E] = (0, c.US)(j), C = o.useCallback(() => {
-    E(f.L.INDIRECT_ACTION)
-  }, [E]);
+  } = e, g = (0, l.e7)([d.Z], () => d.Z.hasLayers()), v = (0, s.f9)(), b = t.skuId === i.A$ ? {
+    title: _.intl.string(f.default.YWo6VF),
+    body: _.intl.string(f.default.gXVvKS),
+    dismissibleContentType: a.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
+  } : null, h = [];
+  null == b || g || !x || v || h.push(b.dismissibleContentType);
+  let [j, C] = (0, u.US)(h), E = o.useCallback(() => {
+    C(m.L.INDIRECT_ACTION)
+  }, [C]);
   return ((0, p.Z)({
     targetRef: n,
-    onShouldClose: C,
-    enabled: null != h
-  }), null == b || null == h) ? null : (0, r.jsx)(u.J2, {
+    onShouldClose: E,
+    enabled: null != j
+  }), null == b || null == j) ? null : (0, r.jsx)(c.J2, {
     targetElementRef: n,
     shouldShow: true,
     position: "right",
@@ -48,7 +48,7 @@ function x(e) {
     title: b.title,
     body: b.body,
     onRequestClose: () => {
-      E(f.L.USER_DISMISS)
+      C(m.L.USER_DISMISS)
     }
   })
 }
