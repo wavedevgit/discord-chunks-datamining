@@ -9,7 +9,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk675997 = require("./675997.js"),
+  Chunk642909 = require("./642909.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk138954 = require("./138954.js");
@@ -18,11 +18,7 @@ function p(e) {
   let {
     handleTransition: t,
     onClose: r
-  } = e, {
-    enableShopTakeOver: a
-  } = s.Z.useConfig({
-    location: "CollectiblesIndexPageContextMenu"
-  }), p = l.useMemo(() => [{
+  } = e, a = (0, s.G)("CollectiblesIndexPageContextMenu"), p = l.useMemo(() => [{
     label: u.intl.string(u.t.dRZYND),
     value: c.AW.AVATAR_DECORATIONS
   }, {

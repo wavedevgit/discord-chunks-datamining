@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   X: () => b,
-  Z: () => X
+  Z: () => Q
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
@@ -97,7 +97,8 @@ let y = {
     roleStyle: "username",
     displayNameStylesEnabled: true,
     submitButtonEnabled: false,
-    syncProfileThemeWithUserTheme: false
+    syncProfileThemeWithUserTheme: false,
+    enableCustomCursor: true
   },
   O = y,
   v = {
@@ -213,49 +214,55 @@ function F(e) {
 }
 
 function V(e) {
+  O = m(p({}, O), {
+    enableCustomCursor: e.enableCustomCursor
+  })
+}
+
+function H(e) {
   var t;
   return O = m(p({}, O), {
     systemForcedColors: null != (t = e.systemForcedColors) ? t : "none"
   }), true
 }
 
-function H() {
+function Y() {
   O.forcedColorsModalSeen = true
 }
 
-function Y() {
+function W() {
   O = m(p({}, O), {
     keyboardNavigationExplainerModalSeen: true
   })
 }
 
-function W(e) {
-  let {
-    messageGroupSpacing: t
-  } = e;
-  O = m(p({}, O), {
-    messageGroupSpacing: t
-  })
-}
-
 function K(e) {
   let {
-    contrast: t
+    messageGroupSpacing: t
   } = e;
   O = m(p({}, O), {
-    contrast: t
+    messageGroupSpacing: t
   })
 }
 
 function z(e) {
   let {
+    contrast: t
+  } = e;
+  O = m(p({}, O), {
+    contrast: t
+  })
+}
+
+function q(e) {
+  let {
     contrastMode: t
   } = e;
   O = m(p({}, O), {
     contrastMode: t
   })
 }
-class q extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+class X extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
     this.waitFor(c.Z), isNaN((O = p({}, y, null != e ? e : null)).fontSize) && (O.fontSize = d.yqN.FONT_SIZE_DEFAULT), 0 > f.fP.indexOf(null != O.messageGroupSpacing ? O.messageGroupSpacing : false) && (O.messageGroupSpacing = null)
   }
@@ -360,6 +367,9 @@ class q extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   get alwaysShowLinkDecorations() {
     return O.alwaysShowLinkDecorations
   }
+  get enableCustomCursor() {
+    return O.enableCustomCursor
+  }
   get roleStyle() {
     return O.roleStyle
   }
@@ -373,7 +383,7 @@ class q extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return O
   }
 }
-_(q, "displayName", "AccessibilityStore"), _(q, "persistKey", "AccessibilityStore"), _(q, "migrations", [() => {
+_(X, "displayName", "AccessibilityStore"), _(X, "persistKey", "AccessibilityStore"), _(X, "migrations", [() => {
   let e = "a11yFontScale",
     t = "a11yZoom",
     n = "a11yColorblindMode",
@@ -433,8 +443,10 @@ _(q, "displayName", "AccessibilityStore"), _(q, "persistKey", "AccessibilityStor
     delete e.hideGuildTags
   } catch (e) {}
   return e
-}]);
-let X = new q(Chunk570140.Z, {
+}, e => m(p({}, e), {
+  enableCustomCursor: true
+})]);
+let Q = new X(Chunk570140.Z, {
   ACCESSIBILITY_SET_FONT_SIZE: T,
   ACCESSIBILITY_SET_ZOOM: S,
   ACCESSIBILITY_RESET_TO_DEFAULT: A,
@@ -444,20 +456,21 @@ let X = new q(Chunk570140.Z, {
   ACCESSIBILITY_LOW_CONTRAST_TOGGLE: P,
   ACCESSIBILITY_SET_SATURATION: D,
   ACCESSIBILITY_DESATURATE_ROLES_TOGGLE: L,
-  ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: V,
+  ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: H,
   ACCESSIBILITY_SYSTEM_PREFERS_CONTRAST_CHANGED: Z,
   ACCESSIBILITY_SYSTEM_PREFERS_REDUCED_MOTION_CHANGED: U,
   ACCESSIBILITY_SYSTEM_PREFERS_CROSSFADES_CHANGED: G,
   ACCESSIBILITY_SET_PREFERS_REDUCED_MOTION: B,
   ACCESSIBILITY_SET_SYNC_FORCED_COLORS: w,
   ACCESSIBILITY_SET_ALWAYS_SHOW_LINK_DECORATIONS: F,
+  ACCESSIBILITY_SET_ENABLE_CUSTOM_CURSOR: V,
   ACCESSIBILITY_SET_ROLE_STYLE: x,
   ACCESSIBILITY_SET_DISPLAY_NAME_STYLES_ENABLED: M,
-  ACCESSIBILITY_FORCED_COLORS_MODAL_SEEN: H,
-  KEYBOARD_NAVIGATION_EXPLAINER_MODAL_SEEN: Y,
-  ACCESSIBILITY_SET_MESSAGE_GROUP_SPACING: W,
+  ACCESSIBILITY_FORCED_COLORS_MODAL_SEEN: Y,
+  KEYBOARD_NAVIGATION_EXPLAINER_MODAL_SEEN: W,
+  ACCESSIBILITY_SET_MESSAGE_GROUP_SPACING: K,
   ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE: k,
   ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE: j,
-  ACCESSIBILITY_SET_CONTRAST: K,
-  ACCESSIBILITY_SET_CONTRAST_MODE: z
+  ACCESSIBILITY_SET_CONTRAST: z,
+  ACCESSIBILITY_SET_CONTRAST_MODE: q
 })

@@ -13,8 +13,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
   Chunk381585 = require("./381585.jsx"),
-  Chunk675997 = require("./675997.js"),
   Chunk501431 = require("./501431.js"),
+  Chunk642909 = require("./642909.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -25,11 +25,7 @@ let v = () => {
     sort: e,
     onSetSort: t,
     hasRelevanceFilters: r
-  } = (0, Chunk501431.S)(), a = (0, Chunk381585.sp)(), {
-    enableShopTakeOver: v
-  } = Chunk675997.Z.useConfig({
-    location: "CollectiblesSortSelect"
-  }), O = require(), C = Chunk73800.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== s.E.RELEVANCE || O), [O]), E = Chunk73800.useCallback(e => {
+  } = (0, Chunk501431.S)(), a = (0, Chunk381585.sp)(), v = (0, Chunk642909.G)("CollectiblesSortSelect"), O = require(), C = Chunk73800.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== s.E.RELEVANCE || O), [O]), E = Chunk73800.useCallback(e => {
     let {
       sortType: t,
       sortDirection: r

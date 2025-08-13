@@ -23,7 +23,6 @@ var Chunk255367 = require("./255367.js"),
   Chunk594174 = require("./594174.js"),
   Chunk381585 = require("./381585.jsx"),
   Chunk597688 = require("./597688.js"),
-  Chunk675997 = require("./675997.js"),
   Chunk780475 = require("./780475.js"),
   Chunk223143 = require("./223143.js"),
   Chunk298228 = require("./298228.js"),
@@ -34,6 +33,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk963102 = require("./963102.jsx"),
   Chunk508498 = require("./508498.js"),
   Chunk681435 = require("./681435.js"),
+  Chunk642909 = require("./642909.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk420212 = require("./420212.js"),
@@ -61,11 +61,7 @@ let D = e => {
     (0, b.z)(f.f);
     let a = (0, p.Z)((0, o.Z)()),
       c = (0, s.e7)([v.default], () => v.default.getCurrentUser()),
-      {
-        enableShopTakeOver: B
-      } = E.Z.useConfig({
-        location: "CollectiblesShop"
-      }),
+      B = (0, N.G)("CollectiblesShop"),
       {
         closeIntroToOrbsClaimedCoachmark: M
       } = (0, m.Z)({
@@ -76,13 +72,13 @@ let D = e => {
     }, [a, M]);
     let {
       onClose: F
-    } = (0, I.Db)(), {
+    } = (0, k.Db)(), {
       currentTab: H,
       hasFilters: W
-    } = (0, T.S)(), V = l.useMemo(() => r === A.AW.HOME && H && W() ? H : r, [r, H, W]), {
+    } = (0, j.S)(), V = l.useMemo(() => r === A.AW.HOME && H && W() ? H : r, [r, H, W]), {
       categories: U,
       refreshCategories: z
-    } = (0, y.ZP)({
+    } = (0, S.ZP)({
       location: "CollectiblesShop.web",
       logPerf: true
     }, {
@@ -91,14 +87,14 @@ let D = e => {
       isFullScreen: t
     });
     (0, h.D)();
-    let G = (0, x.O)(U),
+    let G = (0, y.O)(U),
       [q, K] = l.useState(),
       Y = (0, s.e7)([C.Z], () => {
         var e;
         return null == (e = C.Z.getCategory(q)) ? true : e.name
       }),
       [X, J] = l.useState();
-    (0, L.Kp)();
+    (0, P.Kp)();
     let Q = l.useCallback((e, t) => {
         J(e), K(t)
       }, []),
@@ -106,11 +102,11 @@ let D = e => {
         selectedTab: $,
         transitionState: ee,
         transitionToTab: et
-      } = (0, j.B)(V, t);
-    (0, S.q3)(a, $, Y, ee, X), (0, S.EB)($, c);
+      } = (0, x.B)(V, t);
+    (0, E.q3)(a, $, Y, ee, X), (0, E.EB)($, c);
     let {
       dismissShopButtonDC: er
-    } = (0, N.Z)();
+    } = (0, I.Z)();
     l.useEffect(() => {
       er()
     }, [er]), l.useEffect(() => {
@@ -123,7 +119,7 @@ let D = e => {
     let {
       setFullScreenOpen: ei,
       fullScreenOpen: eo
-    } = (0, T.S)();
+    } = (0, j.S)();
     l.useEffect(() => {
       if (t) return ei(true), () => ei(false);
       if (!t) {
@@ -133,7 +129,7 @@ let D = e => {
     }, [t, ei]);
     let {
       analyticsLocations: es
-    } = (0, S.MV)($);
+    } = (0, E.MV)($);
     return eo && !t ? null : (0, n.jsx)(g.Gt, {
       value: es,
       children: (0, n.jsx)(O.k0, {
@@ -151,7 +147,7 @@ let D = e => {
             }),
             ref: t ? el : ea,
             tabIndex: false,
-            children: [(0, n.jsx)(k.I, {
+            children: [(0, n.jsx)(L.I, {
               isFullScreen: t,
               isLayer: en,
               onClose: F,
@@ -163,7 +159,7 @@ let D = e => {
                 [R.in]: ee === A.f7.IN,
                 [R.out]: ee === A.f7.OUT
               }),
-              children: (0, n.jsx)(P.Z, {
+              children: (0, n.jsx)(T.Z, {
                 tab: $,
                 isFullScreen: t,
                 refreshCategories: z,

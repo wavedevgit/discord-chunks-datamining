@@ -1,21 +1,25 @@
-/** Chunk was on 45620 **/
-/** chunk id: 675997, original params: e,t,r (module,exports,require) **/
-"use strict";
+/** Chunk was on 20501 **/
+/** chunk id: 675997, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => n
+  Z: () => s,
+  l: () => r
 });
-let n = (0, require("./427164.js").le)({
-  name: "2025-08-collectibles-shop-takeover",
-  kind: "user",
-  defaultConfig: {
-    enableShopTakeOver: false
-  },
-  variations: {
-    0: {
+let i = (0, require("./427164.js").le)({
+    name: "2025-08-collectibles-shop-takeover",
+    kind: "user",
+    defaultConfig: {
       enableShopTakeOver: false
     },
-    1: {
-      enableShopTakeOver: true
+    variations: {
+      0: {
+        enableShopTakeOver: false
+      },
+      1: {
+        enableShopTakeOver: true
+      }
     }
-  }
-})
+  }),
+  r = e => i.getConfig({
+    location: e
+  }).enableShopTakeOver,
+  s = i

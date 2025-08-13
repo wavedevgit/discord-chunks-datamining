@@ -3,7 +3,7 @@
 require.d(exports, {
   Wj: () => w,
   ZP: () => N
-}), require("./539854.js"), require("./388685.js"), require("./361932.js"), require("./187205.js");
+}), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk494497 = require("./494497.js"),
@@ -11,7 +11,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
   Chunk377171 = require("./377171.js"),
-  Chunk706140 = require("./706140.js"),
+  Chunk605236 = require("./605236.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk645041 = require("./645041.js"),
   Chunk430824 = require("./430824.js"),
@@ -42,9 +42,8 @@ function N(e) {
         {
           shouldShow: o
         } = (0, S._)(e, "useGuildPowerupsChannelListIndicators"),
-        d = [];
-      o && d.push(s.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
-      let [h] = (0, u.zH)(d, e);
+        d = (0, u.OA)(s.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, e),
+        h = o && !d;
       return i.useMemo(() => {
         var e, i, o;
         if (null == t) return {
@@ -54,7 +53,7 @@ function N(e) {
         let {
           unlockedPowerups: s
         } = t, u = (0, E.h)(s), d = null != (i = null == n ? true : n.lastSeenWarningNotification) ? i : Date.now(), p = new Date(null == (e = u[u.length - 1]) ? true : e.ends_at).getTime(), f = null != (o = null == n ? true : n.lastBoostCount) ? o : 0;
-        return u.length > 0 && d < p || null != h ? {
+        return u.length > 0 && d < p || h ? {
           trailing: (0, r.jsx)(a.Mgn, {
             color: a.TVs.colors.STATUS_WARNING,
             size: "sm"
