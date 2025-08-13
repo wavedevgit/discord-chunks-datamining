@@ -22,7 +22,7 @@ let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(t) {
     guildId: n,
     context: c,
     onSelect: a
-  } = t, l = (0, f.Z)(), d = (0, b.Z)(e), v = (0, s.Z)(e, n, c), j = (0, u.Z)({
+  } = t, l = (0, f.Z)(e.id), d = (0, b.Z)(e), v = (0, s.Z)(e, n, c), Z = (0, u.Z)({
     id: e.id,
     label: p.intl.string(p.t["FfCL+/"])
   });
@@ -34,7 +34,7 @@ let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(t) {
     children: [(0, r.jsxs)(i.kSQ, {
       children: [l, d, v]
     }), (0, r.jsx)(i.kSQ, {
-      children: j
+      children: Z
     })]
   })
 }, {

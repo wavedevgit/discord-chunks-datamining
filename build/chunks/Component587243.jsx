@@ -1,13 +1,12 @@
 /** Chunk was on 20501 **/
 /** chunk id: 587243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => O,
-  I: () => v
-}), require("./953529.js"), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
-  Chunk722770 = require("./722770.js"),
-  Chunk755721 = require("./755721.js"),
+  F: () => j,
+  I: () => E
+}), require("./953529.js");
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk722770 = require("./722770.js"),
   Chunk481060 = require("./481060.js"),
   Chunk440051 = require("./440051.js"),
   Chunk734934 = require("./734934.js"),
@@ -19,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk337134 = require("./337134.js");
-let x = [{
+let f = [{
     duration: 15 * Chunk70956.Z.Millis.MINUTE,
     label: () => Chunk388032.intl.string(Chunk388032.t["8ot6go"])
   }, {
@@ -38,229 +37,183 @@ let x = [{
     duration: true,
     label: () => Chunk388032.intl.string(Chunk388032.t["46dqJS"])
   }],
-  _ = [{
-    duration: Chunk70956.Z.Millis.HOUR,
-    label: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.rhY1Rk, {
-      hours: 1
-    })
-  }, {
-    duration: Chunk70956.Z.Millis.DAY,
-    label: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.rhY1Rk, {
-      hours: 24
-    })
-  }, {
-    duration: 3 * Chunk70956.Z.Millis.DAY,
-    label: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.GBLpQ0, {
-      days: 3
-    })
-  }, {
-    duration: true,
-    label: () => Chunk388032.intl.string(Chunk388032.t["46dqJS"])
-  }],
-  j = "forever";
+  b = "forever";
 
-function E(e, t) {
+function x(e, t) {
   return e.getFullYear() === t.getFullYear() && e.getMonth() === t.getMonth() && e.getDate() === t.getDate()
 }
 
-function C(e) {
+function _(e) {
   let {
     status: t,
     currentStatus: n,
-    description: s
+    description: r
   } = e, {
-    showTempStatusOptions: c,
-    hasDefaultClickOption: d,
-    hasButtonStyling: u
-  } = o.Y.useExperiment({
+    showTempStatusOptions: l
+  } = a.Y.useExperiment({
     location: "UserProfileAccountPopout"
-  }), f = c && t !== h.Skl.ONLINE, [E, C] = r.useState(true), O = true !== E && t === n, v = (0, i.jsx)(i.Fragment, {
-    children: x.map(e => {
+  }), o = l && t !== p.Skl.ONLINE, c = (0, i.jsx)(i.Fragment, {
+    children: f.map(e => {
       let {
         duration: r,
-        label: s
+        label: a
       } = e;
-      return (0, i.jsx)(l.sNh, {
+      return (0, i.jsx)(s.sNh, {
         id: "".concat(t, "-").concat(r),
-        label: s(),
-        action: () => (0, g.Z)({
+        label: a(),
+        action: () => (0, m.Z)({
           nextStatus: t,
           prevStatus: n,
           durationMillis: r
         }),
         dontCloseOnAction: true
-      }, null != r ? r : j)
-    })
-  }), S = (0, i.jsx)("div", {
-    className: b.durationButtons,
-    children: _.map(e => {
-      let {
-        duration: r,
-        label: s
-      } = e;
-      return (0, i.jsx)(a.zx, {
-        "data-migration-pending": true,
-        id: "".concat(t, "-").concat(r),
-        onClick: e => {
-          e.stopPropagation(), C(r), (0, g.Z)({
-            nextStatus: t,
-            prevStatus: n,
-            durationMillis: null != r ? r : true
-          })
-        },
-        className: b.durationButton,
-        color: E === r ? a.Tt.BRAND : a.Tt.PRIMARY,
-        size: a.Ph.NONE,
-        grow: false,
-        children: s()
-      }, null != r ? r : j)
+      }, null != r ? r : b)
     })
   });
-  return (0, i.jsx)(l.sNh, {
+  return (0, i.jsx)(s.sNh, {
     id: t,
-    className: b.expiringStatusMenuItem,
+    className: h.expiringStatusMenuItem,
     keepItemStyles: true,
-    hasSubmenu: f,
+    hasSubmenu: o,
     label: e => {
       let {
         isFocused: n
       } = e;
       return (0, i.jsxs)("div", {
-        className: b.statusItem,
-        children: [(0, i.jsx)(l.qbd, {
+        className: h.statusItem,
+        children: [(0, i.jsx)(s.qbd, {
           status: t,
-          className: b.icon,
+          className: h.icon,
           size: 10,
           color: n ? "currentColor" : true
         }), (0, i.jsx)("div", {
-          className: b.status,
-          children: (0, p.u5)(t)
-        }), null != s && (0, i.jsx)("div", {
-          className: b.description,
-          children: s
-        }), f && u && O ? S : true]
+          className: h.status,
+          children: (0, u.u5)(t)
+        }), null != r && (0, i.jsx)("div", {
+          className: h.description,
+          children: r
+        })]
       })
     },
     action: () => {
-      C(f ? m.Z.Millis.DAY : true), (0, g.Z)({
+      (0, m.Z)({
         nextStatus: t,
-        prevStatus: n,
-        durationMillis: d && f ? m.Z.Millis.DAY : true
+        prevStatus: n
       })
     },
     dontCloseOnAction: true,
-    children: f && !u ? v : true
+    children: o ? c : true
   })
 }
 
-function O(e) {
+function j(e) {
   if (null == e || "0" === e) return;
   let t = new Date(Number(e)),
-    n = E(t, new Date),
+    n = x(t, new Date),
     i = new Date;
   i.setDate(i.getDate() + 1);
-  let r = E(t, i);
-  return n ? f.intl.formatToPlainString(f.t.ZxxHIC, {
-    timeString: f.intl.data.formatTime(t, {
+  let r = x(t, i);
+  return n ? g.intl.formatToPlainString(g.t.ZxxHIC, {
+    timeString: g.intl.data.formatTime(t, {
       format: "short"
     })
-  }) : f.intl.formatToPlainString(f.t["9OFjSU"], {
-    dateString: r ? f.intl.data.formatRelativeTime(1, "day", {
+  }) : g.intl.formatToPlainString(g.t["9OFjSU"], {
+    dateString: r ? g.intl.data.formatRelativeTime(1, "day", {
       numeric: "auto"
-    }) : f.intl.data.formatDate(t, {
+    }) : g.intl.data.formatDate(t, {
       dateStyle: "short"
     }),
-    timeString: f.intl.data.formatTime(t, {
+    timeString: g.intl.data.formatTime(t, {
       format: "short"
     })
   })
 }
 
-function v(e) {
+function E(e) {
   let {
     hasNewStrings: t
-  } = o.Y.useExperiment({
+  } = a.Y.useExperiment({
     location: "UserProfileAccountPopout"
-  }), n = u.Cr.useSetting(), r = (0, c.p)(), a = d.e.useExperiment({
+  }), n = c.Cr.useSetting(), d = (0, l.p)(), u = o.e.useExperiment({
     location: "UserProfileAccountPopout"
-  }).allowQuietMode || r, m = u.fv.useSetting(), p = e === h.Skl.DND, g = i => {
-    let r = O(n);
+  }).allowQuietMode || d, m = c.fv.useSetting(), x = e === p.Skl.DND, E = i => {
+    let r = j(n);
     if (e === i && null != r) return r;
     switch (i) {
-      case h.Skl.DND:
-        return a ? f.intl.string(f.t.day5Aw) : t ? f.intl.string(f.t["tq/fMD"]) : f.intl.string(f.t.U9Vv19);
-      case h.Skl.INVISIBLE:
-        return t ? f.intl.string(f.t.zPc6MT) : f.intl.string(f.t.MqanVF);
+      case p.Skl.DND:
+        return u ? g.intl.string(g.t.day5Aw) : t ? g.intl.string(g.t["tq/fMD"]) : g.intl.string(g.t.U9Vv19);
+      case p.Skl.INVISIBLE:
+        return t ? g.intl.string(g.t.zPc6MT) : g.intl.string(g.t.MqanVF);
       default:
         return
     }
-  }, _ = (0, i.jsx)(i.Fragment, {
-    children: x.map(t => {
+  }, C = (0, i.jsx)(i.Fragment, {
+    children: f.map(t => {
       let {
         duration: n,
         label: r
       } = t;
-      return (0, i.jsx)(l.sNh, {
+      return (0, i.jsx)(s.sNh, {
         id: "".concat(e, "-").concat(n),
         label: r(),
         action: () => {
-          (0, c.oW)(true, n)
+          (0, l.oW)(true, n)
         },
         dontCloseOnAction: true
-      }, null != n ? n : j)
+      }, null != n ? n : b)
     })
-  }), E = C({
-    status: h.Skl.ONLINE,
+  }), O = _({
+    status: p.Skl.ONLINE,
     currentStatus: e
-  }), v = C({
-    status: h.Skl.IDLE,
+  }), v = _({
+    status: p.Skl.IDLE,
     currentStatus: e,
-    description: g(h.Skl.IDLE)
-  }), S = C({
-    status: h.Skl.DND,
+    description: E(p.Skl.IDLE)
+  }), S = _({
+    status: p.Skl.DND,
     currentStatus: e,
-    description: g(h.Skl.DND)
-  }), T = C({
-    status: h.Skl.INVISIBLE,
+    description: E(p.Skl.DND)
+  }), T = _({
+    status: p.Skl.INVISIBLE,
     currentStatus: e,
-    description: g(h.Skl.INVISIBLE)
+    description: E(p.Skl.INVISIBLE)
   });
   return (0, i.jsxs)(i.Fragment, {
-    children: [E, (0, i.jsx)(l.Clw, {}, "menu-separator-statuses"), v, S, T, a || r ? (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(l.Clw, {}, "menu-separator-statuses"), (0, i.jsx)(l.sNh, {
+    children: [O, (0, i.jsx)(s.Clw, {}, "menu-separator-statuses"), v, S, T, u || d ? (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsx)(s.Clw, {}, "menu-separator-statuses"), (0, i.jsx)(s.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",
-        className: b.expiringStatusMenuItem,
+        className: h.expiringStatusMenuItem,
         keepItemStyles: true,
         hasSubmenu: true,
         label: () => (0, i.jsxs)("div", {
-          className: b.statusItem,
-          children: [(0, i.jsx)(l.owu, {
+          className: h.statusItem,
+          children: [(0, i.jsx)(s.owu, {
             size: "xxs",
-            className: b.icon
+            className: h.icon
           }), (0, i.jsxs)("div", {
-            className: b.focusModeTitle,
-            children: [f.intl.string(f.t.gJRnwM), (0, i.jsx)(l.IGR, {
-              text: r ? f.intl.string(f.t.ApAu9f) : p ? f.intl.string(f.t.gH3Fra) : f.intl.string(f.t["64pl8/"]),
-              color: r ? s.Z.BRAND_500 : p ? s.Z.RED_400 : s.Z.PRIMARY_500
+            className: h.focusModeTitle,
+            children: [g.intl.string(g.t.gJRnwM), (0, i.jsx)(s.IGR, {
+              text: d ? g.intl.string(g.t.ApAu9f) : x ? g.intl.string(g.t.gH3Fra) : g.intl.string(g.t["64pl8/"]),
+              color: d ? r.Z.BRAND_500 : x ? r.Z.RED_400 : r.Z.PRIMARY_500
             })]
           }), (0, i.jsx)("div", {
-            className: b.description,
-            children: r && null != m && "0" !== m ? f.intl.formatToPlainString(f.t.BWD8fn, {
-              endTime: new Date(Number(m)).toLocaleString(f.intl.currentLocale, {
+            className: h.description,
+            children: d && null != m && "0" !== m ? g.intl.formatToPlainString(g.t.BWD8fn, {
+              endTime: new Date(Number(m)).toLocaleString(g.intl.currentLocale, {
                 month: "numeric",
                 day: "numeric",
                 hour: "numeric",
                 minute: "2-digit"
               })
-            }) : f.intl.string(f.t["Br1q+/"])
+            }) : g.intl.string(g.t["Br1q+/"])
           })]
         }),
         action: () => {
-          (0, c.oW)(!r)
+          (0, l.oW)(!d)
         },
         dontCloseOnAction: true,
-        children: _
+        children: C
       }, "quiet-mode")]
     }) : null]
   })

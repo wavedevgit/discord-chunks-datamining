@@ -1,21 +1,24 @@
 /** Chunk was on 51064 **/
 /** chunk id: 393910, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
-}), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+  Z: () => u
+});
+var Chunk255367 = require("./255367.js");
+require("./73800.js");
+var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk406763 = require("./406763.js"),
+  Chunk893642 = require("./893642.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a() {
-  let [t, e] = Chunk73800.useState(false);
-  return (0, Chunk255367.jsx)(Chunk481060.S89, {
+function u(t) {
+  let e = (0, i.e7)([a.Z], () => a.Z.getMute(t));
+  return (0, r.jsx)(o.S89, {
     id: "mute-game",
-    label: Chunk388032.intl.string(Chunk388032.t["6EwEws"]),
-    checked: module,
+    label: l.intl.string(l.t["6EwEws"]),
+    checked: e,
     action: () => {
-      exports(!module)
+      (0, c.X)(t, !e)
     }
   })
 }

@@ -2,17 +2,18 @@
 /** chunk id: 572804, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Hl: () => c,
-  Sz: () => u,
-  ZP: () => l
+  Hl: () => u,
+  Sz: () => d,
+  ZP: () => c
 });
-var Chunk592125 = require("./592125.js"),
+var Chunk893642 = require("./893642.js"),
+  Chunk592125 = require("./592125.js"),
   Chunk271383 = require("./271383.js"),
   Chunk430824 = require("./430824.js"),
   Chunk230307 = require("./230307.js");
-let s = 5184e6;
+let l = 5184e6;
 
-function l(e) {
+function c(e) {
   var t, n;
   let {
     message: r,
@@ -20,7 +21,7 @@ function l(e) {
     suppressEveryone: o = false,
     suppressRoles: a = false
   } = e;
-  return u({
+  return d({
     userId: i,
     channelId: r.channel_id,
     mentionEveryone: r.mentionEveryone,
@@ -32,15 +33,15 @@ function l(e) {
   })
 }
 
-function c(e) {
+function u(e) {
   var t, n, r, i, o, a;
   let {
     rawMessage: s,
     userId: l,
     suppressEveryone: c = false,
-    suppressRoles: d = false
+    suppressRoles: u = false
   } = e;
-  return u({
+  return d({
     userId: l,
     channelId: s.channel_id,
     mentionEveryone: null != (r = s.mention_everyone) && r,
@@ -48,30 +49,30 @@ function c(e) {
     mentionRoles: null != (o = s.mention_roles) ? o : [],
     mentionGames: null != (a = null == (n = s.mention_games) ? true : n.map(e => e.id)) ? a : [],
     suppressEveryone: c,
-    suppressRoles: d
+    suppressRoles: u
   })
 }
 
-function u(e) {
+function d(e) {
   let {
     userId: t,
     channelId: n,
-    mentionEveryone: l,
-    mentionUsers: c,
-    mentionRoles: u,
-    mentionGames: d,
-    suppressEveryone: f = false,
-    suppressRoles: _ = false
+    mentionEveryone: c,
+    mentionUsers: u,
+    mentionRoles: d,
+    mentionGames: f,
+    suppressEveryone: _ = false,
+    suppressRoles: p = false
   } = e;
-  if (l && !f || c.includes(t) || d.some(e => {
+  if (c && !_ || u.includes(t) || f.some(e => {
       var t;
-      return (null != (t = a.Z.getLastPlayedDateTime(e)) ? t : 0) > Date.now() - s
+      return !r.Z.getMute(e) && (null != (t = s.Z.getLastPlayedDateTime(e)) ? t : 0) > Date.now() - l
     })) returntrue;
-  if (_ || null == u || 0 === u.length) returnfalse;
-  let p = r.Z.getChannel(n);
-  if (null == p) returnfalse;
-  let h = p.getGuildId();
-  if (null == h || null == o.Z.getGuild(h)) returnfalse;
-  let m = i.ZP.getMember(h, t);
-  return null != m && u.some(e => m.roles.includes(e))
+  if (p || null == d || 0 === d.length) returnfalse;
+  let h = i.Z.getChannel(n);
+  if (null == h) returnfalse;
+  let m = h.getGuildId();
+  if (null == m || null == a.Z.getGuild(m)) returnfalse;
+  let g = o.ZP.getMember(m, t);
+  return null != g && d.some(e => g.roles.includes(e))
 }

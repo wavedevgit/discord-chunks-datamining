@@ -11,7 +11,7 @@ var Chunk255367 = require("./255367.js"),
   a = require.n(Chunk120356),
   Chunk97519 = require("./97519.js"),
   Chunk731965 = require("./731965.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk911969 = require("./911969.js"),
   Chunk100527 = require("./100527.js"),
   Chunk367907 = require("./367907.js"),
@@ -107,14 +107,16 @@ function N(e) {
     channelRecipientUserId: g,
     setIsExecutingLaunchInteraction: E,
     analyticsLocations: y
-  }), T = _ ? c.zx.Colors.RED : c.zx.Colors.BRAND;
-  return (0, r.jsx)(c.zx, {
-    className: a()(v.entryPointAppCommandButton, O.Id),
-    size: c.zx.Sizes.SMALL,
-    color: T,
-    submitting: d,
-    onClick: I,
-    buttonRef: s,
-    children: f
+  }), T = _ ? "critical-primary" : "primary";
+  return (0, r.jsx)("div", {
+    className: a()(v.entryPointAppCommandButtonContainer, O.Id),
+    children: (0, r.jsx)(c.zxk, {
+      variant: T,
+      loading: d,
+      onClick: I,
+      fullWidth: true,
+      buttonRef: s,
+      text: f
+    })
   })
 }

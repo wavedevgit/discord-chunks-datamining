@@ -36,7 +36,9 @@ function f(e) {
     disabled: t,
     widgetType: n
   } = e, [f] = (0, o.ynZ)(), p = l.useRef(null), m = l.useCallback(e => {
-    (0, c.ES)(n, e)
+    (0, c.ES)(n, {
+      applicationId: e
+    })
   }, [n]), {
     options: b,
     matchSorterOptions: g

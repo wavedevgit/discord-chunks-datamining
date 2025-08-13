@@ -198,27 +198,38 @@ function ea(e, t) {
     eventEmitter: eX,
     handleEditorSelectionChanged: eQ
   } = (0, F.x2)(eM, f, m), eJ = i.useCallback(e => {
-    var t;
-    let n = [];
-    null != eR && n.push({
+    var t, n;
+    let r = [],
+      i = eC.length > 0 ? eC : e.value.length > 0 ? e.value.slice(0, 80) : q.intl.string(q.t["7Xm5QE"]);
+    if (null == eR) return (0, v.c)(j.id, {
+      title: "",
+      heroFile: null
+    }), null == (n = eM.current) || n.blur(), e_(et($({}, e), {
+      announcementSendOptions: {
+        createThread: eq && ew,
+        threadName: i,
+        publish: eP
+      }
+    }));
+    r.push({
       type: h.re.MEDIA_GALLERY,
       items: [ei("attachment://".concat(eo(eR.name)), false)],
       id: "".concat(K.Vm)
-    }), e.value.length > 0 && n.push({
+    }), e.value.length > 0 && r.push({
       type: h.re.TEXT_DISPLAY,
       content: e.value,
       id: "".concat(K.Kb)
     });
-    let r = x.Z.getUploads(j.id, D.d.ChannelMessage),
-      i = r.filter(e => (e.isImage || e.isVideo) && e.filename !== (null == eR ? true : eR.name)),
-      o = r.filter(e => !e.isImage && !e.isVideo && e.filename !== (null == eR ? true : eR.name)),
-      a = i.map(e => ei("attachment://".concat(eo(e.filename)), false));
-    return a.length > 0 && n.push({
+    let o = x.Z.getUploads(j.id, D.d.ChannelMessage),
+      a = o.filter(e => (e.isImage || e.isVideo) && e.filename !== (null == eR ? true : eR.name)),
+      s = o.filter(e => !e.isImage && !e.isVideo && e.filename !== (null == eR ? true : eR.name)),
+      l = a.map(e => ei("attachment://".concat(eo(e.filename)), false));
+    return l.length > 0 && r.push({
       type: h.re.MEDIA_GALLERY,
-      items: a,
+      items: l,
       id: "".concat(K.m2)
-    }), o.forEach((e, t) => {
-      n.push({
+    }), s.forEach((e, t) => {
+      r.push({
         type: h.re.FILE,
         file: ei("attachment://".concat(eo(e.filename)), false).media,
         id: "".concat(K.kn + t),
@@ -229,10 +240,10 @@ function ea(e, t) {
       title: "",
       heroFile: null
     }), null == (t = eM.current) || t.blur(), e_(et($({}, e), {
-      components: n,
+      components: r,
       announcementSendOptions: {
         createThread: eq && ew,
-        threadName: eC.length > 0 ? eC : q.intl.string(q.t["7Xm5QE"]),
+        threadName: i,
         publish: eP
       }
     }))
