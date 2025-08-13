@@ -102,9 +102,9 @@ let R = Chunk73800.memo(function(e) {
     let {
       isMobile: S,
       status: I
-    } = (0, c.cj)([_.Z], () => ({
-      isMobile: _.Z.isMobileOnline(a.user.id),
-      status: _.Z.getStatus(a.user.id, E)
+    } = (0, c.cj)([j.Z], () => ({
+      isMobile: j.Z.isMobileOnline(a.user.id),
+      status: j.Z.getStatus(a.user.id, E)
     })), R = (0, c.e7)([y.ZP], () => y.ZP.getMember(E, a.user.id)), w = (0, m.X7)(l.guild_id, null == R ? true : R.userId, null != (t = null == R ? true : R.colorStrings) ? t : null), A = i.useMemo(() => ({
       [E]: [a.user.id]
     }), [E, a.user.id]);
@@ -112,11 +112,11 @@ let R = Chunk73800.memo(function(e) {
     let D = a.rtsState === C.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 
     function k() {
-      (0, j.DT)(l, a.user.id, false)
+      (0, _.DT)(l, a.user.id, false)
     }
 
     function L() {
-      (0, j.DT)(l, a.user.id, true)
+      (0, _.DT)(l, a.user.id, true)
     }
     let M = e => {
       (0, d.jW)(e, async () => {

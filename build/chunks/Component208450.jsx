@@ -254,7 +254,7 @@ class H extends Chunk73800.PureComponent {
         searchContext: o
       } = this.props, a = (0, N.ad)({
         location: "SearchBar_handleFocusSearch"
-      }), s = o.type === k.aib.DMS && a;
+      }), s = o.type === j.aib.DMS && a;
       if (r.isPrivate() && !s) return void this.focusEditor();
       let l = (0, T.X3)(r);
       if (null == l) return void this.focusEditor();
@@ -265,7 +265,7 @@ class H extends Chunk73800.PureComponent {
           _editorRef: e
         } = this;
         null == e || e.focus(), this.handleSetSearchQuery({
-          query: P.ZP[k.dCx.FILTER_IN].key + "".concat(l, " "),
+          query: P.ZP[j.dCx.FILTER_IN].key + "".concat(l, " "),
           replace: true
         })
       })
@@ -306,9 +306,9 @@ class H extends Chunk73800.PureComponent {
     }), B(this, "onBlur", e => {
       this.handleBlur()
     }), B(this, "handleOption", e => null != e && (false === e.state.selectedIndex && e.shouldShowSearchInSelectedChannel() ? e.handleSearchInChannel({
-      searchAutocompleteSelectAction: j.ZW.KEY_PRESS
+      searchAutocompleteSelectAction: k.ZW.KEY_PRESS
     }) : e.selectOption({
-      searchAutocompleteSelectAction: j.ZW.KEY_PRESS
+      searchAutocompleteSelectAction: k.ZW.KEY_PRESS
     }))), B(this, "handleReturn", e => {
       let {
         shiftKey: t
@@ -452,7 +452,7 @@ function Y(e) {
         searchContext: t,
         query: r,
         queryString: n
-      }), t.type === k.aib.DMS ? w.Z.fetchCrossDMMessages({
+      }), t.type === j.aib.DMS ? w.Z.fetchCrossDMMessages({
         searchContext: t,
         selectedPageIndex: 0,
         queryString: n
@@ -462,7 +462,7 @@ function Y(e) {
         queryString: n,
         searchEverywhere: i,
         offset: 0,
-        searchMode: k.QIO.NEWEST
+        searchMode: j.QIO.NEWEST
       })
     }, [t]),
     N = (0, u.e7)([g.Z, m.Z], () => {
@@ -479,20 +479,20 @@ function Y(e) {
       return null
     }),
     D = (0, C.xd)({
-      isXDMSearch: t.type === k.aib.DMS,
+      isXDMSearch: t.type === j.aib.DMS,
       location: "Search"
     }),
     L = (0, C.dB)({
-      isXDMSearch: t.type === k.aib.DMS,
+      isXDMSearch: t.type === j.aib.DMS,
       location: "Search"
     }),
-    j = D || L,
+    k = D || L,
     B = (0, A.$)({
       location: "Search"
     }),
-    Z = i.useMemo(() => t.type === k.aib.DMS ? U.intl.string(U.t.m7OrlZ) : B ? U.intl.formatToPlainString(U.t.LDZtFB, {
+    Z = i.useMemo(() => t.type === j.aib.DMS ? U.intl.string(U.t.m7OrlZ) : B ? U.intl.formatToPlainString(U.t.LDZtFB, {
       name: N
-    }) : j ? (0, r.jsxs)(r.Fragment, {
+    }) : k ? (0, r.jsxs)(r.Fragment, {
       children: [U.intl.formatToPlainString(U.t.LDZtFB, {
         name: N
       }), (0, r.jsx)("span", {
@@ -502,7 +502,7 @@ function Y(e) {
           className: G.shortcut
         })
       })]
-    }) : U.intl.string(U.t["5h0QOD"]), [t.type, j, N, B]);
+    }) : U.intl.string(U.t["5h0QOD"]), [t.type, k, N, B]);
   return (0, r.jsx)(H, {
     className: n,
     searchPopoutClassName: s,

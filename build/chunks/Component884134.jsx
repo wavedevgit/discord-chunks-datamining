@@ -145,7 +145,7 @@ function z(e) {
     children: [(0, r.jsxs)("div", {
       className: U.badgeAndCloseRow,
       children: [(0, r.jsx)(_.lBU, {
-        text: k.intl.string(k.t.oW0eUV)
+        text: j.intl.string(j.t.oW0eUV)
       }), (0, r.jsx)(Y, {
         markAsDismissed: t
       })]
@@ -153,12 +153,12 @@ function z(e) {
       className: U.coachmarkHeaderTextContainer,
       children: [(0, r.jsx)(_.X6q, {
         variant: "heading-lg/extrabold",
-        children: k.intl.string(j.default["23QUzs"])
+        children: j.intl.string(k.default["23QUzs"])
       }), (0, r.jsx)(_.Text, {
         className: U.subtitle,
         variant: "text-sm/medium",
         color: "text-muted",
-        children: k.intl.string(n ? j.default.TRCE4u : j.default["UV/Vtr"])
+        children: j.intl.string(n ? k.default.TRCE4u : k.default["UV/Vtr"])
       })]
     })]
   })
@@ -189,7 +189,7 @@ function q(e) {
       className: U.controlLabelContainer,
       children: [(0, r.jsx)(_.Text, {
         variant: "text-md/medium",
-        children: k.intl.string(j.default.dZkwg4)
+        children: j.intl.string(k.default.dZkwg4)
       }), (0, r.jsx)("input", {
         type: "text",
         value: l,
@@ -236,7 +236,7 @@ function X(e) {
       className: U.controlLabelContainer,
       children: [(0, r.jsx)(_.Text, {
         variant: "text-md/medium",
-        children: k.intl.string(j.default.xlXkaG)
+        children: j.intl.string(k.default.xlXkaG)
       }), (0, r.jsx)("input", {
         type: "text",
         value: s,
@@ -285,13 +285,13 @@ function J(e) {
     fullWidth: i
   } = e;
   return (0, r.jsx)(_.ua7, {
-    text: k.intl.string(j.default.SFyHIC),
+    text: j.intl.string(k.default.SFyHIC),
     shouldShow: n,
     children: e => (0, r.jsx)(c.z, F(B({}, e), {
       variant: "primary",
       onClick: t,
       disabled: n,
-      text: k.intl.string(k.t["1Qm829"]),
+      text: j.intl.string(j.t["1Qm829"]),
       fullWidth: i
     }))
   })
@@ -314,7 +314,7 @@ function $(e) {
         section: L.jXE.CUSTOM_THEMES_COACHMARK_FOOTER
       },
       textOptions: {
-        subscribeText: k.intl.string(k.t.JST6jo)
+        subscribeText: j.intl.string(j.t.JST6jo)
       },
       subscriptionTier: M.Si.TIER_2,
       showGradient: true,
@@ -338,7 +338,7 @@ function ee(e) {
     children: [(0, r.jsx)(d.A, {
       variant: "secondary",
       onClick: a,
-      text: k.intl.string(k.t["13/7kZ"])
+      text: j.intl.string(j.t["13/7kZ"])
     }), o ? (0, r.jsx)(J, {
       disabled: !n,
       onApply: t
@@ -352,7 +352,7 @@ function ee(e) {
         section: L.jXE.CUSTOM_THEMES_FOOTER
       },
       textOptions: {
-        textOverride: k.intl.string(k.t.pj0XBA)
+        textOverride: j.intl.string(j.t.pj0XBA)
       }
     })]
   })
@@ -406,14 +406,14 @@ function et(e) {
           children: [(0, r.jsx)(_.Text, {
             variant: "text-sm/semibold",
             color: "text-secondary",
-            children: k.intl.string(j.default.o2NfLC)
+            children: j.intl.string(k.default.o2NfLC)
           }), (0, r.jsx)(D.o, {})]
         }), (0, r.jsxs)("div", {
           className: U.section,
           children: [(0, r.jsx)(_.Text, {
             variant: "text-sm/semibold",
             color: "text-secondary",
-            children: k.intl.string(j.default.uSL2Gx)
+            children: j.intl.string(k.default.uSL2Gx)
           }), (0, r.jsx)(w.U, {
             onChange: e => {
               G(e), 0 === h.length && (0, C.lT)(h, e, I)
@@ -427,7 +427,7 @@ function et(e) {
           children: [(0, r.jsx)(_.Text, {
             variant: "text-sm/semibold",
             color: "text-secondary",
-            children: k.intl.string(j.default.F1t0c3)
+            children: j.intl.string(k.default.F1t0c3)
           }), h.length > 1 && (0, r.jsx)(q, {
             gradientAngle: v,
             setGradientAngle: L
@@ -442,7 +442,7 @@ function et(e) {
           children: [(0, r.jsx)(Q, {}), (0, r.jsx)(c.z, {
             variant: "secondary",
             onClick: H,
-            text: k.intl.string(k.t.yBZMsb),
+            text: j.intl.string(j.t.yBZMsb),
             fullWidth: true
           })]
         })]

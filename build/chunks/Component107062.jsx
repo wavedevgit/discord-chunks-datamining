@@ -92,8 +92,8 @@ let R = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
     }), {
       user: x,
       details: M,
-      activity: j,
-      embeddedActivity: k
+      activity: k,
+      embeddedActivity: j
     } = (0, T.n)(n), {
       primaryColor: U,
       secondaryColor: G
@@ -147,10 +147,10 @@ let R = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         onClickSubtitle: D ? true : Y,
         onClickThumbnail: D ? true : Y
       }),
-      X = (0, l.Z)(j, S.xjy.JOIN) || (0, c.Z)(j),
+      X = (0, l.Z)(k, S.xjy.JOIN) || (0, c.Z)(k),
       Q = X ? (0, r.jsx)(u.Z, {
-        embeddedActivity: k,
-        activity: j,
+        embeddedActivity: j,
+        activity: k,
         user: x,
         ButtonComponent: e => (0, r.jsx)(I.Ll, C({
           IconComponent: a.YVR

@@ -1,7 +1,7 @@
 /** Chunk was on 21087 **/
 /** chunk id: 801405, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => _
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -20,17 +20,17 @@ var Chunk255367 = require("./255367.js"),
   Chunk358085 = require("./358085.js"),
   Chunk228488 = require("./228488.js"),
   Chunk981631 = require("./981631.js");
-let _ = () => {
+let j = () => {
   Chunk570140.Z.wait(() => Chunk788983.xv(Chunk981631.KJ3.CHANNEL_CALL_POPOUT))
 };
 
-function j(e) {
+function _(e) {
   let {
     channel: t,
     appContext: n,
     popoutOpen: a,
     popoutWindow: h,
-    currentWindow: j
+    currentWindow: _
   } = e, {
     parentAnalyticsLocation: O
   } = (0, c.ZP)(), v = n === x.IlC.POPOUT, C = i.useRef(null), {
@@ -55,13 +55,13 @@ function j(e) {
       rootNode: T
     } = i.useMemo(() => {
       let e = null != h && v ? h.document : document,
-        t = j.document.getElementById("app-mount");
+        t = _.document.getElementById("app-mount");
       return {
-        currentWindow: j,
+        currentWindow: _,
         currentDocument: e,
         rootNode: t
       }
-    }, [h, v, j]),
+    }, [h, v, _]),
     N = a && !v,
     R = S === x.WtW.VIDEO && I && !N,
     w = i.useCallback((e, r) => {
@@ -120,7 +120,7 @@ function j(e) {
   }, [E, v]), i.useEffect(() => {
     null != T && C.current === x.WtW.VIDEO && S === x.WtW.VOICE && (0, y.Pr)(T, P)
   }, [P, S, C, T]), i.useEffect(() => {
-    !I && v && _()
+    !I && v && j()
   }, [I, v]), R) ? (0, r.jsx)(p.Z, {
     themeable: false,
     node: T,

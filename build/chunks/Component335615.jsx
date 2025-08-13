@@ -129,8 +129,8 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
       applicationStream: f,
       status: m,
       channel: x,
-      guildId: _,
-      isTyping: j,
+      guildId: j,
+      isTyping: _,
       isMobileOnline: O,
       premiumSince: v,
       nameplate: C
@@ -141,12 +141,12 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("96650")]).then(n.bind(n, 757387)), t = B.Z.isInChannel(F.Z.getVoiceChannelId(), u.id);
         return n => (0, r.jsx)(e, $(J({}, n), {
           user: u,
-          guildId: _,
+          guildId: j,
           channel: x,
           showMediaItems: t
         }))
       })
-    }, [u, _, x]), R = i.useCallback(() => {
+    }, [u, j, x]), R = i.useCallback(() => {
       let e = "@".concat(z.ZP.getUserTag(u, {
           decoration: "never"
         })),
@@ -158,18 +158,18 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
         rawText: t
       }), b.Z.startTyping(x.id)
     }, [u, x.id]), w = i.useCallback(e => {
-      null != _ && (e.stopPropagation(), (0, N.f)({
-        guildId: _,
+      null != j && (e.stopPropagation(), (0, N.f)({
+        guildId: j,
         location: {
           section: q.jXE.MEMBER_LIST,
           object: q.qAy.BOOST_GEM_ICON
         }
       }))
-    }, [_]);
+    }, [j]);
     return (0, r.jsx)(k.Z, {
       targetElementRef: S,
       user: u,
-      guildId: _,
+      guildId: j,
       channelId: x.id,
       roleId: s,
       position: d.tq ? "window_center" : "left",
@@ -200,9 +200,9 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
           colorString: t,
           colorStrings: l,
           colorRoleName: a,
-          isTyping: j,
+          isTyping: _,
           channel: x,
-          guildId: _,
+          guildId: j,
           isMobile: O,
           onClickPremiumGuildIcon: w,
           selected: I,
@@ -545,7 +545,7 @@ class es extends Chunk73800.Component {
         num_users_visible_with_avatar_decoration: 0,
         num_users_visible_with_nameplate: 0
       });
-      this.lastReportedAnalyticsChannel = this.props.channel.id, j.ZP.trackWithMetadata(q.rMx.MEMBER_LIST_VIEWED, J({}, i))
+      this.lastReportedAnalyticsChannel = this.props.channel.id, _.ZP.trackWithMetadata(q.rMx.MEMBER_LIST_VIEWED, J({}, i))
     })
   }
 }
@@ -556,7 +556,7 @@ function eo(e) {
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, O.ZP)(_.Z.MEMBER_LIST), s = (0, p.e7)([x.Z], () => x.Z.keyboardModeEnabled), o = (0, p.cj)([M.ZP], () => M.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, O.ZP)(j.Z.MEMBER_LIST), s = (0, p.e7)([x.Z], () => x.Z.keyboardModeEnabled), o = (0, p.cj)([M.ZP], () => M.ZP.getProps(t.guild_id, t.id)), {
     rows: d,
     groups: h,
     version: g,
@@ -565,7 +565,7 @@ function eo(e) {
     memberStoreProps: o,
     channelId: t.id,
     guildId: t.guild_id
-  }), b = i.useRef(null), y = (0, f.UBm)("lg") + (0, f.UBm)("xxs"), j = i.useCallback((e, t) => {
+  }), b = i.useRef(null), y = (0, f.UBm)("lg") + (0, f.UBm)("xxs"), _ = i.useCallback((e, t) => {
     let n = b.current;
     if (null == n) return;
     let r = parseInt(t, 10),
@@ -599,7 +599,7 @@ function eo(e) {
     })
   }), []), E = (0, u.ZP)({
     id: "members-".concat(t.id),
-    setFocus: j,
+    setFocus: _,
     isEnabled: s,
     scrollToStart: v,
     scrollToEnd: C

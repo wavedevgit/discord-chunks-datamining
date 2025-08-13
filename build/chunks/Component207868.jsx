@@ -22,16 +22,16 @@ var Chunk255367 = require("./255367.js"),
 let x = Chunk73800.memo(function(e) {
   let {
     channel: t
-  } = e, n = (0, u.Z)(), l = (0, s.e7)([f.Z], () => f.Z.isInChannel(t.id)), x = (0, s.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), _ = (0, s.e7)([p.Z], () => p.Z.can(b.Plq.CONNECT, t)), {
-    needSubscriptionToAccess: j
+  } = e, n = (0, u.Z)(), l = (0, s.e7)([f.Z], () => f.Z.isInChannel(t.id)), x = (0, s.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), j = (0, s.e7)([p.Z], () => p.Z.can(b.Plq.CONNECT, t)), {
+    needSubscriptionToAccess: _
   } = (0, d.Z)(t.id), O = (0, h.$R)(t), v = i.useCallback(() => {
     c.Z.handleVoiceConnect({
       channel: t,
       connected: l,
-      needSubscriptionToAccess: j,
+      needSubscriptionToAccess: _,
       locked: false
     })
-  }, [t, l, j]);
+  }, [t, l, _]);
   return (i.useEffect(() => (g.S.subscribe(b.CkL.CALL_START, v), () => {
     g.S.unsubscribe(b.CkL.CALL_START, v)
   }), [v]), h.tM.useExperiment({
@@ -39,7 +39,7 @@ let x = Chunk73800.memo(function(e) {
     location: "63250c_1"
   }, {
     autoTrackExposure: false
-  }).enabled && !n && !l && _ && O && t.isVocalThread()) ? (0, r.jsx)(m.ZP.Icon, {
+  }).enabled && !n && !l && j && O && t.isVocalThread()) ? (0, r.jsx)(m.ZP.Icon, {
     icon: o.Csw,
     onClick: v,
     tooltip: x ? y.intl.string(y.t.fdEeb2) : y.intl.string(y.t.focH1t)

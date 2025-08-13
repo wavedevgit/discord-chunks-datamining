@@ -747,8 +747,8 @@ class ts extends Chunk73800.PureComponent {
       let b = t.isDM() && !t.isSystemDM() ? this.openUserProfile : p ? () => (0, ex.Kh)(t.id) : true,
         y = (null == i ? true : i.guild_id) != null && (null == i ? true : i.id) != null ? this.handleTitleParentClick : true,
         x = u || d,
-        _ = c || x,
-        j = !_ || false === e && !x;
+        j = c || x,
+        _ = !j || false === e && !x;
       return (0, r.jsxs)("div", {
         className: tn.subtitleContainer,
         children: [(0, r.jsx)(m.f6W, {
@@ -757,15 +757,15 @@ class ts extends Chunk73800.PureComponent {
             guildId: s,
             channelId: t.id,
             channelType: t.type,
-            hideSearch: t.isDirectory() || f && !(0, e_.X$)(),
-            showDivider: f && !(0, e_.X$)(),
+            hideSearch: t.isDirectory() || f && !(0, ej.X$)(),
+            showDivider: f && !(0, ej.X$)(),
             toolbar: this.renderHeaderToolbar(),
             mobileToolbar: this.renderMobileToolbar(),
             className: a()(tn.title, e, {
               [tn.gdm]: t.type === e8.d4z.GROUP_DM
             }),
-            transparent: _,
-            showToolbar: j,
+            transparent: j,
+            showToolbar: _,
             "aria-label": tt.intl.string(tt.t.BIYAqa),
             children: [p && (0, r.jsx)(es.TS, {
               channel: t,
@@ -804,8 +804,8 @@ let to = (0, Chunk112724.Z)(ts),
     let {
       providedChannel: n
     } = e, [l, a] = i.useState(null), s = (0, h.e7)([ez.Z], () => ez.Z.getChannelId()), o = (0, h.e7)([ez.Z], () => ez.Z.getVoiceChannelId()), c = (0, h.e7)([eU.Z], () => null != n ? n : eU.Z.getChannel(s), [s, n]), g = (0, h.e7)([eU.Z], () => eU.Z.getChannel(o), [o]), m = null == c ? true : c.parent_id, y = (0, h.e7)([eU.Z], () => eU.Z.getChannel(m), [m]), x = (0, h.e7)([eB.Z], () => eB.Z.getGuild(null == c ? true : c.guild_id), [c]), {
-      needSubscriptionToAccess: _
-    } = (0, X.Z)(null != (t = null == c ? true : c.id) ? t : true), j = (0, h.e7)([A.Z], () => {
+      needSubscriptionToAccess: j
+    } = (0, X.Z)(null != (t = null == c ? true : c.id) ? t : true), _ = (0, h.e7)([A.Z], () => {
       let e = null != s ? A.Z.getParticipants(s) : [],
         t = null != s ? A.Z.getActivityParticipants(s) : [];
       return e.length - t.length > 0
@@ -823,7 +823,7 @@ let to = (0, Chunk112724.Z)(ts),
       k = (0, h.e7)([I.ZP], () => I.ZP.getActivityPanelMode()),
       L = null != D && !(0, P.Z)(null == c ? true : c.id) && k === e5.Ez.PANEL,
       M = (0, h.e7)([eK.Z], () => null != c && c.isVocalThread() && !u().isEmpty(eK.Z.getVoiceStatesForChannel(c.id)), [c]),
-      U = null != c && c.isPrivate() && !L && j,
+      U = null != c && c.isPrivate() && !L && _,
       F = (null == c ? true : c.isGuildVocal()) || U || M,
       G = (0, h.e7)([W.Z], () => W.Z.getFrameLayoutMode() === e6.U.FOCUSED),
       {
@@ -880,15 +880,15 @@ let to = (0, Chunk112724.Z)(ts),
     let eh = (0, E.ts)(c),
       eb = null != c && c.isPrivate(),
       ex = (0, S.Z)(eb),
-      e_ = (0, S.Z)(null == c ? true : c.id);
+      ej = (0, S.Z)(null == c ? true : c.id);
     i.useEffect(() => {
       let e = ex && !eb,
-        t = ex && eb && (null == c ? true : c.id) !== e_;
+        t = ex && eb && (null == c ? true : c.id) !== ej;
       (e || t) && (0, H.Q3)(p.z.ACTIVITY_GDM_CALL_TOOLTIP, {
         dismissAction: e4.L.AUTO
       })
-    }, [null == c ? true : c.id, e_, eb, ex]);
-    let ej = (0, f.f9)();
+    }, [null == c ? true : c.id, ej, eb, ex]);
+    let e_ = (0, f.f9)();
     return (0, r.jsx)(to, tl(ti({
       guildId: null == c ? true : c.guild_id,
       channelId: s,
@@ -898,14 +898,14 @@ let to = (0, Chunk112724.Z)(ts),
       parentChannel: y,
       voiceChannel: g,
       layout: q,
-      needSubscriptionToAccess: _,
+      needSubscriptionToAccess: j,
       isLurking: z,
-      hasModalOpen: ej,
+      hasModalOpen: e_,
       section: ee,
       channelSidebarState: et,
       guildSidebarState: er,
       guild: x,
-      showCall: !_ && F,
+      showCall: !j && F,
       showActivityPanel: L,
       showFramePanel: G,
       nsfwAgree: (0, h.e7)([eG.Z], () => eG.Z.didAgree(null == c ? true : c.guild_id)),

@@ -46,7 +46,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function j(e) {
   }
   return e
 }
-let k = "???",
+let j = "???",
   U = e => {
     let {
       analyticsLocations: t
@@ -69,15 +69,15 @@ let k = "???",
       let {
         default: e
       } = await Promise.all([n.e("83667"), n.e("67825")]).then(n.bind(n, 656139));
-      return t => (0, r.jsx)(e, j({}, t))
+      return t => (0, r.jsx)(e, k({}, t))
     })
   };
 class G extends Chunk73800.Component {
   getTitleText() {
     let e = Chunk594174.default.getUser(this.trialOffer.user_id),
-      t = null != module ? module.username : k,
+      t = null != module ? module.username : j,
       n = Chunk594174.default.getUser(this.trialOffer.referrer_id),
-      r = null != require ? require.username : k;
+      r = null != require ? require.username : j;
     return this.recipientHasNitro && true === this.trialOffer.redeemed_at ? Chunk388032.intl.formatToPlainString(Chunk388032.t.Mptau7, {
       username: exports
     }) : this.offerExpired ? this.isSender ? Chunk388032.intl.string(Chunk388032.t["9SNdf3"]) : Chunk388032.intl.formatToPlainString(Chunk388032.t["H0+MxM"], {

@@ -4,7 +4,8 @@
 require.d(exports, {
   Gc: () => c,
   UX: () => l,
-  ad: () => s
+  ad: () => s,
+  wn: () => u
 });
 var Chunk818083 = require("./818083.js"),
   Chunk154579 = require("./154579.js");
@@ -80,6 +81,24 @@ function c(e) {
   }), {
     inExperiment: o
   } = a.useExperiment({
+    location: t
+  }, {
+    autoTrackExposure: n,
+    disable: r
+  });
+  return o
+}
+
+function u(e) {
+  let {
+    location: t,
+    autoTrackExposure: n = true
+  } = e, r = (0, i.ro)({
+    location: t,
+    autoTrackExposure: n
+  }), {
+    inExperiment: o
+  } = a.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n,

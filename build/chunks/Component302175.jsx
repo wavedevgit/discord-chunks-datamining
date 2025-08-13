@@ -58,7 +58,7 @@ function M(e) {
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,8 +69,8 @@ function j(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -82,7 +82,7 @@ function U(e) {
     onClose: o
   } = e, {
     analyticsLocations: u
-  } = (0, m.ZP)(), d = (0, I.g1)(t, "GuildPowerupMarketingPowerupCard"), y = n.skuId === c.A$, O = (0, A.ZP)(t, n).type !== C.A3.INACTIVE, v = (0, S.Z)(t), [x, j] = i.useState(false), [U, G] = i.useState(false), B = U, Z = i.useCallback(() => {
+  } = (0, m.ZP)(), d = (0, I.g1)(t, "GuildPowerupMarketingPowerupCard"), y = n.skuId === c.A$, O = (0, A.ZP)(t, n).type !== C.A3.INACTIVE, v = (0, S.Z)(t), [x, k] = i.useState(false), [U, G] = i.useState(false), B = U, Z = i.useCallback(() => {
     let e = b.Z.getGuild(t);
     null != e && (0, g.u)({
       analyticsLocation: {
@@ -111,7 +111,7 @@ function U(e) {
     transform: B ? "translateY(0)" : "translateY(20px)",
     config: V
   }), K = i.useCallback(e => {
-    e && j(true)
+    e && k(true)
   }, []), z = (0, p.O)(K), q = (0, T.Z)(n, U);
   return (0, r.jsxs)("div", {
     className: a()(L.topPerksCard, L.animatedTopPerksCard, D.powerupCard, {
@@ -131,7 +131,7 @@ function U(e) {
         style: H
       })
     }), (0, r.jsxs)(s.animated.div, {
-      style: k(M({}, Y), {
+      style: j(M({}, Y), {
         transform: Y.y.to(e => "translateY(".concat(e, "px)"))
       }),
       className: a()(L.contentContainer, D.contentContainer),

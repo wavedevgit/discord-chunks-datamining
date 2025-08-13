@@ -73,8 +73,8 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = 190,
-  k = 178,
+let k = 190,
+  j = 178,
   U = "MESSAGE_CONFETTI_POTION_MODAL_KEY",
   G = e => {
     let {
@@ -435,8 +435,8 @@ let F = e => {
       className: Chunk508242.error,
       children: [(0, Chunk255367.jsx)(Chunk481060.Eep, {
         src: Chunk99713,
-        width: k,
-        height: j
+        width: j,
+        height: k
       }), (0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t.oKJdSk)

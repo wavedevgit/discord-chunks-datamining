@@ -100,7 +100,7 @@ function N(e) {
     entry: t
   } = e, [l, s] = i.useState(false), o = i.useRef(null), {
     canEdit: u
-  } = (0, j.Z)(t);
+  } = (0, _.Z)(t);
   return (0, r.jsx)("div", {
     className: a()(E.actionButtonsContainer, {
       [E.forceButtonsShow]: l
@@ -172,10 +172,10 @@ let R = e => {
   var t;
   let {
     entry: l
-  } = e, [a, p] = i.useState(false), j = null != (0, s.e7)([y.Z], () => y.Z.getGuild(l.guildId)), O = async () => {
+  } = e, [a, p] = i.useState(false), _ = null != (0, s.e7)([y.Z], () => y.Z.getGuild(l.guildId)), O = async () => {
     p(true);
     try {
-      j ? (0, b.X)(l.guildId) : await d.Z.joinGuild(l.guildId, {
+      _ ? (0, b.X)(l.guildId) : await d.Z.joinGuild(l.guildId, {
         source: v.vtS.DIRECTORY_ENTRY
       })
     } finally {
@@ -190,7 +190,7 @@ let R = e => {
     icon: l.icon,
     size: 40
   })) ? t : true, T = C.intl.string(C.t.VJlc0d);
-  return j && (T = C.intl.string(C.t.cqWE2d)), (0, r.jsxs)("div", {
+  return _ && (T = C.intl.string(C.t.cqWE2d)), (0, r.jsxs)("div", {
     className: E.card,
     onContextMenu: e => {
       (0, u.jW)(e, async () => {
@@ -222,7 +222,7 @@ let R = e => {
             children: (0, r.jsx)(f.Z, {
               className: E.icon,
               iconSrc: P,
-              guild: (0, _.e)(l),
+              guild: (0, j.e)(l),
               size: f.Z.Sizes.MEDIUM,
               active: true
             })
@@ -276,7 +276,7 @@ let R = e => {
       }), (0, r.jsx)(o.zx, {
         submitting: a,
         className: E.joinButton,
-        color: j ? o.zx.Colors.PRIMARY : o.zx.Colors.GREEN,
+        color: _ ? o.zx.Colors.PRIMARY : o.zx.Colors.GREEN,
         onClick: O,
         children: T
       })]

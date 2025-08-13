@@ -83,21 +83,21 @@ function b(e) {
       checked: T,
       action: L
     }) : null,
-    j = !S || y || w ? null : (0, r.jsx)(a.sNh, {
+    k = !S || y || w ? null : (0, r.jsx)(a.sNh, {
       id: "change-windows",
       label: O ? E.intl.string(E.t.eAktHh) : E.intl.string(E.t.qntSam),
       icon: a.hGI,
       action: D
     }),
-    k = (0, r.jsx)(a.sNh, {
+    j = (0, r.jsx)(a.sNh, {
       id: "stop-streaming",
       label: E.intl.string(E.t.S5anIS),
       icon: a.g5r,
       action: () => (0, c.Z)(t)
     });
   return O ? (0, r.jsxs)(r.Fragment, {
-    children: [k, j, x, M]
+    children: [j, k, x, M]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [x, b ? R : null, M, j, k]
+    children: [x, b ? R : null, M, k, j]
   })
 }

@@ -50,12 +50,12 @@ let v = Chunk73800.memo(function(e) {
     location: "useDisplayNameStylesFont"
   }), D = (0, m.Y)({
     location: "UserNameWithEffects"
-  }), L = (0, f.dQu)(f.TVs.colors.BACKGROUND_BASE_LOW).hex(), x = (0, b.R)(null != (t = null == o ? true : o.effectId) ? t : c.m.SOLID), M = (0, f.qgQ)(n), j = (0, d.EJ)(M, (null == o ? true : o.effectId) === c.m.TOON ? O.emoji : true), k = i.useMemo(() => null != o && D ? o.colors.map(e => {
+  }), L = (0, f.dQu)(f.TVs.colors.BACKGROUND_BASE_LOW).hex(), x = (0, b.R)(null != (t = null == o ? true : o.effectId) ? t : c.m.SOLID), M = (0, f.qgQ)(n), k = (0, d.EJ)(M, (null == o ? true : o.effectId) === c.m.TOON ? O.emoji : true), j = i.useMemo(() => null != o && D ? o.colors.map(e => {
     let t = a()(e);
     return P && (t = t.desaturate(1 - R)), (0, p.aP)(t.hex(), (null == o ? true : o.effectId) === c.m.TOON ? "#333" : L, x.minContrastRatio)
   }) : [], [o, D, P, R, L, x]);
   if (!D || !v && !w || null == o) return n;
-  let U = (0, E.K)(o.effectId, k, {
+  let U = (0, E.K)(o.effectId, j, {
       shouldWrap: A
     }),
     G = I(o.effectId);
@@ -70,7 +70,7 @@ let v = Chunk73800.memo(function(e) {
     children: [(0, r.jsx)("span", {
       "data-username-with-effects": M,
       className: l()(O.innerContainer, null == G ? true : G.effectClassName),
-      children: j
+      children: k
     }), (null == G ? true : G.glowClassName) != null && (0, r.jsx)("span", {
       className: l()(O.glowContainer, O.innerContainer, G.glowClassName),
       "aria-hidden": true,

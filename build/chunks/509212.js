@@ -144,12 +144,12 @@ function M(e, t) {
   return n
 }
 
-function j(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = 2592e6,
+let j = 2592e6,
   U = new Set([Chunk34738.n.PREMIUM_EXTENSION, Chunk34738.n.PREMIUM_PERMANENT]);
 
 function G(e) {
@@ -196,7 +196,7 @@ function W(e) {
 
 function K(e) {
   if (!W(e)) returnfalse;
-  let t = Date.now() - k,
+  let t = Date.now() - j,
     n = new Date(e.config.expiresAt).valueOf();
   return null != e.config.expiresAt && !(n <= t)
 }
@@ -489,8 +489,8 @@ function ev(e, t) {
 }
 
 function eI(e, t) {
-  O.Z.captureException(e, j(x({}, t), {
-    tags: j(x({}, null == t ? true : t.tags), {
+  O.Z.captureException(e, k(x({}, t), {
+    tags: k(x({}, null == t ? true : t.tags), {
       app_context: "quests"
     })
   }))
@@ -582,12 +582,12 @@ let eM = (e, t) => {
       sourceQuestContent: t.sourceQuestContent
     }), (0, m.JG)(es(e))
   },
-  ej = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
-  ek = e => e6(e) || T.Z.isProgressingOnDesktop(e.id),
+  ek = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
+  ej = e => e6(e) || T.Z.isProgressingOnDesktop(e.id),
   eU = (e, t) => {
     var n, r, o, a;
     let s = null == (a = e.userStatus) || null == (o = a.progress) || null == (r = o[t.type]) || null == (n = r.heartbeat) ? true : n.lastBeatAt;
-    if (null == s || !ek(e)) return 0;
+    if (null == s || !ej(e)) return 0;
     let l = Date.now() - new Date(s).valueOf();
     return (0, i.floor)(l / E.Z.Millis.SECOND, 2)
   },
@@ -623,7 +623,7 @@ let eM = (e, t) => {
       progressSeconds: d,
       targetSeconds: u,
       targetMinutes: Math.ceil(u / E.Z.Seconds.MINUTE),
-      percentComplete: ej(u, d),
+      percentComplete: ek(u, d),
       taskType: l
     }
   },
@@ -690,7 +690,7 @@ function eW(e) {
   let o = N.r.build(e.config).defaultInGameTask;
   if (null == o) return null;
   let a = null != (i = null == (r = e.userStatus) || null == (n = r.progress) || null == (t = n[o.eventName]) ? true : t.value) ? i : 0,
-    s = ej(o.target, a);
+    s = ek(o.target, a);
   return {
     title: o.messages.taskTitle,
     description: o.messages.taskDescription,

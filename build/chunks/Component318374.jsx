@@ -103,7 +103,7 @@ function v(e) {
     "aria-label": L,
     "aria-labelledby": x,
     "aria-hidden": M
-  } = e, [j, k] = i.useState(false), U = y(v), G = i.useRef(null), B = t.length - o, Z = B + 1, F = B > 0 && !A && !M, V = () => (0, r.jsx)(c.VqE, {
+  } = e, [k, j] = i.useState(false), U = y(v), G = i.useRef(null), B = t.length - o, Z = B + 1, F = B > 0 && !A && !M, V = () => (0, r.jsx)(c.VqE, {
     className: h.popoutWrapper,
     "aria-label": L,
     "aria-labelledby": x,
@@ -117,7 +117,7 @@ function v(e) {
         disablePopout: "function" == typeof C ? C(e.id) : C,
         onClick: w,
         onPopoutRequestClose: () => {
-          k(false), null == D || D()
+          j(false), null == D || D()
         },
         onContextMenu: t => (0, u.jW)(t, async () => {
           let {
@@ -129,7 +129,7 @@ function v(e) {
             channelId: m
           }))
         }, {
-          onClose: () => k(false)
+          onClose: () => j(false)
         })
       }, e.id))
     })
@@ -173,15 +173,15 @@ function v(e) {
     return (0, r.jsx)(c.yRy, {
       targetElementRef: G,
       renderPopout: V,
-      shouldShow: j,
+      shouldShow: k,
       position: "bottom",
-      onRequestClose: () => k(false),
+      onRequestClose: () => j(false),
       children: t => (0, r.jsx)(c.P3F, b(g({}, t), {
         innerRef: G,
         className: a()(h.overflow, U, S),
         onFocus: P,
         onClick: e => {
-          null == R || R(e), k(true)
+          null == R || R(e), j(true)
         },
         "aria-label": p.intl.formatToPlainString(p.t.R8Z8Qk, {
           count: Z

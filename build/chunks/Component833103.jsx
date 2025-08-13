@@ -2,7 +2,7 @@
 /** chunk id: 833103, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ek: () => P,
-  HJ: () => j,
+  HJ: () => _,
   LE: () => T,
   Z2: () => E,
   Zc: () => O,
@@ -58,7 +58,7 @@ function x(e, t) {
   }), e
 }
 
-function _(e) {
+function j(e) {
   let {
     user: t,
     guildId: n,
@@ -71,7 +71,7 @@ function _(e) {
   }
 }
 
-function j(e, t) {
+function _(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
     r = i.useMemo(() => (0, f.s5)(e), [e]),
     l = i.useMemo(() => (0, f.AH)(e), [e]),
@@ -84,7 +84,7 @@ function j(e, t) {
         s = new Set;
       return n.length > 0 && n.forEach(e => {
         let t = e.user,
-          n = _({
+          n = j({
             user: t,
             guildId: r,
             channelId: l
@@ -94,7 +94,7 @@ function j(e, t) {
         if (s.has(e)) return;
         let t = d.default.getUser(e);
         if (null == t) return;
-        let n = _({
+        let n = j({
           user: t,
           guildId: r,
           channelId: l
@@ -309,10 +309,10 @@ function I() {
         }), n
       })
     }, []),
-    _ = Chunk73800.useCallback(() => {
+    j = Chunk73800.useCallback(() => {
       require(e => [...e, h()])
     }, [Chunk5192]),
-    j = Chunk73800.useCallback(e => {
+    _ = Chunk73800.useCallback(e => {
       n(t => {
         let n = [...t];
         return n.splice(e, 1), n
@@ -334,8 +334,8 @@ function I() {
     validDates: Chunk913527,
     handleDateQueryChange: Chunk607802,
     handleDateChange: Chunk532428,
-    handleAddDateFilter: _,
-    handleRemoveDateFilter: j,
+    handleAddDateFilter: j,
+    handleRemoveDateFilter: _,
     handleClearDateFilter: O,
     getDateQueryString: v
   }
@@ -384,18 +384,18 @@ function Z(e) {
         case m.dCx.ANSWER_BEFORE:
           let y = i[m.dCx.FILTER_BEFORE],
             x = e.getData("end"),
-            _ = s()(x);
+            j = s()(x);
           y.push({
             query: t,
-            date: _,
+            date: j,
             id: (0, o.Z)()
           });
           break;
         case m.dCx.ANSWER_ON:
-          let j = i[m.dCx.FILTER_ON],
+          let _ = i[m.dCx.FILTER_ON],
             O = e.getData("start"),
             v = s()(O);
-          j.push({
+          _.push({
             query: r,
             date: v,
             id: (0, o.Z)()

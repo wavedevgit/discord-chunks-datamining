@@ -1,7 +1,7 @@
 /** Chunk was on 21087 **/
 /** chunk id: 570096, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => j
+  N: () => _
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -42,7 +42,7 @@ let x = e => {
       })]
     })
   },
-  _ = e => {
+  j = e => {
     let {
       user: t,
       markAsDismissed: n
@@ -68,13 +68,13 @@ let x = e => {
     })
   };
 
-function j(e) {
+function _(e) {
   let {
     children: t
   } = e, n = [a.z.LEADERBOARD_NUX_COACHMARK], [s, c] = (0, u.US)(n, true), d = (0, l.e7)([h.default], () => h.default.getCurrentUser()), p = i.useRef(null);
   return s !== a.z.LEADERBOARD_NUX_COACHMARK || null == d ? t : (0, r.jsx)(o.yRy, {
     targetElementRef: p,
-    renderPopout: () => _({
+    renderPopout: () => j({
       user: d,
       markAsDismissed: c
     }),

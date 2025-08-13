@@ -38,7 +38,7 @@ var r, i, Chunk255367 = require("./255367.js"),
   Chunk413284 = require("./413284.js"),
   Chunk794287 = require("./794287.js");
 
-function k(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,7 +54,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -266,11 +266,11 @@ class X extends(r = Chunk73800.Component) {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "state", {
+    super(...e), j(this, "state", {
       translateY: new d.Z.Value(0)
-    }), k(this, "volumeButton", true), k(this, "durationBar", true), k(this, "setDurationRef", e => {
+    }), j(this, "volumeButton", true), j(this, "durationBar", true), j(this, "setDurationRef", e => {
       this.durationBar = e
-    }), k(this, "setVolumeButtonRef", e => {
+    }), j(this, "setVolumeButtonRef", e => {
       this.volumeButton = e
     })
   }
@@ -307,7 +307,7 @@ function Q(e) {
     })]
   })
 }
-k(X, "defaultProps", {
+j(X, "defaultProps", {
   disabled: false
 });
 class J extends Chunk73800.Component {
@@ -348,11 +348,11 @@ class J extends Chunk73800.Component {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "state", {
+    super(...e), j(this, "state", {
       play: false,
       scale: new d.Z.Value(0),
       opacity: new d.Z.Value(0)
-    }), k(this, "popAnimation", () => {
+    }), j(this, "popAnimation", () => {
       let {
         opacity: e,
         scale: t
@@ -418,7 +418,7 @@ class ee {
     this.playTimeSec += Math.max((null != (t = this.lastPlayingTime) ? t : e) - (null != (n = this.playbackStartTime) ? n : 0), 0), this.playWallTimeMs += this.timeInState()
   }
   constructor(e) {
-    k(this, "metadata", true), k(this, "playTimeSec", 0), k(this, "playWallTimeMs", 0), k(this, "firstPlayWaitingMs", 0), k(this, "stallCount", 0), k(this, "stallMs", 0), k(this, "seekCount", 0), k(this, "seekWaitingMs", 0), k(this, "errorMessage", null), k(this, "errorCode", null), k(this, "stateTime", performance.now()), k(this, "currentState", "not_started"), k(this, "playbackStartTime", true), k(this, "lastPlayingTime", true), k(this, "analyticsEnabled", true), k(this, "onWaiting", e => {
+    j(this, "metadata", true), j(this, "playTimeSec", 0), j(this, "playWallTimeMs", 0), j(this, "firstPlayWaitingMs", 0), j(this, "stallCount", 0), j(this, "stallMs", 0), j(this, "seekCount", 0), j(this, "seekWaitingMs", 0), j(this, "errorMessage", null), j(this, "errorCode", null), j(this, "stateTime", performance.now()), j(this, "currentState", "not_started"), j(this, "playbackStartTime", true), j(this, "lastPlayingTime", true), j(this, "analyticsEnabled", true), j(this, "onWaiting", e => {
       switch (this.currentState) {
         case "not_started":
           this.moveToState("not_started_waiting");
@@ -437,7 +437,7 @@ class ee {
         default:
           (0, _.UT)(this.currentState)
       }
-    }), k(this, "onSeeking", e => {
+    }), j(this, "onSeeking", e => {
       switch (this.currentState) {
         case "seeking":
         case "seeked":
@@ -457,7 +457,7 @@ class ee {
           (0, _.UT)(this.currentState)
       }
       this.seekCount += 1, this.moveToState("seeking")
-    }), k(this, "onSeeked", e => {
+    }), j(this, "onSeeked", e => {
       switch (this.currentState) {
         case "seeking":
         case "seeked":
@@ -473,7 +473,7 @@ class ee {
         default:
           (0, _.UT)(this.currentState)
       }
-    }), k(this, "onPause", e => {
+    }), j(this, "onPause", e => {
       switch (this.currentState) {
         case "playing":
           this.updatePlayTime(e.currentTarget.currentTime), this.moveToState("paused"), this.sendEvent();
@@ -492,9 +492,9 @@ class ee {
         default:
           (0, _.UT)(this.currentState)
       }
-    }), k(this, "onError", e => {
+    }), j(this, "onError", e => {
       this.moveToState("paused"), this.sendEvent()
-    }), k(this, "onPlaying", e => {
+    }), j(this, "onPlaying", e => {
       switch (this.currentState) {
         case "playing":
           return;
@@ -517,7 +517,7 @@ class ee {
           (0, _.UT)(this.currentState)
       }
       this.playbackStartTime = e.currentTarget.currentTime, this.moveToState("playing")
-    }), k(this, "onTimeUpdate", e => {
+    }), j(this, "onTimeUpdate", e => {
       switch (this.currentState) {
         case "playing":
           this.lastPlayingTime = e.currentTarget.currentTime;
@@ -532,9 +532,9 @@ class ee {
         default:
           (0, _.UT)(this.currentState)
       }
-    }), k(this, "onDragStart", e => {
+    }), j(this, "onDragStart", e => {
       null != e && (this.lastPlayingTime = e)
-    }), k(this, "onLoadedMetadata", e => {
+    }), j(this, "onLoadedMetadata", e => {
       this.metadata.fileDurationSec = e.currentTarget.duration
     }), this.metadata = e, this.analyticsEnabled = $.getCurrentConfig({
       location: "media_player"
@@ -912,7 +912,7 @@ class et extends(i = Chunk73800.PureComponent) {
   }
   constructor(e) {
     var t, n;
-    super(e), t = this, k(this, "_unmounted", false), k(this, "_lastMove", 0), k(this, "_analytics", true), k(this, "mediaRef", a.createRef()), k(this, "controlsRef", a.createRef()), k(this, "playPausePopRef", a.createRef()), k(this, "handleFullScreenExit", () => {
+    super(e), t = this, j(this, "_unmounted", false), j(this, "_lastMove", 0), j(this, "_analytics", true), j(this, "mediaRef", a.createRef()), j(this, "controlsRef", a.createRef()), j(this, "playPausePopRef", a.createRef()), j(this, "handleFullScreenExit", () => {
       let {
         current: e
       } = this.mediaRef;
@@ -921,30 +921,30 @@ class et extends(i = Chunk73800.PureComponent) {
       null != t && (0, S.rB)(t, null == t ? true : t.ownerDocument) || this.setState({
         fullscreen: false
       })
-    }), k(this, "toggleFullscreen", () => {
+    }), j(this, "toggleFullscreen", () => {
       let e = !this.state.fullscreen;
       this.setState({
         fullscreen: e
       })
-    }), k(this, "setMuted", e => {
+    }), j(this, "setMuted", e => {
       this.setState({
         muted: e
       })
-    }), k(this, "toggleMuted", () => {
+    }), j(this, "toggleMuted", () => {
       this.setMuted(!this.state.muted)
-    }), k(this, "setTime", function(e) {
+    }), j(this, "setTime", function(e) {
       let n = !(arguments.length > 1) || true === arguments[1] || arguments[1],
         {
           current: r
         } = t.mediaRef;
       null != r && isFinite(r.duration) && isFinite(r.currentTime) && (r.currentTime = e, t.updateValue(e / r.duration, n), t.updateTime(e, r.duration))
-    }), k(this, "handleUIUpdate", () => {
+    }), j(this, "handleUIUpdate", () => {
       if (!this.state.playing || this._unmounted) return;
       let {
         current: e
       } = this.mediaRef;
       null != e && (e.duration > 0 && this.updateValue(e.currentTime / e.duration), this.updateTime(e.currentTime, e.duration), this.updateControlsVisibility(), requestAnimationFrame(this.handleUIUpdate))
-    }), k(this, "handleDrag", (e, t) => {
+    }), j(this, "handleDrag", (e, t) => {
       let {
         current: n
       } = this.mediaRef;
@@ -961,7 +961,7 @@ class et extends(i = Chunk73800.PureComponent) {
           volume: t
         })
       }
-    }), k(this, "handleLoaded", e => {
+    }), j(this, "handleLoaded", e => {
       this._analytics.onLoadedMetadata(e);
       let {
         current: t
@@ -971,14 +971,14 @@ class et extends(i = Chunk73800.PureComponent) {
         currentTime: t.currentTime,
         duration: t.duration
       }))
-    }), k(this, "handleDurationChange", () => {
+    }), j(this, "handleDurationChange", () => {
       let {
         current: e
       } = this.mediaRef;
       null != e && (this.updateTime(e.currentTime, e.duration), this.setState({
         duration: e.duration
       }))
-    }), k(this, "handleBuffer", u().debounce(() => {
+    }), j(this, "handleBuffer", u().debounce(() => {
       let {
         current: e
       } = this.mediaRef;
@@ -988,7 +988,7 @@ class et extends(i = Chunk73800.PureComponent) {
       this.setState({
         buffers: z(e)
       })
-    }, 400)), k(this, "handleEnded", e => {
+    }, 400)), j(this, "handleEnded", e => {
       let {
         onEnded: t
       } = this.props;
@@ -996,19 +996,19 @@ class et extends(i = Chunk73800.PureComponent) {
         playing: false,
         hideControls: false
       })
-    }), k(this, "handleMouseMove", () => {
+    }), j(this, "handleMouseMove", () => {
       this._lastMove = Date.now()
-    }), k(this, "handleMouseLeave", () => {
+    }), j(this, "handleMouseLeave", () => {
       this.state.playing && (this._lastMove = 0), this.setState({
         hovering: false
       })
-    }), k(this, "handleMouseEnter", () => {
+    }), j(this, "handleMouseEnter", () => {
       "none" === this.state.preload && this.setState({
         preload: "metadata"
       }), this.setState({
         hovering: true
       })
-    }), k(this, "handleVideoClick", e => {
+    }), j(this, "handleVideoClick", e => {
       let {
         state: {
           hasClickedPlay: t,
@@ -1025,7 +1025,7 @@ class et extends(i = Chunk73800.PureComponent) {
         muted: false,
         hasClickedPlay: true
       }) : this.setPlay(!this.state.playing)
-    }), k(this, "setPlay", e => {
+    }), j(this, "setPlay", e => {
       let {
         props: {
           autoMute: t
@@ -1043,16 +1043,16 @@ class et extends(i = Chunk73800.PureComponent) {
         playing: false,
         hideControls: false
       }))
-    }), k(this, "handleDragStart", e => {
+    }), j(this, "handleDragStart", e => {
       var t, n;
       this.setState({
         dragging: e
       }), this._analytics.onDragStart(null != (n = null == (t = this.mediaRef.current) ? true : t.currentTime) ? n : null)
-    }), k(this, "handleDragEnd", () => {
+    }), j(this, "handleDragEnd", () => {
       this.setState({
         dragging: null
       }), this._lastMove = Date.now()
-    }), k(this, "handleKeyDown", e => {
+    }), j(this, "handleKeyDown", e => {
       let {
         current: t
       } = this.mediaRef, {
@@ -1090,7 +1090,7 @@ class et extends(i = Chunk73800.PureComponent) {
           this.setTime(n)
         }
       }
-    }), k(this, "handleError", e => {
+    }), j(this, "handleError", e => {
       var t, n, r, i;
       let o = e.currentTarget;
       this._analytics.errorCode = null != (r = null == (t = o.error) ? true : t.code) ? r : null, this._analytics.errorMessage = null != (i = null == (n = o.error) ? true : n.message) ? i : null, this._analytics.onError(e)
@@ -1124,7 +1124,7 @@ class et extends(i = Chunk73800.PureComponent) {
     }
   }
 }
-k(et, "Types", Y), k(et, "defaultProps", {
+j(et, "Types", Y), j(et, "defaultProps", {
   width: 400,
   height: 300,
   forceExternal: false,
@@ -1133,5 +1133,5 @@ k(et, "Types", Y), k(et, "defaultProps", {
   autoPlay: false,
   autoMute: false,
   volume: 1
-}), k(et, "minWidth", 150), k(et, "minHeight", 110);
+}), j(et, "minWidth", 150), j(et, "minHeight", 110);
 let en = et

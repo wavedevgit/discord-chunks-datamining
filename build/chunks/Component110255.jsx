@@ -24,7 +24,7 @@ function p(e) {
     label: g,
     location: m,
     includeGuildMute: b
-  } = e, y = (0, s.c)(t), x = (0, o.EQ)(t), _ = (0, i.e7)([h.Z], () => h.Z.getGuild(t.guild_id)), j = (0, c.Z)(_), O = (0, u.Mn)("ChannelNotificationSettingsPopoutMenu") && d.$N.has(t.type);
+  } = e, y = (0, s.c)(t), x = (0, o.EQ)(t), j = (0, i.e7)([h.Z], () => h.Z.getGuild(t.guild_id)), _ = (0, c.Z)(j), O = (0, u.Mn)("ChannelNotificationSettingsPopoutMenu") && d.$N.has(t.type);
   return (0, r.jsxs)(l.v2r, {
     navId: f,
     onClose: n,
@@ -33,7 +33,7 @@ function p(e) {
     children: [(0, r.jsx)(l.kSQ, {
       children: (0, a.ZP)(t, m)
     }), b ? (0, r.jsx)(l.kSQ, {
-      children: j
+      children: _
     }) : null, O ? x : (0, r.jsx)(l.kSQ, {
       children: y
     })]

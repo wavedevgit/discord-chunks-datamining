@@ -143,7 +143,7 @@ let N = function(e) {
       action: "dismissed"
     }))
   }));
-  let j = e => {
+  let k = e => {
     e.preventDefault();
     let r = R !== N,
       i = true !== w;
@@ -162,7 +162,7 @@ let N = function(e) {
   return null == T ? null : (0, r.jsx)(_.Gt, {
     value: x,
     children: (0, r.jsx)("form", {
-      onSubmit: j,
+      onSubmit: k,
       children: (0, r.jsx)(l.Modal, {
         title: y.intl.string(y.t["5Q9+/P"]),
         actions: [{

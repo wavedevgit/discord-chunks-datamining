@@ -228,8 +228,8 @@ function et(e) {
     _ = i.useMemo(() => ee(o.text), [o.text]).map(e => {
       let t = e.getFullMatch();
       if ("" === t.trim()) return null;
-      let n = k.TNx.test(e.type),
-        i = k.KA4.test(e.type),
+      let n = j.TNx.test(e.type),
+        i = j.KA4.test(e.type),
         o = !n && !i;
       return f += t, (0, r.jsx)("span", {
         className: a()(G.searchHistoryRow, {
@@ -317,7 +317,7 @@ let en = {
         className: G.searchLearnMore
       }, e), {
         children: (0, r.jsx)(p.eee, {
-          href: A.Z.getArticleURL(k.BhN.USING_SEARCH),
+          href: A.Z.getArticleURL(j.BhN.USING_SEARCH),
           title: U.intl.string(U.t.hvVgAQ),
           children: (0, r.jsx)(p.idN, {
             size: "md",
@@ -335,10 +335,10 @@ let en = {
           searchContext: l
         } = e,
         c = H(e, ["result", "onSelect", "onFocus", "showFilter", "searchContext"]);
-      let u = n.token === k.dCx.FILTER_AUTHOR_TYPE ? [_.z.SEARCH_AUTHOR_TYPE_FILTER_NEW_BADGE] : [],
+      let u = n.token === j.dCx.FILTER_AUTHOR_TYPE ? [_.z.SEARCH_AUTHOR_TYPE_FILTER_NEW_BADGE] : [],
         [d, f] = (0, E.US)(u),
         h = d === _.z.SEARCH_AUTHOR_TYPE_FILTER_NEW_BADGE,
-        m = (0, g.Sl)(k.Ilk.BRAND_500).hex,
+        m = (0, g.Sl)(j.Ilk.BRAND_500).hex,
         b = (0, P.Ko)(null != (t = n.token) ? t : "");
       return (0, r.jsxs)(p.P3F, V(Z({
         className: a()(G.option, G.searchOption),
@@ -375,7 +375,7 @@ class er extends Chunk73800.PureComponent {
     } = n, {
       resultsState: o
     } = e;
-    null != i.filter && null == o.mode.filter && r > 0 ? this.setSelectedIndex(0) : i.type === k.Sap.FILTER_ALL && o.mode.type !== i.type ? this.setSelectedIndex(false) : this.keepCurrentOptionSelected(e, t)
+    null != i.filter && null == o.mode.filter && r > 0 ? this.setSelectedIndex(0) : i.type === j.Sap.FILTER_ALL && o.mode.type !== i.type ? this.setSelectedIndex(false) : this.keepCurrentOptionSelected(e, t)
   }
   setSelectedIndex(e) {
     this.setState({
@@ -429,13 +429,13 @@ class er extends Chunk73800.PureComponent {
         searchQuery: x.Z.getSearchResultsQuery(t),
         searchQueryString: D.Z.getSearchInputText(this.props.searchContext),
         searchTokenType: this.props.resultsState.mode.filter,
-        searchAutocompleteGroup: k.rtL.DATES,
+        searchAutocompleteGroup: j.rtL.DATES,
         searchAutocompleteMode: this.props.resultsState.mode,
         isSearchFilterPrefix: false,
         isSearchFilterAnswer: true,
         isSearchFilterComplete: false,
-        searchAutocompleteSelectAction: j.ZW.CLICK
-      }), this.setSearchQuery(e.format(k.b2L) + " ", true)
+        searchAutocompleteSelectAction: k.ZW.CLICK
+      }), this.setSearchQuery(e.format(j.b2L) + " ", true)
     }), B(this, "keepCurrentOptionSelected", (e, t) => {
       let {
         selectedIndex: n
@@ -493,8 +493,8 @@ class er extends Chunk73800.PureComponent {
       if (r >= a.length) returnfalse;
       let s = a[r],
         l = a.length;
-      if (s.group === k.rtL.HISTORY) {
-        let e = i.find(e => (null == e ? true : e.group) === k.rtL.HISTORY);
+      if (s.group === j.rtL.HISTORY) {
+        let e = i.find(e => (null == e ? true : e.group) === j.rtL.HISTORY);
         if (null != e) {
           let t = r - (l - e.results.length);
           (0, M.$z)({
@@ -514,7 +514,7 @@ class er extends Chunk73800.PureComponent {
           a = (0, w._m)(s.group) ? s.group : null != o && (0, w._m)(o) ? o : null,
           d = null != (c = null != i ? i : t) ? c : a,
           f = s.result.channel,
-          _ = d === k.dCx.FILTER_IN && null != f && f.id === v.Z.getChannelId(),
+          _ = d === j.dCx.FILTER_IN && null != f && f.id === v.Z.getChannelId(),
           p = (0, P.Tm)(this.props.searchContext);
         (0, M.bh)({
           searchContext: this.props.searchContext,
@@ -525,9 +525,9 @@ class er extends Chunk73800.PureComponent {
           searchAutocompleteMode: this.props.resultsState.mode,
           searchAutocompleteResultIndex: r,
           searchAutocompleteTotalResults: l,
-          isSearchFilterPrefix: e === k.Sap.EMPTY,
-          isSearchFilterAnswer: e === k.Sap.FILTER,
-          isSearchFilterComplete: e === k.Sap.FILTER_ALL,
+          isSearchFilterPrefix: e === j.Sap.EMPTY,
+          isSearchFilterAnswer: e === j.Sap.FILTER,
+          isSearchFilterComplete: e === j.Sap.FILTER_ALL,
           isInFilterForSelectedChannel: _,
           searchAutocompleteSelectAction: n
         })
@@ -543,7 +543,7 @@ class er extends Chunk73800.PureComponent {
         o = 0;
       null != r.token ? o = r.token.start : (null == i ? true : i.currentToken) != null && (o = i.currentToken.end);
       let a = null != r.token ? r.token.end : o;
-      S.S.dispatch(k.CkL.SET_SEARCH_QUERY, {
+      S.S.dispatch(j.CkL.SET_SEARCH_QUERY, {
         query: e,
         anchor: o,
         focus: a,
@@ -554,7 +554,7 @@ class er extends Chunk73800.PureComponent {
       let {
         mode: e
       } = this.props.resultsState;
-      return e.type !== k.Sap.FILTER && e.type !== k.Sap.EMPTY && !(0, P.Fz)(e.filter)
+      return e.type !== j.Sap.FILTER && e.type !== j.Sap.EMPTY && !(0, P.Fz)(e.filter)
     }), B(this, "shouldShowSearchInSelectedChannel", () => {
       let {
         searchContext: e,
@@ -562,7 +562,7 @@ class er extends Chunk73800.PureComponent {
           mode: t
         }
       } = this.props;
-      return e.type === k.aib.DMS && (0, P.R6)(e) && t.type === k.Sap.EMPTY && !(0, P.Fz)(t.filter)
+      return e.type === j.aib.DMS && (0, P.R6)(e) && t.type === j.Sap.EMPTY && !(0, P.Fz)(t.filter)
     }), B(this, "handleSearchInChannel", e => {
       var t;
       let {
@@ -576,7 +576,7 @@ class er extends Chunk73800.PureComponent {
         searchContext: i,
         searchAutocompleteSelectAction: n
       });
-      let o = k.dCx.FILTER_IN,
+      let o = j.dCx.FILTER_IN,
         a = w.ZP[o],
         s = (0, P.X3)(r),
         l = "".concat(null != (t = null == a ? true : a.key) ? t : o.toString(), " ").concat(s);
@@ -602,7 +602,7 @@ class er extends Chunk73800.PureComponent {
     })), B(this, "handleHintClick", () => {
       this.setSearchQuery(this.state.dateHint, true)
     }), B(this, "performSearch", e => {
-      S.S.dispatch(k.CkL.PERFORM_SEARCH, null != e ? e : {})
+      S.S.dispatch(j.CkL.PERFORM_SEARCH, null != e ? e : {})
     }), B(this, "renderAutocompletes", () => {
       let {
         selectedIndex: e
@@ -630,7 +630,7 @@ class er extends Chunk73800.PureComponent {
             searchContext: n
           }) : null,
           m = null != (c = f.component) ? c : Q,
-          g = o.type === k.Sap.FILTER_ALL;
+          g = o.type === j.Sap.FILTER_ALL;
         return (0, r.jsxs)("ul", {
           role: "group",
           "aria-labelledby": d,
@@ -646,7 +646,7 @@ class er extends Chunk73800.PureComponent {
               showFilter: g,
               onSelect: this.selectOption.bind(null, {
                 selectedIndex: a,
-                searchAutocompleteSelectAction: j.ZW.CLICK
+                searchAutocompleteSelectAction: k.ZW.CLICK
               }),
               onFocus: this.focusOption.bind(null, a)
             }, (0, h.M)(t, a, c)), "".concat(i.group, "-").concat(o.text, "-").concat(null != (l = o.key) ? l : ""))

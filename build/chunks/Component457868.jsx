@@ -75,7 +75,7 @@ let z = Chunk998502.ZP.getEnableHardwareAcceleration(),
     } = e, o = i.useRef(null), u = (0, h.e7)([R.Z], () => R.Z.isTyping(t.id, a)), p = (0, h.e7)([Z.ZP], () => Z.ZP.getMember(t.guild_id, a)), m = (0, h.e7)([P.Z], () => {
       var e;
       return (null == p ? true : p.colorRoleId) != null ? null == (e = P.Z.getRole(t.guild_id, p.colorRoleId)) ? true : e.name : true
-    }, [t.guild_id, p]), b = (0, h.e7)([w.default], () => w.default.getUser(a)), y = (0, h.e7)([w.default], () => w.default.getCurrentUser()), x = (null == b ? true : b.id) === (null == y ? true : y.id), _ = (0, h.e7)([T.Z, N.Z], () => x ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), O = (0, h.e7)([T.Z], () => T.Z.isMobileOnline(a)), C = (0, h.e7)([T.Z, N.Z], () => x ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), A = (0, h.e7)([I.Z], () => I.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), L = (0, h.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === s, B = i.useCallback(e => {
+    }, [t.guild_id, p]), b = (0, h.e7)([w.default], () => w.default.getUser(a)), y = (0, h.e7)([w.default], () => w.default.getCurrentUser()), x = (null == b ? true : b.id) === (null == y ? true : y.id), j = (0, h.e7)([T.Z, N.Z], () => x ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), O = (0, h.e7)([T.Z], () => T.Z.isMobileOnline(a)), C = (0, h.e7)([T.Z, N.Z], () => x ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), A = (0, h.e7)([I.Z], () => I.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), L = (0, h.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === s, B = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -111,7 +111,7 @@ let z = Chunk998502.ZP.getEnableHardwareAcceleration(),
         rawText: n
       }), g.Z.startTyping(t.id)
     }, [b, t]), Y = i.useCallback(e => {
-      e.stopPropagation(), (0, j.f)({
+      e.stopPropagation(), (0, _.f)({
         guildId: t.guild_id,
         location: {
           section: H.jXE.THREAD_MEMBER_LIST,
@@ -161,7 +161,7 @@ let z = Chunk998502.ZP.getEnableHardwareAcceleration(),
           user: b,
           currentUser: y,
           nick: null == p ? true : p.nick,
-          status: _,
+          status: j,
           activities: C,
           colorString: null == p ? true : p.colorString,
           colorStrings: null == p ? true : p.colorStrings,
@@ -210,7 +210,7 @@ let z = Chunk998502.ZP.getEnableHardwareAcceleration(),
         title: n,
         count: i
       }),
-      children: [null != a ? (0, r.jsx)(_.Z, V({
+      children: [null != a ? (0, r.jsx)(j.Z, V({
         className: W.roleIcon
       }, a)) : null, (0, r.jsxs)("span", {
         "aria-hidden": true,
@@ -300,17 +300,17 @@ function X(e) {
       }),
       listRef: r
     }
-  }(l, Y), _ = 0 === d.length || d.every(e => 0 === e.userIds.length);
+  }(l, Y), j = 0 === d.length || d.every(e => 0 === e.userIds.length);
   if (i.useEffect(() => {
       D.default.track(H.rMx.MEMBER_LIST_VIEWED, {
         channel_id: t.id,
         channel_type: t.type,
         guild_id: t.guild_id
       })
-    }, [t.guild_id, t.id, t.type]), _) return (0, r.jsx)(J, {
+    }, [t.guild_id, t.id, t.type]), j) return (0, r.jsx)(J, {
     channel: t
   });
-  let j = o().omit(g.containerProps, ["ref"]),
+  let _ = o().omit(g.containerProps, ["ref"]),
     O = L.iJ(n);
   return (0, r.jsx)(y.Gt, {
     value: s,
@@ -359,7 +359,7 @@ function X(e) {
             innerTag: "ul",
             sections: d.map(e => e.userIds.length),
             fade: true
-          }, j, e), l)
+          }, _, e), l)
         })
       })
     })

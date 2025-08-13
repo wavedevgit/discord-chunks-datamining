@@ -11,8 +11,8 @@ require.r(exports), require.d(exports, {
   openQuestInGameRewardModal: () => U,
   openQuestMinorEnrollmentBlockModal: () => B,
   openQuestOrbsRewardModal: () => G,
-  openQuestsNitroRewardModal: () => k,
-  openQuestsRewardCodeModal: () => j,
+  openQuestsNitroRewardModal: () => j,
+  openQuestsRewardCodeModal: () => k,
   openVideoQuestModal: () => Y
 });
 var Chunk255367 = require("./255367.js");
@@ -85,7 +85,7 @@ function L(e, t) {
 let x = "in-app",
   M = "Discord Widget";
 
-function j(e) {
+function k(e) {
   let {
     questId: t,
     questContent: i,
@@ -109,7 +109,7 @@ function j(e) {
   })
 }
 
-function k(e, t) {
+function j(e, t) {
   var i;
   (null == (i = e.userStatus) ? true : i.claimedAt) == null ? (0, s.ZDy)(async () => {
     let {

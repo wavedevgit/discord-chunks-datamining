@@ -202,7 +202,7 @@ function M(e) {
     for (let t of e.users) t.id in y && x(t) || (y[t.id] = new f.Z(t))
 }
 
-function j(e) {
+function k(e) {
   let {
     user: t
   } = e;
@@ -210,7 +210,7 @@ function j(e) {
   C(t)
 }
 
-function k(e) {
+function j(e) {
   let {
     userProfile: t
   } = e;
@@ -709,8 +709,8 @@ class eD extends Chunk750041.Z {
       UPDATE_CLIENT_PREMIUM_TYPE: G,
       OVERLAY_INITIALIZE: M,
       CACHE_LOADED: e => this.handleLoadCache(e),
-      USER_UPDATE: j,
-      USER_PROFILE_FETCH_SUCCESS: k,
+      USER_UPDATE: k,
+      USER_PROFILE_FETCH_SUCCESS: j,
       CURRENT_USER_UPDATE: U,
       PRESENCE_UPDATES: ee,
       SEARCH_MESSAGES_SUCCESS: V,

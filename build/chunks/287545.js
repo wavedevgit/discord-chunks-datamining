@@ -183,15 +183,15 @@ function et(e) {
     x = T.default.getCurrentUser();
   if (null == x) return;
   let M = D.ZP.getShelfActivities(E),
-    j = R.Z.getState().shelfOrder,
-    k = (0, L.Z)({
+    k = R.Z.getState().shelfOrder,
+    j = (0, L.Z)({
       applicationId: r,
       activityConfigs: M
     }),
-    G = 1 + j.findIndex(e => e === r),
+    G = 1 + k.findIndex(e => e === r),
     {
       releasePhase: B
-    } = q(k),
+    } = q(j),
     Z = p.Z.getRawThermalState(),
     V = null != I ? [I] : [],
     H = {
@@ -215,7 +215,7 @@ function et(e) {
     n_participants: null != b ? _.Z.getUserParticipantCount(b.id) : null,
     is_activity_start: a,
     release_phase: B,
-    shelf_rank: null == k || null == (t = k.activity) ? true : t.shelf_rank,
+    shelf_rank: null == j || null == (t = j.activity) ? true : t.shelf_rank,
     shelf_sorted_rank: G > 0 ? G : null,
     activity_user_session_id: P,
     channel_type: null == b ? true : b.type,
@@ -235,7 +235,7 @@ function et(e) {
     activity_user_session_id: P,
     raw_thermal_state: Z,
     is_activity_start: a,
-    shelf_rank: null == k || null == (n = k.activity) ? true : n.shelf_rank,
+    shelf_rank: null == j || null == (n = j.activity) ? true : n.shelf_rank,
     shelf_sorted_rank: G > 0 ? G : null,
     activities_infra_version: w,
     embedded_activity_location_kind: u.kind
@@ -407,7 +407,7 @@ class er extends Chunk317770.Z {
       let u = D.ZP.getSelfEmbeddedActivityForChannel(i);
       if ((null == u ? true : u.applicationId) === o) return;
       let d = await f.ZP.fetchApplication(o);
-      if (!(0, k.a)()) return void this.showLaunchErrorModal(V.intl.string(V.t.UXoQTk));
+      if (!(0, j.a)()) return void this.showLaunchErrorModal(V.intl.string(V.t.UXoQTk));
       if (!(0, B.Z)(null == d || null == (t = d.embedded_activity_config) ? true : t.supported_platforms)) return void this.showLaunchErrorModal(V.intl.string(V.t.uGDCc3));
       let _ = null != (n = null == c ? true : c.getGuildId()) ? n : true,
         {
@@ -439,7 +439,7 @@ class er extends Chunk317770.Z {
         inputApplication: null,
         analyticsLocations: a,
         inviterUserId: l
-      }) : await (0, j.Z)({
+      }) : await (0, k.Z)({
         targetApplicationId: o,
         channelId: i,
         analyticsLocations: a,

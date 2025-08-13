@@ -27,10 +27,10 @@ function p(e) {
     var t;
     return (null == (t = u.Z.getSubscriptionListing(e)) ? true : t.published) === true
   }), [g]), {
-    analyticsLocations: _
-  } = (0, a.ZP)(null != (t = (0, s.DR)()) ? t : []), j = r.useRef(false);
+    analyticsLocations: j
+  } = (0, a.ZP)(null != (t = (0, s.DR)()) ? t : []), _ = r.useRef(false);
   r.useEffect(() => {
-    m && null != p && null != x && !j.current && (j.current = true, o.default.track(h.rMx.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, function(e) {
+    m && null != p && null != x && !_.current && (_.current = true, o.default.track(h.rMx.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -51,8 +51,8 @@ function p(e) {
       role_subscription_group_listing_id: p,
       role_subscription_listing_ids: x,
       is_premium_member: y,
-      location_stack: _,
+      location_stack: j,
       location: f
     }, (0, l.hH)(n))))
-  }, [n, p, m, f, x, y, _])
+  }, [n, p, m, f, x, y, j])
 }

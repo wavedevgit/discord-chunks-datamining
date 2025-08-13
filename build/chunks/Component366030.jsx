@@ -38,7 +38,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk887496 = require("./887496.js");
 
-function j(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,14 +47,14 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -189,7 +189,7 @@ function F(e) {
     guildId: d
   } = e;
   i.useEffect(() => {
-    T.default.track(D.rMx.PASSPORT_ROLE_POPOUT_VIEWED, k({
+    T.default.track(D.rMx.PASSPORT_ROLE_POPOUT_VIEWED, j({
       other_user_id: s,
       role_id: l
     }, (0, E.JS)(u), (0, E.hH)(d)))
@@ -279,7 +279,7 @@ function V(e) {
     nudgeAlignIntoViewport: true,
     children: e => (0, r.jsx)(_.ua7, {
       text: x.intl.string(x.t.Wpsnam),
-      children: t => (0, r.jsxs)("div", G(k({
+      children: t => (0, r.jsxs)("div", G(j({
         ref: m,
         className: M.badge
       }, t, e), {

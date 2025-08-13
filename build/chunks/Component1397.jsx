@@ -170,7 +170,7 @@ class K extends Chunk73800.PureComponent {
         shouldShowLurkerModeSuccessPopout: false
       }),
       renderPopout: this.renderSuccessPopout,
-      children: e => (0, r.jsx)(k.Z, W(H({}, A), {
+      children: e => (0, r.jsx)(j.Z, W(H({}, A), {
         children: (0, r.jsxs)("div", {
           ref: this.textAreaContainerRef,
           children: [this.renderMemberVerificationSuccessModal(), m ? (0, r.jsx)(c.yRy, {
@@ -346,8 +346,8 @@ function z(e) {
     return null != p && null != (t = null == (e = P.ZP.getMember(a, p.id)) ? true : e.isPending) && t
   }), g = !!(0, b.Dc)(l), O = m && g, T = (0, s.e7)([v.Z], () => v.Z.shouldShowPopout(a)), S = (0, s.e7)([L.Z], () => L.Z.can(U.Plq.SEND_MESSAGES, i)), A = (0, s.e7)([y.Z], () => y.Z.getRequest(a)), {
     showLinkedLobbyApplicationLoadingIndicator: N,
-    requiredLinkedLobbyApplication: k
-  } = (0, j.Z)(i.linkedLobby), G = W(H({}, c), {
+    requiredLinkedLobbyApplication: j
+  } = (0, k.Z)(i.linkedLobby), G = W(H({}, c), {
     guild: l,
     isLurking: f,
     isFollowable: u,
@@ -361,7 +361,7 @@ function z(e) {
     guildJoinRequestStatus: null != (n = null == A ? true : A.applicationStatus) ? n : E.wB.STARTED,
     guildJoinRequest: A,
     showLinkedLobbyApplicationLoadingIndicator: N,
-    requiredLinkedLobbyApplication: k,
+    requiredLinkedLobbyApplication: j,
     useReducedMotion: _.Z.useReducedMotion,
     isStaff: h
   });

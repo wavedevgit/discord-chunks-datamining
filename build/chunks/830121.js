@@ -36,8 +36,8 @@ let A = 10,
   L = /^\/activities\/([0-9-]+)\/?$/,
   x = /^\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
   M = /^\/channels\/([0-9]+)\/shop$/,
-  j = /^\/quests\/([0-9-]+)\/?$/,
-  k = /^\/oauth2\/authorize/,
+  k = /^\/quests\/([0-9-]+)\/?$/,
+  j = /^\/oauth2\/authorize/,
   U = /^#itemSkuId=([0-9]+)$/,
   G = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
   B = q(window.GLOBAL_ENV.INVITE_HOST),
@@ -174,7 +174,7 @@ function eo(e) {
       } else u(t, d[2])
     }(null == c ? true : c.match(C)) != null && u(T.g.CHANNEL_LINK, c.replace("/channels/", ""));
     let f = en(r.pathname);
-    if (null != f && u(T.g.EVENT, "".concat(f.guildId, "-").concat(f.guildEventId) + (null != f.recurrenceId ? "-".concat(f.recurrenceId) : "")), null != (null == c ? true : c.match(k)) && null != r.query) {
+    if (null != f && u(T.g.EVENT, "".concat(f.guildId, "-").concat(f.guildEventId) + (null != f.recurrenceId ? "-".concat(f.recurrenceId) : "")), null != (null == c ? true : c.match(j)) && null != r.query) {
       let e = (0, y.y)(r.query),
         t = e.clientId;
       null == t || "" === t || (null == (o = e.scopes) ? true : o.some(e => e !== g.x.APPLICATIONS_COMMANDS)) || u(T.g.APP_OAUTH2_LINK, t)
@@ -214,7 +214,7 @@ function eo(e) {
 function ea(e) {
   var t, n;
   let r = er(e),
-    i = null == r || null == (t = r.primaryHostRemainingPath) ? true : t.match(j);
+    i = null == r || null == (t = r.primaryHostRemainingPath) ? true : t.match(k);
   return null != (n = null == i ? true : i[1]) ? n : null
 }
 

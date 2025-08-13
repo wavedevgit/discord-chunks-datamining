@@ -52,7 +52,7 @@ function M(e) {
   return null != t ? x(t.id) : f.G6.getSetting()
 }
 
-function j(e) {
+function k(e) {
   var t;
   if ((0, p.yE)(null != (t = e.flags) ? t : 0, v.xjy.CONTEXTLESS)) returntrue;
   switch (e.type) {
@@ -69,7 +69,7 @@ function j(e) {
   }
 }
 
-function k() {
+function j() {
   P = true, A = S, U()
 }
 
@@ -83,7 +83,7 @@ function U() {
   }
   S === Chunk981631.Skl.ONLINE && N > 0 && (S = Chunk981631.Skl.IDLE);
   let t = false,
-    n = P || S === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(j);
+    n = P || S === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(k);
   o()(C, require) || (C = require, t = true);
   let r = Chunk797258.Z.getRemoteActivities();
   w !== r && (w = r, t = true);
@@ -161,7 +161,7 @@ let H = new V(Chunk570140.Z, {
   RPC_APP_DISCONNECTED: U,
   LIBRARY_FETCH_SUCCESS: U,
   LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: U,
-  LOGOUT: k,
+  LOGOUT: j,
   FORCE_INVISIBLE: G,
   WINDOW_FOCUS: B
 })

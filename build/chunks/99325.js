@@ -6,7 +6,7 @@ require.d(exports, {
   So: () => b,
   Su: () => x,
   YZ: () => p,
-  _Q: () => _,
+  _Q: () => j,
   bF: () => f,
   c$: () => h,
   kx: () => g
@@ -156,7 +156,7 @@ let m = i()(async (e, t) => {
       channelId: e,
       categoryId: t
     })
-  }, _ = async (e, t) => {
+  }, j = async (e, t) => {
     try {
       let n = await a.tn.get({
         url: d.ANM.DIRECTORY_CHANNEL_LIST_BY_ID(e),

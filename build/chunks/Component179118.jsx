@@ -2,7 +2,7 @@
 /** chunk id: 179118, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./388685.js"), require("./642613.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -38,7 +38,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk919583 = require("./919583.js");
 let M = 1500;
 
-function j(e) {
+function k(e) {
   let {
     giftCode: t,
     application: n,
@@ -50,11 +50,11 @@ function j(e) {
     giftRecipient: p,
     giftMessageError: g,
     isSendingMessage: y
-  } = e, [O, I] = i.useState(f.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), j = _ || null != l && null != p, U = (null == o ? true : o.productLine) === w.POd.COLLECTIBLES, G = (0, b.Z)(), {
+  } = e, [O, I] = i.useState(f.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), k = _ || null != l && null != p, U = (null == o ? true : o.productLine) === w.POd.COLLECTIBLES, G = (0, b.Z)(), {
     selectedGiftingPromotionReward: B
   } = (0, P.wD)(), Z = null == G ? true : G.giftPurchaseConfirmation, F = (0, E.tK)(null == B ? true : B.skuId), V = (0, E.a5)(s) && null != F && null != Z, H = () => null != s ? s.skuId : null != o ? o.id : null, Y = () => {
     let e;
-    return null != g ? L.intl.string(L.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? j ? V ? Z.monthGiftText : L.t["4ZJ+7e"] : L.t["P+z55e"] : j ? V ? Z.yearGiftText : L.t.p0pZXF : L.t.bXqk3t, L.intl.format(e, {
+    return null != g ? L.intl.string(L.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? k ? V ? Z.monthGiftText : L.t["4ZJ+7e"] : L.t["P+z55e"] : k ? V ? Z.yearGiftText : L.t.p0pZXF : L.t.bXqk3t, L.intl.format(e, {
       skuName: (0, C.aq)(s.id),
       intervalCount: s.intervalCount
     }))
@@ -101,7 +101,7 @@ function j(e) {
     children: [(0, r.jsx)("div", {
       className: x.blurb,
       children: Y()
-    }), null == g && (0, r.jsx)(k, {
+    }), null == g && (0, r.jsx)(j, {
       giftCode: t,
       onClose: u
     }), (0, r.jsx)("div", {
@@ -150,10 +150,10 @@ function j(e) {
         [x.headerCustomGifting]: null != l && !U
       }),
       children: W()
-    }), _ && null != p && null == g || j ? X() : q()]
+    }), _ && null != p && null == g || k ? X() : q()]
   })
 }
-let k = e => {
+let j = e => {
   let {
     giftCode: t,
     onClose: n

@@ -76,8 +76,8 @@ let m = e => {
       currentCategoryId: b,
       handleSelectCategory: y,
       categoryCounts: x,
-      allEntriesCount: _,
-      isLoading: j
+      allEntriesCount: j,
+      isLoading: _
     } = e;
     return (0, r.jsx)("div", {
       className: h.pageContainer,
@@ -101,7 +101,7 @@ let m = e => {
             children: [(0, r.jsx)(s.njP.Item, {
               className: p.tabBarItem,
               id: u.AR.ALL,
-              children: "".concat(d.intl.string(d.t.hEAa2d), " (").concat(_, ")")
+              children: "".concat(d.intl.string(d.t.hEAa2d), " (").concat(j, ")")
             }, u.AR.ALL), (0, u.b7)(t.id).map(e => {
               let {
                 value: t,
@@ -114,7 +114,7 @@ let m = e => {
               }, t)
             })]
           })
-        }), j && null == n ? (0, r.jsx)(s.$jN, {
+        }), _ && null == n ? (0, r.jsx)(s.$jN, {
           className: h.spinner
         }) : null == n ? true : n.map((e, t) => (0, r.jsxs)(i.Fragment, {
           children: [true !== e.header ? (0, r.jsx)(s.Text, {

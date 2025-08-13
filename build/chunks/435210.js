@@ -259,7 +259,7 @@ exports.log = function() {
 };
 var M = "undefined" != typeof Symbol ? Symbol("util.promisify.custom") : true;
 
-function j(e, t) {
+function k(e, t) {
   if (!e) {
     var n = Error("Promise was rejected with a falsy value");
     n.reason = e, e = n
@@ -313,7 +313,7 @@ exports.promisify = function(e) {
     e.apply(this, t).then(function(e) {
       r.nextTick(a.bind(null, null, e))
     }, function(e) {
-      r.nextTick(j.bind(null, e, a))
+      r.nextTick(k.bind(null, e, a))
     })
   }
   return Object.setPrototypeOf(t, Object.getPrototypeOf(e)), Object.defineProperties(t, i(e)), t

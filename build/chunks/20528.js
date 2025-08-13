@@ -2,7 +2,7 @@
 /** chunk id: 20528, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   Chunk846519 = require("./846519.js"),
@@ -81,7 +81,7 @@ function M(e, t) {
   null != n && n !== h.Z.getRegion(g.Z.getHostname(e)) && (0, a.dV)(e, n)
 }
 
-function j(e, t) {
+function k(e, t) {
   var n;
   if (g.Z.getAllActiveStreamKeys().includes(e)) return;
   let r = null != (n = N[e]) ? n : new i.V7;
@@ -92,7 +92,7 @@ function j(e, t) {
     })
   })
 }
-class k extends Chunk147913.Z {
+class j extends Chunk147913.Z {
   constructor(...e) {
     super(...e), I(this, "handleStreamWatch", e => {
       let {
@@ -101,7 +101,7 @@ class k extends Chunk147913.Z {
       } = e, {
         channelId: r
       } = (0, y.my)(t), i = _.Z.getChannel(r);
-      j(t, null == i ? true : i.isGuildStageVoice()), D(t), n || d.Z.getAllActiveStreams().forEach(e => {
+      k(t, null == i ? true : i.isGuildStageVoice()), D(t), n || d.Z.getAllActiveStreams().forEach(e => {
         let n = (0, y.V9)(e);
         e.ownerId !== f.default.getId() && n !== t && (0, a.g)(n, false)
       })
@@ -111,7 +111,7 @@ class k extends Chunk147913.Z {
         streamType: n,
         guildId: r
       } = e, i = _.Z.getChannel(t);
-      j((0, y.V9)({
+      k((0, y.V9)({
         streamType: n,
         guildId: r,
         channelId: t,

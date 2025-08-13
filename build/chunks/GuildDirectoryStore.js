@@ -147,20 +147,20 @@ let x = new y(Chunk570140.Z, {
     let {
       channelId: b,
       entry: y
-    } = e, x = (0, a.MQ)(y), _ = null == (t = p[b]) ? true : t[x.guildId];
+    } = e, x = (0, a.MQ)(y), j = null == (t = p[b]) ? true : t[x.guildId];
     p[b] = u(c({}, p[b]), {
-      [x.guildId]: c({}, _, x)
+      [x.guildId]: c({}, j, x)
     });
-    let j = null != (i = null == _ ? true : _.primaryCategoryId) ? i : s.AR.UNCATEGORIZED,
+    let _ = null != (i = null == j ? true : j.primaryCategoryId) ? i : s.AR.UNCATEGORIZED,
       O = null != (l = x.primaryCategoryId) ? l : s.AR.UNCATEGORIZED,
-      v = Object.assign({}, null == (n = g[b]) ? true : n[j]);
-    null != _ && j !== O && delete v[x.guildId], g[b] = u(c({}, g[b]), {
-      [j]: v,
+      v = Object.assign({}, null == (n = g[b]) ? true : n[_]);
+    null != j && _ !== O && delete v[x.guildId], g[b] = u(c({}, g[b]), {
+      [_]: v,
       [O]: u(c({}, null == (r = g[b]) ? true : r[O]), {
-        [x.guildId]: c({}, _, x)
+        [x.guildId]: c({}, j, x)
       })
-    }), O !== j && null != m[b] && (m[b] = u(c({}, m[b]), {
-      [j]: (null == (o = m[b]) ? true : o[j]) > 0 ? (null == (d = m[b]) ? true : d[j]) - 1 : 0,
+    }), O !== _ && null != m[b] && (m[b] = u(c({}, m[b]), {
+      [_]: (null == (o = m[b]) ? true : o[_]) > 0 ? (null == (d = m[b]) ? true : d[_]) - 1 : 0,
       [O]: (null != (f = null == (h = m[b]) ? true : h[O]) ? f : 0) + 1
     }))
   },

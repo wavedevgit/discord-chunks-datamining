@@ -471,7 +471,7 @@ function M(e, t) {
   return x(e, t)
 }
 
-function j(e, t, n, r, i) {
+function k(e, t, n, r, i) {
   if (0 === e.length) throw ReferenceError("No locale data has been provided for this object yet.");
   if ("lookup" === n["[[localeMatcher]]"]) var o = x(e, t);
   else var o = M(e, t);
@@ -514,7 +514,7 @@ function j(e, t, n, r, i) {
   return p["[[locale]]"] = a, p
 }
 
-function k(e, t) {
+function j(e, t) {
   for (var n = t.length, r = new e_, i = 0; i < n;) {
     var o = t[i];
     true !== L(e, String(o).replace(S, "")) && h.call(r, o), i++
@@ -523,7 +523,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return k(e, t)
+  return j(e, t)
 }
 
 function G(e, t, n) {
@@ -533,7 +533,7 @@ function G(e, t, n) {
     if (true !== r && "lookup" !== (r = String(r)) && "best fit" !== r) throw RangeError('matcher should be "lookup" or "best fit"')
   }
   if (true === r || "best fit" === r) var i = U(e, t);
-  else var i = k(e, t);
+  else var i = j(e, t);
   for (var o in i) c.call(i, o) && u(i, o, {
     writable: false,
     configurable: false,
@@ -583,7 +583,7 @@ function V(e, t, n) {
     s = B(n, "localeMatcher", "string", new e_("lookup", "best fit"), "best fit");
   a["[[localeMatcher]]"] = s;
   var c = b.NumberFormat["[[localeData]]"],
-    d = j(b.NumberFormat["[[availableLocales]]"], o, a, b.NumberFormat["[[relevantExtensionKeys]]"], c);
+    d = k(b.NumberFormat["[[availableLocales]]"], o, a, b.NumberFormat["[[relevantExtensionKeys]]"], c);
   r["[[locale]]"] = d["[[locale]]"], r["[[numberingSystem]]"] = d["[[nu]]"], r["[[dataLocale]]"] = d["[[dataLocale]]"];
   var f = d["[[dataLocale]]"],
     _ = B(n, "style", "string", new e_("decimal", "percent", "currency"), "decimal");
@@ -760,7 +760,7 @@ function Q(e, t, n) {
   v = B(n, "localeMatcher", "string", new e_("lookup", "best fit"), "best fit"), a["[[localeMatcher]]"] = v;
   var s = b.DateTimeFormat,
     d = s["[[localeData]]"],
-    f = j(s["[[availableLocales]]"], o, a, s["[[relevantExtensionKeys]]"], d);
+    f = k(s["[[availableLocales]]"], o, a, s["[[relevantExtensionKeys]]"], d);
   r["[[locale]]"] = f["[[locale]]"], r["[[calendar]]"] = f["[[ca]]"], r["[[numberingSystem]]"] = f["[[nu]]"], r["[[dataLocale]]"] = f["[[dataLocale]]"];
   var _ = f["[[dataLocale]]"],
     p = n.timeZone;

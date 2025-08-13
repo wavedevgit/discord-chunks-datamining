@@ -89,7 +89,7 @@ function w(e) {
             })
           }), (0, r.jsxs)("div", {
             className: T.header,
-            children: [(0, r.jsx)(_.Z, {
+            children: [(0, r.jsx)(j.Z, {
               user: t,
               displayProfile: A,
               themeType: Z.lY.SIDEBAR,
@@ -117,7 +117,7 @@ function w(e) {
               children: [(0, r.jsx)(v.Z, {
                 heading: P.intl.string(P.t["61W33d"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(j.Z, {
+                children: (0, r.jsx)(_.Z, {
                   userBio: null == A ? true : A.bio,
                   userId: t.id,
                   animateOnHover: true,

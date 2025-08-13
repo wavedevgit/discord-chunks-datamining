@@ -74,9 +74,9 @@ function M(e, t) {
   }), e
 }
 
-function j(e, t) {
+function k(e, t) {
   if (null == e) return {};
-  var n, r, i = k(e, t);
+  var n, r, i = j(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -84,7 +84,7 @@ function j(e, t) {
   return i
 }
 
-function k(e, t) {
+function j(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -114,7 +114,7 @@ function B(e) {
     channel: h,
     userOverride: D,
     compact: x = false,
-    withMentionPrefix: k = false,
+    withMentionPrefix: j = false,
     showPopout: U = false,
     hideGuildTag: B = false,
     hideSystemTag: Z = false,
@@ -129,7 +129,7 @@ function B(e) {
     subscribeToGroupId: X
   } = e, Q = i.useRef(null), J = i.useContext(b.Z), $ = null != (t = null == h ? true : h.guild_id) ? t : J, {
     analyticsLocations: ee
-  } = (0, p.ZP)(_.Z.USERNAME), et = k ? "@" : "", {
+  } = (0, p.ZP)(_.Z.USERNAME), et = j ? "@" : "", {
     nick: en,
     colorString: er,
     colorStrings: ei,
@@ -200,7 +200,7 @@ function B(e) {
     children: e => {
       var {
         onClick: t
-      } = e, n = j(e, ["onClick"]);
+      } = e, n = k(e, ["onClick"]);
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.P3F, M(L({
           tag: "span",

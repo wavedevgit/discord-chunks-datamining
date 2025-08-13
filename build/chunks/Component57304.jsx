@@ -55,8 +55,8 @@ let x = function(e) {
   } = e, n = (0, l.e7)([u.Z, h.default], () => {
     let e = h.default.getCurrentUser();
     return null == e || (0, c.aC)(t) && (!e.nsfwAllowed || !u.Z.didAgree(t.getGuildId()))
-  }, [t]), [x, _] = i.useState(false), j = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), O = (0, o.Aq)(), v = i.useRef(null), C = i.useCallback(() => {
-    n || _(e => !e)
+  }, [t]), [x, j] = i.useState(false), _ = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), O = (0, o.Aq)(), v = i.useRef(null), C = i.useCallback(() => {
+    n || j(e => !e)
   }, [n]);
 
   function E(e) {
@@ -72,7 +72,7 @@ let x = function(e) {
     align: "right",
     autoInvert: false,
     ignoreModalClicks: true,
-    onRequestClose: () => _(false),
+    onRequestClose: () => j(false),
     renderPopout: function(e) {
       return (0, r.jsx)(s.Z, y(b({}, e), {
         onJump: E,
@@ -92,7 +92,7 @@ let x = function(e) {
         iconSize: 20,
         "aria-label": m.intl.string(m.t["mp1N//"]),
         disabled: n,
-        showBadge: j,
+        showBadge: _,
         selected: i
       }))
     }

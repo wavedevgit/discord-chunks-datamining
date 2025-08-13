@@ -78,13 +78,13 @@ function w(e) {
         })]
       })
     }), L === T.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(j.Z, {
+      children: (0, r.jsx)(_.Z, {
         user: t,
         channelId: A.id,
         applicationId: M
       })
     }), U.map(e => (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(j.Z, {
+      children: (0, r.jsx)(_.Z, {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
@@ -134,7 +134,7 @@ function w(e) {
       }), F.length > 0 && (0, r.jsx)(C.Z, {
         heading: N.intl.string(N.t["Uv/eT0"]),
         headingColor: "header-primary",
-        children: (0, r.jsx)(_.Z, {
+        children: (0, r.jsx)(j.Z, {
           applicationIds: F
         })
       }), (0, r.jsx)(C.Z, {

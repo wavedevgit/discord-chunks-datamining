@@ -57,8 +57,8 @@ let N = new Set,
   L = false,
   x = new Set,
   M = new Map,
-  j = new Map,
-  k = new Map;
+  k = new Map,
+  j = new Map;
 
 function U() {
   return null == r || null == w ? [] : Chunk990492.ZP.calculatePositionDeltas({
@@ -80,8 +80,8 @@ function G(e) {
 
 function B() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  r = Chunk999382.Z.getProps().guild, R = false, P = false, o = true, N.clear(), k.clear(), C = Chunk981631.QZA.OPEN, D = [...w = null != r ? [...Chunk485386.Z.getSortedRoles(r.id)] : []], Z(null == r ? true : r.id, D), L = false, module && (j.clear(), M.forEach((e, t) => {
-    j.set(t, [...e])
+  r = Chunk999382.Z.getProps().guild, R = false, P = false, o = true, N.clear(), j.clear(), C = Chunk981631.QZA.OPEN, D = [...w = null != r ? [...Chunk485386.Z.getSortedRoles(r.id)] : []], Z(null == r ? true : r.id, D), L = false, module && (k.clear(), M.forEach((e, t) => {
+    k.set(t, [...e])
   }))
 }
 
@@ -99,7 +99,7 @@ function Z(e, t) {
         tertiary_color: null != (s = t.colors.tertiary_color) ? s : null
       }
     }
-    k.set(t.id, {
+    j.set(t.id, {
       currentStyle: n,
       styleColors: i
     })
@@ -107,7 +107,7 @@ function Z(e, t) {
 }
 
 function F() {
-  r = null, D = w = [], M.clear(), N.clear(), k.clear(), j.clear(), x = new Set, R = false, P = false, L = false, C = Chunk981631.QZA.CLOSED
+  r = null, D = w = [], M.clear(), N.clear(), j.clear(), k.clear(), x = new Set, R = false, P = false, L = false, C = Chunk981631.QZA.CLOSED
 }
 
 function V(e) {
@@ -178,12 +178,12 @@ function q(e) {
     color: n
   } = e, r = 0 === n ? null : (0, u.Rf)(n), i = ea(t);
   if (null == i) returnfalse;
-  let o = k.get(t);
+  let o = j.get(t);
   return null != o && (o.currentStyle = "solid", o.styleColors.solid = {
     primary_color: n,
     secondary_color: null,
     tertiary_color: null
-  }, k.set(t, S({}, o)), et(i, {
+  }, j.set(t, S({}, o)), et(i, {
     color: n,
     colorString: r,
     colors: {
@@ -207,8 +207,8 @@ function X(e) {
   } = e, i = ea(t);
   if (null == i) returnfalse;
   let o = (0, h.DX)(n),
-    a = k.get(t);
-  return null != a && (a.styleColors[r] = n, a.currentStyle = r, k.set(t, S({}, a)), et(i, {
+    a = j.get(t);
+  return null != a && (a.styleColors[r] = n, a.currentStyle = r, j.set(t, S({}, a)), et(i, {
     color: n.primary_color,
     colors: n,
     colorString: o.primaryColor,
@@ -243,7 +243,7 @@ let $ = l().debounce(() => {
   let e = false;
   P && ((P = U().length > 0) || (e = true)), [...N].forEach(t => {
     l().isEqual(ea(t), es(t)) && (N.delete(t), e = true)
-  }), 0 === N.size && (R = false), L && l().isEqual(M, j) && (e = true, L = false), module && eh.emitChange()
+  }), 0 === N.size && (R = false), L && l().isEqual(M, k) && (e = true, L = false), module && eh.emitChange()
 }, 500);
 
 function ee(e) {
@@ -272,9 +272,9 @@ function en(e) {
     currentStyle: r
   } = e, i = ea(n);
   if (null == i) returnfalse;
-  let o = k.get(n);
+  let o = j.get(n);
   if (null == o) returnfalse;
-  k.set(n, {
+  j.set(n, {
     currentStyle: r,
     styleColors: o.styleColors
   });
@@ -296,7 +296,7 @@ function er(e) {
   if (null == r) returnfalse;
   let i = M.get(r.id);
   if (l().isEqual(i, n)) returnfalse;
-  j.set(r.id, n), M.set(r.id, n), $()
+  k.set(r.id, n), M.set(r.id, n), $()
 }
 
 function ei(e) {
@@ -305,7 +305,7 @@ function ei(e) {
     roleConnectionConfigurations: n
   } = e, r = ea(t);
   if (null == r) returnfalse;
-  L = true, x.add(r.id), j.set(r.id, n), $()
+  L = true, x.add(r.id), k.set(r.id, n), $()
 }
 
 function eo(e) {
@@ -334,7 +334,7 @@ function es(e) {
 }
 
 function el(e) {
-  return x.has(e.roleId) && (x.delete(e.roleId), M.delete(e.roleId), j.delete(e.roleId), L = false), ec(e)
+  return x.has(e.roleId) && (x.delete(e.roleId), M.delete(e.roleId), k.delete(e.roleId), L = false), ec(e)
 }
 
 function ec(e) {
@@ -355,10 +355,10 @@ function ec(e) {
   }), 0 === N.size && (R = false);
   let i = new Map;
   N.forEach(e => {
-    let t = k.get(e);
+    let t = j.get(e);
     null != t && i.set(e, t)
-  }), k.clear(), Z(t, n), i.forEach((e, t) => {
-    k.set(t, e)
+  }), j.clear(), Z(t, n), i.forEach((e, t) => {
+    j.set(t, e)
   }), P = false, w = [...n]
 }
 
@@ -404,7 +404,7 @@ class ep extends(a = Chunk442837.ZP.Store) {
     return R || P || L
   }
   getRoleStyleData(e) {
-    return k.get(e)
+    return j.get(e)
   }
   get errorMessage() {
     return o
@@ -443,7 +443,7 @@ class ep extends(a = Chunk442837.ZP.Store) {
     return i
   }
   getEditedRoleConnectionConfigurationsMap() {
-    return j
+    return k
   }
 }
 T(ep, "displayName", "GuildSettingsRolesStore");

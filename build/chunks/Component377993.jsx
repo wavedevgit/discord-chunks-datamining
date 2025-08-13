@@ -58,7 +58,7 @@ function w(e) {
     channel: s,
     status: u,
     activities: d
-  } = e, h = (0, a.e7)([x.Z], () => null != x.Z.getTypingUsers(s.id)[t.id]), f = (0, a.e7)([_.default], () => _.default.getCurrentUser()), j = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), v = (0, a.e7)([y.Z], () => y.Z.getNickname(t.id)), E = (0, p.Z)(t.id), P = i.useRef(null), N = e => {
+  } = e, h = (0, a.e7)([x.Z], () => null != x.Z.getTypingUsers(s.id)[t.id]), f = (0, a.e7)([j.default], () => j.default.getCurrentUser()), _ = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), v = (0, a.e7)([y.Z], () => y.Z.getNickname(t.id)), E = (0, p.Z)(t.id), P = i.useRef(null), N = e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
@@ -136,7 +136,7 @@ function w(e) {
         channel: s,
         onContextMenu: N,
         selected: D,
-        isMobile: j,
+        isMobile: _,
         nick: v,
         nameplate: A,
         onClick: e => {
@@ -163,16 +163,16 @@ function A(e, t) {
 function D(e) {
   let {
     channel: t
-  } = e, n = _.default.getCurrentUser(), l = null == n ? true : n.isStaff(), {
+  } = e, n = j.default.getCurrentUser(), l = null == n ? true : n.isStaff(), {
     analyticsLocations: o
   } = (0, d.ZP)(u.Z.MEMBER_LIST), {
     listItems: c
-  } = (0, a.e7)([y.Z, _.default, b.Z], () => {
-    let e = (0, v.T)(t.recipients, _.default),
+  } = (0, a.e7)([y.Z, j.default, b.Z], () => {
+    let e = (0, v.T)(t.recipients, j.default),
       n = {};
     for (let t of e) {
       var r, i, l;
-      y.Z.isFriend(t.id) || t.id === (null == (r = _.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
+      y.Z.isFriend(t.id) || t.id === (null == (r = j.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
         status: null != (i = b.Z.getStatus(t.id)) ? i : I.Skl.OFFLINE,
         activities: null != (l = b.Z.getActivities(t.id)) ? l : N
       } : n[t.id] = {
@@ -194,7 +194,7 @@ function D(e) {
     }
   }, [t], A);
   i.useEffect(() => {
-    j.default.track(I.rMx.MEMBER_LIST_VIEWED, {
+    _.default.track(I.rMx.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id

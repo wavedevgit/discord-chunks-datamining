@@ -157,30 +157,30 @@ function T(e) {
   } = S.useComponentState(e, T.length > 0 ? {
     type: t,
     values: T
-  } : true), w = null != S.modal, D = u > 1, L = C === p.gH.LOADING, [x, M] = i.useState(false), [j, k] = i.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [U, G] = i.useState(j), B = i.useMemo(() => n.some(e => null != e.emoji), [n]);
+  } : true), w = null != S.modal, D = u > 1, L = C === p.gH.LOADING, [x, M] = i.useState(false), [k, j] = i.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [U, G] = i.useState(k), B = i.useMemo(() => n.some(e => null != e.emoji), [n]);
   i.useEffect(() => {
     if ((null == A ? true : A.type) === d.re.STRING_SELECT) {
       let e = new Set(A.values);
-      k(e), G(e)
+      j(e), G(e)
     } else {
       let e = new Set(T);
-      k(e), G(e)
+      j(e), G(e)
     }
   }, [o, T, A]);
   let Z = i.useCallback(() => {
-    U !== j && N({
+    U !== k && N({
       type: d.re.STRING_SELECT,
-      values: Array.from(j)
-    }) && G(j)
-  }, [j, U, G, N]);
+      values: Array.from(k)
+    }) && G(k)
+  }, [k, U, G, N]);
   i.useEffect(() => {
-    !x && (j.size === U.size && Array.from(U).every(e => j.has(e)) || Z())
-  }, [x, j, U, Z]);
+    !x && (k.size === U.size && Array.from(U).every(e => k.has(e)) || Z())
+  }, [x, k, U, Z]);
   let F = c.UNb;
   D ? F = c.gzz : 0 === g && (F = c.s6k);
   let V = (0, c.cYr)({
-    value: j,
-    onChange: e => k(e),
+    value: k,
+    onChange: e => j(e),
     onSelectInteraction: F
   });
   return (0, r.jsxs)(i.Fragment, {
@@ -193,7 +193,7 @@ function T(e) {
           [m.inModal]: w
         }),
         options: n.map(e => y(E({}, e), {
-          disabled: D && !j.has(e.value) && j.size === u
+          disabled: D && !k.has(e.value) && k.size === u
         })),
         placeholder: null != s ? s : h.intl.string(h.t.Otr6W1),
         onClose: () => M(false),
@@ -202,7 +202,7 @@ function T(e) {
         closeOnSelect: !D,
         optionClassName: m.selectOption,
         renderOptionLabel: e => (0, r.jsx)(O, y(E({}, e), {
-          isDisabled: D && !j.has(e.value) && j.size === u,
+          isDisabled: D && !k.has(e.value) && k.size === u,
           isOffset: B
         })),
         renderOptionValue: e => D ? (0, r.jsx)(I, {

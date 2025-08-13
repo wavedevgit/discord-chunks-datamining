@@ -180,7 +180,7 @@ let ee = Chunk73800.memo(function(e) {
     }
   }, "role-icon-children") : 2 === P ? (0, r.jsx)(p.Z, q(K({}, u), {
     className: H.roleIcon
-  }), "role-icon-children") : null, [P, u, C]), D = (0, l.e7)([R.default], () => R.default.getCurrentUser()), k = i.useMemo(() => {
+  }), "role-icon-children") : null, [P, u, C]), D = (0, l.e7)([R.default], () => R.default.getCurrentUser()), j = i.useMemo(() => {
     let e = [],
       n = L.ZP.isPremium(t.author),
       i = L.ZP.isPremium(D),
@@ -202,7 +202,7 @@ let ee = Chunk73800.memo(function(e) {
     }, "connections")), e
   }, [t, o, u, s, w, C, D]);
   return null == T ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(j.Z, {
+    children: [(0, r.jsx)(k.Z, {
       message: t,
       channel: o,
       author: T,
@@ -214,8 +214,8 @@ let ee = Chunk73800.memo(function(e) {
       onContextMenu: E,
       onPopoutRequestClose: y,
       decorations: {
-        [j.a.SYSTEM_TAG]: S,
-        [j.a.BADGES]: k
+        [k.a.SYSTEM_TAG]: S,
+        [k.a.BADGES]: j
       },
       renderRemixTag: true,
       previewGuildId: a,
@@ -244,7 +244,7 @@ function et(e, t, n) {
     onPopoutRequestClose: f
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(j.Z, {
+    children: [(0, r.jsx)(k.Z, {
       message: i,
       channel: o,
       author: a,
@@ -292,8 +292,8 @@ function en(e) {
     return null != (e = o.displayCompactAvatars) ? e : A.ZP.displayCompactAvatars
   }), L = (0, Z.Z)(p), x = m ? X : Q, {
     avatarSrc: M,
-    avatarDecorationSrc: j,
-    eventHandlers: k
+    avatarDecorationSrc: k,
+    eventHandlers: j
   } = (0, I.Z)({
     userId: p.author.id,
     guildId: a,
@@ -336,9 +336,9 @@ function en(e) {
       }) : p.author.getAvatarURL(true, J, false),
       onRequestClose: O,
       clickTrap: v,
-      children: e => $(q(K({}, k), {
+      children: e => $(q(K({}, j), {
         avatarSrc: G,
-        avatarDecorationSrc: j,
+        avatarDecorationSrc: k,
         compact: m,
         onClick: y,
         onContextMenu: b,
@@ -351,9 +351,9 @@ function en(e) {
     })
   }) : (0, r.jsx)(d.Gt, {
     value: R,
-    children: $(q(K({}, k), {
+    children: $(q(K({}, j), {
       avatarSrc: G,
-      avatarDecorationSrc: j,
+      avatarDecorationSrc: k,
       compact: m,
       onClick: y,
       onContextMenu: b,
@@ -387,7 +387,7 @@ function er(e) {
       "aria-describedby": p,
       "aria-labelledby": _,
       children: [u && l && (0, r.jsx)(U.Z, {
-        id: (0, k.Dv)(t),
+        id: (0, j.Dv)(t),
         compact: true,
         timestamp: t.timestamp,
         isVisibleOnlyOnHover: d,
@@ -399,7 +399,7 @@ function er(e) {
         className: s,
         children: i
       }), u && !l && (0, r.jsx)(U.Z, {
-        id: (0, k.Dv)(t),
+        id: (0, j.Dv)(t),
         timestamp: t.timestamp,
         className: m,
         application: b
@@ -482,7 +482,7 @@ let ea = Chunk73800.memo(function(e) {
       return (0, D.yE)(t.flags, F.iLy.SUPPRESS_NOTIFICATIONS) && e.push((0, r.jsx)(O.Z, {}, "suppress-notifications")), t.hasPotions() && e.push((0, r.jsx)(E.Z, {
         message: t
       })), e
-    }, [t]), M = (0, k.XX)(t, f), j = (0, k.Dv)(t), U = _ ? "".concat(M) : "".concat(M, " ").concat(j), G = (null == n ? true : n.state) === y.Y.LOADED ? (0, k.Gq)(t) : true, Z = true !== _;
+    }, [t]), M = (0, j.XX)(t, f), k = (0, j.Dv)(t), U = _ ? "".concat(M) : "".concat(M, " ").concat(k), G = (null == n ? true : n.state) === y.Y.LOADED ? (0, j.Gq)(t) : true, Z = true !== _;
     return (0, r.jsx)(er, {
       message: t,
       avatar: R,
@@ -510,7 +510,7 @@ let ea = Chunk73800.memo(function(e) {
           hideGuildTag: p
         }))]
       }),
-      usernameSpanId: (0, k.XX)(t, f),
+      usernameSpanId: (0, j.XX)(t, f),
       usernameClassName: a()(H.headerText, {
         [H.hasRoleIcon]: 0 !== L,
         [H.hasBadges]: null != w || x.length > 0

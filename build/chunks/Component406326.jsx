@@ -56,7 +56,7 @@ function x(e) {
     searchMode: l,
     onSearchModeChange: o,
     totalResults: x,
-    isIndexing: j,
+    isIndexing: _,
     isSearching: O,
     documentsIndexed: v
   } = e, C = (0, d.UX)({
@@ -103,10 +103,10 @@ function x(e) {
     children: [(0, r.jsx)("div", {
       className: m.totalResults,
       role: "status",
-      children: (0, r.jsx)(_, {
+      children: (0, r.jsx)(j, {
         totalResults: x,
         subtitle: Z,
-        isIndexing: j,
+        isIndexing: _,
         isSearching: O,
         documentsIndexed: v
       })
@@ -148,7 +148,7 @@ function x(e) {
   })
 }
 
-function _(e) {
+function j(e) {
   let {
     totalResults: t,
     subtitle: n,
@@ -164,7 +164,7 @@ function _(e) {
   })
 }
 
-function j() {
+function _() {
   return (0, Chunk255367.jsx)("div", {
     className: Chunk431979.spinnerWrapper,
     children: (0, Chunk255367.jsx)(Chunk481060.$jN, {
@@ -194,7 +194,7 @@ function O(e) {
           href: o.Z.getArticleURL(f.BhN.SEARCH_INDEXING),
           children: g.intl.string(g.t["G3EA+/"])
         })
-      }), (0, r.jsx)(j, {})]
+      }), (0, r.jsx)(_, {})]
     }))
   })
 }
@@ -205,7 +205,7 @@ function v() {
       variant: "text-md/medium",
       color: "header-secondary",
       children: Chunk388032.intl.string(Chunk388032.t.uixzLS)
-    }), (0, Chunk255367.jsx)(j, {})]
+    }), (0, Chunk255367.jsx)(_, {})]
   })
 }
 

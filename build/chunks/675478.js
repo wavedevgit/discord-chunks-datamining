@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   BU: () => L,
-  Cd: () => k,
+  Cd: () => j,
   DZ: () => P,
   PS: () => D,
   T6: () => N,
@@ -306,17 +306,17 @@ function x(e) {
 }
 
 function M(e) {
-  !E.Z.hasLoaded(y.yP.PRELOADED_USER_SETTINGS) && (j(e) || p.default.track(O.rMx.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
+  !E.Z.hasLoaded(y.yP.PRELOADED_USER_SETTINGS) && (k(e) || p.default.track(O.rMx.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
     content_type: a.z[e]
   }))
 }
 
-function j(e) {
+function k(e) {
   var t;
   let n = null == (t = E.Z.settings.userContent) ? true : t.dismissedContents;
   return null != n && (0, m.jl)(n, e)
 }
-async function k(e, t) {
+async function j(e, t) {
   return await R.updateAsync("userContent", n => {
     n.recurringDismissibleContentStates[e] = I({}, n.recurringDismissibleContentStates[e], t)
   }, y.fy.INFREQUENT_USER_ACTION)
@@ -335,7 +335,7 @@ function G(e) {
 }
 
 function B(e) {
-  return k(e, {
+  return j(e, {
     lastDismissedVersion: 0,
     lastDismissedAtMs: "0",
     lastDismissedObjectId: "0"

@@ -172,13 +172,13 @@ function x(e) {
     M = i.useCallback(e => {
       R(e.hex)
     }, []),
-    j = e => {
+    k = e => {
       if ((0, E.P0)(), n(e.hex), a.length > 0) {
         let t = [...a];
         t[v] = e.hex, s(t)
       }
     },
-    k = async () => {
+    j = async () => {
       if (null != c) try {
         let {
           sRGBHex: e
@@ -209,7 +209,7 @@ function x(e) {
       onColorSelect: B
     }), (0, r.jsx)(N, {
       onChange: M,
-      onChangeComplete: j,
+      onChangeComplete: k,
       color: A
     }), (0, r.jsxs)("div", {
       className: O.hexInputContainer,
@@ -231,7 +231,7 @@ function x(e) {
             variant: "icon-only",
             size: "sm"
           }, e), {
-            onClick: k,
+            onClick: j,
             icon: d.i,
             "aria-label": y.intl.string(b.default["NCFz+P"])
           }))

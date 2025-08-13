@@ -191,8 +191,8 @@ function X(e) {
       textAreaState: n,
       setTextAreaState: r
     }
-  }(t, f), _ = (0, M.vH)(t), {
-    isGeneratingAI: j,
+  }(t, f), j = (0, M.vH)(t), {
+    isGeneratingAI: _,
     enableAIFeatures: O,
     renderAiGenerateButton: C
   } = (0, H.U)({
@@ -275,11 +275,11 @@ function X(e) {
     parentChannel: t,
     parentMessageId: n,
     threadSettings: h,
-    privateThreadMode: _,
+    privateThreadMode: j,
     textAreaState: b,
     location: l,
     enableAIFeatures: O
-  }), R = (0, M.oD)(h, _) ? c.qtY : c.or_;
+  }), R = (0, M.oD)(h, j) ? c.qtY : c.or_;
   return (0, r.jsx)("div", {
     className: V.chat,
     onMouseDown: d,
@@ -310,14 +310,14 @@ function X(e) {
                 updateThreadSettings: m,
                 error: E,
                 disabled: N,
-                isGeneratingAI: j,
+                isGeneratingAI: _,
                 enableAIFeatures: O,
                 renderAiGenerateButton: C
               }), t.type === B.d4z.GUILD_TEXT ? (0, r.jsx)(J, {
                 startedFromMessage: null != n,
                 threadSettings: h,
                 updateThreadSettings: m,
-                privateThreadMode: _
+                privateThreadMode: j
               }) : null]
             }), (0, r.jsx)(et, {
               parentChannel: t,
@@ -396,18 +396,18 @@ function $(e) {
     renderAiGenerateButton: g
   } = e, m = null != (t = l.name) ? t : "", b = (0, L.Op)(u, {
     content: m
-  }), y = (0, M.Od)(n, i), x = null != i && !f, _ = (0, O.Dt)(), j = f ? W.intl.string(W.t["Nb2/RE"]) : "" !== y ? y : W.intl.string(W.t["Nb2/RE"]);
+  }), y = (0, M.Od)(n, i), x = null != i && !f, j = (0, O.Dt)(), _ = f ? W.intl.string(W.t["Nb2/RE"]) : "" !== y ? y : W.intl.string(W.t["Nb2/RE"]);
   return (0, r.jsx)(c.hjN, {
     tag: "label",
-    htmlFor: _,
+    htmlFor: j,
     title: W.intl.string(x ? W.t.JPvIiI : W.t.j3XWjI),
     className: V.formSection,
     children: (0, r.jsxs)("div", {
       className: V.threadNameContainer,
       children: [(0, r.jsx)(o.Is, {
         value: m,
-        id: _,
-        placeholder: j,
+        id: j,
+        placeholder: _,
         maxLength: B.HN8,
         onChange: e => {
           s({
@@ -462,7 +462,7 @@ function ee(e) {
       content: n.textValue
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(j.Z, {
+    children: [(0, r.jsx)(_.Z, {
       channelId: t.id,
       type: q,
       canAttachFiles: x
@@ -471,7 +471,7 @@ function ee(e) {
       children: (0, r.jsx)(c.pdY, {
         error: O
       })
-    }), (0, r.jsx)(_.ZP, {
+    }), (0, r.jsx)(j.ZP, {
       type: q,
       channel: t,
       placeholder: W.intl.string(W.t.taZfIC),

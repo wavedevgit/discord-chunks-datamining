@@ -2,7 +2,7 @@
 /** chunk id: 131333, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => k
+  t: () => j
 }), require("./388685.js"), require("./35282.js"), require("./413496.js"), require("./433524.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -117,7 +117,7 @@ function M(e) {
       return "enter"
   }
 }
-let j = Chunk73800.forwardRef(function(e, t) {
+let k = Chunk73800.forwardRef(function(e, t) {
   let {
     sprites: n
   } = e, [a, s] = i.useState(null), {
@@ -164,7 +164,7 @@ let j = Chunk73800.forwardRef(function(e, t) {
   })
 });
 
-function k(e) {
+function j(e) {
   let {
     children: t
   } = e, n = i.useRef({}), [o, l] = i.useState(null), c = M(o), _ = i.useRef(null), [h, m] = i.useState(false), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), b = i.useCallback(e => {
@@ -195,7 +195,7 @@ function k(e) {
     value: y,
     children: [t, Object.keys(w).map(e => {
       let t = w[e];
-      return (0, r.jsx)(j, {
+      return (0, r.jsx)(k, {
         ref: t => {
           null != t ? n.current[e] = t : delete n.current[e]
         },

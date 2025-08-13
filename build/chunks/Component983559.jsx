@@ -84,7 +84,7 @@ function w(e) {
       isLoaded: null == w ? true : w.isLoaded,
       children: (0, r.jsx)(m.NJ, {
         value: H,
-        children: (0, r.jsxs)(j.Z, {
+        children: (0, r.jsxs)(_.Z, {
           ref: U,
           user: t,
           displayProfile: w,
@@ -113,7 +113,7 @@ function w(e) {
                 themeType: P.lY.SIDEBAR,
                 animateOnHover: !F,
                 className: N.banner
-              }), (0, r.jsx)(_.Z, {
+              }), (0, r.jsx)(j.Z, {
                 userId: t.id,
                 className: N.toast
               }), (0, r.jsx)(y.Z, {

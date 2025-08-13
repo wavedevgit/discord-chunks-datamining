@@ -40,7 +40,7 @@ function b(e) {
 function y(e) {
   let {
     channel: t
-  } = e, [n] = t.recipients, y = (0, l.e7)([o.default], () => o.default.getUser(n)), x = (0, l.e7)([o.default], () => o.default.getCurrentUser()), _ = (0, d.Z)(), [j, O] = (0, u.Z)(n);
+  } = e, [n] = t.recipients, y = (0, l.e7)([o.default], () => o.default.getUser(n)), x = (0, l.e7)([o.default], () => o.default.getCurrentUser()), j = (0, d.Z)(), [_, O] = (0, u.Z)(n);
   if (i.useEffect(() => {
       (0, s.t)()
     }, []), i.useEffect(() => {
@@ -51,7 +51,7 @@ function y(e) {
         withMutualGuilds: true,
         channelId: t.id
       })
-    }, [y, n, t.id]), null == y || null == x || !_) return null;
+    }, [y, n, t.id]), null == y || null == x || !j) return null;
   let v = "user-profile-sidebar-heading-".concat(y.id),
     C = c.ZP.getName(null, t.id, y);
   return (0, r.jsx)("aside", {
@@ -65,7 +65,7 @@ function y(e) {
           })
         })
       }),
-      children: j ? (0, r.jsx)(f.Z, b({
+      children: _ ? (0, r.jsx)(f.Z, b({
         user: y,
         currentUser: x,
         onHide: O

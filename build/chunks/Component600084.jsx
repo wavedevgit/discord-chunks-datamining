@@ -56,7 +56,7 @@ function F(e) {
   if (b.Ec.has(n.type)) return (0, r.jsx)(M.Z, {
     channel: n
   });
-  if (a) return (0, r.jsx)(j.Z, {
+  if (a) return (0, r.jsx)(k.Z, {
     channel: n
   });
   if (i) return (0, r.jsx)(D.Z, {
@@ -78,15 +78,15 @@ function V(e) {
     canManageRoles: x,
     canReadMessageHistory: M
   } = (0, o.cj)([v.Z], () => ({
-    canManageRoles: v.Z.can(k.Plq.MANAGE_ROLES, f),
-    canReadMessageHistory: v.Z.can(k.Plq.READ_MESSAGE_HISTORY, f)
-  })), j = (0, o.e7)([g.Z], () => O === k.d4z.DM ? g.Z.getMutualGuilds(f.getRecipientId()) : null, [f, O]), {
+    canManageRoles: v.Z.can(j.Plq.MANAGE_ROLES, f),
+    canReadMessageHistory: v.Z.can(j.Plq.READ_MESSAGE_HISTORY, f)
+  })), k = (0, o.e7)([g.Z], () => O === j.d4z.DM ? g.Z.getMutualGuilds(f.getRecipientId()) : null, [f, O]), {
     systemDMRedesignEnabled: V
   } = m.Z.useExperiment({
     location: "bf1a4f_1"
   }, {
     autoTrackExposure: null != (t = f.isSystemDM()) && t
-  }), H = (0, u.Z)(null != (n = null == N ? true : N.id) ? n : k.lds), {
+  }), H = (0, u.Z)(null != (n = null == N ? true : N.id) ? n : j.lds), {
     authorizedAppToken: Y,
     authorizedAppsFetchState: W
   } = (0, o.cj)([y.Z], () => ({
@@ -96,10 +96,10 @@ function V(e) {
     location: "EmptyMessages"
   }).enabledDesktop;
   if (i.useEffect(() => {
-      O === k.d4z.DM && null == j && null != N && s.Z.wait(() => (0, E.Z)(f.getRecipientId(), N.getAvatarURL(null, 80), {
+      O === j.d4z.DM && null == k && null != N && s.Z.wait(() => (0, E.Z)(f.getRecipientId(), N.getAvatarURL(null, 80), {
         withMutualGuilds: true
       }))
-    }, [j, O, f, N]), i.useEffect(() => {
+    }, [k, O, f, N]), i.useEffect(() => {
       (null == N ? true : N.bot) && W === y.M.NOT_FETCHED && l.Z.fetch()
     }, [null == N ? true : N.bot, W]), f.isSystemDM()) return V ? (0, r.jsx)(L.Z, {
     channel: f
@@ -107,7 +107,7 @@ function V(e) {
     channel: f,
     children: G.intl.string(G.t.Rzvnio)
   });
-  if (O === k.d4z.DM) {
+  if (O === j.d4z.DM) {
     let e;
     return null != N && null != H ? null != Y && (e = (0, r.jsxs)("div", {
       className: B.buttonContainer,

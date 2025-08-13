@@ -26,11 +26,11 @@ let b = function(e) {
     closePicker: y
   } = (0, o.B)(), {
     canAccessPicker: x,
-    entryPoint: _
+    entryPoint: j
   } = (0, c.m)({
     location: "channel_header_toolbar",
     channelId: t.id
-  }), j = (0, u.Nj)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), O = x && _ === s.FN.TOOLBAR && j, [v, C] = (0, d.US)(O ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = v === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, S = i.useCallback(() => {
+  }), _ = (0, u.Nj)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), O = x && j === s.FN.TOOLBAR && _, [v, C] = (0, d.US)(O ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = v === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, S = i.useCallback(() => {
     E && C(g.L.TAKE_ACTION), n === t.id ? (y(), h.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {
       action: "close"
     })) : (b(t.id), h.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {

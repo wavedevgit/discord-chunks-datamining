@@ -113,8 +113,8 @@ function N(e) {
   D = S(D);
   let {
     primaryColor: M,
-    secondaryColor: j
-  } = (0, f.Z)(null != C ? C : y), k = "linear-gradient(45deg, ".concat(M, ", ").concat(j, ")"), U = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), G = i.useRef(false), B = (0, u.O)(e => {
+    secondaryColor: k
+  } = (0, f.Z)(null != C ? C : y), j = "linear-gradient(45deg, ".concat(M, ", ").concat(k, ")"), U = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), G = i.useRef(false), B = (0, u.O)(e => {
     if (false === G.current && e) {
       var t;
       null == D || null == (t = D.onView) || t.call(D), (0, m.GF)(D.id, D.linkType, D.referrerId, D.activityCustomId), G.current = true
@@ -180,7 +180,7 @@ function N(e) {
       })]
     }), (0, r.jsxs)("div", {
       style: {
-        background: k
+        background: j
       },
       children: [(0, r.jsxs)("div", {
         className: b.contentContainer,

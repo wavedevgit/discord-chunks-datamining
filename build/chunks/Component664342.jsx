@@ -109,7 +109,7 @@ function T(e) {
   }), w = (0, m.Z)(t);
 
   function A() {
-    (0, _.Kh)(t.id)
+    (0, j.Kh)(t.id)
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "thread-context",
@@ -133,7 +133,7 @@ function T(e) {
         icon: l.rgF,
         action: function() {
           A(), setTimeout(() => {
-            j.S.dispatch(E.CkL.FOCUS_SEARCH, {
+            _.S.dispatch(E.CkL.FOCUS_SEARCH, {
               prefillCurrentChannel: false
             })
           }, 2e3)
@@ -143,7 +143,7 @@ function T(e) {
         label: S.intl.string(S.t["2BSH7u"]),
         icon: l.rgF,
         action: function() {
-          A(), j.S.dispatch(E.CkL.TOGGLE_CHANNEL_PINS)
+          A(), _.S.dispatch(E.CkL.TOGGLE_CHANNEL_PINS)
         }
       })]
     }), (0, r.jsxs)(l.kSQ, {

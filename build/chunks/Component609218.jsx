@@ -2,8 +2,8 @@
 /** chunk id: 609218, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k,
-  p: () => j
+  Z: () => j,
+  p: () => k
 }), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -38,17 +38,17 @@ var Chunk255367 = require("./255367.js"),
   Chunk42948 = require("./42948.js"),
   Chunk109194 = require("./109194.js"),
   Chunk352812 = require("./352812.js"),
-  j = function(e) {
+  k = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.PARENT_CONTAINER = 1] = "PARENT_CONTAINER", e[e.TAB_PARENT_CONTAINER = 2] = "TAB_PARENT_CONTAINER", e
   }({});
 
-function k(e) {
+function j(e) {
   let {
     containerContext: t,
     image: n,
     title: o,
-    description: j,
-    enableSocialProof: k,
+    description: k,
+    enableSocialProof: j,
     analyticsLocationSection: U,
     upsellViewedTrackingData: G,
     onClose: B,
@@ -57,11 +57,11 @@ function k(e) {
     isEmojiPickerOverlay: V = false
   } = e, H = (0, s.e7)([b.Z], () => b.Z.affinities), Y = (0, s.e7)([b.Z], () => b.Z.hasFetched);
   i.useEffect(() => {
-    !Y && k && f.MH()
-  }, [Y, k]), i.useEffect(() => {
+    !Y && j && f.MH()
+  }, [Y, j]), i.useEffect(() => {
     m.default.track(N.rMx.PREMIUM_UPSELL_VIEWED, G), null == Z || Z()
   }, [Z, G]);
-  let W = H.length > 1 && k,
+  let W = H.length > 1 && j,
     K = () => 2 === t ? P.hasTabParentContainer : 1 === t ? P.hasParentContainer : P.noParentContainer,
     z = () => {
       m.default.track(N.rMx.PREMIUM_PROMOTION_OPENED, {
@@ -120,7 +120,7 @@ function k(e) {
               variant: "text-md/medium",
               color: "text-secondary",
               className: R.body,
-              children: j
+              children: k
             })]
           })]
         }), (0, r.jsx)("div", {
@@ -178,7 +178,7 @@ function k(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           className: P.body,
-          children: j
+          children: k
         })]
       }), (0, r.jsxs)("div", {
         className: P.ctaContainer,

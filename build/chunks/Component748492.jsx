@@ -2,10 +2,10 @@
 /** chunk id: 748492, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ds: () => k,
+  Ds: () => j,
   YB: () => M,
   of: () => U,
-  q5: () => j
+  q5: () => k
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -66,8 +66,8 @@ function M(e) {
     onJumpToChannel: w,
     idle: x,
     selectedParticipant: M,
-    embeddedActivity: j
-  } = e, k = (0, c.bp)() === R.IlC.POPOUT, U = (0, a.e7)([S.Z], () => S.Z.isVideoEnabled()), G = (0, a.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), B = false === (null == (t = null == G ? true : G.disabled) || t), Z = (0, d.Z)([s])[0], F = (0, m.Z)(o), {
+    embeddedActivity: k
+  } = e, j = (0, c.bp)() === R.IlC.POPOUT, U = (0, a.e7)([S.Z], () => S.Z.isVideoEnabled()), G = (0, a.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), B = false === (null == (t = null == G ? true : G.disabled) || t), Z = (0, d.Z)([s])[0], F = (0, m.Z)(o), {
     parentAnalyticsLocation: V
   } = (0, u.ZP)(), H = e => {
     (0, _.v)(V, _.d.CAMERA, e), l.Z.setVideoEnabled(e)
@@ -120,14 +120,14 @@ function M(e) {
         justify: p.Z.Justify.END,
         basis: "50%",
         align: p.Z.Align.CENTER,
-        children: [k || (0, A.R)() ? null : (0, r.jsx)(v.Z, {
+        children: [j || (0, A.R)() ? null : (0, r.jsx)(v.Z, {
           className: D.rightPipIcon,
           popoutOpen: false,
           onOpenPopout: W,
           onClosePopout: P.Vq
         }), (0, r.jsx)(O.Z, {
           applicationId: s,
-          location: j.location,
+          location: k.location,
           className: D.rightPipIcon
         })]
       })]
@@ -135,7 +135,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   var t, n;
   let {
     channel: i,
@@ -180,7 +180,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     channelId: t,
     participantsOpen: n,
