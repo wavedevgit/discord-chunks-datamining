@@ -41,7 +41,7 @@ let l = Object.values(Chunk99815.E),
       sort_desc: true,
       interval_type: Chunk381338.q.WEEKLY,
       statistics: a(l),
-      application_id: "356869127241072640"
+      application_id: "1402418696126992445"
     },
     users: [s("213097507503210496", l), s("1011326743526785086", l), s("107562988810027008", l), s("1088605061631983768", l), s("1073722616684232897", l)]
   }

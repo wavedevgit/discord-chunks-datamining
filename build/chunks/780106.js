@@ -10,7 +10,7 @@ var Chunk593472 = require("./593472.js"),
 let i = {
     None: true,
     Terraria: {
-      id: "356943499456937984",
+      id: "1402418344912752671",
       nativeProcessObserverId: 34,
       name: "Terraria",
       processName: "Terraria",

@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk782959 = require("./782959.jsx"),
   Chunk538445 = require("./538445.jsx"),
   Chunk933104 = require("./933104.jsx"),
-  Chunk276645 = require("./276645.jsx"),
+  Chunk355251 = require("./355251.jsx"),
   Chunk970731 = require("./970731.jsx"),
   Chunk626135 = require("./626135.js"),
   Chunk267642 = require("./267642.js"),
@@ -117,9 +117,10 @@ let D = Chunk73800.memo(function(e) {
           });
         case l.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK:
           return (0, r.jsx)(R, {
-            renderPopout: (0, r.jsx)(_.Z, {
+            renderPopout: e => (0, r.jsx)(_.Z, {
               guildId: i.id,
-              markAsDismissed: M
+              markAsDismissed: M,
+              targetElementRef: e
             }),
             renderGuildHeaderDropdownButton: o
           });
