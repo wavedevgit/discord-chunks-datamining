@@ -48,7 +48,7 @@ function p(e, t) {
 function m(e) {
   let {
     widget: t
-  } = e, m = l.useRef(null), b = e => {
+  } = e, m = l.useRef(null), g = e => {
     if (e.shiftKey) {
       (0, c.y8)(t.type), (0, s.L$)(d.qb.WIDGET_REMOVED);
       return
@@ -82,7 +82,7 @@ function m(e) {
           children: (0, r.jsx)(i.sNh, {
             id: "remove-widget",
             label: u.intl.string(u.t.Mm07YW),
-            action: b,
+            action: g,
             color: "danger",
             icon: i.XHJ
           })

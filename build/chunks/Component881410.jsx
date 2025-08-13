@@ -40,11 +40,11 @@ function f(e) {
       applicationId: e
     })
   }, [n]), {
-    options: b,
-    matchSorterOptions: g
+    options: g,
+    matchSorterOptions: b
   } = (0, a.h)(), j = l.useCallback(e => {
     var t, n;
-    return "" === e.trim() ? b : (0, i.Lu)(b, e, (t = u({}, g), n = n = {
+    return "" === e.trim() ? g : (0, i.Lu)(g, e, (t = u({}, b), n = n = {
       threshold: i.Lu.rankings.CONTAINS
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -56,7 +56,7 @@ function f(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
-  }, [b, g]);
+  }, [g, b]);
   return (0, r.jsx)(o.yRy, {
     targetElementRef: p,
     position: "bottom",

@@ -20,7 +20,7 @@ function d(e) {
     channelId: u,
     loading: f = false,
     disableInteraction: p = false
-  } = e, m = (0, o.Z)(t.applicationId), b = m.length > 0;
+  } = e, m = (0, o.Z)(t.applicationId), g = m.length > 0;
   return f ? (0, r.jsx)("div", {
     className: c.loadingCover
   }) : (0, r.jsxs)("div", {
@@ -31,8 +31,8 @@ function d(e) {
       applicationId: t.applicationId,
       userId: n,
       disableInteraction: p,
-      className: b ? s.socialProofBackdrop : true
-    }), !p && b && (0, r.jsx)(l.Z, {
+      className: g ? s.socialProofBackdrop : true
+    }), !p && g && (0, r.jsx)(l.Z, {
       label: a.intl.formatToPlainString(a.t.ujhJdH, {
         numFriends: m.length
       }),

@@ -44,7 +44,7 @@ function O(e) {
   });
   return null != P && (0, s.Rh)(n) ? (0, r.jsx)(c.Gt, {
     value: I,
-    children: (0, r.jsx)(b.Z, {
+    children: (0, r.jsx)(g.Z, {
       targetElementRef: _,
       sourceType: y.n_.ACTIVITY,
       user: t,
@@ -73,7 +73,7 @@ function O(e) {
             onClose: h,
             children: e
           }),
-          children: (0, r.jsx)(g.Z, {
+          children: (0, r.jsx)(b.Z, {
             entry: n,
             user: t,
             onClose: h,

@@ -106,7 +106,7 @@ function P(e) {
             profileGuildId: null == P ? true : P.guildId
           })
         }), A.map((e, l) => (0, r.jsx)("li", {
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(g.Z, {
             user: t,
             currentUser: n,
             activity: e,
@@ -134,7 +134,7 @@ function P(e) {
       children: (0, r.jsx)("ul", {
         className: I.cards,
         children: C.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(g.Z, {
+          children: (0, r.jsx)(b.Z, {
             location: "UserProfileModalV2Activity",
             user: t,
             currentUser: n,

@@ -41,7 +41,7 @@ function I(e) {
   return (0, r.jsxs)(i.zJl, {
     fade: true,
     className: _.scroller,
-    children: [(null == I ? true : I.bio) != null && (null == I ? true : I.bio) !== "" && !S && (0, r.jsx)(b.Z, {
+    children: [(null == I ? true : I.bio) != null && (null == I ? true : I.bio) !== "" && !S && (0, r.jsx)(g.Z, {
       userBio: I.bio,
       setLineClamp: false
     }), (null == I ? true : I.guildId) != null && (0, r.jsx)(O.Z, {
@@ -74,7 +74,7 @@ function I(e) {
     }), A.length > 0 && (0, r.jsx)(x.Z, {
       heading: v.intl.string(v.t["3fe7U1"]),
       scrollIntoView: P === h.Tb.CONNECTIONS,
-      children: (0, r.jsx)(g.ZP, {
+      children: (0, r.jsx)(b.ZP, {
         connectedAccounts: A,
         className: _.connections,
         userId: t.id,
@@ -82,7 +82,7 @@ function I(e) {
       })
     }), C.length > 0 && (0, r.jsx)(x.Z, {
       heading: v.intl.string(v.t.PHjkRE),
-      children: C.map(e => (0, r.jsx)(g.tH, {
+      children: C.map(e => (0, r.jsx)(b.tH, {
         className: _.appsConnections,
         applicationRoleConnection: e,
         locale: w,

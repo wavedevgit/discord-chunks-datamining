@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk918857 = require("./918857.js"),
   Chunk276441 = require("./276441.js");
-let g = {
+let b = {
     [Chunk228168.qb.WIDGET_ADDED]: {
       message: Chunk388032.intl.string(Chunk388032.t.fFP1U1),
       icon: (0, Chunk255367.jsx)(Chunk481060.dz2, {
@@ -32,15 +32,26 @@ let g = {
         color: Chunk481060.TVs.colors.STATUS_POSITIVE.css
       }),
       toast_id: "user_profile_widget_removed"
+    },
+    [Chunk228168.qb.WIDGET_SAVE_FAILURE]: {
+      message: Chunk388032.intl.string(Chunk388032.t["84MExs"]),
+      icon: (0, Chunk255367.jsx)(Chunk481060.Uz9, {
+        size: "sm",
+        color: Chunk481060.TVs.colors.STATUS_DANGER.css
+      }),
+      toast_id: "user_profile_widget_save_failure",
+      type: Chunk481060.ToastType.FAILURE
     }
   },
   j = e => {
     let {
       message: t,
-      icon: n
+      icon: n,
+      type: l
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(b.toast, m.toast),
+      className: o()(g.toast, m.toast),
+      "data-type": l,
       children: [(0, r.jsx)("div", {
         className: m.toastIcon,
         children: n
@@ -55,9 +66,9 @@ let g = {
     let {
       className: t,
       onAutoHide: n
-    } = e, i = (0, u.be)(), f = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), [p, b] = l.useState(false), [y, x] = l.useState(null);
+    } = e, i = (0, u.be)(), f = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), [p, g] = l.useState(false), [y, x] = l.useState(null);
     l.useEffect(() => {
-      null !== i ? (b(true), x(g[i]), s.uvj.announce(g[i].message)) : b(false)
+      null !== i ? (g(true), x(b[i]), s.uvj.announce(b[i].message)) : g(false)
     }, [i]);
     let O = (0, s.Yzy)(p, {
       from: {

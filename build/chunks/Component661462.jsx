@@ -56,8 +56,8 @@ function m(e) {
     displayProfile: d,
     guildId: u,
     channelId: m,
-    items: b,
-    initialSection: g,
+    items: g,
+    initialSection: b,
     initialSubsection: j,
     onClose: y
   } = e, {
@@ -83,12 +83,12 @@ function m(e) {
       })
     }
     return e
-  }({}, null != (t = b.find(e => {
+  }({}, null != (t = g.find(e => {
     let {
       section: t
     } = e;
-    return t === g
-  })) ? t : b[0]), a = a = {
+    return t === b
+  })) ? t : g[0]), a = a = {
     subsection: j
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
     var n = Object.keys(e);
@@ -117,10 +117,10 @@ function m(e) {
             section: e
           }), _(t => {
             var n;
-            return null != (n = b.find(t => t.section === e)) ? n : t
+            return null != (n = g.find(t => t.section === e)) ? n : t
           })
         },
-        children: b.map(e => (0, r.jsx)(i.njP.Item, {
+        children: g.map(e => (0, r.jsx)(i.njP.Item, {
           className: f.tabBarItem,
           id: e.section,
           "aria-label": e.text,

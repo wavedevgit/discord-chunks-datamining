@@ -88,7 +88,7 @@ function S(e) {
                 user: t
               })
             }), (0, r.jsxs)("div", {
-              children: [(0, r.jsx)(g.Z, {
+              children: [(0, r.jsx)(b.Z, {
                 user: t,
                 displayProfile: M,
                 themeType: I.lY.MODAL
@@ -110,7 +110,7 @@ function S(e) {
                 nickname: B,
                 pronouns: null == M ? true : M.pronouns,
                 nicknameVariant: "heading-xl/bold",
-                tags: (0, r.jsx)(b.Z, {
+                tags: (0, r.jsx)(g.Z, {
                   displayProfile: M,
                   themeType: I.lY.MODAL,
                   onClose: R

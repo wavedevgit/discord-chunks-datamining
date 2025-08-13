@@ -78,7 +78,7 @@ function I(e) {
             profileGuildId: null == I ? true : I.guildId
           })
         }), S.map((e, l) => (0, r.jsx)("li", {
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(g.Z, {
             user: t,
             currentUser: n,
             activity: e,
@@ -99,7 +99,7 @@ function I(e) {
       children: (0, r.jsx)("ul", {
         className: v.activityList,
         children: w.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(g.Z, {
+          children: (0, r.jsx)(b.Z, {
             location: "UserProfileModalActivity",
             user: t,
             currentUser: n,

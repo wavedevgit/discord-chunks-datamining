@@ -82,7 +82,7 @@ function S(e) {
               })
             })
           }),
-          children: (0, r.jsxs)(g.Z, {
+          children: (0, r.jsxs)(b.Z, {
             user: t,
             displayProfile: F,
             themeType: E.lY.MODAL,
@@ -140,7 +140,7 @@ function S(e) {
                 nickname: V,
                 pronouns: null == F ? true : F.pronouns,
                 nicknameVariant: "heading-xl/bold",
-                nicknameIcons: (0, r.jsx)(b.Z, {
+                nicknameIcons: (0, r.jsx)(g.Z, {
                   size: "sm",
                   userId: t.id
                 }),

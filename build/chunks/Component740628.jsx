@@ -32,23 +32,23 @@ function O(e) {
     channelId: c,
     onClose: s
   } = e;
-  return t === g.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
+  return t === b.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
     user: l,
     currentUser: i,
     displayProfile: o,
     guildId: a,
     onClose: s
-  }) : t === g.oh.MUTUAL_FRIENDS ? (0, r.jsx)(m.Z, {
+  }) : t === b.oh.MUTUAL_FRIENDS ? (0, r.jsx)(m.Z, {
     user: l,
     guildId: a,
     channelId: c,
     onClose: s
-  }) : t === g.oh.MUTUAL_GUILDS ? (0, r.jsx)(b.Z, {
+  }) : t === b.oh.MUTUAL_GUILDS ? (0, r.jsx)(g.Z, {
     user: l,
     onClose: s
-  }) : t === g.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
+  }) : t === b.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
     user: l
-  }) : t === g.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
+  }) : t === b.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
     user: l,
     currentUser: i,
     displayProfile: o,
@@ -71,8 +71,8 @@ function h(e) {
     currentUser: f,
     displayProfile: p,
     guildId: m,
-    items: b,
-    initialSection: h = g.oh.USER_INFO,
+    items: g,
+    initialSection: h = b.oh.USER_INFO,
     initialSubsection: v,
     onClose: _
   } = e, {
@@ -81,20 +81,20 @@ function h(e) {
     section: E,
     subsection: T
   }, Z] = l.useState({
-    section: null != (d = null == (t = b.find(e => {
+    section: null != (d = null == (t = g.find(e => {
       let {
         section: t
       } = e;
       return t === h
-    })) ? true : t.section) ? d : null == (n = b[0]) ? true : n.section,
+    })) ? true : t.section) ? d : null == (n = g[0]) ? true : n.section,
     subsection: v
   });
   l.useEffect(() => {
-    null == b.find(e => e.section === E) && Z({
-      section: b[0].section,
+    null == g.find(e => e.section === E) && Z({
+      section: g[0].section,
       subsection: true
     })
-  }, [b, E]);
+  }, [g, E]);
   let N = l.useCallback(e => {
     I({
       action: "PRESS_SECTION",
@@ -122,7 +122,7 @@ function h(e) {
       type: "top",
       selectedItem: E,
       onItemSelect: N,
-      children: b.map(e => {
+      children: g.map(e => {
         let {
           section: t,
           text: n
@@ -138,7 +138,7 @@ function h(e) {
         }, t)
       })
     }), (0, r.jsx)(O, {
-      items: b,
+      items: g,
       section: E,
       subsection: T,
       user: u,

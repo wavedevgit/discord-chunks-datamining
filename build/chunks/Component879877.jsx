@@ -15,9 +15,9 @@ var Chunk255367 = require("./255367.js"),
 function u(e) {
   let {
     tags: t
-  } = e, n = null == t ? true : t.filter(e => null != (0, c.z)(e)), i = (0, l.useRef)(new Map), o = (0, l.useRef)(null), [u, g] = (0, l.useState)(0), [j, y] = (0, l.useState)(false), {
+  } = e, n = null == t ? true : t.filter(e => null != (0, c.z)(e)), i = (0, l.useRef)(new Map), o = (0, l.useRef)(null), [u, b] = (0, l.useState)(0), [j, y] = (0, l.useState)(false), {
     trackUserProfileAction: x
-  } = (0, a.KZ)(), O = b(o, n, i, g);
+  } = (0, a.KZ)(), O = g(o, n, i, b);
   if ((0, l.useEffect)(() => (O(), window.addEventListener("resize", O), () => {
       window.removeEventListener("resize", O)
     }), [O, null == n ? true : n.join("")]), null == n || 0 === n.length) return null;
@@ -114,7 +114,7 @@ let f = e => {
       })
     })
   },
-  b = (e, t, n, r) => (0, l.useCallback)(() => {
+  g = (e, t, n, r) => (0, l.useCallback)(() => {
     var l, i;
     if (null == t) return void r(0);
     let o = null != (i = null == (l = e.current) ? true : l.getBoundingClientRect().width) ? i : 0,

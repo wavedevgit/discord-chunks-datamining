@@ -87,7 +87,7 @@ function I(e) {
         className: v.root,
         "aria-label": G,
         parentComponent: "RestrictedUserProfileModalV2",
-        children: (0, r.jsxs)(g.Z, {
+        children: (0, r.jsxs)(b.Z, {
           user: t,
           displayProfile: R,
           themeType: x.lY.MODAL_V2,
@@ -95,7 +95,7 @@ function I(e) {
             className: v.background
           }), (0, r.jsxs)("div", {
             className: v.content,
-            children: [(0, r.jsx)(b.Z, {
+            children: [(0, r.jsx)(g.Z, {
               user: t,
               guildId: w,
               iconColor: o.TVs.colors.TEXT_DEFAULT
