@@ -1,10 +1,11 @@
-/** Chunk was on 5533 **/
+/** Chunk was on 80620 **/
 /** chunk id: 451140, original params: e,t,n (module,exports,require) **/
 module.exports = {
   lockedPickerItem: "lockedPickerItem_ba8b8d",
   guildBadge: "guildBadge_ba8b8d",
   previewBadge: "previewBadge_ba8b8d",
   lockIconOverlay: "lockIconOverlay_ba8b8d",
+  lockedBadgesSection: "lockedBadgesSection_ba8b8d",
   lockedPreviewContainer: "lockedPreviewContainer_ba8b8d",
   showAllBadges: "showAllBadges_ba8b8d",
   showAllBadgesOverlay: "showAllBadgesOverlay_ba8b8d",

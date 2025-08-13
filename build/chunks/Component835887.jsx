@@ -1,4 +1,4 @@
-/** Chunk was on 5533 **/
+/** Chunk was on 60458 **/
 /** chunk id: 835887, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -26,17 +26,19 @@ function p(e) {
     })
   }, [n]), f = i.useCallback(() => {
     (0, o.Z)(n, a.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS, "guildTagsBadgePacks"), c.Z.close()
-  }, [n]), b = (0, s.Z)();
+  }, [n]), b = (0, s.Z)(), x = i.useId();
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsx)(l.vwX, {
+      id: x,
       className: g.sectionTitle,
       children: m.intl.string(u.default.pb7lpK)
     }), (0, r.jsx)(d.g, {
       badgeCollection: b,
       handleBoostUpsellClick: f,
       onBadgeClicked: h,
-      selectedBadge: p
+      selectedBadge: p,
+      headingId: x
     })]
   })
 }

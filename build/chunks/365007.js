@@ -18,6 +18,9 @@ var Chunk525769 = require("./525769.js"),
 async function l() {
   return (await Chunk544891.tn.post({
     url: Chunk981631.ANM.WEBAUTHN_CONDITIONAL_UI_CHALLENGE,
+    headers: {
+      authorization: ""
+    },
     rejectWithError: false
   })).body
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 5533 **/
+/** Chunk was on 42926 **/
 /** chunk id: 70086, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => o
+  P: () => c
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -10,22 +10,22 @@ var Chunk755721 = require("./755721.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk369496 = require("./369496.js");
 
-function o(e) {
+function c(e) {
   let {
     onClick: t,
     className: n
   } = e;
-  return (0, r.jsxs)(l.gtL, {
-    color: i.zx.Colors.GREEN,
+  return (0, r.jsxs)(i.gtL, {
+    color: s.zx.Colors.GREEN,
     className: n,
-    innerClassName: s.upsellButton,
+    innerClassName: a.upsellButton,
     onClick: t,
-    children: [(0, r.jsx)(l.$Eu, {
+    children: [(0, r.jsx)(i.$Eu, {
       color: "white",
       size: "custom",
       height: 16,
       width: 16,
-      className: s.premiumUpsellBadge
-    }), a.intl.string(a.t["+7XY39"])]
+      className: a.premiumUpsellBadge
+    }), l.intl.string(l.t["+7XY39"])]
   })
 }

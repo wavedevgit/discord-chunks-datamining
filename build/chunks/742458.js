@@ -1,13 +1,13 @@
-/** Chunk was on 74941 **/
-/** chunk id: 742458, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 25761 **/
+/** chunk id: 742458, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Nz: () => s,
-  o9: () => o
+  o9: () => l
 }), require("./35282.js");
-var n, s = ((n = {}).PHONE = "phone", n.EMAIL = "email", n);
+var r, s = ((r = {}).PHONE = "phone", r.EMAIL = "email", r);
 let i = /^[-() \d]+$/,
-  l = e => e.startsWith("+");
+  a = e => e.startsWith("+");
 
-function o(e, t) {
-  return "phone" === e ? !l(t) : "email" !== e && !(t.length < 3) && i.test(t)
+function l(e, t) {
+  return "phone" === e ? !a(t) : "email" !== e && !(t.length < 3) && i.test(t)
 }

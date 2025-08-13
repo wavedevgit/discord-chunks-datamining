@@ -2,21 +2,25 @@
 /** chunk id: 131085, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  AC: () => p,
-  Ct: () => _,
-  ER: () => s,
-  Ek: () => a,
-  Gg: () => l,
-  QV: () => u,
-  oC: () => c,
+  AC: () => h,
+  Ct: () => p,
+  ER: () => l,
+  Ek: () => s,
+  Gg: () => c,
+  KD: () => a,
+  QV: () => d,
+  oC: () => u,
   x_: () => o
 });
 var Chunk494497 = require("./494497.js"),
   Chunk981631 = require("./981631.js"),
   o = function(e) {
     return e[e.SWORD = 0] = "SWORD", e[e.WATER_DROP = 1] = "WATER_DROP", e[e.SKULL = 2] = "SKULL", e[e.TOADSTOOL = 3] = "TOADSTOOL", e[e.MOON = 4] = "MOON", e[e.LIGHTNING = 5] = "LIGHTNING", e[e.LEAF = 6] = "LEAF", e[e.HEART = 7] = "HEART", e[e.FIRE = 8] = "FIRE", e[e.COMPASS = 9] = "COMPASS", e[e.CROSSHAIRS = 10] = "CROSSHAIRS", e[e.FLOWER = 11] = "FLOWER", e[e.FORCE = 12] = "FORCE", e[e.GEM = 13] = "GEM", e[e.LAVA = 14] = "LAVA", e[e.PSYCHIC = 15] = "PSYCHIC", e[e.SMOKE = 16] = "SMOKE", e[e.SNOW = 17] = "SNOW", e[e.SOUND = 18] = "SOUND", e[e.SUN = 19] = "SUN", e[e.WIND = 20] = "WIND", e[e.BUNNY = 21] = "BUNNY", e[e.DOG = 22] = "DOG", e[e.FROG = 23] = "FROG", e[e.GOAT = 24] = "GOAT", e[e.CAT = 25] = "CAT", e[e.DIAMOND = 26] = "DIAMOND", e[e.CROWN = 27] = "CROWN", e[e.TROPHY = 28] = "TROPHY", e[e.MONEY_BAG = 29] = "MONEY_BAG", e[e.DOLLAR_SIGN = 30] = "DOLLAR_SIGN", e
+  }({}),
+  a = function(e) {
+    return e.HOT_PINK = "#ff1c90", e.LIGHT_PINK = "#ff7fc0", e.ORANGE = "#ff8f1c", e.PEACH = "#ffae77", e.GOLD = "#eebe1a", e.LIGHT_YELLOW = "#fffc7f", e.TEAL = "#32a070", e.MINT_GREEN = "#57b59e", e.BLUE_TEAL = "#32839a", e.LIGHT_BLUE = "#71c2d9", e.PURPLE = "#8a43ff", e.LAVENDER = "#bd95ff", e.VIOLET = "#9b3fe5", e.MAUVE = "#cc8dff", e.DEEP_PURPLE = "#942e8f", e.ORCHID = "#d46cb5", e.RED = "#d14242", e.SALMON = "#ff8989", e.BROWN = "#814300", e.TAN = "#a88a6c", e.OLIVE = "#717224", e.GRAY = "#c3c3c3", e.BURGUNDY = "#5d1d47", e.ROSE = "#c58fbb", e.DARK_GRAY = "#222222", e.LIGHT_GRAY = "#cccccc", e
   }({});
-let a = [{
+let s = [{
   primary: "#ff1c90",
   secondary: "#ff7fc0"
 }, {
@@ -56,8 +60,8 @@ let a = [{
   primary: "#222222",
   secondary: "#cccccc"
 }];
-a[0].primary, a[0].secondary;
-let s = {
+s[0].primary, s[0].secondary;
+let l = {
   0: 2,
   1: 1,
   2: 1,
@@ -90,24 +94,24 @@ let s = {
   29: 1,
   30: 1
 };
-var l = function(e) {
+var c = function(e) {
   return e[e.SIZE_12 = 12] = "SIZE_12", e[e.SIZE_16 = 16] = "SIZE_16", e[e.SIZE_24 = 24] = "SIZE_24", e[e.SIZE_32 = 32] = "SIZE_32", e[e.SIZE_36 = 36] = "SIZE_36", e
 }({});
-let c = {
+let u = {
     12: 16,
     16: 16,
     24: 24,
     32: 32,
     36: 40
   },
-  u = [6, 0, 7, 8, 1, 2, 4, 5, 9, 3],
-  d = [21, 22, 23, 24, 25],
-  f = [26, 27, 28, 29, 30],
-  _ = {
-    [Chunk981631.oNc.GUILD_TAGS_BADGE_PACK_PETS]: d,
-    [Chunk981631.oNc.GUILD_TAGS_BADGE_PACK_FLEX]: f
-  },
+  d = [6, 0, 7, 8, 1, 2, 4, 5, 9, 3],
+  f = [21, 22, 23, 24, 25],
+  _ = [26, 27, 28, 29, 30],
   p = {
+    [Chunk981631.oNc.GUILD_TAGS_BADGE_PACK_PETS]: f,
+    [Chunk981631.oNc.GUILD_TAGS_BADGE_PACK_FLEX]: _
+  },
+  h = {
     [Chunk981631.oNc.GUILD_TAGS_BADGE_PACK_PETS]: Chunk494497.MB,
     [Chunk981631.oNc.GUILD_TAGS_BADGE_PACK_FLEX]: Chunk494497.Vk
   }

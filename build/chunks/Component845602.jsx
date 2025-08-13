@@ -1,4 +1,4 @@
-/** Chunk was on 1150 **/
+/** Chunk was on 80620 **/
 /** chunk id: 845602, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => C,
@@ -34,7 +34,7 @@ function k() {
       tertiary_color: null
     }
   }), {
-    gradientStyle: o,
+    gradientStyle: a,
     gradientClassname: c
   } = (0, Chunk481060.Icv)({
     colorStrings: (0, Chunk606318.DX)(exports),
@@ -59,7 +59,7 @@ function k() {
       value: exports.primary_color,
       secondaryValue: null != (e = exports.secondary_color) ? module : true,
       onChange: e => {
-        var r, a;
+        var r, o;
         return n((r = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -77,17 +77,17 @@ function k() {
             })
           }
           return e
-        }({}, t), a = a = {
+        }({}, t), o = o = {
           primary_color: e
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(o)).forEach(function(e) {
+          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(o, e))
         }), r))
       },
       onChangeGradientColors: e => n({
@@ -103,7 +103,7 @@ function k() {
 function C(e) {
   let {
     guildId: t
-  } = e, [n, o] = a.useState(h.x_.HEART), s = (0, g.Z)(), l = a.useMemo(() => ({
+  } = e, [n, a] = o.useState(x.x_.HEART), s = (0, _.Z)(), l = o.useMemo(() => ({
     unlockedBadges: s.unlockedBadges.slice(0, 10),
     lockedBadges: []
   }), [s]);
@@ -117,7 +117,7 @@ function C(e) {
         usernameStyle: {
           color: "var(--brand-400)"
         },
-        message: x.intl.string(x.t["6OSasb"]),
+        message: h.intl.string(h.t["6OSasb"]),
         decorations: (0, r.jsx)(m.S, {
           guildId: t,
           tag: "GGEZ",
@@ -126,7 +126,7 @@ function C(e) {
       })
     }), (0, r.jsx)(u.g, {
       selectedBadge: n,
-      onBadgeClicked: o,
+      onBadgeClicked: a,
       badgeCollection: l
     })]
   })

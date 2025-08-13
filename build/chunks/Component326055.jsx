@@ -1,4 +1,4 @@
-/** Chunk was on 1150 **/
+/** Chunk was on 80620 **/
 /** chunk id: 326055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => v
@@ -29,39 +29,39 @@ function v(e) {
     } = e,
     C = function(e, t) {
       if (null == e) return {};
-      var n, r, a = function(e, t) {
+      var n, r, o = function(e, t) {
         if (null == e) return {};
-        var n, r, a = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
-        return a
+        var n, r, o = {},
+          a = Object.keys(e);
+        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+        return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+        var a = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
-      return a
+      return o
     }(e, ["guildId", "powerup"]);
-  let [y, O] = a.useState(true), P = a.useMemo(() => {
+  let [y, O] = o.useState(true), w = o.useMemo(() => {
     switch (k.skuId) {
-      case o.IN:
-        return (0, r.jsx)(g.E, {
+      case a.IN:
+        return (0, r.jsx)(_.E, {
           guildId: v
         });
-      case o.If:
+      case a.If:
+        return (0, r.jsx)(_.Z, {});
+      case a.A$:
         return (0, r.jsx)(g.Z, {});
-      case o.A$:
-        return (0, r.jsx)(b.Z, {});
       default:
         return
     }
   }, [k, v]);
   (0, d.$)(v, k, d.w.DETAIL);
   let S = (0, u.Z)(v),
-    w = _.Rx[k.skuId],
-    I = null != w ? _.Cp[w] : null,
-    N = (0, s.e7)([c.Z], () => c.Z.getStateForGuild(v)),
-    E = null != I ? null == N ? true : N.allPowerups[I] : null;
+    P = f.Rx[k.skuId],
+    I = null != P ? f.Cp[P] : null,
+    E = (0, s.e7)([c.Z], () => c.Z.getStateForGuild(v)),
+    N = null != I ? null == E ? true : E.allPowerups[I] : null;
   return (0, r.jsxs)(i.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -103,13 +103,13 @@ function v(e) {
             className: j.description,
             variant: "text-sm/normal",
             children: k.description
-          }), null != E && (0, r.jsx)(i.Text, {
+          }), null != N && (0, r.jsx)(i.Text, {
             className: j.description,
             variant: "text-sm/normal",
-            children: x.intl.formatToPlainString(h.default.NAFGkJ, {
-              level: E.title
+            children: h.intl.formatToPlainString(x.default.NAFGkJ, {
+              level: N.title
             })
-          }), (0, r.jsx)(f.q, {
+          }), (0, r.jsx)(b.q, {
             powerup: k
           }), null != y && (0, r.jsx)(i.Text, {
             className: j.error,
@@ -123,9 +123,9 @@ function v(e) {
             onError: O
           })]
         })]
-      }), null != P && (0, r.jsx)("div", {
+      }), null != w && (0, r.jsx)("div", {
         className: j.exampleImage,
-        children: P
+        children: w
       })]
     }), (0, r.jsx)(i.olH, {
       className: j.close,
