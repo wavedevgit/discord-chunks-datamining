@@ -98,6 +98,7 @@ function x(e) {
     }), (0, r.jsx)(c.N4, {
       children: null != k ? (0, r.jsx)(l.DY3, {
         text: k,
+        delay: 100,
         children: (0, r.jsx)(l.zxk, {
           text: L,
           fullWidth: true

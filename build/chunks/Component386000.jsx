@@ -2,17 +2,18 @@
 /** chunk id: 386000, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk628581 = require("./628581.js"),
   Chunk522651 = require("./522651.js"),
   Chunk8404 = require("./8404.js"),
   Chunk871499 = require("./871499.jsx");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,22 +22,22 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -44,7 +45,7 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -52,38 +53,38 @@ function _(e, t) {
   return i
 }
 
-function p(e) {
+function h(e) {
   var {
     selfMute: t,
     serverMute: n,
-    suppress: u,
-    centerButton: _ = false,
-    awaitingRemote: p,
-    onMouseEnter: h,
-    onMouseLeave: m,
-    onClick: g
-  } = e, E = f(e, ["selfMute", "serverMute", "suppress", "centerButton", "awaitingRemote", "onMouseEnter", "onMouseLeave", "onClick"]);
+    suppress: d,
+    centerButton: p = false,
+    awaitingRemote: h,
+    onMouseEnter: m,
+    onMouseLeave: g,
+    onClick: E
+  } = e, b = _(e, ["selfMute", "serverMute", "suppress", "centerButton", "awaitingRemote", "onMouseEnter", "onMouseLeave", "onClick"]);
   let {
-    parentAnalyticsLocation: b
-  } = (0, o.ZP)(), y = t || n || u, O = _ ? c.d : c.Z, v = (0, a.Z)(t, n, u, p), {
-    events: I,
-    play: T,
-    Component: S
-  } = (0, l.b)(y);
-  return i.useEffect(() => () => T(), [T, y]), (0, r.jsx)(O, d({
-    iconComponent: S,
+    parentAnalyticsLocation: y
+  } = (0, a.ZP)(), O = t || n || d, v = p ? u.d : u.Z, I = (0, s.Z)(t, n, d, h), {
+    events: T,
+    play: S,
+    Component: A
+  } = (0, c.b)(O), N = n || d ? o.v0G : A;
+  return i.useEffect(() => () => S(), [S, O]), (0, r.jsx)(v, f({
+    iconComponent: N,
     isTrayButton: true,
-    caretColor: y ? "red" : "primaryDark",
-    color: y ? "red" : true,
-    label: v,
+    caretColor: O ? "red" : "primaryDark",
+    color: O ? "red" : true,
+    label: I,
     onMouseEnter: e => {
-      null == h || h(e), I.onMouseEnter()
+      null == m || m(e), T.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == m || m(e), I.onMouseLeave()
+      null == g || g(e), T.onMouseLeave()
     },
     onClick: e => {
-      null == g || g(e), (0, s.v)(b, s.d.MIC, t)
+      null == E || E(e), (0, l.v)(y, l.d.MIC, t)
     }
-  }, E))
+  }, b))
 }
