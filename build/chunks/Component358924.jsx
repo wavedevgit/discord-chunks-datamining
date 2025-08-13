@@ -316,7 +316,7 @@ ei.Header = er, ei.Body = e => {
     partySize: a,
     members: s,
     onChannelContextMenu: c
-  } = e, p = l.useRef(null), h = (0, C.ZP)(r, true), f = (0, R.EB)(n, 32), g = (0, R.gM)(n);
+  } = e, p = l.useRef(null), f = (0, C.ZP)(r, true), h = (0, R.EB)(n, 32), g = (0, R.gM)(n);
   return (0, i.jsx)($, {
     children: (0, i.jsxs)("div", {
       className: Y.voiceSection,
@@ -328,9 +328,9 @@ ei.Header = er, ei.Body = e => {
         tabIndex: false,
         children: (0, i.jsxs)("div", {
           className: Y.voiceSectionAssets,
-          children: [null != f ? (0, i.jsx)("img", {
+          children: [null != h ? (0, i.jsx)("img", {
             alt: "",
-            src: f,
+            src: h,
             className: o()(Y.voiceSectionGuildImage, Y.largeImageMask)
           }) : (0, i.jsx)("div", {
             className: Y.voiceSectionNoGuildImageWrapper,
@@ -352,14 +352,14 @@ ei.Header = er, ei.Body = e => {
         })
       }), (0, i.jsx)(u.P3F, {
         onClick: () => {
-          d.default.selectVoiceChannel(r.id), (0, A.Kh)(r.id)
+          d.default.selectVoiceChannel(r.id), (0, Z.Kh)(r.id)
         },
         focusProps: {
           ringTarget: p
         },
         children: (0, i.jsxs)("div", {
           className: Y.voiceSectionDetails,
-          children: [X(n.name, Y.voiceSectionText), Q(h, Y.voiceSectionText)]
+          children: [X(n.name, Y.voiceSectionText), Q(f, Y.voiceSectionText)]
         })
       }), (0, i.jsx)(F.Z, {
         partySize: a,
@@ -456,7 +456,7 @@ ei.Header = er, ei.Body = e => {
       name: c,
       details: d,
       assets: p,
-      application_id: h
+      application_id: f
     } = r;
   if (null != p && (0, E.Z)(r)) {
     var g;
@@ -469,7 +469,7 @@ ei.Header = er, ei.Body = e => {
         target: "_blank",
         children: [(0, i.jsx)("img", {
           alt: null != (g = p.large_text) ? g : "",
-          src: a(h, p.large_image, [900, 500]),
+          src: a(f, p.large_image, [900, 500]),
           className: Y.twitchSectionPreview
         }), (0, i.jsx)("img", {
           src: n(497726),
@@ -487,7 +487,7 @@ ei.Header = er, ei.Body = e => {
       }),
       children: [(0, i.jsx)("img", {
         alt: "",
-        src: f.Z.get(z.ABu.TWITCH).icon.lightSVG,
+        src: h.Z.get(z.ABu.TWITCH).icon.lightSVG,
         className: Y.twitchSectionIcon
       }), (0, i.jsxs)("div", {
         children: [X(c), null != d ? Q(d) : null]
@@ -507,7 +507,7 @@ ei.Header = er, ei.Body = e => {
     applicationStream: a,
     onPreviewClick: o,
     guildId: c
-  } = e, d = (0, s.e7)([k.Z], () => k.Z.getChannel(a.channelId)), [p, h] = (0, j.wq)(d), f = (0, i.jsxs)(u.P3F, {
+  } = e, d = (0, s.e7)([k.Z], () => k.Z.getChannel(a.channelId)), [p, f] = (0, j.wq)(d), h = (0, i.jsxs)(u.P3F, {
     onClick: p ? o : true,
     className: Y.applicationStreamingPreviewWrapper,
     children: [(0, i.jsx)(x.Z, {
@@ -517,7 +517,7 @@ ei.Header = er, ei.Body = e => {
       className: Y.applicationStreamingHoverText,
       variant: "text-sm/medium",
       color: "always-white",
-      children: (0, j.P9)(h)
+      children: (0, j.P9)(f)
     })]
   }), g = null != (n = null == (t = (0, y.Z)(r, a)) ? true : t.activityText) ? n : W.intl.string(W.t.eXan7O);
   return (0, i.jsxs)($, {
@@ -533,7 +533,7 @@ ei.Header = er, ei.Body = e => {
       }), (0, i.jsx)(S.ZP, {
         size: S.ZP.Sizes.SMALL
       })]
-    }), f]
+    }), h]
   })
 }, ei.EmbeddedActivitySection = e => {
   let {
@@ -543,13 +543,13 @@ ei.Header = er, ei.Body = e => {
     participants: a
   } = e, [o, c] = l.useState(null), d = t.application_id;
   l.useEffect(() => {
-    null != d && (0, V.hR)(d, ["embedded_background"]).then(e => {
+    null != d && (0, B.hR)(d, ["embedded_background"]).then(e => {
       let [t] = e;
       return c(t)
     })
   }, [d]);
-  let p = (0, s.Wu)([M.default, D.default], () => Array.from(a).map(e => D.default.getId() === e ? null : M.default.getUser(e)).filter(B.lm)),
-    f = (0, h.O)(),
+  let p = (0, s.Wu)([M.default, D.default], () => Array.from(a).map(e => D.default.getId() === e ? null : M.default.getUser(e)).filter(V.lm)),
+    h = (0, f.O)(),
     {
       analyticsLocations: m
     } = (0, v.ZP)();
@@ -559,7 +559,7 @@ ei.Header = er, ei.Body = e => {
   let _ = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at
     } : true,
-    O = (0, V.xF)(b.id, o, 300);
+    O = (0, B.xF)(b.id, o, 300);
   return (0, i.jsxs)($, {
     children: [(0, i.jsxs)("div", {
       className: Y.embeddedActivityTopRow,
@@ -605,7 +605,7 @@ ei.Header = er, ei.Body = e => {
               e.stopPropagation(), (0, g.Z)({
                 applicationId: d,
                 activityChannelId: n.id,
-                locationObject: f.location,
+                locationObject: h.location,
                 analyticsLocations: m
               })
             }

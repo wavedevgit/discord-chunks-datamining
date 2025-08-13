@@ -35,13 +35,13 @@ var Chunk255367 = require("./255367.js"),
   Chunk31932 = require("./31932.js");
 
 function w(e) {
-  null != e && h.Z.open(e.id, I.pNK.BOOST_PERKS, {
+  null != e && f.Z.open(e.id, I.pNK.BOOST_PERKS, {
     section: I.jXE.PREMIUM_GUILD_PROGRESS_BAR
   })
 }
 
 function L(e, t) {
-  null != t && ((0, y.f2)(t, I.Eu4.TIER_1) ? h.Z.open(t.id, I.pNK.BOOST_PERKS, {
+  null != t && ((0, y.f2)(t, I.Eu4.TIER_1) ? f.Z.open(t.id, I.pNK.BOOST_PERKS, {
     section: I.jXE.PREMIUM_GUILD_INVITE_SPLASH
   }) : (0, u.Z)({
     analyticsLocations: e,
@@ -80,7 +80,7 @@ let D = Chunk73800.memo(function(e) {
     renderGuildHeaderDropdownButton: o
   } = e, {
     analyticsLocations: u
-  } = (0, s.ZP)(), h = () => {
+  } = (0, s.ZP)(), f = () => {
     E.default.track(I.rMx.TOOLTIP_VIEWED, {
       type: N.cd.PREMIUM_PROGRESS_BAR,
       location: {
@@ -95,7 +95,7 @@ let D = Chunk73800.memo(function(e) {
       },
       location_stack: u
     })
-  }, D = (0, a.wj)(n) ? Z : A, [k, M] = (0, c.US)(t, C.R.GUILD_HEADER_TOOLTIPS);
+  }, D = (0, a.wj)(n) ? A : Z, [k, M] = (0, c.US)(t, C.R.GUILD_HEADER_TOOLTIPS);
   return (0, r.jsx)(r.Fragment, {
     children: (() => {
       switch (k) {
@@ -126,7 +126,7 @@ let D = Chunk73800.memo(function(e) {
         case l.z.GUILD_HEADER_PREMIUM_GUILD_PROGRESS:
           return (0, r.jsx)(R, {
             renderPopout: (0, r.jsx)(O.ZP, {
-              onComponentMount: h,
+              onComponentMount: f,
               header: T.intl.string(T.t.nxtaFx),
               asset: (0, r.jsx)("img", {
                 alt: "",
@@ -145,7 +145,7 @@ let D = Chunk73800.memo(function(e) {
         case l.z.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK:
           return (0, r.jsx)(R, {
             renderPopout: (0, r.jsx)(O.ZP, {
-              onComponentMount: h,
+              onComponentMount: f,
               header: T.intl.string(T.t.KAsfPT),
               asset: (0, r.jsx)("img", {
                 alt: "",
@@ -202,7 +202,7 @@ let D = Chunk73800.memo(function(e) {
           });
         case l.z.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP:
           return (0, r.jsx)(R, {
-            renderPopout: (0, r.jsx)(f.Z, {
+            renderPopout: (0, r.jsx)(h.Z, {
               markAsDismissed: M
             }),
             renderGuildHeaderDropdownButton: o

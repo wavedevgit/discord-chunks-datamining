@@ -14,12 +14,12 @@ var Chunk72924 = require("./72924.jsx"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
-let f = [Chunk100527.Z.RPC];
+let h = [Chunk100527.Z.RPC];
 
 function g(e, t) {
   let n = {
-    subscriptionTier: h.Si.TIER_2,
-    analyticsLocations: f,
+    subscriptionTier: f.Si.TIER_2,
+    analyticsLocations: h,
     analyticsObject: t
   };
   switch (e) {
@@ -53,7 +53,7 @@ let m = {
       }, "No application.");
       let {
         lock: o,
-        context: h
+        context: f
       } = (0, u.jU)(t.transport !== d.He.POST_MESSAGE ? i : null);
       if (null == (0, s.Z)()) throw new a.Z({
         errorCode: p.lTL.INVALID_CHANNEL
@@ -66,10 +66,10 @@ let m = {
           let e = await (0, r.S)({
             applicationId: l,
             skuId: n,
-            openPremiumPaymentModal: () => g(h, m),
-            analyticsLocations: f,
+            openPremiumPaymentModal: () => g(f, m),
+            analyticsLocations: h,
             analyticsLocationObject: m,
-            context: h
+            context: f
           });
           return o(), e
         } catch (e) {

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 834743, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -13,7 +13,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk241626 = require("./241626.js");
-class h extends Chunk73800.PureComponent {
+class f extends Chunk73800.PureComponent {
   render() {
     let {
       guild: e,
@@ -53,11 +53,11 @@ class h extends Chunk73800.PureComponent {
     }) : this[t] = n
   }
 }
-let f = Chunk442837.ZP.connectStores([Chunk650774.Z], e => {
+let h = Chunk442837.ZP.connectStores([Chunk650774.Z], e => {
   let {
     guild: t
   } = e;
   return {
     memberCount: s.Z.getMemberCount(t.id)
   }
-})(h)
+})(f)

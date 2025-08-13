@@ -99,8 +99,8 @@ class E extends Chunk73800.Component {
         searchBarRef: l
       } = this;
       if (r || e.ctrlKey || e.altKey || e.metaKey || null == l) return;
-      let a = null == (t = (0, f.uB)(e)) ? true : t.activeElement;
-      if (!(a !== l.inputRef.current && (0, f.VG)(a))) switch (e.which) {
+      let a = null == (t = (0, h.uB)(e)) ? true : t.activeElement;
+      if (!(a !== l.inputRef.current && (0, h.VG)(a))) switch (e.which) {
         case m.yXg.ESCAPE:
           e.target !== l.inputRef.current ? this.reset() : null != l.inputRef.current && l.blur();
           break;

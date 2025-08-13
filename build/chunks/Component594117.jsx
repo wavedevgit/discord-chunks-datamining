@@ -16,7 +16,7 @@ var Chunk685072 = require("./685072.jsx"),
   Chunk870569 = require("./870569.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e) {
+function h(e) {
   var t, n;
   let {
     tooltipText: l,
@@ -69,8 +69,8 @@ function g(e) {
   let {
     channel: t
   } = e;
-  return (0, r.jsx)(f, {
-    tooltipText: h.intl.string(h.t.SMKyio),
+  return (0, r.jsx)(h, {
+    tooltipText: f.intl.string(f.t.SMKyio),
     onClick: () => {
       if ((0, d.Z)(t)) return void(0, u.Us)(t);
       l.default.disconnect()
@@ -82,8 +82,8 @@ function m(e) {
   let {
     channel: t
   } = e;
-  return (0, r.jsx)(f, {
-    tooltipText: h.intl.string(h.t["6vrfgo"]),
+  return (0, r.jsx)(h, {
+    tooltipText: f.intl.string(f.t["6vrfgo"]),
     onClick: () => {
       if ((0, c.Z)(t)) return void(0, s.lC)(t);
       l.default.disconnect()

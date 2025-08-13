@@ -36,7 +36,7 @@ let I = Chunk73800.memo(function(e) {
   } = (0, o.cj)([m.Z], () => ({
     isBlocked: null != I && m.Z.isBlockedForMessage(I),
     isIgnored: null != I && m.Z.isIgnoredForMessage(I)
-  }), [I]), T = (0, o.e7)([g.Z], () => g.Z.can(_.Plq.MANAGE_MESSAGES, t)), P = f.cC.useSetting(), {
+  }), [I]), T = (0, o.e7)([g.Z], () => g.Z.can(_.Plq.MANAGE_MESSAGES, t)), P = h.cC.useSetting(), {
     content: j
   } = i.useMemo(() => (null == I ? true : I.content) != null && "" !== I.content ? (0, p.ZP)(I, {
     formatInline: true,
@@ -68,7 +68,7 @@ let I = Chunk73800.memo(function(e) {
     let {
       contentPlaceholder: e,
       renderedContent: t
-    } = (0, h.f)(I, j, S, N, a()(y.messageContent, v.inlineFormat), {
+    } = (0, f.f)(I, j, S, N, a()(y.messageContent, v.inlineFormat), {
       leadingIconClass: y.messageContentIcon,
       trailingIconClass: y.messageContentIcon,
       iconSize: O.WW

@@ -2,7 +2,7 @@
 /** chunk id: 610278, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => b,
-  ro: () => h
+  ro: () => f
 });
 var Chunk570140 = require("./570140.js"),
   Chunk519938 = require("./519938.js"),
@@ -15,18 +15,18 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 let p = null;
 
-function h(e) {
+function f(e) {
   return "framepip:".concat(e.applicationId)
 }
 
-function f() {
+function h() {
   let e = Chunk591472.Z.getConnectedFrame();
   if (null == module) {
     let e = p;
     null != module && Chunk366050.Z.isOpen(module) && (Chunk570140.Z.wait(() => Chunk519938.xv(module)), p = null);
     return
   }
-  var t = h(module);
+  var t = f(module);
   if (Chunk366050.Z.isOpen(exports)) returnfalse;
   if (null != p) {
     let e = p;
@@ -49,10 +49,10 @@ function g() {
 }
 class m extends Chunk317770.Z {
   _initialize() {
-    Chunk591472.Z.addChangeListener(f), Chunk819640.Z.addChangeListener(g)
+    Chunk591472.Z.addChangeListener(h), Chunk819640.Z.addChangeListener(g)
   }
   _terminate() {
-    Chunk591472.Z.removeChangeListener(f), Chunk819640.Z.removeChangeListener(g)
+    Chunk591472.Z.removeChangeListener(h), Chunk819640.Z.removeChangeListener(g)
   }
 }
 let b = new m

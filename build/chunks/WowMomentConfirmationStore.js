@@ -16,12 +16,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 let s = {
-  isDisplayingWowMomentConfirmation: false
+  isDisplayingWowMomentConfirmation: false,
+  isAnimated: false
 };
 
 function l() {
   s = {
-    isDisplayingWowMomentConfirmation: false
+    isDisplayingWowMomentConfirmation: false,
+    isAnimated: false
   }
 }
 
@@ -31,9 +33,10 @@ function c() {
 
 function u(e) {
   let {
-    value: t
+    value: t,
+    isAnimated: n
   } = e;
-  s.isDisplayingWowMomentConfirmation = t
+  s.isDisplayingWowMomentConfirmation = t, s.isAnimated = n
 }
 class d extends(r = Chunk442837.ZP.Store) {
   getState() {
@@ -41,6 +44,9 @@ class d extends(r = Chunk442837.ZP.Store) {
   }
   get isDisplayingWowMomentConfirmation() {
     return s.isDisplayingWowMomentConfirmation
+  }
+  get isAnimated() {
+    return s.isAnimated
   }
 }
 a(d, "displayName", "WowMomentConfirmationStore");

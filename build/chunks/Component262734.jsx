@@ -34,12 +34,12 @@ function I(e) {
     width: 0,
     height: 0
   }), T = i.useCallback(() => {
-    (0, f.eU)({
+    (0, h.eU)({
       applicationId: t.applicationId,
       layoutMode: b.U.PIP
     })
   }, [t.applicationId]), P = i.useCallback(() => {
-    (0, f.xT)({
+    (0, h.xT)({
       applicationId: t.applicationId
     })
   }, [t.applicationId]);
@@ -55,7 +55,7 @@ function I(e) {
     return e.observe(C.current), () => e.disconnect()
   }, []), i.useEffect(() => {
     let e = e => {
-      null == I.current || I.current.contains(e.target) || l || (0, f.eU)({
+      null == I.current || I.current.contains(e.target) || l || (0, h.eU)({
         applicationId: t.applicationId,
         layoutMode: b.U.PIP
       })
@@ -66,12 +66,12 @@ function I(e) {
   }, [t.applicationId, l]);
   let j = S.width / Math.max(S.height, 1) < O.I0,
     x = 0,
-    Z = 0,
-    A = (0, u.Z)(null == n ? true : n.id);
-  if (!A) {
+    A = 0,
+    Z = (0, u.Z)(null == n ? true : n.id);
+  if (!Z) {
     let e = S.width,
       t = S.height;
-    j ? ((t = S.width / O.I0) > S.height && (e = (t = S.height) * O.I0), Z = (S.height - t) / 2) : ((e = Math.min(S.height * O.I0)) > S.width && (t = (e = S.width) / O.I0), x = (S.width - e) / 2)
+    j ? ((t = S.width / O.I0) > S.height && (e = (t = S.height) * O.I0), A = (S.height - t) / 2) : ((e = Math.min(S.height * O.I0)) > S.width && (t = (e = S.width) / O.I0), x = (S.width - e) / 2)
   }
   let w = O.MI.NO_CHAT;
   if (null == n) return null;
@@ -92,7 +92,7 @@ function I(e) {
             onClick: T,
             iconComponent: s.dOc,
             themeable: true
-          }), (0, r.jsx)(h.Z, {
+          }), (0, r.jsx)(f.Z, {
             appContext: _.IlC.APP,
             applicationId: n.id,
             shouldPrioritizeGroupPlusIcon: true,
@@ -114,13 +114,13 @@ function I(e) {
         className: y.activityPanelContainer,
         children: (0, r.jsx)("div", {
           className: a()(y.activityContainer, {
-            [y.activityContainerNoMargin]: A
+            [y.activityContainerNoMargin]: Z
           }),
           style: {
             paddingLeft: x,
             paddingRight: x,
-            paddingTop: Z,
-            paddingBottom: Z
+            paddingTop: A,
+            paddingBottom: A
           },
           ref: C,
           children: (0, r.jsx)(g.Z, {

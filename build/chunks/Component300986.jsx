@@ -47,12 +47,12 @@ function m(e) {
     }({
       color: _ ? l.Z.unsafe_rawColors.GREEN_360.css : "currentColor",
       className: t,
-      onClick: () => c.default.track(h.rMx.HELP_CLICKED, {
+      onClick: () => c.default.track(f.rMx.HELP_CLICKED, {
         highlighted: _
       }),
       icon: a.idN,
       tooltipPosition: g.has(b) ? "left" : true,
-      tooltip: f.intl.string(f.t.cqEoj4)
+      tooltip: h.intl.string(h.t.cqEoj4)
     }, n))
   })
 }

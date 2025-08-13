@@ -20,53 +20,53 @@ function p(e) {
     transitionState: t,
     onClose: n
   } = e, p = (0, s.Dt)();
-  return a.useEffect(() => {
+  return i.useEffect(() => {
     u.r_()
-  }, []), (0, l.jsxs)(i.Y0X, {
+  }, []), (0, l.jsxs)(a.Y0X, {
     transitionState: t,
     role: "alertdialog",
     "aria-labelledby": p,
     parentComponent: "KeyboardNavigationModal",
-    children: [(0, l.jsxs)(i.hzk, {
+    children: [(0, l.jsxs)(a.hzk, {
       className: h.content,
-      children: [(0, l.jsx)(i.X6q, {
+      children: [(0, l.jsx)(a.X6q, {
         variant: "heading-xl/semibold",
         id: p,
         className: h.header,
         children: _.intl.format(_.t.V4fxrq, {
-          tab: (e, t) => (0, l.jsx)(i.M2$, {
+          tab: (e, t) => (0, l.jsx)(a.M2$, {
             shortcut: "tab",
             className: h.headerShortcut
           }, t)
         })
-      }), (0, l.jsx)(i.Text, {
+      }), (0, l.jsx)(a.Text, {
         variant: "text-md/normal",
         children: _.intl.string(_.t["oQA/OD"])
       }), (0, l.jsxs)("ul", {
         className: h.tips,
         children: [(0, l.jsxs)("li", {
-          children: [(0, l.jsx)(i.M2$, {
+          children: [(0, l.jsx)(a.M2$, {
             shortcut: r._.binds["0"]
-          }), (0, l.jsx)(i.Text, {
+          }), (0, l.jsx)(a.Text, {
             variant: "text-md/normal",
             children: _.intl.string(_.t["43Qn2t"])
           })]
         }), (0, l.jsxs)("li", {
-          children: [(0, l.jsx)(i.M2$, {
+          children: [(0, l.jsx)(a.M2$, {
             shortcut: c.$.binds["0"]
-          }), (0, l.jsx)(i.Text, {
+          }), (0, l.jsx)(a.Text, {
             variant: "text-md/normal",
             children: _.intl.string(_.t.zJg4FR)
           })]
         })]
-      }), (0, l.jsx)(i.Text, {
+      }), (0, l.jsx)(a.Text, {
         variant: "text-md/normal",
         children: _.intl.format(_.t.EWFVSU, {
           link: o.Z.getArticleURL(d.BhN.KEYBOARD_NAVIGATION)
         })
       })]
-    }), (0, l.jsx)(i.mzw, {
-      children: (0, l.jsx)(i.zxk, {
+    }), (0, l.jsx)(a.mzw, {
+      children: (0, l.jsx)(a.zxk, {
         variant: "primary",
         size: "sm",
         text: _.intl.string(_.t.BddRzc),

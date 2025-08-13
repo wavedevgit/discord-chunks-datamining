@@ -43,8 +43,8 @@ function O(e) {
 let E = e => {
     let {
       targetElementRef: t
-    } = e, m = (0, h.eW)(), b = () => {
-      (0, h.ZL)()
+    } = e, m = (0, f.eW)(), b = () => {
+      (0, f.ZL)()
     };
     return (0, r.jsxs)(i.m, {
       targetElementRef: t,
@@ -68,7 +68,7 @@ let E = e => {
         actions: [{
           text: g.intl.string(g.t.t2N819),
           onClick: () => {
-            p.default.track(f.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+            p.default.track(h.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
               location_stack: [d.Z.HOME_PAGE_PREMIUM_TAB]
             }), b(), (0, u.ZDy)(async () => {
               let {

@@ -20,11 +20,11 @@ let d = function(e) {
     subText: i,
     showAccountIdentifier: d,
     status: p,
-    isMobile: h,
-    className: f
+    isMobile: f,
+    className: h
   } = e, g = (0, a.e7)([c.Z], () => c.Z.getNickname(t.id));
   return (0, r.jsxs)("div", {
-    className: l()(u.userInfo, f, {
+    className: l()(u.userInfo, h, {
       [u.hovered]: n
     }),
     children: [(0, r.jsx)(s.Z, {
@@ -32,7 +32,7 @@ let d = function(e) {
       className: u.avatar,
       animate: n,
       status: p,
-      isMobile: h
+      isMobile: f
     }), (0, r.jsxs)("div", {
       className: u.text,
       children: [(0, r.jsx)(o.Z, {

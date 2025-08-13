@@ -110,8 +110,8 @@ function P(e) {
     modalDismissibleContent: P,
     modalTopExtra: j,
     header: x,
-    headerClassName: Z,
-    subHeader: A,
+    headerClassName: A,
+    subHeader: Z,
     subHeaderExtra: w,
     featureCards: L,
     changeLogId: R,
@@ -120,7 +120,7 @@ function P(e) {
   } = e, {
     onClose: M,
     transitionState: U
-  } = n, G = (0, p.Dt)(), V = L.length % 2 == 0, B = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [H, F] = i.useState(Date.now()), [z, W] = i.useState(0), [Y, K] = i.useState(0), [q, X] = i.useState(false), [Q, J] = i.useState(true), $ = i.useRef(H), ee = i.useRef(z), et = i.useRef(Y), en = i.useRef(q), er = i.useRef(Q), [ei, el] = i.useState(S), ea = i.useRef(false);
+  } = n, G = (0, p.Dt)(), B = L.length % 2 == 0, V = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [H, F] = i.useState(Date.now()), [z, W] = i.useState(0), [Y, K] = i.useState(0), [q, X] = i.useState(false), [Q, J] = i.useState(true), $ = i.useRef(H), ee = i.useRef(z), et = i.useRef(Y), en = i.useRef(q), er = i.useRef(Q), [ei, el] = i.useState(S), ea = i.useRef(false);
 
   function eo() {
     let e = Date.now(),
@@ -178,7 +178,7 @@ function P(e) {
       b.default.track(O.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: R,
         seconds_open: Math.round((Date.now() - e) / 1e3)
-      }), null != P && (0, f.Q3)(P, {
+      }), null != P && (0, h.Q3)(P, {
         dismissAction: E.L.DISMISS
       })
     }
@@ -197,11 +197,11 @@ function P(e) {
       className: v.content,
       children: [(0, r.jsx)(s.X6q, {
         variant: "display-md",
-        className: a()(v.headerText, Z),
+        className: a()(v.headerText, A),
         children: x
-      }), "video" === l.type ? (0, r.jsx)(h.Z, {
+      }), "video" === l.type ? (0, r.jsx)(f.Z, {
         className: a()(v.video, N),
-        autoPlay: !B,
+        autoPlay: !V,
         loop: true,
         muted: true,
         controls: true,
@@ -258,17 +258,17 @@ function P(e) {
         variant: "text-md/normal",
         color: "text-secondary",
         className: v.subHeader,
-        children: [A, null == w ? true : w()]
+        children: [Z, null == w ? true : w()]
       }), null != k && (0, r.jsx)(s.X6q, {
         variant: "heading-md/medium",
         className: v.bodyText,
         children: k
       }), L.length > 0 && (0, r.jsx)("div", {
         className: a()(v.featureCardGroup, {
-          [v.wideStyle]: V
+          [v.wideStyle]: B
         }),
         children: L.map((e, t) => (0, r.jsx)(T, C(I({}, e), {
-          wideStyle: V
+          wideStyle: B
         }), "".concat(e.header, "_").concat(t)))
       }), D()]
     })]

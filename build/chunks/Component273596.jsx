@@ -54,23 +54,23 @@ function j(e) {
     onGuildCardClick: l
   } = e, {
     guildIds: s,
-    loading: h,
+    loading: f,
     searchResultsQuery: I,
     loadMore: j,
     searchCategoryId: x
   } = (0, b.f)({
     loadId: t
-  }), Z = 0 === s.length && !h, A = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(true), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), V = i.useRef(null), B = i.useCallback(e => {
-    if (null != e && !Z && !h) 336 * (s.length / M) <= e.height && j()
-  }, [Z, h, s.length, M, j]), H = i.useCallback(e => {
+  }), A = 0 === s.length && !f, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(true), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), B = i.useRef(null), V = i.useCallback(e => {
+    if (null != e && !A && !f) 336 * (s.length / M) <= e.height && j()
+  }, [A, f, s.length, M, j]), H = i.useCallback(e => {
     let t = e.contentRect;
     if (null == t) return;
     let n = t.width;
     n < 1024 && k.current ? (k.current = false, D(false)) : n > 1024 && !k.current && (k.current = true, D(true));
     let r = 1;
     for (n -= 450 * !!R, n -= 280; n > 0;) n -= 264, r += 1;
-    r !== G.current && (G.current = r, U(r)), B(t)
-  }, [R, B]), F = (0, u.y)(H, [R, B]);
+    r !== G.current && (G.current = r, U(r)), V(t)
+  }, [R, V]), F = (0, u.y)(H, [R, V]);
   i.useEffect(() => {
     L((0, m.PM)())
   }, [I]), i.useEffect(() => {
@@ -78,13 +78,13 @@ function j(e) {
       loadId: t,
       searchId: w,
       query: I,
-      guildResults: s.map(f.Z.getGuild).filter(p.lm),
-      analyticsContext: A,
+      guildResults: s.map(h.Z.getGuild).filter(p.lm),
+      analyticsContext: Z,
       categoryId: x
     })
-  }, [A, s, t, x, w, I]);
+  }, [Z, s, t, x, w, I]);
   let z = i.useCallback(e => n(e, x), [n, x]),
-    W = i.useMemo(() => h ? [s.length, 0] : [s.length], [s.length, h]),
+    W = i.useMemo(() => f ? [s.length, 0] : [s.length], [s.length, f]),
     Y = i.useCallback((e, n, i) => {
       switch (e) {
         case 0:
@@ -103,7 +103,7 @@ function j(e) {
               }), (0, r.jsx)(y.Z, {
                 loadId: t
               })]
-            }), Z && (0, r.jsx)(E.Z, {
+            }), A && (0, r.jsx)(E.Z, {
               loadId: t
             })]
           }, i);
@@ -114,18 +114,18 @@ function j(e) {
             })
           }, i)
       }
-    }, [Z, R, t]),
+    }, [A, R, t]),
     K = i.useCallback(e => {
       switch (e) {
         case 0:
           let t = R ? 16 : 50;
-          return Z ? t + 448 : t;
+          return A ? t + 448 : t;
         case 1:
           return 120;
         default:
           throw Error("[getSectionHeight] Failed for section: ".concat(e))
       }
-    }, [Z, R]),
+    }, [A, R]),
     q = i.useCallback((e, t) => {
       switch (e) {
         case 0:
@@ -149,7 +149,7 @@ function j(e) {
     Q = i.useCallback(async (e, t, n, r) => {
       var i, a;
       await l(e, t, n, r);
-      let o = null == (a = V.current) || null == (i = a.getScrollerState()) ? true : i.scrollTop;
+      let o = null == (a = B.current) || null == (i = a.getScrollerState()) ? true : i.scrollTop;
       null != o && g.Z.setState({
         scrollPosition: o
       })
@@ -169,7 +169,7 @@ function j(e) {
       }
     }, [s, Q, z, x]);
   i.useEffect(() => {
-    let e = V.current;
+    let e = B.current;
     return () => {
       var t;
       let n = null == e || null == (t = e.getScrollerState()) ? true : t.scrollTop;
@@ -181,7 +181,7 @@ function j(e) {
     let e = g.Z.getField("scrollPosition");
     null != e && setTimeout(() => {
       var t;
-      null == (t = V.current) || t.scrollTo({
+      null == (t = B.current) || t.scrollTo({
         to: e,
         animate: false,
         callback: () => {
@@ -194,7 +194,7 @@ function j(e) {
   }, []);
   let $ = i.useMemo(() => (0, o.debounce)(() => {
       var e;
-      let t = null == (e = V.current) ? true : e.getScrollerState();
+      let t = null == (e = B.current) ? true : e.getScrollerState();
       if (null == t) return;
       let n = t.scrollTop + t.offsetHeight;
       t.scrollHeight - n < 240 && j()
@@ -206,7 +206,7 @@ function j(e) {
     className: C.container,
     ref: F,
     children: (0, r.jsx)(c.GMG, {
-      ref: V,
+      ref: B,
       className: C.masonryList,
       sections: W,
       columns: M,

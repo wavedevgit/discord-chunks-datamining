@@ -102,9 +102,9 @@ function er() {
     } = (0, Chunk486622.m)({
       onError: Chunk704215
     }),
-    h = (0, Chunk209613.Z)("message-requests-list"),
+    f = (0, Chunk209613.Z)("message-requests-list"),
     {
-      channelId: f
+      channelId: h
     } = (0, Chunk488634._)(),
     g = Chunk73800.useCallback(() => {
       Chunk907862(require.map(e => e.channel.id))
@@ -117,8 +117,8 @@ function er() {
       return (0, r.jsx)(W.Z, {
         index: o,
         className: a()({
-          [$.selected]: null != f && f === u,
-          [$.siblingSelected]: null != f && f === c
+          [$.selected]: null != h && h === u,
+          [$.siblingSelected]: null != h && h === c
         }),
         channel: s.channel,
         user: s.user,
@@ -197,7 +197,7 @@ function ei(e) {
   let {
     pageWidth: t,
     onSidebarResize: n
-  } = e, i = (0, c.e7)([A.ZP], () => A.ZP.getSidebarState(A.uZ)), l = (0, c.e7)([w.Z], () => w.Z.getChannel(null == i ? true : i.channelId));
+  } = e, i = (0, c.e7)([Z.ZP], () => Z.ZP.getSidebarState(Z.uZ)), l = (0, c.e7)([w.Z], () => w.Z.getChannel(null == i ? true : i.channelId));
   if (null == i || i.type !== j.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
   let a = t - q.R7I;
   return (0, r.jsx)(O.Z, {
@@ -206,7 +206,7 @@ function ei(e) {
     onWidthChange: n,
     children: (0, r.jsx)(E.Z, {
       channel: l,
-      baseChannelId: A.uZ
+      baseChannelId: Z.uZ
     })
   })
 }
@@ -244,7 +244,7 @@ let el = e => {
           actions: [{
             text: J.intl.string(J.t.JN6EOD),
             onClick: e => {
-              e.stopPropagation(), f.Z.open(q.oAB.CONTENT_AND_SOCIAL, null, {
+              e.stopPropagation(), h.Z.open(q.oAB.CONTENT_AND_SOCIAL, null, {
                 scrollPosition: Q.FY.MESSAGE_REQUESTS_V2
               }), l(X.L.TAKE_ACTION)
             }
@@ -268,28 +268,28 @@ function ea(e) {
 let eo = (0, Chunk112724.Z)(function(e) {
   let {
     width: t
-  } = e, n = (0, B.q)();
+  } = e, n = (0, V.q)();
   (0, b.ZP)(() => {
-    h.Y(q.Z5c.MESSAGE_REQUESTS), (0, x.e)("message-requests"), R.default.track(q.rMx.MESSAGE_REQUESTS_VIEWED, {
+    f.Y(q.Z5c.MESSAGE_REQUESTS), (0, x.e)("message-requests"), R.default.track(q.rMx.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
     }), N.Z.increment({
       name: s.V.MESSAGE_REQUEST_VIEW
     })
   });
-  let l = (0, c.e7)([Z.Z], () => Z.Z.theme),
+  let l = (0, c.e7)([A.Z], () => A.Z.theme),
     o = (0, F.w)(),
     [u, d] = i.useState(false),
-    f = (0, c.e7)([A.ZP], () => {
-      let e = A.ZP.getSidebarState(A.uZ);
+    h = (0, c.e7)([Z.ZP], () => {
+      let e = Z.ZP.getSidebarState(Z.uZ);
       return null != e && e.type === j.tI.VIEW_MESSAGE_REQUEST ? e : null
     }),
-    g = null == f ? true : f.channelId,
-    m = null != f,
+    g = null == h ? true : h.channelId,
+    m = null != h,
     _ = (0, k.T)(g),
     O = (0, D.J)(g),
     E = i.useRef(null);
   i.useEffect(() => {
-    null != g && !_ && O && m && ((0, T.Kh)(g), P.Z.closeChannelSidebar(A.uZ))
+    null != g && !_ && O && m && ((0, T.Kh)(g), P.Z.closeChannelSidebar(Z.uZ))
   }, [g, O, m, _]);
   let [y, I] = i.useState(K.pS.REQUESTS), C = e => {
     I(e)

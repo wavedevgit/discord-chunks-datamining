@@ -65,12 +65,12 @@ let I = new Set([Chunk701488.Fu, Chunk701488.JT]),
             p.Z.focus(e, true)
           }
           let c = d.Z.getApplication(null == (i = t.application) ? true : i.id),
-            h = (0, u.p)(null == r ? true : r.location),
+            f = (0, u.p)(null == r ? true : r.location),
             m = (null == c ? true : c.id) !== true ? S.get(c.id) : true;
           if (true !== m && m.trustedUntilEpochMs >= Date.now() && m.trustedHosts.has(e.host)) return (0, l.Z)(o), Promise.resolve({
             opened: true
           });
-          return new Promise(e => (0, f.q)({
+          return new Promise(e => (0, h.q)({
             href: o,
             shouldConfirm: true,
             onConfirm: () => {
@@ -85,7 +85,7 @@ let I = new Set([Chunk701488.Fu, Chunk701488.JT]),
             }
           }, true, true, (0, s.z)({
             application: c,
-            channelId: h
+            channelId: f
           })))
         } catch (e) {
           throw new m.Z({
@@ -130,7 +130,7 @@ let I = new Set([Chunk701488.Fu, Chunk701488.JT]),
         if (null == a) throw new m.Z({
           errorCode: E.lTL.INVALID_COMMAND
         }, "No application.");
-        if (!(0, h.yE)(null != (t = n.application.flags) ? t : 0, E.udG.EMBEDDED)) throw new m.Z({
+        if (!(0, f.yE)(null != (t = n.application.flags) ? t : 0, E.udG.EMBEDDED)) throw new m.Z({
           errorCode: E.lTL.INVALID_COMMAND
         }, "This application cannot access this API");
         return new Promise(e => {

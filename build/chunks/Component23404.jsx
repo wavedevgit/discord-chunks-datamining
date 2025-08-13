@@ -50,11 +50,11 @@ function x(e) {
   return e
 }
 
-function Z(e) {
+function A(e) {
   var t;
   let {
     quest: n
-  } = e, i = (0, f.B6)(n.config.expiresAt), l = (0, f.B6)(O.r.build(n.config).rewardsExpireAt), a = (0, o.e7)([u.Z], () => u.Z.getState().theme), s = (0, c.wjy)(a) ? T.BRd.DARK : T.BRd.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
+  } = e, i = (0, h.B6)(n.config.expiresAt), l = (0, h.B6)(O.r.build(n.config).rewardsExpireAt), a = (0, o.e7)([u.Z], () => u.Z.getState().theme), s = (0, c.wjy)(a) ? T.BRd.DARK : T.BRd.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
   return (0, r.jsxs)("div", {
     className: j.heading,
     children: [(0, r.jsx)("img", {
@@ -82,15 +82,15 @@ function Z(e) {
   })
 }
 
-function A(e) {
+function Z(e) {
   var t, n, l, u;
   let {
     nodeRef: _,
     quest: O
-  } = e, E = (0, d.O5)(), T = (0, o.e7)([g.Z], () => g.Z.isEnrolling(O.id), [O]), A = (0, o.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []), [w, L] = i.useState(false), R = i.useCallback(() => L(true), []), D = i.useCallback(() => L(false), []), k = i.useCallback(e => {
+  } = e, E = (0, d.O5)(), T = (0, o.e7)([g.Z], () => g.Z.isEnrolling(O.id), [O]), Z = (0, o.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []), [w, L] = i.useState(false), R = i.useCallback(() => L(true), []), D = i.useCallback(() => L(false), []), k = i.useCallback(e => {
     e.stopPropagation()
   }, []), M = i.useCallback(() => {
-    (0, h.AH)(O.id, {
+    (0, f.AH)(O.id, {
       questContent: m.jn.ACTIVITY_PANEL,
       questContentCTA: d.jZ.ACCEPT_QUEST,
       sourceQuestContent: m.jn.ACTIVITY_PANEL
@@ -115,18 +115,18 @@ function A(e) {
       fromContent: m.jn.ACTIVITY_PANEL,
       questId: O.id
     })
-  }, [O.id, E]), V = (0, C.hf)({
+  }, [O.id, E]), B = (0, C.hf)({
     quest: O,
     questContent: m.jn.ACTIVITY_PANEL,
     sourceQuestContent: m.jn.ACTIVITY_PANEL
-  }), B = (0, f.tP)(O), H = (null == (t = O.userStatus) ? true : t.enrolledAt) != null, F = (null == (n = O.userStatus) ? true : n.completedAt) != null, z = (null == (l = O.userStatus) ? true : l.claimedAt) != null, W = (null == O ? true : O.userStatus) != null && (0, p.zE)(O.userStatus, m.jn.ACTIVITY_PANEL), Y = (0, f.Rf)(O), K = (0, b.DD)({
+  }), V = (0, h.tP)(O), H = (null == (t = O.userStatus) ? true : t.enrolledAt) != null, F = (null == (n = O.userStatus) ? true : n.completedAt) != null, z = (null == (l = O.userStatus) ? true : l.claimedAt) != null, W = (null == O ? true : O.userStatus) != null && (0, p.zE)(O.userStatus, m.jn.ACTIVITY_PANEL), Y = (0, h.Rf)(O), K = (0, b.DD)({
     quest: O,
     taskDetails: Y,
     location: N.dr.ACTIVITY_PANEL,
     questContent: m.jn.ACTIVITY_PANEL,
     sourceQuestContent: m.jn.ACTIVITY_PANEL
   });
-  return W || B || z || A ? null : (0, r.jsxs)("div", {
+  return W || V || z || Z ? null : (0, r.jsxs)("div", {
     ref: e => {
       _.current = e
     },
@@ -141,7 +141,7 @@ function A(e) {
     onMouseLeave: D,
     children: [(0, r.jsxs)("div", {
       className: j.utils,
-      children: [H ? (0, r.jsx)(Z, {
+      children: [H ? (0, r.jsx)(A, {
         quest: O
       }) : (0, r.jsx)(y.Z, {}), (0, r.jsx)(I.r, {
         quest: O,
@@ -171,7 +171,7 @@ function A(e) {
         }
       })]
     }), !H && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(Z, {
+      children: [(0, r.jsx)(A, {
         quest: O
       }), (0, r.jsx)("div", {
         className: j.instructions,
@@ -219,7 +219,7 @@ function A(e) {
         className: j.cta,
         color: s.zx.Colors.BRAND,
         fullWidth: true,
-        onClick: V,
+        onClick: B,
         size: s.zx.Sizes.SMALL,
         children: P.intl.string(P.t.cfY4PD)
       })]
@@ -231,7 +231,7 @@ let w = function(e) {
     questOrQuests: e.quest,
     questContent: m.jn.ACTIVITY_PANEL,
     sourceQuestContent: m.jn.ACTIVITY_PANEL,
-    children: t => (0, r.jsx)(A, x({
+    children: t => (0, r.jsx)(Z, x({
       nodeRef: t
     }, e))
   })

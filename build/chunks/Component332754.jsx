@@ -27,7 +27,7 @@ let E = {
   },
   handleRequiredAction(e) {
     let t = e.requiredAction;
-    !f.s.isDisallowPopupsSet() && null != h.default.getCurrentUser() && (t === m.c2C.REQUIRE_CAPTCHA || t === m.c2C.REQUIRE_VERIFIED_EMAIL || t === m.c2C.REQUIRE_VERIFIED_PHONE || t === m.c2C.REQUIRE_REVERIFIED_PHONE || t === m.c2C.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE || t === m.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === m.c2C.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || u.Z.isEmailReverification(t) ? (0, s.bu)({
+    !h.s.isDisallowPopupsSet() && null != f.default.getCurrentUser() && (t === m.c2C.REQUIRE_CAPTCHA || t === m.c2C.REQUIRE_VERIFIED_EMAIL || t === m.c2C.REQUIRE_VERIFIED_PHONE || t === m.c2C.REQUIRE_REVERIFIED_PHONE || t === m.c2C.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE || t === m.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === m.c2C.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || u.Z.isEmailReverification(t) ? (0, s.bu)({
       location: "verification-legacy"
     }) ? (0, a.q4)(() => (0, r.jsx)(c.Z, {}), {
       layerKey: _.CV,

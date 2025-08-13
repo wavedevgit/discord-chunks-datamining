@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 710914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js"), require("./290780.js"), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk196180 = require("./196180.js");
 
-function h(e) {
+function f(e) {
   let {
     quests: t,
     isFetching: n
@@ -38,8 +38,8 @@ function h(e) {
         break
       }
   }, [t, l]);
-  let h = null != l,
-    [f, g] = i.useState(window.innerWidth);
+  let f = null != l,
+    [h, g] = i.useState(window.innerWidth);
   i.useEffect(() => {
     let e = () => {
       g(window.innerWidth)
@@ -48,7 +48,7 @@ function h(e) {
       window.removeEventListener("resize", e)
     }
   }, []);
-  let m = f >= 1610 ? 3 : f >= 1340 ? 2 : 1,
+  let m = h >= 1610 ? 3 : h >= 1340 ? 2 : 1,
     b = i.useMemo(() => {
       let e = [];
       for (let r of t) {
@@ -79,8 +79,8 @@ function h(e) {
         contentPosition: t,
         rowIndex: n,
         className: a()(p.questTile, {
-          [p.selected]: h && e.id === l,
-          [p.unselected]: h && e.id !== l
+          [p.selected]: f && e.id === l,
+          [p.unselected]: f && e.id !== l
         }),
         sourceQuestContent: s.jn.QUEST_HOME_DESKTOP
       }, e.id)

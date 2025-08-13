@@ -104,11 +104,11 @@ class E extends Chunk73800.PureComponent {
         pageSize: e,
         children: function(e) {
           switch (e) {
-            case f.TaA.WINDOWS:
+            case h.TaA.WINDOWS:
               return g.intl.string(g.t["0/xHFB"]);
-            case f.TaA.MACOS:
+            case h.TaA.MACOS:
               return g.intl.string(g.t.E4u4n5);
-            case f.TaA.LINUX:
+            case h.TaA.LINUX:
               return g.intl.string(g.t.tcawo6)
           }
         }(t)

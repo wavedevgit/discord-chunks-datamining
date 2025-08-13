@@ -33,8 +33,8 @@ let m = {
       } = e;
       (0, d.bu)(n.transport), (0, d._f)(n.application);
       let o = n.application.id,
-        p = (0, h.Z)(),
-        f = null == p ? true : p.getGuildId(),
+        p = (0, f.Z)(),
+        h = null == p ? true : p.getGuildId(),
         m = a.Z.getApplication(o);
       if (!(0, c.yE)(null != (t = null == m ? true : m.flags) ? t : 0, g.udG.EMBEDDED_FIRST_PARTY)) throw new u.Z({
         errorCode: g.lTL.INVALID_COMMAND
@@ -43,7 +43,7 @@ let m = {
         _ = {
           activity_application_id: o,
           activity_channel_type: null == p ? true : p.type,
-          activity_guild_id: f,
+          activity_guild_id: h,
           activity_user_session_id: null == b ? true : b.activityUserSessionId
         };
       s.default.track(r, function(e) {

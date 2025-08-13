@@ -139,7 +139,7 @@ function e7(e) {
 require("./117240.js"), require("./801077.js"), require("./967368.js"), require("./272053.js"), require("./974180.js"), require("./574254.js"), require("./551428.js"), require("./55563.js"), require("./882029.js"), require("./959457.js"), require("./653255.js"), require("./663389.js"), require("./25990.js"), require("./778825.js"), require("./999382.js"), require("./388610.js"), require("./533947.js"), require("./277053.js"), require("./371398.js"), require("./141233.js"), require("./471073.js"), require("./606206.js");
 let e6 = false;
 (0, Chunk912471.DL)(), Chunk442837.ZP.initialize(), Chunk298969.Z.loadServer(), Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("USER_SETTINGS_OPEN", (e, t) => {
-  ez.Z.getLayers().includes(e3.S9g.USER_SETTINGS) || f.Z.open(null != t ? t : e3.oAB.ACCOUNT)
+  ez.Z.getLayers().includes(e3.S9g.USER_SETTINGS) || h.Z.open(null != t ? t : e3.oAB.ACCOUNT)
 }), Chunk998502.ZP.on("LAUNCH_APPLICATION", (e, t) => {
   let n = eW.Z.getActiveLibraryApplication(t);
   e1.playApplication(t, n, {
@@ -155,7 +155,7 @@ let e9 = (0, Chunk951752.l)(e => {
     let {
       location: t
     } = e, n = (0, ek.default)(t.pathname);
-    return null != n && (0, X.h)(() => f.Z.open(n.section, n.subsection, {
+    return null != n && (0, X.h)(() => h.Z.open(n.section, n.subsection, {
       openWithoutBackstack: false,
       impressionSource: n.source
     })), (0, r.jsx)(g.Z, {
@@ -288,7 +288,7 @@ let tl = [{
             break
           }
           case "test-mode":
-            eq.Z.whenInitialized(() => h.Wt(n));
+            eq.Z.whenInitialized(() => f.Wt(n));
             break;
           case "uninstall": {
             let e = eW.Z.getActiveLibraryApplication(n);
@@ -470,7 +470,7 @@ function to(e) {
   let {
     location: i
   } = (0, ev.s1)();
-  i.pathname === r && (null == eB.Z.getChannel(t) ? (0, ev.dL)(e3.Z5c.CHANNEL(n)) : (0, ev.dL)(r))
+  i.pathname === r && (null == eV.Z.getChannel(t) ? (0, ev.dL)(e3.Z5c.CHANNEL(n)) : (0, ev.dL)(r))
 }
 class ts extends Chunk73800.PureComponent {
   componentDidMount() {
@@ -518,9 +518,9 @@ class ts extends Chunk73800.PureComponent {
         channelId: i,
         messageId: o,
         threadId: s
-      } = ti(n), c = (0, ey.Ss)(r), u = (0, ey.cq)(i), h = (0, ey.cq)(s), f = eK.Z.getGuildId(), g = f !== r;
+      } = ti(n), c = (0, ey.Ss)(r), u = (0, ey.cq)(i), f = (0, ey.cq)(s), h = eK.Z.getGuildId(), g = h !== r;
       if (c && g && d.Z.selectGuild(r), c && u) {
-        let n = eY.Z.getChannelId(f),
+        let n = eY.Z.getChannelId(h),
           a = n !== i;
         if (!e6 || g || a || null != o) {
           e6 = true, p.default.selectChannel({
@@ -533,9 +533,9 @@ class ts extends Chunk73800.PureComponent {
           } = (0, l.parse)(t);
           null != e && ex.ZP.setSelectedSummary(i, e)
         }
-        if (null != s && h) {
-          let e = eV.ZP.getCurrentSidebarChannelId(n) !== s,
-            t = null != eV.ZP.getGuildSidebarState(r);
+        if (null != s && f) {
+          let e = eB.ZP.getCurrentSidebarChannelId(n) !== s,
+            t = null != eB.ZP.getGuildSidebarState(r);
           if (null != i && null != s && e)
             if (t)(0, ev.dL)(e3.Z5c.CHANNEL(r, s, o));
             else {
@@ -553,7 +553,7 @@ class ts extends Chunk73800.PureComponent {
         let c = es.Z.getIsOpen();
         if (i === e8.oC.ROLE_SUBSCRIPTIONS) eo.Z.closeSidebar();
         else if (g && c) {
-          let t = null == f && r === e3.ME,
+          let t = null == h && r === e3.ME,
             n = e === e3.Z5c.GUILD_DISCOVERY;
           t || n ? eo.Z.closeSidebar() : eo.Z.openSidebar()
         } else(a && c || !g && !a) && eo.Z.closeSidebar()
@@ -575,8 +575,8 @@ class ts extends Chunk73800.PureComponent {
       threadId: l
     } = ti(n), a = (0, ey.Ss)(r) && r !== e3.ME && r !== e3.I_8;
     if (null != i && (0, ey.cq)(i) && !(0, e8.AB)(i) && a) {
-      let n = eB.Z.getChannel(i);
-      if (null == n) eZ.Z.loadThread(i).then(() => to({
+      let n = eV.Z.getChannel(i);
+      if (null == n) eA.Z.loadThread(i).then(() => to({
         channelId: i,
         guildId: r,
         pathname: t
@@ -587,8 +587,8 @@ class ts extends Chunk73800.PureComponent {
       };
       if (null != l) {
         if (!((0, ey.cq)(l) && !(0, e8.AB)(i))) return null;
-        let n = eB.Z.getChannel(l);
-        if (null == n) eZ.Z.loadThread(l).then(() => to({
+        let n = eV.Z.getChannel(l);
+        if (null == n) eA.Z.loadThread(l).then(() => to({
           channelId: l,
           guildId: r,
           pathname: t

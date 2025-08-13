@@ -81,15 +81,15 @@ let N = (0, Chunk663993.Un)({
     webpackId: 838819,
     name: "CollectiblesShop"
   }),
-  Z = (0, Chunk663993.Un)({
+  A = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("1806"), require.e("7654"), require.e("58175"), require.e("44156"), require.e("8725"), require.e("6850"), require.e("58227"), require.e("54408"), require.e("20087"), require.e("5533"), require.e("95140")]).then(require.bind(require, 994763)),
     webpackId: 994763,
     name: "GuildSettings"
   }),
-  A = {
+  Z = {
     [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk526665.yP)("Layers") ? (0, Chunk255367.jsx)(P, {}) : (0, Chunk255367.jsx)(N, {}),
     [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk255367.jsx)(j, {}),
-    [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk255367.jsx)(Z, {}),
+    [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk255367.jsx)(A, {}),
     [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk255367.jsx)(x, {}),
     [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk255367.jsx)(T, {})
   },
@@ -272,7 +272,7 @@ class M extends Chunk73800.PureComponent {
   }
   renderComponent(e, t, n) {
     let r;
-    return r = "string" == typeof e ? A[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(k, {
+    return r = "string" == typeof e ? Z[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(k, {
       mode: t === n - 1 ? w : L,
       children: [(0, i.jsx)(D, {}), r]
     }, "layer-".concat(t))

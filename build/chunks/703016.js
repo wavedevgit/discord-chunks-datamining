@@ -31,8 +31,8 @@ var Chunk913527 = require("./913527.js"),
   Chunk653477 = require("./653477.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let Z = [],
-  A = null,
+let A = [],
+  Z = null,
   w = null,
   L = null,
   R = /\|\|([\s\S]+?)\|\|/g;
@@ -77,7 +77,7 @@ function k() {
 }
 async function M(e, t, n, r, i) {
   let l = o.e6(e, n);
-  null !== l && (null == w && k(), t ? await (0, N.NB)() : null == A || A.removeEventListener("end", N.NB), l.addEventListener("end", N.NB), null != r && l.addEventListener("start", r), null != i && l.addEventListener("end", i), A = l, o.iq(l, w))
+  null !== l && (null == w && k(), t ? await (0, N.NB)() : null == Z || Z.removeEventListener("end", N.NB), l.addEventListener("end", N.NB), null != r && l.addEventListener("start", r), null != i && l.addEventListener("end", i), Z = l, o.iq(l, w))
 }
 
 function U(e, t, n, r, i) {
@@ -97,11 +97,11 @@ function G(e) {
   M(t, n, r, i, l)
 }
 
-function V() {
-  return null !== A && A.removeEventListener("end", Chunk196051.NB), Chunk419363.M9(), A = null, true
+function B() {
+  return null !== Z && Z.removeEventListener("end", Chunk196051.NB), Chunk419363.M9(), Z = null, true
 }
 
-function B(e) {
+function V(e) {
   var t, n, r;
   let {
     message: i,
@@ -121,14 +121,14 @@ function H(e) {
   let u = g.Z.getChannel(o);
   if (null == u) returnfalse;
   let d = v.Z.getChannelId(),
-    b = f.ZP.getCurrentSidebarChannelId(d),
+    b = h.ZP.getCurrentSidebarChannelId(d),
     _ = o === d || o === b,
     C = p.OW.getSetting() && s.tts && _,
     N = E.Z.getTTSType(),
-    T = (null == (t = s.author) ? true : t.id) !== h.default.getId() && (N === j.PrB.ALL_CHANNELS || N === j.PrB.SELECTED_CHANNEL && _);
+    T = (null == (t = s.author) ? true : t.id) !== f.default.getId() && (N === j.PrB.ALL_CHANNELS || N === j.PrB.SELECTED_CHANNEL && _);
   if ((C || T) && !y.Z.isBlockedOrIgnoredForMessage(s)) {
-    if (Z.indexOf(s.id) >= 0) returnfalse;
-    Z.unshift(s.id) > 10 && Z.pop();
+    if (A.indexOf(s.id) >= 0) returnfalse;
+    A.unshift(s.id) > 10 && A.pop();
     let e = u.getGuildId();
     if (null != e && I.ZP.getMutedChannels(e).has(o)) returnfalse;
     let t = null != (l = null != (i = m.ZP.getNick(e, null == (n = s.author) ? true : n.id)) ? i : S.ZP.getName(s.author)) ? l : "",
@@ -152,6 +152,6 @@ function z() {
 }
 let W = {
   init() {
-    Chunk570140.Z.subscribe("SPEAK_TEXT", G), Chunk570140.Z.subscribe("SPEAK_MESSAGE", B), Chunk570140.Z.subscribe("STOP_SPEAKING", V), Chunk570140.Z.subscribe("MESSAGE_CREATE", H), Chunk570140.Z.subscribe("MESSAGE_DELETE", F), Chunk570140.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", z), Chunk570140.Z.subscribe("USER_SETTINGS_PROTO_UPDATE", k), (0, Chunk241601.Ql)(k)
+    Chunk570140.Z.subscribe("SPEAK_TEXT", G), Chunk570140.Z.subscribe("SPEAK_MESSAGE", V), Chunk570140.Z.subscribe("STOP_SPEAKING", B), Chunk570140.Z.subscribe("MESSAGE_CREATE", H), Chunk570140.Z.subscribe("MESSAGE_DELETE", F), Chunk570140.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", z), Chunk570140.Z.subscribe("USER_SETTINGS_PROTO_UPDATE", k), (0, Chunk241601.Ql)(k)
   }
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 352455, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -16,16 +16,16 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk490804 = require("./490804.js");
 
-function f(e) {
+function h(e) {
   let {
     className: t,
     markAsDismissed: n
   } = e;
   return (0, r.jsxs)(c.Z, {
-    className: l()(h.card, t),
+    className: l()(f.card, t),
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-md/semibold",
-      className: h.header,
+      className: f.header,
       children: p.intl.string(p.t.HcbnMD)
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
@@ -35,7 +35,7 @@ function f(e) {
         }
       })
     }), (0, r.jsxs)("div", {
-      className: h.buttonContainer,
+      className: f.buttonContainer,
       children: [(0, r.jsx)(a.zxk, {
         variant: "primary",
         size: "sm",

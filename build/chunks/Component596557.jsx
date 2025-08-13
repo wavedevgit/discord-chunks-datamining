@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
 function g(e) {
   var t;
   let g = (0, o.SE)(e),
-    m = f.$X.some(t => (null == e ? true : e.id) !== h._ && c.oz(t, e)),
+    m = h.$X.some(t => (null == e ? true : e.id) !== f._ && c.oz(t, e)),
     b = (null == e ? true : e.defaultMessageNotifications) === d.bL.ALL_MESSAGES,
     _ = (0, u.FT)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.lds),
     O = g && (m || b) && !_,

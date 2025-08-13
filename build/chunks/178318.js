@@ -2,7 +2,7 @@
 /** chunk id: 178318, original params: e,t,n (module,exports,require) **/
 let r, i;
 require.d(exports, {
-  Z: () => A
+  Z: () => Z
 }), require("./49124.js"), require("./388685.js"), require("./35282.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./539854.js"), require("./415506.js");
 var Chunk836560 = require("./836560.js"),
   Chunk392711 = require("./392711.js"),
@@ -89,7 +89,7 @@ function P(e, t, n, r) {
 }
 class j extends Chunk76238.Z {
   send(e) {
-    (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY && e.evt !== _.zMe.OVERLAY) && I.info("Socket Emit: ".concat(this.id), (0, f.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
+    (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY && e.evt !== _.zMe.OVERLAY) && I.info("Socket Emit: ".concat(this.id), (0, h.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
       binary: true
     }) : this._socket.send(JSON.stringify(e))
   }
@@ -97,10 +97,10 @@ class j extends Chunk76238.Z {
     this._socket.close(e, t)
   }
   constructor(e, t, n) {
-    if (super("ws", t, n), E(this, "_socket", true), false === ["etf", "json"].indexOf(n)) throw new h.Z({
+    if (super("ws", t, n), E(this, "_socket", true), false === ["etf", "json"].indexOf(n)) throw new f.Z({
       closeCode: _.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(n));
-    if ("etf" === n && null == r) throw new h.Z({
+    if ("etf" === n && null == r) throw new f.Z({
       closeCode: _.$VG.INVALID_ENCODING
     }, "Erlpack cannot be used on this client");
     this._socket = e
@@ -114,13 +114,13 @@ class x extends Chunk76238.Z {
     this._closeCallback(t, e)
   }
   constructor(e, t, n, r) {
-    if (super("http", n, r), E(this, "_sendCallback", true), E(this, "_closeCallback", true), "json" !== r) throw new h.Z({
+    if (super("http", n, r), E(this, "_sendCallback", true), E(this, "_closeCallback", true), "json" !== r) throw new f.Z({
       closeCode: _.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(r));
     this._sendCallback = e, this._closeCallback = t
   }
 }
-class Z extends Chunk836560.EventEmitter {
+class A extends Chunk836560.EventEmitter {
   handleRequest(e, t) {
     let [n, r] = S(e.url).split("?"), i = S(e.method);
     if ("/rpc" === n && "OPTIONS" === i) return void T(e, t, {
@@ -188,7 +188,7 @@ class Z extends Chunk836560.EventEmitter {
     } catch (t) {
       e.close(_.$VG.CLOSE_UNSUPPORTED, "Payload not ".concat(e.encoding));
       return
-    }(u.default.isLoggingOverlayEvents || n.cmd !== _.Etm.OVERLAY) && I.info("Socket Message: ".concat(e.id), (0, f.Z)(n)), this.emit("request", e, n)
+    }(u.default.isLoggingOverlayEvents || n.cmd !== _.Etm.OVERLAY) && I.info("Socket Message: ".concat(e.id), (0, h.Z)(n)), this.emit("request", e, n)
   }
   constructor() {
     var e;
@@ -204,4 +204,4 @@ class Z extends Chunk836560.EventEmitter {
     new y.ws.Server(require).on("connection", e => this.handleConnection(e))
   }
 }
-let A = new Z
+let Z = new A

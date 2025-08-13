@@ -1,5 +1,5 @@
 /** Chunk was on 84992 **/
-/** chunk id: 317269, original params: t,e,n (module,exports,require) **/
+/** chunk id: 317269, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   TB: () => _,
   VY: () => j,
@@ -29,129 +29,129 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk218376 = require("./218376.js");
 
-function E(t) {
-  let e, {
+function E(e) {
+  let t, {
       planId: n,
-      startingPremiumSubscriptionPlanId: s,
+      startingPremiumSubscriptionPlanId: i,
       paymentSourceType: l
-    } = t,
-    [C, c] = (0, r.Wu)([o.Z], () => [o.Z.get(s), o.Z.get(n)]);
-  if (a()(null != C && null != c, "Missing startingPlan or newPlan"), N.Y1.indexOf(s) < N.Y1.indexOf(n)) switch (n) {
-      case N.Xh.PREMIUM_MONTH_TIER_1:
-        e = T.intl.string(T.t.knvOV1), p.X7u.has(null != l ? l : p.HeQ.UNKNOWN) && (e = T.intl.format(T.t.o6hBiY, {}));
+    } = e,
+    [C, c] = (0, r.Wu)([H.Z], () => [H.Z.get(i), H.Z.get(n)]);
+  if (a()(null != C && null != c, "Missing startingPlan or newPlan"), p.Y1.indexOf(i) < p.Y1.indexOf(n)) switch (n) {
+      case p.Xh.PREMIUM_MONTH_TIER_1:
+        t = T.intl.string(T.t.knvOV1), N.X7u.has(null != l ? l : N.HeQ.UNKNOWN) && (t = T.intl.format(T.t.o6hBiY, {}));
         break;
-      case N.Xh.PREMIUM_MONTH_TIER_2:
-        e = T.intl.string(T.t.f8Dqur), p.X7u.has(null != l ? l : p.HeQ.UNKNOWN) && (e = T.intl.format(T.t.A4THYm, {}));
+      case p.Xh.PREMIUM_MONTH_TIER_2:
+        t = T.intl.string(T.t.f8Dqur), N.X7u.has(null != l ? l : N.HeQ.UNKNOWN) && (t = T.intl.format(T.t.A4THYm, {}));
         break;
-      case N.Xh.PREMIUM_YEAR_TIER_1:
-        e = T.intl.string(T.t.YZd5r6), p.X7u.has(null != l ? l : p.HeQ.UNKNOWN) && (e = T.intl.format(T.t.MHAxpK, {}));
+      case p.Xh.PREMIUM_YEAR_TIER_1:
+        t = T.intl.string(T.t.YZd5r6), N.X7u.has(null != l ? l : N.HeQ.UNKNOWN) && (t = T.intl.format(T.t.MHAxpK, {}));
         break;
-      case N.Xh.PREMIUM_YEAR_TIER_2:
-        e = T.intl.formatToPlainString(T.t["M/Lknp"], {
-          numFreeGuildSubscriptions: N.cb
-        }), p.X7u.has(null != l ? l : p.HeQ.UNKNOWN) && (e = T.intl.format(T.t.mULxLS, {
-          numFreeGuildSubscriptions: N.cb
+      case p.Xh.PREMIUM_YEAR_TIER_2:
+        t = T.intl.formatToPlainString(T.t["M/Lknp"], {
+          numFreeGuildSubscriptions: p.cb
+        }), N.X7u.has(null != l ? l : N.HeQ.UNKNOWN) && (t = T.intl.format(T.t.mULxLS, {
+          numFreeGuildSubscriptions: p.cb
         }));
         break;
-      case N.Xh.PREMIUM_3_MONTH_TIER_2:
-      case N.Xh.PREMIUM_6_MONTH_TIER_2:
-        e = T.intl.string(T.t.aaCoW1);
+      case p.Xh.PREMIUM_3_MONTH_TIER_2:
+      case p.Xh.PREMIUM_6_MONTH_TIER_2:
+        t = T.intl.string(T.t.aaCoW1);
         break;
-      case N.Xh.PREMIUM_MONTH_TIER_0:
-      case N.Xh.PREMIUM_YEAR_TIER_0:
-        e = T.intl.string(T.t["XEoQ7+"]);
+      case p.Xh.PREMIUM_MONTH_TIER_0:
+      case p.Xh.PREMIUM_YEAR_TIER_0:
+        t = T.intl.string(T.t["XEoQ7+"]);
         break;
       default:
         throw Error("Unexpected planId: ".concat(n))
-    } else if (C.skuId === N.Si.TIER_2 && c.skuId === N.Si.TIER_1) e = T.intl.string(T.t.PNX4ND);
+    } else if (C.skuId === p.Si.TIER_2 && c.skuId === p.Si.TIER_1) t = T.intl.string(T.t.PNX4ND);
     else switch (c.skuId) {
-      case N.Si.TIER_0:
-        e = T.intl.string(T.t["XEoQ7+"]);
+      case p.Si.TIER_0:
+        t = T.intl.string(T.t["XEoQ7+"]);
         break;
-      case N.Si.TIER_1:
-        e = T.intl.string(T.t.nLI1Ki);
+      case p.Si.TIER_1:
+        t = T.intl.string(T.t.nLI1Ki);
         break;
-      case N.Si.TIER_2:
-        e = 1 !== C.intervalCount ? T.intl.string(T.t.qSZZVF) : T.intl.string(T.t.RNjcNj);
+      case p.Si.TIER_2:
+        t = 1 !== C.intervalCount ? T.intl.string(T.t.qSZZVF) : T.intl.string(T.t.RNjcNj);
         break;
       default:
         throw Error("Unexpected skuId: ".concat(c.skuId))
     }
-  return (0, i.jsx)("div", {
+  return (0, s.jsx)("div", {
     className: I.text,
-    children: e
+    children: t
   })
 }
 
-function v(t) {
-  let e, n, {
+function v(e) {
+  let t, n, {
       planId: l,
       enableNoPaymentTrial: d,
-      startingPremiumSubscriptionPlanId: L,
-      onClose: H,
+      startingPremiumSubscriptionPlanId: o,
+      onClose: L,
       followupSKUInfo: v,
       isDowngrade: _,
       hideClose: j,
       postSuccessGuild: R,
       paymentSourceType: P,
-      startingFractionalPremiumEndsAt: U
-    } = t,
+      startingFractionalPremiumEndsAt: b
+    } = e,
     {
-      enablePremiumBrandRefresh: k,
-      isDisplayingWowMomentConfirmation: w
+      enablePremiumBrandRefresh: w,
+      isDisplayingWowMomentConfirmation: U
     } = (0, u.JL)(),
     {
-      theme: b
+      theme: k
     } = (0, C.TCT)(),
     A = (0, r.e7)([M.Z], () => null != v ? M.Z.get(v.id) : null),
-    O = (0, Z.qH)(U);
-  s.useEffect(() => {
+    O = (0, Z.qH)(b);
+  i.useEffect(() => {
     if (null == v || null != A) return;
     let {
-      applicationId: t,
-      id: e
+      applicationId: e,
+      id: t
     } = v;
-    (0, c.$N)(t, e).catch(p.VqG)
+    (0, c.$N)(e, t).catch(N.VqG)
   }, [v, A]);
-  let S = t => t.skuId === N.Si.TIER_0 ? p.X7u.has(null != P ? P : p.HeQ.UNKNOWN) ? T.intl.format(T.t.o6hBiY, {}) : T.intl.string(T.t["AGf/yc"]) : t.skuId === N.Si.TIER_1 ? p.X7u.has(null != P ? P : p.HeQ.UNKNOWN) ? T.intl.format(T.t.o6hBiY, {}) : T.intl.string(T.t.knvOV1) : p.X7u.has(null != P ? P : p.HeQ.UNKNOWN) ? T.intl.format(T.t.A4THYm, {}) : d ? T.intl.string(T.t["g52y/v"]) : T.intl.string(T.t.aTUr3d);
-  if (null != A) e = (0, i.jsx)("div", {
+  let S = e => e.skuId === p.Si.TIER_0 ? N.X7u.has(null != P ? P : N.HeQ.UNKNOWN) ? T.intl.format(T.t.o6hBiY, {}) : T.intl.string(T.t["AGf/yc"]) : e.skuId === p.Si.TIER_1 ? N.X7u.has(null != P ? P : N.HeQ.UNKNOWN) ? T.intl.format(T.t.o6hBiY, {}) : T.intl.string(T.t.knvOV1) : N.X7u.has(null != P ? P : N.HeQ.UNKNOWN) ? T.intl.format(T.t.A4THYm, {}) : d ? T.intl.string(T.t["g52y/v"]) : T.intl.string(T.t.aTUr3d);
+  if (null != A) t = (0, s.jsx)("div", {
     className: I.text,
     children: T.intl.format(T.t.tsQOs7, {
       skuName: A.name
     })
   });
   else if (O && !_) {
-    let t = o.Z.get(l);
-    a()(null != t, "Missing plan"), t.skuId === N.Si.TIER_0 ? e = (0, i.jsxs)("div", {
+    let e = H.Z.get(l);
+    a()(null != e, "Missing plan"), e.skuId === p.Si.TIER_0 ? t = (0, s.jsxs)("div", {
       className: I.text,
-      children: [(0, i.jsx)("p", {
+      children: [(0, s.jsx)("p", {
         children: T.intl.string(T.t.L9lcGx)
-      }), (0, i.jsx)("p", {
+      }), (0, s.jsx)("p", {
         children: T.intl.format(T.t.EoDFuL, {
-          helpCenterLink: h.Z.getArticleURL(p.BhN.FRACTIONAL_PREMIUM_ABOUT)
+          helpCenterLink: h.Z.getArticleURL(N.BhN.FRACTIONAL_PREMIUM_ABOUT)
         })
       })]
-    }) : (t.skuId === N.Si.TIER_1 || t.skuId === N.Si.TIER_2) && (e = (0, i.jsxs)("div", {
+    }) : (e.skuId === p.Si.TIER_1 || e.skuId === p.Si.TIER_2) && (t = (0, s.jsxs)("div", {
       className: I.text,
-      children: [(0, i.jsx)("p", {
+      children: [(0, s.jsx)("p", {
         children: T.intl.string(T.t.UPpbPz)
-      }), (0, i.jsx)("p", {
+      }), (0, s.jsx)("p", {
         children: T.intl.format(T.t.EoDFuL, {
-          helpCenterLink: h.Z.getArticleURL(p.BhN.FRACTIONAL_PREMIUM_ABOUT)
+          helpCenterLink: h.Z.getArticleURL(N.BhN.FRACTIONAL_PREMIUM_ABOUT)
         })
       })]
     }))
-  } else if (null != L) e = (0, i.jsx)(E, {
+  } else if (null != o) t = (0, s.jsx)(E, {
     planId: l,
-    startingPremiumSubscriptionPlanId: L
+    startingPremiumSubscriptionPlanId: o
   });
   else if (null != R) {
-    let t = o.Z.get(l);
-    a()(null != t, "Missing plan"), e = (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)("div", {
+    let e = H.Z.get(l);
+    a()(null != e, "Missing plan"), t = (0, s.jsxs)(s.Fragment, {
+      children: [(0, s.jsx)("div", {
         className: I.text,
-        children: S(t)
-      }), (0, i.jsx)("div", {
+        children: S(e)
+      }), (0, s.jsx)("div", {
         className: I.text,
         children: T.intl.format(T.t["6aZ0NT"], {
           guildName: R.name
@@ -159,65 +159,65 @@ function v(t) {
       })]
     })
   } else {
-    let t = o.Z.get(l);
-    a()(null != t, "Missing plan"), e = (0, i.jsx)("div", {
+    let e = H.Z.get(l);
+    a()(null != e, "Missing plan"), t = (0, s.jsx)("div", {
       className: I.text,
-      children: S(t)
+      children: S(e)
     })
   }
   let X = m.ZP.getPremiumType(l);
   a()(null != X, "premium type should not be null in purchase confirmation"), n = null != A ? T.intl.formatToPlainString(T.t["1qGgm5"], {
     skuName: A.name
   }) : _ ? T.intl.string(T.t.QJ9EyM) : null != R ? T.intl.string(T.t.ta3cXV) : T.intl.string(T.t.TkTvBw);
-  let y = () => p.X7u.has(null != P ? P : p.HeQ.UNKNOWN) ? x.ZP.Types.PREMIUM_PAYMENT_STARTED : null != L ? x.ZP.Types.PREMIUM_UPDATED : x.ZP.Types.PREMIUM_ACTIVATED;
-  return w ? (0, i.jsx)(f.Z, {
+  let y = () => N.X7u.has(null != P ? P : N.HeQ.UNKNOWN) ? x.ZP.Types.PREMIUM_PAYMENT_STARTED : null != o ? x.ZP.Types.PREMIUM_UPDATED : x.ZP.Types.PREMIUM_ACTIVATED;
+  return U ? (0, s.jsx)(f.Z, {
     type: y(),
-    text: e,
+    text: t,
     buttonText: n,
     hideClose: j,
-    onClose: H
-  }) : (0, i.jsxs)("div", {
+    onClose: L
+  }) : (0, s.jsxs)("div", {
     className: I.confirmation,
-    children: [k ? (0, i.jsx)(g.Z, {
+    children: [w ? (0, s.jsx)(g.Z, {
       type: y(),
-      theme: b
-    }) : (0, i.jsx)(x.ZP, {
+      theme: k
+    }) : (0, s.jsx)(x.ZP, {
       className: I.banner,
-      theme: b,
+      theme: k,
       premiumType: X,
       type: y()
-    }), e, j ? null : (0, i.jsx)("div", {
+    }), t, j ? null : (0, s.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: I.button,
-      children: (0, i.jsx)(C.zxk, {
+      children: (0, s.jsx)(C.zxk, {
         variant: "primary",
         text: n,
-        onClick: H
+        onClick: L
       })
     })]
   })
 }
 
-function _(t) {
+function _(e) {
   let {
-    planId: e,
+    planId: t,
     onClose: n
-  } = t, {
-    giftRecipient: s,
+  } = e, {
+    giftRecipient: i,
     selectedGiftStyle: l,
     hasSentMessage: C,
     giftMessageError: c,
     isSendingMessage: u
-  } = (0, d.wD)(), M = (0, r.e7)([o.Z], () => o.Z.get(e));
+  } = (0, d.wD)(), M = (0, r.e7)([H.Z], () => H.Z.get(t));
   a()(null != M, "Missing plan");
-  let h = (0, r.e7)([H.Z], () => H.Z.getGiftCode(M.skuId));
-  return (0, i.jsx)(L.Z, {
+  let h = (0, r.e7)([L.Z], () => L.Z.getGiftCode(M.skuId));
+  return (0, s.jsx)(o.Z, {
     giftCode: h,
     subscriptionPlan: M,
     onClose: n,
     selectedGiftStyle: l,
     hasSentMessage: C,
-    giftRecipient: s,
+    giftRecipient: i,
     giftMessageError: c,
     isSendingMessage: u
   })

@@ -22,9 +22,9 @@ function g(e) {
     platform: t
   } = e;
   return t === p.YE.XBOX ? (0, r.jsx)(u.Z, {
-    className: f.icon
+    className: h.icon
   }) : t === p.YE.PLAYSTATION ? (0, r.jsx)(c.Z, {
-    className: f.icon
+    className: h.icon
   }) : null
 }
 
@@ -38,9 +38,9 @@ function m(e) {
   }), u = null != i ? i : c;
   if (null == u || !p.al.has(u)) return null;
   let m = null != n,
-    b = m ? u === p.YE.XBOX ? h.intl.string(h.t.UjA4HR) : h.intl.string(h.t.QCw1oa) : u === p.YE.XBOX ? h.intl.format(h.t["ynEs/f"], {}) : h.intl.format(h.t.TZ17Bg, {});
+    b = m ? u === p.YE.XBOX ? f.intl.string(f.t.UjA4HR) : f.intl.string(f.t.QCw1oa) : u === p.YE.XBOX ? f.intl.format(f.t["ynEs/f"], {}) : f.intl.format(f.t.TZ17Bg, {});
   return (0, r.jsxs)("div", {
-    className: l()(f.root, m ? f.connecting : f.connected),
+    className: l()(h.root, m ? h.connecting : h.connected),
     children: [(0, r.jsx)(g, {
       platform: u
     }), (0, r.jsx)(o.Text, {

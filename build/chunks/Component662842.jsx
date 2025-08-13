@@ -51,7 +51,7 @@ function D(e) {
     isEventNoticeHidden: m.Z.isLiveChannelNoticeHidden({
       eventId: null == d ? true : d.id
     })
-  }), [P, d]), U = null == l ? true : l.id, G = (0, o.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), V = (0, o.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), B = (0, o.e7)([j.Z], () => j.Z.can(A.Plq.CONNECT, l)), H = (0, T.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, o.e7)([x.default], () => x.default.getUser(F), [F]);
+  }), [P, d]), U = null == l ? true : l.id, G = (0, o.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), B = (0, o.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), V = (0, o.e7)([j.Z], () => j.Z.can(Z.Plq.CONNECT, l)), H = (0, T.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, o.e7)([x.default], () => x.default.getUser(F), [F]);
   i.useEffect(() => {
     null != F && (0, u.PR)(F)
   }, [F]);
@@ -76,9 +76,9 @@ function D(e) {
       speakers: s,
       listenerCount: u,
       isEventNoticeHidden: d,
-      isStageNoticeHidden: h,
+      isStageNoticeHidden: f,
       isStudyRoomNotice: m
-    } = e, _ = null != n && null != i && !h, O = null != t ? (0, y.DK)(t) : null;
+    } = e, _ = null != n && null != i && !f, O = null != t ? (0, y.DK)(t) : null;
     if (m && null != i) {
       let e = (0, p.KS)(i);
       return {
@@ -173,7 +173,7 @@ function D(e) {
       if (null == e) return {
         noticeType: null
       };
-      let n = f.ZP.getUserCount(t.id, O);
+      let n = h.ZP.getUserCount(t.id, O);
       return {
         noticeType: 1,
         title: t.name,
@@ -209,7 +209,7 @@ function D(e) {
       }
     } else if (t.entity_type === w.WX.VOICE && null != i) {
       let e = (0, p.KS)(i),
-        n = f.ZP.getUserCount(t.id, O);
+        n = h.ZP.getUserCount(t.id, O);
       return {
         noticeType: 2,
         title: t.name,
@@ -249,15 +249,15 @@ function D(e) {
     guildEvent: d,
     stageInstance: P,
     activeChannel: l,
-    canConnect: B,
+    canConnect: V,
     myRole: H,
     eventCreator: z,
     speakers: G,
-    listenerCount: V,
+    listenerCount: B,
     isEventNoticeHidden: M,
     isStageNoticeHidden: D,
     isStudyRoomNotice: n
-  }), [d, P, l, B, H, z, G, V, M, D, n]);
+  }), [d, P, l, V, H, z, G, B, M, D, n]);
   return null == W ? null : (0, r.jsxs)("div", {
     className: R.container,
     children: [null != ee ? (0, r.jsx)(c.P3F, {
@@ -271,7 +271,7 @@ function D(e) {
       })
     }) : null, (0, r.jsxs)("div", {
       className: R.header,
-      children: [(0, r.jsx)(Z.Z, {
+      children: [(0, r.jsx)(A.Z, {
         color: s.Z.unsafe_rawColors.GREEN_230.css,
         width: 16,
         height: 16
@@ -310,7 +310,7 @@ function D(e) {
           if (X) null != l && null != l.getGuildId() && ((0, I.Cq)(l), (0, v.XU)(l.getGuildId(), l.id));
           else {
             if (null == d) return;
-            (0, h.bO)({
+            (0, f.bO)({
               eventId: d.id
             })
           }

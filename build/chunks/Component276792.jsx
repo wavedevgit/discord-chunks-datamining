@@ -66,20 +66,20 @@ function E(e) {
       onClose: j
     } = C,
     x = null != (y = null == (t = I.button) ? true : t.copy) ? y : g.intl.string(g.t.YScQSE),
-    Z = (null == (n = I.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
+    A = (null == (n = I.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
   switch (null == (E = I.button) ? true : E.buttonAction) {
     case l.Wc.OPEN_MARKETING_PAGE:
       v = () => {
-        (0, c.uL)(f.Z5c.APPLICATION_STORE), j()
+        (0, c.uL)(h.Z5c.APPLICATION_STORE), j()
       };
       break;
     case l.Wc.OPEN_TIER_1_PAYMENT_MODAL:
       v = () => (0, s.Z)({
-        subscriptionTier: h.Si.TIER_1,
+        subscriptionTier: f.Si.TIER_1,
         analyticsLocations: S,
         analyticsObject: O(_({}, N), {
-          object: f.qAy.BUTTON_CTA,
-          objectType: f.Qqv.TIER_1
+          object: h.qAy.BUTTON_CTA,
+          objectType: h.Qqv.TIER_1
         }),
         onClose: e => {
           e && j()
@@ -90,18 +90,18 @@ function E(e) {
     case l.Wc.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
     default:
       v = () => (0, s.Z)({
-        subscriptionTier: h.Si.TIER_2,
+        subscriptionTier: f.Si.TIER_2,
         analyticsLocations: S,
         analyticsObject: O(_({}, N), {
-          object: f.qAy.BUTTON_CTA,
-          objectType: f.Qqv.TIER_2
+          object: h.qAy.BUTTON_CTA,
+          objectType: h.Qqv.TIER_2
         }),
         onClose: e => {
           e && j()
         }
       })
   }
-  let A = "" !== I.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
+  let Z = "" !== I.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
       children: ["\xa0", (0, r.jsx)(o.eee, {
         className: m.termsApplyAnchor,
         href: d.Z.getArticleURL(I.helpArticleId),
@@ -129,7 +129,7 @@ function E(e) {
     header: I.header,
     modalTopExtra: L,
     subHeader: I.subheader,
-    subHeaderExtra: A,
+    subHeaderExtra: Z,
     body: I.body,
     heroArt: w,
     featureCards: I.featureCards.map(e => ({
@@ -148,9 +148,9 @@ function E(e) {
         wrapperClassName: m.tier2Gradient,
         size: a.zx.Sizes.SMALL,
         onClick: () => {
-          u.default.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
+          u.default.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
             change_log_id: P,
-            cta_type: Z,
+            cta_type: A,
             seconds_open: Math.round((Date.now() - e) / 1e3),
             target: P
           }), v()

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 644679, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let p = "CollectiblesExpiryModal";
-class h extends Chunk317770.Z {
+class f extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this.handleMaybeOpenModal), Chunk570140.Z.subscribe("CURRENT_USER_UPDATE", this.handleMaybeOpenModal)
   }
@@ -38,9 +38,9 @@ class h extends Chunk317770.Z {
       var e, t;
       let l = s.default.getCurrentUser(),
         a = o.Z.getState(),
-        h = null == l || null == (e = l.avatarDecoration) ? true : e.skuId,
-        f = null == l || null == (t = l.avatarDecoration) ? true : t.expiresAt;
-      return null != l && !!(null != f && 1e3 * f < Date.now()) && a !== u.hes.RTC_CONNECTED && ((0, i.Mr3)(p), (0, i.ZDy)(async () => {
+        f = null == l || null == (e = l.avatarDecoration) ? true : e.skuId,
+        h = null == l || null == (t = l.avatarDecoration) ? true : t.expiresAt;
+      return null != l && !!(null != h && 1e3 * h < Date.now()) && a !== u.hes.RTC_CONNECTED && ((0, i.Mr3)(p), (0, i.ZDy)(async () => {
         let {
           default: e
         } = await n.e("77370").then(n.bind(n, 83950));
@@ -58,7 +58,7 @@ class h extends Chunk317770.Z {
             }
             return e
           }({}, t), i = i = {
-            skuId: h
+            skuId: f
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -76,4 +76,4 @@ class h extends Chunk317770.Z {
     })
   }
 }
-let f = new h
+let h = new f

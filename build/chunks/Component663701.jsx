@@ -114,39 +114,39 @@ let eu = e => {
       selected: t
     } = e, n = ec(e, ["selected"]);
     let l = (0, c.JA)("friends"),
-      a = (0, Z.If)(),
+      a = (0, A.If)(),
       o = (0, d.e7)([R.Z], () => R.Z.canShowFriendsTabBadge()),
       u = (0, d.e7)([_.Z], () => _.Z.useReducedMotion),
       {
         enabled: p
-      } = A.w.useExperiment({
+      } = Z.w.useExperiment({
         location: "Friends Tab"
       }, {
         autoTrackExposure: false
       }),
-      h = o && p;
+      f = o && p;
     i.useEffect(() => {
-      h && (0, E.h)({
+      f && (0, E.h)({
         name: s.ImpressionNames.GIFT_INTENT_BADGE,
         type: s.ImpressionTypes.VIEW,
         properties: {
           gift_intent_type: er.hX.FRIEND_ANNIVERSARY
         }
       })
-    }, [h]);
-    let [f, m] = i.useState(false);
+    }, [f]);
+    let [h, m] = i.useState(false);
     return (0, r.jsxs)("div", {
       className: ea.friendsButtonContainer,
       children: [(0, r.jsx)(J.Qj, es(eo({
         onClick: () => {
           let e;
-          h ? (X.default.track(et.rMx.GIFT_INTENT_BADGE_CLICKED, {
+          f ? (X.default.track(et.rMx.GIFT_INTENT_BADGE_CLICKED, {
             gift_intent_type: er.hX.FRIEND_ANNIVERSARY
           }), e = et.pJs.ALL, b.Z.setSection(et.pJs.ALL), (0, L.Gk)()) : e = q.ZP.getState().section, (0, O.Z)({
             tab_opened: e
           })
         },
-        interactiveClassName: h ? ea.friendsBadge : true,
+        interactiveClassName: f ? ea.friendsBadge : true,
         selected: t,
         route: et.Z5c.FRIENDS,
         icon: g.iFz,
@@ -161,12 +161,12 @@ let eu = e => {
         children: a > 0 ? (0, r.jsx)(g.mAB, {
           count: a
         }) : null
-      })), h && !u && (0, r.jsx)(U.Z, {
+      })), f && !u && (0, r.jsx)(U.Z, {
         className: ea.confetti,
         wind: 0,
         sprites: en.CA,
         spriteColors: en.Br,
-        firing: f,
+        firing: h,
         confettiConfig: {
           opacity: {
             type: "static",
@@ -212,13 +212,13 @@ let eu = e => {
       subscribeToGlobalHotkey: true
     })
   }),
-  eh = () => {
+  ef = () => {
     let e = (0, Chunk899740.q)();
     return module > 0 ? (0, Chunk255367.jsx)(Chunk481060.mAB, {
       count: module
     }) : null
   },
-  ef = e => {
+  eh = e => {
     let {
       selected: t
     } = e, n = (0, c.JA)("messageRequests"), {
@@ -233,7 +233,7 @@ let eu = e => {
       text: ei.intl.string(ei.t.e7GWjY),
       onClick: l
     }, n), {
-      children: (0, r.jsx)(eh, {})
+      children: (0, r.jsx)(ef, {})
     }))
   },
   eg = e => {
@@ -266,7 +266,7 @@ let eu = e => {
       className: ea.familyCenterButtonContainer,
       children: (0, r.jsx)(J.bU, {
         onClick: () => {
-          (0, h.ZD)(async () => {
+          (0, f.ZD)(async () => {
             let {
               default: e
             } = await n.e("44153").then(n.bind(n, 760949));
@@ -320,7 +320,7 @@ let eO = Chunk73800.memo(function(e) {
     isReferralProgramPopoverShowable: c,
     shouldShowMessageRequestsRow: d,
     shouldShowFamilyCenterRow: p,
-    createDMButtonVariant: h,
+    createDMButtonVariant: f,
     selectedChannelId: g,
     path: m
   } = e, b = i.useRef(null), _ = i.useRef(null), O = i.useRef(null), E = i.useRef(null), v = w.ZP.useExperiment({
@@ -329,7 +329,7 @@ let eO = Chunk73800.memo(function(e) {
   return (0, r.jsxs)("nav", {
     className: ea.privateChannels,
     "aria-label": ei.intl.string(ei.t.ZH9aPz),
-    children: [(0, r.jsx)(B.Z, {
+    children: [(0, r.jsx)(V.Z, {
       childRef: b,
       tutorialId: "direct-messages",
       position: "right",
@@ -339,10 +339,10 @@ let eO = Chunk73800.memo(function(e) {
         className: a()(ea.searchBar, {
           [ea.themedHeaderMobile]: u.tq
         }),
-        children: (0, r.jsx)(f.zx, {
+        children: (0, r.jsx)(h.zx, {
           grow: true,
-          color: f.zx.Colors.PRIMARY,
-          size: f.zx.Sizes.SMALL,
+          color: h.zx.Colors.PRIMARY,
+          size: h.zx.Sizes.SMALL,
           fullWidth: true,
           onClick: eb,
           children: ei.intl.string(ei.t.LzcpeX)
@@ -353,13 +353,13 @@ let eO = Chunk73800.memo(function(e) {
       selectedChannelId: g,
       showDMHeader: true,
       listScrollerRef: O,
-      createDMCTAButtonVariant: h,
+      createDMCTAButtonVariant: f,
       children: [(0, r.jsx)(eu, {
         selected: null != m ? m === et.Z5c.FRIENDS : l === et.Z5c.FRIENDS
       }, "friends"), n && t ? (0, r.jsx)(ed, {
         selected: null == m ? null != l && l.startsWith(et.Z5c.APPLICATION_LIBRARY) : m.startsWith(et.Z5c.APPLICATION_LIBRARY),
         hideGameUpdateProgressIndicator: l === et.Z5c.APPLICATION_LIBRARY
-      }, "library") : null, d ? (0, r.jsx)(ef, {
+      }, "library") : null, d ? (0, r.jsx)(eh, {
         selected: null == m ? null != l && l.startsWith(et.Z5c.MESSAGE_REQUESTS) : m === et.Z5c.MESSAGE_REQUESTS
       }, "message-requests") : null, s ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(M.g, {
@@ -389,7 +389,7 @@ let eO = Chunk73800.memo(function(e) {
         }
       }, "discord-shop"), p ? (0, r.jsx)(eg, {
         selected: null != l && l.startsWith(et.Z5c.FAMILY_CENTER) || null != m && m.startsWith(et.Z5c.FAMILY_CENTER)
-      }, "family-center") : null, (0, r.jsx)(eE, {}, "section-divider-top"), "full-width" === h && (0, r.jsx)(ep, {}, "create-dm")]
+      }, "family-center") : null, (0, r.jsx)(eE, {}, "section-divider-top"), "full-width" === f && (0, r.jsx)(ep, {}, "create-dm")]
     }))]
   })
 });
@@ -430,8 +430,8 @@ function ey() {
       selected: null == Chunk91192 ? exports : Chunk91192.startsWith(Chunk981631.Z5c.APPLICATION_STORE)
     }),
     p = (0, Chunk93237.eW)(),
-    h = (0, Chunk28476.a)(),
-    f = function() {
+    f = (0, Chunk28476.a)(),
+    h = function() {
       let e = Chunk695346.Ex.useSetting(),
         t = (0, Chunk880257.Z)();
       returntrue === module && true === exports

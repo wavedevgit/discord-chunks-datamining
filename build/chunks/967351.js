@@ -14,7 +14,7 @@ var Chunk413135 = require("./413135.js"),
   Chunk852926 = require("./852926.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,7 +22,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let f = Chunk998502.ZP.requireModule("discord_rpc").RPCIPC,
+let h = Chunk998502.ZP.requireModule("discord_rpc").RPCIPC,
   g = new Chunk710845.Z("RPCServer:IPC"),
   m = {
     HANDSHAKE: 0,
@@ -42,7 +42,7 @@ function _(e) {
 
 function O(e) {
   return new Promise((t, n) => {
-    "string" == typeof e && (e = f.net.createConnection(e));
+    "string" == typeof e && (e = h.net.createConnection(e));
     let r = new y(e, "json");
     e.on("data", t => {
       try {
@@ -145,7 +145,7 @@ class y extends Chunk76238.Z {
     this.clientId = t.client_id, this.checkRpcVersion(+t.v), b(e, true)
   }
   constructor(e, t) {
-    super("ipc", p.X6Q, t), h(this, "messageBuffer", r.Buffer.alloc(0)), h(this, "currentHeader", null), h(this, "MAX_BUFFER_SIZE", 5242880), h(this, "socket", true), h(this, "clientId", null), this.socket = e, b(e, false)
+    super("ipc", p.X6Q, t), f(this, "messageBuffer", r.Buffer.alloc(0)), f(this, "currentHeader", null), f(this, "MAX_BUFFER_SIZE", 5242880), f(this, "socket", true), f(this, "clientId", null), this.socket = e, b(e, false)
   }
 }
 class v extends Chunk836560.EventEmitter {
@@ -182,8 +182,8 @@ class v extends Chunk836560.EventEmitter {
   }
   constructor() {
     super();
-    let e = f.net.createServer(e => this.handleConnection(e));
-    module.on("error", e => g.error("Error: ".concat(e.message))), f.getAvailableSocket(O).then(t => {
+    let e = h.net.createServer(e => this.handleConnection(e));
+    module.on("error", e => g.error("Error: ".concat(e.message))), h.getAvailableSocket(O).then(t => {
       e.listen(t, () => {
         ("function" == typeof e.listening ? e.listening() : e.listening) && g.info("Starting on ".concat(e.address()))
       })

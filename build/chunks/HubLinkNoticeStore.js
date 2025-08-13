@@ -15,24 +15,24 @@ function p(e) {
   return null != t && !!t.features.has(u.oNc.HUB) && (d = true, true)
 }
 
-function h() {
+function f() {
   returntrue
 }
-class f extends(r = Chunk442837.ZP.Store) {
+class h extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk430824.Z, Chunk810788.Z), this.syncWith([Chunk810788.Z], h)
+    this.waitFor(Chunk430824.Z, Chunk810788.Z), this.syncWith([Chunk810788.Z], f)
   }
   channelNoticePredicate(e) {
     return !!e.features.has(u.oNc.LINKED_TO_HUB) && !d
   }
 }
-l = "HubLinkNoticeStore", (i = "displayName") in f ? Object.defineProperty(f, i, {
+l = "HubLinkNoticeStore", (i = "displayName") in h ? Object.defineProperty(h, i, {
   value: l,
   enumerable: true,
   configurable: true,
   writable: true
-}) : f[i] = l;
-let g = new f(Chunk570140.Z, {
+}) : h[i] = l;
+let g = new h(Chunk570140.Z, {
   CONNECTION_OPEN: function(e) {
     for (let t of e.guilds)
       if (p(t.id)) returntrue;

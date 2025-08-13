@@ -13,22 +13,22 @@ var Chunk570140 = require("./570140.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
   Chunk486324 = require("./486324.js");
-let h = e => {
+let f = e => {
     let {
       image: t,
       file: n,
       guildId: r,
       analyticsSource: l,
-      isTryItOutFlow: h
+      isTryItOutFlow: f
     } = e;
-    if (h) return void(0, c.c_)(t);
-    let f = u.default.getCurrentUser(),
+    if (f) return void(0, c.c_)(t);
+    let h = u.default.getCurrentUser(),
       g = null != r ? a.I5 : i.I5,
-      m = d.ZP.canUseAnimatedAvatar(f);
+      m = d.ZP.canUseAnimatedAvatar(h);
     if (m || "image/gif" !== n.type) return void g(t);
-    if (null == f) return;
+    if (null == h) return;
     let b = (0, s.SD)({
-      userId: f.id,
+      userId: h.id,
       image: t
     });
     if (!m) return void(0, o.s)({
@@ -37,7 +37,7 @@ let h = e => {
       analyticsSource: l
     })
   },
-  f = e => {
+  h = e => {
     let {
       image: t,
       guildId: n,
@@ -46,9 +46,9 @@ let h = e => {
     } = e, l = t.imageUri;
     if (i) return void(0, c.f4)(l);
     let s = u.default.getCurrentUser(),
-      h = null != n ? a.g_ : c.g_,
-      f = d.ZP.canUsePremiumProfileCustomization(s);
-    return d.ZP.canUsePremiumProfileCustomization(s) ? void h(l) : null == s || f ? true : void(0, o.s)({
+      f = null != n ? a.g_ : c.g_,
+      h = d.ZP.canUsePremiumProfileCustomization(s);
+    return d.ZP.canUsePremiumProfileCustomization(s) ? void f(l) : null == s || h ? true : void(0, o.s)({
       uploadType: p.pC.BANNER,
       imageSrc: l,
       analyticsSource: r
@@ -62,7 +62,7 @@ class g extends Chunk317770.Z {
     Chunk570140.Z.unsubscribe("PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL", this.maybeOpenProfilePreviewModal)
   }
   maybeOpenProfilePreviewModal(e) {
-    return e.uploadType === p.pC.AVATAR ? h(e) : e.uploadType === p.pC.BANNER ? f(e) : true
+    return e.uploadType === p.pC.AVATAR ? f(e) : e.uploadType === p.pC.BANNER ? h(e) : true
   }
 }
 let m = new g

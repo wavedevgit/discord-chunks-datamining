@@ -41,8 +41,8 @@ function C() {
     j = !Chunk128449.MU.has(N),
     {
       searchQuery: x,
-      onSearchTextChange: Z,
-      onClearSearch: A,
+      onSearchTextChange: A,
+      onClearSearch: Z,
       onSearchSubmit: w,
       isSearchVisible: L
     } = (0, Chunk28494.H)({
@@ -58,15 +58,15 @@ function C() {
       isSearchBarVisible: j,
       isSearchBarEmpty: "" === x.trim(),
       searchBarState: R,
-      setSearchBarState: e => f.Z.setState({
+      setSearchBarState: e => h.Z.setState({
         searchBarState: e
       })
     }),
     G = Chunk164991.Z.useField("fetchedQuery"),
-    V = Chunk73800.useCallback(e => {
-      T(e), L && A()
-    }, [L, A, T]),
-    B = Chunk73800.useMemo(() => L ? S.filter(e => {
+    B = Chunk73800.useCallback(e => {
+      T(e), L && Z()
+    }, [L, Z, T]),
+    V = Chunk73800.useMemo(() => L ? S.filter(e => {
       let {
         id: t
       } = e;
@@ -96,14 +96,14 @@ function C() {
         scrollPosition: require
       }), L ? (0, Chunk255367.jsx)(Chunk611928.Cm, {
         icon: Chunk481060.j9r,
-        onClick: A
+        onClick: Z
       }) : (0, Chunk255367.jsx)(Chunk611928.aV, {
         icon: Chunk481060.QTo
       }), !L && (0, Chunk255367.jsx)(c.Z, {
         className: U,
-        tabs: B,
+        tabs: V,
         selectedTab: L ? null : N,
-        onTabSelect: V,
+        onTabSelect: B,
         onAvailableWidthChange: D
       }), L && (0, Chunk255367.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",
@@ -115,8 +115,8 @@ function C() {
       }), j && (0, Chunk255367.jsx)(Chunk680180.Z, {
         query: x,
         placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOD"]),
-        onTextChange: Z,
-        onClear: A,
+        onTextChange: A,
+        onClear: Z,
         onSubmit: w,
         onCollapsedClick: k,
         state: L ? Chunk49898.GlobalDiscoverySearchBarState.DEFAULT : R,

@@ -19,10 +19,10 @@ function u(e, t, n) {
 let d = [],
   p = false;
 
-function h() {
+function f() {
   return d.length >= 4 && d.some(e => e < Date.now() - 3 * s.Z.Millis.DAY)
 }
-class f extends(r = Chunk442837.ZP.PersistedStore) {
+class h extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     null != e && Array.isArray(e.sessionStartsWithDND) && (d = e.sessionStartsWithDND)
   }
@@ -40,15 +40,15 @@ class f extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-u(f, "displayName", "HabitualDNDStore"), u(f, "persistKey", "habitualDND"), new f(Chunk570140.Z, {
+u(h, "displayName", "HabitualDNDStore"), u(h, "persistKey", "habitualDND"), new h(Chunk570140.Z, {
   POST_CONNECTION_OPEN: function() {
-    Chunk885110.Z.getStatus() === Chunk981631.Skl.DND && "0" === Chunk695346.Cr.getSetting() ? (d.push(Date.now()), d = d.filter(e => e > Date.now() - 5 * s.Z.Millis.DAY), h() && setTimeout(() => {
+    Chunk885110.Z.getStatus() === Chunk981631.Skl.DND && "0" === Chunk695346.Cr.getSetting() ? (d.push(Date.now()), d = d.filter(e => e > Date.now() - 5 * s.Z.Millis.DAY), f() && setTimeout(() => {
       Chunk570140.Z.dispatch({
         type: "HABITUAL_DND_CLEAR"
       })
     }, 15 * Chunk70956.Z.Millis.SECOND)) : d = []
   },
   HABITUAL_DND_CLEAR: function() {
-    p = !!h(), d = []
+    p = !!f(), d = []
   }
 })

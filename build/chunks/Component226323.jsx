@@ -93,13 +93,13 @@ function j(e) {
   let d = i.useRef(null),
     {
       parentAnalyticsLocation: p
-    } = (0, f.ZP)(),
+    } = (0, h.ZP)(),
     {
       channel: O,
       user: j,
       nick: x,
-      mute: Z,
-      deaf: A,
+      mute: A,
+      deaf: Z,
       serverMute: w,
       serverDeaf: L
     } = e,
@@ -113,8 +113,8 @@ function j(e) {
     U = null != x ? x : y.ZP.getName(j),
     {
       icon: G,
-      colorize: V,
-      getStatus: B
+      colorize: B,
+      getStatus: V
     } = null != (l = function(e) {
       let {
         serverDeaf: t,
@@ -130,14 +130,14 @@ function j(e) {
       if (i) return P.mute
     }({
       serverDeaf: L,
-      deaf: A,
+      deaf: Z,
       serverMute: w,
-      mute: Z,
+      mute: A,
       localMute: R
     })) ? l : {},
-    H = null != B ? I.intl.formatToPlainString(I.t["1+MVBA"], {
+    H = null != V ? I.intl.formatToPlainString(I.t["1+MVBA"], {
       userName: U,
-      status: B()
+      status: V()
     }) : U;
 
   function F(e) {
@@ -150,7 +150,7 @@ function j(e) {
         guildId: k,
         channel: O,
         showMediaItems: true,
-        onInteraction: (0, m.u)("GuildChannelUserContextMenu", h.Z.RTC_PANEL, {
+        onInteraction: (0, m.u)("GuildChannelUserContextMenu", f.Z.RTC_PANEL, {
           targetUserId: j.id
         })
       }))
@@ -161,7 +161,7 @@ function j(e) {
       return t => (0, r.jsx)(e, N(S({}, t), {
         user: j,
         showMediaItems: true,
-        onInteraction: (0, m.u)("UserGenericContextMenu", h.Z.RTC_PANEL, {
+        onInteraction: (0, m.u)("UserGenericContextMenu", f.Z.RTC_PANEL, {
           targetUserId: j.id
         })
       }))
@@ -196,7 +196,7 @@ function j(e) {
             },
             children: null != G ? (0, r.jsx)(G, {
               className: a()(C.avatarIconOverlay, {
-                [C.avatarIconRed]: V
+                [C.avatarIconRed]: B
               }),
               color: "currentColor",
               size: "xs"
@@ -213,8 +213,8 @@ function x(e) {
     voiceStates: t,
     channel: n,
     className: l
-  } = e, [c, u] = i.useState(false), h = (0, o.e7)([O.default], () => O.default.getId()), {
-    containerRef: f,
+  } = e, [c, u] = i.useState(false), f = (0, o.e7)([O.default], () => O.default.getId()), {
+    containerRef: h,
     maxVisibleAvatars: g
   } = function(e) {
     let [t, n] = i.useState(7), r = (0, p.Z)(() => {
@@ -237,7 +237,7 @@ function x(e) {
         if (r.length >= n) return [r, true];
         r.push(i)
       } return [r, false]
-  }(t, h, g), _ = c ? s.V_R : s.qJs, E = (0, r.jsx)(s.M0o, {
+  }(t, f, g), _ = c ? s.V_R : s.qJs, E = (0, r.jsx)(s.M0o, {
     onClick: () => u(!c),
     color: s.YX$.PRIMARY,
     size: s.tT7.SIZE_24,
@@ -252,7 +252,7 @@ function x(e) {
     className: a()(C.scroller, l),
     fade: true,
     children: (0, r.jsxs)("div", {
-      ref: f,
+      ref: h,
       className: a()(C.voiceUsers, !c && C.collapsed),
       role: "group",
       "aria-label": I.intl.string(I.t["/ZgaVV"]),
@@ -262,7 +262,7 @@ function x(e) {
           nick: i,
           voiceState: l
         } = e;
-        return t.id !== h ? (0, r.jsx)(j, {
+        return t.id !== f ? (0, r.jsx)(j, {
           channel: n,
           user: t,
           nick: i,

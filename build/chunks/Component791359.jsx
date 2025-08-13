@@ -31,7 +31,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk659769 = require("./659769.js");
 let x = 15 * Chunk70956.Z.Millis.MINUTE,
-  Z = (0, Chunk525296.Z)(function(e) {
+  A = (0, Chunk525296.Z)(function(e) {
     let {
       party: t,
       onUserContextMenu: n,
@@ -46,11 +46,11 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
       quest: a
     }), {
       partiedMembers: p,
-      applicationStreams: h,
-      currentActivities: f,
+      applicationStreams: f,
+      currentActivities: h,
       voiceChannels: g
-    } = t, m = p.length, b = h.length, O = f.length, E = g.length > 0, S = i.useCallback(() => {
-      let e = f.filter(e => {
+    } = t, m = p.length, b = f.length, O = h.length, E = g.length > 0, S = i.useCallback(() => {
+      let e = h.filter(e => {
         var t, n;
         return (null == (t = e.game) ? true : t.name) != null && (0, _.isGameApplicationType)(null == (n = e.game) ? true : n.type)
       }).map(e => e.game.name);
@@ -61,7 +61,7 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
         in_voice_channel: E,
         games_detected: e
       })
-    }, [m, b, O, E, f]), T = s()(S, x);
+    }, [m, b, O, E, h]), T = s()(S, x);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",
@@ -119,7 +119,7 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
       }
     }) : null
   }),
-  A = a().throttle(() => Chunk93127._(), 3e5);
+  Z = a().throttle(() => Chunk93127._(), 3e5);
 
 function w() {
   let {
@@ -136,7 +136,7 @@ function w() {
     currentUser: Chunk594174.default.getCurrentUser()
   })), o = (0, Chunk442837.e7)([Chunk569984.Z], () => Chunk569984.Z.quests);
   Chunk73800.useEffect(() => (Chunk570140.Z.wait(() => Chunk225559.L()), () => Chunk570140.Z.wait(() => Chunk225559.v())), [null == a ? true : a.id]), Chunk73800.useEffect(() => {
-    require && !Chunk392711 && A()
+    require && !Chunk392711 && Z()
   }, [require, Chunk392711]);
   let s = Chunk73800.useMemo(() => {
       let t = new Map,
@@ -152,12 +152,12 @@ function w() {
       });
       return exports
     }, [module, Chunk954955]),
-    f = null;
-  return exports ? f = module.length > 0 ? module.map(e => {
+    h = null;
+  return exports ? h = module.length > 0 ? module.map(e => {
     let {
       party: t
     } = e;
-    return (0, r.jsx)(Z, {
+    return (0, r.jsx)(A, {
       party: t,
       quest: s.get(t.id)
     }, t.id)

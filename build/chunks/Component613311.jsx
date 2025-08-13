@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 613311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eh
+  Z: () => ef
 }), require("./415506.js"), require("./953529.js"), require("./539854.js"), require("./290780.js"), require("./388685.js"), require("./997841.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -137,7 +137,7 @@ class ep extends Chunk73800.PureComponent {
         slug: a
       }), (t !== e.locale || i !== e.skuId) && s(), r && !e.shouldFetchStatistics) {
       if (null == n) throw Error("Unexpected missing sku");
-      p.Z.wait(() => (0, h.$)(n.applicationId))
+      p.Z.wait(() => (0, f.$)(n.applicationId))
     }(i !== e.skuId || l !== e.storeListingId) && (this._trackedViewed = false), this.trackViewed(), this.replaceUrlWithSlug()
   }
   componentWillUnmount() {
@@ -450,7 +450,7 @@ class ep extends Chunk73800.PureComponent {
       let {
         location: t
       } = this.props, n = (e = t.pathname, "".concat(location.protocol, "//").concat(location.host).concat(e));
-      (0, V.JG)(n, () => this.setState({
+      (0, B.JG)(n, () => this.setState({
         showLinkCopied: true
       }, () => {
         this.showCopyLinkTextTimeout.start(1500, () => {
@@ -479,7 +479,7 @@ class ep extends Chunk73800.PureComponent {
         channel: e,
         guild: t
       } = this.props;
-      return null != e && null != t && (A.Z.can(el.Plq.CREATE_INSTANT_INVITE, t) || null != t.vanityURLCode) ? (0, r.jsx)(u.zx, {
+      return null != e && null != t && (Z.Z.can(el.Plq.CREATE_INSTANT_INVITE, t) || null != t.vanityURLCode) ? (0, r.jsx)(u.zx, {
         "aria-label": eo.intl.string(eo.t.zJrgTE),
         look: u.zx.Looks.BLANK,
         size: u.zx.Sizes.NONE,
@@ -601,7 +601,7 @@ class ep extends Chunk73800.PureComponent {
     })
   }
 }
-let eh = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chunk558314.Z, Chunk210887.Z, Chunk706454.default, Chunk451478.Z, Chunk551428.Z, Chunk55563.Z, Chunk695103.Z, Chunk115130.Z, Chunk812206.Z, Chunk525395.Z, Chunk430824.Z, Chunk580130.Z], e => {
+let ef = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chunk558314.Z, Chunk210887.Z, Chunk706454.default, Chunk451478.Z, Chunk551428.Z, Chunk55563.Z, Chunk695103.Z, Chunk115130.Z, Chunk812206.Z, Chunk525395.Z, Chunk430824.Z, Chunk580130.Z], e => {
   let t, n, r, {
     inputSkuId: i,
     applicationId: l,
@@ -615,7 +615,7 @@ let eh = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
   } else if (null == i) {
     if (null == l) throw Error("Needs applicationId or skuId");
     null != (r = y.Z.getApplication(l)) && (t = r.destinationSkuId), n = null != t ? D.Z.get(t) : null
-  }(null == n ? true : n.flags) != null && (0, B.yE)(n.flags, el.l4R.STICKER) && (n = null);
+  }(null == n ? true : n.flags) != null && (0, V.yE)(n.flags, el.l4R.STICKER) && (n = null);
   let c = null != l && (M.Z.inTestModeForApplication(l) || E.Z.inDevModeForApplication(l));
   return {
     skuId: t,
@@ -635,6 +635,6 @@ let eh = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
     matureAgree: L.Z.didMatureAgree,
     theme: x.Z.theme,
     locale: j.default.locale,
-    guild: null != s ? Z.Z.getGuild(s.getGuildId()) : null
+    guild: null != s ? A.Z.getGuild(s.getGuildId()) : null
   }
 })(ep)))

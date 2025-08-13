@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 512847, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => B
+  Z: () => V
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -62,7 +62,7 @@ function x() {
   }), null
 }
 
-function Z() {
+function A() {
   return j([Chunk131951.Z, Chunk944486.Z], () => ({
     videoEnabled: Chunk131951.Z.isVideoEnabled(),
     inVoiceChannel: null != Chunk944486.Z.getVoiceChannelId()
@@ -71,7 +71,7 @@ function Z() {
       videoEnabled: n,
       inVoiceChannel: r
     } = t;
-    if (!(0, h.O)()) return;
+    if (!(0, f.O)()) return;
     let {
       videoEnabled: i,
       inVoiceChannel: l
@@ -80,7 +80,7 @@ function Z() {
   }), null
 }
 
-function A() {
+function Z() {
   return j([Chunk592125.Z, Chunk19780.Z, Chunk944486.Z, Chunk258609.Z], () => {
     let e = Chunk592125.Z.getChannel(Chunk944486.Z.getVoiceChannelId()),
       t = null == module ? true : module.type,
@@ -162,7 +162,7 @@ function M() {
     let t = Chunk979651.Z.getVoiceStateForChannel(module);
     return (0, Chunk590415.gf)(exports)
   }, (e, t) => {
-    if (e !== t && t === f.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
+    if (e !== t && t === h.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
   }), null
 }
 
@@ -265,7 +265,7 @@ function G() {
   }), null
 }
 
-function V() {
+function B() {
   return j([Chunk106301.Z, Chunk944486.Z], () => ({
     hangStatus: Chunk106301.Z.getCurrentHangStatus(),
     customHangStatus: Chunk106301.Z.getCustomHangStatus(),
@@ -280,8 +280,8 @@ function V() {
   }, .15), null
 }
 
-function B() {
+function V() {
   return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-    children: [(0, Chunk255367.jsx)(x, {}), (0, Chunk255367.jsx)(Z, {}), (0, Chunk255367.jsx)(A, {}), (0, Chunk255367.jsx)(w, {}), (0, Chunk255367.jsx)(R, {}), (0, Chunk255367.jsx)(k, {}), (0, Chunk255367.jsx)(U, {}), (0, Chunk255367.jsx)(M, {}), (0, Chunk255367.jsx)(G, {}), (0, Chunk255367.jsx)(L, {}), (0, Chunk255367.jsx)(D, {}), (0, Chunk255367.jsx)(V, {})]
+    children: [(0, Chunk255367.jsx)(x, {}), (0, Chunk255367.jsx)(A, {}), (0, Chunk255367.jsx)(Z, {}), (0, Chunk255367.jsx)(w, {}), (0, Chunk255367.jsx)(R, {}), (0, Chunk255367.jsx)(k, {}), (0, Chunk255367.jsx)(U, {}), (0, Chunk255367.jsx)(M, {}), (0, Chunk255367.jsx)(G, {}), (0, Chunk255367.jsx)(L, {}), (0, Chunk255367.jsx)(D, {}), (0, Chunk255367.jsx)(B, {})]
   })
 }

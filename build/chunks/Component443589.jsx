@@ -42,10 +42,10 @@ function P(e) {
     analyticsLocations: j
   } = (0, d.ZP)(), {
     isHovered: x,
-    setIsHovered: Z,
-    onMouseEnter: A,
+    setIsHovered: A,
+    onMouseEnter: Z,
     onMouseLeave: w
-  } = (0, f.Z)(200, 300), {
+  } = (0, h.Z)(200, 300), {
     enableEmojiCTA: L
   } = _.w.useExperiment({
     location: "GiftIntentActionButton"
@@ -64,15 +64,15 @@ function P(e) {
     })
   }, [t, n]);
   let R = i.useCallback(e => {
-      "focus" !== e.type && A()
-    }, [A]),
+      "focus" !== e.type && Z()
+    }, [Z]),
     D = e => {
       e.stopPropagation();
       let r = g.Z.getUserAffinity(t.id);
       m.default.track(I.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
         gift_intent_type: n,
         affinity: null == r ? true : r.communicationProbability
-      }), (0, h.Z)({
+      }), (0, f.Z)({
         isGift: true,
         initialPlanId: null,
         giftRecipient: t,
@@ -137,13 +137,13 @@ function P(e) {
     align: "top",
     spacing: 9,
     onRequestClose: () => {
-      Z(false)
+      A(false)
     },
     renderPopout: e => (0, r.jsx)(y.Z, {
       giftIntentType: n,
       premiumGiftIntentCardType: y.U.COACHMARK,
       recipientUser: t,
-      onMouseEnter: A,
+      onMouseEnter: Z,
       onMouseLeave: w,
       popoutPosition: e.position,
       analyticsPage: l,

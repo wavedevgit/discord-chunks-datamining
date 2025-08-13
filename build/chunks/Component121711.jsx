@@ -56,7 +56,7 @@ function q(e) {
   } = e, {
     enabled: n
   } = (0, N.WX)({
-    location: V.dr.QUEST_HOME_DESKTOP
+    location: B.dr.QUEST_HOME_DESKTOP
   }), l = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), o = (0, s.e7)([P.Z], () => P.Z.isFocused()), {
     ref: c,
     inViewport: u

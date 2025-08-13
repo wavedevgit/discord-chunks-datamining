@@ -1,5 +1,5 @@
 /** Chunk was on 84992 **/
-/** chunk id: 335105, original params: t,e,n (module,exports,require) **/
+/** chunk id: 335105, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -11,21 +11,21 @@ var Chunk780384 = require("./780384.js"),
   Chunk210642 = require("./210642.jsx"),
   Chunk859218 = require("./859218.jsx"),
   Chunk704106 = require("./704106.js");
-let d = (t, e) => {
-    let n = (0, s.wj)(e) ? "white" : "black";
-    switch (t) {
+let d = (e, t) => {
+    let n = (0, i.wj)(t) ? "white" : "black";
+    switch (e) {
       case l.Yk.PREMIUM_UPDATED:
-        return (0, i.jsx)(C.Z, {
+        return (0, s.jsx)(C.Z, {
           color: n,
           className: c.svgCopy
         });
       case l.Yk.PREMIUM_ACTIVATED:
-        return (0, i.jsx)(a.Z, {
+        return (0, s.jsx)(a.Z, {
           color: n,
           className: c.svgCopy
         });
       case l.Yk.PREMIUM_PAYMENT_STARTED:
-        return (0, i.jsx)(r.Z, {
+        return (0, s.jsx)(r.Z, {
           color: n,
           className: c.svgCopy
         });
@@ -33,16 +33,16 @@ let d = (t, e) => {
         return null
     }
   },
-  u = t => {
+  u = e => {
     let {
-      type: e,
+      type: t,
       theme: n
-    } = t;
-    return (0, i.jsx)("div", {
+    } = e;
+    return (0, s.jsx)("div", {
       className: c.gradientOuterBorder,
-      children: (0, i.jsx)("div", {
+      children: (0, s.jsx)("div", {
         className: c.gradientInnerBorder,
-        children: d(e, n)
+        children: d(t, n)
       })
     })
   }

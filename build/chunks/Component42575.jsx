@@ -49,27 +49,27 @@ function g(e) {
         children: [(0, r.jsx)(c.Z, {
           icon: i.dz2,
           actionType: c.Z.ActionTypes.ACCEPT,
-          tooltip: h.intl.string(h.t.ZcibdX),
+          tooltip: f.intl.string(f.t.ZcibdX),
           onClick: _,
           shouldHighlight: e
         }), (0, r.jsx)(c.Z, {
           icon: i.Dio,
           actionType: c.Z.ActionTypes.DENY,
-          tooltip: h.intl.string(h.t.xuio0N),
+          tooltip: f.intl.string(f.t.xuio0N),
           onClick: O,
           shouldHighlight: e
         })]
       });
       return (0, r.jsxs)("div", {
-        className: f.listItemContents,
+        className: h.listItemContents,
         children: [(0, r.jsx)(d.Z, {
           user: t,
           hovered: e,
           status: E,
           subText: n,
-          className: f.__invalid_userInfo
+          className: h.__invalid_userInfo
         }), (0, r.jsx)("div", {
-          className: f.actions,
+          className: h.actions,
           children: l
         })]
       })

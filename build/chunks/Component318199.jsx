@@ -36,14 +36,14 @@ function m(e) {
     analyticsLocations: l
   } = (0, u.ZP)(c.Z.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), d = (0, s.ZP)(), g = (0, a.apv)(d);
   if ("announcementModalVariant1" === n.properties.oneofKind) {
-    let e = (0, h.N)({
+    let e = (0, f.N)({
       content: n.properties.announcementModalVariant1,
       renderModalProps: t,
       analyticsLocations: l,
       analyticsLocation: i,
       isLightTheme: g
     });
-    return (0, r.jsx)(f.Z, function(e) {
+    return (0, r.jsx)(h.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

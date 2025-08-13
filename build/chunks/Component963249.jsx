@@ -138,7 +138,7 @@ function C(e) {
               didSucceed: e
             })
           };
-          _.Z.isDisplayingWowMomentConfirmation ? setTimeout(() => {
+          _.Z.isDisplayingWowMomentConfirmation && _.Z.isAnimated ? setTimeout(() => {
             n()
           }, b.P) : n()
         },
@@ -166,7 +166,7 @@ function C(e) {
     }
   }, {
     onCloseRequest: () => {
-      ee || (ee = true, g.S.dispatch(y.CkL.PREMIUM_PAYMENT_MODAL_CLOSED), _.Z.isDisplayingWowMomentConfirmation ? setTimeout(() => {
+      ee || (ee = true, g.S.dispatch(y.CkL.PREMIUM_PAYMENT_MODAL_CLOSED), _.Z.isDisplayingWowMomentConfirmation && _.Z.isAnimated ? setTimeout(() => {
         (0, s.Mr3)(J)
       }, b.P) : (0, s.Mr3)(J))
     },

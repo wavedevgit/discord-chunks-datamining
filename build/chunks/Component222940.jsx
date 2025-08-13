@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 222940, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,23 +14,23 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk137781 = require("./137781.js");
 
-function h(e) {
+function f(e) {
   let {
     inboxIconRef: t,
     recentsPopoutShown: n
-  } = e, [h, f] = i.useState(false), g = (0, l.e7)([s.Z], () => s.Z.getLastUnseenInvite()), m = (0, l.e7)([u.default], () => null != g ? u.default.getUser(g.inviter_id) : null);
+  } = e, [f, h] = i.useState(false), g = (0, l.e7)([s.Z], () => s.Z.getLastUnseenInvite()), m = (0, l.e7)([u.default], () => null != g ? u.default.getUser(g.inviter_id) : null);
   return (i.useEffect(() => {
-    n && f(false)
+    n && h(false)
   }, [n]), i.useEffect(() => {
-    if (null == g) return void f(false);
-    (0, c.Br)(g), f(true);
+    if (null == g) return void h(false);
+    (0, c.Br)(g), h(true);
     let e = new a.V7;
     return e.start(5e3, () => {
-      f(false)
+      h(false)
     }), () => {
       e.stop()
     }
-  }, [g]), h && null != g && null != m) ? (0, r.jsxs)(o.Cys, {
+  }, [g]), f && null != g && null != m) ? (0, r.jsxs)(o.Cys, {
     tooltipClassName: p.tooltip,
     tooltipContentClassName: p.tooltipContent,
     targetElementRef: t,
