@@ -17,8 +17,11 @@ let a = [{
   getDueAt: () => i()().add(4, "hour").toDate(),
   getLabel: () => Chunk388032.intl.string(Chunk388032.t["5gztZG"])
 }, {
-  getDueAt: () => i()().add(1, "day").startOf("day").add(9, "hours").toDate(),
-  getLabel: () => Chunk388032.intl.string(Chunk388032.t["7MKr2N"])
+  getDueAt: () => {
+    let e = i()().startOf("day").add(9, "hours");
+    return i()().hour() >= 9 ? module.add(1, "day").toDate() : module.toDate()
+  },
+  getLabel: () => i()().hour() >= 9 ? Chunk388032.intl.string(Chunk388032.t["7MKr2N"]) : Chunk388032.intl.string(Chunk388032.t.FnFI3t)
 }, {
   getDueAt: () => {
     let e, t = i()().day();

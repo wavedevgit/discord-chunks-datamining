@@ -46,7 +46,7 @@ let g = "isHideDevBanner",
       children: [(0, Chunk255367.jsx)(Chunk820254.Z, {
         className: Chunk531359.icon
       }), Chunk388032.intl.format(Chunk388032.t.uyrfYG, {
-        buildNumber: "431031"
+        buildNumber: "431038"
       }), (0, Chunk255367.jsx)(b, {})]
     }) : null
   }
