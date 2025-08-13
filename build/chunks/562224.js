@@ -107,6 +107,7 @@ async function A(e, t) {
     audioSourceId: (null == (p = L.id) ? true : p.startsWith(r.vA.CAMERA)) ? null == t ? true : t.audioSourceId : true,
     sound: H,
     previewDisabled: V,
-    goLiveModalDurationMs: null == t ? true : t.goLiveModalDurationMs
+    goLiveModalDurationMs: null == t ? true : t.goLiveModalDurationMs,
+    analyticsLocations: null == t ? true : t.analyticsLocations
   })), [true, true]
 }

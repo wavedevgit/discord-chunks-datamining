@@ -2,7 +2,7 @@
 /** chunk id: 442917, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => eh
+  Z: () => e_
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -59,14 +59,12 @@ var Chunk255367 = require("./255367.js"),
   Chunk351483 = require("./351483.jsx"),
   Chunk249212 = require("./249212.jsx"),
   Chunk560688 = require("./560688.jsx"),
-  Chunk127608 = require("./127608.jsx"),
-  Chunk76021 = require("./76021.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk474089 = require("./474089.js"),
   Chunk210297 = require("./210297.js");
 
-function eu(e, t, n) {
+function el(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -75,20 +73,20 @@ function eu(e, t, n) {
   }) : e[t] = n, e
 }
 
-function ed(e) {
+function ec(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      eu(e, t, n[t])
+      el(e, t, n[t])
     })
   }
   return e
 }
 
-function ef(e, t) {
+function eu(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -99,12 +97,12 @@ function ef(e, t) {
   return n
 }
 
-function e_(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ef(Object(t)).forEach(function(n) {
+function ed(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eu(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class ep extends Chunk73800.PureComponent {
+class ef extends Chunk73800.PureComponent {
   get viewProperties() {
     let {
       participantOnScreen: e,
@@ -149,7 +147,7 @@ class ep extends Chunk73800.PureComponent {
     let {
       channel: e
     } = this.props;
-    Chunk626135.default.track(Chunk981631.rMx.VIDEO_LAYOUT_TOGGLED, ed({
+    Chunk626135.default.track(Chunk981631.rMx.VIDEO_LAYOUT_TOGGLED, ec({
       video_layout: "pip"
     }, (0, Chunk367907.AB)(module.id)))
   }
@@ -157,7 +155,7 @@ class ep extends Chunk73800.PureComponent {
     let {
       channel: e
     } = this.props;
-    Chunk626135.default.track(Chunk981631.rMx.VIDEO_LAYOUT_TOGGLED, ed({
+    Chunk626135.default.track(Chunk981631.rMx.VIDEO_LAYOUT_TOGGLED, ec({
       video_layout: Chunk358221.Z.getLayout(module.id)
     }, (0, Chunk367907.AB)(module.id)))
   }
@@ -245,7 +243,7 @@ class ep extends Chunk73800.PureComponent {
       timeout: 1800,
       children: e => {
         var t;
-        return (0, r.jsx)(M.Z, e_(ed({
+        return (0, r.jsx)(M.Z, ed(ec({
           title: a,
           backgroundKey: null != (t = null == n ? true : n.id) ? t : "",
           screenMessage: null == l ? this.getScreenMessage() : null,
@@ -255,8 +253,8 @@ class ep extends Chunk73800.PureComponent {
           renderBottomRightControls: this.renderBottomRightControls,
           preventIdleComponent: x.Z,
           width: o,
-          className: ec.elevationHigh,
-          videoControlsClassName: (null == c ? true : c.state) === ea.jm8.ENDED ? el.videoControls : true
+          className: es.elevationHigh,
+          videoControlsClassName: (null == c ? true : c.state) === ei.jm8.ENDED ? ea.videoControls : true
         }, e), {
           children: u
         }))
@@ -264,53 +262,46 @@ class ep extends Chunk73800.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), eu(this, "state", {
+    super(...e), el(this, "state", {
       screensharePopoutOpen: false
-    }), eu(this, "_ref", i.createRef()), eu(this, "handleVideo", e => {
+    }), el(this, "_ref", i.createRef()), el(this, "handleVideo", e => {
       f.Z.setVideoEnabled(e)
-    }), eu(this, "handleEnableVideoWhenUnavailable", () => {
+    }), el(this, "handleEnableVideoWhenUnavailable", () => {
       let {
         isVideoAvailable: e
       } = this.props;
       e ? this.handleVideo(true) : (0, er.Z)()
-    }), eu(this, "handleJumpToChannel", () => {
+    }), el(this, "handleJumpToChannel", () => {
       var e;
       let {
         channel: t
       } = this.props;
       (0, h.Ou)();
-      let n = null != (e = t.getGuildId()) ? e : ea.ME;
+      let n = null != (e = t.getGuildId()) ? e : ei.ME;
       (0, D.XU)(n, t.id), p.Z.channelListScrollTo(n, t.id);
       let r = this.activeStreamForSelectedParticipant;
       null != r && _.Z.selectParticipant(r.channelId, (0, A.V9)(r))
-    }), eu(this, "handleStartStream", () => {
-      let {
-        canGoLive: e,
-        channel: t
-      } = this.props, n = t.getGuildId();
-      if (a()(null != n, "Cannot go live in non guild channel"), (0, v.v)(g.Z.VIDEO_PIP, v.d.STREAM, true), !e) return (0, ei.Z)();
-      (0, eo.Z)(n, t.id, ea.ZY5.GUILD_CHANNEL)
-    }), eu(this, "handleStopStream", () => {
+    }), el(this, "handleStopStream", () => {
       let {
         participantOnScreen: e
       } = this.props;
-      a()((0, es._5)(e), "cannot stop stream for non streamer"), (0, v.v)(g.Z.VIDEO_PIP, v.d.STREAM, false), (0, R.Z)(e.stream)
-    }), eu(this, "handleHidePIP", () => {
+      a()((0, eo._5)(e), "cannot stop stream for non streamer"), (0, v.v)(g.Z.VIDEO_PIP, v.d.STREAM, false), (0, R.Z)(e.stream)
+    }), el(this, "handleHidePIP", () => {
       let {
         channel: e
       } = this.props;
       m.Cp(e.id)
-    }), eu(this, "handleOpenPopout", () => {
+    }), el(this, "handleOpenPopout", () => {
       let {
         channel: e
       } = this.props;
       (0, v.v)(g.Z.VIDEO_PIP, v.d.POPOUT, true), w.hP(e)
-    }), eu(this, "renderBottomLeftControls", () => {
+    }), el(this, "renderBottomLeftControls", () => {
       let {
         canSeeParticipantName: e
       } = this.viewProperties;
       return e ? this.renderParticipantName() : null
-    }), eu(this, "renderBottomRightControls", () => {
+    }), el(this, "renderBottomRightControls", () => {
       let {
         canSettings: e,
         canPopout: t,
@@ -321,60 +312,60 @@ class ep extends Chunk73800.PureComponent {
       return (0, r.jsxs)(r.Fragment, {
         children: [o ? this.renderViewersIcon() : null, e ? this.renderSettingsIcon() : null, t ? this.renderPopoutIcon() : null, i ? this.renderStopStreamButton() : null, n ? this.renderDisconnectButton() : null]
       })
-    }), eu(this, "renderDisconnectButton", () => (0, r.jsx)(k.Z, {
-      className: el.rightTrayIcon,
+    }), el(this, "renderDisconnectButton", () => (0, r.jsx)(k.Z, {
+      className: ea.rightTrayIcon,
       onClick: () => (0, v.v)(g.Z.VIDEO_PIP, v.d.DISCONNECT)
-    })), eu(this, "renderStopStreamButton", () => {
+    })), el(this, "renderStopStreamButton", () => {
       let {
         isSelf: e
       } = this.viewProperties;
       return (0, r.jsx)(U.Z, {
         isSelfStream: e,
-        className: el.rightTrayIcon,
+        className: ea.rightTrayIcon,
         onClick: this.handleStopStream
       })
-    }), eu(this, "renderViewersIcon", () => {
+    }), el(this, "renderViewersIcon", () => {
       let {
         participantOnScreen: e,
         channel: t
       } = this.props;
-      return a()((0, es._5)(e) || (null == e ? true : e.type) === es.fO.ACTIVITY, "Cannot render participants for participant type ".concat(null == e ? true : e.type)), (0, r.jsx)(x.Z, {
+      return a()((0, eo._5)(e) || (null == e ? true : e.type) === eo.fO.ACTIVITY, "Cannot render participants for participant type ".concat(null == e ? true : e.type)), (0, r.jsx)(x.Z, {
         children: (0, r.jsx)(O.Z, {
           channelId: t.id,
           guildId: t.getGuildId(),
-          className: el.rightTrayIcon,
+          className: ea.rightTrayIcon,
           participant: e,
           compact: true
         })
       })
-    }), eu(this, "renderPopoutIcon", () => (0, r.jsx)(j.Z, {
-      className: el.rightTrayIcon,
+    }), el(this, "renderPopoutIcon", () => (0, r.jsx)(j.Z, {
+      className: ea.rightTrayIcon,
       popoutOpen: false,
       onOpenPopout: this.handleOpenPopout,
-      onClosePopout: ea.VqG
-    })), eu(this, "renderSettingsIcon", () => {
+      onClosePopout: ei.VqG
+    })), el(this, "renderSettingsIcon", () => {
       let {
         participantOnScreen: e,
         activeStreams: t
       } = this.props;
-      a()((0, es._5)(e), "Cannot render settings for non stream participant");
+      a()((0, eo._5)(e), "Cannot render settings for non stream participant");
       let n = t.find(t => (0, A.V9)(t) === e.id);
-      return null == n || n.state === ea.jm8.ENDED ? null : (0, r.jsx)(G.Z, {
+      return null == n || n.state === ei.jm8.ENDED ? null : (0, r.jsx)(G.Z, {
         stream: n,
-        className: el.rightTrayIcon,
-        appContext: ea.IlC.APP,
+        className: ea.rightTrayIcon,
+        appContext: ei.IlC.APP,
         location: g.Z.VIDEO_PIP
       })
     })
   }
 }
 
-function eh(e) {
+function e_(e) {
   let {
     channel: t,
     width: n
-  } = e, i = (0, c.e7)([Y.Z], () => Y.Z.getSpeaker(t.id)), o = (0, c.e7)([b.Z], () => b.Z.getParticipant(t.id, i), [t.id, i]), a = (0, c.e7)([F.Z], () => l()(F.Z.getVideoDevices()).values().first()), s = (0, c.e7)([W.Z], () => null != o && o.type !== es.fO.ACTIVITY && o.type !== es.fO.HIDDEN_STREAM ? W.Z.getStreamId(o.user.id, t.getGuildId(), (0, y.Z)(o.type)) : null, [o, t]), d = null == a || a.disabled, f = !d, _ = (0, c.e7)([F.Z], () => !d && F.Z.isVideoEnabled(), [d]), p = (0, c.e7)([F.Z], () => (0, N.Z)(F.Z)), h = (0, c.e7)([Z.default], () => Z.default.getId()), m = (0, c.e7)([B.Z], () => B.Z.getCurrentUserActiveStream()), g = null != o && "user" in o ? o.user.id : "", E = (0, S.Z)((null == o ? true : o.type) === es.fO.STREAM ? u.Yn.STREAM : u.Yn.DEFAULT, g), O = (0, T.Z)(g), v = (0, c.Wu)([B.Z], () => B.Z.getAllActiveStreams());
-  return (0, r.jsx)(ep, {
+  } = e, i = (0, c.e7)([Y.Z], () => Y.Z.getSpeaker(t.id)), o = (0, c.e7)([b.Z], () => b.Z.getParticipant(t.id, i), [t.id, i]), a = (0, c.e7)([F.Z], () => l()(F.Z.getVideoDevices()).values().first()), s = (0, c.e7)([W.Z], () => null != o && o.type !== eo.fO.ACTIVITY && o.type !== eo.fO.HIDDEN_STREAM ? W.Z.getStreamId(o.user.id, t.getGuildId(), (0, y.Z)(o.type)) : null, [o, t]), d = null == a || a.disabled, f = !d, _ = (0, c.e7)([F.Z], () => !d && F.Z.isVideoEnabled(), [d]), p = (0, c.e7)([F.Z], () => (0, N.Z)(F.Z)), h = (0, c.e7)([Z.default], () => Z.default.getId()), m = (0, c.e7)([B.Z], () => B.Z.getCurrentUserActiveStream()), g = null != o && "user" in o ? o.user.id : "", E = (0, S.Z)((null == o ? true : o.type) === eo.fO.STREAM ? u.Yn.STREAM : u.Yn.DEFAULT, g), O = (0, T.Z)(g), v = (0, c.Wu)([B.Z], () => B.Z.getAllActiveStreams());
+  return (0, r.jsx)(ef, {
     channel: t,
     streamId: s,
     participantOnScreen: o,

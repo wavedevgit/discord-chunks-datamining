@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 975533, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => U
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk846027 = require("./846027.js"),
@@ -11,6 +11,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk223245 = require("./223245.js"),
   Chunk479837 = require("./479837.js"),
   Chunk317770 = require("./317770.js"),
+  Chunk100527 = require("./100527.js"),
   Chunk924557 = require("./924557.js"),
   Chunk39604 = require("./39604.js"),
   Chunk569545 = require("./569545.js"),
@@ -32,35 +33,35 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk345655 = require("./345655.js"),
   Chunk65154 = require("./65154.js");
-let Z = new Map;
+let w = new Map;
 
-function w(e, t, n) {
+function L(e, t, n) {
   var r;
   let i = performance.now(),
-    l = null != (r = n.context) ? r : A.Yn.DEFAULT;
+    l = null != (r = n.context) ? r : Z.Yn.DEFAULT;
   if (true !== n.latched && e) n.pressedTime = i;
-  else if (null != n.pressedTime && (0, O.f)({
+  else if (null != n.pressedTime && (0, E.f)({
       location: "doPTT",
       autoTrackExposure: false
     }).enableLatching) {
-    let e = x._M,
+    let e = A._M,
       {
         pttLatchingEnabled: t = false
-      } = y.Z.getModeOptions(l);
+      } = v.Z.getModeOptions(l);
     if (true === t && i < n.pressedTime + e) {
       n.latched = true;
       return
     }
     n.latched = false
   }
-  let a = Z.get(l);
-  null == a && (a = new Map, Z.set(l, a));
+  let a = w.get(l);
+  null == a && (a = new Map, w.set(l, a));
   let o = a.get(t);
   null == o && (o = new Set, a.set(t, o)), e ? o.add(n.id) : o.delete(n.id);
   let s = o.size > 0;
-  y.Z.getMediaEngine().eachConnection(e => e.setForceAudioInput(s, t), l)
+  v.Z.getMediaEngine().eachConnection(e => e.setForceAudioInput(s, t), l)
 }
-let L = {
+let R = {
     [Chunk981631.kg4.TOGGLE_PRIORITY_SPEAKER]: {
       onTrigger() {},
       keyEvents: {}
@@ -71,7 +72,7 @@ let L = {
     },
     [Chunk981631.kg4.PUSH_TO_TALK]: {
       onTrigger(e, t) {
-        y.Z.getMode(t.context) === j.pM4.PUSH_TO_TALK && (L[j.kg4.PUSH_TO_TALK].isPressed = e, w(e, false, t))
+        v.Z.getMode(t.context) === x.pM4.PUSH_TO_TALK && (R[x.kg4.PUSH_TO_TALK].isPressed = e, L(e, false, t))
       },
       keyEvents: {
         keyup: true,
@@ -81,9 +82,9 @@ let L = {
     },
     [Chunk981631.kg4.PUSH_TO_TALK_PRIORITY]: {
       onTrigger(e, t) {
-        (y.Z.getMode() === j.pM4.PUSH_TO_TALK || P.Z.getCurrentConfig({
+        (v.Z.getMode() === x.pM4.PUSH_TO_TALK || j.Z.getCurrentConfig({
           location: "keybinds"
-        }).onPTTKeybind) && (L[j.kg4.PUSH_TO_TALK_PRIORITY].isPressed = e, w(e, true, t))
+        }).onPTTKeybind) && (R[x.kg4.PUSH_TO_TALK_PRIORITY].isPressed = e, L(e, true, t))
       },
       keyEvents: {
         keyup: true,
@@ -93,9 +94,9 @@ let L = {
     },
     [Chunk981631.kg4.VAD_PRIORITY]: {
       onTrigger(e, t) {
-        y.Z.getMode() === j.pM4.VOICE_ACTIVITY && P.Z.getCurrentConfig({
+        v.Z.getMode() === x.pM4.VOICE_ACTIVITY && j.Z.getCurrentConfig({
           location: "keybinds"
-        }).separateKeybind && (L[j.kg4.VAD_PRIORITY].isPressed = e, w(e, true, t))
+        }).separateKeybind && (R[x.kg4.VAD_PRIORITY].isPressed = e, L(e, true, t))
       },
       keyEvents: {
         keyup: true,
@@ -105,7 +106,7 @@ let L = {
     },
     [Chunk981631.kg4.PUSH_TO_MUTE]: {
       onTrigger(e) {
-        y.Z.getMode() === j.pM4.VOICE_ACTIVITY && (L[j.kg4.PUSH_TO_MUTE].isPressed = e, i.Z.setTemporarySelfMute(e))
+        v.Z.getMode() === x.pM4.VOICE_ACTIVITY && (R[x.kg4.PUSH_TO_MUTE].isPressed = e, i.Z.setTemporarySelfMute(e))
       },
       keyEvents: {
         keyup: true,
@@ -159,9 +160,9 @@ let L = {
     },
     [Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK]: {
       onTrigger(e, t) {
-        if (!(0, I.I1)(t.shortcut)) return;
-        let n = (0, T.Z)();
-        null != n && l.Z.setInputLocked(!S.default.isLocked(n), n)
+        if (!(0, C.I1)(t.shortcut)) return;
+        let n = (0, P.Z)();
+        null != n && l.Z.setInputLocked(!N.default.isLocked(n), n)
       },
       keyEvents: {
         keyup: true,
@@ -183,7 +184,7 @@ let L = {
       onTrigger() {
         let e = Chunk199902.Z.getCurrentUserActiveStream();
         if (null != module) return (0, Chunk872810.g)((0, Chunk569545.V9)(module));
-        (0, Chunk722835.Z)()
+        (0, Chunk722835.Z)(true, [Chunk100527.Z.GO_LIVE_KEYBIND])
       },
       keyEvents: {
         keyup: true,
@@ -234,12 +235,12 @@ let L = {
     },
     [Chunk981631.kg4.SOUNDBOARD_HOLD]: {
       onTrigger: e => {
-        let t = (0, T.Z)();
+        let t = (0, P.Z)();
         if (null != t) {
           if (e) {
-            if (!(0, b.D)()) return;
-            (0, _.IN)(false, t)
-          } else(0, _.oZ)(t);
+            if (!(0, _.D)()) return;
+            (0, O.IN)(false, t)
+          } else(0, O.oZ)(t);
           return
         }
       },
@@ -285,28 +286,28 @@ let L = {
       }
     }
   },
-  R = null;
+  D = null;
 
-function D() {
-  Z.clear(), Chunk131951.Z.getMediaEngine().eachConnection(e => {
+function k() {
+  w.clear(), Chunk131951.Z.getMediaEngine().eachConnection(e => {
     e.setForceAudioInput(false, false), e.setForceAudioInput(false, true)
   }, Chunk65154.Yn.DEFAULT)
 }
-class k extends Chunk317770.Z {
+class M extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.wait(() => Chunk570140.Z.dispatch({
       type: "KEYBINDS_REGISTER_GLOBAL_KEYBIND_ACTIONS",
-      keybinds: L
-    })), Chunk570140.Z.subscribe("AUDIO_SET_MODE", D), Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect)
+      keybinds: R
+    })), Chunk570140.Z.subscribe("AUDIO_SET_MODE", k), Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("AUDIO_SET_MODE", D), Chunk570140.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect)
+    Chunk570140.Z.unsubscribe("AUDIO_SET_MODE", k), Chunk570140.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect)
   }
   handleVoiceChannelSelect(e) {
     let {
       currentVoiceChannelId: t
     } = e;
-    t !== R && D(), R = t
+    t !== D && k(), D = t
   }
 }
-let M = new k
+let U = new M

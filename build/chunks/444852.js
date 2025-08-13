@@ -81,6 +81,9 @@ class B {
   setActionContext(e) {
     this.actionContext = e
   }
+  setAnalyticsLocations(e) {
+    this.analyticsLocations = e
+  }
   trackViewerCount(e) {
     this.maxViewers = Math.max(e, this.maxViewers), this.numViewers = e
   }
@@ -105,9 +108,10 @@ class B {
     streamSourceType: n,
     actionContext: r,
     numViewers: i,
-    goLiveModalDurationMs: o
+    goLiveModalDurationMs: o,
+    analyticsLocations: a
   }) {
-    D(this, "streamRegion", true), D(this, "streamApplication", true), D(this, "streamSourceType", true), D(this, "actionContext", true), D(this, "maxViewers", true), D(this, "nativePickerStyleUsed", true), D(this, "startTime", true), D(this, "endTime", true), D(this, "goLiveModalDurationMs", true), D(this, "numViewers", true), this.streamRegion = e, this.streamApplication = t, this.streamSourceType = n, this.actionContext = r, this.maxViewers = i, this.goLiveModalDurationMs = o, this.numViewers = i
+    D(this, "streamRegion", true), D(this, "streamApplication", true), D(this, "streamSourceType", true), D(this, "actionContext", true), D(this, "maxViewers", true), D(this, "nativePickerStyleUsed", true), D(this, "startTime", true), D(this, "endTime", true), D(this, "goLiveModalDurationMs", true), D(this, "numViewers", true), D(this, "analyticsLocations", true), this.streamRegion = e, this.streamApplication = t, this.streamSourceType = n, this.actionContext = r, this.maxViewers = i, this.goLiveModalDurationMs = o, this.numViewers = i, this.analyticsLocations = null != a ? a : []
   }
 }
 class Z extends Chunk861687.Z {
@@ -386,7 +390,8 @@ class Z extends Chunk861687.Z {
       connection_type: Chunk866960.Z.getType(),
       effective_connection_speed: Chunk866960.Z.getEffectiveConnectionSpeed(),
       service_provider: Chunk866960.Z.getServiceProvider(),
-      duration_go_live_modal: this.analyticsContext.goLiveModalDurationMs
+      duration_go_live_modal: this.analyticsContext.goLiveModalDurationMs,
+      source_location_stack: this.analyticsContext.analyticsLocations
     }))
   }
   trackVideoEndStats(e) {
@@ -464,7 +469,8 @@ class Z extends Chunk861687.Z {
       context: w.Yn.STREAM,
       streamServerId: n,
       streamChannelId: u,
-      parentMediaSessionId: c
+      parentMediaSessionId: c,
+      joinVoiceId: null
     }), D(this, "analyticsContext", true), D(this, "videoStreamStats", true), D(this, "streamContext", true), D(this, "streamKey", true), D(this, "isStreamer", true), D(this, "updateVideoStreamId", true), D(this, "bandwidthSamples", []), D(this, "goliveCurrentMaxResolution", true), D(this, "soundshareFailuresReported", {}), D(this, "errorTimer", new a.V7), this.streamContext = d, this.streamKey = t, this.isStreamer = l, this.videoStreamStats = new A.Z(r, this.isOwner), this.analyticsContext = o, this.updateVideoStreamId = i().debounce((e, t) => {
       let {
         guildId: n,

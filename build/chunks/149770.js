@@ -44,7 +44,8 @@ class _ extends Chunk147913.Z {
       channelId: null,
       guildId: null,
       video: false,
-      currentVoiceChannelId: null
+      currentVoiceChannelId: null,
+      joinVoiceId: null
     })
   }
   constructor(...e) {

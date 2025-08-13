@@ -78,22 +78,26 @@ function j(e) {
     pid: o,
     sourceId: a,
     nativePickerStyleUsed: s,
-    goLiveModalDurationMs: c
-  } = e, u = (0, p.V9)({
+    goLiveModalDurationMs: c,
+    analyticsLocations: u
+  } = e, d = (0, p.V9)({
     streamType: t,
     guildId: n,
     channelId: r,
     ownerId: E.default.getId()
   });
-  if (S[u] = i, l().forEach(D, e => {
+  if (S[d] = {
+      appContext: i,
+      analyticsLocations: u
+    }, l().forEach(D, e => {
       let {
         analyticsContext: t,
         isOwner: n
       } = e;
       t.setActionContext(i), t.setNativePickerStyleUsed(s), n && t.trackStart()
-    }), C[u] = a, N[u] = o, null != o) {
+    }), C[d] = a, N[d] = o, null != o) {
     let e = f.ZP.getGameForPID(o);
-    null != e && (A[u] = {
+    null != e && (A[d] = {
       name: e.name,
       id: e.id,
       exe: e.exeName,
@@ -102,7 +106,7 @@ function j(e) {
       gameMetadata: e.gameMetadata
     })
   }
-  null != c ? R[u] = c : delete R[u]
+  null != c ? R[d] = c : delete R[d]
 }
 
 function U(e) {
@@ -110,7 +114,10 @@ function U(e) {
     appContext: t,
     streamKey: n
   } = e;
-  S[n] = t, l().forEach(D, e => {
+  S[n] = {
+    appContext: t,
+    analyticsLocations: true
+  }, l().forEach(D, e => {
     let {
       analyticsContext: n,
       isOwner: r
@@ -128,18 +135,20 @@ function G(e) {
     viewerIds: o
   } = e, a = D[t];
   if (null == a && null != n) {
+    var s, l;
     null == N[t] && (A[t] = null);
     let e = (0, p.my)(t);
     null == A[t] && null == C[t] && (A[t] = (0, h.L2)(e, y.Z));
-    let s = new _.A({
+    let c = new _.A({
       streamRegion: i,
       streamApplication: A[t],
       streamSourceType: X(C[t]),
-      actionContext: S[t],
+      actionContext: null == (s = S[t]) ? true : s.appContext,
       numViewers: null != o ? o.length : 0,
-      goLiveModalDurationMs: R[t]
+      goLiveModalDurationMs: R[t],
+      analyticsLocations: null == (l = S[t]) ? true : l.analyticsLocations
     });
-    a = L(t, n, r, s), D[t] = a
+    a = L(t, n, r, c), D[t] = a
   }
   delete P[t], d.Z.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",

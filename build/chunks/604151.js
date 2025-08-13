@@ -2,9 +2,10 @@
 /** chunk id: 604151, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  h: () => E
+  h: () => b
 });
-var Chunk952265 = require("./952265.js"),
+var Chunk772848 = require("./772848.js"),
+  Chunk952265 = require("./952265.js"),
   Chunk570140 = require("./570140.js"),
   Chunk281956 = require("./281956.js"),
   Chunk200498 = require("./200498.js"),
@@ -18,7 +19,7 @@ var Chunk952265 = require("./952265.js"),
   Chunk979651 = require("./979651.js"),
   Chunk934415 = require("./934415.js");
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,57 +28,59 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
-let E = function(e, t) {
-  let m = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    E = arguments.length > 3 && true !== arguments[3] && arguments[3],
+let b = function(e, t) {
+  let g = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    b = arguments.length > 3 && true !== arguments[3] && arguments[3],
     {
-      lockVoiceStateForResume: b = false
+      lockVoiceStateForResume: y = false
     } = arguments.length > 4 && true !== arguments[4] ? arguments[4] : {},
-    y = u.Z.getChannel(e),
-    O = p.Z.getCurrentClientVoiceChannelId(null != t ? t : null) === e,
-    v = null != y ? f.Z.getCheck(y.guild_id) : null;
-  if (!(null != t && (0, o.n)(t)) && (null == v || v.canChat || (0, a.jU)(y))) {
-    if (null != y && !O) {
-      let e = (0, h.rY)(y, p.Z, d.Z);
-      if (e && y.isGuildStageVoice() && (0, s.xJ)(y.id)) return void(0, r.ZD)(async () => {
+    O = d.Z.getChannel(e),
+    v = h.Z.getCurrentClientVoiceChannelId(null != t ? t : null) === e,
+    I = null != O ? _.Z.getCheck(O.guild_id) : null;
+  if (!(null != t && (0, a.n)(t)) && (null == I || I.canChat || (0, s.jU)(O))) {
+    if (null != O && !v) {
+      let e = (0, m.rY)(O, h.Z, f.Z);
+      if (e && O.isGuildStageVoice() && (0, l.xJ)(O.id)) return void(0, i.ZD)(async () => {
         let {
           default: e
         } = await n.e("46398").then(n.bind(n, 523794));
-        return t => e(g({
-          channel: y
+        return t => e(E({
+          channel: O
         }, t))
       });
-      if (e) return void(0, r.ZD)(async () => {
+      if (e) return void(0, i.ZD)(async () => {
         let {
           default: e
         } = await n.e("86465").then(n.bind(n, 997308));
         return t => e(t)
       })
     }
-    m && (0, l.eH)(), (0, c.Z)(I, e, E, m)
+    g && (0, c.eH)(), (0, u.Z)(T, e, b, g)
   }
 
-  function I() {
-    i.Z.dispatch({
+  function T() {
+    let n = (0, r.Z)();
+    o.Z.dispatch({
       type: "VOICE_CHANNEL_SELECT",
       guildId: t,
       channelId: e,
-      currentVoiceChannelId: _.Z.getVoiceChannelId(),
-      video: m,
-      stream: E,
-      lockVoiceStateForResume: b
+      currentVoiceChannelId: p.Z.getVoiceChannelId(),
+      video: g,
+      stream: b,
+      lockVoiceStateForResume: y,
+      joinVoiceId: n
     })
   }
 }

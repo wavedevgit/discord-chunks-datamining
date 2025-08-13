@@ -2,7 +2,7 @@
 /** chunk id: 7188, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -20,13 +20,12 @@ var Chunk255367 = require("./255367.js"),
   Chunk74538 = require("./74538.js"),
   Chunk618158 = require("./618158.jsx"),
   Chunk871499 = require("./871499.jsx"),
-  Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk982594 = require("./982594.js");
 
-function T(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,20 +34,20 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,15 +58,15 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e, t) {
+function N(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -75,7 +74,7 @@ function C(e, t) {
   return i
 }
 
-function R(e, t) {
+function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -83,7 +82,7 @@ function R(e, t) {
   return i
 }
 
-function P(e) {
+function R(e) {
   let {
     className: t
   } = e;
@@ -94,7 +93,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function P(e) {
   let {
     className: t
   } = e;
@@ -102,33 +101,34 @@ function w(e) {
     children: [(0, r.jsx)(u.ZP, {
       className: t,
       mask: u.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-      children: (0, r.jsx)(P, {})
+      children: (0, r.jsx)(R, {})
     }), (0, r.jsx)(h.Z, {
-      className: I.badgeUpgrade
+      className: v.badgeUpgrade
     })]
   })
 }
 
-function D(e) {
+function w(e) {
   var {
     hideBadges: t = false,
     stream: n,
     location: u
-  } = e, h = C(e, ["hideBadges", "stream", "location"]);
-  let I = i.useRef(null),
+  } = e, h = N(e, ["hideBadges", "stream", "location"]);
+  let v = i.useRef(null),
     {
-      parentAnalyticsLocation: T
+      analyticsLocations: I,
+      parentAnalyticsLocation: S
     } = (0, s.ZP)(),
-    A = (0, o.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), O.p9.TIER_1)),
-    R = (0, o.e7)([_.Z], () => _.Z.getChannel(null == n ? true : n.channelId)),
+    C = (0, o.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), y.p9.TIER_1)),
+    w = (0, o.e7)([_.Z], () => _.Z.getChannel(null == n ? true : n.channelId)),
     D = i.useMemo(() => null != n ? [n] : [], [n]),
     L = i.useCallback(() => {
-      null != R && (0, f.Z)(R.getGuildId(), R.id, b.jXE.STREAM_SETTINGS)
-    }, [R]);
-  if (null == n || null == R) return null;
-  let x = P;
-  return t || A || (x = w), (0, r.jsx)(a.yRy, {
-    targetElementRef: I,
+      null != w && (0, f.Z)(w.getGuildId(), w.id, I)
+    }, [w, I]);
+  if (null == n || null == w) return null;
+  let x = R;
+  return t || C || (x = P), (0, r.jsx)(a.yRy, {
+    targetElementRef: v,
     position: "top",
     renderPopout: e => {
       let {
@@ -136,25 +136,25 @@ function D(e) {
       } = e;
       return (0, r.jsx)(g.Z, {
         children: (0, r.jsx)(d.Z, {
-          channel: R,
+          channel: w,
           currentUser: p.default.getCurrentUser(),
           activeStreams: D,
           onClose: t,
           showReportOption: true,
           handleGoLive: L,
-          onInteraction: (0, c.u)("ManageStreamsButton", null != T ? T : u, {
-            entrypoint: y.A5.OTHER_BUTTON
+          onInteraction: (0, c.u)("ManageStreamsButton", null != S ? S : u, {
+            entrypoint: b.A5.OTHER_BUTTON
           })
         })
       })
     },
     animation: a.yRy.Animation.FADE,
-    children: e => (0, r.jsx)(E.Z, S(N(S({}, e), {
-      buttonRef: I,
-      label: v.intl.string(v.t.tmiYpK),
+    children: e => (0, r.jsx)(E.Z, T(A(T({}, e), {
+      buttonRef: v,
+      label: O.intl.string(O.t.tmiYpK),
       iconComponent: x,
       onClick: t => {
-        (null != T || null != u) && (0, l.v)(null != T ? T : u, l.d.STREAM_SETTINGS), null == e || e.onClick(t)
+        (null != S || null != u) && (0, l.v)(null != S ? S : u, l.d.STREAM_SETTINGS), null == e || e.onClick(t)
       }
     }), h))
   })

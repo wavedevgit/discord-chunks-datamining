@@ -129,7 +129,8 @@ class J extends Chunk73800.PureComponent {
         game_id: this.props.gameId,
         stage_instance_id: null == n ? true : n.id,
         guild_scheduled_event_id: null == r ? true : r.id,
-        was_moved: k.Z.getWasMoved()
+        was_moved: k.Z.getWasMoved(),
+        join_voice_id: k.Z.getJoinVoiceId()
       }, (0, c.oG)(p, u), (0, c.kO)(p, u, y)))
     }
     let B = null != w && null != w.distributor && null != w.sku && null != e.runningGame && e.runningGame.distributor === w.distributor && w.sku === e.runningGame.sku,
