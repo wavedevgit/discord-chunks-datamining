@@ -72,6 +72,8 @@ function f(e) {
     original: t.url,
     placeholder: t.placeholder,
     placeholderVersion: t.placeholderVersion,
+    contentType: t.contentType,
+    originalContentType: t.originalContentType,
     sourceMetadata: {
       message: e.message
     },

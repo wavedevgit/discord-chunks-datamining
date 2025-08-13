@@ -78,7 +78,7 @@ function l(e) {
   let a = s({
     spoiler: e.spoiler
   });
-  return o.filename = "".concat(a).concat(null != i ? i : e.filename), o.uploaded_filename = e.uploadedFilename, "durationSecs" in e && null != e.durationSecs && (o.duration_secs = e.durationSecs), "waveform" in e && null != e.waveform && (o.waveform = e.waveform), "isThumbnail" in e && true === e.isThumbnail && (o.is_thumbnail = e.isThumbnail), "isRemix" in e && true === e.isRemix && (o.is_remix = e.isRemix), "clip" in e && null != e.clip && (o.is_clip = true, o.title = e.clip.name, o.application_id = e.clip.applicationId, o.clip_created_at = (0, r.U)(e.clip.id), o.clip_participant_ids = (0, r.Z)(e.clip.users)), o
+  return o.filename = "".concat(a).concat(null != i ? i : e.filename), o.uploaded_filename = e.uploadedFilename, "durationSecs" in e && null != e.durationSecs && (o.duration_secs = e.durationSecs), "waveform" in e && null != e.waveform && (o.waveform = e.waveform), "isThumbnail" in e && true === e.isThumbnail && (o.is_thumbnail = e.isThumbnail), "isRemix" in e && true === e.isRemix && (o.is_remix = e.isRemix), "clip" in e && null != e.clip && (o.is_clip = true, o.title = e.clip.name, o.application_id = e.clip.applicationId, o.clip_created_at = (0, r.U)(e.clip.id), o.clip_participant_ids = (0, r.Z)(e.clip.users)), "item" in e && null != e.item && "originalContentType" in e.item && (o.original_content_type = e.item.originalContentType), o
 }
 
 function c(e) {

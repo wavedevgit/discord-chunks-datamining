@@ -124,7 +124,8 @@ function Y(e) {
     shouldHideMediaOptions: et
   }), ev = (0, f.Z)(K, t, {
     shouldHideMediaOptions: et,
-    contentType: null == i ? true : i.contentType
+    contentType: null == i ? true : i.contentType,
+    originalContentType: null == i ? true : i.originalContentType
   }), eI = (0, Z.Z)(t, i), eT = (0, u.Z)({
     id: t.id,
     label: V.intl.string(V.t.zBoHlZ),

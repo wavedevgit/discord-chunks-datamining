@@ -44,8 +44,8 @@ function m(e, t) {
 }
 
 function g(e, t, n) {
-  if ((0, a.Z)(null == t ? true : t.getChannelId()) || (null == n ? true : n.shouldHideMediaOptions) === true || !l.isPlatformEmbedded || null == e || !(0, o.gS)(e, null == n ? true : n.contentType)) return null;
-  let c = (0, o.s$)(e, null == n ? true : n.contentType, o.wV),
+  if ((0, a.Z)(null == t ? true : t.getChannelId()) || (null == n ? true : n.shouldHideMediaOptions) === true || !l.isPlatformEmbedded || null == e || !(0, o.gS)(e, null == n ? true : n.contentType, null == n ? true : n.originalContentType)) return null;
+  let c = (0, o.s$)(e, null == n ? true : n.contentType, null == n ? true : n.originalContentType, o.wV),
     p = async () => {
       try {
         await u.ZP.saveImage(c, null == n ? true : n.contentType, o.wV), s.default.track(f.rMx.CONTEXT_MENU_IMAGE_SAVED, h({}, (0, d.v)())), (0, i.showToast)((0, i.createToast)(_.intl.string(_.t.cqpdJS), i.ToastType.SUCCESS))
@@ -59,7 +59,7 @@ function g(e, t, n) {
         m(_.intl.string(_.t.PTPbj4), e), s.default.track(f.rMx.CONTEXT_MENU_IMAGE_COPY_FAILED, h({}, (0, d.v)()))
       }
     };
-  return [(0, o.Lz)(e, null == n ? true : n.contentType) ? (0, r.jsx)(i.sNh, {
+  return [(0, o.Lz)(e, null == n ? true : n.contentType, null == n ? true : n.originalContentType) ? (0, r.jsx)(i.sNh, {
     id: "copy-image",
     label: _.intl.string(_.t.tvUqWl),
     action: g

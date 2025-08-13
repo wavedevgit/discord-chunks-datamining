@@ -78,6 +78,7 @@ function h(e) {
     placeholder: e.placeholder,
     placeholderVersion: e.placeholder_version,
     contentType: e.content_type,
+    originalContentType: e.original_content_type,
     loadingState: e.loading_state,
     contentScanMetadata: null != e.content_scan_metadata ? _(e.content_scan_metadata) : true,
     flags: null != (t = e.flags) ? t : 0
@@ -95,6 +96,7 @@ function m(e) {
     height: e.height,
     width: e.width,
     contentType: e.content_type,
+    originalContentType: e.original_content_type,
     placeholder: e.placeholder,
     placeholderVersion: e.placeholder_version,
     loadingState: r.f.LOADED_SUCCESS,

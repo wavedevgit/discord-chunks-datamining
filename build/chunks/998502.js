@@ -4,8 +4,8 @@
 require.d(exports, {
   ZP: () => q,
   jK: () => V,
-  mD: () => W,
-  tS: () => H
+  tS: () => H,
+  xG: () => W
 }), require("./388685.js"), require("./35282.js"), require("./704826.js"), require("./415506.js"), require("./49124.js"), require("./539854.js");
 var r, i, o, a, Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
@@ -133,13 +133,15 @@ function Y(e) {
 }
 
 function W(e, t) {
-  var n, r, i, o, a;
+  var n, r, i, o;
   if (null != t && A(t)) {
-    let e = null == (a = t.split("/")[1]) ? true : a.toLowerCase();
+    let e = null == (o = t.split("/")[1]) ? true : o.toLowerCase();
     if ("jpeg" === e) return "jpg";
     if (null != e) return e
   }
-  let s = null == (o = m.Z.toURLSafe(e)) || null == (i = o.pathname) || null == (r = i.split(".")) || null == (n = r.pop()) ? true : n.toLowerCase();
+  let a = m.Z.toURLSafe(e);
+  if (null == a) return;
+  let s = null == (i = a.pathname) || null == (r = i.split(".")) || null == (n = r.pop()) ? true : n.toLowerCase();
   return null != s && s.length <= N ? s : true
 }
 

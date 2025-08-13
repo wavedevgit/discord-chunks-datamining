@@ -1,7 +1,7 @@
 /** Chunk was on 39476 **/
 /** chunk id: 860153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => E
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,31 +19,31 @@ var Chunk255367 = require("./255367.js"),
   Chunk545093 = require("./545093.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk959917 = require("./959917.js");
-let E = Chunk73800.memo(function(e) {
+let h = Chunk73800.memo(function(e) {
   let {
     message: t
   } = e, n = (0, a.e7)([m.Z], () => m.Z.getChannel(t.channel_id));
-  return null == n ? null : (0, r.jsx)(y.ZP, {
-    children: e => (0, r.jsxs)(u.Z.Provider, {
+  return null == n ? null : (0, i.jsx)(y.ZP, {
+    children: e => (0, i.jsxs)(u.Z.Provider, {
       value: n.guild_id,
-      children: [(0, r.jsx)(c.Z, {
+      children: [(0, i.jsx)(c.Z, {
         user: t.author,
         size: s.EFr.SIZE_40,
-        className: l()(h.authorAvatar, e)
-      }), (0, r.jsxs)("div", {
-        className: l()(h.author, e),
-        children: [(0, r.jsx)(s.Rny, {
-          children: (0, r.jsx)("div", {
-            className: h.authorNameWrapper,
-            children: (0, r.jsx)(p.Z, {
-              className: h.authorName,
+        className: l()(g.authorAvatar, e)
+      }), (0, i.jsxs)("div", {
+        className: l()(g.author, e),
+        children: [(0, i.jsx)(s.Rny, {
+          children: (0, i.jsx)("div", {
+            className: g.authorNameWrapper,
+            children: (0, i.jsx)(p.Z, {
+              className: g.authorName,
               message: t,
               channel: n
             })
           })
-        }), (0, r.jsx)(d.Z, {
+        }), (0, i.jsx)(d.Z, {
           timestamp: t.timestamp,
-          className: h.timestamp,
+          className: g.timestamp,
           tooltipPosition: "bottom"
         })]
       })]
@@ -51,27 +51,27 @@ let E = Chunk73800.memo(function(e) {
   })
 });
 
-function g(e) {
+function E(e) {
   var t;
   let {
     item: n,
-    hideMediaOptions: i,
+    hideMediaOptions: r,
     onClose: o
   } = e, a = null == (t = n.sourceMetadata) ? true : t.message;
-  return (0, r.jsxs)("div", {
-    className: h.topBar,
-    children: [null != a && (0, r.jsx)(E, {
+  return (0, i.jsxs)("div", {
+    className: g.topBar,
+    children: [null != a && (0, i.jsx)(h, {
       message: a
-    }), (0, r.jsx)(f.Z, {
+    }), (0, i.jsx)(f.Z, {
       item: n,
-      hideMediaOptions: i
-    }), (0, r.jsx)(y.ZP, {
+      hideMediaOptions: r
+    }), (0, i.jsx)(y.ZP, {
       mode: y.lx.PINNED,
-      children: e => (0, r.jsx)(b.Z, {
+      children: e => (0, i.jsx)(b.Z, {
         onClick: o,
         icon: s.Dio,
         tooltip: O.intl.string(O.t.cpT0Cg),
-        className: l()(h.closeButton, e)
+        className: l()(g.closeButton, e)
       })
     })]
   })

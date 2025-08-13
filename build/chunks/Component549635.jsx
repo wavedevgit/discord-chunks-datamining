@@ -116,7 +116,7 @@ function S(e) {
     {
       zoomed: R
     } = (0, p.Y)(),
-    P = N(R, g, b),
+    P = N(R, g, b, n.contentType, n.originalContentType),
     w = null != d && 0 !== d && null != _ && 0 !== _;
   if ("VIDEO" === I && w && null != b) {
     var D;
@@ -171,8 +171,8 @@ function S(e) {
 }
 let A = Chunk73800.memo(S);
 
-function N(e, t, n) {
-  return e && _.Z.isDiscordAssetUrl(t) ? (0, l.s$)(t) : (0, u.q)({
+function N(e, t, n, r, i) {
+  return e && _.Z.isDiscordAssetUrl(t, r, i) ? (0, l.s$)(t, r, i) : (0, u.q)({
     proxyURL: n,
     url: t
   })

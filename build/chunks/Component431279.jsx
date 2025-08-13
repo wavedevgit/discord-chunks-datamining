@@ -119,13 +119,17 @@ class b extends(r = Chunk73800.PureComponent) {
         children: _,
         shouldHideMediaOptions: p = false,
         sourceMetadata: h,
-        analyticsSource: m
-      } = this.props, g = {
+        analyticsSource: m,
+        contentType: g,
+        originalContentType: E
+      } = this.props, b = {
         url: o,
         width: l,
         height: c,
         type: "IMAGE",
         alt: i,
+        contentType: g,
+        originalContentType: E,
         zoomThumbnailPlaceholder: n,
         animated: u,
         srcIsAnimated: f,
@@ -136,7 +140,7 @@ class b extends(r = Chunk73800.PureComponent) {
       };
       (0, a.k)(e.currentTarget) && e.currentTarget.blur(), (0, d.K)({
         onClose: this.onCloseImage,
-        items: [g],
+        items: [b],
         shouldHideMediaOptions: p,
         location: null != m ? m : "LazyImageZoomable",
         contextKey: this.modalContext

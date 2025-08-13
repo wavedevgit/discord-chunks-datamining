@@ -111,7 +111,8 @@ function S(e, t, n) {
       file: e,
       platform: l.ow.WEB,
       isThumbnail: m,
-      origin: y
+      origin: y,
+      originalContentType: e.type
     }, null == c ? true : c[t]));
     o.Z.addFiles({
       files: r,
@@ -126,7 +127,8 @@ function S(e, t, n) {
         file: e,
         platform: l.ow.WEB,
         isThumbnail: m,
-        origin: y
+        origin: y,
+        originalContentType: e.type
       }, r), t.id)
     });
     i.Z.sendMessage(t.id, {
