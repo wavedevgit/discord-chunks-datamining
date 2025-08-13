@@ -299,7 +299,7 @@ function ev(e) {
           break;
         case A.AE.OOP:
           _.Z.setEnabled(D, e), (0, A.ou)(e, A.AE.OOP, null != (r = a.id) ? r : null)
-      }(l || o) && (0, B.l)(l ? A.AE.LEGACY_GAME : A.AE.OOP_GAME, null != (s = a.id) ? s : null)
+      }(l || o) && (0, M.l)(l ? A.AE.LEGACY_GAME : A.AE.OOP_GAME, null != (s = a.id) ? s : null)
     },
     L = (e, t) => {
       let n = !t && e,
@@ -316,7 +316,7 @@ function ev(e) {
           return "game"
       }
     },
-    M = (e, t, n) => {
+    B = (e, t, n) => {
       if (eO(n), null == a) return;
       let i = false,
         r = false;
@@ -333,7 +333,7 @@ function ev(e) {
       let s = null;
       if (i ? s = "game" === t ? A.AE.LEGACY_GAME : A.AE.LEGACY : r && (s = "game" === t ? A.AE.OOP_GAME : A.AE.OOP), null != s) {
         var l;
-        (0, B.l)(s, null != (l = a.id) ? l : null)
+        (0, M.l)(s, null != (l = a.id) ? l : null)
       }
     },
     U = I && P,
@@ -473,7 +473,7 @@ function ev(e) {
         checked: b && Z || j && D,
         disabled: U,
         onChange: (e, t) => {
-          M(e, L(e, b && Z || j && D), t)
+          B(e, L(e, b && Z || j && D), t)
         }
       })
     }),
@@ -542,7 +542,7 @@ function eT(e) {
     let i = !e && g;
     if (eO(n), f(e), l(e, d, u), i) {
       var r, s;
-      (0, B.l)(o, null != (s = null != (r = d.id) ? r : null == t ? true : t.id) ? s : null)
+      (0, M.l)(o, null != (s = null != (r = d.id) ? r : null == t ? true : t.id) ? s : null)
     }
   };
   return (0, i.jsx)(ej, {
@@ -572,7 +572,7 @@ function eI() {
     var i, r;
     eO(t), _.Z.setEnabled(e, s);
     let a = null != (r = null == (i = T.ZP.getCurrentGameForAnalytics()) ? true : i.id) ? r : null;
-    (0, A.ou)(e, A.AE.LEGACY, a), !e && n && (0, B.l)(A.AE.LEGACY, a)
+    (0, A.ou)(e, A.AE.LEGACY, a), !e && n && (0, M.l)(A.AE.LEGACY, a)
   }, d = (e, t, n) => {
     let {
       enabledOOP: i
@@ -646,7 +646,7 @@ function eN() {
     let a = !e && n;
     _.Z.setEnabled(s, e);
     let l = null != (r = null == (i = T.ZP.getCurrentGameForAnalytics()) ? true : i.id) ? r : null;
-    (0, A.ou)(e, A.AE.OOP, l), a && (0, B.l)(A.AE.OOP, l)
+    (0, A.ou)(e, A.AE.OOP, l), a && (0, M.l)(A.AE.OOP, l)
   }, d = (e, t, n) => {
     let {
       enabledLegacy: i

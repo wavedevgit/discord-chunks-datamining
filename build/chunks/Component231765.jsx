@@ -286,7 +286,7 @@ function L(e) {
   })
 }
 
-function M(e) {
+function B(e) {
   let {
     settings: {
       enabled: t,
@@ -340,7 +340,7 @@ function M(e) {
   })
 }
 
-function B(e) {
+function M(e) {
   let {
     updateSettings: t
   } = e;
@@ -469,13 +469,13 @@ function G(e) {
     }), (0, i.jsx)(L, {
       settings: s,
       updateSettings: h
-    }), (0, i.jsx)(M, {
+    }), (0, i.jsx)(B, {
       settings: s,
       updateSettings: h
     }), (0, i.jsx)(k, {
       settings: s,
       updateSettings: h
-    }), (0, i.jsx)(B, {
+    }), (0, i.jsx)(M, {
       updateSettings: h
     })]
   })

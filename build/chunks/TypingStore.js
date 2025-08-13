@@ -9,13 +9,12 @@ var i, Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk333023 = require("./333023.js"),
-  Chunk384278 = require("./384278.js"),
   Chunk70956 = require("./70956.js"),
   Chunk314897 = require("./314897.js"),
   Chunk300429 = require("./300429.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,19 +23,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
-let m = 10 * Chunk70956.Z.Millis.SECOND,
+let h = 10 * Chunk70956.Z.Millis.SECOND,
+  m = 1.5 * Chunk70956.Z.Millis.SECOND,
   g = 5,
   E = {},
   b = Object.freeze({});
@@ -49,17 +49,15 @@ function y(e) {
 function O(e) {
   let {
     channelId: t
-  } = e, n = d.default.getId();
+  } = e, n = u.default.getId();
   if (null == n || t === l.V) returnfalse;
   null != r && r.channelId !== t && (null != r.timeout && clearTimeout(r.timeout), r = null);
   let i = Date.now(),
-    o = .8 * m;
+    o = .8 * h;
   if (null != r && (null != r.timeout || r.prevSend + o > i)) returnfalse;
-  let {
-    delayMs: u
-  } = (0, c.M1)("typing_store"), p = setTimeout(() => {
-    null != r && r.channelId === t && n === d.default.getId() && null != r.timeout && (r.timeout = null, R(t) > g || a.tn.post({
-      url: _.ANM.TYPING(t),
+  let c = setTimeout(() => {
+    null != r && r.channelId === t && n === u.default.getId() && null != r.timeout && (r.timeout = null, R(t) > g || a.tn.post({
+      url: f.ANM.TYPING(t),
       oldFormErrors: true,
       rejectWithError: true
     }).then(e => {
@@ -70,20 +68,20 @@ function O(e) {
         i > 0 && s.Z.dispatch({
           type: "SLOWMODE_SET_COOLDOWN",
           channelId: t,
-          slowmodeType: f.S.SendMessage,
+          slowmodeType: d.S.SendMessage,
           cooldownMs: i
         }), o > 0 && s.Z.dispatch({
           type: "SLOWMODE_SET_COOLDOWN",
           channelId: t,
-          slowmodeType: f.S.CreateThread,
+          slowmodeType: d.S.CreateThread,
           cooldownMs: o
         })
       }
     }))
-  }, null == r || r.prevSend > i - 2 * o ? u : 0);
+  }, null == r || r.prevSend > i - 2 * o ? m : 0);
   return r = {
     channelId: t,
-    timeout: p,
+    timeout: c,
     prevSend: i
   }, S({
     channelId: t,
@@ -99,7 +97,7 @@ function v(e) {
 function I(e) {
   let {
     channelId: t
-  } = e, n = d.default.getId();
+  } = e, n = u.default.getId();
   return null != n && null != r && r.channelId === t && null != r.timeout && (clearTimeout(r.timeout), r = null, A({
     channelId: t,
     userId: n
@@ -113,14 +111,14 @@ function T(e, t) {
       channelId: e,
       userId: t
     })
-  }, m)
+  }, h)
 }
 
 function S(e) {
   let {
     channelId: t,
     userId: n
-  } = e, r = h({}, y(t));
+  } = e, r = p({}, y(t));
   clearTimeout(r[n]), r[n] = T(t, n), E[t] = r
 }
 
@@ -130,7 +128,7 @@ function A(e) {
     userId: n
   } = e, r = E[t];
   if (null == r || null == r[n]) returnfalse;
-  let i = h({}, r);
+  let i = p({}, r);
   clearTimeout(i[n]), delete i[n], E[t] = i
 }
 
@@ -164,7 +162,7 @@ class P extends(i = Chunk442837.ZP.Store) {
     return null != y(e)[t]
   }
 }
-p(P, "displayName", "TypingStore");
+_(P, "displayName", "TypingStore");
 let w = new P(Chunk570140.Z, {
   TYPING_START: S,
   TYPING_STOP: A,

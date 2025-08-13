@@ -42,7 +42,7 @@ function A(e) {
   o.useEffect(() => {
     (0, m.Sn)(t), (0, m.Fm)(t)
   }, [t]), (0, N.Wj)(t);
-  let A = (0, a.e7)([f.Z], () => f.Z.getStateForGuild(t)),
+  let A = (0, s.e7)([f.Z], () => f.Z.getStateForGuild(t)),
     R = (0, _.Z)(t),
     L = o.useRef(false),
     {
@@ -51,7 +51,7 @@ function A(e) {
     } = (0, I.K)(t, "GuildPowerupsOverview"),
     D = null == i && null != U,
     M = [];
-  k && D && M.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
+  k && D && M.push(a.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
   let [V, B] = (0, u.US)(M), G = o.useMemo(() => O.reduce((e, t) => {
     let n = null == A ? true : A.powerupCatalog[t];
     if (null == n) return e;
@@ -138,7 +138,7 @@ function A(e) {
             listings: o
           } = e, {
             title: i,
-            description: a
+            description: s
           } = function(e) {
             switch (e) {
               case Z.Us.LEVEL:
@@ -150,7 +150,7 @@ function A(e) {
                   title: y.intl.string(S.default.TV3Vm5), description: y.intl.string(S.default.STx9ho)
                 }
             }
-          }(n), s = n === Z.Us.LEVEL ? c.zJl : "div";
+          }(n), a = n === Z.Us.LEVEL ? c.zJl : "div";
           return (0, r.jsxs)("div", {
             className: T.powerupsSection,
             children: [(0, r.jsxs)("div", {
@@ -162,9 +162,9 @@ function A(e) {
               }), (0, r.jsx)(c.Text, {
                 color: "text-muted",
                 variant: "text-sm/medium",
-                children: a
+                children: s
               })]
-            }), (0, r.jsx)(s, {
+            }), (0, r.jsx)(a, {
               orientation: "horizontal",
               className: l()(T.powerupContainer, T.powerupHorizontalPadding, {
                 [T.powerupsLevelContainer]: n === Z.Us.LEVEL

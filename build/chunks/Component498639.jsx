@@ -88,7 +88,7 @@ let k = function() {
       value: e,
       label: e.name
     })),
-    [M, B] = Chunk73800.useState(L.length > 0 ? L[0].value : null),
+    [B, M] = Chunk73800.useState(L.length > 0 ? L[0].value : null),
     [U, V] = Chunk73800.useState(""),
     [G, F] = Chunk73800.useState({
       plan_id: Chunk474936.Xh.PREMIUM_MONTH_TIER_2,
@@ -192,11 +192,11 @@ let k = function() {
         }), (0, Chunk255367.jsxs)(Chunk481060.xJW, {
           className: Chunk761575.formItem,
           children: [(0, Chunk255367.jsx)(Chunk481060.q4e, {
-            value: M,
+            value: B,
             options: L,
-            onChange: e => B(e)
-          }), null != M ? (0, Chunk255367.jsx)(Chunk678558.Z, {
-            guild: M,
+            onChange: e => M(e)
+          }), null != B ? (0, Chunk255367.jsx)(Chunk678558.Z, {
+            guild: B,
             analyticsLocation: {}
           }) : (0, Chunk255367.jsx)("div", {
             children: "No Guild to boost"

@@ -1,7 +1,7 @@
 /** Chunk was on 20501 **/
 /** chunk id: 87792, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => B
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -228,7 +228,7 @@ let Z = () => {
       subText: a
     })
   },
-  M = e => {
+  B = e => {
     let {
       user: t
     } = e, n = Array.from(T.tx.entries()), r = (0, f.kE)(), s = (0, m.t3)(), a = (0, _.Rd)(s);

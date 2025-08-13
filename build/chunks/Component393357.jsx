@@ -22,8 +22,8 @@ function x(e) {
   let {
     guildId: t,
     powerupListingId: n
-  } = e, x = (0, i.e7)([d.Z], () => d.Z.getGuild(t)), g = (0, i.e7)([s.Z], () => s.Z.hasLoadedExperiments), v = (0, m.Z)(t), b = (0, u.At)(), h = (0, p.V)("GuildPowerupsPage"), j = !g || null == v || null == x, C = (0, l.ZP)(null != b ? b : []);
-  return ((0, a.Z)({
+  } = e, x = (0, i.e7)([d.Z], () => d.Z.getGuild(t)), g = (0, i.e7)([a.Z], () => a.Z.hasLoadedExperiments), v = (0, m.Z)(t), b = (0, u.At)(), h = (0, p.V)("GuildPowerupsPage"), j = !g || null == v || null == x, C = (0, l.ZP)(null != b ? b : []);
+  return ((0, s.Z)({
     type: o.ImpressionTypes.VIEW,
     name: o.ImpressionNames.BOOST_SHOP_OPENED,
     properties: {

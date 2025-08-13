@@ -276,7 +276,7 @@ function J(e) {
         buttonColor: u.zx.Colors.PRIMARY,
         valueMessage: (0, i.jsx)(X, {
           text: e,
-          censor: M.E,
+          censor: B.E,
           revealLabel: F.intl.string(F.t["Zvx+yc"]),
           hideLabel: F.intl.string(F.t.nqTD4e)
         }),
@@ -338,7 +338,7 @@ function Q(e) {
   } = s, c = null != l;
   return t = c ? (0, i.jsx)(X, {
     text: l,
-    censor: M.n,
+    censor: B.n,
     revealLabel: F.intl.string(F.t.eY3xlZ),
     hideLabel: F.intl.string(F.t.jllbv7)
   }) : F.intl.string(F.t.I5kDqq), (0, i.jsxs)("div", {

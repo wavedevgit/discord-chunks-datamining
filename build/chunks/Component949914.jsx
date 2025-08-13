@@ -99,7 +99,7 @@ let L = e => {
       })]
     })
   },
-  M = e => {
+  B = e => {
     let {
       subscription: t
     } = e, {
@@ -116,7 +116,7 @@ let L = e => {
       dropdownClassName: Z.paymentSourceDropdown
     }) : (0, i.jsx)(c.$jN, {})
   },
-  B = e => {
+  M = e => {
     let {
       isTrial: t,
       isCancelled: n,
@@ -275,10 +275,10 @@ let L = e => {
         }), !z && !F && (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(c.vwX, {
             children: D.intl.string(D.t.wmMFvL)
-          }), (0, i.jsx)(M, {
+          }), (0, i.jsx)(B, {
             subscription: t
           })]
-        }), !Q && (0, i.jsx)(B, {
+        }), !Q && (0, i.jsx)(M, {
           isTrial: J,
           isCancelled: z,
           isResubscribing: C,

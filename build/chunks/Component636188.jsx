@@ -1,7 +1,7 @@
 /** Chunk was on 20501 **/
 /** chunk id: 636188, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => B
 }), require("./388685.js"), require("./642613.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -335,7 +335,7 @@ function L(e) {
   })
 }
 
-function M(e) {
+function B(e) {
   let {
     canUseCustomBackgrounds: t,
     customBackgroundOptions: n,

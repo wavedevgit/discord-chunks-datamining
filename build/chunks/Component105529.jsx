@@ -21,8 +21,8 @@ function f(e) {
     perk: n,
     markAsDismissed: f
   } = e, _ = u._k[n], x = async () => {
-    let e = s.Z.getSortedRoles(t).find(c.YB);
-    await a.Z.open(t, d.pNK.ROLES), null != e && await a.Z.selectRole(e.id), f(p.L.SECONDARY)
+    let e = a.Z.getSortedRoles(t).find(c.YB);
+    await s.Z.open(t, d.pNK.ROLES), null != e && await s.Z.selectRole(e.id), f(p.L.SECONDARY)
   };
   return (0, r.jsxs)("div", {
     className: m.container,

@@ -80,21 +80,21 @@ function E() {
     }))
   }, []), L = (0, Chunk73800.useCallback)(e => {
     D(e)
-  }, [D]), M = (0, Chunk73800.useCallback)(e => {
+  }, [D]), B = (0, Chunk73800.useCallback)(e => {
     if (null != N.current) {
       let t = N.current.getBoundingClientRect();
       E(Math.max(264, Math.min(432, e.clientX - t.left)))
     }
-  }, []), B = (0, Chunk73800.useCallback)(e => {
+  }, []), M = (0, Chunk73800.useCallback)(e => {
     e.preventDefault(), e.stopPropagation();
     let t = e => {
-        e.preventDefault(), M(e)
+        e.preventDefault(), B(e)
       },
       n = () => {
         null != y.current && (document.removeEventListener("mousemove", y.current), y.current = null), null != A.current && (document.removeEventListener("mouseup", A.current), A.current = null)
       };
     y.current = t, A.current = n, document.addEventListener("mousemove", t), document.addEventListener("mouseup", n)
-  }, [M]);
+  }, [B]);
   return (0, Chunk73800.useEffect)(() => () => {
     null != y.current && (document.removeEventListener("mousemove", y.current), y.current = null), null != A.current && (document.removeEventListener("mouseup", A.current), A.current = null)
   }, []), (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
@@ -151,7 +151,7 @@ function E() {
           nameplate: Chunk594174
         }), (0, Chunk255367.jsx)("div", {
           className: Chunk619911.resizeHandle,
-          onMouseDown: B
+          onMouseDown: M
         })]
       }), (0, Chunk255367.jsxs)("div", {
         className: Chunk619911.buttons,

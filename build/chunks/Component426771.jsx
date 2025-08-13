@@ -25,8 +25,8 @@ function x(e) {
       powerups: h
     } = e,
     [j, C] = o.useState(false),
-    E = (0, s.Gv)(v, h),
-    I = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
+    E = (0, a.Gv)(v, h),
+    I = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
     N = (0, u.Z)(b, v);
   if (true === N || h.length <= 0) return null;
   let w = E.some(e => e.type !== p.A3.INACTIVE),

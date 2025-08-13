@@ -65,8 +65,8 @@ let I = Chunk73800.memo(e => {
     forceShadow: h,
     cardType: _
   } = e, j = null == e ? true : e.onCtaClick, y = (0, c.e7)([u.Z], () => u.Z.useReducedMotion), [A, P] = r.useState(false), [R, D] = r.useState(false), Z = _ === x.gM.CARD_CAROUSEL_FIRST_ROW || _ === x.gM.CARD_CAROUSEL_SECOND_ROW || _ === x.gM.CARD_CAROUSEL_THIRD_ROW, w = (0, b.Z)(), [k, L] = (0, p.cv)(null != s && n ? [s] : []), {
-    easterEggLevel: M,
-    isEasterEggTriggered: B,
+    easterEggLevel: B,
+    isEasterEggTriggered: M,
     onHover: U,
     onUnhover: V
   } = (0, f.Z)(5), G = (0, l.debounce)(() => {
@@ -109,9 +109,9 @@ let I = Chunk73800.memo(e => {
       }),
       children: (0, i.jsxs)("div", {
         className: a()(v.flipCard, {
-          [v.partialFlipCard]: !B,
-          [v.ultraFlipCard]: B,
-          [v.rotateCard]: B && 3 === M,
+          [v.partialFlipCard]: !M,
+          [v.ultraFlipCard]: M,
+          [v.rotateCard]: M && 3 === B,
           [v.reducedMotion]: y
         }),
         children: [(0, i.jsx)("div", {

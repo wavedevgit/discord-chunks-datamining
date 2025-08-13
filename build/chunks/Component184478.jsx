@@ -56,7 +56,7 @@ function b(e) {
         count: j,
         type: f.b.TOTAL
       })]
-    }), (0, r.jsx)(s.Z, {
+    }), (0, r.jsx)(a.Z, {
       className: v.boostButton,
       guild: n,
       analyticsLocation: {
@@ -66,10 +66,10 @@ function b(e) {
       color: l.Tt.CUSTOM,
       size: l.Ph.LARGE,
       intent: c.P.NONE,
-      icon: (0, r.jsx)(a.$Eu, {
+      icon: (0, r.jsx)(s.$Eu, {
         className: v.boostButtonIcon,
         size: "sm",
-        color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
+        color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
       })
     }), (0, r.jsx)(m.Z, {
       guildId: t

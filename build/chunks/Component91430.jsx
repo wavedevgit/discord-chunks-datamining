@@ -277,12 +277,12 @@ function X(e) {
     T = (0, D.P)(t, r);
   if (null == x || null == E) return (0, i.jsx)(g.$jN, {});
   let P = T ? (0, A.Yi)(E) : null,
-    w = null != P || null != v && (v.discountId === B.dT || v.discountId === B.dB),
-    M = T && (S && null != O || !S && w);
+    w = null != P || null != v && (v.discountId === M.dT || v.discountId === M.dB),
+    B = T && (S && null != O || !S && w);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: F.subscriptionRows,
-      children: [M ? (0, i.jsx)(Z.Z, {
+      children: [B ? (0, i.jsx)(Z.Z, {
         subscription: t,
         currentInvoicePreview: x,
         renewalInvoicePreview: E,
@@ -398,7 +398,7 @@ function $(e) {
     subscriptionId: r.id,
     preventFetch: !(A || R)
   });
-  return null == h || null == x ? (0, i.jsx)(g.$jN, {}) : (null != r.renewalMutations && (r.renewalMutations.planId !== r.planId && !(0, O.Q0)(r.renewalMutations.planId) || r.hasExternalPlanChange) && (n = (0, i.jsx)(M.Z, {
+  return null == h || null == x ? (0, i.jsx)(g.$jN, {}) : (null != r.renewalMutations && (r.renewalMutations.planId !== r.planId && !(0, O.Q0)(r.renewalMutations.planId) || r.hasExternalPlanChange) && (n = (0, i.jsx)(B.Z, {
     subscription: r,
     renewalMutations: r.renewalMutations,
     className: F.renewalMutationNotice,

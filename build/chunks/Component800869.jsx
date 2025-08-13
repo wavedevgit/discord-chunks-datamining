@@ -25,11 +25,11 @@ function d(e) {
     }), (0, r.jsx)(o.xv, {
       color: "always-white",
       variant: "text-md/semibold",
-      children: s.intl.string(a.default.diMhWV)
+      children: a.intl.string(s.default.diMhWV)
     }), (0, r.jsx)(o.xv, {
       color: "always-white",
       variant: "text-sm/medium",
-      children: s.intl.string(a.default.pycxTk)
+      children: a.intl.string(s.default.pycxTk)
     }), (0, r.jsx)(i.olH, {
       className: c.close,
       innerClassName: c.innerClose,

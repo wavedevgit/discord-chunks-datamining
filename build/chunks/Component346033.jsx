@@ -39,7 +39,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk555519 = require("./555519.js"),
   Chunk512282 = require("./512282.js"),
   Chunk865215 = require("./865215.js");
-let B = e => {
+let M = e => {
     let {
       inOfferExperience: t
     } = e;
@@ -121,7 +121,7 @@ let B = e => {
         className: a()(Chunk512282.existingSubscriberSpacing, {
           [Chunk512282.zIndex1]: en
         })
-      }), (0, Chunk255367.jsx)(B, {
+      }), (0, Chunk255367.jsx)(M, {
         inOfferExperience: en
       }), (0, Chunk255367.jsx)("div", {
         children: (0, Chunk255367.jsx)(Chunk622535.$, {

@@ -41,7 +41,7 @@ let P = Chunk73800.forwardRef((e, t) => {
     videoRef: D
   } = e, {
     analyticsLocations: Z
-  } = (0, m.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), w = (0, b._O)(), k = (0, f.Nx)(), L = (0, l.e7)([h.Z], () => h.Z.affinities), M = (0, _.Z)(), B = null != M, U = P ? o.Tt.WHITE : o.Tt.BRAND, V = L.length > 0, G = (0, x.ZP)({
+  } = (0, m.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), w = (0, b._O)(), k = (0, f.Nx)(), L = (0, l.e7)([h.Z], () => h.Z.affinities), B = (0, _.Z)(), M = null != B, U = P ? o.Tt.WHITE : o.Tt.BRAND, V = L.length > 0, G = (0, x.ZP)({
     location: "HeroHeading"
   }) ? T.intl.string(T.t["EW+VIS"]) : T.intl.string(T.t.YCZldH), F = (0, g.rO)(), H = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, i.jsx)(m.Gt, {
@@ -59,8 +59,8 @@ let P = Chunk73800.forwardRef((e, t) => {
             variant: "display-sm",
             color: "header-primary",
             children: G
-          }), B ? (0, i.jsx)(C.Z, {
-            referrer: M
+          }), M ? (0, i.jsx)(C.Z, {
+            referrer: B
           }) : V && (0, i.jsx)("div", {
             className: I.affinityDescriptionContainer,
             children: (0, i.jsx)(E.Z, {
@@ -70,7 +70,7 @@ let P = Chunk73800.forwardRef((e, t) => {
             })
           }), w ? (0, i.jsx)("div", {
             className: a()(I.buttonContainer, I.marketingPageCTAContainer, {
-              [I.marketingPageCTAMargin]: !(V || B)
+              [I.marketingPageCTAMargin]: !(V || M)
             }),
             children: (0, i.jsx)(j.Z, {
               className: a()(I.button, r),
@@ -80,7 +80,7 @@ let P = Chunk73800.forwardRef((e, t) => {
             subscriptionTier: s,
             inOfferExperience: k,
             containerClassName: a()(I.marketingPageCTAContainer, {
-              [I.marketingPageCTAMargin]: !(V || B)
+              [I.marketingPageCTAMargin]: !(V || M)
             }),
             buttonClassName: r,
             isApplicationHome: true,

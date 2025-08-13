@@ -33,7 +33,7 @@ function _(e) {
       roleColorStrings: null != (o = null == i ? true : i.colorStrings) ? o : null
     }
   }, [t]), v = (0, d.X7)(t.guildId, t.userId, null != g ? g : null);
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(a.Z, {
     className: f.systemMessageContainer,
     contentClassName: f.systemMessageContent,
     iconNode: (0, r.jsx)(l.$Eu, {
@@ -57,7 +57,7 @@ function _(e) {
       }), (0, r.jsx)(o.xv, {
         variant: "text-md/medium",
         lineClamp: 1,
-        children: (0, r.jsx)(a.Z, {
+        children: (0, r.jsx)(s.Z, {
           children: m.intl.string(p.default.plwH8f)
         })
       })]

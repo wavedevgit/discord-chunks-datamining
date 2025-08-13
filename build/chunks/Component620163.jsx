@@ -317,12 +317,12 @@ let e1 = () => {
         searchableTitles: [eJ.intl.string(eJ.t["vi7f+v"])],
         label: eJ.intl.string(eJ.t["vi7f+v"]),
         ariaLabel: eJ.intl.string(eJ.t["vi7f+v"]),
-        element: B.Z,
+        element: M.Z,
         newIndicator: (0, i.jsx)(e2, {}),
         newIndicatorDismissibleContentTypes: [...e6()],
         notice: {
           stores: [q.Z, R.Z],
-          element: M.Z
+          element: B.Z
         },
         onSettingsClose: () => {
           o.Z.wait(() => {
@@ -1616,7 +1616,7 @@ let e1 = () => {
         searchableTitles: [eJ.intl.string(eJ.t.AVDyEh)],
         label: eJ.intl.string(eJ.t.AVDyEh),
         element: eC.Z,
-        predicate: () => !e7 && (0, eB.Jw)()
+        predicate: () => !e7 && (0, eM.Jw)()
       },
       [eW.s6.OVERLAY]: {
         section: eK.oAB.OVERLAY,
@@ -2016,7 +2016,7 @@ let e1 = () => {
         section: eK.oAB.WEB_SETTING_TREE_TOOL,
         searchableTitles: ["Web Setting Tree Tool"],
         label: "Web Setting Tree Tool",
-        element: eM.Z,
+        element: eB.Z,
         predicate: () => W.Z.isDeveloper
       },
       [eW.s6.LOGOUT]: {

@@ -237,7 +237,7 @@ function ep(e) {
     activities: _,
     applicationStream: E,
     voiceChannel: w,
-    isTyping: B,
+    isTyping: M,
     status: U,
     isMobile: z,
     nameplate: W,
@@ -260,12 +260,12 @@ function ep(e) {
     blocked: K.Z.isBlocked(t.getRecipientId())
   })), eP = eT && ey, eR = eT && eA, eD = (eN || eP || eR) && !(l || $), eZ = (0, g.e7)([Y.ZP], () => Y.ZP.getMentionCount(t.id) > 0), ew = (0, N.ZP)(t), ek = (0, g.e7)([Z.Z], () => Z.Z.isFavorite(t.id)), {
     dotsInsteadOfCloseButton: eL,
-    rearrangeContextMenu: eM
+    rearrangeContextMenu: eB
   } = k.Z.useExperiment({
     location: "private_channel"
   }, {
     autoTrackExposure: true
-  }), eB = r.useRef(null), eU = null != W && (l || $ || eh), eV = () => {
+  }), eM = r.useRef(null), eU = null != W && (l || $ || eh), eV = () => {
     em(true)
   }, eG = () => {
     em(false)
@@ -287,7 +287,7 @@ function ep(e) {
     }
   }, eq = e => {
     let r = "contextmenu" === e.type,
-      s = eM && !r,
+      s = eB && !r,
       a = r ? d.ImpressionNames.DM_LIST_RIGHT_CLICK_MENU_SHOWN : d.ImpressionNames.DM_LIST_KEBAB_MENU_SHOWN;
     ef(true), t.isMultiUserDM() ? (0, b.jW)(e, async () => {
       let {
@@ -365,15 +365,15 @@ function ep(e) {
         "aria-hidden": true,
         recipients: t.recipients,
         size: e,
-        isTyping: B,
+        isTyping: M,
         status: U
       });
       else return (0, i.jsx)(ea, er(ei({}, eC), {
         src: (0, I.x)(t),
         "aria-hidden": true,
         size: e,
-        status: B ? ee.Skl.ONLINE : U,
-        isTyping: B
+        status: M ? ee.Skl.ONLINE : U,
+        isTyping: M
       }));
     o()(null != m, "PrivateChannel.renderAvatar: Invalid prop configuration - no user or channel");
     let n = null;
@@ -383,7 +383,7 @@ function ep(e) {
       avatarDecoration: eE,
       status: n,
       isMobile: z,
-      isTyping: B,
+      isTyping: M,
       "aria-label": m.username,
       statusTooltip: true
     }))
@@ -393,7 +393,7 @@ function ep(e) {
     effectDisplayType: $ || l || eh ? R.F.ANIMATED : R.F.PLAIN,
     loop: $
   }), e0 = eI ? (0, i.jsxs)(i.Fragment, {
-    children: [e$, (0, i.jsx)(M.ZP, {
+    children: [e$, (0, i.jsx)(B.ZP, {
       primaryGuild: null == m ? true : m.primaryGuild,
       userId: null == m ? true : m.id,
       inline: true,
@@ -481,7 +481,7 @@ function ep(e) {
             children: [ek && !eh ? (0, i.jsx)(ec, {}) : null, eP ? (0, i.jsx)(ed, {}) : null, eR ? (0, i.jsx)(eu, {}) : null, eL && !e8 ? (0, i.jsx)(h.ua7, {
               text: et.intl.string(eO ? et.t.Et8qws : et.t["d+e27u"]),
               delay: 500,
-              targetElementRef: eB,
+              targetElementRef: eM,
               children: e => {
                 var {
                   onClick: t
@@ -495,7 +495,7 @@ function ep(e) {
                   onMouseDown: eY,
                   nameplate: W,
                   forceShow: eh,
-                  visibleElementRef: eB
+                  visibleElementRef: eM
                 }))
               }
             }) : (0, i.jsx)(eo, {
@@ -505,7 +505,7 @@ function ep(e) {
               onMouseDown: eY,
               nameplate: W,
               reducedClickTarget: true,
-              visibleElementRef: eB
+              visibleElementRef: eM
             })]
           })]
         })]
@@ -554,7 +554,7 @@ let eg = 12633 == require.j ? e => {
     } = (0, E.Z)({
       userId: c
     }),
-    p = (0, B.K)({
+    p = (0, M.K)({
       user: s
     }),
     h = (0, g.e7)([J.default, q.Z], () => {

@@ -70,7 +70,7 @@ function ea(e) {
     theme: s
   } = e, a = t.hasActiveTrial, l = t.planIdFromItems === X.Xh.PREMIUM_YEAR_TIER_2, c = n || a, d = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, m = X.GP[t.planIdFromItems], g = w.ZP.formatPriceString(w.ZP.getDefaultPrice(m.id), m.interval), {
     enabled: h
-  } = M.T.getCurrentConfig({
+  } = B.T.getCurrentConfig({
     location: "SubscriptionUserHeroSubheader"
   });
   if (c) {
@@ -237,7 +237,7 @@ function eo(e) {
   let {
     className: r,
     config: s
-  } = e, l = (0, c.e7)([E.Z], () => E.Z.useReducedMotion) ? s.getStaticImageUrl() : s.getAnimatedImageUrl(), o = (0, B.Tl)(null != (t = s.gradientConfig) ? t : true), d = {
+  } = e, l = (0, c.e7)([E.Z], () => E.Z.useReducedMotion) ? s.getStaticImageUrl() : s.getAnimatedImageUrl(), o = (0, M.Tl)(null != (t = s.gradientConfig) ? t : true), d = {
     color: null != (n = s.textColor) ? n : "var(--always-white)"
   };
   return (0, i.jsxs)("div", {

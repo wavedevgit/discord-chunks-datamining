@@ -22,7 +22,7 @@ function f(e) {
     guildId: n,
     powerup: o,
     className: i
-  } = e, a = (0, s.ZP)(n, o), u = a.type !== m.A3.LEVEL_ACTIVATED, d = (0, l.Z)(n, o, "GuildPowerupCardBodyFooter"), f = null != (t = (0, p._)(o, a, d)) ? t : true;
+  } = e, s = (0, a.ZP)(n, o), u = s.type !== m.A3.LEVEL_ACTIVATED, d = (0, l.Z)(n, o, "GuildPowerupCardBodyFooter"), f = null != (t = (0, p._)(o, s, d)) ? t : true;
   return (0, r.jsx)(c.uf, {
     status: f,
     cost: u ? o.cost : true,
@@ -39,7 +39,7 @@ function _(e) {
     className: _,
     onHover: x,
     children: g
-  } = e, v = (0, a.Z)(n), b = (0, s.ZP)(n, p), h = b.type !== m.A3.INACTIVE, j = (null == (t = b.sourceEntitlement) ? true : t.ends_at) != null, C = (0, l.Z)(n, p, "GuildPowerupCard"), E = o.useRef(null), {
+  } = e, v = (0, s.Z)(n), b = (0, a.ZP)(n, p), h = b.type !== m.A3.INACTIVE, j = (null == (t = b.sourceEntitlement) ? true : t.ends_at) != null, C = (0, l.Z)(n, p, "GuildPowerupCard"), E = o.useRef(null), {
     onShowMore: I
   } = (0, d.ZP)(n, p), [N, w] = o.useState(false), Z = (0, i.O)(w, 1);
   return (0, r.jsxs)(r.Fragment, {

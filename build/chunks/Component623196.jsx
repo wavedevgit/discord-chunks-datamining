@@ -49,27 +49,8 @@ function E() {
   let C = (0, Chunk88658.$6)(exports, module) || require,
     O = null != exports && a()().diff(a()(exports.created_at), "days") < Chunk981631.eBq,
     v = C && O,
-    S = () => {
-      j({
-        onConfirm: e => {
-          E(true), (0, p.h)(e).then(e => {
-            null != e && null != e.body ? c.Z.show({
-              body: x.intl.string(x.t["6Nmv4u"])
-            }) : c.Z.show({
-              title: x.intl.string(x.t.OjbtDg),
-              body: x.intl.string(x.t["0F5Jys"])
-            })
-          }, e => {
-            var t;
-            let n = (null == e ? true : e.message) || (null == e || null == (t = e.body) ? true : t.message) || x.intl.string(x.t["0F5Jys"]);
-            c.Z.show({
-              title: x.intl.string(x.t.OjbtDg),
-              body: n
-            })
-          }).finally(() => E(false))
-        }
-      })
-    };
+    S = module.isStaff(),
+    T = !module.verified;
   return (0, Chunk255367.jsxs)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_DATA_REQUEST_V2,
     children: [(0, Chunk255367.jsx)(Chunk838436.H, {
@@ -85,26 +66,49 @@ function E() {
           date: a()(exports.created_at).add(Chunk981631.eBq, "days").format("MMMM Do YYYY")
         })
       })
-    }) : (0, Chunk255367.jsx)("div", {
-      className: Chunk189047.button,
-      children: (0, Chunk255367.jsx)(Chunk481060.ua7, {
-        text: module.isStaff() ? Chunk388032.intl.string(Chunk388032.t.ZPQLHx) : module.verified ? null : Chunk388032.intl.string(Chunk388032.t["c1f88/"]),
-        children: e => {
-          let {
-            onMouseEnter: t,
-            onMouseLeave: r
-          } = e;
-          return (0, i.jsx)(o.zxk, {
-            variant: "primary",
-            text: x.intl.string(x.t.dmBSKi),
-            disabled: C,
-            onClick: S,
-            onMouseEnter: t,
-            onMouseLeave: r,
-            loading: s || n
-          })
-        }
+    }) : S ? (0, Chunk255367.jsx)(Chunk481060.Zbd, {
+      className: Chunk189047.card,
+      children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+        variant: "text-md/normal",
+        children: Chunk388032.intl.string(Chunk388032.t.ZPQLHx)
       })
+    }) : (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
+      children: [T ? (0, Chunk255367.jsx)(Chunk481060.Zbd, {
+        className: Chunk189047.card,
+        children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+          variant: "text-md/normal",
+          children: Chunk388032.intl.string(Chunk388032.t["c1f88/"])
+        })
+      }) : null, (0, Chunk255367.jsx)("div", {
+        className: Chunk189047.button,
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: Chunk388032.intl.string(Chunk388032.t.dmBSKi),
+          disabled: C,
+          onClick: () => {
+            j({
+              onConfirm: e => {
+                E(true), (0, p.h)(e).then(e => {
+                  null != e && null != e.body ? c.Z.show({
+                    body: x.intl.string(x.t["6Nmv4u"])
+                  }) : c.Z.show({
+                    title: x.intl.string(x.t.OjbtDg),
+                    body: x.intl.string(x.t["0F5Jys"])
+                  })
+                }, e => {
+                  var t;
+                  let n = (null == e ? true : e.message) || (null == e || null == (t = e.body) ? true : t.message) || x.intl.string(x.t["0F5Jys"]);
+                  c.Z.show({
+                    title: x.intl.string(x.t.OjbtDg),
+                    body: n
+                  })
+                }).finally(() => E(false))
+              }
+            })
+          },
+          loading: Chunk913527 || require
+        })
+      })]
     })]
   })
 }

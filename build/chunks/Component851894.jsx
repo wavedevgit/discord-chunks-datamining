@@ -88,13 +88,13 @@ function k(e) {
   } = (0, p.ZP)(u.Z.USER_SETTINGS_GUILD_PROFILE), k = (0, l.e7)([O.default], () => {
     let e = O.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), L = (0, l.e7)([j.Z], () => !j.Z.isFetchingProfile(k.id, null == n ? true : n.id)), M = (0, l.e7)([C.Z], () => C.Z.hidePersonalInformation), B = (0, l.cj)([I.Z], () => Z(D({}, I.Z.getAllPending()), {
+  }), L = (0, l.e7)([j.Z], () => !j.Z.isFetchingProfile(k.id, null == n ? true : n.id)), B = (0, l.e7)([C.Z], () => C.Z.hidePersonalInformation), M = (0, l.cj)([I.Z], () => Z(D({}, I.Z.getAllPending()), {
     source: I.Z.getSource()
   })), {
     source: U,
     pendingAvatar: V,
     pendingNameplate: G
-  } = B, F = function(e, t) {
+  } = M, F = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -108,7 +108,7 @@ function k(e) {
       for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
-  }(B, ["source", "pendingAvatar", "pendingNameplate"]), H = (0, _.SD)({
+  }(M, ["source", "pendingAvatar", "pendingNameplate"]), H = (0, _.SD)({
     userId: k.id,
     image: V
   }), z = (0, l.e7)([E.ZP], () => null != n ? E.ZP.getMember(n.id, k.id) : null);
@@ -124,7 +124,7 @@ function k(e) {
   } = h.Z.useConfig({
     location: "GuildIdentitySettingsPage"
   });
-  return M ? (0, i.jsx)(d.Z, {}) : L ? (0, i.jsxs)(p.Gt, {
+  return B ? (0, i.jsx)(d.Z, {}) : L ? (0, i.jsxs)(p.Gt, {
     value: s,
     children: [(0, i.jsx)(o.Text, {
       variant: "text-sm/normal",

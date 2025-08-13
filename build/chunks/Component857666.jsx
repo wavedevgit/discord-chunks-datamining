@@ -39,15 +39,15 @@ function v(e, t) {
           allPowerups: l,
           unlockedPowerups: c,
           skuIds: u
-        } = e, d = _.intl.string(f.default.KC9HRU), v = _.intl.string(f.default.GJiSmJ), b = null == l ? true : l[i.IN], h = (null == c ? true : c[i.IN]) != null, j = _.intl.string(f.default["/egwJC"]), C = h ? true : _.intl.string(f.default.W6Vwn5), E = h ? true : _.intl.string(f.default.lvk1GR), I = h ? _.intl.string(f.default["9CfkLC"]) : _.intl.string(f.default.NTuNw8), N = h ? "secondary" : "primary", w = o ? () => {
-          h ? s.Z.open(t, m.pNK.TAG, m.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != b && (0, p.KE)(t, b), (0, a.pTH)()
+        } = e, d = _.intl.string(f.default.KC9HRU), v = _.intl.string(f.default.GJiSmJ), b = null == l ? true : l[i.IN], h = (null == c ? true : c[i.IN]) != null, j = _.intl.string(f.default["/egwJC"]), C = h ? true : _.intl.string(f.default.W6Vwn5), E = h ? true : _.intl.string(f.default.lvk1GR), I = h ? _.intl.string(f.default["9CfkLC"]) : _.intl.string(_.t["+7XY39"]), N = h ? "secondary" : "expressive", w = o ? () => {
+          h ? a.Z.open(t, m.pNK.TAG, m.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != b && (0, p.KE)(t, b), (0, s.pTH)()
         } : true;
         return {
           title: d,
           description: v,
           openModal: function(e) {
             let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-            (0, a.ZDy)(async () => {
+            (0, s.ZDy)(async () => {
               let {
                 default: i
               } = await n.e("64767").then(n.bind(n, 754887));
@@ -75,8 +75,9 @@ function v(e, t) {
                 powerups: e,
                 footerInfoText: E,
                 footerAction: o && null != w && null != I ? {
-                  variant: null != N ? N : "secondary",
+                  variant: N,
                   text: I,
+                  icon: "expressive" === N ? s.$Eu : true,
                   onClick: w
                 } : true
               }, n))

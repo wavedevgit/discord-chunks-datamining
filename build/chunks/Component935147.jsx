@@ -93,7 +93,7 @@ function V(e) {
     preset: $,
     onShuffle: ee
   } = (0, b.Z)(), et = r.useRef(null);
-  (0, v.Z)(et, M.Y_.TRY_IT_OUT);
+  (0, v.Z)(et, B.Y_.TRY_IT_OUT);
   let {
     analyticsLocations: en,
     newestAnalyticsLocation: ei,
@@ -136,7 +136,7 @@ function V(e) {
             size: "md",
             color: "currentColor",
             className: U.premiumIcon
-          }), B.intl.string(B.t.gMlDNT)]
+          }), M.intl.string(M.t.gMlDNT)]
         }),
         profilePreview: (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(x.Z, {
@@ -151,11 +151,11 @@ function V(e) {
           children: [(0, i.jsxs)("div", {
             children: [(0, i.jsx)(a.X6q, {
               variant: "heading-xl/extrabold",
-              children: B.intl.string(B.t["2zGdAQ"])
+              children: M.intl.string(M.t["2zGdAQ"])
             }), (0, i.jsx)(a.Text, {
               className: U.description,
               variant: "text-sm/normal",
-              children: B.intl.string(B.t.xeEC29)
+              children: M.intl.string(M.t.xeEC29)
             })]
           }), (0, i.jsx)(Z.Z, {
             className: U.customizationSection,
@@ -179,29 +179,29 @@ function V(e) {
             isTryItOutFlow: true,
             onAvatarChange: O.c_,
             showRemoveAvatarButton: false,
-            changeAvatarButtonText: B.intl.string(B.t["7z0D1d"]),
-            sectionTitle: B.intl.string(B.t.vtFfPT)
+            changeAvatarButtonText: M.intl.string(M.t["7z0D1d"]),
+            sectionTitle: M.intl.string(M.t.vtFfPT)
           }), (0, i.jsx)(y.Z, {
             isTryItOutFlow: true,
             className: U.customizationSection,
             user: V,
-            sectionTitle: B.intl.string(B.t["7v0T9P"])
+            sectionTitle: M.intl.string(M.t["7v0T9P"])
           }, "decoration"), (0, i.jsx)(D.Z, {
             className: U.customizationSection,
             isTryItOutFlow: true,
             initialSelectedEffectId: Q,
             user: V,
-            sectionTitle: B.intl.string(B.t.wR5wOj)
+            sectionTitle: M.intl.string(M.t.wR5wOj)
           }, "effect"), !ea && (0, i.jsx)(a.Text, {
             variant: "text-sm/normal",
-            children: B.intl.string(B.t["smo74+"])
+            children: M.intl.string(M.t["smo74+"])
           })]
         })
       }), !ea && (0, i.jsx)(_.p, {
         onSubscribeModalClose: es,
         className: U.floatingUpsell,
         showUpsell: true,
-        text: B.intl.format(B.t.TmfgIy, {
+        text: M.intl.format(M.t.TmfgIy, {
           onClick: () => {
             (0, E.y)({
               analyticsSource: ei,
@@ -209,9 +209,9 @@ function V(e) {
             })
           }
         }),
-        button: H ? B.intl.string(B.t.AfRWIy) : eo ? B.intl.formatToPlainString(B.t.bkQ4bG, {
+        button: H ? M.intl.string(M.t.AfRWIy) : eo ? M.intl.formatToPlainString(M.t.bkQ4bG, {
           percent: null == el ? true : el.discount.amount
-        }) : B.intl.string(B.t.pj0XBA),
+        }) : M.intl.string(M.t.pj0XBA),
         position: "inline",
         showShadow: false
       }), ea && (0, i.jsxs)("div", {

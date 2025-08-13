@@ -35,10 +35,10 @@ function y(e) {
   var t, n;
   let {
     guildId: o
-  } = e, d = (0, a.e7)([h.Z], () => h.Z.getGuild(o)), E = (0, a.e7)([b.Z], () => b.Z.getSortedRoles(o).find(e => {
+  } = e, d = (0, s.e7)([h.Z], () => h.Z.getGuild(o)), E = (0, s.e7)([b.Z], () => b.Z.getSortedRoles(o).find(e => {
     var t;
     return (null == (t = e.tags) ? true : t.premium_subscriber) === null
-  })), y = (0, a.e7)([j.default], () => j.default.getCurrentUser()), T = null == y ? true : y.id, O = (0, a.e7)([v.ZP], () => null != T ? v.ZP.getMember(o, T) : true, [T, o]), A = (null == O ? true : O.premiumSince) != null, R = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), {
+  })), y = (0, s.e7)([j.default], () => j.default.getCurrentUser()), T = null == y ? true : y.id, O = (0, s.e7)([v.ZP], () => null != T ? v.ZP.getMember(o, T) : true, [T, o]), A = (null == O ? true : O.premiumSince) != null, R = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
     avatarDecorationSrc: L,
     avatarSrc: k,
     eventHandlers: U
@@ -48,7 +48,7 @@ function y(e) {
     size: u.EFr.SIZE_40,
     animateOnHover: !R
   });
-  return null == d || null == O || null == y ? null : (0, r.jsxs)(s.$, {
+  return null == d || null == O || null == y ? null : (0, r.jsxs)(a.$, {
     className: Z.container,
     children: [(0, r.jsx)("img", {
       alt: "",

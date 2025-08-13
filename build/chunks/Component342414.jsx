@@ -43,7 +43,7 @@ let w = e => {
     } = e, {
       headingText: c,
       headingTop: d
-    } = B(), u = (0, a.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()), p = (0, E.N)(), h = (0, j.Ng)(), f = (0, j.Wp)(h, y.Si.TIER_2) ? y.Si.TIER_2 : true, b = null != u && u.status !== A.O0b.ACCOUNT_HOLD && u.hasAnyPremiumNitro, x = (0, m.Z)().isFractionalPremiumActive && !b;
+    } = M(), u = (0, a.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()), p = (0, E.N)(), h = (0, j.Ng)(), f = (0, j.Wp)(h, y.Si.TIER_2) ? y.Si.TIER_2 : true, b = null != u && u.status !== A.O0b.ACCOUNT_HOLD && u.hasAnyPremiumNitro, x = (0, m.Z)().isFractionalPremiumActive && !b;
     return (0, i.jsxs)("div", {
       className: s()(R.container, r),
       "data-testid": "subscriber-nitro-home-hero-header",
@@ -83,7 +83,7 @@ let w = e => {
     let {
       headingText: e,
       headingTop: t
-    } = B();
+    } = M();
     return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
       children: [(0, Chunk255367.jsx)("img", {
         src: Chunk578478,
@@ -120,7 +120,7 @@ let w = e => {
     } = e, {
       headingText: n,
       headingTop: r
-    } = B();
+    } = M();
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)("img", {
         src: Z,
@@ -153,7 +153,7 @@ let w = e => {
       })]
     })
   },
-  [M, B] = (0, Chunk975104.Z)(),
+  [B, M] = (0, Chunk975104.Z)(),
   U = e => {
     let {
       className: t,
@@ -242,7 +242,7 @@ let w = e => {
     }
     return (0, i.jsx)(d.Gt, {
       value: r,
-      children: (0, i.jsx)(M.Provider, {
+      children: (0, i.jsx)(B.Provider, {
         value: {
           headingText: C,
           headingTop: N

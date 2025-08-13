@@ -35,17 +35,17 @@ function j() {
 function C(e) {
   let {
     guildId: t
-  } = e, n = (0, i.e7)([s.Z], () => {
+  } = e, n = (0, i.e7)([a.Z], () => {
     var e;
-    return (null == (e = s.Z.getGuild(t)) ? true : e.features.has(g.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
+    return (null == (e = a.Z.getGuild(t)) ? true : e.features.has(g.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
   }), C = (0, u.Z)(t), E = C.length > 0, {
     shouldShow: I,
     notificationConfig: N
   } = (0, _._)(t, "GuildPowerupNotificationContainer"), w = [];
   I && w.push(l.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
-  let [Z, P] = (0, a.ZT)(w, t), S = null != Z && null != N, y = (0, c.W)(t, "GuildPowerupNotificationContainer"), T = [];
+  let [Z, P] = (0, s.ZT)(w, t), S = null != Z && null != N, y = (0, c.W)(t, "GuildPowerupNotificationContainer"), T = [];
   S || E || (T.push(l.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK), y && T.push(l.z.BOOSTER_ENHANCED_ROLE_COLORS_ADMIN_UPSELL));
-  let [O, A] = (0, a.US)(T), R = (e => {
+  let [O, A] = (0, s.US)(T), R = (e => {
     let n = [];
     return E && n.push((0, r.jsx)(f.Z, {
       guildId: t,

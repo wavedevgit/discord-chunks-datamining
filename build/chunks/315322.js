@@ -212,15 +212,15 @@ function v(e) {
   } = e, o = Object.keys(n), a = o.reduce((e, t) => {
     let r = n[t];
     return e[t] = Array.isArray(r) ? r.length : 1, e
-  }, {}), c = null != i ? (0, s.kG)(i) : [], p = 0, h = 0, m = 0, g = 0, E = 0, b = 0, y = 0, O = 0;
+  }, {}), c = null != i ? (0, s.kG)(i) : [], p = 0, h = 0, m = 0, g = 0, E = 0, b = 0, y = 0, O = 0, v = 0;
   c.forEach(e => {
-    e.type === u.dCx.ANSWER_IN ? p++ : e.type === u.dCx.ANSWER_USERNAME_FROM ? h++ : e.type === u.dCx.ANSWER_USERNAME_MENTIONS ? m++ : e.type === u.dCx.ANSWER_HAS ? g++ : e.type === u.dCx.ANSWER_BEFORE ? E++ : e.type === u.dCx.ANSWER_ON ? b++ : e.type === u.dCx.ANSWER_AFTER ? y++ : e.type === u.dCx.ANSWER_PINNED && O++
+    e.type === u.dCx.ANSWER_IN ? p++ : e.type === u.dCx.ANSWER_USERNAME_FROM ? h++ : e.type === u.dCx.ANSWER_USERNAME_MENTIONS ? m++ : e.type === u.dCx.ANSWER_HAS ? g++ : e.type === u.dCx.ANSWER_BEFORE ? E++ : e.type === u.dCx.ANSWER_ON ? b++ : e.type === u.dCx.ANSWER_AFTER ? y++ : e.type === u.dCx.ANSWER_PINNED ? O++ : e.type === u.dCx.ANSWER_AUTHOR_TYPE && v++
   });
-  let v = l.ZP.getQueryId(t);
+  let I = l.ZP.getQueryId(t);
   r.ZP.trackWithMetadata(u.rMx.MESSAGES_SEARCH_STARTED, {
     search_id: _(t),
     search_session_id: l.ZP.getSessionId(t),
-    search_query_id: v,
+    search_query_id: I,
     search_type: t.type,
     search_query_length: d(i),
     search_query_content_length: f(n),
@@ -232,7 +232,8 @@ function v(e) {
     filter_before_count: E,
     filter_during_count: b,
     filter_after_count: y,
-    filter_pinned_count: O
+    filter_pinned_count: O,
+    filter_author_type_count: v
   }), r.ZP.trackWithMetadata(u.rMx.SEARCH_STARTED, {
     search_id: _(t),
     search_session_id: l.ZP.getSessionId(t),

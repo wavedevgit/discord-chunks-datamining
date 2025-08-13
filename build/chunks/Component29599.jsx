@@ -172,7 +172,7 @@ let k = function() {
     claimedEndedOutboundPromotions: j,
     claimedOutboundPromotionCodeMap: C,
     addClaimedOutboundPromotionCode: k
-  } = (0, Chunk725727.lG)(), L = Chunk178100.length + Chunk518638.length > 0, M = Chunk163684.g.useExperiment({
+  } = (0, Chunk725727.lG)(), L = Chunk178100.length + Chunk518638.length > 0, B = Chunk163684.g.useExperiment({
     location: "EntitlementGifts"
   }, {
     autoTrackExposure: false,
@@ -193,7 +193,7 @@ let k = function() {
           variant: "heading-md/semibold",
           children: L ? Chunk388032.intl.string(Chunk388032.t.wFsj3N) : true
         }),
-        m = M ? (0, Chunk255367.jsxs)("div", {
+        m = B ? (0, Chunk255367.jsxs)("div", {
           className: Chunk148167.promoHeaderContainer,
           children: [(0, Chunk255367.jsx)(Chunk481060.SrA, {
             size: "md",
@@ -222,12 +222,12 @@ let k = function() {
           className: Chunk148167.divider
         }) : null, (0, Chunk255367.jsx)(Chunk504983.Z, {
           className: Chunk148167.gradientContainer,
-          isShown: M,
+          isShown: B,
           type: Chunk504983.Y.PREMIUM,
           hasBackground: true,
           children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
             className: a()({
-              [Chunk148167.marginContainer]: !M
+              [Chunk148167.marginContainer]: !B
             }),
             children: [Chunk570140, Chunk518638.map(e => {
               let {

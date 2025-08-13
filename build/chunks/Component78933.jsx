@@ -140,13 +140,13 @@ function ea(e) {
       t && eP(String(Date.now()))
     }
   });
-  let [eR, eD] = (0, x.US)(eN ? [l.z.CUSTOM_STATUS_PROMPTS_COACHMARK] : []), eZ = eR === l.z.CUSTOM_STATUS_PROMPTS_COACHMARK, ew = r.useRef((0, K.Z)(e => e.shouldRenderTenureLevelUp)), ek = r.useMemo(() => (0, f.Z)(), []), [eL, eM] = r.useState(true);
+  let [eR, eD] = (0, x.US)(eN ? [l.z.CUSTOM_STATUS_PROMPTS_COACHMARK] : []), eZ = eR === l.z.CUSTOM_STATUS_PROMPTS_COACHMARK, ew = r.useRef((0, K.Z)(e => e.shouldRenderTenureLevelUp)), ek = r.useMemo(() => (0, f.Z)(), []), [eL, eB] = r.useState(true);
   r.useEffect(() => {
     setTimeout(() => {
-      eM(false)
+      eB(false)
     }, 500)
   }, []);
-  let eB = e => {
+  let eM = e => {
       null == n || n(), (0, T.openUserProfileModal)(es({
         customStatusPrompt: ek,
         sourceAnalyticsLocations: eu
@@ -179,13 +179,13 @@ function ea(e) {
               user: t,
               displayProfile: ed,
               themeType: et.lY.POPOUT,
-              onOpenProfile: ec ? true : eB
+              onOpenProfile: ec ? true : eM
             }), eZ ? (0, i.jsx)(b.Z, {
               positionKey: eA,
               onTryFeature: n,
               targetElementRef: ey,
               markAsDismissed: eD,
-              children: () => (0, i.jsx)(M.Z, {
+              children: () => (0, i.jsx)(B.Z, {
                 ref: ey,
                 location: "UserProfileAccountPopout",
                 user: t,
@@ -193,7 +193,7 @@ function ea(e) {
                 onCloseProfile: n,
                 prompt: ek
               })
-            }) : (0, i.jsx)(M.Z, {
+            }) : (0, i.jsx)(B.Z, {
               location: "UserProfileAccountPopout",
               user: t,
               themeType: et.lY.POPOUT,
@@ -209,7 +209,7 @@ function ea(e) {
               user: t,
               className: ei.username,
               nickname: W.ZP.getName(null, null, t),
-              onOpenProfile: ec ? true : eB,
+              onOpenProfile: ec ? true : eM,
               pronouns: null == ed ? true : ed.pronouns,
               tags: (0, i.jsx)(N.Z, {
                 displayProfile: ed,
@@ -226,7 +226,7 @@ function ea(e) {
                   isHovering: eg
                 })]
               })
-            }), (0, i.jsx)(B.Z, {
+            }), (0, i.jsx)(M.Z, {
               user: t,
               bio: null == ed ? true : ed.bio,
               hidePersonalInformation: e_,
@@ -238,7 +238,7 @@ function ea(e) {
               user: t,
               currentUser: t,
               displayProfile: ed,
-              onOpenUserProfileModal: eB,
+              onOpenUserProfileModal: eM,
               onClose: n
             }) : (0, i.jsx)(R.Z, {
               user: t,

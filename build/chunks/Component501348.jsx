@@ -93,31 +93,31 @@ let Y = {
       channelId: J,
       content: V.intl.string(V.t.oZxkEh)
     })), {
-      state: M.yb.SENT,
+      state: B.yb.SENT,
       id: "".concat(t++)
     })), (0, v.e5)(W(z({}, (0, S.ZP)({
       channelId: J,
       content: (0, d.wj)(e) ? V.intl.string(V.t["WGb/v7"]) : V.intl.string(V.t["62m4m5"])
     })), {
-      state: M.yb.SENT,
+      state: B.yb.SENT,
       id: "".concat(t++)
     })), (0, v.e5)(W(z({}, (0, S.ZP)({
       channelId: J,
       content: V.intl.string(V.t.a0Byo6)
     })), {
-      state: M.yb.SENT,
+      state: B.yb.SENT,
       id: "".concat(t++)
     })), (0, v.e5)(W(z({}, (0, S.ZP)({
       channelId: J,
       content: V.intl.string(V.t.bmwEWF)
     })), {
-      state: M.yb.SENT,
+      state: B.yb.SENT,
       id: "".concat(t++)
     })), (0, v.e5)(W(z({}, (0, S.ZP)({
       channelId: J,
       content: V.intl.string(V.t.hK9QW1)
     })), {
-      state: M.yb.SENT,
+      state: B.yb.SENT,
       id: "".concat(t)
     }))]
   },
@@ -437,7 +437,7 @@ class ee extends Chunk73800.Component {
     (0, f.cq)(e)
   }
   constructor(...e) {
-    super(...e), H(this, "darkMessages", Q(M.BRd.DARK)), H(this, "lightMessages", Q(M.BRd.LIGHT)), H(this, "handleDisplayCompactAvatarsChanged", e => {
+    super(...e), H(this, "darkMessages", Q(B.BRd.DARK)), H(this, "lightMessages", Q(B.BRd.LIGHT)), H(this, "handleDisplayCompactAvatarsChanged", e => {
       m.ZP.updatedUnsyncedSettings({
         displayCompactAvatars: e
       })
@@ -573,7 +573,7 @@ class et extends ee {
 }
 let en = e => {
   (0, O.zu)(e) || (0, O.Q3)(e, {
-    dismissAction: B.L.AUTO,
+    dismissAction: M.L.AUTO,
     forceTrack: true
   })
 };
