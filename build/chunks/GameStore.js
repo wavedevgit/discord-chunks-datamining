@@ -176,7 +176,10 @@ p(w, "displayName", "GameStore"), p(w, "persistKey", "GameStore"), p(w, "migrati
 }, e => (0, _.isDesktop)() ? e : {
   detectableGamesEtag: "",
   detectableGames: []
-}]);
+}, () => ({
+  detectableGamesEtag: "",
+  detectableGames: []
+})]);
 let D = new w(Chunk570140.Z, {
   OVERLAY_INITIALIZE: N,
   GAMES_DATABASE_FETCH: C,

@@ -44,26 +44,26 @@ function m(e) {
     applicationId: n,
     skuId: c,
     analyticsLocations: m,
-    isGift: b = false
+    isGift: g = false
   } = e, {
-    analyticsLocations: g
+    analyticsLocations: b
   } = (0, l.ZP)(m, a.Z.PREMIUM_PAYMENT_MODAL);
   return (0, i.jsx)(l.Gt, {
-    value: g,
+    value: b,
     children: (0, i.jsx)(r.PaymentContextProvider, {
       loadId: t,
       stepConfigs: function() {
         let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
         return [u.WA, ...e ? [d.PT] : [], u.s2, ...u.yp, u.wo, u.F7]
-      }(b),
+      }(g),
       applicationId: n,
       skuIDs: [c],
       activeSubscription: null,
       purchaseType: f.GZ.ONE_TIME,
-      isGift: b,
+      isGift: g,
       children: (0, i.jsx)(o.c1, {
         children: (0, i.jsx)(s.KB, {
-          isGift: b,
+          isGift: g,
           children: (0, i.jsx)(p, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},

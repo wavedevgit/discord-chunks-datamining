@@ -43,10 +43,12 @@ function x(e) {
 let Chunk450390 = require("./450390.js"),
   C = e => {
     var t, a;
-    return (0, r.jsx)(s.zx, (t = x({}, e), a = a = {
+    return (0, r.jsx)(n.zx, (t = x({
+      "data-migration-pending": true
+    }, e), a = a = {
       "aria-label": p.intl.string(p.t.cpT0Cg),
-      look: s.zx.Looks.BLANK,
-      size: s.zx.Sizes.NONE,
+      look: n.zx.Looks.BLANK,
+      size: n.zx.Sizes.NONE,
       children: (0, r.jsx)("img", {
         src: j,
         alt: "Close Modal",
@@ -67,16 +69,16 @@ let Chunk450390 = require("./450390.js"),
     let {
       animatedAssetURL: t,
       staticAssetURL: a,
-      className: s
+      className: n
     } = e;
     return (0, c.e7)([o.Z], () => o.Z.useReducedMotion) || null == t ? (0, r.jsx)("img", {
       src: a,
-      className: s,
+      className: n,
       alt: ""
     }) : (0, r.jsx)(i.Z, {
       autoPlay: true,
       loop: true,
-      className: s,
+      className: n,
       children: (0, r.jsx)("source", {
         src: t,
         type: "video/webm"
@@ -87,18 +89,18 @@ let Chunk450390 = require("./450390.js"),
     let {
       header: t,
       subHeader: a,
-      staticAsset: s,
+      staticAsset: n,
       animatedAsset: c
     } = e;
     return (0, r.jsxs)("div", {
       className: f.featureCard,
       children: [(0, r.jsx)(y, {
-        staticAssetURL: s,
+        staticAssetURL: n,
         animatedAssetURL: c,
         className: f.orbAsset
       }), (0, r.jsxs)("div", {
         className: f.featureCardTextGroup,
-        children: [(0, r.jsx)(n.X6q, {
+        children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/extrabold",
           className: f.featureCardTextHeader,
           children: t
@@ -113,7 +115,7 @@ let Chunk450390 = require("./450390.js"),
     let {
       onClose: t,
       ctaOnClick: a,
-      transitionState: s
+      transitionState: n
     } = e, c = (0, d.Dt)(), {
       showBetaTag: o
     } = u.Z.useExperiment({
@@ -121,17 +123,17 @@ let Chunk450390 = require("./450390.js"),
     }), i = [{
       header: p.intl.string(p.t["2Nvn8/"]),
       subHeader: p.intl.string(p.t.F1lGFx),
-      staticAsset: _.Z
+      staticAsset: h.Z
     }, {
       header: p.intl.string(p.t["1IEs7+"]),
       subHeader: p.intl.string(p.t.mej05u),
-      staticAsset: g.Z
+      staticAsset: _.Z
     }];
-    return (0, r.jsxs)(n.Y0X, {
-      className: f.root,
-      transitionState: s,
-      "aria-labelledby": c,
+    return (0, r.jsxs)(s.Y0X, {
       "data-migration-pending": true,
+      className: f.root,
+      transitionState: n,
+      "aria-labelledby": c,
       hideShadow: true,
       parentComponent: "AnnouncementModalV2",
       children: [(0, r.jsx)(C, {
@@ -139,27 +141,29 @@ let Chunk450390 = require("./450390.js"),
         onClick: t
       }), (0, r.jsx)(y, {
         staticAssetURL: m.Z,
-        animatedAssetURL: h.Z,
+        animatedAssetURL: g.Z,
         className: f.heroAsset
-      }), (0, r.jsxs)(n.hzk, {
+      }), (0, r.jsxs)(s.hzk, {
+        "data-migration-pending": true,
         className: f.content,
         children: [(0, r.jsxs)("div", {
           className: f.headerContainer,
-          children: [(0, r.jsx)(n.X6q, {
+          children: [(0, r.jsx)(s.X6q, {
             variant: "display-md",
             className: f.header,
             children: p.intl.string(p.t.XKlAys)
           }), o && (0, r.jsx)(l.Z, {
             className: f.betaBadge
           })]
-        }), (0, r.jsx)(n.X6q, {
+        }), (0, r.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
           className: f.subHeader,
           children: p.intl.string(p.t.icWQKi)
         }), i.length > 0 && (0, r.jsx)("div", {
           className: f.featureCardGroup,
           children: i.map((e, t) => (0, r.jsx)(N, x({}, e), "".concat(e.header, "_").concat(t)))
-        }), (0, r.jsx)(n.gtL, {
+        }), (0, r.jsx)(s.gtL, {
+          "data-migration-pending": true,
           onClick: a,
           color: f.buttonColor,
           className: f.button,

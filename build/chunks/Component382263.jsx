@@ -56,7 +56,7 @@ function v(e) {
     loading: r = false
   } = e, {
     hasPaymentSources: o
-  } = (0, m.JL)(), c = o ? b.h8.REVIEW : b.h8.ADD_PAYMENT_STEPS;
+  } = (0, m.JL)(), c = o ? g.h8.REVIEW : g.h8.ADD_PAYMENT_STEPS;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(l.zxk, {
       onClick: () => t(c),
@@ -75,14 +75,14 @@ function O(e) {
     handleStepChange: n,
     handleClose: u
   } = e, {
-    customGiftMessage: b = "",
+    customGiftMessage: g = "",
     setCustomGiftMessage: x,
     giftRecipient: O
   } = (0, p.wD)(), {
     selectedSkuId: C
   } = (0, m.JL)(), T = (0, a.e7)([d.default], () => d.default.getCurrentUser()), P = (0, a.e7)([f.Z], () => null != C ? f.Z.get(C) : null, [C]), k = async (e, t) => {};
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(g.C3, {
+    children: [(0, i.jsx)(b.C3, {
       children: (0, i.jsxs)("div", {
         className: j.stepBody,
         children: [(0, i.jsxs)("div", {
@@ -109,22 +109,23 @@ function O(e) {
           }), (0, i.jsx)(o.Z, {
             sectionTitle: y.intl.string(y.t.B3miEx),
             onTextChange: e => null == x ? true : x(e),
-            pendingText: b,
-            currentText: b,
+            pendingText: g,
+            currentText: g,
             disableThemedBackground: true,
             className: j.customGiftMessageWrapper,
             innerClassName: j.customGiftMessage
           })]
         })]
       })
-    }), (0, i.jsx)(g.O3, {
+    }), (0, i.jsx)(b.O3, {
       children: (0, i.jsx)(l.mzw, {
+        "data-migration-pending": true,
         justify: r.Z.Justify.BETWEEN,
         align: r.Z.Align.CENTER,
         children: (0, i.jsx)(v, {
           onStepChange: n,
           onBackClick: u,
-          disabled: null == O || O.id === (null == T ? true : T.id) || b.length > h.$n
+          disabled: null == O || O.id === (null == T ? true : T.id) || g.length > h.$n
         })
       })
     })]
