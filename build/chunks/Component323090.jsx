@@ -1,7 +1,7 @@
 /** Chunk was on 29458 **/
 /** chunk id: 323090, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => x
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -21,12 +21,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk926505 = require("./926505.js");
 
-function O(e) {
+function x(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: O,
-    guildId: x,
+    displayProfile: x,
+    guildId: O,
     subsection: h,
     onClose: v
   } = e, {
@@ -38,25 +38,25 @@ function O(e) {
   return (0, r.jsxs)(i.zJl, {
     fade: true,
     className: y.scroller,
-    children: [(null == O ? true : O.bio) != null && (null == O ? true : O.bio) !== "" && (0, r.jsx)(f.Z, {
-      userBio: O.bio,
+    children: [(null == x ? true : x.bio) != null && (null == x ? true : x.bio) !== "" && (0, r.jsx)(f.Z, {
+      userBio: x.bio,
       setLineClamp: false
     }), (null == I ? true : I.popularApplicationCommandIds) != null && null != P && (0, r.jsx)(u.Z, {
       applicationId: I.id,
       commandIds: I.popularApplicationCommandIds,
       channel: P,
-      guildId: x,
+      guildId: O,
       onClick: v
-    }), (null == O ? true : O.guildId) != null && (0, r.jsx)(b.Z, {
+    }), (null == x ? true : x.guildId) != null && (0, r.jsx)(b.Z, {
       user: t,
       currentUser: n,
-      guildId: O.guildId,
+      guildId: x.guildId,
       scrollIntoView: h === g.Tb.ROLES
     }), (0, r.jsx)(m.Z, {
       heading: j.intl.string(j.t["A//N4u"]),
       children: (0, r.jsx)(p.Z, {
         userId: t.id,
-        guildId: x,
+        guildId: O,
         tooltipDelay: g.vB
       })
     }), (0, r.jsx)(m.Z, {

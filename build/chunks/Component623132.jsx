@@ -39,7 +39,7 @@ function y(e) {
   return e
 }
 
-function O(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function O(e, t) {
   }), e
 }
 
-function x(e) {
+function O(e) {
   var {
     applicationId: t,
     userId: n,
@@ -79,9 +79,9 @@ function x(e) {
     sourceUserId: n,
     trackEntryPointImpression: true
   });
-  return null == s ? (0, r.jsx)(l.X6q, O(y({}, c), {
+  return null == s ? (0, r.jsx)(l.X6q, x(y({}, c), {
     children: a
-  })) : (0, r.jsx)(l.X6q, O(y({}, c), {
+  })) : (0, r.jsx)(l.X6q, x(y({}, c), {
     children: (0, r.jsx)(l.P3F, {
       onClick: s,
       className: j.clickableText,
@@ -176,9 +176,9 @@ function _(e) {
       disableInteraction: p
     }), (0, r.jsxs)("div", {
       className: j.details,
-      children: [p ? (0, r.jsx)(l.X6q, O(y({}, Z), {
+      children: [p ? (0, r.jsx)(l.X6q, x(y({}, Z), {
         children: _
-      })) : (0, r.jsx)(x, y({
+      })) : (0, r.jsx)(O, y({
         applicationId: P,
         userId: t.id,
         gameName: _

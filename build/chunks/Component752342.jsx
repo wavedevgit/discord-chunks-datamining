@@ -87,7 +87,7 @@ function S(e) {
             displayProfile: F,
             themeType: E.lY.MODAL,
             children: [(0, r.jsx)(h.Z, {
-              children: (0, r.jsx)(O.Z, {
+              children: (0, r.jsx)(x.Z, {
                 user: t,
                 guildId: U,
                 onCloseProfile: M
@@ -124,7 +124,7 @@ function S(e) {
                     userId: t.id,
                     onClose: i.Z.popAll,
                     tooltipContainerClassName: N.messageIconButton
-                  }), (0, r.jsx)(x.Z, {
+                  }), (0, r.jsx)(O.Z, {
                     user: t,
                     guildId: U
                   }), (0, r.jsx)(y.Z, {

@@ -339,7 +339,7 @@ Object.freeze({
   "divider-strong": [Chunk691324.I.WHITE, Chunk691324.I.BLACK, Chunk691324.I.PLUM_11, Chunk691324.I.PLUM_11],
   "divider-subtle": [Chunk691324.I.WHITE, Chunk691324.I.BLACK, Chunk691324.I.PLUM_11, Chunk691324.I.PLUM_11],
   "embed-background": [Chunk691324.I.PRIMARY_630, Chunk691324.I.PRIMARY_130, Chunk691324.I.PLUM_23, Chunk691324.I.PLUM_18],
-  "embed-background-alternate": [Chunk691324.I.PRIMARY_600, Chunk691324.I.PRIMARY_200, Chunk691324.I.PRIMARY_600, Chunk691324.I.PRIMARY_600],
+  "embed-background-alternate": [Chunk691324.I.PRIMARY_600, Chunk691324.I.PRIMARY_200, Chunk691324.I.PLUM_23, Chunk691324.I.PLUM_18],
   "embed-title": [Chunk691324.I.NEUTRAL_1, Chunk691324.I.NEUTRAL_71, Chunk691324.I.NEUTRAL_8, Chunk691324.I.NEUTRAL_2],
   "experimental-avatar-embed-bg": [Chunk691324.I.OPACITY_BLACK_52, Chunk691324.I.OPACITY_BLACK_52, Chunk691324.I.OPACITY_BLACK_52, Chunk691324.I.OPACITY_BLACK_52],
   "expression-picker-bg": [Chunk691324.I.NEUTRAL_69, Chunk691324.I.NEUTRAL_2, Chunk691324.I.NEUTRAL_97, Chunk691324.I.NEUTRAL_86],

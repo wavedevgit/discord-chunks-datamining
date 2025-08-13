@@ -76,7 +76,7 @@ function b(e) {
     r = {
       applicationId: g(n.length > 0 ? n : f.J6)
     };
-  return e === i.l.FAVORITE_GAMES && (r.comment = Math.random() > .5 ? g(d.x) : true), e === i.l.CURRENT_GAMES && (r.tags = Math.random() > .3 ? E(d.T, Math.floor(Math.random() * d.T.length) + 1) : true), r
+  return e === i.l.FAVORITE_GAMES && (r.comment = Math.random() > .5 ? g(d.x) : true), e === i.l.CURRENT_GAMES && (r.tags = Math.random() > .3 ? E(d.T, d.T.length) : true), r
 }
 
 function y() {

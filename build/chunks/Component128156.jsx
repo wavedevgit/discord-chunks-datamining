@@ -73,9 +73,9 @@ function P(e) {
   });
   if (!F && !V && !k) {
     var Y;
-    return G ? (0, r.jsx)(O.Uf, {
+    return G ? (0, r.jsx)(x.Uf, {
       onClose: N
-    }) : (0, r.jsx)(O.P9, {
+    }) : (0, r.jsx)(x.P9, {
       user: t,
       guildId: null != (Y = null == P ? true : P.guildId) ? Y : true,
       channelId: T,
@@ -85,7 +85,7 @@ function P(e) {
   return (0, r.jsxs)(i.Ttm, {
     className: I.scroller,
     fade: true,
-    children: [F ? (0, r.jsx)(x.Z, {
+    children: [F ? (0, r.jsx)(O.Z, {
       heading: _.intl.string(_.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: I.cards,
@@ -122,7 +122,7 @@ function P(e) {
           })
         })]
       })
-    }) : null, V ? (0, r.jsx)(x.Z, {
+    }) : null, V ? (0, r.jsx)(O.Z, {
       heading: _.intl.string(_.t.jzgEoK),
       introText: G ? _.intl.format(_.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(i.eee, {

@@ -22,7 +22,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk337634 = require("./337634.js");
 
-function x(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -62,21 +62,21 @@ function v(e) {
     userId: i
   } = e, o = null != (t = n.metadata) ? t : {}, m = (0, u.FI)(o[j.PC.CREATED_AT], l), v = c.Z.get((0, d.rR)(n.type));
   return (0, r.jsxs)("li", {
-    className: O.connection,
+    className: x.connection,
     children: [(0, r.jsx)(a.ua7, {
       text: null == v ? true : v.name,
-      children: e => (0, r.jsx)("div", h(x({}, e), {
-        className: O.platformIconContainer,
+      children: e => (0, r.jsx)("div", h(O({}, e), {
+        className: x.platformIconContainer,
         children: (0, r.jsx)("img", {
           alt: y.intl.formatToPlainString(y.t.rtm15O, {
             name: null == v ? true : v.name
           }),
-          className: O.platformIcon,
+          className: x.platformIcon,
           src: null == v ? true : v.icon.lightPNG
         })
       }))
     }), (0, r.jsxs)("div", {
-      className: O.connectionInfo,
+      className: x.connectionInfo,
       children: [(0, r.jsxs)("div", {
         children: [(() => {
           var e;
@@ -84,14 +84,14 @@ function v(e) {
           return null == t ? (0, r.jsx)(a.ua7, {
             overflowOnly: true,
             text: n.name,
-            children: e => (0, r.jsx)(a.Text, h(x({}, e), {
+            children: e => (0, r.jsx)(a.Text, h(O({}, e), {
               variant: "text-sm/normal",
-              className: O.accountNameText,
+              className: x.accountNameText,
               children: n.name
             }))
           }) : (0, r.jsx)(a.eee, {
             href: t,
-            className: O.platformUrlAnchor,
+            className: x.platformUrlAnchor,
             useDefaultUnderlineStyles: false,
             "aria-label": (null == v ? true : v.name) != null ? "".concat(v.name, ", ").concat(n.name, ", ").concat(y.intl.string(y.t.q5jLJC)) : "".concat(n.name, ", ").concat(y.intl.string(y.t.q5jLJC)),
             onClick: e => {
@@ -104,17 +104,17 @@ function v(e) {
               }, e)
             },
             children: (0, r.jsxs)("div", {
-              className: O.accountName,
+              className: x.accountName,
               children: [(0, r.jsx)(a.ua7, {
                 overflowOnly: true,
                 text: n.name,
-                children: e => (0, r.jsx)(a.Text, h(x({}, e), {
+                children: e => (0, r.jsx)(a.Text, h(O({}, e), {
                   variant: "text-sm/normal",
-                  className: O.accountNameText,
+                  className: x.accountNameText,
                   children: n.name
                 }))
               }), (0, r.jsx)(p.Z, {
-                className: O.platformUrlIcon,
+                className: x.platformUrlIcon,
                 direction: p.Z.Directions.RIGHT
               })]
             })
@@ -126,7 +126,7 @@ function v(e) {
           })
         })]
       }), (0, r.jsx)("div", {
-        className: O.metadata,
+        className: x.metadata,
         children: n.type === g.ABu.REDDIT ? (0, f.oP)(o) : n.type === g.ABu.STEAM ? (0, f.Dq)(o) : n.type === g.ABu.BLUESKY || n.type === g.ABu.MASTODON || n.type === g.ABu.TWITTER ? (0, f.rJ)(o) : n.type === g.ABu.PAYPAL ? (0, f.li)(o) : n.type === g.ABu.EBAY ? (0, f.ul)(o) : n.type === g.ABu.TIKTOK ? (0, f.hf)(o) : null
       })]
     })]
@@ -140,7 +140,7 @@ function _(e) {
     className: l
   } = e, a = (0, o.e7)([m.default], () => m.default.locale);
   return 0 === t.length ? null : (0, r.jsx)("ul", {
-    className: i()(O.container, l),
+    className: i()(x.container, l),
     children: t.map(e => (0, r.jsx)(v, {
       account: e,
       userId: n,

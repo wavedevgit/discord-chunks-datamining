@@ -15,30 +15,34 @@ var Chunk255367 = require("./255367.js"),
 function u(e) {
   let {
     tags: t
-  } = e, n = null == t ? true : t.filter(e => null != (0, c.z)(e)), i = (0, l.useRef)(new Map), o = (0, l.useRef)(null), [s, u] = (0, l.useState)(0), [g, j] = (0, l.useState)(false), {
-    trackUserProfileAction: y
-  } = (0, a.KZ)(), O = b(o, n, i, u);
+  } = e, n = null == t ? true : t.filter(e => null != (0, c.z)(e)), i = (0, l.useRef)(new Map), o = (0, l.useRef)(null), [u, g] = (0, l.useState)(0), [j, y] = (0, l.useState)(false), {
+    trackUserProfileAction: x
+  } = (0, a.KZ)(), O = b(o, n, i, g);
   if ((0, l.useEffect)(() => (O(), window.addEventListener("resize", O), () => {
       window.removeEventListener("resize", O)
     }), [O, null == n ? true : n.join("")]), null == n || 0 === n.length) return null;
-  let x = g ? n : n.slice(0, n.length - s);
+  let h = j ? n : n.slice(0, n.length - u);
   return (0, r.jsxs)("div", {
     className: d.tagListContainer,
-    children: [x.map(e => (0, r.jsx)(f, {
-      tag: e,
-      ref: t => {
-        null != t && i.current.set(e, t)
-      }
-    }, e)), s > 0 && (g ? (0, r.jsx)(m, {
+    children: [(0, r.jsx)("ul", {
+      className: d.tagList,
+      "aria-label": s.intl.string(s.t.EfjTi4),
+      children: h.map(e => (0, r.jsx)(f, {
+        tag: e,
+        ref: t => {
+          null != t && i.current.set(e, t)
+        }
+      }, e))
+    }), u > 0 && (j ? (0, r.jsx)(m, {
       onClick: () => {
-        j(false), y({
+        y(false), x({
           action: "COLLAPSE_GAME_TAGS"
         })
       }
     }) : (0, r.jsx)(p, {
-      numHidden: s,
+      numHidden: u,
       onClick: () => {
-        j(true), y({
+        y(true), x({
           action: "EXPAND_GAME_TAGS"
         })
       },
@@ -56,7 +60,7 @@ let f = e => {
       getText: o,
       icon: a
     } = l;
-    return (0, r.jsxs)("div", {
+    return (0, r.jsxs)("li", {
       className: d.tag,
       ref: n,
       children: [(0, r.jsx)(a, {

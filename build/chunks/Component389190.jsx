@@ -27,8 +27,8 @@ function b(e) {
   } = (0, s.Z)(t), {
     analyticsLocations: y
   } = (0, a.ZP)(), {
-    context: O,
-    trackUserProfileAction: x
+    context: x,
+    trackUserProfileAction: O
   } = (0, c.KZ)(), h = (0, o.Z)();
   l.useEffect(() => {
     (0, d.Z)(t.id, h)
@@ -52,7 +52,7 @@ function b(e) {
         })
       }
       return e
-    }({}, O), n = n = {
+    }({}, x), n = n = {
       userId: e,
       sourceAnalyticsLocations: y
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -92,7 +92,7 @@ function b(e) {
         guildId: n,
         channelId: b,
         onSelect: () => {
-          null == g || g(), x({
+          null == g || g(), O({
             action: "PRESS_MUTUAL_FRIEND"
           }), v(l.id)
         }

@@ -91,11 +91,11 @@ function I(e) {
       heading: h.intl.string(h.t.M0zgnZ),
       introText: R ? h.intl.format(h.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(i.eee, {
-          href: d.Z.getArticleURL(x.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: d.Z.getArticleURL(O.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : true,
-      scrollIntoView: E === O.Tb.RECENT_ACTIVITY,
+      scrollIntoView: E === x.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: v.activityList,
         children: w.map(e => (0, r.jsx)("li", {

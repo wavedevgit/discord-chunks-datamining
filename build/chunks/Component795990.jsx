@@ -1,7 +1,7 @@
 /** Chunk was on 29458 **/
 /** chunk id: 795990, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => x
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -118,7 +118,7 @@ function y(e) {
   })
 }
 
-function O() {
+function x() {
   return (0, Chunk255367.jsxs)("div", {
     className: Chunk949237.empty,
     children: [(0, Chunk255367.jsxs)("div", {

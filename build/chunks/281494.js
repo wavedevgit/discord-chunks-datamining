@@ -97,8 +97,8 @@ let m = () => (Chunk570140.Z.dispatch({
     recipient_status: r,
     has_eligible_friends: e.body.has_eligible_friends
   })
-}, () => {
-  Chunk570140.Z.dispatch({
+}, e => {
+  (null == e ? true : e.status) !== 404 && i.Z.dispatch({
     type: "BILLING_REFERRALS_REMAINING_FETCH_FAIL"
   })
 }));

@@ -87,7 +87,7 @@ function en(e) {
     messageId: ei,
     roleId: eo,
     showGuildProfile: em
-  }), eO = l.useRef(null), ex = (0, s.Z)(eO), [eh, ev] = l.useState(false), e_ = (0, N.$m)(), eI = (0, a.q_F)({
+  }), ex = l.useRef(null), eO = (0, s.Z)(ex), [eh, ev] = l.useState(false), e_ = (0, N.$m)(), eI = (0, a.q_F)({
     opacity: +(null != e_.interactionType),
     config: {
       duration: 150
@@ -101,9 +101,9 @@ function en(e) {
     {
       relationshipType: eZ,
       originApplicationId: eN
-    } = (0, o.cj)([x.Z], () => ({
-      relationshipType: x.Z.getRelationshipType(n.id),
-      originApplicationId: x.Z.getOriginApplicationId(n.id)
+    } = (0, o.cj)([O.Z], () => ({
+      relationshipType: O.Z.getRelationshipType(n.id),
+      originApplicationId: O.Z.getOriginApplicationId(n.id)
     })),
     eS = (0, o.e7)([h.Z], () => h.Z.hidePersonalInformation),
     ew = null == eE ? true : eE.getBannerURL({
@@ -199,7 +199,7 @@ function en(e) {
                   className: et.toast
                 }), (0, r.jsxs)("div", {
                   className: et.profile,
-                  ref: (null == eE ? true : eE.profileEffectId) != null ? eO : true,
+                  ref: (null == eE ? true : eE.profileEffectId) != null ? ex : true,
                   children: [(0, r.jsxs)("div", {
                     className: et.profileHeader,
                     children: [(0, r.jsx)(A.Z, {
@@ -280,7 +280,7 @@ function en(e) {
                           color: "currentColor"
                         }),
                         className: et.profileBanner,
-                        children: (0, r.jsx)(O.n, {
+                        children: (0, r.jsx)(x.n, {
                           userId: n.id,
                           variant: "text-sm/normal"
                         })
@@ -364,7 +364,7 @@ function en(e) {
                     })]
                   }), (null == eE ? true : eE.profileEffectId) != null && (0, r.jsx)(y.Z, {
                     profileEffectId: null == eE ? true : eE.profileEffectId,
-                    isHovering: ex
+                    isHovering: eO
                   })]
                 }), (0, r.jsx)(K.Z, {
                   user: n,

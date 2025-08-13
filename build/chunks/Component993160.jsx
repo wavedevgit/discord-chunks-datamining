@@ -25,15 +25,15 @@ function b(e) {
     channelId: g,
     displayProfile: j,
     relationshipType: y,
-    onClose: O
+    onClose: x
   } = e, {
-    newestAnalyticsLocation: x
+    newestAnalyticsLocation: O
   } = (0, o.ZP)(), h = (0, a.Z)({
     user: t,
     guildId: b,
     channelId: g,
     displayProfile: j,
-    onClose: O
+    onClose: x
   }), {
     gameFriends: v,
     hasOutgoingPendingGameFriends: _,
@@ -45,9 +45,9 @@ function b(e) {
     children: [(0, r.jsx)(c.Z, {
       user: t,
       guildId: b,
-      onClose: O
+      onClose: x
     }), (0, r.jsx)(u.Z, {
-      onClose: O
+      onClose: x
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
@@ -94,7 +94,7 @@ function b(e) {
       relationshipType: y,
       shouldShowTooltip: true,
       themeColor: "secondary",
-      analyticsLocation: x
+      analyticsLocation: O
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
@@ -111,7 +111,7 @@ function b(e) {
     }), (0, r.jsx)(f.k9, {
       type: "icon",
       user: t,
-      analyticsLocation: x,
+      analyticsLocation: O,
       themeColor: "secondary",
       gameFriends: v,
       tooltipPosition: "top",
@@ -130,7 +130,7 @@ function b(e) {
     children: [(0, r.jsx)(f.Z7, {
       type: "text",
       userId: t.id,
-      analyticsLocation: x,
+      analyticsLocation: O,
       color: l.zx.Colors.BRAND,
       autoFocus: true
     }), (0, r.jsx)(s.Z, {

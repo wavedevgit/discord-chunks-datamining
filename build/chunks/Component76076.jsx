@@ -55,11 +55,11 @@ let g = {
     let {
       className: t,
       onAutoHide: n
-    } = e, i = (0, u.be)(), f = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), [p, b] = l.useState(false), [y, O] = l.useState(null);
+    } = e, i = (0, u.be)(), f = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), [p, b] = l.useState(false), [y, x] = l.useState(null);
     l.useEffect(() => {
-      null !== i ? (b(true), O(g[i]), s.uvj.announce(g[i].message)) : b(false)
+      null !== i ? (b(true), x(g[i]), s.uvj.announce(g[i].message)) : b(false)
     }, [i]);
-    let x = (0, s.Yzy)(p, {
+    let O = (0, s.Yzy)(p, {
       from: {
         transform: f ? "translateY(0)" : "translateY(-12px)",
         opacity: 0
@@ -87,7 +87,7 @@ let g = {
         return () => clearTimeout(e)
       }
     }, [p, n]), (0, r.jsx)(r.Fragment, {
-      children: x((e, n) => n && null !== y && (0, r.jsx)(a.animated.div, {
+      children: O((e, n) => n && null !== y && (0, r.jsx)(a.animated.div, {
         className: o()(t, m.toastContainer),
         style: e,
         children: (0, r.jsx)(j, function(e) {

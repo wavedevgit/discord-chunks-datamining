@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk889080 = require("./889080.js"),
   Chunk860130 = require("./860130.js");
 
-function x(e) {
+function O(e) {
   let {
     section: t,
     subsection: n,
@@ -105,7 +105,7 @@ function h(e) {
     })
   }, [I, Z]);
   return P ? (0, r.jsx)("div", {
-    className: O.container,
+    className: x.container,
     children: (0, r.jsxs)("div", {
       className: y.empty,
       children: [(0, r.jsx)("div", {
@@ -116,9 +116,9 @@ function h(e) {
       })]
     })
   }) : (0, r.jsxs)("div", {
-    className: O.container,
+    className: x.container,
     children: [(0, r.jsx)(o.n, {
-      className: O.tabBar,
+      className: x.tabBar,
       type: "top",
       selectedItem: E,
       onItemSelect: N,
@@ -128,7 +128,7 @@ function h(e) {
           text: n
         } = e;
         return (0, r.jsx)(o.n.Item, {
-          className: O.tabBarItem,
+          className: x.tabBarItem,
           id: t,
           "aria-label": n,
           children: (0, r.jsx)(a.Text, {
@@ -137,7 +137,7 @@ function h(e) {
           })
         }, t)
       })
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(O, {
       items: b,
       section: E,
       subsection: T,

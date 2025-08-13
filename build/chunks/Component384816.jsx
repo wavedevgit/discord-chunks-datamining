@@ -44,12 +44,12 @@ function I(e) {
     children: [(null == I ? true : I.bio) != null && (null == I ? true : I.bio) !== "" && !S && (0, r.jsx)(b.Z, {
       userBio: I.bio,
       setLineClamp: false
-    }), (null == I ? true : I.guildId) != null && (0, r.jsx)(x.Z, {
+    }), (null == I ? true : I.guildId) != null && (0, r.jsx)(O.Z, {
       user: t,
       currentUser: n,
       guildId: I.guildId,
       scrollIntoView: P === h.Tb.ROLES
-    }), t.isProvisional && (0, r.jsx)(O.Z, {
+    }), t.isProvisional && (0, r.jsx)(x.Z, {
       heading: v.intl.string(v.t.Iyka0d),
       headingIcon: (0, r.jsx)(i.Mgn, {
         size: "xxs",
@@ -59,19 +59,19 @@ function I(e) {
       children: (0, r.jsx)(c.n, {
         userId: t.id
       })
-    }), N.length > 0 && (0, r.jsx)(O.Z, {
+    }), N.length > 0 && (0, r.jsx)(x.Z, {
       heading: v.intl.string(v.t["Uv/eT0"]),
       children: (0, r.jsx)(j.Z, {
         applicationIds: N
       })
-    }), (0, r.jsx)(O.Z, {
+    }), (0, r.jsx)(x.Z, {
       heading: v.intl.string(v.t.a6XYDw),
       children: (0, r.jsx)(y.Z, {
         userId: t.id,
         guildId: null == I ? true : I.guildId,
         tooltipDelay: h.vB
       })
-    }), A.length > 0 && (0, r.jsx)(O.Z, {
+    }), A.length > 0 && (0, r.jsx)(x.Z, {
       heading: v.intl.string(v.t["3fe7U1"]),
       scrollIntoView: P === h.Tb.CONNECTIONS,
       children: (0, r.jsx)(g.ZP, {
@@ -80,7 +80,7 @@ function I(e) {
         userId: t.id,
         locale: w
       })
-    }), C.length > 0 && (0, r.jsx)(O.Z, {
+    }), C.length > 0 && (0, r.jsx)(x.Z, {
       heading: v.intl.string(v.t.PHjkRE),
       children: C.map(e => (0, r.jsx)(g.tH, {
         className: _.appsConnections,
@@ -93,7 +93,7 @@ function I(e) {
         },
         selectedGuildId: null != Z ? Z : true
       }, e.application.id))
-    }), (0, r.jsx)(O.Z, {
+    }), (0, r.jsx)(x.Z, {
       heading: v.intl.string(v.t["mQKv+v"]),
       scrollIntoView: P === h.Tb.NOTE,
       children: (0, r.jsx)(o.Z, {

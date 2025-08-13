@@ -21,8 +21,8 @@ function u(e) {
     mutualGuilds: f
   } = (0, i.Z)(t), p = null == f ? true : f.length, m = (0, l.Z)(t), b = (0, r.k)({
     location: "useUserProfileModalV2TabBarItems"
-  }), g = (0, o.Z)(t.id), j = [], y = t.id === (null == n ? true : n.id), O = g.length > 0;
-  return b && (O || y) && j.push({
+  }), g = (0, o.Z)(t.id), j = [], y = t.id === (null == n ? true : n.id), x = g.length > 0;
+  return b && (x || y) && j.push({
     text: d.intl.string(d.t.laViw8),
     section: s.oh.WIDGETS,
     subsection: true

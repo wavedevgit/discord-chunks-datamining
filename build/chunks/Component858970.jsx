@@ -54,7 +54,7 @@ function I(e) {
     openedAt: Z,
     onHide: N,
     sourceAnalyticsLocations: S = []
-  } = e, w = n === x.ME ? true : n, A = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
+  } = e, w = n === O.ME ? true : n, A = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: C
   } = (0, c.ZP)([...S, A ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), D = (0, f.ZB)({
     layout: "MODAL_V2",
@@ -90,7 +90,7 @@ function I(e) {
         children: (0, r.jsxs)(g.Z, {
           user: t,
           displayProfile: R,
-          themeType: O.lY.MODAL_V2,
+          themeType: x.lY.MODAL_V2,
           children: [(0, r.jsx)("div", {
             className: v.background
           }), (0, r.jsxs)("div", {

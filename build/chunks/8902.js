@@ -2,6 +2,7 @@
 /** chunk id: 8902, original params: e,t,n (module,exports,require) **/
 module.exports = {
   tagListContainer: "tagListContainer__25a50",
+  tagList: "tagList__25a50",
   tag: "tag__25a50",
   buttonContainer: "buttonContainer__25a50",
   expandButton: "expandButton__25a50 tag__25a50",

@@ -78,7 +78,7 @@ function S(e) {
               })
             })
           }),
-          children: (0, r.jsxs)(x.Z, {
+          children: (0, r.jsxs)(O.Z, {
             user: t,
             displayProfile: M,
             themeType: I.lY.MODAL,
@@ -138,7 +138,7 @@ function S(e) {
                     userId: t.id,
                     userBio: null == M ? true : M.bio,
                     setLineClamp: false
-                  }), (0, r.jsx)(O.Z, {
+                  }), (0, r.jsx)(x.Z, {
                     heading: E.intl.string(E.t["A//N4u"]),
                     children: (0, r.jsx)(y.Z, {
                       userId: t.id,
