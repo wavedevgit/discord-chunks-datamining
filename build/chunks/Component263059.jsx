@@ -2,7 +2,7 @@
 /** chunk id: 263059, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 }), require("./35282.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -58,14 +58,14 @@ function M(e) {
   return e
 }
 
-function k(e) {
+function j(e) {
   var t;
   let {
     user: n,
     currentUser: o,
     activity: x,
-    profileGuildId: k,
-    className: j,
+    profileGuildId: j,
+    className: k,
     onClose: U
   } = e, G = (0, p.Dt)(), B = (0, p.Dt)(), Z = i.useRef(null), {
     themeType: F
@@ -144,7 +144,7 @@ function k(e) {
       user: n,
       children: (0, r.jsx)(O.Z, {
         user: n,
-        guildId: k,
+        guildId: j,
         themeType: F,
         sourceId: et,
         sourceDetails: null == Y ? (0, b.Z)(x) : null,
@@ -171,7 +171,7 @@ function k(e) {
           }),
           children: (0, r.jsxs)(A.Z, {
             ref: Q,
-            className: a()(j, {
+            className: a()(k, {
               [L.hoisted]: en
             }),
             onAction: X,

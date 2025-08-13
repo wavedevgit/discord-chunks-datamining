@@ -57,7 +57,7 @@ function C(e) {
   }), {
     product: x,
     purchase: M
-  } = (0, d.Z)(null == D ? true : D.skuId), k = y.ZP.canUseCollectibles(t), j = i.useRef(null), U = (0, _.Z)(l), G = (0, O.sr)(D, true === R ? w : R), B = e => {
+  } = (0, d.Z)(null == D ? true : D.skuId), j = y.ZP.canUseCollectibles(t), k = i.useRef(null), U = (0, _.Z)(l), G = (0, O.sr)(D, true === R ? w : R), B = e => {
     L(e), null != e && U(e)
   }, Z = () => {
     P(D), f()
@@ -67,12 +67,12 @@ function C(e) {
       analyticsSource: s.Z.EDIT_AVATAR_DECORATION_MODAL,
       initialProductSkuId: e
     })
-  }, [l, f]), V = (0, p.M)(), H = V && (0, u.G1)(x), Y = () => null != M && (!(0, u.qS)(M) || k) || null === D ? (0, r.jsx)(a.zxk, {
+  }, [l, f]), V = (0, p.M)(), H = V && (0, u.G1)(x), Y = () => null != M && (!(0, u.qS)(M) || j) || null === D ? (0, r.jsx)(a.zxk, {
     variant: "primary",
     text: A.intl.string(A.t.Jh8fJy),
     onClick: Z,
     disabled: G
-  }) : null == M && (k || !(0, u.G1)(x)) ? (0, r.jsx)(a.zxk, {
+  }) : null == M && (j || !(0, u.G1)(x)) ? (0, r.jsx)(a.zxk, {
     variant: "primary",
     onClick: () => F(null == x ? true : x.skuId),
     text: A.intl.string(A.t.fYfGgI)
@@ -104,7 +104,7 @@ function C(e) {
         user: t,
         guild: C,
         pendingAvatarDecoration: D,
-        selectedAvatarDecorationRef: j,
+        selectedAvatarDecorationRef: k,
         onSelect: B,
         onOpenShop: F
       }), (0, r.jsx)(v.Z, {

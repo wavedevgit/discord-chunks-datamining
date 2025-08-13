@@ -82,10 +82,10 @@ function P(e) {
       onMouseEnter: x,
       onMouseLeave: M
     }
-  } = (0, s.j)(), k = t.getGuildId(), {
-    mute: j,
+  } = (0, s.j)(), j = t.getGuildId(), {
+    mute: k,
     suppress: U
-  } = (0, E.Z)(t), G = (0, o.e7)([b.Z], () => b.Z.isDeaf()), B = j || U || G, Z = (0, h.sR)({
+  } = (0, E.Z)(t), G = (0, o.e7)([b.Z], () => b.Z.isDeaf()), B = k || U || G, Z = (0, h.sR)({
     isSoundboardButtonDisabled: B
   }), [F, V] = (0, _.cv)(Z), {
     analyticsLocations: H
@@ -97,16 +97,16 @@ function P(e) {
   } = (0, p.Z)(R, C);
 
   function q() {
-    return j ? I.intl.string(I.t["Ox4/zc"]) : U ? I.intl.string(I.t["+YBKYG"]) : G ? I.intl.string(I.t.X1lQlp) : true
+    return k ? I.intl.string(I.t["Ox4/zc"]) : U ? I.intl.string(I.t["+YBKYG"]) : G ? I.intl.string(I.t.X1lQlp) : true
   }
 
   function X(e) {
-    null != k && (0, c.jW)(e, async () => {
+    null != j && (0, c.jW)(e, async () => {
       let {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
       return t => (0, r.jsx)(e, N(S({
-        guildId: k,
+        guildId: j,
         sourceAnalyticsLocations: H
       }, t), {
         onInteraction: (0, f.u)("SoundboardContextMenu", w)
@@ -138,7 +138,7 @@ function P(e) {
           onMouseEnter: K,
           onMouseLeave: z,
           children: (0, r.jsx)(g.Z, {
-            guildId: k,
+            guildId: j,
             channel: t,
             onClose: n,
             gridNotice: F === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(m.o, {

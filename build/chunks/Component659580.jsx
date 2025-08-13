@@ -52,8 +52,8 @@ function S(e) {
       location_stack: M
     }
   });
-  let k = (0, b.Z)(L),
-    j = (0, f.M)({
+  let j = (0, b.Z)(L),
+    k = (0, f.M)({
       deviceType: v.h7.AUDIO_INPUT,
       analyticsLocations: M,
       asSubmenu: w
@@ -81,7 +81,7 @@ function S(e) {
       onClose: t,
       navId: "audio-device-context",
       "aria-label": I.intl.string(I.t.ZR1Ss7),
-      children: [S && j, n && U, A && B, !w && N && G !== O._.STUDIO ? (0, r.jsx)(s.kSQ, {
+      children: [S && k, n && U, A && B, !w && N && G !== O._.STUDIO ? (0, r.jsx)(s.kSQ, {
         label: I.intl.string(I.t["pS+K2N"]),
         children: Z
       }) : null, (0, r.jsxs)(s.kSQ, {
@@ -101,7 +101,7 @@ function S(e) {
             analyticsLocations: M
           }),
           disabled: G === O._.STUDIO
-        }) : null, k]
+        }) : null, j]
       })]
     })
   })

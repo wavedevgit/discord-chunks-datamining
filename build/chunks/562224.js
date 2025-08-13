@@ -95,9 +95,9 @@ async function A(e, t) {
   let {
     preset: x,
     resolution: M,
-    fps: k,
-    soundshareEnabled: j
-  } = l.Z.getState(), U = null != (g = null == t ? true : t.preset) ? g : x, [G, B] = null != (y = (0, m.Z)(U, C, D)) ? y : [], Z = null != (v = null != G ? G : null == t ? true : t.resolution) ? v : M, F = null != (T = null != B ? B : null == t ? true : t.fps) ? T : k, V = null != (A = null == t ? true : t.previewDisabled) ? A : s.I0.getSetting(), H = null != (N = null == t ? true : t.soundshareEnabled) ? N : j;
+    fps: j,
+    soundshareEnabled: k
+  } = l.Z.getState(), U = null != (g = null == t ? true : t.preset) ? g : x, [G, B] = null != (y = (0, m.Z)(U, C, D)) ? y : [], Z = null != (v = null != G ? G : null == t ? true : t.resolution) ? v : M, F = null != (T = null != B ? B : null == t ? true : t.fps) ? T : j, V = null != (A = null == t ? true : t.previewDisabled) ? A : s.I0.getSetting(), H = null != (N = null == t ? true : t.soundshareEnabled) ? N : k;
   return (0, h.Z)(U, Z, F, C, D, P) || (U = E.tI.PRESET_VIDEO, Z = E.LY.RESOLUTION_720, F = E.ws.FPS_30), (0, i.Rc)({
     preset: U,
     resolution: Z,

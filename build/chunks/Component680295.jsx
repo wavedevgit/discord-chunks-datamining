@@ -80,10 +80,10 @@ let v = e => {
         r > e && (e = r), n.loop && n.start < t && (t = n.start)
       }), A(t), C(e)
     }, [C, I]);
-    let [k, j] = i.useState(false);
+    let [j, k] = i.useState(false);
     return i.useEffect(() => {
-      true === c || s || (D(), w(0)), !s && k && x.current && (D(), w(0)), o && s && !x.current && (L(), g.animationType === f.Q.PERSISTENT ? w(u === f.j.FromStart ? 0 : S) : w(0))
-    }, [s, k, S, o, D, L, x, g.animationType, c, u]), (0, r.jsx)("div", {
+      true === c || s || (D(), w(0)), !s && j && x.current && (D(), w(0)), o && s && !x.current && (L(), g.animationType === f.Q.PERSISTENT ? w(u === f.j.FromStart ? 0 : S) : w(0))
+    }, [s, j, S, o, D, L, x, g.animationType, c, u]), (0, r.jsx)("div", {
       ref: v,
       className: a()(b.profileEffects, {
         [b.hovered]: s && l
@@ -114,8 +114,8 @@ let v = e => {
             animationType: g.animationType,
             ticking: x.current,
             time: P,
-            hasPlayedThrough: k,
-            setHasPlayedThrough: j,
+            hasPlayedThrough: j,
+            setHasPlayedThrough: k,
             urlQueryString: p,
             maxLoops: n,
             loopEnd: N,

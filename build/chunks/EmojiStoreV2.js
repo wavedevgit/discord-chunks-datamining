@@ -183,7 +183,7 @@ function e_(e) {
     },
     lookupKey: e => {
       var t;
-      return null != (t = j.ZP.getByName(e)) ? t : ec(e)
+      return null != (t = k.ZP.getByName(e)) ? t : ec(e)
     },
     afterCompute: () => {
       e(), er = [...q], o().some(ei, e => e.usableEmojis.length > 0) || er.splice(q.indexOf(F.UX.CUSTOM), 1)
@@ -240,13 +240,13 @@ class ep {
   }
   getFrequentlyUsedEmojisWithoutFetchingLatest() {
     if (this.ensureDisambiguated(), null != this.frequentlyUsed) return this.frequentlyUsed;
-    let e = eh.frequently.map(e => null != e.id ? this.getById(e.id) : j.ZP.getByName(e.name)).filter(Chunk823379.lm),
+    let e = eh.frequently.map(e => null != e.id ? this.getById(e.id) : k.ZP.getByName(e.name)).filter(Chunk823379.lm),
       t = (0, Chunk856985.Z)(module);
     return this.frequentlyUsed = [...exports.values()], this.frequentlyUsed
   }
   getFrequentlyUsedReactionEmojisWithoutFetchingLatest() {
     if (this.ensureDisambiguated(), null != this.frequentlyUsedReactionEmojis) return this.frequentlyUsedReactionEmojis;
-    let e = em.frequently.map(e => null != e.id ? this.getById(e.id) : j.ZP.getByName(e.name)).filter(Chunk823379.lm),
+    let e = em.frequently.map(e => null != e.id ? this.getById(e.id) : k.ZP.getByName(e.name)).filter(Chunk823379.lm),
       t = (0, Chunk856985.Z)(module);
     return this.frequentlyUsedReactionEmojis = [...exports.values()], this.frequentlyUsedReactionEmojis
   }
@@ -258,7 +258,7 @@ class ep {
     };
     let n = (null != (t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.favoriteEmojis) ? true : module.emojis) ? exports : []).map(e => {
         var t;
-        return null != (t = this.getById(e)) ? t : j.ZP.getByName(e)
+        return null != (t = this.getById(e)) ? t : k.ZP.getByName(e)
       }).filter(Chunk823379.lm),
       r = (0, Chunk856985.Z)(require);
     return this.favorites = [...r.values()], this.favoriteNamesAndIds = new Set(r.keys()), {
@@ -289,7 +289,7 @@ class ep {
       if (null == n && null == r) return ee;
       let i = (null != (t = null == n ? true : n.emojiIds) ? t : r).map(e => {
           var t;
-          return null != (t = this.getById(e)) ? t : j.ZP.getByName(j.ZP.convertSurrogateToName(e, false))
+          return null != (t = this.getById(e)) ? t : k.ZP.getByName(k.ZP.convertSurrogateToName(e, false))
         }),
         o = [];
       i.forEach(e => {
@@ -360,7 +360,7 @@ class ep {
         favoriteNamesAndIds: n
       } = this.rebuildFavoriteEmojisWithoutFetchingLatest();
       if (null != e.id) return n.has(e.id);
-      let r = null != (t = j.ZP.convertSurrogateToBase(e.surrogates)) ? t : e;
+      let r = null != (t = k.ZP.convertSurrogateToBase(e.surrogates)) ? t : e;
       return n.has(r.name)
     }), this.guildId = e
   }
@@ -443,9 +443,9 @@ function eR(e) {
 
 function eP(e) {
   if (!e.optimistic) returnfalse;
-  let t = null != e.emoji.id && "0" !== e.emoji.id ? e.emoji : j.ZP.getByName(j.ZP.convertSurrogateToName(e.emoji.name, false));
+  let t = null != e.emoji.id && "0" !== e.emoji.id ? e.emoji : k.ZP.getByName(k.ZP.convertSurrogateToName(e.emoji.name, false));
   if (null == t) returnfalse;
-  ej([t]), ek([t])
+  ek([t]), ej([t])
 }
 
 function ew(e, t) {
@@ -455,11 +455,11 @@ function ew(e, t) {
     location: "populateInitialFrecencyData"
   }, {
     autoTrackExposure: true
-  }), r = (0, k.E2)({
+  }), r = (0, j.E2)({
     location: "populateInitialFrecencyData",
     autoTrackExposure: true
   });
-  if (k.Xb.trackExposure({
+  if (j.Xb.trackExposure({
       location: "populateInitialFrecencyData"
     }), o().isEmpty(e) && o().isEmpty(X.pendingUsages) && v.Z.hasLoaded(V.yP.FRECENCY_AND_FAVORITES_SETTINGS))
     for (let e of ["thumbsup", "thumbsup", "eyes", "eyes", "laughing", "laughing", "watermelon", "fork_and_knife", "yum", "weary", "tired_face", "poop", "100"]) eh.track(e);
@@ -508,10 +508,10 @@ function eM(e) {
   let {
     emojiUsed: t
   } = e;
-  ek(t)
+  ej(t)
 }
 
-function ek(e) {
+function ej(e) {
   if (null == e) returnfalse;
   for (let r of e) {
     var t, n;
@@ -525,7 +525,7 @@ function ek(e) {
   return r && (3 === en || 1 === en) && eh.compute(), r
 }
 
-function ej(e) {
+function ek(e) {
   if (null == e) returnfalse;
   for (let r of e) {
     var t, n;
@@ -636,11 +636,11 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
       }, {
         autoTrackExposure: true
       }),
-      l = (0, k.E2)({
+      l = (0, j.E2)({
         location: "getSearchResultsOrder",
         autoTrackExposure: true
       });
-    if (k.Xb.trackExposure({
+    if (j.Xb.trackExposure({
         location: "getSearchResultsOrder"
       }), e.length > 0) {
       let t = RegExp("^".concat(a), "i"),

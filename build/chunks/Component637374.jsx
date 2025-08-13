@@ -336,13 +336,13 @@ class K extends Chunk73800.Component {
       let {
         libraryApplication: t
       } = this.props;
-      e.preventDefault(), null != t && t.isHidden() ? (0, I.uL)(j.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, I.uL)(j.Z5c.APPLICATION_LIBRARY, {
+      e.preventDefault(), null != t && t.isHidden() ? (0, I.uL)(k.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, I.uL)(k.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : true
         }
       })
     }), Z(this, "handleVerificationClick", e => {
-      e.stopPropagation(), e.preventDefault(), f.Z.open(j.oAB.ACCOUNT)
+      e.stopPropagation(), e.preventDefault(), f.Z.open(k.oAB.ACCOUNT)
     }), Z(this, "handleAccept", e => {
       let {
         channelId: t,
@@ -351,13 +351,13 @@ class K extends Chunk73800.Component {
         type: i,
         giftInfo: o
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), w.default.track(j.rMx.OPEN_MODAL, {
+      e.preventDefault(), e.stopPropagation(), w.default.track(k.rMx.OPEN_MODAL, {
         type: "gift_accept",
         location: H(F({}, this.analyticsLocation), {
-          object: j.qAy.BUTTON_CTA
+          object: k.qAy.BUTTON_CTA
         })
       });
-      let a = i !== j.uaV.CUSTOM_GIFT ? true : r;
+      let a = i !== k.uaV.CUSTOM_GIFT ? true : r;
       (0, y.V)({
         processedCode: n,
         channelContext: t,
@@ -368,12 +368,12 @@ class K extends Chunk73800.Component {
       let {
         giftCode: t
       } = this.props;
-      null != t && t.isSubscription && (e.preventDefault(), f.Z.open(j.oAB.PREMIUM))
+      null != t && t.isSubscription && (e.preventDefault(), f.Z.open(k.oAB.PREMIUM))
     }), Z(this, "handleClaimPromotion", e => {
       var t;
       e.stopPropagation(), e.preventDefault();
       let n = null == (t = this.props.giftCode) ? true : t.code;
-      null != n && window.open(j.Z5c.BILLING_PROMOTION_REDEMPTION(n))
+      null != n && window.open(k.Z5c.BILLING_PROMOTION_REDEMPTION(n))
     }), Z(this, "renderCustomGiftBox", e => {
       let {
         useReducedMotion: t,

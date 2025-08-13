@@ -449,15 +449,15 @@ function eM(e) {
       if (e.hidden) return;
       ei.gamesSeen.unshift(eE(e))
     }
-  }), ei.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), eP(), w.Z.setRecentGames(ek().map(e => ew(e, e3, A.Z, N.Z))))
+  }), ei.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), eP(), w.Z.setRecentGames(ej().map(e => ew(e, e3, A.Z, N.Z))))
 }
 
-function ek() {
+function ej() {
   let e = a().values(ei.gameOverrides);
   return ei.gamesSeen.filter(e => true === ei.gameOverrides[eI(e)]).concat(module)
 }
 
-function ej(e, t) {
+function ek(e, t) {
   if (true === t) {
     let t = x.ZP.getDiscordUtils();
     if (null != t && null != t.getWindowHandleFromPid) {
@@ -470,7 +470,7 @@ function ej(e, t) {
 }
 
 function eU() {
-  ee = ($ = $.map(e => e.distributor === j.GQo.ROBLOX ? (0, T.ON)(e, S.Z.getCurrentSubgameInfo()) : e)).length > 0 ? $[0] : null, eM($)
+  ee = ($ = $.map(e => e.distributor === k.GQo.ROBLOX ? (0, T.ON)(e, S.Z.getCurrentSubgameInfo()) : e)).length > 0 ? $[0] : null, eM($)
 }
 
 function eG(e) {
@@ -540,7 +540,7 @@ function eq(e) {
     let t = z.some(t => e.cleanedExePath.includes(t));
     return t && ed.add(e.pid), t
   }).map(e => e.cleanedExePath);
-  t.length > 0 && R.default.track(j.rMx.GAME_DETECTION_DEBUGGING_KEYWORD_MATCH, {
+  t.length > 0 && R.default.track(k.rMx.GAME_DETECTION_DEBUGGING_KEYWORD_MATCH, {
     keywords: z,
     paths: t,
     debugging_level: e_,
@@ -564,7 +564,7 @@ function eQ(e) {
   let {
     game: t
   } = e, n = eC(t);
-  ei.enableDetection[eI(t)] = !n, eP(), $.length > 0 && $.some(e => e.distributor === j.GQo.ROBLOX) && eU(), R.default.track(j.rMx.USER_SETTINGS_GAME_DETECTION_TOGGLE, {
+  ei.enableDetection[eI(t)] = !n, eP(), $.length > 0 && $.some(e => e.distributor === k.GQo.ROBLOX) && eU(), R.default.track(k.rMx.USER_SETTINGS_GAME_DETECTION_TOGGLE, {
     enabled: !n
   })
 }
@@ -645,7 +645,7 @@ function e1() {
   }), e = module.filter(e => null != e.executables && e.executables.length > 0), Chunk998502.ZP.setObservedGamesCallback(module, e => {
     let n = [],
       i = {};
-    e = e.filter(e => ((null == e.distributor || "" === e.distributor) && e.id === I.eB && (e.distributor = j.GQo.ROBLOX), e.isLauncher = e.isLauncher || t.has(e.exeName), e.isLauncher && null != e.id && (i[e.id] = e), e.windowHandle = ej(e.pid, e.windowHandle), null == ey(e) || (n.push(e), false)));
+    e = e.filter(e => ((null == e.distributor || "" === e.distributor) && e.id === I.eB && (e.distributor = k.GQo.ROBLOX), e.isLauncher = e.isLauncher || t.has(e.exeName), e.isLauncher && null != e.id && (i[e.id] = e), e.windowHandle = ek(e.pid, e.windowHandle), null == ey(e) || (n.push(e), false)));
     let o = n.filter(eO).length;
     o !== es && (es = o, d.Z.dispatch({
       type: "RUNNING_STREAMER_TOOLS_CHANGE",
@@ -715,7 +715,7 @@ class e2 extends(i = Chunk442837.ZP.Store) {
   }
   getGamesSeen(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-      n = ek();
+      n = ej();
     if (e) {
       let e = this.getVisibleGame();
       if (null != e) {

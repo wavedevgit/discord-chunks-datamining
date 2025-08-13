@@ -39,8 +39,8 @@ let p = [{
     },
     chatGiftIcon: {
       trinketsAnimation: {
-        getAnimationData: () => require("./119452.js"),
-        getGlowAnimationData: () => require("./431947.js")
+        getAnimationData: () => require.e("18950").then(require.bind(require, 94613)),
+        getGlowAnimationData: () => require.e("38555").then(require.bind(require, 220590))
       }
     },
     firstTimeNotice: {

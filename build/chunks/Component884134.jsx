@@ -145,7 +145,7 @@ function z(e) {
     children: [(0, r.jsxs)("div", {
       className: U.badgeAndCloseRow,
       children: [(0, r.jsx)(_.lBU, {
-        text: j.intl.string(j.t.oW0eUV)
+        text: k.intl.string(k.t.oW0eUV)
       }), (0, r.jsx)(Y, {
         markAsDismissed: t
       })]
@@ -153,12 +153,12 @@ function z(e) {
       className: U.coachmarkHeaderTextContainer,
       children: [(0, r.jsx)(_.X6q, {
         variant: "heading-lg/extrabold",
-        children: j.intl.string(k.default["23QUzs"])
+        children: k.intl.string(j.default["23QUzs"])
       }), (0, r.jsx)(_.Text, {
         className: U.subtitle,
         variant: "text-sm/medium",
         color: "text-muted",
-        children: j.intl.string(n ? k.default.TRCE4u : k.default["UV/Vtr"])
+        children: k.intl.string(n ? j.default.TRCE4u : j.default["UV/Vtr"])
       })]
     })]
   })
@@ -188,8 +188,8 @@ function q(e) {
     children: [(0, r.jsxs)("div", {
       className: U.controlLabelContainer,
       children: [(0, r.jsx)(_.Text, {
-        variant: "text-sm/medium",
-        children: j.intl.string(k.default.dZkwg4)
+        variant: "text-md/medium",
+        children: k.intl.string(j.default.dZkwg4)
       }), (0, r.jsx)("input", {
         type: "text",
         value: l,
@@ -235,8 +235,8 @@ function X(e) {
     children: [(0, r.jsxs)("div", {
       className: U.controlLabelContainer,
       children: [(0, r.jsx)(_.Text, {
-        variant: "text-sm/medium",
-        children: j.intl.string(k.default.xlXkaG)
+        variant: "text-md/medium",
+        children: k.intl.string(j.default.xlXkaG)
       }), (0, r.jsx)("input", {
         type: "text",
         value: s,
@@ -269,15 +269,12 @@ function Q() {
       chassisMixAmount: exports.intensity
     })
   }, []);
-  return (0, Chunk255367.jsx)(Chunk481060.ua7, {
+  return (0, Chunk255367.jsx)(Chunk680018.z, {
+    variant: "secondary",
+    onClick: module,
+    icon: Chunk481060.$2U,
     text: Chunk388032.intl.string(Chunk671147.default.c9MBEB),
-    children: t => (0, r.jsx)(c.z, F(B({}, t), {
-      variant: "secondary",
-      onClick: e,
-      icon: _.$2U,
-      text: j.intl.string(k.default.c9MBEB),
-      fullWidth: true
-    }))
+    fullWidth: true
   })
 }
 
@@ -288,13 +285,13 @@ function J(e) {
     fullWidth: i
   } = e;
   return (0, r.jsx)(_.ua7, {
-    text: j.intl.string(k.default.SFyHIC),
+    text: k.intl.string(j.default.SFyHIC),
     shouldShow: n,
     children: e => (0, r.jsx)(c.z, F(B({}, e), {
       variant: "primary",
       onClick: t,
       disabled: n,
-      text: j.intl.string(j.t["1Qm829"]),
+      text: k.intl.string(k.t["1Qm829"]),
       fullWidth: i
     }))
   })
@@ -317,7 +314,7 @@ function $(e) {
         section: L.jXE.CUSTOM_THEMES_COACHMARK_FOOTER
       },
       textOptions: {
-        subscribeText: j.intl.string(j.t.JST6jo)
+        subscribeText: k.intl.string(k.t.JST6jo)
       },
       subscriptionTier: M.Si.TIER_2,
       showGradient: true,
@@ -341,7 +338,7 @@ function ee(e) {
     children: [(0, r.jsx)(d.A, {
       variant: "secondary",
       onClick: a,
-      text: j.intl.string(j.t["13/7kZ"])
+      text: k.intl.string(k.t["13/7kZ"])
     }), o ? (0, r.jsx)(J, {
       disabled: !n,
       onApply: t
@@ -355,7 +352,7 @@ function ee(e) {
         section: L.jXE.CUSTOM_THEMES_FOOTER
       },
       textOptions: {
-        textOverride: j.intl.string(j.t.pj0XBA)
+        textOverride: k.intl.string(k.t.pj0XBA)
       }
     })]
   })
@@ -409,14 +406,14 @@ function et(e) {
           children: [(0, r.jsx)(_.Text, {
             variant: "text-sm/semibold",
             color: "text-secondary",
-            children: j.intl.string(k.default.o2NfLC)
+            children: k.intl.string(j.default.o2NfLC)
           }), (0, r.jsx)(D.o, {})]
         }), (0, r.jsxs)("div", {
           className: U.section,
           children: [(0, r.jsx)(_.Text, {
             variant: "text-sm/semibold",
             color: "text-secondary",
-            children: j.intl.string(k.default.uSL2Gx)
+            children: k.intl.string(j.default.uSL2Gx)
           }), (0, r.jsx)(w.U, {
             onChange: e => {
               G(e), 0 === h.length && (0, C.lT)(h, e, I)
@@ -430,7 +427,7 @@ function et(e) {
           children: [(0, r.jsx)(_.Text, {
             variant: "text-sm/semibold",
             color: "text-secondary",
-            children: j.intl.string(k.default.F1t0c3)
+            children: k.intl.string(j.default.F1t0c3)
           }), h.length > 1 && (0, r.jsx)(q, {
             gradientAngle: v,
             setGradientAngle: L
@@ -445,7 +442,7 @@ function et(e) {
           children: [(0, r.jsx)(Q, {}), (0, r.jsx)(c.z, {
             variant: "secondary",
             onClick: H,
-            text: j.intl.string(j.t.yBZMsb),
+            text: k.intl.string(k.t.yBZMsb),
             fullWidth: true
           })]
         })]

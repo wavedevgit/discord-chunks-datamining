@@ -68,12 +68,12 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = 3;
+let k = 3;
 
 function U(e) {
   let {
@@ -81,7 +81,7 @@ function U(e) {
     guildId: n
   } = e, i = (0, c.Wu)([A.Z, N.Z], () => {
     let e = Date.now();
-    return l()(A.Z.getSpeakers()).map(e => N.Z.getParticipant(t, e)).filter(e => null != e && e.type === P.fO.USER && e.speaking && !(0, b.ZP)(e)).sortBy(t => -A.Z.getSpeakingDuration(t.user.id, e)).slice(0, j).value()
+    return l()(A.Z.getSpeakers()).map(e => N.Z.getParticipant(t, e)).filter(e => null != e && e.type === P.fO.USER && e.speaking && !(0, b.ZP)(e)).sortBy(t => -A.Z.getSpeakingDuration(t.user.id, e)).slice(0, k).value()
   });
   return 0 === i.length ? null : (0, r.jsx)(r.Fragment, {
     children: i.map((e, t) => (0, r.jsx)(u.ua7, {
@@ -90,7 +90,7 @@ function U(e) {
       text: w.intl.formatToPlainString(w.t.JjdizM, {
         username: e.user.username
       }),
-      children: o => (0, r.jsx)(S.ZP, k(x({}, o), {
+      children: o => (0, r.jsx)(S.ZP, j(x({}, o), {
         className: a()(D.speaker, {
           [D.last]: t === i.length - 1
         }),
@@ -123,7 +123,7 @@ function G(e) {
     hasParticipantsPanel: M
   } = (0, R.Z)({
     location: "ChannelCallHeaderToolbar"
-  }), j = !w && M && (t.isGuildVoice() || t.isGroupDM()), {
+  }), k = !w && M && (t.isGuildVoice() || t.isGroupDM()), {
     enabled: G,
     inInbox: B
   } = g.Z.useExperiment({
@@ -159,7 +159,7 @@ function G(e) {
       let {
         isShown: n
       } = t;
-      return (0, i.createElement)(T.Z, k(x({}, e), {
+      return (0, i.createElement)(T.Z, j(x({}, e), {
         buttonRef: o,
         isActive: n,
         count: A,
@@ -169,7 +169,7 @@ function G(e) {
     }
   }, "call-members-popout")), G && !B && Z.push((0, r.jsx)(E.Z, {
     className: D.button
-  }, "for-later")), j && Z.push((0, r.jsx)(T.Z, {
+  }, "for-later")), k && Z.push((0, r.jsx)(T.Z, {
     className: a()(D.button, {
       [D.lastButton]: n
     }),

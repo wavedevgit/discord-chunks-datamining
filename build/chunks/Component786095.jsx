@@ -79,10 +79,10 @@ function S(e, t) {
     return null != (e = w[I]) ? e : []
   }, [w]), x = 0 === L.length, M = n > L.length && !x;
   if (!i.useMemo(() => (0, u.ze)(t), [t]) || null == e || 0 === e.length || null == t) return null;
-  let k = e.split(" "),
-    j = k.length;
+  let j = e.split(" "),
+    k = j.length;
   try {
-    (0, s.km)(k, m.RH)
+    (0, s.km)(j, m.RH)
   } catch (e) {
     return null
   }
@@ -156,7 +156,7 @@ function S(e, t) {
   })), (0, r.jsx)(o.sNh, {
     id: "guild-automod-add-selection",
     label: g.intl.formatToPlainString(g.t.Kkjv1t, {
-      keywordCount: j
+      keywordCount: k
     }),
     onFocus: U,
     children: Z

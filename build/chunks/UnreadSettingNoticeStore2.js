@@ -82,7 +82,7 @@ function R() {
 
 function P() {
   return 0 !== A && (clearInterval(A), A = 0), Chunk9156.ZP.useNewNotifications && (A = setInterval(() => {
-    C() && j.emitChange()
+    C() && k.emitChange()
   }, 15 * Chunk70956.Z.Millis.SECOND)), false
 }
 
@@ -124,7 +124,7 @@ function M(e, t) {
   let n = u.ZP.getChannelOverrides(e)[t];
   return null != n && !!(null != n.message_notifications && n.message_notifications !== h.bL.NULL || null != n.flags && (0, f.EB)(n.flags, g.ic.UNREADS_ALL_MESSAGES | g.ic.UNREADS_ONLY_MENTIONS))
 }
-class k extends(r = Chunk442837.ZP.PersistedStore) {
+class j extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     null != e && (v.channels = e.channels), this.syncWith([u.ZP], P), this.waitFor(u.ZP, c.Z, s.Z)
   }
@@ -141,10 +141,10 @@ class k extends(r = Chunk442837.ZP.PersistedStore) {
     return null != t && null != t.guild_id && !!x(t) && (delete v.channels[e], I.add(e), (0, p.IG)(t.guild_id, t.id, m.i.ALL_MESSAGES), true)
   }
 }
-E(k, "displayName", "UnreadSettingNoticeStore2"), E(k, "persistKey", "UnreadSettingNoticeStore2");
-let j = new k(Chunk570140.Z, {
+E(j, "displayName", "UnreadSettingNoticeStore2"), E(j, "persistKey", "UnreadSettingNoticeStore2");
+let k = new j(Chunk570140.Z, {
     CHANNEL_SELECT: w,
     CONNECTION_OPEN: R,
     MESSAGE_CREATE: N
   }),
-  U = j
+  U = k

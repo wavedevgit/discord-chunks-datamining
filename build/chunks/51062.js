@@ -69,8 +69,8 @@ function v(e, t, n) {
     let n = _.default.getCurrentUser();
     return null != (t = null != P.guild_id && null != n ? null == (e = u.ZP.getMember(P.guild_id, n.id)) ? true : e.isPending : null) && t
   }), {
-    canMentionEveryone: k,
-    hidePersonalInformation: j
+    canMentionEveryone: j,
+    hidePersonalInformation: k
   } = (0, o.cj)([d.Z, f.Z], () => ({
     canMentionEveryone: P.isPrivate() || M || w === l.Ie.RULES_INPUT || d.Z.can(m.Plq.MENTION_EVERYONE, P),
     hidePersonalInformation: f.Z.hidePersonalInformation
@@ -93,8 +93,8 @@ function v(e, t, n) {
       activeCommandOption: G,
       activeInlineAutocompleteInput: V,
       canMentionUsers: null != (N = null == (v = w.users) ? true : v.allowMentioning) && N,
-      canMentionEveryone: k,
-      hidePersonalInformation: j,
+      canMentionEveryone: j,
+      hidePersonalInformation: k,
       hideMentionDescription: w === l.Ie.RULES_INPUT,
       emojiIntention: w === l.Ie.RULES_INPUT ? g.Hz.COMMUNITY_CONTENT : g.Hz.CHAT,
       currentWord: null != (C = null == Z ? true : Z.word) ? C : "",

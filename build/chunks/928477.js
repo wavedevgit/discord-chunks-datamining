@@ -2,9 +2,9 @@
 /** chunk id: 928477, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  JA: () => j,
+  JA: () => k,
   Jw: () => D,
-  Od: () => k,
+  Od: () => j,
   Wj: () => G,
   gK: () => U,
   oD: () => x,
@@ -57,7 +57,7 @@ function M(e, t) {
   return e.length > t ? e.substring(0, t) + "..." : e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n, r, i, o, a, s, l;
   let c = null == t ? null : b.Z.getMessage(e.id, t),
     u = null != (a = null == c || null == (r = c.embeds) || null == (n = r[0]) ? true : n.rawTitle) ? a : "",
@@ -87,7 +87,7 @@ function k(e, t) {
   }
 }
 
-function j(e) {
+function k(e) {
   let {
     parentChannel: t,
     parentMessageId: n,
@@ -104,7 +104,7 @@ function j(e) {
       m = x(o, a),
       b = null != (p = o.name) ? p : "";
     if ("" === b && d) {
-      let e = k(t, n);
+      let e = j(t, n);
       b = "" !== e ? e : w.intl.string(w.t["7Xm5QE"])
     }
     let y = (0, S.WD)(t),

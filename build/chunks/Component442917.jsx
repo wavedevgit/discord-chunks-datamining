@@ -321,7 +321,7 @@ class ep extends Chunk73800.PureComponent {
       return (0, r.jsxs)(r.Fragment, {
         children: [o ? this.renderViewersIcon() : null, e ? this.renderSettingsIcon() : null, t ? this.renderPopoutIcon() : null, i ? this.renderStopStreamButton() : null, n ? this.renderDisconnectButton() : null]
       })
-    }), eu(this, "renderDisconnectButton", () => (0, r.jsx)(k.Z, {
+    }), eu(this, "renderDisconnectButton", () => (0, r.jsx)(j.Z, {
       className: el.rightTrayIcon,
       onClick: () => (0, v.v)(g.Z.VIDEO_PIP, v.d.DISCONNECT)
     })), eu(this, "renderStopStreamButton", () => {
@@ -347,7 +347,7 @@ class ep extends Chunk73800.PureComponent {
           compact: true
         })
       })
-    }), eu(this, "renderPopoutIcon", () => (0, r.jsx)(j.Z, {
+    }), eu(this, "renderPopoutIcon", () => (0, r.jsx)(k.Z, {
       className: el.rightTrayIcon,
       popoutOpen: false,
       onOpenPopout: this.handleOpenPopout,
