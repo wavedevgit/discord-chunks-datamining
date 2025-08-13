@@ -1,20 +1,21 @@
 /** Chunk was on 29458 **/
 /** chunk id: 455731, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk750312 = require("./750312.jsx"),
+  Chunk189988 = require("./189988.jsx"),
   Chunk30344 = require("./30344.jsx");
 
-function o(e) {
+function a(e) {
   var {
     user: t,
     widget: n,
-    containerClassName: o,
-    disableInteraction: a
-  } = e, c = function(e, t) {
+    containerClassName: a,
+    disableInteraction: c
+  } = e, s = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -32,9 +33,9 @@ function o(e) {
   return (0, r.jsx)(l.Z, {
     userId: t.id,
     widget: n,
-    className: o,
-    disableInteraction: a,
-    children: (0, r.jsx)(i.Z, function(e) {
+    className: a,
+    disableInteraction: c,
+    children: n.games.length > 0 ? (0, r.jsx)(o.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -54,7 +55,9 @@ function o(e) {
     }({
       userId: t.id,
       games: n.games,
-      disableInteraction: a
-    }, c))
+      disableInteraction: c
+    }, s)) : (0, r.jsx)(i.Z, {
+      widgetType: n.type
+    })
   })
 }
