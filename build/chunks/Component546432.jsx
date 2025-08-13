@@ -76,7 +76,7 @@ function x(e, t) {
 
 function M(e, t) {
   if (null == e) return {};
-  var n, r, i = k(e, t);
+  var n, r, i = j(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -84,14 +84,14 @@ function M(e, t) {
   return i
 }
 
-function k(e, t) {
+function j(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let j = 200,
+let k = 200,
   U = 50;
 
 function G(e) {
@@ -205,8 +205,8 @@ function F(e) {
     className: L,
     imgContainerClassName: x,
     imgClassName: M,
-    focusable: k,
-    hiddenSpoilers: j,
+    focusable: j,
+    hiddenSpoilers: k,
     mediaLayoutType: U,
     maxWidth: G,
     maxHeight: B,
@@ -307,7 +307,7 @@ function F(e) {
           message: t,
           width: q,
           height: X,
-          autoPlay: o && !j,
+          autoPlay: o && !k,
           onClick: _,
           onContextMenu: h,
           shouldHideMediaOptions: ea,
@@ -316,8 +316,8 @@ function F(e) {
           containerClassName: L,
           className: x,
           imageClassName: M,
-          shouldLink: k,
-          hiddenSpoilers: j,
+          shouldLink: j,
+          hiddenSpoilers: k,
           responsive: true,
           mediaLayoutType: U,
           maxWidth: G,
@@ -343,7 +343,7 @@ function F(e) {
         className: a()(L, {
           [R.hasFooter]: F
         }),
-        playable: k,
+        playable: j,
         responsive: true,
         mediaLayoutType: U,
         maxWidth: G,
@@ -372,7 +372,7 @@ function F(e) {
         item: n,
         message: t,
         className: L,
-        playable: k,
+        playable: j,
         mimeType: el,
         renderAdjacentContent: e_,
         onVolumeShow: () => et(true),
@@ -440,7 +440,7 @@ let H = function(e) {
     width: E,
     height: b,
     type: y
-  } = n, O = s(n, (0, g.v)(o)), [v, I] = i.useState(null != O), T = (0, h.JO)(O), N = c === A.hV.MOSAIC, C = !N && (null != E && E < j || null != b && b < U), P = G(y), w = (0, S.R_)(y), L = u && null != O && (0, h.yf)(E, b), [k, B] = i.useState(false), Z = () => {
+  } = n, O = s(n, (0, g.v)(o)), [v, I] = i.useState(null != O), T = (0, h.JO)(O), N = c === A.hV.MOSAIC, C = !N && (null != E && E < k || null != b && b < U), P = G(y), w = (0, S.R_)(y), L = u && null != O && (0, h.yf)(E, b), [j, B] = i.useState(false), Z = () => {
     B(true)
   }, H = () => {
     B(false)
@@ -491,7 +491,7 @@ let H = function(e) {
       obscured: v,
       containerStyles: V(n, P, c),
       obscurityControlClassName: a()({
-        [R.obscureVideoSpacing]: "VIDEO" === y && u && !v && k
+        [R.obscureVideoSpacing]: "VIDEO" === y && u && !v && j
       }),
       onToggleObscurity: () => I(e => !e),
       children: e => Y(e)

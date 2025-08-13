@@ -73,7 +73,7 @@ let O = Symbol("NO GUILD ID"),
   x = [],
   M = [];
 
-function k(e) {
+function j(e) {
   let t = e.data.type,
     n = e.data.games.map(e => y(E({}, e), {
       applicationId: e.game_id
@@ -84,7 +84,7 @@ function k(e) {
     games: n
   }
 }
-let j = false,
+let k = false,
   U = null;
 
 function G(e) {
@@ -119,7 +119,7 @@ function B(e, t) {
 }
 
 function Z() {
-  v.clear(), I.clear(), N.clear(), C.clear(), w.clear(), D.clear(), L.clear(), j = false
+  v.clear(), I.clear(), N.clear(), C.clear(), w.clear(), D.clear(), L.clear(), k = false
 }
 
 function F(e) {
@@ -154,7 +154,7 @@ function Y(e) {
 }
 
 function W(e) {
-  var t, n, r, i, s, l, c, d, f, h, g, b, A, M, j, Z, F, V, Y, W, z, q, X, Q, J, $, ee, et;
+  var t, n, r, i, s, l, c, d, f, h, g, b, A, M, k, Z, F, V, Y, W, z, q, X, Q, J, $, ee, et;
   let {
     userProfile: en,
     fetchStartedAt: er
@@ -231,8 +231,8 @@ function W(e) {
         name: es.name
       } : null,
       badges: el,
-      widgets: null == (A = en.widgets) ? true : A.map(k)
-    }), (null == (j = en.user_profile) || null == (M = j.profile_effect) ? true : M.expires_at) != null) {
+      widgets: null == (A = en.widgets) ? true : A.map(j)
+    }), (null == (k = en.user_profile) || null == (M = k.profile_effect) ? true : M.expires_at) != null) {
     let e = new o.V7;
     R.set(en.user.id, e), G(en.user.id)
   }
@@ -385,15 +385,15 @@ function Q(e) {
 }
 
 function J(e) {
-  j = true
+  k = true
 }
 
 function $(e) {
-  j = false, null != e.guild_id ? Q(e) : X(e)
+  k = false, null != e.guild_id ? Q(e) : X(e)
 }
 
 function ee(e) {
-  j = false
+  k = false
 }
 
 function et(e) {
@@ -403,7 +403,7 @@ function et(e) {
   } = e, r = N.get(t);
   if (null == r) returnfalse;
   N.set(t, y(E({}, r), {
-    widgets: n.map(k)
+    widgets: n.map(j)
   }))
 }
 
@@ -468,7 +468,7 @@ class ec extends Chunk750041.Z {
     return I.has(e)
   }
   get isSubmitting() {
-    return j
+    return k
   }
   getUserProfile(e) {
     return N.get(e)

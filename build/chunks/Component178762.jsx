@@ -42,7 +42,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk206583 = require("./206583.js"),
   Chunk921944 = require("./921944.js");
 
-function k(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -51,14 +51,14 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -110,31 +110,31 @@ let Y = e => {
     } = e, n = B(e, ["entry"]);
     switch (t.content_type) {
       case l.s.PLAYED_GAME:
-        return (0, r.jsx)(I.Z, G(j({}, n), {
+        return (0, r.jsx)(I.Z, G(k({}, n), {
           entry: t
         }));
       case l.s.WATCHED_MEDIA:
-        return (0, r.jsx)(w.Z, G(j({}, n), {
+        return (0, r.jsx)(w.Z, G(k({}, n), {
           entry: t
         }));
       case l.s.TOP_GAME:
-        return (0, r.jsx)(R.ZP, G(j({}, n), {
+        return (0, r.jsx)(R.ZP, G(k({}, n), {
           entry: t
         }));
       case l.s.TOP_ARTIST:
-        return (0, r.jsx)(N.ZP, G(j({}, n), {
+        return (0, r.jsx)(N.ZP, G(k({}, n), {
           entry: t
         }));
       case l.s.LISTENED_SESSION:
-        return (0, r.jsx)(S.ZP, G(j({}, n), {
+        return (0, r.jsx)(S.ZP, G(k({}, n), {
           entry: t
         }));
       case l.s.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(O.Z, G(j({}, n), {
+        return (0, r.jsx)(O.Z, G(k({}, n), {
           entry: t
         }));
       case l.s.LEADERBOARD:
-        return (0, r.jsx)(g.Z, G(j({}, n), {
+        return (0, r.jsx)(g.Z, G(k({}, n), {
           entry: t
         }));
       default:
@@ -145,7 +145,7 @@ let Y = e => {
     var {
       closePopout: t
     } = e, n = B(e, ["closePopout"]);
-    return (0, r.jsx)(K, j({
+    return (0, r.jsx)(K, k({
       onReaction: (e, r) => {
         n.trackRankingItemInteraction(e, {
           destinationChannelId: r.id,
@@ -168,27 +168,27 @@ let Y = e => {
       i = B(e, ["entry"]);
     switch (n.content_type) {
       case l.s.PLAYED_GAME:
-        return (0, r.jsx)(T.Z, G(j({}, i), {
+        return (0, r.jsx)(T.Z, G(k({}, i), {
           entry: n
         }));
       case l.s.WATCHED_MEDIA:
-        return (0, r.jsx)(D.Z, G(j({}, i), {
+        return (0, r.jsx)(D.Z, G(k({}, i), {
           entry: n
         }));
       case l.s.TOP_GAME:
-        return (0, r.jsx)(P.Z, G(j({}, i), {
+        return (0, r.jsx)(P.Z, G(k({}, i), {
           entry: n
         }));
       case l.s.TOP_ARTIST:
-        return (0, r.jsx)(C.Z, G(j({}, i), {
+        return (0, r.jsx)(C.Z, G(k({}, i), {
           entry: n
         }));
       case l.s.LISTENED_SESSION:
-        return (0, r.jsx)(A.Z, G(j({}, i), {
+        return (0, r.jsx)(A.Z, G(k({}, i), {
           entry: n
         }));
       case l.s.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(v.ZP, G(j({}, i), {
+        return (0, r.jsx)(v.ZP, G(k({}, i), {
           entry: n
         }));
       case l.s.LEADERBOARD:
@@ -231,7 +231,7 @@ let Y = e => {
     i.useEffect(() => {
       C && D && w(true)
     }, [C, D]);
-    let k = i.useCallback(e => {
+    let j = i.useCallback(e => {
         I && (0, f.jW)(e, async () => {
           let {
             default: e
@@ -247,7 +247,7 @@ let Y = e => {
       }, []),
       Z = i.useCallback(function(e) {
         let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-        (0, y.L)(e, j({}, A, t))
+        (0, y.L)(e, k({}, A, t))
       }, [A]),
       F = i.useMemo(() => a().throttle(e => {
         (0, y.L)(x.xP.CARD_POPOUT_OPEN, e)
@@ -278,7 +278,7 @@ let Y = e => {
           } = e;
           return (0, r.jsx)(z.Provider, {
             value: H,
-            children: (0, r.jsx)(W, j({
+            children: (0, r.jsx)(W, k({
               closePopout: t,
               updatePopoutPosition: U,
               trackRankingItemInteraction: Z
@@ -297,7 +297,7 @@ let Y = e => {
           let {
             isShown: n
           } = t;
-          return (0, r.jsx)(d.P3F, G(j({}, e, v), {
+          return (0, r.jsx)(d.P3F, G(k({}, e, v), {
             innerRef: g,
             focusProps: {
               offset: {
@@ -310,8 +310,8 @@ let Y = e => {
             onClick: () => {
               C || R(true)
             },
-            onContextMenu: k,
-            children: (0, r.jsx)(Y, G(j({}, m), {
+            onContextMenu: j,
+            children: (0, r.jsx)(Y, G(k({}, m), {
               selected: n,
               hovered: N.current
             }))

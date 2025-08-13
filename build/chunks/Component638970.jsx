@@ -2,7 +2,7 @@
 /** chunk id: 638970, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 }), require("./388685.js"), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -97,7 +97,7 @@ let M = {
   height: "auto"
 };
 
-function k(e) {
+function j(e) {
   let {
     user: t,
     currentUser: n,
@@ -106,9 +106,9 @@ function k(e) {
     onOpenUserProfileModal: C,
     onClose: P
   } = e, w = (0, _.Dt)(), {
-    analyticsLocations: k
+    analyticsLocations: j
   } = (0, f.ZP)(), {
-    trackUserProfileAction: j
+    trackUserProfileAction: k
   } = (0, g.KZ)(), {
     live: U,
     stream: G
@@ -152,9 +152,9 @@ function k(e) {
     color: l.zx.Colors.TRANSPARENT,
     className: a()(N.viewAllButton, er && N.isShown),
     onClick: () => {
-      j({
+      k({
         action: "PRESS_VIEW_PROFILE",
-        analyticsLocations: k
+        analyticsLocations: j
       }), C({
         section: T.oh.ACTIVITY
       })
@@ -166,9 +166,9 @@ function k(e) {
     })
   }) : null, eu = i.useCallback(() => {
     if (null == z.current || null == X.current) return;
-    j({
+    k({
       action: "PRESS_SHOW_MORE_ACTIVITY",
-      analyticsLocations: k
+      analyticsLocations: j
     });
     let e = z.current.getBoundingClientRect().height,
       t = X.current.getBoundingClientRect().height;
@@ -187,7 +187,7 @@ function k(e) {
         }), null == (e = q.current) || e.focus()
       }, D)
     })
-  }, [k, j]);
+  }, [j, k]);
   return ((0, u.zq)(() => {
     null != Q.current && window.clearTimeout(Q.current)
   }), V || 0 === ei.length) ? null : (0, r.jsxs)("section", {

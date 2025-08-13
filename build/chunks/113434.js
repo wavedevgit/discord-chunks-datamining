@@ -349,7 +349,7 @@ function ec() {
 function eu(e) {
   let t = (0, u.e7)([R.Z], () => R.Z.quests),
     n = r.useMemo(() => {
-      let n = (0, N.MM)(t, k.tt);
+      let n = (0, N.MM)(t, j.tt);
       return (0, N.Jg)(n, e)
     }, [e, t]);
   return Q(n) ? null : n
@@ -392,8 +392,8 @@ function e_() {
     xboxAndPlaystationAccounts: o
   } = Chunk73800.useMemo(() => {
     let e = exports.filter(e => false === e.revoked),
-      n = module.filter(e => e.type === j.ABu.XBOX),
-      r = module.filter(e => e.type === j.ABu.PLAYSTATION),
+      n = module.filter(e => e.type === k.ABu.XBOX),
+      r = module.filter(e => e.type === k.ABu.PLAYSTATION),
       i = require.concat(Chunk73800);
     return {
       xboxAccounts: require,
@@ -495,7 +495,7 @@ function ey(e, t) {
     a = (0, L.DD)({
       quest: e,
       taskDetails: i,
-      location: k.dr.QUEST_HOME_DESKTOP,
+      location: j.dr.QUEST_HOME_DESKTOP,
       questContent: P.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: t
     }),
@@ -511,51 +511,51 @@ function eO(e) {
 }
 
 function ev(e, t) {
-  let [n, i] = eO(e.id), o = r.useMemo(() => (0, N.yH)(e), [e]), l = o.includes(k.cd.DESKTOP), c = o.includes(k.cd.CONSOLE), u = ee(e), d = et(e), f = r.useMemo(() => (0, a.EQ)(t).with({
+  let [n, i] = eO(e.id), o = r.useMemo(() => (0, N.yH)(e), [e]), l = o.includes(j.cd.DESKTOP), c = o.includes(j.cd.CONSOLE), u = ee(e), d = et(e), f = r.useMemo(() => (0, a.EQ)(t).with({
     percentComplete: 0
   }, () => null).with({
     taskType: s.X.PLAY_ON_DESKTOP
-  }, () => k.cd.DESKTOP).with({
+  }, () => j.cd.DESKTOP).with({
     taskType: s.X.PLAY_ON_DESKTOP_V2
-  }, () => k.cd.DESKTOP).with({
+  }, () => j.cd.DESKTOP).with({
     taskType: s.X.PLAY_ACTIVITY
-  }, () => k.cd.DESKTOP).with({
+  }, () => j.cd.DESKTOP).with({
     taskType: s.X.WATCH_VIDEO
-  }, () => k.cd.DESKTOP).with({
+  }, () => j.cd.DESKTOP).with({
     taskType: s.X.WATCH_VIDEO_ON_MOBILE
-  }, () => k.cd.DESKTOP).with({
+  }, () => j.cd.DESKTOP).with({
     taskType: s.X.STREAM_ON_DESKTOP
-  }, () => k.cd.DESKTOP).with({
+  }, () => j.cd.DESKTOP).with({
     taskType: s.X.PLAY_ON_XBOX
-  }, () => k.cd.CONSOLE).with({
+  }, () => j.cd.CONSOLE).with({
     taskType: s.X.PLAY_ON_PLAYSTATION
-  }, () => k.cd.CONSOLE).with({
+  }, () => j.cd.CONSOLE).with({
     taskType: s.X.ACHIEVEMENT_IN_GAME
-  }, () => k.cd.DESKTOP).with({
+  }, () => j.cd.DESKTOP).with({
     taskType: s.X.ACHIEVEMENT_IN_ACTIVITY
-  }, () => k.cd.DESKTOP).exhaustive(), [t]), _ = u ? k.cd.DESKTOP : d ? k.cd.CONSOLE : null;
+  }, () => j.cd.DESKTOP).exhaustive(), [t]), _ = u ? j.cd.DESKTOP : d ? j.cd.CONSOLE : null;
   return [r.useMemo(() => (0, a.EQ)({
     lastPlatformProgress: f,
     currentProgressingPlatform: _,
     selectedPlatform: n
   }).with({
-    currentProgressingPlatform: k.cd.CONSOLE
+    currentProgressingPlatform: j.cd.CONSOLE
   }, () => P.LI.CONSOLE).with({
-    currentProgressingPlatform: k.cd.DESKTOP
+    currentProgressingPlatform: j.cd.DESKTOP
   }, () => P.LI.DESKTOP).with({
     currentProgressingPlatform: null,
-    lastPlatformProgress: k.cd.CONSOLE
+    lastPlatformProgress: j.cd.CONSOLE
   }, () => P.LI.CONSOLE).with({
     currentProgressingPlatform: null,
-    lastPlatformProgress: k.cd.DESKTOP
+    lastPlatformProgress: j.cd.DESKTOP
   }, () => P.LI.DESKTOP).with({
     currentProgressingPlatform: null,
     lastPlatformProgress: null,
-    selectedPlatform: k.cd.CONSOLE
+    selectedPlatform: j.cd.CONSOLE
   }, () => P.LI.CONSOLE).with({
     currentProgressingPlatform: null,
     lastPlatformProgress: null,
-    selectedPlatform: k.cd.DESKTOP
+    selectedPlatform: j.cd.DESKTOP
   }, () => P.LI.DESKTOP).with({
     currentProgressingPlatform: null,
     lastPlatformProgress: null,
@@ -648,7 +648,7 @@ function eC(e) {
     activeScreen: a
   } = e, s = $(r.useMemo(() => M.r.build(n.config).rewardsExpireAt, [n.config])), l = eo(n), c = ea(n), u = (null == (t = n.userStatus) ? true : t.completedAt) != null, d = er(n), f = (0, L.DD)({
     quest: n,
-    location: k.dr.QUESTS_BAR,
+    location: j.dr.QUESTS_BAR,
     questContent: P.jn.QUEST_BAR_V2,
     taskDetails: l,
     sourceQuestContent: o
@@ -673,9 +673,9 @@ function eC(e) {
 function eR(e, t) {
   let n = (0, u.e7)([R.Z], () => R.Z.getQuest(e), [e]),
     i = (0, d.ZP)(),
-    o = r.useMemo(() => (null == n ? true : n.config.features.includes(k.S7.QUESTS_CDN)) === true, [n]);
+    o = r.useMemo(() => (null == n ? true : n.config.features.includes(j.S7.QUESTS_CDN)) === true, [n]);
   return r.useMemo(() => (null == n ? true : n.config.cosponsorMetadata) == null ? null : (0, x.Rt)(e, n.config.cosponsorMetadata.logotype, {
-    theme: null != t ? t : (0, c.wj)(i) ? j.BRd.DARK : j.BRd.LIGHT,
+    theme: null != t ? t : (0, c.wj)(i) ? k.BRd.DARK : k.BRd.LIGHT,
     newCdn: o
   }), [i, t, e, null == n ? true : n.config.cosponsorMetadata, o])
 }
@@ -719,7 +719,7 @@ function ew(e) {
   let t = (0, u.e7)([f.ZP], () => f.ZP.getCurrentEmbeddedActivity());
   return {
     launchInGameActivity: r.useCallback(() => {
-      null != t && t.applicationId === e.config.application.id ? (0, _.Z)("guild_id" in t.location ? t.location.guild_id : null, t.location) : (0, m.uL)(j.Z5c.ACTIVITY_DETAILS(e.config.application.id))
+      null != t && t.applicationId === e.config.application.id ? (0, _.Z)("guild_id" in t.location ? t.location.guild_id : null, t.location) : (0, m.uL)(k.Z5c.ACTIVITY_DETAILS(e.config.application.id))
     }, [t, e.config.application.id])
   }
 }

@@ -93,14 +93,14 @@ function M(e) {
   m.delete(t), g.add(t)
 }
 
-function k(e) {
+function j(e) {
   let {
     message: t
   } = e;
   G(t)
 }
 
-function j(e) {
+function k(e) {
   let {
     messages: t
   } = e;
@@ -192,8 +192,8 @@ let H = new V(Chunk570140.Z, {
   REFERRALS_FETCH_ELIGIBLE_USER_START: B,
   REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: Z,
   REFERRALS_FETCH_ELIGIBLE_USER_FAIL: F,
-  LOAD_MESSAGES_SUCCESS: j,
-  MESSAGE_CREATE: k,
-  LOAD_MESSAGES_AROUND_SUCCESS: j,
+  LOAD_MESSAGES_SUCCESS: k,
+  MESSAGE_CREATE: j,
+  LOAD_MESSAGES_AROUND_SUCCESS: k,
   LOGOUT: A
 })
