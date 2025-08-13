@@ -467,15 +467,12 @@ let H = function(e) {
       onVideoControlsHide: H,
       forcePlaceholder: T && v
     }))
-  }, W = () => f ? {
-    minWidth: 0,
-    width: "".concat(p.maxWidth, "px")
-  } : u && null != n.height && n.height > 0 ? {
-    height: n.height,
-    maxHeight: p.maxHeight
-  } : true;
+  };
   return (0, r.jsxs)("div", {
-    style: W(),
+    style: f ? {
+      minWidth: 0,
+      width: "".concat(p.maxWidth, "px")
+    } : true,
     className: a()(R.mosaicItem, {
       [R.mosaicItemNoJustify]: P,
       [R.mosaicItemFullWidth]: l,
