@@ -1,56 +1,15 @@
-/** Chunk was on web.js **/
-/** chunk id: 108989, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 108989, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => u
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk505266 = require("./505266.js");
-
-function a(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function s(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      a(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function l(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function c(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let u = [require("./123353.js")],
-  d = ["#FFFFFF"],
-  f = 6,
-  _ = 1e3 / 60,
-  p = {
+let a = [require("./123353.js")],
+  o = ["#FFFFFF"],
+  s = 1e3 / 60,
+  c = {
     velocity: {
       type: "static-random",
       minValue: {
@@ -100,48 +59,75 @@ let u = [require("./123353.js")],
     }
   };
 
-function h(e) {
+function u(e) {
   let {
     className: t,
     firing: n = true,
-    wind: a = 2,
-    sprites: l = u,
-    spriteColors: h = d,
-    confettiConfig: m
-  } = e, [g, E] = i.useState(null), [b, y] = i.useState(null), O = (0, o.uR)(b, g), v = i.useMemo(() => new o.qA({
-    wind: a
-  }), [a]), I = i.useCallback(() => {
-    let e = null == b ? true : b.getCanvas();
-    if (null == e) return;
-    let t = e.getBoundingClientRect();
-    O.createConfetti(c(s({}, p, m), {
+    wind: u = 2,
+    sprites: d = a,
+    spriteColors: p = o,
+    confettiConfig: f
+  } = e, [h, g] = i.useState(null), [m, b] = i.useState(null), _ = (0, l.uR)(m, h), O = i.useMemo(() => new l.qA({
+    wind: u
+  }), [u]), E = i.useCallback(() => {
+    var e, t;
+    let n = null == m ? true : m.getCanvas();
+    if (null == n) return;
+    let r = n.getBoundingClientRect();
+    _.createConfetti((e = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({}, c, f), t = t = {
       position: {
         type: "static-random",
         minValue: {
-          x: -t.width / 2,
-          y: -f
+          x: -r.width / 2,
+          y: false
         },
         maxValue: {
-          x: t.width,
-          y: -f
+          x: r.width,
+          y: false
         }
       }
-    }))
-  }, [O, b, m]);
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
+      }
+      return n
+    })(Object(t)).forEach(function(n) {
+      Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    }), e))
+  }, [_, m, f]);
   return i.useEffect(() => {
-    let e = n ? setInterval(I, _) : null;
+    let e = n ? setInterval(E, s) : null;
     return () => clearInterval(e)
-  }, [n, I]), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.O_, {
-      ref: y,
+  }, [n, E]), (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(l.O_, {
+      ref: b,
       className: t,
-      environment: v
-    }), (0, r.jsx)(o.Ji, {
-      ref: E,
-      colors: h,
-      sprites: l,
-      spriteWidth: f,
-      spriteHeight: f
+      environment: O
+    }), (0, r.jsx)(l.Ji, {
+      ref: g,
+      colors: p,
+      sprites: d,
+      spriteWidth: 6,
+      spriteHeight: 6
     })]
   })
 }

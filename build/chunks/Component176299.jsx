@@ -237,7 +237,7 @@ let eZ = (0, Chunk608787.Un)({
     }
     return (0, r.jsx)(S.Z, {})
   },
-  eB = Chunk73800.memo(function() {
+  eV = Chunk73800.memo(function() {
     let {
       guildId: e,
       channelId: t
@@ -253,7 +253,7 @@ let eZ = (0, Chunk608787.Un)({
       guildId: module
     }, module) : (0, Chunk255367.jsx)(Chunk663701.Z, {})
   }),
-  eV = e => (0, r.jsx)(eG, eA({}, e)),
+  eB = e => (0, r.jsx)(eG, eA({}, e)),
   eH = () => (0, Chunk255367.jsx)(Chunk724383.Z, {}),
   eF = e => (0, r.jsx)(ez, eA({}, e)),
   ez = e => {
@@ -268,7 +268,7 @@ let eZ = (0, Chunk608787.Un)({
         flash: true,
         context: "notification_center_navigation"
       })
-    }, [t, n]), null == t) ? (0, r.jsx)(Q.Z, {}) : eV(e)
+    }, [t, n]), null == t) ? (0, r.jsx)(Q.Z, {}) : eB(e)
   },
   eW = e => {
     let {
@@ -494,12 +494,12 @@ function e5(e) {
           [ex.hidden]: g,
           [ex.channelListHidden]: o
         }),
-        children: [s && !c && (0, r.jsx)(V.Z, {
+        children: [s && !c && (0, r.jsx)(B.Z, {
           className: ex.guilds,
           themeOverride: n
         }), !o && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", (t = eA({}, j), i = i = {
-            children: (0, r.jsx)(eB, {})
+            children: (0, r.jsx)(eV, {})
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -653,7 +653,7 @@ function e4() {
                   path: [Chunk981631.Z5c.CHANNEL_THREAD_VIEW(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId(), ":threadId", ":messageId?"), Chunk981631.Z5c.CHANNEL(Chunk981631.ME, Chunk893607.Hw.channelId()), Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
                     optional: true
                   }), ":messageId?")],
-                  render: eV,
+                  render: eB,
                   impressionName: Chunk990547.ImpressionNames.GUILD_CHANNEL,
                   disableTrack: true
                 }), (0, Chunk255367.jsx)(Chunk765717.Z, {

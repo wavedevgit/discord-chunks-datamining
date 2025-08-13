@@ -63,10 +63,10 @@ function C() {
       })
     }),
     G = Chunk164991.Z.useField("fetchedQuery"),
-    B = Chunk73800.useCallback(e => {
+    V = Chunk73800.useCallback(e => {
       T(e), L && Z()
     }, [L, Z, T]),
-    V = Chunk73800.useMemo(() => L ? S.filter(e => {
+    B = Chunk73800.useMemo(() => L ? S.filter(e => {
       let {
         id: t
       } = e;
@@ -101,9 +101,9 @@ function C() {
         icon: Chunk481060.QTo
       }), !L && (0, Chunk255367.jsx)(c.Z, {
         className: U,
-        tabs: V,
+        tabs: B,
         selectedTab: L ? null : N,
-        onTabSelect: B,
+        onTabSelect: V,
         onAvailableWidthChange: D
       }), L && (0, Chunk255367.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",

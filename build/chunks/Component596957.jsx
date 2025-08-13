@@ -111,7 +111,7 @@ let k = function(e) {
     let e = {};
     for (let t of Object.values(P.pJs)) e[t] = "";
     return e
-  }), B = i.useCallback(e => {
+  }), V = i.useCallback(e => {
     let {
       key: t
     } = e, n = function(e, t) {
@@ -145,7 +145,7 @@ let k = function(e) {
           isFocused: L
         }), t)
     }
-  }, [L, u]), V = i.useCallback(e => {
+  }, [L, u]), B = i.useCallback(e => {
     G(Z(A({}, U), {
       [u]: e
     }))
@@ -241,11 +241,11 @@ let k = function(e) {
       children: [M && (0, r.jsx)(C.R, {}), (0, r.jsx)(c.E1j, {
         className: a()(x.searchBar, ee ? x.searchEmptyState : null),
         query: U[u],
-        onChange: V,
+        onChange: B,
         onClear: H
       }), (0, r.jsx)(I.Z, {
         rows: K,
-        renderRow: B,
+        renderRow: V,
         renderSection: J,
         sectionFilter: u,
         isVirtualizedList: k >= T.nG,

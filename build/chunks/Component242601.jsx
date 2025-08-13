@@ -499,7 +499,7 @@ function eS(e) {
     [m, b] = (0, d.Wu)([ee.Z], () => [ee.Z.can(ep.Plq.MANAGE_GUILD, o), ee.Z.can(ep.Plq.MANAGE_THREADS, o)]),
     A = (0, d.e7)([q.Z], () => q.Z.isUnavailable(n)),
     L = (0, d.e7)([er.default], () => er.default.getCurrentUser()),
-    R = (0, B.Ll)(),
+    R = (0, V.Ll)(),
     G = (0, d.e7)([W.Z], () => null != R ? R : W.Z.theme),
     {
       enableStudyGroup: H
@@ -515,7 +515,7 @@ function eS(e) {
   }, [n, eo, z]);
   let [ec, eu] = (0, C.ZP)(e => [ef.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(eh.R.GUILD_HEADER_TOOLTIPS)], u.X), ed = (0, I.Z)(o), eg = (0, h.s9z)(h.JQI), em = (0, d.e7)([$.Z], () => $.Z.hasLayers()), eb = (0, d.e7)([F.Z], () => F.Z.shouldShow(ev)), e_ = m && (null == o ? true : o.premiumProgressBarEnabled) === false && !el.s.isDisallowPopupsSet(), eO = (0, d.e7)([Q.Z], () => Q.Z.getMemberCount(n)), eE = m && null != eO && eO >= 30 && (null == o ? true : o.premiumProgressBarEnabled) === false && !el.s.isDisallowPopupsSet(), ey = (0, x.Z)(n), eI = (null == o ? true : o.features.has(ep.oNc.HUB)) === true, eS = m && (null == o ? true : o.features.has(ep.oNc.DISCOVERABLE)) === true, eN = (0, v.Q)(), eT = (m || (null == o ? true : o.premiumTier) === ep.Eu4.NONE) && !el.s.isDisallowPopupsSet() && !eN, eP = (0, d.e7)([Z.Z, $.Z], () => null != o && null != L && m && !$.Z.hasLayers() && Z.Z.shouldShowGuildTemplateDirtyTooltip(n)), ej = (0, d.e7)([Y.Z], () => Y.Z.getChannel(a)), {
     isPopoutOpen: ex
-  } = (0, T.y)(), eA = null != (t = null == o ? true : o.features.has(ep.oNc.COMMUNITY)) && t, eZ = (0, d.e7)([V.Z], () => !s().isEmpty(V.Z.getThreadsForGuild(n))), ew = ei.ZP.isNewUser(L), eL = X && !ew;
+  } = (0, T.y)(), eA = null != (t = null == o ? true : o.features.has(ep.oNc.COMMUNITY)) && t, eZ = (0, d.e7)([B.Z], () => !s().isEmpty(B.Z.getThreadsForGuild(n))), ew = ei.ZP.isNewUser(L), eL = X && !ew;
   (0, P.Z)(o);
   let eR = (0, S.Nj)(p.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     eD = (0, D.Z)(n),
@@ -527,8 +527,8 @@ function eS(e) {
     }, {
       autoTrackExposure: true
     }).enabled,
-    eB = (0, k.Z)(n),
-    eV = (0, M.Z)(null == L ? true : L.id, n) && (null == o ? true : o.premiumProgressBarEnabled) === false;
+    eV = (0, k.Z)(n),
+    eB = (0, M.Z)(null == L ? true : L.id, n) && (null == o ? true : o.premiumProgressBarEnabled) === false;
   return (0, r.jsx)(eC, {
     guildId: n,
     hideSelectedChannel: l,
@@ -565,7 +565,7 @@ function eS(e) {
     isTutorialHighlightDismissed: eR,
     shouldRenderBurstCoachmark: eL,
     shouldRenderCustomNotificationSoundsCoachmark: eG,
-    shouldRenderGuildPowerupPerkCoachmark: false === eB,
-    shouldRenderBoosterEnhancedRoleColorsCoachmark: eV
+    shouldRenderGuildPowerupPerkCoachmark: false === eV,
+    shouldRenderBoosterEnhancedRoleColorsCoachmark: eB
   })
 }

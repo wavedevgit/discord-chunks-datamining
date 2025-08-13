@@ -61,7 +61,7 @@ let U = e => {
     })
   },
   G = [Chunk692547.Z.unsafe_rawColors.BLUE_345.css, Chunk692547.Z.colors.INTERACTIVE_NORMAL.css],
-  B = e => {
+  V = e => {
     let {
       tooltip: t,
       onClick: n,
@@ -91,7 +91,7 @@ let U = e => {
     })
   };
 
-function V(e, t) {
+function B(e, t) {
   switch (t) {
     case R.f07.POST_INSTALL_SCRIPTS:
     case R.f07.PLANNING:
@@ -204,7 +204,7 @@ function z(e) {
     progress: i,
     total: l,
     secondsRemaining: a
-  } = e, o = V(l, n), s = V(i, n);
+  } = e, o = B(l, n), s = B(i, n);
   switch (n) {
     case R.f07.QUEUED:
       if (0 === i) return D.intl.string(D.t.RpfBqa);
@@ -327,8 +327,8 @@ class W extends Chunk73800.PureComponent {
         stage: l
       } = require;
       if (null != Chunk255367 && null != Chunk73800) {
-        let n = V(Chunk73800, Chunk120356),
-          a = V(Chunk255367, Chunk120356),
+        let n = B(Chunk73800, Chunk120356),
+          a = B(Chunk255367, Chunk120356),
           o = Math.floor(t = Chunk780570.xI(Chunk255367, Chunk73800));
         e = Chunk120356 === Chunk981631.f07.PAUSING ? Chunk388032.intl.formatToPlainString(Chunk388032.t.vjxhWl, {
           percent: Chunk392711,
@@ -465,12 +465,12 @@ class W extends Chunk73800.PureComponent {
     })
   }
 }
-let Y = () => (0, Chunk255367.jsx)(B, {
+let Y = () => (0, Chunk255367.jsx)(V, {
     icon: Chunk481060.o1U,
     tooltip: Chunk388032.intl.string(Chunk388032.t.YGm6SU),
     onClick: () => Chunk51025.v4()
   }),
-  K = () => (0, Chunk255367.jsx)(B, {
+  K = () => (0, Chunk255367.jsx)(V, {
     icon: Chunk481060.fpf,
     tooltip: Chunk388032.intl.string(Chunk388032.t.TVAd5O),
     onClick: () => Chunk51025.wO()
@@ -479,7 +479,7 @@ let Y = () => (0, Chunk255367.jsx)(B, {
     let {
       item: t
     } = e;
-    return (0, r.jsx)(B, {
+    return (0, r.jsx)(V, {
       icon: f.wj7,
       tooltip: D.intl.string(D.t["Eqb+LC"]),
       onClick: () => m.A1(t.applicationId, t.branchId)
@@ -489,7 +489,7 @@ let Y = () => (0, Chunk255367.jsx)(B, {
     let {
       item: t
     } = e;
-    return (0, r.jsx)(B, {
+    return (0, r.jsx)(V, {
       icon: f.Dio,
       tooltip: D.intl.string(D.t["0lFmCw"]),
       onClick: () => m.al(t.applicationId, t.branchId)

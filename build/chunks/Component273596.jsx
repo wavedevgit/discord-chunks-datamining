@@ -60,7 +60,7 @@ function j(e) {
     searchCategoryId: x
   } = (0, b.f)({
     loadId: t
-  }), A = 0 === s.length && !f, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(true), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), B = i.useRef(null), V = i.useCallback(e => {
+  }), A = 0 === s.length && !f, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(true), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), V = i.useRef(null), B = i.useCallback(e => {
     if (null != e && !A && !f) 336 * (s.length / M) <= e.height && j()
   }, [A, f, s.length, M, j]), H = i.useCallback(e => {
     let t = e.contentRect;
@@ -69,8 +69,8 @@ function j(e) {
     n < 1024 && k.current ? (k.current = false, D(false)) : n > 1024 && !k.current && (k.current = true, D(true));
     let r = 1;
     for (n -= 450 * !!R, n -= 280; n > 0;) n -= 264, r += 1;
-    r !== G.current && (G.current = r, U(r)), V(t)
-  }, [R, V]), F = (0, u.y)(H, [R, V]);
+    r !== G.current && (G.current = r, U(r)), B(t)
+  }, [R, B]), F = (0, u.y)(H, [R, B]);
   i.useEffect(() => {
     L((0, m.PM)())
   }, [I]), i.useEffect(() => {
@@ -149,7 +149,7 @@ function j(e) {
     Q = i.useCallback(async (e, t, n, r) => {
       var i, a;
       await l(e, t, n, r);
-      let o = null == (a = B.current) || null == (i = a.getScrollerState()) ? true : i.scrollTop;
+      let o = null == (a = V.current) || null == (i = a.getScrollerState()) ? true : i.scrollTop;
       null != o && g.Z.setState({
         scrollPosition: o
       })
@@ -169,7 +169,7 @@ function j(e) {
       }
     }, [s, Q, z, x]);
   i.useEffect(() => {
-    let e = B.current;
+    let e = V.current;
     return () => {
       var t;
       let n = null == e || null == (t = e.getScrollerState()) ? true : t.scrollTop;
@@ -181,7 +181,7 @@ function j(e) {
     let e = g.Z.getField("scrollPosition");
     null != e && setTimeout(() => {
       var t;
-      null == (t = B.current) || t.scrollTo({
+      null == (t = V.current) || t.scrollTo({
         to: e,
         animate: false,
         callback: () => {
@@ -194,7 +194,7 @@ function j(e) {
   }, []);
   let $ = i.useMemo(() => (0, o.debounce)(() => {
       var e;
-      let t = null == (e = B.current) ? true : e.getScrollerState();
+      let t = null == (e = V.current) ? true : e.getScrollerState();
       if (null == t) return;
       let n = t.scrollTop + t.offsetHeight;
       t.scrollHeight - n < 240 && j()
@@ -206,7 +206,7 @@ function j(e) {
     className: C.container,
     ref: F,
     children: (0, r.jsx)(c.GMG, {
-      ref: B,
+      ref: V,
       className: C.masonryList,
       sections: W,
       columns: M,

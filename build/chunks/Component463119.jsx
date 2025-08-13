@@ -193,10 +193,10 @@ let L = e => {
     let G = i.useCallback(e => {
         I.assetIds.length > 0 && T(e => (e + 1) % I.assetIds.length), R(true), null == e || e()
       }, [I.assetIds.length]),
-      B = i.useCallback(e => {
+      V = i.useCallback(e => {
         R(false), null == e || e()
       }, []),
-      V = I.title();
+      B = I.title();
     return (0, r.jsx)(s.ua7, {
       text: (0, r.jsx)(M, {
         displayOptions: I,
@@ -208,14 +208,14 @@ let L = e => {
       delay: 100,
       allowOverflow: true,
       hideOnClick: false,
-      "aria-label": "string" == typeof V ? V : j.intl.string(j.t.rSXaxc),
+      "aria-label": "string" == typeof B ? B : j.intl.string(j.t.rSXaxc),
       children: e => (0, r.jsxs)(D, Z(A(Z(A({
         className: null != I.entryPointClassName ? (0, O.l)(x, I.entryPointClassName) : true
       }, C), {
         icon: I.entryPointIcon
       }), e), {
         onMouseEnter: () => G(e.onMouseEnter),
-        onMouseLeave: () => B(e.onMouseLeave),
+        onMouseLeave: () => V(e.onMouseLeave),
         children: [(0, r.jsx)("div", {
           className: x.marketingButtonBackground,
           style: {
@@ -262,7 +262,7 @@ let L = e => {
       }))
     })
   },
-  B = e => {
+  V = e => {
     var {
       listScrollerRef: t
     } = e, n = w(e, ["listScrollerRef"]);
@@ -286,7 +286,7 @@ let L = e => {
       }))
     }))
   },
-  V = e => {
+  B = e => {
     var t, n, {
         displayOptions: l,
         dismissContent: a
@@ -343,7 +343,7 @@ let L = e => {
       },
       listItemRef: l
     };
-    if (o) return (0, r.jsx)(B, Z(A({}, u), {
+    if (o) return (0, r.jsx)(V, Z(A({}, u), {
       listScrollerRef: a
     }));
     if (null != s) switch (s.type) {
@@ -358,7 +358,7 @@ let L = e => {
       case S.k2.BADGE:
         return (0, r.jsx)(k, A({}, u));
       case S.k2.COACHMARK:
-        return (0, r.jsx)(V, Z(A({
+        return (0, r.jsx)(B, Z(A({
           dismissContent: c
         }, u), {
           displayOptions: s

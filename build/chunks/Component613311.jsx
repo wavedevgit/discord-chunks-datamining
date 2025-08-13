@@ -450,7 +450,7 @@ class ep extends Chunk73800.PureComponent {
       let {
         location: t
       } = this.props, n = (e = t.pathname, "".concat(location.protocol, "//").concat(location.host).concat(e));
-      (0, B.JG)(n, () => this.setState({
+      (0, V.JG)(n, () => this.setState({
         showLinkCopied: true
       }, () => {
         this.showCopyLinkTextTimeout.start(1500, () => {
@@ -615,7 +615,7 @@ let ef = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
   } else if (null == i) {
     if (null == l) throw Error("Needs applicationId or skuId");
     null != (r = y.Z.getApplication(l)) && (t = r.destinationSkuId), n = null != t ? D.Z.get(t) : null
-  }(null == n ? true : n.flags) != null && (0, V.yE)(n.flags, el.l4R.STICKER) && (n = null);
+  }(null == n ? true : n.flags) != null && (0, B.yE)(n.flags, el.l4R.STICKER) && (n = null);
   let c = null != l && (M.Z.inTestModeForApplication(l) || E.Z.inDevModeForApplication(l));
   return {
     skuId: t,

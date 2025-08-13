@@ -4,7 +4,7 @@ require.d(exports, {
   Co: () => X,
   ZP: () => Q,
   bZ: () => q,
-  gt: () => B
+  gt: () => V
 }), require("./388685.js");
 var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -43,7 +43,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk848191 = require("./848191.js");
-let B = Chunk73800.memo(function(e) {
+let V = Chunk73800.memo(function(e) {
   let {
     heading: t,
     location: n,
@@ -103,7 +103,7 @@ let B = Chunk73800.memo(function(e) {
   })
 });
 
-function V(e) {
+function B(e) {
   let {
     guildEvent: t,
     channel: n
@@ -113,7 +113,7 @@ function V(e) {
     } = e;
     return t
   }), [n]), l = (0, d.KS)(n);
-  return (0, i.jsx)(B, {
+  return (0, i.jsx)(V, {
     onClickCloseIcon: () => (0, T.ji)({
       eventId: null == t ? true : t.id
     }),
@@ -247,7 +247,7 @@ function z(e) {
   let {
     guildEvent: t
   } = e, n = (0, L.cS)(t);
-  return null == n ? null : (0, i.jsx)(B, {
+  return null == n ? null : (0, i.jsx)(V, {
     onClickCloseIcon: () => (0, T.ji)({
       eventId: null == t ? true : t.id
     }),
@@ -315,7 +315,7 @@ function K(e) {
   } = e, r = (0, s.Wu)([m.Z], () => [...new Set(m.Z.getMutableParticipants(n.id, b.pV.SPEAKER).map(e => e.user))], [n.id]), l = (0, s.e7)([m.Z], () => m.Z.getParticipantCount(n.id, b.pV.AUDIENCE), [n.id]), a = U.intl.formatToPlainString(U.t["+v2pNz"], {
     count: "".concat(l)
   });
-  return (0, i.jsx)(B, {
+  return (0, i.jsx)(V, {
     onClickCloseIcon: () => (0, T.ji)({
       stageId: null == t ? true : t.id
     }),
@@ -412,7 +412,7 @@ let Q = Chunk73800.memo(function(e) {
     channel: r
   }) : l.entity_type === k.WX.EXTERNAL ? d = (0, i.jsx)(z, {
     guildEvent: l
-  }) : l.entity_type === k.WX.VOICE && null != r && (d = (0, i.jsx)(V, {
+  }) : l.entity_type === k.WX.VOICE && null != r && (d = (0, i.jsx)(B, {
     guildEvent: l,
     channel: r
   }));
