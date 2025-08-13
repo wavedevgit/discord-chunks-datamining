@@ -53,8 +53,8 @@ var o, Chunk359282 = require("./359282.js"),
   L = ["bold", "bolder", "500", "600", "700", "800", "900"],
   x = ["light", "lighter", "normal", "100", "200", "300", "400"],
   M = ["className", "href", "rel", "target", "title"],
-  k = ["alt", "className", "height", "src", "width"],
-  j = (i(o = {}, Chunk606166("public/DraftStyleDefault/depth0"), 0), i(o, Chunk606166("public/DraftStyleDefault/depth1"), 1), i(o, Chunk606166("public/DraftStyleDefault/depth2"), 2), i(o, Chunk606166("public/DraftStyleDefault/depth3"), 3), i(o, Chunk606166("public/DraftStyleDefault/depth4"), 4), o),
+  j = ["alt", "className", "height", "src", "width"],
+  k = (i(o = {}, Chunk606166("public/DraftStyleDefault/depth0"), 0), i(o, Chunk606166("public/DraftStyleDefault/depth1"), 1), i(o, Chunk606166("public/DraftStyleDefault/depth2"), 2), i(o, Chunk606166("public/DraftStyleDefault/depth3"), 3), i(o, Chunk606166("public/DraftStyleDefault/depth4"), 4), o),
   U = E({
     b: "BOLD",
     code: "CODE",
@@ -78,8 +78,8 @@ var o, Chunk359282 = require("./359282.js"),
   },
   B = function(e) {
     var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
-    return Object.keys(j).some(function(n) {
-      e.classList.contains(n) && (t = j[n])
+    return Object.keys(k).some(function(n) {
+      e.classList.contains(n) && (t = k[n])
     }), t
   },
   Z = function(e) {
@@ -210,7 +210,7 @@ var o, Chunk359282 = require("./359282.js"),
       if (I(e)) {
         var n = e,
           r = {};
-        k.forEach(function(e) {
+        j.forEach(function(e) {
           var t = n.getAttribute(e);
           t && (r[e] = t)
         }), this.currentEntity = this.entityMap.__create("IMAGE", "IMMUTABLE", r), h("draftjs_fix_paste_for_img") ? "presentation" !== n.getAttribute("role") && this._appendText("\uD83D\uDCF7", t) : this._appendText("\uD83D\uDCF7", t), this.currentEntity = null

@@ -117,23 +117,23 @@ function M(e) {
         o = null != e.activities ? e.activities.length : 0;
       return n > r || n === r && i > o ? t : e
     }, t[0]);
-  n.status !== E.Skl.OFFLINE || null != n.hiddenActivities && n.hiddenActivities.length > 0 ? (v[e] = n.status, I[e] = n.activities, T[e] = k(Object.values(t).flatMap(e => {
+  n.status !== E.Skl.OFFLINE || null != n.hiddenActivities && n.hiddenActivities.length > 0 ? (v[e] = n.status, I[e] = n.activities, T[e] = j(Object.values(t).flatMap(e => {
     var t;
     return null != (t = e.hiddenActivities) ? t : []
-  })), null != n.clientStatus && (S[e] = n.clientStatus)) : s().every(O[e], e => e.status === E.Skl.OFFLINE && (null == e.hiddenActivities || 0 === e.hiddenActivities.length)) ? delete O[e] : n.status === E.Skl.OFFLINE && t.some(e => null != e.hiddenActivities && e.hiddenActivities.length > 0) && (T[e] = k(Object.values(t).flatMap(e => {
+  })), null != n.clientStatus && (S[e] = n.clientStatus)) : s().every(O[e], e => e.status === E.Skl.OFFLINE && (null == e.hiddenActivities || 0 === e.hiddenActivities.length)) ? delete O[e] : n.status === E.Skl.OFFLINE && t.some(e => null != e.hiddenActivities && e.hiddenActivities.length > 0) && (T[e] = j(Object.values(t).flatMap(e => {
     var t;
     return null != (t = e.hiddenActivities) ? t : []
   })))
 }
 
-function k(e) {
+function j(e) {
   return 0 === e.length ? e : [...new Map([...e].reverse().map(e => {
     var t;
     return ["".concat(e.application_id, ":").concat(null == (t = e.party) ? true : t.id), e]
   })).values()]
 }
 
-function j(e) {
+function k(e) {
   let t = O[e];
   if (null == t) return;
   let n = s().maxBy(Object.values(t), e => e.processedAtTimestamp);
@@ -171,7 +171,7 @@ function U(e) {
     let {
       visible: e,
       hidden: c
-    } = x(a.length > 1 ? [...a].sort(L) : a, n), d = k([...null != s ? s : [], ...c]), f = u[t];
+    } = x(a.length > 1 ? [...a].sort(L) : a, n), d = j([...null != s ? s : [], ...c]), f = u[t];
     a = null != f && o()(f.activities, e) ? f.activities : e, u[t] = {
       status: r,
       clientStatus: i,
@@ -211,7 +211,7 @@ function G(e) {
     let {
       visible: e,
       hidden: l
-    } = x(o.length > 1 ? [...o].sort(L) : o, n), u = k([...null != a ? a : [], ...l]);
+    } = x(o.length > 1 ? [...o].sort(L) : o, n), u = j([...null != a ? a : [], ...l]);
     c[t] = {
       status: r,
       clientStatus: i,
@@ -290,7 +290,7 @@ function V(e) {
       hiddenActivities: a,
       processedAtTimestamp: s
     }), i.add(t.id))
-  }), i.delete(r), i.forEach(j)
+  }), i.delete(r), i.forEach(k)
 }
 
 function H(e) {

@@ -108,7 +108,7 @@ function x() {
 
 function M() {
   let e = Chunk594174.default.getCurrentUser();
-  k(), null != module && (b = d({}, E = {
+  j(), null != module && (b = d({}, E = {
     [Chunk981631.oAB.ACCOUNT]: {
       userId: module.id,
       username: module.username,
@@ -122,11 +122,11 @@ function M() {
   }))
 }
 
-function k() {
+function j() {
   f = Chunk981631.QZA.OPEN, g = {}
 }
 
-function j(e) {
+function k(e) {
   var t;
   if (f !== c.QZA.SUBMITTING) returnfalse;
   f = c.QZA.OPEN, p = c.oAB.ACCOUNT, g = null != (t = e.errors) ? t : {}
@@ -183,11 +183,11 @@ let G = new U(Chunk570140.Z, {
   USER_SETTINGS_MODAL_CLOSE: R,
   LOGOUT: R,
   USER_SETTINGS_MODAL_SUBMIT: x,
-  USER_SETTINGS_MODAL_SUBMIT_FAILURE: j,
+  USER_SETTINGS_MODAL_SUBMIT_FAILURE: k,
   USER_SETTINGS_MODAL_SET_SECTION: P,
   USER_SETTINGS_MODAL_CLEAR_SUBSECTION: w,
   USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: D,
   USER_SETTINGS_MODAL_UPDATE_ACCOUNT: L,
-  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: k,
+  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: j,
   USER_SETTINGS_MODAL_RESET: M
 })

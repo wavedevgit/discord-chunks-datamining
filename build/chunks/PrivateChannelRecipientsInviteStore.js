@@ -48,7 +48,7 @@ function R(e) {
 function P() {
   if (!O) returnfalse;
   let e = Chunk592125.Z.getChannel(N);
-  if (0 === v.trim().length) return null != r && r.clearQuery(), T = k(module), true;
+  if (0 === v.trim().length) return null != r && r.clearQuery(), T = j(module), true;
   let t = null != module ? module.recipients : [];
   if (null != r) {
     var n;
@@ -102,7 +102,7 @@ function M(e) {
   N = e.channelId, R(e.query)
 }
 
-function k(e) {
+function j(e) {
   let t = m.Z.getFriendIDs(),
     n = g.default.getCurrentUser();
   return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ...g.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
@@ -114,7 +114,7 @@ function k(e) {
   }, []).sort(D)
 }
 
-function j(e) {
+function k(e) {
   let {
     results: t
   } = e;
@@ -157,7 +157,7 @@ function G(e) {
 }
 
 function B() {
-  return null != r && (r.destroy(), r = null), Chunk279779.Z.getUserSearchContext(j, y)
+  return null != r && (r.destroy(), r = null), Chunk279779.Z.getUserSearchContext(k, y)
 }
 
 function Z(e) {

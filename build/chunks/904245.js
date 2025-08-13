@@ -247,7 +247,7 @@ function eM(e) {
   }
 }
 
-function ek(e, t, n, r, i) {
+function ej(e, t, n, r, i) {
   (0, eh.Q_)(e).forEach(e => {
     let o = eo.Z.getChannel(t);
     null != o && d.ZP.trackWithMetadata(eO.rMx.GIFT_CODE_SENT, {
@@ -262,7 +262,7 @@ function ek(e, t, n, r, i) {
   })
 }
 
-function ej(e, t) {
+function ek(e, t) {
   let n = es.Z.getMessage(e, t);
   return null != n && n.hasFlag(eO.iLy.CROSSPOSTED)
 }
@@ -714,7 +714,7 @@ let eG = {
       });
       let s = () => eB._sendMessage(e, t, i),
         l = x.ZP.backgroundify(s, true);
-      return (k.Z.recordMessageSendAttempt(e, a, i), es.Z.isReady(e)) ? l() : r && e !== E.V ? (ew.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
+      return (j.Z.recordMessageSendAttempt(e, a, i), es.Z.isReady(e)) ? l() : r && e !== E.V ? (ew.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
         es.Z.whenReady(e, () => {
           ew.info("Channel ".concat(e, " is ready for sending now.")), l().then(t, n)
         })
@@ -826,7 +826,7 @@ let eG = {
         context: {
           location: eI.dy.GREET
         }
-      }).then(n => (j.Z.donateSentMessage(n.body.content, e), eB.receiveMessage(e, n.body), s.Z.dispatch({
+      }).then(n => (k.Z.donateSentMessage(n.body.content, e), eB.receiveMessage(e, n.body), s.Z.dispatch({
         type: "STICKER_TRACK_USAGE",
         stickerIds: [t]
       }), n), t => {
@@ -976,7 +976,7 @@ let eG = {
         ew.info("Queueing message to be sent LogId:".concat(a)), u.ZP.enqueue(eo, a => {
           let c = Date.now() - i;
           if (a.ok) {
-            j.Z.donateSentMessage(d, e), eB.receiveMessage(e, a.body, true, {
+            k.Z.donateSentMessage(d, e), eB.receiveMessage(e, a.body, true, {
               sendAnalytics: {
                 duration: c,
                 queueSize: o
@@ -1004,7 +1004,7 @@ let eG = {
                 joinRequestUserId: n
               })
             }
-            k.Z.recordMessageSendApiResponse(et), s.Z.dispatch({
+            j.Z.recordMessageSendApiResponse(et), s.Z.dispatch({
               type: "SLOWMODE_RESET_COOLDOWN",
               slowmodeType: ed.S.SendMessage,
               channelId: e
@@ -1026,7 +1026,7 @@ let eG = {
               messageId: a.body.id,
               location: null != m ? m : "chat_input",
               suggested: g
-            }), ek(d, e, a.body.id, null != m ? m : "chat_input", !!n.isGiftLinkSentOnBehalfOfUser), null != l && s.Z.dispatch({
+            }), ej(d, e, a.body.id, null != m ? m : "chat_input", !!n.isGiftLinkSentOnBehalfOfUser), null != l && s.Z.dispatch({
               type: "UPLOAD_COMPLETE",
               channelId: e,
               file: l._file,
@@ -1143,7 +1143,7 @@ let eG = {
       } = n;
       await et.Z.unarchiveThreadIfNecessary(e);
       let o = eU(e, t),
-        l = ej(e, t),
+        l = ek(e, t),
         c = {
           channelId: e,
           messageId: t,

@@ -2,13 +2,13 @@
 /** chunk id: 335131, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B1: () => j,
+  B1: () => k,
   DR: () => R,
   F$: () => L,
   Ov: () => G,
   R2: () => U,
   Sm: () => C,
-  fK: () => k,
+  fK: () => j,
   fi: () => B,
   jr: () => M,
   mK: () => N,
@@ -198,7 +198,7 @@ let N = e => {
         error: t
       })
     }
-  }, k = async e => {
+  }, j = async e => {
     s.Z.dispatch({
       type: "COLLECTIBLES_CLAIM",
       skuId: e
@@ -225,7 +225,7 @@ let N = e => {
         error: t
       }), t
     }
-  }, j = async (e, t) => {
+  }, k = async (e, t) => {
     try {
       return (await a.tn.get({
         url: v.ANM.COLLECTIBLES_VALID_GIFT_RECIPIENT,

@@ -39,7 +39,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk524484 = require("./524484.js"),
   Chunk170088 = require("./170088.js");
 
-function j(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -55,7 +55,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -86,20 +86,20 @@ let Z = Chunk73800.memo(e => {
     channel: l,
     sessionId: O,
     nick: A
-  } = e, k = a.id, j = (0, s.e7)([I.default], () => I.default.getId() === k, [k]), [G, Z, F] = (0, s.Wu)([S.Z], () => j ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(k), false, S.Z.isLocalVideoDisabled(k)], [j, k]), V = (0, s.e7)([P.Z], () => P.Z.isPrioritySpeaker(k)), H = (0, c.Z)({
-    userId: k,
+  } = e, j = a.id, k = (0, s.e7)([I.default], () => I.default.getId() === j, [j]), [G, Z, F] = (0, s.Wu)([S.Z], () => k ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(j), false, S.Z.isLocalVideoDisabled(j)], [k, j]), V = (0, s.e7)([P.Z], () => P.Z.isPrioritySpeaker(j)), H = (0, c.Z)({
+    userId: j,
     checkSoundSharing: true
-  }), Y = (0, s.e7)([T.ZP], () => T.ZP.isGuestOrLurker(l.guild_id, k)), W = (0, s.e7)([_.Z], () => _.Z.getGuildRingingUsers(l.id).has(k)), K = (0, s.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(l.id).find(e => {
+  }), Y = (0, s.e7)([T.ZP], () => T.ZP.isGuestOrLurker(l.guild_id, j)), W = (0, s.e7)([_.Z], () => _.Z.getGuildRingingUsers(l.id).has(j)), K = (0, s.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(l.id).find(e => {
     let {
       userIds: t
     } = e;
-    return t.has(k)
-  }), [k, l.id]), z = (0, f.Z)(null != K ? [K.applicationId] : []), q = (0, s.e7)([N.Z, C.Z], () => j ? C.Z.getActivities() : N.Z.getActivities(k, l.guild_id)).find(e => null != e.application_id && e.type === x.IIU.PLAYING), X = null != (n = (0, d.IX)(null == q ? true : q.application_id).data) ? n : true, [Q, J] = (0, s.Wu)([v.Z], () => [v.Z.getStreamForUser(k, l.getGuildId()), v.Z.getActiveStreamForUser(k, l.getGuildId())], [l, k]), $ = (0, s.e7)([R.Z], () => R.Z.getSessionById(O)), ee = D.ZP.useName(a), et = (0, s.e7)([w.Z], () => w.Z.getVoicePlatformForChannel(l.id, k), [l.id, k]), {
+    return t.has(j)
+  }), [j, l.id]), z = (0, f.Z)(null != K ? [K.applicationId] : []), q = (0, s.e7)([N.Z, C.Z], () => k ? C.Z.getActivities() : N.Z.getActivities(j, l.guild_id)).find(e => null != e.application_id && e.type === x.IIU.PLAYING), X = null != (n = (0, d.IX)(null == q ? true : q.application_id).data) ? n : true, [Q, J] = (0, s.Wu)([v.Z], () => [v.Z.getStreamForUser(j, l.getGuildId()), v.Z.getActiveStreamForUser(j, l.getGuildId())], [l, j]), $ = (0, s.e7)([R.Z], () => R.Z.getSessionById(O)), ee = D.ZP.useName(a), et = (0, s.e7)([w.Z], () => w.Z.getVoicePlatformForChannel(l.id, j), [l.id, j]), {
     enableHangStatus: en
   } = h.n.useExperiment({
     guildId: l.guild_id,
     location: "VoiceUsers"
-  }), er = (0, p.ZP)(l, true, a), ei = (0, s.e7)([m.Z], () => j ? m.Z.getHangStatusActivity() : null, [j]), eo = (0, g.j)(k), ea = (0, y.Eu)(l.id, k), {
+  }), er = (0, p.ZP)(l, true, a), ei = (0, s.e7)([m.Z], () => k ? m.Z.getHangStatusActivity() : null, [k]), eo = (0, g.j)(j), ea = (0, y.Eu)(l.id, j), {
     enableVCStatusIcons: es,
     enableRequestToStream: el
   } = b.A.useExperiment({
@@ -115,7 +115,7 @@ let Z = Chunk73800.memo(e => {
       disconnected: ea,
       otherClientSessionType: null == $ || null == (t = $.clientInfo) ? true : t.os,
       voicePlatform: et,
-      localMute: G && !j,
+      localMute: G && !k,
       localVideoDisabled: F,
       mute: i || G,
       deaf: o || Z,
@@ -126,11 +126,11 @@ let Z = Chunk73800.memo(e => {
       isStreaming: null != Q && Q.channelId === l.id,
       isWatching: null != J && J.state !== x.jm8.ENDED,
       isGuest: Y,
-      isSelf: j,
+      isSelf: k,
       requestToStreamActivity: el ? q : true,
       application: es && (null == q ? true : q.session_id) != null ? X : true,
-      showHangStatus: er && en && (j || null != eo),
-      hangStatusActivity: j ? ei : eo
+      showHangStatus: er && en && (k || null != eo),
+      hangStatusActivity: k ? ei : eo
     }))
   })
 });
@@ -158,7 +158,7 @@ let F = 50,
       T(null)
     })), M = i.useCallback(e => {
       t && (C(true), D.current.cancel(), R.current = e, w.current.delay())
-    }, [t]), j = i.useCallback(e => {
+    }, [t]), k = i.useCallback(e => {
       t && (w.current.cancel(), v === e && (C(false), D.current.delay()))
     }, [t, v]), U = () => {
       if (null == P || 0 === P.length) return null;
@@ -185,7 +185,7 @@ let F = 50,
             collapsed: u,
             canDrag: n && A.Z.can(x.Plq.MOVE_MEMBERS, o),
             showPreview: M,
-            hidePreview: j,
+            hidePreview: k,
             previewIsOpen: S,
             shouldShowHoverPopout: v === a.id,
             tabIndex: p,
@@ -213,9 +213,9 @@ let F = 50,
     (0, f.Z)(G);
     let B = U();
     return null == B && null == b ? null : (0, r.jsxs)(O.eJ, {
-      className: a()(E, k.list, {
-        [k.collapsed]: u,
-        [k.withGuildIcon]: g
+      className: a()(E, j.list, {
+        [j.collapsed]: u,
+        [j.withGuildIcon]: g
       }),
       collapsed: u,
       children: [B, b]

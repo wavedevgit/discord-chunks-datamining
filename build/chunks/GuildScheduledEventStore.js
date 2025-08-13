@@ -155,7 +155,7 @@ function M(e) {
   A(t)
 }
 
-function k(e) {
+function j(e) {
   let {
     guildId: t,
     guildScheduledEvents: n
@@ -166,7 +166,7 @@ function k(e) {
   returntrue
 }
 
-function j(e) {
+function k(e) {
   let {
     guild: t
   } = e;
@@ -370,10 +370,10 @@ class et extends(r = Chunk442837.ZP.Store) {
 _(et, "displayName", "GuildScheduledEventStore");
 let en = new et(Chunk570140.Z, {
   CONNECTION_OPEN: x,
-  GUILD_CREATE: j,
+  GUILD_CREATE: k,
   GUILD_DELETE: U,
   FETCH_GUILD_EVENT: M,
-  FETCH_GUILD_EVENTS_FOR_GUILD: k,
+  FETCH_GUILD_EVENTS_FOR_GUILD: j,
   GUILD_SCHEDULED_EVENT_CREATE: B,
   GUILD_SCHEDULED_EVENT_UPDATE: B,
   GUILD_SCHEDULED_EVENT_DELETE: Z,

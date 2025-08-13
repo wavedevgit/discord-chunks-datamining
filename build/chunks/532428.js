@@ -89,26 +89,26 @@ function M() {
   return new Set(a().range(2015, module + 1).map(e => e.toString()))
 }
 
-function k(e, t) {
+function j(e, t) {
   return [e, e.clone().add(1, t)]
 }
 
-function j(e) {
+function k(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
-  return k(l()().startOf(e).add(t, e), e)
+  return j(l()().startOf(e).add(t, e), e)
 }
 
 function U(e, t, n) {
-  return k(l()(e, t).local(), n)
+  return j(l()(e, t).local(), n)
 }
 
 function G() {
   return {
-    [Chunk388032.intl.string(Chunk388032.t.HYiVER)]: () => j("day"),
-    [Chunk388032.intl.string(Chunk388032.t.cu86KC)]: () => j("day", false),
-    [Chunk388032.intl.string(Chunk388032.t["FvBj//"])]: () => j("week"),
-    [Chunk388032.intl.string(Chunk388032.t["20uWCw"])]: () => j("month"),
-    [Chunk388032.intl.string(Chunk388032.t["dXC/ho"])]: () => j("year")
+    [Chunk388032.intl.string(Chunk388032.t.HYiVER)]: () => k("day"),
+    [Chunk388032.intl.string(Chunk388032.t.cu86KC)]: () => k("day", false),
+    [Chunk388032.intl.string(Chunk388032.t["FvBj//"])]: () => k("week"),
+    [Chunk388032.intl.string(Chunk388032.t["20uWCw"])]: () => k("month"),
+    [Chunk388032.intl.string(Chunk388032.t["dXC/ho"])]: () => k("year")
   }
 }
 let B = "([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})",

@@ -9,8 +9,6 @@ module.exports = {
   messageState: "messageState_f6bd5f",
   cancelMessageButton: "cancelMessageButton_f6bd5f",
   message: "message_f6bd5f",
-  container: "container_f6bd5f " + require("./193578.js").recentMentionsPopout,
-  widerInbox: "widerInbox_f6bd5f " + require("./193578.js").widerInbox,
   channelRow: "channelRow_f6bd5f",
   loadingPlaceholder: "loadingPlaceholder_f6bd5f"
 }

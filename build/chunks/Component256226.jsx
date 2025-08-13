@@ -94,8 +94,8 @@ let N = Chunk73800.forwardRef(function(e, t) {
     {
       tabIndex: M
     } = x,
-    k = S(x, ["tabIndex"]),
-    j = (0, g.p9)({
+    j = S(x, ["tabIndex"]),
+    k = (0, g.p9)({
       roleId: R.id,
       size: 16,
       guildId: w
@@ -183,10 +183,10 @@ let N = Chunk73800.forwardRef(function(e, t) {
       onMouseDown: L,
       "aria-label": R.name,
       tabIndex: M
-    }, k), {
-      children: [z(), null != j ? (0, r.jsx)(m.Z, T(v({
+    }, j), {
+      children: [z(), null != k ? (0, r.jsx)(m.Z, T(v({
         className: y.roleIcon
-      }, j), {
+      }, k), {
         enableTooltip: false
       })) : null, (0, r.jsx)("div", {
         "aria-hidden": true,

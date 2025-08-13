@@ -3,13 +3,15 @@
 "use strict";
 require.r(exports), require.d(exports, {
   AVSurveyFacesRive: () => Chunk550851.m,
+  FistBumpRive: () => Chunk710979.p,
   GlowButtonRive: () => Chunk573365.Q,
   JetpackWumpusWithTrinketsRive: () => Chunk820047.z,
   PerfTestRive: () => Chunk587825.t,
   PulseGradientRive: () => Chunk327705.z,
   WandAndSparklesRive: () => Chunk827596.x
 });
-var Chunk820047 = require("./820047.jsx"),
+var Chunk710979 = require("./710979.jsx"),
+  Chunk820047 = require("./820047.jsx"),
   Chunk827596 = require("./827596.jsx"),
   Chunk327705 = require("./327705.jsx"),
   Chunk587825 = require("./587825.jsx"),

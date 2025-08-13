@@ -72,9 +72,9 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = (e, t, n) => (0, A.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
+let j = (e, t, n) => (0, A.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
 
-function j(e) {
+function k(e) {
   let {
     containerSize: t,
     onClick: n,
@@ -274,7 +274,7 @@ let B = e => {
       }), (0, r.jsxs)("div", {
         className: a()(w.gridText, w.taskDetails),
         children: [(0, r.jsx)(c.Text, {
-          variant: k(o, u, F),
+          variant: j(o, u, F),
           className: w.taskInstructions,
           children: _ ? P.intl.formatToPlainString(P.t["ge+AJi"], {
             questName: n.config.messages.questName
@@ -306,7 +306,7 @@ let B = e => {
         })]
       }) : (0, r.jsxs)("div", {
         className: a()(w.ctaButtonContainer, w.gridCtaButtons),
-        children: [!W && (0, r.jsx)(j, {
+        children: [!W && (0, r.jsx)(k, {
           containerSize: u,
           onClick: er,
           children: P.intl.string(P.t.LLLLPD)

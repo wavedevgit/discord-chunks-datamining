@@ -72,8 +72,8 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
   L = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_UNICODE_ICON_SIZE),
   x = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
   M = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
-  k = [P, P, P, P],
-  j = (w + D) * 2 + P,
+  j = [P, P, P, P],
+  k = (w + D) * 2 + P,
   U = x + 2 * M,
   G = 7,
   B = e => {
@@ -133,8 +133,8 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       }, "recent");
       let x = t === o,
         M = n[o],
-        k = n[o + 1],
-        j = null != k && M.type === b.Ih.GUILD && k.type !== b.Ih.GUILD,
+        j = n[o + 1],
+        k = null != j && M.type === b.Ih.GUILD && j.type !== b.Ih.GUILD,
         U = M.type === b.Ih.PACK,
         G = "",
         B = null;
@@ -178,11 +178,11 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
               children: B
             }))
           })
-        }), j ? (0, r.jsx)("hr", {
+        }), k ? (0, r.jsx)("hr", {
           className: S.guildCategorySeparator
         }, "separator") : null]
       }, M.id)
-    }, [t, _, m, n]), A = i.useCallback((e, t) => t ? j : 0, []);
+    }, [t, _, m, n]), A = i.useCallback((e, t) => t ? k : 0, []);
     return {
       getScrollOffsetForIndex: A,
       renderCategoryListItem: g,
@@ -241,7 +241,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       categoryListRef: o,
       expressionsListRef: t,
       store: d.ZN,
-      listPadding: k,
+      listPadding: j,
       onScroll: v,
       renderCategoryListItem: y,
       rowCount: f.length,

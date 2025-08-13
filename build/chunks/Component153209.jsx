@@ -1,90 +1,67 @@
 /** Chunk was on 41753 **/
 /** chunk id: 153209, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Gp: () => y,
+  ZP: () => O
 }), require("./388685.js"), require("./642613.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
-  Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
-  Chunk524437 = require("./524437.js"),
   Chunk481060 = require("./481060.js"),
   Chunk140155 = require("./140155.js"),
   Chunk497089 = require("./497089.js"),
   Chunk178480 = require("./178480.js"),
   Chunk11799 = require("./11799.js"),
   Chunk616032 = require("./616032.jsx"),
-  Chunk216789 = require("./216789.js"),
   Chunk695346 = require("./695346.js"),
   Chunk626135 = require("./626135.js"),
   Chunk709054 = require("./709054.js"),
-  Chunk791914 = require("./791914.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk556871 = require("./556871.js"),
   Chunk808934 = require("./808934.js");
 
-function E(e) {
+function O() {
   let {
-    onClick: t
-  } = e;
-  return (0, r.jsx)(c.M0o, {
-    tooltip: C.intl.string(C.t["8k+6QU"]),
-    color: c.YX$.TERTIARY,
-    icon: (0, r.jsx)(c.W6s, {
-      size: "xs",
-      color: "currentColor"
-    }),
-    className: j.controlButton,
-    onClick: t
+    initialized: e,
+    items: t,
+    loading: n,
+    loadMore: i
+  } = (0, Chunk11799.y6)(), o = _(exports, (0, Chunk442837.e7)([Chunk140155.Z], () => Chunk140155.Z.localItems));
+  return (0, Chunk255367.jsx)(Chunk616032.Z, {
+    initialized: module,
+    items: Chunk481060,
+    loading: require,
+    loadMore: Chunk73800
   })
 }
 
-function S(e) {
+function _(e, t) {
+  return i.useMemo(() => [...[...e, ...t].sort((e, t) => false * f.default.compare(e.id, t.id))], [e, t])
+}
+
+function y() {
   let {
-    setTab: t,
-    badgeState: n,
-    closePopout: l
-  } = e, {
-    initialized: C,
-    items: j,
-    loading: S,
-    loadMore: x
-  } = (0, p.y6)(), I = (0, s.e7)([u.Z], () => u.Z.localItems), P = (0, g.Us)({
-    location: "ForYou"
-  }), N = i.useMemo(() => [...[...j, ...I].sort((e, t) => false * O.default.compare(e.id, t.id))], [j, I]), w = j.length > 0 ? j[0] : null, Z = m.d$.useSetting(), T = i.useMemo(() => {
-    if (null != w && 0 >= O.default.compare(w.id, Z)) returnfalse;
-    for (let e of N) {
-      if (0 >= O.default.compare(e.id, Z)) break;
-      if (!(0, h.r)(e, Z)) returntrue
+    items: e
+  } = (0, Chunk11799.y6)(), t = module.length > 0 ? module[0] : null, n = _(module, (0, Chunk442837.e7)([Chunk140155.Z], () => Chunk140155.Z.localItems)), d = Chunk695346.d$.useSetting();
+  return Chunk73800.useMemo(() => {
+    if (null != exports && 0 >= Chunk709054.default.compare(exports.id, Chunk616032)) returnfalse;
+    for (let e of require) {
+      if (0 >= Chunk709054.default.compare(module.id, Chunk616032)) break;
+      if (!(0, Chunk178480.r)(module, Chunk616032)) returntrue
     }
     returnfalse
-  }, [w, Z, N]);
-  return (0, r.jsx)("div", {
-    className: o()(v.container, {
-      [v.widerInbox]: P
+  }, [exports, Chunk616032, require]) ? (0, Chunk255367.jsx)(Chunk481060.M0o, {
+    tooltip: Chunk388032.intl.string(Chunk388032.t["8k+6QU"]),
+    color: Chunk481060.YX$.TERTIARY,
+    icon: (0, Chunk255367.jsx)(Chunk481060.W6s, {
+      size: "xs",
+      color: "currentColor"
     }),
-    children: (0, r.jsx)(c.y5t, {
-      component: (0, r.jsx)(_.Z, {
-        tab: a.X.FOR_YOU,
-        setTab: t,
-        badgeState: n,
-        closePopout: l,
-        children: T ? (0, r.jsx)(E, {
-          onClick: () => {
-            null != w && (m.d$.updateSetting(w.id), b.default.track(y.rMx.NOTIFICATION_CENTER_ACTION, {
-              action_type: d.ud.MARK_ALL_READ
-            }))
-          }
-        }) : null
-      }),
-      children: (0, r.jsx)(f.Z, {
-        initialized: C,
-        items: N,
-        loading: S,
-        loadMore: x
-      })
-    })
-  })
+    className: Chunk808934.controlButton,
+    onClick: () => {
+      null != exports && (Chunk695346.d$.updateSetting(exports.id), Chunk626135.default.track(Chunk981631.rMx.NOTIFICATION_CENTER_ACTION, {
+        action_type: Chunk497089.ud.MARK_ALL_READ
+      }))
+    }
+  }) : null
 }

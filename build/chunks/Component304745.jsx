@@ -76,8 +76,8 @@ function D(e) {
     whichPopoutIsOpen: A,
     setWhichPopoutIsOpen: C
   } = e, D = (0, o.e7)([u.ZP], () => u.ZP.isLaunchingActivity()), L = (0, f.KF)(t.id), x = (0, f.g5)(L), M = L !== f.jy.CAN_LAUNCH || D, {
-    isHovered: k,
-    setIsHovered: j,
+    isHovered: j,
+    setIsHovered: k,
     onMouseEnter: U,
     onMouseLeave: G
   } = (0, y.Z)(w, P), B = (0, d.p)({
@@ -108,18 +108,18 @@ function D(e) {
       let {
         visibleContent: i,
         markAsDismissed: o
-      } = e, l = i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !k;
+      } = e, l = i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !j;
       return q.current && !l && o(T.L.AUTO_DISMISS), q.current !== l && (q.current = l), (0, r.jsx)(s.yRy, {
         targetElementRef: X,
         fixed: true,
-        shouldShow: k && (A === v.D.ACTIVITY || null == A),
+        shouldShow: j && (A === v.D.ACTIVITY || null == A),
         animation: s.yRy.Animation.FADE,
         animationPosition: "top",
         position: "top",
         align: "center",
         spacing: 16,
         onRequestClose: () => {
-          j(false), null == C || C(true)
+          k(false), null == C || C(true)
         },
         renderPopout: e => {
           let {
@@ -134,7 +134,7 @@ function D(e) {
             closePopout: n,
             onMouseEnter: U,
             onMouseLeave: G,
-            isHovered: k,
+            isHovered: j,
             onClick: () => o(T.L.UNKNOWN)
           }) : (0, r.jsx)(r.Fragment, {})
         },

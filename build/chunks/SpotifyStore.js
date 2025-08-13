@@ -69,8 +69,8 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY),
-  j = "wss://dealer.spotify.com/?access_token=",
+let j = Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY),
+  k = "wss://dealer.spotify.com/?access_token=",
   U = "hm://pusher/v1/connections/",
   G = 30 * Chunk70956.Z.Millis.SECOND,
   B = 30 * Chunk70956.Z.Millis.SECOND,
@@ -144,8 +144,8 @@ class ep {
     return null != this.socket && e_.has(this.socket.readyState)
   }
   connect() {
-    this.connected || this._requestedConnect || (J.info("WS Connecting"), this._requestedDisconnect = false, this._requestedConnect = true, ej(this.accountId, this.accessToken).then(() => {
-      this._requestedConnect = false, this.socket = new WebSocket("".concat(j).concat(this.accessToken)), this.socket.onopen = this.handleOpen.bind(this), this.socket.onmessage = this.handleMessage.bind(this), this.socket.onclose = this.socket.onerror = this.handleClose.bind(this)
+    this.connected || this._requestedConnect || (J.info("WS Connecting"), this._requestedDisconnect = false, this._requestedConnect = true, ek(this.accountId, this.accessToken).then(() => {
+      this._requestedConnect = false, this.socket = new WebSocket("".concat(k).concat(this.accessToken)), this.socket.onopen = this.handleOpen.bind(this), this.socket.onmessage = this.handleMessage.bind(this), this.socket.onclose = this.socket.onerror = this.handleClose.bind(this)
     }).catch(e => {
       J.error(e), this._requestedConnect = false, this.handleClose()
     }))
@@ -205,7 +205,7 @@ class ep {
     } = e;
     switch (t) {
       case "PLAYER_STATE_CHANGED":
-        null != n && null != n.state && ek(this.accountId, this.accessToken, n.state);
+        null != n && null != n.state && ej(this.accountId, this.accessToken, n.state);
         break;
       case "DEVICE_STATE_CHANGED":
         this.handleDeviceStateChange()
@@ -213,7 +213,7 @@ class ep {
   }
   constructor(e, t) {
     D(this, "accessToken", true), D(this, "accountId", true), D(this, "connectionId", true), D(this, "isPremium", true), D(this, "pingInterval", true), D(this, "backoff", true), D(this, "socket", true), D(this, "_requestedDisconnect", false), D(this, "_requestedConnect", false), D(this, "handleDeviceStateChange", l().throttle(() => {
-      (0, R.PW)(this.accountId, this.accessToken), ej(this.accountId, this.accessToken)
+      (0, R.PW)(this.accountId, this.accessToken), ek(this.accountId, this.accessToken)
     }, z)), this.accountId = e, this.accessToken = t, this.pingInterval = new f.Xp, this.backoff = new c.Z(true, K), this.connect()
   }
 }
@@ -509,11 +509,11 @@ function eM(e) {
       sourceId: e,
       sound: n
     } = null == t ? true : t.desktopSettings;
-    null != e && E.ZP.getObservedAppNameForWindow(e) === k.name && n ? (el = new f.Xp).start(B, eP) : (null == el || el.stop(), el = null)
+    null != e && E.ZP.getObservedAppNameForWindow(e) === j.name && n ? (el = new f.Xp).start(B, eP) : (null == el || el.stop(), el = null)
   } else null == t && (null == el || el.stop(), el = null)
 }
 
-function ek(e, t, n) {
+function ej(e, t, n) {
   var r, i, o, a, s, l, c, u, d, f, p, h, m, g;
   let E, b, {
     device: y,
@@ -584,7 +584,7 @@ function ek(e, t, n) {
   })
 }
 
-function ej(e, t) {
+function ek(e, t) {
   return R.rC.get(e, t, {
     url: P.C7.PLAYER,
     query: {
@@ -593,7 +593,7 @@ function ej(e, t) {
     onlyRetryOnAuthorizationErrors: true
   }).then(n => {
     let r = n.body;
-    null != r ? ek(e, t, r).then(() => n) : ed(e)
+    null != r ? ej(e, t, r).then(() => n) : ed(e)
   }).catch(() => ed(e))
 }
 class eU extends(a = Chunk442837.ZP.Store) {
@@ -683,7 +683,7 @@ class eU extends(a = Chunk442837.ZP.Store) {
         button_urls: []
       },
       y = {
-        name: k.name,
+        name: j.name,
         assets: Chunk726542,
         details: Chunk710845,
         state: module,

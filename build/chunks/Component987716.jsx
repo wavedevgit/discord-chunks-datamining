@@ -94,13 +94,13 @@ let S = e => {
     orientation: "horizontal"
   }), {
     ref: L
-  } = D, x = I(D, ["ref"]), M = (0, u.MY)(b, t), k = M === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, j = M !== u.xr.DEFAULT, U = (0, _.m)(), G = (0, f.ZP)({
+  } = D, x = I(D, ["ref"]), M = (0, u.MY)(b, t), j = M === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, k = M !== u.xr.DEFAULT, U = (0, _.m)(), G = (0, f.ZP)({
     location: "GiftAnimationOptions"
   }), B = e => {
     null != C && C(null == e ? true : e)
   };
   return (0, r.jsxs)("div", {
-    children: [j && (0, r.jsxs)("div", {
+    children: [k && (0, r.jsxs)("div", {
       className: a()(E.giftMainAnimation, n),
       children: [null != O ? (0, r.jsx)(p.Z, {
         giftStyle: O,
@@ -110,7 +110,7 @@ let S = e => {
         className: E.animation
       }) : (0, r.jsx)(s.$jN, {
         className: E.spinner
-      }), k && (0, r.jsxs)("div", {
+      }), j && (0, r.jsxs)("div", {
         className: a()(E.soundEmojiContainer, G && E.refresh),
         children: [(0, r.jsx)(c.Z, {
           sound: A,

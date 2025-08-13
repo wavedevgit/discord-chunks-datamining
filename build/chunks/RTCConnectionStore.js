@@ -172,7 +172,7 @@ function D(e) {
   return t.reduce((e, t) => {
     var n, o, a;
     if (null == O || O.updateVoiceStates(t.userId, t.channelId), I = I || (null != (n = null == O ? true : O.getStats().max_voice_state_count) ? n : 0) > 1, f.default.getId() !== t.userId) return e;
-    if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? R() : (r.channelId = t.channelId, A = true, N = null, r.clearJoinVoiceId()) : (t.guildId !== r.guildId && null == t.channelId || R(), null != t.channelId && (b = null, y = null, r = C(t.guildId, t.channelId), I = (null != (o = null == O ? true : O.getStats().max_voice_state_count) ? o : 0) > 1)) : t.guildId === r.guildId && ((null == u.Z.getAwaitingRemoteSessionInfo() || null == u.Z.getRemoteSessionId()) && (b = r.channelId), R());
+    if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? R() : (r.setNextChannelId(t.channelId), A = true, N = null, r.clearJoinVoiceId()) : (t.guildId !== r.guildId && null == t.channelId || R(), null != t.channelId && (b = null, y = null, r = C(t.guildId, t.channelId), I = (null != (o = null == O ? true : O.getStats().max_voice_state_count) ? o : 0) > 1)) : t.guildId === r.guildId && ((null == u.Z.getAwaitingRemoteSessionInfo() || null == u.Z.getRemoteSessionId()) && (b = r.channelId), R());
     else {
       if (t.sessionId !== i || null == t.channelId) return e;
       b = null, y = null, r = C(t.guildId, t.channelId), I = (null != (a = null == O ? true : O.getStats().max_voice_state_count) ? a : 0) > 1
@@ -182,7 +182,7 @@ function D(e) {
 }
 
 function L(e) {
-  if (null == r || null != e.guildId && e.guildId !== r.guildId || null != e.channelId && e.channelId !== r.channelId) returnfalse;
+  if (null == r || null != e.guildId && e.guildId !== r.guildId || null != e.channelId && e.channelId !== r.getNextChannelId()) returnfalse;
   r.connect(e.endpoint, e.token)
 }
 
@@ -194,7 +194,7 @@ function M() {
   y = null
 }
 
-function k(e) {
+function j(e) {
   let {
     guild: t
   } = e;
@@ -202,7 +202,7 @@ function k(e) {
   R()
 }
 
-function j(e) {
+function k(e) {
   let {
     channelId: t
   } = e;
@@ -392,10 +392,10 @@ let q = new z(Chunk570140.Z, __OVERLAY__ ? {} : {
   CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: x,
   REMOTE_SESSION_CONNECT: x,
   CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: M,
-  GUILD_DELETE: k,
+  GUILD_DELETE: j,
   CHANNEL_DELETE: U,
   THREAD_DELETE: U,
-  CALL_DELETE: j,
+  CALL_DELETE: k,
   APP_STATE_UPDATE: B,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: W
 });

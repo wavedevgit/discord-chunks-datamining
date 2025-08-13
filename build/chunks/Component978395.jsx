@@ -42,9 +42,9 @@ function D(e) {
     guild: L,
     isHovering: x,
     onOpenProfile: M,
-    channelId: k,
-    onClose: j
-  } = e, U = u.ZP.useName(null == L ? true : L.id, k, t), {
+    channelId: j,
+    onClose: k
+  } = e, U = u.ZP.useName(null == L ? true : L.id, j, t), {
     relationshipType: G,
     originApplicationId: B
   } = (0, i.cj)([l.Z], () => ({
@@ -59,7 +59,7 @@ function D(e) {
     children: [(0, r.jsx)(v.Z, {
       user: t,
       onOpenProfile: M,
-      onClose: j,
+      onClose: k,
       usernameIcon: t.hasAvatarForGuild(null == L ? true : L.id) && (0, r.jsx)(S.Z, {
         user: t,
         nickname: U
@@ -69,7 +69,7 @@ function D(e) {
       tags: (0, r.jsx)(_.Z, {
         displayProfile: D,
         themeType: C.lY.POPOUT,
-        onClose: j
+        onClose: k
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(m.Z, {
@@ -84,7 +84,7 @@ function D(e) {
       children: (0, r.jsx)(g.Z, {
         user: t,
         guildId: null == L ? true : L.id,
-        channelId: k,
+        channelId: j,
         applicationId: B
       })
     }), Z.map(e => (0, r.jsx)(O.Z.Overlay, {
@@ -92,7 +92,7 @@ function D(e) {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
-        channelId: k
+        channelId: j
       })
     }, e.applicationId)), (0, r.jsx)(E.Z, {
       user: t
@@ -118,23 +118,23 @@ function D(e) {
       user: t,
       bio: null == D ? true : D.bio,
       hidePersonalInformation: F,
-      onClose: j
+      onClose: k
     }), H && (0, r.jsx)(p.Z, {
       isPremiumUser: Y,
-      onInteraction: j
+      onInteraction: k
     }), V ? (0, r.jsx)(y.Z, {
       user: t,
       currentUser: n,
       displayProfile: D,
       guildId: null == L ? true : L.id,
       onOpenUserProfileModal: M,
-      onClose: j
+      onClose: k
     }) : (0, r.jsx)(h.Z, {
       user: t,
       currentUser: n,
       displayProfile: D,
       guildId: null == L ? true : L.id,
-      onClose: j
+      onClose: k
     }), null != L && (0, r.jsx)(A.Z, {
       user: t,
       currentUser: n,

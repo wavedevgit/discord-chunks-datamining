@@ -97,7 +97,7 @@ let M = {
     [O]: Chunk971809.G,
     [v]: Chunk588391.X
   },
-  k = e => ({
+  j = e => ({
     name: "name",
     id: A,
     title: () => _.intl.string(_.t.vyuULS),
@@ -105,7 +105,7 @@ let M = {
     getClassNameForLayout: e => ["modalUS", "modalInternational", "modalUSWithName", "modalInternationalWithName", "settingsUSMobile", "settingsInternationalMobile", "settingsInternationalWithoutNameMobile"].includes(e) ? p.width100 : p.width60,
     renderInput: e => (0, i.jsx)(c.oil, m({}, e))
   }),
-  j = e => ({
+  k = e => ({
     name: "country",
     id: N,
     title: () => _.intl.string(_.t.eDdrAA),
@@ -275,14 +275,14 @@ let M = {
   },
   V = {
     modalUS: [
-      [j],
+      [k],
       [U],
       [G],
       [B],
       [F, Z]
     ],
     modalInternational: [
-      [j],
+      [k],
       [U],
       [G],
       [B],
@@ -290,16 +290,16 @@ let M = {
       [Z]
     ],
     modalUSWithName: [
-      [j],
       [k],
+      [j],
       [U],
       [G],
       [B],
       [F, Z]
     ],
     modalInternationalWithName: [
-      [j],
       [k],
+      [j],
       [U],
       [G],
       [B],
@@ -307,41 +307,41 @@ let M = {
       [Z]
     ],
     settingsUS: [
-      [k],
+      [j],
       [U, G],
       [B, F, Z],
-      [j]
+      [k]
     ],
     settingsUSMobile: [
-      [k],
+      [j],
       [U],
       [G],
       [B],
       [F],
       [Z],
-      [j]
+      [k]
     ],
     settingsInternational: [
-      [k],
+      [j],
       [U, G],
       [B],
       [F, Z],
-      [j]
+      [k]
     ],
     settingsInternationalMobile: [
-      [k],
+      [j],
       [U],
       [G],
       [B],
       [F],
       [Z],
-      [j]
+      [k]
     ],
     settingsInternationalWithoutName: [
       [U, G],
       [B],
       [F, Z],
-      [j]
+      [k]
     ],
     settingsInternationalWithoutNameMobile: [
       [U],
@@ -349,7 +349,7 @@ let M = {
       [B],
       [F],
       [Z],
-      [j]
+      [k]
     ]
   };
 class H extends(r = Chunk73800.PureComponent) {

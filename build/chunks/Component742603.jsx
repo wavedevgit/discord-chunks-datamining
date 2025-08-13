@@ -94,7 +94,7 @@ function W(e) {
       maxVisibleUsers: Y,
       guildId: n.getGuildId(),
       channelId: n.id,
-      disableInteraction: i === k.IlC.POPOUT || o === k.AEg.FULL_SCREEN
+      disableInteraction: i === j.IlC.POPOUT || o === j.AEg.FULL_SCREEN
     })
   })
 }
@@ -189,9 +189,9 @@ function q(e) {
   }), [t.id]), E = i.useContext(N.h9), b = (0, p.ZP)(t), A = (0, h.KS)(t), [C] = (0, f.Z)((null == g ? true : g.type) === M.fO.ACTIVITY ? [g.applicationId] : []), w = U.intl.string(U.t.BVZqJi);
   t.isDM() ? w = U.intl.string(U.t.jN2DfX) : t.isGroupDM() && (w = U.intl.string(U.t["e5y+go"]));
   let L = (0, s.e7)([_.Z], () => _.Z.getChannelStatus(t)),
-    k = t.isGuildVoice() && u && null != L && L.length > 0,
+    j = t.isGuildVoice() && u && null != L && L.length > 0,
     Z = (0, P.ZP)(t),
-    V = k ? (0, r.jsx)(l.ua7, {
+    V = j ? (0, r.jsx)(l.ua7, {
       text: U.intl.string(U.t.Mgpxi4),
       delay: 500,
       position: "bottom",
@@ -237,7 +237,7 @@ function q(e) {
   return (0, r.jsxs)("div", {
     className: G.subtitleContainer,
     children: [(0, r.jsx)(l.f6W, {
-      theme: j.BR.DARK,
+      theme: k.BR.DARK,
       children: e => (0, r.jsxs)(y.ZP, {
         onDoubleClick: O.O,
         transparent: true,

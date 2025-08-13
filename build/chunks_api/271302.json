@@ -1,0 +1,1 @@
+{"id":"271302","type":"experiment","data":{"kind":"user","id":"2025-08_next_channel","label":"Voice Channel Move Behavior Adjustment","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled.","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

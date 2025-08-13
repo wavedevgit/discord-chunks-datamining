@@ -502,7 +502,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     layoutId: t
   } = e, n = r[t];
@@ -514,7 +514,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     widgetConfigs: t
   } = e;
@@ -797,7 +797,7 @@ let Y = new H(Chunk570140.Z, {
   LAYOUT_UPDATE_WIDGET: C,
   LAYOUT_SET_TOP_WIDGET: R,
   LAYOUT_DELETE_WIDGET: M,
-  LAYOUT_DELETE_ALL_WIDGETS: k,
-  LAYOUT_CREATE_WIDGETS: j,
+  LAYOUT_DELETE_ALL_WIDGETS: j,
+  LAYOUT_CREATE_WIDGETS: k,
   LAYOUT_SET_WIDGET_META: w
 })

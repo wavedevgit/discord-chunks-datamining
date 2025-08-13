@@ -78,12 +78,12 @@ let M = (0, Chunk663993.Un)({
     webpackId: 576184,
     name: "UnsupportedBrowser"
   }),
-  k = (0, Chunk663993.Un)({
+  j = (0, Chunk663993.Un)({
     createPromise: () => require.e("74023").then(require.bind(require, 431583)),
     webpackId: 431583,
     name: "DownloadApps"
   }),
-  j = (0, Chunk663993.Un)({
+  k = (0, Chunk663993.Un)({
     createPromise: () => require.e("81226").then(require.bind(require, 484097)),
     webpackId: 484097,
     name: "InviteProxy"
@@ -210,13 +210,13 @@ class ei extends Chunk73800.Component {
       }), (0, Chunk255367.jsx)(Chunk765717.Z, {
         exact: true,
         path: Chunk981631.Z5c.APPS,
-        component: k
+        component: j
       }), (0, Chunk255367.jsx)(Chunk114858.AW, {
         path: er([Chunk981631.Z5c.LOGIN, Chunk981631.Z5c.REGISTER, Chunk981631.Z5c.INVITE(":inviteCode"), Chunk981631.Z5c.INVITE_LOGIN(":inviteCode"), Chunk981631.Z5c.GIFT_CODE(":giftCode"), Chunk981631.Z5c.GIFT_CODE_LOGIN(":giftCode"), Chunk981631.Z5c.RESET], Chunk188785.a),
         component: Y
       }), (0, Chunk255367.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.INVITE_PROXY(Chunk893607.Hw.channelId()),
-        component: j
+        component: k
       }), (0, Chunk255367.jsx)(Chunk114858.l_, {
         from: Chunk981631.Z5c.INVITE(""),
         to: Chunk981631.Z5c.LOGIN
@@ -247,7 +247,7 @@ class ei extends Chunk73800.Component {
         to: Chunk981631.Z5c.LOGIN
       }), (0, Chunk255367.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.INVITE_PROXY(Chunk893607.Hw.channelId()),
-        component: j
+        component: k
       }), (0, Chunk255367.jsx)(Chunk114858.l_, {
         from: Chunk981631.Z5c.GIFT_CODE(""),
         to: Chunk981631.Z5c.LOGIN

@@ -62,13 +62,13 @@ let A = "recentMentionFilterSettings",
   x = 0,
   M = false;
 
-function k(e) {
+function j(e) {
   C = {}, e.forEach(e => {
     null == C[e.getChannelId()] && (C[e.getChannelId()] = 0), C[e.getChannelId()]++
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     addedMessages: t,
     deletedMessages: n
@@ -124,7 +124,7 @@ function Z(e) {
     messages: n,
     isAfter: r
   } = e, i = o().map(n, G);
-  j({
+  k({
     addedMessages: i
   }), r ? N = N.concat(i) : (N = i, R = {}), o().forEach(i, e => {
     R[e.id] = true
@@ -172,7 +172,7 @@ function H(e) {
     })) returnfalse;
   let i = V(n, t);
   if (null == i) returnfalse;
-  (N = N.slice()).unshift(i), R[i.id] = true, j({
+  (N = N.slice()).unshift(i), R[i.id] = true, k({
     addedMessages: [i]
   })
 }
@@ -192,7 +192,7 @@ function Y(e) {
 
 function W(e) {
   if (null == R[e]) returnfalse;
-  delete R[e], j({
+  delete R[e], k({
     deletedMessages: o().filter(N, t => {
       let {
         id: n
@@ -231,7 +231,7 @@ function q(e) {
   r && N.forEach(e => {
     let t = V(e);
     null != t && (i.push(t), R[t.id] = true)
-  }), k(N = i), 0 === N.length && (L = false)
+  }), j(N = i), 0 === N.length && (L = false)
 }
 
 function X() {
@@ -250,13 +250,13 @@ function J(e) {
   N = o().filter(N, e => {
     let r = m.Z.getChannel(e.channel_id);
     return null != r && r.getGuildId() !== t.id || (delete R[e.id], n.push(e), false)
-  }), j({
+  }), k({
     deletedMessages: n
   })
 }
 
 function $() {
-  j({
+  k({
     deletedMessages: o().filter(N, e => b.Z.isBlockedOrIgnoredForMessage(e))
   }), N = N.filter(e => !b.Z.isBlockedOrIgnoredForMessage(e))
 }
@@ -265,7 +265,7 @@ function ee(e) {
   let {
     channel: t
   } = e, n = [];
-  N = o().filter(N, e => e.channel_id !== t.id || (delete R[e.id], n.push(e), false)), j({
+  N = o().filter(N, e => e.channel_id !== t.id || (delete R[e.id], n.push(e), false)), k({
     deletedMessages: n
   })
 }
@@ -278,7 +278,7 @@ function en(e) {
   let {
     size: t
   } = e;
-  j({
+  k({
     deletedMessages: N.slice(t)
   });
   for (let e = t; e < N.length; ++e) delete R[N[e].id];
