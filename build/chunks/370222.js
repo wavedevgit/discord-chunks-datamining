@@ -1,3 +1,3 @@
 /** Chunk was on 99713 **/
 /** chunk id: 370222, original params: e (module,exports,require) **/
-module.exports = JSON.parse('{"klSpfn":"Upravit nastaven\xed","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["zpr\xe1va"],"few":["zpr\xe1vy"],"other":["zpr\xe1v"]},0,"cardinal"]],"O+racX":"Ž\xe1dn\xe1 ozn\xe1men\xed.","dcpdhI":"Vyber zpr\xe1vu, na kterou chceš přej\xedt.","VAK+h4":"V\xedtej ve sv\xe9m centru ozn\xe1men\xed!"}')
+module.exports = JSON.parse('{"klSpfn":"Upravit nastaven\xed","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["zpr\xe1va"],"few":["zpr\xe1vy"],"other":["zpr\xe1v"]},0,"cardinal"]],"O+racX":"Ž\xe1dn\xe1 ozn\xe1men\xed.","5H2Jd3":"Zobrazit vše","dcpdhI":"Vyber zpr\xe1vu, na kterou chceš přej\xedt.","VAK+h4":"V\xedtej ve sv\xe9m centru ozn\xe1men\xed!"}')

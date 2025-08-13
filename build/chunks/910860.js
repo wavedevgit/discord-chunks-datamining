@@ -1,3 +1,3 @@
 /** Chunk was on 47618 **/
 /** chunk id: 910860, original params: e (module,exports,require) **/
-module.exports = JSON.parse('{"klSpfn":"Rediger innstillinger","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["melding"],"other":["meldinger"]},0,"cardinal"]],"O+racX":"Ingen varsler.","dcpdhI":"Velg en melding for \xe5 g\xe5 til den.","VAK+h4":"Velkommen til varslingssenteret!"}')
+module.exports = JSON.parse('{"klSpfn":"Rediger innstillinger","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["melding"],"other":["meldinger"]},0,"cardinal"]],"O+racX":"Ingen varsler.","5H2Jd3":"Vis alle","dcpdhI":"Velg en melding for \xe5 g\xe5 til den.","VAK+h4":"Velkommen til varslingssenteret!"}')

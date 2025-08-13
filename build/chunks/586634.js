@@ -1,3 +1,3 @@
 /** Chunk was on 81590 **/
 /** chunk id: 586634, original params: n (module,exports,require) **/
-module.exports = JSON.parse('{"klSpfn":"Einstellungen bearbeiten","NzUuLC":["+",[1,"count"],"\xa0",[6,"count",{"one":["Nachricht"],"other":["Nachrichten"]},0,"cardinal"]],"O+racX":"Es gibt keine Benachrichtigungen.","dcpdhI":"W\xe4hle eine Nachricht aus, um dorthin zu springen.","VAK+h4":"Willkommen in deinem Benachrichtigungszentrum!"}')
+module.exports = JSON.parse('{"klSpfn":"Einstellungen bearbeiten","NzUuLC":["+",[1,"count"],"\xa0",[6,"count",{"one":["Nachricht"],"other":["Nachrichten"]},0,"cardinal"]],"O+racX":"Es gibt keine Benachrichtigungen.","5H2Jd3":"Alle anzeigen","dcpdhI":"W\xe4hle eine Nachricht aus, um dorthin zu springen.","VAK+h4":"Willkommen in deinem Benachrichtigungszentrum!"}')
