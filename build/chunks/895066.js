@@ -2,18 +2,19 @@
 /** chunk id: 895066, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => h,
-  Z: () => m
+  B: () => m,
+  Z: () => g
 }), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk47770 = require("./47770.js"),
   Chunk46973 = require("./46973.js"),
   Chunk379649 = require("./379649.js"),
+  Chunk909766 = require("./909766.js"),
   Chunk140828 = require("./140828.js"),
   Chunk179654 = require("./179654.js");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,20 +23,20 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,13 +47,13 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e) {
+function h(e) {
   let t = {};
   for (let n in e) {
     let r = e[n];
@@ -60,10 +61,10 @@ function p(e) {
   }
   return t
 }
-var h = function(e) {
+var m = function(e) {
   return e.InputDeviceSampleRateChanged = "input-device-sample-rate-changed", e
 }({});
-class m extends Chunk47770.Z {
+class g extends Chunk47770.Z {
   start() {
     this.connection.on(Chunk46973.Sh.Stats, this.sampleStats)
   }
@@ -124,7 +125,7 @@ class m extends Chunk47770.Z {
   }
   getBufferStats() {
     let e = i().reduce(this.inboundStats, (e, t) => ((null == e || null != t.bufferStats.audioJitterBuffer && null != e.audioJitterBuffer && t.bufferStats.audioJitterBuffer.p75 > e.audioJitterBuffer.p75) && (e = t.bufferStats), e), null);
-    return d({}, p({
+    return f({}, h({
       audio_jitter_buffer: null != module ? module.audioJitterBuffer : null,
       audio_jitter_target: null != module ? module.audioJitterTarget : null,
       audio_jitter_delay: null != module ? module.audioJitterDelay : null,
@@ -213,6 +214,23 @@ class m extends Chunk47770.Z {
       output_device_time_from_connect_to_first_audio_ms: this.outputDeviceStats.timeFromConnectToFirstCallbackMs
     }
   }
+  getAudioLevelStats() {
+    let e = [1, 5, 10, 25, 50, 75, 90, 95, 99],
+      t = this.outboundStats.speakingAudioLevel.getReport(module);
+    return {
+      outbound_audio_level_db_p1: exports.percentiles[1],
+      outbound_audio_level_db_p5: exports.percentiles[5],
+      outbound_audio_level_db_p10: exports.percentiles[10],
+      outbound_audio_level_db_p25: exports.percentiles[25],
+      outbound_audio_level_db_p50: exports.percentiles[50],
+      outbound_audio_level_db_p75: exports.percentiles[75],
+      outbound_audio_level_db_p90: exports.percentiles[90],
+      outbound_audio_level_db_p95: exports.percentiles[95],
+      outbound_audio_level_db_p99: exports.percentiles[99],
+      outbound_audio_level_db_max: exports.max,
+      outbound_audio_level_db_mean: exports.mean
+    }
+  }
   getPeriodicStats() {
     let e = [];
     for (let [h, m] of Object.entries(this.periodicInboundStats)) {
@@ -231,8 +249,8 @@ class m extends Chunk47770.Z {
             silent: null != (n = E.silent) ? require : 0 - (null != (t = g.silent) ? exports : 0),
             normal: null != (i = E.normal) ? i : 0 - (null != (r = g.normal) ? Chunk392711 : 0),
             merged: null != (a = E.merged) ? Chunk46973 : 0 - (null != (o = g.merged) ? Chunk47770 : 0),
-            expanded: null != (l = E.expanded) ? Chunk140828 : 0 - (null != (s = g.expanded) ? Chunk379649 : 0),
-            accelerated: null != (u = E.accelerated) ? u : 0 - (null != (c = g.accelerated) ? Chunk179654 : 0),
+            expanded: null != (l = E.expanded) ? Chunk909766 : 0 - (null != (s = g.expanded) ? Chunk379649 : 0),
+            accelerated: null != (u = E.accelerated) ? Chunk179654 : 0 - (null != (c = g.accelerated) ? Chunk140828 : 0),
             preemptiveExpanded: null != (f = E.preemptiveExpanded) ? f : 0 - (null != (d = g.preemptiveExpanded) ? d : 0),
             cng: null != (p = E.cng) ? p : 0 - (null != (_ = g.cng) ? _ : 0),
             accelerateRate: m.accelerateRateSum / O,
@@ -255,9 +273,9 @@ class m extends Chunk47770.Z {
     return 93.4 - (.024 * e + (e > 177.3 ? .11 * (e - 177.3) : 0)) - (10 + 122 * t / (t + 10))
   }
   constructor(e) {
-    super(), u(this, "connection", true), u(this, "inboundStats", true), u(this, "outboundStats", true), u(this, "networkQuality", true), u(this, "systemResources", true), u(this, "duration", true), u(this, "decryptionFailures", true), u(this, "routingFailures", true), u(this, "periodicInboundStats", true), u(this, "inputDeviceStats", true), u(this, "outputDeviceStats", true), u(this, "sampleAudioDevice", true), u(this, "appendTargetRates", true), u(this, "sampleStats", true), this.connection = e, this.sampleAudioDevice = (e, t) => {
+    super(), d(this, "connection", true), d(this, "inboundStats", true), d(this, "outboundStats", true), d(this, "networkQuality", true), d(this, "systemResources", true), d(this, "duration", true), d(this, "decryptionFailures", true), d(this, "routingFailures", true), d(this, "periodicInboundStats", true), d(this, "inputDeviceStats", true), d(this, "outputDeviceStats", true), d(this, "sampleAudioDevice", true), d(this, "appendTargetRates", true), d(this, "sampleStats", true), this.connection = e, this.sampleAudioDevice = (e, t) => {
       var n, r, i;
-      true !== e && (true !== e.restartCount && (t.restartCount = g(e.restartCount, t.restartCount)), true !== e.bufferViolations && (t.bufferViolations = g(e.bufferViolations, t.bufferViolations)), (null != (n = e.timeToFirstCallbackMs) ? n : 0) !== 0 && true === t.timeToFirstCallbackMs && (t.timeToFirstCallbackMs = e.timeToFirstCallbackMs), (null != (r = e.sessionSampleRate) ? r : 0) !== 0 && (t.sessionSampleRate !== e.sessionSampleRate && this.emit("input-device-sample-rate-changed", null != (i = e.sessionSampleRate) ? i : 0), t.sessionSampleRate = e.sessionSampleRate), true !== e.timeFromConnectToFirstCallbackMs && true === t.timeFromConnectToFirstCallbackMs && (t.timeFromConnectToFirstCallbackMs = e.timeFromConnectToFirstCallbackMs))
+      true !== e && (true !== e.restartCount && (t.restartCount = E(e.restartCount, t.restartCount)), true !== e.bufferViolations && (t.bufferViolations = E(e.bufferViolations, t.bufferViolations)), (null != (n = e.timeToFirstCallbackMs) ? n : 0) !== 0 && true === t.timeToFirstCallbackMs && (t.timeToFirstCallbackMs = e.timeToFirstCallbackMs), (null != (r = e.sessionSampleRate) ? r : 0) !== 0 && (t.sessionSampleRate !== e.sessionSampleRate && this.emit("input-device-sample-rate-changed", null != (i = e.sessionSampleRate) ? i : 0), t.sessionSampleRate = e.sessionSampleRate), true !== e.timeFromConnectToFirstCallbackMs && true === t.timeFromConnectToFirstCallbackMs && (t.timeFromConnectToFirstCallbackMs = e.timeFromConnectToFirstCallbackMs))
     }, this.appendTargetRates = function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0,
         n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 0;
@@ -280,7 +298,7 @@ class m extends Chunk47770.Z {
       i().forEach(e.rtp.outbound, e => {
         if ("audio" === e.type) {
           var t, n, i, o, a, s, l, c, u;
-          r = null != (t = e.bitrateTarget) ? t : 0, this.outboundStats = _(d({}, this.outboundStats), {
+          r = null != (t = e.bitrateTarget) ? t : 0, this.outboundStats = p(f({}, this.outboundStats), {
             packetsSent: e.packetsSent,
             bytesSent: e.bytesSent,
             packetsLost: null != (n = e.packetsLost) ? n : 0,
@@ -291,12 +309,12 @@ class m extends Chunk47770.Z {
             encryptAttempts: null != (l = e.encryptAttempts) ? l : 0,
             encryptMaxAttempts: null != (c = e.encryptMaxAttempts) ? c : 0,
             encryptMissingKeyCount: null != (u = e.encryptMissingKeyCount) ? u : 0
-          })
+          }), true == !!e.audioDetected && null != e.audioLevel && this.outboundStats.speakingAudioLevel.addSample(20 * Math.log(e.audioLevel))
         }
       }), this.decryptionFailures = e.transport.decryptionFailures, this.routingFailures = e.transport.routingFailures, this.appendTargetRates(this.outboundStats, e.transport.availableOutgoingBitrate, r), i().forEach(e.rtp.inbound, (t, n) => {
         i().forEach(t, t => {
           if ("audio" === t.type) {
-            var r, o, a, s, l, c, u, f, _, p, h, m, g, E, b, y, O, v, I, T;
+            var r, o, a, s, l, c, u, d, _, p, h, m, g, E, b, y, O, v, I, T;
             let S = null != (r = e.transport.ping) ? r : 0,
               A = t.packetsReceived,
               N = t.packetsLost,
@@ -325,7 +343,7 @@ class m extends Chunk47770.Z {
                 passthroughCount: null != (l = t.passthroughCount) ? l : 0,
                 decryptSuccessCount: null != (c = t.decryptSuccessCount) ? c : 0,
                 decryptFailureCount: null != (u = t.decryptFailureCount) ? u : 0,
-                decryptDuration: null != (f = t.decryptDuration) ? f : 0,
+                decryptDuration: null != (d = t.decryptDuration) ? d : 0,
                 decryptAttempts: null != (_ = t.decryptAttempts) ? _ : 0,
                 decryptMissingKeyCount: null != (p = t.decryptMissingKeyCount) ? p : 0,
                 decryptInvalidNonceCount: null != (h = t.decryptInvalidNonceCount) ? h : 0
@@ -337,7 +355,7 @@ class m extends Chunk47770.Z {
                 a = 0,
                 s = e.mosBuckets,
                 l = null != (m = e.decryptFailureBeforeSuccessCount) ? m : M.decryptSuccessCount > 0 ? M.decryptFailureCount : true;
-              r > 0 && o >= 0 && (a = this.calculateMos(S + D, i().clamp(o / (r + o), 0, 1)), s[Math.floor(a)]++), this.inboundStats[n] = d({
+              r > 0 && o >= 0 && (a = this.calculateMos(S + D, i().clamp(o / (r + o), 0, 1)), s[Math.floor(a)]++), this.inboundStats[n] = f({
                 packetsReceived: A,
                 bytesReceived: C,
                 packetsLost: N,
@@ -362,7 +380,7 @@ class m extends Chunk47770.Z {
                 speechExpandRateSum: this.periodicInboundStats[n].speechExpandRateSum + (null != (y = t.speechExpandRate) ? y : 0),
                 numRateSamples: this.periodicInboundStats[n].numRateSamples + 1
               }
-            } else this.inboundStats[n] = d({
+            } else this.inboundStats[n] = f({
               packetsReceived: A,
               bytesReceived: C,
               packetsLost: N,
@@ -394,7 +412,7 @@ class m extends Chunk47770.Z {
       this.outboundStats.packetsSent > t && (o = true, this.duration.speaking++), i().reduce(this.inboundStats, (e, t) => (e.packetsReceived += t.packetsReceived, e), {
         packetsReceived: 0
       }).packetsReceived > n.packetsReceived && (a = true, this.duration.listening++), (o || a) && this.duration.participation++
-    }, this.networkQuality = new l.Z, this.systemResources = new c.Z, this.inboundStats = {}, this.outboundStats = {
+    }, this.networkQuality = new c.Z, this.systemResources = new u.Z, this.inboundStats = {}, this.outboundStats = {
       packetsSent: 0,
       bytesSent: 0,
       packetsLost: 0,
@@ -408,7 +426,8 @@ class m extends Chunk47770.Z {
       bytesAvailable: 0,
       bytesTarget: 0,
       previousTimestampMs: 0,
-      aggregationDurationMs: 0
+      aggregationDurationMs: 0,
+      speakingAudioLevel: new l.b
     }, this.duration = {
       listening: 0,
       speaking: 0,
@@ -417,7 +436,7 @@ class m extends Chunk47770.Z {
     }, this.periodicInboundStats = {}, this.inputDeviceStats = {}, this.outputDeviceStats = {}
   }
 }
-let g = (e, t) => {
+let E = (e, t) => {
   let {
     accumulated: n,
     lastValue: r

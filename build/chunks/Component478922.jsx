@@ -102,8 +102,8 @@ function g(e, t, n) {
         paddingVertical: L,
         paddingHorizontal: x,
         fade: M = false,
-        className: j,
-        style: k,
+        className: k,
+        style: j,
         maxContentWidth: U,
         renderAccessory: G,
         onItemVisibilityChange: B
@@ -120,7 +120,7 @@ function g(e, t, n) {
       } = (0, c.T4)();
     (0, c.tT)({
       scrollerRef: K,
-      className: j,
+      className: k,
       specs: o,
       orientation: "vertical",
       dir: b
@@ -183,12 +183,12 @@ function g(e, t, n) {
     }, [ee, z]), (0, r.jsxs)("div", p(f({
       ref: K,
       onScroll: el,
-      className: a()(j, {
+      className: a()(k, {
         [e]: true,
         [t]: M,
         [u.scrolling]: Y
       }),
-      style: (0, c.uT)(k)
+      style: (0, c.uT)(j)
     }, Z), {
       children: [null != (g = null == G ? true : G(ee)) ? g : null, (0, i.useMemo)(() => (0, r.jsx)(l.J, {
         containerRef: V,

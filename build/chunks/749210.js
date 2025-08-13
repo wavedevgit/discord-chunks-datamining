@@ -89,7 +89,7 @@ function M(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let j = e => {
+let k = e => {
     N.Z.show({
       title: R.intl.string(R.t.cTaRxM),
       body: R.intl.formatToPlainString(R.t["VSd+Ag"], {
@@ -97,7 +97,7 @@ let j = e => {
       })
     })
   },
-  k = e => {
+  j = e => {
     a.Z.dispatch({
       type: "GUILD_DELETE",
       guild: {
@@ -185,9 +185,9 @@ let Z = {
     } catch (t) {
       if ((null == (i = t.body) ? true : i.code) === C.evJ.TOO_MANY_USER_GUILDS) {
         let e = v.default.getCurrentUser();
-        S.ZP.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? j(C.tHP) : j(C.DZw)
+        S.ZP.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? k(C.tHP) : k(C.DZw)
       }
-      throw (null == (s = t.body) ? true : s.code) === C.evJ.GUILD_AT_CAPACITY && U(), h && (null == (l = t.body) ? true : l.code) === C.evJ.UNKNOWN_GUILD && k(e), t
+      throw (null == (s = t.body) ? true : s.code) === C.evJ.GUILD_AT_CAPACITY && U(), h && (null == (l = t.body) ? true : l.code) === C.evJ.UNKNOWN_GUILD && j(e), t
     }
   },
   waitForGuild: G,
@@ -198,7 +198,7 @@ let Z = {
       welcomeModalChannelId: null != i ? i : true
     })), (0, u.Z)(C.Z5c.CHANNEL(e, i, r), o), await new Promise(setImmediate)
   },
-  deleteGuild: k,
+  deleteGuild: j,
   selectGuild(e) {
     (0, d.a)(e)
   },

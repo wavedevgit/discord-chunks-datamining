@@ -48,14 +48,14 @@ let v = Chunk73800.memo(function(e) {
     location: "useDisplayNameStylesFont"
   }), w = (0, m.Y)({
     location: "UserNameWithEffects"
-  }), D = (0, f.dQu)(f.TVs.colors.BACKGROUND_BASE_LOW).hex(), L = (0, b.R)(null != (t = null == o ? true : o.effectId) ? t : c.m.SOLID), x = (0, f.qgQ)(n), M = (0, d.EJ)(x, (null == o ? true : o.effectId) === c.m.TOON ? O.emoji : true), j = i.useMemo(() => null != o && w ? o.colors.map(e => (0, p.wh)({
+  }), D = (0, f.dQu)(f.TVs.colors.BACKGROUND_BASE_LOW).hex(), L = (0, b.R)(null != (t = null == o ? true : o.effectId) ? t : c.m.SOLID), x = (0, f.qgQ)(n), M = (0, d.EJ)(x, (null == o ? true : o.effectId) === c.m.TOON ? O.emoji : true), k = i.useMemo(() => null != o && w ? o.colors.map(e => (0, p.wh)({
     foreground: a()(e),
     background: (null == o ? true : o.effectId) === c.m.TOON ? a()("#333") : a()(D),
     ratio: L.minContrastRatio,
     saturationFactor: R
   }).hex()) : [], [o, w, L.minContrastRatio, R, D]);
   if (!w || !v && !P || null == o) return n;
-  let k = (0, E.K)(o.effectId, j, {
+  let j = (0, E.K)(o.effectId, k, {
       shouldWrap: A
     }),
     U = I(o.effectId);
@@ -66,7 +66,7 @@ let v = Chunk73800.memo(function(e) {
       [O.loop]: S,
       [O.inProfile]: v
     }),
-    style: k,
+    style: j,
     children: [(0, r.jsx)("span", {
       "data-username-with-effects": x,
       className: l()(O.innerContainer, null == U ? true : U.effectClassName),

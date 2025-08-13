@@ -88,11 +88,11 @@ let w = e => {
     let {
       currentStatus: t,
       channel: o
-    } = e, s = i.useRef(E.Z.getRecentCustomStatuses()), [N, R] = i.useState(false), P = (0, b.V)(), [D, L] = i.useState(null != t ? t : null), x = (0, c.e7)([h.default], () => h.default.getCurrentUser()), M = i.useMemo(() => [], []), j = i.useRef(null).current;
+    } = e, s = i.useRef(E.Z.getRecentCustomStatuses()), [N, R] = i.useState(false), P = (0, b.V)(), [D, L] = i.useState(null != t ? t : null), x = (0, c.e7)([h.default], () => h.default.getCurrentUser()), M = i.useMemo(() => [], []), k = i.useRef(null).current;
     i.useEffect(() => (N || M.push(u.z.HANG_STATUS_NEW_BADGE), () => {
-      N && (null == j || j(I.L.PRIMARY))
-    }), [N, M, j]);
-    let k = (e, t) => {
+      N && (null == k || k(I.L.PRIMARY))
+    }), [N, M, k]);
+    let j = (e, t) => {
         e.stopPropagation(), (0, g.Zx)(t, true), R(true)
       },
       U = (e, t) => {
@@ -132,7 +132,7 @@ let w = e => {
           visibleContent: n,
           markAsDismissed: i
         } = e;
-        return j = i, (0, r.jsxs)("div", {
+        return k = i, (0, r.jsxs)("div", {
           className: A.container,
           children: [n === u.z.HANG_STATUS_NEW_BADGE && (0, r.jsxs)("div", {
             className: A.onboarding,
@@ -177,7 +177,7 @@ let w = e => {
                 return (0, r.jsx)(d.P3F, {
                   "aria-label": i.title,
                   onMouseEnter: () => Z(n),
-                  onClick: e => k(e, n),
+                  onClick: e => j(e, n),
                   children: (0, r.jsx)(w, {
                     className: a()(A.iconWidget, {
                       [A.selectedWidget]: n === (null == t ? true : t.state)

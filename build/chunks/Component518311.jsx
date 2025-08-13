@@ -152,7 +152,7 @@ let ey = e => {
     });
     return (0, i.jsx)(p.P3F, {
       onClick: () => {
-        (0, j.XU)(er.ME, n.id), r()
+        (0, k.XU)(er.ME, n.id), r()
       },
       children: (0, i.jsxs)("div", {
         className: eo.confirmChannelItemContainer,
@@ -881,7 +881,7 @@ function eS(e) {
     inBornThisNamedExperiment: c
   }));
   return (0, T.ZP)(() => {
-    (0, k._)()
+    (0, j._)()
   }), {
     showModal: f,
     renderPopout: h,

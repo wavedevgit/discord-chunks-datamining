@@ -79,10 +79,10 @@ function L(e) {
     onClose: w
   } = e, L = (0, p.Dt)(), x = (0, p.Dt)(), {
     themeType: M
-  } = (0, b.z)(), j = (0, _.Z)({
+  } = (0, b.z)(), k = (0, _.Z)({
     activity: o,
     user: t
-  }), k = (0, E.Z)(o), U = null != k.text && "" !== k.text, {
+  }), j = (0, E.Z)(o), U = null != j.text && "" !== j.text, {
     largeImage: G
   } = (0, d.FO)(o), {
     analyticsLocations: B
@@ -90,7 +90,7 @@ function L(e) {
     display: "live",
     user: t,
     activity: o,
-    entry: j,
+    entry: k,
     analyticsLocations: B
   }), F = (0, g.Z)({
     userId: t.id,
@@ -150,12 +150,12 @@ function L(e) {
       "aria-labelledby": U ? "".concat(x, " ").concat(L) : L,
       children: [(0, r.jsx)(v.Z, D(P({
         textId: x
-      }, k), {
+      }, j), {
         contextMenu: (0, r.jsx)(A.Z, {
           display: "live",
           user: t,
           activity: o,
-          entry: j,
+          entry: k,
           onClose: w
         })
       })), (0, r.jsx)("div", {

@@ -48,7 +48,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,7 +61,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -73,7 +73,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -121,7 +121,7 @@ function B(e) {
     text: f,
     "aria-label": _,
     forceOpen: a === l.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP || true,
-    children: e => (0, r.jsxs)("div", U(j({
+    children: e => (0, r.jsxs)("div", U(k({
       className: x.linkedLobbyTooltip
     }, e), {
       children: [i, (0, r.jsxs)(c.Text, {
@@ -336,7 +336,7 @@ function W(e) {
     text: t.name,
     targetElementRef: u,
     position: "bottom",
-    children: e => (0, r.jsxs)(c.P3F, U(j({}, e), {
+    children: e => (0, r.jsxs)(c.P3F, U(k({}, e), {
       onClick: d,
       className: x.guildBreadcrumbContainer,
       children: ["left" === o && (0, r.jsx)(R.Z.Caret, {

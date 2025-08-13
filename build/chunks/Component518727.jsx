@@ -52,8 +52,8 @@ let I = 1e3,
     }, [D]);
     let M = (0, f.P)(R, !!P, w),
       {
-        mediaUrls: j,
-        isSuccess: k
+        mediaUrls: k,
+        isSuccess: j
       } = (0, E.Z)(!o && M && L),
       U = (0, i.useRef)(null),
       [G, B] = (0, i.useState)(false),
@@ -62,12 +62,12 @@ let I = 1e3,
       [Y, W] = (0, i.useState)(false);
     if ((0, i.useEffect)(() => {
         let e;
-        M && n && !Y && (o || !k ? (H("static"), o || (W(true), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (H("animated"), F(true), e = true), c.Z.dispatch({
+        M && n && !Y && (o || !j ? (H("static"), o || (W(true), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (H("animated"), F(true), e = true), c.Z.dispatch({
           type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
           value: true,
           isAnimated: e
         }), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED))
-      }, [o, M, n, k, Y]), (0, i.useEffect)(() => {
+      }, [o, M, n, j, Y]), (0, i.useEffect)(() => {
         function e() {
           B(true), C()
         }
@@ -92,7 +92,7 @@ let I = 1e3,
             onEnded: N,
             className: a()(y.video, "entry" === I ? y.visible : y.hidden),
             children: (0, r.jsx)("source", {
-              src: j.modalGlowEntry
+              src: k.modalGlowEntry
             })
           })
         }), (0, r.jsx)(d.Z, {
@@ -102,7 +102,7 @@ let I = 1e3,
           loop: true,
           className: a()(y.video, "idle" === I ? y.visible : y.hidden),
           children: (0, r.jsx)("source", {
-            src: j.modalGlowIdle
+            src: k.modalGlowIdle
           })
         }), (0, r.jsx)(d.Z, {
           ref: A,
@@ -110,7 +110,7 @@ let I = 1e3,
           muted: true,
           className: a()(y.video, "exit" === I ? y.visible : y.hidden),
           children: (0, r.jsx)("source", {
-            src: j.modalGlowExit
+            src: k.modalGlowExit
           })
         })]
       }), (0, r.jsx)("div", {

@@ -380,15 +380,15 @@ class eI extends Chunk47770.Z {
     })
   }
   _handleDisconnect(e, t, n, r) {
-    var i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, b, y, v, I, T, S;
+    var i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, b, y, v, I, T, S, A;
     this.logger.info("Disconnected from RTC server, clean: ".concat(t, ", code: ").concat(n, ", reason: ").concat(r, ", state: ").concat(this.state)), t || !this._connecting || this._encountered_socket_failure || (B.default.track(es.rMx.VOICE_CONNECTION_SOCKET_FAILURE, ef(eu({}, this._getAnalyticsProperties()), {
       hostname: this.hostname,
       connect_count: this._connectCount,
       code: n,
       reason: r
-    })), this._encountered_socket_failure = true), j.Z.getRemoteDisconnectVoiceChannelId() === this.channelId && (null == (l = this._connection) || l.wasRemoteDisconnected());
-    let A = "Force Close" !== r;
-    if (A) {
+    })), this._encountered_socket_failure = true), k.Z.getRemoteDisconnectVoiceChannelId() === this.channelId && (null == (l = this._connection) || l.wasRemoteDisconnected());
+    let N = "Force Close" !== r;
+    if (N) {
       let e = this._backoff.fail(this.reconnect);
       this.logger.warn("Disconnect was not clean! reason=".concat(r, ". Reconnecting in ").concat((e / 1e3).toFixed(2), " seconds."))
     }
@@ -452,10 +452,10 @@ class eI extends Chunk47770.Z {
           hostname: this.hostname,
           port: this.port,
           protocol: this.protocol,
-          reconnect: A,
+          reconnect: N,
           reason: r,
           duration: this.getDuration()
-        }), null == (d = this._voiceQuality) ? true : d.getMosStats(), null == (f = this._voiceQuality) ? true : f.getPacketStats(), null == (_ = this._voiceQuality) ? true : _.getBytesStats(), null == (p = this._voiceQuality) ? true : p.getBufferStats(), null == (h = this._voiceQuality) ? true : h.getNetworkStats(), null == (m = this._voiceQuality) ? true : m.getSystemResourceStats(), null == (g = this._voiceQuality) ? true : g.getFrameOpStats(), null == (E = this._voiceQuality) ? true : E.getDurationStats(), null == (b = this._voiceQuality) ? true : b.getTransportStats(), null == (y = this._voiceQuality) ? true : y.getE2EEStats(), null == (v = this._voiceQuality) ? true : v.getAudioDeviceStats(), null == (I = this._voiceDuration) ? true : I.getDurationStats(), this.getAudioDeviceStates(), null == (T = this._systemResponsiveness) ? true : T.getPttQueueLatencyStats()), {
+        }), null == (d = this._voiceQuality) ? true : d.getMosStats(), null == (f = this._voiceQuality) ? true : f.getPacketStats(), null == (_ = this._voiceQuality) ? true : _.getBytesStats(), null == (p = this._voiceQuality) ? true : p.getBufferStats(), null == (h = this._voiceQuality) ? true : h.getNetworkStats(), null == (m = this._voiceQuality) ? true : m.getSystemResourceStats(), null == (g = this._voiceQuality) ? true : g.getFrameOpStats(), null == (E = this._voiceQuality) ? true : E.getDurationStats(), null == (b = this._voiceQuality) ? true : b.getTransportStats(), null == (y = this._voiceQuality) ? true : y.getE2EEStats(), null == (v = this._voiceQuality) ? true : v.getAudioDeviceStats(), null == (I = this._voiceQuality) ? true : I.getAudioLevelStats(), null == (T = this._voiceDuration) ? true : T.getDurationStats(), this.getAudioDeviceStates(), null == (S = this._systemResponsiveness) ? true : S.getPttQueueLatencyStats()), {
           num_noise_cancellation_changes: this._numNoiseCancellationChanges,
           media_session_id: this.getMediaSessionId(),
           channel_bitrate: null != o ? o.bitrate : null,
@@ -479,7 +479,7 @@ class eI extends Chunk47770.Z {
           encryption_mode: this._encryptionMode,
           channel_count: this.channelIds.size,
           device_performance_class: (0, O.Z)(),
-          num_fast_udp_reconnects: null != this._connection ? null == (S = this._connection) ? true : S.getNumFastUdpReconnects() : null,
+          num_fast_udp_reconnects: null != this._connection ? null == (A = this._connection) ? true : A.getNumFastUdpReconnects() : null,
           parent_media_session_id: this.parentMediaSessionId,
           audio_subsystem: M.Z.getMediaEngine().getAudioSubsystem(),
           audio_layer: M.Z.getMediaEngine().getAudioLayer(),
@@ -518,7 +518,7 @@ class eI extends Chunk47770.Z {
       this._connection = null, e.destroy()
     }
     this.setState(es.hes.DISCONNECTED, {
-      willReconnect: A
+      willReconnect: N
     })
   }
   _handleResuming(e) {
@@ -1264,7 +1264,7 @@ class eI extends Chunk47770.Z {
         this.logger.info("Go Live Media sink wants: ".concat(JSON.stringify(e))), this._socket.mediaSinkWants(e), null == (t = this._connection) || t.setLocalVideoSinkWants(e)
       }
     }));
-    this._remoteVideoSinkWants = J.Yy, ea.w.on(ea.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), ea.w.on(ea.e.WindowVisibilityChanged, this.windowVisibilityChanged), k.ZP.shouldRecordNextConnection() ? (this._recordingEnabled = true, g.TC(false)) : this._recordingEnabled = false, this._soundshareStats = new $.Z, V.Z.addOnlineCallback(this._handleNetworkOnline), V.Z.addOfflineCallback(this._handleNetworkOffline), (0, H.isDesktop)() && (this.powerMonitorListener = K.Z.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, M.Z.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
+    this._remoteVideoSinkWants = J.Yy, ea.w.on(ea.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), ea.w.on(ea.e.WindowVisibilityChanged, this.windowVisibilityChanged), j.ZP.shouldRecordNextConnection() ? (this._recordingEnabled = true, g.TC(false)) : this._recordingEnabled = false, this._soundshareStats = new $.Z, V.Z.addOnlineCallback(this._handleNetworkOnline), V.Z.addOfflineCallback(this._handleNetworkOffline), (0, H.isDesktop)() && (this.powerMonitorListener = K.Z.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, M.Z.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
       this._supportedBandwidthEstimationExperiments = e
     })
   }

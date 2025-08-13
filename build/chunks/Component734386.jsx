@@ -58,7 +58,7 @@ function M(e) {
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,8 +69,8 @@ function j(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -79,10 +79,10 @@ let U = 5;
 function G(e) {
   let {
     channel: t
-  } = e, [n, o] = i.useState(false), s = (0, p.ZP)(t, true), x = t.guild_id, j = (0, u.e7)([O.Z], () => null != x ? O.Z.getSortedRoles(x) : true), G = (0, u.e7)([T.default, v.Z], () => {
+  } = e, [n, o] = i.useState(false), s = (0, p.ZP)(t, true), x = t.guild_id, k = (0, u.e7)([O.Z], () => null != x ? O.Z.getSortedRoles(x) : true), G = (0, u.e7)([T.default, v.Z], () => {
     var e;
     return T.default.getUser(null == (e = v.Z.getGuild(x)) ? true : e.ownerId)
-  }), B = i.useMemo(() => null != j ? j.filter(e => !(0, y.fI)(e)) : [], [j]), Z = i.useMemo(() => l()(B).filter(e => {
+  }), B = i.useMemo(() => null != k ? k.filter(e => !(0, y.fI)(e)) : [], [k]), Z = i.useMemo(() => l()(B).filter(e => {
     if (null == x) returnfalse;
     let n = S.I0({
       forceRoles: {
@@ -195,7 +195,7 @@ function G(e) {
 
   function q() {
     return n ? (0, r.jsx)(d.u_l, {
-      renderModal: e => (0, r.jsx)(h.default, k(M({}, e), {
+      renderModal: e => (0, r.jsx)(h.default, j(M({}, e), {
         onClose: () => (z(), e.onClose()),
         channelId: t.id
       })),

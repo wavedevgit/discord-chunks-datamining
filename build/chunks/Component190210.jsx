@@ -145,7 +145,7 @@ function ea(e, t) {
     required: N,
     disabled: C,
     accessibilityLabel: M,
-    channel: k,
+    channel: j,
     type: V,
     focused: z,
     onChange: J,
@@ -167,19 +167,19 @@ function ea(e, t) {
     disableThemedBackground: eT = false,
     emojiPickerCloseOnModalOuterClick: eS,
     parentModalKey: eA
-  } = e, eN = v.Z.useField("channelDrafts")[k.id], eC = null != (o = null == eN ? true : eN.title) ? o : "", eR = null == eN ? true : eN.heroFile, eP = null == (s = null == eN ? true : eN.publish) || s, ew = null == (u = null == eN ? true : eN.createThread) || u;
+  } = e, eN = v.Z.useField("channelDrafts")[j.id], eC = null != (o = null == eN ? true : eN.title) ? o : "", eR = null == eN ? true : eN.heroFile, eP = null == (s = null == eN ? true : eN.publish) || s, ew = null == (u = null == eN ? true : eN.createThread) || u;
   l()(null != V, "chat input type must be set");
   let {
     analyticsLocations: eD
-  } = (0, b.ZP)(E.Z.CHANNEL_TEXT_AREA), eL = (0, F.qz)(t), ex = i.useRef(null), eM = i.useRef(null), ej = i.useRef(null), ek = i.useRef(null);
+  } = (0, b.ZP)(E.Z.CHANNEL_TEXT_AREA), eL = (0, F.qz)(t), ex = i.useRef(null), eM = i.useRef(null), ek = i.useRef(null), ej = i.useRef(null);
   null == eO || eO(eM.current);
   let {
     activeCommand: eU
   } = (0, d.cj)([y.Z], () => {
     var e, t;
     return {
-      activeCommand: (null == (e = V.commands) ? true : e.enabled) ? y.Z.getActiveCommand(k.id) : null,
-      activeCommandSection: (null == (t = V.commands) ? true : t.enabled) ? y.Z.getActiveCommandSection(k.id) : null
+      activeCommand: (null == (e = V.commands) ? true : e.enabled) ? y.Z.getActiveCommand(j.id) : null,
+      activeCommandSection: (null == (t = V.commands) ? true : t.enabled) ? y.Z.getActiveCommandSection(j.id) : null
     }
   }), {
     isLurking: eG,
@@ -187,12 +187,12 @@ function ea(e, t) {
     disabled: eZ,
     canAttachFiles: eF,
     canEveryoneSendMessages: eV
-  } = (0, F.TE)(k, V, eU, C), eH = !w.dN.useSetting() && !(0, j.isAndroidWeb)() && null != window.ResizeObserver, eY = !eH || !(null == (n = V.commands) ? true : n.enabled) || !z || f !== W.GI, eW = (0, R.Z)(), {
+  } = (0, F.TE)(j, V, eU, C), eH = !w.dN.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eY = !eH || !(null == (n = V.commands) ? true : n.enabled) || !z || f !== W.GI, eW = (0, R.Z)(), {
     fontSize: eK
   } = (0, d.cj)([g.Z], () => ({
     fontSize: g.Z.fontSize,
     isSubmitButtonEnabled: g.Z.isSubmitButtonEnabled
-  })), ez = (0, d.e7)([L.Z], () => L.Z.isEnabled()), eq = (0, P.NE)(k);
+  })), ez = (0, d.e7)([L.Z], () => L.Z.isEnabled()), eq = (0, P.NE)(j);
   (0, F.hJ)(V, eZ);
   let {
     eventEmitter: eX,
@@ -201,7 +201,7 @@ function ea(e, t) {
     var t, n;
     let r = [],
       i = eC.length > 0 ? eC : e.value.length > 0 ? e.value.slice(0, 80) : q.intl.string(q.t["7Xm5QE"]);
-    if (null == eR) return (0, v.c)(k.id, {
+    if (null == eR) return (0, v.c)(j.id, {
       title: "",
       heroFile: null
     }), null == (n = eM.current) || n.blur(), e_(et($({}, e), {
@@ -220,7 +220,7 @@ function ea(e, t) {
       content: e.value,
       id: "".concat(K.Kb)
     });
-    let o = x.Z.getUploads(k.id, D.d.ChannelMessage),
+    let o = x.Z.getUploads(j.id, D.d.ChannelMessage),
       a = o.filter(e => (e.isImage || e.isVideo) && e.filename !== (null == eR ? true : eR.name)),
       s = o.filter(e => !e.isImage && !e.isVideo && e.filename !== (null == eR ? true : eR.name)),
       l = a.map(e => ei("attachment://".concat(eo(e.filename)), false));
@@ -236,7 +236,7 @@ function ea(e, t) {
         name: eo(e.filename),
         size: null
       })
-    }), (0, v.c)(k.id, {
+    }), (0, v.c)(j.id, {
       title: "",
       heroFile: null
     }), null == (t = eM.current) || t.blur(), e_(et($({}, e), {
@@ -247,16 +247,16 @@ function ea(e, t) {
         publish: eP
       }
     }))
-  }, [e_, eC, eR, k.id, ew, eP, eq]), {
+  }, [e_, eC, eR, j.id, ew, eP, eq]), {
     submit: e$,
     handleSubmit: e0
-  } = (0, F.bL)(eJ, V, eM, ek, k.id), {
+  } = (0, F.bL)(eJ, V, eM, ej, j.id), {
     autocompleteRef: e1,
     handleMaybeShowAutocomplete: e2,
     handleHideAutocomplete: e3
   } = (0, F.jx)(), e5 = i.useCallback(() => {
     var e;
-    return null == ek || null == (e = ek.current) ? true : e.hide()
+    return null == ej || null == (e = ej.current) ? true : e.hide()
   }, []), {
     editorHeight: e4,
     handleResize: e6
@@ -273,11 +273,11 @@ function ea(e, t) {
     editorRef: eM,
     disabled: eZ,
     textValue: f,
-    channelId: k.id,
+    channelId: j.id,
     chatInputType: V,
     submit: eJ
   });
-  (0, U.S)(eX, k.guild_id, k.id);
+  (0, U.S)(eX, j.guild_id, j.id);
   let [ts, tl] = i.useState(false), tc = z || ts || f.length > 0 || null != eR || eC.length > 0, {
     editorHeaderHeight: tu,
     paddingTop: td
@@ -304,11 +304,11 @@ function ea(e, t) {
   }, []), tE = i.useCallback(() => {
     var e;
     if (null == eR) return;
-    let t = null == (e = x.Z.getUploads(k.id, V.drafts.type).find(e => e.filename === eR.name)) ? true : e.id;
-    null != t && p.Z.remove(k.id, t, D.d.ChannelMessage), (0, v.c)(k.id, {
+    let t = null == (e = x.Z.getUploads(j.id, V.drafts.type).find(e => e.filename === eR.name)) ? true : e.id;
+    null != t && p.Z.remove(j.id, t, D.d.ChannelMessage), (0, v.c)(j.id, {
       heroFile: null
     })
-  }, [k.id, eR, V.drafts.type]);
+  }, [j.id, eR, V.drafts.type]);
   return (0, r.jsx)(I.f6, {
     value: eX,
     children: (0, r.jsxs)(b.Gt, {
@@ -318,7 +318,7 @@ function ea(e, t) {
         className: a()(T, Q.channelTextArea),
         onMouseDown: tr,
         children: [(0, r.jsx)("div", {
-          ref: ej,
+          ref: ek,
           onScroll: e5,
           className: a()(Q.announcementScrollableContainer, {
             [Q.themedBackground]: !eT
@@ -337,8 +337,8 @@ function ea(e, t) {
                   file: eR,
                   onRemoveHeroImage: tE
                 }) : null, null != eR ? null : (0, r.jsx)(ed, {
-                  channel: k,
-                  onImageUploaded: e => (0, v.c)(k.id, {
+                  channel: j,
+                  onImageUploaded: e => (0, v.c)(j.id, {
                     heroFile: e
                   }),
                   onFocus: () => tl(true)
@@ -349,7 +349,7 @@ function ea(e, t) {
                   className: X.titleInput,
                   placeholder: q.intl.string(q.t.Z8fYjI),
                   value: eC,
-                  onChange: e => (0, v.c)(k.id, {
+                  onChange: e => (0, v.c)(j.id, {
                     title: e.target.value
                   })
                 })]
@@ -370,7 +370,7 @@ function ea(e, t) {
                     required: N,
                     accessibilityLabel: M,
                     isPreviewing: (eG || eB) && eV,
-                    channel: k,
+                    channel: j,
                     type: G.Ie.CREATE_ANNOUNCEMENT_POST,
                     canPasteFiles: eF,
                     uploadPromptCharacterCount: Y.en1,
@@ -400,7 +400,7 @@ function ea(e, t) {
             }), (0, r.jsx)("div", {
               className: X.attachmentsContainer,
               children: (0, r.jsx)(H.Z, {
-                channelId: k.id,
+                channelId: j.id,
                 type: V,
                 canAttachFiles: eF,
                 ignoreFile: null == eR ? true : eR.name,
@@ -415,11 +415,11 @@ function ea(e, t) {
           children: [(0, r.jsxs)("div", {
             className: X.footerPart,
             children: [(0, r.jsx)(eu, {
-              channel: k
+              channel: j
             }), (0, r.jsx)(Z.Z, {
               type: G.Ie.CREATE_ANNOUNCEMENT_POST,
               disabled: eZ,
-              channel: k,
+              channel: j,
               handleSubmit: e0,
               isEmpty: 0 === f.trim().length,
               showAllButtons: true
@@ -434,7 +434,7 @@ function ea(e, t) {
               children: (0, r.jsx)(_.yRy, {
                 targetElementRef: tf,
                 renderPopout: () => (0, r.jsx)(el, {
-                  channelId: k.id,
+                  channelId: j.id,
                   canCreateThread: eq
                 }),
                 shouldShow: t_,
@@ -475,7 +475,7 @@ function ea(e, t) {
         }), (0, r.jsx)(O.Z, {
           targetRef: eL,
           ref: e1,
-          channel: k,
+          channel: j,
           canMentionRoles: eh,
           canMentionChannels: em,
           useNewSlashCommands: eH,
@@ -499,7 +499,7 @@ function ea(e, t) {
         onSelectGIF: to,
         onSelectEmoji: ti,
         onSelectSticker: ta,
-        channel: k,
+        channel: j,
         closeOnModalOuterClick: eS,
         parentModalKey: eA,
         position: "top",
@@ -587,7 +587,7 @@ function eu(e) {
   let {
     channel: t
   } = e, n = e => {
-    (0, k.d)(e.currentTarget.files, t, D.d.ChannelMessage, {
+    (0, j.d)(e.currentTarget.files, t, D.d.ChannelMessage, {
       requireConfirm: true,
       origin: "file_picker"
     }), e.currentTarget.value = null

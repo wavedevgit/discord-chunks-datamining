@@ -103,14 +103,14 @@ function x(e) {
     inPopout: o,
     handleClose: a,
     userParticipantCount: s
-  }) : s > 1 ? (0, r.jsx)(k, {
+  }) : s > 1 ? (0, r.jsx)(j, {
     channel: t,
     guild: n,
     width: i,
     inPopout: o,
     handleClose: a,
     userParticipantCount: s
-  }) : (0, r.jsx)(j, {
+  }) : (0, r.jsx)(k, {
     channel: t,
     guild: n,
     width: i,
@@ -187,7 +187,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     channel: t,
     guild: o,
@@ -274,7 +274,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     channel: t,
     guild: n,

@@ -63,12 +63,12 @@ function P(e) {
     openedAt: L,
     closePopout: x,
     setPopoutRef: M,
-    disableUserProfileLink: j = __OVERLAY__,
-    newAnalyticsLocations: k = [],
+    disableUserProfileLink: k = __OVERLAY__,
+    newAnalyticsLocations: j = [],
     disableAutoFocus: U = false
   } = e, {
     analyticsLocations: G
-  } = (0, c.ZP)([...k, l.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
+  } = (0, c.ZP)([...j, l.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: C,
@@ -85,7 +85,7 @@ function P(e) {
         hideRestrictedProfile: true
       }, B, e))
     },
-    W = () => j ? null : (0, r.jsx)(a.sNh, {
+    W = () => k ? null : (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),
       action: () => {
@@ -140,7 +140,7 @@ function P(e) {
               guildId: C,
               channelId: P,
               themeType: S.lY.POPOUT,
-              onOpenProfile: j ? true : Y
+              onOpenProfile: k ? true : Y
             }), (0, r.jsx)(v.Z, {
               location: "BotUserProfilePopout",
               user: t,
@@ -154,7 +154,7 @@ function P(e) {
             displayProfile: Z,
             guild: F,
             isHovering: H,
-            onOpenProfile: j ? true : Y,
+            onOpenProfile: k ? true : Y,
             channelId: P,
             onClose: x
           }), (0, r.jsx)(T.Z, {

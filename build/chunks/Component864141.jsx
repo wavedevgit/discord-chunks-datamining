@@ -91,7 +91,7 @@ function w(e) {
   }), x = (0, h.Z)({
     userId: t.id,
     onAction: L
-  }), M = (0, a.e7)([d.Z], () => d.Z.getGuild(i.guild_id)), j = (0, _.Z)(i), k = (0, u.ZP)(i), {
+  }), M = (0, a.e7)([d.Z], () => d.Z.getGuild(i.guild_id)), k = (0, _.Z)(i), j = (0, u.ZP)(i), {
     channelStatusEnabled: U
   } = (0, f.D)({
     location: "UserProfileVoiceActivityCard"
@@ -119,7 +119,7 @@ function w(e) {
       className: o()(A.card, N),
       onAction: L,
       onClose: R,
-      "aria-label": "".concat(Z, ", ").concat(k),
+      "aria-label": "".concat(Z, ", ").concat(j),
       children: [(0, r.jsx)(E.Z, {
         text: Z,
         tags: G(),
@@ -133,7 +133,7 @@ function w(e) {
         children: (0, r.jsxs)("div", {
           className: A.content,
           children: [(0, r.jsx)(y.Z, {
-            users: j,
+            users: k,
             channel: i
           }), (0, r.jsxs)("div", {
             className: A.details,

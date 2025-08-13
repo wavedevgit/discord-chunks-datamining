@@ -111,7 +111,7 @@ let y = function(e) {
       paymentModalBanner: R
     };
 
-  function j(e) {
+  function k(e) {
     let n = null != P ? P : t === f.Si.TIER_1 ? s.zx.Colors.PRIMARY : s.zx.Colors.GREEN;
     return (0, r.jsx)(u.Z, g(h({}, M), {
       children: a => {
@@ -147,6 +147,6 @@ let y = function(e) {
   }
   return null != x.buttonTooltipText ? (0, r.jsx)(l.ua7, {
     text: x.buttonTooltipText,
-    children: j
-  }) : j()
+    children: k
+  }) : k()
 }

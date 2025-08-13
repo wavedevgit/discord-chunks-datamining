@@ -211,7 +211,7 @@ function z(e) {
                 shouldShowTooltip: null === eu.interactionType,
                 themeType: B.lY.POPOUT,
                 user: t
-              }), !eE && (0, r.jsx)(j.Z, {
+              }), !eE && (0, r.jsx)(k.Z, {
                 type: "banner",
                 user: t,
                 guildId: V,
@@ -242,7 +242,7 @@ function z(e) {
                 markAsDismissed: ey,
                 targetElementRef: ef,
                 onTryFeature: Q,
-                children: () => (0, r.jsx)(k.Z, {
+                children: () => (0, r.jsx)(j.Z, {
                   ref: ef,
                   location: "UserProfilePopout",
                   user: t,
@@ -252,7 +252,7 @@ function z(e) {
                   onCloseProfile: Q,
                   prompt: eI
                 })
-              }) : (0, r.jsx)(k.Z, {
+              }) : (0, r.jsx)(j.Z, {
                 ref: eO ? ef : true,
                 location: "UserProfilePopout",
                 user: t,

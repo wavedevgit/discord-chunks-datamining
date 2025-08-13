@@ -2,7 +2,7 @@
 /** chunk id: 193910, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./539854.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -95,7 +95,7 @@ function M() {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     channel: t,
     options: a,
@@ -104,8 +104,8 @@ function j(e) {
     onSelect: E,
     draftType: P,
     editorTextContent: D,
-    setValue: j,
-    openClips: k
+    setValue: k,
+    openClips: j
   } = e, {
     analyticsLocations: U,
     newestAnalyticsLocation: G
@@ -145,11 +145,11 @@ function j(e) {
   }
 
   function Y() {
-    b.default.track(S.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), j("/", (0, I.JM)("/"))
+    b.default.track(S.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), k("/", (0, I.JM)("/"))
   }
 
   function W() {
-    k()
+    j()
   }
 
   function K() {

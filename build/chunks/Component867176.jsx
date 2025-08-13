@@ -105,14 +105,14 @@ function C(e) {
     themePadding: P,
     pendingAccentColor: w,
     animateOnHover: D = false
-  } = e, L = (0, _.Dt)(), [x, M] = i.useState(false), j = (0, l.e7)([m.Z], () => m.Z.isFocused()), k = h.QK.getSetting(), {
+  } = e, L = (0, _.Dt)(), [x, M] = i.useState(false), k = (0, l.e7)([m.Z], () => m.Z.isFocused()), j = h.QK.getSetting(), {
     bannerSrc: U,
     status: G
   } = (0, E.Z)({
     displayProfile: o,
     pendingBanner: O,
     size: C,
-    canAnimate: D || !k ? x : j
+    canAnimate: D || !j ? x : k
   }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), Z = n.getAvatarURL(b, (0, u.pxk)(T)), F = (0, s._i)((0, d.ZP)(Z, B, false)), V = (0, f.Z)(null != (t = null != w ? w : null == o ? true : o.primaryColor) ? t : F).hex, H = N(T), Y = H + S - P, W = R - A - P;
   return (0, r.jsxs)("svg", {
     className: y.mask,
@@ -152,7 +152,7 @@ function C(e) {
           backgroundImage: null != U ? "url(".concat(U, ")") : true,
           backgroundColor: "COMPLETE" !== G ? c.Z.unsafe_rawColors.PRIMARY_800.css : V
         },
-        children: [!k && (0, g.F8)(U) && (0, r.jsx)(p.Z, {
+        children: [!j && (0, g.F8)(U) && (0, r.jsx)(p.Z, {
           className: y.gifTag
         }), v]
       })]

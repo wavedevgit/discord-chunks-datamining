@@ -131,7 +131,7 @@ function x(e) {
     M = () => {
       (0, T.X)(t, T.B.STORE_EMBED)
     };
-  return (0, r.jsx)(j, {
+  return (0, r.jsx)(k, {
     appName: u.name,
     title: R.intl.formatToPlainString(R.t.XDRjs7, {
       appName: u.name
@@ -176,7 +176,7 @@ function M(e) {
   });
   if (!w || null == b || null == _) return null;
   let M = _.type === N.epS.SUBSCRIPTION,
-    k = !!M && (0, p.KW)(_.flags),
+    j = !!M && (0, p.KW)(_.flags),
     U = () => {
       (0, l.ZDy)(async () => {
         let {
@@ -203,7 +203,7 @@ function M(e) {
             appId: b.id,
             skuId: _.id,
             guildId: y,
-            subscriptionType: k ? "user" : "guild",
+            subscriptionType: j ? "user" : "guild",
             onClose: n.onClose,
             onHeaderTitleClick: i
           }) : null != t ? (0, r.jsx)(t, {
@@ -217,7 +217,7 @@ function M(e) {
       })
     },
     B = 12,
-    Z = M ? k ? (0, r.jsxs)(r.Fragment, {
+    Z = M ? j ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.tBG, {
         size: "custom",
         width: B,
@@ -255,7 +255,7 @@ function M(e) {
     Y = () => {
       (0, T.X)(b.id, T.B.SKU_EMBED, c)
     };
-  return (0, r.jsx)(j, {
+  return (0, r.jsx)(k, {
     appName: b.name,
     title: _.name,
     description: Z,
@@ -272,7 +272,7 @@ function M(e) {
       }), M ? null != g ? (0, r.jsx)(A.pV, {
         onClick: D,
         appId: b.id,
-        subscriptionType: k ? "user" : "guild",
+        subscriptionType: j ? "user" : "guild",
         skuId: _.id,
         icon: l.EOn,
         onHasClicked: H,
@@ -292,7 +292,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     appName: t,
     title: n,
