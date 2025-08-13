@@ -64,7 +64,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk516817 = require("./516817.jsx"),
   Chunk332473 = require("./332473.js"),
   Chunk963590 = require("./963590.js"),
-  Chunk210308 = require("./210308.jsx"),
+  Chunk562705 = require("./562705.jsx"),
   Chunk667105 = require("./667105.jsx"),
   Chunk768419 = require("./768419.js"),
   Chunk184301 = require("./184301.js"),
@@ -480,13 +480,13 @@ class tc extends Chunk73800.PureComponent {
         suppress: t,
         selfMute: n
       } = this.props;
-      (0, B.Z)(e, t, e6.jXE.ACCOUNT_PANEL), (0, M.v)(N.Z.ACCOUNT, M.d.MIC, n)
+      (0, M.Z)(e, t, e6.jXE.ACCOUNT_PANEL), (0, B.v)(N.Z.ACCOUNT, B.d.MIC, n)
     }), tt(this, "handleToggleSelfDeaf", () => {
       let {
         serverDeaf: e,
         selfDeaf: t
       } = this.props;
-      (0, L.Z)(e, e6.jXE.ACCOUNT_PANEL), (0, M.v)(N.Z.ACCOUNT, M.d.DEAFEN, !t)
+      (0, L.Z)(e, e6.jXE.ACCOUNT_PANEL), (0, B.v)(N.Z.ACCOUNT, B.d.DEAFEN, !t)
     }), tt(this, "handleOpenAccountSettings", () => {
       var e, t, n, i;
       null == (e = (t = this.props).dismissInputDeviceChangedTooltip) || e.call(t), null == (n = (i = this.props).dismissOutputDeviceChangedTooltip) || n.call(i), this.handleOpenSettings()
@@ -812,9 +812,9 @@ function tm() {
     w = (0, Chunk442837.e7)([Chunk258609.Z], () => null != Chunk258609.Z.getAwaitingRemoteSessionInfo()),
     k = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     L = Chunk74538.ZP.canUsePremiumGuildMemberProfile(exports),
-    B = (null == exports || null == (e = exports.avatarDecoration) ? true : module.skuId) === Chunk215023.rL,
+    M = (null == exports || null == (e = exports.avatarDecoration) ? true : module.skuId) === Chunk215023.rL,
     {
-      voiceActivityStatusEnabled: M
+      voiceActivityStatusEnabled: B
     } = (0, Chunk468363.U)({
       location: "Account"
     }),
@@ -966,8 +966,8 @@ function tg(e) {
     showSilentLagWarning: R
   } = (0, eE.Y)(), D = null != I, Z = (0, ej.z)(I), w = (0, d.e7)([ek.Z], () => ek.Z.isConnected()), {
     Component: L,
-    events: B,
-    play: M
+    events: M,
+    play: B
   } = T, U = n || s ? f.v0G : L, V = R ? e9.intl.string(e9.t.ARRV6u) : null, G = (0, k.Z)(t, n, s, l), F = null != o ? o : null != V ? (0, i.jsxs)("div", {
     className: te.tooltipWithSubtext,
     children: [(0, i.jsx)(f.Text, {
@@ -988,7 +988,7 @@ function tg(e) {
     location: N.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: true
   });
-  r.useEffect(() => () => M(), [O, M]);
+  r.useEffect(() => () => B(), [O, B]);
   let K = r.useCallback(e => {
       j(e, H)
     }, [j, H]),
@@ -1034,10 +1034,10 @@ function tg(e) {
         tooltipForceOpen: p,
         plated: null != E,
         onMouseEnter: () => {
-          b(), B.onMouseEnter()
+          b(), M.onMouseEnter()
         },
         onMouseLeave: () => {
-          x(), B.onMouseLeave()
+          x(), M.onMouseLeave()
         },
         icon: (0, i.jsx)(U, {
           size: "custom",

@@ -56,7 +56,7 @@ function L(e) {
   }
   return e
 }
-let B = () => {
+let M = () => {
     let e = (0, Chunk346497.W)();
     return (0, Chunk255367.jsx)(Chunk382791.Cy, {
       text: module,
@@ -64,7 +64,7 @@ let B = () => {
       colorOptions: Chunk382791.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     })
   },
-  M = () => (0, Chunk255367.jsx)("div", {
+  B = () => (0, Chunk255367.jsx)("div", {
     className: Chunk89637.mostPopularPill,
     children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
       className: Chunk89637.mostPopularText,
@@ -247,7 +247,7 @@ let B = () => {
       text: null != J ? P.intl.string(P.t.IBYG5e) : P.intl.string(P.t.ce1v3d),
       className: R.freeTrialPillWithSparkles,
       colorOptions: J === A.Si.TIER_0 ? Y ? N.VE.PREMIUM_TIER_0_GRADIENT_FILL : N.VE.PREMIUM_TIER_0_WHITE_FILL : Y ? q ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_WHITE_FILL
-    }) : el ? (0, i.jsx)(B, {}) : (0, i.jsx)(M, {});
+    }) : el ? (0, i.jsx)(M, {}) : (0, i.jsx)(B, {});
     let eu = J === A.Si.TIER_0 || Q === A.p9.TIER_0 || k === A.p9.TIER_0;
     return (0, i.jsx)(p.Gt, {
       value: F,

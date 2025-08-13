@@ -130,7 +130,7 @@ function k(e) {
     isCurrentGameDetectionEnabled: g.ZP.isDetectionEnabled(O)
   })), A = (0, l.e7)([g.ZP], () => g.ZP.getVisibleGame()), [D, w] = r.useState(false), L = r.useMemo(() => (0, x.le)(O) ? b ? O.gameName : T.intl.formatToPlainString(T.t.G6BGd3, {
     subgameName: O.gameName
-  }) : O.name, [O, b]), [B, M] = r.useState(null != L ? L : "???"), U = a()(y.flexCenter, {
+  }) : O.name, [O, b]), [M, B] = r.useState(null != L ? L : "???"), U = a()(y.flexCenter, {
     [I.game]: !s,
     [I.activeGame]: s,
     [I.nowPlaying]: null != O && s,
@@ -206,14 +206,14 @@ function k(e) {
           className: a()(I.gameName, I.gameNameInput),
           type: "text",
           maxLength: 128,
-          value: B,
+          value: M,
           onBlur: function() {
-            O.name !== B && u.Z.editName(O, B)
+            O.name !== M && u.Z.editName(O, M)
           },
           onKeyDown: function(e) {
             13 === e.keyCode && (e.currentTarget.blur(), e.preventDefault())
           },
-          onChange: e => M(e.target.value)
+          onChange: e => B(e.target.value)
         }), function() {
           let e, {
             played: t,
@@ -371,7 +371,7 @@ function L() {
   })
 }
 
-function B(e) {
+function M(e) {
   let {
     children: t
   } = e;
@@ -385,7 +385,7 @@ function B(e) {
     }), t]
   })
 }
-let M = (0, Chunk251625.oH)(function() {
+let B = (0, Chunk251625.oH)(function() {
     for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
     return new Set(exports.map(e => e.exePath))
   }),
@@ -398,7 +398,7 @@ let M = (0, Chunk251625.oH)(function() {
       overrideExePaths: u
     } = (0, l.cj)([g.ZP], () => ({
       runningGame: g.ZP.getVisibleGame(),
-      overrideExePaths: M(...g.ZP.getOverrides())
+      overrideExePaths: B(...g.ZP.getOverrides())
     })), {
       gameHistory: m,
       robloxSubgameHistory: p
@@ -439,7 +439,7 @@ let M = (0, Chunk251625.oH)(function() {
             children: T.intl.string(T.t.GjgdXV)
           }))
         })]
-      }), 0 === m.length ? (0, i.jsx)(B, {
+      }), 0 === m.length ? (0, i.jsx)(M, {
         children: (0, i.jsx)(d.OZU, {
           children: T.intl.string(T.t["1yiJws"])
         })

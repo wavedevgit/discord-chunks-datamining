@@ -154,8 +154,8 @@ let D = function(e) {
     {
       appliedGuildBoostSlots: k,
       unappliedGuildBoostSlots: L,
-      numActiveGuildBoostSlots: B,
-      hasCooldownBoosts: M,
+      numActiveGuildBoostSlots: M,
+      hasCooldownBoosts: B,
       allGuildBoostsAreOnCooldown: U
     } = r.useMemo(() => {
       let e = [],
@@ -175,7 +175,7 @@ let D = function(e) {
     }, [o]),
     V = null != g ? j.ZP.getNumIncludedPremiumGuildSubscriptionSlots(g.planId) : 0,
     G = Math.max(0, V - k.length),
-    F = B > V,
+    F = M > V,
     H = V === o.length,
     z = H ? G : 1,
     W = r.useMemo(() => {
@@ -255,7 +255,7 @@ let D = function(e) {
             }))
           })
         })]
-      }), (!H || M) && (0, i.jsx)("ul", {
+      }), (!H || B) && (0, i.jsx)("ul", {
         className: I.unappliedBoostSlots,
         children: L.map(e => (0, i.jsx)(A, {
           guildBoostSlot: e,

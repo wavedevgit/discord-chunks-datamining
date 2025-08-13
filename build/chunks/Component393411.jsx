@@ -70,12 +70,12 @@ function k(e, t) {
   }), e
 }
 let L = new Chunk710845.Z("SubscriptionHeader.tsx"),
-  B = {
+  M = {
     page: Chunk981631.ZY5.USER_SETTINGS,
     section: Chunk981631.jXE.SETTINGS_PREMIUM,
     object: Chunk981631.qAy.CARD
   },
-  M = [Chunk981631.O0b.PAUSED, Chunk981631.O0b.PAUSE_PENDING, Chunk981631.O0b.BILLING_RETRY];
+  B = [Chunk981631.O0b.PAUSED, Chunk981631.O0b.PAUSE_PENDING, Chunk981631.O0b.BILLING_RETRY];
 
 function U(e) {
   let {
@@ -183,7 +183,7 @@ function F() {
       onClick: () => (0, Chunk963249.Z)({
         subscriptionTier: Chunk474936.Si.TIER_1,
         analyticsLocations: module,
-        analyticsObject: B
+        analyticsObject: M
       }),
       children: Chunk388032.intl.string(Chunk388032.t["/ygMUV"])
     }),
@@ -250,13 +250,13 @@ let H = function(e) {
           initialPlanId: r.premiumPlanIdFromItems,
           analyticsLocations: H,
           analyticsLocation: F,
-          analyticsObject: B,
+          analyticsObject: M,
           subscription: r
         })
       }
     },
     er = () => {
-      if (!M.includes(r.status) || null == r.pauseEndsAt) return void(0, j.q2)(Error("Invalid subscription to resume"), {
+      if (!B.includes(r.status) || null == r.pauseEndsAt) return void(0, j.q2)(Error("Invalid subscription to resume"), {
         extra: {
           subscriptionId: r.id,
           status: r.status,
@@ -267,7 +267,7 @@ let H = function(e) {
         initialPlanId: r.premiumPlanIdFromItems,
         analyticsLocations: H,
         analyticsLocation: F,
-        analyticsObject: B,
+        analyticsObject: M,
         subscription: r,
         skipConfirm: true
       }) : d.v4(r, H)
@@ -313,7 +313,7 @@ let H = function(e) {
         "aria-label": D.intl.string(D.t.lpNrPj)
       })
   }
-  let em = M.includes(r.status) && !W ? V : U;
+  let em = B.includes(r.status) && !W ? V : U;
   return (0, i.jsx)(em, {
     wordMark: eu,
     subscriptionInfo: (l()(null != a, "Expected renewalInvoicePreview"), (0, i.jsx)("div", {
@@ -379,7 +379,7 @@ let H = function(e) {
                 (0, h.Z)({
                   analyticsLocations: H,
                   analyticsLocation: F,
-                  analyticsObject: B,
+                  analyticsObject: M,
                   subscription: r
                 })
               },

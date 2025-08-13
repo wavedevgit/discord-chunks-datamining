@@ -53,7 +53,7 @@ function A() {
     });
   a()(null != D, "Save clip keybind unset");
   let L = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
-    B = Chunk73800.useMemo(() => [{
+    M = Chunk73800.useMemo(() => [{
       value: Chunk356659.OT.SECONDS_30,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t["bTFv//"], {
         count: 30
@@ -69,7 +69,7 @@ function A() {
         count: 2
       })
     }], [L]),
-    M = Chunk73800.useMemo(() => [{
+    B = Chunk73800.useMemo(() => [{
       value: Chunk37113.LY.RESOLUTION_480,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0N, {
         resolution: Chunk37113.LY.RESOLUTION_480
@@ -208,7 +208,7 @@ function A() {
         title: Chunk388032.intl.string(Chunk388032.t.OgfUio),
         note: Chunk388032.intl.string(Chunk388032.t.H7j4tb),
         value: A,
-        options: B
+        options: M
       }), (0, Chunk255367.jsx)(Chunk442334.Q, {
         className: Chunk964325.formItem,
         select: e => j.yi({
@@ -218,7 +218,7 @@ function A() {
         title: Chunk388032.intl.string(Chunk388032.t.aFudZG),
         note: Chunk388032.intl.string(Chunk388032.t.nIrkW1),
         value: P.resolution,
-        options: M
+        options: B
       }), (0, Chunk255367.jsx)(Chunk442334.Q, {
         className: Chunk964325.formItem,
         select: e => j.yi({

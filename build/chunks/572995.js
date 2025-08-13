@@ -125,7 +125,7 @@ let et = (e, t) => (function(e) {
     },
     noLimits: {
       thumbnail: b,
-      assetUrl: e ? B.ZP : M.ZP
+      assetUrl: e ? M.ZP : B.ZP
     }
   }),
   en = () => {

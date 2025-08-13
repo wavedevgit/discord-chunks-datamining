@@ -111,7 +111,7 @@ function ei(e) {
     copyText: n,
     copyFeedbackText: i
   } = e, [a, l] = s.useState(false), [o, c] = s.useState(false), d = () => {
-    (0, B.JG)(t, () => {
+    (0, M.JG)(t, () => {
       c(true), l(true)
     })
   };

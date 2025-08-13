@@ -36,8 +36,8 @@ let R = new Chunk710845.Z("CacheStore"),
   w = "initializing",
   k = 0,
   L = false,
-  B = false,
-  M = false;
+  M = false,
+  B = false;
 
 function U(e) {
   R.log("Clearing cache store"), k = Date.now(), o.K.remove(P.FsG), o.K.remove(P.ihW), o.K.remove(P.O42), w = "no-cache", "CLEAR_CACHES" === e.type && e.preventWritingCachesAgainThisSession && (Z = true)
@@ -82,8 +82,8 @@ async function G(e, t, n) {
     [
       [N, y], P, D, Z, w, k, L
     ] = await Promise.all([p, g, h, j, E, v, I]),
-    B = performance.now() - m;
-  if (R.verbose("cache loaded in ".concat(B, "ms (channel_history ").concat(N, "ms)")), null == y) return (0, A.Z)("database:history_cache_null"), R.verbose("finished without dispatching CACHE_LOADED"), [false, null, 0];
+    M = performance.now() - m;
+  if (R.verbose("cache loaded in ".concat(M, "ms (channel_history ").concat(N, "ms)")), null == y) return (0, A.Z)("database:history_cache_null"), R.verbose("finished without dispatching CACHE_LOADED"), [false, null, 0];
   {
     let i = Object.fromEntries(y.members.map(e => [e.userId, e])),
       r = null != D.guildId && null != D.channels,
@@ -186,7 +186,7 @@ async function W(e, t, n, i) {
       });
       return
     }
-    if (B) {
+    if (M) {
       (0, A.Z)("already_connected"), R.log("Skipping lazy cache; already connected."), c.Z.dispatch({
         type: "CACHE_LOADED_LAZY_NO_CACHE"
       });
@@ -270,7 +270,7 @@ class K extends(i = Chunk442837.ZP.Store) {
     return k
   }
   canWriteCaches(e) {
-    return (0, I.$8)() ? Z ? (R.log("Not writing cache because caches cleared"), false) : !!e || !!M || (R.log("Not writing cache because never connected"), false) : (R.log("Not writing cache because not authenticated"), false)
+    return (0, I.$8)() ? Z ? (R.log("Not writing cache because caches cleared"), false) : !!e || !!B || (R.log("Not writing cache because never connected"), false) : (R.log("Not writing cache because not authenticated"), false)
   }
   async loadCacheAsync(e, t) {
     let n = (0, N.h)(t);
@@ -306,11 +306,11 @@ s = "CacheStore", (r = "displayName") in K ? Object.defineProperty(K, r, {
   writable: true
 }) : K[r] = s, new K(Chunk570140.Z, D ? {
   CONNECTION_OPEN: function() {
-    return B = true, M = true, false
+    return M = true, B = true, false
   },
   LOGOUT: U,
   CONNECTION_CLOSED: function() {
-    return B = false, M = true, false
+    return M = false, B = true, false
   },
   CACHE_LOADED: function() {
     L = true

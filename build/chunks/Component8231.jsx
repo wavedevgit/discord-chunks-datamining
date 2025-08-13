@@ -1,7 +1,7 @@
 /** Chunk was on 20501 **/
 /** chunk id: 8231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => B
+  Z: () => M
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -239,7 +239,7 @@ let y = () => (0, Chunk255367.jsx)("div", {
       })]
     })
   },
-  B = e => {
+  M = e => {
     var t;
     let n, {
         className: s,
@@ -258,8 +258,8 @@ let y = () => (0, Chunk255367.jsx)("div", {
       R = null != P && (0, f.Wp)(P, j.Si.TIER_2),
       D = (0, x.A)(j.Xh.PREMIUM_MONTH_TIER_2),
       w = "".concat(D, "/").concat((0, h.eP)(j.rV.MONTH)),
-      B = (0, h.CY)(j.Xh.PREMIUM_MONTH_TIER_0),
-      M = (0, h.CY)(j.Xh.PREMIUM_MONTH_TIER_2),
+      M = (0, h.CY)(j.Xh.PREMIUM_MONTH_TIER_0),
+      B = (0, h.CY)(j.Xh.PREMIUM_MONTH_TIER_2),
       U = (0, _.e)();
     if (!O || !v) return null;
     n = o ? null : null != S ? (0, i.jsx)(A, {}) : (0, i.jsx)(y, {});
@@ -286,8 +286,8 @@ let y = () => (0, Chunk255367.jsx)("div", {
             className: C.table,
             children: [(0, i.jsx)(k, {}), (0, i.jsxs)("tbody", {
               children: [(0, i.jsx)(L, {
-                tier0MonthlyPrice: B,
-                tier2MonthlyPrice: M,
+                tier0MonthlyPrice: M,
+                tier2MonthlyPrice: B,
                 shouldUseDiscountPrice: R,
                 tier2DiscountedPriceString: w
               }), U.map(e => (0, r.createElement)(Z, N(I({}, e), {

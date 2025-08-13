@@ -47,8 +47,8 @@ let L = function(e) {
       sourceAnalyticsLocations: s,
       analyticsLocations: L
     } = (0, h.ZP)(g.Z.PREMIUM_MARKETING),
-    B = (0, l.e7)([v.Z], () => v.Z.hasFetchedSubscriptions()),
-    M = (0, l.e7)([O.Z], () => O.Z.hasFetchedPaymentSources),
+    M = (0, l.e7)([v.Z], () => v.Z.hasFetchedSubscriptions()),
+    B = (0, l.e7)([O.Z], () => O.Z.hasFetchedPaymentSources),
     U = (0, l.e7)([C.default], () => C.default.getCurrentUser()),
     V = null == U ? true : U.id,
     G = (0, P.N)(),
@@ -83,7 +83,7 @@ let L = function(e) {
       children: (0, i.jsx)(D.Z, {
         userId: V
       })
-    }) : B && H && M ? null : (0, i.jsx)("div", {
+    }) : M && H && B ? null : (0, i.jsx)("div", {
       className: a()(k.container, k.loading),
       children: (0, i.jsx)(o.$jN, {})
     });
