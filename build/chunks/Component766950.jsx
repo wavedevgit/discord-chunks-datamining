@@ -1,7 +1,7 @@
 /** Chunk was on 47495 **/
 /** chunk id: 766950, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => I
+  default: () => A
 }), require("./953529.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -131,14 +131,14 @@ function R(e) {
   })
 }
 
-function I(e) {
-  var t, n, m, g, h, E, w, I, A, L;
+function A(e) {
+  var t, n, m, g, h, E, w, A, I, L;
   let {
     transitionState: B,
     analyticsLocations: M,
     guild: Z,
-    onClose: Y
-  } = e, G = (0, s.e7)([b.default], () => b.default.getCurrentUser()), H = null != (w = null == G || null == (t = G.displayNameStyles) ? true : t.colors) ? w : [], [z, F] = o.useState(null != (I = null == G || null == (n = G.displayNameStyles) ? true : n.fontId) ? I : a.C.DEFAULT), [U, K] = o.useState(null != (A = null == G || null == (m = G.displayNameStyles) ? true : m.effectId) ? A : i.m.SOLID), X = (0, v.R)(U), q = (0, v.R)(i.m.GRADIENT), [V, W] = o.useState(H.length > 0 && U !== i.m.GRADIENT ? H[0] : X.defaultColors[0]), [$, J] = o.useState(H.length > 0 && U === i.m.GRADIENT ? H : q.defaultColors);
+    onClose: G
+  } = e, Y = (0, s.e7)([b.default], () => b.default.getCurrentUser()), H = null != (w = null == Y || null == (t = Y.displayNameStyles) ? true : t.colors) ? w : [], [z, F] = o.useState(null != (A = null == Y || null == (n = Y.displayNameStyles) ? true : n.fontId) ? A : a.C.DEFAULT), [U, K] = o.useState(null != (I = null == Y || null == (m = Y.displayNameStyles) ? true : m.effectId) ? I : i.m.SOLID), X = (0, v.R)(U), q = (0, v.R)(i.m.GRADIENT), [V, W] = o.useState(H.length > 0 && U !== i.m.GRADIENT ? H[0] : X.defaultColors[0]), [$, J] = o.useState(H.length > 0 && U === i.m.GRADIENT ? H : q.defaultColors);
   (0, f.Z)({
     type: l.ImpressionTypes.POPOUT,
     name: l.ImpressionNames.DISPLAY_NAME_STYLES_MODAL
@@ -152,11 +152,11 @@ function I(e) {
     isApplying: et
   } = (0, S.Z)({
     onSuccess: () => {
-      Y()
+      G()
     },
     onError: e => {}
-  }), en = U === i.m.GRADIENT ? $ : [V], er = z !== (null == G || null == (g = G.displayNameStyles) ? true : g.fontId) || U !== (null == G || null == (h = G.displayNameStyles) ? true : h.effectId) || !(0, c.E)(en, null != (L = null == G || null == (E = G.displayNameStyles) ? true : E.colors) ? L : []);
-  return (o.useEffect(() => {}, [Q]), null == G) ? null : (0, r.jsx)(p.Gt, {
+  }), en = U === i.m.GRADIENT ? $ : [V], er = z !== (null == Y || null == (g = Y.displayNameStyles) ? true : g.fontId) || U !== (null == Y || null == (h = Y.displayNameStyles) ? true : h.effectId) || !(0, c.E)(en, null != (L = null == Y || null == (E = Y.displayNameStyles) ? true : E.colors) ? L : []);
+  return (o.useEffect(() => {}, [Q]), null == Y) ? null : (0, r.jsx)(p.Gt, {
     value: Q,
     children: (0, r.jsx)(j.k.Provider, {
       value: {
@@ -204,11 +204,11 @@ function I(e) {
               defaultColor: X.defaultColors[0]
             })]
           }), (0, r.jsx)(P.Z, {
-            user: G,
+            user: Y,
             selectedFontId: z,
             selectedEffectId: U,
             selectedColors: U === i.m.SOLID && (0, c.E)(en, X.defaultColors) ? [] : en,
-            onClose: Y
+            onClose: G
           })]
         }), (0, r.jsx)(R, {
           isApplying: et,
@@ -227,10 +227,14 @@ function I(e) {
             }
           },
           onSurpriseMe: () => {
-            let e = (0, _.aY)();
-            F(e.fontId), K(e.effectId), W(e.colors[0]), J(e.colors), x.default.track(k.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
+            let {
+              fontId: e,
+              effectId: t,
+              colors: n
+            } = (0, _.aY)();
+            F(e), K(t), t === i.m.GRADIENT ? J(n) : W(n[0]), x.default.track(k.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
           },
-          onClose: Y,
+          onClose: G,
           canApply: er,
           analyticsLocations: Q
         })]

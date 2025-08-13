@@ -130,7 +130,7 @@ function T(e) {
     children: (0, r.jsx)(w, {
       props: s,
       useFullWidth: !i,
-      isSingleItem: true,
+      isSingleItem: i,
       maxWidth: n,
       footer: o
     })

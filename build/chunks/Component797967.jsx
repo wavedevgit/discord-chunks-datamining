@@ -154,10 +154,10 @@ function b(e) {
       end: null != j ? j : c.p6O
     })
   }, [l, y, j]);
-  let I = o.useCallback(e => {
+  let A = o.useCallback(e => {
       null == u || u(e), T(null)
     }, [u, T]),
-    A = o.useCallback(e => {
+    I = o.useCallback(e => {
       null == u || u(e), T(e)
     }, [u, T]),
     L = o.useCallback((e, t) => {
@@ -223,10 +223,10 @@ function b(e) {
       })
     }, [x, b, N, w, L, B, C]),
     Z = o.useCallback(() => (0, r.jsx)(s.Z$W, {
-      onChange: A,
+      onChange: I,
       value: E
-    }), [A, E]),
-    Y = o.useCallback(e => {
+    }), [I, E]),
+    G = o.useCallback(e => {
       let t = (0, r.jsx)(s.jHW, m(f({}, e), {
         "aria-label": d.intl.string(d.t["FHBa//"])
       }));
@@ -246,7 +246,7 @@ function b(e) {
         })
       })
     }, [x, b, Z]),
-    G = o.useCallback(e => {
+    Y = o.useCallback(e => {
       let t = (0, r.jsx)(s.AGO, f({}, e));
       return b ? t : (0, r.jsx)(s.ua7, {
         text: d.intl.string(d.t.bBvAEB),
@@ -257,11 +257,11 @@ function b(e) {
       })
     }, [b]);
   return (0, r.jsx)(s.zH8, m(f({}, e), {
-    renderDefaultButton: G,
-    renderCustomButton: Y,
+    renderDefaultButton: Y,
+    renderCustomButton: G,
     renderGradientCustomButton: M,
     isGradient: S,
     customColor: E,
-    onChange: S ? L : I
+    onChange: S ? L : A
   }))
 }
