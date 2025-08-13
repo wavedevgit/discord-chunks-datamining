@@ -52,12 +52,10 @@ function E() {
         })
       }
     }),
-    v = O(Chunk981631.BRd.DARK, Chunk388032.intl.string(Chunk388032.t.SMPT1t)),
-    I = O(Chunk981631.BRd.LIGHT, Chunk388032.intl.string(Chunk388032.t.K2sFfn)),
-    T = [(0, Chunk255367.jsxs)(Chunk481060.kSQ, {
-      children: [I, v, O(Chunk981631.BRd.DARKER, Chunk388032.intl.string(Chunk388032.t.b8Cei4)), O(Chunk981631.BRd.MIDNIGHT, Chunk388032.intl.string(Chunk388032.t.Do4ZJy)), O("system", Chunk388032.intl.string(Chunk388032.t["7rOU6u"]))]
-    }, "theme-items"), , ];
-  return T.push((0, Chunk255367.jsxs)(Chunk481060.kSQ, {
+    v = [(0, Chunk255367.jsxs)(Chunk481060.kSQ, {
+      children: [O(Chunk981631.BRd.LIGHT, Chunk388032.intl.string(Chunk388032.t.K2sFfn)), O(Chunk981631.BRd.DARK, Chunk388032.intl.string(Chunk388032.t.SMPT1t)), O(Chunk981631.BRd.DARKER, Chunk388032.intl.string(Chunk388032.t.b8Cei4)), O(Chunk981631.BRd.MIDNIGHT, Chunk388032.intl.string(Chunk388032.t.Do4ZJy)), O("system", Chunk388032.intl.string(Chunk388032.t["7rOU6u"]))]
+    }, "theme-items")];
+  return v.push((0, Chunk255367.jsxs)(Chunk481060.kSQ, {
     label: "UI Density",
     children: [(0, Chunk255367.jsx)(Chunk481060.k5B, {
       id: "compact-ui",
@@ -84,7 +82,7 @@ function E() {
         Chunk695346.YC.updateSetting(Chunk524437.Pi.COZY)
       }
     })]
-  }, "list-density")), T.push((0, Chunk255367.jsxs)(Chunk481060.kSQ, {
+  }, "list-density")), v.push((0, Chunk255367.jsxs)(Chunk481060.kSQ, {
     label: "Message Display",
     children: [(0, Chunk255367.jsx)(Chunk481060.k5B, {
       id: "cozy-chat",
@@ -103,5 +101,5 @@ function E() {
         Chunk695346.jU.updateSetting(true), (0, Chunk857595.ZZ)()
       }
     })]
-  }, "chat-density")), T
+  }, "chat-density")), v
 }
