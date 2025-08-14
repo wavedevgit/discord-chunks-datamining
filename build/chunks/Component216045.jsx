@@ -127,12 +127,16 @@ function z() {
   let [ei, er] = (0, Chunk243778.US)([Chunk704215.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE]), es = ei === Chunk704215.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
   Chunk73800.useEffect(() => {
     es && er(Chunk921944.L.TAKE_ACTION)
-  }, [es, er]), Chunk73800.useEffect(() => () => Chunk570140.Z.wait(Chunk809206.W3), []);
-  let [ea, el] = Chunk73800.useState(false), {
-    showRedesign: eo
+  }, [es, er]);
+  let [ea, el] = (0, Chunk243778.US)([Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE]), eo = ea === Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE;
+  Chunk73800.useEffect(() => {
+    eo && el(Chunk921944.L.TAKE_ACTION)
+  }, [eo, el]), Chunk73800.useEffect(() => () => Chunk570140.Z.wait(Chunk809206.W3), []);
+  let [ec, ed] = Chunk73800.useState(false), {
+    showRedesign: eu
   } = Chunk413182.b.useExperiment({
     location: "profile customization"
-  }), ec = !J, ed = Chunk73800.useRef(null);
+  }), em = !J, ep = Chunk73800.useRef(null);
   return exports ? (0, Chunk255367.jsx)(Chunk497321.Z, {}) : (0, Chunk255367.jsxs)(Chunk906732.Gt, {
     value: Q,
     children: [(0, Chunk255367.jsx)(Chunk475977.Z, {}), (0, Chunk255367.jsx)(Chunk296810.Z, {
@@ -153,22 +157,22 @@ function z() {
         isHighlighted: true
       })),
       children: (0, Chunk255367.jsx)(Chunk532495.Z, {})
-    }), eo && (0, Chunk255367.jsx)(Chunk610794.Z, {}), (0, Chunk255367.jsx)(Chunk622535.$, {
-      innerRef: ed,
-      onChange: e => el(e),
+    }), eu && (0, Chunk255367.jsx)(Chunk610794.Z, {}), (0, Chunk255367.jsx)(Chunk622535.$, {
+      innerRef: ep,
+      onChange: e => ed(e),
       threshold: .25,
-      active: ec,
+      active: em,
       children: (0, Chunk255367.jsx)("div", {
-        ref: ed,
+        ref: ep,
         children: (0, Chunk255367.jsx)(Chunk935147.Z, {
           user: module,
-          shouldShow: ec,
-          isVisible: ea
+          shouldShow: em,
+          isVisible: ec
         })
       })
-    }), ec && !q && (0, Chunk255367.jsx)(Chunk53691.p, {
+    }), em && !q && (0, Chunk255367.jsx)(Chunk53691.p, {
       className: Chunk391371.floatingNitroUpsell,
-      showUpsell: ec && !ea,
+      showUpsell: em && !ec,
       text: Chunk388032.intl.format(Chunk388032.t.TmfgIy, {
         onClick: () => (0, Chunk267717.y)({
           analyticsSource: $
@@ -182,7 +186,7 @@ function z() {
           var e;
           Chunk626135.default.track(Chunk981631.rMx.TRY_IT_OUT_PRESET_CLICKED, {
             cta_variant: "floating_action_button"
-          }), null == ed || null == (e = ed.current) || module.scrollIntoView({
+          }), null == ep || null == (e = ep.current) || module.scrollIntoView({
             behavior: "smooth"
           })
         },
