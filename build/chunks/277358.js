@@ -24,8 +24,8 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = 3 * Chunk70956.Z.Millis.DAY,
-  m = 7 * Chunk70956.Z.Millis.DAY,
+let h = +Chunk70956.Z.Millis.DAY,
+  m = 3 * Chunk70956.Z.Millis.DAY,
   g = {
     joinGameLogPrefix: "[FLog::GameJoinLoadTime] Report game_join_loadtime:",
     joinGameFields: [{

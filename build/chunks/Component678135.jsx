@@ -44,8 +44,8 @@ function v(e) {
     pendingLegacyUsernameDisabled: L,
     pendingDisplayNameStyles: x,
     avatarClassName: M,
-    containerClassName: k,
-    isTryItOutFlow: j = false,
+    containerClassName: j,
+    isTryItOutFlow: k = false,
     disabledInputs: U = false,
     hideCustomStatus: G = false,
     hideBioSection: B = false,
@@ -80,7 +80,7 @@ function v(e) {
     displayProfile: W,
     themeType: b.lY.POPOUT,
     pendingThemeColors: w,
-    className: o()(O.container, k),
+    className: o()(O.container, j),
     forceShowPremium: i,
     children: [(0, r.jsxs)("div", {
       className: O.header,
@@ -91,7 +91,7 @@ function v(e) {
         canUsePremiumCustomization: i,
         pendingBanner: I,
         pendingAccentColor: T,
-        isTryItOutFlow: j,
+        isTryItOutFlow: k,
         disabledInputs: U,
         onUpsellClick: () => null == v ? true : v({
           object: E.qAy.EDIT_PROFILE_BANNER
@@ -107,7 +107,7 @@ function v(e) {
         previewPrimaryColor: Q,
         className: M,
         disabledInputs: U,
-        isTryItOutFlow: j,
+        isTryItOutFlow: k,
         onUpsellClick: () => null == v ? true : v({
           object: E.qAy.AVATAR
         })
@@ -128,7 +128,7 @@ function v(e) {
       pendingPronouns: A,
       pendingLegacyUsernameDisabled: L,
       pendingDisplayNameStyles: x,
-      isTryItOutFlow: j,
+      isTryItOutFlow: k,
       hideBioSection: B,
       pendingBadges: F,
       shouldOpenBadgeTooltip: V

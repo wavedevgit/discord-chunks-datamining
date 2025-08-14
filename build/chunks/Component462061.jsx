@@ -69,12 +69,12 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = 124,
+let k = 124,
   U = Chunk481060.EFr.SIZE_80,
   G = Chunk481060.EFr.SIZE_40;
 
@@ -87,7 +87,7 @@ function B(e) {
     text: w.intl.string(w.t.HFwRpq),
     position: "bottom",
     color: l.FGA.GREY,
-    children: e => (0, r.jsx)("div", k(x({}, e), {
+    children: e => (0, r.jsx)("div", j(x({}, e), {
       className: D.interactive,
       children: (0, r.jsx)(l.Mgn, {
         color: l.TVs.colors.STATUS_WARNING_BACKGROUND
@@ -109,7 +109,7 @@ function Z(e) {
     onVideoResize: L,
     blocked: x,
     ignored: M,
-    noVideoRender: k = false,
+    noVideoRender: j = false,
     pulseSpeakingIndicator: B = false,
     inOverlayPopout: Z = false,
     paused: F = false
@@ -117,7 +117,7 @@ function Z(e) {
     user: Y,
     streamId: W,
     speaking: K
-  } = t, z = Y.id === H, q = (0, S.ZP)(t), X = (0, s.e7)([I.Z], () => I.Z.isFocused()), Q = (0, s.e7)([g.Z], () => g.Z.getWindowFocused(R.KJ3.CHANNEL_CALL_POPOUT)), J = (0, s.e7)([v.Z], () => null != Y.id && v.Z.isLocalVideoDisabled(Y.id, (0, f.Z)(t.type)), [Y.id, t.type]), $ = (0, s.e7)([O.ZP], () => O.ZP.isGuestOrLurker(n.guild_id, Y.id)), ee = T.ZP.getName(n.getGuildId(), n.id, Y) + ($ ? " ".concat(w.intl.string(w.t["pFO/Pj"])) : ""), et = K && (Q || X), en = l < j ? G : U, {
+  } = t, z = Y.id === H, q = (0, S.ZP)(t), X = (0, s.e7)([I.Z], () => I.Z.isFocused()), Q = (0, s.e7)([g.Z], () => g.Z.getWindowFocused(R.KJ3.CHANNEL_CALL_POPOUT)), J = (0, s.e7)([v.Z], () => null != Y.id && v.Z.isLocalVideoDisabled(Y.id, (0, f.Z)(t.type)), [Y.id, t.type]), $ = (0, s.e7)([O.ZP], () => O.ZP.isGuestOrLurker(n.guild_id, Y.id)), ee = T.ZP.getName(n.getGuildId(), n.id, Y) + ($ ? " ".concat(w.intl.string(w.t["pFO/Pj"])) : ""), et = K && (Q || X), en = l < k ? G : U, {
     avatarSrc: er,
     avatarDecorationSrc: ei
   } = (0, E.Z)({
@@ -141,7 +141,7 @@ function Z(e) {
     e.isGuildStageVoice() && !q && (null == t ? true : t.id) === n.id && c.Z.selectParticipant(e.id, null)
   }, [q]);
   let eu = false;
-  return o && !J && !k && q && !b && null != V && v.Z.supports(P.AN.VIDEO) ? eu && !Z ? (0, r.jsx)(A.Z, {
+  return o && !J && !j && q && !b && null != V && v.Z.supports(P.AN.VIDEO) ? eu && !Z ? (0, r.jsx)(A.Z, {
     selected: b,
     width: l
   }) : null != ea && null == es ? (0, r.jsx)(N.Z, {

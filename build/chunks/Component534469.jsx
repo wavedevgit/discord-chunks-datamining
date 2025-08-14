@@ -173,7 +173,7 @@ function el(e) {
       popouts: eE,
       selected: eb,
       setPopout: ey
-    } = (0, k.Z)(O.id, K.d$),
+    } = (0, j.Z)(O.id, K.d$),
     eO = (0, x.qo)(O, J, ey),
     ev = (0, x.Go)(O, J),
     {
@@ -202,17 +202,17 @@ function el(e) {
     eL = (0, u.e7)([S.Z], () => S.Z.isEditing($, C), [$, C]),
     ex = (0, u.e7)([f.Z], () => f.Z.keyboardModeEnabled),
     eM = eb || eL || ex && eN,
-    ek = eM || eA,
-    ej = (0, u.e7)([I.Z], () => O.hasFlag(z.iLy.HAS_THREAD) && I.Z.getChannel(A.default.castMessageIdAsChannelId(O.id))),
+    ej = eM || eA,
+    ek = (0, u.e7)([I.Z], () => O.hasFlag(z.iLy.HAS_THREAD) && I.Z.getChannel(A.default.castMessageIdAsChannelId(O.id))),
     eU = O.isFirstMessageInForumPost(J),
     eG = (0, h.A)((null != (n = O.editedTimestamp) ? n : O.timestamp).valueOf()),
     eB = (0, u.e7)([T.Z], () => T.Z.isDeveloper),
     {
       content: eZ,
       hasSpoilerEmbeds: eF
-    } = (0, j.Z)(O, {
+    } = (0, k.Z)(O, {
       hideSimpleEmbedContent: em,
-      isInteracting: ek,
+      isInteracting: ej,
       formatInline: false,
       allowList: eU || eG,
       allowHeading: eU || eG,
@@ -305,7 +305,7 @@ function el(e) {
             channelMessageProps: e,
             hasSpoilerEmbeds: eF,
             handleContextMenu: eO,
-            isInteracting: ek,
+            isInteracting: ej,
             isAutomodBlockedMessage: e$,
             forceAddReactions: O.type === z.uaV.EMOJI_ADDED
           }),
@@ -320,7 +320,7 @@ function el(e) {
           childrenMessageContent: o,
           onMouseMove: eI,
           onMouseLeave: eT,
-          hasThread: !el && O.hasFlag(z.iLy.HAS_THREAD) && null != ej,
+          hasThread: !el && O.hasFlag(z.iLy.HAS_THREAD) && null != ek,
           isSystemMessage: (0, R.Z)(O),
           hasReply: O.type === z.uaV.REPLY,
           messageRef: e => {
@@ -358,7 +358,7 @@ function ec(e) {
     {
       popouts: p,
       setPopout: h
-    } = (0, k.Z)(i.id, K.d$),
+    } = (0, j.Z)(i.id, K.d$),
     m = (0, P.ZP)(i),
     g = (0, L.iG)(i),
     E = (0, L.Gx)(i);
@@ -417,7 +417,7 @@ function eu(e) {
     popouts: Z,
     selected: H,
     setPopout: Q
-  } = (0, k.Z)(s.id, K.d$), J = v.RS.useSetting(), $ = v.NA.useSetting(), ee = J && $, en = (0, u.e7)([y.Z], () => y.Z.getMessageByReference(T)), eo = (0, h.A)((null != (n = s.editedTimestamp) ? n : s.timestamp).valueOf()), {
+  } = (0, j.Z)(s.id, K.d$), J = v.RS.useSetting(), $ = v.NA.useSetting(), ee = J && $, en = (0, u.e7)([y.Z], () => y.Z.getMessageByReference(T)), eo = (0, h.A)((null != (n = s.editedTimestamp) ? n : s.timestamp).valueOf()), {
     handleMouseEnter: ea,
     handleMouseLeave: es,
     isHovered: el
@@ -429,7 +429,7 @@ function eu(e) {
   }), ec = (0, u.e7)([f.Z], () => f.Z.keyboardModeEnabled), eu = H || ec && w, ed = eu || el, {
     content: ef,
     hasSpoilerEmbeds: e_
-  } = (0, j.Z)(s, {
+  } = (0, k.Z)(s, {
     hideSimpleEmbedContent: ee,
     isInteracting: ed,
     formatInline: false,

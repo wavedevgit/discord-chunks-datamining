@@ -38,9 +38,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk798242 = require("./798242.js");
 let M = 1024,
-  k = ["embedded_background"];
+  j = ["embedded_background"];
 
-function j(e) {
+function k(e) {
   return e > 400 ? 2 : +(e > 300)
 }
 let U = 4;
@@ -95,7 +95,7 @@ function F(e) {
     application: p,
     channel: m,
     width: g
-  } = e, E = j(g), [b] = G(g), y = (0, s.Wu)([P.default, C.default], () => Array.from(o).map(e => (0, _.J)(e, C.default) ? null : P.default.getUser(e.userId)).filter(w.lm)), O = (0, s.e7)([d.ZP], () => {
+  } = e, E = k(g), [b] = G(g), y = (0, s.Wu)([P.default, C.default], () => Array.from(o).map(e => (0, _.J)(e, C.default) ? null : P.default.getUser(e.userId)).filter(w.lm)), O = (0, s.e7)([d.ZP], () => {
     var e;
     return null != (e = d.ZP.getEmbeddedActivitiesForChannel(m.id).find(e => e.applicationId === p.id)) ? e : d.ZP.getEmbeddedActivitiesForStartingChannel(m.id).find(e => e.applicationId === p.id)
   }), {
@@ -104,13 +104,13 @@ function F(e) {
     userId: null == (t = P.default.getCurrentUser()) ? true : t.id,
     channelId: m.id,
     application: p
-  }) === h.Fw.CAN_JOIN, R = null != (n = m.getGuildId()) ? n : true, M = i.useId(), k = p.id, U = i.useMemo(() => ({
+  }) === h.Fw.CAN_JOIN, R = null != (n = m.getGuildId()) ? n : true, M = i.useId(), j = p.id, U = i.useMemo(() => ({
     channel: m,
     type: "channel"
   }), [m]), {
     submitting: F
   } = (0, S.Z)({
-    applicationId: k,
+    applicationId: j,
     context: U,
     launchingComponentId: M
   });
@@ -180,7 +180,7 @@ function V(e) {
     url: h
   } = (0, g.Z)({
     applicationId: u,
-    names: k,
+    names: j,
     size: M
   }), y = !o && f, S = !f, C = !f && !o, P = (0, s.e7)([R.Z, N.Z], () => (0, v.Z)({
     LayerStore: R.Z,

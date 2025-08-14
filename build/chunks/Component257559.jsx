@@ -2,7 +2,7 @@
 /** chunk id: 257559, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 }), require("./997841.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -298,7 +298,7 @@ class M extends Chunk73800.PureComponent {
     })
   }
 }
-let k = {
+let j = {
   confirmPin: L,
   confirmUnpin: x,
   confirmDelete: function(e, t) {

@@ -5,7 +5,7 @@ require.d(exports, {
   AG: () => D,
   Z$: () => M,
   jH: () => L,
-  zH: () => k
+  zH: () => j
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -242,14 +242,14 @@ function x(e) {
         input: t
       }), o(n)
     },
-    k = async () => {
+    j = async () => {
       if (null != S) try {
         let {
           sRGBHex: e
         } = await S.open();
         M(e)
       } catch (e) {}
-    }, j = i.useCallback(e => {
+    }, k = i.useCallback(e => {
       x(t => T(v({}, t), {
         pending: e,
         input: e.hex
@@ -260,7 +260,7 @@ function x(e) {
       children: [(0, r.jsx)(i.Suspense, {
         fallback: null,
         children: (0, r.jsx)(N, {
-          onChange: j,
+          onChange: k,
           onChangeComplete: e => {
             let {
               hex: t
@@ -272,7 +272,7 @@ function x(e) {
       }), f, (0, r.jsxs)("div", {
         className: y.customColorPickerInputContainer,
         children: [E && null != S && (0, r.jsx)(g.JO, {
-          onClick: k,
+          onClick: j,
           tooltip: b.intl.string(b.t["0dU9Nz"]),
           tooltipPosition: "top",
           className: y.customColorPickerEyeDropper,
@@ -303,7 +303,7 @@ function x(e) {
 }
 let M = Chunk73800.memo(x);
 
-function k(e) {
+function j(e) {
   let {
     className: t,
     defaultColor: n,

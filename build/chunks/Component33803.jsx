@@ -107,7 +107,7 @@ function q(e, t) {
     popouts: n,
     selected: r,
     setPopout: o
-  } = (0, x.Z)(e.id, j.d$), {
+  } = (0, x.Z)(e.id, k.d$), {
     usernameProfile: a,
     avatarProfile: s
   } = n, l = (0, L.wq)(e.author.id, t.id), c = (0, L.RN)(e.author.id, t.id, e.id), u = (0, L.XO)(e, t, a, o);
@@ -318,7 +318,7 @@ function ei(e) {
   } = A, R = K(A, ["onFocus"]), {
     isFocused: D,
     handleFocus: x,
-    handleBlur: j
+    handleBlur: k
   } = (0, L.bb)(C), V = (0, d.e7)([p.Z], () => p.Z.keyboardModeEnabled), Y = (0, d.e7)([I.Z], () => I.Z.can(U.Plq.MANAGE_MESSAGES, l), [l]), {
     ruleName: z,
     embedChannel: X,
@@ -353,7 +353,7 @@ function ei(e) {
   return (0, r.jsx)("div", {
     onMouseEnter: T,
     onMouseLeave: S,
-    children: (0, r.jsx)(k.Z, {
+    children: (0, r.jsx)(j.Z, {
       className: a()(F.mainContainer, {
         [F.compact]: o
       }),
@@ -467,7 +467,7 @@ function ei(e) {
             popoutProps: ep,
             zalgo: true,
             onFocus: x,
-            onBlur: j,
+            onBlur: k,
             onClick: eE
           }))
         }), (0, r.jsx)(Q, {

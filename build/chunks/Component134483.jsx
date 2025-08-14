@@ -84,13 +84,13 @@ function V(e, t) {
 function H(e, t, n) {
   for (let a of e) {
     var r, i, o;
-    if (a.type === j.fO.STREAM) {
+    if (a.type === k.fO.STREAM) {
       let e = null != (i = (0, _.Um)(a.stream, n)) ? i : null,
         o = (0, b.ZZ)(t, e);
       if (null != o && (null == (r = o.userStatus) ? true : r.claimedAt) == null) return o
     }
     for (let r of e)
-      if (!(0, j.I)(r))
+      if (!(0, k.I)(r))
         for (let e of n.getActivities(r.user.id)) {
           let n = (0, b.ZZ)(t, e);
           if (null != n && (null == (o = n.userStatus) ? true : o.claimedAt) == null) return n
@@ -101,7 +101,7 @@ function H(e, t, n) {
 
 function Y(e, t, n, r) {
   return e.some(e => {
-    if (e.type !== j.fO.STREAM || e.user.id !== n.id) returnfalse;
+    if (e.type !== k.fO.STREAM || e.user.id !== n.id) returnfalse;
     let i = (0, _.Um)(e.stream, r);
     return null != i && (0, b._D)(i, t)
   })
@@ -112,9 +112,9 @@ function W(e) {
   let {
     channelId: h,
     quest: N,
-    previewQuest: j,
+    previewQuest: k,
     isParticipatingOverride: B
-  } = e, F = (0, E.O5)(), [H, W] = i.useState(false), K = i.useCallback(() => W(true), []), z = i.useCallback(() => W(false), []), q = (0, s.e7)([g.default], () => g.default.getCurrentUser()), X = (0, s.e7)([p.Z], () => p.Z.getState().theme), Q = (0, l.wj)(X) ? k.BRd.DARK : k.BRd.LIGHT, J = (0, s.e7)([d.Z], () => d.Z.getParticipants(e.channelId), [e.channelId]), $ = (0, s.e7)([v.Z], () => (0, b.PM)(v.Z.quests, v.Z.questToDeliverForPlacement, I.Ok.DESKTOP_ACCOUNT_PANEL_AREA), []), {
+  } = e, F = (0, E.O5)(), [H, W] = i.useState(false), K = i.useCallback(() => W(true), []), z = i.useCallback(() => W(false), []), q = (0, s.e7)([g.default], () => g.default.getCurrentUser()), X = (0, s.e7)([p.Z], () => p.Z.getState().theme), Q = (0, l.wj)(X) ? j.BRd.DARK : j.BRd.LIGHT, J = (0, s.e7)([d.Z], () => d.Z.getParticipants(e.channelId), [e.channelId]), $ = (0, s.e7)([v.Z], () => (0, b.PM)(v.Z.quests, v.Z.questToDeliverForPlacement, I.Ok.DESKTOP_ACCOUNT_PANEL_AREA), []), {
     isCurrentUserStreamingQuestApplication: ee,
     isQuestInQuestBar: et
   } = (0, s.cj)([m.Z], () => ({
@@ -123,7 +123,7 @@ function W(e) {
   }), [q, N, J, $]), en = null != N ? A.r.build(N.config) : null, er = null == en ? true : en.application.id, ei = (0, s.e7)([f.ZP, m.Z], () => {
     let e = f.ZP.getRunningGames().map(e => e.id);
     if ((0, b.$H)(N) && e.includes(er)) returntrue;
-    let t = null != q ? m.Z.findActivity(q.id, e => e.type !== k.IIU.CUSTOM_STATUS) : null;
+    let t = null != q ? m.Z.findActivity(q.id, e => e.type !== j.IIU.CUSTOM_STATUS) : null;
     return !!(null != t && (0, b.$J)(N) && (0, b._D)(t, N))
   }, [N, er, q]), eo = true === B || ee || ei, ea = (0, s.e7)([v.Z], () => null != N && v.Z.isEnrolling(N.id), [N]), es = (0, s.e7)([d.Z], () => ((null == q ? true : q.id) == null ? null : d.Z.getParticipant(h, q.id)) != null, [h, q]), el = (0, O.B6)(null == N ? true : N.config.expiresAt), ec = (0, O.B6)(null == en ? true : en.rewardsExpireAt), eu = i.useCallback(() => {
     (0, y.AH)(N.id, {
@@ -165,7 +165,7 @@ function W(e) {
     isQuestBarShowing: ey,
     isCurrentUserCallParticipant: es
   });
-  let eO = null != j && (null == (o = N.userStatus) ? true : o.claimedAt) == null;
+  let eO = null != k && (null == (o = N.userStatus) ? true : o.claimedAt) == null;
   if (!eO && (eE || eh || ey) || !eO && !es) return null;
   let ev = (0, b.il)(N),
     eI = (0, r.jsx)(P.Z, {

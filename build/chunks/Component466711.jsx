@@ -132,7 +132,7 @@ function L(e) {
   } = (0, u.ZP)(c.Z.GIFT_BUTTON), [I, S] = i.useState(false), A = (0, o.e7)([h.Z], () => !(null === h.Z || true === h.Z ? true : h.Z.hasLayers())), N = (0, o.e7)([m.default], () => m.default.getCurrentUser()), C = null != N ? E.default.age(N.id) : 0, {
     giftBoxAnimation: R,
     trinketsAnimation: L
-  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, x = null != n.firstTimeNotice && !s && A && C >= D, [M, k] = (0, f.XR)(x ? a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), j = null != M, U = I || j, G = (0, b.Ft)(g);
+  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, x = null != n.firstTimeNotice && !s && A && C >= D, [M, j] = (0, f.XR)(x ? a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), k = null != M, U = I || k, G = (0, b.Ft)(g);
   if (s) return null;
   let B = () => {
       (0, _.Z)({
@@ -149,7 +149,7 @@ function L(e) {
       })
     },
     Z = () => {
-      S(false), k(v.L.TAKE_ACTION), B()
+      S(false), j(v.L.TAKE_ACTION), B()
     },
     F = true !== R ? (0, r.jsx)(P, {
       config: R,
@@ -168,10 +168,10 @@ function L(e) {
     onMouseLeave: () => {
       S(false)
     },
-    children: true !== n.firstTimeNotice && j ? (0, r.jsx)(p.Z, {
+    children: true !== n.firstTimeNotice && k ? (0, r.jsx)(p.Z, {
       onComplete: () => S(false),
       onCheckItOutClick: B,
-      markAsDismissed: k,
+      markAsDismissed: j,
       config: n.firstTimeNotice,
       children: F
     }) : F

@@ -24,52 +24,55 @@ let m = e => {
         modalGlowIdle: true,
         modalGlowExit: true
       }),
-      [a, s] = (0, r.useState)(false),
-      [c, m] = (0, r.useState)(false),
+      [a, m] = (0, r.useState)(false),
       [g, E] = (0, r.useState)(false),
-      b = (0, r.useRef)(true);
-    (0, r.useEffect)(() => (b.current = true, () => {
-      b.current = false
+      [b, y] = (0, r.useState)(false),
+      O = (0, r.useRef)(true);
+    (0, r.useEffect)(() => (O.current = true, () => {
+      O.current = false
     }), []);
-    let y = (0, r.useCallback)(() => null != n.modalGlowEntry && null != n.modalGlowIdle && null != n.modalGlowExit, [n.modalGlowEntry, n.modalGlowIdle, n.modalGlowExit]),
-      O = (0, r.useCallback)(async () => {
-        if (!y() && !g) {
-          E(true), m(false), s(false);
+    let v = (0, r.useCallback)(() => null != n.modalGlowEntry && null != n.modalGlowIdle && null != n.modalGlowExit, [n.modalGlowEntry, n.modalGlowIdle, n.modalGlowExit]),
+      I = (0, r.useCallback)(async () => {
+        if (!v() && !b) {
+          y(true), E(false), m(false);
           try {
-            let [e, n, r] = await Promise.all([o.tn.get({
-              url: t ? u.Z : d.Z,
-              binary: true,
-              rejectWithError: true
-            }), o.tn.get({
-              url: t ? f.Z : _.Z,
-              binary: true,
-              rejectWithError: true
-            }), o.tn.get({
-              url: t ? p.Z : h.Z,
-              binary: true,
-              rejectWithError: true
-            })]);
-            b.current && (i({
-              modalGlowEntry: window.URL.createObjectURL(e.body),
-              modalGlowExit: window.URL.createObjectURL(n.body),
-              modalGlowIdle: window.URL.createObjectURL(r.body)
-            }), s(true))
+            let e = Date.now(),
+              [n, r, a] = await Promise.all([o.tn.get({
+                url: t ? u.Z : d.Z,
+                binary: true,
+                rejectWithError: true
+              }), o.tn.get({
+                url: t ? f.Z : _.Z,
+                binary: true,
+                rejectWithError: true
+              }), o.tn.get({
+                url: t ? p.Z : h.Z,
+                binary: true,
+                rejectWithError: true
+              })]);
+            O.current && (i({
+              modalGlowEntry: window.URL.createObjectURL(n.body),
+              modalGlowExit: window.URL.createObjectURL(r.body),
+              modalGlowIdle: window.URL.createObjectURL(a.body)
+            }), m(true), s.default.track(c.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_PREFETCH_SUCCESS, {
+              load_duration_ms: Date.now() - e
+            }))
           } catch (e) {
-            b.current && m(true)
+            O.current && E(true)
           } finally {
-            b.current && E(false)
+            O.current && y(false)
           }
         }
-      }, [y, g, t]);
+      }, [v, b, t]);
     return (0, r.useEffect)(() => {
-      e && O()
-    }, [e, O]), (0, r.useEffect)(() => () => {
+      e && I()
+    }, [e, I]), (0, r.useEffect)(() => () => {
       null != n.modalGlowEntry && window.URL.revokeObjectURL(n.modalGlowEntry), null != n.modalGlowIdle && window.URL.revokeObjectURL(n.modalGlowIdle), null != n.modalGlowExit && window.URL.revokeObjectURL(n.modalGlowExit)
     }, [n.modalGlowEntry, n.modalGlowIdle, n.modalGlowExit]), {
       mediaUrls: n,
       isSuccess: a,
-      isFailure: c,
-      isLoading: g
+      isFailure: g,
+      isLoading: b
     }
   },
   g = e => {

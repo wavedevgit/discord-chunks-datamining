@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk73800 = require("./73800.js"),
   Chunk835473 = require("./835473.js"),
   Chunk817788 = require("./817788.js"),
+  Chunk509003 = require("./509003.js"),
   Chunk492423 = require("./492423.jsx"),
-  Chunk774073 = require("./774073.js"),
-  Chunk981631 = require("./981631.js");
+  Chunk774073 = require("./774073.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,11 +55,11 @@ function _(e) {
     onOpened: t
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, {
     applicationId: n
-  } = e, c = (0, i.q)(n), d = r.useMemo(() => null == c ? n : null != c.thirdPartySkus.find(e => e.distributor === l.GQo.ROBLOX) ? o.eB : n, [c, n]), _ = (0, s.ZP)(f(u({}, e), {
+  } = e, c = (0, i.q)(n), d = r.useMemo(() => null == c ? n : (0, a.bP)(c) ? o.eB : n, [c, n]), _ = (0, l.ZP)(f(u({}, e), {
     applicationId: d
   }));
   return _.shouldOpenGameProfile && null != d ? n => {
-    n.stopPropagation(), n.preventDefault(), a.Z.openGameProfileModal(f(u({}, e), {
+    n.stopPropagation(), n.preventDefault(), s.Z.openGameProfileModal(f(u({}, e), {
       applicationId: d,
       gameProfileModalChecks: _
     })), null == t || t()

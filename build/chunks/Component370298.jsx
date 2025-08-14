@@ -2,7 +2,7 @@
 /** chunk id: 370298, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./388685.js"), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -68,13 +68,13 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function j(e) {
+function k(e) {
   let {
     toggleShowMenu: t,
     showMenu: n,
@@ -111,7 +111,7 @@ function j(e) {
       } = e;
       return (0, r.jsx)(s.ua7, {
         text: w.intl.string(w.t.emnnEB),
-        children: e => (0, r.jsx)(s.P3F, k(x({}, e), {
+        children: e => (0, r.jsx)(s.P3F, j(x({}, e), {
           className: l,
           focusProps: {
             offset: 2
@@ -143,26 +143,26 @@ function U(e) {
     imageUrl: I,
     mimeType: L
   } = e, M = (0, o.e7)([S.Z], () => S.Z.getGuild(a.guild_id)), {
-    fetchState: k,
-    imageRecCommandContexts: j
+    fetchState: j,
+    imageRecCommandContexts: k
   } = (0, C.h)({
     channelId: a.id
-  }), U = k === R.M.FETCHING, G = (0, E.g)(a), B = (0, _.PL)(true, true), Z = (0, _.LD)(a.guild_id, true);
+  }), U = j === R.M.FETCHING, G = (0, E.g)(a), B = (0, _.PL)(true, true), Z = (0, _.LD)(a.guild_id, true);
   i.useEffect(() => {
-    (k === R.M.ERROR || k === R.M.FETCHED && 0 === j.length) && n()
-  }, [k, j.length, n]), i.useEffect(() => {
+    (j === R.M.ERROR || j === R.M.FETCHED && 0 === k.length) && n()
+  }, [j, k.length, n]), i.useEffect(() => {
     var e, t;
-    if (U || 0 === j.length) return;
+    if (U || 0 === k.length) return;
     let n = [];
-    j.forEach(e => {
+    k.forEach(e => {
       n.push(Number(e.command.id)), null != e.overrideSendCommand && n.push(Number(e.overrideSendCommand.id))
     }), A.default.track(P.rMx.APP_IMAGE_RECS_MENU_VIEWED, {
       guild_id: null != (e = null == a ? true : a.guild_id) ? e : "",
       channel_id: null != (t = null == a ? true : a.id) ? t : "",
-      application_ids: [...j.map(e => Number(e.command.applicationId))],
+      application_ids: [...k.map(e => Number(e.command.applicationId))],
       command_ids: n
     })
-  }, [j, a, U]);
+  }, [k, a, U]);
   let F = i.useCallback(async e => {
       let t = await fetch(I),
         n = await t.arrayBuffer(),
@@ -274,7 +274,7 @@ function U(e) {
       navigable: false,
       disabled: true
     }, "menu-image-recs-placeholder") : (0, r.jsx)(r.Fragment, {
-      children: j.filter(e => null != e.imageOption).map(e => {
+      children: k.filter(e => null != e.imageOption).map(e => {
         let t = e.overrideSendCommand,
           n = null == e ? true : e.overrideSendCommandInfo,
           i = null != t && null != n,

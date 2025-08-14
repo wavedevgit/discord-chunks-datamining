@@ -6,7 +6,7 @@ require.d(exports, {
   Y0: () => x,
   YA: () => B,
   fM: () => L,
-  hz: () => j,
+  hz: () => k,
   mz: () => U,
   ol: () => G,
   xB: () => M
@@ -137,10 +137,10 @@ function x(e) {
       clamp: true
     },
     onRest: y
-  }, "animate-always"), M = i.useRef(null), k = null != P["aria-label"], j = null != P["aria-labelledby"], U = i.useId(), G = null != (t = P["aria-labelledby"]) ? t : U, B = i.useMemo(() => ({
+  }, "animate-always"), M = i.useRef(null), j = null != P["aria-label"], k = null != P["aria-labelledby"], U = i.useId(), G = null != (t = P["aria-labelledby"]) ? t : U, B = i.useMemo(() => ({
     headerId: G,
-    headerIdIsManaged: j
-  }), [G, j]);
+    headerIdIsManaged: k
+  }), [G, k]);
   return (0, r.jsx)(O.zM.Provider, {
     value: B,
     children: (0, r.jsx)(p.V, C(A({
@@ -148,7 +148,7 @@ function x(e) {
       role: _,
       returnRef: I,
       impressionType: l.ImpressionTypes.MODAL,
-      "aria-labelledby": k ? true : B.headerId
+      "aria-labelledby": j ? true : B.headerId
     }, P), {
       children: (0, r.jsx)(s.animated.div, {
         className: a()(m, T.root, D[u], {
@@ -187,7 +187,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   switch (null != e ? e : "thin") {
     case "auto":
       return g.yW;
@@ -198,13 +198,13 @@ function k(e) {
   }
 }
 
-function j(e) {
+function k(e) {
   let {
     className: t,
     children: n,
     scrollerRef: i,
     scrollbarType: o
-  } = e, s = R(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = k(o);
+  } = e, s = R(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = j(o);
   return (0, r.jsx)(l, C(A({
     className: a()(T.content, t),
     ref: i

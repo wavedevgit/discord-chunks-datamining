@@ -6,10 +6,10 @@ require.d(exports, {
   Ks: () => Z,
   Ws: () => H,
   g2: () => U,
-  hf: () => k,
+  hf: () => j,
   k3: () => G,
   qN: () => V,
-  tP: () => j
+  tP: () => k
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -80,7 +80,7 @@ function M(e, t) {
   }), e
 }
 
-function k(e) {
+function j(e) {
   let {
     quest: t,
     questContent: n,
@@ -105,7 +105,7 @@ function k(e) {
   }, [t, d, n, r, o, c, u, s])
 }
 
-function j(e) {
+function k(e) {
   var t;
   let n = (0, a.Wu)([u.ZP], () => u.ZP.getGamesSeen(false)).find(t => (null == t ? true : t.id) === e);
   return null != n && Date.now() - 2592e7 <= (null != (t = n.lastLaunched) ? t : 0)
@@ -187,7 +187,7 @@ function Z(e) {
     isVideoQuest: p,
     inGameQuest: y,
     sourceQuestContent: O
-  } = e, I = k({
+  } = e, I = j({
     quest: n,
     questContent: a,
     questContentPosition: s,
@@ -209,7 +209,7 @@ function Z(e) {
       analyticsSource: l.Z.QUEST_HOME_PAGE
     })
   }, []), x = null == (t = (0, m.WD)()) ? true : t.getId(), {
-    launchInGameActivity: j
+    launchInGameActivity: k
   } = (0, b.zB)(n), U = (0, v.f)({
     location: C.dr.QUEST_HOME_DESKTOP,
     questFeatures: n.config.features
@@ -261,7 +261,7 @@ function Z(e) {
               questContent: a,
               sourceQuestContent: O,
               sourceQuestContentCTA: h.jZ.ACCEPT_QUEST
-            }) : y && n.config.features.includes(C.S7.START_QUEST_CTA) && j()
+            }) : y && n.config.features.includes(C.S7.START_QUEST_CTA) && k()
           }
         };
       case b.OH.ACCEPTED:
@@ -305,7 +305,7 @@ function Z(e) {
             text: e,
             tooltipText: w.intl.string(w.t.hsbwjo),
             onClick: () => {
-              n.config.features.includes(C.S7.START_QUEST_CTA) && j()
+              n.config.features.includes(C.S7.START_QUEST_CTA) && k()
             }
           }
         }
@@ -341,7 +341,7 @@ function Z(e) {
           text: w.intl.string(w.t.bAGFz8)
         })
     }
-  }, [r, p, T, _, I, o, n, a, s, u, x, A, N, D, y, j, O, U])
+  }, [r, p, T, _, I, o, n, a, s, u, x, A, N, D, y, k, O, U])
 }
 
 function F() {

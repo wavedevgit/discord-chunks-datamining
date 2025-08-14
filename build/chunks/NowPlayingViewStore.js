@@ -96,7 +96,7 @@ function ee() {
 }
 
 function et(e) {
-  return D.Z.findActivity(e, e => e.type !== j.IIU.CUSTOM_STATUS)
+  return D.Z.findActivity(e, e => e.type !== k.IIU.CUSTOM_STATUS)
 }
 
 function en(e) {
@@ -137,7 +137,7 @@ function ea(e) {
 
 function es(e) {
   let t = M.Z.getVoiceStateForUser(e);
-  return (null == t ? true : t.channelId) != null && w.Z.canWithPartialContext(j.Plq.VIEW_CHANNEL, {
+  return (null == t ? true : t.channelId) != null && w.Z.canWithPartialContext(k.Plq.VIEW_CHANNEL, {
     channelId: t.channelId
   }) ? t.channelId : null
 }
@@ -220,7 +220,7 @@ function ed(e, t, n) {
     })
   }
   let L = 1 === g.length,
-    j = [],
+    k = [],
     U = new Set,
     G = new Set;
   for (let e of t) {
@@ -236,8 +236,8 @@ function ed(e, t, n) {
             userId: t
           } = e;
           return x.default.getUser(t)
-        }).filter(k.lm).orderBy([eu], ["desc"]).value();
-      s.filter(e => !m.includes(e.id)).forEach(e => t.push(e)), L ? G.has(i) || (f = null) : (f = a, L = true), G.add(i), U.add(n), j.push({
+        }).filter(j.lm).orderBy([eu], ["desc"]).value();
+      s.filter(e => !m.includes(e.id)).forEach(e => t.push(e)), L ? G.has(i) || (f = null) : (f = a, L = true), G.add(i), U.add(n), k.push({
         channel: r,
         guild: a,
         members: s,
@@ -247,7 +247,7 @@ function ed(e, t, n) {
   }
   return {
     id: n,
-    voiceChannels: j,
+    voiceChannels: k,
     isSpotifyActivity: T,
     priorityMembers: g.map(e => ({
       user: e,
@@ -312,7 +312,7 @@ function eg(e) {
 
 function eE(e) {
   return e.map(e => ({
-    type: j.GOo.USER,
+    type: k.GOo.USER,
     party: e
   }))
 }

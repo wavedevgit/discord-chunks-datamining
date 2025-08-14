@@ -49,11 +49,11 @@ let M = {
     [Chunk981631.NYg.ACTIVITY]: Chunk866885.Z,
     [Chunk981631.NYg.FRAME]: Chunk857096.Z
   },
-  k = {
+  j = {
     minWidth: Chunk354459.Rv[Chunk354459.cL.VIDEO],
     maxWidth: Chunk354459.$i[Chunk354459.cL.VIDEO]
   },
-  j = [];
+  k = [];
 class U extends Chunk73800.PureComponent {
   render() {
     let {
@@ -87,7 +87,7 @@ class U extends Chunk73800.PureComponent {
         onWindowResize: this.handleWindowResize,
         appContext: Chunk988980,
         roundCorners: Chunk16609,
-        resizeConfig: k,
+        resizeConfig: j,
         getDockedRectPositionY: Chunk917107
       }), (0, Chunk255367.jsx)(Chunk522501.mK, {
         className: Chunk442917 ? Chunk639965.belowSidebar : true
@@ -113,8 +113,8 @@ let G = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     L = s.ZP.getCurrentEmbeddedActivity(),
     x = (0, c.p)(null == L ? true : L.location),
     M = null != L && !(0, u.Z)(x, T.Z, A.Z),
-    k = s.ZP.getActivityPanelMode(),
-    U = M && k === P.Ez.PANEL,
+    j = s.ZP.getActivityPanelMode(),
+    U = M && j === P.Ez.PANEL,
     G = null != L && null != x && (null == (t = f.Z.getSelectedParticipant(x)) ? true : t.type) === w.fO.ACTIVITY,
     B = h.Z.getConnectedFrame(),
     Z = h.Z.getFrameLayoutMode() === D.U.FOCUSED,
@@ -146,7 +146,7 @@ let G = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     eo = !er && null != _ && et && en;
   return {
     selectedPIPWindow: _,
-    pipWindows: 0 === J.length ? j : J,
+    pipWindows: 0 === J.length ? k : J,
     pipWidth: q,
     maxX: Y.width - (eo ? $ : 0),
     maxY: Y.height,

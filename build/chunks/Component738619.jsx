@@ -76,7 +76,7 @@ function x(e, t) {
 
 function M(e, t) {
   if (null == e) return {};
-  var n, r, i = k(e, t);
+  var n, r, i = j(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -84,14 +84,14 @@ function M(e, t) {
   return i
 }
 
-function k(e, t) {
+function j(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let j = [];
+let k = [];
 class U extends Chunk73800.PureComponent {
   componentDidMount() {
     this.timeout = setTimeout(() => {
@@ -105,10 +105,10 @@ class U extends Chunk73800.PureComponent {
   }
   logShownEventIfNeeded() {
     let e = this.props.activity.application_id;
-    null != module && false === j.indexOf(module) && (Chunk626135.default.track(Chunk981631.rMx.SHOW_TUTORIAL, {
+    null != module && false === k.indexOf(module) && (Chunk626135.default.track(Chunk981631.rMx.SHOW_TUTORIAL, {
       tutorial: "activity-invite-nux-inline",
       application_id: module
-    }), j.push(module))
+    }), k.push(module))
   }
   componentWillUnmount() {
     null !== this.timeout && clearTimeout(this.timeout)

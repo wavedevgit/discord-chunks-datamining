@@ -39,20 +39,20 @@ let v = function(e) {
       showLargeMessageDialog: false,
       origin: "drag_drop"
     }), m.S.dispatchToLastSubscribed(y.CkL.TEXTAREA_FOCUS))
-  }, M = () => S(true), k = e => {
+  }, M = () => S(true), j = e => {
     if (C) returnfalse;
     P || e.shiftKey !== T || S(!e.shiftKey)
-  }, j = P ? y.TPd.GUILD_THREADS_ONLY.has(v.type) ? O.intl.string(O.t.RBBLhI) : O.intl.string(O.t.gUx4en) : T ? O.intl.format(O.t.dYP2FR, {
+  }, k = P ? y.TPd.GUILD_THREADS_ONLY.has(v.type) ? O.intl.string(O.t.RBBLhI) : O.intl.string(O.t.gUx4en) : T ? O.intl.format(O.t.dYP2FR, {
     destination: (0, l.F6)(v, h.default, p.Z, true)
   }) : O.intl.string(O.t.h76ulJ);
   return C || !L ? null : (0, r.jsx)(E.Z, {
     className: t,
     style: n,
-    title: j,
+    title: k,
     description: P ? O.intl.string(O.t.lpgkzs) : O.intl.string(O.t.usQh4O),
     icons: b.J6,
     onDrop: x,
     onDragClear: M,
-    onDragOver: k
+    onDragOver: j
   })
 }

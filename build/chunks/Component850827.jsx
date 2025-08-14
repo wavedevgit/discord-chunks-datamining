@@ -120,7 +120,7 @@ let V = e => {
       return Q ? m.Z.getChannel(null == (e = E.Z.getVoiceStateForUser(i.id)) ? true : e.channelId) : null
     });
     if ((null == t ? true : t.application_id) === M.bO) return t = F(B({}, t), {
-      buttons: [k.intl.string(j.default["Fv/2Oz"])],
+      buttons: [j.intl.string(k.default["Fv/2Oz"])],
       metadata: {
         button_urls: [M.U8]
       }

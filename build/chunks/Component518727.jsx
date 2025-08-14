@@ -52,8 +52,8 @@ let I = 1e3,
     }, [D]);
     let M = (0, f.P)(R, !!P, w),
       {
-        mediaUrls: k,
-        isSuccess: j
+        mediaUrls: j,
+        isSuccess: k
       } = (0, E.Z)(!o && M && L),
       U = (0, i.useRef)(null),
       [G, B] = (0, i.useState)(false),
@@ -62,12 +62,14 @@ let I = 1e3,
       [Y, W] = (0, i.useState)(false);
     if ((0, i.useEffect)(() => {
         let e;
-        M && n && !Y && (o || !j ? (H("static"), o || (W(true), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (H("animated"), F(true), e = true), c.Z.dispatch({
+        M && n && !Y && "none" === V && (o || !k ? (H("static"), o || (W(true), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (H("animated"), F(true), e = true), c.Z.dispatch({
           type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
           value: true,
           isAnimated: e
-        }), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED))
-      }, [o, M, n, j, Y]), (0, i.useEffect)(() => {
+        }), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED, {
+          wow_moment_type: e ? "animated" : "static"
+        }))
+      }, [o, M, n, k, Y, V]), (0, i.useEffect)(() => {
         function e() {
           B(true), C()
         }
@@ -92,7 +94,7 @@ let I = 1e3,
             onEnded: N,
             className: a()(y.video, "entry" === I ? y.visible : y.hidden),
             children: (0, r.jsx)("source", {
-              src: k.modalGlowEntry
+              src: j.modalGlowEntry
             })
           })
         }), (0, r.jsx)(d.Z, {
@@ -102,7 +104,7 @@ let I = 1e3,
           loop: true,
           className: a()(y.video, "idle" === I ? y.visible : y.hidden),
           children: (0, r.jsx)("source", {
-            src: k.modalGlowIdle
+            src: j.modalGlowIdle
           })
         }), (0, r.jsx)(d.Z, {
           ref: A,
@@ -110,7 +112,7 @@ let I = 1e3,
           muted: true,
           className: a()(y.video, "exit" === I ? y.visible : y.hidden),
           children: (0, r.jsx)("source", {
-            src: k.modalGlowExit
+            src: j.modalGlowExit
           })
         })]
       }), (0, r.jsx)("div", {

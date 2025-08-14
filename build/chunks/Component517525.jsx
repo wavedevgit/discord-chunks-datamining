@@ -84,10 +84,10 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
   M = {
     borderRadius: "".concat(P, "px ").concat(P, "px ").concat(P, "px ").concat(P, "px")
   },
-  k = {
+  j = {
     borderRadius: "0px ".concat(P, "px ").concat(P, "px 0px")
   },
-  j = {
+  k = {
     mass: 1,
     tension: 500,
     friction: 18,
@@ -121,20 +121,20 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     }
     let M = t || o,
       {
-        location: k
+        location: j
       } = (0, _.O)(),
-      j = (0, c.e7)([g.default], () => g.default.getCurrentUser()),
-      U = l && !b.ZP.isPremium(j, I.p9.TIER_1) && !b.ZP.canStreamQuality(b.ZP.StreamQuality.MID, j),
+      k = (0, c.e7)([g.default], () => g.default.getCurrentUser()),
+      U = l && !b.ZP.isPremium(k, I.p9.TIER_1) && !b.ZP.canStreamQuality(b.ZP.StreamQuality.MID, k),
       G = i.useCallback(() => {
         U && M && (0, f.ZDy)(async () => {
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
           return t => (0, r.jsx)(e, R(N({}, t), {
-            analyticsSource: k
+            analyticsSource: j
           }))
         })
-      }, [U, M, k]),
+      }, [U, M, j]),
       B = () => x ? T.intl.string(T.t.q8TiVl) : M ? T.intl.string(T.t.IHgpEh) : T.intl.string(T.t.vLb0VV);
     if (i.useEffect(() => {
         !A && M && (E.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, {
@@ -196,11 +196,11 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           to: g.enabled ? x : D
         },
         leave: g.enabled ? L : w,
-        config: j
+        config: k
       }, "animate-always"),
       O = (0, f.q_F)({
-        to: E ? k : M,
-        config: j
+        to: E ? j : M,
+        config: k
       }, "animate-always");
     return (e => {
       let {

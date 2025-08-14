@@ -111,7 +111,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let t = i.useCallback(() => {
       _.ZP.trackWithMetadata(N.rMx.SERVER_SETUP_CTA_CLICKED, {
         setup_type: C.Ft.CHANNEL_WELCOME,
@@ -184,7 +184,7 @@ function k(e) {
   }
 }
 
-function j(e) {
+function k(e) {
   let t = (0, d.Z)(() => new s.Z.Value(0)),
     n = (0, d.Z)(() => new s.Z.Value(0)),
     r = (0, d.Z)(() => [new s.Z.Value(0), new s.Z.Value(0), new s.Z.Value(0), new s.Z.Value(0)]);
@@ -242,10 +242,10 @@ function U(e) {
     handlePersonalize: D,
     handleDownload: L,
     handleAddApplication: x
-  } = k(n), U = !(h || g || O || v), {
+  } = j(n), U = !(h || g || O || v), {
     titleAnimatedStyle: G,
     opacities: B
-  } = j(U), [Z, F] = i.useState([]), V = Z.length > 0;
+  } = k(U), [Z, F] = i.useState([]), V = Z.length > 0;
   if (i.useEffect(() => {
       (async () => {
         try {

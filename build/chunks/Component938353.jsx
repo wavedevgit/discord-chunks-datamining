@@ -282,7 +282,7 @@ class tt extends(r = Chunk73800.Component) {
       if (n === T.g.TEMPLATE) return (0, i.jsx)(U.Z, {
         code: r
       }, r);
-      if (n === T.g.EVENT) return (0, i.jsx)(j.Z, {
+      if (n === T.g.EVENT) return (0, i.jsx)(k.Z, {
         code: r
       }, r);
       if (n === T.g.CHANNEL_LINK) return (0, i.jsx)(ew.Z, {
@@ -306,7 +306,7 @@ class tt extends(r = Chunk73800.Component) {
           customId: n,
           linkId: a
         }, r)
-      } else if (n === T.g.GUILD_PRODUCT) return (0, i.jsx)(k.Z, {
+      } else if (n === T.g.GUILD_PRODUCT) return (0, i.jsx)(j.Z, {
         code: r
       }, r);
       else if (n === T.g.SERVER_SHOP) return (0, i.jsx)(S.Z, {
@@ -452,12 +452,12 @@ class tt extends(r = Chunk73800.Component) {
           onContextMenu: null != a ? e => {
             e.stopPropagation(), e.preventDefault(), a(e, l)
           } : true,
-          renderAudioComponent: m ? ek.jY : ek.q7,
-          renderImageComponent: ek.dS,
-          renderVideoComponent: ek.vZ,
-          renderPlaintextFilePreview: ek.d4,
-          renderGenericFileComponent: ek.ZK,
-          renderMosaicItemFooter: ek.L9,
+          renderAudioComponent: m ? ej.jY : ej.q7,
+          renderImageComponent: ej.dS,
+          renderVideoComponent: ej.vZ,
+          renderPlaintextFilePreview: ej.d4,
+          renderGenericFileComponent: ej.ZK,
+          renderMosaicItemFooter: ej.L9,
           onPlay: s,
           gifFavoriteButton: e9(l),
           isSearchResult: this.props.isSearchResult
@@ -813,14 +813,14 @@ function tn(e) {
     communicationDisabled: O,
     isActiveChannelOrUnarchivableThread: v,
     isAutomodQuarantined: y
-  }), P = (0, V.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), w = (0, K.Z)(null == n ? true : n.id), D = (0, X.Z)(r), L = (0, C.v)(r), k = (0, eN._)(n), j = (0, eI.ro)(r.id, r.channel_id), U = (0, A.m8)();
+  }), P = (0, V.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), w = (0, K.Z)(null == n ? true : n.id), D = (0, X.Z)(r), L = (0, C.v)(r), j = (0, eN._)(n), k = (0, eI.ro)(r.id, r.channel_id), U = (0, A.m8)();
   return (0, i.jsx)(tt, e2(e0(e2(e0({
     canSuppressEmbeds: I,
     canDeleteAttachments: T
   }, R), {
     disableReactionReads: !!N || R.disableReactionReads
   }), e), {
-    hasSpoilerEmbeds: e.hasSpoilerEmbeds && k,
+    hasSpoilerEmbeds: e.hasSpoilerEmbeds && j,
     isLurking: h && p,
     isGuest: m && p,
     isPendingMember: g && p,
@@ -835,7 +835,7 @@ function tn(e) {
     showMaskedLinks: P,
     shouldHideMediaOptions: w,
     enabledContentHarmTypeFlags: L,
-    ctaButtonType: j,
+    ctaButtonType: k,
     shouldAgeVerify: U
   }))
 }

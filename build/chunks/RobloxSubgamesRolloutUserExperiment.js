@@ -10,14 +10,21 @@ let i = (0, require("./427164.js").le)({
     name: "2025-08-view-roblox-subgames-in-rich-presence",
     kind: "user",
     defaultConfig: {
-      enabled: false
+      enabled: false,
+      showPlayButton: false
     },
     variations: {
       0: {
-        enabled: false
+        enabled: false,
+        showPlayButton: false
       },
       1: {
-        enabled: true
+        enabled: true,
+        showPlayButton: false
+      },
+      2: {
+        enabled: true,
+        showPlayButton: true
       }
     }
   }),

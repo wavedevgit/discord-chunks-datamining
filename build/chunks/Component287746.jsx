@@ -230,7 +230,7 @@ class tc extends Chunk73800.PureComponent {
     } = this.props, {
       commandKey: n,
       interactionOptions: r
-    } = (0, k.XA)(e.interactionData), {
+    } = (0, j.XA)(e.interactionData), {
       command: i,
       application: o
     } = L.Xq({
@@ -382,7 +382,7 @@ class tc extends Chunk73800.PureComponent {
           return void this.handleIncrementCombo("", 1);
         case e5.yXg.ARROW_UP:
           if (i || o) return;
-          if (e.preventDefault(), t) ej.Z.getUploadCount(r.id, ew.d.ChannelMessage) > 0 ? eF.S.dispatchToLastSubscribed(e5.CkL.FOCUS_ATTACHMENT_AREA) : eF.S.dispatchToLastSubscribed(e5.CkL.FOCUS_MESSAGES, {
+          if (e.preventDefault(), t) ek.Z.getUploadCount(r.id, ew.d.ChannelMessage) > 0 ? eF.S.dispatchToLastSubscribed(e5.CkL.FOCUS_ATTACHMENT_AREA) : eF.S.dispatchToLastSubscribed(e5.CkL.FOCUS_MESSAGES, {
             atEnd: true
           });
           else {
@@ -395,7 +395,7 @@ class tc extends Chunk73800.PureComponent {
         case e5.yXg.ESCAPE:
           if (i || e.target !== e.currentTarget) return;
           if (e.preventDefault(), t) return void(0, O.rf)();
-          if (ej.Z.getUploadCount(r.id, ew.d.ChannelMessage) > 0) return void m.Z.clearAll(r.id, ew.d.ChannelMessage)
+          if (ek.Z.getUploadCount(r.id, ew.d.ChannelMessage) > 0) return void m.Z.clearAll(r.id, ew.d.ChannelMessage)
       }
       null == n || n(e, o)
     }), e9(this, "handleIncrementCombo", (e, t) => {
@@ -491,7 +491,7 @@ class tc extends Chunk73800.PureComponent {
           });
           (0, eQ.SC)(o)
         }
-        let n = await (0, j.Z)({
+        let n = await (0, k.Z)({
           command: o,
           optionValues: null != a ? a : {},
           context: {
@@ -569,7 +569,7 @@ class tc extends Chunk73800.PureComponent {
               analyticsLocations: [],
               code: r,
               reason: i
-            }) && ("" !== t && "" === ew.Z.getDraft(d.id, ew.d.ChannelMessage) && _.Z.saveDraft(d.id, t, ew.d.ChannelMessage), 0 === ej.Z.getUploadCount(d.id, ew.d.ChannelMessage) && m.Z.setUploads({
+            }) && ("" !== t && "" === ew.Z.getDraft(d.id, ew.d.ChannelMessage) && _.Z.saveDraft(d.id, t, ew.d.ChannelMessage), 0 === ek.Z.getUploadCount(d.id, ew.d.ChannelMessage) && m.Z.setUploads({
               channelId: d.id,
               uploads: n,
               draftType: ew.d.ChannelMessage
@@ -672,10 +672,10 @@ class tu extends Chunk73800.PureComponent {
         messagesTypingGradient: L,
         isChatInputBottomAligned: x,
         showLinkedLobbyApplicationLoadingIndicator: M,
-        announcementComposerEnabled: k
+        announcementComposerEnabled: j
       } = this.props,
       {
-        textAreaFocused: j,
+        textAreaFocused: k,
         textAreaHighlighted: U
       } = this.state,
       B = Chunk442837 === Chunk541716.Ie.SIDEBAR;
@@ -865,7 +865,7 @@ class tu extends Chunk73800.PureComponent {
       if (t) switch (e.which) {
         case e5.yXg.ARROW_LEFT:
           n === G.Ie.SIDEBAR && eF.S.dispatch(e5.CkL.FOCUS_CHANNEL_TEXT_AREA, {
-            channelId: ek.Z.getChannelId()
+            channelId: ej.Z.getChannelId()
           });
           return;
         case e5.yXg.ARROW_RIGHT:
@@ -961,8 +961,8 @@ let td = Chunk73800.memo(function(e) {
   }), N = (0, A.Z)(t), R = (0, eI.k)(t.id), w = (0, y.ZP)(), D = (0, Q.Z)(t.id), L = (0, X.Z)(null == D ? true : D.wallpaperId), {
     isInitialLoading: x,
     primaryEntryPointCommand: M,
-    isProfileFetching: k,
-    wasProfileFetching: j,
+    isProfileFetching: j,
+    wasProfileFetching: k,
     applicationId: U,
     channelId: G,
     commands: B
@@ -973,15 +973,15 @@ let td = Chunk73800.memo(function(e) {
     }
   });
   (0, S.Z)({
-    isProfileFetching: k,
-    wasProfileFetching: j,
+    isProfileFetching: j,
+    wasProfileFetching: k,
     applicationId: U,
     channelId: G,
     commands: B
   });
   let Z = i.useRef(null),
     F = (0, d.e7)([C.Z], () => C.Z.appDMChannelsWithFailedLoads().has(t.id)),
-    V = (0, d.e7)([ek.Z], () => ek.Z.getVoiceChannelId()),
+    V = (0, d.e7)([ej.Z], () => ej.Z.getVoiceChannelId()),
     H = (0, d.e7)([eP.Z], () => eP.Z.getChannel(V)),
     Y = (0, d.e7)([eU.default], () => t.type !== e5.d4z.DM ? null : eU.default.getUser(t.getRecipientId())),
     z = (0, d.e7)([eh.ZP, eC.default], () => eh.ZP.getUserCombo(eC.default.getId(), t.id)),

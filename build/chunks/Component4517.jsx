@@ -68,13 +68,13 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function j(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = U(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -123,7 +123,7 @@ let B = Chunk73800.forwardRef(function(e, t) {
         let {
           default: e
         } = await n.e("31649").then(n.bind(n, 475613));
-        return t => (0, r.jsx)(e, k(x({}, t), {
+        return t => (0, r.jsx)(e, j(x({}, t), {
           sourceAnalyticsLocations: s,
           location: "UserProfileCustomStatusBubble",
           prompt: o
@@ -193,10 +193,10 @@ let B = Chunk73800.forwardRef(function(e, t) {
     i.useEffect(() => {
       null != W.current ? M(W.current.getBoundingClientRect().height > P.Ow + P.P) : M(false)
     }, [S, x]);
-    let k = null != _ ? P.Hp : 0,
-      j = null != S ? P.du : 0,
-      U = (x && (null == _ || null != p) ? P._v : P.hT) + k + j,
-      B = P.YF + k + j,
+    let j = null != _ ? P.Hp : 0,
+      k = null != S ? P.du : 0,
+      U = (x && (null == _ || null != p) ? P._v : P.hT) + j + k,
+      B = P.YF + j + k,
       Z = i.useRef(null),
       F = i.useRef(null),
       V = i.useRef(null),
@@ -362,9 +362,9 @@ let B = Chunk73800.forwardRef(function(e, t) {
       text: o,
       label: a,
       onCloseProfile: s
-    } = e, l = j(e, ["emoji", "text", "label", "onCloseProfile"]);
+    } = e, l = k(e, ["emoji", "text", "label", "onCloseProfile"]);
     let [c, u] = i.useState(false);
-    return (0, r.jsx)(Z, k(x({}, l), {
+    return (0, r.jsx)(Z, j(x({}, l), {
       ref: t,
       emoji: n,
       text: o,
@@ -388,7 +388,7 @@ function V(e) {
     guildId: s,
     channelId: l,
     themeType: c
-  } = e, u = j(e, ["emoji", "text", "label", "user", "guildId", "channelId", "themeType"]);
+  } = e, u = k(e, ["emoji", "text", "label", "user", "guildId", "channelId", "themeType"]);
   let {
     trackUserProfileAction: d
   } = (0, v.KZ)(), {
@@ -419,7 +419,7 @@ function V(e) {
       targetElementRef: b,
       sourceType: R.n_.STATUS,
       user: a,
-      children: (0, r.jsx)(Z, k(x({}, u), {
+      children: (0, r.jsx)(Z, j(x({}, u), {
         ref: b,
         emoji: t,
         text: n,
@@ -451,7 +451,7 @@ let H = Chunk73800.forwardRef(function(e, t) {
     placeholderText: f,
     prompt: h,
     disableToolbar: g = false
-  } = e, b = j(e, ["location", "user", "onCloseProfile", "previewText", "previewEmoji", "previewLabel", "placeholderText", "prompt", "disableToolbar"]), y = (0, E.Z)(a.id), {
+  } = e, b = k(e, ["location", "user", "onCloseProfile", "previewText", "previewEmoji", "previewLabel", "placeholderText", "prompt", "disableToolbar"]), y = (0, E.Z)(a.id), {
     analyticsLocations: v
   } = (0, p.ZP)(_.Z.USER_PROFILE_CUSTOM_STATUS_BUBBLE), T = (0, l.e7)([O.default], () => O.default.getId() === a.id), S = T && !g, A = (0, I.T)({
     location: o

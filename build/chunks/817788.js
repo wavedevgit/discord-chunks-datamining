@@ -2,8 +2,11 @@
 /** chunk id: 817788, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  HQ: () => a,
   SQ: () => o,
+  VX: () => s,
   eB: () => r,
+  uf: () => l,
   wF: () => i
 });
 let r = "363445589247131668",
@@ -18,4 +21,7 @@ let r = "363445589247131668",
     PLACE_ID: "placeid",
     JOB_ID: "sid",
     USER_ID: "userid"
-  }
+  },
+  a = "roblox",
+  s = e => "roblox://placeId=".concat(e),
+  l = e => "https://www.roblox.com/games/start?placeId=".concat(e)

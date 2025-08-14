@@ -79,8 +79,8 @@ function x(e) {
       onFullscreenParticipant: A,
       participants: x,
       filteredParticipants: M,
-      popoutWindow: k,
-      inCall: j,
+      popoutWindow: j,
+      inCall: k,
       channel: U,
       selectedParticipant: G,
       showParticipants: B = true,
@@ -90,7 +90,7 @@ function x(e) {
       layout: H,
       idle: Y
     } = e,
-    W = null != k,
+    W = null != j,
     K = _.Z.getVideoComponent(),
     z = f.default.getId(),
     [q, X] = i.useState(null),
@@ -219,7 +219,7 @@ function x(e) {
                   onDoubleClick: A,
                   onContextMenu: T,
                   onVideoResize: eS,
-                  inCall: j,
+                  inCall: k,
                   inPopout: W
                 })
               }, i) : null
@@ -253,8 +253,8 @@ function x(e) {
           participants: eN,
           participantTileWidth: eC,
           selectedParticipantId: G.id,
-          inCall: j,
-          popoutWindow: k,
+          inCall: k,
+          popoutWindow: j,
           paused: ee || !B
         })
       })]

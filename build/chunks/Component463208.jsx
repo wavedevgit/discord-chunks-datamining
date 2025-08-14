@@ -163,8 +163,8 @@ function I(e) {
     fullWidth: L = false,
     clearable: x = false,
     helperText: M,
-    showCharacterCount: k = false,
-    successMessage: j
+    showCharacterCount: j = false,
+    successMessage: k
   } = e, U = E(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "helperText", "showCharacterCount", "successMessage"]), G = y(T, S), B = (0, d.m)({
     validateOn: w,
     error: N,
@@ -207,8 +207,8 @@ function I(e) {
     fullWidth: L,
     readOnly: K,
     helperText: M,
-    successMessage: j,
-    characterCount: k ? null != (t = null == T ? true : T.length) ? t : 0 : true,
+    successMessage: k,
+    characterCount: j ? null != (t = null == T ? true : T.length) ? t : 0 : true,
     characterCountMaxLength: I,
     className: a()(_.container, _[D], {
       [_.leading]: null != q,

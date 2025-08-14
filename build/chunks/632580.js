@@ -79,8 +79,8 @@ async function y(e) {
     premiumSubscription: L,
     onNext: x,
     metadata: M,
-    sku: k,
-    skuPricePreview: j,
+    sku: j,
+    skuPricePreview: k,
     purchaseType: U,
     referralCode: G,
     loadId: B,
@@ -90,7 +90,7 @@ async function y(e) {
   } = e;
   t(_.A.PURCHASING), n(true), r(true), o.Z.wait(s.fw), m(null);
   try {
-    let e, n, r;
+    let e, n, r, o;
     if (d.default.track(p.rMx.PAYMENT_FLOW_COMPLETED, b(g({}, v), {
         subtotal: null == F ? true : F.subtotal,
         tax: null == F ? true : F.tax,
@@ -98,9 +98,9 @@ async function y(e) {
         expected_currency: null == F ? true : F.currency,
         duration_ms: Date.now() - S
       })), E) return;
-    if (U === p.GZQ.ONE_TIME) i()(null != k, "SKU must exist and be fetched."), i()(null != j, "SKUPricePreview must exist."), e = await (0, c.ZZ)(k.applicationId, k.id, {
-      expectedAmount: j.amount,
-      expectedCurrency: j.currency,
+    if (U === p.GZQ.ONE_TIME) i()(null != j, "SKU must exist and be fetched."), i()(null != k, "SKUPricePreview must exist."), e = await (0, c.ZZ)(j.applicationId, j.id, {
+      expectedAmount: k.amount,
+      expectedCurrency: k.currency,
       isGift: O,
       paymentSource: P,
       loadId: B,
@@ -155,7 +155,7 @@ async function y(e) {
       })
     }
     if (e.redirectConfirmation) return void y(null != e.redirectURL);
-    t(_.A.COMPLETED), "subscription" in e ? n = null != e.subscription ? u.Z.createFromServer(e.subscription) : null : "entitlements" in e && (r = null != e.entitlements ? e.entitlements : true), x(n, r)
+    t(_.A.COMPLETED), "subscription" in e ? n = null != e.subscription ? u.Z.createFromServer(e.subscription) : null : "entitlements" in e && (r = null != e.entitlements ? e.entitlements : true), "appliedUserDiscounts" in e && (o = null != e.appliedUserDiscounts && e.appliedUserDiscounts.length > 0 ? e.appliedUserDiscounts : true), x(n, r, o)
   } catch (e) {
     t(_.A.FAIL), m(e), d.default.track(p.rMx.PAYMENT_FLOW_FAILED, b(g({}, v), {
       payment_error_code: null == e ? true : e.code,

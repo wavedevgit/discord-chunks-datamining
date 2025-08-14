@@ -144,8 +144,8 @@ function P(e) {
     hintText: L,
     searchTitleText: x,
     renderEmptyText: M,
-    focusSearchAfterReady: k,
-    isReady: j,
+    focusSearchAfterReady: j,
+    isReady: k,
     maxCount: U,
     hideRowLabel: G = false
   } = e, B = i.useRef(null), Z = i.useRef(null), F = [y.length, O.length, v.length, P.length], [V, H] = i.useState(false), [Y, W] = i.useState(0), [K, z] = i.useState(false);
@@ -332,8 +332,8 @@ function P(e) {
         sections: F,
         onRemoveTag: $,
         placeholder: w,
-        focusAfterReady: k,
-        isReady: j,
+        focusAfterReady: j,
+        isReady: k,
         "aria-labelledby": S,
         "aria-controls": A
       }), null != L ? (0, r.jsx)(l.Text, {

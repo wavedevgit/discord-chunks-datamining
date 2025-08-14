@@ -88,8 +88,8 @@ function M(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let k = 44,
-  j = {
+let j = 44,
+  k = {
     keys: ["label"]
   };
 
@@ -175,7 +175,7 @@ let Z = Chunk73800.forwardRef(function(e, t) {
     maxVisibleItems: D = 7,
     look: L = N.q.FILLED,
     autoFocus: M = false,
-    popoutPosition: k = "bottom",
+    popoutPosition: j = "bottom",
     filter: Z = true,
     debounceTime: V,
     renderOptionLabel: W = U,
@@ -213,7 +213,7 @@ let Z = Chunk73800.forwardRef(function(e, t) {
     active: eO,
     loadableOptions: n,
     debounceTime: V
-  }), eD = i.useMemo(() => B(eR, o), [eR, o]), eL = i.useMemo(() => eD.map(e => e.value), [eD]), ex = eD[eD.length - 1], eM = (0, A.Z)(ex), ek = i.useId(), ej = i.useId(), eU = i.useId(), eG = i.useCallback(e => {
+  }), eD = i.useMemo(() => B(eR, o), [eR, o]), eL = i.useMemo(() => eD.map(e => e.value), [eD]), ex = eD[eD.length - 1], eM = (0, A.Z)(ex), ej = i.useId(), ek = i.useId(), eU = i.useId(), eG = i.useCallback(e => {
     eO === e || P || (ev(e), e ? null == g || g() : null == E || E())
   }, [P, E, g, eO]), eB = i.useCallback(e => {
     eO && !e && eG(false)
@@ -245,7 +245,7 @@ let Z = Chunk73800.forwardRef(function(e, t) {
       })
     }), []),
     eY = (0, c.ZP)({
-      id: ej,
+      id: ek,
       defaultFocused: null != ex ? String(ex.value) : true,
       scrollToStart: eV,
       scrollToEnd: eH,
@@ -325,7 +325,7 @@ let Z = Chunk73800.forwardRef(function(e, t) {
       }
     }, [eG, eO]),
     eQ = eR;
-  eS && null != eI && false !== Z && (eQ = "function" == typeof Z ? Z(eR, eI) : (0, s.Lu)(eR, eI, null != eo ? eo : j)), i.useEffect(() => {
+  eS && null != eI && false !== Z && (eQ = "function" == typeof Z ? Z(eR, eI) : (0, s.Lu)(eR, eI, null != eo ? eo : k)), i.useEffect(() => {
     let e = eN.current;
     null == e || e.scrollToTop()
   }, [eI]), i.useEffect(() => {
@@ -356,7 +356,7 @@ let Z = Chunk73800.forwardRef(function(e, t) {
           loading: eP,
           multi: !!f,
           listRef: eN,
-          listId: ek,
+          listId: ej,
           maxVisibleItems: D,
           width: eg,
           selectedValues: eL,
@@ -372,7 +372,7 @@ let Z = Chunk73800.forwardRef(function(e, t) {
           renderOptionSuffix: Q
         })
       },
-      position: k,
+      position: j,
       children: (e, t) => {
         let {
           "aria-expanded": n,
@@ -451,8 +451,8 @@ let Z = Chunk73800.forwardRef(function(e, t) {
                   activeDescendant: eb,
                   placeholder: y,
                   inputId: eU,
-                  listboxId: ek,
-                  navigatorId: ej,
+                  listboxId: ej,
+                  navigatorId: ek,
                   selectValue: function(e) {
                     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
                     ez(e, t)
@@ -575,7 +575,7 @@ function F(e) {
         }),
         style: {
           width: l,
-          maxHeight: c * k
+          maxHeight: c * j
         },
         ref: e => {
           var n;
@@ -588,7 +588,7 @@ function F(e) {
         innerRole: "listbox",
         innerAriaMultiselectable: g,
         innerId: _,
-        rowHeight: k,
+        rowHeight: j,
         sections: [s.length],
         sectionHeight: 0,
         renderRow: e => {
@@ -743,7 +743,7 @@ function W(e) {
   return (0, r.jsxs)(p.P, L(w({
     tag: "li",
     style: {
-      height: k
+      height: j
     },
     focusProps: {
       enabled: false

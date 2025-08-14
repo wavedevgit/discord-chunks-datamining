@@ -43,9 +43,9 @@ function T(e) {
       location: "ChatWallpaperSetSystemMessage"
     }).lightMode,
     M = (0, c.ZP)(R),
-    k = (0, s.wjy)((0, l.ZP)()),
+    j = (0, s.wjy)((0, l.ZP)()),
     {
-      chatWallpaper: j,
+      chatWallpaper: k,
       isUpdatingChatWallpaperFlag: U,
       lastSetMessageId: G
     } = (0, o.cj)([h.Z], () => ({
@@ -60,14 +60,14 @@ function T(e) {
     H = (0, u.m)(O.p9.TIER_2),
     Y = m.t(P);
   return (i.useEffect(() => {
-    null == j && h.Z.shouldFetchWallpapers && g.k9()
-  }, [j]), null == D) ? null : (A = V ? v.intl.format(v.t.z847Tk, {
-    wallpaper_name: null != (n = null == j ? true : j.label) ? n : v.intl.string(v.t["UQMV/P"])
+    null == k && h.Z.shouldFetchWallpapers && g.k9()
+  }, [k]), null == D) ? null : (A = V ? v.intl.format(v.t.z847Tk, {
+    wallpaper_name: null != (n = null == k ? true : k.label) ? n : v.intl.string(v.t["UQMV/P"])
   }) : v.intl.format(v.t["+lKndX"], {
     username: null == M ? true : M.nick,
-    wallpaper_name: null != (T = null == j ? true : j.label) ? T : v.intl.string(v.t["UQMV/P"])
-  }), L ? k || x ? Y && Z ? N = v.intl.formatToPlainString(v.t.PzTpVV, {
-    wallpaperName: null != (S = null == j ? true : j.label) ? S : v.intl.string(v.t["UQMV/P"])
+    wallpaper_name: null != (T = null == k ? true : k.label) ? T : v.intl.string(v.t["UQMV/P"])
+  }), L ? j || x ? Y && Z ? N = v.intl.formatToPlainString(v.t.PzTpVV, {
+    wallpaperName: null != (S = null == k ? true : k.label) ? S : v.intl.string(v.t["UQMV/P"])
   }) : V || H || !Z || (N = v.intl.format(v.t.JwUhHh, {
     onClickNitro: () => {
       (0, d.uL)(y.Z5c.NITRO_HOME)

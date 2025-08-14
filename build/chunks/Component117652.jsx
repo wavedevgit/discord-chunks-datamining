@@ -99,7 +99,7 @@ function M(e) {
     giftRecipient: D,
     recommendedGiftSkuIds: L,
     giftingOrigin: M,
-    setValidatingGiftRecipient: j
+    setValidatingGiftRecipient: k
   } = (0, v.wD)(), {
     selectedSkuId: U,
     setSelectedSkuId: G,
@@ -114,7 +114,7 @@ function M(e) {
   }, {
     autoTrackExposure: false
   }), W = H && M === N.Wt.DM_CHANNEL, K = Y === _.u.POPULAR ? C.intl.string(C.t.Kwgrrq) : C.intl.string(C.t.r1huYW), z = async (e, t) => {
-    j(true), null != m && T(), await (0, c.B1)(e.id, t) || T(C.intl.string(C.t["4kgVqa"])), j(false)
+    k(true), null != m && T(), await (0, c.B1)(e.id, t) || T(C.intl.string(C.t["4kgVqa"])), k(false)
   };
   (0, a.ZP)(() => {
     null != U && null != D && (y.default.track(A.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
@@ -159,7 +159,7 @@ function M(e) {
         color: "header-secondary",
         className: R.selectGiftTitle,
         children: K.toLocaleUpperCase()
-      }), L.map(e => X(e)), (0, r.jsx)(k, {
+      }), L.map(e => X(e)), (0, r.jsx)(j, {
         handleClose: n
       })]
     }) : (0, r.jsx)("div", {
@@ -216,7 +216,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     handleClose: t
   } = e, {

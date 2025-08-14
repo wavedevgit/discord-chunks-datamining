@@ -96,8 +96,8 @@ let R = e => {
     withHighlight: L = false,
     icon: x,
     intent: M
-  } = e, k = N(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
-    analyticsLocations: j
+  } = e, j = N(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
+    analyticsLocations: k
   } = (0, f.ZP)(), U = (0, d.bp)() === b.IlC.POPOUT, [G, B] = i.useState(false), {
     fractionalState: Z
   } = (0, _.Z)(), F = (0, s.e7)([h.Z], () => h.Z.hasFetched);
@@ -111,7 +111,7 @@ let R = e => {
     }),
     W = async () => {
       B(true), await (0, E.u)({
-        analyticsLocations: j,
+        analyticsLocations: k,
         analyticsLocation: t,
         analyticsSourceLocation: n,
         guild: o,
@@ -133,20 +133,20 @@ let R = e => {
       size: "xs",
       className: v.buttonIcon
     }), " ", z]
-  }), k.disabled = true), null != Y) ? (0, r.jsx)(p.Z, {
+  }), j.disabled = true), null != Y) ? (0, r.jsx)(p.Z, {
     text: Y,
     "aria-label": false,
     children: e => (0, r.jsx)(c.gtL, A(T(A(T({}, e), {
       disabled: true,
       size: l.zx.Sizes.SMALL,
       pauseAnimation: P
-    }), k), {
+    }), j), {
       children: z
     }))
   }) : (0, r.jsx)(c.gtL, A(T({
     size: l.zx.Sizes.SMALL
-  }, k), {
-    className: a()(k.className, {
+  }, j), {
+    className: a()(j.className, {
       [v.buttonHighlighted]: L
     }),
     submitting: G,

@@ -2,7 +2,7 @@
 /** chunk id: 370611, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -72,9 +72,9 @@ function L(e, t) {
 }
 let x = 10,
   M = 15,
-  k = "leaderboard.png";
+  j = "leaderboard.png";
 
-function j(e) {
+function k(e) {
   let {
     leaderboard: t,
     previewMode: n = false,
@@ -215,10 +215,10 @@ function G(e) {
     imageOptions: {
       pixelRatio: 4
     }
-  }), j = async () => {
+  }), k = async () => {
     try {
       let e = await M();
-      await g.ZP.copyImageBlob(e, k), P("copied"), null == E || E(N.xP.COPIED_LEADERBOARD_ROW)
+      await g.ZP.copyImageBlob(e, j), P("copied"), null == E || E(N.xP.COPIED_LEADERBOARD_ROW)
     } catch (e) {
       P("error")
     }
@@ -290,7 +290,7 @@ function G(e) {
         shouldShow: !x,
         onTooltipHide: () => P("default"),
         children: e => (0, r.jsx)(a.P3F, L(w({}, e), {
-          onClick: x ? true : j,
+          onClick: x ? true : k,
           "aria-busy": x,
           className: R.copyLinkContainer,
           children: x ? (0, r.jsx)(a.$jN, {

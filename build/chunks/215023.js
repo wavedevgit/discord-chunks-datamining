@@ -9,7 +9,7 @@ require.d(exports, {
   J0: () => P,
   K8: () => L,
   RE: () => T,
-  Vt: () => k,
+  Vt: () => j,
   ZS: () => h,
   a$: () => D,
   aK: () => S,
@@ -176,12 +176,12 @@ let I = ["avatar-decorations", "profile-effects", "nameplates", "bundles"],
 var M = function(e) {
   return e[e.FIAT = 0] = "FIAT", e[e.ORB = 1] = "ORB", e[e.PREMIUM_PURCHASE = 2] = "PREMIUM_PURCHASE", e[e.PROMOTIONAL = 3] = "PROMOTIONAL", e[e.TENURE_REWARD = 4] = "TENURE_REWARD", e[e.GIFT = 5] = "GIFT", e
 }({});
-let k = {
+let j = {
     ORB_PROFILE_BADGE: "1342211853484429445",
     FRACTIONAL_PREMIUM: Chunk314794.a.PREMIUM_TIER_2_3_DAY
   },
-  j = new Set(Object.values(k)),
-  U = e => j.has(e),
+  k = new Set(Object.values(j)),
+  U = e => k.has(e),
   G = [Chunk335818.G.AVATAR_DECORATION, Chunk335818.G.PROFILE_EFFECT, Chunk335818.G.NAMEPLATE, Chunk335818.G.BUNDLE],
   B = [{
     sortType: Chunk792091.E.RELEVANCE,

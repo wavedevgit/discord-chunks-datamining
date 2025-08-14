@@ -293,7 +293,7 @@ async function el(e) {
           null == l || l(), e()
         },
         onFailure: (e, n, o, a) => {
-          null == l || l(), j.default.track(J.rMx.ACTIVITY_INTERACTION_CALLBACK_ERROR, {
+          null == l || l(), k.default.track(J.rMx.ACTIVITY_INTERACTION_CALLBACK_ERROR, {
             channel_id: r,
             guild_id: i,
             application_id: t,
@@ -351,7 +351,7 @@ async function ec(e) {
     ChannelStore: D.Z,
     GuildStore: L.Z,
     PermissionStore: x.Z,
-    VoiceStateStore: k.Z
+    VoiceStateStore: j.Z
   });
   if (p !== W.jy.CAN_LAUNCH) {
     let e = 4;
