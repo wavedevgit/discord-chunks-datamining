@@ -2,18 +2,19 @@
 /** chunk id: 872810, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L6: () => Z,
-  Rc: () => G,
+  L6: () => F,
+  Rc: () => B,
   WH: () => R,
   aP: () => j,
-  dV: () => B,
+  dV: () => Z,
   g: () => M,
   iV: () => x,
   n9: () => k,
   pR: () => L,
   rn: () => D,
   tK: () => P,
-  xc: () => U
+  xc: () => U,
+  zf: () => G
 });
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -195,13 +196,15 @@ async function U(e) {
   } catch (e) {}
 }
 
-function G(e) {
+function G(e, t) {}
+
+function B(e) {
   (0, O.Ye)(e.preset, e.resolution, e.frameRate), s.Z.dispatch(N({
     type: "STREAM_UPDATE_SETTINGS"
   }, e))
 }
 
-function B(e, t) {
+function Z(e, t) {
   a.tn.patch({
     url: T.ANM.STREAM(e),
     body: {
@@ -212,7 +215,7 @@ function B(e, t) {
   })
 }
 
-function Z() {
+function F() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     t = Chunk199902.Z.getCurrentUserActiveStream();
   null != exports && M((0, Chunk569545.V9)(exports), module)
