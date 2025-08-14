@@ -1,13 +1,13 @@
 /** Chunk was on 36878 **/
 /** chunk id: 352486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => r
 });
 var Chunk442837 = require("./442837.js"),
   Chunk509613 = require("./509613.js"),
   Chunk960412 = require("./960412.js"),
   Chunk151662 = require("./151662.js");
-let a = require("./930441.js").Od.map(e => (0, l.qs)(e.category, {
+let r = require("./930441.js").Od.map(e => (0, l.qs)(e.category, {
   useTitle: e.label,
   useSubtitle: e.subLabel,
   useValue: () => (e => {

@@ -8,18 +8,18 @@ var Chunk657707 = require("./657707.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.k4)("Voice", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.K3lovL),
-    layout: []
+    getLayout: () => []
   }),
-  a = (0, Chunk509613.k4)("Camera", {
+  r = (0, Chunk509613.k4)("Camera", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.FlNoSU),
-    layout: []
+    getLayout: () => []
   }),
-  r = (0, Chunk509613.x1)("VoiceAndVideoPane", {
+  a = (0, Chunk509613.x1)("VoiceAndVideoPane", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.B1fFpa),
-    layout: [o, a]
+    getLayout: () => [o, r]
   }),
   u = (0, Chunk509613.wf)("VoiceAndVideo", {
     icon: Chunk657707.S6n,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.B1fFpa),
-    layout: [r]
+    getLayout: () => [a]
   })

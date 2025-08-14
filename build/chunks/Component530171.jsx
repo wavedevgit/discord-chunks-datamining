@@ -20,19 +20,19 @@ function u(e) {
     children: d
   } = e;
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(a.x, {
+    children: [(0, i.jsx)(r.x, {
       title: t,
       description: l ? true : n,
       secondaryTrailingElement: (0, i.jsx)(o.sXD, {
-        className: s()(r.icon, {
-          [r.iconClosed]: !l
+        className: s()(a.icon, {
+          [a.iconClosed]: !l
         })
       }),
       onClick: () => u(!l),
       compact: c
     }), (0, i.jsx)("div", {
       className: s()({
-        [r.hidden]: !l
+        [a.hidden]: !l
       }),
       children: d
     })]

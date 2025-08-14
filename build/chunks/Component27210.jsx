@@ -1,7 +1,7 @@
 /** Chunk was on 36878 **/
 /** chunk id: 27210, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => j
+  ZP: () => p
 }), require("./415506.js"), require("./539854.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -133,7 +133,7 @@ let b = [{
       },
       setValue: t => {
         let n = d.Z.getDisabledSounds().filter(t => t !== e.sound);
-        t || n.push(e.sound), a.default.setDisabledSounds(n)
+        t || n.push(e.sound), r.default.setDisabledSounds(n)
       },
       useDisabled: () => {
         var t;
@@ -147,15 +147,15 @@ let b = [{
   x = (0, Chunk509613.qs)("SelectedChannelNotifications", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.TzjwV1),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel()),
-    setValue: e => a.default.setNotifyMessagesInSelectedChannel(e)
+    setValue: e => r.default.setNotifyMessagesInSelectedChannel(e)
   }),
-  p = (0, Chunk509613.qs)("DisableAllNotificationSounds", {
+  j = (0, Chunk509613.qs)("DisableAllNotificationSounds", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["2ZhCOT"]),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["+B0XLC"]),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
-    setValue: e => a.default.toggleDisableAllSounds(e)
+    setValue: e => r.default.toggleDisableAllSounds(e)
   }),
-  j = (0, Chunk509613.$l)("NotificationSoundsSettingList", {
+  p = (0, Chunk509613.$l)("NotificationSoundsSettingList", {
     collapseAfter: 4,
     useCollapsibleTitle: (e, t) => e ? f.intl.formatToPlainString(f.t["0JYT9/"], {
       count: t
@@ -180,5 +180,5 @@ let b = [{
         children: t
       })
     },
-    layout: [b[0].node, x, b[1].node, p, ...b.slice(2).map(e => e.node)]
+    getLayout: () => [b[0].node, x, b[1].node, j, ...b.slice(2).map(e => e.node)]
   })

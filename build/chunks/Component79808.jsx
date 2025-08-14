@@ -21,25 +21,25 @@ function g(e) {
     onClose: s,
     sidebarHeader: g,
     sidebarFooter: m
-  } = e, [v, b] = l.useState(true), [x, p] = l.useState([n]), [j, h] = l.useState(0), C = l.useMemo(() => ({
+  } = e, [v, b] = l.useState(true), [x, j] = l.useState([n]), [p, h] = l.useState(0), C = l.useMemo(() => ({
     history: x,
-    activeIndex: j,
+    activeIndex: p,
     showNavigationMobile: v,
     forward() {
-      h(Math.min(j + 1, x.length - 1))
+      h(Math.min(p + 1, x.length - 1))
     },
     back() {
-      h(Math.max(j - 1, 0))
+      h(Math.max(p - 1, 0))
     },
     pushPanel(e) {
-      p([...x.slice(0, j + 1), e]), h(j + 1)
+      j([...x.slice(0, p + 1), e]), h(p + 1)
     }
-  }), [j, x, v]);
+  }), [p, x, v]);
   return (0, i.jsx)(d.j.Provider, {
     value: C,
     children: (0, i.jsxs)("div", {
       className: o()(f.container, {
-        [f.mobile]: a.tq
+        [f.mobile]: r.tq
       }),
       children: [(0, i.jsx)(c.d, {
         onClose: s
@@ -47,10 +47,10 @@ function g(e) {
         root: t,
         header: g,
         footer: m
-      }), (0, i.jsx)(r.Z, {
+      }), (0, i.jsx)(a.Z, {
         onClose: s,
         setShowNavigationMobile: b,
-        setting: x[j]
+        setting: x[p]
       })]
     })
   })

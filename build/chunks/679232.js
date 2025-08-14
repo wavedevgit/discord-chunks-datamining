@@ -17,5 +17,5 @@ let u = (0, Chunk509613.k4)("NotificationsEmail", {
     } = Chunk151662.Z.getEmailSettings();
     module || (0, Chunk960412.Y7)()
   },
-  layout: [...Chunk352486.Z, Chunk611811.Z]
+  getLayout: () => [...Chunk352486.Z, Chunk611811.Z]
 })

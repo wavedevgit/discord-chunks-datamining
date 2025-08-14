@@ -21,18 +21,18 @@ function u(e) {
     compact: f = false,
     onClick: g
   } = e;
-  return (0, i.jsxs)(a.P3F, {
-    className: s()(r.baseControlItem, {
-      [r.compact]: f
+  return (0, i.jsxs)(r.P3F, {
+    className: s()(a.baseControlItem, {
+      [a.compact]: f
     }),
     onClick: g,
     children: [null != t && (0, i.jsx)("div", {
-      className: r.baseControlItemLeadingElement,
+      className: a.baseControlItemLeadingElement,
       children: t
     }), (0, i.jsxs)("div", {
-      className: r.baseControlItemContent,
+      className: a.baseControlItemContent,
       children: [(0, i.jsxs)("div", {
-        className: r.baseControlItemTitle,
+        className: a.baseControlItemTitle,
         children: [(0, i.jsx)(o.X6, {
           variant: "heading-md/semibold",
           color: "text-primary",
@@ -40,7 +40,7 @@ function u(e) {
         }), null != c && (0, i.jsx)(o.X6, {
           variant: "heading-md/semibold",
           color: "text-secondary",
-          className: r.secondaryTitle,
+          className: a.secondaryTitle,
           children: c
         })]
       }), null != d && (0, i.jsx)(o.xv, {
@@ -49,7 +49,7 @@ function u(e) {
         children: d
       })]
     }), (null != n || null != l) && (0, i.jsxs)("div", {
-      className: r.baseControlItemTrailingElements,
+      className: a.baseControlItemTrailingElements,
       children: [n, l]
     })]
   })

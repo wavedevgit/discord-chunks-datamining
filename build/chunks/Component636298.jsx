@@ -19,9 +19,9 @@ function g(e) {
     icon: t,
     onClick: n
   } = e;
-  return (0, i.jsx)(r.zx, {
-    look: r.zx.Looks.BLANK,
-    size: r.zx.Sizes.ICON,
+  return (0, i.jsx)(a.zx, {
+    look: a.zx.Looks.BLANK,
+    size: a.zx.Sizes.ICON,
     className: f.contentHeaderButton,
     innerClassName: f.iconButtonInner,
     onClick: n,
@@ -41,7 +41,7 @@ function m(e) {
     className: f.contentHeader,
     children: [(0, i.jsxs)("div", {
       className: f.contentHeaderLeft,
-      children: [a.tq && (0, i.jsx)(g, {
+      children: [r.tq && (0, i.jsx)(g, {
         icon: u.yFM,
         onClick: () => l(true)
       }), (0, i.jsx)(u.X6q, {
@@ -49,7 +49,7 @@ function m(e) {
         color: "header-secondary",
         children: t
       })]
-    }), !a.tq && (0, i.jsx)(g, {
+    }), !r.tq && (0, i.jsx)(g, {
       icon: u.Uz9,
       onClick: n
     })]
@@ -61,12 +61,12 @@ let v = Chunk73800.memo(function(e) {
     setShowNavigationMobile: n,
     setting: l
   } = e, s = l.useTitle(), {
-    showNavigationMobile: r
+    showNavigationMobile: a
   } = (0, c.t)();
   return (0, i.jsxs)("div", {
     className: o()(f.content, {
-      [f.mobile]: a.tq,
-      [f.mobileNavigationOpen]: r
+      [f.mobile]: r.tq,
+      [f.mobileNavigationOpen]: a
     }),
     children: [(0, i.jsx)(m, {
       title: s,

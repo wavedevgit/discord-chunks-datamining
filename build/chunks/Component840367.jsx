@@ -29,7 +29,7 @@ function g(e) {
     headingId: d,
     widget: u,
     disableInteraction: g = false
-  } = e, j = (0, o.e7)([c.default], () => c.default.getId() === n), y = (0, s.kQ)(u), O = m[u.type](), x = j ? (t = u.type) === i.l.FAVORITE_GAMES ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
+  } = e, j = (0, o.e7)([c.default], () => c.default.getId() === n), y = (0, s.kQ)(u), O = m[u.type](), x = j && u.games.length > 0 ? (t = u.type) === i.l.FAVORITE_GAMES ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
     numGames: l.k[t]
   }) : true;
   return (0, r.jsxs)("div", {

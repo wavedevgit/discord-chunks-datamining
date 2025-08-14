@@ -8,5 +8,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.k4)("NotificationsBadges", {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.l6w3Vl),
-  layout: [Chunk558141.Z]
+  getLayout: () => [Chunk558141.Z]
 })

@@ -20,18 +20,18 @@ function f(e) {
     footer: l
   } = e, {
     showNavigationMobile: f
-  } = (0, r.t)();
+  } = (0, a.t)();
   return (0, i.jsxs)("div", {
     className: s()(d.sidebar, {
       [d.mobile]: o.tq,
       [d.mobileNavigationOpen]: f
     }),
-    children: [null != n && (0, i.jsx)(n, {}), (0, i.jsx)(a.E1j, {
+    children: [null != n && (0, i.jsx)(n, {}), (0, i.jsx)(r.E1j, {
       placeholder: c.intl.string(c.t["5h0QOD"]),
       query: "",
       onChange: () => {},
       className: d.search
-    }), (0, i.jsx)(a.zJl, {
+    }), (0, i.jsx)(r.zJl, {
       className: d.navScroller,
       fade: true,
       children: (0, i.jsx)("nav", {

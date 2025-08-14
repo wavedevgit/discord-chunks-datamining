@@ -27,27 +27,27 @@ function u(e) {
       return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
     }),
     x = null != g ? b.slice(0, g) : b,
-    p = null != g ? b.slice(g) : [],
-    j = null != m ? m : l.Fragment,
-    h = null != (t = null == v ? true : v(c, p.length)) ? t : (n = p.length, c ? r.intl.formatToPlainString(r.t["3SHL+f"], {
+    j = null != g ? b.slice(g) : [],
+    p = null != m ? m : l.Fragment,
+    h = null != (t = null == v ? true : v(c, j.length)) ? t : (n = j.length, c ? a.intl.formatToPlainString(a.t["3SHL+f"], {
       count: n
-    }) : r.intl.formatToPlainString(r.t["8JRFyc"], {
+    }) : a.intl.formatToPlainString(a.t["8JRFyc"], {
       count: n
     }));
-  return (0, i.jsxs)(j, {
+  return (0, i.jsxs)(p, {
     children: [x.map((e, t) => (0, i.jsxs)(l.Fragment, {
       children: [(0, i.jsx)(o.Z, {
         node: e
-      }), (t !== x.length - 1 || p.length > 0) && (0, i.jsx)(s.$i$, {})]
-    }, e.key)), p.length > 0 && (0, i.jsx)(a.I, {
+      }), (t !== x.length - 1 || j.length > 0) && (0, i.jsx)(s.$i$, {})]
+    }, e.key)), j.length > 0 && (0, i.jsx)(r.I, {
       title: h,
       isOpen: c,
       setIsOpen: d,
       compact: true,
-      children: p.map((e, t) => (0, i.jsxs)(l.Fragment, {
+      children: j.map((e, t) => (0, i.jsxs)(l.Fragment, {
         children: [(0, i.jsx)(o.Z, {
           node: e
-        }), t !== p.length - 1 && (0, i.jsx)(s.$i$, {})]
+        }), t !== j.length - 1 && (0, i.jsx)(s.$i$, {})]
       }, e.key))
     })]
   })

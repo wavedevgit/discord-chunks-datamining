@@ -38,10 +38,10 @@ function d(e) {
     activeIndex: s,
     forward: d,
     back: f
-  } = (0, r.t)();
+  } = (0, a.t)();
   return (0, i.jsx)("div", {
     className: u.topBar,
-    children: (0, i.jsx)(a.TF, {
+    children: (0, i.jsx)(r.TF, {
       leading: (0, i.jsxs)("div", {
         className: u.arrowButtons,
         children: [(0, i.jsx)(c, {

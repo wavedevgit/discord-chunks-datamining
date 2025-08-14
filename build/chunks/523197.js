@@ -8,5 +8,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.k4)("NotificationSounds", {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.LweOY2),
-  layout: [Chunk27210.ZP]
+  getLayout: () => [Chunk27210.ZP]
 })

@@ -13,11 +13,11 @@ function o(e) {
   } = e, {
     useValue: n,
     setValue: o,
-    useTitle: a,
-    useSubtitle: r,
+    useTitle: r,
+    useSubtitle: a,
     useOptions: u,
     renderOptionLabel: c
-  } = t, d = a(), f = null == r ? true : r(), g = n(), m = u();
+  } = t, d = r(), f = null == a ? true : a(), g = n(), m = u();
   return (0, i.jsx)(l.xJW, {
     title: d,
     className: s.selectContainer,

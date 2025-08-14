@@ -12,10 +12,11 @@ var Chunk657707 = require("./657707.js"),
   Chunk523197 = require("./523197.js"),
   Chunk388032 = require("./388032.jsx");
 let d = (0, Chunk509613.x1)("NotificationsPane", {
-    layout: [Chunk499356.Z, Chunk523197.Z, Chunk859833.Z, Chunk679232.Z, Chunk99184.Z]
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu7),
+    getLayout: () => [Chunk499356.Z, Chunk523197.Z, Chunk859833.Z, Chunk679232.Z, Chunk99184.Z]
   }),
   f = (0, Chunk509613.wf)("Notifications", {
     icon: Chunk657707.Dkj,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu7),
-    layout: [d]
+    getLayout: () => [d]
   })
