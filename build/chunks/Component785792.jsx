@@ -8,7 +8,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk795827 = require("./795827.js");
+  Chunk840937 = require("./840937.js");
 
 function s(e) {
   let {

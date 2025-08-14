@@ -11,7 +11,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
   Chunk144114 = require("./144114.js"),
   Chunk317175 = require("./317175.jsx"),
-  Chunk952566 = require("./952566.js");
+  Chunk33048 = require("./33048.js");
 
 function p(e) {
   let {
@@ -27,24 +27,21 @@ function p(e) {
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, [t, n, i]);
   let b = (0, o.q_F)({
-      width: "".concat(f, "px"),
-      onStart: () => {
-        y(true)
-      },
-      onRest: () => {
-        y(false)
-      }
-    }),
-    w = e => {
-      c.Z.setCountryCode(e)
-    };
+    width: "".concat(f, "px"),
+    onStart: () => {
+      y(true)
+    },
+    onRest: () => {
+      y(false)
+    }
+  });
   return (0, r.jsx)(o.yRy, {
     targetElementRef: p,
     position: "top",
     renderPopout: e => (0, r.jsx)(u.Z, {
       className: d.popout,
       onClick: t => {
-        w(t), e.closePopout()
+        c.Z.setCountryCode(t), e.closePopout()
       }
     }),
     children: e => {

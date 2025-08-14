@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 266370, original params: e (module,exports,re quire) **/
+/** chunk id: 266370, original params:  (module,exports,re quire) **/
 (function() {
   function e(t, n, r) {
     function i(a, s) {
@@ -23,7 +23,7 @@
     for (var o = true, a = 0; a < r.length; a++) i(r[a]);
     return i
   }
-  return module
+  return e
 })()({
   1: [function(e, t, n) {
     "use strict";
@@ -814,7 +814,7 @@
               i = o(e),
               l = a(arguments[0], e),
               c = true;
-            c = 0 === i && 0 === l ? Number.POSITIVE_INFINITY : 0 === i || 0 === l ? Math.max(i, l) : Math.min(i, l);
+            c = 0 === i && 0 === l ? 1 / 0 : 0 === i || 0 === l ? Math.max(i, l) : Math.min(i, l);
             var u = {};
             Object.defineProperty(u, "maxMessageSize", {
               get: function() {

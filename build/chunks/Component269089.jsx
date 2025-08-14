@@ -12,7 +12,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk788983 = require("./788983.js"),
   Chunk981631 = require("./981631.js"),
   Chunk757744 = require("./757744.js");
-require("./312305.js");
+require("./966117.js");
 let p = (0, Chunk663993.Un)({
     createPromise: () => require.e("80960").then(require.bind(require, 223455)),
     webpackId: 223455,
@@ -29,7 +29,7 @@ let p = (0, Chunk663993.Un)({
     name: "PopoutWindowRTCDebug"
   }),
   g = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("92922"), require.e("9646"), require.e("27278")]).then(require.bind(require, 748623)),
+    createPromise: () => Promise.all([require.e("92922"), require.e("46290"), require.e("27278")]).then(require.bind(require, 748623)),
     webpackId: 748623,
     name: "PopoutWindowActivity"
   });
@@ -90,13 +90,15 @@ class m extends Chunk317770.Z {
     })
   }
   constructor(...e) {
-    var t;
-    super(...e), (t = "_observer") in this ? Object.defineProperty(this, t, {
-      value: null,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[t] = null
+    super(...e),
+      function(e, t, n) {
+        t in e ? Object.defineProperty(e, t, {
+          value: null,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = null
+      }(this, "_observer", null)
   }
 }
 let b = new m

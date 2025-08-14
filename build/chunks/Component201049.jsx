@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk196650 = require("./196650.js");
+  Chunk851458 = require("./851458.js");
 
 function h(e) {
   var n;
@@ -51,17 +51,9 @@ function h(e) {
         moderated: E
       }, x), h()
     }
-  }, T = e => {
-    null != e && B(null != e.id ? {
-      id: e.id,
-      name: e.name
-    } : {
-      id: true,
-      name: e.optionallyDiverseSequence
-    })
-  }, R = l.useCallback(e => _(e), []), D = l.useRef(null);
+  }, T = l.useCallback(e => _(e), []), R = l.useRef(null);
   return (0, s.ZP)(() => {
-    null != D.current && D.current.focus()
+    null != R.current && R.current.focus()
   }), (0, i.jsxs)(a.Modal, {
     title: k ? y.intl.string(y.t.zeVg5e) : y.intl.string(y.t["/jubeH"]),
     subtitle: y.intl.string(y.t["3v8kZG"]),
@@ -105,7 +97,13 @@ function h(e) {
                   emoji: t,
                   willClose: i
                 } = e;
-                T(t), i && n()
+                null != t && B(null != t.id ? {
+                  id: t.id,
+                  name: t.name
+                } : {
+                  id: true,
+                  name: t.optionallyDiverseSequence
+                }), i && n()
               },
               pickerIntention: b.Hz.COMMUNITY_CONTENT,
               onNavigateAway: h,
@@ -165,12 +163,12 @@ function h(e) {
           }
         })
       }), (0, i.jsx)(r.Is, {
-        inputRef: D,
+        inputRef: R,
         maxLength: 20,
         value: P,
         inputClassName: f.input,
         placeholder: y.intl.string(y.t["5vpeb2"]),
-        onChange: R,
+        onChange: T,
         autoFocus: true,
         onKeyDown: e => {
           e.keyCode === g.yXg.ENTER && P.length > 0 && (P.length > 0 && z(), e.preventDefault())

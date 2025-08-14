@@ -23,8 +23,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk444282 = require("./444282.jsx"),
   Chunk898463 = require("./898463.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk155097 = require("./155097.js"),
-  Chunk951173 = require("./951173.js");
+  Chunk83120 = require("./83120.js"),
+  Chunk154257 = require("./154257.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -113,7 +113,7 @@ function w(e) {
       var t;
       return e.type === f.jw.ATTACHMENT && (null == x || null == (t = x[e.name]) ? true : t.hasValue)
     })) ? e : []
-  }, [L, x]), [j, k] = i.useState([]);
+  }, [L, x]), [k, j] = i.useState([]);
   i.useEffect(() => {
     let e = () => {
       d.Z.clearAll(t, n.drafts.type)
@@ -129,7 +129,7 @@ function w(e) {
   });
   let G = {
       isApplicationCommand: D,
-      previousUploadOptions: j,
+      previousUploadOptions: k,
       uploadOptions: M
     },
     B = i.useRef(G);
@@ -147,7 +147,7 @@ function w(e) {
         i.some(e => t.name === e.name) || e.push(t)
       }), e.forEach(e => {
         d.Z.remove(t, e.name, n.drafts.type)
-      }), k(i)
+      }), j(i)
     }
   }, [t, M.length, n]);
   let Z = w.filter(e => e.filename !== o);

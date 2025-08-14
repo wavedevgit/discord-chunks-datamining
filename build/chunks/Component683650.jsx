@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk266843 = require("./266843.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk612587 = require("./612587.js"),
+  Chunk107508 = require("./107508.js"),
   Chunk87181 = require("./87181.js");
 
 function m() {
@@ -27,9 +27,9 @@ function m() {
     })
   };
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk612587.buttonContainer,
+    className: Chunk107508.buttonContainer,
     children: (0, Chunk255367.jsx)(Chunk755721.zx, {
-      className: Chunk612587.button,
+      className: Chunk107508.button,
       color: Chunk755721.Tt.BRAND,
       onClick: module,
       children: Chunk388032.intl.string(Chunk388032.t.GURBQk)

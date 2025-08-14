@@ -27,7 +27,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk787140 = require("./787140.js");
+  Chunk890332 = require("./890332.js");
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -117,74 +117,74 @@ function x(e) {
       onMouseEnter: W,
       onMouseLeave: Y
     }
-  } = (0, c.j)(), K = e => (0, r.jsx)(d.yRy, {
-    targetElementRef: x,
-    animation: d.yRy.Animation.FADE,
-    shouldShow: R,
-    position: "top",
-    onRequestClose: () => D(false),
-    renderPopout: e => {
-      let {
-        closePopout: n
-      } = e;
-      return (0, r.jsx)(I.Z, {
-        guildId: k,
-        channel: t,
-        onClose: n,
-        gridNotice: U === s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(v.o, {
-          onClose: n,
-          markAsDismissed: G
-        }),
-        analyticsSource: "rtc panel"
-      })
-    },
-    children: t => (0, r.jsx)("div", {
-      ref: x,
-      children: (0, r.jsx)(u.zx, j(P(j(P({
-        "data-migration-pending": true
-      }, e, t), {
-        className: a()(T.button, T.buttonColor, {
-          [T.greyButtonActive]: R,
-          [T.disabled]: L
-        }),
-        wrapperClassName: T.button,
-        innerClassName: T.buttonContents,
-        disabled: L,
-        onClick: () => {
-          var t;
-          null != U && U !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && G(S.L.UNKNOWN), null == e || null == (t = e.onClick) || t.call(e), D(!R), z(), (0, g.v)(B, g.d.SOUNDBOARD)
-        },
-        onMouseEnter: t => {
-          var n, r;
-          null == (n = l.onMouseEnter) || n.call(l, t), null == e || null == (r = e.onMouseEnter) || r.call(e), W()
-        },
-        onMouseLeave: t => {
-          var n, r;
-          null == (n = l.onMouseLeave) || n.call(l, t), null == e || null == (r = e.onMouseLeave) || r.call(e), Y()
-        },
-        onContextMenu: H,
-        fullWidth: true,
-        size: u.zx.Sizes.MEDIUM
-      }), l), {
-        children: (0, r.jsx)(F, {
-          className: T.buttonIcon,
-          size: "sm",
-          color: "currentColor"
-        })
-      }))
-    })
-  }), q = i.useCallback(() => {
+  } = (0, c.j)(), K = i.useCallback(() => {
     L || D(!R)
   }, [L, R]);
   return (0, E.yp)({
     event: C.CkL.TOGGLE_SOUNDBOARD,
-    handler: q
+    handler: K
   }), (0, r.jsx)(h.Gt, {
     value: V,
     children: (0, r.jsx)(d.ua7, {
       targetElementRef: x,
       text: A ? N.intl.string(N.t["Ox4/zc"]) : Z ? N.intl.string(N.t["+YBKYG"]) : w ? N.intl.string(N.t.X1lQlp) : N.intl.string(N.t["6EJvHh"]),
-      children: e => K(e)
+      children: e => (0, r.jsx)(d.yRy, {
+        targetElementRef: x,
+        animation: d.yRy.Animation.FADE,
+        shouldShow: R,
+        position: "top",
+        onRequestClose: () => D(false),
+        renderPopout: e => {
+          let {
+            closePopout: n
+          } = e;
+          return (0, r.jsx)(I.Z, {
+            guildId: k,
+            channel: t,
+            onClose: n,
+            gridNotice: U === s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(v.o, {
+              onClose: n,
+              markAsDismissed: G
+            }),
+            analyticsSource: "rtc panel"
+          })
+        },
+        children: t => (0, r.jsx)("div", {
+          ref: x,
+          children: (0, r.jsx)(u.zx, j(P(j(P({
+            "data-migration-pending": true
+          }, e, t), {
+            className: a()(T.button, T.buttonColor, {
+              [T.greyButtonActive]: R,
+              [T.disabled]: L
+            }),
+            wrapperClassName: T.button,
+            innerClassName: T.buttonContents,
+            disabled: L,
+            onClick: () => {
+              var t;
+              null != U && U !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && G(S.L.UNKNOWN), null == e || null == (t = e.onClick) || t.call(e), D(!R), z(), (0, g.v)(B, g.d.SOUNDBOARD)
+            },
+            onMouseEnter: t => {
+              var n, r;
+              null == (n = l.onMouseEnter) || n.call(l, t), null == e || null == (r = e.onMouseEnter) || r.call(e), W()
+            },
+            onMouseLeave: t => {
+              var n, r;
+              null == (n = l.onMouseLeave) || n.call(l, t), null == e || null == (r = e.onMouseLeave) || r.call(e), Y()
+            },
+            onContextMenu: H,
+            fullWidth: true,
+            size: u.zx.Sizes.MEDIUM
+          }), l), {
+            children: (0, r.jsx)(F, {
+              className: T.buttonIcon,
+              size: "sm",
+              color: "currentColor"
+            })
+          }))
+        })
+      })
     })
   })
 }

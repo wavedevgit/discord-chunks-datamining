@@ -1,4 +1,4 @@
-/** Chunk was on 72490 **/
+/** Chunk was on 23062 **/
 /** chunk id: 561623, original params: e,o,r (module,exports,require) **/
 require.d(exports, {
   default: () => A
@@ -30,7 +30,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk621238 = require("./621238.js");
+  Chunk953333 = require("./953333.js");
 let A = e => {
   var o, r, A, F, N, E, {
       daysLeft: k,

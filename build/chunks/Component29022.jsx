@@ -1,4 +1,4 @@
-/** Chunk was on 54597 **/
+/** Chunk was on 23353 **/
 /** chunk id: 29022, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => D
@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk921944 = require("./921944.js"),
   Chunk135899 = require("./135899.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk329873 = require("./329873.js");
+  Chunk281718 = require("./281718.js");
 
 function b(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -293,6 +293,7 @@ function D(e) {
   }, [t]);
   if (null == t) return null;
   let N = () => {
+    n && (() => {
       var e, n;
       let i = E.Z.getEveryoneRole(t),
         a = o.Od(i.permissions, T.mu);
@@ -308,17 +309,12 @@ function D(e) {
       })(Object(n)).forEach(function(t) {
         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
       }), e)])
-    },
-    C = () => {
-      u.Z.updateGuild({
-        defaultMessageNotifications: h.bL.ONLY_MENTIONS
-      }), u.Z.saveGuild(t.id, {
-        defaultMessageNotifications: h.bL.ONLY_MENTIONS
-      })
-    },
-    R = () => {
-      n && N(), s && C()
-    };
+    })(), s && (u.Z.updateGuild({
+      defaultMessageNotifications: h.bL.ONLY_MENTIONS
+    }), u.Z.saveGuild(t.id, {
+      defaultMessageNotifications: h.bL.ONLY_MENTIONS
+    }))
+  };
   return (0, i.jsxs)(d.Y0X, {
     transitionState: r,
     size: d.CgR.SMALL,
@@ -338,7 +334,7 @@ function D(e) {
     }), (0, i.jsx)(G, {
       onConfirm: () => {
         var e, i;
-        n || (R(), c(), (0, I.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (e = null == t ? true : t.id) ? e : "", true, O.L.PRIMARY)), 0 === _ ? (f(1), setTimeout(() => f(2), 3e3)) : 2 === _ && (R(), c(), (0, I.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (i = null == t ? true : t.id) ? i : "", true, O.L.PRIMARY))
+        n || (N(), c(), (0, I.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (e = null == t ? true : t.id) ? e : "", true, O.L.PRIMARY)), 0 === _ ? (f(1), setTimeout(() => f(2), 3e3)) : 2 === _ && (N(), c(), (0, I.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (i = null == t ? true : t.id) ? i : "", true, O.L.PRIMARY))
       },
       onDismiss: () => {
         c(), (0, I.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, t.id, true, O.L.DISMISS)

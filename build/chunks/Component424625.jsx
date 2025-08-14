@@ -1,16 +1,16 @@
 /** Chunk was on 30419 **/
 /** chunk id: 424625, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => i
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk325767 = require("./325767.js");
 
-function s(e) {
+function i(e) {
   var t, n, {
-      width: s = 24,
-      height: i = 24,
+      width: i = 24,
+      height: s = 24,
       color: a = "currentColor"
     } = e,
     o = function(e, t) {
@@ -18,13 +18,13 @@ function s(e) {
       var n, l, r = function(e, t) {
         if (null == e) return {};
         var n, l, r = {},
-          s = Object.keys(e);
-        for (l = 0; l < s.length; l++) n = s[l], t.indexOf(n) >= 0 || (r[n] = e[n]);
+          i = Object.keys(e);
+        for (l = 0; l < i.length; l++) n = i[l], t.indexOf(n) >= 0 || (r[n] = e[n]);
         return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var s = Object.getOwnPropertySymbols(e);
-        for (l = 0; l < s.length; l++) n = s[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+        var i = Object.getOwnPropertySymbols(e);
+        for (l = 0; l < i.length; l++) n = i[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
       return r
     }(e, ["width", "height", "color"]);
@@ -46,8 +46,8 @@ function s(e) {
     }
     return e
   }({}, (0, r.Z)(o)), n = n = {
-    width: s,
-    height: i,
+    width: i,
+    height: s,
     viewBox: "0 0 16 16",
     children: [(0, l.jsx)("path", {
       fillRule: "evenodd",

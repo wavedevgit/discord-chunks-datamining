@@ -2,14 +2,14 @@
 /** chunk id: 75464, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./388685.js");
 var i, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk153066 = require("./153066.js"),
-  Chunk485319 = require("./485319.js");
+  Chunk800967 = require("./800967.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -20,16 +20,12 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let u = {
-    XSMALL: Chunk485319.xsmall,
-    SMALL: Chunk485319.small,
-    MEDIUM: Chunk485319.medium,
-    LARGE: Chunk485319.large
-  },
-  h = {
-    DEFAULT: "default",
-    STATIC: "static"
-  };
-class g extends(i = Chunk73800.PureComponent) {
+  XSMALL: Chunk800967.xsmall,
+  SMALL: Chunk800967.small,
+  MEDIUM: Chunk800967.medium,
+  LARGE: Chunk800967.large
+};
+class h extends(i = Chunk73800.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -69,7 +65,7 @@ class g extends(i = Chunk73800.PureComponent) {
       }
       return e
     }({
-      className: a()((0, Chunk153066.l)(Chunk485319, "iconButton", h), Chunk73800, exports),
+      className: a()((0, Chunk153066.l)(Chunk800967, "iconButton", h), Chunk73800, exports),
       style: {
         backgroundImage: "url('".concat(u && null != i ? i : require, "')")
       },
@@ -82,7 +78,7 @@ class g extends(i = Chunk73800.PureComponent) {
   constructor(...e) {
     super(...e), d(this, "state", {
       hovered: false
-    }), d(this, "getMode", () => null != this.props.srcHover ? h.STATIC : h.DEFAULT), d(this, "handleHover", e => {
+    }), d(this, "getMode", () => null != this.props.srcHover ? "static" : "default"), d(this, "handleHover", e => {
       let {
         onMouseEnter: t
       } = this.props;
@@ -99,8 +95,8 @@ class g extends(i = Chunk73800.PureComponent) {
     })
   }
 }
-d(g, "Sizes", u), d(g, "defaultProps", {
+d(h, "Sizes", u), d(h, "defaultProps", {
   size: u.MEDIUM,
   disabled: false
 });
-let m = g
+let g = h

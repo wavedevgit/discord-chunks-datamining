@@ -11,11 +11,10 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 require.d(exports, {
-  t: () => a
+  t: () => o
 }), require("./953529.js"), require("./388685.js");
-let i = Symbol.iterator;
-class o {
-  [i]() {
+class i {
+  [Symbol.iterator]() {
     return this
   }
   next() {
@@ -34,7 +33,7 @@ class o {
   }
 }
 
-function a() {
+function o() {
   for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-  return new o(exports)
+  return new i(exports)
 }

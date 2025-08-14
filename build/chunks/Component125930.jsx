@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 125930, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => E
 }), require("./781311.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk843445 = require("./843445.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk406688 = require("./406688.js");
+  Chunk688510 = require("./688510.js");
 let b = {
   [Chunk981631.TaA.WINDOWS]: Chunk358085.PlatformTypes.WINDOWS,
   [Chunk981631.TaA.MACOS]: Chunk358085.PlatformTypes.OSX,
@@ -33,50 +33,19 @@ class _ extends Chunk73800.PureComponent {
     return (0, Chunk255367.jsx)(Chunk755721.zx, {
       size: Chunk120356 ? Chunk755721.zx.Sizes.MIN : Chunk755721.zx.Sizes.LARGE,
       fullWidth: !Chunk120356,
-      color: module ? Chunk406688.tabSelectedColor : Chunk406688.tabNotSelectedColor,
+      color: module ? Chunk688510.tabSelectedColor : Chunk688510.tabNotSelectedColor,
       className: a()({
-        [Chunk406688.tabPageLarge]: Chunk120356,
-        [Chunk406688.tabPageSmall]: !Chunk120356,
-        [Chunk406688.tabSelected]: module,
-        [Chunk406688.tabNotSelected]: !module
+        [Chunk688510.tabPageLarge]: Chunk120356,
+        [Chunk688510.tabPageSmall]: !Chunk120356,
+        [Chunk688510.tabSelected]: module,
+        [Chunk688510.tabNotSelected]: !module
       }),
       onClick: Chunk73800,
       children: exports
     })
   }
 }
-let O = e => [{
-  key: g.intl.string(g.t["0TcHzs"]),
-  value: e.operating_system_version
-}, {
-  key: g.intl.string(g.t.eOX6Hh),
-  value: e.cpu
-}, {
-  key: g.intl.string(g.t["+WJ5XV"]),
-  value: null != e.ram ? g.intl.formatToPlainString(g.t.RNRSl5, {
-    size: (0, u.BU)(1e3 * e.ram, {
-      showDecimalForGB: false
-    })
-  }) : null
-}, {
-  key: g.intl.string(g.t["+3s/V1"]),
-  value: e.gpu
-}, {
-  key: g.intl.string(g.t["L+x5wM"]),
-  value: null != e.disk ? (0, u.BU)(1e3 * e.disk, {
-    showDecimalForGB: false
-  }) : null
-}, {
-  key: g.intl.string(g.t["Ghp2/P"]),
-  value: e.sound_card
-}, {
-  key: g.intl.string(g.t["+w6nJi"]),
-  value: e.network
-}, {
-  key: g.intl.string(g.t.Au3Vbm),
-  value: e.notes
-}];
-class E extends Chunk73800.PureComponent {
+class O extends Chunk73800.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let {
       systemRequirements: n
@@ -95,9 +64,9 @@ class E extends Chunk73800.PureComponent {
       selectedOperatingSystem: n
     } = this.state, i = Object.keys(exports);
     return 1 === Chunk73800.length ? null : (0, Chunk255367.jsxs)(Chunk600164.Z, {
-      className: Chunk406688.tabs,
+      className: Chunk688510.tabs,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk406688.separator
+        className: Chunk688510.separator
       }), Chunk73800.map(t => (0, r.jsx)(_, {
         active: t === n,
         onClick: () => this.handleSelectOperatingSystem(t),
@@ -117,7 +86,37 @@ class E extends Chunk73800.PureComponent {
   }
   renderRequirementsSection(e, t) {
     if (null == e) return null;
-    let n = O(e).map((e, t) => {
+    let n = [{
+      key: g.intl.string(g.t["0TcHzs"]),
+      value: e.operating_system_version
+    }, {
+      key: g.intl.string(g.t.eOX6Hh),
+      value: e.cpu
+    }, {
+      key: g.intl.string(g.t["+WJ5XV"]),
+      value: null != e.ram ? g.intl.formatToPlainString(g.t.RNRSl5, {
+        size: (0, u.BU)(1e3 * e.ram, {
+          showDecimalForGB: false
+        })
+      }) : null
+    }, {
+      key: g.intl.string(g.t["+3s/V1"]),
+      value: e.gpu
+    }, {
+      key: g.intl.string(g.t["L+x5wM"]),
+      value: null != e.disk ? (0, u.BU)(1e3 * e.disk, {
+        showDecimalForGB: false
+      }) : null
+    }, {
+      key: g.intl.string(g.t["Ghp2/P"]),
+      value: e.sound_card
+    }, {
+      key: g.intl.string(g.t["+w6nJi"]),
+      value: e.network
+    }, {
+      key: g.intl.string(g.t.Au3Vbm),
+      value: e.notes
+    }].map((e, t) => {
       let n = null != e.value ? e.value.trim() : null;
       return null == n || 0 === n.length ? null : (0, r.jsxs)("div", {
         className: m.requirement,
@@ -141,7 +140,7 @@ class E extends Chunk73800.PureComponent {
       recommended: t
     } = this.props.systemRequirements[this.state.selectedOperatingSystem];
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk406688.requirementsContainer,
+      className: Chunk688510.requirementsContainer,
       children: [this.renderRequirementsSection(module, Chunk388032.intl.string(Chunk388032.t.QCCMXF)), this.renderRequirementsSection(exports, Chunk388032.intl.string(Chunk388032.t.He39ws))]
     })
   }
@@ -154,24 +153,26 @@ class E extends Chunk73800.PureComponent {
     })
   }
   constructor(e) {
-    var t, n;
-    super(e), t = "handleSelectOperatingSystem", n = e => {
-      this.setState({
-        selectedOperatingSystem: e
-      })
-    }, t in this ? Object.defineProperty(this, t, {
-      value: n,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[t] = n;
-    let r = (0, p.getPlatform)(),
-      i = Object.keys(e.systemRequirements),
-      l = i[0];
-    for (let e of i) b[e] === r && (l = e);
+    super(e),
+      function(e, t, n) {
+        t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
+      }(this, "handleSelectOperatingSystem", e => {
+        this.setState({
+          selectedOperatingSystem: e
+        })
+      });
+    let t = (0, p.getPlatform)(),
+      n = Object.keys(e.systemRequirements),
+      r = n[0];
+    for (let e of n) b[e] === t && (r = e);
     this.state = {
-      selectedOperatingSystem: l
+      selectedOperatingSystem: r
     }
   }
 }
-let y = E
+let E = O

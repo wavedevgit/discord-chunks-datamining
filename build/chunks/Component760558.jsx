@@ -1,12 +1,12 @@
 /** Chunk was on 30419 **/
 /** chunk id: 760558, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => y
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk512722 = require("./512722.js"),
-  i = require.n(Chunk512722),
+  s = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk179360 = require("./179360.js"),
@@ -20,24 +20,24 @@ var Chunk255367 = require("./255367.js"),
   Chunk4434 = require("./4434.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk537412 = require("./537412.js");
-let b = e => {
+  Chunk252633 = require("./252633.js");
+let y = e => {
   var t, n;
   let {
-    guildBoostSlots: s,
-    selectedGuild: b,
-    locationSection: y,
+    guildBoostSlots: i,
+    selectedGuild: y,
+    locationSection: b,
     transitionState: S,
     onClose: N
   } = e, O = (0, h.vx)(m.Z.boostSlots);
-  i()(null != s || null != b, "Must either provide slots or an initial selected guild"), i()(!(null == s ? true : s.some(e => e.isOnCooldown())), "If slots are provided, they must not be on cooldown");
-  let E = [null == s ? "UNUSED_QUANTITY_SELECT" : null, null == b ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(e => null != e),
-    [P, T] = (0, a.Wu)([d.Z], () => [d.Z.isModifyingAppliedBoost, d.Z.applyBoostError]),
+  s()(null != i || null != y, "Must either provide slots or an initial selected guild"), s()(!(null == i ? true : i.some(e => e.isOnCooldown())), "If slots are provided, they must not be on cooldown");
+  let E = [null == i ? "UNUSED_QUANTITY_SELECT" : null, null == y ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(e => null != e),
+    [P, T] = (0, a.Wu)([c.Z], () => [c.Z.isModifyingAppliedBoost, c.Z.applyBoostError]),
     [Z, w] = r.useState(""),
     [L, G] = r.useState(E[0]),
     [I, M] = r.useState(false),
-    [D, k] = r.useState(b),
-    [U, B] = r.useState(null != s ? s : O.slice(0, 1)),
+    [D, k] = r.useState(y),
+    [U, B] = r.useState(null != i ? i : O.slice(0, 1)),
     F = r.useMemo(() => null == U ? [] : U.map(e => {
       let {
         premiumGuildSubscription: t
@@ -49,14 +49,14 @@ let b = e => {
       return (null == U || null == (e = U[0]) ? true : e.premiumGuildSubscription) != null
     }, [U]),
     R = () => {
-      N("SUCCESS" === L), x.default.track(j.rMx.MODAL_DISMISSED, {
-        type: j.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
-        location_section: y
+      N("SUCCESS" === L), x.default.track(f.rMx.MODAL_DISMISSED, {
+        type: f.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
+        location_section: b
       })
     },
     _ = {
       UNUSED_QUANTITY_SELECT: {
-        body: () => (i()(null != s || 0 !== O.length, "Cannot provide no slots if there are no other available slots"), (0, l.jsxs)("div", {
+        body: () => (s()(null != i || 0 !== O.length, "Cannot provide no slots if there are no other available slots"), (0, l.jsxs)("div", {
           className: v.quantitySelectorBody,
           children: [(0, l.jsx)(o.X6q, {
             variant: "heading-md/semibold",
@@ -134,7 +134,7 @@ let b = e => {
             guild: D,
             blurb: C.intl.string(C.t.yTlZV1),
             warning: C.intl.formatToPlainString(C.t.KPnDlp, {
-              days: j.o3l,
+              days: f.o3l,
               slotCount: t
             }),
             imageClass: v.confirmImage,
@@ -149,14 +149,14 @@ let b = e => {
             t = "CONFIRM" === E[0] ? R : () => G(E[E.indexOf(L) - 1]),
             n = async () => {
               if (null != D && (null == U ? true : U.length) !== 0) {
-                i()(!U.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
+                s()(!U.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
                 try {
                   await Promise.all(U.map(e => {
                     let {
                       premiumGuildSubscription: t
                     } = e;
-                    return null != t ? (0, c.dG)(t.guildId, t.id) : Promise.resolve()
-                  })), await (0, c.W3)(D.id, U.map(e => {
+                    return null != t ? (0, d.dG)(t.guildId, t.id) : Promise.resolve()
+                  })), await (0, d.W3)(D.id, U.map(e => {
                     let {
                       id: t
                     } = e;
@@ -185,7 +185,7 @@ let b = e => {
         }
       },
       SUCCESS: {
-        body: () => (0, l.jsx)(f.R7, {
+        body: () => (0, l.jsx)(j.R7, {
           guild: D,
           isTransfer: z,
           guildBoostQuantity: U.length,
@@ -195,11 +195,11 @@ let b = e => {
       }
     };
   r.useEffect(() => {
-    x.default.track(j.rMx.OPEN_MODAL, {
-      type: j.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
-      location_section: y
+    x.default.track(f.rMx.OPEN_MODAL, {
+      type: f.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
+      location_section: b
     })
-  }, [y]);
+  }, [b]);
   let A = _[L];
   return (0, l.jsxs)(o.Y0X, {
     transitionState: S,

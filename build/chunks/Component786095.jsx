@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk273504 = require("./273504.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk105733 = require("./105733.js");
+  Chunk335260 = require("./335260.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -79,10 +79,10 @@ function S(e, t) {
     return null != (e = w[I]) ? e : []
   }, [w]), x = 0 === L.length, M = n > L.length && !x;
   if (!i.useMemo(() => (0, u.ze)(t), [t]) || null == e || 0 === e.length || null == t) return null;
-  let j = e.split(" "),
-    k = j.length;
+  let k = e.split(" "),
+    j = k.length;
   try {
-    (0, s.km)(j, m.RH)
+    (0, s.km)(k, m.RH)
   } catch (e) {
     return null
   }
@@ -156,7 +156,7 @@ function S(e, t) {
   })), (0, r.jsx)(o.sNh, {
     id: "guild-automod-add-selection",
     label: g.intl.formatToPlainString(g.t.Kkjv1t, {
-      keywordCount: k
+      keywordCount: j
     }),
     onFocus: U,
     children: Z

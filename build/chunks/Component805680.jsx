@@ -43,7 +43,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk185923 = require("./185923.js"),
   Chunk611480 = require("./611480.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk200948 = require("./200948.js");
+  Chunk887648 = require("./887648.js");
 
 function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -116,7 +116,7 @@ let q = Chunk957825.Om + Chunk149203.Su.MEDIUM,
       "aria-controls": t ? s : true
     }, l), {
       onClick: () => {
-        b.ZP.trackWithMetadata(j.rMx.EXPRESSION_PICKER_TAB_CLICKED, {
+        b.ZP.trackWithMetadata(k.rMx.EXPRESSION_PICKER_TAB_CLICKED, {
           tab: i,
           badged: false
         }), (0, x.hr)(i)
@@ -217,7 +217,7 @@ function J(e) {
       n = n.parentNode
     }(0, x._Q)();
     let r = null == (t = (0, L.uB)(e)) ? true : t.activeElement;
-    (null == r || "BODY" === r.tagName) && D.S.dispatchToLastSubscribed(j.CkL.TEXTAREA_FOCUS)
+    (null == r || "BODY" === r.tagName) && D.S.dispatchToLastSubscribed(k.CkL.TEXTAREA_FOCUS)
   }, [et, eg, em, eh]), eI = i.useCallback(() => {
     (0, x._Q)()
   }, []);
@@ -225,15 +225,15 @@ function J(e) {
     let e = () => {
       ec === M.X1.GIF && (0, x._Q)()
     };
-    return ed.addEventListener("mousedown", ev), ed.addEventListener("contextmenu", ev), ef.subscribe(j.CkL.POPOUT_CLOSE, eI), D.S.subscribe(j.CkL.CLOSE_GIF_PICKER, e), () => {
-      ed.removeEventListener("mousedown", ev), ed.removeEventListener("contextmenu", ev), ef.unsubscribe(j.CkL.POPOUT_CLOSE, eI), D.S.unsubscribe(j.CkL.CLOSE_GIF_PICKER, e)
+    return ed.addEventListener("mousedown", ev), ed.addEventListener("contextmenu", ev), ef.subscribe(k.CkL.POPOUT_CLOSE, eI), D.S.subscribe(k.CkL.CLOSE_GIF_PICKER, e), () => {
+      ed.removeEventListener("mousedown", ev), ed.removeEventListener("contextmenu", ev), ef.unsubscribe(k.CkL.POPOUT_CLOSE, eI), D.S.unsubscribe(k.CkL.CLOSE_GIF_PICKER, e)
     }
   }, [ec, eI, ev, ed, ef]), (0, p.Tbt)(er);
   let [eT, eS] = (0, y.US)(ep ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eA, eN] = i.useState(false);
   i.useEffect(() => {
     ec === M.X1.SOUNDBOARD && eN(true)
   }, [ec]), i.useEffect(() => () => {
-    eA && eS(k.L.TAKE_ACTION)
+    eA && eS(j.L.TAKE_ACTION)
   }, [eA, eS]), i.useEffect(() => {
     (0, x.ql)("")
   }, []), i.useEffect(() => {
@@ -241,7 +241,7 @@ function J(e) {
   }, [eg, em]), i.useEffect(() => {
     if (null != ea.current && !ei.current) {
       var e, t, n, r;
-      ec === M.X1.EMOJI ? (null == eo || null == (e = eo.current) ? true : e.onPickerOpen) != null && (null == eo || null == (t = eo.current) || t.onPickerOpen(), ei.current = true) : ec === M.X1.STICKER ? (null == eo || null == (n = eo.current) ? true : n.onPickerOpen) == null || e_ || (null == eo || null == (r = eo.current) || r.onPickerOpen(), ei.current = true) : (b.ZP.trackWithMetadata(j.rMx.EXPRESSION_PICKER_OPENED, {
+      ec === M.X1.EMOJI ? (null == eo || null == (e = eo.current) ? true : e.onPickerOpen) != null && (null == eo || null == (t = eo.current) || t.onPickerOpen(), ei.current = true) : ec === M.X1.STICKER ? (null == eo || null == (n = eo.current) ? true : n.onPickerOpen) == null || e_ || (null == eo || null == (r = eo.current) || r.onPickerOpen(), ei.current = true) : (b.ZP.trackWithMetadata(k.rMx.EXPRESSION_PICKER_OPENED, {
         width: ea.current.offsetWidth,
         tab: ec,
         badged: false
@@ -254,7 +254,7 @@ function J(e) {
     ew = "left" === $ ? "right" : "left",
     eD = null != ee ? ee : "left" === $ ? F.positionLayerDefaultAlignLeft : F.positionLayerDefaultAlignRight;
   return (0, r.jsx)(m.Z, {
-    section: j.jXE.EXPRESSION_PICKER,
+    section: k.jXE.EXPRESSION_PICKER,
     children: (0, r.jsx)(T.W5, {
       className: a()(F.positionLayer, eD),
       targetRef: l,

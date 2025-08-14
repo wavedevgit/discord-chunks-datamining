@@ -51,7 +51,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk950796 = require("./950796.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk30255 = require("./30255.js");
+  Chunk302821 = require("./302821.js");
 require("./167666.jsx"), Promise.resolve().then(require.bind(require, 62883)).then(e => {
   B.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, false) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, false)
 }), (0, Chunk335854.E)({
@@ -86,7 +86,7 @@ let Q = (0, Chunk663993.Un)({
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, o = (0, B.getPlatform)(), u = l.tq || l.Em, m = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), k = i.useRef(document.body), U = "".concat(m);
+    } = e, o = (0, B.getPlatform)(), u = l.tq || l.Em, m = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), j = i.useRef(document.body), U = "".concat(m);
     return (0, C.G)(), (0, P.G)("AppSkeleton"), (0, r.jsx)(M.w, {
       children: (0, r.jsxs)(b.Z, {
         children: [(0, r.jsx)(V.Z, {
@@ -94,7 +94,7 @@ let Q = (0, Chunk663993.Un)({
         }), (0, r.jsx)(h.T, {
           children: (0, r.jsx)(Y.Z, {
             children: (0, r.jsxs)(d.JcV, {
-              containerRef: k,
+              containerRef: j,
               children: [(0, r.jsx)(K.Co, {}), (0, r.jsx)(W.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(g.Wu, {
                 appContext: q.IlC.APP,
                 renderWindow: window,
@@ -112,7 +112,7 @@ let Q = (0, Chunk663993.Un)({
                               children: [(0, r.jsx)("div", {
                                 className: a()(u ? X.mobileApp : X.app),
                                 children: t
-                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(L.ot, {}), (0, r.jsx)(d.Ixi, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(Q, {}), (0, r.jsx)(J, {}), (0, r.jsx)(j.Z, {})]
+                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(L.ot, {}), (0, r.jsx)(d.Ixi, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(Q, {}), (0, r.jsx)(J, {}), (0, r.jsx)(k.Z, {})]
                             })
                           })
                         })

@@ -15,7 +15,7 @@ var n, Chunk255367 = require("./255367.js"),
   Chunk424625 = require("./424625.jsx"),
   Chunk823379 = require("./823379.js"),
   Chunk246992 = require("./246992.js"),
-  Chunk881291 = require("./881291.js"),
+  Chunk451429 = require("./451429.js"),
   b = ((n = {}).NONE = "", n.EXPERIMENTS = "Experiments", n.EVENTS = "Events", n.PREMIUM = "Premium", n.BILLING = "Billing", n.USERS = "Users", n.GUILDS = "Guilds", n.UI = "UI", n.GAMES = "Games", n.AUDIO_VIDEO = "Audio / Video", n.DEVELOPMENT = "Development", n);
 let f = ["Experiments", "Events", "Premium", "Billing", "Users", "Guilds", "UI", "Games", "Audio / Video", "Development"],
   v = Chunk73800.forwardRef(function(e, t) {
@@ -54,22 +54,22 @@ function j(e) {
     b(s)
   }, [t, g, j, a]);
   let y = l.useCallback(e => {
-    var a, l, i;
+    var a, l;
     let {
-      closePopout: s
-    } = e, c = t.filter(e => null == e.group), u = {};
-    for (let e of t) null != e.group && (null != u[a = e.group] || (u[a] = []), u[e.group].push(e));
-    for (let e of f) null == (i = u[e]) || i.sort((e, t) => {
+      closePopout: i
+    } = e, s = t.filter(e => null == e.group), c = {};
+    for (let e of t) null != e.group && (null != c[a = e.group] || (c[a] = []), c[e.group].push(e));
+    for (let e of f) null == (l = c[e]) || l.sort((e, t) => {
       var a, n;
       return (null != (a = (0, o.q)(e.name)) ? a : "").localeCompare(null != (n = (0, o.q)(t.name)) ? n : "")
     });
     return (0, r.jsxs)(d.v2r, {
       navId: "devtools-overflow",
       variant: "fixed",
-      onClose: s,
+      onClose: i,
       "aria-label": "Overflowed DevTools Tabs",
-      onSelect: s,
-      children: [c.map(e => {
+      onSelect: i,
+      children: [s.map(e => {
         let {
           id: t,
           name: a
@@ -81,7 +81,7 @@ function j(e) {
         }, t)
       }), f.map(e => (0, r.jsx)(d.kSQ, {
         label: e,
-        children: u[e].map(e => {
+        children: c[e].map(e => {
           let {
             id: t,
             name: a

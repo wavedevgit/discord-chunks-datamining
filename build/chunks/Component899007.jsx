@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk304985 = require("./304985.js");
+  Chunk66856 = require("./66856.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,9 +83,9 @@ function R(e) {
     analyticsLocations: L
   } = (0, d.ZP)(u.Z.AVATAR), {
     trackUserProfileAction: x
-  } = (0, m.KZ)(), M = p.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.p9.TIER_2), j = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
-    live: k
-  } = (0, g.Z)(t.id), [U] = k, {
+  } = (0, m.KZ)(), M = p.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.p9.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
+    live: j
+  } = (0, g.Z)(t.id), [U] = j, {
     status: G,
     isMobileOnline: B
   } = (0, s.cj)([_.Z], () => ({
@@ -106,8 +106,8 @@ function R(e) {
     size: F,
     "aria-label": t.username,
     imageClassName: null != R ? I.overlay : true,
-    status: j ? O.Skl.UNKNOWN : Z,
-    statusBackdropColor: M && !j ? (0, l.QFD)(D) : true,
+    status: k ? O.Skl.UNKNOWN : Z,
+    statusBackdropColor: M && !k ? (0, l.QFD)(D) : true,
     isMobile: B,
     statusTooltip: true,
     statusTooltipDelay: y.vB

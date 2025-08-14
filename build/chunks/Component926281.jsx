@@ -83,13 +83,7 @@ function d(e) {
       label: o.intl.string(o.t.JN9c39),
       checked: false
     }
-  }), [g, v] = i.useState(false), y = e => (t, r) => {
-    p(t => b(u({}, t), {
-      [e]: b(u({}, t[e]), {
-        checked: r
-      })
-    })), r && g && v(false)
-  }, O = Object.values(d).some(e => e.checked);
+  }), [g, v] = i.useState(false), y = Object.values(d).some(e => e.checked);
   return (0, n.jsx)(l.Modal, {
     title: o.intl.string(o.t.jxXMEx),
     subtitle: o.intl.format(o.t.fSv59f, {
@@ -106,7 +100,7 @@ function d(e) {
     }, {
       text: o.intl.string(o.t.NYgNg4),
       onClick: () => {
-        if (!O) return void v(true);
+        if (!y) return void v(true);
         let e = Object.keys(d).filter(e => d[e].checked).map(e => d[e].value);
         null == r || r(e), t.onClose()
       },
@@ -123,7 +117,13 @@ function d(e) {
         return (0, n.jsx)(c.XZJ, {
           type: c.XZJ.Types.INVERTED,
           value: r,
-          onChange: y(e),
+          onChange: (t, r) => {
+            p(t => b(u({}, t), {
+              [e]: b(u({}, t[e]), {
+                checked: r
+              })
+            })), r && g && v(false)
+          },
           children: (0, n.jsx)(c.Text, {
             variant: "text-md/normal",
             children: t

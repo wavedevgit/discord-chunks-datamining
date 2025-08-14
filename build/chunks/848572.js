@@ -2,8 +2,8 @@
 /** chunk id: 848572, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   GG: () => E,
-  Rw: () => O,
-  SI: () => j,
+  Rw: () => x,
+  SI: () => T,
   Vq: () => p,
   a1: () => _,
   kG: () => v,
@@ -91,33 +91,31 @@ let N = () => {
     }, null)
   },
   x = () => {
-    let e = v(),
-      t = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription());
-    return null == module || null == exports || null == exports.premiumSince ? null : (0, Chunk291175.RZ)(module, exports.premiumSince)
-  },
-  T = () => {
-    let e = E(),
-      t = Object.values(Chunk474936.vK);
-    if (null == module || null == exports) return null;
-    let n = a()().diff(module, "days"),
-      r = exports[0],
-      l = 30 * r.tenureReqNumMonths - require;
-    return Chunk913527 <= 0 ? null : f(b({}, r), {
-      daysLeft: Chunk913527,
-      status: "upcoming"
-    })
-  },
-  O = () => {
     let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-      t = j(null == module ? true : module.id),
-      n = x(),
-      r = T();
+      t = T(null == module ? true : module.id),
+      n = (() => {
+        let e = v(),
+          t = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription());
+        return null == module || null == exports || null == exports.premiumSince ? null : (0, Chunk291175.RZ)(module, exports.premiumSince)
+      })(),
+      r = (() => {
+        let e = E(),
+          t = Object.values(Chunk474936.vK);
+        if (null == module || null == exports) return null;
+        let n = a()().diff(module, "days"),
+          r = exports[0],
+          l = 30 * r.tenureReqNumMonths - require;
+        return Chunk913527 <= 0 ? null : f(b({}, r), {
+          daysLeft: Chunk913527,
+          status: "upcoming"
+        })
+      })();
     return null != exports ? f(b({}, exports), {
       earnedOnDate: require,
       status: "earned"
     }) : null != r ? r : null
   },
-  j = e => {
+  T = e => {
     let t = (0, m.l)(e);
     return null == t ? null : g.vK[t]
   }

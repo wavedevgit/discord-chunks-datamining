@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk944486 = require("./944486.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk445087 = require("./445087.js");
+  Chunk943280 = require("./943280.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,7 +55,7 @@ let E = new g(Chunk570140.Z, {}),
     null != exports && exports.isPrivate() && (m.has(exports.getRecipientId()) || (m.add(exports.getRecipientId()), E.emitChange()))
   },
   O = () => (0, Chunk255367.jsxs)("div", {
-    className: Chunk445087.bar,
+    className: Chunk943280.bar,
     children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       children: Chunk388032.intl.string(Chunk388032.t["2UvR1N"])

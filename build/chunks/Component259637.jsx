@@ -1,4 +1,4 @@
-/** Chunk was on 54214 **/
+/** Chunk was on 9456 **/
 /** chunk id: 259637, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -14,7 +14,7 @@ var Chunk658722 = require("./658722.js"),
   Chunk339085 = require("./339085.js"),
   Chunk456269 = require("./456269.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk442304 = require("./442304.js");
+  Chunk183132 = require("./183132.js");
 let h = e => {
   let {
     tag: t
@@ -55,7 +55,7 @@ function g(e) {
     maxTagsApplied: i,
     onSelectTag: l,
     onClose: o
-  } = e, c = (0, d.Vm)(t), m = (e, t) => t.filter(t => a()(e.toLowerCase(), t.name.toLowerCase()));
+  } = e, c = (0, d.Vm)(t);
   return (0, r.jsx)(s.DBG, {
     showScrollbar: true,
     value: n,
@@ -64,7 +64,7 @@ function g(e) {
     },
     placeholder: u.intl.string(u.t.MbhGm5),
     "aria-label": u.intl.string(u.t.MbhGm5),
-    children: e => m(e, c).map(e => (0, r.jsx)(h, {
+    children: e => c.filter(t => a()(e.toLowerCase(), t.name.toLowerCase())).map(e => (0, r.jsx)(h, {
       tag: e
     }, e.id))
   })

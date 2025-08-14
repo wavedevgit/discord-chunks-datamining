@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 489968, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -17,9 +17,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk324815 = require("./324815.jsx"),
   Chunk763283 = require("./763283.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk603571 = require("./603571.js"),
+  Chunk511479 = require("./511479.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk199333 = require("./199333.js"),
+  Chunk573660 = require("./573660.js"),
   Chunk450890 = require("./450890.js"),
   Chunk145133 = require("./145133.js");
 let C = (0, Chunk608787.Un)({
@@ -87,32 +87,32 @@ function O() {
       }) : Chunk608787()
     };
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk199333.container,
+    className: Chunk573660.container,
     children: [(0, Chunk255367.jsx)("div", {
-      className: Chunk199333.backgroundOverlay
+      className: Chunk573660.backgroundOverlay
     }), (0, Chunk255367.jsxs)("div", {
-      className: Chunk199333.mainContent,
+      className: Chunk573660.mainContent,
       children: [(0, Chunk255367.jsx)("img", {
         src: Chunk450890,
-        alt: Chunk388032.intl.string(Chunk603571.default["7qZdOz"])
+        alt: Chunk388032.intl.string(Chunk511479.default["7qZdOz"])
       }), (0, Chunk255367.jsxs)(Chunk324815.Z, {
         muted: true,
-        className: Chunk199333.playButton,
+        className: Chunk573660.playButton,
         color: "white",
         disabled: exports,
         onClick: O,
         children: [(0, Chunk255367.jsx)(Chunk763283.Z, {
           color: "always-white",
           variant: "text-lg/bold",
-          children: module ? Chunk388032.intl.string(Chunk603571.default.ziFxys) : Chunk388032.intl.string(Chunk603571.default.vLz9lJ)
+          children: module ? Chunk388032.intl.string(Chunk511479.default.ziFxys) : Chunk388032.intl.string(Chunk511479.default.vLz9lJ)
         }), (0, Chunk255367.jsx)(Chunk763283.Z, {
           color: "always-white",
           variant: "text-xxs/medium",
-          children: Chunk388032.intl.string(Chunk603571.default["10J8k5"])
+          children: Chunk388032.intl.string(Chunk511479.default["10J8k5"])
         })]
       }), (0, Chunk255367.jsx)(Chunk324815.Z, {
         muted: true,
-        className: Chunk199333.resetButton,
+        className: Chunk573660.resetButton,
         color: "white",
         disabled: exports || !module,
         onClick: () => {
@@ -121,18 +121,18 @@ function O() {
         children: (0, Chunk255367.jsx)(Chunk763283.Z, {
           color: "always-white",
           variant: "text-xs/bold",
-          children: Chunk388032.intl.string(Chunk603571.default["/A+1UF"])
+          children: Chunk388032.intl.string(Chunk511479.default["/A+1UF"])
         })
       })]
     }), (0, Chunk255367.jsxs)("div", {
-      className: Chunk199333.footer,
+      className: Chunk573660.footer,
       children: [(0, Chunk255367.jsx)(Chunk763283.Z, {
-        className: Chunk199333.availability,
+        className: Chunk573660.availability,
         color: "always-white",
         variant: "text-xxs/medium",
-        children: Chunk388032.intl.string(Chunk603571.default.eZleys)
+        children: Chunk388032.intl.string(Chunk511479.default.eZleys)
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk199333.footerCenter,
+        className: Chunk573660.footerCenter,
         children: (0, Chunk255367.jsx)(Chunk324815.Z, {
           muted: true,
           color: "white",
@@ -142,12 +142,12 @@ function O() {
           children: (0, Chunk255367.jsx)(Chunk763283.Z, {
             color: "always-white",
             variant: "text-xs/bold",
-            children: Chunk388032.intl.string(Chunk603571.default.CQXsEh)
+            children: Chunk388032.intl.string(Chunk511479.default.CQXsEh)
           })
         })
       }), (0, Chunk255367.jsx)("img", {
         src: Chunk145133,
-        alt: Chunk388032.intl.string(Chunk603571.default.ABYTMz)
+        alt: Chunk388032.intl.string(Chunk511479.default.ABYTMz)
       })]
     })]
   })

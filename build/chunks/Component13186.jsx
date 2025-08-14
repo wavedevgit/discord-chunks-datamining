@@ -1,44 +1,44 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 13186, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => p,
-  Z: () => f
+  U: () => f,
+  Z: () => h
 });
 var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
   Chunk680018 = require("./680018.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk213609 = require("./213609.js"),
-  Chunk492211 = require("./492211.js"),
-  p = ((r = {}).TOP = "top", r.BOTTOM = "bottom", r);
-let f = Chunk73800.forwardRef(function(e, t) {
+  Chunk452956 = require("./452956.js"),
+  f = ((r = {}).TOP = "top", r.BOTTOM = "bottom", r);
+let h = Chunk73800.forwardRef(function(e, t) {
   let {
     body: n,
     header: r,
     artClassName: l,
     buttonText: o,
-    onClose: p,
-    art: f,
+    onClose: f,
+    art: h,
     align: g
   } = e;
   return (0, d.Z)({
-    type: a.ImpressionTypes.POPOUT,
-    name: a.ImpressionNames.CHAT_WALLPAPER_DM_LIST_COACHMARK
+    type: s.ImpressionTypes.POPOUT,
+    name: s.ImpressionNames.CHAT_WALLPAPER_DM_LIST_COACHMARK
   }), (0, i.jsx)("div", {
-    className: h.tooltip,
+    className: p.tooltip,
     ref: t,
     children: (0, i.jsxs)("div", {
-      className: h.content,
+      className: p.content,
       children: [(0, i.jsx)("div", {
         className: l,
-        children: f
+        children: h
       }), (0, i.jsxs)("div", {
-        className: h.body,
+        className: p.body,
         children: [(0, i.jsx)(u.X6q, {
-          className: h.header,
+          className: p.header,
           variant: "heading-md/bold",
           color: "always-white",
           children: r
@@ -48,18 +48,18 @@ let f = Chunk73800.forwardRef(function(e, t) {
           children: n
         }) : n]
       }), (0, i.jsx)("div", {
-        className: h.buttonContainer,
+        className: p.buttonContainer,
         children: (0, i.jsx)(c.z, {
           variant: "primary",
           text: o,
           fullWidth: true,
           onClick: e => {
-            null == p || p(e)
+            null == f || f(e)
           }
         })
       }), (0, i.jsx)("div", {
-        className: s()(h.pointer, {
-          [h.pointerBottom]: "bottom" === g
+        className: a()(p.pointer, {
+          [p.pointerBottom]: "bottom" === g
         })
       })]
     })

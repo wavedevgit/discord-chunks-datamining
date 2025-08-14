@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 289481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => x
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -23,7 +23,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk520116 = require("./520116.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk113747 = require("./113747.js");
+  Chunk550116 = require("./550116.js");
 
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -43,12 +43,12 @@ function E(e) {
   }
   return e
 }
-let S = Chunk73800.memo(function(e) {
+let x = Chunk73800.memo(function(e) {
     let {
       channel: t,
       deleteChannel: n
     } = e, l = i.useRef(null), [
-      [o, a], c
+      [o, s], c
     ] = i.useState([0, 0]), d = t.deleted && o > 0;
     if (t.deleted && 0 === o && null != l.current) {
       let e = l.current.offsetHeight,
@@ -58,8 +58,8 @@ let S = Chunk73800.memo(function(e) {
       c([e, e - r])
     }
     let {
-      opacity: h,
-      size: p
+      opacity: p,
+      size: f
     } = (0, u.q_F)({
       config: {
         clamp: true,
@@ -71,79 +71,79 @@ let S = Chunk73800.memo(function(e) {
       onRest: () => {
         n(t.channelId)
       }
-    }, "animate-always"), f = {
-      opacity: h,
-      height: p.to(e => {
+    }, "animate-always"), h = {
+      opacity: p,
+      height: f.to(e => {
         var t, n;
-        return d ? (t = o, (n = a) + (t - n) * e) : "auto"
+        return d ? (t = o, (n = s) + (t - n) * e) : "auto"
       })
     };
-    return (0, r.jsx)(s.animated.div, {
+    return (0, r.jsx)(a.animated.div, {
       ref: l,
-      style: f,
-      children: (0, r.jsx)(x, E({}, e))
+      style: h,
+      children: (0, r.jsx)(S, E({}, e))
     })
   }),
-  x = Chunk73800.memo(function(e) {
+  S = Chunk73800.memo(function(e) {
     let {
       channel: t,
       onJump: n,
       deleteChannel: l,
       toggle: o
-    } = e, s = (0, c.e7)([g.Z], () => g.Z.getChannel(t.channelId));
+    } = e, a = (0, c.e7)([g.Z], () => g.Z.getChannel(t.channelId));
     if (i.useEffect(() => {
-        null == s || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || d.Z.wait(() => {
-          (0, h.In)(t.channelId, {
-            section: C.jXE.INBOX,
-            object: C.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
-            objectType: C.Qqv.ACK_AUTOMATIC
+        null == a || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || d.Z.wait(() => {
+          (0, p.In)(t.channelId, {
+            section: v.jXE.INBOX,
+            object: v.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
+            objectType: v.Qqv.ACK_AUTOMATIC
           }, true), l(t.channelId)
         })
-      }), null == s || !t.hasLoadedAnything) return null;
-    let a = (e, r) => {
-      (0, p.yw)(C.rMx.INBOX_CHANNEL_CLICKED, {
+      }), null == a || !t.hasLoadedAnything) return null;
+    let s = (e, r) => {
+      (0, f.yw)(v.rMx.INBOX_CHANNEL_CLICKED, {
         channel_id: t.channelId,
         guild_id: t.guildId
       });
       let i = null != r ? r : t.oldestUnreadMessageId;
-      (0, f.uL)(C.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
+      (0, h.uL)(v.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
     };
     return (0, r.jsx)("div", {
-      className: j.channel,
+      className: C.channel,
       children: (0, r.jsx)(u.y5t, {
         component: (0, r.jsxs)(O.Z, {
-          channel: s,
-          gotoChannel: a,
+          channel: a,
+          gotoChannel: s,
           mentionCount: t.mentionCount,
           toggleCollapsed: o,
           channelState: t,
           children: [(0, r.jsx)(b.Z, {
-            channel: s
-          }), (0, r.jsx)(I, E({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(P, E({}, e))]
+            channel: a
+          }), (0, r.jsx)(P, E({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(I, E({}, e))]
         }),
         children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(y.Z, {
           channel: t,
-          channelRecord: s,
-          gotoChannel: a
+          channelRecord: a,
+          gotoChannel: s
         }) : "forum" === t.type ? (0, r.jsx)(_.Z, {
           channel: t,
-          channelRecord: s,
+          channelRecord: a,
           deleteChannel: l
         }) : null
       })
     })
   });
 
-function I(e) {
+function P(e) {
   let {
     channel: t,
     markChannelRead: n,
     markGuildRead: i,
     getNumUnreadChannels: l
-  } = e, o = (0, a.Z)() && null != t.guildId;
+  } = e, o = (0, s.Z)() && null != t.guildId;
   return (0, r.jsx)(u.M0o, {
-    className: j.markReadButton,
-    tooltip: o ? v.intl.string(v.t["5lLMhI"]) : v.intl.string(v.t.e6RscX),
+    className: C.markReadButton,
+    tooltip: o ? j.intl.string(j.t["5lLMhI"]) : j.intl.string(j.t.e6RscX),
     color: u.YX$.TERTIARY,
     icon: o ? (0, r.jsx)(u.W6s, {
       size: "xs",
@@ -153,7 +153,7 @@ function I(e) {
       color: "currentColor"
     }),
     onClick: function() {
-      o && null != t.guildId ? i(t.guildId) : n(t), (0, p.yw)(C.rMx.INBOX_CHANNEL_ACKED, {
+      o && null != t.guildId ? i(t.guildId) : n(t), (0, f.yw)(v.rMx.INBOX_CHANNEL_ACKED, {
         channel_id: t.channelId,
         guild_id: t.guildId,
         marked_all_channels_as_read: false,
@@ -163,7 +163,7 @@ function I(e) {
   })
 }
 
-function P(e) {
+function I(e) {
   let {
     channel: t,
     toggle: n,
@@ -171,7 +171,7 @@ function P(e) {
   } = e;
 
   function l() {
-    n(t), (0, p.yw)(C.rMx.INBOX_CHANNEL_COLLAPSED, {
+    n(t), (0, f.yw)(v.rMx.INBOX_CHANNEL_COLLAPSED, {
       channel_id: t.channelId,
       guild_id: t.guildId,
       num_unread_channels_remaining: i(),
@@ -179,12 +179,12 @@ function P(e) {
     })
   }
   return (0, r.jsx)(u.ua7, {
-    text: v.intl.string(v.t.iTcumZ),
+    text: j.intl.string(j.t.iTcumZ),
     children: e => {
       var n, i;
       return (0, r.jsx)(u.P3F, (n = E({}, e), i = i = {
-        className: o()(j.collapseButton, {
-          [j.collapsed]: t.collapsed
+        className: o()(C.collapseButton, {
+          [C.collapsed]: t.collapsed
         }),
         onClick: l,
         children: (0, r.jsx)(m.Z, {

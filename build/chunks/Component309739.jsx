@@ -1,7 +1,7 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 309739, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => U
+  Z: () => M
 }), require("./388685.js"), require("./781311.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -31,8 +31,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk140059 = require("./140059.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk85240 = require("./85240.js"),
+  Chunk197571 = require("./197571.js");
 
 function D(e) {
   let t = () => {
@@ -86,13 +86,7 @@ function Z() {
     t = Chunk695346.no.useSetting(),
     n = (0, Chunk362352.Yd)("activity privacy tab"),
     r = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk388032.t.MznbeH) : Chunk388032.intl.string(Chunk388032.t.oKqC4u),
-    s = e => {
-      I.no.updateSetting(e ? d.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : d.GI.ACTIVITY_STATUS_OFF), D(e)
-    },
-    l = e => {
-      I.no.updateSetting(e), D(e !== d.GI.ACTIVITY_STATUS_OFF)
-    },
-    o = [{
+    s = [{
       value: Chunk524437.GI.ACTIVITY_STATUS_ON,
       label: Chunk388032.intl.string(Chunk388032.t.UzGMHx)
     }, {
@@ -107,7 +101,7 @@ function Z() {
     children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
         tag: Chunk481060.RB0.H5,
-        className: Chunk881488.marginBottom8,
+        className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t["8ka8lp"])
       }), (0, Chunk255367.jsx)(Chunk481060.j7V, {
         value: module,
@@ -121,24 +115,29 @@ function Z() {
           children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
             color: "header-secondary",
-            className: Chunk881488.marginBottom8,
+            className: Chunk197571.marginBottom8,
             children: Chunk388032.intl.format(Chunk388032.t.aUxRra, {
               helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.ACTIVITY_STATUS_SETTINGS)
             })
           }), (0, Chunk255367.jsx)(Chunk481060.q4e, {
-            options: o,
+            options: Chunk120356,
             value: exports,
-            onChange: e => l(e)
+            onChange: e => {
+              I.no.updateSetting(e), D(e !== d.GI.ACTIVITY_STATUS_OFF)
+            }
           })]
         }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
-          className: a()(Chunk881488.marginBottom20, Chunk881488.marginTop20)
+          className: a()(Chunk197571.marginBottom20, Chunk197571.marginTop20)
         })]
       }) : (0, Chunk255367.jsx)(Chunk481060.j7V, {
         value: exports === Chunk524437.GI.ACTIVITY_STATUS_OFF,
         note: Chunk388032.intl.format(Chunk388032.t["+5/xu7"], {
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.ACTIVITY_STATUS_SETTINGS)
         }),
-        onChange: e => s(!e),
+        onChange: e => {
+          var t;
+          return t = !e, void(I.no.updateSetting(t ? d.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : d.GI.ACTIVITY_STATUS_OFF), D(t))
+        },
         children: Chunk388032.intl.string(Chunk388032.t.D5GXTU)
       })]
     })
@@ -151,10 +150,10 @@ function w() {
   return (0, Chunk255367.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
     children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-      className: Chunk881488.marginBottom40,
+      className: Chunk197571.marginBottom40,
       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
         tag: Chunk481060.RB0.H5,
-        className: Chunk881488.marginBottom8,
+        className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.VOszPD)
       }), (0, Chunk255367.jsx)(Chunk481060.j7V, {
         value: module,
@@ -175,7 +174,7 @@ function k() {
   return (0, Chunk255367.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_TOS,
     children: (0, Chunk255367.jsx)(Chunk481060.hjN, {
-      className: Chunk881488.marginBottom40,
+      className: Chunk197571.marginBottom40,
       children: (0, Chunk255367.jsx)(Chunk481060.ToO, {
         type: Chunk481060.ToO.Types.PRIMARY,
         body: Chunk388032.intl.format(Chunk388032.t.xvCsx8, {
@@ -186,24 +185,8 @@ function k() {
     })
   })
 }
-let L = e => {
-  switch (e.type) {
-    case y.ABu.SPOTIFY:
-      return A.intl.format(A.t["5sYPnp"], {
-        name: e.name
-      });
-    case y.ABu.CRUNCHYROLL:
-      return A.intl.format(A.t.Ge29Z2, {
-        name: e.name
-      });
-    default:
-      return A.intl.format(A.t.nmMsys, {
-        game: e.name
-      })
-  }
-};
 
-function M(e) {
+function L(e) {
   let {
     account: t
   } = e, [n, s] = r.useState(t.showActivity), a = (0, h.ZP)();
@@ -232,7 +215,22 @@ function M(e) {
           }), (0, i.jsxs)(p.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: ['"', L(l), '"']
+            children: ['"', (e => {
+              switch (e.type) {
+                case y.ABu.SPOTIFY:
+                  return A.intl.format(A.t["5sYPnp"], {
+                    name: e.name
+                  });
+                case y.ABu.CRUNCHYROLL:
+                  return A.intl.format(A.t.Ge29Z2, {
+                    name: e.name
+                  });
+                default:
+                  return A.intl.format(A.t.nmMsys, {
+                    game: e.name
+                  })
+              }
+            })(l), '"']
           })]
         })]
       })
@@ -253,24 +251,24 @@ function B() {
   return 0 === exports.length ? null : (0, Chunk255367.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY,
     children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-      className: Chunk881488.marginBottom40,
+      className: Chunk197571.marginBottom40,
       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
         tag: Chunk481060.RB0.H5,
-        className: Chunk881488.marginBottom8,
+        className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t["4F2KoK"])
       }), (0, Chunk255367.jsx)(Chunk755721.Is, {
-        className: Chunk140059.searchInput,
+        className: Chunk85240.searchInput,
         value: require,
         onChange: Chunk120356,
         placeholder: Chunk388032.intl.string(Chunk388032.t.WPrtoa)
-      }), a.map(e => (0, i.jsx)(M, {
+      }), a.map(e => (0, i.jsx)(L, {
         account: e
       }, e.id))]
     })
   })
 }
 
-function U(e) {
+function M(e) {
   let {
     className: t,
     showHeader: n = true

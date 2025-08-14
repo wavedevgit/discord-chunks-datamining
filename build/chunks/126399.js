@@ -56,24 +56,26 @@ class p extends Chunk317770.Z {
     }) : null != i ? (l.Z.setFingerprint(i), h(false, a), (0, o.lx)()) : (l.Z.setFingerprint(i), (0, o.by)())
   }
   constructor(...e) {
-    var t, n;
-    super(...e), t = "handleEnd", n = e => {
-      let {
-        handoffToken: t,
-        fingerprint: n
-      } = e, r = a.Z.key;
-      null != r && a.Z.isHandoffAvailable() ? this.handleHandoff({
-        handoffKey: r,
-        handoffToken: t,
-        fingerprint: n,
-        handoffSource: true
-      }) : (l.Z.setFingerprint(null), (0, o.by)())
-    }, t in this ? Object.defineProperty(this, t, {
-      value: n,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[t] = n
+    super(...e),
+      function(e, t, n) {
+        t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
+      }(this, "handleEnd", e => {
+        let {
+          handoffToken: t,
+          fingerprint: n
+        } = e, r = a.Z.key;
+        null != r && a.Z.isHandoffAvailable() ? this.handleHandoff({
+          handoffKey: r,
+          handoffToken: t,
+          fingerprint: n,
+          handoffSource: true
+        }) : (l.Z.setFingerprint(null), (0, o.by)())
+      })
   }
 }
 let f = new p

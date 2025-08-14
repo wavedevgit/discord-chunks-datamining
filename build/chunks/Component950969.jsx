@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 950969, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -15,9 +15,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk9156 = require("./9156.js"),
   Chunk451478 = require("./451478.js");
 
-function f(e) {
+function h(e) {
   let t = u.Z.getChannel(e);
-  return null != t && null != t.getGuildId() && !(t.isThread() ? c.Z.isMuted(t.id) : h.ZP.isChannelMuted(t.getGuildId(), t.id)) && (0, a.d)(t)
+  return null != t && null != t.getGuildId() && !(t.isThread() ? c.Z.isMuted(t.id) : p.ZP.isChannelMuted(t.getGuildId(), t.id)) && (0, s.d)(t)
 }
 
 function g(e) {
@@ -25,13 +25,13 @@ function g(e) {
   if (null == t) returnfalse;
   let n = t.getGuildId();
   if (null == n) returnfalse;
-  let r = h.ZP.isGuildCollapsed(n),
-    i = h.ZP.isChannelMuted(n, t.id);
+  let r = p.ZP.isGuildCollapsed(n),
+    i = p.ZP.isChannelMuted(n, t.id);
   return (!r || !i) && d.ZP.getMentionCount(e) > 0
 }
 let m = Chunk73800.forwardRef(function(e, t) {
   var n, i, {
-      guildId: a,
+      guildId: s,
       guildChannels: c,
       guildChannelsVersion: u
     } = e,
@@ -50,13 +50,13 @@ let m = Chunk73800.forwardRef(function(e, t) {
       }
       return i
     }(e, ["guildId", "guildChannels", "guildChannelsVersion"]);
-  let h = (0, o.T)(a, c, u, {
+  let p = (0, o.T)(s, c, u, {
       withVoiceChannels: false
     }, {
       ignoreRecents: true
     }),
-    m = (0, l.e7)([p.Z], () => p.Z.isFocused());
-  return (0, r.jsx)(s.Z, (n = function(e) {
+    m = (0, l.e7)([f.Z], () => f.Z.isFocused());
+  return (0, r.jsx)(a.Z, (n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -76,9 +76,9 @@ let m = Chunk73800.forwardRef(function(e, t) {
   }({
     ref: t
   }, d), i = i = {
-    isUnread: f,
+    isUnread: h,
     isMentioned: g,
-    items: h,
+    items: p,
     animate: m
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
     var n = Object.keys(e);

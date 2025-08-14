@@ -59,7 +59,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk420212 = require("./420212.js"),
   Chunk814249 = require("./814249.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk793398 = require("./793398.js");
+  Chunk180376 = require("./180376.js");
 
 function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -206,7 +206,7 @@ function et(e) {
     mediaLayoutType: f,
     imageContainerStyle: _,
     mosaicStyleAlt: h
-  } = e, m = f === k.hV.MOSAIC || true === h, g = !c && C.H1.getSetting() && null != t && "" !== t && true !== n, E = e => {
+  } = e, m = f === j.hV.MOSAIC || true === h, g = !c && C.H1.getSetting() && null != t && "" !== t && true !== n, E = e => {
     let {
       altText: t
     } = e;
@@ -378,7 +378,7 @@ function eu(e) {
       context: "Mark As Read"
     }) : f.Z.jumpToMessage({
       channelId: n,
-      messageId: j.default.castChannelIdAsMessageId(n),
+      messageId: k.default.castChannelIdAsMessageId(n),
       offset: 1,
       context: "Mark As Read"
     })
@@ -436,9 +436,9 @@ function ed(e) {
   } = i.useContext(b.G), [y, v] = i.useState(null), I = i.useRef(null), [T, C] = i.useState(null), R = i.useRef(null), M = (0, u.Wu)([A.Z], () => {
     var e;
     return null != (e = A.Z.summaries(s.id)) ? e : []
-  }, [s]), k = (0, g.Z)(M);
+  }, [s]), j = (0, g.Z)(M);
   i.useEffect(() => {
-    l().isEqual(k, M) || L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
+    l().isEqual(j, M) || L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
       num_summaries: M.length,
       message_counts: M.map(e => e.count),
       start_message_ids: M.map(e => e.startId),
@@ -448,7 +448,7 @@ function ed(e) {
       channel_id: s.id,
       channel_type: s.type
     })
-  }, [M, k, s.guild_id, s.id, s.type]);
+  }, [M, j, s.guild_id, s.id, s.type]);
   let G = (0, u.e7)([w.default], () => {
       var e;
       return null != (e = null == M ? true : M.map(e => {
@@ -564,7 +564,7 @@ function ed(e) {
         context: "Mark As Read"
       }) : f.Z.jumpToMessage({
         channelId: s.id,
-        messageId: j.default.castChannelIdAsMessageId(s.id),
+        messageId: k.default.castChannelIdAsMessageId(s.id),
         offset: 1,
         context: "Mark As Read"
       })
@@ -703,9 +703,9 @@ function ep(e) {
       })) ? e : []
     }, [C], e_),
     M = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
-    j = null == C || null == (t = C[M]) ? true : t.topic;
-  null == j && null == h && (null == C ? true : C.length) >= 1 && (j = null == (o = C[0]) ? true : o.topic);
-  let k = i.useMemo(() => l().get(C, M - 1), [M, C]),
+    k = null == C || null == (t = C[M]) ? true : t.topic;
+  null == k && null == h && (null == C ? true : C.length) >= 1 && (k = null == (o = C[0]) ? true : o.topic);
+  let j = i.useMemo(() => l().get(C, M - 1), [M, C]),
     G = i.useMemo(() => l().get(C, M + 1), [M, C]),
     V = i.useMemo(() => l().debounce(e => {
       var t;
@@ -808,7 +808,7 @@ function ep(e) {
   }), [C, P, q, J, s]);
   if (!(0, u.e7)([A.Z], () => A.Z.shouldShowTopicsBar())) return null;
   let et = Z.intl.string(Z.t["38qwgI"]);
-  return C.length > 0 && (et = "" === j || null == j ? Z.intl.string(Z.t.DwnFuL) : j), p ? null : (0, r.jsxs)("div", {
+  return C.length > 0 && (et = "" === k || null == k ? Z.intl.string(Z.t.DwnFuL) : k), p ? null : (0, r.jsxs)("div", {
     ref: y,
     className: a()(F.topicsPillContainer, F.containerMarginTop),
     children: [(0, r.jsxs)("div", {
@@ -854,7 +854,7 @@ function ep(e) {
           "aria-label": Z.intl.string(Z.t["58KOoK"]),
           onClick: X,
           className: a()(F.topicsPillCaret, F.topicsCaretRight, {
-            [F.topicsPillCaretDisabled]: null == k
+            [F.topicsPillCaretDisabled]: null == j
           }),
           children: (0, r.jsx)(D.Z, {
             width: 16,

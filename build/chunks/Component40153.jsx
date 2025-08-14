@@ -1,16 +1,16 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 40153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  OG: () => j,
-  ZP: () => C,
-  Zu: () => v
+  OG: () => C,
+  ZP: () => v,
+  Zu: () => j
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  s = require.n(Chunk512722),
   Chunk539202 = require("./539202.js"),
   Chunk749210 = require("./749210.js"),
   Chunk626135 = require("./626135.js"),
@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk662146 = require("./662146.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk131161 = require("./131161.js");
+  Chunk606989 = require("./606989.js");
 
 function b(e) {
   let t = i.useRef(null),
@@ -36,14 +36,14 @@ function b(e) {
 function O(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3];
-  return a()(t.type !== h.eD.ROOT, "[GuildDropTarget] Tried using a root node as a drop target."), {
+  return s()(t.type !== p.eD.ROOT, "[GuildDropTarget] Tried using a root node as a drop target."), {
     accept: e,
-    canDrop: e => e.nodeId !== t.id && (!r || e.type !== h.eD.FOLDER || t.type !== h.eD.FOLDER) && (e.type !== h.eD.FOLDER || null == t.parentId),
+    canDrop: e => e.nodeId !== t.id && (!r || e.type !== p.eD.FOLDER || t.type !== p.eD.FOLDER) && (e.type !== p.eD.FOLDER || null == t.parentId),
     drop(e) {
       let {
         nodeId: i
       } = e;
-      r && t.type !== h.eD.FOLDER && d.default.track(f.rMx.GUILD_FOLDER_CREATED), u.Z.moveById(i, t.id, n, r)
+      r && t.type !== p.eD.FOLDER && d.default.track(h.rMx.GUILD_FOLDER_CREATED), u.Z.moveById(i, t.id, n, r)
     },
     collect: e => ({
       canDrop: e.canDrop(),
@@ -58,16 +58,16 @@ function _(e) {
     targetNode: n,
     combine: l,
     below: o
-  } = e, s = i.useMemo(() => O([h.eD.GUILD, h.eD.FOLDER], n, o, l), [n, o, l]), [{
-    canDrop: a,
+  } = e, a = i.useMemo(() => O([p.eD.GUILD, p.eD.FOLDER], n, o, l), [n, o, l]), [{
+    canDrop: s,
     isOver: u
-  }, d] = (0, c.L)(s), p = b([
-    [a, m.autoPointerEvents],
+  }, d] = (0, c.L)(a), f = b([
+    [s, m.autoPointerEvents],
     [u, m.dragOver]
   ]);
   return (0, r.jsx)("div", {
     ref: e => {
-      p.current = e, d(e)
+      f.current = e, d(e)
     },
     "data-dnd-name": g.intl.formatToPlainString(g.t.A5aDw8, {
       itemName: t
@@ -82,20 +82,20 @@ function y(e) {
     targetNode: n,
     onDragOverChanged: l
   } = e, [{
-    canDrop: s,
-    isOver: a
-  }, u] = (0, c.L)(() => O([h.eD.GUILD], n, true, true));
+    canDrop: a,
+    isOver: s
+  }, u] = (0, c.L)(() => O([p.eD.GUILD], n, true, true));
   i.useEffect(() => {
-    null == l || l(a)
-  }, [l, a]);
+    null == l || l(s)
+  }, [l, s]);
   let d = b([
-    [s, m.autoPointerEvents],
-    [a, m.dragOver]
+    [a, m.autoPointerEvents],
+    [s, m.dragOver]
   ]);
-  return (0, r.jsx)(p.Z, {
+  return (0, r.jsx)(f.Z, {
     text: t,
-    shouldShow: a,
-    forceOpen: a,
+    shouldShow: s,
+    forceOpen: s,
     disableWrapper: true,
     tooltipClass: m.centerTargetTooltip,
     children: (0, r.jsx)("div", {
@@ -109,14 +109,14 @@ function y(e) {
     })
   })
 }
-let C = Chunk73800.memo(function(e) {
+let v = Chunk73800.memo(function(e) {
   let {
     name: t,
     targetNode: n,
     noCombine: i = false,
     below: l = false,
     onDragOverChanged: o
-  } = e, s = !i && null == n.parentId;
+  } = e, a = !i && null == n.parentId;
   return (0, r.jsxs)("div", {
     className: m.wrapper,
     "aria-hidden": true,
@@ -124,7 +124,7 @@ let C = Chunk73800.memo(function(e) {
       name: t,
       targetNode: n,
       below: l
-    }), s ? (0, r.jsx)(y, {
+    }), a ? (0, r.jsx)(y, {
       name: t,
       targetNode: n,
       onDragOverChanged: o
@@ -132,28 +132,28 @@ let C = Chunk73800.memo(function(e) {
   })
 });
 
-function v(e) {
+function j(e) {
   let {
     name: t,
     targetNode: n
   } = e, [{
     canDrop: i,
     isOver: l
-  }, o] = (0, c.L)(() => O([h.eD.GUILD], n, true, true)), s = b([
+  }, o] = (0, c.L)(() => O([p.eD.GUILD], n, true, true)), a = b([
     [l, m.wrapperOver]
-  ]), a = b([
+  ]), s = b([
     [l, m.dragOver],
     [i, m.autoPointerEvents]
   ]);
   return (0, r.jsx)("div", {
-    ref: s,
+    ref: a,
     className: m.folderEndWrapper,
     "aria-hidden": true,
     children: (0, r.jsx)("div", {
       className: m.folderTarget,
       children: (0, r.jsx)("div", {
         ref: e => {
-          a.current = e, o(e)
+          s.current = e, o(e)
         },
         "aria-label": "At end of ".concat(t),
         className: m.target
@@ -162,7 +162,7 @@ function v(e) {
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     children: t
   } = e, [, n] = (0, c.L)({

@@ -1,7 +1,7 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 710220, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => c
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -9,16 +9,15 @@ var Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
   Chunk182294 = require("./182294.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk230946 = require("./230946.js");
-let c = e => null != e.globalName ? e.globalName : e.username;
+  Chunk215062 = require("./215062.js");
 
-function d(e) {
+function c(e) {
   let {
     referrer: t,
     enablePremiumBrandRefresh: n
   } = e, {
-    avatarSrc: d,
-    eventHandlers: u
+    avatarSrc: c,
+    eventHandlers: d
   } = (0, s.Z)({
     userId: null == t ? true : t.id,
     size: n ? a.EF.SIZE_24 : a.EF.SIZE_32,
@@ -49,16 +48,16 @@ function d(e) {
           return e
         }({
           className: o.icon,
-          src: d,
+          src: c,
           "aria-label": t.username,
           size: a.EF.SIZE_32
-        }, u))
+        }, d))
       }), (0, i.jsx)(r.X6q, {
         variant: "heading-sm/normal",
         className: o.textContainerRebranded,
         color: "header-primary",
         children: l.intl.format(l.t.IqxblZ, {
-          username: c(t)
+          username: null != t.globalName ? t.globalName : t.username
         })
       })]
     })

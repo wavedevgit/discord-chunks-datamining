@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 279743, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -13,29 +13,29 @@ var Chunk255367 = require("./255367.js"),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk663389 = require("./663389.js"),
-  Chunk257368 = require("./257368.js");
+  Chunk334709 = require("./334709.js");
 
-function f(e) {
+function h(e) {
   let {
     children: t,
     className: n,
     onFlashEnd: l,
     animationDelay: u = 500
-  } = e, h = c.TVs.colors.TEXT_LINK, f = (0, c.dQu)(h).spring({
+  } = e, p = c.TVs.colors.TEXT_LINK, h = (0, c.dQu)(p).spring({
     opacity: 0
-  }), g = (0, c.dQu)(h).spring({
+  }), g = (0, c.dQu)(p).spring({
     opacity: .1
-  }), m = (0, c.dQu)(h).spring({
+  }), m = (0, c.dQu)(p).spring({
     opacity: 0
-  }), b = (0, c.dQu)(h).spring({
+  }), b = (0, c.dQu)(p).spring({
     opacity: 1
   }), [O, _] = (0, c.q_F)(() => ({
     from: {
-      backgroundColor: f,
-      borderColor: f
+      backgroundColor: h,
+      borderColor: h
     }
   }), "animate-never"), y = {
-    startColor: f,
+    startColor: h,
     handleRest: e => {
       e.finished && (null == l || l())
     },
@@ -43,9 +43,9 @@ function f(e) {
     targetBorderColor: b,
     targetColor: g,
     animationDelay: u
-  }, C = i.useRef(y);
+  }, v = i.useRef(y);
   return i.useEffect(() => {
-    C.current = y
+    v.current = y
   }), i.useEffect(() => {
     let {
       startColor: e,
@@ -54,9 +54,9 @@ function f(e) {
       targetBorderColor: r,
       targetColor: i,
       animationDelay: l
-    } = C.current, {
+    } = v.current, {
       useReducedMotion: o
-    } = d.Z, s = 200 * !o;
+    } = d.Z, a = 200 * !o;
     _({
       reset: true,
       immediate: false,
@@ -65,8 +65,8 @@ function f(e) {
         borderColor: e
       },
       config: {
-        duration: s,
-        easing: a.Z.Easing.ease
+        duration: a,
+        easing: s.Z.Easing.ease
       }
     }), _({
       delay: l,
@@ -76,8 +76,8 @@ function f(e) {
         borderColor: r
       }],
       config: {
-        duration: s,
-        easing: a.Z.Easing.ease
+        duration: a,
+        easing: s.Z.Easing.ease
       }
     }), _({
       delay: l + 200 + 200,
@@ -87,14 +87,14 @@ function f(e) {
         borderColor: n
       }],
       config: {
-        duration: s,
-        easing: a.Z.Easing.ease
+        duration: a,
+        easing: s.Z.Easing.ease
       },
       onRest: t
     })
-  }, [_]), (0, r.jsx)(s.animated.div, {
+  }, [_]), (0, r.jsx)(a.animated.div, {
     style: O,
-    className: o()(p.settingsItemHighlight, n),
+    className: o()(f.settingsItemHighlight, n),
     children: t
   })
 }
@@ -104,12 +104,12 @@ function g(e) {
     children: t,
     scrollPosition: n,
     animationDelay: l
-  } = e, o = (0, u.e7)([h.Z], () => h.Z.getScrollPosition() === n), [s, a] = i.useState(false);
+  } = e, o = (0, u.e7)([p.Z], () => p.Z.getScrollPosition() === n), [a, s] = i.useState(false);
   return (i.useEffect(() => {
-    o && a(true)
-  }, [o]), s) ? (0, r.jsx)(f, {
+    o && s(true)
+  }, [o]), a) ? (0, r.jsx)(h, {
     animationDelay: l,
-    onFlashEnd: () => a(false),
+    onFlashEnd: () => s(false),
     children: t
   }) : t
 }

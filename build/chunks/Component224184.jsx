@@ -27,7 +27,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk625938 = require("./625938.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk337022 = require("./337022.js");
+  Chunk84709 = require("./84709.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -80,14 +80,14 @@ let w = 40,
     } = b.n.useExperiment({
       guildId: N.guild_id,
       location: "HangStatusPopout"
-    }), x = (0, s.e7)([f.default], () => f.default.getId()), M = (0, s.e7)([m.default], () => m.default.getUser(o)), j = (0, s.e7)([h.Z], () => h.Z.getChannelId() === N.id), k = (0, s.e7)([p.Z], () => p.Z.can(T.Plq.CONNECT, N)), U = (null == t ? true : t.emoji) == null || (0, O.K)(t.emoji, N), G = (0, s.e7)([_.ZP], () => null != N.guild_id && null != M ? _.ZP.getMember(N.guild_id, o) : null), B = i.useMemo(() => null != M ? (0, d.SG)(true, G, M, {
+    }), x = (0, s.e7)([f.default], () => f.default.getId()), M = (0, s.e7)([m.default], () => m.default.getUser(o)), k = (0, s.e7)([h.Z], () => h.Z.getChannelId() === N.id), j = (0, s.e7)([p.Z], () => p.Z.can(T.Plq.CONNECT, N)), U = (null == t ? true : t.emoji) == null || (0, O.K)(t.emoji, N), G = (0, s.e7)([_.ZP], () => null != N.guild_id && null != M ? _.ZP.getMember(N.guild_id, o) : null), B = i.useMemo(() => null != M ? (0, d.SG)(true, G, M, {
       size: w
     }) : true, [G, M]);
     i.useEffect(() => {
       (0, E.UP)()
     }, []);
     let Z = () => {
-      !j && k && (u.default.selectVoiceChannel(N.id), g.default.track(T.rMx.HANG_STATUS_CTA_CLICKED, {
+      !k && j && (u.default.selectVoiceChannel(N.id), g.default.track(T.rMx.HANG_STATUS_CTA_CLICKED, {
         source: "HangStatusPopout",
         guild_id: N.guild_id,
         channel_id: N.id
@@ -159,11 +159,11 @@ let w = 40,
             })]
           })]
         })]
-      }), !j && k ? (0, r.jsx)(c.zxk, {
+      }), !k && j ? (0, r.jsx)(c.zxk, {
         size: "sm",
         text: S.intl.string(S.t["B/dHXF"]),
         onClick: Z
-      }) : null, j && U ? (0, r.jsx)(c.zxk, {
+      }) : null, k && U ? (0, r.jsx)(c.zxk, {
         size: "sm",
         text: S.intl.string(S.t.xcVcFR),
         onClick: F

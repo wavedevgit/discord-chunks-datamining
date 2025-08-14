@@ -31,14 +31,14 @@ var Chunk255367 = require("./255367.js"),
   Chunk689079 = require("./689079.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk608559 = require("./608559.js"),
+  Chunk57507 = require("./57507.js"),
   Chunk239840 = require("./239840.js");
 let D = 512,
   L = 7,
   x = 56,
   M = 16,
-  j = 32,
-  k = 20,
+  k = 32,
+  j = 20,
   U = 420,
   G = [8, 8, 0, 8],
   B = l().debounce(() => {
@@ -88,10 +88,10 @@ let D = 512,
           m.Xn.setActiveCategoryIndex(e)
         }
       },
-      scrollOffset: k,
+      scrollOffset: j,
       searchQuery: ""
     }), er = e => {
-      let t = q.length * (j + M) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? L : 0)) * x - D;
+      let t = q.length * (k + M) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? L : 0)) * x - D;
       Q && e + U > t && ee(), en(e), B(), l.current = e
     }, ei = i.useRef(er);
     i.useEffect(() => {
@@ -232,7 +232,7 @@ let D = 512,
         rowCount: q.length,
         rowCountBySection: ea,
         rowHeight: x,
-        sectionHeaderHeight: j,
+        sectionHeaderHeight: k,
         sectionMarginBottom: eo,
         ref: H,
         stickyHeaders: true

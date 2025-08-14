@@ -1,5 +1,5 @@
-/** Chunk was on 67626 **/
-/** chunk id: 223901, original params: e,t,a (module,exports,require) **/
+/** Chunk was on 36970 **/
+/** chunk id: 223901, original params: a,e,s (module,exports,require) **/
 require.d(exports, {
   default: () => d
 });
@@ -9,26 +9,26 @@ var Chunk255367 = require("./255367.js"),
   Chunk91159 = require("./91159.js"),
   Chunk593130 = require("./593130.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk439440 = require("./439440.js");
+  Chunk225079 = require("./225079.js");
 
-function d(e) {
+function d(a) {
   let {
-    channel: t,
-    onClose: a,
+    channel: e,
+    onClose: s,
     transitionState: d
-  } = e;
+  } = a;
   return r.useEffect(() => {
-    (0, c.U4)()
-  }, []), (0, n.jsx)(o.Y0X, {
-    className: i.modal,
+    (0, o.U4)()
+  }, []), (0, n.jsx)(t.Y0X, {
+    className: c.modal,
     transitionState: d,
-    "aria-label": _.intl.string(_.t.B2panJ),
-    size: o.CgR.DYNAMIC,
+    "aria-label": l.intl.string(l.t.B2panJ),
+    size: t.CgR.DYNAMIC,
     parentComponent: "ThreadBrowserModal",
-    children: (0, n.jsx)(s.Z, {
-      className: i.browser,
-      channel: t,
-      onClose: a
+    children: (0, n.jsx)(i.Z, {
+      className: c.browser,
+      channel: e,
+      onClose: s
     })
   })
 }

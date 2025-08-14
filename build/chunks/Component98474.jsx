@@ -17,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk768581 = require("./768581.js"),
   Chunk176354 = require("./176354.js"),
   Chunk675654 = require("./675654.js"),
-  Chunk974346 = require("./974346.js");
+  Chunk42868 = require("./42868.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -93,7 +93,7 @@ function T(e) {
       } = e;
       N(t)
     }
-  }), j = (0, l.q_F)({
+  }), k = (0, l.q_F)({
     from: {
       x: g.x,
       scale: 1,
@@ -140,8 +140,8 @@ function T(e) {
         style: E({}, M),
         className: m.emojiContainer,
         children: (0, r.jsx)(a.animated.div, {
-          style: y(E({}, j), {
-            opacity: j.opacity
+          style: y(E({}, k), {
+            opacity: k.opacity
           }),
           children: (0, r.jsx)(c.Z, {
             className: m.emoji,

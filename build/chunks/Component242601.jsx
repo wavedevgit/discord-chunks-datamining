@@ -71,7 +71,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk921944 = require("./921944.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk580682 = require("./580682.js");
+  Chunk971606 = require("./971606.js");
 
 function e_(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -310,7 +310,7 @@ class eC extends Chunk73800.PureComponent {
     });
     {
       if (require.features.has(Chunk981631.oNc.HUB) && !Chunk120356) return (0, Chunk255367.jsx)("div", {
-        className: Chunk580682.hubContainer,
+        className: Chunk971606.hubContainer,
         children: (0, Chunk255367.jsx)(Chunk258871.Z, {
           guild: require,
           channel: null != Chunk73800 ? Chunk73800 : Chunk984933.ZP.getDefaultChannel(require.id)
@@ -332,7 +332,7 @@ class eC extends Chunk73800.PureComponent {
       guild: t
     } = this.props;
     return (0, Chunk255367.jsxs)("nav", {
-      className: Chunk580682.container,
+      className: Chunk971606.container,
       onContextMenu: this.handleContextMenu,
       "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t.nj5gAQ, {
         guildName: null != (e = null == exports ? true : exports.name) ? module : ""
@@ -385,7 +385,7 @@ class eC extends Chunk73800.PureComponent {
       null != t && (0, m.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("1806"), n.e("7654"), n.e("58175"), n.e("44156"), n.e("8725"), n.e("6850"), n.e("58227"), n.e("54408"), n.e("42926"), n.e("20087"), n.e("60458"), n.e("87154"), n.e("33213"), n.e("65356")]).then(n.bind(n, 545135));
+        } = await Promise.all([n.e("1806"), n.e("36599"), n.e("7654"), n.e("58175"), n.e("44156"), n.e("58511"), n.e("6850"), n.e("58227"), n.e("54408"), n.e("42926"), n.e("20087"), n.e("40725"), n.e("87154"), n.e("33213"), n.e("23744")]).then(n.bind(n, 545135));
         return n => (0, r.jsx)(e, eE(eO({}, n), {
           guild: t
         }))
@@ -412,7 +412,7 @@ class eC extends Chunk73800.PureComponent {
     }), e_(this, "renderMenuPopout", async () => {
       let {
         default: e
-      } = await Promise.all([n.e("87154"), n.e("94617")]).then(n.bind(n, 859432));
+      } = await Promise.all([n.e("87154"), n.e("45141")]).then(n.bind(n, 859432));
       return t => {
         let {
           closePopout: n

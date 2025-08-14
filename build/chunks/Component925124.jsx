@@ -20,8 +20,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk232867 = require("./232867.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk743549 = require("./743549.js"),
-  Chunk881291 = require("./881291.js");
+  Chunk711322 = require("./711322.js"),
+  Chunk451429 = require("./451429.js");
 let y = async () => {
   try {
     let {
@@ -474,10 +474,8 @@ function w() {
   } = (0, Chunk232867.m)();
   Chunk73800.useEffect(() => {
     F()
-  }, [F]);
-  let U = e => e.filter(e => e.sourceType === v.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date);
-  Chunk73800.useEffect(() => {
-    L(U(B))
+  }, [F]), Chunk73800.useEffect(() => {
+    L(B.filter(e => e.sourceType === v.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
   }, [B]), Chunk73800.useEffect(() => {
     (0 === module.length || 0 === require.length || k) && y().then(e => {
       let a = Object.keys(e.trial).map(t => ({
@@ -495,32 +493,32 @@ function w() {
       N(e.trial.sort((e, t) => e.id.localeCompare(t.id))), I(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
   }, [k]);
-  let z = async () => {
+  let U = async () => {
     null != i && (await C(i, "trial"), R(true))
-  }, G = async () => {
+  }, z = async () => {
     null != Chunk572004 && (await C(Chunk572004, "discount"), R(true))
-  }, V = async () => {
+  }, G = async () => {
     await T(), R(true)
-  }, H = async () => {
+  }, V = async () => {
     let e = new Date(Date.now() + 60 * Z * 1e3).toISOString();
     await E(module), F()
   };
   return (0, Chunk255367.jsx)(Chunk481060.zJl, {
-    className: Chunk881291.panel,
+    className: Chunk451429.panel,
     children: (0, Chunk255367.jsxs)("div", {
-      className: Chunk743549.panelInner,
+      className: Chunk711322.panelInner,
       children: [(0, Chunk255367.jsxs)("section", {
-        className: Chunk743549.section,
+        className: Chunk711322.section,
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: "Utils"
         }), (0, Chunk255367.jsxs)("div", {
-          className: Chunk743549.buttons,
+          className: Chunk711322.buttons,
           children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
             variant: "primary",
             size: "sm",
             text: "Clear all User Offers",
-            onClick: V
+            onClick: G
           }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
             variant: "primary",
             size: "sm",
@@ -539,14 +537,14 @@ function w() {
           })]
         })]
       }), (0, Chunk255367.jsxs)("section", {
-        className: Chunk743549.section,
+        className: Chunk711322.section,
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: "Create a Trial Offer"
         }), (0, Chunk255367.jsxs)("div", {
-          className: Chunk743549.inputRow,
+          className: Chunk711322.inputRow,
           children: [(0, Chunk255367.jsx)(Chunk481060.PhF, {
-            className: Chunk743549.input,
+            className: Chunk711322.input,
             options: module,
             isSelected: e => i === e,
             placeholder: "Trial Type",
@@ -556,18 +554,18 @@ function w() {
           }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: "Create",
-            onClick: z
+            onClick: U
           })]
         })]
       }), (0, Chunk255367.jsxs)("section", {
-        className: Chunk743549.section,
+        className: Chunk711322.section,
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: "Create a Discount Offer"
         }), (0, Chunk255367.jsxs)("div", {
-          className: Chunk743549.inputRow,
+          className: Chunk711322.inputRow,
           children: [(0, Chunk255367.jsx)(Chunk481060.PhF, {
-            className: Chunk743549.input,
+            className: Chunk711322.input,
             options: require,
             isSelected: e => x === e,
             placeholder: "Discount Type",
@@ -577,11 +575,11 @@ function w() {
           }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: "Create",
-            onClick: G
+            onClick: z
           })]
         })]
       }), Chunk474936.length > 0 && (0, Chunk255367.jsxs)("section", {
-        className: Chunk743549.section,
+        className: Chunk711322.section,
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: "Existing Trial Offers"
@@ -591,7 +589,7 @@ function w() {
           forceRefetch: () => R(true)
         }, t.id))]
       }), w.length > 0 && (0, Chunk255367.jsxs)("section", {
-        className: Chunk743549.section,
+        className: Chunk711322.section,
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: "Existing Discount Offers"
@@ -601,14 +599,14 @@ function w() {
           forceRefetch: () => R(true)
         }, e.id))]
       }), (0, Chunk255367.jsxs)("section", {
-        className: Chunk743549.section,
+        className: Chunk711322.section,
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: "Create a Reverse Trial Entitlement"
         }), (0, Chunk255367.jsxs)("div", {
-          className: Chunk743549.inputRow,
+          className: Chunk711322.inputRow,
           children: [(0, Chunk255367.jsx)(Chunk481060.PhF, {
-            className: Chunk743549.input,
+            className: Chunk711322.input,
             options: [{
               label: "5 minutes",
               value: 5
@@ -630,7 +628,7 @@ function w() {
           }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: "Create",
-            onClick: H
+            onClick: V
           })]
         })]
       }), D.length > 0 && (0, Chunk255367.jsxs)("div", {

@@ -32,7 +32,7 @@ function u(e, t, n, i) {
         })
       }, t), n
     }(t.map(y), [t, y, ...u]),
-    g = function(e) {
+    h = function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
         [n, i] = r.useState(e),
         l = r.useRef(e);
@@ -48,7 +48,7 @@ function u(e, t, n, i) {
   r.useEffect(() => {
     p.current = n
   }, [n]);
-  let h = r.useMemo(() => {
+  let g = r.useMemo(() => {
     let {
       throttleMs: e = 200,
       throttleLeading: t = true,
@@ -112,8 +112,8 @@ function u(e, t, n, i) {
     }), f.current
   }, [i]);
   return r.useEffect(() => {
-    h(e, g, m)
-  }, [h, e, g, m, ...u]), r.useEffect(() => () => {
+    g(e, h, m)
+  }, [g, e, h, m, ...u]), r.useEffect(() => () => {
     null != f.current && f.current.cancel(), f.current = null, d.current = null
-  }, [m, n, i]), h
+  }, [m, n, i]), g
 }

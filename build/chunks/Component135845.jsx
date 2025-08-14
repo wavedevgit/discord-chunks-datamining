@@ -22,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk245335 = require("./245335.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk664643 = require("./664643.js");
+  Chunk105341 = require("./105341.js");
 
 function v(e) {
   let t, n, o, {
@@ -45,10 +45,10 @@ function v(e) {
   a()(null != v, "Invite cannot be null");
   let {
     target_type: M,
-    target_user: j
+    target_user: k
   } = v;
-  a()(M === b.Iq.STREAM && null != j, "invalid streaming invite");
-  let k = I === j.id,
+  a()(M === b.Iq.STREAM && null != k, "invalid streaming invite");
+  let j = I === k.id,
     U = v.state === E.r2o.ACCEPTING,
     G = i.useCallback(() => {
       let e = "noop";
@@ -65,10 +65,10 @@ function v(e) {
     T = (0, h.Qs)(v.guild)
   }
   let Z = null != v.channel ? (0, f.jD)(v.channel) : null,
-    F = m.ZP.getName(j);
-  B && !x ? o = k ? y.intl.string(y.t.oBLoZG) : y.intl.formatToPlainString(y.t["0QJmAw"], {
+    F = m.ZP.getName(k);
+  B && !x ? o = j ? y.intl.string(y.t.oBLoZG) : y.intl.formatToPlainString(y.t["0QJmAw"], {
     name: F
-  }) : (t = y.intl.string(y.t["I6JG4+"]), n = d.Z.Button.Colors.GREEN, L && (t = y.intl.string(y.t["Q1W99/"]), n = d.Z.Button.Colors.PRIMARY), o = k ? y.intl.string(y.t["4hyaHh"]) : y.intl.formatToPlainString(y.t.QmlLEh, {
+  }) : (t = y.intl.string(y.t["I6JG4+"]), n = d.Z.Button.Colors.GREEN, L && (t = y.intl.string(y.t["Q1W99/"]), n = d.Z.Button.Colors.PRIMARY), o = j ? y.intl.string(y.t["4hyaHh"]) : y.intl.formatToPlainString(y.t.QmlLEh, {
     name: F
   }));
   let V = R === T.id && null != Z ? (0, r.jsx)(d.Z.Channel, {

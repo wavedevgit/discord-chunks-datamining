@@ -39,7 +39,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk151189 = require("./151189.jsx"),
   Chunk611480 = require("./611480.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk102873 = require("./102873.js");
+  Chunk349778 = require("./349778.js");
 
 function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -154,13 +154,13 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         } = t;
         switch (e.type) {
           case C.al.CREATE_STICKER:
-            O.default.track(k.rMx.OPEN_MODAL, {
-              type: k.jXE.CREATE_STICKER_MODAL,
+            O.default.track(j.rMx.OPEN_MODAL, {
+              type: j.jXE.CREATE_STICKER_MODAL,
               location: Z
             }), (0, u.ZDy)(async () => {
               let {
                 default: t
-              } = await Promise.all([n.e("93626"), n.e("72865")]).then(n.bind(n, 136735));
+              } = await Promise.all([n.e("12830"), n.e("93626"), n.e("46311")]).then(n.bind(n, 136735));
               return n => (0, r.jsx)(t, B({
                 guildId: e.guild_id
               }, n))
@@ -183,7 +183,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         onGridItemSelect: eC,
         store: p.ZN,
         setInspectedStickerPosition: p.ZN.setInspectedExpressionPosition,
-        gridNavigatorId: j.Vr
+        gridNavigatorId: k.Vr
       });
     i.useEffect(() => p.ZN.resetStoreState, []);
     let ex = () => {
@@ -213,8 +213,8 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       null == (e = er.current) || e.focus()
     }, []);
     let eM = i.useCallback(() => {
-      G(), O.default.track(k.rMx.PREMIUM_PROMOTION_OPENED, {
-        location_section: k.jXE.STICKER_PICKER_UPSELL
+      G(), O.default.track(j.rMx.PREMIUM_PROMOTION_OPENED, {
+        location_section: j.jXE.STICKER_PICKER_UPSELL
       }), (0, g.z)()
     }, [G]);
     return (0, r.jsxs)(_.Gt, {
@@ -234,7 +234,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         children: [(0, r.jsx)("div", F(B({
           ref: X,
           className: U.listWrapper,
-          id: j.Vr
+          id: k.Vr
         }, ew), {
           children: null != eu ? (0, r.jsx)(D.Z, {
             ref: ee,
@@ -263,8 +263,8 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
   }),
   ei = (e, t) => ((0, A.fP)(), (0, r.jsx)("div", {
     className: U.wrapper,
-    id: j.nZ,
-    "aria-labelledby": j.ED,
+    id: k.nZ,
+    "aria-labelledby": k.ED,
     role: "tabpanel",
     children: e.isLoading ? (0, r.jsx)(u.$jN, {
       className: U.loadingIndicator

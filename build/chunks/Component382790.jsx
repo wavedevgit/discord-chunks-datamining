@@ -17,7 +17,7 @@ var i, Chunk255367 = require("./255367.js"),
   Chunk483962 = require("./483962.jsx"),
   Chunk711553 = require("./711553.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk680305 = require("./680305.js");
+  Chunk585816 = require("./585816.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -53,8 +53,8 @@ class b extends(i = Chunk73800.PureComponent) {
       children: (0, Chunk255367.jsx)(Chunk483962.Z, {})
     }), l = require ? "div" : Chunk518084.ZP;
     return (0, Chunk255367.jsxs)(Chunk120356, {
-      className: s()(Chunk680305.base, {
-        [Chunk680305.widget]: !require
+      className: s()(Chunk585816.base, {
+        [Chunk585816.widget]: !require
       }, i),
       children: [(0, Chunk255367.jsx)(Chunk416568.Z, {
         isOverlay: true,

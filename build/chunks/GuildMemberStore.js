@@ -73,8 +73,8 @@ let R = new Chunk710845.Z("GuildMemberStore"),
   L = {},
   x = {},
   M = false,
-  j = 0,
   k = 0,
+  j = 0,
   U = {},
   G = {},
   B = {
@@ -100,7 +100,7 @@ function F(e, t) {
 }
 
 function V(e) {
-  j += 1, U[e] = j
+  k += 1, U[e] = k
 }
 
 function H(e) {
@@ -440,7 +440,7 @@ function ep(e, t) {
       unusualDMActivityUntil: null != (i = t.unusual_dm_activity_until) ? i : null == o ? true : o.unusualDMActivityUntil,
       collectibles: (0, d.Xm)(t.collectibles)
     }), Z(e, n[t.user.id])
-  }), k++, true)
+  }), j++, true)
 }
 
 function eh(e) {
@@ -479,7 +479,7 @@ function eE(e) {
 function eb(e, t) {
   let n = P[e];
   if (null == n || null == n[t]) returnfalse;
-  delete n[t], F(e, t), k++
+  delete n[t], F(e, t), j++
 }
 
 function ey(e) {
@@ -803,7 +803,7 @@ class ex extends(r = Chunk442837.ZP.Store) {
     return x
   }
   getCommunicationDisabledVersion() {
-    return j
+    return k
   }
   getPendingRoleUpdates(e) {
     var t;
@@ -816,7 +816,7 @@ class ex extends(r = Chunk442837.ZP.Store) {
     return null == a ? i : o().difference(o().union(i, a.added), a.removed)
   }
   getMemberVersion() {
-    return k
+    return j
   }
 }
 S(ex, "displayName", "GuildMemberStore");

@@ -23,13 +23,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk396678 = require("./396678.js"),
   Chunk37113 = require("./37113.js"),
   Chunk65154 = require("./65154.js"),
-  Chunk676462 = require("./676462.js"),
+  Chunk637824 = require("./637824.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk473866 = require("./473866.js");
+  Chunk214795 = require("./214795.js");
 
 function O() {
   return (0, Chunk255367.jsx)("span", {
-    className: Chunk473866.ellipsis,
+    className: Chunk214795.ellipsis,
     children: "•"
   })
 }
@@ -75,9 +75,9 @@ function Z(e) {
   } = (0, h.a)({
     location: "go_live_modal_refresh",
     autoTrackExposure: false
-  }), [A, M] = (0, u.Ls)(b.h7.AUDIO_INPUT, {
+  }), [A, M] = (0, u.Ls)(S.h7.AUDIO_INPUT, {
     location: "StreamSettingsSummary"
-  }), k = A.concat(M), [L, D] = null != (i = (0, v.Z)(g)) ? i : [Z, w], B = (0, p.L)(g), U = (0, x.M)(L), G = E === s.vA.CAMERA, W = null != T || !!R && (!d || G), F = null != T ? null == T || null == (t = T.id) ? true : t.startsWith(s.vA.CAMERA) : G, H = W ? true : g === j.tI.PRESET_VIDEO ? C.intl.string(S.default.MuHUFR) : g === j.tI.PRESET_DOCUMENTS ? C.intl.string(S.default.y0JuYW) : true, z = (0, o.e7)([f.Z], () => f.Z.getUseSystemScreensharePicker() && (0, m.isLinux)());
+  }), k = A.concat(M), [L, D] = null != (i = (0, v.Z)(g)) ? i : [Z, w], B = (0, p.L)(g), U = (0, x.M)(L), G = E === s.vA.CAMERA, W = null != T || !!R && (!d || G), F = null != T ? null == T || null == (t = T.id) ? true : t.startsWith(s.vA.CAMERA) : G, H = W ? true : g === j.tI.PRESET_VIDEO ? C.intl.string(b.default.MuHUFR) : g === j.tI.PRESET_DOCUMENTS ? C.intl.string(b.default.y0JuYW) : true, z = (0, o.e7)([f.Z], () => f.Z.getUseSystemScreensharePicker() && (0, m.isLinux)());
   return (0, r.jsxs)("div", {
     className: y.root,
     children: [W && (0, r.jsx)(I, {
@@ -88,7 +88,7 @@ function Z(e) {
         className: y.sourceOrPresetName,
         variant: "text-md/semibold",
         color: "header-primary",
-        children: W ? null != (c = null == T ? true : T.name) ? c : C.intl.string(S.default["hJMA+/"]) : B
+        children: W ? null != (c = null == T ? true : T.name) ? c : C.intl.string(b.default["hJMA+/"]) : B
       }), (0, r.jsxs)(a.Text, {
         className: y.summaryDetail,
         variant: "text-xs/medium",
@@ -117,10 +117,10 @@ function Z(e) {
               className: l()(y.icon, y.mutedIcon),
               size: "xxs",
               color: "currentColor"
-            }), C.intl.string(S.default.FzMGWV)]
+            }), C.intl.string(b.default.FzMGWV)]
           })]
         }), !N && !F && z && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(O, {}), C.intl.string(S.default["n9/rUl"])]
+          children: [(0, r.jsx)(O, {}), C.intl.string(b.default["n9/rUl"])]
         }), F ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(O, {}), (0, r.jsx)("span", {
             children: null == (n = k.find(e => {

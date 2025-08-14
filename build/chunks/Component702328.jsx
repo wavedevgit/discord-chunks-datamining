@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 702328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => H
@@ -41,8 +41,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
-  Chunk529020 = require("./529020.js"),
-  Chunk408217 = require("./408217.js"),
+  Chunk379039 = require("./379039.js"),
+  Chunk810392 = require("./810392.js"),
   Chunk107283 = require("./107283.js");
 let H = () => {
   (0, Chunk214852.z)(Chunk433811.X);
@@ -88,26 +88,26 @@ let H = () => {
       plans: ej,
       compare: eE
     } = eh,
-    eC = em ? Chunk529020 : Chunk408217,
+    eC = em ? Chunk379039 : Chunk810392,
     eO = (0, Chunk255367.jsxs)("div", {
       className: a()(eC.container, eC.responsiveContainer, {
         [eC.containerBackground]: em || K,
-        [Chunk529020.fadeInFromTop]: !W && em
+        [Chunk379039.fadeInFromTop]: !W && em
       }),
       "data-cy": "tier-0-marketing-page",
       children: [em && (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
         children: [(0, Chunk255367.jsx)(Chunk306066.Z, {
-          className: Chunk529020.topOfPageGradient
+          className: Chunk379039.topOfPageGradient
         }), (0, Chunk255367.jsx)(Chunk457227.Z, {
           navBarSections: eh,
           activeSectionId: ef
         })]
       }), !em && (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
         children: [(0, Chunk255367.jsx)("div", {
-          className: Chunk408217.heroHeaderSideGradient
+          className: Chunk810392.heroHeaderSideGradient
         }), (0, Chunk255367.jsx)("img", {
           src: Chunk107283,
-          className: Chunk408217.heroHeaderBackgroundStars,
+          className: Chunk810392.heroHeaderBackgroundStars,
           alt: ""
         })]
       }), (0, Chunk255367.jsxs)("div", {
@@ -181,7 +181,7 @@ let H = () => {
       }), (0, Chunk255367.jsx)(Chunk622535.$, {
         innerRef: H,
         onChange: e => {
-          e && !et && (x.default.track(B.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+          e && !et && (x.default.track(M.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: eu
           }), en(true))
         },
@@ -209,7 +209,7 @@ let H = () => {
           subscriptionTier: eo,
           isEligibleForBogoPromotion: ec
         }), (0, Chunk255367.jsx)(Chunk306066.Z, {
-          className: Chunk529020.bottomOfPageGradient
+          className: Chunk379039.bottomOfPageGradient
         })]
       })]
     });

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => M,
-  d: () => j
+  d: () => k
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -32,7 +32,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk302463 = require("./302463.js"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk182753 = require("./182753.js");
+  Chunk829675 = require("./829675.js");
 
 function w(e) {
   let {
@@ -97,8 +97,8 @@ function M() {
     }));
   if (null == Chunk120356 || null == exports) return null;
   let M = L(a),
-    j = x(a),
-    k = require === Chunk176505.oC.GUILD_ONBOARDING,
+    k = x(a),
+    j = require === Chunk176505.oC.GUILD_ONBOARDING,
     U = e => {
       let {
         backToSettings: n
@@ -107,28 +107,28 @@ function M() {
     };
   return (0, Chunk255367.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.BRAND,
-    className: Chunk182753.notice,
+    className: Chunk829675.notice,
     children: [(0, Chunk255367.jsxs)(w, {
       onClick: () => U({
         backToSettings: true
       }),
-      className: Chunk182753.backButton,
+      className: Chunk829675.backButton,
       children: [(0, Chunk255367.jsx)(Chunk671533.Z, {
         width: 16,
         height: 16,
         direction: Chunk671533.Z.Directions.LEFT,
-        className: Chunk182753.backArrow
+        className: Chunk829675.backArrow
       }), M]
-    }), k && Chunk755721 ? (0, Chunk255367.jsx)("div", {
-      className: Chunk182753.noticeContents,
+    }), j && Chunk755721 ? (0, Chunk255367.jsx)("div", {
+      className: Chunk829675.noticeContents,
       children: (0, Chunk255367.jsx)("div", {
-        className: Chunk182753.noticeText,
+        className: Chunk829675.noticeText,
         children: Chunk388032.intl.string(Chunk388032.t.PxbiAQ)
       })
     }) : (0, Chunk255367.jsxs)("div", {
-      className: Chunk182753.noticeContents,
+      className: Chunk829675.noticeContents,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk182753.noticeText,
+        className: Chunk829675.noticeText,
         children: Chunk755721 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["0PHahI"], {
           numRoles: Object.keys(Chunk120356).length
         }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.vMlK8v, {
@@ -147,7 +147,7 @@ function M() {
           return (0, r.jsxs)(w, {
             onClick: n,
             buttonRef: e,
-            children: [j, (0, r.jsx)(y.Z, {
+            children: [k, (0, r.jsx)(y.Z, {
               width: 16,
               height: 16,
               direction: y.Z.Directions.DOWN,
@@ -156,14 +156,14 @@ function M() {
           })
         }
       }), Chunk755721 && (0, Chunk255367.jsx)(Chunk481060.DY3, {
-        className: Chunk182753.previewWarning,
+        className: Chunk829675.previewWarning,
         text: Chunk388032.intl.string(Chunk388032.t.mW4DUF),
         children: (0, Chunk255367.jsx)(Chunk481060.Mgn, {
           size: "xs",
           color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css
         })
       }), Chunk358085 && (0, Chunk255367.jsx)(Chunk481060.DY3, {
-        className: Chunk182753.previewWarning,
+        className: Chunk829675.previewWarning,
         text: Chunk388032.intl.formatToPlainString(Chunk388032.t.eummvb, {
           maxTiers: Chunk293810.fF,
           maxProducts: Chunk302463.dD
@@ -181,7 +181,7 @@ function M() {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     guildId: t
   } = e;

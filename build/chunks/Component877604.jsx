@@ -1,13 +1,13 @@
 /** Chunk was on 86383 **/
 /** chunk id: 877604, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => c
 }), require("./415506.js");
 var s, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
-  Chunk216224 = require("./216224.js");
+  Chunk156578 = require("./156578.js");
 
 function l(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
@@ -17,19 +17,19 @@ function l(t, e, i) {
     writable: true
   }) : t[e] = i, t
 }
-let d = t => new Promise((e, i) => {
-  null == t && i(Error("No image src passed"));
-  let s = new Image;
-  s.src = t, s.onload = () => e(s), s.onerror = t => i(t)
-});
-class c extends(s = Chunk73800.PureComponent) {
+class d extends(s = Chunk73800.PureComponent) {
   componentDidUpdate(t) {
     t.src !== this.props.src && this.setState({
       loaded: false
     }, () => this.initialize())
   }
   initialize() {
-    d(this.props.src).then(() => {
+    let t;
+    (t = this.props.src, new Promise((e, i) => {
+      null == t && i(Error("No image src passed"));
+      let s = new Image;
+      s.src = t, s.onload = () => e(s), s.onerror = t => i(t)
+    })).then(() => {
       this.unmounting || this.setState({
         loaded: true
       })
@@ -79,8 +79,8 @@ class c extends(s = Chunk73800.PureComponent) {
         Object.defineProperty(t, i, Object.getOwnPropertyDescriptor(e, i))
       }), module),
       children: (0, Chunk255367.jsx)("img", {
-        className: r()(Chunk216224.image, p, {
-          [Chunk216224.loaded]: f
+        className: r()(Chunk156578.image, p, {
+          [Chunk156578.loaded]: f
         }),
         width: Chunk120356,
         height: d,
@@ -96,9 +96,9 @@ class c extends(s = Chunk73800.PureComponent) {
     }), this.initialize()
   }
 }
-l(c, "defaultProps", {
+l(d, "defaultProps", {
   width: 0,
   height: 0,
   alt: ""
 });
-let u = c
+let c = d

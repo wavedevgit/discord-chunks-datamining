@@ -40,34 +40,12 @@ let A = (0, Chunk108843.Z)(function(e) {
       A(false)
     }
   }
-  let L = e => {
-      switch (e) {
-        case P.oAB.GAMES:
-          return x;
-        case P.oAB.STREAMER_MODE:
-          return D;
-        case P.oAB.APPEARANCE:
-          return I;
-        case P.oAB.ACCESSIBILITY:
-          return _;
-        case P.oAB.VOICE:
-          return T;
-        case P.oAB.TEXT:
-          return Z;
-        case P.oAB.EXPERIMENTS:
-          return N;
-        case P.oAB.DEVELOPER_OPTIONS:
-          return m;
-        default:
-          return null
-      }
-    },
-    V = (0, p.VO)().filter(e => {
-      let {
-        section: t
-      } = e;
-      return t !== c.ID.HEADER && t !== c.ID.CUSTOM && t !== c.ID.DIVIDER && "logout" !== t
-    }).filter(e => null == e.predicate || e.predicate());
+  let L = (0, p.VO)().filter(e => {
+    let {
+      section: t
+    } = e;
+    return t !== c.ID.HEADER && t !== c.ID.CUSTOM && t !== c.ID.DIVIDER && "logout" !== t
+  }).filter(e => null == e.predicate || e.predicate());
   return (0, a.jsx)(d.Gt, {
     value: k,
     children: (0, a.jsxs)(i.v2r, {
@@ -76,7 +54,7 @@ let A = (0, Chunk108843.Z)(function(e) {
       "aria-label": w.intl.string(w.t.opYYHh),
       onSelect: n,
       onInteraction: s,
-      children: [V.map(e => {
+      children: [L.map(e => {
         var t, n;
         let {
           section: l,
@@ -111,7 +89,28 @@ let A = (0, Chunk108843.Z)(function(e) {
             })
           }(l, k)
         }), n = n = {
-          children: L(l)
+          children: (e => {
+            switch (e) {
+              case P.oAB.GAMES:
+                return x;
+              case P.oAB.STREAMER_MODE:
+                return D;
+              case P.oAB.APPEARANCE:
+                return I;
+              case P.oAB.ACCESSIBILITY:
+                return _;
+              case P.oAB.VOICE:
+                return T;
+              case P.oAB.TEXT:
+                return Z;
+              case P.oAB.EXPERIMENTS:
+                return N;
+              case P.oAB.DEVELOPER_OPTIONS:
+                return m;
+              default:
+                return null
+            }
+          })(l)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

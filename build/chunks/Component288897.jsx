@@ -23,8 +23,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk704875 = require("./704875.jsx"),
   Chunk653309 = require("./653309.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk421542 = require("./421542.js"),
-  Chunk692228 = require("./692228.js");
+  Chunk115488 = require("./115488.js"),
+  Chunk430864 = require("./430864.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -367,14 +367,14 @@ class P extends Chunk73800.PureComponent {
       ref: this.containerRef,
       className: Chunk73800,
       children: [this.state.showPlaceholder ? (0, Chunk255367.jsx)("div", {
-        className: a()(Chunk421542.placeholder, require),
+        className: a()(Chunk115488.placeholder, require),
         "aria-hidden": true,
         children: Chunk40851
       }) : null, (0, Chunk255367.jsx)(Chunk650557.mH, {
         editor: exports,
         value: [...this.state.initialValue],
         children: (0, Chunk255367.jsx)(Chunk650557.CX, N(S({}, Chunk653309), {
-          className: a()(Chunk692228.markup, Chunk421542.editor, require),
+          className: a()(Chunk430864.markup, Chunk115488.editor, require),
           decorate: this.decorate,
           renderElement: this.renderElement,
           renderLeaf: this.renderLeaf,

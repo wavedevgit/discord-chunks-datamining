@@ -1,7 +1,7 @@
 /** Chunk was on 5863 **/
 /** chunk id: 406205, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => O
 }), require("./388685.js"), require("./997841.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -20,7 +20,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk490897 = require("./490897.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk660418 = require("./660418.js"),
+  Chunk407937 = require("./407937.js"),
   Chunk650455 = require("./650455.js");
 
 function b(e) {
@@ -54,42 +54,38 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = () => [{
-  value: Chunk686660.s8.ALL_MESSAGES,
-  name: Chunk388032.intl.string(Chunk388032.t.hZrr6u)
-}, {
-  value: Chunk686660.s8.MENTIONS,
-  name: Chunk388032.intl.string(Chunk388032.t.y59NJi)
-}, {
-  value: Chunk686660.s8.NOTHING,
-  name: Chunk388032.intl.string(Chunk388032.t["pGn/bG"])
-}, {
-  value: Chunk686660.s8.CUSTOM,
-  name: Chunk388032.intl.string(Chunk388032.t["32yow8"])
-}];
 
-function E(e) {
+function O(e) {
   let {
     guildId: t
   } = e, n = (0, a.e7)([c.ZP], () => c.ZP.getGuildFlags(t)), l = (0, a.e7)([c.ZP], () => {
     let e = c.ZP.getGuildUnreadSetting(t),
       n = c.ZP.getMessageNotifications(t);
     return e === v.i.UNSET ? n === p.bL.ALL_MESSAGES ? v.i.ALL_MESSAGES : v.i.ONLY_MENTIONS : e
-  }), r = (0, a.e7)([c.ZP], () => c.ZP.getMessageNotifications(t)), [f, E] = (0, s.useState)(false), L = f ? x.s8.CUSTOM : (0, x.gs)(l, r), T = e => {
-    if (e === x.s8.CUSTOM) return void E(true);
-    E(false), (0, g.V)(t, e)
-  };
+  }), r = (0, a.e7)([c.ZP], () => c.ZP.getMessageNotifications(t)), [f, O] = (0, s.useState)(false), _ = f ? x.s8.CUSTOM : (0, x.gs)(l, r);
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)("div", {
       className: N.segmentedControlsContainer,
       children: (0, i.jsx)(o.sY7, {
-        value: L,
-        options: O(),
+        value: _,
+        options: [{
+          value: x.s8.ALL_MESSAGES,
+          name: S.intl.string(S.t.hZrr6u)
+        }, {
+          value: x.s8.MENTIONS,
+          name: S.intl.string(S.t.y59NJi)
+        }, {
+          value: x.s8.NOTHING,
+          name: S.intl.string(S.t["pGn/bG"])
+        }, {
+          value: x.s8.CUSTOM,
+          name: S.intl.string(S.t["32yow8"])
+        }],
         onChange: e => {
           let {
-            value: t
+            value: n
           } = e;
-          return T(t)
+          return n === x.s8.CUSTOM ? void O(true) : (O(false), void(0, g.V)(t, n))
         },
         className: N.segmentedControl,
         look: "pill"
@@ -100,9 +96,9 @@ function E(e) {
       className: N.customPresetsContainer,
       children: [(0, i.jsxs)("div", {
         className: N.grid,
-        children: [(0, i.jsx)(Z, {
+        children: [(0, i.jsx)(E, {
           unreadSetting: l
-        }), (0, i.jsx)(_, {
+        }), (0, i.jsx)(Z, {
           notificationSetting: r
         })]
       }), (0, i.jsxs)("div", {
@@ -134,7 +130,7 @@ function E(e) {
           value: l,
           className: N.input,
           onChange: e => {
-            E(false), d.Z.updateGuildNotificationSettings(t, {
+            O(false), d.Z.updateGuildNotificationSettings(t, {
               flags: (0, h.Q4)(n, e === v.i.ALL_MESSAGES ? j.vc.UNREADS_ALL_MESSAGES : j.vc.UNREADS_ONLY_MENTIONS)
             }, u.UE.unreads(e))
           },
@@ -166,7 +162,7 @@ function E(e) {
           className: N.input,
           value: r,
           onChange: e => {
-            E(false);
+            O(false);
             let n = {
               message_notifications: e
             };
@@ -199,7 +195,7 @@ function E(e) {
   })
 }
 
-function Z(e) {
+function E(e) {
   let {
     unreadSetting: t
   } = e, n = [{
@@ -252,7 +248,7 @@ function Z(e) {
   })
 }
 
-function _(e) {
+function Z(e) {
   return (0, i.jsxs)("div", {
     className: N.mockMessage,
     children: [e.notificationSetting === p.bL.NO_MESSAGES && (0, i.jsx)("div", {

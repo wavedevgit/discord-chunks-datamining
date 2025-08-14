@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 98597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   CN: () => N,
@@ -10,7 +10,7 @@ require.d(exports, {
 var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk787014 = require("./787014.js"),
@@ -28,9 +28,9 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk281029 = require("./281029.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk81252 = require("./81252.js");
+  Chunk55940 = require("./55940.js");
 
-function x(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,20 +39,20 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
 }
 
-function P(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,11 +66,11 @@ function P(e, t) {
 }
 
 function N(e, t, n) {
-  return null != t && !!t && !(0, v.ig)(n, e.type)
+  return null != t && !!t && !(0, j.ig)(n, e.type)
 }
 
 function w(e, t) {
-  return null == t ? S.containerDefault : e > t ? S.containerDragAfter : S.containerDragBefore
+  return null == t ? x.containerDefault : e > t ? x.containerDragAfter : x.containerDragBefore
 }
 
 function Z(e) {
@@ -85,23 +85,23 @@ function Z(e) {
     children: e => {
       let {
         onMouseEnter: o,
-        onMouseLeave: a,
+        onMouseLeave: s,
         onFocus: u,
         onBlur: d
       } = e;
       return (0, i.jsx)(c.P3F, {
-        className: s()(S.iconItem, n ? S.alwaysShown : true, r ? S.iconWithChannelInfo : S.iconNoChannelInfo),
+        className: a()(x.iconItem, n ? x.alwaysShown : true, r ? x.iconWithChannelInfo : x.iconNoChannelInfo),
         onClick: l,
         tabIndex: t,
         "aria-label": E.intl.string(E.t.OBr7Cw),
         onMouseEnter: o,
-        onMouseLeave: a,
+        onMouseLeave: s,
         onFocus: u,
         onBlur: d,
         children: (0, i.jsx)(c.xhG, {
           size: "xs",
           color: "currentColor",
-          className: S.actionIcon
+          className: x.actionIcon
         })
       })
     }
@@ -116,7 +116,7 @@ function T(e) {
     forceShowButtons: l,
     hasChannelInfo: o = false
   } = e;
-  if ((0, a.e7)([y.Z, C.Z], () => n || C.Z.getGuildId() === j.I_8 || !y.Z.can(j.Plq.MANAGE_CHANNELS, t) && !y.Z.can(j.Plq.MANAGE_ROLES, t) && !y.Z.can(j.Plq.MANAGE_WEBHOOKS, t) || (0, b.r8)(t.type) && !y.Z.can(j.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !y.Z.can(j.Plq.CONNECT, t) || !b.dF.has(t.type) || t.isModeratorReportChannel())) return null;
+  if ((0, s.e7)([y.Z, v.Z], () => n || v.Z.getGuildId() === C.I_8 || !y.Z.can(C.Plq.MANAGE_CHANNELS, t) && !y.Z.can(C.Plq.MANAGE_ROLES, t) && !y.Z.can(C.Plq.MANAGE_WEBHOOKS, t) || (0, b.r8)(t.type) && !y.Z.can(C.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !y.Z.can(C.Plq.CONNECT, t) || !b.dF.has(t.type) || t.isModeratorReportChannel())) return null;
 
   function d() {
     u.ZP.open(t.id)
@@ -127,22 +127,22 @@ function T(e) {
       let {
         onMouseEnter: t,
         onMouseLeave: n,
-        onFocus: a,
+        onFocus: s,
         onBlur: u
       } = e;
       return (0, i.jsx)(c.P3F, {
-        className: s()(S.iconItem, l ? S.alwaysShown : true, o ? S.iconWithChannelInfo : S.iconNoChannelInfo),
+        className: a()(x.iconItem, l ? x.alwaysShown : true, o ? x.iconWithChannelInfo : x.iconNoChannelInfo),
         onClick: d,
         tabIndex: r,
         "aria-label": E.intl.string(E.t["3gUsJS"]),
         onMouseEnter: t,
         onMouseLeave: n,
-        onFocus: a,
+        onFocus: s,
         onBlur: u,
         children: (0, i.jsx)(c.ewm, {
           size: "xs",
           color: "currentColor",
-          className: S.actionIcon
+          className: x.actionIcon
         })
       })
     }
@@ -155,36 +155,36 @@ function A(e) {
     isDefaultChannel: r = false,
     locked: o,
     tabIndex: u,
-    forceShowButtons: f,
+    forceShowButtons: h,
     hasChannelInfo: b = false
   } = e, {
-    entrypoints: C
-  } = (0, h._k)({
+    entrypoints: v
+  } = (0, p._k)({
     location: "channel_base"
-  }), v = (0, a.e7)([_.Z], () => _.Z.getGuild(t.getGuildId())), x = (0, a.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, a.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, a.e7)([y.Z], () => (0, p.b)(y.Z, v, t, x)), Z = (0, a.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTE) : E.intl.string(E.t.Sd8Ix8)), T = C ? E.intl.string(E.t["EE+P0N"]) : Z, A = l.useRef(null);
+  }), j = (0, s.e7)([_.Z], () => _.Z.getGuild(t.getGuildId())), S = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, s.e7)([y.Z], () => (0, f.b)(y.Z, j, t, S)), Z = (0, s.e7)([y.Z], () => y.Z.can(C.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTE) : E.intl.string(E.t.Sd8Ix8)), T = v ? E.intl.string(E.t["EE+P0N"]) : Z, A = l.useRef(null);
   if (o || !w || t.isModeratorReportChannel()) return null;
 
   function R() {
-    if (null != v) {
-      let e = O.Z.getAllActiveStreams().filter(e => e.state !== j.jm8.ENDED && e.channelId === t.id);
+    if (null != j) {
+      let e = O.Z.getAllActiveStreams().filter(e => e.state !== C.jm8.ENDED && e.channelId === t.id);
       (0, c.ZDy)(async () => {
         let {
           default: r
-        } = await Promise.all([n.e("7654"), n.e("41832")]).then(n.bind(n, 560114));
-        return n => (0, i.jsx)(r, P(I({}, n), {
-          guild: v,
+        } = await Promise.all([n.e("7654"), n.e("54833")]).then(n.bind(n, 560114));
+        return n => (0, i.jsx)(r, I(P({}, n), {
+          guild: j,
           channel: t,
           streamUserId: 1 === e.length ? e[0].ownerId : null,
-          source: j.t4x.GUILD_CHANNELS,
+          source: C.t4x.GUILD_CHANNELS,
           guildScheduledEvent: N
         }))
       })
     }
   }
-  let D = C ? c.oLu : c.ejJ,
+  let D = v ? c.oLu : c.ejJ,
     L = (0, i.jsx)(D, {
       size: "xs",
-      className: S.actionIcon,
+      className: x.actionIcon,
       "aria-hidden": true,
       color: "currentColor"
     });
@@ -198,8 +198,8 @@ function A(e) {
     })
   })), (0, i.jsx)(c.ua7, {
     text: T,
-    children: e => (0, i.jsx)(c.P3F, P(I({
-      className: s()(S.iconItem, f ? S.alwaysShown : true, b ? S.iconWithChannelInfo : S.iconNoChannelInfo)
+    children: e => (0, i.jsx)(c.P3F, I(P({
+      className: a()(x.iconItem, h ? x.alwaysShown : true, b ? x.iconWithChannelInfo : x.iconNoChannelInfo)
     }, e), {
       onClick: R,
       tabIndex: u,
@@ -213,19 +213,19 @@ function R(e) {
   let {
     channel: t
   } = e, n = () => {
-    (0, f._U)(t.guild_id, t.id)
+    (0, h._U)(t.guild_id, t.id)
   };
   return (0, i.jsx)(c.ua7, {
     text: E.intl.string(E.t.ROh4T0),
-    children: e => (0, i.jsx)(c.P3F, P(I({
-      className: S.iconItem
+    children: e => (0, i.jsx)(c.P3F, I(P({
+      className: x.iconItem
     }, e), {
       onClick: n,
       "aria-label": E.intl.string(E.t.ROh4T0),
       children: (0, i.jsx)(c.Dio, {
         size: "xs",
         color: "currentColor",
-        className: S.actionIcon
+        className: x.actionIcon
       })
     }))
   })
@@ -235,21 +235,21 @@ function D(e) {
   let {
     channel: t
   } = e, n = () => {
-    (0, f.dM)(t.guild_id, t.id, true, {
-      section: j.jXE.CHANNEL_LIST
+    (0, h.dM)(t.guild_id, t.id, true, {
+      section: C.jXE.CHANNEL_LIST
     })
   };
   return (0, i.jsx)(c.ua7, {
     text: E.intl.string(E.t["N2c/Ul"]),
-    children: e => (0, i.jsx)(c.P3F, P(I({
-      className: S.iconItem
+    children: e => (0, i.jsx)(c.P3F, I(P({
+      className: x.iconItem
     }, e), {
       onClick: n,
       "aria-label": E.intl.string(E.t["N2c/Ul"]),
       children: (0, i.jsx)(c.dz2, {
         size: "xs",
         color: "currentColor",
-        className: S.actionIcon
+        className: x.actionIcon
       })
     }))
   })
@@ -259,21 +259,21 @@ class L extends(r = Chunk73800.PureComponent) {
     let {
       onContextMenu: t
     } = e;
-    return (0, i.jsx)(Z, P(I({}, this.props), {
+    return (0, i.jsx)(Z, I(P({}, this.props), {
       onContextMenu: t
     }))
   }
   renderEditButton() {
-    return (0, Chunk255367.jsx)(T, I({}, this.props))
+    return (0, Chunk255367.jsx)(T, P({}, this.props))
   }
   renderInviteButton() {
-    return (0, Chunk255367.jsx)(A, I({}, this.props))
+    return (0, Chunk255367.jsx)(A, P({}, this.props))
   }
   renderRemoveSuggestionButton() {
-    return (0, Chunk255367.jsx)(R, I({}, this.props))
+    return (0, Chunk255367.jsx)(R, P({}, this.props))
   }
   renderAcceptSuggestionButton() {
-    return (0, Chunk255367.jsx)(D, I({}, this.props))
+    return (0, Chunk255367.jsx)(D, P({}, this.props))
   }
   getClassName() {
     let {
@@ -291,6 +291,6 @@ class L extends(r = Chunk73800.PureComponent) {
     return N(module, exports, require)
   }
 }
-x(L, "defaultProps", {
+S(L, "defaultProps", {
   isDefaultChannel: false
 })

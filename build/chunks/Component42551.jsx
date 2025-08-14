@@ -1,7 +1,7 @@
 /** Chunk was on 6850 **/
 /** chunk id: 42551, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => H
+  Z: () => _
 }), require("./388685.js"), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -21,15 +21,15 @@ var Chunk255367 = require("./255367.js"),
   Chunk527379 = require("./527379.js"),
   Chunk285173 = require("./285173.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk335265 = require("./335265.js"),
-  Chunk92006 = require("./92006.js");
+  Chunk115491 = require("./115491.js"),
+  Chunk266631 = require("./266631.js");
 let O = new Set;
 
-function H(e) {
+function _(e) {
   let {
     guildId: t,
     onClose: n
-  } = e, o = (0, f.BG)(t), a = (0, m.e7)([h.Z], () => h.Z.getSearchStateByGuildId(t), [t], C()), [c, d] = l.useState(a.selectedRoleIds), H = (0, p.h)(t, O, true), _ = (e, n) => {
+  } = e, o = (0, f.BG)(t), a = (0, m.e7)([h.Z], () => h.Z.getSearchStateByGuildId(t), [t], C()), [c, d] = l.useState(a.selectedRoleIds), _ = (0, p.h)(t, O, true), H = (e, n) => {
     let {
       record: l
     } = e;
@@ -56,30 +56,30 @@ function H(e) {
         })]
       })
     }, l.id)
-  }, w = (e, t) => H.reduce((n, r) => {
-    let {
-      record: l
-    } = r, o = e.has(l.id);
-    return s()(t.toLowerCase(), l.name.toLowerCase()) ? n.push(_(r, o)) : o && n.push(_(r, o)), n
-  }, []), N = l.useCallback(e => {
+  }, w = l.useCallback(e => {
     (0, j.Dr)(t, {
       selectedRoleIds: e
     }), o(e)
-  }, [t, o]), S = l.useMemo(() => u()(N, 300), [N]), Z = l.useCallback(e => {
+  }, [t, o]), N = l.useMemo(() => u()(w, 300), [w]), S = l.useCallback(e => {
     let t;
-    d(t = new Set(c.has(e) ? [...c].filter(t => t !== e) : [...c, e])), S(t)
-  }, [c, S]);
+    d(t = new Set(c.has(e) ? [...c].filter(t => t !== e) : [...c, e])), N(t)
+  }, [c, N]);
   return (0, r.jsx)(b.DBG, {
     className: v.rolePopout,
     placeholder: x.intl.string(x.t.ZveC7e),
     value: c,
-    onChange: Z,
+    onChange: S,
     onClose: () => {
       n()
     },
     multiSelect: true,
     showScrollbar: true,
     autoFocus: true,
-    children: e => w(c, e)
+    children: e => _.reduce((t, n) => {
+      let {
+        record: r
+      } = n, l = c.has(r.id);
+      return s()(e.toLowerCase(), r.name.toLowerCase()) ? t.push(H(n, l)) : l && t.push(H(n, l)), t
+    }, [])
   })
 }

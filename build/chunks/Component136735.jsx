@@ -1,7 +1,7 @@
 /** Chunk was on 93626 **/
 /** chunk id: 136735, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  default: () => L
+  default: () => U
 }), require("./388685.js"), require("./953529.js"), require("./35282.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -31,7 +31,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk611480 = require("./611480.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk143039 = require("./143039.js"),
+  Chunk491202 = require("./491202.js"),
   Chunk434227 = require("./434227.js"),
   Chunk600126 = require("./600126.js");
 let T = new Set(["application/json", "image/png", "image/apng", "image/gif", "image/jpeg", "image/jpg"]),
@@ -47,57 +47,27 @@ function z(e, t) {
   })
 }
 let A = e => {
-    let {
-      stickerPreview: t
-    } = e;
-    return (0, n.jsxs)("div", {
-      className: k.preview,
-      children: [(0, n.jsx)("div", {
-        className: k.previewDark,
-        children: null != t ? t : (0, n.jsx)("img", {
-          src: Z,
-          alt: D.intl.string(D.t.qOsjZm)
-        })
-      }), (0, n.jsx)("div", {
-        className: k.previewLight,
-        children: null != t ? t : (0, n.jsx)("img", {
-          src: R,
-          alt: D.intl.string(D.t.YC5NAA)
-        })
-      })]
-    })
-  },
-  B = e => {
-    let {
-      sticker: t,
-      previewData: l,
-      onStickerError: i
-    } = e;
-    if (null != t) return (0, n.jsx)(w.Z, {
-      size: 160,
-      sticker: t
-    });
-    if (null == l) return null;
-    let {
-      id: s,
-      formatType: r,
-      content: a
-    } = l;
-    return (0, n.jsx)(w.Z, {
-      assetData: a,
-      fileUri: a,
-      size: 160,
-      sticker: {
-        name: s,
-        description: "",
-        id: s,
-        pack_id: "",
-        format_type: r
-      },
-      onError: i
-    }, s)
-  };
-async function U(e) {
+  let {
+    stickerPreview: t
+  } = e;
+  return (0, n.jsxs)("div", {
+    className: k.preview,
+    children: [(0, n.jsx)("div", {
+      className: k.previewDark,
+      children: null != t ? t : (0, n.jsx)("img", {
+        src: Z,
+        alt: D.intl.string(D.t.qOsjZm)
+      })
+    }), (0, n.jsx)("div", {
+      className: k.previewLight,
+      children: null != t ? t : (0, n.jsx)("img", {
+        src: R,
+        alt: D.intl.string(D.t.YC5NAA)
+      })
+    })]
+  })
+};
+async function B(e) {
   let t = await (0, I.fD)(e),
     l = new Image;
   l.src = t, await l.decode();
@@ -105,8 +75,8 @@ async function U(e) {
   return (0, I.Bo)(n, e.name, "image/png")
 }
 
-function L(e) {
-  var t, l, s, o, w, Z, R, L;
+function U(e) {
+  var t, l, s, o, Z, R, U, L;
   let {
     transitionState: K,
     onClose: M,
@@ -115,7 +85,7 @@ function L(e) {
   } = e, Y = (0, u.e7)([p.ZP], () => (null == W ? true : W.tags) != null ? p.ZP.getCustomEmojiById(W.tags) : null), q = null != (l = null == (t = h.default.getCurrentUser()) ? true : t.isStaff()) && l ? C.OC : C.Ht, [G, J] = i.useState(null), [V, X] = i.useState(null != (s = null == W ? true : W.name) ? s : ""), [H, Q] = i.useState({
     file: null,
     filename: null != (o = (0, S._V)(W)) ? o : ""
-  }), [$, ee] = i.useState(null == Y ? true : Y.id), [et, el] = i.useState(null != (w = null == Y ? true : Y.name) ? w : null == W ? true : W.tags), [en, ei] = i.useState(null != (Z = null == W ? true : W.description) ? Z : ""), [es, er] = i.useState(false), [ea, eo] = i.useState(null), eu = (0, u.e7)([x.Z], () => x.Z.getGuild(F)), ec = (null == eu ? true : eu.features.has(P.oNc.PARTNERED)) || (null == eu ? true : eu.features.has(P.oNc.VERIFIED)), ed = null != W, em = ed || (null == H ? true : H.file) != null, ef = 0 === en.length || en.length >= 2 && en.length <= 100, eg = !es && (null == ea ? true : ea.isBlocking) !== true && V.length >= 2 && (null != $ || null != et || (null == W ? true : W.tags) != null && (null == W ? true : W.tags) !== "") && em && ef, ep = async e => {
+  }), [$, ee] = i.useState(null == Y ? true : Y.id), [et, el] = i.useState(null != (Z = null == Y ? true : Y.name) ? Z : null == W ? true : W.tags), [en, ei] = i.useState(null != (R = null == W ? true : W.description) ? R : ""), [es, er] = i.useState(false), [ea, eo] = i.useState(null), eu = (0, u.e7)([x.Z], () => x.Z.getGuild(F)), ec = (null == eu ? true : eu.features.has(P.oNc.PARTNERED)) || (null == eu ? true : eu.features.has(P.oNc.VERIFIED)), ed = null != W, em = ed || (null == H ? true : H.file) != null, ef = 0 === en.length || en.length >= 2 && en.length <= 100, eg = !es && (null == ea ? true : ea.isBlocking) !== true && V.length >= 2 && (null != $ || null != et || (null == W ? true : W.tags) != null && (null == W ? true : W.tags) !== "") && em && ef, ep = async e => {
     var t;
     if (null == e) return;
     let l = null == (t = e.type) ? true : t.split(";")[0];
@@ -124,9 +94,9 @@ function L(e) {
       isBlocking: true
     });
     let n = e;
-    if ("image/jpeg" === l || "image/jpg" === l) n = await U(e);
+    if ("image/jpeg" === l || "image/jpg" === l) n = await B(e);
     else if ("image/png" === l && e.size > q && !await (0, I.c0)(e)) {
-      let t = (n = await U(e)).size > q;
+      let t = (n = await B(e)).size > q;
       b.default.track(P.rMx.STICKER_FILE_RESIZED, {
         original_file_size_bytes: e.size,
         resized_file_size_bytes: n.size,
@@ -204,7 +174,36 @@ function L(e) {
     } finally {
       er(false)
     }
-  }, ev = B({
+  }, ev = (e => {
+    let {
+      sticker: t,
+      previewData: l,
+      onStickerError: i
+    } = e;
+    if (null != t) return (0, n.jsx)(w.Z, {
+      size: 160,
+      sticker: t
+    });
+    if (null == l) return null;
+    let {
+      id: s,
+      formatType: r,
+      content: a
+    } = l;
+    return (0, n.jsx)(w.Z, {
+      assetData: a,
+      fileUri: a,
+      size: 160,
+      sticker: {
+        name: s,
+        description: "",
+        id: s,
+        pack_id: "",
+        format_type: r
+      },
+      onError: i
+    }, s)
+  })({
     sticker: W,
     previewData: G,
     onStickerError: i.useCallback(() => {
@@ -243,7 +242,7 @@ function L(e) {
             className: k.formItemRowChild,
             children: ed ? (0, n.jsx)(g.oil, {
               disabled: true,
-              value: null != (R = null == H ? true : H.filename) ? R : ""
+              value: null != (U = null == H ? true : H.filename) ? U : ""
             }) : (0, n.jsx)(v.Z, {
               buttonText: D.intl.string(D.t.xEnDUV),
               filters: _,

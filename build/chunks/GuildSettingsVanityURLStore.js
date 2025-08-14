@@ -1,62 +1,61 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 44550, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => g
 });
-var r, i, l, Chunk442837 = require("./442837.js"),
+var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let o = null,
-  c = 0,
+let s = null,
+  o = 0,
+  c = null,
   d = null,
-  u = null,
-  m = false;
-class g extends(l = Chunk442837.ZP.Store) {
+  u = false;
+class m extends(i = Chunk442837.ZP.Store) {
   hasChanges() {
-    return o !== d
+    return s !== c
   }
   showNotice() {
     return this.hasChanges()
   }
   get vanityURLCode() {
-    return o
+    return s
   }
   get originalVanityURLCode() {
-    return d
-  }
-  get vanityURLUses() {
     return c
   }
+  get vanityURLUses() {
+    return o
+  }
   hasError() {
-    return null != u
+    return null != d
   }
   get errorDetails() {
-    return u
+    return d
   }
   get fetchedVanityURL() {
-    return m
+    return u
   }
-}
-i = "GuildSettingsVanityURLStore", (r = "displayName") in g ? Object.defineProperty(g, r, {
-  value: i,
+}(r = "displayName") in m ? Object.defineProperty(m, r, {
+  value: "GuildSettingsVanityURLStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : g[r] = i;
-let p = new g(Chunk570140.Z, {
+}) : m[r] = "GuildSettingsVanityURLStore";
+let g = new m(Chunk570140.Z, {
   GUILD_SETTINGS_SET_VANITY_URL: function(e) {
     var t, n;
-    d = o = null != (t = e.code) ? t : "", c = e.uses, u = null != (n = e.error) ? n : null, m = true
+    c = s = null != (t = e.code) ? t : "", o = e.uses, d = null != (n = e.error) ? n : null, u = true
   },
   GUILD_SETTINGS_CLOSE: function() {
-    d = o = null, c = 0, u = null, m = false
+    c = s = null, o = 0, d = null, u = false
   },
   GUILD_SETTINGS_VANITY_URL_RESET: function() {
-    o = d, c = 0, u = null
+    s = c, o = 0, d = null
   },
   GUILD_SETTINGS_VANITY_URL_SET: function(e) {
-    o = e.code, c = 0
+    s = e.code, o = 0
   },
   GUILD_SETTINGS_VANITY_URL_ERROR: function(e) {
-    u = e.error
+    d = e.error
   }
 })

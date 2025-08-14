@@ -45,8 +45,8 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk260539 = require("./260539.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk287153 = require("./287153.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk132825 = require("./132825.js"),
+  Chunk197571 = require("./197571.js");
 
 function W(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -174,9 +174,9 @@ class X extends(r = Chunk73800.PureComponent) {
       replaceWith: r
     } = this.props, i = null != e ? (0, a.parse)(e.search) : {};
     if (delete i.redirect_to, null != n) null != r ? r(n) : t(n);
-    else if (null == i.service) t(F.Z5c.APP);
+    else if (null == i.service) t(G.Z5c.APP);
     else {
-      let e = window.location.protocol + window.GLOBAL_ENV.API_ENDPOINT + F.ANM.SSO,
+      let e = window.location.protocol + window.GLOBAL_ENV.API_ENDPOINT + G.ANM.SSO,
         t = Y(q({}, i), {
           token: P.default.getToken()
         });
@@ -193,7 +193,7 @@ class X extends(r = Chunk73800.PureComponent) {
     return (0, Chunk255367.jsxs)(Chunk388905.ZP, {
       className: module,
       children: [(0, Chunk255367.jsx)(Chunk388905.Hh, {}), (0, Chunk255367.jsx)(Chunk388905.Dx, {
-        className: Chunk881488.marginBottom8,
+        className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.S6RMND)
       }), (0, Chunk255367.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t.YZiJbm)
@@ -211,19 +211,19 @@ class X extends(r = Chunk73800.PureComponent) {
       children: [(0, Chunk255367.jsx)(Chunk388905.qE, {
         src: module.getAvatarURL(true, 100),
         size: Chunk481060.EFr.DEPRECATED_SIZE_100,
-        className: Chunk881488.marginBottom20
+        className: Chunk197571.marginBottom20
       }), (0, Chunk255367.jsx)(Chunk388905.Dx, {
-        className: Chunk881488.marginBottom8,
+        className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.format(Chunk388032.t.ot19ho, {
           name: module.toString()
         })
       }), (0, Chunk255367.jsx)(Chunk388905.DK, {
-        className: Chunk881488.marginBottom40,
+        className: Chunk197571.marginBottom40,
         children: Chunk388032.intl.string(Chunk388032.t["2xkqzc"])
       }), (0, Chunk255367.jsxs)(Chunk388905.gO, {
         children: [(0, Chunk255367.jsx)(Chunk388905.zx, {
           onClick: () => exports(Chunk981631.Z5c.APP),
-          className: Chunk881488.marginBottom8,
+          className: Chunk197571.marginBottom8,
           children: Chunk388032.intl.format(Chunk388032.t.fohtv7, {
             name: module.toString()
           })
@@ -246,11 +246,11 @@ class X extends(r = Chunk73800.PureComponent) {
       className: module,
       children: (0, Chunk255367.jsxs)(Chunk481060.y5t, {
         component: (0, Chunk255367.jsx)(Chunk388905.Dx, {
-          className: Chunk881488.marginBottom8,
+          className: Chunk197571.marginBottom8,
           children: require
         }),
         children: [(0, Chunk255367.jsx)(Chunk388905.DK, {
-          className: Chunk881488.marginBottom20,
+          className: Chunk197571.marginBottom20,
           children: r
         }), (0, Chunk255367.jsxs)(Chunk388905.gO, {
           children: [(0, Chunk255367.jsx)(Chunk388905.zx, {
@@ -258,7 +258,7 @@ class X extends(r = Chunk73800.PureComponent) {
             type: "submit",
             children: Chunk388032.intl.string(Chunk388032.t.JhDw5u)
           }), (0, Chunk255367.jsx)("div", {
-            className: s()(Chunk881488.marginTop8, Chunk287153.needAccount),
+            className: s()(Chunk197571.marginTop8, Chunk132825.needAccount),
             children: Chunk388032.intl.format(Chunk388032.t.js2rr6, {
               onClick: this.handleCancelAccountDeletion
             })
@@ -275,9 +275,9 @@ class X extends(r = Chunk73800.PureComponent) {
     return (0, Chunk255367.jsxs)(Chunk388905.ZP, {
       className: module,
       children: [(0, Chunk255367.jsx)(Chunk588705.R, {}), (0, Chunk255367.jsxs)(Chunk388905.gO, {
-        className: Chunk881488.marginTop20,
+        className: Chunk197571.marginTop20,
         children: [(0, Chunk255367.jsx)(Chunk952802.Z, {
-          className: Chunk881488.marginBottom20,
+          className: Chunk197571.marginBottom20,
           alpha2: exports.alpha2,
           countryCode: exports.code.split(" ")[0],
           label: Chunk388032.intl.string(Chunk388032.t.tUjnxs),
@@ -294,7 +294,7 @@ class X extends(r = Chunk73800.PureComponent) {
           autoFocus: true,
           required: true
         }), (0, Chunk255367.jsx)(Chunk388905.II, {
-          className: Chunk881488.marginBottom20,
+          className: Chunk197571.marginBottom20,
           label: Chunk388032.intl.string(Chunk388032.t["CIGa+/"]),
           onChange: e => this.setState({
             password: e
@@ -306,7 +306,7 @@ class X extends(r = Chunk73800.PureComponent) {
           value: this.state.password,
           required: true
         }), (0, Chunk255367.jsx)(Chunk388905.zx, {
-          className: Chunk881488.marginBottom8,
+          className: Chunk197571.marginBottom8,
           type: "submit",
           disabled: true,
           children: Chunk388032.intl.string(Chunk388032.t.dKhVQE)
@@ -317,7 +317,7 @@ class X extends(r = Chunk73800.PureComponent) {
           children: Chunk388032.intl.string(Chunk388032.t.wWIufn)
         }), (0, Chunk255367.jsx)(Chunk388905.zx, {
           disabled: true,
-          className: Chunk881488.marginTop4,
+          className: Chunk197571.marginTop4,
           look: Chunk388905.zx.Looks.LINK,
           color: Chunk388905.zx.Colors.LINK,
           children: Chunk388032.intl.string(Chunk388032.t.tmE73t)
@@ -417,7 +417,7 @@ class X extends(r = Chunk73800.PureComponent) {
               children: V.intl.string(V.t.wWIufn)
             }), (0, i.jsx)(_.zx, {
               type: "submit",
-              submitting: o === F.u34.LOGGING_IN,
+              submitting: o === G.u34.LOGGING_IN,
               color: p ? _.zx.Colors.GREEN : _.zx.Colors.BRAND,
               className: K.marginBottom8,
               children: p ? V.intl.string(V.t.wvVThI) : V.intl.string(V.t.dKhVQE)
@@ -450,7 +450,7 @@ class X extends(r = Chunk73800.PureComponent) {
       showMobileWebHandoff: t
     } = this.props;
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk287153.__invalid_pageContainer,
+      className: Chunk132825.__invalid_pageContainer,
       children: [(0, Chunk255367.jsx)(Chunk388905.ZP, {
         onSubmit: this.handleLogin,
         tag: "form",
@@ -461,7 +461,7 @@ class X extends(r = Chunk73800.PureComponent) {
     })
   }
   renderGuildTemplate(e) {
-    return (0, i.jsx)(G.Z, {
+    return (0, i.jsx)(F.Z, {
       onSubmit: this.handleLogin,
       tag: "form",
       className: s()(this.props.authBoxClassName, H.horizontalAuthBox),
@@ -532,12 +532,13 @@ class X extends(r = Chunk73800.PureComponent) {
     })
   }
   renderChooseAccount() {
+    let e = () => {
+      this.setState(e => Y(q({}, e), {
+        dismissedChooseAccount: true
+      }))
+    };
     return (0, Chunk255367.jsx)(Chunk913583.Z, {
-      onDismiss: () => {
-        this.setState(e => Y(q({}, e), {
-          dismissedChooseAccount: true
-        }))
-      }
+      onDismiss: module
     })
   }
   render() {
@@ -583,8 +584,8 @@ class X extends(r = Chunk73800.PureComponent) {
     super(e), W(this, "loginRef", true), W(this, "passwordRef", true), W(this, "codeRef", true), W(this, "handleAuthToken", async e => {
       this.setState({
         errors: {}
-      }), await p.Z.loginToken(e, false), L.default.track(F.rMx.LOGIN_SUCCESSFUL, {
-        source: F.uRl.QR_CODE,
+      }), await p.Z.loginToken(e, false), L.default.track(G.rMx.LOGIN_SUCCESSFUL, {
+        source: G.uRl.QR_CODE,
         login_source: this.loginSource,
         gift_code_sku_id: this.giftCodeSKUId,
         is_new_user: false,
@@ -620,7 +621,7 @@ class X extends(r = Chunk73800.PureComponent) {
         password: t,
         undelete: n
       } = this.state;
-      null == e || e.preventDefault(), D.S.dispatch(F.CkL.WAVE_EMPHASIZE), this.setState({
+      null == e || e.preventDefault(), D.S.dispatch(G.CkL.WAVE_EMPHASIZE), this.setState({
         errors: {}
       });
       try {
@@ -664,7 +665,7 @@ class X extends(r = Chunk73800.PureComponent) {
         let {
           token: n
         } = await N.Z.verifyPhone(this.getFullLogin(), e, false);
-        t(F.Z5c.RESET, {
+        t(G.Z5c.RESET, {
           search: (0, a.stringify)({
             token: n,
             from_login: "true"
@@ -681,7 +682,7 @@ class X extends(r = Chunk73800.PureComponent) {
         data: n,
         ticket: r
       } = e;
-      return D.S.dispatch(F.CkL.WAVE_EMPHASIZE), p.Z.loginMFAv2({
+      return D.S.dispatch(G.CkL.WAVE_EMPHASIZE), p.Z.loginMFAv2({
         code: n,
         ticket: r,
         mfaType: t,
@@ -695,7 +696,7 @@ class X extends(r = Chunk73800.PureComponent) {
         errors: {}
       });
       try {
-        if (D.S.dispatch(F.CkL.WAVE_EMPHASIZE), !await p.Z.forgotPassword(t)) return;
+        if (D.S.dispatch(G.CkL.WAVE_EMPHASIZE), !await p.Z.forgotPassword(t)) return;
         (0, d.h7j)(e => (0, i.jsx)(d.ConfirmModal, Y(q({
           header: V.intl.string(V.t.f5Pi7O),
           confirmText: V.intl.string(V.t.BddRzc),
@@ -746,9 +747,9 @@ class X extends(r = Chunk73800.PureComponent) {
           redirectTo: s
         } = this.props,
         c = null != l ? (0, a.parse)(l.search) : {};
-      "" !== t && (c.email = t), null != n ? (c.mode = "register", e = F.Z5c.INVITE(n.code)) : null != r ? (c.mode = "register", e = F.Z5c.GIFT_CODE(r.code)) : null != i ? e = F.Z5c.GUILD_TEMPLATE(i.code) : null != s ? (e = F.Z5c.REGISTER, c.redirect_to = s) : e = F.Z5c.REGISTER, this.loginReset(), o(e, {
+      "" !== t && (c.email = t), null != n ? (c.mode = "register", e = G.Z5c.INVITE(n.code)) : null != r ? (c.mode = "register", e = G.Z5c.GIFT_CODE(r.code)) : null != i ? e = G.Z5c.GUILD_TEMPLATE(i.code) : null != s ? (e = G.Z5c.REGISTER, c.redirect_to = s) : e = G.Z5c.REGISTER, this.loginReset(), o(e, {
         search: (0, a.stringify)(c)
-      }), D.S.dispatch(F.CkL.WAVE_EMPHASIZE)
+      }), D.S.dispatch(G.CkL.WAVE_EMPHASIZE)
     });
     let r = null != e.location ? (0, a.parse)(e.location.search) : {};
     this.state = {

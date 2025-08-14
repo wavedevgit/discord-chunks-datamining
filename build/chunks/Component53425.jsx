@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 53425, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk823379 = require("./823379.js"),
   Chunk734190 = require("./734190.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk471688 = require("./471688.js");
+  Chunk113914 = require("./113914.js");
 let g = Chunk73800.memo(function(e) {
   let {
     channel: t,
@@ -24,27 +24,27 @@ let g = Chunk73800.memo(function(e) {
     withGuildIcon: g
   } = e, {
     density: m
-  } = (0, a.TCT)(), b = (0, s.Wu)([c.Z], () => l.map(e => c.Z.getChannel(e)).filter(d.lm), [l]), O = (0, s.e7)([u.ZP], () => {
+  } = (0, s.TCT)(), b = (0, a.Wu)([c.Z], () => l.map(e => c.Z.getChannel(e)).filter(d.lm), [l]), O = (0, a.e7)([u.ZP], () => {
     let e = b[b.length - 1];
     if (null == e) return 0;
     let t = u.ZP.getVoiceStates(e.guild_id)[e.id];
     return null == t || 0 === t.length ? 0 : i !== e.id ? 40 : 32 * t.length + 8
   });
   return (0, r.jsx)("li", {
-    className: f.container,
+    className: h.container,
     children: (0, r.jsxs)("ul", {
       role: "group",
-      "aria-label": p.intl.formatToPlainString(p.t.EiyIi4, {
+      "aria-label": f.intl.formatToPlainString(f.t.EiyIi4, {
         channelName: t.name
       }),
       children: [(0, r.jsx)("div", {
-        className: o()(f.spineBorder, {
-          [f.spineBorderWithGuildIcon]: g
+        className: o()(h.spineBorder, {
+          [h.spineBorderWithGuildIcon]: g
         }),
         style: {
           bottom: ("cozy" === m ? 28 : 24) + O
         }
-      }), b.map((e, t) => (0, r.jsx)(h.Z, {
+      }), b.map((e, t) => (0, r.jsx)(p.Z, {
         thread: e,
         isSelectedChannel: (null == n ? true : n.id) === e.id,
         isSelectedVoice: i === e.id,

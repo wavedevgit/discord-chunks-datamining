@@ -33,7 +33,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk139712 = require("./139712.jsx"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk561336 = require("./561336.js");
+  Chunk182279 = require("./182279.js");
 let D = (e, t) => n => {
     n.stopPropagation(), d.default.selectVoiceChannel(e.channel_id, false), null == t || t(n)
   },
@@ -51,7 +51,7 @@ let D = (e, t) => n => {
     return () => {}
   },
   M = (e, t) => t && [R.WX.STAGE_INSTANCE, R.WX.VOICE].includes(null == e ? true : e.entity_type),
-  j = Chunk73800.memo(function(e) {
+  k = Chunk73800.memo(function(e) {
     var t;
     let {
       guild: n,
@@ -115,7 +115,7 @@ let D = (e, t) => n => {
       })]
     })
   }),
-  k = Chunk73800.memo(function(e) {
+  j = Chunk73800.memo(function(e) {
     let {
       guildId: t,
       guildScheduledEventId: n,
@@ -210,12 +210,12 @@ let D = (e, t) => n => {
           recurrenceId: p
         }), (0, r.jsxs)("div", {
           className: w.footerContainer,
-          children: [(0, r.jsx)(j, {
+          children: [(0, r.jsx)(k, {
             guild: o,
             channel: s,
             guildScheduledEvent: n,
             isMember: l
-          }), (0, r.jsx)(k, {
+          }), (0, r.jsx)(j, {
             isActive: y,
             isEnded: N,
             isMember: l,

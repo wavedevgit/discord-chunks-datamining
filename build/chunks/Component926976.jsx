@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 926976, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  Z: () => D
+  Z: () => A
 }), require("./388685.js"), require("./49124.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -26,11 +26,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk681619 = require("./681619.jsx"),
   Chunk621060 = require("./621060.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk402369 = require("./402369.js"),
-  Chunk881291 = require("./881291.js");
+  Chunk599832 = require("./599832.js"),
+  Chunk451429 = require("./451429.js");
 let S = [{
   key: "event",
-  cellClassName: Chunk402369.eventColumn,
+  cellClassName: Chunk599832.eventColumn,
   render(e) {
     let {
       event: t
@@ -39,7 +39,7 @@ let S = [{
   }
 }, {
   key: "location",
-  cellClassName: Chunk402369.locationColumn,
+  cellClassName: Chunk599832.locationColumn,
   render(e) {
     let {
       properties: t
@@ -93,24 +93,7 @@ function w(e) {
   })
 }
 let I = new Set(["client_performance_cpu", "client_performance_memory"]),
-  k = (e, t, a) => {
-    let n = e.filter(e => e.event === t);
-    if (0 === n.length) return {
-      average: null,
-      count: 0
-    };
-    let r = null,
-      l = 0;
-    for (let e of n) {
-      let t = e.properties[a];
-      "number" == typeof t && (l += 1, null == r ? r = t : r += t)
-    }
-    return {
-      average: null !== r ? r / n.length : null,
-      count: l
-    }
-  },
-  R = [{
+  k = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -201,7 +184,23 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
           })]
         }), (0, n.jsx)(P, {
           children: Object.entries(a).map(e => {
-            let [a, r] = e, l = I.has(a) ? k(c, t, a) : null;
+            let [a, r] = e, l = I.has(a) ? ((e, t, a) => {
+              let n = e.filter(e => e.event === t);
+              if (0 === n.length) return {
+                average: null,
+                count: 0
+              };
+              let r = null,
+                l = 0;
+              for (let e of n) {
+                let t = e.properties[a];
+                "number" == typeof t && (l += 1, null == r ? r = t : r += t)
+              }
+              return {
+                average: null !== r ? r / n.length : null,
+                count: l
+              }
+            })(c, t, a) : null;
             return (0, n.jsxs)("div", {
               children: [(0, n.jsx)(w, {
                 name: "".concat(a, ":"),
@@ -229,10 +228,10 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
       })
     }
   }],
-  Z = {
+  R = {
     events: {
       label: "Events",
-      filter: e => Object.entries(Z).filter(e => {
+      filter: e => Object.entries(R).filter(e => {
         let [t] = e;
         return "events" !== t
       }).map(t => {
@@ -255,7 +254,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
       filter: e => e.event.startsWith("network_action")
     }
   },
-  A = {
+  Z = {
     searchType: Chunk886118.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -267,19 +266,19 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
     throttleMs: 100
   };
 
-function D() {
+function A() {
   let e = Chunk73800.useRef(null),
     [t, a] = Chunk73800.useState(""),
     l = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.loggedEventsVersion),
-    [s, o] = Chunk73800.useState(() => Object.keys(Z)),
+    [s, o] = Chunk73800.useState(() => Object.keys(R)),
     [m, x] = Chunk73800.useState(Chunk120816.Z.loggedEvents),
     h = Chunk73800.useCallback(e => {
       x(e)
     }, []);
-  (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, A, [Chunk120356]);
+  (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, Z, [Chunk120356]);
   let b = Chunk129861.filter(e => {
       for (let t of s)
-        if (Z[t].filter(e)) returntrue;
+        if (R[t].filter(e)) returntrue;
       returnfalse
     }),
     [f, v] = Chunk73800.useState(true),
@@ -288,15 +287,15 @@ function D() {
       TabBar: P,
       renderSelectedTab: w
     } = (0, Chunk621060.ZP)({
-      tabs: R
+      tabs: k
     }, []);
   return (0, Chunk255367.jsxs)("div", {
     ref: module,
-    className: i()(Chunk881291.panel, Chunk402369.panel),
+    className: i()(Chunk451429.panel, Chunk599832.panel),
     children: [(0, Chunk255367.jsxs)("div", {
-      className: Chunk402369.toolbar,
+      className: Chunk599832.toolbar,
       children: [(0, Chunk255367.jsx)(Chunk755721.zx, {
-        className: Chunk402369.toolbarButton,
+        className: Chunk599832.toolbarButton,
         look: Chunk755721.zx.Looks.BLANK,
         size: Chunk755721.zx.Sizes.ICON,
         onClick: Chunk31336.Zw,
@@ -309,10 +308,10 @@ function D() {
           })
         })
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk402369.toolbarDivider
+        className: Chunk599832.toolbarDivider
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk402369.filters,
-        children: Object.entries(Z).map(e => {
+        className: Chunk599832.filters,
+        children: Object.entries(R).map(e => {
           let [t, a] = e;
           return (0, n.jsx)(u.P3F, {
             className: i()(T.filter, s.includes(t) && T.activeFilter),
@@ -324,10 +323,10 @@ function D() {
         })
       })]
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk402369.toolbar,
+      className: Chunk599832.toolbar,
       children: (0, Chunk255367.jsx)(Chunk481060.E1j, {
         size: "sm",
-        className: Chunk402369.searchBar,
+        className: Chunk599832.searchBar,
         query: exports,
         onChange: require,
         onClear: () => require(""),
@@ -339,7 +338,7 @@ function D() {
       selectedRowKey: Chunk572004,
       onClickRow: e => v(e.key)
     }), null != Chunk257785 && (0, Chunk255367.jsxs)(Chunk484036.Z, {
-      className: Chunk402369.subPanel,
+      className: Chunk599832.subPanel,
       minHeight: 100,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300,
       children: [(0, Chunk255367.jsx)(P, {}), w({

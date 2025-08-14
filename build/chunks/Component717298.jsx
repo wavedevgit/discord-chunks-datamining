@@ -45,14 +45,14 @@ var Chunk255367 = require("./255367.js"),
   Chunk328242 = require("./328242.jsx"),
   Chunk565574 = require("./565574.jsx"),
   Chunk286420 = require("./286420.jsx"),
-  Chunk51708 = require("./51708.jsx"),
+  Chunk173044 = require("./173044.jsx"),
   Chunk801604 = require("./801604.jsx"),
   Chunk577257 = require("./577257.js"),
   Chunk70722 = require("./70722.js"),
   Chunk65154 = require("./65154.js"),
-  Chunk676462 = require("./676462.js"),
+  Chunk637824 = require("./637824.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk123972 = require("./123972.js");
+  Chunk468918 = require("./468918.js");
 
 function $(e) {
   return e * (2 - e)
@@ -79,7 +79,7 @@ function ee(e) {
   } = (0, v.ZP)(ee, _.Z.GO_LIVE_MODAL_V2), ec = (0, m.e7)([O.default], () => O.default.getCurrentUser()), ed = (0, M.Z)(), {
     state: eu,
     dispatch: ef
-  } = (0, U.Ti)(a, ec, ed, (0, Z.isWindows)() && null != a && et ? "confirm" : "source_select"), [em, eh] = (0, b.Ls)(X.h7.AUDIO_INPUT, {
+  } = (0, U.Ti)(a, ec, ed, (0, Z.isWindows)() && null != a && et ? "confirm" : "source_select"), [em, eh] = (0, S.Ls)(X.h7.AUDIO_INPUT, {
     location: "GoLiveModalV2"
   }), ep = em.concat(eh);
   (0, Y.Z)(eo, ef, "confirm" === eu.modalStep);
@@ -94,8 +94,8 @@ function ee(e) {
     }, "respect-motion-settings"),
     ev = !(0, Z.isLinux)(),
     ej = "confirm" === eu.modalStep,
-    eb = !et && null != a && !ej,
-    eS = ej || !eb && en && (!eo || eu.sourceType === f.vA.CAMERA),
+    eS = !et && null != a && !ej,
+    eb = ej || !eS && en && (!eo || eu.sourceType === f.vA.CAMERA),
     eC = eo && eu.sourceType !== f.vA.CAMERA,
     ey = eo || !(0, Z.isWindows)() || !er || ej,
     eO = ei && ex,
@@ -120,7 +120,7 @@ function ee(e) {
       sourceType: ew
     } = eu,
     eN = i.useCallback(async e => {
-      S.eo.updateSetting(eu.notifyFriends), S.I0.updateSetting(eu.hidePreview);
+      b.eo.updateSetting(eu.notifyFriends), b.I0.updateSetting(eu.hidePreview);
       let [t, r] = await (0, R.Z)(e.hasOwnProperty("pid") ? e.pid : e, {
         preset: eu.preset,
         fps: eu.fps,
@@ -174,7 +174,7 @@ function ee(e) {
           className: Q.rightButtonGroup,
           children: [eO && (0, r.jsx)(H.Z, {
             onClose: n
-          }), eC && !eS && (0, r.jsx)(k.Z, {
+          }), eC && !eb && (0, r.jsx)(k.Z, {
             mainCTADisabled: !ev && "" === eu.nativeSourceType,
             mainCTAOnClick: () => {
               (0, T.t)(), (0, T.T)(eu.nativeSourceType)
@@ -182,7 +182,7 @@ function ee(e) {
             align: "right",
             ctaText: q.intl.string(q.t.FiBjwc),
             hideOptionsButton: !eO
-          }), eS && !eC && (0, r.jsx)(k.Z, {
+          }), eb && !eC && (0, r.jsx)(k.Z, {
             mainCTADisabled: null == eu.selectedSource,
             mainCTAOnClick: () => {
               null != eu.selectedChannel ? eT(eu.selectedChannel) : null != eu.selectedSource && eN(eu.selectedSource)
@@ -190,7 +190,7 @@ function ee(e) {
             align: "right",
             hideOptionsButton: !eO,
             ctaText: q.intl.string(K.default["5AyH/v"])
-          }), (!eO || !(eS || eC)) && (0, r.jsx)(F.Z, {
+          }), (!eO || !(eb || eC)) && (0, r.jsx)(F.Z, {
             useSimplifiedMenu: eI,
             align: "right"
           })]
@@ -217,13 +217,13 @@ function ee(e) {
       },
       className: s()(Q.root, {
         [Q.nativePicker]: eo && null == a,
-        [Q.channelSelector]: eb,
+        [Q.channelSelector]: eS,
         [Q.confirmStep]: ej
       }),
       size: h.CgR.DYNAMIC,
       transitionState: l,
       parentComponent: "GoLiveModalV2",
-      children: [eb ? (0, r.jsx)(L.Z, {
+      children: [eS ? (0, r.jsx)(L.Z, {
         className: s()(Q.channelSelectorComponent, {
           [Q.withFooter]: ey
         }),

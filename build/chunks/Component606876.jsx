@@ -1,4 +1,4 @@
-/** Chunk was on 80620 **/
+/** Chunk was on 52549 **/
 /** chunk id: 606876, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -8,64 +8,64 @@ var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
   Chunk927160 = require("./927160.jsx"),
   Chunk203377 = require("./203377.js"),
-  Chunk93841 = require("./93841.js"),
+  Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk727565 = require("./727565.js");
+  Chunk421405 = require("./421405.js");
 
 function u() {
   let [e, t] = Chunk73800.useState("");
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk727565.container,
+    className: Chunk421405.container,
     children: [(0, Chunk255367.jsxs)("div", {
-      className: Chunk727565.demo,
+      className: Chunk421405.demo,
       children: [(0, Chunk255367.jsxs)("div", {
-        className: Chunk727565.previewCard,
+        className: Chunk421405.previewCard,
         children: [(0, Chunk255367.jsx)("div", {
-          className: Chunk727565.avatar,
+          className: Chunk421405.avatar,
           children: (0, Chunk255367.jsx)(Chunk481060.gw7, {
             size: "custom",
             width: 24,
             height: 24
           })
         }), (0, Chunk255367.jsxs)("div", {
-          className: Chunk727565.previewCardMessage,
+          className: Chunk421405.previewCardMessage,
           children: [(0, Chunk255367.jsxs)("div", {
-            className: Chunk727565.messageHeaderSkeleton,
+            className: Chunk421405.messageHeaderSkeleton,
             children: [(0, Chunk255367.jsx)("div", {
-              className: Chunk727565.usernameSkeleton
+              className: Chunk421405.usernameSkeleton
             }), (0, Chunk255367.jsx)("div", {
-              className: Chunk727565.timestampSkeleton
+              className: Chunk421405.timestampSkeleton
             })]
           }), (0, Chunk255367.jsxs)("div", {
-            className: Chunk727565.previewCardUrl,
+            className: Chunk421405.previewCardUrl,
             children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
               variant: "text-sm/medium",
               color: "text-tertiary",
-              className: Chunk727565.baseUrl,
+              className: Chunk421405.baseUrl,
               children: "".concat(Chunk203377.mf, "/")
             }), (0, Chunk255367.jsx)(Chunk481060.Text, {
               variant: "text-sm/medium",
               color: "text-link",
-              className: Chunk727565.vanityCode,
+              className: Chunk421405.vanityCode,
               children: module
             })]
           }), (0, Chunk255367.jsxs)("div", {
-            className: Chunk727565.messageEmbed,
+            className: Chunk421405.messageEmbed,
             children: [(0, Chunk255367.jsx)("div", {
-              className: Chunk727565.messageEmbedHeaderSkeleton
+              className: Chunk421405.messageEmbedHeaderSkeleton
             }), (0, Chunk255367.jsxs)("div", {
-              className: Chunk727565.messageEmbedContent,
+              className: Chunk421405.messageEmbedContent,
               children: [(0, Chunk255367.jsx)("div", {
-                className: Chunk727565.messageEmbedContentIconSkeleton
+                className: Chunk421405.messageEmbedContentIconSkeleton
               }), (0, Chunk255367.jsxs)("div", {
-                className: Chunk727565.messageEmbedContentLines,
+                className: Chunk421405.messageEmbedContentLines,
                 children: [(0, Chunk255367.jsx)("div", {
-                  className: Chunk727565.messageEmbedContenPrimaryLineSkeleton
+                  className: Chunk421405.messageEmbedContenPrimaryLineSkeleton
                 }), (0, Chunk255367.jsx)("div", {
-                  className: Chunk727565.messageEmbedContentSecondaryLineSkeleton
+                  className: Chunk421405.messageEmbedContentSecondaryLineSkeleton
                 })]
               }), (0, Chunk255367.jsx)("div", {
-                className: Chunk727565.messageEmbedContentActionSkeleton
+                className: Chunk421405.messageEmbedContentActionSkeleton
               })]
             })]
           })]
@@ -74,13 +74,13 @@ function u() {
         autoFocus: true,
         value: module,
         onChange: exports,
-        className: Chunk727565.vanityUrlInput
+        className: Chunk421405.vanityUrlInput
       })]
     }), (0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
       color: "text-tertiary",
-      className: Chunk727565.disclaimer,
-      children: Chunk388032.intl.string(Chunk93841.default.u5iNb2)
+      className: Chunk421405.disclaimer,
+      children: Chunk388032.intl.string(Chunk989308.default.u5iNb2)
     })]
   })
 }

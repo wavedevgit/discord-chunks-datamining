@@ -25,7 +25,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk66747 = require("./66747.jsx"),
   Chunk852479 = require("./852479.jsx"),
   Chunk420212 = require("./420212.js"),
-  Chunk383791 = require("./383791.js");
+  Chunk655804 = require("./655804.js");
 let w = {
     transform: "translate3d(15%, 0, 0)",
     opacity: .3
@@ -43,9 +43,9 @@ let w = {
     friction: 24,
     tension: 260
   },
-  D = e => e.shiftKey || e.key === H.vn.SHIFT,
-  L = e => e.metaKey || e.ctrlKey || ["Meta", "Control"].includes(e.key),
-  R = Chunk73800.memo(function(e) {
+  D = e => e.shiftKey || e.key === _.vn.SHIFT,
+  R = e => e.metaKey || e.ctrlKey || ["Meta", "Control"].includes(e.key),
+  L = Chunk73800.memo(function(e) {
     let {
       members: t,
       guild: n,
@@ -54,15 +54,15 @@ let w = {
       compact: s,
       onSelectRow: m,
       onResetForNewMembers: b
-    } = e, f = (0, c.e7)([C.Z], () => C.Z.useReducedMotion), H = (0, u.f9)(), R = (0, p.n)(), [I, P] = l.useState(false), [M, V] = l.useState(false), E = !H && I && M;
+    } = e, f = (0, c.e7)([C.Z], () => C.Z.useReducedMotion), _ = (0, u.f9)(), L = (0, p.n)(), [I, P] = l.useState(false), [M, V] = l.useState(false), E = !_ && I && M;
     l.useEffect(() => {
-      R || (P(false), V(false))
-    }, [R]), l.useLayoutEffect(() => {
+      L || (P(false), V(false))
+    }, [L]), l.useLayoutEffect(() => {
       let e = e => {
-          D(e) && P(true), L(e) && V(true)
+          D(e) && P(true), R(e) && V(true)
         },
         t = e => {
-          D(e) && P(false), L(e) && V(false)
+          D(e) && P(false), R(e) && V(false)
         };
       return window.addEventListener("keydown", e), window.addEventListener("keyup", t), () => {
         window.removeEventListener("keydown", e), window.removeEventListener("keyup", t)
@@ -86,7 +86,7 @@ let w = {
       }),
       A = !f && a === x.po.LOADING;
     return (0, r.jsxs)("table", {
-      className: i()(_.table, o),
+      className: i()(H.table, o),
       children: [(0, r.jsx)(v.Z, {
         guildId: n.id,
         currentPagedMembers: t
@@ -139,7 +139,7 @@ let w = {
       v = null != (n = null == x ? true : x[0]) ? n : null;
     return l.useEffect(() => {
       (0, f.h1)(o.id, v)
-    }, [o.id, v]), (0, r.jsx)(R, {
+    }, [o.id, v]), (0, r.jsx)(L, {
       members: g,
       guild: o,
       className: i,

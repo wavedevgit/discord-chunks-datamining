@@ -11,9 +11,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk771845 = require("./771845.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk191441 = require("./191441.js");
+  Chunk713970 = require("./713970.js");
 
-function d(e, t, r) {
+function u(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: true,
@@ -21,7 +21,7 @@ function d(e, t, r) {
     writable: true
   }) : e[t] = r, e
 }
-let u = (0, Chunk663993.Un)({
+let d = (0, Chunk663993.Un)({
   createPromise: () => require.e("4848").then(require.bind(require, 797967)),
   webpackId: 797967
 });
@@ -39,7 +39,7 @@ class m extends Chunk73800.PureComponent {
       size: Chunk481060.CgR.DYNAMIC,
       parentComponent: "GuildFolderSettings",
       children: [(0, Chunk255367.jsxs)(Chunk481060.xBx, {
-        className: Chunk191441.header,
+        className: Chunk713970.header,
         separator: false,
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
           variant: "heading-lg/semibold",
@@ -52,7 +52,7 @@ class m extends Chunk73800.PureComponent {
           onSubmit: this.handleSubmit,
           children: [(0, Chunk255367.jsx)(Chunk481060.xJW, {
             title: Chunk388032.intl.string(Chunk388032.t.tGRbjI),
-            className: Chunk191441.formItem,
+            className: Chunk713970.formItem,
             children: (0, Chunk255367.jsx)(Chunk481060.oil, {
               maxLength: Chunk981631.dYL,
               value: exports,
@@ -62,8 +62,8 @@ class m extends Chunk73800.PureComponent {
             })
           }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
             title: Chunk388032.intl.string(Chunk388032.t.xpurRE),
-            className: Chunk191441.formItem,
-            children: (0, Chunk255367.jsx)(u, {
+            className: Chunk713970.formItem,
+            children: (0, Chunk255367.jsx)(d, {
               defaultColor: Chunk981631.Wyy,
               colors: Chunk981631.pmI,
               value: null != require ? require : Chunk981631.Wyy,
@@ -83,53 +83,52 @@ class m extends Chunk73800.PureComponent {
   }
   constructor(...e) {
     var t;
-    super(...e), d(this, "state", {
+    super(...e), u(this, "state", {
       name: null != (t = this.props.folderName) ? t : "",
       color: this.props.folderColor
-    }), d(this, "close", () => {
+    }), u(this, "close", () => {
       this.props.onClose()
-    }), d(this, "handleNameChange", e => {
+    }), u(this, "handleNameChange", e => {
       this.setState({
         name: e
       })
-    }), d(this, "handleColorChange", e => {
+    }), u(this, "handleColorChange", e => {
       this.setState({
         color: e
       })
-    }), d(this, "handleSubmit", e => {
+    }), u(this, "handleSubmit", e => {
       e.preventDefault();
       let {
         folderId: t
       } = this.props, {
         name: r,
         color: n
-      } = this.state, s = a.ZP.getGuildFolders().map(e => {
-        var s, i;
-        return e.folderId === t ? (s = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-              n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-              d(e, t, r[t])
-            })
-          }
-          return e
-        }({}, e), i = i = {
-          folderName: r,
-          folderColor: n
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      } = this.state, s = a.ZP.getGuildFolders().map(e => e.folderId === t ? function(e, t) {
+        return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var n = Object.getOwnPropertySymbols(e);
             r.push.apply(r, n)
           }
           return r
-        })(Object(i)).forEach(function(e) {
-          Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(i, e))
-        }), s) : e
-      });
+        })(Object(t)).forEach(function(r) {
+          Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+        }), e
+      }(function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var r = null != arguments[t] ? arguments[t] : {},
+            n = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), n.forEach(function(t) {
+            u(e, t, r[t])
+          })
+        }
+        return e
+      }({}, e), {
+        folderName: r,
+        folderColor: n
+      }) : e);
       (0, o.V1)(s), this.close()
     })
   }

@@ -26,7 +26,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk251564 = require("./251564.js"),
   Chunk695492 = require("./695492.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk211066 = require("./211066.js");
+  Chunk312439 = require("./312439.js");
 
 function A(e) {
   let {
@@ -40,7 +40,7 @@ function A(e) {
     totalNumberOfParticipants: w
   } = e, D = (0, c.bp)() === T.IlC.POPOUT, L = (0, s.e7)([E.Z], () => E.Z.getGuild(C.guild_id), [C.guild_id]), {
     dismissedActivityEntryPointTileChannel: x
-  } = (0, v.d)(), M = (0, s.e7)([_.Z], () => _.Z.getUserParticipantCount(C.id), [C]), j = (0, g.bt)(C.id, t), k = i.useCallback(() => {
+  } = (0, v.d)(), M = (0, s.e7)([_.Z], () => _.Z.getUserParticipantCount(C.id), [C]), k = (0, g.bt)(C.id, t), j = i.useCallback(() => {
     (0, a.j)(() => {
       v.d.setState({
         dismissedActivityEntryPointTileChannel: C.id
@@ -61,7 +61,7 @@ function A(e) {
     F = (0, p.Nj)(l.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     V = (0, d.KF)(C.id) !== d.jy.CAN_LAUNCH,
     H = null != x && x === C.id,
-    Y = j.map(e => t => (0, r.jsx)(O.ZP, {
+    Y = k.map(e => t => (0, r.jsx)(O.ZP, {
       participant: e,
       channel: C,
       className: S.tile,
@@ -88,7 +88,7 @@ function A(e) {
     guild: L,
     width: e,
     inPopout: D,
-    handleClose: k,
+    handleClose: j,
     userParticipantCount: M
   })) : Y.push(e => (0, r.jsx)(I.Z, {
     width: e,
@@ -100,13 +100,13 @@ function A(e) {
     guild: L,
     width: e,
     inPopout: D,
-    handleClose: k,
+    handleClose: j,
     userParticipantCount: M
   })));
   let W = i.useCallback(e => {
     var t, n;
-    return null != (n = null == (t = j[e]) ? true : t.id) ? n : "empty-tile"
-  }, [j]);
+    return null != (n = null == (t = k[e]) ? true : t.id) ? n : "empty-tile"
+  }, [k]);
   return (0, r.jsx)(m.Z, {
     className: R,
     keyExtractor: W,

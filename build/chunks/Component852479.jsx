@@ -15,8 +15,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk893966 = require("./893966.js"),
   Chunk527379 = require("./527379.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk92006 = require("./92006.js"),
-  Chunk21977 = require("./21977.js");
+  Chunk266631 = require("./266631.js"),
+  Chunk51237 = require("./51237.js");
 
 function h(e) {
   let {
@@ -65,7 +65,7 @@ function h(e) {
         }), n))
       }
     })
-  }, [x, g]), y = new Intl.NumberFormat(b.intl.currentLocale).format(h), O = (0, d.nX)(t.id), H = (0, d.xC)(t.id), _ = l.useMemo(() => 1 + +!!O + +!!H, [O, H]);
+  }, [x, g]), y = new Intl.NumberFormat(b.intl.currentLocale).format(h), O = (0, d.nX)(t.id), _ = (0, d.xC)(t.id), H = l.useMemo(() => 1 + +!!O + +!!_, [O, _]);
   return 0 === h ? null : (0, r.jsxs)("tr", {
     className: f.newMembersNotice,
     onClick: v,
@@ -80,7 +80,7 @@ function h(e) {
         })
       })
     }), (0, r.jsx)("td", {
-      colSpan: _
+      colSpan: H
     }), (0, r.jsx)("td", {
       colSpan: 2,
       children: (0, r.jsx)("div", {

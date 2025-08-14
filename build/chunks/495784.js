@@ -27,9 +27,9 @@ let g = {
       if ((0, a.Z)()) return;
       let e = u.default.getCurrentUser(),
         r = null != e && 7 > l()().diff(l()(h.default.extractTimestamp(e.id)), "days"),
-        c = null != d.Z.getGuildsArray().find(e => e.features.has(x.oNc.HUB)),
+        c = null != d.Z.getGuildsArray().find(e => e.features.has(p.oNc.HUB)),
         m = !(0, s.zu)(i.z.HUB_BACK_TO_SCHOOL_UPSELL);
-      !(r || t() || c || !m) && (0, f.b)() && (f.Z.trackExposure({
+      !(r || t() || c || !m) && (0, x.b)() && (x.Z.trackExposure({
         location: "8b792a_1"
       }), n(), (0, o.kk)(i.z.HUB_BACK_TO_SCHOOL_UPSELL))
     })

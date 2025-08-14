@@ -1,4 +1,4 @@
-/** Chunk was on 58023 **/
+/** Chunk was on 61 **/
 /** chunk id: 744782, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -20,7 +20,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk230900 = require("./230900.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk709949 = require("./709949.js");
+  Chunk369702 = require("./369702.js");
 let {
   INVITE_OPTIONS_7_DAYS: b,
   INVITE_OPTIONS_UNLIMITED: y
@@ -49,8 +49,8 @@ function O(e) {
     }) : null,
     _ = null == D || null == w,
     R = (0, s.Z)(null != D ? D : ""),
-    k = null != (n = null == w ? true : w.maxAge) ? n : b.value,
-    A = null != (O = null == w ? true : w.maxUses) ? O : y.value;
+    A = null != (n = null == w ? true : w.maxAge) ? n : b.value,
+    k = null != (O = null == w ? true : w.maxUses) ? O : y.value;
   return (0, r.jsxs)("div", {
     className: j.container,
     children: [(0, r.jsx)(i.P3F, {
@@ -103,7 +103,7 @@ function O(e) {
         variant: "text-xs/normal",
         color: "header-secondary",
         className: j.inviteDetail,
-        children: (0, h.Vg)(k, A)
+        children: (0, h.Vg)(A, k)
       })]
     })]
   })

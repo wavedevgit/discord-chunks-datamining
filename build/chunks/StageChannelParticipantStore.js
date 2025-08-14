@@ -75,22 +75,22 @@ function M(e) {
   return null != e && e.isGuildStageVoice() && O.ZP.countVoiceStatesForChannel(e.id) > 0
 }
 
-function j(e, t) {
+function k(e, t) {
   let n = p.Z.getChannel(e);
   return null != n && n.isGuildStageVoice() ? 0 === t.size() ? B(n.id) : null == N.get(n.id) && N.set(n.id, n) : B(e)
 }
 
-function k(e) {
+function j(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : w();
   return t.reduce((t, n) => {
     let r = x(n);
-    return e(r) ? (j(n, r), true) : t
+    return e(r) ? (k(n, r), true) : t
   }, false)
 }
 
 function U(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : w();
-  return k(t => t.updateParticipant(e), t)
+  return j(t => t.updateParticipant(e), t)
 }
 
 function G(e) {
@@ -196,14 +196,14 @@ function J(e) {
     let n = N.get(t.id);
     return null == n || o()(t.permissionOverwrites, n.permissionOverwrites) || (e.push(t.id), N.set(t.id, t)), e
   }, []);
-  return k(e => e.rebuild(), n), n.length > 0
+  return j(e => e.rebuild(), n), n.length > 0
 }
 
 function $(e) {
   let {
     guildId: t
   } = e;
-  if (C.has(t)) return k(e => e.rebuild(), w(t))
+  if (C.has(t)) return j(e => e.rebuild(), w(t))
 }
 let ee = [];
 class et extends(r = Chunk442837.ZP.Store) {

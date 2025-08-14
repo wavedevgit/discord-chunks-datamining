@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 264233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => O,
@@ -15,7 +15,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk240126 = require("./240126.jsx"),
   Chunk326838 = require("./326838.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk294802 = require("./294802.js");
+  Chunk201848 = require("./201848.js");
 
 function g() {
   let e = (0, Chunk442837.Wu)([Chunk317632.Z], () => Chunk317632.Z.getInvites()),
@@ -27,7 +27,7 @@ function g() {
   return (Chunk73800.useEffect(() => {
     (0, Chunk174767.sJ)()
   }), 0 === module.length) ? (0, Chunk255367.jsx)("div", {
-    className: Chunk294802.__invalid_emptyStateContainer,
+    className: Chunk201848.__invalid_emptyStateContainer,
     children: (0, Chunk255367.jsx)(Chunk240126.Z, {
       Icon: Chunk481060.iWm,
       header: Chunk388032.intl.string(Chunk388032.t.PbSPWV),
@@ -35,18 +35,18 @@ function g() {
     })
   }) : (0, Chunk255367.jsx)(Chunk481060.h21, {
     children: (0, Chunk255367.jsxs)("div", {
-      className: Chunk294802.invitesContainer,
+      className: Chunk201848.invitesContainer,
       children: [require.length > 0 && (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
         children: [(0, Chunk255367.jsx)(m, {
           title: Chunk388032.intl.string(Chunk388032.t.yflAJS)
-        }), require.map(e => (0, r.jsx)(h.Z, {
+        }), require.map(e => (0, r.jsx)(p.Z, {
           invite: e,
           expired: false
         }, e.invite_id))]
       }), Chunk392711.length > 0 && (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
         children: [(0, Chunk255367.jsx)(m, {
           title: Chunk388032.intl.string(Chunk388032.t.f0Ia4e)
-        }), Chunk392711.map(e => (0, r.jsx)(h.Z, {
+        }), Chunk392711.map(e => (0, r.jsx)(p.Z, {
           invite: e,
           expired: true
         }, e.invite_id))]
@@ -60,14 +60,14 @@ function m(e) {
     title: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: f.headerContainer,
-    children: [(0, r.jsx)(a.Text, {
-      className: f.headerTitle,
+    className: h.headerContainer,
+    children: [(0, r.jsx)(s.Text, {
+      className: h.headerTitle,
       variant: "text-xs/semibold",
       color: "interactive-normal",
       children: t
     }), (0, r.jsx)("div", {
-      className: f.headerDivider
+      className: h.headerDivider
     })]
   })
 }

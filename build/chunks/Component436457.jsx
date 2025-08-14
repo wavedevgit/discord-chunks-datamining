@@ -1,4 +1,4 @@
-/** Chunk was on 396 **/
+/** Chunk was on 63359 **/
 /** chunk id: 436457, original params: e,t,n (module,exports,require) **/
 let r, o;
 require.d(exports, {
@@ -17,8 +17,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk782605 = require("./782605.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk885256 = require("./885256.js");
-let N = (r = window.GLOBAL_ENV.INVITE_HOST, o = "", null == r && (r = location.host, o = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(o, "/"));
+  Chunk888113 = require("./888113.js");
+let x = (r = window.GLOBAL_ENV.INVITE_HOST, o = "", null == r && (r = location.host, o = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(o, "/"));
 
 function y(e) {
   let {
@@ -26,16 +26,16 @@ function y(e) {
     onComplete: n,
     onConnect: r,
     isSlideReady: o
-  } = e, [i, y] = s.useState(""), [v, j] = s.useState(false), [E, C] = s.useState(null), T = s.useRef(null);
-  s.useEffect(() => {
+  } = e, [s, y] = i.useState(""), [j, E] = i.useState(false), [v, C] = i.useState(null), T = i.useRef(null);
+  i.useEffect(() => {
     var e;
     o && (null == (e = T.current) || e.focus())
   }, [o]);
-  let g = s.useCallback(e => {
+  let O = i.useCallback(e => {
     e.preventDefault();
-    let t = i.trim();
+    let t = s.trim();
     if ("" === t) return void C(h.intl.string(h.t.IRq5am));
-    C(null), j(true);
+    C(null), E(true);
     let r = t.split("/"),
       o = r[r.length - 1];
     d.ZP.resolveInvite(o, "Join Guild", {
@@ -44,7 +44,7 @@ function y(e) {
       let {
         invite: t
       } = e;
-      if (j(false), null == t) return void C(h.intl.string(h.t["GEYI+f"]));
+      if (E(false), null == t) return void C(h.intl.string(h.t["GEYI+f"]));
       if (null != t.channel) {
         let e = d.ZP.getInviteContext("Join Guild", t);
         d.ZP.acceptInvite({
@@ -54,25 +54,25 @@ function y(e) {
             n(), d.ZP.transitionToInvite(e)
           }
         }).catch(e => {
-          e instanceof _.yZ || e instanceof _.Hx ? C((0, b.O)(e.code)) : C(h.intl.string(h.t.dDZRd3))
+          e instanceof _.yZ || e instanceof _.Hx ? C((0, m.O)(e.code)) : C(h.intl.string(h.t.dDZRd3))
         })
       }
     }, e => {
-      j(false);
+      E(false);
       let t = new _.yZ(e);
-      C((0, b.O)(t.code))
+      C((0, m.O)(t.code))
     })
-  }, [i, j, C, n]);
+  }, [s, E, C, n]);
   return {
     content: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsxs)(u.xBx, {
-        className: x.header,
+        className: N.header,
         direction: p.Z.Direction.VERTICAL,
         separator: false,
         children: [(0, a.jsx)(u.X6q, {
           variant: "heading-xl/bold",
           color: "header-primary",
-          className: x.title,
+          className: N.title,
           children: h.intl.string(h.t.riOUtL)
         }), (0, a.jsx)(u.Text, {
           variant: "text-md/normal",
@@ -81,19 +81,19 @@ function y(e) {
         })]
       }), (0, a.jsxs)(u.hzk, {
         children: [(0, a.jsx)("form", {
-          onSubmit: g,
-          className: x.inputForm,
+          onSubmit: O,
+          className: N.inputForm,
           children: (0, a.jsx)(u.xJW, {
             title: h.intl.string(h.t.qreV29),
-            error: E,
-            titleClassName: l()(x.formTitle, {
-              [x.error]: null != E
+            error: v,
+            titleClassName: l()(N.formTitle, {
+              [N.error]: null != v
             }),
             children: (0, a.jsx)(c.Is, {
-              value: i,
+              value: s,
               onChange: y,
-              className: x.input,
-              inputClassName: x.inputInner,
+              className: N.input,
+              inputClassName: N.inputInner,
               inputRef: T
             })
           })
@@ -101,15 +101,15 @@ function y(e) {
           color: "header-secondary",
           variant: "text-xs/normal",
           children: h.intl.format(h.t.lHTZl5, {
-            examples: "".concat(N).concat("wumpus-friends", ", ").concat("hTKzmak")
+            examples: "".concat(x).concat("wumpus-friends", ", ").concat("hTKzmak")
           })
         }), (0, a.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          className: x.connectCTA,
+          className: N.connectCTA,
           children: h.intl.format(h.t["8F/who"], {
             onClick: () => {
-              r(), f.Z.open(m.oAB.CONNECTIONS)
+              r(), f.Z.open(b.oAB.CONNECTIONS)
             }
           })
         })]
@@ -119,11 +119,11 @@ function y(e) {
       children: [(0, a.jsx)(u.zxk, {
         variant: "primary",
         text: h.intl.string(h.t.VJlc0d),
-        onClick: g,
-        disabled: 0 === i.length,
-        loading: v
+        onClick: O,
+        disabled: 0 === s.length,
+        loading: j
       }), (0, a.jsx)(c.zx, {
-        className: x.__invalid_skipButton,
+        className: N.__invalid_skipButton,
         look: c.zx.Looks.BLANK,
         size: c.zx.Sizes.MIN,
         onClick: t,

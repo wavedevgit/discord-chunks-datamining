@@ -1,3 +1,0 @@
-/** Chunk was on 91242 **/
-/** chunk id: 728031, original params: e (module,exports,require) **/
-module.exports = JSON.parse('{"+utqa2":["ตัวเลือกพื้นหลังของขวัญ: ",[1,"giftStyle"]],"B9XqQk":"กล่อง","AJ4iio":"เค้ก","P5keo6":"หีบ","w84vER":"กาแฟ","6dCq/v":"ถ้วย","+HMF8v":"Nitroween","vd1fu7":"กล่องวันเทศกาล","aubYGR":"เค้กวันเทศกาล","vjxYqa":"หีบวันเทศกาล","bHuJLS":"กาแฟวันเทศกาล","M6cPwM":"ลูกโลกหิมะ","GzPel5":"กล่อง"}')

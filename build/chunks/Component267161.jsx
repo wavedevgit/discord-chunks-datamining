@@ -51,8 +51,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk741764 = require("./741764.js"),
   Chunk408491 = require("./408491.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk916723 = require("./916723.js"),
-  Chunk538778 = require("./538778.js");
+  Chunk345909 = require("./345909.js"),
+  Chunk82504 = require("./82504.js");
 
 function J(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -329,7 +329,7 @@ let ei = Chunk73800.memo(function() {
 function el() {
   return (0, Chunk255367.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
-    className: Chunk538778.icon,
+    className: Chunk82504.icon,
     width: "24",
     height: "24",
     viewBox: "0 0 24 24",

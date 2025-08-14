@@ -16,8 +16,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk613734 = require("./613734.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk244146 = require("./244146.js"),
-  Chunk979527 = require("./979527.js");
+  Chunk707489 = require("./707489.js"),
+  Chunk186425 = require("./186425.js");
 
 function C(e) {
   let {
@@ -30,19 +30,10 @@ function C(e) {
   a.useEffect(() => {
     T(null != I ? I : ""), f(j === u.bK.SOMETHING_ELSE)
   }, [I, j, t]);
-  let S = e => {
-      f(e === u.bK.SOMETHING_ELSE), e !== u.bK.SOMETHING_ELSE && (T(""), c.Z.dispatch({
-        type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
-        userInput: ""
-      })), c.Z.dispatch({
-        type: "SAFETY_HUB_APPEAL_SIGNAL_SELECT",
-        signal: e
-      })
-    },
-    k = u.RY.map(e => ({
-      value: e,
-      name: (0, m.ox)(e)
-    }));
+  let S = u.RY.map(e => ({
+    value: e,
+    name: (0, m.ox)(e)
+  }));
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(o.xBx, {
       "data-migration-pending": true,
@@ -71,12 +62,18 @@ function C(e) {
         radioItemClassName: g.radioItem,
         size: o.FXm.Sizes.NOT_SET,
         value: j,
-        options: k,
+        options: S,
         onChange: e => {
           let {
             value: n
           } = e;
-          return S(n)
+          f(n === u.bK.SOMETHING_ELSE), n !== u.bK.SOMETHING_ELSE && (T(""), c.Z.dispatch({
+            type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
+            userInput: ""
+          })), c.Z.dispatch({
+            type: "SAFETY_HUB_APPEAL_SIGNAL_SELECT",
+            signal: n
+          })
         }
       }), t && v && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.Kx8, {

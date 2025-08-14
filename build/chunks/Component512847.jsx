@@ -176,7 +176,7 @@ function U() {
       o = Chunk199902.Z.getAllActiveStreams();
     if (null != require) {
       let r = Chunk592125.Z.getChannel(require);
-      null != Chunk255367 && (e = Chunk255367.type, t = Chunk938475.ZP.countVoiceStatesForChannel(Chunk255367.id) - +!!Chunk979651.Z.isInChannel(Chunk255367.id), i = Chunk199902.Z.getAllApplicationStreamsForChannel(Chunk255367.id).map(e => e.ownerId))
+      null != Chunk255367 && (e = Chunk255367.type, t = Chunk938475.ZP.countVoiceStatesForChannel(Chunk255367.id) - !!Chunk979651.Z.isInChannel(Chunk255367.id), i = Chunk199902.Z.getAllApplicationStreamsForChannel(Chunk255367.id).map(e => e.ownerId))
     }
     let s = null;
     return (null == (s = 1 === Chunk317381.length ? Chunk317381[0] : Chunk199902.Z.getCurrentUserActiveStream()) ? true : Chunk16609.state) === Chunk981631.jm8.CONNECTING && (s = null), null != Chunk16609 && (l = (0, Chunk569545.V9)(Chunk16609), a = Chunk199902.Z.getViewerIds(Chunk392711).filter(e => e !== r).length), {

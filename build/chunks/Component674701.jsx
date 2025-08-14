@@ -34,7 +34,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk182294 = require("./182294.js"),
   Chunk957825 = require("./957825.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk891509 = require("./891509.js"),
+  Chunk553517 = require("./553517.js"),
   L = function(e) {
     return e.SYSTEM_MESSAGE = "system_message", e.COACHMARK = "coachmark", e
   }({});
@@ -47,8 +47,8 @@ function x(e) {
     onMouseEnter: L,
     onMouseLeave: x,
     popoutPosition: M,
-    analyticsPage: j,
-    analyticsSection: k,
+    analyticsPage: k,
+    analyticsSection: j,
     glow: U,
     giftIntentSecondaryAction: G
   } = e, B = (0, l.e7)([y.default], () => y.default.getCurrentUser()), {
@@ -94,8 +94,8 @@ function x(e) {
         analyticsLocation: "system_message" === n ? r.chat : r.actionButtonCoachmark,
         analyticsLocations: Z,
         analyticsObject: {
-          page: j,
-          section: k,
+          page: k,
+          section: j,
           object: C.qAy.BUTTON_CTA,
           objectType: C.Qqv.GIFT
         },

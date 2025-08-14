@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk18172 = require("./18172.js");
+  Chunk264815 = require("./264815.js");
 let g = Object.values(Chunk987650.wF).map(e => 100 * e),
   m = (0, Chunk313201.hQ)();
 class y extends Chunk73800.PureComponent {
@@ -28,14 +28,14 @@ class y extends Chunk73800.PureComponent {
   }
   render() {
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk18172.container,
+      className: Chunk264815.container,
       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
         id: m,
         tag: Chunk481060.RB0.H5,
-        className: Chunk18172.title,
+        className: Chunk264815.title,
         children: Chunk388032.intl.string(Chunk388032.t.OVovCQ)
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk18172.sliderContainer,
+        className: Chunk264815.sliderContainer,
         children: (0, Chunk255367.jsx)(Chunk481060.iRW, {
           mini: true,
           initialValue: this.initialValue,
@@ -55,13 +55,15 @@ class y extends Chunk73800.PureComponent {
     })
   }
   constructor(...e) {
-    var t, n;
-    super(...e), t = "initialValue", n = 100 * this.props.opacity, t in this ? Object.defineProperty(this, t, {
-      value: n,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[t] = n
+    super(...e),
+      function(e, t, n) {
+        t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
+      }(this, "initialValue", 100 * this.props.opacity)
   }
 }
 let O = Chunk442837.ZP.connectStores([Chunk237997.default], () => ({

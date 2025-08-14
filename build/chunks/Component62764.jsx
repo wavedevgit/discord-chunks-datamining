@@ -38,10 +38,10 @@ var Chunk255367 = require("./255367.js"),
   Chunk228392 = require("./228392.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk130883 = require("./130883.js"),
-  Chunk691697 = require("./691697.js"),
-  Chunk454104 = require("./454104.js"),
-  Chunk837601 = require("./837601.js");
+  Chunk764295 = require("./764295.js"),
+  Chunk319720 = require("./319720.js"),
+  Chunk214785 = require("./214785.js"),
+  Chunk127947 = require("./127947.js");
 
 function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -116,7 +116,7 @@ function q(e) {
   return (0, r.jsx)(c.zxk, {
     size: "sm",
     variant: "secondary",
-    text: o ? j.intl.string(k.default["2Y4vkp"]) : j.intl.string(k.default.YIbR4u),
+    text: o ? k.intl.string(j.default["2Y4vkp"]) : k.intl.string(j.default.YIbR4u),
     onClick: f,
     loading: s,
     icon: c.dz2,
@@ -133,7 +133,7 @@ function X(e) {
   } = e, {
     ref: v,
     width: I
-  } = (0, f.ZP)(), [S, k] = i.useState(W), [Z, V] = i.useState(!n), [X, Q] = (0, _.Z)(false, Y), J = (0, s.e7)([R.Z], () => R.Z.getChannel(t), [t]), {
+  } = (0, f.ZP)(), [S, j] = i.useState(W), [Z, V] = i.useState(!n), [X, Q] = (0, _.Z)(false, Y), J = (0, s.e7)([R.Z], () => R.Z.getChannel(t), [t]), {
     firstMessage: $
   } = (0, L.cl)(J), ee = (0, s.e7)([N.Z], () => N.Z.hasJoined(t)), {
     disableReactionUpdates: et,
@@ -161,7 +161,7 @@ function X(e) {
   });
   let [ed, ef] = i.useState(true);
   if (i.useEffect(() => {
-      null != I && (k(Math.floor((I - K) / z)), ef(false))
+      null != I && (j(Math.floor((I - K) / z)), ef(false))
     }, [I]), null == J || null == $) return null;
   let e_ = $.reactions.length > 0,
     ep = () => {
@@ -241,44 +241,44 @@ function X(e) {
             [U.hasNoReactions]: !e_
           }),
           isForumToolbar: true,
-          children: !e_ && j.intl.string(j.t.xpOyTE)
+          children: !e_ && k.intl.string(k.t.xpOyTE)
         })]
       }), (0, r.jsxs)("div", {
         className: U.buttons,
         children: [ea ? (0, r.jsx)(q, {
           channel: J
         }) : (0, r.jsx)(c.ua7, {
-          text: j.intl.string(j.t.F7oeDg),
+          text: k.intl.string(k.t.F7oeDg),
           children: e => (0, r.jsx)(c.zxk, H(F({}, e), {
             icon: eg,
             size: "sm",
             variant: "secondary",
-            text: ee ? j.intl.string(j.t["7OkUzs"]) : j.intl.string(j.t["3aOv+v"]),
+            text: ee ? k.intl.string(k.t["7OkUzs"]) : k.intl.string(k.t["3aOv+v"]),
             onClick: ep
           }))
         }), (0, r.jsx)(c.ua7, {
-          text: j.intl.string(j.t.WqhZsr),
+          text: k.intl.string(k.t.WqhZsr),
           children: e => X ? (0, r.jsx)(c.zxk, H(F({}, e), {
             icon: c.dz2,
             size: "sm",
             variant: "secondary",
             onClick: eh,
-            text: j.intl.string(j.t["t5VZ8/"])
+            text: k.intl.string(k.t["t5VZ8/"])
           })) : (0, r.jsx)(c.hU, H(F({}, e), {
             icon: c.xPt,
             size: "sm",
             variant: "secondary",
             onClick: eh,
-            "aria-label": j.intl.string(j.t.WqhZsr)
+            "aria-label": k.intl.string(k.t.WqhZsr)
           }))
         }), !n && (0, r.jsx)(c.ua7, {
-          text: j.intl.string(j.t.nFP4oa),
+          text: k.intl.string(k.t.nFP4oa),
           children: e => (0, r.jsx)(c.hU, H(F({}, e), {
             icon: c.Za2,
             size: "sm",
             variant: "secondary",
             onClick: em,
-            "aria-label": j.intl.string(j.t.nFP4oa)
+            "aria-label": k.intl.string(k.t.nFP4oa)
           }))
         })]
       })]

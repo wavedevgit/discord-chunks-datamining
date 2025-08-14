@@ -15,8 +15,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk56314 = require("./56314.js"),
   Chunk566006 = require("./566006.js"),
   Chunk287151 = require("./287151.jsx"),
-  Chunk837601 = require("./837601.js"),
-  Chunk371958 = require("./371958.js");
+  Chunk127947 = require("./127947.js"),
+  Chunk893973 = require("./893973.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -108,7 +108,7 @@ let v = Chunk73800.memo(function(e) {
     } = P, o = null != (M = (0, s.wK)(null != r ? r : "", i)) ? M : "";
     R && (x.borderColor = r), x.background = o, t = e, n = e
   }
-  let j = {
+  let k = {
     minWidth: L,
     color: t,
     borderColor: n
@@ -129,7 +129,7 @@ let v = Chunk73800.memo(function(e) {
       animated: C && c.animated
     }), (0, r.jsx)("div", {
       className: w.reactionCount,
-      style: j,
+      style: k,
       children: D
     })]
   })

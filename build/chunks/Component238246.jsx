@@ -44,7 +44,7 @@ var Chunk587061 = require("./587061.js"),
   Chunk928518 = require("./928518.js"),
   Chunk981631 = require("./981631.js"),
   Chunk501787 = require("./501787.js"),
-  Chunk894971 = require("./894971.js");
+  Chunk413943 = require("./413943.js");
 
 function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -182,12 +182,12 @@ class z extends(r = Chunk73800.Component) {
                   children: (0, Chunk255367.jsx)(Chunk260035.m, {
                     children: (0, Chunk255367.jsxs)(Chunk314910.yP, {
                       children: [(0, Chunk255367.jsxs)("div", {
-                        className: Chunk894971.popout,
+                        className: Chunk413943.popout,
                         children: [Chunk175724 && (0, Chunk255367.jsx)(Chunk950796.TF, {
                           windowKey: r,
                           short: true
                         }), null, (0, Chunk255367.jsx)("div", {
-                          className: s()(Chunk894971.content, Chunk731965),
+                          className: s()(Chunk413943.content, Chunk731965),
                           children: require
                         })]
                       }), !Chunk442837 && (0, Chunk255367.jsx)(Chunk481060.nKe, {}), (0, Chunk255367.jsx)(Chunk490173.Z, {}), (0, Chunk255367.jsx)(Chunk314910.Un, {})]
@@ -206,7 +206,7 @@ class z extends(r = Chunk73800.Component) {
       let {
         onBeforeUnload: t
       } = this.props, n = () => {
-        G.Z.unmountWindow(this.props.windowKey), M.isPlatformEmbedded && k.ZP.close(this.props.windowKey)
+        G.Z.unmountWindow(this.props.windowKey), M.isPlatformEmbedded && j.ZP.close(this.props.windowKey)
       };
       null != t ? t({
         e,

@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 526371, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -18,9 +18,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk498646 = require("./498646.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk603571 = require("./603571.js"),
+  Chunk511479 = require("./511479.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk472551 = require("./472551.js"),
+  Chunk17242 = require("./17242.js"),
   Chunk394637 = require("./394637.js");
 
 function C() {
@@ -40,8 +40,8 @@ function C() {
     exports ? null == (n = module.current) || require.play() : null == (i = module.current) || Chunk255367.pause()
   }, [exports]), (0, Chunk255367.jsx)(Chunk314910.ZP, {
     children: (0, Chunk255367.jsxs)(Chunk481060.P3F, {
-      className: a()(Chunk472551.wrapper, {
-        [Chunk472551.wrapperHovered]: exports
+      className: a()(Chunk17242.wrapper, {
+        [Chunk17242.wrapperHovered]: exports
       }),
       onMouseEnter: () => require(true),
       onMouseLeave: () => require(false),
@@ -51,50 +51,50 @@ function C() {
         })
       },
       children: [(0, Chunk255367.jsxs)("div", {
-        className: Chunk472551.hiddenWhileNotHovered,
+        className: Chunk17242.hiddenWhileNotHovered,
         children: [(0, Chunk255367.jsxs)(Chunk481060.P3F, {
-          className: Chunk472551.dismiss,
+          className: Chunk17242.dismiss,
           onClick: e => {
             e.stopPropagation(), h(b.L.USER_DISMISS)
           },
           children: [(0, Chunk255367.jsx)(Chunk481060.P$X, {
-            className: Chunk472551.dismissIcon,
+            className: Chunk17242.dismissIcon,
             color: "currentColor"
           }), (0, Chunk255367.jsx)(Chunk793030.xv, {
             color: "currentColor",
             variant: "text-xs/bold",
-            children: Chunk388032.intl.string(Chunk603571.default.AsH93d)
+            children: Chunk388032.intl.string(Chunk511479.default.AsH93d)
           })]
         }), (0, Chunk255367.jsx)("iframe", {
-          className: Chunk472551.video,
+          className: Chunk17242.video,
           src: "https://www.youtube.com/embed/".concat("h-9SUgIeJnY", "?rel=0&showinfo=0&controls=1&origin=https://").concat(Chunk981631.$R1),
           allowFullScreen: true,
           sandbox: "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
         })]
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk472551.background,
+        className: Chunk17242.background,
         children: (0, Chunk255367.jsx)("div", {
-          className: Chunk472551.backgroundGradient
+          className: Chunk17242.backgroundGradient
         })
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk472551.foreground,
+        className: Chunk17242.foreground,
         children: [(0, Chunk255367.jsx)("img", {
-          className: Chunk472551.icon,
+          className: Chunk17242.icon,
           src: Chunk394637,
           alt: ""
         }), (0, Chunk255367.jsxs)("div", {
-          className: Chunk472551.text,
+          className: Chunk17242.text,
           children: [(0, Chunk255367.jsx)(Chunk793030.xv, {
             variant: "text-md/bold",
             color: "always-white",
-            children: Chunk388032.intl.string(Chunk603571.default["7qZdOz"])
+            children: Chunk388032.intl.string(Chunk511479.default["7qZdOz"])
           }), (0, Chunk255367.jsx)(Chunk793030.xv, {
             variant: "text-sm/medium",
             color: "always-white",
-            children: Chunk388032.intl.string(Chunk603571.default.orfMLS)
+            children: Chunk388032.intl.string(Chunk511479.default.orfMLS)
           })]
         }), (0, Chunk255367.jsx)(Chunk481060.d4D, {
-          className: Chunk472551.arrow,
+          className: Chunk17242.arrow,
           color: "black"
         })]
       })]

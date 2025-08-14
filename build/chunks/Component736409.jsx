@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 736409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => C
+  j: () => v
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -21,12 +21,12 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk46140 = require("./46140.js");
-let C = e => {
+let v = e => {
   let {
     children: t,
     isForceShowSharingPopout: n,
-    setIsForceShowSharingPopout: C
-  } = e, [v, j] = (0, i.useState)(false), E = function(e) {
+    setIsForceShowSharingPopout: v
+  } = e, [j, C] = (0, i.useState)(false), E = function(e) {
     let {
       isForceShowSharingPopout: t
     } = e, {
@@ -34,24 +34,24 @@ let C = e => {
       showActivitySharingIndicatorWhenSharing: r
     } = (0, m.D)("SharingPrivacyPopout"), i = (0, d.Ws)({
       location: y.dr.CONFLICT_CHECKS
-    }), o = h.G6.useSetting(), s = (0, l.e7)([p.Z], () => p.Z.getLayers().includes(O.S9g.USER_SETTINGS)), a = (0, l.e7)([f.Z], () => f.Z.getStatus()), {
+    }), o = p.G6.useSetting(), a = (0, l.e7)([f.Z], () => f.Z.getLayers().includes(O.S9g.USER_SETTINGS)), s = (0, l.e7)([h.Z], () => h.Z.getStatus()), {
       isOpen: c
     } = (0, u.Z)();
-    if ((i || !i && t) && !s && !c && !__OVERLAY__ && n) {
-      if (r && o && a !== O.Skl.INVISIBLE) return t ? b.N.Activity : null;
-      if (!o && a === O.Skl.INVISIBLE) return t ? b.N.ActivityAndStatus : b.N.ActivityAndStatusNux;
+    if ((i || !i && t) && !a && !c && !__OVERLAY__ && n) {
+      if (r && o && s !== O.Skl.INVISIBLE) return t ? b.N.Activity : null;
+      if (!o && s === O.Skl.INVISIBLE) return t ? b.N.ActivityAndStatus : b.N.ActivityAndStatusNux;
       if (!o) return t ? b.N.Activity : b.N.ActivityNux;
-      if (a === O.Skl.INVISIBLE) return t ? b.N.Status : b.N.StatusNux
+      if (s === O.Skl.INVISIBLE) return t ? b.N.Status : b.N.StatusNux
     }
     return null
   }({
     isForceShowSharingPopout: n
-  }), S = (0, i.useRef)(null);
+  }), x = (0, i.useRef)(null);
   return ((0, i.useEffect)(() => {
     n && g.default.track(O.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
     })
-  }, [n]), null != E || v) ? (0, r.jsx)(c.ZP, {
+  }, [n]), null != E || j) ? (0, r.jsx)(c.ZP, {
     contentTypes: n ? [] : [o.z.SHARE_ACTIVITY_COACHMARK_V2],
     children: e => {
       let {
@@ -59,12 +59,12 @@ let C = e => {
       } = e;
       if (i === o.z.SHARE_ACTIVITY_COACHMARK_V2 || n) {
         let e = () => {
-          (0, a.Q3)(o.z.SHARE_ACTIVITY_COACHMARK_V2, {
+          (0, s.Q3)(o.z.SHARE_ACTIVITY_COACHMARK_V2, {
             dismissAction: _.L.USER_DISMISS
-          }), C(false), j(false)
+          }), v(false), C(false)
         };
-        return (0, r.jsx)(s.yRy, {
-          targetElementRef: S,
+        return (0, r.jsx)(a.yRy, {
+          targetElementRef: x,
           shouldShow: true,
           spacing: 10,
           position: "top",
@@ -76,12 +76,12 @@ let C = e => {
             } = e;
             return (0, r.jsx)(b.I, {
               closePopout: t,
-              onOpen: () => j(true),
+              onOpen: () => C(true),
               popoutState: E
             })
           },
-          children: () => (0, r.jsx)(s.P3F, {
-            innerRef: S,
+          children: () => (0, r.jsx)(a.P3F, {
+            innerRef: x,
             onClick: e,
             children: t
           })

@@ -1,12 +1,12 @@
-/** Chunk was on 873 **/
+/** Chunk was on 1355 **/
 /** chunk id: 727381, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => h
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk271383 = require("./271383.js"),
@@ -19,13 +19,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk908474 = require("./908474.jsx"),
   Chunk467014 = require("./467014.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk983843 = require("./983843.js");
+  Chunk87819 = require("./87819.js");
 
-function f() {
+function N() {
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk983843.header,
+    className: Chunk87819.header,
     children: [(0, Chunk255367.jsxs)("div", {
-      className: Chunk983843.headerTitle,
+      className: Chunk87819.headerTitle,
       children: [(0, Chunk255367.jsx)(Chunk777288.Z, {
         width: 16,
         height: 16
@@ -36,39 +36,39 @@ function f() {
     }), (0, Chunk255367.jsx)("div", {
       children: (0, Chunk255367.jsx)(Chunk481060.M2$, {
         shortcut: "esc",
-        keyClassName: Chunk983843.keyComboInner,
-        className: Chunk983843.keyComboContainer
+        keyClassName: Chunk87819.keyComboInner,
+        className: Chunk87819.keyComboContainer
       })
     })]
   })
 }
 
-function N(e) {
+function h(e) {
   let {
     userId: t,
     guildId: n,
     location: l,
     className: c,
     onNavigate: I
-  } = e, N = (0, i.e7)([u.default], () => u.default.getUser(t), [t]), h = (0, i.e7)([o.ZP], () => o.ZP.getMember(n, t), [n, t]);
-  return null == N || null == h ? null : (0, r.jsxs)("div", {
-    className: s()(g.container, c),
-    children: [(0, r.jsx)(f, {}), (0, r.jsxs)(a.Ttm, {
+  } = e, h = (0, s.e7)([u.default], () => u.default.getUser(t), [t]), f = (0, s.e7)([o.ZP], () => o.ZP.getMember(n, t), [n, t]);
+  return null == h || null == f ? null : (0, r.jsxs)("div", {
+    className: i()(g.container, c),
+    children: [(0, r.jsx)(N, {}), (0, r.jsxs)(a.Ttm, {
       className: g.innerContainer,
       children: [(0, r.jsx)(T.Z, {
-        member: h
+        member: f
       }), (0, r.jsx)(m.Z, {
         userId: t,
         guildId: n
       }), (0, r.jsx)(A.Z, {
-        member: h,
+        member: f,
         onNavigate: I
       }), (0, r.jsx)(d.Z, {
-        member: h
+        member: f
       }), (0, r.jsx)(E.Z, {
-        member: h
+        member: f
       }), (0, r.jsx)(_.Z, {
-        member: h
+        member: f
       })]
     })]
   })

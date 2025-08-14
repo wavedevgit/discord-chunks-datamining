@@ -31,7 +31,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk495130 = require("./495130.js");
+  Chunk547660 = require("./547660.js");
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -90,8 +90,8 @@ function x(e, t) {
   return i
 }
 let M = 43,
-  j = 25,
-  k = 40,
+  k = 25,
+  j = 40,
   U = 250;
 
 function G(e) {
@@ -142,17 +142,17 @@ class F extends Chunk73800.PureComponent {
       jumping: e
     } = this.props;
     return (0, Chunk255367.jsxs)(Chunk481060.P3F, {
-      className: Chunk495130.jumpButton,
+      className: Chunk547660.jumpButton,
       onClick: this.handleClickJump,
       children: [(0, Chunk255367.jsx)("div", {
-        className: a()(Chunk495130.__invalid_text, {
+        className: a()(Chunk547660.__invalid_text, {
           hidden: module
         }),
         children: Chunk388032.intl.string(Chunk388032.t.k5WiPT)
       }), (0, Chunk255367.jsx)(Chunk481060.$jN, {
         type: Chunk481060.$jN.Type.PULSING_ELLIPSIS,
-        className: a()(Chunk495130.loading, {
-          [Chunk495130.visible]: module
+        className: a()(Chunk547660.loading, {
+          [Chunk547660.visible]: module
         })
       })]
     })
@@ -171,13 +171,13 @@ class F extends Chunk73800.PureComponent {
       children: (0, Chunk255367.jsx)(Chunk481060.Dio, {
         size: "md",
         color: "currentColor",
-        className: Chunk495130.closeIcon
+        className: Chunk547660.closeIcon
       })
     }) : null
   }
   render() {
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk495130.actionButtons,
+      className: Chunk547660.actionButtons,
       children: [this.renderJumpButton(), this.renderCloseButton()]
     })
   }
@@ -288,9 +288,9 @@ function H(e) {
       })
     }) : null,
     z = {
-      maxHeight: Z.height - M - j - 48
+      maxHeight: Z.height - M - k - 48
     };
-  B && (z.maxHeight -= k);
+  B && (z.maxHeight -= j);
   let q = null != _ && o;
   return (0, r.jsx)("div", {
     className: a()(O, C.messagesPopoutWrap),

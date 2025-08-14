@@ -39,8 +39,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk477839 = require("./477839.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk603571 = require("./603571.js"),
-  Chunk555993 = require("./555993.js");
+  Chunk511479 = require("./511479.js"),
+  Chunk964719 = require("./964719.js");
 
 function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -120,7 +120,7 @@ let V = e => {
       return Q ? m.Z.getChannel(null == (e = E.Z.getVoiceStateForUser(i.id)) ? true : e.channelId) : null
     });
     if ((null == t ? true : t.application_id) === M.bO) return t = F(B({}, t), {
-      buttons: [j.intl.string(k.default["Fv/2Oz"])],
+      buttons: [k.intl.string(j.default["Fv/2Oz"])],
       metadata: {
         button_urls: [M.U8]
       }

@@ -11,7 +11,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk493773 = require("./493773.js"),
   Chunk930295 = require("./930295.jsx"),
   Chunk126306 = require("./126306.jsx"),
-  Chunk188833 = require("./188833.js");
+  Chunk974101 = require("./974101.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -134,7 +134,7 @@ class y extends(r = Chunk73800.Component) {
       onRequestOpen: require,
       onRequestClose: r,
       onShiftClick: Chunk126306,
-      positionKey: Chunk188833,
+      positionKey: Chunk974101,
       popoutKey: d,
       disablePointerEvents: _,
       ignoreModalClicks: p,

@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 510273, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -11,8 +11,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk955204 = require("./955204.js"),
   Chunk818765 = require("./818765.js"),
   Chunk674680 = require("./674680.jsx"),
-  Chunk877588 = require("./877588.js");
-let h = e => {
+  Chunk229450 = require("./229450.js");
+let p = e => {
   let {
     color: t
   } = e;
@@ -64,19 +64,19 @@ let h = e => {
   })
 };
 
-function p(e) {
+function f(e) {
   let {
     achievement: t,
     unlocked: n
   } = e, {
     name: l,
-    description: p,
-    rarity: f,
+    description: f,
+    rarity: h,
     hideDescriptionUntilUnlock: g,
     onAction: m
   } = t, {
     color: b
-  } = (0, a.F7)(f);
+  } = (0, s.F7)(h);
   i.useEffect(() => {
     let e = setTimeout(() => {
       c.Z.playAchievementUnlockSound()
@@ -86,7 +86,7 @@ function p(e) {
     }
   }, []);
   let O = null != m && n,
-    _ = O ? s.P3F : "div";
+    _ = O ? a.P3F : "div";
   return (0, r.jsxs)(_, {
     className: o()(d.container, O && d.actionable),
     onClick: () => {
@@ -101,18 +101,18 @@ function p(e) {
       })
     }), (0, r.jsxs)("div", {
       className: d.__invalid_nameContainer,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: l()
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        children: g && !n ? "?????" : p()
+        children: g && !n ? "?????" : f()
       })]
     }), (0, r.jsx)("div", {
       className: d.flair,
-      children: (0, r.jsx)(h, {
+      children: (0, r.jsx)(p, {
         color: b
       })
     })]

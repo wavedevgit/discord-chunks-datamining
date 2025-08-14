@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk354459 = require("./354459.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk351222 = require("./351222.js");
+  Chunk238377 = require("./238377.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -156,7 +156,7 @@ function L(e) {
     compact: b = false,
     disableInteraction: v = false,
     maxVisibleUsers: T = 3
-  } = e, A = i.useRef(null), R = (0, p.Z)(), [L, x] = i.useState(false), M = i.useRef(new u.sW(C, () => x(false))), j = (0, c.Wu)([m.Z, g.default], () => {
+  } = e, A = i.useRef(null), R = (0, p.Z)(), [L, x] = i.useState(false), M = i.useRef(new u.sW(C, () => x(false))), k = (0, c.Wu)([m.Z, g.default], () => {
     if (s.type === y.fO.STREAM) {
       let e = m.Z.getViewerIds(s.id);
       return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : D
@@ -166,14 +166,14 @@ function L(e) {
   i.useEffect(() => {
     R && (M.current.cancel(), x(false))
   }, [R]);
-  let k = i.useCallback(() => {
+  let j = i.useCallback(() => {
       M.current.cancel(), x(true)
     }, []),
     U = i.useCallback(() => {
       M.current.delay()
     }, []),
     G = i.useCallback((e, t) => {
-      k(), (0, f.jW)(e, async () => {
+      j(), (0, f.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
@@ -183,29 +183,29 @@ function L(e) {
       }, {
         onClose: U
       })
-    }, [U, k]);
-  if (0 === j.length) return null;
+    }, [U, j]);
+  if (0 === k.length) return null;
   if (b) return (0, r.jsx)(w, {
     maxVisibleUsers: T,
-    users: j,
+    users: k,
     guildId: o,
     channelId: t,
     className: h,
     participantType: s.type
   });
-  let B = l()(j).take(T).map(e => (0, r.jsx)(d.qEK, {
+  let B = l()(k).take(T).map(e => (0, r.jsx)(d.qEK, {
     src: e.getAvatarURL(o, 24),
     "aria-label": e.username,
     size: d.EFr.SIZE_24,
     className: I.viewer
   }, e.id)).value();
-  return j.length > T && (B[B.length - 1] = (0, r.jsxs)("div", {
+  return k.length > T && (B[B.length - 1] = (0, r.jsxs)("div", {
     className: I.overflow,
-    children: ["+", j.length - T + 1]
+    children: ["+", k.length - T + 1]
   }, "overflow")), (0, r.jsx)(_.Z, {
     section: O.jXE.STREAM_VIEWER_POPOUT,
     children: (0, r.jsx)("div", {
-      onMouseEnter: k,
+      onMouseEnter: j,
       onMouseLeave: U,
       children: (0, r.jsx)(d.yRy, {
         targetElementRef: A,
@@ -214,7 +214,7 @@ function L(e) {
           handleUserContextMenu: G,
           guildId: o,
           channelId: t,
-          users: j,
+          users: k,
           disableInteraction: v
         }),
         shouldShow: L && !R,

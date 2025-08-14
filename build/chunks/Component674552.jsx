@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 674552, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ne: () => f,
+  Ne: () => h,
   Ny: () => g,
   Or: () => b,
   jt: () => O
@@ -16,9 +16,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk246364 = require("./246364.js"),
   Chunk460562 = require("./460562.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk770054 = require("./770054.js");
+  Chunk816827 = require("./816827.js");
 
-function p(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function p(e) {
   return e
 }
 
-function f(e, t, n) {
+function h(e, t, n) {
   return (0, r.jsx)(o.mAB, {
     count: e,
     color: t,
@@ -49,19 +49,19 @@ function g() {
   return (0, Chunk255367.jsx)(Chunk481060.G2e, {
     icon: (0, Chunk481060.GSL)(Chunk460562.Z),
     disableColor: true,
-    className: Chunk770054.unavailableBadge
+    className: Chunk816827.unavailableBadge
   })
 }
 
 function m(e) {
   let {
     enabled: t
-  } = s.c.useExperiment({
+  } = a.c.useExperiment({
     location: "renderMediaBadge"
   }, {
     autoTrackExposure: true
   }), n = t ? o.iWm : o.nG3;
-  return (0, r.jsx)(n, p({}, e))
+  return (0, r.jsx)(n, f({}, e))
 }
 
 function b(e) {
@@ -70,12 +70,12 @@ function b(e) {
     video: r,
     screenshare: i,
     isCurrentUserConnected: l,
-    liveStage: s,
-    activeEvent: a,
+    liveStage: a,
+    activeEvent: s,
     activity: c
   } = e;
-  if (a) t = o.Que;
-  else if (s) t = o.ewx;
+  if (s) t = o.Que;
+  else if (a) t = o.ewx;
   else if (i) t = o.pzj;
   else if (r) t = o.Odl;
   else if (n) t = o.gj8;
@@ -115,15 +115,15 @@ function _(e) {
     icon: t,
     color: n,
     isCurrentUserConnected: i
-  } = e, s = null == n ? {
+  } = e, a = null == n ? {
     disableColor: true
   } : {
-    color: (0, a.Lq)(n)
+    color: (0, s.Lq)(n)
   };
-  return (0, r.jsx)(o.G2e, p({
+  return (0, r.jsx)(o.G2e, f({
     icon: t,
-    className: l()(h.iconBadge, {
-      [h.isCurrentUserConnected]: i
+    className: l()(p.iconBadge, {
+      [p.isCurrentUserConnected]: i
     })
-  }, s))
+  }, a))
 }

@@ -16,7 +16,7 @@ var Chunk997945 = require("./997945.js"),
   Chunk760260 = require("./760260.js"),
   Chunk448578 = require("./448578.js"),
   Chunk946185 = require("./946185.js"),
-  Chunk536596 = require("./536596.js"),
+  Chunk480423 = require("./480423.js"),
   Chunk273593 = require("./273593.js"),
   Chunk665801 = require("./665801.js"),
   Chunk818143 = require("./818143.js"),
@@ -110,7 +110,7 @@ function P() {
     name: Chunk388032.intl.string(Chunk388032.t["2Tf+c3"])
   }, {
     id: Chunk997945.Ru.CIRCUIT,
-    iconSource: Chunk536596,
+    iconSource: Chunk480423,
     isPremium: true,
     name: Chunk388032.intl.string(Chunk388032.t.dUpxKS)
   }, {

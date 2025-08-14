@@ -1,4 +1,4 @@
-/** Chunk was on 873 **/
+/** Chunk was on 1355 **/
 /** chunk id: 101695, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk58922 = require("./58922.js");
+  Chunk254610 = require("./254610.js");
 
 function a(e) {
   let {
@@ -19,8 +19,8 @@ function a(e) {
     t(e - 1)
   }, [t]);
   return (0, r.jsx)("div", {
-    className: i.container,
-    children: (0, r.jsx)(s.DsT, {
+    className: s.container,
+    children: (0, r.jsx)(i.DsT, {
       currentPage: c,
       totalCount: a,
       pageSize: o,

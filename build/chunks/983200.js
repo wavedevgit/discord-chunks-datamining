@@ -1,12 +1,12 @@
-/** Chunk was on 54214 **/
+/** Chunk was on 9456 **/
 /** chunk id: 983200, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   $x: () => l,
   GV: () => s,
-  S$: () => g,
+  S$: () => h,
   Vn: () => o,
-  tu: () => m
+  tu: () => u
 });
 var Chunk73800 = require("./73800.js"),
   Chunk31775 = require("./31775.js"),
@@ -15,88 +15,11 @@ let l = 0,
   s = 4,
   o = 4,
   c = "absolute",
-  d = (e, t, n, r) => {
-    if (0 === n) return [];
-    if (1 === n) return [{
-      width: e,
-      height: t,
-      top: 0,
-      left: 0,
-      position: c
-    }];
-    if (2 === n) {
-      let n = Math.ceil((e - r) / 2);
-      return [{
-        top: 0,
-        left: 0,
-        position: c,
-        width: n,
-        height: t
-      }, {
-        top: 0,
-        left: n + r,
-        position: c,
-        width: n,
-        height: t
-      }]
-    }
-    if (3 === n) {
-      let n = Math.ceil((e - r) / 2),
-        i = Math.ceil((t - r) / 2);
-      return [{
-        top: 0,
-        left: 0,
-        position: c,
-        width: n,
-        height: t
-      }, {
-        top: 0,
-        left: n + r,
-        position: c,
-        width: n,
-        height: i
-      }, {
-        top: i + r,
-        left: n + r,
-        position: c,
-        width: n,
-        height: i
-      }]
-    } {
-      let n = Math.ceil((e - r) / 2),
-        i = Math.ceil((t - r) / 2);
-      return [{
-        top: 0,
-        left: 0,
-        position: c,
-        width: n,
-        height: i
-      }, {
-        top: i + r,
-        left: 0,
-        position: c,
-        width: n,
-        height: i
-      }, {
-        top: 0,
-        left: n + r,
-        position: c,
-        width: n,
-        height: i
-      }, {
-        top: i + r,
-        left: n + r,
-        position: c,
-        width: n,
-        height: i
-      }]
-    }
-  },
-  u = new(a())({
+  d = new(a())({
     max: 100
   });
 
-function m(e) {
+function u(e) {
   let {
     numAttachments: t,
     containerWidth: n,
@@ -107,11 +30,87 @@ function m(e) {
       numAttachments: t,
       containerWidth: n,
       containerHeight: r
-    } = e, i = "".concat(t, "-").concat(n, "-").concat(r), a = u.get(i);
+    } = e, i = "".concat(t, "-").concat(n, "-").concat(r), a = d.get(i);
     if (null != a) return a;
     {
-      let e = d(n, r, t, 4);
-      return u.set(i, e), e
+      let e = ((e, t, n, r) => {
+        if (0 === n) return [];
+        if (1 === n) return [{
+          width: e,
+          height: t,
+          top: 0,
+          left: 0,
+          position: c
+        }];
+        if (2 === n) {
+          let n = Math.ceil((e - r) / 2);
+          return [{
+            top: 0,
+            left: 0,
+            position: c,
+            width: n,
+            height: t
+          }, {
+            top: 0,
+            left: n + r,
+            position: c,
+            width: n,
+            height: t
+          }]
+        }
+        if (3 === n) {
+          let n = Math.ceil((e - r) / 2),
+            i = Math.ceil((t - r) / 2);
+          return [{
+            top: 0,
+            left: 0,
+            position: c,
+            width: n,
+            height: t
+          }, {
+            top: 0,
+            left: n + r,
+            position: c,
+            width: n,
+            height: i
+          }, {
+            top: i + r,
+            left: n + r,
+            position: c,
+            width: n,
+            height: i
+          }]
+        } {
+          let n = Math.ceil((e - r) / 2),
+            i = Math.ceil((t - r) / 2);
+          return [{
+            top: 0,
+            left: 0,
+            position: c,
+            width: n,
+            height: i
+          }, {
+            top: i + r,
+            left: 0,
+            position: c,
+            width: n,
+            height: i
+          }, {
+            top: 0,
+            left: n + r,
+            position: c,
+            width: n,
+            height: i
+          }, {
+            top: i + r,
+            left: n + r,
+            position: c,
+            width: n,
+            height: i
+          }]
+        }
+      })(n, r, t, 4);
+      return d.set(i, e), e
     }
   })({
     numAttachments: t,
@@ -120,7 +119,7 @@ function m(e) {
   }), [t, n, i])
 }
 
-function h(e) {
+function m(e) {
   return e.map((t, n) => ({
     minWidth: 2 * e[n].width,
     minHeight: 2 * e[n].height,
@@ -129,11 +128,11 @@ function h(e) {
   }))
 }
 
-function g(e) {
+function h(e) {
   let {
     imageContainerStyles: t,
     containerWidth: n,
     containerHeight: i
-  } = e, a = r.useRef(h(t)), l = r.useRef(n), s = r.useRef(i), o = n > l.current + 100, c = i > s.current + 100;
-  return (o || c) && (a.current = h(t)), a.current
+  } = e, a = r.useRef(m(t)), l = r.useRef(n), s = r.useRef(i), o = n > l.current + 100, c = i > s.current + 100;
+  return (o || c) && (a.current = m(t)), a.current
 }

@@ -101,7 +101,7 @@ function T(e) {
   if (!(null == x ? true : x.verified)) return void(0, o.ZDy)(async () => {
     let {
       default: e
-    } = await n.e("20102").then(n.bind(n, 444688));
+    } = await Promise.all([n.e("88470"), n.e("20102")]).then(n.bind(n, 444688));
     return t => {
       var {
         onClose: n

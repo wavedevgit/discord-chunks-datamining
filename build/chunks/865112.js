@@ -1,11 +1,11 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 865112, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  RB: () => j,
-  VH: () => y,
-  Vi: () => E,
-  Vu: () => S,
-  q7: () => v
+  RB: () => y,
+  VH: () => O,
+  Vi: () => v,
+  Vu: () => j,
+  q7: () => _
 });
 var Chunk692547 = require("./692547.js"),
   Chunk497089 = require("./497089.js"),
@@ -21,44 +21,33 @@ var Chunk692547 = require("./692547.js"),
   Chunk333722 = require("./333722.js"),
   Chunk549931 = require("./549931.js"),
   Chunk178561 = require("./178561.js"),
-  Chunk39863 = require("./39863.js"),
-  Chunk130312 = require("./130312.js");
-let _ = {
-    CHECKED: Chunk387661,
-    FRIENDS: Chunk319707,
-    SHARE_SCREEN: Chunk39863,
-    NEW_MESSAGE: Chunk549931,
-    GAME_RELATIONSHIP: Chunk962575
-  },
-  y = {
+  Chunk39863 = require("./39863.js");
+let O = {
     MISSED_MESSAGES: Chunk333722,
     FRIEND_REQUEST_REMINDER: Chunk584914,
     SCHEDULED_GUILD_EVENT: Chunk659953,
     TOP_MESSAGES: Chunk334702,
     NOTIFICATION_CENTER: Chunk137492,
-    UPDATE_PROFILE: Chunk130312,
+    UPDATE_PROFILE: require("./130312.js"),
     FIND_FRIENDS: Chunk389765,
     ADD_FRIEND: Chunk389765,
     FIRST_MESSAGE: Chunk178561
   },
-  C = e => {
-    switch (e.item_enum) {
-      case i.AM.ADD_FRIEND:
-        return "ADD_FRIEND";
-      case i.AM.FIND_FRIENDS:
-        return "FIND_FRIENDS";
-      case i.AM.FIRST_MESSAGE:
-        return "FIRST_MESSAGE";
-      case i.AM.UPDATE_PROFILE:
-        return "UPDATE_PROFILE";
-      default:
-        return "NOTIFICATION_CENTER"
-    }
-  },
-  v = e => {
+  _ = e => {
     switch (e.type) {
       case "lifecycle_item":
-        return C(e);
+        switch (e.item_enum) {
+          case i.AM.ADD_FRIEND:
+            return "ADD_FRIEND";
+          case i.AM.FIND_FRIENDS:
+            return "FIND_FRIENDS";
+          case i.AM.FIRST_MESSAGE:
+            return "FIRST_MESSAGE";
+          case i.AM.UPDATE_PROFILE:
+            return "UPDATE_PROFILE";
+          default:
+            return "NOTIFICATION_CENTER"
+        }
       case "missed_messages":
         return "MISSED_MESSAGES";
       case "friend_request_reminder":
@@ -71,42 +60,42 @@ let _ = {
         return "NOTIFICATION_CENTER"
     }
   },
-  j = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
-  E = e => {
+  y = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
+  v = e => {
     switch (e) {
       case i.DY.GO_LIVE_PUSH:
         return {
-          icon: _.SHARE_SCREEN, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: b, color: r.Z.colors.BACKGROUND_ACCENT
         };
       case i.DY.FRIEND_REQUEST_ACCEPTED:
       case i.DY.GAME_FRIEND_REQUEST_ACCEPTED:
         return {
-          icon: _.CHECKED, color: r.Z.colors.STATUS_POSITIVE_BACKGROUND
+          icon: s, color: r.Z.colors.STATUS_POSITIVE_BACKGROUND
         };
       case i.DY.FRIEND_REQUEST_PENDING:
       case i.DY.FRIEND_SUGGESTION_CREATED:
         return {
-          icon: _.FRIENDS, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: u, color: r.Z.colors.BACKGROUND_ACCENT
         };
       case i.DY.DM_FRIEND_NUDGE:
         return {
-          icon: _.NEW_MESSAGE, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: g, color: r.Z.colors.BACKGROUND_ACCENT
         };
       case i.O7.INCOMING_FRIEND_REQUESTS:
       case i.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED:
         return {
-          icon: _.FRIENDS, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: u, color: r.Z.colors.BACKGROUND_ACCENT
         };
       case i.O7.INCOMING_GAME_FRIEND_REQUESTS:
       case i.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:
         return {
-          icon: _.GAME_RELATIONSHIP, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: p, color: r.Z.colors.BACKGROUND_ACCENT
         };
       default:
         return null
     }
   },
-  S = e => {
+  j = e => {
     switch (e.item_enum) {
       case i.AM.UPDATE_PROFILE:
         return l.Y9;

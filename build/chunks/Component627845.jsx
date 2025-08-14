@@ -49,7 +49,7 @@ let m = window.matchMedia("(prefers-reduced-motion: reduce)"),
 
 function I() {
   let e = Chunk594174.default.getCurrentUser();
-  return null == module || Date.now() - +module.createdAt < 864e5
+  return null == module || Date.now() - module.createdAt < 864e5
 }
 
 function T() {

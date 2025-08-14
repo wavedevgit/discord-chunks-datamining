@@ -1,7 +1,7 @@
-/** Chunk was on 67825 **/
+/** Chunk was on 4048 **/
 /** chunk id: 382271, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  m: () => Z
+  m: () => S
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -24,14 +24,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk263885 = require("./263885.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk323889 = require("./323889.js"),
+  Chunk734501 = require("./734501.js"),
   Chunk690813 = require("./690813.js");
-let N = (e, t) => {
-    x.Z.hasLayers() && (0, f.xf)(), m.Z.openPrivateChannel({
-      recipientIds: e
-    }), t()
-  },
-  S = e => {
+let N = e => {
     let {
       recipient: t,
       status: r,
@@ -93,11 +88,16 @@ let N = (e, t) => {
         size: "sm",
         text: E.intl.string(E.t["E+yYpq"]),
         icon: u.kBi,
-        onClick: () => N(t.id, i)
+        onClick: () => {
+          var e;
+          return e = t.id, void(x.Z.hasLayers() && (0, f.xf)(), m.Z.openPrivateChannel({
+            recipientIds: e
+          }), i())
+        }
       })]
     })
   },
-  Z = e => {
+  S = e => {
     let {
       results: t,
       onClose: r
@@ -130,7 +130,7 @@ let N = (e, t) => {
       transitionState: o.D.ENTERED,
       children: (0, a.jsx)("div", {
         className: C.trialRecipientContainer,
-        children: t.map(e => (0, a.jsx)(S, {
+        children: t.map(e => (0, a.jsx)(N, {
           recipient: e.recipient,
           status: e.status,
           onClose: r

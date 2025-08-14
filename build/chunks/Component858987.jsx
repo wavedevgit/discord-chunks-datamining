@@ -113,8 +113,8 @@ function I(e) {
     hasAcceptedTerms: L,
     purchaseType: x,
     paymentSourceId: M,
-    activeSubscription: j,
-    devShelfFetchState: k,
+    activeSubscription: k,
+    devShelfFetchState: j,
     hasPaymentSources: U
   } = (0, c.JL)(), G = O({
     purchaseType: x,
@@ -156,7 +156,7 @@ function I(e) {
       disabled: true
     }))
   });
-  if ((0, u.yE)(null != (t = null == w ? true : w.flags) ? t : 0, p.udG.EMBEDDED) && k === s.O.LOADING) return (0, r.jsx)(a.ua7, {
+  if ((0, u.yE)(null != (t = null == w ? true : w.flags) ? t : 0, p.udG.EMBEDDED) && j === s.O.LOADING) return (0, r.jsx)(a.ua7, {
     text: m.intl.string(m.t.cjA5tr),
     children: e => (0, r.jsx)(a.zxk, y(E({
       variant: "active",
@@ -189,8 +189,8 @@ function I(e) {
       "data-testid": "submitButton"
     }))
   });
-  else if (C && null != j && null != M) return (0, r.jsx)(_.Z, {
-    activeSubscription: j,
+  else if (C && null != k && null != M) return (0, r.jsx)(_.Z, {
+    activeSubscription: k,
     onNext: R,
     isSubmitting: h,
     paymentSourceId: M,

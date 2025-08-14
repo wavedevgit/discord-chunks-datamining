@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 88624, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -16,7 +16,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk594174 = require("./594174.js"),
   Chunk843200 = require("./843200.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk775347 = require("./775347.js");
+  Chunk133365 = require("./133365.js");
 
 function f() {
   let {
@@ -33,10 +33,10 @@ function f() {
   });
   return (0, Chunk255367.jsxs)(Chunk481060.y5t, {
     component: (0, Chunk255367.jsxs)("div", {
-      className: Chunk775347.intro,
+      className: Chunk133365.intro,
       children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
         variant: "heading-xxl/semibold",
-        className: Chunk775347.introHeader,
+        className: Chunk133365.introHeader,
         children: null == module ? Chunk388032.intl.string(Chunk388032.t.iZowCQ) : Chunk388032.intl.string(Chunk388032.t.e7fL7O)
       }), (0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-lg/normal",
@@ -44,7 +44,7 @@ function f() {
       })]
     }),
     children: [(0, Chunk255367.jsx)(Chunk843200.Z, {
-      className: Chunk775347.verificationNotice,
+      className: Chunk133365.verificationNotice,
       unclaimedNotice: Chunk388032.intl.string(Chunk388032.t.vZU8Ki),
       unverifiedNotice: Chunk388032.intl.string(Chunk388032.t.T7TYEB)
     }), (0, Chunk255367.jsx)(Chunk644744.Z, {

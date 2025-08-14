@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk419134 = require("./419134.js"),
+  Chunk12464 = require("./12464.js"),
   Chunk167969 = require("./167969.js"),
   Chunk557256 = require("./557256.js");
 
@@ -98,8 +98,8 @@ let A = Chunk73800.forwardRef((e, t) => {
     limitResponsiveWidth: L = true,
     accessory: x,
     zoomable: M = true,
-    original: j,
-    children: k = e => {
+    original: k,
+    children: j = e => {
       let {
         src: t,
         size: n,
@@ -133,7 +133,7 @@ let A = Chunk73800.forwardRef((e, t) => {
       minHeight: w
     }),
     z = 0 !== K.width ? K.width / K.height : 1;
-  "" !== f && c !== p.zo9.ERROR ? n = k({
+  "" !== f && c !== p.zo9.ERROR ? n = j({
     src: f,
     size: K,
     alt: b,
@@ -164,12 +164,12 @@ let A = Chunk73800.forwardRef((e, t) => {
       }, o),
       style: C(K, L, F, D)
     }, H), {
-      children: [null != j && (0, r.jsx)("a", {
+      children: [null != k && (0, r.jsx)("a", {
         tabIndex: false,
         onClick: G,
         "aria-hidden": true,
         className: g.originalLink,
-        href: j,
+        href: k,
         ref: Y,
         "data-role": "img",
         "data-safe-src": null != Z ? Z : f

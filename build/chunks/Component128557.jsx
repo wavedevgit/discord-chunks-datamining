@@ -32,7 +32,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231873 = require("./231873.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk269651 = require("./269651.js");
+  Chunk183334 = require("./183334.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -111,7 +111,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let t = i.useCallback(() => {
       _.ZP.trackWithMetadata(N.rMx.SERVER_SETUP_CTA_CLICKED, {
         setup_type: C.Ft.CHANNEL_WELCOME,
@@ -119,7 +119,7 @@ function j(e) {
       }), null != e && (0, u.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("7654"), n.e("49049"), n.e("36264")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("49049"), n.e("53020")]).then(n.bind(n, 560114));
         return n => (0, r.jsx)(t, x(D({}, n), {
           guild: e,
           source: N.t4x.CHANNEL_WELCOME,
@@ -157,7 +157,7 @@ function j(e) {
       }), (0, u.ZDy)(async () => {
         let {
           default: e
-        } = await n.e("74023").then(n.bind(n, 431583));
+        } = await Promise.all([n.e("32996"), n.e("74023")]).then(n.bind(n, 431583));
         return t => (0, r.jsx)(e, D({
           source: N.jXE.CHANNEL_WELCOME_CTA
         }, t))
@@ -184,7 +184,7 @@ function j(e) {
   }
 }
 
-function k(e) {
+function j(e) {
   let t = (0, d.Z)(() => new s.Z.Value(0)),
     n = (0, d.Z)(() => new s.Z.Value(0)),
     r = (0, d.Z)(() => [new s.Z.Value(0), new s.Z.Value(0), new s.Z.Value(0), new s.Z.Value(0)]);
@@ -242,10 +242,10 @@ function U(e) {
     handlePersonalize: D,
     handleDownload: L,
     handleAddApplication: x
-  } = j(n), U = !(h || g || O || v), {
+  } = k(n), U = !(h || g || O || v), {
     titleAnimatedStyle: G,
     opacities: B
-  } = k(U), [Z, F] = i.useState([]), V = Z.length > 0;
+  } = j(U), [Z, F] = i.useState([]), V = Z.length > 0;
   if (i.useEffect(() => {
       (async () => {
         try {

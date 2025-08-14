@@ -33,12 +33,13 @@ class p {
     s(this.native)
   }
   constructor(t) {
-    var e, i;
-    if (i = true, (e = "native") in this ? Object.defineProperty(this, e, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : this[e] = i, this.native = a(t), 0 === this.native) throw Error("couldn't create wasm lottie. potentially bad json.")
+    if (! function(t, e, i) {
+        e in t ? Object.defineProperty(t, e, {
+          value: i,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : t[e] = i
+      }(this, "native", true), this.native = a(t), 0 === this.native) throw Error("couldn't create wasm lottie. potentially bad json.")
   }
 }

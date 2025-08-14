@@ -28,7 +28,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk361992 = require("./361992.js"),
+  Chunk459931 = require("./459931.js"),
   Chunk740353 = require("./740353.js");
 let C = "VoiceChannelStatusModal",
   R = 500;
@@ -43,7 +43,7 @@ function P(e) {
     location: "VoiceChannelStatusModal"
   }, {
     autoTrackExposure: true
-  }).enabled, D = (0, s.e7)([p.Z], () => p.Z.getChannelStatus(t)), L = (0, s.e7)([O.Z], () => O.Z.getMediaSessionId()), [x, M] = i.useState(null != D ? D : ""), [j, k] = i.useState(false), [U, G] = i.useState(null), B = (0, s.e7)([v.default], () => v.default.getCurrentUser()), Z = x.length > R;
+  }).enabled, D = (0, s.e7)([p.Z], () => p.Z.getChannelStatus(t)), L = (0, s.e7)([O.Z], () => O.Z.getMediaSessionId()), [x, M] = i.useState(null != D ? D : ""), [k, j] = i.useState(false), [U, G] = i.useState(null), B = (0, s.e7)([v.default], () => v.default.getCurrentUser()), Z = x.length > R;
   i.useEffect(() => {
     I.default.track(T.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
@@ -62,7 +62,7 @@ function P(e) {
         let {
           errorMessage: e
         } = _.Z.validateMessage(n, B, t.id);
-        return G(e), k(false), {
+        return G(e), j(false), {
           hasErrors: true
         }
       }
@@ -71,7 +71,7 @@ function P(e) {
       }
     },
     H = async e => {
-      x === D && P(), null == e || e.preventDefault(), G(null), k(true);
+      x === D && P(), null == e || e.preventDefault(), G(null), j(true);
       let n = x.length,
         r = x.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
         i = y.ZP.parse(t, x),
@@ -92,11 +92,11 @@ function P(e) {
         } catch (e) {
           F(e)
         }
-        k(false)
+        j(false)
       }
     }, [Y, W] = i.useState((0, m.JM)(x)), K = (e, t, n) => {
       M(t), W(n)
-    }, z = async () => (Z || j || await H(), Promise.resolve({
+    }, z = async () => (Z || k || await H(), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
     })), q = (0, r.jsxs)(d.hjN, {
@@ -141,7 +141,7 @@ function P(e) {
       onClick: P
     }, {
       variant: "primary",
-      loading: j,
+      loading: k,
       disabled: Z,
       text: S.intl.string(S.t.XqK2Iy),
       onClick: H
@@ -190,7 +190,7 @@ function P(e) {
           })
         }), (0, r.jsx)(u.zx, {
           onClick: H,
-          submitting: j,
+          submitting: k,
           className: A.button,
           disabled: Z,
           children: S.intl.string(S.t.XqK2Iy)

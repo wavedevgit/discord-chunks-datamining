@@ -16,8 +16,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk128227 = require("./128227.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk499126 = require("./499126.js"),
+  Chunk197571 = require("./197571.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -50,30 +50,30 @@ class O extends Chunk73800.PureComponent {
     }) : null, t = null != Chunk579022.totalKB ? (0, Chunk424218.BU)(Chunk579022.totalKB, {
       useKibibytes: true
     }) : null), (0, Chunk255367.jsxs)(Chunk600164.Z, {
-      className: Chunk128227.installationPath,
+      className: Chunk499126.installationPath,
       align: Chunk600164.Z.Align.CENTER,
       children: [this.renderDiskUsageCircle(), (0, Chunk255367.jsxs)(Chunk600164.Z, {
         direction: Chunk600164.Z.Direction.VERTICAL,
-        className: Chunk128227.__invalid_descriptionWrapper,
+        className: Chunk499126.__invalid_descriptionWrapper,
         children: [(0, Chunk255367.jsxs)(Chunk600164.Z, {
           align: Chunk600164.Z.Align.CENTER,
           children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
-            className: Chunk128227.rowTitle,
+            className: Chunk499126.rowTitle,
             variant: "heading-md/semibold",
             children: null != Chunk73800 ? Chunk73800 : Chunk391690.Z.getLabelFromPath(require)
           }), Chunk325432 ? (0, Chunk255367.jsx)("span", {
-            className: Chunk128227.defaultIndicator,
+            className: Chunk499126.defaultIndicator,
             children: Chunk388032.intl.string(Chunk388032.t.bBvAEB)
           }) : null]
         }), null != Chunk579022 && null != module && null != exports ? (0, Chunk255367.jsx)(Chunk570928.Z, {
-          className: Chunk128227.rowBody,
+          className: Chunk499126.rowBody,
           hoverText: Chunk388032.intl.formatToPlainString(Chunk388032.t.Fxo9e3, {
             available: module,
             total: exports
           }),
           children: require
         }) : (0, Chunk255367.jsx)(Chunk481060.Text, {
-          className: Chunk128227.rowBody,
+          className: Chunk499126.rowBody,
           variant: "text-xs/normal",
           children: require
         })]
@@ -96,7 +96,7 @@ class O extends Chunk73800.PureComponent {
     } = this.state;
     return (0, Chunk255367.jsx)(Chunk481060.Zbd, {
       editable: true,
-      className: Chunk128227.installationPathEditing,
+      className: Chunk499126.installationPathEditing,
       children: (0, Chunk255367.jsxs)(Chunk600164.Z, {
         children: [this.renderDiskUsageCircle(), (0, Chunk255367.jsxs)(Chunk600164.Z.Child, {
           children: [(0, Chunk255367.jsx)(Chunk481060.xJW, {
@@ -108,7 +108,7 @@ class O extends Chunk73800.PureComponent {
             })
           }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
             title: Chunk388032.intl.string(Chunk388032.t.lnUCwc),
-            className: Chunk881488.marginTop20,
+            className: Chunk197571.marginTop20,
             children: (0, Chunk255367.jsx)(Chunk481060.oil, {
               disabled: true,
               value: module
@@ -117,11 +117,11 @@ class O extends Chunk73800.PureComponent {
             type: Chunk481060.XZJ.Types.INVERTED,
             value: null != Chunk73800 ? Chunk73800 : this.props.isDefault,
             disabled: this.props.isDefault,
-            className: Chunk128227.defaultLocationCheckbox,
+            className: Chunk499126.defaultLocationCheckbox,
             onChange: this.handleToggleDefault,
             children: Chunk388032.intl.string(Chunk388032.t.Z2MWuL)
           }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
-            className: Chunk128227.separator
+            className: Chunk499126.separator
           }), (0, Chunk255367.jsxs)(Chunk600164.Z, {
             children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
               variant: "critical-secondary",
@@ -178,41 +178,40 @@ class O extends Chunk73800.PureComponent {
         isDefault: null
       })
     }), _(this, "handleRemoveLocation", () => {
-      (0, a.h7j)(e => {
-        var t, n;
-        return (0, r.jsx)(a.ConfirmModal, (t = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              _(e, t, n[t])
-            })
-          }
-          return e
-        }({}, e), n = n = {
-          header: g.intl.string(g.t.iBUzS0),
-          confirmText: g.intl.string(g.t.iBUzS0),
-          cancelText: g.intl.string(g.t["ETE/oK"]),
-          onConfirm: () => {
-            this.handleStopEditing(), (0, o.iD)(this.props.path)
-          },
-          children: (0, r.jsx)(a.Text, {
-            variant: "text-md/normal",
-            children: g.intl.string(g.t["1XqeW1"])
-          })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, function(e, t) {
+        return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(n)).forEach(function(e) {
-          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-        }), t))
-      })
+        })(Object(t)).forEach(function(n) {
+          Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+        }), e
+      }(function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            _(e, t, n[t])
+          })
+        }
+        return e
+      }({}, e), {
+        header: g.intl.string(g.t.iBUzS0),
+        confirmText: g.intl.string(g.t.iBUzS0),
+        cancelText: g.intl.string(g.t["ETE/oK"]),
+        onConfirm: () => {
+          this.handleStopEditing(), (0, o.iD)(this.props.path)
+        },
+        children: (0, r.jsx)(a.Text, {
+          variant: "text-md/normal",
+          children: g.intl.string(g.t["1XqeW1"])
+        })
+      })))
     }), _(this, "handleSaveChanges", () => {
       (0, o.Tb)(this.props.path, {
         label: null != this.state.label ? this.state.label : this.props.label,
@@ -247,7 +246,7 @@ class E extends Chunk73800.PureComponent {
       editingPath: i
     } = this.state;
     return (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-      className: Chunk128227.wrapper,
+      className: Chunk499126.wrapper,
       title: Chunk388032.intl.string(Chunk388032.t.aLszkJ),
       children: [module.map(e => {
         let {
@@ -264,7 +263,7 @@ class E extends Chunk73800.PureComponent {
           onToggleEditing: this.handleToggleEditing
         }, l)
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk128227.buttonRowWrapper,
+        className: Chunk499126.buttonRowWrapper,
         children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
           size: "sm",

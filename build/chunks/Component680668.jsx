@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk358595 = require("./358595.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk664643 = require("./664643.js");
+  Chunk105341 = require("./105341.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,9 +59,9 @@ function I(e) {
     {
       channel: x,
       approximate_member_count: M,
-      approximate_presence_count: j
+      approximate_presence_count: k
     } = P,
-    k = P.state === E.r2o.ACCEPTING,
+    j = P.state === E.r2o.ACCEPTING,
     U = null != x ? (0, _.jD)(x) : null,
     G = null != R,
     B = null != U,
@@ -141,9 +141,9 @@ function I(e) {
         isBannerVisible: false
       })
     })]
-  })) : null != M && M >= 5 || null != j && j > 0 ? T = (0, r.jsx)(f.Z.Data, {
+  })) : null != M && M >= 5 || null != k && k > 0 ? T = (0, r.jsx)(f.Z.Data, {
     members: M,
-    membersOnline: j
+    membersOnline: k
   }) : B && (T = (0, r.jsx)(f.Z.Channel, {
     channel: U,
     guild: R
@@ -165,7 +165,7 @@ function I(e) {
         })]
       }), (0, r.jsx)(f.Z.Button, {
         onClick: J,
-        submitting: k,
+        submitting: j,
         color: f.Z.Button.Colors.GREEN,
         children: Z ? F ? b.intl.string(b.t["7vb2cX"]) : b.intl.string(b.t.gpqgam) : G ? b.intl.string(b.t.cEnaW1) : b.intl.string(b.t.XpeFYm)
       })]
@@ -179,7 +179,7 @@ function I(e) {
           onClick: () => (0, a.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("95468"), n.e("42959")]).then(n.bind(n, 650233));
+            } = await Promise.all([n.e("95468"), n.e("70799")]).then(n.bind(n, 650233));
             return t => (0, r.jsx)(e, v({}, t))
           })
         })

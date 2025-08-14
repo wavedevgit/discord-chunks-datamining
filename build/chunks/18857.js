@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 18857, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -16,7 +16,7 @@ function u(e, t, n) {
     analyticsLocations: u
   } = (0, l.ZP)(t);
   return r.useCallback(() => {
-    (0, i.yw)(a.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+    (0, i.yw)(s.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: {
         section: n
       },
@@ -25,12 +25,12 @@ function u(e, t, n) {
     }), (0, o.Z)({
       analyticsLocations: u,
       analyticsSourceLocation: {
-        page: a.ZY5.GUILD_CHANNEL,
+        page: s.ZY5.GUILD_CHANNEL,
         section: n,
-        object: a.qAy.TOOLTIP
+        object: s.qAy.TOOLTIP
       },
       guild: e,
-      perks: (0, s.VF)(),
+      perks: (0, a.VF)(),
       perkIntro: c.intl.string(c.t.ZhvSn5)
     })
   }, [u, n, e])

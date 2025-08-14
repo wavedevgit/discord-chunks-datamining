@@ -1,4 +1,4 @@
-/** Chunk was on 9646 **/
+/** Chunk was on 46290 **/
 /** chunk id: 319414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -14,12 +14,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk554174 = require("./554174.js"),
   Chunk333031 = require("./333031.jsx"),
   Chunk710111 = require("./710111.js"),
-  Chunk464535 = require("./464535.js");
+  Chunk179505 = require("./179505.js");
 
 function h() {
   let [e, t] = (0, Chunk442837.Wu)([Chunk352527.Z], () => [Chunk352527.Z.enabled, Chunk352527.Z.keepOpen]), n = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getVoiceChannelId()), h = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(require), [require]), m = null == h ? true : h.getGuildId();
   return module && null != h ? (0, Chunk255367.jsx)(Chunk333031.Z, {
-    className: Chunk464535.container,
+    className: Chunk179505.container,
     children: (0, Chunk255367.jsx)(Chunk487029.Z, {
       width: Chunk710111.FW.width,
       height: Chunk710111.FW.height,

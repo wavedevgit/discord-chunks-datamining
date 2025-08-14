@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk444470 = require("./444470.js");
+  Chunk752338 = require("./752338.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -84,7 +84,7 @@ function S(e) {
           },
           {
             default: t
-          } = await Promise.all([n.e("58175"), n.e("74662")]).then(n.bind(n, 664452));
+          } = await Promise.all([n.e("58175"), n.e("54255")]).then(n.bind(n, 664452));
         return n => (0, r.jsx)(t, T(v({}, n), {
           guildId: C.id,
           analyticsData: e
@@ -96,14 +96,14 @@ function S(e) {
       guild: C,
       size: s.Z.Sizes.MINI
     }),
-    j = (0, m.OY)(P, C.name);
+    k = (0, m.OY)(P, C.name);
   if (null != (null != (O = P.dmsDisabledUntil) ? O : P.invitesDisabledUntil) && w) return (0, r.jsxs)(a.qXd, {
     className: y.notice,
     color: a.DM8.NEUTRAL,
     children: [(0, r.jsx)(a.RyX, {
       onClick: I,
       noticeType: g.kVF.GUILD_RAID_NOTIFICATION
-    }), M, j, (0, r.jsx)(a.EyT, {
+    }), M, k, (0, r.jsx)(a.EyT, {
       className: y.actionButton,
       onClick: () => x(false),
       children: (0, r.jsxs)("div", {
@@ -117,7 +117,7 @@ function S(e) {
       })
     })]
   });
-  let k = (0, m.CG)(P) ? b.intl.formatToPlainString(b.t.tZTx2N, {
+  let j = (0, m.CG)(P) ? b.intl.formatToPlainString(b.t.tZTx2N, {
       guildName: C.name
     }) : (0, m.kk)(P) ? b.intl.formatToPlainString(b.t["1bSmxs"], {
       guildName: C.name
@@ -131,7 +131,7 @@ function S(e) {
     children: [(0, r.jsx)(a.RyX, {
       onClick: I,
       noticeType: g.kVF.GUILD_RAID_NOTIFICATION
-    }), M, k, !U && (0, r.jsx)(a.EyT, {
+    }), M, j, !U && (0, r.jsx)(a.EyT, {
       className: y.actionButton,
       onClick: () => x(true),
       children: (0, r.jsx)("div", {

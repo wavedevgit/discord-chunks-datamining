@@ -101,13 +101,13 @@ function f(e) {
       range: [0, 1],
       output: ["".concat(x, "00"), "".concat(v, "27")]
     }),
-    H = null != s ? m(C({}, s), {
+    _ = null != s ? m(C({}, s), {
       backgroundColor: O
     }) : {
       backgroundColor: O
     };
   return (0, r.jsx)(a.animated.tr, m(C({}, f), {
-    style: H,
+    style: _,
     children: n
   }))
 }

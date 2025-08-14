@@ -2,7 +2,7 @@
 /** chunk id: 760692, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K: () => f
+  K: () => b
 });
 var Chunk522942 = require("./522942.js"),
   Chunk131016 = require("./131016.js");
@@ -45,18 +45,16 @@ function l(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = {
-  GRADIENT_START_COLOR: "--custom-display-name-styles-gradient-start-color",
-  GRADIENT_END_COLOR: "--custom-display-name-styles-gradient-end-color",
-  MAIN: "--custom-display-name-styles-main-color",
-  LIGHT_1: "--custom-display-name-styles-light-1-color",
-  LIGHT_2: "--custom-display-name-styles-light-2-color",
-  DARK_1: "--custom-display-name-styles-dark-1-color",
-  DARK_2: "--custom-display-name-styles-dark-2-color",
-  WRAP: "--custom-display-name-styles-wrap"
-};
+let c = "--custom-display-name-styles-gradient-start-color",
+  u = "--custom-display-name-styles-gradient-end-color",
+  d = "--custom-display-name-styles-main-color",
+  f = "--custom-display-name-styles-light-1-color",
+  _ = "--custom-display-name-styles-light-2-color",
+  p = "--custom-display-name-styles-dark-1-color",
+  h = "--custom-display-name-styles-dark-2-color",
+  m = "--custom-display-name-styles-wrap";
 
-function u(e) {
+function g(e) {
   let {
     main: t,
     light1: n,
@@ -65,22 +63,22 @@ function u(e) {
     dark2: a
   } = (0, i.hX)(e);
   return {
-    [c.MAIN]: t,
-    [c.LIGHT_1]: n,
-    [c.LIGHT_2]: r,
-    [c.DARK_1]: o,
-    [c.DARK_2]: a
+    [d]: t,
+    [f]: n,
+    [_]: r,
+    [p]: o,
+    [h]: a
   }
 }
 
-function d(e) {
+function E(e) {
   return e.length < 2 ? {} : {
-    [c.GRADIENT_START_COLOR]: e[0],
-    [c.GRADIENT_END_COLOR]: e[1]
+    [c]: e[0],
+    [u]: e[1]
   }
 }
 
-function f(e, t) {
+function b(e, t) {
   let {
     shouldWrap: n = false
   } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
@@ -89,16 +87,16 @@ function f(e, t) {
   switch (e) {
     case r.m.GRADIENT:
     case r.m.GLOW:
-      i = d(t);
+      i = E(t);
       break;
     case r.m.NEON:
     case r.m.POP:
     case r.m.TOON:
     case r.m.SOLID:
     default:
-      i = u(t[0])
+      i = g(t[0])
   }
   return l(a({}, i), {
-    [c.WRAP]: n ? "wrap" : "nowrap"
+    [m]: n ? "wrap" : "nowrap"
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 906817, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   EM: () => m,
@@ -17,21 +17,21 @@ var Chunk255367 = require("./255367.js"),
   Chunk327530 = require("./327530.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk432178 = require("./432178.js");
+  Chunk776677 = require("./776677.js");
 
 function m(e, t, n, r) {
-  let i = "compact" === r ? 8 : h.$k;
+  let i = "compact" === r ? 8 : p.$k;
   if (e === u.wZ) return i;
-  if (e === u.wd) return t.features.has(p.oNc.HUB) ? 0 : i;
+  if (e === u.wd) return t.features.has(f.oNc.HUB) ? 0 : i;
   if (e === n.voiceChannelsSectionNumber) {
     var l;
     let t = n.getCategoryFromSection(e);
     if (null == t || t.isEmpty()) return 0;
-    if (t.isCollapsed) return h.Pw + 9;
+    if (t.isCollapsed) return p.Pw + 9;
     let r = null == (l = n.getChannelFromSectionRow(e, 0)) ? true : l.channel;
-    return null == r || r.record.type === p.d4z.GUILD_CATEGORY ? 9 : 25
+    return null == r || r.record.type === f.d4z.GUILD_CATEGORY ? 9 : 25
   }
-  return "compact" === r ? 32 : h.Pw
+  return "compact" === r ? 32 : p.Pw
 }
 
 function b(e, t) {
@@ -63,37 +63,37 @@ let O = Chunk73800.memo(function(e) {
     disableManageChannels: _
   } = e, {
     isFavoritesPerk: y
-  } = (0, s.z)("ChannelListSection"), C = i.useCallback(() => {
+  } = (0, a.z)("ChannelListSection"), v = i.useCallback(() => {
     let e = m.getCategoryFromSection(m.recentsSectionNumber);
     if (null == e) return;
     let t = null,
       r = e.getShownChannelAndThreadIds();
-    null != O && r.includes(O) && (t = (0, a.KY)(m)), (0, a.Uo)(n.id, r, t)
+    null != O && r.includes(O) && (t = (0, s.KY)(m)), (0, s.Uo)(n.id, r, t)
   }, [n.id, O, m, b]), {
-    density: v
-  } = (0, l.TCT)(), j = "compact" === v ? 8 : h.$k;
+    density: j
+  } = (0, l.TCT)(), C = "compact" === j ? 8 : p.$k;
   switch (t) {
     case u.wZ:
       return (0, r.jsx)("div", {
         style: {
-          height: j
+          height: C
         }
       });
     case u.wd:
-      if (n.features.has(p.oNc.HUB)) return null;
+      if (n.features.has(f.oNc.HUB)) return null;
       return (0, r.jsx)("div", {
         style: {
-          height: j
+          height: C
         }
       });
     case u.p2:
       return (0, r.jsx)(d.P, {
-        name: y ? f.intl.string(f.t.mlPMCw) : f.intl.string(f.t.k8fFjo)
+        name: y ? h.intl.string(h.t.mlPMCw) : h.intl.string(h.t.k8fFjo)
       });
     case m.recentsSectionNumber:
       return (0, r.jsx)(d.P, {
-        name: f.intl.string(f.t.gKcrqK),
-        onDismiss: C
+        name: h.intl.string(h.t.gKcrqK),
+        onDismiss: v
       });
     case m.voiceChannelsSectionNumber: {
       var E;
@@ -117,7 +117,7 @@ let O = Chunk73800.memo(function(e) {
         position: e.position,
         disableManageChannels: _,
         children: (0, r.jsx)(c.Z, {
-          inlineSpecs: h.MF,
+          inlineSpecs: p.MF,
           arrowAlignment: o.cy.TOP,
           tutorialId: "organize-by-topic",
           position: "right"

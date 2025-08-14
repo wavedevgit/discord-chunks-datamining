@@ -1,7 +1,7 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 445817, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => x
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -17,36 +17,32 @@ var Chunk255367 = require("./255367.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk944856 = require("./944856.js");
-let x = {
-  width: 387,
-  height: 218
-};
+  Chunk766625 = require("./766625.js");
 
-function _(e) {
+function x(e) {
   let {
     previewEnabled: t,
     onEnablePreview: n,
-    onCancelPreview: _
-  } = e, j = p.Z.getCameraComponent(), [E, C] = r.useState((0, c.P)(g.default.getCurrentUser())), O = r.useRef(false), v = r.useRef(E), S = (0, o.O)(), T = (0, s.e7)([p.Z], () => p.Z.isVideoAvailable());
+    onCancelPreview: x
+  } = e, _ = p.Z.getCameraComponent(), [j, E] = r.useState((0, c.P)(g.default.getCurrentUser())), C = r.useRef(false), O = r.useRef(j), v = (0, o.O)(), S = (0, s.e7)([p.Z], () => p.Z.isVideoAvailable());
   return r.useEffect(() => () => {
-    O.current && l.Z.wait(() => (0, d.Up)(v.current))
+    C.current && l.Z.wait(() => (0, d.Up)(O.current))
   }, []), (0, i.jsx)(m.Z, {
-    selectedBackgroundOption: E,
+    selectedBackgroundOption: j,
     onSelectBackgroundOption: e => {
-      O.current = true, v.current = e, C(e), (0, u.wG)(e, {
-        location: S.location
+      C.current = true, O.current = e, E(e), (0, u.wG)(e, {
+        location: v.location
       }).catch(h.dG4)
     },
-    onCancelPreview: _,
+    onCancelPreview: x,
     renderCamera: e => t ? (0, i.jsx)("div", {
       className: b.cameraWrapper,
       children: (0, i.jsxs)("div", {
         className: b.camera,
-        children: [(0, i.jsx)(j, {
+        children: [(0, i.jsx)(_, {
           deviceId: e,
-          width: x.width,
-          height: x.height,
+          width: 387,
+          height: 218,
           disabled: !t
         }), (0, i.jsx)(m.S, {})]
       })
@@ -55,7 +51,7 @@ function _(e) {
       children: [(0, i.jsx)("div", {
         className: b.previewImage
       }), (0, i.jsx)(a.ua7, {
-        text: T ? null : f.intl.string(f.t["8jSzSU"]),
+        text: S ? null : f.intl.string(f.t["8jSzSU"]),
         children: e => {
           var t, r;
           return (0, i.jsx)(a.zxk, (t = function(e) {
@@ -80,7 +76,7 @@ function _(e) {
             text: f.intl.string(f.t.JIf4v7)
           }, e), r = r = {
             onClick: n,
-            disabled: !T
+            disabled: !S
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

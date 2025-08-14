@@ -12,7 +12,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk893966 = require("./893966.js"),
   Chunk527379 = require("./527379.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk961300 = require("./961300.js");
+  Chunk671408 = require("./671408.js");
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -55,12 +55,12 @@ function p(e) {
     label: Number(e).toLocaleString()
   })), []), v = new Intl.NumberFormat(d.intl.currentLocale).format(h), y = d.intl.formatToPlainString(d.t.RNDnQ0, {
     count: g ? "..." : v
-  }), O = h > j.pageSize || g, H = h > a.LU["0"];
+  }), O = h > j.pageSize || g, _ = h > a.LU["0"];
   return (0, r.jsxs)("div", {
     className: C.paginationContainer,
     children: [(0, r.jsx)("div", {
       className: C.pageSizeSelection,
-      children: H ? (0, r.jsxs)(r.Fragment, {
+      children: _ ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(i.Text, {
           variant: "text-md/normal",
           color: "text-muted",

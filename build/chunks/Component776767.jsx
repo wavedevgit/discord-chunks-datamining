@@ -1,4 +1,4 @@
-/** Chunk was on 873 **/
+/** Chunk was on 1355 **/
 /** chunk id: 776767, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Mn: () => o,
@@ -8,9 +8,9 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk63177 = require("./63177.js");
+  Chunk938556 = require("./938556.js");
 let o = 16;
 
 function u(e) {
@@ -22,9 +22,9 @@ function u(e) {
     className: c,
     missingNavIcon: E
   } = e;
-  return (0, r.jsxs)(i.P3F, {
+  return (0, r.jsxs)(s.P3F, {
     onClick: u,
-    className: s()(a.modInfoItem, null != u && a.modInfoAction, c),
+    className: i()(a.modInfoItem, null != u && a.modInfoAction, c),
     children: [null != l && (0, r.jsx)("div", {
       className: a.modInfoItemIcon,
       children: l
@@ -36,7 +36,7 @@ function u(e) {
       children: t
     }), null != u && (0, r.jsx)("div", {
       className: a.modInfoItemActionIcon,
-      children: (0, r.jsx)(i.LJT, {
+      children: (0, r.jsx)(s.LJT, {
         size: "custom",
         width: o,
         height: o

@@ -27,12 +27,14 @@ class d extends Chunk836560.EventEmitter {
     }) : (this.combo.push([e, n, (0, o.dU)()]), this.emit("change", this))
   }
   constructor() {
-    var e, t;
-    super(), t = [], (e = "combo") in this ? Object.defineProperty(this, module, {
-      value: exports,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[module] = exports, l.push(this), 1 === l.length && Chunk998502.ZP.setOnInputEventCallback(c)
+    super(),
+      function(e, t, n) {
+        t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
+      }(this, "combo", []), l.push(this), 1 === l.length && Chunk998502.ZP.setOnInputEventCallback(c)
   }
 }

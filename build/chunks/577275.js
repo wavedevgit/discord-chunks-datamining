@@ -1,4 +1,4 @@
-/** Chunk was on 72762 **/
+/** Chunk was on 77512 **/
 /** chunk id: 577275, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -11,20 +11,20 @@ let l = function() {
       refreshOnDepChange: t
     } = module,
     [n, l] = Chunk73800.useState([]),
-    [s, o] = Chunk73800.useState(true),
-    a = async () => {
-      o(true);
+    [o, s] = Chunk73800.useState(true),
+    c = async () => {
+      s(true);
       try {
         let e = await Chunk586739.Z.fetchTeams(true);
         l(module.body)
       } catch (e) {}
-      o(false)
-    }, c = Chunk73800.useRef(true);
+      s(false)
+    }, a = Chunk73800.useRef(true);
   return Chunk73800.useEffect(() => {
-    (c.current || exports) && (c.current = false, a())
+    (a.current || exports) && (a.current = false, c())
   }, [exports]), {
     teams: require,
-    loading: s,
-    refresh: a
+    loading: o,
+    refresh: c
   }
 }

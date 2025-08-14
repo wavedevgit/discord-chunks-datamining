@@ -1,7 +1,7 @@
-/** Chunk was on 787 **/
+/** Chunk was on 32561 **/
 /** chunk id: 319443, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => z
+  default: () => U
 }), require("./388685.js"), require("./781311.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -39,7 +39,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk979007 = require("./979007.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk354451 = require("./354451.js");
+  Chunk813525 = require("./813525.js");
 
 function B(e) {
   let {
@@ -78,7 +78,7 @@ function B(e) {
   })
 }
 
-function U() {
+function z() {
   let e = Chunk73800.useCallback(() => {
       (0, Chunk881294.qF)()
     }, []),
@@ -87,18 +87,18 @@ function U() {
     }, []);
   return (0, Chunk255367.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.BRAND,
-    className: Chunk354451.nagbar,
+    className: Chunk813525.nagbar,
     children: [(0, Chunk255367.jsx)(Chunk481060.gw7, {
       size: "custom",
       color: "white",
-      className: Chunk354451.logo
+      className: Chunk813525.logo
     }), (0, Chunk255367.jsx)(Chunk481060.Text, {
       tag: "span",
       color: "always-white",
       variant: "text-md/normal",
       children: Chunk388032.intl.string(Chunk388032.t.Ol3MIi)
     }), (0, Chunk255367.jsxs)("div", {
-      className: Chunk354451.nagbarActionContainer,
+      className: Chunk813525.nagbarActionContainer,
       children: [(0, Chunk255367.jsx)(Chunk481060.NoS, {
         onClick: module,
         noticeType: Chunk981631.kVF.LOGIN,
@@ -112,7 +112,7 @@ function U() {
     })]
   })
 }
-let z = function() {
+let U = function() {
   var e;
   let t = (0, Chunk442837.e7)([Chunk314897.default], () => !Chunk314897.default.isAuthenticated()),
     {
@@ -121,7 +121,7 @@ let z = function() {
       resetScrollPosition: y
     } = (0, Chunk114851.M)(),
     R = (0, Chunk258971.Xh)(),
-    z = (0, Chunk881294.nu)(),
+    U = (0, Chunk881294.nu)(),
     F = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.CATEGORY ? Chunk548514.categoryId : true,
     {
       applicationId: V,
@@ -162,8 +162,8 @@ let z = function() {
   }, [er, en, null == ea ? true : ea.id]), Chunk73800.useEffect(() => {
     Chunk471518.CP()
   }, []), Chunk73800.useEffect(() => {
-    z && Chunk471518.g5()
-  }, [z]), Chunk73800.useEffect(() => Chunk258971.aQ.setState({
+    U && Chunk471518.g5()
+  }, [U]), Chunk73800.useEffect(() => Chunk258971.aQ.setState({
     lastItem: Chunk548514
   }), [Chunk548514]);
   let {
@@ -216,11 +216,11 @@ let z = function() {
     })
   }, [ev, require]), ej = ei ? Chunk481060.iWm : Chunk481060.jje;
   return (0, Chunk255367.jsxs)("div", {
-    className: l()(Chunk354451.outerContainer, {
-      [Chunk354451.loggedOutContainer]: exports
+    className: l()(Chunk813525.outerContainer, {
+      [Chunk813525.loggedOutContainer]: exports
     }),
-    children: [exports ? (0, Chunk255367.jsx)(U, {}) : null, (0, Chunk255367.jsxs)("div", {
-      className: Chunk354451.innerContainer,
+    children: [exports ? (0, Chunk255367.jsx)(z, {}) : null, (0, Chunk255367.jsxs)("div", {
+      className: Chunk813525.innerContainer,
       children: [(0, Chunk255367.jsxs)(Chunk611928.ZP, {
         variant: eb ? Chunk611928._6.RELATIVE : Chunk611928._6.OVERLAY,
         children: [!eb && (0, Chunk255367.jsx)(Chunk611928.z6, {
@@ -238,7 +238,7 @@ let z = function() {
           }), es ? (0, Chunk255367.jsx)(Chunk481060.X6q, {
             variant: "heading-lg/semibold",
             color: "header-primary",
-            className: Chunk354451.searchHeader,
+            className: Chunk813525.searchHeader,
             children: null != Y && "" !== Y ? Chunk388032.intl.formatToPlainString(Chunk388032.t.zHdzqa, {
               query: Y
             }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.Qhj5Bg, {

@@ -1,31 +1,30 @@
 /** Chunk was on 93886 **/
 /** chunk id: 550532, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
-var n, r, l, Chunk442837 = require("./442837.js"),
+var n, r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk780106 = require("./780106.js");
-let c = "None";
-class d extends(l = Chunk442837.ZP.Store) {
+let o = "None";
+class c extends(r = Chunk442837.ZP.Store) {
   getFakeGameToShow() {
-    return c
+    return o
   }
   getFakeGameData() {
-    return Chunk780106.O[c]
+    return Chunk780106.O[o]
   }
-}
-r = "ContentInventoryDevToolsStore", (n = "displayName") in d ? Object.defineProperty(d, n, {
-  value: r,
+}(n = "displayName") in c ? Object.defineProperty(c, n, {
+  value: "ContentInventoryDevToolsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : d[n] = r;
-let u = new d(Chunk570140.Z, {
+}) : c[n] = "ContentInventoryDevToolsStore";
+let d = new c(Chunk570140.Z, {
   CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING: function(e) {
     let {
       gameToShow: t
     } = e;
-    c = t
+    o = t
   }
 })

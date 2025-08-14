@@ -31,20 +31,22 @@ class o extends Chunk73800.Component {
     })
   }
   constructor(...e) {
-    var t, n;
-    super(...e), t = "fetchStoreListing", n = e => {
-      let {
-        storeListingId: t,
-        skuId: n,
-        applicationId: r
-      } = this.props, i = null != e ? e : n;
-      return null != t ? (0, l.rV)(t) : null != i ? (0, l.km)(i) : null != r ? (0, l.Hq)(r) : true
-    }, t in this ? Object.defineProperty(this, t, {
-      value: n,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[t] = n
+    super(...e),
+      function(e, t, n) {
+        t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
+      }(this, "fetchStoreListing", e => {
+        let {
+          storeListingId: t,
+          skuId: n,
+          applicationId: r
+        } = this.props, i = null != e ? e : n;
+        return null != t ? (0, l.rV)(t) : null != i ? (0, l.km)(i) : null != r ? (0, l.Hq)(r) : true
+      })
   }
 }
 let s = o

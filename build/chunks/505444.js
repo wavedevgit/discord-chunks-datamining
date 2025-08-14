@@ -54,110 +54,108 @@ Object.keys(t).forEach(function(e) {
     t[n(r, e)] = t[e]
   })
 });
-var i = {
-    isUnitlessNumber: t,
-    shorthandPropertyExpansions: {
-      background: {
-        backgroundAttachment: true,
-        backgroundColor: true,
-        backgroundImage: true,
-        backgroundPositionX: true,
-        backgroundPositionY: true,
-        backgroundRepeat: true
-      },
-      backgroundPosition: {
-        backgroundPositionX: true,
-        backgroundPositionY: true
-      },
-      border: {
-        borderWidth: true,
-        borderStyle: true,
-        borderColor: true
-      },
-      borderBottom: {
-        borderBottomWidth: true,
-        borderBottomStyle: true,
-        borderBottomColor: true
-      },
-      borderLeft: {
-        borderLeftWidth: true,
-        borderLeftStyle: true,
-        borderLeftColor: true
-      },
-      borderRight: {
-        borderRightWidth: true,
-        borderRightStyle: true,
-        borderRightColor: true
-      },
-      borderTop: {
-        borderTopWidth: true,
-        borderTopStyle: true,
-        borderTopColor: true
-      },
-      font: {
-        fontStyle: true,
-        fontVariant: true,
-        fontWeight: true,
-        fontSize: true,
-        lineHeight: true,
-        fontFamily: true
-      },
-      outline: {
-        outlineWidth: true,
-        outlineStyle: true,
-        outlineColor: true
-      }
+var i = t,
+  o = {
+    background: {
+      backgroundAttachment: true,
+      backgroundColor: true,
+      backgroundImage: true,
+      backgroundPositionX: true,
+      backgroundPositionY: true,
+      backgroundRepeat: true
+    },
+    backgroundPosition: {
+      backgroundPositionX: true,
+      backgroundPositionY: true
+    },
+    border: {
+      borderWidth: true,
+      borderStyle: true,
+      borderColor: true
+    },
+    borderBottom: {
+      borderBottomWidth: true,
+      borderBottomStyle: true,
+      borderBottomColor: true
+    },
+    borderLeft: {
+      borderLeftWidth: true,
+      borderLeftStyle: true,
+      borderLeftColor: true
+    },
+    borderRight: {
+      borderRightWidth: true,
+      borderRightStyle: true,
+      borderRightColor: true
+    },
+    borderTop: {
+      borderTopWidth: true,
+      borderTopStyle: true,
+      borderTopColor: true
+    },
+    font: {
+      fontStyle: true,
+      fontVariant: true,
+      fontWeight: true,
+      fontSize: true,
+      lineHeight: true,
+      fontFamily: true
+    },
+    outline: {
+      outlineWidth: true,
+      outlineStyle: true,
+      outlineColor: true
     }
   },
-  o = !!("undefined" != typeof window && window.document && window.document.createElement),
-  a = {
-    canUseDOM: o,
+  a = !!("undefined" != typeof window && window.document && window.document.createElement),
+  s = {
+    canUseDOM: a,
     canUseWorkers: "undefined" != typeof Worker,
-    canUseEventListeners: o && !!(window.addEventListener || window.attachEvent),
-    canUseViewport: o && !!window.screen,
-    isInWorker: !o
+    canUseEventListeners: a && !!(window.addEventListener || window.attachEvent),
+    canUseViewport: a && !!window.screen,
+    isInWorker: !a
   },
-  s = i.isUnitlessNumber;
+  l = i;
 
-function l(e, t, n) {
-  return null == t || "boolean" == typeof t || "" === t ? "" : n || "number" != typeof t || 0 === t || s.hasOwnProperty(e) && s[e] ? ("" + t).trim() : t + "px"
+function c(e, t, n) {
+  return null == t || "boolean" == typeof t || "" === t ? "" : n || "number" != typeof t || 0 === t || l.hasOwnProperty(e) && l[e] ? ("" + t).trim() : t + "px"
 }
 
-function c(e) {
+function u(e) {
   return function() {
     return e
   }
 }
-var u = function() {};
-u.thatReturns = c, u.thatReturnsFalse = c(false), u.thatReturnsTrue = c(true), u.thatReturnsNull = c(null), u.thatReturnsThis = function() {
+var d = function() {};
+d.thatReturns = u, d.thatReturnsFalse = u(false), d.thatReturnsTrue = u(true), d.thatReturnsNull = u(null), d.thatReturnsThis = function() {
   return this
-}, u.thatReturnsArgument = function(e) {
+}, d.thatReturnsArgument = function(e) {
   return e
 };
-var d = false;
-if (a.canUseDOM) {
-  var f = document.createElement("div").style;
+var f = false;
+if (s.canUseDOM) {
+  var _ = document.createElement("div").style;
   try {
-    f.font = ""
+    _.font = ""
   } catch (e) {
-    d = true
+    f = true
   }
 }
 module.exports = {
   createDangerousStringForStyles: function(e) {},
   setValueForStyles: function(e, t, n) {
     var r = e.style;
-    for (var o in t)
-      if (t.hasOwnProperty(o)) {
-        var a = 0 === o.indexOf("--"),
-          s = l(o, t[o], a);
-        if ("float" === o && (o = "cssFloat"), a) r.setProperty(o, s);
-        else if (s) r[o] = s;
+    for (var i in t)
+      if (t.hasOwnProperty(i)) {
+        var a = 0 === i.indexOf("--"),
+          s = c(i, t[i], a);
+        if ("float" === i && (i = "cssFloat"), a) r.setProperty(i, s);
+        else if (s) r[i] = s;
         else {
-          var c = d && i.shorthandPropertyExpansions[o];
-          if (c)
-            for (var u in c) r[u] = "";
-          else r[o] = ""
+          var l = f && o[i];
+          if (l)
+            for (var u in l) r[u] = "";
+          else r[i] = ""
         }
       }
   }

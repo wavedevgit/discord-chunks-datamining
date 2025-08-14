@@ -8,7 +8,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk392711 = require("./392711.js"),
   Chunk98650 = require("./98650.js"),
   Chunk70097 = require("./70097.jsx"),
-  Chunk980762 = require("./980762.js");
+  Chunk285006 = require("./285006.js");
 
 function u(e) {
   let {
@@ -16,14 +16,14 @@ function u(e) {
     audioTrackLabel: n,
     src: l,
     muted: i
-  } = e, o = r.useCallback(e => {
+  } = e, o = a.useCallback(e => {
     t(e, n)
-  }, [t, n]), u = r.useCallback(e => {
+  }, [t, n]), u = a.useCallback(e => {
     Object.values(e.currentTarget.audioTracks).forEach(e => {
       e.enabled = n === e.label
     })
   }, [n]);
-  return (0, a.jsx)("audio", {
+  return (0, r.jsx)("audio", {
     id: "ClipsPlayerAudioTrack:".concat(n),
     className: s.hidden,
     ref: o,
@@ -43,7 +43,7 @@ let c = Chunk73800.forwardRef(function(e, t) {
     onDoneLoading: f,
     startTime: v = 0,
     endTime: h
-  } = e, g = r.useRef({}), [x, b] = r.useState([]), j = r.useRef(false), y = r.useCallback(() => {
+  } = e, g = a.useRef({}), [x, b] = a.useState([]), j = a.useRef(false), y = a.useCallback(() => {
     let e = g.current.main;
     if (null == e) return;
     let t = (0, l.round)(e.currentTime, 3),
@@ -56,38 +56,38 @@ let c = Chunk73800.forwardRef(function(e, t) {
   (0, i.Z)(() => {
     j.current && y() && _()
   });
-  let _ = r.useCallback(() => {
+  let _ = a.useCallback(() => {
       for (let e of (j.current = true, y(), Object.values(g.current))) null != e && e.play()
     }, [y]),
-    w = r.useCallback(() => {
+    w = a.useCallback(() => {
       for (let e of Object.values(g.current)) null != e && e.pause()
     }, []),
-    C = r.useCallback(e => {
+    C = a.useCallback(e => {
       var t;
       for (let n of ((null == (t = g.current.main) ? true : t.paused) && (j.current = false), Object.values(g.current))) null != n && (n.currentTime = e)
     }, []),
-    P = r.useCallback(() => {
+    P = a.useCallback(() => {
       var e;
       (null == (e = g.current.main) ? true : e.paused) ? _(): w()
     }, [_, w]),
-    k = r.useCallback(e => {
+    k = a.useCallback(e => {
       g.current.main = e
     }, []),
-    O = r.useCallback(e => {
+    O = a.useCallback(e => {
       let t = [];
       for (let n of Object.values(e.currentTarget.audioTracks)) n.label.includes(":application") ? n.enabled = true : n.label.includes(":voice") ? (n.enabled = false, t.includes(n.label) || t.push(n.label)) : n.enabled = false;
       b(t)
     }, []),
-    S = r.useCallback((e, t) => {
+    S = a.useCallback((e, t) => {
       g.current[t] = e
     }, []);
-  return (r.useImperativeHandle(t, () => ({
+  return (a.useImperativeHandle(t, () => ({
     play: _,
     seek: C,
     pause: w,
     videoElement: g.current.main
-  })), null == n) ? null : (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)(o.Z, {
+  })), null == n) ? null : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(o.Z, {
       onClick: P,
       className: p ? s.hidden : s.displayVideo,
       ref: k,
@@ -95,7 +95,7 @@ let c = Chunk73800.forwardRef(function(e, t) {
       muted: true,
       onLoadedData: f,
       preload: "auto"
-    }), (0, a.jsx)("audio", {
+    }), (0, r.jsx)("audio", {
       id: "ClipsPlayerAudioTrack:application",
       src: c,
       muted: !d,
@@ -103,7 +103,7 @@ let c = Chunk73800.forwardRef(function(e, t) {
       className: s.hidden,
       ref: e => S(e, "application"),
       onLoadedMetadata: O
-    }), x.map(e => (0, a.jsx)(u, {
+    }), x.map(e => (0, r.jsx)(u, {
       audioTrackLabel: e,
       setRef: S,
       src: c,

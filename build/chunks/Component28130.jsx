@@ -31,7 +31,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk486324 = require("./486324.js"),
   Chunk869783 = require("./869783.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk357243 = require("./357243.js");
+  Chunk133495 = require("./133495.js");
 
 function _(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -86,10 +86,10 @@ function D(e) {
     guild: n
   } = e;
   if (null == t || null == n) return;
-  let r = (0, v._p)(t),
+  let r = (0, C._p)(t),
     a = n.features.has(t);
   if (null == r) return;
-  let l = (0, v.nW)(r);
+  let l = (0, C.nW)(r);
   return a ? T.intl.formatToPlainString(T.t.u3L3TU, {
     levelName: l
   }) : T.intl.formatToPlainString(T.t["r/v25e"], {
@@ -241,7 +241,7 @@ function U(e) {
     uploadType: d,
     maxFileSizeBytes: f,
     showUpsellHeader: j,
-    filters: v,
+    filters: C,
     analyticsLocation: E,
     analyticsLocations: F = [],
     imageSpecifications: Z,
@@ -276,7 +276,7 @@ function U(e) {
     (0, o.ZDy)(async () => {
       let {
         default: a
-      } = await Promise.all([n.e("59732"), n.e("46689")]).then(n.bind(n, 712451));
+      } = await Promise.all([n.e("59732"), n.e("11866")]).then(n.bind(n, 712451));
       return n => (0, r.jsx)(a, _({
         imageUri: e,
         file: t,
@@ -316,10 +316,10 @@ function U(e) {
     })
   }, [null == E ? true : E.page, V, J, j, d]);
   a.useEffect(() => {
-    G && C.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
+    G && v.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
       type: S.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
       location_stack: Y
-    }), C.default.track(S.rMx.OPEN_MODAL, {
+    }), v.default.track(S.rMx.OPEN_MODAL, {
       type: S.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
       location: E,
       location_stack: Y,
@@ -357,7 +357,7 @@ function U(e) {
               guild: H,
               handleOpenImageEditingModal: K,
               maxFileSizeBytes: f,
-              filters: v,
+              filters: C,
               handleFileSizeError: $
             })
           }), (0, r.jsx)("li", {

@@ -26,13 +26,13 @@ var r, o, a, i, Chunk220159 = require("./220159.js"),
   Chunk602168 = require("./602168.js"),
   R = "Promise",
   F = Chunk296004.CONSTRUCTOR,
-  O = Chunk296004.REJECTION_EVENT,
-  E = Chunk296004.SUBCLASSING,
+  E = Chunk296004.REJECTION_EVENT,
+  O = Chunk296004.SUBCLASSING,
   I = Chunk89416.getterFor(R),
   M = Chunk89416.set,
-  B = Chunk57100 && Chunk57100.prototype,
-  T = Chunk57100,
-  D = B,
+  T = Chunk57100 && Chunk57100.prototype,
+  B = Chunk57100,
+  D = T,
   L = Chunk424353.TypeError,
   V = Chunk424353.document,
   j = Chunk424353.process,
@@ -68,7 +68,7 @@ var r, o, a, i, Chunk220159 = require("./220159.js"),
     H ? ((r = V.createEvent("Event")).promise = t, r.reason = n, r.initEvent(e, false, true), u.dispatchEvent(r)) : r = {
       promise: t,
       reason: n
-    }, !O && (o = u["on" + e]) ? o(r) : e === K && Z("Unhandled promise rejection", n)
+    }, !E && (o = u["on" + e]) ? o(r) : e === K && Z("Unhandled promise rejection", n)
   },
   $ = function(e) {
     d(k, u, function() {
@@ -119,7 +119,7 @@ var r, o, a, i, Chunk220159 = require("./220159.js"),
       }
     }
   };
-if (F && (D = (T = function(e) {
+if (F && (D = (B = function(e) {
     b(this, D), y(e), d(r, this);
     var t = I(this);
     try {
@@ -140,7 +140,7 @@ if (F && (D = (T = function(e) {
     })
   }).prototype = Chunk342930(D, "then", function(e, t) {
     var n = I(this),
-      r = U(_(this, T));
+      r = U(_(this, B));
     return n.parent = true, r.ok = !v(e) || e, r.fail = v(t) && t, r.domain = l ? j.domain : true, 0 === n.state ? n.reactions.add(r) : C(function() {
       W(r, n)
     }), r.promise
@@ -149,20 +149,20 @@ if (F && (D = (T = function(e) {
       t = I(module);
     this.promise = module, this.resolve = X(et, exports), this.reject = X(ee, exports)
   }, Chunk602168.f = U = function(e) {
-    return e === T || e === a ? new o(e) : q(e)
-  }, !Chunk253462 && Chunk971428(Chunk57100) && B !== Object.prototype)) {
-  i = B.then, E || Chunk342930(B, "then", function(e, t) {
+    return e === B || e === a ? new o(e) : q(e)
+  }, !Chunk253462 && Chunk971428(Chunk57100) && T !== Object.prototype)) {
+  i = T.then, O || Chunk342930(T, "then", function(e, t) {
     var n = this;
-    return new T(function(e, t) {
+    return new B(function(e, t) {
       d(i, n, e, t)
     }).then(e, t)
   }, {
     unsafe: true
   });
   try {
-    delete B.constructor
+    delete T.constructor
   } catch (e) {}
-  Chunk578079 && Chunk578079(B, D)
+  Chunk578079 && Chunk578079(T, D)
 }
 Chunk220159({
   global: true,
@@ -170,5 +170,5 @@ Chunk220159({
   wrap: true,
   forced: F
 }, {
-  Promise: T
-}), Chunk770050(T, R, false, true), Chunk999405(R)
+  Promise: B
+}), Chunk770050(B, R, false, true), Chunk999405(R)

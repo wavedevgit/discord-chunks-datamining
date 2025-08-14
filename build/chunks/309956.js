@@ -34,27 +34,27 @@ let p = {
     }, [m, b]), n.useEffect(() => {
       _(h)
     }, [h]);
-    let C = e => new Promise(t => setTimeout(t, e)),
-      {
-        clearError: E
-      } = (0, c.a)(),
-      S = (0, l.k6)(),
-      y = n.useCallback(async (e, r) => {
-        if (E(), e === u.AW.CATALOG) f();
-        else if ((0, u.RE)(e) && e !== m) {
-          let t = p[e];
-          null != t ? g(t) : f()
-        }
-        if (m === e) return;
-        r && (O(u.f7.OUT), await C(1.1 * u.lb));
-        let n = a && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e;
-        _(n), r && O(u.f7.IN), t || S.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(n), {
-          shallow: true
-        }), O(u.f7.VISIBLE)
-      }, [S, t, a, g, f, m, E]);
+    let {
+      clearError: C
+    } = (0, c.a)(), E = (0, l.k6)(), S = n.useCallback(async (e, r) => {
+      if (C(), e === u.AW.CATALOG) f();
+      else if ((0, u.RE)(e) && e !== m) {
+        let t = p[e];
+        null != t ? g(t) : f()
+      }
+      if (m === e) return;
+      if (r) {
+        let e;
+        O(u.f7.OUT), await (e = 1.1 * u.lb, new Promise(t => setTimeout(t, e)))
+      }
+      let n = a && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e;
+      _(n), r && O(u.f7.IN), t || E.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(n), {
+        shallow: true
+      }), O(u.f7.VISIBLE)
+    }, [E, t, a, g, f, m, C]);
     return {
       selectedTab: m,
       transitionState: v,
-      transitionToTab: y
+      transitionToTab: S
     }
   }

@@ -1,4 +1,4 @@
-/** Chunk was on 45523 **/
+/** Chunk was on 65819 **/
 /** chunk id: 746622, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   H: () => u,
@@ -16,7 +16,7 @@ let u = e => {
       variant: n,
       color: i
     } = e;
-    return (0, r.jsx)(l.Text, {
+    return (0, l.jsx)(r.Text, {
       variant: n,
       color: i,
       children: c(t)

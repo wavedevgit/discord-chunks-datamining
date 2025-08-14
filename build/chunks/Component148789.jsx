@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 148789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -8,14 +8,14 @@ var Chunk255367 = require("./255367.js"),
   Chunk755721 = require("./755721.js"),
   Chunk298213 = require("./298213.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk310612 = require("./310612.js");
+  Chunk231796 = require("./231796.js");
 
 function c(e) {
   let {
     userId: t,
     applicationId: n
-  } = e, [c, u] = i.useState(false), [d, h] = i.useState(false), p = i.useCallback(async e => {
-    e.stopPropagation(), h(true);
+  } = e, [c, u] = i.useState(false), [d, p] = i.useState(false), f = i.useCallback(async e => {
+    e.stopPropagation(), p(true);
     try {
       await o.Z.cancelFriendRequest({
         userId: t,
@@ -23,9 +23,9 @@ function c(e) {
         location: "ActionButtonFriendRequest"
       })
     } finally {
-      h(false)
+      p(false)
     }
-  }, [n, t]), f = i.useCallback(async e => {
+  }, [n, t]), h = i.useCallback(async e => {
     e.stopPropagation(), u(true);
     try {
       await o.Z.maybeConfirmFriendRequestAccept({
@@ -38,25 +38,25 @@ function c(e) {
     }
   }, [n, t]);
   return (0, r.jsxs)("div", {
-    className: a.friendRequestContainer,
+    className: s.friendRequestContainer,
     children: [(0, r.jsx)(l.zx, {
-      className: a.acceptButton,
+      className: s.acceptButton,
       look: l.zx.Looks.FILLED,
       color: l.zx.Colors.GREEN,
       size: l.zx.Sizes.NONE,
       submitting: c,
       disabled: d,
-      onClick: f,
-      children: s.intl.string(s.t.ZcibdX)
+      onClick: h,
+      children: a.intl.string(a.t.ZcibdX)
     }), (0, r.jsx)(l.zx, {
-      className: a.ignoreButton,
+      className: s.ignoreButton,
       look: l.zx.Looks.FILLED,
       color: l.zx.Colors.PRIMARY,
       size: l.zx.Sizes.NONE,
       submitting: d,
       disabled: c,
-      onClick: p,
-      children: s.intl.string(s.t.xuio0N)
+      onClick: f,
+      children: a.intl.string(a.t.xuio0N)
     })]
   })
 }

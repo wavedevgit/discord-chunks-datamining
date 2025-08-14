@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk518738 = require("./518738.js"),
   Chunk884902 = require("./884902.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk467204 = require("./467204.js");
+  Chunk787185 = require("./787185.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -94,8 +94,8 @@ let N = Chunk73800.forwardRef(function(e, t) {
     {
       tabIndex: M
     } = x,
-    j = S(x, ["tabIndex"]),
-    k = (0, g.p9)({
+    k = S(x, ["tabIndex"]),
+    j = (0, g.p9)({
       roleId: R.id,
       size: 16,
       guildId: w
@@ -183,10 +183,10 @@ let N = Chunk73800.forwardRef(function(e, t) {
       onMouseDown: L,
       "aria-label": R.name,
       tabIndex: M
-    }, j), {
-      children: [z(), null != k ? (0, r.jsx)(m.Z, T(v({
+    }, k), {
+      children: [z(), null != j ? (0, r.jsx)(m.Z, T(v({
         className: y.roleIcon
-      }, k), {
+      }, j), {
         enableTooltip: false
       })) : null, (0, r.jsx)("div", {
         "aria-hidden": true,

@@ -1,3 +1,0 @@
-/** Chunk was on 26696 **/
-/** chunk id: 114638, original params: u (module,exports,require) **/
-module.exports = JSON.parse('{"yfwZu7":"Xem Huy Hiệu Của T\xf4i","UnPGio":"Huy hiệu đ\xe3 được th\xeam v\xe0o hồ sơ của bạn.","nvaTQk":"Bạn Đ\xe3 Thu Thập Huy Hiệu Hồ Sơ Orbs!"}')

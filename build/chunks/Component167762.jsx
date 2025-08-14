@@ -1,9 +1,9 @@
 /** Chunk was on 29709 **/
 /** chunk id: 167762, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Or: () => en,
-  r1: () => et,
-  sG: () => B
+  Or: () => et,
+  r1: () => ee,
+  sG: () => Y
 }), require("./388685.js"), require("./539854.js"), require("./642613.js");
 var i, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -45,9 +45,9 @@ var i, Chunk255367 = require("./255367.js"),
   Chunk151459 = require("./151459.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk838293 = require("./838293.js");
+  Chunk712103 = require("./712103.js");
 
-function W(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -66,7 +66,7 @@ function W(e) {
   return e
 }
 
-function z(e, t) {
+function Q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -79,7 +79,7 @@ function z(e, t) {
   }), e
 }
 
-function Y(e, t) {
+function H(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -94,55 +94,47 @@ function Y(e, t) {
   }
   return r
 }
-let H = Chunk481060.EFr.SIZE_32,
-  J = {
-    FRIEND_REQUESTS: 0,
-    SAME_ACTIVITY: 1,
-    ACTIVITIES: 2,
-    SUGGESTIONS: 3,
-    ONLINE: 4,
-    OFFLINE: 5
-  },
+let J = Chunk481060.EFr.SIZE_32,
   K = [Chunk297781.OV, Chunk297781.wO, Chunk297781.f, Chunk297781.v1, Chunk297781.pQ];
-var B = ((i = {}).USER_CONTEXT_MENU = "user_context_menu", i.OPEN_DIRECT_MESSAGE = "open_direct_message", i.SEND_FRIEND_REQUEST = "send_friend_request", i.SEND_ACTIVITY_INVITE = "send_activity_invite", i.ASK_TO_JOIN = "ask_to_join", i.DECLINE_FRIEND_REQUEST = "decline_friend_request", i.ACCEPT_FRIEND_REQUEST = "accept_friend_request", i.CANCEL_FRIEND_REQUEST = "cancel_friend_request", i.OPEN_FRIEND_MODAL = "open_friend_modal", i.OPEN_SETTINGS_MODAL = "open_settings_modal", i.SEARCH_FRIENDS = "search_friends", i);
-let X = Chunk73800.memo(e => {
+var Y = ((i = {}).USER_CONTEXT_MENU = "user_context_menu", i.OPEN_DIRECT_MESSAGE = "open_direct_message", i.SEND_FRIEND_REQUEST = "send_friend_request", i.SEND_ACTIVITY_INVITE = "send_activity_invite", i.ASK_TO_JOIN = "ask_to_join", i.DECLINE_FRIEND_REQUEST = "decline_friend_request", i.ACCEPT_FRIEND_REQUEST = "accept_friend_request", i.CANCEL_FRIEND_REQUEST = "cancel_friend_request", i.OPEN_FRIEND_MODAL = "open_friend_modal", i.OPEN_SETTINGS_MODAL = "open_settings_modal", i.SEARCH_FRIENDS = "search_friends", i);
+let B = Chunk73800.memo(e => {
   let {
     user: t,
     activities: i = [],
     gameProfileEntry: s,
-    index: O,
-    closeParentPopout: b,
+    index: m,
+    closeParentPopout: E,
     isSuggestion: j,
-    relationshipType: T,
-    appContext: Z,
-    nickname: A,
-    onAction: U,
-    onFriendVisible: x
+    relationshipType: Z,
+    appContext: w,
+    nickname: T,
+    onAction: G,
+    onFriendVisible: U
   } = e, F = t.id, {
-    avatarDecorationSrc: L,
-    avatarSrc: M,
-    eventHandlers: Y
-  } = (0, w.Z)({
+    avatarDecorationSrc: M,
+    avatarSrc: L,
+    eventHandlers: H
+  } = (0, k.Z)({
     userId: F,
-    size: H,
+    size: J,
     animateOnHover: true,
     guildId: null
-  }), J = (0, a.JA)("".concat(O)), [B, X] = l.useState(false), [$, ee] = l.useState({}), et = i.filter(e => e.type === q.IIU.PLAYING && (0, h.Z)(e, q.xjy.JOIN)), en = (0, o.Wu)([D.Z], () => D.Z.getActivities().filter(e => e.type === q.IIU.PLAYING && (0, h.Z)(e, q.xjy.JOIN))), {
+  }), Y = (0, a.JA)("".concat(m)), [B, X] = l.useState(false), [$, ee] = l.useState({}), et = i.filter(e => e.type === q.IIU.PLAYING && (0, y.Z)(e, q.xjy.JOIN)), en = (0, o.Wu)([R.Z], () => R.Z.getActivities().filter(e => e.type === q.IIU.PLAYING && (0, y.Z)(e, q.xjy.JOIN))), {
     voiceChannel: ei
-  } = (0, S.Z)({
+  } = (0, b.Z)({
     userId: t.id
-  }), er = (0, P.K)({
+  }), er = (0, C.K)({
     user: t
   }), {
     status: el,
     applicationStream: es,
     isMobile: ea,
     newStatus: eo
-  } = (0, o.cj)([R.Z, k.Z], () => {
-    let e = R.Z.getStatus(t.id),
-      n = k.Z.getAnyStreamForUser(t.id),
-      r = R.Z.isMobileOnline(t.id),
-      l = (0, m.Z)(i) ? q.Skl.STREAMING : e;
+  } = (0, o.cj)([D.Z, x.Z], () => {
+    let e = D.Z.getStatus(t.id),
+      n = x.Z.getAnyStreamForUser(t.id),
+      r = D.Z.isMobileOnline(t.id),
+      l = (0, O.Z)(i) ? q.Skl.STREAMING : e;
     return {
       status: e,
       applicationStream: n,
@@ -150,32 +142,32 @@ let X = Chunk73800.memo(e => {
       newStatus: l
     }
   }, [t.id, i]), ec = en.length > 0, eu = l.useCallback(e => {
-    null == x || x(F, e, ec)
-  }, [x, F, ec]), ed = (0, g.O)(eu), ep = l.useCallback(() => {
+    null == U || U(F, e, ec)
+  }, [U, F, ec]), ed = (0, g.O)(eu), ep = l.useCallback(() => {
     X(true)
   }, []), ef = l.useCallback(() => {
     X(false)
   }, []), eg = l.useCallback(() => {
     if (null != s) {
       let e = s.traits,
-        t = z(W({}, s), {
+        t = Q(V({}, s), {
           traits: e.slice(0, 3)
         });
-      return (0, r.jsx)(I.Gk, {
-        location: I.Gt.FRIENDS_POPOUT,
-        className: Q.badgesContainer,
+      return (0, r.jsx)(_.Gk, {
+        location: _.Gt.FRIENDS_POPOUT,
+        className: z.badgesContainer,
         children: K.map((e, n) => (0, r.jsx)(e, {
           entry: t
         }, n))
       })
     }
-    if (!(0, y.Z)({
+    if (!(0, N.Z)({
         activities: i,
         status: el,
         applicationStream: es,
         voiceChannel: ei
       })) return null;
-    let e = !(0, v.Z)({
+    let e = !(0, I.Z)({
       activity: null == i ? true : i.find(e => {
         let {
           type: t
@@ -184,7 +176,7 @@ let X = Chunk73800.memo(e => {
       }),
       user: t
     });
-    return (0, r.jsx)(E.Z, {
+    return (0, r.jsx)(v.Z, {
       location: "FriendsPopout",
       user: t,
       activities: i,
@@ -194,112 +186,63 @@ let X = Chunk73800.memo(e => {
       hideEmoji: e,
       hasQuest: false
     })
-  }, [t, i, el, es, ei, s]), eN = l.useCallback(e => {
-    null == U || U("user_context_menu", t.id), (0, p.jW)(e, async () => {
+  }, [t, i, el, es, ei, s]), eh = l.useCallback(e => {
+    null == G || G("user_context_menu", t.id), (0, p.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
-      return n => (0, r.jsx)(e, z(W({}, n), {
+      return n => (0, r.jsx)(e, Q(V({}, n), {
         user: t,
-        appContext: Z
+        appContext: w
       }))
     })
-  }, [t, Z, U]), eO = l.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null == U || U("open_direct_message", t.id), (0, N.i)(Z, true), d.Z.openPrivateChannel({
+  }, [t, w, G]), em = l.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), null == G || G("open_direct_message", t.id), (0, h.i)(w, true), d.Z.openPrivateChannel({
       recipientIds: t.id
-    }), null != b && b()
-  }, [t.id, b, Z, U]), eh = l.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null == U || U("send_friend_request", t.id), f.Z.addRelationship({
+    }), null != E && E()
+  }, [t.id, E, w, G]), ey = l.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), null == G || G("send_friend_request", t.id), f.Z.addRelationship({
       userId: t.id,
       context: {
         location: "friends-popout"
       }
     })
-  }, [t.id, U]), em = l.useCallback(async (e, n) => {
+  }, [t.id, G]), eO = l.useCallback(async (e, n) => {
     if (e.preventDefault(), e.stopPropagation(), null != n.application_id && "" !== n.application_id && !$[n.application_id]) try {
-      ee(e => z(W({}, e), {
+      ee(e => Q(V({}, e), {
         [n.application_id]: true
       })), await u.Z.sendActivityInviteUser({
         type: q.mFx.JOIN,
         userId: t.id,
         activity: n,
         location: q.Sbl.FRIENDS_POPOUT
-      }), null == U || U("send_activity_invite", t.id), ee(e => z(W({}, e), {
+      }), null == G || G("send_activity_invite", t.id), ee(e => Q(V({}, e), {
         [n.application_id]: false
       }))
     } finally {
-      ee(e => z(W({}, e), {
+      ee(e => Q(V({}, e), {
         [n.application_id]: false
       }))
     }
-  }, [U, $, t.id]), ey = l.useCallback(async (e, n) => {
+  }, [G, $, t.id]), eN = l.useCallback(async (e, n) => {
     if (e.preventDefault(), e.stopPropagation(), null != n.application_id && "" !== n.application_id && !$[n.application_id]) try {
-      ee(e => z(W({}, e), {
+      ee(e => Q(V({}, e), {
         [n.application_id]: true
       })), await u.Z.sendActivityInviteUser({
         type: q.mFx.JOIN_REQUEST,
         userId: t.id,
         activity: n,
         location: q.Sbl.FRIENDS_POPOUT
-      }), null == U || U("ask_to_join", t.id), ee(e => z(W({}, e), {
+      }), null == G || G("ask_to_join", t.id), ee(e => Q(V({}, e), {
         [n.application_id]: false
       }))
     } finally {
-      ee(e => z(W({}, e), {
+      ee(e => Q(V({}, e), {
         [n.application_id]: false
       }))
     }
-  }, [U, $, t.id]), eS = () => T === q.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(C.sF, {
-      label: V.intl.string(V.t.MMlhsr),
-      icon: c.dz2,
-      onClick: e => {
-        e.preventDefault(), e.stopPropagation(), f.Z.addRelationship({
-          userId: t.id,
-          context: {
-            location: "friends-popout"
-          }
-        }), null == U || U("accept_friend_request", t.id)
-      }
-    }), (0, r.jsx)(C.sF, {
-      label: V.intl.string(V.t.ytCpKi),
-      icon: c.Dio,
-      onClick: e => {
-        e.preventDefault(), e.stopPropagation(), f.Z.removeRelationship(t.id, {
-          location: "friends-popout"
-        }), null == U || U("decline_friend_request", t.id)
-      }
-    })]
-  }) : T === q.OGo.PENDING_OUTGOING ? (0, r.jsx)(C.sF, {
-    label: V.intl.string(V.t["bTfA//"]),
-    icon: c.iHX,
-    onClick: e => {
-      e.preventDefault(), e.stopPropagation(), f.Z.cancelFriendRequest(t.id, {
-        location: "friends-popout"
-      }), null == U || U("cancel_friend_request", t.id)
-    }
-  }) : j ? (0, r.jsx)(C.sF, {
-    label: V.intl.string(V.t.w5uwoK),
-    icon: c.oLu,
-    onClick: eh
-  }) : null, eE = () => (0, r.jsxs)(r.Fragment, {
-    children: [et.map(e => (0, r.jsx)(C.sF, {
-      label: $[e.application_id] ? V.intl.string(V.t["8BEiNj"]) : V.intl.string(V.t.OKsSCQ),
-      icon: $[e.application_id] ? c.dz2 : c.V9,
-      onClick: t => ey(t, e)
-    }, e.application_id)), en.map(e => {
-      var n;
-      return (0, r.jsx)(C.sF, {
-        label: $[e.application_id] ? V.intl.string(V.t["8BEiNj"]) : V.intl.formatToPlainString(V.t["KHLo+P"], {
-          channel: null != (n = t.globalName) ? n : t.username,
-          game: e.name
-        }),
-        icon: $[e.application_id] ? c.dz2 : c.ejJ,
-        onClick: t => em(t, e)
-      }, e.application_id)
-    })]
-  });
-  return (0, r.jsx)(G.Z, {
+  }, [G, $, t.id]);
+  return (0, r.jsx)(A.Z, {
     targetElementRef: ed,
     user: t,
     position: "left",
@@ -310,50 +253,99 @@ let X = Chunk73800.memo(e => {
         isShown: l
       } = n;
       return (0, r.jsxs)("div", {
-        className: Q.row,
+        className: z.row,
         ref: ed,
-        children: [(0, r.jsx)(_.Z, W({
-          innerClassName: Q.rowInner,
-          onContextMenu: eN,
+        children: [(0, r.jsx)(S.Z, V({
+          innerClassName: z.rowInner,
+          onContextMenu: eh,
           onMouseEnter: ep,
           onMouseLeave: ef,
-          avatar: (0, r.jsx)(c.qEK, z(W({}, Y), {
-            size: H,
-            src: M,
+          avatar: (0, r.jsx)(c.qEK, Q(V({}, H), {
+            size: J,
+            src: L,
             isMobile: ea,
             isTyping: false,
             status: eo,
-            className: Q.avatar,
+            className: z.avatar,
             "aria-label": t.username,
             statusTooltip: true,
-            avatarDecoration: L
+            avatarDecoration: M
           })),
           name: (0, r.jsx)("span", {
-            className: Q.username,
-            children: null != (i = null != A ? A : t.globalName) ? i : t.username
+            className: z.username,
+            children: null != (i = null != T ? T : t.globalName) ? i : t.username
           }),
           subText: eg(),
           selected: l,
           nameplate: er,
           hovered: B
-        }, e, J)), (0, r.jsxs)(C.ZP, {
-          className: Q.hoverBar,
-          children: [eS(), eE(), T !== q.OGo.PENDING_INCOMING && T !== q.OGo.PENDING_OUTGOING && (0, r.jsx)(C.sF, {
-            label: V.intl.string(V.t["g33r/P"]),
+        }, e, Y)), (0, r.jsxs)(P.ZP, {
+          className: z.hoverBar,
+          children: [Z === q.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(P.sF, {
+              label: W.intl.string(W.t.MMlhsr),
+              icon: c.dz2,
+              onClick: e => {
+                e.preventDefault(), e.stopPropagation(), f.Z.addRelationship({
+                  userId: t.id,
+                  context: {
+                    location: "friends-popout"
+                  }
+                }), null == G || G("accept_friend_request", t.id)
+              }
+            }), (0, r.jsx)(P.sF, {
+              label: W.intl.string(W.t.ytCpKi),
+              icon: c.Dio,
+              onClick: e => {
+                e.preventDefault(), e.stopPropagation(), f.Z.removeRelationship(t.id, {
+                  location: "friends-popout"
+                }), null == G || G("decline_friend_request", t.id)
+              }
+            })]
+          }) : Z === q.OGo.PENDING_OUTGOING ? (0, r.jsx)(P.sF, {
+            label: W.intl.string(W.t["bTfA//"]),
+            icon: c.iHX,
+            onClick: e => {
+              e.preventDefault(), e.stopPropagation(), f.Z.cancelFriendRequest(t.id, {
+                location: "friends-popout"
+              }), null == G || G("cancel_friend_request", t.id)
+            }
+          }) : j ? (0, r.jsx)(P.sF, {
+            label: W.intl.string(W.t.w5uwoK),
+            icon: c.oLu,
+            onClick: ey
+          }) : null, (0, r.jsxs)(r.Fragment, {
+            children: [et.map(e => (0, r.jsx)(P.sF, {
+              label: $[e.application_id] ? W.intl.string(W.t["8BEiNj"]) : W.intl.string(W.t.OKsSCQ),
+              icon: $[e.application_id] ? c.dz2 : c.V9,
+              onClick: t => eN(t, e)
+            }, e.application_id)), en.map(e => {
+              var n;
+              return (0, r.jsx)(P.sF, {
+                label: $[e.application_id] ? W.intl.string(W.t["8BEiNj"]) : W.intl.formatToPlainString(W.t["KHLo+P"], {
+                  channel: null != (n = t.globalName) ? n : t.username,
+                  game: e.name
+                }),
+                icon: $[e.application_id] ? c.dz2 : c.ejJ,
+                onClick: t => eO(t, e)
+              }, e.application_id)
+            })]
+          }), Z !== q.OGo.PENDING_INCOMING && Z !== q.OGo.PENDING_OUTGOING && (0, r.jsx)(P.sF, {
+            label: W.intl.string(W.t["g33r/P"]),
             icon: c.kBi,
-            onClick: eO
-          }), (0, r.jsx)(C.sF, {
-            label: V.intl.string(V.t.UKOtz8),
+            onClick: em
+          }), (0, r.jsx)(P.sF, {
+            label: W.intl.string(W.t.UKOtz8),
             icon: c.xhG,
-            onClick: eN
+            onClick: eh
           })]
         })]
       })
     }
   })
 });
-X.displayName = "FriendRow";
-let $ = {
+B.displayName = "FriendRow";
+let X = {
   searchType: Chunk886118.S.FUZZY,
   searchStringGenerator: function(e) {
     let {
@@ -361,17 +353,17 @@ let $ = {
       activities: n,
       nickname: i
     } = e;
-    return [t.username, t.globalName, i, ...n.map(e => e.name)].filter(L.lm)
+    return [t.username, t.globalName, i, ...n.map(e => e.name)].filter(M.lm)
   },
   sortType: Chunk886118.E.JARO_WINKLER,
   throttleMs: 100
 };
 
-function ee(e, t) {
+function $(e, t) {
   let [n, i] = l.useState(t), r = l.useCallback(() => i(t), [t]);
-  return (0, Z.BO)(e, t, i, $), [n, r]
+  return (0, w.BO)(e, t, i, X), [n, r]
 }
-let et = Chunk73800.memo(function(e) {
+let ee = Chunk73800.memo(function(e) {
   let {
     containerClassName: t,
     listClassName: i,
@@ -379,37 +371,37 @@ let et = Chunk73800.memo(function(e) {
     renderHeader: d,
     onAction: f,
     onFriendVisible: g,
-    autoFocus: N = false,
-    appContext: h = q.IlC.APP
-  } = e, [m, y] = l.useState([J.SUGGESTIONS, J.FRIEND_REQUESTS]), S = l.useRef(null), E = (0, O.Z)("friends-popout", S), I = function() {
-    let e = (0, o.Wu)([U.Z, x.default, R.Z], () => {
+    autoFocus: h = false,
+    appContext: y = q.IlC.APP
+  } = e, [O, N] = l.useState([3, 0]), b = l.useRef(null), v = (0, m.Z)("friends-popout", b), _ = function() {
+    let e = (0, o.Wu)([G.Z, U.default, D.Z], () => {
         let e = [];
-        for (let [t, n] of U.Z.getMutableRelationships().entries()) {
+        for (let [t, n] of G.Z.getMutableRelationships().entries()) {
           if (n !== q.OGo.PENDING_INCOMING && n !== q.OGo.PENDING_OUTGOING) continue;
-          let i = x.default.getUser(t);
+          let i = U.default.getUser(t);
           if (null != i) {
-            let r = U.Z.getSince(t),
+            let r = G.Z.getSince(t),
               l = null != r ? new Date(r).getTime() : 0;
             e.push({
               user: i,
-              activities: R.Z.getActivities(t),
+              activities: D.Z.getActivities(t),
               timestamp: l,
-              nickname: U.Z.getNickname(t),
+              nickname: G.Z.getNickname(t),
               relationshipType: n
             })
           }
         }
         return e.sort((e, t) => t.timestamp - e.timestamp), e
       }),
-      t = (0, o.Wu)([A.Z, x.default, R.Z, U.Z, F.Z], () => {
-        let e = A.Z.getUserAffinitiesMap(),
+      t = (0, o.Wu)([T.Z, U.default, D.Z, G.Z, F.Z], () => {
+        let e = T.Z.getUserAffinitiesMap(),
           t = [];
         for (let [n, i] of e.entries()) {
-          let e = U.Z.getRelationshipType(n);
-          if (U.Z.isFriend(n) || i.communicationProbability <= .1634 || e === q.OGo.PENDING_INCOMING || e === q.OGo.PENDING_OUTGOING) continue;
-          let r = x.default.getUser(n);
+          let e = G.Z.getRelationshipType(n);
+          if (G.Z.isFriend(n) || i.communicationProbability <= .1634 || e === q.OGo.PENDING_INCOMING || e === q.OGo.PENDING_OUTGOING) continue;
+          let r = U.default.getUser(n);
           if (null != r) {
-            let e = R.Z.getActivities(n),
+            let e = D.Z.getActivities(n),
               l = F.Z.getVoiceStateForUser(n),
               s = (null == l ? true : l.channelId) != null;
             t.push({
@@ -417,7 +409,7 @@ let et = Chunk73800.memo(function(e) {
               activities: e,
               affinity: i.communicationProbability,
               hasActivity: e.length > 0 || s,
-              nickname: U.Z.getNickname(n)
+              nickname: G.Z.getNickname(n)
             })
           }
         }
@@ -427,10 +419,10 @@ let et = Chunk73800.memo(function(e) {
         })
       }, []),
       n = function() {
-        let e = (0, o.e7)([D.Z], () => D.Z.getPrimaryActivity()),
+        let e = (0, o.e7)([R.Z], () => R.Z.getPrimaryActivity()),
           t = null == e ? true : e.application_id,
           n = (0, j.N)(t);
-        return (0, o.cj)([U.Z, x.default, R.Z, F.Z], () => {
+        return (0, o.cj)([G.Z, U.default, D.Z, F.Z], () => {
           let i = (null == e ? true : e.name) != null && null != t,
             r = {
               activities: [],
@@ -441,20 +433,20 @@ let et = Chunk73800.memo(function(e) {
             l = new Map;
           for (let e of (i && null != t && null != n && n.length > 0 && n.forEach(e => {
               let t = e.author_id;
-              if (!U.Z.isFriend(t)) return;
-              let n = x.default.getUser(t);
+              if (!G.Z.isFriend(t)) return;
+              let n = U.default.getUser(t);
               null != n && l.set(t, {
                 user: n,
                 activities: [],
                 gameProfileEntry: e,
-                nickname: U.Z.getNickname(t)
+                nickname: G.Z.getNickname(t)
               })
-            }), U.Z.getFriendIDs())) {
-            let n = x.default.getUser(e);
+            }), G.Z.getFriendIDs())) {
+            let n = U.default.getUser(e);
             if (null == n) continue;
-            let s = R.Z.getStatus(e),
-              a = R.Z.getActivities(e),
-              o = U.Z.getNickname(e),
+            let s = D.Z.getStatus(e),
+              a = D.Z.getActivities(e),
+              o = G.Z.getNickname(e),
               c = F.Z.getVoiceStateForUser(e),
               u = (null == c ? true : c.channelId) != null,
               d = a.filter(e => e.type === q.IIU.PLAYING || e.type === q.IIU.LISTENING || e.type === q.IIU.WATCHING || e.type === q.IIU.STREAMING),
@@ -465,7 +457,7 @@ let et = Chunk73800.memo(function(e) {
                 activities: f ? p : d,
                 nickname: o
               };
-            f ? (r.sameActivity.push(g), l.delete(e)) : d.length > 0 ? r.activities.push(g) : u ? r.activities.push(z(W({}, g), {
+            f ? (r.sameActivity.push(g), l.delete(e)) : d.length > 0 ? r.activities.push(g) : u ? r.activities.push(Q(V({}, g), {
               activities: a
             })) : s === q.Skl.ONLINE || s === q.Skl.IDLE || s === q.Skl.DND ? r.online.push(g) : r.offline.push(g)
           }
@@ -482,7 +474,7 @@ let et = Chunk73800.memo(function(e) {
           return r.activities.sort(s), r.online.sort(s), r.offline.sort(s), r
         }, [n, e, t])
       }(),
-      i = (0, o.e7)([D.Z], () => D.Z.getPrimaryActivity());
+      i = (0, o.e7)([R.Z], () => R.Z.getPrimaryActivity());
     return l.useMemo(() => {
       var r;
       return {
@@ -495,10 +487,10 @@ let et = Chunk73800.memo(function(e) {
         currentActivityName: null != (r = null == i ? true : i.name) ? r : ""
       }
     }, [e, t, n, i])
-  }(), _ = function(e) {
-    let [t, n] = l.useState(""), [i, r] = ee(t, e.friendRequests), [s, a] = ee(t, e.suggestions), [o, c] = ee(t, e.sameActivity), [u, d] = ee(t, e.activities), [p, f] = ee(t, e.online), [g, N] = ee(t, e.offline), O = l.useCallback(() => {
-      n(""), r(), a(), c(), d(), f(), N()
-    }, [r, a, c, d, f, N]);
+  }(), S = function(e) {
+    let [t, n] = l.useState(""), [i, r] = $(t, e.friendRequests), [s, a] = $(t, e.suggestions), [o, c] = $(t, e.sameActivity), [u, d] = $(t, e.activities), [p, f] = $(t, e.online), [g, h] = $(t, e.offline), m = l.useCallback(() => {
+      n(""), r(), a(), c(), d(), f(), h()
+    }, [r, a, c, d, f, h]);
     return {
       friendRequests: i,
       suggestions: s,
@@ -509,175 +501,175 @@ let et = Chunk73800.memo(function(e) {
       currentActivityName: e.currentActivityName,
       searchQuery: t,
       setSearchQuery: n,
-      clearSearch: O
+      clearSearch: m
     }
-  }(I), {
-    searchQuery: v,
-    setSearchQuery: C,
-    clearSearch: P
-  } = _, T = Y(_, ["searchQuery", "setSearchQuery", "clearSearch"]), Z = l.useCallback(e => {
-    y(t => t.includes(e) ? t.filter(t => t !== e) : [...t, e])
-  }, []), w = l.useCallback((0, s.debounce)(() => {
+  }(_), {
+    searchQuery: I,
+    setSearchQuery: P,
+    clearSearch: C
+  } = S, Z = H(S, ["searchQuery", "setSearchQuery", "clearSearch"]), w = l.useCallback(e => {
+    N(t => t.includes(e) ? t.filter(t => t !== e) : [...t, e])
+  }, []), k = l.useCallback((0, s.debounce)(() => {
     null == f || f("search_friends")
   }, 1e3, {
     leading: true,
     trailing: false
-  }), [f]), G = l.useCallback(e => {
+  }), [f]), A = l.useCallback(e => {
     var t;
-    C(e), w(), null == (t = S.current) || t.scrollToTop()
-  }, [C, w]), k = l.useCallback(() => {
+    P(e), k(), null == (t = b.current) || t.scrollToTop()
+  }, [P, k]), x = l.useCallback(() => {
     var e;
-    P(), w(), null == (e = S.current) || e.scrollToTop()
-  }, [P, w]), L = l.useCallback(e => {
+    C(), k(), null == (e = b.current) || e.scrollToTop()
+  }, [C, k]), M = l.useCallback(e => {
     (0, p.jW)(e, async () => {
       let {
         default: e
       } = await n.e("23087").then(n.bind(n, 29131));
-      return t => (0, r.jsx)(e, z(W({}, t), {
+      return t => (0, r.jsx)(e, Q(V({}, t), {
         onClose: u
       }))
     }), null == f || f("open_settings_modal")
-  }, [u, f]), H = l.useCallback(() => {
+  }, [u, f]), J = l.useCallback(() => {
     (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("49078").then(n.bind(n, 539725));
-      return t => (0, r.jsx)(e, W({}, t))
+      return t => (0, r.jsx)(e, V({}, t))
     }), null == f || f("open_friend_modal")
   }, [f]), K = l.useCallback(e => {
     let {
       section: t
     } = e, n = "", i = 0;
     switch (t) {
-      case J.FRIEND_REQUESTS:
-        n = V.intl.string(V.t.fyA119), i = T.friendRequests.length;
+      case 0:
+        n = W.intl.string(W.t.fyA119), i = Z.friendRequests.length;
         break;
-      case J.SAME_ACTIVITY:
-        n = I.currentActivityName, i = T.sameActivity.length;
+      case 1:
+        n = _.currentActivityName, i = Z.sameActivity.length;
         break;
-      case J.SUGGESTIONS:
-        n = V.intl.string(V.t.qm9dSk), i = T.suggestions.length;
+      case 3:
+        n = W.intl.string(W.t.qm9dSk), i = Z.suggestions.length;
         break;
-      case J.ACTIVITIES:
-        n = V.intl.string(V.t.TxqPQU), i = T.activities.length;
+      case 2:
+        n = W.intl.string(W.t.TxqPQU), i = Z.activities.length;
         break;
-      case J.ONLINE:
-        n = V.intl.string(V.t.WbGtnJ), i = T.online.length;
+      case 4:
+        n = W.intl.string(W.t.WbGtnJ), i = Z.online.length;
         break;
-      case J.OFFLINE:
-        n = V.intl.string(V.t.Vv0abG), i = T.offline.length
+      case 5:
+        n = W.intl.string(W.t.Vv0abG), i = Z.offline.length
     }
-    let l = (t === J.SUGGESTIONS || t === J.FRIEND_REQUESTS) && i > 3,
-      s = m.includes(t);
-    return (0, r.jsxs)(b.Z, {
-      className: Q.section,
+    let l = (3 === t || 0 === t) && i > 3,
+      s = O.includes(t);
+    return (0, r.jsxs)(E.Z, {
+      className: z.section,
       children: [(0, r.jsx)(c.nn4, {
-        children: V.intl.format(V.t.UaqbkZ, {
+        children: W.intl.format(W.t.UaqbkZ, {
           title: n,
           count: i
         })
       }), (0, r.jsxs)(c.P3F, {
-        onClick: () => l && Z(t),
+        onClick: () => l && w(t),
         "aria-hidden": true,
-        className: l ? Q.sectionCollapsible : true,
+        className: l ? z.sectionCollapsible : true,
         children: [n, " — ", i, l ? s ? (0, r.jsx)(c.Fbu, {
           size: "md",
           color: "currentColor",
-          className: Q.chevronIcon
+          className: z.chevronIcon
         }) : (0, r.jsx)(c.CJ0, {
           size: "md",
           color: "currentColor",
-          className: Q.chevronIcon
+          className: z.chevronIcon
         }) : null]
       })]
     })
-  }, [I.currentActivityName, T.friendRequests.length, T.sameActivity.length, T.suggestions.length, T.activities.length, T.online.length, T.offline.length, m, Z]), B = l.useCallback(e => {
+  }, [_.currentActivityName, Z.friendRequests.length, Z.sameActivity.length, Z.suggestions.length, Z.activities.length, Z.online.length, Z.offline.length, O, w]), Y = l.useCallback(e => {
     let t;
-    return null == (t = e.section === J.FRIEND_REQUESTS ? T.friendRequests[e.row] : e.section === J.SAME_ACTIVITY ? T.sameActivity[e.row] : e.section === J.SUGGESTIONS ? T.suggestions[e.row] : e.section === J.ACTIVITIES ? T.activities[e.row] : e.section === J.ONLINE ? T.online[e.row] : T.offline[e.row]) || null == t.user ? null : (0, r.jsx)(X, z(W({}, t), {
+    return null == (t = 0 === e.section ? Z.friendRequests[e.row] : 1 === e.section ? Z.sameActivity[e.row] : 3 === e.section ? Z.suggestions[e.row] : 2 === e.section ? Z.activities[e.row] : 4 === e.section ? Z.online[e.row] : Z.offline[e.row]) || null == t.user ? null : (0, r.jsx)(B, Q(V({}, t), {
       index: e.row,
       closeParentPopout: u,
-      isSuggestion: e.section === J.SUGGESTIONS,
-      appContext: h,
+      isSuggestion: 3 === e.section,
+      appContext: y,
       onAction: f,
       onFriendVisible: g
     }), "".concat(e.section, ":").concat(t.user.id))
-  }, [T, u, h, f, g]), {
-    showSuggestions: $
-  } = (0, M.Z)(), et = l.useMemo(() => {
-    let e = $ ? m.includes(J.SUGGESTIONS) ? Math.min(3, T.suggestions.length) : T.suggestions.length : 0;
-    return [m.includes(J.FRIEND_REQUESTS) ? Math.min(3, T.friendRequests.length) : T.friendRequests.length, T.sameActivity.length, T.activities.length, e, T.online.length, T.offline.length]
-  }, [T, m, $]), en = Object.values(T).every(e => 0 === e.length);
+  }, [Z, u, y, f, g]), {
+    showSuggestions: X
+  } = (0, L.Z)(), ee = l.useMemo(() => {
+    let e = X ? O.includes(3) ? Math.min(3, Z.suggestions.length) : Z.suggestions.length : 0;
+    return [O.includes(0) ? Math.min(3, Z.friendRequests.length) : Z.friendRequests.length, Z.sameActivity.length, Z.activities.length, e, Z.online.length, Z.offline.length]
+  }, [Z, O, X]), et = Object.values(Z).every(e => 0 === e.length);
   return (0, r.jsxs)("div", {
     className: t,
     children: [null != d ? (0, r.jsx)("div", {
-      className: Q.header,
+      className: z.header,
       children: d()
     }) : (0, r.jsxs)("div", {
-      className: Q.header,
+      className: z.header,
       children: [(0, r.jsx)(c.X6q, {
         variant: "heading-lg/semibold",
-        children: V.intl.string(V.t.TdEu5e)
+        children: W.intl.string(W.t.TdEu5e)
       }), (0, r.jsxs)("div", {
-        className: Q.controlButtons,
+        className: z.controlButtons,
         children: [(0, r.jsx)(c.M0o, {
-          tooltip: V.intl.string(V.t.w5uwoK),
+          tooltip: W.intl.string(W.t.w5uwoK),
           color: c.YX$.TERTIARY,
           icon: (0, r.jsx)(c.oLu, {
             size: "xs",
             color: "currentColor"
           }),
-          className: Q.controlButton,
-          onClick: H
+          className: z.controlButton,
+          onClick: J
         }), (0, r.jsx)(c.M0o, {
-          tooltip: V.intl.string(V.t["3D5yo6"]),
+          tooltip: W.intl.string(W.t["3D5yo6"]),
           color: c.YX$.TERTIARY,
           icon: (0, r.jsx)(c.xhG, {
             size: "xs",
             color: "currentColor"
           }),
-          className: Q.controlButton,
-          onClick: L
+          className: z.controlButton,
+          onClick: M
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: Q.searchContainer,
+      className: z.searchContainer,
       children: (0, r.jsx)(c.E1j, {
-        query: v,
-        onChange: G,
-        onClear: k,
-        placeholder: V.intl.string(V.t["5h0QOD"]),
-        autoFocus: N
+        query: I,
+        onChange: A,
+        onClear: x,
+        placeholder: W.intl.string(W.t["5h0QOD"]),
+        autoFocus: h
       })
-    }), en ? (0, r.jsx)("div", {
-      className: Q.emptyStateContainer,
+    }), et ? (0, r.jsx)("div", {
+      className: z.emptyStateContainer,
       children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: V.intl.string(V.t["7sW4h4"])
+        children: W.intl.string(W.t["7sW4h4"])
       })
     }) : (0, r.jsx)(a.bG, {
-      navigator: E,
+      navigator: v,
       children: (0, r.jsx)(a.SJ, {
         children: e => {
           var {
             ref: t,
             role: n
-          } = e, l = Y(e, ["ref", "role"]);
+          } = e, l = H(e, ["ref", "role"]);
           return (0, r.jsx)(c.Wdt, {
-            children: e => (0, r.jsx)(c.aVo, W({
+            children: e => (0, r.jsx)(c.aVo, V({
               innerRole: n,
-              innerAriaLabel: V.intl.string(V.t.TdEu5e),
+              innerAriaLabel: W.intl.string(W.t.TdEu5e),
               ref: e => {
                 var n;
-                S.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
+                b.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
               },
               className: i,
               sectionHeight: 40,
               rowHeight: 42,
               sidebarHeight: 0,
               renderSection: K,
-              renderRow: B,
-              sections: et,
+              renderRow: Y,
+              sections: ee,
               paddingTop: 4,
               paddingBottom: 4
             }, l, e))
@@ -688,7 +680,7 @@ let et = Chunk73800.memo(function(e) {
   })
 });
 
-function en(e) {
+function et(e) {
   let {
     onOpen: t,
     onClose: n,
@@ -702,9 +694,9 @@ function en(e) {
       let i = !e;
       return i ? null == t || t() : null == n || n(), i
     })
-  }, [n, t]), g = l.useCallback(() => (0, r.jsx)(et, {
-    containerClassName: Q.container,
-    listClassName: Q.list,
+  }, [n, t]), g = l.useCallback(() => (0, r.jsx)(ee, {
+    containerClassName: z.container,
+    listClassName: z.list,
     closePopout: p,
     autoFocus: true
   }), [p]);

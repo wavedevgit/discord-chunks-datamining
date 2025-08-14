@@ -17,7 +17,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk935270 = require("./935270.js");
+  Chunk206659 = require("./206659.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -108,25 +108,25 @@ class T extends Chunk73800.PureComponent {
       onClickSkipAll: _
     } = this.props, m = "string" == typeof Chunk73800 ? "p" : "div", g = "left" === exports || require, E = "center" === exports || !g;
     return (0, Chunk255367.jsxs)(Chunk481060.VqE, {
-      className: s()(Chunk935270.popoutRoot, Chunk120356),
+      className: s()(Chunk206659.popoutRoot, Chunk120356),
       children: [null != module && (0, Chunk255367.jsx)(Chunk600164.Z, {
-        className: Chunk935270.mediaContainer,
+        className: Chunk206659.mediaContainer,
         justify: g ? Chunk600164.Z.Justify.START : Chunk600164.Z.Justify.CENTER,
         children: module()
       }), (0, Chunk255367.jsx)(Chunk481060.H, {
         className: s()({
-          [Chunk935270.titleCenter]: E,
-          [Chunk935270.titleLeft]: g
+          [Chunk206659.titleCenter]: E,
+          [Chunk206659.titleLeft]: g
         }),
         children: r
       }), (0, Chunk255367.jsx)(m, {
         className: s()({
-          [Chunk935270.bodyCenter]: E,
-          [Chunk935270.bodyLeft]: g
+          [Chunk206659.bodyCenter]: E,
+          [Chunk206659.bodyLeft]: g
         }),
         children: Chunk73800
       }), (0, Chunk255367.jsxs)(Chunk600164.Z, {
-        className: Chunk935270.buttonContainer,
+        className: Chunk206659.buttonContainer,
         justify: g ? Chunk600164.Z.Justify.BETWEEN : Chunk600164.Z.Justify.CENTER,
         children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
@@ -138,7 +138,7 @@ class T extends Chunk73800.PureComponent {
           look: Chunk755721.zx.Looks.BLANK,
           onClick: Chunk981631,
           color: (0, Chunk780384.ap)(Chunk626135) ? Chunk755721.zx.Colors.PRIMARY : Chunk755721.zx.Colors.WHITE,
-          className: g ? Chunk935270.buttonSkipLeftAlign : Chunk935270.buttonSkipCenterAlign,
+          className: g ? Chunk206659.buttonSkipLeftAlign : Chunk206659.buttonSkipCenterAlign,
           children: Chunk388032.intl.string(Chunk388032.t["33wtxs"])
         })]
       })]
@@ -178,7 +178,7 @@ class S extends(r = Chunk73800.PureComponent) {
     return (0, Chunk255367.jsx)(Chunk481060.yRy, b(g({
       targetElementRef: Chunk981631
     }, Chunk388032), {
-      align: Chunk935270,
+      align: Chunk206659,
       spacing: null != Chunk626135 ? Chunk626135 : 0,
       renderPopout: this.renderPopoutContent,
       nudgeAlignIntoViewport: true,

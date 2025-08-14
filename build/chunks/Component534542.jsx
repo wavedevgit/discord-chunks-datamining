@@ -2,7 +2,7 @@
 /** chunk id: 534542, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  R: () => m,
+  R: () => E,
   g: () => p
 });
 var Chunk255367 = require("./255367.js");
@@ -10,7 +10,7 @@ require("./73800.js");
 var Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk422734 = require("./422734.js");
+  Chunk520463 = require("./520463.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,13 +78,11 @@ let p = {
     ERROR: "error",
     SUCCESS: "success"
   },
-  h = {
-    DEFAULT: "modeDefault",
-    DISABLED: "modeDisabled",
-    SELECTABLE: "modeSelectable"
-  };
+  h = "modeDefault",
+  m = "modeDisabled",
+  g = "modeSelectable";
 
-function m(e) {
+function E(e) {
   var {
     type: t = p.DEFAULT,
     className: n,
@@ -92,14 +90,14 @@ function m(e) {
     selectable: l,
     children: u,
     style: _
-  } = e, m = f(e, ["type", "className", "disabled", "selectable", "children", "style"]);
-  let g = h.DEFAULT;
-  return i ? g = h.DISABLED : l && (g = h.SELECTABLE), (0, r.jsx)(a.Text, d(c({
+  } = e, E = f(e, ["type", "className", "disabled", "selectable", "children", "style"]);
+  let b = h;
+  return i ? b = m : l && (b = g), (0, r.jsx)(a.Text, d(c({
     variant: "text-sm/normal",
-    className: o()(s[t], n, s[g]),
+    className: o()(s[t], n, s[b]),
     style: _
-  }, m), {
+  }, E), {
     children: u
   }))
 }
-m.Types = p
+E.Types = p

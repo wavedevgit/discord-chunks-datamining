@@ -78,8 +78,7 @@ n.prototype.getPosition = function() {
         throw "readInt method not implemented for size: " + t
     }
     return this.position += t, i
-  }
-  throw "Not enough bytes in buffer"
+  } else throw "Not enough bytes in buffer"
 }, n.prototype.readUint8 = function() {
   return this.readAnyInt(1, false)
 }, n.prototype.readUint16 = function() {
@@ -456,7 +455,7 @@ a.prototype = {}, a.prototype.getPosition = function() {
   null != r && (this.position = o, this._realloc(r), this.position = o + r)
 }, a.prototype.writeUint64 = function(t) {
   var e = Math.floor(t / 0x100000000);
-  this.writeUint32(e), this.writeUint32(0xffffffff & t)
+  this.writeUint32(e), this.writeUint32(0 | t)
 }, a.prototype.writeUint24 = function(t) {
   this.writeUint8((0xff0000 & t) >> 16), this.writeUint8((65280 & t) >> 8), this.writeUint8(255 & t)
 }, a.prototype.adjustUint32 = function(t, e) {
@@ -1630,7 +1629,7 @@ d.initialize(), d.TKHD_FLAG_ENABLED = 1, d.TKHD_FLAG_IN_MOVIE = 2, d.TKHD_FLAG_I
     var e = "";
     if (this.vvcC.general_constraint_info) {
       var i, s, r, n = [];
-      for (s = 0, i = 0 | this.vvcC.ptl_frame_only_constraint << 7 | this.vvcC.ptl_multilayer_enabled << 6; s < this.vvcC.general_constraint_info.length; ++s) i |= this.vvcC.general_constraint_info[s] >> 2 & 63, n.push(i), i && (r = s), i = this.vvcC.general_constraint_info[s] >> 2 & 3;
+      for (s = 0, i = this.vvcC.ptl_frame_only_constraint << 7 | this.vvcC.ptl_multilayer_enabled << 6; s < this.vvcC.general_constraint_info.length; ++s) i |= this.vvcC.general_constraint_info[s] >> 2 & 63, n.push(i), i && (r = s), i = this.vvcC.general_constraint_info[s] >> 2 & 3;
       if (true === r) e = ".CA";
       else {
         e = ".C";

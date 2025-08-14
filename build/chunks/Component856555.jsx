@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 856555, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  EQ: () => E,
-  Pk: () => y
+  EQ: () => O,
+  Pk: () => E
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -59,36 +59,35 @@ let b = e => (0, r.jsx)(d.M4, g({
       static: h.Z
     }
   }, e)),
-  _ = () => {
-    let e = Chunk73800.useCallback(() => (0, Chunk930153.Lk)(document.body.style.getPropertyValue("--custom-channel-header-height"), 48) + (0, Chunk930153.Lk)(document.body.style.getPropertyValue("--custom-app-top-bar-height"), 36), []);
-    return {
-      requiredSpacingFromTop: Chunk73800.useMemo(() => module(), [module])
-    }
-  },
-  O = e => {
+  _ = e => {
     var {
       positionControlRef: t,
       targetElementRef: n,
       children: l
     } = e, a = m(e, ["positionControlRef", "targetElementRef", "children"]);
     let {
-      requiredSpacingFromTop: o
-    } = _(), s = i.useCallback(e => {
-      if ((e.bottom + e.top) / 2 <= o) returnfalse;
+      requiredSpacingFromTop: s
+    } = (() => {
+      let e = i.useCallback(() => (0, o.Lk)(document.body.style.getPropertyValue("--custom-channel-header-height"), 48) + (0, o.Lk)(document.body.style.getPropertyValue("--custom-app-top-bar-height"), 36), []);
+      return {
+        requiredSpacingFromTop: i.useMemo(() => e(), [e])
+      }
+    })(), c = i.useCallback(e => {
+      if ((e.bottom + e.top) / 2 <= s) returnfalse;
       let t = window.innerHeight - (0, d.t4)();
       return !(e.bottom > t)
-    }, [o]);
+    }, [s]);
     return (0, r.jsx)(d.WS, {
       defaultCoachmarkAlign: "bottom",
       targetElementRef: n,
       positionControlRef: t,
       popoutElement: (0, r.jsx)(b, g({}, a)),
-      calculateVisibility: s,
+      calculateVisibility: c,
       spacing: 12,
       children: l
     })
   },
-  E = e => {
+  O = e => {
     let {
       listScrollerRef: t
     } = e, {
@@ -133,7 +132,7 @@ let b = e => (0, r.jsx)(d.M4, g({
       onShopButtonClick: p.dG4
     }
   },
-  y = e => {
+  E = e => {
     var t, n, {
         children: i
       } = e,
@@ -141,7 +140,7 @@ let b = e => (0, r.jsx)(d.M4, g({
     return (0, r.jsx)(u.x, {
       errorSource: "ORBS_SHOP_ONBOARDING_COACHMARK",
       renderCustomErrorComponent: () => i,
-      children: (0, r.jsx)(O, (t = g({}, l), n = n = {
+      children: (0, r.jsx)(_, (t = g({}, l), n = n = {
         children: i
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);

@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk814322 = require("./814322.jsx"),
   Chunk178043 = require("./178043.jsx"),
   Chunk477839 = require("./477839.js"),
-  Chunk160595 = require("./160595.js");
+  Chunk166404 = require("./166404.js");
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -37,10 +37,10 @@ function y(e) {
   return e
 }
 let h = {
-  [Chunk477839.Vx.DEFAULT]: Chunk160595.cursorDefault,
-  [Chunk477839.Vx.CAT]: Chunk160595.cursorCat,
-  [Chunk477839.Vx.SWORD]: Chunk160595.cursorSword,
-  [Chunk477839.Vx.PIZZA]: Chunk160595.cursorPizza
+  [Chunk477839.Vx.DEFAULT]: Chunk166404.cursorDefault,
+  [Chunk477839.Vx.CAT]: Chunk166404.cursorCat,
+  [Chunk477839.Vx.SWORD]: Chunk166404.cursorSword,
+  [Chunk477839.Vx.PIZZA]: Chunk166404.cursorPizza
 };
 
 function x(e) {

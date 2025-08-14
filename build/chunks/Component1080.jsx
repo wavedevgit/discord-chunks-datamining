@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 1080, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => L
@@ -29,7 +29,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk740903 = require("./740903.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk473905 = require("./473905.js");
+  Chunk26682 = require("./26682.js");
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -152,16 +152,16 @@ class D extends Chunk73800.PureComponent {
       guild: n
     } = this.props;
     return (0, Chunk255367.jsxs)(Chunk481060.P3F, {
-      className: Chunk473905.bannedUser,
+      className: Chunk26682.bannedUser,
       onClick: this.handleShowModal,
       onContextMenu: this.handleContextMenu,
       children: [(0, Chunk255367.jsx)(Chunk481060.qEK, {
         src: exports.getAvatarURL(null == require ? true : require.id, 40),
         "aria-label": exports.username,
         size: Chunk481060.EFr.SIZE_40,
-        className: Chunk473905.bannedUserAvatar
+        className: Chunk26682.bannedUserAvatar
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk473905.username,
+        className: Chunk26682.username,
         children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
@@ -347,12 +347,12 @@ function L() {
     return null != (e = F[G.currentPage - 1]) ? module : []
   }, [F, G.currentPage]);
   return null == Chunk239091 ? null : (0, Chunk255367.jsxs)("div", {
-    className: Chunk473905.container,
+    className: Chunk26682.container,
     children: [(0, Chunk255367.jsx)(k, {
       guildId: Chunk434404,
       storedSearchQuery: Chunk479531
     }), (0, Chunk255367.jsxs)("div", {
-      className: Chunk473905.scrollerContainer,
+      className: Chunk26682.scrollerContainer,
       children: [!M && (0, Chunk255367.jsx)(A, {
         guild: Chunk239091,
         bans: Chunk246946,
@@ -360,7 +360,7 @@ function L() {
         ref: Chunk84613
       }), !L && M && (0, Chunk255367.jsxs)(Chunk481060.ubH, {
         theme: Chunk51144,
-        className: Chunk473905.emptyState,
+        className: Chunk26682.emptyState,
         children: [(0, Chunk255367.jsx)(Chunk481060.oxh, {
           darkSrc: require("./532747.js"),
           lightSrc: require("./433466.js"),
@@ -375,9 +375,9 @@ function L() {
         })]
       })]
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk473905.__invalid_paginationContainer,
+      className: Chunk26682.__invalid_paginationContainer,
       children: (0, Chunk255367.jsx)(Chunk481060.DsT, {
-        className: Chunk473905.paginationInput,
+        className: Chunk26682.paginationInput,
         totalCount: Z.length + (L ? G.pageSize : 0),
         pageSize: G.pageSize,
         currentPage: G.currentPage,

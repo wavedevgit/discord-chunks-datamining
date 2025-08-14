@@ -13,13 +13,13 @@ var Chunk255367 = require("./255367.js"),
   Chunk2818 = require("./2818.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk896576 = require("./896576.js"),
+  Chunk684642 = require("./684642.js"),
   Chunk235810 = require("./235810.js");
 let p = Chunk704215.z.FOR_LATER_POPOUT_COACHMARK,
   h = () => (0, Chunk255367.jsx)("div", {
-    className: Chunk896576.imageContainer,
+    className: Chunk684642.imageContainer,
     children: (0, Chunk255367.jsx)("img", {
-      className: Chunk896576.image,
+      className: Chunk684642.image,
       src: Chunk235810,
       alt: ""
     })

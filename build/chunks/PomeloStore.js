@@ -1,20 +1,20 @@
 /** Chunk was on 85342 **/
 /** chunk id: 135200, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
-var n, i, a, Chunk31775 = require("./31775.js"),
-  s = require.n(Chunk31775),
+var n, i, Chunk31775 = require("./31775.js"),
+  o = require.n(Chunk31775),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk70956 = require("./70956.js");
-let d = {
+let u = {
     taken: null,
     error: true,
     rateLimited: true
   },
-  m = {
-    validations: new(s())({
+  d = {
+    validations: new(o())({
       max: 100,
       maxAge: 6e4
     }),
@@ -37,46 +37,45 @@ let d = {
       }
     }
   };
-class g extends(a = Chunk442837.ZP.Store) {
+class m extends(i = Chunk442837.ZP.Store) {
   isRateLimited() {
-    return null != m.retryAfterTime && Date.now() < m.retryAfterTime
+    return null != d.retryAfterTime && Date.now() < d.retryAfterTime
   }
   validate(e) {
-    let t = m.validations.get(e);
-    return this.isRateLimited() && (null == t || t.rateLimited) ? d : this.isRateLimited() || null == t || !t.rateLimited ? t : true
+    let t = d.validations.get(e);
+    return this.isRateLimited() && (null == t || t.rateLimited) ? u : this.isRateLimited() || null == t || !t.rateLimited ? t : true
   }
   registrationUsernameSuggestion() {
-    return m.suggestions.registration.suggestion.username
+    return d.suggestions.registration.suggestion.username
   }
   usernameSuggestion() {
-    return m.suggestions.migration.suggestion.username
+    return d.suggestions.migration.suggestion.username
   }
   usernameSuggestionLoading() {
-    return m.suggestions.migration.usernameSuggestionLoading
+    return d.suggestions.migration.usernameSuggestionLoading
   }
   isCurrentUsernameInvalid() {
-    return m.currentUsernameInvalid
+    return d.currentUsernameInvalid
   }
   wasRegistrationSuggestionFetched(e) {
-    return m.suggestions.registration.source === e && m.suggestions.registration.fetched
+    return d.suggestions.registration.source === e && d.suggestions.registration.fetched
   }
   wasSuggestionsFetched() {
-    return m.suggestions.migration.fetched
+    return d.suggestions.migration.fetched
   }
-}
-i = "PomeloStore", (n = "displayName") in g ? Object.defineProperty(g, n, {
-  value: i,
+}(n = "displayName") in m ? Object.defineProperty(m, n, {
+  value: "PomeloStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : g[n] = i;
-let f = new g(Chunk570140.Z, {
+}) : m[n] = "PomeloStore";
+let g = new m(Chunk570140.Z, {
   POMELO_ATTEMPT_SUCCESS: function(e) {
     let {
       username: t,
       taken: r
     } = e;
-    m.validations.set(t, {
+    d.validations.set(t, {
       taken: r
     })
   },
@@ -87,23 +86,23 @@ let f = new g(Chunk570140.Z, {
       statusCode: n,
       retryAfter: i
     } = e;
-    429 === n ? m.validations.set(t, {
+    429 === n ? d.validations.set(t, {
       taken: null,
       error: r,
       rateLimited: true
-    }, (null != i ? i : 7) * u.Z.Millis.SECOND) : m.validations.set(t, {
+    }, (null != i ? i : 7) * c.Z.Millis.SECOND) : d.validations.set(t, {
       taken: null,
       error: r
-    }), null != i && (m.retryAfterTime = Date.now() + i * u.Z.Millis.SECOND)
+    }), null != i && (d.retryAfterTime = Date.now() + i * c.Z.Millis.SECOND)
   },
   POMELO_SUGGESTIONS_RESET: function() {
-    m.suggestions.migration = {
+    d.suggestions.migration = {
       suggestion: {
         username: true
       },
       fetched: false,
       usernameSuggestionLoading: false
-    }, m.suggestions.registration = {
+    }, d.suggestions.registration = {
       suggestion: {
         username: true
       },
@@ -115,28 +114,28 @@ let f = new g(Chunk570140.Z, {
     let {
       suggestion: t
     } = e;
-    m.suggestions.migration = {
+    d.suggestions.migration = {
       suggestion: t,
       fetched: true,
       usernameSuggestionLoading: false
-    }, (null == t ? true : t.invalid_current_username) === true && (m.currentUsernameInvalid = true)
+    }, (null == t ? true : t.invalid_current_username) === true && (d.currentUsernameInvalid = true)
   },
   POMELO_SUGGESTIONS_FETCH: function(e) {
     let {
       usernameSuggestionLoading: t
     } = e;
-    m.suggestions.migration.usernameSuggestionLoading = t
+    d.suggestions.migration.usernameSuggestionLoading = t
   },
   POMELO_REGISTRATION_SUGGESTIONS_SUCCESS: function(e) {
     let {
       suggestion: t,
       source: r
     } = e;
-    m.suggestions.registration = {
+    d.suggestions.registration = {
       suggestion: t,
       source: r,
       fetched: true
-    }, (null == t ? true : t.username) != null && m.validations.set(t.username, {
+    }, (null == t ? true : t.username) != null && d.validations.set(t.username, {
       taken: false
     })
   }

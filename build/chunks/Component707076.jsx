@@ -1,8 +1,8 @@
 /** Chunk was on 58227 **/
 /** chunk id: 707076, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v,
-  j: () => _
+  Z: () => _,
+  j: () => O
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -23,61 +23,27 @@ var Chunk120356 = require("./120356.js"),
   Chunk84658 = require("./84658.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk384892 = require("./384892.js");
-let O = () => [{
+  Chunk473450 = require("./473450.js");
+
+function O(e) {
+  let {
+    isTooltip: t = false
+  } = e, n = [{
     emoji: "\uD83E\uDDD9",
-    emojiDescription: Chunk388032.intl.string(Chunk388032.t.Jh9uiY),
-    title: Chunk388032.intl.string(Chunk388032.t.ATF45u),
+    emojiDescription: E.intl.string(E.t.Jh9uiY),
+    title: E.intl.string(E.t.ATF45u),
     selected: true
   }, {
     emoji: "\uD83C\uDFA4",
-    emojiDescription: Chunk388032.intl.string(Chunk388032.t["nGt+MT"]),
-    title: Chunk388032.intl.string(Chunk388032.t["30uo7O"]),
+    emojiDescription: E.intl.string(E.t["nGt+MT"]),
+    title: E.intl.string(E.t["30uo7O"]),
     selected: false
   }, {
     emoji: "\uD83D\uDC40",
-    emojiDescription: Chunk388032.intl.string(Chunk388032.t.hOMH5u),
-    title: Chunk388032.intl.string(Chunk388032.t["5Z5sgo"]),
+    emojiDescription: E.intl.string(E.t.hOMH5u),
+    title: E.intl.string(E.t["5Z5sgo"]),
     selected: false
-  }],
-  x = () => [{
-    channelIcon: () => (0, Chunk255367.jsx)(Chunk481060.MqZ, {
-      size: "xs",
-      color: "currentColor",
-      className: Chunk384892.channelIcon
-    }),
-    channel: Chunk388032.intl.string(Chunk388032.t.MXJozM),
-    selected: true
-  }, {
-    channelIcon: () => (0, Chunk255367.jsx)(Chunk481060.VL1, {
-      size: "md",
-      color: "currentColor",
-      className: Chunk384892.channelIcon
-    }),
-    channel: Chunk388032.intl.string(Chunk388032.t.Pkj0f3),
-    selected: true
-  }, {
-    channelIcon: () => (0, Chunk255367.jsx)(Chunk481060.VL1, {
-      size: "md",
-      color: "currentColor",
-      className: Chunk384892.channelIcon
-    }),
-    channel: Chunk388032.intl.string(Chunk388032.t["imVD+v"]),
-    selected: false
-  }, {
-    channelIcon: () => (0, Chunk255367.jsx)(Chunk481060.Mmi, {
-      size: "md",
-      color: "currentColor",
-      className: Chunk384892.channelIcon
-    }),
-    channel: Chunk388032.intl.string(Chunk388032.t["Pj/Wpq"]),
-    selected: true
   }];
-
-function _(e) {
-  let {
-    isTooltip: t = false
-  } = e, n = O();
   t && n.pop();
   let i = t ? (0, l.jsx)(a.Text, {
       variant: "text-sm/semibold",
@@ -133,7 +99,7 @@ function _(e) {
   })
 }
 
-function j() {
+function x() {
   let e = [{
     message: Chunk388032.t.FUUXXl,
     profilePic: "https://cdn.discordapp.com/avatars/302407541994946561/bb3fd59e6c2ea0a86a2bdabf5dff7856.webp?size=80",
@@ -156,23 +122,23 @@ function j() {
   })
 }
 
-function v() {
+function _() {
   let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildId()),
     t = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(module)),
     n = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
   return null == module || null == exports || null == require ? null : (0, Chunk255367.jsxs)("div", {
-    className: Chunk384892.upsellContainer,
+    className: Chunk473450.upsellContainer,
     children: [(0, Chunk255367.jsxs)("div", {
-      className: Chunk384892.upsellHeader,
+      className: Chunk473450.upsellHeader,
       children: [(0, Chunk255367.jsxs)("div", {
-        className: Chunk384892.islands,
+        className: Chunk473450.islands,
         children: [(0, Chunk255367.jsx)(Chunk548473.xm, {}), (0, Chunk255367.jsx)(Chunk548473._I, {
           guild: exports,
-          mainIslandClassName: Chunk384892.mainIsland,
-          balloonDogClassName: Chunk384892.balloonDog
+          mainIslandClassName: Chunk473450.mainIsland,
+          balloonDogClassName: Chunk473450.balloonDog
         }), (0, Chunk255367.jsx)(Chunk548473.B0, {})]
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk384892.upsellHeaderText,
+        className: Chunk473450.upsellHeaderText,
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
           variant: "heading-xl/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.GnKOAw)
@@ -181,7 +147,7 @@ function v() {
           children: Chunk388032.intl.string(Chunk388032.t.SJRFJi)
         })]
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk384892.upsellButtons,
+        className: Chunk473450.upsellButtons,
         children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: Chunk388032.intl.string(Chunk388032.t.RzWDqa),
@@ -224,12 +190,12 @@ function v() {
           disabled: false
         })
       })]
-    }), (0, Chunk255367.jsx)(Chunk481060.$i$, {}), (0, Chunk255367.jsx)(j, {}), (0, Chunk255367.jsx)(Chunk481060.$i$, {}), (0, Chunk255367.jsxs)("div", {
-      className: Chunk384892.valuesContainer,
+    }), (0, Chunk255367.jsx)(Chunk481060.$i$, {}), (0, Chunk255367.jsx)(x, {}), (0, Chunk255367.jsx)(Chunk481060.$i$, {}), (0, Chunk255367.jsxs)("div", {
+      className: Chunk473450.valuesContainer,
       children: [(0, Chunk255367.jsxs)("div", {
-        className: Chunk384892.valueContainer,
-        children: [(0, Chunk255367.jsx)(_, {}), (0, Chunk255367.jsxs)("div", {
-          className: Chunk384892.valueText,
+        className: Chunk473450.valueContainer,
+        children: [(0, Chunk255367.jsx)(O, {}), (0, Chunk255367.jsxs)("div", {
+          className: Chunk473450.valueText,
           children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
             variant: "heading-md/semibold",
             children: Chunk388032.intl.string(Chunk388032.t.Z7kqKS)
@@ -239,9 +205,9 @@ function v() {
           })]
         })]
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk384892.valueContainer,
+        className: Chunk473450.valueContainer,
         children: [(0, Chunk255367.jsxs)("div", {
-          className: Chunk384892.valueText,
+          className: Chunk473450.valueText,
           children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
             variant: "heading-md/semibold",
             children: Chunk388032.intl.string(Chunk388032.t.O4jYEh)
@@ -250,7 +216,7 @@ function v() {
             children: Chunk388032.intl.string(Chunk388032.t["l/l/Gx"])
           })]
         }), (0, Chunk255367.jsxs)("div", {
-          className: r()(Chunk384892.upsellPreview, Chunk384892.spacingLarge),
+          className: r()(Chunk473450.upsellPreview, Chunk473450.spacingLarge),
           children: [(0, Chunk255367.jsx)(Chunk150512.Z, {
             guildId: module,
             welcomeMessage: {
@@ -272,10 +238,42 @@ function v() {
           })]
         })]
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk384892.valueContainer,
+        className: Chunk473450.valueContainer,
         children: [(0, Chunk255367.jsx)("div", {
-          className: r()(Chunk384892.upsellPreview, Chunk384892.spacingLarge),
-          children: x().map((e, t) => {
+          className: r()(Chunk473450.upsellPreview, Chunk473450.spacingLarge),
+          children: [{
+            channelIcon: () => (0, Chunk255367.jsx)(Chunk481060.MqZ, {
+              size: "xs",
+              color: "currentColor",
+              className: Chunk473450.channelIcon
+            }),
+            channel: Chunk388032.intl.string(Chunk388032.t.MXJozM),
+            selected: true
+          }, {
+            channelIcon: () => (0, Chunk255367.jsx)(Chunk481060.VL1, {
+              size: "md",
+              color: "currentColor",
+              className: Chunk473450.channelIcon
+            }),
+            channel: Chunk388032.intl.string(Chunk388032.t.Pkj0f3),
+            selected: true
+          }, {
+            channelIcon: () => (0, Chunk255367.jsx)(Chunk481060.VL1, {
+              size: "md",
+              color: "currentColor",
+              className: Chunk473450.channelIcon
+            }),
+            channel: Chunk388032.intl.string(Chunk388032.t["imVD+v"]),
+            selected: false
+          }, {
+            channelIcon: () => (0, Chunk255367.jsx)(Chunk481060.Mmi, {
+              size: "md",
+              color: "currentColor",
+              className: Chunk473450.channelIcon
+            }),
+            channel: Chunk388032.intl.string(Chunk388032.t["Pj/Wpq"]),
+            selected: true
+          }].map((e, t) => {
             let {
               channelIcon: n,
               channel: i,
@@ -305,7 +303,7 @@ function v() {
             }, t)
           })
         }), (0, Chunk255367.jsxs)("div", {
-          className: Chunk384892.valueText,
+          className: Chunk473450.valueText,
           children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
             variant: "heading-md/semibold",
             children: Chunk388032.intl.string(Chunk388032.t["3T9aHB"])

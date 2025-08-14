@@ -6,9 +6,9 @@ require.d(exports, {
 var Chunk799761 = require("./799761.js");
 let n = {
   ordinalNumber: function(e, t) {
-    var a, i = Number(e),
-      n = null == t ? true : t.unit;
-    return i + ("year" === n || "month" === n ? "ος" : "week" === n || "dayOfYear" === n || "day" === n || "hour" === n || "date" === n ? "η" : "ο")
+    var a = Number(e),
+      i = null == t ? true : t.unit;
+    return a + ("year" === i || "month" === i ? "ος" : "week" === i || "dayOfYear" === i || "day" === i || "hour" === i || "date" === i ? "η" : "ο")
   },
   era: (0, Chunk799761.Z)({
     values: {

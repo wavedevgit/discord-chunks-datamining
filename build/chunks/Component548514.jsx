@@ -1,4 +1,4 @@
-/** Chunk was on 787 **/
+/** Chunk was on 32561 **/
 /** chunk id: 548514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -31,7 +31,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk98449 = require("./98449.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk843736 = require("./843736.js");
+  Chunk219923 = require("./219923.js");
 let L = "start_application_install",
   R = "launch_activity";
 
@@ -188,41 +188,42 @@ let k = Chunk73800.forwardRef(function(e, t) {
     location: "UserSettingsAuthedApps"
   }, {
     autoTrackExposure: true
-  }).enabled, _ = e => "".concat(location.protocol, "//").concat(location.host).concat(N.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(e)), {
-    analyticsLocations: y
-  } = (0, m.ZP)(), O = a.useCallback(() => {
+  }).enabled, {
+    analyticsLocations: _
+  } = (0, m.ZP)(), y = a.useCallback(() => {
+    let e;
     (0, S.zZ)(N.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
       application_id: n.id
-    }), (0, I.JG)(_(n.id), () => (0, c.showToast)((0, c.createToast)(T.intl.string(T.t["L/PwZW"]), c.ToastType.SUCCESS)))
-  }, [n.id]), P = (0, o.e7)([C.default], () => C.default.locale), L = a.useCallback(() => {
+    }), (0, I.JG)((e = n.id, "".concat(location.protocol, "//").concat(location.host).concat(N.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(e))), () => (0, c.showToast)((0, c.createToast)(T.intl.string(T.t["L/PwZW"]), c.ToastType.SUCCESS)))
+  }, [n.id]), O = (0, o.e7)([C.default], () => C.default.locale), P = a.useCallback(() => {
     (0, d.Z)((0, E.G)({
       id: n.id,
       name: n.name,
-      locale: P
+      locale: O
     }))
-  }, [P, n]), k = (0, b.Z)({
+  }, [O, n]), L = (0, b.Z)({
     id: n.id,
     label: T.intl.string(T.t["FfCL+/"]),
     onSuccess: () => (0, c.showToast)((0, c.createToast)(T.intl.string(T.t.eNjAam), c.ToastType.SUCCESS))
-  }), M = (0, x.Z)({
+  }), k = (0, x.Z)({
     application: n,
     onItemClick: () => {
       (0, S.zZ)(N.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
         application_id: n.id
       })
     }
-  }), G = a.useCallback((e, t) => (0, r.jsxs)(c.v2r, {
+  }), M = a.useCallback((e, t) => (0, r.jsxs)(c.v2r, {
     navId: "application-directory-profile",
     "aria-label": T.intl.string(T.t["/7I4/P"]),
     onClose: t,
     onSelect: true,
     children: [s && (0, r.jsx)(c.kSQ, {
-      children: M
+      children: k
     }), e ? (0, r.jsx)(c.kSQ, {
       children: (0, r.jsx)(c.sNh, {
         id: "copy",
         label: T.intl.string(T.t.z4sP5O),
-        action: O,
+        action: y,
         icon: c.xPt
       })
     }) : null, (0, r.jsx)(c.kSQ, {
@@ -230,14 +231,14 @@ let k = Chunk73800.forwardRef(function(e, t) {
         id: "report",
         label: T.intl.string(T.t.NgA5vr),
         color: "danger",
-        action: L
+        action: P
       })
-    }), null != k ? (0, r.jsx)(c.kSQ, {
-      children: k
+    }), null != L ? (0, r.jsx)(c.kSQ, {
+      children: L
     }) : null]
-  }), [k, L, O, s, M]), {
-    onClickLaunchActivity: B,
-    isSubmitting: U
+  }), [L, P, y, s, k]), {
+    onClickLaunchActivity: G,
+    isSubmitting: B
   } = function(e, t) {
     var n;
     let r = e.id,
@@ -286,7 +287,7 @@ let k = Chunk73800.forwardRef(function(e, t) {
       onClickLaunchActivity: l ? b : true,
       isSubmitting: s
     }
-  }(n, y), z = null != B, F = z ? "secondary" : "primary";
+  }(n, _), z = null != G, U = z ? "secondary" : "primary";
   return (0, r.jsxs)("div", {
     ref: t,
     children: [(0, r.jsxs)("div", {
@@ -294,21 +295,21 @@ let k = Chunk73800.forwardRef(function(e, t) {
       children: [z && (0, r.jsx)(D, {
         size: i,
         contentWidth: "normal",
-        onClick: B,
-        isSubmitting: U
+        onClick: G,
+        isSubmitting: B
       }), (0, r.jsx)(w, {
         application: n,
         size: i,
         contentWidth: "normal",
-        variant: F
+        variant: U
       }), I.wS ? (0, r.jsx)(c.hU, {
         variant: "secondary",
         size: i,
         icon: c.xPt,
-        onClick: O,
+        onClick: y,
         "aria-label": T.intl.string(T.t.z4sP5O)
       }) : null, (0, r.jsx)(Z, {
-        renderDropdown: e => G(false, e),
+        renderDropdown: e => M(false, e),
         size: i
       })]
     }), (0, r.jsxs)("div", {
@@ -316,15 +317,15 @@ let k = Chunk73800.forwardRef(function(e, t) {
       children: [z && (0, r.jsx)(D, {
         size: i,
         contentWidth: "small",
-        onClick: B,
-        isSubmitting: U
+        onClick: G,
+        isSubmitting: B
       }), (0, r.jsx)(w, {
         application: n,
         size: i,
         contentWidth: "small",
-        variant: F
+        variant: U
       }), (0, r.jsx)(Z, {
-        renderDropdown: e => G(I.wS, e),
+        renderDropdown: e => M(I.wS, e),
         size: i
       })]
     }), (0, r.jsxs)("div", {
@@ -332,15 +333,15 @@ let k = Chunk73800.forwardRef(function(e, t) {
       children: [z && (0, r.jsx)(D, {
         size: i,
         contentWidth: "icon",
-        onClick: B,
-        isSubmitting: U
+        onClick: G,
+        isSubmitting: B
       }), (0, r.jsx)(w, {
         application: n,
         size: i,
         contentWidth: "icon",
-        variant: F
+        variant: U
       }), (0, r.jsx)(Z, {
-        renderDropdown: e => G(I.wS, e),
+        renderDropdown: e => M(I.wS, e),
         size: i
       })]
     })]

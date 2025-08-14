@@ -1,7 +1,7 @@
 /** Chunk was on 9924 **/
 /** chunk id: 937283, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => j
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -13,26 +13,26 @@ var Chunk255367 = require("./255367.js"),
   Chunk433355 = require("./433355.js"),
   Chunk430824 = require("./430824.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk13348 = require("./13348.js");
+  Chunk350013 = require("./350013.js");
 
-function h(e) {
+function j(e) {
   let {
     guildId: t
   } = e, n = (0, a.e7)([u.Z], () => u.Z.getGuild(t)), {
-    analyticsLocations: h
-  } = (0, s.ZP)(i.Z.MEMBER_SAFETY_PAGE), j = (0, a.e7)([d.ZP], () => d.ZP.getGuildSidebarState(t), [t]), b = r.useCallback(() => {
+    analyticsLocations: j
+  } = (0, s.ZP)(i.Z.MEMBER_SAFETY_PAGE), h = (0, a.e7)([d.ZP], () => d.ZP.getGuildSidebarState(t), [t]), b = r.useCallback(() => {
     c.Z.closeGuildSidebar(t)
-  }, [t]), f = null != j;
-  return null != n && f && null != j ? (0, l.jsx)(s.Gt, {
-    value: h,
+  }, [t]), f = null != h;
+  return null != n && f && null != h ? (0, l.jsx)(s.Gt, {
+    value: j,
     children: (0, l.jsx)("div", {
       className: x.__invalid_sidebarContainer,
       style: {
         width: m.$Y6
       },
       children: (0, l.jsx)(o.Z, {
-        userId: j.details.userId,
-        guildId: j.details.guildId,
+        userId: h.details.userId,
+        guildId: h.details.guildId,
         onClose: b
       })
     })

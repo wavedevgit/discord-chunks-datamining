@@ -16,7 +16,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk84735 = require("./84735.js"),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk413534 = require("./413534.js");
+  Chunk81818 = require("./81818.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,13 +46,13 @@ var E = function(e) {
     return e.TOP = "top", e.CENTER = "center", e
   }(b || {});
 let y = {
-    BOX: Chunk413534.box,
-    ROUND: Chunk413534.round,
-    SMALL_BOX: Chunk413534.smallBox
+    BOX: Chunk81818.box,
+    ROUND: Chunk81818.round,
+    SMALL_BOX: Chunk81818.smallBox
   },
   O = {
-    top: Chunk413534.alignTop,
-    center: Chunk413534.alignCenter
+    top: Chunk81818.alignTop,
+    center: Chunk81818.alignCenter
   };
 class v extends(r = Chunk73800.PureComponent) {
   render() {
@@ -70,17 +70,17 @@ class v extends(r = Chunk73800.PureComponent) {
       type: _,
       onClick: m
     } = this.props, E = null != Chunk512722 ? (0, Chunk255367.jsx)("div", {
-      className: s()(Chunk413534.label, module ? Chunk413534.labelDisabled : Chunk413534.labelClickable, Chunk866442 ? Chunk413534.labelReversed : Chunk413534.labelForward),
+      className: s()(Chunk81818.label, module ? Chunk81818.labelDisabled : Chunk81818.labelClickable, Chunk866442 ? Chunk81818.labelReversed : Chunk81818.labelForward),
       style: {
         lineHeight: "".concat(c, "px")
       },
       children: Chunk512722
-    }) : null, b = Chunk692547 ? "span" : "label", y = this.props.disabled ? Chunk413534.inputDisabled : this.props.readOnly ? Chunk413534.inputReadonly : Chunk413534.inputDefault;
+    }) : null, b = Chunk692547 ? "span" : "label", y = this.props.disabled ? Chunk81818.inputDisabled : this.props.readOnly ? Chunk81818.inputReadonly : Chunk81818.inputDefault;
     return (0, Chunk255367.jsxs)(b, {
       "data-toggleable-component": "checkbox",
-      className: s()(module ? Chunk413534.checkboxWrapperDisabled : Chunk413534.checkboxWrapper, O[r], Chunk73800, {
-        [Chunk413534.row]: "row" === Chunk481060,
-        [Chunk413534.checked]: require
+      className: s()(module ? Chunk81818.checkboxWrapperDisabled : Chunk81818.checkboxWrapper, O[r], Chunk73800, {
+        [Chunk81818.row]: "row" === Chunk481060,
+        [Chunk81818.checked]: require
       }),
       children: [Chunk866442 ? E : null, !Chunk692547 && (0, Chunk255367.jsx)(Chunk84735.t, {
         children: (0, Chunk255367.jsx)("input", {

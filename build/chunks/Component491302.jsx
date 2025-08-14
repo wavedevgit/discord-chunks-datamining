@@ -1,4 +1,4 @@
-/** Chunk was on 8725 **/
+/** Chunk was on 58511 **/
 /** chunk id: 491302, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk486199 = require("./486199.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk210630 = require("./210630.js");
+  Chunk941678 = require("./941678.js");
 
 function h(e) {
   let {
@@ -26,14 +26,14 @@ function h(e) {
     isExpanded: x,
     errors: j,
     onToggleExpand: v
-  } = e, O = r.useMemo(() => {
+  } = e, y = r.useMemo(() => {
     var e;
     return null != (e = t.avatar) && /^data:/.test(e) ? e : (0, p.ov)({
       id: t.id,
       avatar: e,
       discriminator: b.fo$
     })
-  }, [t]), y = r.useCallback(() => {
+  }, [t]), O = r.useCallback(() => {
     (0, o.h7j)(e => {
       var n, r;
       return (0, i.jsx)(o.ConfirmModal, (n = function(e) {
@@ -140,7 +140,7 @@ function h(e) {
           className: f.bottomDivider
         }), (0, i.jsx)(d.Z, {
           children: (0, i.jsx)(l.zx, {
-            onClick: y,
+            onClick: O,
             size: l.zx.Sizes.SMALL,
             color: l.zx.Colors.RED,
             look: l.zx.Looks.LINK,
@@ -163,7 +163,7 @@ function h(e) {
           align: d.Z.Align.CENTER,
           children: [(0, i.jsx)(m.Z, {
             name: t.name,
-            imageSrc: O,
+            imageSrc: y,
             detailsClassName: f.__invalid_description,
             details: _
           }), (0, i.jsx)(u.Z, {

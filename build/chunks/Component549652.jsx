@@ -1,7 +1,7 @@
 /** Chunk was on 57047 **/
 /** chunk id: 549652, original params: t,e,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => E
+  default: () => b
 }), require("./35282.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -15,10 +15,10 @@ var Chunk255367 = require("./255367.js"),
   Chunk314897 = require("./314897.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk57010 = require("./57010.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk796771 = require("./796771.js"),
+  Chunk197571 = require("./197571.js");
 
-function D(t, e, n) {
+function x(t, e, n) {
   return e in t ? Object.defineProperty(t, e, {
     value: n,
     enumerable: true,
@@ -27,24 +27,21 @@ function D(t, e, n) {
   }) : t[e] = n, t
 }
 Chunk442837.ZP.initialize();
-let x = {
-  HANDOFF: "handoff",
-  DONE: "done",
-  FAILED: "failed"
-};
+let j = "done",
+  D = "failed";
 
 function N() {
   try {
     window.close()
   } catch (t) {}
 }
-class E extends Chunk73800.PureComponent {
+class b extends Chunk73800.PureComponent {
   componentDidMount() {
     let {
       stage: t,
       key: e
     } = this.state;
-    module === x.DONE ? N() : Chunk314897.default.isAuthenticated() ? Chunk544891.tn.post({
+    module === j ? N() : Chunk314897.default.isAuthenticated() ? Chunk544891.tn.post({
       url: Chunk981631.ANM.HANDOFF,
       body: {
         key: exports
@@ -63,12 +60,12 @@ class E extends Chunk73800.PureComponent {
     return (0, Chunk255367.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk255367.jsx)(Chunk388905.Ee, {
         src: require("./69008.js"),
-        className: Chunk881488.marginBottom20
+        className: Chunk197571.marginBottom20
       }), (0, Chunk255367.jsx)(Chunk388905.Dx, {
-        className: Chunk881488.marginBottom8,
+        className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.YsLqvr)
       }), (0, Chunk255367.jsx)(Chunk388905.DK, {
-        className: Chunk881488.marginBottom40,
+        className: Chunk197571.marginBottom40,
         children: Chunk388032.intl.string(Chunk388032.t.CSBYDg)
       }), (0, Chunk255367.jsx)(Chunk388905.zx, {
         onClick: this.handleOpenApp,
@@ -80,12 +77,12 @@ class E extends Chunk73800.PureComponent {
     return (0, Chunk255367.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk255367.jsx)(Chunk388905.Ee, {
         src: require("./69008.js"),
-        className: Chunk881488.marginBottom20
+        className: Chunk197571.marginBottom20
       }), (0, Chunk255367.jsx)(Chunk388905.Dx, {
-        className: Chunk881488.marginBottom8,
+        className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.hsLIsb)
       }), (0, Chunk255367.jsx)(Chunk388905.DK, {
-        className: Chunk881488.marginBottom40,
+        className: Chunk197571.marginBottom40,
         children: Chunk388032.intl.string(Chunk388032.t.CSBYDg)
       }), (0, Chunk255367.jsx)(Chunk388905.zx, {
         onClick: this.handleOpenApp,
@@ -96,7 +93,7 @@ class E extends Chunk73800.PureComponent {
   renderHandoff() {
     return (0, Chunk255367.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk255367.jsx)(Chunk388905.Hh, {}), (0, Chunk255367.jsx)(Chunk388905.Dx, {
-        className: Chunk881488.marginBottom8,
+        className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t["ctWa6+"])
       }), (0, Chunk255367.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t["53IHoq"])
@@ -108,34 +105,33 @@ class E extends Chunk73800.PureComponent {
       stage: e
     } = this.state;
     switch (exports) {
-      case x.DONE:
+      case j:
         t = this.renderDone();
         break;
-      case x.FAILED:
+      case D:
         t = this.renderFailed();
         break;
-      case x.HANDOFF:
       default:
         t = this.renderHandoff()
     }
     return (0, Chunk255367.jsx)(Chunk600164.Z, {
       justify: Chunk600164.Z.Justify.CENTER,
       align: Chunk600164.Z.Align.CENTER,
-      className: Chunk57010.wrapper,
+      className: Chunk796771.wrapper,
       children: module
     })
   }
   constructor(t) {
     var e;
-    super(t), D(this, "done", () => {
+    super(t), x(this, "done", () => {
       N(), this.setState({
-        stage: x.DONE
+        stage: j
       })
-    }), D(this, "failed", () => {
+    }), x(this, "failed", () => {
       this.setState({
-        stage: x.FAILED
+        stage: D
       }), N()
-    }), D(this, "handleOpenApp", () => {
+    }), x(this, "handleOpenApp", () => {
       (0, h.uL)(u.Z5c.ME)
     });
     let {
@@ -143,7 +139,7 @@ class E extends Chunk73800.PureComponent {
     } = t.location, s = null != n && "" !== n ? (0, i.parse)(n) : {};
     this.state = {
       key: null != (e = s.key) ? e : "",
-      stage: "true" === s.done ? x.DONE : x.HANDOFF
+      stage: "true" === s.done ? j : "handoff"
     }
   }
 }

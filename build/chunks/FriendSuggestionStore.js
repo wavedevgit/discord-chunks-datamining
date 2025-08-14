@@ -1,7 +1,7 @@
 /** Chunk was on 29709 **/
 /** chunk id: 5254, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => N
 }), require("./388685.js");
 var i, Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
@@ -22,10 +22,10 @@ function p(e, t, n) {
 }
 let f = {},
   g = 0,
-  N = false,
-  O = false;
+  h = false,
+  m = false;
 
-function h(e) {
+function y(e) {
   var t;
   let n = null != e.contact_names && e.contact_names.length >= 2 ? e.contact_names.slice(0, 2) : [];
   return {
@@ -36,7 +36,7 @@ function h(e) {
     contactNames: n
   }
 }
-class m extends(i = Chunk442837.ZP.Store) {
+class O extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk594174.default)
   }
@@ -53,14 +53,14 @@ class m extends(i = Chunk442837.ZP.Store) {
     return f[e]
   }
 }
-p(m, "displayName", "FriendSuggestionStore");
-let y = new m(Chunk570140.Z, {
+p(O, "displayName", "FriendSuggestionStore");
+let N = new O(Chunk570140.Z, {
   CONNECTION_OPEN: function(e) {
-    f = {}, (g = e.friendSuggestionCount) > 0 ? (O = true, !N && O && (N = true, O = false, u.Z.fetch())) : (0, d.Z)()
+    f = {}, (g = e.friendSuggestionCount) > 0 ? (m = true, !h && m && (h = true, m = false, u.Z.fetch())) : (0, d.Z)()
   },
   FRIEND_SUGGESTION_CREATE: function(e) {
     var t, n;
-    let i = h(e.suggestion);
+    let i = y(e.suggestion);
     if (null != f[i.key]) returnfalse;
     g++, t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -91,9 +91,9 @@ let y = new m(Chunk570140.Z, {
   },
   LOAD_FRIEND_SUGGESTIONS_SUCCESS: function(e) {
     var t;
-    N = false, t = e.suggestions, f = l().chain(t).map(e => h(e)).keyBy(e => e.key).value(), g = l().keys(f).length
+    h = false, t = e.suggestions, f = l().chain(t).map(e => y(e)).keyBy(e => e.key).value(), g = l().keys(f).length
   },
   LOAD_FRIEND_SUGGESTIONS_FAILURE: function() {
-    N = false, f = {}
+    h = false, f = {}
   }
 })

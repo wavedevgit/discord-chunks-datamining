@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 613060, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -14,26 +14,26 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = {};
-class a extends(r = Chunk442837.ZP.PersistedStore) {
+let a = {};
+class s extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     null != e && Object.keys(e).forEach(t => {
-      "number" == typeof e[t] && (s[t] = e[t])
+      "number" == typeof e[t] && (a[t] = e[t])
     })
   }
   getState() {
-    return s
+    return a
   }
   hasViewed(e) {
-    return null != s[e]
+    return null != a[e]
   }
 }
-o(a, "displayName", "ViewHistoryStore"), o(a, "persistKey", "ViewHistoryStore");
-let c = new a(Chunk570140.Z, {
+o(s, "displayName", "ViewHistoryStore"), o(s, "persistKey", "ViewHistoryStore");
+let c = new s(Chunk570140.Z, {
   VIEW_HISTORY_MARK_VIEW: function(e) {
     let {
       key: t
     } = e;
-    s[t] = Date.now()
+    a[t] = Date.now()
   }
 })

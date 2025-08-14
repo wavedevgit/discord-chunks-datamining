@@ -1,7 +1,7 @@
 /** Chunk was on 64648 **/
 /** chunk id: 81155, original params: t,e,o (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => p
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -10,7 +10,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk690221 = require("./690221.jsx"),
   Chunk460181 = require("./460181.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk758001 = require("./758001.js");
+  Chunk943584 = require("./943584.js");
 let c = [{
   preBold: "That's pretty...",
   bold: "fly!"
@@ -24,7 +24,7 @@ let c = [{
   postBold: "lievable!"
 }];
 
-function p(t) {
+function b(t) {
   let {
     punConfig: e
   } = t;
@@ -37,14 +37,14 @@ function p(t) {
   })
 }
 
-function b(t) {
+function p(t) {
   let {
     transitionState: e,
     onClose: o,
-    asanaTask: b
+    asanaTask: p
   } = t;
   n.useEffect(() => {
-    (0, i.GN)("success", .1)
+    (0, a.GN)("success", .1)
   }, []);
   let m = n.useRef(c[Math.floor(Math.random() * c.length)]).current;
   return (0, l.jsx)(s.Y0X, {
@@ -67,10 +67,10 @@ function b(t) {
       }), (0, l.jsxs)(s.Text, {
         className: u.submitText,
         variant: "text-sm/normal",
-        children: ["Thanks for submitting a ", (0, l.jsx)(r.Z, {
-          onClick: () => (0, a.Z)(b.permalink_url),
+        children: ["Thanks for submitting a ", (0, l.jsx)(i.Z, {
+          onClick: () => (0, r.Z)(p.permalink_url),
           children: "bug"
-        }), "!", (0, l.jsx)("br", {}), (0, l.jsx)(p, {
+        }), "!", (0, l.jsx)("br", {}), (0, l.jsx)(b, {
           punConfig: m
         })]
       })]

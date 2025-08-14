@@ -196,8 +196,8 @@ module.exports = (function e(t, n, r) {
       return (e = e || window.navigator.userAgent).indexOf("Opera Mini") > false
     }
     t.exports = function(e) {
-      var t, n, l, u;
-      return !(o(e = e || window.navigator.userAgent) || i(e) || r(t = (t = e) || window.navigator.userAgent) && /Version\/[\d.]+/i.test(t) && !d(t) && !c(t) || d(e) || (l = (e || window.navigator.userAgent).match(/CriOS\/(\d+)\./)) && 48 > parseInt(l[1], 10) || !a(u = e) && !s(u) && /samsung/i.test(u))
+      var t, n, l;
+      return !(o(e = e || window.navigator.userAgent) || i(e) || r(t = (t = e) || window.navigator.userAgent) && /Version\/[\d.]+/i.test(t) && !d(t) && !c(t) || d(e) || (n = (e || window.navigator.userAgent).match(/CriOS\/(\d+)\./)) && 48 > parseInt(n[1], 10) || !a(l = e) && !s(l) && /samsung/i.test(l))
     }
   }, {
     "./is-android": 3,
@@ -636,17 +636,13 @@ module.exports = (function e(t, n, r) {
           AXO_ASSET_PATH: l,
           LOCALE_PATH: "".concat(l, "/locales/"),
           CDNX_PROD: "https://www.paypalobjects.com"
-        },
-        p = {
-          BT: "BT",
-          PPCP: "PPCP"
         };
 
-      function _() {
+      function p() {
         return "function" == typeof window.define && !!window.define.amd
       }
 
-      function E(e, r, i) {
+      function _(e, r, i) {
         var o, a;
         return true === i && (i = true), t(this, true, true, function() {
           var t, s;
@@ -656,7 +652,7 @@ module.exports = (function e(t, n, r) {
               else throw s = null == (a = t[e.module]) ? true : a.VERSION, Error("".concat(e.module, " already loaded with version ").concat(s, " cannot load version ").concat(r));
             if (!r) throw Error("Attempted to load ".concat(e.module, " without specifying version"));
             return [2, function(e, t, n) {
-              if (true === n && (n = true), _()) {
+              if (true === n && (n = true), p()) {
                 var r = n ? e.amdModule.minified : e.amdModule.unminified;
                 return new Promise(function(e, t) {
                   window.require([r], e, t)
@@ -671,38 +667,38 @@ module.exports = (function e(t, n, r) {
           })
         })
       }
-      var h = "client",
-        m = "hostedFields",
-        f = "braintree",
-        y = ((r = {})[h] = "client", r[m] = "hosted-fields", r),
-        A = ((i = {})[h] = {
+      var E = "client",
+        h = "hostedFields",
+        m = "braintree",
+        f = ((r = {})[E] = "client", r[h] = "hosted-fields", r),
+        y = ((i = {})[E] = {
           id: "client",
+          module: E,
+          amdModule: {
+            unminified: "".concat(m, "/").concat(f[E]),
+            minified: "".concat(m, "/").concat(f[E], ".min")
+          },
+          script: {
+            unminified: "".concat(f[E], ".js"),
+            minified: "".concat(f[E], ".min.js")
+          }
+        }, i[h] = {
+          id: "hcf",
           module: h,
           amdModule: {
-            unminified: "".concat(f, "/").concat(y[h]),
-            minified: "".concat(f, "/").concat(y[h], ".min")
+            unminified: "".concat(m, "/").concat(f[h]),
+            minified: "".concat(m, "/").concat(f[h], ".min")
           },
           script: {
-            unminified: "".concat(y[h], ".js"),
-            minified: "".concat(y[h], ".min.js")
-          }
-        }, i[m] = {
-          id: "hcf",
-          module: m,
-          amdModule: {
-            unminified: "".concat(f, "/").concat(y[m]),
-            minified: "".concat(f, "/").concat(y[m], ".min")
-          },
-          script: {
-            unminified: "".concat(y[m], ".js"),
-            minified: "".concat(y[m], ".min.js")
+            unminified: "".concat(f[h], ".js"),
+            minified: "".concat(f[h], ".min.js")
           }
         }, i);
 
-      function T(e, t) {
+      function A(e, t) {
         var n;
-        if (true === t && (t = true), _()) {
-          _() && "function" == typeof window.requirejs && "function" == typeof window.requirejs.config && requirejs.config({
+        if (true === t && (t = true), p()) {
+          p() && "function" == typeof window.requirejs && "function" == typeof window.requirejs.config && requirejs.config({
             paths: ((n = {})[d] = e, n)
           });
           var r = "".concat(d, "/").concat(t ? u.AXO_ASSET_NAME.minified : u.AXO_ASSET_NAME.unminified);
@@ -717,7 +713,7 @@ module.exports = (function e(t, n, r) {
         })
       }
 
-      function I(e) {
+      function T(e) {
         var t = e.assetUrl,
           n = e.bundleId;
         return n ? "https://cdn-".concat(n, ".static.engineering.dev.paypalinc.com/").concat(t) : "".concat(u.CDNX_PROD, "/").concat(t)
@@ -729,20 +725,20 @@ module.exports = (function e(t, n, r) {
             switch (n.label) {
               case 0:
                 var a, s, c, d, l;
-                if (performance.mark("pp_axo_sdk_init_invoked"), t = e.btSdkVersion, r = e.minified, c = (null == (a = e) ? true : a.minified) !== false ? u.AXO_ASSET_NAME.minified : u.AXO_ASSET_NAME.unminified, i = I({
-                    assetUrl: _() ? u.AXO_ASSET_PATH : "".concat(u.AXO_ASSET_PATH, "/").concat(c, ".js"),
+                if (performance.mark("pp_axo_sdk_init_invoked"), t = e.btSdkVersion, r = e.minified, c = (null == (a = e) ? true : a.minified) !== false ? u.AXO_ASSET_NAME.minified : u.AXO_ASSET_NAME.unminified, i = T({
+                    assetUrl: p() ? u.AXO_ASSET_PATH : "".concat(u.AXO_ASSET_PATH, "/").concat(c, ".js"),
                     bundleId: null == (s = null == a ? true : a.metadata) ? true : s.bundleIdOverride
-                  }), d = e, o = I({
+                  }), d = e, o = T({
                     assetUrl: u.LOCALE_PATH,
                     bundleId: null == (l = null == d ? true : d.metadata) ? true : l.bundleIdOverride
-                  }), e.platform !== p.BT) return [3, 2];
-                return [4, Promise.all([E(A.hostedFields, t, r), T(i, r)])];
+                  }), "BT" !== e.platform) return [3, 2];
+                return [4, Promise.all([_(y.hostedFields, t, r), A(i, r)])];
               case 1:
               case 3:
                 return n.sent(), [3, 5];
               case 2:
-                if (e.platform !== p.PPCP) return [3, 4];
-                return [4, Promise.all([E(A.client, t, r), E(A.hostedFields, t, r), T(i, r)])];
+                if ("PPCP" !== e.platform) return [3, 4];
+                return [4, Promise.all([_(y.client, t, r), _(y.hostedFields, t, r), A(i, r)])];
               case 4:
                 throw Error("unsupported axo platform");
               case 5:
@@ -2323,111 +2319,109 @@ module.exports = (function e(t, n, r) {
     var r = e("./error"),
       i = e("../../../../lib/assign").assign,
       o = {
-        creditCard: {
-          AMERICAN_EXPRESS: "American Express",
-          DISCOVER: "Discover",
-          INTERNATIONAL_MAESTRO: "Maestro",
-          JCB: "JCB",
-          MASTERCARD: "MasterCard",
-          SOLO: "Solo",
-          UK_MAESTRO: "UK Maestro",
-          UNION_PAY: "UnionPay",
-          VISA: "Visa",
-          ELO: "Elo",
-          HIPER: "Hiper",
-          HIPERCARD: "Hipercard"
-        },
-        applePayWeb: {
-          VISA: "visa",
-          MASTERCARD: "mastercard",
-          DISCOVER: "discover",
-          AMERICAN_EXPRESS: "amex",
-          INTERNATIONAL_MAESTRO: "maestro",
-          ELO: "elo"
-        },
-        visaCheckout: {
-          VISA: "Visa",
-          MASTERCARD: "MasterCard",
-          DISCOVER: "Discover",
-          AMERICAN_EXPRESS: "American Express"
-        },
-        googlePay: {
-          VISA: "visa",
-          MASTERCARD: "mastercard",
-          DISCOVER: "discover",
-          AMERICAN_EXPRESS: "amex",
-          INTERNATIONAL_MAESTRO: "maestro",
-          ELO: "elo"
-        },
-        masterpass: {
-          VISA: "visa",
-          MASTERCARD: "master",
-          DISCOVER: "discover",
-          AMERICAN_EXPRESS: "amex",
-          DINERS: "diners",
-          INTERNATIONAL_MAESTRO: "maestro",
-          JCB: "jcb"
-        }
+        AMERICAN_EXPRESS: "American Express",
+        DISCOVER: "Discover",
+        INTERNATIONAL_MAESTRO: "Maestro",
+        JCB: "JCB",
+        MASTERCARD: "MasterCard",
+        SOLO: "Solo",
+        UK_MAESTRO: "UK Maestro",
+        UNION_PAY: "UnionPay",
+        VISA: "Visa",
+        ELO: "Elo",
+        HIPER: "Hiper",
+        HIPERCARD: "Hipercard"
+      },
+      a = {
+        VISA: "visa",
+        MASTERCARD: "mastercard",
+        DISCOVER: "discover",
+        AMERICAN_EXPRESS: "amex",
+        INTERNATIONAL_MAESTRO: "maestro",
+        ELO: "elo"
+      },
+      s = {
+        VISA: "Visa",
+        MASTERCARD: "MasterCard",
+        DISCOVER: "Discover",
+        AMERICAN_EXPRESS: "American Express"
+      },
+      c = {
+        VISA: "visa",
+        MASTERCARD: "mastercard",
+        DISCOVER: "discover",
+        AMERICAN_EXPRESS: "amex",
+        INTERNATIONAL_MAESTRO: "maestro",
+        ELO: "elo"
+      },
+      d = {
+        VISA: "visa",
+        MASTERCARD: "master",
+        DISCOVER: "discover",
+        AMERICAN_EXPRESS: "amex",
+        DINERS: "diners",
+        INTERNATIONAL_MAESTRO: "maestro",
+        JCB: "jcb"
       };
 
-    function a(e, t) {
+    function l(e, t) {
       return e.reduce(function(e, n) {
         return t.hasOwnProperty(n) ? e.concat(t[n]) : e
       }, [])
     }
     t.exports = function(e, t) {
-      var n, s, c, d, l;
-      return e.data && !e.errors ? (s = e, c = t, d = {
-        environment: (l = s.data.clientConfiguration).environment.toLowerCase(),
-        clientApiUrl: l.clientApiUrl,
-        assetsUrl: l.assetsUrl,
+      var n, u, p, _;
+      return e.data && !e.errors ? (n = e, u = t, p = {
+        environment: (_ = n.data.clientConfiguration).environment.toLowerCase(),
+        clientApiUrl: _.clientApiUrl,
+        assetsUrl: _.assetsUrl,
         analytics: {
-          url: l.analyticsUrl
+          url: _.analyticsUrl
         },
-        merchantId: l.merchantId,
+        merchantId: _.merchantId,
         venmo: "off"
-      }, l.supportedFeatures && (d.graphQL = {
-        url: c._graphQL._config.url,
-        features: l.supportedFeatures.map(function(e) {
+      }, _.supportedFeatures && (p.graphQL = {
+        url: u._graphQL._config.url,
+        features: _.supportedFeatures.map(function(e) {
           return e.toLowerCase()
         })
-      }), l.braintreeApi && (d.braintreeApi = l.braintreeApi), l.applePayWeb && (d.applePayWeb = l.applePayWeb, d.applePayWeb.supportedNetworks = a(l.applePayWeb.supportedCardBrands, o.applePayWeb), delete d.applePayWeb.supportedCardBrands), l.fastlane && (d.fastlane = l.fastlane), l.ideal && (d.ideal = l.ideal), l.kount && (d.kount = {
-        kountMerchantId: l.kount.merchantId
-      }), l.creditCard ? (d.challenges = l.creditCard.challenges.map(function(e) {
+      }), _.braintreeApi && (p.braintreeApi = _.braintreeApi), _.applePayWeb && (p.applePayWeb = _.applePayWeb, p.applePayWeb.supportedNetworks = l(_.applePayWeb.supportedCardBrands, a), delete p.applePayWeb.supportedCardBrands), _.fastlane && (p.fastlane = _.fastlane), _.ideal && (p.ideal = _.ideal), _.kount && (p.kount = {
+        kountMerchantId: _.kount.merchantId
+      }), _.creditCard ? (p.challenges = _.creditCard.challenges.map(function(e) {
         return e.toLowerCase()
-      }), d.creditCards = {
-        supportedCardTypes: a(l.creditCard.supportedCardBrands, o.creditCard)
-      }, d.threeDSecureEnabled = l.creditCard.threeDSecureEnabled, d.threeDSecure = l.creditCard.threeDSecure) : (d.challenges = [], d.creditCards = {
+      }), p.creditCards = {
+        supportedCardTypes: l(_.creditCard.supportedCardBrands, o)
+      }, p.threeDSecureEnabled = _.creditCard.threeDSecureEnabled, p.threeDSecure = _.creditCard.threeDSecure) : (p.challenges = [], p.creditCards = {
         supportedCardTypes: []
-      }, d.threeDSecureEnabled = false), l.googlePay && (d.androidPay = {
-        displayName: l.googlePay.displayName,
+      }, p.threeDSecureEnabled = false), _.googlePay && (p.androidPay = {
+        displayName: _.googlePay.displayName,
         enabled: true,
-        environment: l.googlePay.environment.toLowerCase(),
-        googleAuthorizationFingerprint: l.googlePay.googleAuthorization,
-        paypalClientId: l.googlePay.paypalClientId,
-        supportedNetworks: a(l.googlePay.supportedCardBrands, o.googlePay)
-      }), l.venmo && (d.payWithVenmo = {
-        merchantId: l.venmo.merchantId,
-        accessToken: l.venmo.accessToken,
-        environment: l.venmo.environment.toLowerCase(),
-        enrichedCustomerDataEnabled: l.venmo.enrichedCustomerDataEnabled
-      }), l.paypal ? (d.paypalEnabled = true, d.paypal = i({}, l.paypal), d.paypal.currencyIsoCode = d.paypal.currencyCode, d.paypal.environment = d.paypal.environment.toLowerCase(), delete d.paypal.currencyCode) : d.paypalEnabled = false, l.unionPay && (d.unionPay = {
+        environment: _.googlePay.environment.toLowerCase(),
+        googleAuthorizationFingerprint: _.googlePay.googleAuthorization,
+        paypalClientId: _.googlePay.paypalClientId,
+        supportedNetworks: l(_.googlePay.supportedCardBrands, c)
+      }), _.venmo && (p.payWithVenmo = {
+        merchantId: _.venmo.merchantId,
+        accessToken: _.venmo.accessToken,
+        environment: _.venmo.environment.toLowerCase(),
+        enrichedCustomerDataEnabled: _.venmo.enrichedCustomerDataEnabled
+      }), _.paypal ? (p.paypalEnabled = true, p.paypal = i({}, _.paypal), p.paypal.currencyIsoCode = p.paypal.currencyCode, p.paypal.environment = p.paypal.environment.toLowerCase(), delete p.paypal.currencyCode) : p.paypalEnabled = false, _.unionPay && (p.unionPay = {
         enabled: true,
-        merchantAccountId: l.unionPay.merchantAccountId
-      }), l.visaCheckout && (d.visaCheckout = {
-        apikey: l.visaCheckout.apiKey,
-        encryptionKey: l.visaCheckout.encryptionKey,
-        externalClientId: l.visaCheckout.externalClientId,
-        supportedCardTypes: a(l.visaCheckout.supportedCardBrands, o.visaCheckout)
-      }), l.masterpass && (d.masterpass = {
-        merchantCheckoutId: l.masterpass.merchantCheckoutId,
-        supportedNetworks: a(l.masterpass.supportedCardBrands, o.masterpass)
-      }), l.usBankAccount && (d.usBankAccount = {
-        routeId: l.usBankAccount.routeId,
+        merchantAccountId: _.unionPay.merchantAccountId
+      }), _.visaCheckout && (p.visaCheckout = {
+        apikey: _.visaCheckout.apiKey,
+        encryptionKey: _.visaCheckout.encryptionKey,
+        externalClientId: _.visaCheckout.externalClientId,
+        supportedCardTypes: l(_.visaCheckout.supportedCardBrands, s)
+      }), _.masterpass && (p.masterpass = {
+        merchantCheckoutId: _.masterpass.merchantCheckoutId,
+        supportedNetworks: l(_.masterpass.supportedCardBrands, d)
+      }), _.usBankAccount && (p.usBankAccount = {
+        routeId: _.usBankAccount.routeId,
         plaid: {
-          publicKey: l.usBankAccount.plaidPublicKey
+          publicKey: _.usBankAccount.plaidPublicKey
         }
-      }), d) : r(e)
+      }), p) : r(e)
     }
   }, {
     "../../../../lib/assign": 140,
@@ -2459,32 +2453,32 @@ module.exports = (function e(t, n, r) {
         PSDTWO: "psd2"
       };
     t.exports = function(e) {
-      var t, n, s, c, d, l, u;
-      return e.data && !e.errors ? (l = (d = (c = e.data.tokenizeCreditCardForPayPalConnect).paymentMethod.details).last4 ? d.last4.substr(2, 4) : "", (u = d.binData) && (["commercial", "debit", "durbinRegulated", "healthcare", "payroll", "prepaid"].forEach(function(e) {
-        u[e] ? u[e] = o[u[e]] : u[e] = "Unknown"
+      var t, n, s, c, d, l;
+      return e.data && !e.errors ? (d = (c = (s = e.data.tokenizeCreditCardForPayPalConnect).paymentMethod.details).last4 ? c.last4.substr(2, 4) : "", (l = c.binData) && (["commercial", "debit", "durbinRegulated", "healthcare", "payroll", "prepaid"].forEach(function(e) {
+        l[e] ? l[e] = o[l[e]] : l[e] = "Unknown"
       }), ["issuingBank", "countryOfIssuance", "productId"].forEach(function(e) {
-        u[e] || (u[e] = "Unknown")
-      })), n = {
+        l[e] || (l[e] = "Unknown")
+      })), t = {
         creditCards: [{
-          binData: u,
+          binData: l,
           consumed: false,
-          description: l ? "ending in " + l : "",
-          nonce: c.paymentMethod.id,
+          description: d ? "ending in " + d : "",
+          nonce: s.paymentMethod.id,
           details: {
-            cardholderName: d.cardholderName,
-            expirationMonth: d.expirationMonth,
-            expirationYear: d.expirationYear,
-            bin: d.bin || "",
-            cardType: i[d.brandCode] || "Unknown",
-            lastFour: d.last4 || "",
-            lastTwo: l
+            cardholderName: c.cardholderName,
+            expirationMonth: c.expirationMonth,
+            expirationYear: c.expirationYear,
+            bin: c.bin || "",
+            cardType: i[c.brandCode] || "Unknown",
+            lastFour: c.last4 || "",
+            lastTwo: d
           },
           type: "CreditCard",
           threeDSecureInfo: null
         }]
-      }, c.authenticationInsight && (s = c.authenticationInsight.customerAuthenticationRegulationEnvironment, n.creditCards[0].authenticationInsight = {
-        regulationEnvironment: a[s] || s.toLowerCase()
-      }), n) : r(e)
+      }, s.authenticationInsight && (n = s.authenticationInsight.customerAuthenticationRegulationEnvironment, t.creditCards[0].authenticationInsight = {
+        regulationEnvironment: a[n] || n.toLowerCase()
+      }), t) : r(e)
     }
   }, {
     "./error": 102
@@ -2515,32 +2509,32 @@ module.exports = (function e(t, n, r) {
         PSDTWO: "psd2"
       };
     t.exports = function(e) {
-      var t, n, s, c, d, l, u;
-      return e.data && !e.errors ? (l = (d = (c = e.data.tokenizeCreditCard).creditCard).last4 ? d.last4.substr(2, 4) : "", (u = d.binData) && (["commercial", "debit", "durbinRegulated", "healthcare", "payroll", "prepaid"].forEach(function(e) {
-        u[e] ? u[e] = o[u[e]] : u[e] = "Unknown"
+      var t, n, s, c, d, l;
+      return e.data && !e.errors ? (d = (c = (s = e.data.tokenizeCreditCard).creditCard).last4 ? c.last4.substr(2, 4) : "", (l = c.binData) && (["commercial", "debit", "durbinRegulated", "healthcare", "payroll", "prepaid"].forEach(function(e) {
+        l[e] ? l[e] = o[l[e]] : l[e] = "Unknown"
       }), ["issuingBank", "countryOfIssuance", "productId"].forEach(function(e) {
-        u[e] || (u[e] = "Unknown")
-      })), n = {
+        l[e] || (l[e] = "Unknown")
+      })), t = {
         creditCards: [{
-          binData: u,
+          binData: l,
           consumed: false,
-          description: l ? "ending in " + l : "",
-          nonce: c.token,
+          description: d ? "ending in " + d : "",
+          nonce: s.token,
           details: {
-            cardholderName: d.cardholderName,
-            expirationMonth: d.expirationMonth,
-            expirationYear: d.expirationYear,
-            bin: d.bin || "",
-            cardType: i[d.brandCode] || "Unknown",
-            lastFour: d.last4 || "",
-            lastTwo: l
+            cardholderName: c.cardholderName,
+            expirationMonth: c.expirationMonth,
+            expirationYear: c.expirationYear,
+            bin: c.bin || "",
+            cardType: i[c.brandCode] || "Unknown",
+            lastFour: c.last4 || "",
+            lastTwo: d
           },
           type: "CreditCard",
           threeDSecureInfo: null
         }]
-      }, c.authenticationInsight && (s = c.authenticationInsight.customerAuthenticationRegulationEnvironment, n.creditCards[0].authenticationInsight = {
-        regulationEnvironment: a[s] || s.toLowerCase()
-      }), n) : r(e)
+      }, s.authenticationInsight && (n = s.authenticationInsight.customerAuthenticationRegulationEnvironment, t.creditCards[0].authenticationInsight = {
+        regulationEnvironment: a[n] || n.toLowerCase()
+      }), t) : r(e)
     }
   }, {
     "./error": 102
@@ -2548,8 +2542,8 @@ module.exports = (function e(t, n, r) {
   102: [function(e, t, n) {
     "use strict";
     t.exports = function(e) {
-      var t, n, r, i, o, a = e.errors && e.errors[0] && e.errors[0].extensions && e.errors[0].extensions.errorClass;
-      return "VALIDATION" === a ? 0 === (i = (n = (t = e).errors, r = [], n.forEach(function(e) {
+      var t, n, r, i, o = e.errors && e.errors[0] && e.errors[0].extensions && e.errors[0].extensions.errorClass;
+      return "VALIDATION" === o ? 0 === (i = (n = (t = e).errors, r = [], n.forEach(function(e) {
         e.extensions && e.extensions.inputPath && function e(t, n, r) {
           var i, o = n.extensions.legacyCode,
             a = t[0];
@@ -2576,7 +2570,7 @@ module.exports = (function e(t, n, r) {
           })[i[0].field]
         },
         fieldErrors: i
-      } : a ? {
+      } : o ? {
         error: {
           message: e.errors[0].message
         },
@@ -5411,7 +5405,6 @@ module.exports = (function e(t, n, r) {
     }
     t.exports = {
       parse: function(e) {
-        var t;
         return r(e = e || window.location.href) ? (e.split("?")[1] || "").replace(/#.*$/, "").split("&").reduce(function(e, t) {
           var n = t.split("="),
             r = decodeURIComponent(n[0]),
@@ -6691,7 +6684,6 @@ module.exports = (function e(t, n, r) {
       }).bind(this)), t
     }, N.prototype.createPayment = function(e) {
       return e && p.FLOW_ENDPOINTS.hasOwnProperty(e.flow) ? (r.sendEvent(this._clientPromise, "paypal-checkout.createPayment"), this._createPaymentResource(e).then(function(t) {
-        var n;
         return "checkout" === e.flow ? y.parse(t.paymentResource.redirectUrl).token : t.agreementSetup.tokenId
       })) : Promise.reject(new d(u.PAYPAL_FLOW_OPTION_REQUIRED))
     }, N.prototype._createPaymentResource = function(e, t) {
@@ -6851,24 +6843,24 @@ module.exports = (function e(t, n, r) {
         return e.getConfiguration().gatewayConfiguration.paypal.clientId
       })
     }, N.prototype.loadPayPalSDK = function(e) {
-      var t, n = new s,
-        r = e && e.dataAttributes || {},
-        o = r["user-id-token"] || r["data-user-id-token"];
-      return this._configuration && (r["client-metadata-id"] = r["client-metadata-id"] ? r["client-metadata-id"] : this._configuration.analyticsMetadata.sessionId), o || (o = this._authorizationInformation.fingerprint && this._authorizationInformation.fingerprint.split("?")[0]), this._paypalScript = document.createElement("script"), e = i({}, {
+      var t = new s,
+        n = e && e.dataAttributes || {},
+        r = n["user-id-token"] || n["data-user-id-token"];
+      return this._configuration && (n["client-metadata-id"] = n["client-metadata-id"] ? n["client-metadata-id"] : this._configuration.analyticsMetadata.sessionId), r || (r = this._authorizationInformation.fingerprint && this._authorizationInformation.fingerprint.split("?")[0]), this._paypalScript = document.createElement("script"), e = i({}, {
         components: "buttons"
       }, e), delete e.dataAttributes, e.vault ? e.intent = e.intent || "tokenize" : (e.intent = e.intent || "authorize", e.currency = e.currency || "USD"), this._paypalScript.onload = function() {
-        n.resolve()
-      }, Object.keys(r).forEach((function(e) {
-        this._paypalScript.setAttribute("data-" + e.replace(/^data\-/, ""), r[e])
+        t.resolve()
+      }, Object.keys(n).forEach((function(e) {
+        this._paypalScript.setAttribute("data-" + e.replace(/^data\-/, ""), n[e])
       }).bind(this)), (e["client-id"] ? Promise.resolve(e["client-id"]) : this.getClientId()).then((function(t) {
-        e["client-id"] = t, this._autoSetDataUserIdToken && o && (this._paypalScript.setAttribute("data-user-id-token", o), this._attachPreloadPixel({
+        e["client-id"] = t, this._autoSetDataUserIdToken && r && (this._paypalScript.setAttribute("data-user-id-token", r), this._attachPreloadPixel({
           id: t,
-          userIdToken: o,
-          amount: r.amount,
+          userIdToken: r,
+          amount: n.amount,
           currency: e.currency,
           merchantId: e["merchant-id"]
         })), this._paypalScript.src = y.queryify("https://www.paypal.com/sdk/js?", e), document.head.insertBefore(this._paypalScript, document.head.firstElementChild)
-      }).bind(this)), n.then((function() {
+      }).bind(this)), t.then((function() {
         return this
       }).bind(this))
     }, N.prototype._attachPreloadPixel = function(e) {
@@ -9704,53 +9696,49 @@ module.exports = (function e(t, n, r) {
       o = e("@braintree/extended-promise"),
       a = e("../shared/errors"),
       s = e("../../lib/braintree-error"),
-      c = {
-        backdrop: "venmo-desktop-web-backdrop",
-        backdropHidden: "venmo-desktop-web-backdrop.hidden",
-        backdropContainer: "venmo-backdrop-container",
-        cancelButton: "venmo-popup-cancel-button",
-        continueButton: "venmo-popup-continue-button",
-        message: "venmo-message",
-        instructions: "venmo-instructions",
-        venmoLogo: "venmo-full-logo"
-      };
+      c = "venmo-desktop-web-backdrop",
+      d = "venmo-backdrop-container",
+      l = "venmo-popup-cancel-button",
+      u = "venmo-popup-continue-button",
+      p = "venmo-message",
+      _ = "venmo-instructions";
 
-    function d(e) {
+    function E(e) {
       var t = e.frameServiceInstance,
         n = e.venmoUrl,
         r = e.checkForStatusChange,
         i = e.cancelTokenization,
-        d = e.checkPaymentContextStatus,
-        u = new o;
-      return document.getElementById(c.continueButton).addEventListener("click", function() {
+        c = e.checkPaymentContextStatus,
+        d = new o;
+      return document.getElementById(u).addEventListener("click", function() {
         t.focus()
-      }), document.getElementById(c.cancelButton).addEventListener("click", function() {
-        t.close(), i(), l()
+      }), document.getElementById(l).addEventListener("click", function() {
+        t.close(), i(), h()
       }), t.open({}, function(e) {
-        e ? u.reject(e) : r(1).then(function(e) {
-          u.resolve(e)
+        e ? d.reject(e) : r(1).then(function(e) {
+          d.resolve(e)
         }).catch(function(e) {
-          d().then(function(t) {
-            "CREATED" === t.status ? u.reject(new s(a.VENMO_CUSTOMER_CANCELED)) : u.reject(e)
+          c().then(function(t) {
+            "CREATED" === t.status ? d.reject(new s(a.VENMO_CUSTOMER_CANCELED)) : d.reject(e)
           })
-        }), t.close(), l()
-      }), t.redirect(n), u
+        }), t.close(), h()
+      }), t.redirect(n), d
     }
 
-    function l() {
+    function h() {
       document.getElementById("venmo-desktop-web-backdrop").classList.add("hidden")
     }
     o.suppressUnhandledPromiseMessage = true, t.exports = {
       runWebLogin: function(e) {
         return ! function() {
-          var e, t, n, r, i, o, a, s, d = document.getElementById(c.backdrop);
-          if (d) return d.classList.remove("hidden");
-          e = document.createElement("style"), t = document.createElement("div"), n = document.createElement("div"), r = document.createElement("div"), i = document.createElement("div"), o = document.createElement("div"), a = document.createElement("button"), s = document.createElement("button"), e.id = "venmo-desktop-web__injected-styles", e.innerHTML = ["#" + c.backdropHidden + " {", "display: none;", "}", "#" + c.backdrop + " {", "z-index: 3141592632;", "cursor: pointer;", "position: fixed;", "top: 0;", "left: 0;", "bottom: 0;", "width: 100%;", "background: rgba(0, 0, 0, 0.8);", "}"].concat(["#" + c.backdropContainer + " {", "display: flex;", "align-content: center;", "justify-content: center;", "align-items: center;", "width: 100%;", "height: 100%;", "flex-direction: column;", "}"], ["#" + c.cancelButton + " {", "height: 24px;", "width: 380px;", "font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;", "font-style: normal;", "font-weight: 700;", "font-size: 18px;", "line-height: 24px;", "text-align: center;", "background-color: transparent;", "border: none;", "color: #FFFFFF;", "margin-top: 28px;", "}"], ["#" + c.continueButton + " {", "width: 400px;", "height: 50px;", "background: #0074DE;", "border-radius: 24px;", "border: none;", "font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;", "font-style: normal;", "font-weight: 700;", "font-size: 18px;", "color: #FFFFFF;", "margin-top: 44px;", "}"], ["#" + c.message + " {", "font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;", "font-style: normal;", "font-weight: 500;", "font-size: 24px;", "line-height: 32px;", "text-align: center;", "color: #FFFFFF;", "margin-top: 32px;", "}"], ["#" + c.instructions + " {", "font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;", "font-style: normal;", "font-weight: 400;", "font-size: 16px;", "line-height: 20px;", "text-align: center;", "color: #FFFFFF;", "margin-top: 16px;", "width: 400px;", "}"]).join("\n"), t.id = c.backdrop, n.id = c.backdropContainer, r.id = c.venmoLogo, r.innerHTML = '<svg width="198" height="58" viewBox="0 0 198 58" fill="none" xmlns="http://www.w3.org/2000/svg">\n  <path fill-rule="evenodd" clip-rule="evenodd" d="M43.0702 13.6572C44.1935 15.4585 44.6999 17.3139 44.6999 19.6576C44.6999 27.1328 38.1277 36.8436 32.7935 43.6625H20.6099L15.7236 15.2939L26.3917 14.3105L28.9751 34.4966C31.389 30.6783 34.3678 24.6779 34.3678 20.587C34.3678 18.3477 33.9727 16.8225 33.3553 15.5666L43.0702 13.6572Z" fill="white"/>\n  <path fill-rule="evenodd" clip-rule="evenodd" d="M56.8965 26.1491C58.8596 26.1491 63.8018 25.2772 63.8018 22.5499C63.8018 21.2402 62.8481 20.587 61.7242 20.587C59.7579 20.587 57.1776 22.8763 56.8965 26.1491ZM56.6715 31.5506C56.6715 34.8807 58.5787 36.1873 61.107 36.1873C63.8603 36.1873 66.4966 35.534 69.923 33.8433L68.6324 42.3523C66.2183 43.4976 62.4559 44.2617 58.8039 44.2617C49.5403 44.2617 46.2249 38.8071 46.2249 31.9879C46.2249 23.1496 51.6179 13.765 62.7365 13.765C68.858 13.765 72.2809 17.0949 72.2809 21.7317C72.2815 29.2066 62.4005 31.4965 56.6715 31.5506Z" fill="white"/>\n  <path fill-rule="evenodd" clip-rule="evenodd" d="M103.067 20.3142C103.067 21.4052 102.897 22.9875 102.727 24.0216L99.5262 43.6622H89.1385L92.0585 25.658C92.1139 25.1696 92.284 24.1865 92.284 23.6411C92.284 22.3314 91.4414 22.0047 90.4282 22.0047C89.0826 22.0047 87.7337 22.6042 86.8354 23.0418L83.5234 43.6625H73.0772L77.8495 14.257H86.8908L87.0052 16.6041C89.1382 15.2404 91.9469 13.7656 95.932 13.7656C101.212 13.765 103.067 16.3845 103.067 20.3142Z" fill="white"/>\n  <path fill-rule="evenodd" clip-rule="evenodd" d="M133.906 16.9841C136.881 14.9131 139.69 13.765 143.563 13.765C148.897 13.765 150.753 16.3845 150.753 20.3142C150.753 21.4052 150.583 22.9875 150.413 24.0216L147.216 43.6622H136.825L139.801 25.2774C139.855 24.786 139.971 24.1865 139.971 23.8063C139.971 22.3317 139.128 22.0047 138.115 22.0047C136.824 22.0047 135.535 22.5501 134.577 23.0418L131.266 43.6625H120.878L123.854 25.2777C123.908 24.7863 124.02 24.1868 124.02 23.8065C124.02 22.332 123.177 22.0049 122.167 22.0049C120.819 22.0049 119.473 22.6045 118.574 23.0421L115.26 43.6628H104.817L109.589 14.2573H118.52L118.8 16.7122C120.878 15.241 123.684 13.7662 127.446 13.7662C130.704 13.765 132.837 15.129 133.906 16.9841Z" fill="white"/>\n  <path fill-rule="evenodd" clip-rule="evenodd" d="M171.426 25.5502C171.426 23.1496 170.808 21.513 168.956 21.513C164.857 21.513 164.015 28.55 164.015 32.1498C164.015 34.8807 164.802 36.5709 166.653 36.5709C170.528 36.5709 171.426 29.1497 171.426 25.5502ZM153.458 31.7152C153.458 22.442 158.511 13.765 170.136 13.765C178.896 13.765 182.098 18.7854 182.098 25.7148C182.098 34.8805 177.099 44.3723 165.194 44.3723C156.378 44.3723 153.458 38.7525 153.458 31.7152Z" fill="white"/>\n</svg>', i.id = c.message, i.innerText = "What would you like to do?", o.id = c.instructions, o.innerText = "Tap cancel payment to cancel and return to the business. Continue payment will relaunch the payment window.", a.id = c.continueButton, a.innerText = "Continue payment", s.id = c.cancelButton, s.innerText = "Cancel payment", document.head.appendChild(e), n.appendChild(r), n.appendChild(i), n.appendChild(o), n.appendChild(a), n.appendChild(s), t.appendChild(n), document.body.appendChild(t), t.addEventListener("click", function(e) {
+          var e, t, n, r, i, o, a, s, E = document.getElementById(c);
+          if (E) return E.classList.remove("hidden");
+          e = document.createElement("style"), t = document.createElement("div"), n = document.createElement("div"), r = document.createElement("div"), i = document.createElement("div"), o = document.createElement("div"), a = document.createElement("button"), s = document.createElement("button"), e.id = "venmo-desktop-web__injected-styles", e.innerHTML = ["#venmo-desktop-web-backdrop.hidden {", "display: none;", "}", "#" + c + " {", "z-index: 3141592632;", "cursor: pointer;", "position: fixed;", "top: 0;", "left: 0;", "bottom: 0;", "width: 100%;", "background: rgba(0, 0, 0, 0.8);", "}"].concat(["#" + d + " {", "display: flex;", "align-content: center;", "justify-content: center;", "align-items: center;", "width: 100%;", "height: 100%;", "flex-direction: column;", "}"], ["#" + l + " {", "height: 24px;", "width: 380px;", "font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;", "font-style: normal;", "font-weight: 700;", "font-size: 18px;", "line-height: 24px;", "text-align: center;", "background-color: transparent;", "border: none;", "color: #FFFFFF;", "margin-top: 28px;", "}"], ["#" + u + " {", "width: 400px;", "height: 50px;", "background: #0074DE;", "border-radius: 24px;", "border: none;", "font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;", "font-style: normal;", "font-weight: 700;", "font-size: 18px;", "color: #FFFFFF;", "margin-top: 44px;", "}"], ["#" + p + " {", "font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;", "font-style: normal;", "font-weight: 500;", "font-size: 24px;", "line-height: 32px;", "text-align: center;", "color: #FFFFFF;", "margin-top: 32px;", "}"], ["#" + _ + " {", "font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;", "font-style: normal;", "font-weight: 400;", "font-size: 16px;", "line-height: 20px;", "text-align: center;", "color: #FFFFFF;", "margin-top: 16px;", "width: 400px;", "}"]).join("\n"), t.id = c, n.id = d, r.id = "venmo-full-logo", r.innerHTML = '<svg width="198" height="58" viewBox="0 0 198 58" fill="none" xmlns="http://www.w3.org/2000/svg">\n  <path fill-rule="evenodd" clip-rule="evenodd" d="M43.0702 13.6572C44.1935 15.4585 44.6999 17.3139 44.6999 19.6576C44.6999 27.1328 38.1277 36.8436 32.7935 43.6625H20.6099L15.7236 15.2939L26.3917 14.3105L28.9751 34.4966C31.389 30.6783 34.3678 24.6779 34.3678 20.587C34.3678 18.3477 33.9727 16.8225 33.3553 15.5666L43.0702 13.6572Z" fill="white"/>\n  <path fill-rule="evenodd" clip-rule="evenodd" d="M56.8965 26.1491C58.8596 26.1491 63.8018 25.2772 63.8018 22.5499C63.8018 21.2402 62.8481 20.587 61.7242 20.587C59.7579 20.587 57.1776 22.8763 56.8965 26.1491ZM56.6715 31.5506C56.6715 34.8807 58.5787 36.1873 61.107 36.1873C63.8603 36.1873 66.4966 35.534 69.923 33.8433L68.6324 42.3523C66.2183 43.4976 62.4559 44.2617 58.8039 44.2617C49.5403 44.2617 46.2249 38.8071 46.2249 31.9879C46.2249 23.1496 51.6179 13.765 62.7365 13.765C68.858 13.765 72.2809 17.0949 72.2809 21.7317C72.2815 29.2066 62.4005 31.4965 56.6715 31.5506Z" fill="white"/>\n  <path fill-rule="evenodd" clip-rule="evenodd" d="M103.067 20.3142C103.067 21.4052 102.897 22.9875 102.727 24.0216L99.5262 43.6622H89.1385L92.0585 25.658C92.1139 25.1696 92.284 24.1865 92.284 23.6411C92.284 22.3314 91.4414 22.0047 90.4282 22.0047C89.0826 22.0047 87.7337 22.6042 86.8354 23.0418L83.5234 43.6625H73.0772L77.8495 14.257H86.8908L87.0052 16.6041C89.1382 15.2404 91.9469 13.7656 95.932 13.7656C101.212 13.765 103.067 16.3845 103.067 20.3142Z" fill="white"/>\n  <path fill-rule="evenodd" clip-rule="evenodd" d="M133.906 16.9841C136.881 14.9131 139.69 13.765 143.563 13.765C148.897 13.765 150.753 16.3845 150.753 20.3142C150.753 21.4052 150.583 22.9875 150.413 24.0216L147.216 43.6622H136.825L139.801 25.2774C139.855 24.786 139.971 24.1865 139.971 23.8063C139.971 22.3317 139.128 22.0047 138.115 22.0047C136.824 22.0047 135.535 22.5501 134.577 23.0418L131.266 43.6625H120.878L123.854 25.2777C123.908 24.7863 124.02 24.1868 124.02 23.8065C124.02 22.332 123.177 22.0049 122.167 22.0049C120.819 22.0049 119.473 22.6045 118.574 23.0421L115.26 43.6628H104.817L109.589 14.2573H118.52L118.8 16.7122C120.878 15.241 123.684 13.7662 127.446 13.7662C130.704 13.765 132.837 15.129 133.906 16.9841Z" fill="white"/>\n  <path fill-rule="evenodd" clip-rule="evenodd" d="M171.426 25.5502C171.426 23.1496 170.808 21.513 168.956 21.513C164.857 21.513 164.015 28.55 164.015 32.1498C164.015 34.8807 164.802 36.5709 166.653 36.5709C170.528 36.5709 171.426 29.1497 171.426 25.5502ZM153.458 31.7152C153.458 22.442 158.511 13.765 170.136 13.765C178.896 13.765 182.098 18.7854 182.098 25.7148C182.098 34.8805 177.099 44.3723 165.194 44.3723C156.378 44.3723 153.458 38.7525 153.458 31.7152Z" fill="white"/>\n</svg>', i.id = p, i.innerText = "What would you like to do?", o.id = _, o.innerText = "Tap cancel payment to cancel and return to the business. Continue payment will relaunch the payment window.", a.id = u, a.innerText = "Continue payment", s.id = l, s.innerText = "Cancel payment", document.head.appendChild(e), n.appendChild(r), n.appendChild(i), n.appendChild(o), n.appendChild(a), n.appendChild(s), t.appendChild(n), document.body.appendChild(t), t.addEventListener("click", function(e) {
             e.stopPropagation()
           })
-        }(), d(e)
+        }(), E(e)
       },
-      openPopup: d,
+      openPopup: E,
       setupDesktopWebLogin: function(e) {
         var t = new o,
           n = e.assetsUrl,
@@ -9987,26 +9975,26 @@ module.exports = (function e(t, n, r) {
     }, O.prototype._isDesktop = function() {
       return !(o.isIos() || o.isAndroid())
     }, O.prototype.tokenize = function(e) {
-      var t, n = this;
+      var t = this;
       return (e = e || {}, true === this._tokenizationInProgress) ? Promise.reject(new _(s.VENMO_TOKENIZATION_REQUEST_ACTIVE)) : (this._tokenizationInProgress = true, (this._useDesktopQRFlow ? this._tokenizeForDesktopQRFlow(e) : this._useAllowDesktopWebLogin ? this._tokenizeWebLoginWithRedirect() : this._cannotHaveReturnUrls ? this._tokenizeForMobileWithManualReturn() : this._tokenizeForMobileWithHashChangeListeners(e)).then(function(e) {
-        return n._createPromise.then(function(e) {
-          return n._createVenmoPaymentContext(e)
+        return t._createPromise.then(function(e) {
+          return t._createVenmoPaymentContext(e)
         }).then(function() {
-          var t, r;
-          return n._tokenizationInProgress = false, r = {
-            nonce: (t = e).paymentMethodNonce,
+          var n, r;
+          return t._tokenizationInProgress = false, r = {
+            nonce: (n = e).paymentMethodNonce,
             type: "VenmoAccount",
             details: {
-              username: P(t.username),
-              paymentContextId: t.id
+              username: P(n.username),
+              paymentContextId: n.id
             }
-          }, t.payerInfo && (r.details.payerInfo = t.payerInfo, r.details.payerInfo.userName = P(t.payerInfo.userName)), r
+          }, n.payerInfo && (r.details.payerInfo = n.payerInfo, r.details.payerInfo.userName = P(n.payerInfo.userName)), r
         })
       }).catch(function(e) {
-        return n._createPromise.then(function(e) {
-          return n._createVenmoPaymentContext(e)
+        return t._createPromise.then(function(e) {
+          return t._createVenmoPaymentContext(e)
         }).then(function() {
-          return n._tokenizationInProgress = false, Promise.reject(e)
+          return t._tokenizationInProgress = false, Promise.reject(e)
         })
       }))
     }, O.prototype.cancelTokenization = function() {

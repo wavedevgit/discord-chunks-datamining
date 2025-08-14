@@ -19,20 +19,7 @@ function u(e) {
     emoji: u,
     setEmoji: m,
     channel: j
-  } = e, v = l.useRef(null), h = e => t => {
-    var n, i;
-    let {
-      emoji: l,
-      willClose: r
-    } = t;
-    null != l && (null == l.id ? m({
-      name: null != (n = l.optionallyDiverseSequence) ? n : ""
-    }) : m({
-      id: l.id,
-      name: null != (i = l.originalName) ? i : l.name,
-      animated: l.animated
-    }), r && e())
-  }, p = null == u || null == u.name ? null : () => {
+  } = e, v = l.useRef(null), h = null == u || null == u.name ? null : () => {
     var e;
     return (0, i.jsx)(o.Z, {
       className: n,
@@ -55,7 +42,20 @@ function u(e) {
         } = e;
         return (0, i.jsx)(a.Z, {
           closePopout: t,
-          onSelectEmoji: h(t),
+          onSelectEmoji: e => {
+            var n, i;
+            let {
+              emoji: l,
+              willClose: r
+            } = e;
+            null != l && (null == l.id ? m({
+              name: null != (n = l.optionallyDiverseSequence) ? n : ""
+            }) : m({
+              id: l.id,
+              name: null != (i = l.originalName) ? i : l.name,
+              animated: l.animated
+            }), r && t())
+          },
           pickerIntention: d.Hz.COMMUNITY_CONTENT,
           channel: j
         })
@@ -87,7 +87,7 @@ function u(e) {
           tabIndex: 0,
           active: o,
           className: t,
-          renderButtonContents: p
+          renderButtonContents: h
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

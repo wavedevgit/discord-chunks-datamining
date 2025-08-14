@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 428862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -17,7 +17,7 @@ var r, i, Chunk255367 = require("./255367.js"),
   Chunk402766 = require("./402766.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk621760 = require("./621760.js");
+  Chunk744834 = require("./744834.js");
 let v = {
     tension: 200,
     friction: 20
@@ -172,34 +172,7 @@ function C(e) {
   } = e, _ = (0, d.e7)([h.Z], () => {
     var e, t;
     return null != (t = null == (e = h.Z.getGuild(f)) ? true : e.premiumTier) ? t : b.Eu4.NONE
-  }), O = b.oCV[i.tier], C = a && i.tier <= _, N = i.tier !== b.Eu4.NONE && i.tier !== b.Eu4.TIER_1, I = (e, t) => {
-    var n;
-    let {
-      Icon: r,
-      className: i
-    } = (0, g.t)(e.icon, t);
-    return (0, l.jsxs)("div", {
-      className: j.perk,
-      children: [(0, l.jsx)(p.Z, {
-        name: String(e.icon),
-        icon: r,
-        className: j.perkIcon,
-        iconClassName: i
-      }), (0, l.jsxs)("div", {
-        className: j.perkText,
-        children: [(0, l.jsxs)("div", {
-          className: j.perkTitle,
-          children: [e.title, e.isNew ? (0, l.jsx)(u.IGR, {
-            className: j.newBadge,
-            text: x.intl.string(x.t.y2b7CA)
-          }) : null]
-        }), (0, l.jsx)("div", {
-          className: j.perkDescription,
-          children: e.description
-        })]
-      })]
-    }, null == (n = e.title) ? true : n.toString())
-  };
+  }), O = b.oCV[i.tier], C = a && i.tier <= _, N = i.tier !== b.Eu4.NONE && i.tier !== b.Eu4.TIER_1;
   return (0, l.jsxs)("div", {
     className: o()(j.tier, {
       [j.tierBottomMargin]: s
@@ -228,7 +201,34 @@ function C(e) {
           children: x.intl.string(x.t.oKzyRU)
         }) : null, null != i.perks && (0, l.jsx)("div", {
           className: j.perks,
-          children: i.perks.map(e => I(e, C))
+          children: i.perks.map(e => ((e, t) => {
+            var n;
+            let {
+              Icon: r,
+              className: i
+            } = (0, g.t)(e.icon, t);
+            return (0, l.jsxs)("div", {
+              className: j.perk,
+              children: [(0, l.jsx)(p.Z, {
+                name: String(e.icon),
+                icon: r,
+                className: j.perkIcon,
+                iconClassName: i
+              }), (0, l.jsxs)("div", {
+                className: j.perkText,
+                children: [(0, l.jsxs)("div", {
+                  className: j.perkTitle,
+                  children: [e.title, e.isNew ? (0, l.jsx)(u.IGR, {
+                    className: j.newBadge,
+                    text: x.intl.string(x.t.y2b7CA)
+                  }) : null]
+                }), (0, l.jsx)("div", {
+                  className: j.perkDescription,
+                  children: e.description
+                })]
+              })]
+            }, null == (n = e.title) ? true : n.toString())
+          })(e, C))
         })]
       })
     })]

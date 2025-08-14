@@ -1,8 +1,8 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 339144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => x,
-  y: () => S
+  J: () => S,
+  y: () => x
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -25,15 +25,15 @@ var Chunk255367 = require("./255367.js"),
   Chunk870569 = require("./870569.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk537405 = require("./537405.js");
+  Chunk258628 = require("./258628.js");
 
-function S(e, t, n) {
-  return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === v.IIU.PLAYING && (0, u.Z)(t, v.xjy.JOIN))
+function x(e, t, n) {
+  return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === j.IIU.PLAYING && (0, u.Z)(t, j.xjy.JOIN))
 }
-let x = Chunk73800.memo(function(e) {
-  let t, l, u, x, {
-      stream: I,
-      canGoLive: P,
+let S = Chunk73800.memo(function(e) {
+  let t, l, u, S, {
+      stream: P,
+      canGoLive: I,
       guildId: N,
       isStreaming: w,
       channel: Z,
@@ -53,32 +53,32 @@ let x = Chunk73800.memo(function(e) {
     }),
     {
       parentAnalyticsLocation: G
-    } = (0, h.ZP)(),
-    B = S(L, D, R),
+    } = (0, p.ZP)(),
+    B = x(L, D, R),
     V = i.useCallback(() => {
-      o()(null != D, "Received null activity"), (0, p.v)(G, p.d.INVITE), y.default.track(v.rMx.OPEN_MODAL, {
+      o()(null != D, "Received null activity"), (0, f.v)(G, f.d.INVITE), y.default.track(j.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
         application_id: D.application_id,
         location: M.location
-      }), (0, a.h7)(D, false)
+      }), (0, s.h7)(D, false)
     }, [D, M, G]),
     F = i.useCallback((e, t) => () => {
-      (0, p.v)(G, p.d.LEAVE_ACTIVITY), d.Z.leaveActivity({
+      (0, f.v)(G, f.d.LEAVE_ACTIVITY), d.Z.leaveActivity({
         location: t,
         applicationId: e,
         showFeedback: true
       })
     }, [G]),
     H = i.useCallback(() => {
-      (0, b.Z)(I)
-    }, [I]),
+      (0, b.Z)(P)
+    }, [P]),
     z = i.useCallback(() => {
       let e = null != Z && (0, O.vd)(Z.type) ? Z : null,
         t = null != e ? e.getGuildId() : N;
       if (k && null != A && null != _.Z.getVoiceChannelId()) {
         (0, g.s)("Activity Panel"), (0, m.Z)(A.pid);
         return
-      }(0, s.ZDy)(async () => {
+      }(0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("46746"), n.e("33641")]).then(n.bind(n, 60594));
@@ -105,7 +105,7 @@ let x = Chunk73800.memo(function(e) {
             sourcePID: null == A ? true : A.pid,
             selectSource: !!U && null != _.Z.getVoiceChannelId(),
             guildId: t,
-            analyticsLocation: v.Sbl.ACTIVITY_PANEL
+            analyticsLocation: j.Sbl.ACTIVITY_PANEL
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -119,32 +119,32 @@ let x = Chunk73800.memo(function(e) {
         }
       })
     }, [Z, N, A, U, k]),
-    W = (null != A || null == R || (0, c.R)()) && (w || P) ? (w ? (t = false, l = () => {
-      H(), (0, p.v)(G, p.d.STREAM, false)
-    }, u = s.g5r, x = j.intl.string(j.t.S5anIS)) : T ? (t = false, l = () => {
-      z(), (0, p.v)(G, p.d.STREAM, true)
-    }, u = s.hGI, x = null != A ? j.intl.formatToPlainString(j.t.AB5gT0, {
+    W = (null != A || null == R || (0, c.R)()) && (w || I) ? (w ? (t = false, l = () => {
+      H(), (0, f.v)(G, f.d.STREAM, false)
+    }, u = a.g5r, S = C.intl.string(C.t.S5anIS)) : T ? (t = false, l = () => {
+      z(), (0, f.v)(G, f.d.STREAM, true)
+    }, u = a.hGI, S = null != A ? C.intl.formatToPlainString(C.t.AB5gT0, {
       game: A.name
-    }) : j.intl.string(j.t.FeUKeH)) : (t = true, l = null, u = s.hGI, x = null != Z && (0, O.vd)(Z.type) ? j.intl.string(j.t.uQn9Bw) : null != N ? j.intl.string(j.t.fBXEoK) : j.intl.string(j.t.n3feND)), (0, r.jsx)("div", {
+    }) : C.intl.string(C.t.FeUKeH)) : (t = true, l = null, u = a.hGI, S = null != Z && (0, O.vd)(Z.type) ? C.intl.string(C.t.uQn9Bw) : null != N ? C.intl.string(C.t.fBXEoK) : C.intl.string(C.t.n3feND)), (0, r.jsx)("div", {
       className: E.panelButtonContainer,
-      children: (0, r.jsx)(C.Z, {
-        tooltipText: x,
+      children: (0, r.jsx)(v.Z, {
+        tooltipText: S,
         disabled: t,
         onClick: l,
         icon: u
       })
     })) : null,
-    K = B && null == R ? (0, r.jsx)(C.Z, {
-      tooltipText: j.intl.string(j.t["hC/Ze3"]),
+    K = B && null == R ? (0, r.jsx)(v.Z, {
+      tooltipText: C.intl.string(C.t["hC/Ze3"]),
       onClick: V,
-      icon: s.ejJ
+      icon: a.ejJ
     }) : null,
-    Y = null == R ? null : (0, r.jsx)(C.Z, {
-      tooltipText: j.intl.string(j.t["R/FK4O"]),
+    Y = null == R ? null : (0, r.jsx)(v.Z, {
+      tooltipText: C.intl.string(C.t["R/FK4O"]),
       onClick: F(R.applicationId, R.location),
-      icon: s.PBZ
+      icon: a.PBZ
     }),
-    q = null == I ? null : (0, r.jsx)(f.Z, {});
+    q = null == P ? null : (0, r.jsx)(h.Z, {});
   return null == W && null == K && null == Y ? null : (0, r.jsxs)("div", {
     className: E.actions,
     children: [W, K, null != Y ? Y : q]

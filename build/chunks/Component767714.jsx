@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk648613 = require("./648613.jsx"),
   Chunk433390 = require("./433390.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk20052 = require("./20052.js");
+  Chunk402623 = require("./402623.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -111,7 +111,7 @@ let y = function(e) {
       paymentModalBanner: R
     };
 
-  function j(e) {
+  function k(e) {
     let n = null != P ? P : t === f.Si.TIER_1 ? s.zx.Colors.PRIMARY : s.zx.Colors.GREEN;
     return (0, r.jsx)(u.Z, g(h({}, M), {
       children: a => {
@@ -147,6 +147,6 @@ let y = function(e) {
   }
   return null != x.buttonTooltipText ? (0, r.jsx)(l.ua7, {
     text: x.buttonTooltipText,
-    children: j
-  }) : j()
+    children: k
+  }) : k()
 }

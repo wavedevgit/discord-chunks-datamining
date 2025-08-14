@@ -1,7 +1,7 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 386733, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => A
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -23,7 +23,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk938736 = require("./938736.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk630604 = require("./630604.js"),
+  Chunk120472 = require("./120472.js"),
   Chunk691766 = require("./691766.js");
 
 function S(e) {
@@ -131,43 +131,28 @@ let I = e => {
   },
   A = e => {
     let {
-      analyticsLocations: t
-    } = e;
-    g.default.track(E.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
-      location_stack: t
-    }), (0, c.ZDy)(async () => {
-      let {
-        default: e
-      } = await Promise.all([n.e("83667"), n.e("33784")]).then(n.bind(n, 204387));
-      return n => (0, i.jsx)(e, T(S({}, n), {
-        sourceAnalyticsLocations: t
-      }))
-    })
-  },
-  P = e => {
-    let {
       isInSettings: t = false
-    } = e, n = (0, l.e7)([b.Z], () => b.Z.getRecipientStatus()), {
-      referralSentUsers: s
-    } = (0, x.G)(), m = r.useMemo(() => s.map(e => new p.Z(e)), [s]), g = {
+    } = e, s = (0, l.e7)([b.Z], () => b.Z.getRecipientStatus()), {
+      referralSentUsers: m
+    } = (0, x.G)(), I = r.useMemo(() => m.map(e => new p.Z(e)), [m]), N = {
       redeemed: 0,
       converted: 0,
-      sent: n.size
+      sent: s.size
     };
-    n.forEach(e => {
-      e === f.Fe.REDEEMED && g.redeemed++, e === f.Fe.CONVERTED && (g.redeemed++, g.converted++)
+    s.forEach(e => {
+      e === f.Fe.REDEEMED && N.redeemed++, e === f.Fe.CONVERTED && (N.redeemed++, N.converted++)
     });
-    let S = g.sent === x.Q,
-      T = h.Z.getArticleURL(E.BhN.REFERRAL_PROGRAM),
+    let A = N.sent === x.Q,
+      P = h.Z.getArticleURL(E.BhN.REFERRAL_PROGRAM),
       {
-        analyticsLocations: I
+        analyticsLocations: R
       } = (0, u.ZP)(d.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
-      N = r.useRef(null),
-      P = g.sent / x.Q * 100,
-      R = (0, i.jsxs)("div", {
+      D = r.useRef(null),
+      Z = N.sent / x.Q * 100,
+      w = (0, i.jsxs)("div", {
         className: O.referralInfoContent,
         children: [(0, i.jsx)(_.ZP, {
-          percentage: P,
+          percentage: Z,
           progressCircleVariation: _.Qo.NITRO_LOGO,
           iconClassName: a()({
             [O.referralProgressBarIcon]: !t,
@@ -179,15 +164,15 @@ let I = e => {
             variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
             className: O.expandedProgressBarHeader,
             children: (0, j.$s)({
-              hasSentAll: S
+              hasSentAll: A
             })
           }), (0, i.jsx)(y, {
-            userRecords: m
+            userRecords: I
           }), (0, i.jsx)(c.Text, {
             variant: t ? "text-sm/normal" : "text-lg/medium",
             children: (0, j.Hg)({
-              helpdeskArticle: T,
-              referralsStatuses: g
+              helpdeskArticle: P,
+              referralsStatuses: N
             })
           }), (0, i.jsx)("div", {
             className: a()(O.expandedProgressBarButtonContainer, {
@@ -197,8 +182,22 @@ let I = e => {
               "data-migration-pending": true,
               className: O.expandedProgressBarSelectFriendsCTA,
               color: o.Tt.CUSTOM,
-              onClick: () => A({
-                analyticsLocations: I
+              onClick: () => (e => {
+                let {
+                  analyticsLocations: t
+                } = e;
+                g.default.track(E.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                  location_stack: t
+                }), (0, c.ZDy)(async () => {
+                  let {
+                    default: e
+                  } = await Promise.all([n.e("83667"), n.e("28253")]).then(n.bind(n, 204387));
+                  return n => (0, i.jsx)(e, T(S({}, n), {
+                    sourceAnalyticsLocations: t
+                  }))
+                })
+              })({
+                analyticsLocations: R
               }),
               onlyShineOnHover: true,
               children: (0, i.jsxs)("div", {
@@ -207,30 +206,30 @@ let I = e => {
                   src: v,
                   alt: "",
                   className: O.expandedProgressBarSelectFriendsIcon
-                }), S ? C.intl.string(C.t.SY9tyM) : C.intl.string(C.t.Lm2nFR)]
+                }), A ? C.intl.string(C.t.SY9tyM) : C.intl.string(C.t.Lm2nFR)]
               })
             })
           })]
         })]
       }),
-      D = g.redeemed === x.Q;
+      k = N.redeemed === x.Q;
     return (0, i.jsx)(u.Gt, {
-      value: I,
+      value: R,
       children: (0, i.jsx)("div", {
         className: a()({
-          [O.containerWithGlowWithoutBanner]: D,
-          [O.containerWithoutGlow]: !D,
+          [O.containerWithGlowWithoutBanner]: k,
+          [O.containerWithoutGlow]: !k,
           [O.containerWithMargins]: !t,
-          [O.containerWithGlowOnSettingsPage]: D && t
+          [O.containerWithGlowOnSettingsPage]: k && t
         }),
         children: (0, i.jsx)("div", {
-          ref: N,
+          ref: D,
           className: a()({
             [O.expandedProgressBarContainer]: !t,
             [O.expandedProgressBarContainerSettingsPage]: t,
-            [O.allReferralsSentBorder]: D
+            [O.allReferralsSentBorder]: k
           }),
-          children: R
+          children: w
         })
       })
     })

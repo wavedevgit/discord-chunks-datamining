@@ -30,7 +30,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk535170 = require("./535170.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk989970 = require("./989970.js");
+  Chunk577436 = require("./577436.js");
 
 function S(a) {
   for (var i = 1; i < arguments.length; i++) {
@@ -84,10 +84,10 @@ function P(a) {
 function T() {
   let a = P(Chunk180504);
   return (0, Chunk255367.jsx)("div", {
-    className: s()(Chunk989970.leftArt, Chunk989970.altFloat),
+    className: s()(Chunk577436.leftArt, Chunk577436.altFloat),
     children: (0, Chunk255367.jsx)("div", {
       ref: module,
-      className: Chunk989970.grillingIsland
+      className: Chunk577436.grillingIsland
     })
   })
 }
@@ -95,10 +95,10 @@ function T() {
 function w() {
   let a = P(Chunk535170);
   return (0, Chunk255367.jsx)("div", {
-    className: s()(Chunk989970.rightArt, Chunk989970.altFloat),
+    className: s()(Chunk577436.rightArt, Chunk577436.altFloat),
     children: (0, Chunk255367.jsx)("div", {
       ref: module,
-      className: Chunk989970.waffleIsland
+      className: Chunk577436.waffleIsland
     })
   })
 }
@@ -166,13 +166,10 @@ function L(a) {
       }))
     }
   }, [i.id, l, o]);
-  let y = r.useMemo(() => (0, d.EB)(i, 135, false, true), [i]),
-    f = () => {
-      l.current = true, x()
-    };
+  let y = r.useMemo(() => (0, d.EB)(i, 135, false, true), [i]);
   return (0, p.ZP)(() => {
     setTimeout(() => {
-      f()
+      l.current = true, x()
     }, 3e3)
   }), (0, k.jsx)("div", {
     className: g.coverContainer,

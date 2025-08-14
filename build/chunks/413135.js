@@ -121,7 +121,7 @@ function O(e, t, n) {
   if ((true === t || t < 0) && (t = 0), t > this.length || ((true === n || n > this.length) && (n = this.length), n <= 0 || (n >>>= 0) <= (t >>>= 0))) return "";
   for (e || (e = "utf8");;) switch (e) {
     case "hex":
-      return k(this, t, n);
+      return j(this, t, n);
     case "utf8":
     case "utf-8":
       return D(this, t, n);
@@ -129,7 +129,7 @@ function O(e, t, n) {
       return M(this, t, n);
     case "latin1":
     case "binary":
-      return j(this, t, n);
+      return k(this, t, n);
     case "base64":
       return w(this, t, n);
     case "ucs2":
@@ -421,14 +421,14 @@ function M(e, t, n) {
   return r
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   var r = "";
   n = Math.min(e.length, n);
   for (var i = t; i < n; ++i) r += String.fromCharCode(e[i]);
   return r
 }
 
-function k(e, t, n) {
+function j(e, t, n) {
   var r = e.length;
   (!t || t < 0) && (t = 0), (!n || n < 0 || n > r) && (n = r);
   for (var i = "", o = t; o < n; ++o) i += $[e[o]];
@@ -551,7 +551,7 @@ c.prototype.slice = function(e, t) {
   var o = 0,
     a = 1,
     s = 0;
-  for (this[t] = 255 & e; ++o < n && (a *= 256);) e < 0 && 0 === s && 0 !== this[t + o - 1] && (s = 1), this[t + o] = (e / a >> 0) - s & 255;
+  for (this[t] = 255 & e; ++o < n && (a *= 256);) e < 0 && 0 === s && 0 !== this[t + o - 1] && (s = 1), this[t + o] = (e / a | 0) - s & 255;
   return t + n
 }, c.prototype.writeIntBE = function(e, t, n, r) {
   if (e *= 1, t >>>= 0, !r) {
@@ -561,7 +561,7 @@ c.prototype.slice = function(e, t) {
   var o = n - 1,
     a = 1,
     s = 0;
-  for (this[t + o] = 255 & e; --o >= 0 && (a *= 256);) e < 0 && 0 === s && 0 !== this[t + o + 1] && (s = 1), this[t + o] = (e / a >> 0) - s & 255;
+  for (this[t + o] = 255 & e; --o >= 0 && (a *= 256);) e < 0 && 0 === s && 0 !== this[t + o + 1] && (s = 1), this[t + o] = (e / a | 0) - s & 255;
   return t + n
 }, c.prototype.writeInt8 = function(e, t, n) {
   return e *= 1, t >>>= 0, n || B(this, e, t, 1, 127, false), e < 0 && (e = 255 + e + 1), this[t] = 255 & e, t + 1

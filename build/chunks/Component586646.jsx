@@ -15,7 +15,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk190054 = require("./190054.jsx"),
   Chunk760373 = require("./760373.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk509733 = require("./509733.js");
+  Chunk506317 = require("./506317.js");
 
 function O(e) {
   let {
@@ -27,7 +27,7 @@ function O(e) {
     fingerprintBase64: n,
     chunkSize: h.y6,
     desiredLength: h.YP
-  }), N = l.useCallback(() => {
+  }), y = l.useCallback(() => {
     (0, a.PM)({
       channelId: t
     })
@@ -57,7 +57,7 @@ function O(e) {
       }), null != O && (0, r.jsx)(f.H, {
         chunks: O,
         color: o.TVs.colors.INTERACTIVE_NORMAL.css,
-        onCopy: N
+        onCopy: y
       })]
     }), (0, r.jsx)(d.b, {
       className: p.code,

@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 653577, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -16,8 +16,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk759552 = require("./759552.js"),
-  Chunk692228 = require("./692228.js");
+  Chunk158871 = require("./158871.js"),
+  Chunk430864 = require("./430864.js");
 
 function O(e) {
   let {
@@ -27,40 +27,40 @@ function O(e) {
     subtitle: O,
     onClick: _,
     enableHangStatus: y,
-    allowChannelTopic: C
-  } = e, v = (0, s.e7)([u.Z], () => u.Z.getChannelStatus(t)), j = null != v && v.length > 0, E = (0, c.ZP)(t, true), S = (!y || !!C) && E, x = null != O && O.length > 0;
+    allowChannelTopic: v
+  } = e, j = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = null != j && j.length > 0, E = (0, c.ZP)(t, true), x = (!y || !!v) && E, S = null != O && O.length > 0;
   if (i.useEffect(() => {
-      j && p.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+      C && f.default.track(h.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
-    }, [j, t.id, t.guild_id]), null == t.guild_id) return null;
-  let I = o()(m.statusDiv, n && S ? m.hoverable : null);
-  return j ? (0, r.jsx)(a.P3F, {
-    className: I,
-    onClick: S ? _ : true,
-    children: (0, r.jsx)(a.Text, {
+    }, [C, t.id, t.guild_id]), null == t.guild_id) return null;
+  let P = o()(m.statusDiv, n && x ? m.hoverable : null);
+  return C ? (0, r.jsx)(s.P3F, {
+    className: P,
+    onClick: x ? _ : true,
+    children: (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
       children: (0, r.jsx)(d.Z, {
-        children: h.Z.parseVoiceChannelStatus(v, true, {
+        children: p.Z.parseVoiceChannelStatus(j, true, {
           channelId: t.id
         })
       })
     })
-  }) : n && S && (!x || l) ? (0, r.jsxs)(a.P3F, {
-    className: I,
+  }) : n && x && (!S || l) ? (0, r.jsxs)(s.P3F, {
+    className: P,
     onClick: _,
-    children: [(0, r.jsx)(a.Text, {
+    children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
       className: m.statusText,
       children: g.intl.string(g.t.Mgpxi4)
-    }), (0, r.jsx)(a.vdY, {
+    }), (0, r.jsx)(s.vdY, {
       color: "currentColor",
       className: m.pencilIcon,
       size: "xxs"
     })]
-  }) : x ? (0, r.jsx)(d.Z, {
+  }) : S ? (0, r.jsx)(d.Z, {
     children: O
   }) : null
 }

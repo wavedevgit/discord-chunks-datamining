@@ -15,7 +15,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk572004 = require("./572004.js"),
   Chunk267101 = require("./267101.js"),
   Chunk863663 = require("./863663.js"),
-  Chunk676651 = require("./676651.jsx"),
+  Chunk612111 = require("./612111.jsx"),
   Chunk623488 = require("./623488.jsx"),
   Chunk942833 = require("./942833.js"),
   Chunk391181 = require("./391181.jsx"),
@@ -42,9 +42,9 @@ function O(e) {
     return l.Z.getRole(n, null != (e = null == t ? true : t.role_id) ? e : b.lds)
   }), D = (0, o.U)(t, y), L = (0, h.C)(t), x = (0, d.SO)(P), {
     shouldHideGuildPurchaseEntryPoints: M
-  } = (0, s.uP)(n), j = (0, h.k)(t);
+  } = (0, s.uP)(n), k = (0, h.k)(t);
   if (null == P || M) return null;
-  let k = () => (0, g.e)({
+  let j = () => (0, g.e)({
       guildId: n,
       guildProductListingId: t.id,
       analyticsLocation: O
@@ -80,7 +80,7 @@ function O(e) {
     imageUrl: D,
     name: t.name,
     description: t.description,
-    formattedPrice: j,
+    formattedPrice: k,
     role: w,
     ctaComponent: (0, r.jsx)(E.Z, {
       guildId: n,
@@ -89,8 +89,8 @@ function O(e) {
     }),
     productType: L,
     shouldShowFullDescriptionButton: v,
-    onShowFullDescription: k,
-    onTapCard: k,
+    onShowFullDescription: j,
+    onTapCard: j,
     actionMenu: Z,
     showOpaqueBackground: R,
     hideRoleTag: I,

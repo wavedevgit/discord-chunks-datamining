@@ -1,6 +1,13 @@
-/** Chunk was on 93886 **/
-/** chunk id: 236202, original params: e,t,a (module,exports,require) **/
+/** Chunk was on 1272 **/
+/** chunk id: 236202, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  firstPromotionalAvatar: "firstPromotionalAvatar__55414",
-  container: "container__55414"
+  container: "container__133bf",
+  inviteToolbar: "inviteToolbar__133bf",
+  peopleColumn: "peopleColumn__133bf",
+  nowPlayingColumn: "nowPlayingColumn__133bf",
+  tabBar: "tabBar__133bf",
+  badge: "badge__133bf",
+  item: "item__133bf",
+  addFriend: "addFriend__133bf",
+  tabBody: "tabBody__133bf"
 }

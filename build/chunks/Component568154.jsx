@@ -14,7 +14,7 @@ var s, Chunk255367 = require("./255367.js"),
   Chunk133853 = require("./133853.jsx"),
   Chunk686694 = require("./686694.jsx"),
   Chunk898625 = require("./898625.js"),
-  Chunk554371 = require("./554371.js");
+  Chunk771858 = require("./771858.js");
 
 function m(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
@@ -106,8 +106,8 @@ class b extends(s = Chunk73800.PureComponent) {
       height: s
     } = this.state;
     return null != module ? (0, Chunk255367.jsx)(Chunk877604.Z, {
-      className: r()(Chunk554371.rightSplit, {
-        [Chunk554371.embedded]: exports
+      className: r()(Chunk771858.rightSplit, {
+        [Chunk771858.embedded]: exports
       }),
       src: module,
       width: require,
@@ -130,7 +130,7 @@ class b extends(s = Chunk73800.PureComponent) {
       updateWaveState: exports,
       hideFallback: !Chunk73800
     }) : (0, Chunk255367.jsx)("div", {
-      className: Chunk554371.mobileWave
+      className: Chunk771858.mobileWave
     })
   }
   renderContent() {
@@ -145,12 +145,12 @@ class b extends(s = Chunk73800.PureComponent) {
     } = this.state;
     return (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
       children: [this.renderWave(), (0, Chunk255367.jsxs)("div", {
-        className: r()(Chunk554371.leftSplit, {
-          [Chunk554371.nonEmbeddedLeftSplit]: Chunk120356
+        className: r()(Chunk771858.leftSplit, {
+          [Chunk771858.nonEmbeddedLeftSplit]: Chunk120356
         }),
         children: [require ? (0, Chunk255367.jsx)(Chunk133853.Z, {
           show: !Chunk477690 || exports === Chunk898625.hO.ENTERED && exports !== Chunk898625.hO.FILLING,
-          className: r()(Chunk554371.logo, s)
+          className: r()(Chunk771858.logo, s)
         }) : null, module]
       })]
     })
@@ -160,7 +160,7 @@ class b extends(s = Chunk73800.PureComponent) {
       className: t
     } = this.props;
     return (0, Chunk255367.jsxs)("div", {
-      className: r()(module, Chunk554371.wrapper),
+      className: r()(module, Chunk771858.wrapper),
       children: [this.renderSplashArt(), this.renderContent()]
     })
   }
@@ -177,32 +177,31 @@ class b extends(s = Chunk73800.PureComponent) {
         naturalWidth: t,
         naturalHeight: e
       } = this.state, i = g(t, e), s = this.calculateShowWaveAnimation();
-      if (null != i) {
-        var n, a;
-        this.setState((n = function(t) {
-          for (var e = 1; e < arguments.length; e++) {
-            var i = null != arguments[e] ? arguments[e] : {},
-              s = Object.keys(i);
-            "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(i).filter(function(t) {
-              return Object.getOwnPropertyDescriptor(i, t).enumerable
-            }))), s.forEach(function(e) {
-              m(t, e, i[e])
-            })
-          }
-          return t
-        }({}, i), a = a = {
-          showWaveAnimation: s
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(t, e) {
+      null != i ? this.setState(function(t, e) {
+        return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
           var i = Object.keys(t);
           if (Object.getOwnPropertySymbols) {
             var s = Object.getOwnPropertySymbols(t);
             i.push.apply(i, s)
           }
           return i
-        })(Object(a)).forEach(function(t) {
-          Object.defineProperty(n, t, Object.getOwnPropertyDescriptor(a, t))
-        }), n))
-      } else this.setState({
+        })(Object(e)).forEach(function(i) {
+          Object.defineProperty(t, i, Object.getOwnPropertyDescriptor(e, i))
+        }), t
+      }(function(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var i = null != arguments[e] ? arguments[e] : {},
+            s = Object.keys(i);
+          "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(i).filter(function(t) {
+            return Object.getOwnPropertyDescriptor(i, t).enumerable
+          }))), s.forEach(function(e) {
+            m(t, e, i[e])
+          })
+        }
+        return t
+      }({}, i), {
+        showWaveAnimation: s
+      })) : this.setState({
         showWaveAnimation: s
       })
     }), m(this, "handleLoad", t => {

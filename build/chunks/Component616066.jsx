@@ -1,8 +1,7 @@
-/** Chunk was on 96910 **/
+/** Chunk was on 96887 **/
 /** chunk id: 616066, original params: e,t,r (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  R: () => h
+  R: () => p
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -14,60 +13,60 @@ var Chunk120356 = require("./120356.js"),
   Chunk125988 = require("./125988.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk765029 = require("./765029.js");
-let b = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK,
-  h = e => {
+  Chunk407780 = require("./407780.js");
+let v = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK,
+  p = e => {
     var t, r;
     let {
-      item: a,
-      user: u,
-      isHighlighted: h = false,
-      isPurchased: f = false,
-      avatarSize: v = o.EFr.SIZE_152,
+      item: n,
+      user: d,
+      isHighlighted: p = false,
+      isPurchased: h = false,
+      avatarSize: g = s.EFr.SIZE_152,
       avatarPlaceholderSrc: m
-    } = e, _ = (0, s.y9)(v), {
-      avatarDecorationSrc: g,
-      eventHandlers: O,
-      avatarPlaceholderSrc: y
+    } = e, y = (0, l.y9)(g), {
+      avatarDecorationSrc: P,
+      eventHandlers: b,
+      avatarPlaceholderSrc: w
     } = (0, c.Z)({
-      user: u,
-      avatarDecorationOverride: (null == a ? true : a.type) === l.Z.AVATAR_DECORATION ? a : true,
-      size: _,
-      onlyAnimateOnHover: !h
-    }), C = d.intl.formatToPlainString(d.t.Do2lxM, {
-      a11y_text: a.label
+      user: d,
+      avatarDecorationOverride: (null == n ? true : n.type) === o.Z.AVATAR_DECORATION ? n : true,
+      size: y,
+      onlyAnimateOnHover: !p
+    }), O = u.intl.formatToPlainString(u.t.Do2lxM, {
+      a11y_text: n.label
     });
-    return (0, n.jsx)(b, (t = function(e) {
+    return (0, a.jsx)(v, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
-          n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+          a = Object.keys(r);
+        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
           return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-          var n;
-          n = r[t], t in e ? Object.defineProperty(e, t, {
-            value: n,
+        }))), a.forEach(function(t) {
+          var a;
+          a = r[t], t in e ? Object.defineProperty(e, t, {
+            value: a,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = n
+          }) : e[t] = a
         })
       }
       return e
-    }({}, O), r = r = {
-      avatarDecoration: g,
-      src: h ? null == u ? true : u.getAvatarURL(true, 152, true) : null != m ? m : y,
-      imageClassName: h ? p.fadeInAvatarImg : true,
-      className: i()(p.avatar, {
-        [p.avatarPurchased]: f && !h
+    }({}, b), r = r = {
+      avatarDecoration: P,
+      src: p ? null == d ? true : d.getAvatarURL(true, 152, true) : null != m ? m : w,
+      imageClassName: p ? f.fadeInAvatarImg : true,
+      className: i()(f.avatar, {
+        [f.avatarPurchased]: h && !p
       }),
-      size: v,
-      "aria-label": C
+      size: g,
+      "aria-label": O
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var n = Object.getOwnPropertySymbols(e);
-        r.push.apply(r, n)
+        var a = Object.getOwnPropertySymbols(e);
+        r.push.apply(r, a)
       }
       return r
     })(Object(r)).forEach(function(e) {

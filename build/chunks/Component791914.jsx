@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 791914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => v
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -21,27 +21,27 @@ var Chunk399606 = require("./399606.js"),
   Chunk946443 = require("./946443.jsx"),
   Chunk264233 = require("./264233.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk808934 = require("./808934.js");
+  Chunk407067 = require("./407067.js");
 
-function C(e) {
+function v(e) {
   let {
     tab: t,
     setTab: n,
-    badgeState: f,
+    badgeState: h,
     closePopout: m
   } = e, {
     enabled: b,
     inInbox: O
   } = d.Z.useExperiment({
     location: "RecentsPopout"
-  }), C = (0, p.Us)({
+  }), v = (0, f.Us)({
     location: "RecentsHeader"
   }), {
-    enabled: j
+    enabled: C
   } = u.Z.useExperiment({
     location: "RecentsHeader"
-  }), E = (0, i.e7)([c.Z], () => c.Z.getUnseenInviteCount()), S = (0, i.e7)([h.Z], () => h.Z.getOverdueMessageReminderCount());
-  return (0, r.jsxs)(s.h4, {
+  }), E = (0, i.e7)([c.Z], () => c.Z.getUnseenInviteCount()), x = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount());
+  return (0, r.jsxs)(a.h4, {
     className: y.header,
     children: [(0, r.jsxs)("div", {
       className: y.headerTitle,
@@ -61,7 +61,7 @@ function C(e) {
           enabled: false
         },
         "aria-label": _.intl.string(_.t["8k+6QU"]),
-        children: [(0, r.jsx)(v, {
+        children: [(0, r.jsx)(j, {
           tab: t
         }), (0, r.jsx)(g.Z, {
           closePopout: m
@@ -79,8 +79,8 @@ function C(e) {
           id: l.X.FOR_YOU,
           "aria-label": _.intl.string(_.t["En+D+v"]),
           className: y.tab,
-          children: [_.intl.string(_.t["En+D+v"]), (null == f ? true : f.badgeForYou) ? (0, r.jsx)(o.fWl, {
-            color: a.Z.STATUS_DANGER,
+          children: [_.intl.string(_.t["En+D+v"]), (null == h ? true : h.badgeForYou) ? (0, r.jsx)(o.fWl, {
+            color: s.Z.STATUS_DANGER,
             className: y.iconBadge
           }) : null]
         }), (0, r.jsx)(o.njP.Item, {
@@ -92,22 +92,22 @@ function C(e) {
           id: l.X.MENTIONS,
           className: y.tab,
           children: _.intl.string(_.t["GRZF9/"])
-        }), j ? (0, r.jsxs)(o.njP.Item, {
+        }), C ? (0, r.jsxs)(o.njP.Item, {
           "aria-label": "game_invites",
           id: l.X.GAME_INVITES,
           className: y.tab,
           children: [_.intl.string(_.t.apq3cX), E > 0 ? (0, r.jsx)(o.fWl, {
-            color: a.Z.STATUS_DANGER,
+            color: s.Z.STATUS_DANGER,
             className: y.iconBadge
           }) : null]
         }) : null, b && O ? (0, r.jsx)(o.njP.Item, {
           "aria-label": _.intl.string(_.t["2pAkDA"]),
           id: l.X.BOOKMARKS,
           className: y.tab,
-          children: 0 === S ? _.intl.string(_.t["2pAkDA"]) : _.intl.formatToPlainString(_.t.I4fryM, {
-            count: S
+          children: 0 === x ? _.intl.string(_.t["2pAkDA"]) : _.intl.formatToPlainString(_.t.I4fryM, {
+            count: x
           })
-        }) : null, C ? (0, r.jsx)(o.njP.Item, {
+        }) : null, v ? (0, r.jsx)(o.njP.Item, {
           "aria-label": "scheduled",
           id: l.X.SCHEDULED,
           className: y.tab,
@@ -118,9 +118,9 @@ function C(e) {
   })
 }
 
-function v(e) {
+function j(e) {
   let {
     tab: t
   } = e;
-  return t === l.X.FOR_YOU ? (0, r.jsx)(f.Gp, {}) : t === l.X.UNREADS ? (0, r.jsx)(b.QP, {}) : t === l.X.MENTIONS ? (0, r.jsx)(m.Z, {}) : t === l.X.GAME_INVITES ? (0, r.jsx)(O.S, {}) : null
+  return t === l.X.FOR_YOU ? (0, r.jsx)(h.Gp, {}) : t === l.X.UNREADS ? (0, r.jsx)(b.QP, {}) : t === l.X.MENTIONS ? (0, r.jsx)(m.Z, {}) : t === l.X.GAME_INVITES ? (0, r.jsx)(O.S, {}) : null
 }

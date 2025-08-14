@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 147522, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -11,36 +11,36 @@ var Chunk392711 = require("./392711.js"),
   Chunk289481 = require("./289481.jsx"),
   Chunk809780 = require("./809780.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk551335 = require("./551335.js");
+  Chunk803205 = require("./803205.js");
 
 function d(e, t, n) {
   let {
     markChannelRead: i,
     markGuildRead: d,
-    deleteChannel: h,
-    toggle: p,
-    getNumUnreadChannels: f
+    deleteChannel: p,
+    toggle: f,
+    getNumUnreadChannels: h
   } = t, g = null;
   return l().flatMap(e, e => {
     let t = e.sortOrder !== g;
     g = e.sortOrder;
     let l = [];
-    return t && (e.hasLoadedAnything && e.sortOrder === a.As.ReallyOldChannel ? l.push((0, r.jsx)(o.Z, {
+    return t && (e.hasLoadedAnything && e.sortOrder === s.As.ReallyOldChannel ? l.push((0, r.jsx)(o.Z, {
       className: u.divider,
       contentClassName: u.dividerContent,
       children: c.intl.string(c.t.roBMzs)
-    }, "old-divider")) : e.hasLoadedAnything && e.sortOrder === a.As.NoNotifications && l.push((0, r.jsx)(o.Z, {
+    }, "old-divider")) : e.hasLoadedAnything && e.sortOrder === s.As.NoNotifications && l.push((0, r.jsx)(o.Z, {
       className: u.divider,
       contentClassName: u.dividerContent,
       children: c.intl.string(c.t["2Ys7np"])
-    }, "disabled-divider"))), l.push((0, r.jsx)(s.Z, {
+    }, "disabled-divider"))), l.push((0, r.jsx)(a.Z, {
       channel: e,
       markChannelRead: i,
       markGuildRead: d,
-      toggle: p,
-      deleteChannel: h,
+      toggle: f,
+      deleteChannel: p,
       onJump: n,
-      getNumUnreadChannels: f
+      getNumUnreadChannels: h
     }, e.channelId)), l
   })
 }

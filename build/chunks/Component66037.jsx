@@ -54,26 +54,28 @@ class o extends Chunk73800.Component {
     })
   }
   constructor(...e) {
-    var t, a;
-    super(...e), t = "handleOnClick", a = () => {
-      let {
-        to: e,
-        avoidRouter: t,
-        onClick: a,
-        history: n
-      } = this.props;
-      if (null != a) a();
-      else if (t) {
-        let t = "string" == typeof e ? (0, s.ob)(e, null, true, n.location) : e,
-          a = n.createHref(t);
-        window.location = a
-      }
-    }, t in this ? Object.defineProperty(this, t, {
-      value: a,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[t] = a
+    super(...e),
+      function(e, t, a) {
+        t in e ? Object.defineProperty(e, t, {
+          value: a,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = a
+      }(this, "handleOnClick", () => {
+        let {
+          to: e,
+          avoidRouter: t,
+          onClick: a,
+          history: n
+        } = this.props;
+        if (null != a) a();
+        else if (t) {
+          let t = "string" == typeof e ? (0, s.ob)(e, null, true, n.location) : e,
+            a = n.createHref(t);
+          window.location = a
+        }
+      })
   }
 }
 let c = (0, Chunk764110.EN)(o)

@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 620304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -23,11 +23,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk495804 = require("./495804.js"),
   Chunk441536 = require("./441536.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk93841 = require("./93841.js"),
+  Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk263977 = require("./263977.js");
+  Chunk931942 = require("./931942.js");
 
-function x(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function x(e) {
   return e
 }
 
-function I(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,13 +59,13 @@ function I(e, t) {
   }), e
 }
 
-function P(e) {
+function I(e) {
   let {
     guild: t,
     tooltipTypes: l,
-    withMargin: P
+    withMargin: I
   } = e, N = (0, y.Z)(t, "GuildPowerupsProgressBar"), w = (0, _.Z)(t.id), Z = i.useCallback(() => {
-    (0, C.Z)(t.id, p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
+    (0, v.Z)(t.id, f.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
   }, [t.id]), T = (0, c.e7)([m.Z], () => {
     var e;
     return null != (e = m.Z.getCountForGuild(t.id)) ? e : 0
@@ -89,8 +89,8 @@ function P(e) {
   }, [A, D]);
   let L = T >= N,
     M = i.useRef(null),
-    [k, U] = (0, f.US)(l),
-    G = e => (0, r.jsx)(d.P3F, I(x({}, e), {
+    [k, U] = (0, h.US)(l),
+    G = e => (0, r.jsx)(d.P3F, P(S({}, e), {
       "aria-label": true,
       role: "button",
       focusProps: {
@@ -103,49 +103,49 @@ function P(e) {
         var t;
         null == e || null == (t = e.onClick) || t.call(e), Z()
       },
-      className: o()(S.container, {
-        [S.containerWithMargin]: P
+      className: o()(x.container, {
+        [x.containerWithMargin]: I
       }),
       onContextMenu: e => {
-        w && (0, h.jW)(e, async () => {
+        w && (0, p.jW)(e, async () => {
           let {
             default: e
           } = await n.e("8570").then(n.bind(n, 651138));
-          return n => (0, r.jsx)(e, I(x({}, n), {
+          return n => (0, r.jsx)(e, P(S({}, n), {
             guild: t
           }))
         })
       },
       children: (0, r.jsxs)("div", {
-        className: S.contentContainer,
+        className: x.contentContainer,
         children: [(0, r.jsx)("div", {
-          className: S.progressContainer
-        }), (0, r.jsx)(s.animated.div, {
-          className: o()(S.progress, {
-            [S.progressLow]: A <= 5
+          className: x.progressContainer
+        }), (0, r.jsx)(a.animated.div, {
+          className: o()(x.progress, {
+            [x.progressLow]: A <= 5
           }),
           style: R
         }), (0, r.jsxs)("div", {
-          className: S.textContainer,
+          className: x.textContainer,
           children: [(0, r.jsxs)("div", {
-            className: S.textContentContainer,
-            children: [(0, r.jsx)(a.xv, {
-              className: S.text,
+            className: x.textContentContainer,
+            children: [(0, r.jsx)(s.xv, {
+              className: x.text,
               variant: "text-xs/semibold",
-              children: E.intl.string(j.default.NI6IhY)
-            }), t.premiumSubscriberCount >= N && (0, r.jsx)(a.xv, {
-              className: S.text,
+              children: E.intl.string(C.default.NI6IhY)
+            }), t.premiumSubscriberCount >= N && (0, r.jsx)(s.xv, {
+              className: x.text,
               variant: "text-xs/semibold",
               children: "\uD83C\uDF89"
             })]
           }), (0, r.jsxs)("div", {
-            className: S.textContentContainer,
-            children: [(0, r.jsx)(a.xv, {
-              className: o()(S.text, S.boostCountText),
+            className: x.textContentContainer,
+            children: [(0, r.jsx)(s.xv, {
+              className: o()(x.text, x.boostCountText),
               variant: "text-xs/semibold",
-              children: L ? E.intl.formatToPlainString(j.default["Ehpq+/"], {
+              children: L ? E.intl.formatToPlainString(C.default["Ehpq+/"], {
                 appliedBoostCount: T
-              }) : E.intl.formatToPlainString(j.default["/rbPDg"], {
+              }) : E.intl.formatToPlainString(C.default["/rbPDg"], {
                 appliedBoostCount: T,
                 maxBoostCount: N
               })
@@ -153,7 +153,7 @@ function P(e) {
               width: 12,
               height: 12,
               direction: b.Z.Directions.RIGHT,
-              className: o()(S.text, S.boostCountText)
+              className: o()(x.text, x.boostCountText)
             })]
           })]
         })]
@@ -169,7 +169,7 @@ function P(e) {
     align: "top",
     shouldShow: true,
     closeOnScroll: true,
-    onRequestClose: () => U(v.L.INDIRECT_ACTION),
+    onRequestClose: () => U(j.L.INDIRECT_ACTION),
     animation: d.yRy.Animation.TRANSLATE,
     children: e => (0, r.jsx)("div", {
       ref: M,
@@ -184,7 +184,7 @@ function N(e) {
     tooltipTypes: n,
     withMargin: i
   } = e;
-  return (0, r.jsx)(P, {
+  return (0, r.jsx)(I, {
     guild: t,
     tooltipTypes: n,
     withMargin: i

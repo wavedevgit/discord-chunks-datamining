@@ -1,9 +1,9 @@
-/** Chunk was on 70119 **/
+/** Chunk was on 84691 **/
 /** chunk id: 426171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Kp: () => _,
+  Kp: () => O,
   u9: () => j,
-  xV: () => w
+  xV: () => _
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk114858 = require("./114858.js"),
@@ -31,70 +31,69 @@ let b = "".concat("#").concat("itemSkuId", "="),
       }
     }, [e, t.pathname])
   },
-  O = e => {
-    let {
-      productSkuId: t,
-      analyticsLocations: n,
-      analyticsSource: r,
-      tab: i
-    } = e, a = u.Z.getProduct(t), l = u.Z.getCategoryForProduct(t);
-    if (null != a && null != l) {
-      let e = a,
-        s = (0, h.oQ)({
-          product: a
-        }),
-        c = document.getElementById("shop-item-".concat(e.skuId));
-      if (c !== document.activeElement && (null == c || c.focus()), null != a.variantGroupStoreListingId) {
-        let n = u.Z.getProductByStoreListingId(a.variantGroupStoreListingId);
-        if (null != n) {
-          var o;
-          e = n;
-          let r = null == (o = n.variants) ? true : o.findIndex(e => e.skuId === t);
-          null != r && r > false && (0, m.$)(n, r)
-        }
-      }(0, p.T)({
-        product: e,
-        category: l,
-        analyticsSource: r,
-        analyticsLocations: n,
-        tab: i,
-        shouldCheckoutWithOrbs: s
-      })
-    }
-  },
-  _ = () => {
+  O = () => {
     let e = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.getLayers().includes(Chunk981631.S9g.COLLECTIBLES_SHOP)),
       t = (0, Chunk258939.R)(),
       n = Chunk73800.useRef(null),
       l = (0, Chunk114858.TH)(),
-      u = Chunk607070.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP ? Chunk100527.Z.HOME_PAGE_SHOP_TAB : Chunk607070.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? Chunk100527.Z.COLLECTIBLES_SHOP_FULLSCREEN : Chunk100527.Z.COLLECTIBLES_SHOP,
+      b = Chunk607070.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP ? Chunk100527.Z.HOME_PAGE_SHOP_TAB : Chunk607070.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? Chunk100527.Z.COLLECTIBLES_SHOP_FULLSCREEN : Chunk100527.Z.COLLECTIBLES_SHOP,
       {
-        analyticsLocations: m
-      } = (0, Chunk906732.ZP)(Chunk597688),
-      p = (0, Chunk410127.Z)();
+        analyticsLocations: x
+      } = (0, Chunk906732.ZP)(b),
+      j = (0, Chunk410127.Z)();
     Chunk73800.useEffect(() => {
       if (module) return;
       let t = g.exec(Chunk607070.hash);
       null != exports ? require.current = exports[1] : require.current = null
-    }, [Chunk237031, module, Chunk607070.hash]);
-    let h = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
+    }, [j, module, Chunk607070.hash]);
+    let O = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
     Chunk73800.useEffect(() => {
       if (exports) return;
       let r = null;
-      if (null != (r = module ? Chunk956472 : require.current)) {
+      if (null != (r = module ? O : require.current)) {
         let e = setTimeout(() => {
-          O({
+          (e => {
+            let {
+              productSkuId: t,
+              analyticsLocations: n,
+              analyticsSource: r,
+              tab: i
+            } = e, a = u.Z.getProduct(t), l = u.Z.getCategoryForProduct(t);
+            if (null != a && null != l) {
+              let e = a,
+                s = (0, h.oQ)({
+                  product: a
+                }),
+                c = document.getElementById("shop-item-".concat(e.skuId));
+              if (c !== document.activeElement && (null == c || c.focus()), null != a.variantGroupStoreListingId) {
+                let n = u.Z.getProductByStoreListingId(a.variantGroupStoreListingId);
+                if (null != n) {
+                  var o;
+                  e = n;
+                  let r = null == (o = n.variants) ? true : o.findIndex(e => e.skuId === t);
+                  null != r && r > false && (0, m.$)(n, r)
+                }
+              }(0, p.T)({
+                product: e,
+                category: l,
+                analyticsSource: r,
+                analyticsLocations: n,
+                tab: i,
+                shouldCheckoutWithOrbs: s
+              })
+            }
+          })({
             productSkuId: Chunk73800,
-            analyticsLocations: Chunk429368,
-            analyticsSource: Chunk597688,
-            tab: Chunk237031
+            analyticsLocations: x,
+            analyticsSource: b,
+            tab: j
           })
         }, 250);
         return () => clearTimeout(module)
       }
-    }, [module, Chunk429368, Chunk597688, exports, Chunk956472, Chunk237031])
+    }, [module, x, b, exports, O, j])
   },
-  w = e => {
+  _ = e => {
     let t = r.useRef({}),
       n = (0, a.e7)([l.Z], () => l.Z.useReducedMotion),
       i = (0, a.e7)([u.Z], () => u.Z.isFetchingCategories),

@@ -1,7 +1,7 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 495892, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => T
 }), require("./539854.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk295708 = require("./295708.jsx"),
   Chunk273504 = require("./273504.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk558009 = require("./558009.js");
+  Chunk260107 = require("./260107.js");
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -79,13 +79,10 @@ function O(e) {
     children: l
   })
 }
-let y = (e, t) => () => t(_(v({}, e), {
-    enabled: !e.enabled
-  })),
-  C = e => {
+let y = e => {
     e.stopPropagation(), e.preventDefault()
   },
-  N = e => {
+  C = e => {
     var {
       className: t,
       children: n
@@ -106,22 +103,24 @@ let y = (e, t) => () => t(_(v({}, e), {
     }(e, ["className", "children"]);
     return (0, r.jsx)(a.P3F, _(v({
       className: t,
-      onClick: C,
-      onMouseDown: C,
-      onMouseUp: C
+      onClick: y,
+      onMouseDown: y,
+      onMouseUp: y
     }, i), {
       children: n
     }))
   };
 
-function I(e) {
+function N(e) {
   var t;
   let {
     rule: n,
     onChangeRule: i,
     onContextMenu: l
-  } = e, s = y(n, i), o = e => {
-    C(e), l(e)
+  } = e, s = () => i(_(v({}, n), {
+    enabled: !n.enabled
+  })), o = e => {
+    y(e), l(e)
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
@@ -130,7 +129,7 @@ function I(e) {
         rule: n,
         onChangeRule: i
       })
-    }), (0, r.jsxs)(N, {
+    }), (0, r.jsxs)(C, {
       className: j.actionContainer,
       children: [(0, r.jsx)(a.rsf, {
         className: j.toggle,
@@ -154,7 +153,7 @@ function I(e) {
   })
 }
 
-function E(e) {
+function I(e) {
   return (0, m.r5)(e, m.vT.ALPHA) ? (0, r.jsx)(o.Z, {
     className: j.alphaBetaTag
   }) : (0, m.r5)(e, m.vT.BETA) ? (0, r.jsx)(c.Z, {
@@ -162,7 +161,7 @@ function E(e) {
   }) : null
 }
 
-function S(e) {
+function E(e) {
   let {
     rule: t,
     isDefaultRule: n,
@@ -172,7 +171,7 @@ function S(e) {
     saveRule: m
   } = (0, g.w)(), {
     updateRule: h
-  } = (0, u.pH)(t.guildId), [f, b] = i.useState(t.enabled), y = (0, l.throttle)(async (e, n) => {
+  } = (0, u.pH)(t.guildId), [f, b] = i.useState(t.enabled), N = (0, l.throttle)(async (e, n) => {
     if (n.preventDefault(), n.stopPropagation(), !c) {
       let e = _(v({}, t), {
         enabled: !f
@@ -181,8 +180,8 @@ function S(e) {
       let n = await m(e, []);
       null != n && (h(n), b(n.enabled))
     }
-  }, 300), I = e => {
-    C(e), s(e)
+  }, 300), E = e => {
+    y(e), s(e)
   };
   if (null == o) return null;
   let {
@@ -207,7 +206,7 @@ function S(e) {
         className: j.ruleTextHeaderContainer,
         children: [(0, r.jsxs)("div", {
           className: j.ruleTextHeader,
-          children: [S, E(t.triggerType)]
+          children: [S, I(t.triggerType)]
         }), (0, r.jsx)(a.Text, {
           className: j.ruleSubtextHeader,
           variant: "text-sm/normal",
@@ -221,18 +220,18 @@ function S(e) {
         rule: t,
         triggerType: t.triggerType
       })]
-    }), (0, r.jsxs)(N, {
+    }), (0, r.jsxs)(C, {
       className: j.actionContainer,
       children: [(0, r.jsx)(a.rsf, {
         className: j.toggle,
-        onChange: y,
+        onChange: N,
         checked: null != f && f
       }), !n && (0, r.jsx)(a.ua7, {
         text: x.intl.string(x.t.UKOtz8),
         position: "top",
         "aria-label": x.intl.string(x.t.PdRCRk),
         children: e => (0, r.jsx)(a.P3F, _(v({}, e), {
-          onClick: I,
+          onClick: E,
           className: j.menuIconButton,
           children: (0, r.jsx)(a.Huf, {
             size: "md",
@@ -245,7 +244,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     triggerType: t,
     onSetupRule: n
@@ -272,7 +271,7 @@ function T(e) {
         color: "header-primary",
         children: (0, r.jsxs)("div", {
           className: j.ruleTextHeader,
-          children: [s, E(t)]
+          children: [s, I(t)]
         })
       }), (0, r.jsx)(a.Text, {
         className: j.ruleTextDescription,
@@ -281,7 +280,7 @@ function T(e) {
       }), (0, r.jsx)(O, {
         triggerType: t
       })]
-    }), (0, r.jsx)(N, {
+    }), (0, r.jsx)(C, {
       className: j.actionContainer,
       children: (0, r.jsx)(a.zxk, {
         variant: "primary",
@@ -293,7 +292,7 @@ function T(e) {
   })
 }
 
-function P(e) {
+function T(e) {
   let {
     rule: t,
     triggerType: i,
@@ -311,15 +310,15 @@ function P(e) {
         rule: t
       }, n))
     }))
-  }, g = (0, r.jsx)(T, {
+  }, g = (0, r.jsx)(S, {
     triggerType: i,
     onSetupRule: d
   });
-  return null == t || c || (g = l ? (0, r.jsx)(I, {
+  return null == t || c || (g = l ? (0, r.jsx)(N, {
     rule: t,
     onChangeRule: u,
     onContextMenu: m
-  }) : (0, r.jsx)(S, {
+  }) : (0, r.jsx)(E, {
     rule: t,
     isDefaultRule: o,
     onContextMenu: m

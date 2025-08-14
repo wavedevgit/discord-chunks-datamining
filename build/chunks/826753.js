@@ -59,7 +59,7 @@ module.exports = function() {
         }, t.validate = function(r) {
           var n = arguments[arguments.length - 1],
             o = "function" == typeof n ? n : null,
-            i = arguments.length - +!!o;
+            i = arguments.length - !!o;
           if (1 === i) return e.validate(r, o);
           var s = 3 === i ? arguments[2] : {},
             a = t.compile(arguments[1]);
@@ -1046,7 +1046,7 @@ module.exports = function() {
           var i = 0,
             s = 1,
             a = 0;
-          for (this[t] = 255 & e; ++i < r && (s *= 256);) e < 0 && 0 === a && 0 !== this[t + i - 1] && (a = 1), this[t + i] = (e / s >> 0) - a & 255;
+          for (this[t] = 255 & e; ++i < r && (s *= 256);) e < 0 && 0 === a && 0 !== this[t + i - 1] && (a = 1), this[t + i] = (e / s | 0) - a & 255;
           return t + r
         }, c.prototype.writeIntBE = function(e, t, r, n) {
           if (e *= 1, t |= 0, !n) {
@@ -1056,7 +1056,7 @@ module.exports = function() {
           var i = r - 1,
             s = 1,
             a = 0;
-          for (this[t + i] = 255 & e; --i >= 0 && (s *= 256);) e < 0 && 0 === a && 0 !== this[t + i + 1] && (a = 1), this[t + i] = (e / s >> 0) - a & 255;
+          for (this[t + i] = 255 & e; --i >= 0 && (s *= 256);) e < 0 && 0 === a && 0 !== this[t + i + 1] && (a = 1), this[t + i] = (e / s | 0) - a & 255;
           return t + r
         }, c.prototype.writeInt8 = function(e, t, r) {
           return e *= 1, t |= 0, r || w(this, e, t, 1, 127, false), c.TYPED_ARRAY_SUPPORT || (e = Math.floor(e)), e < 0 && (e = 255 + e + 1), this[t] = 255 & e, t + 1
@@ -2144,24 +2144,22 @@ module.exports = function() {
               } else h["_$miss$_" + g + "|" + l + "_$end$_"] = "__missing__"
             }
           }
-        var w = {
-            key: /_\$key\$_([, \d]+)_\$end\$_\"/g,
-            missing: /\"_\$miss\$_([^\|]+)\|(\d+)_\$end\$_\"\: \"__missing__\"/g,
-            arrayIndex: /\s*\"_\$idx\$_([, \d]+)_\$end\$_\",?\n(.*)/g,
-            specials: /"\[(NaN|Symbol.*|-?Infinity|function.*|\(.*)\]"/g
-          },
-          E = s.safeStringify(a, 2).replace(w.key, function(e, r) {
+        var w = /_\$key\$_([, \d]+)_\$end\$_\"/g,
+          E = /\"_\$miss\$_([^\|]+)\|(\d+)_\$end\$_\"\: \"__missing__\"/g,
+          x = /\s*\"_\$idx\$_([, \d]+)_\$end\$_\",?\n(.*)/g,
+          j = /"\[(NaN|Symbol.*|-?Infinity|function.*|\(.*)\]"/g,
+          O = s.safeStringify(a, 2).replace(w, function(e, r) {
             return '" ' + t + "[" + r + "]" + i
-          }).replace(w.missing, function(e, n, o) {
+          }).replace(E, function(e, n, o) {
             return r + '"' + n + '"' + i + t + " [" + o + "]: -- missing --" + i
-          }).replace(w.arrayIndex, function(e, r, n) {
+          }).replace(x, function(e, r, n) {
             return "\n" + n + " " + t + "[" + r + "]" + i
-          }).replace(w.specials, function(e, t) {
+          }).replace(j, function(e, t) {
             return t
           });
-        E = E + "\n" + t;
-        for (var x = 0; x < this.details.length; ++x) E = E + "\n[" + (x + 1) + "] " + this.details[x].message;
-        return E + i
+        O = O + "\n" + t;
+        for (var k = 0; k < this.details.length; ++k) O = O + "\n[" + (k + 1) + "] " + this.details[k].message;
+        return O + i
       }
     }, function(e, t) {
       "use strict";
@@ -2548,7 +2546,7 @@ module.exports = function() {
               pattern: new RegExp(e.source, e.ignoreCase ? "i" : true)
             };
             "string" == typeof t ? r.name = t : (true === t ? "undefined" : n(t)) === "object" && (r.invert = !!t.invert, t.name && (r.name = t.name));
-            var o = ["string.regex", r.invert ? ".invert" : "", r.name ? ".name" : ".base"].join("");
+            var o = "string.regex" + (r.invert ? ".invert" : "") + (r.name ? ".name" : ".base");
             return this._test("regex", r, function(e, t, n) {
               return r.pattern.test(e) ^ r.invert ? e : this.createError(o, {
                 name: r.name,
@@ -2861,7 +2859,7 @@ module.exports = function() {
             if ("string" == typeof t.tldBlacklist) t.tldBlacklist = [t.tldBlacklist];
             else if ("object" !== n(t.tldBlacklist)) throw TypeError("expected array or object tldBlacklist")
           }
-          if (t.minDomainAtoms && (t.minDomainAtoms !== (0 | +t.minDomainAtoms) || t.minDomainAtoms < 0)) throw TypeError("expected positive integer minDomainAtoms");
+          if (t.minDomainAtoms && (t.minDomainAtoms !== (0 | t.minDomainAtoms) || t.minDomainAtoms < 0)) throw TypeError("expected positive integer minDomainAtoms");
           for (var u = i.diagnoses.valid, l = function(e) {
               e > u && (u = e)
             }, f = {
@@ -2871,37 +2869,34 @@ module.exports = function() {
             }, p = "", h = {
               local: "",
               domain: ""
-            }, d = {
-              locals: [""],
-              domains: [""]
-            }, g = 0, y = 0, v = 0, m = true, b = false, _ = false, w = e.length, E = true, x = 0; x < w; ++x) {
-            switch (E = e[x], f.now) {
+            }, d = [""], g = [""], y = 0, v = 0, m = 0, b = true, _ = false, w = false, E = e.length, x = true, j = 0; j < E; ++j) {
+            switch (x = e[j], f.now) {
               case i.components.localpart:
-                switch (E) {
+                switch (x) {
                   case "(":
-                    0 === y ? l(0 === g ? i.diagnoses.cfwsComment : i.diagnoses.deprecatedComment) : (l(i.diagnoses.cfwsComment), _ = true), f.stack.push(f.now), f.now = i.components.contextComment;
+                    0 === v ? l(0 === y ? i.diagnoses.cfwsComment : i.diagnoses.deprecatedComment) : (l(i.diagnoses.cfwsComment), w = true), f.stack.push(f.now), f.now = i.components.contextComment;
                     break;
                   case ".":
-                    0 === y ? l(0 === g ? i.diagnoses.errDotStart : i.diagnoses.errConsecutiveDots) : (_ && l(i.diagnoses.deprecatedLocalPart), _ = false, y = 0, ++g, h.local += E, d.locals[g] = "");
+                    0 === v ? l(0 === y ? i.diagnoses.errDotStart : i.diagnoses.errConsecutiveDots) : (w && l(i.diagnoses.deprecatedLocalPart), w = false, v = 0, ++y, h.local += x, d[y] = "");
                     break;
                   case '"':
-                    0 === y ? (l(0 === g ? i.diagnoses.rfc5321QuotedString : i.diagnoses.deprecatedLocalPart), h.local += E, d.locals[g] += E, ++y, _ = true, f.stack.push(f.now), f.now = i.components.contextQuotedString) : l(i.diagnoses.errExpectingATEXT);
+                    0 === v ? (l(0 === y ? i.diagnoses.rfc5321QuotedString : i.diagnoses.deprecatedLocalPart), h.local += x, d[y] += x, ++v, w = true, f.stack.push(f.now), f.now = i.components.contextQuotedString) : l(i.diagnoses.errExpectingATEXT);
                     break;
                   case "\r":
-                    if (w === ++x || "\n" !== e[x]) {
+                    if (E === ++j || "\n" !== e[j]) {
                       l(i.diagnoses.errCRNoLF);
                       break
                     }
                   case " ":
                   case "	":
-                    0 === y ? l(0 === g ? i.diagnoses.cfwsFWS : i.diagnoses.deprecatedFWS) : _ = true, f.stack.push(f.now), f.now = i.components.contextFWS, p = E;
+                    0 === v ? l(0 === y ? i.diagnoses.cfwsFWS : i.diagnoses.deprecatedFWS) : w = true, f.stack.push(f.now), f.now = i.components.contextFWS, p = x;
                     break;
                   case "@":
                     if (1 !== f.stack.length) throw Error("unexpected item on context stack");
-                    0 === h.local.length ? l(i.diagnoses.errNoLocalPart) : 0 === y ? l(i.diagnoses.errDotEnd) : h.local.length > 64 ? l(i.diagnoses.rfc5322LocalTooLong) : (f.prev === i.components.contextComment || f.prev === i.components.contextFWS) && l(i.diagnoses.deprecatedCFWSNearAt), f.now = i.components.domain, f.stack[0] = i.components.domain, g = 0, y = 0, _ = false;
+                    0 === h.local.length ? l(i.diagnoses.errNoLocalPart) : 0 === v ? l(i.diagnoses.errDotEnd) : h.local.length > 64 ? l(i.diagnoses.rfc5322LocalTooLong) : (f.prev === i.components.contextComment || f.prev === i.components.contextFWS) && l(i.diagnoses.deprecatedCFWSNearAt), f.now = i.components.domain, f.stack[0] = i.components.domain, y = 0, v = 0, w = false;
                     break;
                   default:
-                    if (_) switch (f.prev) {
+                    if (w) switch (f.prev) {
                       case i.components.contextComment:
                       case i.components.contextFWS:
                         l(i.diagnoses.errATEXTAfterCFWS);
@@ -2911,31 +2906,31 @@ module.exports = function() {
                         break;
                       default:
                         throw Error("more atext found where none is allowed, but unrecognized prev context: " + f.prev)
-                    } else f.prev = f.now, ((m = E.charCodeAt(0)) < 33 || m > 126 || i.specials(m)) && l(i.diagnoses.errExpectingATEXT), h.local += E, d.locals[g] += E, ++y
+                    } else f.prev = f.now, ((b = x.charCodeAt(0)) < 33 || b > 126 || i.specials(b)) && l(i.diagnoses.errExpectingATEXT), h.local += x, d[y] += x, ++v
                 }
                 break;
               case i.components.domain:
-                switch (E) {
+                switch (x) {
                   case "(":
-                    0 === y ? l(0 === g ? i.diagnoses.deprecatedCFWSNearAt : i.diagnoses.deprecatedComment) : (_ = true, l(i.diagnoses.cfwsComment)), f.stack.push(f.now), f.now = i.components.contextComment;
+                    0 === v ? l(0 === y ? i.diagnoses.deprecatedCFWSNearAt : i.diagnoses.deprecatedComment) : (w = true, l(i.diagnoses.cfwsComment)), f.stack.push(f.now), f.now = i.components.contextComment;
                     break;
                   case ".":
-                    0 === y ? l(0 === g ? i.diagnoses.errDotStart : i.diagnoses.errConsecutiveDots) : b ? l(i.diagnoses.errDomainHyphenEnd) : y > 63 && l(i.diagnoses.rfc5322LabelTooLong), _ = false, y = 0, ++g, d.domains[g] = "", h.domain += E;
+                    0 === v ? l(0 === y ? i.diagnoses.errDotStart : i.diagnoses.errConsecutiveDots) : _ ? l(i.diagnoses.errDomainHyphenEnd) : v > 63 && l(i.diagnoses.rfc5322LabelTooLong), w = false, v = 0, g[++y] = "", h.domain += x;
                     break;
                   case "[":
-                    0 === h.domain.length ? (_ = true, ++y, f.stack.push(f.now), f.now = i.components.literal, h.domain += E, d.domains[g] += E, h.literal = "") : l(i.diagnoses.errExpectingATEXT);
+                    0 === h.domain.length ? (w = true, ++v, f.stack.push(f.now), f.now = i.components.literal, h.domain += x, g[y] += x, h.literal = "") : l(i.diagnoses.errExpectingATEXT);
                     break;
                   case "\r":
-                    if (w === ++x || "\n" !== e[x]) {
+                    if (E === ++j || "\n" !== e[j]) {
                       l(i.diagnoses.errCRNoLF);
                       break
                     }
                   case " ":
                   case "	":
-                    0 === y ? l(0 === g ? i.diagnoses.deprecatedCFWSNearAt : i.diagnoses.deprecatedFWS) : (l(i.diagnoses.cfwsFWS), _ = true), f.stack.push(f.now), f.now = i.components.contextFWS, p = E;
+                    0 === v ? l(0 === y ? i.diagnoses.deprecatedCFWSNearAt : i.diagnoses.deprecatedFWS) : (l(i.diagnoses.cfwsFWS), w = true), f.stack.push(f.now), f.now = i.components.contextFWS, p = x;
                     break;
                   default:
-                    if (_) switch (f.prev) {
+                    if (w) switch (f.prev) {
                       case i.components.contextComment:
                       case i.components.contextFWS:
                         l(i.diagnoses.errATEXTAfterCFWS);
@@ -2946,82 +2941,82 @@ module.exports = function() {
                       default:
                         throw Error("more atext found where none is allowed, but unrecognized prev context: " + f.prev)
                     }
-                    m = E.charCodeAt(0), b = false, m < 33 || m > 126 || i.specials(m) ? l(i.diagnoses.errExpectingATEXT) : "-" === E ? (0 === y && l(i.diagnoses.errDomainHyphenStart), b = true) : (m < 48 || m > 122 || m > 57 && m < 65 || m > 90 && m < 97) && l(i.diagnoses.rfc5322Domain), h.domain += E, d.domains[g] += E, ++y
+                    b = x.charCodeAt(0), _ = false, b < 33 || b > 126 || i.specials(b) ? l(i.diagnoses.errExpectingATEXT) : "-" === x ? (0 === v && l(i.diagnoses.errDomainHyphenStart), _ = true) : (b < 48 || b > 122 || b > 57 && b < 65 || b > 90 && b < 97) && l(i.diagnoses.rfc5322Domain), h.domain += x, g[y] += x, ++v
                 }
                 break;
               case i.components.literal:
-                switch (E) {
+                switch (x) {
                   case "]":
                     if (u < i.categories.deprecated) {
-                      var j = false,
-                        O = h.literal,
-                        k = i.regex.ipV4.exec(O);
-                      if (k && 0 !== (j = k.index) && (O = O.slice(0, j) + "0:0"), 0 === j) l(i.diagnoses.rfc5321AddressLiteral);
-                      else if ("ipv6:" !== O.slice(0, 5).toLowerCase()) l(i.diagnoses.rfc5322DomainLiteral);
+                      var O = false,
+                        k = h.literal,
+                        S = i.regex.ipV4.exec(k);
+                      if (S && 0 !== (O = S.index) && (k = k.slice(0, O) + "0:0"), 0 === O) l(i.diagnoses.rfc5321AddressLiteral);
+                      else if ("ipv6:" !== k.slice(0, 5).toLowerCase()) l(i.diagnoses.rfc5322DomainLiteral);
                       else {
-                        var S = O.slice(5),
-                          A = i.maxIPv6Groups,
-                          T = S.split(":");
-                        ~(j = S.indexOf("::")) ? j !== S.lastIndexOf("::") ? l(i.diagnoses.rfc5322IPv62x2xColon) : ((0 === j || j === S.length - 2) && ++A, T.length > A ? l(i.diagnoses.rfc5322IPv6MaxGroups) : T.length === A && l(i.diagnoses.deprecatedIPv6)): T.length !== A && l(i.diagnoses.rfc5322IPv6GroupCount), ":" === S[0] && ":" !== S[1] ? l(i.diagnoses.rfc5322IPv6ColonStart) : ":" === S[S.length - 1] && ":" !== S[S.length - 2] ? l(i.diagnoses.rfc5322IPv6ColonEnd) : i.checkIpV6(T) ? l(i.diagnoses.rfc5321AddressLiteral) : l(i.diagnoses.rfc5322IPv6BadCharacter)
+                        var A = k.slice(5),
+                          T = i.maxIPv6Groups,
+                          P = A.split(":");
+                        ~(O = A.indexOf("::")) ? O !== A.lastIndexOf("::") ? l(i.diagnoses.rfc5322IPv62x2xColon) : ((0 === O || O === A.length - 2) && ++T, P.length > T ? l(i.diagnoses.rfc5322IPv6MaxGroups) : P.length === T && l(i.diagnoses.deprecatedIPv6)): P.length !== T && l(i.diagnoses.rfc5322IPv6GroupCount), ":" === A[0] && ":" !== A[1] ? l(i.diagnoses.rfc5322IPv6ColonStart) : ":" === A[A.length - 1] && ":" !== A[A.length - 2] ? l(i.diagnoses.rfc5322IPv6ColonEnd) : i.checkIpV6(P) ? l(i.diagnoses.rfc5321AddressLiteral) : l(i.diagnoses.rfc5322IPv6BadCharacter)
                       }
                     } else l(i.diagnoses.rfc5322DomainLiteral);
-                    h.domain += E, d.domains[g] += E, ++y, f.prev = f.now, f.now = f.stack.pop();
+                    h.domain += x, g[y] += x, ++v, f.prev = f.now, f.now = f.stack.pop();
                     break;
                   case "\\":
                     l(i.diagnoses.rfc5322DomainLiteralOBSDText), f.stack.push(f.now), f.now = i.components.contextQuotedPair;
                     break;
                   case "\r":
-                    if (w === ++x || "\n" !== e[x]) {
+                    if (E === ++j || "\n" !== e[j]) {
                       l(i.diagnoses.errCRNoLF);
                       break
                     }
                   case " ":
                   case "	":
-                    l(i.diagnoses.cfwsFWS), f.stack.push(f.now), f.now = i.components.contextFWS, p = E;
+                    l(i.diagnoses.cfwsFWS), f.stack.push(f.now), f.now = i.components.contextFWS, p = x;
                     break;
                   default:
-                    if ((m = E.charCodeAt(0)) > 127 || 0 === m || "[" === E) {
+                    if ((b = x.charCodeAt(0)) > 127 || 0 === b || "[" === x) {
                       l(i.diagnoses.errExpectingDTEXT);
                       break
-                    }(m < 33 || 127 === m) && l(i.diagnoses.rfc5322DomainLiteralOBSDText), h.literal += E, h.domain += E, d.domains[g] += E, ++y
+                    }(b < 33 || 127 === b) && l(i.diagnoses.rfc5322DomainLiteralOBSDText), h.literal += x, h.domain += x, g[y] += x, ++v
                 }
                 break;
               case i.components.contextQuotedString:
-                switch (E) {
+                switch (x) {
                   case "\\":
                     f.stack.push(f.now), f.now = i.components.contextQuotedPair;
                     break;
                   case "\r":
-                    if (w === ++x || "\n" !== e[x]) {
+                    if (E === ++j || "\n" !== e[j]) {
                       l(i.diagnoses.errCRNoLF);
                       break
                     }
                   case "	":
-                    h.local += " ", d.locals[g] += " ", ++y, l(i.diagnoses.cfwsFWS), f.stack.push(f.now), f.now = i.components.contextFWS, p = E;
+                    h.local += " ", d[y] += " ", ++v, l(i.diagnoses.cfwsFWS), f.stack.push(f.now), f.now = i.components.contextFWS, p = x;
                     break;
                   case '"':
-                    h.local += E, d.locals[g] += E, ++y, f.prev = f.now, f.now = f.stack.pop();
+                    h.local += x, d[y] += x, ++v, f.prev = f.now, f.now = f.stack.pop();
                     break;
                   default:
-                    (m = E.charCodeAt(0)) > 127 || 0 === m || 10 === m ? l(i.diagnoses.errExpectingQTEXT) : (m < 32 || 127 === m) && l(i.diagnoses.deprecatedQTEXT), h.local += E, d.locals[g] += E, ++y
+                    (b = x.charCodeAt(0)) > 127 || 0 === b || 10 === b ? l(i.diagnoses.errExpectingQTEXT) : (b < 32 || 127 === b) && l(i.diagnoses.deprecatedQTEXT), h.local += x, d[y] += x, ++v
                 }
                 break;
               case i.components.contextQuotedPair:
-                switch ((m = E.charCodeAt(0)) > 127 ? l(i.diagnoses.errExpectingQPair) : (m < 31 && 9 !== m || 127 === m) && l(i.diagnoses.deprecatedQP), f.prev = f.now, f.now = f.stack.pop(), E = "\\" + E, f.now) {
+                switch ((b = x.charCodeAt(0)) > 127 ? l(i.diagnoses.errExpectingQPair) : (b < 31 && 9 !== b || 127 === b) && l(i.diagnoses.deprecatedQP), f.prev = f.now, f.now = f.stack.pop(), x = "\\" + x, f.now) {
                   case i.components.contextComment:
                     break;
                   case i.components.contextQuotedString:
-                    h.local += E, d.locals[g] += E, y += 2;
+                    h.local += x, d[y] += x, v += 2;
                     break;
                   case i.components.literal:
-                    h.domain += E, d.domains[g] += E, y += 2;
+                    h.domain += x, g[y] += x, v += 2;
                     break;
                   default:
                     throw Error("quoted pair logic invoked in an invalid context: " + f.now)
                 }
                 break;
               case i.components.contextComment:
-                switch (E) {
+                switch (x) {
                   case "(":
                     f.stack.push(f.now), f.now = i.components.contextComment;
                     break;
@@ -3032,36 +3027,36 @@ module.exports = function() {
                     f.stack.push(f.now), f.now = i.components.contextQuotedPair;
                     break;
                   case "\r":
-                    if (w === ++x || "\n" !== e[x]) {
+                    if (E === ++j || "\n" !== e[j]) {
                       l(i.diagnoses.errCRNoLF);
                       break
                     }
                   case " ":
                   case "	":
-                    l(i.diagnoses.cfwsFWS), f.stack.push(f.now), f.now = i.components.contextFWS, p = E;
+                    l(i.diagnoses.cfwsFWS), f.stack.push(f.now), f.now = i.components.contextFWS, p = x;
                     break;
                   default:
-                    (m = E.charCodeAt(0)) > 127 || 0 === m || 10 === m ? l(i.diagnoses.errExpectingCTEXT) : (m < 32 || 127 === m) && l(i.diagnoses.deprecatedCTEXT)
+                    (b = x.charCodeAt(0)) > 127 || 0 === b || 10 === b ? l(i.diagnoses.errExpectingCTEXT) : (b < 32 || 127 === b) && l(i.diagnoses.deprecatedCTEXT)
                 }
                 break;
               case i.components.contextFWS:
                 if ("\r" === p) {
-                  if ("\r" === E) {
+                  if ("\r" === x) {
                     l(i.diagnoses.errFWSCRLFx2);
                     break
-                  }++v > 1 ? l(i.diagnoses.deprecatedFWS) : v = 1
+                  }++m > 1 ? l(i.diagnoses.deprecatedFWS) : m = 1
                 }
-                switch (E) {
+                switch (x) {
                   case "\r":
-                    (w === ++x || "\n" !== e[x]) && l(i.diagnoses.errCRNoLF);
+                    (E === ++j || "\n" !== e[j]) && l(i.diagnoses.errCRNoLF);
                     break;
                   case " ":
                   case "	":
                     break;
                   default:
-                    "\r" === p && l(i.diagnoses.errFWSCRLFEnd), v = 0, f.prev = f.now, f.now = f.stack.pop(), --x
+                    "\r" === p && l(i.diagnoses.errFWSCRLFEnd), m = 0, f.prev = f.now, f.now = f.stack.pop(), --j
                 }
-                p = E;
+                p = x;
                 break;
               default:
                 throw Error("unknown context: " + f.now)
@@ -3073,43 +3068,43 @@ module.exports = function() {
             else if (f.now === i.components.contextQuotedPair) l(i.diagnoses.errBackslashEnd);
             else if (f.now === i.components.contextComment) l(i.diagnoses.errUnclosedComment);
             else if (f.now === i.components.literal) l(i.diagnoses.errUnclosedDomainLiteral);
-            else if ("\r" === E) l(i.diagnoses.errFWSCRLFEnd);
+            else if ("\r" === x) l(i.diagnoses.errFWSCRLFEnd);
             else if (0 === h.domain.length) l(i.diagnoses.errNoDomain);
-            else if (0 === y) l(i.diagnoses.errDotEnd);
-            else if (b) l(i.diagnoses.errDomainHyphenEnd);
+            else if (0 === v) l(i.diagnoses.errDotEnd);
+            else if (_) l(i.diagnoses.errDomainHyphenEnd);
             else if (h.domain.length > 255) l(i.diagnoses.rfc5322DomainTooLong);
             else if (h.local.length + h.domain.length + 1 > 254) l(i.diagnoses.rfc5322TooLong);
-            else if (y > 63) l(i.diagnoses.rfc5322LabelTooLong);
-            else if (t.minDomainAtoms && d.domains.length < t.minDomainAtoms) l(i.diagnoses.errDomainTooShort);
+            else if (v > 63) l(i.diagnoses.rfc5322LabelTooLong);
+            else if (t.minDomainAtoms && g.length < t.minDomainAtoms) l(i.diagnoses.errDomainTooShort);
             else if (t.tldWhitelist || t.tldBlacklist) {
-              var P = d.domains[g];
-              i.validDomain(P, t) || l(i.diagnoses.errUnknownTLD)
+              var R = g[y];
+              i.validDomain(R, t) || l(i.diagnoses.errUnknownTLD)
             }
           }
-          var R = false,
-            D = false,
-            C = function() {
-              !R && u < i.categories.dnsWarn && (57 >= d.domains[g].charCodeAt(0) ? l(i.diagnoses.rfc5321TLDNumeric) : 0 === g && l(i.diagnoses.rfc5321TLD)), u < c && (u = i.diagnoses.valid);
+          var D = false,
+            C = false,
+            I = function() {
+              !D && u < i.categories.dnsWarn && (57 >= g[y].charCodeAt(0) ? l(i.diagnoses.rfc5321TLDNumeric) : 0 === y && l(i.diagnoses.rfc5321TLD)), u < c && (u = i.diagnoses.valid);
               var e = a ? u : u < i.defaultThreshold;
-              return r && (D ? r(e) : i.defer(r.bind(null, e))), e
+              return r && (C ? r(e) : i.defer(r.bind(null, e))), e
             };
-          if (t.checkDNS && u < i.categories.dnsWarn) 0 === g && (h.domain += "."), s = h.domain, o.resolveMx(s, function(e, t) {
-            if (e && e.code !== o.NODATA) return l(i.diagnoses.dnsWarnNoRecord), C();
-            if (t && t.length) return R = true, C();
+          if (t.checkDNS && u < i.categories.dnsWarn) 0 === y && (h.domain += "."), s = h.domain, o.resolveMx(s, function(e, t) {
+            if (e && e.code !== o.NODATA) return l(i.diagnoses.dnsWarnNoRecord), I();
+            if (t && t.length) return D = true, I();
             var r = 3,
               n = false;
             l(i.diagnoses.dnsWarnNoMXRecord);
             var a = function(e, t) {
               if (!n) {
-                if (--r, t && t.length) return n = true, C();
-                0 === r && (l(i.diagnoses.dnsWarnNoRecord), n = true, C())
+                if (--r, t && t.length) return n = true, I();
+                0 === r && (l(i.diagnoses.dnsWarnNoRecord), n = true, I())
               }
             };
             o.resolveCname(s, a), o.resolve4(s, a), o.resolve6(s, a)
-          }), D = true;
+          }), C = true;
           else {
-            var I = C();
-            return D = true, I
+            var L = I();
+            return C = true, L
           }
         }, t.diagnoses = i.validate.diagnoses = function() {
           for (var e = {}, t = Object.keys(i.diagnoses), r = 0; r < t.length; ++r) {

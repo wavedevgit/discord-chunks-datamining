@@ -10,11 +10,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk845077 = require("./845077.js"),
   Chunk118589 = require("./118589.js"),
   Chunk603700 = require("./603700.jsx"),
-  Chunk697498 = require("./697498.js"),
+  Chunk241945 = require("./241945.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk252834 = require("./252834.js");
+  Chunk104940 = require("./104940.js");
 let p = () => {
-  let [e, t] = Chunk73800.useState(null), [n, p] = Chunk73800.useState(true), [y, m] = Chunk73800.useState(null), [g, h] = Chunk73800.useState(false), b = Chunk73800.useCallback(async () => {
+  let [e, t] = Chunk73800.useState(null), [n, p] = Chunk73800.useState(true), [y, m] = Chunk73800.useState(null), [h, g] = Chunk73800.useState(false), b = Chunk73800.useCallback(async () => {
     p(true), m(null);
     try {
       var e;
@@ -34,13 +34,13 @@ let p = () => {
         }
       })
     } catch (e) {
-      m(Chunk388032.intl.string(Chunk697498.default["/f++3t"]))
+      m(Chunk388032.intl.string(Chunk241945.default["/f++3t"]))
     } finally {
       p(false)
     }
-  }, []), v = Chunk73800.useCallback(async t => {
+  }, []), j = Chunk73800.useCallback(async t => {
     if (null !== e) {
-      h(true);
+      g(true);
       try {
         var n;
         let r = {
@@ -52,40 +52,40 @@ let p = () => {
       } catch (e) {
         m(d.intl.string(u.default["+QRSxc"]))
       } finally {
-        h(false)
+        g(false)
       }
     }
   }, [module, b]);
   return Chunk73800.useEffect(() => {
     b()
   }, [b]), (0, Chunk255367.jsx)("div", {
-    className: Chunk252834.safetyFlow,
+    className: Chunk104940.safetyFlow,
     children: (0, Chunk255367.jsxs)("div", {
-      className: Chunk252834.container,
+      className: Chunk104940.container,
       children: [(0, Chunk255367.jsx)(Chunk481060.xBx, {
         "data-migration-pending": true,
         separator: false,
-        className: Chunk252834.header,
+        className: Chunk104940.header,
         children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
           variant: "heading-xl/bold",
-          children: Chunk388032.intl.string(Chunk697498.default.gqwhj4)
+          children: Chunk388032.intl.string(Chunk241945.default.gqwhj4)
         })
       }), (0, Chunk255367.jsxs)(Chunk481060.hzk, {
         "data-migration-pending": true,
-        className: Chunk252834.body,
+        className: Chunk104940.body,
         children: [require && (0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: Chunk388032.intl.string(Chunk697498.default.v0H5Tk)
+          children: Chunk388032.intl.string(Chunk241945.default.v0H5Tk)
         }), null !== y && (0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           color: "text-danger",
-          className: Chunk252834.error,
+          className: Chunk104940.error,
           children: y
         }), !require && null === y && null !== module && (0, Chunk255367.jsx)(Chunk603700.Z, {
           task: module,
-          onSubmit: v,
-          disabled: g
+          onSubmit: j,
+          disabled: h
         })]
       })]
     })

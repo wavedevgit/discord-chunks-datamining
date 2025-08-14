@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk907179 = require("./907179.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk610955 = require("./610955.js"),
+  Chunk637079 = require("./637079.js"),
   Chunk609440 = require("./609440.js");
 
 function v(e, t, n) {
@@ -71,8 +71,8 @@ function T(e) {
   i.useEffect(() => {
     null == v || v(null == x ? true : x.current)
   }, [x, v]);
-  let j = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-    k = P ? "div" : a.VqE;
+  let k = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+    j = P ? "div" : a.VqE;
   return (0, r.jsx)(l.Gt, {
     value: D,
     children: (0, r.jsx)(d.Mt, {
@@ -81,7 +81,7 @@ function T(e) {
       fetchStartedAt: null == M ? true : M.fetchStartedAt,
       fetchEndedAt: null == M ? true : M.fetchEndedAt,
       isLoaded: null == M ? true : M.isLoaded,
-      children: (0, r.jsx)(k, {
+      children: (0, r.jsx)(j, {
         ref: x,
         "aria-label": t.username,
         children: (0, r.jsx)(h.Z, {
@@ -117,7 +117,7 @@ function T(e) {
                   isBlocked: w,
                   onClick: () => {
                     C(), (0, f.pQ)(I({
-                      action: j,
+                      action: k,
                       analyticsLocations: D
                     }, L))
                   }

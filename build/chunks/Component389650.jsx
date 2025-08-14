@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 389650, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => H
@@ -34,9 +34,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk420212 = require("./420212.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk84601 = require("./84601.js"),
-  Chunk423279 = require("./423279.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk894462 = require("./894462.js"),
+  Chunk620842 = require("./620842.js"),
+  Chunk197571 = require("./197571.js");
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -47,7 +47,7 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function B(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -60,7 +60,7 @@ function M(e) {
   return e
 }
 
-function B(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -86,14 +86,14 @@ class G extends Chunk73800.PureComponent {
       keybind: e
     } = this.props, t = Chunk13140.BB(module.shortcut);
     return Chunk714338.Z.hasBind(exports) ? (0, Chunk255367.jsx)(Chunk481060.R94, {
-      className: Chunk84601.keybindMessage,
+      className: Chunk894462.keybindMessage,
       type: Chunk481060.geA.DESCRIPTION,
       style: {
         color: Chunk692547.Z.unsafe_rawColors.RED_400.css
       },
       children: Chunk388032.intl.string(Chunk388032.t["7lQlw8"])
     }) : Chunk420212.Sp.has(exports) ? (0, Chunk255367.jsx)(Chunk481060.R94, {
-      className: Chunk84601.keybindMessage,
+      className: Chunk894462.keybindMessage,
       type: Chunk481060.geA.DESCRIPTION,
       style: {
         color: Chunk692547.Z.unsafe_rawColors.RED_400.css
@@ -102,7 +102,7 @@ class G extends Chunk73800.PureComponent {
         keyboardNavArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.KEYBOARD_NAVIGATION)
       })
     }) : (0, Chunk255367.jsx)(Chunk481060.R94, {
-      className: Chunk84601.keybindMessage,
+      className: Chunk894462.keybindMessage,
       type: Chunk481060.geA.DESCRIPTION,
       children: this.props.keybindDescriptions[module.action]
     })
@@ -114,19 +114,19 @@ class G extends Chunk73800.PureComponent {
     } = this.props.keybind;
     return (0, Chunk255367.jsxs)(Chunk600164.Z, {
       direction: Chunk600164.Z.Direction.VERTICAL,
-      className: a()(Chunk84601.keybindGroup, Chunk423279.card),
+      className: a()(Chunk894462.keybindGroup, Chunk620842.card),
       children: [!module && (0, Chunk255367.jsx)(Chunk225433.Z, {
         "aria-label": Chunk388032.intl.string(Chunk388032.t.qEHmmJ),
-        className: Chunk84601.removeKeybind,
+        className: Chunk894462.removeKeybind,
         onClick: this.handleDeleteKeybind,
         look: Chunk225433.Z.Looks.FILLED
       }), (0, Chunk255367.jsxs)(Chunk600164.Z, {
-        className: Chunk881488.marginBottom8,
+        className: Chunk197571.marginBottom8,
         children: [(0, Chunk255367.jsx)(Chunk600164.Z.Child, {
           basis: "45%",
           children: (0, Chunk255367.jsx)(Chunk481060.xJW, {
             title: Chunk388032.intl.string(Chunk388032.t.UUpADw),
-            className: Chunk84601.item,
+            className: Chunk894462.item,
             children: (0, Chunk255367.jsx)(Chunk481060.q4e, {
               value: this.props.keybind.action,
               options: this.props.keybindActionTypes,
@@ -138,7 +138,7 @@ class G extends Chunk73800.PureComponent {
           basis: "45%",
           children: (0, Chunk255367.jsx)(Chunk481060.xJW, {
             title: Chunk388032.intl.string(Chunk388032.t["1La4tL"]),
-            className: Chunk84601.item,
+            className: Chunk894462.item,
             children: (0, Chunk255367.jsx)(Chunk825209.Z, {
               defaultValue: this.props.keybind.shortcut,
               onChange: this.handleShortcutChange
@@ -148,10 +148,10 @@ class G extends Chunk73800.PureComponent {
           grow: 0,
           shrink: 0,
           children: (0, Chunk255367.jsx)(Chunk481060.xJW, {
-            className: Chunk84601.switch,
+            className: Chunk894462.switch,
             children: (0, Chunk255367.jsx)(Chunk481060.ua7, {
               text: Chunk388032.intl.string(Chunk388032.t.uCD7qK),
-              children: e => (0, i.jsx)("div", B(M({}, e), {
+              children: e => (0, i.jsx)("div", M(B({}, e), {
                 children: (0, i.jsx)(m.rsf, {
                   checked: t,
                   onChange: this.handleEnableDisable
@@ -175,11 +175,11 @@ class G extends Chunk73800.PureComponent {
   }
   constructor(...e) {
     super(...e), L(this, "handleActionChanged", e => {
-      p.Z.setKeybind(B(M({}, this.props.keybind), {
+      p.Z.setKeybind(M(B({}, this.props.keybind), {
         action: e
       }))
     }), L(this, "handleShortcutChange", e => {
-      p.Z.setKeybind(B(M({}, this.props.keybind), {
+      p.Z.setKeybind(M(B({}, this.props.keybind), {
         shortcut: e
       }))
     }), L(this, "handleDeleteKeybind", () => {
@@ -188,7 +188,7 @@ class G extends Chunk73800.PureComponent {
       let {
         keybind: e
       } = this.props;
-      p.Z.setKeybind(B(M({}, this.props.keybind), {
+      p.Z.setKeybind(M(B({}, this.props.keybind), {
         enabled: !e.enabled
       }))
     })
@@ -318,7 +318,7 @@ class F extends Chunk73800.PureComponent {
         children: Chunk358085.isPlatformEmbedded ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
           children: [(0, Chunk255367.jsxs)(Chunk600164.Z, {
             justify: Chunk600164.Z.Justify.BETWEEN,
-            className: Chunk881488.marginBottom20,
+            className: Chunk197571.marginBottom20,
             children: [(0, Chunk255367.jsx)(Chunk600164.Z.Child, {
               grow: 0,
               children: (0, Chunk255367.jsx)(Chunk481060.Wn, {
@@ -340,7 +340,7 @@ class F extends Chunk73800.PureComponent {
         }) : (0, Chunk255367.jsx)(Chunk481060.Wn, {
           messageType: Chunk481060.QYI.INFO,
           textVariant: "text-lg/medium",
-          className: Chunk84601.browserNotice,
+          className: Chunk894462.browserNotice,
           children: Chunk388032.intl.format(Chunk388032.t.mPi3Fx, {
             downloadLink: Chunk981631.EYA.DOWNLOAD
           })
@@ -348,17 +348,17 @@ class F extends Chunk73800.PureComponent {
       }), (0, Chunk255367.jsx)(Chunk481060.$i$, {}), (0, Chunk255367.jsxs)(Chunk481060.hjN, {
         tag: Chunk481060.RB0.H1,
         title: Chunk388032.intl.string(Chunk388032.t.Lz5KHB),
-        className: Chunk881488.marginTop60,
+        className: Chunk197571.marginTop60,
         children: [(0, Chunk255367.jsxs)("div", {
-          className: Chunk84601.defaultKeybind,
+          className: Chunk894462.defaultKeybind,
           children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
             variant: "text-md/normal",
             children: Chunk388032.intl.string(Chunk388032.t.sMWLBg)
           }), (0, Chunk255367.jsx)("div", {
-            className: Chunk84601.defaultKeybindShortcutGroup,
+            className: Chunk894462.defaultKeybindShortcutGroup,
             children: (0, Chunk255367.jsx)(Chunk481060.M2$, {
               shortcut: Chunk721383._.binds["0"],
-              className: Chunk84601.__invalid_defaultKeybindShortcut
+              className: Chunk894462.__invalid_defaultKeybindShortcut
             })
           })]
         }), (0, Chunk255367.jsx)(Chunk481060.$i$, {}), (0, Chunk255367.jsx)(U, {

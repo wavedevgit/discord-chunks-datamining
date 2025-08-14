@@ -1,11 +1,11 @@
-/** Chunk was on 77410 **/
-/** chunk id: 109434, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 54273 **/
+/** chunk id: 109434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  H: () => C,
-  v: () => S
+  H: () => x,
+  v: () => j
 }), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
-  n = require.n(Chunk512722),
+  i = require.n(Chunk512722),
   Chunk97519 = require("./97519.js"),
   Chunk313361 = require("./313361.js"),
   Chunk697988 = require("./697988.js"),
@@ -15,89 +15,89 @@ var Chunk512722 = require("./512722.js"),
   Chunk592125 = require("./592125.js"),
   Chunk559241 = require("./559241.js");
 
-function g(t, e, i) {
-  return e in t ? Object.defineProperty(t, e, {
-    value: i,
+function p(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : t[e] = i, t
+  }) : e[t] = n, e
 }
 
-function p(t) {
-  for (var e = 1; e < arguments.length; e++) {
-    var i = null != arguments[e] ? arguments[e] : {},
-      s = Object.keys(i);
-    "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(i).filter(function(t) {
-      return Object.getOwnPropertyDescriptor(i, t).enumerable
-    }))), s.forEach(function(e) {
-      g(t, e, i[e])
+function f(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      p(e, t, n[t])
     })
   }
-  return t
+  return e
 }
-let f = new Set,
+let g = new Set,
   m = {
     layoutType: Chunk313361.X.LIST,
     sortOrder: Chunk683860.z.CREATION_DATE,
-    tagFilter: f,
+    tagFilter: g,
     scrollPosition: 0,
     tagSetting: Chunk697988.z.MATCH_SOME
   };
 class b {
-  constructor(t, e) {
-    g(this, "set", true), g(this, "get", true), g(this, "channelStates", true), g(this, "setChannelState", true), g(this, "getChannelState", true), g(this, "toggleTagFilter", true), g(this, "setTagFilter", true), g(this, "setSortOrder", true), g(this, "setLayoutType", true), g(this, "setTagSetting", true), g(this, "setScrollPosition", true), this.set = t, this.get = e, this.channelStates = {}, this.setChannelState = (t, e) => {
-      let i = this.get(),
-        s = this.getChannelState(t),
-        n = p({}, i.channelStates);
-      n[t] = p({}, s, e), (0, h.j)(() => this.set({
-        channelStates: n
+  constructor(e, t) {
+    p(this, "set", true), p(this, "get", true), p(this, "channelStates", true), p(this, "setChannelState", true), p(this, "getChannelState", true), p(this, "toggleTagFilter", true), p(this, "setTagFilter", true), p(this, "setSortOrder", true), p(this, "setLayoutType", true), p(this, "setTagSetting", true), p(this, "setScrollPosition", true), this.set = e, this.get = t, this.channelStates = {}, this.setChannelState = (e, t) => {
+      let n = this.get(),
+        r = this.getChannelState(e),
+        i = f({}, n.channelStates);
+      i[e] = f({}, r, t), (0, c.j)(() => this.set({
+        channelStates: i
       }))
-    }, this.getChannelState = t => {
-      if (null == t) return m;
+    }, this.getChannelState = e => {
+      if (null == e) return m;
       let {
-        channelStates: e
-      } = this.get(), i = e[t];
-      if (null == i) {
-        let e = u.Z.getChannel(t);
-        n()(null != e, "[Forum Channel Store] The channel should not be missing."), i = {
-          layoutType: e.getDefaultLayout(),
-          sortOrder: e.getDefaultSortOrder(),
-          tagFilter: f,
+        channelStates: t
+      } = this.get(), n = t[e];
+      if (null == n) {
+        let t = d.Z.getChannel(e);
+        i()(null != t, "[Forum Channel Store] The channel should not be missing."), n = {
+          layoutType: t.getDefaultLayout(),
+          sortOrder: t.getDefaultSortOrder(),
+          tagFilter: g,
           scrollPosition: 0,
-          tagSetting: e.getDefaultTagSetting()
+          tagSetting: t.getDefaultTagSetting()
         }
       }
-      return i
-    }, this.toggleTagFilter = (t, e) => {
-      let i = new Set(this.getChannelState(t).tagFilter);
-      i.has(e) ? i.delete(e) : i.add(e), this.setTagFilter(t, i)
-    }, this.setTagFilter = (t, e) => {
-      this.setChannelState(t, {
-        tagFilter: e
-      }), c.Z.setFilterTagIds(e)
-    }, this.setSortOrder = (t, e) => {
-      this.setChannelState(t, {
-        sortOrder: e
-      }), c.Z.setSortOrder(e)
-    }, this.setLayoutType = (t, e) => {
-      this.setChannelState(t, {
-        layoutType: e
-      }), c.Z.setLayout(e)
-    }, this.setTagSetting = (t, e) => {
-      this.setChannelState(t, {
-        tagSetting: e
-      }), c.Z.setTagSetting(e)
-    }, this.setScrollPosition = (t, e) => {
-      this.setChannelState(t, {
-        scrollPosition: e
+      return n
+    }, this.toggleTagFilter = (e, t) => {
+      let n = new Set(this.getChannelState(e).tagFilter);
+      n.has(t) ? n.delete(t) : n.add(t), this.setTagFilter(e, n)
+    }, this.setTagFilter = (e, t) => {
+      this.setChannelState(e, {
+        tagFilter: t
+      }), h.Z.setFilterTagIds(t)
+    }, this.setSortOrder = (e, t) => {
+      this.setChannelState(e, {
+        sortOrder: t
+      }), h.Z.setSortOrder(t)
+    }, this.setLayoutType = (e, t) => {
+      this.setChannelState(e, {
+        layoutType: t
+      }), h.Z.setLayout(t)
+    }, this.setTagSetting = (e, t) => {
+      this.setChannelState(e, {
+        tagSetting: t
+      }), h.Z.setTagSetting(t)
+    }, this.setScrollPosition = (e, t) => {
+      this.setChannelState(e, {
+        scrollPosition: t
       })
     }
   }
 }
-let v = (0, Chunk97519.U)((t, e) => new b(t, e)),
-  C = t => {
-    let e = v();
-    return null == (0, d.e7)([u.Z], () => u.Z.getChannel(t)) ? m : e.getChannelState(t)
+let y = (0, Chunk97519.U)((e, t) => new b(e, t)),
+  x = e => {
+    let t = y();
+    return null == (0, u.e7)([d.Z], () => d.Z.getChannel(e)) ? m : t.getChannelState(e)
   },
-  S = () => v
+  j = () => y

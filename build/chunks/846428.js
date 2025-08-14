@@ -1,60 +1,60 @@
 /** Chunk was on 19083 **/
 /** chunk id: 846428, original params: e,o,i (module,exports,require) **/
 require.d(exports, {
-  Rl: () => t,
-  rk: () => r
+  Rl: () => n,
+  rk: () => s
 });
-let n = e => null == e ? "v1" : `v/${e}`,
-  t = async e => window.Meticulous?.isRunningAsTest ? (console.debug("Running as part of a Meticulous test case, so skipping loading the Meticulous recorder."), {
-    stopRecording: async () => {}
-  }) : await s(e).catch(e => (console.error(e), {
-    stopRecording: async () => {}
-  })), s = ({
-    projectId: e,
-    recordingToken: o,
-    uploadIntervalMs: i,
-    snapshotLinkedStylesheets: t,
-    commitHash: s,
-    maxMsToBlockFor: r,
-    snippetsBaseUrl: d,
-    forceRecording: c,
-    middleware: l,
-    responseSanitizers: u,
-    isProduction: a,
-    version: _
-  }) => {
-    let E = false;
-    return new Promise((w, p) => {
-      let S = r ?? 2e3;
-      S > 0 && setTimeout(() => {
-        E = true, w({
-          stopRecording: async () => {}
-        })
-      }, S);
-      let R = document.createElement("script");
-      R.type = "text/javascript", R.src = new URL(`${null!=_?"record/":""}${n(_??null)}/meticulous-manual-init.js`, d || "https://snippet.meticulous.ai").href;
-      let O = window;
-      O.METICULOUS_RECORDING_TOKEN = o ?? e, true !== i && (O.METICULOUS_UPLOAD_INTERVAL_MS = i), true !== s && (O.METICULOUS_APP_COMMIT_HASH = s), true !== t && (O.METICULOUS_SNAPSHOT_LINKED_STYLESHEETS = t), true !== c && (O.METICULOUS_FORCE_RECORDING = c), true !== a && (O.METICULOUS_IS_PRODUCTION_ENVIRONMENT = a), null != u && u.length > 0 && (O.METICULOUS_NETWORK_RESPONSE_SANITIZERS = u), null != l && l.length > 0 && (O.METICULOUS_RECORDER_MIDDLEWARE_V1 = l), R.onload = function() {
-        if (E) return void console.debug("Meticulous snippet abandoned due to max blocking time reached.");
-        let e = window.__meticulous?.initialiseRecorder;
-        if ("function" != typeof e) return void p("Meticulous recorder failed to initialise.");
-        try {
-          e()
-        } catch (e) {
-          p(e)
+let n = async e => window.Meticulous?.isRunningAsTest ? (console.debug("Running as part of a Meticulous test case, so skipping loading the Meticulous recorder."), {
+  stopRecording: async () => {}
+}) : await t(e).catch(e => (console.error(e), {
+  stopRecording: async () => {}
+})), t = ({
+  projectId: e,
+  recordingToken: o,
+  uploadIntervalMs: i,
+  snapshotLinkedStylesheets: n,
+  commitHash: t,
+  maxMsToBlockFor: s,
+  snippetsBaseUrl: r,
+  forceRecording: d,
+  middleware: c,
+  responseSanitizers: l,
+  isProduction: u,
+  version: a
+}) => {
+  let _ = false;
+  return new Promise((E, w) => {
+    var p;
+    let S = s ?? 2e3;
+    S > 0 && setTimeout(() => {
+      _ = true, E({
+        stopRecording: async () => {}
+      })
+    }, S);
+    let R = document.createElement("script");
+    R.type = "text/javascript", R.src = new URL(`${null!=a?"record/":""}${null==(p=a??null)?"v1":`v/${p}`}/meticulous-manual-init.js`, r || "https://snippet.meticulous.ai").href;
+    let O = window;
+    O.METICULOUS_RECORDING_TOKEN = o ?? e, true !== i && (O.METICULOUS_UPLOAD_INTERVAL_MS = i), true !== t && (O.METICULOUS_APP_COMMIT_HASH = t), true !== n && (O.METICULOUS_SNAPSHOT_LINKED_STYLESHEETS = n), true !== d && (O.METICULOUS_FORCE_RECORDING = d), true !== u && (O.METICULOUS_IS_PRODUCTION_ENVIRONMENT = u), null != l && l.length > 0 && (O.METICULOUS_NETWORK_RESPONSE_SANITIZERS = l), null != c && c.length > 0 && (O.METICULOUS_RECORDER_MIDDLEWARE_V1 = c), R.onload = function() {
+      if (_) return void console.debug("Meticulous snippet abandoned due to max blocking time reached.");
+      let e = window.__meticulous?.initialiseRecorder;
+      if ("function" != typeof e) return void w("Meticulous recorder failed to initialise.");
+      try {
+        e()
+      } catch (e) {
+        w(e)
+      }
+      E({
+        stopRecording: async () => {
+          let e = window.__meticulous?.stopRecording;
+          if (!e) throw Error("Recorder not initialised: window.__meticulous.stopRecording is not defined.");
+          await e()
         }
-        w({
-          stopRecording: async () => {
-            let e = window.__meticulous?.stopRecording;
-            if (!e) throw Error("Recorder not initialised: window.__meticulous.stopRecording is not defined.");
-            await e()
-          }
-        })
-      }, R.onerror = () => {
-        p("Meticulous recorder failed to initialise.")
-      }, document.head.appendChild(R)
-    })
-  }, r = async () => {
-    let e = window?.__meticulous?.earlyNetworkRecorder?.dispose;
-    module && await module()
-  }
+      })
+    }, R.onerror = () => {
+      w("Meticulous recorder failed to initialise.")
+    }, document.head.appendChild(R)
+  })
+}, s = async () => {
+  let e = window?.__meticulous?.earlyNetworkRecorder?.dispose;
+  module && await module()
+}

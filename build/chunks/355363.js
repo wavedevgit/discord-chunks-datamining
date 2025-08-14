@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 355363, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => l
@@ -20,8 +20,8 @@ function l(e) {
       considerMaxStageVoiceUserLimit: l = true
     } = e, {
       limit: o
-    } = (0, r.Z)(t), s = false;
-    return (t.userLimit > 0 && (s = t.userLimit), n && o > 0 && (s = s > 0 ? Math.min(s, o) : o), l && s === i.xGv) ? 0 : s
+    } = (0, r.Z)(t), a = false;
+    return (t.userLimit > 0 && (a = t.userLimit), n && o > 0 && (a = a > 0 ? Math.min(a, o) : o), l && a === i.xGv) ? 0 : a
   }({
     channel: t,
     video: l

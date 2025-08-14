@@ -1,7 +1,7 @@
 /** Chunk was on 33213 **/
 /** chunk id: 58338, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => h
 }), require("./388685.js"), require("./997841.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,19 +19,19 @@ var Chunk255367 = require("./255367.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
 
-function E(e) {
+function h(e) {
   let t = (0, d.ng)(e, true),
-    E = (0, d.U)();
+    h = (0, d.U)();
   return (0, i.jsxs)(s.sNh, {
     id: "notification",
     label: (0, i.jsxs)(i.Fragment, {
-      children: [E, O.intl.string(O.t.HcoRu7)]
+      children: [h, O.intl.string(O.t.HcoRu7)]
     }),
     action: () => {
       (0, s.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("5863"), n.e("28965")]).then(n.bind(n, 751212));
+        } = await Promise.all([n.e("5863"), n.e("11890")]).then(n.bind(n, 751212));
         return n => {
           var r, l;
           return (0, i.jsx)(t, (r = function(e) {
@@ -67,14 +67,14 @@ function E(e) {
       })
     },
     children: [function(e) {
-      let [t, n] = r.useState(false), [d, E] = r.useState(false), h = (0, l.e7)([g.ZP], () => g.ZP.getGuildUnreadSetting(e)), y = (0, l.e7)([g.ZP], () => g.ZP.getMessageNotifications(e)), j = d ? u.s8.CUSTOM : (0, u.gs)(h, y), _ = t => {
-        E(false);
+      let [t, n] = r.useState(false), [d, h] = r.useState(false), E = (0, l.e7)([g.ZP], () => g.ZP.getGuildUnreadSetting(e)), y = (0, l.e7)([g.ZP], () => g.ZP.getMessageNotifications(e)), j = d ? u.s8.CUSTOM : (0, u.gs)(E, y), _ = t => {
+        h(false);
         let n = {
           message_notifications: t
         };
-        t === p.bL.ALL_MESSAGES && h !== f.i.ALL_MESSAGES && (n.flags = (0, a.Q4)(g.ZP.getGuildFlags(e), S.vc.UNREADS_ALL_MESSAGES)), o.Z.updateGuildNotificationSettings(e, n, b.UE.notifications(t))
+        t === p.bL.ALL_MESSAGES && E !== f.i.ALL_MESSAGES && (n.flags = (0, a.Q4)(g.ZP.getGuildFlags(e), S.vc.UNREADS_ALL_MESSAGES)), o.Z.updateGuildNotificationSettings(e, n, b.UE.notifications(t))
       }, N = t => {
-        E(false);
+        h(false);
         let n = g.ZP.getGuildFlags(e);
         o.Z.updateGuildNotificationSettings(e, {
           flags: (0, a.Q4)(n, t === f.i.ALL_MESSAGES ? S.vc.UNREADS_ALL_MESSAGES : S.vc.UNREADS_ONLY_MENTIONS)
@@ -87,24 +87,24 @@ function E(e) {
             group: "notification-preset",
             checked: j === u.s8.ALL_MESSAGES,
             label: O.intl.string(O.t.hZrr6u),
-            action: () => ((0, c.V)(e, u.s8.ALL_MESSAGES), E(false))
+            action: () => ((0, c.V)(e, u.s8.ALL_MESSAGES), h(false))
           }), (0, i.jsx)(s.k5B, {
             id: "essentials",
             group: "notification-preset",
             checked: j === u.s8.MENTIONS,
             label: O.intl.string(O.t.y59NJi),
-            action: () => ((0, c.V)(e, u.s8.MENTIONS), E(false))
+            action: () => ((0, c.V)(e, u.s8.MENTIONS), h(false))
           }), (0, i.jsx)(s.k5B, {
             id: "nothing",
             group: "notification-preset",
             checked: j === u.s8.NOTHING,
             label: O.intl.string(O.t["pGn/bG"]),
-            action: () => ((0, c.V)(e, u.s8.NOTHING), E(false))
+            action: () => ((0, c.V)(e, u.s8.NOTHING), h(false))
           }), (0, i.jsx)(s.k5B, {
             id: "custom",
             group: "notification-preset",
             checked: j === u.s8.CUSTOM,
-            action: () => (n(true), E(true)),
+            action: () => (n(true), h(true)),
             label: O.intl.string(O.t["32yow8"])
           })]
         }), (j === u.s8.CUSTOM || t) && (0, i.jsxs)(s.kSQ, {
@@ -114,17 +114,17 @@ function E(e) {
             children: [(0, i.jsx)(s.k5B, {
               id: "unread_setting_all_messages",
               group: "unread_setting",
-              checked: h === f.i.ALL_MESSAGES,
+              checked: E === f.i.ALL_MESSAGES,
               label: O.intl.string(O.t["HVah//"]),
               action: () => N(f.i.ALL_MESSAGES)
             }), (0, i.jsx)(s.k5B, {
               id: "unread_setting_mention_only",
               group: "unread_setting",
-              checked: h === f.i.ONLY_MENTIONS,
+              checked: E === f.i.ONLY_MENTIONS,
               label: O.intl.string(O.t["tu+ZWF"]),
               action: () => N(f.i.ONLY_MENTIONS),
-              disabled: h !== f.i.ONLY_MENTIONS && y === p.bL.ALL_MESSAGES,
-              subtext: h !== f.i.ONLY_MENTIONS && y === p.bL.ALL_MESSAGES ? O.intl.string(O.t.eP8yWV) : true
+              disabled: E !== f.i.ONLY_MENTIONS && y === p.bL.ALL_MESSAGES,
+              subtext: E !== f.i.ONLY_MENTIONS && y === p.bL.ALL_MESSAGES ? O.intl.string(O.t.eP8yWV) : true
             })]
           }, "unread_setting"), (0, i.jsxs)(s.sNh, {
             id: "push_settings",
@@ -135,7 +135,7 @@ function E(e) {
               label: O.intl.string(O.t["HVah//"]),
               checked: y === p.bL.ALL_MESSAGES,
               action: () => _(p.bL.ALL_MESSAGES),
-              subtext: h !== f.i.ALL_MESSAGES && y !== p.bL.ALL_MESSAGES ? O.intl.string(O.t.idXSbG) : true
+              subtext: E !== f.i.ALL_MESSAGES && y !== p.bL.ALL_MESSAGES ? O.intl.string(O.t.idXSbG) : true
             }), (0, i.jsx)(s.k5B, {
               group: "notification-preset",
               id: "push_settings_everything_mention",

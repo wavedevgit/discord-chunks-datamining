@@ -1,7 +1,7 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 750832, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  SI: () => d,
+  SI: () => c,
   nS: () => o
 });
 var Chunk81643 = require("./81643.js"),
@@ -74,7 +74,7 @@ let a = (0, Chunk818083.B)({
       });
     return t.dmOffByDefault || n.dmOffByDefault
   },
-  c = e => {
+  c = () => (0, Chunk81643.sf)() && (e => {
     let t = l.getCurrentConfig({
         location: e
       }, {
@@ -86,5 +86,4 @@ let a = (0, Chunk818083.B)({
         autoTrackExposure: false
       });
     return t.messageRequestOnByDefault || n.messageRequestOnByDefault || (0, s.c_)(e)
-  },
-  d = () => (0, Chunk81643.sf)() && c("shouldAgeVerifyForDMDefaultOff")
+  })("shouldAgeVerifyForDMDefaultOff")

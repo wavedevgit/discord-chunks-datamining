@@ -43,8 +43,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk375790 = require("./375790.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk130883 = require("./130883.js"),
-  Chunk944135 = require("./944135.js");
+  Chunk764295 = require("./764295.js"),
+  Chunk520310 = require("./520310.js");
 
 function V(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -140,26 +140,11 @@ let Q = e => {
           [t]: n
         }))
     }
-  }, [er]);
-  let eI = e => {
-      e === G.evJ.INVALID_FORM_BODY ? e_(W.intl.string(W.t.VjAAuL)) : ec ? e_(W.intl.string(F.default.psKFdH)) : e_(W.intl.string(W.t.h6D8V1))
-    },
-    eS = () => {
-      let t = ["", e.successNodeId];
-      $(ej(t)).then(() => {
-        e_(""), eZ(t)
-      }).catch(e => {
-        var t;
-        eI(null == (t = e.body) ? true : t.code)
-      }).finally(() => {
-        eu(false)
-      })
-    };
-  i.useEffect(() => {
+  }, [er]), i.useEffect(() => {
     t.is_auto_submit && !em && (ep(true), $(ej(["", t.id])))
   }, [t.is_auto_submit, em, $, ej, t.id]);
-  let eC = (0, o.fW)(Q),
-    eN = null != q(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name);
+  let eI = (0, o.fW)(Q),
+    eS = null != q(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name);
   return (0, r.jsxs)("div", {
     className: z.container,
     children: [(0, r.jsxs)(a.xBx, {
@@ -202,7 +187,7 @@ let Q = e => {
           return L.O.includes(t)
         })
       }(t) && (0, r.jsxs)(k.Z, {
-        children: [eN && (0, r.jsx)(S.Z, {
+        children: [eS && (0, r.jsx)(S.Z, {
           user: "user" === n.name ? n.record : n.record.author,
           channelId: ev,
           reportId: et
@@ -211,7 +196,7 @@ let Q = e => {
           channelId: ev,
           reportId: et,
           reportType: n
-        }), !eN && null != q(t, "mute_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(E.Z, {
+        }), !eS && null != q(t, "mute_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(E.Z, {
           user: "user" === n.name ? n.record : n.record.author,
           channelId: ev,
           reportId: et
@@ -228,8 +213,8 @@ let Q = e => {
           application: n.record,
           reportId: et
         })]
-      }), null != q(t, "settings_upsells") && ("message" === n.name || "report_to_mod_message" === n.name) && null != eC && (0, r.jsx)(w.Z, {
-        settingsUpsells: eC,
+      }), null != q(t, "settings_upsells") && ("message" === n.name || "report_to_mod_message" === n.name) && null != eI && (0, r.jsx)(w.Z, {
+        settingsUpsells: eI,
         channelId: n.record.channel_id,
         onModalClose: Y,
         reportId: et,
@@ -279,17 +264,26 @@ let Q = e => {
       submitting: ed,
       disableNext: ey,
       isModeratorReport: ec,
-      onClick: e => {
-        switch (e.type) {
+      onClick: t => {
+        switch (t.type) {
           case "done":
           case "cancel":
             Y();
             break;
           case "next":
-            eZ(["", e.target]);
+            eZ(["", t.target]);
             break;
           case "submit":
-            eu(true), eS()
+            eu(true);
+            let n = ["", e.successNodeId];
+            $(ej(n)).then(() => {
+              e_(""), eZ(n)
+            }).catch(e => {
+              var t;
+              (null == (t = e.body) ? true : t.code) === G.evJ.INVALID_FORM_BODY ? e_(W.intl.string(W.t.VjAAuL)) : ec ? e_(W.intl.string(F.default.psKFdH)) : e_(W.intl.string(W.t.h6D8V1))
+            }).finally(() => {
+              eu(false)
+            })
         }
       },
       onBackClicked: e.onNavigateBack,

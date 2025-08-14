@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk305931 = require("./305931.js"),
+  Chunk807284 = require("./807284.js"),
   Chunk492764 = require("./492764.js"),
   Chunk235810 = require("./235810.js");
 
@@ -46,15 +46,15 @@ function O(e) {
 
 function v() {
   return (0, Chunk175006.Z)() ? (0, Chunk255367.jsx)("div", {
-    className: Chunk305931.emptyContainer,
+    className: Chunk807284.emptyContainer,
     children: (0, Chunk255367.jsxs)("div", {
-      className: Chunk305931.emptyInner,
+      className: Chunk807284.emptyInner,
       children: [(0, Chunk255367.jsx)("img", {
         src: Chunk492764,
-        className: Chunk305931.image,
+        className: Chunk807284.image,
         alt: ""
       }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
-        className: Chunk305931.header,
+        className: Chunk807284.header,
         variant: "heading-xl/semibold",
         color: "text-default",
         children: Chunk388032.intl.string(Chunk388032.t.erEf2t)
@@ -65,15 +65,15 @@ function v() {
       })]
     })
   }) : (0, Chunk255367.jsxs)("div", {
-    className: Chunk305931.emptyContainer,
+    className: Chunk807284.emptyContainer,
     children: [(0, Chunk255367.jsxs)("div", {
-      className: Chunk305931.emptyInner,
+      className: Chunk807284.emptyInner,
       children: [(0, Chunk255367.jsx)("img", {
         src: Chunk235810,
-        className: Chunk305931.image,
+        className: Chunk807284.image,
         alt: ""
       }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
-        className: Chunk305931.header,
+        className: Chunk807284.header,
         variant: "heading-xl/semibold",
         color: "text-default",
         children: Chunk388032.intl.string(Chunk388032.t.w4DRbW)
@@ -101,19 +101,19 @@ function I() {
       onClick: exports
     });
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk305931.upsellContainer,
+    className: Chunk807284.upsellContainer,
     children: [(0, Chunk255367.jsx)(Chunk657707.SrA, {
       size: "md",
       color: Chunk436774.JX.PREMIUM_TIER_2
     }), (0, Chunk255367.jsx)(Chunk793030.xv, {
       variant: "text-xs/medium",
       color: "header-primary",
-      className: Chunk305931.upsellText,
+      className: Chunk807284.upsellText,
       children: Chunk175006
     }), (0, Chunk255367.jsx)(Chunk767714.Z, {
-      className: Chunk305931.upsellButton,
+      className: Chunk807284.upsellButton,
       size: Chunk755721.Ph.TINY,
-      shinyButtonClassName: Chunk305931.upsellButton,
+      shinyButtonClassName: Chunk807284.upsellButton,
       subscriptionTier: Chunk474936.Si.TIER_2,
       premiumModalAnalyticsLocation: {
         section: Chunk981631.jXE.FOR_LATER_POPOUT_UPSELL

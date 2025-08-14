@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 320161, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -34,10 +34,7 @@ function b(e) {
   });
   let I = _ >= f.length - 1,
     N = I ? l.FGA.RED : l.FGA.GREEN,
-    y = E ? N : l.FGA.PRIMARY,
-    A = () => {
-      null == m || m(), (0, c.JG)(n), o.default.track(u.rMx.TEXT_COPIED), O || j(_ + 1), v(true), C(true), S.start(p, () => v(false)), T.start(g, () => j(0))
-    };
+    y = E ? N : l.FGA.PRIMARY;
   return (0, i.jsx)(l.ua7, {
     text: (() => {
       var e;
@@ -57,9 +54,9 @@ function b(e) {
       !O && E && t.phase === u.UkZ.LEAVE && C(false)
     },
     children: e => {
-      var t, n, {
-        onClick: i,
-        onMouseEnter: r
+      var t, i, {
+        onClick: r,
+        onMouseEnter: s
       } = e;
       return d((t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -92,26 +89,26 @@ function b(e) {
           for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
         }
         return r
-      }(e, ["onClick", "onMouseEnter"])), n = n = {
+      }(e, ["onClick", "onMouseEnter"])), i = i = {
         onClick: () => {
-          null == i || i(), A()
+          null == r || r(), null == m || m(), (0, c.JG)(n), o.default.track(u.rMx.TEXT_COPIED), O || j(_ + 1), v(true), C(true), S.start(p, () => v(false)), T.start(g, () => j(0))
         },
         onMouseEnter: () => {
           if (!E) {
-            null == r || r();
+            null == s || s();
             return
           }
           S.stop(), v(false)
         }
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           n.push.apply(n, i)
         }
         return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
       }), t))
     }
   })

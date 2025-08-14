@@ -9,7 +9,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk600164 = require("./600164.jsx"),
-  Chunk538723 = require("./538723.js");
+  Chunk9643 = require("./9643.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,14 +26,14 @@ var d = function(e) {
     return e.SMALL = "small", e.LARGE = "large", e.NONE = "none", e
   }(f || {});
 let _ = {
-    primary: Chunk538723.colorPrimary,
-    secondary: Chunk538723.colorSecondary,
-    warning: Chunk538723.colorWarning,
-    error: Chunk538723.colorError
+    primary: Chunk9643.colorPrimary,
+    secondary: Chunk9643.colorSecondary,
+    warning: Chunk9643.colorWarning,
+    error: Chunk9643.colorError
   },
   p = {
-    small: Chunk538723.small,
-    large: Chunk538723.large,
+    small: Chunk9643.small,
+    large: Chunk9643.large,
     none: null
   };
 class h extends(r = Chunk73800.PureComponent) {
@@ -47,10 +47,10 @@ class h extends(r = Chunk73800.PureComponent) {
       iconClassName: a
     } = this.props;
     return (0, Chunk255367.jsxs)(Chunk600164.Z, {
-      className: s()(Chunk538723.note, _[exports], Chunk73800),
+      className: s()(Chunk9643.note, _[exports], Chunk73800),
       align: Chunk600164.Z.Align.CENTER,
       children: [(0, Chunk255367.jsx)(module, {
-        className: s()(Chunk538723.icon, p[r], Chunk120356),
+        className: s()(Chunk9643.icon, p[r], Chunk120356),
         color: "currentColor"
       }), (0, Chunk255367.jsx)("div", {
         children: require

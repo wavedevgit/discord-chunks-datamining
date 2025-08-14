@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk313201 = require("./313201.js"),
-  Chunk128062 = require("./128062.js");
+  Chunk474047 = require("./474047.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,19 +81,19 @@ class b extends Chunk73800.PureComponent {
       className: i
     } = this.props;
     return (0, Chunk255367.jsxs)(Chunk600164.Z, {
-      className: a()(Chunk128062.quickSelect, Chunk73800),
+      className: a()(Chunk474047.quickSelect, Chunk73800),
       align: Chunk600164.Z.Align.CENTER,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk128062.quickSelectLabel,
+        className: Chunk474047.quickSelectLabel,
         children: module
       }), (0, Chunk255367.jsxs)(Chunk600164.Z, {
         align: Chunk600164.Z.Align.CENTER,
-        className: Chunk128062.quickSelectClick,
+        className: Chunk474047.quickSelectClick,
         children: [(0, Chunk255367.jsx)("div", {
-          className: Chunk128062.quickSelectValue,
+          className: Chunk474047.quickSelectValue,
           children: null != require ? require(exports) : exports.label
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk128062.quickSelectArrow
+          className: Chunk474047.quickSelectArrow
         })]
       })]
     })

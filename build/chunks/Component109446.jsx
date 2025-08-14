@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 109446, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => C
 }), require("./388685.js"), require("./642613.js"), require("./583741.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -22,34 +22,34 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk124368 = require("./124368.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk82393 = require("./82393.js");
+  Chunk531198 = require("./531198.js");
 
-function j(e) {
+function C(e) {
   let {
     channel: t
-  } = e, l = (0, s.Wu)([d.Z, g.ZP, f.Z], () => {
+  } = e, l = (0, a.Wu)([d.Z, g.ZP, h.Z], () => {
     let e = d.Z.getActiveJoinedRelevantThreadsForParent(t.guild_id, t.id);
-    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && f.Z.can(_.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
+    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && h.Z.can(_.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
       let n = g.ZP.lastMessageId(e.id),
         r = g.ZP.lastMessageId(t.id);
       return O.default.compare(n, r)
     }).reverse().value()
   }), c = t.isForumLikeChannel() ? 5 : 3;
   return i.useEffect(() => {
-    (0, h.q)()
+    (0, p.q)()
   }, []), (0, r.jsxs)("div", {
-    className: v.popout,
-    children: [(0, r.jsx)(a.Text, {
-      className: v.title,
+    className: j.popout,
+    children: [(0, r.jsx)(s.Text, {
+      className: j.title,
       variant: "text-xs/bold",
       color: "header-secondary",
-      children: t.isForumLikeChannel() ? C.intl.string(C.t.ioVdOz) : C.intl.string(C.t.VNYs2t)
+      children: t.isForumLikeChannel() ? v.intl.string(v.t.ioVdOz) : v.intl.string(v.t.VNYs2t)
     }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(E, {
       thread: e
-    }, e.id)).filter(e => i.isValidElement(e)).slice(0, c), (0, r.jsx)(a.P3F, {
-      className: v.more,
+    }, e.id)).filter(e => i.isValidElement(e)).slice(0, c), (0, r.jsx)(s.P3F, {
+      className: j.more,
       onClick: () => {
-        t.isForumLikeChannel() ? (0, u.Kh)(t.id) : (0, a.ZDy)(async () => {
+        t.isForumLikeChannel() ? (0, u.Kh)(t.id) : (0, s.ZDy)(async () => {
           let {
             default: e
           } = await n.e("36970").then(n.bind(n, 223901));
@@ -75,10 +75,10 @@ function j(e) {
           }, n))
         })
       },
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "none",
-        children: C.intl.string(C.t["4qdZ9/"])
+        children: v.intl.string(v.t["4qdZ9/"])
       })
     })]
   })
@@ -87,33 +87,33 @@ function j(e) {
 function E(e) {
   let {
     thread: t
-  } = e, n = (0, s.e7)([m.default], () => m.default.getUser(t.ownerId)), i = (0, h.Ok)(t);
-  return (0, r.jsxs)(a.P3F, {
-    className: v.row,
+  } = e, n = (0, a.e7)([m.default], () => m.default.getUser(t.ownerId)), i = (0, p.Ok)(t);
+  return (0, r.jsxs)(s.P3F, {
+    className: j.row,
     onClick: e => {
-      (0, p.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, y.on.POPOUT)
+      (0, f.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, y.on.POPOUT)
     },
     children: [null == n ? (0, r.jsx)("img", {
-      className: v.avatar,
+      className: j.avatar,
       src: b.ZP.getDefaultAvatarURL(true, true),
       alt: ""
     }) : (0, r.jsx)(c.Z, {
-      className: v.avatar,
+      className: j.avatar,
       user: n,
-      size: a.EFr.SIZE_16
-    }), (0, r.jsx)(a.Text, {
-      className: v.name,
+      size: s.EFr.SIZE_16
+    }), (0, r.jsx)(s.Text, {
+      className: j.name,
       variant: "text-sm/normal",
       color: "none",
       children: t.name
-    }), (0, r.jsxs)(a.Text, {
-      className: v.timestamp,
+    }), (0, r.jsxs)(s.Text, {
+      className: j.timestamp,
       variant: "text-sm/normal",
       color: "none",
       children: [(0, r.jsx)("span", {
-        className: v.bullet,
+        className: j.bullet,
         children: "•"
-      }), (0, h.Ye)(i)]
+      }), (0, p.Ye)(i)]
     })]
   })
 }

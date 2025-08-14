@@ -1,7 +1,7 @@
 /** Chunk was on 18417 **/
 /** chunk id: 740696, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => y
+  default: () => b
 }), require("./388685.js"), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,37 +19,36 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk537581 = require("./537581.js");
-let b = () => [{
-  id: 0,
-  name: Chunk388032.intl.string(Chunk388032.t.HTA519)
-}, {
-  id: 1,
-  name: Chunk388032.intl.string(Chunk388032.t.IHjjY2)
-}, {
-  id: 2,
-  name: Chunk388032.intl.string(Chunk388032.t.x3drh4)
-}];
+  Chunk87612 = require("./87612.js");
 
-function y(t) {
+function b(t) {
   let {
     guildId: e,
-    shouldUpsellCreation: y,
-    transitionState: P,
-    onClose: N
-  } = t, S = (0, i.e7)([d.Z], () => d.Z.getGuild(e), [e]), O = (0, i.e7)([m.Z], () => m.Z.can(h.Plq.MANAGE_CHANNELS, S)), C = b(), [w, k] = r.useState(0), T = [{
-    variant: y ? "secondary" : "primary",
-    text: y ? j.intl.string(j.t.TulDPj) : j.intl.string(j.t["NX+WJC"]),
-    onClick: () => N(f.L.SECONDARY)
+    shouldUpsellCreation: b,
+    transitionState: y,
+    onClose: P
+  } = t, N = (0, i.e7)([d.Z], () => d.Z.getGuild(e), [e]), S = (0, i.e7)([m.Z], () => m.Z.can(h.Plq.MANAGE_CHANNELS, N)), O = [{
+    id: 0,
+    name: j.intl.string(j.t.HTA519)
+  }, {
+    id: 1,
+    name: j.intl.string(j.t.IHjjY2)
+  }, {
+    id: 2,
+    name: j.intl.string(j.t.x3drh4)
+  }], [C, w] = r.useState(0), k = [{
+    variant: b ? "secondary" : "primary",
+    text: b ? j.intl.string(j.t.TulDPj) : j.intl.string(j.t["NX+WJC"]),
+    onClick: () => P(f.L.SECONDARY)
   }];
-  return y && T.push({
+  return b && k.push({
     variant: "primary",
     text: j.intl.string(j.t["1X8SKy"]),
     onClick: () => {
       (0, g.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("45094"), n.e("78626")]).then(n.bind(n, 218613));
+        } = await Promise.all([n.e("45094"), n.e("67133")]).then(n.bind(n, 218613));
         return n => {
           var r, i;
           return (0, a.jsx)(t, (r = function(t) {
@@ -72,7 +71,7 @@ function y(t) {
           }({}, n), i = i = {
             channelType: h.d4z.GUILD_FORUM,
             guildId: e,
-            prefillChannelName: y ? j.intl.string(j.t["5z1Xam"]) : true
+            prefillChannelName: b ? j.intl.string(j.t["5z1Xam"]) : true
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(t, e) {
             var n = Object.keys(t);
             if (Object.getOwnPropertySymbols) {
@@ -84,33 +83,33 @@ function y(t) {
             Object.defineProperty(r, t, Object.getOwnPropertyDescriptor(i, t))
           }), r))
         }
-      }), N(f.L.PRIMARY)
+      }), P(f.L.PRIMARY)
     }
   }), (0, a.jsxs)(s.I, {
-    transitionState: P,
+    transitionState: y,
     size: "xl",
-    onClose: async () => await N(),
+    onClose: async () => await P(),
     children: [(0, a.jsx)(c.x, {
       title: j.intl.string(j.t["6S6WCQ"]),
       subtitle: j.intl.string(j.t.I2BA8P)
     }), (0, a.jsxs)(l.f, {
       children: [(0, a.jsx)(g.njP, {
-        selectedItem: w,
+        selectedItem: C,
         type: "top",
         onItemSelect: t => {
-          k(t), (0, u.ws)({
+          w(t), (0, u.ws)({
             forumDemoId: t
           })
         },
         className: v.tags,
-        children: C.map((t, e) => (0, a.jsx)(g.njP.Item, {
+        children: O.map((t, e) => (0, a.jsx)(g.njP.Item, {
           id: e,
           children: t.name
         }, e))
       }), (0, a.jsx)(p.Z, {
-        id: w
+        id: C
       })]
-    }), O && (0, a.jsx)(o.G, {
+    }), S && (0, a.jsx)(o.G, {
       leading: (0, a.jsx)(g.zxk, {
         variant: "secondary",
         text: j.intl.string(j.t.hvVgAQ),
@@ -121,7 +120,7 @@ function y(t) {
           open(x.V8)
         }
       }),
-      actions: T
+      actions: k
     })]
   })
 }

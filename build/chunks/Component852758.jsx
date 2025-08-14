@@ -75,29 +75,16 @@ function A() {
     }
   }, {}, [A.toString()]);
   let R = () => {
-      (0, Chunk809206.FD)(), (0, Chunk481060.ZDy)(async () => {
-        let {
-          default: e
-        } = await require.e("35401").then(require.bind(require, 284549));
-        return t => (0, r.jsx)(e, _({}, t))
-      }, {
-        modalKey: Chunk308569.F0,
-        Layer: Chunk429142.ZP
-      })
-    },
-    I = () => {
-      (0, Chunk481060.ZDy)(async () => {
-        let {
-          default: e
-        } = await Promise.resolve().then(require.bind(require, 607018));
-        return t => (0, r.jsx)(e, _({
-          reason: g.L.USER_ACTION_REQUIRED
-        }, t))
-      }, {
-        modalKey: Chunk815660.M,
-        Layer: Chunk429142.ZP
-      })
-    };
+    (0, Chunk809206.FD)(), (0, Chunk481060.ZDy)(async () => {
+      let {
+        default: e
+      } = await require.e("35401").then(require.bind(require, 284549));
+      return t => (0, r.jsx)(e, _({}, t))
+    }, {
+      modalKey: Chunk308569.F0,
+      Layer: Chunk429142.ZP
+    })
+  };
   return Chunk73800.useEffect(() => (Chunk714338.Z.disable(), () => {
     Chunk714338.Z.enable()
   }), []), Chunk73800.useEffect(() => {
@@ -120,7 +107,7 @@ function A() {
     captchaKey: S,
     onCaptchaVerify: e => {
       c.tn.post({
-        url: x.ANM.CAPTCHA,
+        url: E.ANM.CAPTCHA,
         body: {
           captcha_key: e
         },
@@ -132,7 +119,17 @@ function A() {
     },
     theme: exports,
     onClick: e => {
-      e === x.PUi.EMAIL_OR_PHONE || e === x.PUi.EMAIL || e === x.PUi.REVERIFY_EMAIL ? R() : I()
+      e === E.PUi.EMAIL_OR_PHONE || e === E.PUi.EMAIL || e === E.PUi.REVERIFY_EMAIL ? R() : (0, o.ZDy)(async () => {
+        let {
+          default: e
+        } = await Promise.resolve().then(n.bind(n, 607018));
+        return t => (0, r.jsx)(e, _({
+          reason: h.L.USER_ACTION_REQUIRED
+        }, t))
+      }, {
+        modalKey: x.M,
+        Layer: m.ZP
+      })
     },
     onLogout: () => {
       (0, Chunk481060.ZDy)(async () => {

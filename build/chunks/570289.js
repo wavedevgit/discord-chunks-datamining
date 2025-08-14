@@ -2,7 +2,7 @@
 /** chunk id: 570289, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => b
 });
 var Chunk682404 = require("./682404.js"),
   Chunk657006 = require("./657006.js"),
@@ -11,16 +11,14 @@ var Chunk682404 = require("./682404.js"),
   Chunk193603 = require("./193603.js"),
   Chunk119352 = require("./119352.js"),
   Chunk80383 = require("./80383.js"),
-  u = {
-    midnight: "midnight",
-    noon: "noon",
-    morning: "morning",
-    afternoon: "afternoon",
-    evening: "evening",
-    night: "night"
-  };
+  u = "midnight",
+  d = "noon",
+  f = "morning",
+  _ = "afternoon",
+  p = "evening",
+  h = "night";
 
-function d(e, t) {
+function m(e, t) {
   var n = e > 0 ? "-" : "+",
     r = Math.abs(e),
     i = Math.floor(r / 60),
@@ -30,17 +28,17 @@ function d(e, t) {
   return n + String(i) + a + (0, l.Z)(o, 2)
 }
 
-function f(e, t) {
-  return e % 60 == 0 ? (e > 0 ? "-" : "+") + (0, l.Z)(Math.abs(e) / 60, 2) : _(e, t)
+function g(e, t) {
+  return e % 60 == 0 ? (e > 0 ? "-" : "+") + (0, l.Z)(Math.abs(e) / 60, 2) : E(e, t)
 }
 
-function _(e, t) {
+function E(e, t) {
   var n = t || "",
     r = e > 0 ? "-" : "+",
     i = Math.abs(e);
   return r + (0, l.Z)(Math.floor(i / 60), 2) + n + (0, l.Z)(i % 60, 2)
 }
-let p = {
+let b = {
   G: function(e, t, n) {
     var r = +(e.getUTCFullYear() > 0);
     switch (t) {
@@ -380,7 +378,7 @@ let p = {
   },
   b: function(e, t, n) {
     var r, i = e.getUTCHours();
-    switch (r = 12 === i ? u.noon : 0 === i ? u.midnight : i / 12 >= 1 ? "pm" : "am", t) {
+    switch (r = 12 === i ? d : 0 === i ? u : i / 12 >= 1 ? "pm" : "am", t) {
       case "b":
       case "bb":
         return n.dayPeriod(r, {
@@ -406,7 +404,7 @@ let p = {
   },
   B: function(e, t, n) {
     var r, i = e.getUTCHours();
-    switch (r = i >= 17 ? u.evening : i >= 12 ? u.afternoon : i >= 4 ? u.morning : u.night, t) {
+    switch (r = i >= 17 ? p : i >= 12 ? _ : i >= 4 ? f : h, t) {
       case "B":
       case "BB":
       case "BBB":
@@ -470,24 +468,24 @@ let p = {
     if (0 === i) return "Z";
     switch (t) {
       case "X":
-        return f(i);
+        return g(i);
       case "XXXX":
       case "XX":
-        return _(i);
+        return E(i);
       default:
-        return _(i, ":")
+        return E(i, ":")
     }
   },
   x: function(e, t, n, r) {
     var i = (r._originalDate || e).getTimezoneOffset();
     switch (t) {
       case "x":
-        return f(i);
+        return g(i);
       case "xxxx":
       case "xx":
-        return _(i);
+        return E(i);
       default:
-        return _(i, ":")
+        return E(i, ":")
     }
   },
   O: function(e, t, n, r) {
@@ -496,9 +494,9 @@ let p = {
       case "O":
       case "OO":
       case "OOO":
-        return "GMT" + d(i, ":");
+        return "GMT" + m(i, ":");
       default:
-        return "GMT" + _(i, ":")
+        return "GMT" + E(i, ":")
     }
   },
   z: function(e, t, n, r) {
@@ -507,9 +505,9 @@ let p = {
       case "z":
       case "zz":
       case "zzz":
-        return "GMT" + d(i, ":");
+        return "GMT" + m(i, ":");
       default:
-        return "GMT" + _(i, ":")
+        return "GMT" + E(i, ":")
     }
   },
   t: function(e, t, n, r) {

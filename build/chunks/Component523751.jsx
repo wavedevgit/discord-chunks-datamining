@@ -26,7 +26,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk682947 = require("./682947.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk144494 = require("./144494.js");
+  Chunk73704 = require("./73704.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -217,9 +217,9 @@ function M(e) {
       return h.ZP.isMember(null == a ? true : a.id, null == e ? true : e.id)
     }),
     M = (0, s.e7)([p.Z], () => p.Z.theme),
-    j = (0, O.XX)(a),
-    k = (0, y.i)(j),
-    U = i.useMemo(() => j.premium && L && !A, [A, j.premium, L]),
+    k = (0, O.XX)(a),
+    j = (0, y.i)(k),
+    U = i.useMemo(() => k.premium && L && !A, [A, k.premium, L]),
     G = i.useCallback(e => {
       U && (e.stopPropagation(), e.preventDefault(), (0, f.f)({
         guildId: a.id,
@@ -229,7 +229,7 @@ function M(e) {
         }
       }))
     }, [U, a.id]);
-  if (k === y.Q.NONE) return null;
+  if (j === y.Q.NONE) return null;
   let {
     IconComponent: B,
     backgroundDarkColor: Z,
@@ -239,9 +239,9 @@ function M(e) {
     premiumBackgroundColor: Y,
     premiumForegroundColor: W,
     sizeAdjustment: K
-  } = D[k];
+  } = D[j];
   if (null == B) return null;
-  j.premium && (t = W, n = Y);
+  k.premium && (t = W, n = Y);
   let z = (0, c.wj)(M) ? V : H,
     q = (0, c.wj)(M) ? Z : F;
   t = null != t ? t : z, n = null != n ? n : q;
@@ -251,8 +251,8 @@ function M(e) {
     position: d,
     "aria-label": C,
     text: (0, r.jsx)(x, {
-      badgeType: k,
-      guildTraits: j
+      badgeType: j,
+      guildTraits: k
     }),
     tooltipContentClassName: S.tooltipRemovePadding,
     children: e => (0, r.jsx)(u.P3F, {

@@ -35,13 +35,13 @@ var Chunk255367 = require("./255367.js"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk312841 = require("./312841.js");
+  Chunk204089 = require("./204089.js");
 let M = () => (0, Chunk255367.jsx)("div", {
-    className: Chunk312841.editorHeader,
+    className: Chunk204089.editorHeader,
     children: (0, Chunk255367.jsxs)("div", {
-      className: Chunk312841.bannerUpsell,
+      className: Chunk204089.bannerUpsell,
       children: [(0, Chunk255367.jsx)(Chunk587446.Z, {
-        className: Chunk312841.premiumIcon
+        className: Chunk204089.premiumIcon
       }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
         variant: "heading-md/bold",
         color: "always-white",
@@ -49,7 +49,7 @@ let M = () => (0, Chunk255367.jsx)("div", {
       })]
     })
   }),
-  j = e => {
+  k = e => {
     let {
       markAsDismissed: t
     } = e, n = (0, C.q)(), i = () => {
@@ -71,7 +71,7 @@ let M = () => (0, Chunk255367.jsx)("div", {
       })]
     })
   },
-  k = e => {
+  j = e => {
     var t, n, i;
     let {
       onSubscribeSuccess: o,
@@ -123,7 +123,7 @@ let M = () => (0, Chunk255367.jsx)("div", {
     }, () => L.intl.string(L.t["dqH+qq"])).otherwise(() => L.intl.string(L.t.Olc2Ky));
     return (0, r.jsxs)("div", {
       className: x.editorFooter,
-      children: [o && (0, r.jsx)(k, {
+      children: [o && (0, r.jsx)(j, {
         onSubscribeSuccess: () => {
           c(true)
         },
@@ -167,7 +167,7 @@ function G(e) {
       "data-app-right-panel": true,
       className: a()(x.themeEditor, c ? x.editorAnimate : null),
       children: (0, r.jsxs)(f.y5t, {
-        children: [n ? (0, r.jsx)(M, {}) : (0, r.jsx)(j, {
+        children: [n ? (0, r.jsx)(M, {}) : (0, r.jsx)(k, {
           markAsDismissed: t
         }), (0, r.jsx)(f.Ttm, {
           className: x.editorBody,

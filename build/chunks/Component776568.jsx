@@ -1,9 +1,9 @@
-/** Chunk was on 88333 **/
-/** chunk id: 776568, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 56167 **/
+/** chunk id: 776568, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   ZP: () => O,
-  k: () => g,
-  u9: () => C
+  k: () => p,
+  u9: () => Z
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -21,7 +21,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk981631 = require("./981631.js"),
   Chunk969943 = require("./969943.js"),
   Chunk388032 = require("./388032.jsx");
-let g = () => [{
+let p = () => [{
     value: Chunk969943.Oe.MINUTES_15,
     label: Chunk388032.intl.string(Chunk388032.t["8ot6go"])
   }, {
@@ -40,75 +40,75 @@ let g = () => [{
     value: Chunk969943.Oe.ALWAYS,
     label: Chunk388032.intl.string(Chunk388032.t.r3LawM)
   }],
-  C = e => {
-    let t = e > 0 ? r()().add(e, "second").toISOString() : null;
+  Z = e => {
+    let n = e > 0 ? r()().add(e, "second").toISOString() : null;
     return {
       muted: true,
       mute_config: {
         selected_time_window: e,
-        end_time: t
+        end_time: n
       }
     }
   };
 
-function O(e, t) {
-  let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-    [a, r] = (0, l.Wu)([c.ZP], () => [c.ZP.isChannelMuted(e.guild_id, e.id), c.ZP.getChannelMuteConfig(e.guild_id, e.id)]),
-    b = (0, s.U)(r),
-    O = (0, v.ZP)(e, true);
+function O(e, n) {
+  let t = !(arguments.length > 2) || true === arguments[2] || arguments[2],
+    [l, r] = (0, a.Wu)([f.ZP], () => [f.ZP.isChannelMuted(e.guild_id, e.id), f.ZP.getChannelMuteConfig(e.guild_id, e.id)]),
+    b = (0, c.U)(r),
+    O = (0, h.ZP)(e, true);
 
-  function m(t) {
-    t && e.type === p.d4z.GUILD_CATEGORY && (0, d.c4)(e.id), u.Z.updateChannelOverrideSettings(e.guild_id, e.id, {
-      muted: t
-    }, _.UE.muted(t))
+  function m(n) {
+    n && e.type === v.d4z.GUILD_CATEGORY && (0, u.c4)(e.id), s.Z.updateChannelOverrideSettings(e.guild_id, e.id, {
+      muted: n
+    }, g.UE.muted(n))
   }
-  let E = h.intl.string(h.t.tbeRRE),
-    y = h.intl.string(h.t.OYefmZ);
+  let E = _.intl.string(_.t.tbeRRE),
+    C = _.intl.string(_.t.OYefmZ);
   switch (e.type) {
-    case p.d4z.GUILD_CATEGORY:
-      E = h.intl.string(h.t.pNMCg4), y = h.intl.string(h.t.olaBeH);
+    case v.d4z.GUILD_CATEGORY:
+      E = _.intl.string(_.t.pNMCg4), C = _.intl.string(_.t.olaBeH);
       break;
-    case p.d4z.GROUP_DM:
-      E = h.intl.string(h.t.LO3kaG), y = h.intl.string(h.t["s5/5fn"]);
+    case v.d4z.GROUP_DM:
+      E = _.intl.string(_.t.LO3kaG), C = _.intl.string(_.t["s5/5fn"]);
       break;
-    case p.d4z.DM:
-      E = n ? h.intl.format(h.t.byjuJi, {
+    case v.d4z.DM:
+      E = t ? _.intl.format(_.t.byjuJi, {
         name: O
-      }) : h.intl.string(h.t.LO3kaG), y = n ? h.intl.format(h.t["eC+9rq"], {
+      }) : _.intl.string(_.t.LO3kaG), C = t ? _.intl.format(_.t["eC+9rq"], {
         name: O
-      }) : h.intl.string(h.t["s5/5fn"]);
+      }) : _.intl.string(_.t["s5/5fn"]);
       break;
     default:
-      E = h.intl.string(h.t.tbeRRE), y = h.intl.string(h.t.OYefmZ)
+      E = _.intl.string(_.t.tbeRRE), C = _.intl.string(_.t.OYefmZ)
   }
-  return a ? (0, i.jsx)(o.sNh, {
+  return l ? (0, i.jsx)(o.sNh, {
     id: "unmute-channel",
-    label: y,
+    label: C,
     subtext: b,
     action: () => m(false)
   }) : (0, i.jsx)(o.sNh, {
     id: "mute-channel",
     label: E,
     action: () => {
-      m(true), (0, f.sT)({
+      m(true), (0, d.sT)({
         channelId: e.id,
         location: "channel_context_menu"
       })
     },
-    children: g().map(n => {
+    children: p().map(t => {
       let {
-        value: a,
+        value: l,
         label: r
-      } = n;
+      } = t;
       return (0, i.jsx)(o.sNh, {
-        id: "".concat(a),
+        id: "".concat(l),
         label: r,
-        action: () => (function(n) {
-          e.type === p.d4z.GUILD_CATEGORY && (0, d.c4)(e.id);
-          let i = C(n);
-          u.Z.updateChannelOverrideSettings(e.guild_id, e.id, i, _.ZB.Muted, t)
-        })(a)
-      }, a)
+        action: () => (function(t) {
+          e.type === v.d4z.GUILD_CATEGORY && (0, u.c4)(e.id);
+          let i = Z(t);
+          s.Z.updateChannelOverrideSettings(e.guild_id, e.id, i, g.ZB.Muted, n)
+        })(l)
+      }, l)
     })
   })
 }

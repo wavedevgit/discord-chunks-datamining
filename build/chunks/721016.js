@@ -30,12 +30,12 @@ var r, Chunk220159 = require("./220159.js"),
   A = Chunk424353.TypeError,
   R = Chunk424353.parseInt,
   F = Math.floor,
-  O = Math.pow,
-  E = Chunk764908("".charAt),
+  E = Math.pow,
+  O = Chunk764908("".charAt),
   I = Chunk764908(/./.exec),
   M = Chunk764908([].join),
-  B = Chunk764908(1..toString),
-  T = Chunk764908([].pop),
+  T = Chunk764908(1..toString),
+  B = Chunk764908([].pop),
   D = Chunk764908([].push),
   L = Chunk764908("".replace),
   V = Chunk764908([].shift),
@@ -63,7 +63,7 @@ var r, Chunk220159 = require("./220159.js"),
     if (c.length && "" === c[c.length - 1] && c.length--, (t = c.length) > 4) return e;
     for (r = 0, n = []; r < t; r++) {
       if ("" === (o = c[r])) return e;
-      if (a = 10, o.length > 1 && "0" === E(o, 0) && (a = I(Q, o) ? 16 : 8, o = U(o, 8 === a ? 1 : 2)), "" === o) i = 0;
+      if (a = 10, o.length > 1 && "0" === O(o, 0) && (a = I(Q, o) ? 16 : 8, o = U(o, 8 === a ? 1 : 2)), "" === o) i = 0;
       else {
         if (!I(10 === a ? X : 8 === a ? J : ee, o)) return e;
         i = R(o, a)
@@ -72,9 +72,9 @@ var r, Chunk220159 = require("./220159.js"),
     }
     for (r = 0; r < t; r++)
       if (i = n[r], r === t - 1) {
-        if (i >= O(256, 5 - t)) return null
+        if (i >= E(256, 5 - t)) return null
       } else if (i > 255) return null;
-    for (r = 0, s = T(n); r < n.length; r++) s += n[r] * O(256, 3 - r);
+    for (r = 0, s = B(n); r < n.length; r++) s += n[r] * E(256, 3 - r);
     return s
   },
   es = function(e) {
@@ -83,10 +83,10 @@ var r, Chunk220159 = require("./220159.js"),
       u = null,
       d = 0,
       p = function() {
-        return E(e, d)
+        return O(e, d)
       };
     if (":" === p()) {
-      if (":" !== E(e, 1)) return;
+      if (":" !== O(e, 1)) return;
       d += 2, u = ++l
     }
     for (; p();) {
@@ -139,7 +139,7 @@ var r, Chunk220159 = require("./220159.js"),
       return M(t, ".")
     }
     if ("object" == typeof e) {
-      for (n = 0, t = "", r = ec(e); n < 8; n++)(!o || 0 !== e[n]) && (o && (o = false), r === n ? (t += n ? ":" : "::", o = true) : (t += B(e[n], 16), n < 7 && (t += ":")));
+      for (n = 0, t = "", r = ec(e); n < 8; n++)(!o || 0 !== e[n]) && (o && (o = false), r === n ? (t += n ? ":" : "::", o = true) : (t += T(e[n], 16), n < 7 && (t += ":")));
       return "[" + t + "]"
     }
     return e
@@ -184,11 +184,11 @@ var r, Chunk220159 = require("./220159.js"),
   },
   ey = function(e, t) {
     var n;
-    return 2 === e.length && I(Y, E(e, 0)) && (":" === (n = E(e, 1)) || !t && "|" === n)
+    return 2 === e.length && I(Y, O(e, 0)) && (":" === (n = O(e, 1)) || !t && "|" === n)
   },
   ev = function(e) {
     var t;
-    return e.length > 1 && ey(U(e, 0, 2)) && (2 === e.length || "/" === (t = E(e, 2)) || "\\" === t || "?" === t || "#" === t)
+    return e.length > 1 && ey(U(e, 0, 2)) && (2 === e.length || "/" === (t = O(e, 2)) || "\\" === t || "?" === t || "#" === t)
   },
   eg = {},
   eb = {},
@@ -204,12 +204,12 @@ var r, Chunk220159 = require("./220159.js"),
   eA = {},
   eR = {},
   eF = {},
-  eO = {},
   eE = {},
+  eO = {},
   eI = {},
   eM = {},
-  eB = {},
   eT = {},
+  eB = {},
   eD = {},
   eL = function(e, t, n) {
     var r, o, a, i = b(e);
@@ -248,7 +248,7 @@ eL.prototype = {
               this.isSpecial() && em[this.scheme] === this.port && (this.port = null);
               return
             }
-            i = "", "file" === this.scheme ? o = eF : this.isSpecial() && n && n.scheme === this.scheme ? o = ek : this.isSpecial() ? o = eS : "/" === u[a + 1] ? (o = eC, a++) : (this.cannotBeABaseURL = true, D(this.path, ""), o = eB)
+            i = "", "file" === this.scheme ? o = eF : this.isSpecial() && n && n.scheme === this.scheme ? o = ek : this.isSpecial() ? o = eS : "/" === u[a + 1] ? (o = eC, a++) : (this.cannotBeABaseURL = true, D(this.path, ""), o = eT)
           } else {
             if (t) return K;
             i = "", o = e_, a = 0;
@@ -280,7 +280,7 @@ eL.prototype = {
         case eZ:
           if (this.scheme = n.scheme, d === r) this.username = n.username, this.password = n.password, this.host = n.host, this.port = n.port, this.path = y(n.path), this.query = n.query;
           else if ("/" === d || "\\" === d && this.isSpecial()) o = ew;
-          else if ("?" === d) this.username = n.username, this.password = n.password, this.host = n.host, this.port = n.port, this.path = y(n.path), this.query = "", o = eT;
+          else if ("?" === d) this.username = n.username, this.password = n.password, this.host = n.host, this.port = n.port, this.path = y(n.path), this.query = "", o = eB;
           else if ("#" === d) this.username = n.username, this.password = n.password, this.host = n.host, this.port = n.port, this.path = y(n.path), this.query = n.query, this.fragment = "", o = eD;
           else {
             this.username = n.username, this.password = n.password, this.host = n.host, this.port = n.port, this.path = y(n.path), this.path.length--, o = eM;
@@ -296,7 +296,7 @@ eL.prototype = {
           }
           break;
         case eS:
-          if (o = eN, "/" !== d || "/" !== E(i, a + 1)) continue;
+          if (o = eN, "/" !== d || "/" !== O(i, a + 1)) continue;
           a++;
           break;
         case eN:
@@ -326,7 +326,7 @@ eL.prototype = {
         case eP:
         case eA:
           if (t && "file" === this.scheme) {
-            o = eE;
+            o = eO;
             continue
           }
           if (":" !== d || c)
@@ -358,13 +358,13 @@ eL.prototype = {
           }
           break;
         case eF:
-          if (this.scheme = "file", "/" === d || "\\" === d) o = eO;
+          if (this.scheme = "file", "/" === d || "\\" === d) o = eE;
           else if (n && "file" === n.scheme) switch (d) {
             case r:
               this.host = n.host, this.path = y(n.path), this.query = n.query;
               break;
             case "?":
-              this.host = n.host, this.path = y(n.path), this.query = "", o = eT;
+              this.host = n.host, this.path = y(n.path), this.query = "", o = eB;
               break;
             case "#":
               this.host = n.host, this.path = y(n.path), this.query = n.query, this.fragment = "", o = eD;
@@ -377,14 +377,14 @@ eL.prototype = {
             continue
           }
           break;
-        case eO:
+        case eE:
           if ("/" === d || "\\" === d) {
-            o = eE;
+            o = eO;
             break
           }
           n && "file" === n.scheme && !ev(M(y(u, a), "")) && (ey(n.path[0], true) ? D(this.path, n.path[0]) : this.host = n.host), o = eM;
           continue;
-        case eE:
+        case eO:
           if (d === r || "/" === d || "\\" === d || "?" === d || "#" === d) {
             if (!t && ey(i)) o = eM;
             else if ("" === i) {
@@ -406,19 +406,19 @@ eL.prototype = {
             if (t || "#" !== d) {
               if (d !== r && (o = eM, "/" !== d)) continue
             } else this.fragment = "", o = eD;
-          else this.query = "", o = eT;
+          else this.query = "", o = eB;
           break;
         case eM:
           if (d === r || "/" === d || "\\" === d && this.isSpecial() || !t && ("?" === d || "#" === d)) {
-            if (".." === (v = q(v = i)) || "%2e." === v || ".%2e" === v || "%2e%2e" === v ? (this.shortenPath(), "/" === d || "\\" === d && this.isSpecial() || D(this.path, "")) : "." === (g = i) || "%2e" === q(g) ? "/" === d || "\\" === d && this.isSpecial() || D(this.path, "") : ("file" === this.scheme && !this.path.length && ey(i) && (this.host && (this.host = ""), i = E(i, 0) + ":"), D(this.path, i)), i = "", "file" === this.scheme && (d === r || "?" === d || "#" === d))
+            if (".." === (v = q(v = i)) || "%2e." === v || ".%2e" === v || "%2e%2e" === v ? (this.shortenPath(), "/" === d || "\\" === d && this.isSpecial() || D(this.path, "")) : "." === (g = i) || "%2e" === q(g) ? "/" === d || "\\" === d && this.isSpecial() || D(this.path, "") : ("file" === this.scheme && !this.path.length && ey(i) && (this.host && (this.host = ""), i = O(i, 0) + ":"), D(this.path, i)), i = "", "file" === this.scheme && (d === r || "?" === d || "#" === d))
               for (; this.path.length > 1 && "" === this.path[0];) V(this.path);
-            "?" === d ? (this.query = "", o = eT) : "#" === d && (this.fragment = "", o = eD)
+            "?" === d ? (this.query = "", o = eB) : "#" === d && (this.fragment = "", o = eD)
           } else i += ef(d, ep);
           break;
-        case eB:
-          "?" === d ? (this.query = "", o = eT) : "#" === d ? (this.fragment = "", o = eD) : d !== r && (this.path[0] += ef(d, eu));
-          break;
         case eT:
+          "?" === d ? (this.query = "", o = eB) : "#" === d ? (this.fragment = "", o = eD) : d !== r && (this.path[0] += ef(d, eu));
+          break;
+        case eB:
           t || "#" !== d ? d !== r && ("'" === d && this.isSpecial() ? this.query += "%27" : "#" === d ? this.query += "%23" : this.query += ef(d, eu)) : (this.fragment = "", o = eD);
           break;
         case eD:
@@ -429,8 +429,8 @@ eL.prototype = {
   },
   parseHost: function(e) {
     var t, n, r;
-    if ("[" === E(e, 0)) {
-      if ("]" !== E(e, e.length - 1) || !(t = es(U(e, 1, false)))) return z;
+    if ("[" === O(e, 0)) {
+      if ("]" !== O(e, e.length - 1) || !(t = es(U(e, 1, false)))) return z;
       this.host = t
     } else if (this.isSpecial()) {
       if (I(et, e = g(e)) || null === (t = ei(e))) return z;
@@ -542,7 +542,7 @@ eL.prototype = {
     return module ? "?" + module : ""
   },
   setSearch: function(e) {
-    "" === (e = b(e)) ? this.query = null: ("?" === E(e, 0) && (e = U(e, 1)), this.query = "", this.parse(e, eT)), this.searchParams.update()
+    "" === (e = b(e)) ? this.query = null: ("?" === O(e, 0) && (e = U(e, 1)), this.query = "", this.parse(e, eB)), this.searchParams.update()
   },
   getSearchParams: function() {
     return this.searchParams.facade
@@ -556,7 +556,7 @@ eL.prototype = {
       this.fragment = null;
       return
     }
-    "#" === E(e, 0) && (e = U(e, 1)), this.fragment = "", this.parse(e, eD)
+    "#" === O(e, 0) && (e = U(e, 1)), this.fragment = "", this.parse(e, eD)
   },
   update: function() {
     this.query = this.searchParams.serialize() || null

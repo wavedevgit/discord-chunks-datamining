@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk260483 = require("./260483.js"),
   Chunk314208 = require("./314208.jsx"),
   Chunk124368 = require("./124368.js"),
-  Chunk283196 = require("./283196.js");
+  Chunk712335 = require("./712335.js");
 let v = Chunk73800.memo(function(e) {
   let {
     threadId: t,
@@ -29,7 +29,7 @@ let v = Chunk73800.memo(function(e) {
     onContextMenu: e => (0, o.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("46154"), n.e("57706")]).then(n.bind(n, 422200));
+      } = await Promise.all([n.e("46154"), n.e("18356")]).then(n.bind(n, 422200));
       return t => {
         var n, l;
         return (0, r.jsx)(e, (n = function(e) {

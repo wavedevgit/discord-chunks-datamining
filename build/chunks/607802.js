@@ -18,13 +18,13 @@ require.d(exports, {
   X3: () => q,
   b7: () => S,
   cl: () => Z,
-  g9: () => j,
+  g9: () => k,
   i3: () => G,
   jW: () => D,
   kG: () => V,
   nI: () => M,
   nl: () => X,
-  qc: () => k,
+  qc: () => j,
   s5: () => T,
   zH: () => N
 }), require("./539854.js"), require("./997841.js"), require("./35282.js"), require("./388685.js"), require("./781311.js"), require("./413496.js"), require("./433524.js"), require("./804061.js"), require("./704826.js");
@@ -260,7 +260,7 @@ function M(e) {
   return e.map(e => e.type === o.ZP.NON_TOKEN_TYPE ? e.getFullMatch() : "").join(" ").trim()
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   let r, i, o = e.find((o, a) => t >= o.start && t <= o.end && n >= o.start && n <= o.end ? (null != e[a + 1] && (i = e[a + 1]), true) : (r = o, false));
   return null == o ? null : {
     previousToken: r,
@@ -271,7 +271,7 @@ function j(e, t, n) {
   }
 }
 
-function k(e, t) {
+function j(e, t) {
   let n, {
     currentToken: r,
     nextToken: i,

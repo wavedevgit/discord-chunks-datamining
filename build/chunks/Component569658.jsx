@@ -19,7 +19,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk288076 = require("./288076.js");
+  Chunk821209 = require("./821209.js");
 let S = e => {
   let {
     channel: {

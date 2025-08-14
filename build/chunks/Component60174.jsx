@@ -27,8 +27,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk185923 = require("./185923.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk837601 = require("./837601.js"),
-  Chunk371958 = require("./371958.js");
+  Chunk127947 = require("./127947.js"),
+  Chunk893973 = require("./893973.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -87,7 +87,7 @@ class D extends Chunk73800.Component {
     !Chunk995774 && Chunk659215 && (g = (0, Chunk255367.jsx)(Chunk466794.X, {
       tooltipText: Chunk388032.intl.string(Chunk388032.t.Kfcszs)
     }));
-    let T = Chunk120356 ? Chunk371958 : Chunk837601,
+    let T = Chunk120356 ? Chunk893973 : Chunk127947,
       C = {
         size: "sm",
         color: "currentColor",

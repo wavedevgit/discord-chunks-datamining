@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 413584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -36,7 +36,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk819909 = require("./819909.js");
+  Chunk119802 = require("./119802.js");
 
 function L(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -194,53 +194,42 @@ let G = "WELCOME_CHANNEL",
       description: I,
       channels: E,
       enabled: P
-    } = a, G = () => {
-      null != t && I !== s.description && ((0, C.Es)(t.id, {
-        description: null == I ? true : I.trim()
-      }), x(true))
-    }, B = e => {
+    } = a, G = e => {
       null != t && (o()(e, s.channels) || ((0, C.Es)(t.id, {
         channels: e
       }), x(true)))
-    }, F = e => {
+    }, B = e => {
       null != t && e !== s.enabled && ((0, C.Es)(t.id, {
         enabled: e
       }), v(!c), x(true))
-    }, H = e => {
+    }, F = e => {
       if (null == e) return;
       let t = [...null != E ? E : [], e];
       (0, C.VP)({
         channels: t
-      }), B(t)
-    }, z = e => t => {
-      let n = [...null != E ? E : []];
-      null == t ? n.splice(e, 1) : n[e] = t, (0, C.VP)({
-        channels: n
-      }), B(n), 0 === n.length && P && ((0, C.VP)({
-        enabled: false
-      }), F(false))
-    }, W = (e, t, n) => {
+      }), G(t)
+    }, H = (e, t, n) => {
       if (null == E) return;
       let r = E.indexOf(e),
         i = [...E];
       null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, C.VP)({
         channels: i
-      })), n ? (B(i), p(null)) : p(t)
-    }, V = i.useRef(false);
+      })), n ? (G(i), p(null)) : p(t)
+    }, z = i.useRef(false);
     (0, f.ZP)(() => (null != t && l && (0, g.ZDy)(async () => {
       let {
         default: e
       } = await n.e("39143").then(n.bind(n, 737868));
       return n => (0, r.jsx)(e, M(L({}, n), {
         guildId: t.id,
-        onSave: H
+        onSave: F
       }))
     }, {
       onCloseRequest: () => D.Vq
     }), () => {
-      V.current = true
+      z.current = true
     })), i.useEffect(() => () => {
-      if (V.current && h) {
+      if (z.current && h) {
         let e = [],
           n = [],
           r = false;
@@ -255,8 +244,8 @@ let G = "WELCOME_CHANNEL",
           is_enabled: P
         })
       }
-    }, [h, E, I, P, t, V]), i.useEffect(() => () => (0, C.sm)(), []);
-    let Y = i.useCallback(() => {
+    }, [h, E, I, P, t, z]), i.useEffect(() => () => (0, C.sm)(), []);
+    let W = i.useCallback(() => {
       null != t && w.Z.open(t.id, Z.pNK.ONBOARDING)
     }, [t]);
     return null == t ? null : (0, r.jsxs)(g.hjN, {
@@ -270,7 +259,7 @@ let G = "WELCOME_CHANNEL",
             className: k.noticeIcon
           }), A.intl.format(A.t.oj2vi4, {
             onboardingLink: e => (0, r.jsx)(y.Z, {
-              onClick: Y,
+              onClick: W,
               children: e
             })
           })]
@@ -292,7 +281,7 @@ let G = "WELCOME_CHANNEL",
           })
         },
         onToggle: P || (null == E ? true : E.length) !== 0 ? () => {
-          F(!P)
+          B(!P)
         } : true,
         animateStatus: j,
         firstLine: P ? A.intl.string(A.t.JbB7Qk) : A.intl.string(A.t["/bd0Qk"]),
@@ -333,7 +322,9 @@ let G = "WELCOME_CHANNEL",
                 })
               },
               onBlur: () => {
-                G()
+                null != t && I !== s.description && ((0, C.Es)(t.id, {
+                  description: null == I ? true : I.trim()
+                }), x(true))
               },
               onKeyDown: e => {
                 e.keyCode === Z.yXg.ENTER && e.preventDefault()
@@ -356,8 +347,15 @@ let G = "WELCOME_CHANNEL",
           }), null == E ? true : E.map((e, n) => (0, r.jsx)(U, {
             guildId: t.id,
             welcomeChannel: e,
-            onEdit: z(n),
-            onChannelReorder: W,
+            onEdit: e => {
+              let t = [...null != E ? E : []];
+              null == e ? t.splice(n, 1) : t[n] = e, (0, C.VP)({
+                channels: t
+              }), G(t), 0 === t.length && P && ((0, C.VP)({
+                enabled: false
+              }), B(false))
+            },
+            onChannelReorder: H,
             isDropHovered: n === d,
             index: n
           }, n)), (null == E || E.length < 5) && (0, r.jsx)("div", {
@@ -372,7 +370,7 @@ let G = "WELCOME_CHANNEL",
                 } = await n.e("39143").then(n.bind(n, 737868));
                 return n => (0, r.jsx)(e, M(L({}, n), {
                   guildId: t.id,
-                  onSave: H
+                  onSave: F
                 }))
               }, {
                 onCloseRequest: () => D.Vq

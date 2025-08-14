@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 910595, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -27,7 +27,7 @@ function u(e) {
     text: c.intl.string(c.t.VbpLyc),
     selected: n,
     onClick: function() {
-      (0, l.uL)(s.Z5c.CHANNEL(t.id, a.oC.GUILD_HOME))
+      (0, l.uL)(a.Z5c.CHANNEL(t.id, s.oC.GUILD_HOME))
     }
   })
 }

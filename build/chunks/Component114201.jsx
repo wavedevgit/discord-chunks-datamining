@@ -23,7 +23,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk463031 = require("./463031.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk607006 = require("./607006.js");
+  Chunk259782 = require("./259782.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -137,8 +137,8 @@ function R(e) {
     statisticId: o.E.LOL_TOTAL_KILLS
   }), {
     disabled: M,
-    subtext: j
-  } = C(L, x), k = (0, a.e7)([f.Z, d.Z], () => {
+    subtext: k
+  } = C(L, x), j = (0, a.e7)([f.Z, d.Z], () => {
     let e = d.Z.getGuild(t);
     return f.Z.can(y.Plq.ADMINISTRATOR, e)
   }, [t]), U = i.useRef(null);
@@ -164,7 +164,7 @@ function R(e) {
             label: O.intl.string(O.t.iopWUV),
             action: w,
             disabled: M,
-            subtext: j
+            subtext: k
           }), (0, r.jsx)(s.sNh, {
             id: "leaderboard-modal",
             label: D,
@@ -179,7 +179,7 @@ function R(e) {
                 }))
               }), null == i || i()
             }
-          }), k ? (0, r.jsx)(s.sNh, {
+          }), j ? (0, r.jsx)(s.sNh, {
             id: "leaderboard-settings-modal",
             label: O.intl.string(O.t["QV4/6u"]),
             action: () => {

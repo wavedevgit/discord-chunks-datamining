@@ -1,9 +1,9 @@
-/** Chunk was on 96910 **/
+/** Chunk was on 86031 **/
 /** chunk id: 429368, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  $: () => c,
-  o: () => s
+  $: () => s,
+  o: () => o
 }), require("./388685.js");
 var Chunk94171 = require("./94171.js"),
   Chunk362383 = require("./362383.js"),
@@ -11,18 +11,17 @@ var Chunk94171 = require("./94171.js"),
 let l = (0, Chunk362383.F)(() => ({
     selectionStates: new Map
   }), Chunk94171.X),
-  o = () => ({
-    selectedVariantIndex: 0
-  }),
-  s = (e, t) => {
+  o = (e, t) => {
     var r, n, a, o;
     let s = l();
     return (null == e ? true : e.type) !== i.Z.VARIANTS_GROUP ? 0 : Math.max(0, null != (o = null != (a = null == (r = s.selectionStates.get(e.storeListingId)) ? true : r.selectedVariantIndex) ? a : null == (n = e.variants) ? true : n.findIndex(e => !t.has(e.skuId))) ? o : 0)
   },
-  c = (e, t) => {
+  s = (e, t) => {
     l.setState(r => {
       var n, a, i;
-      let l = null != (n = r.selectionStates.get(e.storeListingId)) ? n : o();
+      let l = null != (n = r.selectionStates.get(e.storeListingId)) ? n : {
+        selectedVariantIndex: 0
+      };
       return {
         selectionStates: new Map(r.selectionStates).set(e.storeListingId, (a = function(e) {
           for (var t = 1; t < arguments.length; t++) {

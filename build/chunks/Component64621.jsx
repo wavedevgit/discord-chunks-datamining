@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk738931 = require("./738931.js"),
+  Chunk705738 = require("./705738.js"),
   Chunk425637 = require("./425637.js"),
   Chunk685741 = require("./685741.js");
 let I = 200,
@@ -50,8 +50,8 @@ function A(e) {
   (0, c.Z)(() => x(true), D() ? I : null);
   let {
     asset: M,
-    assetClassName: j,
-    className: k,
+    assetClassName: k,
+    className: j,
     content: U,
     header: G,
     spacing: B,
@@ -90,11 +90,11 @@ function A(e) {
           null == i || i(e)
         },
         children: (0, r.jsx)(f.ZP, {
-          className: k,
+          className: j,
           asset: (0, r.jsx)("img", {
             alt: "",
             src: M,
-            className: j
+            className: k
           }),
           buttonCTA: b.intl.string(b.t["+IrDzM"]),
           buttonLayout: f._F.STACKED,

@@ -39,8 +39,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk861242 = require("./861242.js"),
-  Chunk247352 = require("./247352.js"),
+  Chunk704543 = require("./704543.js"),
+  Chunk936524 = require("./936524.js"),
   Chunk924482 = require("./924482.js"),
   Chunk774797 = require("./774797.js");
 
@@ -100,7 +100,7 @@ function Z(e) {
             children: (0, b.P9)(et)
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
-            children: er ? j.intl.string(j.t.uQZTBQ) : j.intl.string(j.t.pgUTZG)
+            children: er ? k.intl.string(k.t.uQZTBQ) : k.intl.string(k.t.pgUTZG)
           })]
         })]
       }) : (0, r.jsxs)(s.P3F, {
@@ -127,7 +127,7 @@ function Z(e) {
       })
     },
     es = () => V !== x.lY.MODAL && V !== x.lY.MODAL_V2 ? null : (0, r.jsxs)("div", {
-      className: k.details,
+      className: j.details,
       children: [(0, r.jsx)(P.Z, {
         channel: W,
         guild: Y,
@@ -147,7 +147,7 @@ function Z(e) {
         onUserClick: e => e.stopPropagation(),
         disableUserPopout: e => e === t.id,
         overflowCountColor: "text-muted",
-        "aria-label": j.intl.string(j.t.jNqDh4)
+        "aria-label": k.intl.string(k.t.jNqDh4)
       }), V === x.lY.MODAL_V2 && ec()]
     }),
     el = () => V === x.lY.MODAL || V === x.lY.MODAL_V2 ? null : (0, r.jsx)(w.Z, {
@@ -158,16 +158,16 @@ function Z(e) {
       onClose: F
     }),
     ec = () => t.id === n.id ? null : (0, r.jsx)("div", {
-      className: k.actions,
+      className: j.actions,
       children: (0, r.jsx)(D.Z, {
         channel: W,
         onAction: X,
         onClose: F
       })
     }),
-    eu = null != z ? j.intl.formatToPlainString(j.t["4CQq9f"], {
+    eu = null != z ? k.intl.formatToPlainString(k.t["4CQq9f"], {
       name: z.name
-    }) : j.intl.string(j.t["Jpkr/v"]);
+    }) : k.intl.string(k.t["Jpkr/v"]);
   return (0, r.jsx)(h.Gt, {
     value: q,
     children: (0, r.jsxs)(C.Z, {
@@ -187,9 +187,9 @@ function Z(e) {
           onClose: F
         })
       }), (0, r.jsxs)("div", {
-        className: k.body,
+        className: j.body,
         children: [(0, r.jsxs)("div", {
-          className: k.content,
+          className: j.content,
           children: [ea(), es(), V === x.lY.MODAL && ec()]
         }), el()]
       }), V !== x.lY.MODAL && V !== x.lY.MODAL_V2 && ec()]

@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 474376, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   g: () => E
@@ -21,7 +21,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk383832 = require("./383832.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk56380 = require("./56380.js");
+  Chunk681285 = require("./681285.js");
 
 function E(e) {
   let t = (0, r.e7)([u.default], () => u.default.getCurrentUser()),
@@ -30,14 +30,7 @@ function E(e) {
     {
       multiAccountUsers: C
     } = (0, f.L)(),
-    O = e => {
-      e !== (null == t ? true : t.id) && (m.default.track(x.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
-        location: {
-          section: x.jXE.USER_PROFILE
-        }
-      }), g.yD(e))
-    },
-    v = C.map(r => {
+    O = C.map(r => {
       let s = new c.Z(r),
         o = s.id === (null == t ? true : t.id),
         d = r.tokenStatus === h.q.INVALID,
@@ -83,11 +76,19 @@ function E(e) {
           })
         },
         action: () => {
-          null == e || e(), d ? (0, b.Z)() : O(s.id)
+          if (null == e || e(), d)(0, b.Z)();
+          else {
+            var n;
+            (n = s.id) !== (null == t ? true : t.id) && (m.default.track(x.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+              location: {
+                section: x.jXE.USER_PROFILE
+              }
+            }), g.yD(n))
+          }
         }
       }, s.id)
     });
-  return v.push((0, i.jsxs)(i.Fragment, {
+  return O.push((0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(a.Clw, {}), (0, i.jsx)(a.sNh, {
       id: "manage-accounts",
       label: _.intl.string(_.t.WbFpq6),
@@ -95,5 +96,5 @@ function E(e) {
         null == e || e(), (0, b.Z)()
       }
     })]
-  })), v
+  })), O
 }

@@ -2,8 +2,8 @@
 /** chunk id: 675207, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   VerifyAccountDeekLink: () => E,
-  VerifyAccountLoading: () => m,
-  default: () => S
+  VerifyAccountLoading: () => v,
+  default: () => m
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./457542.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -21,29 +21,29 @@ var Chunk255367 = require("./255367.js"),
   Chunk656649 = require("./656649.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk997928 = require("./997928.js");
-let v = null != window.opener;
+  Chunk130560 = require("./130560.js");
+let S = null != window.opener;
 
-function S() {
+function m() {
   var e, t;
   let n = (0, Chunk114858.k6)(),
     i = (0, Chunk169382.l)(),
-    s = Chunk755721.get("code"),
+    u = Chunk755721.get("code"),
     O = Chunk755721.get("oauth_verifier"),
     b = null != (e = Chunk755721.get("state")) ? module : "",
     y = Chunk755721.get("loading"),
-    S = null != (t = Chunk755721.get("iss")) ? exports : true,
+    m = null != (t = Chunk755721.get("iss")) ? exports : true,
     {
       type: w
     } = (0, Chunk114858.UO)(),
     R = (0, Chunk656649.vJ)(w),
     [A, T] = Chunk73800.useState(false),
-    [x, D] = Chunk73800.useState(false),
+    [D, x] = Chunk73800.useState(false),
     Z = (0, Chunk733427.Z)(),
     k = null == Chunk536285 ? null != Chunk481060 ? Chunk481060 : "" : Chunk536285;
   Chunk73800.useEffect(() => {
     let e;
-    if (null != Chunk997928) return;
+    if (null != Chunk130560) return;
     for (let t of Chunk755721.keys()) exports.startsWith("openid.") && (null == module && (e = {}), module[exports] = Chunk755721.get(exports));
     let t = (0, Chunk656649.vJ)(w);
     !async function() {
@@ -60,7 +60,7 @@ function S() {
             return
           }
           if ([200, 204].includes(r)) {
-            n.replace(C.Z5c.CONNECTIONS_SUCCESS(t)), v && window.close();
+            n.replace(C.Z5c.CONNECTIONS_SUCCESS(t)), S && window.close();
             return
           }(null == c ? true : c.code) != null && i.append("error-code", c.code), n.replace("".concat(C.Z5c.CONNECTIONS_ERROR(t), "?").concat(i.toString()))
         }
@@ -70,11 +70,11 @@ function S() {
           code: k,
           state: Chunk388032,
           openidParams: module,
-          iss: S,
+          iss: m,
           handleCallbackResponse: Chunk255367
         })) return;
-      let c = await h(exports, Chunk388032, k, module, S);
-      0 === Chunk73800 ? T(true) : 1 === Chunk73800 ? require.replace("".concat(Chunk981631.Z5c.CONNECTIONS_ERROR(exports), "?").concat(Chunk755721.toString())) : 3 === Chunk73800 ? Chunk873546.tq ? D(true) : require.replace("".concat(Chunk981631.Z5c.CONNECTIONS_ERROR(exports), "?").concat(Chunk755721.toString())) : j({
+      let c = await h(exports, Chunk388032, k, module, m);
+      0 === Chunk73800 ? T(true) : 1 === Chunk73800 ? require.replace("".concat(Chunk981631.Z5c.CONNECTIONS_ERROR(exports), "?").concat(Chunk755721.toString())) : 3 === Chunk73800 ? Chunk873546.tq ? x(true) : require.replace("".concat(Chunk981631.Z5c.CONNECTIONS_ERROR(exports), "?").concat(Chunk755721.toString())) : j({
         platformType: exports,
         state: Chunk388032,
         handleCallbackResponse: Chunk255367,
@@ -84,10 +84,10 @@ function S() {
         },
         openidParams: module,
         code: k,
-        iss: S
+        iss: m
       })
     }()
-  }, [k, require, Chunk997928, w, Chunk755721, Chunk388032, S]), Chunk73800.useEffect(() => {
+  }, [k, require, Chunk130560, w, Chunk755721, Chunk388032, m]), Chunk73800.useEffect(() => {
     let e;
     if (!A) return;
     let t = 0;
@@ -114,22 +114,22 @@ function S() {
   let I = Chunk73800.useMemo(() => {
     if (null != R) return "discord://".concat(Chunk981631.Z5c.CONNECTIONS(R), "/?").concat(Chunk755721.toString())
   }, [R, Chunk755721]);
-  return null != R && Chunk726542.Z.isSupported(R) ? x ? (0, Chunk255367.jsx)(E, {
+  return null != R && Chunk726542.Z.isSupported(R) ? D ? (0, Chunk255367.jsx)(E, {
     platformType: R,
     deeplink: I,
     onClick: () => {
-      D(false), T(true)
+      x(false), T(true)
     }
-  }) : (0, Chunk255367.jsx)(m, {
+  }) : (0, Chunk255367.jsx)(v, {
     platformType: R
   }) : null
 }
 
-function m(e) {
+function v(e) {
   let {
     platformType: t
   } = e, n = p.Z.get(t);
-  return (0, r.jsxs)(N.UV, {
+  return (0, r.jsxs)(g.UV, {
     platformType: t,
     children: [(0, r.jsx)("div", {
       className: y.message,
@@ -141,7 +141,7 @@ function m(e) {
       children: (0, r.jsx)(i.zx, {
         className: y.btn,
         disabled: true,
-        children: (0, r.jsx)(s.$jN, {
+        children: (0, r.jsx)(u.$jN, {
           itemClassName: y.spinnerItem
         })
       })
@@ -155,7 +155,7 @@ function E(e) {
     onClick: n,
     platformType: c
   } = e, o = p.Z.get(c);
-  return (0, r.jsx)(N.UV, {
+  return (0, r.jsx)(g.UV, {
     platformType: c,
     children: (0, r.jsxs)("div", {
       className: y.buttonContainer,
@@ -164,7 +164,7 @@ function E(e) {
         children: b.intl.format(b.t["6ig6i4"], {
           connectionName: o.name
         })
-      }), (0, r.jsx)(s.P3F, {
+      }), (0, r.jsx)(u.P3F, {
         tag: "a",
         href: t,
         onClick: n,
@@ -186,9 +186,9 @@ async function _(e) {
     iss: o,
     handleCallbackResponse: a
   } = e;
-  if (l.tq || v) returnfalse;
+  if (l.tq || S) returnfalse;
   try {
-    var i, s;
+    var i, u;
     let e = await O.default.request(C.Etm.CONNECTIONS_CALLBACK, (i = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -211,17 +211,17 @@ async function _(e) {
       openid_params: c,
       iss: o,
       state: r
-    }), s = {
+    }), u = {
       providerType: t
-    }, s = null != s ? s : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+    }, u = null != u ? u : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(s)).forEach(function(e) {
-      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+    })(Object(u)).forEach(function(e) {
+      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(u, e))
     }), i)).finally(() => {
       O.default.disconnect()
     });
@@ -232,7 +232,7 @@ async function _(e) {
 }
 async function h(e, t, n, r, c) {
   try {
-    return await u.Z.sessionHandoff(e, t, n, r, c), 0
+    return await s.Z.sessionHandoff(e, t, n, r, c), 0
   } catch (e) {
     var o, l;
     if ((null == e || null == (o = e.body) ? true : o.code) === 10020) return 2;
@@ -251,12 +251,12 @@ async function j(e) {
     iss: a
   } = e;
   try {
-    let e = await u.Z.callback(t, {
+    let e = await s.Z.callback(t, {
       code: l,
       openid_params: o,
       state: n,
       iss: a
-    }, !v);
+    }, !S);
     return r(e), true
   } catch (e) {
     return c(e), true

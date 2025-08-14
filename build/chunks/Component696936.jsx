@@ -1,29 +1,29 @@
-/** Chunk was on 72762 **/
+/** Chunk was on 77512 **/
 /** chunk id: 696936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  W: () => a,
-  Z: () => c
+  W: () => c,
+  Z: () => a
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk729329 = require("./729329.js");
-let a = {
-  RED: Chunk729329.redMessageBlock,
-  YELLOW: Chunk729329.yellowMessageBlock,
-  BROWN: Chunk729329.brownMessageBlock
+  Chunk762641 = require("./762641.js");
+let c = {
+  RED: Chunk762641.redMessageBlock,
+  YELLOW: Chunk762641.yellowMessageBlock,
+  BROWN: Chunk762641.brownMessageBlock
 };
 
-function c(e) {
+function a(e) {
   let {
     color: t,
     icon: n,
     children: i,
-    className: a
+    className: c
   } = e;
-  return (0, r.jsx)(s.kzN, {
+  return (0, r.jsx)(o.kzN, {
     icon: e => (0, r.jsx)(n, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -45,8 +45,8 @@ function c(e) {
       height: 20,
       width: 20
     }, e)),
-    iconClassName: o.messageBlockIcon,
-    className: l()(t, a),
+    iconClassName: s.messageBlockIcon,
+    className: l()(t, c),
     children: i
   })
 }

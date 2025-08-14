@@ -1,7 +1,7 @@
 /** Chunk was on 67544 **/
 /** chunk id: 178043, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => A
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -25,9 +25,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk763283 = require("./763283.jsx"),
   Chunk944548 = require("./944548.jsx"),
   Chunk477839 = require("./477839.js"),
-  Chunk603571 = require("./603571.js"),
+  Chunk511479 = require("./511479.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk26707 = require("./26707.js"),
+  Chunk693337 = require("./693337.js"),
   Chunk300090 = require("./300090.js"),
   Chunk965084 = require("./965084.js"),
   Chunk702536 = require("./702536.js");
@@ -67,7 +67,7 @@ function k(e, t) {
 function M() {
   let [e, t] = (0, Chunk73800.useState)(false);
   return (0, Chunk255367.jsxs)("svg", {
-    className: Chunk26707.mainImage,
+    className: Chunk693337.mainImage,
     xmlns: "http://www.w3.org/2000/svg",
     width: "387",
     height: "445",
@@ -190,8 +190,8 @@ function M() {
       text: (0, Chunk255367.jsx)(Chunk763283.Z, {
         variant: "text-xs/medium",
         color: "always-white",
-        className: Chunk26707.tooltipText,
-        children: Chunk388032.intl.format(Chunk603571.default.HB1We3, {
+        className: Chunk693337.tooltipText,
+        children: Chunk388032.intl.format(Chunk511479.default.HB1We3, {
           thanksHook: (e, t) => (0, r.jsx)(v.Z, {
             className: Z.link,
             tag: "a",
@@ -201,7 +201,7 @@ function M() {
           }, t)
         })
       }),
-      "aria-label": Chunk388032.intl.formatToPlainString(Chunk603571.default.HB1We3, {
+      "aria-label": Chunk388032.intl.formatToPlainString(Chunk511479.default.HB1We3, {
         thanksHook: e => e.join()
       }),
       shouldShow: module,
@@ -279,33 +279,32 @@ function M() {
     })]
   })
 }
-let R = e => [{
-  string: _.default.JsWx19,
-  value: e.playTime
-}, {
-  string: _.default.kJVOLy,
-  value: e.timesClicked
-}, {
-  string: _.default.sm0Dw8,
-  value: e.lifetimePoints
-}];
 
-function A() {
-  let e = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
-    [t, n, s] = (0, Chunk442837.Wu)([Chunk120421.Z], () => [(0, Chunk429551.m)((Chunk120421.Z.endTime - Chunk120421.Z.startTime) / 1e3), (0, Chunk340078.u)(Chunk120421.Z.getContributionsForItem(Chunk477839.yN.CLICKER_BUTTON), module), (0, Chunk340078.u)(Math.floor(Chunk120421.Z.lifetimePoints), module)], [module]),
-    o = R({
-      playTime: exports,
-      timesClicked: require,
-      lifetimePoints: Chunk73800
-    });
+function R() {
+  let e, t = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
+    [n, s, o] = (0, Chunk442837.Wu)([Chunk120421.Z], () => [(0, Chunk429551.m)((Chunk120421.Z.endTime - Chunk120421.Z.startTime) / 1e3), (0, Chunk340078.u)(Chunk120421.Z.getContributionsForItem(Chunk477839.yN.CLICKER_BUTTON), exports), (0, Chunk340078.u)(Math.floor(Chunk120421.Z.lifetimePoints), exports)], [exports]),
+    a = (e = {
+      playTime: require,
+      timesClicked: Chunk73800,
+      lifetimePoints: Chunk120356
+    }, [{
+      string: Chunk511479.default.JsWx19,
+      value: module.playTime
+    }, {
+      string: Chunk511479.default.kJVOLy,
+      value: module.timesClicked
+    }, {
+      string: Chunk511479.default.sm0Dw8,
+      value: module.lifetimePoints
+    }]);
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk26707.stats,
+    className: Chunk693337.stats,
     children: [(0, Chunk255367.jsx)(Chunk763283.Z, {
-      className: Chunk26707.statsHeader,
+      className: Chunk693337.statsHeader,
       variant: "heading-xxl/medium",
       color: "none",
-      children: Chunk388032.intl.string(Chunk603571.default.Z84a2d)
-    }), Chunk120356.map((e, t) => (0, r.jsx)(j.Z, {
+      children: Chunk388032.intl.string(Chunk511479.default.Z84a2d)
+    }), a.map((e, t) => (0, r.jsx)(j.Z, {
       variant: "text-sm/medium",
       color: "always-white",
       children: C.intl.format(e.string, {
@@ -318,12 +317,12 @@ function A() {
   })
 }
 
-function T(e) {
+function A(e) {
   let {
     className: t
   } = e, {
     analyticsLocations: o
-  } = (0, d.ZP)(), [f, p] = (0, s.useState)(false), h = (0, c.e7)([y.Z], () => y.Z.isRedeemingPrize), v = (0, c.e7)([m.default], () => m.default.getCurrentUser()), [N, R] = (0, c.Wu)([g.Z], () => [g.Z.isEntitledToSku(v, P.VU, P.oK), g.Z.isFetchingForApplication(P.oK)]);
+  } = (0, d.ZP)(), [f, p] = (0, s.useState)(false), h = (0, c.e7)([y.Z], () => y.Z.isRedeemingPrize), v = (0, c.e7)([m.default], () => m.default.getCurrentUser()), [N, A] = (0, c.Wu)([g.Z], () => [g.Z.isEntitledToSku(v, P.VU, P.oK), g.Z.isFetchingForApplication(P.oK)]);
   return (0, O.is)(i.Z, false), (0, s.useEffect)(() => {
     (0, u.yD)(P.oK)
   }, []), (0, r.jsxs)("div", {
@@ -340,7 +339,7 @@ function T(e) {
       }), (0, r.jsx)("div", {
         className: Z.groundRight
       })]
-    }), (0, r.jsx)(A, {}), (0, r.jsxs)("div", {
+    }), (0, r.jsx)(R, {}), (0, r.jsxs)("div", {
       className: Z.imagery,
       children: [(0, r.jsx)("img", {
         className: Z.windowImage,
@@ -358,7 +357,7 @@ function T(e) {
         src: E,
         alt: ""
       }), (0, r.jsx)(x.Z, {
-        disabled: R || h,
+        disabled: A || h,
         color: "green",
         onMouseEnter: () => p(true),
         onMouseLeave: () => p(false),

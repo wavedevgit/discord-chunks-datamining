@@ -1,4 +1,4 @@
-/** Chunk was on 21087 **/
+/** Chunk was on 54273 **/
 /** chunk id: 915718, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -33,7 +33,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk921944 = require("./921944.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk261834 = require("./261834.js");
+  Chunk765476 = require("./765476.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -172,8 +172,8 @@ class D extends Chunk73800.PureComponent {
     }), A(this, "handleJoinVideoCall", () => {
       let {
         appContext: e
-      } = this.props;
-      (0, x.Z)(() => this.handleJoinCall(true), e)
+      } = this.props, t = () => this.handleJoinCall(true);
+      (0, x.Z)(t, e)
     }), A(this, "handleBrowserNotSupported", () => {
       (0, y.Z)()
     })

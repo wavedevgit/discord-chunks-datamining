@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 456677, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -52,15 +52,6 @@ function c(e) {
     })(Object(l)).forEach(function(e) {
       Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
     }), i))
-  }, g = e => async n => {
-    let r = t.actions.find(t => t.type === e),
-      i = null != r,
-      l = u[e],
-      a = n ? r : l;
-    if (null != a && (!i || n)) {
-      let n = d[e];
-      null != n ? m(true, await n(t, a)) : m(true, a)
-    } else m(false, i ? r : l)
   };
   return (0, r.jsx)(r.Fragment, {
     children: c.map(e => {
@@ -70,7 +61,16 @@ function c(e) {
         triggerType: t.triggerType,
         action: null != n ? n : u[e],
         toggled: null != n,
-        onToggleAction: g(e)
+        onToggleAction: async n => {
+          let r = t.actions.find(t => t.type === e),
+            i = null != r,
+            l = u[e],
+            a = n ? r : l;
+          if (null != a && (!i || n)) {
+            let n = d[e];
+            null != n ? m(true, await n(t, a)) : m(true, a)
+          } else m(false, i ? r : l)
+        }
       }, e)
     })
   })

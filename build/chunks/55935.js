@@ -40,7 +40,7 @@ function h(e, t) {
 }
 
 function m(e, t) {
-  return Math.abs(+e - +t) <= f && e.getDate() === t.getDate()
+  return Math.abs(e - t) <= f && e.getDate() === t.getDate()
 }
 
 function g(e, t, n) {

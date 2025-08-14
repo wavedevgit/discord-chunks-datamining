@@ -27,15 +27,15 @@ var Chunk255367 = require("./255367.js"),
   Chunk823379 = require("./823379.js"),
   Chunk102172 = require("./102172.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk676462 = require("./676462.js"),
+  Chunk637824 = require("./637824.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk45011 = require("./45011.js");
+  Chunk603410 = require("./603410.js");
 
 function T(e) {
   let {
     result: t,
     onSelectChannel: n
-  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([C.ZP, S.default], () => C.ZP.getVoiceStatesForChannel(t.record).map(e => S.default.getUser(e.user.id)).filter(y.lm));
+  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([C.ZP, b.default], () => C.ZP.getVoiceStatesForChannel(t.record).map(e => b.default.getUser(e.user.id)).filter(y.lm));
   return (0, r.jsxs)(a.P3F, {
     className: N.channelResult,
     onClick: () => n(t.record.id),
@@ -80,9 +80,9 @@ function E(e) {
     searchOptions: {
       frecencyBoosters: true
     }
-  }), S = (0, o.Wu)([b.Z, _.ZP, x.Z, v.Z, j.Z], () => {
+  }), b = (0, o.Wu)([S.Z, _.ZP, x.Z, v.Z, j.Z], () => {
     let e = [],
-      t = b.Z.getGuildId();
+      t = S.Z.getGuildId();
     if (null == t) return e;
     for (let n of _.ZP.getVocalChannelIds(t)) {
       let t = x.Z.getChannel(n);
@@ -100,9 +100,9 @@ function E(e) {
     return e
   }), E = i.useMemo(() => {
     let e = new Set(C.map(e => e.id)),
-      t = new Set(S.map(e => e.id));
-    return [...S.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, d.Z)(e.id)).filter(y.lm), ...C.filter(e => !t.has(e.id)).map(e => (0, d.Z)(e.id)).filter(y.lm)]
-  }, [C, S]), R = "" !== u ? p : E;
+      t = new Set(b.map(e => e.id));
+    return [...b.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, d.Z)(e.id)).filter(y.lm), ...C.filter(e => !t.has(e.id)).map(e => (0, d.Z)(e.id)).filter(y.lm)]
+  }, [C, b]), R = "" !== u ? p : E;
   return (0, r.jsxs)("div", {
     className: s()(N.root, n),
     children: [(0, r.jsx)(a.E1j, {
@@ -144,20 +144,20 @@ function E(e) {
 
 function P() {
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk45011.emptyState,
+    className: Chunk603410.emptyState,
     children: [(0, Chunk255367.jsx)(Chunk481060._Ve, {
-      className: Chunk45011.emptyIcon,
+      className: Chunk603410.emptyIcon,
       size: "md",
       color: Chunk481060.TVs.colors.ICON_MUTED
     }), (0, Chunk255367.jsx)(Chunk481060.Text, {
-      className: Chunk45011.emptyHeader,
+      className: Chunk603410.emptyHeader,
       variant: "text-lg/medium",
       color: "header-primary",
-      children: Chunk388032.intl.string(Chunk676462.default.sWGfr6)
+      children: Chunk388032.intl.string(Chunk637824.default.sWGfr6)
     }), (0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      children: Chunk388032.intl.string(Chunk676462.default.nBRtt7)
+      children: Chunk388032.intl.string(Chunk637824.default.nBRtt7)
     })]
   })
 }

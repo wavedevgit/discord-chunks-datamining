@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 358924, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => el
+  Z: () => ei
 }), require("./388685.js");
 var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -46,13 +46,9 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk599706 = require("./599706.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk954275 = require("./954275.js");
-let K = {
-    SMALL: 64,
-    LARGE: 160
-  },
-  q = [14, 14, 12, 12, 10, 8, 6],
-  X = function(e) {
+  Chunk84822 = require("./84822.js");
+let K = [14, 14, 12, 12, 10, 8, 6],
+  q = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
     return (0, i.jsx)(u.Text, {
       className: o()(Y.textContent, t),
@@ -60,7 +56,7 @@ let K = {
       children: e
     })
   },
-  Q = function(e) {
+  X = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
     return (0, i.jsx)(u.Text, {
       className: o()(Y.textContent, t),
@@ -68,7 +64,7 @@ let K = {
       children: e
     })
   },
-  J = (0, Chunk438139.Z)(e => {
+  Q = (0, Chunk438139.Z)(e => {
     let {
       message: t
     } = e;
@@ -77,7 +73,7 @@ let K = {
       children: t
     })
   }),
-  $ = e => {
+  J = e => {
     let {
       children: t
     } = e;
@@ -86,21 +82,20 @@ let K = {
       children: t
     })
   };
-class ee extends Chunk73800.Component {
+class $ extends Chunk73800.Component {
   renderTimePlayed() {
-    let e, {
-        activity: t
-      } = this.props,
-      {
-        timestamps: n
-      } = exports;
-    return null == require || !(0, Chunk833664.Z)(exports) || (0, Chunk503438.Z)(exports) ? null : Q((0, Chunk122810.Z)(exports) ? (0, Chunk255367.jsx)(J, {
-      timestamps: require
+    let {
+      activity: e
+    } = this.props, {
+      timestamps: t
+    } = module;
+    return null == exports || !(0, Chunk833664.Z)(module) || (0, Chunk503438.Z)(module) ? null : X((0, Chunk122810.Z)(module) ? (0, Chunk255367.jsx)(Q, {
+      timestamps: exports
     }) : (0, Chunk255367.jsx)(Chunk707409.ZP, {
-      start: require.start,
-      end: require.end,
+      start: exports.start,
+      end: exports.end,
       location: Chunk707409.ZP.Locations.USER_ACTIVITY,
-      className: Chunk954275.__invalid_playTime
+      className: Chunk84822.__invalid_playTime
     }))
   }
   render() {
@@ -114,38 +109,38 @@ class ee extends Chunk73800.Component {
       },
       getAssetImage: c
     } = this.props;
-    return (0, Chunk255367.jsx)($, {
+    return (0, Chunk255367.jsx)(J, {
       children: (0, Chunk255367.jsxs)("div", {
-        className: Chunk954275.activitySection,
+        className: Chunk84822.activitySection,
         children: [null != r && 0 !== Object.keys(r).length ? (0, Chunk255367.jsxs)("div", {
-          className: Chunk954275.activitySectionAssets,
+          className: Chunk84822.activitySectionAssets,
           children: [(0, Chunk255367.jsx)("img", {
             alt: null != (e = r.large_text) ? module : "",
-            src: Chunk692547(Chunk442837, r.large_image, [K.LARGE, K.LARGE]),
-            className: o()(Chunk954275.largeImage, {
-              [Chunk954275.largeImageMask]: null != r.small_image
+            src: Chunk692547(Chunk442837, r.large_image, [160, 160]),
+            className: o()(Chunk84822.largeImage, {
+              [Chunk84822.largeImageMask]: null != r.small_image
             })
           }), null != r.small_image ? (0, Chunk255367.jsx)("img", {
             alt: null != (t = r.small_text) ? exports : "",
-            src: Chunk692547(Chunk442837, r.small_image, [K.SMALL, K.SMALL]),
-            className: Chunk954275.smallImage
+            src: Chunk692547(Chunk442837, r.small_image, [64, 64]),
+            className: Chunk84822.smallImage
           }) : null]
         }) : (0, Chunk255367.jsx)("div", {
-          className: Chunk954275.activitySectionAssets,
+          className: Chunk84822.activitySectionAssets,
           children: (0, Chunk255367.jsx)("img", {
             alt: "",
             src: require("./211827.js"),
-            className: Chunk954275.largeImage
+            className: Chunk84822.largeImage
           })
         }), (0, Chunk255367.jsxs)("div", {
-          children: [X(null != Chunk73800 && "" !== Chunk73800 ? Chunk73800 : Chunk388032.intl.string(Chunk388032.t["2TbM/P"])), null != Chunk120356 ? Q(Chunk120356) : null, this.renderTimePlayed()]
+          children: [q(null != Chunk73800 && "" !== Chunk73800 ? Chunk73800 : Chunk388032.intl.string(Chunk388032.t["2TbM/P"])), null != Chunk120356 ? X(Chunk120356) : null, this.renderTimePlayed()]
         })]
       })
     })
   }
 }
-var et = ((r = et || {}).XBOX = "XBOX", r.SPOTIFY = "SPOTIFY", r.MULTIPLE = "MULTIPLE", r);
-let en = e => {
+var ee = ((r = ee || {}).XBOX = "XBOX", r.SPOTIFY = "SPOTIFY", r.MULTIPLE = "MULTIPLE", r);
+let et = e => {
   let t, {
     src: n,
     onClick: r,
@@ -188,8 +183,8 @@ let en = e => {
     children: t
   }) : t
 };
-en.Src = et;
-let er = e => {
+et.Src = ee;
+let en = e => {
   let {
     priorityUser: t,
     title: n,
@@ -232,8 +227,8 @@ let er = e => {
     }) : l]
   })
 };
-er.Icon = en;
-let ei = e => {
+en.Icon = et;
+let er = e => {
   var t, n, {
       children: r,
       className: l
@@ -288,7 +283,7 @@ let ei = e => {
     }), t))
   })
 };
-ei.Header = er, ei.Body = e => {
+er.Header = en, er.Body = e => {
   let {
     children: t
   } = e;
@@ -298,7 +293,7 @@ ei.Header = er, ei.Body = e => {
     className: Y.body,
     children: t
   })
-}, ei.Separator = e => {
+}, er.Separator = e => {
   let {
     inset: t,
     className: n
@@ -308,7 +303,7 @@ ei.Header = er, ei.Body = e => {
       [Y.inset]: t
     }, n)
   })
-}, ei.VoiceSection = e => {
+}, er.VoiceSection = e => {
   var t;
   let {
     guild: n,
@@ -317,7 +312,7 @@ ei.Header = er, ei.Body = e => {
     members: s,
     onChannelContextMenu: c
   } = e, p = l.useRef(null), f = (0, C.ZP)(r, true), h = (0, R.EB)(n, 32), g = (0, R.gM)(n);
-  return (0, i.jsx)($, {
+  return (0, i.jsx)(J, {
     children: (0, i.jsxs)("div", {
       className: Y.voiceSection,
       ref: p,
@@ -337,7 +332,7 @@ ei.Header = er, ei.Body = e => {
             children: (0, i.jsx)("div", {
               className: Y.voiceSectionNoGuildImage,
               style: {
-                fontSize: null != (t = q[g.length]) ? t : q[q.length - 1]
+                fontSize: null != (t = K[g.length]) ? t : K[K.length - 1]
               },
               children: g
             })
@@ -359,7 +354,7 @@ ei.Header = er, ei.Body = e => {
         },
         children: (0, i.jsxs)("div", {
           className: Y.voiceSectionDetails,
-          children: [X(n.name, Y.voiceSectionText), Q(f, Y.voiceSectionText)]
+          children: [q(n.name, Y.voiceSectionText), X(f, Y.voiceSectionText)]
         })
       }), (0, i.jsx)(F.Z, {
         partySize: a,
@@ -368,14 +363,14 @@ ei.Header = er, ei.Body = e => {
       })]
     })
   })
-}, ei.GameSection = e => {
+}, er.GameSection = e => {
   let {
     icon: t,
     name: n,
     partySize: r,
     members: l
   } = e;
-  return (0, i.jsx)($, {
+  return (0, i.jsx)(J, {
     children: (0, i.jsxs)("div", {
       className: Y.gameSection,
       children: [null != t ? (0, i.jsx)("img", {
@@ -383,7 +378,7 @@ ei.Header = er, ei.Body = e => {
         src: t,
         className: Y.gameSectionIcon
       }) : null, (0, i.jsxs)("div", {
-        children: [X(n), Q(W.intl.formatToPlainString(W.t.C4WXvb, {
+        children: [q(n), X(W.intl.formatToPlainString(W.t.C4WXvb, {
           memberCount: r.totalSize
         }))]
       }), (0, i.jsx)(F.Z, {
@@ -392,22 +387,22 @@ ei.Header = er, ei.Body = e => {
       })]
     })
   })
-}, ei.RichPresenceSection = ee, ei.XboxSection = e => {
+}, er.RichPresenceSection = $, er.XboxSection = e => {
   let {
     title: t
   } = e;
-  return (0, i.jsx)($, {
+  return (0, i.jsx)(J, {
     children: (0, i.jsxs)("div", {
       className: Y.xboxSection,
       children: [(0, i.jsx)(G.Z, {
         className: Y.xboxSectionIcon
       }), (0, i.jsxs)("div", {
         className: Y.__invalid_xboxSectionDetails,
-        children: [X(t), Q(W.intl.string(W.t["JG9r+/"]))]
+        children: [q(t), X(W.intl.string(W.t["JG9r+/"]))]
       })]
     })
   })
-}, ei.SpotifySection = e => {
+}, er.SpotifySection = e => {
   var t;
   let {
     activity: {
@@ -421,14 +416,14 @@ ei.Header = er, ei.Body = e => {
     isSolo: d,
     getAssetImage: p
   } = e;
-  return (0, i.jsx)($, {
+  return (0, i.jsx)(J, {
     children: (0, i.jsxs)("div", {
       className: Y.spotifySection,
       children: [null != n ? (0, i.jsxs)("div", {
         className: Y.activitySectionAssets,
         children: [(0, i.jsx)("img", {
           alt: null != (t = n.large_text) ? t : "",
-          src: p(a, n.large_image, [K.LARGE, K.LARGE]),
+          src: p(a, n.large_image, [160, 160]),
           className: o()(Y.largeImage, Y.borderRadius0, {
             [Y.largeImageMask]: null != n.small_image
           })
@@ -437,7 +432,7 @@ ei.Header = er, ei.Body = e => {
           color: c.Z.unsafe_rawColors.SPOTIFY.css
         })]
       }) : (0, i.jsx)("div", {}), (0, i.jsxs)("div", {
-        children: [null != r ? X(r) : null, null != l ? Q(l) : null]
+        children: [null != r ? q(r) : null, null != l ? X(l) : null]
       }), (0, i.jsx)(F.Z, {
         minAvatarsShown: d ? 2 : 1,
         partySize: s,
@@ -445,7 +440,7 @@ ei.Header = er, ei.Body = e => {
       })]
     })
   })
-}, ei.TwitchSection = e => {
+}, er.TwitchSection = e => {
   let t, {
       activity: r,
       user: l,
@@ -479,7 +474,7 @@ ei.Header = er, ei.Body = e => {
       })
     })
   }
-  return (0, i.jsxs)($, {
+  return (0, i.jsxs)(J, {
     children: [(0, i.jsxs)("div", {
       className: o()({
         [Y.twitchSectionSimple]: null == l,
@@ -490,7 +485,7 @@ ei.Header = er, ei.Body = e => {
         src: h.Z.get(z.ABu.TWITCH).icon.lightSVG,
         className: Y.twitchSectionIcon
       }), (0, i.jsxs)("div", {
-        children: [X(c), null != d ? Q(d) : null]
+        children: [q(c), null != d ? X(d) : null]
       }), null != l ? (0, i.jsx)(u.qEK, {
         src: l.getAvatarURL(s, 24),
         "aria-label": l.username,
@@ -499,7 +494,7 @@ ei.Header = er, ei.Body = e => {
       }) : null]
     }), t]
   })
-}, ei.ApplicationStreamingSection = e => {
+}, er.ApplicationStreamingSection = e => {
   var t, n;
   let {
     activity: r,
@@ -520,7 +515,7 @@ ei.Header = er, ei.Body = e => {
       children: (0, j.P9)(f)
     })]
   }), g = null != (n = null == (t = (0, y.Z)(r, a)) ? true : t.activityText) ? n : W.intl.string(W.t.eXan7O);
-  return (0, i.jsxs)($, {
+  return (0, i.jsxs)(J, {
     children: [(0, i.jsxs)("div", {
       className: Y.applicationStreamingSection,
       children: [(0, i.jsx)(u.qEK, {
@@ -529,13 +524,13 @@ ei.Header = er, ei.Body = e => {
         "aria-label": l.username,
         className: Y.applicationStreamingAvatar
       }), (0, i.jsxs)("div", {
-        children: [X(H.ZP.getName(l)), Q(g)]
+        children: [q(H.ZP.getName(l)), X(g)]
       }), (0, i.jsx)(S.ZP, {
         size: S.ZP.Sizes.SMALL
       })]
     }), h]
   })
-}, ei.EmbeddedActivitySection = e => {
+}, er.EmbeddedActivitySection = e => {
   let {
     activity: t,
     channel: n,
@@ -560,7 +555,7 @@ ei.Header = er, ei.Body = e => {
       start: t.created_at
     } : true,
     O = (0, V.xF)(b.id, o, 300);
-  return (0, i.jsxs)($, {
+  return (0, i.jsxs)(J, {
     children: [(0, i.jsxs)("div", {
       className: Y.embeddedActivityTopRow,
       children: [(0, i.jsx)(P.Z, {
@@ -578,7 +573,7 @@ ei.Header = er, ei.Body = e => {
         children: (0, i.jsx)(u.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
-          children: (0, i.jsx)(J, {
+          children: (0, i.jsx)(Q, {
             timestamps: _
           })
         })
@@ -615,4 +610,4 @@ ei.Header = er, ei.Body = e => {
     })]
   })
 };
-let el = ei
+let ei = er

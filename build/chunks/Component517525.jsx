@@ -26,7 +26,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk636073 = require("./636073.js");
+  Chunk386393 = require("./386393.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -84,10 +84,10 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
   M = {
     borderRadius: "".concat(P, "px ").concat(P, "px ").concat(P, "px ").concat(P, "px")
   },
-  j = {
+  k = {
     borderRadius: "0px ".concat(P, "px ").concat(P, "px 0px")
   },
-  k = {
+  j = {
     mass: 1,
     tension: 500,
     friction: 18,
@@ -121,20 +121,20 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     }
     let M = t || o,
       {
-        location: j
+        location: k
       } = (0, _.O)(),
-      k = (0, c.e7)([g.default], () => g.default.getCurrentUser()),
-      U = l && !b.ZP.isPremium(k, I.p9.TIER_1) && !b.ZP.canStreamQuality(b.ZP.StreamQuality.MID, k),
+      j = (0, c.e7)([g.default], () => g.default.getCurrentUser()),
+      U = l && !b.ZP.isPremium(j, I.p9.TIER_1) && !b.ZP.canStreamQuality(b.ZP.StreamQuality.MID, j),
       G = i.useCallback(() => {
         U && M && (0, f.ZDy)(async () => {
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
           return t => (0, r.jsx)(e, R(N({}, t), {
-            analyticsSource: j
+            analyticsSource: k
           }))
         })
-      }, [U, M, j]),
+      }, [U, M, k]),
       B = () => x ? T.intl.string(T.t.q8TiVl) : M ? T.intl.string(T.t.IHgpEh) : T.intl.string(T.t.vLb0VV);
     if (i.useEffect(() => {
         !A && M && (E.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, {
@@ -196,11 +196,11 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           to: g.enabled ? x : D
         },
         leave: g.enabled ? L : w,
-        config: k
+        config: j
       }, "animate-always"),
       O = (0, f.q_F)({
-        to: E ? j : M,
-        config: k
+        to: E ? k : M,
+        config: j
       }, "animate-always");
     return (e => {
       let {

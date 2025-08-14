@@ -15,7 +15,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk525220 = require("./525220.js"),
   Chunk481060 = require("./481060.js"),
   Chunk939350 = require("./939350.js"),
-  Chunk968769 = require("./968769.js");
+  Chunk334405 = require("./334405.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,15 +81,15 @@ function b(e) {
     iconProps: x,
     sparkle: M
   } = e, {
-    onSelect: j,
-    onInteraction: k
+    onSelect: k,
+    onInteraction: j
   } = i.useContext(c.p), U = i.useRef(null), G = i.useCallback(e => {
     var t;
-    if (null == k || k({
+    if (null == j || j({
         type: c.U.DEFAULT
       }), null == A) returnfalse;
-    e.shiftKey && D || L || N(), e.persist(), null == j || j(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => A(e))
-  }, [A, N, j, D, L, k]);
+    e.shiftKey && D || L || N(), e.persist(), null == k || k(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => A(e))
+  }, [A, N, k, D, L, j]);
   return i.useEffect(() => {
     T && ((0, u.F)(U), null == C || C())
   }, [T, C]), (0, r.jsxs)(s.P, E(m({

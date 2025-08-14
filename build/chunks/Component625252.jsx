@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 625252, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk110560 = require("./110560.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk36215 = require("./36215.js"),
+  Chunk154115 = require("./154115.js"),
   Chunk66094 = require("./66094.js");
 
 function x() {
@@ -51,19 +51,19 @@ function x() {
       }, (0, Chunk617136.mH)(Chunk497505.jn.QUEST_HOME_MOVE_CALLOUT)))
     }, []);
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk36215.container,
+    className: Chunk154115.container,
     style: exports,
     children: (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
-      className: Chunk36215.textContainer,
+      className: Chunk154115.textContainer,
       justify: "space-between",
       children: [(0, Chunk255367.jsxs)(Chunk481060.Kqy, {
         gap: 4,
         children: [(0, Chunk255367.jsxs)("div", {
-          className: Chunk36215.headerContainer,
+          className: Chunk154115.headerContainer,
           children: [(0, Chunk255367.jsx)("img", {
             alt: "",
             src: Chunk66094,
-            className: Chunk36215.icon
+            className: Chunk154115.icon
           }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
             variant: "heading-lg/bold",
             color: "always-white",

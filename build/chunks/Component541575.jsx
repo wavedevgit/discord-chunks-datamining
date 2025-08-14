@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 541575, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -16,7 +16,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk30513 = require("./30513.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk179386 = require("./179386.js");
+  Chunk155470 = require("./155470.js");
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -56,19 +56,8 @@ let x = function(e) {
     role: j
   } = e, v = (0, c.oC)(t.id, j), {
     analyticsLocations: _
-  } = (0, a.ZP)(), O = () => {
-    (0, i.ZDy)(async () => {
-      let {
-        default: e
-      } = await n.e("22942").then(n.bind(n, 660727));
-      return n => (0, r.jsx)(e, b(f({}, n), {
-        guildId: t.id,
-        onUploadIcon: e => (0, u._l)(j.id, e, null),
-        onSelectUnicodeEmoji: e => (0, u._l)(j.id, null, e)
-      }))
-    })
-  }, y = t.features.has(m.oNc.ROLE_ICONS), C = e => {
-    y || ((0, l.yw)(m.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+  } = (0, a.ZP)(), O = t.features.has(m.oNc.ROLE_ICONS), y = e => {
+    O || ((0, l.yw)(m.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: b(f({}, e), {
         section: m.jXE.CUSTOM_ROLE_ICONS_TOOLTIP
       }),
@@ -84,13 +73,13 @@ let x = function(e) {
       guild: t,
       perks: (0, g.Yp)()
     }))
-  }, N = (0, r.jsx)(o.Z, {
+  }, C = (0, r.jsx)(o.Z, {
     className: h.availabilityIndicator,
     guild: t,
     guildFeature: m.oNc.ROLE_ICONS,
     tooltipPosition: "top",
-    hideTooltip: y,
-    onClick: () => C({
+    hideTooltip: O,
+    onClick: () => y({
       object: m.qAy.LEARN_MORE,
       objectType: m.Qqv.TIER_2
     })
@@ -101,7 +90,7 @@ let x = function(e) {
       className: h.formTitle,
       children: [(0, r.jsx)("div", {
         children: p.intl.string(p.t.B9grJy)
-      }), N]
+      }), C]
     }), (0, r.jsx)(i.R94, {
       className: h.description,
       children: p.intl.string(p.t.I3YQeX)
@@ -120,7 +109,16 @@ let x = function(e) {
           className: h.preview
         })
       }), (0, r.jsx)(i.zxk, {
-        onClick: () => t.features.has(m.oNc.ROLE_ICONS) ? O() : C({
+        onClick: () => t.features.has(m.oNc.ROLE_ICONS) ? void(0, i.ZDy)(async () => {
+          let {
+            default: e
+          } = await n.e("22942").then(n.bind(n, 660727));
+          return n => (0, r.jsx)(e, b(f({}, n), {
+            guildId: t.id,
+            onUploadIcon: e => (0, u._l)(j.id, e, null),
+            onSelectUnicodeEmoji: e => (0, u._l)(j.id, null, e)
+          }))
+        }) : y({
           object: m.qAy.UPLOAD_IMAGE
         }),
         variant: "primary",

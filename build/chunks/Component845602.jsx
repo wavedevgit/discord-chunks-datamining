@@ -1,4 +1,4 @@
-/** Chunk was on 80620 **/
+/** Chunk was on 52549 **/
 /** chunk id: 845602, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => C,
@@ -21,8 +21,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk131085 = require("./131085.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk968946 = require("./968946.js"),
-  Chunk482985 = require("./482985.js");
+  Chunk583931 = require("./583931.js"),
+  Chunk842926 = require("./842926.js");
 
 function k() {
   var e;
@@ -43,14 +43,14 @@ function k() {
     animateGradient: true
   });
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk968946.container,
+    className: Chunk583931.container,
     children: [(0, Chunk255367.jsx)("div", {
-      className: Chunk968946.messageContainer,
+      className: Chunk583931.messageContainer,
       children: (0, Chunk255367.jsx)(Chunk742409.l, {
         avatar: Chunk957537.Z,
         username: "Cherry",
         usernameStyle: Chunk120356,
-        usernameClassName: s()(Chunk839008, Chunk482985.animateGradient),
+        usernameClassName: s()(Chunk839008, Chunk842926.animateGradient),
         message: Chunk388032.intl.string(Chunk388032.t["6OSasb"])
       })
     }), (0, Chunk255367.jsx)(Chunk797967.default, {

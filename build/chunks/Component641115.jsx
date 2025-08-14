@@ -28,9 +28,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk37113 = require("./37113.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk84162 = require("./84162.js"),
-  Chunk856933 = require("./856933.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk542257 = require("./542257.js"),
+  Chunk381994 = require("./381994.js"),
+  Chunk197571 = require("./197571.js");
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -80,13 +80,13 @@ function P(e) {
 
 function R() {
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk856933.toolTipTextContainer,
+    className: Chunk381994.toolTipTextContainer,
     children: [(0, Chunk255367.jsx)(Chunk481060.SrA, {
       size: "md",
       color: Chunk436774.JX.PREMIUM_TIER_2,
-      className: Chunk856933.premiumIcon
+      className: Chunk381994.premiumIcon
     }), (0, Chunk255367.jsx)(Chunk481060.Text, {
-      className: Chunk856933.upsellText,
+      className: Chunk381994.upsellText,
       variant: "text-sm/medium",
       children: Chunk388032.intl.string(Chunk388032.t.sEAnVF)
     })]
@@ -160,7 +160,7 @@ function M(e) {
   } = e, L = (0, c.e7)([j.default], () => {
     let e = j.default.getCurrentUser();
     return a()(null != e, "StreamSettings: user cannot be undefined"), e
-  }), D = (0, c.e7)([v.Z, _.Z], () => _.Z.getChannel(v.Z.getVoiceChannelId())), B = b.ZP.canStreamQuality(b.U2.MID, L), {
+  }), D = (0, c.e7)([v.Z, _.Z], () => _.Z.getChannel(v.Z.getVoiceChannelId())), B = S.ZP.canStreamQuality(S.U2.MID, L), {
     location: U
   } = (0, m.O)(), G = (0, h.Zq)({
     autoTrackExposure: false
@@ -170,7 +170,7 @@ function M(e) {
     buttons: V.map(e => A({
       type: e,
       selected: e.value === l,
-      needsPremium: !(0, S.Z)(n, e.value, s, L, M, D),
+      needsPremium: !(0, b.Z)(n, e.value, s, L, M, D),
       needsDemo: W && e.value !== y.LY.RESOLUTION_720,
       analyticsLocation: Y,
       onClick: () => o(e.value),
@@ -181,7 +181,7 @@ function M(e) {
     buttons: y.k0.map(e => A({
       type: e,
       selected: e.value === s,
-      needsPremium: !(0, S.Z)(n, l, e.value, L, M, D),
+      needsPremium: !(0, b.Z)(n, l, e.value, L, M, D),
       needsDemo: W && e.value === y.ws.FPS_60,
       analyticsLocation: Y,
       onClick: () => x(e.value),

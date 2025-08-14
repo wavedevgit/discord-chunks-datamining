@@ -51,7 +51,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk176505 = require("./176505.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk69002 = require("./69002.js");
+  Chunk975900 = require("./975900.js");
 
 function K(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -144,7 +144,7 @@ let Q = 32,
       id: o,
       icon: s,
       name: l
-    } = t, c = Q, u = k.ZP.getGuildIconURL({
+    } = t, c = Q, u = j.ZP.getGuildIconURL({
       id: o,
       icon: s,
       size: c,
@@ -276,10 +276,10 @@ let Q = 32,
       closePopout: R,
       onToggleShowMoreEmojis: D,
       guildEmoji: L,
-      demoMode: k = false,
+      demoMode: j = false,
       nonce: U
     } = e, K = (0, l.e7)([M.default], () => M.default.getCurrentUser()), z = (0, l.e7)([x.Z], () => x.Z.getGuildId()), q = G.ZP.isPremium(K), X = null != z && (z === (null == T ? true : T.id) || z === (null == S ? true : S.id)), Q = null != S, J = null != (t = null == T ? true : T.isDiscoverable()) && t;
-    k && (q = true, J = true, Q = false, X = false);
+    j && (q = true, J = true, Q = false, X = false);
     let ee = $(),
       {
         isRoleSubscriptionEmoji: en,
@@ -322,7 +322,7 @@ let Q = 32,
         isDiscoverable: J,
         shouldHideRoleSubscriptionCTA: ea,
         onOpenPremiumSettings: () => {
-          R(), j.default.track(F.rMx.PREMIUM_PROMOTION_OPENED, {
+          R(), k.default.track(F.rMx.PREMIUM_PROMOTION_OPENED, {
             location_page: ee.page,
             location_section: ee.section
           }), (0, P.z)()
@@ -336,13 +336,13 @@ let Q = 32,
         popoutData: ec,
         emojiSourceGuildId: null == T ? true : T.id,
         nonce: U,
-        demoMode: k
+        demoMode: j
       }),
       e_ = ec.type === B.$.JOIN_GUILD,
       ep = ec.type === B.$.GET_PREMIUM,
       eh = () => {
         let e = async () => {
-          if (k || null == T || Q) return;
+          if (j || null == T || Q) return;
           R();
           let e = T.id;
           try {
@@ -411,7 +411,7 @@ let Q = 32,
         var e, t;
         let n = null != T && !Q && J && (null != (t = null == T || null == (e = T.emojis) ? true : e.length) ? t : 0) > 1,
           i = () => {
-            n && (null == D || D(), em || k || j.default.track(F.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!em))
+            n && (null == D || D(), em || j || k.default.track(F.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!em))
           },
           o = () => {
             let e = Y.intl.string(Y.t.pnsAS0);

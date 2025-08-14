@@ -23,8 +23,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk432877 = require("./432877.js"),
   Chunk246992 = require("./246992.js"),
   Chunk894257 = require("./894257.js"),
-  Chunk80079 = require("./80079.js"),
-  Chunk881291 = require("./881291.js");
+  Chunk165432 = require("./165432.js"),
+  Chunk451429 = require("./451429.js");
 
 function O() {
   var e;
@@ -55,9 +55,9 @@ function O() {
       variant: "text-md/semibold",
       children: "In-Game NUX Message for DMs"
     }), (0, Chunk255367.jsxs)("div", {
-      className: Chunk80079.inGameNuxContainer,
+      className: Chunk165432.inGameNuxContainer,
       children: [(0, Chunk255367.jsx)(Chunk481060.VcW, {
-        wrapperClassName: Chunk80079.search,
+        wrapperClassName: Chunk165432.search,
         options: Chunk493683,
         placeholder: "Select DM",
         value: require,
@@ -111,11 +111,11 @@ function E() {
     }, t)
   });
   return (0, Chunk255367.jsxs)("div", {
-    className: i()(Chunk881291.panel, Chunk80079.panel),
+    className: i()(Chunk451429.panel, Chunk165432.panel),
     children: [module, (0, Chunk255367.jsx)("div", {
-      className: Chunk80079.divider
+      className: Chunk165432.divider
     }), (0, Chunk255367.jsx)(O, {}), (0, Chunk255367.jsx)("div", {
-      className: Chunk80079.divider
+      className: Chunk165432.divider
     }), (0, Chunk255367.jsx)(T, {})]
   })
 }

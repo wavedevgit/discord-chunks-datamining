@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 770202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => S
 }), require("./415506.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -20,9 +20,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk473403 = require("./473403.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk490897 = require("./490897.js"),
-  Chunk81252 = require("./81252.js");
+  Chunk55940 = require("./55940.js");
 
-function C(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,23 +31,23 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function j(e, t) {
+function C(e, t) {
   let n = t.getGuildId();
   if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
-  a.Z.preload(n, t.id)
+  s.Z.preload(n, t.id)
 }
 class E extends Chunk98597.ZP {
   render() {
@@ -57,18 +57,18 @@ class E extends Chunk98597.ZP {
       connectChannelDropTarget: n,
       connectChannelDragSource: i,
       connectDragPreview: l,
-      canReorderChannel: s
-    } = this.props, a = (0, Chunk255367.jsx)("li", {
+      canReorderChannel: a
+    } = this.props, s = (0, Chunk255367.jsx)("li", {
       className: o()(this.getClassName(), {
-        [Chunk81252.disabled]: this.isDisabled()
+        [Chunk55940.disabled]: this.isDisabled()
       }),
       "data-dnd-name": module.name,
       children: (0, Chunk255367.jsxs)(Chunk473403.ZP, {
-        className: Chunk81252.iconVisibility,
+        className: Chunk55940.iconVisibility,
         channel: module,
         selected: exports,
         onClick: this.handleClick,
-        onMouseDown: j,
+        onMouseDown: C,
         onContextMenu: this.handleContextMenu,
         connectDragPreview: Chunk442837 ? Chunk120356 : null,
         "aria-label": (0, Chunk201895.ZP)({
@@ -81,58 +81,59 @@ class E extends Chunk98597.ZP {
     return Chunk442837 ? require(Chunk73800(Chunk493683)) : Chunk493683
   }
   constructor(...e) {
-    super(...e), C(this, "handleContextMenu", e => {
+    super(...e), v(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, i = f.Z.getGuild(t.getGuildId());
+      } = this.props, i = h.Z.getGuild(t.getGuildId());
       null != i && (0, c.jW)(e, async () => {
         let {
           default: e
         } = await n.e("99905").then(n.bind(n, 649400));
-        return n => {
-          var l, o;
-          return (0, r.jsx)(e, (l = v({}, n), o = o = {
-            channel: t,
-            guild: i
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        return n => (0, r.jsx)(e, function(e, t) {
+          return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(o)).forEach(function(e) {
-            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
-          }), l))
-        }
+          })(Object(t)).forEach(function(n) {
+            Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+          }), e
+        }(j({}, n), {
+          channel: t,
+          guild: i
+        }))
       })
-    }), C(this, "handleClick", e => {
-      let t = e.getGuildId();
-      if (null == t) throw Error("TextChannel, transitionTo: Channel does not have a guildId");
-      (0, h.uL)(O.Z5c.CHANNEL(t, e.id), {
-        state: {
-          analyticsSource: {
-            page: O.ZY5.GUILD_CHANNEL,
-            section: O.jXE.CHANNEL_LIST,
-            object: O.qAy.CHANNEL
+    }), v(this, "handleClick", e => {
+      ! function(e) {
+        let t = e.getGuildId();
+        if (null == t) throw Error("TextChannel, transitionTo: Channel does not have a guildId");
+        (0, p.uL)(O.Z5c.CHANNEL(t, e.id), {
+          state: {
+            analyticsSource: {
+              page: O.ZY5.GUILD_CHANNEL,
+              section: O.jXE.CHANNEL_LIST,
+              object: O.qAy.CHANNEL
+            }
           }
-        }
-      })
+        })
+      }(e)
     })
   }
 }
-let S = (0, Chunk146773.B)(E),
-  x = Chunk73800.memo(function(e) {
+let x = (0, Chunk146773.B)(E),
+  S = Chunk73800.memo(function(e) {
     let {
       channel: t,
       guild: n,
       disableSorting: i
-    } = e, l = (0, s.cj)([p.Z, g.Z], () => {
-      let e = p.Z.getChannel(t.parent_id);
+    } = e, l = (0, a.cj)([f.Z, g.Z], () => {
+      let e = f.Z.getChannel(t.parent_id);
       return {
         canManageChannel: g.Z.can(O.Plq.MANAGE_CHANNELS, t),
         canReorderChannel: true !== i && null != e ? g.Z.can(O.Plq.MANAGE_CHANNELS, e) : g.Z.can(O.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(S, v({}, l, e))
+    return (0, r.jsx)(x, j({}, l, e))
   })

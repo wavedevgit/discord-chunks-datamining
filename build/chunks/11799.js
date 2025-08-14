@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 11799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y6: () => p
@@ -12,19 +12,26 @@ var Chunk73800 = require("./73800.js"),
   Chunk140155 = require("./140155.js"),
   Chunk774807 = require("./774807.js"),
   Chunk490897 = require("./490897.js");
-let h = e => {
+let p = () => {
+  let {
+    initialized: e,
+    loading: t,
+    items: n,
+    hasMore: p,
+    loadMore: f
+  } = (e => {
     let {
       isFocused: t,
       navigatedAway: n,
-      isDesktop: h,
-      withMentions: p = false,
-      initialPageSize: f
+      isDesktop: p,
+      withMentions: f = false,
+      initialPageSize: h
     } = e, g = (0, i.e7)([u.Z], () => u.Z.shouldReload()), m = r.useRef(false), [b, O] = r.useState(false), {
       initialized: _,
       loading: y,
-      items: C,
-      hasMore: v,
-      cursor: j,
+      items: v,
+      hasMore: j,
+      cursor: C,
       errored: E
     } = (0, i.cj)([c.Z], () => ({
       initialized: c.Z.initialized,
@@ -34,67 +41,59 @@ let h = e => {
       cursor: c.Z.cursor,
       errored: c.Z.errored
     })), {
-      roleFilter: S,
-      everyoneFilter: x
-    } = (0, i.cj)([s.ZP], () => ({
-      everyoneFilter: s.ZP.everyoneFilter,
-      roleFilter: s.ZP.roleFilter
+      roleFilter: x,
+      everyoneFilter: S
+    } = (0, i.cj)([a.ZP], () => ({
+      everyoneFilter: a.ZP.everyoneFilter,
+      roleFilter: a.ZP.roleFilter
     }));
-    r.useEffect(() => ((0, a.Vk)(true), () => (0, a.Vk)(false)), []), r.useEffect(() => {
+    r.useEffect(() => ((0, s.Vk)(true), () => (0, s.Vk)(false)), []), r.useEffect(() => {
       _ && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
     }, [t, _]);
-    let I = (0, o.Z)();
+    let P = (0, o.Z)();
     r.useEffect(() => () => {
-      h ? !I() && (E || C.length > 100) && (0, a.jF)() : n && C.length > 100 && (0, a.jF)()
-    }, [n, C, h, I, E]), r.useEffect(() => {
+      p ? !P() && (E || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
+    }, [n, v, p, P, E]), r.useEffect(() => {
       let e = g && t;
-      (!_ || e) && (0, a.jk)({
-        limit: null != f ? f : p ? 8 : 20,
-        with_mentions: p,
-        roles_filter: S,
-        everyone_filter: x
+      (!_ || e) && (0, s.jk)({
+        limit: null != h ? h : f ? 8 : 20,
+        with_mentions: f,
+        roles_filter: x,
+        everyone_filter: S
       })
-    }, [_, g, t, p, S, x, f]);
-    let P = r.useCallback(async e => {
-      !m.current && _ && v && null != j && (e || !E) && (m.current = true, O(true), await (0, a.jk)({
-        after: j,
-        with_mentions: p,
-        roles_filter: S,
-        everyone_filter: x,
-        limit: p ? 8 : 20
+    }, [_, g, t, f, x, S, h]);
+    let I = r.useCallback(async e => {
+      !m.current && _ && j && null != C && (e || !E) && (m.current = true, O(true), await (0, s.jk)({
+        after: C,
+        with_mentions: f,
+        roles_filter: x,
+        everyone_filter: S,
+        limit: f ? 8 : 20
       }, () => {
         m.current = false
       }), O(false))
-    }, [_, v, j, E, p, S, x]);
+    }, [_, j, C, E, f, x, S]);
     return {
       initialized: _,
       loading: y,
-      items: C,
-      hasMore: v,
-      loadMore: P,
+      items: v,
+      hasMore: j,
+      loadMore: I,
       loadingMore: b,
       setReadNotifItemToAcked: e => {
         e.acked || (e.acked = true)
       },
       errored: E
     }
-  },
-  p = () => {
-    let {
-      initialized: e,
-      loading: t,
-      items: n,
-      hasMore: r,
-      loadMore: i
-    } = h({
-      isFocused: true,
-      isDesktop: true
-    });
-    return {
-      initialized: module,
-      loading: exports,
-      items: require.filter(e => "notification-center-item" === e.kind),
-      hasMore: Chunk73800,
-      loadMore: Chunk442837
-    }
+  })({
+    isFocused: true,
+    isDesktop: true
+  });
+  return {
+    initialized: module,
+    loading: exports,
+    items: require.filter(e => "notification-center-item" === e.kind),
+    hasMore: p,
+    loadMore: f
   }
+}

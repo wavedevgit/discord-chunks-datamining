@@ -1,7 +1,7 @@
 /** Chunk was on 63141 **/
 /** chunk id: 669083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => C
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -20,8 +20,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk624864 = require("./624864.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk500411 = require("./500411.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk476828 = require("./476828.js"),
+  Chunk197571 = require("./197571.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -31,32 +31,8 @@ function E(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let S = () => [{
-    value: Chunk981631.ipw.LARGE,
-    name: Chunk388032.intl.string(Chunk388032.t.YcOxtr)
-  }, {
-    value: Chunk981631.ipw.SMALL,
-    name: Chunk388032.intl.string(Chunk388032.t.BKIKq6)
-  }],
-  x = () => [{
-    value: Chunk981631.wC$.ALWAYS,
-    name: Chunk388032.intl.string(Chunk388032.t.nBmDra)
-  }, {
-    value: Chunk981631.wC$.ONLY_WHILE_SPEAKING,
-    name: Chunk388032.intl.string(Chunk388032.t["2OvIZW"])
-  }, {
-    value: Chunk981631.wC$.NEVER,
-    name: Chunk388032.intl.string(Chunk388032.t.ekjlPD)
-  }],
-  C = () => [{
-    value: Chunk981631.OYC.ALWAYS,
-    name: Chunk388032.intl.string(Chunk388032.t.nBmDra)
-  }, {
-    value: Chunk981631.OYC.ONLY_WHILE_SPEAKING,
-    name: Chunk388032.intl.string(Chunk388032.t["2OvIZW"])
-  }];
 
-function j() {
+function S() {
   let e = Chunk237997.default.getNotificationPositionMode(),
     t = module !== Chunk981631._vf.DISABLED,
     n = Chunk556296.ZP.getOverlayKeybind(),
@@ -71,7 +47,7 @@ function j() {
     text_activation_hotkey: null != Chunk255367 ? (0, Chunk13140.BB)(Chunk255367.shortcut) : null
   })
 }
-class Z extends Chunk73800.PureComponent {
+class x extends Chunk73800.PureComponent {
   componentDidMount() {
     Chunk13245.Z.track(Chunk981631.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "overlay",
@@ -80,7 +56,7 @@ class Z extends Chunk73800.PureComponent {
     })
   }
   handleChangeNotificationPositionMode(e, t) {
-    s.Z.setNotificationPositionMode(t), j()
+    s.Z.setNotificationPositionMode(t), S()
   }
   handleChangeAvatarSizeMode(e) {
     let {
@@ -105,14 +81,14 @@ class Z extends Chunk73800.PureComponent {
       direction: Chunk600164.Z.Direction.VERTICAL,
       grow: 0,
       shrink: 0,
-      className: Chunk500411.header,
+      className: Chunk476828.header,
       children: [(0, Chunk255367.jsxs)(Chunk600164.Z, {
         children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-          className: Chunk500411.headerTitle,
+          className: Chunk476828.headerTitle,
           tag: "h1",
           children: Chunk388032.intl.string(Chunk388032.t["35G2Mj"])
         }), (0, Chunk255367.jsx)(Chunk481060.olH, {
-          className: Chunk500411.headerClose,
+          className: Chunk476828.headerClose,
           onClick: this.props.onClose
         })]
       }), this.renderTabBar()]
@@ -123,21 +99,21 @@ class Z extends Chunk73800.PureComponent {
       selectedSection: e
     } = this.state, t = Chunk906467.Z.isDeveloper ? (0, Chunk255367.jsx)(Chunk481060.njP.Item, {
       id: "DEVELOPER",
-      className: Chunk500411.tabBarItem,
+      className: Chunk476828.tabBarItem,
       children: "Developer"
     }) : null;
     return (0, Chunk255367.jsxs)(Chunk481060.njP, {
       selectedItem: module,
       type: "top",
-      className: Chunk500411.__invalid_tabBar,
+      className: Chunk476828.__invalid_tabBar,
       onItemSelect: this.handleSelectSection,
       children: [(0, Chunk255367.jsx)(Chunk481060.njP.Item, {
         id: "GENERAL",
-        className: Chunk500411.tabBarItem,
+        className: Chunk476828.tabBarItem,
         children: Chunk388032.intl.string(Chunk388032.t["0FYxx8"])
       }), (0, Chunk255367.jsx)(Chunk481060.njP.Item, {
         id: "VOICE",
-        className: Chunk500411.tabBarItem,
+        className: Chunk476828.tabBarItem,
         children: Chunk388032.intl.string(Chunk388032.t["3WeSiI"])
       }), exports]
     })
@@ -157,7 +133,7 @@ class Z extends Chunk73800.PureComponent {
         e = this.renderGeneralSettings()
     }
     return (0, Chunk255367.jsx)(Chunk481060.hzk, {
-      className: Chunk500411.content,
+      className: Chunk476828.content,
       children: module
     }, exports)
   }
@@ -171,7 +147,7 @@ class Z extends Chunk73800.PureComponent {
     return (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
       children: [(0, Chunk255367.jsx)(Chunk481060.xJW, {
         title: Chunk388032.intl.string(Chunk388032.t.IQv8Eh),
-        className: Chunk881488.marginBottom20,
+        className: Chunk197571.marginBottom20,
         children: (0, Chunk255367.jsx)(Chunk212632.Z, {
           position: module,
           onChange: this.handleChangeNotificationPositionMode
@@ -205,28 +181,49 @@ class Z extends Chunk73800.PureComponent {
     return (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
       children: [(0, Chunk255367.jsx)(Chunk481060.xJW, {
         title: Chunk388032.intl.string(Chunk388032.t.dnvZSk),
-        className: Chunk881488.marginBottom20,
+        className: Chunk197571.marginBottom20,
         children: (0, Chunk255367.jsx)(Chunk481060.FXm, {
           onChange: this.handleChangeAvatarSizeMode,
-          options: S(),
+          options: [{
+            value: Chunk981631.ipw.LARGE,
+            name: Chunk388032.intl.string(Chunk388032.t.YcOxtr)
+          }, {
+            value: Chunk981631.ipw.SMALL,
+            name: Chunk388032.intl.string(Chunk388032.t.BKIKq6)
+          }],
           value: module,
           size: Chunk481060.FXm.Sizes.SMALL
         })
       }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
         title: Chunk388032.intl.string(Chunk388032.t.J0dpcH),
-        className: Chunk881488.marginBottom20,
+        className: Chunk197571.marginBottom20,
         children: (0, Chunk255367.jsx)(Chunk481060.FXm, {
           onChange: this.handleChangeDisplayNameMode,
-          options: x(),
+          options: [{
+            value: Chunk981631.wC$.ALWAYS,
+            name: Chunk388032.intl.string(Chunk388032.t.nBmDra)
+          }, {
+            value: Chunk981631.wC$.ONLY_WHILE_SPEAKING,
+            name: Chunk388032.intl.string(Chunk388032.t["2OvIZW"])
+          }, {
+            value: Chunk981631.wC$.NEVER,
+            name: Chunk388032.intl.string(Chunk388032.t.ekjlPD)
+          }],
           value: exports,
           size: Chunk481060.FXm.Sizes.SMALL
         })
       }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
         title: Chunk388032.intl.string(Chunk388032.t.swsWWF),
-        className: Chunk881488.marginBottom20,
+        className: Chunk197571.marginBottom20,
         children: (0, Chunk255367.jsx)(Chunk481060.FXm, {
           onChange: this.handleChangeDisplayUserMode,
-          options: C(),
+          options: [{
+            value: Chunk981631.OYC.ALWAYS,
+            name: Chunk388032.intl.string(Chunk388032.t.nBmDra)
+          }, {
+            value: Chunk981631.OYC.ONLY_WHILE_SPEAKING,
+            name: Chunk388032.intl.string(Chunk388032.t["2OvIZW"])
+          }],
           value: require,
           size: Chunk481060.FXm.Sizes.SMALL
         })
@@ -236,7 +233,7 @@ class Z extends Chunk73800.PureComponent {
   renderDeveloperSettings() {
     return (0, Chunk255367.jsx)(Chunk481060.xJW, {
       title: "Crashes",
-      className: Chunk881488.marginBottom20,
+      className: Chunk197571.marginBottom20,
       children: (0, Chunk255367.jsx)(Chunk481060.q4e, {
         value: true,
         options: [{
@@ -278,7 +275,7 @@ class Z extends Chunk73800.PureComponent {
         selectedSection: e
       })
     }), E(this, "handleToggleTextChatNotifications", () => {
-      s.Z.setNotificationDisabledSetting(g.OverlayNotificationDisabledSetting.TEXT_CHAT, !this.props.textChatDisabled), j()
+      s.Z.setNotificationDisabledSetting(g.OverlayNotificationDisabledSetting.TEXT_CHAT, !this.props.textChatDisabled), S()
     }), E(this, "handleToggleInviteNotification", () => {
       let e = this.props.shouldShowInviteNotification;
       s.Z.setNotificationDisabledSetting(g.OverlayNotificationDisabledSetting.GAME_ACTIVITY, !e)
@@ -286,7 +283,7 @@ class Z extends Chunk73800.PureComponent {
   }
 }
 
-function I(e) {
+function C(e) {
   let {
     onClose: t
   } = e, {
@@ -308,7 +305,7 @@ function I(e) {
   })), u = (0, m.Z)({
     location: "Overlay Settings"
   });
-  return (0, i.jsx)(Z, {
+  return (0, i.jsx)(x, {
     onClose: t,
     avatarSizeMode: n,
     displayNameMode: r,

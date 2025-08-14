@@ -54,7 +54,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk524484 = require("./524484.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk867236 = require("./867236.js");
+  Chunk7504 = require("./7504.js");
 
 function $(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -117,8 +117,8 @@ let eo = [Chunk354459.fO.ACTIVITY],
     var t, n, o, l, c;
     let {
       participant: g,
-      onDoubleClick: j,
-      onContextMenu: k,
+      onDoubleClick: k,
+      onContextMenu: j,
       onClick: U,
       onMouseDown: Y,
       onKeyDown: $,
@@ -141,7 +141,7 @@ let eo = [Chunk354459.fO.ACTIVITY],
       pulseSpeakingIndicator: eO = false,
       forceIdle: ev = false,
       inOverlayPopout: eI = false
-    } = e, eT = i.useContext(N.h9) || ev, [eS, eA] = i.useState(false), eN = A.Sb.useSetting(), eC = (0, s.e7)([w.default], () => w.default.isStreamInfoOverlayEnabled), [eR, eP] = i.useState(false), ew = (0, s.e7)([P.default], () => P.default.getId()), eD = g.type === z.fO.ACTIVITY ? null : g.user, eL = null != (o = null == eD ? true : eD.id) ? o : null, [ex] = (0, p.Z)(g.type === z.fO.ACTIVITY ? [g.applicationId] : []), eM = (0, s.e7)([b.Z], () => b.Z.getEnabled()), ej = (0, s.e7)([L.Z], () => null != eL && L.Z.isLocalVideoDisabled(eL, (0, h.Z)(g.type)), [eL, g.type]), ek = (0, s.e7)([L.Z], () => null != eL ? L.Z.getVideoToggleState(eL, (0, h.Z)(g.type)) : K.ZUi.NONE, [eL, g.type]), eU = ek === K.ZUi.AUTO_PROBING, {
+    } = e, eT = i.useContext(N.h9) || ev, [eS, eA] = i.useState(false), eN = A.Sb.useSetting(), eC = (0, s.e7)([w.default], () => w.default.isStreamInfoOverlayEnabled), [eR, eP] = i.useState(false), ew = (0, s.e7)([P.default], () => P.default.getId()), eD = g.type === z.fO.ACTIVITY ? null : g.user, eL = null != (o = null == eD ? true : eD.id) ? o : null, [ex] = (0, p.Z)(g.type === z.fO.ACTIVITY ? [g.applicationId] : []), eM = (0, s.e7)([b.Z], () => b.Z.getEnabled()), ek = (0, s.e7)([L.Z], () => null != eL && L.Z.isLocalVideoDisabled(eL, (0, h.Z)(g.type)), [eL, g.type]), ej = (0, s.e7)([L.Z], () => null != eL ? L.Z.getVideoToggleState(eL, (0, h.Z)(g.type)) : K.ZUi.NONE, [eL, g.type]), eU = ej === K.ZUi.AUTO_PROBING, {
       speaking: eG,
       ringing: eB,
       hasVideo: eZ
@@ -168,11 +168,11 @@ let eo = [Chunk354459.fO.ACTIVITY],
         null == U || U(g, e)
       }, [U, g]),
       e2 = i.useCallback(e => {
-        null == j || j(g, e)
-      }, [j, g]),
-      e3 = i.useCallback((e, t, n) => {
-        null == k || k(g, e, t, n)
+        null == k || k(g, e)
       }, [k, g]),
+      e3 = i.useCallback((e, t, n) => {
+        null == j || j(g, e, t, n)
+      }, [j, g]),
       e5 = () => {
         eP(true)
       },
@@ -324,8 +324,8 @@ let eo = [Chunk354459.fO.ACTIVITY],
                 title: (0, G.Z)(ea, g),
                 blocked: eg,
                 ignored: eE,
-                localVideoDisabled: ej,
-                videoToggleState: ek,
+                localVideoDisabled: ek,
+                videoToggleState: ej,
                 hideAudioIcon: eH,
                 onContextMenu: e3,
                 onToggleMute: e0,
@@ -381,7 +381,7 @@ function es(e) {
         className: i
       });
     case z.wR.PLAYSTATION:
-      return (0, r.jsx)(k.Z, {
+      return (0, r.jsx)(j.Z, {
         className: i
       });
     default:
@@ -479,13 +479,13 @@ let eu = Chunk73800.memo(e => {
       className: J.overlayTitleText,
       children: Q.intl.string(Q.t.m2Hyj4)
     })]
-  }) : null, x = (0, Y.N)(o), M = (0, Y.K)(o), [k, U] = i.useState(false);
+  }) : null, x = (0, Y.N)(o), M = (0, Y.K)(o), [j, U] = i.useState(false);
   i.useEffect(() => {
     let e = false,
       t = () => {
-        e !== j.Z.isOpen() && ((e = j.Z.isOpen()) || U(false))
+        e !== k.Z.isOpen() && ((e = k.Z.isOpen()) || U(false))
       };
-    return j.Z.addChangeListener(t), () => j.Z.removeChangeListener(t)
+    return k.Z.addChangeListener(t), () => k.Z.removeChangeListener(t)
   }, []);
   let G = e => {
       e.stopPropagation(), U(true), O(e, true, z.A5.THREE_DOT)
@@ -560,13 +560,13 @@ let eu = Chunk73800.memo(e => {
           onClick: G,
           tooltipText: Q.intl.string(Q.t["+1H47u"]),
           icon: u.xhG,
-          hideWhenInactive: !k,
+          hideWhenInactive: !j,
           compact: M
         }), B && (0, r.jsx)(ec, {
           onClick: R,
           tooltipText: T ? Q.intl.string(Q.t.YqAjX1) : Q.intl.string(Q.t["w4m94+"]),
           icon: T ? u.OyP : u.gj8,
-          hideWhenInactive: !T && !k,
+          hideWhenInactive: !T && !j,
           compact: M
         })]
       })]

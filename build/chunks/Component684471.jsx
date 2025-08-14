@@ -13,7 +13,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk955708 = require("./955708.jsx"),
   Chunk850165 = require("./850165.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk682721 = require("./682721.js"),
+  Chunk394968 = require("./394968.js"),
   Chunk282668 = require("./282668.js");
 
 function h(t) {
@@ -21,14 +21,14 @@ function h(t) {
     senderId: e,
     trackAnalyticsEvent: n,
     onNavigate: h
-  } = t, g = (0, s.e7)([a.default], () => {
+  } = t, m = (0, s.e7)([a.default], () => {
     let t = a.default.getUser(e);
     return o.ZP.getName(t)
   });
   return (0, i.jsx)(d.Z, {
     header: u.intl.string(u.t.sSMgCw),
     description: u.intl.formatToPlainString(u.t.q2QrTU, {
-      username: g
+      username: m
     }),
     heroImageSrc: p,
     heroImageAlt: u.intl.string(u.t["3QhxXF"]),

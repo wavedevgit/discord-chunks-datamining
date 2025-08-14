@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk618541 = require("./618541.js"),
   Chunk975060 = require("./975060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk65205 = require("./65205.js");
+  Chunk632236 = require("./632236.js");
 class p extends Chunk73800.PureComponent {
   componentDidMount() {
     null != this.props.paypalClient && Chunk873115.f6()
@@ -32,16 +32,16 @@ class p extends Chunk73800.PureComponent {
       className: exports,
       title: Chunk388032.intl.string(Chunk388032.t.QQBAoq),
       children: (0, Chunk255367.jsxs)("div", {
-        className: Chunk65205.inputWrapper,
+        className: Chunk632236.inputWrapper,
         children: [(0, Chunk255367.jsx)(Chunk219929.ZP, {
           type: Chunk219929.ZP.Types.PAYPAL,
-          className: Chunk65205.paypalIcon
+          className: Chunk632236.paypalIcon
         }), (0, Chunk255367.jsx)(Chunk755721.Is, {
           value: module,
           editable: false,
           readOnly: true,
           placeholder: null == require ? Chunk388032.intl.string(Chunk388032.t.dte2Mz) : Chunk388032.intl.string(Chunk388032.t.hopw7e),
-          inputClassName: Chunk65205.paypalInput
+          inputClassName: Chunk632236.paypalInput
         })]
       })
     })

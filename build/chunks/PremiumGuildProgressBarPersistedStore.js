@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 531572, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -14,20 +14,20 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = {};
-class a extends(r = Chunk442837.ZP.PersistedStore) {
+let a = {};
+class s extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (s = e)
+    null != e && (a = e)
   }
   getState() {
-    return s
+    return a
   }
   getCountForGuild(e) {
-    return s[e]
+    return a[e]
   }
 }
-o(a, "displayName", "GuildBoostingProgressBarPersistedStore"), o(a, "persistKey", "PremiumGuildProgressBarPersistedStore");
-let c = new a(Chunk570140.Z, {
+o(s, "displayName", "GuildBoostingProgressBarPersistedStore"), o(s, "persistKey", "PremiumGuildProgressBarPersistedStore");
+let c = new s(Chunk570140.Z, {
   APPLIED_GUILD_BOOST_COUNT_UPDATE: e => {
     var t, n;
     let {
@@ -45,7 +45,7 @@ let c = new a(Chunk570140.Z, {
         })
       }
       return e
-    }({}, s), n = n = {
+    }({}, a), n = n = {
       [r]: i
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -56,9 +56,9 @@ let c = new a(Chunk570140.Z, {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), s = t
+    }), a = t
   },
   APPLIED_GUILD_BOOST_COUNT_RESET: function() {
-    s = {}
+    a = {}
   }
 })

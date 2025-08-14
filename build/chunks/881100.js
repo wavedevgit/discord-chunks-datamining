@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 881100, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   N: () => U
@@ -39,7 +39,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk912429 = require("./912429.js"),
   Chunk772969 = require("./772969.js"),
   Chunk926262 = require("./926262.js");
-let B = (e, t, n) => (0, r.wj)(e) ? t : n,
+let M = (e, t, n) => (0, r.wj)(e) ? t : n,
   U = e => {
     let {
       styles: t
@@ -59,7 +59,7 @@ let B = (e, t, n) => (0, r.wj)(e) ? t : n,
       badgeAlt: {
         title: p.intl.string(p.t["5cYMu7"]),
         description: p.intl.string(p.t.vxk9vb),
-        imageSource: B(n, g, h),
+        imageSource: M(n, g, h),
         imageClassName: t.badgeNewImage
       },
       clientThemes: {
@@ -102,50 +102,50 @@ let B = (e, t, n) => (0, r.wj)(e) ? t : n,
       longerMessages: {
         title: p.intl.string(p.t.BUSciY),
         description: p.intl.string(p.t.vN6Xpa),
-        imageSource: B(n, D, Z),
+        imageSource: M(n, D, Z),
         imageClassName: t.longerMessagesImage
       },
       moreGuilds: {
         title: p.intl.string(p.t.Bv8Pfn),
         description: p.intl.string(p.t.JMfaTU),
-        imageSource: B(n, b, w),
+        imageSource: M(n, b, w),
         imageClassName: t.moreGuildsImage
       },
       moreGuildsAlt: {
         title: p.intl.string(p.t.Bv8Pfn),
         description: p.intl.string(p.t.JMfaTU),
-        imageSource: B(n, E, C),
+        imageSource: M(n, E, C),
         imageClassName: t.moreGuildsAltImage
       },
       remix: {
         title: p.intl.string(p.t.ZvulDg),
         description: p.intl.string(p.t["8GwCPT"]),
-        imageSource: B(n, _, j),
+        imageSource: M(n, _, j),
         imageClassName: t.remixingImage,
         isEarlyAccess: true
       },
       soundboard: {
         title: p.intl.string(p.t["lGcW+f"]),
         description: p.intl.string(p.t["/fDyOz"]),
-        imageSource: B(n, O, v),
+        imageSource: M(n, O, v),
         imageClassName: t.soundboardImage
       },
       stickers: {
         title: p.intl.string(p.t["1c+xwc"]),
         description: p.intl.string(p.t.hJG8ZG),
-        imageSource: B(n, S, k),
+        imageSource: M(n, S, k),
         imageClassName: t.stickersImage
       },
       stickersBurst: {
         title: p.intl.string(p.t.tzdIwM),
         description: p.intl.string(p.t.hJG8ZG),
-        imageSource: B(n, S, k),
+        imageSource: M(n, S, k),
         imageClassName: t.stickersImage
       },
       stickersPremiumPerk: {
         title: p.intl.string(p.t.tzdIwM),
         description: p.intl.string(p.t.FXlU29),
-        imageSource: B(n, S, k),
+        imageSource: M(n, S, k),
         imageClassName: t.stickersImage
       },
       streaming: {
@@ -157,7 +157,7 @@ let B = (e, t, n) => (0, r.wj)(e) ? t : n,
       superReactions: {
         title: p.intl.string(p.t.uZt5q6),
         description: p.intl.string(p.t.ZK3Zoa),
-        imageSource: B(n, T, I),
+        imageSource: M(n, T, I),
         imageClassName: t.superReactionsImage
       },
       upload: {
@@ -167,13 +167,13 @@ let B = (e, t, n) => (0, r.wj)(e) ? t : n,
         description: p.intl.formatToPlainString(p.t["HI+cfn"], {
           premiumMaxSize: U
         }),
-        imageSource: M,
+        imageSource: B,
         imageClassName: t.uploadImage
       },
       videoBackground: {
         title: p.intl.string(p.t.NaGpTU),
         description: p.intl.string(p.t["A8O/Q0"]),
-        imageSource: B(n, N, y),
+        imageSource: M(n, N, y),
         imageClassName: t.videoBackgroundImage
       }
     }

@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 110977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => g
@@ -11,15 +11,15 @@ var Chunk255367 = require("./255367.js"),
   Chunk593214 = require("./593214.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk563937 = require("./563937.js"),
-  Chunk208772 = require("./208772.js"),
-  Chunk798297 = require("./798297.js");
+  Chunk448213 = require("./448213.js"),
+  Chunk132789 = require("./132789.js"),
+  Chunk78480 = require("./78480.js");
 
-function f() {
+function h() {
   return (0, Chunk255367.jsx)("div", {
-    className: o()(Chunk208772.row, Chunk208772.rowGuildName),
+    className: o()(Chunk132789.row, Chunk132789.rowGuildName),
     children: (0, Chunk255367.jsx)("span", {
-      className: o()(Chunk208772.guildNameText, Chunk208772.guildNameTextLimitedSize, Chunk563937.tooltipText),
+      className: o()(Chunk132789.guildNameText, Chunk132789.guildNameTextLimitedSize, Chunk448213.tooltipText),
       children: Chunk388032.intl.string(Chunk388032.t["4tSWQk"])
     })
   })
@@ -32,7 +32,7 @@ let g = Chunk73800.memo(function(e) {
     let {
       favoriteAdded: e,
       clearFavoriteAdded: t
-    } = (0, a.up)();
+    } = (0, s.up)();
     return i.useEffect(() => {
       if (e) {
         let e = setTimeout(() => {
@@ -44,16 +44,16 @@ let g = Chunk73800.memo(function(e) {
       }
     }, [e, t]), e
   }();
-  return (0, r.jsx)(s.ua7, {
+  return (0, r.jsx)(a.ua7, {
     forceOpen: l,
-    color: s.FGA.GREEN,
+    color: a.FGA.GREEN,
     hideOnClick: true,
     spacing: 12,
     position: "right",
     align: "center",
-    text: (0, r.jsx)(f, {}),
+    text: (0, r.jsx)(h, {}),
     "aria-label": t,
-    tooltipClassName: p.listItemTooltip,
+    tooltipClassName: f.listItemTooltip,
     children: e => {
       var t, i;
       return (0, r.jsx)("div", (t = function(e) {

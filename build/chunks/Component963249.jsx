@@ -97,8 +97,8 @@ function C(e) {
     paymentModalBanner: L,
     isGift: x = false,
     giftMessage: M,
-    giftStyle: j,
-    giftingOrigin: k,
+    giftStyle: k,
+    giftingOrigin: j,
     subscriptionTier: U,
     trialId: G,
     postSuccessGuild: B,
@@ -113,7 +113,7 @@ function C(e) {
   return (0, s.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("8016"), n.e("17938"), n.e("94136"), n.e("84992"), n.e("63024")]).then(n.bind(n, 7305));
+    } = await Promise.all([n.e("8016"), n.e("17938"), n.e("94136"), n.e("84992"), n.e("47238")]).then(n.bind(n, 7305));
     return n => {
       var {
         onClose: o
@@ -124,8 +124,8 @@ function C(e) {
         skuId: $,
         isGift: x,
         giftMessage: M,
-        giftStyle: j,
-        giftingOrigin: k,
+        giftStyle: k,
+        giftingOrigin: j,
         giftRecipient: H,
         initialPlanId: t,
         followupSKUInfo: i,

@@ -30,8 +30,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk616922 = require("./616922.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk631736 = require("./631736.js"),
-  Chunk143595 = require("./143595.js");
+  Chunk119835 = require("./119835.js"),
+  Chunk951948 = require("./951948.js");
 
 function w(e, t) {
   return C.intl.formatToPlainString(C.t.h2yWWV, {
@@ -104,8 +104,8 @@ function x(e) {
       channel: R,
       entry: x,
       closePopout: M,
-      onReaction: j,
-      onVoiceChannelPreview: k
+      onReaction: k,
+      onVoiceChannelPreview: j
     } = e,
     {
       largeImage: U
@@ -199,8 +199,8 @@ function x(e) {
   return (0, r.jsxs)(I.yR, {
     children: [Q, (0, r.jsx)(I.St, {
       children: (0, r.jsx)(I.WT, {
-        onReaction: j,
-        onVoiceChannelPreview: k,
+        onReaction: k,
+        onVoiceChannelPreview: j,
         user: V,
         channel: R,
         generateReactionImage: z,

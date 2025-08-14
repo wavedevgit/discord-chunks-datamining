@@ -9,7 +9,7 @@ var Chunk255367 = require("./255367.js"),
   c = require.n(Chunk120356),
   Chunk103269 = require("./103269.js"),
   Chunk616259 = require("./616259.js"),
-  Chunk915835 = require("./915835.js");
+  Chunk417154 = require("./417154.js");
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -45,13 +45,13 @@ function f(e, t) {
 
 function l() {
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk915835.customPointer
+    className: Chunk417154.customPointer
   })
 }
 
 function b() {
   return (0, Chunk255367.jsx)("div", {
-    className: c()(Chunk915835.customPointer, Chunk915835.huePointer)
+    className: c()(Chunk417154.customPointer, Chunk417154.huePointer)
   })
 }
 let O = (0, Chunk103269.iS)(e => (0, n.jsxs)("div", {

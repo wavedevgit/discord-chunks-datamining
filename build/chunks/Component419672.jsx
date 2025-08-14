@@ -1,4 +1,4 @@
-/** Chunk was on 9738 **/
+/** Chunk was on 89650 **/
 /** chunk id: 419672, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -14,23 +14,23 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk421670 = require("./421670.js");
+  Chunk328355 = require("./328355.js");
 let _ = function(t) {
   let {
     onClose: e,
     channelId: n
-  } = t, [_, b] = r.useState(false), O = r.useCallback(() => {
+  } = t, [_, O] = r.useState(false), b = r.useCallback(() => {
     l.Z.open(d.oAB.CONTENT_AND_SOCIAL, null, {
       scrollPosition: T.FY.DM_SAFETY_ALERTS_V2
     }), e()
-  }, [e]), g = r.useCallback(() => {
-    _ || (b(true), (0, o.Uj)(n).then(() => {
+  }, [e]), E = r.useCallback(() => {
+    _ || (O(true), (0, o.Uj)(n).then(() => {
       e(), (0, c.t)({
         text: S.intl.string(S.t.FhgVWl),
         id: "safety-tools-report-false-positive"
       })
     }).catch(() => {
-      b(false), (0, s.showToast)((0, s.createToast)(S.intl.string(S.t.R0RpRU), s.ToastType.FAILURE))
+      O(false), (0, s.showToast)((0, s.createToast)(S.intl.string(S.t.R0RpRU), s.ToastType.FAILURE))
     }))
   }, [n, e, _]);
   return (0, i.jsxs)(u.Z, {
@@ -43,7 +43,7 @@ let _ = function(t) {
       })
     }), (0, i.jsxs)("div", {
       children: [(0, i.jsx)(s.zxk, {
-        onClick: O,
+        onClick: b,
         fullWidth: true,
         text: S.intl.string(S.t.qpWnyM)
       }), (0, i.jsx)(s.Text, {
@@ -54,7 +54,7 @@ let _ = function(t) {
           reportFalsePositiveHook: (t, e) => (0, i.jsx)(s.P3F, {
             className: x.reportFalsePositiveButton,
             tag: "span",
-            onClick: g,
+            onClick: E,
             children: t
           }, e)
         })

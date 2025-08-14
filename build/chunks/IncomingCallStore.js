@@ -27,31 +27,29 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 let E = "IncomingCallStore",
-  b = {
-    width: 232,
-    height: 315
-  },
-  y = 10,
-  O = new Set,
-  v = [],
-  I = new Map,
-  T = new Set,
-  S = false;
+  b = 232,
+  y = 315,
+  O = 10,
+  v = new Set,
+  I = [],
+  T = new Map,
+  S = new Set,
+  A = false;
 
-function A() {
+function N() {
   let e = Chunk451478.Z.windowSize();
-  return null != r && r.x + b.width < module.width && r.y + b.height < module.height ? r : {
-    x: module.width / 2 - b.width / 2,
-    y: module.height / 2 - b.height / 2
+  return null != r && r.x + b < module.width && r.y + y < module.height ? r : {
+    x: module.width / 2 - b / 2,
+    y: module.height / 2 - y / 2
   }
 }
 
-function N(e) {
-  if (null == e || null == I.get(e)) returnfalse;
-  I.delete(e), (T = new Set(T)).delete(e)
+function C(e) {
+  if (null == e || null == T.get(e)) returnfalse;
+  T.delete(e), (S = new Set(S)).delete(e)
 }
 
-function C(e) {
+function R(e) {
   let {
     channelId: t,
     ringing: n
@@ -61,41 +59,41 @@ function C(e) {
       location: "IncomingCallCreate"
     }).enabled) returnfalse;
   let r = n.includes(f.default.getId());
-  if (!T.has(t) && r) {
+  if (!S.has(t) && r) {
     let e = _.Z.getChannel(t);
     if (null == e) returnfalse;
-    let n = y * T.size,
+    let n = O * S.size,
       {
         x: r,
         y: i
-      } = A();
-    return I.set(t, {
+      } = N();
+    return T.set(t, {
       channel: e,
       x: r + n,
       y: i + n
-    }), void(T = new Set(T)).add(t)
+    }), void(S = new Set(S)).add(t)
   }
-  return !!T.has(t) && !r && N(t)
-}
-
-function R(e) {
-  let {
-    channelId: t
-  } = e;
-  return ("GUILD_RING_STOP" !== e.type || !!d.Z.getCurrentConfig({
-    guildId: e.guildId,
-    location: "IncomingCallDelete"
-  }).enabled && !!e.ringing.includes(f.default.getId())) && N(t)
+  return !!S.has(t) && !r && C(t)
 }
 
 function P(e) {
   let {
     channelId: t
   } = e;
-  return N(t)
+  return ("GUILD_RING_STOP" !== e.type || !!d.Z.getCurrentConfig({
+    guildId: e.guildId,
+    location: "IncomingCallDelete"
+  }).enabled && !!e.ringing.includes(f.default.getId())) && C(t)
 }
 
 function w(e) {
+  let {
+    channelId: t
+  } = e;
+  return C(t)
+}
+
+function D(e) {
   let {
     x: t,
     y: n
@@ -106,50 +104,50 @@ function w(e) {
   }, a.K.set(E, r), false
 }
 
-function D(e) {
+function L(e) {
   let {
     channel: t
   } = e;
-  return N(t.id)
-}
-
-function L() {
-  S = Chunk885110.Z.getStatus() === Chunk981631.Skl.DND || Chunk695346.QZ.getSetting()
+  return C(t.id)
 }
 
 function x() {
+  A = Chunk885110.Z.getStatus() === Chunk981631.Skl.DND || Chunk695346.QZ.getSetting()
+}
+
+function M() {
   let e = Chunk314897.default.getId();
-  T.forEach(t => {
+  S.forEach(t => {
     var n;
     let r = t;
-    null != (null == (n = _.Z.getChannel(r)) ? true : n.guild_id) && (l.Z.getGuildRingingUsers(r).has(e) || N(r))
+    null != (null == (n = _.Z.getChannel(r)) ? true : n.guild_id) && (l.Z.getGuildRingingUsers(r).has(e) || C(r))
   })
 }
-class M extends(i = Chunk442837.ZP.Store) {
+class k extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk885110.Z), this.syncWith([Chunk885110.Z], L), this.syncWith([Chunk581883.Z], L), this.syncWith([Chunk358221.Z], x)
+    this.waitFor(Chunk592125.Z, Chunk885110.Z), this.syncWith([Chunk885110.Z], x), this.syncWith([Chunk581883.Z], x), this.syncWith([Chunk358221.Z], M)
   }
   getIncomingCalls() {
-    return S ? v : Array.from(I.values())
+    return A ? I : Array.from(T.values())
   }
   getIncomingCallChannelIds() {
-    return S ? O : T
+    return A ? v : S
   }
   getFirstIncomingCallId() {
-    return S ? null : T.values().next().value
+    return A ? null : S.values().next().value
   }
   hasIncomingCalls() {
-    return !S && T.size > 0
+    return !A && S.size > 0
   }
 }
-g(M, "displayName", "IncomingCallStore");
-let j = new M(Chunk570140.Z, {
-  CALL_CREATE: C,
-  CALL_UPDATE: C,
-  CALL_DELETE: R,
-  GUILD_RING_START: C,
-  GUILD_RING_STOP: R,
-  VOICE_CHANNEL_SELECT: P,
-  INCOMING_CALL_MOVE: w,
-  CHANNEL_DELETE: D
+g(k, "displayName", "IncomingCallStore");
+let j = new k(Chunk570140.Z, {
+  CALL_CREATE: R,
+  CALL_UPDATE: R,
+  CALL_DELETE: P,
+  GUILD_RING_START: R,
+  GUILD_RING_STOP: P,
+  VOICE_CHANNEL_SELECT: w,
+  INCOMING_CALL_MOVE: D,
+  CHANNEL_DELETE: L
 })

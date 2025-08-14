@@ -1,7 +1,7 @@
 /** Chunk was on 9924 **/
 /** chunk id: 666233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => j
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -15,15 +15,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk196345 = require("./196345.jsx"),
   Chunk707592 = require("./707592.jsx"),
   Chunk388032 = require("./388032.jsx");
-let h = function(e) {
+let j = function(e) {
   let {
     guildId: t,
     formFields: n,
-    user: h,
-    showRequirements: j = true
+    user: j,
+    showRequirements: h = true
   } = e;
-  return null == (0, r.e7)([i.default], () => null != h ? h : i.default.getCurrentUser()) ? null : (0, l.jsxs)(l.Fragment, {
-    children: [j && (0, l.jsx)(o.Ih, {
+  return null == (0, r.e7)([i.default], () => null != j ? j : i.default.getCurrentUser()) ? null : (0, l.jsxs)(l.Fragment, {
+    children: [h && (0, l.jsx)(o.Ih, {
       icon: a.b7C,
       text: x.intl.string(x.t.v2z4c3),
       meetsRequirement: true

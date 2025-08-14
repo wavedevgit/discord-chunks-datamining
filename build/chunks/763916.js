@@ -9,16 +9,16 @@ var Chunk570140 = require("./570140.js"),
   Chunk592745 = require("./592745.js");
 
 function o(e) {
-  let t, {
-    gameId: n
+  let {
+    gameId: t
   } = e;
-  var o = n;
-  let s = a.Z.launchableGames[o],
-    c = i.Z.getApplication(o);
-  (null != c ? l.Z.isLaunchable(c) : l.Z.isGameLaunchable(o)).then(e => {
-    e !== s && r.Z.dispatch({
+  var n = t;
+  let o = a.Z.launchableGames[n],
+    s = i.Z.getApplication(n);
+  (null != s ? l.Z.isLaunchable(s) : l.Z.isGameLaunchable(n)).then(e => {
+    e !== o && r.Z.dispatch({
       type: "GAME_LAUNCHABLE_UPDATE",
-      gameId: o,
+      gameId: n,
       isLaunchable: e
     })
   })

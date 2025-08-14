@@ -26,7 +26,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk923303 = require("./923303.js");
+  Chunk934422 = require("./934422.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -179,34 +179,33 @@ class j extends Chunk73800.PureComponent {
         isGameRelationship: n,
         applicationId: i
       } = this.props;
-      (0, d.vq)(e, e => {
-        var l, a;
-        return (0, r.jsx)(P, (l = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              T(e, t, n[t])
-            })
-          }
-          return e
-        }({}, e), a = a = {
-          user: t,
-          applicationId: i,
-          isGameRelationship: n
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+      (0, d.vq)(e, e => (0, r.jsx)(P, function(e, t) {
+        return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
-        }), l))
-      }, {
+        })(Object(t)).forEach(function(n) {
+          Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+        }), e
+      }(function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            T(e, t, n[t])
+          })
+        }
+        return e
+      }({}, e), {
+        user: t,
+        applicationId: i,
+        isGameRelationship: n
+      })), {
         onClose: () => {
           this.setState({
             isActiveRow: false

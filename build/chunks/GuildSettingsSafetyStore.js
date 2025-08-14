@@ -1,60 +1,59 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 392885, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
-var r, i, l, Chunk442837 = require("./442837.js"),
+var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk999382 = require("./999382.js"),
   Chunk740903 = require("./740903.js"),
   Chunk981631 = require("./981631.js");
-let u = Chunk740903.u.OVERVIEW,
-  m = null;
+let d = Chunk740903.u.OVERVIEW,
+  u = null;
 
-function g(e) {
+function m(e) {
   let {
     subsection: t
   } = e;
   switch (t) {
-    case d.KsC.SAFETY_AUTOMOD:
-      u = c.u.AUTOMOD;
+    case c.KsC.SAFETY_AUTOMOD:
+      d = o.u.AUTOMOD;
       break;
-    case d.KsC.SAFETY_DM_AND_SPAM_PROTECTION:
-      u = c.u.DM_AND_SPAM_PROTECTION;
+    case c.KsC.SAFETY_DM_AND_SPAM_PROTECTION:
+      d = o.u.DM_AND_SPAM_PROTECTION;
       break;
-    case d.KsC.SAFETY_CAPTCHA_AND_RAID_PROTECTION:
-      u = c.u.CAPTCHA_AND_RAID_PROTECTION;
+    case c.KsC.SAFETY_CAPTCHA_AND_RAID_PROTECTION:
+      d = o.u.CAPTCHA_AND_RAID_PROTECTION;
       break;
-    case d.KsC.SAFETY_PERMISSIONS:
-      u = c.u.PERMISSIONS;
+    case c.KsC.SAFETY_PERMISSIONS:
+      d = o.u.PERMISSIONS;
       break;
-    case d.KsC.SAFETY_OVERVIEW:
+    case c.KsC.SAFETY_OVERVIEW:
     default:
-      u = c.u.OVERVIEW
+      d = o.u.OVERVIEW
   }
 }
-class p extends(l = Chunk442837.ZP.Store) {
+class g extends(i = Chunk442837.ZP.Store) {
   getCurrentPage() {
-    return u
+    return d
   }
-}
-i = "GuildSettingsSafetyStore", (r = "displayName") in p ? Object.defineProperty(p, r, {
-  value: i,
+}(r = "displayName") in g ? Object.defineProperty(g, r, {
+  value: "GuildSettingsSafetyStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : p[r] = i;
-let h = new p(Chunk570140.Z, {
+}) : g[r] = "GuildSettingsSafetyStore";
+let p = new g(Chunk570140.Z, {
   GUILD_SETTINGS_INIT: function() {
-    if (Chunk999382.Z.getGuildId() === m) returnfalse;
-    m = Chunk999382.Z.getGuildId()
+    if (Chunk999382.Z.getGuildId() === u) returnfalse;
+    u = Chunk999382.Z.getGuildId()
   },
-  GUILD_SETTINGS_SET_SECTION: g,
-  GUILD_SETTINGS_SAFETY_SET_SUBSECTION: g,
+  GUILD_SETTINGS_SET_SECTION: m,
+  GUILD_SETTINGS_SAFETY_SET_SUBSECTION: m,
   GUILD_SETTINGS_SAFETY_PAGE: function(e) {
     let {
       page: t
     } = e;
-    u = t
+    d = t
   }
 })

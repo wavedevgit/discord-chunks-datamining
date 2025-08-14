@@ -13,7 +13,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk230711 = require("./230711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk132311 = require("./132311.js");
+  Chunk26621 = require("./26621.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,12 +26,12 @@ function p(e, t, n) {
 class h extends(r = Chunk73800.Component) {
   render() {
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk132311.streamerModeEnabled,
+      className: Chunk26621.streamerModeEnabled,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk132311.streamerModeEnabledImage
+        className: Chunk26621.streamerModeEnabledImage
       }), (0, Chunk255367.jsx)(Chunk481060.P3F, {
-        className: s()(Chunk132311.streamerModeEnabledBtn, {
-          [Chunk132311.disabled]: this.props.disableButton
+        className: s()(Chunk26621.streamerModeEnabledBtn, {
+          [Chunk26621.disabled]: this.props.disableButton
         }),
         onClick: this.handleClick,
         children: Chunk388032.intl.string(Chunk388032.t.Br1ls7)

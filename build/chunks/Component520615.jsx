@@ -1,5 +1,5 @@
 /** Chunk was on 96075 **/
-/** chunk id: 520615, original params: t,n,s (module,exports,require) **/
+/** chunk id: 520615, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   default: () => d
 });
@@ -8,36 +8,36 @@ require("./73800.js");
 var Chunk481060 = require("./481060.js"),
   Chunk338690 = require("./338690.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk72547 = require("./72547.js");
+  Chunk473865 = require("./473865.js");
 
 function d(t) {
   let {
     transitionState: n,
-    onClose: s
+    onClose: e
   } = t;
-  return (0, e.jsxs)(r.Y0X, {
+  return (0, r.jsxs)(i.Y0X, {
     transitionState: n,
     parentComponent: "UrgentMessageModal",
-    children: [(0, e.jsx)(r.xBx, {
+    children: [(0, r.jsx)(i.xBx, {
       separator: false,
-      children: (0, e.jsx)(r.X6q, {
+      children: (0, r.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
-        children: i.intl.string(i.t.bAhz9v)
+        children: s.intl.string(s.t.bAhz9v)
       })
-    }), (0, e.jsxs)(r.hzk, {
-      children: [(0, e.jsx)(r.Text, {
+    }), (0, r.jsxs)(i.hzk, {
+      children: [(0, r.jsx)(i.Text, {
         variant: "text-md/normal",
-        children: i.intl.string(i.t["7KjxW1"])
-      }), (0, e.jsx)("div", {
-        className: c.art
+        children: s.intl.string(s.t["7KjxW1"])
+      }), (0, r.jsx)("div", {
+        className: l.art
       })]
-    }), (0, e.jsx)(r.mzw, {
-      children: (0, e.jsx)(r.zxk, {
+    }), (0, r.jsx)(i.mzw, {
+      children: (0, r.jsx)(i.zxk, {
         variant: "primary",
-        text: i.intl.string(i.t.BddRzc),
+        text: s.intl.string(s.t.BddRzc),
         type: "submit",
         onClick: () => {
-          (0, a.Z)(), s()
+          (0, a.Z)(), e()
         }
       })
     })]

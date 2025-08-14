@@ -1,7 +1,7 @@
 /** Chunk was on 66317 **/
 /** chunk id: 583478, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => C
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,20 +14,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk168232 = require("./168232.js"),
   Chunk976845 = require("./976845.jsx"),
   Chunk48541 = require("./48541.js"),
-  Chunk791144 = require("./791144.js");
+  Chunk664597 = require("./664597.js");
 let O = new Chunk710845.Z("BalanceCounter"),
   y = (0, Chunk168232.dU)(true) === Chunk48541.C.PRODUCTION,
   p = e => null === e ? 0 : "".concat(e.toFixed(0)).length,
-  m = (e, t) => {
-    let r = e > 0,
-      n = t * b.eg[r ? "EARN" : "SPEND"];
-    return {
-      duration: n,
-      delay: r ? t - n : 0
-    }
-  },
-  C = (e, t, r) => null === r ? Math.max(e, t) : Math.max(t, r),
-  g = e => {
+  m = e => {
     var t, r;
     let {
       value: l,
@@ -35,30 +26,37 @@ let O = new Chunk710845.Z("BalanceCounter"),
       onValueChange: c,
       onValueReached: s,
       targetTotalCounterTime: d = 3e3
-    } = e, [b, f] = (0, a.useState)(0), h = (0, a.useRef)(null), C = (0, a.useRef)(null);
+    } = e, [f, h] = (0, a.useState)(0), m = (0, a.useRef)(null), C = (0, a.useRef)(null);
     (0, a.useEffect)(() => {
       if (null === l) return;
-      if (null === h.current) {
-        h.current = l;
+      if (null === m.current) {
+        m.current = l;
         return
       }
-      let e = null !== h.current ? l - h.current : l;
-      0 !== e && null !== h.current && c(e), C.current = {
+      let e = null !== m.current ? l - m.current : l;
+      0 !== e && null !== m.current && c(e), C.current = {
         lastChangedAt: Date.now(),
         totalDelta: Math.abs(e)
       }
     }, [l, c]);
     let g = null != l ? l : 0,
-      _ = null != (t = h.current) ? t : g,
+      _ = null != (t = m.current) ? t : g,
       {
         duration: E,
         delay: R
-      } = m(g - _, d),
+      } = ((e, t) => {
+        let r = e > 0,
+          n = t * b.eg[r ? "EARN" : "SPEND"];
+        return {
+          duration: n,
+          delay: r ? t - n : 0
+        }
+      })(g - _, d),
       {
         number: j
       } = (0, u.q_F)({
         from: {
-          number: null != (r = h.current) ? r : g
+          number: null != (r = m.current) ? r : g
         },
         number: g,
         config: {
@@ -72,14 +70,14 @@ let O = new Chunk710845.Z("BalanceCounter"),
           i(p(_))
         },
         onRest: () => {
-          if (f(b + 1), s(), !y && null !== C.current && null !== h.current) {
+          if (h(f + 1), s(), !y && null !== C.current && null !== m.current) {
             let e = Date.now();
             O.log("Balance Counter finished updating: ", {
               time: e - C.current.lastChangedAt,
-              delta: g - h.current
+              delta: g - m.current
             })
           }
-          i(p(g)), h.current = g
+          i(p(g)), m.current = g
         }
       }),
       v = p(Math.max(null != l ? l : 0, j.get()));
@@ -90,7 +88,7 @@ let O = new Chunk710845.Z("BalanceCounter"),
       children: j.to(e => "".concat(e.toFixed(0)))
     })
   },
-  _ = e => {
+  C = e => {
     var t, {
         value: r,
         className: l
@@ -114,7 +112,7 @@ let O = new Chunk710845.Z("BalanceCounter"),
       [d, b] = (0, a.useState)(null),
       f = (0, a.useMemo)(() => p(r), [r]),
       O = null != (t = (0, c.Z)(f)) ? t : 0,
-      y = (0, a.useMemo)(() => C(O, f, d), [O, f, d]);
+      y = (0, a.useMemo)(() => null === d ? Math.max(O, f) : Math.max(f, d), [O, f, d]);
     return (0, n.jsx)(u.Text, {
       variant: "text-md/semibold",
       className: i()(h.balanceCounterText, s ? true : h.balanceCounterMargin, l),
@@ -122,7 +120,7 @@ let O = new Chunk710845.Z("BalanceCounter"),
         width: "".concat(s ? 0 : y, "ch"),
         opacity: s ? "0" : 1
       },
-      children: s ? null : (0, n.jsx)(g, function(e) {
+      children: s ? null : (0, n.jsx)(m, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);

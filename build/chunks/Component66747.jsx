@@ -46,7 +46,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk176505 = require("./176505.js"),
   Chunk50493 = require("./50493.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk92006 = require("./92006.js");
+  Chunk266631 = require("./266631.js");
 
 function Y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -166,7 +166,7 @@ let X = Chunk73800.memo(function(e) {
     let {
       member: t,
       highestRole: n
-    } = e, o = (0, u.e7)([_.Z], () => _.Z.getGuild(t.guildId), [t.guildId]), a = t.roles.length - 1, s = l.useMemo(() => new Intl.NumberFormat(z.intl.currentLocale).format(a), [a]), c = (0, A.vN)(t), d = (0, A.vN)(t, true), m = (0, u.e7)([w.Z], () => w.Z.can(U.Plq.MANAGE_ROLES, o), [o]);
+    } = e, o = (0, u.e7)([H.Z], () => H.Z.getGuild(t.guildId), [t.guildId]), a = t.roles.length - 1, s = l.useMemo(() => new Intl.NumberFormat(z.intl.currentLocale).format(a), [a]), c = (0, A.vN)(t), d = (0, A.vN)(t, true), m = (0, u.e7)([w.Z], () => w.Z.can(U.Plq.MANAGE_ROLES, o), [o]);
     return null == o ? null : (0, r.jsxs)("div", {
       className: G.roleContainer,
       children: [null != n && (0, r.jsx)(B.Z, {
@@ -247,7 +247,7 @@ let X = Chunk73800.memo(function(e) {
           variant: "text-xs/normal",
           color: "header-secondary",
           tag: "span",
-          children: R.ZP.getUserTag(o)
+          children: L.ZP.getUserTag(o)
         })
       })]
     })
@@ -301,7 +301,7 @@ let ee = Chunk73800.memo(function(e) {
       accountCreationDateShort: i,
       accountCreationDateLong: a
     } = l.useMemo(() => {
-      let e = L.default.extractTimestamp(t.userId);
+      let e = R.default.extractTimestamp(t.userId);
       return {
         accountCreationDateShort: (0, I.fv)(e, I.jq.ACCOUNT_AGE),
         accountCreationDateLong: new Date(e).toLocaleDateString(z.intl.currentLocale, I.I)
@@ -331,7 +331,7 @@ let ee = Chunk73800.memo(function(e) {
       onOpenMemberView: d,
       compact: m,
       hasModViewPanelAccess: b
-    } = e, p = (0, u.e7)([w.Z, _.Z], () => w.Z.can(U.Plq.MANAGE_GUILD, _.Z.getGuild(t.guildId)), [t.guildId]), {
+    } = e, p = (0, u.e7)([w.Z, H.Z], () => w.Z.can(U.Plq.MANAGE_GUILD, H.Z.getGuild(t.guildId)), [t.guildId]), {
       selectedUserIds: f,
       addUsers: h,
       removeUser: j
@@ -340,7 +340,7 @@ let ee = Chunk73800.memo(function(e) {
       return null != (e = V.Z.getSearchStateByGuildId(t.guildId).selectedSort) ? e : P.d$.ORDER_BY_UNSPECIFIED
     }, [t.guildId], c()), y = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != t && x && (f.has(t.userId) ? j(t.userId) : h([t.userId]))
-    }, [h, x, t, j, f]), O = v === P.d$.ORDER_BY_GUILD_JOINED_AT_ASC, H = v === P.d$.ORDER_BY_USER_ID_ASC || v === P.d$.ORDER_BY_USER_ID_DESC;
+    }, [h, x, t, j, f]), O = v === P.d$.ORDER_BY_GUILD_JOINED_AT_ASC, _ = v === P.d$.ORDER_BY_USER_ID_ASC || v === P.d$.ORDER_BY_USER_ID_DESC;
     return (0, r.jsxs)(r.Fragment, {
       children: [g && (0, r.jsx)(C.ua7, {
         tooltipClassName: G.disabledActionTooltip,
@@ -383,7 +383,7 @@ let ee = Chunk73800.memo(function(e) {
         children: (0, r.jsx)(ee, {
           showLongDate: a,
           member: t,
-          isSortedBy: H
+          isSortedBy: _
         })
       }), p && (0, r.jsx)("td", {
         className: i()(G.smallCol, {
@@ -475,9 +475,9 @@ let ee = Chunk73800.memo(function(e) {
       compact: m = false
     } = e, {
       analyticsLocations: b
-    } = (0, p.ZP)(), f = (0, u.e7)([H.ZP], () => H.ZP.getGuildSidebarState(n), [n]), h = (null == f ? true : f.details.userId) === t, j = (0, u.e7)([V.Z], () => V.Z.getEnhancedMember(n, t), [n, t]), v = (0, A.zq)(j), y = (0, u.e7)([N.default], () => N.default.getUser(t), [t]), O = (0, x.m)(n), _ = (0, A.RN)(null != j ? j : true), w = l.useCallback(e => {
-      e.stopPropagation(), e.preventDefault(), _(e)
-    }, [_]), S = l.useCallback(e => {
+    } = (0, p.ZP)(), f = (0, u.e7)([_.ZP], () => _.ZP.getGuildSidebarState(n), [n]), h = (null == f ? true : f.details.userId) === t, j = (0, u.e7)([V.Z], () => V.Z.getEnhancedMember(n, t), [n, t]), v = (0, A.zq)(j), y = (0, u.e7)([N.default], () => N.default.getUser(t), [t]), O = (0, x.m)(n), H = (0, A.RN)(null != j ? j : true), w = l.useCallback(e => {
+      e.stopPropagation(), e.preventDefault(), H(e)
+    }, [H]), S = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != j && (0, A.RE)(j, b)
     }, [j, b]), Z = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != j && (O ? (0, g.r)(j.guildId, j.userId, F.oC.MEMBER_SAFETY, {

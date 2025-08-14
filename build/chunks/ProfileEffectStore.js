@@ -35,7 +35,7 @@ let u = [],
     let {
       presets: t
     } = e;
-    0 === t.length ? (f = u, _ = d) : (f = (0, o.cloneDeep)(t), _ = (0, o.keyBy)(f, "id")), E = Number.POSITIVE_INFINITY, b = 0, r = true, g = false
+    0 === t.length ? (f = u, _ = d) : (f = (0, o.cloneDeep)(t), _ = (0, o.keyBy)(f, "id")), E = 1 / 0, b = 0, r = true, g = false
   },
   v = e => {
     let {

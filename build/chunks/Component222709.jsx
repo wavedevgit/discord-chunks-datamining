@@ -12,7 +12,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk143740 = require("./143740.jsx"),
   Chunk212342 = require("./212342.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk577490 = require("./577490.js");
+  Chunk785188 = require("./785188.js");
 let f = e => {
   let {
     channelId: t,

@@ -31,7 +31,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk314734 = require("./314734.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk427845 = require("./427845.js");
+  Chunk399235 = require("./399235.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,8 +72,8 @@ function x(e, t) {
   }), e
 }
 let M = Array(6).fill(0).map((e, t) => t),
-  j = [, , , ].fill(0).map((e, t) => t),
-  k = [, , , , ].fill(0).map((e, t) => t),
+  k = [, , , ].fill(0).map((e, t) => t),
+  j = [, , , , ].fill(0).map((e, t) => t),
   U = 4,
   G = 5;
 
@@ -177,18 +177,18 @@ function F(e) {
     })
   }, [a.length, v, b]);
   let M = w || L,
-    j = w ? T.Z.buttonTypes.VIEW_LESS : T.Z.buttonTypes.VIEW_MORE,
-    k = M ? a : E;
+    k = w ? T.Z.buttonTypes.VIEW_LESS : T.Z.buttonTypes.VIEW_MORE,
+    j = M ? a : E;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(T.Z, {
       title: R.intl.string(R.t["0hKkS0"]),
-      buttonType: j,
+      buttonType: k,
       onClickViewButton: _ ? I : true
     }), (0, r.jsx)("div", {
       className: P.sectionContentContainer,
       ref: D,
       onTransitionEnd: x,
-      children: k.map((e, t) => {
+      children: j.map((e, t) => {
         let {
           command: n,
           application: i,
@@ -273,7 +273,7 @@ function H(e) {
           installOnDemand: a,
           query: o
         }, i.id)
-      }), i && j.map(e => (0, r.jsx)(A.Z, {}, e))]
+      }), i && k.map(e => (0, r.jsx)(A.Z, {}, e))]
     })]
   }) : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(T.Z, {
@@ -295,7 +295,7 @@ function H(e) {
           installOnDemand: a,
           query: o
         }, i.id)
-      }), i && k.map(e => (0, r.jsx)(y.Z, {
+      }), i && j.map(e => (0, r.jsx)(y.Z, {
         look: b.U4.LARGE_BANNER
       }, e))]
     })]
@@ -319,13 +319,13 @@ function W() {
     children: [(0, Chunk255367.jsx)(Chunk41558.Z, {
       title: Chunk388032.intl.string(Chunk388032.t["0hKkS0"])
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk427845.sectionContentContainer,
+      className: Chunk399235.sectionContentContainer,
       children: M.map(e => (0, r.jsx)(A.Z, {}, e))
     }), (0, Chunk255367.jsx)(Chunk41558.Z, {
       title: Chunk388032.intl.string(Chunk388032.t.PHjkRE)
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk427845.sectionContentContainer,
-      children: j.map(e => (0, r.jsx)(A.Z, {}, e))
+      className: Chunk399235.sectionContentContainer,
+      children: k.map(e => (0, r.jsx)(A.Z, {}, e))
     })]
   })
 }

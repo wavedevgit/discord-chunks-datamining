@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 460461, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => w,
@@ -30,7 +30,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk465520 = require("./465520.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk640637 = require("./640637.js");
+  Chunk539981 = require("./539981.js");
 let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
   w = () => {
     let {
@@ -78,47 +78,38 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       canManageGuild: Z
     } = (0, Chunk442837.cj)([Chunk496675.Z], () => ({
       canManageGuild: Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, Chunk852860)
-    })), D = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.isGuildMetadataLoaded()), A = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getMetadata() : null), k = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 && (null == A ? true : A.isPublished) ? Chunk999382.Z.getSlug() : null), [L, M] = Chunk73800.useState([true]), [G, U] = Chunk73800.useState(true), [B, F] = Chunk73800.useState([false]), [H, z] = Chunk73800.useState([""]), W = e => {
-      let t = Object.entries(I.z).filter(e => !H.includes(e[1].presentation)).map(e => ({
-        label: e[1].presentation,
-        value: e[0]
-      }));
-      return null == e || "" === e ? t : t.concat({
-        label: e,
-        value: e
-      })
-    }, V = e => {
-      try {
-        var t, n, r, i;
-        let l = new URL(e).hostname.split(".");
-        if (3 === l.length && "bandcamp" === l[1].toLowerCase()) return I.z.bandcamp.presentation;
-        let a = null != (n = null == (t = l.shift()) ? true : t.toLowerCase()) ? n : "";
-        if ("www" === a && (a = null != (i = null == (r = l.shift()) ? true : r.toLowerCase()) ? i : ""), a in I.z) return I.z[a].presentation;
-        return null
-      } catch (e) {
-        return null
-      }
-    };
+    })), D = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.isGuildMetadataLoaded()), A = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getMetadata() : null), k = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 && (null == A ? true : A.isPublished) ? Chunk999382.Z.getSlug() : null), [L, M] = Chunk73800.useState([true]), [G, U] = Chunk73800.useState(true), [B, F] = Chunk73800.useState([false]), [H, z] = Chunk73800.useState([""]);
     Chunk73800.useEffect(() => {
       if (null !== A) {
         let e = [],
           t = [];
         A.socialLinks.forEach((n, r) => {
           if ("" !== n) {
-            let i = V(n);
+            let i = (e => {
+              try {
+                var t, n, r, i;
+                let l = new URL(e).hostname.split(".");
+                if (3 === l.length && "bandcamp" === l[1].toLowerCase()) return I.z.bandcamp.presentation;
+                let a = null != (n = null == (t = l.shift()) ? true : t.toLowerCase()) ? n : "";
+                if ("www" === a && (a = null != (i = null == (r = l.shift()) ? true : r.toLowerCase()) ? i : ""), a in I.z) return I.z[a].presentation;
+                return null
+              } catch (e) {
+                return null
+              }
+            })(n);
             null !== i ? (t[r] = i, e[r] = true) : e[r] = false
           } else e[r] = true
         }), z(exports), M(module), U(module.every(e => true === e))
       }
     }, [A]);
-    let Y = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getErrors() : null);
+    let W = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getErrors() : null);
     if (null == Chunk852860 || null == A) return null;
-    let K = e => {
+    let V = e => {
         _.Z.updateGuild({
           discoverySplash: e
         })
       },
-      q = e => {
+      Y = e => {
         let t = () => {
           (0, p.W1)(u.id, e), e ? (0, p.Vv)({
             guildId: u.id,
@@ -152,43 +143,14 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           e.default.open(t)
         }) : t()
       },
-      X = (e, t) => {
-        let n = [...A.socialLinks],
-          r = [...H],
-          i = [...L];
-        r[t] = e, n[t] = I.z[e].baseUrl, i[t] = true, M(i), z(r), U(i.every(e => true === e)), (0, p.t$)(u.id, n)
-      },
-      Q = (e, t) => {
-        let n = [...A.socialLinks],
-          r = n[t],
-          i = e;
-        0 === r.length && i.length > 1 && false === RegExp("^https?:").test(i) && (i = "https://" + i), /\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) || (n[t] = i, (0, p.t$)(u.id, n))
-      },
-      J = e => {
-        let t = [...B];
-        t.splice(e, 1), F(t);
-        let n = [...L];
-        n.splice(e, 1), M(n);
-        let r = [...H];
-        r.splice(e, 1), z(r);
-        let i = [...A.socialLinks];
-        i.splice(e, 1), (0, p.t$)(u.id, i)
-      },
-      $ = e => {
+      K = e => {
         let {
           reason: t = "",
           emoji_name: n = ""
         } = e;
         return null !== t && t.length >= 10 && t.length <= 128 && null !== n
       },
-      ee = e => {
-        let {
-          reason: t = "",
-          emoji_name: n = ""
-        } = e;
-        return (null === t || "" === t) && null === n
-      },
-      et = [{
+      q = [{
         title: Chunk388032.intl.string(Chunk388032.t["/SWsHx"]),
         items: [{
           description: Chunk388032.intl.string(Chunk388032.t.DU8jFx),
@@ -201,36 +163,42 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           completed: null !== A.about && A.about.length >= 300 && A.about.length <= 2400
         }, {
           description: Chunk388032.intl.string(Chunk388032.t.qpx5MD),
-          completed: null !== A.reasonsToJoin && A.reasonsToJoin.every(e => ee(e) || $(e)) && A.reasonsToJoin.filter($).length >= 2
+          completed: null !== A.reasonsToJoin && A.reasonsToJoin.every(e => (e => {
+            let {
+              reason: t = "",
+              emoji_name: n = ""
+            } = e;
+            return (null === t || "" === t) && null === n
+          })(e) || K(e)) && A.reasonsToJoin.filter(K).length >= 2
         }]
       }],
-      en = (e, t) => {
+      X = (e, t) => {
         let n = [...B];
         n[e] = t, F(n)
       };
     return (0, Chunk255367.jsx)("div", {
-      className: Chunk640637.settingsColumn,
+      className: Chunk539981.settingsColumn,
       children: (0, Chunk255367.jsx)("div", {
-        className: Chunk640637.settingsContainer,
+        className: Chunk539981.settingsContainer,
         children: (0, Chunk255367.jsx)(Chunk481060.w0Z, {
-          className: Chunk640637.settingsScroller,
+          className: Chunk539981.settingsScroller,
           children: (0, Chunk255367.jsx)("main", {
             ref: exports,
-            className: Chunk640637.settingsContent,
+            className: Chunk539981.settingsContent,
             children: (0, Chunk255367.jsx)(Chunk481060.JcV, {
               containerRef: exports,
               children: (0, Chunk255367.jsxs)("div", {
-                className: Chunk640637.container,
+                className: Chunk539981.container,
                 children: [(0, Chunk255367.jsxs)(Chunk481060.hjN, {
-                  className: Chunk640637.mainContent,
+                  className: Chunk539981.mainContent,
                   title: (0, Chunk255367.jsxs)("div", {
                     children: [Chunk388032.intl.string(Chunk388032.t.kGlQGB), " ", (0, Chunk255367.jsx)(Chunk688465.Z, {
-                      className: Chunk640637.betaTag
+                      className: Chunk539981.betaTag
                     })]
                   }),
                   tag: Chunk481060.RB0.H1,
                   children: [(0, Chunk255367.jsxs)(Chunk481060.R94, {
-                    className: Chunk640637.tabMainDescription,
+                    className: Chunk539981.tabMainDescription,
                     type: Chunk481060.geA.DESCRIPTION,
                     children: [Chunk388032.intl.format(Chunk388032.t["+ScrMT"], {
                       discordURL: window.GLOBAL_ENV.MARKETING_ENDPOINT
@@ -241,15 +209,15 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     if (!A.isPublished || null == k) return;
                     let e = P + k;
                     return (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-                      className: Chunk640637.noDividerFormSection,
+                      className: Chunk539981.noDividerFormSection,
                       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-                        className: Chunk640637.formTitle,
+                        className: Chunk539981.formTitle,
                         children: Chunk388032.intl.string(Chunk388032.t.safBZ2)
                       }), (0, Chunk255367.jsx)(Chunk484614.Z, {
                         value: module
                       }), (0, Chunk255367.jsx)("div", {
                         "data-button-hoisted-classname-wrapper": true,
-                        className: Chunk640637.viewPageButton,
+                        className: Chunk539981.viewPageButton,
                         children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
                           variant: "primary",
                           size: "sm",
@@ -259,16 +227,16 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       })]
                     })
                   })(), (0, Chunk255367.jsx)(Chunk481060.$i$, {
-                    className: Chunk640637.divider
+                    className: Chunk539981.divider
                   }), (() => {
                     if (null != Chunk852860) return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
                       children: [(0, Chunk255367.jsxs)(Chunk481060.hjN, {
                         children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-                          className: Chunk640637.formTitle,
+                          className: Chunk539981.formTitle,
                           children: Chunk388032.intl.string(Chunk388032.t.GjPpSk)
                         }), (0, Chunk255367.jsx)(Chunk481060.R94, {
                           type: Chunk481060.geA.DESCRIPTION,
-                          className: Chunk640637.description,
+                          className: Chunk539981.description,
                           children: Chunk388032.intl.string(Chunk388032.t.MVXonJ)
                         })]
                       }), (0, Chunk255367.jsx)(Chunk718157.E, {
@@ -276,42 +244,42 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         guildMetadata: A,
                         isDisabled: !Z
                       }), (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-                        className: Chunk640637.noDividerFormSection,
+                        className: Chunk539981.noDividerFormSection,
                         children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-                          className: Chunk640637.formTitle,
+                          className: Chunk539981.formTitle,
                           children: Chunk388032.intl.string(Chunk388032.t.oOPlPD)
                         }), (0, Chunk255367.jsx)(Chunk450474.Z, {
                           guild: Chunk852860,
                           guildMetadata: A,
                           disabled: !Z
                         })]
-                      }), (null == Y ? true : Y.category) != null ? (0, Chunk255367.jsx)(Chunk481060.Text, {
+                      }), (null == W ? true : W.category) != null ? (0, Chunk255367.jsx)(Chunk481060.Text, {
                         color: "text-danger",
-                        className: Chunk640637.error,
+                        className: Chunk539981.error,
                         variant: "text-sm/normal",
-                        children: Y.category
+                        children: W.category
                       }) : null]
                     })
                   })(), (0, Chunk255367.jsx)(Chunk481060.$i$, {
-                    className: Chunk640637.divider
+                    className: Chunk539981.divider
                   }), (() => {
                     if (null != Chunk852860) return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
                       children: [(0, Chunk255367.jsxs)(Chunk481060.hjN, {
-                        className: Chunk640637.twoColumnFormSection,
+                        className: Chunk539981.twoColumnFormSection,
                         children: [(0, Chunk255367.jsxs)("div", {
                           children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-                            className: Chunk640637.formTitle,
+                            className: Chunk539981.formTitle,
                             children: Chunk388032.intl.string(Chunk388032.t["8bT/Cg"])
                           }), (0, Chunk255367.jsx)(Chunk481060.R94, {
                             type: Chunk481060.geA.DESCRIPTION,
-                            className: Chunk640637.formDescription,
+                            className: Chunk539981.formDescription,
                             children: Chunk388032.intl.string(Chunk388032.t.WCWT7O)
                           }), (0, Chunk255367.jsxs)(Chunk755721.zx, {
                             size: Chunk755721.zx.Sizes.SMALL,
                             color: Chunk755721.zx.Colors.PRIMARY,
                             children: [Chunk388032.intl.string(Chunk388032.t.yG2pUl), (0, Chunk255367.jsx)(Chunk813197.ZP, {
                               disabled: !Z,
-                              onChange: K
+                              onChange: V
                             })]
                           })]
                         }), (0, Chunk255367.jsx)(Chunk208567.Z, {
@@ -322,25 +290,25 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                             size: 512 * (0, h.x_)()
                           }),
                           disabled: !Z,
-                          onChange: K,
+                          onChange: V,
                           hint: Chunk388032.intl.string(Chunk388032.t.uPvxqK),
-                          imageClassName: Chunk640637.imageUploaderInnerSquare,
+                          imageClassName: Chunk539981.imageUploaderInnerSquare,
                           hideSize: true
                         })]
-                      }), (null == Y ? true : Y.discovery_splash) != null ? (0, Chunk255367.jsx)(Chunk481060.Text, {
+                      }), (null == W ? true : W.discovery_splash) != null ? (0, Chunk255367.jsx)(Chunk481060.Text, {
                         color: "text-danger",
                         variant: "text-sm/normal",
-                        children: Y.discovery_splash
+                        children: W.discovery_splash
                       }) : null]
                     })
                   })(), (0, Chunk255367.jsx)(Chunk481060.$i$, {
-                    className: Chunk640637.divider
+                    className: Chunk539981.divider
                   }), (0, Chunk255367.jsxs)(Chunk481060.hjN, {
                     children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-                      className: Chunk640637.formTitle,
+                      className: Chunk539981.formTitle,
                       children: Chunk388032.intl.string(Chunk388032.t["RSfm+v"])
                     }), (0, Chunk255367.jsx)(Chunk481060.R94, {
-                      className: Chunk640637.description,
+                      className: Chunk539981.description,
                       type: Chunk481060.geA.DESCRIPTION,
                       children: Chunk388032.intl.string(Chunk388032.t.IBi6h4)
                     }), (0, Chunk255367.jsx)(Chunk755721.iS, {
@@ -356,7 +324,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       disabled: !Z
                     })]
                   }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
-                    className: Chunk640637.divider
+                    className: Chunk539981.divider
                   }), (() => {
                     if (null == A) return null;
                     let e = 0 === A.reasonsToJoin.length ? [, , , , ].fill({
@@ -365,40 +333,40 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     }) : A.reasonsToJoin;
                     return (0, Chunk255367.jsxs)(Chunk481060.hjN, {
                       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-                        className: Chunk640637.formTitle,
+                        className: Chunk539981.formTitle,
                         children: Chunk388032.intl.string(Chunk388032.t.vUmXsb)
                       }), (0, Chunk255367.jsx)(Chunk481060.R94, {
                         type: Chunk481060.geA.DESCRIPTION,
-                        className: Chunk640637.description,
+                        className: Chunk539981.description,
                         children: Chunk388032.intl.string(Chunk388032.t.esnBnZ)
                       }), (0, Chunk255367.jsx)("div", {
-                        className: Chunk640637.reasonToJoin,
+                        className: Chunk539981.reasonToJoin,
                         children: (0, Chunk255367.jsx)(Chunk190287.Z, {
                           reasonMinLength: 10,
                           reasonMaxLength: 128,
                           guildId: Chunk852860.id,
                           reasons: module
                         })
-                      }), (null == Y ? true : Y.reasons_to_join) != null ? (0, Chunk255367.jsx)(Chunk481060.Text, {
+                      }), (null == W ? true : W.reasons_to_join) != null ? (0, Chunk255367.jsx)(Chunk481060.Text, {
                         color: "text-danger",
                         variant: "text-sm/normal",
-                        children: Y.reasons_to_join
+                        children: W.reasons_to_join
                       }) : null]
                     })
                   })(), (0, Chunk255367.jsx)(Chunk481060.$i$, {
-                    className: Chunk640637.divider
+                    className: Chunk539981.divider
                   }), (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
                     children: [(0, Chunk255367.jsxs)(Chunk481060.hjN, {
                       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-                        className: Chunk640637.formTitle,
+                        className: Chunk539981.formTitle,
                         children: Chunk388032.intl.string(Chunk388032.t["lu+BmJ"])
                       }), (0, Chunk255367.jsx)(Chunk481060.R94, {
-                        className: Chunk640637.description,
+                        className: Chunk539981.description,
                         type: Chunk481060.geA.DESCRIPTION,
                         children: Chunk388032.intl.string(Chunk388032.t.ozSi8v)
                       }), (0, Chunk255367.jsx)(Chunk755721.iS, {
                         showCharacterCount: true,
-                        className: Chunk640637.textArea,
+                        className: Chunk539981.textArea,
                         value: A.about,
                         placeholder: Chunk388032.intl.string(Chunk388032.t.TduTbm),
                         onChange: e => {
@@ -409,38 +377,57 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         disabled: !Z,
                         defaultDirty: (null == (e = A.about) ? true : module.length) > 0
                       }, "text-area-".concat(D))]
-                    }), (null == Y ? true : Y.about) != null ? (0, Chunk255367.jsx)(Chunk481060.Text, {
+                    }), (null == W ? true : W.about) != null ? (0, Chunk255367.jsx)(Chunk481060.Text, {
                       color: "text-danger",
                       variant: "text-sm/normal",
-                      children: Y.about
+                      children: W.about
                     }) : null]
                   }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
-                    className: Chunk640637.divider
+                    className: Chunk539981.divider
                   }), (0, Chunk255367.jsxs)(Chunk481060.hjN, {
                     children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-                      className: Chunk640637.formTitle,
+                      className: Chunk539981.formTitle,
                       children: Chunk388032.intl.string(Chunk388032.t.V5mNyc)
                     }), (0, Chunk255367.jsx)(Chunk481060.R94, {
-                      className: Chunk640637.description,
+                      className: Chunk539981.description,
                       type: Chunk481060.geA.DESCRIPTION,
                       children: Chunk388032.intl.string(Chunk388032.t.d3kA9f)
                     }), A.socialLinks.map((e, t) => (0, r.jsxs)("div", {
                       className: T.socialLinksContainer,
-                      onMouseOver: () => en(t, true),
-                      onFocus: () => en(t, true),
-                      onMouseOut: () => en(t, false),
-                      onBlur: () => en(t, false),
+                      onMouseOver: () => X(t, true),
+                      onFocus: () => X(t, true),
+                      onMouseOut: () => X(t, false),
+                      onBlur: () => X(t, false),
                       children: [(0, r.jsx)(o.q4e, {
                         className: A.isPublished ? T.socialLinksDropdownMax : T.socialLinksDropdownMin,
-                        options: W(H[t]),
+                        options: (e => {
+                          let t = Object.entries(I.z).filter(e => !H.includes(e[1].presentation)).map(e => ({
+                            label: e[1].presentation,
+                            value: e[0]
+                          }));
+                          return null == e || "" === e ? t : t.concat({
+                            label: e,
+                            value: e
+                          })
+                        })(H[t]),
                         placeholder: S.intl.string(S.t.xSALIC),
                         value: H[t],
-                        onChange: e => X(e, t),
+                        onChange: e => ((e, t) => {
+                          let n = [...A.socialLinks],
+                            r = [...H],
+                            i = [...L];
+                          r[t] = e, n[t] = I.z[e].baseUrl, i[t] = true, M(i), z(r), U(i.every(e => true === e)), (0, p.t$)(u.id, n)
+                        })(e, t),
                         isDisabled: !Z
                       }, "dropdown-" + t), (0, r.jsx)(s.Is, {
                         value: e,
                         className: A.isPublished ? T.socialLinksMax : T.socialLinksMin,
-                        onChange: e => Q(e, t),
+                        onChange: e => ((e, t) => {
+                          let n = [...A.socialLinks],
+                            r = n[t],
+                            i = e;
+                          0 === r.length && i.length > 1 && false === RegExp("^https?:").test(i) && (i = "https://" + i), /\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) || (n[t] = i, (0, p.t$)(u.id, n))
+                        })(e, t),
                         placeholder: S.intl.string(S.t.Q6o4pK),
                         maxLength: 150,
                         disabled: !Z
@@ -458,12 +445,21 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         height: 20
                       }, "validation-failed-" + t), Z && (0, r.jsx)(c.Z, {
                         className: B[t] ? A.isPublished ? T.deleteButtonMax : T.deleteButtonMin : A.isPublished ? T.deleteButtonHiddenMax : T.deleteButtonHiddenMin,
-                        onClick: () => J(t)
+                        onClick: () => (e => {
+                          let t = [...B];
+                          t.splice(e, 1), F(t);
+                          let n = [...L];
+                          n.splice(e, 1), M(n);
+                          let r = [...H];
+                          r.splice(e, 1), z(r);
+                          let i = [...A.socialLinks];
+                          i.splice(e, 1), (0, p.t$)(u.id, i)
+                        })(t)
                       }, "delete-button-" + t)]
-                    }, "social-container-" + t)), (null == Y ? true : Y.social_links) != null ? (0, Chunk255367.jsx)(Chunk481060.Text, {
+                    }, "social-container-" + t)), (null == W ? true : W.social_links) != null ? (0, Chunk255367.jsx)(Chunk481060.Text, {
                       color: "text-danger",
                       variant: "text-sm/normal",
-                      children: Y.social_links
+                      children: W.social_links
                     }) : null, (0, Chunk255367.jsx)(Chunk481060.zxk, {
                       variant: "secondary",
                       size: "sm",
@@ -478,35 +474,35 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     })]
                   }), A.isPublished && (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
                     children: [(0, Chunk255367.jsx)(Chunk481060.$i$, {
-                      className: Chunk640637.divider
+                      className: Chunk539981.divider
                     }), (0, Chunk255367.jsxs)(Chunk481060.hjN, {
                       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
-                        className: Chunk640637.formTitle,
+                        className: Chunk539981.formTitle,
                         children: Chunk388032.intl.string(Chunk388032.t["5yF7e3"])
                       }), (0, Chunk255367.jsx)(Chunk481060.R94, {
-                        className: Chunk640637.description,
+                        className: Chunk539981.description,
                         type: Chunk481060.geA.DESCRIPTION,
                         children: Chunk388032.intl.string(Chunk388032.t.eOFvqa)
                       }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
                         variant: "critical-primary",
                         size: "sm",
                         text: Chunk388032.intl.string(Chunk388032.t["DCHd/P"]),
-                        onClick: () => q(false),
+                        onClick: () => Y(false),
                         disabled: !Z
                       })]
                     })]
-                  }), (null == Y ? true : Y.is_published) != null ? (0, Chunk255367.jsx)(Chunk481060.Text, {
+                  }), (null == W ? true : W.is_published) != null ? (0, Chunk255367.jsx)(Chunk481060.Text, {
                     color: "text-danger",
                     variant: "text-sm/normal",
-                    children: Y.is_published
+                    children: W.is_published
                   }) : null]
                 }), !A.isPublished && (0, Chunk255367.jsx)("div", {
-                  className: Chunk640637.checklist,
+                  className: Chunk539981.checklist,
                   children: (0, Chunk255367.jsx)(Chunk970061.Z, {
                     title: Chunk388032.intl.string(Chunk388032.t["2kCyn5"]),
-                    children: et,
+                    children: q,
                     buttonLabel: Chunk388032.intl.string(Chunk388032.t.tVK6S0),
-                    buttonCallback: () => q(true),
+                    buttonCallback: () => Y(true),
                     disabled: !Z || !G
                   })
                 })]

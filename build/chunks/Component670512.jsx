@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 670512, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -6,14 +6,14 @@ require.d(exports, {
 var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk846519 = require("./846519.js"),
   Chunk481060 = require("./481060.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk877528 = require("./877528.js");
+  Chunk992261 = require("./992261.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,7 +46,7 @@ class b extends(r = Chunk73800.PureComponent) {
     let {
       reducedMotion: t
     } = this.context;
-    true !== t.enabled && a.Z.spring(this.state.translateY, function(e) {
+    true !== t.enabled && s.Z.spring(this.state.translateY, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -63,40 +63,40 @@ class b extends(r = Chunk73800.PureComponent) {
   }
   renderArrowGroup(e) {
     return (0, i.jsxs)("div", {
-      className: s()(f.arrowGroup, e),
-      children: [(0, i.jsx)(a.Z.div, {
-        className: s()(f.arrowContainer, f.horizontal),
+      className: a()(h.arrowGroup, e),
+      children: [(0, i.jsx)(s.Z.div, {
+        className: a()(h.arrowContainer, h.horizontal),
         style: this.getStyle(),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(403756),
-          className: f.arrowIcon
+          className: h.arrowIcon
         })
       }), (0, i.jsx)("div", {
-        className: s()(f.arrowContainer, f.diag1),
+        className: a()(h.arrowContainer, h.diag1),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(536404),
-          className: f.arrowIcon
+          className: h.arrowIcon
         })
       }), (0, i.jsx)("div", {
-        className: s()(f.arrowContainer, f.diag2),
+        className: a()(h.arrowContainer, h.diag2),
         children: (0, i.jsx)("img", {
           alt: "",
           src: n(569347),
-          className: f.arrowIcon
+          className: h.arrowIcon
         })
       })]
     })
   }
   renderContent() {
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk877528.tutorialMessages,
+      className: Chunk992261.tutorialMessages,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk877528.searchMessage,
+        className: Chunk992261.searchMessage,
         children: Chunk388032.intl.string(Chunk388032.t.Mp0IGB)
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk877528.selectMessage,
+        className: Chunk992261.selectMessage,
         children: Chunk388032.intl.string(Chunk388032.t["3CbpwM"])
       })]
     })
@@ -109,11 +109,11 @@ class b extends(r = Chunk73800.PureComponent) {
     } = this.state;
     return (0, Chunk255367.jsxs)("div", {
       ref: this.rootRef,
-      className: s()(Chunk877528.tutorial, {
-        [Chunk877528.shown]: exports,
-        [Chunk877528.hasQuery]: module
+      className: a()(Chunk992261.tutorial, {
+        [Chunk992261.shown]: exports,
+        [Chunk992261.hasQuery]: module
       }),
-      children: [this.renderContent(), this.renderArrowGroup(Chunk877528.__invalid_left), this.renderArrowGroup(Chunk877528.right)]
+      children: [this.renderContent(), this.renderArrowGroup(Chunk992261.__invalid_left), this.renderArrowGroup(Chunk992261.right)]
     })
   }
   getStyle() {
@@ -135,7 +135,7 @@ class b extends(r = Chunk73800.PureComponent) {
   constructor(...e) {
     super(...e), g(this, "state", {
       shown: false,
-      translateY: new a.Z.Value(0)
+      translateY: new s.Z.Value(0)
     }), g(this, "rootRef", l.createRef()), g(this, "focusTimeout", new c.V7), g(this, "handleResultFocus", e => {
       let {
         node: t

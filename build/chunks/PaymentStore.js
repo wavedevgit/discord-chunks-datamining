@@ -1,48 +1,47 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 818035, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => u
 }), require("./539854.js"), require("./388685.js"), require("./642613.js");
-var i, r, s, Chunk442837 = require("./442837.js"),
+var i, r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk461655 = require("./461655.js");
-let c = [];
+let o = [];
 
-function d(e) {
+function c(e) {
   let {
     payment: t
-  } = e, n = o.Z.createFromServer(t), i = c.findIndex(e => e.id === t.id);
-  false === i ? (c.push(n), c.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime())) : c[i] = n, c = [...c]
+  } = e, n = l.Z.createFromServer(t), i = o.findIndex(e => e.id === t.id);
+  false === i ? (o.push(n), o.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime())) : o[i] = n, o = [...o]
 }
-class u extends(i = Chunk442837.ZP.Store) {
+class d extends(i = Chunk442837.ZP.Store) {
   getPayment(e) {
-    return c.find(t => t.id === e)
+    return o.find(t => t.id === e)
   }
   getPayments() {
-    return c
+    return o
   }
-}
-s = "PaymentStore", (r = "displayName") in u ? Object.defineProperty(u, r, {
-  value: s,
+}(r = "displayName") in d ? Object.defineProperty(d, r, {
+  value: "PaymentStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : u[r] = s;
-let m = new u(Chunk570140.Z, {
+}) : d[r] = "PaymentStore";
+let u = new d(Chunk570140.Z, {
   BILLING_PAYMENTS_FETCH_SUCCESS: function(e) {
     let {
       payments: t
     } = e;
     for (let e of t) {
-      let t = o.Z.createFromServer(e),
-        n = c.findIndex(t => t.id === e.id);
-      false !== n ? c[n] = t : c.push(t)
+      let t = l.Z.createFromServer(e),
+        n = o.findIndex(t => t.id === e.id);
+      false !== n ? o[n] = t : o.push(t)
     }
-    c.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime()), c = [...c]
+    o.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime()), o = [...o]
   },
-  PAYMENT_UPDATE: d,
-  BILLING_PAYMENT_FETCH_SUCCESS: d,
+  PAYMENT_UPDATE: c,
+  BILLING_PAYMENT_FETCH_SUCCESS: c,
   LOGOUT: function() {
-    c = []
+    o = []
   }
 })

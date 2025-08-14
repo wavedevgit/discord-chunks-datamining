@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk695346 = require("./695346.js"),
   Chunk572004 = require("./572004.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk600896 = require("./600896.js");
+  Chunk716754 = require("./716754.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,8 +77,8 @@ function I(e) {
     name: A,
     emojiId: N,
     emojiName: C
-  } = t, R = null != I, [P, w] = i.useState(false), D = (0, l.e7)([_.ZP], () => null != N ? _.ZP.getUsableCustomEmojiById(N) : null), L = R || null != v, x = (!R || !P) && (null != N || null != C), M = 0 === o, j = i.useRef(null), k = (0, l.e7)([f.Z], () => f.Z.keyboardModeEnabled), U = e => {
-    null == v || v(e), null == I || I(t), k || null == j.current || j.current.blur()
+  } = t, R = null != I, [P, w] = i.useState(false), D = (0, l.e7)([_.ZP], () => null != N ? _.ZP.getUsableCustomEmojiById(N) : null), L = R || null != v, x = (!R || !P) && (null != N || null != C), M = 0 === o, k = i.useRef(null), j = (0, l.e7)([f.Z], () => f.Z.keyboardModeEnabled), U = e => {
+    null == v || v(e), null == I || I(t), j || null == k.current || k.current.blur()
   }, G = e => {
     let i = p.Sb.getSetting();
     h.wS && i && (0, u.jW)(e, async () => {
@@ -126,9 +126,9 @@ function I(e) {
     onMouseLeave: () => R && w(false)
   }, F = (0, s.JA)("forum-tag-".concat(t.id));
   return L ? (0, r.jsx)(c.P3F, O(b(O(b({}, F), {
-    innerRef: j,
+    innerRef: k,
     focusProps: {
-      ringTarget: j
+      ringTarget: k
     },
     "aria-label": null != S ? S : m.intl.formatToPlainString(m.t.iyRTLi, {
       tagName: A

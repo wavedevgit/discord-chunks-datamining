@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 128008, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h6: () => O,
@@ -17,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk334426 = require("./334426.js"),
   Chunk982183 = require("./982183.js"),
   Chunk871301 = require("./871301.js"),
-  Chunk340151 = require("./340151.js");
+  Chunk888158 = require("./888158.js");
 
 function b() {
   let {
@@ -34,17 +34,17 @@ function O(e) {
   } = e, {
     unreadRecentMentionsCount: n,
     unreadChannelIds: l
-  } = (0, h.O4)(), d = function() {
+  } = (0, p.O4)(), d = function() {
     let e = function() {
         let {
           unreadRecentMentionsCount: e
-        } = (0, h.O4)(), {
+        } = (0, p.O4)(), {
           hasMoreMentions: t,
           mentionsLoading: n
-        } = (0, s.cj)([c.ZP], () => ({
+        } = (0, a.cj)([c.ZP], () => ({
           hasMoreMentions: c.ZP.hasMore,
           mentionsLoading: c.ZP.loading
-        })), r = Math.min(e, g.om), i = e > r || t || n, l = (0, a.OVM)(r) + 6 * !!i;
+        })), r = Math.min(e, g.om), i = e > r || t || n, l = (0, s.OVM)(r) + 6 * !!i;
         return {
           clampedCount: r,
           isEstimated: i,
@@ -57,7 +57,7 @@ function O(e) {
           clampedCount: n,
           width: i
         } = e;
-        return (0, r.jsx)(a.mAB, {
+        return (0, r.jsx)(s.mAB, {
           count: n,
           renderBadgeCount: t,
           style: {
@@ -75,7 +75,7 @@ function O(e) {
       }
     }), [n, e.width])
   }(), {
-    entrypoint: p
+    entrypoint: f
   } = (0, u.pN)({
     location: "useInboxBadgeInfo"
   });
@@ -86,12 +86,12 @@ function O(e) {
       badge: null,
       badgeType: null
     };
-    if (p === u.u3.SERVER_RAIL_TOP) {
-      let n = (0, a.OVM)(e) - 3;
+    if (f === u.u3.SERVER_RAIL_TOP) {
+      let n = (0, s.OVM)(e) - 3;
       return {
         badge: function(e, t) {
-          let n = (0, a.OVM)(e) - 3;
-          return (0, r.jsx)(a.mAB, {
+          let n = (0, s.OVM)(e) - 3;
+          return (0, r.jsx)(s.mAB, {
             count: e,
             style: {
               width: n,
@@ -112,15 +112,15 @@ function O(e) {
         }
       }
     }
-    return p === u.u3.TITLE_BAR_LEFT ? {
-      badge: (0, r.jsx)(a.Text, {
+    return f === u.u3.TITLE_BAR_LEFT ? {
+      badge: (0, r.jsx)(s.Text, {
         variant: "eyebrow",
-        children: (0, a.NGo)(e)
+        children: (0, s.NGo)(e)
       }),
       badgeType: "unread"
     } : {
       badge: null,
       badgeType: null
     }
-  }, [n, d, l.length, p, t])
+  }, [n, d, l.length, f, t])
 }

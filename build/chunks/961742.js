@@ -26,7 +26,7 @@ function i(e, t) {
 }
 let o = (() => {
   let e = 0,
-    t = () => `0000${(1679616*Math.random()<<0).toString(36)}`.slice(false);
+    t = () => `0000${(1679616*Math.random()|0).toString(36)}`.slice(false);
   return () => (e += 1, `u${exports()}${module}`)
 })();
 

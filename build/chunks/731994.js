@@ -6,11 +6,11 @@ require.d(exports, {
   bd: () => i,
   pA: () => a
 });
-var Chunk560548 = require("./560548.js");
+var Chunk995751 = require("./995751.js");
 let i = {
-    0: Chunk560548.image,
-    1: Chunk560548.document,
-    2: Chunk560548.code
+    0: Chunk995751.image,
+    1: Chunk995751.document,
+    2: Chunk995751.code
   },
   o = [1, 0, 2],
   a = [0, 0, 0]

@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk409964 = require("./409964.js");
+  Chunk109920 = require("./109920.js");
 
 function a() {
   return (0, Chunk255367.jsx)(Chunk481060.$jN, {
-    className: Chunk409964.spinner
+    className: Chunk109920.spinner
   })
 }

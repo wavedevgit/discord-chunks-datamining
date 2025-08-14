@@ -1,0 +1,10 @@
+/** Chunk was on 93886 **/
+/** chunk id: 788963, original params: e,t,a (module,exports,require) **/
+module.exports = {
+  premiumTrialBadge: "premiumTrialBadge__4c1e4",
+  premiumOfferUnackedBadge: "premiumOfferUnackedBadge__4c1e4",
+  premiumTrialAcknowledgedBadge: "premiumTrialAcknowledgedBadge__4c1e4",
+  premiumTrialBadgeIcon: "premiumTrialBadgeIcon__4c1e4",
+  premiumTrialBadgeSelected: "premiumTrialBadgeSelected__4c1e4",
+  premiumOfferBadgeCopy: "premiumOfferBadgeCopy__4c1e4"
+}

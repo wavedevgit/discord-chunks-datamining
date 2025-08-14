@@ -12,9 +12,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk944548 = require("./944548.jsx"),
   Chunk477839 = require("./477839.js"),
   Chunk231338 = require("./231338.js"),
-  Chunk603571 = require("./603571.js"),
+  Chunk511479 = require("./511479.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk285997 = require("./285997.js"),
+  Chunk40754 = require("./40754.js"),
   Chunk359527 = require("./359527.js"),
   Chunk180770 = require("./180770.js");
 
@@ -124,7 +124,7 @@ function x(e) {
 function v() {
   return (0, Chunk255367.jsx)(Chunk424984.O, {
     iconSrc: Chunk359527,
-    title: Chunk388032.intl.string(Chunk603571.default["236TJC"]),
+    title: Chunk388032.intl.string(Chunk511479.default["236TJC"]),
     onClick: () => {
       (0, Chunk481060.ZDy)(() => Promise.resolve(e => (0, r.jsx)(x, y({}, e))))
     }

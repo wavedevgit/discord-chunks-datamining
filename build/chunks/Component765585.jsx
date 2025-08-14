@@ -17,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk279745 = require("./279745.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk707195 = require("./707195.js");
+  Chunk882482 = require("./882482.js");
 let g = 280,
   E = Chunk73800.forwardRef(function(e, t) {
     let {
@@ -41,8 +41,8 @@ let g = 280,
       art: L,
       isPremiumEarlyAccess: x = false,
       maxWidth: M = g,
-      hideDismissButton: j = false,
-      pointerClassName: k,
+      hideDismissButton: k = false,
+      pointerClassName: j,
       dismissIconClassName: U,
       dismissIcon: G,
       onDismissIconClick: B,
@@ -127,7 +127,7 @@ let g = 280,
               },
               color: null != Z ? Z : N || x ? s.zx.Colors.BRAND_INVERTED : s.zx.Colors.WHITE,
               children: null != O ? O : h.intl.string(h.t.IHf1RE)
-            }), !j && (0, r.jsx)(s.zx, {
+            }), !k && (0, r.jsx)(s.zx, {
               className: m.button,
               size: F,
               onClick: e => {
@@ -147,7 +147,7 @@ let g = 280,
             children: h.intl.string(h.t.HU2IR0)
           })
         }), (0, r.jsx)("div", {
-          className: a()(m.pointer, k, {
+          className: a()(m.pointer, j, {
             [m.bottomPointer]: "top" === w,
             [m.centerLeftPointer]: "right" === w && "center" === D,
             [m.topLeftPointer]: "right" === w && "top" === D,

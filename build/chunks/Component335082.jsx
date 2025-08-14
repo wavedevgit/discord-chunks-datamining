@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 335082, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -13,9 +13,9 @@ var Chunk524437 = require("./524437.js"),
   Chunk940276 = require("./940276.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk726985 = require("./726985.js"),
-  Chunk29953 = require("./29953.js"),
+  Chunk933554 = require("./933554.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk513710 = require("./513710.js");
+  Chunk764055 = require("./764055.js");
 
 function h(e) {
   let {
@@ -49,59 +49,59 @@ function h(e) {
 function f() {
   let e = Chunk695346.G6.useSetting(),
     t = Chunk695346.no.useSetting(),
-    n = e => {
-      l.no.updateSetting(e)
-    },
-    a = [{
+    n = [{
       value: Chunk524437.GI.ACTIVITY_STATUS_ON,
       name: Chunk388032.intl.string(Chunk388032.t.UzGMHx)
     }, {
       value: Chunk524437.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS,
-      name: Chunk388032.intl.string(Chunk29953.default["/sAeRU"])
+      name: Chunk388032.intl.string(Chunk933554.default["/sAeRU"])
     }, {
       value: Chunk524437.GI.ACTIVITY_STATUS_OFF,
-      name: Chunk388032.intl.string(Chunk29953.default.m3oL7e)
+      name: Chunk388032.intl.string(Chunk933554.default.m3oL7e)
     }];
   return (0, Chunk255367.jsx)(Chunk481060.hjN, {
-    className: Chunk513710.formSection,
+    className: Chunk764055.formSection,
     children: (0, Chunk255367.jsxs)(Chunk481060.y5t, {
       component: (0, Chunk255367.jsxs)("div", {
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
-          className: Chunk513710.formTitle,
+          className: Chunk764055.formTitle,
           variant: "heading-lg/semibold",
           color: "header-primary",
-          children: Chunk388032.intl.string(Chunk29953.default.TG0Qsb)
+          children: Chunk388032.intl.string(Chunk933554.default.TG0Qsb)
         }), (0, Chunk255367.jsx)(Chunk481060.R94, {
-          className: Chunk513710.formDescription,
+          className: Chunk764055.formDescription,
           type: Chunk481060.R94.Types.DESCRIPTION,
-          children: Chunk388032.intl.string(Chunk29953.default.OO17Li)
+          children: Chunk388032.intl.string(Chunk933554.default.OO17Li)
         })]
       }),
       children: [(0, Chunk255367.jsxs)("div", {
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
-          className: Chunk513710.defaultSetting,
+          className: Chunk764055.defaultSetting,
           variant: "heading-md/medium",
           color: "header-primary",
-          children: Chunk388032.intl.string(Chunk29953.default["/LHVbm"])
+          children: Chunk388032.intl.string(Chunk933554.default["/LHVbm"])
         }), (0, Chunk255367.jsx)(Chunk481060.FXm, {
-          options: Chunk921801,
+          options: require,
           value: exports,
-          onChange: e => n(e.value)
+          onChange: e => {
+            var t;
+            return t = e.value, void l.no.updateSetting(t)
+          }
         })]
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk513710.myServersContainer,
+        className: Chunk764055.myServersContainer,
         children: [(0, Chunk255367.jsxs)("div", {
-          className: Chunk513710.myServersHeaderContainer,
+          className: Chunk764055.myServersHeaderContainer,
           children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
-            className: Chunk513710.myServersTitle,
+            className: Chunk764055.myServersTitle,
             variant: "heading-md/medium",
             color: "header-primary",
             children: Chunk388032.intl.string(Chunk388032.t.TqdOvL)
           }), !module && (0, Chunk255367.jsx)(Chunk481060.Wn, {
-            className: Chunk513710.myServersIgnoredWarning,
+            className: Chunk764055.myServersIgnoredWarning,
             messageType: Chunk481060.QYI.WARNING,
             textColor: "text-feedback-warning",
-            children: Chunk388032.intl.string(Chunk29953.default["xxI0/f"])
+            children: Chunk388032.intl.string(Chunk933554.default["xxI0/f"])
           })]
         }), (0, Chunk255367.jsx)(Chunk940276.Z, {})]
       })]
@@ -115,23 +115,23 @@ function b() {
   return (0, Chunk255367.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
     children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-      className: Chunk513710.formSection,
+      className: Chunk764055.formSection,
       children: [(0, Chunk255367.jsx)("div", {
         children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
-          className: Chunk513710.formTitle,
+          className: Chunk764055.formTitle,
           variant: "heading-lg/semibold",
           color: "header-primary",
-          children: Chunk388032.intl.string(Chunk29953.default["5rYBAQ"])
+          children: Chunk388032.intl.string(Chunk933554.default["5rYBAQ"])
         })
       }), (0, Chunk255367.jsx)(h, {
-        label: Chunk388032.intl.string(Chunk29953.default.khuuzs),
-        sublabel: Chunk388032.intl.string(Chunk29953.default["8EWsJy"]),
+        label: Chunk388032.intl.string(Chunk933554.default.khuuzs),
+        sublabel: Chunk388032.intl.string(Chunk933554.default["8EWsJy"]),
         id: "allow-friends-to-join-my-game",
         checked: module,
         onChange: e => l.cP.updateSetting(e)
       }), (0, Chunk255367.jsx)(h, {
-        label: Chunk388032.intl.string(Chunk29953.default.Uz5Ipq),
-        sublabel: Chunk388032.intl.string(Chunk29953.default.CZI2GR),
+        label: Chunk388032.intl.string(Chunk933554.default.Uz5Ipq),
+        sublabel: Chunk388032.intl.string(Chunk933554.default.CZI2GR),
         id: "allow-vc-join-without-request",
         checked: exports,
         onChange: e => l.Ou.updateSetting(e)
@@ -142,21 +142,21 @@ function b() {
 
 function x() {
   let e = Chunk695346.G6.useSetting(),
-    t = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk29953.default.UQ9RHB) : Chunk388032.intl.string(Chunk388032.t.oKqC4u);
+    t = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk933554.default.UQ9RHB) : Chunk388032.intl.string(Chunk388032.t.oKqC4u);
   return (0, Chunk255367.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_STATUS,
     children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-      className: Chunk513710.formSection,
+      className: Chunk764055.formSection,
       children: [(0, Chunk255367.jsx)("div", {
         children: (0, Chunk255367.jsx)(Chunk481060.R94, {
-          className: Chunk513710.formDescription,
+          className: Chunk764055.formDescription,
           type: Chunk481060.R94.Types.DESCRIPTION,
-          children: Chunk388032.intl.string(Chunk29953.default.t2Ysra)
+          children: Chunk388032.intl.string(Chunk933554.default.t2Ysra)
         })
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk513710.switchContainer,
+        className: Chunk764055.switchContainer,
         children: (0, Chunk255367.jsx)(h, {
-          label: Chunk388032.intl.string(Chunk29953.default.WhdCGB),
+          label: Chunk388032.intl.string(Chunk933554.default.WhdCGB),
           sublabel: exports,
           id: "share-my-activity",
           checked: module,

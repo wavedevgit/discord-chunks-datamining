@@ -43,7 +43,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk701488 = require("./701488.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk572606 = require("./572606.js");
+  Chunk206733 = require("./206733.js");
 
 function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -94,7 +94,7 @@ let z = {
   q = (0, Chunk438139.Z)(class extends Chunk73800.PureComponent {
     render() {
       return (0, Chunk255367.jsx)("div", {
-        className: Chunk572606.timestamp,
+        className: Chunk206733.timestamp,
         children: this.props.message
       })
     }
@@ -197,7 +197,7 @@ class J extends(r = Chunk73800.PureComponent) {
   }
   renderXboxImage() {
     return (0, Chunk255367.jsx)("div", {
-      className: Chunk572606.assets,
+      className: Chunk206733.assets,
       children: (0, Chunk255367.jsx)("img", {
         alt: "",
         src: Chunk726542.Z.get(Chunk981631.ABu.XBOX).icon.customPNG,
@@ -222,7 +222,7 @@ class J extends(r = Chunk73800.PureComponent) {
       application_id: f
     } = e;
     if (null == u || null == u.large_image && null == u.small_image) return null;
-    (0, k.Z)(e) && (a = z[c]);
+    (0, j.Z)(e) && (a = z[c]);
     let _ = (0, M.Z)(e),
       p = null != u.large_image ? (0, i.jsx)("img", {
         alt: null != (t = u.large_text) ? t : "",
@@ -380,7 +380,7 @@ class J extends(r = Chunk73800.PureComponent) {
         a = null == (l = e.assets) ? true : l.small_text
       }
     }
-    return null == a || "" === a ? null : ((0, k.Z)(e) && (a = Z.intl.formatToPlainString(Z.t.gmCZRU, {
+    return null == a || "" === a ? null : ((0, j.Z)(e) && (a = Z.intl.formatToPlainString(Z.t.gmCZRU, {
       game: a
     })), null != t) ? (0, i.jsx)(d.P3F, {
       onClick: t,
@@ -389,7 +389,7 @@ class J extends(r = Chunk73800.PureComponent) {
       children: a
     }) : (0, i.jsx)("div", {
       title: null != s ? s : true,
-      className: (0, k.Z)(e) || (0, M.Z)(e) ? F.detailsWrap : F.details,
+      className: (0, j.Z)(e) || (0, M.Z)(e) ? F.detailsWrap : F.details,
       children: a
     })
   }
@@ -400,12 +400,12 @@ class J extends(r = Chunk73800.PureComponent) {
       channel: r
     } = this.props;
     return n && null != t ? null == r ? (0, i.jsx)("div", {
-      className: (0, k.Z)(e) || (0, M.Z)(e) ? F.detailsWrap : F.details,
+      className: (0, j.Z)(e) || (0, M.Z)(e) ? F.detailsWrap : F.details,
       children: Z.intl.format(Z.t["hq/Qzc"], {
         guildName: t.name
       })
     }) : (0, i.jsxs)("div", {
-      className: s()((0, k.Z)(e) || (0, M.Z)(e) ? F.detailsWrap : F.details, F.guildDetails),
+      className: s()((0, j.Z)(e) || (0, M.Z)(e) ? F.detailsWrap : F.details, F.guildDetails),
       children: [(0, i.jsx)(O.Z, {
         guild: t,
         size: O.Z.Sizes.SMOL,
@@ -526,13 +526,13 @@ class J extends(r = Chunk73800.PureComponent) {
     return (0, Chunk255367.jsxs)("div", {
       className: s()(this.getTypeClass("activity"), r),
       children: [this.renderHeader(Chunk833858), (0, Chunk255367.jsx)("div", {
-        className: s()(Chunk410030 ? Chunk572606.bodyAlignCenter : Chunk572606.bodyNormal),
+        className: s()(Chunk410030 ? Chunk206733.bodyAlignCenter : Chunk206733.bodyNormal),
         children: (0, Chunk255367.jsxs)("div", {
-          className: Chunk572606.activityDetails,
+          className: Chunk206733.activityDetails,
           children: [module, this.isStreamerOnTypeActivityFeed() ? null : (0, Chunk255367.jsxs)(Chunk600164.Z.Child, {
-            className: s()((0, Chunk153066.l)(Chunk572606, "content", Chunk410030 ? "GameImage" : null != module ? "Images" : "NoImages", exports)),
+            className: s()((0, Chunk153066.l)(Chunk206733, "content", Chunk410030 ? "GameImage" : null != module ? "Images" : "NoImages", exports)),
             children: [(0, Chunk255367.jsxs)(Chunk481060.P3F, {
-              className: s()(null != Chunk512722 && Chunk572606.openGameProfile),
+              className: s()(null != Chunk512722 && Chunk206733.openGameProfile),
               onClick: null != Chunk512722 ? e => {
                 l(e), null == a || a()
               } : true,

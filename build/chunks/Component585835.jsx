@@ -1,4 +1,4 @@
-/** Chunk was on 8725 **/
+/** Chunk was on 58511 **/
 /** chunk id: 585835, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -22,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk929507 = require("./929507.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk115429 = require("./115429.js");
+  Chunk473059 = require("./473059.js");
 
 function _(e) {
   var t, n, l;
@@ -30,20 +30,20 @@ function _(e) {
     name: _,
     icon: C,
     imageSrc: N,
-    iconBackgroundColor: S,
-    iconClassName: I,
-    iconWrapperClassName: w,
-    details: Z,
-    integration: E,
-    buttonText: P,
-    buttonDisabled: T,
+    iconBackgroundColor: w,
+    iconClassName: Z,
+    iconWrapperClassName: S,
+    details: P,
+    integration: I,
+    buttonText: T,
+    buttonDisabled: E,
     hasNextSection: k,
     onButtonClick: A,
-    guildId: R,
-    isScrolling: D,
+    guildId: D,
+    isScrolling: R,
     canShowMigrationTooltip: L,
     trailing: M
-  } = e, [B, U] = r.useState(false), [W, H] = r.useState(false), G = L && !D && !W && true !== R && null != E, z = r.useRef(null), F = r.useRef(null), V = r.useCallback((e, t, n, r) => null == e || null == r ? null : n ? (0, i.jsxs)(m.Z, {
+  } = e, [B, U] = r.useState(false), [W, H] = r.useState(false), G = L && !R && !W && true !== D && null != I, z = r.useRef(null), F = r.useRef(null), K = r.useCallback((e, t, n, r) => null == e || null == r ? null : n ? (0, i.jsxs)(m.Z, {
     align: m.Z.Align.CENTER,
     ref: F,
     children: [(0, i.jsx)(d.Text, {
@@ -54,7 +54,7 @@ function _(e) {
       color: "currentColor",
       width: 10,
       height: 10,
-      className: y.caret
+      className: O.caret
     }) : null]
   }) : (0, i.jsx)(c.zx, {
     buttonRef: z,
@@ -64,7 +64,7 @@ function _(e) {
     disabled: t,
     onClick: r,
     children: e
-  }), [z, F])(P, T, k, A);
+  }), [z, F])(T, E, k, A);
   r.useEffect(() => {
     var e, t;
     G && h.default.track(v.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (e = function(e) {
@@ -84,8 +84,8 @@ function _(e) {
         })
       }
       return e
-    }({}, (0, u.hH)(R)), t = t = {
-      application_id: null == E ? true : E.application.id,
+    }({}, (0, u.hH)(D)), t = t = {
+      application_id: null == I ? true : I.application.id,
       location: "overview"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -97,15 +97,15 @@ function _(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [R, null == E ? true : E.application.id, G]);
-  let K = G ? (0, i.jsx)(d.yRy, {
+  }, [D, null == I ? true : I.application.id, G]);
+  let q = G ? (0, i.jsx)(d.yRy, {
       targetElementRef: k ? F : z,
       renderPopout: () => (0, i.jsx)(d.P3F, {
         onClick: e => {
-          e.stopPropagation(), H(true), j.Z.dismissOverviewTooltip(R, E.integration)
+          e.stopPropagation(), H(true), j.Z.dismissOverviewTooltip(D, I.integration)
         },
         children: (0, i.jsx)(g.ZP, {
-          content: O.intl.string(O.t.TyMJwM),
+          content: y.intl.string(y.t.TyMJwM),
           onClick: () => {}
         })
       }),
@@ -113,24 +113,24 @@ function _(e) {
       align: "center",
       animation: d.yRy.Animation.TRANSLATE,
       shouldShow: true,
-      children: () => V
-    }) : V,
-    q = (0, s.Wu)([b.Z], () => {
+      children: () => K
+    }) : K,
+    V = (0, s.Wu)([b.Z], () => {
       var e;
-      return null != E && null != R && null != (e = b.Z.getApplicationEntitlementsForGuild(E.application.id, R)) ? e : []
+      return null != I && null != D && null != (e = b.Z.getApplicationEntitlementsForGuild(I.application.id, D)) ? e : []
     }),
-    Y = (0, p.LD)(R, true),
-    X = (null == E ? true : E.application) != null && Object.keys(null != (l = null == (n = Y.result) || null == (t = n.sections[E.application.id]) ? true : t.commands) ? l : {}).length > 0,
+    Y = (0, p.LD)(D, true),
+    X = (null == I ? true : I.application) != null && Object.keys(null != (l = null == (n = Y.result) || null == (t = n.sections[I.application.id]) ? true : t.commands) ? l : {}).length > 0,
     $ = (0, i.jsxs)(m.Z, {
       children: [(0, i.jsx)(x.Z, {
         name: _,
         icon: C,
         imageSrc: N,
-        iconBackgroundColor: S,
-        iconClassName: I,
-        iconWrapperClassName: w,
-        details: Z,
-        isPremium: q.length > 0
+        iconBackgroundColor: w,
+        iconClassName: Z,
+        iconWrapperClassName: S,
+        details: P,
+        isPremium: V.length > 0
       }), (0, i.jsx)(m.Z.Child, {
         shrink: 0,
         grow: 0,
@@ -148,52 +148,52 @@ function _(e) {
               } = e;
             return null != s.bot && (null == c || null == (r = c.scopes) ? true : r.includes(a.x.BOT)) && o.push((0, i.jsx)(d.DY3, {
               forceOpen: t,
-              text: new f.Z(s.bot).isVerifiedBot() ? O.intl.string(O.t.xxcTGx) : O.intl.string(O.t.AOdOYm),
-              className: y.feature,
+              text: new f.Z(s.bot).isVerifiedBot() ? y.intl.string(y.t.xxcTGx) : y.intl.string(y.t.AOdOYm),
+              className: O.feature,
               children: (0, i.jsx)(d.wGt, {
                 size: "md",
                 color: "currentColor",
-                className: y.featureIcon
+                className: O.featureIcon
               })
             }, "bot")), u.length > 0 && o.push((0, i.jsx)(d.DY3, {
               forceOpen: t,
-              text: O.intl.formatToPlainString(O.t["6HqDfX"], {
+              text: y.intl.formatToPlainString(y.t["6HqDfX"], {
                 count: u.length
               }),
-              className: y.feature,
+              className: O.feature,
               children: (0, i.jsx)(d.tYf, {
                 size: "md",
                 color: "currentColor",
-                className: y.featureIcon
+                className: O.featureIcon
               })
             }, "webhooks")), (null == c || null == (l = c.scopes) ? true : l.includes(a.x.APPLICATIONS_COMMANDS)) === true && n && o.push((0, i.jsx)(d.DY3, {
               forceOpen: t,
-              text: O.intl.string(O.t["0hKkS0"]),
-              className: y.feature,
+              text: y.intl.string(y.t["0hKkS0"]),
+              className: O.feature,
               children: (0, i.jsx)(d.SsZ, {
                 size: "md",
                 color: "currentColor",
-                className: y.featureIcon
+                className: O.featureIcon
               })
             }, "commands")), o
-          }(E, B, X), K, M]
+          }(I, B, X), q, M]
         })
       })]
     });
   return k ? (0, i.jsx)(d.P3F, {
     onClick: () => {
-      L && null != R && null != E && j.Z.dismissOverviewTooltip(R, E.integration), null == A || A()
+      L && null != D && null != I && j.Z.dismissOverviewTooltip(D, I.integration), null == A || A()
     },
     onFocus: () => U(true),
     onBlur: () => U(false),
     children: (0, i.jsx)(d.Zbd, {
       editable: true,
-      className: o()(y.card, y.clickable),
+      className: o()(O.card, O.clickable),
       children: $
     })
   }) : (0, i.jsx)(d.Zbd, {
     editable: true,
-    className: y.card,
+    className: O.card,
     children: $
   })
 }

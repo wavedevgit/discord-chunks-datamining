@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 118122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -21,8 +21,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk675999 = require("./675999.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk770054 = require("./770054.js");
-let v = {
+  Chunk816827 = require("./816827.js");
+let j = {
   origin: {
     x: false,
     y: 0
@@ -35,8 +35,8 @@ let v = {
   }
 };
 
-function j(e) {
-  (0, s.jW)(e, async () => {
+function C(e) {
+  (0, a.jW)(e, async () => {
     let {
       default: e
     } = await n.e("9606").then(n.bind(n, 987578));
@@ -65,9 +65,9 @@ function E(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, s = (0, l.Wu)([f.Z], () => f.Z.getGuildsArray()), E = (0, l.e7)([g.default], () => g.default.getCurrentUser()), S = i.useMemo(() => s.some(e => (0, p.eM)(e, E)), [s, E]), x = (0, o.s9z)(e => (0, o.DEQ)(e, _.PU)), {
-    analyticsLocations: I
-  } = (0, a.ZP)(), P = (0, r.jsx)(b.Z, {
+  } = e, a = (0, l.Wu)([h.Z], () => h.Z.getGuildsArray()), E = (0, l.e7)([g.default], () => g.default.getCurrentUser()), x = i.useMemo(() => a.some(e => (0, f.eM)(e, E)), [a, E]), S = (0, o.s9z)(e => (0, o.DEQ)(e, _.PU)), {
+    analyticsLocations: P
+  } = (0, s.ZP)(), I = (0, r.jsx)(b.Z, {
     showPill: false,
     id: "create-join-button",
     onClick: () => {
@@ -79,23 +79,23 @@ function E(e) {
           page: O.Sbl.CREATE_JOIN_GUILD_MODAL,
           section: O.jXE.GUILD_CAP_UPSELL_MODAL
         },
-        analyticsLocations: I
+        analyticsLocations: P
       }) : c.Z.openCreateGuildModal({
         location: "Guild List"
       })
     },
-    selected: x,
-    onContextMenu: j,
+    selected: S,
+    onContextMenu: C,
     tooltip: y.intl.string(y.t.l5WIbW),
     icon: o.oFk
   });
-  return t ? P : (0, r.jsx)("div", {
-    className: C.tutorialContainer,
-    children: (0, r.jsxs)(h.Z, {
-      tutorialId: S ? "create-more-servers" : "create-first-server",
-      inlineSpecs: v,
+  return t ? I : (0, r.jsx)("div", {
+    className: v.tutorialContainer,
+    children: (0, r.jsxs)(p.Z, {
+      tutorialId: x ? "create-more-servers" : "create-first-server",
+      inlineSpecs: j,
       position: "right",
-      children: [P, null != n && (0, r.jsx)(m.ZP, {
+      children: [I, null != n && (0, r.jsx)(m.ZP, {
         name: y.intl.string(y.t["45xjMz"]),
         targetNode: n,
         below: true,

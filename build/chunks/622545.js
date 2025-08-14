@@ -35,12 +35,13 @@ class s {
     }
   }
   constructor(e) {
-    var t, n;
-    n = true, (t = "items") in this ? Object.defineProperty(this, t, {
-      value: n,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[t] = n, this.items = e
+    ! function(e, t, n) {
+      t in e ? Object.defineProperty(e, t, {
+        value: n,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = n
+    }(this, "items", true), this.items = e
   }
 }

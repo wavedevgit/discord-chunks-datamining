@@ -15,9 +15,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk7557 = require("./7557.jsx"),
   Chunk200357 = require("./200357.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk331998 = require("./331998.js"),
-  Chunk794287 = require("./794287.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk520668 = require("./520668.js"),
+  Chunk149715 = require("./149715.js"),
+  Chunk197571 = require("./197571.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,27 +51,27 @@ class f extends Chunk73800.PureComponent {
       validPhone: C
     } = this.props;
     return e = null != Chunk73800 && "" !== Chunk73800 ? (0, Chunk255367.jsx)("div", {
-      className: l()(Chunk331998.description, Chunk331998.error, Chunk881488.marginBottom20),
+      className: l()(Chunk520668.description, Chunk520668.error, Chunk197571.marginBottom20),
       children: Chunk73800
     }) : C ? (0, Chunk255367.jsx)("div", {
-      className: l()(Chunk331998.description, Chunk881488.marginBottom20),
+      className: l()(Chunk520668.description, Chunk197571.marginBottom20),
       children: Chunk388032.intl.string(Chunk388032.t["4qMI6O"])
     }) : (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
       children: [(0, Chunk255367.jsx)("div", {
-        className: l()(Chunk331998.description, Chunk881488.marginBottom20),
+        className: l()(Chunk520668.description, Chunk197571.marginBottom20),
         children: Chunk388032.intl.string(Chunk388032.t.Vp9je3)
       }), (0, Chunk255367.jsx)("div", {
-        className: l()(Chunk331998.description, Chunk881488.marginBottom20),
+        className: l()(Chunk520668.description, Chunk197571.marginBottom20),
         children: Chunk388032.intl.format(Chunk388032.t["3BTmqa"], {})
       })]
     }), t = C ? (0, Chunk255367.jsxs)(Chunk600164.Z, {
-      className: Chunk331998.field,
+      className: Chunk520668.field,
       direction: Chunk600164.Z.Direction.VERTICAL,
       align: Chunk600164.Z.Align.CENTER,
       children: [(0, Chunk255367.jsx)(Chunk7557.Z, {
         onSubmit: this.handleVerifyPhone
       }), (0, Chunk255367.jsx)(Chunk755721.zx, {
-        className: Chunk881488.marginTop8,
+        className: Chunk197571.marginTop8,
         size: Chunk755721.Ph.SMALL,
         look: Chunk755721.iL.LINK,
         color: Chunk755721.Tt.PRIMARY,
@@ -79,7 +79,7 @@ class f extends Chunk73800.PureComponent {
         children: Chunk388032.intl.string(Chunk388032.t["5b60go"])
       })]
     }) : (0, Chunk255367.jsx)(Chunk200357.Z, {
-      className: Chunk331998.field,
+      className: Chunk520668.field,
       onSubmit: this.handleAddPhone,
       submitting: Chunk120356
     }), n = C ? Chunk388032.intl.string(Chunk388032.t.Xclkxs) : Chunk388032.intl.string(Chunk388032.t.uR76s7), (0, Chunk255367.jsxs)(Chunk481060.Y0X, {
@@ -87,14 +87,14 @@ class f extends Chunk73800.PureComponent {
         impressionName: Chunk990547.ImpressionNames.USER_VERIFY_PHONE
       },
       transitionState: Chunk772848,
-      className: l()(Chunk331998.phoneVerificationModal, Chunk794287.vertical, Chunk794287.alignCenter, Chunk794287.justifyCenter, Chunk881488.marginTop60),
+      className: l()(Chunk520668.phoneVerificationModal, Chunk149715.vertical, Chunk149715.alignCenter, Chunk149715.justifyCenter, Chunk197571.marginTop60),
       "aria-labelledby": this.headerId,
       parentComponent: "PhoneVerificationModal",
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk331998.animationContainer,
+        className: Chunk520668.animationContainer,
         ref: this.setLottieRef
       }), (0, Chunk255367.jsx)("div", {
-        className: l()(Chunk331998.title, Chunk881488.marginBottom8),
+        className: l()(Chunk520668.title, Chunk197571.marginBottom8),
         id: this.headerId,
         children: require
       }), module, exports]

@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk586646 = require("./586646.jsx"),
   Chunk760373 = require("./760373.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk853752 = require("./853752.js");
+  Chunk756105 = require("./756105.js");
 
 function b(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -97,7 +97,7 @@ function C(e) {
     closePopout: i
   } = e, o = (0, h.J)({
     channelId: t
-  }) ? N.intl.string(N.t["3BogKS"]) : N.intl.string(N.t.ETIVvr);
+  }) ? y.intl.string(y.t["3BogKS"]) : y.intl.string(y.t.ETIVvr);
   return n ? (0, r.jsx)(E, {
     lobbyId: l,
     closePopout: i,
@@ -132,26 +132,26 @@ function v(e) {
   return l.useEffect(() => {
     g && a(O.tu.RTC_DEBUG_PANEL)
   }, [g]), (0, r.jsxs)("div", {
-    className: y.container,
+    className: N.container,
     children: [(0, r.jsx)(o.X6q, {
-      className: y.title,
+      className: N.title,
       variant: "heading-lg/bold",
       color: "header-primary",
-      children: t ? N.intl.string(N.t.IlHdW1) : N.intl.string(N.t.WsOisr)
+      children: t ? y.intl.string(y.t.IlHdW1) : y.intl.string(y.t.WsOisr)
     }), (0, r.jsxs)(o.njP, {
-      className: y.tabs,
+      className: N.tabs,
       selectedItem: n,
       type: "top",
       look: "brand",
       onItemSelect: a,
       children: [(0, r.jsx)(o.njP.Item, {
         id: O.tu.RTC_DEBUG_PANEL,
-        className: y.tabBarItem,
-        children: N.intl.string(N.t.MBY1Pj)
+        className: N.tabBarItem,
+        children: y.intl.string(y.t.MBY1Pj)
       }), g ? null : (0, r.jsx)(o.njP.Item, {
         id: O.tu.RTC_SECURE_FRAMES,
-        className: y.tabBarItem,
-        children: N.intl.string(N.t.zC6o3t)
+        className: N.tabBarItem,
+        children: y.intl.string(y.t.zC6o3t)
       })]
     }), (0, r.jsx)(o.njP.Panel, {
       id: n,
@@ -165,9 +165,9 @@ function T(e) {
   return (0, h.J)({
     channelId: e.channelId
   }) ? (0, r.jsx)(v, b({}, e)) : (0, r.jsx)("div", {
-    className: y.debugPanelStandalone,
+    className: N.debugPanelStandalone,
     children: (0, r.jsx)("section", {
-      className: y.debugPanelSection,
+      className: N.debugPanelSection,
       children: (0, r.jsx)(C, b({}, e))
     })
   })

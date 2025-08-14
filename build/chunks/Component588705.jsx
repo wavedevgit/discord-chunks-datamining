@@ -24,16 +24,16 @@ var Chunk255367 = require("./255367.js"),
   Chunk888592 = require("./888592.js"),
   Chunk245335 = require("./245335.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk26340 = require("./26340.js");
+  Chunk620838 = require("./620838.js");
 let S = () => (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
     children: [(0, Chunk255367.jsx)(Chunk388905.qE, {
       src: null,
       size: Chunk481060.EFr.DEPRECATED_SIZE_100,
-      className: Chunk26340.avatar
+      className: Chunk620838.avatar
     }), (0, Chunk255367.jsx)(Chunk388905.DK, {
       children: Chunk388032.intl.string(Chunk388032.t["3rE1Pz"])
     }), (0, Chunk255367.jsx)(Chunk388905.Dx, {
-      className: Chunk26340.inviteResolvingGuildName,
+      className: Chunk620838.inviteResolvingGuildName,
       children: Chunk388032.intl.string(Chunk388032.t.ZTNur6)
     })]
   }),

@@ -1,8 +1,8 @@
 /** Chunk was on 5749 **/
 /** chunk id: 955708, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => f,
-  x: () => m
+  default: () => _,
+  x: () => g
 }), require("./388685.js");
 var i, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -13,7 +13,7 @@ var i, Chunk255367 = require("./255367.js"),
   Chunk745982 = require("./745982.jsx"),
   Chunk463439 = require("./463439.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk161688 = require("./161688.js");
+  Chunk35853 = require("./35853.js");
 
 function h(t) {
   for (var e = 1; e < arguments.length; e++) {
@@ -34,7 +34,7 @@ function h(t) {
   return t
 }
 
-function g(t, e) {
+function m(t, e) {
   return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
     var n = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
@@ -46,28 +46,28 @@ function g(t, e) {
     Object.defineProperty(t, n, Object.getOwnPropertyDescriptor(e, n))
   }), t
 }
-var m = ((i = {})[i.INTRO = 0] = "INTRO", i[i.SAFETY_TIPS = 1] = "SAFETY_TIPS", i[i.TAKE_ACTION = 2] = "TAKE_ACTION", i);
-let f = t => {
+var g = ((i = {})[i.INTRO = 0] = "INTRO", i[i.SAFETY_TIPS = 1] = "SAFETY_TIPS", i[i.TAKE_ACTION = 2] = "TAKE_ACTION", i);
+let _ = t => {
   let {
     warningId: e,
     warningType: n,
     senderId: i,
-    modalProps: m,
-    channelId: f
-  } = t, [_, b] = s.useState(0), O = s.useMemo(() => ({
-    channelId: f,
+    modalProps: g,
+    channelId: _
+  } = t, [f, b] = s.useState(0), O = s.useMemo(() => ({
+    channelId: _,
     senderId: i,
     warningId: e,
     warningType: n,
     isNudgeWarning: false
-  }), [f, i, e, n]);
+  }), [_, i, e, n]);
   s.useEffect(() => {
-    (0, c.KQ)(g(h({}, O), {
+    (0, c.KQ)(m(h({}, O), {
       viewName: c.pb.SAFETY_TAKEOVER_MODAL
     }))
   }, [O]);
   let v = s.useCallback(t => {
-      (0, c.qc)(g(h({}, O), {
+      (0, c.qc)(m(h({}, O), {
         cta: t
       }))
     }, [O]),
@@ -78,13 +78,13 @@ let f = t => {
   }
   return (0, r.jsxs)(a.Y0X, {
     "data-migration-pending": true,
-    transitionState: m.transitionState,
+    transitionState: g.transitionState,
     parentComponent: "InappropriateConversationModal",
     children: [(0, r.jsx)("div", {
       className: p.container,
       children: (0, r.jsxs)(a.MyZ, {
         width: 440,
-        activeSlide: _,
+        activeSlide: f,
         centered: false,
         overflow: "visible",
         contentDisplay: "flex",
@@ -109,7 +109,7 @@ let f = t => {
             warningId: e,
             senderId: i,
             trackAnalyticsEvent: v,
-            channelId: f,
+            channelId: _,
             hasReported: j,
             onReport: function() {
               T(true)
@@ -125,10 +125,10 @@ let f = t => {
         size: "sm",
         text: x.intl.string(x.t.cpT0Cg),
         onClick: function() {
-          m.onClose(), (0, o.T)(f, [e]), v(c.NM.USER_TAKEOVER_MODAL_DISMISS)
+          g.onClose(), (0, o.T)(_, [e]), v(c.NM.USER_TAKEOVER_MODAL_DISMISS)
         },
         textVariant: "text-sm/normal"
-      }), 0 !== _ && (0, r.jsx)(a.Avr, {
+      }), 0 !== f && (0, r.jsx)(a.Avr, {
         variant: "secondary",
         size: "sm",
         text: x.intl.string(x.t["13/7kZ"]),

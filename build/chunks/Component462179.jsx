@@ -1,7 +1,7 @@
-/** Chunk was on 96492 **/
+/** Chunk was on 56236 **/
 /** chunk id: 462179, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => I
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -30,31 +30,31 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function I(e) {
+function N(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
-      l = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      i = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
       return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), l.forEach(function(n) {
-      var l;
-      l = t[n], n in e ? Object.defineProperty(e, n, {
-        value: l,
+    }))), i.forEach(function(n) {
+      var i;
+      i = t[n], n in e ? Object.defineProperty(e, n, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[n] = l
+      }) : e[n] = i
     })
   }
   return e
 }
 
-function O(e, n) {
+function w(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      t.push.apply(t, l)
+      var i = Object.getOwnPropertySymbols(e);
+      t.push.apply(t, i)
     }
     return t
   })(Object(n)).forEach(function(t) {
@@ -62,47 +62,47 @@ function O(e, n) {
   }), e
 }
 
-function S(e) {
+function I(e) {
   let {
     guild: n,
-    channel: S,
-    guildScheduledEvent: T,
-    isActive: w,
-    recurrenceId: k,
-    onActionTaken: R
+    channel: I,
+    guildScheduledEvent: S,
+    isActive: T,
+    recurrenceId: _,
+    onActionTaken: D
   } = e, {
-    scheduled_start_time: L,
-    id: D,
-    entity_type: G,
-    guild_id: B
-  } = T, {
+    scheduled_start_time: G,
+    id: L,
+    entity_type: R,
+    guild_id: H
+  } = S, {
     canManageGuildEvent: M
-  } = (0, u.XJ)(null != S ? S : n), A = M(T), U = (0, j.ZP)(T), F = (0, b.T)(null == S ? true : S.id, T.id), {
-    withinStartWindow: V
-  } = (0, Z.ub)(L), X = (0, i.e7)([_.Z], () => null == S || !S.isGuildVocal() || _.Z.can(N.Plq.CONNECT, S), [S]), z = (0, a.J)(B), H = (0, p.Z)(k, D);
+  } = (0, u.XJ)(null != I ? I : n), U = M(S), z = (0, b.ZP)(S), A = (0, x.T)(null == I ? true : I.id, S.id), {
+    withinStartWindow: J
+  } = (0, O.ub)(G), B = (0, r.e7)([h.Z], () => null == I || !I.isGuildVocal() || h.Z.can(E.Plq.CONNECT, I), [I]), X = (0, s.J)(H), W = (0, y.Z)(_, L);
 
-  function W(e) {
-    e.stopPropagation(), (0, P.Z)(D, k, B)
+  function V(e) {
+    e.stopPropagation(), (0, C.Z)(L, _, H)
   }
   async function q(e) {
-    e.stopPropagation(), await c.Z.joinGuild(B), h.Z.addConditionalChangeListener(() => null == h.Z.getGuild(B) || (w || W(e), J(e), false))
+    e.stopPropagation(), await c.Z.joinGuild(H), f.Z.addConditionalChangeListener(() => null == f.Z.getGuild(H) || (T || V(e), K(e), false))
   }
 
-  function J(e) {
+  function K(e) {
     e.stopPropagation();
-    let n = g.ZP.getDefaultChannel(B);
-    (0, r.pTH)(), (0, d.XU)(B, null == n ? true : n.id)
+    let n = p.ZP.getDefaultChannel(H);
+    (0, l.pTH)(), (0, d.XU)(H, null == n ? true : n.id)
   }
   return {
-    onDeleteClick: A ? function(e) {
-      e.stopPropagation(), A && !w && (0, r.h7j)(e => (0, l.jsx)(r.ConfirmModal, O(I({}, e), {
-        header: E.intl.string(E.t.R5bpio),
-        confirmText: E.intl.string(E.t.oyYWHB),
-        cancelText: E.intl.string(E.t["ETE/oK"]),
-        onConfirm: () => x.Z.deleteGuildEvent(D, B),
-        children: (0, l.jsx)(r.Text, {
+    onDeleteClick: U ? function(e) {
+      e.stopPropagation(), U && !T && (0, l.h7j)(e => (0, i.jsx)(l.ConfirmModal, w(N({}, e), {
+        header: k.intl.string(k.t.R5bpio),
+        confirmText: k.intl.string(k.t.oyYWHB),
+        cancelText: k.intl.string(k.t["ETE/oK"]),
+        onConfirm: () => j.Z.deleteGuildEvent(L, H),
+        children: (0, i.jsx)(l.Text, {
           variant: "text-md/normal",
-          children: E.intl.string(E.t.v2GWNT)
+          children: k.intl.string(k.t.v2GWNT)
         })
       })))
     } : true,
@@ -111,74 +111,74 @@ function S(e) {
         let {
           default: e
         } = await Promise.all([t.e("34261"), t.e("27434")]).then(t.bind(t, 215269));
-        return t => (0, l.jsx)(e, I({
-          guildEventId: D,
-          recurrenceId: k,
-          channel: S,
+        return t => (0, i.jsx)(e, N({
+          guildEventId: L,
+          recurrenceId: _,
+          channel: I,
           guild: n
         }, t))
       })
     },
-    onJoinClick: X || z ? function(e) {
-      if (e.stopPropagation(), z) {
-        null == R || R(), (0, s.hk)(B);
+    onJoinClick: B || X ? function(e) {
+      if (e.stopPropagation(), X) {
+        null == D || D(), (0, a.hk)(H);
         return
-      }(null == S ? true : S.isGuildStageVoice()) ? ((0, f.Cq)(S), null == R || R()) : (null == S ? true : S.isGuildVoice()) && (x.Z.joinVoiceEvent(S.guild_id, S.id), null == R || R())
+      }(null == I ? true : I.isGuildStageVoice()) ? ((0, g.Cq)(I), null == D || D()) : (null == I ? true : I.isGuildVoice()) && (j.Z.joinVoiceEvent(I.guild_id, I.id), null == D || D())
     } : true,
-    onRsvpClick: W,
-    onStartClick: A && V && !(null == H ? true : H.is_canceled) ? function(e) {
-      e.stopPropagation(), (0, r.ZDy)(async () => {
+    onRsvpClick: V,
+    onStartClick: U && J && !(null == W ? true : W.is_canceled) ? function(e) {
+      e.stopPropagation(), (0, l.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([t.e("84722"), t.e("23725")]).then(t.bind(t, 296864));
-        return n => (0, l.jsx)(e, O(I({}, n), {
-          event: T,
-          onSuccess: R
+        } = await Promise.all([t.e("84722"), t.e("14531")]).then(t.bind(t, 296864));
+        return n => (0, i.jsx)(e, w(N({}, n), {
+          event: S,
+          onSuccess: D
         }))
       })
     } : true,
     onInviteClick: function(e) {
       if (e.stopPropagation(), null != n) {
-        if (!U || !F) {
-          let e = (0, y.H)({
-            guildId: B,
-            guildEventId: D
+        if (!z || !A) {
+          let e = (0, Z.H)({
+            guildId: H,
+            guildEventId: L
           });
-          (0, m.JG)(e), v.default.track(N.rMx.GUILD_SCHEDULED_EVENT_LINK_COPIED, {
-            guild_id: B,
-            guild_scheduled_event_id: D
+          (0, m.JG)(e), v.default.track(E.rMx.GUILD_SCHEDULED_EVENT_LINK_COPIED, {
+            guild_id: H,
+            guild_scheduled_event_id: L
           });
           return
-        }(0, r.ZDy)(async () => {
+        }(0, l.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([t.e("7654"), t.e("49049"), t.e("36264")]).then(t.bind(t, 560114));
-          return t => (0, l.jsx)(e, O(I({}, t), {
+          } = await Promise.all([t.e("7654"), t.e("49049"), t.e("53020")]).then(t.bind(t, 560114));
+          return t => (0, i.jsx)(e, w(N({}, t), {
             guild: n,
-            channel: S,
-            guildScheduledEvent: T,
-            source: N.t4x.GUILD_EVENTS
+            channel: I,
+            guildScheduledEvent: S,
+            source: E.t4x.GUILD_EVENTS
           }))
         })
       }
     },
-    onEndClick: A && G === C.WX.EXTERNAL && w ? function(e) {
-      if (e.stopPropagation(), !A) return;
+    onEndClick: U && R === P.WX.EXTERNAL && T ? function(e) {
+      if (e.stopPropagation(), !U) return;
       let n = () => {
-        x.Z.endEvent(D, B), (0, r.pTH)()
+        j.Z.endEvent(L, H), (0, l.pTH)()
       };
-      (0, r.h7j)(e => (0, l.jsx)(r.ConfirmModal, O(I({}, e), {
-        header: E.intl.string(E.t.qaYzPD),
-        confirmText: E.intl.string(E.t.mjB9pa),
-        cancelText: E.intl.string(E.t["ETE/oK"]),
+      (0, l.h7j)(e => (0, i.jsx)(l.ConfirmModal, w(N({}, e), {
+        header: k.intl.string(k.t.qaYzPD),
+        confirmText: k.intl.string(k.t.mjB9pa),
+        cancelText: k.intl.string(k.t["ETE/oK"]),
         onConfirm: n,
-        children: (0, l.jsx)(r.Text, {
+        children: (0, i.jsx)(l.Text, {
           variant: "text-md/normal",
-          children: E.intl.string(E.t.bnDQ7O)
+          children: k.intl.string(k.t.bnDQ7O)
         })
       })))
     } : true,
     onJoinGuildClick: q,
-    onGoToGuildClick: J
+    onGoToGuildClick: K
   }
 }

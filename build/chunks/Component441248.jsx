@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 441248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => b
@@ -16,13 +16,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk168524 = require("./168524.js"),
   Chunk115530 = require("./115530.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk727196 = require("./727196.js");
+  Chunk48733 = require("./48733.js");
 
 function m(e) {
   let {
     name: t,
     applicationId: n
-  } = e, i = (0, h.Z)({
+  } = e, i = (0, p.Z)({
     location: "ActivityPanelGameCard",
     applicationId: n,
     source: d.m1.RtcPanel,
@@ -31,7 +31,7 @@ function m(e) {
   return (0, r.jsx)(o.P3F, {
     onClick: i,
     className: l()(null != i && g.clickableGameName),
-    children: (0, r.jsx)(p.Z, {
+    children: (0, r.jsx)(f.Z, {
       className: g.gameName,
       children: t
     })
@@ -45,8 +45,8 @@ function b(e) {
     game: i,
     onClickNotSharing: l,
     isForceShowSharingPopout: d,
-    setIsForceShowSharingPopout: h
-  } = e, p = null != n ? n.name : null != i ? i.name : f.intl.string(f.t["UQMV/P"]);
+    setIsForceShowSharingPopout: p
+  } = e, f = null != n ? n.name : null != i ? i.name : h.intl.string(h.t["UQMV/P"]);
   return (0, c.V)(), (0, r.jsxs)("div", {
     className: g.gameWrapper,
     children: [(0, r.jsxs)("div", {
@@ -60,15 +60,15 @@ function b(e) {
         color: "currentColor",
         className: g.liveBadge
       }) : null]
-    }), (0, r.jsx)(a.j, {
+    }), (0, r.jsx)(s.j, {
       isForceShowSharingPopout: d,
-      setIsForceShowSharingPopout: h,
+      setIsForceShowSharingPopout: p,
       children: (0, r.jsxs)("div", {
         className: g.info,
-        children: [null != p ? (0, r.jsx)(m, {
-          name: p,
+        children: [null != f ? (0, r.jsx)(m, {
+          name: f,
           applicationId: null == n ? true : n.id
-        }) : null, (0, r.jsx)(s.V, {
+        }) : null, (0, r.jsx)(a.V, {
           onClick: l
         })]
       })

@@ -1,7 +1,7 @@
 /** Chunk was on 58227 **/
 /** chunk id: 150512, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => f
 }), require("./35282.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -17,14 +17,14 @@ var Chunk255367 = require("./255367.js"),
   Chunk594174 = require("./594174.js"),
   Chunk5192 = require("./5192.js"),
   Chunk51144 = require("./51144.js"),
-  Chunk49098 = require("./49098.js");
+  Chunk180391 = require("./180391.js");
 
-function S(e) {
+function f(e) {
   let {
     guildId: t,
     welcomeMessage: n,
     className: r
-  } = e, S = (0, a.e7)([h.Z], () => h.Z.getGuild(t)), p = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), E = (0, a.e7)([I.default], () => I.default.getUser(null == n ? true : n.authorIds[0])), T = i.useMemo(() => null != S && null != E && (0, u.Y)(S, E) ? E : null, [S, E]), O = (0, a.e7)([I.default], () => I.default.getCurrentUser()), x = i.useMemo(() => {
+  } = e, f = (0, a.e7)([h.Z], () => h.Z.getGuild(t)), p = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), E = (0, a.e7)([I.default], () => I.default.getUser(null == n ? true : n.authorIds[0])), T = i.useMemo(() => null != f && null != E && (0, u.Y)(f, E) ? E : null, [f, E]), O = (0, a.e7)([I.default], () => I.default.getCurrentUser()), x = i.useMemo(() => {
     var e;
     return null != (e = null == n ? true : n.authorIds) ? e : []
   }, [n]);
@@ -38,27 +38,27 @@ function S(e) {
   let _ = g.ZP.useName(t, null, T),
     j = (0, N._T)(O);
   if (null == T || null == O || null == n) return null;
-  let v = null != S && S.ownerId === T.id;
+  let v = null != f && f.ownerId === T.id;
   return (0, l.jsxs)(o.Zbd, {
-    className: s()(f.welcomeMessageContainer, r),
+    className: s()(S.welcomeMessageContainer, r),
     children: [(0, l.jsx)("div", {
-      className: f.avatarBackground
+      className: S.avatarBackground
     }), p ? (0, l.jsx)(o.qEK, {
       src: T.getAvatarURL(t, 48),
       size: o.EFr.SIZE_48,
-      className: f.avatar,
+      className: S.avatar,
       "aria-label": T.username
     }) : (0, l.jsx)(o.Xo$, {
       src: T.getAvatarURL(t, 48),
       size: o.EFr.SIZE_48,
-      className: f.avatar,
+      className: S.avatar,
       "aria-label": T.username
     }), (0, l.jsx)("div", {
-      className: f.avatarBorder
+      className: S.avatarBorder
     }), (0, l.jsxs)("div", {
-      className: f.welcomeMessageContent,
+      className: S.welcomeMessageContent,
       children: [(0, l.jsxs)("div", {
-        className: f.adminUsernameContainer,
+        className: S.adminUsernameContainer,
         children: [(0, l.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "header-primary",
@@ -66,7 +66,7 @@ function S(e) {
         }), v ? (0, l.jsx)(o.CEn, {
           size: "xxs",
           color: "currentColor",
-          className: f.ownerIcon
+          className: S.ownerIcon
         }) : null]
       }), (0, l.jsx)(o.Text, {
         variant: "text-md/medium",

@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk258356 = require("./258356.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk522976 = require("./522976.js");
+  Chunk271922 = require("./271922.js");
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -60,7 +60,7 @@ function N(e, t) {
 
 function y() {
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk522976.centerFlex,
+    className: Chunk271922.centerFlex,
     children: (0, Chunk255367.jsx)(Chunk481060.$jN, {})
   })
 }
@@ -155,45 +155,43 @@ function Z(e) {
   let {
     invite: t
   } = e;
-  if (null == t || !(0, b.JI)(t)) return null;
-  let n = e => null == t ? null : 1 === e ? (0, r.jsx)(v.X, {
-    invite: t
-  }) : null;
-  return (0, r.jsx)(T, N(S({
+  return null != t && (0, b.JI)(t) ? (0, r.jsx)(T, N(S({
     startAnimHeightPx: 0,
     innerStyle: () => O.guildInfoInner
   }, e), {
-    children: e => n(e)
-  }))
+    children: e => null == t ? null : 1 === e ? (0, r.jsx)(v.X, {
+      invite: t
+    }) : null
+  })) : null
 }
 
 function P(e) {
   let {
     invite: t
-  } = e, n = n => {
-    if (null == t) return (0, r.jsx)(y, {});
-    switch (n) {
-      case 1:
-        return (0, r.jsx)(E.Z, N(S({}, e), {
-          invite: t
-        }));
-      case 2:
-        return (0, r.jsx)(A, N(S({}, e), {
-          invite: t
-        }));
-      default:
-        return (0, r.jsx)(y, {})
-    }
-  }, i = {
+  } = e, n = {
     1: O.inviteCardInner,
     2: O.inviteCardInnerError,
     0: O.inviteCardInnerLoading
   };
   return (0, r.jsx)(T, N(S({
     startAnimHeightPx: 200,
-    innerStyle: e => i[e]
+    innerStyle: e => n[e]
   }, e), {
-    children: e => n(e)
+    children: n => (n => {
+      if (null == t) return (0, r.jsx)(y, {});
+      switch (n) {
+        case 1:
+          return (0, r.jsx)(E.Z, N(S({}, e), {
+            invite: t
+          }));
+        case 2:
+          return (0, r.jsx)(A, N(S({}, e), {
+            invite: t
+          }));
+        default:
+          return (0, r.jsx)(y, {})
+      }
+    })(n)
   }))
 }
 

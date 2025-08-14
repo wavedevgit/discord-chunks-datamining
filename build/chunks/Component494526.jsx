@@ -27,8 +27,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk749537 = require("./749537.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk819286 = require("./819286.js"),
+  Chunk197571 = require("./197571.js");
 let Chunk515695 = require("./515695.js"),
   T = new Chunk710845.Z("LoginQRSocket");
 
@@ -181,35 +181,34 @@ function w(e) {
       d && r && 0 === s.step && (T.info("reconnecting, now that document is visible"), l(false), n(e => e + 1))
     }, [s, d, r, l]), i.useEffect(() => {
       let t = Date.now(),
-        n = () => "".concat(Date.now() - t, "ms"),
-        r = "wss:".concat(window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT, "/?v=2"),
-        i = new WebSocket(r);
-      T.info("[0ms] connecting to ".concat(r));
-      let l = e => T.info("[".concat(n(), "] ").concat(e)),
+        n = "wss:".concat(window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT, "/?v=2"),
+        r = new WebSocket(n);
+      T.info("[0ms] connecting to ".concat(n));
+      let i = e => T.info("[".concat("".concat(Date.now() - t, "ms"), "] ").concat(e)),
+        l = null,
         o = null,
         s = null,
         c = null,
-        d = null,
-        p = true;
+        d = true;
 
-      function f() {
-        if (null != o) return o;
+      function p() {
+        if (null != l) return l;
         throw Error("No key pair set")
       }
-      let _ = () => {
-        p ? (p = false, i.send(JSON.stringify({
+      let f = () => {
+        d ? (d = false, r.send(JSON.stringify({
           op: "heartbeat"
-        }))) : (l("heartbeat timeout, reconnecting."), i.close(), g())
+        }))) : (i("heartbeat timeout, reconnecting."), r.close(), g())
       };
-      return i.onmessage = async t => {
+      return r.onmessage = async t => {
         let {
           data: n
-        } = t, r = JSON.parse(n);
-        switch (r.op) {
+        } = t, l = JSON.parse(n);
+        switch (l.op) {
           case "nonce_proof": {
-            let e = r.encrypted_nonce,
-              t = await (0, v.qd)(f(), e);
-            l("computed nonce proof"), i.send(JSON.stringify({
+            let e = l.encrypted_nonce,
+              t = await (0, v.qd)(p(), e);
+            i("computed nonce proof"), r.send(JSON.stringify({
               op: "nonce_proof",
               nonce: t
             }));
@@ -217,16 +216,16 @@ function w(e) {
           }
           case "pending_remote_init": {
             h.succeed(), b.S.dispatch(O.CkL.WAVE_EMPHASIZE);
-            let e = await (0, v.Pk)(f());
-            if (e !== r.fingerprint) throw Error("bad fingerprint ".concat(e, " !== ").concat(r.fingerprint));
-            l("handshake complete awaiting remote auth."), a({
+            let e = await (0, v.Pk)(p());
+            if (e !== l.fingerprint) throw Error("bad fingerprint ".concat(e, " !== ").concat(l.fingerprint));
+            i("handshake complete awaiting remote auth."), a({
               step: 1,
               fingerprint: e
             });
             return
           }
           case "pending_login": {
-            let e = r.ticket;
+            let e = l.ticket;
             null == e && g(), a({
               step: 4,
               ticket: e
@@ -234,58 +233,58 @@ function w(e) {
             return
           }
           case "pending_ticket": {
-            b.S.dispatch(O.CkL.WAVE_EMPHASIZE), l("remote auth handshake started, awaiting ticket/cancel.");
-            let e = r.encrypted_user_payload;
+            b.S.dispatch(O.CkL.WAVE_EMPHASIZE), i("remote auth handshake started, awaiting ticket/cancel.");
+            let e = l.encrypted_user_payload;
             a({
               step: 3,
-              user: await (0, v.Rq)(f(), e)
+              user: await (0, v.Rq)(p(), e)
             });
             return
           }
           case "pending_finish": {
-            b.S.dispatch(O.CkL.WAVE_EMPHASIZE), l("remote auth handshake started, awaiting finish/cancel.");
-            let e = r.encrypted_user_payload;
+            b.S.dispatch(O.CkL.WAVE_EMPHASIZE), i("remote auth handshake started, awaiting finish/cancel.");
+            let e = l.encrypted_user_payload;
             a({
               step: 2,
-              user: await (0, v.Rq)(f(), e)
+              user: await (0, v.Rq)(p(), e)
             });
             return
           }
           case "finish": {
-            b.S.dispatch(O.CkL.WAVE_EMPHASIZE), l("remote auth handshake finished.");
-            let t = r.encrypted_token;
+            b.S.dispatch(O.CkL.WAVE_EMPHASIZE), i("remote auth handshake finished.");
+            let t = l.encrypted_token;
             a({
               step: 5
-            }), e(await (0, v.FW)(f(), t));
+            }), e(await (0, v.FW)(p(), t));
             return
           }
           case "cancel":
-            l("remote auth handshake cancelled."), m();
+            i("remote auth handshake cancelled."), m();
             return;
           case "hello": {
-            l("got hello, auth timeout=".concat(r.timeout_ms, "ms"));
-            let e = r.heartbeat_interval;
-            d = setTimeout(() => {
-              d = null, _(), c = setInterval(_, e)
+            i("got hello, auth timeout=".concat(l.timeout_ms, "ms"));
+            let e = l.heartbeat_interval;
+            c = setTimeout(() => {
+              c = null, f(), s = setInterval(f, e)
             }, Math.floor(e * Math.random()));
             return
           }
           case "heartbeat_ack":
-            p = true
+            d = true
         }
-      }, i.onopen = async () => {
-        o = await (0, v.W_)(), s = await (0, v.dK)(o);
-        let e = await (0, v.Pk)(o);
-        l("connected, handshaking with fingerprint: ".concat(e)), i.send(JSON.stringify({
+      }, r.onopen = async () => {
+        l = await (0, v.W_)(), o = await (0, v.dK)(l);
+        let e = await (0, v.Pk)(l);
+        i("connected, handshaking with fingerprint: ".concat(e)), r.send(JSON.stringify({
           op: "init",
-          encoded_public_key: s
-        })), u(o)
-      }, i.onclose = e => {
-        l("disconnected, code: ".concat(e.code, " ").concat(e.reason)), g()
-      }, i.onerror = e => {
-        l("disconnected, error: ".concat(JSON.stringify(e))), g()
+          encoded_public_key: o
+        })), u(l)
+      }, r.onclose = e => {
+        i("disconnected, code: ".concat(e.code, " ").concat(e.reason)), g()
+      }, r.onerror = e => {
+        i("disconnected, error: ".concat(JSON.stringify(e))), g()
       }, () => {
-        l("cleaning up"), i.onopen = () => null, i.onmessage = () => null, i.onclose = () => null, i.onerror = () => null, i.close(1e3), h.cancel(), null != d && clearTimeout(d), null != c && clearInterval(c)
+        i("cleaning up"), r.onopen = () => null, r.onmessage = () => null, r.onclose = () => null, r.onerror = () => null, r.close(1e3), h.cancel(), null != c && clearTimeout(c), null != s && clearInterval(s)
       }
     }, [m, e, t, h, g]), {
       state: s,

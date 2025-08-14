@@ -16,7 +16,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk84735 = require("./84735.js"),
   Chunk981729 = require("./981729.jsx"),
   Chunk607070 = require("./607070.js"),
-  Chunk947729 = require("./947729.js");
+  Chunk89079 = require("./89079.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -159,8 +159,8 @@ class T extends(r = Chunk73800.PureComponent) {
       barClassName: L,
       grabberClassName: x,
       grabberStyles: M = {},
-      markerPosition: j = 0,
-      "aria-hidden": k,
+      markerPosition: k = 0,
+      "aria-hidden": j,
       "aria-label": U,
       "aria-labelledby": G,
       "aria-describedby": B
@@ -174,8 +174,8 @@ class T extends(r = Chunk73800.PureComponent) {
         return (0, i.jsx)("div", {
           className: s()(m.mark, {
             [m.defaultValue]: r,
-            [m.markAbove]: 0 === j,
-            [m.markBelow]: 1 === j
+            [m.markAbove]: 0 === k,
+            [m.markBelow]: 1 === k
           }),
           style: {
             left: "".concat(e, "%")
@@ -212,7 +212,7 @@ class T extends(r = Chunk73800.PureComponent) {
             "aria-valuenow": t,
             "aria-disabled": g,
             "aria-orientation": R,
-            "aria-hidden": k,
+            "aria-hidden": j,
             "aria-label": U,
             "aria-labelledby": G,
             "aria-describedby": B,

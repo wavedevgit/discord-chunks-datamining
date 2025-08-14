@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 193544, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk992249 = require("./992249.jsx"),
   Chunk717251 = require("./717251.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk74394 = require("./74394.js");
+  Chunk201720 = require("./201720.js");
 
 function h(e) {
   var t, n, l;
@@ -30,12 +30,7 @@ function h(e) {
   }, [f]), i.useEffect(() => () => {
     clearTimeout(I.current)
   }, []);
-  let E = b.find(e => e.value === v),
-    S = e => {
-      e.disabled || e.value === v || (N(true), null == j || j(e), _(e.value), I.current = setTimeout(() => {
-        N(false), y(false)
-      }, 1e3))
-    };
+  let E = b.find(e => e.value === v);
   return (0, r.jsx)(u.Z, {
     title: O ? h : null != (t = null == E ? true : E.title) ? t : h,
     description: O ? "(".concat(null != (n = null == E ? true : E.title) ? n : g.intl.string(g.t.PoWNfX), ")") : null != (l = null == E ? true : E.description) ? l : "",
@@ -59,7 +54,11 @@ function h(e) {
       }) : (0, r.jsx)(o.Z, {
         className: p.radioItem
       }),
-      onClick: () => S(e),
+      onClick: () => {
+        e.disabled || e.value === v || (N(true), null == j || j(e), _(e.value), I.current = setTimeout(() => {
+          N(false), y(false)
+        }, 1e3))
+      },
       disabled: e.disabled
     }, "".concat(e.title, "-").concat(t)))
   })

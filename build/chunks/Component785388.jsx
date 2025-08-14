@@ -45,8 +45,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk91047 = require("./91047.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk368508 = require("./368508.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk575890 = require("./575890.js"),
+  Chunk197571 = require("./197571.js");
 
 function W(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -96,7 +96,7 @@ function ee(e) {
 }
 
 function et(e, t, n, i) {
-  let o = null == e.id ? U.ZP.getURL(e.name) : k.ZP.getEmojiURL({
+  let o = null == e.id ? U.ZP.getURL(e.name) : j.ZP.getEmojiURL({
     id: e.id,
     animated: e.animated,
     size: t
@@ -227,7 +227,7 @@ function ei(e) {
     reactionType: s,
     onRemoveReactor: l,
     disableManage: c = false
-  } = e, d = (0, u.e7)([R.default], () => R.default.getId()), _ = (0, u.e7)([j.default], () => j.default.getUser(n.id), [n]), m = (0, N.$R)(o), E = (0, u.e7)([x.Z], () => x.Z.can(F.Plq.MANAGE_MESSAGES, o) && m) || d === n.id, b = (0, u.e7)([w.ZP, P.Z, M.Z], () => G.ZP.getName(a, o.id, n));
+  } = e, d = (0, u.e7)([R.default], () => R.default.getId()), _ = (0, u.e7)([k.default], () => k.default.getUser(n.id), [n]), m = (0, N.$R)(o), E = (0, u.e7)([x.Z], () => x.Z.can(F.Plq.MANAGE_MESSAGES, o) && m) || d === n.id, b = (0, u.e7)([w.ZP, P.Z, M.Z], () => G.ZP.getName(a, o.id, n));
 
   function y() {
     S.WO({
@@ -327,13 +327,13 @@ class eo extends Chunk73800.PureComponent {
       reactionType: o
     } = this.props, a = [];
     return 0 === exports.length && this.state.loadingMore ? a.push(length) : (a.push(exports.length), module && a.push(1)), (0, Chunk255367.jsxs)("div", {
-      className: Chunk368508.reactorsContainer,
+      className: Chunk575890.reactorsContainer,
       children: [Chunk120356 === Chunk566006.O.BURST && (0, Chunk255367.jsx)(en, {
         emoji: require.emoji,
         channelId: Chunk73800.getChannelId(),
         messageId: Chunk73800.id
       }), (0, Chunk255367.jsx)(Chunk481060.aVo, {
-        className: Chunk368508.reactors,
+        className: Chunk575890.reactors,
         fade: true,
         ref: this.scrollerRef,
         sections: a,

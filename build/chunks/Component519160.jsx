@@ -2,8 +2,8 @@
 /** chunk id: 519160, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => y,
-  gN: () => E
+  ZP: () => O,
+  gN: () => b
 }), require("./388685.js"), require("./415506.js");
 var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -11,7 +11,7 @@ var r, Chunk255367 = require("./255367.js"),
   s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk112724 = require("./112724.jsx"),
-  Chunk606234 = require("./606234.js");
+  Chunk582235 = require("./582235.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,15 +57,13 @@ let h = {
     overshootClamping: true
   },
   m = 100,
-  g = {
-    CENTER: "center",
-    RIGHT: "right"
-  };
+  g = "center",
+  E = "right";
 
-function E(e, t) {
+function b(e, t) {
   return (e % t + t) % t
 }
-class b extends(r = Chunk73800.Component) {
+class y extends(r = Chunk73800.Component) {
   componentDidMount() {
     this.animatedIndex.setValue(this.props.currentIndex)
   }
@@ -76,7 +74,7 @@ class b extends(r = Chunk73800.Component) {
       currentIndex: r,
       items: i,
       width: o
-    } = this.props, a = E(r, i.length), s = E(e.currentIndex, i.length);
+    } = this.props, a = b(r, i.length), s = b(e.currentIndex, i.length);
     (a !== s || i.length !== e.items.length) && this.updateAnimatedIndex(a, s), o !== e.width ? this.animatedAlignmentOffset.setValue(this.getAlignmentOffset(t)) : n && (t !== e.align || a !== s) && l.Z.spring(this.animatedAlignmentOffset, p(f({}, h), {
       toValue: this.getAlignmentOffset(t)
     })).start()
@@ -88,8 +86,8 @@ class b extends(r = Chunk73800.Component) {
       currentIndex: r,
       gutter: i,
       items: o
-    } = this.props, a = i * E(r, o.length) * 2;
-    return e === g.CENTER ? (t - n.width) / 2 + a : e === g.RIGHT ? t - n.width - i + a : i + a
+    } = this.props, a = i * b(r, o.length) * 2;
+    return e === g ? (t - n.width) / 2 + a : e === E ? t - n.width - i + a : i + a
   }
   getCarouselTranslate() {
     let {
@@ -136,9 +134,9 @@ class b extends(r = Chunk73800.Component) {
       className: r
     } = this.props;
     return (0, Chunk255367.jsx)("div", {
-      className: s()(Chunk606234.singleItemWrapper, Chunk606234.viewport, r),
+      className: s()(Chunk582235.singleItemWrapper, Chunk582235.viewport, r),
       children: (0, Chunk255367.jsx)("div", {
-        className: Chunk606234.singleItem,
+        className: Chunk582235.singleItem,
         style: {
           width: require.width,
           height: require.height
@@ -172,7 +170,7 @@ class b extends(r = Chunk73800.Component) {
         children: o(e, t - c, this.interpolateValueForItem(t - c))
       }, t));
     return (0, Chunk255367.jsx)(Chunk748780.Z.div, {
-      className: Chunk606234.carousel,
+      className: Chunk582235.carousel,
       style: {
         opacity: r,
         left: Chunk748780.Z.add(exports.interpolate({
@@ -192,7 +190,7 @@ class b extends(r = Chunk73800.Component) {
     if (module.length <= 0) throw Error("Carousel has no items");
     return 1 === module.length ? this.renderSingleItem() : (0, Chunk255367.jsx)("div", {
       className: s()({
-        [Chunk606234.viewport]: require
+        [Chunk582235.viewport]: require
       }, exports),
       children: this.renderCarouselItems()
     })
@@ -220,11 +218,11 @@ class b extends(r = Chunk73800.Component) {
     }))
   }
 }
-d(b, "defaultProps", {
+d(y, "defaultProps", {
   animate: true,
   edgeItems: 2,
-  align: g.CENTER,
+  align: g,
   gutter: 0,
   hideOverflow: true
 });
-let y = (0, Chunk112724.Z)(b)
+let O = (0, Chunk112724.Z)(y)

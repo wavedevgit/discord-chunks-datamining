@@ -1,7 +1,7 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 636188, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => B
 }), require("./388685.js"), require("./642613.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -28,7 +28,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk486324 = require("./486324.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk343387 = require("./343387.js");
+  Chunk199306 = require("./199306.js");
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -219,11 +219,11 @@ function D(e) {
 
 function Z() {
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk343387.customBackgroundTooltip,
+    className: Chunk199306.customBackgroundTooltip,
     children: [(0, Chunk255367.jsx)(Chunk481060.SrA, {
       size: "md",
       color: "currentColor",
-      className: Chunk343387.customBackgroundTooltipIcon
+      className: Chunk199306.customBackgroundTooltipIcon
     }), (0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       children: Chunk388032.intl.string(Chunk388032.t["T+yRY2"])
@@ -309,7 +309,7 @@ function L(e) {
       (0, o.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("91689"), n.e("89289"), n.e("5007")]).then(n.bind(n, 28130));
+        } = await Promise.all([n.e("91689"), n.e("89289"), n.e("74261")]).then(n.bind(n, 28130));
         return n => (0, i.jsx)(e, y({
           maxFileSizeBytes: C.SJ,
           onComplete: e => {
@@ -335,7 +335,7 @@ function L(e) {
   })
 }
 
-function M(e) {
+function B(e) {
   let {
     canUseCustomBackgrounds: t,
     customBackgroundOptions: n,

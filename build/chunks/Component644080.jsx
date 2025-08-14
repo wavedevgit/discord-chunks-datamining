@@ -1,7 +1,7 @@
 /** Chunk was on 12009 **/
 /** chunk id: 644080, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => Z
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,22 +19,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk768581 = require("./768581.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk335138 = require("./335138.js"),
+  Chunk917733 = require("./917733.js"),
   Chunk63190 = require("./63190.js"),
   Chunk102219 = require("./102219.js");
-let _ = e => {
-  let n = r.useMemo(() => null == e ? null : p.ZP.getGuildHomeHeaderURL({
-    id: e.id,
-    homeHeader: e.homeHeader
-  }), [e]);
-  return {
-    homeHeaderImage: n,
-    isHomeHeaderImageSet: null != n,
-    homeHeaderScroll: 200 * (null != n)
-  }
-};
 
-function Z(e) {
+function _(e) {
   let {
     guild: n
   } = e, {
@@ -62,32 +51,42 @@ function Z(e) {
     })
   })
 }
-let I = Chunk73800.memo(function(e) {
+let Z = Chunk73800.memo(function(e) {
   let {
     guild: n,
-    titleClassName: r
+    titleClassName: a
   } = e, {
-    homeHeaderImage: a,
-    isHomeHeaderImageSet: h
-  } = _(n), p = (0, m.b$)(n.id), I = (0, s.e7)([g.Z], () => (0, f.b)(g.Z, n)), y = (0, o.ZP)();
+    homeHeaderImage: h,
+    isHomeHeaderImageSet: Z
+  } = (e => {
+    let n = r.useMemo(() => null == e ? null : p.ZP.getGuildHomeHeaderURL({
+      id: e.id,
+      homeHeader: e.homeHeader
+    }), [e]);
+    return {
+      homeHeaderImage: n,
+      isHomeHeaderImageSet: null != n,
+      homeHeaderScroll: 200 * (null != n)
+    }
+  })(n), I = (0, m.b$)(n.id), y = (0, s.e7)([g.Z], () => (0, f.b)(g.Z, n)), N = (0, o.ZP)();
   return (0, l.jsxs)("div", {
     className: j.header,
     children: [(0, l.jsxs)("div", {
       className: j.headerArtWrapper,
       children: [(0, l.jsx)("div", {
         className: i()(j.headerArt, {
-          [j.headerArtPlaceholder]: !h
+          [j.headerArtPlaceholder]: !Z
         }),
         style: {
-          backgroundImage: "url(".concat(h ? a : "dark" === y ? C : v, ")")
+          backgroundImage: "url(".concat(Z ? h : "dark" === N ? C : v, ")")
         }
-      }), p && (0, l.jsx)(Z, {
+      }), I && (0, l.jsx)(_, {
         guild: n
       })]
     }), (0, l.jsx)("div", {
       className: j.titleWrapper,
       children: (0, l.jsxs)("div", {
-        className: r,
+        className: a,
         children: [(0, l.jsx)(d.Z, {
           className: j.headerIcon,
           guild: n,
@@ -105,7 +104,7 @@ let I = Chunk73800.memo(function(e) {
               guild: n,
               tooltipPosition: "bottom",
               tooltipColor: c.ua7.Colors.PRIMARY
-            }), I && (0, l.jsx)("div", {
+            }), y && (0, l.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
               className: j.inviteButton,
               children: (0, l.jsx)(c.zxk, {
@@ -114,7 +113,7 @@ let I = Chunk73800.memo(function(e) {
                 onClick: () => (0, c.ZDy)(async () => {
                   let {
                     default: e
-                  } = await Promise.all([t.e("7654"), t.e("41832")]).then(t.bind(t, 560114));
+                  } = await Promise.all([t.e("7654"), t.e("54833")]).then(t.bind(t, 560114));
                   return t => {
                     var r, a;
                     return (0, l.jsx)(e, (r = function(e) {

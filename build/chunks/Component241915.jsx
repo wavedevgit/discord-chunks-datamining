@@ -2,8 +2,8 @@
 /** chunk id: 241915, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A,
-  _: () => T
+  Z: () => C,
+  _: () => A
 }), require("./388685.js");
 var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -15,7 +15,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk522501 = require("./522501.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk796532 = require("./796532.js");
+  Chunk639965 = require("./639965.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -40,30 +40,28 @@ function m(e) {
 }
 let g = 200,
   E = 40,
-  b = {
-    top: 80,
-    bottom: 132,
-    left: 80
+  b = 80,
+  y = 132,
+  O = 80,
+  v = {
+    [Chunk981631.VD2.TOP_RIGHT]: Chunk639965.resizeHandleTopRight,
+    [Chunk981631.VD2.TOP_LEFT]: Chunk639965.resizeHandleTopLeft,
+    [Chunk981631.VD2.BOTTOM_LEFT]: Chunk639965.resizeHandleBottomLeft,
+    [Chunk981631.VD2.BOTTOM_RIGHT]: Chunk639965.resizeHandleBottomRight
   },
-  y = {
-    [Chunk981631.VD2.TOP_RIGHT]: Chunk796532.resizeHandleTopRight,
-    [Chunk981631.VD2.TOP_LEFT]: Chunk796532.resizeHandleTopLeft,
-    [Chunk981631.VD2.BOTTOM_LEFT]: Chunk796532.resizeHandleBottomLeft,
-    [Chunk981631.VD2.BOTTOM_RIGHT]: Chunk796532.resizeHandleBottomRight
-  },
-  O = {
+  I = {
     [Chunk981631.VD2.TOP_RIGHT]: Chunk347469.y.HORIZONTAL_LEFT,
     [Chunk981631.VD2.TOP_LEFT]: Chunk347469.y.HORIZONTAL_RIGHT,
     [Chunk981631.VD2.BOTTOM_LEFT]: Chunk347469.y.HORIZONTAL_RIGHT,
     [Chunk981631.VD2.BOTTOM_RIGHT]: Chunk347469.y.HORIZONTAL_LEFT
   };
 
-function v(e, t) {
+function T(e, t) {
   let n = Math.round(e / E) * E;
   return (0, l.clamp)(n, t.minWidth, t.maxWidth)
 }
 
-function I(e) {
+function S(e) {
   let {
     resizableNode: t,
     onResize: n,
@@ -76,17 +74,17 @@ function I(e) {
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: r,
-    orientation: O[l],
+    orientation: I[l],
     usePointerEvents: true
   }), d = o.useCallback(e => {
     e.stopPropagation(), u(e)
   }, [u]);
   return (0, i.jsx)("div", {
     onMouseDown: d,
-    className: s()(p.resizeHandle, y[l])
+    className: s()(p.resizeHandle, v[l])
   })
 }
-class T extends(r = Chunk73800.PureComponent) {
+class A extends(r = Chunk73800.PureComponent) {
   componentDidMount() {
     this.setPosition(this.props.position)
   }
@@ -224,9 +222,9 @@ class T extends(r = Chunk73800.PureComponent) {
     }), (0, Chunk255367.jsxs)(Chunk689425.Z, {
       dragAnywhere: true,
       ref: this.handleSetDraggableRef,
-      className: s()(Chunk796532.pictureInPictureWindow, Chunk120356, {
-        [Chunk796532.hidden]: r,
-        [Chunk796532.borderRadius]: Chunk73800
+      className: s()(Chunk639965.pictureInPictureWindow, Chunk120356, {
+        [Chunk639965.hidden]: r,
+        [Chunk639965.borderRadius]: Chunk73800
       }),
       maxX: module,
       maxY: exports,
@@ -238,7 +236,7 @@ class T extends(r = Chunk73800.PureComponent) {
         ref: this.handleSetInnerDivRef,
         style: Chunk981631,
         children: this.props.children
-      }), null != Chunk347469 ? (0, Chunk255367.jsx)(I, {
+      }), null != Chunk347469 ? (0, Chunk255367.jsx)(S, {
         onResize: this.handleResize,
         onResizeEnd: this.handleResizeEnd,
         resizableNode: this._innerDivRef,
@@ -261,7 +259,7 @@ class T extends(r = Chunk73800.PureComponent) {
         resizeConfig: i
       } = this.props;
       if (null == i) return;
-      let o = v(r - (t + n), i);
+      let o = T(r - (t + n), i);
       this.getWidth() > o && (this._width = o, null == e || e(o))
     }), h(this, "handleSetInnerDivRef", e => {
       this._innerDivRef.current = e;
@@ -282,7 +280,7 @@ class T extends(r = Chunk73800.PureComponent) {
         resizeConfig: n
       } = this.props;
       if (null == n) return;
-      let r = v(e, n);
+      let r = T(e, n);
       this._width = r, null == t || t(r), this.setState({
         isResizing: false
       }), this.ensureWidth()
@@ -313,11 +311,11 @@ class T extends(r = Chunk73800.PureComponent) {
     })
   }
 }
-h(T, "defaultProps", {
+h(A, "defaultProps", {
   hidden: false,
   roundCorners: true
 });
-let S = e => {
+let N = e => {
     let {
       selectedPIPWindow: t,
       pipWindows: n,
@@ -330,20 +328,20 @@ let S = e => {
       pictureInPictureComponents: h,
       appContext: g,
       roundCorners: E,
-      resizeConfig: y,
-      className: O,
-      getDockedRectPositionY: v
-    } = e, [I, S] = o.useState(false), A = o.useMemo(() => null == t ? null : n.map(e => {
+      resizeConfig: v,
+      className: I,
+      getDockedRectPositionY: T
+    } = e, [S, N] = o.useState(false), C = o.useMemo(() => null == t ? null : n.map(e => {
       if (e.id !== t.id && e.component !== f.NYg.ACTIVITY && e.component !== f.NYg.FRAME) return null;
       let n = "string" == typeof e.component ? h[e.component] : e.component;
       return (0, i.jsx)(n, m({
         width: r
       }, e.props), e.id)
-    }), [n, t, r, h]), N = o.useCallback(() => {
-      S(true)
-    }, []), C = o.useCallback(() => {
-      S(false)
-    }, []), R = o.useMemo(() => n.some(e => e.component === f.NYg.ACTIVITY), [n]), P = o.useMemo(() => n.some(e => e.component === f.NYg.FRAME), [n]);
+    }), [n, t, r, h]), R = o.useCallback(() => {
+      N(true)
+    }, []), P = o.useCallback(() => {
+      N(false)
+    }, []), w = o.useMemo(() => n.some(e => e.component === f.NYg.ACTIVITY), [n]), D = o.useMemo(() => n.some(e => e.component === f.NYg.FRAME), [n]);
     return null == t ? (0, i.jsx)(d.ZP, {
       children: (0, i.jsx)("div", {
         className: p.pictureInPicture
@@ -351,31 +349,31 @@ let S = e => {
     }) : (0, i.jsx)(d.ZP, {
       children: (0, i.jsx)("div", {
         className: s()(p.pictureInPicture, {
-          [p.dragging]: I
-        }, O),
-        children: (0, i.jsx)(T, {
+          [p.dragging]: S
+        }, I),
+        children: (0, i.jsx)(A, {
           appContext: g,
           position: t.position,
           id: t.id,
           hidden: t.hidden,
           onMove: c,
           onResize: u,
-          onDragStart: N,
-          onDragEnd: C,
+          onDragStart: R,
+          onDragEnd: P,
           maxX: a,
           maxY: l,
           width: r,
           dockedRect: _,
-          getDockedRectPositionY: v,
-          edgeOffsetTop: b.top,
-          edgeOffsetBottom: b.bottom,
-          edgeOffsetLeft: b.left,
-          edgeOffsetRight: b.top,
+          getDockedRectPositionY: T,
+          edgeOffsetTop: b,
+          edgeOffsetBottom: y,
+          edgeOffsetLeft: O,
+          edgeOffsetRight: b,
           roundCorners: E,
-          resizeConfig: R || P ? true : y,
-          children: A
+          resizeConfig: w || D ? true : v,
+          children: C
         })
       })
     })
   },
-  A = Chunk73800.memo(S)
+  C = Chunk73800.memo(N)

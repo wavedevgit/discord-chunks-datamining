@@ -1,4 +1,4 @@
-/** Chunk was on 873 **/
+/** Chunk was on 1355 **/
 /** chunk id: 472596, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   RE: () => d,
@@ -32,30 +32,30 @@ let d = (e, t) => {
 
 function _(e, t, n, r) {
   let {
-    analyticsLocations: s
-  } = (0, i.ZP)();
+    analyticsLocations: i
+  } = (0, s.ZP)();
   return l.useCallback(l => {
     if (null == e) return;
-    let i = c.default.getUser(e.userId);
-    null != i && (l.stopPropagation(), (0, E.nm)(l, {
-      user: i,
+    let s = c.default.getUser(e.userId);
+    null != s && (l.stopPropagation(), (0, E.nm)(l, {
+      user: s,
       guildId: e.guildId,
-      analyticsLocations: null != n ? [n] : s,
+      analyticsLocations: null != n ? [n] : i,
       onCloseContextMenu: r,
       isViewOnly: t
     }))
-  }, [e, s, r, n, t])
+  }, [e, i, r, n, t])
 }
 
 function A(e, t, n) {
   let {
     analyticsLocations: r
-  } = (0, i.ZP)();
+  } = (0, s.ZP)();
   return l.useCallback(l => {
     if (null == e) return;
-    let s = c.default.getUser(e.userId);
-    null != s && (l.stopPropagation(), (0, E._j)(l, {
-      user: s,
+    let i = c.default.getUser(e.userId);
+    null != i && (l.stopPropagation(), (0, E._j)(l, {
+      user: i,
       guildId: e.guildId,
       analyticsLocations: null != t ? [t] : r,
       onCloseContextMenu: n,
@@ -65,7 +65,7 @@ function A(e, t, n) {
 }
 
 function T(e) {
-  return (0, s.e7)([u.Z, o.Z], () => {
+  return (0, i.e7)([u.Z, o.Z], () => {
     var t;
     if (null == e) return null;
     let n = u.Z.getGuild(e.guildId);

@@ -1,4 +1,4 @@
-/** Chunk was on 72762 **/
+/** Chunk was on 77512 **/
 /** chunk id: 416867, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => d
@@ -10,7 +10,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk313201 = require("./313201.js"),
   Chunk192635 = require("./192635.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk39281 = require("./39281.js");
+  Chunk818235 = require("./818235.js");
 
 function u(e) {
   let {
@@ -19,26 +19,26 @@ function u(e) {
     title: u,
     body: d,
     onClose: f
-  } = e, p = (0, s.Dt)();
+  } = e, p = (0, o.Dt)();
   return (0, r.jsxs)(l.Y0X, {
-    className: c.container,
+    className: a.container,
     transitionState: t,
     "aria-labelledby": p,
     parentComponent: "ActionCompletedSuccessModal",
     children: [(0, r.jsxs)(l.hzk, {
-      children: [(0, r.jsx)(o.Z, {
+      children: [(0, r.jsx)(s.Z, {
         Icon: n
       }), (0, r.jsx)(l.LZC, {
         size: 24
       }), (0, r.jsx)(l.X6q, {
         id: p,
-        className: c.__invalid_title,
+        className: a.__invalid_title,
         variant: "heading-xl/semibold",
         children: u
       }), (0, r.jsx)(l.LZC, {
         size: 8
       }), (0, r.jsx)(l.Text, {
-        className: c.body,
+        className: a.body,
         variant: "text-sm/normal",
         children: d
       })]
@@ -48,7 +48,7 @@ function u(e) {
       size: i.zx.Sizes.MEDIUM,
       grow: false,
       onClick: f,
-      children: a.intl.string(a.t["NX+WJC"])
+      children: c.intl.string(c.t["NX+WJC"])
     })]
   })
 }

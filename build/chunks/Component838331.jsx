@@ -20,7 +20,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk993365 = require("./993365.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk291228 = require("./291228.js");
+  Chunk792323 = require("./792323.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,8 +81,8 @@ function v(e, t) {
 let I = "data-listbox-item-id",
   T = 40,
   S = Object.freeze({
-    STANDARD: Chunk291228.selected,
-    BRAND: Chunk291228.selectedBrand
+    STANDARD: Chunk792323.selected,
+    BRAND: Chunk792323.selectedBrand
   });
 
 function A(e) {
@@ -126,10 +126,10 @@ function P(e) {
     maxVisibleItems: A = 5,
     itemToString: N = C,
     showScrollbar: P = false
-  } = e, [w, D] = i.useState(""), [L] = i.useState(true), [x, M] = i.useState(null), j = i.useId(), k = i.useRef(null);
+  } = e, [w, D] = i.useState(""), [L] = i.useState(true), [x, M] = i.useState(null), k = i.useId(), j = i.useRef(null);
   i.useLayoutEffect(() => {
     let e = document.querySelector("[".concat(I, '="').concat(x, '"]')),
-      t = k.current;
+      t = j.current;
     null != t && null != e && t.scrollIntoViewNode({
       node: e,
       padding: 12
@@ -139,14 +139,14 @@ function P(e) {
     G = 0 === U.length,
     B = i.useId(),
     Z = i.useCallback(() => new Promise(e => {
-      let t = k.current;
+      let t = j.current;
       if (null == t) return e();
       t.scrollToTop({
         callback: () => requestAnimationFrame(() => e())
       })
     }), []),
     F = i.useCallback(() => new Promise(e => {
-      let t = k.current;
+      let t = j.current;
       if (null == t) return e();
       t.scrollToTop({
         callback: () => requestAnimationFrame(() => e())
@@ -155,7 +155,7 @@ function P(e) {
     V = i.useCallback((e, t) => {
       M(t);
       let n = document.querySelector(e),
-        r = k.current;
+        r = j.current;
       null != r && null != n && r.scrollIntoViewNode({
         node: n
       })
@@ -182,8 +182,8 @@ function P(e) {
           role: "combobox",
           "aria-label": b,
           "aria-expanded": L,
-          "aria-controls": L ? j : true,
-          "aria-owns": j,
+          "aria-controls": L ? k : true,
+          "aria-owns": k,
           "aria-haspopup": "listbox",
           className: a()(m.combobox, u),
           children: [(0, r.jsx)(f.E, {
@@ -224,8 +224,8 @@ function P(e) {
                   maxHeight: A * (T + 6)
                 },
                 "aria-multiselectable": v,
-                id: j,
-                ref: k,
+                id: k,
+                ref: j,
                 className: a()(m.list, g, {
                   [m.scroller]: P
                 }),
@@ -319,7 +319,7 @@ D.Colors = S, D.Label = function(e) {
     selected: e
   } = Chunk73800.useContext(R), t = Chunk73800.useContext(w);
   return module.has(exports) ? (0, Chunk255367.jsx)("span", {
-    className: Chunk291228.itemCheckbox,
+    className: Chunk792323.itemCheckbox,
     children: (0, Chunk255367.jsx)(Chunk481060.owK, {
       size: "custom",
       color: "currentColor",

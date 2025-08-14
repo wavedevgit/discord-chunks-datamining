@@ -91,8 +91,8 @@ let tg = "message1",
   t_ = .4,
   tE = (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.features.supports("notifications")) ? 20 : 1,
   tp = "discord_dismissed_notification_shown",
-  tT = document.hasFocus(),
-  tN = null,
+  tN = document.hasFocus(),
+  tT = null,
   tS = new Set,
   tI = {},
   th = {},
@@ -138,7 +138,7 @@ function tA(t, e) {
     return null == (e = t.metadata) || !e.distributor || t.metadata.distributor !== tu.GQo.STEAM
   }));
   let a = l.filter(t => t.type === tu.IIU.PLAYING && null != t.application_id).map(t => t.application_id);
-  return n === o.Tv.ONLY_GAMES_PLAYED && (a = a.filter(t => T.Z.currentUserApplicationIds.has(t))), a
+  return n === o.Tv.ONLY_GAMES_PLAYED && (a = a.filter(t => N.Z.currentUserApplicationIds.has(t))), a
 }
 async function tv(t) {
   let e = !(arguments.length > 1) || true === arguments[1] || arguments[1],
@@ -158,7 +158,7 @@ async function tv(t) {
         excludeSteamGames: i
       });
       0 !== r.length && (t = new Set([...t, ...r]))
-    }), await N.ZP.fetchApplications([...t], false)
+    }), await T.ZP.fetchApplications([...t], false)
   }
   a.forEach(t => {
     let {
@@ -268,7 +268,7 @@ tc(tD, "displayName", "NotificationStore"), new tD(Chunk570140.Z, __OVERLAY__ ? 
     return !tP() && (to.Z.showNotification(e, n, i, l, a), false)
   },
   WINDOW_FOCUS: function(t) {
-    if (tT = t.focused) {
+    if (tN = t.focused) {
       let t = J.Z.getChannelId();
       null != t && tZ.clearChannel(t)
     }
@@ -285,16 +285,16 @@ tc(tD, "displayName", "NotificationStore"), new tD(Chunk570140.Z, __OVERLAY__ ? 
       _ = $.default.getUser(null == (e = u.author) ? true : e.id),
       E = $.default.getCurrentUser();
     if (null == f || null == _ || null == E) returnfalse;
-    let p = (0, D.eF)(u, o, !tT),
-      T = z.Z.getNotifyMessagesInSelectedChannel() && (0, D.N_)(u, o);
-    if (!p && !T || u.type === tu.uaV.CHANGELOG && (null == u.changelog_id || I.Z.latestChangelogId() !== u.changelog_id)) returnfalse;
-    let N = !z.Z.isSoundDisabled(tg),
+    let p = (0, D.eF)(u, o, !tN),
+      N = z.Z.getNotifyMessagesInSelectedChannel() && (0, D.N_)(u, o);
+    if (!p && !N || u.type === tu.uaV.CHANGELOG && (null == u.changelog_id || I.Z.latestChangelogId() !== u.changelog_id)) returnfalse;
+    let T = !z.Z.isSoundDisabled(tg),
       S = ta.ZP.canUseCustomNotificationSounds(E),
       h = b.Y.getCurrentConfig({
         location: "NotificationStore"
       }).enabled,
-      C = S && h && N ? null != (a = (0, k.bb)(null != (l = f.guild_id) ? l : tu.aIL, o)) ? a : (0, k.iD)(f.guild_id) : true;
-    if (T && (N && to.Z.playNotificationSound("message3", .4, C), !tT) || !p) returnfalse;
+      C = S && h && T ? null != (a = (0, k.bb)(null != (l = f.guild_id) ? l : tu.aIL, o)) ? a : (0, k.iD)(f.guild_id) : true;
+    if (N && (T && to.Z.playNotificationSound("message3", .4, C), !tN) || !p) returnfalse;
     let Z = n(808506).default,
       A = n(624864).Z,
       {
@@ -313,7 +313,7 @@ tc(tD, "displayName", "NotificationStore"), new tD(Chunk570140.Z, __OVERLAY__ ? 
         icon: m,
         title: y,
         body: R
-      }), (0, O.R)(u, f.guild_id), z.Z.getDesktopType() === tu.qrD.NEVER) return N && to.Z.playNotificationSound(tg, t_, C), false;
+      }), (0, O.R)(u, f.guild_id), z.Z.getDesktopType() === tu.qrD.NEVER) return T && to.Z.playNotificationSound(tg, t_, C), false;
     let w = null != (r = q.Z.getMessage(o, u.id)) ? r : (0, P.e5)(u);
     to.Z.showNotification(m, y, R, {
       notif_type: "MESSAGE_CREATE",
@@ -327,7 +327,7 @@ tc(tD, "displayName", "NotificationStore"), new tD(Chunk570140.Z, __OVERLAY__ ? 
     }, {
       omitViewTracking: L,
       tag: u.id,
-      sound: N ? tg : true,
+      sound: T ? tg : true,
       soundpack: C,
       volume: t_,
       onClick() {
@@ -504,7 +504,7 @@ tc(tD, "displayName", "NotificationStore"), new tD(Chunk570140.Z, __OVERLAY__ ? 
     } = t;
     if (tP()) returnfalse;
     let l = x.Z.getChannel(n.parent_id);
-    if (null == l || !tu.TPd.GUILD_THREADS_ONLY.has(l.type) || !i || !(0, D.FI)(n, l, !tT)) returnfalse;
+    if (null == l || !tu.TPd.GUILD_THREADS_ONLY.has(l.type) || !i || !(0, D.FI)(n, l, !tN)) returnfalse;
     let {
       author: a,
       user: r
@@ -572,7 +572,7 @@ tc(tD, "displayName", "NotificationStore"), new tD(Chunk570140.Z, __OVERLAY__ ? 
     });
     if (!o) returnfalse;
     let u = r.channel_id;
-    if (null == u || J.Z.getCurrentlySelectedChannelId() === u && tT) returnfalse;
+    if (null == u || J.Z.getCurrentlySelectedChannelId() === u && tN) returnfalse;
     to.Z.showNotification(e, n, i, {
       notif_type: a
     }, {
@@ -589,7 +589,7 @@ tc(tD, "displayName", "NotificationStore"), new tD(Chunk570140.Z, __OVERLAY__ ? 
       e = (0, Chunk358085.isLinux)();
     if (!(!Chunk433517.K.get(tp, false) && Chunk358085.isPlatformEmbedded && (module || exports))) returnfalse;
     let i = false;
-    return null != tN && (i = tC.includes(tN)), !!i && (Chunk654769.Z.showNotification(require("./95045.js"), Chunk388032.intl.string(Chunk388032.t.VSgOVl), Chunk388032.intl.string(Chunk388032.t["+J/F6+"]), {
+    return null != tT && (i = tC.includes(tT)), !!i && (Chunk654769.Z.showNotification(require("./95045.js"), Chunk388032.intl.string(Chunk388032.t.VSgOVl), Chunk388032.intl.string(Chunk388032.t["+J/F6+"]), {
       notif_type: "WINDOW_HIDDEN"
     }, {
       overrideStreamerMode: true,
@@ -611,7 +611,7 @@ tc(tD, "displayName", "NotificationStore"), new tD(Chunk570140.Z, __OVERLAY__ ? 
       guilds: n,
       presences: i
     } = t;
-    tN = e, tS.clear(), n.forEach(t => t.stage_instances.forEach(t => tS.add(t.id))), (0, Z.uw)("NotificationStore") && (0, A.MH)() !== o.Tv.ACTIVITY_NOTIFICATIONS_DISABLED && tv(i, false)
+    tT = e, tS.clear(), n.forEach(t => t.stage_instances.forEach(t => tS.add(t.id))), (0, Z.uw)("NotificationStore") && (0, A.MH)() !== o.Tv.ACTIVITY_NOTIFICATIONS_DISABLED && tv(i, false)
   },
   MESSAGE_REMINDER_DUE: function(t) {
     let {

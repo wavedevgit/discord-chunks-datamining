@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 342414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => U
@@ -33,7 +33,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk525433 = require("./525433.js"),
+  Chunk644219 = require("./644219.js"),
   Chunk872905 = require("./872905.js"),
   Chunk578478 = require("./578478.js");
 let w = e => {
@@ -43,7 +43,7 @@ let w = e => {
     } = e, {
       headingText: c,
       headingTop: d
-    } = B(), u = (0, a.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()), p = (0, E.N)(), h = (0, j.Ng)(), f = (0, j.Wp)(h, y.Si.TIER_2) ? y.Si.TIER_2 : true, b = null != u && u.status !== A.O0b.ACCOUNT_HOLD && u.hasAnyPremiumNitro, x = (0, m.Z)().isFractionalPremiumActive && !b;
+    } = M(), u = (0, a.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()), p = (0, E.N)(), h = (0, j.Ng)(), f = (0, j.Wp)(h, y.Si.TIER_2) ? y.Si.TIER_2 : true, b = null != u && u.status !== A.O0b.ACCOUNT_HOLD && u.hasAnyPremiumNitro, x = (0, m.Z)().isFractionalPremiumActive && !b;
     return (0, i.jsxs)("div", {
       className: s()(R.container, r),
       "data-testid": "subscriber-nitro-home-hero-header",
@@ -83,31 +83,31 @@ let w = e => {
     let {
       headingText: e,
       headingTop: t
-    } = B();
+    } = M();
     return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
       children: [(0, Chunk255367.jsx)("img", {
         src: Chunk578478,
         alt: "",
-        className: Chunk525433.headerArtV2
+        className: Chunk644219.headerArtV2
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk525433.containerV2,
+        className: Chunk644219.containerV2,
         "data-testid": "subscriber-nitro-home-hero-header",
         children: (0, Chunk255367.jsxs)("div", {
-          className: Chunk525433.contentV2,
+          className: Chunk644219.contentV2,
           children: [exports, (0, Chunk255367.jsx)(Chunk481060.X6q, {
             variant: "display-lg",
             color: "always-white",
-            className: Chunk525433.header,
+            className: Chunk644219.header,
             children: module
           }), (0, Chunk255367.jsx)("div", {
-            className: Chunk525433.premiumSubscribeButton,
+            className: Chunk644219.premiumSubscribeButton,
             children: (0, Chunk255367.jsx)(Chunk736519.Z, {
               look: Chunk755721.iL.FILLED,
               color: Chunk755721.Tt.BRAND,
               textOptions: {
                 textOverride: Chunk388032.intl.string(Chunk388032.t["3KomGR"])
               },
-              className: Chunk525433.button
+              className: Chunk644219.button
             })
           }), (0, Chunk255367.jsx)(Chunk386733.Z, {})]
         })
@@ -120,7 +120,7 @@ let w = e => {
     } = e, {
       headingText: n,
       headingTop: r
-    } = B();
+    } = M();
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)("img", {
         src: Z,
@@ -153,7 +153,7 @@ let w = e => {
       })]
     })
   },
-  [M, B] = (0, Chunk975104.Z)(),
+  [B, M] = (0, Chunk975104.Z)(),
   U = e => {
     let {
       className: t,
@@ -242,7 +242,7 @@ let w = e => {
     }
     return (0, i.jsx)(d.Gt, {
       value: r,
-      children: (0, i.jsx)(M.Provider, {
+      children: (0, i.jsx)(B.Provider, {
         value: {
           headingText: C,
           headingTop: N

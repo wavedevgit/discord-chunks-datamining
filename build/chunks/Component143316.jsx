@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 143316, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -11,25 +11,25 @@ var Chunk255367 = require("./255367.js"),
   Chunk288552 = require("./288552.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk808934 = require("./808934.js");
+  Chunk407067 = require("./407067.js");
 
-function h(e) {
+function p(e) {
   let {
     type: t,
     onClick: n
-  } = e, [l, h] = i.useState(false), f = () => {
-    n(), s.default.track(c.rMx.INBOX_CHANNEL_ACKED, {
+  } = e, [l, p] = i.useState(false), h = () => {
+    n(), a.default.track(c.rMx.INBOX_CHANNEL_ACKED, {
       marked_all_channels_as_read: true,
       num_unread_channels_remaining: 0
     })
   }, g = e => {
-    e.shiftKey ? f() : h(true)
+    e.shiftKey ? h() : p(true)
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [l ? (0, r.jsx)(p, {
-      confirm: f,
-      cancel: () => h(false)
-    }) : null, "bottom-floating" === t ? (0, r.jsx)(a.a, {
+    children: [l ? (0, r.jsx)(f, {
+      confirm: h,
+      cancel: () => p(false)
+    }) : null, "bottom-floating" === t ? (0, r.jsx)(s.a, {
       text: u.intl.string(u.t["8k+6QU"]),
       icon: o.W6s,
       onClick: g
@@ -46,7 +46,7 @@ function h(e) {
   })
 }
 
-function p(e) {
+function f(e) {
   let {
     cancel: t,
     confirm: n

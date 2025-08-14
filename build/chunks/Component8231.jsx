@@ -1,7 +1,7 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 8231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => B
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -22,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk694338 = require("./694338.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk220965 = require("./220965.js"),
+  Chunk893296 = require("./893296.js"),
   Chunk102655 = require("./102655.js"),
   Chunk768236 = require("./768236.js"),
   Chunk314907 = require("./314907.js"),
@@ -60,17 +60,17 @@ function N(e, t) {
   }), e
 }
 let y = () => (0, Chunk255367.jsx)("div", {
-    className: Chunk220965.comparisonTablePill,
+    className: Chunk893296.comparisonTablePill,
     children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
-      className: Chunk220965.mostPopularText,
+      className: Chunk893296.mostPopularText,
       variant: "text-xs/bold",
       children: Chunk388032.intl.string(Chunk388032.t.TR2B4e)
     })
   }),
   A = () => (0, Chunk255367.jsx)("div", {
-    className: Chunk220965.comparisonTablePill,
+    className: Chunk893296.comparisonTablePill,
     children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
-      className: Chunk220965.mostPopularText,
+      className: Chunk893296.mostPopularText,
       variant: "heading-deprecated-12/extrabold",
       children: Chunk388032.intl.string(Chunk388032.t.IBYG5e)
     })
@@ -186,24 +186,24 @@ let y = () => (0, Chunk255367.jsx)("div", {
   },
   k = () => (0, Chunk255367.jsx)("thead", {
     children: (0, Chunk255367.jsxs)("tr", {
-      className: a()(Chunk220965.headerRow, Chunk220965.topBorderRadius),
+      className: a()(Chunk893296.headerRow, Chunk893296.topBorderRadius),
       children: [(0, Chunk255367.jsx)("th", {
         scope: "col",
-        className: Chunk220965.headerLabelCell,
+        className: Chunk893296.headerLabelCell,
         children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
-          className: Chunk220965.__invalid_textColor,
+          className: Chunk893296.__invalid_textColor,
           variant: "heading-xl/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.XXENra)
         })
       }), (0, Chunk255367.jsx)("th", {
         scope: "col",
-        className: Chunk220965.headerCell,
+        className: Chunk893296.headerCell,
         children: (0, Chunk255367.jsx)(w, {
           premiumType: Chunk474936.p9.TIER_0
         })
       }), (0, Chunk255367.jsx)("th", {
         scope: "col",
-        className: a()(Chunk220965.headerCell, Chunk220965.topBorderRadius),
+        className: a()(Chunk893296.headerCell, Chunk893296.topBorderRadius),
         children: (0, Chunk255367.jsx)(w, {
           premiumType: Chunk474936.p9.TIER_2
         })
@@ -239,7 +239,7 @@ let y = () => (0, Chunk255367.jsx)("div", {
       })]
     })
   },
-  M = e => {
+  B = e => {
     var t;
     let n, {
         className: s,
@@ -258,8 +258,8 @@ let y = () => (0, Chunk255367.jsx)("div", {
       R = null != P && (0, f.Wp)(P, j.Si.TIER_2),
       D = (0, x.A)(j.Xh.PREMIUM_MONTH_TIER_2),
       w = "".concat(D, "/").concat((0, h.eP)(j.rV.MONTH)),
-      M = (0, h.CY)(j.Xh.PREMIUM_MONTH_TIER_0),
-      B = (0, h.CY)(j.Xh.PREMIUM_MONTH_TIER_2),
+      B = (0, h.CY)(j.Xh.PREMIUM_MONTH_TIER_0),
+      M = (0, h.CY)(j.Xh.PREMIUM_MONTH_TIER_2),
       U = (0, _.e)();
     if (!O || !v) return null;
     n = o ? null : null != S ? (0, i.jsx)(A, {}) : (0, i.jsx)(y, {});
@@ -286,8 +286,8 @@ let y = () => (0, Chunk255367.jsx)("div", {
             className: C.table,
             children: [(0, i.jsx)(k, {}), (0, i.jsxs)("tbody", {
               children: [(0, i.jsx)(L, {
-                tier0MonthlyPrice: M,
-                tier2MonthlyPrice: B,
+                tier0MonthlyPrice: B,
+                tier2MonthlyPrice: M,
                 shouldUseDiscountPrice: R,
                 tier2DiscountedPriceString: w
               }), U.map(e => (0, r.createElement)(Z, N(I({}, e), {

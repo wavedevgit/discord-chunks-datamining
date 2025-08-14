@@ -1,7 +1,7 @@
 /** Chunk was on 32382 **/
 /** chunk id: 955280, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => f
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -17,60 +17,36 @@ var Chunk255367 = require("./255367.js"),
   Chunk501787 = require("./501787.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let f = () => [{
-    value: Chunk981631.ipw.LARGE,
-    name: Chunk388032.intl.string(Chunk388032.t.YcOxtr)
-  }, {
-    value: Chunk981631.ipw.SMALL,
-    name: Chunk388032.intl.string(Chunk388032.t.BKIKq6)
-  }],
-  b = () => [{
-    value: Chunk981631.wC$.ALWAYS,
-    name: Chunk388032.intl.string(Chunk388032.t.nBmDra)
-  }, {
-    value: Chunk981631.wC$.ONLY_WHILE_SPEAKING,
-    name: Chunk388032.intl.string(Chunk388032.t["2OvIZW"])
-  }, {
-    value: Chunk981631.wC$.NEVER,
-    name: Chunk388032.intl.string(Chunk388032.t.ekjlPD)
-  }],
-  O = () => [{
-    value: Chunk981631.OYC.ALWAYS,
-    name: Chunk388032.intl.string(Chunk388032.t.nBmDra)
-  }, {
-    value: Chunk981631.OYC.ONLY_WHILE_SPEAKING,
-    name: Chunk388032.intl.string(Chunk388032.t["2OvIZW"])
-  }];
 
-function j(e) {
+function f(e) {
   var t, a;
   let {
-    onSelect: j,
-    onClose: w
+    onSelect: f,
+    onClose: b
   } = e, {
-    avatarSizeMode: S,
-    displayNameMode: h,
-    displayUserMode: k
+    avatarSizeMode: O,
+    displayNameMode: j,
+    displayUserMode: w
   } = (0, r.cj)([d.default], () => ({
     avatarSizeMode: d.default.getAvatarSizeMode(),
     displayNameMode: d.default.getDisplayNameMode(),
     displayUserMode: d.default.getDisplayUserMode()
-  })), x = l.useRef(w);
+  })), S = l.useRef(b);
   l.useEffect(() => {
-    x.current = w
-  }), l.useEffect(() => () => x.current(), []);
-  let P = (0, r.e7)([p.ZP, u.Z], () => {
+    S.current = b
+  }), l.useEffect(() => () => S.current(), []);
+  let h = (0, r.e7)([p.ZP, u.Z], () => {
       let e = p.ZP.getWidgetByType(m.Odu.VOICE_V3);
       if (null == e) return null;
       let t = u.Z.getWidget(e.id);
       return null != t && (0, v.Aw)(t) ? t : null
     }),
-    M = null != (a = null == P || null == (t = P.meta) ? true : t.voiceStatesMaxShown) ? a : g.At;
+    k = null != (a = null == h || null == (t = h.meta) ? true : t.voiceStatesMaxShown) ? a : g.At;
 
-  function A(e) {
-    null != P && (e < 1 ? (0, s.zG)(P.id, {
+  function x(e) {
+    null != h && (e < 1 ? (0, s.zG)(h.id, {
       voiceStatesMaxShown: g.Og
-    }) : (0, s.zG)(P.id, {
+    }) : (0, s.zG)(h.id, {
       voiceStatesMaxShown: Math.floor(e)
     }))
   }
@@ -78,30 +54,51 @@ function j(e) {
     navId: "overlay-voice-widget-context-menu",
     onClose: o.Zy,
     "aria-label": y.intl.string(y.t.tPfVWl),
-    onSelect: j,
+    onSelect: f,
     children: [(0, n.jsx)(i.kSQ, {
       label: y.intl.string(y.t.dnvZSk),
-      children: f().map(e => (0, n.jsx)(i.k5B, {
+      children: [{
+        value: m.ipw.LARGE,
+        name: y.intl.string(y.t.YcOxtr)
+      }, {
+        value: m.ipw.SMALL,
+        name: y.intl.string(y.t.BKIKq6)
+      }].map(e => (0, n.jsx)(i.k5B, {
         label: e.name,
-        checked: S === e.value,
+        checked: O === e.value,
         id: "avatar-size-mode-".concat(e.value),
         group: "avatar-size-mode",
         action: () => c.Z.setAvatarSizeMode(e.value)
       }, e.value))
     }), (0, n.jsx)(i.kSQ, {
       label: y.intl.string(y.t.J0dpcH),
-      children: b().map(e => (0, n.jsx)(i.k5B, {
+      children: [{
+        value: m.wC$.ALWAYS,
+        name: y.intl.string(y.t.nBmDra)
+      }, {
+        value: m.wC$.ONLY_WHILE_SPEAKING,
+        name: y.intl.string(y.t["2OvIZW"])
+      }, {
+        value: m.wC$.NEVER,
+        name: y.intl.string(y.t.ekjlPD)
+      }].map(e => (0, n.jsx)(i.k5B, {
         label: e.name,
-        checked: h === e.value,
+        checked: j === e.value,
         id: "display-name-mode-".concat(e.value),
         group: "display-name-mode",
         action: () => c.Z.setDisplayNameMode(e.value)
       }, e.value))
     }), (0, n.jsx)(i.kSQ, {
       label: y.intl.string(y.t.swsWWF),
-      children: O().map(e => (0, n.jsx)(i.k5B, {
+      children: [{
+        value: m.OYC.ALWAYS,
+        name: y.intl.string(y.t.nBmDra)
+      }, {
+        value: m.OYC.ONLY_WHILE_SPEAKING,
+        name: y.intl.string(y.t["2OvIZW"])
+      }].map(e => (0, n.jsx)(i.k5B, {
         label: e.name,
-        checked: k === e.value,
+        checked: w === e.value,
         id: "display-user-mode-".concat(e.value),
         group: "display-user-mode",
         action: () => c.Z.setDisplayUserMode(e.value)
@@ -131,10 +128,10 @@ function j(e) {
             return e
           }({}, e), l = l = {
             ref: t,
-            value: M,
+            value: k,
             minValue: 0,
             maxValue: g.yC,
-            onChange: A,
+            onChange: x,
             renderValue: e => e < 1 ? y.intl.string(y.t.nrUzFB) : "".concat(Math.floor(e)),
             "aria-label": y.intl.string(y.t["X/Uyzc"])
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {

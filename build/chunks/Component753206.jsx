@@ -1,4 +1,4 @@
-/** Chunk was on 70119 **/
+/** Chunk was on 99956 **/
 /** chunk id: 753206, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -6,38 +6,38 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk628238 = require("./628238.js"),
   Chunk750030 = require("./750030.js"),
   Chunk492593 = require("./492593.jsx"),
   Chunk25015 = require("./25015.jsx"),
   Chunk963550 = require("./963550.jsx"),
   Chunk845080 = require("./845080.jsx"),
-  Chunk433869 = require("./433869.js");
+  Chunk360514 = require("./360514.js");
 let p = Chunk73800.memo(function(e) {
   var t;
   let {
     message: n,
-    channel: a,
+    channel: l,
     compact: p,
     className: v,
-    isGroupStart: h,
-    hideSimpleEmbedContent: P = true,
-    disableInteraction: b,
-    previewGuildId: g,
-    preview: x,
-    author: j
-  } = e, O = null != g ? g : (0, s.k)(n), _ = (0, o.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
-    content: w
-  } = (0, u.Z)(n, {
-    hideSimpleEmbedContent: P,
+    isGroupStart: g,
+    hideSimpleEmbedContent: b = true,
+    disableInteraction: E,
+    previewGuildId: O,
+    preview: y,
+    author: S
+  } = e, j = null != O ? O : (0, a.k)(n), _ = (0, u.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
+    content: h
+  } = (0, c.Z)(n, {
+    hideSimpleEmbedContent: b,
     allowList: _,
     allowHeading: _,
     allowLinks: true,
     previewLinkTarget: true
-  }), C = i.useMemo(() => {
+  }), P = i.useMemo(() => {
     var t, n;
-    return (0, m.Z)((t = function(e) {
+    return (0, f.Z)((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -55,8 +55,8 @@ let p = Chunk73800.memo(function(e) {
       }
       return e
     }({}, e), n = n = {
-      channel: a,
-      guildId: O
+      channel: l,
+      guildId: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -67,18 +67,18 @@ let p = Chunk73800.memo(function(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
-  }, [e, a, O]);
-  return (0, r.jsx)(c.Z, {
+  }, [e, l, j]);
+  return (0, r.jsx)(s.Z, {
     compact: p,
-    className: l()(v, {
-      [f.message]: true,
-      [f.cozyMessage]: !p,
-      [f.groupStart]: h
+    className: o()(v, {
+      [m.message]: true,
+      [m.cozyMessage]: !p,
+      [m.groupStart]: g
     }),
-    childrenHeader: C,
-    childrenMessageContent: (0, d.Z)(e, w),
-    disableInteraction: b,
-    author: j,
-    preview: x
+    childrenHeader: P,
+    childrenMessageContent: (0, d.Z)(e, h),
+    disableInteraction: E,
+    author: S,
+    preview: y
   })
 })

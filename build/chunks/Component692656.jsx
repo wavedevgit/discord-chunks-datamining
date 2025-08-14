@@ -51,7 +51,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk689079 = require("./689079.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk997438 = require("./997438.js");
+  Chunk729755 = require("./729755.js");
 let Q = [],
   J = 4,
   $ = 4,
@@ -78,7 +78,7 @@ function eo(e) {
     setSearchQuery: a,
     setScroller: s,
     isScrollCloseToBottom: l
-  } = e, c = (0, _.e7)([m.Z], () => m.Z.getIsEnabled(), []), u = n === L._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, k.Yn)(n), f = !(0, k.Yn)(n), h = n === L._b.TEXT, [E, b] = ep(true), [y, O] = ep(u), [v, I] = ep(d), [T, S] = ep(f), A = E && y && v && T, N = (d || u) && !A, C = f && c;
+  } = e, c = (0, _.e7)([m.Z], () => m.Z.getIsEnabled(), []), u = n === L._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, j.Yn)(n), f = !(0, j.Yn)(n), h = n === L._b.TEXT, [E, b] = ep(true), [y, O] = ep(u), [v, I] = ep(d), [T, S] = ep(f), A = E && y && v && T, N = (d || u) && !A, C = f && c;
   i.useEffect(() => {
     var e;
     let n = "channel" === t.type ? null == (e = t.channel) ? true : e.guild_id : true;
@@ -131,9 +131,9 @@ function eo(e) {
 
 function ea() {
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk997438.developerShelfControlsContainer,
+    className: Chunk729755.developerShelfControlsContainer,
     children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
-      className: Chunk997438.developerShelfControlsLabel,
+      className: Chunk729755.developerShelfControlsLabel,
       variant: "text-sm/normal",
       children: Chunk388032.intl.string(Chunk388032.t.tZ3FNj)
     }), (0, Chunk255367.jsx)(Chunk427996.W, {
@@ -304,7 +304,7 @@ function eu(e) {
       numItems: a.length,
       numVisibleItems: a.length
     }),
-    c = (0, j.s)(),
+    c = (0, k.s)(),
     u = 0 === a.length;
   return (i.useEffect(() => {
     o(u)
@@ -598,7 +598,7 @@ function em(e) {
   })), c = n === L._b.VOICE;
   return {
     fetchState: s,
-    recommendationsSections: i.useMemo(() => c ? (0, k.pF)(l) : l, [l, c]),
+    recommendationsSections: i.useMemo(() => c ? (0, j.pF)(l) : l, [l, c]),
     isInstallOnDemand: a
   }
 }

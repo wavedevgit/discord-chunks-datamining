@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 553984, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  p: () => m
+  p: () => g
 });
 var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
@@ -14,26 +14,25 @@ var Chunk255367 = require("./255367.js"),
   Chunk334426 = require("./334426.js"),
   Chunk982183 = require("./982183.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk603706 = require("./603706.js");
-let g = e => e === h.V5.ALL ? p.intl.string(p.t["2pAkDA"]) : p.intl.string(p.t.HcoRu7);
+  Chunk567843 = require("./567843.js");
 
-function m(e) {
+function g(e) {
   let {
     className: t
-  } = e, n = (0, a.fJ)(), i = (0, u.ux)(), {
-    selectedFilter: p,
+  } = e, n = (0, s.fJ)(), i = (0, u.ux)(), {
+    selectedFilter: g,
     setSelectedFilter: m
   } = (0, c.Z)(), b = (0, d.d)(e => e.setInboxReadState);
   if (!i) return null;
   let O = () => {
-      let e = p === h.V5.ALL ? h.V5.BOOKMARKS : h.V5.ALL;
-      m(e), e === h.V5.ALL && b(false), (0, a.RZ)({
+      let e = g === p.V5.ALL ? p.V5.BOOKMARKS : p.V5.ALL;
+      m(e), e === p.V5.ALL && b(false), (0, s.RZ)({
         section: e,
         enabled: true,
         viewId: n
       })
     },
-    _ = g(p);
+    _ = g === p.V5.ALL ? f.intl.string(f.t["2pAkDA"]) : f.intl.string(f.t.HcoRu7);
   return (0, r.jsx)(o.ua7, {
     position: "bottom",
     text: _,
@@ -57,17 +56,17 @@ function m(e) {
         }
         return e
       }({}, e), i = i = {
-        className: l()(t, f.headerButton, {
-          [f.enabled]: p === h.V5.BOOKMARKS
+        className: l()(t, h.headerButton, {
+          [h.enabled]: g === p.V5.BOOKMARKS
         }),
         "aria-label": _,
         onClick: O,
-        children: p === h.V5.BOOKMARKS ? (0, r.jsx)(o.plf, {
+        children: g === p.V5.BOOKMARKS ? (0, r.jsx)(o.plf, {
           size: "xs",
-          color: s.Z.ICON_DEFAULT
+          color: a.Z.ICON_DEFAULT
         }) : (0, r.jsx)(o.gt9, {
           size: "xs",
-          color: s.Z.ICON_TERTIARY
+          color: a.Z.ICON_TERTIARY
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);

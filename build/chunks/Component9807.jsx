@@ -1,4 +1,4 @@
-/** Chunk was on 787 **/
+/** Chunk was on 32561 **/
 /** chunk id: 9807, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -18,7 +18,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk843445 = require("./843445.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk690123 = require("./690123.js");
+  Chunk709532 = require("./709532.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -182,7 +182,7 @@ class N extends(r = Chunk73800.PureComponent) {
       delay: exports,
       initialPaused: r || Chunk120356,
       renderItem: this.renderItem,
-      className: s()(Chunk690123.smallCarousel, require),
+      className: s()(Chunk709532.smallCarousel, require),
       themedPagination: Chunk73800,
       onIntentionalChange: this.handleIntentionalChange,
       onChangeItem: this.handleChangeItem

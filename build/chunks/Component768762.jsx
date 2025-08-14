@@ -1,4 +1,4 @@
-/** Chunk was on 72762 **/
+/** Chunk was on 77512 **/
 /** chunk id: 768762, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -6,9 +6,9 @@ require.d(exports, {
 var r, i, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  c = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk571475 = require("./571475.js");
+  Chunk192754 = require("./192754.js");
 let d = {
     UP: "up",
     RIGHT: "right",
@@ -17,9 +17,9 @@ let d = {
   },
   f = {
     [d.UP]: "",
-    [d.RIGHT]: Chunk571475.right,
-    [d.DOWN]: Chunk571475.down,
-    [d.LEFT]: Chunk571475.left
+    [d.RIGHT]: Chunk192754.right,
+    [d.DOWN]: Chunk192754.down,
+    [d.LEFT]: Chunk192754.left
   };
 class p extends(i = Chunk73800.PureComponent) {
   render() {
@@ -30,7 +30,7 @@ class p extends(i = Chunk73800.PureComponent) {
     return (0, Chunk255367.jsx)(Chunk481060.wj7, {
       size: "md",
       color: "currentColor",
-      className: a()(exports, {
+      className: c()(exports, {
         [f[module]]: true
       })
     })

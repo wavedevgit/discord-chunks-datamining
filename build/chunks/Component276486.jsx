@@ -1,4 +1,4 @@
-/** Chunk was on 70971 **/
+/** Chunk was on 36605 **/
 /** chunk id: 276486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   l: () => u,
@@ -11,11 +11,11 @@ var Chunk481060 = require("./481060.js"),
   Chunk489813 = require("./489813.jsx"),
   Chunk815660 = require("./815660.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk863296 = require("./863296.js");
+  Chunk624463 = require("./624463.js");
 
 function u() {
   return (0, Chunk255367.jsx)(Chunk489813.PU, {
-    className: Chunk863296.editableRequirementContainer,
+    className: Chunk624463.editableRequirementContainer,
     icon: Chunk481060.AtH,
     text: Chunk388032.intl.string(Chunk388032.t.woMjLS),
     footnote: Chunk388032.intl.string(Chunk388032.t["jMh+TU"]),
@@ -50,7 +50,7 @@ function d(e) {
         (0, i.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("76540"), n.e("79861")]).then(n.bind(n, 607018));
+          } = await Promise.all([n.e("76540"), n.e("92304")]).then(n.bind(n, 607018));
           return t => (0, r.jsx)(e, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},

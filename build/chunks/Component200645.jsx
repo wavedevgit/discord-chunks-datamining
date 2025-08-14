@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 200645, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -11,7 +11,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk881488 = require("./881488.js");
+  Chunk197571 = require("./197571.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -41,23 +41,23 @@ class p extends Chunk73800.PureComponent {
       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
         children: Chunk388032.intl.string(Chunk388032.t["w/vU5u"])
       }), (0, Chunk255367.jsx)(Chunk481060.j7V, {
-        className: Chunk881488.marginBottom20,
+        className: Chunk197571.marginBottom20,
         value: module,
         note: Chunk388032.intl.string(Chunk388032.t["s/cQra"]),
         onChange: this.handleToggleOpenOnStartup,
         children: Chunk388032.intl.string(Chunk388032.t.WQm4p6)
       }), (0, Chunk358085.isWindows)() ? (0, Chunk255367.jsx)(Chunk481060.j7V, {
         disabled: !module,
-        className: a()(Chunk881488.marginTop8, Chunk881488.marginBottom20),
+        className: a()(Chunk197571.marginTop8, Chunk197571.marginBottom20),
         value: !!module && exports,
         note: Chunk388032.intl.string(Chunk388032.t.o2FSjI),
         onChange: this.handleToggleStartMinimized,
         children: Chunk388032.intl.string(Chunk388032.t.n7Yjen)
       }) : null, (0, Chunk255367.jsx)(Chunk481060.vwX, {
-        className: a()(Chunk881488.marginTop20, Chunk881488.marginBottom8),
+        className: a()(Chunk197571.marginTop20, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.h0hFx8)
       }), (0, Chunk255367.jsx)(Chunk481060.j7V, {
-        className: Chunk881488.marginBottom20,
+        className: Chunk197571.marginBottom20,
         value: require,
         note: Chunk388032.intl.string(Chunk388032.t["mVuX+v"]),
         onChange: this.handleToggleMinimizeToTray,

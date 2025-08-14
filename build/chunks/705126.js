@@ -1,0 +1,3 @@
+/** Chunk was on 67855 **/
+/** chunk id: 705126, original params: e (module,exports,require) **/
+module.exports = JSON.parse('{"o/An3t":[[1,"username"]," ba deg om \xe5 str\xf8mme ",[1,"applicationName"]],"DKHheX":"Be om \xe5 str\xf8mme","8qq+Hx":["Be om \xe5 str\xf8mme ",[1,"applicationName"]],"s7bMT0":[[1,"username"]," ber deg om \xe5 str\xf8mme ",[1,"applicationName"]],"7pndSk":["Du ba noen om \xe5 str\xf8mme ",[1,"applicationName"]],"P0wwmJ":"Str\xf8mmer allerede","u4QmWl":"Foresp\xf8rsel utl\xf8pt","qRXatr":"Ikke i talekanal","43zohI":"Kj\xf8rer ikke spill","8HU1Mz":"Foresp\xf8rsel avventer godkjenning","5+172d":"Str\xf8m","jTbTAA":[[8,"$b",[[1,"username"]]]," vil se deg spille ",[8,"$b",[[1,"game"]]],". Sende live?"]}')

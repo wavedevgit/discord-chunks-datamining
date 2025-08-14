@@ -1,4 +1,4 @@
-/** Chunk was on 873 **/
+/** Chunk was on 1355 **/
 /** chunk id: 524329, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Es: () => E,
@@ -6,12 +6,12 @@ require.d(exports, {
   VP: () => c,
   Xb: () => o,
   sm: () => u,
-  y0: () => i
+  y0: () => s
 }), require("./953529.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
-let i = function(e) {
+let s = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     l.Z.dispatch({
       type: "WELCOME_SCREEN_VIEW",
@@ -25,7 +25,7 @@ let i = function(e) {
     });
     try {
       let t = await r.tn.get({
-        url: s.ANM.GUILD_WELCOME_SCREEN(e),
+        url: i.ANM.GUILD_WELCOME_SCREEN(e),
         oldFormErrors: true,
         rejectWithError: true
       });
@@ -58,7 +58,7 @@ let i = function(e) {
     });
     try {
       let n = await r.tn.patch({
-        url: s.ANM.GUILD_WELCOME_SCREEN(e),
+        url: i.ANM.GUILD_WELCOME_SCREEN(e),
         body: {
           description: t.description,
           welcome_channels: t.channels,

@@ -1,4 +1,4 @@
-/** Chunk was on 29458 **/
+/** Chunk was on 76708 **/
 /** chunk id: 389190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk892001 = require("./892001.js"),
   Chunk252417 = require("./252417.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk889080 = require("./889080.js");
+  Chunk878449 = require("./878449.js");
 
 function g(e) {
   let {
@@ -30,43 +30,9 @@ function g(e) {
     context: x,
     trackUserProfileAction: O
   } = (0, c.KZ)(), h = (0, o.Z)();
-  l.useEffect(() => {
+  return l.useEffect(() => {
     (0, d.Z)(t.id, h)
-  }, [t.id, h]);
-  let v = e => {
-    var t, n;
-    (0, u.openUserProfileModal)((t = function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
-            enumerable: true,
-            configurable: true,
-            writable: true
-          }) : e[t] = r
-        })
-      }
-      return e
-    }({}, x), n = n = {
-      userId: e,
-      sourceAnalyticsLocations: y
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-      var n = Object.keys(e);
-      if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
-      }
-      return n
-    })(Object(n)).forEach(function(e) {
-      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t))
-  };
-  return (0, r.jsx)(i.zJl, {
+  }, [t.id, h]), (0, r.jsx)(i.zJl, {
     className: m.listScroller,
     fade: true,
     children: null == j ? (0, r.jsx)("div", {
@@ -92,9 +58,39 @@ function g(e) {
         guildId: n,
         channelId: g,
         onSelect: () => {
+          var e, t, n;
           null == b || b(), O({
             action: "PRESS_MUTUAL_FRIEND"
-          }), v(l.id)
+          }), e = l.id, (0, u.openUserProfileModal)((t = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
+                }) : e[t] = r
+              })
+            }
+            return e
+          }({}, x), n = n = {
+            userId: e,
+            sourceAnalyticsLocations: y
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
+            }
+            return n
+          })(Object(n)).forEach(function(e) {
+            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+          }), t))
         }
       }, t)
     })

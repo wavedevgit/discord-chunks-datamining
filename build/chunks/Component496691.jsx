@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk356998 = require("./356998.js");
+  Chunk430355 = require("./430355.js");
 class p extends Chunk73800.Component {
   shouldScrollToTop(e) {
     let {
@@ -55,15 +55,17 @@ class p extends Chunk73800.Component {
     })
   }
   constructor(...e) {
-    var t, a;
-    super(...e), t = "handleHeaderLocaleChange", a = e => {
-      e !== this.props.locale && c.ZP.overrideLocale(e)
-    }, t in this ? Object.defineProperty(this, t, {
-      value: a,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[t] = a
+    super(...e),
+      function(e, t, a) {
+        t in e ? Object.defineProperty(e, t, {
+          value: a,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = a
+      }(this, "handleHeaderLocaleChange", e => {
+        e !== this.props.locale && c.ZP.overrideLocale(e)
+      })
   }
 }
 let h = Chunk442837.ZP.connectStores([Chunk706454.default], () => ({

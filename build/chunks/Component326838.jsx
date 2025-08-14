@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 326838, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -17,18 +17,18 @@ var Chunk255367 = require("./255367.js"),
   Chunk594174 = require("./594174.js"),
   Chunk55935 = require("./55935.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk750019 = require("./750019.js");
+  Chunk313227 = require("./313227.js");
 
 function O(e) {
   let {
     invite: t,
     expired: n
-  } = e, l = (0, s.e7)([f.default], () => {
+  } = e, l = (0, a.e7)([h.default], () => {
     var e, n;
-    return null != (n = null == (e = f.default.getUser(t.inviter_id)) ? true : e.username) ? n : ""
-  }), a = (0, g.vc)(o()(t.created_at), "LT"), d = i.useRef(null), h = (0, u.Z)(d);
+    return null != (n = null == (e = h.default.getUser(t.inviter_id)) ? true : e.username) ? n : ""
+  }), s = (0, g.vc)(o()(t.created_at), "LT"), d = i.useRef(null), p = (0, u.Z)(d);
   return i.useEffect(() => {
-    n || (0, p.Br)(t)
+    n || (0, f.Br)(t)
   }, [t, n]), (0, r.jsxs)("div", {
     className: b.container,
     ref: d,
@@ -50,7 +50,7 @@ function O(e) {
         children: [(0, r.jsx)(_, {
           expired: n,
           invite: t,
-          isHoveringInvite: h
+          isHoveringInvite: p
         }), (0, r.jsx)(c.M0o, {
           className: b.deleteButton,
           tooltip: m.intl.string(m.t.oyYWHB),
@@ -59,7 +59,7 @@ function O(e) {
             size: "xs"
           }),
           onClick: () => {
-            (0, p.UF)(t)
+            (0, f.UF)(t)
           }
         })]
       })]
@@ -71,7 +71,7 @@ function O(e) {
         variant: "text-xs/medium",
         className: b.subtitle,
         color: "text-muted",
-        children: [t.application_name, " \xb7 ", a]
+        children: [t.application_name, " \xb7 ", s]
       }), n && (0, r.jsx)("div", {
         className: b.metaContainer,
         children: (0, r.jsx)(c.Text, {
@@ -90,41 +90,41 @@ function _(e) {
     expired: t,
     invite: n,
     isHoveringInvite: l
-  } = e, o = (0, s.e7)([h.Z], () => h.Z.isInviteGameInstalled(n)), u = (0, s.e7)([h.Z], () => h.Z.isInviteJoinable(n)), [f, g] = i.useState(false), O = i.useCallback(async () => {
+  } = e, o = (0, a.e7)([p.Z], () => p.Z.isInviteGameInstalled(n)), u = (0, a.e7)([p.Z], () => p.Z.isInviteJoinable(n)), [h, g] = i.useState(false), O = i.useCallback(async () => {
     g(true);
     try {
-      await (0, p.MH)(n)
+      await (0, f.MH)(n)
     } catch (e) {}
     g(false)
   }, [n]), _ = i.useCallback(async () => {
     g(true);
     try {
-      await (0, p.Ol)(n)
+      await (0, f.Ol)(n)
     } catch (e) {}
     g(false)
   }, [n]);
   if (t)
-    if (o && l) return (0, r.jsx)(a.zx, {
+    if (o && l) return (0, r.jsx)(s.zx, {
       className: b.primaryButton,
-      color: a.Tt.TRANSPARENT,
-      disabled: f,
-      size: a.Ph.SMALL,
+      color: s.Tt.TRANSPARENT,
+      disabled: h,
+      size: s.Ph.SMALL,
       onClick: O,
       children: m.intl.string(m.t["s+J8Dg"])
     });
     else return null;
-  return o && u ? (0, r.jsx)(a.zx, {
+  return o && u ? (0, r.jsx)(s.zx, {
     className: b.primaryButton,
-    color: a.Tt.GREEN,
-    disabled: f,
-    size: a.Ph.SMALL,
+    color: s.Tt.GREEN,
+    disabled: h,
+    size: s.Ph.SMALL,
     onClick: _,
     children: m.intl.string(m.t["/loN9/"])
-  }) : null != n.fallback_url ? (0, r.jsx)(a.zx, {
+  }) : null != n.fallback_url ? (0, r.jsx)(s.zx, {
     className: b.primaryButton,
-    disabled: f,
-    size: a.Ph.SMALL,
-    color: a.Tt.TRANSPARENT,
+    disabled: h,
+    size: s.Ph.SMALL,
+    color: s.Tt.TRANSPARENT,
     onClick: () => (0, d.Z)(n.fallback_url),
     children: m.intl.string(m.t["27y8KC"])
   }) : (0, r.jsx)(c.ua7, {
@@ -133,7 +133,7 @@ function _(e) {
     }),
     children: e => {
       var t, i;
-      return (0, r.jsx)(a.zx, (t = function(e) {
+      return (0, r.jsx)(s.zx, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -153,8 +153,8 @@ function _(e) {
       }({}, e), i = i = {
         className: b.primaryButton,
         disabled: true,
-        size: a.Ph.SMALL,
-        color: a.Tt.TRANSPARENT,
+        size: s.Ph.SMALL,
+        color: s.Tt.TRANSPARENT,
         onClick: () => (0, d.Z)(n.fallback_url),
         children: (0, r.jsxs)("div", {
           className: b.launchToJoinContainer,

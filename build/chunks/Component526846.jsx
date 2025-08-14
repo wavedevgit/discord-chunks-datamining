@@ -35,10 +35,10 @@ var Chunk255367 = require("./255367.js"),
   Chunk558317 = require("./558317.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk560915 = require("./560915.js");
+  Chunk201512 = require("./201512.js");
 let M = 5,
-  j = 12,
-  k = 1e3,
+  k = 12,
+  j = 1e3,
   U = Chunk973693.Y.APP_LAUNCHER_IN_VOICE_BANNER,
   G = 584,
   B = "vc-activities-".concat((0, Chunk772848.Z)());
@@ -146,7 +146,7 @@ let V = Chunk73800.forwardRef(function(e, t) {
     M = I === D.IlC.POPOUT,
     U = H(n.getGuildId());
   i.useEffect(() => {
-    let e = setTimeout(() => C.ux(), k);
+    let e = setTimeout(() => C.ux(), j);
     return () => clearTimeout(e)
   }, []);
   let {
@@ -211,8 +211,8 @@ let V = Chunk73800.forwardRef(function(e, t) {
                 children: L.intl.string(L.t["K8+z4e"])
               }), (0, r.jsx)(f.Fbu, {
                 size: "custom",
-                width: j,
-                height: j,
+                width: k,
+                height: k,
                 color: "var(--interactive-active)",
                 className: x.titleRightIcon
               })]

@@ -42,7 +42,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk46140 = require("./46140.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk988598 = require("./988598.js");
+  Chunk336606 = require("./336606.js");
 
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -77,7 +77,7 @@ function F(e) {
     enableGoLiveCaptureCard: l
   } = O.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = S.Z.supports(D.AN.GO_LIVE_HARDWARE), [a, m] = i.useState(null), [C, y] = i.useState(null), [Z, w] = i.useState(null), T = null != Z && Z.length > 0, [E, R] = i.useState(c.vA.WINDOW), [M, G] = i.useState(false), F = i.useRef(null), H = i.useRef(new u.Xp), z = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), V = function(e, t, n) {
+  }), o = b.Z.supports(D.AN.GO_LIVE_HARDWARE), [a, m] = i.useState(null), [C, y] = i.useState(null), [Z, w] = i.useState(null), T = null != Z && Z.length > 0, [E, R] = i.useState(c.vA.WINDOW), [M, G] = i.useState(false), F = i.useRef(null), H = i.useRef(new u.Xp), z = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), V = function(e, t, n) {
     let r = (0, j.Zy)({
       location: L.dr.STREAM_SOURCE_SELECT
     });
@@ -203,7 +203,7 @@ function F(e) {
         let e = F.current;
         null != e && G(!e.isScrolledToTop())
       },
-      children: [E === c.vA.WINDOW && null != V && (0, r.jsx)(b.Z, {
+      children: [E === c.vA.WINDOW && null != V && (0, r.jsx)(S.Z, {
         quest: V.quest
       }), (0, r.jsx)(p.Z, {
         layout: p.Z.Layout.WRAP,
@@ -284,7 +284,7 @@ function V(e) {
   i.useEffect(() => {
     let e = d.current,
       t = () => {
-        let e = Object.entries(S.Z.getVideoDevices()).filter(e => {
+        let e = Object.entries(b.Z.getVideoDevices()).filter(e => {
           let [t, n] = e;
           return !n.disabled
         });

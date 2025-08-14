@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 853714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -31,9 +31,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk603784 = require("./603784.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk259387 = require("./259387.js"),
-  Chunk131902 = require("./131902.js"),
-  Chunk210297 = require("./210297.js");
+  Chunk912864 = require("./912864.js"),
+  Chunk630016 = require("./630016.js"),
+  Chunk315091 = require("./315091.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -277,14 +277,14 @@ class U extends Chunk73800.PureComponent {
   renderHeader() {
     return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
       children: [(0, Chunk255367.jsxs)("div", {
-        className: Chunk259387.customHeader,
+        className: Chunk912864.customHeader,
         children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
           tag: Chunk481060.RB0.H1,
-          className: Chunk259387.formTitle,
+          className: Chunk912864.formTitle,
           children: Chunk388032.intl.string(Chunk388032.t.SPWLyc)
         }), this.renderHeaderDropdowns()]
       }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
-        className: Chunk259387.divider
+        className: Chunk912864.divider
       })]
     })
   }
@@ -314,7 +314,7 @@ class U extends Chunk73800.PureComponent {
         t = Chunk442837 ? Chunk388032.intl.string(Chunk388032.t.Ww5Tj4) : Chunk388032.intl.string(Chunk388032.t["RHhk+P"]);
       return (0, Chunk255367.jsxs)(Chunk481060.ubH, {
         theme: Chunk120356,
-        className: Chunk259387.empty,
+        className: Chunk912864.empty,
         children: [(0, Chunk255367.jsx)(Chunk481060.oxh, {
           darkSrc: require("./28269.js"),
           lightSrc: require("./357115.js"),
@@ -349,15 +349,15 @@ class U extends Chunk73800.PureComponent {
       isLoading: n
     } = this.props;
     return (0, Chunk255367.jsx)("div", {
-      className: Chunk131902.customColumn,
+      className: Chunk630016.customColumn,
       children: (0, Chunk255367.jsx)("div", {
-        className: Chunk131902.customContainer,
+        className: Chunk630016.customContainer,
         children: (0, Chunk255367.jsx)(Chunk481060.yWw, {
-          className: a()(Chunk131902.customScroller, Chunk259387.scroller),
+          className: a()(Chunk630016.customScroller, Chunk912864.scroller),
           onScroll: this.handleOnScroll,
           ref: this.handleSetScrollerRef,
           children: (0, Chunk255367.jsx)("div", {
-            className: Chunk259387.content,
+            className: Chunk912864.content,
             ref: this._contentRef,
             children: (0, Chunk255367.jsxs)(Chunk481060.JcV, {
               containerRef: this._contentRef,
@@ -455,11 +455,13 @@ class U extends Chunk73800.PureComponent {
           valueLabel: P.intl.string(P.t.an9Ry8),
           value: null
         },
-        m = [u, ...s].map(e => e instanceof b.Z ? {
-          label: e.username,
-          value: e.id,
-          user: e
-        } : e),
+        m = [u, ...s].map(e => e instanceof b.Z ? function(e) {
+          return {
+            label: e.username,
+            value: e.id,
+            user: e
+          }
+        }(e) : e),
         g = null != (t = m.find(e => {
           let {
             value: t

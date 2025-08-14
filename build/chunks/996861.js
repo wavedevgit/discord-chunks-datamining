@@ -8,12 +8,12 @@ require.d(exports, {
   HH: () => x,
   Hd: () => R,
   Xl: () => D,
-  dF: () => k,
+  dF: () => j,
   eM: () => U,
   fB: () => N,
   gK: () => M,
   mG: () => L,
-  qe: () => j,
+  qe: () => k,
   rY: () => w,
   ts: () => G,
   zW: () => S
@@ -118,12 +118,12 @@ function M(e, t) {
   (0, d.R6)(e, t, "Message")
 }
 
-function j(e, t) {
+function k(e, t) {
   let n = _.Z.getChannel(E.default.castMessageIdAsChannelId(t.id));
   null != n && (0, d.ok)(n)
 }
 
-function k(e, t) {
+function j(e, t) {
   (0, u.z)({
     channelId: e.id,
     messageId: t.id

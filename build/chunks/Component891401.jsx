@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk675478 = require("./675478.js"),
   Chunk944486 = require("./944486.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk963448 = require("./963448.js");
+  Chunk715639 = require("./715639.js");
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -57,7 +57,7 @@ function C(e, t) {
 
 function N() {
   return (0, Chunk255367.jsxs)(Chunk481060.Ttm, {
-    className: Chunk963448.container,
+    className: Chunk715639.container,
     children: [(0, Chunk255367.jsx)(O, {}), (0, Chunk255367.jsx)(T, {})]
   })
 }
@@ -97,19 +97,19 @@ function O() {
     A = null != (t = null == Chunk704215 ? true : Chunk704215.token_mix_amount) ? exports : 100;
   return (0, Chunk255367.jsxs)("div", {
     children: [(0, Chunk255367.jsx)(Chunk793030.X6, {
-      className: Chunk963448.header,
+      className: Chunk715639.header,
       variant: "heading-lg/semibold",
       children: "DM Wallpapers"
     }), null == Chunk704215 && (0, Chunk255367.jsx)("p", {
-      className: Chunk963448.explanation,
+      className: Chunk715639.explanation,
       children: "Open a DM with a wallpaper to customize."
     }), null != Chunk704215 && (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
       children: [(0, Chunk255367.jsx)(Chunk793030.X6, {
-        className: Chunk963448.subheader,
+        className: Chunk715639.subheader,
         variant: "heading-md/semibold",
         children: "ChatWallpaperMetadataRecord"
       }), (0, Chunk255367.jsx)("pre", {
-        className: Chunk963448.code,
+        className: Chunk715639.code,
         children: JSON.stringify(Chunk411149.Z.getWallpaperById(Chunk392711), null, 2)
       }), (0, Chunk255367.jsx)(Chunk481060.ua7, {
         text: "The opacity of the wallpaper.",
@@ -120,7 +120,7 @@ function O() {
           children: "Opacity"
         }))
       }), (0, Chunk255367.jsx)(Chunk481060.iRW, {
-        className: Chunk963448.slider,
+        className: Chunk715639.slider,
         initialValue: Z,
         defaultValue: 1,
         minValue: 0,
@@ -135,7 +135,7 @@ function O() {
           children: "Primary Color"
         }))
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk963448.colorInputContainer,
+        className: Chunk715639.colorInputContainer,
         children: [(0, Chunk255367.jsx)("input", {
           type: "color",
           value: Chunk704215.primary_color,
@@ -148,7 +148,7 @@ function O() {
             color: "currentColor"
           }),
           onClick: T,
-          className: Chunk963448.removeButton
+          className: Chunk715639.removeButton
         })]
       }), (0, Chunk255367.jsx)(Chunk481060.ua7, {
         text: "The second most prominent color in the wallpaper. This will be used to adjust the color tokens.",
@@ -159,7 +159,7 @@ function O() {
           children: "Secondary Color"
         }))
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk963448.colorInputContainer,
+        className: Chunk715639.colorInputContainer,
         children: [(0, Chunk255367.jsx)("input", {
           type: "color",
           value: Chunk704215.secondary_color,
@@ -172,7 +172,7 @@ function O() {
             color: "currentColor"
           }),
           onClick: w,
-          className: Chunk963448.removeButton
+          className: Chunk715639.removeButton
         })]
       }), (0, Chunk255367.jsx)(Chunk481060.ua7, {
         text: "Controls how much the primary/secondary colors are mixed into the tokens.",
@@ -183,7 +183,7 @@ function O() {
           children: "Token Mix Amount"
         }))
       }), (0, Chunk255367.jsx)(Chunk481060.iRW, {
-        className: Chunk963448.slider,
+        className: Chunk715639.slider,
         initialValue: A,
         defaultValue: 100,
         minValue: 0,
@@ -198,7 +198,7 @@ function O() {
           children: "Link Color"
         }))
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk963448.colorInputContainer,
+        className: Chunk715639.colorInputContainer,
         children: [(0, Chunk255367.jsx)("input", {
           type: "color",
           value: Chunk704215.link_color,
@@ -211,10 +211,10 @@ function O() {
             color: "currentColor"
           }),
           onClick: I,
-          className: Chunk963448.removeButton
+          className: Chunk715639.removeButton
         })]
       }), (0, Chunk255367.jsx)(Chunk755721.zx, {
-        className: Chunk963448.resetButton,
+        className: Chunk715639.resetButton,
         onClick: R,
         children: "Reset"
       })]
@@ -232,7 +232,7 @@ function T() {
     a = null != exports ? new Date(exports) : null;
   return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
     children: [(0, Chunk255367.jsx)(Chunk793030.X6, {
-      className: Chunk963448.header,
+      className: Chunk715639.header,
       variant: "heading-lg/semibold",
       children: "Tenure Badges"
     }), (0, Chunk255367.jsxs)("p", {
@@ -242,7 +242,7 @@ function T() {
         children: "Not Dismissed"
       })]
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk963448.tenureBadgeControls,
+      className: Chunk715639.tenureBadgeControls,
       children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Reset Level Up DC",

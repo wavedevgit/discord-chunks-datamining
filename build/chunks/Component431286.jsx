@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 431286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  t: () => x
+  t: () => S
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -25,18 +25,18 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk46140 = require("./46140.js");
-let S = "orb-announcement-modal-key";
+let x = "orb-announcement-modal-key";
 
-function x() {
+function S() {
   let {
     enabled: e
   } = (0, Chunk822857.hl)({
     location: "virtual_currency_announcement_modal"
   }), t = (0, Chunk442837.e7)([Chunk479766.Z], () => Chunk479766.Z.onboardingModalOpenedPrior), {
-    user: x
+    user: S
   } = (0, Chunk442837.cj)([Chunk594174.default], () => ({
     user: Chunk594174.default.getCurrentUser()
-  })), I = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()), P = (0, Chunk275388.GE)(S), N = (0, Chunk74538.EO)(x) || I || P, [w, Z] = (0, Chunk243778.US)(module && !N ? [Chunk704215.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...Chunk331663.b.useSelectedDismissibleContent);
+  })), P = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()), I = (0, Chunk275388.GE)(x), N = (0, Chunk74538.EO)(S) || P || I, [w, Z] = (0, Chunk243778.US)(module && !N ? [Chunk704215.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...Chunk331663.b.useSelectedDismissibleContent);
   Chunk73800.useEffect(() => {
     w !== Chunk704215.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL || exports || (Chunk570140.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
@@ -49,23 +49,23 @@ function x() {
           onClose: n,
           transitionState: i
         } = t, o = async () => {
-          await n(), Z(j.L.USER_DISMISS)
+          await n(), Z(C.L.USER_DISMISS)
         };
         return (0, r.jsx)(e, {
           transitionState: i,
           onClose: o,
           ctaOnClick: () => {
-            Z(j.L.TAKE_ACTION), (0, d.Q3)(s.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
-              dismissAction: j.L.INDIRECT_ACTION,
-              groupName: j.R.VIRTUAL_CURRENCY_ONBOARDING
-            }), (0, d.Q3)(s.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
-              dismissAction: j.L.INDIRECT_ACTION,
-              groupName: j.R.VIRTUAL_CURRENCY_ONBOARDING
+            Z(C.L.TAKE_ACTION), (0, d.Q3)(a.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
+              dismissAction: C.L.INDIRECT_ACTION,
+              groupName: C.R.VIRTUAL_CURRENCY_ONBOARDING
+            }), (0, d.Q3)(a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
+              dismissAction: C.L.INDIRECT_ACTION,
+              groupName: C.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, b.Y)({
-              pageType: v.ZY5.ORBS_ANNOUNCEMENT_MODAL,
-              sectionType: v.jXE.ORBS_ANNOUNCEMENT_MODAL,
-              ctaObject: v.qAy.CTA_TO_ORB_INTRO_QUEST
-            }), (0, p.navigateToQuestHome)({
+              pageType: j.ZY5.ORBS_ANNOUNCEMENT_MODAL,
+              sectionType: j.jXE.ORBS_ANNOUNCEMENT_MODAL,
+              ctaObject: j.qAy.CTA_TO_ORB_INTRO_QUEST
+            }), (0, f.navigateToQuestHome)({
               questId: E.V6,
               fromContent: l.j.ORBS_ANNOUNCEMENT_MODAL
             }), n()
@@ -73,10 +73,10 @@ function x() {
         })
       }
     }, {
-      modalKey: S,
+      modalKey: x,
       onCloseRequest: () => {
-        Z(Chunk921944.L.USER_DISMISS), (0, Chunk481060.Mr3)(S)
+        Z(Chunk921944.L.USER_DISMISS), (0, Chunk481060.Mr3)(x)
       }
     }))
-  }, [w, module, exports, Z, I])
+  }, [w, module, exports, Z, P])
 }

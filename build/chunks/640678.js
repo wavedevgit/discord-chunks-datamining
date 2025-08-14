@@ -1,21 +1,17 @@
 /** Chunk was on 33213 **/
 /** chunk id: 640678, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  t: () => a
+  t: () => o
 });
 var Chunk163400 = require("./163400.js"),
   Chunk995532 = require("./995532.js"),
   Chunk496675 = require("./496675.js"),
   Chunk896007 = require("./896007.js");
-let o = {
-  HEADER: "HEADER",
-  DIVIDER: "DIVIDER"
-};
 
-function a(e) {
+function o(e) {
   var t, n;
-  let a = l.Z.getGuildPermissionProps(e),
-    c = (0, i.p)(e.id).length > 0;
+  let o = l.Z.getGuildPermissionProps(e),
+    a = (0, i.p)(e.id).length > 0;
   return s.ZP.generateSections((t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -35,8 +31,8 @@ function a(e) {
     return e
   }({
     showDirtyGuildTemplateIndicator: false
-  }, a), n = n = {
-    canUnlinkChannels: c,
+  }, o), n = n = {
+    canUnlinkChannels: a,
     welcomeScreenEmpty: r.Z.isEmpty(e.id)
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
@@ -51,6 +47,6 @@ function a(e) {
     let {
       section: t
     } = e;
-    return t !== o.HEADER && t !== o.DIVIDER
+    return "HEADER" !== t && "DIVIDER" !== t
   }).filter(e => null == e.predicate || e.predicate())
 }

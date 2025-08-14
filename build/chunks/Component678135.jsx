@@ -23,7 +23,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk31581 = require("./31581.js");
+  Chunk448239 = require("./448239.js");
 
 function v(e) {
   let {
@@ -44,8 +44,8 @@ function v(e) {
     pendingLegacyUsernameDisabled: L,
     pendingDisplayNameStyles: x,
     avatarClassName: M,
-    containerClassName: j,
-    isTryItOutFlow: k = false,
+    containerClassName: k,
+    isTryItOutFlow: j = false,
     disabledInputs: U = false,
     hideCustomStatus: G = false,
     hideBioSection: B = false,
@@ -80,7 +80,7 @@ function v(e) {
     displayProfile: W,
     themeType: b.lY.POPOUT,
     pendingThemeColors: w,
-    className: o()(O.container, j),
+    className: o()(O.container, k),
     forceShowPremium: i,
     children: [(0, r.jsxs)("div", {
       className: O.header,
@@ -91,7 +91,7 @@ function v(e) {
         canUsePremiumCustomization: i,
         pendingBanner: I,
         pendingAccentColor: T,
-        isTryItOutFlow: k,
+        isTryItOutFlow: j,
         disabledInputs: U,
         onUpsellClick: () => null == v ? true : v({
           object: E.qAy.EDIT_PROFILE_BANNER
@@ -107,7 +107,7 @@ function v(e) {
         previewPrimaryColor: Q,
         className: M,
         disabledInputs: U,
-        isTryItOutFlow: k,
+        isTryItOutFlow: j,
         onUpsellClick: () => null == v ? true : v({
           object: E.qAy.AVATAR
         })
@@ -128,7 +128,7 @@ function v(e) {
       pendingPronouns: A,
       pendingLegacyUsernameDisabled: L,
       pendingDisplayNameStyles: x,
-      isTryItOutFlow: k,
+      isTryItOutFlow: j,
       hideBioSection: B,
       pendingBadges: F,
       shouldOpenBadgeTooltip: V

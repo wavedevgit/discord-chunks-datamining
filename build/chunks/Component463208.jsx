@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk557818 = require("./557818.jsx"),
   Chunk897037 = require("./897037.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk837408 = require("./837408.js");
+  Chunk430490 = require("./430490.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -163,8 +163,8 @@ function I(e) {
     fullWidth: L = false,
     clearable: x = false,
     helperText: M,
-    showCharacterCount: j = false,
-    successMessage: k
+    showCharacterCount: k = false,
+    successMessage: j
   } = e, U = E(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "helperText", "showCharacterCount", "successMessage"]), G = y(T, S), B = (0, d.m)({
     validateOn: w,
     error: N,
@@ -207,8 +207,8 @@ function I(e) {
     fullWidth: L,
     readOnly: K,
     helperText: M,
-    successMessage: k,
-    characterCount: j ? null != (t = null == T ? true : T.length) ? t : 0 : true,
+    successMessage: j,
+    characterCount: k ? null != (t = null == T ? true : T.length) ? t : 0 : true,
     characterCountMaxLength: I,
     className: a()(_.container, _[D], {
       [_.leading]: null != q,

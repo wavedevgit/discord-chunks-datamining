@@ -11,12 +11,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk430824 = require("./430824.js"),
   Chunk914010 = require("./914010.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk368573 = require("./368573.js");
+  Chunk186903 = require("./186903.js");
 let u = () => (0, Chunk255367.jsx)(Chunk255367.Fragment, {
     children: Chunk388032.intl.format(Chunk388032.t.ymkBtr, {
       shareIcon: Chunk388032.intl.string(Chunk388032.t.VINpSE),
       shareIconHook: () => (0, Chunk255367.jsx)(Chunk481060.ejJ, {
-        className: Chunk368573.icon
+        className: Chunk186903.icon
       }, "icon")
     })
   }),

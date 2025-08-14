@@ -7,7 +7,7 @@ require.d(exports, {
   CS: () => P,
   EW: () => V,
   OR: () => H,
-  QB: () => j,
+  QB: () => k,
   T0: () => F,
   Wf: () => B,
   cT: () => q,
@@ -20,7 +20,7 @@ require.d(exports, {
   lx: () => K,
   m0: () => x,
   nE: () => G,
-  pf: () => k,
+  pf: () => j,
   qm: () => W,
   w: () => z,
   xw: () => L
@@ -251,7 +251,7 @@ async function M(e, t) {
     }
   }
 }
-async function j(e, t, n) {
+async function k(e, t, n) {
   if (!g.Z.isClaimingReward(e)) {
     o.Z.dispatch({
       type: "QUESTS_CLAIM_REWARD_BEGIN",
@@ -285,7 +285,7 @@ async function j(e, t, n) {
     }
   }
 }
-async function k(e) {
+async function j(e) {
   if (!g.Z.isFetchingRewardCode(e)) {
     o.Z.dispatch({
       type: "QUESTS_FETCH_REWARD_CODE_BEGIN",

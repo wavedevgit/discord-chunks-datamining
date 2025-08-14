@@ -22,14 +22,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk575460 = require("./575460.jsx"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk972631 = require("./972631.js");
+  Chunk673854 = require("./673854.js");
 let _ = e => {
     let {
       onClose: t,
       listing: n,
       step: r,
       guildId: a
-    } = e, o = (0, h.YB)(a), u = (0, c.Z)(j.Xy), f = (() => {
+    } = e, o = (0, g.YB)(a), u = (0, c.Z)(j.Xy), f = (() => {
       var e;
       if (u) return null;
       let t = (null == o || null == (e = o.cover_image_asset) ? true : e.application_id) != null ? (0, m._W)(o.cover_image_asset.application_id, o.cover_image_asset, 440) : true;
@@ -73,7 +73,7 @@ let _ = e => {
       onClose: t,
       listing: n,
       guildId: r
-    } = e, l = (0, a.e7)([u.Z], () => u.Z.getGuild(r), [r]), c = (0, g.Z)(r).filter(e => e.roles.includes(n.role_id)), d = n.role_benefits.benefits.filter(f.rC).slice(0, null === c.length ? 4 : 3), m = (0, v.Z)(d).slice(0, null === c.length ? 4 : 3);
+    } = e, l = (0, a.e7)([u.Z], () => u.Z.getGuild(r), [r]), c = (0, h.Z)(r).filter(e => e.roles.includes(n.role_id)), d = n.role_benefits.benefits.filter(f.rC).slice(0, null === c.length ? 4 : 3), m = (0, p.Z)(d).slice(0, null === c.length ? 4 : 3);
     return (0, i.jsxs)("div", {
       className: x.confirmationContainer,
       children: [(0, i.jsx)(s.X6q, {
@@ -98,7 +98,7 @@ let _ = e => {
           children: b.intl.string(b.t.w0CQ09)
         }), (0, i.jsx)("div", {
           className: x.confirmationBenefits,
-          children: m.map(e => (0, i.jsx)(p.Z, {
+          children: m.map(e => (0, i.jsx)(v.Z, {
             benefit: e,
             guildId: r,
             onClick: () => t(true)

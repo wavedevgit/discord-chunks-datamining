@@ -47,15 +47,17 @@ class c extends Chunk73800.Component {
     })
   }
   constructor(...e) {
-    var t, n;
-    super(...e), t = "handleChange", n = e => {
-      this.props.onChange(e)
-    }, t in this ? Object.defineProperty(this, t, {
-      value: n,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[t] = n
+    super(...e),
+      function(e, t, n) {
+        t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
+      }(this, "handleChange", e => {
+        this.props.onChange(e)
+      })
   }
 }
 let h = Chunk442837.ZP.connectStores([Chunk55563.Z], e => {

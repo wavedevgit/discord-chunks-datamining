@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 179809, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -26,16 +26,16 @@ var Chunk255367 = require("./255367.js"),
   Chunk662146 = require("./662146.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk731234 = require("./731234.js"),
-  Chunk262527 = require("./262527.js");
-let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
+  Chunk106663 = require("./106663.js"),
+  Chunk534175 = require("./534175.js");
+let I = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
   N = (0, Chunk717976.animated)(Chunk481060.Kqy),
   w = Chunk73800.memo(function(e) {
     let {
       folderNode: t,
       setNodeRef: n,
       selected: l,
-      expanded: a,
+      expanded: s,
       mediaState: d,
       mentionCount: m = 0,
       isMentionLowImportance: w,
@@ -56,20 +56,20 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       id: H,
       name: z,
       children: W
-    } = t, [K, Y] = i.useState(false), [q, X] = i.useState(false), Q = K || q, J = (0, f.Ml)("FolderItem");
+    } = t, [K, Y] = i.useState(false), [q, X] = i.useState(false), Q = K || q, J = (0, h.Ml)("FolderItem");
     i.useEffect(() => {
       R && Y(false)
     }, [R]);
     let [{
       dragging: $
-    }, ee] = (0, s.c)({
+    }, ee] = (0, a.c)({
       type: b.eD.FOLDER,
       item: () => (null == D || D(), {
         type: b.eD.FOLDER,
         nodeId: t.id
       }),
       end() {
-        null == L || L(), (0, p.V1)(g.ZP.getCompatibleGuildFolders())
+        null == L || L(), (0, f.V1)(g.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -77,13 +77,13 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
     }), et = i.useCallback(e => {
       X(e)
     }, []), en = i.useCallback(e => {
-      ("ArrowRight" === e.key && !a || "ArrowLeft" === e.key && a) && M()
-    }, [M, a]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : S.intl.string(S.t.xV9hVl), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
-      let t = (0, h.dQu)(h.TVs.modules.guildbar.FOLDER_SIZE),
-        n = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE),
-        r = (0, h.dQu)(h.TVs.space.SPACE_XS);
-      return e * (n + r) - r + (r - (t - n) / 2) + (0, h.dQu)(h.TVs.space.SPACE_4)
-    }(W.length), es = (0, h.Yzy)(!$ && a, {
+      ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && M()
+    }, [M, s]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : x.intl.string(x.t.xV9hVl), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
+      let t = (0, p.dQu)(p.TVs.modules.guildbar.FOLDER_SIZE),
+        n = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE),
+        r = (0, p.dQu)(p.TVs.space.SPACE_XS);
+      return e * (n + r) - r + (r - (t - n) / 2) + (0, p.dQu)(p.TVs.space.SPACE_4)
+    }(W.length), ea = (0, p.Yzy)(!$ && s, {
       from: {
         height: 0
       },
@@ -94,16 +94,16 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         height: 0
       },
       config: {
-        duration: P
+        duration: I
       }
-    }), ea = i.useCallback(e => null == n ? true : n(H, e), [n, H]), ec = (0, r.jsxs)(v.H, {
+    }), es = i.useCallback(e => null == n ? true : n(H, e), [n, H]), ec = (0, r.jsxs)(j.H, {
       children: [(0, r.jsx)(O.Z, {
-        disabled: $ || a,
+        disabled: $ || s,
         hovered: K,
         selected: l,
         unread: Z,
-        className: I.pill
-      }), (0, r.jsx)(j.Z, {
+        className: P.pill
+      }), (0, r.jsx)(C.Z, {
         text: er,
         disabled: R,
         selected: l,
@@ -112,16 +112,16 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
           ref: A ? e => {
             ee(e)
           } : true,
-          className: o()(x.folderHeader, {
-            [x.folderHeaderSmall]: "icon" === G || J,
-            [I.wobble]: !$ && q && !a
+          className: o()(S.folderHeader, {
+            [S.folderHeaderSmall]: "icon" === G || J,
+            [P.wobble]: !$ && q && !s
           }),
           "data-dnd-name": er,
-          children: $ ? (0, r.jsx)(C.Z, {
+          children: $ ? (0, r.jsx)(v.Z, {
             isFolder: true
           }) : (0, r.jsx)(_.Z, {
             folderNode: t,
-            expanded: a,
+            expanded: s,
             sorting: R,
             mediaState: d,
             mentionCount: m,
@@ -145,18 +145,18 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       }) : null]
     }), eu = null != t.color ? t.color : E.Wyy, ed = eu === E.Wyy ? true : (0, u.Rf)(eu);
     return (0, r.jsxs)("div", {
-      ref: ea,
-      className: o()(x.folderGroup, {
-        [x.isExpanded]: a,
-        [x.isHovering]: Q
+      ref: es,
+      className: o()(S.folderGroup, {
+        [S.isExpanded]: s,
+        [S.isHovering]: Q
       }),
       style: {
         "--custom-folder-color": null != ed ? ed : ""
       },
       "data-drop-hovering": q,
-      children: [!$ && a && (0, r.jsx)("span", {
-        className: x.folderGroupBackground
-      }), ec, es((e, n, i) => {
+      children: [!$ && s && (0, r.jsx)("span", {
+        className: S.folderGroupBackground
+      }), ec, ea((e, n, i) => {
         let {
           key: l
         } = i;
@@ -165,14 +165,14 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
           role: "group",
           as: "ul",
           gap: "xs",
-          className: x.folderGuildsList,
+          className: S.folderGuildsList,
           style: {
             height: e.height.to(e => e * eo)
           },
           "aria-label": t.name,
           children: W.map((t, n) => U(t, n, W.length, e.height))
         }, l)
-      }), A && a ? (0, r.jsx)(y.Zu, {
+      }), A && s ? (0, r.jsx)(y.Zu, {
         name: er,
         targetNode: t
       }) : null]

@@ -2,7 +2,7 @@
 /** chunk id: 580914, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => D
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -36,7 +36,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk253032 = require("./253032.js");
+  Chunk310582 = require("./310582.js");
 let R = {
     rankedSkuIds: [],
     name: "",
@@ -50,28 +50,6 @@ let R = {
     categoryStoreListingId: ""
   },
   Z = e => {
-    var t, r, n, l;
-    return null == e ? R : {
-      rankedSkuIds: null != (t = e.heroRanking) ? t : [],
-      name: e.name,
-      unpublishedAt: e.unpublishedAt,
-      logoUrl: (0, C.uV)(null != (n = null != (r = e.heroLogo) ? r : e.logo) ? n : "", {
-        size: x.n
-      }),
-      categorySkuId: e.skuId,
-      bannerAsset: e.heroBannerAsset,
-      fallbackBannerUrl: (0, C.uV)(null != (l = e.heroBanner) ? l : "", {
-        size: N.pv,
-        format: "jpg"
-      }),
-      summary: e.summary,
-      type: c.z.HERO,
-      categoryStoreListingId: e.storeListingId,
-      bannerConfig: e.heroBannerConfig,
-      logoConfig: e.heroLogoDisplayConfig
-    }
-  },
-  D = e => {
     let {
       isResponsive: t,
       heroBannerOverrides: r
@@ -99,80 +77,101 @@ let R = {
       })]
     })
   },
-  M = e => {
+  D = e => {
     var t;
     let {
       isLoading: r,
       handleTransition: a,
-      category: c,
-      heroBlock: C,
-      tab: x,
-      onVisibilityChange: M
-    } = e, F = (0, p.O)(e => {
-      null == M || M(e)
-    }, .1, null != M), H = (0, u.e7)([m.default], () => m.default.getCurrentUser()), W = (0, L.Z)(), V = (0, v.sp)(), {
-      showBetaTag: U
+      category: D,
+      heroBlock: M,
+      tab: F,
+      onVisibilityChange: H
+    } = e, W = (0, p.O)(e => {
+      null == H || H(e)
+    }, .1, null != H), V = (0, u.e7)([m.default], () => m.default.getCurrentUser()), U = (0, L.Z)(), z = (0, v.sp)(), {
+      showBetaTag: G
     } = h.Z.useExperiment({
       location: "collectible_hero_block"
-    }), z = l.useMemo(() => null != C ? C : Z(c), [C, c]), {
-      bannerOverrides: G,
-      bannerStyleOverrides: q,
-      logoStyleOverrides: K,
-      heroLogo: Y,
-      heroBannerStatic: X,
-      heroBannerAnimated: J
-    } = (0, P.hr)(z), Q = null == G ? true : G.heroBanner, $ = null != (t = null == q ? true : q.responsive) && t, ee = null == q ? true : q.backgroundStyle, et = l.useMemo(() => W(z.rankedSkuIds), [r, W, z.rankedSkuIds]), er = (0, S.a)()(et), en = (0, y.l)(er).slice(0, 4), el = (0, k.St)(en), ea = x === N.AW.ORBS ? w.intl.string(w.t["1CdL8f"]) : w.intl.formatToPlainString(w.t.wvKYCg, {
-      category_name: z.name
-    }), ei = (0, E.FF)("CollectiblesContent");
-    return null != H && (r || z !== R) ? (0, n.jsxs)("div", {
-      ref: F,
+    }), q = l.useMemo(() => {
+      var e, t, r, n;
+      return null != M ? M : null == D ? R : {
+        rankedSkuIds: null != (e = D.heroRanking) ? e : [],
+        name: D.name,
+        unpublishedAt: D.unpublishedAt,
+        logoUrl: (0, C.uV)(null != (r = null != (t = D.heroLogo) ? t : D.logo) ? r : "", {
+          size: x.n
+        }),
+        categorySkuId: D.skuId,
+        bannerAsset: D.heroBannerAsset,
+        fallbackBannerUrl: (0, C.uV)(null != (n = D.heroBanner) ? n : "", {
+          size: N.pv,
+          format: "jpg"
+        }),
+        summary: D.summary,
+        type: c.z.HERO,
+        categoryStoreListingId: D.storeListingId,
+        bannerConfig: D.heroBannerConfig,
+        logoConfig: D.heroLogoDisplayConfig
+      }
+    }, [M, D]), {
+      bannerOverrides: K,
+      bannerStyleOverrides: Y,
+      logoStyleOverrides: X,
+      heroLogo: J,
+      heroBannerStatic: Q,
+      heroBannerAnimated: $
+    } = (0, P.hr)(q), ee = null == K ? true : K.heroBanner, et = null != (t = null == Y ? true : Y.responsive) && t, er = null == Y ? true : Y.backgroundStyle, en = l.useMemo(() => U(q.rankedSkuIds), [r, U, q.rankedSkuIds]), el = (0, S.a)()(en), ea = (0, y.l)(el).slice(0, 4), ei = (0, k.St)(ea), eo = F === N.AW.ORBS ? w.intl.string(w.t["1CdL8f"]) : w.intl.formatToPlainString(w.t.wvKYCg, {
+      category_name: q.name
+    }), es = (0, E.FF)("CollectiblesContent");
+    return null != V && (r || q !== R) ? (0, n.jsxs)("div", {
+      ref: W,
       className: B.heroBlock,
       children: [(0, n.jsxs)("div", {
         className: B.banner,
-        style: null != ee ? {
-          background: ee
+        style: null != er ? {
+          background: er
         } : true,
         children: [(0, n.jsx)(I.Z, {
-          bannerStatic: X,
-          bannerAnimated: J,
-          isResponsive: $
-        }), (null == q ? true : q.hideSideShadow) === true ? null : (0, n.jsx)(D, {
-          heroBannerOverrides: Q,
-          isResponsive: $
+          bannerStatic: Q,
+          bannerAnimated: $,
+          isResponsive: et
+        }), (null == Y ? true : Y.hideSideShadow) === true ? null : (0, n.jsx)(Z, {
+          heroBannerOverrides: ee,
+          isResponsive: et
         })]
       }), (0, n.jsxs)("div", {
         className: B.heroBlockContent,
         children: [(0, n.jsxs)("div", {
           className: i()(B.heroHeaderContainer, {
-            [B.responsive]: $
+            [B.responsive]: et
           }),
           children: [r ? (0, n.jsx)("div", {
             className: B.heroHeaderBadgeLogoSummaryContainer
           }) : (0, n.jsxs)("div", {
             className: B.heroHeaderBadgeLogoSummaryContainer,
-            children: [null != z.unpublishedAt && (0, n.jsx)(d.IGR, {
+            children: [null != q.unpublishedAt && (0, n.jsx)(d.IGR, {
               disableColor: true,
               text: w.intl.string(w.t["h/uBCQ"]),
               className: B.limitedTimeBadge
             }), (0, n.jsxs)("div", {
               className: B.heroLogoNameContainer,
-              children: [null != z.logoUrl && (0, n.jsx)("img", {
+              children: [null != q.logoUrl && (0, n.jsx)("img", {
                 className: B.heroHeaderLogo,
-                src: Y,
-                alt: z.name,
-                style: null == K ? true : K.toDesktopStyles()
-              }), null != z.title && (0, n.jsxs)(d.X6q, {
+                src: J,
+                alt: q.name,
+                style: null == X ? true : X.toDesktopStyles()
+              }), null != q.title && (0, n.jsxs)(d.X6q, {
                 variant: "heading-xxl/bold",
                 className: B.title,
                 color: "header-primary",
-                children: [z.title, x === N.AW.ORBS && U && (0, n.jsx)(g.Z, {})]
-              }), "" !== z.summary && (0, n.jsx)(d.Text, {
-                variant: z.categorySkuId === o.T.ORB ? "text-lg/medium" : "text-md/normal",
-                className: z.categorySkuId === o.T.ORB ? B.orbsSubHeaderText : (null == G ? true : G.showDarkBannerText) ? B.subHeaderTextDark : B.subHeaderText,
-                style: null != z.bannerTextColor ? {
-                  color: z.bannerTextColor
+                children: [q.title, F === N.AW.ORBS && G && (0, n.jsx)(g.Z, {})]
+              }), "" !== q.summary && (0, n.jsx)(d.Text, {
+                variant: q.categorySkuId === o.T.ORB ? "text-lg/medium" : "text-md/normal",
+                className: q.categorySkuId === o.T.ORB ? B.orbsSubHeaderText : (null == K ? true : K.showDarkBannerText) ? B.subHeaderTextDark : B.subHeaderText,
+                style: null != q.bannerTextColor ? {
+                  color: q.bannerTextColor
                 } : true,
-                children: z.summary
+                children: q.summary
               })]
             })]
           }), !r && (0, n.jsx)("div", {
@@ -180,32 +179,32 @@ let R = {
             children: (0, n.jsx)(d.zxk, {
               variant: "overlay-primary",
               onClick: () => {
-                x === N.AW.ORBS ? ((0, b.Y)({
+                F === N.AW.ORBS ? ((0, b.Y)({
                   pageType: A.ZY5.SHOP_ORBS_TAB,
                   sectionType: A.jXE.ORBS_SHOP_HERO_BLOCK,
                   ctaObject: A.qAy.CTA_TO_QUEST_HOME
                 }), (0, f.navigateToQuestHome)({
                   fromContent: s.j.ORBS_SHOP_HERO_CTA
-                })) : (a("shop latest category hero", ei && z.categorySkuId !== o.T.ORB ? true : z.categorySkuId), _.default.track(A.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                  collectibles_shop_session_id: null == V ? true : V.sessionId,
-                  sku_id: z.categorySkuId,
-                  page_type: x,
-                  page_section: null == V ? true : V.pageSection,
-                  page_category: null == V ? true : V.pageCategory,
+                })) : (a("shop latest category hero", es && q.categorySkuId !== o.T.ORB ? true : q.categorySkuId), _.default.track(A.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                  collectibles_shop_session_id: null == z ? true : z.sessionId,
+                  sku_id: q.categorySkuId,
+                  page_type: F,
+                  page_section: null == z ? true : z.pageSection,
+                  page_category: null == z ? true : z.pageCategory,
                   cta_name: "shop latest category hero button"
                 }))
               },
-              text: ea
+              text: eo
             })
           })]
         }), (0, n.jsx)("div", {
           className: i()(B.row, B.feed, {
-            [B.feedSingleRow]: x !== N.AW.ORBS
+            [B.feedSingleRow]: F !== N.AW.ORBS
           }),
           children: r ? (0, n.jsx)(n.Fragment, {
             children: [true, true, true, true].map((e, t) => (0, n.jsx)(j.K, {}, t))
           }) : (0, n.jsx)(n.Fragment, {
-            children: el.map((e, t) => {
+            children: ei.map((e, t) => {
               let r = O.Z.getCategoryForProduct(e.skuId);
               return null == e || null == r ? null : (0, n.jsx)(v.k0, {
                 newValue: {
@@ -216,8 +215,8 @@ let R = {
                 children: (0, n.jsx)(T.Z, {
                   product: e,
                   category: r,
-                  user: H,
-                  tab: x,
+                  user: V,
+                  tab: F,
                   _isInHeroBlock: true
                 }, e.skuId)
               }, null == e ? true : e.skuId)

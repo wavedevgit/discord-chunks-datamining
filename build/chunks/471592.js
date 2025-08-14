@@ -32,11 +32,11 @@ var Chunk220159 = require("./220159.js"),
   Chunk592802 = require("./592802.js"),
   Chunk394370 = require("./394370.js"),
   Chunk862097 = require("./862097.js"),
-  E = Chunk394370("iterator"),
+  O = Chunk394370("iterator"),
   I = "URLSearchParams",
   M = I + "Iterator",
-  B = Chunk89416.set,
-  T = Chunk89416.getterFor(I),
+  T = Chunk89416.set,
+  B = Chunk89416.getterFor(I),
   D = Chunk89416.getterFor(M),
   L = Chunk236264("fetch"),
   V = Chunk236264("Request"),
@@ -142,9 +142,9 @@ var Chunk220159 = require("./220159.js"),
     return J(K(e), eu, ep)
   },
   ef = Chunk975450(function(e, t) {
-    B(this, {
+    T(this, {
       type: M,
-      target: T(e).entries,
+      target: B(e).entries,
       index: 0,
       kind: t
     })
@@ -207,20 +207,20 @@ em.prototype = {
 var ey = function() {
     Chunk588383(this, ev);
     var e = arguments.length > 0 ? arguments[0] : true,
-      t = B(this, new em(module));
+      t = T(this, new em(module));
     Chunk181794 || (this.size = exports.entries.length)
   },
   ev = ey.prototype;
 if (Chunk513270(ev, {
     append: function(e, t) {
-      var n = T(this);
+      var n = B(this);
       R(arguments.length, 2), Q(n.entries, {
         key: w(e),
         value: w(t)
       }), !l && this.length++, n.updateURL()
     },
     delete: function(e) {
-      for (var t = T(this), n = R(arguments.length, 1), r = t.entries, o = w(e), a = n < 2 ? true : arguments[1], i = true === a ? a : w(a), s = 0; s < r.length;) {
+      for (var t = B(this), n = R(arguments.length, 1), r = t.entries, o = w(e), a = n < 2 ? true : arguments[1], i = true === a ? a : w(a), s = 0; s < r.length;) {
         var c = r[s];
         if (c.key === o && (true === i || c.value === i)) {
           if (ee(r, s, 1), true !== i) break
@@ -229,27 +229,27 @@ if (Chunk513270(ev, {
       l || (this.size = r.length), t.updateURL()
     },
     get: function(e) {
-      var t = T(this).entries;
+      var t = B(this).entries;
       R(arguments.length, 1);
       for (var n = w(e), r = 0; r < t.length; r++)
         if (t[r].key === n) return t[r].value;
       return null
     },
     getAll: function(e) {
-      var t = T(this).entries;
+      var t = B(this).entries;
       R(arguments.length, 1);
       for (var n = w(e), r = [], o = 0; o < t.length; o++) t[o].key === n && Q(r, t[o].value);
       return r
     },
     has: function(e) {
-      for (var t = T(this).entries, n = R(arguments.length, 1), r = w(e), o = n < 2 ? true : arguments[1], a = true === o ? o : w(o), i = 0; i < t.length;) {
+      for (var t = B(this).entries, n = R(arguments.length, 1), r = w(e), o = n < 2 ? true : arguments[1], a = true === o ? o : w(o), i = 0; i < t.length;) {
         var s = t[i++];
         if (s.key === r && (true === a || s.value === a)) returntrue
       }
       returnfalse
     },
     set: function(e, t) {
-      var n, r = T(this);
+      var n, r = B(this);
       R(arguments.length, 1);
       for (var o = r.entries, a = false, i = w(e), s = w(t), c = 0; c < o.length; c++)(n = o[c]).key === i && (a ? ee(o, c--, 1) : (a = true, n.value = s));
       a || Q(o, {
@@ -258,13 +258,13 @@ if (Chunk513270(ev, {
       }), l || (this.size = o.length), r.updateURL()
     },
     sort: function() {
-      var e = T(this);
+      var e = B(this);
       Chunk862097(module.entries, function(e, t) {
         return e.key > t.key ? 1 : false
       }), module.updateURL()
     },
     forEach: function(e) {
-      for (var t, n = T(this).entries, r = _(e, arguments.length > 1 ? arguments[1] : true), o = 0; o < n.length;) r((t = n[o++]).value, t.key, this)
+      for (var t, n = B(this).entries, r = _(e, arguments.length > 1 ? arguments[1] : true), o = 0; o < n.length;) r((t = n[o++]).value, t.key, this)
     },
     keys: function() {
       return new ef(this, "keys")
@@ -277,15 +277,15 @@ if (Chunk513270(ev, {
     }
   }, {
     enumerable: true
-  }), Chunk342930(ev, E, ev.entries, {
+  }), Chunk342930(ev, O, ev.entries, {
     name: "entries"
   }), Chunk342930(ev, "toString", function() {
-    return T(this).serialize()
+    return B(this).serialize()
   }, {
     enumerable: true
   }), Chunk181794 && Chunk459341(ev, "size", {
     get: function() {
-      return T(this).entries.length
+      return B(this).entries.length
     },
     configurable: true,
     enumerable: true
@@ -333,5 +333,5 @@ if (Chunk513270(ev, {
 }
 module.exports = {
   URLSearchParams: ey,
-  getState: T
+  getState: B
 }

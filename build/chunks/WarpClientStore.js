@@ -1,9 +1,9 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 956097, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 }), require("./388685.js");
-var i, r, s, Chunk442837 = require("./442837.js"),
+var i, r, Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk668781 = require("./668781.js"),
@@ -11,17 +11,17 @@ var i, r, s, Chunk442837 = require("./442837.js"),
   Chunk998502 = require("./998502.js"),
   Chunk49226 = require("./49226.js"),
   Chunk981631 = require("./981631.js");
-let g = {
+let p = {
     status: ""
   },
-  h = [],
-  f = ["discord.com", "discordapp.com", "discordapp.net", "dl.discordapp.net", "discordcdn.com", "discord.gg", "discord.media"];
-class b extends(i = Chunk442837.ZP.Store) {
+  g = [],
+  h = ["discord.com", "discordapp.com", "discordapp.net", "dl.discordapp.net", "discordcdn.com", "discord.gg", "discord.media"];
+class f extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.updateState(), this.addListener()
   }
   logEvent(e) {
-    "status" in e && "string" == typeof e.status && (g = e), h = [...h.slice(h.length < 10 ? 0 : 1, 10), e], this.emitChange()
+    "status" in e && "string" == typeof e.status && (p = e), g = [...g.slice(g.length < 10 ? 0 : 1, 10), e], this.emitChange()
   }
   async updateState() {
     try {
@@ -38,7 +38,7 @@ class b extends(i = Chunk442837.ZP.Store) {
   async runCommand(e) {
     for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), i = 1; i < t; i++) n[i - 1] = arguments[i];
     try {
-      return await u.ZP.getDiscordUtils().runWarpCommand(e, ...n)
+      return await d.ZP.getDiscordUtils().runWarpCommand(e, ...n)
     } catch (e) {
       throw this.logEvent({
         commandError: e.message
@@ -92,7 +92,7 @@ class b extends(i = Chunk442837.ZP.Store) {
     try {
       let t = await this.runCommand("tunnel", "host", "list");
       if ((null == exports ? true : exports.mode) === "exclude")
-        for (let n of f) {
+        for (let n of h) {
           var e;
           (null == exports || null == (e = exports.hosts) ? true : module.indexOf(require)) === false && await this.runCommand("tunnel", "host", "add", require)
         }
@@ -104,10 +104,10 @@ class b extends(i = Chunk442837.ZP.Store) {
     } catch (e) {}
   }
   get state() {
-    return g
+    return p
   }
   get log() {
-    return h
+    return g
   }
   get clientEnabled() {
     return Chunk49226.Z.getCurrentConfig({
@@ -118,10 +118,10 @@ class b extends(i = Chunk442837.ZP.Store) {
     }).enable
   }
   get enabled() {
-    return "Connected" === g.status || this.connecting
+    return "Connected" === p.status || this.connecting
   }
   get connecting() {
-    return "Configuring" === g.status || "Connecting" === g.status || "ConnectCommandSent" === g.status || "Installing" === g.status || "Installed" === g.status
+    return "Configuring" === p.status || "Connecting" === p.status || "ConnectCommandSent" === p.status || "Installing" === p.status || "Installed" === p.status
   }
   async connect() {
     if (this.clientEnabled) {
@@ -139,15 +139,14 @@ class b extends(i = Chunk442837.ZP.Store) {
     return this.clientEnabled
   }
   disconnect() {
-    return this.clientEnabled && (this.runCommand("disconnect"), g = {
+    return this.clientEnabled && (this.runCommand("disconnect"), p = {
       status: "DisconnectCommandSent"
     }), this.clientEnabled
   }
-}
-s = "WarpClientStore", (r = "displayName") in b ? Object.defineProperty(b, r, {
-  value: s,
+}(r = "displayName") in f ? Object.defineProperty(f, r, {
+  value: "WarpClientStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : b[r] = s;
-let x = new b(Chunk570140.Z, {})
+}) : f[r] = "WarpClientStore";
+let b = new f(Chunk570140.Z, {})

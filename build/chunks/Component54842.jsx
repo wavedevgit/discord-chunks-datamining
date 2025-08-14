@@ -1,7 +1,7 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 54842, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => E
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -17,17 +17,14 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk190378 = require("./190378.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk18712 = require("./18712.js"),
+  Chunk977235 = require("./977235.js"),
   Chunk438825 = require("./438825.js"),
   Chunk236140 = require("./236140.js"),
   Chunk37069 = require("./37069.js"),
   Chunk518513 = require("./518513.js"),
-  Chunk40271 = require("./40271.js"),
-  Chunk348986 = require("./348986.js"),
-  Chunk930065 = require("./930065.js"),
-  Chunk345669 = require("./345669.js");
+  Chunk40271 = require("./40271.js");
 
-function I(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,47 +42,12 @@ function I(e) {
   }
   return e
 }
-let E = () => [{
-    icon: Chunk481060.IeX,
-    color: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
-    header: Chunk388032.intl.string(Chunk388032.t.oVQF29),
-    body: Chunk388032.intl.format(Chunk388032.t.A6G7am, {
-      featureHook: (e, t) => (0, r.jsx)("strong", {
-        className: b.featuredText,
-        children: e
-      }, t)
-    })
-  }, {
-    icon: Chunk481060.IeX,
-    color: Chunk692547.Z.unsafe_rawColors.PARTNER.css,
-    header: Chunk388032.intl.string(Chunk388032.t["0rJl9/"]),
-    body: Chunk388032.intl.format(Chunk388032.t.XsCNk5, {
-      infoHook: () => (0, Chunk255367.jsx)(Chunk481060.ua7, {
-        text: Chunk388032.intl.string(Chunk388032.t.kPJlTk),
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.kPJlTk),
-        children: e => (0, r.jsx)(c.d3s, I({
-          size: "xs",
-          color: "currentColor",
-          className: b.infoIcon
-        }, e))
-      }),
-      featureHook: (e, t) => (0, r.jsx)("strong", {
-        className: b.featuredText,
-        children: e
-      }, t)
-    })
-  }, {
-    icon: Chunk481060.d3s,
-    color: Chunk692547.Z.unsafe_rawColors.RED_360.css,
-    header: Chunk388032.intl.string(Chunk388032.t.W2kLJC),
-    body: Chunk388032.intl.string(Chunk388032.t.hyNkHx)
-  }],
-  S = [{
-    iconSrc: Chunk348986,
+let C = [{
+    iconSrc: require("./348986.js"),
     name: "Pokemon GO Paris",
     position: [false, false]
   }, {
-    iconSrc: Chunk930065,
+    iconSrc: require("./930065.js"),
     name: "Python",
     position: [false, false],
     faded: true,
@@ -101,7 +63,7 @@ let E = () => [{
     position: [false, false],
     rightAlign: true
   }, {
-    iconSrc: Chunk345669,
+    iconSrc: require("./345669.js"),
     name: "Sneaker Fans",
     position: [false, 40]
   }, {
@@ -111,7 +73,7 @@ let E = () => [{
     faded: true,
     rightAlign: true
   }],
-  T = e => {
+  N = e => {
     let {
       icon: t,
       color: n,
@@ -140,7 +102,7 @@ let E = () => [{
       })]
     })
   },
-  P = e => {
+  I = e => {
     let {
       iconSrc: t,
       name: n,
@@ -171,26 +133,26 @@ let E = () => [{
       })]
     })
   },
-  w = e => {
+  E = e => {
     let {
       guild: t
-    } = e, [n, l] = i.useState(0), [a, o] = i.useState(0), [v, _] = i.useState(), O = (0, s.e7)([m.Z], () => m.Z.can(p.Plq.ADMINISTRATOR, t)), y = null == v ? true : v.offsetWidth, C = null == v ? true : v.offsetHeight;
+    } = e, [n, l] = i.useState(0), [a, v] = i.useState(0), [_, O] = i.useState(), E = (0, s.e7)([m.Z], () => m.Z.can(p.Plq.ADMINISTRATOR, t)), S = null == _ ? true : _.offsetWidth, T = null == _ ? true : _.offsetHeight;
     i.useEffect(() => {
-      null != y && l(y / 2), null != C && o(C / 2)
-    }, [y, C, l, o]), i.useEffect(() => {
+      null != S && l(S / 2), null != T && v(T / 2)
+    }, [S, T, l, v]), i.useEffect(() => {
       (0, d.Kw)(h.v.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
     }, []);
-    let N = () => {
+    let P = () => {
       u.Z.open()
     };
     return (0, r.jsxs)("div", {
       className: b.container,
       children: [(0, r.jsxs)("div", {
         className: b.banner,
-        ref: e => _(e),
-        children: [S.map(e => {
+        ref: e => O(e),
+        children: [C.map(e => {
           var t, i;
-          return (0, r.jsx)(P, (t = I({}, e), i = i = {
+          return (0, r.jsx)(I, (t = y({}, e), i = i = {
             imageCoordinates: [n, a]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
@@ -223,16 +185,16 @@ let E = () => [{
           helpdeskArticle: g.Z.getArticleURL(p.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
         })
       }), (0, r.jsx)(c.ua7, {
-        text: O ? null : f.intl.string(f.t["pjG+T0"]),
-        "aria-label": O ? true : f.intl.string(f.t["pjG+T0"]),
+        text: E ? null : f.intl.string(f.t["pjG+T0"]),
+        "aria-label": E ? true : f.intl.string(f.t["pjG+T0"]),
         children: e => (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: b.button,
-          children: (0, r.jsx)(c.zxk, I({
+          children: (0, r.jsx)(c.zxk, y({
             variant: "primary",
             text: f.intl.string(f.t.LhlgY2),
-            onClick: N,
-            disabled: !O
+            onClick: P,
+            disabled: !E
           }, e))
         })
       }), (0, r.jsx)("hr", {
@@ -250,7 +212,41 @@ let E = () => [{
         })
       }), (0, r.jsx)("div", {
         className: b.features,
-        children: E().map((e, t) => (0, r.jsx)(T, I({}, e), t))
+        children: [{
+          icon: c.IeX,
+          color: o.Z.unsafe_rawColors.GREEN_360.css,
+          header: f.intl.string(f.t.oVQF29),
+          body: f.intl.format(f.t.A6G7am, {
+            featureHook: (e, t) => (0, r.jsx)("strong", {
+              className: b.featuredText,
+              children: e
+            }, t)
+          })
+        }, {
+          icon: c.IeX,
+          color: o.Z.unsafe_rawColors.PARTNER.css,
+          header: f.intl.string(f.t["0rJl9/"]),
+          body: f.intl.format(f.t.XsCNk5, {
+            infoHook: () => (0, r.jsx)(c.ua7, {
+              text: f.intl.string(f.t.kPJlTk),
+              "aria-label": f.intl.string(f.t.kPJlTk),
+              children: e => (0, r.jsx)(c.d3s, y({
+                size: "xs",
+                color: "currentColor",
+                className: b.infoIcon
+              }, e))
+            }),
+            featureHook: (e, t) => (0, r.jsx)("strong", {
+              className: b.featuredText,
+              children: e
+            }, t)
+          })
+        }, {
+          icon: c.d3s,
+          color: o.Z.unsafe_rawColors.RED_360.css,
+          header: f.intl.string(f.t.W2kLJC),
+          body: f.intl.string(f.t.hyNkHx)
+        }].map((e, t) => (0, r.jsx)(N, y({}, e), t))
       })]
     })
   }

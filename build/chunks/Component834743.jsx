@@ -33,24 +33,26 @@ class f extends Chunk73800.PureComponent {
     })
   }
   constructor(...e) {
-    var t, n;
-    super(...e), t = "handleButtonClick", n = () => {
-      let {
-        guild: e
-      } = this.props;
-      (0, o.f)({
-        guildId: e.id,
-        location: {
-          section: c.jXE.CHANNEL_NOTICE,
-          object: c.qAy.SERVER_STATUS_CTA
-        }
+    super(...e),
+      function(e, t, n) {
+        t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
+      }(this, "handleButtonClick", () => {
+        let {
+          guild: e
+        } = this.props;
+        (0, o.f)({
+          guildId: e.id,
+          location: {
+            section: c.jXE.CHANNEL_NOTICE,
+            object: c.qAy.SERVER_STATUS_CTA
+          }
+        })
       })
-    }, t in this ? Object.defineProperty(this, t, {
-      value: n,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[t] = n
   }
 }
 let h = Chunk442837.ZP.connectStores([Chunk650774.Z], e => {

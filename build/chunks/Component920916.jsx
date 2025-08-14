@@ -41,7 +41,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk675654 = require("./675654.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk565867 = require("./565867.js");
+  Chunk824210 = require("./824210.js");
 
 function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -162,8 +162,8 @@ function K(e) {
     }), M && (0, r.jsx)(E.Z, {
       confettiTarget: g.current,
       confettiCanvas: b,
-      sprites: j.CA,
-      colors: j.Br
+      sprites: k.CA,
+      colors: k.Br
     })]
   })
 }
@@ -198,7 +198,7 @@ function q(e) {
     onConfirm: s
   } = e, l = (0, P.fh)(t, P.eC.REWARD).url, c = (0, A.f$)(t.config), {
     fractionalState: d
-  } = (0, m.Z)(), f = d === k.a$.FP_ONLY, _ = (0, C.Qy)(t.config), p = c && !f;
+  } = (0, m.Z)(), f = d === j.a$.FP_ONLY, _ = (0, C.Qy)(t.config), p = c && !f;
   return (0, r.jsxs)("div", {
     className: G.claimedRootContainer,
     children: [(0, r.jsxs)("div", {

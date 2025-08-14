@@ -19,10 +19,10 @@ function o(e) {
     onClose: u,
     analyticsObject: m,
     analyticsLocation: f,
-    analyticsLocations: h,
-    analyticsSubscriptionType: g,
-    renderHeader: v,
-    renderPurchaseConfirmation: p,
+    analyticsLocations: g,
+    analyticsSubscriptionType: h,
+    renderHeader: p,
+    renderPurchaseConfirmation: v,
     planGroup: j,
     reviewWarningMessage: b,
     skuId: x
@@ -34,7 +34,7 @@ function o(e) {
       PaymentModal: r
     } = await Promise.resolve().then(n.bind(n, 791785)), {
       STEPS: s
-    } = await Promise.all([n.e("8016"), n.e("17938"), n.e("94136"), n.e("84992"), n.e("63024")]).then(n.bind(n, 7305));
+    } = await Promise.all([n.e("8016"), n.e("17938"), n.e("94136"), n.e("84992"), n.e("47238")]).then(n.bind(n, 7305));
     return n => {
       var _, y, {
           onClose: N
@@ -82,13 +82,13 @@ function o(e) {
               onClose: e => {
                 N(), null == u || u(e)
               },
-              analyticsLocations: h,
+              analyticsLocations: g,
               analyticsObject: m,
               analyticsLocation: f,
-              analyticsSubscriptionType: g,
+              analyticsSubscriptionType: h,
               skuId: x,
-              renderHeader: v,
-              renderPurchaseConfirmation: p,
+              renderHeader: p,
+              renderPurchaseConfirmation: v,
               planGroup: j,
               trialId: c,
               trialFooterMessageOverride: d,

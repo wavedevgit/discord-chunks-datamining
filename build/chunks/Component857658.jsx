@@ -20,9 +20,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk233398 = require("./233398.js"),
   Chunk866419 = require("./866419.js"),
   Chunk771934 = require("./771934.js"),
-  Chunk671147 = require("./671147.js"),
+  Chunk119475 = require("./119475.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk52526 = require("./52526.js");
+  Chunk209289 = require("./209289.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,7 +65,7 @@ function S(e, t) {
 
 function A() {
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk52526.loader,
+    className: Chunk209289.loader,
     children: (0, Chunk255367.jsx)(Chunk481060.$jN, {})
   })
 }
@@ -172,13 +172,13 @@ function x(e) {
     M = i.useCallback(e => {
       R(e.hex)
     }, []),
-    j = e => {
+    k = e => {
       if ((0, E.P0)(), n(e.hex), a.length > 0) {
         let t = [...a];
         t[v] = e.hex, s(t)
       }
     },
-    k = async () => {
+    j = async () => {
       if (null != c) try {
         let {
           sRGBHex: e
@@ -209,7 +209,7 @@ function x(e) {
       onColorSelect: B
     }), (0, r.jsx)(N, {
       onChange: M,
-      onChangeComplete: j,
+      onChangeComplete: k,
       color: A
     }), (0, r.jsxs)("div", {
       className: O.hexInputContainer,
@@ -231,7 +231,7 @@ function x(e) {
             variant: "icon-only",
             size: "sm"
           }, e), {
-            onClick: k,
+            onClick: j,
             icon: d.i,
             "aria-label": y.intl.string(b.default["NCFz+P"])
           }))

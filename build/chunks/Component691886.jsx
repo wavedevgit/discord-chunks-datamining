@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 691886, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk303737 = require("./303737.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk595178 = require("./595178.js");
+  Chunk858783 = require("./858783.js");
 
 function j(e) {
   return String(e)
@@ -55,10 +55,10 @@ function _() {
     icon: (0, Chunk255367.jsx)(Chunk481060.qJs, {
       size: "md",
       color: "currentColor",
-      className: Chunk595178.labelIcon
+      className: Chunk858783.labelIcon
     }),
     title: Chunk388032.intl.string(Chunk388032.t.d7YJMD),
-    className: Chunk595178.createLabel
+    className: Chunk858783.createLabel
   })
 }
 
@@ -123,7 +123,7 @@ function C(e) {
       null == e ? (0, o.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("45094"), n.e("49336")]).then(n.bind(n, 797671));
+        } = await Promise.all([n.e("45094"), n.e("21162")]).then(n.bind(n, 797671));
         return n => {
           var i, l;
           return (0, r.jsx)(e, (i = function(e) {

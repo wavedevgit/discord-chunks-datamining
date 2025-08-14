@@ -31,8 +31,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk419388 = require("./419388.js"),
-  Chunk591858 = require("./591858.js");
+  Chunk359739 = require("./359739.js"),
+  Chunk611344 = require("./611344.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -99,7 +99,7 @@ function M(e) {
     giftRecipient: D,
     recommendedGiftSkuIds: L,
     giftingOrigin: M,
-    setValidatingGiftRecipient: k
+    setValidatingGiftRecipient: j
   } = (0, v.wD)(), {
     selectedSkuId: U,
     setSelectedSkuId: G,
@@ -114,7 +114,7 @@ function M(e) {
   }, {
     autoTrackExposure: false
   }), W = H && M === N.Wt.DM_CHANNEL, K = Y === _.u.POPULAR ? C.intl.string(C.t.Kwgrrq) : C.intl.string(C.t.r1huYW), z = async (e, t) => {
-    k(true), null != m && T(), await (0, c.B1)(e.id, t) || T(C.intl.string(C.t["4kgVqa"])), k(false)
+    j(true), null != m && T(), await (0, c.B1)(e.id, t) || T(C.intl.string(C.t["4kgVqa"])), j(false)
   };
   (0, a.ZP)(() => {
     null != U && null != D && (y.default.track(A.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
@@ -159,7 +159,7 @@ function M(e) {
         color: "header-secondary",
         className: R.selectGiftTitle,
         children: K.toLocaleUpperCase()
-      }), L.map(e => X(e)), (0, r.jsx)(j, {
+      }), L.map(e => X(e)), (0, r.jsx)(k, {
         handleClose: n
       })]
     }) : (0, r.jsx)("div", {
@@ -216,7 +216,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     handleClose: t
   } = e, {

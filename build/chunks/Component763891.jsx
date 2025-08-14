@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk955210 = require("./955210.js"),
+  Chunk887353 = require("./887353.js"),
   Chunk558513 = require("./558513.js"),
   Chunk662128 = require("./662128.js"),
   Chunk676790 = require("./676790.js"),
@@ -44,26 +44,21 @@ function N(e) {
   } = e, B = (0, p.sp)(), R = null != (t = null == B ? true : B.sessionId) ? t : "", {
     noCache: Z,
     includeUnpublished: D
-  } = (0, v.Z)(), M = (0, i.e7)([u.default], () => u.default.getCurrentUser()), F = (0, i.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [H, W] = l.useState(1), V = () => {
-    var e;
-    null == A || null == (e = A.current) || e.scrollToTop({
-      animate: true
-    })
-  }, U = (0, c.Fg)(), z = (0, o.ap)(U), [G, q, K] = l.useMemo(() => {
+  } = (0, v.Z)(), M = (0, i.e7)([u.default], () => u.default.getCurrentUser()), F = (0, i.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [H, W] = l.useState(1), V = (0, c.Fg)(), U = (0, o.ap)(V), [z, G, q] = l.useMemo(() => {
     switch (w) {
       case O.AW.AVATAR_DECORATIONS:
-        return [E.intl.string(E.t.dRZYND), z ? T.Z : j.Z, a.Z.AVATAR_DECORATION];
+        return [E.intl.string(E.t.dRZYND), U ? T.Z : j.Z, a.Z.AVATAR_DECORATION];
       case O.AW.PROFILE_EFFECTS:
-        return [E.intl.string(E.t["1cNjt7"]), z ? I.Z : k.Z, a.Z.PROFILE_EFFECT];
+        return [E.intl.string(E.t["1cNjt7"]), U ? I.Z : k.Z, a.Z.PROFILE_EFFECT];
       case O.AW.NAMEPLATES:
-        return [E.intl.string(E.t.V68Fq6), z ? L.Z : P.Z, a.Z.NAMEPLATE];
+        return [E.intl.string(E.t.V68Fq6), U ? L.Z : P.Z, a.Z.NAMEPLATE];
       case O.AW.BUNDLES:
-        return [E.intl.string(E.t.FYFppq), z ? x.Z : y.Z, a.Z.BUNDLE]
+        return [E.intl.string(E.t.FYFppq), U ? x.Z : y.Z, a.Z.BUNDLE]
     }
-  }, [w, z]), Y = (0, f.a)(), X = l.useMemo(() => Y(F.filter(e => {
+  }, [w, U]), K = (0, f.a)(), Y = l.useMemo(() => K(F.filter(e => {
     var t;
-    return e.type === K || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === K)) === true
-  })), [F, K, Y]), J = (0, b.l)(X);
+    return e.type === q || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
+  })), [F, q, K]), X = (0, b.l)(Y);
   return (l.useEffect(() => {
     (0, h.n)({
       sessionId: R,
@@ -85,16 +80,16 @@ function N(e) {
   }, [R, N, D, Z, r, w]), r || null == M) ? (0, n.jsx)(m.Z, {}) : (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)("div", {
       style: {
-        backgroundImage: "url(".concat(q, ")")
+        backgroundImage: "url(".concat(G, ")")
       },
       className: S.bannerContainer,
       children: (0, n.jsx)(s.X6q, {
         variant: "heading-xxl/extrabold",
-        children: G
+        children: z
       })
     }), (0, n.jsx)("div", {
       className: S.products,
-      children: J.slice(40 * (H - 1), 40 * H).map((e, t) => {
+      children: X.slice(40 * (H - 1), 40 * H).map((e, t) => {
         let r = g.Z.getCategory(e.categorySkuId);
         return null == r ? null : (0, n.jsx)(p.k0, {
           newValue: {
@@ -108,14 +103,15 @@ function N(e) {
           }, e.skuId)
         }, e.skuId)
       })
-    }), J.length > 40 && (0, n.jsx)("div", {
+    }), X.length > 40 && (0, n.jsx)("div", {
       className: S.paginationContainer,
       children: (0, n.jsx)("div", {
         children: (0, n.jsx)(s.DsT, {
           currentPage: H,
-          totalCount: J.length,
+          totalCount: X.length,
           pageSize: 40,
           onPageChange: e => {
+            var t;
             d.default.track(C.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == B ? true : B.sessionId,
               page_section: null == B ? true : B.pageSection,
@@ -124,7 +120,9 @@ function N(e) {
               page_size: 40,
               cta_name: "".concat(w, " page ").concat(e),
               page_type: w
-            }), W(e), V()
+            }), W(e), null == A || null == (t = A.current) || t.scrollToTop({
+              animate: true
+            })
           },
           disablePaginationGap: true
         })

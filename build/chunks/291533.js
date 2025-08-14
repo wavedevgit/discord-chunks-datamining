@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 291533, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   G: () => d
@@ -15,11 +15,11 @@ var Chunk442837 = require("./442837.js"),
 function d(e) {
   let t = (0, c.A2)(e),
     n = (0, r.e7)([o.Z], () => o.Z.isOpen()),
-    d = (0, r.e7)([a.Z], () => a.Z.hasLayers()),
-    h = (0, s.Ws)({
+    d = (0, r.e7)([s.Z], () => s.Z.hasLayers()),
+    p = (0, a.Ws)({
       location: u.dr.QUESTS_BAR
     });
-  return (0, l.bf)(t && !n && !d && h ? i.z.GUILD_TAG_AVAILABLE_COACHMARK : null, {
+  return (0, l.bf)(t && !n && !d && p ? i.z.GUILD_TAG_AVAILABLE_COACHMARK : null, {
     cooldownDurationMs: 18e4
   })
 }

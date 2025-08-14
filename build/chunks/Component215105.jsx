@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk228168 = require("./228168.js"),
   Chunk420212 = require("./420212.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk211059 = require("./211059.js");
+  Chunk36190 = require("./36190.js");
 let T = (0, Chunk131704.kt)({
     id: "1",
     type: Chunk106351.d.DM
@@ -88,7 +88,7 @@ function N(e) {
     setInteractionToast: w
   } = (0, g.Xo)(), {
     primaryColor: D
-  } = (0, b.z)(), [L, x] = i.useState(""), [M, j] = i.useState((0, u.JM)(L)), k = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
+  } = (0, b.z)(), [L, x] = i.useState(""), [M, k] = i.useState((0, u.JM)(L)), j = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
     e.key === O.vn.ESCAPE && (e.stopPropagation(), P())
   }, [P]);
   i.useEffect(() => {
@@ -147,11 +147,11 @@ function N(e) {
         textValue: L,
         richValue: M,
         onChange: (e, t, n) => {
-          t !== L && (x(t), j(n))
+          t !== L && (x(t), k(n))
         },
-        focused: k.current,
+        focused: j.current,
         onFocus: () => {
-          k.current = true
+          j.current = true
         },
         onSubmit: async e => {
           let {

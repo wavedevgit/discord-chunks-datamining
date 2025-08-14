@@ -11,7 +11,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk982905 = require("./982905.js"),
   Chunk431138 = require("./431138.js"),
   Chunk330711 = require("./330711.js"),
-  Chunk185972 = require("./185972.js");
+  Chunk405948 = require("./405948.js");
 
 function _(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
@@ -35,15 +35,16 @@ class N extends Chunk73800.PureComponent {
     } = this.props, d = null;
     return null != exports && (d = exports.sort((e, t) => e.code < t.code ? false : +(e.code > t.code)).map(e => {
       let t = function(e) {
-        try {
-          return a(621287)("./".concat(e, ".png"))
-        } catch (e) {
-          return null
-        }
-      }(e.code);
+          try {
+            return a(621287)("./".concat(e, ".png"))
+          } catch (e) {
+            return null
+          }
+        }(e.code),
+        s = () => this.setLocale(e.code);
       return null == t ? null : (0, n.jsxs)("li", {
         className: (0, o.l)(u, "locale", null != r && e.code === r.code ? "Current" : null),
-        onClick: () => this.setLocale(e.code),
+        onClick: s,
         children: [(0, n.jsx)("img", {
           className: u.localeImage,
           src: t,
@@ -51,26 +52,26 @@ class N extends Chunk73800.PureComponent {
         }), e.name]
       }, e.code)
     })), (0, Chunk255367.jsxs)("div", {
-      className: l()(Chunk185972.localePicker, Chunk120356),
+      className: l()(Chunk405948.localePicker, Chunk120356),
       onMouseEnter: this.open,
       onMouseLeave: this.close,
       onClick: this.toggle,
       children: [(0, Chunk255367.jsxs)(Chunk435935.k, {
         align: Chunk435935.k.Align.CENTER,
-        className: (0, Chunk982905.l)(Chunk185972, "opener", module ? "Open" : null),
+        className: (0, Chunk982905.l)(Chunk405948, "opener", module ? "Open" : null),
         children: [(0, Chunk255367.jsx)("span", {
-          className: Chunk185972.line
+          className: Chunk405948.line
         }), (0, Chunk255367.jsx)("img", {
-          className: Chunk185972.localeIcon,
+          className: Chunk405948.localeIcon,
           src: Chunk431138.r.ICON_TRANSLATE,
           alt: "Choose Locale"
         }), (0, Chunk255367.jsx)("img", {
-          className: Chunk185972.arrowIcon,
+          className: Chunk405948.arrowIcon,
           src: Chunk431138.r.ICON_ARROW_DOWN,
           alt: "Open Locale"
         })]
       }), (0, Chunk255367.jsx)("ul", {
-        className: (0, Chunk982905.l)(Chunk185972, "localeList", module ? "Open" : "Closed"),
+        className: (0, Chunk982905.l)(Chunk405948, "localeList", module ? "Open" : "Closed"),
         children: Chunk330711
       })]
     })

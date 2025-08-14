@@ -41,7 +41,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk526761 = require("./526761.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk263408 = require("./263408.js");
+  Chunk227674 = require("./227674.js");
 
 function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -133,10 +133,10 @@ let W = Object.freeze({
       type: "EDITOR",
       isCoachmark: true,
       isPreview: true
-    }, () => k.intl.string(k.t.D29k19)).with({
+    }, () => j.intl.string(j.t.D29k19)).with({
       type: "EDITOR",
       isCoachmark: true
-    }, () => k.intl.string(k.t["8+vbqa"])).otherwise(() => k.intl.string(k.t.hjV0fX));
+    }, () => j.intl.string(j.t["8+vbqa"])).otherwise(() => j.intl.string(j.t.hjV0fX));
     return (0, r.jsxs)("div", {
       className: U.title,
       children: [(0, r.jsx)(u.X6q, {
@@ -164,19 +164,19 @@ let W = Object.freeze({
     }).with({
       type: "EDITOR",
       isPreview: true
-    }, () => k.intl.format(k.t.G8yQXl, {
+    }, () => j.intl.format(j.t.G8yQXl, {
       onPremiumClick: () => E.z
     })).with({
       type: "EDITOR",
       isCoachmark: true
-    }, () => k.intl.string(k.t.jmZiNj)).with({
+    }, () => j.intl.string(j.t.jmZiNj)).with({
       type: "EDITOR",
       isPreview: false
-    }, () => k.intl.string(k.t.dqDFwc)).with({
+    }, () => j.intl.string(j.t.dqDFwc)).with({
       isPreview: true
-    }, () => k.intl.format(k.t.DWIjJy, {
+    }, () => j.intl.format(j.t.DWIjJy, {
       onPremiumClick: () => E.z
-    })).otherwise(() => k.intl.string(k.t["np0X/v"]));
+    })).otherwise(() => j.intl.string(j.t["np0X/v"]));
     return (0, r.jsx)(u.X6q, {
       variant: "text-sm/normal",
       className: U.subtext,
@@ -194,7 +194,7 @@ let W = Object.freeze({
     return "EDITOR" === s && c && u ? (0, r.jsx)(y.ZP, {
       type: L.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       subscriptionTier: L.Si.TIER_2,
-      children: k.intl.format(k.t.G8yQXl, {
+      children: j.intl.format(j.t.G8yQXl, {
         onPremiumClick: () => E.z
       })
     }) : (0, r.jsxs)("div", {
@@ -334,21 +334,21 @@ let W = Object.freeze({
         isSelected: c && u,
         onSelect: () => d("system")
       }), (0, r.jsx)(P.bD, {
-        theme: j.BR.LIGHT,
-        isSelected: c && !u && s === j.BR.LIGHT,
-        onSelect: () => d(j.BR.LIGHT)
+        theme: k.BR.LIGHT,
+        isSelected: c && !u && s === k.BR.LIGHT,
+        onSelect: () => d(k.BR.LIGHT)
       }), (0, r.jsx)(P.bD, {
-        theme: j.BR.DARK,
-        isSelected: c && !u && s === j.BR.DARK,
-        onSelect: () => d(j.BR.DARK)
+        theme: k.BR.DARK,
+        isSelected: c && !u && s === k.BR.DARK,
+        onSelect: () => d(k.BR.DARK)
       }), (0, r.jsx)(P.bD, {
-        theme: j.BR.DARKER,
-        isSelected: c && !u && s === j.BR.DARKER,
-        onSelect: () => d(j.BR.DARKER)
+        theme: k.BR.DARKER,
+        isSelected: c && !u && s === k.BR.DARKER,
+        onSelect: () => d(k.BR.DARKER)
       }), (0, r.jsx)(P.bD, {
-        theme: j.BR.MIDNIGHT,
-        isSelected: c && !u && s === j.BR.MIDNIGHT,
-        onSelect: () => d(j.BR.MIDNIGHT)
+        theme: k.BR.MIDNIGHT,
+        isSelected: c && !u && s === k.BR.MIDNIGHT,
+        onSelect: () => d(k.BR.MIDNIGHT)
       }), !n && !t && (0, r.jsx)(P.bD, {
         theme: "system",
         isSelected: c && u,
@@ -371,7 +371,7 @@ let W = Object.freeze({
       }), t && o && (0, r.jsx)(u.X6q, {
         className: U.upsellText,
         variant: "heading-sm/semibold",
-        children: k.intl.string(k.t.POSLGR)
+        children: j.intl.string(j.t.POSLGR)
       }), (0, r.jsxs)("div", {
         className: a()(U.presets, {
           [U.presetsJustify]: t

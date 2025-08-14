@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 434479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => f
+  m: () => h
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -10,11 +10,11 @@ var Chunk120356 = require("./120356.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk589440 = require("./589440.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk828997 = require("./828997.js"),
-  Chunk81252 = require("./81252.js"),
-  Chunk859402 = require("./859402.js");
+  Chunk780462 = require("./780462.js"),
+  Chunk55940 = require("./55940.js"),
+  Chunk509612 = require("./509612.js");
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function h(e) {
   return e
 }
 
-function p(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,20 +46,20 @@ function p(e, t) {
   }), e
 }
 
-function f(e) {
+function h(e) {
   var t, {
       id: n,
       className: i,
-      innerClassName: f,
+      innerClassName: h,
       renderIcon: g,
       text: m,
       selected: b,
       trailing: O,
       background: _,
       showUnread: y = false,
-      ref: C
+      ref: v
     } = e,
-    v = function(e, t) {
+    j = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -74,12 +74,12 @@ function f(e) {
       }
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]);
-  let j = (0, o.JA)(n),
-    E = null != (t = (0, s.qg)(m)) ? t : "";
+  let C = (0, o.JA)(n),
+    E = null != (t = (0, a.qg)(m)) ? t : "";
   return (0, r.jsx)("li", {
-    ref: C,
-    children: (0, r.jsxs)(a.kL8, p(h({}, v), {
-      buttonProps: p(h({}, j), {
+    ref: v,
+    children: (0, r.jsxs)(s.kL8, f(p({}, j), {
+      buttonProps: f(p({}, C), {
         id: n,
         role: "button"
       }),
@@ -92,7 +92,7 @@ function f(e) {
           right: 4
         }
       },
-      onContextMenu: null != v.onContextMenu ? v.onContextMenu : e => {
+      onContextMenu: null != j.onContextMenu ? j.onContextMenu : e => {
         e.stopPropagation()
       },
       className: l()(u.containerDefault, d.wrapper, {
@@ -101,7 +101,7 @@ function f(e) {
       children: [_, y ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
-        className: l()([d.link, d.basicChannelRowLink, f]),
+        className: l()([d.link, d.basicChannelRowLink, h]),
         children: (0, r.jsxs)("div", {
           className: c.content,
           children: [(0, r.jsx)("div", {

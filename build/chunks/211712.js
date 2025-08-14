@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 211712, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ib: () => s,
@@ -11,7 +11,7 @@ let r = {
       themeColors: [752280, 9215590],
       avatarDecorationSkuId: "1144059132517826601",
       getName: () => Chunk388032.intl.string(Chunk388032.t["TFc+iI"]),
-      getHeaderSrc: () => require("./517939.js").Z,
+      getHeaderSrc: () => require("./947557.js").Z,
       getBannerSrc: e => e ? n(288097).Z : n(201016).Z
     },
     cyberpunk: {

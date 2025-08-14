@@ -18,8 +18,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk519309 = require("./519309.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk476265 = require("./476265.js"),
+  Chunk197571 = require("./197571.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,7 +72,7 @@ class b extends Chunk73800.PureComponent {
   render() {
     return (0, Chunk255367.jsxs)(Chunk481060.xJW, {
       title: Chunk388032.intl.string(Chunk388032.t["sqUm+v"]),
-      className: Chunk881488.marginBottom8,
+      className: Chunk197571.marginBottom8,
       children: [this.renderAutomaticVADToggle(), this.renderSlider()]
     })
   }

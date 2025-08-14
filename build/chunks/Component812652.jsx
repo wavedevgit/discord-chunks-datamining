@@ -1,8 +1,8 @@
 /** Chunk was on 46746 **/
 /** chunk id: 812652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  PG: () => b,
-  Vf: () => S,
+  PG: () => S,
+  Vf: () => b,
   YX: () => C,
   ZP: () => O,
   l9: () => I
@@ -23,10 +23,10 @@ var Chunk268146 = require("./268146.js"),
   Chunk396678 = require("./396678.js"),
   Chunk37113 = require("./37113.js"),
   Chunk65154 = require("./65154.js"),
-  Chunk676462 = require("./676462.js"),
+  Chunk637824 = require("./637824.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk777499 = require("./777499.js");
-let b = [{
+  Chunk355669 = require("./355669.js");
+let S = [{
     value: Chunk37113.tI.PRESET_VIDEO,
     canUse: e => true
   }, {
@@ -36,7 +36,7 @@ let b = [{
     value: Chunk37113.tI.PRESET_CUSTOM,
     canUse: e => true
   }],
-  S = [{
+  b = [{
     value: Chunk37113.LY.RESOLUTION_720,
     canUse: e => true
   }, {
@@ -104,7 +104,7 @@ function O(e) {
     onSelect: O,
     children: [(0, r.jsx)(l.kSQ, {
       label: v.intl.string(_.default.P2pjm5),
-      children: b.filter(e => {
+      children: S.filter(e => {
         let {
           canUse: t
         } = e;
@@ -146,7 +146,7 @@ function O(e) {
       children: [(0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         id: "resolution",
         label: v.intl.string(_.default.IG5n0d),
-        children: S.filter(e => {
+        children: b.filter(e => {
           let {
             canUse: t
           } = e;

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 750995, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -17,16 +17,7 @@ var Chunk704215 = require("./704215.js"),
   Chunk228392 = require("./228392.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js");
-let m = e => {
-  var t;
-  let n = d.Z.getGuild(e),
-    r = !!(null == n ? true : n.features.has(h.oNc.COMMUNITY)),
-    l = p.Z.can(h.Plq.MANAGE_CHANNELS, n),
-    a = (0, s.zu)(i.z.FORUM_CHANNEL_UPSELL_MODAL),
-    o = null != (t = u.Z.getMemberCount(e)) ? t : 0;
-  return r && l && !a && o >= 200
-};
-class b extends Chunk317770.Z {
+class m extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("CHANNEL_SELECT", this.handleChannelSelect)
   }
@@ -37,7 +28,15 @@ class b extends Chunk317770.Z {
     let {
       guildId: t
     } = e;
-    if (null == t || !m(t)) return;
+    if (null == t || !(e => {
+        var t;
+        let n = d.Z.getGuild(e),
+          r = !!(null == n ? true : n.features.has(h.oNc.COMMUNITY)),
+          l = p.Z.can(h.Plq.MANAGE_CHANNELS, n),
+          a = (0, s.zu)(i.z.FORUM_CHANNEL_UPSELL_MODAL),
+          o = null != (t = u.Z.getMemberCount(e)) ? t : 0;
+        return r && l && !a && o >= 200
+      })(t)) return;
     (0, f.qz)(), (0, c.kk)(i.z.FORUM_CHANNEL_UPSELL_MODAL);
     let a = function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : g.L.DISMISS;
@@ -93,4 +92,4 @@ class b extends Chunk317770.Z {
     })
   }
 }
-let _ = new b
+let b = new m

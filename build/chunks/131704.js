@@ -19,7 +19,7 @@ require.d(exports, {
   X_: () => et,
   Y0: () => Q,
   _H: () => eB,
-  bc: () => k,
+  bc: () => j,
   bw: () => D,
   dF: () => X,
   hv: () => M,
@@ -30,7 +30,7 @@ require.d(exports, {
   nl: () => eE,
   oj: () => R,
   ov: () => $,
-  q_: () => ek,
+  q_: () => ej,
   r8: () => T,
   sR: () => U,
   tx: () => w,
@@ -126,10 +126,10 @@ let L = new Set([Chunk981631.d4z.GUILD_STAGE_VOICE]),
 function M(e) {
   return x.has(e)
 }
-let j = new Set([Chunk981631.d4z.GROUP_DM]);
+let k = new Set([Chunk981631.d4z.GROUP_DM]);
 
-function k(e) {
-  return j.has(e)
+function j(e) {
+  return k.has(e)
 }
 let U = new Set([Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM, Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.GUILD_ANNOUNCEMENT, Chunk981631.d4z.ANNOUNCEMENT_THREAD, Chunk981631.d4z.PUBLIC_THREAD, Chunk981631.d4z.PRIVATE_THREAD]);
 
@@ -287,7 +287,7 @@ class eg extends ep {
     return this.type === Chunk981631.d4z.GROUP_DM
   }
   isMultiUserDM() {
-    return k(this.type)
+    return j(this.type)
   }
   isDM() {
     return this.type === Chunk981631.d4z.DM
@@ -722,7 +722,7 @@ class eM extends eg {
     super(e), this.appliedTags = null != (t = e.appliedTags) ? t : [], this.bitrate_ = e.bitrate_, this.flags_ = e.flags_, this.lastMessageId = e.lastMessageId, this.lastPinTimestamp = e.lastPinTimestamp, this.member = e.member, this.memberCount = e.memberCount, this.memberIdsPreview = e.memberIdsPreview, this.messageCount = e.messageCount, this.nsfw_ = e.nsfw_, this.ownerId = e.ownerId, this.parent_id = e.parent_id, this.parentChannelThreadType = e.parentChannelThreadType, this.rateLimitPerUser_ = e.rateLimitPerUser_, this.rtcRegion = e.rtcRegion, this.threadMetadata = e.threadMetadata, this.userLimit_ = e.userLimit_, this.videoQualityMode = e.videoQualityMode
   }
 }
-let ej = {
+let ek = {
   [Chunk981631.d4z.DM]: eD.fromServer,
   [Chunk981631.d4z.GROUP_DM]: eD.fromServer,
   [Chunk981631.d4z.GUILD_TEXT]: ey.fromServer,
@@ -739,9 +739,9 @@ let ej = {
   [Chunk981631.d4z.GUILD_MEDIA]: eC.fromServer
 };
 
-function ek(e, t) {
+function ej(e, t) {
   var n, r;
-  return (null != (r = ej[null != (n = e.type) ? n : g.d4z.GUILD_TEXT]) ? r : eE.fromServer)(e, t)
+  return (null != (r = ek[null != (n = e.type) ? n : g.d4z.GUILD_TEXT]) ? r : eE.fromServer)(e, t)
 }
 
 function eU(e) {

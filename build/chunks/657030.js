@@ -19,19 +19,21 @@ class s extends Chunk317770.Z {
     Chunk570140.Z.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
   }
   constructor(...e) {
-    var t, n;
-    super(...e), t = "handlePostConnectionOpen", n = () => {
-      let e = a.Z.getGameRelationships(),
-        t = new Set;
-      e.values().forEach(e => {
-        e.type === o.OGo.PENDING_INCOMING && t.add(e.applicationId)
-      }), l.ZP.fetchApplications(Array.from(t))
-    }, t in this ? Object.defineProperty(this, t, {
-      value: n,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[t] = n
+    super(...e),
+      function(e, t, n) {
+        t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
+      }(this, "handlePostConnectionOpen", () => {
+        let e = a.Z.getGameRelationships(),
+          t = new Set;
+        e.values().forEach(e => {
+          e.type === o.OGo.PENDING_INCOMING && t.add(e.applicationId)
+        }), l.ZP.fetchApplications(Array.from(t))
+      })
   }
 }
 let c = new s

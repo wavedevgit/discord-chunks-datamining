@@ -27,7 +27,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk514020 = require("./514020.js"),
   Chunk529840 = require("./529840.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk788119 = require("./788119.js"),
+  Chunk107785 = require("./107785.js"),
   Chunk724531 = require("./724531.js"),
   Chunk99713 = require("./99713.js"),
   Chunk334202 = require("./334202.js"),
@@ -62,13 +62,13 @@ function I(e) {
 function k() {
   return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
     children: [(0, Chunk255367.jsx)("div", {
-      className: Chunk788119.title,
+      className: Chunk107785.title,
       children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
         variant: "heading-xl/bold",
         children: Chunk388032.intl.string(Chunk388032.t["PFp+aG"])
       })
     }), (0, Chunk255367.jsx)(Chunk481060.Text, {
-      className: Chunk788119.description,
+      className: Chunk107785.description,
       variant: "text-md/medium",
       color: "header-secondary",
       children: Chunk388032.intl.string(Chunk388032.t.eBIGBw)
@@ -78,7 +78,7 @@ function k() {
 
 function q() {
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk788119.erroredContent,
+    className: Chunk107785.erroredContent,
     children: (0, Chunk255367.jsx)(Chunk481060.Eep, {
       src: Chunk334202,
       width: 225,

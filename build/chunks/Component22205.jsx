@@ -2,7 +2,7 @@
 /** chunk id: 22205, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -31,7 +31,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk475278 = require("./475278.js");
+  Chunk534887 = require("./534887.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,7 +81,7 @@ function x(e) {
       e.stopPropagation(), null == a || a(), null == c || c()
     }, [c, a]),
     M = (0, d.e7)([S.ZP], () => S.ZP.getFocusedRunningGame()),
-    j = g ? (0, r.jsxs)("div", {
+    k = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
         color: "text-primary",
@@ -104,12 +104,12 @@ function x(e) {
         })]
       })]
     }) : null,
-    k = g ? null : R.intl.string(R.t.oEJEFh),
+    j = g ? null : R.intl.string(R.t.oEJEFh),
     U = null != (t = null == I ? true : I.isStaff()) && t || null != (n = null == I ? true : I.isStaffPersonal()) && n;
   return (0, r.jsx)(A.Y, {
     title: R.intl.string(R.t.U38qZm),
-    body: j,
-    hint: U ? k : true,
+    body: k,
+    hint: U ? j : true,
     confirmText: R.intl.string(R.t.a3HlgI),
     cancelText: null != M ? R.intl.string(R.t.qIYnPj) : true,
     icon: (0, r.jsx)(b.Z, {
@@ -165,7 +165,7 @@ class M extends Chunk73800.PureComponent {
       showError: i
     } = this.state;
     return null != require ? Chunk73800 ? (0, Chunk255367.jsx)(Chunk333031.Z, {
-      className: Chunk475278.errorClickNotification,
+      className: Chunk534887.errorClickNotification,
       children: (0, Chunk255367.jsx)(x, {
         error: require,
         onLock: () => {
@@ -205,4 +205,4 @@ class M extends Chunk73800.PureComponent {
     }), w(this, "pid", null)
   }
 }
-let j = M
+let k = M

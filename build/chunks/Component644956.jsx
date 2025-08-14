@@ -34,8 +34,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk594174 = require("./594174.js"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk692228 = require("./692228.js"),
-  Chunk479543 = require("./479543.js");
+  Chunk430864 = require("./430864.js"),
+  Chunk329072 = require("./329072.js");
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,7 +46,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,7 +71,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -113,7 +113,7 @@ function B(e) {
       let {
         isShown: a
       } = i;
-      return (0, r.jsx)(f.Z, j({
+      return (0, r.jsx)(f.Z, k({
         ref: c,
         selected: a,
         colorString: t.colorString,
@@ -129,8 +129,8 @@ function B(e) {
           (0, d.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("73387")]).then(n.bind(n, 757387));
-            return t => (0, r.jsx)(e, U(j({}, t), {
+            } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("96306")]).then(n.bind(n, 757387));
+            return t => (0, r.jsx)(e, U(k({}, t), {
               user: _,
               guildId: o,
               channel: p,
@@ -188,7 +188,7 @@ function Z(e) {
   });
   return (0, r.jsx)(c.d.Provider, {
     value: true,
-    children: (0, r.jsx)("div", U(j({
+    children: (0, r.jsx)("div", U(k({
       className: L.rolePopout,
       ref: d
     }, t), {
@@ -225,7 +225,7 @@ function F(e) {
     inlinePreview: d = false
   } = e, {
     analyticsLocations: f
-  } = (0, m.ZP)(h.Z.ROLE_MENTION), _ = (0, l.e7)([p.Z], () => p.Z.roleStyle), g = (0, l.e7)([C.Z], () => null == a || null == t ? null : C.Z.getRole(a, t)), E = (0, I.yH)(a, g), b = !d && null != g && !(0, v.Gr)(g), T = b && "dot" === _, S = b && "username" === _, A = E && null != g ? g.colorStrings : null, N = i.useRef(null), R = e => (0, r.jsxs)(O.Z, U(j({
+  } = (0, m.ZP)(h.Z.ROLE_MENTION), _ = (0, l.e7)([p.Z], () => p.Z.roleStyle), g = (0, l.e7)([C.Z], () => null == a || null == t ? null : C.Z.getRole(a, t)), E = (0, I.yH)(a, g), b = !d && null != g && !(0, v.Gr)(g), T = b && "dot" === _, S = b && "username" === _, A = E && null != g ? g.colorStrings : null, N = i.useRef(null), R = e => (0, r.jsxs)(O.Z, U(k({
     ref: N,
     className: L.roleMention,
     color: S ? g.color : null,

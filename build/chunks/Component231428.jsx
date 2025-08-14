@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 231428, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => L
@@ -28,8 +28,8 @@ var i, Chunk255367 = require("./255367.js"),
   Chunk474936 = require("./474936.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk969883 = require("./969883.js"),
-  Chunk885869 = require("./885869.js");
+  Chunk504333 = require("./504333.js"),
+  Chunk982710 = require("./982710.js");
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -163,21 +163,21 @@ class w extends(i = Chunk73800.PureComponent) {
       locale: i
     } = this.props, s = null != require && require.isPurchasedExternally;
     return 0 !== exports.length || Chunk73800 ? (0, Chunk255367.jsxs)("div", {
-      className: Chunk969883.verticalFit,
+      className: Chunk504333.verticalFit,
       children: [null != require && Chunk73800 ? this.renderPremiumExternalSubscription(require) : null, exports.length > 0 ? (0, Chunk255367.jsxs)("div", {
-        className: l()(Chunk969883.paymentPane, Chunk969883.verticalFit),
+        className: l()(Chunk504333.paymentPane, Chunk504333.verticalFit),
         children: [module ? null : (0, Chunk255367.jsx)("div", {
-          className: l()(Chunk969883.paymentRow, Chunk969883.bottomDivider),
+          className: l()(Chunk504333.paymentRow, Chunk504333.bottomDivider),
           children: (0, Chunk255367.jsxs)(Chunk600164.Z, {
-            className: Chunk969883.paymentRowHeader,
+            className: Chunk504333.paymentRowHeader,
             children: [(0, Chunk255367.jsx)("div", {
-              className: Chunk885869.date,
+              className: Chunk982710.date,
               children: Chunk388032.intl.string(Chunk388032.t["5t11BQ"])
             }), (0, Chunk255367.jsx)("div", {
-              className: Chunk969883.paymentRowHeaderDescription,
+              className: Chunk504333.paymentRowHeaderDescription,
               children: Chunk388032.intl.string(Chunk388032.t.yAAPb2)
             }), (0, Chunk255367.jsx)("div", {
-              className: Chunk885869.amount,
+              className: Chunk982710.amount,
               children: Chunk388032.intl.string(Chunk388032.t["6MqHXV"])
             })]
           })

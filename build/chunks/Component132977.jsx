@@ -14,7 +14,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk755721 = require("./755721.js"),
   Chunk727637 = require("./727637.js"),
   Chunk600164 = require("./600164.jsx"),
-  Chunk11670 = require("./11670.js");
+  Chunk929370 = require("./929370.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,12 +76,12 @@ var b = function(e) {
   return e.DEFAULT = "default", e.SMALL = "small", e
 }({});
 let y = {
-    default: Chunk11670.shineDefault,
-    small: Chunk11670.shineSmall
+    default: Chunk929370.shineDefault,
+    small: Chunk929370.shineSmall
   },
   O = {
-    default: Chunk11670.shineInnerDefault,
-    small: Chunk11670.shineInnerSmall
+    default: Chunk929370.shineInnerDefault,
+    small: Chunk929370.shineInnerSmall
   };
 class v extends(r = Chunk73800.PureComponent) {
   render() {
@@ -93,8 +93,8 @@ class v extends(r = Chunk73800.PureComponent) {
       } = module,
       o = g(module, ["className", "shineSize", "shinePaused"]);
     return (0, Chunk255367.jsx)(Chunk748780.Z.div, m(p({}, Chunk73800), {
-      className: s()(Chunk11670.shineContainer, exports, {
-        [Chunk11670.shinePaused]: r
+      className: s()(Chunk929370.shineContainer, exports, {
+        [Chunk929370.shinePaused]: r
       }),
       children: (0, Chunk255367.jsx)(Chunk600164.Z, {
         align: Chunk600164.Z.Align.CENTER,

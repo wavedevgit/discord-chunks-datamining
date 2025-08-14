@@ -26,7 +26,7 @@ require.r(exports), require.d(exports, {
 var Chunk239189 = require("./239189.js"),
   Chunk300121 = require("./300121.js"),
   o = {};
-for (var a in Chunk300121) 0 > ["Globals", "default"].indexOf(a) && (o[a] = (function(e) {
+for (var a in Chunk300121) 0 > ["default", "Globals"].indexOf(a) && (o[a] = (function(e) {
   return i[e]
 }).bind(0, a));
 require.d(exports, o);

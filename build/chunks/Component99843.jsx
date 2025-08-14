@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk88925 = require("./88925.js");
+  Chunk782196 = require("./782196.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -108,7 +108,7 @@ function I(e) {
           onClick: () => {
             null == m || m(), (0, u.B)(i, s.Z.HEADER_BAR)
           },
-          onContextMenu: e => (0, a.jW)(e, () => Promise.all([n.e("79695"), n.e("70205"), n.e("57789"), n.e("74724")]).then(n.bind(n, 354741)).then(e => {
+          onContextMenu: e => (0, a.jW)(e, () => Promise.all([n.e("79695"), n.e("70205"), n.e("57789"), n.e("54115")]).then(n.bind(n, 354741)).then(e => {
             let {
               default: n
             } = e;

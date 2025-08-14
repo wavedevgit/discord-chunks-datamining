@@ -8,7 +8,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk18582 = require("./18582.jsx"),
   Chunk944548 = require("./944548.jsx"),
   Chunk477839 = require("./477839.js"),
-  Chunk694271 = require("./694271.js");
+  Chunk45147 = require("./45147.js");
 
 function l(e) {
   let {
@@ -63,7 +63,7 @@ function u() {
   var e;
   let [t, n] = (0, Chunk284539.Z)(Chunk477839.yN.CURSORS), o = null != (e = exports.selectedCursor) ? module : Chunk477839.Vx.DEFAULT;
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk694271.cursors,
+    className: Chunk45147.cursors,
     children: Chunk477839.Wq.map(e => (0, r.jsx)(l, {
       cursor: e,
       selected: e === o,

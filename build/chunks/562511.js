@@ -1,8 +1,8 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 562511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A2: () => g,
-  S3: () => f
+  S3: () => h
 });
 var Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
@@ -16,24 +16,24 @@ var Chunk73800 = require("./73800.js"),
   Chunk864133 = require("./864133.js"),
   Chunk981631 = require("./981631.js");
 
-function f(e) {
+function h(e) {
   let t = function(e) {
-    let t = (0, s.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : p.lds);
-    return (0, i.e7)([c.Z, u.default, a.ZP], () => {
+    let t = (0, a.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds);
+    return (0, i.e7)([c.Z, u.default, s.ZP], () => {
       var t, n;
       if (null === e) returnfalse;
       let r = c.Z.getGuild(e);
       if (true === r || !(0, d.up)(r) || null == r.profile || null === r.profile.tag) returnfalse;
       let i = u.default.getCurrentUser();
       if (true === i || (null == (t = i.primaryGuild) ? true : t.identityGuildId) === r.id && (null == (n = i.primaryGuild) ? true : n.tag) === r.profile.tag) returnfalse;
-      let l = a.ZP.getMember(e, i.id);
+      let l = s.ZP.getMember(e, i.id);
       return null != l && !l.isPending
     }, [e]) && !t
   }(e);
   return ! function(e) {
-    let t = (0, s.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : p.lds),
-      n = (0, i.e7)([h.Z], () => null === e ? null : h.Z.getGuildLastSeenInfo(e)),
-      a = (0, i.e7)([u.default], () => {
+    let t = (0, a.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds),
+      n = (0, i.e7)([p.Z], () => null === e ? null : p.Z.getGuildLastSeenInfo(e)),
+      s = (0, i.e7)([u.default], () => {
         var e;
         return null == (e = u.default.getCurrentUser()) ? true : e.primaryGuild
       }),
@@ -49,13 +49,13 @@ function f(e) {
             tag: d
           }
         })
-      }, [e, d, t, n]), null == d || (null == a ? true : a.identityGuildId) === e && (null == a ? true : a.tag) === d) returnfalse;
-    let f = (null == a ? true : a.identityGuildId) === e && (null == a ? true : a.tag) === null,
+      }, [e, d, t, n]), null == d || (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === d) returnfalse;
+    let h = (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === null,
       g = null === n || (null == n ? true : n.tag) === d;
-    return f && !g && t
+    return h && !g && t
   }(e) ? t ? "available" : null : "changed"
 }
 
 function g(e) {
-  return null !== f(e)
+  return null !== h(e)
 }

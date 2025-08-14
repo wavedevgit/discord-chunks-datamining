@@ -18,8 +18,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk38618 = require("./38618.js"),
-  Chunk265658 = require("./265658.js"),
-  Chunk881291 = require("./881291.js");
+  Chunk499504 = require("./499504.js"),
+  Chunk451429 = require("./451429.js");
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -277,15 +277,11 @@ function R(e) {
     isAverageFrameTime: r,
     onToggleAverageFrameTime: c
   } = e, [s, l] = a.useState(t.dispatcher.getIsRequestIdleCallbackEnabled()), i = a.useRef(null);
-  a.useEffect(() => (i.current = setInterval(() => {
+  return a.useEffect(() => (i.current = setInterval(() => {
     l(t.dispatcher.getIsRequestIdleCallbackEnabled())
   }, f), () => {
     null != i.current && clearInterval(i.current)
-  }), [t.dispatcher]);
-  let o = e => {
-    t.dispatcher.toggleRequestIdleCallback(e), l(e)
-  };
-  return (0, n.jsxs)("div", {
+  }), [t.dispatcher]), (0, n.jsxs)("div", {
     className: d.panelGroup,
     children: [(0, n.jsx)(u.ua7, {
       position: "left",
@@ -307,7 +303,10 @@ function R(e) {
       }))
     }), (0, n.jsx)(u.XZJ, {
       value: s,
-      onChange: () => o(!s),
+      onChange: () => {
+        var e;
+        return e = !s, void(t.dispatcher.toggleRequestIdleCallback(e), l(e))
+      },
       size: 18,
       type: u.XZJ.Types.INVERTED,
       shape: u.XZJ.Shapes.BOX,
@@ -477,9 +476,9 @@ function F() {
   let e = (0, Chunk442837.e7)([Chunk38618.Z], () => Chunk38618.Z.getSocket()),
     [t, r] = Chunk73800.useState(false);
   return I(), (0, Chunk255367.jsx)("div", {
-    className: s()(Chunk881291.panel, Chunk265658.panel),
+    className: s()(Chunk451429.panel, Chunk499504.panel),
     children: (0, Chunk255367.jsxs)(Chunk481060.zJl, {
-      className: Chunk265658.panel,
+      className: Chunk499504.panel,
       children: [(0, Chunk255367.jsx)(w, {
         socket: module,
         isAverageFrameTime: exports

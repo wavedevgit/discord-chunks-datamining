@@ -29,11 +29,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk723359 = require("./723359.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk802506 = require("./802506.js");
+  Chunk236202 = require("./236202.js");
 
 function x() {
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk802506.inviteToolbar,
+    className: Chunk236202.inviteToolbar,
     children: (0, Chunk255367.jsx)(Chunk518311.Z, {
       tooltip: Chunk388032.intl.string(Chunk388032.t.HfOgAw),
       location: "PeoplePageHeaderToolbar-CreateDMButton"

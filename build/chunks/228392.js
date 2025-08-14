@@ -5,14 +5,14 @@ require.d(exports, {
   B: () => D,
   B5: () => R,
   Do: () => w,
-  GX: () => j,
+  GX: () => k,
   HR: () => F,
   Hr: () => C,
   Je: () => A,
   Js: () => b,
   KR: () => P,
   MO: () => U,
-  N3: () => k,
+  N3: () => j,
   Oq: () => S,
   P_: () => v,
   Vn: () => T,
@@ -349,7 +349,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     readGuideCta: t
   } = e;
@@ -358,7 +358,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     isMobile: t
   } = e;

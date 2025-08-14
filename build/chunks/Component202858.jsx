@@ -47,7 +47,7 @@ function s() {
     (0, i.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("76540"), n.e("77720")]).then(n.bind(n, 628908));
+      } = await Promise.all([n.e("76540"), n.e("82411")]).then(n.bind(n, 628908));
       return n => (0, r.jsx)(t, o(l({}, n), {
         isTotp: e
       }))

@@ -1,35 +1,35 @@
-/** Chunk was on 88333 **/
+/** Chunk was on 54115 **/
 /** chunk id: 759198, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => c
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk51802 = require("./51802.js");
+  Chunk977072 = require("./977072.js");
 
-function d(e) {
+function c(e) {
   var {
     className: t,
     color: n
-  } = e, a = function(e, t) {
+  } = e, r = function(e, t) {
     if (null == e) return {};
-    var n, i, a = function(e, t) {
+    var n, i, r = function(e, t) {
       if (null == e) return {};
-      var n, i, a = {},
-        r = Object.keys(e);
-      for (i = 0; i < r.length; i++) n = r[i], t.indexOf(n) >= 0 || (a[n] = e[n]);
-      return a
+      var n, i, r = {},
+        a = Object.keys(e);
+      for (i = 0; i < a.length; i++) n = a[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+      var a = Object.getOwnPropertySymbols(e);
+      for (i = 0; i < a.length; i++) n = a[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
-    return a
+    return r
   }(e, ["className", "color"]);
-  return (0, i.jsx)(l.Text, function(e) {
+  return (0, i.jsx)(o.Text, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -47,9 +47,9 @@ function d(e) {
     }
     return e
   }({
-    className: r()({
-      [o.text]: null == n
+    className: a()({
+      [l.text]: null == n
     }, t),
     color: n
-  }, a))
+  }, r))
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 320830, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => _
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -12,7 +12,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk477690 = require("./477690.js"),
   Chunk481060 = require("./481060.js"),
   Chunk624138 = require("./624138.js"),
-  Chunk573777 = require("./573777.js");
+  Chunk955393 = require("./955393.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -37,14 +37,10 @@ function f(e) {
 }
 let m = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
   g = {
-    START: 0,
-    END: 1
-  },
-  _ = {
     friction: 10,
     tension: 130
   },
-  x = function(e) {
+  _ = function(e) {
     return class extends i.Component {
       componentDidMount() {
         a.tq || (window.addEventListener("resize", this.handleResizeDebounced), this.handleResize())
@@ -53,18 +49,18 @@ let m = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         clearTimeout(this.timeout), window.removeEventListener("resize", this.handleResizeDebounced)
       }
       componentWillAppear(e) {
-        this.state.shouldAnimate ? this.animateTo(g.END, e) : e()
+        this.state.shouldAnimate ? this.animateTo(1, e) : e()
       }
       componentWillEnter(e) {
-        this.state.shouldAnimate ? (clearTimeout(this.timeout), this.timeout = setTimeout(() => this.animateTo(g.END, e), 40)) : e()
+        this.state.shouldAnimate ? (clearTimeout(this.timeout), this.timeout = setTimeout(() => this.animateTo(1, e), 40)) : e()
       }
       componentWillLeave(e) {
-        this.state.shouldAnimate ? this.animateTo(g.START, e) : e()
+        this.state.shouldAnimate ? this.animateTo(0, e) : e()
       }
       animateTo(e, t) {
         s.Z.spring(this.anim, f({
           toValue: e
-        }, _)).start(t)
+        }, g)).start(t)
       }
       getAnimatedStyle(e) {
         return this.state.shouldAnimate ? {
@@ -101,11 +97,11 @@ let m = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         })
       }
       constructor(...e) {
-        super(...e), p(this, "timeout", true), p(this, "anim", new s.Z.Value(g.START)), p(this, "state", {
+        super(...e), p(this, "timeout", true), p(this, "anim", new s.Z.Value(0)), p(this, "state", {
           shouldAnimate: !a.tq
         }), p(this, "handleResize", () => {
           let e = window.innerWidth > m;
-          !this.state.shouldAnimate && e && this.anim.setValue(g.END), this.setState({
+          !this.state.shouldAnimate && e && this.anim.setValue(1), this.setState({
             shouldAnimate: e
           })
         }), p(this, "handleResizeDebounced", o()(this.handleResize, 60))

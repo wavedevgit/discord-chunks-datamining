@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk544891 = require("./544891.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk695937 = require("./695937.js"),
+  Chunk768051 = require("./768051.js"),
   Chunk982404 = require("./982404.js"),
   Chunk299156 = require("./299156.js");
 let j = function(e) {
@@ -29,9 +29,9 @@ let j = function(e) {
     onClose: a,
     onConfirm: j,
     userDiscountOffer: E
-  } = e, [O, P] = r.useState(false), [v, N] = r.useState(false), I = async e => {
+  } = e, [O, P] = r.useState(false), [N, v] = r.useState(false), I = async e => {
     try {
-      N(true), P(false), await o.tn.post({
+      v(true), P(false), await s.tn.post({
         url: x.ANM.USER_OFFER_REDEEM,
         body: {
           user_discount_offer_id: e
@@ -41,7 +41,7 @@ let j = function(e) {
     } catch (e) {
       P(true)
     }
-    N(false)
+    v(false)
   }, T = (0, u.ZP)(), S = (0, l.wj)(T) ? g : C, R = (0, _._)(t, b.Xh.PREMIUM_MONTH_TIER_2, E), w = (0, m.aS)(b.Xh.PREMIUM_MONTH_TIER_2, false, false, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
@@ -95,7 +95,7 @@ let j = function(e) {
             children: y.intl.string(y.t.AD6odn)
           })
         }), (0, i.jsxs)("div", {
-          className: s()(h.confirmDiscountButtons, {
+          className: o()(h.confirmDiscountButtons, {
             [h.confrimDiscountsButtonsError]: O,
             [h.confrimDiscountsButtonsNoError]: !O
           }),
@@ -107,7 +107,7 @@ let j = function(e) {
             variant: "primary",
             size: "sm",
             text: y.intl.string(y.t.CKSuZG),
-            loading: v,
+            loading: N,
             onClick: () => I(E.id)
           })]
         })]

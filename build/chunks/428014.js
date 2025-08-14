@@ -1,8 +1,3 @@
-/** Chunk was on 787 **/
-/** chunk id: 428014, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  container: "container__00b64",
-  spinnerContainer: "spinnerContainer__00b64",
-  spinner: "spinner__00b64",
-  loading: "loading__00b64"
-}
+/** Chunk was on 31207 **/
+/** chunk id: 428014, original params: c (module,exports,require) **/
+module.exports = JSON.parse('{"klSpfn":"Редактировать настройки","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["сообщение"],"few":["сообщения"],"other":["сообщений"]},0,"cardinal"]],"O+racX":"Уведомлений нет.","5H2Jd3":"Показать все","dcpdhI":"Выберите сообщение, чтобы перейти.","VAK+h4":"Добро пожаловать в центр уведомлений!"}')

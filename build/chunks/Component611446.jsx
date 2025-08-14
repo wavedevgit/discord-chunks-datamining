@@ -1,8 +1,8 @@
-/** Chunk was on 9738 **/
+/** Chunk was on 89650 **/
 /** chunk id: 611446, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   O: () => _,
-  default: () => b
+  default: () => O
 }), require("./388685.js");
 var i, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,26 +14,26 @@ var i, Chunk255367 = require("./255367.js"),
   Chunk858597 = require("./858597.jsx"),
   Chunk486213 = require("./486213.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk543921 = require("./543921.js"),
+  Chunk767770 = require("./767770.js"),
   _ = ((i = {}).ACTIONS = "ACTIONS", i.SAFETY_TIPS = "SAFETY_TIPS", i.ABOUT_SAFETY_ALERTS = "ABOUT_SAFETY_ALERTS", i);
-let b = t => {
+let O = t => {
   let {
     onClose: e,
     channelId: n,
     warningId: i,
     warningType: _,
-    otherUserId: b,
-    transitionState: O
-  } = t, g = null != (0, o.M)(n), [E, h] = s.useState("ACTIONS"), p = s.useCallback(t => {
+    otherUserId: O,
+    transitionState: b
+  } = t, E = null != (0, o.M)(n), [g, h] = s.useState("ACTIONS"), p = s.useCallback(t => {
     (0, c.qc)({
       channelId: n,
       warningId: i,
       warningType: _,
-      senderId: b,
+      senderId: O,
       cta: t,
-      isNudgeWarning: g
+      isNudgeWarning: E
     })
-  }, [n, i, _, b, g]), A = s.useCallback(t => {
+  }, [n, i, _, O, E]), A = s.useCallback(t => {
     let {
       text: e,
       onClick: n
@@ -45,7 +45,7 @@ let b = t => {
       textVariant: "text-sm/normal"
     })
   }, []), m = s.useCallback(() => {
-    switch (E) {
+    switch (g) {
       case "SAFETY_TIPS":
       case "ABOUT_SAFETY_ALERTS":
         return (0, r.jsx)(A, {
@@ -55,8 +55,8 @@ let b = t => {
       default:
         return null
     }
-  }, [E, A]), j = s.useCallback(() => {
-    switch (E) {
+  }, [g, A]), j = s.useCallback(() => {
+    switch (g) {
       case "SAFETY_TIPS":
         return S.intl.string(S.t.EtNxi4);
       case "ABOUT_SAFETY_ALERTS":
@@ -64,12 +64,12 @@ let b = t => {
       default:
         return S.intl.string(S.t.MAhAp6)
     }
-  }, [E]), f = s.useCallback(t => {
+  }, [g]), N = s.useCallback(t => {
     h(t)
   }, [h]);
   return (0, r.jsxs)(l.Y0X, {
     "data-migration-pending": true,
-    transitionState: O,
+    transitionState: b,
     "aria-label": S.intl.string(S.t.eXlt09),
     size: l.CgR.SMALL,
     parentComponent: "SafetyToolsModal",
@@ -84,16 +84,16 @@ let b = t => {
       })
     }), (0, r.jsx)(l.Ttm, {
       children: (0, r.jsxs)(l.MyZ, {
-        activeSlide: E,
+        activeSlide: g,
         width: 440,
         children: [(0, r.jsx)(l.Mi4, {
           id: "ACTIONS",
           children: (0, r.jsx)(d.Z, {
-            otherUserId: b,
+            otherUserId: O,
             channelId: n,
             warningId: i,
             warningType: _,
-            transitionToSlide: f
+            transitionToSlide: N
           })
         }), (0, r.jsx)(l.Mi4, {
           id: "ABOUT_SAFETY_ALERTS",

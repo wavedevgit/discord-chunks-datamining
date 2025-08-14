@@ -1,12 +1,15 @@
-/** Chunk was on 79861 **/
-/** chunk id: 715639, original params: n,o,e (module,exports,require) **/
+/** Chunk was on 93886 **/
+/** chunk id: 715639, original params: e,t,a (module,exports,require) **/
 module.exports = {
-  phoneField: "phoneField_a0c54f",
-  countryButton: "countryButton_a0c54f",
-  countryButtonInner: "countryButtonInner_a0c54f",
-  countryCodeContainer: "countryCodeContainer_a0c54f",
-  plusSign: "plusSign_a0c54f",
-  countryCode: "countryCode_a0c54f",
-  inputField: "inputField_a0c54f",
-  sendButton: "sendButton_a0c54f"
+  container: "container_f1a68f",
+  header: "header_f1a68f",
+  subheader: "subheader_f1a68f",
+  hasTooltip: "hasTooltip_f1a68f",
+  code: "code_f1a68f",
+  slider: "slider_f1a68f",
+  colorInputContainer: "colorInputContainer_f1a68f",
+  removeButton: "removeButton_f1a68f",
+  resetButton: "resetButton_f1a68f",
+  explanation: "explanation_f1a68f",
+  tenureBadgeControls: "tenureBadgeControls_f1a68f"
 }

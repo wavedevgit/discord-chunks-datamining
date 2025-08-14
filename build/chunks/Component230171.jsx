@@ -35,7 +35,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk880251 = require("./880251.js"),
   Chunk515344 = require("./515344.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk919732 = require("./919732.js");
+  Chunk217648 = require("./217648.js");
 
 function x(e) {
   let {
@@ -57,7 +57,7 @@ function x(e) {
     videoBannerSrc: N,
     bannerAspectRatio: L
   } = (0, P.E)(t), x = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
-    analyticsLocations: k
+    analyticsLocations: j
   } = (0, f.ZP)(d.Z.APP_MESSAGE_EMBED), {
     currentChannelId: U,
     instanceId: G,
@@ -82,7 +82,7 @@ function x(e) {
           embeddedActivitiesManager: F,
           customId: a,
           referrerId: x,
-          analyticsLocations: k
+          analyticsLocations: j
         })
       },
       disabledReason: B ? D.intl.string(D.t.wJNK8P) : true
@@ -93,13 +93,13 @@ function x(e) {
         (0, _.W)({
           appId: t.id,
           botId: y,
-          analyticsLocations: k,
+          analyticsLocations: j,
           customId: a,
           referrerId: x
         })
       }
     })) : null != K && e.push(K), e
-  }, [Y, H, G, B, U, t.id, F, a, x, k, O, K, y]), q = O ? (0, r.jsx)(j, {
+  }, [Y, H, G, B, U, t.id, F, a, x, j, O, K, y]), q = O ? (0, r.jsx)(k, {
     app: t
   }) : (0, r.jsx)(M, {
     app: t
@@ -164,7 +164,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     app: t
   } = e, {

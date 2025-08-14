@@ -44,7 +44,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk572717 = require("./572717.js"),
+  Chunk992878 = require("./992878.js"),
   Chunk413097 = require("./413097.js"),
   Chunk969728 = require("./969728.js");
 
@@ -245,7 +245,7 @@ function ee(e) {
       return (0, r.jsxs)("div", z(W({
         className: a()(B.iconContainer, n)
       }, t), {
-        children: [(0, r.jsx)(j.Z, {
+        children: [(0, r.jsx)(k.Z, {
           src: l,
           className: B.iconCard,
           "aria-hidden": true,
@@ -314,7 +314,7 @@ function et(e) {
       className: a()(B.appDetailsContainer, {
         [B.appDetailsRowContainer]: "row" === n
       }),
-      children: [(0, r.jsx)(j.Z, {
+      children: [(0, r.jsx)(k.Z, {
         src: m,
         className: a()(B.icon, {
           [B.rowIcon]: "row" === n
@@ -514,7 +514,7 @@ function el(e) {
   } = (0, m.Z)(t);
   return {
     onClickAppCard: i.useCallback(e => {
-      e.stopPropagation(), (0, v.yw)(k.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
+      e.stopPropagation(), (0, v.yw)(j.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
         application_id: t.id,
         section_name: n,
         search_results_position: r,

@@ -65,7 +65,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk921944 = require("./921944.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk711123 = require("./711123.js");
+  Chunk785727 = require("./785727.js");
 
 function ed(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -216,7 +216,7 @@ function eb(e) {
   } = (0, u.cj)([W.Z], () => ({
     canAddNewReactions: I && W.Z.can(ea.Plq.ADD_REACTIONS, t),
     canManageMessages: W.Z.can(ea.Plq.MANAGE_MESSAGES, t)
-  }), [t, I]), N = (0, j.U)(t, n), C = (0, G.NE)(t, n), R = (0, G.Ek)(n), P = (0, u.e7)([A.Z], () => null != t.guild_id && A.Z.isLurking(t.guild_id), [t]), w = (0, u.e7)([V.ZP], () => null != t.guild_id && V.ZP.isCurrentUserGuest(t.guild_id), [t]), D = d.id === _, L = (T || n.canDeleteOwnMessage(_)) && m && !ea.V$x.UNDELETABLE.has(n.type);
+  }), [t, I]), N = (0, k.U)(t, n), C = (0, G.NE)(t, n), R = (0, G.Ek)(n), P = (0, u.e7)([A.Z], () => null != t.guild_id && A.Z.isLurking(t.guild_id), [t]), w = (0, u.e7)([V.ZP], () => null != t.guild_id && V.ZP.isCurrentUserGuest(t.guild_id), [t]), D = d.id === _, L = (T || n.canDeleteOwnMessage(_)) && m && !ea.V$x.UNDELETABLE.has(n.type);
   n.type === ea.uaV.AUTO_MODERATION_ACTION && (L = L && T), t.isModeratorReportChannel() && (L = L && n.id !== (null == E ? true : E.id) && !(0, ee.Z)(n));
   let x = (0, Q.a4)(n),
     M = (0, $.Z)(n, t),
@@ -240,7 +240,7 @@ function eb(e) {
     er = (0, v.a)(n),
     {
       enabled: ei
-    } = k.Z.useExperiment({
+    } = j.Z.useExperiment({
       location: "message_utilities"
     }),
     eo = (0, u.e7)([U.Z], () => null != U.Z.getSavedMessage(t.id, n.id)),
@@ -298,7 +298,7 @@ function ey(e) {
     setPopout: L,
     hasDeveloperMode: x,
     isFocused: M
-  } = eb(e), j = i.useRef(null), k = i.useCallback(() => {
+  } = eb(e), k = i.useRef(null), j = i.useCallback(() => {
     v || K.default.track(ea.rMx.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
       message_id: n.id,
       channel: n.channel_id
@@ -435,7 +435,7 @@ function ey(e) {
       dangerous: true,
       separator: !O
     }, "delete") : null, O && s ? null : (0, r.jsx)(f.yRy, {
-      targetElementRef: j,
+      targetElementRef: k,
       renderPopout: e => {
         let {
           updatePosition: i,
@@ -450,7 +450,7 @@ function ey(e) {
         })
       },
       shouldShow: v,
-      onRequestClose: k,
+      onRequestClose: j,
       position: "left",
       align: "top",
       animation: f.yRy.Animation.NONE,
@@ -461,11 +461,11 @@ function ey(e) {
           isShown: o
         } = t;
         return (0, r.jsx)(en.sF, ef({
-          ref: j,
+          ref: k,
           label: ec.intl.string(ec.t.UKOtz8),
           icon: f.xhG,
           selected: o,
-          onClick: k
+          onClick: j
         }, i), "more")
       }
     })]

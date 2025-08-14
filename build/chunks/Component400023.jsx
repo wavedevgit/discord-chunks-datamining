@@ -39,11 +39,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk977391 = require("./977391.jsx"),
   Chunk959258 = require("./959258.jsx"),
   Chunk73274 = require("./73274.js"),
-  Chunk693676 = require("./693676.js"),
+  Chunk419388 = require("./419388.js"),
   Chunk406534 = require("./406534.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk77346 = require("./77346.js");
+  Chunk151227 = require("./151227.js");
 
 function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -160,7 +160,7 @@ function $(e) {
     jumpBarClassName: P,
     typingGradient: w,
     isChatInputBottomAligned: D
-  } = e, [L, x] = i.useState(null != (n = T.Z.isAtBottom(h.id)) && n), j = i.useMemo(() => b ? (0, M.aJ)({
+  } = e, [L, x] = i.useState(null != (n = T.Z.isAtBottom(h.id)) && n), k = i.useMemo(() => b ? (0, M.aJ)({
     compact: true,
     messageGroups: 30,
     groupRange: 4,
@@ -180,12 +180,12 @@ function $(e) {
     compact: b,
     hasUnreads: v,
     focusId: I,
-    placeholderHeight: j.totalHeight,
+    placeholderHeight: k.totalHeight,
     canLoadMore: null == N,
     handleScrollToBottom: i.useCallback(() => x(true), [x]),
     handleScrollFromBottom: i.useCallback(() => x(false), [x]),
     additionalMessagePadding: 48 * !!D
-  }), Y = (0, k.Z)({
+  }), Y = (0, j.Z)({
     scrollerRef: V.ref,
     isEditing: null != I,
     keyboardModeEnabled: A,
@@ -213,7 +213,7 @@ function $(e) {
     uploads: O,
     loadMore: V.loadMore,
     scrollManager: V,
-    specs: j,
+    specs: k,
     filterAfterTimestamp: null != N ? N : $,
     showingQuarantineBanner: C,
     hideSummaries: R,
@@ -414,7 +414,7 @@ let eo = Chunk73800.memo(function(e) {
   } = et(t);
   return (0, r.jsx)(g.aQ.Provider, {
     value: (0, L.Z)(E, d),
-    children: (0, r.jsx)(j.v, {
+    children: (0, r.jsx)(k.v, {
       children: (0, r.jsx)(ee, W(H({}, u), {
         messageGroupSpacing: p,
         showNewMessagesBar: true,

@@ -32,7 +32,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk427487 = require("./427487.js"),
+  Chunk456003 = require("./456003.js"),
   Chunk388032 = require("./388032.jsx");
 let k = t => null != t ? _.intl.format(_.t["4kp0AA"], {
     itemName: t
@@ -128,11 +128,11 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AA"], {
       text: _.intl.string(_.t["H57f4+"]),
       variant: "secondary",
       onClick: () => {
-        r(), (0, g.Y)({
+        r(), (0, h.Y)({
           pageType: j.ZY5.SHOP_ORBS_TAB,
           sectionType: j.jXE.ORBS_BADGE_REDEMPTION_MODAL,
           ctaObject: j.qAy.CTA_TO_QUEST_HOME
-        }), (0, h.navigateToQuestHome)()
+        }), (0, g.navigateToQuestHome)()
       }
     });
     else if (T.Vt.FRACTIONAL_PREMIUM === e.skuId) E ? I.push({

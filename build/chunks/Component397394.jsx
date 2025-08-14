@@ -5,8 +5,8 @@ require.d(exports, {
   $0: () => B,
   Lk: () => F,
   Xg: () => V,
-  ZP: () => j,
-  c7: () => k,
+  ZP: () => k,
+  c7: () => j,
   j3: () => H,
   jO: () => U,
   ks: () => Z
@@ -37,7 +37,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk787025 = require("./787025.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk354623 = require("./354623.js");
+  Chunk295880 = require("./295880.js");
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -96,7 +96,7 @@ function M(e, t) {
   return i
 }
 
-function j(e) {
+function k(e) {
   let {
     message: t,
     footer: n,
@@ -123,8 +123,8 @@ function j(e) {
   })
 }
 
-function k(e) {
-  return (0, r.jsx)(j, L(w({}, e), {
+function j(e) {
+  return (0, r.jsx)(k, L(w({}, e), {
     headerClassName: R.headerSuccess
   }))
 }
@@ -199,7 +199,7 @@ function G(e) {
       className: R.authorizedSuccessSubtext,
       children: s
     });
-  return (0, r.jsx)(k, w({
+  return (0, r.jsx)(j, w({
     message: a,
     footer: l
   }, o))
@@ -272,7 +272,7 @@ function Z(e) {
 }
 
 function F(e) {
-  return (0, r.jsx)(j, L(w({}, e), {
+  return (0, r.jsx)(k, L(w({}, e), {
     headerClassName: R.headerFailure
   }))
 }

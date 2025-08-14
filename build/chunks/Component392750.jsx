@@ -10,11 +10,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk752048 = require("./752048.js"),
   Chunk594174 = require("./594174.js"),
   Chunk681619 = require("./681619.jsx"),
-  Chunk206331 = require("./206331.js"),
-  Chunk881291 = require("./881291.js");
+  Chunk996279 = require("./996279.js"),
+  Chunk451429 = require("./451429.js");
 let u = [{
   key: "user",
-  cellClassName: Chunk206331.userCell,
+  cellClassName: Chunk996279.userCell,
   render(e) {
     var t;
     let {
@@ -29,7 +29,7 @@ let u = [{
     variant: "text-sm/semibold",
     children: "COMMUNICATION AFFINITY"
   }),
-  cellClassName: Chunk206331.affinityCell,
+  cellClassName: Chunk996279.affinityCell,
   render(e) {
     let {
       affinity: t
@@ -42,7 +42,7 @@ let u = [{
     variant: "text-sm/semibold",
     children: "VOICE AFFINITY"
   }),
-  cellClassName: Chunk206331.affinityCell,
+  cellClassName: Chunk996279.affinityCell,
   render(e) {
     let {
       vcProbability: t
@@ -66,9 +66,9 @@ function m() {
     }
   }));
   return 0 === module.length ? null : (0, Chunk255367.jsx)(Chunk681619.Z, {
-    className: Chunk881291.panel,
+    className: Chunk451429.panel,
     columns: u,
-    rowClassName: Chunk206331.row,
+    rowClassName: Chunk996279.row,
     data: module
   })
 }

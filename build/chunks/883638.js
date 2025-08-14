@@ -3,5 +3,5 @@
 var Chunk961499 = require("./961499.js");
 module.exports = function(e) {
   var t = r(this, e).delete(e);
-  return this.size -= +!!t, t
+  return this.size -= !!t, t
 }

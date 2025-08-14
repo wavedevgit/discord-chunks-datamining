@@ -56,8 +56,8 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk701476 = require("./701476.js"),
   Chunk801461 = require("./801461.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk499921 = require("./499921.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk33724 = require("./33724.js"),
+  Chunk197571 = require("./197571.js");
 
 function el(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -247,12 +247,12 @@ class eu extends(r = Chunk73800.PureComponent) {
         termsURL: Chunk981631.EYA.TERMS,
         privacyURL: Chunk981631.EYA.PRIVACY
       }),
-      marginTopStyle: Chunk499921.consentBox,
-      subtextClassName: Chunk499921.consentSubText
+      marginTopStyle: Chunk33724.consentBox,
+      subtextClassName: Chunk33724.consentSubText
     }) : (0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      className: s()(Chunk881488.marginTop8, Chunk499921.consentSubText),
+      className: s()(Chunk197571.marginTop8, Chunk33724.consentSubText),
       children: Chunk388032.intl.format(Chunk388032.t["KI+BSU"], {
         termsURL: Chunk981631.EYA.TERMS,
         privacyURL: Chunk981631.EYA.PRIVACY
@@ -270,7 +270,7 @@ class eu extends(r = Chunk73800.PureComponent) {
     return (0, Chunk255367.jsxs)(Chunk388905.ZP, {
       className: module,
       children: [(0, Chunk255367.jsx)(Chunk588705.R, {}), (0, Chunk255367.jsxs)(Chunk388905.gO, {
-        className: Chunk499921.authBlock,
+        className: Chunk33724.authBlock,
         children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
           children: Chunk388032.intl.string(Chunk388032.t["9AjdkJ"])
         }), (0, Chunk255367.jsx)(Chunk481060.ua7, {
@@ -298,20 +298,20 @@ class eu extends(r = Chunk73800.PureComponent) {
         }), (0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          className: s()(Chunk881488.marginTop20, Chunk499921.consentSubText),
+          className: s()(Chunk197571.marginTop20, Chunk33724.consentSubText),
           children: Chunk388032.intl.format(Chunk388032.t["KI+BSU"], {
             termsURL: Chunk981631.EYA.TERMS,
             privacyURL: Chunk981631.EYA.PRIVACY
           })
         }), (0, Chunk255367.jsx)(Chunk388905.zx, {
-          className: Chunk881488.marginTop8,
+          className: Chunk197571.marginTop8,
           disabled: true,
           children: Chunk388032.intl.string(Chunk388032.t["825cFx"])
         }), Chunk188785.a ? null : (0, Chunk255367.jsx)(Chunk388905.zx, {
           look: Chunk388905.zx.Looks.LINK,
           color: Chunk388905.zx.Colors.LINK,
           disabled: true,
-          className: Chunk881488.marginTop20,
+          className: Chunk197571.marginTop20,
           children: Chunk388032.intl.string(Chunk388032.t["1lWxu7"])
         })]
       })]
@@ -381,9 +381,9 @@ class eu extends(r = Chunk73800.PureComponent) {
         tag: "form",
         className: exports,
         children: [this.renderInviteHeader(), Chunk442837 ? (0, Chunk255367.jsx)("div", {
-          className: Chunk499921.divider
+          className: Chunk33724.divider
         }) : null, (0, Chunk255367.jsxs)(Chunk388905.gO, {
-          className: Chunk442837 ? true : Chunk499921.authBlock,
+          className: Chunk442837 ? true : Chunk33724.authBlock,
           children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
             error: null != s ? s : ec(null != r ? r : require),
             children: Chunk388032.intl.string(Chunk388032.t["9AjdkJ"])
@@ -428,7 +428,7 @@ class eu extends(r = Chunk73800.PureComponent) {
           }), (0, Chunk255367.jsx)(Chunk13430.Z, {
             label: Chunk388032.intl.string(Chunk388032.t.rhBeKS),
             labelTag: Chunk481060.RB0.H3,
-            wrapperClassName: Chunk499921.inviteBirthdayInput,
+            wrapperClassName: Chunk33724.inviteBirthdayInput,
             name: "date_of_birth",
             onChange: this.handleBirthdayChange,
             ref: this.dateOfBirthRef,
@@ -439,13 +439,13 @@ class eu extends(r = Chunk73800.PureComponent) {
               look: Chunk388905.zx.Looks.LINK,
               color: Chunk388905.zx.Colors.LINK,
               onClick: this.handleGotoLogin,
-              className: Chunk881488.marginTop20,
+              className: Chunk197571.marginTop20,
               children: Chunk388032.intl.string(Chunk388032.t["1lWxu7"])
             })
           })]
         })]
       }), null != module && Chunk442837 ? (0, Chunk255367.jsx)(Chunk388905.ZP, {
-        className: Chunk881488.marginTop20,
+        className: Chunk197571.marginTop20,
         children: (0, Chunk255367.jsx)(Chunk792766.y, {
           guild: module.guild,
           onlineCount: module.approximate_presence_count
@@ -460,7 +460,7 @@ class eu extends(r = Chunk73800.PureComponent) {
       }
     } = this.state;
     return "string" != typeof module ? null : (0, Chunk255367.jsx)(Chunk388905.i_, {
-      className: s()(Chunk881488.marginTop20, Chunk499921.errorMessage),
+      className: s()(Chunk197571.marginTop20, Chunk33724.errorMessage),
       children: module
     })
   }
@@ -505,11 +505,16 @@ class eu extends(r = Chunk73800.PureComponent) {
       this.setState({
         usernameFocused: true
       }), o.length > 0 && !L.Z.wasRegistrationSuggestionFetched(o) && await w.Z.fetchSuggestionsRegistration(o)
-    }, P = null != e ? (0, i.jsx)(l.Fragment, {
+    }, P = e => {
+      this.setState({
+        username: e.toLocaleLowerCase(),
+        usernameClientError: 0 === e.length ? en.intl.string(en.t.EkokLy) : null
+      })
+    }, R = null != e ? (0, i.jsx)(l.Fragment, {
       children: e()
     }, "custom-header") : (0, i.jsx)(I.Dx, {
       children: en.intl.string(en.t.wC4TlZ)
-    }, "title"), R = (0, i.jsxs)(I.gO, {
+    }, "title"), D = (0, i.jsxs)(I.gO, {
       className: ei.marginTop20,
       children: [(0, i.jsx)(I.II, {
         autoFocus: true,
@@ -574,12 +579,7 @@ class eu extends(r = Chunk73800.PureComponent) {
           className: ei.marginBottom20,
           name: "username",
           value: r,
-          onChange: e => {
-            this.setState({
-              username: e.toLocaleLowerCase(),
-              usernameClientError: 0 === e.length ? en.intl.string(en.t.EkokLy) : null
-            })
-          },
+          onChange: P,
           error: null != f ? f : ec(E),
           autoComplete: "off",
           setRef: e => {
@@ -629,12 +629,12 @@ class eu extends(r = Chunk73800.PureComponent) {
       onSubmit: this.handleSubmit,
       tag: "form",
       className: s()(y, er.horizontalAuthBox),
-      children: () => [P, (0, i.jsxs)("div", {
+      children: () => [R, (0, i.jsxs)("div", {
         className: er.flex,
         children: [(0, i.jsx)(I.Dx, {
           className: er.createAccountTemplateHeader,
           children: en.intl.string(en.t.wC4TlZ)
-        }), R]
+        }), D]
       }, "register-title")]
     }) : (0, i.jsxs)(I.ZP, {
       onSubmit: this.handleSubmit,
@@ -656,7 +656,7 @@ class eu extends(r = Chunk73800.PureComponent) {
             children: en.intl.string(en.t["1MrpWF"])
           })]
         })
-      }) : null, P, R]
+      }) : null, R, D]
     })
   }
   render() {
@@ -746,17 +746,17 @@ class eu extends(r = Chunk73800.PureComponent) {
         usernameFocused: n
       } = this.state, {
         usernameSuggestion: r
-      } = this.props;
+      } = this.props, l = () => {
+        null != this.usernameRef && this.usernameRef.focus(), null != r && r.length > 0 && this.setState({
+          username: r
+        })
+      };
       return (0, i.jsx)(eh, {
         username: e,
         suggestion: r,
         globalName: t,
         isUsernameFocused: n,
-        onClickSuggestion: () => {
-          null != this.usernameRef && this.usernameRef.focus(), null != r && r.length > 0 && this.setState({
-            username: r
-          })
-        }
+        onClickSuggestion: l
       })
     });
     let n = null != e.location ? (0, a.parse)(e.location.search) : {};
@@ -783,9 +783,9 @@ class eu extends(r = Chunk73800.PureComponent) {
 }
 
 function ed(e) {
-  let t = (0, d.cj)([F.Z, G.default, g.Z, R.Z, Z.Z], () => ({
-      consentRequired: F.Z.getAuthenticationConsentRequired(),
-      authenticated: G.default.isAuthenticated(),
+  let t = (0, d.cj)([G.Z, F.default, g.Z, R.Z, Z.Z], () => ({
+      consentRequired: G.Z.getAuthenticationConsentRequired(),
+      authenticated: F.default.isAuthenticated(),
       isUnderage: g.Z.isUnderageAnonymous(),
       country: R.Z.getCountryCode(),
       hasLoggedInAccounts: Z.Z.getHasLoggedInAccounts()

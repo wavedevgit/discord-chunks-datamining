@@ -1,4 +1,4 @@
-/** Chunk was on 787 **/
+/** Chunk was on 32561 **/
 /** chunk id: 660384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -12,12 +12,13 @@ class a {
     return this.top
   }
   constructor() {
-    var e;
-    e = new Chunk717976.SpringValue(0), "top" in this ? Object.defineProperty(this, "top", {
-      value: module,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this.top = module
+    ! function(e, t, n) {
+      "top" in e ? Object.defineProperty(e, "top", {
+        value: n,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = n
+    }(this, "top", new Chunk717976.SpringValue(0))
   }
 }

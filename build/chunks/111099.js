@@ -1,3 +1,0 @@
-/** Chunk was on 54682 **/
-/** chunk id: 111099, original params: e (module,exports,require) **/
-module.exports = JSON.parse('{"o/An3t":[[1,"username"]," t\'a demand\xe9 de streamer ",[1,"applicationName"]],"DKHheX":"Demande de stream","8qq+Hx":["Demander de streamer ",[1,"applicationName"]],"s7bMT0":[[1,"username"]," te demande de streamer ",[1,"applicationName"]],"7pndSk":["Tu as demand\xe9 \xe0 quelqu\'un de streamer ",[1,"applicationName"]],"P0wwmJ":"D\xe9j\xe0 en train de streamer","u4QmWl":"Demande expir\xe9e","qRXatr":"Pas dans le salon vocal","43zohI":"Le jeu n\'est pas lanc\xe9","8HU1Mz":"Demande en attente","5+172d":"Streamer","jTbTAA":[[8,"$b",[[1,"username"]]]," veut te regarder jouer \xe0 ",[8,"$b",[[1,"game"]]],". Souhaites-tu streamer en direct\xa0?"]}')

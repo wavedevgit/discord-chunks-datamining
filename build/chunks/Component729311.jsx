@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 729311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R,
@@ -30,57 +30,16 @@ var Chunk255367 = require("./255367.js"),
   Chunk353890 = require("./353890.jsx"),
   Chunk716130 = require("./716130.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk59940 = require("./59940.js"),
-  Chunk692228 = require("./692228.js");
+  Chunk868893 = require("./868893.js"),
+  Chunk430864 = require("./430864.js");
 
 function w(e) {
   let {
     guild: t
   } = e, s = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), h = (0, l.e7)([p.Z], () => p.Z.hasFetched(t.id)), f = (0, y.Z)(t), b = (0, l.e7)([v.Z], () => v.Z.editedDefaultChannelIds), x = f.filter(e => !b.has(e.id)), [_, O] = i.useState(false);
-  i.useEffect(() => {
+  return (i.useEffect(() => {
     h || s || (0, g.S)(t.id)
-  }, [t.id, h, s]);
-  let C = e => {
-    (0, a.ZDy)(async () => {
-      let {
-        default: i
-      } = await n.e("35641").then(n.bind(n, 89216));
-      return n => {
-        var l, a;
-        return (0, r.jsx)(i, (l = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = r
-            })
-          }
-          return e
-        }({}, n), a = a = {
-          guildId: t.id,
-          startingChannelId: e
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-          var n = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-          }
-          return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
-        }), l))
-      }
-    })
-  };
-  return _ || 0 === x.length ? null : (0, r.jsxs)("div", {
+  }, [t.id, h, s]), _ || 0 === x.length) ? null : (0, r.jsxs)("div", {
     className: T.recommendations,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-md/medium",
@@ -108,7 +67,7 @@ function w(e) {
       })]
     }), (0, r.jsx)("div", {
       className: T.recommendedChannels,
-      children: x.map((e, n) => (0, r.jsxs)(r.Fragment, {
+      children: x.map((e, i) => (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: T.channelRow,
           children: [(0, r.jsxs)("div", {
@@ -149,9 +108,49 @@ function w(e) {
             text: S.intl.string(S.t.zA9d1N),
             icon: a.mBM,
             iconPosition: "start",
-            onClick: () => C(e.id)
+            onClick: () => {
+              var i;
+              return i = e.id, void(0, a.ZDy)(async () => {
+                let {
+                  default: e
+                } = await n.e("35641").then(n.bind(n, 89216));
+                return n => {
+                  var l, a;
+                  return (0, r.jsx)(e, (l = function(e) {
+                    for (var t = 1; t < arguments.length; t++) {
+                      var n = null != arguments[t] ? arguments[t] : {},
+                        r = Object.keys(n);
+                      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                        return Object.getOwnPropertyDescriptor(n, e).enumerable
+                      }))), r.forEach(function(t) {
+                        var r;
+                        r = n[t], t in e ? Object.defineProperty(e, t, {
+                          value: r,
+                          enumerable: true,
+                          configurable: true,
+                          writable: true
+                        }) : e[t] = r
+                      })
+                    }
+                    return e
+                  }({}, n), a = a = {
+                    guildId: t.id,
+                    startingChannelId: i
+                  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+                    var n = Object.keys(e);
+                    if (Object.getOwnPropertySymbols) {
+                      var r = Object.getOwnPropertySymbols(e);
+                      n.push.apply(n, r)
+                    }
+                    return n
+                  })(Object(a)).forEach(function(e) {
+                    Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
+                  }), l))
+                }
+              })
+            }
           })]
-        }), n < x.length - 1 ? (0, r.jsx)("div", {
+        }), i < x.length - 1 ? (0, r.jsx)("div", {
           className: T.separator
         }) : null]
       }))

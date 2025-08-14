@@ -18,9 +18,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk3072 = require("./3072.js"),
   Chunk763283 = require("./763283.jsx"),
   Chunk477839 = require("./477839.js"),
-  Chunk603571 = require("./603571.js"),
+  Chunk511479 = require("./511479.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk692313 = require("./692313.js");
+  Chunk424465 = require("./424465.js");
 let Chunk450862 = require("./450862.js"),
   j = [Chunk477839.FK.LEVEL_1, Chunk477839.FK.LEVEL_2, Chunk477839.FK.LEVEL_3, Chunk477839.FK.LEVEL_4];
 
@@ -119,20 +119,20 @@ function C() {
       pointsWhenUnlocked: require
     })
   }, []), (0, Chunk255367.jsxs)("div", {
-    className: Chunk692313.leveling,
+    className: Chunk424465.leveling,
     children: [(0, Chunk255367.jsxs)("div", {
-      className: Chunk692313.levelInfo,
+      className: Chunk424465.levelInfo,
       children: [(0, Chunk255367.jsx)(Chunk763283.Z, {
         variant: "text-lg/bold",
         color: "clicker-game-brand",
-        children: Chunk388032.intl.format(Chunk603571.default.IG6UGB, {
+        children: Chunk388032.intl.format(Chunk511479.default.IG6UGB, {
           level: Z
         })
       }), (0, Chunk255367.jsx)(Chunk763283.Z, {
-        className: Chunk692313.experience,
+        className: Chunk424465.experience,
         variant: "text-sm/medium",
         color: "clicker-game-brand",
-        children: Chunk388032.intl.format(Chunk603571.default.Rfy3Cg, {
+        children: Chunk388032.intl.format(Chunk511479.default.Rfy3Cg, {
           currentExperience: Math.floor(S),
           requiredExperience: I,
           experienceHook: (e, t) => (0, r.jsx)("span", {
@@ -145,9 +145,9 @@ function C() {
     }), (0, Chunk255367.jsx)(_, {
       percent: S / I * 100
     }), k < Z ? (0, Chunk255367.jsx)(Chunk144931.Z, {
-      className: Chunk692313.claimButton,
+      className: Chunk424465.claimButton,
       onClick: A,
-      children: Chunk388032.intl.format(Chunk603571.default.IUF6np, {
+      children: Chunk388032.intl.format(Chunk511479.default.IUF6np, {
         points: M,
         grassIconHook: Chunk702319.Z
       })

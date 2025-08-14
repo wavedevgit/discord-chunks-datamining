@@ -9,7 +9,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk782515 = require("./782515.js");
+  Chunk589793 = require("./589793.js");
 let c = (e, t) => (0, r.jsx)("div", {
     ref: t,
     className: a()(l.nitroRewardTileAssetContainer, e.className),

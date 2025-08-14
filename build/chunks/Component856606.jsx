@@ -48,7 +48,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk188857 = require("./188857.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk753965 = require("./753965.js");
+  Chunk198750 = require("./198750.js");
 
 function X(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -142,7 +142,7 @@ function Y(e) {
       let e;
       if (t.type === j.BN.MEMBER) {
         let n = A.default.getUser(t.id);
-        null != n && (e = U.ZP.getName(n))
+        null != n && (e = H.ZP.getName(n))
       } else if (t.type === j.BN.ROLE) {
         let i = I.Z.getGuild(n.getGuildId());
         if (null != i) {
@@ -150,7 +150,7 @@ function Y(e) {
           null != n && (e = n.name)
         }
       }
-      H.X(e)
+      W.X(e)
     }
   }, v = e => {
     let t = P.Z.can(G.Plq.ADMINISTRATOR, l) || P.Z.can(G.Plq.MANAGE_ROLES, n, true, true, true);
@@ -196,7 +196,7 @@ function Q(e) {
     guildId: t,
     channelId: n,
     user: l
-  } = e, r = l.getAvatarURL(t, 32), s = k.ZP.getNickname(t, n, l), a = U.ZP.useUserTag(l), o = null, c = null;
+  } = e, r = l.getAvatarURL(t, 32), s = k.ZP.getNickname(t, n, l), a = H.ZP.useUserTag(l), o = null, c = null;
   return o = null != s ? s : l.hasAvatarForGuild(t) ? l.username : a, (null != s || l.hasAvatarForGuild(t)) && (c = (0, i.jsxs)("div", {
     className: z.userRowSubText,
     children: [l.hasAvatarForGuild(t) ? (0, i.jsx)(d.qEK, {
@@ -370,7 +370,7 @@ function ee() {
         guild: x,
         theme: S,
         roleStyle: E,
-        "aria-label": U.ZP.getUserTag(e, {
+        "aria-label": H.ZP.getUserTag(e, {
           decoration: "never"
         }),
         onContextMenu: t => Z(t, {
@@ -386,13 +386,13 @@ function ee() {
             className: z.xsmallAvatar
           }), (0, i.jsx)("span", {
             className: z.username,
-            children: U.ZP.getUserTag(e)
+            children: H.ZP.getUserTag(e)
           })]
         })
       }, "".concat(a, "-").concat(e.id))
     }).value();
   return (0, Chunk255367.jsx)(Chunk325476.ZP.Sidebar, {
-    className: Chunk753965.layoutStyle,
+    className: Chunk198750.layoutStyle,
     scrollable: true,
     children: (0, Chunk255367.jsxs)(Chunk481060.njP, {
       onItemSelect: Chunk741361.Aj,
@@ -449,7 +449,7 @@ function et() {
   if (null == (0, Chunk442837.e7)([Chunk430824.Z], () => null != module ? Chunk430824.Z.getGuild(module.getGuildId()) : null) || null == module || null == exports || null == require) return null;
   let l = exports[require];
   return (0, Chunk255367.jsxs)(Chunk325476.ZP, {
-    className: Chunk753965.container,
+    className: Chunk198750.container,
     children: [(0, Chunk255367.jsx)(ee, {}), (0, Chunk255367.jsx)(Y, {
       overwrite: Chunk73800
     })]

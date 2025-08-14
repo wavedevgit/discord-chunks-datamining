@@ -20,9 +20,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk233398 = require("./233398.js"),
   Chunk866419 = require("./866419.js"),
   Chunk771934 = require("./771934.js"),
-  Chunk671147 = require("./671147.js"),
+  Chunk119475 = require("./119475.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk826439 = require("./826439.js");
+  Chunk531604 = require("./531604.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,7 +65,7 @@ function S(e, t) {
 
 function A() {
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk826439.loader,
+    className: Chunk531604.loader,
     children: (0, Chunk255367.jsx)(Chunk481060.$jN, {})
   })
 }
@@ -162,14 +162,14 @@ function D(e) {
         t[v] = e.hex, s(t)
       }
     },
-    j = async () => {
+    k = async () => {
       if (null != c) try {
         let {
           sRGBHex: e
         } = await c.open();
         (0, E.J4)(), L(e)
       } catch (e) {}
-    }, k = () => {
+    }, j = () => {
       if (a.length === C) return;
       0 === a.length && (0, g.ft)(), (0, E.gG)();
       let e = a.length > 0 ? a[a.length - 1] : A,
@@ -196,7 +196,7 @@ function D(e) {
         text: y.intl.string(b.default["61KGaW"]),
         shouldShow: a.length === C,
         children: e => (0, r.jsx)(p.P3F, S(I({}, e), {
-          onClick: a.length === C ? true : k,
+          onClick: a.length === C ? true : j,
           className: l()(O.addColorButton, {
             [O.disabled]: a.length === C
           }),
@@ -233,7 +233,7 @@ function D(e) {
             variant: "icon-only",
             size: "sm"
           }, e), {
-            onClick: j,
+            onClick: k,
             icon: d.i,
             "aria-label": y.intl.string(b.default["8QXO8v"])
           }))

@@ -1,11 +1,11 @@
 /** Chunk was on 61526 **/
 /** chunk id: 20437, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => r,
+  Q: () => a,
   S: () => l
 });
 var Chunk73800 = require("./73800.js");
-let r = Chunk73800.createContext({
+let a = Chunk73800.createContext({
   videoPlayerRef: {
     current: null
   },
@@ -21,5 +21,5 @@ let r = Chunk73800.createContext({
 });
 
 function l() {
-  return Chunk73800.useContext(r)
+  return Chunk73800.useContext(a)
 }

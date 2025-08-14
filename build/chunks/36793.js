@@ -1,4 +1,4 @@
-/** Chunk was on 72865 **/
+/** Chunk was on 46311 **/
 /** chunk id: 36793, original params: t,e,i (module,exports,require) **/
 function n(t) {
   let {
@@ -30,7 +30,7 @@ function n(t) {
           x: i, y: n
         }
     }
-  }(n, r), d = r % 180 != 0, c = i.width * a, l = i.height * a, h = Math.min(c, o.width), s = Math.min(l, o.height), f = (d ? i.height : i.width) / 2, _ = (d ? i.width : i.height) / 2, p = (e.width / 2 - f - u.x) * a, m = (e.height / 2 - _ - u.y) * a, w = d ? l : c, b = d ? c : l, {
+  }(n, r), d = r % 180 != 0, l = i.width * a, h = i.height * a, c = Math.min(l, o.width), f = Math.min(h, o.height), _ = (d ? i.height : i.width) / 2, s = (d ? i.width : i.height) / 2, p = (e.width / 2 - _ - u.x) * a, m = (e.height / 2 - s - u.y) * a, w = d ? h : l, b = d ? l : h, {
     x: g,
     y: x
   } = function(t, e, i) {
@@ -52,18 +52,18 @@ function n(t) {
           x: -e, y: 0
         }
     }
-  }(c, l, r);
-  return o.width < c && (g *= o.width / c), o.height < l && (x *= o.height / l), {
+  }(l, h, r);
+  return o.width < l && (g *= o.width / l), o.height < h && (x *= o.height / h), {
     sourceX: p,
     sourceY: m,
     sourceWidth: w,
     sourceHeight: b,
     destinationX: g,
     destinationY: x,
-    destinationWidth: d ? s : h,
-    destinationHeight: d ? h : s,
-    canvasWidth: h,
-    canvasHeight: s
+    destinationWidth: d ? f : c,
+    destinationHeight: d ? c : f,
+    canvasWidth: c,
+    canvasHeight: f
   }
 }
 
@@ -77,12 +77,12 @@ function o(t) {
   } = t, {
     sourceX: u,
     sourceY: d,
-    sourceWidth: c,
-    sourceHeight: l,
-    destinationX: h,
-    destinationY: s,
-    destinationWidth: f,
-    destinationHeight: _,
+    sourceWidth: l,
+    sourceHeight: h,
+    destinationX: c,
+    destinationY: f,
+    destinationWidth: _,
+    destinationHeight: s,
     canvasWidth: p,
     canvasHeight: m
   } = n({
@@ -94,7 +94,7 @@ function o(t) {
   }), w = document.createElement("canvas");
   w.width = p, w.height = m;
   let b = w.getContext("2d");
-  return null != b && (b.rotate(a * Math.PI / 180), b.drawImage(e, u, d, c, l, h, s, f, _)), w.toDataURL("image/png")
+  return null != b && (b.rotate(a * Math.PI / 180), b.drawImage(e, u, d, l, h, c, f, _, s)), w.toDataURL("image/png")
 }
 
 function r(t, e, i) {

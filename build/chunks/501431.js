@@ -2,7 +2,7 @@
 /** chunk id: 501431, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => E,
+  A: () => C,
   S: () => v
 }), require("./388685.js"), require("./781311.js"), require("./642613.js"), require("./49124.js");
 var Chunk73800 = require("./73800.js"),
@@ -238,19 +238,7 @@ let f = {
       search: "" !== i ? i : true
     }
   },
-  C = e => {
-    let t = e.skus,
-      r = e.pagination.total,
-      n = e.pagination.has_more;
-    return {
-      skus: t,
-      totalCount: r,
-      hasMorePages: n,
-      pageOffset: e.pagination.offset,
-      pageLimit: e.pagination.limit
-    }
-  },
-  E = () => {
+  C = () => {
     let {
       onSetResponse: e,
       setSearchError: t,
@@ -262,7 +250,19 @@ let f = {
           r(true);
           try {
             let t = await (0, s.y)(n);
-            e(C(t))
+            e((e => {
+              let t = e.skus,
+                r = e.pagination.total,
+                n = e.pagination.has_more,
+                l = e.pagination.offset;
+              return {
+                skus: t,
+                totalCount: r,
+                hasMorePages: n,
+                pageOffset: l,
+                pageLimit: e.pagination.limit
+              }
+            })(t))
           } catch (e) {
             var l;
             t(null != (l = null == e ? true : e.message) ? l : "Unknown error")

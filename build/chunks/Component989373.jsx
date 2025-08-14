@@ -30,15 +30,15 @@ let I = new Chunk710845.Z("AppOverlay");
 async function S(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 1e3,
     r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 3;
-  if (b.isPlatformEmbedded) {
+  if (h.isPlatformEmbedded) {
     try {
-      await h.ZP.isAlwaysOnTop(t)
+      await b.ZP.isAlwaysOnTop(t)
     } catch (e) {
       I.error("Window does not exist while trying to show inactive", e), (0, g.D1)(e, v.gl.OutOfProcess)
     }
     for (let o = 0; o < r; o++) try {
-      if (!await h.ZP.waitForIPCReady(n, e)) throw Error("IPC not ready");
-      h.ZP.showInactive(t);
+      if (!await b.ZP.waitForIPCReady(n, e)) throw Error("IPC not ready");
+      b.ZP.showInactive(t);
       return
     } catch (e) {
       var a;
@@ -58,11 +58,11 @@ let w = Chunk73800.memo(function(e) {
       r = a.useRef(null),
       c = a.useRef(null),
       d = a.useRef(null),
-      h = (0, o.e7)([_.default], () => {
+      b = (0, o.e7)([_.default], () => {
         let e = _.default.getFocusedPID();
-        return !b.isPlatformEmbedded || null != e && e !== p.UNSET_PID
+        return !h.isPlatformEmbedded || null != e && e !== p.UNSET_PID
       }),
-      [g, m] = a.useState(h),
+      [g, m] = a.useState(b),
       [y, I] = a.useState(false),
       w = a.useCallback(() => {
         let e = (0, p.getPID)(),
@@ -103,13 +103,13 @@ let w = Chunk73800.memo(function(e) {
       }))
     }, [w]);
     return a.useEffect(() => {
-      (!g || null == n) && h && h && null != n && P(n, e)
-    }, [P, g, h, e, n]), (0, i.Ng)(() => {
+      (!g || null == n) && b && b && null != n && P(n, e)
+    }, [P, g, b, e, n]), (0, i.Ng)(() => {
       g && null != n && P(n, e)
     }), (0, i.zq)(() => {
       null != d.current && d.current()
     }), y
-  }(n, y.$S), h = (0, p.getPID)(), g = (0, o.e7)([_.default], () => _.default.isInputLocked(h), [h]);
+  }(n, y.$S), b = (0, p.getPID)(), g = (0, o.e7)([_.default], () => _.default.isInputLocked(b), [b]);
   return c ? (0, r.jsx)(d.Z, {
     withTitleBar: t,
     windowKey: n,

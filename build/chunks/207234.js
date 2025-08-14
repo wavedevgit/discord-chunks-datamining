@@ -1,8 +1,8 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 207234, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  M: () => g,
-  a: () => p
+  M: () => p,
+  a: () => m
 });
 var Chunk392711 = require("./392711.js"),
   r = require.n(Chunk392711),
@@ -13,23 +13,22 @@ var Chunk392711 = require("./392711.js"),
   Chunk944486 = require("./944486.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js");
-let m = () => {
-    let {
-      notificationCenterVariant: e
-    } = (0, Chunk821020.Ag)({
-      location: "TOGGLE_INBOX"
-    });
-    if ("sidebar" !== module) return;
-    let t = Chunk944486.Z.getChannelId(),
-      n = Chunk592125.Z.getChannel(exports);
-    return window.location.pathname.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.STv)) && null != require ? (0, Chunk475468.K)(require.guild_id, exports) : (0, Chunk475468.z)(Chunk981631.Z5c.CHANNEL(Chunk981631.STv, null != exports ? exports : true))
-  },
-  p = {
+let m = {
     binds: ["mod+i"],
     comboKeysBindGlobal: true,
-    action: () => !(Chunk819640.Z.getLayers().length > 0) && (m(), Chunk585483.S.dispatch(Chunk981631.CkL.TOGGLE_INBOX), false)
+    action: () => !(Chunk819640.Z.getLayers().length > 0) && ((() => {
+      let {
+        notificationCenterVariant: e
+      } = (0, Chunk821020.Ag)({
+        location: "TOGGLE_INBOX"
+      });
+      if ("sidebar" !== module) return;
+      let t = Chunk944486.Z.getChannelId(),
+        n = Chunk592125.Z.getChannel(exports);
+      return window.location.pathname.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.STv)) && null != require ? (0, Chunk475468.K)(require.guild_id, exports) : (0, Chunk475468.z)(Chunk981631.Z5c.CHANNEL(Chunk981631.STv, null != exports ? exports : true))
+    })(), Chunk585483.S.dispatch(Chunk981631.CkL.TOGGLE_INBOX), false)
   },
-  g = {
+  p = {
     binds: ["mod+shift+e"],
     comboKeysBindGlobal: true,
     action: r().debounce(() => {

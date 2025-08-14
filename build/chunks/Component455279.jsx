@@ -16,7 +16,7 @@ var i, Chunk255367 = require("./255367.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk13140 = require("./13140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk450898 = require("./450898.js");
+  Chunk151028 = require("./151028.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -28,8 +28,8 @@ function g(e, t, n) {
 }
 var _ = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
 let E = {
-  DEFAULT: Chunk450898.__invalid_default,
-  RECORDING: Chunk450898.recording
+  DEFAULT: Chunk151028.__invalid_default,
+  RECORDING: Chunk151028.recording
 };
 class y extends Chunk73800.PureComponent {
   componentWillUnmount() {
@@ -65,13 +65,13 @@ class y extends Chunk73800.PureComponent {
         onClick: this.handleClick,
         onMouseDown: this.handleMouseDown,
         ref: this._containerRef,
-        className: a()(Chunk450898.recorderContainer, E[exports], {
-          [Chunk450898.containerDisabled]: i
+        className: a()(Chunk151028.recorderContainer, E[exports], {
+          [Chunk151028.containerDisabled]: i
         }),
         children: (0, Chunk255367.jsxs)(Chunk600164.Z, {
-          className: Chunk450898.recorderLayout,
+          className: Chunk151028.recorderLayout,
           children: [(0, Chunk255367.jsx)(Chunk600164.Z.Child, {
-            className: Chunk450898.keybindInput,
+            className: Chunk151028.keybindInput,
             children: (0, Chunk255367.jsx)("input", {
               id: this._inputId,
               placeholder: Chunk388032.intl.string(Chunk388032.t.nWRdnp),
@@ -82,7 +82,7 @@ class y extends Chunk73800.PureComponent {
               disabled: "RECORDING" !== this.props.mode || i
             })
           }), (0, Chunk255367.jsx)("div", {
-            className: Chunk450898.buttonContainer,
+            className: Chunk151028.buttonContainer,
             children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
               size: "sm",
               variant: "RECORDING" === this.props.mode ? "critical-secondary" : "secondary",

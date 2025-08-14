@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 449932, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => C
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -21,20 +21,20 @@ var Chunk120356 = require("./120356.js"),
   Chunk768581 = require("./768581.js"),
   Chunk51144 = require("./51144.js"),
   Chunk754231 = require("./754231.jsx"),
-  Chunk72796 = require("./72796.js");
+  Chunk342273 = require("./342273.js");
 
-function C(e) {
+function v(e) {
   let {
     guildId: t,
     member: n,
     className: i
   } = e, o = null != n.member ? (0, b.CA)(n.member) : null;
-  return (0, r.jsx)(a.ua7, {
+  return (0, r.jsx)(s.ua7, {
     text: n.nick,
     position: "bottom",
     children: e => {
-      var s;
-      return (0, r.jsx)(a.qEK, function(e) {
+      var a;
+      return (0, r.jsx)(s.qEK, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -53,25 +53,25 @@ function C(e) {
         return e
       }({
         src: null != o ? o : n.user.getAvatarURL(t, 16),
-        size: a.EFr.SIZE_16,
+        size: s.EFr.SIZE_16,
         className: l()(i, y.partyAvatar),
-        "aria-label": null != (s = n.nick) ? s : O.ZP.getName(n.user)
+        "aria-label": null != (a = n.nick) ? a : O.ZP.getName(n.user)
       }, e))
     }
   })
 }
 
-function v(e) {
+function j(e) {
   let {
     members: t,
     guildId: n
   } = e;
-  return (0, r.jsx)(p.Z, {
+  return (0, r.jsx)(f.Z, {
     className: y.partyMembers,
     guildId: n,
     users: t,
     max: 6,
-    renderUser: (e, t, i) => (0, r.jsx)(C, {
+    renderUser: (e, t, i) => (0, r.jsx)(v, {
       guildId: n,
       member: e,
       className: t
@@ -82,43 +82,43 @@ function v(e) {
     }, n)
   })
 }
-let j = e => {
+let C = e => {
   let {
     channel: t,
     presenceActivity: n,
     members: i,
     embeddedApp: l,
-    onAction: a
-  } = e, p = null != l, b = p ? Array.from(l.embeddedActivity.userIds) : [], O = (0, o.e7)([m.default, g.default], () => {
-    if (p) return m.default.getUser(b[0]);
+    onAction: s
+  } = e, f = null != l, b = f ? Array.from(l.embeddedActivity.userIds) : [], O = (0, o.e7)([m.default, g.default], () => {
+    if (f) return m.default.getUser(b[0]);
     if (null != i) {
       var e, t;
       return i.length <= 0 ? null : null != (t = null == (e = i.find(e => e.user.id !== g.default.getId())) ? true : e.user) ? t : i[0].user
     }
   });
   if (null == O) return null;
-  let C = p || (0, u.Z)(n),
-    j = (0, f.vd)(t.type);
+  let v = f || (0, u.Z)(n),
+    C = (0, h.vd)(t.type);
   return (0, r.jsxs)("div", {
     className: y.activity,
     children: [(0, r.jsx)("div", {
       className: y.channelActivityContainer,
-      children: C ? (0, r.jsx)(_.Z, {
+      children: v ? (0, r.jsx)(_.Z, {
         activity: n,
         embeddedApp: l,
         user: O,
         channel: t,
         sortedVoiceStates: i,
-        onOpenSpotifyTrack: j ? h.aG : true,
-        onOpenSpotifyArtist: j ? h.d$ : true,
-        onOpenSpotifyAlbum: j ? h.Z5 : true
+        onOpenSpotifyTrack: C ? p.aG : true,
+        onOpenSpotifyArtist: C ? p.d$ : true,
+        onOpenSpotifyAlbum: C ? p.Z5 : true
       }) : (0, r.jsx)(c.Z, {
         type: c.P.VOICE_CHANNEL,
         activity: n,
         user: O,
         guildId: t.getGuildId(),
         channelId: t.id,
-        renderHeaderAccessory: null != i ? () => (0, r.jsx)(v, {
+        renderHeaderAccessory: null != i ? () => (0, r.jsx)(j, {
           guildId: t.guild_id,
           members: i
         }) : true
@@ -132,9 +132,9 @@ let j = e => {
         user: O,
         guildId: t.getGuildId(),
         channelId: t.id,
-        color: s.zx.Colors.PRIMARY,
-        look: s.zx.Looks.FILLED,
-        onAction: a
+        color: a.zx.Colors.PRIMARY,
+        look: a.zx.Looks.FILLED,
+        onAction: s
       })
     })]
   })

@@ -21,7 +21,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk819640 = require("./819640.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk124835 = require("./124835.js");
+  Chunk256076 = require("./256076.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,7 +72,7 @@ let N = (0, Chunk663993.Un)({
     name: "UserSettingsV2"
   }),
   j = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("7654"), require.e("58175"), require.e("8725"), require.e("86915")]).then(require.bind(require, 869779)),
+    createPromise: () => Promise.all([require.e("36599"), require.e("7654"), require.e("58175"), require.e("58511"), require.e("86915")]).then(require.bind(require, 869779)),
     webpackId: 869779,
     name: "ChannelSettings"
   }),
@@ -82,7 +82,7 @@ let N = (0, Chunk663993.Un)({
     name: "CollectiblesShop"
   }),
   A = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("1806"), require.e("7654"), require.e("58175"), require.e("44156"), require.e("8725"), require.e("6850"), require.e("58227"), require.e("54408"), require.e("42926"), require.e("20087"), require.e("60458"), require.e("95140")]).then(require.bind(require, 994763)),
+    createPromise: () => Promise.all([require.e("1806"), require.e("36599"), require.e("7654"), require.e("58175"), require.e("44156"), require.e("58511"), require.e("6850"), require.e("58227"), require.e("54408"), require.e("42926"), require.e("20087"), require.e("40725"), require.e("95140")]).then(require.bind(require, 994763)),
     webpackId: 994763,
     name: "GuildSettings"
   }),
@@ -202,9 +202,9 @@ class k extends(r = Chunk73800.PureComponent) {
     }(exports, ["mode", "children", "baseLayer"]), c = module || require === L ? this.getAnimatedStyle() : null, u = (0, Chunk255367.jsx)(Chunk748780.Z.div, S(C({
       ref: e => this.containerRef.current = null != e ? e.componentRef : true,
       "aria-hidden": require === L,
-      className: o()(Chunk124835.layer, {
-        [Chunk124835.baseLayer]: Chunk73800,
-        [Chunk124835.animating]: module,
+      className: o()(Chunk256076.layer, {
+        [Chunk256076.baseLayer]: Chunk73800,
+        [Chunk256076.animating]: module,
         "stop-animations": require === L
       }),
       style: Chunk442837
@@ -289,7 +289,7 @@ class M extends Chunk73800.PureComponent {
     return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
       children: [this.renderArtisanalHack(), (0, Chunk255367.jsx)(Chunk215569.W, {
         component: "div",
-        className: o()(Chunk124835.layers, this.props.className),
+        className: o()(Chunk256076.layers, this.props.className),
         children: this.renderLayers()
       })]
     })

@@ -15,9 +15,9 @@ var l, Chunk255367 = require("./255367.js"),
   Chunk78839 = require("./78839.js"),
   Chunk709054 = require("./709054.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk313512 = require("./313512.js");
+  Chunk542886 = require("./542886.js");
 
-function f(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class j extends Chunk73800.PureComponent {
+class f extends Chunk73800.PureComponent {
   render() {
     let {
       onClose: e
@@ -48,17 +48,17 @@ function C(e) {
     imageClass: t,
     children: n,
     error: l,
-    onDismissError: s
+    onDismissError: i
   } = e;
   return (0, r.jsxs)("div", {
     className: g.content,
     children: [(0, r.jsx)("div", {
       className: a()(g.image, t)
-    }), n, (0, r.jsx)(c.W, {
-      children: null != l ? (0, r.jsx)(d.oXn, {
+    }), n, (0, r.jsx)(d.W, {
+      children: null != l ? (0, r.jsx)(c.oXn, {
         className: g.error,
-        children: (0, r.jsx)(d.kzN, {
-          onDismiss: s,
+        children: (0, r.jsx)(c.kzN, {
+          onDismiss: i,
           children: l.message
         })
       }) : null
@@ -71,13 +71,13 @@ let v = e => {
   } = e, n = (0, o.e7)([x.Z], () => x.Z.getPremiumTypeSubscription());
   return null == n ? null : (0, r.jsxs)("div", {
     className: g.pendingCancellation,
-    children: [(0, r.jsx)(d.Mgn, {
+    children: [(0, r.jsx)(c.Mgn, {
       size: "custom",
       width: 20,
       height: 20,
       color: "currentColor",
       className: g.pendingCancellationIcon
-    }), (0, r.jsx)(d.Text, {
+    }), (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
       className: g.pendingCancellationMessage,
       children: p.intl.format(p.t.SFpsCA, {
@@ -88,44 +88,44 @@ let v = e => {
   })
 };
 
-function b(e) {
+function y(e) {
   let {
     imageClass: t,
     blurb: n,
     guild: l,
-    warning: s,
-    error: i,
+    warning: i,
+    error: s,
     onDismissError: a,
     slotCount: o = 1,
-    canceledCount: c = 0
+    canceledCount: d = 0
   } = e;
   return (0, r.jsxs)(C, {
     imageClass: t,
-    error: i,
+    error: s,
     onDismissError: a,
-    children: [(0, r.jsx)(d.Text, {
+    children: [(0, r.jsx)(c.Text, {
       variant: "text-md/normal",
       children: n
     }), (0, r.jsx)(m.Z, {
       className: g.guildCard,
       guild: l,
       subscriptionChange: o
-    }), (0, r.jsx)(d.Text, {
+    }), (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
-      children: s
-    }), c > 0 ? (0, r.jsx)(v, {
-      canceledCount: c
+      children: i
+    }), d > 0 ? (0, r.jsx)(v, {
+      canceledCount: d
     }) : null]
   })
 }
-class y extends Chunk73800.PureComponent {
+class b extends Chunk73800.PureComponent {
   render() {
     let {
       confirmation: e,
       confirmationLabel: t,
       isModifyingSubscription: n,
       onConfirm: l,
-      onCancel: s
+      onCancel: i
     } = this.props;
     return (0, Chunk255367.jsx)(Chunk481060.mzw, {
       children: (0, Chunk255367.jsxs)(Chunk481060.hE2, {
@@ -153,10 +153,10 @@ class S extends(l = Chunk73800.PureComponent) {
       header: t,
       blurb: n,
       warning: l,
-      confirmation: i,
+      confirmation: s,
       confirmationLabel: a,
       imageClass: o,
-      error: c,
+      error: d,
       isModifyingSubscription: u,
       onConfirm: m,
       onCancel: x,
@@ -164,10 +164,10 @@ class S extends(l = Chunk73800.PureComponent) {
       canceledCount: p
     } = this.props;
     return (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
-      children: [(0, Chunk255367.jsx)(j, {
+      children: [(0, Chunk255367.jsx)(f, {
         text: exports
       }), (0, Chunk255367.jsx)(Chunk481060.hzk, {
-        children: (0, Chunk255367.jsx)(b, {
+        children: (0, Chunk255367.jsx)(y, {
           guild: module,
           blurb: require,
           warning: l,
@@ -176,7 +176,7 @@ class S extends(l = Chunk73800.PureComponent) {
           onDismissError: Chunk709054,
           canceledCount: Chunk388032
         })
-      }), (0, Chunk255367.jsx)(y, {
+      }), (0, Chunk255367.jsx)(b, {
         confirmation: Chunk120356,
         confirmationLabel: a,
         isModifyingSubscription: Chunk600164,
@@ -186,36 +186,36 @@ class S extends(l = Chunk73800.PureComponent) {
     })
   }
 }
-f(S, "Header", j), f(S, "ApplyBody", b), f(S, "TransferBody", function(e) {
+j(S, "Header", f), j(S, "ApplyBody", y), j(S, "TransferBody", function(e) {
   var t, n;
   let {
     imageClass: l,
-    blurb: i,
+    blurb: s,
     fromGuilds: a,
     toGuild: o,
-    error: c,
+    error: d,
     onDismissError: u,
     slotCount: x = 1,
-    canceledCount: f = 0
-  } = e, j = s.useRef(a), b = null == (t = j.current) ? true : t.length, y = null == (n = j.current) ? true : n.reduce((e, t) => (e.hasOwnProperty(t.id) || (e[t.id] = []), e[t.id].push(t), e), {});
+    canceledCount: j = 0
+  } = e, f = i.useRef(a), y = null == (t = f.current) ? true : t.length, b = null == (n = f.current) ? true : n.reduce((e, t) => (e.hasOwnProperty(t.id) || (e[t.id] = []), e[t.id].push(t), e), {});
   return (0, r.jsxs)(C, {
     imageClass: l,
-    error: c,
+    error: d,
     onDismissError: u,
-    children: [(0, r.jsx)(d.Text, {
+    children: [(0, r.jsx)(c.Text, {
       variant: "text-md/normal",
-      children: i
-    }), (0, r.jsx)(d.Text, {
+      children: s
+    }), (0, r.jsx)(c.Text, {
       variant: "text-xs/bold",
       className: g.transferGuildCardHeader,
       children: p.intl.format(p.t["5zQYEx"], {
-        guildCount: b
+        guildCount: y
       })
-    }), null != y ? h.default.keys(y).map(e => (0, r.jsx)(m.Z, {
+    }), null != b ? h.default.keys(b).map(e => (0, r.jsx)(m.Z, {
       className: g.transferFromGuildCard,
-      guild: y[e][0],
-      subscriptionChange: false * y[e].length
-    }, e)) : null, (0, r.jsx)(d.Text, {
+      guild: b[e][0],
+      subscriptionChange: false * b[e].length
+    }, e)) : null, (0, r.jsx)(c.Text, {
       variant: "text-xs/normal",
       className: g.transferGuildCardHeader,
       children: p.intl.format(p.t.ct6oxM, {
@@ -228,9 +228,9 @@ f(S, "Header", j), f(S, "ApplyBody", b), f(S, "TransferBody", function(e) {
         guild: o,
         subscriptionChange: null != a ? a.length : 1
       })
-    }), f > 0 ? (0, r.jsx)(v, {
-      canceledCount: f
+    }), j > 0 ? (0, r.jsx)(v, {
+      canceledCount: j
     }) : null]
   })
-}), f(S, "Footer", y);
+}), j(S, "Footer", b);
 let N = S

@@ -13,7 +13,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk210887 = require("./210887.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk928628 = require("./928628.js");
+  Chunk755429 = require("./755429.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -141,13 +141,13 @@ class _ extends Chunk73800.PureComponent {
       }
     }(module);
     return module === Chunk981631.pJs.ADD_FRIEND ? (0, Chunk255367.jsx)(Chunk748780.Z.div, {
-      className: Chunk928628.friendsEmpty,
+      className: Chunk755429.friendsEmpty,
       style: r,
       children: (0, Chunk255367.jsx)(b, {
         theme: require
       })
     }) : (0, Chunk255367.jsx)(Chunk748780.Z.div, {
-      className: Chunk928628.friendsEmpty,
+      className: Chunk755429.friendsEmpty,
       style: r,
       children: (0, Chunk255367.jsx)(Chunk481060.ubH, {
         theme: require,

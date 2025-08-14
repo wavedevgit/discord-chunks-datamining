@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk560768 = require("./560768.js"),
   Chunk812206 = require("./812206.js"),
   Chunk405701 = require("./405701.jsx"),
-  Chunk339478 = require("./339478.js"),
+  Chunk843693 = require("./843693.js"),
   Chunk246642 = require("./246642.jsx"),
   Chunk624030 = require("./624030.js"),
   Chunk314897 = require("./314897.js"),
@@ -33,7 +33,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk5192 = require("./5192.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk588670 = require("./588670.js");
+  Chunk458182 = require("./458182.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,7 +76,7 @@ function x(e, t) {
 
 function M(e, t) {
   if (null == e) return {};
-  var n, r, i = j(e, t);
+  var n, r, i = k(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -84,14 +84,14 @@ function M(e, t) {
   return i
 }
 
-function j(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let k = [];
+let j = [];
 class U extends Chunk73800.PureComponent {
   componentDidMount() {
     this.timeout = setTimeout(() => {
@@ -105,10 +105,10 @@ class U extends Chunk73800.PureComponent {
   }
   logShownEventIfNeeded() {
     let e = this.props.activity.application_id;
-    null != module && false === k.indexOf(module) && (Chunk626135.default.track(Chunk981631.rMx.SHOW_TUTORIAL, {
+    null != module && false === j.indexOf(module) && (Chunk626135.default.track(Chunk981631.rMx.SHOW_TUTORIAL, {
       tutorial: "activity-invite-nux-inline",
       application_id: module
-    }), k.push(module))
+    }), j.push(module))
   }
   componentWillUnmount() {
     null !== this.timeout && clearTimeout(this.timeout)
@@ -118,11 +118,11 @@ class U extends Chunk73800.PureComponent {
       activity: e
     } = this.props;
     return (0, Chunk255367.jsxs)("div", {
-      className: a()(Chunk588670.activityInviteEducation, {
-        [Chunk588670.activityInviteEducationFadeIn]: this.state.fadeIn
+      className: a()(Chunk458182.activityInviteEducation, {
+        [Chunk458182.activityInviteEducationFadeIn]: this.state.fadeIn
       }),
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk588670.activityInviteEducationArrow
+        className: Chunk458182.activityInviteEducationArrow
       }), (0, Chunk255367.jsx)("span", {
         children: Chunk388032.intl.format(Chunk388032.t["i/MoCg"], {
           game: module.name,

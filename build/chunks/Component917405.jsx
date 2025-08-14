@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk873596 = require("./873596.jsx"),
   Chunk423516 = require("./423516.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk786009 = require("./786009.js");
+  Chunk445233 = require("./445233.js");
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -35,17 +35,17 @@ function p(e) {
   return e
 }
 let O = {
-    [Chunk981631.QKv.CONNECTED]: Chunk786009.rtcConnectionStatusConnected,
-    [Chunk981631.QKv.CONNECTING]: Chunk786009.rtcConnectionStatusConnecting,
-    [Chunk981631.QKv.ERROR]: Chunk786009.rtcConnectionStatusError
-  },
-  N = {
-    [Chunk981631.IE4.FINE]: Chunk786009.rtcConnectionQualityFine,
-    [Chunk981631.IE4.AVERAGE]: Chunk786009.rtcConnectionQualityAverage,
-    [Chunk981631.IE4.BAD]: Chunk786009.rtcConnectionQualityBad,
-    [Chunk981631.IE4.UNKNOWN]: null
+    [Chunk981631.QKv.CONNECTED]: Chunk445233.rtcConnectionStatusConnected,
+    [Chunk981631.QKv.CONNECTING]: Chunk445233.rtcConnectionStatusConnecting,
+    [Chunk981631.QKv.ERROR]: Chunk445233.rtcConnectionStatusError
   },
   y = {
+    [Chunk981631.IE4.FINE]: Chunk445233.rtcConnectionQualityFine,
+    [Chunk981631.IE4.AVERAGE]: Chunk445233.rtcConnectionQualityAverage,
+    [Chunk981631.IE4.BAD]: Chunk445233.rtcConnectionQualityBad,
+    [Chunk981631.IE4.UNKNOWN]: null
+  },
+  N = {
     [Chunk981631.IE4.FINE]: Chunk481060.B_b,
     [Chunk981631.IE4.AVERAGE]: Chunk481060.hLg,
     [Chunk981631.IE4.BAD]: Chunk481060.mbS,
@@ -71,7 +71,7 @@ function b(e) {
     }
     return l
   }(e, ["quality", "largePing"]);
-  let i = y[t];
+  let i = N[t];
   return (0, r.jsx)(i, p({
     className: o()(g.ping, {
       [g.largePing]: n
@@ -84,7 +84,7 @@ function x(e) {
     quality: t,
     lastPing: n,
     state: i,
-    className: y,
+    className: N,
     children: x,
     channelId: E,
     childrenAsSubtitle: m,
@@ -105,13 +105,13 @@ function x(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }, [E]), {
-    connectionStatus: _,
-    connectionStatusText: S
+    connectionStatus: S,
+    connectionStatusText: _
   } = u.Z.getStatus(i, v);
   return (0, r.jsxs)("div", {
     className: g.rtcConnectionStatusWrapper,
     children: [(0, r.jsxs)("div", {
-      className: o()(g.rtcConnectionStatus, N[t], y),
+      className: o()(g.rtcConnectionStatus, y[t], N),
       children: [j && (0, r.jsx)(s.ua7, {
         text: t !== h.IE4.UNKNOWN && null != n ? "".concat(n.toFixed(0), " ms") : null,
         children: e => (0, r.jsx)(b, p({
@@ -134,10 +134,10 @@ function x(e) {
                 (0, c.v)(a.Z.RTC_PANEL, c.d.CONNECTION_STATUS), t(e)
               },
               children: (0, r.jsx)(f.Z, {
-                text: S,
+                text: _,
                 textVariant: C,
                 hasVideo: v,
-                className: O[_],
+                className: O[S],
                 hasConnectedChannel: null != E
               })
             })

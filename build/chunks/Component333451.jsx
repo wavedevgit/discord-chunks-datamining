@@ -26,7 +26,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk837852 = require("./837852.js");
+  Chunk22706 = require("./22706.js");
 
 function M(e) {
   let {
@@ -45,7 +45,7 @@ function M(e) {
       icon: u.$Eu,
       iconClassName: x.perkIconGuild,
       description: b.intl.formatToPlainString(b.t["1A6vXl"], {
-        percent: (0, f.T3)(n, g.Rr / 100)
+        percent: (0, I.T3)(n, g.Rr / 100)
       }),
       color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK.css
     }), t ? (0, l.jsx)(h.Z, {
@@ -72,7 +72,7 @@ function L(e) {
     onBack: o,
     onSkip: h,
     onSubscriptionConfirmation: S,
-    analyticsLocation: f,
+    analyticsLocation: I,
     analyticsSourceLocation: L,
     priceOptions: T
   } = e, {
@@ -80,7 +80,7 @@ function L(e) {
     sourceAnalyticsLocations: C
   } = (0, d.ZP)(p.Z.GUILD_BOOSTING_PREMIUM_UPSELL), {
     theme: A
-  } = (0, u.TCT)(), k = (0, a.ap)(A) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, R = null == n || null == n.premiumSubscriptionType, D = I.ZP.getPrice(g.Xh.PREMIUM_MONTH_TIER_2, false, false, T), v = (0, N.T4)(D.amount, D.currency), w = (0, P.N)(), Z = null == w ? true : w.trial_id, U = (null == w || null == (t = w.subscription_trial) ? true : t.sku_id) === g.Si.TIER_2;
+  } = (0, u.TCT)(), k = (0, a.ap)(A) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, R = null == n || null == n.premiumSubscriptionType, D = f.ZP.getPrice(g.Xh.PREMIUM_MONTH_TIER_2, false, false, T), v = (0, N.T4)(D.amount, D.currency), w = (0, P.N)(), Z = null == w ? true : w.trial_id, U = (null == w || null == (t = w.subscription_trial) ? true : t.sku_id) === g.Si.TIER_2;
   return r.useEffect(() => {
     y.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
       type: g.cd.GUILD_PREMIUM_UPSELL_MODAL,
@@ -143,7 +143,7 @@ function L(e) {
                   })
                 }
                 return e
-              }({}, f), t = t = {
+              }({}, I), t = t = {
                 section: O.jXE.PREMIUM_GUILD_PURCHASE_MODAL
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
                 var n = Object.keys(e);

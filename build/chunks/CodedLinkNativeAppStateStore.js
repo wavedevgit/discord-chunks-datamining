@@ -1,44 +1,43 @@
 /** Chunk was on 27978 **/
 /** chunk id: 362762, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => d
 });
-var r, i, l, Chunk442837 = require("./442837.js"),
+var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
-let c = null,
-  u = {};
-class d extends(l = Chunk442837.ZP.Store) {
+let a = null,
+  c = {};
+class u extends(i = Chunk442837.ZP.Store) {
   getState(e) {
-    return u[e]
+    return c[e]
   }
   getHighestState() {
-    return c
+    return a
   }
-}
-i = "CodedLinkNativeAppStateStore", (r = "displayName") in d ? Object.defineProperty(d, r, {
-  value: i,
+}(r = "displayName") in u ? Object.defineProperty(u, r, {
+  value: "CodedLinkNativeAppStateStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : d[r] = i;
-let h = new d(Chunk570140.Z, {
+}) : u[r] = "CodedLinkNativeAppStateStore";
+let d = new u(Chunk570140.Z, {
   NATIVE_APP_MODAL_OPENING: function(e) {
     let {
       code: t
     } = e;
-    u[t] = a.kEZ.OPENING, null === c && (c = a.kEZ.OPENING)
+    c[t] = s.kEZ.OPENING, null === a && (a = s.kEZ.OPENING)
   },
   NATIVE_APP_MODAL_OPENED: function(e) {
     let {
       code: t
     } = e;
-    u[t] = a.kEZ.OPEN, c = a.kEZ.OPEN
+    c[t] = s.kEZ.OPEN, a = s.kEZ.OPEN
   },
   NATIVE_APP_MODAL_OPEN_FAILED: function(e) {
     let {
       code: t
     } = e;
-    u[t] = a.kEZ.OPEN_FAIL, (null === c || c === a.kEZ.OPENING) && (c = a.kEZ.OPEN_FAIL)
+    c[t] = s.kEZ.OPEN_FAIL, (null === a || a === s.kEZ.OPENING) && (a = s.kEZ.OPEN_FAIL)
   }
 })

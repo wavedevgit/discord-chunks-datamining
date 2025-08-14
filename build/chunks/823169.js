@@ -19,20 +19,22 @@ class d extends Chunk317770.Z {
     Chunk570140.Z.unsubscribe("CONNECTION_OPEN", this.maybeFetchEligiblity)
   }
   constructor(...e) {
-    var t, n;
-    super(...e), t = "maybeFetchEligiblity", n = async () => {
-      if ((0, s.isDesktop)() || (0, s.isWeb)()) {
-        let e = a.Z.getGuildsArray(),
-          t = o.default.getCurrentUser(),
-          n = e.filter(e => (0, l.eM)(e, t) && !e.features.has(u.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && !e.features.has(u.oNc.CREATOR_MONETIZABLE_RESTRICTED) && !e.features.has(u.oNc.CREATOR_MONETIZABLE_DISABLED) && (e.features.has(u.oNc.CREATOR_MONETIZABLE) || e.features.has(u.oNc.CREATOR_MONETIZABLE_PROVISIONAL)));
-        n.length > 0 && await (0, c.av)(n.map(e => e.id))
-      }
-    }, t in this ? Object.defineProperty(this, t, {
-      value: n,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[t] = n
+    super(...e),
+      function(e, t, n) {
+        t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
+      }(this, "maybeFetchEligiblity", async () => {
+        if ((0, s.isDesktop)() || (0, s.isWeb)()) {
+          let e = a.Z.getGuildsArray(),
+            t = o.default.getCurrentUser(),
+            n = e.filter(e => (0, l.eM)(e, t) && !e.features.has(u.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && !e.features.has(u.oNc.CREATOR_MONETIZABLE_RESTRICTED) && !e.features.has(u.oNc.CREATOR_MONETIZABLE_DISABLED) && (e.features.has(u.oNc.CREATOR_MONETIZABLE) || e.features.has(u.oNc.CREATOR_MONETIZABLE_PROVISIONAL)));
+          n.length > 0 && await (0, c.av)(n.map(e => e.id))
+        }
+      })
   }
 }
 let p = new d

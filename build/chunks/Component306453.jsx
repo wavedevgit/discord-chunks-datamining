@@ -15,18 +15,18 @@ var Chunk120356 = require("./120356.js"),
   Chunk837748 = require("./837748.js"),
   Chunk260539 = require("./260539.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk286691 = require("./286691.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk930029 = require("./930029.js"),
+  Chunk197571 = require("./197571.js");
 
 function h() {
   return (0, Chunk255367.jsx)(Chunk297700.Z, {
-    className: Chunk286691.verifiedIcon,
+    className: Chunk930029.verifiedIcon,
     children: (0, Chunk255367.jsx)("div", {
-      className: Chunk286691.verifiedCheckContainer,
+      className: Chunk930029.verifiedCheckContainer,
       children: (0, Chunk255367.jsx)(Chunk481060.kmB, {
         size: "xs",
         color: "currentColor",
-        className: Chunk286691.verifiedCheck
+        className: Chunk930029.verifiedCheck
       })
     })
   })

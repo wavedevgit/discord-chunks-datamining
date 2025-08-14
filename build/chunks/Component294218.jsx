@@ -28,7 +28,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk145807 = require("./145807.jsx"),
   Chunk56744 = require("./56744.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk433869 = require("./433869.js");
+  Chunk360514 = require("./360514.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -97,8 +97,8 @@ function x(e) {
     onClick: L,
     hideSimpleEmbedContent: x = true,
     channel: M,
-    isGroupStart: j,
-    animateAvatar: k,
+    isGroupStart: k,
+    animateAvatar: j,
     subscribeToComponentDispatch: U,
     renderThreadAccessory: G,
     trackAnnouncementViews: B = false

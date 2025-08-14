@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 29605, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   FT: () => q,
@@ -44,8 +44,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk896978 = require("./896978.js"),
-  Chunk423279 = require("./423279.js");
+  Chunk878341 = require("./878341.js"),
+  Chunk620842 = require("./620842.js");
 
 function z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -294,10 +294,10 @@ let W = d().throttle(Chunk80932.OQ, 1e3),
   Q = () => (0, Chunk255367.jsxs)("div", {
     children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
       tag: Chunk481060.RB0.H2,
-      className: Chunk896978.emojiUploadUploadRequirementsHeading,
+      className: Chunk878341.emojiUploadUploadRequirementsHeading,
       children: Chunk388032.intl.string(Chunk388032.t.jrXfy8)
     }), (0, Chunk255367.jsxs)("ul", {
-      className: Chunk896978.emojiUploadUploadRequirementsList,
+      className: Chunk878341.emojiUploadUploadRequirementsList,
       children: [(0, Chunk255367.jsx)("li", {
         children: (0, Chunk255367.jsx)(Chunk481060.R94, {
           type: Chunk481060.geA.DESCRIPTION,
@@ -412,9 +412,9 @@ let W = d().throttle(Chunk80932.OQ, 1e3),
         })
       }, el = (0, Chunk200876.l)(exports);
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk896978.emojiSettings,
+      className: Chunk878341.emojiSettings,
       children: [0 === Chunk185923 ? null : (0, Chunk255367.jsx)(Chunk327802.Z, {
-        className: Chunk896978.emojiUploadContainer,
+        className: Chunk878341.emojiUploadContainer,
         onDrop: ei
       }), (0, Chunk255367.jsxs)(Chunk481060.hjN, {
         tag: Chunk481060.RB0.H1,
@@ -424,7 +424,7 @@ let W = d().throttle(Chunk80932.OQ, 1e3),
           staticEmojiCount: V,
           animatedEmojiCount: q
         }), (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-          className: Chunk896978.uploader,
+          className: Chunk878341.uploader,
           children: [(0, Chunk255367.jsx)(Chunk481060.R94, {
             type: Chunk481060.geA.DESCRIPTION,
             children: Chunk388032.intl.format(Chunk388032.t.TA1BR0, {
@@ -473,7 +473,7 @@ let W = d().throttle(Chunk80932.OQ, 1e3),
           })]
         }), (0, Chunk255367.jsx)(Y, {
           isLoading: null == Chunk668781,
-          staticEmoji: Chunk423279,
+          staticEmoji: Chunk620842,
           animatedEmoji: K,
           guild: exports,
           theme: Chunk512722

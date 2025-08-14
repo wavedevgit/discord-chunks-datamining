@@ -1,4 +1,4 @@
-/** Chunk was on 45523 **/
+/** Chunk was on 65819 **/
 /** chunk id: 384694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => j
@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk598117 = require("./598117.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk978967 = require("./978967.js");
+  Chunk503366 = require("./503366.js");
 let b = e => ({
     label: e.name,
     value: e.id
@@ -37,49 +37,49 @@ let b = e => ({
         var t;
         let {
           guild: n,
-          emojis: r,
-          isEmojiAnimated: l
-        } = e, i = null != (t = r.filter(e => e.animated === l && !(0, u.Kt)(e, n.id)).length) ? t : 0;
+          emojis: l,
+          isEmojiAnimated: r
+        } = e, i = null != (t = l.filter(e => e.animated === r && !(0, u.Kt)(e, n.id)).length) ? t : 0;
         return (0, g.y4)(n) - i
       }({
         guild: n,
         emojis: o.ZP.getGuildEmoji(t),
         isEmojiAnimated: N
       })]
-    })), [C, N]), I = l.useMemo(() => Object.values(C).filter(v).map(b), [C]), O = l.useCallback(e => {
+    })), [C, N]), I = r.useMemo(() => Object.values(C).filter(v).map(b), [C]), O = r.useCallback(e => {
       let [t] = e;
       if (null == t || null == t.value) return null;
       let n = C[t.value];
-      return null == n ? null : (0, r.jsxs)("div", {
+      return null == n ? null : (0, l.jsxs)("div", {
         className: _.value,
-        children: [(0, r.jsx)(s.Z, {
+        children: [(0, l.jsx)(s.Z, {
           guild: n,
           size: s.Z.Sizes.SMALLER,
           active: true,
           className: _.icon
-        }), (0, r.jsx)(a.Text, {
+        }), (0, l.jsx)(a.Text, {
           variant: "text-sm/normal",
           className: _.text,
           children: t.label
         })]
       })
-    }, [C]), S = l.useCallback(e => {
+    }, [C]), S = r.useCallback(e => {
       if (null == e || null == e.value) return null;
       let t = C[e.value];
-      return null == t ? null : (0, r.jsxs)("div", {
+      return null == t ? null : (0, l.jsxs)("div", {
         className: _.option,
-        children: [(0, r.jsx)(s.Z, {
+        children: [(0, l.jsx)(s.Z, {
           guild: t,
           size: s.Z.Sizes.MEDIUM,
           active: true,
           className: _.icon
-        }), (0, r.jsxs)("div", {
+        }), (0, l.jsxs)("div", {
           className: _.optionLabelContainer,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, l.jsx)(a.Text, {
             variant: "text-sm/medium",
             className: _.text,
             children: e.label
-          }), (0, r.jsx)(a.Text, {
+          }), (0, l.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "text-tertiary",
             className: _.text,
@@ -90,10 +90,10 @@ let b = e => ({
         })]
       })
     }, [E, C]);
-    return l.useEffect(() => {
+    return r.useEffect(() => {
       var e;
       I.length < 1 ? d(f.ze.NO_PERMISSIONS) : null != n && (null != (e = null == E ? true : E[n]) ? e : 0) < 1 ? d(x.evJ.TOO_MANY_EMOJI) : d(null)
-    }, [I, t, d, n, E]), (0, r.jsx)(a.q4e, {
+    }, [I, t, d, n, E]), (0, l.jsx)(a.q4e, {
       className: _.guildSelector,
       onChange: t,
       options: I,

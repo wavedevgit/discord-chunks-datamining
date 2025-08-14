@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 311352, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -21,10 +21,10 @@ var Chunk255367 = require("./255367.js"),
   Chunk39604 = require("./39604.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk573040 = require("./573040.js");
+  Chunk611372 = require("./611372.js");
 
-function v(e) {
-  (0, a.jW)(e, async () => {
+function j(e) {
+  (0, s.jW)(e, async () => {
     let {
       default: e
     } = await n.e("21960").then(n.bind(n, 999466));
@@ -48,15 +48,13 @@ function v(e) {
     }({}, t))
   })
 }
-let j = e => {
+let C = e => {
     let {
       keybindString: t,
       children: n,
       targetElementRef: i
-    } = e, l = (e, t) => {
-      e.stopPropagation(), e.preventDefault(), null == t || t()
-    };
-    return (0, r.jsx)(s.yRy, {
+    } = e;
+    return (0, r.jsx)(a.yRy, {
       targetElementRef: i,
       shouldShow: false,
       position: "top",
@@ -69,36 +67,36 @@ let j = e => {
           dismissibleContent: o.z.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK,
           shouldUseHorizontalButtons: true,
           inlineArt: true,
-          artClassName: C.clipsEducationArt,
+          artClassName: v.clipsEducationArt,
           position: "top",
           header: (0, r.jsx)("div", {
-            className: C.header,
+            className: v.header,
             children: y.intl.format(y.t["o+srEx"], {
               keybind: t,
               keybindHook: () => (0, r.jsx)("span", {
-                className: C.keybindHintKeys,
-                children: (0, r.jsx)(s.M2$, {
-                  className: C.keybindShortcut,
+                className: v.keybindHintKeys,
+                children: (0, r.jsx)(a.M2$, {
+                  className: v.keybindShortcut,
                   shortcut: t
                 })
               })
             })
           }),
-          headerClassName: C.clipsEducationHeader,
-          body: (0, r.jsx)(s.Text, {
+          headerClassName: v.clipsEducationHeader,
+          body: (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "always-white",
-            className: C.bodyText,
+            className: v.bodyText,
             children: y.intl.format(y.t.DWeRm5, {
               keybindHook: () => (0, r.jsx)("div", {
-                className: C.keyCombo,
+                className: v.keyCombo,
                 children: t
               }),
               keybind: t
             })
           }),
           onClose: e => {
-            l(e, n)
+            e.stopPropagation(), e.preventDefault(), null == n || n()
           }
         })
       },
@@ -113,28 +111,28 @@ let j = e => {
       n = (0, Chunk399606.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
       o = (0, Chunk924557.Go)(),
       {
-        clipsEnabled: a,
+        clipsEnabled: s,
         isAtMaxSavingClipsOperations: d
       } = (0, Chunk399606.cj)([Chunk435064.Z], () => ({
         clipsEnabled: Chunk435064.Z.getSettings().clipsEnabled,
         isAtMaxSavingClipsOperations: Chunk435064.Z.getIsAtMaxSaveClipOperations()
       })),
-      C = (0, Chunk399606.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP));
-    if (!(Chunk704215 && Chunk239091) || null == Chunk573040 || require) return null;
-    let E = Chunk13140.BB(Chunk573040.shortcut, true);
-    return (0, Chunk255367.jsx)(j, {
+      v = (0, Chunk399606.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP));
+    if (!(Chunk704215 && Chunk239091) || null == Chunk611372 || require) return null;
+    let E = Chunk13140.BB(Chunk611372.shortcut, true);
+    return (0, Chunk255367.jsx)(C, {
       keybindString: E,
       targetElementRef: module,
       children: (0, Chunk255367.jsx)(Chunk870569.Z, {
         ref: module,
         disabled: Chunk765585,
-        tooltipText: null != Chunk573040 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.HIMcv7, {
-          hotkey: Chunk13140.BB(null == Chunk573040 ? true : Chunk573040.shortcut, true)
+        tooltipText: null != Chunk611372 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.HIMcv7, {
+          hotkey: Chunk13140.BB(null == Chunk611372 ? true : Chunk611372.shortcut, true)
         }) : Chunk388032.intl.string(Chunk388032.t.s52pjo),
         onClick: () => {
           (0, Chunk39604.C1)(), (0, Chunk522651.v)(exports, Chunk522651.d.CLIP)
         },
-        onContextMenu: v,
+        onContextMenu: j,
         icon: Chunk481060.AlX
       })
     })

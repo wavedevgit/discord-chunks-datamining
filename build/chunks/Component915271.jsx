@@ -13,7 +13,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk618541 = require("./618541.js"),
   Chunk975060 = require("./975060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk752238 = require("./752238.js");
+  Chunk496758 = require("./496758.js");
 class _ extends Chunk73800.PureComponent {
   componentDidMount() {
     null != this.props.venmoClient && Chunk873115.by()
@@ -32,22 +32,22 @@ class _ extends Chunk73800.PureComponent {
       children: [(0, Chunk255367.jsx)(Chunk219929.ZP, {
         type: Chunk219929.ZP.Types.VENMO,
         size: Chunk219929.Uy.MEDIUM,
-        className: Chunk752238.venmoIcon
+        className: Chunk496758.venmoIcon
       }), Chunk73800 ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
         children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
           variant: module.length < 25 ? "heading-xl/bold" : "heading-lg/bold",
-          className: Chunk752238.connectionInstructions,
+          className: Chunk496758.connectionInstructions,
           children: Chunk388032.intl.format(Chunk388032.t.DowIra, {
             venmoUsername: module
           })
         }), (0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
-          className: Chunk752238.connectionInstructions,
+          className: Chunk496758.connectionInstructions,
           children: Chunk388032.intl.string(Chunk388032.t.kmEvnZ)
         })]
       }) : (0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
-        className: Chunk752238.connectionInstructions,
+        className: Chunk496758.connectionInstructions,
         children: null == require ? Chunk388032.intl.string(Chunk388032.t["2ouZDQ"]) : Chunk388032.intl.string(Chunk388032.t.mIL6JS)
       })]
     })

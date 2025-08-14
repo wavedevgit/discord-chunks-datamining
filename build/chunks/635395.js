@@ -33,22 +33,24 @@ class O extends Chunk73800.PureComponent {
     return null
   }
   constructor(...e) {
-    var t, n;
-    super(...e), t = "getIcon", n = () => {
-      let {
-        deafened: e,
-        muted: t,
-        speaking: n,
-        connected: r,
-        unread: i
-      } = this.props, l = _;
-      return (0, g.isMac)() && !r ? l : (0, g.isLinux)() || !r ? (i && (l = "UNREAD"), l) : l = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
-    }, t in this ? Object.defineProperty(this, t, {
-      value: n,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[t] = n
+    super(...e),
+      function(e, t, n) {
+        t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
+      }(this, "getIcon", () => {
+        let {
+          deafened: e,
+          muted: t,
+          speaking: n,
+          connected: r,
+          unread: i
+        } = this.props, l = _;
+        return (0, g.isMac)() && !r ? l : (0, g.isLinux)() || !r ? (i && (l = "UNREAD"), l) : l = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
+      })
   }
 }
 let E = () => null;

@@ -2,7 +2,7 @@
 /** chunk id: 91896, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
@@ -29,26 +29,24 @@ function u(e) {
   }
 }
 let d = (e, t) => "".concat(t, "-").concat(e),
-  f = {
-    BY_APPLICATION_ID: e => "application-id-".concat(e),
-    BY_USER_ID: e => "user-id-".concat(e),
-    BY_RELATIONSHIP_TYPE: e => "relationship-type-".concat(e)
-  };
+  f = e => "application-id-".concat(e),
+  _ = e => "user-id-".concat(e),
+  p = e => "relationship-type-".concat(e);
 
-function _(e) {
+function h(e) {
   let t = [];
-  return t.push(f.BY_APPLICATION_ID(e.applicationId)), t.push(f.BY_USER_ID(e.id)), t.push(f.BY_RELATIONSHIP_TYPE(e.type)), t
+  return t.push(f(e.applicationId)), t.push(_(e.id)), t.push(p(e.type)), t
 }
-let p = new Chunk759174.h(_, e => "".concat(e.since)),
-  h = 0,
-  m = 0,
-  g = 0;
+let m = new Chunk759174.h(h, e => "".concat(e.since)),
+  g = 0,
+  E = 0,
+  b = 0;
 
-function E() {
+function y() {
   let e = 0,
     t = 0,
     n = 0;
-  p.values().forEach(r => {
+  m.values().forEach(r => {
     let {
       type: i,
       id: o
@@ -59,59 +57,59 @@ function E() {
       if (s.Z.isSpam(o) || s.Z.isIgnored(o)) return;
       e += 1
     }
-  }), h = module, m = exports, g = require
-}
-
-function b(e) {
-  p.set(d(e.id, e.applicationId), e)
-}
-
-function y(e, t) {
-  p.delete(d(e, t))
+  }), g = module, E = exports, b = require
 }
 
 function O(e) {
+  m.set(d(e.id, e.applicationId), e)
+}
+
+function v(e, t) {
+  m.delete(d(e, t))
+}
+
+function I(e) {
   let {
     unknownApplicationIds: t
   } = e;
   if (null != t) {
     for (let e of t)
-      for (let t of p.values(f.BY_APPLICATION_ID(e)))(t.type === l.OGo.PENDING_INCOMING || t.type === l.OGo.PENDING_OUTGOING) && y(t.id, e);
-    E()
+      for (let t of m.values(f(e)))(t.type === l.OGo.PENDING_INCOMING || t.type === l.OGo.PENDING_OUTGOING) && v(t.id, e);
+    y()
   }
 }
 
-function v(e) {
-  p.clear(), e.gameRelationships.forEach(e => {
-    b(u(e))
-  }), E()
-}
-
-function I(e) {
-  b(e.gameRelationship), E()
-}
-
 function T(e) {
-  y(e.userId, e.applicationId), E()
+  m.clear(), e.gameRelationships.forEach(e => {
+    O(u(e))
+  }), y()
 }
-class S extends(r = Chunk442837.ZP.Store) {
+
+function S(e) {
+  O(e.gameRelationship), y()
+}
+
+function A(e) {
+  v(e.userId, e.applicationId), y()
+}
+class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk699516.Z)
   }
   getPendingIncomingCount() {
-    return h
-  }
-  getPendingOutgoingCount() {
-    return m
-  }
-  getGameFriendCount() {
     return g
   }
+  getPendingOutgoingCount() {
+    return E
+  }
+  getGameFriendCount() {
+    return b
+  }
   getGameFriendsForApplication(e) {
-    return p.values(f.BY_APPLICATION_ID(e), true).filter(e => e.type === l.OGo.FRIEND)
+    return m.values(f(e), true).filter(e => e.type === l.OGo.FRIEND)
   }
   getGameRelationshipsForUser(e) {
-    return p.values(f.BY_USER_ID(e), true)
+    return m.values(_(e), true)
   }
   getGameRelationshipsForUserByType(e, t) {
     return this.getGameRelationshipsForUser(e).filter(e => e.type === t)
@@ -120,22 +118,22 @@ class S extends(r = Chunk442837.ZP.Store) {
     return this.getGameRelationshipsForUserByType(e, l.OGo.FRIEND)
   }
   getGameRelationshipCount() {
-    return p.size()
+    return m.size()
   }
   getGameRelationships() {
-    return p
+    return m
   }
   getGameRelationshipsByType(e) {
-    return p.values(f.BY_RELATIONSHIP_TYPE(e), true)
+    return m.values(p(e), true)
   }
   getGameRelationshipsVersion() {
-    return p.version
+    return m.version
   }
 }
-c(S, "displayName", "GameRelationshipStore");
-let A = new S(Chunk570140.Z, {
-  CONNECTION_OPEN: v,
-  GAME_RELATIONSHIP_ADD: I,
-  GAME_RELATIONSHIP_REMOVE: T,
-  APPLICATIONS_FETCH_SUCCESS: O
+c(N, "displayName", "GameRelationshipStore");
+let C = new N(Chunk570140.Z, {
+  CONNECTION_OPEN: T,
+  GAME_RELATIONSHIP_ADD: S,
+  GAME_RELATIONSHIP_REMOVE: A,
+  APPLICATIONS_FETCH_SUCCESS: I
 })

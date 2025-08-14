@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 296991, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => S
@@ -23,7 +23,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk592286 = require("./592286.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk446333 = require("./446333.js");
+  Chunk94228 = require("./94228.js");
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -189,14 +189,7 @@ function S(e) {
     i[r] = N(C({}, i[r]), {
       value: e
     }), n(i)
-  }, [a, t, n]), R = e => {
-    if (a) return;
-    let r = [...t.slice(0, e), ...t.slice(e + 1)];
-    n(0 === r.length ? [{
-      id: o()(),
-      value: ""
-    }] : r)
-  }, Z = i.useCallback((e, r, i) => {
+  }, [a, t, n]), R = i.useCallback((e, r, i) => {
     if (a || null == t) return;
     let l = t.indexOf(e);
     if (null != r && r !== l) {
@@ -204,50 +197,57 @@ function S(e) {
       i.splice(l, 1), i.splice(r, 0, e), n(i)
     }
     i ? null !== p && h(null) : r !== p && h(r)
-  }, [a, p, t, n]), D = t.length === v.X2, A = i.useMemo(() => {
-    let e = D ? O.intl.formatToPlainString(O.t.tU718P, {
+  }, [a, p, t, n]), Z = t.length === v.X2, D = i.useMemo(() => {
+    let e = Z ? O.intl.formatToPlainString(O.t.tU718P, {
       number: v.X2
     }) : true;
     return [{
       text: O.intl.string(O.t.DXq2oa),
       onClick: () => T(O.intl.string(O.t.XudkSk)),
-      disabled: D || a,
+      disabled: Z || a,
       tooltipText: e
     }, {
       text: O.intl.string(O.t.nSqTjI),
       onClick: () => T(O.intl.string(O.t.np91jI)),
-      disabled: D || a,
+      disabled: Z || a,
       tooltipText: e
     }, {
       text: O.intl.string(O.t.AtRxsL),
       onClick: () => T(O.intl.string(O.t.PNIDDA)),
-      disabled: D || a,
+      disabled: Z || a,
       tooltipText: e
     }, {
       text: O.intl.string(O.t["0K5NJi"]),
       onClick: () => T(O.intl.string(O.t.HolIDw)),
-      disabled: D || a,
+      disabled: Z || a,
       tooltipText: e
     }]
-  }, [T, a, D]);
+  }, [T, a, Z]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: y.rulesContainer,
-      children: t.map((e, n) => (0, r.jsx)(E, {
+      children: t.map((e, i) => (0, r.jsx)(E, {
         rulesChannel: null != d ? d : g,
         rule: e,
-        index: n,
-        onChange: e => w(e, n),
-        onClear: () => R(n),
-        onRuleReorder: Z,
-        isDropHovered: n === p,
-        focused: n === I,
+        index: i,
+        onChange: e => w(e, i),
+        onClear: () => (e => {
+          if (a) return;
+          let r = [...t.slice(0, e), ...t.slice(e + 1)];
+          n(0 === r.length ? [{
+            id: o()(),
+            value: ""
+          }] : r)
+        })(i),
+        onRuleReorder: R,
+        isDropHovered: i === p,
+        focused: i === I,
         onFocus: S,
         previewEnabled: null == c || c,
         isDragEnabled: !a && t.length > 1,
         disabled: a
       }, e.id))
-    }), !D && (0, r.jsx)(x.A, {
+    }), !Z && (0, r.jsx)(x.A, {
       text: O.intl.string(O.t.Cq5Jub),
       onClick: P,
       disabled: a
@@ -257,7 +257,7 @@ function S(e) {
       className: y.exampleRulesTitle,
       children: O.intl.string(O.t.XHWj8f)
     }), (0, r.jsx)(j.j, {
-      pills: A,
+      pills: D,
       pillClassName: y.pill
     })]
   })

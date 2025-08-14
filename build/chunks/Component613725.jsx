@@ -16,7 +16,7 @@ var Chunk94171 = require("./94171.js"),
   Chunk430824 = require("./430824.js"),
   Chunk594174 = require("./594174.js"),
   Chunk768581 = require("./768581.js"),
-  Chunk22631 = require("./22631.js");
+  Chunk870515 = require("./870515.js");
 
 function h() {
   let {
@@ -35,7 +35,7 @@ function h() {
     src: E,
     "aria-hidden": true,
     size: Chunk481060.EFr.SIZE_80,
-    className: Chunk22631.avatarSizeOverride
+    className: Chunk870515.avatarSizeOverride
   }), y = null;
   return y = null != require ? (0, Chunk255367.jsx)(Chunk565138.Z, {
     guild: require
@@ -43,17 +43,17 @@ function h() {
     "aria-hidden": true,
     src: g,
     size: Chunk481060.EFr.SIZE_80,
-    className: Chunk22631.avatarSizeOverride
+    className: Chunk870515.avatarSizeOverride
   }) : b, (0, Chunk255367.jsxs)("div", {
-    className: Chunk22631.container,
+    className: Chunk870515.container,
     children: [(0, Chunk255367.jsx)("div", {
-      className: Chunk22631.personAvatar,
+      className: Chunk870515.personAvatar,
       children: b
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk22631.guildAvatar,
+      className: Chunk870515.guildAvatar,
       children: y
     }), (0, Chunk255367.jsx)("svg", {
-      className: Chunk22631.illustration,
+      className: Chunk870515.illustration,
       xmlns: "http://www.w3.org/2000/svg",
       width: "156",
       height: "70",

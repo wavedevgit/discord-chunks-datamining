@@ -1,7 +1,7 @@
 /** Chunk was on 58227 **/
 /** chunk id: 869764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => D,
+  Z: () => b,
   k: () => v
 }), require("./997841.js");
 var Chunk255367 = require("./255367.js"),
@@ -26,7 +26,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk372897 = require("./372897.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk194855 = require("./194855.js");
+  Chunk371882 = require("./371882.js");
 
 function v(e) {
   var {
@@ -105,7 +105,7 @@ function v(e) {
   })
 }
 
-function b(e) {
+function D(e) {
   var t;
   let {
     action: n,
@@ -117,9 +117,9 @@ function b(e) {
     icon: g
   } = n, {
     id: N,
-    name: f
+    name: S
   } = null != h ? h : {}, p = (0, a.e7)([u.Z], () => u.Z.getChannel(s)), E = (0, c.ZP)(p, true), T = (0, a.e7)([I.Z], () => I.Z.can(O.Plq.VIEW_CHANNEL, p)), x = i.useMemo(() => {
-    if (null != p) return () => (0, S.gp)(p.guild_id, p.id)
+    if (null != p) return () => (0, f.gp)(p.guild_id, p.id)
   }, [p]);
   if (null == p || !T) return null;
   let _ = null != (t = (0, d.KS)(p)) ? t : o.VL1;
@@ -129,7 +129,7 @@ function b(e) {
     title: m,
     channelName: E,
     emojiId: N,
-    emojiName: f,
+    emojiName: S,
     icon: g,
     completed: r,
     Icon: _,
@@ -137,16 +137,16 @@ function b(e) {
   })
 }
 
-function D(e) {
+function b(e) {
   let {
     guildId: t
   } = e, n = (0, a.e7)([p.Z], () => p.Z.getNewMemberActions(t), [t]), r = (0, a.e7)([E.Z], () => E.Z.getCompletedActions(t)), c = (0, a.e7)([m.ZP], () => m.ZP.getSelfMember(t)), d = (0, a.e7)([h.Z], () => h.Z.getGuild(t));
   i.useEffect(() => {
     var e;
-    null == r && (null == c ? true : c.flags) != null && (0, f.yE)(null != (e = c.flags) ? e : 0, x.q.STARTED_HOME_ACTIONS) && (0, S.Fg)(t)
+    null == r && (null == c ? true : c.flags) != null && (0, S.yE)(null != (e = c.flags) ? e : 0, x.q.STARTED_HOME_ACTIONS) && (0, f.Fg)(t)
   }, [r, t, null == c ? true : c.flags]);
   let u = i.useCallback(() => {
-    null != d && null != d.rulesChannelId && (0, S.gp)(d.id, d.rulesChannelId)
+    null != d && null != d.rulesChannelId && (0, f.gp)(d.id, d.rulesChannelId)
   }, [d]);
   return null == c || null == n || 0 === n.length ? null : (0, l.jsxs)("div", {
     className: j.container,
@@ -154,7 +154,7 @@ function D(e) {
       variant: "heading-lg/bold",
       color: "header-primary",
       children: _.intl.string(_.t.LhlgY2)
-    }), n.map(e => (0, l.jsx)(b, {
+    }), n.map(e => (0, l.jsx)(D, {
       action: e,
       completed: (null == r ? true : r[e.channelId]) === true,
       guildId: t

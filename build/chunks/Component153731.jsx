@@ -1,7 +1,7 @@
 /** Chunk was on 80960 **/
 /** chunk id: 153731, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => k
 }), require("./539854.js"), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./290780.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -30,54 +30,25 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk312305 = require("./312305.js");
-let I = (e, t, r) => (0, n.jsx)(m.Z, {
-    align: m.Z.Align.CENTER,
-    children: (0, n.jsx)(m.Z.Child, {
-      children: (0, n.jsxs)(m.Z, {
-        align: m.Z.Align.CENTER,
-        children: [(0, n.jsx)(s.qEK, {
-          size: s.EFr.SIZE_24,
-          src: e.getAvatarURL(r, 24),
-          "aria-label": e.username,
-          className: S.avatar
-        }), (0, n.jsx)("span", {
-          className: S.username,
-          children: null != t ? t : b.ZP.getName(e)
-        })]
-      })
-    })
-  }),
-  k = e => (0, n.jsx)(m.Z, {
-    align: m.Z.Align.CENTER,
-    children: (0, n.jsx)(m.Z.Child, {
-      children: (0, n.jsx)(m.Z, {
-        align: m.Z.Align.CENTER,
-        children: (0, n.jsx)("span", {
-          className: S.username,
-          children: e
-        })
-      })
-    })
-  });
+  Chunk966117 = require("./966117.js");
 
-function B(e, t, r, n, a) {
-  let i = [];
-  if (null == t) return i;
+function I(e, t, r, a, i) {
+  let o = [];
+  if (null == t) return o;
   let {
-    transport: o,
+    transport: d,
     rtp: {
-      inbound: s,
-      outbound: d
+      inbound: p,
+      outbound: h
     },
-    camera: m
+    camera: f
   } = t;
-  if (i.push({
+  if (o.push({
       section: u.ID.HEADER,
       label: F.intl.formatToPlainString(F.t.PK5fOD, {
         context: e
       })
-    }), null != o && i.push({
+    }), null != d && o.push({
       section: (0, v.J$)(e, N._s_.TRANSPORT, r),
       label: F.intl.string(F.t.wU9INz),
       element: Z.Z,
@@ -85,7 +56,7 @@ function B(e, t, r, n, a) {
         context: e,
         index: r
       }
-    }), null == d || l().isEmpty(d) || i.push({
+    }), null == h || l().isEmpty(h) || o.push({
       section: (0, v.J$)(e, N._s_.OUTBOUND, r),
       label: F.intl.string(F.t["3u0gIC"]),
       element: j.Z,
@@ -93,44 +64,71 @@ function B(e, t, r, n, a) {
         context: e,
         index: r
       }
-    }), null != m && i.push({
+    }), null != f && o.push({
       section: (0, v.J$)(e, N._s_.CAMERA, r),
       label: F.intl.string(F.t["2AGBWF"]),
       element: C.Z,
       elementProps: {
         context: e,
         index: r,
-        camera: m
+        camera: f
       }
-    }), null != s && !l().isEmpty(s)) {
+    }), null != p && !l().isEmpty(p)) {
     let t = [];
-    Object.keys(s).forEach(i => {
-      let l = D.default.getUser(i),
-        o = y.ZP.getNick(a, i),
-        d = (0, v.J$)(e, i, r);
-      null != s[i] && s[i].length > 0 && t.push({
-        section: d,
-        label: null != l ? I(l, o, a) : k(null != o ? o : i),
-        ariaLabel: null != l ? l.tag : i,
+    Object.keys(p).forEach(l => {
+      let o, d = D.default.getUser(l),
+        u = y.ZP.getNick(i, l),
+        h = (0, v.J$)(e, l, r);
+      null != p[l] && p[l].length > 0 && t.push({
+        section: h,
+        label: null != d ? (0, n.jsx)(m.Z, {
+          align: m.Z.Align.CENTER,
+          children: (0, n.jsx)(m.Z.Child, {
+            children: (0, n.jsxs)(m.Z, {
+              align: m.Z.Align.CENTER,
+              children: [(0, n.jsx)(s.qEK, {
+                size: s.EFr.SIZE_24,
+                src: d.getAvatarURL(i, 24),
+                "aria-label": d.username,
+                className: S.avatar
+              }), (0, n.jsx)("span", {
+                className: S.username,
+                children: null != u ? u : b.ZP.getName(d)
+              })]
+            })
+          })
+        }) : (o = null != u ? u : l, (0, n.jsx)(m.Z, {
+          align: m.Z.Align.CENTER,
+          children: (0, n.jsx)(m.Z.Child, {
+            children: (0, n.jsx)(m.Z, {
+              align: m.Z.Align.CENTER,
+              children: (0, n.jsx)("span", {
+                className: S.username,
+                children: o
+              })
+            })
+          })
+        })),
+        ariaLabel: null != d ? d.tag : l,
         onClick: () => {
-          c.zc(d)
+          c.zc(h)
         },
         element: P.Z,
         elementProps: {
           context: e,
           index: r,
-          videoStreams: n
+          videoStreams: a
         }
       })
-    }), t.length > 0 && (i.push({
+    }), t.length > 0 && (o.push({
       section: u.ID.HEADER,
       label: F.intl.string(F.t.SJmZam)
-    }), i.push(...t))
+    }), o.push(...t))
   }
-  return i
+  return o
 }
 
-function A() {
+function k() {
   var e, t;
   let {
     defaultStats: r,
@@ -147,7 +145,7 @@ function A() {
       clips: l,
       channel: o,
       connectionState: c
-    } = e, d = t.flatMap((e, t) => B(x.Yn.DEFAULT, e, t, a, null == o ? true : o.getGuildId())), m = r.flatMap((e, t) => B(x.Yn.STREAM, e, t, a, null == o ? true : o.getGuildId())), p = [], h = [], f = {
+    } = e, d = t.flatMap((e, t) => I(x.Yn.DEFAULT, e, t, a, null == o ? true : o.getGuildId())), m = r.flatMap((e, t) => I(x.Yn.STREAM, e, t, a, null == o ? true : o.getGuildId())), p = [], h = [], f = {
       section: u.ID.DIVIDER
     };
     return null != i && (p.push(f), p.push({

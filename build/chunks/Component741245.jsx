@@ -15,7 +15,7 @@ var h, t, Chunk255367 = require("./255367.js"),
   Chunk436774 = require("./436774.jsx"),
   Chunk302221 = require("./302221.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk838399 = require("./838399.js");
+  Chunk513825 = require("./513825.js");
 
 function u(a, l, e) {
   return l in a ? Object.defineProperty(a, l, {
@@ -101,7 +101,7 @@ class g extends(h = Chunk73800.PureComponent) {
     switch (module) {
       case "GUILD_BOOST_APPLIED":
         return (0, Chunk255367.jsx)("svg", {
-          className: Chunk838399.svgBorder,
+          className: Chunk513825.svgBorder,
           width: "304",
           height: "48",
           viewBox: "0 0 304 48",
@@ -118,7 +118,7 @@ class g extends(h = Chunk73800.PureComponent) {
         });
       case "PREMIUM_PAYMENT_STARTED":
         return (0, Chunk255367.jsx)("svg", {
-          className: Chunk838399.svgBorder,
+          className: Chunk513825.svgBorder,
           width: "156",
           height: "48",
           viewBox: "0 0 156 48",
@@ -136,7 +136,7 @@ class g extends(h = Chunk73800.PureComponent) {
       case "PREMIUM_ACTIVATED":
       case "PREMIUM_UPGRADED":
         return (0, Chunk255367.jsx)("svg", {
-          className: Chunk838399.svgBorder,
+          className: Chunk513825.svgBorder,
           width: "298",
           height: "48",
           viewBox: "0 0 298 48",
@@ -153,7 +153,7 @@ class g extends(h = Chunk73800.PureComponent) {
         });
       case "PREMIUM_UPDATED":
         return (0, Chunk255367.jsx)("svg", {
-          className: Chunk838399.svgBorder,
+          className: Chunk513825.svgBorder,
           width: "276",
           height: "48",
           viewBox: "0 0 276 48",
@@ -179,7 +179,7 @@ class g extends(h = Chunk73800.PureComponent) {
     switch (module) {
       case "GUILD_BOOST_APPLIED":
         return (0, Chunk255367.jsx)("svg", {
-          className: Chunk838399.svgCopy,
+          className: Chunk513825.svgCopy,
           width: "304",
           height: "48",
           viewBox: "0 0 304 48",
@@ -218,7 +218,7 @@ class g extends(h = Chunk73800.PureComponent) {
         });
       case "PREMIUM_PAYMENT_STARTED":
         return (0, Chunk255367.jsx)("svg", {
-          className: Chunk838399.svgCopy,
+          className: Chunk513825.svgCopy,
           width: "156",
           height: "48",
           viewBox: "0 0 156 48",
@@ -239,7 +239,7 @@ class g extends(h = Chunk73800.PureComponent) {
         });
       case "PREMIUM_ACTIVATED":
         return (0, Chunk255367.jsx)("svg", {
-          className: Chunk838399.svgCopy,
+          className: Chunk513825.svgCopy,
           width: "298",
           height: "48",
           viewBox: "0 0 298 48",
@@ -250,7 +250,7 @@ class g extends(h = Chunk73800.PureComponent) {
         });
       case "PREMIUM_UPGRADED":
         return (0, Chunk255367.jsx)("svg", {
-          className: Chunk838399.svgCopy,
+          className: Chunk513825.svgCopy,
           width: "298",
           height: "48",
           viewBox: "0 0 298 48",
@@ -261,7 +261,7 @@ class g extends(h = Chunk73800.PureComponent) {
         });
       case "PREMIUM_UPDATED":
         return (0, Chunk255367.jsx)("svg", {
-          className: Chunk838399.svgCopy,
+          className: Chunk513825.svgCopy,
           width: "276",
           height: "48",
           viewBox: "0 0 276 48",
@@ -279,12 +279,12 @@ class g extends(h = Chunk73800.PureComponent) {
       className: a
     } = this.props;
     return (0, Chunk255367.jsxs)("div", {
-      className: c()(Chunk838399.container, module),
+      className: c()(Chunk513825.container, module),
       children: [this.renderSvgBorder(), (0, Chunk255367.jsxs)(Chunk748780.Z.div, {
-        className: Chunk838399.animationContainer,
+        className: Chunk513825.animationContainer,
         style: this.getContainerStyle(),
         children: [(0, Chunk255367.jsx)(Chunk481060.ZX5, {
-          className: Chunk838399.shine,
+          className: Chunk513825.shine,
           style: this.getShineStyle()
         }), this.renderSvgCopy()]
       })]

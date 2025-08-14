@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 783739, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk912152 = require("./912152.jsx"),
   Chunk615603 = require("./615603.jsx"),
   Chunk474936 = require("./474936.js"),
-  Chunk37558 = require("./37558.js");
+  Chunk28616 = require("./28616.js");
 
 function S(e) {
   let {
@@ -33,18 +33,18 @@ function S(e) {
     fractionalState: k
   } = (0, a.Z)({
     forceFetch: true
-  }), L = (null == t ? true : t.isPausedOrPausePending) === true && k === O.a$.NONE, M = (null == t ? true : t.isPausedOrPausePending) !== true && k === O.a$.NONE, B = I && k === O.a$.FP_SUB_PAUSED;
+  }), L = (null == t ? true : t.isPausedOrPausePending) === true && k === O.a$.NONE, B = (null == t ? true : t.isPausedOrPausePending) !== true && k === O.a$.NONE, M = I && k === O.a$.FP_SUB_PAUSED;
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(l.oQ, {
       className: v.blockedPaymentsWarning
     }), (0, i.jsx)(x.Z, {
       hasGuildBoostSlots: P,
       hasAppliedGuildBoosts: D,
-      hasBoostPerk: B,
-      canAddBoosts: M
+      hasBoostPerk: M,
+      canAddBoosts: B
     }), k === O.a$.NONE && (0, i.jsx)(E.Z, {
       hasAppliedGuildBoosts: D,
-      hasBoostPerk: B,
+      hasBoostPerk: M,
       hasGuildAffinitiesOrInGuild: A,
       subscriptionIsPausedOrPausePending: L
     }), !A && (0, i.jsx)(_.Z, {}), (null == t ? true : t.isPaused) && k !== O.a$.FP_SUB_PAUSED ? (0, i.jsx)(b.r, {
@@ -57,7 +57,7 @@ function S(e) {
       guildBoostSlots: S,
       fractionalPremiumState: k
     }), (0, i.jsx)(j.Z, {
-      canAddBoosts: D && M,
+      canAddBoosts: D && B,
       canApplyBoosts: Z
     }), (0, i.jsx)(d.Z, {
       className: v.tierComparisonTable,

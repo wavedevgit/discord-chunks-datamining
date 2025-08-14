@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 608949, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -33,12 +33,12 @@ c(d, "displayName", "GuildPowerupsNotificationStore"), c(d, "persistKey", "Guild
   let [n, r] = t;
   e[n] = r
 }), e)]);
-let h = new d(Chunk570140.Z, {
+let p = new d(Chunk570140.Z, {
   GUILD_POWERUPS_ACK_NOTIFICATION: function(e) {
     var t, n, r, i, l, d;
     let {
-      guildId: h
-    } = e, p = null != (n = null == (t = o.Z.getGuild(h)) ? true : t.premiumSubscriberCount) ? n : 0, f = s.Z.getStateForGuild(h), g = (0, a.h)(null != (r = null == f ? true : f.unlockedPowerups) ? r : {});
+      guildId: p
+    } = e, f = null != (n = null == (t = o.Z.getGuild(p)) ? true : t.premiumSubscriberCount) ? n : 0, h = a.Z.getStateForGuild(p), g = (0, s.h)(null != (r = null == h ? true : h.unlockedPowerups) ? r : {});
     l = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -51,9 +51,9 @@ let h = new d(Chunk570140.Z, {
       }
       return e
     }({}, u), d = d = {
-      [h]: {
+      [p]: {
         lastSeenWarningNotification: null != (i = g[g.length - 1]) ? i : Date.now(),
-        lastBoostCount: p
+        lastBoostCount: f
       }
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
       var n = Object.keys(e);

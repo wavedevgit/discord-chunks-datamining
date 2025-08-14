@@ -1,8 +1,8 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 572995, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   NA: () => ee,
-  ZP: () => en,
+  ZP: () => et,
   y$: () => $
 });
 var i, r, Chunk230711 = require("./230711.js"),
@@ -55,7 +55,17 @@ var i, r, Chunk230711 = require("./230711.js"),
   Chunk825087 = require("./825087.js"),
   $ = ((i = {}).SMALL = "small", i.MEDIUM = "medium", i.LARGE = "large", i),
   ee = ((r = {}).REFERRAL_PROGRAM = "referralProgram", r.SERVER_PROFILES = "serverProfiles", r.SHOW_YOUR_STYLE = "showYourStyle", r.YOUR_SPACE = "yourSpace", r.EMOJIS = "emojis", r.NO_LIMITS = "noLimits", r.PERMADECOS = "permadecos", r.VOICE_FILTERS = "voiceFilters", r);
-let et = (e, t) => (function(e) {
+let et = () => {
+  let {
+    analyticsLocations: e
+  } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_MARKETING_BENTO_BOX), t = (0, Chunk300284.Z)({
+    scrollPosition: Chunk526761.Y_.TRY_IT_OUT,
+    analyticsLocations: module
+  }), n = (0, Chunk526167.rO)(), i = Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM), r = (0, Chunk963590.Z)({
+    location: "WhatsNewSection"
+  }), $ = (0, Chunk220654.Z)({
+    location: "useBentoBoxes"
+  }), ee = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -72,152 +82,141 @@ let et = (e, t) => (function(e) {
       })
     }
     return e
-  })({
+  }({
     voiceFilters: {
-      thumbnail: q.Z,
-      assetUrl: e ? K.Z : X.Z
+      thumbnail: Chunk815581.Z,
+      assetUrl: require ? Chunk310960.Z : Chunk479390.Z
     },
     permadecos: {
-      thumbnail: U.Z,
-      assetUrl: U.Z
+      thumbnail: Chunk357003.Z,
+      assetUrl: Chunk357003.Z
     },
     serverProfiles: {
-      thumbnail: j,
-      assetUrl: e ? H.ZP : z.ZP
+      thumbnail: Chunk872532,
+      assetUrl: require ? Chunk845571.ZP : Chunk220046.ZP
     }
-  }, t ? {
+  }, $ ? {
     referralProgram: {
-      thumbnail: N.Z,
-      assetUrl: e ? I.Z : y.Z
+      thumbnail: Chunk305516.Z,
+      assetUrl: require ? Chunk138431.Z : Chunk980984.Z
     },
     showYourStyle: {
-      thumbnail: P.Z,
-      assetUrl: e ? A.Z : R.Z
+      thumbnail: Chunk38244.Z,
+      assetUrl: require ? Chunk952842.Z : Chunk491878.Z
     },
     yourSpace: {
-      thumbnail: Z.Z,
-      assetUrl: e ? D.Z : w.Z
+      thumbnail: Chunk518971.Z,
+      assetUrl: require ? Chunk751049.Z : Chunk85726.Z
     },
     emojis: {
-      thumbnail: C.Z,
-      assetUrl: e ? E.Z : O.Z
+      thumbnail: Chunk295349.Z,
+      assetUrl: require ? Chunk404583.Z : Chunk631572.Z
     },
     noLimits: {
-      thumbnail: S.Z,
-      assetUrl: e ? v.Z : T.Z
+      thumbnail: Chunk238027.Z,
+      assetUrl: require ? Chunk999675.Z : Chunk997585.Z
     }
   } : {
     referralProgram: {
-      thumbnail: G.Z,
-      assetUrl: e ? V.ZP : F.ZP
+      thumbnail: Chunk712626.Z,
+      assetUrl: require ? Chunk904505.ZP : Chunk386014.ZP
     },
     showYourStyle: {
-      thumbnail: _,
-      assetUrl: e ? W.Z : Y.Z
+      thumbnail: Chunk612253,
+      assetUrl: require ? Chunk385874.Z : Chunk371000.Z
     },
     yourSpace: {
-      thumbnail: x,
-      assetUrl: e ? J.Z : Q.Z
+      thumbnail: Chunk985443,
+      assetUrl: require ? Chunk377679.Z : Chunk825087.Z
     },
     emojis: {
-      thumbnail: f,
-      assetUrl: e ? k.ZP : L.ZP
+      thumbnail: Chunk509614,
+      assetUrl: require ? Chunk91342.ZP : Chunk181708.ZP
     },
     noLimits: {
-      thumbnail: b,
-      assetUrl: e ? M.ZP : B.ZP
+      thumbnail: Chunk880511,
+      assetUrl: require ? Chunk290650.ZP : Chunk751125.ZP
     }
-  }),
-  en = () => {
-    let {
-      analyticsLocations: e
-    } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_MARKETING_BENTO_BOX), t = (0, Chunk300284.Z)({
-      scrollPosition: Chunk526761.Y_.TRY_IT_OUT,
-      analyticsLocations: module
-    }), n = (0, Chunk526167.rO)(), i = Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM), r = (0, Chunk963590.Z)({
-      location: "WhatsNewSection"
-    }), f = et(require, (0, Chunk220654.Z)({
-      location: "useBentoBoxes"
-    })), b = {
-      name: "voiceFilters",
-      title: Chunk388032.intl.format(Chunk388032.t.iAzLOj, {}),
-      description: Chunk388032.intl.format(Chunk388032.t["NT0/pa"], {
-        learnMoreLink: Chunk981631.EYA.VOICE_FILTERS_BLOG
-      }),
-      descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      previewImage: Chunk509614.voiceFilters.thumbnail,
-      videoUrl: Chunk509614.voiceFilters.assetUrl,
-      badgeText: Chunk388032.intl.string(Chunk388032.t.EYxi0t)
-    }, x = {
-      name: "permadecos",
-      title: Chunk388032.intl.string(Chunk388032.t["57ngoq"]),
-      description: Chunk388032.intl.string(Chunk388032.t.piFFjY),
-      descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      previewImage: Chunk509614.permadecos.thumbnail,
-      onClick: exports,
-      videoUrl: Chunk509614.permadecos.assetUrl
-    }, _ = {
-      name: "serverProfiles",
-      title: Chunk388032.intl.string(Chunk388032.t.I9TYMj),
-      description: Chunk388032.intl.string(Chunk388032.t.HMSHeH),
-      descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      onClick: exports,
-      previewImage: Chunk509614.serverProfiles.thumbnail,
-      videoUrl: Chunk509614.serverProfiles.assetUrl
-    }, j = {
-      name: "referralProgram",
-      title: Chunk388032.intl.string(Chunk388032.t.tPY4o6),
-      description: Chunk388032.intl.format(Chunk388032.t.jRPQUF, {
-        learnMoreLink: i
-      }),
-      previewImage: Chunk509614.referralProgram.thumbnail,
-      videoUrl: Chunk509614.referralProgram.assetUrl
-    }, E = {
-      name: "showYourStyle",
-      title: Chunk388032.intl.string(Chunk388032.t.Ij3Zmp),
-      description: Chunk388032.intl.string(Chunk388032.t.UsOUxc),
-      descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      previewImage: Chunk509614.showYourStyle.thumbnail,
-      onClick: exports,
-      videoUrl: Chunk509614.showYourStyle.assetUrl
-    }, C = {
-      name: "yourSpace",
-      title: Chunk388032.intl.string(Chunk388032.t.Wme3nZ),
-      description: Chunk388032.intl.string(Chunk388032.t["/aAIqa"]),
-      descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      previewImage: Chunk509614.yourSpace.thumbnail,
-      onClick: () => {
-        Chunk230711.Z.open(Chunk981631.oAB.APPEARANCE, null, {
-          openWithoutBackstack: true,
-          analyticsLocations: module
-        })
-      },
-      videoUrl: Chunk509614.yourSpace.assetUrl
-    }, O = {
-      name: "emojis",
-      title: Chunk388032.intl.string(Chunk388032.t.zY5PPT),
-      description: Chunk388032.intl.string(Chunk388032.t.R5Xag4),
-      previewImage: Chunk509614.emojis.thumbnail,
-      videoUrl: Chunk509614.emojis.assetUrl
-    };
-    return {
-      whatsNewBoxes: r ? [
-        [Chunk880511],
-        [Chunk985443, Chunk872532]
-      ] : [
-        [Chunk985443],
-        [Chunk612253, Chunk872532]
-      ],
-      bestOfBoxes: [
-        [Chunk404583],
-        [Chunk295349],
-        [Chunk631572, {
-          name: "noLimits",
-          title: Chunk388032.intl.string(Chunk388032.t["6b3ydH"]),
-          description: Chunk388032.intl.string(Chunk388032.t["Y+IJys"]),
-          previewImage: Chunk509614.noLimits.thumbnail,
-          videoUrl: Chunk509614.noLimits.assetUrl
-        }]
-      ]
-    }
+  }), et = {
+    name: "voiceFilters",
+    title: Chunk388032.intl.format(Chunk388032.t.iAzLOj, {}),
+    description: Chunk388032.intl.format(Chunk388032.t["NT0/pa"], {
+      learnMoreLink: Chunk981631.EYA.VOICE_FILTERS_BLOG
+    }),
+    descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
+    previewImage: ee.voiceFilters.thumbnail,
+    videoUrl: ee.voiceFilters.assetUrl,
+    badgeText: Chunk388032.intl.string(Chunk388032.t.EYxi0t)
+  }, en = {
+    name: "permadecos",
+    title: Chunk388032.intl.string(Chunk388032.t["57ngoq"]),
+    description: Chunk388032.intl.string(Chunk388032.t.piFFjY),
+    descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
+    previewImage: ee.permadecos.thumbnail,
+    onClick: exports,
+    videoUrl: ee.permadecos.assetUrl
+  }, ei = {
+    name: "serverProfiles",
+    title: Chunk388032.intl.string(Chunk388032.t.I9TYMj),
+    description: Chunk388032.intl.string(Chunk388032.t.HMSHeH),
+    descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
+    onClick: exports,
+    previewImage: ee.serverProfiles.thumbnail,
+    videoUrl: ee.serverProfiles.assetUrl
+  }, er = {
+    name: "referralProgram",
+    title: Chunk388032.intl.string(Chunk388032.t.tPY4o6),
+    description: Chunk388032.intl.format(Chunk388032.t.jRPQUF, {
+      learnMoreLink: i
+    }),
+    previewImage: ee.referralProgram.thumbnail,
+    videoUrl: ee.referralProgram.assetUrl
+  }, es = {
+    name: "showYourStyle",
+    title: Chunk388032.intl.string(Chunk388032.t.Ij3Zmp),
+    description: Chunk388032.intl.string(Chunk388032.t.UsOUxc),
+    descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
+    previewImage: ee.showYourStyle.thumbnail,
+    onClick: exports,
+    videoUrl: ee.showYourStyle.assetUrl
+  }, ea = {
+    name: "yourSpace",
+    title: Chunk388032.intl.string(Chunk388032.t.Wme3nZ),
+    description: Chunk388032.intl.string(Chunk388032.t["/aAIqa"]),
+    descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
+    previewImage: ee.yourSpace.thumbnail,
+    onClick: () => {
+      Chunk230711.Z.open(Chunk981631.oAB.APPEARANCE, null, {
+        openWithoutBackstack: true,
+        analyticsLocations: module
+      })
+    },
+    videoUrl: ee.yourSpace.assetUrl
+  }, el = {
+    name: "emojis",
+    title: Chunk388032.intl.string(Chunk388032.t.zY5PPT),
+    description: Chunk388032.intl.string(Chunk388032.t.R5Xag4),
+    previewImage: ee.emojis.thumbnail,
+    videoUrl: ee.emojis.assetUrl
+  };
+  return {
+    whatsNewBoxes: r ? [
+      [et],
+      [en, er]
+    ] : [
+      [en],
+      [ei, er]
+    ],
+    bestOfBoxes: [
+      [es],
+      [ea],
+      [el, {
+        name: "noLimits",
+        title: Chunk388032.intl.string(Chunk388032.t["6b3ydH"]),
+        description: Chunk388032.intl.string(Chunk388032.t["Y+IJys"]),
+        previewImage: ee.noLimits.thumbnail,
+        videoUrl: ee.noLimits.assetUrl
+      }]
+    ]
   }
+}

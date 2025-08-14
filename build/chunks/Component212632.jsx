@@ -1,7 +1,7 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 212632, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => f
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -10,11 +10,10 @@ var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk968591 = require("./968591.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk379249 = require("./379249.js"),
+  Chunk197571 = require("./197571.js");
 let m = 0,
-  p = () => "notification-position-selector-".concat(m++),
-  g = e => {
+  p = e => {
     switch (e) {
       case o._vf.TOP_LEFT:
         return c.intl.string(c.t.xlchpa);
@@ -28,14 +27,14 @@ let m = 0,
         return c.intl.string(c.t.AlY4ZW)
     }
   },
-  h = [Chunk981631._vf.DISABLED, Chunk981631._vf.TOP_LEFT, Chunk981631._vf.TOP_RIGHT, Chunk981631._vf.BOTTOM_LEFT, Chunk981631._vf.BOTTOM_RIGHT];
+  g = [Chunk981631._vf.DISABLED, Chunk981631._vf.TOP_LEFT, Chunk981631._vf.TOP_RIGHT, Chunk981631._vf.BOTTOM_LEFT, Chunk981631._vf.BOTTOM_RIGHT];
 
-function f(e) {
+function h(e) {
   let {
     position: t,
     onChange: n
-  } = e, [s] = r.useState(() => p()), m = t === o._vf.DISABLED ? c.intl.string(c.t.R6LxVV) : c.intl.formatToPlainString(c.t.XXHDMz, {
-    position: g(t)
+  } = e, [s] = r.useState(() => "notification-position-selector-".concat(m++)), h = t === o._vf.DISABLED ? c.intl.string(c.t.R6LxVV) : c.intl.formatToPlainString(c.t.XXHDMz, {
+    position: p(t)
   });
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(l.tEY, {
@@ -45,7 +44,7 @@ function f(e) {
         className: a()(d.wrapper, {
           [d.disabledSelected]: t === o._vf.DISABLED
         }),
-        children: h.map(e => (0, i.jsxs)("label", {
+        children: g.map(e => (0, i.jsxs)("label", {
           className: a()({
             [d.selected]: e === t,
             [d.disabled]: e === o._vf.DISABLED,
@@ -54,7 +53,7 @@ function f(e) {
             [d.bottomRight]: e === o._vf.BOTTOM_RIGHT,
             [d.bottomLeft]: e === o._vf.BOTTOM_LEFT
           }),
-          children: [g(e), e === o._vf.DISABLED ? (0, i.jsx)(l.t6m, {
+          children: [p(e), e === o._vf.DISABLED ? (0, i.jsx)(l.t6m, {
             size: "md",
             color: "currentColor",
             className: d.disabledIcon
@@ -70,9 +69,9 @@ function f(e) {
     }), (0, i.jsx)(l.R94, {
       type: l.geA.DESCRIPTION,
       className: u.marginTop8,
-      children: m
+      children: h
     })]
   })
 }
-f.Positions = Chunk981631._vf;
-let b = f
+h.Positions = Chunk981631._vf;
+let f = h

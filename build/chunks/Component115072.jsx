@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk223356 = require("./223356.js"),
   Chunk225452 = require("./225452.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk511742 = require("./511742.js");
+  Chunk176059 = require("./176059.js");
 let w = ["Android", "iOS", "Windows Mobile", "Windows", "Linux", "Mac OS X"].map(e => ({
   label: e,
   value: e
@@ -55,8 +55,8 @@ function P(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "a741efd155727831a91974852a1c58af91a15793" !== e.body.hash) {
-        let e = new Date("1755161758844"),
+      if (null != e.body && "c064271a526c94533c94d9fab6d329566670a32f" !== e.body.hash) {
+        let e = new Date("1755181354962"),
           t = new Date,
           n = (0, j.TD)(t, e);
         n.hours > 6 && ep(n.hours)
@@ -73,11 +73,8 @@ function P(e) {
     }),
     ev = () => {
       null == D || D()
-    },
-    eg = e => {
-      q(M.filter(t => t.id !== e))
     };
-  async function ej() {
+  async function eg() {
     var e, t;
     if (em(false), "" === N || "" === R || null == I) return void es(true);
     let r = null == B || null == (e = B.features) ? true : e.find(e => (0, b.pD)(e) === G);
@@ -158,7 +155,7 @@ function P(e) {
       })
     }
   }, [M]);
-  let ey = r.useCallback(e => {
+  let ej = r.useCallback(e => {
     let t = Array.from(e.clipboardData.files).filter(e => e.type.startsWith("image/")).at(0);
     true === t || M.some(e => {
       var n;
@@ -183,9 +180,9 @@ function P(e) {
         })
       })
     }), (0, i.jsx)(u.hzk, {
-      onPaste: ey,
+      onPaste: ej,
       children: (0, i.jsxs)("form", {
-        onSubmit: ej,
+        onSubmit: eg,
         children: [null != ex && (0, i.jsx)(u.ToO, {
           type: u.ToO.Types.DANGER,
           body: S.intl.format(S.t["yY60+/"], {
@@ -374,7 +371,10 @@ function P(e) {
                     children: (0, i.jsx)(x.ZP, {
                       children: (0, i.jsx)(h.Z, {
                         tooltip: S.intl.string(S.t.vN7REx),
-                        onClick: () => eg(e.id),
+                        onClick: () => {
+                          var t;
+                          return t = e.id, void q(M.filter(e => e.id !== t))
+                        },
                         dangerous: true,
                         children: (0, i.jsx)(u.XHJ, {
                           size: "md",
@@ -406,7 +406,7 @@ function P(e) {
           variant: "primary",
           text: ef ? "Submit and Open Report" : "Submit Report",
           loading: eu,
-          onClick: ej
+          onClick: eg
         }), (0, i.jsx)(u.zxk, {
           variant: "secondary",
           text: S.intl.string(S.t["ETE/oK"]),

@@ -23,7 +23,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk46887 = require("./46887.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk487951 = require("./487951.js");
+  Chunk815976 = require("./815976.js");
 
 function w(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -102,10 +102,7 @@ function O(e) {
       role_id: t
     } = e;
     return t
-  }))), [a, b]), g = b.size > 0, j = e => f(t => {
-    let i = new Set(t);
-    return t.has(e) ? i.delete(e) : i.add(e), i
-  });
+  }))), [a, b]), g = b.size > 0;
   return (0, n.jsx)(d.Modal, {
     onClose: i,
     transitionState: t,
@@ -158,7 +155,13 @@ function O(e) {
           children: [0 !== t && (0, n.jsx)("div", {
             className: S.seperator
           }), (0, n.jsx)(k, {
-            onChange: () => j(e.role_id),
+            onChange: () => {
+              let t;
+              return t = e.role_id, f(e => {
+                let i = new Set(e);
+                return e.has(t) ? i.delete(t) : i.add(t), i
+              })
+            },
             value: b.has(e.role_id),
             label: e.name,
             isArchived: e.archived

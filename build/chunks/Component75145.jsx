@@ -17,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk381162 = require("./381162.js");
+  Chunk788457 = require("./788457.js");
 let h = .2,
   m = 41;
 
@@ -28,24 +28,24 @@ function g() {
   return Chunk73800.useEffect(() => () => {
     h && Chunk120356(Chunk921944.L.TAKE_ACTION)
   }, [h, Chunk120356]), (0, Chunk255367.jsxs)("div", {
-    className: Chunk381162.nitroTopDividerContainer,
+    className: Chunk788457.nitroTopDividerContainer,
     children: [(0, Chunk255367.jsx)("div", {
-      className: Chunk381162.nitroTopDividerUpper
+      className: Chunk788457.nitroTopDividerUpper
     }), (0, Chunk255367.jsx)("div", {
-      className: a()(Chunk381162.nitroTopDividerShadow, Chunk381162.glow, {
-        [Chunk381162.reducedMotion]: module || !h
+      className: a()(Chunk788457.nitroTopDividerShadow, Chunk788457.glow, {
+        [Chunk788457.reducedMotion]: module || !h
       })
     }), (0, Chunk255367.jsxs)("div", {
-      className: Chunk381162.nitroTopDividerLockContainer,
+      className: Chunk788457.nitroTopDividerLockContainer,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk381162.nitroTopDividerLockBorder
+        className: Chunk788457.nitroTopDividerLockBorder
       }), !module && h && (0, Chunk255367.jsx)(Chunk481060.Fmz, {
-        className: Chunk381162.premiumUnlockAnimation,
+        className: Chunk788457.premiumUnlockAnimation,
         loop: false,
         importData: () => require.e("21812").then(require.t.bind(require, 741855, 19))
       }), (0, Chunk255367.jsxs)("div", {
-        className: a()(Chunk381162.premiumUnlockedWithNitroPillContainer, {
-          [Chunk381162.reducedMotion]: module || !h
+        className: a()(Chunk788457.premiumUnlockedWithNitroPillContainer, {
+          [Chunk788457.reducedMotion]: module || !h
         }),
         children: [(0, Chunk255367.jsx)(Chunk481060.SrA, {
           size: "xs",
@@ -57,10 +57,10 @@ function g() {
           children: Chunk388032.intl.string(Chunk388032.t["BMw+7O"])
         })]
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk381162.nitroTopDividerLockBorderReversed
+        className: Chunk788457.nitroTopDividerLockBorderReversed
       })]
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk381162.reverseTrialTopDividerLower
+      className: Chunk788457.reverseTrialTopDividerLower
     })]
   })
 }

@@ -24,15 +24,17 @@ class o extends Chunk73800.PureComponent {
     return null != this.state.error ? null != this.props.renderCustomErrorComponent ? this.props.renderCustomErrorComponent() : null : this.props.children
   }
   constructor(...e) {
-    var t, r;
-    super(...e), r = {
-      error: null,
-      info: null
-    }, (t = "state") in this ? Object.defineProperty(this, t, {
-      value: r,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[t] = r
+    super(...e),
+      function(e, t, r) {
+        t in e ? Object.defineProperty(e, t, {
+          value: r,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = r
+      }(this, "state", {
+        error: null,
+        info: null
+      })
   }
 }

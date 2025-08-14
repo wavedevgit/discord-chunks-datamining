@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 179984, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -32,7 +32,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk21023 = require("./21023.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk89637 = require("./89637.js"),
+  Chunk17355 = require("./17355.js"),
   Chunk102655 = require("./102655.js"),
   Chunk768236 = require("./768236.js"),
   Chunk314907 = require("./314907.js"),
@@ -56,18 +56,18 @@ function L(e) {
   }
   return e
 }
-let M = () => {
+let B = () => {
     let e = (0, Chunk346497.W)();
     return (0, Chunk255367.jsx)(Chunk382791.Cy, {
       text: module,
-      className: Chunk89637.bogoPillWithSparkles,
+      className: Chunk17355.bogoPillWithSparkles,
       colorOptions: Chunk382791.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     })
   },
-  B = () => (0, Chunk255367.jsx)("div", {
-    className: Chunk89637.mostPopularPill,
+  M = () => (0, Chunk255367.jsx)("div", {
+    className: Chunk17355.mostPopularPill,
     children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
-      className: Chunk89637.mostPopularText,
+      className: Chunk17355.mostPopularText,
       variant: "heading-deprecated-12/extrabold",
       children: Chunk388032.intl.string(Chunk388032.t["o/oRJC"])
     })
@@ -247,7 +247,7 @@ let M = () => {
       text: null != J ? P.intl.string(P.t.IBYG5e) : P.intl.string(P.t.ce1v3d),
       className: R.freeTrialPillWithSparkles,
       colorOptions: J === A.Si.TIER_0 ? Y ? N.VE.PREMIUM_TIER_0_GRADIENT_FILL : N.VE.PREMIUM_TIER_0_WHITE_FILL : Y ? q ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_WHITE_FILL
-    }) : el ? (0, i.jsx)(M, {}) : (0, i.jsx)(B, {});
+    }) : el ? (0, i.jsx)(B, {}) : (0, i.jsx)(M, {});
     let eu = J === A.Si.TIER_0 || Q === A.p9.TIER_0 || k === A.p9.TIER_0;
     return (0, i.jsx)(p.Gt, {
       value: F,

@@ -1,4 +1,4 @@
-/** Chunk was on 8725 **/
+/** Chunk was on 58511 **/
 /** chunk id: 731072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -11,7 +11,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk434404 = require("./434404.js"),
   Chunk486199 = require("./486199.jsx"),
   Chunk13051 = require("./13051.jsx"),
-  Chunk772865 = require("./772865.js");
+  Chunk66544 = require("./66544.js");
 
 function p(e) {
   let {
@@ -27,7 +27,7 @@ function p(e) {
     h() && (await s.Z.enableIntegration(p.id, e.type, e.id), o.Z.startEditingIntegration(e.id))
   }, [h, p.id]), v = r.useCallback(e => {
     h() && (e.id === (null == n ? true : n.id) && o.Z.stopEditingIntegration(), s.Z.disableIntegration(p.id, e.id))
-  }, [h, n, p.id]), O = r.useCallback(e => {
+  }, [h, n, p.id]), y = r.useCallback(e => {
     h() && (e === (null == n ? true : n.id) ? o.Z.stopEditingIntegration() : o.Z.startEditingIntegration(e))
   }, [h, n]);
   return (0, i.jsxs)(i.Fragment, {
@@ -47,7 +47,7 @@ function p(e) {
       isExpanded: (null == n ? true : n.id) === e.id,
       onEnable: j,
       onDisable: v,
-      onToggleExpand: () => O(e.id)
+      onToggleExpand: () => y(e.id)
     }, e.id)), (0, i.jsx)(l.Text, {
       className: u.helpText,
       color: "text-muted",

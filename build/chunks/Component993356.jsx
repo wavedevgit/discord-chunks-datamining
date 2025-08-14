@@ -43,9 +43,9 @@ function p(e) {
         mobilePush: c.ZP.isMobilePushEnabled(e.id),
         messageNotifications: c.ZP.getMessageNotifications(e.id),
         notifyHighlights: c.ZP.getNotifyHighlights(e.id)
-      }), [e.id]), O = S === d.gLR.DISABLED, E = (0, o.Z)(e.id);
+      }), [e.id]), O = S === d.gLR.DISABLED, h = (0, o.Z)(e.id);
 
-      function h(t, n) {
+      function E(t, n) {
         s.Z.updateGuildNotificationSettings(e.id, t, n)
       }
       let y = (0, a.ng)(e.id, true);
@@ -60,7 +60,7 @@ function p(e) {
               group: "guild-notifications",
               id: "".concat(t),
               label: n,
-              action: () => h({
+              action: () => E({
                 message_notifications: t
               }, u.UE.notifications(t)),
               checked: t === f
@@ -72,14 +72,14 @@ function p(e) {
           children: [(0, i.jsx)(l.S89, {
             id: "suppress-everyone",
             label: g.intl.format(g.t.OWiWAg, {}),
-            action: () => h({
+            action: () => E({
               suppress_everyone: !t
             }, u.UE.suppressEveryone(!t)),
             checked: t
           }), (0, i.jsx)(l.S89, {
             id: "suppress-roles",
             label: g.intl.string(g.t["O/QdoK"]),
-            action: () => h({
+            action: () => E({
               suppress_roles: !n
             }, u.UE.suppressRoles(!n)),
             checked: n
@@ -87,17 +87,17 @@ function p(e) {
             id: "suppress-highlights",
             label: g.intl.string(g.t.gPuteH),
             action: () => {
-              h({
+              E({
                 notify_highlights: O ? d.gLR.ENABLED : d.gLR.DISABLED
               }, u.UE.highlights(O))
             },
             checked: O
-          }), E]
+          }), h]
         }), (0, i.jsx)(l.kSQ, {
           children: (0, i.jsx)(l.S89, {
             id: "mobile-push",
             label: g.intl.string(g.t["h1DL6+"]),
-            action: () => h({
+            action: () => E({
               mobile_push: !p
             }, u.UE.mobilePush(!p)),
             checked: p
@@ -112,17 +112,17 @@ function p(e) {
       } = e;
       return t === S
     })) ? true : t.label,
-    E = (0, a.U)();
+    h = (0, a.U)();
   return null != f ? (0, i.jsx)(l.sNh, {
     id: "guild-notifications",
     label: (0, i.jsxs)(i.Fragment, {
-      children: [E, g.intl.string(g.t.h850Sk)]
+      children: [h, g.intl.string(g.t.h850Sk)]
     }),
     subtext: O,
     action: () => (0, l.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("5863"), n.e("28965")]).then(n.bind(n, 751212));
+      } = await Promise.all([n.e("5863"), n.e("11890")]).then(n.bind(n, 751212));
       return n => {
         var r, l;
         return (0, i.jsx)(t, (r = function(e) {

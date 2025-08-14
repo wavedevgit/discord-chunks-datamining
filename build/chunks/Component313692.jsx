@@ -1,4 +1,4 @@
-/** Chunk was on 873 **/
+/** Chunk was on 1355 **/
 /** chunk id: 313692, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
@@ -24,42 +24,42 @@ var Chunk255367 = require("./255367.js"),
   Chunk370595 = require("./370595.jsx"),
   Chunk50493 = require("./50493.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk983843 = require("./983843.js"),
-  Chunk194445 = require("./194445.js");
+  Chunk87819 = require("./87819.js"),
+  Chunk125134 = require("./125134.js");
 
 function C(e) {
   var t, n;
   let {
-    userId: s,
+    userId: i,
     guildId: C,
-    location: v,
-    className: D,
-    onNavigate: b
-  } = e, L = l.useRef(null), x = (0, o.e7)([m.ZP], () => m.ZP.getGuildSidebarState(C), [C]), U = l.useRef(0), [M, P] = l.useState(null != (t = null == x ? true : x.details.additionalSearchQuery) ? t : {}), j = (0, N.z0)(s, C, {
-    addtionalQuery: M,
+    location: D,
+    className: L,
+    onNavigate: U
+  } = e, M = l.useRef(null), v = (0, o.e7)([m.ZP], () => m.ZP.getGuildSidebarState(C), [C]), b = l.useRef(0), [x, P] = l.useState(null != (t = null == v ? true : v.details.additionalSearchQuery) ? t : {}), j = (0, h.z0)(i, C, {
+    addtionalQuery: x,
     shouldDispatch: true
-  }), y = (0, o.e7)([g.default], () => g.default.getUser(s), [s]), w = (0, o.e7)([I.ZP], () => I.ZP.getMember(C, s), [C, s]);
+  }), y = (0, o.e7)([g.default], () => g.default.getUser(i), [i]), w = (0, o.e7)([I.ZP], () => I.ZP.getMember(C, i), [C, i]);
   (0, c.Ng)(() => {
-    let e = null == x ? true : x.details.scrollOffset;
+    let e = null == v ? true : v.details.scrollOffset;
     if (null != e) {
       var t;
-      null == (t = L.current) || t.scrollTo({
+      null == (t = M.current) || t.scrollTo({
         to: e,
         animate: false
       })
     }
   });
   let G = l.useCallback(e => {
-      null != x && (U.current = e.target.scrollTop, (0, f.r)(C, s, x.baseChannelId, {
+      null != v && (b.current = e.target.scrollTop, (0, N.r)(C, i, v.baseChannelId, {
         modViewPanel: O.k.MESSAGE_HISTORY,
-        additionalSearchQuery: M,
-        scrollOffset: U.current
+        additionalSearchQuery: x,
+        scrollOffset: b.current
       }))
-    }, [C, s, x, M]),
+    }, [C, i, v, x]),
     k = (0, a.throttle)(G, 300),
     F = l.useCallback(e => {
       var t, n;
-      if (null == x) return;
+      if (null == v) return;
       let r = (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -77,7 +77,7 @@ function C(e) {
           })
         }
         return e
-      }({}, M), n = n = {
+      }({}, x), n = n = {
         offset: 25 * e
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -89,13 +89,13 @@ function C(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t);
-      P(r), (0, f.r)(C, s, x.baseChannelId, {
+      P(r), (0, N.r)(C, i, v.baseChannelId, {
         modViewPanel: O.k.MESSAGE_HISTORY,
         additionalSearchQuery: r,
-        scrollOffset: U.current
+        scrollOffset: b.current
       })
-    }, [C, s, x, M]),
-    z = null != (n = null == M ? true : M.offset) ? n : 0,
+    }, [C, i, v, x]),
+    z = null != (n = null == x ? true : x.offset) ? n : 0,
     Z = (0, o.e7)([d.Z], () => {
       if (null == j.result) return [];
       let e = j.result.messages,
@@ -138,14 +138,14 @@ function C(e) {
       }
     }, [j.result, z]);
   return null == y || null == w || null == B ? null : (0, r.jsxs)("div", {
-    className: i()(R.container, D),
-    children: [(0, r.jsx)(h.Z, {
+    className: s()(R.container, L),
+    children: [(0, r.jsx)(f.Z, {
       guildId: C,
-      userId: s,
-      onNavigate: b
+      userId: i,
+      onNavigate: U
     }), (0, r.jsx)(u.Den, {
       className: S.innerContainer,
-      ref: L,
+      ref: M,
       onScroll: k,
       children: (0, r.jsx)(T.Z, {
         searchResults: Z,

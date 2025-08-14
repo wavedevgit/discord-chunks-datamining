@@ -1,8 +1,8 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 518121, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G6: () => p,
-  O5: () => f
+  G6: () => d,
+  O5: () => p
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -13,40 +13,38 @@ var Chunk255367 = require("./255367.js"),
 let c = "bottom",
   u = e => {
     let {
-      isGuildBarScrolling: t
-    } = e, n = i.useRef(null), r = (0, l.e7)([o.Z], () => o.Z.getExpandedFolders().size);
-    return i.useEffect(() => {
-      null !== n.current && n.current.updateElementPositionWithPolling()
-    }, [r]), i.useEffect(() => {
-      null !== n.current && n.current.updateElementPosition()
-    }, [t]), {
-      positionControlRef: n
-    }
-  },
-  d = () => Chunk73800.useCallback(e => {
-    let t = window.innerHeight - ((0, a.t4)() + 10);
-    return e.top <= t
-  }, []),
-  h = e => {
-    let {
       targetElementRef: t,
       isGuildBarScrolling: n,
-      children: i,
-      innerCoachmarkProps: l
+      children: a,
+      innerCoachmarkProps: u
     } = e, {
-      positionControlRef: o
-    } = u({
+      positionControlRef: d
+    } = (e => {
+      let {
+        isGuildBarScrolling: t
+      } = e, n = i.useRef(null), r = (0, l.e7)([o.Z], () => o.Z.getExpandedFolders().size);
+      return i.useEffect(() => {
+        null !== n.current && n.current.updateElementPositionWithPolling()
+      }, [r]), i.useEffect(() => {
+        null !== n.current && n.current.updateElementPosition()
+      }, [t]), {
+        positionControlRef: n
+      }
+    })({
       isGuildBarScrolling: n
-    }), s = d();
-    return (0, r.jsx)(a.WS, {
-      positionControlRef: o,
-      calculateVisibility: s,
+    }), p = i.useCallback(e => {
+      let t = window.innerHeight - ((0, s.t4)() + 10);
+      return e.top <= t
+    }, []);
+    return (0, r.jsx)(s.WS, {
+      positionControlRef: d,
+      calculateVisibility: p,
       defaultCoachmarkAlign: c,
       spacing: 8,
       position: "right",
       align: c,
       targetElementRef: t,
-      popoutElement: (0, r.jsx)(a.M4, function(e) {
+      popoutElement: (0, r.jsx)(s.M4, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -63,43 +61,43 @@ let c = "bottom",
           })
         }
         return e
-      }({}, l)),
-      children: i
+      }({}, u)),
+      children: a
     })
   },
-  p = e => {
+  d = e => {
     let {
       renderDiscoveryButton: t,
       showingCoachmark: n,
       errorBoundarySource: l,
       onDiscoveryButtonClick: o,
-      targetQuestId: a,
+      targetQuestId: s,
       isGuildBarScrolling: c,
-      targetElementRef: u,
-      innerCoachmarkProps: d
-    } = e, p = i.useMemo(() => t({
+      targetElementRef: d,
+      innerCoachmarkProps: p
+    } = e, f = i.useMemo(() => t({
       onClick: n ? o : true,
-      questId: n ? a : true
-    }), [t, o, n, a]);
-    return n ? (0, r.jsx)(s.x, {
+      questId: n ? s : true
+    }), [t, o, n, s]);
+    return n ? (0, r.jsx)(a.x, {
       errorSource: l,
-      renderCustomErrorComponent: () => p,
-      children: (0, r.jsx)(h, {
-        targetElementRef: u,
+      renderCustomErrorComponent: () => f,
+      children: (0, r.jsx)(u, {
+        targetElementRef: d,
         isGuildBarScrolling: c,
-        innerCoachmarkProps: d,
-        children: p
+        innerCoachmarkProps: p,
+        children: f
       })
-    }) : p
+    }) : f
   },
-  f = e => {
+  p = e => {
     let {
       targetElementRef: t,
       scrollToBottom: n
     } = e;
     return i.useCallback(() => {
       if (null !== t.current) {
-        let e = (0, a.t4)();
+        let e = (0, s.t4)();
         t.current.getBoundingClientRect().bottom > window.innerHeight - e && n()
       }
     }, [t, n])

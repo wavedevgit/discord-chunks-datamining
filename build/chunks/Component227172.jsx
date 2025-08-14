@@ -39,7 +39,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function j(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,14 +48,14 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -76,7 +76,7 @@ let U = {
       entry: n,
       disableGameProfileLinks: E,
       onReaction: b,
-      onVoiceChannelPreview: j,
+      onVoiceChannelPreview: k,
       onUserPopoutClosed: G,
       trackRankingItemInteraction: B
     } = e, {
@@ -155,7 +155,7 @@ let U = {
       }),
       ef = !el && es ? (0, r.jsx)(f.Z, {
         application: ea,
-        ButtonComponent: e => (0, r.jsx)(w.Ll, k({
+        ButtonComponent: e => (0, r.jsx)(w.Ll, j({
           IconComponent: s.v3n
         }, e)),
         location: "MemberListGamingContentPopout"
@@ -163,12 +163,12 @@ let U = {
       e_ = [null == ef && ((0, l.Z)(Y, x.xjy.JOIN) || (0, c.Z)(Y)) ? (0, r.jsx)(_.Z, {
         activity: Y,
         user: F,
-        ButtonComponent: e => (0, r.jsx)(w.Ll, k({
+        ButtonComponent: e => (0, r.jsx)(w.Ll, j({
           IconComponent: s.iWm
         }, e))
       }) : null, (0, u.Z)(Y) ? (0, r.jsx)(p.Z, {
         activity: Y,
-        ButtonComponent: e => (0, r.jsx)(w.Ll, k({
+        ButtonComponent: e => (0, r.jsx)(w.Ll, j({
           IconComponent: s.tEF
         }, e))
       }) : null, ef].filter(y.lm);
@@ -176,7 +176,7 @@ let U = {
       children: [ed, (0, r.jsx)(w.St, {
         children: (0, r.jsx)(w.WT, {
           onReaction: b,
-          onVoiceChannelPreview: j,
+          onVoiceChannelPreview: k,
           user: F,
           channel: t,
           generateReactionImage: ec,

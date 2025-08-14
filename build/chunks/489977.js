@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 489977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk570140 = require("./570140.js"),
   Chunk809206 = require("./809206.js"),
@@ -13,48 +13,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
   Chunk486324 = require("./486324.js");
-let f = e => {
-    let {
-      image: t,
-      file: n,
-      guildId: r,
-      analyticsSource: l,
-      isTryItOutFlow: f
-    } = e;
-    if (f) return void(0, c.c_)(t);
-    let h = u.default.getCurrentUser(),
-      g = null != r ? a.I5 : i.I5,
-      m = d.ZP.canUseAnimatedAvatar(h);
-    if (m || "image/gif" !== n.type) return void g(t);
-    if (null == h) return;
-    let b = (0, s.SD)({
-      userId: h.id,
-      image: t
-    });
-    if (!m) return void(0, o.s)({
-      uploadType: p.pC.AVATAR,
-      imageSrc: b,
-      analyticsSource: l
-    })
-  },
-  h = e => {
-    let {
-      image: t,
-      guildId: n,
-      analyticsSource: r,
-      isTryItOutFlow: i
-    } = e, l = t.imageUri;
-    if (i) return void(0, c.f4)(l);
-    let s = u.default.getCurrentUser(),
-      f = null != n ? a.g_ : c.g_,
-      h = d.ZP.canUsePremiumProfileCustomization(s);
-    return d.ZP.canUsePremiumProfileCustomization(s) ? void f(l) : null == s || h ? true : void(0, o.s)({
-      uploadType: p.pC.BANNER,
-      imageSrc: l,
-      analyticsSource: r
-    })
-  };
-class g extends Chunk317770.Z {
+class f extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL", this.maybeOpenProfilePreviewModal)
   }
@@ -62,7 +21,46 @@ class g extends Chunk317770.Z {
     Chunk570140.Z.unsubscribe("PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL", this.maybeOpenProfilePreviewModal)
   }
   maybeOpenProfilePreviewModal(e) {
-    return e.uploadType === p.pC.AVATAR ? f(e) : e.uploadType === p.pC.BANNER ? h(e) : true
+    return e.uploadType === p.pC.AVATAR ? (e => {
+      let {
+        image: t,
+        file: n,
+        guildId: r,
+        analyticsSource: l,
+        isTryItOutFlow: f
+      } = e;
+      if (f) return void(0, c.c_)(t);
+      let h = u.default.getCurrentUser(),
+        g = null != r ? a.I5 : i.I5,
+        m = d.ZP.canUseAnimatedAvatar(h);
+      if (m || "image/gif" !== n.type) return void g(t);
+      if (null == h) return;
+      let b = (0, s.SD)({
+        userId: h.id,
+        image: t
+      });
+      if (!m) return void(0, o.s)({
+        uploadType: p.pC.AVATAR,
+        imageSrc: b,
+        analyticsSource: l
+      })
+    })(e) : e.uploadType === p.pC.BANNER ? (e => {
+      let {
+        image: t,
+        guildId: n,
+        analyticsSource: r,
+        isTryItOutFlow: i
+      } = e, l = t.imageUri;
+      if (i) return void(0, c.f4)(l);
+      let s = u.default.getCurrentUser(),
+        f = null != n ? a.g_ : c.g_,
+        h = d.ZP.canUsePremiumProfileCustomization(s);
+      return d.ZP.canUsePremiumProfileCustomization(s) ? void f(l) : null == s || h ? true : void(0, o.s)({
+        uploadType: p.pC.BANNER,
+        imageSrc: l,
+        analyticsSource: r
+      })
+    })(e) : true
   }
 }
-let m = new g
+let h = new f

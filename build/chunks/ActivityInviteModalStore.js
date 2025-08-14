@@ -2,7 +2,7 @@
 /** chunk id: 606206, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
-  Z: () => S
+  Z: () => _
 }), require("./388685.js"), require("./539854.js"), require("./781311.js"), require("./35282.js");
 var l, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -18,7 +18,7 @@ var l, Chunk442837 = require("./442837.js"),
   Chunk55589 = require("./55589.js"),
   Chunk981631 = require("./981631.js");
 
-function y(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,7 +42,7 @@ function v(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          y(e, t, n[t])
+          N(e, t, n[t])
         })
       }
       return e
@@ -58,7 +58,7 @@ function v(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t
-  }), _.emitChange()
+  }), S.emitChange()
 }
 
 function T() {
@@ -84,8 +84,8 @@ class I extends(l = Chunk442837.ZP.Store) {
     return C
   }
 }
-y(I, "displayName", "ActivityInviteModalStore");
-let _ = new I(Chunk570140.Z, {
+N(I, "displayName", "ActivityInviteModalStore");
+let S = new I(Chunk570140.Z, {
     ACTIVITY_INVITE_MODAL_OPEN: function(e) {
       x = e.activity, E = e.resolve, m = [], null == r && (r = new a.ZP((e, t) => {
         C = ("" === t.trim() ? function() {
@@ -93,7 +93,7 @@ let _ = new I(Chunk570140.Z, {
           return O.Z.getPrivateChannelIds().forEach(t => {
             let n = u.Z.getChannel(t);
             if (null != n)
-              if (n.type === N.d4z.DM) {
+              if (n.type === y.d4z.DM) {
                 let t = n.getRecipientId(),
                   r = null != t ? p.default.getUser(t) : null;
                 null != r && e.push({
@@ -146,7 +146,7 @@ let _ = new I(Chunk570140.Z, {
             default:
               return null
           }
-        }).filter(e => null != e), _.emitChange()
+        }).filter(e => null != e), S.emitChange()
       }, b, 100)), r.search("")
     },
     ACTIVITY_INVITE_MODAL_QUERY: function(e) {
@@ -161,12 +161,12 @@ let _ = new I(Chunk570140.Z, {
         n = e.userId;
       null != t ? s.Z.sendActivityInvite({
         channelId: t,
-        type: N.mFx.JOIN,
+        type: y.mFx.JOIN,
         activity: x,
         location: "Channel Text Area - Invite to Join Modal"
       }).then(() => v(t)) : null != n && s.Z.sendActivityInviteUser({
         userId: n,
-        type: N.mFx.JOIN,
+        type: y.mFx.JOIN,
         activity: x,
         location: "Channel Text Area - Invite to Join Modal"
       }).then(() => v(n))
@@ -181,4 +181,4 @@ let _ = new I(Chunk570140.Z, {
     LOCAL_ACTIVITY_UPDATE: j,
     RPC_APP_DISCONNECTED: j
   }),
-  S = 12633 == require.j ? _ : null
+  _ = 12633 == require.j ? S : null

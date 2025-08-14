@@ -43,8 +43,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk861242 = require("./861242.js"),
-  Chunk247352 = require("./247352.js"),
+  Chunk704543 = require("./704543.js"),
+  Chunk936524 = require("./936524.js"),
   Chunk924482 = require("./924482.js"),
   Chunk774797 = require("./774797.js");
 
@@ -145,7 +145,7 @@ function W(e) {
         users: en,
         guildId: ee.id,
         channelId: et.id,
-        maxUsers: j.W,
+        maxUsers: k.W,
         size: l.EFr.SIZE_16,
         onClickOverflow: e => {
           null == e || e.stopPropagation(), null == eo || eo({
@@ -158,7 +158,7 @@ function W(e) {
         "aria-label": Z.intl.string(Z.t.jNqDh4)
       }), X === G.lY.MODAL_V2 && eE()]
     }),
-    eg = () => X === G.lY.MODAL || X === G.lY.MODAL_V2 ? null : (0, r.jsx)(j.Z, {
+    eg = () => X === G.lY.MODAL || X === G.lY.MODAL_V2 ? null : (0, r.jsx)(k.Z, {
       user: t,
       guild: ee,
       channel: et,
@@ -167,7 +167,7 @@ function W(e) {
     }),
     eE = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: F.actions,
-      children: (0, r.jsx)(k.Z, {
+      children: (0, r.jsx)(j.Z, {
         channel: et,
         onAction: eo,
         onClose: K

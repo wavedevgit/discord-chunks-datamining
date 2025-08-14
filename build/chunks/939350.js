@@ -4,12 +4,12 @@
 require.d(exports, {
   _: () => i
 });
-var Chunk968769 = require("./968769.js");
+var Chunk334405 = require("./334405.js");
 let i = {
-  default: Chunk968769.colorDefault,
-  brand: Chunk968769.colorBrand,
-  danger: Chunk968769.colorDanger,
-  premium: Chunk968769.colorPremium,
-  "premium-gradient": Chunk968769.colorPremiumGradient,
-  success: Chunk968769.colorSuccess
+  default: Chunk334405.colorDefault,
+  brand: Chunk334405.colorBrand,
+  danger: Chunk334405.colorDanger,
+  premium: Chunk334405.colorPremium,
+  "premium-gradient": Chunk334405.colorPremiumGradient,
+  success: Chunk334405.colorSuccess
 }

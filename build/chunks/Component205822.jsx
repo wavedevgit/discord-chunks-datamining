@@ -13,8 +13,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk310752 = require("./310752.jsx"),
   Chunk531643 = require("./531643.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk560548 = require("./560548.js"),
-  Chunk584783 = require("./584783.js");
+  Chunk995751 = require("./995751.js"),
+  Chunk162130 = require("./162130.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -30,19 +30,19 @@ let h = new Chunk710845.Z("UploadArea"),
 function g() {
   return (0, Chunk255367.jsxs)("div", {
     children: [(0, Chunk255367.jsx)("div", {
-      className: a()(Chunk584783.sparkleWhite, Chunk560548.sparkleOne)
+      className: a()(Chunk162130.sparkleWhite, Chunk995751.sparkleOne)
     }), (0, Chunk255367.jsx)("div", {
-      className: a()(Chunk584783.sparkleWhite, Chunk560548.sparkleTwo)
+      className: a()(Chunk162130.sparkleWhite, Chunk995751.sparkleTwo)
     }), (0, Chunk255367.jsx)("div", {
-      className: a()(Chunk584783.lightWhite, Chunk560548.lightOne)
+      className: a()(Chunk162130.lightWhite, Chunk995751.lightOne)
     }), (0, Chunk255367.jsx)("div", {
-      className: a()(Chunk584783.lightWhite, Chunk560548.lightTwo)
+      className: a()(Chunk162130.lightWhite, Chunk995751.lightTwo)
     }), (0, Chunk255367.jsx)("div", {
-      className: a()(Chunk584783.crossWhite, Chunk560548.crossOne)
+      className: a()(Chunk162130.crossWhite, Chunk995751.crossOne)
     }), (0, Chunk255367.jsx)("div", {
-      className: a()(Chunk584783.crossWhite, Chunk560548.crossTwo)
+      className: a()(Chunk162130.crossWhite, Chunk995751.crossTwo)
     }), (0, Chunk255367.jsx)("div", {
-      className: a()(Chunk584783.popWhite, Chunk560548.popOne)
+      className: a()(Chunk162130.popWhite, Chunk995751.popOne)
     })]
   })
 }
@@ -65,24 +65,24 @@ class E extends Chunk73800.Component {
     } = this.props;
     return (0, Chunk255367.jsx)("div", {
       ref: this.elementDOMRef,
-      className: a()(Chunk120356, Chunk560548.uploadArea, {
-        [Chunk560548.droppable]: this.state.isDragging,
-        [Chunk560548.uploadModalIn]: this.state.isOverZone
+      className: a()(Chunk120356, Chunk995751.uploadArea, {
+        [Chunk995751.droppable]: this.state.isDragging,
+        [Chunk995751.uploadModalIn]: this.state.isOverZone
       }),
       style: Chunk73800,
       children: (0, Chunk255367.jsxs)("div", {
-        className: Chunk560548.uploadDropModal,
+        className: Chunk995751.uploadDropModal,
         children: [this.state.isDragging && (0, Chunk255367.jsx)(g, {}), (0, Chunk255367.jsx)("div", {
-          className: Chunk560548.bgScale
+          className: Chunk995751.bgScale
         }), (0, Chunk255367.jsxs)("div", {
-          className: Chunk560548.inner,
+          className: Chunk995751.inner,
           children: [(0, Chunk255367.jsx)(Chunk310752.Z, {
             icons: require
           }), (0, Chunk255367.jsx)("div", {
-            className: Chunk560548.title,
+            className: Chunk995751.title,
             children: module
           }), (0, Chunk255367.jsx)("div", {
-            className: Chunk560548.instructions,
+            className: Chunk995751.instructions,
             children: (0, Chunk255367.jsx)("pre", {
               children: exports
             })

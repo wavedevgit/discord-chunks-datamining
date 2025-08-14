@@ -19,8 +19,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk962194 = require("./962194.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk884110 = require("./884110.js"),
+  Chunk197571 = require("./197571.js");
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -63,18 +63,7 @@ let I = {
     let {
       title: t,
       menuType: i
-    } = e, o = () => {
-      (0, s.ZDy)(async () => {
-        let {
-          default: e
-        } = await n.e("93288").then(n.bind(n, 396410));
-        return t => (0, r.jsx)(e, j(v({}, t), {
-          onSuccess: a,
-          headerText: x.intl.string(x.t.ZLRYGR),
-          confirmButtonText: x.intl.string(x.t.PDTjLC)
-        }))
-      })
-    }, a = e => {
+    } = e, o = e => {
       let t = async () => {
         await (0, f.yL)(i, e)
       }, o = async t => await (0, f.RV)(i, e, t), a = e => {
@@ -99,7 +88,16 @@ let I = {
     };
     return (0, r.jsxs)(s.P3F, {
       className: b.reportButton,
-      onClick: () => o(),
+      onClick: () => void(0, s.ZDy)(async () => {
+        let {
+          default: e
+        } = await n.e("93288").then(n.bind(n, 396410));
+        return t => (0, r.jsx)(e, j(v({}, t), {
+          onSuccess: o,
+          headerText: x.intl.string(x.t.ZLRYGR),
+          confirmButtonText: x.intl.string(x.t.PDTjLC)
+        }))
+      }),
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/medium",
         children: t
@@ -134,15 +132,15 @@ let I = {
       children: (0, Chunk255367.jsx)(Chunk481060.$jN, {})
     }) : null != require && require.length > 0 && (0, Chunk255367.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk255367.jsx)(Chunk388905.Dx, {
-        className: Chunk881488.marginBottom8,
+        className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.Z11w19)
       }), (0, Chunk255367.jsx)(Chunk388905.DK, {
-        className: Chunk881488.marginBottom8,
+        className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.format(Chunk388032.t["532l+v"], {
           supportURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.COPYRIGHT_AND_IP_POLICY)
         })
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk962194.container,
+        className: Chunk884110.container,
         children: require.map(e => null == I[e] ? null : (0, r.jsx)(O, {
           title: x.intl.string(I[e]),
           menuType: e

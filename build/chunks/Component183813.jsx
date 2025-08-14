@@ -1,4 +1,4 @@
-/** Chunk was on 63024 **/
+/** Chunk was on 47238 **/
 /** chunk id: 183813, original params: e,r,n (module,exports,require) **/
 require.d(exports, {
   S: () => g
@@ -20,7 +20,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk27034 = require("./27034.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk864089 = require("./864089.js");
+  Chunk950174 = require("./950174.js");
 
 function g(e) {
   let {
@@ -38,20 +38,18 @@ function g(e) {
   i.useEffect(() => {
     let e = null != v && v.length > 0;
     null == S && e && y(v[0])
-  }, [v, S, y]);
-  let I = e => {
-    let r = e.skuId;
-    return (0, t.jsx)(d.Z, {
-      skuId: r,
-      price: j.intl.string(j.t.QQsaCQ),
-      isSelected: r === (null == S ? true : S.skuId),
-      onSelect: () => y(e),
-      className: L.giftSelectItem
-    }, r)
-  };
-  a()(null != o, "Expected plan to selected"), a()(null != g, "Expected selectedSkuId"), a()(null != b, "Step should be set");
-  let P = null == v ? true : v.map(e => I(e)),
-    T = null != S && null != E ? (0, t.jsx)(C.Z, {
+  }, [v, S, y]), a()(null != o, "Expected plan to selected"), a()(null != g, "Expected selectedSkuId"), a()(null != b, "Step should be set");
+  let I = null == v ? true : v.map(e => (e => {
+      let r = e.skuId;
+      return (0, t.jsx)(d.Z, {
+        skuId: r,
+        price: j.intl.string(j.t.QQsaCQ),
+        isSelected: r === (null == S ? true : S.skuId),
+        onSelect: () => y(e),
+        className: L.giftSelectItem
+      }, r)
+    })(e)),
+    P = null != S && null != E ? (0, t.jsx)(C.Z, {
       avatarDecorationOverride: {
         asset: S.assetId
       },
@@ -59,7 +57,7 @@ function g(e) {
       guildId: null,
       avatarSize: s.EFr.SIZE_152
     }) : null,
-    O = (0, t.jsx)(m.O3, {
+    T = (0, t.jsx)(m.O3, {
       children: (0, t.jsx)(s.mzw, {
         className: L.modalFooter,
         children: (0, t.jsx)(c.y, {
@@ -77,7 +75,7 @@ function g(e) {
         })
       })
     }),
-    w = (0, t.jsx)(s.X6q, {
+    O = (0, t.jsx)(s.X6q, {
       variant: "heading-lg/bold",
       color: "header-primary",
       children: j.intl.string(j.t["Rp0+ZG"])
@@ -89,7 +87,7 @@ function g(e) {
         direction: "horizontal",
         justify: "space-between",
         align: "center",
-        children: [w, (0, t.jsx)(s.olH, {
+        children: [O, (0, t.jsx)(s.olH, {
           onClick: n
         })]
       })
@@ -100,14 +98,14 @@ function g(e) {
         padding: {
           top: 24
         },
-        children: [T, (0, t.jsx)(s.Kqy, {
+        children: [P, (0, t.jsx)(s.Kqy, {
           gap: 8,
           padding: {
             top: 12
           },
-          children: P
+          children: I
         })]
       })
-    }), O]
+    }), T]
   })
 }

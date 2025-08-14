@@ -1,8 +1,8 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 795338, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   g: () => d,
-  m: () => h
+  m: () => p
 });
 var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
@@ -10,7 +10,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk494497 = require("./494497.js"),
   Chunk156732 = require("./156732.js"),
   Chunk535396 = require("./535396.js"),
-  Chunk115094 = require("./115094.js"),
+  Chunk922434 = require("./922434.js"),
   Chunk942570 = require("./942570.js");
 
 function d(e) {
@@ -24,16 +24,16 @@ function d(e) {
   })
 }
 
-function h(e) {
+function p(e) {
   let {
     className: t,
     powerup: n,
     isHovering: i
-  } = e, u = (0, s.Z)(n, i);
+  } = e, u = (0, a.Z)(n, i);
   switch (n.type) {
-    case a.Us.LEVEL:
+    case s.Us.LEVEL:
       return (0, r.jsx)(d, {});
-    case a.Us.PERK:
+    case s.Us.PERK:
       return (0, r.jsx)("img", {
         alt: "",
         src: u,

@@ -19,17 +19,17 @@ var Chunk255367 = require("./255367.js"),
   Chunk156582 = require("./156582.jsx"),
   Chunk396678 = require("./396678.js"),
   Chunk37113 = require("./37113.js"),
-  Chunk676462 = require("./676462.js"),
+  Chunk637824 = require("./637824.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk403467 = require("./403467.js");
+  Chunk189822 = require("./189822.js");
 
-function S(e) {
+function b(e) {
   let {
     label: t,
     children: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: b.setting,
+    className: S.setting,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-sm/semibold",
       color: "header-secondary",
@@ -54,7 +54,7 @@ function C() {
       name: (0, f.M)(t),
       tooltipAriaLabel: n ? true : j.intl.string(j.t.sEAnVF),
       tooltip: n ? true : (0, r.jsx)(d.W, {}),
-      className: n ? true : b.premiumOption
+      className: n ? true : S.premiumOption
     }
   }), U = Chunk812652.YX.map(e => {
     let t = (0, c.Z)(C, _.LY.RESOLUTION_720, e, N, w);
@@ -63,13 +63,13 @@ function C() {
       name: "".concat(e, "fps"),
       tooltipAriaLabel: t ? true : j.intl.string(j.t.sEAnVF),
       tooltip: t ? true : (0, r.jsx)(d.W, {}),
-      className: t ? true : b.premiumOption
+      className: t ? true : S.premiumOption
     }
   });
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk403467.root,
-    children: [(0, Chunk255367.jsx)(S, {
-      label: Chunk388032.intl.string(Chunk676462.default["7eHfrq"]),
+    className: Chunk189822.root,
+    children: [(0, Chunk255367.jsx)(b, {
+      label: Chunk388032.intl.string(Chunk637824.default["7eHfrq"]),
       children: (0, Chunk255367.jsx)(Chunk481060.PhF, {
         isSelected: e => C === e,
         serialize: e => String(e),
@@ -94,10 +94,10 @@ function C() {
           }
         })
       })
-    }), (0, Chunk255367.jsx)(S, {
-      label: Chunk388032.intl.string(Chunk676462.default.PYBXFR),
+    }), (0, Chunk255367.jsx)(b, {
+      label: Chunk388032.intl.string(Chunk637824.default.PYBXFR),
       children: (0, Chunk255367.jsx)(Chunk481060.sY7, {
-        className: Chunk403467.segmentedControl,
+        className: Chunk189822.segmentedControl,
         options: B,
         look: "pill",
         disabled: D,
@@ -115,10 +115,10 @@ function C() {
           })
         }(e.value)
       })
-    }), (0, Chunk255367.jsx)(S, {
-      label: Chunk388032.intl.string(Chunk676462.default["/ssDMT"]),
+    }), (0, Chunk255367.jsx)(b, {
+      label: Chunk388032.intl.string(Chunk637824.default["/ssDMT"]),
       children: (0, Chunk255367.jsx)(Chunk481060.sY7, {
-        className: Chunk403467.segmentedControl,
+        className: Chunk189822.segmentedControl,
         disabled: D,
         options: U,
         value: L,

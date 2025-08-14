@@ -15,7 +15,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk211644 = require("./211644.js"),
   Chunk675478 = require("./675478.js"),
   Chunk681619 = require("./681619.jsx"),
-  Chunk1746 = require("./1746.js");
+  Chunk882754 = require("./882754.js");
 let p = e => {
     switch (e) {
       case c.D.DC_DISMISSED:
@@ -70,12 +70,12 @@ function v() {
       dismissibleContent: e
     }));
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk1746.panelContainer,
+    className: Chunk882754.panelContainer,
     children: [(0, Chunk255367.jsxs)("div", {
-      className: Chunk1746.buttonContainer,
+      className: Chunk882754.buttonContainer,
       children: [(0, Chunk255367.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: Chunk1746.button,
+        className: Chunk882754.button,
         children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Reset Daily Cap",
@@ -83,7 +83,7 @@ function v() {
         })
       }), (0, Chunk255367.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: Chunk1746.button,
+        className: Chunk882754.button,
         children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Clear All Dismissed Contents",
@@ -91,7 +91,7 @@ function v() {
         })
       }), (0, Chunk255367.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: Chunk1746.button,
+        className: Chunk882754.button,
         children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Check All Dismissed Contents",
@@ -99,15 +99,15 @@ function v() {
         })
       })]
     }), (0, Chunk255367.jsx)("br", {}), (0, Chunk255367.jsxs)("div", {
-      className: Chunk1746.info,
+      className: Chunk882754.info,
       children: ["Last winner time: ", Chunk913527]
     }), (0, Chunk255367.jsx)("br", {}), (0, Chunk255367.jsxs)("div", {
-      className: Chunk1746.info,
+      className: Chunk882754.info,
       children: ["Last winner: ", null != v ? Chunk704215.z[v] : "None"]
     }), (0, Chunk255367.jsx)("br", {}), (0, Chunk255367.jsx)("div", {
-      className: Chunk1746.candidatesTableContainer,
+      className: Chunk882754.candidatesTableContainer,
       children: (0, Chunk255367.jsx)(Chunk681619.Z, {
-        className: Chunk1746.candidatesTable,
+        className: Chunk882754.candidatesTable,
         columns: f,
         data: g
       })

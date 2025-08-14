@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk314172 = require("./314172.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk186798 = require("./186798.js");
+  Chunk641984 = require("./641984.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -106,11 +106,11 @@ function x(e) {
     onRemoveRole: E
   } = e, T = i.useRef({}), A = (e, t) => {
     null != t ? T.current[e] = t : delete T.current[e]
-  }, [R, x] = i.useState(d), [M, j] = i.useState(w), [k, U] = i.useState(false), G = i.useRef(null), B = i.useRef(null), Z = i.useRef(0);
+  }, [R, x] = i.useState(d), [M, k] = i.useState(w), [j, U] = i.useState(false), G = i.useRef(null), B = i.useRef(null), Z = i.useRef(0);
   i.useLayoutEffect(() => {
     Z.current = 0
   }, [d]), i.useLayoutEffect(() => {
-    if (k) return;
+    if (j) return;
     let e = L(G.current),
       t = L(B.current),
       n = [],
@@ -129,8 +129,8 @@ function x(e) {
         e += a + P, n.push(i)
       }
     }
-    x(n.length === R.length ? R : n), j(r), Z.current++
-  }, [d, R, k]);
+    x(n.length === R.length ? R : n), k(r), Z.current++
+  }, [d, R, j]);
   let F = i.useMemo(() => "roles-".concat((0, o.Z)()), []),
     V = (0, a.ZP)({
       id: F,
@@ -143,13 +143,13 @@ function x(e) {
     Y = 0 === H ? v.intl.string(v.t["vR7M+/"]) : v.intl.formatToPlainString(v.t.PCs0oq, {
       numRoles: H
     }),
-    W = (k ? d : R).map((e, i) => {
+    W = (j ? d : R).map((e, i) => {
       var o;
       return (0, r.jsx)(b.Z, {
         role: e,
         guildId: l.id,
         style: {
-          maxWidth: k || i !== R.length - 1 ? w : M
+          maxWidth: j || i !== R.length - 1 ? w : M
         },
         disableBorderColor: true,
         ref: t => A(e.id, t),
@@ -182,7 +182,7 @@ function x(e) {
           "aria-label": Y,
           ref: t
         }, n), {
-          children: [W, R.length < d.length ? k ? (0, r.jsx)(c.DY3, {
+          children: [W, R.length < d.length ? j ? (0, r.jsx)(c.DY3, {
             text: v.intl.string(v.t.XnXtCg),
             children: (0, r.jsx)(c.P3F, {
               onClick: q,

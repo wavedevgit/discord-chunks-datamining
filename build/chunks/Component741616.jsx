@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 741616, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./290780.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,35 +14,35 @@ var Chunk255367 = require("./255367.js"),
   Chunk919436 = require("./919436.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function p() {
+function f() {
   (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getPrivateChannelsVersion());
   let e = Chunk592125.Z.getMutablePrivateChannels(),
     t = (0, Chunk442837.Wu)([Chunk358652.Z], () => Chunk358652.Z.getUnreadPrivateChannelIds()),
     {
       selectedVoiceGuildId: n,
-      selectedVoiceChannelId: p
+      selectedVoiceChannelId: f
     } = (0, Chunk442837.cj)([Chunk19780.Z], () => ({
       selectedVoiceGuildId: Chunk19780.Z.getGuildId(),
       selectedVoiceChannelId: Chunk19780.Z.getChannelId()
     })),
-    f = exports.map(t => {
+    h = exports.map(t => {
       let n = e[t];
-      return null == n || n.id === p ? null : (0, r.jsx)(d.Z, {
+      return null == n || n.id === f ? null : (0, r.jsx)(d.Z, {
         channel: n
       }, n.id)
     }),
-    g = null == require && null != p ? module[p] : null;
-  return null != g && f.unshift((0, Chunk255367.jsx)(Chunk919436.Z, {
+    g = null == require && null != f ? module[f] : null;
+  return null != g && h.unshift((0, Chunk255367.jsx)(Chunk919436.Z, {
     channel: g
   }, g.id)), (0, Chunk255367.jsx)(Chunk481060.Kqy, {
     id: "guild-list-unread-dms",
     role: "group",
     "aria-label": Chunk388032.intl.string(Chunk388032.t.YUU0RE),
     gap: "xs",
-    hidden: f.length < 1,
+    hidden: h.length < 1,
     children: (0, Chunk255367.jsx)(Chunk215569.W, {
       component: Chunk73800.Fragment,
-      children: f
+      children: h
     })
   })
 }

@@ -2,7 +2,7 @@
 /** chunk id: 727939, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => _
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -10,30 +10,28 @@ var Chunk255367 = require("./255367.js"),
   Chunk241915 = require("./241915.jsx"),
   Chunk451478 = require("./451478.js"),
   Chunk981631 = require("./981631.js");
-let c = {
-    top: 48,
-    bottom: 32,
-    left: 32,
-    right: 32
-  },
-  u = function(e) {
+let c = 48,
+  u = 32,
+  d = 32,
+  f = 32,
+  _ = function(e) {
     let {
       className: t,
       defaultPosition: n = l.VD2.BOTTOM_RIGHT,
-      children: u,
-      topOffset: d
-    } = e, [f, _] = i.useState(n), p = (0, o.e7)([s.Z], () => s.Z.windowSize());
+      children: _,
+      topOffset: p
+    } = e, [h, m] = i.useState(n), g = (0, o.e7)([s.Z], () => s.Z.windowSize());
     return (0, r.jsx)(a._, {
       className: t,
-      position: f,
+      position: h,
       id: 0,
-      onMove: (e, t) => _(t),
-      maxX: p.width,
-      maxY: p.height,
-      edgeOffsetTop: null != d ? d : c.top,
-      edgeOffsetBottom: c.bottom,
-      edgeOffsetLeft: c.left,
-      edgeOffsetRight: c.right,
-      children: u
+      onMove: (e, t) => m(t),
+      maxX: g.width,
+      maxY: g.height,
+      edgeOffsetTop: null != p ? p : c,
+      edgeOffsetBottom: u,
+      edgeOffsetLeft: d,
+      edgeOffsetRight: f,
+      children: _
     })
   }

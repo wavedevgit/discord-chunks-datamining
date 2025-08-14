@@ -25,7 +25,7 @@ var Chunk873546 = require("./873546.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
-  Chunk284896 = require("./284896.js");
+  Chunk979905 = require("./979905.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -110,7 +110,7 @@ function P(e) {
     hideSearch: D,
     showDivider: L,
     disableDoubleClick: x
-  } = e, M = null == s || (0, O.AB)(s) ? null : s, j = (0, o.e7)([m.Z], () => m.Z.isInChannel(M) || false), k = (0, o.e7)([c.Z], () => null != M && c.Z.getParticipantsListOpen(M)), {
+  } = e, M = null == s || (0, O.AB)(s) ? null : s, k = (0, o.e7)([m.Z], () => m.Z.isInChannel(M) || false), j = (0, o.e7)([c.Z], () => null != M && c.Z.getParticipantsListOpen(M)), {
     enabled: U,
     inInbox: G
   } = d.Z.useExperiment({
@@ -131,10 +131,10 @@ function P(e) {
         guildId: g,
         channelId: s,
         className: v.search
-      }, null != g ? g : s) : null, L && (0, r.jsx)(b.ZP.Divider, {}), U && !G ? (0, r.jsx)(f.Z, {}) : null, B && j && null != M && !k && l === y.d4z.GROUP_DM && (0, r.jsxs)("div", {
+      }, null != g ? g : s) : null, L && (0, r.jsx)(b.ZP.Divider, {}), U && !G ? (0, r.jsx)(f.Z, {}) : null, B && k && null != M && !j && l === y.d4z.GROUP_DM && (0, r.jsxs)("div", {
         className: v.controlButtonWrapper,
         children: [(0, r.jsx)(b.ZP.Divider, {}), (0, r.jsx)(h.Z, {
-          onClick: () => a.Z.toggleParticipantsList(M, !k)
+          onClick: () => a.Z.toggleParticipantsList(M, !j)
         })]
       })]
     })

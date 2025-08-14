@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 293389, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => U
@@ -27,10 +27,10 @@ var Chunk255367 = require("./255367.js"),
   Chunk210887 = require("./210887.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk762712 = require("./762712.js"),
-  Chunk210297 = require("./210297.js"),
-  Chunk794287 = require("./794287.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk740508 = require("./740508.js"),
+  Chunk315091 = require("./315091.js"),
+  Chunk149715 = require("./149715.js"),
+  Chunk197571 = require("./197571.js");
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -130,7 +130,7 @@ function k(e) {
     isCurrentGameDetectionEnabled: g.ZP.isDetectionEnabled(O)
   })), A = (0, l.e7)([g.ZP], () => g.ZP.getVisibleGame()), [D, w] = r.useState(false), L = r.useMemo(() => (0, x.le)(O) ? b ? O.gameName : T.intl.formatToPlainString(T.t.G6BGd3, {
     subgameName: O.gameName
-  }) : O.name, [O, b]), [M, B] = r.useState(null != L ? L : "???"), U = a()(y.flexCenter, {
+  }) : O.name, [O, b]), [B, M] = r.useState(null != L ? L : "???"), U = a()(y.flexCenter, {
     [I.game]: !s,
     [I.activeGame]: s,
     [I.nowPlaying]: null != O && s,
@@ -206,14 +206,14 @@ function k(e) {
           className: a()(I.gameName, I.gameNameInput),
           type: "text",
           maxLength: 128,
-          value: M,
+          value: B,
           onBlur: function() {
-            O.name !== M && u.Z.editName(O, M)
+            O.name !== B && u.Z.editName(O, B)
           },
           onKeyDown: function(e) {
             13 === e.keyCode && (e.currentTarget.blur(), e.preventDefault())
           },
-          onChange: e => B(e.target.value)
+          onChange: e => M(e.target.value)
         }), function() {
           let e, {
             played: t,
@@ -357,21 +357,21 @@ function k(e) {
 
 function L() {
   return (0, Chunk255367.jsx)("div", {
-    className: a()(Chunk794287.flexCenter, Chunk762712.notDetected, Chunk762712.activeGame),
+    className: a()(Chunk149715.flexCenter, Chunk740508.notDetected, Chunk740508.activeGame),
     children: (0, Chunk255367.jsxs)("div", {
-      className: a()(Chunk762712.gameNameLastPlayed, Chunk794287.vertical),
+      className: a()(Chunk740508.gameNameLastPlayed, Chunk149715.vertical),
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk762712.gameName,
+        className: Chunk740508.gameName,
         children: Chunk388032.intl.string(Chunk388032.t["H68X9/"])
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk762712.lastPlayed,
+        className: Chunk740508.lastPlayed,
         children: Chunk388032.intl.string(Chunk388032.t.T5Ilm5)
       })]
     })
   })
 }
 
-function M(e) {
+function B(e) {
   let {
     children: t
   } = e;
@@ -385,7 +385,7 @@ function M(e) {
     }), t]
   })
 }
-let B = (0, Chunk251625.oH)(function() {
+let M = (0, Chunk251625.oH)(function() {
     for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
     return new Set(exports.map(e => e.exePath))
   }),
@@ -398,7 +398,7 @@ let B = (0, Chunk251625.oH)(function() {
       overrideExePaths: u
     } = (0, l.cj)([g.ZP], () => ({
       runningGame: g.ZP.getVisibleGame(),
-      overrideExePaths: B(...g.ZP.getOverrides())
+      overrideExePaths: M(...g.ZP.getOverrides())
     })), {
       gameHistory: m,
       robloxSubgameHistory: p
@@ -439,7 +439,7 @@ let B = (0, Chunk251625.oH)(function() {
             children: T.intl.string(T.t.GjgdXV)
           }))
         })]
-      }), 0 === m.length ? (0, i.jsx)(M, {
+      }), 0 === m.length ? (0, i.jsx)(B, {
         children: (0, i.jsx)(d.OZU, {
           children: T.intl.string(T.t["1yiJws"])
         })

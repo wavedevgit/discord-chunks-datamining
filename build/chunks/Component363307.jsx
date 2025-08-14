@@ -16,9 +16,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk81829 = require("./81829.jsx"),
   Chunk892689 = require("./892689.jsx"),
   Chunk477839 = require("./477839.js"),
-  Chunk603571 = require("./603571.js"),
+  Chunk511479 = require("./511479.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk321325 = require("./321325.js");
+  Chunk640705 = require("./640705.js");
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -39,7 +39,7 @@ function x(e) {
   return e
 }
 let v = () => [{
-  title: Chunk388032.intl.string(Chunk603571.default.edfgq6),
+  title: Chunk388032.intl.string(Chunk511479.default.edfgq6),
   color: Chunk377171.Z.BUTTON_POSITIVE_BACKGROUND,
   primaryButtonCTA: Chunk388032.intl.string(Chunk388032.t.BddRzc),
   secondaryButtonCTA: Chunk388032.intl.string(Chunk388032.t.f3Pet7),
@@ -47,35 +47,35 @@ let v = () => [{
   secondaryButtonPoints: 500,
   closeButtonPoints: 200
 }, {
-  title: Chunk388032.intl.string(Chunk603571.default.isjTh4),
+  title: Chunk388032.intl.string(Chunk511479.default.isjTh4),
   color: Chunk377171.Z.BUTTON_DANGER_BACKGROUND,
   closeButtonPoints: 200
 }, {
-  title: Chunk388032.intl.string(Chunk603571.default["1aOLws"]),
+  title: Chunk388032.intl.string(Chunk511479.default["1aOLws"]),
   color: Chunk377171.Z.BG_BRAND,
   primaryButtonCTA: Chunk388032.intl.string(Chunk388032.t["+TBKLy"]),
   primaryButtonPoints: false,
   closeButtonPoints: 200
 }, {
-  title: Chunk388032.intl.string(Chunk603571.default.M3lUXV),
+  title: Chunk388032.intl.string(Chunk511479.default.M3lUXV),
   color: Chunk377171.Z.BG_BRAND,
   primaryButtonCTA: Chunk388032.intl.string(Chunk388032.t.f3Pet7),
   primaryButtonPoints: 700,
   closeButtonPoints: 200
 }, {
-  title: Chunk388032.intl.string(Chunk603571.default.StUVd3),
+  title: Chunk388032.intl.string(Chunk511479.default.StUVd3),
   color: Chunk377171.Z.BUTTON_POSITIVE_BACKGROUND,
   primaryButtonCTA: Chunk388032.intl.string(Chunk388032.t["3xjX0d"]),
   primaryButtonPoints: 2e3,
   closeButtonPoints: 200
 }, {
-  title: Chunk388032.intl.string(Chunk603571.default.vHm2PD),
+  title: Chunk388032.intl.string(Chunk511479.default.vHm2PD),
   color: Chunk377171.Z.BUTTON_POSITIVE_BACKGROUND,
-  primaryButtonCTA: Chunk388032.intl.string(Chunk603571.default.ZOqU29),
+  primaryButtonCTA: Chunk388032.intl.string(Chunk511479.default.ZOqU29),
   primaryButtonPoints: 1e3,
   closeButtonPoints: 200
 }, {
-  title: Chunk388032.intl.string(Chunk603571.default.vNywt7),
+  title: Chunk388032.intl.string(Chunk511479.default.vNywt7),
   color: Chunk377171.Z.BUTTON_DANGER_BACKGROUND,
   primaryButtonCTA: Chunk388032.intl.string(Chunk388032.t["9iFR6+"]),
   primaryButtonPoints: false,

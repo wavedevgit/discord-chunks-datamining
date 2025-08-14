@@ -43,8 +43,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk485399 = require("./485399.js"),
-  Chunk84162 = require("./84162.js");
+  Chunk734102 = require("./734102.js"),
+  Chunk542257 = require("./542257.js");
 
 function z(e) {
   let {
@@ -91,7 +91,7 @@ function V(e) {
   let {
     onChange: t,
     guildId: n
-  } = e, i = (0, o.e7)([b.Z], () => b.Z.getGuild(n));
+  } = e, i = (0, o.e7)([S.Z], () => S.Z.getGuild(n));
   return null == i ? (t(), null) : (0, r.jsx)(c.xJW, {
     title: W.intl.string(W.t.WC3u3t),
     className: H.modalContent,
@@ -168,7 +168,7 @@ function X(e) {
     screen: l
   } = e, a = i.useCallback((e, t) => {
     n(t)
-  }, [n]), d = (0, o.e7)([S.Z], () => S.Z.getUseSystemScreensharePicker() && (0, N.isLinux)());
+  }, [n]), d = (0, o.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && (0, N.isLinux)());
   return (0, r.jsx)(c.xJW, {
     className: s()(H.modalContent, F.checkboxRow),
     children: (0, r.jsx)(c.XZJ, {
@@ -219,7 +219,7 @@ function q(e) {
     sound: x,
     previewDisabled: g,
     onClose: j,
-    onChangeSelectedFPS: b,
+    onChangeSelectedFPS: S,
     onChangeSelectedResolution: O,
     onChangeSelectedPreset: I,
     onChangeSelectedChannelId: Z,
@@ -229,11 +229,11 @@ function q(e) {
     onChangeSound: D,
     onChangePreviewDisabled: B
   } = e, H = (0, o.e7)([C.Z, v.Z], () => v.Z.getChannel(C.Z.getVoiceChannelId())), q = (0, o.e7)([T.Z], () => T.Z.GPUDriversOutdated), Q = (0, o.e7)([T.Z], () => T.Z.problematicGPUDriver), $ = (0, o.e7)([y.default], () => y.default.getCurrentUser()), ee = (0, P.Z)();
-  null != t && t.id.startsWith("screen") && !S.Z.supportsScreenSoundshare() && (ee = W.intl.string(W.t["1b0Gm5"]));
+  null != t && t.id.startsWith("screen") && !b.Z.supportsScreenSoundshare() && (ee = W.intl.string(W.t["1b0Gm5"]));
   let et = !!(null == t ? true : t.id.startsWith("camera")),
     en = null != $ && $.verified && !$.bot,
     er = null != H && !(0, f.Yk)(H),
-    ei = !(0, o.e7)([S.Z], () => S.Z.getHardwareEncoding());
+    ei = !(0, o.e7)([b.Z], () => b.Z.getHardwareEncoding());
   return (0, r.jsxs)(i.Fragment, {
     children: [et ? (0, r.jsx)(R.Z, {
       selectedSource: t,
@@ -285,7 +285,7 @@ function q(e) {
       selectedResolution: a,
       targetGuildPremiumTier: m,
       onClose: j,
-      onFPSChange: b,
+      onFPSChange: S,
       onResolutionChange: O,
       onPresetChange: I,
       captureDeviceSelected: et

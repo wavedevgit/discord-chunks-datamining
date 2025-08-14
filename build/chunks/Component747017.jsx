@@ -22,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk122943 = require("./122943.jsx"),
   Chunk556638 = require("./556638.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk93779 = require("./93779.js");
+  Chunk80568 = require("./80568.js");
 
 function v(e) {
   let {
@@ -57,7 +57,7 @@ function v(e) {
   if ((0, l.e7)([_.Z], () => _.Z.isBlockedOrIgnored(null == t ? true : t.id))) return null;
   let x = (null == t ? true : t.bot) === true,
     M = (null == L ? true : L.state) != null && "xs" === S,
-    j = () => {
+    k = () => {
       if (null != P) return (0, r.jsx)(h.Z, {
         stream: P,
         game: null == n ? true : n.find(c.Z),
@@ -91,7 +91,7 @@ function v(e) {
         hideTooltip: R
       }) : null
     },
-    k = a()(O.container, {
+    j = a()(O.container, {
       [O.textXs]: "xs" === S,
       [O.textSm]: "sm" === S
     }),
@@ -103,13 +103,13 @@ function v(e) {
       hideTooltip: R,
       textClassName: I,
       iconClassName: T,
-      tooltipClassName: k,
+      tooltipClassName: j,
       voiceChannel: v,
       hangStatus: D
     });
   return (0, r.jsxs)("div", {
-    className: k,
-    children: [j(), (0, r.jsx)(s.xv, {
+    className: j,
+    children: [k(), (0, r.jsx)(s.xv, {
       variant: "text-".concat(S, "/normal"),
       className: a()(O.truncated, O.dot, I),
       children: b.l

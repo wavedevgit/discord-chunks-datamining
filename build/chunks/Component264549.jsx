@@ -1,20 +1,20 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 264549, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => b
 }), require("./539854.js"), require("./388685.js"), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk714338 = require("./714338.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk376880 = require("./376880.js");
+  Chunk24445 = require("./24445.js");
 
-function p(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,20 +22,16 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let f = {
-    PRIMARY: () => true,
-    SECONDARY: () => true
-  },
-  g = () => (0, Chunk255367.jsxs)("div", {
-    className: Chunk376880.symbol,
-    children: [(0, Chunk255367.jsx)("div", {
-      className: Chunk376880.symbolBackground
-    }), (0, Chunk255367.jsx)("img", {
-      alt: "",
-      src: require("./977706.js")
-    })]
-  }, "symbol");
-class m extends Chunk73800.PureComponent {
+let h = () => (0, Chunk255367.jsxs)("div", {
+  className: Chunk24445.symbol,
+  children: [(0, Chunk255367.jsx)("div", {
+    className: Chunk24445.symbolBackground
+  }), (0, Chunk255367.jsx)("img", {
+    alt: "",
+    src: require("./977706.js")
+  })]
+}, "symbol");
+class g extends Chunk73800.PureComponent {
   componentDidMount() {
     this.setState({
       animating: true
@@ -43,38 +39,38 @@ class m extends Chunk73800.PureComponent {
       this.setState({
         renderSecondary: true
       })
-    }, 120), this._doneTimeout = setTimeout(this.done, 1e3), f.PRIMARY()
+    }, 120), this._doneTimeout = setTimeout(this.done, 1e3)
   }
   componentDidUpdate(e, t) {
-    this.state.renderSecondary && !t.renderSecondary && f.SECONDARY()
+    this.state.renderSecondary && t.renderSecondary
   }
   componentWillUnmount() {
     clearTimeout(this._renderSecondaryTimeout), clearTimeout(this._doneTimeout)
   }
   renderPrimary() {
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk376880.primaryExplosion,
+      className: Chunk24445.primaryExplosion,
       children: [(0, Chunk255367.jsx)("img", {
         alt: "",
-        className: Chunk376880.circleInner,
+        className: Chunk24445.circleInner,
         src: require("./273226.js"),
         width: 70,
         height: 69
       }), (0, Chunk255367.jsx)("img", {
         alt: "",
-        className: Chunk376880.circleOuter,
+        className: Chunk24445.circleOuter,
         src: require("./922026.js"),
         width: 96,
         height: 95
       }), (0, Chunk255367.jsx)("img", {
         alt: "",
-        className: Chunk376880.linesSecondary,
+        className: Chunk24445.linesSecondary,
         src: require("./827926.js"),
         width: 183,
         height: 104
       }), (0, Chunk255367.jsx)("img", {
         alt: "",
-        className: Chunk376880.linesMain,
+        className: Chunk24445.linesMain,
         src: require("./873180.js"),
         width: 69,
         height: 180
@@ -83,32 +79,32 @@ class m extends Chunk73800.PureComponent {
   }
   renderSecondary(e, t) {
     return (0, r.jsxs)("div", {
-      className: h.secondaryExplosion,
+      className: p.secondaryExplosion,
       style: {
         top: t,
         left: e
       },
       children: [(0, r.jsx)("img", {
         alt: "",
-        className: h.circleInner,
+        className: p.circleInner,
         src: n(272162),
         width: 61,
         height: 58
       }, "circle-inner"), (0, r.jsx)("img", {
         alt: "",
-        className: h.circleOuter,
+        className: p.circleOuter,
         src: n(632989),
         width: 85,
         height: 85
       }, "circle-outer"), (0, r.jsx)("img", {
         alt: "",
-        className: h.linesSecondary,
+        className: p.linesSecondary,
         src: n(376252),
         width: 162,
         height: 173
       }, "lines-secondary"), (0, r.jsx)("img", {
         alt: "",
-        className: h.linesMain,
+        className: p.linesMain,
         src: n(720617),
         width: 156,
         height: 306
@@ -122,10 +118,10 @@ class m extends Chunk73800.PureComponent {
       offsetY: n,
       animating: i,
       scale: l
-    } = this.state, s = [this.renderPrimary()];
+    } = this.state, a = [this.renderPrimary()];
     return module && Chunk392711.push(this.renderSecondary(exports, require)), (0, Chunk255367.jsx)("div", {
-      className: o()(Chunk376880.container, {
-        [Chunk376880.animate]: Chunk73800
+      className: o()(Chunk24445.container, {
+        [Chunk24445.animate]: Chunk73800
       }),
       style: {
         top: this.props.top,
@@ -136,18 +132,18 @@ class m extends Chunk73800.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), p(this, "_renderSecondaryTimeout", null), p(this, "_doneTimeout", null), p(this, "state", {
+    super(...e), f(this, "_renderSecondaryTimeout", null), f(this, "_doneTimeout", null), f(this, "state", {
       animating: false,
       renderSecondary: false,
-      scale: a().random(.6, 1, true),
-      offsetX: a().random(0, 140, false) - 70,
-      offsetY: a().random(0, 140, false) - 70
-    }), p(this, "done", () => {
+      scale: s().random(.6, 1, true),
+      offsetX: s().random(0, 140, false) - 70,
+      offsetY: s().random(0, 140, false) - 70
+    }), f(this, "done", () => {
       this.props.onAnimationComplete(this.props.componentId)
     })
   }
 }
-class b extends Chunk73800.PureComponent {
+class m extends Chunk73800.PureComponent {
   componentDidMount() {
     this.setTimeout(() => {
       this.setState({
@@ -162,47 +158,47 @@ class b extends Chunk73800.PureComponent {
   }
   render() {
     return (0, Chunk255367.jsx)("div", {
-      className: o()(Chunk376880.ragingDemon, {
-        [Chunk376880.visible]: this.state.visible
+      className: o()(Chunk24445.ragingDemon, {
+        [Chunk24445.visible]: this.state.visible
       }),
       children: this.children
     })
   }
   constructor(...e) {
-    super(...e), p(this, "_timeouts", []), p(this, "children", []), p(this, "state", {
+    super(...e), f(this, "_timeouts", []), f(this, "children", []), f(this, "state", {
       explosions: 0,
       visible: false
-    }), p(this, "setTimeout", (e, t) => {
+    }), f(this, "setTimeout", (e, t) => {
       let n = setTimeout(e, t);
       return this._timeouts.push(n), n
-    }), p(this, "removeExplosion", e => {
+    }), f(this, "removeExplosion", e => {
       let t = this.children,
         n = t.findIndex(t => {
-          if (t.type !== m) returnfalse;
+          if (t.type !== g) returnfalse;
           let n = t.props;
           return null != n.componentId && n.componentId === e
         });
       n >= 0 && t.splice(n, 1), this.forceUpdate()
-    }), p(this, "createExplosion", () => {
+    }), f(this, "createExplosion", () => {
       let e = this.children,
-        t = window.innerWidth / 2 >> 0,
-        n = window.innerHeight / 2 >> 0;
+        t = window.innerWidth / 2 | 0,
+        n = window.innerHeight / 2 | 0;
       if (this.state.explosions < 8) {
         let i = "expl-".concat(this.state.explosions);
-        e.push((0, r.jsx)(m, {
+        e.push((0, r.jsx)(g, {
           componentId: i,
-          top: a().random(n - 100, n + 100, false),
-          left: a().random(t - 200, t + 200, false),
+          top: s().random(n - 100, n + 100, false),
+          left: s().random(t - 200, t + 200, false),
           onAnimationComplete: this.removeExplosion
         }, i)), this.setTimeout(this.createExplosion, 240), this.setState({
           explosions: this.state.explosions + 1
         })
       } else this.setTimeout(this.addSymbol, 750)
-    }), p(this, "addSymbol", () => {
-      this.children = [(0, r.jsx)(g, {}, "symbol")], this.forceUpdate(), this.setTimeout(this.delayedClose, 3e3)
-    }), p(this, "delayedClose", () => {
+    }), f(this, "addSymbol", () => {
+      this.children = [(0, r.jsx)(h, {}, "symbol")], this.forceUpdate(), this.setTimeout(this.delayedClose, 3e3)
+    }), f(this, "delayedClose", () => {
       this.props.handleDemonClose()
     })
   }
 }
-let O = b
+let b = m

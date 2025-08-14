@@ -33,13 +33,13 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk689079 = require("./689079.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk74761 = require("./74761.js"),
-  Chunk387191 = require("./387191.js");
+  Chunk202874 = require("./202874.js"),
+  Chunk698342 = require("./698342.js");
 let x = 5,
   M = "placeholder",
-  j = [, , , , , ].fill(M);
+  k = [, , , , , ].fill(M);
 
-function k(e) {
+function j(e) {
   var t, n;
   let {
     context: o,
@@ -106,22 +106,22 @@ function U() {
       }
     }), []),
     o = Chunk73800.useMemo(() => (0, Chunk255367.jsxs)("div", {
-      className: Chunk387191.commandTextContainerPlaceholder,
+      className: Chunk698342.commandTextContainerPlaceholder,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk74761.textPlaceholder,
+        className: Chunk202874.textPlaceholder,
         style: exports,
         children: (0, Chunk255367.jsx)(Chunk481060.Text, {
-          className: Chunk74761.hidden,
+          className: Chunk202874.hidden,
           variant: "text-sm/semibold",
           color: "header-primary",
           lineClamp: 1,
           children: "_"
         })
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk74761.textPlaceholder,
+        className: Chunk202874.textPlaceholder,
         style: require,
         children: (0, Chunk255367.jsx)(Chunk481060.Text, {
-          className: Chunk74761.hidden,
+          className: Chunk202874.hidden,
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
@@ -130,8 +130,8 @@ function U() {
       })]
     }), [exports, require]);
   return (0, Chunk255367.jsx)("div", {
-    className: a()(Chunk387191.command, Chunk74761.loadingAnimation, {
-      [Chunk74761.noAnimation]: module
+    className: a()(Chunk698342.command, Chunk202874.loadingAnimation, {
+      [Chunk202874.noAnimation]: module
     }),
     children: Chunk120356
   })
@@ -208,7 +208,7 @@ function B(e) {
     }), (0, r.jsx)("ul", {
       className: L.commandContainer,
       "aria-label": o,
-      children: n.map((e, n) => e === M ? (0, r.jsx)(U, {}, e + n) : (0, r.jsx)(k, {
+      children: n.map((e, n) => e === M ? (0, r.jsx)(U, {}, e + n) : (0, r.jsx)(j, {
         context: t,
         command: e,
         section: i,
@@ -275,7 +275,7 @@ function Z(e) {
     }), (0, r.jsx)(B, {
       context: n,
       section: p,
-      commands: _ ? j : E,
+      commands: _ ? k : E,
       headerName: w.intl.string(w.t.DUU9Ly),
       sectionName: a,
       children: b && (0, r.jsx)(C.Z, {

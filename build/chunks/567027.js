@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => s
 });
 var Chunk665352 = require("./665352.js"),
-  Chunk205513 = require("./205513.js");
+  Chunk566162 = require("./566162.js");
 let s = new Chunk665352.Z({
   id: "hwb",
   name: "HWB",
@@ -24,7 +24,7 @@ let s = new Chunk665352.Z({
       name: "Blackness"
     }
   },
-  base: Chunk205513.Z,
+  base: Chunk566162.Z,
   fromBase(e) {
     let [t, r, a] = e;
     return [t, a * (100 - r) / 100, 100 - a]

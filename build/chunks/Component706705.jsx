@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 706705, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk775239 = require("./775239.js");
+  Chunk933767 = require("./933767.js");
 
 function l() {
   let [e, t] = Chunk73800.useState(false), [l, o] = Chunk73800.useState(20), [c, d] = Chunk73800.useState(80);

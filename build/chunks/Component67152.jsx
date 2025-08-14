@@ -1,10 +1,10 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 67152, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => D,
-  av: () => P,
-  bL: () => N,
-  kA: () => I
+  ZP: () => Z,
+  av: () => T,
+  bL: () => C,
+  kA: () => N
 }), require("./539854.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -25,7 +25,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk198139 = require("./198139.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk164332 = require("./164332.js");
+  Chunk698128 = require("./698128.js");
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -45,79 +45,7 @@ function y(e) {
   }
   return e
 }
-let C = (e, t, n, i) => {
-    let l = null != i ? o()(i).add(15, "days").toISOString() : true,
-      a = (0, h.Zo)(l, "MMM D");
-    switch (e) {
-      case v.x_.OPEN:
-        return (0, r.jsxs)(r.Fragment, {
-          children: [null != a ? _.intl.formatToPlainString(_.t.I6YOjY, {
-            payoutDate: a
-          }) : _.intl.string(_.t.G5ATX1), (0, r.jsx)(b.Z, {
-            className: O.statusScheduledIcon
-          })]
-        });
-      case v.x_.CANCELED:
-        return (0, r.jsxs)(r.Fragment, {
-          children: [_.intl.string(_.t["0SrNPz"]), (0, r.jsx)(d.k$p, {
-            size: "md",
-            color: "currentColor",
-            className: O.statusErrorIcon
-          })]
-        });
-      case v.x_.PAYOUT_DEFERRED:
-        if ((null == n ? true : n.includes(v.XL.PAYOUT_SEIZED)) === true) return (0, r.jsxs)(r.Fragment, {
-          children: [_.intl.string(_.t["0SrNPz"]), (0, r.jsx)(d.k$p, {
-            size: "md",
-            color: "currentColor",
-            className: O.statusErrorIcon
-          })]
-        });
-        return (0, r.jsxs)(r.Fragment, {
-          children: [_.intl.string(_.t.OtZ5k5), (0, r.jsx)(x.Z, {
-            className: O.statusDeferredIcon
-          })]
-        })
-    }
-    switch (t) {
-      case v.jw.MANUAL:
-      case v.jw.OPEN:
-      case v.jw.PENDING:
-      case v.jw.PROCESSING:
-      case v.jw.SUBMITTED:
-      case v.jw.PENDING_FUNDS:
-      case v.jw.CANCELED:
-      case v.jw.ERROR:
-        return (0, r.jsxs)(r.Fragment, {
-          children: [null != a ? _.intl.formatToPlainString(_.t.I6YOjY, {
-            payoutDate: a
-          }) : _.intl.string(_.t.ubdQTk), (0, r.jsx)(b.Z, {
-            className: O.statusScheduledIcon
-          })]
-        });
-      case v.jw.PAID:
-        return (0, r.jsxs)(r.Fragment, {
-          children: [_.intl.string(_.t.eoSslJ), (0, r.jsx)(d.owK, {
-            size: "md",
-            color: "currentColor",
-            className: O.statusPaidIcon
-          })]
-        });
-      case v.jw.DEFERRED:
-      case v.jw.DEFERRED_INTERNAL:
-      case v.jw.REJECTED:
-      case v.jw.RISK_REVIEW:
-        return (0, r.jsxs)(r.Fragment, {
-          children: [f.Z.getStatusErrorText(t), (0, r.jsx)(d.k$p, {
-            size: "md",
-            color: "currentColor",
-            className: O.statusErrorIcon
-          })]
-        })
-    }
-    return null
-  },
-  N = e => {
+let C = e => {
     let {
       children: t,
       className: n
@@ -127,7 +55,7 @@ let C = (e, t, n, i) => {
       children: t
     })
   },
-  I = e => {
+  N = e => {
     let {
       children: t
     } = e;
@@ -136,38 +64,38 @@ let C = (e, t, n, i) => {
       children: (0, g.T4)(null != t ? t : 0, j.pKx.USD)
     })
   },
-  E = e => {
+  I = e => {
     let {
       children: t
     } = e;
-    return (0, r.jsx)(N, {
+    return (0, r.jsx)(C, {
       className: O.statusCell,
       children: null != t ? t : "-"
     })
   },
-  S = e => {
+  E = e => {
     let {
       children: t
     } = e;
-    return (0, r.jsx)(N, {
+    return (0, r.jsx)(C, {
       className: O.periodCell,
       children: o()(t).utc().format("MMMM YYYY")
     })
   },
-  T = e => {
+  S = e => {
     var t;
     let {
       listingId: n
     } = e, i = (0, c.e7)([p.Z], () => p.Z.getSubscriptionListing(n)), l = null != (t = null == i ? true : i.name) ? t : "[".concat(_.intl.string(_.t["4tEmXV"]), "]");
-    return (0, r.jsx)(N, {
+    return (0, r.jsx)(C, {
       children: l
     })
   },
-  P = e => {
+  T = e => {
     let {
       children: t
     } = e;
-    return (0, r.jsxs)(N, {
+    return (0, r.jsxs)(C, {
       className: O.subscribersCell,
       children: [null != t ? t : "-", " ", (0, r.jsx)(d.tBG, {
         size: "md",
@@ -177,7 +105,7 @@ let C = (e, t, n, i) => {
       })]
     })
   },
-  w = () => {
+  P = () => {
     let e = (0, Chunk255367.jsx)(Chunk481060.ua7, {
       text: Chunk388032.intl.string(Chunk388032.t.q3PkLy),
       children: e => (0, r.jsx)(d.d3s, y({
@@ -190,7 +118,7 @@ let C = (e, t, n, i) => {
       children: [Chunk388032.intl.string(Chunk388032.t["/MWnxs"]), " ", module]
     })
   },
-  R = () => {
+  w = () => {
     let e = (0, Chunk255367.jsx)(Chunk481060.ua7, {
       text: Chunk388032.intl.string(Chunk388032.t.cIGvZG),
       children: e => (0, r.jsx)(d.d3s, y({
@@ -203,9 +131,9 @@ let C = (e, t, n, i) => {
       children: [Chunk388032.intl.string(Chunk388032.t.oypxx8), " ", module]
     })
   },
-  Z = [{
+  R = [{
     key: "dropdown",
-    cellClassName: Chunk164332.toggleExpandColumn,
+    cellClassName: Chunk698128.toggleExpandColumn,
     renderHeader: () => null,
     render(e, t) {
       let {
@@ -226,34 +154,34 @@ let C = (e, t, n, i) => {
     }
   }, {
     key: "period",
-    cellClassName: Chunk164332.periodColumn,
+    cellClassName: Chunk698128.periodColumn,
     renderHeader: () => Chunk388032.intl.string(Chunk388032.t.fThnXV),
     render(e, t) {
       let {
         expandedRows: n
-      } = t, i = [(0, r.jsx)(S, {
+      } = t, i = [(0, r.jsx)(E, {
         children: e.periodStartingAt
       }, e.key)];
       if (n.has(e.key))
-        for (let t in e.ppgs) i.push((0, r.jsx)(T, {
+        for (let t in e.ppgs) i.push((0, r.jsx)(S, {
           listingId: t
         }, t));
       return i
     }
   }, {
     key: "amount",
-    cellClassName: a()(Chunk164332.amountColumn, Chunk164332.cellAlignRight),
-    renderHeader: () => (0, Chunk255367.jsx)(w, {}),
+    cellClassName: a()(Chunk698128.amountColumn, Chunk698128.cellAlignRight),
+    renderHeader: () => (0, Chunk255367.jsx)(P, {}),
     render(e, t) {
       let {
         expandedRows: n
-      } = t, i = [(0, r.jsx)(I, {
+      } = t, i = [(0, r.jsx)(N, {
         children: e.amount
       }, e.key)];
       if (n.has(e.key))
         for (let t in e.ppgs) {
           let n = e.ppgs[t];
-          i.push((0, r.jsx)(I, {
+          i.push((0, r.jsx)(N, {
             children: null == n ? true : n.amount
           }, t))
         }
@@ -261,8 +189,8 @@ let C = (e, t, n, i) => {
     }
   }, {
     key: "status",
-    cellClassName: a()(Chunk164332.statusColumn, Chunk164332.cellAlignRight),
-    renderHeader: () => (0, Chunk255367.jsx)(R, {}),
+    cellClassName: a()(Chunk698128.statusColumn, Chunk698128.cellAlignRight),
+    renderHeader: () => (0, Chunk255367.jsx)(w, {}),
     render(e) {
       let {
         ppgStatus: t,
@@ -270,19 +198,90 @@ let C = (e, t, n, i) => {
         ppgDeferralReasons: i,
         periodEndDate: l
       } = (0, m.j0)(e);
-      return (0, r.jsx)(E, {
-        children: C(t, n, i, l)
+      return (0, r.jsx)(I, {
+        children: ((e, t, n, i) => {
+          let l = null != i ? o()(i).add(15, "days").toISOString() : true,
+            a = (0, h.Zo)(l, "MMM D");
+          switch (e) {
+            case v.x_.OPEN:
+              return (0, r.jsxs)(r.Fragment, {
+                children: [null != a ? _.intl.formatToPlainString(_.t.I6YOjY, {
+                  payoutDate: a
+                }) : _.intl.string(_.t.G5ATX1), (0, r.jsx)(b.Z, {
+                  className: O.statusScheduledIcon
+                })]
+              });
+            case v.x_.CANCELED:
+              return (0, r.jsxs)(r.Fragment, {
+                children: [_.intl.string(_.t["0SrNPz"]), (0, r.jsx)(d.k$p, {
+                  size: "md",
+                  color: "currentColor",
+                  className: O.statusErrorIcon
+                })]
+              });
+            case v.x_.PAYOUT_DEFERRED:
+              if ((null == n ? true : n.includes(v.XL.PAYOUT_SEIZED)) === true) return (0, r.jsxs)(r.Fragment, {
+                children: [_.intl.string(_.t["0SrNPz"]), (0, r.jsx)(d.k$p, {
+                  size: "md",
+                  color: "currentColor",
+                  className: O.statusErrorIcon
+                })]
+              });
+              return (0, r.jsxs)(r.Fragment, {
+                children: [_.intl.string(_.t.OtZ5k5), (0, r.jsx)(x.Z, {
+                  className: O.statusDeferredIcon
+                })]
+              })
+          }
+          switch (t) {
+            case v.jw.MANUAL:
+            case v.jw.OPEN:
+            case v.jw.PENDING:
+            case v.jw.PROCESSING:
+            case v.jw.SUBMITTED:
+            case v.jw.PENDING_FUNDS:
+            case v.jw.CANCELED:
+            case v.jw.ERROR:
+              return (0, r.jsxs)(r.Fragment, {
+                children: [null != a ? _.intl.formatToPlainString(_.t.I6YOjY, {
+                  payoutDate: a
+                }) : _.intl.string(_.t.ubdQTk), (0, r.jsx)(b.Z, {
+                  className: O.statusScheduledIcon
+                })]
+              });
+            case v.jw.PAID:
+              return (0, r.jsxs)(r.Fragment, {
+                children: [_.intl.string(_.t.eoSslJ), (0, r.jsx)(d.owK, {
+                  size: "md",
+                  color: "currentColor",
+                  className: O.statusPaidIcon
+                })]
+              });
+            case v.jw.DEFERRED:
+            case v.jw.DEFERRED_INTERNAL:
+            case v.jw.REJECTED:
+            case v.jw.RISK_REVIEW:
+              return (0, r.jsxs)(r.Fragment, {
+                children: [f.Z.getStatusErrorText(t), (0, r.jsx)(d.k$p, {
+                  size: "md",
+                  color: "currentColor",
+                  className: O.statusErrorIcon
+                })]
+              })
+          }
+          return null
+        })(t, n, i, l)
       })
     }
   }],
-  D = e => {
+  Z = e => {
     let {
       payoutsByPeriod: t
     } = e, [n, l] = i.useState(new Set);
     return (0, r.jsx)("div", {
       className: O.tableContainer,
       children: (0, r.jsx)(u.Z, {
-        columns: Z,
+        columns: R,
         data: t,
         className: O.table,
         rowClassName: O.row,

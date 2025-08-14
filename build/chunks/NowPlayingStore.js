@@ -1,7 +1,7 @@
 /** Chunk was on 29709 **/
 /** chunk id: 649974, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => _
 });
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -46,50 +46,50 @@ function f(e, t) {
   }), e
 }
 let g = false,
-  N = {},
-  O = {};
+  h = {},
+  m = {};
 
-function h(e) {
+function y(e) {
   let t = false;
   return e.forEach(e => {
-    t = false !== y(e) || t
+    t = false !== N(e) || t
   }), t
 }
 
-function m(e) {
-  let t = O[e];
+function O(e) {
+  let t = m[e];
   if (null == t) returnfalse;
   let n = t.gameId;
-  return null != N[n] && (N = p({}, N), delete N[n][e], 0 === Object.values(N[n]).length && delete N[n]), O = p({}, O), delete O[e], true
+  return null != h[n] && (h = p({}, h), delete h[n][e], 0 === Object.values(h[n]).length && delete h[n]), m = p({}, m), delete m[e], true
 }
 
-function y(e) {
+function N(e) {
   let {
     user: t,
     activities: n
   } = e;
   if (null == t) returnfalse;
   let i = n.filter(e => e.type !== u.IIU.CUSTOM_STATUS);
-  if (0 === i.length) return m(t.id);
+  if (0 === i.length) return O(t.id);
   let r = false;
   return i.forEach(e => {
     (function(e, t) {
       var n, i;
       let r = (0, s.Z)(e);
-      if (null == r) return m(t.id);
-      let l = O[t.id];
-      null != l && l.gameId !== r && m(t.id);
+      if (null == r) return O(t.id);
+      let l = m[t.id];
+      null != l && l.gameId !== r && O(t.id);
       let a = null != (i = null == (n = e.timestamps) ? true : n.start) ? i : Date.now(),
         o = {
           userId: t.id,
           activity: e,
           startedPlaying: a
         };
-      return N = f(p({}, N), {
-        [r]: f(p({}, N[r]), {
+      return h = f(p({}, h), {
+        [r]: f(p({}, h[r]), {
           [o.userId]: o
         })
-      }), O = f(p({}, O), {
+      }), m = f(p({}, m), {
         [o.userId]: {
           gameId: r,
           startedPlaying: o.startedPlaying
@@ -99,40 +99,40 @@ function y(e) {
   }), r
 }
 
-function S() {
+function b() {
   let e, t = false;
-  return Chunk752048.Z.shouldFetch() || g || (N = {}, O = {}, e = false, Chunk158776.Z.getUserIds().forEach(t => {
+  return Chunk752048.Z.shouldFetch() || g || (h = {}, m = {}, e = false, Chunk158776.Z.getUserIds().forEach(t => {
     let n = c.default.getUser(t);
-    null != n && (e = y({
+    null != n && (e = N({
       user: n,
       activities: o.Z.getActivities(t)
     }) || e)
   }), t = module), g = !Chunk752048.Z.shouldFetch(), exports
 }
-class E extends(i = Chunk442837.ZP.Store) {
+class v extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk752048.Z), this.syncWith([Chunk752048.Z], S)
+    this.waitFor(Chunk752048.Z), this.syncWith([Chunk752048.Z], b)
   }
   get games() {
-    return N
+    return h
   }
   get usersPlaying() {
-    return O
+    return m
   }
   get gameIds() {
-    return Object.keys(N)
+    return Object.keys(h)
   }
   getNowPlaying(e) {
-    return N[e]
+    return h[e]
   }
   getUserGame(e) {
-    return O[e]
+    return m[e]
   }
 }
-d(E, "displayName", "NowPlayingStore");
-let I = new E(Chunk570140.Z, {
+d(v, "displayName", "NowPlayingStore");
+let _ = new v(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
-    N = {}, O = {}
+    h = {}, m = {}
   },
   CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
     let {
@@ -140,22 +140,22 @@ let I = new E(Chunk570140.Z, {
       presences: n
     } = e, i = false;
     return t.forEach(e => {
-      h(e.presences) && (i = true)
-    }), h(n) && (i = true), i
+      y(e.presences) && (i = true)
+    }), y(n) && (i = true), i
   },
   LOGOUT: function() {
-    N = {}, O = {}
+    h = {}, m = {}
   },
   PRESENCE_UPDATES: function(e) {
     let {
       updates: t
     } = e;
-    return t.map(e => y(e)).some(e => e)
+    return t.map(e => N(e)).some(e => e)
   },
   PRESENCES_REPLACE: function(e) {
     let {
       presences: t
     } = e;
-    return h(t)
+    return y(t)
   }
 })

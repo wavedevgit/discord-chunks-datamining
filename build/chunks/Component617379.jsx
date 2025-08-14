@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 617379, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -43,7 +43,7 @@ function d(e, t) {
   }), e
 }
 
-function h(e) {
+function p(e) {
   let {
     channel: t
   } = e, n = i.useRef(null);
@@ -52,7 +52,7 @@ function h(e) {
     align: "right",
     animation: l.yRy.Animation.NONE,
     position: "bottom",
-    renderPopout: e => t.isThread() ? (0, r.jsx)(s.Z, d(u({}, e), {
+    renderPopout: e => t.isThread() ? (0, r.jsx)(a.Z, d(u({}, e), {
       channel: t,
       navId: "recents-thread-notifications",
       label: c.intl.string(c.t.ljs3OT)
@@ -61,7 +61,7 @@ function h(e) {
       navId: "recents-notifications",
       label: c.intl.string(c.t.ljs3OT),
       location: {
-        section: a.jXE.INBOX
+        section: s.jXE.INBOX
       },
       includeGuildMute: true
     })),

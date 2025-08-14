@@ -10,23 +10,23 @@ var Chunk255367 = require("./255367.js"),
   a = require.n(Chunk120356),
   Chunk846519 = require("./846519.js"),
   Chunk186325 = require("./186325.js"),
-  Chunk324812 = require("./324812.js");
+  Chunk840954 = require("./840954.js");
 let u = 200;
 var d = function(e) {
   return e[e.TRANSLATE = 1] = "TRANSLATE", e[e.SCALE = 2] = "SCALE", e[e.FADE = 3] = "FADE", e
 }(d || {});
 let f = Object.freeze({
-    1: Chunk324812.translate,
-    2: Chunk324812.scale,
-    3: Chunk324812.fade
+    1: Chunk840954.translate,
+    2: Chunk840954.scale,
+    3: Chunk840954.fade
   }),
   _ = Object.freeze({
-    top: Chunk324812.animatorTop,
-    bottom: Chunk324812.animatorBottom,
-    left: Chunk324812.animatorLeft,
-    right: Chunk324812.animatorRight,
-    center: Chunk324812.animatorCenter,
-    window_center: Chunk324812.animatorCenter
+    top: Chunk840954.animatorTop,
+    bottom: Chunk840954.animatorBottom,
+    left: Chunk840954.animatorLeft,
+    right: Chunk840954.animatorRight,
+    center: Chunk840954.animatorCenter,
+    window_center: Chunk840954.animatorCenter
   });
 
 function p(e) {

@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk94692 = require("./94692.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk321631 = require("./321631.js");
+  Chunk912278 = require("./912278.js");
 
 function L(t, e, s) {
   return e in t ? Object.defineProperty(t, e, {
@@ -91,7 +91,7 @@ class b extends Chunk73800.Component {
       "aria-label": Chunk388032.intl.string(Chunk388032.t.PphjtL),
       parentComponent: "ApplicationInstallationModal",
       children: [null != Chunk570140 ? (0, Chunk255367.jsx)("div", {
-        className: Chunk321631.splash,
+        className: Chunk912278.splash,
         style: {
           backgroundImage: "url(".concat(Chunk570140, ")")
         }
@@ -115,21 +115,21 @@ class b extends Chunk73800.Component {
           children: [(0, Chunk255367.jsx)(Chunk925329.Z, {
             game: module,
             size: Chunk925329.Z.Sizes.MEDIUM,
-            className: Chunk321631.gameIcon
+            className: Chunk912278.gameIcon
           }), (0, Chunk255367.jsx)("div", {
-            className: Chunk321631.gameName,
+            className: Chunk912278.gameName,
             children: null != module && module.name
           }), null != exports ? (0, Chunk255367.jsx)("div", {
-            className: Chunk321631.installSize,
+            className: Chunk912278.installSize,
             children: (0, Chunk424218.BU)(exports, {
               useKibibytes: true
             })
           }) : null]
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk321631.divider
+          className: Chunk912278.divider
         }), (0, Chunk255367.jsx)(Chunk94692.Z, {
           autoFocus: true,
-          className: Chunk321631.selector,
+          className: Chunk912278.selector,
           value: Chunk73800,
           requiredDiskKB: exports,
           onChange: this.handleChangePath
@@ -138,7 +138,7 @@ class b extends Chunk73800.Component {
           applicationName: module.name,
           disabled: Chunk442837,
           onChange: this.handlePurchaseTermsChange,
-          className: Chunk321631.terms
+          className: Chunk912278.terms
         })]
       }), (0, Chunk255367.jsx)(Chunk481060.mzw, {
         children: this.renderButton()

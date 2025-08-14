@@ -60,24 +60,24 @@ function h(e, t) {
   return l
 }
 
-function f(e) {
+function x(e) {
   var t = function(e, t) {
-    if ("object" !== x(e) || null === e) return e;
+    if ("object" !== p(e) || null === e) return e;
     var n = e[Symbol.toPrimitive];
     if (true !== n) {
       var r = n.call(e, t || "default");
-      if ("object" !== x(r)) return r;
+      if ("object" !== p(r)) return r;
       throw TypeError("@@toPrimitive must return a primitive value.")
     }
     return ("string" === t ? String : Number)(e)
   }(e, "string");
-  return "symbol" === x(t) ? t : String(t)
+  return "symbol" === p(t) ? t : String(t)
 }
 
-function x(e) {
+function p(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-let p = "UserFlowAnalyticsStore_current",
+let f = "UserFlowAnalyticsStore_current",
   g = "UserFlowAnalyticsStore";
 
 function _(e) {
@@ -95,7 +95,7 @@ let v = (0, Chunk97519.U)()((0, Chunk296574.XR)((e, t) => ({
   currentFlow: null,
   activeFlow: () => {
     var e;
-    let n = null != (e = t().currentFlow) ? e : a.K.get(p);
+    let n = null != (e = t().currentFlow) ? e : a.K.get(f);
     if (null == n) return null;
     let {
       [n]: r
@@ -109,7 +109,7 @@ function N(e, t) {
     {
       [e]: r
     } = n,
-    l = h(n, [e].map(f)),
+    l = h(n, [e].map(x)),
     a = null != r ? r : _(e);
   ((null == a ? true : a.currentStep) == null || a.currentStep !== t) && (0, i.j)(() => {
     v.setState({
@@ -139,7 +139,7 @@ function E(e, t) {
     {
       [r]: s
     } = a,
-    o = h(a, [r].map(f)),
+    o = h(a, [r].map(x)),
     d = null != s ? s : _(r);
   null != d && null != d.currentStep && d.currentStep !== t && (0, i.j)(() => {
     v.setState({
@@ -165,9 +165,9 @@ v.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : true, e => {
   if (null != e && (! function(e) {
       if (e.type === c.MK.UNKNOWN) return;
       let t = "".concat(g, "-").concat(e.type);
-      e.ended ? (a.K.remove(t), a.K.remove(p)) : (a.K.set("".concat(g, "-").concat(e.type), m(u({}, e), {
+      e.ended ? (a.K.remove(t), a.K.remove(f)) : (a.K.set("".concat(g, "-").concat(e.type), m(u({}, e), {
         version: 1
-      })), a.K.set(p, e.type))
+      })), a.K.set(f, e.type))
     }(e), o.default.track(d.rMx.NUO_TRANSITION, {
       flow_type: e.type,
       from_step: e.lastStep,

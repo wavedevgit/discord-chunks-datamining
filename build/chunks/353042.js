@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 353042, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 }), require("./539854.js"), require("./583741.js"), require("./388685.js");
 var r, Chunk73800 = require("./73800.js"),
   Chunk846519 = require("./846519.js");
@@ -14,7 +14,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s extends(r = Chunk73800.Component) {
+class a extends(r = Chunk73800.Component) {
   componentDidMount() {
     this.update(), this._interval.start(this.props.updateInterval, this.update)
   }
@@ -26,17 +26,17 @@ class s extends(r = Chunk73800.Component) {
       numUpdatesToShow: t,
       updateInterval: n,
       pointsToSmooth: r
-    } = this.props, i = Date.now(), l = 0, o = 0, s = [], a = null != e[0] ? e[0].bytes : 0;
+    } = this.props, i = Date.now(), l = 0, o = 0, a = [], s = null != e[0] ? e[0].bytes : 0;
     for (; l < t + r; l++) {
       let t, r = i - (l + 1) * n;
       for (; o < e.length;)
         if ((t = e[o]).timestamp > r) o++;
         else break;
       if (o === e.length) break;
-      null != t && (s.push(a - t.bytes), a = t.bytes)
+      null != t && (a.push(s - t.bytes), s = t.bytes)
     }
-    for (; l < t + r; l++) s.push(0);
-    return s.reverse(), s
+    for (; l < t + r; l++) a.push(0);
+    return a.reverse(), a
   }
   smoothDeltaBytes(e) {
     let {
@@ -80,9 +80,9 @@ class s extends(r = Chunk73800.Component) {
     }
   }
 }
-o(s, "defaultProps", {
+o(a, "defaultProps", {
   numUpdatesToShow: 30,
   updateInterval: 500,
   pointsToSmooth: 10
 });
-let a = s
+let s = a

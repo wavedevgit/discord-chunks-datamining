@@ -1,7 +1,7 @@
 /** Chunk was on 78223 **/
 /** chunk id: 141011, original params: e,n,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => O
 }), require("./35282.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -13,7 +13,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk302221 = require("./302221.js"),
   Chunk884697 = require("./884697.js"),
   Chunk372654 = require("./372654.js"),
-  Chunk695123 = require("./695123.js");
+  Chunk992171 = require("./992171.js");
 
 function m(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -46,43 +46,41 @@ function v(e, n) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(n, r))
   }), e
 }
-let O = e => null != e && /^http/i.test(e),
-  p = e => null != e && /^blob:https?:\/\/[^\/]+\//i.test(e),
-  f = e => {
-    let {
-      asset: n,
-      size: r = g.yV,
-      className: o,
-      style: f,
-      children: y,
-      categoryBannerOverride: j
-    } = e, h = (0, u.e7)([s.Z], () => s.Z.saturation), B = t.useMemo(() => {
-      if (null == n) return f;
-      let e = O(n) || p(n) ? n : (0, d.uV)(n, {
-          size: r,
-          format: "jpg"
-        }),
-        l = (null == j ? true : j.blur) ? {
-          filter: "blur(2px)",
-          transform: "scale(1.02)"
-        } : {};
-      if (1 === h) return m(v(m({}, f), {
-        backgroundImage: (null == j ? true : j.addGradient) ? "url(".concat(e, "), linear-gradient(180deg, rgba(0, 71, 94, 0.6) 5%, rgba(9, 33, 65, 0.6) 95%)") : "url(".concat(e, ")"),
-        backgroundBlendMode: "multiply",
-        backgroundSize: "cover",
-        backgroundPosition: "center"
-      }), l);
-      let t = (0, c.aD)(i.Z.unsafe_rawColors.BLACK_500.resolve().hex(), 1 - h);
-      return m(v(m({}, f), {
-        backgroundImage: "linear-gradient(".concat(t, ", ").concat(t, "), url(").concat(e, ")"),
-        backgroundBlendMode: "saturation",
-        backgroundSize: "cover",
-        backgroundPosition: "center"
-      }), l)
-    }, [n, r, h, f, null == j ? true : j.blur, null == j ? true : j.addGradient]);
-    return (0, l.jsx)("div", {
-      className: a()(b.banner, o),
-      style: B,
-      children: y
-    })
-  }
+let O = e => {
+  let {
+    asset: n,
+    size: r = g.yV,
+    className: o,
+    style: O,
+    children: p,
+    categoryBannerOverride: f
+  } = e, y = (0, u.e7)([s.Z], () => s.Z.saturation), j = t.useMemo(() => {
+    if (null == n) return O;
+    let e = null != n && /^http/i.test(n) || null != n && /^blob:https?:\/\/[^\/]+\//i.test(n) ? n : (0, d.uV)(n, {
+        size: r,
+        format: "jpg"
+      }),
+      l = (null == f ? true : f.blur) ? {
+        filter: "blur(2px)",
+        transform: "scale(1.02)"
+      } : {};
+    if (1 === y) return m(v(m({}, O), {
+      backgroundImage: (null == f ? true : f.addGradient) ? "url(".concat(e, "), linear-gradient(180deg, rgba(0, 71, 94, 0.6) 5%, rgba(9, 33, 65, 0.6) 95%)") : "url(".concat(e, ")"),
+      backgroundBlendMode: "multiply",
+      backgroundSize: "cover",
+      backgroundPosition: "center"
+    }), l);
+    let t = (0, c.aD)(i.Z.unsafe_rawColors.BLACK_500.resolve().hex(), 1 - y);
+    return m(v(m({}, O), {
+      backgroundImage: "linear-gradient(".concat(t, ", ").concat(t, "), url(").concat(e, ")"),
+      backgroundBlendMode: "saturation",
+      backgroundSize: "cover",
+      backgroundPosition: "center"
+    }), l)
+  }, [n, r, y, O, null == f ? true : f.blur, null == f ? true : f.addGradient]);
+  return (0, l.jsx)("div", {
+    className: a()(b.banner, o),
+    style: j,
+    children: p
+  })
+}

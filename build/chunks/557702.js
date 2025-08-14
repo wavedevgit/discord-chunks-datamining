@@ -30,8 +30,7 @@ var i = function() {
       key: "beginDrag",
       value: function() {
         var n, r = this.spec,
-          t = this.monitor,
-          o = null;
+          t = this.monitor;
         return null != (n = "object" === e(exports.item) ? exports.item : "function" == typeof exports.item ? exports.item(require) : {}) ? module : null
       }
     }, {

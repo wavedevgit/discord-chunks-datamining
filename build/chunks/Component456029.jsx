@@ -17,9 +17,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk81829 = require("./81829.jsx"),
   Chunk892689 = require("./892689.jsx"),
   Chunk477839 = require("./477839.js"),
-  Chunk603571 = require("./603571.js"),
+  Chunk511479 = require("./511479.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk180447 = require("./180447.js"),
+  Chunk228135 = require("./228135.js"),
   Chunk255785 = require("./255785.js"),
   Chunk938998 = require("./938998.js");
 
@@ -54,12 +54,6 @@ function _(e) {
   (0, d.Z)(P, A);
   let T = (0, p.eR)(N),
     L = e => {
-      var t;
-      null == (t = S.current) || t.removeDrop(e), T(), R({
-        count: A + 1
-      })
-    },
-    B = e => {
       delete w[e], E(j({}, w))
     };
   return I ? null : (0, r.jsx)(g.Z, {
@@ -89,9 +83,14 @@ function _(e) {
     children: e => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(m.Z, {
         renderedPoints: w,
-        onRemovePoint: B
+        onRemovePoint: L
       }), (0, r.jsx)(i.P3F, {
-        onClick: () => L(e),
+        onClick: () => {
+          var t;
+          null == (t = S.current) || t.removeDrop(e), T(), R({
+            count: A + 1
+          })
+        },
         className: x.clickable,
         children: (0, r.jsx)(f.Z, {
           sources: [v, O],

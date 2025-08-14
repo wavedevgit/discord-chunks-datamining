@@ -22,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk151459 = require("./151459.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk306948 = require("./306948.js");
+  Chunk10058 = require("./10058.js");
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -71,56 +71,53 @@ function S(e) {
       let e = (e, t, n) => {
           null == r.current[e] && (r.current[e] = {}), null == n ? delete r.current[e][t] : r.current[e][t] = n, 0 === Object.keys(r.current[e]).length && delete r.current[e]
         },
-        i = e => {
-          null != l.current && (window.clearTimeout(l.current), l.current = null), t(e), l.current = window.setTimeout(() => {
-            t(null), l.current = null
-          }, 1e4)
-        },
-        a = (t, n, l) => {
-          var a, o, s, c, u, d, p, h;
-          if (!g.Z.isFriend(t)) returnfalse;
-          let b = m.default.getUser(t);
-          if (null == b) returnfalse;
-          let _ = false,
-            O = null;
-          if (null != n) {
-            let i = n.type;
-            if (null != i && function(e) {
+        i = (n, i, a) => {
+          var o, s, c, u, d, p, h, b, _;
+          if (!g.Z.isFriend(n)) returnfalse;
+          let O = m.default.getUser(n);
+          if (null == O) returnfalse;
+          let y = false,
+            v = null;
+          if (null != i) {
+            let t = i.type;
+            if (null != t && function(e) {
                 let t = e.type;
                 return t === E.IIU.PLAYING && null != e.application_id || t === E.IIU.LISTENING || t === E.IIU.WATCHING
-              }(n)) {
-              let l = i === E.IIU.WATCHING || i === E.IIU.LISTENING ? "".concat(i, "-").concat(null != (c = n.name) ? c : "", "-").concat(null != (u = n.state) ? u : "", "-").concat(null != (d = n.details) ? d : "") : "".concat(i, "-").concat(null != (p = n.name) ? p : "");
-              (null == (s = r.current[t]) ? true : s.presence) !== l && (_ = true, e(t, "presence", l), O = {
-                user: b,
-                activity: n
+              }(i)) {
+              let l = t === E.IIU.WATCHING || t === E.IIU.LISTENING ? "".concat(t, "-").concat(null != (u = i.name) ? u : "", "-").concat(null != (d = i.state) ? d : "", "-").concat(null != (p = i.details) ? p : "") : "".concat(t, "-").concat(null != (h = i.name) ? h : "");
+              (null == (c = r.current[n]) ? true : c.presence) !== l && (y = true, e(n, "presence", l), v = {
+                user: O,
+                activity: i
               })
-            } else(null == (o = r.current[t]) ? true : o.presence) != null && (_ = true, e(t, "presence", null))
+            } else(null == (s = r.current[n]) ? true : s.presence) != null && (y = true, e(n, "presence", null))
           }
-          if (null != l) {
-            let n = f.Z.getChannel(l);
-            if (null != n) {
-              let i = "voice-".concat(n.id);
-              (null == (h = r.current[t]) ? true : h.voice) !== i && (_ = true, e(t, "voice", i), O = {
-                user: b,
-                voiceChannel: n
+          if (null != a) {
+            let t = f.Z.getChannel(a);
+            if (null != t) {
+              let i = "voice-".concat(t.id);
+              (null == (b = r.current[n]) ? true : b.voice) !== i && (y = true, e(n, "voice", i), v = {
+                user: O,
+                voiceChannel: t
               })
             }
-          } else(null == (a = r.current[t]) ? true : a.voice) != null && (_ = true, e(t, "voice", null));
-          return _ && null != O && i(O), _
+          } else(null == (o = r.current[n]) ? true : o.voice) != null && (y = true, e(n, "voice", null));
+          return y && null != v && (_ = v, null != l.current && (window.clearTimeout(l.current), l.current = null), t(_), l.current = window.setTimeout(() => {
+            t(null), l.current = null
+          }, 1e4)), y
         },
-        o = e => {
+        a = e => {
           for (let t of e.updates) {
             let e = t.user.id,
               n = h.Z.getPrimaryActivity(e);
-            if (a(e, n)) break
+            if (i(e, n)) break
           }
         },
-        c = e => {
+        o = e => {
           for (let t of e.voiceStates)
-            if (a(t.userId, true, t.channelId)) break
+            if (i(t.userId, true, t.channelId)) break
         };
-      return s.Z.subscribe("PRESENCE_UPDATES", o), s.Z.subscribe("VOICE_STATE_UPDATES", c), () => {
-        s.Z.unsubscribe("PRESENCE_UPDATES", o), s.Z.unsubscribe("VOICE_STATE_UPDATES", c), null != l.current && (window.clearTimeout(l.current), l.current = null)
+      return s.Z.subscribe("PRESENCE_UPDATES", a), s.Z.subscribe("VOICE_STATE_UPDATES", o), () => {
+        s.Z.unsubscribe("PRESENCE_UPDATES", a), s.Z.unsubscribe("VOICE_STATE_UPDATES", o), null != l.current && (window.clearTimeout(l.current), l.current = null)
       }
     }, [n]), e
   }(), N = i.useRef(null), T = (0, o.Yzy)(S, {

@@ -94,7 +94,7 @@ function M(e, t) {
         let t = Math.abs(e);
         return (0, n.g6)(r * (0, n.$7)(t / (400 - t), 2.380952380952381), e)
       })
-    }((0, s.Z)(b, [v, Z * a, Z * i]).map(e => +e / 1403), t.fl);
+    }((0, s.Z)(b, [v, Z * a, Z * i]).map(e => e / 1403), t.fl);
   return (0, s.Z)(f, w.map((e, r) => e * t.dRgbInv[r])).map(e => e / 100)
 }
 

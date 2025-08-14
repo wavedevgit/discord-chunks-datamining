@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 660962, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => ee
@@ -41,9 +41,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk141006 = require("./141006.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk93841 = require("./93841.js"),
-  Chunk96290 = require("./96290.js"),
-  Chunk90237 = require("./90237.js"),
+  Chunk989308 = require("./989308.js"),
+  Chunk12574 = require("./12574.js"),
+  Chunk21321 = require("./21321.js"),
   Chunk179517 = require("./179517.js"),
   Chunk79829 = require("./79829.js");
 let V = (0, Chunk663993.Un)({
@@ -81,7 +81,7 @@ function q(e) {
     selectedStyle: i,
     disabled: l,
     shouldShowUpsell: s
-  } = e, o = e => l || s && [T.g.HOLOGRAPHIC, T.g.GRADIENT].includes(e), d = (0, P.F)(U.intl.string(U.t.Mi9KbW)), f = (0, h.ZP)(), x = (0, v.oC)(n, t), y = {
+  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9KbW)), d = (0, h.ZP)(), f = (0, v.oC)(n, t), x = {
     dark: {
       src: z,
       name: t.name
@@ -112,33 +112,33 @@ function q(e) {
       className: F.roleStyleContainer,
       children: L.pM.map(e => {
         let {
-          id: l,
-          colors: s,
-          labelString: u
+          id: u,
+          colors: p,
+          labelString: h
         } = e;
         return (0, r.jsxs)("button", {
           className: a()(F.roleStylePreviewContainer, {
-            [F.selected]: i === l,
-            [F.disabled]: o(l)
+            [F.selected]: i === u,
+            [F.disabled]: l || s && [T.g.HOLOGRAPHIC, T.g.GRADIENT].includes(u)
           }),
           onClick: () => {
-            (0, S.Jf)(t.id, l)
+            (0, S.Jf)(t.id, u)
           },
           children: [(0, r.jsx)(g.Rny, {
             children: (0, r.jsx)("div", {
               className: F.roleStyleMessageContainer,
               children: (0, r.jsx)(_.Z, {
                 author: {
-                  nick: d.author.username,
+                  nick: o.author.username,
                   guildId: n,
-                  authorId: d.author.id,
+                  authorId: o.author.id,
                   colorRoleId: t.id,
-                  colorStrings: (0, O.DX)(s),
-                  colorString: (0, c.Rf)(s.primary_color)
+                  colorStrings: (0, O.DX)(p),
+                  colorString: (0, c.Rf)(p.primary_color)
                 },
-                message: d,
+                message: o,
                 preview: true,
-                roleIcon: null != x ? x : (0, m.ap)(f) ? y.light : y.dark,
+                roleIcon: null != f ? f : (0, m.ap)(d) ? x.light : x.dark,
                 isGroupStart: true,
                 disableInteraction: true,
                 previewGuildId: n
@@ -146,9 +146,9 @@ function q(e) {
             })
           }), (0, r.jsx)("div", {
             className: F.roleStyleLabel,
-            children: U.intl.string(u)
+            children: U.intl.string(h)
           })]
-        }, l)
+        }, u)
       })
     }), s && (0, r.jsxs)("div", {
       className: F.roleStyleUpsell,
@@ -209,8 +209,8 @@ function X() {
       return e
     }({}, exports),
     className: require,
-    "data-text": Chunk388032.intl.string(Chunk93841.default["+/IHLi"]),
-    children: Chunk388032.intl.string(Chunk93841.default["+/IHLi"])
+    "data-text": Chunk388032.intl.string(Chunk989308.default["+/IHLi"]),
+    children: Chunk388032.intl.string(Chunk989308.default["+/IHLi"])
   })
 }
 

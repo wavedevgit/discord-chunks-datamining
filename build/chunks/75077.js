@@ -1,10 +1,10 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 75077, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZM: () => p,
+  ZM: () => m,
   gx: () => u,
-  mN: () => h,
-  re: () => g
+  mN: () => g,
+  re: () => p
 }), require("./539854.js");
 var Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
@@ -16,39 +16,6 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 let u = (e, t, n) => (0, r.wj)(e) ? t : n,
   m = e => {
-    let {
-      cards: t,
-      perksCards: n,
-      showVoiceFiltersCard: i
-    } = e, r = e => {
-      let {
-        card: n
-      } = e;
-      t.length < 3 && t.push(n)
-    }, s = f();
-    return r(i ? {
-      card: n.voiceFilters
-    } : {
-      card: n.nameplates
-    }), null != n.tenureBadge && r({
-      card: n.tenureBadge
-    }), r({
-      card: n.permadecos
-    }), s ? 0 === t.length && r({
-      card: n.specialShopPerks
-    }) : r({
-      card: n.referralProgram
-    }), r({
-      card: n.newAppStylesUpdateJune2024
-    }), r({
-      card: n.serverProfiles
-    }), r({
-      card: n.earlyAccess
-    }), r({
-      card: n.unlimitedSuperReactions
-    }), t
-  },
-  p = e => {
     let {
       perksCards: t,
       variant: n,
@@ -63,7 +30,39 @@ let u = (e, t, n) => (0, r.wj)(e) ? t : n,
         d = false === r ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : s === c.a$.FP_ONLY ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
         break;
       case o.gM.WHATS_NEW:
-        d = m({
+        d = (e => {
+          let {
+            cards: t,
+            perksCards: n,
+            showVoiceFiltersCard: i
+          } = e, r = e => {
+            let {
+              card: n
+            } = e;
+            t.length < 3 && t.push(n)
+          }, s = h();
+          return r(i ? {
+            card: n.voiceFilters
+          } : {
+            card: n.nameplates
+          }), null != n.tenureBadge && r({
+            card: n.tenureBadge
+          }), r({
+            card: n.permadecos
+          }), s ? 0 === t.length && r({
+            card: n.specialShopPerks
+          }) : r({
+            card: n.referralProgram
+          }), r({
+            card: n.newAppStylesUpdateJune2024
+          }), r({
+            card: n.serverProfiles
+          }), r({
+            card: n.earlyAccess
+          }), r({
+            card: n.unlimitedSuperReactions
+          }), t
+        })({
           cards: d,
           perksCards: t,
           showVoiceFiltersCard: l
@@ -80,7 +79,7 @@ let u = (e, t, n) => (0, r.wj)(e) ? t : n,
     }
     return i && (d = d.filter(e => !e.hideOnNarrowScreen)), d
   },
-  g = e => {
+  p = e => {
     let t = (0, i.e7)([a.Z], () => a.Z.getPremiumTypeSubscription()),
       n = null != t ? l.ZP.getPremiumPlanItem(t) : null,
       r = (null != n ? l.ZP.getSkuIdForPlan(n.planId) : null) === c.Si.TIER_2;
@@ -95,11 +94,11 @@ let u = (e, t, n) => (0, r.wj)(e) ? t : n,
       subtitle: d.intl.string(d.t["5TFEXl"])
     }
   },
-  h = () => {
+  g = () => {
     let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
     return (0, Chunk74538.I5)(module)
   },
-  f = () => {
+  h = () => {
     let e = Chunk594174.default.getCurrentUser();
     return (0, Chunk74538.M5)(module, Chunk474936.p9.TIER_2)
   }

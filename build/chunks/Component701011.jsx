@@ -17,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk781780 = require("./781780.jsx"),
   Chunk325749 = require("./325749.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk599642 = require("./599642.js");
+  Chunk427509 = require("./427509.js");
 
 function O() {
   let {
@@ -45,21 +45,21 @@ function O() {
     }),
     x = (0, Chunk426419.P)();
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk599642.container,
+    className: Chunk427509.container,
     children: null == module || null == P ? (0, Chunk255367.jsx)(Chunk481060.$jN, {
-      className: Chunk599642.iframe
+      className: Chunk427509.iframe
     }) : (0, Chunk255367.jsx)("div", {
-      className: Chunk599642.loadedContentContainer,
+      className: Chunk427509.loadedContentContainer,
       children: (0, Chunk255367.jsxs)("div", {
-        className: Chunk599642.iframeAndHeaderContainer,
+        className: Chunk427509.iframeAndHeaderContainer,
         children: [(0, Chunk255367.jsx)("div", {
-          className: Chunk599642.headerContainer,
+          className: Chunk427509.headerContainer,
           children: (0, Chunk255367.jsx)(Chunk325749.Z, {
             applicationId: P.id,
             channelId: exports
           })
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk599642.iframeContainer,
+          className: Chunk427509.iframeContainer,
           children: (0, Chunk255367.jsx)(Chunk781780.Z, {
             channelId: exports,
             guildId: require,

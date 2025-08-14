@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 237245, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   w: () => E
@@ -163,31 +163,6 @@ function I(e) {
     }
   }, [l, L, I, f, M, U, S, G, x, E]), F = i.useCallback(() => {
     var e;
-    let t = e => {
-        if (l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED) return void(0, a.ZDy)(async () => {
-          let {
-            default: t
-          } = await n.e("67376").then(n.bind(n, 207252));
-          return n => (0, r.jsx)(t, N(C({}, n), {
-            guildId: T,
-            onConfirm: e
-          }))
-        });
-        e()
-      },
-      i = e => {
-        if (D && A > 0 && l.joinType !== j.A.APPLY) return void(0, a.ZDy)(async () => {
-          let {
-            default: t
-          } = await n.e("55009").then(n.bind(n, 826390));
-          return n => (0, r.jsx)(t, N(C({}, n), {
-            guildId: T,
-            submittedGuildJoinRequestsCount: A,
-            onConfirm: e
-          }))
-        });
-        e()
-      };
     if (l.joinType === j.A.INVITE || l.joinType === j.A.DISCOVERABLE) {
       let {
         requireTerms: e,
@@ -196,7 +171,30 @@ function I(e) {
       if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void Z(y.intl.string(y.t.TCHkcX))
     }
     if (l.joinType === j.A.APPLY && !(null == (e = l.pendingVerificationFields) ? true : e.some(e => (0, m._C)(e)))) return void Z(y.intl.string(y.t.HGVrIy));
-    i(e => t(() => B(e)))
+    (e => {
+      if (D && A > 0 && l.joinType !== j.A.APPLY) return (0, a.ZDy)(async () => {
+        let {
+          default: t
+        } = await n.e("55009").then(n.bind(n, 826390));
+        return n => (0, r.jsx)(t, N(C({}, n), {
+          guildId: T,
+          submittedGuildJoinRequestsCount: A,
+          onConfirm: e
+        }))
+      });
+      e()
+    })(e => (e => {
+      if (l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED) return void(0, a.ZDy)(async () => {
+        let {
+          default: t
+        } = await n.e("67376").then(n.bind(n, 207252));
+        return n => (0, r.jsx)(t, N(C({}, n), {
+          guildId: T,
+          onConfirm: e
+        }))
+      });
+      e()
+    })(() => B(e)))
   }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED, z = null != I.description && E.primaryCategoryId !== O.o3 && E.keywords.length > 0;
   return (0, r.jsx)(s.Z, {
     message: H ? y.intl.string(y.t.V2G2Ym) : true,

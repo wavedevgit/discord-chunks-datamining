@@ -29,7 +29,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk895383 = require("./895383.js");
+  Chunk353441 = require("./353441.js");
 
 function E(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -193,25 +193,8 @@ function G(e) {
     et(n), er(e)
   }, []), ef = i.useCallback(() => null != ea ? ea : null, [ea, el])(), eb = i.useCallback(e => {
     null != e && ej(e, null)
-  }, [ej]), ey = e => n => {
-    var l, t;
-    let {
-      emoji: i,
-      willClose: a
-    } = n;
-    if (null == i) return;
-    let r = null;
-    ej(null, null == i.id ? {
-      id: null,
-      name: null != (l = i.optionallyDiverseSequence) ? l : "",
-      animated: false
-    } : {
-      id: i.id,
-      name: null != (t = i.originalName) ? t : i.name,
-      animated: i.animated
-    }), a && e()
-  }, eC = null;
-  eC = null != ef ? (0, t.jsxs)(t.Fragment, {
+  }, [ej]), ey = null;
+  ey = null != ef ? (0, t.jsxs)(t.Fragment, {
     children: [(0, t.jsx)("img", {
       src: ef,
       alt: "",
@@ -242,7 +225,7 @@ function G(e) {
     size: "md",
     color: "currentColor"
   });
-  let eI = i.useMemo(() => [{
+  let eC = i.useMemo(() => [{
     text: _.intl.string(_.t["ETE/oK"]),
     onClick: D,
     variant: "secondary"
@@ -329,15 +312,30 @@ function G(e) {
                   targetElementRef: H,
                   position: "top",
                   renderPopout: e => {
-                    let {
-                      closePopout: l
+                    let l, {
+                      closePopout: i
                     } = e;
                     return (0, t.jsx)(v.Z, {
                       closePopout: () => {
-                        l(), n()
+                        i(), n()
                       },
-                      onSelectEmoji: ey(() => {
-                        l(), n()
+                      onSelectEmoji: (l = () => {
+                        i(), n()
+                      }, e => {
+                        var n, t;
+                        let {
+                          emoji: i,
+                          willClose: a
+                        } = e;
+                        if (null != i) ej(null, null == i.id ? {
+                          id: null,
+                          name: null != (n = i.optionallyDiverseSequence) ? n : "",
+                          animated: false
+                        } : {
+                          id: i.id,
+                          name: null != (t = i.originalName) ? t : i.name,
+                          animated: i.animated
+                        }), a && l()
                       }),
                       pickerIntention: T.Hz.COMMUNITY_CONTENT,
                       channel: X
@@ -379,7 +377,7 @@ function G(e) {
             children: e => (0, t.jsx)("div", P(E({}, e), {
               className: k.iconUpload,
               ref: F,
-              children: eC
+              children: ey
             }))
           })
         })]
@@ -406,7 +404,7 @@ function G(e) {
         }, e)) : null]
       })]
     }), (0, t.jsx)(c.G, {
-      actions: eI,
+      actions: eC,
       leading: null != A ? (0, t.jsx)(d.Avr, {
         text: _.intl.string(_.t.N86XcH),
         onClick: em,

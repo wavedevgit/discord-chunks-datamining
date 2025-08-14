@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 594496, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -31,7 +31,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk430131 = require("./430131.jsx"),
   Chunk291334 = require("./291334.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk471166 = require("./471166.js");
+  Chunk737788 = require("./737788.js");
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -75,8 +75,8 @@ function D(e) {
     return s()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
   }), {
     pendingAvatar: L,
-    pendingNickname: M,
-    pendingBanner: B,
+    pendingNickname: B,
+    pendingBanner: M,
     pendingBio: U,
     pendingPronouns: V,
     pendingThemeColors: G,
@@ -111,7 +111,7 @@ function D(e) {
     q = (0, a.e7)([_.Z], () => _.Z.getGuildMemberProfile(k.id, W.id)),
     X = C.ZP.canUsePremiumProfileCustomization(k),
     J = (0, c.gd)(L, null == K ? true : K.avatar),
-    Q = (0, c.f$)(B, null == q ? true : q.banner),
+    Q = (0, c.f$)(M, null == q ? true : q.banner),
     $ = (0, T.p)(G, null == q ? true : q.themeColors),
     ee = null != (t = null == q ? true : q.bio) ? t : "",
     et = null != (n = null == q ? true : q.pronouns) ? n : "",
@@ -123,7 +123,7 @@ function D(e) {
     children: [(0, i.jsx)(I.Z, {
       errors: null != (r = null == F ? true : F.nick) ? r : null == Y ? true : Y.nick,
       username: O.ZP.getName(k),
-      pendingNick: M,
+      pendingNick: B,
       currentNick: null == K ? true : K.nick,
       guild: W
     }, "nick"), (0, i.jsx)(b.Z, {

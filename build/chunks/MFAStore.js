@@ -1,83 +1,82 @@
-/** Chunk was on 77720 **/
+/** Chunk was on 82411 **/
 /** chunk id: 325067, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => S
 });
-var r, o, i, Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
+var r, o, Chunk392711 = require("./392711.js"),
+  a = require.n(Chunk392711),
   Chunk213919 = require("./213919.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let u = false,
-  p = [],
-  h = "",
-  f = false,
-  _ = {
+let d = false,
+  u = [],
+  p = "",
+  h = false,
+  f = {
     viewNonce: "",
     regenerateNonce: ""
   };
-class S extends(i = Chunk442837.ZP.Store) {
+class _ extends(o = Chunk442837.ZP.Store) {
   getVerificationKey() {
-    return h
-  }
-  getBackupCodes() {
     return p
   }
-  get togglingSMS() {
+  getBackupCodes() {
     return u
   }
-  getNonces() {
-    return _
+  get togglingSMS() {
+    return d
   }
-  get hasSeenBackupPrompt() {
+  getNonces() {
     return f
   }
-}
-o = "MFAStore", (r = "displayName") in S ? Object.defineProperty(S, r, {
-  value: o,
+  get hasSeenBackupPrompt() {
+    return h
+  }
+}(r = "displayName") in _ ? Object.defineProperty(_, r, {
+  value: "MFAStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : S[r] = o;
-let m = new S(Chunk570140.Z, {
+}) : _[r] = "MFAStore";
+let S = new _(Chunk570140.Z, {
   MFA_ENABLE_SUCCESS: function(e) {
     let {
       token: t,
       codes: n
     } = e;
-    true !== t && l.setToken(t), p = n
+    true !== t && s.setToken(t), u = n
   },
   MFA_DISABLE_SUCCESS: function(e) {
     let {
       token: t
     } = e;
-    l.setToken(t)
+    s.setToken(t)
   },
   MFA_SMS_TOGGLE: function() {
-    u = true
+    d = true
   },
   MFA_SMS_TOGGLE_COMPLETE: function() {
-    u = false
+    d = false
   },
   MFA_CLEAR_BACKUP_CODES: function() {
-    p = []
+    u = []
   },
   MFA_VIEW_BACKUP_CODES: function(e) {
     let {
       codes: t,
       key: n
     } = e;
-    p = s().sortBy(t, "code"), h = n
+    u = a().sortBy(t, "code"), p = n
   },
   MFA_SEND_VERIFICATION_KEY: function(e) {
     let {
       nonces: t
     } = e;
-    _ = t
+    f = t
   },
   MFA_SEEN_BACKUP_CODE_PROMPT: function() {
-    f = true
+    h = true
   },
   CONNECTION_OPEN: () => {}
 })

@@ -53,8 +53,8 @@ function w(t, e) {
   let a = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3];
   if (null != t.flags && (0, y.yE)(t.flags, R.iLy.SUPPRESS_NOTIFICATIONS)) returnfalse;
-  let o = N.Z.getChannel(e);
-  t.type === R.uaV.THREAD_STARTER_MESSAGE && (o = N.Z.getChannel(null == o ? true : o.parent_id));
+  let o = T.Z.getChannel(e);
+  t.type === R.uaV.THREAD_STARTER_MESSAGE && (o = T.Z.getChannel(null == o ? true : o.parent_id));
   let s = m.default.getCurrentUser(),
     d = m.default.getUser(null == (n = t.author) ? true : n.id);
   if (null == o || null == s || null == d || o.type === R.d4z.GROUP_DM && t.type === R.uaV.RECIPIENT_REMOVE || U.Z.areSlayerNotificationsSuppressed() && ((l = o).type === R.d4z.DM || null != l.linkedLobby) || !L(s, d, o, {
@@ -63,7 +63,7 @@ function w(t, e) {
     }) || u.Z.isMessageRequest(e)) returnfalse;
   if (!a) {
     let t = C.Z.getChannelId(Z.Z.getGuildId());
-    if (t === o.id || T.ZP.getCurrentSidebarChannelId(t) === o.id) returnfalse
+    if (t === o.id || N.ZP.getCurrentSidebarChannelId(t) === o.id) returnfalse
   }
   if (h.Z.isBlockedOrIgnoredForMessage(t) || true !== t.activity_instance && null != t.interaction && t.interaction.user.id === s.id) returnfalse;
   if (null != t.application_id) {
@@ -97,8 +97,8 @@ function w(t, e) {
 function M(t, e) {
   var n;
   if (C.Z.getChannelId(Z.Z.getGuildId()) !== e) returnfalse;
-  let i = N.Z.getChannel(e);
-  t.type === R.uaV.THREAD_STARTER_MESSAGE && (i = N.Z.getChannel(null == i ? true : i.parent_id));
+  let i = T.Z.getChannel(e);
+  t.type === R.uaV.THREAD_STARTER_MESSAGE && (i = T.Z.getChannel(null == i ? true : i.parent_id));
   let l = m.default.getCurrentUser(),
     a = m.default.getUser(null == (n = t.author) ? true : n.id);
   return !(null == i || null == l || null == a || i.isManaged() || a.hasFlag(R.xW$.SPAMMER) || h.Z.isBlockedOrIgnoredForMessage(t) || a.id === l.id || A.Z.getStatus() === R.Skl.DND || E.QZ.getSetting() || v.ZP.allowNoMessages(i)) && t.type !== R.uaV.CHAT_WALLPAPER_SET && t.type !== R.uaV.CHAT_WALLPAPER_REMOVED
@@ -139,8 +139,8 @@ function H(t, e, n) {
     case R.d4z.ANNOUNCEMENT_THREAD:
     case R.d4z.PUBLIC_THREAD:
     case R.d4z.PRIVATE_THREAD:
-      let c = N.Z.getChannel(t.parent_id);
-      e.type === R.uaV.THREAD_STARTER_MESSAGE && null != c ? u = V(u, c, N.Z.getChannel(c.parent_id)) : (0, f.Z)(e) ? null != S.Z.getGuild(t.getGuildId()) && (u = V(u, t, c)) : u = V(u, t, c);
+      let c = T.Z.getChannel(t.parent_id);
+      e.type === R.uaV.THREAD_STARTER_MESSAGE && null != c ? u = V(u, c, T.Z.getChannel(c.parent_id)) : (0, f.Z)(e) ? null != S.Z.getGuild(t.getGuildId()) && (u = V(u, t, c)) : u = V(u, t, c);
       break;
     case R.d4z.GROUP_DM:
       t.isManaged() && n.bot && u === (0, l.F6)(t, m.default, h.Z) || (u = "".concat(u, " (").concat((0, l.F6)(t, m.default, h.Z, true), ")"))
@@ -173,8 +173,8 @@ function H(t, e, n) {
     question: e.poll.question.text
   });
   else if (e.type === R.uaV.POLL_RESULT) {
-    var E, p, T;
-    let t = null == (T = e.embeds) || null == (p = T[0]) || null == (E = p.fields) ? true : E.find(t => ("name" in t ? t.name : t.rawName) === "poll_question_text"),
+    var E, p, N;
+    let t = null == (N = e.embeds) || null == (p = N[0]) || null == (E = p.fields) ? true : E.find(t => ("name" in t ? t.name : t.rawName) === "poll_question_text"),
       n = null != t ? "value" in t ? t.value : t.rawValue : "";
     i = k.intl.formatToPlainString(k.t["9WrecH"], {
       question: n

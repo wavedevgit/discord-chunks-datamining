@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 98493, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => d,
@@ -17,19 +17,19 @@ function d(e) {
   let {
     guildId: t,
     guildJoinRequests: n
-  } = e, i = r.useRef(false), [d, h] = r.useState(null), p = r.useRef(null), f = r.useRef(false);
+  } = e, i = r.useRef(false), [d, p] = r.useState(null), f = r.useRef(null), h = r.useRef(false);
   return {
     fetchNextPage: r.useCallback(async (e, r) => {
       if (i.current) return;
       let g = "".concat(e, "-").concat(r),
         m = false;
-      if (g !== p.current && (p.current = g, f.current = false, m = true), f.current) return;
-      null != d && h(null);
+      if (g !== f.current && (f.current = g, h.current = false, m = true), h.current) return;
+      null != d && p(null);
       let b = function(e, t, n, r) {
         let i = n === c.wB.SUBMITTED;
         if (t === c.Nw.TIMESTAMP_DESC)
           if (r) return {
-            before: s.default.fromTimestamp(new Date().getTime())
+            before: a.default.fromTimestamp(new Date().getTime())
           };
           else {
             let t = e[e.length - 1];
@@ -37,7 +37,7 @@ function d(e) {
               before: i ? t.joinRequestId : t.actionedAt
             }
           } if (r) return {
-          after: s.default.fromTimestamp(l()().subtract(180, "days").valueOf())
+          after: a.default.fromTimestamp(l()().subtract(180, "days").valueOf())
         };
         {
           let t = e[e.length - 1];
@@ -48,7 +48,7 @@ function d(e) {
       }(n, e, r, m);
       try {
         i.current = true;
-        let e = await a.Z.fetchGuildJoinRequests(function(e) {
+        let e = await s.Z.fetchGuildJoinRequests(function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -75,10 +75,10 @@ function d(e) {
           let {
             guild_join_requests: t
           } = e.body;
-          t.length < u && (f.current = true)
+          t.length < u && (h.current = true)
         }
       } catch (e) {
-        h(new o.Hx(e).getAnyErrorMessage())
+        p(new o.Hx(e).getAnyErrorMessage())
       } finally {
         i.current = false
       }

@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 301342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => w,
@@ -28,9 +28,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk438144 = require("./438144.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk542636 = require("./542636.js");
+  Chunk84688 = require("./84688.js");
 
-function S(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function S(e) {
   return e
 }
 
-function x(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,35 +62,35 @@ function x(e, t) {
   }), e
 }
 
-function I(e) {
+function P(e) {
   e.stopPropagation()
 }
-let P = Chunk73800.memo(function(e) {
+let I = Chunk73800.memo(function(e) {
     let t, {
         channel: l,
-        connectChannelDragSource: p,
+        connectChannelDragSource: f,
         connectChannelDropTarget: y,
-        disableManageChannels: C,
-        position: P,
+        disableManageChannels: v,
+        position: I,
         sortingPosition: N,
         hideIcon: w,
         children: Z
       } = e,
-      T = (0, a.e7)([_.ZP], () => _.ZP.isChannelMuted(l.getGuildId(), l.id)),
-      A = (0, a.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
-      R = (0, a.e7)([O.Z], () => O.Z.can(v.Plq.MANAGE_CHANNELS, l));
-    t = null != N ? P > N ? E.containerDragAfter : E.containerDragBefore : E.containerDefault;
+      T = (0, s.e7)([_.ZP], () => _.ZP.isChannelMuted(l.getGuildId(), l.id)),
+      A = (0, s.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
+      R = (0, s.e7)([O.Z], () => O.Z.can(j.Plq.MANAGE_CHANNELS, l));
+    t = null != N ? I > N ? E.containerDragAfter : E.containerDragBefore : E.containerDefault;
     let D = i.useCallback(() => {
         A ? (0, d.mJ)(l.id) : (0, d.c4)(l.id)
       }, [l.id, A]),
       L = i.useCallback(e => {
         if ("null" !== l.id) {
           let t = b.Z.getGuild(l.getGuildId());
-          null != t && (0, h.jW)(e, async () => {
+          null != t && (0, p.jW)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("8965"), n.e("14280")]).then(n.bind(n, 139035));
-            return n => (0, r.jsx)(e, x(S({}, n), {
+            return n => (0, r.jsx)(e, S(x({}, n), {
               channel: l,
               guild: t
             }))
@@ -98,20 +98,20 @@ let P = Chunk73800.memo(function(e) {
         }
       }, [l]),
       M = i.useCallback(() => {
-        let e = l.type === v.d4z.GUILD_CATEGORY ? null : l.type,
+        let e = l.type === j.d4z.GUILD_CATEGORY ? null : l.type,
           t = l.getGuildId();
         null != t && (0, u.ZDy)(async () => {
           let {
             default: i
-          } = await Promise.all([n.e("45094"), n.e("78626")]).then(n.bind(n, 218613));
-          return n => (0, r.jsx)(i, x(S({}, n), {
+          } = await Promise.all([n.e("45094"), n.e("67133")]).then(n.bind(n, 218613));
+          return n => (0, r.jsx)(i, S(x({}, n), {
             channelType: e,
             guildId: t,
             categoryId: "null" !== l.id ? l.id : null
           }))
         })
       }, [l]),
-      k = (0, s.JA)(l.id),
+      k = (0, a.JA)(l.id),
       {
         role: U,
         tabIndex: G
@@ -151,20 +151,20 @@ let P = Chunk73800.memo(function(e) {
               [E.clickable]: true
             }),
             onContextMenu: L,
-            children: [(0, r.jsxs)(u.P3F, x(S({
+            children: [(0, r.jsxs)(u.P3F, S(x({
               innerRef: V,
               className: E.mainContent,
               tabIndex: G
             }, B), {
               onClick: D,
-              "aria-label": j.intl.formatToPlainString(j.t.y5l3Jy, {
+              "aria-label": C.intl.formatToPlainString(C.t.y5l3Jy, {
                 categoryName: l.name
               }),
               "aria-expanded": !A,
               focusProps: {
                 enabled: false
               },
-              children: [(0, r.jsx)(f.Z, {
+              children: [(0, r.jsx)(h.Z, {
                 className: E.name,
                 children: (0, r.jsx)(g.Z, {
                   children: l.name
@@ -175,17 +175,17 @@ let P = Chunk73800.memo(function(e) {
                 className: E.icon
               })]
             })), (0, r.jsx)("div", {
-              onClick: I,
+              onClick: P,
               className: E.children,
-              children: R && !C ? (0, r.jsx)(u.ua7, {
-                text: j.intl.string(j.t["fUYU+v"]),
+              children: R && !v ? (0, r.jsx)(u.ua7, {
+                text: C.intl.string(C.t["fUYU+v"]),
                 children: e => {
                   let {
                     onMouseEnter: t,
                     onMouseLeave: n
                   } = e;
                   return (0, r.jsx)(c.zx, {
-                    "aria-label": j.intl.string(j.t["fUYU+v"]),
+                    "aria-label": C.intl.string(C.t["fUYU+v"]),
                     look: c.zx.Looks.BLANK,
                     size: c.zx.Sizes.NONE,
                     className: o()(E.addButton, E.forceVisible),
@@ -213,9 +213,9 @@ let P = Chunk73800.memo(function(e) {
           })
         }), Z]
       });
-    return null != y && null != p ? y(p(H)) : H
+    return null != y && null != f ? y(f(H)) : H
   }),
-  N = (0, Chunk146773.B)(P),
+  N = (0, Chunk146773.B)(I),
   w = Chunk73800.memo(function(e) {
     let {
       name: t,
@@ -228,14 +228,14 @@ let P = Chunk73800.memo(function(e) {
         className: o()(E.iconVisibility, E.wrapperStatic),
         children: [(0, r.jsx)("div", {
           className: E.mainContent,
-          children: (0, r.jsx)(f.Z, {
+          children: (0, r.jsx)(h.Z, {
             className: E.name,
             children: (0, r.jsx)(g.Z, {
               children: t
             })
           })
         }), null != n ? (0, r.jsx)(u.DY3, {
-          text: j.intl.string(j.t["5qNmsb"]),
+          text: C.intl.string(C.t["5qNmsb"]),
           className: E.dismissWrapper,
           children: (0, r.jsx)(u.P3F, {
             className: E.dismissButton,
@@ -253,8 +253,8 @@ let P = Chunk73800.memo(function(e) {
   Z = Chunk73800.memo(function(e) {
     let {
       category: t
-    } = e, n = (0, a.e7)([y.Z], () => y.Z.isVoiceCategoryCollapsed(t.guild.id)), l = i.useCallback(() => {
-      n ? (0, C.s)(t.guild.id) : (0, C.M)(t.guild.id)
+    } = e, n = (0, s.e7)([y.Z], () => y.Z.isVoiceCategoryCollapsed(t.guild.id)), l = i.useCallback(() => {
+      n ? (0, v.s)(t.guild.id) : (0, v.M)(t.guild.id)
     }, [t.guild.id, n]);
     return (0, r.jsxs)(c.zx, {
       look: c.zx.Looks.FILLED,
@@ -268,7 +268,7 @@ let P = Chunk73800.memo(function(e) {
         className: E.voiceChannelsToggleIcon
       }), (0, r.jsx)(u.Text, {
         variant: "text-sm/medium",
-        children: n ? j.intl.string(j.t["/eB9Bg"]) : j.intl.string(j.t.Q2gPWl)
+        children: n ? C.intl.string(C.t["/eB9Bg"]) : C.intl.string(C.t.Q2gPWl)
       })]
     })
   }),
@@ -276,15 +276,15 @@ let P = Chunk73800.memo(function(e) {
     let {
       category: t,
       channel: n
-    } = e, i = (0, a.e7)([y.Z], () => y.Z.isVoiceCategoryCollapsed(t.guild.id));
-    return i || null == n || n.record.type === v.d4z.GUILD_CATEGORY ? i ? (0, r.jsx)("li", {
+    } = e, i = (0, s.e7)([y.Z], () => y.Z.isVoiceCategoryCollapsed(t.guild.id));
+    return i || null == n || n.record.type === j.d4z.GUILD_CATEGORY ? i ? (0, r.jsx)("li", {
       className: E.containerDefault,
       children: (0, r.jsx)("div", {
         className: o()(E.iconVisibility, E.wrapperStatic),
-        children: (0, r.jsx)(f.Z, {
+        children: (0, r.jsx)(h.Z, {
           className: E.name,
           children: (0, r.jsx)(g.Z, {
-            children: j.intl.string(j.t["V/u9Dw"])
+            children: C.intl.string(C.t["V/u9Dw"])
           })
         })
       })
@@ -302,7 +302,7 @@ let P = Chunk73800.memo(function(e) {
       className: E.containerDefault,
       children: (0, r.jsx)("div", {
         className: o()(E.iconVisibility, E.wrapperStatic),
-        children: (0, r.jsx)(f.Z, {
+        children: (0, r.jsx)(h.Z, {
           className: E.name,
           children: (0, r.jsx)(g.Z, {
             children: t.name

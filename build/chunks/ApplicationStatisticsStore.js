@@ -2,16 +2,16 @@
 /** chunk id: 525395, original params: e,t,n (module,exports,require) **/
 let r, i, l;
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./388685.js");
-var a, o, s, Chunk442837 = require("./442837.js"),
+var a, o, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function d() {
+function u() {
   i = {}, r = {}, l = new Set
 }
-d();
-class p extends(a = Chunk442837.ZP.Store) {
+u();
+class d extends(a = Chunk442837.ZP.Store) {
   getStatisticsForApplication(e) {
     return r[e]
   }
@@ -19,14 +19,13 @@ class p extends(a = Chunk442837.ZP.Store) {
     let t = i[e];
     return !l.has(e) && (null == t || Date.now() - t > 36e5)
   }
-}
-s = "ApplicationStatisticsStore", (o = "displayName") in p ? Object.defineProperty(p, o, {
-  value: s,
+}(o = "displayName") in d ? Object.defineProperty(d, o, {
+  value: "ApplicationStatisticsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : p[o] = s;
-let f = new p(Chunk570140.Z, {
+}) : d[o] = "ApplicationStatisticsStore";
+let p = new d(Chunk570140.Z, {
   APPLICATION_ACTIVITY_STATISTICS_FETCH_START: function(e) {
     let {
       applicationId: t
@@ -46,5 +45,5 @@ let f = new p(Chunk570140.Z, {
     } = e;
     i[n] = Date.now(), l.delete(n), r[n] = t
   },
-  LOGOUT: d
+  LOGOUT: u
 })

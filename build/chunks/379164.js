@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 379164, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -18,10 +18,10 @@ var Chunk570140 = require("./570140.js"),
 let g = {
   acceptInvite(e) {
     let t = i.ZP.getInviteContext("Desktop Invite Modal", e),
-      n = (0, a.y)(),
-      u = (0, a.h6)(),
-      f = (0, a.U1)(),
-      g = (0, a.yS)();
+      n = (0, s.y)(),
+      u = (0, s.h6)(),
+      h = (0, s.U1)(),
+      g = (0, s.yS)();
     i.ZP.acceptInvite({
       inviteKey: e.code,
       context: t,
@@ -29,35 +29,35 @@ let g = {
         null == e || null == e.guild || null == e.channel || __OVERLAY__ || i.ZP.transitionToInvite(e)
       }
     }).then(() => {
-      if ((0, s.gY)({
+      if ((0, a.gY)({
           location: "acceptInvite"
         }) && null != e.guild) {
         if (u) {
           if (c.h2.getSetting().includes(e.guild.id)) {
-            let t = new Set((0, p.YK)());
+            let t = new Set((0, f.YK)());
             t.delete(e.guild.id), c.h2.updateSetting(Array.from(t))
           }
         } else {
           var t;
-          let n = new Set((0, p.YK)());
+          let n = new Set((0, f.YK)());
           n.add(null == (t = e.guild) ? true : t.id), c.h2.updateSetting(Array.from(n))
         }
-        if (f) {
+        if (h) {
           if (c.SE.getSetting().includes(e.guild.id)) {
-            let t = new Set((0, p._o)());
+            let t = new Set((0, f._o)());
             t.delete(e.guild.id), c.SE.updateSetting(Array.from(t))
           }
         } else {
-          let t = new Set((0, p._o)());
+          let t = new Set((0, f._o)());
           t.add(e.guild.id), c.SE.updateSetting(Array.from(t))
         }
         null != n && n.length > 0 && (0, o.iq)(e.guild.id, {
           nick: n
-        }), (0, s.m4)({
+        }), (0, a.m4)({
           location: "acceptInvite"
         }) && l.Z.updateGuildNotificationSettings(e.guild.id, {
           muted: g
-        }, h.ZB.Muted)
+        }, p.ZB.Muted)
       }
       this.close()
     }, e => {

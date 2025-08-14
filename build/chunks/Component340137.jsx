@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk961040 = require("./961040.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk789778 = require("./789778.js");
+  Chunk445202 = require("./445202.js");
 let v = {
     cozy: 6,
     default: 4,

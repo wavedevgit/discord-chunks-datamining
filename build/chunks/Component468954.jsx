@@ -10,7 +10,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk98528 = require("./98528.js"),
   Chunk429155 = require("./429155.jsx"),
   Chunk810462 = require("./810462.jsx"),
-  Chunk855797 = require("./855797.js");
+  Chunk681561 = require("./681561.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -79,8 +79,8 @@ function p(e) {
     itemNodeMargin: L,
     listPadding: x,
     gridNavigatorId: M,
-    gridNotice: j,
-    renderHeader: k,
+    gridNotice: k,
+    renderHeader: j,
     renderUpsell: U
   } = e, G = i.useRef(null), B = i.useRef(null), Z = i.useRef(null), F = 0 === t.length, V = (0, o.Iu)(e => e.searchQuery), H = f.useStore(e => e.inspectedExpressionPosition), Y = (0, a.ep)({
     gridWrapperRef: G,
@@ -144,13 +144,13 @@ function p(e) {
     }), null == N ? true : N()]
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [null != k ? k(es) : (0, r.jsxs)("div", {
+    children: [null != j ? j(es) : (0, r.jsxs)("div", {
       className: c.header,
       children: [" ", es, " "]
     }), F && null != b ? b(c.emptyState) : (0, r.jsxs)(r.Fragment, {
-      children: [A(B), null != j && (0, r.jsx)("div", {
+      children: [A(B), null != k && (0, r.jsx)("div", {
         className: c.gridNoticeWrapper,
-        children: j
+        children: k
       }), (0, r.jsx)("div", _(d({
         ref: G,
         className: c.listWrapper,

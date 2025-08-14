@@ -214,7 +214,7 @@ function ea(e) {
         message: e.content,
         groupId: o,
         flashKey: e.flashKey,
-        id: (0, j.p)(l.id, e.content.id),
+        id: (0, k.p)(l.id, e.content.id),
         isLastItem: t >= I.length - 1,
         renderContentOnly: ev || a
       }, e.content.id)
@@ -222,7 +222,7 @@ function ea(e) {
   eS.push(...eA);
   let eN = I[I.length - 1];
   if (null != eu && S.forEach((e, t) => {
-      let n = 0 === t && (0, k.J)(l, eN, new R.ZP({
+      let n = 0 === t && (0, j.J)(l, eN, new R.ZP({
         type: X.uaV.DEFAULT,
         author: eu
       }));

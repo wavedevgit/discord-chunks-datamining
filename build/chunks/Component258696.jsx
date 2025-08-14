@@ -25,7 +25,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk466711 = require("./466711.jsx"),
   Chunk319417 = require("./319417.jsx"),
   Chunk728386 = require("./728386.jsx"),
-  Chunk939267 = require("./939267.js");
+  Chunk564355 = require("./564355.js");
 
 function S(e) {
   let {
@@ -54,18 +54,18 @@ function A(e) {
     children: D
   } = e, L = (0, a.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), x = N(C.id, O, P), {
     activeCommand: M,
-    activeCommandOption: j
+    activeCommandOption: k
   } = (0, a.cj)([c.Z], () => ({
     activeCommand: c.Z.getActiveCommand(C.id),
     activeCommandOption: c.Z.getActiveOption(C.id)
   })), {
-    paymentsBlocked: k
+    paymentsBlocked: j
   } = u.Z.useExperiment({
     location: "dc120b_3"
   }, {
     autoTrackExposure: false
   }), U = [], G = !C.isDM() || true === C.recipients || C.recipients.length > 1, B = (0, a.e7)([h.default], () => G ? null : h.default.getUser(C.recipients[0])), Z = (0, d.Nt)() && (null == (t = O.confetti) ? true : t.button) != null;
-  return (o.tq || ((null == (_ = O.gifts) ? true : _.button) != null && null == M && !k && (null == B || m.ZP.isPremiumEligible(B)) && U.push((0, r.jsx)(S, {
+  return (o.tq || ((null == (_ = O.gifts) ? true : _.button) != null && null == M && !j && (null == B || m.ZP.isPremiumEligible(B)) && U.push((0, r.jsx)(S, {
     disabled: A,
     channel: C
   }, "gift")), (null == (p = O.gifs) ? true : p.button) != null && null == M && w && U.push((0, r.jsx)(E.Z, {
@@ -77,7 +77,7 @@ function A(e) {
   }, "confetti")), !Z && (null == (y = O.stickers) ? true : y.button) != null && null == M && w && U.push((0, r.jsx)(I.Z, {
     disabled: A,
     type: O
-  }, "sticker"))), (null == (n = O.emojis) ? true : n.button) != null && (null == M || null != j && j.type !== s.jw.ATTACHMENT) && U.push((0, r.jsx)(g.Z, {
+  }, "sticker"))), (null == (n = O.emojis) ? true : n.button) != null && (null == M || null != k && k.type !== s.jw.ATTACHMENT) && U.push((0, r.jsx)(g.Z, {
     disabled: A,
     type: O
   }, "emoji")), null != D && U.push(D), (null == (i = O.submit) ? true : i.button) != null && ((null == (f = O.submit) ? true : f.ignorePreference) || L) && U.push((0, r.jsx)(v.Z, {

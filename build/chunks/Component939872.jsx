@@ -12,13 +12,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk430824 = require("./430824.js"),
   Chunk313550 = require("./313550.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk933468 = require("./933468.js");
+  Chunk406671 = require("./406671.js");
 let m = e => {
   let {
     onClose: t,
     listing: n,
     guildId: m
-  } = e, f = (0, r.e7)([o.Z], () => o.Z.getGuild(m), [m]), h = (0, c.Z)({
+  } = e, f = (0, r.e7)([o.Z], () => o.Z.getGuild(m), [m]), g = (0, c.Z)({
     listing: n,
     guildId: m
   });
@@ -31,12 +31,12 @@ let m = e => {
         serverName: null == f ? true : f.name,
         tierName: n.name
       })
-    }), !h.isEmpty() && (0, i.jsx)(a.Text, {
+    }), !g.isEmpty() && (0, i.jsx)(a.Text, {
       className: u.confirmationSubtitle,
       variant: "text-sm/normal",
       color: "header-secondary",
       children: d.intl.format(d.t.TnhFHh, {
-        benefits: h.asString()
+        benefits: g.asString()
       })
     }), (0, i.jsx)(l.zx, {
       className: u.openDiscordButton,

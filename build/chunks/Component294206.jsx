@@ -35,7 +35,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk675654 = require("./675654.js"),
   Chunk509571 = require("./509571.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk980028 = require("./980028.js");
+  Chunk463063 = require("./463063.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,7 +59,7 @@ function M(e) {
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,8 +70,8 @@ function j(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -111,7 +111,7 @@ function Y(e) {
   return (0, r.jsx)(d.ua7, {
     text: i,
     position: s,
-    children: e => (0, r.jsx)(d.P3F, k(M({}, e), {
+    children: e => (0, r.jsx)(d.P3F, j(M({}, e), {
       innerRef: l,
       "aria-label": i,
       className: a()(L.secondaryButton, {
@@ -164,7 +164,7 @@ function K(e) {
   } = (0, p.ZP)(), s = (0, l.e7)([T.Z], () => T.Z.isFavoriteSound(t.soundId), [t.soundId]), c = i.useCallback(e => {
     e.stopPropagation(), e.currentTarget.blur(), s ? (0, I.hs)(t.soundId) : ((0, A.lF)({
       sound: t,
-      location: k(M({}, o), {
+      location: j(M({}, o), {
         object: R.qAy.SOUNDBOARD_SOUND
       })
     }), (0, I.TB)(t.soundId))
@@ -207,7 +207,7 @@ let q = Chunk73800.forwardRef(function(e, t) {
       channel: T,
       containerClassName: R,
       className: x,
-      focused: j,
+      focused: k,
       forceSecondaryActions: G = false,
       interactive: Y = true,
       enableSecondaryActions: q = false,
@@ -239,15 +239,15 @@ let q = Chunk73800.forwardRef(function(e, t) {
     createMultipleConfettiAt: eb
   } = i.useContext(h.h), ey = i.useRef(null), eO = z(I.soundId, ey.current), ev = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), eI = i.useRef(Z), eT = i.useRef(new c.Xp), eS = I.soundId === B, eA = "sound-".concat(I.soundId), eN = (0, s.JA)(eA), eC = null != ef || null != e_, eR = !(0, A.Nq)(ep, I, T) && !eo, eP = G || q && !eR, ew = null != (y = m.Wq.useStore().bottomPosition) ? y : 0, eD = (null != (v = null == (o = ey.current) ? true : o.getBoundingClientRect().bottom) ? v : 0) + 50 > ew ? "top" : "bottom", [eL, ex] = i.useState(false), eM = eR && et;
 
-  function ej() {
+  function ek() {
     X || em($)
   }
 
-  function ek(e) {
+  function ej(e) {
     if (eS && !ev && (eI.current = Math.min(eI.current + V, F), Math.random() < eI.current && eb(eO.x, eO.y, true, true, {
         sprite: P.vv
       })), null != J) return void J(e);
-    ej()
+    ek()
   }
   let eU = W({
       sound: I,
@@ -347,8 +347,8 @@ let q = Chunk73800.forwardRef(function(e, t) {
       position: eD,
       shouldShow: !eL,
       delay: 500,
-      children: e => (0, r.jsxs)(d.kL8, k(M(k(M({}, eu), {
-        buttonProps: k(M({}, eN), {
+      children: e => (0, r.jsxs)(d.kL8, j(M(j(M({}, eu), {
+        buttonProps: j(M({}, eN), {
           id: eA,
           role: "button"
         }),
@@ -364,12 +364,12 @@ let q = Chunk73800.forwardRef(function(e, t) {
           [L.buttonDisabled]: !Y && !G,
           [L.premiumDisabled]: eR && !G,
           [L.buttonDisabledSecondaryActionsEnabled]: !Y && G,
-          [L.focused]: Y && j
+          [L.focused]: Y && k
         }, x)
       }), e), {
         onClick: t => {
           var n;
-          null == e || null == (n = e.onClick) || n.call(e), null == ek || ek(t)
+          null == e || null == (n = e.onClick) || n.call(e), null == ej || ej(t)
         },
         onContextMenu: q && !eR ? eh : true,
         onMouseOver: () => {

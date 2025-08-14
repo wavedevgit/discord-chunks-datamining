@@ -1,7 +1,7 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 927731, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => E
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -22,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk450215 = require("./450215.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk958619 = require("./958619.js");
+  Chunk255311 = require("./255311.js");
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -55,20 +55,9 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = "guild-role-subscription-tier-template-selector",
-  I = e => {
-    let [t, n] = i.useState(true), [r, l] = i.useState();
-    return i.useEffect(() => {
-      n(true), (0, f.X)(e).then(e => {
-        l(e), n(false)
-      })
-    }, [e]), {
-      loading: t,
-      priceTiers: r
-    }
-  };
+let N = "guild-role-subscription-tier-template-selector";
 
-function E(e) {
+function I(e) {
   let {
     guildId: t,
     priceTiers: l,
@@ -86,15 +75,11 @@ function E(e) {
       return null != (t = w[e]) ? t : e
     });
     return (0, s.uniq)(e)
-  }, [E, w]), D = (e, t) => {
-    R(n => C(y({}, n), {
-      [e]: t
-    }))
-  }, A = (0, p.ss)(t), k = (0, p.Gp)(), L = i.useCallback(() => {
-    k && g.jJ.trackExposure({
+  }, [E, w]), D = (0, p.ss)(t), A = (0, p.Gp)(), k = i.useCallback(() => {
+    A && g.jJ.trackExposure({
       guildId: t,
       location: "b2d9de_1"
-    }), k && A ? (0, d.ZDy)(async () => {
+    }), A && D ? (0, d.ZDy)(async () => {
       let {
         default: e
       } = await n.e("9558").then(n.bind(n, 34460));
@@ -107,10 +92,10 @@ function E(e) {
     }, {
       modalKey: N
     }) : S()
-  }, [t, T, S, l, k, A]), M = x.Lo(Z), G = i.useCallback(() => Z.forEach(x.GM), [Z]), U = (0, b.mY)(), B = (0, o.e7)([m.Z], () => m.Z.getProps().subsection);
-  return i.useEffect(() => (B === v.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && L(), () => {
+  }, [t, T, S, l, A, D]), L = x.Lo(Z), M = i.useCallback(() => Z.forEach(x.GM), [Z]), G = (0, b.mY)(), U = (0, o.e7)([m.Z], () => m.Z.getProps().subsection);
+  return i.useEffect(() => (U === v.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && k(), () => {
     (0, d.Mr3)(N)
-  }), [B, L]), (0, r.jsxs)(r.Fragment, {
+  }), [U, k]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: O.groupListings,
       children: [Z.map(e => (0, r.jsx)(j.Z, {
@@ -120,14 +105,19 @@ function E(e) {
         priceTiers: l,
         groupListingId: f,
         onDeleteEditState: () => P(e),
-        onBeforeDispatchNewListing: t => D(t.id, e),
+        onBeforeDispatchNewListing: t => {
+          var n;
+          return n = t.id, void R(t => C(y({}, t), {
+            [n]: e
+          }))
+        },
         onAfterDispatchNewListing: () => P(e)
       }, e)), (0, r.jsxs)(d.P3F, {
-        onClick: U ? true : L,
+        onClick: G ? true : k,
         className: a()(O.createTierButton, {
-          [O.disabled]: U
+          [O.disabled]: G
         }),
-        "aria-disabled": U,
+        "aria-disabled": G,
         children: [(0, r.jsx)(d.oFk, {
           size: "xs",
           color: "currentColor",
@@ -141,37 +131,47 @@ function E(e) {
     }), (0, r.jsx)(c.W, {
       component: "div",
       className: O.contentRegion,
-      children: M && (0, r.jsx)(d.oXn, {
+      children: L && (0, r.jsx)(d.oXn, {
         children: (0, r.jsx)(u.Z, {
-          onReset: G
+          onReset: M
         })
       })
     })]
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     guildId: t
   } = e, {
     priceTiers: n
-  } = I(t), i = (0, h.GG)(t), {
-    maxTiers: l
-  } = (0, p.s1)(t), a = i.map(e => e.id);
+  } = (e => {
+    let [t, n] = i.useState(true), [r, l] = i.useState();
+    return i.useEffect(() => {
+      n(true), (0, f.X)(e).then(e => {
+        l(e), n(false)
+      })
+    }, [e]), {
+      loading: t,
+      priceTiers: r
+    }
+  })(t), l = (0, h.GG)(t), {
+    maxTiers: a
+  } = (0, p.s1)(t), s = l.map(e => e.id);
   return (0, r.jsxs)(d.hjN, {
     title: _.intl.string(_.t["72+Soq"]),
     className: O.container,
     children: [(0, r.jsx)(d.R94, {
       type: d.R94.Types.DESCRIPTION,
       children: _.intl.format(_.t.nHRSvL, {
-        maxTiers: l
+        maxTiers: a
       })
     }), (0, r.jsx)(d.LZC, {
       size: 16
-    }), (0, r.jsx)(E, {
+    }), (0, r.jsx)(I, {
       priceTiers: n,
       guildId: t,
-      groupListingId: a[0]
+      groupListingId: s[0]
     })]
   })
 }

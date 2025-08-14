@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 306052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   g: () => h
@@ -15,16 +15,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk594174 = require("./594174.js"),
   Chunk726985 = require("./726985.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk600961 = require("./600961.js");
+  Chunk131662 = require("./131662.js");
 let h = e => {
   let {
     isDevTools: t = false
   } = e, n = (0, r.e7)([u.default], () => u.default.getCurrentUser()), h = (0, r.e7)([c.Z], () => {
     let e = c.Z.getCreatedAtOverride();
     return null != e ? e.toISOString().substring(0, 10) : ""
-  }), f = (0, r.e7)([c.Z], () => c.Z.getPremiumTypeOverride()), b = e => {
-    (0, o.u)(new Date(e))
-  };
+  }), f = (0, r.e7)([c.Z], () => c.Z.getPremiumTypeOverride());
   return (0, i.jsxs)("div", {
     children: [(0, i.jsxs)(d.F, {
       setting: m.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE_PREMIUM_TYPE,
@@ -57,7 +55,10 @@ let h = e => {
         children: (0, i.jsx)("input", {
           type: "date",
           value: h,
-          onChange: e => b(e.target.value),
+          onChange: e => {
+            var t;
+            return t = e.target.value, void(0, o.u)(new Date(t))
+          },
           className: g.datePicker
         })
       }), (0, i.jsx)(s.zx, {

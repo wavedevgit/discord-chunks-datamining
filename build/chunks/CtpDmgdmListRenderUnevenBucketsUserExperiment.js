@@ -1,11 +1,11 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 136885, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   NR: () => l,
-  Ob: () => a,
+  Ob: () => s,
   ZI: () => o,
   m1: () => c,
-  uc: () => s
+  uc: () => a
 });
 var Chunk987170 = require("./987170.js"),
   Chunk987338 = require("./987338.js");
@@ -41,7 +41,7 @@ let l = (0, Chunk987170.Z)({
       }
     }]
   }),
-  s = (0, Chunk987170.Z)({
+  a = (0, Chunk987170.Z)({
     kind: "user",
     id: "2024-08_ctp_dmgdm_list_render__multiple_buckets",
     label: "CTP DM/GDM List Render - A/A test - Multiple buckets",
@@ -63,7 +63,7 @@ let l = (0, Chunk987170.Z)({
       }
     }]
   }),
-  a = (0, Chunk987170.Z)({
+  s = (0, Chunk987170.Z)({
     kind: "user",
     id: "2024-08_ctp_dmgdm_list_render__everyone",
     label: "CTP DM/GDM List Render - A/A test - Everyone",

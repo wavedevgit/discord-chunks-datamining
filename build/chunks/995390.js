@@ -1,7 +1,7 @@
-/** Chunk was on 8725 **/
+/** Chunk was on 58511 **/
 /** chunk id: 995390, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./539854.js"), require("./388685.js"), require("./467055.js");
 var Chunk73800 = require("./73800.js"),
   Chunk512722 = require("./512722.js"),
@@ -22,7 +22,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk399860 = require("./399860.js"),
   Chunk981631 = require("./981631.js");
 
-function O(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -41,10 +41,10 @@ function O(e) {
   return e
 }
 
-function y(e, t, n) {
+function O(e, t, n) {
   let r = (0, s.e7)([x.Z], () => x.Z.getApplicationPermissions()),
     o = i.useMemo(() => (function(e, t) {
-      let n = O({}, t),
+      let n = y({}, t),
         i = (0, u.bD)(e),
         r = (0, j.rE)(i, d.Kw.CHANNEL),
         l = (0, j.rE)(e, d.Kw.ROLE);
@@ -58,7 +58,7 @@ function y(e, t, n) {
         type: d.Kw.CHANNEL
       }), n
     })(e, null != r ? r : {}), [r, e]),
-    y = (0, s.e7)([x.Z], () => {
+    O = (0, s.e7)([x.Z], () => {
       var e;
       if (null == n) return;
       let t = x.Z.getCommand(n);
@@ -69,15 +69,15 @@ function y(e, t, n) {
       return null == n ? x.Z.getEditedApplication() : null == (e = x.Z.getEditedCommand()) ? true : e.permissions
     }, [n]),
     C = null != n ? n : t,
-    N = null != n ? y : o,
-    S = i.useMemo(() => null != _ ? _ : O({}, null != N ? N : {}), [_, N]),
-    I = i.useMemo(() => Object.keys(S).length, [S]),
-    w = i.useMemo(() => null == N || null == S ? null : !a().isEqual(N, S), [N, S]);
+    N = null != n ? O : o,
+    w = i.useMemo(() => null != _ ? _ : y({}, null != N ? N : {}), [_, N]),
+    Z = i.useMemo(() => Object.keys(w).length, [w]),
+    S = i.useMemo(() => null == N || null == w ? null : !a().isEqual(N, w), [N, w]);
   return i.useEffect(() => {
-    C === t && (w ? c.Z.startEditingCommandPermissions(C) : c.Z.stopEditingCommandPermissions(C))
-  }, [t, w, C]), {
+    C === t && (S ? c.Z.startEditingCommandPermissions(C) : c.Z.stopEditingCommandPermissions(C))
+  }, [t, S, C]), {
     originalApplicationPermissions: o,
-    originalCommandPermissions: y,
+    originalCommandPermissions: O,
     editedTargetPermissions: function(e, t) {
       let n = (0, s.e7)([b.Z], () => b.Z.getGuild(e), [e]);
       l()(null != n, "guild must be present to be editing its integration settings");
@@ -103,7 +103,7 @@ function y(e, t, n) {
             userIds: i
           }
         }, [t]),
-        y = (0, s.cj)([p.Z], () => Object.fromEntries(c.map(p.Z.getChannel).filter(h.lm).map(e => [e.id, e])), [c]),
+        O = (0, s.cj)([p.Z], () => Object.fromEntries(c.map(p.Z.getChannel).filter(h.lm).map(e => [e.id, e])), [c]),
         _ = (0, s.cj)([m.Z], () => Object.fromEntries(x.map(t => m.Z.getRole(e, t)).filter(h.lm).map(e => [e.id, e])), [x, e]),
         C = (0, s.cj)([f.default], () => Object.fromEntries(j.map(f.default.getUser).filter(h.lm).map(e => [e.id, e])), [j]);
       return i.useMemo(() => {
@@ -115,7 +115,7 @@ function y(e, t, n) {
             c = false;
           if (s.type === d.Kw.CHANNEL) {
             let e = s.id === i,
-              n = y[s.id];
+              n = O[s.id];
             t = e || g.Z.can(v.Plq.VIEW_CHANNEL, n), c = true
           } else if (s.type === d.Kw.ROLE) {
             let i = s.id === e,
@@ -136,15 +136,15 @@ function y(e, t, n) {
             })(Object(t)).forEach(function(n) {
               Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
             }), e
-          }(O({}, s), {
+          }(y({}, s), {
             canRead: t,
             canWrite: c
           })
         }
         return l
-      }, [y, n, r, a, t, _, C])
-    }(e, S),
-    hasChanges: w,
-    selectedPermissionCount: I
+      }, [O, n, r, a, t, _, C])
+    }(e, w),
+    hasChanges: S,
+    selectedPermissionCount: Z
   }
 }

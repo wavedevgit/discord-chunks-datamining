@@ -12,16 +12,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk9156 = require("./9156.js"),
   Chunk621600 = require("./621600.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk680569 = require("./680569.js");
+  Chunk444766 = require("./444766.js");
 let g = t => {
   let {
     onClose: n,
     channelId: e,
     applicationId: g,
     transitionState: p
-  } = t, h = (0, l.e7)([d.ZP], () => d.ZP.getChannelMuteConfig(null, e)), _ = t => {
-    s.Z.updateAppDMOverrideSettings(null, e, g, (0, u.u9)(t), r.ZB.Muted)
-  };
+  } = t, h = (0, l.e7)([d.ZP], () => d.ZP.getChannelMuteConfig(null, e));
   return (0, i.jsxs)(a.Y0X, {
     transitionState: p,
     size: a.CgR.SMALL,
@@ -43,7 +41,10 @@ let g = t => {
               value: e
             }
           }),
-          onChange: t => _(t.value),
+          onChange: t => {
+            var n;
+            return n = t.value, void s.Z.updateAppDMOverrideSettings(null, e, g, (0, u.u9)(n), r.ZB.Muted)
+          },
           value: null == h ? true : h.selected_time_window
         })
       })

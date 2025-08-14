@@ -17,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk835225 = require("./835225.jsx"),
   Chunk117795 = require("./117795.jsx"),
   Chunk565384 = require("./565384.js"),
-  Chunk880810 = require("./880810.js");
+  Chunk938057 = require("./938057.js");
 
 function g(e, t) {
   if (null == e) return {};
@@ -49,45 +49,45 @@ function b() {
   } = y, v = g(y, ["name"]), I = null != O;
   return Chunk120356 && require ? (0, Chunk255367.jsx)(Chunk314910.ZP, {
     children: (0, Chunk255367.jsxs)("div", {
-      className: a()(Chunk880810.container, {
-        [Chunk880810.containerMinimized]: E,
-        [Chunk880810.notTracked]: !I
+      className: a()(Chunk938057.container, {
+        [Chunk938057.containerMinimized]: E,
+        [Chunk938057.notTracked]: !I
       }),
       children: [(0, Chunk255367.jsx)(Chunk481060.P3F, {
-        className: Chunk880810.minimizeButton,
+        className: Chunk938057.minimizeButton,
         onClick: () => {
           b(!E)
         },
         children: E ? (0, Chunk255367.jsx)(Chunk835225.Z, {}) : (0, Chunk255367.jsx)(Chunk117795.Z, {})
       }), (0, Chunk255367.jsxs)("div", {
-        className: a()(Chunk880810.content, {
-          [Chunk880810.contentMinimized]: E
+        className: a()(Chunk938057.content, {
+          [Chunk938057.contentMinimized]: E
         }),
         children: [(0, Chunk255367.jsxs)(Chunk481060.Text, {
-          className: a()(Chunk880810.label, {
-            [Chunk880810.notTracked]: !I
+          className: a()(Chunk938057.label, {
+            [Chunk938057.notTracked]: !I
           }),
           variant: "text-xxs/normal",
           children: [I ? (0, Chunk255367.jsx)(Chunk481060.owK, {
             size: "md",
             color: "currentColor",
-            className: Chunk880810.iconTracked
+            className: Chunk938057.iconTracked
           }) : (0, Chunk255367.jsx)(Chunk481060.k$p, {
             size: "md",
             color: "currentColor",
-            className: Chunk880810.iconNotTracked
+            className: Chunk938057.iconNotTracked
           }), null != O ? O : "(untracked)"]
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk880810.current,
+          className: Chunk938057.current,
           children: JSON.stringify(v, true, 2)
         }), (0, Chunk255367.jsx)(Chunk481060.Text, {
-          className: a()(Chunk880810.label, {
-            [Chunk880810.notTracked]: !I
+          className: a()(Chunk938057.label, {
+            [Chunk938057.notTracked]: !I
           }),
           variant: "text-xxs/normal",
           children: "impressions stack"
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk880810.stack,
+          className: Chunk938057.stack,
           children: JSON.stringify(exports, true, 2)
         })]
       })]

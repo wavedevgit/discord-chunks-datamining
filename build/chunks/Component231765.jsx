@@ -1,7 +1,7 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 231765, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => z
+  Z: () => G
 }), require("./953529.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -23,7 +23,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk524484 = require("./524484.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk899955 = require("./899955.js");
+  Chunk749714 = require("./749714.js");
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -65,39 +65,9 @@ let T = {
   I = (0, Chunk392711.range)(0, 11),
   N = (0, Chunk392711.range)(0, 2.25, .25),
   y = (0, Chunk392711.range)(1, 11),
-  A = (0, Chunk392711.range)(1, 26),
-  P = () => [{
-    location: Chunk524484.Hn.CHAT_INPUT,
-    title: Chunk388032.intl.string(Chunk388032.t.elTty8),
-    description: Chunk388032.intl.string(Chunk388032.t.HtKfMj)
-  }, {
-    location: Chunk524484.Hn.REACTION,
-    title: Chunk388032.intl.string(Chunk388032.t.Ik4VIS),
-    description: Chunk388032.intl.string(Chunk388032.t.y4rqKy)
-  }, {
-    location: Chunk524484.Hn.MEMBER_USER,
-    title: Chunk388032.intl.string(Chunk388032.t.ZXBlAg),
-    description: Chunk388032.intl.string(Chunk388032.t["m9RD+f"])
-  }, {
-    location: Chunk524484.Hn.CALL_TILE,
-    title: Chunk388032.intl.string(Chunk388032.t.V66giY),
-    description: Chunk388032.intl.string(Chunk388032.t.fiHV7u)
-  }],
-  R = () => [{
-    location: Chunk524484.oZ.CHAT_INPUT,
-    title: Chunk388032.intl.string(Chunk388032.t.vUcvPD),
-    description: Chunk388032.intl.string(Chunk388032.t.y00OrK)
-  }, {
-    location: Chunk524484.oZ.VOICE_USER,
-    title: Chunk388032.intl.string(Chunk388032.t["TcRO5+"]),
-    description: Chunk388032.intl.string(Chunk388032.t.YJCxVV)
-  }, {
-    location: Chunk524484.oZ.MENTION,
-    title: Chunk388032.intl.string(Chunk388032.t.oW4shI),
-    description: Chunk388032.intl.string(Chunk388032.t["mqfw/P"])
-  }];
+  A = (0, Chunk392711.range)(1, 26);
 
-function D(e) {
+function P(e) {
   let {
     disabled: t,
     locations: n,
@@ -119,7 +89,7 @@ function D(e) {
   })
 }
 
-function Z(e) {
+function R(e) {
   let {
     children: t
   } = e;
@@ -131,7 +101,7 @@ function Z(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     settings: {
       enabled: t,
@@ -164,7 +134,7 @@ function w(e) {
   })
 }
 
-function k(e) {
+function Z(e) {
   let {
     settings: {
       enabled: t,
@@ -190,7 +160,7 @@ function k(e) {
       disabled: c,
       title: C.intl.string(C.t["vd0D8/"]),
       className: O.formItem,
-      children: [(0, i.jsx)(Z, {
+      children: [(0, i.jsx)(R, {
         children: C.intl.string(C.t.a18Sur)
       }), (0, i.jsx)(o.iRW, {
         disabled: c,
@@ -208,7 +178,7 @@ function k(e) {
       disabled: c,
       title: C.intl.string(C.t.sPO3io),
       className: O.formItem,
-      children: [(0, i.jsx)(Z, {
+      children: [(0, i.jsx)(R, {
         children: C.intl.string(C.t.xoldVl)
       }), (0, i.jsx)(o.iRW, {
         disabled: c,
@@ -222,9 +192,25 @@ function k(e) {
         }, 0),
         onValueRender: e => "".concat(e)
       })]
-    }), (0, i.jsx)(D, {
+    }), (0, i.jsx)(P, {
       disabled: c,
-      locations: P(),
+      locations: [{
+        location: j.Hn.CHAT_INPUT,
+        title: C.intl.string(C.t.elTty8),
+        description: C.intl.string(C.t.HtKfMj)
+      }, {
+        location: j.Hn.REACTION,
+        title: C.intl.string(C.t.Ik4VIS),
+        description: C.intl.string(C.t.y4rqKy)
+      }, {
+        location: j.Hn.MEMBER_USER,
+        title: C.intl.string(C.t.ZXBlAg),
+        description: C.intl.string(C.t["m9RD+f"])
+      }, {
+        location: j.Hn.CALL_TILE,
+        title: C.intl.string(C.t.V66giY),
+        description: C.intl.string(C.t.fiHV7u)
+      }],
       settingsLocations: a,
       onChange: e => l({
         confettiEnabledLocations: e
@@ -233,7 +219,7 @@ function k(e) {
   })
 }
 
-function L(e) {
+function w(e) {
   let {
     settings: {
       enabled: t,
@@ -266,7 +252,7 @@ function L(e) {
       disabled: l,
       title: C.intl.string(C.t.L0oQur),
       className: O.formItem,
-      children: [(0, i.jsx)(Z, {
+      children: [(0, i.jsx)(R, {
         children: C.intl.string(C.t["/OOFpK"])
       }), (0, i.jsx)(o.iRW, {
         disabled: l,
@@ -286,7 +272,7 @@ function L(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     settings: {
       enabled: t,
@@ -295,9 +281,7 @@ function M(e) {
       screenshakeEnabledLocations: s
     },
     updateSettings: l
-  } = e, c = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), u = !t || !n || c, m = (e, t) => {
-    null != e.shakeIntensity && e.shakeIntensity > r && (0, g.T)(h.hn.MORE), l(e, t)
-  };
+  } = e, c = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), u = !t || !n || c;
   return (0, i.jsxs)(o.hjN, {
     tag: o.RB0.H1,
     title: C.intl.string(C.t.wVS5SU),
@@ -314,7 +298,7 @@ function M(e) {
       disabled: u,
       title: C.intl.string(C.t.UxnnCw),
       className: O.formItem,
-      children: [(0, i.jsx)(Z, {
+      children: [(0, i.jsx)(R, {
         children: C.intl.string(C.t.CEOEOT)
       }), (0, i.jsx)(o.iRW, {
         disabled: u,
@@ -324,14 +308,29 @@ function M(e) {
         minValue: N[0],
         maxValue: N[N.length - 1],
         initialValue: r,
-        onValueChange: e => m({
-          shakeIntensity: e
-        }, 1),
+        onValueChange: e => {
+          var t;
+          null != (t = {
+            shakeIntensity: e
+          }).shakeIntensity && t.shakeIntensity > r && (0, g.T)(h.hn.MORE), l(t, 1)
+        },
         onMarkerRender: e => e === N[N.length - 1] ? C.intl.string(C.t["4rbMWV"]) : "".concat(100 * e, "%")
       })]
-    }), (0, i.jsx)(D, {
+    }), (0, i.jsx)(P, {
       disabled: u,
-      locations: R(),
+      locations: [{
+        location: j.oZ.CHAT_INPUT,
+        title: C.intl.string(C.t.vUcvPD),
+        description: C.intl.string(C.t.y00OrK)
+      }, {
+        location: j.oZ.VOICE_USER,
+        title: C.intl.string(C.t["TcRO5+"]),
+        description: C.intl.string(C.t.YJCxVV)
+      }, {
+        location: j.oZ.MENTION,
+        title: C.intl.string(C.t.oW4shI),
+        description: C.intl.string(C.t["mqfw/P"])
+      }],
       settingsLocations: s,
       onChange: e => l({
         screenshakeEnabledLocations: e
@@ -340,7 +339,7 @@ function M(e) {
   })
 }
 
-function B(e) {
+function L(e) {
   let {
     updateSettings: t
   } = e;
@@ -371,7 +370,7 @@ function B(e) {
   })
 }
 
-function U(e) {
+function B(e) {
   let {
     onChangePage: t
   } = e;
@@ -407,14 +406,14 @@ function U(e) {
     })]
   })
 }
-let V = () => require.e("68170").then(require.t.bind(require, 205663, 19)).then(e => {
+let M = () => require.e("68170").then(require.t.bind(require, 205663, 19)).then(e => {
   let {
     default: t
   } = e;
   return t
 });
 
-function G(e) {
+function U(e) {
   let {
     onChangePage: t,
     setShowEnableAnimation: n
@@ -426,100 +425,91 @@ function G(e) {
   function u(e, t, n, i) {
     return (null != t ? t : e) && (null != i ? i : n)
   }
-  let g = e => {
-      if (e.enabled && false === s.enabled) {
-        var t;
-        n(true), (0, m.GN)("poggermode_enabled"), p.S.dispatch(E.CkL.SHAKE_APP, {
+  let g = (e, t) => {
+      var i, r;
+      if (e.enabled && false === s.enabled && (n(true), (0, m.GN)("poggermode_enabled"), p.S.dispatch(E.CkL.SHAKE_APP, {
           duration: 2e3,
-          intensity: null != (t = e.shakeIntensity) ? t : s.shakeIntensity
-        })
-      }
-    },
-    h = (e, t) => {
-      if (g(e), (0, f.AI)(e), null == t) return;
-      let n = u(s.confettiEnabled, e.confettiEnabled, s.enabled, e.enabled);
-      0 === t && n && d.fire(l.x, l.y, {
+          intensity: null != (i = e.shakeIntensity) ? i : s.shakeIntensity
+        })), (0, f.AI)(e), null == t) return;
+      let a = u(s.confettiEnabled, e.confettiEnabled, s.enabled, e.enabled);
+      0 === t && a && d.fire(l.x, l.y, {
         settings: e
       });
-      let i = u(s.screenshakeEnabled, e.screenshakeEnabled, s.enabled, e.enabled);
-      if (1 === t && i) {
-        var r;
-        p.S.dispatch(E.CkL.SHAKE_APP, {
-          duration: 1e3,
-          intensity: null != (r = e.shakeIntensity) ? r : s.shakeIntensity
-        })
-      }
+      let o = u(s.screenshakeEnabled, e.screenshakeEnabled, s.enabled, e.enabled);
+      1 === t && o && p.S.dispatch(E.CkL.SHAKE_APP, {
+        duration: 1e3,
+        intensity: null != (r = e.shakeIntensity) ? r : s.shakeIntensity
+      })
     },
-    x = e => {
+    h = e => {
       c({
         x: e.clientX,
         y: e.clientY
       })
     };
-  return r.useEffect(() => (window.addEventListener("mousemove", x), () => window.removeEventListener("mousemove", x)), []), (0, i.jsxs)(i.Fragment, {
+  return r.useEffect(() => (window.addEventListener("mousemove", h), () => window.removeEventListener("mousemove", h)), []), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(o.X6q, {
       variant: "heading-lg/semibold",
       className: O.title,
       children: C.intl.string(C.t.AtCukJ)
+    }), (0, i.jsx)(D, {
+      settings: s,
+      updateSettings: g
+    }), (0, i.jsx)(B, {
+      onChangePage: t
     }), (0, i.jsx)(w, {
       settings: s,
-      updateSettings: h
-    }), (0, i.jsx)(U, {
-      onChangePage: t
-    }), (0, i.jsx)(L, {
-      settings: s,
-      updateSettings: h
-    }), (0, i.jsx)(M, {
-      settings: s,
-      updateSettings: h
+      updateSettings: g
     }), (0, i.jsx)(k, {
       settings: s,
-      updateSettings: h
-    }), (0, i.jsx)(B, {
-      updateSettings: h
+      updateSettings: g
+    }), (0, i.jsx)(Z, {
+      settings: s,
+      updateSettings: g
+    }), (0, i.jsx)(L, {
+      updateSettings: g
     })]
   })
 }
-let F = (e, t, n) => {
-    let r = e => () => {
-      t(e)
-    };
-    switch (e) {
-      case 0:
-        return (0, i.jsx)(G, {
-          onChangePage: r(1),
-          setShowEnableAnimation: n
-        });
-      case 1:
-        return (0, i.jsx)(x.Z, {
-          onBackClick: r(0)
-        });
-      default:
-        return null
-    }
-  },
-  H = e => 0 === e ? u.n.LEFT : u.n.RIGHT;
+let V = e => 0 === e ? u.n.LEFT : u.n.RIGHT;
 
-function z() {
-  let [e, t] = Chunk73800.useState(0), [n, s] = Chunk73800.useState(H(module)), [l, c] = Chunk73800.useState(false), m = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion), p = Chunk692547 && !Chunk460181;
+function G() {
+  let [e, t] = Chunk73800.useState(0), [n, s] = Chunk73800.useState(V(module)), [l, c] = Chunk73800.useState(false), m = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion), p = Chunk692547 && !Chunk460181;
   return Chunk73800.useEffect(() => {
     let t = setTimeout(() => {
-      Chunk392711(H(module))
+      Chunk392711(V(module))
     }, 500);
     return () => clearTimeout(exports)
   }, [module]), Chunk73800.useEffect(() => {
     Math.random() > .99 && (0, Chunk57562.T)(Chunk955204.hn.VISITOR_100)
   }, []), (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
     children: [(0, Chunk255367.jsx)(Chunk578361.Z, {
-      className: Chunk899955.slideAnimator,
+      className: Chunk749714.slideAnimator,
       step: module,
       direction: require,
-      children: F(module, exports, Chunk37234)
+      children: ((e, t, n) => {
+        let r = e => () => {
+          t(e)
+        };
+        switch (e) {
+          case 0:
+            return (0, i.jsx)(U, {
+              onChangePage: r(1),
+              setShowEnableAnimation: n
+            });
+          case 1:
+            return (0, i.jsx)(x.Z, {
+              onBackClick: r(0)
+            });
+          default:
+            return null
+        }
+      })(module, exports, Chunk37234)
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk585483 ? Chunk899955.enableAnimationOverlayVisible : Chunk899955.enableAnimationOverlayHidden,
+      className: Chunk585483 ? Chunk749714.enableAnimationOverlayVisible : Chunk749714.enableAnimationOverlayHidden,
       children: (0, Chunk255367.jsx)(Chunk481060.Fmz, {
-        className: Chunk899955.enableAnimation,
-        importData: V,
+        className: Chunk749714.enableAnimation,
+        importData: M,
         shouldAnimate: Chunk585483,
         autoplay: false,
         resetOnPlay: true,

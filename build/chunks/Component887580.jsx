@@ -20,7 +20,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk667344 = require("./667344.js"),
   Chunk453032 = require("./453032.js"),
   Chunk493075 = require("./493075.js"),
-  Chunk164000 = require("./164000.js");
+  Chunk941189 = require("./941189.js");
 let E = RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
 
 function b(e) {
@@ -88,12 +88,12 @@ function T(e) {
     M = (0, r.jsx)(I, {
       url: t
     }),
-    j = null;
-  return (1 === D && null != w ? j = (0, r.jsx)(s.Text, {
+    k = null;
+  return (1 === D && null != w ? k = (0, r.jsx)(s.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     children: w.label
-  }) : null != C && (j = (0, r.jsxs)(s.Text, {
+  }) : null != C && (k = (0, r.jsxs)(s.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     children: ["Server Config: ", R]
@@ -114,7 +114,7 @@ function T(e) {
             children: [(0, r.jsx)(s.Text, {
               variant: "text-md/semibold",
               children: S.title
-            }), j]
+            }), k]
           }), M]
         })
       })

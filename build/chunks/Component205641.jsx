@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 205641, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -10,7 +10,7 @@ var r, i, Chunk255367 = require("./255367.js"),
   Chunk392711 = require("./392711.js"),
   d = require.n(Chunk392711),
   Chunk82923 = require("./82923.js"),
-  Chunk837188 = require("./837188.js");
+  Chunk463299 = require("./463299.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -144,7 +144,7 @@ class b extends(r = Chunk73800.Component) {
         delay: h.FLYING.DURATION / h.FLYING.OPACITY_DURATION_DIVIDEND
       }),
       m = this.createFireAnimation(h.FLYING.FIRE_COUNT, h.FLYING.DURATION, h.FLYING.FIRE_MIN_INTENSITY, h.FLYING.FIRE_MAX_INTENSITY),
-      g = Chunk82923.Z.parallel([o, Chunk392711, d, Chunk837188]);
+      g = Chunk82923.Z.parallel([o, Chunk392711, d, Chunk463299]);
     if (this.currentAnimation = Chunk82923.Z.sequence([r, Chunk120356, g]), await (null == (e = this.currentAnimation) ? true : module.start()), !this.isUnmounted) {
       let {
         onFlyingComplete: e
@@ -181,7 +181,7 @@ class b extends(r = Chunk73800.Component) {
       style: t
     } = this.props;
     return (0, Chunk255367.jsxs)(Chunk82923.Z.div, {
-      className: o()(Chunk837188.animation, module),
+      className: o()(Chunk463299.animation, module),
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -195,19 +195,19 @@ class b extends(r = Chunk73800.Component) {
         return e
       }({}, exports, this.getWumpusStyle()),
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk837188.fireTopWrapper,
+        className: Chunk463299.fireTopWrapper,
         children: (0, Chunk255367.jsx)(Chunk82923.Z.div, {
-          className: Chunk837188.fire,
+          className: Chunk463299.fire,
           style: this.getFireStyle()
         })
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk837188.fireBottomWrapper,
+        className: Chunk463299.fireBottomWrapper,
         children: (0, Chunk255367.jsx)(Chunk82923.Z.div, {
-          className: Chunk837188.fire,
+          className: Chunk463299.fire,
           style: this.getFireStyle()
         })
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk837188.wumpus
+        className: Chunk463299.wumpus
       })]
     })
   }

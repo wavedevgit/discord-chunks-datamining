@@ -1,7 +1,7 @@
-/** Chunk was on 99319 **/
-/** chunk id: 241420, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 98775 **/
+/** chunk id: 241420, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => _
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -13,25 +13,25 @@ var Chunk481060 = require("./481060.js"),
   Chunk919539 = require("./919539.jsx"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk539698 = require("./539698.js");
+  Chunk942465 = require("./942465.js");
 
-function _(t) {
+function f(t) {
   let {
-    guildId: e
+    guildId: n
   } = t;
-  return (0, i.jsxs)(r.Z, {
-    children: [(0, i.jsx)(o.Z, {
-      ingress: c.f4.SERVER_PRIVACY_MODAL,
-      guildId: e
-    }), (0, i.jsx)(u.Z, {
-      ingress: c.f4.SERVER_PRIVACY_MODAL,
-      guildId: e
+  return (0, i.jsxs)(a.Z, {
+    children: [(0, i.jsx)(u.Z, {
+      ingress: o.f4.SERVER_PRIVACY_MODAL,
+      guildId: n
+    }), (0, i.jsx)(c.Z, {
+      ingress: o.f4.SERVER_PRIVACY_MODAL,
+      guildId: n
     }), (0, i.jsx)(s.Z, {
-      ingress: c.f4.SERVER_PRIVACY_MODAL,
-      guildId: e
-    }), (0, i.jsx)(a.Z, {
-      ingress: c.f4.SERVER_PRIVACY_MODAL,
-      guildId: e
+      ingress: o.f4.SERVER_PRIVACY_MODAL,
+      guildId: n
+    }), (0, i.jsx)(r.Z, {
+      ingress: o.f4.SERVER_PRIVACY_MODAL,
+      guildId: n
     }), (0, i.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
@@ -42,32 +42,32 @@ function _(t) {
   })
 }
 
-function f(t) {
+function _(t) {
   let {
-    guild: e,
-    transitionState: n,
-    onClose: r
-  } = t, a = "".concat(d.intl.string(d.t.BayiAg), "—").concat(null != e ? e.name : "??");
+    guild: n,
+    transitionState: e,
+    onClose: a
+  } = t, r = "".concat(d.intl.string(d.t.BayiAg), "—").concat(null != n ? n.name : "??");
   return (0, i.jsxs)(l.Y0X, {
-    transitionState: n,
+    transitionState: e,
     size: l.CgR.SMALL,
-    "aria-label": a,
+    "aria-label": r,
     parentComponent: "PrivacySettings",
     children: [(0, i.jsx)(l.xBx, {
       children: (0, i.jsx)(l.X6q, {
         variant: "heading-lg/semibold",
-        children: a
+        children: r
       })
     }), (0, i.jsx)(l.hzk, {
       className: g.content,
-      children: (0, i.jsx)(_, {
-        guildId: e.id
+      children: (0, i.jsx)(f, {
+        guildId: n.id
       })
     }), (0, i.jsx)(l.mzw, {
       children: (0, i.jsx)(l.zxk, {
         variant: "primary",
         text: d.intl.string(d.t.i4jeWV),
-        onClick: () => r()
+        onClick: () => a()
       })
     })]
   })

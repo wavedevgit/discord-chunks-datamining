@@ -92,7 +92,7 @@ var Chunk687655 = require("./687655.js"),
       e._latestEditorState = this.props.editorState, e._blockSelectEvents = true
     }, t
   }(Chunk73800.Component),
-  j = function(e) {
+  k = function(e) {
     function t(t) {
       var n;
       return s(a(n = e.call(this, t) || this), "_blockSelectEvents", true), s(a(n), "_clipboard", true), s(a(n), "_handler", true), s(a(n), "_dragCount", true), s(a(n), "_internalDrag", true), s(a(n), "_editorKey", true), s(a(n), "_placeholderAccessibilityID", true), s(a(n), "_latestEditorState", true), s(a(n), "_latestCommittedEditorState", true), s(a(n), "_pendingStateFromBeforeInput", true), s(a(n), "_onBeforeInput", true), s(a(n), "_onBlur", true), s(a(n), "_onCharacterData", true), s(a(n), "_onCompositionEnd", true), s(a(n), "_onCompositionStart", true), s(a(n), "_onCopy", true), s(a(n), "_onCut", true), s(a(n), "_onDragEnd", true), s(a(n), "_onDragOver", true), s(a(n), "_onDragStart", true), s(a(n), "_onDrop", true), s(a(n), "_onInput", true), s(a(n), "_onFocus", true), s(a(n), "_onKeyDown", true), s(a(n), "_onKeyPress", true), s(a(n), "_onKeyUp", true), s(a(n), "_onMouseDown", true), s(a(n), "_onMouseUp", true), s(a(n), "_onPaste", true), s(a(n), "_onSelect", true), s(a(n), "editor", true), s(a(n), "editorContainer", true), s(a(n), "focus", true), s(a(n), "blur", true), s(a(n), "setMode", true), s(a(n), "exitCurrentMode", true), s(a(n), "restoreEditorDOM", true), s(a(n), "setClipboard", true), s(a(n), "getClipboard", true), s(a(n), "getEditorKey", true), s(a(n), "update", true), s(a(n), "onDragEnter", true), s(a(n), "onDragLeave", true), s(a(n), "_handleEditorContainerRef", function(e) {
@@ -269,7 +269,7 @@ var Chunk687655 = require("./687655.js"),
       this._blockSelectEvents = false, this._latestEditorState = this.props.editorState, this._latestCommittedEditorState = this.props.editorState
     }, t
   }(Chunk73800.Component);
-s(j, "defaultProps", {
+s(k, "defaultProps", {
   blockRenderMap: Chunk687655,
   blockRendererFn: function() {
     return null
@@ -281,4 +281,4 @@ s(j, "defaultProps", {
   readOnly: false,
   spellCheck: false,
   stripPastedStyles: false
-}), module.exports = j
+}), module.exports = k

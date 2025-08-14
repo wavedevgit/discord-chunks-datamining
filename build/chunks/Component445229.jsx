@@ -14,17 +14,17 @@ var Chunk255367 = require("./255367.js"),
   Chunk823379 = require("./823379.js"),
   Chunk5192 = require("./5192.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk596778 = require("./596778.js");
+  Chunk79148 = require("./79148.js");
 
 function v(e) {
   let {
     user: t
   } = e, n = m.ZP.useName(null, null, t);
-  return (0, a.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: f.userItem,
-    children: [(0, a.jsx)(u.Z, {
+    children: [(0, r.jsx)(u.Z, {
       user: t
-    }), (0, a.jsx)(s.Text, {
+    }), (0, r.jsx)(s.Text, {
       color: "header-primary",
       variant: "text-sm/medium",
       children: n
@@ -36,34 +36,34 @@ function h(e) {
   let {
     clip: t,
     className: n
-  } = e, l = (0, o.Wu)([c.default], () => t.users.map(c.default.getUser).filter(d.lm)), u = r.useCallback(e => {
+  } = e, l = (0, o.Wu)([c.default], () => t.users.map(c.default.getUser).filter(d.lm)), u = a.useCallback(e => {
     let {
       row: t
     } = e, n = l[t];
-    return null == n ? null : (0, a.jsx)(v, {
+    return null == n ? null : (0, r.jsx)(v, {
       user: n
     }, t)
   }, [l]);
-  return (0, a.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: i()(n, f.root),
-    children: [(0, a.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: f.__invalid_header,
-      children: (0, a.jsxs)(s.vwX, {
+      children: (0, r.jsxs)(s.vwX, {
         className: f.title,
-        children: [p.intl.string(p.t.WTozwc), (0, a.jsxs)("div", {
+        children: [p.intl.string(p.t.WTozwc), (0, r.jsxs)("div", {
           className: f.userCountPill,
-          children: [(0, a.jsx)(s.Text, {
+          children: [(0, r.jsx)(s.Text, {
             color: "text-default",
             variant: "text-xs/medium",
             children: l.length
-          }), (0, a.jsx)(s.iFz, {
+          }), (0, r.jsx)(s.iFz, {
             size: "xs",
             color: "currentColor",
             className: f.userCountIcon
           })]
         })]
       })
-    }), (0, a.jsx)(s.aVo, {
+    }), (0, r.jsx)(s.aVo, {
       className: f.__invalid_userList,
       sectionHeight: 0,
       rowHeight: 40,

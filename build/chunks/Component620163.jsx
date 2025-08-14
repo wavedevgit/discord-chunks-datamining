@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 620163, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   i: () => e7
@@ -107,18 +107,18 @@ var Chunk990547 = require("./990547.js"),
   Chunk46140 = require("./46140.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk603571 = require("./603571.js"),
-  Chunk698282 = require("./698282.js"),
-  Chunk916723 = require("./916723.js"),
-  Chunk713141 = require("./713141.js");
-let e1 = () => {
+  Chunk511479 = require("./511479.js"),
+  Chunk693450 = require("./693450.js"),
+  Chunk345909 = require("./345909.js"),
+  Chunk202323 = require("./202323.js");
+let e3 = () => {
     let e = [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_BADGE];
     return Chunk803038.Mc.getCurrentConfig({
       location: "getAppearanceDCs"
     }).enabled && module.push(Chunk704215.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE), module
   },
-  e8 = () => {
-    let e = e1(),
+  e6 = () => {
+    let e = e3(),
       [t] = (0, Chunk243778.US)(module);
     return exports === Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE || exports === Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_BADGE ? (0, Chunk255367.jsx)(Chunk481060.lBU, {
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
@@ -126,7 +126,7 @@ let e1 = () => {
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     }) : null
   },
-  e6 = () => {
+  e8 = () => {
     let e = [];
     return Chunk373230.c.getCurrentConfig({
       location: "SettingsRendererConfig"
@@ -135,7 +135,7 @@ let e1 = () => {
     }).enabled && module.push(Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE), module.push(Chunk704215.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE), module
   },
   e2 = () => {
-    let e = e6(),
+    let e = e8(),
       [t] = (0, Chunk243778.US)(module);
     return exports === Chunk704215.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE ? (0, Chunk255367.jsx)(Chunk158947.Z, {}) : exports === Chunk704215.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE || exports === Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE ? (0, Chunk255367.jsx)(Chunk481060.IGR, {
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
@@ -317,12 +317,12 @@ let e1 = () => {
         searchableTitles: [eJ.intl.string(eJ.t["vi7f+v"])],
         label: eJ.intl.string(eJ.t["vi7f+v"]),
         ariaLabel: eJ.intl.string(eJ.t["vi7f+v"]),
-        element: B.Z,
+        element: M.Z,
         newIndicator: (0, i.jsx)(e2, {}),
-        newIndicatorDismissibleContentTypes: [...e6()],
+        newIndicatorDismissibleContentTypes: [...e8()],
         notice: {
           stores: [q.Z, R.Z],
-          element: M.Z
+          element: B.Z
         },
         onSettingsClose: () => {
           o.Z.wait(() => {
@@ -642,7 +642,7 @@ let e1 = () => {
         searchableTitles: [eJ.intl.string(eJ.t.Ipxkoq)],
         label: eJ.intl.string(eJ.t.Ipxkoq),
         element: ea.Z,
-        className: e3.premiumTab
+        className: e1.premiumTab
       },
       [eW.s6.GUILD_BOOSTING]: {
         section: eK.oAB.GUILD_BOOSTING,
@@ -721,8 +721,8 @@ let e1 = () => {
         label: eJ.intl.string(eJ.t["iHH+k5"]),
         ariaLabel: eJ.intl.string(eJ.t["iHH+k5"]),
         element: ep.Z,
-        newIndicator: (0, i.jsx)(e8, {}),
-        newIndicatorDismissibleContentTypes: e1(),
+        newIndicator: (0, i.jsx)(e6, {}),
+        newIndicatorDismissibleContentTypes: e3(),
         url: eK.Z5c.SETTINGS("appearance")
       },
       [eW.s6.APPEARANCE_THEME]: {
@@ -1207,7 +1207,7 @@ let e1 = () => {
         icon: (0, i.jsx)("img", {
           alt: "",
           src: n(186542),
-          className: e3.clickerGameIcon
+          className: e1.clickerGameIcon
         })
       },
       [eW.s6.POGGERMODE]: {
@@ -1220,7 +1220,7 @@ let e1 = () => {
         icon: (0, i.jsx)("img", {
           alt: "",
           src: n(348621),
-          className: e3.poggermodeIcon
+          className: e1.poggermodeIcon
         })
       },
       [eW.s6.CHAT]: {
@@ -1616,7 +1616,7 @@ let e1 = () => {
         searchableTitles: [eJ.intl.string(eJ.t.AVDyEh)],
         label: eJ.intl.string(eJ.t.AVDyEh),
         element: eC.Z,
-        predicate: () => !e7 && (0, eB.Jw)()
+        predicate: () => !e7 && (0, eM.Jw)()
       },
       [eW.s6.OVERLAY]: {
         section: eK.oAB.OVERLAY,
@@ -2016,7 +2016,7 @@ let e1 = () => {
         section: eK.oAB.WEB_SETTING_TREE_TOOL,
         searchableTitles: ["Web Setting Tree Tool"],
         label: "Web Setting Tree Tool",
-        element: eM.Z,
+        element: eB.Z,
         predicate: () => W.Z.isDeveloper
       },
       [eW.s6.LOGOUT]: {

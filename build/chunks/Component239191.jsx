@@ -20,14 +20,14 @@ var Chunk255367 = require("./255367.js"),
   Chunk874893 = require("./874893.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk47305 = require("./47305.js");
+  Chunk3498 = require("./3498.js");
 
 function f(e) {
   let {
     options: t,
     selected: n,
-    onSelect: s,
-    showLabels: r,
+    onSelect: r,
+    showLabels: s,
     renderOptionContainer: l
   } = e;
   return (0, i.jsx)(c.Kqy, {
@@ -39,7 +39,7 @@ function f(e) {
         gap: 16,
         children: (0, i.jsx)(c.ua7, {
           text: e.label,
-          shouldShow: !r && true,
+          shouldShow: !s && true,
           children: t => {
             var l, o;
             return (0, i.jsxs)(c.P3F, (l = function(e) {
@@ -61,10 +61,10 @@ function f(e) {
               return e
             }({}, t), o = o = {
               "data-selected": e.id === n,
-              onClick: () => s(e.id),
+              onClick: () => r(e.id),
               className: a()(e.className, O.option),
               style: e.style,
-              children: [r && (0, i.jsx)(c.Text, {
+              children: [s && (0, i.jsx)(c.Text, {
                 variant: "text-sm/medium",
                 color: "text-primary",
                 children: e.label
@@ -90,26 +90,26 @@ function f(e) {
     })
   })
 }
-let v = [{
+let _ = [{
     id: Chunk231338.BR.LIGHT,
     label: Chunk388032.intl.string(Chunk388032.t.K2sFfn),
-    className: a()("theme-light", Chunk47305.themeOption)
+    className: a()("theme-light", Chunk3498.themeOption)
   }, {
     id: Chunk231338.BR.DARK,
     label: Chunk388032.intl.string(Chunk388032.t.SMPT1t),
-    className: a()("theme-dark", Chunk47305.themeOption)
+    className: a()("theme-dark", Chunk3498.themeOption)
   }, {
     id: Chunk231338.BR.DARKER,
     label: Chunk388032.intl.string(Chunk388032.t.b8Cei4),
-    className: a()("theme-darker", Chunk47305.themeOption),
+    className: a()("theme-darker", Chunk3498.themeOption),
     new: true
   }, {
     id: Chunk231338.BR.MIDNIGHT,
     label: Chunk388032.intl.string(Chunk388032.t.Do4ZJy),
-    className: a()("theme-midnight", Chunk47305.themeOption),
+    className: a()("theme-midnight", Chunk3498.themeOption),
     new: true
   }],
-  _ = [{
+  v = [{
     id: "compact",
     label: Chunk388032.intl.string(Chunk388032.t["7iegX1"])
   }, {
@@ -124,21 +124,21 @@ function w(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, [r] = s.useState(() => h.Z.gradientPreset), b = (0, l.e7)([p.Z], () => p.Z.theme), [w] = s.useState(() => u.ZP.useSystemTheme === x.KW.ON), [N, k] = s.useState(() => w ? "system" : null != r ? "gradient" : b), {
+  } = e, [s] = r.useState(() => h.Z.gradientPreset), b = (0, l.e7)([p.Z], () => p.Z.theme), [w] = r.useState(() => u.ZP.useSystemTheme === x.KW.ON), [N, k] = r.useState(() => w ? "system" : null != s ? "gradient" : b), {
     density: C
-  } = (0, c.TCT)(), P = s.useMemo(() => {
-    if (null == r && !w) return v;
-    let e = [...v];
-    if (null != r) {
+  } = (0, c.TCT)(), P = r.useMemo(() => {
+    if (null == s && !w) return _;
+    let e = [..._];
+    if (null != s) {
       let {
         colors: t,
         angle: n,
         theme: i,
-        getName: s
-      } = r, l = (0, g.VK)({
+        getName: r
+      } = s, l = (0, g.VK)({
         colors: t,
         angle: n
-      }), o = s();
+      }), o = r();
       e.push({
         id: "gradient",
         label: o,
@@ -153,7 +153,7 @@ function w(e) {
       label: j.intl.string(j.t["7rOU6u"]),
       className: O.themeOption
     }), e
-  }, [r, w]), K = (0, m.Z)("(max-height: 800px)");
+  }, [s, w]), K = (0, m.Z)("(max-height: 800px)");
   return (0, i.jsxs)(c.Y0X, {
     transitionState: t,
     size: c.CgR.DYNAMIC,
@@ -195,9 +195,9 @@ function w(e) {
             options: P,
             selected: N,
             onSelect: e => {
-              k(e), "gradient" === e ? null != r && (0, d.ZI)({
-                backgroundGradientPresetId: r.id,
-                theme: r.theme
+              k(e), "gradient" === e ? null != s && (0, d.ZI)({
+                backgroundGradientPresetId: s.id,
+                theme: s.theme
               }) : (0, d.ZI)({
                 theme: e
               })
@@ -239,7 +239,7 @@ function w(e) {
             })]
           }), (0, i.jsx)(f, {
             showLabels: true,
-            options: _,
+            options: v,
             selected: C,
             onSelect: e => {
               switch (e) {

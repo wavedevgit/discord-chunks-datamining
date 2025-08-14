@@ -1,27 +1,26 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 575356, original params: e,t,n (module,exports,require) **/
 let i;
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
-var r, s, a, Chunk442837 = require("./442837.js"),
+var r, s, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let c = false;
-class d extends(a = Chunk442837.ZP.Store) {
+let o = false;
+class c extends(s = Chunk442837.ZP.Store) {
   get harvestType() {
     return i
   }
   get requestingHarvest() {
-    return c
+    return o
   }
-}
-s = "DataHarvestStore", (r = "displayName") in d ? Object.defineProperty(d, r, {
-  value: s,
+}(r = "displayName") in c ? Object.defineProperty(c, r, {
+  value: "DataHarvestStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : d[r] = s;
-let u = new d(Chunk570140.Z, {
+}) : c[r] = "DataHarvestStore";
+let d = new c(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
     i = true
   },
@@ -29,15 +28,15 @@ let u = new d(Chunk570140.Z, {
     let {
       harvestType: t
     } = e;
-    c = false, i = t
+    o = false, i = t
   },
   LOAD_DATA_HARVEST_TYPE_START: function() {
-    c = true
+    o = true
   },
   LOAD_DATA_HARVEST_TYPE_FAILURE: function() {
-    c = false
+    o = false
   },
   LOGOUT: function() {
-    c = false, i = null
+    o = false, i = null
   }
 })

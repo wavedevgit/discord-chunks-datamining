@@ -25,7 +25,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk158776 = require("./158776.js"),
   Chunk579407 = require("./579407.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk805920 = require("./805920.js"),
+  Chunk198921 = require("./198921.js"),
   Chunk460400 = require("./460400.js"),
   Chunk943549 = require("./943549.js");
 let N = {
@@ -46,14 +46,14 @@ let N = {
       showPlaceholderUser: L,
       pendingGlobalName: x,
       pendingDisplayNameStyles: M,
-      nameplatePreviewSize: j = "default",
-      isPurchased: k = false
+      nameplatePreviewSize: k = "default",
+      isPurchased: j = false
     } = e, U = (0, s.e7)([b.Z], () => (0, l.wj)(b.Z.theme)), G = null != o ? (0, v.EU)(o) : C, B = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), Z = U ? "#706F74" : "#aaaab2", F = i.useRef(null), V = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), H = null != t ? (0, E.Ly)({
       pendingNickname: true,
       pendingGlobalName: x,
       user: t,
       guildMember: V
-    }) : true, Y = N[j], W = (0, f.Y)({
+    }) : true, Y = N[k], W = (0, f.Y)({
       location: "NameplatePreview"
     }), K = true !== M ? M : null == t ? true : t.displayNameStyles;
     return (0, r.jsx)("div", {
@@ -65,9 +65,9 @@ let N = {
       },
       children: (0, r.jsxs)(c.Rny, {
         className: a()(R, T.nameplatePreview, {
-          [T.nameplatePurchased]: k && !w,
-          [T.large]: "large" === j,
-          [T.xlarge]: "xlarge" === j
+          [T.nameplatePurchased]: j && !w,
+          [T.large]: "large" === k,
+          [T.xlarge]: "xlarge" === k
         }),
         children: [null != G && (0, r.jsx)(g.Z, {
           nameplate: G,

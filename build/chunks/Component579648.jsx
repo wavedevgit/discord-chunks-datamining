@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 579648, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -14,8 +14,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk999382 = require("./999382.js"),
   Chunk413584 = require("./413584.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk87073 = require("./87073.js"),
-  Chunk92884 = require("./92884.js");
+  Chunk949530 = require("./949530.js"),
+  Chunk557401 = require("./557401.js");
 let f = e => {
     let {
       setWelcomeView: t,

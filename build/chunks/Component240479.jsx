@@ -26,7 +26,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk710111 = require("./710111.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk807795 = require("./807795.js");
+  Chunk937309 = require("./937309.js");
 
 function A(e) {
   let {
@@ -79,8 +79,8 @@ function N(e) {
   let {
     buttonType: L,
     description: x
-  } = (0, y.Z)(t, n, v, N), M = L === y.y.JOIN_GUILD, j = !E && w, k = i.useMemo(() => v ? d.JO.createFromGuildRecord(O) : null != N ? d.JO.createFromDiscoverableGuild(N) : true, [O, v, N]);
-  return j ? (0, r.jsx)(_.SE, {}) : (0, r.jsxs)("div", {
+  } = (0, y.Z)(t, n, v, N), M = L === y.y.JOIN_GUILD, k = !E && w, j = i.useMemo(() => v ? d.JO.createFromGuildRecord(O) : null != N ? d.JO.createFromDiscoverableGuild(N) : true, [O, v, N]);
+  return k ? (0, r.jsx)(_.SE, {}) : (0, r.jsxs)("div", {
     className: S.infoContainer,
     children: [(0, r.jsxs)(_.W_, {
       children: [(0, r.jsxs)("div", {
@@ -95,7 +95,7 @@ function N(e) {
           variant: "text-sm/normal",
           children: x
         })]
-      }), null != k && (0, r.jsxs)("div", {
+      }), null != j && (0, r.jsxs)("div", {
         className: S.infoExpandedGuildContainer,
         children: [(0, r.jsx)(a.xv, {
           variant: "eyebrow",
@@ -105,7 +105,7 @@ function N(e) {
         }), (0, r.jsx)("div", {
           className: S.infoExpandedGuildInfo,
           children: (0, r.jsx)(f.Oe, {
-            expressionSourceGuild: k,
+            expressionSourceGuild: j,
             hasJoinedExpressionSourceGuild: v,
             isDisplayingJoinGuildButtonInPopout: M
           })

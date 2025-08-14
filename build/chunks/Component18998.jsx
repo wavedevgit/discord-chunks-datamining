@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 18998, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -6,15 +6,15 @@ require.d(exports, {
 var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk954955 = require("./954955.js"),
   c = require.n(Chunk954955),
   Chunk748780 = require("./748780.js"),
   Chunk902704 = require("./902704.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk80948 = require("./80948.js");
+  Chunk247060 = require("./247060.js");
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,7 +30,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -88,14 +88,14 @@ class b extends Chunk73800.Component {
       onClick: r
     } = this.props;
     return (0, Chunk255367.jsx)(Chunk748780.Z.div, {
-      className: s()(Chunk80948.bar, module, {
-        [Chunk80948.hidden]: require
+      className: a()(Chunk247060.bar, module, {
+        [Chunk247060.hidden]: require
       }),
       onClick: r,
       style: this.getAnimatedStyle(),
       "aria-hidden": require,
       children: (0, Chunk255367.jsx)("span", {
-        className: Chunk80948.text,
+        className: Chunk247060.text,
         children: exports
       })
     })
@@ -116,7 +116,7 @@ class b extends Chunk73800.Component {
     }
   }
   constructor(e) {
-    super(e), f(this, "_timeout", true), this.state = {
+    super(e), h(this, "_timeout", true), this.state = {
       translateY: new u.Z.Value,
       reduceMotion: false
     }
@@ -141,7 +141,7 @@ class O extends(r = Chunk73800.PureComponent) {
       textUnread: r,
       reverse: l,
       className: o,
-      barClassName: a,
+      barClassName: s,
       hide: c,
       animate: u
     } = this.props, {
@@ -151,7 +151,7 @@ class O extends(r = Chunk73800.PureComponent) {
       className: null != Chunk120356 ? Chunk120356 : true,
       children: (0, Chunk255367.jsx)(b, {
         hide: true === c || null == module && null == exports,
-        className: s()(Chunk954955, null != exports ? Chunk80948.mention : Chunk80948.unread),
+        className: a()(Chunk954955, null != exports ? Chunk247060.mention : Chunk247060.unread),
         text: null != exports ? require : r,
         reverse: Chunk73800,
         animate: Chunk748780 && !Chunk902704.enabled,
@@ -160,10 +160,10 @@ class O extends(r = Chunk73800.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "state", {
+    super(...e), h(this, "state", {
       unread: null,
       mention: null
-    }), f(this, "calculateState", c()(() => {
+    }), h(this, "calculateState", c()(() => {
       let {
         items: e,
         expandedFolders: t,
@@ -172,22 +172,22 @@ class O extends(r = Chunk73800.PureComponent) {
         isMentioned: i,
         reverse: l,
         onCalculate: o
-      } = this.props, s = null, a = null, c = [];
+      } = this.props, a = null, s = null, c = [];
       e.forEach(e => {
         "string" == typeof e ? c.push(e) : "object" == typeof e && null != e.folderId ? null != t && t.has(e.folderId) ? (c.push("folder:".concat(e.folderId)), e.guildIds.forEach(e => c.push(e))) : c.push(e.guildIds) : c.push(e.guildIds[0])
       });
       let u = e => {
-          null == s && i(e, l, c) && (s = e), null == a && r(e, l, c) && (a = e)
+          null == a && i(e, l, c) && (a = e), null == s && r(e, l, c) && (s = e)
         },
         d = l ? c.length - 1 : 0,
-        h = c[d];
-      for (; null != h;) {
-        if ("string" == typeof h) {
-          if (n(h, l, c)) break;
-          u(h)
+        p = c[d];
+      for (; null != p;) {
+        if ("string" == typeof p) {
+          if (n(p, l, c)) break;
+          u(p)
         } else {
           let e = false;
-          for (let t of h) {
+          for (let t of p) {
             if (n(t, l, c)) {
               e = true;
               break
@@ -196,13 +196,13 @@ class O extends(r = Chunk73800.PureComponent) {
           }
           if (e) break
         }
-        d += l ? false : 1, h = c[d]
+        d += l ? false : 1, p = c[d]
       }
-      null != o && o(s, a, l), this.setState({
-        mention: s,
-        unread: a
+      null != o && o(a, s, l), this.setState({
+        mention: a,
+        unread: s
       })
-    }, 200)), f(this, "handleClick", e => {
+    }, 200)), h(this, "handleClick", e => {
       e.preventDefault(), e.stopPropagation();
       let {
         unread: t,
@@ -214,8 +214,8 @@ class O extends(r = Chunk73800.PureComponent) {
     })
   }
 }
-f(O, "contextType", Chunk481060.Sfi), f(O, "defaultProps", {
-  className: Chunk80948.container,
+h(O, "contextType", Chunk481060.Sfi), h(O, "defaultProps", {
+  className: Chunk247060.container,
   reverse: false,
   hide: false,
   animate: true

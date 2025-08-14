@@ -1,4 +1,4 @@
-/** Chunk was on 77720 **/
+/** Chunk was on 82411 **/
 /** chunk id: 23645, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -33,20 +33,22 @@ class s extends Chunk73800.Component {
     })
   }
   constructor(...e) {
-    var t, n;
-    super(...e), t = "handleFileDownload", n = e => {
-      e.preventDefault();
-      let t = this.getFileContents(),
-        {
-          fileName: n,
-          onDownload: r
-        } = this.props;
-      a.isPlatformEmbedded ? this.downloadNative(t, n) : this.downloadHtml5(t, n), null == r || r()
-    }, t in this ? Object.defineProperty(this, t, {
-      value: n,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[t] = n
+    super(...e),
+      function(e, t, n) {
+        t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
+      }(this, "handleFileDownload", e => {
+        e.preventDefault();
+        let t = this.getFileContents(),
+          {
+            fileName: n,
+            onDownload: r
+          } = this.props;
+        a.isPlatformEmbedded ? this.downloadNative(t, n) : this.downloadHtml5(t, n), null == r || r()
+      })
   }
 }

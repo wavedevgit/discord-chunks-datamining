@@ -1,7 +1,7 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 785145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk399606 = require("./399606.js"),
@@ -10,11 +10,10 @@ var Chunk73800 = require("./73800.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js");
 let c = new Set(Object.values(Chunk526761.NB)),
-  d = e => null != e && c.has(e),
-  u = () => {
+  d = () => {
     let e = (0, Chunk399606.e7)([Chunk663389.Z], () => {
         let e = Chunk663389.Z.getSubsection();
-        return d(module) ? module : Chunk526761.NB.USER_PROFILE
+        return null != module && c.has(module) ? module : Chunk526761.NB.USER_PROFILE
       }),
       t = Chunk73800.useCallback(t => {
         e !== t && s.Z.setSection(l.oAB.PROFILE_CUSTOMIZATION, t)

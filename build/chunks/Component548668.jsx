@@ -2,7 +2,7 @@
 /** chunk id: 548668, original params: e,t,a (module,exports,require) **/
 let n;
 require.d(exports, {
-  $: () => b
+  $: () => f
 });
 var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -16,7 +16,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk231338 = require("./231338.js"),
   Chunk436620 = require("./436620.js"),
   Chunk330711 = require("./330711.js"),
-  Chunk544747 = require("./544747.js");
+  Chunk10416 = require("./10416.js");
 
 function k(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
@@ -31,127 +31,7 @@ let g = "Footer Navigation",
     BLURPLE: "Blurple",
     PRIMARY: "Primary"
   },
-  O = () => [{
-    title: Chunk330711.Z.Messages.NAVIGATION_PRODUCT,
-    routes: [{
-      link: Chunk231338.am.DOWNLOAD,
-      title: Chunk330711.Z.Messages.NAVIGATION_DOWNLOAD,
-      tracking: "download"
-    }, {
-      link: Chunk231338.am.BRANDING,
-      title: Chunk330711.Z.Messages.NAVIGATION_BRANDING,
-      tracking: "branding"
-    }, {
-      link: Chunk231338.am.NITRO,
-      title: Chunk330711.Z.Messages.NAVIGATION_NITRO,
-      tracking: "nitro",
-      external: true
-    }]
-  }, {
-    title: Chunk330711.Z.Messages.NAVIGATION_DEVELOPERS,
-    routes: [{
-      link: Chunk231338.am.RICH_PRESENCE,
-      title: Chunk330711.Z.Messages.NAVIGATION_RICH_PRESENCE,
-      tracking: "rich_presence"
-    }, {
-      link: Chunk231338.am.VERIFICATION,
-      title: Chunk330711.Z.Messages.NAVIGATION_VERIFICATION,
-      tracking: "verification",
-      external: true
-    }, {
-      link: Chunk231338.yX.DEV_PORTAL_APPLICATIONS,
-      title: Chunk330711.Z.Messages.NAVIGATION_APPLICATIONS,
-      tracking: "developers",
-      external: true
-    }, {
-      link: Chunk231338.yX.DEV_PORTAL_DOCUMENTATION,
-      title: Chunk330711.Z.Messages.NAVIGATION_DOCUMENTATION,
-      tracking: "documentation",
-      external: true
-    }]
-  }, {
-    title: Chunk330711.Z.Messages.NAVIGATION_RESOURCES,
-    routes: [{
-      link: Chunk231338.yX.HELP_AND_SUPPORT,
-      title: Chunk330711.Z.Messages.NAVIGATION_HELP_AND_SUPPORT,
-      tracking: "helpandsupport",
-      external: true
-    }, {
-      link: Chunk231338.am.GUIDELINES,
-      title: Chunk330711.Z.Messages.NAVIGATION_GUIDELINES,
-      tracking: "guidelines",
-      external: true
-    }, {
-      link: Chunk231338.yX.FEEDBACK,
-      title: Chunk330711.Z.Messages.NAVIGATION_FEEDBACK,
-      tracking: "feedback",
-      external: true
-    }, {
-      link: Chunk231338.am.TERMS,
-      title: Chunk330711.Z.Messages.NAVIGATION_TERMS,
-      tracking: "terms",
-      external: true
-    }, {
-      link: Chunk231338.am.PRIVACY,
-      title: Chunk330711.Z.Messages.NAVIGATION_PRIVACY,
-      tracking: "privacy",
-      external: true
-    }, {
-      link: Chunk231338.am.SECURITY,
-      title: Chunk330711.Z.Messages.NAVIGATION_SECURITY,
-      tracking: "security"
-    }, {
-      link: Chunk231338.yX.STATUS,
-      title: Chunk330711.Z.Messages.NAVIGATION_STATUS,
-      tracking: "status",
-      external: true
-    }, {
-      link: Chunk231338.am.SAFETY_LANDING,
-      title: Chunk330711.Z.Messages.NAVIGATION_SAFETY_CENTER,
-      tracking: "safetycenter",
-      external: true
-    }]
-  }, {
-    title: Chunk330711.Z.Messages.NAVIGATION_COMPANY,
-    routes: [{
-      link: Chunk231338.am.COMPANY,
-      title: Chunk330711.Z.Messages.NAVIGATION_ABOUT,
-      tracking: "about"
-    }, {
-      link: Chunk231338.am.BLOG,
-      title: Chunk330711.Z.Messages.NAVIGATION_BLOG,
-      tracking: "blog",
-      external: true
-    }, {
-      link: Chunk231338.am.JOBS,
-      title: Chunk330711.Z.Messages.NAVIGATION_JOBS,
-      tracking: "join",
-      external: true
-    }]
-  }, {
-    title: Chunk330711.Z.Messages.NAVIGATION_MORE,
-    routes: [{
-      link: Chunk231338.am.PARTNERS,
-      title: Chunk330711.Z.Messages.NAVIGATION_PARTNERS,
-      tracking: "partners",
-      external: true
-    }, {
-      link: Chunk231338.am.HYPESQUAD,
-      title: Chunk330711.Z.Messages.NAVIGATION_HYPESQUAD,
-      tracking: "hypesquad",
-      external: true
-    }, {
-      link: Chunk231338.yX.PRESS_INQUIRIES,
-      title: Chunk330711.Z.Messages.NAVIGATION_PRESS_INQUIRIES,
-      tracking: "pressinquiries",
-      external: true
-    }, {
-      link: Chunk231338.am.OPEN_SOURCE,
-      title: Chunk330711.Z.Messages.NAVIGATION_OPEN_SOURCE,
-      tracking: "open_source"
-    }]
-  }],
-  f = e => {
+  O = e => {
     let {
       colorVariant: t,
       animate: a
@@ -171,7 +51,7 @@ let g = "Footer Navigation",
       })
     })
   };
-class b extends(r = Chunk73800.PureComponent) {
+class f extends(r = Chunk73800.PureComponent) {
   componentDidMount() {
     this.setState({
       token: (0, Chunk213919.getToken)(),
@@ -240,7 +120,126 @@ class b extends(r = Chunk73800.PureComponent) {
     } = this.props, {
       animateBackground: d,
       token: _
-    } = this.state, p = O().map(e => {
+    } = this.state, p = [{
+      title: Chunk330711.Z.Messages.NAVIGATION_PRODUCT,
+      routes: [{
+        link: Chunk231338.am.DOWNLOAD,
+        title: Chunk330711.Z.Messages.NAVIGATION_DOWNLOAD,
+        tracking: "download"
+      }, {
+        link: Chunk231338.am.BRANDING,
+        title: Chunk330711.Z.Messages.NAVIGATION_BRANDING,
+        tracking: "branding"
+      }, {
+        link: Chunk231338.am.NITRO,
+        title: Chunk330711.Z.Messages.NAVIGATION_NITRO,
+        tracking: "nitro",
+        external: true
+      }]
+    }, {
+      title: Chunk330711.Z.Messages.NAVIGATION_DEVELOPERS,
+      routes: [{
+        link: Chunk231338.am.RICH_PRESENCE,
+        title: Chunk330711.Z.Messages.NAVIGATION_RICH_PRESENCE,
+        tracking: "rich_presence"
+      }, {
+        link: Chunk231338.am.VERIFICATION,
+        title: Chunk330711.Z.Messages.NAVIGATION_VERIFICATION,
+        tracking: "verification",
+        external: true
+      }, {
+        link: Chunk231338.yX.DEV_PORTAL_APPLICATIONS,
+        title: Chunk330711.Z.Messages.NAVIGATION_APPLICATIONS,
+        tracking: "developers",
+        external: true
+      }, {
+        link: Chunk231338.yX.DEV_PORTAL_DOCUMENTATION,
+        title: Chunk330711.Z.Messages.NAVIGATION_DOCUMENTATION,
+        tracking: "documentation",
+        external: true
+      }]
+    }, {
+      title: Chunk330711.Z.Messages.NAVIGATION_RESOURCES,
+      routes: [{
+        link: Chunk231338.yX.HELP_AND_SUPPORT,
+        title: Chunk330711.Z.Messages.NAVIGATION_HELP_AND_SUPPORT,
+        tracking: "helpandsupport",
+        external: true
+      }, {
+        link: Chunk231338.am.GUIDELINES,
+        title: Chunk330711.Z.Messages.NAVIGATION_GUIDELINES,
+        tracking: "guidelines",
+        external: true
+      }, {
+        link: Chunk231338.yX.FEEDBACK,
+        title: Chunk330711.Z.Messages.NAVIGATION_FEEDBACK,
+        tracking: "feedback",
+        external: true
+      }, {
+        link: Chunk231338.am.TERMS,
+        title: Chunk330711.Z.Messages.NAVIGATION_TERMS,
+        tracking: "terms",
+        external: true
+      }, {
+        link: Chunk231338.am.PRIVACY,
+        title: Chunk330711.Z.Messages.NAVIGATION_PRIVACY,
+        tracking: "privacy",
+        external: true
+      }, {
+        link: Chunk231338.am.SECURITY,
+        title: Chunk330711.Z.Messages.NAVIGATION_SECURITY,
+        tracking: "security"
+      }, {
+        link: Chunk231338.yX.STATUS,
+        title: Chunk330711.Z.Messages.NAVIGATION_STATUS,
+        tracking: "status",
+        external: true
+      }, {
+        link: Chunk231338.am.SAFETY_LANDING,
+        title: Chunk330711.Z.Messages.NAVIGATION_SAFETY_CENTER,
+        tracking: "safetycenter",
+        external: true
+      }]
+    }, {
+      title: Chunk330711.Z.Messages.NAVIGATION_COMPANY,
+      routes: [{
+        link: Chunk231338.am.COMPANY,
+        title: Chunk330711.Z.Messages.NAVIGATION_ABOUT,
+        tracking: "about"
+      }, {
+        link: Chunk231338.am.BLOG,
+        title: Chunk330711.Z.Messages.NAVIGATION_BLOG,
+        tracking: "blog",
+        external: true
+      }, {
+        link: Chunk231338.am.JOBS,
+        title: Chunk330711.Z.Messages.NAVIGATION_JOBS,
+        tracking: "join",
+        external: true
+      }]
+    }, {
+      title: Chunk330711.Z.Messages.NAVIGATION_MORE,
+      routes: [{
+        link: Chunk231338.am.PARTNERS,
+        title: Chunk330711.Z.Messages.NAVIGATION_PARTNERS,
+        tracking: "partners",
+        external: true
+      }, {
+        link: Chunk231338.am.HYPESQUAD,
+        title: Chunk330711.Z.Messages.NAVIGATION_HYPESQUAD,
+        tracking: "hypesquad",
+        external: true
+      }, {
+        link: Chunk231338.yX.PRESS_INQUIRIES,
+        title: Chunk330711.Z.Messages.NAVIGATION_PRESS_INQUIRIES,
+        tracking: "pressinquiries",
+        external: true
+      }, {
+        link: Chunk231338.am.OPEN_SOURCE,
+        title: Chunk330711.Z.Messages.NAVIGATION_OPEN_SOURCE,
+        tracking: "open_source"
+      }]
+    }].map(e => {
       let t = e.routes.map((e, t) => e.external ? (0, s.jsx)(n, {
         className: I.route,
         eventName: g,
@@ -276,19 +275,19 @@ class b extends(r = Chunk73800.PureComponent) {
       onChange: this.handleVisibility,
       children: (0, Chunk255367.jsxs)("footer", {
         ref: this.ref,
-        className: o()((0, Chunk982905.l)(Chunk544747, "footer", module), r),
+        className: o()((0, Chunk982905.l)(Chunk10416, "footer", module), r),
         style: exports,
-        children: [Chunk120356 ? (0, Chunk255367.jsx)(f, {
+        children: [Chunk120356 ? (0, Chunk255367.jsx)(O, {
           colorVariant: module,
           animate: Chunk213919
         }) : null, (0, Chunk255367.jsxs)("div", {
-          className: Chunk544747.footerContent,
+          className: Chunk10416.footerContent,
           children: [(0, Chunk255367.jsxs)("div", {
-            className: Chunk544747.navigation,
+            className: Chunk10416.navigation,
             children: [(0, Chunk255367.jsx)("div", {
-              className: Chunk544747.logoWrap,
+              className: Chunk10416.logoWrap,
               children: (0, Chunk255367.jsx)(n, {
-                className: Chunk544747.logo,
+                className: Chunk10416.logo,
                 href: Chunk231338.am.INDEX,
                 eventName: g,
                 data: {
@@ -301,16 +300,16 @@ class b extends(r = Chunk73800.PureComponent) {
               })
             }), Chunk436620]
           }), (0, Chunk255367.jsx)("div", {
-            className: Chunk544747.separator
+            className: Chunk10416.separator
           }), (0, Chunk255367.jsxs)("div", {
-            className: Chunk544747.joinDiscord,
+            className: Chunk10416.joinDiscord,
             children: [(0, Chunk255367.jsxs)("div", {
-              className: Chunk544747.stats,
+              className: Chunk10416.stats,
               children: [(0, Chunk255367.jsx)("h2", {
-                className: Chunk544747.readyToJoin,
+                className: Chunk10416.readyToJoin,
                 children: Chunk330711.Z.Messages.FOOTER_READY_TO_TRY_DISCORD
               }), (0, Chunk255367.jsx)("h3", {
-                className: Chunk544747.joinOtherPlayers,
+                className: Chunk10416.joinOtherPlayers,
                 children: Chunk330711.Z.Messages.FOOTER_JOIN_OVER_PLAYERS_TODAY.format({
                   num: Chunk231338.vS
                 })
@@ -348,7 +347,7 @@ class b extends(r = Chunk73800.PureComponent) {
     }, t))
   }
 }
-k(b, "Variants", A), k(b, "defaultProps", {
+k(f, "Variants", A), k(f, "defaultProps", {
   variant: A.PRIMARY,
   showWave: true
 })

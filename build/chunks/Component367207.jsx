@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 367207, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => j
 }), require("./415506.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -54,7 +54,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class C extends Chunk317770.Z {
+class v extends Chunk317770.Z {
   _initialize() {
     __OVERLAY__ ? Chunk570140.Z.subscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (Chunk570140.Z.subscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), Chunk570140.Z.subscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._trackCustomNotificationSoundsExposure))
   }
@@ -79,7 +79,7 @@ class C extends Chunk317770.Z {
   openPremiumPaymentModalInApp(e) {
     if (__OVERLAY__) throw Error("Should not use this function from the overlay, use ModalAPI.openModal instead");
     return new Promise((t, n) => {
-      (0, a.Z)(y(_({}, e), {
+      (0, s.Z)(y(_({}, e), {
         onClose: e => {
           e ? t() : n()
         }
@@ -108,7 +108,7 @@ class C extends Chunk317770.Z {
     super(...e), O(this, "_premiumPaymentModalCloseResolve", null), O(this, "_premiumPaymentModalCloseReject", null), O(this, "_maybeFetchPremiumOffer", async () => {
       let e = u.default.getCurrentUser();
       if (null != e && e.verified) {
-        let t = (d.Z.canFractionalPremiumUserUseOffer() || !(0, h.I5)(e)) && !d.Z.isFetchingOffer();
+        let t = (d.Z.canFractionalPremiumUserUseOffer() || !(0, p.I5)(e)) && !d.Z.isFetchingOffer();
         await (0, g.Tf)("PremiumManager", t)
       }
       l.Z.dispatch({
@@ -116,7 +116,7 @@ class C extends Chunk317770.Z {
       })
     }), O(this, "_maybeFetchCheckoutRecovery", async () => {
       let e = u.default.getCurrentUser();
-      null != e && e.verified && !(0, h.I5)(e) && f.Z.shouldFetchCheckoutRecovery() && await (0, p.o)()
+      null != e && e.verified && !(0, p.I5)(e) && h.Z.shouldFetchCheckoutRecovery() && await (0, f.o)()
     }), O(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
@@ -131,8 +131,8 @@ class C extends Chunk317770.Z {
         location: "PremiumManager"
       })
     }), O(this, "_handlePremiumPaymentModalOpen", e => {
-      (0, a.Z)(y(_({}, e), {
-        analyticsLocations: [s.Z.OVERLAY],
+      (0, s.Z)(y(_({}, e), {
+        analyticsLocations: [a.Z.OVERLAY],
         onClose: e => {
           l.Z.dispatch({
             type: "PREMIUM_PAYMENT_MODAL_CLOSE",
@@ -148,4 +148,4 @@ class C extends Chunk317770.Z {
     })
   }
 }
-let v = new C
+let j = new v

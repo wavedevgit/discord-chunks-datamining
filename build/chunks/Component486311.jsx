@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 486311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => C
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -18,11 +18,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk933104 = require("./933104.jsx"),
   Chunk332538 = require("./332538.jsx"),
   Chunk921944 = require("./921944.js"),
-  Chunk93841 = require("./93841.js"),
+  Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk18282 = require("./18282.js");
+  Chunk969649 = require("./969649.js");
 
-function C(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function C(e) {
   }
   return e
 }
-let v = {
+let j = {
     animation: {
       BEG: 0,
       END: 75
@@ -50,67 +50,67 @@ let v = {
       END: 376
     }
   },
-  j = Chunk73800.memo(function(e) {
+  C = Chunk73800.memo(function(e) {
     let {
       guildId: t,
       selected: l
-    } = e, j = (0, m.ZP)(t), E = i.useCallback(() => {
+    } = e, C = (0, m.ZP)(t), E = i.useCallback(() => {
       var e;
-      (0, h.jd)(t), (0, f.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == j || null == (e = j.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
-    }, [t, j]), S = i.useCallback(() => {
+      (0, p.jd)(t), (0, h.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == C || null == (e = C.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
+    }, [t, C]), x = i.useCallback(() => {
       var e;
-      switch (null == j || null == (e = j.popout) ? true : e.type) {
-        case p.J.LEVEL_REACHED:
-          return (0, r.jsx)(g.jG, C({
+      switch (null == C || null == (e = C.popout) ? true : e.type) {
+        case f.J.LEVEL_REACHED:
+          return (0, r.jsx)(g.jG, v({
             guildId: t
-          }, j.popout));
-        case p.J.PERKS_AVAILABLE:
-          return (0, r.jsx)(g.$h, C({
+          }, C.popout));
+        case f.J.PERKS_AVAILABLE:
+          return (0, r.jsx)(g.$h, v({
             guildId: t
-          }, j.popout));
-        case p.J.PERKS_PURCHASABLE:
-          return (0, r.jsx)(g.yI, C({
+          }, C.popout));
+        case f.J.PERKS_PURCHASABLE:
+          return (0, r.jsx)(g.yI, v({
             guildId: t
-          }, j.popout));
-        case p.J.NEW_PERK_AVAILABLE:
-          return (0, r.jsx)(g.cO, C({
+          }, C.popout));
+        case f.J.NEW_PERK_AVAILABLE:
+          return (0, r.jsx)(g.cO, v({
             guildId: t
-          }, j.popout));
+          }, C.popout));
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == j ? true : j.popout]), x = (0, a.s9z)(a.JQI), I = (0, s.e7)([d.Z], () => d.Z.hasLayers()), [P, N] = i.useState(null), w = null == P ? "animation" : "LOOP";
+    }, [t, null == C ? true : C.popout]), S = (0, s.s9z)(s.JQI), P = (0, a.e7)([d.Z], () => d.Z.hasLayers()), [I, N] = i.useState(null), w = null == I ? "animation" : "LOOP";
     i.useEffect(() => {
-      (null == j ? true : j.popout) == null && N(null)
-    }, [null == j ? true : j.popout]);
+      (null == C ? true : C.popout) == null && N(null)
+    }, [null == C ? true : C.popout]);
     let Z = i.useCallback(e => {
         N(e)
       }, []),
       T = i.useRef(null);
-    return (0, r.jsx)(a.yRy, {
+    return (0, r.jsx)(s.yRy, {
       targetElementRef: T,
-      shouldShow: (null == j ? true : j.popout) != null && !(x || I),
+      shouldShow: (null == C ? true : C.popout) != null && !(S || P),
       nudgeAlignIntoViewport: true,
       animationPosition: "bottom",
       position: "right",
-      renderPopout: S,
+      renderPopout: x,
       children: e => {
-        var i, s;
-        return (0, r.jsx)(u.m, (i = C({}, e), s = s = {
+        var i, a;
+        return (0, r.jsx)(u.m, (i = v({}, e), a = a = {
           ref: T,
           className: y.container,
           id: "skill-trees-".concat(t),
-          renderIcon: e => (0, r.jsx)(a.$Eu, {
+          renderIcon: e => (0, r.jsx)(s.$Eu, {
             size: "md",
             className: e,
             color: "currentColor"
           }),
-          background: (null == j ? true : j.popout) != null && (0, r.jsx)("div", {
+          background: (null == C ? true : C.popout) != null && (0, r.jsx)("div", {
             className: y.lottieContainer,
-            children: (0, r.jsx)(a.kci, {
+            children: (0, r.jsx)(s.kci, {
               nextScene: w,
               className: y.lottie,
-              sceneSegments: v,
+              sceneSegments: j,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
               onScenePlay: Z,
               rendererSettings: {
@@ -120,23 +120,23 @@ let v = {
           }),
           text: (0, r.jsx)("span", {
             className: o()({
-              [y.textImportant]: (null == j ? true : j.showUnread) === true
+              [y.textImportant]: (null == C ? true : C.showUnread) === true
             }),
             children: _.intl.string(O.default.yv3DJC)
           }),
           selected: l,
           onClick: E,
-          showUnread: (null == j ? true : j.showUnread) === true,
-          trailing: null == j ? true : j.trailing
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+          showUnread: (null == C ? true : C.showUnread) === true,
+          trailing: null == C ? true : C.trailing
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(s)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
         }), i))
       }
     })

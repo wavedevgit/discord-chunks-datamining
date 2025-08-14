@@ -7,5 +7,5 @@ require.d(exports, {
 var Chunk110592 = require("./110592.js");
 let o = function(e) {
   var t = (0, n.Z)(this, e).delete(e);
-  return this.size -= +!!t, t
+  return this.size -= !!t, t
 }

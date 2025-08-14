@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 782896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   c: () => m
@@ -11,17 +11,17 @@ var Chunk255367 = require("./255367.js"),
   Chunk430824 = require("./430824.js"),
   Chunk914010 = require("./914010.js"),
   Chunk797670 = require("./797670.jsx"),
-  Chunk29953 = require("./29953.js"),
+  Chunk933554 = require("./933554.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk202580 = require("./202580.js");
+  Chunk906530 = require("./906530.js");
 
-function f(e) {
+function h(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsx)(s.ZP, {
-    className: p.facepileItemContainer,
-    mask: s.ZP.Masks.SQUIRCLE,
+  return (0, r.jsx)(a.ZP, {
+    className: f.facepileItemContainer,
+    mask: a.ZP.Masks.SQUIRCLE,
     width: 25,
     height: 25,
     children: t
@@ -34,23 +34,23 @@ function g(e) {
     numTruncated: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: p.guildIconList,
+    className: f.guildIconList,
     children: [t.map(e => (0, r.jsxs)("div", {
-      className: p.guildIconItem,
+      className: f.guildIconItem,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(u.V, {
           guild: e,
           size: 20
         })
       }), (0, r.jsx)(o.Text, {
-        className: p.guildIconItemText,
+        className: f.guildIconItemText,
         variant: "text-xs/medium",
         children: e.name
       })]
     }, e.id)), n > 0 && (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-secondary",
-      children: h.intl.format(d.default.bAzBIS, {
+      children: p.intl.format(d.default.bAzBIS, {
         numServers: n
       })
     })]
@@ -60,7 +60,7 @@ function g(e) {
 function m(e) {
   let {
     guildIds: t
-  } = e, n = (0, l.e7)([c.Z], () => c.Z.getGuildId()), s = (0, l.Wu)([a.Z], () => t.map(e => a.Z.getGuild(e)), [t]), m = (0, i.useMemo)(() => s.filter(e => null != e), [s]), {
+  } = e, n = (0, l.e7)([c.Z], () => c.Z.getGuildId()), a = (0, l.Wu)([s.Z], () => t.map(e => s.Z.getGuild(e)), [t]), m = (0, i.useMemo)(() => a.filter(e => null != e), [a]), {
     visibleGuilds: b,
     numTruncated: O,
     visibleGuildsTooltip: _,
@@ -84,22 +84,22 @@ function m(e) {
     }
   }, [m, n]);
   return (0, r.jsx)(o.DY3, {
-    "aria-label": h.intl.string(d.default.TG0Qsb),
+    "aria-label": p.intl.string(d.default.TG0Qsb),
     text: (0, r.jsx)(g, {
       guilds: _,
       numTruncated: y
     }),
     position: "top",
     children: (0, r.jsxs)("div", {
-      className: p.facepile,
-      children: [b.map(e => (0, r.jsx)(f, {
+      className: f.facepile,
+      children: [b.map(e => (0, r.jsx)(h, {
         children: (0, r.jsx)(u.V, {
           guild: e,
           size: 20
         })
-      }, e.id)), O > 0 && (0, r.jsx)(f, {
+      }, e.id)), O > 0 && (0, r.jsx)(h, {
         children: (0, r.jsxs)(o.Text, {
-          className: p.textItem,
+          className: f.textItem,
           color: "text-secondary",
           variant: "text-xxs/semibold",
           children: ["+", O]

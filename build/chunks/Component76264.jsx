@@ -9,8 +9,8 @@ var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
-  Chunk944135 = require("./944135.js"),
-  Chunk440942 = require("./440942.js");
+  Chunk520310 = require("./520310.js"),
+  Chunk452847 = require("./452847.js");
 let d = e => {
     let {
       child: t,

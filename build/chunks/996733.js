@@ -1,8 +1,8 @@
-/** Chunk was on 72762 **/
+/** Chunk was on 77512 **/
 /** chunk id: 996733, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   QH: () => l,
-  Z7: () => s,
+  Z7: () => o,
   yN: () => i
 }), require("./781311.js");
 let r = (0, require("./972959.js").H)(() => ({
@@ -23,6 +23,6 @@ function l(e) {
   })
 }
 
-function s() {
+function o() {
   return r.useField("query")
 }

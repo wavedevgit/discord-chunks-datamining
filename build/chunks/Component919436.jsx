@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -27,7 +27,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk674552 = require("./674552.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk906016 = require("./906016.js");
+  Chunk514483 = require("./514483.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -87,7 +87,7 @@ class R extends(r = Chunk73800.PureComponent) {
       controller: t
     } = this.state;
     e(), t.update({
-      immediate: !C.Z.isFocused(),
+      immediate: !v.Z.isFocused(),
       height: 1,
       opacity: 1,
       scale: 1,
@@ -115,7 +115,7 @@ class R extends(r = Chunk73800.PureComponent) {
     this.setState({
       animating: true
     }, () => t.update({
-      immediate: !C.Z.isFocused(),
+      immediate: !v.Z.isFocused(),
       height: 0,
       opacity: 0,
       scale: 0,
@@ -154,16 +154,39 @@ class R extends(r = Chunk73800.PureComponent) {
       selected: n,
       badge: r,
       audio: l,
-      video: s,
-      stream: a,
+      video: a,
+      stream: s,
       isCurrentUserInThisDMCall: u,
       unread: d,
-      isGDMFacepileEnabled: h,
-      treeItemProps: p
+      isGDMFacepileEnabled: p,
+      treeItemProps: f
     } = this.props, {
-      hovered: f,
+      hovered: h,
       animating: m
-    } = this.state, b = module.isMultiUserDM() && null == module.icon && Chunk43267;
+    } = this.state, b = module.isMultiUserDM() && null == module.icon && Chunk43267, O = () => (0, Chunk255367.jsx)(Chunk481060.LYs, w({
+      to: Chunk981631.Z5c.CHANNEL(Chunk981631.ME, module.id),
+      onMouseEnter: () => this.setState({
+        hovered: true
+      }),
+      onMouseLeave: () => this.setState({
+        hovered: false
+      }),
+      selected: require || Chunk93687,
+      ariaLabel: null != exports ? Chunk388032.intl.formatToPlainString(Chunk388032.t.hKarnZ, {
+        mentions: r,
+        name: exports
+      }) : "",
+      onContextMenu: this.handleContextMenu,
+      icon: Chunk19780 ? true : this.getChannelIcon(),
+      backgroundStyle: Chunk19780 ? "on-hover" : "always",
+      children: Chunk19780 ? (0, Chunk255367.jsx)(Chunk266076.Z, {
+        channel: module,
+        size: Chunk481060.EFr.SIZE_40,
+        facepileSizeOverride: Chunk481060.EFr.SIZE_32,
+        experimentLocation: "unread_gdm",
+        "aria-hidden": true
+      }) : true
+    }, Chunk933557));
     return (0, Chunk255367.jsx)(Chunk717976.animated.div, {
       style: this.getAnimatedStyle(),
       children: (0, Chunk255367.jsxs)(Chunk682662.H, {
@@ -171,7 +194,7 @@ class R extends(r = Chunk73800.PureComponent) {
           hovered: !Chunk199902 && Chunk93687,
           selected: !Chunk199902 && require,
           unread: !Chunk199902 && Chunk358221,
-          className: Chunk906016.pill
+          className: Chunk514483.pill
         }), (0, Chunk255367.jsx)(Chunk662146.Z, {
           text: null != exports ? exports : "",
           selected: require,
@@ -188,30 +211,7 @@ class R extends(r = Chunk73800.PureComponent) {
             lowerBadgeSize: {
               width: (0, Chunk481060.OVM)(r)
             },
-            children: (0, Chunk255367.jsx)(Chunk481060.LYs, w({
-              to: Chunk981631.Z5c.CHANNEL(Chunk981631.ME, module.id),
-              onMouseEnter: () => this.setState({
-                hovered: true
-              }),
-              onMouseLeave: () => this.setState({
-                hovered: false
-              }),
-              selected: require || Chunk93687,
-              ariaLabel: null != exports ? Chunk388032.intl.formatToPlainString(Chunk388032.t.hKarnZ, {
-                mentions: r,
-                name: exports
-              }) : "",
-              onContextMenu: this.handleContextMenu,
-              icon: Chunk19780 ? true : this.getChannelIcon(),
-              backgroundStyle: Chunk19780 ? "on-hover" : "always",
-              children: Chunk19780 ? (0, Chunk255367.jsx)(Chunk266076.Z, {
-                channel: module,
-                size: Chunk481060.EFr.SIZE_40,
-                facepileSizeOverride: Chunk481060.EFr.SIZE_32,
-                experimentLocation: "unread_gdm",
-                "aria-hidden": true
-              }) : true
-            }, Chunk933557))
+            children: Chunk306680()
           })
         })]
       })
@@ -230,11 +230,11 @@ class R extends(r = Chunk73800.PureComponent) {
     }), N(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, r = t.type === x.d4z.DM ? y.default.getUser(t.getRecipientId()) : null;
+      } = this.props, r = t.type === S.d4z.DM ? y.default.getUser(t.getRecipientId()) : null;
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("39544")]).then(n.bind(n, 131404));
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("57789"), n.e("56826"), n.e("69497")]).then(n.bind(n, 131404));
         return n => (0, i.jsx)(e, Z(w({}, n), {
           channel: t,
           user: r
@@ -242,7 +242,7 @@ class R extends(r = Chunk73800.PureComponent) {
       }) : (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("57789"), n.e("38592")]).then(n.bind(n, 354741));
+        } = await Promise.all([n.e("79695"), n.e("57789"), n.e("81239")]).then(n.bind(n, 354741));
         return n => (0, i.jsx)(e, Z(w({}, n), {
           channel: t,
           selected: false
@@ -259,37 +259,37 @@ N(R, "defaultProps", {
 });
 let D = Chunk73800.forwardRef(function(e, t) {
   let n = e.channel.id,
-    r = (0, p.ZP)(e.channel),
-    l = (0, s.Ie)(n, 2),
-    o = (0, a.e7)([b.Z], () => b.Z.getChannelId(), []),
-    u = (0, a.e7)([d.Z], () => null != o ? d.Z.getMode(o) : x.WtW.VOICE, [o]),
-    h = (0, a.e7)([m.Z], () => m.Z.getAllApplicationStreamsForChannel(n).length > 0),
-    g = (0, a.e7)([_.Z], () => _.Z.getChannelId(), []),
-    y = (0, a.e7)([O.ZP], () => O.ZP.getMentionCount(n), [n]),
+    r = (0, f.ZP)(e.channel),
+    l = (0, a.Ie)(n, 2),
+    o = (0, s.e7)([b.Z], () => b.Z.getChannelId(), []),
+    u = (0, s.e7)([d.Z], () => null != o ? d.Z.getMode(o) : S.WtW.VOICE, [o]),
+    p = (0, s.e7)([m.Z], () => m.Z.getAllApplicationStreamsForChannel(n).length > 0),
+    g = (0, s.e7)([_.Z], () => _.Z.getChannelId(), []),
+    y = (0, s.e7)([O.ZP], () => O.ZP.getMentionCount(n), [n]),
     {
-      isFacepileEnabled: C
-    } = f.Z.useExperiment({
+      isFacepileEnabled: v
+    } = h.Z.useExperiment({
       location: "unread_direct_message"
     }, {
       autoTrackExposure: false
     }),
-    v = o === n,
-    j = false,
+    j = o === n,
+    C = false,
     E = false;
-  v && (j = u === x.WtW.VOICE, E = u === x.WtW.VIDEO);
-  let S = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
+  j && (C = u === S.WtW.VOICE, E = u === S.WtW.VIDEO);
+  let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
   return (0, i.jsx)(R, Z(w({}, e), {
     ref: t,
     channelName: r,
     unread: y > 0,
     selected: g === n,
     badge: y,
-    audio: j,
+    audio: C,
     video: E,
-    stream: h,
-    isCurrentUserInThisDMCall: v,
-    isGDMFacepileEnabled: C,
-    size: S,
+    stream: p,
+    isCurrentUserInThisDMCall: j,
+    isGDMFacepileEnabled: v,
+    size: x,
     treeItemProps: l
   }))
 })

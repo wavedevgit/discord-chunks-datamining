@@ -96,7 +96,7 @@ function S(e) {
   null == c || c(), (0, s.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("7654"), n.e("49049"), n.e("36264")]).then(n.bind(n, 560114));
+    } = await Promise.all([n.e("7654"), n.e("49049"), n.e("53020")]).then(n.bind(n, 560114));
     return n => (0, r.jsx)(e, O(b({}, n), {
       guild: t,
       channel: i,
@@ -135,16 +135,16 @@ function A(e) {
     } = (0, u.ZP)(),
     x = null == i ? true : i.getGuildId(),
     M = (0, a.e7)([f.Z], () => null != x ? f.Z.getGuild(x) : null, [x]),
-    j = (0, a.e7)([_.Z], () => null != t ? _.Z.getApplicationActivity(t) : true),
-    k = null == t || O ? s.ejJ : s.gQj,
+    k = (0, a.e7)([_.Z], () => null != t ? _.Z.getApplicationActivity(t) : true),
+    j = null == t || O ? s.ejJ : s.gQj,
     U = null != t ? g.intl.string(g.t["OzOM/v"]) : g.intl.string(g.t["6F9ivr"]);
-  if (null != j && I) {
+  if (null != k && I) {
     let e = () => {
-      null != L && (0, d.v)(L, d.d.INVITE), l.h7(j, false, D)
+      null != L && (0, d.v)(L, d.d.INVITE), l.h7(k, false, D)
     };
     return (0, r.jsx)(h.Z, {
       onClick: e,
-      iconComponent: k,
+      iconComponent: j,
       label: U,
       iconClassName: A,
       look: N,
@@ -166,7 +166,7 @@ function A(e) {
         guildScheduledEvent: y
       })
     },
-    iconComponent: k,
+    iconComponent: j,
     label: U,
     iconClassName: A,
     look: N,

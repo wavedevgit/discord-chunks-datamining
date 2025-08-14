@@ -1,18 +1,18 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 15066 **/
 /** chunk id: 578361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f,
-  n: () => p
+  Z: () => b,
+  n: () => f
 });
-var i, Chunk255367 = require("./255367.js"),
+var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk215569 = require("./215569.js"),
-  Chunk38 = require("./38.js");
+  Chunk278397 = require("./278397.js");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,27 +21,27 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      u(e, t, n[t])
+    }))), r.forEach(function(t) {
+      d(e, t, n[t])
     })
   }
   return e
 }
-var p = ((i = {})[i.RIGHT = false] = "RIGHT", i[i.LEFT = 1] = "LEFT", i);
-let g = {
+var f = ((r = {})[r.RIGHT = false] = "RIGHT", r[r.LEFT = 1] = "LEFT", r);
+let m = {
   friction: 7,
   tension: 40,
   clamp: true
 };
 class h extends Chunk73800.PureComponent {
   componentWillEnter(e) {
-    this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, m({
+    this._animated.setValue(-this.props.direction), s.Z.spring(this._animated, p({
       toValue: 0
     }, this.props.springSettings)).start(e)
   }
@@ -49,7 +49,7 @@ class h extends Chunk73800.PureComponent {
     this._animated.setValue(0)
   }
   componentWillLeave(e) {
-    o.Z.spring(this._animated, m({
+    s.Z.spring(this._animated, p({
       toValue: this.props.direction
     }, this.props.springSettings)).start(e)
   }
@@ -70,30 +70,30 @@ class h extends Chunk73800.PureComponent {
   render() {
     return (0, Chunk255367.jsx)(Chunk748780.Z.div, {
       style: this.getStyle(),
-      className: Chunk38.item,
+      className: Chunk278397.item,
       children: this.props.children
     })
   }
   constructor(e) {
-    super(e), u(this, "_animated", true), this._animated = new o.Z.Value(false * e.direction)
+    super(e), d(this, "_animated", true), this._animated = new s.Z.Value(false * e.direction)
   }
 }
-let f = e => {
+let b = e => {
   let {
     children: t,
     step: n,
-    direction: i,
-    className: s,
-    springSettings: a = g,
-    fadeInOut: o = false
+    direction: r,
+    className: a,
+    springSettings: i = m,
+    fadeInOut: s = false
   } = e;
-  return (0, r.jsx)(c.W, {
+  return (0, l.jsx)(c.W, {
     component: "div",
-    className: l()(d.animator, s),
-    children: (0, r.jsx)(h, {
-      direction: i,
-      springSettings: a,
-      fadeInOut: o,
+    className: o()(u.animator, a),
+    children: (0, l.jsx)(h, {
+      direction: r,
+      springSettings: i,
+      fadeInOut: s,
       children: t
     }, n)
   })

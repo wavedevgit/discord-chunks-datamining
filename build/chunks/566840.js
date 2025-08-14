@@ -1,15 +1,15 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 566840, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Eg: () => u,
-  XL: () => h
+  XL: () => p
 });
 var Chunk73800 = require("./73800.js"),
   Chunk94171 = require("./94171.js"),
   Chunk362383 = require("./362383.js"),
   Chunk731965 = require("./731965.js");
 
-function s(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -28,7 +28,7 @@ function s(e) {
   return e
 }
 
-function a(e, t) {
+function s(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,7 +61,7 @@ function d(e) {
   }
 }
 
-function h(e, t) {
+function p(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     i = r.useRef(null);
   return r.useLayoutEffect(() => {
@@ -79,8 +79,8 @@ function h(e, t) {
             c.setState(e => {
               var t, n;
               return {
-                upsellsByGuildId: a(s({}, null != (t = e.upsellsByGuildId) ? t : {}), {
-                  [u.guildId]: a(s({}, null != (n = e.upsellsByGuildId[u.guildId]) ? n : {}), {
+                upsellsByGuildId: s(a({}, null != (t = e.upsellsByGuildId) ? t : {}), {
+                  [u.guildId]: s(a({}, null != (n = e.upsellsByGuildId[u.guildId]) ? n : {}), {
                     [u.name]: u
                   })
                 })

@@ -120,8 +120,8 @@ class s {
       case o.wx.DOUBLE:
         if (0 === t) return c ? 0 : true;
         if ((0, a.hu)("number" == typeof t), Number.isNaN(t)) return "NaN";
-        if (t === Number.POSITIVE_INFINITY) return "Infinity";
-        if (t === Number.NEGATIVE_INFINITY) return "-Infinity";
+        if (t === 1 / 0) return "Infinity";
+        if (t === false / 0) return "-Infinity";
         return t;
       case o.wx.STRING:
         if ("" === t) return c ? "" : true;

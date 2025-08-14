@@ -17,7 +17,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk470209 = require("./470209.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk392035 = require("./392035.js");
+  Chunk340036 = require("./340036.js");
 
 function p() {
   return {
@@ -75,7 +75,7 @@ function h() {
   return (0, Chunk255367.jsx)(Chunk481060.Mgn, {
     size: "xs",
     color: "currentColor",
-    className: Chunk392035.warningIcon
+    className: Chunk340036.warningIcon
   })
 }
 

@@ -31,7 +31,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk46140 = require("./46140.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk982976 = require("./982976.js");
+  Chunk310696 = require("./310696.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -74,7 +74,7 @@ function x(e, t) {
 
 function M(e, t) {
   if (null == e) return {};
-  var n, r, i = j(e, t);
+  var n, r, i = k(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -82,14 +82,14 @@ function M(e, t) {
   return i
 }
 
-function j(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let k = 1e3,
+let j = 1e3,
   U = (0, Chunk717976.animated)(Chunk481060.CJ0),
   G = e => {
     var {
@@ -113,7 +113,7 @@ let k = 1e3,
         questContentPosition: o,
         sourceQuestContent: a
       }), (0, h.JG)((0, g.Rs)(t.id), () => {
-        f(true), _.current.start(k, () => f(false))
+        f(true), _.current.start(j, () => f(false))
       })
     };
     return (0, r.jsx)(d.ua7, {
@@ -142,20 +142,20 @@ let k = 1e3,
       isExpanded: w,
       contentPosition: L,
       toggleExpanded: M,
-      sourceQuestContent: j
+      sourceQuestContent: k
     } = e, {
-      ref: k,
+      ref: j,
       height: B
     } = (0, f.ZP)(), [Z, F] = i.useState(null), [V, H] = i.useState(null), Y = (0, p.Z)(e => {
       let t = e.target;
       F(t.offsetWidth), H(t.scrollWidth)
-    }), W = (0, _.y)(Y), K = (0, A.uq)(c), z = c === b.jn.QUESTS_EMBED, q = (0, E.t5)(o, N.dr.QUESTS_CARD, c, j), X = (null == (t = o.userStatus) ? true : t.completedAt) != null, Q = (0, m.O5)(), J = (0, E.B6)(o.config.expiresAt), $ = (0, E.B6)(y.r.build(o.config).rewardsExpireAt), ee = i.useMemo(() => null != o.config.cosponsorMetadata, [o]), et = e => {
+    }), W = (0, _.y)(Y), K = (0, A.uq)(c), z = c === b.jn.QUESTS_EMBED, q = (0, E.t5)(o, N.dr.QUESTS_CARD, c, k), X = (null == (t = o.userStatus) ? true : t.completedAt) != null, Q = (0, m.O5)(), J = (0, E.B6)(o.config.expiresAt), $ = (0, E.B6)(y.r.build(o.config).rewardsExpireAt), ee = i.useMemo(() => null != o.config.cosponsorMetadata, [o]), et = e => {
       e.stopPropagation(), e.currentTarget.blur(), M(), Q({
         questId: o.id,
         questContent: c,
         questContentCTA: w ? m.jZ.COLLAPSE : m.jZ.EXPAND,
         questContentPosition: L,
-        sourceQuestContent: j
+        sourceQuestContent: k
       })
     }, en = () => null != Z && null != V && Z < V, er = (0, r.jsx)(O.ZP, {
       className: P.partnerBranding,
@@ -217,7 +217,7 @@ let k = 1e3,
                   questContent: c,
                   className: P.headerCollapsedRewardTile,
                   location: N.dr.QUESTS_CARD,
-                  sourceQuestContent: j
+                  sourceQuestContent: k
                 })
               }), (0, r.jsxs)("div", {
                 className: P.headerCollapsedContentCopyWrapper,
@@ -234,7 +234,7 @@ let k = 1e3,
             })
           }), (0, r.jsxs)(s.animated.div, {
             ref: e => {
-              k.current = e
+              j.current = e
             },
             className: a()(P.headerExpandedContent, {
               [P.outerContainerGiftInventory]: K,
@@ -286,7 +286,7 @@ let k = 1e3,
               quest: o,
               location: c,
               questContentPosition: L,
-              sourceQuestContent: j
+              sourceQuestContent: k
             })]
           })]
         }), (0, r.jsxs)(s.animated.div, {
@@ -304,7 +304,7 @@ let k = 1e3,
             shouldShowDisclosure: true,
             hideLearnMore: K,
             showShareLink: !n && z,
-            sourceQuestContent: j,
+            sourceQuestContent: k,
             children: e => (0, r.jsx)(s.animated.div, {
               style: {
                 opacity: h,

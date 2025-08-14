@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 327192, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => J
@@ -42,8 +42,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk856651 = require("./856651.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk154040 = require("./154040.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk11049 = require("./11049.js"),
+  Chunk197571 = require("./197571.js");
 
 function H(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -183,9 +183,9 @@ function W(e) {
       var t;
       let n = _.Z.get(e.type),
         r = _.Z.get(X),
-        s = "1" === (null != (t = e.metadata) ? t : {})[B.PC.TWITTER_VERIFIED],
+        s = "1" === (null != (t = e.metadata) ? t : {})[M.PC.TWITTER_VERIFIED],
         a = null;
-      return n.type === M.ABu.TWITTER && s && (a = (0, i.jsx)(m.ua7, {
+      return n.type === B.ABu.TWITTER && s && (a = (0, i.jsx)(m.ua7, {
         text: V.intl.string(V.t.Jebrw8),
         children: e => {
           var t, n;
@@ -247,36 +247,36 @@ function W(e) {
           })
         })]
       })
-    }(o), o.twoWayLink ? null : o.type === M.ABu.XBOX ? (0, i.jsx)("div", {
+    }(o), o.twoWayLink ? null : o.type === B.ABu.XBOX ? (0, i.jsx)("div", {
       className: G.upsellWrapper,
       children: (0, i.jsx)(L.Y, {})
-    }) : o.type === M.ABu.PLAYSTATION ? (0, i.jsx)("div", {
+    }) : o.type === B.ABu.PLAYSTATION ? (0, i.jsx)("div", {
       className: G.upsellWrapper,
       children: (0, i.jsx)(k.t, {})
     }) : null, function(e) {
       var t;
       let n = null != (t = e.metadata) ? t : {},
         r = null,
-        s = (0, E.FI)(n[B.PC.CREATED_AT], h);
+        s = (0, E.FI)(n[M.PC.CREATED_AT], h);
       switch (e.type) {
-        case M.ABu.REDDIT:
+        case B.ABu.REDDIT:
           r = (0, O.oP)(n, G.metadataItem);
           break;
-        case M.ABu.STEAM:
+        case B.ABu.STEAM:
           r = (0, O.Dq)(n, G.metadataItem);
           break;
-        case M.ABu.BLUESKY:
-        case M.ABu.TWITTER:
-        case M.ABu.MASTODON:
+        case B.ABu.BLUESKY:
+        case B.ABu.TWITTER:
+        case B.ABu.MASTODON:
           r = (0, O.rJ)(n, G.metadataItem);
           break;
-        case M.ABu.EBAY:
+        case B.ABu.EBAY:
           r = (0, O.ul)(n, G.metadataItem);
           break;
-        case M.ABu.PAYPAL:
+        case B.ABu.PAYPAL:
           r = (0, O.li)(n, G.metadataItem);
           break;
-        case M.ABu.TIKTOK:
+        case B.ABu.TIKTOK:
           r = (0, O.hf)(n, G.metadataItem)
       }
       null !== s && (null == r && (r = []), null == r || r.push((0, i.jsx)(m.Text, {
@@ -298,7 +298,7 @@ function W(e) {
           variant: "text-xs/normal",
           className: G.connectionMetadataUpsellDescription,
           children: V.intl.format(V.t.Up2ni4, {
-            helpdeskUrl: R.Z.getArticleURL(M.BhN.CONNECTION_DETAILS)
+            helpdeskUrl: R.Z.getArticleURL(B.BhN.CONNECTION_DETAILS)
           })
         }, "label")], l = V.intl.string(V.t["LVh3//"]);
       return a && (l = V.intl.string(V.t.i4jeWV)), r.push((0, i.jsx)(u.zx, {
@@ -320,7 +320,7 @@ function W(e) {
         className: G.metadataContainer,
         children: r
       })
-    }(o), (M.BFP.has(o.type) && (n = (0, i.jsx)(m.j7V, {
+    }(o), (B.BFP.has(o.type) && (n = (0, i.jsx)(m.j7V, {
       className: G.connectionOptionSwitch,
       hideBorder: true,
       value: f,
@@ -331,7 +331,7 @@ function W(e) {
         variant: "text-sm/semibold",
         children: V.intl.string(V.t["+KCMSk"])
       })
-    })), M.vbS.has(o.type) && (s = (0, i.jsx)(m.j7V, {
+    })), B.vbS.has(o.type) && (s = (0, i.jsx)(m.j7V, {
       className: G.connectionOptionSwitch,
       hideBorder: true,
       value: y,
@@ -433,11 +433,11 @@ function Y() {
       dismissAction: Chunk921944.L.AUTO
     })
   }, []), (0, Chunk255367.jsxs)("div", {
-    className: Chunk154040.connectContainer,
+    className: Chunk11049.connectContainer,
     children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
       variant: "heading-md/bold",
       color: "interactive-active",
-      className: Chunk154040.connectHeader,
+      className: Chunk11049.connectHeader,
       children: Chunk388032.intl.string(Chunk388032.t.ZeDrUV)
     }), (0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
@@ -453,7 +453,7 @@ function K(e) {
   let t = _.Z.get(e);
   (0, C.Z)({
     platformType: t.type
-  }), P.default.track(M.rMx.ACCOUNT_LINK_STEP, {
+  }), P.default.track(B.rMx.ACCOUNT_LINK_STEP, {
     previous_step: "desktop connections",
     current_step: "desktop oauth",
     platform_type: t.type
@@ -469,7 +469,7 @@ function q() {
   }
   let t = (0, Chunk122021.fq)();
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk154040.connectionsContainer,
+    className: Chunk11049.connectionsContainer,
     children: [exports.slice(0, 10).map(e => (0, i.jsx)(f.Z, {
       type: e.type,
       className: G.__invalid_accountButton,
@@ -547,7 +547,7 @@ let J = () => {
   return (Chunk73800.useEffect(() => {
     Chunk457330.Z.fetch()
   }, []), module) ? (0, Chunk255367.jsx)(Chunk497321.Z, {}) : (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-    className: Chunk154040.__invalid_connections,
+    className: Chunk11049.__invalid_connections,
     tag: Chunk481060.RB0.H1,
     title: Chunk388032.intl.string(Chunk388032.t["3fe7U1"]),
     children: [(0, Chunk255367.jsx)(Y, {}), (0, Chunk255367.jsx)(X, {

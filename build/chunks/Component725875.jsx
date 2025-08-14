@@ -1,4 +1,4 @@
-/** Chunk was on 8725 **/
+/** Chunk was on 58511 **/
 /** chunk id: 725875, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk936726 = require("./936726.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk876841 = require("./876841.js");
+  Chunk246906 = require("./246906.js");
 
 function g(e) {
   let {
@@ -38,7 +38,7 @@ function g(e) {
           webhooks: [i]
         })
       } return Object.values(e).sort((e, t) => e.channel.name.localeCompare(t.channel.name))
-  }, [n, t]), O = r.useCallback(e => {
+  }, [n, t]), y = r.useCallback(e => {
     x() && (e === (null == f ? true : f.id) ? o.Z.stopEditingWebhook() : o.Z.startEditingWebhook(e))
   }, [x, f]);
   return (0, i.jsx)("div", {
@@ -95,7 +95,7 @@ function g(e) {
         lastCreatedWebhookId: g,
         editedWebhook: f,
         errors: h,
-        toggleWebhookExpand: O
+        toggleWebhookExpand: y
       })
     })
   })

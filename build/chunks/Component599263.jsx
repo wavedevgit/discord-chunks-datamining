@@ -29,7 +29,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk973051 = require("./973051.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk620416 = require("./620416.js");
+  Chunk718215 = require("./718215.js");
 
 function T(e) {
   let {
@@ -67,47 +67,14 @@ function T(e) {
     }, "cover" !== F && null !== F ? "animate-never" : "respect-motion-settings"),
     z = C.ZP.shouldShowOnboarding(t),
     X = null == S;
-  if (l.useEffect(() => {
-      if (!z || X) {
-        let e = setTimeout(() => {
-          (0, x.uL)(P.Z5c.CHANNEL(t))
-        }, 1e3);
-        return () => clearTimeout(e)
-      }
-    }, [z, X, t]), !C.ZP.shouldShowOnboarding(t) || null == S) return null;
-  let J = () => {
-    switch (M) {
-      case "cover":
-        return (0, r.jsx)(y.ZP, {
-          guild: S,
-          onboardingStatus: C.uX.READY,
-          onStart: W,
-          disableTracking: q
-        });
-      case "rules":
-        return (0, r.jsx)(E.Z, {
-          setCurrentStep: V,
-          previousPromptIndex: w.length - 1,
-          guild: S,
-          prompts: w,
-          completeOnboarding: R,
-          disableTracking: q
-        });
-      case null:
-        return null;
-      default:
-        return (0, r.jsx)(N.Z, {
-          guild: S,
-          prompts: w,
-          step: M,
-          selectOption: D,
-          completeOnboarding: R,
-          setCurrentStep: V,
-          disableTracking: q
-        })
+  return (l.useEffect(() => {
+    if (!z || X) {
+      let e = setTimeout(() => {
+        (0, x.uL)(P.Z5c.CHANNEL(t))
+      }, 1e3);
+      return () => clearTimeout(e)
     }
-  };
-  return (0, r.jsxs)("div", {
+  }, [z, X, t]), C.ZP.shouldShowOnboarding(t) && null != S) ? (0, r.jsxs)("div", {
     className: o()(I.main, {
       [I.fullBorderWithGradient]: null == B
     }),
@@ -131,7 +98,38 @@ function T(e) {
       } = n;
       return (0, r.jsx)(a.animated.div, {
         style: e,
-        children: J()
+        children: (() => {
+          switch (M) {
+            case "cover":
+              return (0, r.jsx)(y.ZP, {
+                guild: S,
+                onboardingStatus: C.uX.READY,
+                onStart: W,
+                disableTracking: q
+              });
+            case "rules":
+              return (0, r.jsx)(E.Z, {
+                setCurrentStep: V,
+                previousPromptIndex: w.length - 1,
+                guild: S,
+                prompts: w,
+                completeOnboarding: R,
+                disableTracking: q
+              });
+            case null:
+              return null;
+            default:
+              return (0, r.jsx)(N.Z, {
+                guild: S,
+                prompts: w,
+                step: M,
+                selectOption: D,
+                completeOnboarding: R,
+                setCurrentStep: V,
+                disableTracking: q
+              })
+          }
+        })()
       }, l)
     }), "cover" === M && (0, r.jsx)("div", {
       className: I.bottomCenterContent,
@@ -143,5 +141,5 @@ function T(e) {
         })
       })
     })]
-  })
+  }) : null
 }

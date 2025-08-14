@@ -1,4 +1,4 @@
-/** Chunk was on 54214 **/
+/** Chunk was on 9456 **/
 /** chunk id: 346975, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
@@ -72,7 +72,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk124368 = require("./124368.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk105603 = require("./105603.js");
+  Chunk816922 = require("./816922.js");
 
 function eb(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -501,8 +501,8 @@ function eN(e) {
     getItemKey: e8,
     renderGridSection: e9,
     renderGridItem: e4,
-    getGridSectionHeight: e5,
-    getSectionProps: e2,
+    getGridSectionHeight: e2,
+    getSectionProps: e5,
     handleGridFocus: e7
   } = function(e) {
     let {
@@ -709,11 +709,11 @@ function eN(e) {
             columns: ek,
             sections: eB,
             getItemKey: e8,
-            getSectionHeight: e5,
+            getSectionHeight: e2,
             getItemHeight: eO,
             renderSection: e9,
             renderItem: e4,
-            getSectionProps: e2,
+            getSectionProps: e5,
             onScroll: j ? te : true,
             chunkSize: 350
           }, tl, e), A)
@@ -904,21 +904,7 @@ function eZ(e) {
     if (!e) return F(0);
     null != eI.current && F(e ? eI.current.clientHeight : 0)
   }, [F, eR, eZ, eI]);
-  let eA = e => {
-      (0, $.e7)({
-        guildId: s.guild_id,
-        channelId: s.id,
-        tagId: e,
-        filterTagIds: Array.from(D),
-        added: !D.has(e),
-        location: {
-          page: eg.ZY5.GUILD_CHANNEL,
-          section: eg.jXE.FORUM_CHANNEL_HEADER,
-          object: eg.qAy.CHANNEL_TAG
-        }
-      }), X.getState().toggleTagFilter(s.id, e)
-    },
-    eL = (0, u.ZP)({
+  let eA = (0, u.ZP)({
       id: "".concat(s.id, "-tags-navigator"),
       isEnabled: true,
       wrap: true,
@@ -926,14 +912,14 @@ function eZ(e) {
       scrollToEnd: eM,
       orientation: m.hy.HORIZONTAL
     }),
-    eF = (0, d.JA)("forum-channel-header"),
+    eL = (0, d.JA)("forum-channel-header"),
     {
-      role: eD,
-      onFocus: ez
-    } = eF,
-    eH = ev(eF, ["role", "onFocus"]),
-    eB = i.useRef(null),
-    eU = function() {
+      role: eF,
+      onFocus: eD
+    } = eL,
+    ez = ev(eL, ["role", "onFocus"]),
+    eH = i.useRef(null),
+    eB = function() {
       let e = i.useRef(false),
         t = (0, g.e7)([v.Z], () => v.Z.keyboardModeEnabled),
         n = i.useCallback(t => {
@@ -941,18 +927,18 @@ function eZ(e) {
         }, [e]);
       return i.useLayoutEffect(() => (t ? window.addEventListener("keydown", n) : window.removeEventListener("keydown", n), () => window.removeEventListener("keydown", n)), [t, n]), e
     }(),
-    eV = i.useCallback(e => {
-      if (ez(), e.target === eh.current && !eU.current) {
+    eU = i.useCallback(e => {
+      if (eD(), e.target === eh.current && !eB.current) {
         var t;
-        null == (t = eB.current) || t.focus()
+        null == (t = eH.current) || t.focus()
       }
-    }, [ez, eh, eU]),
-    eG = i.useMemo(() => ec ? (0, N.iq)(s.availableTags) : s.availableTags, [s.availableTags, ec]);
+    }, [eD, eh, eB]),
+    eV = i.useMemo(() => ec ? (0, N.iq)(s.availableTags) : s.availableTags, [s.availableTags, ec]);
   return (0, r.jsx)("div", ej(eb({
     className: l()(ep.card, ep.headerRow, ep.columnsSpan),
     ref: eh,
-    onFocus: eV
-  }, eH), {
+    onFocus: eU
+  }, ez), {
     style: ej(eb({}, S), {
       position: B === h.X.GRID ? "absolute" : "static",
       height: "auto"
@@ -974,7 +960,7 @@ function eZ(e) {
           isSearchLoading: C,
           numResults: w,
           canCreatePost: eu,
-          inputRef: eB
+          inputRef: eH
         })
       }), (eR || eZ) && (0, r.jsxs)("div", {
         className: ep.matchingPostsRow,
@@ -1043,14 +1029,14 @@ function eZ(e) {
         ref: eO,
         children: [(0, r.jsx)(ek, {
           channel: s
-        }), eG.length > 0 ? (0, r.jsxs)(r.Fragment, {
+        }), eV.length > 0 ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
             className: ep.divider
           }), (0, r.jsx)("div", {
             className: ep.tagList,
             ref: ew,
             children: (0, r.jsx)(d.bG, {
-              navigator: eL,
+              navigator: eA,
               children: (0, r.jsx)(d.SJ, {
                 children: e => {
                   var {
@@ -1060,9 +1046,23 @@ function eZ(e) {
                     className: ep.tagListInner,
                     ref: t
                   }, n), {
-                    children: eG.map(e => (0, r.jsx)(eo.Z, {
+                    children: eV.map(e => (0, r.jsx)(eo.Z, {
                       tag: e,
-                      onClick: () => eA(e.id),
+                      onClick: () => {
+                        var t;
+                        return t = e.id, void((0, $.e7)({
+                          guildId: s.guild_id,
+                          channelId: s.id,
+                          tagId: t,
+                          filterTagIds: Array.from(D),
+                          added: !D.has(t),
+                          location: {
+                            page: eg.ZY5.GUILD_CHANNEL,
+                            section: eg.jXE.FORUM_CHANNEL_HEADER,
+                            object: eg.qAy.CHANNEL_TAG
+                          }
+                        }), X.getState().toggleTagFilter(s.id, t))
+                      },
                       selected: D.has(e.id)
                     }, e.id))
                   }))

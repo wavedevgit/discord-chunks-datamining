@@ -1,4 +1,4 @@
-/** Chunk was on 873 **/
+/** Chunk was on 1355 **/
 /** chunk id: 683101, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -6,14 +6,14 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk392711 = require("./392711.js"),
-  i = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk374470 = require("./374470.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk294218 = require("./294218.jsx"),
   Chunk592125 = require("./592125.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk482688 = require("./482688.js");
+  Chunk374815 = require("./374815.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,18 +56,18 @@ class I extends Chunk73800.PureComponent {
       listItemProps: t,
       searchOffset: n,
       index: l,
-      totalResults: s
-    } = this.props, a = i().find(module, e => e.isSearchHit);
+      totalResults: i
+    } = this.props, a = s().find(module, e => e.isSearchHit);
     if (null == Chunk374470) return null;
     let u = Chunk592125.Z.getChannel(Chunk374470.channel_id);
     if (null == Chunk239091) return null;
     let A = "search-result-".concat(Chunk374470.id);
     return (0, Chunk255367.jsx)(Chunk481060.tEY, {
       ringTarget: this.hitRef,
-      ringClassName: Chunk482688.__invalid_searchResultFocusRing,
+      ringClassName: Chunk374815.__invalid_searchResultFocusRing,
       offset: 4,
       children: (0, Chunk255367.jsxs)("li", m(T({
-        className: Chunk482688.container
+        className: Chunk374815.container
       }, exports), {
         "aria-posinset": 1 + require + Chunk73800,
         "aria-setsize": Chunk392711,
@@ -76,13 +76,13 @@ class I extends Chunk73800.PureComponent {
           tabIndex: false,
           onClick: this.handleMessageClick,
           innerRef: this.containerRef,
-          className: Chunk482688.searchResult,
+          className: Chunk374815.searchResult,
           focusProps: {
             enabled: false
           },
           children: (0, Chunk255367.jsx)("div", {
             ref: this.hitRef,
-            className: Chunk482688.message,
+            className: Chunk374815.message,
             children: (0, Chunk255367.jsx)(Chunk294218.Z, {
               id: A,
               message: Chunk374470,
@@ -95,10 +95,10 @@ class I extends Chunk73800.PureComponent {
             })
           }, Chunk374470.id)
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk482688.buttonsContainer,
+          className: Chunk374815.buttonsContainer,
           "aria-hidden": true,
           children: (0, Chunk255367.jsx)(Chunk481060.P3F, {
-            className: Chunk482688.button,
+            className: Chunk374815.button,
             onClick: this.jumpTo,
             children: Chunk388032.intl.string(Chunk388032.t.k5WiPT)
           })

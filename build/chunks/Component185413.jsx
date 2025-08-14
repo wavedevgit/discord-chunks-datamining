@@ -2,7 +2,7 @@
 /** chunk id: 185413, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => k,
+  U: () => j,
   default: () => B,
   t: () => G
 }), require("./953529.js"), require("./388685.js"), require("./781311.js"), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./539854.js");
@@ -30,7 +30,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk494831 = require("./494831.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk569842 = require("./569842.js");
+  Chunk257803 = require("./257803.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -93,11 +93,11 @@ function x(e) {
 }
 let M = (0, Chunk313201.hQ)();
 
-function j(e, t) {
+function k(e, t) {
   return t ? e.slice(1) : e
 }
 
-function k(e) {
+function j(e) {
   let t, {
       guild: n,
       channel: a,
@@ -112,7 +112,7 @@ function k(e) {
     T = (0, o.e7)([h.Z], () => h.Z.getSortedRoles(n.id));
 
   function S(e) {
-    let t = j(g.trim(), _);
+    let t = k(g.trim(), _);
     return RegExp("".concat(y.Z.escape(t)), "i").test(e)
   }
   let A = (0, o.Wu)([p.ZP], () => p.ZP.getMemberIds(n.id));
@@ -122,7 +122,7 @@ function k(e) {
   function C(e) {
     let t = e.trim(),
       r = "@" === t.charAt(0);
-    b.Z.requestMembers(n.id, j(t, r), I.EQ), E(e), m(r)
+    b.Z.requestMembers(n.id, k(t, r), I.EQ), E(e), m(r)
   }
 
   function w(e) {
@@ -160,7 +160,7 @@ function k(e) {
   let {
     placeholderText: x,
     hintText: M,
-    renderEmptyText: k
+    renderEmptyText: j
   } = U();
   return (0, r.jsx)(G, {
     pendingAdditions: l,
@@ -172,7 +172,7 @@ function k(e) {
     members: N,
     placeholderText: x,
     hintText: M,
-    renderEmptyText: k,
+    renderEmptyText: j,
     isStageChannel: d,
     description: f
   })
@@ -285,7 +285,7 @@ function B(e) {
           className: N.headerSubtitleIcon
         }), y.name]
       })]
-    }), (0, r.jsx)(k, {
+    }), (0, r.jsx)(j, {
       guild: O,
       channel: y,
       permission: y.accessPermissions,

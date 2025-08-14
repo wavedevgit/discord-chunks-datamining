@@ -12,7 +12,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk332325 = require("./332325.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk62324 = require("./62324.js"),
+  Chunk688364 = require("./688364.js"),
   Chunk83173 = require("./83173.js");
 
 function _(e) {
@@ -78,27 +78,27 @@ function _(e) {
 let h = () => {
   let e = [{
     icon: (0, Chunk255367.jsx)(Chunk481060.iFz, {
-      className: Chunk62324.icon
+      className: Chunk688364.icon
     }),
     text: Chunk388032.intl.string(Chunk388032.t.vXBrdn)
   }, {
     icon: (0, Chunk255367.jsx)(Chunk481060.iWm, {
-      className: Chunk62324.icon
+      className: Chunk688364.icon
     }),
     text: Chunk388032.intl.string(Chunk388032.t.aExjOz)
   }, {
     icon: (0, Chunk255367.jsx)(Chunk481060.kBi, {
-      className: Chunk62324.icon
+      className: Chunk688364.icon
     }),
     text: Chunk388032.intl.string(Chunk388032.t["i7/QHB"])
   }, {
     icon: (0, Chunk255367.jsx)(Chunk481060.lMe, {
-      className: Chunk62324.icon
+      className: Chunk688364.icon
     }),
     text: Chunk388032.intl.string(Chunk388032.t.ZmBfKC)
   }];
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk62324.notes,
+    className: Chunk688364.notes,
     children: module.map((e, t) => {
       let {
         icon: a,

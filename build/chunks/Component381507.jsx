@@ -1,4 +1,4 @@
-/** Chunk was on 63024 **/
+/** Chunk was on 47238 **/
 /** chunk id: 381507, original params: e,r,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -15,7 +15,7 @@ var Chunk780384 = require("./780384.js"),
   Chunk703614 = require("./703614.jsx"),
   Chunk182294 = require("./182294.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk77932 = require("./77932.js");
+  Chunk908780 = require("./908780.js");
 let x = () => {
   let e = (0, Chunk105759.Z)(),
     {
@@ -31,9 +31,9 @@ let x = () => {
     m = Chunk51144.ZP.getName(module),
     h = f ? Chunk898969.Z : Chunk703614.Z;
   return null == module ? null : (0, Chunk255367.jsxs)("div", {
-    className: Chunk77932.attributionBannerContainer,
+    className: Chunk908780.attributionBannerContainer,
     children: [(0, Chunk255367.jsx)("div", {
-      className: Chunk77932.avatarContainer,
+      className: Chunk908780.avatarContainer,
       children: (0, Chunk255367.jsx)(Chunk481060.qEK, function(e) {
         for (var r = 1; r < arguments.length; r++) {
           var n = null != arguments[r] ? arguments[r] : {},
@@ -58,12 +58,12 @@ let x = () => {
       }, require))
     }), (0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "text-xs/bold",
-      className: Chunk77932.bannerHeader,
+      className: Chunk908780.bannerHeader,
       children: Chunk388032.intl.format(Chunk388032.t.oxhCOj, {
         userName: m
       })
     }), (0, Chunk255367.jsx)(h, {
-      className: Chunk77932.bannerIcon
+      className: Chunk908780.bannerIcon
     })]
   })
 }

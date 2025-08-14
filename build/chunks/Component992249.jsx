@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 992249, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -9,7 +9,7 @@ var Chunk255367 = require("./255367.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk717251 = require("./717251.jsx"),
-  Chunk318309 = require("./318309.js");
+  Chunk987120 = require("./987120.js");
 
 function d(e) {
   var {
@@ -33,9 +33,7 @@ function d(e) {
     }
     return i
   }(e, ["action", "children", "className", "onExpandChange", "loading"]);
-  let [g, p] = i.useState(false), h = e => {
-    p(e), null == d || d(e)
-  };
+  let [g, p] = i.useState(false);
   return (0, r.jsx)(s.zF9, {
     className: a()(c.groupContainer, l),
     isExpanded: g,
@@ -73,7 +71,8 @@ function d(e) {
           type: s.$jN.Type.PULSING_ELLIPSIS
         }) : t,
         onClick: e => {
-          h(!g), l(e)
+          var t;
+          p(t = !g), null == d || d(t), l(e)
         }
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);

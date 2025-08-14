@@ -1,11 +1,11 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 174767, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Br: () => a,
+  Br: () => s,
   MH: () => c,
   Ol: () => u,
-  TG: () => p,
-  UF: () => h,
+  TG: () => f,
+  UF: () => p,
   sJ: () => d
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
@@ -13,12 +13,12 @@ var Chunk544891 = require("./544891.js"),
   Chunk439849 = require("./439849.js"),
   Chunk358085 = require("./358085.js"),
   Chunk981631 = require("./981631.js");
-async function a(e) {
-  if (e.platform_type === s.ABu.XBOX) {
+async function s(e) {
+  if (e.platform_type === a.ABu.XBOX) {
     let t = e.parsed_launch_parameters.titleId,
       n = e.parsed_launch_parameters.inviteToken;
     if (!(0, o.isWindows)() || null == t || null == n) return;
-    let r = await f(t, false),
+    let r = await h(t, false),
       l = await m(n);
     i.Z.dispatch({
       type: "GAME_INVITE_UPDATE_STATUS",
@@ -29,14 +29,14 @@ async function a(e) {
   } else throw Error("Unsupported invite platform " + e.platform_type)
 }
 async function c(e) {
-  if (e.platform_type === s.ABu.XBOX) {
+  if (e.platform_type === a.ABu.XBOX) {
     let t = e.parsed_launch_parameters.titleId;
     return !!(0, o.isWindows)() && null != t && await g(t)
   }
   throw Error("Unsupported invite platform " + e.platform_type)
 }
 async function u(e) {
-  if (e.platform_type === s.ABu.XBOX) {
+  if (e.platform_type === a.ABu.XBOX) {
     let t = e.parsed_launch_parameters.inviteToken;
     return !!(0, o.isWindows)() && null != t && await b(t)
   }
@@ -48,19 +48,19 @@ function d() {
     type: "GAME_INVITE_CLEAR_UNSEEN"
   })
 }
-async function h(e) {
+async function p(e) {
   await r.tn.del({
-    url: s.ANM.GAME_INVITE(e.invite_id),
+    url: a.ANM.GAME_INVITE(e.invite_id),
     rejectWithError: false
   })
 }
-async function p() {
+async function f() {
   await Chunk544891.tn.del({
     url: Chunk981631.ANM.GAME_INVITES,
     rejectWithError: false
   })
 }
-async function f(e, t) {
+async function h(e, t) {
   if (!(0, o.isWindows)()) returnfalse;
   let n = await (0, l.Z)();
   return new Promise((r, i) => {

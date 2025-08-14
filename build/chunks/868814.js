@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 868814, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -21,6 +21,6 @@ function o(e) {
         o++
       }
       r.length < 5 && !r.includes(e) && r.push(e)
-    }), r.sort((t, n) => +!!(0, i.s)(e.id, n.id) - +!!(0, i.s)(e.id, t.id)), r
+    }), r.sort((t, n) => !!(0, i.s)(e.id, n.id) - !!(0, i.s)(e.id, t.id)), r
   })
 }

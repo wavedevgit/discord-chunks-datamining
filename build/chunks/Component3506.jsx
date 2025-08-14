@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 3506, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -31,7 +31,7 @@ require("./63063.js");
 var Chunk13140 = require("./13140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk633897 = require("./633897.js");
+  Chunk703943 = require("./703943.js");
 let A = P(null);
 
 function P(e) {
@@ -85,9 +85,9 @@ function D(e) {
     notificationPositionMode: v.default.getNotificationPositionMode(),
     shouldShowKeybindIndicators: v.default.showKeybindIndicators,
     textChatDisabled: j.Z.isNotificationDisabled(b.OverlayNotificationDisabledSetting.TEXT_CHAT)
-  })), L = (0, o.e7)([C.ZP], () => C.ZP.getOverlayKeybind()), M = (0, x.Z)({
+  })), L = (0, o.e7)([C.ZP], () => C.ZP.getOverlayKeybind()), B = (0, x.Z)({
     location: "overlay_user_settings"
-  }), B = (0, p.$1)(), U = P(A);
+  }), M = (0, p.$1)(), U = P(A);
   return l().isEqual(U, A) || (S.default.track(I.rMx.OVERLAY_SETTINGS_UPDATED, U), A = U), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(c.hjN, {
       className: t,
@@ -101,8 +101,8 @@ function D(e) {
           children: (0, i.jsx)(c.j7V, {
             className: y.enableSwitch,
             value: a,
-            disabled: B,
-            note: B ? N.intl.string(N.t.Eb0lnJ) : null,
+            disabled: M,
+            note: M ? N.intl.string(N.t.Eb0lnJ) : null,
             hideBorder: true,
             onChange: function(e) {
               var t, n;
@@ -209,7 +209,7 @@ function D(e) {
           },
           value: D
         })
-      }), M && (0, i.jsx)(R, {
+      }), B && (0, i.jsx)(R, {
         children: (0, i.jsx)(c.j7V, {
           value: k,
           onChange: e => u.Z.setShowKeybindIndicators(e),

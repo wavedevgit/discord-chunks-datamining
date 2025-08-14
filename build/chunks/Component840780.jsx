@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 840780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eu
@@ -8,7 +8,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  s = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -33,7 +33,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk102172 = require("./102172.js"),
   Chunk74299 = require("./74299.js"),
   Chunk914923 = require("./914923.js"),
-  Chunk165393 = require("./165393.jsx"),
+  Chunk662304 = require("./662304.jsx"),
   Chunk989941 = require("./989941.js"),
   Chunk690221 = require("./690221.jsx"),
   Chunk522474 = require("./522474.js"),
@@ -59,7 +59,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk441248 = require("./441248.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk918559 = require("./918559.js"),
-  Chunk811842 = require("./811842.js");
+  Chunk800339 = require("./800339.js");
 
 function eo(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -70,7 +70,7 @@ function eo(e, t, n) {
   }) : e[t] = n, e
 }
 
-function es(e) {
+function ea(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -82,7 +82,7 @@ function es(e) {
   }
   return e
 }
-let ea = (0, Chunk438139.Z)(function(e) {
+let es = (0, Chunk438139.Z)(function(e) {
   let {
     message: t
   } = e;
@@ -102,16 +102,16 @@ class ec extends Chunk73800.PureComponent {
       return module
     }
     return (0, Chunk255367.jsx)("div", {
-      className: Chunk811842.sparkleContainer,
+      className: Chunk800339.sparkleContainer,
       children: (0, Chunk255367.jsx)(Chunk481060.Fmz, {
         importData: exports,
         shouldAnimate: !module,
-        className: Chunk811842.sparkles
+        className: Chunk800339.sparkles
       })
     })
   }
   renderActions() {
-    return (0, Chunk255367.jsx)(Chunk339144.J, es({}, this.props))
+    return (0, Chunk255367.jsx)(Chunk339144.J, ea({}, this.props))
   }
   renderGame() {
     let {
@@ -140,25 +140,25 @@ class ec extends Chunk73800.PureComponent {
       sanitizedTitle: l
     } = (0, Chunk914923.Z)(exports);
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk811842.gameWrapper,
-      children: [module ? (0, Chunk255367.jsx)(Chunk165393.Z, {
+      className: Chunk800339.gameWrapper,
+      children: [module ? (0, Chunk255367.jsx)(Chunk662304.Z, {
         title: Chunk120356,
         icon: null == exports ? true : exports.sourceIcon
       }) : (0, Chunk255367.jsx)(Chunk194082.ZP, {
         look: Chunk194082.ZP.Looks.GRAY,
         size: Chunk194082.ZP.Sizes.SMALL,
-        className: Chunk811842.liveIndicator
+        className: Chunk800339.liveIndicator
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk811842.info,
+        className: Chunk800339.info,
         children: [(0, Chunk255367.jsx)(Chunk115530.Z, {
           children: Chunk73800
         }), null != require && (0, Chunk255367.jsxs)("div", {
-          className: Chunk811842.perksDemoContainer,
+          className: Chunk800339.perksDemoContainer,
           children: [(0, Chunk255367.jsx)(Chunk481060.SrA, {
             size: "xxs",
             color: Chunk436774.JX.PREMIUM_TIER_2
           }), (0, Chunk255367.jsx)(Chunk759198.Z, {
-            className: Chunk811842.perksDemoText,
+            className: Chunk800339.perksDemoText,
             variant: "text-xxs/semibold",
             children: require
           })]
@@ -173,8 +173,8 @@ class ec extends Chunk73800.PureComponent {
       channel: i,
       channelName: l,
       guildForConnectedChannel: o,
-      isForceShowSharingPopout: s,
-      setIsForceShowSharingPopout: a
+      isForceShowSharingPopout: a,
+      setIsForceShowSharingPopout: s
     } = this.props;
     if (null == require || null == exports) return null;
     let c = {
@@ -186,36 +186,36 @@ class ec extends Chunk73800.PureComponent {
         href: module,
         onClick: this.handleChannelLinkClick,
         children: (0, Chunk255367.jsx)(Chunk345243.Z, {
-          className: Chunk811842.channel,
+          className: Chunk800339.channel,
           children: Chunk481060
         })
       }),
-      h = (0, Chunk255367.jsx)(Chunk690221.Z, {
+      p = (0, Chunk255367.jsx)(Chunk690221.Z, {
         href: module,
         onClick: this.handleApplicationLinkClick,
         children: (0, Chunk255367.jsx)(Chunk115530.Z, {
-          className: Chunk811842.underlineOnHover,
+          className: Chunk800339.underlineOnHover,
           children: exports.name
         })
       }),
-      p = (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
+      f = (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
         children: [(0, Chunk255367.jsx)(Chunk925329.Z, {
-          className: Chunk811842.gameIcon,
+          className: Chunk800339.gameIcon,
           game: exports,
           size: Chunk925329.Z.Sizes.SMALL
         }), (0, Chunk255367.jsx)(Chunk736409.j, {
           isForceShowSharingPopout: Chunk512722,
-          setIsForceShowSharingPopout: a,
+          setIsForceShowSharingPopout: s,
           children: (0, Chunk255367.jsxs)("div", {
-            className: Chunk811842.info,
-            children: [Chunk475179, null != Chunk73800 && (0, Chunk131704.Qm)(Chunk73800.type) ? Chunk570140 : (0, Chunk255367.jsx)(ea, {
+            className: Chunk800339.info,
+            children: [Chunk475179, null != Chunk73800 && (0, Chunk131704.Qm)(Chunk73800.type) ? Chunk570140 : (0, Chunk255367.jsx)(es, {
               timestamps: Chunk442837
             })]
           })
         })]
       });
     return (0, Chunk255367.jsx)("div", {
-      className: Chunk811842.gameWrapper,
+      className: Chunk800339.gameWrapper,
       children: Chunk925549
     })
   }
@@ -226,17 +226,19 @@ class ec extends Chunk73800.PureComponent {
       runningGame: n,
       isStreaming: i,
       streamMetadata: l,
-      application: s,
-      activity: a,
+      application: a,
+      activity: s,
       className: c
     } = this.props;
-    return Chunk73800 || ((0, Chunk339144.y)(Chunk512722, a, exports) || module) && (null != require || null != exports) ? (0, Chunk255367.jsx)("div", {
-      className: o()(Chunk811842.panel, Chunk442837),
+    if (!Chunk73800 && (!(0, Chunk339144.y)(Chunk512722, s, exports) && !module || null == require && null == exports)) return null;
+    let u = () => null == require || Chunk73800 && (null == Chunk120356 ? true : Chunk120356.pid) == null ? null != exports ? this.renderEmbeddedActivity() : this.renderScreenshare() : this.renderGame();
+    return (0, Chunk255367.jsx)("div", {
+      className: o()(Chunk800339.panel, Chunk442837),
       children: (0, Chunk255367.jsxs)("div", {
-        className: Chunk811842.body,
-        children: [null == require || Chunk73800 && (null == Chunk120356 ? true : Chunk120356.pid) == null ? null != exports ? this.renderEmbeddedActivity() : this.renderScreenshare() : this.renderGame(), this.renderActions()]
+        className: Chunk800339.body,
+        children: [Chunk481060(), this.renderActions()]
       })
-    }) : null
+    })
   }
   constructor(...e) {
     super(...e), eo(this, "activityPopoutTargetRef", i.createRef()), eo(this, "handleApplicationLinkClick", () => {
@@ -253,7 +255,7 @@ class ec extends Chunk73800.PureComponent {
         embeddedActivity: n,
         isActivityPopoutOpen: r
       } = this.props;
-      a()(null != n, "Activity cannot be null during navigation click"), a()(null != t, "Channel cannot be null during navigation click"), p.Z.channelListScrollTo(null != (e = t.guild_id) ? e : er.ME, t.id), !r && ((0, U.vd)(t.type) && h.Z.selectParticipant(t.id, (0, j.gN)({
+      s()(null != n, "Activity cannot be null during navigation click"), s()(null != t, "Channel cannot be null during navigation click"), f.Z.channelListScrollTo(null != (e = t.guild_id) ? e : er.ME, t.id), !r && ((0, U.vd)(t.type) && p.Z.selectParticipant(t.id, (0, C.gN)({
         applicationId: n.applicationId,
         instanceId: n.compositeInstanceId
       })), (0, U.Qm)(t.type) && (0, O.tg)(ei.Ez.PANEL))
@@ -264,7 +266,7 @@ let eu = (0, Chunk730749.Z)(function(e) {
   var t, n, l, {
       guildId: o
     } = e,
-    s = function(e, t) {
+    a = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -279,43 +281,43 @@ let eu = (0, Chunk730749.Z)(function(e) {
       }
       return i
     }(e, ["guildId"]);
-  let a = (0, c.e7)([B.default], () => B.default.getId()),
-    u = (0, c.e7)([P.ZP, Q.Z], () => (0, R.Z)(P.ZP, Q.Z)),
+  let s = (0, c.e7)([B.default], () => B.default.getId()),
+    u = (0, c.e7)([I.ZP, Q.Z], () => (0, R.Z)(I.ZP, Q.Z)),
     d = (0, c.e7)([q.Z, V.Z], () => V.Z.getChannel(q.Z.getVoiceChannelId())),
-    h = (0, c.e7)([_.ZP], () => _.ZP.getConnectedActivityChannelId()),
-    p = (0, c.e7)([V.Z], () => V.Z.getChannel(h)),
-    f = (0, c.e7)([H.Z], () => H.Z.getGuild(null == p ? true : p.guild_id)),
+    p = (0, c.e7)([_.ZP], () => _.ZP.getConnectedActivityChannelId()),
+    f = (0, c.e7)([V.Z], () => V.Z.getChannel(p)),
+    h = (0, c.e7)([H.Z], () => H.Z.getGuild(null == f ? true : f.guild_id)),
     [g, O] = (0, c.Wu)([G.Z], () => [G.Z.getCurrentUserActiveStream(), G.Z.getStreamerActiveStreamMetadata()]),
-    C = (0, c.e7)([m.Z], () => m.Z.useReducedMotion),
-    j = (0, c.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()),
-    S = (0, c.e7)([H.Z, W.Z, F.ZP], () => null != d ? w.JL(d, H.Z, W.Z, false) : null != o && w.h_(F.ZP.getChannels(o), H.Z, W.Z).length > 0),
-    [I] = (0, v.Z)([null != (l = null != O && null != O.id ? O.id : null != u && null != u.id ? u.id : null != j ? j.applicationId : true) ? l : ""]),
-    N = (0, c.e7)([x.Z], () => x.Z.getFakeGameData()),
+    v = (0, c.e7)([m.Z], () => m.Z.useReducedMotion),
+    C = (0, c.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()),
+    x = (0, c.e7)([H.Z, W.Z, F.ZP], () => null != d ? w.JL(d, H.Z, W.Z, false) : null != o && w.h_(F.ZP.getChannels(o), H.Z, W.Z).length > 0),
+    [P] = (0, j.Z)([null != (l = null != O && null != O.id ? O.id : null != u && null != u.id ? u.id : null != C ? C.applicationId : true) ? l : ""]),
+    N = (0, c.e7)([S.Z], () => S.Z.getFakeGameData()),
     T = (0, c.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()),
     A = (0, y.Z)() && null != T && (0, b.R)(),
     D = (0, c.e7)([z.Z], () => (0, Z.Z)(z.Z) && (0, J.isWindows)()),
-    k = (0, c.e7)([K.Z], () => null != a ? K.Z.findActivity(a, e => e.type === er.IIU.PLAYING) : null),
-    U = null != g && g.ownerId === a && g.state !== er.jm8.ENDED,
-    $ = (0, c.e7)([X.default, Y.Z], () => null != p ? (0, E.F6)(p, X.default, Y.Z) : true),
+    k = (0, c.e7)([K.Z], () => null != s ? K.Z.findActivity(s, e => e.type === er.IIU.PLAYING) : null),
+    U = null != g && g.ownerId === s && g.state !== er.jm8.ENDED,
+    $ = (0, c.e7)([X.default, Y.Z], () => null != f ? (0, E.F6)(f, X.default, Y.Z) : true),
     ee = (0, M.Z)(),
     [et, en] = i.useState(false),
     ei = (0, c.e7)([L.Z], () => L.Z.getWindowOpen(er.KJ3.ACTIVITY_POPOUT));
-  return (0, r.jsx)(ec, (t = es({}, s), n = n = {
+  return (0, r.jsx)(ec, (t = ea({}, a), n = n = {
     guildId: o,
     canGoLive: D || A || true !== N,
     activity: k,
-    embeddedActivity: j,
-    userId: a,
+    embeddedActivity: C,
+    userId: s,
     runningGame: null != N ? N : u,
-    application: I,
-    useReducedMotion: C,
+    application: P,
+    useReducedMotion: v,
     isStreaming: U,
-    channel: p,
-    canStream: S,
+    channel: f,
+    canStream: x,
     stream: g,
     streamMetadata: O,
     channelName: $,
-    guildForConnectedChannel: f,
+    guildForConnectedChannel: h,
     streamQualityIndicator: ee,
     isForceShowSharingPopout: et,
     setIsForceShowSharingPopout: en,

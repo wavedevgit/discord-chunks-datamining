@@ -17,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk86419 = require("./86419.js"),
   Chunk810473 = require("./810473.js"),
   Chunk747101 = require("./747101.js"),
-  Chunk247989 = require("./247989.js"),
+  Chunk872269 = require("./872269.js"),
   Chunk985748 = require("./985748.jsx"),
   Chunk566007 = require("./566007.jsx"),
   Chunk173951 = require("./173951.jsx"),
@@ -25,7 +25,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk228168 = require("./228168.js"),
   Chunk247397 = require("./247397.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk663161 = require("./663161.js");
+  Chunk32442 = require("./32442.js");
 let E = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     component: Chunk566007.Z,

@@ -20,7 +20,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk825334 = require("./825334.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk760078 = require("./760078.js");
+  Chunk31499 = require("./31499.js");
 let v = Chunk73800.memo(function(e) {
     let {
       guild: n
@@ -42,22 +42,20 @@ let v = Chunk73800.memo(function(e) {
       title: t,
       icon: o
     } = e, d = (0, a.e7)([m.Z], () => m.Z.getChannel(n)), x = (0, a.e7)([h.Z], () => h.Z.getMessages(n)), j = (0, a.e7)([f.Z], () => f.Z.can(b.Plq.VIEW_CHANNEL, d)), v = x.first(), _ = (0, c.zy)(v, false), Z = (null == _ ? true : _.length) > 0 ? _[0] : null, I = null != d && null == v && !x.loadingMore && !x.ready && !x.hasFetched && j;
-    r.useEffect(() => {
+    return r.useEffect(() => {
       I && s.Z.fetchMessages({
         channelId: n,
         after: n,
         limit: 5
       })
-    }, [n, I]);
-    let y = e => {
-      null != d && (e.shiftKey ? (0, p.C3)(d.guild_id, d.id) : u.Z.openResourceChannelAsSidebar({
-        guildId: d.guild_id,
-        channelId: d.id
-      }))
-    };
-    return (0, l.jsx)(i.P3F, {
+    }, [n, I]), (0, l.jsx)(i.P3F, {
       className: C.resourceChannel,
-      onClick: e => y(e),
+      onClick: e => {
+        null != d && (e.shiftKey ? (0, p.C3)(d.guild_id, d.id) : u.Z.openResourceChannelAsSidebar({
+          guildId: d.guild_id,
+          channelId: d.id
+        }))
+      },
       children: (0, l.jsxs)(l.Fragment, {
         children: [(() => {
           let e = g.ZP.getResourceChannelIconURL({

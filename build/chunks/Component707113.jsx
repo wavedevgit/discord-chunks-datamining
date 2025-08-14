@@ -1,7 +1,7 @@
 /** Chunk was on 9924 **/
 /** chunk id: 707113, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => v
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk598948 = require("./598948.jsx"),
   Chunk428936 = require("./428936.jsx"),
   Chunk41586 = require("./41586.jsx"),
-  Chunk336164 = require("./336164.js");
+  Chunk243194 = require("./243194.js");
 
 function f(e) {
   let {
@@ -34,15 +34,15 @@ function f(e) {
   })
 }
 
-function p(e) {
+function v(e) {
   let {
     guild: t,
     className: n,
     onPageChange: a,
     onMemberSelect: s
-  } = e, p = t.id, v = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(p), [p]), g = (0, d.$j)(p), C = (0, d.M3)(p), _ = r.useCallback(e => {
+  } = e, v = t.id, g = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(v), [v]), p = (0, d.$j)(v), C = (0, d.M3)(v), _ = r.useCallback(e => {
     null != e && (null == s || s(e))
-  }, [s]), T = (0, m.xb)(C, g, v), E = r.useRef(null), N = r.useRef(null), S = r.useCallback(() => {
+  }, [s]), T = (0, m.xb)(C, p, g), E = r.useRef(null), N = r.useRef(null), S = r.useCallback(() => {
     var e;
     null == (e = E.current) || e.resetSearchText()
   }, []);
@@ -52,7 +52,7 @@ function p(e) {
       className: b.horizatonalScroller,
       ref: N,
       orientation: "horizontal",
-      children: [(0, l.jsx)(j.Z, {
+      children: [(0, l.jsx)(h.Z, {
         guild: t,
         ref: E
       }), (0, l.jsx)(f, {
@@ -62,7 +62,7 @@ function p(e) {
         onSelectRow: _,
         searchState: T,
         onResetForNewMembers: S
-      }), T !== m.po.SUCCESS_STILL_INDEXING && (0, l.jsx)(h.Z, {
+      }), T !== m.po.SUCCESS_STILL_INDEXING && (0, l.jsx)(j.Z, {
         guildId: t.id,
         onPageChange: a
       })]

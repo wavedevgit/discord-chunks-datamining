@@ -10,27 +10,27 @@ var Chunk255367 = require("./255367.js"),
   Chunk668826 = require("./668826.js"),
   Chunk120421 = require("./120421.js"),
   Chunk18582 = require("./18582.jsx"),
-  Chunk603571 = require("./603571.js"),
+  Chunk511479 = require("./511479.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk55784 = require("./55784.js"),
+  Chunk584035 = require("./584035.js"),
   Chunk527474 = require("./527474.js"),
   Chunk476657 = require("./476657.js");
 
 function g() {
   let [e, t] = (0, Chunk73800.useState)(false), [n, g] = (0, Chunk73800.useState)(false), b = (0, Chunk73800.useRef)(false), y = (0, Chunk442837.e7)([Chunk120421.Z], () => Chunk120421.Z.volume), h = (0, Chunk442837.e7)([Chunk120421.Z], () => Chunk120421.Z.isMuted);
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk55784.volume,
+    className: Chunk584035.volume,
     onMouseEnter: () => exports(true),
     onMouseLeave: () => exports(false),
     children: [(0, Chunk255367.jsx)(Chunk18582.Z, {
       onClick: () => (0, Chunk668826.Zj)(!h),
       children: (0, Chunk255367.jsx)("img", {
-        className: Chunk55784.icon,
+        className: Chunk584035.icon,
         src: h ? Chunk476657 : Chunk527474,
-        alt: Chunk388032.intl.string(Chunk603571.default["3Kvtn5"])
+        alt: Chunk388032.intl.string(Chunk511479.default["3Kvtn5"])
       })
     }), module || require ? (0, Chunk255367.jsx)(Chunk481060.iRW, {
-      className: Chunk55784.volumeSlider,
+      className: Chunk584035.volumeSlider,
       initialValue: h ? 0 : 100 * y,
       minValue: 0,
       maxValue: 100,

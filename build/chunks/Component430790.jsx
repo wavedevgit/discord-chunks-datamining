@@ -1,4 +1,4 @@
-/** Chunk was on 29458 **/
+/** Chunk was on 76708 **/
 /** chunk id: 430790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -10,7 +10,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
   Chunk810473 = require("./810473.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk915642 = require("./915642.js");
+  Chunk684066 = require("./684066.js");
 
 function u() {
   let e = 0 === (0, Chunk810473.Z)().length,
@@ -42,7 +42,7 @@ function u() {
       })
     }, []);
   return (0, Chunk255367.jsxs)(Chunk481060.P3F, {
-    className: o()(Chunk915642.addWidgetButton, module && Chunk915642.disabled),
+    className: o()(Chunk684066.addWidgetButton, module && Chunk684066.disabled),
     onClick: module ? true : exports,
     "aria-disabled": module,
     children: [(0, Chunk255367.jsx)(Chunk481060.qJs, {

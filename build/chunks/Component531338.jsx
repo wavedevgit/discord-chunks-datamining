@@ -1,7 +1,7 @@
 /** Chunk was on 58131 **/
 /** chunk id: 531338, original params: e,t,o (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => p
+  default: () => v
 }), require("./35282.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -13,56 +13,56 @@ var Chunk755721 = require("./755721.js"),
   Chunk787025 = require("./787025.jsx"),
   Chunk656649 = require("./656649.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk548865 = require("./548865.js");
-let p = (0, Chunk77987.e)(function(e) {
+  Chunk736902 = require("./736902.js");
+let v = (0, Chunk77987.e)(function(e) {
   let {
     match: t
-  } = e, o = t.params.type, i = s.Z.get(o);
-  if (null == i) return (0, n.jsx)(c.G, {
-    children: (0, n.jsx)(a.Text, {
+  } = e, o = t.params.type, s = i.Z.get(o);
+  if (null == s) return (0, r.jsx)(c.G, {
+    children: (0, r.jsx)(a.Text, {
       className: f.error,
       variant: "text-md/normal",
       color: "text-feedback-warning",
       children: u.intl.string(u.t.WLDKSU)
     })
   });
-  async function p() {
-    var e, t, n;
-    let r = new URLSearchParams(window.location.search),
+  async function v() {
+    var e, t, r;
+    let n = new URLSearchParams(window.location.search),
       {
         body: a
       } = await l.Z.authorize(o, {
         location: "Connection Intermediate",
-        twoWayLink: null != r.get("two_way_link") ? "true" === r.get("two_way_link") : true,
-        twoWayLinkType: null != (e = r.get("two_way_link_type")) ? e : true,
-        userCode: null != (t = r.get("two_way_user_code")) ? t : true,
-        successRedirect: null != (n = r.get("success_redirect")) ? n : true
+        twoWayLink: null != n.get("two_way_link") ? "true" === n.get("two_way_link") : true,
+        twoWayLinkType: null != (e = n.get("two_way_link_type")) ? e : true,
+        userCode: null != (t = n.get("two_way_user_code")) ? t : true,
+        successRedirect: null != (r = n.get("success_redirect")) ? r : true
       });
     window.location = a.url
   }
-  return (0, n.jsx)(c.G, {
+  return (0, r.jsx)(c.G, {
     wrapperClassName: f.wrapper,
-    children: (0, n.jsxs)("div", {
+    children: (0, r.jsxs)("div", {
       className: f.root,
-      children: [(0, n.jsx)(d.KJ, {
+      children: [(0, r.jsx)(d.KJ, {
         className: f.logos,
-        platform: i
-      }), (0, n.jsx)(a.X6q, {
+        platform: s
+      }), (0, r.jsx)(a.X6q, {
         variant: "text-lg/bold",
         className: f.header,
         children: u.intl.format(u.t.Pw4veX, {
-          provider: i.name
+          provider: s.name
         })
-      }), (0, n.jsx)(a.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         className: f.body,
         children: u.intl.format(u.t.rHlSVF, {
-          provider: i.name
+          provider: s.name
         })
-      }), (0, n.jsx)(r.zx, {
-        size: r.zx.Sizes.LARGE,
-        color: r.zx.Colors.BRAND,
-        onClick: p,
+      }), (0, r.jsx)(n.zx, {
+        size: n.zx.Sizes.LARGE,
+        color: n.zx.Colors.BRAND,
+        onClick: v,
         children: u.intl.string(u.t["+NJGEh"])
       })]
     })

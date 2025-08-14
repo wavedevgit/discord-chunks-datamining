@@ -17,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk566389 = require("./566389.js");
+  Chunk12033 = require("./12033.js");
 let g = (0, Chunk131704.kt)({
   id: "1",
   type: Chunk981631.d4z.DM

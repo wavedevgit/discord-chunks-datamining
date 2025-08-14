@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 390954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -17,7 +17,7 @@ var i, Chunk255367 = require("./255367.js"),
   Chunk244526 = require("./244526.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk388912 = require("./388912.js");
+  Chunk579378 = require("./579378.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,9 +68,9 @@ class E extends(i = Chunk73800.PureComponent) {
       onDelete: Chunk981631
     }) : (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
       children: [i > 0 && !Chunk73800 ? (0, Chunk255367.jsx)(Chunk481060.$i$, {
-        className: Chunk388912.__invalid_sourceDivider
+        className: Chunk579378.__invalid_sourceDivider
       }) : null, (0, Chunk255367.jsxs)("div", {
-        className: Chunk388912.paymentSourceRow,
+        className: Chunk579378.paymentSourceRow,
         children: [(0, Chunk255367.jsx)(Chunk244526.Z, {
           paymentSource: module,
           isDefault: exports,
@@ -105,14 +105,14 @@ class C extends Chunk73800.PureComponent {
       paymentSources: e
     } = this.props;
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk388912.footer,
+      className: Chunk579378.footer,
       children: [0 === Object.keys(module).length ? (0, Chunk255367.jsxs)("div", {
-        className: Chunk388912.footerContent,
+        className: Chunk579378.footerContent,
         children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
           children: Chunk388032.intl.string(Chunk388032.t.aRHpAA)
         }), (0, Chunk255367.jsx)("div", {
-          className: Chunk388912.subText,
+          className: Chunk579378.subText,
           children: Chunk388032.intl.string(Chunk388032.t.o9bOIi)
         })]
       }) : null, (0, Chunk255367.jsx)(Chunk159691.zx, {
@@ -148,7 +148,7 @@ class C extends Chunk73800.PureComponent {
       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
         tag: "h1",
         children: (0, Chunk255367.jsxs)("div", {
-          className: Chunk388912.titleContainer,
+          className: Chunk579378.titleContainer,
           children: [(0, Chunk255367.jsx)(Chunk481060.ua7, {
             position: "left",
             text: Chunk388032.intl.string(Chunk388032.t.h6V3uL),
@@ -160,7 +160,7 @@ class C extends Chunk73800.PureComponent {
           }), Chunk388032.intl.string(Chunk388032.t.W26xGR)]
         })
       }), Chunk212895, Chunk159351 !== Chunk159691.length - 1 ? (0, Chunk255367.jsx)(Chunk481060.$i$, {
-        className: Chunk388912.__invalid_sourceDivider
+        className: Chunk579378.__invalid_sourceDivider
       }) : null, this.renderFooter()]
     })
   }
@@ -196,21 +196,20 @@ class C extends Chunk73800.PureComponent {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 623573));
-        return t => {
-          var n, i;
-          return (0, r.jsx)(e, (n = j({}, t), i = i = {
-            onAddPaymentSource: this.handlePaymentSourceAdded
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        return t => (0, r.jsx)(e, function(e, t) {
+          return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var i = Object.getOwnPropertySymbols(e);
               n.push.apply(n, i)
             }
             return n
-          })(Object(i)).forEach(function(e) {
-            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-          }), n))
-        }
+          })(Object(t)).forEach(function(n) {
+            Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+          }), e
+        }(j({}, t), {
+          onAddPaymentSource: this.handlePaymentSourceAdded
+        }))
       }, {
         onCloseCallback: () => {
           (0, u.fw)()

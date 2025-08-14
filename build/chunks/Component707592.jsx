@@ -11,24 +11,24 @@ var Chunk755721 = require("./755721.js"),
   Chunk489813 = require("./489813.jsx"),
   Chunk592286 = require("./592286.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk863296 = require("./863296.js");
+  Chunk624463 = require("./624463.js");
 
 function c(e) {
   let {
     value: n,
     placeholder: t,
     onChange: a,
-    disabled: r,
+    disabled: o,
     autofocus: s,
     className: c
   } = e;
   return (0, l.jsx)(i.Is, {
     inputClassName: c,
-    maxLength: o.tL,
+    maxLength: r.tL,
     value: null != n ? n : "",
     placeholder: t,
     onChange: a,
-    disabled: r,
+    disabled: o,
     autoFocus: s
   })
 }
@@ -61,7 +61,7 @@ function d(e) {
       onChange: i,
       value: n.response,
       autofocus: t,
-      placeholder: r.intl.string(r.t["Sqn+Wl"])
+      placeholder: o.intl.string(o.t["Sqn+Wl"])
     })
   })
 }

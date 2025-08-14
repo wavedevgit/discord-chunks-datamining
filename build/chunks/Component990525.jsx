@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk509571 = require("./509571.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk662799 = require("./662799.js");
+  Chunk478875 = require("./478875.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -80,12 +80,12 @@ let C = 200,
         clearTimeout(e), M(false)
       }
     }, [L]);
-    let j = (0, m.J_)({
+    let k = (0, m.J_)({
         location: "voice_filter_item",
         autoTrackExposure: true,
         disable: !_.ZP.canCheckVoiceFilterFilesExist()
       }),
-      k = (0, s.e7)([g.Z], () => g.Z.isVoiceFilterDownloaded(t.id), [t]),
+      j = (0, s.e7)([g.Z], () => g.Z.isVoiceFilterDownloaded(t.id), [t]),
       U = null == R ? true : R.previewSoundURLs,
       [G, B] = i.useState(0),
       {
@@ -117,7 +117,7 @@ let C = 200,
         [I.locked]: w && !P
       }),
       children: [(0, r.jsx)(c.ua7, {
-        shouldShow: j && !k,
+        shouldShow: k && !j,
         "aria-label": v.intl.string(v.t.SQ7qMD),
         text: (0, r.jsxs)("div", {
           className: I.downloadRequiredContent,
@@ -197,7 +197,7 @@ let C = 200,
               variant: "text-xs/medium",
               color: t.underDevelopment ? "header-muted" : "header-primary",
               children: [t.underDevelopment ? "\uD83D\uDEA7 " : "", z]
-            }), j && !k ? (0, r.jsx)(c._8t, {
+            }), k && !j ? (0, r.jsx)(c._8t, {
               size: "xxs"
             }) : null]
           })]

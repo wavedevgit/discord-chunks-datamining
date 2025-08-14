@@ -21,43 +21,43 @@ var Chunk255367 = require("./255367.js"),
   Chunk505905 = require("./505905.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk657488 = require("./657488.js");
+  Chunk492006 = require("./492006.js");
 
 function C(e) {
   let {
     customStatusEmoji: t,
     setCustomStatusEmoji: n,
     onClose: r
-  } = e, d = o.useRef(null), j = (0, i.e7)([p.Z, m.Z], () => m.Z.getChannel(p.Z.getVoiceChannelId())), f = e => {
-    var t;
-    if (null == e) return void n(null);
-    n(null != e.id ? {
-      id: e.id,
-      name: e.name,
-      animated: e.animated
-    } : {
-      id: null,
-      name: null != (t = e.optionallyDiverseSequence) ? t : "",
-      animated: false
-    })
-  };
+  } = e, d = o.useRef(null), j = (0, i.e7)([p.Z, m.Z], () => m.Z.getChannel(p.Z.getVoiceChannelId()));
   return (0, l.jsx)(u.yRy, {
     targetElementRef: d,
     renderPopout: e => {
       var t;
       let {
-        closePopout: n
+        closePopout: o
       } = e;
       return (0, l.jsx)(c.Z, {
         channel: j,
         guildId: null != (t = null == j ? true : j.guild_id) ? t : true,
-        closePopout: n,
+        closePopout: o,
         onSelectEmoji: e => {
           let {
             emoji: t,
             willClose: l
           } = e;
-          f(t), l && n()
+          (e => {
+            var t;
+            if (null == e) return n(null);
+            n(null != e.id ? {
+              id: e.id,
+              name: e.name,
+              animated: e.animated
+            } : {
+              id: null,
+              name: null != (t = e.optionallyDiverseSequence) ? t : "",
+              animated: false
+            })
+          })(t), l && o()
         },
         pickerIntention: y.Hz.STATUS,
         onNavigateAway: r

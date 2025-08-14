@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 82409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -37,7 +37,7 @@ var Chunk377171 = require("./377171.js"),
   Chunk982183 = require("./982183.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk548265 = require("./548265.js");
+  Chunk567133 = require("./567133.js");
 
 function M(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -76,31 +76,31 @@ function G(e) {
   var t, n;
   let {
     includePanelSpacing: l
-  } = e, s = (0, E.fJ)(), {
-    selectedFilter: p
-  } = (0, S.Z)(), P = (0, a.e7)([x.Z], () => x.Z.oldestDisplayedMessageId), N = (0, a.Wu)([x.Z], () => x.Z.getInboxMessages()), w = (0, a.Wu)([y.ZP, O.Z, x.Z], () => N.filter(e => !(0, I.YH)({
+  } = e, a = (0, E.fJ)(), {
+    selectedFilter: f
+  } = (0, x.Z)(), I = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), N = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), w = (0, s.Wu)([y.ZP, O.Z, S.Z], () => N.filter(e => !(0, P.YH)({
     messageId: e.id,
     channelId: e.channelId,
     guildId: e.guildId,
     ReadStateStore_: y.ZP,
     GuildStore_: O.Z
-  }) && !(0, I.Tj)(e, x.Z.selectedItemInfo))), D = (0, a.Wu)([y.ZP, O.Z, x.Z], () => N.filter(e => (0, I.YH)({
+  }) && !(0, P.Tj)(e, S.Z.selectedItemInfo))), D = (0, s.Wu)([y.ZP, O.Z, S.Z], () => N.filter(e => (0, P.YH)({
     messageId: e.id,
     channelId: e.channelId,
     guildId: e.guildId,
     ReadStateStore_: y.ZP,
     GuildStore_: O.Z
-  }) || (0, I.Tj)(e, x.Z.selectedItemInfo))), G = i.useCallback(e => {
-    p !== A.V5.BOOKMARKS && j.Z.loadMoreInbox({
-      viewId: s,
+  }) || (0, P.Tj)(e, S.Z.selectedItemInfo))), G = i.useCallback(e => {
+    f !== A.V5.BOOKMARKS && C.Z.loadMoreInbox({
+      viewId: a,
       loadingTrigger: e
     })
-  }, [p, s]), {
+  }, [f, a]), {
     hasLoadedEver: B,
     canLoadMore: W
-  } = (0, a.cj)([x.Z], () => ({
-    hasLoadedEver: x.Z.hasLoadedEver,
-    canLoadMore: x.Z.canLoadMore({})
+  } = (0, s.cj)([S.Z], () => ({
+    hasLoadedEver: S.Z.hasLoadedEver,
+    canLoadMore: S.Z.canLoadMore({})
   }));
   i.useEffect(() => {
       W && !B && G(A.X.ON_OPEN)
@@ -108,7 +108,7 @@ function G(e) {
     function(e) {
       let {
         unreadChannelIds: t
-      } = (0, I.O4)();
+      } = (0, P.O4)();
       i.useEffect(() => {
         null != e && t.forEach(e => {
           var t;
@@ -116,7 +116,7 @@ function G(e) {
             r = null == (t = n.last()) ? true : t.id,
             i = y.ZP.ackMessageId(e),
             l = n.hasPresent() && n.ready && !n.cached;
-          null != r && null != i && l && C.default.compare(i, r) >= 0 && d.In(e, {
+          null != r && null != i && l && v.default.compare(i, r) >= 0 && d.In(e, {
             section: R.jXE.NOTIFICATIONS_INBOX,
             object: R.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
             objectType: R.Qqv.ACK_AUTOMATIC
@@ -124,7 +124,7 @@ function G(e) {
         })
       }, [e, t])
     }(B ? D : null);
-  let K = (0, a.Wu)([m.Z], () => m.Z.getSavedMessages()),
+  let K = (0, s.Wu)([m.Z], () => m.Z.getSavedMessages()),
     Y = i.useMemo(() => K.flatMap(e => {
       var t;
       let {
@@ -138,18 +138,18 @@ function G(e) {
         message: n
       }]
     }), [K]),
-    q = V(w, p, P),
-    X = V(D, p, null);
-  (0, h.ZP)(() => {
+    q = V(w, f, I),
+    X = V(D, f, null);
+  (0, p.ZP)(() => {
     var e;
     u.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_OPEN"
     });
-    let t = (0, v.Ag)({
+    let t = (0, j.Ag)({
         location: "NotificationsInboxSidebar"
       }).notificationCenterVariant,
-      n = null == (e = x.Z.getDevOverrides().navOnClick) || e;
-    if (t !== v.jP.SIDEBAR || false === n) return;
+      n = null == (e = S.Z.getDevOverrides().navOnClick) || e;
+    if (t !== j.jP.SIDEBAR || false === n) return;
     let {
       message: r,
       isUnread: i
@@ -157,30 +157,30 @@ function G(e) {
       var n, r, i;
       let l = null == (n = e[e.length - 1]) ? true : n.message,
         o = null == (r = t[t.length - 1]) ? true : r.message,
-        s = null != o ? o : l;
-      if (null != s) return {
-        message: s,
+        a = null != o ? o : l;
+      if (null != a) return {
+        message: a,
         isUnread: null != o
       };
-      let a = x.Z.getNotifyingChannelIds();
-      if (null == a || 0 === a.length) return {
+      let s = S.Z.getNotifyingChannelIds();
+      if (null == s || 0 === s.length) return {
         message: null,
         isUnread: false
       };
-      let c = a[0],
+      let c = s[0],
         u = y.ZP.getTrackedAckMessageId(c);
       return null == u ? {
         message: null,
         isUnread: false
       } : {
         message: {
-          id: C.default.atNextMillisecond(u),
+          id: v.default.atNextMillisecond(u),
           channel_id: c
         },
         isUnread: null != (i = y.ZP.hasUnread(c)) && i
       }
     }(q, X);
-    null != r && j.Z.inboxItemClick({
+    null != r && C.Z.inboxItemClick({
       message: r,
       channel: {
         id: r.channel_id
@@ -188,29 +188,29 @@ function G(e) {
       isUnread: i,
       isSidebar: true,
       track: false,
-      viewId: s
+      viewId: a
     })
-  }), (0, h.zq)(() => {
+  }), (0, p.zq)(() => {
     u.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_CLOSE"
     })
   });
   let {
     filterStyle: Q
-  } = (0, v.pN)({
+  } = (0, j.pN)({
     location: "NotificationsInboxSidebar"
   }), {
     entrypoints: J
   } = (0, g._k)({
     location: "NotificationsInboxSidebar"
-  }), $ = Q === v.v8.DROPDOWN && p !== A.V5.ALL, ee = (0, A.H_)(p);
+  }), $ = Q === j.v8.DROPDOWN && f !== A.V5.ALL, ee = (0, A.H_)(f);
   return (0, r.jsx)("nav", {
     className: o()(L.container, {
       [L.panelSpacing]: l
     }),
     children: (0, r.jsxs)(c.y5t, {
       forceLevel: 1,
-      component: (0, r.jsx)(f.ZP, (t = M({
+      component: (0, r.jsx)(h.ZP, (t = M({
         hasSubheader: true,
         guild: ee
       }, U), n = n = {
@@ -220,7 +220,7 @@ function G(e) {
           style: {
             marginRight: false
           },
-          children: Q === v.v8.DROPDOWN && !J && (0, r.jsx)(Z.p, {})
+          children: Q === j.v8.DROPDOWN && !J && (0, r.jsx)(Z.p, {})
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -232,18 +232,18 @@ function G(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)),
-      children: [p === A.V5.ALL && (0, r.jsx)(z, {
-        hideBanner: !B || p !== A.V5.ALL
+      children: [f === A.V5.ALL && (0, r.jsx)(z, {
+        hideBanner: !B || f !== A.V5.ALL
       }), $ && (0, r.jsx)(c.LZC, {
         size: 8
       }), (0, r.jsx)(T.Z, {
         className: L.messageList,
         renderMessageGroup: H,
-        messages: p === A.V5.BOOKMARKS ? Y : q,
-        unreadMessages: p === A.V5.BOOKMARKS ? [] : X,
+        messages: f === A.V5.BOOKMARKS ? Y : q,
+        unreadMessages: f === A.V5.BOOKMARKS ? [] : X,
         listName: "notifications-inbox",
         renderLoadingState: F,
-        ignoreGrouping: p === A.V5.BOOKMARKS,
+        ignoreGrouping: f === A.V5.BOOKMARKS,
         loadMore: G
       })]
     })
@@ -261,7 +261,7 @@ function V(e, t, n) {
     let {
       id: r
     } = e;
-    return !(C.default.age(r) > A.ib || null != n && 0 >= C.default.compare(r, n)) && t === A.V5.ALL
+    return !(v.default.age(r) > A.ib || null != n && 0 >= v.default.compare(r, n)) && t === A.V5.ALL
   }), [e, t, n])
 }
 
@@ -280,7 +280,7 @@ function H(e, t) {
 function z(e) {
   let {
     hideBanner: t
-  } = e, n = (0, P.d)(e => e.shouldHide());
+  } = e, n = (0, I.d)(e => e.shouldHide());
   return (0, r.jsx)("div", {
     className: o()(L.caughtUpContainer, {
       [L.hide]: n || t
@@ -294,7 +294,7 @@ function z(e) {
         children: D.intl.string(D.t["6XMM+P"])
       }), (0, r.jsx)(c.W6s, {
         size: "sm",
-        color: p.Z.TEXT_FEEDBACK_POSITIVE
+        color: f.Z.TEXT_FEEDBACK_POSITIVE
       })]
     })
   })

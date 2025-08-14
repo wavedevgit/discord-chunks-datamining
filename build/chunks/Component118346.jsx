@@ -1,4 +1,4 @@
-/** Chunk was on 70971 **/
+/** Chunk was on 36605 **/
 /** chunk id: 118346, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => m,
@@ -10,7 +10,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk893776 = require("./893776.js"),
   Chunk489813 = require("./489813.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk863296 = require("./863296.js");
+  Chunk624463 = require("./624463.js");
 
 function u() {
   let [e, t] = Chunk73800.useState(false), [n, a] = Chunk73800.useState(false), [u, d] = Chunk73800.useState(false);
@@ -33,7 +33,7 @@ function u() {
     }
   };
   return require ? (0, Chunk255367.jsx)(Chunk481060.Text, {
-    className: Chunk863296.verifyConfirmText,
+    className: Chunk624463.verifyConfirmText,
     variant: "text-sm/normal",
     color: "text-feedback-positive",
     children: Chunk388032.intl.string(Chunk388032.t.H3Q7U1)
@@ -48,7 +48,7 @@ function u() {
 
 function d() {
   return (0, Chunk255367.jsx)(Chunk489813.PU, {
-    className: Chunk863296.editableRequirementContainer,
+    className: Chunk624463.editableRequirementContainer,
     icon: Chunk481060._XJ,
     text: Chunk388032.intl.string(Chunk388032.t.c6EUJC),
     footnote: Chunk388032.intl.string(Chunk388032.t["jMh+TU"]),

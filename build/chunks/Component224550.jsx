@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk215023 = require("./215023.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk576989 = require("./576989.js");
+  Chunk498138 = require("./498138.js");
 let g = (e, t, n, r) => {
     if (null == e || null == t || null == n) {
       let e = Error("Missing base rate for legal fine print"),
@@ -64,11 +64,11 @@ let g = (e, t, n, r) => {
         planGroup: x,
         isPrepaidPaymentSource: false
       }),
-      j = h.intl.format(h.t.Y2Rkqa, {
+      k = h.intl.format(h.t.Y2Rkqa, {
         primaryText: M,
         paidURL: f.EYA.PAID_TERMS
       }),
-      k = h.intl.format(h.t.H2uH5e, {
+      j = h.intl.format(h.t.H2uH5e, {
         primaryText: M,
         paidURL: f.EYA.PAID_TERMS
       }),
@@ -101,20 +101,20 @@ let g = (e, t, n, r) => {
           throw Error("Unexpected interval: ".concat(t))
       } else if (N === f.GZQ.ONE_TIME) switch (C) {
         case f.POd.COLLECTIBLES:
-          G = j, U = y ? h.intl.format(h.t.ofqyUl, {
+          G = k, U = y ? h.intl.format(h.t.ofqyUl, {
             paidURL: f.EYA.PAID_TERMS
           }) : h.intl.format(h.t.G3l0s7, {
             paidURL: f.EYA.PAID_TERMS
           });
           break;
         case f.POd.GUILD_PRODUCT:
-          G = j, U = h.intl.format(h.t["GEAQ+v"], {
+          G = k, U = h.intl.format(h.t["GEAQ+v"], {
             paidURL: f.EYA.PAID_TERMS
           });
           break;
         default:
-          G = k, U = h.intl.string(h.t["9/siSU"])
-      } else if (null == b || y) switch (y && (G = j), t) {
+          G = j, U = h.intl.string(h.t["9/siSU"])
+      } else if (null == b || y) switch (y && (G = k), t) {
         case p.rV.MONTH:
           U = y ? h.intl.string(h.t.IjNapq) : h.intl.string(h.t["/sGXPj"]), U = y ? h.intl.string(h.t.IjNapq) : 1 === n ? h.intl.string(h.t["/sGXPj"]) : h.intl.formatToPlainString(h.t.Fqjiho, {
             intervalCount: n

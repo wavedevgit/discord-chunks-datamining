@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 831218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk299608 = require("./299608.js"),
   c = require.n(Chunk299608),
   Chunk91192 = require("./91192.jsx"),
@@ -36,7 +36,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk55589 = require("./55589.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk228308 = require("./228308.js");
+  Chunk777126 = require("./777126.js");
 
 function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,7 +77,7 @@ let B = Chunk73800.memo(function() {
     width: "184",
     height: "428",
     viewBox: "0 0 184 428",
-    className: Chunk228308.empty,
+    className: Chunk777126.empty,
     children: [(0, Chunk255367.jsx)("rect", {
       x: 40,
       y: 6,
@@ -228,7 +228,7 @@ class V extends(r = Chunk73800.Component) {
     null != module && null != exports && exports.indexOf(module) >= 0 && this.scrollToChannel(module), this.reportAnalytics()
   }
   shouldComponentUpdate(e) {
-    return !(0, p.Z)(this.props, e, ["children"])
+    return !(0, f.Z)(this.props, e, ["children"])
   }
   componentDidUpdate(e) {
     let {
@@ -263,7 +263,7 @@ class V extends(r = Chunk73800.Component) {
         var {
           ref: l,
           role: o
-        } = r, s = function(e, t) {
+        } = r, a = function(e, t) {
           if (null == e) return {};
           var n, r, i = function(e, t) {
             if (null == e) return {};
@@ -278,8 +278,8 @@ class V extends(r = Chunk73800.Component) {
           }
           return i
         }(r, ["ref", "role"]);
-        return (0, i.jsx)(f.Wdt, {
-          children: r => (0, i.jsx)(f.aVo, U({
+        return (0, i.jsx)(h.Wdt, {
+          children: r => (0, i.jsx)(h.aVo, U({
             fade: true,
             innerRole: o,
             innerAriaLabel: L.intl.string(L.t.YUU0RE),
@@ -297,7 +297,7 @@ class V extends(r = Chunk73800.Component) {
             renderSection: this.renderSection,
             renderRow: this.renderRow,
             sections: [n, Math.max(e.length, 1)]
-          }, s, r))
+          }, a, r))
         })
       }
     })
@@ -321,15 +321,15 @@ class V extends(r = Chunk73800.Component) {
       let i = l.Children.count(this.props.children);
       if (null == t) return;
       let o = Math.round((t.offsetHeight - 44 * i) / 44),
-        s = o > n.length ? n.slice(0, o + 1) : n,
-        a = s.map(e => null != r[e] ? r[e].getRecipientId() : null),
-        c = n.some(e => (0, C.Z)(e)),
+        a = o > n.length ? n.slice(0, o + 1) : n,
+        s = a.map(e => null != r[e] ? r[e].getRecipientId() : null),
+        c = n.some(e => (0, v.Z)(e)),
         u = {
-          num_users_visible: s.length,
-          num_users_visible_with_mobile_indicator: a.filter(e => null != e && A.Z.isMobileOnline(e)).length
+          num_users_visible: a.length,
+          num_users_visible_with_mobile_indicator: s.filter(e => null != e && A.Z.isMobileOnline(e)).length
         };
       this.hasReportedAnalytics = true, O.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, G(U({}, u, (0, y.X)()), {
-        visible_user_ids: a.filter(e => null != e),
+        visible_user_ids: s.filter(e => null != e),
         changelog_dm_visible: c
       }))
     }), k(this, "getSectionHeight", e => {
@@ -350,14 +350,14 @@ class V extends(r = Chunk73800.Component) {
         selectedChannelId: l
       } = this.props, {
         totalRowCount: o,
-        preRenderedChildren: s
-      } = this.state, a = r[n[t]];
-      return null == a ? null : (0, i.jsx)(v.W, {
-        channel: a,
-        selected: a.id === l,
-        "aria-posinset": s + t + 1,
+        preRenderedChildren: a
+      } = this.state, s = r[n[t]];
+      return null == s ? null : (0, i.jsx)(j.W, {
+        channel: s,
+        selected: s.id === l,
+        "aria-posinset": a + t + 1,
         "aria-setsize": o
-      }, a.id)
+      }, s.id)
     }), k(this, "renderChild", e => {
       let {
         nonNullChildren: t,
@@ -382,25 +382,25 @@ class V extends(r = Chunk73800.Component) {
         showDMHeader: n,
         createDMCTAButtonVariant: r
       } = this.props;
-      return 0 !== t && n ? (0, i.jsxs)(j.Z, {
-        className: s()(M.privateChannelsHeaderContainer, {
+      return 0 !== t && n ? (0, i.jsxs)(C.Z, {
+        className: a()(M.privateChannelsHeaderContainer, {
           [M.tall]: "side" === r
         }),
         children: [(0, i.jsx)("span", {
           className: M.headerText,
           children: L.intl.string(L.t.YUU0RE)
-        }), null == r && (0, i.jsx)(I.Z, {
+        }), null == r && (0, i.jsx)(P.Z, {
           location: "PrivateChannelsList-CreateDMButton",
           tooltip: L.intl.string(L.t["6Urw1t"]),
           tooltipPosition: "top",
           popoutAlign: "left",
           className: M.privateChannelRecipientsInviteButtonIconContainer,
           iconClassName: M.privateChannelRecipientsInviteButtonIcon,
-          icon: f.BRu,
+          icon: h.BRu,
           subscribeToGlobalHotkey: true
-        }), "side" === r && (0, i.jsx)(I.l, {
+        }), "side" === r && (0, i.jsx)(P.l, {
           popoutAlign: "left",
-          icon: f.kL_,
+          icon: h.kL_,
           text: L.intl.string(L.t["6Urw1t"]),
           size: "sm",
           subscribeToGlobalHotkey: true
@@ -416,8 +416,8 @@ class V extends(r = Chunk73800.Component) {
       if (0 === e) {
         let e = i[t];
         if (l.isValidElement(e)) {
-          var s;
-          o = (null == (s = e.key) ? true : s.startsWith("section-divider")) ? 25 : "dm-quick-launcher" === e.key ? 67 : 40
+          var a;
+          o = (null == (a = e.key) ? true : a.startsWith("section-divider")) ? 25 : "dm-quick-launcher" === e.key ? 67 : 40
         }
       } else o = "compact" === r ? 40 : "default" === r ? 44 : 50;
       return 1 === e && 0 === t && 0 === n.length ? 428 : o
@@ -430,27 +430,27 @@ k(V, "defaultProps", {
 let F = e => {
   let {
     density: t
-  } = (0, f.TCT)(), {
+  } = (0, h.TCT)(), {
     version: n,
     theme: r,
     children: o,
-    showDMHeader: s,
-    listScrollerRef: a,
+    showDMHeader: a,
+    listScrollerRef: s,
     createDMCTAButtonVariant: c
-  } = e, p = l.Children.count(o), g = T.Z.getMutablePrivateChannels(), O = (0, N.k1)(g), y = (0, h.Wu)([R.Z, P.Z, w.Z], () => {
+  } = e, f = l.Children.count(o), g = T.Z.getMutablePrivateChannels(), O = (0, N.k1)(g), y = (0, p.Wu)([R.Z, I.Z, w.Z], () => {
     let e = R.Z.getPrivateChannelIds();
-    return (0, N.tU)(e, [P.Z, w.Z])
+    return (0, N.tU)(e, [I.Z, w.Z])
   }, []);
-  (0, x.z)(S.R);
+  (0, S.z)(x.R);
   let {
-    analyticsLocations: C
-  } = (0, _.ZP)(b.Z.CONTACTS_LIST), v = (0, Z.Ll)(), {
-    keyboardModeEnabled: j,
-    version: I
-  } = (0, h.cj)([m.Z, T.Z], () => ({
+    analyticsLocations: v
+  } = (0, _.ZP)(b.Z.CONTACTS_LIST), j = (0, Z.Ll)(), {
+    keyboardModeEnabled: C,
+    version: P
+  } = (0, p.cj)([m.Z, T.Z], () => ({
     keyboardModeEnabled: m.Z.keyboardModeEnabled,
     version: null != n ? "".concat(n, ":").concat(T.Z.getPrivateChannelsVersion()) : T.Z.getPrivateChannelsVersion()
-  })), A = l.useRef(null), D = null != a ? a : A, L = l.useCallback(e => {
+  })), A = l.useRef(null), D = null != s ? s : A, L = l.useCallback(e => {
     let t = D.current,
       n = document.querySelector(e);
     null != t && null != n && t.scrollIntoViewNode({
@@ -480,14 +480,14 @@ let F = e => {
     })
   }), [D]), B = (0, E.Dt)(), F = (0, d.ZP)({
     id: "private-channels-".concat(B),
-    isEnabled: j,
+    isEnabled: C,
     scrollToStart: M,
     scrollToEnd: k,
-    defaultFocused: (p + +!!s).toString(),
+    defaultFocused: (f + +!!a).toString(),
     setFocus: L
   });
   return (0, i.jsx)(_.Gt, {
-    value: C,
+    value: v,
     children: (0, i.jsx)(u.bG, {
       navigator: F,
       children: (0, i.jsx)(V, G(U({}, e), {
@@ -495,8 +495,8 @@ let F = e => {
         channels: O,
         privateChannelIds: y,
         listRef: D,
-        theme: null != v ? v : r,
-        version: I,
+        theme: null != j ? j : r,
+        version: P,
         createDMCTAButtonVariant: c
       }))
     })

@@ -1,16 +1,16 @@
-/** Chunk was on 72762 **/
+/** Chunk was on 77512 **/
 /** chunk id: 321114, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => o
+  c: () => s
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js");
-async function o(e, t) {
+async function s(e, t) {
   try {
     let n = await r.tn.put({
-      url: s.ANM.USER_SET_GUILD_IDENTITY,
+      url: o.ANM.USER_SET_GUILD_IDENTITY,
       body: {
         identity_guild_id: e,
         identity_enabled: t

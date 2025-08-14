@@ -41,9 +41,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk214785 = require("./214785.js");
+  Chunk411851 = require("./411851.js");
 
-function U(e) {
+function H(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -62,7 +62,7 @@ function U(e) {
   return e
 }
 
-function H(e, t) {
+function W(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -75,7 +75,7 @@ function H(e, t) {
   }), e
 }
 
-function W(e) {
+function U(e) {
   let {
     channel: t,
     roles: n,
@@ -220,7 +220,7 @@ function G(e) {
       let {
         default: e
       } = await n.e("46786").then(n.bind(n, 388131));
-      return t => (0, i.jsx)(e, H(U({}, t), {
+      return t => (0, i.jsx)(e, W(H({}, t), {
         channelId: l.id
       }))
     })
@@ -251,7 +251,7 @@ function G(e) {
         }), (0, i.jsx)(c.ua7, {
           text: B.intl.string(B.t.arRuER),
           shouldShow: !h,
-          children: e => (0, i.jsx)(c.zxk, H(U({
+          children: e => (0, i.jsx)(c.zxk, W(H({
             variant: "primary",
             size: "sm",
             text: B.intl.string(B.t.dMJ3Y2)
@@ -260,7 +260,7 @@ function G(e) {
             disabled: !h
           }))
         })]
-      }), (0, i.jsx)(W, {
+      }), (0, i.jsx)(U, {
         channel: l,
         roles: d,
         members: u,
@@ -286,7 +286,7 @@ function F(e) {
       let {
         ConfirmModal: e
       } = await Promise.resolve().then(n.bind(n, 878678));
-      return n => (0, i.jsx)(e, H(U({}, n), {
+      return n => (0, i.jsx)(e, W(H({}, n), {
         confirmButtonColor: o.Tt.BRAND,
         header: B.intl.string(B.t.ZzdgUl),
         confirmText: B.intl.string(B.t.BddRzc),
@@ -356,14 +356,14 @@ function F(e) {
                 let {
                   default: e
                 } = await Promise.resolve().then(n.bind(n, 185413));
-                return t => (0, i.jsx)(e, H(U({}, t), {
+                return t => (0, i.jsx)(e, W(H({}, t), {
                   channelId: l.id,
                   inSettings: true
                 }))
               })
             }
           })]
-        }), (0, i.jsx)(W, {
+        }), (0, i.jsx)(U, {
           channel: l,
           roles: d,
           members: u,
@@ -458,13 +458,13 @@ let X = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
           let {
             default: e
           } = await Promise.resolve().then(n.bind(n, 170509));
-          return t => (0, i.jsx)(e, H(U({}, t), {
+          return t => (0, i.jsx)(e, W(H({}, t), {
             channel: s,
             category: r,
             onConfirm: async () => {
               let {
                 guild_id: e
-              } = r, t = U({}, r.permissionOverwrites);
+              } = r, t = H({}, r.permissionOverwrites);
               null != e && null == t[e] && (t[e] = _.we(e)), await (0, j.u)(s, t[e].deny, t[e].allow) && (0, h.wk)(s.id, {
                 permissionOverwrites: Object.values(t)
               })

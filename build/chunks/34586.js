@@ -1,4 +1,4 @@
-/** Chunk was on 873 **/
+/** Chunk was on 1355 **/
 /** chunk id: 34586, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => a
@@ -12,9 +12,9 @@ function a(e) {
   return (0, r.e7)([l.Z], () => {
     if (null == e) return;
     let t = l.Z.getMemberCount(e.id),
-      n = e.features.has(i.oNc.ACTIVITY_FEED_ENABLED_BY_USER),
-      r = e.features.has(i.oNc.ACTIVITY_FEED_DISABLED_BY_USER),
-      a = null != t && t < s.k4;
+      n = e.features.has(s.oNc.ACTIVITY_FEED_ENABLED_BY_USER),
+      r = e.features.has(s.oNc.ACTIVITY_FEED_DISABLED_BY_USER),
+      a = null != t && t < i.k4;
     return n || r ? n : a
   })
 }

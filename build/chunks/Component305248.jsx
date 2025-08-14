@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 305248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -19,14 +19,14 @@ var Chunk255367 = require("./255367.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js"),
   Chunk124368 = require("./124368.js"),
-  Chunk612622 = require("./612622.js");
+  Chunk479014 = require("./479014.js");
 
 function y(e) {
   let {
     channel: t,
     channelRecord: n,
     deleteChannel: l
-  } = e, y = (0, s.Wu)([h.Z, f.Z], () => o()(h.Z.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
+  } = e, y = (0, a.Wu)([p.Z, h.Z], () => o()(p.Z.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
     let {
       id: n
     } = e;
@@ -35,12 +35,12 @@ function y(e) {
     let {
       id: t
     } = e;
-    return f.Z.getChannel(t)
-  }).filter(g.lm).sort((e, t) => m.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), C = i.useCallback((e, t) => {
-    (0, p.ok)(e, t, O.on.INBOX)
+    return h.Z.getChannel(t)
+  }).filter(g.lm).sort((e, t) => m.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), v = i.useCallback((e, t) => {
+    (0, f.ok)(e, t, O.on.INBOX)
   }, []);
   return i.useEffect(() => {
-    null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== y.length || a.Z.wait(() => {
+    null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== y.length || s.Z.wait(() => {
       (0, c.In)(t.channelId, {
         section: b.jXE.INBOX,
         object: b.qAy.ACK_INBOX_FORUM_NO_POSTS,
@@ -54,7 +54,7 @@ function y(e) {
       children: (0, r.jsx)(u.ZP, {
         className: _.forumPost,
         threadId: e.id,
-        goToThread: C
+        goToThread: v
       })
     }, e.id))
   })

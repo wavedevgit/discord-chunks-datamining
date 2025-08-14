@@ -49,7 +49,7 @@ var Chunk713267 = require("./713267.js"),
 function d(e, t, n) {
   true === n && (n = " ");
   var r = String(e);
-  return (t >>= 0, r.length > t) ? String(r) : ((t -= r.length) > n.length && (n += c(n, t / n.length)), n.slice(0, t) + String(r))
+  return (t |= 0, r.length > t) ? String(r) : ((t -= r.length) > n.length && (n += c(n, t / n.length)), n.slice(0, t) + String(r))
 }
 var f = function(e, t, n) {
     var r = e.split(t);

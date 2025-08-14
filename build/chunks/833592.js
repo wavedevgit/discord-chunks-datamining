@@ -1,10 +1,10 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 833592, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Vk: () => h,
+  Vk: () => p,
   g3: () => b,
-  jF: () => p,
-  jk: () => f,
+  jF: () => f,
+  jk: () => h,
   wt: () => g
 });
 var Chunk990547 = require("./990547.js"),
@@ -17,26 +17,26 @@ var Chunk990547 = require("./990547.js"),
   Chunk178480 = require("./178480.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e) {
+function p(e) {
   o.Z.dispatch({
     type: "NOTIFICATION_CENTER_SET_ACTIVE",
     active: e
   })
 }
 
-function p() {
+function f() {
   Chunk570140.Z.dispatch({
     type: "RESET_NOTIFICATION_CENTER"
   })
 }
-async function f(e, t) {
+async function h(e, t) {
   if (c.Z.loading) return;
   await o.Z.dispatch({
     type: "LOAD_NOTIFICATION_CENTER_ITEMS"
   });
   let n = Math.ceil(c.Z.items.length / e.limit);
   try {
-    let i = await a.Z.get({
+    let i = await s.Z.get({
       url: d.ANM.NOTIF_CENTER_ITEMS(),
       trackedActionData: {
         event: r.NetworkActionNames.NOTIFICATION_CENTER_PAGE_FETCH,
@@ -112,12 +112,12 @@ async function m(e) {
   }
 }
 async function b(e) {
-  let t = s.d$.getSetting();
+  let t = a.d$.getSetting();
   try {
     o.Z.dispatch({
       type: "NOTIFICATION_CENTER_ITEM_DELETE",
       id: e.id
-    }), await a.Z.delete({
+    }), await s.Z.delete({
       url: d.ANM.NOTIF_CENTER_ITEMS(e.id),
       body: {
         item_type: (0, u.RB)(e) ? "mention" : "regular"

@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 532495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -32,7 +32,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk479973 = require("./479973.js");
+  Chunk436360 = require("./436360.js");
 
 function R() {
   var e, t, n, r, R, D, Z, w;
@@ -42,8 +42,8 @@ function R() {
     }),
     L = (0, Chunk442837.e7)([Chunk621853.Z], () => Chunk621853.Z.getUserProfile(k.id)),
     {
-      pendingAvatar: M,
-      pendingGlobalName: B,
+      pendingAvatar: B,
+      pendingGlobalName: M,
       pendingBanner: U,
       pendingBio: V,
       pendingPronouns: G,
@@ -88,11 +88,11 @@ function R() {
     }),
     K = (0, Chunk643879.SD)({
       userId: k.id,
-      image: M
+      image: B
     }),
     q = (0, Chunk295474.gS)(),
     X = Chunk74538.ZP.canUsePremiumProfileCustomization(k),
-    J = (0, Chunk150039.gd)(M, k.avatar),
+    J = (0, Chunk150039.gd)(B, k.avatar),
     Q = (0, Chunk150039.f$)(U, null == L ? true : L.banner),
     $ = (0, Chunk687158.ZP)(k.id),
     ee = null == $ ? true : $.getLegacyUsername(),
@@ -100,12 +100,12 @@ function R() {
     en = (null != (R = null == (t = Y.bio) ? true : exports.length) ? R : 0) > 0 ? Y.bio : null != (D = null == q ? true : q.bio) ? D : [],
     ei = (0, Chunk396402.w)();
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk479973.sectionsContainer,
+    className: Chunk436360.sectionsContainer,
     children: [(0, Chunk255367.jsx)(Chunk349177.Z, {
       placeholder: k.username,
       errors: et,
       currentGlobalName: k.globalName,
-      pendingGlobalName: B,
+      pendingGlobalName: M,
       onGlobalNameChange: Chunk809206.W0,
       user: k
     }), (0, Chunk255367.jsx)(Chunk906364.Z, {

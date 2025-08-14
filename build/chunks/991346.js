@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 991346, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Gj: () => V,
@@ -44,19 +44,19 @@ var Chunk73800 = require("./73800.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx");
 
-function B(e) {
+function M(e) {
   let {
     shouldMergeGameSettings: t,
     showRedesignedThirdPartyAccessSettings: n
   } = e, i = O.Z.isDeveloper, r = [{
-    header: M.intl.string(M.t.cduTBA),
+    header: B.intl.string(B.t.cduTBA),
     settings: n ? [k.s6.ACCOUNT, k.s6.GAMES, k.s6.PROFILE_CUSTOMIZATION, k.s6.CONTENT_SOCIAL, k.s6.DATA_PRIVACY, k.s6.PRIVACY_FAMILY_CENTER, k.s6.THIRD_PARTY_ACCESS, k.s6.SESSIONS, k.s6.CLIPS] : [k.s6.ACCOUNT, k.s6.GAMES, k.s6.PROFILE_CUSTOMIZATION, k.s6.CONTENT_SOCIAL, k.s6.DATA_PRIVACY, k.s6.PRIVACY_FAMILY_CENTER, k.s6.AUTHORIZED_APPS, k.s6.SESSIONS, k.s6.CONNECTIONS, k.s6.CLIPS]
   }, {
-    header: M.intl.string(M.t["4uOdGh"]),
+    header: B.intl.string(B.t["4uOdGh"]),
     divider: true,
     settings: [k.s6.PREMIUM, k.s6.GUILD_BOOSTING, k.s6.SUBSCRIPTIONS, k.s6.GIFT_INVENTORY, k.s6.BILLING]
   }, {
-    header: M.intl.string(M.t.f2n1TE),
+    header: B.intl.string(B.t.f2n1TE),
     divider: true,
     settings: [k.s6.APPEARANCE, k.s6.ACCESSIBILITY, k.s6.VOICE_AND_VIDEO, k.s6.CLICKER_GAME, k.s6.POGGERMODE, k.s6.CHAT, k.s6.NOTIFICATIONS, k.s6.KEYBINDS, k.s6.LANGUAGE, k.s6.WINDOW_SETTINGS, k.s6.LINUX_SETTINGS, k.s6.STREAMER_MODE, k.s6.SETTINGS_ADVANCED]
   }, {
@@ -73,7 +73,7 @@ function B(e) {
     divider: true,
     settings: [k.s6.SOCIAL_LINKS, k.s6.CLIENT_DEBUG_INFO]
   }], s = {
-    header: M.intl.string(M.t.SmHCFR),
+    header: B.intl.string(B.t.SmHCFR),
     divider: true,
     settings: [k.s6.ACTIVITY_PRIVACY, k.s6.REGISTERED_GAMES, k.s6.OVERLAY]
   };
@@ -86,9 +86,9 @@ function U() {
     A = (0, Chunk160913.U)(),
     w = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getProps().impressionSource),
     k = (0, Chunk631885.gU)(),
-    M = (0, Chunk168308.bC)(),
-    B = (0, Chunk924557.Go)(),
-    [U] = (0, Chunk706140.cv)(B ? [Chunk704215.z.CLIPS_SETTINGS_BETA_TAG] : []),
+    B = (0, Chunk168308.bC)(),
+    M = (0, Chunk924557.Go)(),
+    [U] = (0, Chunk706140.cv)(M ? [Chunk704215.z.CLIPS_SETTINGS_BETA_TAG] : []),
     {
       shouldMergeGameSettings: V
     } = Chunk202527.b.useExperiment({
@@ -283,7 +283,7 @@ function F() {
     } = Chunk413182.b.useExperiment({
       location: "settings"
     }),
-    r = Chunk73800.useMemo(() => B({
+    r = Chunk73800.useMemo(() => M({
       shouldMergeGameSettings: exports,
       showRedesignedThirdPartyAccessSettings: require
     }), [exports, require]);
@@ -301,12 +301,12 @@ function H(e) {
         showRedesign: t
       } = A.b.useExperiment({
         location: "settings"
-      }), n = B({
+      }), n = M({
         shouldMergeGameSettings: e,
         showRedesignedThirdPartyAccessSettings: t
       });
       return i.useMemo(() => [{
-        header: M.intl.string(M.t.zkoeq6),
+        header: B.intl.string(B.t.zkoeq6),
         settings: [...n.map(e => {
           let {
             settings: t

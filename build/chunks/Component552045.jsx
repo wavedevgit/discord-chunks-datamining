@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 552045, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -14,10 +14,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk631885 = require("./631885.js"),
   Chunk568671 = require("./568671.jsx"),
   Chunk292352 = require("./292352.js"),
-  Chunk916723 = require("./916723.js"),
+  Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk970872 = require("./970872.js"),
-  Chunk843249 = require("./843249.js"),
+  Chunk26919 = require("./26919.js"),
+  Chunk519279 = require("./519279.js"),
   Chunk633488 = require("./633488.js"),
   Chunk361848 = require("./361848.js");
 let _ = () => {
@@ -27,7 +27,7 @@ let _ = () => {
         handleTabChange: n
       } = (0, Chunk841409.Z)();
     return (0, Chunk631885.VM)() || exports && module.length > 0 ? null : (0, Chunk255367.jsx)("div", {
-      className: Chunk970872.button,
+      className: Chunk26919.button,
       children: exports ? (0, Chunk255367.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.LhlgY2),
@@ -37,18 +37,18 @@ let _ = () => {
   },
   j = () => {
     let e = (0, Chunk880257.Z)(),
-      t = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk916723.default.T7GyW1), Chunk388032.intl.string(Chunk916723.default.goKE2d)),
-      n = (0, Chunk785681.o)(Chunk388032.intl.format(Chunk916723.default.MXjDSk, {
+      t = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default.T7GyW1), Chunk388032.intl.string(Chunk345909.default.goKE2d)),
+      n = (0, Chunk785681.o)(Chunk388032.intl.format(Chunk345909.default.MXjDSk, {
         articleLink: "https://support.discord.com/hc/articles/14155060633623"
-      }), Chunk388032.intl.format(Chunk916723.default.EMCf6u, {
+      }), Chunk388032.intl.format(Chunk345909.default.EMCf6u, {
         articleLink: "https://support.discord.com/hc/articles/14155043715735"
       }));
     return (0, Chunk255367.jsxs)("div", {
-      className: s()(Chunk970872.container, Chunk843249.box),
+      className: s()(Chunk26919.container, Chunk519279.box),
       children: [(0, Chunk255367.jsxs)("div", {
         children: [(0, Chunk255367.jsx)("div", {
           children: (0, Chunk255367.jsxs)("div", {
-            className: Chunk970872.headerText,
+            className: Chunk26919.headerText,
             children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
               variant: "heading-xl/medium",
               children: (0, Chunk255367.jsx)(Chunk481060.y5t, {
@@ -62,10 +62,10 @@ let _ = () => {
           })
         }), (0, Chunk255367.jsx)(_, {})]
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk970872.headerImage,
+        className: Chunk26919.headerImage,
         children: (0, Chunk255367.jsx)("img", {
           src: module ? Chunk633488 : Chunk361848,
-          alt: Chunk388032.intl.string(Chunk916723.default.ffg6xc)
+          alt: Chunk388032.intl.string(Chunk345909.default.ffg6xc)
         })
       })]
     })

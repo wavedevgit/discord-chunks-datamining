@@ -17,14 +17,14 @@ var Chunk255367 = require("./255367.js"),
   Chunk645792 = require("./645792.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk603116 = require("./603116.js");
+  Chunk687212 = require("./687212.js");
 
 function _(e) {
   let {
     guildId: t
-  } = e, a = (0, o.e7)([f.Z], () => f.Z.getGuild(t)), [_, p] = r.useState(null), [C, v] = r.useState(""), {
-    createMultipleConfettiAt: H
-  } = r.useContext(c.h), N = (0, o.e7)([d.Z], () => d.Z.useReducedMotion, []), k = async t => {
+  } = e, a = (0, o.e7)([f.Z], () => f.Z.getGuild(t)), [_, p] = r.useState(null), [C, H] = r.useState(""), {
+    createMultipleConfettiAt: N
+  } = r.useContext(c.h), k = (0, o.e7)([d.Z], () => d.Z.useReducedMotion, []), v = async t => {
     let {
       onClose: a,
       guildId: n
@@ -39,10 +39,10 @@ function _(e) {
     }
   }, {
     transitionState: j
-  } = e, S = f.Z.getGuildsArray().filter(e => e.id !== t && e.features.has(h.oNc.HUB)).length > 0, w = !N && !S && (null == a ? true : a.features.has(h.oNc.HUB)) && (0, b.b)();
+  } = e, S = f.Z.getGuildsArray().filter(e => e.id !== t && e.features.has(b.oNc.HUB)).length > 0, w = !k && !S && (null == a ? true : a.features.has(b.oNc.HUB)) && (0, h.b)();
   return r.useEffect(() => {
-    w && H(window.innerWidth / 2, window.innerHeight / 2)
-  }, [H, w]), (0, n.jsxs)(l.Y0X, {
+    w && N(window.innerWidth / 2, window.innerHeight / 2)
+  }, [N, w]), (0, n.jsxs)(l.Y0X, {
     className: g.__invalid_modalRoot,
     transitionState: j,
     "aria-label": x.intl.formatToPlainString(x.t["d+6kzs"], {
@@ -69,14 +69,14 @@ function _(e) {
       })]
     }), (0, n.jsxs)("form", {
       className: g.formContent,
-      onSubmit: k,
+      onSubmit: v,
       children: [(0, n.jsx)(l.hzk, {
         children: (0, n.jsx)(l.xJW, {
           title: x.intl.string(x.t.ilDlmZ),
           children: (0, n.jsx)(l.oil, {
             placeholder: x.intl.string(x.t.RfWvWF),
             onChange: e => {
-              v(e)
+              H(e)
             },
             error: null == _ ? true : _.getFirstFieldErrorMessage("name"),
             value: C

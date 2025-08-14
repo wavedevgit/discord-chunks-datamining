@@ -23,8 +23,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk796638 = require("./796638.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk661900 = require("./661900.js"),
-  Chunk553279 = require("./553279.js");
+  Chunk394024 = require("./394024.js"),
+  Chunk597843 = require("./597843.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -79,8 +79,8 @@ function x(e) {
       onFullscreenParticipant: A,
       participants: x,
       filteredParticipants: M,
-      popoutWindow: j,
-      inCall: k,
+      popoutWindow: k,
+      inCall: j,
       channel: U,
       selectedParticipant: G,
       showParticipants: B = true,
@@ -90,7 +90,7 @@ function x(e) {
       layout: H,
       idle: Y
     } = e,
-    W = null != j,
+    W = null != k,
     K = _.Z.getVideoComponent(),
     z = f.default.getId(),
     [q, X] = i.useState(null),
@@ -219,7 +219,7 @@ function x(e) {
                   onDoubleClick: A,
                   onContextMenu: T,
                   onVideoResize: eS,
-                  inCall: k,
+                  inCall: j,
                   inPopout: W
                 })
               }, i) : null
@@ -253,8 +253,8 @@ function x(e) {
           participants: eN,
           participantTileWidth: eC,
           selectedParticipantId: G.id,
-          inCall: k,
-          popoutWindow: j,
+          inCall: j,
+          popoutWindow: k,
           paused: ee || !B
         })
       })]

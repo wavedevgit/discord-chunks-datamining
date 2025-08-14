@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk112560 = require("./112560.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk967747 = require("./967747.js"),
+  Chunk105740 = require("./105740.js"),
   Chunk800350 = require("./800350.js");
 
 function d(e, t, n) {
@@ -69,7 +69,7 @@ function h(e) {
       onCTAClick: () => (0, i.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("7654"), n.e("49049"), n.e("36264")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("49049"), n.e("53020")]).then(n.bind(n, 560114));
         return n => (0, r.jsx)(e, p(f({}, n), {
           guild: d,
           channel: t,

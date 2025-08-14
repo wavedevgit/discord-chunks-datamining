@@ -130,7 +130,7 @@ class Z extends Chunk317770.Z {
         r = await (0, l.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("6583"), n.e("1337"), n.e("42483"), n.e("396")]).then(n.bind(n, 599219));
+          } = await Promise.all([n.e("6583"), n.e("1337"), n.e("42483"), n.e("63359")]).then(n.bind(n, 599219));
           return n => (0, i.jsx)(e, x(j({}, n), {
             onSlideChange: t
           }))

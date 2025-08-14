@@ -30,7 +30,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk314734 = require("./314734.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk322406 = require("./322406.js");
+  Chunk820607 = require("./820607.js");
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,7 +78,7 @@ function x(e) {
     context: P,
     className: D,
     sectionName: x
-  } = e, M = i.useRef(null), j = (0, s.e7)([I.Z], () => I.Z.entrypoint()), k = (0, T.L1)(o), U = (0, _.Eb)(k), G = (0, d.R)(o.id), B = (0, s.e7)([g.Z], () => {
+  } = e, M = i.useRef(null), k = (0, s.e7)([I.Z], () => I.Z.entrypoint()), j = (0, T.L1)(o), U = (0, _.Eb)(j), G = (0, d.R)(o.id), B = (0, s.e7)([g.Z], () => {
     var e;
     return null != (e = g.Z.getGuildId()) ? e : true
   }, []), Z = {
@@ -101,10 +101,10 @@ function x(e) {
           referrerId: null == F ? true : F.id
         }) : (0, f.J)(w({
           id: o.id
-        }, k));
+        }, j));
         (0, y.JG)(e, () => (0, l.showToast)((0, l.createToast)(C.intl.string(C.t["L/PwZW"]), l.ToastType.SUCCESS))), b.default.track(N.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
           application_id: o.id,
-          source: j
+          source: k
         })
       },
       className: a()(R.clickable, D),
@@ -133,7 +133,7 @@ function x(e) {
                 (0, l.ZDy)(async () => {
                   let {
                     default: e
-                  } = await Promise.all([n.e("77803"), n.e("16721")]).then(n.bind(n, 7225));
+                  } = await Promise.all([n.e("77803"), n.e("18992")]).then(n.bind(n, 7225));
                   return t => (0, r.jsx)(e, {
                     transitionState: t.transitionState,
                     onClose: t.onClose,
@@ -146,7 +146,7 @@ function x(e) {
               id: "add-app",
               label: C.intl.string(C.t.NgXl3N),
               action: () => {
-                null == k.customInstallUrl && (0, c.yw)(N.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, Z), (0, v.L)(L(w({}, k), {
+                null == j.customInstallUrl && (0, c.yw)(N.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, Z), (0, v.L)(L(w({}, j), {
                   oauth2Callback: e => {
                     let {
                       location: t

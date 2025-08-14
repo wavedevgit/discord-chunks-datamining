@@ -1,16 +1,16 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 946443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   QP: () => N,
-  ZP: () => x,
-  h6: () => P
+  ZP: () => S,
+  h6: () => I
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk525654 = require("./525654.js"),
-  a = require.n(Chunk525654),
+  s = require.n(Chunk525654),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -27,21 +27,21 @@ var Chunk255367 = require("./255367.js"),
   Chunk809780 = require("./809780.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk153084 = require("./153084.js");
+  Chunk915087 = require("./915087.js");
 
-function x(e) {
-  var t, n, l, s, _, x, P;
+function S(e) {
+  var t, n, l, a, _, S, I;
   let {
     onJump: N,
     showTutorial: w,
     setSeenTutorial: Z,
     closePopout: T
-  } = e, A = i.useRef(null), [R, D] = (0, v.ZP)(A), {
+  } = e, A = i.useRef(null), [R, D] = (0, j.ZP)(A), {
     loadState: L,
     channels: M
   } = R, {
     maybeLoadMore: k
-  } = D, U = (0, u.e7)([f.Z], () => f.Z.messageGroupSpacing);
+  } = D, U = (0, u.e7)([h.Z], () => h.Z.messageGroupSpacing);
   t = A, n = R, l = D, i.useLayoutEffect(() => {
     var e;
     let {
@@ -54,45 +54,45 @@ function x(e) {
     if (null == i || null == r) return;
     let o = null == (e = i.getScrollerNode()) ? true : e.children;
     if (null == o) return;
-    let s = o[r];
-    if (null == s) return;
+    let a = o[r];
+    if (null == a) return;
     let {
-      scrollTop: a,
+      scrollTop: s,
       offsetHeight: c
     } = i.getScrollerState();
-    (s.offsetTop < a || s.offsetTop > a + c) && i.scrollTo({
-      to: s.offsetTop
+    (a.offsetTop < s || a.offsetTop > s + c) && i.scrollTo({
+      to: a.offsetTop
     })
-  }), s = R, _ = D, i.useEffect(() => {
+  }), a = R, _ = D, i.useEffect(() => {
     let e = () => {
-      let e = s.channels.find(e => !e.collapsed);
+      let e = a.channels.find(e => !e.collapsed);
       null != e && _.markChannelRead(e)
     };
-    return b.S.subscribe(j.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
-      b.S.unsubscribe(j.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
+    return b.S.subscribe(C.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
+      b.S.unsubscribe(C.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
-  }, [_, s.channels]), x = D, i.useEffect(() => {
+  }, [_, a.channels]), S = D, i.useEffect(() => {
     let e = e => {
-      ((0, O.isMac)() || (0, O.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && x.undoMarkChannelRead()
+      ((0, O.isMac)() || (0, O.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && S.undoMarkChannelRead()
     };
     return document.addEventListener("keydown", e), () => {
       document.removeEventListener("keydown", e)
     }
-  }, [x]), i.useEffect(() => {
-    m.default.track(j.rMx.OPEN_POPOUT, {
+  }, [S]), i.useEffect(() => {
+    m.default.track(C.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
-  }, []), i.useEffect(() => (h.Z.subscribe("CONNECTION_OPEN", T), () => {
-    h.Z.unsubscribe("CONNECTION_OPEN", T)
-  }), [T]), (0, p.ZP)(() => (b.S.subscribe(j.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
-    b.S.unsubscribe(j.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
+  }, []), i.useEffect(() => (p.Z.subscribe("CONNECTION_OPEN", T), () => {
+    p.Z.unsubscribe("CONNECTION_OPEN", T)
+  }), [T]), (0, f.ZP)(() => (b.S.subscribe(C.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
+    b.S.unsubscribe(C.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
   }));
   let G = (0, g.Z)("unreads", A);
   if (0 === M.length) {
     return (0, r.jsx)(y.Z, {
       Icon: d.xx7,
       header: E.intl.string(E.t["6XMM+P"]),
-      tip: (null == (P = a().os) ? true : P.family) === "OS X" ? E.intl.string(E.t.w9uDOT) : E.intl.string(E.t.BiUJCw)
+      tip: (null == (I = s().os) ? true : I.family) === "OS X" ? E.intl.string(E.t.w9uDOT) : E.intl.string(E.t.BiUJCw)
     })
   }
   return (0, r.jsx)(c.bG, {
@@ -140,12 +140,12 @@ function x(e) {
             A.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           }
         }, l), n = n = {
-          onScroll: L === v.jd.Done ? true : k,
-          className: o()(S.scroller, "group-spacing-".concat(U)),
-          children: [w ? (0, r.jsx)(I, {
+          onScroll: L === j.jd.Done ? true : k,
+          className: o()(x.scroller, "group-spacing-".concat(U)),
+          children: [w ? (0, r.jsx)(P, {
             setSeenTutorial: Z
-          }) : null, (0, C.Z)(M, D, N), L === v.jd.Done ? null : (0, r.jsx)(d.$jN, {
-            className: S.spinner
+          }) : null, (0, v.Z)(M, D, N), L === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
+            className: x.spinner
           })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -162,21 +162,21 @@ function x(e) {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     setSeenTutorial: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: S.tutorial,
+    className: x.tutorial,
     children: [(0, r.jsx)("div", {
-      className: S.tutorialIcon,
+      className: x.tutorialIcon,
       children: (0, r.jsx)(d.xx7, {
         size: "md",
         color: "currentColor"
       })
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(d.X6q, {
-        className: S.__invalid_tutorialHeader,
+        className: x.__invalid_tutorialHeader,
         variant: "heading-md/semibold",
         children: E.intl.string(E.t.vZPktL)
       }), (0, r.jsx)(d.Text, {
@@ -185,7 +185,7 @@ function I(e) {
         children: E.intl.string(E.t.vWkIIC)
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: S.tutorialButton,
+        className: x.tutorialButton,
         children: (0, r.jsx)(d.zxk, {
           variant: "primary",
           size: "sm",
@@ -197,7 +197,7 @@ function I(e) {
   })
 }
 
-function P() {
+function I() {
   return (0, Chunk255367.jsx)(Chunk240126.Z, {
     Icon: Chunk481060.xx7,
     disableStars: true,

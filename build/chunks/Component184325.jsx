@@ -34,7 +34,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk681642 = require("./681642.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk709684 = require("./709684.js");
+  Chunk517793 = require("./517793.js");
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,12 +69,12 @@ function M(e, t) {
   return n
 }
 
-function j(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = e => {
+let j = e => {
   let {
     badge: t,
     tieredTenureBadge: n,
@@ -155,7 +155,7 @@ function U(e) {
           if (null != n) return null == L || L(), n(t)
         },
         v = () => {
-          e.id === T.i && b.default.track(N.rMx.QUEST_CONTENT_VIEWED, j(x({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
+          e.id === T.i && b.default.track(N.rMx.QUEST_CONTENT_VIEWED, k(x({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
             is_targeted: false
           })), Z({
             action: "HOVER_BADGE"
@@ -164,7 +164,7 @@ function U(e) {
             analyticsLocations: G
           }, B))
         },
-        S = k({
+        S = j({
           badge: e,
           tieredTenureBadge: E && e.id !== P.a ? c : true,
           currentUserOwnsOrbBadge: Y

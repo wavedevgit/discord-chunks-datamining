@@ -53,7 +53,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk5192 = require("./5192.js"),
   Chunk51144 = require("./51144.js"),
   Chunk484286 = require("./484286.jsx"),
-  Chunk542726 = require("./542726.jsx"),
+  Chunk822296 = require("./822296.jsx"),
   Chunk916771 = require("./916771.jsx"),
   Chunk792517 = require("./792517.jsx"),
   Chunk351483 = require("./351483.jsx"),
@@ -61,8 +61,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk560688 = require("./560688.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk474089 = require("./474089.js"),
-  Chunk210297 = require("./210297.js");
+  Chunk306762 = require("./306762.js"),
+  Chunk315091 = require("./315091.js");
 
 function el(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -182,7 +182,7 @@ class ef extends Chunk73800.PureComponent {
     }
     switch (true) {
       case (null == module ? true : module.state) === Chunk981631.jm8.ENDED:
-        return (0, Chunk255367.jsx)(Chunk542726.Z, {
+        return (0, Chunk255367.jsx)(Chunk822296.Z, {
           stream: module,
           width: require
         });
@@ -214,7 +214,7 @@ class ef extends Chunk73800.PureComponent {
       return (0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "always-white",
-        className: Chunk474089.participantName,
+        className: Chunk306762.participantName,
         lineClamp: 1,
         children: Chunk73800
       })
@@ -312,7 +312,7 @@ class ef extends Chunk73800.PureComponent {
       return (0, r.jsxs)(r.Fragment, {
         children: [o ? this.renderViewersIcon() : null, e ? this.renderSettingsIcon() : null, t ? this.renderPopoutIcon() : null, i ? this.renderStopStreamButton() : null, n ? this.renderDisconnectButton() : null]
       })
-    }), el(this, "renderDisconnectButton", () => (0, r.jsx)(j.Z, {
+    }), el(this, "renderDisconnectButton", () => (0, r.jsx)(k.Z, {
       className: ea.rightTrayIcon,
       onClick: () => (0, v.v)(g.Z.VIDEO_PIP, v.d.DISCONNECT)
     })), el(this, "renderStopStreamButton", () => {
@@ -338,7 +338,7 @@ class ef extends Chunk73800.PureComponent {
           compact: true
         })
       })
-    }), el(this, "renderPopoutIcon", () => (0, r.jsx)(k.Z, {
+    }), el(this, "renderPopoutIcon", () => (0, r.jsx)(j.Z, {
       className: ea.rightTrayIcon,
       popoutOpen: false,
       onOpenPopout: this.handleOpenPopout,

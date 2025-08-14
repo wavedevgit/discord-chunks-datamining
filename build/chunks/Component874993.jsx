@@ -1,4 +1,4 @@
-/** Chunk was on 60458 **/
+/** Chunk was on 40725 **/
 /** chunk id: 874993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -23,7 +23,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk273504 = require("./273504.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk811354 = require("./811354.js");
+  Chunk894780 = require("./894780.js");
 
 function C(e) {
   var t, n;
@@ -73,18 +73,7 @@ function C(e) {
   i.useEffect(() => {
     N(w, (0, j.af)(G))
   }, [N, w, G]);
-  let U = (0, p.Z6)(P),
-    B = e => (0, r.jsx)(r.Fragment, {
-      children: e.map(e => {
-        var t;
-        return (0, r.jsx)(x.Z, {
-          guildId: P,
-          triggerType: e,
-          rules: null != (t = Z[e]) ? t : [],
-          initWithEdit: T === _.KsC.AUTOMOD_MENTION_SPAM && e === v.fX.MENTION_SPAM
-        }, e)
-      })
-    });
+  let U = (0, p.Z6)(P);
   return (0, r.jsxs)(s.hjN, {
     title: O.intl.string(O.t.uRelg4),
     tag: "h1",
@@ -142,7 +131,17 @@ function C(e) {
       }) : null;
       return (0, r.jsxs)("div", {
         className: y.categoryContainer,
-        children: [l, B(n)]
+        children: [l, (0, r.jsx)(r.Fragment, {
+          children: n.map(e => {
+            var t;
+            return (0, r.jsx)(x.Z, {
+              guildId: P,
+              triggerType: e,
+              rules: null != (t = Z[e]) ? t : [],
+              initWithEdit: T === _.KsC.AUTOMOD_MENTION_SPAM && e === v.fX.MENTION_SPAM
+            }, e)
+          })
+        })]
       }, t)
     }), null != S && (0, r.jsx)(c.k0, {
       guild: S,

@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 695301, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -16,21 +16,21 @@ var Chunk255367 = require("./255367.js"),
   Chunk451478 = require("./451478.js"),
   Chunk61634 = require("./61634.js"),
   Chunk325257 = require("./325257.jsx"),
-  Chunk70436 = require("./70436.js");
+  Chunk144618 = require("./144618.js");
 let b = Chunk73800.memo(function(e) {
   var t, n;
   let {
     guildNode: b,
     lowerBadge: O
-  } = e, _ = b.id, y = (0, l.e7)([h.Z], () => h.Z.getGuild(_)), C = (0, s.E)(y), v = (0, l.e7)([p.Z], () => p.Z.isFocused()), j = (0, l.e7)([u.Z], () => u.Z.isUnavailable(_)), E = (0, c.Z)(e => e.guildId), S = (0, f.Z)(_), {
-    badge: x,
-    unread: I,
-    isMentionLowImportance: P
+  } = e, _ = b.id, y = (0, l.e7)([p.Z], () => p.Z.getGuild(_)), v = (0, a.E)(y), j = (0, l.e7)([f.Z], () => f.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(_)), E = (0, c.Z)(e => e.guildId), x = (0, h.Z)(_), {
+    badge: S,
+    unread: P,
+    isMentionLowImportance: I
   } = (0, l.cj)([d.default], () => ({
     badge: d.default.getMentionCount(_),
     isMentionLowImportance: d.default.getIsMentionLowImportance(_),
     unread: d.default.hasUnread(_)
-  })), N = (0, a.Ij)(y) && 0 === x, w = i.useMemo(() => null != O ? O : N ? (0, r.jsx)("div", {
+  })), N = (0, s.Ij)(y) && 0 === S, w = i.useMemo(() => null != O ? O : N ? (0, r.jsx)("div", {
     className: m.pauseBackground,
     children: (0, r.jsx)(o.fpf, {
       size: "custom",
@@ -59,15 +59,15 @@ let b = Chunk73800.memo(function(e) {
     return e
   }({}, e), n = n = {
     guild: y,
-    unavailable: j,
-    animatable: v,
+    unavailable: C,
+    animatable: j,
     selected: E === _,
-    badge: x,
-    isMentionLowImportance: P,
+    badge: S,
+    isMentionLowImportance: I,
     lowerBadge: w,
-    unread: I,
-    mediaState: S,
-    guildJoinRequestStatus: C
+    unread: P,
+    mediaState: x,
+    guildJoinRequestStatus: v
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

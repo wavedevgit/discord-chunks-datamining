@@ -32,7 +32,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk925994 = require("./925994.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk939267 = require("./939267.js");
+  Chunk564355 = require("./564355.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,10 +73,10 @@ function M(e, t) {
   }), e
 }
 new Chunk710845.Z("ChannelEditor.tsx");
-let j = function() {
+let k = function() {
     for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require]
   },
-  k = 1e3;
+  j = 1e3;
 class U extends Chunk73800.Component {
   _getEditorWindow() {
     var e, t, n, r, i;
@@ -88,7 +88,7 @@ class U extends Chunk73800.Component {
     return this._cachedEditorWindow
   }
   componentDidMount() {
-    this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload), this._initTimeoutId = setTimeout(() => void this._getEditorWindow(), k)
+    this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload), this._initTimeoutId = setTimeout(() => void this._getEditorWindow(), j)
   }
   componentDidUpdate(e) {
     if (this.fixFocus(e), this.props.useSlate !== e.useSlate) {
@@ -228,17 +228,17 @@ class U extends Chunk73800.Component {
       required: P,
       maxCharacterCount: D,
       allowNewLines: x,
-      "aria-describedby": j,
-      "aria-labelledby": k,
+      "aria-describedby": k,
+      "aria-labelledby": j,
       accessibilityLabel: U
     } = this.props, {
       submitting: G,
       popup: B
     } = this.state, Z = {
       channel: Chunk476326,
-      className: a()(Chunk330122, Chunk939267.textArea, {
-        [Chunk939267.textAreaSlate]: Chunk710845,
-        [Chunk939267.textAreaDisabled]: u || G
+      className: a()(Chunk330122, Chunk564355.textArea, {
+        [Chunk564355.textAreaSlate]: Chunk710845,
+        [Chunk564355.textAreaDisabled]: u || G
       }),
       id: Chunk925994,
       placeholder: this.getPlaceholder(),
@@ -261,10 +261,10 @@ class U extends Chunk73800.Component {
       onKeyDown: Chunk430742,
       onSubmit: Chunk911969,
       textAreaPaddingClassName: a()({
-        [Chunk939267.textAreaForPostCreation]: Chunk998698 === Chunk541716.Ie.CREATE_FORUM_POST,
-        [Chunk939267.textAreaCustomGift]: Chunk998698 === Chunk541716.Ie.CUSTOM_GIFT,
-        [Chunk939267.textAreaForUserProfile]: Chunk998698 === Chunk541716.Ie.USER_PROFILE,
-        [Chunk939267.textAreaForOverlayInlineReply]: Chunk998698 === Chunk541716.Ie.OVERLAY_INLINE_REPLY
+        [Chunk564355.textAreaForPostCreation]: Chunk998698 === Chunk541716.Ie.CREATE_FORUM_POST,
+        [Chunk564355.textAreaCustomGift]: Chunk998698 === Chunk541716.Ie.CUSTOM_GIFT,
+        [Chunk564355.textAreaForUserProfile]: Chunk998698 === Chunk541716.Ie.USER_PROFILE,
+        [Chunk564355.textAreaForOverlayInlineReply]: Chunk998698 === Chunk541716.Ie.OVERLAY_INLINE_REPLY
       }),
       spellcheckEnabled: Chunk117530,
       useNewSlashCommands: Chunk403182,
@@ -275,8 +275,8 @@ class U extends Chunk73800.Component {
       "aria-expanded": null !== B.id || true,
       "aria-activedescendant": null != (s = B.activeDescendant) ? Chunk392711 : true,
       "aria-invalid": l.length > D,
-      "aria-describedby": j,
-      "aria-labelledby": k,
+      "aria-describedby": k,
+      "aria-labelledby": j,
       "aria-autocomplete": "list"
     }, F = Chunk710845 ? (0, Chunk255367.jsx)(Chunk4484.Z, M(L({
       ref: this.ref
@@ -413,7 +413,7 @@ class U extends Chunk73800.Component {
         {
           files: v
         } = G(e.clipboardData, u.uploadLongMessages ? O : null);
-      return j("onPaste", [...e.clipboardData.items].map(e => {
+      return k("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
           type: e.type

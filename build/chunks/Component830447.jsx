@@ -20,7 +20,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk828214 = require("./828214.js"),
   Chunk670596 = require("./670596.js"),
   Chunk788314 = require("./788314.js"),
-  Chunk968769 = require("./968769.js");
+  Chunk334405 = require("./334405.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -318,7 +318,7 @@ function N(e) {
 
 function C() {
   return (0, Chunk255367.jsx)("div", {
-    className: a()(Chunk968769.menu, Chunk968769.loader, Chunk968769.flexible),
+    className: a()(Chunk334405.menu, Chunk334405.loader, Chunk334405.flexible),
     children: (0, Chunk255367.jsx)(Chunk922770.$, {})
   })
 }

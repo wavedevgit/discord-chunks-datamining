@@ -1,7 +1,7 @@
 /** Chunk was on 89289 **/
 /** chunk id: 782818, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => C
 }), require("./953529.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk486324 = require("./486324.js"),
   Chunk485696 = require("./485696.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk206392 = require("./206392.js");
+  Chunk916340 = require("./916340.js");
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -110,14 +110,14 @@ function A(e) {
   })
 }
 
-function C(e) {
+function v(e) {
   let {
     onComplete: t
   } = e, l = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
     avatars: i,
     loading: g,
-    error: C
-  } = (0, f.S)(), v = a.useRef([]), O = a.useRef(null), E = a.useRef(i.length), N = a.useRef(null), [S, w] = a.useState(false), [P, T] = a.useState(false), [R, _] = a.useState(null), F = null != R ? R : null == C ? true : C.message, Z = i.length, D = Math.max(b.iZ - Z, 0), I = (0, o.vRw)(), k = a.useCallback(async e => {
+    error: v
+  } = (0, f.S)(), C = a.useRef([]), O = a.useRef(null), E = a.useRef(i.length), N = a.useRef(null), [S, w] = a.useState(false), [P, T] = a.useState(false), [R, _] = a.useState(null), F = null != R ? R : null == v ? true : v.message, Z = i.length, D = Math.max(b.iZ - Z, 0), I = (0, o.vRw)(), k = a.useCallback(async e => {
     if (null == l || S) return;
     w(true), _(null);
     let {
@@ -142,7 +142,7 @@ function C(e) {
       (0, o.ZDy)(async () => {
         let {
           default: a
-        } = await Promise.all([n.e("59732"), n.e("46689")]).then(n.bind(n, 712451));
+        } = await Promise.all([n.e("59732"), n.e("11866")]).then(n.bind(n, 712451));
         return n => (0, r.jsx)(a, x({
           imageUri: c,
           file: new File([l], d, {
@@ -163,7 +163,7 @@ function C(e) {
     }
   }, [I, S, t, l]), M = a.useCallback((e, t, a, l, s) => {
     let c = t + 1 < i.length ? t + 1 : t - 1;
-    N.current = c >= 0 ? v.current[c] : O.current, e.shiftKey ? (0, d.B)(a) : (T(true), (0, o.ZDy)(async () => {
+    N.current = c >= 0 ? C.current[c] : O.current, e.shiftKey ? (0, d.B)(a) : (T(true), (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("70871").then(n.bind(n, 225525));
@@ -226,7 +226,7 @@ function C(e) {
             onSelectRecentAvatar: k,
             onDeleteRecentAvatar: M,
             avatarButtonRef: e => {
-              v.current[t] = e
+              C.current[t] = e
             }
           })
         }, e.id))
@@ -248,7 +248,7 @@ function C(e) {
   })
 }
 
-function v(e) {
+function C(e) {
   let {
     className: t,
     onComplete: n
@@ -266,7 +266,7 @@ function v(e) {
           recentAvatarsLimit: b.iZ
         })
       })]
-    }), (0, r.jsx)(C, {
+    }), (0, r.jsx)(v, {
       onComplete: n
     })]
   })

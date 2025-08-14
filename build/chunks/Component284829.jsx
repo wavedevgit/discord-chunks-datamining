@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 284829, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => _
@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk971492 = require("./971492.js"),
+  Chunk950728 = require("./950728.js"),
   Chunk997892 = require("./997892.js"),
   Chunk234286 = require("./234286.js");
 let _ = () => {
@@ -67,13 +67,13 @@ let _ = () => {
     actions: P,
     onClose: async () => exports(),
     children: [(0, Chunk255367.jsx)("div", {
-      className: Chunk971492.offerDetailContainer,
+      className: Chunk950728.offerDetailContainer,
       children: (0, Chunk255367.jsx)(Chunk10508.o, {
         userDiscountOffer: C,
         offerState: Chunk10508.w.CONFIRMING
       })
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk971492.legalContainer,
+      className: Chunk950728.legalContainer,
       children: (0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",

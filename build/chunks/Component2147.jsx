@@ -64,8 +64,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk710352 = require("./710352.js"),
   Chunk124368 = require("./124368.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk32709 = require("./32709.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk257294 = require("./257294.js"),
+  Chunk197571 = require("./197571.js");
 
 function ed(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -319,7 +319,7 @@ class eR extends Chunk73800.PureComponent {
           className: s()(ec.marginTop40, ec.marginBottom40)
         })]
       }) : null,
-      H = I && M ? (0, i.jsxs)("div", {
+      W = I && M ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)(m.xJW, {
           title: ea.intl.string(ea.t.qk2jdX),
           className: ec.marginTop20,
@@ -336,7 +336,7 @@ class eR extends Chunk73800.PureComponent {
           className: s()(ec.marginTop40, ec.marginBottom40)
         })]
       }) : null,
-      W = e.isForumLikeChannel() ? (0, i.jsxs)("div", {
+      U = e.isForumLikeChannel() ? (0, i.jsxs)("div", {
         children: [(0, i.jsxs)(m.xJW, {
           children: [(0, i.jsx)(m.vwX, {
             error: this.getError("available_tags"),
@@ -569,7 +569,7 @@ class eR extends Chunk73800.PureComponent {
           children: ea.intl.string(ea.t.s2rpNT)
         })
       }) : null,
-      ed = null != O && (0, U.Y2)(O),
+      ed = null != O && (0, H.Y2)(O),
       ej = V.ov.has(e.type) ? (0, i.jsx)("div", {
         children: (0, i.jsx)(m.j7V, {
           note: ea.intl.string(ea.t["9eUgwc"]),
@@ -674,7 +674,7 @@ class eR extends Chunk73800.PureComponent {
         })
       }), (0, i.jsx)(m.$i$, {
         className: s()(ec.marginTop40, ec.marginBottom40)
-      }), B, H, W, G, Y, $, F, z, J, el, ej, eb, ey, ev, eC]
+      }), B, W, U, G, Y, $, F, z, J, el, ej, eb, ey, ev, eC]
     })
   }
   renderBitrate(e) {
@@ -868,7 +868,7 @@ class eR extends Chunk73800.PureComponent {
       tag: Chunk481060.RB0.H1,
       title: Chunk388032.intl.string(Chunk388032.t["/dp6yc"]),
       children: [this.renderChannelInfo(module, exports), this.showVoiceSettings() ? (0, Chunk255367.jsx)(Chunk481060.$i$, {
-        className: s()(Chunk881488.marginTop40, Chunk881488.marginBottom40)
+        className: s()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
       }) : null, this.renderVoiceBitrate(module, require), this.renderVideoQualityMode(module), this.renderUserLimit(module), this.renderRegionOverride(module), this.renderJuiceImage(module)]
     })
   }

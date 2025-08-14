@@ -94,8 +94,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk921944 = require("./921944.js"),
   Chunk190378 = require("./190378.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk787140 = require("./787140.js"),
-  Chunk881488 = require("./881488.js");
+  Chunk890332 = require("./890332.js"),
+  Chunk197571 = require("./197571.js");
 
 function eB(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -177,10 +177,10 @@ function eK() {
   let t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getNoiseCancellation());
   return (0, Chunk255367.jsxs)("div", {
     ref: module,
-    className: Chunk787140.noiseCancellationPopout,
+    className: Chunk890332.noiseCancellationPopout,
     children: [(0, Chunk255367.jsx)(Chunk481060.j7V, {
       hideBorder: true,
-      className: Chunk881488.marginBottom4,
+      className: Chunk197571.marginBottom4,
       value: exports,
       onChange: () => Chunk846027.Z.setNoiseCancellation(!exports, {
         section: Chunk981631.jXE.NOISE_CANCELLATION_POPOUT
@@ -192,27 +192,27 @@ function eK() {
       notchBackground: Chunk284056._.BLACK,
       buttonTest: Chunk388032.intl.string(Chunk388032.t["sG+MGh"]),
       buttonStop: Chunk388032.intl.string(Chunk388032.t.Yp3SbG),
-      buttonClassName: Chunk787140.micTestButton,
+      buttonClassName: Chunk890332.micTestButton,
       buttonColor: Chunk755721.zx.Colors.PRIMARY,
       location: {
         section: Chunk981631.jXE.NOISE_CANCELLATION_POPOUT
       }
     }), (0, Chunk255367.jsx)(Chunk481060.vwX, {
       tag: Chunk481060.RB0.H5,
-      className: a()(Chunk881488.marginBottom8, Chunk881488.marginTop20),
+      className: a()(Chunk197571.marginBottom8, Chunk197571.marginTop20),
       children: Chunk388032.intl.string(Chunk388032.t.k6h1Fx)
     }), (0, Chunk255367.jsxs)(Chunk600164.Z, {
       justify: Chunk600164.Z.Justify.BETWEEN,
-      className: Chunk787140.__invalid_footer,
+      className: Chunk890332.__invalid_footer,
       children: [(0, Chunk255367.jsx)(Chunk481060.eee, {
         href: Chunk981631.EYA.KRISP,
         onClick: e => eY(e),
         children: (0, Chunk255367.jsx)("div", {
-          className: Chunk787140.krispLogo
+          className: Chunk890332.krispLogo
         })
       }), (0, Chunk255367.jsx)(Chunk481060.eee, {
         href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION),
-        className: Chunk787140.krispLink,
+        className: Chunk890332.krispLink,
         onClick: e => eY(e),
         children: Chunk388032.intl.string(Chunk388032.t.hvVgAQ)
       })]
@@ -554,7 +554,7 @@ class e$ extends Chunk73800.PureComponent {
           onClick: this.handleChannelLinkClick,
           onContextMenu: this.handleChannelLinkContextMenu,
           children: (0, Chunk255367.jsx)(Chunk345243.Z, {
-            className: Chunk787140.channel,
+            className: Chunk890332.channel,
             children: (0, Chunk255367.jsx)(Chunk481060.Text, {
               variant: s ? "text-xs/medium" : "text-sm/medium",
               color: "text-secondary",
@@ -577,7 +577,7 @@ class e$ extends Chunk73800.PureComponent {
     } = this.props;
     return null != Chunk73800 ? null : (null == Chunk120356 ? true : Chunk120356.isGuildStageVoice()) && null == a.find(e => e.user.id === eb.default.getId() && (0, el.gf)(e.voiceState) === el.xO.ON_STAGE) && (0, Chunk485287.U5)(Chunk120356.id) ? (0, Chunk255367.jsx)(eq, {}) : !require && exports ? (0, Chunk255367.jsx)(Chunk481060.ua7, {
       text: Chunk388032.intl.string(Chunk388032.t["i+SO/f"]),
-      tooltipClassName: Chunk787140.noiseCancellationTooltip,
+      tooltipClassName: Chunk890332.noiseCancellationTooltip,
       forceOpen: true,
       children: e => {
         let {
@@ -617,7 +617,7 @@ class e$ extends Chunk73800.PureComponent {
     return null != module && require && 0 !== exports.length ? (0, Chunk255367.jsx)(Chunk226323.Z, {
       voiceStates: exports,
       channel: module,
-      className: Chunk787140.voiceUsers
+      className: Chunk890332.voiceUsers
     }) : null
   }
   renderChannelButtons() {
@@ -643,7 +643,7 @@ class e$ extends Chunk73800.PureComponent {
       } = (0, Chunk829750.t)(module),
       d = (0, Chunk368442.xJ)(module.id);
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk787140.actionButtons,
+      className: Chunk890332.actionButtons,
       children: [(0, Chunk255367.jsx)(eX, {
         channel: module,
         enableActivities: Chunk688642,
@@ -677,17 +677,17 @@ class e$ extends Chunk73800.PureComponent {
       shouldShow: require,
       children: () => (0, Chunk255367.jsxs)("div", {
         ref: this.ref,
-        className: Chunk787140.container,
+        className: Chunk890332.container,
         children: [(0, Chunk255367.jsxs)(Chunk600164.Z, {
-          className: Chunk787140.connection,
+          className: Chunk890332.connection,
           align: Chunk600164.Z.Align.CENTER,
           children: [(0, Chunk255367.jsx)("div", {
-            className: Chunk787140.inner,
+            className: Chunk890332.inner,
             children: this.renderConnectionStatus()
           }), (0, Chunk255367.jsxs)(Chunk600164.Z, {
             grow: 0,
             shrink: 0,
-            className: Chunk787140.voiceButtonsContainer,
+            className: Chunk890332.voiceButtonsContainer,
             children: [exports ? this.renderNoiseCancellation() : null, (0, Chunk255367.jsx)(Chunk594117.Z, {
               channel: module
             })]

@@ -1,4 +1,4 @@
-/** Chunk was on 873 **/
+/** Chunk was on 1355 **/
 /** chunk id: 994463, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -6,9 +6,9 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk525654 = require("./525654.js"),
-  i = require.n(Chunk525654),
+  s = require.n(Chunk525654),
   Chunk748780 = require("./748780.js"),
-  Chunk17833 = require("./17833.js");
+  Chunk654339 = require("./654339.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -39,7 +39,7 @@ class E extends Chunk73800.Component {
       x: e,
       y: t
     } = this.state;
-    "Firefox" !== i().name && (Chunk748780.Z.animate(module, {
+    "Firefox" !== s().name && (Chunk748780.Z.animate(module, {
       loop: true,
       toValueMin: false,
       toValueMax: 95,
@@ -62,11 +62,11 @@ class E extends Chunk73800.Component {
   }
   render() {
     return (0, Chunk255367.jsxs)("div", {
-      className: Chunk17833.searchIndexAnimation,
+      className: Chunk654339.searchIndexAnimation,
       children: [(0, Chunk255367.jsx)("div", {
-        className: Chunk17833.searchIndexBackground
+        className: Chunk654339.searchIndexBackground
       }), (0, Chunk255367.jsxs)("svg", {
-        className: Chunk17833.searchIndexForeground,
+        className: Chunk654339.searchIndexForeground,
         width: "320",
         height: "280",
         children: [(0, Chunk255367.jsx)("defs", {
@@ -86,7 +86,7 @@ class E extends Chunk73800.Component {
               fill: "#fff",
               children: (0, Chunk255367.jsx)(Chunk748780.Z.use, {
                 style: c(this.state),
-                className: Chunk17833.mask,
+                className: Chunk654339.mask,
                 xlinkHref: "#search-index-foreground-mask-a"
               })
             }), (0, Chunk255367.jsxs)("g", {
@@ -349,7 +349,7 @@ class E extends Chunk73800.Component {
               })]
             })]
           }), (0, Chunk255367.jsxs)(Chunk748780.Z.g, {
-            className: Chunk17833.magnifyingGlass,
+            className: Chunk654339.magnifyingGlass,
             style: c(this.state),
             children: [(0, Chunk255367.jsx)("path", {
               fill: "#C9D2F0",

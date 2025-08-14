@@ -41,7 +41,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk356659 = require("./356659.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk326218 = require("./326218.js");
+  Chunk90274 = require("./90274.js");
 
 function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -97,14 +97,14 @@ function Y(e) {
     location: "ChannelAttachButton"
   }, {
     autoTrackExposure: false
-  }), ei = (0, s.e7)([b.qc], () => b.qc.hasHotspot(b.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), eo = (0, c.s9z)(e => (0, c.DEQ)(e, k.Qr)), ea = (0, s.e7)([S.Z], () => S.Z.hasLayers()), es = (0, s.e7)([m.Z], () => m.Z.hasClips()), [el, ec] = i.useState(null), eu = (0, h.Go)() && ($ || es), ed = V.isPrivate(), ef = (0, s.e7)([N.Z], () => ed || N.Z.can(j.Plq.ATTACH_FILES, V) && N.Z.can(j.Plq.SEND_MESSAGES, V)), e_ = (0, d.Z)(ee);
+  }), ei = (0, s.e7)([b.qc], () => b.qc.hasHotspot(b.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), eo = (0, c.s9z)(e => (0, c.DEQ)(e, j.Qr)), ea = (0, s.e7)([S.Z], () => S.Z.hasLayers()), es = (0, s.e7)([m.Z], () => m.Z.hasClips()), [el, ec] = i.useState(null), eu = (0, h.Go)() && ($ || es), ed = V.isPrivate(), ef = (0, s.e7)([N.Z], () => ed || N.Z.can(k.Plq.ATTACH_FILES, V) && N.Z.can(k.Plq.SEND_MESSAGES, V)), e_ = (0, d.Z)(ee);
   (null == e_ ? true : e_.newClipIds.length) !== (null == ee ? true : ee.newClipIds.length) && (null != (t = null == ee ? true : ee.newClipIds.length) ? t : 0) > 0 && null == el && ei && en && !eo && !er && !ea && ec("recentClips");
   let ep = (e, t, n) => {
       null != t && "ETOOLARGE" === t.code ? (0, w.G)(V, []) : (0, w.d)(e, V, Y, {
         requireConfirm: true,
         showLargeMessageDialog: n,
         origin: "file_picker"
-      }), R.S.dispatchToLastSubscribed(j.CkL.TEXTAREA_FOCUS)
+      }), R.S.dispatchToLastSubscribed(k.CkL.TEXTAREA_FOCUS)
     },
     eh = e => {
       ep(e.currentTarget.files, e.currentTarget.err), e.currentTarget.value = ""
@@ -115,12 +115,12 @@ function Y(e) {
     (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("2668"), n.e("27330")]).then(n.bind(n, 542055));
+      } = await Promise.all([n.e("2668"), n.e("10286")]).then(n.bind(n, 542055));
       return t => (0, r.jsx)(e, H(F({}, t), {
         channelId: V.id
       }))
     }, {
-      modalKey: k.Qr
+      modalKey: j.Qr
     }), ec(null)
   }
   i.useEffect(() => {
@@ -128,8 +128,8 @@ function Y(e) {
       var e;
       return null == (e = X.current) ? true : e.activateUploadDialogue()
     };
-    return R.S.subscribe(j.CkL.UPLOAD_FILE, e), () => {
-      R.S.unsubscribe(j.CkL.UPLOAD_FILE, e)
+    return R.S.subscribe(k.CkL.UPLOAD_FILE, e), () => {
+      R.S.unsubscribe(k.CkL.UPLOAD_FILE, e)
     }
   });
   let eE = (0, v.NE)(V),

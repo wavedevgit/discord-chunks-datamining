@@ -10,7 +10,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk801015 = require("./801015.js"),
+  Chunk170337 = require("./170337.js"),
   Chunk442937 = require("./442937.js");
 
 function d(e, t, n) {
@@ -52,13 +52,13 @@ function p(e, t) {
   }), e
 }
 let h = () => (0, Chunk255367.jsxs)("div", {
-    className: Chunk801015.coachtipInner,
+    className: Chunk170337.coachtipInner,
     children: [(0, Chunk255367.jsx)("img", {
       src: Chunk442937,
       alt: Chunk388032.intl.string(Chunk388032.t["9wkT19"]),
-      className: Chunk801015.coachtipAsset
+      className: Chunk170337.coachtipAsset
     }), (0, Chunk255367.jsxs)("div", {
-      className: Chunk801015.coachtipTextContainer,
+      className: Chunk170337.coachtipTextContainer,
       children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.V5y3qa)

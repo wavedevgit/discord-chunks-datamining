@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk592125 = require("./592125.js"),
   Chunk710352 = require("./710352.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk670853 = require("./670853.js");
+  Chunk433307 = require("./433307.js");
 
 function Z(t) {
   let {
@@ -46,31 +46,30 @@ function p(t) {
     b = (0, c.$R)(n);
   if (null == n) return (0, r.Zy)(), null;
   if (!e || __OVERLAY__ || !n.isForumPost() || (null == s ? true : s.length) === 0 || !b || n.isModeratorReportChannel()) return null;
-  let C = t => {
-      let e = new Set(g);
-      if (e.has(t)) e.delete(t);
-      else {
-        if (p) return;
-        e.add(t)
-      }
-      let i = Array.from(e).map(t => t.id);
-      d.Z.updateForumPostTags(n.id, i)
-    },
-    m = null == s ? true : s.map(t => {
-      let n = g.includes(t);
-      return (0, i.jsx)(l.S89, {
-        id: t.id,
-        label: (0, i.jsx)(Z, {
-          tag: t
-        }),
-        disabled: p && !n,
-        action: () => C(t),
-        checked: n
-      }, t.id)
-    });
+  let C = null == s ? true : s.map(t => {
+    let e = g.includes(t);
+    return (0, i.jsx)(l.S89, {
+      id: t.id,
+      label: (0, i.jsx)(Z, {
+        tag: t
+      }),
+      disabled: p && !e,
+      action: () => (t => {
+        let e = new Set(g);
+        if (e.has(t)) e.delete(t);
+        else {
+          if (p) return;
+          e.add(t)
+        }
+        let i = Array.from(e).map(t => t.id);
+        d.Z.updateForumPostTags(n.id, i)
+      })(t),
+      checked: e
+    }, t.id)
+  });
   return (0, i.jsx)(l.sNh, {
     id: "edit-tags",
     label: v.intl.string(v.t["436ZFx"]),
-    children: m
+    children: C
   })
 }

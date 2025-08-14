@@ -1,8 +1,8 @@
-/** Chunk was on 54214 **/
+/** Chunk was on 9456 **/
 /** chunk id: 386923, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => w
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -18,11 +18,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk496675 = require("./496675.js"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk130883 = require("./130883.js"),
+  Chunk764295 = require("./764295.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk971778 = require("./971778.js"),
-  Chunk105603 = require("./105603.js"),
-  Chunk151454 = require("./151454.js"),
+  Chunk814346 = require("./814346.js"),
+  Chunk816922 = require("./816922.js"),
+  Chunk586301 = require("./586301.js"),
   Chunk184476 = require("./184476.js");
 let y = {
     mass: 1,
@@ -30,41 +30,7 @@ let y = {
     friction: 18,
     clamp: true
   },
-  O = () => {
-    let [e, t] = Chunk73800.useState(true);
-    return {
-      transitions: (0, Chunk481060.Yzy)(module, {
-        keys: e => e ? "shown" : "hidden",
-        config: y,
-        from: {
-          opacity: 0
-        },
-        enter: {
-          opacity: 1
-        },
-        leave: {
-          opacity: 0
-        },
-        unique: true
-      }),
-      setVisible: exports
-    }
-  },
-  w = e => (0, c.Yzy)(e, {
-    from: {
-      maxHeight: 0
-    },
-    enter: {
-      maxHeight: 850
-    },
-    leave: {
-      maxHeight: 0
-    },
-    config: {
-      duration: 200
-    }
-  }),
-  P = e => {
+  O = e => {
     let {
       guild: t
     } = e, n = (0, o.e7)([g.Z], () => g.Z.can(x.Plq.MANAGE_GUILD, t));
@@ -212,18 +178,54 @@ let y = {
     })
   };
 
-function S(e) {
-  let {
-    guild: t
-  } = e, [n, a] = (0, d.R)("report-to-mod-education-dismissed", false), [o, u] = (0, d.R)("report-to-mod-education-expanded", false), {
-    transitions: m,
-    setVisible: h
-  } = O(), g = w(null != o && o);
+function w(e) {
+  let t, {
+      guild: n
+    } = e,
+    [a, o] = (0, d.R)("report-to-mod-education-dismissed", false),
+    [u, m] = (0, d.R)("report-to-mod-education-expanded", false),
+    {
+      transitions: h,
+      setVisible: g
+    } = (() => {
+      let [e, t] = i.useState(true);
+      return {
+        transitions: (0, c.Yzy)(e, {
+          keys: e => e ? "shown" : "hidden",
+          config: y,
+          from: {
+            opacity: 0
+          },
+          enter: {
+            opacity: 1
+          },
+          leave: {
+            opacity: 0
+          },
+          unique: true
+        }),
+        setVisible: t
+      }
+    })(),
+    f = (t = null != u && u, (0, c.Yzy)(t, {
+      from: {
+        maxHeight: 0
+      },
+      enter: {
+        maxHeight: 850
+      },
+      leave: {
+        maxHeight: 0
+      },
+      config: {
+        duration: 200
+      }
+    }));
   return (i.useEffect(() => {
-    n && h(false)
-  }, [n, h]), n) ? null : m((e, n) => n ? (0, r.jsxs)(s.animated.div, {
+    a && g(false)
+  }, [a, g]), a) ? null : h((e, t) => t ? (0, r.jsxs)(s.animated.div, {
     style: e,
-    onClick: () => u(!o),
+    onClick: () => m(!u),
     className: l()(C.container, j.container, v.mainCard),
     children: [(0, r.jsxs)("div", {
       className: j.inline,
@@ -249,19 +251,19 @@ function S(e) {
           children: b.intl.string(p.default["95qQRE"])
         })]
       }), (0, r.jsx)(c.P3F, {
-        onClick: () => a(true),
+        onClick: () => o(true),
         children: (0, r.jsx)(c.Dio, {
           size: "xs",
           color: "currentColor",
           className: j.closeIcon
         })
       })]
-    }), g((e, n) => n ? (0, r.jsxs)(s.animated.div, {
+    }), f((e, t) => t ? (0, r.jsxs)(s.animated.div, {
       style: e,
       children: [(0, r.jsx)("hr", {
         className: j.separator
-      }), (0, r.jsx)(P, {
-        guild: t
+      }), (0, r.jsx)(O, {
+        guild: n
       })]
     }) : null)]
   }) : null)

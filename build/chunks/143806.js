@@ -11,16 +11,15 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 require.d(exports, {
-  S: () => o
+  S: () => i
 }), require("./953529.js"), require("./388685.js"), require("./583741.js");
-let i = Symbol.iterator;
-class o {
+class i {
   get length() {
     return this.items.size
   }
   get capacity() {
     return this.limit
-  } [i]() {
+  } [Symbol.iterator]() {
     return this.items.entries()
   }
   entries() {

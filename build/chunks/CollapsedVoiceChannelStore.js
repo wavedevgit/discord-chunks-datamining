@@ -1,62 +1,62 @@
-/** Chunk was on 4192 **/
-/** chunk id: 58468, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 62117 **/
+/** chunk id: 58468, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 }), require("./388685.js");
-var l, Chunk442837 = require("./442837.js"),
+var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk709054 = require("./709054.js"),
   Chunk592125 = require("./592125.js");
 
-function s(e, n, t) {
-  return n in e ? Object.defineProperty(e, n, {
-    value: t,
+function d(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[n] = t, e
+  }) : e[t] = n, e
 }
 let o = {},
-  d = o;
+  h = o;
 
-function c() {
-  Chunk709054.default.keys(d).forEach(e => {
-    null == u.Z.getChannel(e) && delete d[e]
+function u() {
+  Chunk709054.default.keys(h).forEach(e => {
+    null == a.Z.getChannel(e) && delete h[e]
   })
 }
-class g extends(l = Chunk442837.ZP.PersistedStore) {
+class c extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(u.Z), d = null != e ? e : o
+    this.waitFor(a.Z), h = null != e ? e : o
   }
   getState() {
-    return d
+    return h
   }
   getCollapsed() {
-    return d
+    return h
   }
   isCollapsed(e) {
-    return d[e] || false
+    return h[e] || false
   }
 }
-s(g, "displayName", "CollapsedVoiceChannelStore"), s(g, "persistKey", "collapsedChannels");
-let f = new g(Chunk570140.Z, {
-  CONNECTION_OPEN: c,
-  OVERLAY_INITIALIZE: c,
+d(c, "displayName", "CollapsedVoiceChannelStore"), d(c, "persistKey", "collapsedChannels");
+let g = new c(Chunk570140.Z, {
+  CONNECTION_OPEN: u,
+  OVERLAY_INITIALIZE: u,
   CHANNEL_COLLAPSE: function(e) {
     let {
-      channelId: n
+      channelId: t
     } = e;
-    d[n] ? delete d[n] : d[n] = true, d = function(e) {
-      for (var n = 1; n < arguments.length; n++) {
-        var t = null != arguments[n] ? arguments[n] : {},
-          l = Object.keys(t);
-        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(t, e).enumerable
-        }))), l.forEach(function(n) {
-          s(e, n, t[n])
+    h[t] ? delete h[t] : h[t] = true, h = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), i.forEach(function(t) {
+          d(e, t, n[t])
         })
       }
       return e
-    }({}, d)
+    }({}, h)
   }
 })

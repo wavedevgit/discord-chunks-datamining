@@ -1,12 +1,12 @@
-/** Chunk was on 873 **/
+/** Chunk was on 1355 **/
 /** chunk id: 787469, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => N
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk893966 = require("./893966.js"),
@@ -18,12 +18,12 @@ var Chunk255367 = require("./255367.js"),
   Chunk776767 = require("./776767.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk983843 = require("./983843.js");
+  Chunk87819 = require("./87819.js");
 
-function f(e) {
+function N(e) {
   let {
     member: t
-  } = e, n = (0, a.e7)([_.Z], () => _.Z.getGuild(t.guildId)), s = (0, a.e7)([d.Z], () => d.Z.getSortedRoles(t.guildId)), f = l.useMemo(() => s.filter(e => e.id !== t.highestRoleId && t.roles.includes(e.id)), [t.roles, t.highestRoleId, s]), N = (0, a.e7)([u.Z], () => u.Z.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), h = (0, c.zq)(N), O = (0, c.vN)(t), p = (0, a.e7)([A.Z], () => A.Z.can(m.Plq.MANAGE_ROLES, n), [n]);
+  } = e, n = (0, a.e7)([_.Z], () => _.Z.getGuild(t.guildId)), i = (0, a.e7)([d.Z], () => d.Z.getSortedRoles(t.guildId)), N = l.useMemo(() => i.filter(e => e.id !== t.highestRoleId && t.roles.includes(e.id)), [t.roles, t.highestRoleId, i]), h = (0, a.e7)([u.Z], () => u.Z.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), f = (0, c.zq)(h), O = (0, c.vN)(t), p = (0, a.e7)([A.Z], () => A.Z.can(m.Plq.MANAGE_ROLES, n), [n]);
   return null == n ? null : (0, r.jsx)(o.xJW, {
     title: I.intl.string(I.t.LPJmLy),
     titleClassName: g.infoTitle,
@@ -44,13 +44,13 @@ function f(e) {
                 onMouseEnter: n,
                 onMouseLeave: l,
                 children: (0, r.jsx)(E.Z, {
-                  className: i()(g.roleTooltipItem, g.highestRole),
-                  role: h,
+                  className: s()(g.roleTooltipItem, g.highestRole),
+                  role: f,
                   guildId: t.guildId
                 })
               })
             }
-          }), f.map(e => (0, r.jsx)(E.Z, {
+          }), N.map(e => (0, r.jsx)(E.Z, {
             className: g.roleTooltipItem,
             role: e,
             guildId: t.guildId

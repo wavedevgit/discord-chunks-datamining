@@ -1,13 +1,13 @@
 /** Chunk was on 96887 **/
 /** chunk id: 328456, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Rj: () => o,
+  Rj: () => s,
   Ws: () => l
 }), require("./539854.js"), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk979554 = require("./979554.js"),
   Chunk388032 = require("./388032.jsx");
-class s {
+class o {
   get firstAvatarDecoration() {
     return this.getFirstItemByType(Chunk979554.Z.AVATAR_DECORATION)
   }
@@ -26,20 +26,21 @@ class s {
     }, new Map)
   }
   constructor(e) {
-    var t, r;
-    r = true, (t = "itemsByTypes") in this ? Object.defineProperty(this, t, {
-      value: r,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    }) : this[t] = r, this.itemsByTypes = this.sortByTypes(e)
+    ! function(e, t, r) {
+      t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
+    }(this, "itemsByTypes", true), this.itemsByTypes = this.sortByTypes(e)
   }
 }
-let o = e => {
+let s = e => {
     let {
       firstProfileEffect: t,
       firstAvatarDecoration: r
-    } = a.useMemo(() => new s(e.items), [e]);
+    } = a.useMemo(() => new o(e.items), [e]);
     return {
       firstProfileEffect: t,
       firstAvatarDecoration: r

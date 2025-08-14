@@ -1,4 +1,4 @@
-/** Chunk was on 96910 **/
+/** Chunk was on 86031 **/
 /** chunk id: 237031, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,7 +22,7 @@ let i = "collectibles shop product details modal",
     (0, a.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([r.e("78223"), r.e("70119")]).then(r.bind(r, 702370));
+      } = await Promise.all([r.e("78223"), r.e("84691")]).then(r.bind(r, 702370));
       return r => {
         var a, i;
         return (0, n.jsx)(e, (a = function(e) {

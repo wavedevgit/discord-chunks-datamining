@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 193154, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -11,9 +11,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk768581 = require("./768581.js"),
   Chunk682662 = require("./682662.jsx"),
   Chunk662146 = require("./662146.jsx"),
-  Chunk409026 = require("./409026.js");
+  Chunk961699 = require("./961699.js");
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,8 +32,8 @@ function h(e) {
   return e
 }
 
-function p(e) {
-  let [t, p] = i.useState(false), f = (0, l.Ie)("guild-".concat(e.id));
+function f(e) {
+  let [t, f] = i.useState(false), h = (0, l.Ie)("guild-".concat(e.id));
   return (0, r.jsx)(c.H, {
     children: (0, r.jsx)(u.Z, {
       text: e.name,
@@ -41,36 +41,36 @@ function p(e) {
         className: d.circleIconButton,
         selected: t,
         lowerBadge: (0, r.jsx)(o.G2e, {
-          icon: (0, o.GSL)(s.Z),
+          icon: (0, o.GSL)(a.Z),
           disableColor: true,
           className: d.geoRestrictedBadge
         }),
-        children: (0, r.jsx)(o.LYs, h({
+        children: (0, r.jsx)(o.LYs, p({
           name: e.name,
           onMouseEnter: () => {
-            p(true)
+            f(true)
           },
           onMouseLeave: () => {
-            p(false)
+            f(false)
           },
           onClick: () => {
             (0, o.ZDy)(async () => {
               let {
                 default: t
               } = await n.e("42358").then(n.bind(n, 210995));
-              return n => (0, r.jsx)(t, h({
+              return n => (0, r.jsx)(t, p({
                 name: e.name,
                 guildId: e.id
               }, n))
             })
           },
-          icon: null != e.icon ? a.ZP.getGuildIconURL({
+          icon: null != e.icon ? s.ZP.getGuildIconURL({
             id: e.id,
             icon: e.icon,
             canAnimate: false,
             size: 42
           }) : null
-        }, f))
+        }, h))
       })
     })
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 244526, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -15,7 +15,7 @@ var i, r, s, Chunk255367 = require("./255367.js"),
   Chunk122289 = require("./122289.js"),
   Chunk624138 = require("./624138.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk795695 = require("./795695.js");
+  Chunk916648 = require("./916648.js");
 class _ extends(i = Chunk73800.PureComponent) {
   get typeString() {
     let {
@@ -56,7 +56,7 @@ class _ extends(i = Chunk73800.PureComponent) {
       descriptionClassName: t
     } = this.props;
     return (0, Chunk255367.jsx)(Chunk481060.Text, {
-      className: c()(Chunk795695.description, exports),
+      className: c()(Chunk916648.description, exports),
       variant: "text-md/semibold",
       children: this.getLabel(module)
     })
@@ -85,21 +85,21 @@ class _ extends(i = Chunk73800.PureComponent) {
         type: this.typeString
       }), (0, Chunk255367.jsxs)(Chunk600164.Z, {
         direction: Chunk600164.Z.Direction.VERTICAL,
-        className: Chunk795695.descriptionWrapper,
+        className: Chunk916648.descriptionWrapper,
         children: [(0, Chunk255367.jsxs)(Chunk600164.Z, {
           align: Chunk600164.Z.Align.CENTER,
           children: [this.renderDescription(), s && module ? (0, Chunk255367.jsx)("div", {
-            className: Chunk795695.defaultIndicator,
+            className: Chunk916648.defaultIndicator,
             children: Chunk388032.intl.string(Chunk388032.t.bBvAEB)
           }) : null, i ? (0, Chunk255367.jsx)("div", {
-            className: Chunk795695.premiumIndicator,
+            className: Chunk916648.premiumIndicator,
             children: Chunk388032.intl.string(Chunk388032.t.YCrcPD)
           }) : null, s && exports.invalid ? (0, Chunk255367.jsx)("div", {
-            className: Chunk795695.invalidIndicator,
+            className: Chunk916648.invalidIndicator,
             children: Chunk388032.intl.string(Chunk388032.t["851k9/"])
           }) : null]
         }), require && null != Chunk73800 ? (0, Chunk255367.jsx)("div", {
-          className: Chunk795695.subText,
+          className: Chunk916648.subText,
           children: Chunk73800
         }) : null]
       })]

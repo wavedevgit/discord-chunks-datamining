@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 19869, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => S
@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk450272 = require("./450272.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk208583 = require("./208583.js");
+  Chunk905164 = require("./905164.js");
 
 function S() {
   let {
@@ -127,14 +127,14 @@ function T() {
         },
         children: "Enter a number and click Set Balance to see the balance widget pill update:"
       }), (0, Chunk255367.jsx)(Chunk481060.FiK, {
-        className: Chunk208583.numberInput,
+        className: Chunk905164.numberInput,
         value: exports,
         onChange: e => n(e)
       }), (0, Chunk255367.jsx)(Chunk693789.zx, {
         onClick: () => Chunk822857(exports),
         children: "Set Balance"
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk208583.interactivePillContainer,
+        className: Chunk905164.interactivePillContainer,
         children: (0, Chunk255367.jsx)(Chunk970815.A4, {
           balance: Chunk52647,
           balanceWidgetMode: S,
@@ -147,7 +147,7 @@ function T() {
         },
         children: "Enter a number (loading time in milliseconds) and click Simulate Loading State to see the balance widget pill update:"
       }), (0, Chunk255367.jsx)(Chunk481060.FiK, {
-        className: Chunk208583.numberInput,
+        className: Chunk905164.numberInput,
         value: Chunk275388,
         onChange: e => j(e)
       }), (0, Chunk255367.jsx)(Chunk693789.zx, {
@@ -158,7 +158,7 @@ function T() {
         },
         children: "Simulate Loading State"
       }), (0, Chunk255367.jsx)("div", {
-        className: Chunk208583.interactivePillContainer,
+        className: Chunk905164.interactivePillContainer,
         children: (0, Chunk255367.jsx)(Chunk970815.A4, {
           balance: Chunk52647,
           balanceWidgetMode: S,

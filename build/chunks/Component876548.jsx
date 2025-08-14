@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 876548, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -14,11 +14,11 @@ function o(e) {
     video: n,
     userCount: o
   } = e, {
-    limit: s
-  } = (0, i.Z)(t), a = false, c = false;
-  return t.userLimit > 0 && (a = t.userLimit), n && s > 0 && (c = a < 0 || s < a, a = a > 0 ? Math.min(a, s) : s), (0, r.jsx)(l.Z, {
+    limit: a
+  } = (0, i.Z)(t), s = false, c = false;
+  return t.userLimit > 0 && (s = t.userLimit), n && a > 0 && (c = s < 0 || a < s, s = s > 0 ? Math.min(s, a) : a), (0, r.jsx)(l.Z, {
     users: o,
-    total: a,
+    total: s,
     videoLimit: c
   })
 }

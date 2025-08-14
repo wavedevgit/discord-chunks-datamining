@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 836697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -18,25 +18,25 @@ var Chunk255367 = require("./255367.js"),
   Chunk179809 = require("./179809.jsx"),
   Chunk588275 = require("./588275.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk818881 = require("./818881.js");
+  Chunk264096 = require("./264096.js");
 
 function _(e) {
   let {
     onActivate: t,
     children: n
-  } = e, a = i.useRef(null), d = (0, l.e7)([u.Z], () => u.Z.hasJoinRequestCoackmark()), h = i.useCallback(() => {
+  } = e, s = i.useRef(null), d = (0, l.e7)([u.Z], () => u.Z.hasJoinRequestCoackmark()), p = i.useCallback(() => {
     c.ZP.clearCoachmark()
-  }, []), p = (0, s.Z)(d), f = i.useRef(null);
+  }, []), f = (0, a.Z)(d), h = i.useRef(null);
   return i.useEffect(() => {
-    if (d && d !== p) {
+    if (d && d !== f) {
       var e, n, r, i, l;
-      t(), null == (l = f.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
+      t(), null == (l = h.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
     }
-  }, [f, d, p, t]), (0, r.jsxs)("div", {
+  }, [h, d, f, t]), (0, r.jsxs)("div", {
     className: O.container,
     children: [(0, r.jsx)(o.yRy, {
-      ref: f,
-      targetElementRef: a,
+      ref: h,
+      targetElementRef: s,
       shouldShow: d,
       renderPopout: () => (0, r.jsxs)("div", {
         className: O.popoutContainer,
@@ -57,7 +57,7 @@ function _(e) {
             size: "sm",
             text: b.intl.string(b.t["4r+amZ"]),
             fullWidth: true,
-            onClick: h
+            onClick: p
           })]
         }), (0, r.jsx)("div", {
           className: O.popoutCaretLeft
@@ -88,7 +88,7 @@ function _(e) {
           return e
         }({}, e), n = n = {
           className: O.popoutAnchor,
-          ref: a
+          ref: s
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -107,28 +107,28 @@ function _(e) {
 function y(e) {
   let {
     onActivate: t
-  } = e, [n, y] = i.useState(false), C = (0, l.e7)([d.Z], () => d.Z.getGuildId()), v = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), j = (0, f.Z)(), E = (0, s.Z)(C), S = i.useMemo(() => {
-    let e = (0, p.qQ)({
-      folderId: h.S.PENDING_JOIN_REQUESTS_FOLDER,
+  } = e, [n, y] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), C = (0, h.Z)(), E = (0, a.Z)(v), x = i.useMemo(() => {
+    let e = (0, f.qQ)({
+      folderId: p.S.PENDING_JOIN_REQUESTS_FOLDER,
       folderName: b.intl.string(b.t["scsU+v"]),
       expanded: n,
       guildIds: []
     });
-    for (let t of j) e.children.push((0, p.Mg)(t, e.id));
+    for (let t of C) e.children.push((0, f.Mg)(t, e.id));
     return e
-  }, [j, n]);
+  }, [C, n]);
   i.useEffect(() => {
-    n && !v && a.Z.fetchRequestToJoinGuilds()
-  }, [n, v]);
-  let x = null != C && j.includes(C);
+    n && !j && s.Z.fetchRequestToJoinGuilds()
+  }, [n, j]);
+  let S = null != v && C.includes(v);
   return (i.useEffect(() => {
-    !n && x && E !== C && y(true)
-  }, [n, x, E, C]), 0 === j.length) ? null : (0, r.jsx)(_, {
+    !n && S && E !== v && y(true)
+  }, [n, S, E, v]), 0 === C.length) ? null : (0, r.jsx)(_, {
     onActivate: t,
     children: (0, r.jsx)(g.Z, {
-      folderNode: S,
+      folderNode: x,
       expanded: n,
-      selected: x,
+      selected: S,
       draggable: false,
       sorting: false,
       onExpandCollapse: () => {
@@ -143,7 +143,7 @@ function y(e) {
         })
       }),
       renderChildNode: function(e, t, n) {
-        return e.type !== p.eD.GUILD ? null : (0, r.jsx)(m.Z, {
+        return e.type !== f.eD.GUILD ? null : (0, r.jsx)(m.Z, {
           guildNode: e,
           "aria-setsize": n,
           "aria-posinset": t

@@ -1,7 +1,7 @@
-/** Chunk was on 58023 **/
+/** Chunk was on 7654 **/
 /** chunk id: 530436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  W: () => m
+  W: () => g
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -11,41 +11,41 @@ var Chunk255367 = require("./255367.js"),
   Chunk496675 = require("./496675.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk652631 = require("./652631.js");
+  Chunk451964 = require("./451964.js");
 
-function m(e) {
+function g(e) {
   let {
     guild: t,
     error: n,
-    onClose: m
-  } = e, x = t.id, g = l.useCallback(() => {
-    m(), s.Z.open(x, c.pNK.INVITES)
-  }, [x, m]), h = l.useCallback(e => (0, r.jsx)(i.P3F, {
-    className: d.errorLink,
-    onClick: g,
-    children: (0, r.jsx)(i.Text, {
+    onClose: g
+  } = e, h = t.id, m = i.useCallback(() => {
+    g(), a.Z.open(h, u.pNK.INVITES)
+  }, [h, g]), p = i.useCallback(e => (0, l.jsx)(r.P3F, {
+    className: c.errorLink,
+    onClick: m,
+    children: (0, l.jsx)(r.Text, {
       variant: "text-xs/normal",
       color: "text-link",
       tag: "span",
       children: e
     })
-  }), [g]), v = l.useCallback(e => (0, r.jsx)(i.eee, {
-    href: c.EYA.INVITES_HELP,
+  }), [m]), v = i.useCallback(e => (0, l.jsx)(r.eee, {
+    href: u.EYA.INVITES_HELP,
     target: "_blank",
-    children: (0, r.jsx)(i.Text, {
+    children: (0, l.jsx)(r.Text, {
       variant: "text-xs/normal",
       color: "text-link",
       tag: "span",
       children: e
     })
-  }), []), p = n instanceof a.Z ? n.code !== c.evJ.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.Z.can(c.Plq.MANAGE_GUILD, t) ? u.intl.format(u.t["H/RUY2"], {
-    inviteListHook: h,
+  }), []), x = n instanceof s.Z ? n.code !== u.evJ.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.Z.can(u.Plq.MANAGE_GUILD, t) ? d.intl.format(d.t["H/RUY2"], {
+    inviteListHook: p,
     inviteHelpHook: v
-  }) : u.intl.string(u.t["/FxH6O"]) : "message" in n ? n.message : u.intl.string(u.t.eAn6z8);
-  return (0, r.jsx)(i.Text, {
-    className: d.errorMessage,
+  }) : d.intl.string(d.t["/FxH6O"]) : "message" in n ? n.message : d.intl.string(d.t.eAn6z8);
+  return (0, l.jsx)(r.Text, {
+    className: c.errorMessage,
     variant: "text-xs/normal",
     color: "text-danger",
-    children: p
+    children: x
   })
 }

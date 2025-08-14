@@ -1,28 +1,28 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 932711, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
   Chunk821020 = require("./821020.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk798297 = require("./798297.js");
+  Chunk78480 = require("./78480.js");
 
-function a(e) {
+function s(e) {
   let {
     children: t
   } = e, {
     notificationCenterVariant: n
   } = (0, l.pN)({
     location: "NotificationsInboxTooltip"
-  }), a = n === l.jP.LEGACY ? o.intl.string(o.t.GSmTKC) : o.intl.string(o.t.HcoRu7);
+  }), s = n === l.jP.LEGACY ? o.intl.string(o.t.GSmTKC) : o.intl.string(o.t.HcoRu7);
   return (0, r.jsx)(i.ua7, {
     hideOnClick: true,
     spacing: 12,
     position: "right",
-    text: a,
-    tooltipClassName: s.listItemTooltip,
+    text: s,
+    tooltipClassName: a.listItemTooltip,
     children: e => {
       var n, i;
       return (0, r.jsx)("div", (n = function(e) {

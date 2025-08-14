@@ -1,4 +1,4 @@
-/** Chunk was on 787 **/
+/** Chunk was on 32561 **/
 /** chunk id: 666697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -26,7 +26,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk979007 = require("./979007.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk995138 = require("./995138.js");
+  Chunk352677 = require("./352677.js");
 let P = function(e) {
   let {
     applicationId: t,
@@ -66,18 +66,18 @@ let P = function(e) {
       applicationId: null == A ? true : A.id
     })),
     B = a.useMemo(() => null == G ? true : G.applications.slice(0, 3), [G]),
-    U = {
+    z = {
       displayedSimilarApplications: B,
       previousView: k
     },
-    z = a.useRef(U);
+    U = a.useRef(z);
   a.useEffect(() => {
-    z.current = U
+    U.current = z
   }), a.useEffect(() => {
     let {
       displayedSimilarApplications: e,
       previousView: t
-    } = z.current;
+    } = U.current;
     (null == A ? true : A.id) != null && M !== p.M.FETCHING && (0, m.zZ)(I.rMx.APP_DIRECTORY_PAGE_VIEWED, {
       current_page: f.m_.APPLICATION,
       previous_page: null == t ? true : t.type,

@@ -73,30 +73,30 @@ function G(e) {
     guild: t,
     onSelect: r,
     hideSettings: c
-  } = e, u = t.id, G = h.ZP.getDefaultChannel(u), {
+  } = e, u = t.id, G = E.ZP.getDefaultChannel(u), {
     entrypoints: w
   } = (0, b._k)({
     location: "guild_context_menu"
   }), U = (0, s.e7)([y.default], () => {
     let e = y.default.getCurrentUser();
     return l()(null != e, "GuildContextMenu: user cannot be undefined"), (0, O.eM)(t, e)
-  }, [t]), C = (0, Z.Z)({
+  }, [t]), C = (0, I.Z)({
     guild: t,
-    source: D.t4x.GUILD_CONTEXT_MENU,
+    source: M.t4x.GUILD_CONTEXT_MENU,
     channel: w ? null : G
-  }), R = (0, I.Z)(u), B = (0, v.Z)(t), Y = (0, m.Z)(t), Q = (0, L.Z)(t), F = (0, j.Z)({
+  }), R = (0, Z.Z)(u), B = (0, v.Z)(t), Y = (0, m.Z)(t), Q = (0, L.Z)(t), F = (0, j.Z)({
     guildId: t.id,
-    userId: E.default.getId(),
+    userId: h.default.getId(),
     analyticsLocation: {
-      page: D.ZY5.GUILD_CHANNEL,
-      section: D.jXE.CHAT_USERNAME,
-      object: D.qAy.CONTEXT_MENU_ITEM
+      page: M.ZY5.GUILD_CHANNEL,
+      section: M.jXE.CHAT_USERNAME,
+      object: M.qAy.CONTEXT_MENU_ITEM
     }
   }), H = (0, _.Z)(t), V = (0, g.Z)(t.id), q = (0, d.Z)({
     id: t.id,
-    label: M.intl.string(M.t["94lLDw"])
+    label: D.intl.string(D.t["94lLDw"])
   }), W = (0, P.Z)(t, {
-    section: D.jXE.GUILD_LIST
+    section: M.jXE.GUILD_LIST
   }), X = (0, f.Z)(t.id), K = (0, x.Z)(t.id), z = (0, S.ng)(t.id, false), J = (0, N.Z)(t), $ = (0, p.Mn)("GuildContextMenu"), ee = (0, A.p)(t);
 
   function et() {
@@ -109,19 +109,19 @@ function G(e) {
       }))
     })
   }
-  return t.features.has(D.oNc.HUB) ? (0, i.jsxs)(o.v2r, {
+  return t.features.has(M.oNc.HUB) ? (0, i.jsxs)(o.v2r, {
     navId: "guild-context",
     onClose: a.Zy,
-    "aria-label": M.intl.string(M.t.HpQykZ),
+    "aria-label": D.intl.string(D.t.HpQykZ),
     onSelect: r,
     children: [(0, i.jsxs)(o.kSQ, {
       children: [C, (0, i.jsx)(o.sNh, {
         id: "privacy",
-        label: M.intl.string(M.t.IlFwwc),
+        label: D.intl.string(D.t.IlFwwc),
         action: () => (0, o.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("8895"), n.e("84605"), n.e("8016"), n.e("49508"), n.e("17938"), n.e("25548"), n.e("76540"), n.e("22646"), n.e("25183"), n.e("3940"), n.e("27458"), n.e("56184"), n.e("88712"), n.e("30419"), n.e("66317"), n.e("89001"), n.e("18824"), n.e("20501"), n.e("16233"), n.e("99319")]).then(n.bind(n, 241420));
+          } = await Promise.all([n.e("8895"), n.e("84605"), n.e("8016"), n.e("49508"), n.e("17938"), n.e("25548"), n.e("22646"), n.e("76540"), n.e("25183"), n.e("3940"), n.e("27458"), n.e("9885"), n.e("88712"), n.e("30419"), n.e("66317"), n.e("89001"), n.e("18824"), n.e("88876"), n.e("62332"), n.e("7384"), n.e("35624"), n.e("98775")]).then(n.bind(n, 241420));
           return n => (0, i.jsx)(e, k(T({}, n), {
             guild: t
           }))
@@ -130,7 +130,7 @@ function G(e) {
     }), U ? null : (0, i.jsx)(o.kSQ, {
       children: (0, i.jsx)(o.sNh, {
         id: "leave-guild",
-        label: M.intl.string(M.t.Dv8gFR),
+        label: D.intl.string(D.t.Dv8gFR),
         action: et,
         color: "danger"
       })
@@ -140,7 +140,7 @@ function G(e) {
   }) : (0, i.jsxs)(o.v2r, {
     navId: "guild-context",
     onClose: a.Zy,
-    "aria-label": M.intl.string(M.t.HpQykZ),
+    "aria-label": D.intl.string(D.t.HpQykZ),
     onSelect: r,
     children: [(0, i.jsx)(o.kSQ, {
       children: W
@@ -151,11 +151,11 @@ function G(e) {
     }), (0, i.jsxs)(o.kSQ, {
       children: [c ? null : Q, __OVERLAY__ ? null : (0, i.jsx)(o.sNh, {
         id: "privacy",
-        label: M.intl.string(M.t.BayiAg),
+        label: D.intl.string(D.t.BayiAg),
         action: () => (0, o.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("8895"), n.e("84605"), n.e("8016"), n.e("49508"), n.e("17938"), n.e("25548"), n.e("76540"), n.e("22646"), n.e("25183"), n.e("3940"), n.e("27458"), n.e("56184"), n.e("88712"), n.e("30419"), n.e("66317"), n.e("89001"), n.e("18824"), n.e("20501"), n.e("16233"), n.e("99319")]).then(n.bind(n, 241420));
+          } = await Promise.all([n.e("8895"), n.e("84605"), n.e("8016"), n.e("49508"), n.e("17938"), n.e("25548"), n.e("22646"), n.e("76540"), n.e("25183"), n.e("3940"), n.e("27458"), n.e("9885"), n.e("88712"), n.e("30419"), n.e("66317"), n.e("89001"), n.e("18824"), n.e("88876"), n.e("62332"), n.e("7384"), n.e("35624"), n.e("98775")]).then(n.bind(n, 241420));
           return n => (0, i.jsx)(e, k(T({}, n), {
             guild: t
           }))
@@ -166,7 +166,7 @@ function G(e) {
     }), (0, i.jsxs)(o.kSQ, {
       children: [J, !U && (0, i.jsx)(o.sNh, {
         id: "leave-guild",
-        label: M.intl.string(M.t.J2TBi4),
+        label: D.intl.string(D.t.J2TBi4),
         action: et,
         color: "danger"
       })]

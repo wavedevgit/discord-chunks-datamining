@@ -31,11 +31,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk650613 = require("./650613.jsx"),
   Chunk789086 = require("./789086.jsx"),
   Chunk206583 = require("./206583.js"),
-  Chunk532605 = require("./532605.js"),
-  Chunk881291 = require("./881291.js");
+  Chunk680027 = require("./680027.js"),
+  Chunk451429 = require("./451429.js");
 let R = [{
   key: "type",
-  cellClassName: i()(Chunk532605.cell, Chunk532605.cellType),
+  cellClassName: i()(Chunk680027.cell, Chunk680027.cellType),
   render(e) {
     let {
       type: t
@@ -47,7 +47,7 @@ let R = [{
   }
 }, {
   key: "count",
-  cellClassName: i()(Chunk532605.cell, Chunk532605.cellCount),
+  cellClassName: i()(Chunk680027.cell, Chunk680027.cellCount),
   render(e) {
     let {
       entries: t
@@ -61,7 +61,7 @@ let R = [{
   }
 }, {
   key: "only?",
-  cellClassName: Chunk532605.cell,
+  cellClassName: Chunk680027.cell,
   render(e) {
     let {
       type: t
@@ -133,9 +133,9 @@ function A() {
     F = (0, Chunk835473.Z)(M).filter(Chunk823379.lm),
     U = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk881291.panel,
+    className: Chunk451429.panel,
     children: (0, Chunk255367.jsxs)(Chunk481060.zJl, {
-      className: Chunk532605.content,
+      className: Chunk680027.content,
       children: [(0, Chunk255367.jsxs)(Chunk481060.hjN, {
         children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
           children: "Inventory"

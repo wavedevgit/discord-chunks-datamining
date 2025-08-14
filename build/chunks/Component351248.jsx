@@ -2,7 +2,7 @@
 /** chunk id: 351248, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => R
 }), require("./539854.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -17,9 +17,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk451478 = require("./451478.js"),
   Chunk584511 = require("./584511.jsx"),
   Chunk354459 = require("./354459.js"),
-  Chunk416038 = require("./416038.js"),
-  Chunk794287 = require("./794287.js"),
-  Chunk584783 = require("./584783.js");
+  Chunk907894 = require("./907894.js"),
+  Chunk149715 = require("./149715.js"),
+  Chunk162130 = require("./162130.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -30,12 +30,10 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 let y = 8,
-  O = {
-    STEPS: 23,
-    FRAME_DURATION: 17,
-    FRAME_SIZE: 26
-  },
-  v = {
+  O = 23,
+  v = 17,
+  I = 26,
+  T = {
     SCALE_MIN: .7,
     SCALE_MAX: 1,
     DURATION_IN: 300,
@@ -43,9 +41,9 @@ let y = 8,
     EASING_IN: Chunk748780.Z.Easing.inOut(Chunk748780.Z.Easing.back()),
     EASING_OUT: Chunk748780.Z.Easing.quad
   },
-  I = 200,
-  T = 125;
-class S extends Chunk73800.PureComponent {
+  S = 200,
+  A = 125;
+class N extends Chunk73800.PureComponent {
   componentDidMount() {
     this.componentDidAppear()
   }
@@ -63,11 +61,11 @@ class S extends Chunk73800.PureComponent {
     } = this;
     t.setValue(0), n.setValue(0), s.Z.parallel([s.Z.timing(t, {
       toValue: 1,
-      duration: v.DURATION_IN,
-      easing: v.EASING_IN
+      duration: T.DURATION_IN,
+      easing: T.EASING_IN
     }), s.Z.timing(n, {
       toValue: 1,
-      duration: I
+      duration: S
     })]).start(e)
   }
   componentWillLeave(e) {
@@ -79,17 +77,17 @@ class S extends Chunk73800.PureComponent {
     } = this;
     r.setValue(1), n.setValue(0);
     let o = [];
-    for (let e = 0; e < O.STEPS; e++) o.push(s.Z.timing(n, {
-      toValue: -O.FRAME_SIZE * e,
-      duration: O.FRAME_DURATION
+    for (let e = 0; e < O; e++) o.push(s.Z.timing(n, {
+      toValue: -I * e,
+      duration: v
     }));
     s.Z.sequence([s.Z.timing(t, {
       toValue: 0,
-      duration: v.DURATION_OUT,
-      easing: v.EASING_OUT
+      duration: T.DURATION_OUT,
+      easing: T.EASING_OUT
     }), s.Z.sequence(o), s.Z.timing(i, {
       toValue: 0,
-      duration: T
+      duration: A
     })]).start(e)
   }
   getScaleStyle() {
@@ -100,7 +98,7 @@ class S extends Chunk73800.PureComponent {
       transform: [{
         scale: module.interpolate({
           inputRange: [0, 1],
-          outputRange: [v.SCALE_MIN, v.SCALE_MAX]
+          outputRange: [T.SCALE_MIN, T.SCALE_MAX]
         })
       }],
       opacity: module
@@ -129,15 +127,15 @@ class S extends Chunk73800.PureComponent {
       theme: e,
       children: t,
       className: n
-    } = this.props, i = (0, Chunk780384.wj)(module), o = a()(Chunk416038.sprite, {
-      [Chunk584783.crossWhite]: Chunk73800,
-      [Chunk584783.crossGrey]: !Chunk73800
+    } = this.props, i = (0, Chunk780384.wj)(module), o = a()(Chunk907894.sprite, {
+      [Chunk162130.crossWhite]: Chunk73800,
+      [Chunk162130.crossGrey]: !Chunk73800
     });
     return (0, Chunk255367.jsxs)(Chunk748780.Z.div, {
-      className: a()(Chunk416038.transition, require),
+      className: a()(Chunk907894.transition, require),
       style: this.getWidthStyle(),
       children: [(0, Chunk255367.jsx)("div", {
-        className: a()(Chunk416038.spriteWrapper, Chunk794287.horizontal, Chunk794287.justifyCenter, Chunk794287.alignCenter),
+        className: a()(Chunk907894.spriteWrapper, Chunk149715.horizontal, Chunk149715.justifyCenter, Chunk149715.alignCenter),
         children: (0, Chunk255367.jsx)(Chunk748780.Z.div, {
           className: Chunk120356,
           style: this.getSpriteStyle()
@@ -153,11 +151,11 @@ class S extends Chunk73800.PureComponent {
   }
 }
 
-function A(e, t) {
+function C(e, t) {
   return ((0, d.pxk)(d.EFr.SIZE_80) + 2 * y) * t > e ? d.EFr.SIZE_40 : d.EFr.SIZE_80
 }
 
-function N(e) {
+function R(e) {
   let {
     participants: t,
     onContextMenu: n,
@@ -165,7 +163,7 @@ function N(e) {
     onClick: o,
     width: s,
     guildId: u
-  } = e, g = (0, f.ZP)(), E = A(s, t.length), b = (0, l.e7)([_.Z], () => _.Z.isFocused()), y = t.map(e => {
+  } = e, g = (0, f.ZP)(), E = C(s, t.length), b = (0, l.e7)([_.Z], () => _.Z.isFocused()), y = t.map(e => {
     var t, i;
     if (e.type !== h.fO.USER) return null;
     let {
@@ -174,7 +172,7 @@ function N(e) {
       speaking: l,
       ringing: c
     } = e;
-    return (0, r.jsx)(S, {
+    return (0, r.jsx)(N, {
       className: m.participant,
       width: (0, d.pxk)(E),
       theme: g,

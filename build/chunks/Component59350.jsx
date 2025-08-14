@@ -47,9 +47,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk176505 = require("./176505.js"),
   Chunk490897 = require("./490897.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk623923 = require("./623923.js"),
-  Chunk149771 = require("./149771.js"),
-  Chunk692228 = require("./692228.js");
+  Chunk29858 = require("./29858.js"),
+  Chunk97009 = require("./97009.js"),
+  Chunk430864 = require("./430864.js");
 
 function Q(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -257,12 +257,7 @@ function et(e) {
     }, t)
   }), {
     handleSelectOption: b
-  } = (0, R.Z)(i.id), j = (e, t) => {
-    if (!t && 1 === x.length && n.required) return void d({
-      type: K
-    });
-    b(n, e, null != t && t), n.singleSelect && t && n.options.forEach(e => u.delete(e.id)), t ? u.add(e.id) : u.delete(e.id), m(new Set(u)), d(null)
-  };
+  } = (0, R.Z)(i.id);
   return (0, l.jsxs)("div", {
     className: X.prompt,
     "data-new": n.isNew,
@@ -286,7 +281,12 @@ function et(e) {
         hideMemberCount: true,
         guildId: i.id,
         option: e,
-        onSelect: t => j(e, t),
+        onSelect: t => ((e, t) => {
+          if (!t && 1 === x.length && n.required) return void d({
+            type: K
+          });
+          b(n, e, null != t && t), n.singleSelect && t && n.options.forEach(e => u.delete(e.id)), t ? u.add(e.id) : u.delete(e.id), m(new Set(u)), d(null)
+        })(e, t),
         selected: x.includes(e.id),
         canBeNew: !n.isNew
       }, e.id))

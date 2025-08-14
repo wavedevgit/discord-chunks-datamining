@@ -1,7 +1,7 @@
 /** Chunk was on 87626 **/
 /** chunk id: 34211, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  o: () => m
+  o: () => N
 }), require("./388685.js");
 var n, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,139 +19,138 @@ function u(e, t, a) {
     writable: true
   }) : e[t] = a, e
 }
-let _ = Chunk231338.j_.MAIN_NAVIGATION_MENU,
-  N = e => [{
-    route: c.am.DOWNLOAD,
-    linkClicked: "download",
-    title: d.Z.Messages.NAVIGATION_DOWNLOAD
-  }, {
-    route: c.am.NITRO,
-    linkClicked: "nitro",
-    title: d.Z.Messages.NAVIGATION_NITRO,
-    external: true
-  }, {
-    route: c.am.JOBS,
-    linkClicked: "jobs",
-    title: d.Z.Messages.NAVIGATION_JOBS,
-    external: true
-  }, {
-    title: d.Z.Messages.NAVIGATION_DEVELOPERS,
-    links: [{
-      route: c.am.RICH_PRESENCE,
-      linkClicked: "rich_presence",
-      title: d.Z.Messages.NAVIGATION_RICH_PRESENCE
-    }, {
-      route: c.am.VERIFICATION,
-      linkClicked: "verification",
-      title: d.Z.Messages.NAVIGATION_VERIFICATION,
-      external: true
-    }, {
-      route: c.yX.DEV_PORTAL,
-      linkClicked: "developers",
-      title: d.Z.Messages.NAVIGATION_DEVELOPER_PORTAL,
-      external: true
-    }, {
-      route: c.yX.DEV_PORTAL_DOCUMENTATION,
-      linkClicked: "documentation",
-      title: d.Z.Messages.NAVIGATION_DOCUMENTATION,
-      external: true
-    }]
-  }, {
-    title: d.Z.Messages.NAVIGATION_COMMUNITY,
-    links: [{
-      route: c.am.OPEN_SOURCE,
-      linkClicked: "open_source",
-      title: d.Z.Messages.NAVIGATION_OPEN_SOURCE
-    }, {
-      route: c.am.PARTNERS,
-      linkClicked: "partners",
-      title: d.Z.Messages.NAVIGATION_PARTNERS,
-      external: true
-    }, {
-      route: c.am.HYPESQUAD,
-      linkClicked: "hypesquad",
-      title: d.Z.Messages.NAVIGATION_HYPESQUAD,
-      external: true
-    }, {
-      route: c.am.GUIDELINES,
-      linkClicked: "guidelines",
-      title: d.Z.Messages.NAVIGATION_GUIDELINES,
-      external: true
-    }]
-  }, {
-    title: d.Z.Messages.NAVIGATION_SUPPORT,
-    links: [{
-      route: "//support.discord.com/hc/".concat(e),
-      linkClicked: "helpandsupport",
-      title: d.Z.Messages.NAVIGATION_HELP_AND_SUPPORT,
-      external: true
-    }, {
-      route: c.yX.STATUS,
-      linkClicked: "status",
-      title: d.Z.Messages.NAVIGATION_STATUS,
-      external: true
-    }, {
-      route: c.am.SAFETY_LANDING,
-      linkClicked: "safetycenter",
-      title: d.Z.Messages.NAVIGATION_SAFETY_CENTER,
-      external: true
-    }]
-  }];
-class m extends(n = Chunk73800.PureComponent) {
+let _ = Chunk231338.j_.MAIN_NAVIGATION_MENU;
+class N extends(n = Chunk73800.PureComponent) {
   render() {
-    let e = (0, Chunk948789.fQ)(this.context.router),
+    let e, t = (0, Chunk948789.fQ)(this.context.router),
       {
-        isMobile: t,
-        isVisible: a,
-        styles: n,
-        TrackClick: s,
-        avoidRouter: u
+        isMobile: a,
+        isVisible: n,
+        styles: s,
+        TrackClick: u,
+        avoidRouter: N
       } = this.props,
       {
         sectionShown: m
       } = this.state;
-    return N(null != Chunk330711.Z ? Chunk330711.Z.getLocale().toLowerCase() : "").map(l => null != l.links ? (0, r.jsx)(o.Z, {
-      title: l.title,
-      links: l.links,
-      isOpen: m === l.title,
-      isMobile: t,
-      avoidRouter: u,
-      TrackClick: s,
+    return (e = null != Chunk330711.Z ? Chunk330711.Z.getLocale().toLowerCase() : "", [{
+      route: Chunk231338.am.DOWNLOAD,
+      linkClicked: "download",
+      title: Chunk330711.Z.Messages.NAVIGATION_DOWNLOAD
+    }, {
+      route: Chunk231338.am.NITRO,
+      linkClicked: "nitro",
+      title: Chunk330711.Z.Messages.NAVIGATION_NITRO,
+      external: true
+    }, {
+      route: Chunk231338.am.JOBS,
+      linkClicked: "jobs",
+      title: Chunk330711.Z.Messages.NAVIGATION_JOBS,
+      external: true
+    }, {
+      title: Chunk330711.Z.Messages.NAVIGATION_DEVELOPERS,
+      links: [{
+        route: Chunk231338.am.RICH_PRESENCE,
+        linkClicked: "rich_presence",
+        title: Chunk330711.Z.Messages.NAVIGATION_RICH_PRESENCE
+      }, {
+        route: Chunk231338.am.VERIFICATION,
+        linkClicked: "verification",
+        title: Chunk330711.Z.Messages.NAVIGATION_VERIFICATION,
+        external: true
+      }, {
+        route: Chunk231338.yX.DEV_PORTAL,
+        linkClicked: "developers",
+        title: Chunk330711.Z.Messages.NAVIGATION_DEVELOPER_PORTAL,
+        external: true
+      }, {
+        route: Chunk231338.yX.DEV_PORTAL_DOCUMENTATION,
+        linkClicked: "documentation",
+        title: Chunk330711.Z.Messages.NAVIGATION_DOCUMENTATION,
+        external: true
+      }]
+    }, {
+      title: Chunk330711.Z.Messages.NAVIGATION_COMMUNITY,
+      links: [{
+        route: Chunk231338.am.OPEN_SOURCE,
+        linkClicked: "open_source",
+        title: Chunk330711.Z.Messages.NAVIGATION_OPEN_SOURCE
+      }, {
+        route: Chunk231338.am.PARTNERS,
+        linkClicked: "partners",
+        title: Chunk330711.Z.Messages.NAVIGATION_PARTNERS,
+        external: true
+      }, {
+        route: Chunk231338.am.HYPESQUAD,
+        linkClicked: "hypesquad",
+        title: Chunk330711.Z.Messages.NAVIGATION_HYPESQUAD,
+        external: true
+      }, {
+        route: Chunk231338.am.GUIDELINES,
+        linkClicked: "guidelines",
+        title: Chunk330711.Z.Messages.NAVIGATION_GUIDELINES,
+        external: true
+      }]
+    }, {
+      title: Chunk330711.Z.Messages.NAVIGATION_SUPPORT,
+      links: [{
+        route: "//support.discord.com/hc/".concat(module),
+        linkClicked: "helpandsupport",
+        title: Chunk330711.Z.Messages.NAVIGATION_HELP_AND_SUPPORT,
+        external: true
+      }, {
+        route: Chunk231338.yX.STATUS,
+        linkClicked: "status",
+        title: Chunk330711.Z.Messages.NAVIGATION_STATUS,
+        external: true
+      }, {
+        route: Chunk231338.am.SAFETY_LANDING,
+        linkClicked: "safetycenter",
+        title: Chunk330711.Z.Messages.NAVIGATION_SAFETY_CENTER,
+        external: true
+      }]
+    }]).map(e => null != e.links ? (0, r.jsx)(o.Z, {
+      title: e.title,
+      links: e.links,
+      isOpen: m === e.title,
+      isMobile: a,
+      avoidRouter: N,
+      TrackClick: u,
       onClose: this.closeSubNav,
       onOpen: this.openSubNav
-    }, l.title) : l.external && null != l.route ? (0, r.jsx)("li", {
-      className: n.listItemInactive,
+    }, e.title) : e.external && null != e.route ? (0, r.jsx)("li", {
+      className: s.listItemInactive,
       role: "none",
-      children: (0, r.jsx)(s, {
-        className: n.mainNavLink,
+      children: (0, r.jsx)(u, {
+        className: s.mainNavLink,
         eventName: _,
-        data: l.linkClicked ? {
-          linkClicked: l.linkClicked
+        data: e.linkClicked ? {
+          linkClicked: e.linkClicked
         } : {},
-        href: l.route,
+        href: e.route,
         rel: "me",
-        children: l.title
+        children: e.title
       })
-    }, "external_link_".concat(l.route)) : null != l.route ? (0, r.jsx)("li", {
-      className: e(l.route) ? n.listItemActive : n.listItemInactive,
+    }, "external_link_".concat(e.route)) : null != e.route ? (0, r.jsx)("li", {
+      className: t(e.route) ? s.listItemActive : s.listItemInactive,
       role: "none",
       children: (0, r.jsx)(i.Z, {
-        avoidRouter: u,
-        to: l.route,
+        avoidRouter: N,
+        to: e.route,
         from: c.j_.MAIN_NAVIGATION_MENU,
-        tabIndex: a ? 0 : false,
+        tabIndex: n ? 0 : false,
         role: "menuitem",
-        children: (0, r.jsx)(s, {
+        children: (0, r.jsx)(u, {
           tag: "span",
-          className: n.mainNavLink,
+          className: s.mainNavLink,
           eventName: _,
           data: {
-            linkClicked: l.linkClicked
+            linkClicked: e.linkClicked
           },
-          children: l.title
+          children: e.title
         })
       })
-    }, "link_".concat(l.route)) : [])
+    }, "link_".concat(e.route)) : [])
   }
   constructor(...e) {
     super(...e), u(this, "state", {
@@ -173,7 +172,7 @@ class m extends(n = Chunk73800.PureComponent) {
     })
   }
 }
-u(m, "defaultProps", {
+u(N, "defaultProps", {
   isMobile: false,
   isVisible: true
 })

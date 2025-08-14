@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk618158 = require("./618158.jsx"),
   Chunk362267 = require("./362267.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk973962 = require("./973962.js");
+  Chunk119421 = require("./119421.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -173,28 +173,28 @@ function I(e) {
   })
 }
 let T = {
-    disconnect: Chunk973962.disconnect,
-    join: Chunk973962.join,
-    red: Chunk973962.red,
-    white: Chunk973962.white,
-    green: Chunk973962.green,
-    yellow: Chunk973962.yellow,
-    primaryDark: Chunk973962.primaryDark,
-    primaryLight: Chunk973962.primaryDark,
-    activeLight: Chunk973962.activeLight,
-    premiumGradient: Chunk973962.premiumGradient
+    disconnect: Chunk119421.disconnect,
+    join: Chunk119421.join,
+    red: Chunk119421.red,
+    white: Chunk119421.white,
+    green: Chunk119421.green,
+    yellow: Chunk119421.yellow,
+    primaryDark: Chunk119421.primaryDark,
+    primaryLight: Chunk119421.primaryDark,
+    activeLight: Chunk119421.activeLight,
+    premiumGradient: Chunk119421.premiumGradient
   },
   S = {
-    disconnect: Chunk973962.disconnect,
-    join: Chunk973962.join,
-    red: Chunk973962.redGlow,
-    white: Chunk973962.white,
-    green: Chunk973962.greenGlow,
-    yellow: Chunk973962.yellow,
-    primaryDark: Chunk973962.primaryDark,
-    primaryLight: Chunk973962.primaryDark,
-    activeLight: Chunk973962.activeLight,
-    premiumGradient: Chunk973962.premiumGradient
+    disconnect: Chunk119421.disconnect,
+    join: Chunk119421.join,
+    red: Chunk119421.redGlow,
+    white: Chunk119421.white,
+    green: Chunk119421.greenGlow,
+    yellow: Chunk119421.yellow,
+    primaryDark: Chunk119421.primaryDark,
+    primaryLight: Chunk119421.primaryDark,
+    activeLight: Chunk119421.activeLight,
+    premiumGradient: Chunk119421.premiumGradient
   };
 
 function A(e) {
@@ -220,15 +220,15 @@ function A(e) {
   i.useEffect(() => {
     null != x.current && (M ? x.current.pause() : x.current.play())
   }, [M]);
-  let j = null != (t = P.onContextMenu) ? t : v,
-    k = null == v && !C,
+  let k = null != (t = P.onContextMenu) ? t : v,
+    j = null == v && !C,
     U = null != v && !C,
     G = C && null != v,
     B = (0, r.jsx)(I, y(E({}, P), {
       grow: false,
-      onContextMenu: j,
-      iconClassName: a()(b, m.centerIcon, k && m.fullRegionIcon),
-      className: a()(L || R ? g : null, l && m.active, m.centerButton, S[w], k && m.fullRegionButton, G && m.attachedButton)
+      onContextMenu: k,
+      iconClassName: a()(b, m.centerIcon, j && m.fullRegionIcon),
+      className: a()(L || R ? g : null, l && m.active, m.centerButton, S[w], j && m.fullRegionButton, G && m.attachedButton)
     }));
   return L ? B : (0, r.jsxs)("div", {
     ref: n,

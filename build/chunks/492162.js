@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 492162, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk442837 = require("./442837.js"),
   Chunk592125 = require("./592125.js"),
@@ -9,9 +9,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk853856 = require("./853856.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e) {
+function s(e) {
   return (0, r.cj)([l.ZP, i.Z, o.Z], () => {
-    if (e !== s.I_8) return l.ZP.getVoiceStates(e);
+    if (e !== a.I_8) return l.ZP.getVoiceStates(e);
     let t = o.Z.getFavoriteChannels(),
       n = {};
     for (let e in t) {

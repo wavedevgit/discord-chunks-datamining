@@ -1,4 +1,4 @@
-/** Chunk was on 873 **/
+/** Chunk was on 1355 **/
 /** chunk id: 370595, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -8,13 +8,13 @@ require("./73800.js");
 var Chunk481060 = require("./481060.js"),
   Chunk50493 = require("./50493.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk21678 = require("./21678.js"),
-  Chunk983843 = require("./983843.js");
+  Chunk220512 = require("./220512.js"),
+  Chunk87819 = require("./87819.js");
 
 function u(e) {
   let {
     onNavigate: t,
-    backPanel: n = s.k.INFO
+    backPanel: n = i.k.INFO
   } = e;
   return (0, r.jsxs)("div", {
     className: o.header,
@@ -29,7 +29,7 @@ function u(e) {
           height: 20
         }), (0, r.jsx)(l.X6q, {
           variant: "heading-md/semibold",
-          children: i.intl.string(i.t["13/7kZ"])
+          children: s.intl.string(s.t["13/7kZ"])
         })]
       })
     }), (0, r.jsx)(l.M2$, {

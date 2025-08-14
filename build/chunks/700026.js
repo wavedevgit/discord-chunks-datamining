@@ -1,8 +1,8 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 700026, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   V5: () => c,
-  ie: () => a
+  ie: () => s
 });
 var Chunk680089 = require("./680089.js"),
   Chunk496675 = require("./496675.js"),
@@ -10,7 +10,7 @@ var Chunk680089 = require("./680089.js"),
   Chunk443063 = require("./443063.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t, n) {
+function s(e, t, n) {
   return {
     hasDivider: ! function(e, t) {
       if (t === l.wZ) {
@@ -39,7 +39,7 @@ function c(e) {
     } = e;
     returntrue !== r.Z.isCollapsed(t.record.id) ? [] : t.getChannelRecords().filter(e => {
       var t;
-      if (!i.Z.can(s.Plq.VIEW_CHANNEL, e)) returnfalse;
+      if (!i.Z.can(a.Plq.VIEW_CHANNEL, e)) returnfalse;
       let r = null != (t = n[e.id]) ? t : [];
       return e.id !== o && e.id !== l && r.length > 0
     })

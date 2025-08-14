@@ -2,7 +2,7 @@
 /** chunk id: 263059, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./35282.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -34,7 +34,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk666984 = require("./666984.jsx"),
   Chunk386019 = require("./386019.jsx"),
   Chunk228168 = require("./228168.js"),
-  Chunk861242 = require("./861242.js");
+  Chunk704543 = require("./704543.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,14 +58,14 @@ function M(e) {
   return e
 }
 
-function j(e) {
+function k(e) {
   var t;
   let {
     user: n,
     currentUser: o,
     activity: x,
-    profileGuildId: j,
-    className: k,
+    profileGuildId: k,
+    className: j,
     onClose: U
   } = e, G = (0, p.Dt)(), B = (0, p.Dt)(), Z = i.useRef(null), {
     themeType: F
@@ -144,7 +144,7 @@ function j(e) {
       user: n,
       children: (0, r.jsx)(O.Z, {
         user: n,
-        guildId: j,
+        guildId: k,
         themeType: F,
         sourceId: et,
         sourceDetails: null == Y ? (0, b.Z)(x) : null,
@@ -171,7 +171,7 @@ function j(e) {
           }),
           children: (0, r.jsxs)(A.Z, {
             ref: Q,
-            className: a()(k, {
+            className: a()(j, {
               [L.hoisted]: en
             }),
             onAction: X,

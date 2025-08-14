@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 52538, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -10,19 +10,19 @@ var Chunk704215 = require("./704215.js"),
   Chunk16703 = require("./16703.js"),
   Chunk300284 = require("./300284.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk157768 = require("./157768.js");
+  Chunk258948 = require("./258948.js");
 let d = () => {
   let e = (0, Chunk16703.Z)(),
     t = (0, Chunk300284.Z)({
       guild: module
     });
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk157768.wrapper,
+    className: Chunk258948.wrapper,
     children: (0, Chunk255367.jsx)(Chunk765585.Z, {
       isPremiumFeature: true,
       shouldUseHorizontalButtons: true,
-      artClassName: Chunk157768.coachmarkArt,
-      headerClassName: Chunk157768.coachmarkHeader,
+      artClassName: Chunk258948.coachmarkArt,
+      headerClassName: Chunk258948.coachmarkHeader,
       onTryFeature: exports,
       tryItText: Chunk388032.intl.string(Chunk388032.t.RzWDqa),
       header: Chunk388032.intl.string(Chunk388032.t.IIpTub),

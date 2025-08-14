@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk58755 = require("./58755.jsx"),
   Chunk246992 = require("./246992.js"),
   Chunk500949 = require("./500949.js"),
-  Chunk518109 = require("./518109.js");
+  Chunk416825 = require("./416825.js");
 
 function _(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -133,15 +133,15 @@ function E() {
       return "\n      :root {\n        ".concat(Chunk255367, "\n      }\n\n      .theme-").concat(module, " {\n        ").concat(exports.join("\n"), "\n      }\n\n      html {\n        ").concat(require.join("\n"), "\n      }\n    ")
     }, [C, E, Chunk246992, module]);
   return (0, Chunk255367.jsxs)("div", {
-    className: Chunk518109.panel,
+    className: Chunk416825.panel,
     children: [(0, Chunk255367.jsxs)("div", {
-      className: Chunk518109.toolbar,
+      className: Chunk416825.toolbar,
       style: {
         "--custom-theme-selection-selection-size": "40px",
         "--custom-theme-selection-group-column-gap": "var(--spacing-8)"
       },
       children: [(0, Chunk255367.jsxs)(Chunk481060.njP, {
-        className: Chunk518109.tabBar,
+        className: Chunk416825.tabBar,
         type: "top",
         look: "brand",
         selectedItem: O,
@@ -160,11 +160,11 @@ function E() {
       }), (0, Chunk255367.jsx)(Chunk705262.ZP, {
         type: Chunk705262.yH.SETTINGS,
         children: (0, Chunk255367.jsx)(Chunk705262.ZP.Basic, {
-          className: Chunk518109.toolbarThemeSelector,
+          className: Chunk416825.toolbarThemeSelector,
           hideSystemSelector: true
         })
       }), (0, Chunk255367.jsxs)("div", {
-        className: Chunk518109.toolbarButtons,
+        className: Chunk416825.toolbarButtons,
         children: [(0, Chunk255367.jsx)(Chunk755721.zx, {
           size: Chunk755721.zx.Sizes.ICON,
           color: Chunk755721.zx.Colors.TRANSPARENT,
@@ -214,14 +214,14 @@ function E() {
         })]
       })]
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk518109.tab,
+      className: Chunk416825.tab,
       hidden: O !== Chunk500949.H8.TOKENS,
       children: (0, Chunk255367.jsx)(S, {
         state: exports,
         setState: require
       })
     }), (0, Chunk255367.jsx)("div", {
-      className: Chunk518109.tab,
+      className: Chunk416825.tab,
       hidden: O !== Chunk500949.H8.PALETTES,
       children: (0, Chunk255367.jsx)(Chunk58755.P, {
         state: exports,

@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 782691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk373071 = require("./373071.js"),
   Chunk489495 = require("./489495.js"),
   Chunk189 = require("./189.jsx"),
-  Chunk189270 = require("./189270.js"),
+  Chunk558270 = require("./558270.js"),
   Chunk346537 = require("./346537.js"),
   Chunk830318 = require("./830318.js");
 
@@ -64,7 +64,7 @@ let O = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), s = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [S, T] = r.useState(true), I = r.useRef(null), [N, y] = r.useState(false), [A, P] = r.useState(false), [R, D] = r.useState([]), [Z, w] = r.useState(O), k = r.useRef([]), [L, M] = r.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
+    } = (0, h.n6)(), s = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [S, T] = r.useState(true), I = r.useRef(null), [N, y] = r.useState(false), [A, P] = r.useState(false), [R, D] = r.useState([]), [Z, w] = r.useState(O), k = r.useRef([]), [L, B] = r.useState(t.name), M = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
       type: l.Z.PROFILE_EFFECT,
       id: v,
       skuId: v,
@@ -84,24 +84,6 @@ let O = {
           [e]: (0, f.z)(t, n)
         }))
       })
-    }, F = (e, t) => {
-      let n = V(e);
-      null != n && (0, f.i0)(n, e => {
-        D(i => {
-          let r = [...i],
-            s = i[t];
-          if (null == s) return i;
-          let a = E({}, s);
-          return null == a.randomizedSources && (a.randomizedSources = []), a.randomizedSources.push({
-            src: e,
-            filename: n.name
-          }), r[t] = a, r
-        })
-      })
-    }, H = e => {
-      w(t => C(E({}, t), {
-        [e]: null
-      }))
     };
     r.useEffect(() => {
       let e = t.config.effects;
@@ -124,18 +106,18 @@ let O = {
         }
       })
     }, [t.config.stillFrames]);
-    let z = {
+    let F = {
         effect: t,
         upsertConfig: n
       },
-      W = r.useRef(z);
+      H = r.useRef(F);
     return (r.useEffect(() => {
-      W.current = z
+      H.current = F
     }), r.useEffect(() => {
       let {
         effect: e,
         upsertConfig: t
-      } = W.current;
+      } = H.current;
       e.readonly || t({
         id: e.id,
         name: L,
@@ -173,7 +155,7 @@ let O = {
               value: L,
               className: x.input,
               onChange: e => {
-                M(e.target.value)
+                B(e.target.value)
               }
             })]
           }), (0, i.jsxs)("div", {
@@ -274,7 +256,7 @@ let O = {
               children: [(0, i.jsx)(u.Z, {
                 fileContents: () => (0, f.yR)(R),
                 contentType: "text/plain",
-                fileName: "".concat(B, "_timing_config.txt"),
+                fileName: "".concat(M, "_timing_config.txt"),
                 children: (0, i.jsx)(d.zxk, {
                   variant: "primary",
                   size: "sm",
@@ -289,7 +271,7 @@ let O = {
                   })
                 })),
                 contentType: "text/plain",
-                fileName: "".concat(B, "_config.txt"),
+                fileName: "".concat(M, "_config.txt"),
                 children: (0, i.jsx)(d.zxk, {
                   variant: "primary",
                   size: "sm",
@@ -319,7 +301,11 @@ let O = {
                     size: c.Ph.TINY,
                     color: c.Tt.RED,
                     look: c.iL.OUTLINED,
-                    onClick: () => H(t),
+                    onClick: () => {
+                      w(e => C(E({}, e), {
+                        [t]: null
+                      }))
+                    },
                     children: "Clear"
                   })]
                 }, t)
@@ -487,7 +473,21 @@ let O = {
                   children: "Add Alternative"
                 }), (0, i.jsx)(m.Z, {
                   ref: I,
-                  onChange: e => F(e, t),
+                  onChange: e => ((e, t) => {
+                    let n = V(e);
+                    null != n && (0, f.i0)(n, e => {
+                      D(i => {
+                        let r = [...i],
+                          s = i[t];
+                        if (null == s) return i;
+                        let a = E({}, s);
+                        return null == a.randomizedSources && (a.randomizedSources = []), a.randomizedSources.push({
+                          src: e,
+                          filename: n.name
+                        }), r[t] = a, r
+                      })
+                    })
+                  })(e, t),
                   multiple: false
                 })]
               }), (0, i.jsx)(d.zxk, {

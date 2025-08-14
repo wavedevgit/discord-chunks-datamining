@@ -1,7 +1,7 @@
-/** Chunk was on 33784 **/
+/** Chunk was on 28253 **/
 /** chunk id: 596583, original params: e,r,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => B
+  Z: () => O
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -26,13 +26,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk263885 = require("./263885.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk18557 = require("./18557.js");
-let U = (e, r) => {
-    _.Z.hasLayers() && (0, c.xf)(), p.Z.openPrivateChannel({
-      recipientIds: e
-    }), r()
-  },
-  O = e => {
+  Chunk436931 = require("./436931.js");
+let U = e => {
     let {
       user: r,
       trialCreationResult: t,
@@ -43,7 +38,7 @@ let U = (e, r) => {
     } = (0, f.Z)({
       userId: null == r ? true : r.id,
       size: d.EFr.SIZE_56
-    }), n = u.ZP.getName(r), o = r.username !== n && t === j.Fz.SUCCESS, p = t === j.Fz.FAIL;
+    }), n = u.ZP.getName(r), o = r.username !== n && t === j.Fz.SUCCESS, x = t === j.Fz.FAIL;
     return (0, a.jsxs)("div", {
       className: w.referredUserRowContainer,
       children: [(0, a.jsx)(d.qEK, function(e) {
@@ -65,14 +60,14 @@ let U = (e, r) => {
         return e
       }({
         imageClassName: C()({
-          [w.erroredAvatar]: p
+          [w.erroredAvatar]: x
         }),
         src: s,
         "aria-label": n,
         size: d.EFr.SIZE_56
       }, l)), (0, a.jsxs)("div", {
         className: w.referredUserRowBody,
-        children: [p ? (0, a.jsxs)(a.Fragment, {
+        children: [x ? (0, a.jsxs)(a.Fragment, {
           children: [(0, a.jsx)(d.Text, {
             className: w.errorDisplayName,
             variant: "text-md/medium",
@@ -93,7 +88,12 @@ let U = (e, r) => {
               onMouseLeave: C
             } = e;
             return (0, a.jsx)(d.P3F, {
-              onClick: () => U(r.id, i),
+              onClick: () => {
+                var e;
+                return e = r.id, void(_.Z.hasLayers() && (0, c.xf)(), p.Z.openPrivateChannel({
+                  recipientIds: e
+                }), i())
+              },
               className: w.displayNameClickableContainer,
               onMouseEnter: t,
               onMouseLeave: C,
@@ -112,12 +112,12 @@ let U = (e, r) => {
       })]
     })
   },
-  B = e => {
+  O = e => {
     let {
       selectedUsers: r,
       trialCreationResult: t,
       onClose: i
-    } = e, C = [...r].map(e => (0, a.jsx)(O, {
+    } = e, C = [...r].map(e => (0, a.jsx)(U, {
       user: e,
       trialCreationResult: t.get(e.id),
       onClose: i

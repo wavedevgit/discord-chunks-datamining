@@ -61,7 +61,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk616922 = require("./616922.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk50 = require("./50.js");
+  Chunk723295 = require("./723295.js");
 let es = 8;
 
 function el(e) {
@@ -287,12 +287,12 @@ function ep(e) {
     presenceActivity: w
   } = e, L = (0, y.A)(I), x = (0, f.ye)(I), {
     bot: M
-  } = I, j = G.ZP.getApplicationIconURL({
+  } = I, k = G.ZP.getApplicationIconURL({
     id: I.id,
     icon: I.icon,
     bot: M
   }), {
-    staticBannerSrc: k,
+    staticBannerSrc: j,
     videoBannerSrc: U,
     bannerAspectRatio: B
   } = (0, m.E)(I), Z = !(0, Q.Z)(w, C, I.id), F = (0, K.H)(C), W = (0, s.e7)([D.Z], () => D.Z.getGameByName(I.name), [I.name]), {
@@ -409,11 +409,11 @@ function ep(e) {
     return (0, r.jsx)(_.W, {
       header: ey,
       title: I.name,
-      staticBannerSrc: k,
+      staticBannerSrc: j,
       videoBannerSrc: U,
       onClickBanner: eE,
       bannerAspectRatio: B,
-      iconSrc: null != j ? j : true,
+      iconSrc: null != k ? k : true,
       info: e,
       actions: eb,
       onClickContent: eE,
@@ -454,11 +454,11 @@ function ep(e) {
   return (0, r.jsx)(_.W, {
     header: ey,
     title: I.name,
-    staticBannerSrc: k,
+    staticBannerSrc: j,
     videoBannerSrc: U,
     onClickBanner: eE,
     bannerAspectRatio: B,
-    iconSrc: null != j ? j : true,
+    iconSrc: null != k ? k : true,
     info: eA,
     actions: eb,
     onClickContent: eE,
@@ -486,9 +486,9 @@ function eh(e) {
       let e = c.author.id;
       return (0, K.H)(c) && (e = e === _ && l.isPrivate() ? l.getRecipientId() : _), M.Z.getApplicationActivity(e, c.application.id)
     }
-  }, [c, l, _]), m = (0, s.e7)([x.Z, j.Z], () => {
+  }, [c, l, _]), m = (0, s.e7)([x.Z, k.Z], () => {
     var e;
-    return null != (e = x.Z.getApplicationActivity(f.id)) ? e : j.Z.getApplicationActivity(f.id, true)
+    return null != (e = x.Z.getApplicationActivity(f.id)) ? e : k.Z.getApplicationActivity(f.id, true)
   }, [f.id]), g = (0, s.Wu)([w.Z], () => {
     var e;
     return null == p || null == p.party ? [] : Array.from(null != (e = w.Z.getParty(p.party.id)) ? e : [])
@@ -496,7 +496,7 @@ function eh(e) {
     partySize: E,
     maxPartySize: b
   } = (0, q._)(p), y = i.useMemo(() => g.map(e => {
-    let t = k.default.getUser(e);
+    let t = j.default.getUser(e);
     return null != t ? t : et.ag
   }), [g]), O = (0, ei.Ps)(null == p || null == (t = p.party) ? true : t.id) || f.id === C.r9.id, v = (0, r.jsx)(el, {
     partyMembers: y,

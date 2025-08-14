@@ -1,7 +1,7 @@
-/** Chunk was on 8725 **/
+/** Chunk was on 58511 **/
 /** chunk id: 936726, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => S
 }), require("./35282.js"), require("./388685.js"), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk486199 = require("./486199.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk650891 = require("./650891.js");
+  Chunk632256 = require("./632256.js");
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -45,7 +45,7 @@ function N(e) {
   return e
 }
 
-function S(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,39 +57,34 @@ function S(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = e => {
-  if (null == e) return null;
-  let t = new g.Z(e);
-  return v.ZP.getUserTag(t)
-};
 
-function w(e, t) {
+function Z(e, t) {
   return null != t && /^data:/.test(t) ? t : (0, h.ov)({
     id: e.id,
     avatar: t,
-    discriminator: y.fo$
+    discriminator: O.fo$
   })
 }
 
-function Z(e) {
+function S(e) {
   let {
     id: t,
     webhook: n,
     editedWebhook: l,
-    channelOptions: g,
-    isExpanded: h,
-    isNew: v,
-    errors: Z,
-    onToggleExpand: E
-  } = e, [P, T] = r.useState(false), [k] = r.useState(new s.V7);
-  r.useEffect(() => () => k.stop(), [k]);
-  let A = r.useMemo(() => w(n, n.avatar), [n]),
+    channelOptions: h,
+    isExpanded: S,
+    isNew: P,
+    errors: I,
+    onToggleExpand: T
+  } = e, [E, k] = r.useState(false), [A] = r.useState(new s.V7);
+  r.useEffect(() => () => A.stop(), [A]);
+  let D = r.useMemo(() => Z(n, n.avatar), [n]),
     R = r.useCallback(() => {
-      let e = "".concat((0, a.K0)(false)).concat(y.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
+      let e = "".concat((0, a.K0)(false)).concat(O.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, x.JG)(e)
     }, [n]),
-    D = r.useCallback(() => {
-      (0, c.h7j)(e => (0, i.jsx)(c.ConfirmModal, S(N({}, e), {
+    L = r.useCallback(() => {
+      (0, c.h7j)(e => (0, i.jsx)(c.ConfirmModal, w(N({}, e), {
         header: _.intl.formatToPlainString(_.t.QVFjHh, {
           name: n.name
         }),
@@ -117,21 +112,25 @@ function Z(e) {
         })
       })))
     }, [n.guild_id, n.id, n.name]),
-    L = [];
-  null != n.user ? L.push({
+    M = [];
+  null != n.user ? M.push({
     icon: c.T39,
     text: _.intl.formatToPlainString(_.t["7EcUbm"], {
-      user: I(n.user),
+      user: (e => {
+        if (null == e) return null;
+        let t = new g.Z(e);
+        return v.ZP.getUserTag(t)
+      })(n.user),
       timestamp: j.default.extractTimestamp(n.id)
     })
-  }) : L.push({
+  }) : M.push({
     icon: c.T39,
     text: _.intl.formatToPlainString(_.t["7mv59P"], {
       timestamp: j.default.extractTimestamp(n.id)
     })
   });
-  let M = null;
-  return h && null != l && (M = (0, i.jsxs)("div", {
+  let B = null;
+  return S && null != l && (B = (0, i.jsxs)("div", {
     className: C.body,
     children: [(0, i.jsx)(c.$i$, {
       className: C.topDivider
@@ -149,13 +148,13 @@ function Z(e) {
                 avatar: e
               })
             },
-            makeURL: e => w(n, e),
+            makeURL: e => Z(n, e),
             imageClassName: C.avatarUploaderInner,
             showIcon: true
-          }), null != Z.avatar && "" !== Z.avatar ? (0, i.jsx)(c.Text, {
+          }), null != I.avatar && "" !== I.avatar ? (0, i.jsx)(c.Text, {
             color: "text-danger",
             variant: "text-sm/normal",
-            children: Z.avatar
+            children: I.avatar
           }) : null]
         })
       }), (0, i.jsxs)(m.Z, {
@@ -173,7 +172,7 @@ function Z(e) {
                   })
                 },
                 maxLength: 80,
-                error: Z.name
+                error: I.name
               })
             })
           }), (0, i.jsx)(m.Z.Child, {
@@ -182,7 +181,7 @@ function Z(e) {
               title: _.intl.string(_.t.GK18KC),
               children: (0, i.jsx)(c.VcW, {
                 value: l.channel_id,
-                options: g,
+                options: h,
                 onChange: e => {
                   u.Z.updateWebhook({
                     channelId: e
@@ -197,7 +196,7 @@ function Z(e) {
         }), (0, i.jsxs)(m.Z, {
           children: [(0, i.jsx)(c.ua7, {
             text: _.intl.string(_.t.wwdb3t),
-            forceOpen: P,
+            forceOpen: E,
             color: c.FGA.GREEN,
             disableTooltipPointerEvents: true,
             children: e => {
@@ -225,14 +224,14 @@ function Z(e) {
               return (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": true,
                 className: C.copyButton,
-                children: (0, i.jsx)(c.zxk, S(N({
+                children: (0, i.jsx)(c.zxk, w(N({
                   variant: "secondary",
                   size: "sm",
                   text: _.intl.string(_.t.Ae9rUV)
                 }, s), {
                   "aria-label": "",
                   onClick: () => {
-                    null == t || t(), T(true), c.uvj.announce(_.intl.string(_.t.wwdb3t)), k.start(1e3, () => T(false)), R()
+                    null == t || t(), k(true), c.uvj.announce(_.intl.string(_.t.wwdb3t)), A.start(1e3, () => k(false)), R()
                   },
                   disabled: null == n.token || "" === n.token
                 }))
@@ -242,7 +241,7 @@ function Z(e) {
             variant: "critical-secondary",
             size: "sm",
             text: _.intl.string(_.t.jVrUnJ),
-            onClick: D
+            onClick: L
           })]
         })]
       })]
@@ -250,26 +249,26 @@ function Z(e) {
   })), (0, i.jsx)(c.Zbd, {
     editable: true,
     id: t,
-    className: o()(C.card, v ? C.pulse : null),
+    className: o()(C.card, P ? C.pulse : null),
     children: (0, i.jsxs)(m.Z, {
       direction: m.Z.Direction.VERTICAL,
       children: [(0, i.jsx)(c.P3F, {
         className: C.header,
-        "aria-expanded": h,
-        onClick: E,
+        "aria-expanded": S,
+        onClick: T,
         children: (0, i.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
-          children: [(0, i.jsx)(O.Z, {
+          children: [(0, i.jsx)(y.Z, {
             name: n.name,
-            imageSrc: A,
-            details: L
+            imageSrc: D,
+            details: M
           }), (0, i.jsx)(f.Z, {
             className: C.expandIcon,
-            expanded: h,
+            expanded: S,
             "aria-hidden": true
           })]
         })
-      }), M]
+      }), B]
     })
   })
 }

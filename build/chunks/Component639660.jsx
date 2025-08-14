@@ -18,16 +18,16 @@ var Chunk255367 = require("./255367.js"),
   Chunk385902 = require("./385902.js"),
   Chunk234368 = require("./234368.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk93841 = require("./93841.js"),
+  Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk695124 = require("./695124.js");
+  Chunk547885 = require("./547885.js");
 
 function j() {
   return (0, Chunk255367.jsx)("div", {
-    className: Chunk695124.staffContainer,
+    className: Chunk547885.staffContainer,
     children: (0, Chunk255367.jsx)(Chunk793030.xv, {
       variant: "text-sm/medium",
-      children: Chunk388032.intl.string(Chunk93841.default.l9n4QU)
+      children: Chunk388032.intl.string(Chunk989308.default.l9n4QU)
     })
   })
 }

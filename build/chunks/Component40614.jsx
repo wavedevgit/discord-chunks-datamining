@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 40614, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   V: () => _
@@ -14,9 +14,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk695346 = require("./695346.js"),
   Chunk885110 = require("./885110.js"),
   Chunk316496 = require("./316496.js"),
-  Chunk29953 = require("./29953.js"),
+  Chunk933554 = require("./933554.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk898344 = require("./898344.js");
+  Chunk973543 = require("./973543.js");
 
 function b(e) {
   let {
@@ -38,13 +38,13 @@ function O(e) {
   var t;
   let {
     onClick: n
-  } = e, h = (0, l.e7)([s.Z], () => s.Z.getFakeGameData()), p = (0, l.e7)([u.ZP], () => u.ZP.getVisibleGame()), b = null != (t = null == h ? true : h.start) ? t : null == p ? true : p.start, O = d.SE.useSetting().length > 0, {
+  } = e, p = (0, l.e7)([a.Z], () => a.Z.getFakeGameData()), f = (0, l.e7)([u.ZP], () => u.ZP.getVisibleGame()), b = null != (t = null == p ? true : p.start) ? t : null == f ? true : f.start, O = d.SE.useSetting().length > 0, {
     now: _
-  } = (0, a.tS)(), y = (0, i.useMemo)(() => null == b ? null : (0, c.T_)({
+  } = (0, s.tS)(), y = (0, i.useMemo)(() => null == b ? null : (0, c.T_)({
     start: b
   }, _), [b, _]);
   if (null == b) return null;
-  let C = [...O ? [g.intl.string(f.default.jfDsyM)] : [], g.intl.string(g.t.BMTj29), y];
+  let v = [...O ? [g.intl.string(h.default.jfDsyM)] : [], g.intl.string(g.t.BMTj29), y];
   return (0, r.jsx)(o.P3F, {
     className: m.container,
     onClick: n,
@@ -53,7 +53,7 @@ function O(e) {
       variant: "text-xs/medium",
       color: "text-feedback-positive",
       lineClamp: 1,
-      children: C.join(" \xb7 ")
+      children: v.join(" \xb7 ")
     })
   })
 }
@@ -64,8 +64,8 @@ function _(e) {
   } = e, {
     isEnabled: n,
     showActivitySharingIndicatorWhenSharing: i
-  } = (0, p.D)("not sharing link"), s = d.G6.useSetting(), a = (0, l.e7)([h.Z], () => h.Z.getStatus());
-  return !n || __OVERLAY__ ? null : s && a !== o.Skl.INVISIBLE ? i ? (0, r.jsx)(O, {
+  } = (0, f.D)("not sharing link"), a = d.G6.useSetting(), s = (0, l.e7)([p.Z], () => p.Z.getStatus());
+  return !n || __OVERLAY__ ? null : a && s !== o.Skl.INVISIBLE ? i ? (0, r.jsx)(O, {
     onClick: t
   }) : null : (0, r.jsx)(b, {
     onClick: t

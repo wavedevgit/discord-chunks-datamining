@@ -1,7 +1,7 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 616032, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -12,15 +12,15 @@ var Chunk255367 = require("./255367.js"),
   Chunk213609 = require("./213609.js"),
   Chunk441358 = require("./441358.jsx"),
   Chunk426521 = require("./426521.jsx"),
-  Chunk539391 = require("./539391.js");
+  Chunk837284 = require("./837284.js");
 
-function p(e) {
+function f(e) {
   let {
     initialized: t,
     items: n,
-    loading: p,
-    loadMore: f
-  } = e, g = i.useRef(null), m = (0, a.Z)("for-you", g);
+    loading: f,
+    loadMore: h
+  } = e, g = i.useRef(null), m = (0, s.Z)("for-you", g);
   (0, c.Z)({
     type: l.ImpressionTypes.VIEW,
     name: l.ImpressionNames.NOTIFICATION_CENTER_LANDING,
@@ -33,7 +33,7 @@ function p(e) {
   let b = () => {
     var e;
     let t = null == (e = g.current) ? true : e.getScrollerState();
-    null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 1500 && f()
+    null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 1500 && h()
   };
   return t ? 0 === n.length ? (0, r.jsx)(u.v, {}) : (0, r.jsx)(o.bG, {
     navigator: m,
@@ -57,7 +57,7 @@ function p(e) {
             }
             return i
           }(e, ["ref"]);
-        return (0, r.jsxs)(s.Den, (t = function(e) {
+        return (0, r.jsxs)(a.Den, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -75,7 +75,7 @@ function p(e) {
           }
           return e
         }({
-          className: h.container,
+          className: p.container,
           ref: e => {
             var t;
             g.current = e, l.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
@@ -84,8 +84,8 @@ function p(e) {
           onScroll: b,
           children: [(0, r.jsx)(d.U, {
             items: n
-          }), p ? (0, r.jsx)(s.$jN, {
-            className: h.spinner
+          }), f ? (0, r.jsx)(a.$jN, {
+            className: p.spinner
           }) : null]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
@@ -99,7 +99,7 @@ function p(e) {
         }), t))
       }
     })
-  }) : (0, r.jsx)(s.$jN, {
-    className: h.loadingPlaceholder
+  }) : (0, r.jsx)(a.$jN, {
+    className: p.loadingPlaceholder
   })
 }

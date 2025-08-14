@@ -1,7 +1,7 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 359138, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => u
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -10,32 +10,28 @@ var Chunk255367 = require("./255367.js"),
   Chunk747545 = require("./747545.jsx"),
   Chunk131951 = require("./131951.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk944856 = require("./944856.js");
-let u = {
-  width: 387,
-  height: 218
-};
+  Chunk766625 = require("./766625.js");
 
-function m() {
+function u() {
   let e = Chunk131951.Z.getCameraComponent(),
     t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getVideoDeviceId()),
-    [n, m] = Chunk73800.useState(false),
-    p = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isVideoAvailable());
+    [n, u] = Chunk73800.useState(false),
+    m = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isVideoAvailable());
   return require ? (0, Chunk255367.jsx)("div", {
-    className: Chunk944856.cameraWrapper,
+    className: Chunk766625.cameraWrapper,
     children: (0, Chunk255367.jsxs)("div", {
-      className: Chunk944856.camera,
+      className: Chunk766625.camera,
       children: [(0, Chunk255367.jsx)(module, {
         deviceId: exports,
-        width: u.width,
-        height: u.height,
+        width: 387,
+        height: 218,
         disabled: !require
       }), (0, Chunk255367.jsx)(Chunk747545.S, {})]
     })
   }) : (0, Chunk255367.jsx)("div", {
-    className: Chunk944856.cameraWrapper,
+    className: Chunk766625.cameraWrapper,
     children: (0, Chunk255367.jsx)(Chunk481060.ua7, {
-      text: p ? null : Chunk388032.intl.string(Chunk388032.t["8jSzSU"]),
+      text: m ? null : Chunk388032.intl.string(Chunk388032.t["8jSzSU"]),
       children: e => {
         var t, n;
         return (0, i.jsx)(a.zxk, (t = function(e) {
@@ -59,8 +55,8 @@ function m() {
           variant: "primary",
           text: c.intl.string(c.t.JIf4v7)
         }, e), n = n = {
-          onClick: () => m(true),
-          disabled: !p
+          onClick: () => u(true),
+          disabled: !m
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

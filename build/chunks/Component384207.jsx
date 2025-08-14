@@ -9,12 +9,12 @@ var Chunk646466 = require("./646466.jsx"),
   Chunk484486 = require("./484486.jsx"),
   Chunk812381 = require("./812381.jsx"),
   Chunk511010 = require("./511010.jsx"),
-  Chunk398259 = require("./398259.js");
+  Chunk809863 = require("./809863.js");
 let c = () => (0, Chunk255367.jsxs)("div", {
-  className: Chunk398259.previewPanel,
+  className: Chunk809863.previewPanel,
   children: [(0, Chunk255367.jsx)(Chunk812381.a, {}), (0, Chunk255367.jsx)(Chunk511010.Z, {
-    className: Chunk398259.divider
+    className: Chunk809863.divider
   }), (0, Chunk255367.jsx)(Chunk484486.Z, {}), (0, Chunk255367.jsx)(Chunk511010.Z, {
-    className: Chunk398259.divider
+    className: Chunk809863.divider
   }), (0, Chunk255367.jsx)(Chunk646466.O, {})]
 })

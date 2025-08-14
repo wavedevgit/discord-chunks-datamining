@@ -36,7 +36,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk963588 = require("./963588.js");
+  Chunk512746 = require("./512746.js");
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -47,7 +47,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ function j(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -72,7 +72,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -120,7 +120,7 @@ class H extends Chunk73800.PureComponent {
         selected: a
       }
     } = this, l = this.isSelectable();
-    return (0, i.jsx)(f.P3F, U(j({}, e), {
+    return (0, i.jsx)(f.P3F, U(k({}, e), {
       className: s()(x.clickable, r, n),
       id: null != (t = Z(o)) ? t : true,
       onClick: l ? this.handleClick : true,
@@ -232,7 +232,7 @@ class z extends H {
       className: e
     } = this.props;
     return (0, Chunk255367.jsx)("div", {
-      className: s()(module, Chunk963588.divider)
+      className: s()(module, Chunk512746.divider)
     })
   }
   constructor(...e) {
@@ -266,7 +266,7 @@ class q extends H {
           mode: "username",
           identifiable: Chunk73800 ? "never" : "always"
         }), Chunk73800 || exports.hasUniqueUsername() ? null : (0, Chunk255367.jsxs)("span", {
-          className: Chunk963588.descriptionDiscriminator,
+          className: Chunk512746.descriptionDiscriminator,
           children: ["#", exports.discriminator]
         })]
       })]
@@ -290,14 +290,14 @@ class X extends H {
       useReducedMotion: Chunk607070.Z.useReducedMotion,
       roleStyle: "username",
       includeConvenienceGlow: true
-    }), h = Chunk392711 ? j({}, Chunk91192 ? Chunk446673 : {
+    }), h = Chunk392711 ? k({}, Chunk91192 ? Chunk446673 : {
       color: null != r ? r : true
     }) : true;
     return (0, Chunk255367.jsxs)(Chunk965386.RX, {
       children: [(0, Chunk255367.jsx)(Chunk965386.z5, {
         children: (0, Chunk255367.jsxs)(Chunk965386.BR, {
           children: [Chunk120356 && (0, Chunk255367.jsx)(Chunk481060.FhE, {
-            className: Chunk963588.roleDot,
+            className: Chunk512746.roleDot,
             color: r,
             colors: c,
             tooltip: false
@@ -325,7 +325,7 @@ class Q extends H {
     return (0, Chunk255367.jsxs)(Chunk965386.RX, {
       children: [null != require && (0, Chunk255367.jsx)(Chunk965386.Tw, {
         children: (0, Chunk255367.jsx)(require, {
-          className: Chunk963588.icon
+          className: Chunk512746.icon
         })
       }), (0, Chunk255367.jsx)(Chunk965386.z5, {
         children: (0, Chunk255367.jsx)(Chunk965386.BR, {
@@ -347,8 +347,8 @@ class J extends H {
         children: (0, Chunk255367.jsx)(Chunk481060.XZC, {
           size: "xs",
           color: "currentColor",
-          className: Chunk963588.icon,
-          colorClass: Chunk963588.iconForeground
+          className: Chunk512746.icon,
+          colorClass: Chunk512746.iconForeground
         })
       }), (0, Chunk255367.jsx)(Chunk965386.z5, {
         children: (0, Chunk255367.jsx)(Chunk965386.BR, {
@@ -392,14 +392,14 @@ class ee extends H {
       guild: n
     } = this.props, r = Chunk695346.Yk.getSetting(), o = null != module.id || "" !== module.url ? (0, Chunk255367.jsx)("img", {
       alt: "",
-      className: Chunk963588.emojiImage,
+      className: Chunk512746.emojiImage,
       src: null != module.id ? Chunk768581.ZP.getEmojiURL({
         id: module.id,
         animated: module.animated && r,
         size: Chunk185923.$U
       }) : module.url
     }) : (0, Chunk255367.jsx)("span", {
-      className: Chunk963588.emojiRaw,
+      className: Chunk512746.emojiRaw,
       children: module.surrogates
     }), a = null != require ? (0, Chunk255367.jsx)(Chunk965386.dY, {
       children: require.name
@@ -477,7 +477,7 @@ class er extends H {
 }
 class ei extends H {
   renderContent() {
-    return (0, Chunk255367.jsx)(Chunk887120.Z, j({}, this.props))
+    return (0, Chunk255367.jsx)(Chunk887120.Z, k({}, this.props))
   }
 }
 class eo extends H {
@@ -486,7 +486,7 @@ class eo extends H {
       game: e
     } = this.props, t = (0, Chunk255367.jsx)("img", {
       alt: "",
-      className: Chunk963588.icon,
+      className: Chunk512746.icon,
       src: Chunk768581.ZP.getApplicationIconURL({
         id: module.id,
         icon: module.icon,
@@ -519,9 +519,9 @@ class ea extends(r = Chunk73800.PureComponent) {
         id: null != Chunk120356 ? Chunk120356 : ""
       },
       children: (0, Chunk255367.jsx)("div", {
-        className: s()(Chunk963588.autocomplete, require),
-        children: (0, Chunk255367.jsx)("div", U(j({
-          className: s()(Chunk963588.autocompleteInner, r)
+        className: s()(Chunk512746.autocomplete, require),
+        children: (0, Chunk255367.jsx)("div", U(k({
+          className: s()(Chunk512746.autocompleteInner, r)
         }, Chunk392711), {
           children: exports
         }))

@@ -1,4 +1,4 @@
-/** Chunk was on 9646 **/
+/** Chunk was on 46290 **/
 /** chunk id: 293224, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => eh,
@@ -62,7 +62,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk810632 = require("./810632.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk552400 = require("./552400.js");
+  Chunk131714 = require("./131714.js");
 
 function ei(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -303,35 +303,33 @@ function es(e) {
     locked: l
   } = e, a = r.useRef(null), s = (0, o.e7)([G.Z], () => G.Z.isVideoEnabled()), c = (0, o.e7)([G.Z], () => Object.values(G.Z.getVideoDevices())[0]), f = null == (t = null == c ? true : c.disabled) || t, h = false === f, m = (0, T.Z)(n), g = e => {
     p.Z.setVideoEnabled(e)
-  }, y = () => {
-    h ? g(true) : (0, L.Z)()
-  }, O = e => t => {
+  }, y = e => t => {
     e(t), (0, X.Ws)(ee.Odu.QUICK_ACTIONS, {
       type: X.Qu.CAMERA,
       value: X.bk.SETTINGS_OPENED
     })
-  }, b = () => {
-    f ? y() : g(!s), (0, X.Ws)(ee.Odu.QUICK_ACTIONS, {
+  }, O = () => {
+    f ? h ? g(true) : (0, L.Z)() : g(!s), (0, X.Ws)(ee.Odu.QUICK_ACTIONS, {
       type: X.Qu.CAMERA,
       value: s ? X.bk.DISABLED : X.bk.ENABLED,
       userId: W.default.getId()
     })
   }, {
-    Component: E,
-    play: _,
+    Component: b,
+    play: E,
     events: {
-      onMouseEnter: x,
-      onMouseLeave: S
+      onMouseEnter: _,
+      onMouseLeave: x
     }
-  } = (0, u.o)(s ? "disable" : "enable"), I = null != n ? (0, k.X)({
+  } = (0, u.o)(s ? "disable" : "enable"), S = null != n ? (0, k.X)({
     enabled: s,
     cameraUnavailable: f,
     hasPermission: m,
     channel: n
   }) : true;
-  r.useEffect(() => () => _(), [s, _]);
-  let j = er(l),
-    C = null == n || !m;
+  r.useEffect(() => () => E(), [s, E]);
+  let I = er(l),
+    j = null == n || !m;
   return (0, i.jsx)(d.yRy, {
     targetElementRef: a,
     renderPopout: e => {
@@ -339,7 +337,7 @@ function es(e) {
         closePopout: t
       } = e;
       return (0, i.jsx)(v.Z, {
-        onClose: j(t),
+        onClose: I(t),
         appContext: ee.IlC.OVERLAY
       })
     },
@@ -354,17 +352,17 @@ function es(e) {
       } = t;
       return (0, i.jsx)(eo, {
         ref: a,
-        iconComponent: E,
-        tooltip: I,
-        onClick: b,
+        iconComponent: b,
+        tooltip: S,
+        onClick: O,
         isActive: s,
         highlightedColor: "green",
-        onPopoutClick: O(n),
+        onPopoutClick: y(n),
         popoutOpen: r,
-        onContextMenu: O(n),
-        onMouseEnter: x,
-        onMouseLeave: S,
-        disabled: C,
+        onContextMenu: y(n),
+        onMouseEnter: _,
+        onMouseLeave: x,
+        disabled: j,
         isTrayButton: true
       })
     }

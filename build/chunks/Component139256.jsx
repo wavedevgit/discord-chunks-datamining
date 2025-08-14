@@ -2,7 +2,7 @@
 /** chunk id: 139256, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $e: () => j,
+  $e: () => k,
   $w: () => Z,
   Og: () => V,
   ZY: () => F,
@@ -30,7 +30,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk65145 = require("./65145.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk668464 = require("./668464.js");
+  Chunk313464 = require("./313464.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -176,7 +176,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     answers: t,
     answersInteraction: n,
@@ -214,7 +214,7 @@ function j(e) {
   }));
   return (0, r.jsx)(d, {
     className: l,
-    children: t.map((e, t) => (0, r.jsx)(k, {
+    children: t.map((e, t) => (0, r.jsx)(j, {
       className: c,
       answer: e,
       isFirstAnswer: 0 === t,
@@ -226,7 +226,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     className: t,
     answer: n,

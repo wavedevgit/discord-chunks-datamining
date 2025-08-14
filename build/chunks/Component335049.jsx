@@ -1,7 +1,7 @@
-/** Chunk was on 8725 **/
+/** Chunk was on 58511 **/
 /** chunk id: 335049, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => S
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -25,9 +25,9 @@ var Chunk255367 = require("./255367.js"),
   Chunk51144 = require("./51144.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk199159 = require("./199159.js");
+  Chunk243226 = require("./243226.js");
 
-function S(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -46,7 +46,7 @@ function S(e) {
   return e
 }
 
-function I(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function I(e, t) {
   }), e
 }
 
-function w(e) {
+function S(e) {
   let {
     guild: t,
     id: l,
@@ -73,7 +73,7 @@ function w(e) {
       let {
         default: e
       } = await n.e("5396").then(n.bind(n, 731646));
-      return t => (0, i.jsx)(e, I(S({}, t), {
+      return t => (0, i.jsx)(e, Z(w({}, t), {
         id: l,
         label: C.intl.string(C.t.oJ1Mu7)
       }))
@@ -81,7 +81,7 @@ function w(e) {
   }, [l]);
   switch (o) {
     case p.Kw.CHANNEL:
-      return (0, i.jsx)(Z, {
+      return (0, i.jsx)(P, {
         guild: t,
         id: l,
         isLocked: a,
@@ -89,7 +89,7 @@ function w(e) {
         openEntryContextMenu: m
       });
     case p.Kw.ROLE:
-      return (0, i.jsx)(E, {
+      return (0, i.jsx)(I, {
         guild: t,
         id: l,
         isLocked: a,
@@ -97,7 +97,7 @@ function w(e) {
         openEntryContextMenu: m
       });
     case p.Kw.USER:
-      return (0, i.jsx)(P, {
+      return (0, i.jsx)(T, {
         guild: t,
         id: l,
         isLocked: a,
@@ -107,7 +107,7 @@ function w(e) {
   }
 }
 
-function Z(e) {
+function P(e) {
   let {
     guild: t,
     id: n,
@@ -151,13 +151,13 @@ function Z(e) {
       className: N.tag,
       variant: "text-sm/normal",
       children: ["(", f, ")"]
-    }) : null, l ? (0, i.jsx)(T, {
+    }) : null, l ? (0, i.jsx)(E, {
       tooltipText: a
     }) : null]
   })
 }
 
-function E(e) {
+function I(e) {
   var t;
   let {
     guild: l,
@@ -173,7 +173,7 @@ function E(e) {
       let {
         default: e
       } = await n.e("14486").then(n.bind(n, 786746));
-      return t => (0, i.jsx)(e, I(S({}, t), {
+      return t => (0, i.jsx)(e, Z(w({}, t), {
         guild: l,
         role: m
       }))
@@ -182,7 +182,7 @@ function E(e) {
   return (null == m ? true : m.name) == null ? null : (0, i.jsxs)("div", {
     onContextMenu: h,
     className: N.identifier,
-    children: [null != b ? (0, i.jsx)(g.Z, S({
+    children: [null != b ? (0, i.jsx)(g.Z, w({
       className: o()(N.__invalid_icon, N.image)
     }, b)) : (0, i.jsx)(d.lZ8, {
       size: "custom",
@@ -195,20 +195,20 @@ function E(e) {
       color: "header-primary",
       variant: "text-md/normal",
       children: m.name
-    }), s ? (0, i.jsx)(T, {
+    }), s ? (0, i.jsx)(E, {
       tooltipText: p
     }) : null]
   })
 }
 
-function P(e) {
+function T(e) {
   let {
     guild: t,
     id: n,
     isLocked: r,
     lockTooltipText: l,
     openEntryContextMenu: o
-  } = e, a = (0, c.e7)([O.default], () => O.default.getUser(n)), s = (0, c.e7)([x.ZP], () => {
+  } = e, a = (0, c.e7)([y.default], () => y.default.getUser(n)), s = (0, c.e7)([x.ZP], () => {
     var e;
     return null == (e = x.ZP.getMember(t.id, n)) ? true : e.nick
   }, [t.id, n]), u = (0, c.e7)([v.Z], () => v.Z.hidePersonalInformation);
@@ -228,20 +228,20 @@ function P(e) {
     }), u ? null : (0, i.jsx)(d.Text, {
       className: N.tag,
       variant: "text-sm/normal",
-      children: y.ZP.getUserTag(a)
-    }), r ? (0, i.jsx)(T, {
+      children: O.ZP.getUserTag(a)
+    }), r ? (0, i.jsx)(E, {
       tooltipText: l
     }) : null]
   })
 }
 
-function T(e) {
+function E(e) {
   let {
     tooltipText: t
   } = e;
   return (0, i.jsx)(d.ua7, {
     text: t,
-    children: e => (0, i.jsx)("div", I(S({
+    children: e => (0, i.jsx)("div", Z(w({
       className: N.lockIcon
     }, e), {
       children: (0, i.jsx)(d.mBM, {

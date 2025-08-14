@@ -12,7 +12,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk687683 = require("./687683.js"),
-  Chunk173519 = require("./173519.js");
+  Chunk978070 = require("./978070.js");
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -60,19 +60,6 @@ let g = function(e) {
     I(true), !_ || O || C || null == E || E()
   }, T = () => {
     I(false)
-  }, P = (e, t) => {
-    null != t && (S(true), (0, u.jW)(e, async () => {
-      let {
-        default: e
-      } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
-      return n => (0, r.jsx)(e, h(f({}, n), {
-        user: t
-      }))
-    }, {
-      onClose: () => {
-        S(false)
-      }
-    }))
   };
   return (0, r.jsx)(s.mh, {
     id: m.id,
@@ -86,7 +73,20 @@ let g = function(e) {
           [p.active]: O || C,
           [p.firstItem]: 0 === t
         }),
-        onContextMenu: e => P(e, g),
+        onContextMenu: e => {
+          null != g && (S(true), (0, u.jW)(e, async () => {
+            let {
+              default: e
+            } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
+            return t => (0, r.jsx)(e, h(f({}, t), {
+              user: g
+            }))
+          }, {
+            onClose: () => {
+              S(false)
+            }
+          }))
+        },
         onMouseEnter: N,
         onMouseLeave: T,
         onClick: null != b ? b : true,

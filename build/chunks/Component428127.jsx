@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 428127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk934415 = require("./934415.js"),
   Chunk968847 = require("./968847.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk76260 = require("./76260.js");
+  Chunk74664 = require("./74664.js");
 let b = {
   friction: 30,
   tension: 300
@@ -27,17 +27,17 @@ function O(e) {
   let {
     guildChannels: n,
     jumpToVoiceChannels: l
-  } = e, s = n.getCategoryFromSection(n.voiceChannelsSectionNumber), a = (0, u.Z)(n.id), h = i.useCallback(e => {
+  } = e, a = n.getCategoryFromSection(n.voiceChannelsSectionNumber), s = (0, u.Z)(n.id), p = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), l()
-  }, [l]), f = null != (t = null == s ? true : s.getChannelRecords()) ? t : [], b = (0, p.c4)({
-    channels: f,
+  }, [l]), h = null != (t = null == a ? true : a.getChannelRecords()) ? t : [], b = (0, f.c4)({
+    channels: h,
     selectedChannelId: null,
     selectedVoiceChannelId: null,
-    voiceStates: a
+    voiceStates: s
   });
   return (0, r.jsxs)(c.P3F, {
     className: o()(m.bar, m.voiceBar),
-    onClick: h,
+    onClick: p,
     children: [(0, r.jsx)(c.gj8, {
       size: "custom",
       className: m.voiceChannelsIcon,
@@ -69,34 +69,34 @@ function _(e) {
     jumpToVoiceChannels: u,
     jumpToChannel: d
   } = e, {
-    bottomBar: p,
+    bottomBar: f,
     topBar: _
-  } = (0, a.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), y = (0, a.e7)([h.Z], () => h.Z.isFocused()), {
-    mode: C,
-    mentionCount: v,
-    targetChannelId: j
-  } = "bottom" === t ? p : _, E = C === f.x.HIDDEN, S = (0, c.q_F)({
+  } = (0, s.cj)([h.Z], () => h.Z.getUnreadStateForGuildId(n.id)), y = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
+    mode: v,
+    mentionCount: j,
+    targetChannelId: C
+  } = "bottom" === t ? f : _, E = v === h.x.HIDDEN, x = (0, c.q_F)({
     to: {
       transform: E ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
-  }, y ? "respect-motion-settings" : "animate-never"), x = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null != j && d(j)
-  }, [d, j]);
+  }, y ? "respect-motion-settings" : "animate-never"), S = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), null != C && d(C)
+  }, [d, C]);
   return (0, r.jsx)("div", {
     className: o()(m.container, {
       [m.top]: "top" === t,
       [m.bottom]: "bottom" === t
     }),
-    children: (0, r.jsx)(s.animated.div, {
+    children: (0, r.jsx)(a.animated.div, {
       className: m.containerPadding,
-      style: S,
+      style: x,
       "aria-hidden": E,
-      children: C === f.x.HIDDEN ? (0, r.jsx)("div", {
+      children: v === h.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
-      }) : C === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
+      }) : v === h.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
-        onClick: x,
+        onClick: S,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
           size: "custom",
           color: "currentColor",
@@ -115,18 +115,18 @@ function _(e) {
           className: m.barText,
           children: g.intl.string(g.t.FCRiT0)
         })]
-      }) : C === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
+      }) : v === h.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
-        onClick: x,
+        onClick: S,
         children: (0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
           color: "status-danger-text",
           className: m.barText,
           children: g.intl.format(g.t.EQcLys, {
-            count: v
+            count: j
           })
         })
-      }) : C === f.x.VOICE_CHANNELS ? (0, r.jsx)(O, {
+      }) : v === h.x.VOICE_CHANNELS ? (0, r.jsx)(O, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: l

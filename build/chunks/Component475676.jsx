@@ -23,7 +23,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk701488 = require("./701488.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk860108 = require("./860108.js");
+  Chunk714759 = require("./714759.js");
 
 function I(e) {
   let {
@@ -91,15 +91,15 @@ function S(e) {
     leaderboard: R,
     guildId: C
   });
-  let j = (0, s.q)(null == R || null == (t = R.settings) ? true : t.application_id);
-  if (null == R || null == j) return null;
+  let k = (0, s.q)(null == R || null == (t = R.settings) ? true : t.application_id);
+  if (null == R || null == k) return null;
   if (0 === R.users.length || null == D || null == x) return (0, r.jsx)(A, {
-    application: j,
+    application: k,
     selected: v
   });
   let {
-    sort_by_statistic_id: k
-  } = R.guild_settings, U = null != (b = null == L || null == (f = L.statistics) || null == (n = f[k]) ? true : n.value) ? b : 0, {
+    sort_by_statistic_id: j
+  } = R.guild_settings, U = null != (b = null == L || null == (f = L.statistics) || null == (n = f[j]) ? true : n.value) ? b : 0, {
     currentRank: G
   } = D;
   return y = D.userId === w ? O.intl.formatToPlainString(O.t["eU+JxM"], {
@@ -111,7 +111,7 @@ function S(e) {
     selected: v,
     children: [(0, r.jsxs)(c.e$, {
       children: [(0, r.jsx)(I, {
-        application: j
+        application: k
       }), (0, r.jsx)(a.LZC, {
         size: 2
       }), (0, r.jsx)(c.ll, {
@@ -120,7 +120,7 @@ function S(e) {
         location: l.Gt.CARD,
         children: (0, r.jsx)(m.DC, {
           value: U,
-          statisticId: k
+          statisticId: j
         })
       })]
     }), (0, r.jsx)(g.Z, {

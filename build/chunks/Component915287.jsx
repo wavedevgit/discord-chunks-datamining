@@ -12,7 +12,7 @@ var Chunk255367 = require("./255367.js"),
   l = require.n(Chunk952639),
   Chunk84735 = require("./84735.js"),
   Chunk562701 = require("./562701.js"),
-  Chunk170669 = require("./170669.js");
+  Chunk121958 = require("./121958.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -174,8 +174,8 @@ function v(e, t, n, o) {
       renderRow: L,
       renderFooter: x,
       renderSidebar: M,
-      renderListHeader: j,
-      stickyListHeader: k,
+      renderListHeader: k,
+      stickyListHeader: j,
       wrapSection: U,
       getAnchorId: G,
       paddingTop: B,
@@ -304,8 +304,8 @@ function v(e, t, n, o) {
           containerRef: et,
           children: y({
             items: ec,
-            renderListHeader: j,
-            stickyListHeader: k,
+            renderListHeader: k,
+            stickyListHeader: j,
             renderSection: D,
             renderRow: L,
             renderFooter: x,
@@ -313,7 +313,7 @@ function v(e, t, n, o) {
             spacerTop: es
           })
         })
-      }), [J, W, K, z, q, X, el, Q, ec, j, k, D, L, x, U, es]), i.useMemo(() => O({
+      }), [J, W, K, z, q, X, el, Q, ec, k, j, D, L, x, U, es]), i.useMemo(() => O({
         isSidebarVisible: eu,
         renderSidebar: M,
         sidebarHeight: P,

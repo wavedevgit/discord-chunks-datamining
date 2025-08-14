@@ -94,7 +94,7 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
     },
     async open(e, t, r, i) {
       var o;
-      await Promise.all([n.e("66549"), n.e("1806"), n.e("92078"), n.e("7654"), n.e("94136"), n.e("2686"), n.e("4192"), n.e("58175"), n.e("72762"), n.e("49049"), n.e("44156"), n.e("62117"), n.e("8725"), n.e("6850"), n.e("58227"), n.e("62856"), n.e("54408"), n.e("42926"), n.e("20087"), n.e("60458"), n.e("873"), n.e("45550"), n.e("56534"), n.e("7233")]).then(n.bind(n, 994763)), (null == (o = g.Z.getGuild(e)) ? true : o.features.has(O.oNc.COMMUNITY)) && (t === O.pNK.GUILD_AUTOMOD && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_AUTOMOD), t === O.pNK.MEMBER_VERIFICATION && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), P.init(e, t, r, i), p.Z.closeGuildSidebar(e), (0, a.jN)(O.S9g.GUILD_SETTINGS)
+      await Promise.all([n.e("66549"), n.e("1806"), n.e("92078"), n.e("12830"), n.e("36599"), n.e("7654"), n.e("94136"), n.e("62117"), n.e("99956"), n.e("58175"), n.e("77512"), n.e("49049"), n.e("44156"), n.e("58511"), n.e("6850"), n.e("58227"), n.e("62856"), n.e("54408"), n.e("42926"), n.e("20087"), n.e("40725"), n.e("1355"), n.e("87137"), n.e("56534"), n.e("32508")]).then(n.bind(n, 994763)), (null == (o = g.Z.getGuild(e)) ? true : o.features.has(O.oNc.COMMUNITY)) && (t === O.pNK.GUILD_AUTOMOD && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_AUTOMOD), t === O.pNK.MEMBER_VERIFICATION && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), P.init(e, t, r, i), p.Z.closeGuildSidebar(e), (0, a.jN)(O.S9g.GUILD_SETTINGS)
     },
     close() {
       Chunk570140.Z.dispatch({

@@ -1,13 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 326218, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 7384 **/
+/** chunk id: 326218, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  attachWrapper: "attachWrapper__0923f",
-  attachButton: "attachButton__0923f",
-  attachButtonPlus: "attachButtonPlus__0923f",
-  attachButtonInner: "attachButtonInner__0923f",
-  uploadInput: "uploadInput__0923f",
-  buttonAnimation: "buttonAnimation__0923f",
-  buttonAnimationGlow: "buttonAnimationGlow__0923f",
-  buttonAnimationTrinkets: "buttonAnimationTrinkets__0923f"
+  rowItem: "rowItem_a0365b",
+  last: "last_a0365b",
+  active: "active_a0365b"
 }

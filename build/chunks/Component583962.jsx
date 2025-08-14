@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 583962, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   PD: () => A,
@@ -30,8 +30,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk93841 = require("./93841.js"),
-  Chunk339347 = require("./339347.js");
+  Chunk989308 = require("./989308.js"),
+  Chunk210418 = require("./210418.js");
 
 function w(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -76,18 +76,18 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
       guild: t,
       tooltipTypes: l,
       withMargin: d
-    } = e, C = (0, y.Jh)(t.id), T = (0, b.Z)(t.id), A = (0, y.FZ)(C), R = null == A, L = null != A ? A : C, M = (0, c.e7)([j.Z], () => {
+    } = e, v = (0, y.Jh)(t.id), T = (0, b.Z)(t.id), A = (0, y.FZ)(v), R = null == A, L = null != A ? A : v, M = (0, c.e7)([C.Z], () => {
       var e;
-      return null != (e = j.Z.getCountForGuild(t.id)) ? e : 0
-    }), k = (0, c.e7)([O.Z], () => O.Z.can(S.Plq.MANAGE_GUILD, t));
+      return null != (e = C.Z.getCountForGuild(t.id)) ? e : 0
+    }), k = (0, c.e7)([O.Z], () => O.Z.can(x.Plq.MANAGE_GUILD, t));
     i.useEffect(() => {
-      M !== T && (0, v.v)(t.id, T)
+      M !== T && (0, j.v)(t.id, T)
     }, [t.id, M, T]);
-    let U = R ? "100%" : "".concat(Math.min(100, T / S.oCV[L] * 100), "%"),
+    let U = R ? "100%" : "".concat(Math.min(100, T / x.oCV[L] * 100), "%"),
       {
         current: G
       } = i.useRef(U),
-      [B] = (0, h.q_F)(() => ({
+      [B] = (0, p.q_F)(() => ({
         from: {
           width: M === T ? G : "0%"
         },
@@ -96,26 +96,26 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
         },
         config: D
       }), "respect-motion-settings", [M, T, G, U]),
-      V = t.premiumTier < L && M >= S.oCV[L],
-      F = (0, E.Z)(t, f.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY, S.jXE.PREMIUM_GUILD_PROGRESS_BAR),
-      H = I.intl.formatToPlainString(I.t["2oNfMT"], {
+      V = t.premiumTier < L && M >= x.oCV[L],
+      F = (0, E.Z)(t, h.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY, x.jXE.PREMIUM_GUILD_PROGRESS_BAR),
+      H = P.intl.formatToPlainString(P.t["2oNfMT"], {
         levelName: (0, y.e9)(L)
       }),
-      z = I.intl.format(I.t.dhKnYm, {
+      z = P.intl.format(P.t.dhKnYm, {
         numBoosts: T,
-        numTotal: S.oCV[L]
+        numTotal: x.oCV[L]
       });
-    R && (H = (0, y.e9)(L), z = I.intl.format(I.t.B2byER, {
+    R && (H = (0, y.e9)(L), z = P.intl.format(P.t.B2byER, {
       numBoosts: T
     })), H = H.toLocaleLowerCase();
-    let W = (0, a.JA)("boosts-".concat(t.id)),
+    let W = (0, s.JA)("boosts-".concat(t.id)),
       K = i.useRef(null),
       [Y, q] = (0, g.US)(l),
       X = () => Y === u.z.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK ? (0, r.jsx)(m.Z, {
         guild: t,
         markAsDismissed: q
       }) : null,
-      Q = (e, i) => (0, r.jsxs)(h.P3F, Z(w({}, W, e, i), {
+      Q = (e, i) => (0, r.jsxs)(p.P3F, Z(w({}, W, e, i), {
         "aria-label": true,
         role: "button",
         focusProps: {
@@ -132,7 +132,7 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
           [N.containerWithMargin]: d
         }),
         onContextMenu: e => {
-          k && (0, p.jW)(e, async () => {
+          k && (0, f.jW)(e, async () => {
             let {
               default: e
             } = await n.e("8570").then(n.bind(n, 651138));
@@ -141,13 +141,13 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
             }))
           })
         },
-        children: [(0, r.jsx)(h.nn4, {
+        children: [(0, r.jsx)(p.nn4, {
           children: e["aria-label"]
         }), (0, r.jsxs)("div", {
           className: N.textArea,
           children: [(0, r.jsx)("div", {
             className: N.goalTextContainer,
-            children: (0, r.jsx)(h.Text, {
+            children: (0, r.jsx)(p.Text, {
               className: N.goalText,
               color: "none",
               variant: "text-sm/medium",
@@ -156,7 +156,7 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
             })
           }), (0, r.jsxs)("div", {
             className: N.progressFraction,
-            children: [(0, r.jsx)(h.Text, {
+            children: [(0, r.jsx)(p.Text, {
               color: "none",
               variant: "text-sm/medium",
               className: N.progressText,
@@ -173,11 +173,11 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
           className: o()(N.progressBarContainer, {
             [N.progressBarContainerComplete]: R
           }),
-          children: [(0, r.jsx)(s.animated.div, {
+          children: [(0, r.jsx)(a.animated.div, {
             className: N.progressBar,
             style: B
           }), R ? (0, r.jsx)("span", {
-            "aria-label": I.intl.string(I.t["7iL1q6"]),
+            "aria-label": P.intl.string(P.t["7iL1q6"]),
             role: "img",
             className: N.tadaIcon,
             children: "\uD83C\uDF89"
@@ -185,24 +185,24 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
         })]
       }));
     return (0, r.jsx)("li", {
-      children: (0, r.jsx)(h.ua7, {
-        text: V ? I.intl.formatToPlainString(P.default["9CtPjo"], {
+      children: (0, r.jsx)(p.ua7, {
+        text: V ? P.intl.formatToPlainString(I.default["9CtPjo"], {
           perk: (0, y.nW)(L)
-        }) : R ? I.intl.string(I.t["Y+V9go"]) : I.intl.formatToPlainString(I.t.UyDKl5, {
+        }) : R ? P.intl.string(P.t["Y+V9go"]) : P.intl.formatToPlainString(P.t.UyDKl5, {
           levelName: (0, y.nW)(L)
         }),
         position: "top",
         delay: 200,
         hideOnClick: true,
-        children: e => null != Y ? (0, r.jsx)(h.yRy, {
+        children: e => null != Y ? (0, r.jsx)(p.yRy, {
           targetElementRef: K,
           renderPopout: X,
           position: "right",
           align: "top",
           shouldShow: true,
           closeOnScroll: true,
-          onRequestClose: () => q(x.L.INDIRECT_ACTION),
-          animation: h.yRy.Animation.TRANSLATE,
+          onRequestClose: () => q(S.L.INDIRECT_ACTION),
+          animation: p.yRy.Animation.TRANSLATE,
           children: t => (0, r.jsx)("div", {
             ref: K,
             children: Q(e, t)

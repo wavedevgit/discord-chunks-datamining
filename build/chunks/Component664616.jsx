@@ -1,7 +1,7 @@
 /** Chunk was on 67544 **/
 /** chunk id: 664616, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => C
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -13,7 +13,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk26141 = require("./26141.jsx"),
   Chunk18582 = require("./18582.jsx"),
   Chunk477839 = require("./477839.js"),
-  Chunk574040 = require("./574040.js"),
+  Chunk392449 = require("./392449.js"),
   Chunk91776 = require("./91776.js"),
   Chunk276626 = require("./276626.js"),
   Chunk874641 = require("./874641.js"),
@@ -26,21 +26,18 @@ var Chunk255367 = require("./255367.js"),
   Chunk40050 = require("./40050.js"),
   Chunk236954 = require("./236954.js");
 let _ = {
-    0: [require("./617627.js"), require("./200445.js"), require("./714530.js"), require("./9997.js"), require("./550796.js")],
-    1: [require("./731544.js"), require("./904194.js"), require("./96599.js"), require("./590881.js")],
-    2: [Chunk930961, Chunk732513, Chunk391291, Chunk895401],
-    3: [Chunk191351, Chunk40050, Chunk236954],
-    4: [Chunk91776, Chunk276626, Chunk874641, Chunk884994]
-  },
-  C = {
-    state: 2
-  };
+  0: [require("./617627.js"), require("./200445.js"), require("./714530.js"), require("./9997.js"), require("./550796.js")],
+  1: [require("./731544.js"), require("./904194.js"), require("./96599.js"), require("./590881.js")],
+  2: [Chunk930961, Chunk732513, Chunk391291, Chunk895401],
+  3: [Chunk191351, Chunk40050, Chunk236954],
+  4: [Chunk91776, Chunk276626, Chunk874641, Chunk884994]
+};
 
-function Z(e) {
+function C(e) {
   var t;
   let {
     isPaused: n
-  } = e, [o, m] = (0, l.Z)(f.yN.PET_WUMPUS), g = null != (t = o.state) ? t : C.state, b = c.Mq[f.yN.PET_WUMPUS], y = _[g], h = (0, s.useCallback)(() => {
+  } = e, [o, m] = (0, l.Z)(f.yN.PET_WUMPUS), g = null != (t = o.state) ? t : 2, b = c.Mq[f.yN.PET_WUMPUS], y = _[g], h = (0, s.useCallback)(() => {
     0 === g && m({
       state: 1
     })

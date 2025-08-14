@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 831700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => en
@@ -50,7 +50,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk81252 = require("./81252.js");
+  Chunk55940 = require("./55940.js");
 
 function Q(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -109,11 +109,11 @@ class ee extends Chunk98597.ZP {
       sortingPosition: t,
       isUserOver: n
     } = this.props;
-    if (require) return Chunk81252.containerUserOver;
+    if (require) return Chunk55940.containerUserOver;
     if (null != exports)
-      if (module > exports) return Chunk81252.containerDragAfter;
-      else return Chunk81252.containerDragBefore;
-    return Chunk81252.containerDefault
+      if (module > exports) return Chunk55940.containerDragAfter;
+      else return Chunk55940.containerDragBefore;
+    return Chunk55940.containerDefault
   }
   renderSubtitle() {
     var e;
@@ -123,7 +123,7 @@ class ee extends Chunk98597.ZP {
       enableHangStatus: i,
       allowChannelTopic: l
     } = this.props, o = null == (e = (0, Chunk873696.D)(this.props.subtitle)) ? true : module.subtitle, {
-      hovered: s
+      hovered: a
     } = this.state;
     return (0, Chunk255367.jsx)(Chunk653577.Z, {
       onClick: this.handleVoiceStatusClick,
@@ -158,7 +158,7 @@ class ee extends Chunk98597.ZP {
       channelInfo: e
     } = this.props;
     return null == module ? null : (0, Chunk255367.jsx)("div", {
-      className: Chunk81252.channelInfo,
+      className: Chunk55940.channelInfo,
       children: module
     })
   }
@@ -169,31 +169,31 @@ class ee extends Chunk98597.ZP {
       connected: n,
       unread: i,
       resolvedUnreadSetting: l,
-      mentionCount: s,
-      locked: a,
+      mentionCount: a,
+      locked: s,
       sorting: u,
       isUserOver: d,
-      connectChannelDropTarget: h,
-      connectChannelDragSource: p,
-      connectUserDropTarget: f,
+      connectChannelDropTarget: p,
+      connectChannelDragSource: f,
+      connectUserDropTarget: h,
       connectDragPreview: g,
       canReorderChannel: O,
       canMoveMembers: _,
       showTutorial: y,
-      hasActiveEvent: C,
-      embeddedApps: v,
-      isSubscriptionGated: j,
+      hasActiveEvent: v,
+      embeddedApps: j,
+      isSubscriptionGated: C,
       isFavoriteSuggestion: E,
-      withGuildIcon: S
+      withGuildIcon: x
     } = this.props, {
-      shouldShowActivities: x,
-      shouldShowGuildVerificationPopout: I
+      shouldShowActivities: S,
+      shouldShowGuildVerificationPopout: P
     } = this.state, N = (0, Chunk340541.jW)({
       location: "voice_channel"
     }).entrypoints, w = this.getVoiceStatesCount(), T = (0, Chunk255367.jsxs)("li", {
       ref: this.ref,
       className: o()(this.getModeClass(), {
-        [Chunk81252.disabled]: this.isDisabled()
+        [Chunk55940.disabled]: this.isDisabled()
       }),
       "data-dnd-name": module.name,
       children: [(0, Chunk255367.jsx)("div", {
@@ -212,7 +212,7 @@ class ee extends Chunk98597.ZP {
               var {
                 onClick: u,
                 onContextMenu: d
-              } = c, h = function(e, t) {
+              } = c, p = function(e, t) {
                 if (null == e) return {};
                 var n, r, i = function(e, t) {
                   if (null == e) return {};
@@ -231,16 +231,16 @@ class ee extends Chunk98597.ZP {
                 ref: this.channelItemRef,
                 className: X.iconVisibility,
                 iconClassName: o()({
-                  [X.iconLive]: C
+                  [X.iconLive]: v
                 }),
-                hasActiveEvent: C,
+                hasActiveEvent: v,
                 channel: e,
                 selected: !E && t,
                 connected: n,
                 unread: n ? i : true,
                 resolvedUnreadSetting: l,
-                mentionCount: s,
-                locked: a,
+                mentionCount: a,
+                locked: s,
                 subtitle: this.renderSubtitle(),
                 onClick: () => {
                   this.handleClick(), null == u || u()
@@ -253,17 +253,17 @@ class ee extends Chunk98597.ZP {
                 "aria-label": (0, m.ZP)({
                   channel: e,
                   unread: i,
-                  mentionCount: s,
+                  mentionCount: a,
                   userCount: w,
-                  embeddedActivitiesCount: v.length,
-                  isSubscriptionGated: j
+                  embeddedActivitiesCount: j.length,
+                  isSubscriptionGated: C
                 }),
                 "aria-describedby": (0, b.Z)({
                   channel: e,
-                  embeddedApps: v
+                  embeddedApps: j
                 }),
-                withGuildIcon: S
-              }, h), {
+                withGuildIcon: x
+              }, p), {
                 children: [E && (0, r.jsxs)(r.Fragment, {
                   children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
                 }), !E && (0, r.jsxs)(r.Fragment, {
@@ -290,7 +290,7 @@ class ee extends Chunk98597.ZP {
       shouldShowActivities: false,
       shouldShowGuildVerificationPopout: false,
       hovered: false
-    }), Q(this, "ref", i.createRef()), Q(this, "channelItemRef", i.createRef()), Q(this, "activitiesHideTimeout", new a.V7), Q(this, "closeGuildVerificationPopout", () => {
+    }), Q(this, "ref", i.createRef()), Q(this, "channelItemRef", i.createRef()), Q(this, "activitiesHideTimeout", new s.V7), Q(this, "closeGuildVerificationPopout", () => {
       this.setState({
         shouldShowGuildVerificationPopout: false
       })
@@ -307,12 +307,12 @@ class ee extends Chunk98597.ZP {
       r && this.setState({
         shouldShowGuildVerificationPopout: true
       });
-      let s = l && o > 0;
-      s && u.Z.updateChatOpen(n.id, true), _.Z.handleVoiceConnect({
+      let a = l && o > 0;
+      a && u.Z.updateChatOpen(n.id, true), _.Z.handleVoiceConnect({
         channel: n,
         connected: t,
         needSubscriptionToAccess: i,
-        routeDirectlyToChannel: s,
+        routeDirectlyToChannel: a,
         locked: e
       })
     }), Q(this, "handleContextMenu", e => {
@@ -346,7 +346,7 @@ class ee extends Chunk98597.ZP {
       let {
         channel: e
       } = this.props, t = e.getGuildId();
-      null != t && (0, j.n)(t) && (0, v.hk)(t), this.handleVoiceConnect()
+      null != t && (0, C.n)(t) && (0, j.hk)(t), this.handleVoiceConnect()
     }), Q(this, "handleVoiceStatusClick", e => {
       let {
         connected: t,
@@ -364,10 +364,10 @@ class ee extends Chunk98597.ZP {
         selected: l,
         guild: o
       } = this.props, {
-        shouldShowActivities: s,
-        shouldShowGuildVerificationPopout: a
+        shouldShowActivities: a,
+        shouldShowGuildVerificationPopout: s
       } = this.state;
-      if (s && !n && !i && !a) {
+      if (a && !n && !i && !s) {
         let n = T.SE.getSetting().includes(o.id);
         return (0, r.jsx)(H.Z, {
           onAction: this.closePopout,
@@ -378,8 +378,8 @@ class ee extends Chunk98597.ZP {
           shouldShowSettingNudge: n
         })
       }
-      if (a) return (0, r.jsx)(x.Z, {
-        type: x.R.VOICE,
+      if (s) return (0, r.jsx)(S.Z, {
+        type: S.R.VOICE,
         guildId: e.guild_id,
         closePopout: this.closeGuildVerificationPopout
       });
@@ -396,8 +396,8 @@ class ee extends Chunk98597.ZP {
           let {
             onMouseEnter: i,
             onMouseLeave: l,
-            onFocus: s,
-            onBlur: a
+            onFocus: a,
+            onBlur: s
           } = t;
           return (0, r.jsx)(c.P3F, {
             className: o()(X.iconItem, n ? X.alwaysShown : null),
@@ -407,8 +407,8 @@ class ee extends Chunk98597.ZP {
             "aria-label": q.intl.string(q.t.ZXxLQk),
             onMouseEnter: i,
             onMouseLeave: l,
-            onFocus: s,
-            onBlur: a,
+            onFocus: a,
+            onBlur: s,
             children: (0, r.jsx)(c.kBi, {
               size: "xs",
               color: "currentColor",
@@ -434,12 +434,12 @@ function en(e) {
     disableSorting: i,
     isFavoriteCategory: l,
     selected: o,
-    collapsed: a,
+    collapsed: s,
     voiceStates: c
-  } = e, u = (0, s.cj)([M.ZP], () => ({
+  } = e, u = (0, a.cj)([M.ZP], () => ({
     unread: M.ZP.hasUnread(n.id),
     mentionCount: M.ZP.getMentionCount(n.id)
-  })), d = (0, s.e7)([k.ZP], () => k.ZP.resolveUnreadSetting(n)), h = (0, s.cj)([A.Z, D.Z, L.Z], () => {
+  })), d = (0, a.e7)([k.ZP], () => k.ZP.resolveUnreadSetting(n)), p = (0, a.cj)([A.Z, D.Z, L.Z], () => {
     let e = A.Z.getChannel(n.parent_id),
       r = D.Z.getCheck(n.guild_id);
     return {
@@ -450,13 +450,13 @@ function en(e) {
       bypassLimit: L.Z.can(K.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, s.e7)([U.Z], () => U.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, O.ZP)(n), b = (0, S.qY)(n.id), {
+  }), f = (0, a.e7)([U.Z], () => U.Z.hasVideo(n.id)), g = (0, h.ZP)(n), m = (0, O.ZP)(n), b = (0, x.qY)(n.id), {
     isSubscriptionGated: _,
     needSubscriptionToAccess: y
-  } = (0, E.Z)(n.id), v = (0, C.Z)(), j = (0, s.e7)([k.ZP], () => k.ZP.isFavorite(t.id, n.id)), x = e.connected || (null == v ? true : v.channelId) === n.id, {
-    enableHangStatus: P,
+  } = (0, E.Z)(n.id), j = (0, v.Z)(), C = (0, a.e7)([k.ZP], () => k.ZP.isFavorite(t.id, n.id)), S = e.connected || (null == j ? true : j.channelId) === n.id, {
+    enableHangStatus: I,
     allowChannelTopic: w
-  } = I.n.useExperiment({
+  } = P.n.useExperiment({
     guildId: n.guild_id,
     location: "VoiceChannel"
   }, {
@@ -469,28 +469,28 @@ function en(e) {
   }), T = (0, V.Z)({
     channel: n,
     isChannelSelected: o,
-    isChannelCollapsed: a,
+    isChannelCollapsed: s,
     voiceStates: c,
     isSubscriptionGated: _,
     needSubscriptionToAccess: y,
     enableConnectedUserLimit: true,
     enableActivities: true
-  }), R = x && null == T;
+  }), R = S && null == T;
   return (0, r.jsx)(et, $(J({
     channelName: m,
     embeddedApps: g,
     embeddedActivityType: K.IIU.PLAYING,
-    video: p,
+    video: f,
     hasActiveEvent: null != b,
     isSubscriptionGated: _,
     needSubscriptionToAccess: y
-  }, u, h, e), {
-    connected: x,
-    isFavoriteSuggestion: l && !j,
+  }, u, p, e), {
+    connected: S,
+    isFavoriteSuggestion: l && !C,
     forceShowButtons: R,
     channelInfo: T,
     resolvedUnreadSetting: d,
-    enableHangStatus: P,
+    enableHangStatus: I,
     allowChannelTopic: w,
     enableOpenTIVForPing: Z
   }))

@@ -1,4 +1,4 @@
-/** Chunk was on 787 **/
+/** Chunk was on 32561 **/
 /** chunk id: 569527, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -29,7 +29,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk188607 = require("./188607.jsx"),
   Chunk979007 = require("./979007.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk574003 = require("./574003.js");
+  Chunk36523 = require("./36523.js");
 
 function T(e) {
   var t;
@@ -81,8 +81,8 @@ function T(e) {
     })
   }, [k, D, w, B]);
   let {
-    fetchState: U,
-    searchResults: z
+    fetchState: z,
+    searchResults: U
   } = (0, o.cj)([b.Z], () => ({
     fetchState: b.Z.getFetchState({
       query: w,
@@ -123,7 +123,7 @@ function T(e) {
     }({
       [x.MU]: e.totalCount
     }, e.countsByCategory) : {}
-  }), V = (0, d.Z)(z), H = a.useMemo(() => U === f.M.FETCHING ? V : z, [U, V, z]), Y = a.useCallback(e => {
+  }), V = (0, d.Z)(U), H = a.useMemo(() => z === f.M.FETCHING ? V : U, [z, V, U]), Y = a.useCallback(e => {
     (0, I.pR)({
       query: w,
       categoryId: k,
@@ -167,8 +167,8 @@ function T(e) {
                 onSelectCategory: W
               })
             }), (0, r.jsx)(C.Z, {
-              loading: U === f.M.FETCHING,
-              children: U === f.M.FETCHED && (null == H || (null == H ? true : H.results.length) === 0) ? (0, r.jsx)(S.Z, {
+              loading: z === f.M.FETCHING,
+              children: z === f.M.FETCHED && (null == H || (null == H ? true : H.results.length) === 0) ? (0, r.jsx)(S.Z, {
                 selectedCategoryId: null != k ? k : K.id,
                 searchAllCategories: () => W(K)
               }) : (0, r.jsx)("div", {

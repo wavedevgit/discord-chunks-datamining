@@ -1,4 +1,4 @@
-/** Chunk was on 8725 **/
+/** Chunk was on 58511 **/
 /** chunk id: 325476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => j
@@ -9,7 +9,7 @@ var i, r, Chunk255367 = require("./255367.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
-  Chunk535927 = require("./535927.js");
+  Chunk352543 = require("./352543.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,10 +69,10 @@ class f extends(i = Chunk73800.PureComponent) {
       } = module,
       n = g(module, ["scrollable"]);
     return exports ? (0, Chunk255367.jsx)("aside", {
-      className: Chunk535927.sidebarScrollable,
+      className: Chunk352543.sidebarScrollable,
       children: (0, Chunk255367.jsx)(Chunk481060.Ttm, {
         fade: true,
-        className: Chunk535927.scroller,
+        className: Chunk352543.scroller,
         children: (0, Chunk255367.jsx)(Chunk600164.Z.Child, b(m({}, require), {
           wrap: true
         }))
@@ -95,7 +95,7 @@ class h extends Chunk73800.PureComponent {
       } = module,
       n = g(module, ["className"]);
     return (0, Chunk255367.jsx)(Chunk600164.Z.Child, m({
-      className: s()(Chunk535927.content, exports),
+      className: s()(Chunk352543.content, exports),
       wrap: true
     }, require))
   }

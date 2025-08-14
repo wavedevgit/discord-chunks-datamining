@@ -1,4 +1,4 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 836040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -15,8 +15,8 @@ function u(e) {
   let {
     guild: t,
     invite: n
-  } = e, u = i.useMemo(() => (0, s.Mg)(t.id), [t.id]), d = (0, l.e7)([o.Z], () => o.Z.isFocused());
-  return null == t ? null : (0, r.jsx)(a.Z, {
+  } = e, u = i.useMemo(() => (0, a.Mg)(t.id), [t.id]), d = (0, l.e7)([o.Z], () => o.Z.isFocused());
+  return null == t ? null : (0, r.jsx)(s.Z, {
     guildNode: u,
     guild: t,
     animatable: d,

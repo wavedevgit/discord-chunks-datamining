@@ -1,9 +1,9 @@
-/** Chunk was on 41753 **/
+/** Chunk was on 50737 **/
 /** chunk id: 279604, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   KE: () => O,
   KT: () => b,
-  ZP: () => C,
+  ZP: () => v,
   _C: () => _
 }), require("./388685.js"), require("./457542.js");
 var Chunk255367 = require("./255367.js"),
@@ -48,7 +48,7 @@ function b(e) {
 function O(e, t) {
   (0, o.ZDy)(async () => {
     switch (t.type) {
-      case f.Us.LEVEL:
+      case h.Us.LEVEL:
         let {
           default: i
         } = await n.e("99014").then(n.bind(n, 271224));
@@ -56,10 +56,10 @@ function O(e, t) {
           guildId: e,
           powerup: t
         }, n));
-      case f.Us.PERK: {
+      case h.Us.PERK: {
         let {
           default: i
-        } = await Promise.all([n.e("42926"), n.e("97844"), n.e("80620")]).then(n.bind(n, 326055));
+        } = await Promise.all([n.e("42926"), n.e("97844"), n.e("52549")]).then(n.bind(n, 326055));
         return n => (0, r.jsx)(i, m({
           guildId: e,
           powerup: t
@@ -67,72 +67,72 @@ function O(e, t) {
       }
     }
   }, {
-    modalKey: f.H2
+    modalKey: h.H2
   })
 }
 
 function _(e, t) {
-  var h;
+  var p;
   let {
     analyticsLocations: b
-  } = (0, s.ZP)(), {
+  } = (0, a.ZP)(), {
     onToggle: O
-  } = y(e, t), _ = (0, l.e7)([p.Z], () => {
+  } = y(e, t), _ = (0, l.e7)([f.Z], () => {
     var t, n;
-    return null != (n = null == (t = p.Z.getStateForGuild(e)) ? true : t.appliedBoosts) ? n : 0
-  }), C = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), v = (0, l.e7)([p.Z], () => p.Z.getStateForGuild(e)), j = i.useMemo(() => null != t && t.type === f.Us.LEVEL && null != v ? function(e, t) {
-    let n = f.T1[e.skuId];
-    return null == n ? [] : Object.entries(f.Rx).filter(e => {
+    return null != (n = null == (t = f.Z.getStateForGuild(e)) ? true : t.appliedBoosts) ? n : 0
+  }), v = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), j = (0, l.e7)([f.Z], () => f.Z.getStateForGuild(e)), C = i.useMemo(() => null != t && t.type === h.Us.LEVEL && null != j ? function(e, t) {
+    let n = h.T1[e.skuId];
+    return null == n ? [] : Object.entries(h.Rx).filter(e => {
       let [r, i] = e;
       return i === n && null != t.unlockedPowerups[r]
     }).map(e => {
       let [n] = e;
       return t.allPowerups[n]
     }).filter(d.lm)
-  }(t, v) : [], [t, v]), E = null == j ? true : j.reduce((e, t) => e + t.cost, 0), S = Math.max((null != (h = null == C ? true : C.premiumSubscriberCount) ? h : 0) - _ + E, 0);
+  }(t, j) : [], [t, j]), E = null == C ? true : C.reduce((e, t) => e + t.cost, 0), x = Math.max((null != (p = null == v ? true : v.premiumSubscriberCount) ? p : 0) - _ + E, 0);
   return {
     onActivate: i.useCallback(function(e) {
       var i;
       let l = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
       e.stopPropagation();
       let {
-        shouldCloseAllModals: s = true
+        shouldCloseAllModals: a = true
       } = l;
-      if (null != C && null != t) return S < t.cost ? void(0, a.u)({
+      if (null != v && null != t) return x < t.cost ? void(0, s.u)({
         analyticsLocation: {
           page: g.ZY5.GUILD_POWERUPS_OVERVIEW,
           section: g.jXE.GUILD_POWERUPS_OVERVIEW_CARD
         },
-        numberOfBoostsToAdd: t.cost - S,
+        numberOfBoostsToAdd: t.cost - x,
         analyticsLocations: b,
-        guild: C,
-        intent: t.type === f.Us.LEVEL ? c.P.LEVEL : c.P.PERK,
+        guild: v,
+        intent: t.type === h.Us.LEVEL ? c.P.LEVEL : c.P.PERK,
         onSubscribeComplete: () => {
           var e;
           return null == (e = O(true)) ? true : e.then(() => {
-            s && (0, o.pTH)(), (0, o.ZDy)(async () => {
+            a && (0, o.pTH)(), (0, o.ZDy)(async () => {
               let {
                 default: e
-              } = await Promise.all([n.e("97844"), n.e("35323")]).then(n.bind(n, 666083));
+              } = await Promise.all([n.e("97844"), n.e("21254")]).then(n.bind(n, 666083));
               return n => (0, r.jsx)(e, m({
-                guildId: C.id,
+                guildId: v.id,
                 powerup: t
               }, n))
             })
           })
         }
       }) : null == (i = O(true)) ? true : i.then(() => {
-        s && (0, o.pTH)(), (0, o.ZDy)(async () => {
+        a && (0, o.pTH)(), (0, o.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("97844"), n.e("35323")]).then(n.bind(n, 666083));
+          } = await Promise.all([n.e("97844"), n.e("21254")]).then(n.bind(n, 666083));
           return n => (0, r.jsx)(e, m({
-            guildId: C.id,
+            guildId: v.id,
             powerup: t
           }, n))
         })
       })
-    }, [O, t, S, b, C])
+    }, [O, t, x, b, v])
   }
 }
 
@@ -143,7 +143,7 @@ function y(e, t) {
     error: l,
     onToggle: i.useCallback(n => {
       if (null == t) return Promise.resolve();
-      let i = n ? h.H6 : h.Th;
+      let i = n ? p.H6 : p.Th;
       return r(true), o(true), i(e, t.skuId).catch(e => {
         var t;
         throw o(null != (t = e.body.message) ? t : true), e
@@ -154,17 +154,17 @@ function y(e, t) {
   }
 }
 
-function C(e, t) {
+function v(e, t) {
   let {
     isLoading: l,
-    error: s,
-    onToggle: a
+    error: a,
+    onToggle: s
   } = y(e, t), {
     onActivate: c
-  } = _(e, t), u = i.useCallback(e => (e.stopPropagation(), a(false)), [a]);
+  } = _(e, t), u = i.useCallback(e => (e.stopPropagation(), s(false)), [s]);
   return {
     isLoading: l,
-    error: s,
+    error: a,
     onActivate: c,
     onDeactivate: u,
     onShowDeactivate: i.useCallback(i => {

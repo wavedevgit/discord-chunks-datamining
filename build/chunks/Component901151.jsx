@@ -1,4 +1,4 @@
-/** Chunk was on 20501 **/
+/** Chunk was on 7384 **/
 /** chunk id: 901151, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk155642 = require("./155642.js");
+  Chunk42101 = require("./42101.js");
 
 function j(e) {
   let {
@@ -192,14 +192,14 @@ function O() {
       children: [(0, Chunk255367.jsx)(j, {
         applications: exports
       }), (0, Chunk255367.jsx)(E, {}), (0, Chunk255367.jsx)("div", {
-        className: Chunk155642.divider
+        className: Chunk42101.divider
       }), (0, Chunk255367.jsx)(C, {})]
     }) : (0, Chunk255367.jsxs)("div", {
-      className: Chunk155642.emptyContainer,
+      className: Chunk42101.emptyContainer,
       children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        className: Chunk155642.noGamesConnectedText,
+        className: Chunk42101.noGamesConnectedText,
         children: Chunk388032.intl.string(Chunk388032.t["+0U77e"])
       }), (0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",

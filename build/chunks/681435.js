@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 681435, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk115434 = require("./115434.js"),
@@ -14,85 +14,84 @@ var Chunk73800 = require("./73800.js"),
   Chunk794324 = require("./794324.js"),
   Chunk302800 = require("./302800.js"),
   Chunk921944 = require("./921944.js");
-let h = (e, t) => {
-    var n, r, i, a, o, s, c, u;
-    if ((null == t ? true : t.type) === l.Z.COACHTIP || e.hasPreviewAssets) {
-      let i = null != t ? {
-        title: () => t.title,
-        body: () => t.body,
-        assetIds: t.decorations,
-        entrypointBackgroundStyle: null == (n = t.refTargetBackground) ? true : n.style
-      } : {
-        title: () => "",
-        assetIds: []
-      };
-      return c = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = r
-          })
-        }
-        return e
-      }({
-        type: p.k2.COACHTIP
-      }, i), u = u = {
-        imageSrc: null != (r = e.coachtipAvatar) ? r : "",
-        entryPointBackgroundAssets: {
-          srcDark: e.buttonBGRestingDark,
-          srcLight: e.buttonBGRestingLight,
-          srcDarkHovered: e.buttonBGHoverDark,
-          srcLightHovered: e.buttonBGHoverLight
-        }
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(u)).forEach(function(e) {
-        Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(u, e))
-      }), c
-    }
-    if ((null == t ? true : t.type) === l.Z.COACHMARK) {
-      let e = t.refTargetBackground;
-      return {
-        type: p.k2.COACHMARK,
-        title: () => t.title,
-        body: () => t.body,
-        assetDark: t.assetDark,
-        assetLight: t.assetLight,
-        entrypointBackgroundStyle: null == e ? true : e.style,
-        entryPointBackgroundAssets: {
-          srcDarkHovered: null == e || null == (a = e.asset) || null == (i = a.hovered) ? true : i.dark,
-          srcLightHovered: null == e || null == (s = e.asset) || null == (o = s.hovered) ? true : o.light
+let h = () => {
+  var e;
+  let t = (0, Chunk442837.e7)([Chunk874703.Z], () => Chunk874703.Z.getMarketingBySurface(Chunk115434.K.DESKTOP_SHOP_BUTTON)),
+    n = !(0, Chunk481060.$sL)(),
+    [h, g] = (0, Chunk243778.XR)(require ? Chunk704215.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == exports ? true : exports.version) ? module : 0, true, true),
+    m = (0, Chunk794324.mB)(exports),
+    b = null != h ? ((e, t) => {
+      var n, r, i, a, o, s, c, u;
+      if ((null == t ? true : t.type) === l.Z.COACHTIP || e.hasPreviewAssets) {
+        let i = null != t ? {
+          title: () => t.title,
+          body: () => t.body,
+          assetIds: t.decorations,
+          entrypointBackgroundStyle: null == (n = t.refTargetBackground) ? true : n.style
+        } : {
+          title: () => "",
+          assetIds: []
+        };
+        return c = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({
+          type: p.k2.COACHTIP
+        }, i), u = u = {
+          imageSrc: null != (r = e.coachtipAvatar) ? r : "",
+          entryPointBackgroundAssets: {
+            srcDark: e.buttonBGRestingDark,
+            srcLight: e.buttonBGRestingLight,
+            srcDarkHovered: e.buttonBGHoverDark,
+            srcLightHovered: e.buttonBGHoverLight
+          }
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(u)).forEach(function(e) {
+          Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(u, e))
+        }), c
+      }
+      if ((null == t ? true : t.type) === l.Z.COACHMARK) {
+        let e = t.refTargetBackground;
+        return {
+          type: p.k2.COACHMARK,
+          title: () => t.title,
+          body: () => t.body,
+          assetDark: t.assetDark,
+          assetLight: t.assetLight,
+          entrypointBackgroundStyle: null == e ? true : e.style,
+          entryPointBackgroundAssets: {
+            srcDarkHovered: null == e || null == (a = e.asset) || null == (i = a.hovered) ? true : i.dark,
+            srcLightHovered: null == e || null == (s = e.asset) || null == (o = s.hovered) ? true : o.light
+          }
         }
       }
-    }
-    return null
-  },
-  g = () => {
-    var e;
-    let t = (0, Chunk442837.e7)([Chunk874703.Z], () => Chunk874703.Z.getMarketingBySurface(Chunk115434.K.DESKTOP_SHOP_BUTTON)),
-      n = !(0, Chunk481060.$sL)(),
-      [l, p] = (0, Chunk243778.XR)(require ? Chunk704215.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == exports ? true : exports.version) ? module : 0, true, true),
-      g = (0, Chunk794324.mB)(exports),
-      m = null != Chunk264181 ? h(g, exports) : null,
-      b = Chunk73800.useCallback(() => {
-        null != m && Chunk302800(Chunk921944.L.AUTO)
-      }, [m, Chunk302800]);
-    return {
-      shopButtonDisplayOptions: m,
-      dismissShopButtonDC: b
-    }
+      return null
+    })(m, exports) : null,
+    _ = Chunk73800.useCallback(() => {
+      null != b && g(Chunk921944.L.AUTO)
+    }, [b, g]);
+  return {
+    shopButtonDisplayOptions: b,
+    dismissShopButtonDC: _
   }
+}
