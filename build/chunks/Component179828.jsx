@@ -84,7 +84,7 @@ function T(e) {
     canManageRoles: f,
     onAddRole: p,
     onRemoveRole: m
-  } = e, g = f && null != s, j = l.useRef(null), O = l.useMemo(() => "roles-".concat((0, i.Z)()), []), T = (0, o.ZP)({
+  } = e, b = f && null != s, j = l.useRef(null), O = l.useMemo(() => "roles-".concat((0, i.Z)()), []), T = (0, o.ZP)({
     id: O,
     isEnabled: true,
     scrollToStart: h.Cyb,
@@ -99,7 +99,7 @@ function T(e) {
       guildId: c.id,
       disableBorderColor: true,
       onRemove: () => m(e),
-      canRemove: (null == (l = e.tags) ? true : l.guild_connections) === null ? t.id === n.id : f && b.r6(c, n.id, u, e)
+      canRemove: (null == (l = e.tags) ? true : l.guild_connections) === null ? t.id === n.id : f && g.r6(c, n.id, u, e)
     }, e.id)
   });
   return (0, r.jsx)(a.bG, {
@@ -114,7 +114,7 @@ function T(e) {
           "aria-label": N,
           ref: t
         }, n), {
-          children: [S, g && (0, r.jsx)(x.Z, {
+          children: [S, b && (0, r.jsx)(x.Z, {
             buttonRef: j,
             guild: c,
             guildMember: s,
@@ -136,7 +136,7 @@ function Z(e) {
   } = e, o = E(e, ["user", "currentUser", "guildId"]);
   let {
     trackUserProfileAction: a
-  } = (0, g.KZ)(), y = (0, c.e7)([p.Z], () => p.Z.getGuild(i)), x = (0, c.e7)([u.ZP], () => u.ZP.getMember(i, t.id)), _ = null == x ? true : x.roles, Z = (0, c.Wu)([f.Z], () => f.Z.getManyRoles(i, null != _ ? _ : []).sort(j.Z), [_, i]), [N] = (0, c.Wu)([m.Z], () => [m.Z.can(h.Plq.MANAGE_ROLES, y), m.Z.getGuildVersion(i)]), S = l.useCallback(e => {
+  } = (0, b.KZ)(), y = (0, c.e7)([p.Z], () => p.Z.getGuild(i)), x = (0, c.e7)([u.ZP], () => u.ZP.getMember(i, t.id)), _ = null == x ? true : x.roles, Z = (0, c.Wu)([f.Z], () => f.Z.getManyRoles(i, null != _ ? _ : []).sort(j.Z), [_, i]), [N] = (0, c.Wu)([m.Z], () => [m.Z.can(h.Plq.MANAGE_ROLES, y), m.Z.getGuildVersion(i)]), S = l.useCallback(e => {
     var n, r;
     a({
       action: "REMOVE_ROLE"
@@ -161,7 +161,7 @@ function Z(e) {
       guild: y,
       guildMember: x,
       roles: Z,
-      highestRole: b.e9(y, n.id),
+      highestRole: g.e9(y, n.id),
       canManageRoles: N,
       onAddRole: w,
       onRemoveRole: S

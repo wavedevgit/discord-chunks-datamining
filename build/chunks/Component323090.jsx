@@ -47,25 +47,25 @@ function O(e) {
       channel: P,
       guildId: x,
       onClick: v
-    }), (null == O ? true : O.guildId) != null && (0, r.jsx)(b.Z, {
+    }), (null == O ? true : O.guildId) != null && (0, r.jsx)(g.Z, {
       user: t,
       currentUser: n,
       guildId: O.guildId,
-      scrollIntoView: h === g.Tb.ROLES
+      scrollIntoView: h === b.Tb.ROLES
     }), (0, r.jsx)(m.Z, {
       heading: j.intl.string(j.t["A//N4u"]),
       children: (0, r.jsx)(p.Z, {
         userId: t.id,
         guildId: x,
-        tooltipDelay: g.vB
+        tooltipDelay: b.vB
       })
     }), (0, r.jsx)(m.Z, {
       heading: j.intl.string(j.t["mQKv+v"]),
-      scrollIntoView: h === g.Tb.NOTE,
+      scrollIntoView: h === b.Tb.NOTE,
       children: (0, r.jsx)(o.Z, {
         userId: t.id,
         className: y.note,
-        autoFocus: h === g.Tb.NOTE,
+        autoFocus: h === b.Tb.NOTE,
         onUpdate: () => _({
           action: "SET_NOTE"
         })

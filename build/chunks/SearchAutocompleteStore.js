@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => q
-}), require("./388685.js"), require("./539854.js"), require("./781311.js"), require("./290780.js"), require("./35282.js");
+}), require("./388685.js"), require("./539854.js"), require("./781311.js"), require("./290780.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk279779 = require("./279779.js"),
@@ -411,51 +411,6 @@ class K extends(r = Chunk442837.ZP.Store) {
   }
   getSelectedSearchContext() {
     return O
-  }
-  getFilterResults(e, t, n) {
-    var r, i, o;
-    let {
-      tokens: a
-    } = null != (r = v[(0, m.Tm)(e)]) ? r : {}, s = [];
-    switch (t) {
-      case b.dCx.FILTER_FROM:
-      case b.dCx.FILTER_MENTIONS:
-        if (b.Xyh.test(n) || (0, E.co)(n)) {
-          let e = f.default.getUser(n);
-          null != e && (s = [{
-            user: e,
-            text: h.ZP.getUserTag(e)
-          }])
-        }
-        if ((0, m.b7)(e)) {
-          let t = u.Z.getCurrentlySelectedChannelId(e.guildId),
-            r = _.ZP.getRecentlyTalked(t, T);
-          if (0 === n.trim().length) return r.forEach(e => {
-            let {
-              record: t
-            } = e;
-            s.push({
-              user: t,
-              text: h.ZP.getUserTag(t)
-            })
-          }), s
-        }
-        let l = null == (i = E.ZP[t]) ? true : i.getAutocompletions;
-        return s = null != l ? l({
-          query: n,
-          searchContext: e,
-          maxResults: T,
-          tokens: a
-        }) : [];
-      default:
-        let c = null == (o = E.ZP[t]) ? true : o.getAutocompletions;
-        return s = null != c ? c({
-          query: n,
-          searchContext: e,
-          maxResults: T,
-          tokens: a
-        }) : []
-    }
   }
 }
 y(K, "displayName", "SearchAutocompleteStore");

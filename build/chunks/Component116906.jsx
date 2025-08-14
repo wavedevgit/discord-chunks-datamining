@@ -50,10 +50,10 @@ function I(e) {
   } = (0, p.Z)({
     userId: t.id,
     guildId: P
-  }), L = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, k = (0, l.e7)([s.Z, c.Z], () => {
+  }), L = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, G = (0, l.e7)([s.Z, c.Z], () => {
     let e = R ? s.Z.getStatus() : c.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), G = S.length > 0 || null != A, B = Z && null == A && null == D && null != C, M = !k && (G || B), U = w.length > 0;
+  }), k = S.length > 0 || null != A, B = Z && null == A && null == D && null != C, M = !G && (k || B), U = w.length > 0;
   return M || U || !L ? (0, r.jsxs)(i.zJl, {
     className: v.scroller,
     fade: true,
@@ -78,7 +78,7 @@ function I(e) {
             profileGuildId: null == I ? true : I.guildId
           })
         }), S.map((e, l) => (0, r.jsx)("li", {
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(g.Z, {
             user: t,
             currentUser: n,
             activity: e,
@@ -99,7 +99,7 @@ function I(e) {
       children: (0, r.jsx)("ul", {
         className: v.activityList,
         children: w.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(g.Z, {
+          children: (0, r.jsx)(b.Z, {
             location: "UserProfileModalActivity",
             user: t,
             currentUser: n,

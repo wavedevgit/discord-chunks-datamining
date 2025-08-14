@@ -1,7 +1,7 @@
 /** Chunk was on 7384 **/
 /** chunk id: 177508, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => er
+  Z: () => ea
 }), require("./704826.js"), require("./35282.js"), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -26,6 +26,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk37148 = require("./37148.jsx"),
   Chunk907862 = require("./907862.js"),
   Chunk466590 = require("./466590.jsx"),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk240872 = require("./240872.jsx"),
   Chunk514361 = require("./514361.js"),
@@ -42,12 +43,13 @@ var Chunk255367 = require("./255367.js"),
   Chunk231338 = require("./231338.js"),
   Chunk726927 = require("./726927.js"),
   Chunk177475 = require("./177475.js"),
+  Chunk518797 = require("./518797.js"),
   Chunk691739 = require("./691739.js"),
   Chunk453707 = require("./453707.js"),
   Chunk315416 = require("./315416.js"),
   Chunk715720 = require("./715720.js");
 
-function W(e) {
+function K(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -66,7 +68,7 @@ function W(e) {
   return e
 }
 
-function Y(e, t) {
+function q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -79,21 +81,21 @@ function Y(e, t) {
   }), e
 }
 
-function K() {
+function X() {
   return (0, Chunk255367.jsxs)("div", {
     className: Chunk726927.root,
-    children: [(0, Chunk255367.jsx)(q, {}), (0, Chunk255367.jsx)(ea, {}), (0, Chunk255367.jsx)(eg, {}), (0, Chunk255367.jsx)(eh, {}), (0, Chunk255367.jsx)(ep, {}), (0, Chunk255367.jsx)(eu, {}), (0, Chunk255367.jsx)(em, {}), (0, Chunk255367.jsx)(ed, {}), (0, Chunk255367.jsx)(ec, {}), (0, Chunk255367.jsx)(ev, {}), (0, Chunk255367.jsx)(X, {}), (0, Chunk255367.jsx)(eS, {})]
+    children: [(0, Chunk255367.jsx)(J, {}), (0, Chunk255367.jsx)(eo, {}), (0, Chunk255367.jsx)(ef, {}), (0, Chunk255367.jsx)(eb, {}), (0, Chunk255367.jsx)(eh, {}), (0, Chunk255367.jsx)(ep, {}), (0, Chunk255367.jsx)(eg, {}), (0, Chunk255367.jsx)(em, {}), (0, Chunk255367.jsx)(eu, {}), (0, Chunk255367.jsx)(eT, {}), (0, Chunk255367.jsx)(Q, {}), (0, Chunk255367.jsx)(eI, {})]
   })
 }
 
-function q() {
+function J() {
   let e = (0, Chunk580747.Z)("highlight_mana_components");
   return (0, Chunk255367.jsx)(Chunk481060.hjN, {
     title: "Design System Controls",
     children: (0, Chunk255367.jsx)(Chunk481060.xJW, {
       children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
         value: module,
-        onChange: e => (0, P.Z)("highlight_mana_components", e),
+        onChange: e => (0, R.Z)("highlight_mana_components", e),
         note: "Highlights all mana components marked with data-mana-component",
         hideBorder: true,
         children: "Highlight Mana Components"
@@ -102,7 +104,7 @@ function q() {
   })
 }
 
-function X() {
+function Q() {
   let e = Object.keys(Chunk481060.DM8);
   return (0, Chunk255367.jsxs)("div", {
     className: Chunk726927.section,
@@ -111,8 +113,8 @@ function X() {
       children: "Notice"
     }), (0, Chunk255367.jsx)(Chunk481060.Kqy, {
       gap: 16,
-      children: module.map(e => (0, i.jsx)(T.qXd, {
-        color: T.DM8[e],
+      children: module.map(e => (0, i.jsx)(I.qXd, {
+        color: I.DM8[e],
         children: (0, i.jsxs)("code", {
           children: ["NoticeColors.", e]
         })
@@ -120,27 +122,27 @@ function X() {
     })]
   })
 }
-let J = ["neutral", "blue_new", "blurple", "green_new", "red_new", "teal_new", "yellow_new", "orange_new", "pink", "purple"],
-  Q = ["background-surface-highest", "background-surface-higher", "background-surface-high", "background-base-low", "background-base-lower", "background-base-lowest"],
-  $ = ["background-gradient-lowest", "background-gradient-lower", "background-gradient-low", "background-gradient-high", "background-gradient-higher", "background-gradient-highest"],
-  ee = ["", "background-mod-subtle", "background-mod-normal", "background-mod-strong"],
-  et = ["critical", "warning", "positive", "info"],
-  en = ["text-default", "text-primary", "text-secondary", "text-tertiary", "text-feedback-critical", "text-feedback-warning", "text-feedback-positive", "text-feedback-info", "premium-nitro-pink-text"];
+let $ = ["neutral", "blue_new", "blurple", "green_new", "red_new", "teal_new", "yellow_new", "orange_new", "pink", "purple"],
+  ee = ["background-surface-highest", "background-surface-higher", "background-surface-high", "background-base-low", "background-base-lower", "background-base-lowest"],
+  et = ["background-gradient-lowest", "background-gradient-lower", "background-gradient-low", "background-gradient-high", "background-gradient-higher", "background-gradient-highest"],
+  en = ["", "background-mod-subtle", "background-mod-normal", "background-mod-strong"],
+  ei = ["critical", "warning", "positive", "info"],
+  er = ["text-default", "text-primary", "text-secondary", "text-tertiary", "text-feedback-critical", "text-feedback-warning", "text-feedback-positive", "text-feedback-info", "premium-nitro-pink-text"];
 
-function ei() {
+function es() {
   let e = (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.gradientPreset);
   return (0, Chunk255367.jsxs)("div", {
     children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       className: Chunk726927.heading,
       children: "Background Colors"
-    }), Q.map(e => (0, i.jsxs)("div", {
-      className: U.palette,
+    }), ee.map(e => (0, i.jsxs)("div", {
+      className: V.palette,
       style: {
         backgroundColor: "var(--".concat(e, ")"),
         padding: 24
       },
-      children: [(0, i.jsx)(T.Text, {
+      children: [(0, i.jsx)(I.Text, {
         variant: "text-md/medium",
         children: e
       }), (0, i.jsx)("div", {
@@ -149,19 +151,19 @@ function ei() {
           gap: 8,
           gridTemplateColumns: "repeat(3, 1fr)"
         },
-        children: ee.map(e => (0, i.jsxs)("div", {
-          className: U.color,
+        children: en.map(e => (0, i.jsxs)("div", {
+          className: V.color,
           style: {
             padding: 16,
             background: "var(--".concat(e, ")")
           },
-          children: [(0, i.jsx)(T.Text, {
+          children: [(0, i.jsx)(I.Text, {
             variant: "text-xs/semibold",
             color: "header-secondary",
             children: e
           }), (0, i.jsx)("hr", {
-            className: U.sectionDivider
-          }), en.map(e => (0, i.jsx)(T.Text, {
+            className: V.sectionDivider
+          }), er.map(e => (0, i.jsx)(I.Text, {
             variant: "text-xs/medium",
             style: {
               color: "var(--".concat(e, ")")
@@ -170,32 +172,32 @@ function ei() {
           }, e))]
         }, e))
       }), (0, i.jsx)("hr", {
-        className: U.sectionDivider
+        className: V.sectionDivider
       }), (0, i.jsx)("div", {
         style: {
           display: "grid",
           gap: 8,
           gridTemplateColumns: "repeat(3, 1fr)"
         },
-        children: et.map(e => {
+        children: ei.map(e => {
           let t = "var(--text-feedback-".concat(e, ")");
           return (0, i.jsxs)("div", {
-            className: U.color,
+            className: V.color,
             style: {
               padding: 16,
               background: "var(--background-feedback-".concat(e, ")")
             },
-            children: [(0, i.jsx)(T.Text, {
+            children: [(0, i.jsx)(I.Text, {
               variant: "text-xs/semibold",
               color: "header-secondary"
-            }), (0, i.jsxs)(T.Kqy, {
-              children: [(0, i.jsxs)(T.Text, {
+            }), (0, i.jsxs)(I.Kqy, {
+              children: [(0, i.jsxs)(I.Text, {
                 variant: "text-xs/semibold",
                 style: {
                   color: t
                 },
                 children: ["background-feedback-", e]
-              }), (0, i.jsx)(T.Text, {
+              }), (0, i.jsx)(I.Text, {
                 variant: "text-xs/normal",
                 style: {
                   color: t
@@ -218,13 +220,13 @@ function ei() {
           gridTemplateColumns: "repeat(6, 1fr)",
           transform: "translateZ(0)"
         },
-        children: $.map(e => (0, i.jsx)("div", {
-          className: U.palette,
+        children: et.map(e => (0, i.jsx)("div", {
+          className: V.palette,
           style: {
             background: "var(--".concat(e, ")"),
             height: 400
           },
-          children: (0, i.jsx)(T.Text, {
+          children: (0, i.jsx)(I.Text, {
             variant: "text-xs/medium",
             children: e
           })
@@ -234,23 +236,23 @@ function ei() {
       variant: "heading-xl/semibold",
       className: Chunk726927.heading,
       children: "Scales"
-    }), J.map(e => (0, i.jsxs)("div", {
-      className: U.palette,
-      children: [(0, i.jsx)(T.Text, {
+    }), $.map(e => (0, i.jsxs)("div", {
+      className: V.palette,
+      children: [(0, i.jsx)(I.Text, {
         variant: "text-lg/semibold",
         children: e
       }), (0, i.jsx)("div", {
-        className: U.colors,
+        className: V.colors,
         children: Array.from({
           length: 100
         }, (t, n) => (0, i.jsx)("div", {
-          className: U.color,
+          className: V.color,
           style: {
             background: "var(--".concat(e.replace("_", "-"), "-").concat(n + 1, ")")
           },
-          children: (0, i.jsx)(T.f6W, {
+          children: (0, i.jsx)(I.f6W, {
             theme: n < 50 ? "light" : "dark",
-            children: t => (0, i.jsxs)(T.Text, {
+            children: t => (0, i.jsxs)(I.Text, {
               className: t,
               variant: "text-xs/medium",
               children: [e, ".", n + 1]
@@ -262,18 +264,18 @@ function ei() {
   })
 }
 
-function er() {
+function ea() {
   return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
     children: [(0, Chunk255367.jsx)(Chunk526156.Z, {
       parentSetting: Chunk726985.s6.DESIGN_SYSTEMS,
       settingsSection: Chunk981631.oAB.DESIGN_SYSTEMS,
       tabs: [{
         title: "Components",
-        component: () => (0, Chunk255367.jsx)(K, {}),
+        component: () => (0, Chunk255367.jsx)(X, {}),
         setting: Chunk726985.s6.DESIGN_SYSTEMS_COMPONENTS
       }, {
         title: "Colors",
-        component: () => (0, Chunk255367.jsx)(ei, {}),
+        component: () => (0, Chunk255367.jsx)(es, {}),
         setting: Chunk726985.s6.DESIGN_SYSTEMS_COLORS
       }, {
         title: "Animations",
@@ -300,7 +302,7 @@ function er() {
   })
 }
 
-function es(e) {
+function el(e) {
   var {
     component: t,
     showLoadingAnimation: n
@@ -324,36 +326,36 @@ function es(e) {
     l(false)
   }, 3e3)), () => {
     o.current >= 0 && clearTimeout(o.current)
-  }), [a, n]), (0, i.jsx)(t, Y(W({}, s), {
+  }), [a, n]), (0, i.jsx)(t, q(K({}, s), {
     loading: n ? a : true,
     onClick: () => l(!a)
   }))
 }
 
-function ea() {
+function eo() {
   let [e, t] = Chunk73800.useState("md"), [n, s] = Chunk73800.useState("start"), [a, o] = Chunk73800.useState(true), c = ["primary", "secondary", "critical-primary", "critical-secondary", "active", "overlay-primary", "overlay-secondary"], d = [...Chunk442837, "expressive"].map(t => (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(es, {
+    children: [(0, i.jsx)(el, {
       component: u.z,
       variant: t,
       text: "".concat((0, l.capitalize)(t), " ").concat(e.toUpperCase()),
       size: e,
-      icon: "none" !== n ? T.gw7 : true,
+      icon: "none" !== n ? I.gw7 : true,
       iconPosition: n,
       showLoadingAnimation: a
-    }, t + e), (0, i.jsx)(es, {
+    }, t + e), (0, i.jsx)(el, {
       component: u.z,
       variant: t,
       text: "".concat((0, l.capitalize)(t), " ").concat(e.toUpperCase()),
       size: e,
-      icon: "none" !== n ? T.gw7 : true,
+      icon: "none" !== n ? I.gw7 : true,
       iconPosition: n,
       showLoadingAnimation: a,
       disabled: true
     }, t + e + "disabled")]
-  })), g = [...Chunk442837, "icon-only"].map(t => (0, i.jsx)(es, {
+  })), g = [...Chunk442837, "icon-only"].map(t => (0, i.jsx)(el, {
     component: p.h,
     variant: t,
-    icon: T.gw7,
+    icon: I.gw7,
     size: e,
     "aria-label": "".concat(t, " ").concat(e),
     showLoadingAnimation: a
@@ -368,7 +370,7 @@ function ea() {
     children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "Buttons"
-    }), (0, Chunk255367.jsxs)(eo, {
+    }), (0, Chunk255367.jsxs)(ed, {
       title: "Button Options",
       children: [(0, Chunk255367.jsx)(Chunk481060.xJW, {
         title: "Button size",
@@ -453,12 +455,12 @@ function ea() {
           gap: 16,
           children: [(0, Chunk255367.jsxs)(Chunk374415.h, {
             size: module,
-            children: [(0, Chunk255367.jsx)(es, {
+            children: [(0, Chunk255367.jsx)(el, {
               component: Chunk680018.z,
               variant: "secondary",
               text: "Cancel",
               showLoadingAnimation: a
-            }), (0, Chunk255367.jsx)(es, {
+            }), (0, Chunk255367.jsx)(el, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
@@ -466,12 +468,12 @@ function ea() {
             })]
           }), (0, Chunk255367.jsxs)(Chunk374415.h, {
             size: module,
-            children: [(0, Chunk255367.jsx)(es, {
+            children: [(0, Chunk255367.jsx)(el, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
               showLoadingAnimation: a
-            }), (0, Chunk255367.jsx)(es, {
+            }), (0, Chunk255367.jsx)(el, {
               component: Chunk861066.h,
               variant: "secondary",
               icon: Chunk481060.gw7,
@@ -484,12 +486,12 @@ function ea() {
           children: (0, Chunk255367.jsxs)(Chunk374415.h, {
             size: module,
             fullWidth: true,
-            children: [(0, Chunk255367.jsx)(es, {
+            children: [(0, Chunk255367.jsx)(el, {
               component: Chunk680018.z,
               variant: "secondary",
               text: "Cancel",
               showLoadingAnimation: a
-            }), (0, Chunk255367.jsx)(es, {
+            }), (0, Chunk255367.jsx)(el, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
@@ -508,12 +510,12 @@ function ea() {
           children: (0, Chunk255367.jsxs)(Chunk374415.h, {
             direction: "vertical",
             size: module,
-            children: [(0, Chunk255367.jsx)(es, {
+            children: [(0, Chunk255367.jsx)(el, {
               component: Chunk680018.z,
               variant: "secondary",
               text: "Cancel",
               showLoadingAnimation: a
-            }), (0, Chunk255367.jsx)(es, {
+            }), (0, Chunk255367.jsx)(el, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
@@ -526,12 +528,12 @@ function ea() {
             fullWidth: true,
             direction: "vertical",
             size: module,
-            children: [(0, Chunk255367.jsx)(es, {
+            children: [(0, Chunk255367.jsx)(el, {
               component: Chunk680018.z,
               variant: "secondary",
               text: "Cancel",
               showLoadingAnimation: a
-            }), (0, Chunk255367.jsx)(es, {
+            }), (0, Chunk255367.jsx)(el, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
@@ -539,27 +541,27 @@ function ea() {
             })]
           })
         })]
-      }), (0, Chunk255367.jsx)(el, {
+      }), (0, Chunk255367.jsx)(ec, {
         buttonSize: module
       })]
     })]
   })
 }
 
-function el(e) {
+function ec(e) {
   let {
     buttonSize: t
   } = e, [n, s] = r.useState(false);
-  return (0, i.jsxs)(T.Kqy, {
+  return (0, i.jsxs)(I.Kqy, {
     gap: 16,
-    children: [(0, i.jsx)(T.X6q, {
+    children: [(0, i.jsx)(I.X6q, {
       variant: "heading-xl/semibold",
       children: "PlayButton"
-    }), (0, i.jsx)(T.Kqy, {
+    }), (0, i.jsx)(I.Kqy, {
       direction: "horizontal",
       gap: 16,
       children: ["dark", "mid", "light"].map(e => (0, i.jsx)("div", {
-        className: U.video,
+        className: V.video,
         "data-luminance": e,
         children: (0, i.jsx)(g.J, {
           size: t,
@@ -571,41 +573,41 @@ function el(e) {
   })
 }
 
-function eo(e) {
+function ed(e) {
   let {
     children: t,
     title: n
   } = e, [s, l] = r.useState(false);
-  return (0, i.jsxs)(T.Kqy, {
+  return (0, i.jsxs)(I.Kqy, {
     direction: "vertical",
     gap: 0,
     padding: 16,
-    className: U.floatingControls,
-    children: [(0, i.jsxs)(T.Kqy, {
+    className: V.floatingControls,
+    children: [(0, i.jsxs)(I.Kqy, {
       direction: "horizontal",
       gap: 16,
       align: "center",
       justify: "space-between",
-      children: [(0, i.jsx)(T.X6q, {
+      children: [(0, i.jsx)(I.X6q, {
         variant: "heading-lg/semibold",
         children: n
       }), (0, i.jsx)(f.Q, {
-        icon: s ? T.hic : T.sXD,
+        icon: s ? I.hic : I.sXD,
         onClick: () => l(!s),
         pressed: s,
         "aria-label": "Show controls"
       })]
-    }), (0, i.jsx)(T.Kqy, {
+    }), (0, i.jsx)(I.Kqy, {
       gap: 16,
-      className: a()(U.floatingControlsContent, {
-        [U.floatingControlsContentHidden]: !s
+      className: a()(V.floatingControlsContent, {
+        [V.floatingControlsContentHidden]: !s
       }),
       children: t
     })]
   })
 }
 
-function ec() {
+function eu() {
   let [e, t] = Chunk73800.useState("1");
   return (0, Chunk255367.jsxs)("div", {
     className: Chunk726927.section,
@@ -635,7 +637,7 @@ function ec() {
   })
 }
 
-function ed() {
+function em() {
   let [e, t] = Chunk73800.useState(1), [n, s] = Chunk73800.useState(false), [a, l] = Chunk73800.useState(5), [o, c] = Chunk73800.useState(false), d = Chunk73800.useRef(null);
   return (0, Chunk255367.jsxs)("div", {
     className: Chunk726927.section,
@@ -702,7 +704,7 @@ function ed() {
             }), (0, Chunk255367.jsx)(Chunk481060.II_, {
               id: "slider",
               label: "Slider",
-              control: (e, t) => (0, i.jsx)(T._wy, {
+              control: (e, t) => (0, i.jsx)(I._wy, {
                 ref: t,
                 value: a,
                 minValue: 0,
@@ -729,7 +731,7 @@ function ed() {
   })
 }
 
-function eu() {
+function ep() {
   let [e, t] = Chunk73800.useState(Chunk481060.FGA.PRIMARY), n = Chunk73800.useMemo(() => Object.entries(Chunk481060.FGA).map(e => {
     let [t, n] = e;
     return {
@@ -742,6 +744,9 @@ function eu() {
     children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "Tooltips"
+    }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+      variant: "heading-lg/semibold",
+      children: "Legacy Tooltips"
     }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
       title: "Color",
       children: (0, Chunk255367.jsx)(Chunk481060.q4e, {
@@ -759,7 +764,7 @@ function eu() {
         color: module,
         text: "Here's top aligned tooltip text!",
         position: "top",
-        children: e => (0, i.jsx)(T.zxk, W({
+        children: e => (0, i.jsx)(I.zxk, K({
           variant: "primary",
           text: "Tooltip on the top"
         }, e))
@@ -767,7 +772,7 @@ function eu() {
         color: module,
         text: "Here's right aligned tooltip text!",
         position: "left",
-        children: e => (0, i.jsx)(T.zxk, W({
+        children: e => (0, i.jsx)(I.zxk, K({
           variant: "primary",
           text: "Tooltip on the left"
         }, e))
@@ -775,7 +780,7 @@ function eu() {
         color: module,
         text: "Here's bottom aligned tooltip text!",
         position: "bottom",
-        children: e => (0, i.jsx)(T.zxk, W({
+        children: e => (0, i.jsx)(I.zxk, K({
           variant: "primary",
           text: "Tooltip on the bottom"
         }, e))
@@ -783,18 +788,272 @@ function eu() {
         color: module,
         text: "Here's right aligned tooltip text!",
         position: "right",
-        children: e => (0, i.jsx)(T.zxk, W({
+        children: e => (0, i.jsx)(I.zxk, K({
           variant: "primary",
           text: "Tooltip on the right"
         }, e))
       })]
-    }), (0, Chunk255367.jsx)("div", {})]
+    }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+      variant: "heading-lg/semibold",
+      style: {
+        marginTop: 32
+      },
+      children: "New Mana Tooltips"
+    }), (0, Chunk255367.jsxs)("div", {
+      style: {
+        display: "flex",
+        gap: 8,
+        flexWrap: "wrap"
+      },
+      children: [(0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "New Mana Tooltip with animations!",
+        position: "top",
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Mana Tooltip (Top)"
+        })
+      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "Left positioned animated tooltip",
+        position: "left",
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Mana Tooltip (Left)"
+        })
+      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "Bottom positioned animated tooltip",
+        position: "bottom",
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Mana Tooltip (Bottom)"
+        })
+      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "Right positioned animated tooltip",
+        position: "right",
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Mana Tooltip (Right)"
+        })
+      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "Lorem ipsum dolor sit amet, consectetur elit. Sed do eiusmod non proident amo.",
+        position: "right",
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Three lines"
+        })
+      })]
+    }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+      variant: "heading-lg/semibold",
+      style: {
+        marginTop: 32
+      },
+      children: "Tooltip Caret API Examples"
+    }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      variant: "text-md/medium",
+      style: {
+        marginTop: 16,
+        marginBottom: 8
+      },
+      children: "Vertical Positions"
+    }), (0, Chunk255367.jsxs)("div", {
+      style: {
+        display: "flex",
+        gap: 8,
+        flexWrap: "wrap",
+        marginBottom: 16
+      },
+      children: [(0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "Top with start",
+        position: "top",
+        caretConfig: {
+          align: "start"
+        },
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Top - Start"
+        })
+      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "Top with center",
+        position: "top",
+        caretConfig: {
+          align: "center"
+        },
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Top - Center"
+        })
+      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "Top with end",
+        position: "top",
+        caretConfig: {
+          align: "end"
+        },
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Top - End"
+        })
+      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "Bottom with start",
+        position: "bottom",
+        caretConfig: {
+          align: "start"
+        },
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Bottom - Start"
+        })
+      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "Bottom with center",
+        position: "bottom",
+        caretConfig: {
+          align: "center"
+        },
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Bottom - Center"
+        })
+      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "Bottom with end",
+        position: "bottom",
+        caretConfig: {
+          align: "end"
+        },
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Bottom - End"
+        })
+      })]
+    }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      variant: "text-md/medium",
+      style: {
+        marginBottom: 8
+      },
+      children: "Horizontal Positions"
+    }), (0, Chunk255367.jsxs)("div", {
+      style: {
+        display: "flex",
+        gap: 8,
+        flexWrap: "wrap",
+        marginBottom: 16
+      },
+      children: [(0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "Left with center",
+        position: "left",
+        caretConfig: {
+          align: "center"
+        },
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Left - Center"
+        })
+      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "Right with center",
+        position: "right",
+        caretConfig: {
+          align: "center"
+        },
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Right - Center"
+        })
+      })]
+    }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      variant: "text-md/medium",
+      style: {
+        marginBottom: 8
+      },
+      children: "Custom Offset"
+    }), (0, Chunk255367.jsx)("div", {
+      style: {
+        display: "flex",
+        gap: 8,
+        flexWrap: "wrap"
+      },
+      children: (0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "Bottom with custom",
+        position: "bottom",
+        caretConfig: {
+          align: "custom",
+          customOffset: 30
+        },
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Custom Offset"
+        })
+      })
+    }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+      variant: "heading-lg/semibold",
+      style: {
+        marginTop: 32
+      },
+      children: "Tooltip Delays"
+    }), (0, Chunk255367.jsxs)("div", {
+      style: {
+        display: "flex",
+        gap: 8,
+        flexWrap: "wrap"
+      },
+      children: [(0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "No delay (immediate)",
+        delay: 0,
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "No Delay"
+        })
+      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "Short delay (500ms)",
+        delay: 500,
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Short Delay"
+        })
+      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+        text: "Long delay (1000ms)",
+        delay: 1e3,
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Long Delay"
+        })
+      })]
+    }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+      variant: "heading-lg/semibold",
+      style: {
+        marginTop: 32
+      },
+      children: "Rich Tooltips"
+    }), (0, Chunk255367.jsxs)("div", {
+      style: {
+        display: "flex",
+        gap: 8,
+        flexWrap: "wrap"
+      },
+      children: [(0, Chunk255367.jsx)(Chunk681715.i_, {
+        title: "Title goes here",
+        body: "Body copy goes in this section. Meow.",
+        position: "top",
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "Rich Tooltip (No Graphic)"
+        })
+      }), (0, Chunk255367.jsx)(Chunk681715.i_, {
+        title: "With Graphic Asset",
+        body: "This tooltip includes a graphic element on the left side",
+        asset: (0, Chunk255367.jsx)("img", {
+          src: Chunk518797.Z,
+          alt: "Graphic slot 48px"
+        }),
+        position: "top",
+        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "With Asset"
+        })
+      })]
+    })]
   })
 }
 
-function em() {
-  let [e, t] = Chunk73800.useState(false), [n, s] = Chunk73800.useState(false), [a, l] = Chunk73800.useState(false), [o, c] = Chunk73800.useState(false), [d, u] = Chunk73800.useState(false), [m, p] = Chunk73800.useState(false), [g, h] = Chunk73800.useState(false), [f, b] = Chunk73800.useState(false), [x, _] = Chunk73800.useState(false), [j, E] = Chunk73800.useState(false), [C, O] = Chunk73800.useState(false), [I, N] = Chunk73800.useState(false), [y, A] = Chunk73800.useState(false), [P, R] = Chunk73800.useState(false), [D, Z] = Chunk73800.useState(false), [w, k] = Chunk73800.useState(false), [L, B] = Chunk73800.useState(false), [M, V] = Chunk73800.useState(false), [G, W] = Chunk73800.useState(false), Y = Chunk73800.useRef(null), K = Chunk73800.useRef(null), q = Chunk73800.useRef(null), X = Chunk73800.useRef(null), J = Chunk73800.useRef(null), Q = Chunk73800.useRef(null), $ = Chunk73800.useRef(null), ee = Chunk73800.useRef(null), et = Chunk73800.useRef(null), en = Chunk73800.useRef(null), ei = Chunk73800.useRef(null), er = Chunk73800.useRef(null), es = Chunk73800.useRef(null), ea = Chunk73800.useRef(null), el = Chunk73800.useRef(null), eo = Chunk73800.useRef(null), ec = Chunk73800.useRef(null), ed = Chunk73800.useRef(null), eu = Chunk73800.useRef(null), em = Chunk73800.useCallback(() => {
-    exports(false), Chunk120356(false), Chunk392711(false), Chunk442837(false), Chunk680018(false), Chunk861066(false), Chunk179538(false), Chunk257465(false), Chunk82659(false), Chunk103866(false), Chunk37148(false), Chunk514361(false), Chunk377089(false), Chunk580747(false), Chunk799071(false), Chunk706705(false), Chunk981631(false), Chunk177475(false), W(false)
+function eg() {
+  let [e, t] = Chunk73800.useState(false), [n, s] = Chunk73800.useState(false), [a, l] = Chunk73800.useState(false), [o, c] = Chunk73800.useState(false), [d, u] = Chunk73800.useState(false), [m, p] = Chunk73800.useState(false), [g, h] = Chunk73800.useState(false), [f, b] = Chunk73800.useState(false), [x, _] = Chunk73800.useState(false), [j, E] = Chunk73800.useState(false), [C, O] = Chunk73800.useState(false), [T, N] = Chunk73800.useState(false), [y, A] = Chunk73800.useState(false), [P, R] = Chunk73800.useState(false), [D, Z] = Chunk73800.useState(false), [w, k] = Chunk73800.useState(false), [L, B] = Chunk73800.useState(false), [M, U] = Chunk73800.useState(false), [G, F] = Chunk73800.useState(false), H = Chunk73800.useRef(null), K = Chunk73800.useRef(null), q = Chunk73800.useRef(null), X = Chunk73800.useRef(null), J = Chunk73800.useRef(null), Q = Chunk73800.useRef(null), $ = Chunk73800.useRef(null), ee = Chunk73800.useRef(null), et = Chunk73800.useRef(null), en = Chunk73800.useRef(null), ei = Chunk73800.useRef(null), er = Chunk73800.useRef(null), es = Chunk73800.useRef(null), ea = Chunk73800.useRef(null), el = Chunk73800.useRef(null), eo = Chunk73800.useRef(null), ec = Chunk73800.useRef(null), ed = Chunk73800.useRef(null), eu = Chunk73800.useRef(null), em = Chunk73800.useCallback(() => {
+    exports(false), Chunk120356(false), Chunk392711(false), Chunk442837(false), Chunk680018(false), Chunk861066(false), Chunk179538(false), Chunk257465(false), Chunk82659(false), Chunk103866(false), Chunk37148(false), Chunk240872(false), Chunk705262(false), Chunk581612(false), Chunk526156(false), Chunk554042(false), Chunk726985(false), Chunk231338(false), Chunk518797(false)
   }, []);
   return (0, Chunk255367.jsxs)("div", {
     className: Chunk726927.section,
@@ -802,7 +1061,7 @@ function em() {
       variant: "heading-xl/semibold",
       children: "Popovers"
     }), (0, Chunk255367.jsx)(Chunk907862.J2, {
-      targetElementRef: Y,
+      targetElementRef: Chunk691739,
       shouldShow: module,
       onRequestClose: em,
       caretConfig: {
@@ -1017,7 +1276,7 @@ function em() {
       }]
     }), (0, Chunk255367.jsx)(Chunk907862.J2, {
       targetElementRef: er,
-      shouldShow: Chunk240872,
+      shouldShow: Chunk681715,
       onRequestClose: em,
       caretConfig: {
         position: "bottom",
@@ -1037,7 +1296,7 @@ function em() {
       }]
     }), (0, Chunk255367.jsx)(Chunk907862.J2, {
       targetElementRef: es,
-      shouldShow: Chunk705262,
+      shouldShow: Chunk514361,
       onRequestClose: em,
       caretConfig: {
         position: "bottom",
@@ -1061,7 +1320,7 @@ function em() {
       }]
     }), (0, Chunk255367.jsx)(Chunk907862.J2, {
       targetElementRef: ea,
-      shouldShow: Chunk581612,
+      shouldShow: Chunk377089,
       onRequestClose: em,
       caretConfig: {
         position: "bottom",
@@ -1081,7 +1340,7 @@ function em() {
       }]
     }), (0, Chunk255367.jsx)(Chunk907862.Mb, {
       targetElementRef: el,
-      shouldShow: Chunk526156,
+      shouldShow: Chunk580747,
       onRequestClose: em,
       caretConfig: {
         position: "bottom",
@@ -1098,7 +1357,7 @@ function em() {
       }
     }), (0, Chunk255367.jsx)(Chunk466590.e, {
       targetElementRef: eo,
-      shouldShow: Chunk554042,
+      shouldShow: Chunk799071,
       onRequestClose: em,
       caretConfig: {
         position: "bottom",
@@ -1147,7 +1406,7 @@ function em() {
       onStepChange: e => {}
     }), (0, Chunk255367.jsx)(Chunk907862.J2, {
       targetElementRef: ec,
-      shouldShow: Chunk726985,
+      shouldShow: Chunk706705,
       onRequestClose: em,
       caretConfig: {
         position: "bottom",
@@ -1168,7 +1427,7 @@ function em() {
       }]
     }), (0, Chunk255367.jsx)(Chunk466590.e, {
       targetElementRef: ed,
-      shouldShow: Chunk231338,
+      shouldShow: Chunk981631,
       onRequestClose: em,
       caretConfig: {
         position: "bottom",
@@ -1218,7 +1477,7 @@ function em() {
       onStepChange: e => {}
     }), (0, Chunk255367.jsx)(Chunk907862.Mb, {
       targetElementRef: eu,
-      shouldShow: Chunk691739,
+      shouldShow: Chunk177475,
       onRequestClose: em,
       caretConfig: {
         position: "bottom",
@@ -1250,7 +1509,7 @@ function em() {
         children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Small Content",
-          buttonRef: Y,
+          buttonRef: Chunk691739,
           onClick: () => {
             em(), exports(true)
           }
@@ -1375,14 +1634,14 @@ function em() {
           text: "Blue Gradient",
           buttonRef: er,
           onClick: () => {
-            em(), Chunk514361(true)
+            em(), Chunk240872(true)
           }
         }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Nitro Pink Gradient",
           buttonRef: es,
           onClick: () => {
-            em(), Chunk377089(true)
+            em(), Chunk705262(true)
           }
         })]
       })]
@@ -1405,14 +1664,14 @@ function em() {
           text: "Voice Filters",
           buttonRef: ea,
           onClick: () => {
-            em(), Chunk580747(true)
+            em(), Chunk581612(true)
           }
         }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Video Media Viewer",
           buttonRef: el,
           onClick: () => {
-            em(), Chunk799071(true)
+            em(), Chunk526156(true)
           }
         })]
       })]
@@ -1435,7 +1694,7 @@ function em() {
           text: "Multi-Step",
           buttonRef: eo,
           onClick: () => {
-            em(), Chunk706705(true)
+            em(), Chunk554042(true)
           }
         })
       })]
@@ -1458,21 +1717,21 @@ function em() {
           text: "Expressive Popover",
           buttonRef: ec,
           onClick: () => {
-            em(), Chunk981631(true)
+            em(), Chunk726985(true)
           }
         }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Expressive Multi-Step",
           buttonRef: ed,
           onClick: () => {
-            em(), Chunk177475(true)
+            em(), Chunk231338(true)
           }
         }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Expressive Video",
           buttonRef: eu,
           onClick: () => {
-            em(), W(true)
+            em(), Chunk518797(true)
           }
         })]
       })]
@@ -1480,7 +1739,7 @@ function em() {
   })
 }
 
-function ep() {
+function eh() {
   let [e, t] = Chunk73800.useState(false), [n, s] = Chunk73800.useState(false), [a, l] = Chunk73800.useState("auto");
   return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
     children: [(0, Chunk255367.jsxs)("div", {
@@ -1636,7 +1895,7 @@ function ep() {
   })
 }
 
-function eg() {
+function ef() {
   let [e, t] = Chunk73800.useState(null), [n, s] = Chunk73800.useState(null), [a, l] = Chunk73800.useState([]), [c, d] = Chunk73800.useState([]), [u, m] = Chunk73800.useState([]);
   return (0, Chunk255367.jsxs)("div", {
     className: Chunk726927.section,
@@ -1681,7 +1940,7 @@ function eg() {
           border: "1px solid var(--bg-brand)",
           borderRadius: 8
         },
-        children: (0, i.jsx)(T.Text, {
+        children: (0, i.jsx)(I.Text, {
           variant: "text-md/bold",
           children: e.label
         })
@@ -1690,7 +1949,7 @@ function eg() {
   })
 }
 
-function eh() {
+function eb() {
   let [e, t] = Chunk73800.useState(""), [n, s] = Chunk73800.useState(""), [a, l] = Chunk73800.useState(""), o = (0, Chunk377089.U)("UserSettingsDesignSystems");
   return (0, Chunk255367.jsxs)("div", {
     className: Chunk726927.section,
@@ -1787,30 +2046,30 @@ function eh() {
   })
 }
 
-function ef(e) {
+function ex(e) {
   let {
     transitionState: t
-  } = e, [n, s] = r.useState(false), [a, l] = r.useState(T.CgR.SMALL), [o, c] = r.useState(false), d = n ? U.modalOutlines : "";
-  return (0, i.jsxs)(T.Y0X, {
+  } = e, [n, s] = r.useState(false), [a, l] = r.useState(I.CgR.SMALL), [o, c] = r.useState(false), d = n ? V.modalOutlines : "";
+  return (0, i.jsxs)(I.Y0X, {
     transitionState: t,
     size: a,
     parentComponent: "UserSettingsDesignSystem",
-    children: [(0, i.jsx)(T.xBx, {
+    children: [(0, i.jsx)(I.xBx, {
       className: d,
-      children: (0, i.jsx)(T.X6q, {
+      children: (0, i.jsx)(I.X6q, {
         variant: "heading-xl/semibold",
         children: "Modal"
       })
-    }), (0, i.jsx)(T.hzk, {
+    }), (0, i.jsx)(I.hzk, {
       className: d,
-      children: (0, i.jsxs)(T.Kqy, {
+      children: (0, i.jsxs)(I.Kqy, {
         gap: 16,
-        children: [(0, i.jsx)(T.xJW, {
+        children: [(0, i.jsx)(I.xJW, {
           title: "Modal Size",
-          children: (0, i.jsx)(T.q4e, {
+          children: (0, i.jsx)(I.q4e, {
             value: a,
             onChange: l,
-            options: Object.entries(T.CgR).map(e => {
+            options: Object.entries(I.CgR).map(e => {
               let [t, n] = e;
               return {
                 label: t,
@@ -1818,21 +2077,21 @@ function ef(e) {
               }
             })
           })
-        }), (0, i.jsx)(T.hjN, {
+        }), (0, i.jsx)(I.hjN, {
           title: "Options",
-          children: (0, i.jsxs)(T.Kqy, {
+          children: (0, i.jsxs)(I.Kqy, {
             gap: 16,
-            children: [(0, i.jsx)(T.XZJ, {
+            children: [(0, i.jsx)(I.XZJ, {
               value: n,
               onChange: (e, t) => s(t),
-              children: (0, i.jsx)(T.Text, {
+              children: (0, i.jsx)(I.Text, {
                 variant: "text-md/medium",
                 children: "Show Section Outlines"
               })
-            }), (0, i.jsx)(T.XZJ, {
+            }), (0, i.jsx)(I.XZJ, {
               value: o,
               onChange: (e, t) => c(t),
-              children: (0, i.jsx)(T.Text, {
+              children: (0, i.jsx)(I.Text, {
                 variant: "text-md/medium",
                 children: "Show secondary action in footer"
               })
@@ -1840,16 +2099,16 @@ function ef(e) {
           })
         })]
       })
-    }), (0, i.jsx)(T.mzw, {
+    }), (0, i.jsx)(I.mzw, {
       className: d,
-      children: (0, i.jsxs)(T.Kqy, {
+      children: (0, i.jsxs)(I.Kqy, {
         direction: "horizontal",
         justify: "end",
         gap: 8,
-        children: [o && (0, i.jsx)(T.zxk, {
+        children: [o && (0, i.jsx)(I.zxk, {
           variant: "secondary",
           text: "Secondary Action"
-        }), (0, i.jsx)(T.zxk, {
+        }), (0, i.jsx)(I.zxk, {
           variant: "primary",
           text: "Close"
         })]
@@ -1858,30 +2117,30 @@ function ef(e) {
   })
 }
 
-function eb(e) {
+function e_(e) {
   let {
     transitionState: t,
     onClose: n,
     modalCount: s = 1
   } = e, [a, l] = r.useState("replace"), o = s < 3;
-  return (0, i.jsxs)(T.Y0X, {
+  return (0, i.jsxs)(I.Y0X, {
     transitionState: t,
-    size: 1 === s ? T.CgR.LARGE : 2 === s ? T.CgR.MEDIUM : T.CgR.SMALL,
+    size: 1 === s ? I.CgR.LARGE : 2 === s ? I.CgR.MEDIUM : I.CgR.SMALL,
     parentComponent: "UserSettingsDesignSystem",
-    children: [(0, i.jsx)(T.xBx, {
-      children: (0, i.jsx)(T.X6q, {
+    children: [(0, i.jsx)(I.xBx, {
+      children: (0, i.jsx)(I.X6q, {
         variant: "heading-xl/semibold",
         children: "Modal Stacking Demo"
       })
-    }), (0, i.jsx)(T.hzk, {
-      children: (0, i.jsxs)(T.Kqy, {
+    }), (0, i.jsx)(I.hzk, {
+      children: (0, i.jsxs)(I.Kqy, {
         gap: 16,
-        children: [(0, i.jsxs)(T.Text, {
+        children: [(0, i.jsxs)(I.Text, {
           variant: "text-md/medium",
           children: ["This is modal level ", s, "."]
-        }), o && (0, i.jsx)(T.xJW, {
+        }), o && (0, i.jsx)(I.xJW, {
           title: "Stacking Behavior",
-          children: (0, i.jsx)(T.q4e, {
+          children: (0, i.jsx)(I.q4e, {
             value: a,
             onChange: l,
             options: [{
@@ -1895,21 +2154,21 @@ function eb(e) {
               value: "replaceAll"
             }]
           })
-        }), (0, i.jsxs)(T.Kqy, {
+        }), (0, i.jsxs)(I.Kqy, {
           gap: 8,
-          children: [(0, i.jsxs)(T.Text, {
+          children: [(0, i.jsxs)(I.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
             children: [(0, i.jsx)("strong", {
               children: "Replace One:"
             }), " The modal directly below is hidden (default behavior)"]
-          }), (0, i.jsxs)(T.Text, {
+          }), (0, i.jsxs)(I.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
             children: [(0, i.jsx)("strong", {
               children: "Replace All:"
             }), " All modals below are hidden"]
-          }), (0, i.jsxs)(T.Text, {
+          }), (0, i.jsxs)(I.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
             children: [(0, i.jsx)("strong", {
@@ -1918,21 +2177,21 @@ function eb(e) {
           })]
         })]
       })
-    }), (0, i.jsx)(T.mzw, {
-      children: (0, i.jsxs)(T.Kqy, {
+    }), (0, i.jsx)(I.mzw, {
+      children: (0, i.jsxs)(I.Kqy, {
         direction: "horizontal",
         justify: "end",
         gap: 8,
-        children: [(0, i.jsx)(T.zxk, {
+        children: [(0, i.jsx)(I.zxk, {
           variant: "secondary",
           text: "Close",
           onClick: n
-        }), o && (0, i.jsx)(T.zxk, {
+        }), o && (0, i.jsx)(I.zxk, {
           variant: "primary",
           text: "Open Next Modal",
           onClick: () => {
             let e = s + 1;
-            (0, T.h7j)(t => (0, i.jsx)(eb, Y(W({}, t), {
+            (0, I.h7j)(t => (0, i.jsx)(e_, q(K({}, t), {
               modalCount: e
             })), {
               stackingBehavior: a
@@ -1944,7 +2203,7 @@ function eb(e) {
   })
 }
 
-function ex(e) {
+function ej(e) {
   let {
     transitionState: t,
     onClose: n
@@ -1955,7 +2214,7 @@ function ex(e) {
       children: t
     } = e;
     return (0, i.jsx)("div", {
-      className: U.modalOutlines,
+      className: V.modalOutlines,
       style: {
         padding: "24px"
       },
@@ -1966,7 +2225,7 @@ function ex(e) {
     transitionState: t,
     onClose: n,
     children: [(0, i.jsx)("div", {
-      className: U.modalOutlines,
+      className: V.modalOutlines,
       children: (0, i.jsx)(O.x, {
         title: "Demo Modal",
         subtitle: "The ModalHeader can have leading and trailing items on either side of the text",
@@ -1974,7 +2233,7 @@ function ex(e) {
         trailing: (0, i.jsx)(r, {})
       })
     }), (0, i.jsx)("div", {
-      className: U.modalOutlines,
+      className: V.modalOutlines,
       children: (0, i.jsx)(E.f, {
         controls: (0, i.jsx)(r, {
           children: "This ModalBody renders any controls here"
@@ -1984,14 +2243,14 @@ function ex(e) {
         })
       })
     }), (0, i.jsx)("div", {
-      className: U.modalOutlines,
+      className: V.modalOutlines,
       children: (0, i.jsx)(C.m, {
         children: (0, i.jsx)(r, {
           children: "This is the ModalFooter"
         })
       })
     }), (0, i.jsx)("div", {
-      className: U.modalOutlines,
+      className: V.modalOutlines,
       children: (0, i.jsx)(j.G, {
         leading: (0, i.jsx)(r, {
           children: "ModalActionBar leading"
@@ -2010,7 +2269,7 @@ function ex(e) {
   })
 }
 
-function e_(e) {
+function eE(e) {
   let {
     transitionState: t,
     onClose: n
@@ -2024,16 +2283,16 @@ function e_(e) {
       subtitle: c,
       alignCenter: u
     }), (0, i.jsx)(E.f, {
-      controls: p ? (0, i.jsx)(T.E1j, {
+      controls: p ? (0, i.jsx)(I.E1j, {
         placeholder: "Search",
         onChange: () => null,
         query: ""
       }) : true,
-      children: (0, i.jsxs)(T.Kqy, {
+      children: (0, i.jsxs)(I.Kqy, {
         gap: 16,
-        children: [(0, i.jsx)(T.xJW, {
+        children: [(0, i.jsx)(I.xJW, {
           title: "Modal Size",
-          children: (0, i.jsx)(T.q4e, {
+          children: (0, i.jsx)(I.q4e, {
             value: s,
             onChange: a,
             options: [{
@@ -2050,54 +2309,54 @@ function e_(e) {
               value: "xl"
             }]
           })
-        }), (0, i.jsx)(T.xJW, {
+        }), (0, i.jsx)(I.xJW, {
           title: "Header Title",
-          children: (0, i.jsx)(T.oil, {
+          children: (0, i.jsx)(I.oil, {
             onChange: o,
             defaultValue: l
           })
-        }), (0, i.jsx)(T.xJW, {
+        }), (0, i.jsx)(I.xJW, {
           title: "Header body",
-          children: (0, i.jsx)(T.oil, {
+          children: (0, i.jsx)(I.oil, {
             onChange: d,
             defaultValue: c
           })
-        }), (0, i.jsx)(T.xJW, {
+        }), (0, i.jsx)(I.xJW, {
           title: "Optional Content",
-          children: (0, i.jsxs)(T.Kqy, {
+          children: (0, i.jsxs)(I.Kqy, {
             gap: 12,
-            children: [(0, i.jsx)(T.XZJ, {
+            children: [(0, i.jsx)(I.XZJ, {
               value: u,
               onChange: (e, t) => m(t),
-              children: (0, i.jsx)(T.Text, {
+              children: (0, i.jsx)(I.Text, {
                 variant: "text-md/medium",
                 children: "Header Align Center"
               })
-            }), (0, i.jsx)(T.XZJ, {
+            }), (0, i.jsx)(I.XZJ, {
               value: p,
               onChange: (e, t) => g(t),
-              children: (0, i.jsx)(T.Text, {
+              children: (0, i.jsx)(I.Text, {
                 variant: "text-md/medium",
                 children: "Show Search Input"
               })
-            }), (0, i.jsx)(T.XZJ, {
+            }), (0, i.jsx)(I.XZJ, {
               value: h,
               onChange: (e, t) => f(t),
-              children: (0, i.jsx)(T.Text, {
+              children: (0, i.jsx)(I.Text, {
                 variant: "text-md/medium",
                 children: "Show Preview Content"
               })
-            }), (0, i.jsx)(T.XZJ, {
+            }), (0, i.jsx)(I.XZJ, {
               value: x,
               onChange: (e, t) => _(t),
-              children: (0, i.jsx)(T.Text, {
+              children: (0, i.jsx)(I.Text, {
                 variant: "text-md/medium",
                 children: "Show Action Bar Leading Input"
               })
-            }), (0, i.jsx)(T.XZJ, {
+            }), (0, i.jsx)(I.XZJ, {
               value: v,
               onChange: (e, t) => S(t),
-              children: (0, i.jsx)(T.Text, {
+              children: (0, i.jsx)(I.Text, {
                 variant: "text-md/medium",
                 children: "Full Width Actions"
               })
@@ -2106,10 +2365,10 @@ function e_(e) {
         })]
       })
     }), h && (0, i.jsxs)(C.m, {
-      children: [(0, i.jsx)(T.X6q, {
+      children: [(0, i.jsx)(I.X6q, {
         variant: "heading-lg/semibold",
         children: "Celebration Station"
-      }), (0, i.jsx)(T.Text, {
+      }), (0, i.jsx)(I.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: "32 Members ● 19 Online"
@@ -2133,7 +2392,7 @@ function e_(e) {
   })
 }
 
-function ej(e) {
+function eC(e) {
   let {
     transitionState: t,
     onClose: n
@@ -2147,10 +2406,10 @@ function ej(e) {
       style: {
         padding: "8px 0"
       },
-      children: (0, i.jsx)(T.XZJ, {
+      children: (0, i.jsx)(I.XZJ, {
         value: n,
         onChange: (e, t) => s(t),
-        children: (0, i.jsx)(T.Text, {
+        children: (0, i.jsx)(I.Text, {
           variant: "text-md/medium",
           children: t
         })
@@ -2162,16 +2421,16 @@ function ej(e) {
     onClose: n,
     size: "md",
     title: "Invite to server",
-    input: (0, i.jsx)(T.E1j, {
+    input: (0, i.jsx)(I.E1j, {
       placeholder: "Search",
       onChange: () => null,
       query: ""
     }),
     preview: (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(T.X6q, {
+      children: [(0, i.jsx)(I.X6q, {
         variant: "heading-lg/semibold",
         children: "Celebration Station"
-      }), (0, i.jsx)(T.Text, {
+      }), (0, i.jsx)(I.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: "32 Members ● 19 Online"
@@ -2184,7 +2443,7 @@ function ej(e) {
     }, {
       variant: "primary",
       text: "Send Invite",
-      icon: T.kBi,
+      icon: I.kBi,
       iconPosition: "end",
       onClick: n
     }],
@@ -2224,7 +2483,7 @@ function ej(e) {
   })
 }
 
-function eE(e) {
+function eO(e) {
   let {
     transitionState: t,
     onClose: n
@@ -2246,13 +2505,13 @@ function eE(e) {
   })
 }
 
-function eC(e) {
+function ev(e) {
   let {
     transitionState: t,
     onClose: s
   } = e, [a, l] = r.useState(0), [o, c] = r.useState(false), u = r.useMemo(() => 0 === a ? {
     type: "image",
-    src: V
+    src: G
   } : 1 === a ? {
     type: "lottie",
     lottie: () => n.e("94792").then(n.t.bind(n, 972951, 19)),
@@ -2262,13 +2521,13 @@ function eC(e) {
     rive: d.PerfTestRive
   } : 3 === a ? {
     type: "video",
-    src: G.Z,
-    fallbackImageSrc: V,
+    src: H.Z,
+    fallbackImageSrc: G,
     loop: true,
     loopAt: 2.5
   } : 4 === a ? {
     type: "dynamic",
-    component: T.AX$.DEMO,
+    component: I.AX$.DEMO,
     props: {
       text: "Dynamic Content"
     }
@@ -2290,9 +2549,9 @@ function eC(e) {
       text: "Submit",
       onClick: s
     }],
-    children: [(0, i.jsx)(T.xJW, {
+    children: [(0, i.jsx)(I.xJW, {
       title: "Graphic Type",
-      children: (0, i.jsx)(T.q4e, {
+      children: (0, i.jsx)(I.q4e, {
         value: a,
         onChange: l,
         options: [{
@@ -2312,14 +2571,14 @@ function eC(e) {
           value: 4
         }]
       })
-    }), (0, i.jsx)(T.xJW, {
+    }), (0, i.jsx)(I.xJW, {
       style: {
         paddingTop: "16px"
       },
-      children: (0, i.jsx)(T.XZJ, {
+      children: (0, i.jsx)(I.XZJ, {
         value: o,
         onChange: (e, t) => c(t),
-        children: (0, i.jsx)(T.Text, {
+        children: (0, i.jsx)(I.Text, {
           variant: "text-md/medium",
           children: "Show beta badge"
         })
@@ -2328,7 +2587,7 @@ function eC(e) {
   })
 }
 
-function eO(e) {
+function eS(e) {
   let {
     transitionState: t,
     onClose: n,
@@ -2349,18 +2608,18 @@ function eO(e) {
       text: "Open Next Modal",
       onClick: () => {
         let e = s + 1;
-        (0, T.h7j)(t => (0, i.jsx)(eO, Y(W({}, t), {
+        (0, I.h7j)(t => (0, i.jsx)(eS, q(K({}, t), {
           modalCount: e
         })), {
           stackingBehavior: a
         })
       }
     }] : []],
-    children: (0, i.jsxs)(T.Kqy, {
+    children: (0, i.jsxs)(I.Kqy, {
       gap: 16,
-      children: [o && (0, i.jsx)(T.xJW, {
+      children: [o && (0, i.jsx)(I.xJW, {
         title: "Stacking Behavior",
-        children: (0, i.jsx)(T.q4e, {
+        children: (0, i.jsx)(I.q4e, {
           value: a,
           onChange: l,
           options: [{
@@ -2374,21 +2633,21 @@ function eO(e) {
             value: "replaceAll"
           }]
         })
-      }), (0, i.jsxs)(T.Kqy, {
+      }), (0, i.jsxs)(I.Kqy, {
         gap: 8,
-        children: [(0, i.jsxs)(T.Text, {
+        children: [(0, i.jsxs)(I.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
           children: [(0, i.jsx)("strong", {
             children: "Replace One:"
           }), " The modal directly below is hidden (default behavior)"]
-        }), (0, i.jsxs)(T.Text, {
+        }), (0, i.jsxs)(I.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
           children: [(0, i.jsx)("strong", {
             children: "Replace All:"
           }), " All modals below are hidden"]
-        }), (0, i.jsxs)(T.Text, {
+        }), (0, i.jsxs)(I.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
           children: [(0, i.jsx)("strong", {
@@ -2400,7 +2659,7 @@ function eO(e) {
   })
 }
 
-function ev() {
+function eT() {
   return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
     children: [(0, Chunk255367.jsxs)("div", {
       className: Chunk726927.section,
@@ -2411,7 +2670,7 @@ function ev() {
         variant: "primary",
         text: "Open modal",
         onClick: () => {
-          (0, Chunk481060.h7j)(e => (0, i.jsx)(ef, W({}, e)))
+          (0, Chunk481060.h7j)(e => (0, i.jsx)(ex, K({}, e)))
         }
       }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
         variant: "primary",
@@ -2428,7 +2687,7 @@ function ev() {
         variant: "primary",
         text: "Open modal stacking demo",
         onClick: () => {
-          (0, Chunk481060.h7j)(e => (0, i.jsx)(eb, W({}, e)))
+          (0, Chunk481060.h7j)(e => (0, i.jsx)(e_, K({}, e)))
         }
       })]
     }), (0, Chunk255367.jsxs)("div", {
@@ -2440,77 +2699,77 @@ function ev() {
         variant: "primary",
         text: "Open modal section visualizer",
         onClick: () => {
-          (0, Chunk481060.h7j)(e => (0, i.jsx)(ex, W({}, e)))
+          (0, Chunk481060.h7j)(e => (0, i.jsx)(ej, K({}, e)))
         }
       }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open demo modal",
         onClick: () => {
-          (0, Chunk481060.h7j)(e => (0, i.jsx)(e_, W({}, e)))
+          (0, Chunk481060.h7j)(e => (0, i.jsx)(eE, K({}, e)))
         }
       }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open sample invite modal",
         onClick: () => {
-          (0, Chunk481060.h7j)(e => (0, i.jsx)(ej, W({}, e)))
+          (0, Chunk481060.h7j)(e => (0, i.jsx)(eC, K({}, e)))
         }
       }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open sample alert modal",
         onClick: () => {
-          (0, Chunk481060.h7j)(e => (0, i.jsx)(eE, W({}, e)))
+          (0, Chunk481060.h7j)(e => (0, i.jsx)(eO, K({}, e)))
         }
       }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open expressive modal",
         onClick: () => {
-          (0, Chunk481060.h7j)(e => (0, i.jsx)(eC, W({}, e)))
+          (0, Chunk481060.h7j)(e => (0, i.jsx)(ev, K({}, e)))
         }
       }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open Mana modal stacking demo",
         onClick: () => {
-          (0, Chunk481060.h7j)(e => (0, i.jsx)(eO, W({}, e)))
+          (0, Chunk481060.h7j)(e => (0, i.jsx)(eS, K({}, e)))
         }
       })]
     })]
   })
 }
 
-function eS() {
+function eI() {
   let e = (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.gradientPreset);
   return (0, Chunk255367.jsx)(Chunk481060.f6W, {
     theme: Chunk231338.BR.DARKER,
     disableAdaptiveTheme: true,
     children: t => (0, i.jsxs)("div", {
-      className: a()(t, U.section),
-      children: [(0, i.jsx)(T.zxk, {
+      className: a()(t, V.section),
+      children: [(0, i.jsx)(I.zxk, {
         variant: "secondary",
         text: "Button",
         fullWidth: true
-      }), (0, i.jsx)(T.f6W, {
-        theme: M.BR.LIGHT,
+      }), (0, i.jsx)(I.f6W, {
+        theme: U.BR.LIGHT,
         children: t => (0, i.jsxs)("div", {
-          className: a()(t, U.section),
-          children: [(0, i.jsx)(T.zxk, {
+          className: a()(t, V.section),
+          children: [(0, i.jsx)(I.zxk, {
             variant: "secondary",
             text: "Button",
             fullWidth: true
-          }), (0, i.jsx)(T.f6W, {
-            theme: M.BR.DARKER,
+          }), (0, i.jsx)(I.f6W, {
+            theme: U.BR.DARKER,
             children: e => (0, i.jsx)("div", {
-              className: a()(e, U.section),
-              children: (0, i.jsx)(T.zxk, {
+              className: a()(e, V.section),
+              children: (0, i.jsx)(I.zxk, {
                 variant: "secondary",
                 text: "Button",
                 fullWidth: true
               })
             })
-          }), (0, i.jsx)(T.f6W, {
+          }), (0, i.jsx)(I.f6W, {
             gradient: e,
             children: e => (0, i.jsx)("div", {
-              className: a()(e, U.section),
-              children: (0, i.jsx)(T.zxk, {
+              className: a()(e, V.section),
+              children: (0, i.jsx)(I.zxk, {
                 variant: "secondary",
                 text: "Button",
                 fullWidth: true

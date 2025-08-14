@@ -1,7 +1,7 @@
 /** Chunk was on 76708 **/
 /** chunk id: 840367, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -22,14 +22,14 @@ let m = {
   [Chunk296009.l.PLAYED_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.scOKER)
 };
 
-function b(e) {
+function g(e) {
   var t;
   let {
     userId: n,
-    headingId: b,
-    widget: g,
-    disableInteraction: j = false
-  } = e, y = (0, o.e7)([c.default], () => c.default.getId() === n), O = (0, s.kQ)(g), x = m[g.type](), h = y ? (t = g.type) === i.l.FAVORITE_GAMES ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
+    headingId: d,
+    widget: u,
+    disableInteraction: g = false
+  } = e, j = (0, o.e7)([c.default], () => c.default.getId() === n), y = (0, s.kQ)(u), O = m[u.type](), x = j ? (t = u.type) === i.l.FAVORITE_GAMES ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
     numGames: l.k[t]
   }) : true;
   return (0, r.jsxs)("div", {
@@ -39,21 +39,37 @@ function b(e) {
       children: [(0, r.jsx)(a.X6q, {
         variant: "heading-sm/medium",
         color: "text-default",
-        id: b,
-        children: x
-      }), null != h && (0, r.jsx)(a.Text, {
+        id: d,
+        children: O
+      }), null != x && (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
-        children: h
+        children: x
       })]
-    }), y && !j && (0, r.jsxs)("div", {
-      className: p.actions,
-      children: [(0, r.jsx)(d.Z, {
-        disabled: O,
-        widgetType: g.type
-      }), (0, r.jsx)(u.Z, {
-        widget: g
-      })]
+    }), (0, r.jsx)(b, {
+      widget: u,
+      disabled: y,
+      disabledInteraction: g,
+      userId: n
     })]
   })
+}
+
+function b(e) {
+  let {
+    widget: t,
+    disabled: n,
+    disabledInteraction: l,
+    userId: a
+  } = e, s = (0, o.e7)([c.default], () => c.default.getId() === a);
+  return (s || t.type === i.l.FAVORITE_GAMES) && !l ? (0, r.jsxs)("div", {
+    className: p.actions,
+    children: [s && (0, r.jsx)(d.Z, {
+      disabled: n,
+      widgetType: t.type
+    }), (0, r.jsx)(u.Z, {
+      widget: t,
+      userId: a
+    })]
+  }) : null
 }

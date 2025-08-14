@@ -88,7 +88,7 @@ function O(e) {
     widgets: d,
     isGameFetching: u
   } = (0, c.Z)(o), f = (0, i.e7)([a.default], () => a.default.getId() === t.id);
-  return 0 === d.length && f ? (0, r.jsx)(b.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  return 0 === d.length && f ? (0, r.jsx)(g.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [d.map(e => (0, r.jsx)(y, {
       widget: e,
       user: t,
@@ -101,7 +101,7 @@ function O(e) {
 
 function x(e) {
   return (0, r.jsx)(o.Ttm, {
-    className: g.scroller,
+    className: b.scroller,
     fade: true,
     children: (0, r.jsx)(O, j({}, e))
   })

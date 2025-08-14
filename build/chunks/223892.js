@@ -7,6 +7,7 @@ require.d(exports, {
   Ob: () => d,
   Rw: () => f,
   Sd: () => o,
+  Vm: () => m,
   gS: () => _,
   mG: () => p
 });
@@ -128,4 +129,16 @@ function h() {
     autoTrackExposure: true
   });
   return module
+}
+
+function m(e) {
+  let {
+    hideMonetizatonOnboardingInServerSettings: t
+  } = r.kR.getCurrentConfig({
+    guildId: null != e ? e : i.lds,
+    location: "e3bb71_12"
+  }, {
+    autoTrackExposure: false
+  });
+  return t
 }

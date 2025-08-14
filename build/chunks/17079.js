@@ -2,7 +2,8 @@
 /** chunk id: 17079, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => o
+  T: () => o,
+  k: () => a
 });
 var Chunk570140 = require("./570140.js"),
   Chunk155414 = require("./155414.js");
@@ -27,4 +28,11 @@ async function o(e, t) {
       priceTierType: t
     })
   }
+}
+
+function a(e) {
+  r.Z.dispatch({
+    type: "CREATOR_MONETIZATION_SET_HAS_SEEN_ONBOARDING_FOR_GUILD",
+    guildId: e
+  })
 }

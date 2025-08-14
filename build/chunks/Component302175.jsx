@@ -2,7 +2,7 @@
 /** chunk id: 302175, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => B
+  Z: () => Z
 }), require("./388685.js"), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -12,7 +12,6 @@ var Chunk255367 = require("./255367.js"),
   Chunk831209 = require("./831209.js"),
   Chunk494497 = require("./494497.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk434650 = require("./434650.js"),
@@ -27,6 +26,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk158638 = require("./158638.js"),
   Chunk156732 = require("./156732.js"),
   Chunk639777 = require("./639777.js"),
+  Chunk70300 = require("./70300.js"),
   Chunk973772 = require("./973772.js"),
   Chunk441536 = require("./441536.js"),
   Chunk535396 = require("./535396.js"),
@@ -82,9 +82,9 @@ function U(e) {
     onClose: o
   } = e, {
     analyticsLocations: u
-  } = (0, m.ZP)(), d = (0, I.g1)(t, "GuildPowerupMarketingPowerupCard"), y = n.skuId === c.A$, O = (0, A.ZP)(t, n).type !== C.A3.INACTIVE, v = (0, S.Z)(t), [x, j] = i.useState(false), [U, G] = i.useState(false), B = U, Z = i.useCallback(() => {
-    let e = b.Z.getGuild(t);
-    null != e && (0, g.u)({
+  } = (0, h.ZP)(), b = (0, v.g1)(t, "GuildPowerupMarketingPowerupCard"), y = n.skuId === c.A$, O = (0, A.ZP)(t, n).type !== C.A3.INACTIVE, S = (0, T.Z)(t), [x, j] = i.useState(false), [U, G] = i.useState(false), B = U, Z = i.useCallback(() => {
+    let e = E.Z.getGuild(t);
+    null != e && (0, m.u)({
       analyticsLocation: {
         page: R.ZY5.GUILD_POWERUPS_MARKETING,
         section: R.jXE.GUILD_POWERUPS_MARKETING_PERKS_SECTION
@@ -94,25 +94,25 @@ function U(e) {
       guild: e
     })
   }, [t, u]), F = i.useCallback(() => {
-    o(), (0, N.Z)(t, h.Z.GUILD_POWERUPS_MARKETING, n.skuId)
+    o(), (0, N.Z)(t, p.Z.GUILD_POWERUPS_MARKETING, n.skuId)
   }, [t, n.skuId, o]), V = {
     tension: 400,
     friction: 30
-  }, H = (0, _.q_F)({
+  }, H = (0, f.q_F)({
     transform: B ? "translateX(-50%) translateY(16px) scale(1)" : "translateX(-50%) translateY(24px) scale(1.40)",
     borderRadius: "0px",
     transformOrigin: "center 0%",
     config: V
-  }), Y = (0, _.q_F)({
+  }), Y = (0, f.q_F)({
     y: B ? false : 0,
     config: V
-  }), W = (0, _.q_F)({
+  }), W = (0, f.q_F)({
     opacity: +!!B,
     transform: B ? "translateY(0)" : "translateY(20px)",
     config: V
   }), K = i.useCallback(e => {
     e && j(true)
-  }, []), z = (0, p.O)(K), q = (0, T.Z)(n, U);
+  }, []), z = (0, _.O)(K), q = (0, I.Z)(n, U);
   return (0, r.jsxs)("div", {
     className: a()(L.topPerksCard, L.animatedTopPerksCard, D.powerupCard, {
       [L.animate]: x
@@ -135,7 +135,7 @@ function U(e) {
         transform: Y.y.to(e => "translateY(".concat(e, "px)"))
       }),
       className: a()(L.contentContainer, D.contentContainer),
-      children: [(0, r.jsx)(E.xm, {
+      children: [(0, r.jsx)(g.xm, {
         heading: n.title,
         description: n.description,
         label: w.intl.formatToPlainString(P.default.QOacIS, {
@@ -145,24 +145,24 @@ function U(e) {
       }), (0, r.jsxs)(s.animated.div, {
         style: W,
         className: L.buttonsContainer,
-        children: [(0, r.jsx)(f.zx, {
+        children: [(0, r.jsx)(d.zx, {
           grow: true,
           onClick: Z,
-          color: f.zx.Colors.BRAND,
+          color: d.zx.Colors.BRAND,
           className: L.button,
           children: w.intl.string(w.t["oPAx7+"])
-        }), v && (0, r.jsx)(f.zx, {
+        }), S && (0, r.jsx)(d.zx, {
           grow: true,
           onClick: F,
-          color: f.zx.Colors.PRIMARY,
+          color: d.zx.Colors.PRIMARY,
           className: L.button,
           children: w.intl.string(w.t.GoCQxc)
         })]
       })]
-    }), !d && !y && (0, r.jsx)(_.IGR, {
+    }), !b && !y && (0, r.jsx)(f.IGR, {
       className: L.topPerksCardNew,
       text: w.intl.string(w.t.y2b7CA)
-    }), y && (0, r.jsx)(_.IGR, {
+    }), y && (0, r.jsx)(f.IGR, {
       className: L.topPerksCardNew,
       text: w.intl.string(w.t.oW0eUV),
       color: l.Z.BG_BRAND
@@ -171,37 +171,37 @@ function U(e) {
     })]
   })
 }
-let G = Chunk73800.forwardRef((e, t) => {
-  var n, o;
-  let {
-    guild: a,
-    onClose: s
-  } = e;
-  i.useEffect(() => {
-    v.Z.shouldFetchCatalogForGuild(a.id) && (0, O.Sn)(a.id), v.Z.shouldFetchPowerupsForGuild(a.id) && (0, O.Fm)(a.id)
-  }, [a.id]);
-  let l = (0, d.e7)([v.Z], () => v.Z.getStateForGuild(a.id)),
-    c = (null != (o = null == l || null == (n = l.powerupCatalog) ? true : n[C.Us.PERK]) ? o : []).slice(0, 3);
-  return 0 === c.length ? null : (0, r.jsxs)("div", {
-    ref: t,
-    className: D.container,
-    children: [(0, r.jsx)(u.X6, {
-      variant: "heading-xxl/extrabold",
-      children: w.intl.string(P.default.wjI18f)
-    }), (0, r.jsx)(u.xv, {
-      variant: "text-lg/medium",
-      children: w.intl.format(P.default.S562fn, {
-        helpDeskArticle: y.Z.getArticleURL(R.BhN.GUILD_BOOSTING_FAQ)
-      })
-    }), (0, r.jsx)("div", {
-      className: D.powerupsContainer,
-      children: c.map(e => (0, r.jsx)(U, {
-        guildId: a.id,
-        powerup: e,
-        onClose: s
-      }, "guild-powerup-marketing-".concat(e.skuId)))
-    })]
-  })
-});
-G.displayName = "GuildPowerupsMarketingPowerupCards";
-let B = G
+let G = 3,
+  B = Chunk73800.forwardRef((e, t) => {
+    let {
+      guild: n,
+      onClose: o
+    } = e;
+    i.useEffect(() => {
+      O.Z.shouldFetchCatalogForGuild(n.id) && (0, y.Sn)(n.id), O.Z.shouldFetchPowerupsForGuild(n.id) && (0, y.Fm)(n.id)
+    }, [n.id]);
+    let a = (0, S.Z)(n.id),
+      s = (null != a ? a : []).slice(0, G);
+    return 0 === s.length ? null : (0, r.jsxs)("div", {
+      ref: t,
+      className: D.container,
+      children: [(0, r.jsx)(u.X6, {
+        variant: "heading-xxl/extrabold",
+        children: w.intl.string(P.default.wjI18f)
+      }), (0, r.jsx)(u.xv, {
+        variant: "text-lg/medium",
+        children: w.intl.format(P.default.S562fn, {
+          helpDeskArticle: b.Z.getArticleURL(R.BhN.GUILD_BOOSTING_FAQ)
+        })
+      }), (0, r.jsx)("div", {
+        className: D.powerupsContainer,
+        children: s.map(e => (0, r.jsx)(U, {
+          guildId: n.id,
+          powerup: e,
+          onClose: o
+        }, "guild-powerup-marketing-".concat(e.skuId)))
+      })]
+    })
+  });
+B.displayName = "GuildPowerupsMarketingPowerupCards";
+let Z = B

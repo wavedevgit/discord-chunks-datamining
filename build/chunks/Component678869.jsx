@@ -173,8 +173,8 @@ function x(e) {
       };
       X.push((0, r.jsx)(I.Ll, {
         onClick: e,
-        IconComponent: l.iOO,
-        children: C.intl.string(C.t.eU3inJ)
+        icon: l.iOO,
+        text: C.intl.string(C.t.eU3inJ)
       }, "listen-along"))
     }
   }

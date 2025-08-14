@@ -74,11 +74,11 @@ function en(e) {
     openedAt: ef,
     onClose: ep,
     showGuildProfile: em = true,
-    sourceAnalyticsLocations: eb = [],
-    disableActionsForPreview: eg = false
+    sourceAnalyticsLocations: eg = [],
+    disableActionsForPreview: eb = false
   } = e, {
     analyticsLocations: ej
-  } = (0, f.ZP)([...eb, u.Z.USER_PROFILE_MODAL_V2]), ey = (0, P.ZB)({
+  } = (0, f.ZP)([...eg, u.Z.USER_PROFILE_MODAL_V2]), ey = (0, P.ZB)({
     layout: "MODAL_V2",
     userId: n.id,
     sourceSessionId: ea,
@@ -113,7 +113,7 @@ function en(e) {
     eA = (0, m.p)({
       location: "UserProfileModalV2"
     }),
-    eC = l.useMemo(() => null != eu ? eu : (0, b.Z)(), [eu]),
+    eC = l.useMemo(() => null != eu ? eu : (0, g.Z)(), [eu]),
     eD = (0, J.Z)({
       user: n,
       currentUser: en
@@ -121,9 +121,9 @@ function en(e) {
     eL = (0, j.Y)({
       userId: n.id
     }),
-    eR = (0, g.vh)(n.id),
-    ek = (0, Z.Z)(n.id),
-    eG = (0, p.Dt)(),
+    eR = (0, b.vh)(n.id),
+    eG = (0, Z.Z)(n.id),
+    ek = (0, p.Dt)(),
     eB = ee.intl.format(ee.t.KRe1Fh, {
       name: eT
     });
@@ -154,12 +154,12 @@ function en(e) {
             hideShadow: true,
             className: et.root,
             transitionState: ed,
-            "aria-labelledby": eG,
+            "aria-labelledby": ek,
             parentComponent: "UserProfileModalV2",
-            children: [eg ? (0, r.jsxs)("div", {
+            children: [eb ? (0, r.jsxs)("div", {
               className: et.previewBar,
               children: [(0, r.jsxs)(a.X6q, {
-                id: eG,
+                id: ek,
                 variant: "heading-sm/normal",
                 color: "text-primary",
                 children: [(0, r.jsx)(a.nn4, {
@@ -177,12 +177,12 @@ function en(e) {
               })]
             }) : (0, r.jsx)(a.nn4, {
               children: (0, r.jsx)(a.H, {
-                id: eG,
+                id: ek,
                 children: eB
               })
             }), (0, r.jsx)(a.y5t, {
               children: (0, r.jsxs)(U.Z, {
-                className: eg ? et.disabled : true,
+                className: eb ? et.disabled : true,
                 user: n,
                 displayProfile: eE,
                 themeType: Q.lY.MODAL_V2,
@@ -206,7 +206,7 @@ function en(e) {
                       user: n,
                       displayProfile: eE,
                       themeType: Q.lY.MODAL_V2
-                    }), (0, r.jsx)(G.Z, {
+                    }), (0, r.jsx)(k.Z, {
                       userId: n.id,
                       onClose: ep,
                       className: et.interactionToast
@@ -225,7 +225,7 @@ function en(e) {
                       themeType: Q.lY.MODAL_V2,
                       hasEntered: ed === a.Dvm.ENTERED,
                       prompt: eA && n.id === en.id ? eC : null,
-                      disableToolbar: eg
+                      disableToolbar: eb
                     })]
                   }), (0, r.jsxs)(a.Ttm, {
                     fade: true,
@@ -247,7 +247,7 @@ function en(e) {
                       })
                     }), eZ === $.OGo.PENDING_INCOMING && (0, r.jsx)(U.Z.Overlay, {
                       className: et.profileOverlay,
-                      children: (0, r.jsx)(k.Z, {
+                      children: (0, r.jsx)(G.Z, {
                         user: n,
                         applicationId: eN,
                         guildId: null != (t = null == eE ? true : eE.guildId) ? t : true,
@@ -261,7 +261,7 @@ function en(e) {
                       } = e;
                       return (0, r.jsx)(U.Z.Overlay, {
                         className: et.profileOverlay,
-                        children: (0, r.jsx)(k.Z, {
+                        children: (0, r.jsx)(G.Z, {
                           user: n,
                           guildId: null != (t = null == eE ? true : eE.guildId) ? t : true,
                           channelId: el,
@@ -325,11 +325,11 @@ function en(e) {
                       headingVariant: "text-xs/medium",
                       headingColor: "currentColor",
                       scrollIntoView: es === Q.Tb.ROLES
-                    }), ek.length > 0 && (0, r.jsx)(H.Z, {
+                    }), eG.length > 0 && (0, r.jsx)(H.Z, {
                       heading: ee.intl.string(ee.t["3fe7U1"]),
                       scrollIntoView: es === Q.Tb.CONNECTIONS,
                       children: (0, r.jsx)(z.Z, {
-                        connections: ek,
+                        connections: eG,
                         userId: n.id,
                         className: et.profileAppConnections
                       })

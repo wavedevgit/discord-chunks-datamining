@@ -35,7 +35,8 @@ function O() {
 }
 
 function v() {
-  Date.now() - h > Math.min(Chunk695346.CM.getSetting() * Chunk70956.Z.Millis.SECOND, Chunk981631.OSm) || O() ? g || Chunk570140.Z.dispatch({
+  let e = Chunk695346.CM.getSetting();
+  0 === module || Date.now() - h > Math.min(module * Chunk70956.Z.Millis.SECOND, Chunk981631.OSm) || O() ? g || Chunk570140.Z.dispatch({
     type: "AFK",
     afk: true
   }) : g && Chunk570140.Z.dispatch({

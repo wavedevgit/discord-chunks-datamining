@@ -43,8 +43,8 @@ function S(e) {
     sessionId: D,
     initialSection: L,
     initialSubsection: R,
-    transitionState: k,
-    openedAt: G,
+    transitionState: G,
+    openedAt: k,
     onClose: B,
     sourceAnalyticsLocations: M = []
   } = e, U = S === T.ME ? true : S, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, w, t), Y = (0, c.Dt)(), {
@@ -62,13 +62,13 @@ function S(e) {
     value: W,
     children: (0, r.jsx)(d.Mt, {
       value: z,
-      openedAt: G,
+      openedAt: k,
       fetchStartedAt: null == F ? true : F.fetchStartedAt,
       fetchEndedAt: null == F ? true : F.fetchEndedAt,
       isLoaded: null == F ? true : F.isLoaded,
       children: (0, r.jsx)(l.Y0X, {
         "data-migration-pending": true,
-        transitionState: k,
+        transitionState: G,
         className: N.root,
         hideShadow: true,
         "aria-labelledby": Y,
@@ -82,7 +82,7 @@ function S(e) {
               })
             })
           }),
-          children: (0, r.jsxs)(g.Z, {
+          children: (0, r.jsxs)(b.Z, {
             user: t,
             displayProfile: F,
             themeType: E.lY.MODAL,
@@ -109,7 +109,7 @@ function S(e) {
                   location: "BotUserProfileModal",
                   user: t,
                   themeType: E.lY.MODAL,
-                  hasEntered: k === l.Dvm.ENTERED,
+                  hasEntered: G === l.Dvm.ENTERED,
                   onCloseProfile: B,
                   disableToolbar: true
                 }), (0, r.jsxs)("div", {
@@ -140,7 +140,7 @@ function S(e) {
                 nickname: V,
                 pronouns: null == F ? true : F.pronouns,
                 nicknameVariant: "heading-xl/bold",
-                nicknameIcons: (0, r.jsx)(b.Z, {
+                nicknameIcons: (0, r.jsx)(g.Z, {
                   size: "sm",
                   userId: t.id
                 }),

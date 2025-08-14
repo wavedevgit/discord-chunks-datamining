@@ -1,19 +1,21 @@
 /** Chunk was on 76708 **/
 /** chunk id: 825354, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
+  Chunk726521 = require("./726521.js"),
   Chunk314897 = require("./314897.js"),
   Chunk86419 = require("./86419.js"),
   Chunk872269 = require("./872269.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,7 +34,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -45,25 +47,28 @@ function p(e, t) {
   }), e
 }
 
-function m(e) {
+function b(e) {
   let {
-    widget: t
-  } = e, m = l.useRef(null), b = e => {
+    widget: t,
+    userId: b
+  } = e, j = l.useRef(null), y = e => {
     if (e.shiftKey) {
-      (0, c.y8)(t.type), (0, s.L$)(d.qb.WIDGET_REMOVED);
+      (0, d.y8)(t.type), (0, u.L$)(f.qb.WIDGET_REMOVED);
       return
-    }(0, i.ZDy)(async () => {
+    }(0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("70887").then(n.bind(n, 37668));
-      return n => (0, r.jsx)(e, p(f({}, n), {
-        userId: a.default.getId(),
+      return n => (0, r.jsx)(e, g(m({}, n), {
+        userId: s.default.getId(),
         widget: t
       }))
     })
-  };
-  return (0, r.jsx)(i.yRy, {
-    targetElementRef: m,
+  }, O = () => {
+    (0, c.G1)(b, t)
+  }, x = (0, i.e7)([s.default], () => s.default.getId() === b);
+  return (0, r.jsx)(o.yRy, {
+    targetElementRef: j,
     align: "top",
     position: "right",
     disablePointerEvents: false,
@@ -71,29 +76,35 @@ function m(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(i.v2r, {
+      return (0, r.jsx)(o.v2r, {
         navId: "user-profile-widget-context-menu",
         onClose: () => {
-          (0, o.Zy)(), t()
+          (0, a.Zy)(), t()
         },
         onSelect: () => {},
-        "aria-label": u.intl.string(u.t.xpSHSk),
-        children: (0, r.jsx)(i.kSQ, {
-          children: (0, r.jsx)(i.sNh, {
+        "aria-label": p.intl.string(p.t.xpSHSk),
+        children: (0, r.jsx)(o.kSQ, {
+          children: x ? (0, r.jsx)(o.sNh, {
             id: "remove-widget",
-            label: u.intl.string(u.t.Mm07YW),
-            action: b,
+            label: p.intl.string(p.t.Mm07YW),
+            action: y,
             color: "danger",
-            icon: i.XHJ
+            icon: o.XHJ
+          }) : (0, r.jsx)(o.sNh, {
+            id: "flag-widget",
+            label: p.intl.string(p.t.D4GvHB),
+            action: O,
+            color: "danger",
+            icon: o.U65
           })
         })
       })
     },
-    children: e => (0, r.jsx)(i.hU, p(f({}, e), {
-      buttonRef: m,
-      icon: i.xhG,
+    children: e => (0, r.jsx)(o.hU, g(m({}, e), {
+      buttonRef: j,
+      icon: o.xhG,
       variant: "secondary",
-      "aria-label": u.intl.string(u.t.xpSHSk),
+      "aria-label": p.intl.string(p.t.xpSHSk),
       size: "sm"
     }))
   })

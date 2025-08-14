@@ -9,7 +9,7 @@ require.d(exports, {
   zR: () => s
 });
 var r = function(e) {
-    return e.GUILD = "guild", e.GUILD_DISCOVERY = "guild_discovery", e.GUILD_DIRECTORY_ENTRY = "guild_directory_entry", e.MESSAGE = "message", e.STAGE_CHANNEL = "stage_channel", e.GUILD_SCHEDULED_EVENT = "guild_scheduled_event", e.FIRST_DM = "first_dm", e.USER = "user", e.APPLICATION = "application", e
+    return e.GUILD = "guild", e.GUILD_DISCOVERY = "guild_discovery", e.GUILD_DIRECTORY_ENTRY = "guild_directory_entry", e.MESSAGE = "message", e.STAGE_CHANNEL = "stage_channel", e.GUILD_SCHEDULED_EVENT = "guild_scheduled_event", e.FIRST_DM = "first_dm", e.USER = "user", e.APPLICATION = "application", e.WIDGET = "widget", e
   }({}),
   i = function(e) {
     return e.MESSAGE = "report_to_mod_message", e

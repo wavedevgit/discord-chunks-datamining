@@ -154,15 +154,15 @@ function _(e) {
   return s ? (0, r.jsxs)("div", {
     className: j.card,
     children: [(0, r.jsx)("div", {
-      className: g.loadingCover
+      className: b.loadingCover
     }), (0, r.jsx)("div", {
       className: j.details,
       children: (0, r.jsxs)("div", {
-        className: b.placeholderText,
+        className: g.placeholderText,
         children: [(0, r.jsx)("div", {
-          className: b.placeholderBar
+          className: g.placeholderBar
         }), (0, r.jsx)("div", {
-          className: b.placeholderBar
+          className: g.placeholderBar
         })]
       })
     })]

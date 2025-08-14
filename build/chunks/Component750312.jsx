@@ -1,7 +1,7 @@
 /** Chunk was on 76708 **/
 /** chunk id: 750312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -16,24 +16,24 @@ var Chunk255367 = require("./255367.js"),
   Chunk272289 = require("./272289.jsx"),
   Chunk415734 = require("./415734.js");
 
-function b(e) {
+function g(e) {
   let {
     userId: t,
     widget: n,
     children: i,
-    disableInteraction: b,
-    className: g
+    disableInteraction: g,
+    className: b
   } = e, [j, y] = l.useState(false), O = (0, s.Dt)(), x = (0, c.e7)([d.default], () => d.default.getId() === t), h = (0, u.kQ)(n);
   return (0, r.jsxs)("section", {
-    className: o()(m.container, g),
+    className: o()(m.container, b),
     "aria-labelledby": O,
     children: [(0, r.jsx)(f.Z, {
       userId: t,
       headingId: O,
       widget: n,
-      disableInteraction: b
+      disableInteraction: g
     }), (0, r.jsxs)(a.y5, {
-      children: [i, x && !h && !b && !j && (0, r.jsx)(p.Z, {
+      children: [i, x && !h && !g && !j && (0, r.jsx)(p.Z, {
         userId: t,
         widgetType: n.type,
         widgetGames: n.games,

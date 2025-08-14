@@ -1,14 +1,15 @@
 /** Chunk was on 40725 **/
 /** chunk id: 975464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => x,
-  Z: () => j
+  C: () => v,
+  Z: () => _
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
-var Chunk990547 = require("./990547.js"),
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk990547 = require("./990547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk213609 = require("./213609.js"),
+  Chunk17079 = require("./17079.js"),
   Chunk605288 = require("./605288.js"),
   Chunk787051 = require("./787051.js"),
   Chunk346163 = require("./346163.js"),
@@ -21,7 +22,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk581050 = require("./581050.js"),
   Chunk169400 = require("./169400.js");
 
-function x(e) {
+function v(e) {
   let {
     onboardingMarketing: t,
     onboardingMarketingError: n
@@ -30,70 +31,72 @@ function x(e) {
       children: t
     } = e;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.$i$, {
-        className: b.sectionDivider
+      children: [(0, r.jsx)(a.$i$, {
+        className: j.sectionDivider
       }), t]
     })
-  }, a = (0, r.jsx)(i, {
+  }, l = (0, r.jsx)(i, {
+    children: (0, r.jsx)(f.Z, {})
+  }, x.q.HOW_IT_WORKS), s = (0, r.jsx)(i, {
     children: (0, r.jsx)(p.Z, {})
-  }, f.q.HOW_IT_WORKS), s = (0, r.jsx)(i, {
-    children: (0, r.jsx)(m.Z, {})
-  }, f.q.BENEFITS);
+  }, x.q.BENEFITS);
   return null != n || (null == t ? true : t.sections) == null ? (0, r.jsxs)(r.Fragment, {
-    children: [a, s]
+    children: [l, s]
   }) : (0, r.jsx)(r.Fragment, {
     children: t.sections.map(e => {
       switch (e.type) {
-        case f.q.HOW_IT_WORKS:
-          return a;
-        case f.q.BENEFITS:
+        case x.q.HOW_IT_WORKS:
+          return l;
+        case x.q.BENEFITS:
           return s;
-        case f.q.OTHER_CREATORS:
+        case x.q.OTHER_CREATORS:
           return (0, r.jsx)(i, {
-            children: (0, r.jsx)(g.Z, {
+            children: (0, r.jsx)(h.Z, {
               highlightedCreators: e.creators
             })
-          }, f.q.OTHER_CREATORS)
+          }, x.q.OTHER_CREATORS)
       }
     })
   })
 }
 
-function j(e) {
+function _(e) {
   let {
     guild: t
-  } = e, n = (0, c.Z)(t), {
-    eligibilityLoading: m,
-    eligibilityError: g,
-    eligibility: p
-  } = n, f = (0, s.j)(p), {
-    isLoading: j,
-    error: v,
-    creatorMonetizationOnboardingMarketing: _
-  } = (0, o.Z)(t.id);
-  return ((0, a.Z)({
-    type: i.ImpressionTypes.PANE,
-    name: i.ImpressionNames.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING,
+  } = e, n = (0, u.Z)(t), {
+    eligibilityLoading: p,
+    eligibilityError: h,
+    eligibility: f
+  } = n, x = (0, c.j)(f), {
+    isLoading: _,
+    error: O,
+    creatorMonetizationOnboardingMarketing: y
+  } = (0, d.Z)(t.id);
+  return (i.useEffect(() => {
+    (0, o.k)(t.id)
+  }, [t.id]), (0, s.Z)({
+    type: l.ImpressionTypes.PANE,
+    name: l.ImpressionNames.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING,
     properties: {
       guild_id: t.id,
       is_owner: n.isGuildOwner,
       is_eligible: n.eligibleForMonetization,
-      ineligible_reasons: f
+      ineligible_reasons: x
     }
   }, {
-    disableTrack: null == t.id || null == p
-  }), m || null == p || j) ? (0, r.jsx)(l.$jN, {}) : p.actionRequired ? (0, r.jsx)(h.Z, {
+    disableTrack: null == t.id || null == f
+  }), p || null == f || _) ? (0, r.jsx)(a.$jN, {}) : f.actionRequired ? (0, r.jsx)(b.Z, {
     guild: t
-  }) : null != g ? (0, r.jsx)(d.Z, {
-    children: g.message
+  }) : null != h ? (0, r.jsx)(m.Z, {
+    children: h.message
   }) : (0, r.jsxs)("div", {
-    className: b.container,
-    children: [(0, r.jsx)(u.Z, {
+    className: j.container,
+    children: [(0, r.jsx)(g.Z, {
       guild: t,
       monetizationEligibility: n
-    }), (0, r.jsx)(x, {
-      onboardingMarketing: _,
-      onboardingMarketingError: v
+    }), (0, r.jsx)(v, {
+      onboardingMarketing: y,
+      onboardingMarketingError: O
     })]
   })
 }

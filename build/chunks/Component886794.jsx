@@ -42,14 +42,14 @@ function S(e) {
     transitionState: D,
     openedAt: L,
     onClose: R,
-    sourceAnalyticsLocations: k = []
-  } = e, G = n === P.ME ? true : n, B = (0, p.ZP)(t.id, G), M = u.ZP.getName(G, S, t), U = (0, s.Dt)(), {
+    sourceAnalyticsLocations: G = []
+  } = e, k = n === P.ME ? true : n, B = (0, p.ZP)(t.id, k), M = u.ZP.getName(k, S, t), U = (0, s.Dt)(), {
     analyticsLocations: F
-  } = (0, c.ZP)([...k, a.Z.USER_PROFILE_MODAL]), V = (0, f.ZB)({
+  } = (0, c.ZP)([...G, a.Z.USER_PROFILE_MODAL]), V = (0, f.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: C,
-    guildId: G,
+    guildId: k,
     channelId: S,
     messageId: w,
     roleId: A
@@ -88,7 +88,7 @@ function S(e) {
                 user: t
               })
             }), (0, r.jsxs)("div", {
-              children: [(0, r.jsx)(g.Z, {
+              children: [(0, r.jsx)(b.Z, {
                 user: t,
                 displayProfile: B,
                 themeType: I.lY.MODAL
@@ -97,7 +97,7 @@ function S(e) {
                 children: (0, r.jsx)(m.Z, {
                   user: t,
                   displayProfile: B,
-                  guildId: G,
+                  guildId: k,
                   channelId: S,
                   themeType: I.lY.MODAL
                 })
@@ -110,7 +110,7 @@ function S(e) {
                 nickname: M,
                 pronouns: null == B ? true : B.pronouns,
                 nicknameVariant: "heading-xl/bold",
-                tags: (0, r.jsx)(b.Z, {
+                tags: (0, r.jsx)(g.Z, {
                   displayProfile: B,
                   themeType: I.lY.MODAL,
                   onClose: R
@@ -142,7 +142,7 @@ function S(e) {
                     heading: E.intl.string(E.t["A//N4u"]),
                     children: (0, r.jsx)(y.Z, {
                       userId: t.id,
-                      guildId: G,
+                      guildId: k,
                       tooltipDelay: I.vB
                     })
                   })]
