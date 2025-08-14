@@ -12,7 +12,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function s(e, t) {
-  return (0, o.Z)(e, t).length > 0
+  return (0, a.Z)(e, t).length > 0
 }
 
 function c(e) {
@@ -20,10 +20,10 @@ function c(e) {
     role: t,
     guild: n,
     onSelect: s
-  } = e, c = (0, o.Z)(n, t);
+  } = e, c = (0, a.Z)(n, t);
   return 0 === c.length ? null : (0, i.jsx)(r.v2r, {
     navId: "guild-settings-role-context",
-    "aria-label": a.intl.string(a.t["337Ja2"]),
+    "aria-label": o.intl.string(o.t["337Ja2"]),
     onClose: l.Zy,
     onSelect: s,
     children: c

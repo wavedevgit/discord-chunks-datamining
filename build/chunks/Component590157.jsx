@@ -25,13 +25,13 @@ function g(e) {
   return (r.useEffect(() => (s.I4(t.id), s.kZ), [t.id]), r.useEffect(() => {
     s.gq(t.id, d, t.id), s.Sn(d, t.id)
   }, [t.id, d]), p) ? null : (0, i.jsxs)(r.Fragment, {
-    children: [(0, i.jsx)(a.Z, {
-      icon: (0, i.jsx)(o.SsZ, {
+    children: [(0, i.jsx)(o.Z, {
+      icon: (0, i.jsx)(a.SsZ, {
         size: "md",
         color: "currentColor"
       }),
       title: m.intl.string(m.t.RGoJND)
-    }), (0, i.jsx)(o.Text, {
+    }), (0, i.jsx)(a.Text, {
       color: "text-muted",
       variant: "text-sm/normal",
       children: m.intl.string(m.t.sCkD3d)
@@ -54,7 +54,7 @@ function f(e) {
   } = e, {
     originalApplicationPermissions: r,
     editedTargetPermissions: l,
-    selectedPermissionCount: o
+    selectedPermissionCount: a
   } = (0, d.Z)(n, t);
   return (0, i.jsx)("div", {
     className: b.applicationPermissions,
@@ -64,7 +64,7 @@ function f(e) {
       inModal: false,
       editedTargetPermissions: l,
       originalApplicationPermissions: r,
-      selectedPermissionCount: o
+      selectedPermissionCount: a
     })
   })
 }

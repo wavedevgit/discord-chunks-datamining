@@ -1,7 +1,7 @@
 /** Chunk was on 63141 **/
 /** chunk id: 312178, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => Z
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -242,17 +242,17 @@ let x = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk237997.default], e => 
   }
 })(S);
 
-function C(e, t) {
+function j(e, t) {
   return (0, i.jsx)(x, {
     widgetId: e,
     layoutSize: t
   }, e)
 }
-let j = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk451478.Z], () => {
+let Z = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk451478.Z], () => {
   var e;
   return {
     layout: null != (e = Chunk355863.Z.getLayout(Chunk145597.OVERLAY_LAYOUT_ID)) ? module : true,
     layoutSize: Chunk451478.Z.windowSize(),
-    renderWidget: C
+    renderWidget: j
   }
 })(Chunk26229.Z)

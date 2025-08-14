@@ -24,7 +24,7 @@ function g(e) {
     selectableWebhookChannels: g,
     errors: f,
     canNavigate: h
-  } = e, x = (0, o.ZP)();
+  } = e, x = (0, a.ZP)();
   return (0, i.jsxs)(l.hjN, {
     children: [(0, i.jsx)(l.R94, {
       type: l.geA.DESCRIPTION,
@@ -41,9 +41,9 @@ function g(e) {
       canNavigate: h
     }) : function(e, t) {
       let n = (0, r.wj)(e) ? m : b;
-      return (0, i.jsxs)(a.Z, {
-        direction: a.Z.Direction.VERTICAL,
-        align: a.Z.Align.CENTER,
+      return (0, i.jsxs)(o.Z, {
+        direction: o.Z.Direction.VERTICAL,
+        align: o.Z.Align.CENTER,
         children: [(0, i.jsx)("img", {
           alt: "",
           src: n,

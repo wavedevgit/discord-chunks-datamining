@@ -19,7 +19,7 @@ function d(e) {
       let i = n.map(e => ({
         id: e.channel.id,
         name: e.channel.name,
-        canManage: o.Z.can(s.Plq.MANAGE_ROLES, e.channel)
+        canManage: a.Z.can(s.Plq.MANAGE_ROLES, e.channel)
       }));
       return i.unshift({
         id: (0, r.bD)(e),
@@ -31,7 +31,7 @@ function d(e) {
     p = i.useMemo(() => {
       var e;
       let i = (e = n).startsWith("#") ? e.substr(1) : e;
-      return (0, a.B)(t, u, i)
+      return (0, o.B)(t, u, i)
     }, [t, n]);
   return {
     query: n,

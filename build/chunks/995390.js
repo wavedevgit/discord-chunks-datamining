@@ -7,7 +7,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk139387 = require("./139387.js"),
   Chunk895924 = require("./895924.js"),
@@ -43,7 +43,7 @@ function y(e) {
 
 function O(e, t, n) {
   let r = (0, s.e7)([x.Z], () => x.Z.getApplicationPermissions()),
-    o = i.useMemo(() => (function(e, t) {
+    a = i.useMemo(() => (function(e, t) {
       let n = y({}, t),
         i = (0, u.bD)(e),
         r = (0, j.rE)(i, d.Kw.CHANNEL),
@@ -69,25 +69,25 @@ function O(e, t, n) {
       return null == n ? x.Z.getEditedApplication() : null == (e = x.Z.getEditedCommand()) ? true : e.permissions
     }, [n]),
     C = null != n ? n : t,
-    N = null != n ? O : o,
-    w = i.useMemo(() => null != _ ? _ : y({}, null != N ? N : {}), [_, N]),
-    Z = i.useMemo(() => Object.keys(w).length, [w]),
-    S = i.useMemo(() => null == N || null == w ? null : !a().isEqual(N, w), [N, w]);
+    N = null != n ? O : a,
+    Z = i.useMemo(() => null != _ ? _ : y({}, null != N ? N : {}), [_, N]),
+    S = i.useMemo(() => Object.keys(Z).length, [Z]),
+    w = i.useMemo(() => null == N || null == Z ? null : !o().isEqual(N, Z), [N, Z]);
   return i.useEffect(() => {
-    C === t && (S ? c.Z.startEditingCommandPermissions(C) : c.Z.stopEditingCommandPermissions(C))
-  }, [t, S, C]), {
-    originalApplicationPermissions: o,
+    C === t && (w ? c.Z.startEditingCommandPermissions(C) : c.Z.stopEditingCommandPermissions(C))
+  }, [t, w, C]), {
+    originalApplicationPermissions: a,
     originalCommandPermissions: O,
     editedTargetPermissions: function(e, t) {
       let n = (0, s.e7)([b.Z], () => b.Z.getGuild(e), [e]);
       l()(null != n, "guild must be present to be editing its integration settings");
       let r = (0, s.e7)([g.Z], () => g.Z.getHighestRole(n), [n]),
-        o = (0, s.e7)([f.default], () => {
+        a = (0, s.e7)([f.default], () => {
           var e;
           return null == (e = f.default.getCurrentUser()) ? true : e.id
         });
-      l()(null != o, "useComputePermissions: currentUserId must not be null");
-      let a = o === n.ownerId,
+      l()(null != a, "useComputePermissions: currentUserId must not be null");
+      let o = a === n.ownerId,
         {
           channelIds: c,
           roleIds: x,
@@ -110,7 +110,7 @@ function O(e, t, n) {
         let e = n.id,
           i = (0, u.bD)(n.id),
           l = {};
-        for (let [o, s] of Object.entries(t)) {
+        for (let [a, s] of Object.entries(t)) {
           let t = false,
             c = false;
           if (s.type === d.Kw.CHANNEL) {
@@ -120,12 +120,12 @@ function O(e, t, n) {
           } else if (s.type === d.Kw.ROLE) {
             let i = s.id === e,
               l = _[s.id];
-            t = i || null != l, c = a || i || g.Z.isRoleHigher(n, r, l)
+            t = i || null != l, c = o || i || g.Z.isRoleHigher(n, r, l)
           } else if (s.type === d.Kw.USER) {
             let e = C[s.id];
-            t = null != e, c = null != e && (a || g.Z.canManageUser(v.Plq.USE_APPLICATION_COMMANDS, e, n))
+            t = null != e, c = null != e && (o || g.Z.canManageUser(v.Plq.USE_APPLICATION_COMMANDS, e, n))
           }
-          l[o] = function(e, t) {
+          l[a] = function(e, t) {
             return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -142,9 +142,9 @@ function O(e, t, n) {
           })
         }
         return l
-      }, [O, n, r, a, t, _, C])
-    }(e, w),
-    hasChanges: S,
-    selectedPermissionCount: Z
+      }, [O, n, r, o, t, _, C])
+    }(e, Z),
+    hasChanges: w,
+    selectedPermissionCount: S
   }
 }

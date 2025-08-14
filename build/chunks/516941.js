@@ -11,6 +11,5 @@ module.exports = {
   description: "description__24585",
   syncedRole: "syncedRole__24585",
   emoji: "emoji__24585",
-  expandIcon: "expandIcon__24585",
-  disableButton: "disableButton__24585"
+  expandIcon: "expandIcon__24585"
 }

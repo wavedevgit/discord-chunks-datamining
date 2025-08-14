@@ -1,24 +1,24 @@
 /** Chunk was on 58511 **/
 /** chunk id: 603211, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk562075 = require("./562075.js"),
   Chunk539202 = require("./539202.js");
 
-function o(e) {
+function a(e) {
   let {
     type: t,
     index: n,
-    optionId: o,
-    onDragStart: a,
+    optionId: a,
+    onDragStart: o,
     onDragComplete: s,
     onDragReset: c
   } = e, [d, u] = i.useState(false), [, p] = (0, r.c)({
     type: t,
-    item: () => (a(o), {
-      id: o,
+    item: () => (o(a), {
+      id: a,
       position: n
     }),
     canDrag: () => d,
@@ -44,7 +44,7 @@ function o(e) {
       }
     },
     drop: () => ({
-      optionId: o
+      optionId: a
     })
   });
   return {

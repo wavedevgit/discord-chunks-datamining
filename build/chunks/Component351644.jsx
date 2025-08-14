@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk658722 = require("./658722.js"),
   s = require.n(Chunk658722),
   Chunk442837 = require("./442837.js"),
@@ -64,7 +64,7 @@ function U(e) {
 }
 
 function W(e) {
-  var t, n, l, a;
+  var t, n, l, o;
   let {
     guild: W,
     channel: H,
@@ -87,28 +87,28 @@ function W(e) {
     accounts: O.Z.getAccounts()
   }), []), {
     canManageWebhooks: el,
-    canManageGuild: eo
+    canManageGuild: ea
   } = (0, c.cj)([_.Z], () => ({
     canManageWebhooks: null != W && _.Z.can(E.Plq.MANAGE_WEBHOOKS, W) || null != H && _.Z.can(E.Plq.MANAGE_WEBHOOKS, H),
     canManageGuild: null != W && null == H && _.Z.can(E.Plq.MANAGE_GUILD, W)
-  }), [W, H]), ea = (0, v.Y)(H), es = (0, g.q)(null == H || null == (t = H.linkedLobby) ? true : t.application_id), ec = (0, y.F)(null == W ? true : W.id), {
+  }), [W, H]), eo = (0, v.Y)(H), es = (0, g.q)(null == H || null == (t = H.linkedLobby) ? true : t.application_id), ec = (0, y.F)(null == W ? true : W.id), {
     availableTwitchIntegrations: ed,
     availableYoutubeIntegrations: eu,
     guildTwitchIntegrations: ep,
     guildYoutubeIntegrations: em
   } = r.useMemo(() => {
-    var e, t, n, i, r, l, o, a;
+    var e, t, n, i, r, l, a, o;
     return {
       availableTwitchIntegrations: null != (r = null == (e = z.twitch) ? true : e.length) ? r : 0,
       availableYoutubeIntegrations: null != (l = null == (t = z.youtube) ? true : t.length) ? l : 0,
-      guildTwitchIntegrations: null != (o = null == (n = z.twitch) ? true : n.filter(e => e.enabled).length) ? o : 0,
-      guildYoutubeIntegrations: null != (a = null == (i = z.youtube) ? true : i.filter(e => e.enabled).length) ? a : 0
+      guildTwitchIntegrations: null != (a = null == (n = z.twitch) ? true : n.filter(e => e.enabled).length) ? a : 0,
+      guildYoutubeIntegrations: null != (o = null == (i = z.youtube) ? true : i.filter(e => e.enabled).length) ? o : 0
     }
   }, [z.twitch, z.youtube]), {
     showTwitchCard: eb,
     showYoutubeCard: eg
   } = r.useMemo(() => {
-    if (ei || !eo) return {
+    if (ei || !ea) return {
       showTwitchCard: false,
       showYoutubeCard: false
     };
@@ -119,7 +119,7 @@ function W(e) {
       showTwitchCard: ed > 0 || !t && e,
       showYoutubeCard: eu > 0 || !n && e
     }
-  }, [ei, eo, W, er, ed, eu]), ef = Object.values(G).length, eh = r.useMemo(() => {
+  }, [ei, ea, W, er, ed, eu]), ef = Object.values(G).length, eh = r.useMemo(() => {
     let e = ef > 100 ? B : s();
     return Object.values(G).filter(t => {
       var n;
@@ -143,19 +143,19 @@ function W(e) {
           application: r,
           integration: l
         } = e,
-        o = [];
-      return null != l.user ? o.push({
+        a = [];
+      return null != l.user ? a.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.Nu9sam, {
-          timestamp: Z.default.extractTimestamp(l.id),
-          user: S.ZP.getUserTag(l.user)
+          timestamp: S.default.extractTimestamp(l.id),
+          user: w.ZP.getUserTag(l.user)
         })
-      }) : o.push({
+      }) : a.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.gcdJ8P, {
-          timestamp: Z.default.extractTimestamp(l.id)
+          timestamp: S.default.extractTimestamp(l.id)
         })
-      }), (0, i.jsx)(I.Z, {
+      }), (0, i.jsx)(P.Z, {
         name: r.name,
         imageSrc: null != (t = r.getIconURL(48)) ? t : N.pK["0"],
         integration: e,
@@ -168,16 +168,16 @@ function W(e) {
             is_admin: null != W ? _.Z.can(E.Plq.ADMINISTRATOR, W) : true
           })
         },
-        details: o,
+        details: a,
         guildId: null == W ? true : W.id,
         isScrolling: ey,
         canShowMigrationTooltip: n
       }, "integration-".concat(l.id))
     }),
-    ew = (0, i.jsx)("div", {
+    eZ = (0, i.jsx)("div", {
       className: D.footerImage
     });
-  0 === eN.length && eo && (eN = function(e, t, n) {
+  0 === eN.length && ea && (eN = function(e, t, n) {
     let r = (0, d.wj)(e) ? L : M,
       l = (0, i.jsxs)(h.Z, {
         direction: h.Z.Direction.VERTICAL,
@@ -197,7 +197,7 @@ function W(e) {
           })
         })]
       }),
-      o = (0, i.jsx)(u.Zbd, {
+      a = (0, i.jsx)(u.Zbd, {
         editable: true,
         className: D.emptyStateCard,
         children: (0, i.jsxs)("div", {
@@ -229,16 +229,16 @@ function W(e) {
           })]
         })
       });
-    return t > 0 ? l : o
-  }(ee, ef, null == W ? true : W.id), ew = null);
-  let eZ = w.Z.getArticleURL(E.BhN.INTEGRATIONS),
-    eS = null != H ? A.t.YV0vh4 : A.t.FnZEJi,
-    eP = [];
+    return t > 0 ? l : a
+  }(ee, ef, null == W ? true : W.id), eZ = null);
+  let eS = Z.Z.getArticleURL(E.BhN.INTEGRATIONS),
+    ew = null != H ? A.t.YV0vh4 : A.t.FnZEJi,
+    eI = [];
   if (el) {
-    let e, t, r, o, a;
-    eP.push((n = F.length, n > 0 ? t = (0, i.jsx)(u.LJT, {
+    let e, t, r, a, o;
+    eI.push((n = F.length, n > 0 ? t = (0, i.jsx)(u.LJT, {
       size: "xs"
-    }) : e = A.intl.string(A.t.lOQqJC), (0, i.jsx)(I.Z, {
+    }) : e = A.intl.string(A.t.lOQqJC), (0, i.jsx)(P.Z, {
       name: A.intl.string(A.t.xOg4SE),
       icon: u.tYf,
       buttonText: e,
@@ -251,14 +251,14 @@ function W(e) {
           count: n
         })
       }]
-    }, "webhooks"))), (null == H ? true : H.type) === E.d4z.GUILD_VOICE || (null == H ? true : H.type) != null && E.TPd.GUILD_THREADS_ONLY.has(H.type) || eP.push((l = K.length, l > 0 ? (a = (0, i.jsx)(u.LJT, {
+    }, "webhooks"))), (null == H ? true : H.type) === E.d4z.GUILD_VOICE || (null == H ? true : H.type) != null && E.TPd.GUILD_THREADS_ONLY.has(H.type) || eI.push((l = K.length, l > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
-    }), o = $) : (r = A.intl.string(A.t["ZwSt+f"]), o = () => open(w.Z.getArticleURL(E.BhN.CHANNEL_FOLLOWING))), (0, i.jsx)(I.Z, {
+    }), a = $) : (r = A.intl.string(A.t["ZwSt+f"]), a = () => open(Z.Z.getArticleURL(E.BhN.CHANNEL_FOLLOWING))), (0, i.jsx)(P.Z, {
       name: A.intl.string(A.t.OrV60t),
       icon: u.AsW,
       buttonText: r,
-      onButtonClick: o,
-      trailing: a,
+      onButtonClick: a,
+      trailing: o,
       hasNextSection: l > 0,
       details: [{
         text: A.intl.formatToPlainString(A.t.JUNGIS, {
@@ -267,7 +267,7 @@ function W(e) {
       }]
     }, "channels-followed")))
   }
-  null == H && ec.length > 0 && eP.push((a = ec.length, (0, i.jsx)(I.Z, {
+  null == H && ec.length > 0 && eI.push((o = ec.length, (0, i.jsx)(P.Z, {
     name: A.intl.string(A.t.tqtDXF),
     icon: u.DuK,
     trailing: (0, i.jsx)(u.LJT, {
@@ -277,61 +277,61 @@ function W(e) {
     hasNextSection: true,
     details: [{
       text: A.intl.formatToPlainString(A.t["puxS4+"], {
-        count: a
+        count: o
       })
     }]
-  }, "channels-syncing"))), eb && eP.push(function(e, t, n) {
-    let r, l, o, a, s = b.Z.get(E.ABu.TWITCH);
-    return e > 0 ? (a = (0, i.jsx)(u.LJT, {
+  }, "channels-syncing"))), eb && eI.push(function(e, t, n) {
+    let r, l, a, o, s = b.Z.get(E.ABu.TWITCH);
+    return e > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
     }), l = A.intl.formatToPlainString(A.t.FFpnT0, {
       count: t
-    }), o = () => n(E.ABu.TWITCH)) : (r = A.intl.string(A.t.bkvGkp), l = A.intl.string(A.t.Qq3X2N), o = () => (0, f.Z)({
+    }), a = () => n(E.ABu.TWITCH)) : (r = A.intl.string(A.t.bkvGkp), l = A.intl.string(A.t.Qq3X2N), a = () => (0, f.Z)({
       platformType: E.ABu.TWITCH,
       location: "Integration Settings"
-    })), (0, i.jsx)(I.Z, {
+    })), (0, i.jsx)(P.Z, {
       name: A.intl.string(A.t.q4pBGx),
       icon: s.icon.whiteSVG,
       iconBackgroundColor: s.color,
       iconClassName: D.platformIcon,
       buttonText: r,
-      onButtonClick: o,
-      trailing: a,
+      onButtonClick: a,
+      trailing: o,
       hasNextSection: e > 0,
       details: [{
         text: l
       }]
     }, "integrations-twitch")
-  }(ed, ep, Y)), eg && eP.push(function(e, t, n) {
-    let r, l, o, a, s = b.Z.get(E.ABu.YOUTUBE);
-    return e > 0 ? (a = (0, i.jsx)(u.LJT, {
+  }(ed, ep, Y)), eg && eI.push(function(e, t, n) {
+    let r, l, a, o, s = b.Z.get(E.ABu.YOUTUBE);
+    return e > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
     }), l = A.intl.formatToPlainString(A.t.b2g5vL, {
       count: t
-    }), o = () => n(E.ABu.YOUTUBE)) : (r = A.intl.string(A.t.xEyQ3d), l = A.intl.string(A.t.T0ivgY), o = () => (0, f.Z)({
+    }), a = () => n(E.ABu.YOUTUBE)) : (r = A.intl.string(A.t.xEyQ3d), l = A.intl.string(A.t.T0ivgY), a = () => (0, f.Z)({
       platformType: E.ABu.YOUTUBE,
       location: "Integration Settings"
-    })), (0, i.jsx)(I.Z, {
+    })), (0, i.jsx)(P.Z, {
       name: A.intl.string(A.t.aS6cKy),
       icon: s.icon.whiteSVG,
       iconBackgroundColor: s.color,
       iconClassName: D.platformIcon,
       buttonText: r,
-      onButtonClick: o,
-      trailing: a,
+      onButtonClick: a,
+      trailing: o,
       hasNextSection: e > 0,
       details: [{
         text: l
       }]
     }, "integrations-youtube")
   }(eu, em, Y));
-  let eI = null != H && ea && null != es;
+  let eP = null != H && eo && null != es;
   return (0, i.jsxs)(u.hjN, {
-    className: o()(null != ew ? D.footerPlaceholder : null),
+    className: a()(null != eZ ? D.footerPlaceholder : null),
     children: [(0, i.jsx)(u.R94, {
       type: u.geA.DESCRIPTION,
-      children: A.intl.format(eS, {
-        helpdeskArticle: eZ
+      children: A.intl.format(ew, {
+        helpdeskArticle: eS
       })
     }), (0, i.jsx)(u.$i$, {
       className: D.divider
@@ -339,14 +339,14 @@ function W(e) {
       className: D.__invalid_spinner,
       type: u.$jN.Type.SPINNING_CIRCLE
     }) : (0, i.jsxs)(i.Fragment, {
-      children: [eP, eI && (0, i.jsxs)(i.Fragment, {
-        children: [eP.length > 0 ? (0, i.jsx)(u.$i$, {
+      children: [eI, eP && (0, i.jsxs)(i.Fragment, {
+        children: [eI.length > 0 ? (0, i.jsx)(u.$i$, {
           className: D.divider
         }) : null, (0, i.jsx)(u.X6q, {
           variant: "heading-md/semibold",
           className: D.sectionHeader,
           children: A.intl.string(A.t.oAvIAg)
-        }), (0, i.jsx)(P.t, {
+        }), (0, i.jsx)(I.t, {
           channel: H,
           application: es,
           showApplicationImage: true,
@@ -357,8 +357,8 @@ function W(e) {
             size: "xs"
           })
         })]
-      }), eo ? (0, i.jsxs)(i.Fragment, {
-        children: [eP.length > 0 || eI ? (0, i.jsx)(u.$i$, {
+      }), ea ? (0, i.jsxs)(i.Fragment, {
+        children: [eI.length > 0 || eP ? (0, i.jsx)(u.$i$, {
           className: D.divider
         }) : null, (0, i.jsx)(u.X6q, {
           variant: "heading-md/semibold",
@@ -368,7 +368,7 @@ function W(e) {
           query: et,
           setQuery: en
         }) : null, eN]
-      }) : null, ew]
+      }) : null, eZ]
     })]
   })
 }

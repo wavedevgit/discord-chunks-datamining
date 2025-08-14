@@ -1,7 +1,7 @@
 /** Chunk was on 63141 **/
 /** chunk id: 669083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => j
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -283,7 +283,7 @@ class x extends Chunk73800.PureComponent {
   }
 }
 
-function C(e) {
+function j(e) {
   let {
     onClose: t
   } = e, {

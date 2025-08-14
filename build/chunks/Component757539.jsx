@@ -29,17 +29,17 @@ function p(e) {
   return (0, i.jsxs)("div", {
     ref: j,
     className: u.actions,
-    children: [(0, i.jsx)(o.X6, {
+    children: [(0, i.jsx)(a.X6, {
       variant: "text-xs/bold",
       color: "text-muted",
       className: u.eyebrow,
       children: t ? d.intl.string(d.t.DjWsyc) : d.intl.string(d.t.AmwmLi)
     }), (0, i.jsxs)("div", {
       className: u.inviteButtons,
-      children: [(0, i.jsx)(a.zx, {
-        size: a.zx.Sizes.MEDIUM,
-        color: g ? a.zx.Colors.BRAND : a.zx.Colors.RED,
-        look: a.zx.Looks.OUTLINED,
+      children: [(0, i.jsx)(o.zx, {
+        size: o.zx.Sizes.MEDIUM,
+        color: g ? o.zx.Colors.BRAND : o.zx.Colors.RED,
+        look: o.zx.Looks.OUTLINED,
         disabled: !b,
         onClick: p,
         children: g ? d.intl.string(d.t["/dbw3N"]) : d.intl.string(d.t.Uwsjn5)

@@ -1,7 +1,7 @@
 /** Chunk was on 58511 **/
 /** chunk id: 919196, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => Z
 }), require("./388685.js"), require("./539854.js"), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -48,7 +48,7 @@ function N(e) {
   var t, n, {
       application: r,
       guild: l,
-      integration: o
+      integration: a
     } = e,
     c = function(e, t) {
       if (null == e) return {};
@@ -65,21 +65,21 @@ function N(e) {
       }
       return r
     }(e, ["application", "guild", "integration"]);
-  return (0, i.jsx)(a.ConfirmModal, (t = C({}, c), n = n = {
+  return (0, i.jsx)(o.ConfirmModal, (t = C({}, c), n = n = {
     header: O.intl.formatToPlainString(O.t["rL9d//"], {
       applicationName: r.name
     }),
     confirmText: O.intl.string(O.t.ebGf4u),
     cancelText: O.intl.string(O.t["ETE/oK"]),
     onConfirm: () => {
-      d.Z.disableIntegration(l.id, o.id).catch(() => {
+      d.Z.disableIntegration(l.id, a.id).catch(() => {
         s.Z.show({
           title: O.intl.string(O.t.wYqMmJ),
           body: O.intl.string(O.t.A4Mnsr)
         })
       })
     },
-    children: (0, i.jsx)(a.Text, {
+    children: (0, i.jsx)(o.Text, {
       variant: "text-md/normal",
       children: O.intl.format(O.t.FGE8yc, {
         applicationName: r.name
@@ -97,72 +97,72 @@ function N(e) {
   }), t))
 }
 
-function w(e) {
+function Z(e) {
   var t;
   let {
     guild: n,
     applicationIntegration: s,
     selectableWebhookChannels: d,
-    editedWebhook: w,
-    errors: Z,
-    canNavigate: S
+    editedWebhook: Z,
+    errors: S,
+    canNavigate: w
   } = e, {
-    application: P,
-    integration: I,
+    application: I,
+    integration: P,
     webhooks: T
-  } = s, [E, k] = (0, o.Wu)([m.Z], () => [m.Z.can(y.Plq.MANAGE_ROLES, n), null == P.bot || m.Z.canManageUser(y.Plq.MANAGE_GUILD, P.bot.id, n)], [P.bot, n]), A = (0, o.e7)([m.Z], () => m.Z.can(y.Plq.MANAGE_WEBHOOKS, n), [n]), D = r.useCallback(() => {
-    S() && (0, a.h7j)(e => (0, i.jsx)(N, C({
+  } = s, [E, k] = (0, a.Wu)([m.Z], () => [m.Z.can(y.Plq.MANAGE_ROLES, n), null == I.bot || m.Z.canManageUser(y.Plq.MANAGE_GUILD, I.bot.id, n)], [I.bot, n]), A = (0, a.e7)([m.Z], () => m.Z.can(y.Plq.MANAGE_WEBHOOKS, n), [n]), D = r.useCallback(() => {
+    w() && (0, o.h7j)(e => (0, i.jsx)(N, C({
       guild: n,
-      application: P,
-      integration: I
+      application: I,
+      integration: P
     }, e)))
-  }, [P, S, n, I]), R = r.useMemo(() => {
+  }, [I, w, n, P]), R = r.useMemo(() => {
     let e = [{
-      icon: a.T39,
+      icon: o.T39,
       text: O.intl.formatToPlainString(O.t.gcdJ8P, {
-        timestamp: g.default.extractTimestamp(I.id)
+        timestamp: g.default.extractTimestamp(P.id)
       })
     }];
-    return null != I.user && e.push({
-      icon: a.tBG,
+    return null != P.user && e.push({
+      icon: o.tBG,
       text: O.intl.formatToPlainString(O.t.qE7oqq, {
-        user: f.ZP.getUserTag(I.user)
+        user: f.ZP.getUserTag(P.user)
       })
     }), e
-  }, [I.id, I.user]), L = r.useMemo(() => {
+  }, [P.id, P.user]), L = r.useMemo(() => {
     var e;
-    return null != P.bot && (null == (e = I.scopes) ? true : e.includes(l.x.BOT)) ? (0, i.jsx)(j.Z, {
+    return null != I.bot && (null == (e = P.scopes) ? true : e.includes(l.x.BOT)) ? (0, i.jsx)(j.Z, {
       guild: n,
       applicationIntegration: s
-    }) : (0, i.jsx)(a.Zbd, {
+    }) : (0, i.jsx)(o.Zbd, {
       className: _.emptyCard,
       editable: true,
-      children: (0, i.jsx)(a.Text, {
+      children: (0, i.jsx)(o.Text, {
         color: "text-muted",
         variant: "text-sm/normal",
         children: O.intl.string(O.t.pfLnzc)
       })
     })
-  }, [P.bot, s, n, I.scopes]);
+  }, [I.bot, s, n, P.scopes]);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(h.Z, {
-      name: P.name,
-      imageSrc: null != (t = P.getIconURL(32)) ? t : b.pK["0"],
+      name: I.name,
+      imageSrc: null != (t = I.getIconURL(32)) ? t : b.pK["0"],
       details: R,
       isHeader: true
-    }), (null == P ? true : P.description) != null ? (0, i.jsx)(p.Z, {
-      userBio: P.description,
+    }), (null == I ? true : I.description) != null ? (0, i.jsx)(p.Z, {
+      userBio: I.description,
       className: _.headerDescription
     }) : null, E ? (0, i.jsx)(u.Z, {
-      application: P,
-      canNavigate: S,
+      application: I,
+      canNavigate: w,
       guildId: n.id
-    }) : null, (0, i.jsx)(a.$i$, {
+    }) : null, (0, i.jsx)(o.$i$, {
       className: _.headerDivider
-    }), null != P.bot ? (0, i.jsxs)("div", {
+    }), null != I.bot ? (0, i.jsxs)("div", {
       className: _.section,
       children: [(0, i.jsx)(x.Z, {
-        icon: (0, i.jsx)(a.wGt, {
+        icon: (0, i.jsx)(o.wGt, {
           size: "xs",
           color: "currentColor"
         }),
@@ -171,40 +171,40 @@ function w(e) {
     }) : null, (0, i.jsxs)("div", {
       className: _.section,
       children: [(0, i.jsx)(x.Z, {
-        icon: (0, i.jsx)(a.tYf, {
+        icon: (0, i.jsx)(o.tYf, {
           size: "md",
           color: "currentColor"
         }),
         title: O.intl.string(O.t["t9ZX/P"])
       }), T.length > 0 ? (0, i.jsx)(v.Z, {
         webhooks: T,
-        editedWebhook: w,
+        editedWebhook: Z,
         selectableWebhookChannels: d,
-        errors: Z,
-        canNavigate: S
-      }) : (0, i.jsx)(a.Zbd, {
+        errors: S,
+        canNavigate: w
+      }) : (0, i.jsx)(o.Zbd, {
         className: _.emptyCard,
         editable: true,
-        children: (0, i.jsx)(a.Text, {
+        children: (0, i.jsx)(o.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
           children: A ? O.intl.string(O.t.ahPd2d) : O.intl.string(O.t.axqYMj)
         })
       })]
-    }), (0, i.jsx)(a.$i$, {
+    }), (0, i.jsx)(o.$i$, {
       className: _.headerDivider
     }), (0, i.jsxs)(c.Z, {
       className: _.section,
       justify: c.Z.Justify.BETWEEN,
       align: c.Z.Align.CENTER,
-      children: [(0, i.jsx)(a.Text, {
+      children: [(0, i.jsx)(o.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
         children: k ? O.intl.string(O.t.hdneLy) : O.intl.string(O.t.xRCMq6)
       }), (0, i.jsx)(c.Z.Child, {
         grow: 0,
         shrink: 0,
-        children: (0, i.jsx)(a.zxk, {
+        children: (0, i.jsx)(o.zxk, {
           variant: "critical-primary",
           size: "sm",
           text: O.intl.string(O.t.ebGf4u),

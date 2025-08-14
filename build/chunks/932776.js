@@ -18,14 +18,14 @@ function c() {
     [t, n] = Chunk73800.useState(""),
     c = Chunk73800.useMemo(() => module.filter(e => {
       var t;
-      return (null == e.integration_types || e.integration_types.includes(r.Y.GUILD_INSTALL)) && (null == e.contexts || (null == (t = e.contexts) ? true : t.includes(o.D.GUILD)))
+      return (null == e.integration_types || e.integration_types.includes(r.Y.GUILD_INSTALL)) && (null == e.contexts || (null == (t = e.contexts) ? true : t.includes(a.D.GUILD)))
     }), [module]),
     u = Chunk73800.useMemo(() => [...c].sort((e, t) => {
-      let n = o.yU.CHAT + 1,
+      let n = a.yU.CHAT + 1,
         i = (t.type > n ? n : t.type) - (e.type > n ? n : e.type);
       return 0 !== i ? i : e.untranslatedName.localeCompare(t.untranslatedName)
     }), [c]),
-    p = Chunk73800.useMemo(() => exports.startsWith("/") ? u.filter(e => e.type === o.yU.CHAT) : u, [exports, u]),
+    p = Chunk73800.useMemo(() => exports.startsWith("/") ? u.filter(e => e.type === a.yU.CHAT) : u, [exports, u]),
     m = Chunk73800.useMemo(() => exports.startsWith("/") ? exports.substring(1) : exports, [exports]);
   return {
     query: exports,

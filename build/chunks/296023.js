@@ -1,28 +1,28 @@
 /** Chunk was on 58511 **/
 /** chunk id: 296023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  w: () => a
+  w: () => o
 });
 var Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function o(e) {
   var t;
   let n = null == (t = e.linkedLobby) ? true : t.linked_at,
-    a = (0, r.e7)([l.default], () => {
+    o = (0, r.e7)([l.default], () => {
       var t;
       return l.default.getUser(null == (t = e.linkedLobby) ? true : t.linked_by)
     });
   return i.useMemo(() => {
     if (null == n) return;
     let e = new Date(n);
-    return null != a ? o.intl.format(o.t["xPrJ+v"], {
-      username: a.username,
+    return null != o ? a.intl.format(a.t["xPrJ+v"], {
+      username: o.username,
       linkedAtDate: e
-    }) : o.intl.formatToPlainString(o.t.EyygeH, {
+    }) : a.intl.formatToPlainString(a.t.EyygeH, {
       linkedAtDate: e
     })
-  }, [n, a])
+  }, [n, o])
 }

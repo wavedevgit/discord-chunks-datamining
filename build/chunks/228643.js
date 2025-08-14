@@ -3,16 +3,16 @@
 require.d(exports, {
   L_: () => s,
   nj: () => c,
-  sE: () => a
+  sE: () => o
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk480608 = require("./480608.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t) {
+function o(e, t) {
   i.tn.get({
-    url: o.ANM.GUILD_ROLE_CONNECTIONS_CONFIGURATION(e, t),
+    url: a.ANM.GUILD_ROLE_CONNECTIONS_CONFIGURATION(e, t),
     rejectWithError: true
   }).then(e => {
     let n = [];
@@ -30,7 +30,7 @@ function a(e, t) {
   }).catch(() => {})
 }
 async function s(e, t, n) {
-  let a = n.map(e => e.map(e => ({
+  let o = n.map(e => e.map(e => ({
       connection_type: e.connectionType,
       connection_metadata_field: e.connectionMetadataField,
       application_id: e.applicationId,
@@ -38,8 +38,8 @@ async function s(e, t, n) {
       value: e.value
     }))),
     s = await i.tn.put({
-      url: o.ANM.GUILD_ROLE_CONNECTIONS_CONFIGURATION(e, t),
-      body: 0 === a.length ? [] : a,
+      url: a.ANM.GUILD_ROLE_CONNECTIONS_CONFIGURATION(e, t),
+      body: 0 === o.length ? [] : o,
       oldFormErrors: true,
       rejectWithError: false
     }).then(e => {

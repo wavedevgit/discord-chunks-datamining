@@ -86,57 +86,58 @@ function O(e) {
     className: h,
     nameTextClassName: g,
     animateRoleGradient: E,
-    variant: b
-  } = e, y = i.useContext(u.d), [O, v] = i.useState(false), I = i.useCallback(() => {
-    v(true)
-  }, []), T = i.useCallback(() => {
-    v(false)
-  }, []), S = "username" === t, A = "dot" === t, N = null != c && null != c.primaryColor && null != c.secondaryColor, C = S && N, {
-    gradientStyle: R,
-    gradientClassname: P,
-    gradientGlowClassname: w
+    variant: b,
+    displayNameStylesFont: y = ""
+  } = e, O = i.useContext(u.d), [v, I] = i.useState(false), T = i.useCallback(() => {
+    I(true)
+  }, []), S = i.useCallback(() => {
+    I(false)
+  }, []), A = "username" === t, N = "dot" === t, C = null != c && null != c.primaryColor && null != c.secondaryColor, R = A && C, {
+    gradientStyle: P,
+    gradientClassname: w,
+    gradientGlowClassname: D
   } = (0, f.Ic)({
     colorStrings: c,
     roleStyle: "username",
-    animateGradient: E || O || (null == y ? true : y.animate)
-  }), D = (0, f.EJ)(n), L = {
-    className: a()(p.name, g, {
-      [p.username]: S,
-      [P]: C
+    animateGradient: E || v || (null == O ? true : O.animate)
+  }), L = (0, f.EJ)(n), x = {
+    className: a()(p.name, g, y, {
+      [p.username]: A,
+      [w]: R
     }),
-    children: D
-  }, x = {
-    className: a()(p.nameGlow, w),
+    children: L
+  }, M = {
+    className: a()(p.nameGlow, D, y),
     children: n
-  }, M = A ? (0, r.jsx)(_.F, {
+  }, j = N ? (0, r.jsx)(_.F, {
     color: o,
-    colors: N ? c : null,
+    colors: C ? c : null,
     name: l,
     className: "left" === d ? p.roleDotLeft : p.roleDotRight,
-    hoverOverride: E || O || (null == y ? true : y.animate)
+    hoverOverride: E || v || (null == O ? true : O.animate)
   }) : null;
   return (0, r.jsxs)("span", {
     className: a()(h, p.container),
-    onMouseEnter: I,
-    onMouseLeave: T,
-    children: ["left" === d && M, (0, r.jsxs)("span", {
+    onMouseEnter: T,
+    onMouseLeave: S,
+    children: ["left" === d && j, (0, r.jsxs)("span", {
       className: p.nameContainer,
       style: m({
-        color: S && !N && null != o ? o : true
-      }, C ? R : {}),
+        color: A && !C && null != o ? o : true
+      }, R ? P : {}),
       children: [null != b ? (0, r.jsx)(s.xv, m({
         tag: "span",
         color: "currentColor",
         variant: b
-      }, L)) : (0, r.jsx)("span", m({}, L)), C && (null != b ? (0, r.jsx)(s.xv, m({
+      }, x)) : (0, r.jsx)("span", m({}, x)), R && (null != b ? (0, r.jsx)(s.xv, m({
         tag: "span",
         color: "currentColor",
         "aria-hidden": true,
         variant: b
-      }, x)) : (0, r.jsx)("span", m({
+      }, M)) : (0, r.jsx)("span", m({
         "aria-hidden": true
-      }, x)))]
-    }), "right" === d && M]
+      }, M)))]
+    }), "right" === d && j]
   })
 }
 

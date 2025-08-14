@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
@@ -82,20 +82,20 @@ function F(e) {
     inviter: n,
     showChannel: r,
     channel: l,
-    inviteSource: a,
+    inviteSource: o,
     inviteSourceTrailingContent: s,
     uses: c,
     expiresAt: d,
     onRevokeInvite: u
   } = e;
-  return (0, i.jsxs)(w.Z, {
-    className: o()(U.inviteSettingsInviteRow, W.card, {
+  return (0, i.jsxs)(Z.Z, {
+    className: a()(U.inviteSettingsInviteRow, W.card, {
       [U.inviteDisabledRow]: t
     }),
-    children: [(0, i.jsxs)(w.Z, {
+    children: [(0, i.jsxs)(Z.Z, {
       grow: 3,
       basis: 0,
-      align: w.Z.Align.CENTER,
+      align: Z.Z.Align.CENTER,
       className: U.text,
       children: [null != n && (0, i.jsx)(y.Z, {
         user: n,
@@ -111,31 +111,31 @@ function F(e) {
           children: (0, C.F6)(l, A.default, k.Z, true)
         })]
       })]
-    }), (0, i.jsx)(w.Z, {
+    }), (0, i.jsx)(Z.Z, {
       grow: 3,
       shrink: 1,
       basis: 0,
-      align: w.Z.Align.CENTER,
+      align: Z.Z.Align.CENTER,
       className: U.text,
       children: (0, i.jsxs)("div", {
         className: U.inviteSourceContainer,
-        children: [a, s]
+        children: [o, s]
       })
-    }), (0, i.jsx)(w.Z, {
+    }), (0, i.jsx)(Z.Z, {
       grow: 1,
       basis: 0,
-      align: w.Z.Align.CENTER,
+      align: Z.Z.Align.CENTER,
       className: U.text,
       children: (0, i.jsx)(g.Text, {
         className: U.uses,
         variant: "text-sm/normal",
         children: c
       })
-    }), (0, i.jsx)(w.Z, {
+    }), (0, i.jsx)(Z.Z, {
       grow: 2,
       basis: 0,
-      align: w.Z.Align.CENTER,
-      className: o()(U.text, U.countdownColumn),
+      align: Z.Z.Align.CENTER,
+      className: a()(U.text, U.countdownColumn),
       children: (0, i.jsx)(g.Text, {
         className: U.countdown,
         variant: "text-sm/normal",
@@ -154,9 +154,9 @@ function K(e) {
     invite: n,
     showChannel: r = false,
     inviteDisabled: l = false,
-    hide: o = false
-  } = e, a = n.uses;
-  return n.maxUses > 0 && (a = "".concat(n.uses, "/").concat(n.maxUses)), (0, i.jsx)(F, {
+    hide: a = false
+  } = e, o = n.uses;
+  return n.maxUses > 0 && (o = "".concat(n.uses, "/").concat(n.maxUses)), (0, i.jsx)(F, {
     isDisabled: l,
     inviter: n.inviter,
     showChannel: r,
@@ -164,9 +164,9 @@ function K(e) {
     inviteSource: (0, i.jsx)(g.Text, {
       className: U.inviteCode,
       variant: "text-sm/normal",
-      children: o ? "..." : n.code
+      children: a ? "..." : n.code
     }),
-    inviteSourceTrailingContent: !o && (0, D.yE)(null != (t = n.flags) ? t : 0, u.$.IS_APPLICATION_BYPASS) ? (0, i.jsxs)("div", {
+    inviteSourceTrailingContent: !a && (0, D.yE)(null != (t = n.flags) ? t : 0, u.$.IS_APPLICATION_BYPASS) ? (0, i.jsxs)("div", {
       className: U.bypass,
       children: [(0, i.jsx)(g.Text, {
         className: U.text,
@@ -183,7 +183,7 @@ function K(e) {
         }))
       })]
     }) : null,
-    uses: a,
+    uses: o,
     expiresAt: (0, i.jsx)(N.Z, {
       deadline: n.getExpiresAt()
     }),
@@ -198,31 +198,31 @@ function q(e) {
     applicationId: t,
     channel: r,
     showChannel: l = false,
-    inviteDisabled: o = false
-  } = e, a = (0, _.q)(t), s = (0, p.e7)([A.default], () => {
+    inviteDisabled: a = false
+  } = e, o = (0, _.q)(t), s = (0, p.e7)([A.default], () => {
     var e;
     return A.default.getUser(null == (e = r.linkedLobby) ? true : e.linked_by)
   }), c = (0, T.Y)(r);
   return (0, i.jsx)(F, {
-    isDisabled: o,
+    isDisabled: a,
     inviter: s,
     showChannel: l,
     channel: r,
     inviteSource: (0, i.jsxs)("div", {
       className: U.linkedChannelJoinSource,
-      children: [(0, i.jsx)(Z.Z, {
-        game: a,
-        size: Z.Z.Sizes.XXSMALL
+      children: [(0, i.jsx)(S.Z, {
+        game: o,
+        size: S.Z.Sizes.XXSMALL
       }), (0, i.jsx)(g.Text, {
         className: U.linkedChannelJoinSourceText,
         variant: "text-sm/normal",
-        children: null == a ? true : a.name
+        children: null == o ? true : o.name
       })]
     }),
     uses: B.intl.string(B.t.jHpxws),
     expiresAt: B.intl.string(B.t.PqEzn5),
     onRevokeInvite: () => {
-      if (!c || null == a) return void h.Z.show({
+      if (!c || null == o) return void h.Z.show({
         title: B.intl.string(B.t.JmUENj),
         body: B.intl.string(B.t.SrvsMD)
       });
@@ -232,7 +232,7 @@ function q(e) {
         } = await n.e("30019").then(n.bind(n, 719498));
         return t => (0, i.jsx)(e, z(G({}, t), {
           channel: r,
-          application: a
+          application: o
         }))
       })
     }
@@ -243,8 +243,8 @@ function V(e) {
   let {
     invites: t,
     guild: l,
-    hide: o,
-    canCreateInvites: a,
+    hide: a,
+    canCreateInvites: o,
     withV2Actions: c,
     channel: u = null,
     showChannel: f = false,
@@ -266,8 +266,8 @@ function V(e) {
       type: "channel",
       data: e
     }))], [_, C, h]),
-    Z = () => {
-      (0, g.ZDy)(async () => e => (0, i.jsx)(I.default, z(G({}, e), {
+    S = () => {
+      (0, g.ZDy)(async () => e => (0, i.jsx)(P.default, z(G({}, e), {
         channel: u,
         guild: l,
         source: M.t4x.SETTINGS_INVITE
@@ -276,9 +276,9 @@ function V(e) {
     [T, k] = r.useState(62),
     A = () => {
       let e = {
-        source: S.Zu.GUILD_SETTINGS
+        source: w.Zu.GUILD_SETTINGS
       };
-      (0, g.ZDy)(async () => t => (0, i.jsx)(P.default, z(G({}, t), {
+      (0, g.ZDy)(async () => t => (0, i.jsx)(I.default, z(G({}, t), {
         guildId: l.id,
         analyticsData: e
       })))
@@ -304,28 +304,28 @@ function V(e) {
             })]
           })
         }, "empty-state");
-        else return (0, i.jsxs)(w.Z, {
-          children: [(0, i.jsx)(w.Z.Child, {
+        else return (0, i.jsxs)(Z.Z, {
+          children: [(0, i.jsx)(Z.Z.Child, {
             grow: 3,
             basis: 0,
             className: H.marginReset,
             children: (0, i.jsx)(g.vwX, {
               children: B.intl.string(B.t.EgHyKy)
             })
-          }), (0, i.jsx)(w.Z.Child, {
+          }), (0, i.jsx)(Z.Z.Child, {
             basis: 0,
             grow: 3,
             className: H.marginReset,
             children: (0, i.jsx)(g.vwX, {
               children: C.length > 0 ? B.intl.string(B.t.l7VISU) : B.intl.string(B.t.LBlFEB)
             })
-          }), (0, i.jsx)(w.Z.Child, {
+          }), (0, i.jsx)(Z.Z.Child, {
             grow: 1,
             basis: 0,
             children: (0, i.jsx)(g.vwX, {
               children: B.intl.string(B.t.erWrmJ)
             })
-          }), (0, i.jsx)(w.Z.Child, {
+          }), (0, i.jsx)(Z.Z.Child, {
             grow: 2,
             basis: 0,
             children: (0, i.jsx)(g.vwX, {
@@ -351,8 +351,8 @@ function V(e) {
         children: [(0, i.jsx)(g.R94, {
           className: H.marginBottom20,
           type: g.geA.DESCRIPTION,
-          children: true === a ? B.intl.format(B.t["97VdNj"], {
-            onCreateInvite: Z
+          children: true === o ? B.intl.format(B.t["97VdNj"], {
+            onCreateInvite: S
           }) : B.intl.string(B.t.WDw38P)
         }), (0, i.jsxs)("div", {
           className: U.inviteDisabledContainer,
@@ -382,10 +382,10 @@ function V(e) {
         hasInvites: _.length > 0,
         setHeight: k,
         onShowDisableInvites: A,
-        onShowInviteModal: Z,
+        onShowInviteModal: S,
         hasInviteDisabledPermission: j,
         invitesDisabled: y,
-        canCreateInvites: a
+        canCreateInvites: o
       }, "actions-v2");
       if (3 === t) {
         if (0 === N.length && 0 === n && h) return (0, i.jsx)(g.$jN, {
@@ -396,7 +396,7 @@ function V(e) {
         switch (null == e ? true : e.type) {
           case "invite":
             return (0, i.jsx)(K, {
-              hide: o,
+              hide: a,
               invite: e.data,
               showChannel: f,
               inviteDisabled: y

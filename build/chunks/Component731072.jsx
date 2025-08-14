@@ -23,12 +23,12 @@ function p(e) {
     descriptionText: g,
     helpText: f,
     canNavigate: h
-  } = e, x = a.Z.get(m), j = r.useCallback(async e => {
-    h() && (await s.Z.enableIntegration(p.id, e.type, e.id), o.Z.startEditingIntegration(e.id))
+  } = e, x = o.Z.get(m), j = r.useCallback(async e => {
+    h() && (await s.Z.enableIntegration(p.id, e.type, e.id), a.Z.startEditingIntegration(e.id))
   }, [h, p.id]), v = r.useCallback(e => {
-    h() && (e.id === (null == n ? true : n.id) && o.Z.stopEditingIntegration(), s.Z.disableIntegration(p.id, e.id))
+    h() && (e.id === (null == n ? true : n.id) && a.Z.stopEditingIntegration(), s.Z.disableIntegration(p.id, e.id))
   }, [h, n, p.id]), y = r.useCallback(e => {
-    h() && (e === (null == n ? true : n.id) ? o.Z.stopEditingIntegration() : o.Z.startEditingIntegration(e))
+    h() && (e === (null == n ? true : n.id) ? a.Z.stopEditingIntegration() : a.Z.startEditingIntegration(e))
   }, [h, n]);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(c.Z, {

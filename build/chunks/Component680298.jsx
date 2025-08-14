@@ -55,7 +55,7 @@ function p(e) {
       }, n))
     })
   }, [t, p, m, b, g]), x = r.useCallback(e => {
-    (0, o.jW)(e, async () => {
+    (0, a.jW)(e, async () => {
       let {
         default: e
       } = await n.e("5396").then(n.bind(n, 731646));
@@ -76,7 +76,7 @@ function p(e) {
         }), n))
       }
     })
-  }, [b]), j = b.type === a.yU.CHAT ? l.SsZ : l.hH0, v = (0, s.gw)(b.type, b.displayName);
+  }, [b]), j = b.type === o.yU.CHAT ? l.SsZ : l.hH0, v = (0, s.gw)(b.type, b.displayName);
   return (0, i.jsxs)(l.P3F, {
     onClick: h,
     className: d.item,

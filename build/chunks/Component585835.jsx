@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk243814 = require("./243814.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
@@ -30,11 +30,11 @@ function _(e) {
     name: _,
     icon: C,
     imageSrc: N,
-    iconBackgroundColor: w,
-    iconClassName: Z,
-    iconWrapperClassName: S,
-    details: P,
-    integration: I,
+    iconBackgroundColor: Z,
+    iconClassName: S,
+    iconWrapperClassName: w,
+    details: I,
+    integration: P,
     buttonText: T,
     buttonDisabled: E,
     hasNextSection: k,
@@ -43,7 +43,7 @@ function _(e) {
     isScrolling: R,
     canShowMigrationTooltip: L,
     trailing: M
-  } = e, [B, U] = r.useState(false), [W, H] = r.useState(false), G = L && !R && !W && true !== D && null != I, z = r.useRef(null), F = r.useRef(null), K = r.useCallback((e, t, n, r) => null == e || null == r ? null : n ? (0, i.jsxs)(m.Z, {
+  } = e, [B, U] = r.useState(false), [W, H] = r.useState(false), G = L && !R && !W && true !== D && null != P, z = r.useRef(null), F = r.useRef(null), K = r.useCallback((e, t, n, r) => null == e || null == r ? null : n ? (0, i.jsxs)(m.Z, {
     align: m.Z.Align.CENTER,
     ref: F,
     children: [(0, i.jsx)(d.Text, {
@@ -85,7 +85,7 @@ function _(e) {
       }
       return e
     }({}, (0, u.hH)(D)), t = t = {
-      application_id: null == I ? true : I.application.id,
+      application_id: null == P ? true : P.application.id,
       location: "overview"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -97,12 +97,12 @@ function _(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [D, null == I ? true : I.application.id, G]);
+  }, [D, null == P ? true : P.application.id, G]);
   let q = G ? (0, i.jsx)(d.yRy, {
       targetElementRef: k ? F : z,
       renderPopout: () => (0, i.jsx)(d.P3F, {
         onClick: e => {
-          e.stopPropagation(), H(true), j.Z.dismissOverviewTooltip(D, I.integration)
+          e.stopPropagation(), H(true), j.Z.dismissOverviewTooltip(D, P.integration)
         },
         children: (0, i.jsx)(g.ZP, {
           content: y.intl.string(y.t.TyMJwM),
@@ -117,19 +117,19 @@ function _(e) {
     }) : K,
     V = (0, s.Wu)([b.Z], () => {
       var e;
-      return null != I && null != D && null != (e = b.Z.getApplicationEntitlementsForGuild(I.application.id, D)) ? e : []
+      return null != P && null != D && null != (e = b.Z.getApplicationEntitlementsForGuild(P.application.id, D)) ? e : []
     }),
     Y = (0, p.LD)(D, true),
-    X = (null == I ? true : I.application) != null && Object.keys(null != (l = null == (n = Y.result) || null == (t = n.sections[I.application.id]) ? true : t.commands) ? l : {}).length > 0,
+    X = (null == P ? true : P.application) != null && Object.keys(null != (l = null == (n = Y.result) || null == (t = n.sections[P.application.id]) ? true : t.commands) ? l : {}).length > 0,
     $ = (0, i.jsxs)(m.Z, {
       children: [(0, i.jsx)(x.Z, {
         name: _,
         icon: C,
         imageSrc: N,
-        iconBackgroundColor: w,
-        iconClassName: Z,
-        iconWrapperClassName: S,
-        details: P,
+        iconBackgroundColor: Z,
+        iconClassName: S,
+        iconWrapperClassName: w,
+        details: I,
         isPremium: V.length > 0
       }), (0, i.jsx)(m.Z.Child, {
         shrink: 0,
@@ -140,13 +140,13 @@ function _(e) {
           children: [function(e, t, n) {
             var r, l;
             if (null == e) return null;
-            let o = [],
+            let a = [],
               {
                 application: s,
                 integration: c,
                 webhooks: u
               } = e;
-            return null != s.bot && (null == c || null == (r = c.scopes) ? true : r.includes(a.x.BOT)) && o.push((0, i.jsx)(d.DY3, {
+            return null != s.bot && (null == c || null == (r = c.scopes) ? true : r.includes(o.x.BOT)) && a.push((0, i.jsx)(d.DY3, {
               forceOpen: t,
               text: new f.Z(s.bot).isVerifiedBot() ? y.intl.string(y.t.xxcTGx) : y.intl.string(y.t.AOdOYm),
               className: O.feature,
@@ -155,7 +155,7 @@ function _(e) {
                 color: "currentColor",
                 className: O.featureIcon
               })
-            }, "bot")), u.length > 0 && o.push((0, i.jsx)(d.DY3, {
+            }, "bot")), u.length > 0 && a.push((0, i.jsx)(d.DY3, {
               forceOpen: t,
               text: y.intl.formatToPlainString(y.t["6HqDfX"], {
                 count: u.length
@@ -166,7 +166,7 @@ function _(e) {
                 color: "currentColor",
                 className: O.featureIcon
               })
-            }, "webhooks")), (null == c || null == (l = c.scopes) ? true : l.includes(a.x.APPLICATIONS_COMMANDS)) === true && n && o.push((0, i.jsx)(d.DY3, {
+            }, "webhooks")), (null == c || null == (l = c.scopes) ? true : l.includes(o.x.APPLICATIONS_COMMANDS)) === true && n && a.push((0, i.jsx)(d.DY3, {
               forceOpen: t,
               text: y.intl.string(y.t["0hKkS0"]),
               className: O.feature,
@@ -175,20 +175,20 @@ function _(e) {
                 color: "currentColor",
                 className: O.featureIcon
               })
-            }, "commands")), o
-          }(I, B, X), q, M]
+            }, "commands")), a
+          }(P, B, X), q, M]
         })
       })]
     });
   return k ? (0, i.jsx)(d.P3F, {
     onClick: () => {
-      L && null != D && null != I && j.Z.dismissOverviewTooltip(D, I.integration), null == A || A()
+      L && null != D && null != P && j.Z.dismissOverviewTooltip(D, P.integration), null == A || A()
     },
     onFocus: () => U(true),
     onBlur: () => U(false),
     children: (0, i.jsx)(d.Zbd, {
       editable: true,
-      className: o()(O.card, O.clickable),
+      className: a()(O.card, O.clickable),
       children: $
     })
   }) : (0, i.jsx)(d.Zbd, {

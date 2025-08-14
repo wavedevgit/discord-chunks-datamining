@@ -24,7 +24,7 @@ function u(e) {
     disabled: g = false,
     hideBorder: f = false,
     className: h = d.marginBottom20
-  } = e, x = (0, o.Dt)();
+  } = e, x = (0, a.Dt)();
   return (0, i.jsxs)(l.Z, {
     style: b,
     className: h,
@@ -60,7 +60,7 @@ function u(e) {
         disabled: g,
         type: r.geA.DESCRIPTION,
         children: (0, i.jsx)(r.eee, {
-          href: a.Z.getArticleURL(m),
+          href: o.Z.getArticleURL(m),
           children: c.intl.string(c.t.hvVgAQ)
         })
       })

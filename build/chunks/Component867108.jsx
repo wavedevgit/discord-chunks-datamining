@@ -21,7 +21,7 @@ function p(e, t) {
     label: u.intl.string(u.t.arFPfH),
     icon: l.ZSh,
     action: () => {
-      o.Z.close(), (0, a.iD)(e.id, {
+      a.Z.close(), (0, o.iD)(e.id, {
         type: s.z.ROLES,
         roles: {
           [t.id]: t

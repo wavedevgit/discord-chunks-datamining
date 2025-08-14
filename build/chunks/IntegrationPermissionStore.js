@@ -4,7 +4,7 @@ let i, r, l;
 require.d(exports, {
   Z: () => h
 }), require("./467055.js"), require("./388685.js");
-var o, Chunk442837 = require("./442837.js"),
+var a, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk581364 = require("./581364.js"),
   Chunk399860 = require("./399860.js");
@@ -24,7 +24,7 @@ let p = {},
 function g() {
   i = true, p = {}, m = {}, r = true, l = true, b = false
 }
-class f extends(o = Chunk442837.ZP.Store) {
+class f extends(a = Chunk442837.ZP.Store) {
   getApplicationPermissions() {
     return p
   }
@@ -69,15 +69,15 @@ let h = new f(Chunk570140.Z, {
     let {
       applicationId: r,
       commandId: l,
-      permissions: o
+      permissions: a
     } = e;
     if (r !== i) returnfalse;
     if (l === i) {
-      p = (0, d.tk)(o);
+      p = (0, d.tk)(a);
       return
     }
-    let a = m[l];
-    if (null == a) returnfalse;
+    let o = m[l];
+    if (null == o) returnfalse;
     m[l] = (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -89,8 +89,8 @@ let h = new f(Chunk570140.Z, {
         })
       }
       return e
-    }({}, a), n = n = {
-      permissions: (0, d.tk)(o)
+    }({}, o), n = n = {
+      permissions: (0, d.tk)(a)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -106,12 +106,12 @@ let h = new f(Chunk570140.Z, {
     let {
       applicationId: t,
       commandId: n,
-      permissions: o
+      permissions: a
     } = e;
     if (t !== i) returnfalse;
-    n === i ? r = o : l = {
+    n === i ? r = a : l = {
       commandId: n,
-      permissions: o
+      permissions: a
     }
   },
   INTEGRATION_PERMISSION_SETTINGS_RESET: function(e) {
@@ -135,7 +135,7 @@ let h = new f(Chunk570140.Z, {
     } = e;
     if (t !== i) returnfalse;
     let l = Object.fromEntries(r.map(e => [e.id, e.permissions])),
-      o = {};
+      a = {};
     for (let e of n)
       if (e.application_id === i) {
         let t = (0, c.Z8)({
@@ -144,7 +144,7 @@ let h = new f(Chunk570140.Z, {
             applicationId: e.application_id
           }),
           n = l[e.id];
-        null != n && (t.permissions = (0, d.tk)(n)), o[e.id] = t
-      } m = o
+        null != n && (t.permissions = (0, d.tk)(n)), a[e.id] = t
+      } m = a
   }
 })

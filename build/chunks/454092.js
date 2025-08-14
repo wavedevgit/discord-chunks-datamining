@@ -12,16 +12,16 @@ var i, Chunk668781 = require("./668781.js"),
 
 function c(e, t) {
   let n;
-  0 === e ? n = a.intl.format(a.t["/S6f5+"], {}) : 1 === e ? n = a.intl.format(a.t.EBhv4e, {
+  0 === e ? n = o.intl.format(o.t["/S6f5+"], {}) : 1 === e ? n = o.intl.format(o.t.EBhv4e, {
     name: t
-  }) : 2 === e && (n = a.intl.format(a.t["59Dbw8"], {
+  }) : 2 === e && (n = o.intl.format(o.t["59Dbw8"], {
     name: t
   })), r.Z.show({
-    title: a.intl.string(a.t.vElC9f),
+    title: o.intl.string(o.t.vElC9f),
     body: n,
-    cancelText: a.intl.string(a.t.psXQHB),
+    cancelText: o.intl.string(o.t.psXQHB),
     onCancel() {
-      window.open(l.Z.getArticleURL(o.BhN.APPLICATION_COMMAND_PERMISSIONS_LOCKOUT))
+      window.open(l.Z.getArticleURL(a.BhN.APPLICATION_COMMAND_PERMISSIONS_LOCKOUT))
     }
   })
 }

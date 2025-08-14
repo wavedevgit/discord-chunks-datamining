@@ -26,13 +26,13 @@ function d(e) {
     isHeader: f,
     isPremium: h
   } = e;
-  return (0, i.jsxs)(a.Z, {
-    justify: a.Z.Justify.CENTER,
+  return (0, i.jsxs)(o.Z, {
+    justify: o.Z.Justify.CENTER,
     className: c.wrapper,
-    children: [null != r || null != d ? (0, i.jsx)(a.Z.Child, {
+    children: [null != r || null != d ? (0, i.jsx)(o.Z.Child, {
       shrink: 0,
       grow: 0,
-      children: function(e, t, n, r, o) {
+      children: function(e, t, n, r, a) {
         if (null != t) return (0, i.jsx)("img", {
           alt: "",
           src: t,
@@ -46,13 +46,13 @@ function d(e) {
         }) : (0, i.jsx)(e, {
           className: l()(c.icon, r),
           color: "currentColor"
-        })), (0, i.jsx)(a.Z, {
-          align: a.Z.Align.CENTER,
-          justify: a.Z.Justify.CENTER,
+        })), (0, i.jsx)(o.Z, {
+          align: o.Z.Align.CENTER,
+          justify: o.Z.Justify.CENTER,
           style: {
             backgroundColor: n
           },
-          className: l()(c.iconWrapper, o),
+          className: l()(c.iconWrapper, a),
           children: s
         })
       }(r, d, u, p, m)
@@ -75,7 +75,7 @@ function d(e) {
             size: "xs",
             color: "currentColor",
             className: c.detailsIcon
-          }) : null, (0, i.jsx)(o.Text, {
+          }) : null, (0, i.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
             className: d,
@@ -83,16 +83,16 @@ function d(e) {
           })]
         }, t)
       });
-      return (0, i.jsxs)(a.Z, {
-        direction: a.Z.Direction.VERTICAL,
-        children: [(0, i.jsxs)(o.X6q, {
+      return (0, i.jsxs)(o.Z, {
+        direction: o.Z.Direction.VERTICAL,
+        children: [(0, i.jsxs)(a.X6q, {
           variant: u ? "heading-xl/semibold" : "heading-md/medium",
           className: u ? c.header : c.secondaryHeader,
-          children: [t, p && (0, i.jsx)(o.ua7, {
+          children: [t, p && (0, i.jsx)(a.ua7, {
             text: s.intl.string(s.t.VFuFur),
             children: e => {
               var t, n;
-              return (0, i.jsx)(o.Prq, (t = function(e) {
+              return (0, i.jsx)(a.Prq, (t = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     i = Object.keys(n);
@@ -126,14 +126,14 @@ function d(e) {
               }), t))
             }
           })]
-        }), null != n ? (0, i.jsx)(o.Text, {
+        }), null != n ? (0, i.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
           children: n
-        }) : null, (0, i.jsx)(a.Z, {
-          direction: a.Z.Direction.HORIZONTAL,
-          align: a.Z.Align.CENTER,
-          wrap: a.Z.Wrap.WRAP,
+        }) : null, (0, i.jsx)(o.Z, {
+          direction: o.Z.Direction.HORIZONTAL,
+          align: o.Z.Align.CENTER,
+          wrap: o.Z.Wrap.WRAP,
           children: m
         })]
       })

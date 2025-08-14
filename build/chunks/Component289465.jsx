@@ -18,21 +18,21 @@ function s(e) {
     inModal: s,
     title: c
   } = e;
-  return (0, i.jsxs)(o.Zbd, {
+  return (0, i.jsxs)(a.Zbd, {
     editable: true,
-    className: l()(a.card, r, {
-      [a.inModal]: s
+    className: l()(o.card, r, {
+      [o.inModal]: s
     }),
     children: [(0, i.jsxs)("div", {
-      className: l()(a.cardHeader, {
-        [a.inModal]: s
+      className: l()(o.cardHeader, {
+        [o.inModal]: s
       }),
-      children: [(0, i.jsx)(o.Text, {
+      children: [(0, i.jsx)(a.Text, {
         variant: "text-sm/semibold",
         children: c
       }), (0, i.jsx)("div", {
         children: t
       })]
-    }), s ? (0, i.jsx)(o.$i$, {}) : null, n]
+    }), s ? (0, i.jsx)(a.$i$, {}) : null, n]
   })
 }

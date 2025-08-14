@@ -140,7 +140,7 @@ function A(e) {
                 colorString: I,
                 colorStrings: P,
                 roleName: N,
-                nameTextClassName: w
+                displayNameStylesFont: w
               }, t)
             })
           })

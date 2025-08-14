@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk149765 = require("./149765.js"),
   Chunk481060 = require("./481060.js"),
   Chunk208884 = require("./208884.js"),
@@ -23,10 +23,10 @@ class f extends Chunk73800.PureComponent {
       deny: n
     } = this.props;
     if (null == t || null == n) throw Error("PermissionsForm.getOverwriteValue: Invalid allow or deny props");
-    return a.e$(t, e) ? d.y.ALLOW : a.e$(n, e) ? d.y.DENY : d.y.PASSTHROUGH
+    return o.e$(t, e) ? d.y.ALLOW : o.e$(n, e) ? d.y.DENY : d.y.PASSTHROUGH
   }
   getPermissionValue(e, t) {
-    return a.e$(t, e)
+    return o.e$(t, e)
   }
   handleChange(e, t) {
     let {
@@ -92,34 +92,34 @@ class f extends Chunk73800.PureComponent {
       title: n,
       description: r,
       helpdeskArticleId: l,
-      flag: a
+      flag: o
     } = e, {
       permissions: d,
       locked: p,
       permissionRender: m
-    } = this.props, g = null != (t = this.props.inPinPermissionExperiment) && t, f = null == m ? true : m(a), h = !!(p || f), x = "string" == typeof f ? this.renderDisabledIndicator(f) : null, j = o()({
+    } = this.props, g = null != (t = this.props.inPinPermissionExperiment) && t, f = null == m ? true : m(o), h = !!(p || f), x = "string" == typeof f ? this.renderDisabledIndicator(f) : null, j = a()({
       [b.title]: null != x
     });
     return null == d ? (0, i.jsxs)(u.Z, {
       disabled: h,
-      value: this.getOverwriteValue(a),
-      onChange: e => this.handleChange(a, e),
+      value: this.getOverwriteValue(o),
+      onChange: e => this.handleChange(o, e),
       note: (0, c._u)(r),
       helpdeskArticleId: l,
       children: [x, (0, i.jsx)("span", {
         className: j,
         children: n
-      }), this.renderTitleAccessory(a, g)]
-    }, String(a)) : (0, i.jsxs)(s.j7V, {
+      }), this.renderTitleAccessory(o, g)]
+    }, String(o)) : (0, i.jsxs)(s.j7V, {
       disabled: h,
-      value: this.getPermissionValue(a, d),
-      onChange: e => this.handleChange(a, e),
+      value: this.getPermissionValue(o, d),
+      onChange: e => this.handleChange(o, e),
       note: (0, c._u)(r),
       children: [x, (0, i.jsx)("span", {
         className: j,
         children: n
-      }), this.renderTitleAccessory(a, g)]
-    }, String(a))
+      }), this.renderTitleAccessory(o, g)]
+    }, String(o))
   }
   render() {
     let {

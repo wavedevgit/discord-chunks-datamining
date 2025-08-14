@@ -1,7 +1,7 @@
 /** Chunk was on 63141 **/
 /** chunk id: 786906, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => Z
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -33,7 +33,7 @@ function x(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class C extends Chunk73800.Component {
+class j extends Chunk73800.Component {
   componentDidUpdate() {
     this.props.locked && this.state.showOpacitySlider && this.setState({
       showOpacitySlider: false
@@ -159,7 +159,7 @@ class C extends Chunk73800.Component {
   }
 }
 
-function j(e) {
+function Z(e) {
   var {
     channel: t
   } = e, n = function(e, t) {
@@ -185,7 +185,7 @@ function j(e) {
     l = (0, s.e7)([g.Z], () => g.Z.isCallActive(t.id)),
     a = (0, u.ZP)(t),
     c = (0, s.e7)([O.Z], () => !!t.isDM() && null != t.getRecipientId() && O.Z.isBlocked(t.getRecipientId()));
-  return (0, i.jsx)(C, function(e) {
+  return (0, i.jsx)(j, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);

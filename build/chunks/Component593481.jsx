@@ -1,22 +1,21 @@
 /** Chunk was on 63141 **/
 /** chunk id: 593481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  QR: () => O,
-  Yj: () => v,
-  ZP: () => b
+  QR: () => y,
+  Yj: () => O,
+  ZP: () => _
 });
 var i, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk294033 = require("./294033.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk866497 = require("./866497.js"),
   Chunk197571 = require("./197571.js");
 
-function f(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,31 +23,31 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let g = e => e.stopPropagation(),
-  m = () => (0, Chunk255367.jsx)("div", {
+let f = e => e.stopPropagation(),
+  g = () => (0, Chunk255367.jsx)("div", {
     className: Chunk866497.clickBlocker,
-    onClick: g,
-    onMouseEnter: g,
-    onMouseOver: g
+    onClick: f,
+    onMouseEnter: f,
+    onMouseOver: f
   }),
-  y = () => (0, Chunk255367.jsx)("div", {
+  m = () => (0, Chunk255367.jsx)("div", {
     className: Chunk866497.divider
   }),
-  O = (e, t, n) => (0, r.jsx)("div", {
-    className: h.keybindMessage,
-    children: u.intl.format(n, {
+  y = (e, t, n) => (0, r.jsx)("div", {
+    className: u.keybindMessage,
+    children: d.intl.format(n, {
       keybind: t,
-      keybindHook: (e, n) => (0, r.jsx)(d.Z, {
+      keybindHook: (e, n) => (0, r.jsx)(c.Z, {
         keybind: t,
-        className: h.keybind
+        className: u.keybind
       }, n)
     })
   }),
-  v = (e, t) => (0, r.jsx)("div", {
-    className: h.hintSubtleText,
+  O = (e, t) => (0, r.jsx)("div", {
+    className: u.hintSubtleText,
     children: t
   });
-class _ extends(i = Chunk73800.PureComponent) {
+class v extends(i = Chunk73800.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     let {
       expand: n
@@ -72,9 +71,7 @@ class _ extends(i = Chunk73800.PureComponent) {
     null != t && null == e.onNotificationShow && t()
   }
   renderCloseButton() {
-    return "function" == typeof this.props.title ? null : (0, Chunk255367.jsx)(Chunk755721.zx, {
-      look: Chunk755721.zx.Looks.BLANK,
-      size: Chunk755721.zx.Sizes.NONE,
+    return "function" == typeof this.props.title ? null : (0, Chunk255367.jsx)(Chunk481060.P3F, {
       onClick: this.handleDismiss,
       className: Chunk866497.dismissButton,
       "aria-label": Chunk388032.intl.string(Chunk388032.t.LnEgqa),
@@ -99,11 +96,11 @@ class _ extends(i = Chunk73800.PureComponent) {
     if ("function" == typeof module) {
       let i = module(require, exports);
       return null != i ? (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
-        children: [(0, Chunk255367.jsx)(y, {}), i]
+        children: [(0, Chunk255367.jsx)(m, {}), i]
       }, "hint-custom") : null
     }
     return (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
-      children: [(0, Chunk255367.jsx)(y, {}), (0, Chunk255367.jsx)("div", {
+      children: [(0, Chunk255367.jsx)(m, {}), (0, Chunk255367.jsx)("div", {
         className: "string" == typeof module ? Chunk866497.hintText : true,
         children: module
       }, "hint-text")]
@@ -126,37 +123,25 @@ class _ extends(i = Chunk73800.PureComponent) {
     if (null != this.props.renderFooter) {
       let e = this.props.renderFooter(s);
       return null != module ? (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
-        children: [(0, Chunk255367.jsx)(y, {}), module]
+        children: [(0, Chunk255367.jsx)(m, {}), module]
       }, "footer-custom-content") : null
     }
-    if (null != require || null != i) {
-      let l = Chunk755721.zx.Colors.GREEN,
-        s = Chunk755721.zx.Colors.PRIMARY,
-        c = Chunk755721.zx.Looks.FILLED;
-      return (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
-        children: [(0, Chunk255367.jsx)(y, {}), (0, Chunk255367.jsxs)("div", {
-          className: Chunk866497.buttonContainer,
-          children: [null != require ? (0, Chunk255367.jsx)(Chunk755721.zx, {
-            fullWidth: true,
-            size: Chunk755721.zx.Sizes.SMALL,
-            color: Chunk120356,
-            onClick: this.handleConfirmClick,
-            className: Chunk866497.button,
-            innerClassName: Chunk866497.innerText,
-            children: null != exports ? exports : Chunk388032.intl.string(Chunk388032.t.BddRzc)
-          }) : null, null != i ? (0, Chunk255367.jsx)(Chunk755721.zx, {
-            fullWidth: true,
-            size: Chunk755721.zx.Sizes.SMALL,
-            look: Chunk481060,
-            color: s,
-            onClick: this.handleCancelClick,
-            className: Chunk866497.button,
-            children: null != module ? module : Chunk388032.intl.string(Chunk388032.t["ETE/oK"])
-          }) : null]
-        })]
-      }, "footer-button-content")
-    }
-    return this.renderHint()
+    return null != require || null != i ? (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
+      children: [(0, Chunk255367.jsx)(m, {}), (0, Chunk255367.jsxs)(Chunk481060.hE2, {
+        fullWidth: true,
+        children: [null != require ? (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "active",
+          size: "sm",
+          text: null != exports ? exports : Chunk388032.intl.string(Chunk388032.t.BddRzc),
+          onClick: this.handleConfirmClick
+        }) : null, null != i ? (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          variant: "secondary",
+          size: "sm",
+          text: null != module ? module : Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
+          onClick: this.handleCancelClick
+        }) : null]
+      })]
+    }, "footer-button-content") : this.renderHint()
   }
   renderIcon() {
     let {
@@ -214,29 +199,29 @@ class _ extends(i = Chunk73800.PureComponent) {
         [Chunk866497.themePrimary]: true,
         [Chunk866497.clickable]: null != module && !exports
       }),
-      children: [this.renderCloseButton(), this.renderContent(), this.renderFooter(), exports ? (0, Chunk255367.jsx)(m, {}) : null]
+      children: [this.renderCloseButton(), this.renderContent(), this.renderFooter(), exports ? (0, Chunk255367.jsx)(g, {}) : null]
     })
   }
   constructor(e) {
-    super(e), f(this, "handleDismiss", e => {
+    super(e), p(this, "handleDismiss", e => {
       e.stopPropagation();
       let {
         onDismissClick: t
       } = this.props;
       null == t || t(e)
-    }), f(this, "handleConfirmClick", e => {
+    }), p(this, "handleConfirmClick", e => {
       e.stopPropagation();
       let {
         onConfirmClick: t
       } = this.props;
       null == t || t(e)
-    }), f(this, "handleCancelClick", e => {
+    }), p(this, "handleCancelClick", e => {
       e.stopPropagation();
       let {
         onCancelClick: t
       } = this.props;
       null == t || t(e)
-    }), f(this, "handleMouseEnter", () => {
+    }), p(this, "handleMouseEnter", () => {
       this.props.disabled || this.setState({
         expanded: true
       })
@@ -249,9 +234,9 @@ class _ extends(i = Chunk73800.PureComponent) {
     }
   }
 }
-f(_, "defaultProps", {
+p(v, "defaultProps", {
   maxBodyLines: true,
   expand: false,
   disabled: false
 });
-let b = _
+let _ = v

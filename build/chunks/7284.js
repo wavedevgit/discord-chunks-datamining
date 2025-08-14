@@ -2,20 +2,22 @@
 /** chunk id: 7284, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  j: () => u,
-  y: () => c
+  j: () => f,
+  y: () => d
 });
-var Chunk342905 = require("./342905.js"),
+var Chunk120356 = require("./120356.js"),
+  i = require.n(Chunk120356),
+  Chunk342905 = require("./342905.js"),
   Chunk594928 = require("./594928.js"),
   Chunk181430 = require("./181430.js"),
   Chunk693450 = require("./693450.js"),
   Chunk806539 = require("./806539.js");
-let l = {
+let u = {
     name: Chunk693450.default.ZEL6m5,
     className: ""
   },
-  c = {
-    [Chunk342905.C.DEFAULT]: l,
+  d = {
+    [Chunk342905.C.DEFAULT]: u,
     [Chunk342905.C.CHERRY_BOMB]: {
       name: Chunk693450.default.rN7cub,
       className: Chunk806539.cherryBomb
@@ -44,23 +46,25 @@ let l = {
       name: Chunk693450.default.KMR8ra,
       className: Chunk806539.zillaSlab
     },
-    [Chunk342905.C.BIO_RHYME]: l,
-    [Chunk342905.C.BANGERS]: l,
-    [Chunk342905.C.COMPAGNON]: l,
-    [Chunk342905.C.RIBES]: l
+    [Chunk342905.C.BIO_RHYME]: u,
+    [Chunk342905.C.BANGERS]: u,
+    [Chunk342905.C.COMPAGNON]: u,
+    [Chunk342905.C.RIBES]: u
   };
 
-function u(e) {
+function f(e) {
   var t;
   let {
     displayNameStyles: n,
     inProfile: r
   } = e, {
-    includeNonProfile: a
-  } = i.f.useExperiment({
+    includeNonProfile: o
+  } = a.f.useExperiment({
     location: "useDisplayNameStylesFont"
   });
-  return (0, o.Y)({
-    location: "useDisplayNameStylesFont"
-  }) && (r || a) && null != n ? (null != (t = c[n.fontId]) ? t : l).className : ""
+  if (!(0, s.Y)({
+      location: "useDisplayNameStylesFont"
+    }) || !r && !o || null == n) return "";
+  let l = null != (t = d[n.fontId]) ? t : u;
+  return "" === l.className ? "" : i()(c.dnsFont, l.className)
 }

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
   Chunk139387 = require("./139387.js"),
   Chunk835473 = require("./835473.js"),
@@ -31,7 +31,7 @@ function x(e) {
       children: [(0, i.jsx)(u.Z, {
         game: r,
         size: u.Z.Sizes.XSMALL
-      }), (0, i.jsx)(a.X6q, {
+      }), (0, i.jsx)(o.X6q, {
         variant: "heading-md/semibold",
         children: null == r ? true : r.name
       })]
@@ -44,7 +44,7 @@ function x(e) {
         icon: null != (t = (0, d.KS)(e)) ? t : true,
         iconWrapperClassName: h.iconwrapper,
         hasNextSection: true,
-        trailing: (0, i.jsx)(a.vdY, {
+        trailing: (0, i.jsx)(o.vdY, {
           size: "xs"
         })
       }, e.id)
@@ -55,19 +55,19 @@ function x(e) {
 function j(e) {
   let {
     guild: t
-  } = e, n = (0, p.F)(t.id), l = o().groupBy(n, e => {
+  } = e, n = (0, p.F)(t.id), l = a().groupBy(n, e => {
     var t;
     return null == (t = e.linkedLobby) ? true : t.application_id
   }), c = Object.keys(l);
   return r.useEffect(() => {
     0 === n.length && s.Z.setSection(g.b4C.OVERVIEW)
-  }, [n]), (0, i.jsxs)(a.hjN, {
-    children: [(0, i.jsx)(a.R94, {
-      type: a.geA.DESCRIPTION,
+  }, [n]), (0, i.jsxs)(o.hjN, {
+    children: [(0, i.jsx)(o.R94, {
+      type: o.geA.DESCRIPTION,
       children: f.intl.format(f.t["9gsSLi"], {
         helpdeskArticle: m.Z.getArticleURL(g.BhN.LINKED_LOBBIES)
       })
-    }), (0, i.jsx)(a.$i$, {
+    }), (0, i.jsx)(o.$i$, {
       className: h.headerDivider
     }), c.map(e => (0, i.jsx)(x, {
       applicationId: e,

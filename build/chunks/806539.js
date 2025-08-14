@@ -2,6 +2,7 @@
 /** chunk id: 806539, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
+  dnsFont: "dnsFont__89a31",
   cherryBomb: "cherryBomb__89a31",
   chicle: "chicle__89a31",
   museoModerno: "museoModerno__89a31",

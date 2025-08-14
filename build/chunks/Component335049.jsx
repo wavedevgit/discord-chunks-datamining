@@ -1,12 +1,12 @@
 /** Chunk was on 58511 **/
 /** chunk id: 335049, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => w
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -27,7 +27,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk243226 = require("./243226.js");
 
-function w(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -46,7 +46,7 @@ function w(e) {
   return e
 }
 
-function Z(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,40 +59,40 @@ function Z(e, t) {
   }), e
 }
 
-function S(e) {
+function w(e) {
   let {
     guild: t,
     id: l,
-    type: o,
-    isLocked: a,
+    type: a,
+    isLocked: o,
     lockTooltipText: c
-  } = e, d = !a || null != c;
+  } = e, d = !o || null != c;
   s()(d, "No lockTooltipText provided while isLocked=true");
   let m = r.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
       } = await n.e("5396").then(n.bind(n, 731646));
-      return t => (0, i.jsx)(e, Z(w({}, t), {
+      return t => (0, i.jsx)(e, S(Z({}, t), {
         id: l,
         label: C.intl.string(C.t.oJ1Mu7)
       }))
     })
   }, [l]);
-  switch (o) {
+  switch (a) {
     case p.Kw.CHANNEL:
-      return (0, i.jsx)(P, {
+      return (0, i.jsx)(I, {
         guild: t,
         id: l,
-        isLocked: a,
+        isLocked: o,
         lockTooltipText: c,
         openEntryContextMenu: m
       });
     case p.Kw.ROLE:
-      return (0, i.jsx)(I, {
+      return (0, i.jsx)(P, {
         guild: t,
         id: l,
-        isLocked: a,
+        isLocked: o,
         lockTooltipText: c,
         openEntryContextMenu: m
       });
@@ -100,19 +100,19 @@ function S(e) {
       return (0, i.jsx)(T, {
         guild: t,
         id: l,
-        isLocked: a,
+        isLocked: o,
         lockTooltipText: c,
         openEntryContextMenu: m
       })
   }
 }
 
-function P(e) {
+function I(e) {
   let {
     guild: t,
     id: n,
     isLocked: l,
-    lockTooltipText: a,
+    lockTooltipText: o,
     openEntryContextMenu: s
   } = e, u = (0, m.bD)(t.id), {
     icon: p,
@@ -141,7 +141,7 @@ function P(e) {
       width: 20,
       height: 20,
       color: "currentColor",
-      className: o()(N.channelIcon, N.image)
+      className: a()(N.channelIcon, N.image)
     }), (0, i.jsx)(d.Text, {
       className: N.roleName,
       color: "header-primary",
@@ -152,28 +152,28 @@ function P(e) {
       variant: "text-sm/normal",
       children: ["(", f, ")"]
     }) : null, l ? (0, i.jsx)(E, {
-      tooltipText: a
+      tooltipText: o
     }) : null]
   })
 }
 
-function I(e) {
+function P(e) {
   var t;
   let {
     guild: l,
-    id: a,
+    id: o,
     isLocked: s,
     lockTooltipText: p
-  } = e, m = (0, c.e7)([j.Z], () => j.Z.getRole(l.id, a)), b = (0, f.p9)({
+  } = e, m = (0, c.e7)([j.Z], () => j.Z.getRole(l.id, o)), b = (0, f.p9)({
     guildId: l.id,
-    roleId: a,
+    roleId: o,
     size: 24
   }), h = r.useCallback(e => {
     null != l && null != m && (0, u.jW)(e, async () => {
       let {
         default: e
       } = await n.e("14486").then(n.bind(n, 786746));
-      return t => (0, i.jsx)(e, Z(w({}, t), {
+      return t => (0, i.jsx)(e, S(Z({}, t), {
         guild: l,
         role: m
       }))
@@ -182,13 +182,13 @@ function I(e) {
   return (null == m ? true : m.name) == null ? null : (0, i.jsxs)("div", {
     onContextMenu: h,
     className: N.identifier,
-    children: [null != b ? (0, i.jsx)(g.Z, w({
-      className: o()(N.__invalid_icon, N.image)
+    children: [null != b ? (0, i.jsx)(g.Z, Z({
+      className: a()(N.__invalid_icon, N.image)
     }, b)) : (0, i.jsx)(d.lZ8, {
       size: "custom",
       width: 23,
       height: 23,
-      className: o()(N.shield, N.image),
+      className: a()(N.shield, N.image),
       color: null != (t = m.colorString) ? t : _.Pbq
     }), (0, i.jsx)(d.Text, {
       className: N.roleName,
@@ -207,28 +207,28 @@ function T(e) {
     id: n,
     isLocked: r,
     lockTooltipText: l,
-    openEntryContextMenu: o
-  } = e, a = (0, c.e7)([y.default], () => y.default.getUser(n)), s = (0, c.e7)([x.ZP], () => {
+    openEntryContextMenu: a
+  } = e, o = (0, c.e7)([y.default], () => y.default.getUser(n)), s = (0, c.e7)([x.ZP], () => {
     var e;
     return null == (e = x.ZP.getMember(t.id, n)) ? true : e.nick
   }, [t.id, n]), u = (0, c.e7)([v.Z], () => v.Z.hidePersonalInformation);
-  return null == a ? null : (0, i.jsxs)("div", {
-    onContextMenu: o,
+  return null == o ? null : (0, i.jsxs)("div", {
+    onContextMenu: a,
     className: N.identifier,
     children: [(0, i.jsx)(d.qEK, {
       className: N.image,
-      src: a.getAvatarURL(t.id, 24),
-      "aria-label": a.username,
+      src: o.getAvatarURL(t.id, 24),
+      "aria-label": o.username,
       size: d.EFr.SIZE_24
     }), (0, i.jsx)(d.Text, {
       className: N.roleName,
       color: "header-primary",
       variant: "text-md/normal",
-      children: null != s ? s : a.username
+      children: null != s ? s : o.username
     }), u ? null : (0, i.jsx)(d.Text, {
       className: N.tag,
       variant: "text-sm/normal",
-      children: O.ZP.getUserTag(a)
+      children: O.ZP.getUserTag(o)
     }), r ? (0, i.jsx)(E, {
       tooltipText: l
     }) : null]
@@ -241,7 +241,7 @@ function E(e) {
   } = e;
   return (0, i.jsx)(d.ua7, {
     text: t,
-    children: e => (0, i.jsx)("div", Z(w({
+    children: e => (0, i.jsx)("div", S(Z({
       className: N.lockIcon
     }, e), {
       children: (0, i.jsx)(d.mBM, {

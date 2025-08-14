@@ -50,7 +50,7 @@ function d(e) {
       }
       return r
     }(e, ["channel", "application", "showApplicationImage"]);
-  let b = (0, o.w)(d),
+  let b = (0, a.w)(d),
     g = r.useCallback(() => (0, l.ZDy)(async () => {
       let {
         default: e
@@ -72,7 +72,7 @@ function d(e) {
         }), n))
       }
     }), [u, d]),
-    f = p ? null != (t = u.getIconURL(48)) ? t : a.pK["0"] : true;
+    f = p ? null != (t = u.getIconURL(48)) ? t : o.pK["0"] : true;
   return (0, i.jsx)(s.Z, c({
     imageSrc: f,
     onButtonClick: g,

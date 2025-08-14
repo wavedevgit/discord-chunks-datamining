@@ -192,7 +192,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         colorStrings: i,
         name: o,
         className: j.name,
-        nameTextClassName: d,
+        displayNameStylesFont: d,
         animateRoleGradient: u
       }), !a && (0, r.jsx)(v.ZP, {
         primaryGuild: null == s ? true : s.primaryGuild,

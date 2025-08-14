@@ -26,7 +26,7 @@ function g(e) {
     canNavigate: x
   } = e, j = r.useMemo(() => Object.values(n).map(e => ({
     value: e.id,
-    label: (0, a.F6)(e, c.default, s.Z, true)
+    label: (0, o.F6)(e, c.default, s.Z, true)
   })), [n]), v = r.useMemo(() => {
     let e = {};
     for (let i of t)
@@ -39,7 +39,7 @@ function g(e) {
         })
       } return Object.values(e).sort((e, t) => e.channel.name.localeCompare(t.channel.name))
   }, [n, t]), y = r.useCallback(e => {
-    x() && (e === (null == f ? true : f.id) ? o.Z.stopEditingWebhook() : o.Z.startEditingWebhook(e))
+    x() && (e === (null == f ? true : f.id) ? a.Z.stopEditingWebhook() : a.Z.startEditingWebhook(e))
   }, [x, f]);
   return (0, i.jsx)("div", {
     className: b.__invalid_list,
@@ -53,7 +53,7 @@ function g(e) {
           channel: t,
           webhooks: n,
           channelOptions: r,
-          lastCreatedWebhookId: o,
+          lastCreatedWebhookId: a,
           editedWebhook: g,
           errors: f,
           toggleWebhookExpand: h
@@ -64,7 +64,7 @@ function g(e) {
             children: m.intl.format(m.t.TKDIZm, {
               channelHook: () => (0, i.jsx)("span", {
                 className: b.channelName,
-                children: (0, a.F6)(t, c.default, s.Z, true)
+                children: (0, o.F6)(t, c.default, s.Z, true)
               }, t.id)
             })
           }), n.map(e => {
@@ -82,7 +82,7 @@ function g(e) {
               editedWebhook: g,
               channelOptions: r,
               isExpanded: (null == g ? true : g.id) === e.id,
-              isNew: o === e.id,
+              isNew: a === e.id,
               onToggleExpand: () => h(e.id),
               errors: f
             }, e.id)
