@@ -48,9 +48,10 @@ function E(e, t, n, r) {
   if (null == i || i.host === u) return e;
   let l = (0, s.xG)(e, t),
     p = false;
-  if (i.origin === c && (p = true), (0, o.SO)() && i.origin === _ && (p = true), i.searchParams.delete("width"), i.searchParams.delete("height"), i.searchParams.delete("quality"), i.searchParams.delete("size"), p) {
-    if (a.Z.isOriginalContentTypeDifferent(t, n)) return i.toString();
-    (0, o.SO)() ? (i.host = d, i.port = f, i.pathname.startsWith("/attachments/") && (i.pathname = "/channels/" + i.pathname.substring(13))) : i.host = u
-  }
+  if (i.origin === c && (p = true), (0, o.SO)() && i.origin === _ && (p = true), i.searchParams.delete("width"), i.searchParams.delete("height"), i.searchParams.delete("quality"), i.searchParams.delete("size"), p)
+    if ((0, o.SO)()) {
+      if (a.Z.isOriginalContentTypeDifferent(t, n)) return i.toString();
+      i.host = d, i.port = f, i.pathname.startsWith("/attachments/") && (i.pathname = "/channels/" + i.pathname.substring(13))
+    } else i.host = u;
   return i.searchParams.delete("format"), null == l && null != r && i.searchParams.append("format", r), i.toString()
 }
