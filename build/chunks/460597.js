@@ -20,7 +20,7 @@ let a = e => {
         };
       case r.X.PLAY_ON_DESKTOP:
         return {
-          type: r.X.PLAY_ON_DESKTOP, target: e.target
+          type: r.X.PLAY_ON_DESKTOP, target: e.target, applications: e.applications
         };
       case r.X.STREAM_ON_DESKTOP:
         return {
