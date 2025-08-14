@@ -1,7 +1,9 @@
 /** Chunk was on 76708 **/
 /** chunk id: 286957, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  z: () => a
+  XV: () => o,
+  aE: () => c,
+  zK: () => a
 });
 var Chunk379405 = require("./379405.js"),
   Chunk481060 = require("./481060.js"),
@@ -87,4 +89,18 @@ let o = {
   a = e => {
     let t = o[e];
     return null != t ? t : null
+  },
+  c = {
+    skill_level: {
+      getLabel: () => Chunk388032.intl.string(Chunk388032.t.MKqADA),
+      tags: [Chunk379405._.BETTER_THAN_YOU, Chunk379405._.NOOB, Chunk379405._.LEARNING_THE_ROPES, Chunk379405._.GETTING_GOOD, Chunk379405._.SKILLED, Chunk379405._.EXPERT, Chunk379405._.MASTER]
+    },
+    rating: {
+      getLabel: () => Chunk388032.intl.string(Chunk388032.t["7/umur"]),
+      tags: [Chunk379405._.LIKE_IT, Chunk379405._.LOVE_IT, Chunk379405._.KIND_OF_LOVE_IT, Chunk379405._.KIND_OF_HATE_IT, Chunk379405._.FRUSTRATED, Chunk379405._.RAGE_QUITTING, Chunk379405._.TOO_EASY]
+    },
+    looking_for: {
+      getLabel: () => Chunk388032.intl.string(Chunk388032.t["5Dez19"]),
+      tags: [Chunk379405._.LFG, Chunk379405._.OPEN_TO_PLAY, Chunk379405._.LOOKING_FOR_TIPS, Chunk379405._.LOOKING_TO_LEARN, Chunk379405._.OPEN_TO_TEACH]
+    }
   }

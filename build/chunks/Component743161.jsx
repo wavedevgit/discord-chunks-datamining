@@ -33,13 +33,13 @@ let O = Chunk73800.memo(function(e) {
       }
       return o
     }(e, ["context"]);
-  let j = (0, c.e7)([l.Z], () => l.Z.shouldShowModal());
+  let j = (0, c.e7)([p.Z], () => p.Z.shouldShowModal());
   o.useEffect(() => {
-    j || (0, i.Fvk)(a.e9)
+    j || (0, i.Fvk)(u.e9)
   });
-  let h = (0, u.Z)();
+  let d = (0, s.Z)();
   return (0, n.jsx)("span", {
-    style: a.u$,
+    style: u.u$,
     children: (0, n.jsx)(i.Y0X, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
@@ -63,10 +63,11 @@ let O = Chunk73800.memo(function(e) {
       size: i.CgR.DYNAMIC
     }, y), r = r = {
       parentComponent: "AppLauncherModal",
-      children: (0, n.jsx)(s.Z, {
+      "data-migration-pending": true,
+      children: (0, n.jsx)(l.Z, {
         context: O,
-        entrypoint: p._b.VOICE,
-        initHistory: h
+        entrypoint: a._b.VOICE,
+        initHistory: d
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);

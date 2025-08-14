@@ -188,7 +188,8 @@ function _(e) {
         guildId: n,
         channelId: i
       }), (0, r.jsx)(u.Z, {
-        tags: T
+        tags: T,
+        isCurrentUser: S
       }), !p && (0, r.jsx)(v, {
         className: j.socialProof,
         applicationId: P,

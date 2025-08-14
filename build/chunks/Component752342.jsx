@@ -48,8 +48,8 @@ function S(e) {
     onClose: B,
     sourceAnalyticsLocations: M = []
   } = e, U = S === T.ME ? true : S, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, w, t), Y = (0, c.Dt)(), {
-    analyticsLocations: W
-  } = (0, a.ZP)([...M, o.Z.USER_PROFILE_MODAL]), z = (0, d.ZB)({
+    analyticsLocations: H
+  } = (0, a.ZP)([...M, o.Z.USER_PROFILE_MODAL]), W = (0, d.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: D,
@@ -57,11 +57,11 @@ function S(e) {
     channelId: w,
     messageId: A,
     roleId: C
-  }), H = (0, P.Z)(t);
+  }), K = (0, P.Z)(t);
   return (0, r.jsx)(a.Gt, {
-    value: W,
+    value: H,
     children: (0, r.jsx)(d.Mt, {
-      value: z,
+      value: W,
       openedAt: k,
       fetchStartedAt: null == F ? true : F.fetchStartedAt,
       fetchEndedAt: null == F ? true : F.fetchEndedAt,
@@ -154,7 +154,7 @@ function S(e) {
                 currentUser: n,
                 displayProfile: F,
                 guildId: U,
-                items: H,
+                items: K,
                 initialSection: null != L ? L : E.oh.BOT_INFO,
                 initialSubsection: R,
                 onClose: B
