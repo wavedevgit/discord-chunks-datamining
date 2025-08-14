@@ -1,7 +1,7 @@
 /** Chunk was on 76708 **/
 /** chunk id: 817053, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -64,26 +64,26 @@ function m(e) {
     userId: i,
     className: f,
     disableHoverEffect: m
-  } = e, g = (0, s.Z)({
+  } = e, b = (0, s.Z)({
     location: "GameCover",
     applicationId: l,
     source: c.m1.UserProfile,
     sourceUserId: i,
     trackEntryPointImpression: true
   });
-  if (null == g) return (0, r.jsx)("div", {
+  if (null == b) return (0, r.jsx)("div", {
     className: f,
     children: (0, r.jsx)(p, {
       imageSrc: t,
       gameName: n
     })
   });
-  let b = d.intl.formatToPlainString(d.t["8QLQBw"], {
+  let g = d.intl.formatToPlainString(d.t["8QLQBw"], {
     gameName: null != n ? n : d.intl.string(d.t.GIWFlJ)
   });
   return (0, r.jsx)(a.P3F, {
-    onClick: g,
-    "aria-label": b,
+    onClick: b,
+    "aria-label": g,
     className: o()(u.clickable, !m && u.hoverEffect, f),
     children: (0, r.jsx)(p, {
       imageSrc: t,
@@ -92,7 +92,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function b(e) {
   var {
     applicationId: t,
     userId: n,

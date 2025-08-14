@@ -54,7 +54,7 @@ function I(e) {
     openedAt: Z,
     onHide: N,
     sourceAnalyticsLocations: S = []
-  } = e, w = n === O.ME ? true : n, A = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
+  } = e, w = n === x.ME ? true : n, A = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: C
   } = (0, c.ZP)([...S, A ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), D = (0, f.ZB)({
     layout: "MODAL_V2",
@@ -70,8 +70,8 @@ function I(e) {
   }, {
     icon: o.owK,
     description: h.intl.string(A ? h.t.QxrDY2 : h.t.W6fjkZ)
-  }], R = (0, m.ZP)(t.id, w), G = u.ZP.getName(null == R ? true : R.guildId, I, t), k = h.intl.formatToPlainString(h.t.KRe1Fh, {
-    name: G
+  }], R = (0, m.ZP)(t.id, w), k = u.ZP.getName(null == R ? true : R.guildId, I, t), G = h.intl.formatToPlainString(h.t.KRe1Fh, {
+    name: k
   });
   return (0, r.jsx)(c.Gt, {
     value: C,
@@ -85,17 +85,17 @@ function I(e) {
         "data-migration-pending": true,
         transitionState: T,
         className: v.root,
-        "aria-label": k,
+        "aria-label": G,
         parentComponent: "RestrictedUserProfileModalV2",
-        children: (0, r.jsxs)(b.Z, {
+        children: (0, r.jsxs)(g.Z, {
           user: t,
           displayProfile: R,
-          themeType: x.lY.MODAL_V2,
+          themeType: O.lY.MODAL_V2,
           children: [(0, r.jsx)("div", {
             className: v.background
           }), (0, r.jsxs)("div", {
             className: v.content,
-            children: [(0, r.jsx)(g.Z, {
+            children: [(0, r.jsx)(b.Z, {
               user: t,
               guildId: w,
               iconColor: o.TVs.colors.TEXT_DEFAULT
@@ -109,7 +109,7 @@ function I(e) {
                 variant: "text-md/medium",
                 color: "text-default",
                 children: h.intl.format(A ? h.t.T7QiLi : h.t.MnEow8, {
-                  username: G
+                  username: k
                 })
               })]
             }), (0, r.jsx)("div", {

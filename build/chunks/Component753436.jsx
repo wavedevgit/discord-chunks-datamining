@@ -21,10 +21,10 @@ function f(e) {
     widgetType: f,
     guildId: p,
     channelId: m,
-    loading: g = false,
-    disableInteraction: b = false
-  } = e, j = (0, c.Z)(t.applicationId), y = j.length > 0, x = l.default.getCurrentUser(), O = (null == x ? true : x.id) === n, h = !b && O;
-  return g ? (0, r.jsx)("div", {
+    loading: b = false,
+    disableInteraction: g = false
+  } = e, j = (0, c.Z)(t.applicationId), y = j.length > 0, O = l.default.getCurrentUser(), x = (null == O ? true : O.id) === n, h = !g && x;
+  return b ? (0, r.jsx)("div", {
     className: d.loadingCover
   }) : (0, r.jsxs)("div", {
     className: u.container,
@@ -33,18 +33,17 @@ function f(e) {
       gameName: t.gameName,
       applicationId: t.applicationId,
       userId: n,
-      disableInteraction: b,
+      disableInteraction: g,
       disableHoverEffect: h,
       className: y ? u.socialProofBackdrop : true
     }), h && (0, r.jsx)(a.Z, {
       game: t,
       widgetType: f,
-      userId: n,
       className: u.removeGameButton,
       iconSize: "xs"
     }), (0, r.jsx)("div", {
       className: u.hoverOverlay
-    }), !b && y && (0, r.jsx)(i.Z, {
+    }), !g && y && (0, r.jsx)(i.Z, {
       label: s.intl.formatToPlainString(s.t.ujhJdH, {
         numFriends: j.length
       }),

@@ -39,7 +39,7 @@ function y(e) {
   return e
 }
 
-function x(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function x(e, t) {
   }), e
 }
 
-function O(e) {
+function x(e) {
   var {
     applicationId: t,
     userId: n,
@@ -79,9 +79,9 @@ function O(e) {
     sourceUserId: n,
     trackEntryPointImpression: true
   });
-  return null == s ? (0, r.jsx)(l.X6q, x(y({}, c), {
+  return null == s ? (0, r.jsx)(l.X6q, O(y({}, c), {
     children: a
-  })) : (0, r.jsx)(l.X6q, x(y({}, c), {
+  })) : (0, r.jsx)(l.X6q, O(y({}, c), {
     children: (0, r.jsx)(l.P3F, {
       onClick: s,
       className: j.clickableText,
@@ -154,15 +154,15 @@ function _(e) {
   return s ? (0, r.jsxs)("div", {
     className: j.card,
     children: [(0, r.jsx)("div", {
-      className: b.loadingCover
+      className: g.loadingCover
     }), (0, r.jsx)("div", {
       className: j.details,
       children: (0, r.jsxs)("div", {
-        className: g.placeholderText,
+        className: b.placeholderText,
         children: [(0, r.jsx)("div", {
-          className: g.placeholderBar
+          className: b.placeholderBar
         }), (0, r.jsx)("div", {
-          className: g.placeholderBar
+          className: b.placeholderBar
         })]
       })
     })]
@@ -176,9 +176,9 @@ function _(e) {
       disableInteraction: p
     }), (0, r.jsxs)("div", {
       className: j.details,
-      children: [p ? (0, r.jsx)(l.X6q, x(y({}, Z), {
+      children: [p ? (0, r.jsx)(l.X6q, O(y({}, Z), {
         children: _
-      })) : (0, r.jsx)(O, y({
+      })) : (0, r.jsx)(x, y({
         applicationId: P,
         userId: t.id,
         gameName: _
@@ -198,7 +198,6 @@ function _(e) {
     }), !p && S && (0, r.jsx)(f.Z, {
       game: o,
       widgetType: c,
-      userId: t.id,
       className: j.removeGameButton
     })]
   })

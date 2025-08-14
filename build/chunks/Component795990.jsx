@@ -1,7 +1,7 @@
 /** Chunk was on 76708 **/
 /** chunk id: 795990, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk958461 = require("./958461.js");
 
-function g(e) {
+function b(e) {
   let {
     widgetType: t
   } = e, n = t === i.l.FAVORITE_GAMES ? c.LM.BALDURS_GATE_3 : c.LM.CYBERPUNK_2077, {
@@ -45,7 +45,7 @@ function g(e) {
   })
 }
 
-function b(e) {
+function g(e) {
   let {
     widgetType: t
   } = e, n = t === i.l.WANT_TO_PLAY_GAMES ? [c.LM.ROBLOX, c.LM.VALORANT, c.LM.LEAGUE_OF_LEGENDS] : [c.LM.ZENLESS_ZONE_ZERO, c.LM.ELDEN_RING, c.LM.RED_DEAD_REDEMPTION_2];
@@ -90,12 +90,12 @@ function y(e) {
       switch (t) {
         case i.l.FAVORITE_GAMES:
         case i.l.CURRENT_GAMES:
-          return (0, r.jsx)(g, {
+          return (0, r.jsx)(b, {
             widgetType: t
           });
         case i.l.WANT_TO_PLAY_GAMES:
         case i.l.PLAYED_GAMES:
-          return (0, r.jsx)(b, {
+          return (0, r.jsx)(g, {
             widgetType: t
           });
         default:
@@ -118,7 +118,7 @@ function y(e) {
   })
 }
 
-function x() {
+function O() {
   return (0, Chunk255367.jsxs)("div", {
     className: Chunk958461.empty,
     children: [(0, Chunk255367.jsxs)("div", {

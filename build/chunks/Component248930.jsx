@@ -1,7 +1,7 @@
 /** Chunk was on 76708 **/
 /** chunk id: 248930, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => x
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -21,12 +21,12 @@ var Chunk255367 = require("./255367.js"),
   Chunk228168 = require("./228168.js"),
   Chunk704543 = require("./704543.js");
 
-function O(e) {
+function x(e) {
   let {
     user: t,
     entry: n,
     profileGuildId: i,
-    className: O,
+    className: x,
     onClose: h,
     hideContextMenu: v = false
   } = e, _ = l.useRef(null), {
@@ -44,7 +44,7 @@ function O(e) {
   });
   return null != P && (0, s.Rh)(n) ? (0, r.jsx)(c.Gt, {
     value: I,
-    children: (0, r.jsx)(g.Z, {
+    children: (0, r.jsx)(b.Z, {
       targetElementRef: _,
       sourceType: y.n_.ACTIVITY,
       user: t,
@@ -59,7 +59,7 @@ function O(e) {
         children: () => (0, r.jsx)(p.Z, {
           ref: _,
           user: t,
-          className: x.toolbarContainer,
+          className: O.toolbarContainer,
           interactionSourceId: n.id,
           sourceType: y.n_.ACTIVITY,
           onAction: Z,
@@ -73,12 +73,12 @@ function O(e) {
             onClose: h,
             children: e
           }),
-          children: (0, r.jsx)(b.Z, {
+          children: (0, r.jsx)(g.Z, {
             entry: n,
             user: t,
             onClose: h,
-            className: o()(O, {
-              [x.hoisted]: E === y.n_.ACTIVITY && T === n.id
+            className: o()(x, {
+              [O.hoisted]: E === y.n_.ACTIVITY && T === n.id
             })
           })
         })

@@ -3,12 +3,14 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => O
+  Z: () => S
 }), require("./388685.js");
 var i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+  Chunk570140 = require("./570140.js"),
+  Chunk215023 = require("./215023.js"),
+  Chunk474936 = require("./474936.js");
 
-function s(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,57 +18,65 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let l = [],
-  c = new Map,
-  u = new Map,
+let u = [],
   d = new Map,
   f = new Map,
   _ = new Map,
   p = new Map,
-  h = e => {
-    _.set(e.tab, true), f.set(e.tab, true), d.set(e.tab, e.options), d.set(e.tab, e.options), u.set(e.tab, true)
-  },
-  m = e => {
-    p.set(e.tab, e.shopHome.shopBlocks), c.set(e.tab, Date.now()), _.set(e.tab, false), f.set(e.tab, true), u.set(e.tab, true)
-  },
-  g = e => {
-    p.set(e.tab, l), _.set(e.tab, false), f.set(e.tab, e.error), u.set(e.tab, Date.now())
-  },
-  E = () => {
-    p.clear(), d.clear(), f.clear(), _.clear(), c.clear(), u.clear(), r = true
+  h = new Map,
+  m = new Map,
+  g = new Map,
+  E = e => {
+    h.set(e.tab, true), p.set(e.tab, true), _.set(e.tab, e.options), _.set(e.tab, e.options), f.set(e.tab, true), m.set(e.tab, false)
   },
   b = e => {
+    g.set(e.tab, e.shopHome.shopBlocks), d.set(e.tab, Date.now()), h.set(e.tab, false), p.set(e.tab, true), f.set(e.tab, true), m.set(e.tab, false)
+  },
+  y = e => {
+    g.set(e.tab, u), h.set(e.tab, false), p.set(e.tab, e.error), f.set(e.tab, Date.now()), m.set(e.tab, true)
+  },
+  O = e => {
+    null != e.appliedUserDiscounts && e.appliedUserDiscounts.some(e => e.discount.id === l.$X || e.discount.id === l.nC) && m.set(s.AW.HOME, true)
+  },
+  v = () => {
+    g.clear(), _.clear(), p.clear(), h.clear(), d.clear(), f.clear(), m.clear(), r = true
+  },
+  I = e => {
     r = e.shopHomeConfigOverride
   };
-class y extends(i = Chunk442837.ZP.Store) {
+class T extends(i = Chunk442837.ZP.Store) {
   getLastSuccessfulFetch(e) {
-    return c.get(e)
-  }
-  getLastErrorTimestamp(e) {
-    return u.get(e)
-  }
-  getLastFetchOptions(e) {
     return d.get(e)
   }
-  getFetchShopHomeError(e) {
+  getLastErrorTimestamp(e) {
     return f.get(e)
   }
-  getIsFetchingShopHome(e) {
+  getLastFetchOptions(e) {
     return _.get(e)
+  }
+  getFetchShopHomeError(e) {
+    return p.get(e)
+  }
+  getIsFetchingShopHome(e) {
+    return h.get(e)
   }
   getShopBlocks(e) {
     var t;
-    return null != (t = p.get(e)) ? t : l
+    return null != (t = g.get(e)) ? t : u
+  }
+  getHasKnownStaleData(e) {
+    return m.get(e)
   }
   getShopHomeConfigOverride() {
     return r
   }
 }
-s(y, "displayName", "CollectiblesShopHomesStore");
-let O = new y(Chunk570140.Z, {
-  COLLECTIBLES_SHOP_HOME_FETCH: h,
-  COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: m,
-  COLLECTIBLES_SHOP_HOME_FETCH_FAILURE: g,
-  COLLECTIBLES_SET_SHOP_HOME_CONFIG_OVERRIDE: b,
-  LOGOUT: E
+c(T, "displayName", "CollectiblesShopHomesStore");
+let S = new T(Chunk570140.Z, {
+  COLLECTIBLES_SHOP_HOME_FETCH: E,
+  COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: b,
+  COLLECTIBLES_SHOP_HOME_FETCH_FAILURE: y,
+  COLLECTIBLES_SET_SHOP_HOME_CONFIG_OVERRIDE: I,
+  SKU_PURCHASE_SUCCESS: O,
+  LOGOUT: v
 })

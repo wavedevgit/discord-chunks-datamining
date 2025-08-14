@@ -43,13 +43,13 @@ function S(e) {
     sessionId: D,
     initialSection: L,
     initialSubsection: R,
-    transitionState: G,
-    openedAt: k,
+    transitionState: k,
+    openedAt: G,
     onClose: B,
     sourceAnalyticsLocations: M = []
   } = e, U = S === T.ME ? true : S, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, w, t), Y = (0, c.Dt)(), {
     analyticsLocations: W
-  } = (0, a.ZP)([...M, o.Z.USER_PROFILE_MODAL]), H = (0, d.ZB)({
+  } = (0, a.ZP)([...M, o.Z.USER_PROFILE_MODAL]), z = (0, d.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: D,
@@ -57,18 +57,18 @@ function S(e) {
     channelId: w,
     messageId: A,
     roleId: C
-  }), z = (0, P.Z)(t);
+  }), H = (0, P.Z)(t);
   return (0, r.jsx)(a.Gt, {
     value: W,
     children: (0, r.jsx)(d.Mt, {
-      value: H,
-      openedAt: k,
+      value: z,
+      openedAt: G,
       fetchStartedAt: null == F ? true : F.fetchStartedAt,
       fetchEndedAt: null == F ? true : F.fetchEndedAt,
       isLoaded: null == F ? true : F.isLoaded,
       children: (0, r.jsx)(l.Y0X, {
         "data-migration-pending": true,
-        transitionState: G,
+        transitionState: k,
         className: N.root,
         hideShadow: true,
         "aria-labelledby": Y,
@@ -82,12 +82,12 @@ function S(e) {
               })
             })
           }),
-          children: (0, r.jsxs)(b.Z, {
+          children: (0, r.jsxs)(g.Z, {
             user: t,
             displayProfile: F,
             themeType: E.lY.MODAL,
             children: [(0, r.jsx)(h.Z, {
-              children: (0, r.jsx)(x.Z, {
+              children: (0, r.jsx)(O.Z, {
                 user: t,
                 guildId: U,
                 onCloseProfile: B
@@ -109,7 +109,7 @@ function S(e) {
                   location: "BotUserProfileModal",
                   user: t,
                   themeType: E.lY.MODAL,
-                  hasEntered: G === l.Dvm.ENTERED,
+                  hasEntered: k === l.Dvm.ENTERED,
                   onCloseProfile: B,
                   disableToolbar: true
                 }), (0, r.jsxs)("div", {
@@ -124,7 +124,7 @@ function S(e) {
                     userId: t.id,
                     onClose: i.Z.popAll,
                     tooltipContainerClassName: N.messageIconButton
-                  }), (0, r.jsx)(O.Z, {
+                  }), (0, r.jsx)(x.Z, {
                     user: t,
                     guildId: U
                   }), (0, r.jsx)(y.Z, {
@@ -140,7 +140,7 @@ function S(e) {
                 nickname: V,
                 pronouns: null == F ? true : F.pronouns,
                 nicknameVariant: "heading-xl/bold",
-                nicknameIcons: (0, r.jsx)(g.Z, {
+                nicknameIcons: (0, r.jsx)(b.Z, {
                   size: "sm",
                   userId: t.id
                 }),
@@ -154,7 +154,7 @@ function S(e) {
                 currentUser: n,
                 displayProfile: F,
                 guildId: U,
-                items: z,
+                items: H,
                 initialSection: null != L ? L : E.oh.BOT_INFO,
                 initialSubsection: R,
                 onClose: B

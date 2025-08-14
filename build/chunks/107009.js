@@ -3,7 +3,6 @@
 "use strict";
 module.exports = {
   bar: "bar_c38106",
-  shortBar: "shortBar_c38106",
   systemBar: "systemBar_c38106",
   show: "show_c38106",
   fixed: "fixed_c38106",

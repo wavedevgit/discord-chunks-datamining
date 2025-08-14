@@ -184,8 +184,7 @@ class z extends(r = Chunk73800.Component) {
                       children: [(0, Chunk255367.jsxs)("div", {
                         className: Chunk413943.popout,
                         children: [Chunk175724 && (0, Chunk255367.jsx)(Chunk950796.TF, {
-                          windowKey: r,
-                          short: true
+                          windowKey: r
                         }), null, (0, Chunk255367.jsx)("div", {
                           className: s()(Chunk413943.content, Chunk731965),
                           children: require

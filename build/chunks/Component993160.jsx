@@ -1,7 +1,7 @@
 /** Chunk was on 76708 **/
 /** chunk id: 993160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -17,23 +17,23 @@ var Chunk755721 = require("./755721.js"),
   Chunk562831 = require("./562831.js"),
   Chunk981631 = require("./981631.js");
 
-function g(e) {
+function b(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: g,
-    channelId: b,
+    guildId: b,
+    channelId: g,
     displayProfile: j,
     relationshipType: y,
-    onClose: x
+    onClose: O
   } = e, {
-    newestAnalyticsLocation: O
+    newestAnalyticsLocation: x
   } = (0, o.ZP)(), h = (0, a.Z)({
     user: t,
-    guildId: g,
-    channelId: b,
+    guildId: b,
+    channelId: g,
     displayProfile: j,
-    onClose: x
+    onClose: O
   }), {
     gameFriends: v,
     hasOutgoingPendingGameFriends: _,
@@ -44,14 +44,14 @@ function g(e) {
   return y === m.OGo.BLOCKED ? null : t.id === n.id ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       user: t,
-      guildId: g,
-      onClose: x
+      guildId: b,
+      onClose: O
     }), (0, r.jsx)(u.Z, {
-      onClose: x
+      onClose: O
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: g,
+      guildId: b,
       viewProfileItem: h,
       themeColor: "secondary"
     })]
@@ -64,7 +64,7 @@ function g(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: g,
+      guildId: b,
       viewProfileItem: h,
       themeColor: "secondary"
     })]
@@ -78,7 +78,7 @@ function g(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: g,
+      guildId: b,
       themeColor: "secondary"
     })]
   }) : y === m.OGo.FRIEND || y === m.OGo.PENDING_OUTGOING ? (0, r.jsxs)(r.Fragment, {
@@ -94,11 +94,11 @@ function g(e) {
       relationshipType: y,
       shouldShowTooltip: true,
       themeColor: "secondary",
-      analyticsLocation: O
+      analyticsLocation: x
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: g,
+      guildId: b,
       viewProfileItem: h,
       themeColor: "secondary"
     })]
@@ -111,7 +111,7 @@ function g(e) {
     }), (0, r.jsx)(f.k9, {
       type: "icon",
       user: t,
-      analyticsLocation: O,
+      analyticsLocation: x,
       themeColor: "secondary",
       gameFriends: v,
       tooltipPosition: "top",
@@ -122,7 +122,7 @@ function g(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: g,
+      guildId: b,
       viewProfileItem: h,
       themeColor: "secondary"
     })]
@@ -130,7 +130,7 @@ function g(e) {
     children: [(0, r.jsx)(f.Z7, {
       type: "text",
       userId: t.id,
-      analyticsLocation: O,
+      analyticsLocation: x,
       color: l.zx.Colors.BRAND,
       autoFocus: true
     }), (0, r.jsx)(s.Z, {
@@ -141,7 +141,7 @@ function g(e) {
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
-      guildId: g,
+      guildId: b,
       viewProfileItem: h,
       themeColor: "secondary"
     })]

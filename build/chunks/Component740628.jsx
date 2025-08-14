@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk878449 = require("./878449.js"),
   Chunk602727 = require("./602727.js");
 
-function O(e) {
+function x(e) {
   let {
     section: t,
     subsection: n,
@@ -32,23 +32,23 @@ function O(e) {
     channelId: c,
     onClose: s
   } = e;
-  return t === b.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
+  return t === g.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
     user: l,
     currentUser: i,
     displayProfile: o,
     guildId: a,
     onClose: s
-  }) : t === b.oh.MUTUAL_FRIENDS ? (0, r.jsx)(m.Z, {
+  }) : t === g.oh.MUTUAL_FRIENDS ? (0, r.jsx)(m.Z, {
     user: l,
     guildId: a,
     channelId: c,
     onClose: s
-  }) : t === b.oh.MUTUAL_GUILDS ? (0, r.jsx)(g.Z, {
+  }) : t === g.oh.MUTUAL_GUILDS ? (0, r.jsx)(b.Z, {
     user: l,
     onClose: s
-  }) : t === b.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
+  }) : t === g.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
     user: l
-  }) : t === b.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
+  }) : t === g.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
     user: l,
     currentUser: i,
     displayProfile: o,
@@ -71,8 +71,8 @@ function h(e) {
     currentUser: f,
     displayProfile: p,
     guildId: m,
-    items: g,
-    initialSection: h = b.oh.USER_INFO,
+    items: b,
+    initialSection: h = g.oh.USER_INFO,
     initialSubsection: v,
     onClose: _
   } = e, {
@@ -81,20 +81,20 @@ function h(e) {
     section: E,
     subsection: T
   }, Z] = l.useState({
-    section: null != (d = null == (t = g.find(e => {
+    section: null != (d = null == (t = b.find(e => {
       let {
         section: t
       } = e;
       return t === h
-    })) ? true : t.section) ? d : null == (n = g[0]) ? true : n.section,
+    })) ? true : t.section) ? d : null == (n = b[0]) ? true : n.section,
     subsection: v
   });
   l.useEffect(() => {
-    null == g.find(e => e.section === E) && Z({
-      section: g[0].section,
+    null == b.find(e => e.section === E) && Z({
+      section: b[0].section,
       subsection: true
     })
-  }, [g, E]);
+  }, [b, E]);
   let N = l.useCallback(e => {
     I({
       action: "PRESS_SECTION",
@@ -105,7 +105,7 @@ function h(e) {
     })
   }, [I, Z]);
   return P ? (0, r.jsx)("div", {
-    className: x.container,
+    className: O.container,
     children: (0, r.jsxs)("div", {
       className: y.empty,
       children: [(0, r.jsx)("div", {
@@ -116,19 +116,19 @@ function h(e) {
       })]
     })
   }) : (0, r.jsxs)("div", {
-    className: x.container,
+    className: O.container,
     children: [(0, r.jsx)(o.n, {
-      className: x.tabBar,
+      className: O.tabBar,
       type: "top",
       selectedItem: E,
       onItemSelect: N,
-      children: g.map(e => {
+      children: b.map(e => {
         let {
           section: t,
           text: n
         } = e;
         return (0, r.jsx)(o.n.Item, {
-          className: x.tabBarItem,
+          className: O.tabBarItem,
           id: t,
           "aria-label": n,
           children: (0, r.jsx)(a.Text, {
@@ -137,8 +137,8 @@ function h(e) {
           })
         }, t)
       })
-    }), (0, r.jsx)(O, {
-      items: g,
+    }), (0, r.jsx)(x, {
+      items: b,
       section: E,
       subsection: T,
       user: u,

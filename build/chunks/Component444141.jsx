@@ -50,27 +50,27 @@ function p(e) {
     guildId: n,
     channelId: p,
     displayProfile: m,
-    onClose: g
+    onClose: b
   } = e, {
-    analyticsLocations: b,
+    analyticsLocations: g,
     sourceAnalyticsLocations: j
   } = (0, i.ZP)(), {
     context: y,
-    trackUserProfileAction: x
-  } = (0, a.KZ)(), O = (0, s.ZP)(t.id, n);
-  return (null == O ? true : O.guildId) == null || null == y ? null : (null == m ? true : m.guildId) != null ? (0, r.jsx)(l.sNh, {
+    trackUserProfileAction: O
+  } = (0, a.KZ)(), x = (0, s.ZP)(t.id, n);
+  return (null == x ? true : x.guildId) == null || null == y ? null : (null == m ? true : m.guildId) != null ? (0, r.jsx)(l.sNh, {
     id: "view-main-profile",
     label: d.intl.string(d.t.GISTtb),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
       displayName: o.ZP.getName(true, true, t)
     }),
     action: () => {
-      null == g || g(), (0, c.openUserProfileModal)(f(u({}, y), {
+      null == b || b(), (0, c.openUserProfileModal)(f(u({}, y), {
         showGuildProfile: false,
         sourceAnalyticsLocations: j
-      })), x(u({
+      })), O(u({
         action: "PRESS_VIEW_MAIN_PROFILE",
-        analyticsLocations: b
+        analyticsLocations: g
       }, y))
     }
   }) : (0, r.jsx)(l.sNh, {
@@ -80,12 +80,12 @@ function p(e) {
       displayName: o.ZP.getName(n, p, t)
     }),
     action: () => {
-      null == g || g(), (0, c.openUserProfileModal)(f(u({}, y), {
+      null == b || b(), (0, c.openUserProfileModal)(f(u({}, y), {
         showGuildProfile: true,
         sourceAnalyticsLocations: j
-      })), x(u({
+      })), O(u({
         action: "PRESS_VIEW_SERVER_PROFILE",
-        analyticsLocations: b
+        analyticsLocations: g
       }, y))
     }
   })

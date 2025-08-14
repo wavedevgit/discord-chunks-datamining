@@ -1,7 +1,7 @@
 /** Chunk was on 76708 **/
 /** chunk id: 389190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -16,19 +16,19 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk878449 = require("./878449.js");
 
-function g(e) {
+function b(e) {
   let {
     user: t,
     guildId: n,
-    channelId: g,
-    onClose: b
+    channelId: b,
+    onClose: g
   } = e, {
     mutualFriends: j
   } = (0, s.Z)(t), {
     analyticsLocations: y
   } = (0, a.ZP)(), {
-    context: x,
-    trackUserProfileAction: O
+    context: O,
+    trackUserProfileAction: x
   } = (0, c.KZ)(), h = (0, o.Z)();
   return l.useEffect(() => {
     (0, d.Z)(t.id, h)
@@ -56,10 +56,10 @@ function g(e) {
         user: l,
         status: i,
         guildId: n,
-        channelId: g,
+        channelId: b,
         onSelect: () => {
           var e, t, n;
-          null == b || b(), O({
+          null == g || g(), x({
             action: "PRESS_MUTUAL_FRIEND"
           }), e = l.id, (0, u.openUserProfileModal)((t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -78,7 +78,7 @@ function g(e) {
               })
             }
             return e
-          }({}, x), n = n = {
+          }({}, O), n = n = {
             userId: e,
             sourceAnalyticsLocations: y
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

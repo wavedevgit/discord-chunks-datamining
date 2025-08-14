@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk361623 = require("./361623.js"),
   Chunk583140 = require("./583140.js");
-let b = {
+let g = {
     [Chunk228168.qb.WIDGET_ADDED]: {
       message: Chunk388032.intl.string(Chunk388032.t.fFP1U1),
       icon: (0, Chunk255367.jsx)(Chunk481060.dz2, {
@@ -50,7 +50,7 @@ let b = {
       type: l
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(g.toast, m.toast),
+      className: o()(b.toast, m.toast),
       "data-type": l,
       children: [(0, r.jsx)("div", {
         className: m.toastIcon,
@@ -66,11 +66,11 @@ let b = {
     let {
       className: t,
       onAutoHide: n
-    } = e, i = (0, u.be)(), f = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), [p, g] = l.useState(false), [y, x] = l.useState(null);
+    } = e, i = (0, u.be)(), f = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), [p, b] = l.useState(false), [y, O] = l.useState(null);
     l.useEffect(() => {
-      null !== i ? (g(true), x(b[i]), s.uvj.announce(b[i].message)) : g(false)
+      null !== i ? (b(true), O(g[i]), s.uvj.announce(g[i].message)) : b(false)
     }, [i]);
-    let O = (0, s.Yzy)(p, {
+    let x = (0, s.Yzy)(p, {
       from: {
         transform: f ? "translateY(0)" : "translateY(-12px)",
         opacity: 0
@@ -98,7 +98,7 @@ let b = {
         return () => clearTimeout(e)
       }
     }, [p, n]), (0, r.jsx)(r.Fragment, {
-      children: O((e, n) => n && null !== y && (0, r.jsx)(a.animated.div, {
+      children: x((e, n) => n && null !== y && (0, r.jsx)(a.animated.div, {
         className: o()(t, m.toastContainer),
         style: e,
         children: (0, r.jsx)(j, function(e) {

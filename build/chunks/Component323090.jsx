@@ -1,7 +1,7 @@
 /** Chunk was on 76708 **/
 /** chunk id: 323090, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -21,12 +21,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk54966 = require("./54966.js");
 
-function x(e) {
+function O(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: x,
-    guildId: O,
+    displayProfile: O,
+    guildId: x,
     subsection: h,
     onClose: v
   } = e, {
@@ -38,34 +38,34 @@ function x(e) {
   return (0, r.jsxs)(i.zJl, {
     fade: true,
     className: y.scroller,
-    children: [(null == x ? true : x.bio) != null && (null == x ? true : x.bio) !== "" && (0, r.jsx)(f.Z, {
-      userBio: x.bio,
+    children: [(null == O ? true : O.bio) != null && (null == O ? true : O.bio) !== "" && (0, r.jsx)(f.Z, {
+      userBio: O.bio,
       setLineClamp: false
     }), (null == I ? true : I.popularApplicationCommandIds) != null && null != P && (0, r.jsx)(u.Z, {
       applicationId: I.id,
       commandIds: I.popularApplicationCommandIds,
       channel: P,
-      guildId: O,
+      guildId: x,
       onClick: v
-    }), (null == x ? true : x.guildId) != null && (0, r.jsx)(g.Z, {
+    }), (null == O ? true : O.guildId) != null && (0, r.jsx)(b.Z, {
       user: t,
       currentUser: n,
-      guildId: x.guildId,
-      scrollIntoView: h === b.Tb.ROLES
+      guildId: O.guildId,
+      scrollIntoView: h === g.Tb.ROLES
     }), (0, r.jsx)(m.Z, {
       heading: j.intl.string(j.t["A//N4u"]),
       children: (0, r.jsx)(p.Z, {
         userId: t.id,
-        guildId: O,
-        tooltipDelay: b.vB
+        guildId: x,
+        tooltipDelay: g.vB
       })
     }), (0, r.jsx)(m.Z, {
       heading: j.intl.string(j.t["mQKv+v"]),
-      scrollIntoView: h === b.Tb.NOTE,
+      scrollIntoView: h === g.Tb.NOTE,
       children: (0, r.jsx)(o.Z, {
         userId: t.id,
         className: y.note,
-        autoFocus: h === b.Tb.NOTE,
+        autoFocus: h === g.Tb.NOTE,
         onUpdate: () => _({
           action: "SET_NOTE"
         })

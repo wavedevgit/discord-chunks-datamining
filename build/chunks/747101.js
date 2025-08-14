@@ -1,7 +1,8 @@
 /** Chunk was on 76708 **/
 /** chunk id: 747101, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  F: () => s,
+  Z: () => d
 }), require("./539854.js"), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
@@ -41,39 +42,47 @@ function c(e, t) {
 }
 
 function s(e) {
-  let t = r.useMemo(() => (function(e) {
+  return r.useEffect(() => {
+    if (e.length > 0) {
+      let t = e.filter(e => o.Z.canFetch(e));
+      t.length > 0 && i.Z.getDetectableGamesSupplemental(t)
+    }
+  }, [e]), {
+    gameDataMap: (0, l.cj)([o.Z], () => {
+      let t = {};
+      return e.forEach(e => {
+        t[e] = o.Z.getGame(e)
+      }), t
+    }),
+    isGameFetching: r.useCallback(e => o.Z.isFetching(e), [])
+  }
+}
+
+function d(e) {
+  let {
+    gameDataMap: t,
+    isGameFetching: n
+  } = s(r.useMemo(() => (function(e) {
     let t = [];
     return e.forEach(e => {
       e.games.forEach(e => {
         t.push(e.applicationId)
       })
     }), [...new Set(t)]
-  })(e), [e]);
-  r.useEffect(() => {
-    if (t.length > 0) {
-      let e = t.filter(e => o.Z.canFetch(e));
-      e.length > 0 && i.Z.getDetectableGamesSupplemental(e)
-    }
-  }, [t]);
-  let n = (0, l.cj)([o.Z], () => {
-    let e = {};
-    return t.forEach(t => {
-      e[t] = o.Z.getGame(t)
-    }), e
-  });
+  })(e), [e]));
   return {
     widgets: r.useMemo(() => e.map(e => {
-      let t = e.games.map(e => {
-        let t = n[e.applicationId];
+      let n = e.games.map(e => {
+        let n = t[e.applicationId];
         return c(a({}, e), {
-          gameName: null == t ? true : t.name,
-          imageSrc: null == t ? true : t.coverImageUrl
+          gameName: null == n ? true : n.name,
+          imageSrc: null == n ? true : n.coverImageUrl
         })
       });
       return c(a({}, e), {
-        games: t
+        games: n
       })
-    }), [e, n]),
-    isGameFetching: r.useCallback(e => o.Z.isFetching(e), [])
+    }), [e, t]),
+    isGameFetching: n
   }
 }

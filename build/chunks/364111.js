@@ -17,11 +17,11 @@ function p(e, t, n) {
   let i = (0, l.e7)([a.Z], () => a.Z.hasLoadedExperiments),
     p = (0, l.e7)([c.Z], () => c.Z.skipNumCategories),
     f = (0, o.isDesktop)() || (0, o.isWeb)(),
-    [h, g, m, b, _, O, E] = (0, l.Wu)([u.Z], () => {
+    [h, g, m, b, _, O, E, y] = (0, l.Wu)([u.Z], () => {
       var t, n;
-      return [u.Z.getShopBlocks(e), null != (t = u.Z.getLastSuccessfulFetch(e)) ? t : 0, null != (n = u.Z.getLastErrorTimestamp(e)) ? n : 0, u.Z.getLastFetchOptions(e), u.Z.getFetchShopHomeError(e), u.Z.getIsFetchingShopHome(e), u.Z.getShopHomeConfigOverride()]
+      return [u.Z.getShopBlocks(e), null != (t = u.Z.getLastSuccessfulFetch(e)) ? t : 0, null != (n = u.Z.getLastErrorTimestamp(e)) ? n : 0, u.Z.getLastFetchOptions(e), u.Z.getFetchShopHomeError(e), u.Z.getIsFetchingShopHome(e), u.Z.getHasKnownStaleData(e), u.Z.getShopHomeConfigOverride()]
     }),
-    y = (0, r.useMemo)(() => {
+    v = (0, r.useMemo)(() => {
       var e, n;
       return e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -45,7 +45,7 @@ function p(e, t, n) {
         includeBundles: f,
         includePopularPicks: true,
         includeDynamicBlocks: true,
-        shopHomeConfig: E,
+        shopHomeConfig: y,
         skipNumCategories: p
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -57,19 +57,19 @@ function p(e, t, n) {
       })(Object(n)).forEach(function(t) {
         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
       }), e
-    }, [t, f, E, p]),
-    v = (0, r.useMemo)(() => !(0, s.oc)(b, y), [b, y]),
-    I = (0, r.useMemo)(() => Date.now() - g < 6e5, [g]);
+    }, [t, f, y, p]),
+    I = (0, r.useMemo)(() => !(0, s.oc)(b, v), [b, v]),
+    C = (0, r.useMemo)(() => Date.now() - g < 6e5, [g]);
   return (0, r.useEffect)(() => {
     if (!i || O) return;
     let t = Date.now() - m < 6e5;
-    null != _ && t || (v || !I) && (0, s.Ov)(e, y, n)
-  }, [i, O, _, m, I, v, y, e, n]), {
+    (null == _ || !t) && (I || !C || E) && (0, s.Ov)(e, v, n)
+  }, [i, O, _, m, C, E, I, v, e, n]), {
     isFetchingShopHome: O,
     fetchShopHomeError: _,
     shopBlocks: h,
     refreshShopHome: (0, r.useCallback)(() => {
-      (0, s.Ov)(e, y, n)
-    }, [e, y, n])
+      (0, s.Ov)(e, v, n)
+    }, [e, v, n])
   }
 }

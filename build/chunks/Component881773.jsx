@@ -153,8 +153,8 @@ function x(e) {
     visible: x,
     seekForwardEnabled: T,
     hideCaptionBtn: D,
-    hideTranscriptBtn: P,
-    videoTask: R,
+    hideTranscriptBtn: R,
+    videoTask: P,
     handlePlaybackBtnClick: N,
     handleTranscriptBtnClick: I,
     handleCaptionBtnClick: k,
@@ -174,7 +174,7 @@ function x(e) {
       friction: 3,
       clamp: true
     }
-  })), en = l.useRef(null), er = (0, p.ZS)(R), el = l.useCallback(e => {
+  })), en = l.useRef(null), er = (0, p.ZS)(P), el = l.useCallback(e => {
     null != o.current && (e !== o.current.volume && (o.current.volume = e), e !== G && K(e))
   }, [o, G]), eo = l.useCallback(() => {
     null != o.current && (0 === G ? (el(B), U(false), V(B)) : (Z(G), el(0), U(true), V(0)))
@@ -313,7 +313,7 @@ function x(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: i()(S.videoControlsGroup, S.videoControlsGroupEnd),
-      children: [!P && (0, r.jsx)(y, {
+      children: [!R && (0, r.jsx)(y, {
         iconComponent: d.hH0,
         animationTime: h,
         visible: x,

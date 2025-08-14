@@ -56,14 +56,14 @@ function m(e) {
     displayProfile: d,
     guildId: u,
     channelId: m,
-    items: g,
-    initialSection: b,
+    items: b,
+    initialSection: g,
     initialSubsection: j,
     onClose: y
   } = e, {
-    trackUserProfileAction: x
+    trackUserProfileAction: O
   } = (0, o.KZ)(), [{
-    section: O,
+    section: x,
     subsection: h,
     text: v
   }, _] = l.useState((n = function(e) {
@@ -83,12 +83,12 @@ function m(e) {
       })
     }
     return e
-  }({}, null != (t = g.find(e => {
+  }({}, null != (t = b.find(e => {
     let {
       section: t
     } = e;
-    return t === b
-  })) ? t : g[0]), a = a = {
+    return t === g
+  })) ? t : b[0]), a = a = {
     subsection: j
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
     var n = Object.keys(e);
@@ -110,17 +110,17 @@ function m(e) {
       children: (0, r.jsx)(i.njP, {
         type: "top",
         look: "custom",
-        selectedItem: O,
+        selectedItem: x,
         onItemSelect: e => {
-          x({
+          O({
             action: "PRESS_SECTION",
             section: e
           }), _(t => {
             var n;
-            return null != (n = g.find(t => t.section === e)) ? n : t
+            return null != (n = b.find(t => t.section === e)) ? n : t
           })
         },
-        children: g.map(e => (0, r.jsx)(i.njP.Item, {
+        children: b.map(e => (0, r.jsx)(i.njP.Item, {
           className: f.tabBarItem,
           id: e.section,
           "aria-label": e.text,
@@ -128,7 +128,7 @@ function m(e) {
         }, e.section))
       })
     }), (0, r.jsx)(i.njP.Panel, {
-      id: O,
+      id: x,
       "aria-label": v,
       className: f.tabBarPanel,
       children: (0, r.jsx)(p, {
@@ -137,7 +137,7 @@ function m(e) {
         displayProfile: d,
         guildId: u,
         channelId: m,
-        section: O,
+        section: x,
         subsection: h,
         onClose: y
       })

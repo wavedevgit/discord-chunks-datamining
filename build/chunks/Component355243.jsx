@@ -34,8 +34,8 @@ function v(e) {
     onClick: b,
     onScrubBack: C,
     onScrubForward: S
-  } = e, [h, _] = l.useState(null), [j, y] = l.useState(null), [x, T] = l.useState(null), [D, P] = l.useState(false), R = l.useRef(null), N = e => {
-    R.current = e, _(e)
+  } = e, [h, _] = l.useState(null), [j, y] = l.useState(null), [x, T] = l.useState(null), [D, R] = l.useState(false), P = l.useRef(null), N = e => {
+    P.current = e, _(e)
   };
   l.useEffect(() => {
     null != h && (null == O ? T(null) : T(f(O, g, h)))
@@ -78,10 +78,10 @@ function v(e) {
         o && null != b && b(p(e.clientX, e.currentTarget.getBoundingClientRect(), g))
       },
       onMouseEnter: e => {
-        o && (null != k.current && N(k.current.getBoundingClientRect()), P(true), A(e))
+        o && (null != k.current && N(k.current.getBoundingClientRect()), R(true), A(e))
       },
       onMouseLeave: e => {
-        o && (P(false), y(null))
+        o && (R(false), y(null))
       },
       onMouseMove: e => {
         o && D && A(e)

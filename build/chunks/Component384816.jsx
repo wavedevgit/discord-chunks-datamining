@@ -41,15 +41,15 @@ function I(e) {
   return (0, r.jsxs)(i.zJl, {
     fade: true,
     className: _.scroller,
-    children: [(null == I ? true : I.bio) != null && (null == I ? true : I.bio) !== "" && !S && (0, r.jsx)(g.Z, {
+    children: [(null == I ? true : I.bio) != null && (null == I ? true : I.bio) !== "" && !S && (0, r.jsx)(b.Z, {
       userBio: I.bio,
       setLineClamp: false
-    }), (null == I ? true : I.guildId) != null && (0, r.jsx)(O.Z, {
+    }), (null == I ? true : I.guildId) != null && (0, r.jsx)(x.Z, {
       user: t,
       currentUser: n,
       guildId: I.guildId,
       scrollIntoView: P === h.Tb.ROLES
-    }), t.isProvisional && (0, r.jsx)(x.Z, {
+    }), t.isProvisional && (0, r.jsx)(O.Z, {
       heading: v.intl.string(v.t.Iyka0d),
       headingIcon: (0, r.jsx)(i.Mgn, {
         size: "xxs",
@@ -59,30 +59,30 @@ function I(e) {
       children: (0, r.jsx)(c.n, {
         userId: t.id
       })
-    }), N.length > 0 && (0, r.jsx)(x.Z, {
+    }), N.length > 0 && (0, r.jsx)(O.Z, {
       heading: v.intl.string(v.t["Uv/eT0"]),
       children: (0, r.jsx)(j.Z, {
         applicationIds: N
       })
-    }), (0, r.jsx)(x.Z, {
+    }), (0, r.jsx)(O.Z, {
       heading: v.intl.string(v.t.a6XYDw),
       children: (0, r.jsx)(y.Z, {
         userId: t.id,
         guildId: null == I ? true : I.guildId,
         tooltipDelay: h.vB
       })
-    }), A.length > 0 && (0, r.jsx)(x.Z, {
+    }), A.length > 0 && (0, r.jsx)(O.Z, {
       heading: v.intl.string(v.t["3fe7U1"]),
       scrollIntoView: P === h.Tb.CONNECTIONS,
-      children: (0, r.jsx)(b.ZP, {
+      children: (0, r.jsx)(g.ZP, {
         connectedAccounts: A,
         className: _.connections,
         userId: t.id,
         locale: w
       })
-    }), C.length > 0 && (0, r.jsx)(x.Z, {
+    }), C.length > 0 && (0, r.jsx)(O.Z, {
       heading: v.intl.string(v.t.PHjkRE),
-      children: C.map(e => (0, r.jsx)(b.tH, {
+      children: C.map(e => (0, r.jsx)(g.tH, {
         className: _.appsConnections,
         applicationRoleConnection: e,
         locale: w,
@@ -93,7 +93,7 @@ function I(e) {
         },
         selectedGuildId: null != Z ? Z : true
       }, e.application.id))
-    }), (0, r.jsx)(x.Z, {
+    }), (0, r.jsx)(O.Z, {
       heading: v.intl.string(v.t["mQKv+v"]),
       scrollIntoView: P === h.Tb.NOTE,
       children: (0, r.jsx)(o.Z, {
