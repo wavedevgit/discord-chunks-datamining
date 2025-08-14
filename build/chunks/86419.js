@@ -2,14 +2,15 @@
 /** chunk id: 86419, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $b: () => N,
-  ES: () => A,
-  X6: () => R,
-  kQ: () => w,
+  $b: () => C,
+  ES: () => N,
+  X6: () => P,
+  kQ: () => D,
+  n$: () => A,
   np: () => b,
   qH: () => T,
-  tk: () => P,
-  vH: () => C,
+  tk: () => w,
+  vH: () => R,
   y8: () => S
 }), require("./388685.js"), require("./642613.js");
 var Chunk624238 = require("./624238.js"),
@@ -120,7 +121,23 @@ function S(e) {
   l.Z.setPendingWidgets(t)
 }
 
-function A(e, t) {
+function A(e, t, n) {
+  let r = y(),
+    i = r.find(t => t.type === e);
+  if (null == i) return;
+  let o = i.games.find(e => e.applicationId === t);
+  if (null == o) return;
+  let a = m(p({}, o), {
+      tags: n
+    }),
+    s = i.games.map(e => e.applicationId === t ? a : e),
+    c = I(r, m(p({}, i), {
+      games: s
+    }));
+  l.Z.setPendingWidgets(c)
+}
+
+function N(e, t) {
   let n, a = y(),
     s = a.find(t => t.type === e),
     c = r.k[e];
@@ -138,7 +155,7 @@ function A(e, t) {
   l.Z.setPendingWidgets(_), o.Z.getDetectableGamesSupplemental([t.applicationId])
 }
 
-function N(e, t) {
+function C(e, t) {
   let n = y(),
     r = n.find(t => t.type === e);
   if (null == r) return;
@@ -146,7 +163,7 @@ function N(e, t) {
   l.Z.setPendingWidgets(i)
 }
 
-function C(e) {
+function R(e) {
   let t = e => ({
       game_id: e.applicationId,
       comment: e.comment,
@@ -160,7 +177,7 @@ function C(e) {
     }
   }
 }
-async function R() {
+async function P() {
   let e = Chunk224724.Z.getPendingWidgets();
   if (null !== module) try {
     await Chunk592183.Z.savePendingWidgets(module)
@@ -168,7 +185,7 @@ async function R() {
     console.error("Failed to save sample widgets:", module)
   }
 }
-async function P() {
+async function w() {
   try {
     await Chunk592183.Z.savePendingWidgets([])
   } catch (e) {
@@ -176,7 +193,7 @@ async function P() {
   }
 }
 
-function w(e) {
+function D(e) {
   let t = r.k[e.type];
   return e.games.length >= t
 }

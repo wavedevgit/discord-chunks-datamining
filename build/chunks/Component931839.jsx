@@ -7,7 +7,7 @@ require.d(exports, {
 var i, Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk686529 = require("./686529.js"),
@@ -48,11 +48,11 @@ function x(e) {
     tab: t,
     selectedTab: n,
     label: i,
-    disabled: r,
+    disabled: a,
     onClick: c
   } = e;
-  return r ? (0, s.jsxs)("div", {
-    className: a()(o.tab, {
+  return a ? (0, s.jsxs)("div", {
+    className: r()(o.tab, {
       [o.current]: n === t
     }),
     children: [(0, s.jsx)("div", {
@@ -64,7 +64,7 @@ function x(e) {
     })]
   }) : (0, s.jsxs)(l.P3F, {
     onClick: () => c(t),
-    className: a()(o.tab, {
+    className: r()(o.tab, {
       [o.current]: n === t
     }),
     children: [(0, s.jsx)("div", {

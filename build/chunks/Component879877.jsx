@@ -16,40 +16,46 @@ var Chunk255367 = require("./255367.js"),
 function f(e) {
   let {
     tags: t,
-    isCurrentUser: n
-  } = e, i = null == t ? true : t.filter(e => null != (0, s.zK)(e)), o = (0, l.useRef)(new Map), f = (0, l.useRef)(null), [j, y] = (0, l.useState)(0), [O, x] = (0, l.useState)(false), {
-    trackUserProfileAction: h
-  } = (0, a.KZ)(), v = b(f, i, o, y);
-  if ((0, l.useEffect)(() => (v(), window.addEventListener("resize", v), () => {
-      window.removeEventListener("resize", v)
-    }), [v, null == i ? true : i.join("")]), null == i || 0 === i.length) return null;
-  let _ = O ? i : i.slice(0, i.length - j);
+    isCurrentUser: n,
+    widgetType: i,
+    applicationId: o
+  } = e, f = null == t ? true : t.filter(e => null != (0, s.zK)(e)), j = (0, l.useRef)(new Map), y = (0, l.useRef)(null), [O, x] = (0, l.useState)(0), [h, v] = (0, l.useState)(false), {
+    trackUserProfileAction: _
+  } = (0, a.KZ)(), I = b(y, f, j, x);
+  if ((0, l.useEffect)(() => (I(), window.addEventListener("resize", I), () => {
+      window.removeEventListener("resize", I)
+    }), [I, null == f ? true : f.join("")]), null == f || 0 === f.length) return null;
+  let P = h ? f : f.slice(0, f.length - O);
   return (0, r.jsxs)("div", {
     className: u.tagListContainer,
     children: [(0, r.jsx)("ul", {
       className: u.tagList,
       "aria-label": d.intl.string(d.t.EfjTi4),
-      children: _.map(e => (0, r.jsx)(p, {
+      children: P.map(e => (0, r.jsx)(p, {
         tag: e,
         ref: t => {
-          null != t && o.current.set(e, t)
+          null != t && j.current.set(e, t)
         }
       }, e))
-    }), j > 0 && (O ? (0, r.jsx)(g, {
+    }), O > 0 && (h ? (0, r.jsx)(g, {
       onClick: () => {
-        x(false), h({
+        v(false), _({
           action: "COLLAPSE_GAME_TAGS"
         })
       }
     }) : (0, r.jsx)(m, {
-      numHidden: j,
+      numHidden: O,
       onClick: () => {
-        x(true), h({
+        v(true), _({
           action: "EXPAND_GAME_TAGS"
         })
       },
-      ref: f
-    })), n && (0, r.jsx)(c.Z, {})]
+      ref: y
+    })), n && (0, r.jsx)(c.Z, {
+      tags: t,
+      widgetType: i,
+      applicationId: o
+    })]
   })
 }
 let p = e => {

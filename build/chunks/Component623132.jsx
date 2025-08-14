@@ -189,7 +189,9 @@ function _(e) {
         channelId: i
       }), (0, r.jsx)(u.Z, {
         tags: T,
-        isCurrentUser: S
+        isCurrentUser: S,
+        widgetType: c,
+        applicationId: P
       }), !p && (0, r.jsx)(v, {
         className: j.socialProof,
         applicationId: P,

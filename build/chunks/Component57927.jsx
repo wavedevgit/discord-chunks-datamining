@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   c = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -22,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk865311 = require("./865311.js");
 
-function N(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -41,7 +41,7 @@ function N(e) {
   return e
 }
 
-function p(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,13 +58,13 @@ function C(e) {
   let {
     guildPlans: t,
     overrideGuild: n
-  } = e, r = (0, o.e7)([u.ZP], () => u.ZP.getFlattenedGuildIds()), [a, l] = s.useMemo(() => c()(t).values().sortBy(e => {
-    let t = r.indexOf(e.guildId);
-    return false === t ? r.length : t
+  } = e, a = (0, o.e7)([u.ZP], () => u.ZP.getFlattenedGuildIds()), [r, l] = s.useMemo(() => c()(t).values().sortBy(e => {
+    let t = a.indexOf(e.guildId);
+    return false === t ? a.length : t
   }).partition(e => {
     var t;
     return (null != (t = e.overrideMode) ? t : e.mode) === _.AR.UseGreyDot
-  }).value(), [t, r]), d = s.useCallback(e => {
+  }).value(), [t, a]), d = s.useCallback(e => {
     var i;
     return n(e, (null != (i = t[e].overrideMode) ? i : t[e].mode) === _.AR.UseGreyDot ? _.AR.KeepAsIs : _.AR.UseGreyDot)
   }, [n, t]);
@@ -78,7 +78,7 @@ function C(e) {
     }), (0, i.jsx)(y, {
       header: v.intl.string(v.t.f6pf39),
       subheader: v.intl.string(v.t.izeB6e),
-      guildPlans: a,
+      guildPlans: r,
       onClick: d
     })]
   })
@@ -89,7 +89,7 @@ function y(e) {
     header: t,
     subheader: n,
     guildPlans: s,
-    onClick: r
+    onClick: a
   } = e;
   return (0, i.jsxs)("div", {
     className: f.column,
@@ -109,26 +109,26 @@ function y(e) {
       className: f.scroller,
       children: (0, i.jsx)("div", {
         className: f.guilds,
-        children: s.map(e => (0, i.jsx)(T, {
+        children: s.map(e => (0, i.jsx)(w, {
           plan: e,
-          onClick: r
+          onClick: a
         }, e.guildId))
       })
     })]
   })
 }
 
-function T(e) {
+function w(e) {
   var t;
   let {
     plan: n,
     onClick: s
-  } = e, r = (0, o.e7)([h.Z], () => h.Z.getGuild(n.guildId));
-  if (null == r) return null;
+  } = e, a = (0, o.e7)([h.Z], () => h.Z.getGuild(n.guildId));
+  if (null == a) return null;
   let l = (null != (t = n.overrideMode) ? t : n.mode) === _.AR.UseGreyDot;
 
   function c() {
-    g.default.track(b.rMx.NOTIFICATION_MIGRATION_GUILD_CHANGED, p(N({}, (0, m.hH)(n.guildId)), {
+    g.default.track(b.rMx.NOTIFICATION_MIGRATION_GUILD_CHANGED, N(p({}, (0, m.hH)(n.guildId)), {
       is_selected: !l,
       is_muted: j.ZP.isMuted(n.guildId),
       notification_setting: j.ZP.getMessageNotifications(n.guildId)
@@ -139,7 +139,7 @@ function T(e) {
       children: [(0, i.jsx)(d.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: r.name
+        children: a.name
       }), (0, i.jsxs)("div", {
         className: f.tooltipRow,
         children: [(0, i.jsx)(d.kBi, {
@@ -174,8 +174,8 @@ function T(e) {
     }),
     "aria-label": n.debugReason,
     tooltipClassName: f.tooltip,
-    children: e => (0, i.jsxs)(d.P3F, p(N({}, e), {
-      className: a()(f.guild, l ? f.selected : true),
+    children: e => (0, i.jsxs)(d.P3F, N(p({}, e), {
+      className: r()(f.guild, l ? f.selected : true),
       onClick: c,
       children: [(0, i.jsx)(d.owK, {
         size: "xs",
@@ -185,7 +185,7 @@ function T(e) {
       }), (0, i.jsx)(x.Z, {
         "aria-hidden": true,
         className: f.guildIcon,
-        guild: r,
+        guild: a,
         size: x.Z.Sizes.MEDIUM,
         active: true,
         tabIndex: false
