@@ -145,9 +145,7 @@ function R(e) {
     purchases: O,
     isFetchingCategories: v,
     isFetchingPurchases: I
-  } = (0, f.ZP)({
-    location: "AvatarDecorationModal"
-  }), S = v || I && 0 === O.size, A = () => {
+  } = (0, f.ZP)(), S = v || I && 0 === O.size, A = () => {
     u(), null == c || c()
   };
   return i.useEffect(() => {

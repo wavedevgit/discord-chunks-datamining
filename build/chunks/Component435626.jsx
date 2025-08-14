@@ -7,6 +7,7 @@ var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
+  Chunk311570 = require("./311570.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk100527 = require("./100527.js"),
@@ -14,7 +15,6 @@ var Chunk120356 = require("./120356.js"),
   Chunk1585 = require("./1585.jsx"),
   Chunk821982 = require("./821982.js"),
   Chunk125988 = require("./125988.js"),
-  Chunk228624 = require("./228624.js"),
   Chunk267097 = require("./267097.js"),
   Chunk109213 = require("./109213.js"),
   Chunk626135 = require("./626135.js"),
@@ -34,40 +34,40 @@ function v(t) {
     transitionState: n,
     onClose: o,
     giftRecipient: i,
-    analyticsObject: c
+    analyticsObject: r
   } = t;
-  return (0, s.ZP)(() => {
-    y.default.track(m.rMx.GIFT_CATEGORY_SELECT_MODAL_OPENED, {
-      location: c,
+  return (0, c.ZP)(() => {
+    g.default.track(f.rMx.GIFT_CATEGORY_SELECT_MODAL_OPENED, {
+      location: r,
       location_stack: e
     })
   }), (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)(I, {}), (0, a.jsxs)(r.Y0X, {
-      size: r.CgR.DYNAMIC,
+    children: [(0, a.jsx)(I, {}), (0, a.jsxs)(s.Y0X, {
+      size: s.CgR.DYNAMIC,
       transitionState: n,
       className: b.modalRoot,
       parentComponent: "GiftCategorySelectModal",
-      children: [(0, a.jsxs)(r.xBx, {
+      children: [(0, a.jsxs)(s.xBx, {
         className: b.header,
         separator: false,
-        children: [(0, a.jsx)(r.vwX, {
-          tag: r.RB0.H4,
-          children: T.intl.string(T.t.YBGjsr)
-        }), (0, a.jsx)(r.olH, {
+        children: [(0, a.jsx)(s.vwX, {
+          tag: s.RB0.H4,
+          children: x.intl.string(x.t.YBGjsr)
+        }), (0, a.jsx)(s.olH, {
           onClick: () => {
-            y.default.track(m.rMx.MODAL_DISMISSED, {
-              type: m.jXE.GIFT_CATEGORY_SELECT_MODAL,
-              location_object: m.qAy.BUTTON_CTA
+            g.default.track(f.rMx.MODAL_DISMISSED, {
+              type: f.jXE.GIFT_CATEGORY_SELECT_MODAL,
+              location_object: f.qAy.BUTTON_CTA
             }), o()
           },
           className: b.cursorPointer
         })]
-      }), (0, a.jsx)(r.hzk, {
+      }), (0, a.jsx)(s.hzk, {
         className: b.modalContent,
         children: (0, a.jsx)(N, {
           analyticsLocations: e,
           giftRecipient: i,
-          analyticsObject: c,
+          analyticsObject: r,
           onClose: o
         })
       })]
@@ -82,22 +82,22 @@ function N(t) {
     analyticsObject: n,
     onClose: o
   } = t, {
-    showBothNitroSkusInCategorySelect: s
-  } = j.G.useExperiment({
+    showBothNitroSkusInCategorySelect: c
+  } = y.G.useExperiment({
     location: "gift-button"
   }, {
     autoTrackExposure: false
-  }), u = (0, _.hv)("CategoryButtons"), {
+  }), {
     analyticsLocations: d
-  } = (0, l.ZP)(c.Z.GIFT_CATEGORY_SELECT_MODAL), p = t => {
+  } = (0, u.ZP)(l.Z.GIFT_CATEGORY_SELECT_MODAL), _ = t => {
     t && o()
-  }, g = t => {
+  }, p = t => {
     var a, o;
-    let i = m.Qqv.NITRO_SKU_SELECTION;
-    t === x.Si.TIER_2 ? i = m.Qqv.NITRO_STANDARD : t === x.Si.TIER_0 && (i = m.Qqv.NITRO_BASIC), (0, h.Z)({
+    let i = f.Qqv.NITRO_SKU_SELECTION;
+    t === T.Si.TIER_2 ? i = f.Qqv.NITRO_STANDARD : t === T.Si.TIER_0 && (i = f.Qqv.NITRO_BASIC), (0, m.Z)({
       isGift: true,
       giftRecipient: e,
-      giftingOrigin: x.Wt.DM_CHANNEL,
+      giftingOrigin: T.Wt.DM_CHANNEL,
       initialPlanId: null,
       analyticsLocations: d,
       subscriptionTier: t,
@@ -119,8 +119,8 @@ function N(t) {
         }
         return t
       }({}, n), o = o = {
-        section: m.jXE.GIFT_CATEGORY_SELECT_MODAL,
-        object: m.qAy.GIFT_CATEGORY_OPTION,
+        section: f.jXE.GIFT_CATEGORY_SELECT_MODAL,
+        object: f.qAy.GIFT_CATEGORY_OPTION,
         objectType: i
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(o)) : (function(t, e) {
         var n = Object.keys(t);
@@ -132,55 +132,55 @@ function N(t) {
       })(Object(o)).forEach(function(t) {
         Object.defineProperty(a, t, Object.getOwnPropertyDescriptor(o, t))
       }), a),
-      onClose: p
+      onClose: _
     })
   };
   return (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)(r.P3F, {
-      onClick: () => g(s ? x.Si.TIER_2 : true),
+    children: [(0, a.jsx)(s.P3F, {
+      onClick: () => p(c ? T.Si.TIER_2 : true),
       children: (0, a.jsxs)("div", {
         className: i()(b.categoryButton, b.nitroButton),
-        children: [(0, a.jsx)(r.Text, {
+        children: [(0, a.jsx)(s.Text, {
           variant: "display-sm",
           color: "always-white",
           className: b.buttonText,
-          children: T.intl.string(T.t["lG6a5+"])
+          children: x.intl.string(x.t["lG6a5+"])
         }), (0, a.jsx)(S, {
           imageType: 0
         })]
       })
-    }), s && (0, a.jsx)(r.P3F, {
-      onClick: () => g(x.Si.TIER_0),
+    }), c && (0, a.jsx)(s.P3F, {
+      onClick: () => p(T.Si.TIER_0),
       children: (0, a.jsxs)("div", {
         className: i()(b.nitroBasicButton, b.categoryButton),
-        children: [(0, a.jsx)(r.Text, {
+        children: [(0, a.jsx)(s.Text, {
           variant: "display-sm",
           color: "always-white",
           className: b.buttonText,
-          children: T.intl.string(T.t["t9uG/v"])
+          children: x.intl.string(x.t["t9uG/v"])
         }), (0, a.jsx)(S, {
           imageType: 1
         })]
       })
-    }), (0, a.jsx)(r.P3F, {
+    }), (0, a.jsx)(s.P3F, {
       onClick: () => {
         (0, O.Z)({
           isGift: true,
-          giftingOrigin: x.Wt.DM_CHANNEL,
+          giftingOrigin: T.Wt.DM_CHANNEL,
           analyticsLocations: d,
           analyticsObject: n,
           giftRecipient: e,
-          onClose: p,
-          variantsReturnStyle: u
+          onClose: _,
+          variantsReturnStyle: r.v.VARIANTS_GROUP
         })
       },
       children: (0, a.jsxs)("div", {
         className: i()(b.shopButton, b.categoryButton),
-        children: [(0, a.jsx)(r.Text, {
+        children: [(0, a.jsx)(s.Text, {
           variant: "display-sm",
           color: "always-white",
           className: b.buttonText,
-          children: T.intl.string(T.t.gFlB9f)
+          children: x.intl.string(x.t.gFlB9f)
         }), (0, a.jsx)(S, {
           imageType: 2
         })]
@@ -195,23 +195,23 @@ function S(t) {
   } = t, {
     avatarPlaceholderSrc: n
   } = (0, p.Z)({
-    size: (0, u.y9)(r.EFr.SIZE_80)
-  }), o = (0, d.Z)("a_c3cffc19e9784f7d0b005eecdf1b566e", r.EFr.SIZE_80, false);
+    size: (0, d.y9)(s.EFr.SIZE_80)
+  }), o = (0, _.Z)("a_c3cffc19e9784f7d0b005eecdf1b566e", s.EFr.SIZE_80, false);
   return 0 === e || 1 === e ? (0, a.jsx)("div", {
     className: b.wumpusImageContainer,
-    children: (0, a.jsx)(r.Eep, {
+    children: (0, a.jsx)(s.Eep, {
       src: 1 === e ? E : C,
-      mediaLayoutType: f.hV.RESPONSIVE,
+      mediaLayoutType: h.hV.RESPONSIVE,
       width: 122,
       height: 110,
       zoomable: false
     })
   }) : 2 === e ? (0, a.jsx)("div", {
     className: b.shopImageContainer,
-    children: (0, a.jsx)(r.qEK, {
+    children: (0, a.jsx)(s.qEK, {
       src: n,
       avatarDecoration: o,
-      size: r.EFr.SIZE_80,
+      size: s.EFr.SIZE_80,
       "aria-hidden": true
     })
   }) : true

@@ -22,7 +22,7 @@ function o(e) {
     } = e;
     null === n ? t.avatar = null : n.assetOrigin === r.q.ARCHIVED_ASSET ? t.avatarId = n.originalAsset.id : (t.avatar = n.imageUri, t.avatarDescription = n.description)
   }
-  return true !== e.pendingAvatarDecoration && (t.avatarDecoration = e.pendingAvatarDecoration), t
+  return true !== e.pendingAvatarDecoration && (t.avatarDecoration = e.pendingAvatarDecoration), true !== e.pendingDisplayNameStyles && (t.displayNameStyles = e.pendingDisplayNameStyles), t
 }
 
 function a(e) {

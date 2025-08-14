@@ -1,16 +1,16 @@
 /** Chunk was on web.js **/
 /** chunk id: 25990, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, b;
+let r, i, o, a, s, l, c, u, d, f, _, p, h, m, g, E, b, y;
 require.d(exports, {
-  Z: () => ec
+  Z: () => ed
 });
-var y, Chunk979554 = require("./979554.js"),
+var O, Chunk979554 = require("./979554.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 
-function S(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,217 +18,224 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let A = Chunk981631.QZA.CLOSED,
-  N = {};
-
-function C() {
-  A = Chunk981631.QZA.OPEN, N = {}
-}
+let N = Chunk981631.QZA.CLOSED,
+  C = {};
 
 function R() {
-  A = Chunk981631.QZA.CLOSED, N = {}
+  N = Chunk981631.QZA.OPEN, C = {}
 }
 
 function P() {
-  A = Chunk981631.QZA.SUBMITTING, N = {}
+  N = Chunk981631.QZA.CLOSED, C = {}
 }
 
-function w(e) {
-  var t;
-  if (A !== T.QZA.SUBMITTING) returnfalse;
-  A = T.QZA.OPEN, N = null != (t = e.errors) ? t : {}
+function w() {
+  N = Chunk981631.QZA.SUBMITTING, C = {}
 }
 
 function D(e) {
-  let {
-    section: t
-  } = e;
-  return t === T.oAB.ACCOUNT && C()
+  var t;
+  if (N !== S.QZA.SUBMITTING) returnfalse;
+  N = S.QZA.OPEN, C = null != (t = e.errors) ? t : {}
 }
 
 function L(e) {
   let {
-    avatar: t
+    section: t
   } = e;
-  r = t, m = true
+  return t === S.oAB.ACCOUNT && R()
 }
 
 function x(e) {
+  let {
+    avatar: t
+  } = e;
+  r = t, g = true
+}
+
+function M(e) {
   let {
     globalName: t
   } = e;
   i = t
 }
 
-function M(e) {
+function j(e) {
   let {
     legacyUsernameDisabled: t
   } = e;
   _ = t
 }
 
-function j(e) {
+function k(e) {
   let {
     avatarDecoration: t
   } = e;
   o = t
 }
 
-function k(e) {
+function U(e) {
   let {
     nameplate: t
   } = e;
   s = t
 }
 
-function U(e) {
+function G(e) {
   let {
     profileEffectId: t
   } = e;
   a = t
 }
 
-function G(e) {
+function B(e) {
   let {
     item: t
   } = e;
-  (null == t ? true : t.type) === O.Z.PROFILE_EFFECT ? (g = null, E = null == t ? true : t.id) : (null == t ? true : t.type) === O.Z.AVATAR_DECORATION && (E = null, g = t)
+  (null == t ? true : t.type) === v.Z.PROFILE_EFFECT ? (E = null, b = null == t ? true : t.id) : (null == t ? true : t.type) === v.Z.AVATAR_DECORATION && (b = null, E = t)
 }
 
-function B(e) {
+function Z(e) {
   let {
     banner: t
   } = e;
   l = t
 }
 
-function Z(e) {
+function F(e) {
   let {
     bio: t
   } = e;
   c = t
 }
 
-function F(e) {
+function V(e) {
   let {
     pronouns: t
   } = e;
   u = t
 }
 
-function V(e) {
+function H(e) {
   let {
     color: t
   } = e;
   d = t
 }
 
-function H(e) {
+function Y(e) {
   let {
     themeColors: t
   } = e;
   f = t
 }
 
-function Y(e) {
+function W(e) {
   let {
     primaryGuildId: t
   } = e;
   p = t
 }
 
-function W(e) {
+function K(e) {
   let {
-    themeColors: t
+    displayNameStyles: t
   } = e;
   h = t
 }
 
-function K(e) {
+function z(e) {
   let {
-    avatar: t
+    themeColors: t
   } = e;
   m = t
 }
 
-function z(e) {
+function q(e) {
   let {
-    avatarDecoration: t
+    avatar: t
   } = e;
   g = t
 }
 
-function q(e) {
+function X(e) {
   let {
-    profileEffectId: t
+    avatarDecoration: t
   } = e;
   E = t
 }
 
-function X(e) {
+function Q(e) {
   let {
-    banner: t
+    profileEffectId: t
   } = e;
   b = t
 }
 
-function Q(e) {
+function J(e) {
+  let {
+    banner: t
+  } = e;
+  y = t
+}
+
+function $(e) {
   let {
     banner: t,
     themeColors: n,
     avatarDecoration: r
   } = e;
-  b = t, h = n, g = r
-}
-
-function J() {
-  r = true
-}
-
-function $() {
-  N = {}
+  y = t, m = n, E = r
 }
 
 function ee() {
-  et(), en(), eo(), ea(), N = {}
+  r = true
 }
 
 function et() {
-  r = true, i = true, o = true, a = true, s = true
+  C = {}
 }
 
 function en() {
-  l = true, c = true, u = true, d = true, f = true, a = true
+  er(), ei(), es(), el(), C = {}
 }
 
 function er() {
-  m = true, g = true, E = true, b = true, h = true
+  r = true, i = true, o = true, a = true, s = true, h = true
 }
 
 function ei() {
-  o = true
+  l = true, c = true, u = true, d = true, f = true, a = true
 }
 
 function eo() {
-  _ = true
+  g = true, E = true, b = true, y = true, m = true
 }
 
 function ea() {
-  p = true
+  o = true
 }
 
 function es() {
-  ee(), er(), R()
+  _ = true
 }
-class el extends(y = Chunk442837.ZP.Store) {
+
+function el() {
+  p = true
+}
+
+function ec() {
+  en(), eo(), P()
+}
+class eu extends(O = Chunk442837.ZP.Store) {
   getFormState() {
-    return A
-  }
-  getErrors() {
     return N
   }
+  getErrors() {
+    return C
+  }
   showNotice() {
-    return true !== r || true !== l || true !== c || true !== u || true !== d || true !== f || true !== o || true !== a || true !== i || true !== s || true !== _ || true !== p
+    return true !== r || true !== l || true !== c || true !== u || true !== d || true !== f || true !== o || true !== a || true !== i || true !== s || true !== _ || true !== p || true !== h
   }
   getIsSubmitDisabled() {
     return true !== c && c.length > Chunk981631.tPV
@@ -276,70 +283,72 @@ class el extends(y = Chunk442837.ZP.Store) {
       pendingGlobalName: i,
       pendingNameplate: s,
       pendingLegacyUsernameDisabled: _,
-      pendingPrimaryGuildId: p
+      pendingPrimaryGuildId: p,
+      pendingDisplayNameStyles: h
     }
   }
   getTryItOutThemeColors() {
-    return h
-  }
-  getTryItOutAvatar() {
     return m
   }
-  getTryItOutAvatarDecoration() {
+  getTryItOutAvatar() {
     return g
   }
-  getTryItOutProfileEffectId() {
+  getTryItOutAvatarDecoration() {
     return E
   }
-  getTryItOutBanner() {
+  getTryItOutProfileEffectId() {
     return b
+  }
+  getTryItOutBanner() {
+    return y
   }
   getAllTryItOut() {
     return {
-      tryItOutThemeColors: h,
-      tryItOutAvatar: m,
-      tryItOutAvatarDecoration: g,
-      tryItOutProfileEffectId: E,
-      tryItOutBanner: b
+      tryItOutThemeColors: m,
+      tryItOutAvatar: g,
+      tryItOutAvatarDecoration: E,
+      tryItOutProfileEffectId: b,
+      tryItOutBanner: y
     }
   }
 }
-S(el, "displayName", "UserSettingsAccountStore");
-let ec = new el(Chunk570140.Z, {
-  USER_SETTINGS_ACCOUNT_INIT: C,
-  USER_SETTINGS_MODAL_INIT: C,
-  USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: C,
-  USER_SETTINGS_MODAL_SET_SECTION: D,
-  USER_SETTINGS_ACCOUNT_CLOSE: R,
-  USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: es,
-  USER_SETTINGS_ACCOUNT_SUBMIT: P,
-  USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: w,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: L,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME: x,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED: M,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_DECORATION: j,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_NAMEPLATE: k,
-  USER_SETTINGS_ACCOUNT_SET_SINGLE_TRY_IT_OUT_COLLECTIBLES_ITEM: G,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID: U,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER: B,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_BIO: Z,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS: F,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_ACCENT_COLOR: V,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS: H,
-  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR: K,
-  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_DECORATION: z,
-  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PROFILE_EFFECT_ID: q,
-  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER: X,
-  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS: W,
-  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PRESET: Q,
-  USER_SETTINGS_SET_PENDING_PRIMARY_GUILD_ID: Y,
-  USER_SETTINGS_CLEAR_ERRORS: $,
-  USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES: et,
-  USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES: en,
-  USER_SETTINGS_RESET_ALL_PENDING: ee,
-  USER_SETTINGS_RESET_ALL_TRY_IT_OUT: er,
-  USER_SETTINGS_RESET_PENDING_AVATAR_DECORATION: ei,
-  USER_SETTINGS_ACCOUNT_RESET_PENDING_LEGACY_USERNAME_DISABLED: eo,
-  USER_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES: ea,
-  LOGOUT: J
+A(eu, "displayName", "UserSettingsAccountStore");
+let ed = new eu(Chunk570140.Z, {
+  USER_SETTINGS_ACCOUNT_INIT: R,
+  USER_SETTINGS_MODAL_INIT: R,
+  USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: R,
+  USER_SETTINGS_MODAL_SET_SECTION: L,
+  USER_SETTINGS_ACCOUNT_CLOSE: P,
+  USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: ec,
+  USER_SETTINGS_ACCOUNT_SUBMIT: w,
+  USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: D,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: x,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME: M,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED: j,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_DECORATION: k,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_NAMEPLATE: U,
+  USER_SETTINGS_ACCOUNT_SET_SINGLE_TRY_IT_OUT_COLLECTIBLES_ITEM: B,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID: G,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER: Z,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_BIO: F,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS: V,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_ACCENT_COLOR: H,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS: Y,
+  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR: q,
+  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_DECORATION: X,
+  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PROFILE_EFFECT_ID: Q,
+  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER: J,
+  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS: z,
+  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PRESET: $,
+  USER_SETTINGS_SET_PENDING_PRIMARY_GUILD_ID: W,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_DISPLAY_NAME_STYLES: K,
+  USER_SETTINGS_CLEAR_ERRORS: et,
+  USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES: er,
+  USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES: ei,
+  USER_SETTINGS_RESET_ALL_PENDING: en,
+  USER_SETTINGS_RESET_ALL_TRY_IT_OUT: eo,
+  USER_SETTINGS_RESET_PENDING_AVATAR_DECORATION: ea,
+  USER_SETTINGS_ACCOUNT_RESET_PENDING_LEGACY_USERNAME_DISABLED: es,
+  USER_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES: el,
+  LOGOUT: ee
 })

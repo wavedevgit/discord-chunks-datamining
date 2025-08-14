@@ -17,14 +17,16 @@ var Chunk255367 = require("./255367.js"),
   Chunk86419 = require("./86419.js"),
   Chunk810473 = require("./810473.js"),
   Chunk747101 = require("./747101.js"),
+  Chunk247989 = require("./247989.js"),
   Chunk985748 = require("./985748.jsx"),
   Chunk566007 = require("./566007.jsx"),
   Chunk173951 = require("./173951.jsx"),
   Chunk455731 = require("./455731.jsx"),
+  Chunk228168 = require("./228168.js"),
   Chunk247397 = require("./247397.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk663161 = require("./663161.js");
-let A = {
+let E = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     component: Chunk566007.Z,
     getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t.xJtdIi)
@@ -43,7 +45,7 @@ let A = {
   }
 };
 
-function P(e) {
+function _(e) {
   let {
     widgetType: t,
     user: n,
@@ -52,24 +54,24 @@ function P(e) {
     onAddWidget: s,
     disabled: d
   } = e, p = i.useRef(null), b = (0, u.Dt)(), f = i.useCallback(() => {
-    (0, g.qH)(t), s()
+    (0, g.qH)(t), s(), (0, O.L$)(x.qb.WIDGET_ADDED)
   }, [t, s]);
   if (null == l) return null;
   let {
     component: j,
-    getAriaLabel: O
-  } = A[t];
+    getAriaLabel: m
+  } = E[t];
   return (0, r.jsx)("li", {
     children: (0, r.jsxs)("div", {
       ref: p,
       onClick: d ? true : f,
-      className: o()(v.addButtonContainer, d && v.disabled),
+      className: o()(P.addButtonContainer, d && P.disabled),
       children: [(0, r.jsx)("div", {
-        className: v.addButton,
+        className: P.addButton,
         children: (0, r.jsx)(c.zxk, {
-          text: x.intl.string(x.t.onajm5),
+          text: A.intl.string(A.t.onajm5),
           variant: "overlay-primary",
-          "aria-label": O(),
+          "aria-label": m(),
           "aria-describedby": d ? b : true,
           focusProps: {
             ringTarget: p
@@ -80,25 +82,25 @@ function P(e) {
           disabled: d
         })
       }), d && (0, r.jsxs)("div", {
-        className: v.widgetAdded,
+        className: P.widgetAdded,
         children: [(0, r.jsx)(c.kmB, {
           size: "sm",
           color: "currentColor"
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
           "aria-hidden": true,
-          children: x.intl.string(x.t["UEZy/f"])
+          children: A.intl.string(A.t["UEZy/f"])
         }), (0, r.jsx)(c.nn4, {
           id: b,
-          children: x.intl.string(x.t.d8WVXF)
+          children: A.intl.string(A.t.d8WVXF)
         })]
       }), (0, r.jsx)(c.nn4, {
-        children: x.intl.string(x.t.e9eskJ)
+        children: A.intl.string(A.t.e9eskJ)
       }), (0, r.jsx)(j, {
         widget: l,
         user: n,
         isGameFetching: a,
-        containerClassName: d && v.disabledWidget,
+        containerClassName: d && P.disabledWidget,
         disableInteraction: true
       })]
     })
@@ -136,7 +138,7 @@ function k(e) {
       let e = new Set(c),
         t = [],
         n = [];
-      return w.r.forEach(r => {
+      return v.r.forEach(r => {
         e.has(r) ? t.push(r) : n.push(r)
       }), [...t, ...n]
     }, [c]);
@@ -158,14 +160,14 @@ function k(e) {
     }
     return e
   }({
-    title: x.intl.string(x.t.grUgR0),
+    title: A.intl.string(A.t.grUgR0),
     actions: [],
     onClose: l
   }, o), n = n = {
     children: (0, r.jsx)("ul", {
-      "aria-label": x.intl.string(x.t["+EIBSE"]),
-      className: v.options,
-      children: y.map(e => (0, r.jsx)(P, {
+      "aria-label": A.intl.string(A.t["+EIBSE"]),
+      className: P.options,
+      children: y.map(e => (0, r.jsx)(_, {
         widgetType: e,
         user: a,
         widget: m.get(e),

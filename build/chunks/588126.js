@@ -13,9 +13,7 @@ let l = function(e) {
     {
       categories: o,
       purchases: c
-    } = (0, a.ZP)({
-      location: "useTryItOutAvatarDecoration"
-    });
+    } = (0, a.ZP)();
   return i.useEffect(() => {
     (null == n || 0 === n.size) && l(o)
   }, [o, n]), i.useMemo(() => {

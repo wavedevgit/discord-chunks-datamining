@@ -1,12 +1,13 @@
 /** Chunk was on 47495 **/
 /** chunk id: 305813, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => T
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk22267 = require("./22267.jsx"),
@@ -15,10 +16,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk739566 = require("./739566.js"),
   Chunk753206 = require("./753206.jsx"),
   Chunk678135 = require("./678135.jsx"),
+  Chunk643879 = require("./643879.js"),
   Chunk687158 = require("./687158.js"),
   Chunk28660 = require("./28660.js"),
   Chunk502762 = require("./502762.jsx"),
-  Chunk598077 = require("./598077.js"),
+  Chunk25990 = require("./25990.js"),
   Chunk626135 = require("./626135.js"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
@@ -27,7 +29,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk53426 = require("./53426.js");
 
-function v(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +48,7 @@ function v(e) {
   return e
 }
 
-function k(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,129 +61,142 @@ function k(e, t) {
   }), e
 }
 
-function E(e) {
+function T(e) {
   let {
     user: t,
     selectedFontId: n,
     selectedEffectId: l,
-    selectedColors: E,
-    onClose: N
-  } = e, D = new x.Z(k(v({}, t), {
-    displayNameStyles: {
-      fontId: n,
-      effectId: l,
-      colors: E
-    }
-  })), w = (0, s.ZP)(), R = (0, a.wjy)(w), [A, I] = (0, o.useState)(R), L = (0, g.ZP)(t.id, null), {
-    bannerSrc: B
-  } = (0, h.Z)({
-    displayProfile: L,
+    selectedColors: T,
+    onClose: w
+  } = e, R = (0, c.ZP)(), A = (0, s.wjy)(R), [I, L] = (0, o.useState)(A), B = (0, b.ZP)(t.id, null), {
+    bannerSrc: M
+  } = (0, x.Z)({
+    displayProfile: B,
     size: 413,
     canAnimate: false
-  }), M = A ? S.BRd.DARK : S.BRd.LIGHT;
-  (R && A || !R && !A) && (M = w);
-  let Z = (0, o.useCallback)(() => {
-      j.default.track(S.rMx.DISPLAY_NAME_STYLES_CLOSED), N()
-    }, [N]),
-    G = (0, o.useCallback)(e => {
-      I(e === S.BRd.DARK), j.default.track(S.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
-        dark: e === S.BRd.DARK
+  }), G = (0, i.e7)([_.Z], () => _.Z.getAllPending()), Z = (0, h.SD)({
+    userId: t.id,
+    image: G.pendingAvatar
+  }), Y = I ? O.BRd.DARK : O.BRd.LIGHT;
+  (A && I || !A && !I) && (Y = R);
+  let H = (0, o.useCallback)(() => {
+      S.default.track(O.rMx.DISPLAY_NAME_STYLES_CLOSED), w()
+    }, [w]),
+    z = (0, o.useCallback)(e => {
+      L(e === O.BRd.DARK), S.default.track(O.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
+        dark: e === O.BRd.DARK
       })
-    }, []);
-  return (0, r.jsxs)("div", {
-    className: P.previewSection,
-    children: [(0, r.jsx)(a.xBx, {
-      "data-migration-pending": true,
-      separator: false,
-      className: P.sectionHeader,
-      children: (0, r.jsx)(a.olH, {
-        "data-migration-pending": true,
-        onClick: Z,
-        innerClassName: P.closeButton
-      })
-    }), null != B && (0, r.jsx)(b.Z, {
-      user: D,
-      displayProfile: L,
-      themeType: C.lY.MODAL_V2,
-      className: P.backgroundThemeContainer,
-      forceUserTheme: true,
-      children: (0, r.jsx)("div", {
-        className: P.bannerBackground,
-        style: {
-          backgroundImage: "url(".concat(B, ")")
+    }, []),
+    F = (0, o.useMemo)(() => {
+      var e;
+      let r = (0, f.ij)(t, null);
+      return E(N({}, r), {
+        nick: null != (e = G.pendingGlobalName) ? e : r.nick,
+        displayNameStyles: {
+          fontId: n,
+          effectId: l,
+          colors: T
         }
       })
-    }), (0, r.jsx)(a.f6W, {
-      theme: M,
+    }, [t, n, l, T, G.pendingGlobalName]);
+  return (0, r.jsxs)("div", {
+    className: k.previewSection,
+    children: [(0, r.jsx)(s.xBx, {
+      "data-migration-pending": true,
+      separator: false,
+      className: k.sectionHeader,
+      children: (0, r.jsx)(s.olH, {
+        "data-migration-pending": true,
+        onClick: H,
+        innerClassName: k.closeButton
+      })
+    }), null != M && (0, r.jsx)(j.Z, {
+      user: t,
+      displayProfile: B,
+      themeType: y.lY.MODAL_V2,
+      className: k.backgroundThemeContainer,
+      forceUserTheme: true,
+      children: (0, r.jsx)("div", {
+        className: k.bannerBackground,
+        style: {
+          backgroundImage: "url(".concat(M, ")")
+        }
+      })
+    }), (0, r.jsx)(s.f6W, {
+      theme: Y,
       children: e => (0, r.jsxs)("div", {
-        className: i()(P.previewCards, e),
+        className: a()(k.previewCards, e),
         inert: true,
-        children: [(0, r.jsx)(m.Z, {
-          user: D,
-          pendingAvatar: true,
+        children: [(0, r.jsx)(g.Z, E(N({
+          user: t
+        }, G), {
+          pendingAvatar: Z,
+          pendingDisplayNameStyles: F.displayNameStyles,
           canUsePremiumCustomization: true,
           disabledInputs: true,
           hideCustomStatus: true,
           hideBioSection: true,
-          containerClassName: P.profile,
+          containerClassName: k.profile,
           interactive: false,
           hideViewFullProfileButton: true
-        }), (0, r.jsx)(f.Z, {
-          author: (0, p.ij)(D, null),
-          message: (0, d.e5)(k(v({}, (0, u.ZP)({
+        })), (0, r.jsx)(m.Z, {
+          author: F,
+          message: (0, u.e5)(E(N({}, (0, p.ZP)({
             channelId: "1337",
-            content: y.intl.string(O.default.h5Cuen)
+            content: P.intl.string(v.default.h5Cuen)
           })), {
-            state: S.yb.SENT,
+            state: O.yb.SENT,
             id: "0"
           })),
           isGroupStart: true,
           hideSimpleEmbedContent: true,
           hideGuildTag: true,
-          className: P.chatMessage
-        }), (0, r.jsx)(c.Z, {
-          user: D,
-          nameplate: null,
-          nameplateData: D.nameplate,
-          className: P.nameplate
+          className: k.chatMessage
+        }), (0, r.jsx)(d.Z, {
+          user: t,
+          nameplate: G.pendingNameplate,
+          nameplateData: true === G.pendingNameplate ? t.nameplate : true,
+          pendingGlobalName: G.pendingGlobalName,
+          pendingDisplayNameStyles: F.displayNameStyles,
+          className: k.nameplate
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: P.themeToggleSection,
-      children: [(0, r.jsx)(a.Text, {
+      className: k.themeToggleSection,
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: y.intl.format(O.default.prQba2, {
-          helpArticleLink: _.Z.getArticleURL(S.BhN.DISPLAY_NAME_STYLES)
+        children: P.intl.format(v.default.prQba2, {
+          helpArticleLink: C.Z.getArticleURL(O.BhN.DISPLAY_NAME_STYLES)
         })
-      }), (0, r.jsx)(T, {
-        darkPreview: A,
-        onToggleTheme: G
+      }), (0, r.jsx)(D, {
+        darkPreview: I,
+        onToggleTheme: z
       })]
     })]
   })
 }
 
-function T(e) {
+function D(e) {
   let {
     darkPreview: t,
     onToggleTheme: n
-  } = e, o = t ? S.BRd.DARK : S.BRd.LIGHT;
-  return (0, r.jsx)(a.sY7, {
-    className: P.themeToggleControl,
-    optionClassName: P.themeToggleOption,
+  } = e, o = t ? O.BRd.DARK : O.BRd.LIGHT;
+  return (0, r.jsx)(s.sY7, {
+    className: k.themeToggleControl,
+    optionClassName: k.themeToggleOption,
     options: [{
       name: "",
-      tooltip: y.intl.string(y.t.b8Cei4),
-      value: S.BRd.DARK,
-      icon: a.Z6G,
-      className: o === S.BRd.DARK ? P.themeToggleOptionSelected : true
+      tooltip: P.intl.string(P.t.b8Cei4),
+      value: O.BRd.DARK,
+      icon: s.Z6G,
+      className: o === O.BRd.DARK ? k.themeToggleOptionSelected : true
     }, {
       name: "",
-      tooltip: y.intl.string(y.t.K2sFfn),
-      value: S.BRd.LIGHT,
-      icon: a.chG,
-      className: o === S.BRd.LIGHT ? P.themeToggleOptionSelected : true
+      tooltip: P.intl.string(P.t.K2sFfn),
+      value: O.BRd.LIGHT,
+      icon: s.chG,
+      className: o === O.BRd.LIGHT ? k.themeToggleOptionSelected : true
     }],
     value: o,
     onChange: e => {

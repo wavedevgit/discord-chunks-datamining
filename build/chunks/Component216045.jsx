@@ -1,7 +1,7 @@
 /** Chunk was on 20501 **/
 /** chunk id: 216045, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => F
+  Z: () => z
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -44,19 +44,50 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk179571 = require("./179571.js");
 
-function F() {
-  var e, t;
-  let n = (0, Chunk442837.e7)([Chunk594174.default], () => {
+function F(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = i
+    })
+  }
+  return e
+}
+
+function H(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function z() {
+  let e = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
       return a()(null != module, "UserSettingsProfileCustomization: user cannot be undefined"), module
     }),
-    s = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
-    F = (0, Chunk442837.cj)([Chunk25990.Z], () => Chunk25990.Z.getAllPending()),
+    t = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
+    n = (0, Chunk442837.cj)([Chunk25990.Z], () => Chunk25990.Z.getAllPending()),
     {
-      pendingBio: H,
+      pendingBio: s,
       pendingAvatar: z,
       pendingNameplate: W
-    } = F,
+    } = require,
     Y = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
@@ -71,14 +102,14 @@ function F() {
         for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
       return r
-    }(F, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
+    }(require, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
     K = (0, Chunk643879.SD)({
-      userId: require.id,
+      userId: module.id,
       image: z
     }),
     q = (0, Chunk442837.e7)([Chunk25990.Z], () => Chunk25990.Z.showNotice()),
-    X = Chunk695346.dN.useSetting() && null != H ? Chunk957730.ZP.parse(true, H).content : H,
-    J = Chunk74538.ZP.canUsePremiumProfileCustomization(require),
+    X = Chunk695346.dN.useSetting() && null != Chunk512722 ? Chunk957730.ZP.parse(true, Chunk512722).content : Chunk512722,
+    J = Chunk74538.ZP.canUsePremiumProfileCustomization(module),
     {
       analyticsLocations: Q,
       newestAnalyticsLocation: $
@@ -102,51 +133,25 @@ function F() {
   } = Chunk413182.b.useExperiment({
     location: "profile customization"
   }), ec = !J, ed = Chunk73800.useRef(null);
-  return Chunk512722 ? (0, Chunk255367.jsx)(Chunk497321.Z, {}) : (0, Chunk255367.jsxs)(Chunk906732.Gt, {
+  return exports ? (0, Chunk255367.jsx)(Chunk497321.Z, {}) : (0, Chunk255367.jsxs)(Chunk906732.Gt, {
     value: Q,
     children: [(0, Chunk255367.jsx)(Chunk475977.Z, {}), (0, Chunk255367.jsx)(Chunk296810.Z, {
-      profilePreview: (0, Chunk255367.jsx)(Chunk678135.Z, (e = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = i
-          })
-        }
-        return e
-      }({
-        user: require,
+      profilePreview: (0, Chunk255367.jsx)(Chunk678135.Z, H(F({
+        user: module,
         canUsePremiumCustomization: J,
         onUpsellClick: Chunk265159.Z,
         pendingBio: X
-      }, Y), t = t = {
+      }, Y), {
         pendingAvatar: K
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
-        }
-        return n
-      })(Object(exports)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-      }), module)),
-      nameplatePreview: (0, Chunk255367.jsx)(Chunk22267.Z, {
-        user: require,
+      })),
+      nameplatePreview: (0, Chunk255367.jsx)(Chunk22267.Z, H(F({
+        user: module,
         nameplate: W,
-        nameplateData: true === W ? require.nameplate : true,
-        pendingGlobalName: Y.pendingGlobalName,
+        nameplateData: true === W ? module.nameplate : true
+      }, Y), {
         className: Chunk179571.nameplatePreview,
         isHighlighted: true
-      }),
+      })),
       children: (0, Chunk255367.jsx)(Chunk532495.Z, {})
     }), eo && (0, Chunk255367.jsx)(Chunk610794.Z, {}), (0, Chunk255367.jsx)(Chunk622535.$, {
       innerRef: ed,
@@ -156,7 +161,7 @@ function F() {
       children: (0, Chunk255367.jsx)("div", {
         ref: ed,
         children: (0, Chunk255367.jsx)(Chunk935147.Z, {
-          user: require,
+          user: module,
           shouldShow: ec,
           isVisible: ea
         })

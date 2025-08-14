@@ -30,18 +30,19 @@ function p(e) {
     pendingPronouns: y,
     pendingLegacyUsernameDisabled: O,
     pendingBadges: v,
-    isTryItOutFlow: I,
-    hideBioSection: T,
-    shouldOpenBadgeTooltip: S
-  } = e, A = (0, i.e7)([c.ZP], () => null == h ? null : c.ZP.getMember(h.id, n.id)), N = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), C = null == p || null == (t = p.getPreviewBio(b)) ? true : t.value, R = null != y ? y : null == p ? true : p.pronouns, P = (0, d.Ly)({
+    pendingDisplayNameStyles: I,
+    isTryItOutFlow: T,
+    hideBioSection: S,
+    shouldOpenBadgeTooltip: A
+  } = e, N = (0, i.e7)([c.ZP], () => null == h ? null : c.ZP.getMember(h.id, n.id)), C = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), R = null == p || null == (t = p.getPreviewBio(b)) ? true : t.value, P = null != y ? y : null == p ? true : p.pronouns, w = (0, d.Ly)({
     pendingNickname: g,
     pendingGlobalName: E,
     user: n,
-    guildMember: A
-  }), w = () => {
-    if (null != A && null !== m && (null != A.avatar || null != m)) return (0, r.jsx)(l.Z, {
+    guildMember: N
+  }), D = () => {
+    if (null != N && null !== m && (null != N.avatar || null != m)) return (0, r.jsx)(l.Z, {
       user: n,
-      nickname: P
+      nickname: w
     })
   };
   return (0, r.jsxs)("div", {
@@ -49,21 +50,22 @@ function p(e) {
     inert: true,
     children: [(0, r.jsx)(a.Z, {
       user: n,
-      usernameIcon: w(),
-      nickname: P,
-      pronouns: R,
-      isTryItOut: I,
+      usernameIcon: D(),
+      nickname: w,
+      displayNameStyles: true !== I ? I : n.displayNameStyles,
+      pronouns: P,
+      isTryItOut: T,
       tags: (0, r.jsx)(o.Z, {
         displayProfile: p,
         themeType: f.lY.POPOUT,
         pendingLegacyUsernameDisabled: O,
         pendingBadges: v,
-        shouldOpenBadgeTooltip: S
+        shouldOpenBadgeTooltip: A
       })
-    }), !T && null != C && "" !== C && (0, r.jsx)(s.Z, {
+    }), !S && null != R && "" !== R && (0, r.jsx)(s.Z, {
       user: n,
-      bio: C,
-      hidePersonalInformation: N,
+      bio: R,
+      hidePersonalInformation: C,
       viewFullBioDisabled: true
     })]
   })

@@ -16,8 +16,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk484459 = require("./484459.js"),
   Chunk594174 = require("./594174.js"),
   Chunk583434 = require("./583434.js"),
-  Chunk905357 = require("./905357.js"),
   Chunk473608 = require("./473608.jsx"),
+  Chunk29121 = require("./29121.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk205436 = require("./205436.js");
 
@@ -72,7 +72,7 @@ let I = e => {
   } = (0, p.T)(t), {
     giftRecipient: S,
     giftRecipientError: A
-  } = (0, u.wD)(), N = (0, l.e7)([_.default], () => _.default.getCurrentUser()), C = (0, h.k)(T), R = i.useRef(null);
+  } = (0, u.wD)(), N = (0, l.e7)([_.default], () => _.default.getCurrentUser()), C = (0, m.kd)(T), R = i.useRef(null);
   if (null == T) return null;
   let [P] = T.items, w = () => {
     switch (P.type) {
@@ -128,7 +128,7 @@ let I = e => {
       }),
       children: [(0, r.jsxs)("div", {
         className: E.giftInfoContainer,
-        children: [(0, r.jsx)(m.O, {
+        children: [(0, r.jsx)(h.O, {
           product: T,
           fallbackLabel: null
         }), (0, r.jsxs)("div", {

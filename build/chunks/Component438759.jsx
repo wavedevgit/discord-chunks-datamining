@@ -26,14 +26,14 @@ function h(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: o,
-    children: [(0, r.jsxs)(i.X6, {
+    children: [(0, r.jsxs)(a.X6, {
       variant: "heading-md/semibold",
       className: m.selectorHeading,
-      children: [f.intl.string(p.default["1wilMz"]), (0, r.jsx)(a.SrA, {
+      children: [f.intl.string(p.default["1wilMz"]), (0, r.jsx)(i.SrA, {
         size: "xs",
-        color: a.TVs.colors.TEXT_DEFAULT
+        color: i.TVs.colors.TEXT_DEFAULT
       })]
-    }), (0, r.jsx)(i.Kq, {
+    }), (0, r.jsx)(a.Kq, {
       direction: "horizontal",
       align: "center",
       wrap: true,
@@ -52,16 +52,16 @@ function b(e) {
     effectId: t,
     selected: n,
     onClick: o
-  } = e, i = (0, d.R)(t);
-  return (0, r.jsx)(a.P3F, {
+  } = e, a = (0, d.R)(t);
+  return (0, r.jsx)(i.P3F, {
     className: l()(g.effectContainer, {
       [g.selected]: n
     }),
     onClick: o,
     children: (0, r.jsx)(c.Z, {
-      userName: i.name,
+      userName: a.name,
       effectDisplayType: s.F.STATIC,
-      displayNameStyles: i.previewStyles,
+      displayNameStyles: a.previewStyles,
       textClassName: g.effectText,
       inProfile: true
     })

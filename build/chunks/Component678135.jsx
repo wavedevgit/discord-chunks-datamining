@@ -42,20 +42,21 @@ function v(e) {
     pendingThemeColors: w,
     pendingProfileEffectId: D,
     pendingLegacyUsernameDisabled: L,
-    avatarClassName: x,
-    containerClassName: M,
-    isTryItOutFlow: j = false,
-    disabledInputs: k = false,
-    hideCustomStatus: U = false,
-    hideBioSection: G = false,
-    hideMessageInput: B = true,
-    pendingBadges: Z,
-    shouldOpenBadgeTooltip: F,
-    hideViewFullProfileButton: V = false,
-    interactive: H = true
-  } = e, Y = (0, l.ZP)(t.id, null == n ? true : n.id), {
-    avatarSrc: W,
-    avatarDecorationSrc: K
+    pendingDisplayNameStyles: x,
+    avatarClassName: M,
+    containerClassName: j,
+    isTryItOutFlow: k = false,
+    disabledInputs: U = false,
+    hideCustomStatus: G = false,
+    hideBioSection: B = false,
+    hideMessageInput: Z = true,
+    pendingBadges: F,
+    shouldOpenBadgeTooltip: V,
+    hideViewFullProfileButton: H = false,
+    interactive: Y = true
+  } = e, W = (0, l.ZP)(t.id, null == n ? true : n.id), {
+    avatarSrc: K,
+    avatarDecorationSrc: z
   } = (0, u.Z)({
     userId: null == t ? true : t.id,
     guildId: null == n ? true : n.id,
@@ -63,62 +64,62 @@ function v(e) {
     avatarOverride: N,
     size: a.EFr.SIZE_80,
     showPending: true
-  }), z = (0, _.ZT)({
+  }), q = (0, _.ZT)({
     pendingProfileEffectId: D,
-    displayProfile: Y
+    displayProfile: W
   }), {
-    theme: q,
-    primaryColor: X
+    theme: X,
+    primaryColor: Q
   } = (0, c.Z)({
     user: t,
-    displayProfile: Y,
+    displayProfile: W,
     pendingThemeColors: w,
     isPreview: i
-  }), Q = (0, r.jsxs)(d.Z, {
+  }), J = (0, r.jsxs)(d.Z, {
     user: t,
-    displayProfile: Y,
+    displayProfile: W,
     themeType: b.lY.POPOUT,
     pendingThemeColors: w,
-    className: o()(O.container, M),
+    className: o()(O.container, j),
     forceShowPremium: i,
     children: [(0, r.jsxs)("div", {
       className: O.header,
       children: [(0, r.jsx)(h.Z, {
         user: t,
-        displayProfile: Y,
+        displayProfile: W,
         guildId: null == n ? true : n.id,
         canUsePremiumCustomization: i,
         pendingBanner: I,
         pendingAccentColor: T,
-        isTryItOutFlow: j,
-        disabledInputs: k,
+        isTryItOutFlow: k,
+        disabledInputs: U,
         onUpsellClick: () => null == v ? true : v({
           object: E.qAy.EDIT_PROFILE_BANNER
         })
       }), (0, r.jsx)(p.Z, {
         user: t,
         guild: n,
-        displayProfile: Y,
+        displayProfile: W,
         canUsePremiumCustomization: i,
-        previewAvatar: W,
-        previewAvatarDecoration: K,
-        previewTheme: q,
-        previewPrimaryColor: X,
-        className: x,
-        disabledInputs: k,
-        isTryItOutFlow: j,
+        previewAvatar: K,
+        previewAvatarDecoration: z,
+        previewTheme: X,
+        previewPrimaryColor: Q,
+        className: M,
+        disabledInputs: U,
+        isTryItOutFlow: k,
         onUpsellClick: () => null == v ? true : v({
           object: E.qAy.AVATAR
         })
-      }), !U && (0, r.jsx)(f.Z, {
+      }), !G && (0, r.jsx)(f.Z, {
         location: "UserProfilePreview",
         user: t,
         themeType: b.lY.POPOUT,
-        disableToolbar: k
+        disableToolbar: U
       })]
     }), (0, r.jsx)(m.Z, {
       user: t,
-      displayProfile: Y,
+      displayProfile: W,
       guild: n,
       pendingAvatar: N,
       pendingNickname: R,
@@ -126,23 +127,24 @@ function v(e) {
       pendingBio: S,
       pendingPronouns: A,
       pendingLegacyUsernameDisabled: L,
-      isTryItOutFlow: j,
-      hideBioSection: G,
-      pendingBadges: Z,
-      shouldOpenBadgeTooltip: F
+      pendingDisplayNameStyles: x,
+      isTryItOutFlow: k,
+      hideBioSection: B,
+      pendingBadges: F,
+      shouldOpenBadgeTooltip: V
     }), (0, r.jsx)(g.Z, {
       user: t,
-      hideMessageInput: B,
-      hideViewFullProfileButton: V
-    }), null != z && (0, r.jsx)(s.Z, {
-      profileEffectId: z
+      hideMessageInput: Z,
+      hideViewFullProfileButton: H
+    }), null != q && (0, r.jsx)(s.Z, {
+      profileEffectId: q
     })]
   });
-  return H ? Q : (0, r.jsx)("div", {
+  return Y ? J : (0, r.jsx)("div", {
     role: "img",
     "aria-label": y.intl.string(y.t.ayozFh),
     children: (0, r.jsx)(a.Rny, {
-      children: Q
+      children: J
     })
   })
 }

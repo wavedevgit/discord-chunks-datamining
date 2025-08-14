@@ -38,7 +38,7 @@ function C(e) {
     purchased: _,
     isFetchingCategories: O,
     isFetchingPurchases: C
-  } = (0, d.yV)("NameplateModal"), P = O || C && 0 === _.length;
+  } = (0, d.yV)(), P = O || C && 0 === _.length;
   return (0, a.useEffect)(() => {
     v.default.track(g.rMx.OPEN_MODAL, {
       type: g.jXE.NAMEPLATE_CUSTOMIZATION,

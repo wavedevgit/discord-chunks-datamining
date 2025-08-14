@@ -2,14 +2,14 @@
 /** chunk id: 479801, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  e: () => h
+  e: () => m
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
+  Chunk311570 = require("./311570.js"),
   Chunk442837 = require("./442837.js"),
   Chunk353926 = require("./353926.js"),
   Chunk335131 = require("./335131.js"),
-  Chunk597688 = require("./597688.js"),
-  Chunk228624 = require("./228624.js");
+  Chunk597688 = require("./597688.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -50,38 +50,39 @@ function f(e, t) {
   }), e
 }
 let _ = 6e5,
-  p = 6e5;
+  p = 6e5,
+  h = Chunk311570.v.VARIANTS_GROUP;
 
-function h(e, t, n) {
-  let c = (0, i.e7)([o.Z], () => o.Z.hasLoadedExperiments),
-    d = null == e ? true : e.includeBundles,
-    h = (0, l.hv)("useMaybeFetchCollectiblesCategoriesShared"),
-    [m, g, E, b, y, O, v] = (0, i.Wu)([s.Z], () => {
+function m(e, t, n) {
+  let i = (0, o.e7)([a.Z], () => a.Z.hasLoadedExperiments),
+    c = null == e ? true : e.includeBundles,
+    [d, m, g, E, b, y, O] = (0, o.Wu)([l.Z], () => {
       var e, t;
-      return [s.Z.isFetchingCategories, s.Z.lastFetchOptions, s.Z.error, null != (e = s.Z.lastErrorTimestamp) ? e : 0, null != (t = s.Z.lastSuccessfulFetch) ? t : 0, s.Z.categories, s.Z.skipNumCategories]
+      return [l.Z.isFetchingCategories, l.Z.lastFetchOptions, l.Z.error, null != (e = l.Z.lastErrorTimestamp) ? e : 0, null != (t = l.Z.lastSuccessfulFetch) ? t : 0, l.Z.categories, l.Z.skipNumCategories]
     });
   return (0, r.useEffect)(() => {
-    if (!c || m) return;
-    let r = Date.now() - b < p;
-    if (E && r) return;
-    let i = f(u({}, e), {
-        includeBundles: d,
+    if (!i || d) return;
+    let r = Date.now() - E < p;
+    if (g && r) return;
+    let o = f(u({}, e), {
         variantsReturnStyle: h,
-        skipNumCategories: v
+        includeBundles: c,
+        skipNumCategories: O
       }),
-      o = !(0, a.oc)(g, i),
-      s = Date.now() - y < _;
-    (o || !s) && (0, a.F$)(i, t, n)
-  }, [c, m, g, y, e, E, d, b, h, t, n, v]), {
-    isFetching: m,
-    categories: O,
-    fetchCategoriesError: E,
+      a = !(0, s.oc)(m, o),
+      l = Date.now() - b < _;
+    (a || !l) && (0, s.F$)(o, t, n)
+  }, [i, d, m, b, e, g, c, E, t, n, O]), {
+    isFetching: d,
+    categories: y,
+    fetchCategoriesError: g,
     refreshCategories: (0, r.useCallback)(() => {
       let t = f(u({}, e), {
-        includeBundles: d,
-        skipNumCategories: v
+        variantsReturnStyle: h,
+        includeBundles: c,
+        skipNumCategories: O
       });
-      (0, a.F$)(t, true, n)
-    }, [e, d, n, v])
+      (0, s.F$)(t, true, n)
+    }, [e, c, n, O])
   }
 }

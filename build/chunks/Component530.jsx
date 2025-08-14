@@ -27,32 +27,33 @@ function g(e) {
     tags: i,
     nickname: g,
     nicknameIcons: E,
-    pronouns: b,
-    className: y,
-    tagClassName: O,
-    isTryItOut: v,
-    onOpenProfile: I,
-    onClose: T,
-    nicknameVariant: S = "heading-lg/bold"
-  } = e, A = e => null == I ? e : (0, r.jsx)(a.kL8, {
-    onClick: I,
+    displayNameStyles: b = t.displayNameStyles,
+    pronouns: y,
+    className: O,
+    tagClassName: v,
+    isTryItOut: I,
+    onOpenProfile: T,
+    onClose: S,
+    nicknameVariant: A = "heading-lg/bold"
+  } = e, N = e => null == T ? e : (0, r.jsx)(a.kL8, {
+    onClick: T,
     className: m.clickableUsername,
     "aria-label": h.intl.string(h.t["+Xp3ho"]),
     children: e
-  }), N = null != b && b.length > 0, C = (0, l.D)(t), R = (0, u.Y)({
+  }), C = null != y && y.length > 0, R = (0, l.D)(t), P = (0, u.Y)({
     location: "UserProfileUsername"
-  }) && null != t.displayNameStyles;
+  }) && null != b;
   return (0, r.jsxs)("div", {
     className: o()(m.container, {
-      [m.bot]: null != C
-    }, y),
+      [m.bot]: null != R
+    }, O),
     children: [(0, r.jsxs)("div", {
       className: m.usernameRow,
-      children: [A(R ? (0, r.jsx)(a.Text, {
-        variant: S,
+      children: [N(P ? (0, r.jsx)(a.Text, {
+        variant: A,
         children: (0, r.jsx)(f.Z, {
           userName: g,
-          displayNameStyles: t.displayNameStyles,
+          displayNameStyles: b,
           effectDisplayType: d.F.ANIMATED,
           textClassName: m.nicknameWithDisplayNameStyles,
           shouldWrap: true,
@@ -61,10 +62,10 @@ function g(e) {
         })
       }) : (0, r.jsx)(a.Text, {
         className: m.nickname,
-        variant: S,
+        variant: A,
         children: g
-      })), null != C && (0, r.jsx)(c.Z, {
-        type: C,
+      })), null != R && (0, r.jsx)(c.Z, {
+        type: R,
         verified: t.isVerifiedBot()
       }), null != E && (0, r.jsx)("div", {
         className: m.nicknameIcons,
@@ -72,19 +73,19 @@ function g(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: o()(m.tags, {
-        [m.pronouns]: N,
-        [m.bot]: null != C
+        [m.pronouns]: C,
+        [m.bot]: null != R
       }),
-      children: [!t.isProvisional && A((0, r.jsx)(s.Z, {
+      children: [!t.isProvisional && N((0, r.jsx)(s.Z, {
         user: t,
         usernameIcon: n,
         forceUsername: true,
-        forcePomelo: v,
-        className: o()(m.userTag, O),
+        forcePomelo: I,
+        className: o()(m.userTag, v),
         usernameClass: m.userTagUsername,
         discriminatorClass: m.userTagDiscriminator,
         hideBotTag: true
-      })), N && (0, r.jsxs)(r.Fragment, {
+      })), C && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           "aria-hidden": "true",
           className: m.dotSpacer
@@ -93,15 +94,15 @@ function g(e) {
           text: h.intl.string(h.t.GI2A8P),
           delay: p.vB,
           children: (0, r.jsx)(a.Text, {
-            className: o()(m.pronounsText, O),
+            className: o()(m.pronounsText, v),
             variant: "text-sm/medium",
             color: "header-primary",
-            children: b
+            children: y
           })
         })]
       }), (0, r.jsx)(_.ZP, {
         userId: t.id,
-        onClose: T,
+        onClose: S,
         containerClassName: m.guildTagContainer,
         className: m.guildTag
       }), i]

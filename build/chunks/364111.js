@@ -1,27 +1,27 @@
 /** Chunk was on 1272 **/
 /** chunk id: 364111, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E: () => d
+  E: () => p
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
+  Chunk311570 = require("./311570.js"),
   Chunk442837 = require("./442837.js"),
   Chunk353926 = require("./353926.js"),
   Chunk358085 = require("./358085.js"),
   Chunk335131 = require("./335131.js"),
   Chunk597688 = require("./597688.js"),
-  Chunk52030 = require("./52030.js"),
-  Chunk228624 = require("./228624.js");
+  Chunk52030 = require("./52030.js");
+let d = Chunk311570.v.VARIANTS_GROUP;
 
-function d(e, t, n) {
-  let d = (0, i.e7)([l.Z], () => l.Z.hasLoadedExperiments),
-    p = (0, i.e7)([s.Z], () => s.Z.skipNumCategories),
-    f = (0, u.hv)("useMaybeFetchCollectiblesShopHome"),
-    h = (0, a.isDesktop)() || (0, a.isWeb)(),
-    [g, m, b, _, O, E, y] = (0, i.Wu)([c.Z], () => {
+function p(e, t, n) {
+  let i = (0, l.e7)([a.Z], () => a.Z.hasLoadedExperiments),
+    p = (0, l.e7)([c.Z], () => c.Z.skipNumCategories),
+    f = (0, o.isDesktop)() || (0, o.isWeb)(),
+    [h, g, m, b, _, O, E] = (0, l.Wu)([u.Z], () => {
       var t, n;
-      return [c.Z.getShopBlocks(e), null != (t = c.Z.getLastSuccessfulFetch(e)) ? t : 0, null != (n = c.Z.getLastErrorTimestamp(e)) ? n : 0, c.Z.getLastFetchOptions(e), c.Z.getFetchShopHomeError(e), c.Z.getIsFetchingShopHome(e), c.Z.getShopHomeConfigOverride()]
+      return [u.Z.getShopBlocks(e), null != (t = u.Z.getLastSuccessfulFetch(e)) ? t : 0, null != (n = u.Z.getLastErrorTimestamp(e)) ? n : 0, u.Z.getLastFetchOptions(e), u.Z.getFetchShopHomeError(e), u.Z.getIsFetchingShopHome(e), u.Z.getShopHomeConfigOverride()]
     }),
-    v = (0, r.useMemo)(() => {
+    y = (0, r.useMemo)(() => {
       var e, n;
       return e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -41,11 +41,11 @@ function d(e, t, n) {
         }
         return e
       }({}, t), n = n = {
-        variantsReturnStyle: f,
-        includeBundles: h,
+        variantsReturnStyle: d,
+        includeBundles: f,
         includePopularPicks: true,
         includeDynamicBlocks: true,
-        shopHomeConfig: y,
+        shopHomeConfig: E,
         skipNumCategories: p
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -57,19 +57,19 @@ function d(e, t, n) {
       })(Object(n)).forEach(function(t) {
         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
       }), e
-    }, [t, f, h, y, p]),
-    I = (0, r.useMemo)(() => !(0, o.oc)(_, v), [_, v]),
-    C = (0, r.useMemo)(() => Date.now() - m < 6e5, [m]);
+    }, [t, f, E, p]),
+    v = (0, r.useMemo)(() => !(0, s.oc)(b, y), [b, y]),
+    I = (0, r.useMemo)(() => Date.now() - g < 6e5, [g]);
   return (0, r.useEffect)(() => {
-    if (!d || E) return;
-    let t = Date.now() - b < 6e5;
-    null != O && t || (I || !C) && (0, o.Ov)(e, v, n)
-  }, [d, E, O, b, C, I, v, e, n]), {
-    isFetchingShopHome: E,
-    fetchShopHomeError: O,
-    shopBlocks: g,
+    if (!i || O) return;
+    let t = Date.now() - m < 6e5;
+    null != _ && t || (v || !I) && (0, s.Ov)(e, y, n)
+  }, [i, O, _, m, I, v, y, e, n]), {
+    isFetchingShopHome: O,
+    fetchShopHomeError: _,
+    shopBlocks: h,
     refreshShopHome: (0, r.useCallback)(() => {
-      (0, o.Ov)(e, v, n)
-    }, [e, v, n])
+      (0, s.Ov)(e, y, n)
+    }, [e, y, n])
   }
 }

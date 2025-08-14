@@ -2,15 +2,15 @@
 /** chunk id: 223143, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => p,
-  c7: () => _,
-  mw: () => h
+  ZP: () => h,
+  c7: () => p,
+  mw: () => m
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
+  Chunk311570 = require("./311570.js"),
   Chunk399606 = require("./399606.js"),
   Chunk335131 = require("./335131.js"),
   Chunk1870 = require("./1870.js"),
-  Chunk228624 = require("./228624.js"),
   Chunk267097 = require("./267097.js");
 
 function c(e, t, n) {
@@ -51,35 +51,33 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
+let _ = Chunk311570.v.VARIANTS_GROUP;
 
-function _() {
+function p() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
-    t = arguments.length > 1 ? arguments[1] : true,
-    n = (0, Chunk228624.hv)("useFetchPurchases"),
-    [l, c, u, d, f, _] = (0, Chunk399606.Wu)([Chunk1870.Z], () => [Chunk1870.Z.isFetching, Chunk1870.Z.isClaiming, Chunk1870.Z.fetchError, Chunk1870.Z.claimError, Chunk1870.Z.purchases, Chunk1870.Z.hasPreviouslyFetched]),
-    p = (0, Chunk73800.useRef)(Chunk1870.Z.hasPreviouslyFetched);
+    [t, n, i, l, c, u] = (0, Chunk399606.Wu)([Chunk1870.Z], () => [Chunk1870.Z.isFetching, Chunk1870.Z.isClaiming, Chunk1870.Z.fetchError, Chunk1870.Z.claimError, Chunk1870.Z.purchases, Chunk1870.Z.hasPreviouslyFetched]),
+    d = (0, Chunk73800.useRef)(Chunk1870.Z.hasPreviouslyFetched);
   (0, Chunk73800.useEffect)(() => {
-    p.current = _
-  }, [_]);
-  let h = (0, Chunk73800.useRef)(Chunk1870.Z.fetchError);
+    d.current = u
+  }, [u]);
+  let f = (0, Chunk73800.useRef)(Chunk1870.Z.fetchError);
   return (0, Chunk73800.useEffect)(() => {
-    h.current = u
-  }, [u]), (0, Chunk73800.useEffect)(() => {
-    true === module && p.current && null == h.current || (0, Chunk335131.qg)({
-      variantsReturnStyle: require,
-      location: exports
+    f.current = Chunk311570
+  }, [Chunk311570]), (0, Chunk73800.useEffect)(() => {
+    true === module && d.current && null == f.current || (0, Chunk335131.qg)({
+      variantsReturnStyle: _
     })
-  }, [exports, module, require]), {
-    isClaiming: c,
-    fetchPurchasesError: u,
-    claimError: d,
-    isFetching: Chunk267097,
-    purchases: f,
-    hasPreviouslyFetched: _
+  }, [module]), {
+    isClaiming: require,
+    fetchPurchasesError: Chunk311570,
+    claimError: Chunk267097,
+    isFetching: exports,
+    purchases: c,
+    hasPreviouslyFetched: u
   }
 }
 
-function p(e, t) {
+function h(e, t) {
   let n = null == e ? true : e.paymentGateway,
     {
       isFetching: r,
@@ -98,8 +96,8 @@ function p(e, t) {
       claimError: u,
       isFetching: d,
       purchases: f,
-      hasPreviouslyFetched: p
-    } = _(null == e ? true : e.stalePurchasesOK, null == e ? true : e.location);
+      hasPreviouslyFetched: _
+    } = p(null == e ? true : e.stalePurchasesOK);
   return {
     isFetching: r || d,
     isFetchingCategories: r,
@@ -111,9 +109,9 @@ function p(e, t) {
     fetchPurchasesError: c,
     claimError: u,
     refreshCategories: a,
-    hasPreviouslyFetched: p
+    hasPreviouslyFetched: _
   }
 }
-let h = e => p(f(u({}, null != e ? e : {}), {
+let m = e => h(f(u({}, null != e ? e : {}), {
   stalePurchasesOK: true
 }))

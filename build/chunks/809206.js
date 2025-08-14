@@ -5,20 +5,21 @@ require.d(exports, {
   FD: () => h,
   I5: () => O,
   Mn: () => b,
-  OU: () => L,
-  P6: () => w,
+  NI: () => C,
+  OU: () => x,
+  P6: () => D,
   Rx: () => S,
   S2: () => E,
   V3: () => y,
   W0: () => v,
-  W3: () => P,
+  W3: () => w,
   Zy: () => m,
-  b9: () => C,
+  b9: () => R,
   cV: () => T,
   e1: () => I,
-  iR: () => D,
+  iR: () => L,
   s4: () => N,
-  si: () => R,
+  si: () => P,
   ss: () => g,
   xn: () => A
 });
@@ -233,37 +234,44 @@ function N(e) {
   })
 }
 
-function C() {
-  Chunk570140.Z.dispatch({
-    type: "USER_SETTINGS_CLEAR_ERRORS"
+function C(e) {
+  a.Z.dispatch({
+    type: "USER_SETTINGS_ACCOUNT_SET_PENDING_DISPLAY_NAME_STYLES",
+    displayNameStyles: e
   })
 }
 
 function R() {
   Chunk570140.Z.dispatch({
-    type: "USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES"
+    type: "USER_SETTINGS_CLEAR_ERRORS"
   })
 }
 
 function P() {
   Chunk570140.Z.dispatch({
-    type: "USER_SETTINGS_RESET_ALL_PENDING"
+    type: "USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES"
   })
 }
 
 function w() {
   Chunk570140.Z.dispatch({
-    type: "USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM"
+    type: "USER_SETTINGS_RESET_ALL_PENDING"
   })
 }
 
 function D() {
   Chunk570140.Z.dispatch({
-    type: "USER_SETTINGS_ACCOUNT_RESET_PENDING_LEGACY_USERNAME_DISABLED"
+    type: "USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM"
   })
 }
 
 function L() {
+  Chunk570140.Z.dispatch({
+    type: "USER_SETTINGS_ACCOUNT_RESET_PENDING_LEGACY_USERNAME_DISABLED"
+  })
+}
+
+function x() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES"
   })

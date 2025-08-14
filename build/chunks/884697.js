@@ -237,20 +237,18 @@ let E = e => (null == e ? true : e.premiumType) != null,
     }
     return e
   },
-  J = e => {
+  J = () => {
     let {
-      categories: t,
-      purchases: n,
-      isFetchingCategories: r,
-      isFetchingPurchases: o
-    } = (0, l.ZP)({
-      location: e
-    }), a = w(t, i.Z.NAMEPLATE), s = P(n, i.Z.NAMEPLATE), c = new Set(s.map(e => e.id));
+      categories: e,
+      purchases: t,
+      isFetchingCategories: n,
+      isFetchingPurchases: r
+    } = (0, Chunk223143.ZP)(), o = w(module, Chunk979554.Z.NAMEPLATE), a = P(exports, Chunk979554.Z.NAMEPLATE), s = new Set(Chunk358085.map(e => e.id));
     return {
-      available: a.filter(e => !c.has(e.id)),
-      purchased: s,
-      isFetchingCategories: r,
-      isFetchingPurchases: o
+      available: Chunk134432.filter(e => !s.has(e.id)),
+      purchased: Chunk358085,
+      isFetchingCategories: require,
+      isFetchingPurchases: Chunk392711
     }
   },
   $ = e => {

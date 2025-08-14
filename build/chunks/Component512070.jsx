@@ -24,28 +24,28 @@ function m(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: o,
-    children: [(0, r.jsxs)(i.X6, {
+    children: [(0, r.jsxs)(a.X6, {
       variant: "heading-md/semibold",
       className: p.selectorHeading,
-      children: [u.intl.string(d.default.nP0ngY), (0, r.jsx)(a.SrA, {
+      children: [u.intl.string(d.default.nP0ngY), (0, r.jsx)(i.SrA, {
         size: "xs",
-        color: a.TVs.colors.TEXT_DEFAULT
+        color: i.TVs.colors.TEXT_DEFAULT
       })]
-    }), (0, r.jsx)(i.Kq, {
+    }), (0, r.jsx)(a.Kq, {
       direction: "horizontal",
       align: "center",
       wrap: true,
       children: c.P$.map(e => {
         let o = s.y[e],
           c = e === t;
-        return (0, r.jsx)(a.ua7, {
+        return (0, r.jsx)(i.ua7, {
           text: u.intl.string(o.name),
           children: t => {
             let {
               onMouseEnter: d,
               onMouseLeave: p
             } = t;
-            return (0, r.jsx)(a.P3F, {
+            return (0, r.jsx)(i.P3F, {
               className: l()(f.fontButton, {
                 [f.selected]: c
               }),
@@ -53,7 +53,7 @@ function m(e) {
               "aria-label": u.intl.string(o.name),
               onMouseEnter: d,
               onMouseLeave: p,
-              children: (0, r.jsx)(i.xv, {
+              children: (0, r.jsx)(a.xv, {
                 variant: "text-lg/semibold",
                 color: c ? "text-primary" : "text-default",
                 className: l()(f.fontText, s.y[e].className),

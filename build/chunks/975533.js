@@ -39,7 +39,7 @@ function L(e, t, n) {
   var r;
   let i = performance.now(),
     l = null != (r = n.context) ? r : Z.Yn.DEFAULT;
-  if (true !== n.latched && e) n.pressedTime = i;
+  if (e) n.pressedTime = i;
   else if (null != n.pressedTime && (0, E.f)({
       location: "doPTT",
       autoTrackExposure: false
@@ -48,7 +48,7 @@ function L(e, t, n) {
       {
         pttLatchingEnabled: t = false
       } = v.Z.getModeOptions(l);
-    if (true === t && i < n.pressedTime + e) {
+    if (!n.latched && true === t && i < n.pressedTime + e) {
       n.latched = true;
       return
     }

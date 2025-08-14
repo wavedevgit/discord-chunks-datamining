@@ -38,12 +38,12 @@ function h(e) {
   }, [h]);
   return (0, r.jsxs)("div", {
     className: j,
-    children: [(0, r.jsxs)(i.X6, {
+    children: [(0, r.jsxs)(a.X6, {
       variant: "heading-md/semibold",
       className: g.selectorHeading,
-      children: [f.intl.string(p.default["JOpi7+"]), (0, r.jsx)(a.SrA, {
+      children: [f.intl.string(p.default["JOpi7+"]), (0, r.jsx)(i.SrA, {
         size: "xs",
-        color: a.TVs.colors.TEXT_DEFAULT
+        color: i.TVs.colors.TEXT_DEFAULT
       })]
     }), (0, r.jsx)(s.default, {
       className: m.colorPicker,

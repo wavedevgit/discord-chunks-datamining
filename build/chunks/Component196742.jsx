@@ -5,6 +5,7 @@ require.d(exports, {
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
+  Chunk311570 = require("./311570.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk809206 = require("./809206.js"),
@@ -13,7 +14,6 @@ var Chunk255367 = require("./255367.js"),
   Chunk1585 = require("./1585.jsx"),
   Chunk335131 = require("./335131.js"),
   Chunk1870 = require("./1870.js"),
-  Chunk228624 = require("./228624.js"),
   Chunk164946 = require("./164946.js"),
   Chunk25990 = require("./25990.js"),
   Chunk594174 = require("./594174.js"),
@@ -46,19 +46,17 @@ function C(e) {
       }
       return c
     }(e, ["analyticsLocations"]);
-  let z = (0, o.e7)([y.default], () => y.default.getCurrentUser()),
-    E = (0, s.ZP)(),
+  let S = (0, a.e7)([y.default], () => y.default.getCurrentUser()),
+    E = (0, l.ZP)(),
     {
-      analyticsLocations: D
-    } = (0, l.ZP)(C),
-    S = (0, o.e7)([j.Z], () => j.Z.isRedeemingPrize),
-    M = (0, o.e7)([u.Z], () => u.Z.isFetching),
-    _ = (0, p.hv)("ClickerGameRedeemPrizeModal");
+      analyticsLocations: z
+    } = (0, d.ZP)(C),
+    D = (0, a.e7)([j.Z], () => j.Z.isRedeemingPrize),
+    _ = (0, a.e7)([p.Z], () => p.Z.isFetching);
   return (0, c.useEffect)(() => {
-    null != z && (async () => {
-      await (0, O.YM)(z), (0, f.qg)({
-        variantsReturnStyle: _,
-        location: "ClickerGameRedeemPrizeModal"
+    null != S && (async () => {
+      await (0, O.YM)(S), (0, u.qg)({
+        variantsReturnStyle: o.v.VARIANTS_GROUP
       })
     })()
   }, []), (0, r.jsxs)(i.Y0X, (t = function(e) {
@@ -81,22 +79,22 @@ function C(e) {
   }({}, Z), n = n = {
     parentComponent: "ClickerGameRedeemPrizeModal",
     children: [(0, r.jsx)("img", {
-      className: P.decorationBackground,
-      src: "light" === E ? k : v,
+      className: v.decorationBackground,
+      src: "light" === E ? k : P,
       alt: ""
     }), (0, r.jsxs)(i.hzk, {
-      className: P.content,
+      className: v.content,
       children: [(0, r.jsx)("img", {
-        className: P.decoration,
+        className: v.decoration,
         src: w.Z,
         alt: ""
       }), (0, r.jsx)(i.X6q, {
-        className: P.header,
+        className: v.header,
         variant: "heading-md/bold",
-        children: x.intl.string(h.default.B0jZ3t)
+        children: x.intl.string(m.default.B0jZ3t)
       }), (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
-        children: x.intl.string(h.default.aexiND)
+        children: x.intl.string(m.default.aexiND)
       })]
     }), (0, r.jsx)(i.mzw, {
       children: (0, r.jsxs)(i.hE2, {
@@ -105,17 +103,17 @@ function C(e) {
           variant: "primary",
           text: x.intl.string(x.t.BVcYCw),
           onClick: () => {
-            Z.onClose(), (0, d.ps)({
-              initialSelectedDecorationId: m.MH,
-              analyticsLocations: D,
+            Z.onClose(), (0, f.ps)({
+              initialSelectedDecorationId: h.MH,
+              analyticsLocations: z,
               onClose: () => {
                 let e = g.Z.getAllPending(),
                   t = (0, b.ED)(e);
-                (0, a.Mn)(t), (0, a.si)()
+                (0, s.Mn)(t), (0, s.si)()
               }
             })
           },
-          loading: S || M
+          loading: D || _
         }), (0, r.jsx)(i.zxk, {
           variant: "secondary",
           text: x.intl.string(x.t["ETE/oK"]),

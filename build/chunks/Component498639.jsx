@@ -7,6 +7,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk664751 = require("./664751.js"),
   Chunk772848 = require("./772848.js"),
+  Chunk311570 = require("./311570.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -15,7 +16,6 @@ var Chunk255367 = require("./255367.js"),
   Chunk72924 = require("./72924.jsx"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk228624 = require("./228624.js"),
   Chunk883904 = require("./883904.js"),
   Chunk678558 = require("./678558.jsx"),
   Chunk730647 = require("./730647.jsx"),
@@ -114,8 +114,7 @@ let k = function() {
     [er, es] = Chunk73800.useState(Chunk981631.lds),
     [ea, el] = Chunk73800.useState(""),
     [eo, ec] = Chunk73800.useState(Chunk981631.lds),
-    [ed, eu] = Chunk73800.useState(Chunk981631.lds),
-    em = (0, Chunk228624.hv)("PaymentFlowModalTestPage");
+    [ed, eu] = Chunk73800.useState(Chunk981631.lds);
   return (0, Chunk255367.jsx)(Chunk906732.Gt, {
     value: Y,
     children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
@@ -227,7 +226,7 @@ let k = function() {
                 onMouseEnter: t,
                 onMouseLeave: n
               } = e;
-              return (0, i.jsx)(c.zxk, {
+              return (0, i.jsx)(d.zxk, {
                 variant: "primary",
                 text: "Open Link",
                 disabled: U.length < 1,
@@ -283,7 +282,7 @@ let k = function() {
                 onMouseEnter: t,
                 onMouseLeave: n
               } = e;
-              return (0, i.jsx)(c.zxk, {
+              return (0, i.jsx)(d.zxk, {
                 variant: "primary",
                 text: "Open Link",
                 onMouseLeave: n,
@@ -442,7 +441,7 @@ let k = function() {
             onClick: () => (0, Chunk333867.Z)({
               skuId: ed,
               analyticsLocations: Y,
-              variantsReturnStyle: em
+              variantsReturnStyle: Chunk311570.v.VARIANTS_GROUP
             })
           })]
         })]

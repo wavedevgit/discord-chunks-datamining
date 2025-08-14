@@ -6,9 +6,9 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk809206 = require("./809206.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk594928 = require("./594928.js"),
-  Chunk922626 = require("./922626.js"),
   Chunk829716 = require("./829716.jsx"),
   Chunk626135 = require("./626135.js"),
   Chunk74538 = require("./74538.js"),
@@ -22,20 +22,17 @@ function b(e) {
   let {
     user: t,
     className: n
-  } = e, b = l.J.useExperiment({
+  } = e, b = o.J.useExperiment({
     location: "DisplayNameStylesSection"
   }).enabled, x = u.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: _
-  } = (0, a.ZP)(), j = null != t.displayNameStyles, {
-    handleApplyDisplayNameStyles: E,
-    isApplying: C
-  } = (0, o.Z)({}), O = (0, r.useCallback)(() => {
+  } = (0, l.ZP)(), j = null != t.displayNameStyles, E = (0, r.useCallback)(() => {
     d.default.track(p.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, c.I)({
       analyticsLocations: _
     })
-  }, [_]), v = (0, r.useCallback)(() => {
-    E(null), d.default.track(p.rMx.DISPLAY_NAME_STYLES_REMOVED)
-  }, [E]);
+  }, [_]), C = (0, r.useCallback)(() => {
+    (0, a.NI)(null), d.default.track(p.rMx.DISPLAY_NAME_STYLES_REMOVED)
+  }, []);
   return b || j ? (0, i.jsx)(m.Z, {
     title: g.intl.string(h.default["86GtGB"]),
     className: n,
@@ -46,13 +43,12 @@ function b(e) {
         variant: "primary",
         size: "sm",
         text: g.intl.string(h.default.vJqrIi),
-        onClick: O
+        onClick: E
       }), j && (0, i.jsx)(s.zxk, {
         variant: "secondary",
         size: "sm",
         text: g.intl.string(h.default.ymq8WV),
-        onClick: v,
-        loading: C
+        onClick: C
       })]
     })
   }) : null

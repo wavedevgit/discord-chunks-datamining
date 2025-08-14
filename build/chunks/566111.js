@@ -8,24 +8,22 @@ var Chunk442837 = require("./442837.js"),
   Chunk238359 = require("./238359.js"),
   Chunk223143 = require("./223143.js");
 
-function s(e) {
-  var t;
+function s() {
+  var e;
   let {
-    isFetching: r,
-    fetchCategoriesError: s,
-    fetchPurchasesError: c,
-    categories: a,
-    purchases: u
-  } = (0, o.ZP)({
-    location: e
-  });
-  (0, l.D)();
-  let [d, f, p] = (0, n.Wu)([i.Z], () => [i.Z.isFetchingAll, i.Z.fetchError, i.Z.profileEffects]);
+    isFetching: t,
+    fetchCategoriesError: r,
+    fetchPurchasesError: s,
+    categories: c,
+    purchases: a
+  } = (0, Chunk223143.ZP)();
+  (0, Chunk238359.D)();
+  let [u, d, f] = (0, Chunk442837.Wu)([Chunk25251.Z], () => [Chunk25251.Z.isFetchingAll, Chunk25251.Z.fetchError, Chunk25251.Z.profileEffects]);
   return {
-    isFetching: r || d,
-    combinedError: null != (t = null != s ? s : c) ? t : f,
-    profileEffects: p,
-    categories: a,
-    purchases: u
+    isFetching: exports || u,
+    combinedError: null != (e = null != require ? require : s) ? module : d,
+    profileEffects: f,
+    categories: c,
+    purchases: a
   }
 }

@@ -79,7 +79,6 @@ let D = e => {
       categories: U,
       refreshCategories: z
     } = (0, S.ZP)({
-      location: "CollectiblesShop.web",
       logPerf: true
     }, {
       sessionId: a,

@@ -150,8 +150,7 @@ function T(e) {
         sku_id: f,
         location_stack: A
       }), (0, s.fw)(), (0, l.p)(), null == T || T(P), P && (0, c.qg)({
-        variantsReturnStyle: R,
-        location: "openCollectiblesPaymentModal"
+        variantsReturnStyle: R
       })
     },
     onCloseRequest: () => {
