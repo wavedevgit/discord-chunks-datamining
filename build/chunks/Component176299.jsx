@@ -86,7 +86,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981028 = require("./981028.js");
 
-function eA(e) {
+function eZ(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -104,7 +104,7 @@ function eA(e) {
   }
   return e
 }
-let eZ = (0, Chunk608787.Un)({
+let eA = (0, Chunk608787.Un)({
     createPromise: () => Promise.resolve().then(require.bind(require, 267161)),
     webpackId: 267161
   }),
@@ -253,9 +253,9 @@ let eZ = (0, Chunk608787.Un)({
       guildId: module
     }, module) : (0, Chunk255367.jsx)(Chunk663701.Z, {})
   }),
-  eB = e => (0, r.jsx)(eG, eA({}, e)),
+  eB = e => (0, r.jsx)(eG, eZ({}, e)),
   eH = () => (0, Chunk255367.jsx)(Chunk724383.Z, {}),
-  eF = e => (0, r.jsx)(ez, eA({}, e)),
+  eF = e => (0, r.jsx)(ez, eZ({}, e)),
   ez = e => {
     let {
       channelId: t,
@@ -295,15 +295,15 @@ let eZ = (0, Chunk608787.Un)({
       let {
         tab: n
       } = (0, o.parse)(t.location.search);
-      return Object.values(eT.AW).includes(n) ? (0, r.jsx)(T.Z, eA({
+      return Object.values(eT.AW).includes(n) ? (0, r.jsx)(T.Z, eZ({
         isFullScreen: e,
         tab: n
-      }, t)) : (0, r.jsx)(T.Z, eA({
+      }, t)) : (0, r.jsx)(T.Z, eZ({
         isFullScreen: e
       }, t))
     }
   },
-  eQ = e => (0, r.jsx)(v.Z, eA({}, e)),
+  eQ = e => (0, r.jsx)(v.Z, eZ({}, e)),
   eJ = () => (0, Chunk255367.jsx)(Chunk270759.Z, {}),
   e$ = () => (0, Chunk255367.jsx)(Chunk745052.Z, {}),
   e0 = () => (0, Chunk255367.jsx)(Chunk179742.Z, {}),
@@ -414,7 +414,7 @@ function e8(e) {
     location: u
   });
   let g = (0, p.e7)([C.Z], () => C.Z.isFullscreenInContext()),
-    m = (0, A.T)("ChannelSidebar"),
+    m = (0, Z.T)("ChannelSidebar"),
     E = (0, P.useAppSidebarState)(e => !e.isOpen) && m;
   i.useLayoutEffect(() => {
     if (m) {
@@ -497,7 +497,7 @@ function e8(e) {
           className: ex.guilds,
           themeOverride: n
         }), !o && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("div", (t = eA({}, j), i = i = {
+          children: [(0, r.jsx)("div", (t = eZ({}, j), i = i = {
             children: (0, r.jsx)(eV, {})
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
@@ -569,7 +569,7 @@ function e5() {
       children: (0, Chunk255367.jsxs)("div", {
         className: Chunk981028.base,
         "data-fullscreen": Chunk244317,
-        children: [!Chunk244317 && (0, Chunk255367.jsx)(eZ, {}), Chunk873546.tq ? null : (0, Chunk255367.jsx)(Chunk256638.Z, {}), (0, Chunk255367.jsxs)("div", {
+        children: [!Chunk244317 && (0, Chunk255367.jsx)(eA, {}), Chunk873546.tq ? null : (0, Chunk255367.jsx)(Chunk256638.Z, {}), (0, Chunk255367.jsxs)("div", {
           className: Chunk981028.content,
           children: [(0, Chunk255367.jsx)(Chunk626421.Z, {}), (0, Chunk255367.jsx)(e8, {
             isOnFullScreenCollectiblesShopRoute: Chunk608787,

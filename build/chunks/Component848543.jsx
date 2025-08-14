@@ -81,11 +81,11 @@ function x(e) {
   }(e, ["channel"]);
   let x = i.useRef(null),
     {
-      mute: A,
-      suppress: Z
+      mute: Z,
+      suppress: A
     } = (0, _.Z)(t),
     w = (0, o.e7)([O.Z], () => O.Z.isDeaf()),
-    L = A || Z || w,
+    L = Z || A || w,
     [R, D] = i.useState(false),
     k = t.getGuildId(),
     M = (0, y.sR)({
@@ -127,7 +127,7 @@ function x(e) {
     value: V,
     children: (0, r.jsx)(d.ua7, {
       targetElementRef: x,
-      text: A ? N.intl.string(N.t["Ox4/zc"]) : Z ? N.intl.string(N.t["+YBKYG"]) : w ? N.intl.string(N.t.X1lQlp) : N.intl.string(N.t["6EJvHh"]),
+      text: Z ? N.intl.string(N.t["Ox4/zc"]) : A ? N.intl.string(N.t["+YBKYG"]) : w ? N.intl.string(N.t.X1lQlp) : N.intl.string(N.t["6EJvHh"]),
       children: e => (0, r.jsx)(d.yRy, {
         targetElementRef: x,
         animation: d.yRy.Animation.FADE,

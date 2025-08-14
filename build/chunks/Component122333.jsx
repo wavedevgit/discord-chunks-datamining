@@ -63,15 +63,15 @@ function x(e, t) {
   }), e
 }
 
-function A() {
+function Z() {
   null != r && (0, Chunk481060.Mr3)(r)
 }
-class Z extends Chunk317770.Z {
+class A extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.subscribe("LOGOUT", A)
+    Chunk570140.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.subscribe("LOGOUT", Z)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.unsubscribe("LOGOUT", A)
+    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.unsubscribe("LOGOUT", Z)
   }
   handleConnectionOpen() {
     var e;
@@ -88,12 +88,12 @@ class Z extends Chunk317770.Z {
         Chunk390885.Z.flowStart(Chunk630724.MK.ORGANIC_MARKETING, Chunk630724.EW.NUF_STARTED)
     }
     let o = false,
-      A = Chunk914010.Z.getGuildId();
+      Z = Chunk914010.Z.getGuildId();
     if (Chunk570140 === Chunk701476.M5.INVITE_UNCLAIMED) {
-      let e = Chunk430824.Z.getGuild(A);
+      let e = Chunk430824.Z.getGuild(Z);
       null != module && (0, Chunk983736.Dc)(module) && (o = true, (0, Chunk524329.RM)(module.id))
     }
-    let Z = () => 0 === Chunk486472.Z.totalGuilds && !Chunk358085.isPlatformEmbedded,
+    let A = () => 0 === Chunk486472.Z.totalGuilds && !Chunk358085.isPlatformEmbedded,
       w = Chunk622822.bN();
     e = [{
       key: "Unified NUF Modal",
@@ -140,11 +140,11 @@ class Z extends Chunk317770.Z {
           modalKey: r
         })
       },
-      predicate: () => Z() && !Chunk188785.a
+      predicate: () => A() && !Chunk188785.a
     }, {
       key: "New User Age Gate",
       open: Chunk391650.i,
-      predicate: () => w && !Z() && !Chunk188785.a
+      predicate: () => w && !A() && !Chunk188785.a
     }, {
       key: "Claim Account Modal",
       open: e => c.j(y.isPlatformEmbedded, e),
@@ -154,7 +154,7 @@ class Z extends Chunk317770.Z {
       }
     }, {
       key: "Verification Gate with Claim Account",
-      open: e => (0, u.hk)(A, null != e ? e : true),
+      open: e => (0, u.hk)(Z, null != e ? e : true),
       predicate: () => {
         var e;
         return Chunk317770 && !(null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isClaimed()) && !Chunk188785.a
@@ -166,12 +166,12 @@ class Z extends Chunk317770.Z {
           default: e
         } = await n.e("90542").then(n.bind(n, 184782));
         return t => (0, i.jsx)(e, x(j({}, t), {
-          guildId: A
+          guildId: Z
         }))
       }, {
         onCloseCallback: e
       }),
-      predicate: () => null != A && null != Chunk995532.Z.get(A) && Chunk995532.Z.get(A) !== Chunk995532.a
+      predicate: () => null != Z && null != Chunk995532.Z.get(Z) && Chunk995532.Z.get(Z) !== Chunk995532.a
     }], t = () => {
       Chunk929809.H(), Chunk390885.Z.flowStep(Chunk630724.MK.ANY, Chunk630724.EW.NUF_COMPLETE, true)
     }, [...module].reverse().forEach(e => {
@@ -182,4 +182,4 @@ class Z extends Chunk317770.Z {
     }), exports()
   }
 }
-let w = new Z
+let w = new A

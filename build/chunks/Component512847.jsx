@@ -62,7 +62,7 @@ function x() {
   }), null
 }
 
-function A() {
+function Z() {
   return j([Chunk131951.Z, Chunk944486.Z], () => ({
     videoEnabled: Chunk131951.Z.isVideoEnabled(),
     inVoiceChannel: null != Chunk944486.Z.getVoiceChannelId()
@@ -80,7 +80,7 @@ function A() {
   }), null
 }
 
-function Z() {
+function A() {
   return j([Chunk592125.Z, Chunk19780.Z, Chunk944486.Z, Chunk258609.Z], () => {
     let e = Chunk592125.Z.getChannel(Chunk944486.Z.getVoiceChannelId()),
       t = null == module ? true : module.type,
@@ -282,6 +282,6 @@ function V() {
 
 function B() {
   return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-    children: [(0, Chunk255367.jsx)(x, {}), (0, Chunk255367.jsx)(A, {}), (0, Chunk255367.jsx)(Z, {}), (0, Chunk255367.jsx)(w, {}), (0, Chunk255367.jsx)(R, {}), (0, Chunk255367.jsx)(k, {}), (0, Chunk255367.jsx)(U, {}), (0, Chunk255367.jsx)(M, {}), (0, Chunk255367.jsx)(G, {}), (0, Chunk255367.jsx)(L, {}), (0, Chunk255367.jsx)(D, {}), (0, Chunk255367.jsx)(V, {})]
+    children: [(0, Chunk255367.jsx)(x, {}), (0, Chunk255367.jsx)(Z, {}), (0, Chunk255367.jsx)(A, {}), (0, Chunk255367.jsx)(w, {}), (0, Chunk255367.jsx)(R, {}), (0, Chunk255367.jsx)(k, {}), (0, Chunk255367.jsx)(U, {}), (0, Chunk255367.jsx)(M, {}), (0, Chunk255367.jsx)(G, {}), (0, Chunk255367.jsx)(L, {}), (0, Chunk255367.jsx)(D, {}), (0, Chunk255367.jsx)(V, {})]
   })
 }

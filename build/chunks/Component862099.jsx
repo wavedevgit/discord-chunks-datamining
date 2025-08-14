@@ -161,7 +161,7 @@ function F(e) {
   } = e, a = (0, L.cS)(n), s = null != a ? (0, x.m)(a, true) : null, u = (0, L.nE)(n), p = (0, d.KS)(u), {
     startTime: f,
     endTime: h
-  } = (0, Z.ZP)(n), {
+  } = (0, A.ZP)(n), {
     startDateTimeString: g,
     upcomingEvent: m,
     diffMinutes: b
@@ -390,7 +390,7 @@ let Q = Chunk73800.memo(function(e) {
     guild: t
   } = e, {
     showRedesignedLiveChannelNotice: n
-  } = (0, p.o)(true), r = (0, A.y)(t.id), l = (0, w.k5)(t.id), a = (0, w.Vm)(t.id), o = (0, s.e7)([O.Z], () => O.Z.getStageInstanceByChannel(null == r ? true : r.id), [r]), {
+  } = (0, p.o)(true), r = (0, Z.y)(t.id), l = (0, w.k5)(t.id), a = (0, w.Vm)(t.id), o = (0, s.e7)([O.Z], () => O.Z.getStageInstanceByChannel(null == r ? true : r.id), [r]), {
     isStageNoticeHidden: c,
     isEventNoticeHidden: u
   } = (0, s.cj)([P.Z], () => ({

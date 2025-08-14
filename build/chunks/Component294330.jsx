@@ -35,14 +35,14 @@ function T(e) {
     guild: t,
     onClick: l,
     onView: o
-  } = e, [h, g] = i.useState(false), [O, T] = i.useState(false), [P, j] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
+  } = e, [h, g] = i.useState(false), [O, T] = i.useState(false), [P, j] = i.useState(false), x = i.useRef(null), Z = i.useCallback(async () => {
     T(true);
     try {
       await l(t.id)
     } finally {
       T(false)
     }
-  }, [t.id, l]), Z = i.useCallback(e => {
+  }, [t.id, l]), A = i.useCallback(e => {
     e && !h && (g(true), null == o || o(t.id))
   }, [t.id, h, o]), w = i.useCallback(e => {
     (0, u.jW)(e, async () => {
@@ -111,13 +111,13 @@ function T(e) {
       })
     }), (0, r.jsx)(s.$, {
       innerRef: x,
-      onChange: Z,
+      onChange: A,
       active: !h,
       threshold: .55,
       children: (0, r.jsxs)(f.Z, {
         ref: x,
         className: I.card,
-        onClick: A,
+        onClick: Z,
         disabled: O,
         onContextMenu: w,
         "aria-label": v.intl.string(v.t["M9wQ+f"]),

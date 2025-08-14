@@ -32,7 +32,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk677372 = require("./677372.js");
 
-function A(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function A(e) {
   return e
 }
 
-function Z(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -130,7 +130,7 @@ let L = e => {
       }, [_, O, o, v, c]),
       C = T.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
-      children: [y && (0, r.jsx)(R, {}), (0, r.jsx)(u.Qj, Z(A({
+      children: [y && (0, r.jsx)(R, {}), (0, r.jsx)(u.Qj, A(Z({
         selected: t,
         route: C,
         icon: null != a ? a : s.EOn,
@@ -144,7 +144,7 @@ let L = e => {
       }))]
     })
   },
-  k = e => (0, r.jsx)(D, Z(A({}, e), {
+  k = e => (0, r.jsx)(D, A(Z({}, e), {
     children: (0, r.jsx)(L, {})
   })),
   M = Chunk73800.memo(function(e) {
@@ -209,7 +209,7 @@ let L = e => {
       allowOverflow: true,
       hideOnClick: false,
       "aria-label": "string" == typeof B ? B : j.intl.string(j.t.rSXaxc),
-      children: e => (0, r.jsxs)(D, Z(A(Z(A({
+      children: e => (0, r.jsxs)(D, A(Z(A(Z({
         className: null != I.entryPointClassName ? (0, O.l)(x, I.entryPointClassName) : true
       }, C), {
         icon: I.entryPointIcon
@@ -255,7 +255,7 @@ let L = e => {
       delay: 100,
       hideOnClick: false,
       "aria-label": t.title(),
-      children: e => (0, r.jsx)(D, Z(A({}, n, e), {
+      children: e => (0, r.jsx)(D, A(Z({}, n, e), {
         children: (0, r.jsx)(L, {
           color: t.badgeColor
         })
@@ -275,11 +275,11 @@ let L = e => {
         onShopButtonClick: s
       } = a,
       c = w(a, ["positionControlRef", "onShopButtonClick"]);
-    return (0, r.jsx)(_.Pk, Z(A({
+    return (0, r.jsx)(_.Pk, A(Z({
       targetElementRef: l,
       positionControlRef: o
     }, c), {
-      children: (0, r.jsx)(D, Z(A({}, n), {
+      children: (0, r.jsx)(D, A(Z({}, n), {
         listItemRef: l,
         collectibleShopTab: N.AW.ORBS,
         onClick: s
@@ -300,7 +300,7 @@ let L = e => {
       g = p ? null == f ? true : f.srcDarkHovered : null == f ? true : f.srcLightHovered,
       m = p ? null == h || null == (t = h.hovered) ? true : t.dark : null == h || null == (n = h.hovered) ? true : n.light;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(D, Z(A({}, s), {
+      children: [(0, r.jsxs)(D, A(Z({}, s), {
         onClick: () => a(P.L.TAKE_ACTION),
         listItemRef: c,
         children: [(0, r.jsx)("div", {
@@ -343,26 +343,26 @@ let L = e => {
       },
       listItemRef: l
     };
-    if (o) return (0, r.jsx)(V, Z(A({}, u), {
+    if (o) return (0, r.jsx)(V, A(Z({}, u), {
       listScrollerRef: a
     }));
     if (null != s) switch (s.type) {
       case S.k2.TOOLTIP:
-        return (0, r.jsx)(G, Z(A({}, u), {
+        return (0, r.jsx)(G, A(Z({}, u), {
           displayOptions: s
         }));
       case S.k2.COACHTIP:
-        return (0, r.jsx)(U, Z(A({}, u), {
+        return (0, r.jsx)(U, A(Z({}, u), {
           displayOptions: s
         }));
       case S.k2.BADGE:
-        return (0, r.jsx)(k, A({}, u));
+        return (0, r.jsx)(k, Z({}, u));
       case S.k2.COACHMARK:
-        return (0, r.jsx)(B, Z(A({
+        return (0, r.jsx)(B, A(Z({
           dismissContent: c
         }, u), {
           displayOptions: s
         }))
     }
-    return (0, r.jsx)(D, A({}, u))
+    return (0, r.jsx)(D, Z({}, u))
   }

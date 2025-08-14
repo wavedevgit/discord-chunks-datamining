@@ -213,10 +213,7 @@ class J extends Chunk73800.Component {
     } = this.state;
     if (Chunk780384) {
       let t = Chunk594174.default.getUser(Chunk73800.userId);
-      if (Chunk442837)
-        if (s) return Chunk388032.intl.string(Chunk388032.t.fLHIp6);
-        else return null;
-      Chunk388032.intl.formatToPlainString(Chunk388032.t.DDO4W1, {
+      return Chunk442837 ? s ? Chunk388032.intl.string(Chunk388032.t.fLHIp6) : null : Chunk388032.intl.formatToPlainString(Chunk388032.t.DDO4W1, {
         sender: Chunk51144.ZP.getName(module)
       })
     }

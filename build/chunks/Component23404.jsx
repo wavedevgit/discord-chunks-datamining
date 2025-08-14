@@ -50,7 +50,7 @@ function x(e) {
   return e
 }
 
-function A(e) {
+function Z(e) {
   var t;
   let {
     quest: n
@@ -82,12 +82,12 @@ function A(e) {
   })
 }
 
-function Z(e) {
+function A(e) {
   var t, n, l, u;
   let {
     nodeRef: _,
     quest: O
-  } = e, E = (0, d.O5)(), T = (0, o.e7)([g.Z], () => g.Z.isEnrolling(O.id), [O]), Z = (0, o.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []), [w, L] = i.useState(false), R = i.useCallback(() => L(true), []), D = i.useCallback(() => L(false), []), k = i.useCallback(e => {
+  } = e, E = (0, d.O5)(), T = (0, o.e7)([g.Z], () => g.Z.isEnrolling(O.id), [O]), A = (0, o.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []), [w, L] = i.useState(false), R = i.useCallback(() => L(true), []), D = i.useCallback(() => L(false), []), k = i.useCallback(e => {
     e.stopPropagation()
   }, []), M = i.useCallback(() => {
     (0, f.AH)(O.id, {
@@ -126,7 +126,7 @@ function Z(e) {
     questContent: m.jn.ACTIVITY_PANEL,
     sourceQuestContent: m.jn.ACTIVITY_PANEL
   });
-  return W || B || z || Z ? null : (0, r.jsxs)("div", {
+  return W || B || z || A ? null : (0, r.jsxs)("div", {
     ref: e => {
       _.current = e
     },
@@ -141,7 +141,7 @@ function Z(e) {
     onMouseLeave: D,
     children: [(0, r.jsxs)("div", {
       className: j.utils,
-      children: [H ? (0, r.jsx)(A, {
+      children: [H ? (0, r.jsx)(Z, {
         quest: O
       }) : (0, r.jsx)(y.Z, {}), (0, r.jsx)(I.r, {
         quest: O,
@@ -171,7 +171,7 @@ function Z(e) {
         }
       })]
     }), !H && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(A, {
+      children: [(0, r.jsx)(Z, {
         quest: O
       }), (0, r.jsx)("div", {
         className: j.instructions,
@@ -231,7 +231,7 @@ let w = function(e) {
     questOrQuests: e.quest,
     questContent: m.jn.ACTIVITY_PANEL,
     sourceQuestContent: m.jn.ACTIVITY_PANEL,
-    children: t => (0, r.jsx)(Z, x({
+    children: t => (0, r.jsx)(A, x({
       nodeRef: t
     }, e))
   })

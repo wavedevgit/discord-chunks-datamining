@@ -2,7 +2,7 @@
 /** chunk id: 277053, original params: e,t,n (module,exports,require) **/
 let r, i;
 require.d(exports, {
-  Z: () => Z
+  Z: () => A
 }), require("./388685.js");
 var l, Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
@@ -71,7 +71,7 @@ function x() {
   let e = C.getGuildId();
   I = v = j(C), null == v[N] && (N = module), i = null != S, r = Chunk700785.o4(C, S), T = null, y = false, E = Chunk981631.QZA.CLOSED, O.clear()
 }
-class A extends(l = Chunk442837.ZP.Store) {
+class Z extends(l = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk388610.Z, Chunk592125.Z)
   }
@@ -112,8 +112,8 @@ class A extends(l = Chunk442837.ZP.Store) {
     return P
   }
 }
-m(A, "displayName", "ChannelSettingsPermissionsStore");
-let Z = new A(Chunk570140.Z, {
+m(Z, "displayName", "ChannelSettingsPermissionsStore");
+let A = new Z(Chunk570140.Z, {
   CHANNEL_SETTINGS_SET_SECTION: function(e) {
     let {
       section: t

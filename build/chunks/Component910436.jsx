@@ -89,23 +89,23 @@ function E(e) {
     var n, i, l, g, b, y, S, T, j;
     let {
       activity: x,
-      game: A,
-      playingMembers: Z,
+      game: Z,
+      playingMembers: A,
       activityUser: w
     } = e;
     if (null == x || null == x.type) return null;
-    if (I.length > 1 && x.type === O.IIU.PLAYING && !(0, a.Z)(x) && null != A) P((0, r.jsx)(m.Z.GameSection, {
-      icon: A.getIconURL(_.Z),
-      name: A.name,
+    if (I.length > 1 && x.type === O.IIU.PLAYING && !(0, a.Z)(x) && null != Z) P((0, r.jsx)(m.Z.GameSection, {
+      icon: Z.getIconURL(_.Z),
+      name: Z.name,
       partySize: {
-        knownSize: Z.length,
+        knownSize: A.length,
         unknownSize: 0,
-        totalSize: Z.length
+        totalSize: A.length
       },
-      members: Z
+      members: A
     }, "game-".concat(null != (n = x.session_id) ? n : t, "-").concat(null != (i = x.application_id) ? i : t)));
     else if ((0, o.Z)(x)) {
-      let e = new Set(Z.map(e => e.id)),
+      let e = new Set(A.map(e => e.id)),
         t = null == (l = v.find(e => null != e)) ? true : l.channel;
       null != t && P((0, r.jsx)(m.Z.EmbeddedActivitySection, {
         activity: x,
@@ -119,7 +119,7 @@ function E(e) {
     }, "rich-presence-".concat(null != (g = x.session_id) ? g : t, "-").concat(w.id)));
     else if ((0, u.Z)(x)) {
       let e = v.length > 0 && v[0].members.length > 1,
-        n = Z.length > 1;
+        n = A.length > 1;
       P((0, r.jsx)(m.Z.TwitchSection, {
         guildId: null == N ? true : N.id,
         activity: x,
@@ -130,19 +130,19 @@ function E(e) {
       activity: x,
       isSolo: 1 === C.length,
       partySize: {
-        knownSize: Z.length,
+        knownSize: A.length,
         unknownSize: 0,
-        totalSize: Z.length
+        totalSize: A.length
       },
       getAssetImage: h.xF,
-      members: Z
+      members: A
     }, "spotify-".concat(null != (y = x.session_id) ? y : t, "-").concat(w.id))) : (null != x.assets || (0, a.Z)(x)) && x.type === O.IIU.LISTENING ? P((0, r.jsx)(m.Z.RichPresenceSection, {
       activity: x,
       getAssetImage: h.xF
     }, "rich-presence-".concat(null != (S = x.session_id) ? S : t, "-").concat(w.id))) : (0, c.Z)(x) && P((0, r.jsx)(m.Z.XboxSection, {
-      title: A.name
+      title: Z.name
     }, "xbox-".concat(null != (T = x.session_id) ? T : t)));
-    null != E && null != A && (0, d._D)(x, E) && (null == E.userStatus || !(0, d.zE)(E.userStatus, p.jn.ACTIVITY_PANEL)) && P((0, r.jsx)(f.Z, {
+    null != E && null != Z && (0, d._D)(x, E) && (null == E.userStatus || !(0, d.zE)(E.userStatus, p.jn.ACTIVITY_PANEL)) && P((0, r.jsx)(f.Z, {
       quest: E
     }, "quest-".concat(E.id, "-").concat(null != (j = x.session_id) ? j : t)))
   }), T.length > 0 ? (0, r.jsx)(m.Z.Body, {

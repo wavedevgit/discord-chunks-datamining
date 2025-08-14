@@ -479,7 +479,7 @@ class ep extends Chunk73800.PureComponent {
         channel: e,
         guild: t
       } = this.props;
-      return null != e && null != t && (Z.Z.can(el.Plq.CREATE_INSTANT_INVITE, t) || null != t.vanityURLCode) ? (0, r.jsx)(u.zx, {
+      return null != e && null != t && (A.Z.can(el.Plq.CREATE_INSTANT_INVITE, t) || null != t.vanityURLCode) ? (0, r.jsx)(u.zx, {
         "aria-label": eo.intl.string(eo.t.zJrgTE),
         look: u.zx.Looks.BLANK,
         size: u.zx.Sizes.NONE,
@@ -635,6 +635,6 @@ let ef = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
     matureAgree: L.Z.didMatureAgree,
     theme: x.Z.theme,
     locale: j.default.locale,
-    guild: null != s ? A.Z.getGuild(s.getGuildId()) : null
+    guild: null != s ? Z.Z.getGuild(s.getGuildId()) : null
   }
 })(ep)))

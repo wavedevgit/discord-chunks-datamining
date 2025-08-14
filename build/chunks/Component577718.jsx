@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 577718, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => D
+  Z: () => R
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -28,19 +28,18 @@ var Chunk255367 = require("./255367.js"),
   Chunk30513 = require("./30513.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk971606 = require("./971606.js"),
   Chunk706371 = require("./706371.js"),
   Chunk741160 = require("./741160.js"),
   Chunk829972 = require("./829972.js"),
   Chunk31932 = require("./31932.js");
 
-function w(e) {
+function A(e) {
   null != e && f.Z.open(e.id, I.pNK.BOOST_PERKS, {
     section: I.jXE.PREMIUM_GUILD_PROGRESS_BAR
   })
 }
 
-function L(e, t) {
+function w(e, t) {
   null != t && ((0, y.f2)(t, I.Eu4.TIER_1) ? f.Z.open(t.id, I.pNK.BOOST_PERKS, {
     section: I.jXE.PREMIUM_GUILD_INVITE_SPLASH
   }) : (0, u.Z)({
@@ -51,7 +50,7 @@ function L(e, t) {
   }))
 }
 
-function R(e) {
+function L(e) {
   let {
     renderPopout: t,
     renderGuildHeaderDropdownButton: n
@@ -72,7 +71,7 @@ function R(e) {
     })
   })
 }
-let D = Chunk73800.memo(function(e) {
+let R = Chunk73800.memo(function(e) {
   let {
     contentTypes: t,
     theme: n,
@@ -95,86 +94,86 @@ let D = Chunk73800.memo(function(e) {
       },
       location_stack: u
     })
-  }, D = (0, a.wj)(n) ? A : Z, [k, M] = (0, c.US)(t, C.R.GUILD_HEADER_TOOLTIPS);
+  }, R = (0, a.wj)(n) ? x : Z, [D, k] = (0, c.US)(t, C.R.GUILD_HEADER_TOOLTIPS);
   return (0, r.jsx)(r.Fragment, {
     children: (() => {
-      switch (k) {
+      switch (D) {
         case l.z.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK:
-          return (0, r.jsx)(R, {
+          return (0, r.jsx)(L, {
             renderPopout: (0, r.jsx)(m.Z, {
               guild: i,
-              markAsDismissed: M
+              markAsDismissed: k
             }),
             renderGuildHeaderDropdownButton: o
           });
         case l.z.GUILD_POWERUP_PERKS_COACHMARK:
-          return (0, r.jsx)(R, {
+          return (0, r.jsx)(L, {
             renderPopout: (0, r.jsx)(b.$h, {
               guildId: i.id,
-              markAsDismissed: M
+              markAsDismissed: k
             }),
             renderGuildHeaderDropdownButton: o
           });
         case l.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK:
-          return (0, r.jsx)(R, {
+          return (0, r.jsx)(L, {
             renderPopout: e => (0, r.jsx)(_.Z, {
               guildId: i.id,
-              markAsDismissed: M,
+              markAsDismissed: k,
               targetElementRef: e
             }),
             renderGuildHeaderDropdownButton: o
           });
         case l.z.GUILD_HEADER_PREMIUM_GUILD_PROGRESS:
-          return (0, r.jsx)(R, {
+          return (0, r.jsx)(L, {
             renderPopout: (0, r.jsx)(O.ZP, {
               onComponentMount: f,
               header: T.intl.string(T.t.nxtaFx),
               asset: (0, r.jsx)("img", {
                 alt: "",
-                src: D,
-                className: j.fullWidthImage
+                src: R,
+                className: P.fullWidthImage
               }),
               content: T.intl.format(T.t.ujItEh, {}),
               buttonCTA: T.intl.string(T.t.UzVPra),
               secondaryButtonCTA: T.intl.string(T.t["KkK/aG"]),
-              onSecondaryClick: () => w(),
-              onClick: () => w(i),
-              markAsDismissed: M
+              onSecondaryClick: () => A(),
+              onClick: () => A(i),
+              markAsDismissed: k
             }),
             renderGuildHeaderDropdownButton: o
           });
         case l.z.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK:
-          return (0, r.jsx)(R, {
+          return (0, r.jsx)(L, {
             renderPopout: (0, r.jsx)(O.ZP, {
               onComponentMount: f,
               header: T.intl.string(T.t.KAsfPT),
               asset: (0, r.jsx)("img", {
                 alt: "",
-                src: D,
-                className: j.fullWidthImage
+                src: R,
+                className: P.fullWidthImage
               }),
               content: T.intl.format(T.t.zK1hpq, {}),
               buttonCTA: T.intl.string(T.t.UzVPra),
               secondaryButtonCTA: T.intl.string(T.t["KkK/aG"]),
-              onSecondaryClick: () => w(),
-              onClick: () => w(i),
-              markAsDismissed: M
+              onSecondaryClick: () => A(),
+              onClick: () => A(i),
+              markAsDismissed: k
             }),
             renderGuildHeaderDropdownButton: o
           });
         case l.z.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL:
-          return (0, r.jsx)(R, {
+          return (0, r.jsx)(L, {
             renderPopout: (0, r.jsx)(d.Z, {
               guildId: i.id,
-              markAsDismissed: M
+              markAsDismissed: k
             }),
             renderGuildHeaderDropdownButton: o
           });
         case l.z.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL:
-          return (0, r.jsx)(R, {
+          return (0, r.jsx)(L, {
             renderPopout: (0, r.jsx)(v.Z, {
               guild: i,
-              markAsDismissed: M
+              markAsDismissed: k
             }),
             renderGuildHeaderDropdownButton: o
           });
@@ -183,54 +182,42 @@ let D = Chunk73800.memo(function(e) {
               boostCount: (0, y.KK)(i, I.Eu4.TIER_1)
             }),
             t = (0, y.f2)(i, I.Eu4.TIER_1) ? T.intl.string(T.t.rOFcBg) : T.intl.string(T.t.hvVgAQ);
-          return (0, r.jsx)(R, {
+          return (0, r.jsx)(L, {
             renderPopout: (0, r.jsx)(O.ZP, {
               onComponentMount: S,
               header: T.intl.string(T.t["36wK8/"]),
               asset: (0, r.jsx)("img", {
                 alt: "",
-                src: x,
-                className: j.fullWidthImage
+                src: j,
+                className: P.fullWidthImage
               }),
               content: e,
               buttonCTA: t,
               secondaryButtonCTA: T.intl.string(T.t.hBIHLS),
-              onSecondaryClick: () => L(u),
-              onClick: () => L(u, i),
-              markAsDismissed: M
+              onSecondaryClick: () => w(u),
+              onClick: () => w(u, i),
+              markAsDismissed: k
             }),
             renderGuildHeaderDropdownButton: o
           });
         case l.z.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP:
-          return (0, r.jsx)(R, {
+          return (0, r.jsx)(L, {
             renderPopout: (0, r.jsx)(h.Z, {
-              markAsDismissed: M
-            }),
-            renderGuildHeaderDropdownButton: o
-          });
-        case l.z.GUILD_HEADER_ACTIVE_THREADS_NOTICE:
-          return (0, r.jsx)(R, {
-            renderPopout: (0, r.jsx)(O.ZP, {
-              className: P.tooltipOverrideColor,
-              header: T.intl.string(T.t.hLUL3t),
-              content: T.intl.string(T.t.ahWaPT),
-              buttonCTA: T.intl.string(T.t["NX+WJC"]),
-              onClick: () => M(C.L.UNKNOWN),
-              markAsDismissed: M
+              markAsDismissed: k
             }),
             renderGuildHeaderDropdownButton: o
           });
         case l.z.MEDIA_CHANNEL_UPSELL:
           return (0, r.jsx)(g.Z, {
             guildId: i.id,
-            markAsDismissed: M,
+            markAsDismissed: k,
             renderTargetElement: o
           });
         case l.z.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL:
-          return (0, r.jsx)(R, {
+          return (0, r.jsx)(L, {
             renderPopout: (0, r.jsx)(p.Z, {
               guildId: i.id,
-              markAsDismissed: M
+              markAsDismissed: k
             }),
             renderGuildHeaderDropdownButton: o
           });
