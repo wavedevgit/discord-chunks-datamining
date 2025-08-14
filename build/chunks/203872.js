@@ -24,7 +24,7 @@ let c = {
     [Chunk522942.m.GLOW]: 2.5,
     [Chunk522942.m.NEON]: 3,
     [Chunk522942.m.TOON]: 3,
-    [Chunk522942.m.POP]: 2.5
+    [Chunk522942.m.POP]: 3
   };
 
 function d(e) {
