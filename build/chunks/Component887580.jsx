@@ -79,7 +79,7 @@ function T(e) {
     return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
   });
   if (null == n || null == S) return null;
-  let w = (0, _.a)(S.variants).find(e => e.value === u),
+  let w = (0, _.a)(S).find(e => e.value === u),
     D = +(null != w),
     L = null != A && null != w && A.variantId === w.value,
     x = () => {

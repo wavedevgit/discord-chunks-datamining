@@ -138,7 +138,7 @@ function S(e) {
     children: [(0, i.jsxs)(c.hjN, {
       children: [A, (0, i.jsx)("div", {
         children: (0, i.jsx)(c.xJW, {
-          title: "Bucket Override",
+          title: t.system === u.I.LEGACY ? "Bucket Override" : "Variant Override",
           children: (0, i.jsx)(m.y, {
             experiment: t,
             experimentId: n,

@@ -20,8 +20,8 @@ var Chunk120356 = require("./120356.js"),
 function h() {
   var e, t, n, r, a;
   let h = window.GLOBAL_ENV.RELEASE_CHANNEL,
-    f = "431634",
-    b = "c1962fcb3b8eb31d156ccfd04958f608ef09d68e".substring(0, 7),
+    f = "431652",
+    b = "c980a81eb1351f0662a01dbf3ad4fbebcd2020ef".substring(0, 7),
     x = null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.remoteApp.getVersion(),
     _ = null === Chunk579806.Z || true === Chunk579806.Z || null == (e = (t = Chunk579806.Z.remoteApp).getBuildNumber) ? true : module.call(exports),
     j = null === Chunk579806.Z || true === Chunk579806.Z || null == (n = (r = Chunk579806.Z.remoteApp).getAppArch) ? true : require.call(Chunk120356),
