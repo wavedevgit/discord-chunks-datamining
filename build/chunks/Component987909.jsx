@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   Z: () => C
-}), require("./388685.js");
+});
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk904245 = require("./904245.js"),
   Chunk541716 = require("./541716.js"),
   Chunk419922 = require("./419922.jsx"),
@@ -121,15 +121,15 @@ function N(e) {
     stickers: u,
     event: d,
     eventProperties: f
-  } = e, [_, p] = i.useState(false), h = i.useMemo(() => T({
+  } = e, _ = i.useMemo(() => T({
     assets: u,
     currentUser: t,
     message: o
-  }), [u, t, o]), g = i.useMemo(() => T({
+  }), [u, t, o]), p = i.useMemo(() => T({
     assets: s,
     currentUser: t,
     message: o
-  }), [s, t, o]), b = i.useCallback(async () => {
+  }), [s, t, o]), h = i.useCallback(async () => {
     let {
       valid: e
     } = await (0, m.v)({
@@ -140,27 +140,22 @@ function N(e) {
     e && (S({
       channel: n,
       message: o,
-      sticker: h
+      sticker: _
     }), A({
-      sticker: h,
+      sticker: _,
       event: d,
       eventProperties: f
     }))
-  }, [n, o, h, d, f]);
-  return (0, r.jsxs)(a.zx, {
-    "data-migration-pending": true,
-    className: E.CTAMessageButtonOuter,
-    innerClassName: E.CTAMessageButton,
-    color: a.Tt.PRIMARY,
-    onMouseEnter: () => p(true),
-    onMouseLeave: () => p(false),
-    onClick: b,
-    children: [(0, r.jsx)(c.Z, {
-      className: E.CTAMessageSticker,
-      isInteracting: _,
-      sticker: h,
-      size: 28
-    }), g]
+  }, [n, o, _, d, f]);
+  return (0, r.jsx)(a.zx, {
+    icon: {
+      type: "sticker",
+      asset: _,
+      component: c.Z
+    },
+    text: p,
+    onClick: h,
+    variant: "secondary"
   })
 }
 

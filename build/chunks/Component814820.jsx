@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   f: () => y
-}), require("./388685.js");
+});
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk541716 = require("./541716.js"),
   Chunk419922 = require("./419922.jsx"),
   Chunk665906 = require("./665906.js"),
@@ -24,7 +24,7 @@ let b = e => {
     let {
       channel: t,
       message: n
-    } = e, [o, c] = i.useState(false), u = (0, h.y6)(n.id), d = i.useCallback(() => {
+    } = e, o = (0, h.y6)(n.id), c = i.useCallback(() => {
       (0, p.v)({
         type: s.Ie.FORM,
         content: "",
@@ -33,25 +33,20 @@ let b = e => {
         let {
           valid: r
         } = e;
-        r && (0, h.TZ)(t, n, u.id)
+        r && (0, h.TZ)(t, n, o.id)
       })
-    }, [t, n, u]);
+    }, [t, n, o]);
     return (0, r.jsx)("div", {
       className: E.welcomeCTA,
-      children: (0, r.jsxs)(a.zx, {
-        "data-migration-pending": true,
-        className: E.welcomeCTAButtonOuter,
-        innerClassName: E.welcomeCTAButton,
-        color: a.Tt.PRIMARY,
-        onMouseEnter: () => c(true),
-        onMouseLeave: () => c(false),
-        onClick: d,
-        children: [(0, r.jsx)(l.Z, {
-          className: E.welcomeCTASticker,
-          isInteracting: o,
-          sticker: u,
-          size: 28
-        }), g.intl.string(g.t["7Tj6HR"])]
+      children: (0, r.jsx)(a.zx, {
+        icon: {
+          type: "sticker",
+          asset: o,
+          component: l.Z
+        },
+        text: g.intl.string(g.t["7Tj6HR"]),
+        onClick: c,
+        variant: "secondary"
       })
     })
   },
