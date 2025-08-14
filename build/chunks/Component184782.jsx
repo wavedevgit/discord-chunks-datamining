@@ -1,7 +1,7 @@
 /** Chunk was on 90542 **/
-/** chunk id: 184782, original params: e,l,n (module,exports,require) **/
+/** chunk id: 184782, original params: e,n,a (module,exports,require) **/
 require.d(exports, {
-  default: () => T
+  default: () => w
 }), require("./953529.js"), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -29,161 +29,161 @@ var Chunk255367 = require("./255367.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk557401 = require("./557401.js");
-let L = e => {
-    var l;
+let T = e => {
+    var n;
     let {
-      channelData: n,
-      onClose: i,
-      trackOptionClick: o
-    } = e, d = (0, s.e7)([N.Z], () => N.Z.getChannel(n.channel_id)), m = (0, s.e7)([C.Z], () => null != d && C.Z.can(I.Pl.VIEW_CHANNEL, d)), j = (0, s.e7)([u.ZP], () => null != n.emoji_id ? u.ZP.getCustomEmojiById(n.emoji_id) : null, [n.emoji_id]), x = null != n.emoji_name ? h.ZP.getByName(h.ZP.convertSurrogateToName(n.emoji_name, false)) : null, _ = null != (l = (0, r.KS)(d)) ? l : t.VL1;
-    return null != d && m ? (0, a.jsxs)(t.P3F, {
-      className: P.optionContainer,
+      channelData: a,
+      onClose: l,
+      trackOptionClick: s
+    } = e, d = (0, o.e7)([x.Z], () => x.Z.getChannel(a.channel_id)), m = (0, o.e7)([C.Z], () => null != d && C.Z.can(I.Pl.VIEW_CHANNEL, d)), h = (0, o.e7)([u.ZP], () => null != a.emoji_id ? u.ZP.getCustomEmojiById(a.emoji_id) : null, [a.emoji_id]), p = null != a.emoji_name ? _.ZP.getByName(_.ZP.convertSurrogateToName(a.emoji_name, false)) : null, N = null != (n = (0, r.KS)(d)) ? n : t.VL1;
+    return null != d && m ? (0, i.jsxs)(t.P3F, {
+      className: S.optionContainer,
       onClick: () => {
-        o(), i(), (0, p.XU)(d.guild_id, d.id)
+        s(), l(), (0, j.XU)(d.guild_id, d.id)
       },
-      children: [null != j || null != x ? (0, a.jsx)(c.Z, {
-        emojiName: null != n.emoji_id ? null == j ? true : j.name : n.emoji_name,
-        animated: null != j && j.animated,
-        emojiId: null == j ? true : j.id,
+      children: [null != h || null != p ? (0, i.jsx)(c.Z, {
+        emojiName: null != a.emoji_id ? null == h ? true : h.name : a.emoji_name,
+        animated: null != h && h.animated,
+        emojiId: null == h ? true : h.id,
         autoplay: true,
-        className: P.optionEmoji
-      }) : (0, a.jsx)(_, {
-        className: P.channelIcon
-      }), (0, a.jsxs)("div", {
-        className: P.optionTextContainer,
-        children: [(0, a.jsx)(t.Text, {
+        className: S.optionEmoji
+      }) : (0, i.jsx)(N, {
+        className: S.channelIcon
+      }), (0, i.jsxs)("div", {
+        className: S.optionTextContainer,
+        children: [(0, i.jsx)(t.Text, {
           variant: "text-md/normal",
-          className: P.channelDescription,
-          children: n.description
-        }), (0, a.jsxs)(t.Text, {
+          className: S.channelDescription,
+          children: a.description
+        }), (0, i.jsxs)(t.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: [(0, a.jsx)(_, {
-            className: P.channelTitleIcon,
+          children: [(0, i.jsx)(N, {
+            className: S.channelTitleIcon,
             size: "xxs",
             color: "currentColor"
-          }), (0, a.jsx)("span", {
+          }), (0, i.jsx)("span", {
             children: d.name
           })]
         })]
-      }), (0, a.jsx)(g.Z, {
+      }), (0, i.jsx)(g.Z, {
         direction: g.Z.Directions.RIGHT,
-        className: P.optionArrow
+        className: S.optionArrow
       })]
     }) : null
   },
-  T = e => {
-    var l;
+  w = e => {
+    var n;
     let {
-      onClose: n,
+      onClose: a,
       transitionState: c,
       guildId: r,
       isPreview: u
-    } = e, h = (0, s.e7)([_.Z], () => _.Z.getGuild(r)), {
-      welcomeScreen: p,
-      fetching: N,
+    } = e, _ = (0, o.e7)([N.Z], () => N.Z.getGuild(r)), {
+      welcomeScreen: j,
+      fetching: x,
       hasError: C
-    } = (0, s.cj)([k.Z], () => ({
+    } = (0, o.cj)([k.Z], () => ({
       welcomeScreen: k.Z.get(r),
       fetching: k.Z.isFetching(),
       hasError: k.Z.hasError()
     })), g = (0, m.Dt)();
-    i.useEffect(() => {
-      null == p && (0, Z.RM)(r)
-    }, [r, p]), i.useEffect(() => {
-      false === N && true === C && null == p && n()
-    }, [N, C, n, p]), i.useEffect(() => {
-      p === k.a && false === N && n()
-    }, [n, p, N]), i.useEffect(() => {
-      true !== u && E.default.track(v.rMx.OPEN_MODAL, {
-        type: f._,
+    l.useEffect(() => {
+      null == j && (0, E.RM)(r)
+    }, [r, j]), l.useEffect(() => {
+      false === x && true === C && null == j && a()
+    }, [x, C, a, j]), l.useEffect(() => {
+      j === k.a && false === x && a()
+    }, [a, j, x]), l.useEffect(() => {
+      true !== u && b.default.track(f.rMx.OPEN_MODAL, {
+        type: Z._,
         guild_id: r
       })
     }, [r, u]);
-    let I = i.useCallback(e => {
-      var l;
-      if (null == p || true === u) return;
-      let n = [],
-        a = [],
-        i = false;
-      null == (l = p.welcome_channels) || l.forEach(e => {
-        n.push(e.description), a.push(e.channel_id), null != e.emoji_id && (i = true)
-      }), E.default.track(v.rMx.GUILD_WELCOME_SCREEN_OPTION_SELECTED, {
+    let I = l.useCallback(e => {
+      var n;
+      if (null == j || true === u) return;
+      let a = [],
+        i = [],
+        l = false;
+      null == (n = j.welcome_channels) || n.forEach(e => {
+        a.push(e.description), i.push(e.channel_id), null != e.emoji_id && (l = true)
+      }), b.default.track(f.rMx.GUILD_WELCOME_SCREEN_OPTION_SELECTED, {
         index: e,
         guild_id: r,
-        options: n,
-        options_channel_ids: a,
-        guild_description: p.description,
-        has_custom_emojis: i
+        options: a,
+        options_channel_ids: i,
+        guild_description: j.description,
+        has_custom_emojis: l
       })
-    }, [r, u, p]);
-    return null == h ? null : null == p ? (0, a.jsx)(t.Y0X, {
+    }, [r, u, j]);
+    return null == _ ? null : null == j ? (0, i.jsx)(t.Y0X, {
       transitionState: c,
-      className: P.main,
-      "aria-label": S.intl.string(S.t.ZTNur6),
+      className: S.main,
+      "aria-label": v.intl.string(v.t.ZTNur6),
       parentComponent: "WelcomeScreenModal",
-      children: (0, a.jsx)(t.$jN, {
+      children: (0, i.jsx)(t.$jN, {
         type: t.$jN.Type.SPINNING_CIRCLE
       })
-    }) : (0, a.jsxs)(t.Y0X, {
+    }) : (0, i.jsxs)(t.Y0X, {
       transitionState: c,
-      className: P.main,
+      className: S.main,
       "aria-labelledby": g,
       parentComponent: "WelcomeScreenModal",
-      children: [(0, a.jsx)(t.olH, {
-        onClick: n,
-        className: P.close
-      }), (0, a.jsx)(d.ZP, {
+      children: [(0, i.jsx)(t.olH, {
+        onClick: a,
+        className: S.close
+      }), (0, i.jsx)(d.ZP, {
         mask: d.ZP.Masks.SQUIRCLE,
         width: 64,
         height: 64,
-        className: P.guildIcon,
-        children: (0, a.jsx)(j.Z, {
-          size: j.Z.Sizes.LARGER,
-          guild: h,
+        className: S.guildIcon,
+        children: (0, i.jsx)(h.Z, {
+          size: h.Z.Sizes.LARGER,
+          guild: _,
           active: true,
           animate: true,
           tabIndex: false
         })
-      }), (0, a.jsx)(t.X6q, {
+      }), (0, i.jsx)(t.X6q, {
         variant: "heading-xl/semibold",
-        className: P.header,
+        className: S.header,
         id: g,
-        children: S.intl.format(S.t["0aydCA"], {
-          guildName: h.name,
-          guildNameHook: (e, l) => (0, a.jsxs)("span", {
-            children: [(0, a.jsx)(x.Z, {
-              guild: h,
-              className: P.headerGuildBadge,
-              flowerStarClassName: P.flowerStar,
+        children: v.intl.format(v.t["0aydCA"], {
+          guildName: _.name,
+          guildNameHook: (e, n) => (0, i.jsxs)("span", {
+            children: [(0, i.jsx)(p.Z, {
+              guild: _,
+              className: S.headerGuildBadge,
+              flowerStarClassName: S.flowerStar,
               tooltipColor: t.ua7.Colors.PRIMARY
-            }), (0, a.jsx)("strong", {
-              className: P.headerGuildName,
+            }), (0, i.jsx)("strong", {
+              className: S.headerGuildName,
               children: e
             })]
-          }, l)
+          }, n)
         })
-      }), null != p.description ? (0, a.jsx)(t.Text, {
+      }), null != j.description ? (0, i.jsx)(t.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        className: P.guildDescription,
-        children: p.description
-      }) : null, (0, a.jsx)(t.vwX, {
-        className: P.choiceHeader,
-        children: S.intl.string(S.t["haj5+v"])
-      }), (0, a.jsx)("div", {
-        className: P.options,
-        children: null == (l = p.welcome_channels) ? true : l.map((e, l) => (0, a.jsx)(L, {
+        className: S.guildDescription,
+        children: j.description
+      }) : null, (0, i.jsx)(t.vwX, {
+        className: S.choiceHeader,
+        children: v.intl.string(v.t["haj5+v"])
+      }), (0, i.jsx)("div", {
+        className: S.options,
+        children: null == (n = j.welcome_channels) ? true : n.map((e, n) => (0, i.jsx)(T, {
           channelData: e,
-          trackOptionClick: () => I(l),
-          onClose: n
-        }, "".concat(e.channel_id, "-").concat(l)))
-      }), (0, a.jsx)(o.zx, {
-        look: o.zx.Looks.LINK,
-        color: P.skipColor,
-        className: P.skip,
-        onClick: n,
-        children: S.intl.string(S.t["jizr8/"])
+          trackOptionClick: () => I(n),
+          onClose: a
+        }, "".concat(e.channel_id, "-").concat(n)))
+      }), (0, i.jsx)(s.zx, {
+        look: s.zx.Looks.LINK,
+        color: S.skipColor,
+        className: S.skip,
+        onClick: a,
+        children: v.intl.string(v.t["jizr8/"])
       })]
     })
   }
