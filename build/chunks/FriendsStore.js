@@ -196,21 +196,21 @@ class j {
   }
 }
 let x = true,
-  Z = false,
-  A = Chunk981631.pJs.ONLINE,
+  A = false,
+  Z = Chunk981631.pJs.ONLINE,
   w = new j,
   L = true,
   R = false;
 
 function D() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  x && (module || A !== Chunk981631.pJs.ONLINE && A !== Chunk981631.pJs.ADD_FRIEND) && !Z && (x = false, Z = true, Chunk194359.Z.fetchRelationships())
+  x && (module || Z !== Chunk981631.pJs.ONLINE && Z !== Chunk981631.pJs.ADD_FRIEND) && !A && (x = false, A = true, Chunk194359.Z.fetchRelationships())
 }
 
 function k() {
-  if (x = true, L ? Z = false : D(), w = w.reset(), R) return;
+  if (x = true, L ? A = false : D(), w = w.reset(), R) return;
   let e = w.getRelationshipCounts();
-  A = 0 === module[Chunk981631.OGo.FRIEND] ? 0 !== module[Chunk981631.OGo.PENDING_INCOMING] ? Chunk981631.pJs.PENDING : Chunk981631.pJs.ADD_FRIEND : Chunk981631.pJs.ONLINE
+  Z = 0 === module[Chunk981631.OGo.FRIEND] ? 0 !== module[Chunk981631.OGo.PENDING_INCOMING] ? Chunk981631.pJs.PENDING : Chunk981631.pJs.ADD_FRIEND : Chunk981631.pJs.ONLINE
 }
 
 function M() {
@@ -228,8 +228,8 @@ class G extends(r = Chunk442837.ZP.Store) {
   }
   getState() {
     return {
-      fetching: Z,
-      section: A,
+      fetching: A,
+      section: Z,
       rows: w
     }
   }
@@ -240,7 +240,7 @@ let V = new G(Chunk570140.Z, {
     k()
   },
   FRIENDS_SET_SECTION: function(e) {
-    A = e.section, D()
+    Z = e.section, D()
   },
   CHANNEL_SELECT: function(e) {
     let {
@@ -249,12 +249,12 @@ let V = new G(Chunk570140.Z, {
     return L = null != t, M(), !L
   },
   LOAD_RELATIONSHIPS_SUCCESS: function() {
-    Z = false
+    A = false
   },
   LOAD_RELATIONSHIPS_FAILURE: function() {
-    x = true, Z = true
+    x = true, A = true
   },
   FRIENDS_SET_INITIAL_SECTION: function(e) {
-    A = e.section, R = true
+    Z = e.section, R = true
   }
 })

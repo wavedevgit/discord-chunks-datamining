@@ -255,7 +255,7 @@ function W() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == require.release_channel || "" === require.release_channel) && (require.release_channel = r.split("-")[0]);
-  let i = parseInt("431846", 10);
+  let i = parseInt("431889", 10);
   isNaN(i) || (require.client_build_number = i);
   let o = null == P || null == (e = (t = P.remoteApp).getBuildNumber) ? true : module.call(exports);
   return isNaN(o) || (require.native_build_number = o), require.client_event_source = Y(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require

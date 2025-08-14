@@ -8,7 +8,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk987209 = require("./987209.jsx"),
-  Chunk286961 = require("./286961.js"),
+  Chunk347896 = require("./347896.js"),
   Chunk897942 = require("./897942.jsx"),
   Chunk487276 = require("./487276.js");
 
@@ -17,7 +17,7 @@ function c() {
     {
       claimableRewards: r
     } = (0, Chunk987209.wD)(),
-    n = (0, Chunk286961.Z)(),
+    n = (0, Chunk347896.Z)(),
     c = null == require ? true : require.planSelection;
   return null == c || null == exports || 0 === exports.length ? null : (0, Chunk255367.jsxs)("div", {
     className: Chunk487276.container,

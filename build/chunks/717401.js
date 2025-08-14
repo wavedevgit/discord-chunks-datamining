@@ -12,10 +12,10 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk223143 = require("./223143.js"),
-  Chunk286961 = require("./286961.js");
+  Chunk347896 = require("./347896.js");
 
 function a() {
-  let [e, t] = Chunk73800.useState(), n = (0, Chunk286961.Z)(), a = null == require ? true : require.rewards, {
+  let [e, t] = Chunk73800.useState(), n = (0, Chunk347896.Z)(), a = null == require ? true : require.rewards, {
     purchases: s,
     hasPreviouslyFetched: l,
     fetchPurchasesError: c

@@ -48,5 +48,9 @@ module.exports = {
   variantsSwitch: "variantsSwitch_c50f62",
   headerButtonContainer: "headerButtonContainer_c50f62",
   externalProductProfilePreview: "externalProductProfilePreview_c50f62",
-  orbIconAligned: "orbIconAligned_c50f62"
+  orbIconAligned: "orbIconAligned_c50f62",
+  modalFooter: "modalFooter_c50f62",
+  modalFooterText: "modalFooterText_c50f62",
+  modalFooterBackgroundImg: "modalFooterBackgroundImg_c50f62",
+  modalFooterContentContainer: "modalFooterContentContainer_c50f62"
 }

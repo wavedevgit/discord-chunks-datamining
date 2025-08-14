@@ -1,123 +1,110 @@
 /** Chunk was on 37194 **/
-/** chunk id: 947422, original params: t,e,n (module,exports,require) **/
+/** chunk id: 947422, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => u
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
-var Chunk755721 = require("./755721.js"),
+var Chunk667202 = require("./667202.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk313201 = require("./313201.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk76349 = require("./76349.js"),
   Chunk298860 = require("./298860.js");
-let u = t => {
+let a = t => {
   let {
     text: e,
-    icon: n,
+    icon: r,
     foreground: o
   } = t;
-  return (0, r.jsxs)("div", {
-    className: s.bulletContainer,
-    children: [(0, r.jsx)("div", {
-      className: s.iconContainer,
-      children: (0, r.jsx)(n, {
+  return (0, n.jsxs)("div", {
+    className: l.bulletContainer,
+    children: [(0, n.jsx)("div", {
+      className: l.iconContainer,
+      children: (0, n.jsx)(r, {
         color: null != o ? o : "currentColor",
-        className: s.bulletIcon,
+        className: l.bulletIcon,
         size: "custom",
         height: 40,
         width: 40
       })
-    }), (0, r.jsx)(l.Text, {
+    }), (0, n.jsx)(i.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      className: s.bulletText,
+      className: l.bulletText,
       children: e
     })]
   })
 };
 
-function b(t) {
-  var e, n, {
-      transitionState: b,
-      onClose: d
+function u(t) {
+  var e, r, {
+      transitionState: l,
+      onClose: u
     } = t,
-    p = function(t, e) {
+    b = function(t, e) {
       if (null == t) return {};
-      var n, r, o = function(t, e) {
+      var r, n, o = function(t, e) {
         if (null == t) return {};
-        var n, r, o = {},
-          l = Object.keys(t);
-        for (r = 0; r < l.length; r++) n = l[r], e.indexOf(n) >= 0 || (o[n] = t[n]);
+        var r, n, o = {},
+          i = Object.keys(t);
+        for (n = 0; n < i.length; n++) r = i[n], e.indexOf(r) >= 0 || (o[r] = t[r]);
         return o
       }(t, e);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(t);
-        for (r = 0; r < l.length; r++) n = l[r], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (o[n] = t[n])
+        var i = Object.getOwnPropertySymbols(t);
+        for (n = 0; n < i.length; n++) r = i[n], !(e.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(t, r) && (o[r] = t[r])
       }
       return o
     }(t, ["transitionState", "onClose"]);
-  let f = (0, i.Dt)();
-  return (0, r.jsx)(l.Y0X, (e = function(t) {
+  return (0, n.jsxs)(o.I, (e = function(t) {
     for (var e = 1; e < arguments.length; e++) {
-      var n = null != arguments[e] ? arguments[e] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-        return Object.getOwnPropertyDescriptor(n, t).enumerable
-      }))), r.forEach(function(e) {
-        var r;
-        r = n[e], e in t ? Object.defineProperty(t, e, {
-          value: r,
+      var r = null != arguments[e] ? arguments[e] : {},
+        n = Object.keys(r);
+      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
+        return Object.getOwnPropertyDescriptor(r, t).enumerable
+      }))), n.forEach(function(e) {
+        var n;
+        n = r[e], e in t ? Object.defineProperty(t, e, {
+          value: n,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : t[e] = r
+        }) : t[e] = n
       })
     }
     return t
-  }({
-    transitionState: b,
-    "aria-labelledby": f
-  }, p), n = n = {
-    size: l.CgR.SMALL,
-    parentComponent: "StageChannelWelcomeModal",
-    children: (0, r.jsxs)("div", {
-      className: s.content,
-      children: [(0, r.jsx)("img", {
-        src: a,
-        alt: c.intl.string(c.t["5DRw+/"]),
-        className: s.illustration
-      }), (0, r.jsx)(l.X6q, {
-        id: f,
-        variant: "heading-xl/semibold",
-        color: "header-primary",
-        className: s.headerTitle,
-        children: c.intl.string(c.t.UVuXCg)
-      }), (0, r.jsx)(u, {
-        text: c.intl.string(c.t.sBDfo6),
-        icon: l.nRN,
-        foreground: s.red
-      }), (0, r.jsx)(u, {
-        text: c.intl.string(c.t.x58YtL),
-        icon: l.gkL
-      }), (0, r.jsx)(u, {
-        text: c.intl.string(c.t.XtVqlZ),
-        icon: l.V9
-      }), (0, r.jsx)(o.zx, {
-        color: o.zx.Colors.BRAND,
-        className: s.button,
-        onClick: d,
-        children: c.intl.string(c.t.obLqZ2)
-      })]
-    })
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(t, e) {
-    var n = Object.keys(t);
+  }({}, b), r = r = {
+    graphic: {
+      type: "image",
+      src: s
+    },
+    title: c.intl.string(c.t.UVuXCg),
+    onClose: u,
+    transitionState: l,
+    actions: [{
+      text: c.intl.string(c.t.obLqZ2),
+      variant: "primary",
+      onClick: u
+    }],
+    children: [(0, n.jsx)(a, {
+      text: c.intl.string(c.t.sBDfo6),
+      icon: i.nRN,
+      foreground: "var(--status-danger)"
+    }), (0, n.jsx)(a, {
+      text: c.intl.string(c.t.x58YtL),
+      icon: i.gkL
+    }), (0, n.jsx)(a, {
+      text: c.intl.string(c.t.XtVqlZ),
+      icon: i.V9
+    })]
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
+    var r = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(t);
-      n.push.apply(n, r)
+      var n = Object.getOwnPropertySymbols(t);
+      r.push.apply(r, n)
     }
-    return n
-  })(Object(n)).forEach(function(t) {
-    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+    return r
+  })(Object(r)).forEach(function(t) {
+    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
   }), e))
 }

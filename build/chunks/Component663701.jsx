@@ -114,12 +114,12 @@ let eu = e => {
       selected: t
     } = e, n = ec(e, ["selected"]);
     let l = (0, c.JA)("friends"),
-      a = (0, Z.If)(),
+      a = (0, A.If)(),
       o = (0, d.e7)([R.Z], () => R.Z.canShowFriendsTabBadge()),
       u = (0, d.e7)([_.Z], () => _.Z.useReducedMotion),
       {
         enabled: p
-      } = A.w.useExperiment({
+      } = Z.w.useExperiment({
         location: "Friends Tab"
       }, {
         autoTrackExposure: false

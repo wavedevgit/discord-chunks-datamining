@@ -142,12 +142,12 @@ let V = e => {
       })), el) n = (0, r.jsx)(P.Z, {}), O = 0;
     else if (ea) {
       let e = (0, j.$q)();
-      n = (0, r.jsx)(Z._y, {
+      n = (0, r.jsx)(A._y, {
         isTabSelected: F,
         badgeCopy: G.intl.string(G.t.OS9KPj),
         offerExpiresAt: true === e ? null == en ? true : en.expires_at : null
       }), O = 4
-    } else eO === o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE ? (n = (0, r.jsx)(Z._y, {
+    } else eO === o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE ? (n = (0, r.jsx)(A._y, {
       isTabSelected: F,
       badgeCopy: G.intl.string(G.t.y2b7CA),
       offerExpiresAt: null
@@ -156,21 +156,21 @@ let V = e => {
     }), O = 4) : null != eo ? (n = (0, r.jsx)(D.Z, {
       copy: eo,
       showStars: false
-    }), O = 1) : null != er ? (n = (0, r.jsx)(Z.GN, {
+    }), O = 1) : null != er ? (n = (0, r.jsx)(A.GN, {
       userDiscount: er,
       isTabSelected: F,
       includesAmountOff: false
-    }), O = 3) : null == en || eb ? eu && (n = (0, r.jsx)(A.l, {
+    }), O = 3) : null == en || eb ? eu && (n = (0, r.jsx)(Z.l, {
       isSelected: F,
       onSelect: () => (0, f.Q3)(o.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
         dismissAction: U.L.TAKE_ACTION
       })
-    }), O = 6) : (n = (0, r.jsx)(Z.$H, {
+    }), O = 6) : (n = (0, r.jsx)(A.$H, {
       trialOffer: en,
       isTabSelected: F
     }), O = 4);
     let ev = G.intl.string(G.t.Ipxkoq);
-    Q && ee && (ev = G.intl.string(G.t["4gwVVl"])), !Q && J && ($ === v.Rx.TRY_NITRO && null != en ? ev = G.intl.string(G.t["3O6A4e"]) : $ === v.Rx.JOIN_NITRO ? ev = G.intl.string(G.t.brBiOz) : $ === v.Rx.GET_NITRO && (ev = G.intl.string(G.t.GayC1t))), es && ec.cohort !== I.xI.Control && (n = (0, r.jsx)(Z._y, {
+    Q && ee && (ev = G.intl.string(G.t["4gwVVl"])), !Q && J && ($ === v.Rx.TRY_NITRO && null != en ? ev = G.intl.string(G.t["3O6A4e"]) : $ === v.Rx.JOIN_NITRO ? ev = G.intl.string(G.t.brBiOz) : $ === v.Rx.GET_NITRO && (ev = G.intl.string(G.t.GayC1t))), es && ec.cohort !== I.xI.Control && (n = (0, r.jsx)(A._y, {
       isTabSelected: F,
       badgeCopy: G.intl.string(G.t.RDE0SU),
       offerExpiresAt: null
@@ -220,7 +220,7 @@ let V = e => {
     }), B));
     return es && ec.cohort === I.xI.Static ? (0, r.jsx)(x.X, {
       children: eI
-    }) : eu ? (0, r.jsx)(A.C, {
+    }) : eu ? (0, r.jsx)(Z.C, {
       children: eI
     }) : eI
   }

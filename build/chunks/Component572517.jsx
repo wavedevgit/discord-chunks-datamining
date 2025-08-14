@@ -10,8 +10,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk410030 = require("./410030.js"),
   Chunk607070 = require("./607070.js"),
   Chunk987209 = require("./987209.jsx"),
+  Chunk347896 = require("./347896.js"),
   Chunk717401 = require("./717401.js"),
-  Chunk286961 = require("./286961.js"),
   Chunk897942 = require("./897942.jsx"),
   Chunk432483 = require("./432483.js");
 
@@ -20,7 +20,7 @@ function _() {
   let r = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     n = (0, Chunk410030.ZP)(),
     _ = (0, Chunk780384.wj)(require),
-    x = (0, Chunk286961.Z)(),
+    x = (0, Chunk347896.Z)(),
     f = null == x ? true : x.planSelectionBanner,
     {
       claimableRewards: m

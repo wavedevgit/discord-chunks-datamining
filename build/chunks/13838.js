@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 13838, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => Z
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -51,7 +51,7 @@ let x = e => (0, v.Z)(e).keys({
   channel_id: e.string().allow(null)
 });
 
-function Z(e) {
+function A(e) {
   let {
     args: {
       channel_id: t
@@ -61,7 +61,7 @@ function Z(e) {
     errorCode: T.lTL.INVALID_CHANNEL
   }, "Invalid channel id: ".concat(t))
 }
-let A = {
+let Z = {
   [Chunk981631.zMe.GUILD_STATUS]: {
     scope: Chunk243814.x.RPC,
     validation: e => (0, v.Z)(e).required().keys({
@@ -227,14 +227,14 @@ let A = {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ, Chunk186901.lH]
     },
     validation: x,
-    handler: Z
+    handler: A
   },
   [Chunk981631.zMe.SPEAKING_STOP]: {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ, Chunk186901.lH]
     },
     validation: x,
-    handler: Z
+    handler: A
   },
   [Chunk981631.zMe.GUILD_CREATE]: {
     scope: Chunk243814.x.RPC,

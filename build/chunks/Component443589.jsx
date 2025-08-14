@@ -39,8 +39,8 @@ function T(e) {
   } = (0, d.ZP)(), {
     isHovered: j,
     setIsHovered: x,
-    onMouseEnter: Z,
-    onMouseLeave: A
+    onMouseEnter: A,
+    onMouseLeave: Z
   } = (0, h.Z)(200, 300), {
     enableEmojiCTA: w
   } = _.w.useExperiment({
@@ -60,8 +60,8 @@ function T(e) {
     })
   }, [t, n]);
   let L = i.useCallback(e => {
-      "focus" !== e.type && Z()
-    }, [Z]),
+      "focus" !== e.type && A()
+    }, [A]),
     R = e => {
       e.stopPropagation();
       let r = g.Z.getUserAffinity(t.id);
@@ -104,8 +104,8 @@ function T(e) {
       giftIntentType: n,
       premiumGiftIntentCardType: y.U.COACHMARK,
       recipientUser: t,
-      onMouseEnter: Z,
-      onMouseLeave: A,
+      onMouseEnter: A,
+      onMouseLeave: Z,
       popoutPosition: e.position,
       analyticsPage: l,
       analyticsSection: I.jXE.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT,
@@ -120,7 +120,7 @@ function T(e) {
         [N.highlight]: T
       }),
       onMouseEnter: L,
-      onMouseLeave: A,
+      onMouseLeave: Z,
       children: (0, r.jsx)(o.animated.div, {
         className: S.spriteContainer,
         children: (0, r.jsx)("div", {
@@ -131,7 +131,7 @@ function T(e) {
       buttonRef: M,
       onClick: R,
       onMouseEnter: L,
-      onMouseLeave: A,
+      onMouseLeave: Z,
       children: (0, r.jsxs)("div", {
         className: S.pillContentContainer,
         children: [(0, r.jsx)(u.OgN, {

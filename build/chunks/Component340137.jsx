@@ -60,12 +60,12 @@ function S(e) {
     backForwardButtons: j
   } = d.MK.useExperiment({
     location: "AppTitleBar"
-  }), x = (0, h.isDesktop)() && j, Z = (0, p.A)(), A = (0, h.isMac)() ? v[Z] : x ? I[Z] : C[Z];
+  }), x = (0, h.isDesktop)() && j, A = (0, p.A)(), Z = (0, h.isMac)() ? v[A] : x ? I[A] : C[A];
   return (0, r.jsxs)(c.Kqy, {
     gap: 0,
     direction: "horizontal",
     children: [(0, r.jsx)(c.LZC, {
-      size: A,
+      size: Z,
       horizontal: true
     }), (0, r.jsx)(c.ua7, {
       shouldShow: !S,

@@ -576,7 +576,7 @@ class ts extends Chunk73800.PureComponent {
     } = ti(n), a = (0, ey.Ss)(r) && r !== e3.ME && r !== e3.I_8;
     if (null != i && (0, ey.cq)(i) && !(0, e8.AB)(i) && a) {
       let n = eB.Z.getChannel(i);
-      if (null == n) eZ.Z.loadThread(i).then(() => to({
+      if (null == n) eA.Z.loadThread(i).then(() => to({
         channelId: i,
         guildId: r,
         pathname: t
@@ -588,7 +588,7 @@ class ts extends Chunk73800.PureComponent {
       if (null != l) {
         if (!((0, ey.cq)(l) && !(0, e8.AB)(i))) return null;
         let n = eB.Z.getChannel(l);
-        if (null == n) eZ.Z.loadThread(l).then(() => to({
+        if (null == n) eA.Z.loadThread(l).then(() => to({
           channelId: l,
           guildId: r,
           pathname: t

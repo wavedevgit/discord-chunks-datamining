@@ -494,12 +494,12 @@ function ev(e) {
     h = (0, c.e7)([$.Z], () => $.Z.getChannelId()),
     g = (0, c.e7)([Q.Z], () => Q.Z.can(ec.Plq.MANAGE_GUILD, o)),
     j = (0, c.e7)([W.Z], () => W.Z.isUnavailable(n)),
-    A = (0, c.e7)([ee.default], () => ee.default.getCurrentUser()),
+    Z = (0, c.e7)([ee.default], () => ee.default.getCurrentUser()),
     w = (0, U.Ll)(),
     M = (0, c.e7)([H.Z], () => null != w ? w : H.Z.theme),
     {
       enableStudyGroup: G
-    } = (0, Z.s)(o),
+    } = (0, A.s)(o),
     B = (0, v.ZP)(e => e.currentlyShown.has(u.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION)),
     [Y, er] = i.useState(!B),
     ei = (0, b.Z)(n),
@@ -509,12 +509,12 @@ function ev(e) {
   i.useEffect(() => {
     n !== ei && er(!B)
   }, [n, ei, B]);
-  let [ea, eo] = (0, v.ZP)(e => [eu.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ed.R.GUILD_HEADER_TOOLTIPS)], s.X), es = (0, y.Z)(o), ep = (0, p.s9z)(p.JQI), ef = (0, c.e7)([X.Z], () => X.Z.hasLayers()), eh = (0, c.e7)([V.Z], () => V.Z.shouldShow(eO)), eg = g && (null == o ? true : o.premiumProgressBarEnabled) === false && !en.s.isDisallowPopupsSet(), em = (0, c.e7)([K.Z], () => K.Z.getMemberCount(n)), eb = g && null != em && em >= 30 && (null == o ? true : o.premiumProgressBarEnabled) === false && !en.s.isDisallowPopupsSet(), e_ = (0, P.Z)(n), eE = (null == o ? true : o.features.has(ec.oNc.HUB)) === true, ev = g && (null == o ? true : o.features.has(ec.oNc.DISCOVERABLE)) === true, eI = (0, E.Q)(), eC = (g || (null == o ? true : o.premiumTier) === ec.Eu4.NONE) && !en.s.isDisallowPopupsSet() && !eI, eS = (0, c.e7)([x.Z, X.Z], () => null != o && null != A && g && !X.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), eN = (0, c.e7)([F.Z], () => F.Z.getChannel(a)), {
+  let [ea, eo] = (0, v.ZP)(e => [eu.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ed.R.GUILD_HEADER_TOOLTIPS)], s.X), es = (0, y.Z)(o), ep = (0, p.s9z)(p.JQI), ef = (0, c.e7)([X.Z], () => X.Z.hasLayers()), eh = (0, c.e7)([V.Z], () => V.Z.shouldShow(eO)), eg = g && (null == o ? true : o.premiumProgressBarEnabled) === false && !en.s.isDisallowPopupsSet(), em = (0, c.e7)([K.Z], () => K.Z.getMemberCount(n)), eb = g && null != em && em >= 30 && (null == o ? true : o.premiumProgressBarEnabled) === false && !en.s.isDisallowPopupsSet(), e_ = (0, P.Z)(n), eE = (null == o ? true : o.features.has(ec.oNc.HUB)) === true, ev = g && (null == o ? true : o.features.has(ec.oNc.DISCOVERABLE)) === true, eI = (0, E.Q)(), eC = (g || (null == o ? true : o.premiumTier) === ec.Eu4.NONE) && !en.s.isDisallowPopupsSet() && !eI, eS = (0, c.e7)([x.Z, X.Z], () => null != o && null != Z && g && !X.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), eN = (0, c.e7)([F.Z], () => F.Z.getChannel(a)), {
     isPopoutOpen: eT
-  } = (0, S.y)(), eP = null != (t = null == o ? true : o.features.has(ec.oNc.COMMUNITY)) && t, ej = et.ZP.isNewUser(A), ex = Y && !ej;
+  } = (0, S.y)(), eP = null != (t = null == o ? true : o.features.has(ec.oNc.COMMUNITY)) && t, ej = et.ZP.isNewUser(Z), ex = Y && !ej;
   (0, N.Z)(o);
-  let eZ = (0, I.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
-    eA = (0, L.Z)(n),
+  let eA = (0, I.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
+    eZ = (0, L.Z)(n),
     ew = (0, T.Z)(n),
     eL = (0, c.e7)([$.Z], () => $.Z.getChannelId()),
     eR = (0, c.e7)([J.Z], () => J.Z.desyncedVoiceStatesCount),
@@ -524,7 +524,7 @@ function ev(e) {
       autoTrackExposure: true
     }).enabled,
     ek = (0, R.Z)(n),
-    eM = (0, D.Z)(null == A ? true : A.id, n) && (null == o ? true : o.premiumProgressBarEnabled) === false;
+    eM = (0, D.Z)(null == Z ? true : Z.id, n) && (null == o ? true : o.premiumProgressBarEnabled) === false;
   return (0, r.jsx)(ey, {
     guildId: n,
     hideSelectedChannel: l,
@@ -538,7 +538,7 @@ function ev(e) {
     rtcDesyncedVoiceStatesCount: eR,
     isUnavailable: j,
     theme: M,
-    user: A,
+    user: Z,
     hasChannelNotice: null != es || ea,
     anyLayerOpen: ep || ef,
     showGuildBoostingProgressBarUpsell: eg,
@@ -550,14 +550,14 @@ function ev(e) {
     showRoleSubscriptionUpsell: e_,
     showHubPrivacySettingsTooltip: eE,
     showNewUnreadsBar: eP,
-    showMediaChannelUpsell: eA,
+    showMediaChannelUpsell: eZ,
     showTierTemplatesUpsell: ew,
     isHeaderPopoutOpen: eT,
     enableStudyGroup: G,
     isGuildHeaderDismissibleTooltipShown: eo,
     canShowCoachMarkAtBottom: Y,
     headerAnalyticsLocations: el,
-    isTutorialHighlightDismissed: eZ,
+    isTutorialHighlightDismissed: eA,
     shouldRenderBurstCoachmark: ex,
     shouldRenderCustomNotificationSoundsCoachmark: eD,
     shouldRenderGuildPowerupPerkCoachmark: false === ek,

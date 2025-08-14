@@ -33,7 +33,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk829972 = require("./829972.js"),
   Chunk31932 = require("./31932.js");
 
-function A(e) {
+function Z(e) {
   null != e && f.Z.open(e.id, I.pNK.BOOST_PERKS, {
     section: I.jXE.PREMIUM_GUILD_PROGRESS_BAR
   })
@@ -94,7 +94,7 @@ let R = Chunk73800.memo(function(e) {
       },
       location_stack: u
     })
-  }, R = (0, a.wj)(n) ? x : Z, [D, k] = (0, c.US)(t, C.R.GUILD_HEADER_TOOLTIPS);
+  }, R = (0, a.wj)(n) ? x : A, [D, k] = (0, c.US)(t, C.R.GUILD_HEADER_TOOLTIPS);
   return (0, r.jsx)(r.Fragment, {
     children: (() => {
       switch (D) {
@@ -136,8 +136,8 @@ let R = Chunk73800.memo(function(e) {
               content: T.intl.format(T.t.ujItEh, {}),
               buttonCTA: T.intl.string(T.t.UzVPra),
               secondaryButtonCTA: T.intl.string(T.t["KkK/aG"]),
-              onSecondaryClick: () => A(),
-              onClick: () => A(i),
+              onSecondaryClick: () => Z(),
+              onClick: () => Z(i),
               markAsDismissed: k
             }),
             renderGuildHeaderDropdownButton: o
@@ -155,8 +155,8 @@ let R = Chunk73800.memo(function(e) {
               content: T.intl.format(T.t.zK1hpq, {}),
               buttonCTA: T.intl.string(T.t.UzVPra),
               secondaryButtonCTA: T.intl.string(T.t["KkK/aG"]),
-              onSecondaryClick: () => A(),
-              onClick: () => A(i),
+              onSecondaryClick: () => Z(),
+              onClick: () => Z(i),
               markAsDismissed: k
             }),
             renderGuildHeaderDropdownButton: o

@@ -1,9 +1,9 @@
 /** Chunk was on 84691 **/
 /** chunk id: 426171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Kp: () => O,
+  Kp: () => _,
   u9: () => j,
-  xV: () => _
+  xV: () => O
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk114858 = require("./114858.js"),
@@ -21,7 +21,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk956472 = require("./956472.js"),
   Chunk981631 = require("./981631.js");
 let b = "".concat("#").concat("itemSkuId", "="),
-  g = new RegExp("^".concat(b, "(\\d+)$")),
+  P = new RegExp("^".concat(b, "(\\d+)$")),
   x = [Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.COLLECTIBLES_SHOP_FULLSCREEN],
   j = e => {
     let t = (0, i.TH)();
@@ -31,7 +31,7 @@ let b = "".concat("#").concat("itemSkuId", "="),
       }
     }, [e, t.pathname])
   },
-  O = () => {
+  _ = () => {
     let e = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.getLayers().includes(Chunk981631.S9g.COLLECTIBLES_SHOP)),
       t = (0, Chunk258939.R)(),
       n = Chunk73800.useRef(null),
@@ -43,14 +43,14 @@ let b = "".concat("#").concat("itemSkuId", "="),
       j = (0, Chunk410127.Z)();
     Chunk73800.useEffect(() => {
       if (module) return;
-      let t = g.exec(Chunk607070.hash);
+      let t = P.exec(Chunk607070.hash);
       null != exports ? require.current = exports[1] : require.current = null
     }, [j, module, Chunk607070.hash]);
-    let O = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
+    let _ = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
     Chunk73800.useEffect(() => {
       if (exports) return;
       let r = null;
-      if (null != (r = module ? O : require.current)) {
+      if (null != (r = module ? _ : require.current)) {
         let e = setTimeout(() => {
           (e => {
             let {
@@ -91,9 +91,9 @@ let b = "".concat("#").concat("itemSkuId", "="),
         }, 250);
         return () => clearTimeout(module)
       }
-    }, [module, x, b, exports, O, j])
+    }, [module, x, b, exports, _, j])
   },
-  _ = e => {
+  O = e => {
     let t = r.useRef({}),
       n = (0, a.e7)([l.Z], () => l.Z.useReducedMotion),
       i = (0, a.e7)([u.Z], () => u.Z.isFetchingCategories),

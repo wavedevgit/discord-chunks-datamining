@@ -197,7 +197,7 @@ function ei(e) {
   let {
     pageWidth: t,
     onSidebarResize: n
-  } = e, i = (0, c.e7)([A.ZP], () => A.ZP.getSidebarState(A.uZ)), l = (0, c.e7)([w.Z], () => w.Z.getChannel(null == i ? true : i.channelId));
+  } = e, i = (0, c.e7)([Z.ZP], () => Z.ZP.getSidebarState(Z.uZ)), l = (0, c.e7)([w.Z], () => w.Z.getChannel(null == i ? true : i.channelId));
   if (null == i || i.type !== j.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
   let a = t - q.R7I;
   return (0, r.jsx)(O.Z, {
@@ -206,7 +206,7 @@ function ei(e) {
     onWidthChange: n,
     children: (0, r.jsx)(E.Z, {
       channel: l,
-      baseChannelId: A.uZ
+      baseChannelId: Z.uZ
     })
   })
 }
@@ -276,11 +276,11 @@ let eo = (0, Chunk112724.Z)(function(e) {
       name: s.V.MESSAGE_REQUEST_VIEW
     })
   });
-  let l = (0, c.e7)([Z.Z], () => Z.Z.theme),
+  let l = (0, c.e7)([A.Z], () => A.Z.theme),
     o = (0, F.w)(),
     [u, d] = i.useState(false),
-    h = (0, c.e7)([A.ZP], () => {
-      let e = A.ZP.getSidebarState(A.uZ);
+    h = (0, c.e7)([Z.ZP], () => {
+      let e = Z.ZP.getSidebarState(Z.uZ);
       return null != e && e.type === j.tI.VIEW_MESSAGE_REQUEST ? e : null
     }),
     g = null == h ? true : h.channelId,
@@ -289,7 +289,7 @@ let eo = (0, Chunk112724.Z)(function(e) {
     O = (0, D.J)(g),
     E = i.useRef(null);
   i.useEffect(() => {
-    null != g && !_ && O && m && ((0, T.Kh)(g), P.Z.closeChannelSidebar(A.uZ))
+    null != g && !_ && O && m && ((0, T.Kh)(g), P.Z.closeChannelSidebar(Z.uZ))
   }, [g, O, m, _]);
   let [y, I] = i.useState(K.pS.REQUESTS), C = e => {
     I(e)

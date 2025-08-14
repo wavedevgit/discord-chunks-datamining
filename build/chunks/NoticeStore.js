@@ -36,10 +36,10 @@ var r, Chunk913527 = require("./913527.js"),
   Chunk41776 = require("./41776.js"),
   Chunk332473 = require("./332473.js"),
   Chunk30684 = require("./30684.js"),
-  Chunk646476 = require("./646476.js"),
   Chunk616106 = require("./616106.js"),
   Chunk475580 = require("./475580.js"),
   Chunk96320 = require("./96320.js"),
+  Chunk107756 = require("./107756.js"),
   Chunk518638 = require("./518638.js"),
   Chunk1844 = require("./1844.js"),
   Chunk621615 = require("./621615.js"),
@@ -207,7 +207,7 @@ function eX(e) {
   if (null == e) returnfalse;
   let {
     useRecurringNotices: t
-  } = M.b.getCurrentConfig({
+  } = x.b.getCurrentConfig({
     location: "NoticeStore.isNoticeDismissed"
   });
   if (t && null != ek[e]) returnfalse;
@@ -230,16 +230,14 @@ let eQ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
       predicate: () => {
         let {
           enabled: e
-        } = Chunk646476.Ys.getCurrentConfig({
+        } = Chunk107756.Ys.getCurrentConfig({
           location: "NoticeStore"
         }, {
           autoTrackExposure: false
         }), {
           enabled: t
-        } = Chunk646476.ZP.getCurrentConfig({
+        } = Chunk107756.ZP.getConfig({
           location: "NoticeStore"
-        }, {
-          autoTrackExposure: false
         });
         return module && exports && (0, Chunk605236.H4)(Chunk704215.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK).isDismissed && !eX(Chunk981631.kVF.GIFTING_PROMOTION_REMINDER)
       }

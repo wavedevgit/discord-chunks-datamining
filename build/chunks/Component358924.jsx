@@ -347,7 +347,7 @@ er.Header = en, er.Body = e => {
         })
       }), (0, i.jsx)(u.P3F, {
         onClick: () => {
-          d.default.selectVoiceChannel(r.id), (0, A.Kh)(r.id)
+          d.default.selectVoiceChannel(r.id), (0, Z.Kh)(r.id)
         },
         focusProps: {
           ringTarget: p

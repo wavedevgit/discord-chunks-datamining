@@ -2,8 +2,7 @@
 /** chunk id: 75459, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D_: () => h,
-  cU: () => g
+  D_: () => h
 });
 var Chunk674746 = require("./674746.js"),
   Chunk242433 = require("./242433.js"),
@@ -24,51 +23,5 @@ let p = [{
   h = 3,
   m = {
     gradient: ["rgba(218, 237, 137, 1)", "rgba(121, 199, 223, 1)", "rgba(177, 176, 234, 1)"]
-  },
-  g = {
-    rewards: p,
-    rewardAssetIdMap: (0, Chunk717401.YV)(p),
-    dismissibleContentVersion: h,
-    eligiblePlanIds: [Chunk474936.Xh.PREMIUM_YEAR_TIER_2, Chunk474936.Xh.PREMIUM_MONTH_TIER_2],
-    planSelection: {
-      heading: () => Chunk388032.intl.string(Chunk388032.t.ymgFZW),
-      gradientConfig: m,
-      getImageUrl: () => Chunk941098.Z,
-      getBackgroundImageUrl: () => Chunk683951.Z,
-      getCardImageUrl: () => Chunk518914.Z
-    },
-    chatGiftIcon: {
-      trinketsAnimation: {
-        getAnimationData: () => require.e("18950").then(require.bind(require, 94613)),
-        getGlowAnimationData: () => require.e("38555").then(require.bind(require, 220590))
-      }
-    },
-    firstTimeNotice: {
-      getImageUrl: (e, t) => t ? u.Z : f.Z,
-      title: () => Chunk388032.intl.string(Chunk388032.t.PWaKU1),
-      description: () => Chunk388032.intl.string(Chunk388032.t.EWn7kZ),
-      cta: () => Chunk388032.intl.string(Chunk388032.t.RzWDqa),
-      analyticsLocation: Chunk100527.Z.GIFTING_PROMOTION_COACHMARK,
-      analyticsPage: Chunk981631.ZY5.PREMUIM_UPSELL_GIFTING_PROMOTION
-    },
-    planSelectionBanner: {
-      desktopBannerText: () => Chunk388032.intl.string(Chunk388032.t.Q0VMqK),
-      mobileBannerText: () => Chunk388032.intl.string(Chunk388032.t.VBnNJS),
-      getImageUrl: () => "",
-      gradientConfig: () => m
-    },
-    billingSettingsMarketingBanner: {
-      getAnimatedImageUrl: () => Chunk335677.Z,
-      getStaticImageUrl: () => Chunk941098.Z,
-      title: () => Chunk388032.intl.string(Chunk388032.t.ydPofH),
-      body: () => Chunk388032.intl.string(Chunk388032.t.iI74ho),
-      gradientConfig: m,
-      textColor: Chunk674746.Z.NEUTRAL_71
-    },
-    giftPurchaseConfirmation: {
-      yearGiftText: Chunk388032.t.xFKdb2,
-      monthGiftText: Chunk388032.t.GnL3Gh,
-      collectRewardButtonText: () => Chunk388032.intl.string(Chunk388032.t.kMYVws),
-      rewardCollectedText: () => Chunk388032.intl.string(Chunk388032.t.eZrmtr)
-    }
-  }
+  };
+(0, Chunk717401.YV)(p), Chunk474936.Xh.PREMIUM_YEAR_TIER_2, Chunk474936.Xh.PREMIUM_MONTH_TIER_2, Chunk100527.Z.GIFTING_PROMOTION_COACHMARK, Chunk981631.ZY5.PREMUIM_UPSELL_GIFTING_PROMOTION, Chunk674746.Z.NEUTRAL_71, Chunk388032.t.xFKdb2, Chunk388032.t.GnL3Gh, () => Chunk388032.intl.string(Chunk388032.t.eZrmtr)

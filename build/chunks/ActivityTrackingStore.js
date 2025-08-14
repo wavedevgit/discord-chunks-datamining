@@ -77,23 +77,23 @@ function x() {
   for (let t of Object.keys(S)) require.has(exports) || P(S[exports], module)
 }
 
-function Z() {
+function A() {
   for (let e of Object.keys(S)) P(S[module]);
   T = false
 }
-class A extends(i = Chunk442837.ZP.Store) {
+class Z extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk594190.ZP, Chunk581883.Z, Chunk283595.Z), this.syncWith([Chunk581883.Z], x)
   }
   getActivities() {
     return S
   }
-}(l = "displayName") in A ? Object.defineProperty(A, l, {
+}(l = "displayName") in Z ? Object.defineProperty(Z, l, {
   value: "ActivityTrackingStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : A[l] = "ActivityTrackingStore", new A(Chunk570140.Z, {
+}) : Z[l] = "ActivityTrackingStore", new Z(Chunk570140.Z, {
   RUNNING_GAMES_CHANGE: () => x(),
   CONNECTION_OPEN: function() {
     if (T) returnfalse;
@@ -104,9 +104,9 @@ class A extends(i = Chunk442837.ZP.Store) {
     let {
       code: t
     } = e;
-    4004 === t && Z()
+    4004 === t && A()
   },
-  LOGOUT: Z,
+  LOGOUT: A,
   ACTIVITY_UPDATE_SUCCESS: function(e) {
     let {
       applicationId: t,

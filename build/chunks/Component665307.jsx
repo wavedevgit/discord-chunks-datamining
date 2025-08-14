@@ -31,7 +31,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk117554 = require("./117554.js");
 
-function Z(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,14 +40,14 @@ function Z(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      Z(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -81,7 +81,7 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     } = e, a = r.libraryApplication.hasFlag(t);
     return (0, i.jsx)(f.ua7, {
       text: l,
-      children: e => (0, i.jsx)(n, A({
+      children: e => (0, i.jsx)(n, Z({
         className: o()(x.settingIcon, {
           [x.hidden]: !a
         })
@@ -107,7 +107,7 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
           children: e.libraryApplication.getBranchedName(e.application)
         }), e.libraryApplication.hasFlag(P.eHb.PREMIUM) ? (0, i.jsx)(f.ua7, {
           text: j.intl.string(j.t.tG2SzM),
-          children: e => (0, i.jsx)(f.SrA, A({
+          children: e => (0, i.jsx)(f.SrA, Z({
             size: "md",
             color: "currentColor",
             className: x.nitroIcon
@@ -230,7 +230,7 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       onMouseEnter: () => l(t),
       onMouseLeave: a,
       onContextMenu: e => s(e, t),
-      children: (0, i.jsx)("div", A({}, u))
+      children: (0, i.jsx)("div", Z({}, u))
     })
   };
 class G extends(r = Chunk73800.PureComponent) {
@@ -305,7 +305,7 @@ class G extends(r = Chunk73800.PureComponent) {
       }
       module.num_applications_total++
     }
-    Chunk626135.default.track(Chunk981631.rMx.LIBRARY_VIEWED, w(A({}, module), {
+    Chunk626135.default.track(Chunk981631.rMx.LIBRARY_VIEWED, w(Z({}, module), {
       load_id: exports.loadId
     }))
   }
@@ -388,24 +388,24 @@ class G extends(r = Chunk73800.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), Z(this, "_didUnmount", false), Z(this, "_rowRefs", {}), Z(this, "state", {
+    super(...e), A(this, "_didUnmount", false), A(this, "_rowRefs", {}), A(this, "state", {
       overflowMenuRowKey: null,
       highlightedApplicationKey: null != this.props.location.state ? this.props.location.state.applicationId : null
-    }), Z(this, "setActiveRowKey", e => {
+    }), A(this, "setActiveRowKey", e => {
       this.setState({
         overflowMenuRowKey: e.key
       })
-    }), Z(this, "clearActiveRowKey", () => {
+    }), A(this, "clearActiveRowKey", () => {
       this._didUnmount || this.setState({
         overflowMenuRowKey: null
       })
-    }), Z(this, "handleRowMouseEnter", e => {
+    }), A(this, "handleRowMouseEnter", e => {
       this.props.isNavigatingByKeyboard || m.wX(e.key)
-    }), Z(this, "handleRowMouseLeave", () => {
+    }), A(this, "handleRowMouseLeave", () => {
       this.props.isNavigatingByKeyboard || m.wX(null)
-    }), Z(this, "setRowRef", (e, t) => {
+    }), A(this, "setRowRef", (e, t) => {
       this._rowRefs[t] = e
-    }), Z(this, "handleApplicationContextMenu", (e, t) => {
+    }), A(this, "handleApplicationContextMenu", (e, t) => {
       this.setActiveRowKey(t);
       let {
         analyticsContext: r
@@ -414,7 +414,7 @@ class G extends(r = Chunk73800.PureComponent) {
         let {
           default: e
         } = await n.e("98335").then(n.bind(n, 485292));
-        return n => (0, i.jsx)(e, w(A({}, n), {
+        return n => (0, i.jsx)(e, w(Z({}, n), {
           applicationId: t.libraryApplication.id,
           branchId: t.libraryApplication.branchId,
           analyticsContext: r
@@ -449,7 +449,7 @@ function V(e) {
       activeRowKey: I.Z.activeRowKey,
       isNavigatingByKeyboard: I.Z.isNavigatingByKeyboard
     }));
-  return (0, i.jsx)(G, w(A({}, e), {
+  return (0, i.jsx)(G, w(Z({}, e), {
     analyticsContext: t,
     location: n,
     applicationViewItems: r,
@@ -461,6 +461,6 @@ function V(e) {
     isNavigatingByKeyboard: f
   }))
 }
-Z(G, "defaultProps", {
+A(G, "defaultProps", {
   stickyHeader: false
 })

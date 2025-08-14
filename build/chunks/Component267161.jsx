@@ -192,7 +192,7 @@ function en(e) {
     selectedChannelId: t,
     withFastTravel: n,
     focusSectionProps: i
-  }) : (0, r.jsx)(A.Z, {
+  }) : (0, r.jsx)(Z.Z, {
     searchContext: a,
     focusSectionProps: i
   })
@@ -202,7 +202,7 @@ function er(e) {
   let {
     withFastTravel: t,
     focusSectionProps: n
-  } = e, i = (0, c.e7)([k.Z], () => k.Z.getChannelId()), l = (0, Z.$)({
+  } = e, i = (0, c.e7)([k.Z], () => k.Z.getChannelId()), l = (0, A.$)({
     location: "TitleText"
   }), a = (0, c.e7)([R.Z], () => {
     let e = R.Z.getChannel(i);
@@ -252,7 +252,7 @@ let ei = Chunk73800.memo(function() {
   }, []);
   let N = (0, Chunk984802.Ll)(),
     j = (0, Chunk442837.e7)([Chunk451478.Z, Chunk522474.Z], () => (0, Chunk228488.rB)()),
-    Z = function(e) {
+    A = function(e) {
       let {
         showBackForwardButtons: t,
         showCollapsedSidebarIcons: n,
@@ -275,9 +275,9 @@ let ei = Chunk73800.memo(function() {
         className: t,
         leading: (0, r.jsxs)(r.Fragment, {
           children: [s && (0, r.jsx)(b.Z, {
-            firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === Z ? e : true
+            firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === A ? e : true
           }), _ && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(u.P3F, $(J({}, "SIDEBAR" === Z ? e : {}), {
+            children: [(0, r.jsx)(u.P3F, $(J({}, "SIDEBAR" === A ? e : {}), {
               className: Q.button,
               onClick: () => {
                 ee.setState({
@@ -296,12 +296,12 @@ let ei = Chunk73800.memo(function() {
               })
             })]
           }), O && (0, r.jsx)(T.Z, {
-            focusSectionProps: "NOTIFICATIONS_INBOX" === Z ? e : true
+            focusSectionProps: "NOTIFICATIONS_INBOX" === A ? e : true
           })]
         }),
         title: (0, r.jsx)(er, {
           withFastTravel: o,
-          focusSectionProps: "TITLEBAR_FAST_TRAVEL" === Z ? e : true
+          focusSectionProps: "TITLEBAR_FAST_TRAVEL" === A ? e : true
         }),
         trailing: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(E.Z, {
@@ -309,13 +309,13 @@ let ei = Chunk73800.memo(function() {
           }), (0, r.jsx)(h.Z, {
             canShowReminder: true,
             className: Q.button
-          }), y && (0, r.jsx)(x.Z, $(J({}, "RECENTS" === Z ? e : {}), {
+          }), y && (0, r.jsx)(x.Z, $(J({}, "RECENTS" === A ? e : {}), {
             className: Q.button
           })), p ? (0, r.jsx)(I.Z, {
-            focusSectionProps: "HELP" === Z ? e : true,
+            focusSectionProps: "HELP" === A ? e : true,
             className: Q.button
           }) : (0, r.jsx)(v.Z, {
-            focusSectionProps: "HELP" === Z ? e : true,
+            focusSectionProps: "HELP" === A ? e : true,
             className: Q.button
           }), (0, r.jsx)(C.Z, {
             className: Q.button

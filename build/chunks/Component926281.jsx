@@ -1,7 +1,7 @@
 /** Chunk was on 25120 **/
 /** chunk id: 926281, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => b
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -30,7 +30,7 @@ function u(e) {
   return e
 }
 
-function b(e, t) {
+function d(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -43,11 +43,11 @@ function b(e, t) {
   }), e
 }
 
-function d(e) {
+function b(e) {
   let {
     modalProps: t,
     onConfirm: r
-  } = e, [d, p] = i.useState({
+  } = e, [b, p] = i.useState({
     Account: {
       value: "Account",
       label: o.intl.string(o.t["rfe/x8"]),
@@ -82,8 +82,13 @@ function d(e) {
       value: "Servers",
       label: o.intl.string(o.t.JN9c39),
       checked: false
+    },
+    Zendesk: {
+      value: "Zendesk",
+      label: o.intl.string(o.t.yaLeEB),
+      checked: false
     }
-  }), [g, v] = i.useState(false), y = Object.values(d).some(e => e.checked);
+  }), [g, v] = i.useState(false), y = Object.values(b).some(e => e.checked);
   return (0, n.jsx)(l.Modal, {
     title: o.intl.string(o.t.jxXMEx),
     subtitle: o.intl.format(o.t.fSv59f, {
@@ -101,7 +106,7 @@ function d(e) {
       text: o.intl.string(o.t.NYgNg4),
       onClick: () => {
         if (!y) return void v(true);
-        let e = Object.keys(d).filter(e => d[e].checked).map(e => d[e].value);
+        let e = Object.keys(b).filter(e => b[e].checked).map(e => b[e].value);
         null == r || r(e), t.onClose()
       },
       variant: "primary"
@@ -109,17 +114,17 @@ function d(e) {
     children: (0, n.jsxs)(c.Kqy, {
       direction: "vertical",
       gap: 8,
-      children: [Object.keys(d).map(e => {
+      children: [Object.keys(b).map(e => {
         let {
           label: t,
           checked: r
-        } = d[e];
+        } = b[e];
         return (0, n.jsx)(c.XZJ, {
           type: c.XZJ.Types.INVERTED,
           value: r,
           onChange: (t, r) => {
-            p(t => b(u({}, t), {
-              [e]: b(u({}, t[e]), {
+            p(t => d(u({}, t), {
+              [e]: d(u({}, t[e]), {
                 checked: r
               })
             })), r && g && v(false)
