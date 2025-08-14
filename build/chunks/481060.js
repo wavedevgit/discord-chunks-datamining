@@ -565,6 +565,7 @@ require.d(exports, {
   xVE: () => Chunk147479.xV,
   xVZ: () => Chunk657707.xVZ,
   xhG: () => Chunk657707.xhG,
+  xhK: () => Chunk836459.WandAndSparklesRive,
   xjP: () => Chunk657707.xjP,
   xko: () => Chunk109161.x,
   xmR: () => Chunk657707.xmR,

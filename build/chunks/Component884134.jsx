@@ -269,7 +269,15 @@ function z() {
   return (0, Chunk255367.jsx)(Chunk680018.z, {
     variant: "secondary",
     onClick: module,
-    icon: Chunk481060.$2U,
+    icon: {
+      type: "rive",
+      asset: Chunk481060.xhK,
+      riveProps: {
+        dataBinding: {
+          fill: Chunk481060.TVs.colors.ICON_PRIMARY
+        }
+      }
+    },
     text: Chunk388032.intl.string(Chunk119475.default.c9MBEB),
     fullWidth: true
   })
