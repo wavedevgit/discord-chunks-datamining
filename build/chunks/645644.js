@@ -346,7 +346,7 @@ class G {
     if (null == e) return null;
     let n = null == (t = d.ZP.getRunningGames().find(t => {
       var n;
-      return (null == (n = t.name) ? true : n.toLowerCase()) === e.toLowerCase()
+      return (null == (n = (0, d.ow)(t).name) ? true : n.toLowerCase()) === e.toLowerCase()
     })) ? true : t.pid;
     return null != n ? G.gamesByPid[n] : null
   }

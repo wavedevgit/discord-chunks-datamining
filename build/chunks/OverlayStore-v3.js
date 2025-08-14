@@ -186,7 +186,7 @@ function en(e, t) {
 function er(e) {
   var t, n, r;
   if (null != U[e]) return;
-  let i = u.ZP.getGameForPID(e);
+  let i = u.ZP.getGameOrTransformedSubgameForPID(e);
   U[e] = {
     overlay_method: y.gl[null != (t = K[e]) ? t : y.gl.OutOfProcess],
     success: false,
@@ -206,10 +206,10 @@ function er(e) {
 }
 
 function ei(e, t) {
-  var n;
+  let n = u.ZP.getGameOrTransformedSubgameForPID(e);
   return {
     crash_type: t,
-    gameName: null == (n = u.ZP.getGameForPID(e)) ? true : n.name
+    gameName: null == n ? true : n.name
   }
 }
 
@@ -291,7 +291,7 @@ function ef(e) {
 }
 
 function e_(e) {
-  let t = u.ZP.getGameForPID(e);
+  let t = u.ZP.getGameOrTransformedSubgameForPID(e);
   a.Z.setAssociatedGame(null != V ? V : m.UNSET_PID, e, t)
 }
 async function ep() {
@@ -649,7 +649,7 @@ class eq extends(r = Chunk442837.ZP.Store) {
   }
   getFocusedRunningGame() {
     var e;
-    return null == F ? null : null != (e = Chunk594190.ZP.getGameForPID(F)) ? module : null
+    return null == F ? null : null != (e = Chunk594190.ZP.getGameOrTransformedSubgameForPID(F)) ? module : null
   }
   isReady(e) {
     return j.has(e)

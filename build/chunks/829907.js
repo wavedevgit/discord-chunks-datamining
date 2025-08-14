@@ -34,7 +34,7 @@ function p(e) {
 }
 
 function h(e) {
-  let [t] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [o.ZP], n = t.getGameForPID(e);
+  let [t] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [o.ZP], n = t.getGameOrTransformedSubgameForPID(e);
   try {
     return null == n ? s.ZP.GetWindowFullscreenTypeByPid(e) : s.ZP.GetWindowFullscreenTypeByPid(n.pid, n.name, n.fullscreenType)
   } catch (t) {
@@ -99,7 +99,7 @@ async function T(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : v,
     r = await m(e, n),
-    i = o.ZP.getGameForPID(e);
+    i = o.ZP.getGameOrTransformedSubgameForPID(e);
   if (null == i || null == i.name) return r;
   let s = null == (t = a.Z.getGameByName(i.name)) ? true : t.id;
   if (null == s) return r;
@@ -114,7 +114,7 @@ function S(e) {
 }
 
 function A(e) {
-  let t = o.ZP.getGameForPID(e);
+  let t = o.ZP.getGameOrTransformedSubgameForPID(e);
   return null != t && null != t.name && S(t)
 }
 let N = new Set([Chunk593472.Jx.UNKNOWN, Chunk593472.Jx.FULLSCREEN]);

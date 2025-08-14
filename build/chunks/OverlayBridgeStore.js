@@ -147,7 +147,7 @@ function ec(e, t) {
 function eu(e) {
   var t, n;
   if (null != es[e]) return;
-  let r = b.ZP.getGameForPID(e);
+  let r = b.ZP.getGameOrTransformedSubgameForPID(e);
   es[e] = {
     overlay_method: v.gl[v.gl.Hook],
     success: false,
@@ -480,7 +480,7 @@ function eM(e) {
   } = e;
   $ = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "35e45984d63291e4ceee51d60300fe5593616af8"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "c1962fcb3b8eb31d156ccfd04958f608ef09d68e"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function ej(e) {
