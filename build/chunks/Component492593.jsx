@@ -123,7 +123,7 @@ let O = function(e) {
         children: (0, r.jsxs)("div", E(m({
           className: a()(t, {
             [p.gradient]: U,
-            [p.withDisplayNameStyles]: V && (null == L ? true : L.displayNameStyles) != null,
+            [p.withDisplayNameStyles]: V && (null == L ? true : L.displayNameStyles) != null && (null == L ? true : L.guildId) == null,
             [p.wrapper]: true,
             [p.contentOnly]: o,
             [p.compact]: n,
