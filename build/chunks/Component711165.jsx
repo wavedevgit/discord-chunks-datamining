@@ -28,7 +28,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk240126 = require("./240126.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk909136 = require("./909136.js");
+  Chunk792838 = require("./792838.js");
 let N = {
   offset: {
     left: 4,
@@ -49,7 +49,7 @@ function Z() {
     l = Chunk73800.useRef(null),
     o = (0, Chunk724757.Z)("scheduled-messages", Chunk120356);
   return require ? (0, Chunk255367.jsx)(Chunk481060.$jN, {
-    className: Chunk909136.loadingPlaceholder
+    className: Chunk792838.loadingPlaceholder
   }) : 0 === exports.length ? (0, Chunk255367.jsx)(Chunk240126.Z, {
     Icon: Chunk481060.T39,
     header: Chunk388032.intl.string(Chunk388032.t.aJQZfX),
