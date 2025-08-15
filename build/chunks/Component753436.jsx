@@ -23,7 +23,7 @@ function f(e) {
     channelId: m,
     loading: g = false,
     disableInteraction: b = false
-  } = e, j = (0, c.Z)(t.applicationId), y = j.length > 0, O = l.default.getCurrentUser(), x = (null == O ? true : O.id) === n, h = !b && x;
+  } = e, j = (0, c.Z)(t.applicationId), y = j.length > 0, O = l.default.getCurrentUser(), x = (null == O ? true : O.id) === n;
   return g ? (0, r.jsx)("div", {
     className: d.loadingCover
   }) : (0, r.jsxs)("div", {
@@ -34,15 +34,12 @@ function f(e) {
       applicationId: t.applicationId,
       userId: n,
       disableInteraction: b,
-      disableHoverEffect: h,
       className: y ? u.socialProofBackdrop : true
-    }), h && (0, r.jsx)(a.Z, {
+    }), !b && x && (0, r.jsx)(a.Z, {
       game: t,
       widgetType: f,
       className: u.removeGameButton,
       iconSize: "xs"
-    }), (0, r.jsx)("div", {
-      className: u.hoverOverlay
     }), !b && y && (0, r.jsx)(i.Z, {
       label: s.intl.formatToPlainString(s.t.ujhJdH, {
         numFriends: j.length

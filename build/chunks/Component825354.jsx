@@ -63,6 +63,8 @@ function b(e) {
         userId: s.default.getId(),
         widget: t
       }))
+    }, {
+      stackingBehavior: "stack"
     })
   }, O = () => {
     (0, c.G1)(b, t)

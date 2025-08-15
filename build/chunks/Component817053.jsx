@@ -62,29 +62,28 @@ function m(e) {
     gameName: n,
     applicationId: l,
     userId: i,
-    className: f,
-    disableHoverEffect: m
-  } = e, g = (0, s.Z)({
+    className: f
+  } = e, m = (0, s.Z)({
     location: "GameCover",
     applicationId: l,
     source: c.m1.UserProfile,
     sourceUserId: i,
     trackEntryPointImpression: true
   });
-  if (null == g) return (0, r.jsx)("div", {
+  if (null == m) return (0, r.jsx)("div", {
     className: f,
     children: (0, r.jsx)(p, {
       imageSrc: t,
       gameName: n
     })
   });
-  let b = d.intl.formatToPlainString(d.t["8QLQBw"], {
+  let g = d.intl.formatToPlainString(d.t["8QLQBw"], {
     gameName: null != n ? n : d.intl.string(d.t.GIWFlJ)
   });
   return (0, r.jsx)(a.P3F, {
-    onClick: g,
-    "aria-label": b,
-    className: o()(u.clickable, !m && u.hoverEffect, f),
+    onClick: m,
+    "aria-label": g,
+    className: o()(u.clickable, f),
     children: (0, r.jsx)(p, {
       imageSrc: t,
       gameName: n
