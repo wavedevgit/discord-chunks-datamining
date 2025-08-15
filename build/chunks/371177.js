@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 371177, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 89311 **/
+/** chunk id: 371177, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 }), require("./388685.js");
@@ -12,17 +11,17 @@ var Chunk73800 = require("./73800.js"),
   Chunk231338 = require("./231338.js");
 
 function c(e) {
-  let t = r.useRef(new Set),
-    n = r.useMemo(() => {
-      let n = new Set(null == e ? true : e.map(e => e.author_id));
-      return (0, o.E)([...t.current], [...n]) || (t.current = n), t.current
+  let t = n.useRef(new Set),
+    r = n.useMemo(() => {
+      let r = new Set(null == e ? true : e.map(e => e.author_id));
+      return (0, i.E)([...t.current], [...r]) || (t.current = r), t.current
     }, [e]),
-    c = (0, i.Wu)([a.Z], () => Array.from(n).filter(e => {
-      let t = a.Z.getStatus(e);
-      return null !== t && [l.Sk.OFFLINE, l.Sk.INVISIBLE].includes(t)
+    c = (0, a.Wu)([l.Z], () => Array.from(r).filter(e => {
+      let t = l.Z.getStatus(e);
+      return null !== t && [s.Sk.OFFLINE, s.Sk.INVISIBLE].includes(t)
     }));
-  return r.useMemo(() => {
+  return n.useMemo(() => {
     let t = new Set(c);
-    return null == e ? true : e.filter(e => !(0, s.kr)(e) || !t.has(e.author_id))
+    return null == e ? true : e.filter(e => !(0, o.kr)(e) || !t.has(e.author_id))
   }, [e, c])
 }

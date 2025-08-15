@@ -1,4 +1,4 @@
-/** Chunk was on 9885 **/
+/** Chunk was on 42521 **/
 /** chunk id: 623249, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => S,
@@ -56,18 +56,18 @@ function S(e) {
     sourceQuestContent: P
   } = e, A = (0, h.sf)(n);
   null == A && w();
-  let [N, R] = (0, s.useState)(o), B = (0, h.KX)(), k = (0, g.O5)(), q = null == (t = (0, f.WD)()) ? true : t.getId(), I = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, _.g2)({
+  let [N, R] = (0, s.useState)(o), B = (0, h.KX)(), k = (0, g.O5)(), q = null == (t = (0, f.WD)()) ? true : t.getId(), I = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, j.g2)({
     useReducedMotion: I,
     className: y.colorTransition
   }), D = N.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), V = (0, x.Bz)(A), M = (0, i.e7)([m.Z], () => m.Z.getState().theme), L = (0, l.wj)(M) ? v.BRd.DARK : v.BRd.LIGHT, {
-    startConsoleQuest: Z,
-    startingConsoleQuest: W
+    startConsoleQuest: W,
+    startingConsoleQuest: Z
   } = (0, h.GI)({
     questId: A.id,
     beforeRequest: () => {
       Q.startAnimation(), k({
         questId: A.id,
-        questContent: j.jn.CONNECTIONS_MODAL,
+        questContent: b.jn.CONNECTIONS_MODAL,
         questContentCTA: g.jZ.DEFIBRILLATOR,
         sourceQuestContent: P
       })
@@ -117,9 +117,9 @@ function S(e) {
           children: C.intl.string(C.t["+/hZMz"])
         }), (0, r.jsxs)(u.P3F, {
           className: a()(y.refreshWrapper, {
-            [y.disabled]: W
+            [y.disabled]: Z
           }),
-          onClick: Z,
+          onClick: W,
           children: [Q.render(), (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
@@ -158,7 +158,7 @@ function S(e) {
               return (0, r.jsx)("img", (t = O({}, e), n = n = {
                 className: y.gameTile,
                 alt: A.config.messages.gameTitle,
-                src: (0, b.fh)(A, b.eC.GAME_TILE, L).url
+                src: (0, _.fh)(A, _.eC.GAME_TILE, L).url
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -187,7 +187,7 @@ function S(e) {
           w(), (0, x.V$)({
             quest: A
           }, {
-            content: j.jn.CONNECTIONS_MODAL,
+            content: b.jn.CONNECTIONS_MODAL,
             ctaContent: g.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
             impressionId: q,
             sourceQuestContent: P

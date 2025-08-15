@@ -70,9 +70,9 @@ function O(e) {
     disableAutoFocus: m = false
   } = e, {
     newestAnalyticsLocation: E
-  } = (0, o.ZP)(), {
+  } = (0, a.ZP)(), {
     trackUserProfileAction: O
-  } = (0, d.KZ)(), [v, I] = i.useState(""), [T, S] = i.useState((0, s.JM)(v)), A = i.useRef(false), N = i.useMemo(() => b(g({}, a.Ie.USER_PROFILE), {
+  } = (0, d.KZ)(), [v, I] = i.useState(""), [T, S] = i.useState((0, s.JM)(v)), A = i.useRef(false), N = i.useMemo(() => b(g({}, o.Ie.USER_PROFILE), {
     disableAutoFocus: m
   }), [m]);
   return (0, r.jsx)(l.ZP, {

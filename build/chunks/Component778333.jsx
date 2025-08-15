@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 778333, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 778333, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => E
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -21,68 +20,68 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk105341 = require("./105341.js");
 
-function b(e) {
+function E(e) {
   var t;
   let {
     invite: n,
-    message: b,
-    getAcceptInviteContext: y
-  } = e, O = (0, o.e7)([f.default], () => f.default.getId()), v = (null == (t = n.inviter) ? true : t.id) === O, I = n.state === m.r2o.ACCEPTING, {
-    analyticsLocations: T
-  } = (0, c.ZP)(l.Z.INVITE_EMBED), S = (0, o.e7)([p.Z], () => {
+    message: E,
+    getAcceptInviteContext: C
+  } = e, v = (0, l.e7)([p.default], () => p.default.getId()), O = (null == (t = n.inviter) ? true : t.id) === v, y = n.state === g.r2o.ACCEPTING, {
+    analyticsLocations: x
+  } = (0, c.ZP)(s.Z.INVITE_EMBED), j = (0, l.e7)([f.Z], () => {
     var e;
-    return null != n.inviter && p.Z.isFriend(null == (e = n.inviter) ? true : e.id)
-  }), A = i.useCallback(() => {
+    return null != n.inviter && f.Z.isFriend(null == (e = n.inviter) ? true : e.id)
+  }), I = i.useCallback(() => {
     let e = "noop";
-    null != n.inviter && null != _.Z.getDMFromUserId(n.inviter.id) && (e = "transition", a.Z.openPrivateChannel({
+    null != n.inviter && null != m.Z.getDMFromUserId(n.inviter.id) && (e = "transition", a.Z.openPrivateChannel({
       recipientIds: [n.inviter.id]
-    })), (0, s.r$)({
+    })), (0, o.r$)({
       invite: n,
       action: e,
-      inviter_id: b.author.id,
-      invite_message_id: b.id
-    }, T)
-  }, [n, b, T]), N = i.useCallback(() => {
-    (0, s.r$)({
+      inviter_id: E.author.id,
+      invite_message_id: E.id
+    }, x)
+  }, [n, E, x]), S = i.useCallback(() => {
+    (0, o.r$)({
       invite: n,
       action: "accept",
-      inviter_id: b.author.id,
-      invite_message_id: b.id
-    }, T);
-    let e = y("Invite Button Embed");
-    s.ZP.acceptInviteAndTransitionToInviteChannel({
+      inviter_id: E.author.id,
+      invite_message_id: E.id
+    }, x);
+    let e = C("Invite Button Embed");
+    o.ZP.acceptInviteAndTransitionToInviteChannel({
       inviteKey: n.code,
       context: e
     })
-  }, [n, b, T, y]);
+  }, [n, E, x, C]);
   if (null == n.inviter) return null;
-  let C = S ? A : N,
-    R = g.intl.string(g.t.ib7Ng4),
-    P = u.Z.Button.Colors.GREEN;
-  S ? (R = g.intl.string(g.t.xhxnPj), P = u.Z.Button.Colors.PRIMARY) : v && (R = g.intl.string(g.t.ib7Ng4), P = u.Z.Button.Colors.PRIMARY);
-  let w = v ? g.intl.string(g.t.eQyu1N) : g.intl.string(g.t.PYJHW1),
-    D = null != n.inviter ? "".concat(n.inviter.username) : "",
-    L = null != n.inviter ? h.ZP.getUserTag(n.inviter) : "";
+  let T = j ? I : S,
+    P = h.intl.string(h.t.ib7Ng4),
+    N = u.Z.Button.Colors.GREEN;
+  j ? (P = h.intl.string(h.t.xhxnPj), N = u.Z.Button.Colors.PRIMARY) : O && (P = h.intl.string(h.t.ib7Ng4), N = u.Z.Button.Colors.PRIMARY);
+  let A = O ? h.intl.string(h.t.eQyu1N) : h.intl.string(h.t.PYJHW1),
+    w = null != n.inviter ? "".concat(n.inviter.username) : "",
+    Z = null != n.inviter ? _.ZP.getUserTag(n.inviter) : "";
   return (0, r.jsxs)(u.Z, {
     children: [(0, r.jsx)(u.Z.Header, {
-      text: w
+      text: A
     }), (0, r.jsxs)(u.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: E.headerLine,
+        className: b.headerLine,
         children: [(0, r.jsx)(u.Z.Icon, {
           user: new d.Z(n.inviter),
-          onClick: S ? C : true
+          onClick: j ? T : true
         }), (0, r.jsx)(u.Z.Info, {
-          title: D,
-          onClick: S ? C : true,
-          children: L
+          title: w,
+          onClick: j ? T : true,
+          children: Z
         })]
       }), (0, r.jsx)(u.Z.Button, {
-        onClick: C,
-        submitting: I,
-        isDisabled: v,
-        color: P,
-        children: R
+        onClick: T,
+        submitting: y,
+        isDisabled: O,
+        color: N,
+        children: P
       })]
     })]
   })

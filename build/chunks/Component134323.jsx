@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 134323, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37220 **/
+/** chunk id: 134323, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => s
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -11,10 +10,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk996861 = require("./996861.js"),
   Chunk388032 = require("./388032.jsx");
 
-function l(e, t) {
-  return (0, o.U)(t, e) ? (0, r.jsx)(i.sNh, {
+function s(e, t) {
+  return (0, l.U)(t, e) ? (0, r.jsx)(i.sNh, {
     id: "reply",
-    label: s.intl.string(s.t["5IEsGx"]),
+    label: o.intl.string(o.t["5IEsGx"]),
     icon: i.n$P,
     action: n => {
       (0, a.HH)(t, e, n)

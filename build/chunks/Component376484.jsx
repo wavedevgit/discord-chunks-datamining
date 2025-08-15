@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 376484, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 376484, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk446411 = require("./446411.jsx"),
   Chunk454585 = require("./454585.js"),
@@ -17,67 +16,64 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk356177 = require("./356177.js");
 
-function p(e) {
+function f(e) {
   let {
     message: t,
     channel: i,
-    compact: s
-  } = e, l = null != t.embeds && t.embeds.length > 0;
+    compact: o
+  } = e, s = null != t.embeds && t.embeds.length > 0;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(c.Z, {
-      className: o()(_.mainContainer, {
-        [_.compact]: s
+      className: l()(m.mainContainer, {
+        [m.compact]: o
       }),
       icon: n(570111),
-      compact: s,
+      compact: o,
       children: (0, r.jsx)("div", {
-        className: o()(_.__invalid_content, {
-          [_.compact]: s
+        className: l()(m.__invalid_content, {
+          [m.compact]: o
         }),
         children: (0, r.jsx)("div", {
-          className: o()(_.__invalid_messageContent, {
-            [_.compact]: s
+          className: l()(m.__invalid_messageContent, {
+            [m.compact]: o
           }),
           children: t.content
         })
       })
     }), (0, r.jsx)("div", {
-      className: o()(_.__invalid_embedContent, {
-        [_.compact]: s
+      className: l()(m.__invalid_embedContent, {
+        [m.compact]: o
       }),
-      children: (0, r.jsx)(h, {
+      children: (0, r.jsx)(_, {
         message: t
       })
     }), (0, r.jsx)("div", {
-      className: _.actions,
+      className: m.actions,
       children: (0, r.jsx)(a.zxk, {
         variant: "secondary",
-        text: f.intl.string(f.t.zdBCIi),
+        text: p.intl.string(p.t.zdBCIi),
         onClick: () => {
-          l ? (0, u.z$)(t) : (0, u.XP)(i.guild_id, i.id, t.id)
+          s ? (0, u.z$)(t) : (0, u.XP)(i.guild_id, i.id, t.id)
         }
       })
     })]
   })
 }
 
-function h(e) {
+function _(e) {
   var t;
   let {
     message: n
   } = e, [i] = null != (t = n.embeds) ? t : [];
-  if (null == i) return null;
-  let o = (e, t) => l.Z.parseEmbedTitle(t, true, {
+  return null == i ? null : (0, r.jsx)(o.ZP, {
+    className: m.embed,
+    embed: i,
+    renderTitle: (e, t) => s.Z.parseEmbedTitle(t, true, {
       channelId: n.channel_id
     }),
-    a = (e, t, r) => l.Z.parse(t, true, {
+    renderDescription: (e, t, r) => s.Z.parse(t, true, {
       channelId: n.channel_id
-    });
-  return (0, r.jsx)(s.ZP, {
-    className: _.embed,
-    embed: i,
-    renderTitle: o,
-    renderDescription: a,
+    }),
     autoPlayGif: false,
     renderImageComponent: d.VqG,
     renderVideoComponent: d.VqG,

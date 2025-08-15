@@ -1,7 +1,7 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 258871, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => O
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -48,7 +48,7 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = [{
+let _ = [{
     key: "EVENTS",
     renderIcon: e => (0, r.jsx)(o.Que, {
       size: "md",
@@ -107,7 +107,7 @@ let O = [{
     handler: (e, t) => (0, o.ZDy)(async () => {
       let {
         default: i
-      } = await Promise.all([n.e("7654"), n.e("54833")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
       return n => (0, r.jsx)(i, b(m({}, n), {
         guild: e,
         channel: t,
@@ -115,7 +115,7 @@ let O = [{
       }))
     })
   }],
-  _ = e => {
+  O = e => {
     let {
       guild: t,
       channel: n
@@ -137,7 +137,7 @@ let O = [{
       numEvents: o.length
     }), [o.length]), m = (0, f.t)(n);
     return (0, r.jsx)(r.Fragment, {
-      children: O.map(e => {
+      children: _.map(e => {
         let {
           key: i,
           getName: l,

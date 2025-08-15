@@ -1,81 +1,77 @@
-/** Chunk was on web.js **/
-/** chunk id: 214788, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 214788, original params: t,e,r (module,exports,require) **/
 "use strict";
-
-function r(e, t) {
-  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
-}
 var Chunk359282 = require("./359282.js"),
   Chunk720379 = require("./720379.js"),
   Chunk65183 = require("./65183.js"),
-  s = Chunk65183.List,
-  l = Chunk65183.Map,
-  c = Chunk65183.OrderedSet,
-  u = Chunk65183.Record,
-  d = Chunk65183.Repeat,
-  f = c(),
-  _ = {
+  a = Chunk65183.List,
+  u = Chunk65183.Map,
+  s = Chunk65183.OrderedSet,
+  c = Chunk65183.Record,
+  l = Chunk65183.Repeat,
+  f = s(),
+  p = {
     parent: null,
-    characterList: s(),
-    data: l(),
+    characterList: a(),
+    data: u(),
     depth: 0,
     key: "",
     text: "",
     type: "unstyled",
-    children: s(),
+    children: a(),
     prevSibling: null,
     nextSibling: null
   },
-  p = function(e, t) {
-    return e.getStyle() === t.getStyle()
+  h = function(t, e) {
+    return t.getStyle() === e.getStyle()
   },
-  h = function(e, t) {
-    return e.getEntity() === t.getEntity()
+  d = function(t, e) {
+    return t.getEntity() === e.getEntity()
   },
-  m = function(e) {
-    if (!e) return e;
-    var t = e.characterList,
-      n = e.text;
-    return n && !t && (e.characterList = s(d(i.EMPTY, n.length))), e
+  g = function(t) {
+    if (!t) return t;
+    var e = t.characterList,
+      r = t.text;
+    return r && !e && (t.characterList = a(l(n.EMPTY, r.length))), t
   };
-module.exports = function(e) {
-  function t() {
-    var t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : _;
-    return e.call(this, m(t)) || this
+module.exports = function(t) {
+  function e() {
+    var e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p;
+    return t.call(this, g(e)) || this
   }
-  r(t, e);
-  var n = t.prototype;
-  return n.getKey = function() {
+  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t;
+  var r = e.prototype;
+  return r.getKey = function() {
     return this.get("key")
-  }, n.getType = function() {
+  }, r.getType = function() {
     return this.get("type")
-  }, n.getText = function() {
+  }, r.getText = function() {
     return this.get("text")
-  }, n.getCharacterList = function() {
+  }, r.getCharacterList = function() {
     return this.get("characterList")
-  }, n.getLength = function() {
+  }, r.getLength = function() {
     return this.getText().length
-  }, n.getDepth = function() {
+  }, r.getDepth = function() {
     return this.get("depth")
-  }, n.getData = function() {
+  }, r.getData = function() {
     return this.get("data")
-  }, n.getInlineStyleAt = function(e) {
-    var t = this.getCharacterList().get(e);
-    return t ? t.getStyle() : f
-  }, n.getEntityAt = function(e) {
-    var t = this.getCharacterList().get(e);
-    return t ? t.getEntity() : null
-  }, n.getChildKeys = function() {
+  }, r.getInlineStyleAt = function(t) {
+    var e = this.getCharacterList().get(t);
+    return e ? e.getStyle() : f
+  }, r.getEntityAt = function(t) {
+    var e = this.getCharacterList().get(t);
+    return e ? e.getEntity() : null
+  }, r.getChildKeys = function() {
     return this.get("children")
-  }, n.getParentKey = function() {
+  }, r.getParentKey = function() {
     return this.get("parent")
-  }, n.getPrevSiblingKey = function() {
+  }, r.getPrevSiblingKey = function() {
     return this.get("prevSibling")
-  }, n.getNextSiblingKey = function() {
+  }, r.getNextSiblingKey = function() {
     return this.get("nextSibling")
-  }, n.findStyleRanges = function(e, t) {
-    o(this.getCharacterList(), p, e, t)
-  }, n.findEntityRanges = function(e, t) {
-    o(this.getCharacterList(), h, e, t)
-  }, t
-}(u(_))
+  }, r.findStyleRanges = function(t, e) {
+    i(this.getCharacterList(), h, t, e)
+  }, r.findEntityRanges = function(t, e) {
+    i(this.getCharacterList(), d, t, e)
+  }, e
+}(c(p))

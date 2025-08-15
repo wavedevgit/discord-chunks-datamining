@@ -33,12 +33,12 @@ function p(e) {
   } = (0, c.Z)({
     userId: t.id,
     guildId: h
-  }), v = t.id === n.id, I = (0, i.e7)([s.Z, a.Z], () => {
-    let e = v ? s.Z.getStatus() : a.Z.getStatus(t.id, h);
+  }), v = t.id === n.id, I = (0, i.e7)([s.Z, o.Z], () => {
+    let e = v ? s.Z.getStatus() : o.Z.getStatus(t.id, h);
     return e === _.Sk.OFFLINE || e === _.Sk.INVISIBLE
   }), {
     voiceActivityStatusEnabled: T
-  } = (0, o.U)({
+  } = (0, a.U)({
     location: "UserProfileFeaturedActivity"
   });
   return I || null == b ? I || null == y ? T && !I && null != O ? (0, r.jsx)(f.Z, {

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 843638, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 843638, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -16,15 +15,15 @@ var Chunk442837 = require("./442837.js"),
 function u(e) {
   let {
     selectedParticipant: t
-  } = (0, i.cj)([s.Z], () => ({
-    selectedParticipant: s.Z.getSelectedParticipant(e)
-  }), [e]), n = () => {
-    null != t ? a.Z.selectParticipant(e, null) : a.Z.selectParticipant(e, l.dF.AUTO)
-  };
-  return (0, r.jsx)(o.S8, {
+  } = (0, i.cj)([o.Z], () => ({
+    selectedParticipant: o.Z.getSelectedParticipant(e)
+  }), [e]);
+  return (0, r.jsx)(l.S8, {
     id: "call-grid-view",
     label: c.intl.string(c.t["3jrUBg"]),
     checked: null == t,
-    action: n
+    action: () => {
+      null != t ? a.Z.selectParticipant(e, null) : a.Z.selectParticipant(e, s.dF.AUTO)
+    }
   })
 }

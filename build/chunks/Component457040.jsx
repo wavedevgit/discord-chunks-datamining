@@ -2,12 +2,12 @@
 /** chunk id: 457040, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => eo
+  Z: () => ea
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk954955 = require("./954955.js"),
-  a = require.n(Chunk954955),
+  o = require.n(Chunk954955),
   Chunk94171 = require("./94171.js"),
   Chunk442837 = require("./442837.js"),
   Chunk477690 = require("./477690.js"),
@@ -63,7 +63,7 @@ function B(e) {
   return e
 }
 
-function Z(e, t) {
+function V(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -75,11 +75,11 @@ function Z(e, t) {
 }
 
 function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
+let Z = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
   H = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_LEFT),
   Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_RIGHT),
   W = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_MARGIN),
@@ -91,20 +91,20 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
   J = q + 2 * X,
   $ = 8,
   ee = 200,
-  et = a()(Chunk217590.Iw, ee),
-  en = a()(Chunk217590.m1, ee),
+  et = o()(Chunk217590.Iw, ee),
+  en = o()(Chunk217590.m1, ee),
   er = Chunk73800.forwardRef(function(e, t) {
-    var o;
+    var a;
     let {
-      containerWidth: a,
+      containerWidth: o,
       channel: c,
       onSelectSticker: v,
       closePopout: G
     } = e, {
-      location: Z
+      location: V
     } = (0, d.O)(), {
       analyticsLocations: z
-    } = (0, _.ZP)(f.Z.STICKER_PICKER), q = (null == (o = (0, E.N)()) ? true : o.subscription_trial) != null, X = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, I.Q)(e => e.showPremiumUpsell), [eo, ea] = (0, h.Iu)(e => [e.searchQuery, e.isSearchSuggestion], s.X), es = i.useRef("");
+    } = (0, _.ZP)(f.Z.STICKER_PICKER), q = (null == (a = (0, E.N)()) ? true : a.subscription_trial) != null, X = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, I.Q)(e => e.showPremiumUpsell), [ea, eo] = (0, h.Iu)(e => [e.searchQuery, e.isSearchSuggestion], s.X), es = i.useRef("");
     i.useImperativeHandle(t, () => ({
       onPickerOpen: ex
     }));
@@ -112,7 +112,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       ec = 0 === el.filter(e => e.type !== C.Ih.EMPTY_GUILD_UPSELL).length,
       eu = (0, m.ep)({
         gridWrapperRef: X,
-        containerWidth: a,
+        containerWidth: o,
         showingEmptyState: ec,
         listPaddingLeft: H,
         listScrollbarWidth: $
@@ -120,7 +120,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       ed = b._O.useSetting(),
       ef = i.useMemo(() => new Set(ed), [ed]),
       e_ = (0, l.e7)([y.default], () => y.default.getCurrentUser()),
-      ep = i.useMemo(() => (0, x.S)(eo, e_, c), [eo, e_, c]),
+      ep = i.useMemo(() => (0, x.S)(ea, e_, c), [ea, e_, c]),
       eh = (0, A.RJ)(),
       em = (0, A.LZ)(),
       eg = (0, l.cj)([N.Z], () => N.Z.getAllGuildStickers()),
@@ -130,9 +130,9 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       } = null != ep ? ep : {},
       ey = eE.length + eb.length,
       eO = i.useCallback(e => {
-        "" === eo ? (0, S.On)(e) : (0, S.Yk)(e, eo, ey), v(e.sticker, C.V0.STICKER_PICKER)
-      }, [v, eo, ey]),
-      ev = null != eu && eu > V,
+        "" === ea ? (0, S.On)(e) : (0, S.Yk)(e, ea, ey), v(e.sticker, C.V0.STICKER_PICKER)
+      }, [v, ea, ey]),
+      ev = null != eu && eu > Z,
       {
         rowCount: eI,
         rowCountBySection: eT,
@@ -154,9 +154,9 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         } = t;
         switch (e.type) {
           case C.al.CREATE_STICKER:
-            O.default.track(k.rMx.OPEN_MODAL, {
-              type: k.jXE.CREATE_STICKER_MODAL,
-              location: Z
+            O.default.track(j.rMx.OPEN_MODAL, {
+              type: j.jXE.CREATE_STICKER_MODAL,
+              location: V
             }), (0, u.ZDy)(async () => {
               let {
                 default: t
@@ -169,7 +169,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           case C.al.STICKER:
             null != e.sticker && (0, T.kl)(e.sticker, e_, c) && eO(e)
         }
-      }, [Z, e_, c, eO]),
+      }, [V, e_, c, eO]),
       {
         getItemProps: eR,
         getRowProps: eP,
@@ -183,7 +183,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         onGridItemSelect: eC,
         store: p.ZN,
         setInspectedStickerPosition: p.ZN.setInspectedExpressionPosition,
-        gridNavigatorId: j.Vr
+        gridNavigatorId: k.Vr
       });
     i.useEffect(() => p.ZN.resetStoreState, []);
     let ex = () => {
@@ -197,7 +197,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       null != eg && [...eg.values()].forEach(e => {
         r += e.length
       }), (0, S.ev)({
-        containerWidth: a,
+        containerWidth: o,
         favoriteStickers: eh,
         frequentlyUsedStickers: em,
         guildStickers: t,
@@ -205,16 +205,16 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       })
     };
     i.useEffect(() => {
-      "" === es.current && "" !== eo && (0, S.n8)(), es.current = eo
-    }, [eo]), i.useEffect(() => {
-      0 === ey ? et(eo) : en(eo, ey, ea)
-    }, [eo, ey, ea]), i.useLayoutEffect(() => {
+      "" === es.current && "" !== ea && (0, S.n8)(), es.current = ea
+    }, [ea]), i.useEffect(() => {
+      0 === ey ? et(ea) : en(ea, ey, eo)
+    }, [ea, ey, eo]), i.useLayoutEffect(() => {
       var e;
       null == (e = er.current) || e.focus()
     }, []);
     let eM = i.useCallback(() => {
-      G(), O.default.track(k.rMx.PREMIUM_PROMOTION_OPENED, {
-        location_section: k.jXE.STICKER_PICKER_UPSELL
+      G(), O.default.track(j.rMx.PREMIUM_PROMOTION_OPENED, {
+        location_section: j.jXE.STICKER_PICKER_UPSELL
       }), (0, g.z)()
     }, [G]);
     return (0, r.jsxs)(_.Gt, {
@@ -234,7 +234,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         children: [(0, r.jsx)("div", F(B({
           ref: X,
           className: U.listWrapper,
-          id: j.Vr
+          id: k.Vr
         }, ew), {
           children: null != eu ? (0, r.jsx)(D.Z, {
             ref: ee,
@@ -263,8 +263,8 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
   }),
   ei = (e, t) => ((0, A.fP)(), (0, r.jsx)("div", {
     className: U.wrapper,
-    id: j.nZ,
-    "aria-labelledby": j.ED,
+    id: k.nZ,
+    "aria-labelledby": k.ED,
     role: "tabpanel",
     children: e.isLoading ? (0, r.jsx)(u.$jN, {
       className: U.loadingIndicator
@@ -272,4 +272,4 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       ref: t
     }))
   })),
-  eo = Chunk73800.forwardRef(ei)
+  ea = Chunk73800.forwardRef(ei)

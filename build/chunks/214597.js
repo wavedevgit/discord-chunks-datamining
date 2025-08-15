@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 214597, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 30243 **/
+/** chunk id: 214597, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => c
 });
 var Chunk73800 = require("./73800.js"),
   Chunk902704 = require("./902704.js"),
@@ -10,14 +9,14 @@ var Chunk73800 = require("./73800.js"),
   Chunk720202 = require("./720202.js"),
   Chunk594174 = require("./594174.js");
 
-function l(e) {
+function c(e) {
   let {
     entry: t,
-    channel: n
-  } = e, l = r.useRef([]);
-  return r.useEffect(() => {
-    (0, i.E)(l.current, t.participants) || (l.current = t.participants, t.participants.filter(e => null == s.default.getUser(e)).forEach(e => {
-      null == n.guild_id ? (0, o.PR)(e) : a.Z.requestMember(n.guild_id, e)
+    channel: r
+  } = e, c = n.useRef([]);
+  return n.useEffect(() => {
+    (0, l.E)(c.current, t.participants) || (c.current = t.participants, t.participants.filter(e => null == a.default.getUser(e)).forEach(e => {
+      null == r.guild_id ? (0, i.PR)(e) : o.Z.requestMember(r.guild_id, e)
     }))
-  }, [t, n.guild_id]), {}
+  }, [t, r.guild_id]), {}
 }

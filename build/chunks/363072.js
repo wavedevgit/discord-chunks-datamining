@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 363072, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 25292 **/
+/** chunk id: 363072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => s
+  B: () => c
 });
 var Chunk141106 = require("./141106.js");
 
@@ -14,12 +13,12 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = e => "*" === e.charAt(e.length - 1) ? r.dQ.PrefixMatch : r.dQ.ExactMatch;
-class a {
+class o {
   _internalAdd(e, t, n) {
-    let r = e.charAt(0),
-      i = this.suffix[r];
-    null == i && (i = new a, this.suffix[r] = i, null != n ? i.value = n.slice(0, n.length - e.length + 1) : i.value = r), e.length > 1 && "*" !== e.charAt(1) ? i._internalAdd(e.substring(1), t, null != n ? n : e) : (i.strategy = o(t), i.isWord = true)
+    let i = e.charAt(0),
+      c = this.suffix[i];
+    if (null == c && (c = new o, this.suffix[i] = c, null != n ? c.value = n.slice(0, n.length - e.length + 1) : c.value = i), e.length > 1 && "*" !== e.charAt(1)) c._internalAdd(e.substring(1), t, null != n ? n : e);
+    else c.strategy = "*" === t.charAt(t.length - 1) ? r.dQ.PrefixMatch : r.dQ.ExactMatch, c.isWord = true
   }
   add(e) {
     this._internalAdd(e, e)
@@ -28,9 +27,9 @@ class a {
     i(this, "isWord", true), i(this, "value", true), i(this, "suffix", {}), i(this, "strategy", true), this.isWord = null, this.value = null, this.suffix = {}, this.strategy = Chunk141106.dQ.ExactMatch
   }
 }
-class s {
+class c {
   static fromSnapshot(e) {
-    let t = new s;
+    let t = new c;
     return t.trie = e.trie, t
   }
   search(e) {
@@ -38,28 +37,28 @@ class s {
       n = null,
       i = null,
       o = {};
-    for (let l = 0; l <= e.length; l++)
-      if (n = e.charAt(l), (t = null != (i = t.suffix[n]) ? i : null != this.trie.suffix[n] ? this.trie.suffix[n] : this.trie).isWord) {
-        var a, s;
+    for (let s = 0; s <= e.length; s++)
+      if (n = e.charAt(s), (t = null != (i = t.suffix[n]) ? i : null != this.trie.suffix[n] ? this.trie.suffix[n] : this.trie).isWord) {
+        var c, a;
         let n = t.strategy,
-          i = l + 1 - (null != (s = null == (a = t.value) ? true : a.length) ? s : 0),
-          c = l;
-        if ((0, r.BD)(e, i, c, n)) {
-          let t = (0, r.jO)(e, i, c, n);
+          i = s + 1 - (null != (a = null == (c = t.value) ? true : c.length) ? a : 0),
+          u = s;
+        if ((0, r.BD)(e, i, u, n)) {
+          let t = (0, r.jO)(e, i, u, n);
           (null == o[t.start] || o[t.start].end < t.end) && (o[t.start] = t)
         }
       } return o
   }
   addWord(e) {
-    null == this.trie && (this.trie = new a), this.trie.add(e)
+    null == this.trie && (this.trie = new o), this.trie.add(e)
   }
   addWords(e) {
     e.forEach(e => this.addWord(e))
   }
   clear() {
-    this.trie = new a
+    this.trie = new o
   }
   constructor() {
-    i(this, "trie", true), this.trie = new a
+    i(this, "trie", true), this.trie = new o
   }
 }

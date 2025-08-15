@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ic: () => x,
-  O5: () => j,
-  Zk: () => k,
+  O5: () => k,
+  Zk: () => j,
   _3: () => L,
   _F: () => M,
   _b: () => N,
@@ -90,7 +90,7 @@ function R(e, t, n) {
     quest_type: r.questType,
     game_id: r.application.id,
     game_name: r.application.name,
-    client_ad_session_id: (0, a.Gy)(n).uuid
+    client_ad_session_id: (0, o.Gy)(n).uuid
   }, (0, p.qe)(e.id, t))
 }
 
@@ -109,13 +109,13 @@ function w(e) {
     event: n,
     properties: r,
     trackGuildAndChannelMetadata: i,
-    shouldExtendSession: o = false,
-    sourceQuestContent: a
+    shouldExtendSession: a = false,
+    sourceQuestContent: o
   } = e, l = h.Z.quests.get(t);
   if (null == l || (0, g.X7)({
       location: b.dr.QUEST_PREVIEW_TOOL
     }) && u.Z.getLayers().includes(y.S9g.USER_SETTINGS)) return;
-  let f = v({}, R(l, a, o), r);
+  let f = v({}, R(l, o, a), r);
   if (c.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", n, f), l.preview) return;
   let _ = A.has(n);
   if (i) return s.ZP.trackWithMetadata(n, f, _);
@@ -131,16 +131,16 @@ async function L(e) {
     questId: t,
     questContent: n,
     questContentCTA: r,
-    questContentPosition: a,
+    questContentPosition: o,
     questContentRowIndex: s,
     impressionId: c,
     trackGuildAndChannelMetadata: u = false,
     sourceQuestContent: d
-  } = e, _ = h.Z.getQuest(t), m = await (0, o.S)();
+  } = e, _ = h.Z.getQuest(t), m = await (0, a.S)();
   w({
     questId: t,
     event: y.rMx.QUEST_CONTENT_CLICKED,
-    properties: T(v({}, P(n, a, s), (0, l.Z)()), {
+    properties: T(v({}, P(n, o, s), (0, l.Z)()), {
       cta_name: r,
       quest_status: null != _ ? C(_) : null,
       impression_id: c,
@@ -159,16 +159,16 @@ function x(e) {
     sourceQuestContent: n,
     questId: r,
     mode: i,
-    prevMode: o
-  } = e, a = P(t);
+    prevMode: a
+  } = e, o = P(t);
   w({
     questId: r,
     event: y.rMx.QUEST_BAR_MODE_CHANGED,
     properties: {
-      content_id: a.content_id,
-      content_name: a.content_name,
+      content_id: o.content_id,
+      content_name: o.content_name,
       mode: i,
-      previous_mode: o
+      previous_mode: a
     },
     sourceQuestContent: n
   })
@@ -185,24 +185,24 @@ function M() {
   }, [module])
 }
 
-function j() {
+function k() {
   let e = M();
   return Chunk73800.useCallback(t => {
     let {
       questId: n,
       questContent: r,
-      questContentCTA: a,
+      questContentCTA: o,
       questContentPosition: s,
       questContentRowIndex: c,
       trackGuildAndChannelMetadata: u = false,
       sourceQuestContent: d
     } = t, _ = h.Z.getQuest(n);
-    (0, o.S)().then(t => {
+    (0, a.S)().then(t => {
       e({
         questId: n,
         event: y.rMx.QUEST_CONTENT_CLICKED,
         properties: T(v({}, P(r, s, c), (0, l.Z)()), {
-          cta_name: a,
+          cta_name: o,
           quest_status: null != _ ? C(_) : null,
           click_id: (0, i.Z)(),
           android_advertising_id: null != t && (0, f.isAndroid)() ? t.advertisingId : null
@@ -215,7 +215,7 @@ function j() {
   }, [module])
 }
 
-function k(e, t) {
+function j(e, t) {
   r.useEffect(() => {
     U(t, e)
   }, [e, t])

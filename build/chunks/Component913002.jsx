@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -71,7 +71,7 @@ function v(e) {
   let {
     isVisible: t,
     isExpandable: n,
-    onCloseProfile: o
+    onCloseProfile: a
   } = e, {
     analyticsLocations: m
   } = (0, u.ZP)(), {
@@ -79,14 +79,14 @@ function v(e) {
   } = (0, _.KZ)(), E = i.useRef(null), b = i.useRef(null), [v, I] = (0, s.Wu)([c.Z], () => [c.Z.useReducedMotion, c.Z.keyboardModeEnabled]), T = !n || v || I ? 0 : y, S = () => {
     g({
       action: "PRESS_EDIT_CUSTOM_STATUS"
-    }), O(m), null == o || o()
+    }), O(m), null == a || a()
   }, A = () => {
     g({
       action: "PRESS_CLEAR_CUSTOM_STATUS"
     }), f.Ok.updateSetting(true)
   };
   return (0, r.jsxs)(d.ZP, {
-    className: a()(h.popover, {
+    className: o()(h.popover, {
       [h.visible]: t,
       [h.expandable]: n
     }),
@@ -97,7 +97,7 @@ function v(e) {
       "aria-label": false,
       children: (0, r.jsx)(d.zx, {
         ref: E,
-        className: a()(h.button, h.left),
+        className: o()(h.button, h.left),
         "aria-label": p.intl.string(p.t.QdHxoq),
         "aria-haspopup": "dialog",
         onClick: S,
@@ -112,7 +112,7 @@ function v(e) {
       "aria-label": false,
       children: (0, r.jsx)(d.zx, {
         ref: b,
-        className: a()(h.button, h.right),
+        className: o()(h.button, h.right),
         "aria-label": p.intl.string(p.t.wfYTHR),
         onClick: A,
         children: (0, r.jsx)(l.XHJ, {

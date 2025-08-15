@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 162297, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 162297, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -16,40 +15,40 @@ var Chunk255367 = require("./255367.js"),
   Chunk230171 = require("./230171.jsx"),
   Chunk433534 = require("./433534.js");
 
-function p(e) {
+function f(e) {
   let {
     applicationId: t
-  } = e, [n, o, s] = (0, a.Wu)([d.Z], () => [d.Z.getApplication(t), d.Z.isFetchingApplication(t), d.Z.didFetchingApplicationFail(t)], [t]);
+  } = e, [n, l, o] = (0, a.Wu)([d.Z], () => [d.Z.getApplication(t), d.Z.isFetchingApplication(t), d.Z.didFetchingApplicationFail(t)], [t]);
   return (i.useEffect(() => {
-    null != n || o || s || u.ZP.fetchApplication(t)
-  }, [n, o, s, t]), null != n && (0, _.Eb)({
+    null != n || l || o || u.ZP.fetchApplication(t)
+  }, [n, l, o, t]), null != n && (0, m.Eb)({
     customInstallUrl: n.customInstallUrl,
     installParams: n.installParams,
     integrationTypesConfig: n.integrationTypesConfig
-  })) ? (0, r.jsx)(h, {
+  })) ? (0, r.jsx)(_, {
     application: n
   }) : null
 }
 
-function h(e) {
+function _(e) {
   let {
     application: t
   } = e, n = i.useCallback(() => {
     (0, c.h)({
-      type: o.ImpressionTypes.VIEW,
-      name: o.ImpressionNames.APP_OAUTH2_LINK_EMBED,
+      type: l.ImpressionTypes.VIEW,
+      name: l.ImpressionNames.APP_OAUTH2_LINK_EMBED,
       properties: {
         application_id: t.id
       }
     })
   }, [t.id]), {
     analyticsLocations: a
-  } = (0, l.ZP)(s.Z.APP_OAUTH2_LINK_EMBED);
-  return (0, r.jsx)(l.Gt, {
+  } = (0, s.ZP)(o.Z.APP_OAUTH2_LINK_EMBED);
+  return (0, r.jsx)(s.Gt, {
     value: a,
-    children: (0, r.jsx)(f.O, {
+    children: (0, r.jsx)(p.O, {
       app: t,
-      linkType: f.U.OAUTH,
+      linkType: p.U.OAUTH,
       onView: n
     })
   })

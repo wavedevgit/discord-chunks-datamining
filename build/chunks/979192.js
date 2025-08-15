@@ -12,7 +12,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 async function c(e, t) {
   await (0, i.PS)(e, n => {
-    n.leaderboardsDisabled = !n.leaderboardsDisabled, a.default.track(l.rMx.LEADERBOARD_USER_OPT_OUT_UPDATED, {
+    n.leaderboardsDisabled = !n.leaderboardsDisabled, o.default.track(l.rMx.LEADERBOARD_USER_OPT_OUT_UPDATED, {
       leaderboard_id: t,
       guild_id: e,
       leaderboards_disabled: n.leaderboardsDisabled
@@ -25,9 +25,9 @@ async function c(e, t) {
 }
 
 function u(e, t) {
-  let n = (0, r.e7)([o.Z], () => {
+  let n = (0, r.e7)([a.Z], () => {
     var t, n;
-    return null == (n = o.Z.settings.guilds) || null == (t = n.guilds) ? true : t[e]
+    return null == (n = a.Z.settings.guilds) || null == (t = n.guilds) ? true : t[e]
   }, [e]);
   return {
     leaderboardsDisabled: (null == n ? true : n.leaderboardsDisabled) === true,

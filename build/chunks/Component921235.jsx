@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 921235, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 921235, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => j
 }), require("./388685.js"), require("./583741.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -23,70 +22,69 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk315146 = require("./315146.js");
-let v = "847199849233514549",
-  I = "749054660769218631";
+let v = "749054660769218631";
 
-function T(e) {
+function j(e) {
   var t;
   let {
     channel: n
-  } = e, [o, T] = i.useState("");
+  } = e, [l, j] = i.useState("");
   i.useEffect(() => {
-    (0, u.FQ)(v, true)
+    (0, u.FQ)("847199849233514549", true)
   }, []);
-  let S = (0, s.e7)([p.Z, _.default], () => !!a()(p.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== _.default.getId() && e.state === b.yb.SENT && !(0, E.Z)(e))),
-    A = (0, s.e7)([h.default], () => h.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
-    N = null != (t = g.ZP.useName(A)) ? t : y.intl.string(y.t.y1Wu2d),
-    C = (0, s.e7)([d.Z], () => d.Z.getStickerById(I)),
-    R = i.useCallback(async () => {
-      if (null == o || "" === o) try {
-        await c.Z.sendGreetMessage(n.id, I), m.default.track(b.rMx.DM_EMPTY_ACTION, {
+  let O = (0, o.e7)([f.Z, h.default], () => !!a()(f.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === _.yb.SENT && !(0, y.Z)(e))),
+    E = (0, o.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
+    S = null != (t = b.ZP.useName(E)) ? t : C.intl.string(C.t.y1Wu2d),
+    P = (0, o.e7)([d.Z], () => d.Z.getStickerById(v)),
+    I = i.useCallback(async () => {
+      if (null == l || "" === l) try {
+        await c.Z.sendGreetMessage(n.id, v), g.default.track(_.rMx.DM_EMPTY_ACTION, {
           channel_id: n.id,
           channel_type: n.type,
           source: "Wave",
           type: "Send wave"
         })
       } catch (e) {
-        e.ok || 429 !== e.status || T(y.intl.string(y.t["Whhv4+"]))
+        e.ok || 429 !== e.status || j(C.intl.string(C.t["Whhv4+"]))
       }
-    }, [n.id, n.type, o]),
-    P = y.intl.formatToPlainString(y.t.m0zYbW, {
-      username: N
+    }, [n.id, n.type, l]),
+    Z = C.intl.formatToPlainString(C.t.m0zYbW, {
+      username: S
     }),
-    w = null != o && "" !== o ? (0, r.jsx)(l.Text, {
-      className: O.error,
+    T = null != l && "" !== l ? (0, r.jsx)(s.Text, {
+      className: x.error,
       color: "text-danger",
       variant: "text-sm/normal",
-      children: o
+      children: l
     }) : null;
-  return S ? (0, r.jsxs)("div", {
-    className: O.containerCompact,
-    children: [(0, r.jsxs)(l.P3F, {
-      className: null != o && "" !== o ? O.compactButtonDisabled : O.compactButton,
-      "aria-label": y.intl.string(y.t.pJObYG),
-      onClick: R,
-      children: [(0, r.jsx)(f.Z, {
-        sticker: C,
+  return O ? (0, r.jsxs)("div", {
+    className: x.containerCompact,
+    children: [(0, r.jsxs)(s.P3F, {
+      className: null != l && "" !== l ? x.compactButtonDisabled : x.compactButton,
+      "aria-label": C.intl.string(C.t.pJObYG),
+      onClick: I,
+      children: [(0, r.jsx)(p.Z, {
+        sticker: P,
         size: 24
-      }), (0, r.jsx)(l.Text, {
-        className: O.text,
+      }), (0, r.jsx)(s.Text, {
+        className: x.text,
         variant: "text-md/medium",
-        children: P
+        children: Z
       })]
-    }), w]
+    }), T]
   }) : (0, r.jsxs)("div", {
-    className: O.containerExpanded,
-    children: [(0, r.jsx)(f.Z, {
-      sticker: C,
+    className: x.containerExpanded,
+    children: [(0, r.jsx)(p.Z, {
+      sticker: P,
       size: 160,
-      className: O.stickerExpanded
-    }), (0, r.jsx)(l.zxk, {
+      className: x.stickerExpanded
+    }), (0, r.jsx)(s.zxk, {
       fullWidth: true,
       variant: "primary",
       size: "md",
-      onClick: R,
-      disabled: !!o,
-      text: P
-    }), w]
+      onClick: I,
+      disabled: !!l,
+      text: Z
+    }), T]
   })
 }

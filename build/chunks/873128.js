@@ -2,16 +2,16 @@
 /** chunk id: 873128, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk442837 = require("./442837.js"),
   Chunk994752 = require("./994752.js");
 
-function o(e) {
+function a(e) {
   let {
     guildId: t,
     leaderboardId: n,
-    intervalOffset: o = 0
+    intervalOffset: a = 0
   } = e;
-  return (0, r.e7)([i.Z], () => i.Z.get(t, n, o))
+  return (0, r.e7)([i.Z], () => i.Z.get(t, n, a))
 }

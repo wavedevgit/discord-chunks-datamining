@@ -1,11 +1,12 @@
-/** Chunk was on 99956 **/
+/** Chunk was on 81498 **/
 /** chunk id: 55589, original params: e,t,n (module,exports,require) **/
-let r, i, l;
+"use strict";
+let i, r, s;
 require.d(exports, {
-  Z: () => w
+  Z: () => N
 }), require("./388685.js"), require("./539854.js");
-var o, u, Chunk913527 = require("./913527.js"),
-  s = require.n(Chunk913527),
+var l, o, Chunk913527 = require("./913527.js"),
+  u = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
   Chunk570140 = require("./570140.js"),
@@ -19,7 +20,7 @@ var o, u, Chunk913527 = require("./913527.js"),
   Chunk9156 = require("./9156.js"),
   Chunk594174 = require("./594174.js"),
   Chunk709054 = require("./709054.js");
-let _ = new Chunk759174.h(e => {
+let E = new Chunk759174.h(e => {
   let {
     isRequest: t,
     isFavorite: n
@@ -29,121 +30,121 @@ let _ = new Chunk759174.h(e => {
   let {
     lastMessageId: t
   } = e;
-  return -j.default.extractTimestamp(t)
+  return -S.default.extractTimestamp(t)
 });
 
-function h(e) {
+function _(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : function(e) {
     var t, n;
-    let r = null != (n = null != (t = O.ZP.lastMessageId(e.id)) ? t : e.lastMessageId) ? n : e.id,
-      i = e.isMessageRequestTimestamp;
-    if (null != i) {
-      let e = s()(i).valueOf(),
-        t = j.default.fromTimestamp(e);
-      return j.default.compare(r, t) > 0 ? r : t
+    let i = null != (n = null != (t = b.ZP.lastMessageId(e.id)) ? t : e.lastMessageId) ? n : e.id,
+      r = e.isMessageRequestTimestamp;
+    if (null != r) {
+      let e = u()(r).valueOf(),
+        t = S.default.fromTimestamp(e);
+      return S.default.compare(i, t) > 0 ? i : t
     }
-    return r
+    return i
   }(e);
   return {
     channelId: e.id,
     lastMessageId: t,
     isFavorite: false,
-    isRequest: p.Z.isMessageRequest(e.id) || v.Z.isSpam(e.id)
+    isRequest: g.Z.isMessageRequest(e.id) || f.Z.isSpam(e.id)
   }
 }
 
-function P() {
-  _.clear(), Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
-    _.set(e.id, h(e))
+function w() {
+  E.clear(), Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
+    E.set(e.id, _(e))
   })
 }
 
-function C() {
+function I() {
   let e = Chunk592125.Z.getMutablePrivateChannels();
-  for (let t in module) _.set(exports, h(module[exports]))
+  for (let t in module) E.set(exports, _(module[exports]))
 }
-let Z = (r = [], i = [], l = [], () => {
-  let e = _.values("FAVORITE"),
-    t = _.values("DEFAULT");
-  return (r !== module || i !== exports) && (l = [], module.forEach(e => {
+let j = (i = [], r = [], s = [], () => {
+  let e = E.values("FAVORITE"),
+    t = E.values("DEFAULT");
+  return (i !== module || r !== exports) && (s = [], module.forEach(e => {
     let {
       channelId: t
     } = e;
-    return l.push(t)
-  }), r = module, exports.forEach(e => {
+    return s.push(t)
+  }), i = module, exports.forEach(e => {
     let {
       channelId: t
     } = e;
-    return l.push(t)
-  }), i = exports), l
+    return s.push(t)
+  }), r = exports), s
 });
-class N extends(o = Chunk442837.ZP.Store) {
+class P extends(l = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk594174.default, Chunk355298.Z, Chunk9156.ZP), this.syncWith([Chunk9156.ZP, Chunk355298.Z], P)
+    this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk594174.default, Chunk355298.Z, Chunk9156.ZP), this.syncWith([Chunk9156.ZP, Chunk355298.Z], w)
   }
   getPrivateChannelIds() {
-    return Z()
+    return j()
   }
   getSortedChannels() {
-    return [_.values("FAVORITE"), _.values("DEFAULT")]
+    return [E.values("FAVORITE"), E.values("DEFAULT")]
   }
   serializeForOverlay() {
     let e = {};
-    return _.values().forEach(t => {
+    return E.values().forEach(t => {
       let {
         channelId: n,
-        lastMessageId: r
+        lastMessageId: i
       } = t;
-      e[n] = r
+      e[n] = i
     }), module
   }
-}(u = "displayName") in N ? Object.defineProperty(N, u, {
+}(o = "displayName") in P ? Object.defineProperty(P, o, {
   value: "PrivateChannelSortStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : N[u] = "PrivateChannelSortStore";
-let w = new N(Chunk570140.Z, {
-  CONNECTION_OPEN: P,
-  CONNECTION_OPEN_SUPPLEMENTAL: P,
-  OVERLAY_INITIALIZE: P,
-  CACHE_LOADED: C,
-  CACHE_LOADED_LAZY: C,
+}) : P[o] = "PrivateChannelSortStore";
+let N = new P(Chunk570140.Z, {
+  CONNECTION_OPEN: w,
+  CONNECTION_OPEN_SUPPLEMENTAL: w,
+  OVERLAY_INITIALIZE: w,
+  CACHE_LOADED: I,
+  CACHE_LOADED_LAZY: I,
   CHANNEL_UPDATES: function(e) {
     let {
       channels: t
     } = e;
     t.forEach(e => {
-      ((0, g.hv)(e.type) || _.has(e.id)) && _.set(e.id, h(e))
+      ((0, v.hv)(e.type) || E.has(e.id)) && E.set(e.id, _(e))
     })
   },
   CHANNEL_CREATE: function(e) {
     let {
       channel: t
     } = e;
-    if (!(0, g.hv)(t.type) || t.id === m.V) returnfalse;
-    _.set(t.id, h(t))
+    if (!(0, v.hv)(t.type) || t.id === p.V) returnfalse;
+    E.set(t.id, _(t))
   },
   CHANNEL_DELETE: function(e) {
     let {
       channel: t
     } = e;
-    return _.delete(t.id)
+    return E.delete(t.id)
   },
   MESSAGE_CREATE: function(e) {
     let {
       channelId: t,
       message: n
     } = e;
-    if (!_.has(t)) returnfalse;
-    let r = b.Z.getChannel(t);
-    return null != r && _.set(t, h(r, n.id))
+    if (!E.has(t)) returnfalse;
+    let i = m.Z.getChannel(t);
+    return null != i && E.set(t, _(i, n.id))
   },
   GUILD_CREATE: function(e) {
     let t = e.guild.id;
-    return _.delete(t)
+    return E.delete(t)
   },
   LOGOUT: function() {
-    _.clear()
+    E.clear()
   }
 })

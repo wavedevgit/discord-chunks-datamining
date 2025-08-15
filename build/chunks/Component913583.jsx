@@ -17,7 +17,7 @@ function d(e) {
   let {
     onDismiss: t
   } = e;
-  return (0, o.Z)({
+  return (0, a.Z)({
     type: i.ImpressionTypes.MODAL,
     name: i.ImpressionNames.MULTI_ACCOUNT_SWITCH_LANDING
   }), (0, r.jsxs)(s.ZP, {
@@ -29,10 +29,10 @@ function d(e) {
       variant: "text-md/normal",
       color: "header-secondary",
       children: c.intl.string(c.t["0M5fNz"])
-    }), (0, r.jsx)(a.Z, {
+    }), (0, r.jsx)(o.Z, {
       actionText: c.intl.string(c.t["DSN+h4"]),
       onAction: e => {
-        e === a.W.LOGIN_REQUIRED && t()
+        e === o.W.LOGIN_REQUIRED && t()
       }
     }), (0, r.jsx)("div", {
       className: u.actions,

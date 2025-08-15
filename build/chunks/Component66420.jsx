@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 66420, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 66420, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => s
 });
 var Chunk255367 = require("./255367.js"),
   Chunk657707 = require("./657707.js"),
@@ -10,15 +9,15 @@ var Chunk255367 = require("./255367.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk664677 = require("./664677.js");
 
-function l(e) {
+function s(e) {
   let {
     channel: t,
     message: n,
-    content: l,
+    content: s,
     subtitle: c,
     compact: u,
     action: d
-  } = e, f = n.reactions.length > 0;
+  } = e, p = n.reactions.length > 0;
   return (0, r.jsxs)(a.Z, {
     iconNode: t.isGroupDM() ? (0, r.jsx)(i.Dkj, {
       size: "md",
@@ -27,17 +26,17 @@ function l(e) {
       size: "md",
       color: "var(--premium-tier-2-purple-for-gradients-2)"
     }),
-    iconContainerClassName: s.iconContainer,
+    iconContainerClassName: o.iconContainer,
     compact: u,
-    contentClassName: s.content,
-    className: f ? s.withReactions : s.noReactions,
+    contentClassName: o.content,
+    className: p ? o.withReactions : o.noReactions,
     children: [(0, r.jsxs)("div", {
-      className: s.textContainer,
-      children: [(0, r.jsx)(o.xv, {
+      className: o.textContainer,
+      children: [(0, r.jsx)(l.xv, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: l
-      }), null != c && (0, r.jsx)(o.xv, {
+        children: s
+      }), null != c && (0, r.jsx)(l.xv, {
         variant: "text-sm/medium",
         color: "text-secondary",
         children: c

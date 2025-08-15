@@ -59,8 +59,8 @@ function y(e, t) {
   if (null == e) return {};
   var n, r, i = O(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,8 +68,8 @@ function y(e, t) {
 function O(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let v = {
@@ -82,22 +82,22 @@ let v = {
       className: n,
       onClick: r,
       children: i,
-      "aria-expanded": a,
+      "aria-expanded": o,
       "aria-controls": s
     } = e;
-    return (0, o.jsx)(f.P, {
+    return (0, a.jsx)(f.P, {
       innerRef: t,
       tabIndex: null == r ? false : 0,
       className: l()(h.header, n),
       onClick: r,
-      "aria-expanded": a,
+      "aria-expanded": o,
       "aria-controls": s,
       focusProps: {
         offset: {
           top: false
         }
       },
-      children: (0, o.jsx)(_.x, {
+      children: (0, a.jsx)(_.x, {
         variant: "eyebrow",
         color: "none",
         className: h.headerText,
@@ -110,7 +110,7 @@ function T(e) {
   let {
     style: t
   } = e;
-  return (0, o.jsx)("div", {
+  return (0, a.jsx)("div", {
     className: h.separator,
     style: t
   })
@@ -120,7 +120,7 @@ let S = Chunk73800.forwardRef(function(e, t) {
     children: n,
     id: r
   } = e, i = y(e, ["children", "id"]);
-  return (0, o.jsx)("div", b(g({}, i), {
+  return (0, a.jsx)("div", b(g({}, i), {
     ref: t,
     role: "tabpanel",
     id: A(r),
@@ -147,7 +147,7 @@ class C extends(r = Chunk73800.Component) {
       itemType: r
     } = this.props, {
       hover: i,
-      active: o
+      active: a
     } = this.state;
     if (null != module) {
       if ("side" === r) return null != exports && require === exports || Chunk255367 ? N(module, "Selected") : i ? N(module, "Hover") : N(module);
@@ -182,7 +182,7 @@ class C extends(r = Chunk73800.Component) {
       id: n,
       selectedItem: r,
       color: i,
-      variant: a,
+      variant: o,
       disabled: s,
       onContextMenu: c,
       clickableRef: u,
@@ -279,7 +279,7 @@ class R extends(i = Chunk73800.Component) {
     })
   }
   constructor(...e) {
-    super(...e), m(this, "tabBarRef", a.createRef()), m(this, "focusManager", (0, c.E)({
+    super(...e), m(this, "tabBarRef", o.createRef()), m(this, "focusManager", (0, c.E)({
       getFocusableElements: () => {
         let e = this.tabBarRef.current;
         return null != e ? Array.from(e.querySelectorAll('[role="tab"][aria-disabled="false"]')) : []
@@ -295,7 +295,7 @@ class R extends(i = Chunk73800.Component) {
         type: r = "side",
         look: i = "grey"
       } = this.props;
-      return a.isValidElement(e) ? a.cloneElement(e, {
+      return o.isValidElement(e) ? o.cloneElement(e, {
         selectedItem: t,
         onItemSelect: n,
         itemType: r,

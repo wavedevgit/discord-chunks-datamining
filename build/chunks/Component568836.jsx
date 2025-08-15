@@ -1,83 +1,75 @@
-/** Chunk was on web.js **/
-/** chunk id: 568836, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 568836, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $G: () => _,
+  $G: () => d,
   OR: () => p,
-  aL: () => f
+  aL: () => u
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk345898 = require("./345898.jsx"),
   Chunk812331 = require("./812331.js");
 
-function l(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function c(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      l(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function u(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function d(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
+function c(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = 660,
-  _ = e => (0, r.jsx)(a.Z, d(c({}, e), {
-    className: o()(e.className, {
-      [s.embedVertical]: !e.isHorizontal,
-      [s.embedHorizontal]: e.isHorizontal
+let u = 660,
+  d = e => (0, r.jsx)(a.Z, c(s({}, e), {
+    className: l()(e.className, {
+      [o.embedVertical]: !e.isHorizontal,
+      [o.embedHorizontal]: e.isHorizontal
     })
   })),
   p = e => {
     let {
       isHorizontal: t
-    } = e, n = () => (0, r.jsx)("div", {
-      className: o()(s.loadingImage, {
-        [s.loadingImageHorizontal]: t
-      })
-    }), i = () => (0, r.jsx)("div", {
-      className: s.loadingDescription,
-      children: (0, r.jsx)("div", {
-        className: o()(s.loadingBackgroundWrapper, {
-          [s.loadingBackgroundWrapperHorizontal]: t
-        }),
+    } = e;
+    return (0, r.jsx)(d, c(s({}, e), {
+      media: () => (0, r.jsx)("div", {
+        className: o.loadingDescription,
         children: (0, r.jsx)("div", {
-          className: s.loadingBackground
+          className: l()(o.loadingBackgroundWrapper, {
+            [o.loadingBackgroundWrapperHorizontal]: t
+          }),
+          children: (0, r.jsx)("div", {
+            className: o.loadingBackground
+          })
+        })
+      }),
+      title: () => (0, r.jsx)("div", {
+        className: l()(o.loadingImage, {
+          [o.loadingImageHorizontal]: t
         })
       })
-    });
-    return (0, r.jsx)(_, d(c({}, e), {
-      media: i,
-      title: n
     }))
   }

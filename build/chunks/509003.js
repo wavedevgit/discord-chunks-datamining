@@ -81,26 +81,26 @@ function b(e, t) {
 
 function y(e, t) {
   var n, r, i;
-  let o = h({}, e),
+  let a = h({}, e),
     s = t.subgameInfo,
     l = t.application,
     c = Number(null == (n = e.gameMetadata) ? true : n[u.wF.ROBLOX_TIME_STARTED]);
-  if ((isNaN(c) || 0 === c) && (c = null != (r = e.start) ? r : Date.now()), null == s) N(e) && (o.id = u.eB, o.name = f.EOG[f.GQo.ROBLOX]), o.gameMetadata = true, o.sku = true, o.start = c, o.lastFocused = Math.floor(c / 1e3);
+  if ((isNaN(c) || 0 === c) && (c = null != (r = e.start) ? r : Date.now()), null == s) N(e) && (a.id = u.eB, a.name = f.EOG[f.GQo.ROBLOX]), a.gameMetadata = true, a.sku = true, a.start = c, a.lastFocused = Math.floor(c / 1e3);
   else {
     let t = {};
-    null != l && (0, a.ik)({
+    null != l && (0, o.ik)({
       exePath: e.exePath,
       name: l.name,
       id: l.id,
       distributor: f.GQo.ROBLOX
-    }) && (0, a.ik)({
+    }) && (0, o.ik)({
       exePath: e.exePath,
       name: f.EOG[f.GQo.ROBLOX],
       id: u.eB,
       distributor: f.GQo.ROBLOX
-    }) ? (o.id = l.id, o.name = l.name, o.gameName = l.name, o.start = Date.now(), o.lastFocused = Math.floor(Date.now() / 1e3)) : (o.id = u.eB, o.name = f.EOG[f.GQo.ROBLOX], o.start = c), t[u.wF.ROBLOX_TIME_STARTED] = c.toString(), o.sku = null != (i = s.universeId) ? i : true, null != s.placeId && (t[u.wF.PLACE_ID] = s.placeId), null != s.jobId && (t[u.wF.JOB_ID] = s.jobId), null != s.robloxUserId && (t[u.wF.ROBLOX_USER_ID] = s.robloxUserId), o.gameMetadata = Object.keys(t).length > 0 ? t : true
+    }) ? (a.id = l.id, a.name = l.name, a.gameName = l.name, a.start = Date.now(), a.lastFocused = Math.floor(Date.now() / 1e3)) : (a.id = u.eB, a.name = f.EOG[f.GQo.ROBLOX], a.start = c), t[u.wF.ROBLOX_TIME_STARTED] = c.toString(), a.sku = null != (i = s.universeId) ? i : true, null != s.placeId && (t[u.wF.PLACE_ID] = s.placeId), null != s.jobId && (t[u.wF.JOB_ID] = s.jobId), null != s.robloxUserId && (t[u.wF.ROBLOX_USER_ID] = s.robloxUserId), a.gameMetadata = Object.keys(t).length > 0 ? t : true
   }
-  return o
+  return a
 }
 
 function O(e) {
@@ -172,7 +172,7 @@ async function R(e) {
 }
 async function P(e) {
   let t = await c.Z.getRobloxSubgameURL(e);
-  return await (0, o.Z)(t)
+  return await (0, a.Z)(t)
 }
 
 function w(e) {

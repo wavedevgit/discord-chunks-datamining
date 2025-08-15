@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk693789 = require("./693789.jsx"),
   Chunk512983 = require("./512983.jsx"),
   Chunk466377 = require("./466377.jsx"),
@@ -17,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk964144 = require("./964144.js");
 let h = e => {
-  let t, n, o, {
+  let t, n, a, {
       body: h,
       cancelText: m,
       className: g,
@@ -57,7 +57,7 @@ let h = e => {
     className: p.primaryButton,
     autoFocus: true,
     children: b
-  })), null != y && "" !== y && (o = (0, r.jsx)(d.XZJ, {
+  })), null != y && "" !== y && (a = (0, r.jsx)(d.XZJ, {
     value: R,
     onChange: (e, t) => P(t),
     type: d.XZJ.Types.DEFAULT,
@@ -69,7 +69,7 @@ let h = e => {
   })), (0, r.jsx)(c.Y0, {
     transitionState: A,
     size: c.Cg.DYNAMIC,
-    className: a()(g, p.container),
+    className: o()(g, p.container),
     "aria-label": S,
     parentComponent: "Alert",
     children: (0, r.jsxs)("form", {
@@ -78,11 +78,11 @@ let h = e => {
       children: [(0, r.jsx)(c.xB, {
         children: null != S ? (0, r.jsx)(d.X6q, {
           variant: "heading-lg/semibold",
-          className: a()(p.title, N),
+          className: o()(p.title, N),
           children: S
         }) : (0, r.jsx)(l.v, {
           tag: "h2",
-          className: a()(p.title, N),
+          className: o()(p.title, N),
           children: S
         })
       }), (0, r.jsx)(c.hz, {
@@ -102,7 +102,7 @@ let h = e => {
         justify: true,
         wrap: f.Z.Wrap.WRAP,
         className: p.modalFooter,
-        children: [n, t, o]
+        children: [n, t, a]
       })]
     })
   })

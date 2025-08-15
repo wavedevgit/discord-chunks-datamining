@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 15642, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 15642, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -20,18 +19,18 @@ function u(e) {
     giftIntentSecondaryAction: u,
     channel: d
   } = e;
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(o.Z, {
     contentClassName: c.messageContentContainer,
     iconContainerClassName: c.iconContainer,
     iconNode: (0, r.jsx)(i.Dkj, {
       colorClass: c.icon
     }),
-    children: (0, r.jsx)(o.Z, {
+    children: (0, r.jsx)(l.Z, {
       giftIntentType: t,
-      premiumGiftIntentCardType: o.U.SYSTEM_MESSAGE,
+      premiumGiftIntentCardType: l.U.SYSTEM_MESSAGE,
       recipientUser: n,
       analyticsPage: (0, a.mE)(d),
-      analyticsSection: l.jXE.CHANNEL,
+      analyticsSection: s.jXE.CHANNEL,
       giftIntentSecondaryAction: u
     })
   })

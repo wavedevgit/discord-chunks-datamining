@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 262083, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 95355 **/
+/** chunk id: 262083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  NI: () => s,
+  NI: () => a,
   bE: () => o,
-  vY: () => a
+  vY: () => u
 });
 var Chunk893346 = require("./893346.js"),
   Chunk109683 = require("./109683.js");
@@ -19,7 +18,7 @@ function o(e, t) {
   }
   returnfalse
 }
-let a = (e = document) => {
+let u = (e = document) => {
   var t;
   if (!(0, i.Wr)()) return e.activeElement;
   let n = e.activeElement;
@@ -27,6 +26,6 @@ let a = (e = document) => {
   return n
 };
 
-function s(e) {
+function a(e) {
   return (0, i.Wr)() && e.target.shadowRoot && e.composedPath ? e.composedPath()[0] : e.target
 }

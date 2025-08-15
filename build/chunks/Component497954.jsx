@@ -1,7 +1,7 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 59727 **/
 /** chunk id: 497954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => _
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,24 +14,24 @@ var Chunk255367 = require("./255367.js"),
   Chunk5192 = require("./5192.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let g = e => {
+let _ = e => {
   let {
     user: t,
     channelId: n,
-    reportId: g
+    reportId: _
   } = e, {
-    isIgnored: _,
+    isIgnored: g,
     isBlocked: b
-  } = (0, l.cj)([d.Z], () => ({
+  } = (0, i.cj)([d.Z], () => ({
     isIgnored: d.Z.isIgnored(t.id),
     isBlocked: d.Z.isBlocked(t.id)
-  }), [t]), h = (0, l.e7)([c.Z], () => c.Z.getChannel(n), [n]), x = i.useMemo(() => u.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), f = i.useCallback(() => {
-    s.ZP.trackWithMetadata(m.rMx.IAR_IGNORE_USER_BUTTON_CLICKED, {
+  }), [t]), h = (0, i.e7)([c.Z], () => c.Z.getChannel(n), [n]), x = a.useMemo(() => u.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), f = a.useCallback(() => {
+    o.ZP.trackWithMetadata(m.rMx.IAR_IGNORE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
-      report_id: g
-    }), a.Z.ignoreUser(t.id, "web_iar_ignore_user_element", n)
-  }, [t, g, n]), v = i.useMemo(() => _ || b, [_, b]);
-  return (0, r.jsx)(o.JZ, {
+      report_id: _
+    }), l.Z.ignoreUser(t.id, "web_iar_ignore_user_element", n)
+  }, [t, _, n]), v = a.useMemo(() => g || b, [g, b]);
+  return (0, r.jsx)(s.JZ, {
     title: p.intl.formatToPlainString(p.t.U3yyFh, {
       username: x
     }),

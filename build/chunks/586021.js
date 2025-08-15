@@ -9,13 +9,13 @@ require.d(exports, {
 }), require("./415506.js");
 var Chunk579092 = require("./579092.js"),
   Chunk436620 = require("./436620.js");
-let o = new Chunk579092.Yd("LibDaveManager"),
-  a = null,
+let a = new Chunk579092.Yd("LibDaveManager"),
+  o = null,
   s = null,
   l = null,
   c = {
     onRuntimeInitialized: () => {
-      o.info("DAVE loaded")
+      a.info("DAVE loaded")
     }
   };
 
@@ -28,18 +28,18 @@ function d() {
 }
 
 function f() {
-  return null != a ? a : a = new Promise((e, t) => {
+  return null != o ? o : o = new Promise((e, t) => {
     Promise.all([n.e("69418"), n.e("13263")]).then(n.bind(n, 129487)).then(n => {
       let {
         DaveModuleFactory: r
       } = n;
       r(c).then(t => {
-        o.info("Successfully initialized DAVE"), s = t, e(t)
+        a.info("Successfully initialized DAVE"), s = t, e(t)
       }).catch(e => {
-        o.error("Failed to initialize DAVE", e), t(e)
+        a.error("Failed to initialize DAVE", e), t(e)
       })
     }).catch(e => {
-      o.error("Failed to load DAVE module", e), t(e)
+      a.error("Failed to load DAVE module", e), t(e)
     })
   })
 }

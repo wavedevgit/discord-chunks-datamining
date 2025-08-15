@@ -1,11 +1,12 @@
-/** Chunk was on 62117 **/
+/** Chunk was on 81498 **/
 /** chunk id: 295454, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  K: () => r
+  K: () => l
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let l = (0, Chunk818083.B)({
+let s = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-06_guild_sidebar_voice_stage_in_suggested",
   label: "voice and stage channels appear in suggested if user mentioned in them",
@@ -22,8 +23,8 @@ let l = (0, Chunk818083.B)({
   }]
 });
 
-function r(e) {
-  return l.getCurrentConfig({
+function l(e) {
+  return s.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false

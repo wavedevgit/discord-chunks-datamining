@@ -1,7 +1,7 @@
 /** Chunk was on 82961 **/
-/** chunk id: 751744, original params: t,i,n (module,exports,require) **/
+/** chunk id: 751744, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => k
+  default: () => p
 }), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk236289 = require("./236289.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx");
-let b = [{
+let j = [{
     title: Chunk388032.intl.string(Chunk388032.t["1+E7LC"]),
     description: Chunk388032.intl.string(Chunk388032.t.BXiat7)
   }, {
@@ -26,71 +26,71 @@ let b = [{
     title: Chunk388032.intl.string(Chunk388032.t["oY/z1d"]),
     description: Chunk388032.intl.string(Chunk388032.t.wtj02d)
   }],
-  k = function(t) {
+  p = function(t) {
     let {
-      onClose: i,
+      onClose: e,
       transitionState: n,
-      classificationId: k
-    } = t, _ = (0, r.e7)([u.Z], () => u.Z.getAgeVerificationWebviewUrl()), f = (0, r.e7)([u.Z], () => u.Z.getIsLoadingAgeVerification()), j = s.useCallback(() => {
-      i(), g.Z.close()
-    }, [i]), m = s.useCallback(() => {
-      g.Z.success(), j(), g.Z.start_verification_check()
-    }, [j]);
-    return s.useEffect(() => {
-      "" !== _ && o.Z.showAgeVerification({
-        webviewUrl: _,
-        onComplete: m,
+      classificationId: p
+    } = t, v = (0, l.e7)([m.Z], () => m.Z.getAgeVerificationWebviewUrl()), _ = (0, l.e7)([m.Z], () => m.Z.getIsLoadingAgeVerification()), b = r.useCallback(() => {
+      e(), x.Z.close()
+    }, [e]), g = r.useCallback(() => {
+      x.Z.success(), b(), x.Z.start_verification_check()
+    }, [b]);
+    return r.useEffect(() => {
+      "" !== v && a.Z.showAgeVerification({
+        webviewUrl: v,
+        onComplete: g,
         useV1: true
       })
-    }, [_, m]), (0, e.jsx)(l.Modal, {
-      onClose: i,
+    }, [v, g]), (0, i.jsx)(o.Modal, {
+      onClose: e,
       transitionState: n,
-      title: h.intl.string(h.t["9SDLnp"]),
-      subtitle: h.intl.string(h.t["yvx///"]),
+      title: f.intl.string(f.t["9SDLnp"]),
+      subtitle: f.intl.string(f.t["yvx///"]),
       actions: [{
-        text: h.intl.string(h.t.dKacJy),
-        onClick: j,
+        text: f.intl.string(f.t.dKacJy),
+        onClick: b,
         variant: "secondary"
       }, {
-        text: h.intl.string(h.t["54b8V1"]),
-        onClick: () => (0, p.FN)(k),
-        loading: f
+        text: f.intl.string(f.t["54b8V1"]),
+        onClick: () => (0, u.FN)(p),
+        loading: _
       }],
-      children: (0, e.jsxs)(c.Kqy, {
+      children: (0, i.jsxs)(s.Kqy, {
         gap: 8,
         direction: "vertical",
-        children: [(0, e.jsx)(a.z, {
-          children: b.map((t, i) => {
+        children: [(0, i.jsx)(c.z, {
+          children: j.map((t, e) => {
             let {
               title: n,
-              description: s
+              description: r
             } = t;
-            return (0, e.jsx)(a.q, {
+            return (0, i.jsx)(c.q, {
               title: n,
-              description: s,
-              index: i,
+              description: r,
+              index: e,
               listType: "numbered"
-            }, i)
+            }, e)
           })
-        }), (0, e.jsxs)(c.Kqy, {
+        }), (0, i.jsxs)(s.Kqy, {
           gap: 8,
           direction: "vertical",
-          children: [(0, e.jsx)(d.rT, {
-            title: h.intl.string(h.t.WPwp1d),
-            children: (0, e.jsx)(d.JZ, {
-              title: h.intl.string(h.t.N9WJMD),
-              description: h.intl.string(h.t["NHq38/"]),
-              buttonText: h.intl.string(h.t["9iy4lJ"]),
+          children: [(0, i.jsx)(d.rT, {
+            title: f.intl.string(f.t.WPwp1d),
+            children: (0, i.jsx)(d.JZ, {
+              title: f.intl.string(f.t.N9WJMD),
+              description: f.intl.string(f.t["NHq38/"]),
+              buttonText: f.intl.string(f.t["9iy4lJ"]),
               titleVariant: "text-md/medium",
-              onButtonPress: () => window.open(x.sQ.AGE_VERIFICATION_LINK, "_blank")
+              onButtonPress: () => window.open(h.sQ.AGE_VERIFICATION_LINK, "_blank")
             })
-          }), (0, e.jsx)(c.Kqy, {
+          }), (0, i.jsx)(s.Kqy, {
             align: "center",
-            children: (0, e.jsx)(c.Text, {
+            children: (0, i.jsx)(s.Text, {
               variant: "text-sm/medium",
               color: "text-secondary",
-              children: h.intl.format(h.t.ZbWsOD, {
-                learnMoreLink: x.sQ.LEARN_MORE_UU_APPEAL_LINK
+              children: f.intl.format(f.t.ZbWsOD, {
+                learnMoreLink: h.sQ.LEARN_MORE_UU_APPEAL_LINK
               })
             })
           })]

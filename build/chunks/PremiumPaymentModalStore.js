@@ -35,14 +35,14 @@ function _(e) {
   let {
     message: t
   } = e;
-  l = new a.HF(t)
+  l = new o.HF(t)
 }
 
 function p(e) {
   let {
     message: t
   } = e;
-  l = new a.HF(t)
+  l = new o.HF(t)
 }
 
 function h() {

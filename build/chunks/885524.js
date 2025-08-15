@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 885524, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 85362 **/
+/** chunk id: 885524, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -17,22 +16,22 @@ function d(e) {
   let {
     streamId: t,
     userId: n,
-    videoSpinnerContext: l,
+    videoSpinnerContext: s,
     streamKey: d,
-    loading: f,
-    paused: _ = false
-  } = e, p = r.useRef(new o.V7), h = l === a.m.SELF_STREAM || l === a.m.REMOTE_STREAM ? i.Yn.STREAM : i.Yn.DEFAULT;
+    loading: p,
+    paused: f = false
+  } = e, h = r.useRef(new l.V7), g = s === o.m.SELF_STREAM || s === o.m.REMOTE_STREAM ? i.Yn.STREAM : i.Yn.DEFAULT;
   return r.useEffect(() => {
-    if (!f || _ || !s.w.isIncomingVideoEnabled()) return;
-    let e = p.current;
+    if (!p || f || !a.w.isIncomingVideoEnabled()) return;
+    let e = h.current;
     return e.start(u, () => {
-      (0, c.K)(t, n, h, d)
+      (0, c.K)(t, n, g, d)
     }), () => {
       e.stop()
     }
-  }, [_, t, f, h, d, n]), {
+  }, [f, t, p, g, d, n]), {
     onReady: r.useCallback(() => {
-      p.current.stop(), (0, c.w)(h, n)
-    }, [n, h])
+      h.current.stop(), (0, c.w)(g, n)
+    }, [n, g])
   }
 }

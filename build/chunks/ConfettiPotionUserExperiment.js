@@ -2,14 +2,14 @@
 /** chunk id: 111810, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  HZ: () => o,
+  HZ: () => a,
   V1: () => l,
-  kf: () => a,
+  kf: () => o,
   p7: () => s
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
     kind: "user",
     id: "2024-12_confetti_potion",
     label: "Confetti Potion Experiment",
@@ -40,17 +40,17 @@ let o = (0, Chunk818083.B)({
       }
     }]
   }),
-  a = e => o.useExperiment({
+  o = e => a.useExperiment({
     location: e
   }, {
     autoTrackExposure: false
   }).canSeeConfetti,
-  s = e => o.useExperiment({
+  s = e => a.useExperiment({
     location: e
   }, {
     autoTrackExposure: true
   }).canSeeConfetti,
-  l = e => o.useExperiment({
+  l = e => a.useExperiment({
     location: e
   }, {
     autoTrackExposure: false

@@ -1,4 +1,4 @@
-/** Chunk was on 9885 **/
+/** Chunk was on 42521 **/
 /** chunk id: 578080, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => L
@@ -94,8 +94,8 @@ let L = Chunk73800.forwardRef(function(e, t) {
   let {
     children: y,
     className: L,
-    collapsedHeight: Z,
-    expansionSpring: W,
+    collapsedHeight: W,
+    expansionSpring: Z,
     isExpanded: U,
     isExpansionAnimationComplete: H,
     onCtxMenuOpen: F,
@@ -103,8 +103,8 @@ let L = Chunk73800.forwardRef(function(e, t) {
     onCtxMenuSelect: X,
     quest: K,
     useReducedMotion: Y
-  } = e, G = (0, l.e7)([v.Z], () => v.Z.isEnrolling(K.id), [K]), J = (0, h.aM)(), $ = (0, _.B6)(K.config.expiresAt), ee = S.r.build(K.config), et = (0, _.B6)(ee.rewardsExpireAt), en = s.useMemo(() => (0, O.fh)(K, O.eC.HERO), [K]), er = (0, R.tP)(ee.application.id), es = ee.features.has(B.S7.START_QUEST_CTA) ? x.jZ.START_QUEST : x.jZ.ACCEPT_QUEST, eo = ee.features.has(B.S7.START_QUEST_CTA) ? I.intl.string(I.t.E80Bdn) : I.intl.string(I.t.l7E81t), ea = s.useCallback(() => {
-    (0, b.AH)(K.id, {
+  } = e, G = (0, l.e7)([v.Z], () => v.Z.isEnrolling(K.id), [K]), J = (0, h.aM)(), $ = (0, j.B6)(K.config.expiresAt), ee = S.r.build(K.config), et = (0, j.B6)(ee.rewardsExpireAt), en = s.useMemo(() => (0, O.fh)(K, O.eC.HERO), [K]), er = (0, R.tP)(ee.application.id), es = ee.features.has(B.S7.START_QUEST_CTA) ? x.jZ.START_QUEST : x.jZ.ACCEPT_QUEST, eo = ee.features.has(B.S7.START_QUEST_CTA) ? I.intl.string(I.t.E80Bdn) : I.intl.string(I.t.l7E81t), ea = s.useCallback(() => {
+    (0, _.AH)(K.id, {
       questContent: C.jn.QUEST_BAR,
       questContentCTA: es,
       sourceQuestContent: C.jn.QUEST_BAR
@@ -114,20 +114,20 @@ let L = Chunk73800.forwardRef(function(e, t) {
     questContent: C.jn.QUEST_BAR,
     sourceQuestContent: C.jn.QUEST_BAR
   }), el = s.useCallback(() => {
-    (0, j.nc)(K, {
+    (0, b.nc)(K, {
       content: C.jn.QUEST_BAR,
       ctaContent: x.jZ.OPEN_GAME_LINK,
       impressionId: J,
       sourceQuestContent: C.jn.QUEST_BAR
     })
-  }, [J, K]), ec = ee.features.has(B.S7.POST_ENROLLMENT_CTA), eu = (0, _.Rf)(K), ed = (0, _.Jf)(K), ep = null != ed ? ed.progress > 0 : eu.progressSeconds > 0, em = (null == (n = K.userStatus) ? true : n.enrolledAt) != null, eg = (null == (o = K.userStatus) ? true : o.completedAt) != null, ef = s.useMemo(() => (0, j.Xv)(K.config), [K.config]), ex = U && H, eh = (0, E.DD)({
+  }, [J, K]), ec = ee.features.has(B.S7.POST_ENROLLMENT_CTA), eu = (0, j.Rf)(K), ed = (0, j.Jf)(K), ep = null != ed ? ed.progress > 0 : eu.progressSeconds > 0, em = (null == (n = K.userStatus) ? true : n.enrolledAt) != null, eg = (null == (o = K.userStatus) ? true : o.completedAt) != null, ef = s.useMemo(() => (0, b.Xv)(K.config), [K.config]), ex = U && H, eh = (0, E.DD)({
     quest: K,
     taskDetails: eu,
     location: B.dr.QUESTS_BAR,
     questContent: C.jn.QUEST_BAR,
     thirdPartyTaskDetails: null != ed ? ed : true,
     sourceQuestContent: C.jn.QUEST_BAR
-  }), ej = (0, f.isWeb)(), eb = s.useMemo(() => {
+  }), eb = (0, f.isWeb)(), e_ = s.useMemo(() => {
     let e = (0, u.Qg)(K.config.colors.primary, {
       base: "#ffffff",
       contrastRatio: u.S3.Text
@@ -144,12 +144,12 @@ let L = Chunk73800.forwardRef(function(e, t) {
     }),
     style: {
       backgroundColor: K.config.colors.secondary,
-      transform: eg ? true : (0, i.to)([W.to({
+      transform: eg ? true : (0, i.to)([Z.to({
         range: [0, 1],
         output: [0, false]
-      }), W.to({
+      }), Z.to({
         range: [0, 1],
-        output: [0, Z]
+        output: [0, W]
       })], (e, t) => "translateY(calc(".concat(e, "% + ").concat(t, "px))"))
     },
     children: [y, (0, r.jsx)("div", {
@@ -172,7 +172,7 @@ let L = Chunk73800.forwardRef(function(e, t) {
               children: [(0, r.jsx)(p.X6q, {
                 color: "always-white",
                 variant: "heading-sm/semibold",
-                children: (0, j.AV)({
+                children: (0, b.AV)({
                   quest: K,
                   taskDetails: eu,
                   thirdPartyTaskDetails: null != ed ? ed : true
@@ -209,7 +209,7 @@ let L = Chunk73800.forwardRef(function(e, t) {
           })]
         }), eg ? (0, r.jsx)(d.zx, {
           className: a()(Q.cta, Q.ctaClaimReward),
-          style: ef ? eb : true,
+          style: ef ? e_ : true,
           color: d.zx.Colors.CUSTOM,
           fullWidth: true,
           onClick: ei,
@@ -222,7 +222,7 @@ let L = Chunk73800.forwardRef(function(e, t) {
           children: eh
         }), (0, r.jsx)(T.Z, {
           quest: K
-        }), !ej && !ep && !er && ec && (0, r.jsx)(M, {
+        }), !eb && !ep && !er && ec && (0, r.jsx)(M, {
           onClick: ex ? el : true
         })]
       }) : (0, r.jsxs)("div", {
@@ -276,7 +276,7 @@ let L = Chunk73800.forwardRef(function(e, t) {
             })]
           }), (0, r.jsx)(d.zx, {
             className: Q.cta,
-            style: "1232852290197655573" !== K.id ? eb : true,
+            style: "1232852290197655573" !== K.id ? e_ : true,
             color: d.zx.Colors.CUSTOM,
             fullWidth: true,
             onClick: ex ? ea : true,

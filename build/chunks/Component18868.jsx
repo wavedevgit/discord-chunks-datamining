@@ -51,9 +51,9 @@ let m = () => {
       onDrop: a
     } = e, [l, h] = r.useState(false), p = r.useRef(null), b = r.useCallback(e => {
       x(e), h(true), (0, s.Mr3)(c.A)
-    }, []), f = r.useCallback(e => {
+    }, []), v = r.useCallback(e => {
       x(e), h(false)
-    }, []), v = r.useCallback(async e => {
+    }, []), f = r.useCallback(async e => {
       x(e), h(false);
       let t = e.dataTransfer;
       if (null == t) return void m();
@@ -67,8 +67,8 @@ let m = () => {
       ref: p,
       className: i()(t, u.uploadArea),
       onDragEnter: b,
-      onDragLeave: f,
-      onDrop: v,
+      onDragLeave: v,
+      onDrop: f,
       children: (0, n.jsx)("div", {
         className: i()(u.uploadModal, {
           [u.droppable]: l

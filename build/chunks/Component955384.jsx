@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 955384, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 955384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => h
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -22,20 +21,20 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function p(e) {
   e.stopPropagation()
 }
-class _ extends Chunk73800.PureComponent {
+class h extends Chunk73800.PureComponent {
   render() {
     let {
       className: e,
       textValue: t,
       richValue: n,
       message: i,
-      channel: o,
+      channel: l,
       onCancel: a,
-      children: s
-    } = this.props, l = (0, Chunk255367.jsx)("div", {
+      children: o
+    } = this.props, s = (0, Chunk255367.jsx)("div", {
       className: Chunk26896.operations,
       children: Chunk388032.intl.format(Chunk388032.t.wDsPXl, {
         onCancel: () => Chunk925975(Chunk911969.id),
@@ -45,7 +44,7 @@ class _ extends Chunk73800.PureComponent {
     return (0, Chunk255367.jsxs)("div", {
       className: module,
       ref: this.node,
-      onContextMenu: f,
+      onContextMenu: p,
       children: [Chunk957730({
         textValue: exports,
         richValue: require,
@@ -91,15 +90,15 @@ class _ extends Chunk73800.PureComponent {
           channel: n,
           isEdit: true
         });
-        if ((null == d ? true : d.content) != null && (e = d.content), t.hasFlag(l.iLy.IS_COMPONENTS_V2) && this.props.channel.type === l.d4z.GUILD_ANNOUNCEMENT) {
-          let t = s.ZP.parse(this.props.channel, e),
-            n = this.props.message.components.filter(e => e.type === o.re.TEXT_DISPLAY);
+        if ((null == d ? true : d.content) != null && (e = d.content), t.hasFlag(s.iLy.IS_COMPONENTS_V2) && this.props.channel.type === s.d4z.GUILD_ANNOUNCEMENT) {
+          let t = o.ZP.parse(this.props.channel, e),
+            n = this.props.message.components.filter(e => e.type === l.re.TEXT_DISPLAY);
           if (1 === n.length) {
             let r = n[0];
             e !== r.content && c(this.props.channel.id, this.props.message.id, t)
           }
         } else {
-          let t = s.ZP.parse(this.props.channel, e);
+          let t = o.ZP.parse(this.props.channel, e);
           t.content !== this.props.message.content && c(this.props.channel.id, this.props.message.id, t)
         }
         return i(n.id), Promise.resolve({
@@ -114,7 +113,7 @@ class _ extends Chunk73800.PureComponent {
       } = this.props;
       i(r.id, t, n)
     }), d(this, "onKeyDown", e => {
-      if (e.keyCode === l.yXg.ESCAPE && !e.shiftKey) {
+      if (e.keyCode === s.yXg.ESCAPE && !e.shiftKey) {
         let {
           channel: t,
           onCancel: n

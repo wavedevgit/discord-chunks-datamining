@@ -60,7 +60,7 @@ let f = async function() {
   }), await (0, Chunk481060.ZDy)(async () => {
     let {
       EmojiStudioModal: i
-    } = await Promise.all([require.e("20087"), require.e("65819")]).then(require.bind(require, 546200));
+    } = await Promise.all([require.e("63575"), require.e("20087"), require.e("67079")]).then(require.bind(require, 546200));
     return n => (0, r.jsx)(i, d(c({}, n), {
       userImage: e,
       guildId: t

@@ -2,14 +2,14 @@
 /** chunk id: 427860, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C7: () => a,
+  C7: () => o,
   JC: () => g,
   l6: () => s
 }), require("./539854.js"), require("./415506.js"), require("./388685.js");
 var Chunk759174 = require("./759174.js"),
   Chunk709054 = require("./709054.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,7 +17,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var a = function(e) {
+var o = function(e) {
     return e.NativeOOP = "native_oop", e.NativeLegacy = "native_legacy", e.OOPModule = "oop_module", e.LegacyModule = "legacy_module", e.Renderer = "renderer", e
   }({}),
   s = function(e) {
@@ -92,19 +92,19 @@ class m {
   }
   addModuleBreadcrumb(e, t, n, r) {
     var i;
-    let o = arguments.length > 4 && true !== arguments[4] ? arguments[4] : "info",
-      a = h(),
-      s = _(a),
+    let a = arguments.length > 4 && true !== arguments[4] ? arguments[4] : "info",
+      o = h(),
+      s = _(o),
       l = {
         id: s,
         key: s,
         nativeId: null,
-        timestamp: a,
+        timestamp: o,
         name: e,
         data: t,
         type: n,
         pid: r,
-        logType: o,
+        logType: a,
         stack: null != (i = Error().stack) ? i : ""
       };
     return this.addBreadcrumb(l)
@@ -113,7 +113,7 @@ class m {
     return [this.breadcrumbs.values(e, true), this.breadcrumbs.version]
   }
   constructor() {
-    o(this, "breadcrumbs", new Chunk759174.h(u, d)), o(this, "maxNativeBreadcrumbId", 0)
+    a(this, "breadcrumbs", new Chunk759174.h(u, d)), a(this, "maxNativeBreadcrumbId", 0)
   }
 }
 let g = new m

@@ -1,4 +1,4 @@
-/** Chunk was on 25548 **/
+/** Chunk was on 48091 **/
 /** chunk id: 108427, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   e: () => d
@@ -21,24 +21,24 @@ let c = new class {
   trackEvent(e) {
     let t = Date.now();
     requestIdleCallback(() => {
-      var n, i;
+      var n, r;
       l.default.track(s.rMx.APP_UI_VIEWED, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
+          }))), r.forEach(function(t) {
             o(e, t, n[t])
           })
         }
         return e
       }({}, function() {
         var e, t, n;
-        let i = "--campaign-id=";
-        for (let l of null != (n = null === r.Z || true === r.Z || null == (t = r.Z.processUtils) || null == (e = t.getMainArgvSync) ? true : e.call(t)) ? n : [])
-          if (l.startsWith(i)) return {
-            referrer: l.substr(i.length)
+        let r = "--campaign-id=";
+        for (let l of null != (n = null === i.Z || true === i.Z || null == (t = i.Z.processUtils) || null == (e = t.getMainArgvSync) ? true : e.call(t)) ? n : [])
+          if (l.startsWith(r)) return {
+            referrer: l.substr(r.length)
           };
         return {}
       }(), function() {
@@ -55,25 +55,25 @@ let c = new class {
             css_transfer_byte_size: 0
           };
         return null != window.performance && null != window.performance.getEntries && window.performance.getEntries().forEach(n => {
-          let i = null != n.encodedBodySize ? n.encodedBodySize : n.decodedBodySize,
-            r = null != n.decodedBodySize ? n.decodedBodySize : n.encodedBodySize,
+          let r = null != n.encodedBodySize ? n.encodedBodySize : n.decodedBodySize,
+            i = null != n.decodedBodySize ? n.decodedBodySize : n.encodedBodySize,
             l = n.transferSize;
-          null != r && null != i && (e = true, t.total_compressed_byte_size += i, t.total_uncompressed_byte_size += r, null != l && (t.total_uncompressed_byte_size += l), "resource" === n.entryType && ("script" === n.initiatorType && null != n.name && null != n.name.match(/\.js/) && (t.js_compressed_byte_size += i, t.js_uncompressed_byte_size += r, null != l && (t.js_uncompressed_byte_size += l)), "link" === n.initiatorType && null != n.name && null != n.name.match(/\.css/) && (t.css_compressed_byte_size += i, t.css_uncompressed_byte_size += r, null != l && (t.css_uncompressed_byte_size += l))))
+          null != i && null != r && (e = true, t.total_compressed_byte_size += r, t.total_uncompressed_byte_size += i, null != l && (t.total_uncompressed_byte_size += l), "resource" === n.entryType && ("script" === n.initiatorType && null != n.name && null != n.name.match(/\.js/) && (t.js_compressed_byte_size += r, t.js_uncompressed_byte_size += i, null != l && (t.js_uncompressed_byte_size += l)), "link" === n.initiatorType && null != n.name && null != n.name.match(/\.css/) && (t.css_compressed_byte_size += r, t.css_uncompressed_byte_size += i, null != l && (t.css_uncompressed_byte_size += l))))
         }), e ? t : {}
-      }()), i = i = {
+      }()), r = r = {
         load_id: this.loadId,
         screen_name: e,
         duration_ms_since_app_opened: t - window.GLOBAL_ENV.HTML_TIMESTAMP,
         app_hardware_acceleration_enabled: a.ZP.getEnableHardwareAcceleration()
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
         return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+      })(Object(r)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
       }), n))
     })
   }

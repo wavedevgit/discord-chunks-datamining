@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 961040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -26,13 +26,13 @@ function b(e) {
     targetElementRef: f,
     spacing: b = 0
   } = e, {
-    isOpen: _,
+    isOpen: O,
     setIsOpen: y
   } = (0, p.Z)(), v = i.useCallback(() => {
     y(false)
   }, [y]), j = i.useCallback(() => {
-    y(!_)
-  }, [_, y]);
+    y(!O)
+  }, [O, y]);
   (0, c.ZP)(() => {
     let e = () => {
       y(false)
@@ -46,7 +46,7 @@ function b(e) {
   });
   return (0, r.jsx)(a.yRy, {
     targetElementRef: f,
-    shouldShow: _,
+    shouldShow: O,
     align: l,
     animation: C === d.u3.TITLE_BAR_LEFT ? a.yRy.Animation.TRANSLATE : a.yRy.Animation.FADE,
     animationPosition: C === d.u3.TITLE_BAR_LEFT ? "bottom" : "left",
@@ -59,7 +59,7 @@ function b(e) {
         [m.repositionLayerTitlebarPopout]: C === d.u3.TITLE_BAR_LEFT,
         [m.repositionLayerSidebarPopout]: C === d.u3.SERVER_RAIL_TOP
       }),
-      children: (0, r.jsx)(O, {})
+      children: (0, r.jsx)(_, {})
     }),
     children: (e, n) => {
       let {
@@ -70,7 +70,7 @@ function b(e) {
   })
 }
 
-function O() {
+function _() {
   return (0, Chunk255367.jsxs)("div", {
     className: Chunk888831.container,
     children: [(0, Chunk255367.jsx)("div", {

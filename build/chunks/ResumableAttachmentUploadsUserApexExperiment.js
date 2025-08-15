@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk818083 = require("./818083.js"),
   Chunk427164 = require("./427164.js"),
   Chunk480218 = require("./480218.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-07_resumable_attachment_uploads",
     label: "Resumable attachment uploads",
@@ -49,14 +49,14 @@ function l(e) {
     location: t
   } = e, {
     isInHoldout: n
-  } = o._.getCurrentConfig({
+  } = a._.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: true
   });
   return n || s.getConfig({
     location: t
-  }), a.getCurrentConfig({
+  }), o.getCurrentConfig({
     location: t
   }, {
     disable: n,

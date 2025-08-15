@@ -1,4 +1,4 @@
-/** Chunk was on 65819 **/
+/** Chunk was on 67079 **/
 /** chunk id: 983205, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y: () => u
@@ -13,33 +13,33 @@ let u = e => {
   let {
     name: t,
     onNameChange: n
-  } = e, u = r.useRef(null), c = r.useRef(null), [d, m] = r.useState(false), h = r.useCallback(e => {
+  } = e, u = l.useRef(null), c = l.useRef(null), [d, m] = l.useState(false), h = l.useCallback(e => {
     var t;
     c.current = null == (t = u.current) ? true : t.selectionStart, n(e = (e = e.replace(/\s/g, "_")).length < 2 ? e : a.ZP.sanitizeEmojiName(e))
   }, [n]);
-  r.useEffect(() => {
+  l.useEffect(() => {
     if (null != c.current) {
       var e;
       null == (e = u.current) || e.setSelectionRange(c.current, c.current), c.current = null
     }
   });
-  let g = r.useCallback(() => {
+  let g = l.useCallback(() => {
       m(false)
     }, []),
-    f = r.useCallback(() => {
+    p = l.useCallback(() => {
       m(true)
     }, []);
-  return (0, l.jsx)(i.Is, {
+  return (0, r.jsx)(i.Is, {
     inputRef: u,
-    inputClassName: s.input,
+    inputClassName: o.input,
     error: d ? "" : true,
     minLength: 2,
     value: t,
     onChange: h,
-    placeholder: o.intl.string(o.t.U2JFHR),
+    placeholder: s.intl.string(s.t.U2JFHR),
     name: "emoji_name",
     onBlur: g,
-    onFocus: f,
+    onFocus: p,
     required: true
   })
 }

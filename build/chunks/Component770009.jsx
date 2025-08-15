@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 770009, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 30243 **/
+/** chunk id: 770009, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  i = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk52396 = require("./52396.jsx"),
   Chunk592125 = require("./592125.js"),
@@ -15,71 +14,64 @@ var Chunk512722 = require("./512722.js"),
   Chunk151200 = require("./151200.jsx"),
   Chunk96513 = require("./96513.js");
 
-function f(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      f(e, t, n[t])
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = n
     })
   }
   return e
 }
 
-function p(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var r = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var n = Object.getOwnPropertySymbols(e);
+      r.push.apply(r, n)
+    }
+    return r
+  })(Object(t)).forEach(function(r) {
+    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
 
-function m(e) {
+function b(e) {
   let {
     contentInventoryEntry: t,
-    channel: n
+    channel: r
   } = e, {
-    parsedEntry: i
-  } = (0, s.B)();
-  return (0, r.jsx)(u.Z, h(_({}, i), {
+    parsedEntry: l
+  } = (0, a.B)();
+  return (0, n.jsx)(u.Z, f(p({}, l), {
     entry: t,
-    channel: n
+    channel: r
   }))
 }
 
-function g(e) {
-  let t = (0, c.CJ)();
-  o()(null != t, "Component context is not defined. Did you forget to wrap your component in a ComponentStateContextProvider?");
+function m(e) {
+  let t = (0, s.CJ)();
+  i()(null != t, "Component context is not defined. Did you forget to wrap your component in a ComponentStateContextProvider?");
   let {
-    channelId: n
-  } = t, i = (0, a.e7)([l.Z], () => l.Z.getChannel(n));
-  return o()(null != i, "channel must be defined"), (0, r.jsx)(s.r, {
+    channelId: r
+  } = t, l = (0, o.e7)([c.Z], () => c.Z.getChannel(r));
+  return i()(null != l, "channel must be defined"), (0, n.jsx)(a.r, {
     location: d._.EMBED,
     entry: e.contentInventoryEntry,
-    channel: i,
+    channel: l,
     errorFallback: null,
-    children: (0, r.jsx)(m, h(_({}, e), {
-      channel: i
+    children: (0, n.jsx)(b, f(p({}, e), {
+      channel: l
     }))
   })
 }

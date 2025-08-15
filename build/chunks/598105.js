@@ -14,9 +14,9 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = 256;
+let a = 256;
 
-function a(e, t) {
+function o(e, t) {
   return r.ZP.ensureModule("discord_spellcheck").then(() => {
     let {
       cld: n
@@ -44,7 +44,7 @@ class s {
   process(e) {
     this._processing || (this._processing = true, requestIdleCallback(t => {
       if (t.timeRemaining() <= this._minimumTimeRemaining) return void this._processEnd();
-      e.length > o && (e = e.slice(0, o)), a(e, this._languageHint).then(e => {
+      e.length > a && (e = e.slice(0, a)), o(e, this._languageHint).then(e => {
         this.language = e, this._processEnd(t.didTimeout)
       }, () => {
         this._processEnd(t.didTimeout)

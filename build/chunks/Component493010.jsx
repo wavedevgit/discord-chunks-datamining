@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 493010, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 493010, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => x
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -22,43 +21,43 @@ var Chunk255367 = require("./255367.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk952899 = require("./952899.js");
-let O = function(e) {
+let x = function(e) {
   let {
     channel: t,
     guild: n,
-    maxWidth: O
+    maxWidth: x
   } = e;
   i.useEffect(() => {
-    (0, f.Q3)(o.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
-      dismissAction: E.L.AUTO
+    (0, p.Q3)(l.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
+      dismissAction: y.L.AUTO
     })
   }, []);
   let v = i.useCallback(() => {
-      s.Z.updateChatOpen(t.id, false), h.S.safeDispatch(g.CkL.FOCUS_CHAT_BUTTON)
+      o.Z.updateChatOpen(t.id, false), m.S.safeDispatch(b.CkL.FOCUS_CHAT_BUTTON)
     }, [t.id]),
-    I = (0, r.jsx)(_.ZP.Icon, {
+    j = (0, r.jsx)(h.ZP.Icon, {
       icon: a.Dio,
-      tooltip: b.intl.string(b.t.cpT0Cg),
+      tooltip: _.intl.string(_.t.cpT0Cg),
       onClick: v
     });
   return (0, r.jsxs)(u.Z, {
     sidebarType: u.y.CallChatSidebar,
-    maxWidth: O,
-    floatingLayer: m.ZP,
-    children: [(0, r.jsx)(l.Z, {
+    maxWidth: x,
+    floatingLayer: g.ZP,
+    children: [(0, r.jsx)(s.Z, {
       channel: t,
-      draftType: p.d.ChannelMessage
-    }), (0, r.jsxs)(_.ZP, {
-      toolbar: I,
-      "aria-label": b.intl.string(b.t.BIYAqa),
-      children: [(0, r.jsx)(_.ZP.ChannelIcon, {
+      draftType: f.d.ChannelMessage
+    }), (0, r.jsxs)(h.ZP, {
+      toolbar: j,
+      "aria-label": _.intl.string(_.t.BIYAqa),
+      children: [(0, r.jsx)(h.ZP.ChannelIcon, {
         icon: a.kBi,
-        "aria-label": b.intl.string(b.t.Kx5kCA)
-      }), (0, r.jsx)(_.ZP.Title, {
+        "aria-label": _.intl.string(_.t.Kx5kCA)
+      }), (0, r.jsx)(h.ZP.Title, {
         children: t.name
       })]
     }), (0, r.jsx)("div", {
-      className: y.chat,
+      className: C.chat,
       children: (0, r.jsx)(c.Z, {
         channel: t,
         guild: n,

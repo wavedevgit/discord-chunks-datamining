@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => H
 }), require("./997841.js"), require("./388685.js"), require("./642613.js");
 var r, Chunk348327 = require("./348327.js"),
-  o = require.n(Chunk348327),
+  a = require.n(Chunk348327),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -52,7 +52,7 @@ function M(e) {
   return null != t ? x(t.id) : f.G6.getSetting()
 }
 
-function j(e) {
+function k(e) {
   var t;
   if ((0, p.yE)(null != (t = e.flags) ? t : 0, v.xjy.CONTEXTLESS)) returntrue;
   switch (e.type) {
@@ -69,7 +69,7 @@ function j(e) {
   }
 }
 
-function k() {
+function j() {
   P = true, A = S, U()
 }
 
@@ -83,8 +83,8 @@ function U() {
   }
   S === Chunk981631.Skl.ONLINE && N > 0 && (S = Chunk981631.Skl.IDLE);
   let t = false,
-    n = P || S === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(j);
-  o()(C, require) || (C = require, t = true);
+    n = P || S === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(k);
+  a()(C, require) || (C = require, t = true);
   let r = Chunk797258.Z.getRemoteActivities();
   w !== r && (w = r, t = true);
   let i = Chunk797258.Z.getHiddenActivities();
@@ -99,14 +99,14 @@ function B() {
   return T = false, U()
 }
 
-function Z() {
+function V() {
   P = false, A = Chunk981631.Skl.UNKNOWN, U(), Chunk158776.Z.setCurrentUserOnConnectionOpen(S, L)
 }
 
 function F() {
-  Z()
+  V()
 }
-class V extends(r = Chunk442837.ZP.Store) {
+class Z extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk517100.Z, Chunk581883.Z, Chunk293273.Z, Chunk797258.Z, Chunk283595.Z, Chunk77498.Z), this.syncWith([Chunk293273.Z], U)
   }
@@ -141,12 +141,12 @@ class V extends(r = Chunk442837.ZP.Store) {
     return this.getActivities(t).find(e)
   }
 }
-I(V, "displayName", "SelfPresenceStore");
-let H = new V(Chunk570140.Z, {
+I(Z, "displayName", "SelfPresenceStore");
+let H = new Z(Chunk570140.Z, {
   START_SESSION: U,
   CONNECTION_OPEN: F,
-  CONNECTION_OPEN_SUPPLEMENTAL: Z,
-  OVERLAY_INITIALIZE: Z,
+  CONNECTION_OPEN_SUPPLEMENTAL: V,
+  OVERLAY_INITIALIZE: V,
   CONNECTION_CLOSED: U,
   IDLE: U,
   AFK: U,
@@ -161,7 +161,7 @@ let H = new V(Chunk570140.Z, {
   RPC_APP_DISCONNECTED: U,
   LIBRARY_FETCH_SUCCESS: U,
   LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: U,
-  LOGOUT: k,
+  LOGOUT: j,
   FORCE_INVISIBLE: G,
   WINDOW_FOCUS: B
 })

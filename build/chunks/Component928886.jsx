@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk481060 = require("./481060.js"),
   Chunk479446 = require("./479446.js"),
   Chunk104494 = require("./104494.js"),
@@ -32,7 +32,7 @@ function I(e) {
   var t;
   let {
     renderHeader: n,
-    referralTrialOfferId: o,
+    referralTrialOfferId: a,
     handleClose: I
   } = e, {
     selectedSkuId: T,
@@ -47,7 +47,7 @@ function I(e) {
     isGift: D,
     selectedGiftStyle: L,
     giftRecipient: x
-  } = (0, h.wD)(), M = D && (0, p.pO)(x) && S === g.h8.CONFIRM && null != L && (null == R ? true : R.productLine) !== E.POd.COLLECTIBLES, j = null != n && null != S, k = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], U = null != S && !k.includes(S) && null != T, G = (0, u.N)(o), B = !D && null != G && null != T && b.nG[G.trial_id].skus.includes(T), Z = (0, c.Ng)(), F = null == Z || null == (t = Z.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === T), V = !D && null != Z && null != T && F;
+  } = (0, h.wD)(), M = D && (0, p.pO)(x) && S === g.h8.CONFIRM && null != L && (null == R ? true : R.productLine) !== E.POd.COLLECTIBLES, k = null != n && null != S, j = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], U = null != S && !j.includes(S) && null != T, G = (0, u.N)(a), B = !D && null != G && null != T && b.nG[G.trial_id].skus.includes(T), V = (0, c.Ng)(), F = null == V || null == (t = V.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === T), Z = !D && null != V && null != T && F;
   return i.useMemo(() => {
     if (null == S) return;
     let e = null;
@@ -62,21 +62,21 @@ function I(e) {
         className: O.closeButton,
         "data-migration-pending": true
       })]
-    }) : j ? e = n(null != A ? A : null, I, S) : C === y.GZ.ONE_TIME ? e = (0, r.jsx)(_.t, {
+    }) : k ? e = n(null != A ? A : null, I, S) : C === y.GZ.ONE_TIME ? e = (0, r.jsx)(_.t, {
       step: S,
       onClose: I
-    }) : U && (a()(v(T, b.y7), "invalid sku id: ".concat(T)), e = (0, r.jsx)(f.Z, {
+    }) : U && (o()(v(T, b.y7), "invalid sku id: ".concat(T)), e = (0, r.jsx)(f.Z, {
       currentStep: null != S ? S : true,
       purchaseState: N,
       premiumType: b.y7[T],
       onClose: I,
       showTrialBadge: B,
-      showDiscountBadge: V,
+      showDiscountBadge: Z,
       isGift: D,
       giftRecipient: x,
       isEligibleForTrial: B,
       enablePremiumBrandRefresh: P,
       isDisplayingWowMomentConfirmation: w
     })), e
-  }, [L, I, N, n, A, T, S, B, V, M, U, j, C, D, x, P, w])
+  }, [L, I, N, n, A, T, S, B, Z, M, U, k, C, D, x, P, w])
 }

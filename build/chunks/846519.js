@@ -13,8 +13,8 @@ function r(e, t, n) {
 require.d(exports, {
   GR: () => s,
   V7: () => i,
-  Xp: () => a,
-  sW: () => o
+  Xp: () => o,
+  sW: () => a
 });
 class i {
   start(e, t) {
@@ -33,7 +33,7 @@ class i {
     r(this, "_ref", true)
   }
 }
-class o {
+class a {
   set(e) {
     return this._delay = e, this
   }
@@ -51,7 +51,7 @@ class o {
     r(this, "_timeout", true), r(this, "_delay", true), r(this, "_handler", true), this._delay = e, this._handler = t, this._timeout = new i
   }
 }
-class a {
+class o {
   start(e, t) {
     this.stop(), this._ref = window.setInterval(t, e)
   }

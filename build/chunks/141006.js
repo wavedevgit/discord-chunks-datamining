@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 141006, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96812 **/
+/** chunk id: 141006, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  Eg: () => i,
+  Eg: () => n,
   SK: () => r,
   tl: () => o
 });
@@ -11,7 +10,7 @@ let r = {
     secondary_color: 0xffbbec,
     tertiary_color: 0xffc3a0
   },
-  i = {
+  n = {
     primary_color: 0x9e6bff,
     secondary_color: 0x9fc1ff,
     tertiary_color: null

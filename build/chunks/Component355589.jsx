@@ -188,7 +188,7 @@ let J = e => {
       {
         tagFilter: ee
       } = (0, M.H)(x.id),
-      et = (0, h.e7)([w.Z], () => w.Z.getGuild(x.getGuildId())),
+      et = (0, h.e7)([T.Z], () => T.Z.getGuild(x.getGuildId())),
       en = (0, Z.r_)(x),
       {
         transitions: er,
@@ -245,7 +245,7 @@ let J = e => {
           handleHide: s
         } = e, [c, d] = i.useState(false), u = (0, A.c)(a.id), x = (0, h.e7)([I.Z], () => I.Z.hasHidden(a.id)), p = function(e, t, a, l) {
           let s = null == e ? true : e.id,
-            o = (0, h.e7)([O.Z], () => null != s ? O.Z.getSortedRoles(s) : true);
+            o = (0, h.e7)([w.Z], () => null != s ? w.Z.getSortedRoles(s) : true);
           return i.useMemo(() => {
             let i, s = new K,
               c = (null == t ? true : t.isMediaChannel()) === true;
@@ -347,12 +347,12 @@ let J = e => {
             })), s
           }, [t, e, o, a, l])
         }(t, a, l, d), j = p.isAllDone(), v = u || x || !(e => {
-          let t = N.default.extractTimestamp(e);
+          let t = P.default.extractTimestamp(e);
           return o()().isBefore(o()(t).add(o().duration(15, "days")))
-        })(a.id), C = i.useRef(0);
-        return i.useEffect(() => (c || !j || v ? clearTimeout(C.current) : C.current = setTimeout(() => {
+        })(a.id), _ = i.useRef(0);
+        return i.useEffect(() => (c || !j || v ? clearTimeout(_.current) : _.current = setTimeout(() => {
           s()
-        }, 60 * T.Z.Millis.SECOND), () => clearTimeout(C.current)), [j, v, s, c]), {
+        }, 60 * N.Z.Millis.SECOND), () => clearTimeout(_.current)), [j, v, s, c]), {
           onboardingSteps: p,
           isHidden: x,
           isDismissed: u,
@@ -377,7 +377,7 @@ let J = e => {
         canManageChannel: r,
         guildId: a,
         channel: l
-      } = e, s = (0, h.e7)([O.Z], () => null != a ? O.Z.partitionVersion(a) : true), o = i.useCallback(() => {
+      } = e, s = (0, h.e7)([w.Z], () => null != a ? w.Z.partitionVersion(a) : true), o = i.useCallback(() => {
         S.S.dispatch(z.CkL.REMEASURE_TARGET)
       }, []);
       i.useEffect(() => {
@@ -393,12 +393,12 @@ let J = e => {
       ec || ei(!ed)
     }, [ec, ei, ed]), (0, p.ZP)(() => {
       a && em || ef(true)
-    }), null == et) ? null : (0, v.iZ)(x) ? s || 0 !== ee.size ? ee.size > 0 ? null : (0, r.jsx)(C.Z, {
+    }), null == et) ? null : (0, v.iZ)(x) ? s || 0 !== ee.size ? ee.size > 0 ? null : (0, r.jsx)(_.Z, {
       guild: et
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(C.Z, {
+      children: [(0, r.jsx)(_.Z, {
         guild: et
-      }), (0, r.jsx)(_.q, {})]
+      }), (0, r.jsx)(C.q, {})]
     }) : em && en ? eg ? a ? null : (0, r.jsx)(j.Z, {
       channel: x
     }) : (0, r.jsx)(r.Fragment, {
@@ -461,7 +461,7 @@ let J = e => {
                   className: B.stepStatus
                 }) : (0, r.jsx)(g.G2e, {
                   disableColor: true,
-                  icon: (0, g.GSL)(P.Z),
+                  icon: (0, g.GSL)(O.Z),
                   style: q,
                   className: l()(B.stepStatus, B.completed)
                 }), (0, r.jsxs)("div", {

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 115858, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 115858, original params: e,t,n (module,exports,require) **/
 module.exports = {
   chatHeaderBar: "chatHeaderBar_a53846",
   chatHeaderBarInfo: "chatHeaderBarInfo_a53846",

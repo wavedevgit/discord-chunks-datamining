@@ -21,8 +21,8 @@ async function c() {
   })).body
 }
 async function u(e) {
-  return (await o.tn.post({
-    url: a.ANM.NOTIFICATION_SNAPSHOTS,
+  return (await a.tn.post({
+    url: o.ANM.NOTIFICATION_SNAPSHOTS,
     body: {
       label: e
     },
@@ -30,14 +30,14 @@ async function u(e) {
   })).body
 }
 async function d(e) {
-  return (await o.tn.post({
-    url: a.ANM.RESTORE_NOTIFICATION_SNAPSHOT(e),
+  return (await a.tn.post({
+    url: o.ANM.RESTORE_NOTIFICATION_SNAPSHOT(e),
     rejectWithError: false
   })).body
 }
 async function f(e) {
-  return (await o.tn.del({
-    url: a.ANM.NOTIFICATION_SNAPSHOT(e),
+  return (await a.tn.del({
+    url: o.ANM.NOTIFICATION_SNAPSHOT(e),
     rejectWithError: false
   })).body
 }

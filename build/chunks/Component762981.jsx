@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk717976 = require("./717976.js"),
   Chunk558452 = require("./558452.js"),
   Chunk770278 = require("./770278.jsx"),
@@ -47,11 +47,11 @@ function m(e) {
     variant: t = "default",
     animationVariant: n = "default",
     onClick: i,
-    isVisible: o,
+    isVisible: a,
     disabled: c = false,
     disablePointerEvents: u = false
   } = e;
-  return (0, l.Y)(o, {
+  return (0, l.Y)(a, {
     keys: e => e ? "scrim" : "empty",
     config: d.Px,
     from: {
@@ -65,7 +65,7 @@ function m(e) {
     }
   }, "instant" === n ? "animate-never" : "animate-always")((e, n) => n ? (0, r.jsx)(s.animated.div, {
     role: "none",
-    className: a()(f.scrim, {
+    className: o()(f.scrim, {
       [f.lightbox]: "lightbox" === t,
       [f.pointerEventsNone]: u
     }),

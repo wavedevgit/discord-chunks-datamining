@@ -18,21 +18,21 @@ function s(e) {
     elapsed: s,
     duration: l,
     percentage: c
-  } = (0, o.Z)({
+  } = (0, a.Z)({
     start: t,
     end: n
   });
   return (0, r.jsxs)("div", {
-    className: a.container,
+    className: o.container,
     children: [(0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
       color: "text-default",
-      className: a.text,
-      children: (0, o.m)(s)
+      className: o.text,
+      children: (0, a.m)(s)
     }), (0, r.jsx)("div", {
-      className: a.bar,
+      className: o.bar,
       children: (0, r.jsx)("div", {
-        className: a.progress,
+        className: o.progress,
         style: {
           width: "".concat(100 * c, "%")
         }
@@ -40,8 +40,8 @@ function s(e) {
     }), (0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
       color: "text-default",
-      className: a.text,
-      children: (0, o.m)(l)
+      className: o.text,
+      children: (0, a.m)(l)
     })]
   })
 }

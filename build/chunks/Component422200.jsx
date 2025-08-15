@@ -1,7 +1,7 @@
-/** Chunk was on 40157 **/
-/** chunk id: 422200, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 78650 **/
+/** chunk id: 422200, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => C
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -26,31 +26,31 @@ var Chunk481060 = require("./481060.js"),
   Chunk612856 = require("./612856.jsx"),
   Chunk137591 = require("./137591.jsx"),
   Chunk388032 = require("./388032.jsx");
-let x = (0, Chunk108843.Z)(function(e) {
+let C = (0, Chunk108843.Z)(function(e) {
   let {
-    channel: n,
-    onSelect: t
-  } = e, a = (0, d.Z)(n), o = (0, h.Z)(n), x = (0, v.Z)(n), N = (0, u.Z)(n), E = (0, Z.Z)(n), w = (0, f.Z)(n), C = (0, c.Z)({
-    id: n.id,
-    label: _.intl.string(_.t.DQ797u)
-  }), k = (0, b.Z)(n, "Context Menu"), S = (0, j.Z)(n), A = (0, m.Z)(n), D = (0, g.Z)(n), T = (0, y.Z)(n.id), U = (0, p.Z)(n), M = (0, P.Z)(n), G = (0, s.l)(n), I = (0, s.P)(n), L = (0, O.Z)(n);
-  return (0, r.jsxs)(i.v2r, {
+    channel: t,
+    onSelect: n
+  } = e, a = (0, c.Z)(t), o = (0, h.Z)(t), C = (0, _.Z)(t), P = (0, u.Z)(t), N = (0, b.Z)(t), A = (0, f.Z)(t), T = (0, s.Z)({
+    id: t.id,
+    label: y.intl.string(y.t.DQ797u)
+  }), R = (0, g.Z)(t, "Context Menu"), x = (0, Z.Z)(t), S = (0, j.Z)(t), k = (0, m.Z)(t), M = (0, O.Z)(t.id), I = (0, v.Z)(t), U = (0, E.Z)(t), D = (0, d.l)(t), w = (0, d.P)(t), F = (0, p.Z)(t);
+  return (0, i.jsxs)(r.v2r, {
     navId: "thread-context",
     onClose: l.Zy,
-    "aria-label": _.intl.string(_.t["1NBjqa"]),
-    onSelect: t,
-    children: [(0, r.jsxs)(i.kSQ, {
-      children: [o, G]
-    }, "mark-as-read-or-favorite"), (0, r.jsxs)(i.kSQ, {
-      children: [k, U, N, E, D, T, a]
-    }, "thread-actions"), (0, r.jsxs)(i.kSQ, {
-      children: [x, A]
-    }, "notifications"), (0, r.jsx)(i.kSQ, {
-      children: I
-    }), (0, r.jsxs)(i.kSQ, {
-      children: [M, S, w, L]
-    }, "admin-actions"), (0, r.jsx)(i.kSQ, {
-      children: C
+    "aria-label": y.intl.string(y.t["1NBjqa"]),
+    onSelect: n,
+    children: [(0, i.jsxs)(r.kSQ, {
+      children: [o, D]
+    }, "mark-as-read-or-favorite"), (0, i.jsxs)(r.kSQ, {
+      children: [R, I, P, N, k, M, a]
+    }, "thread-actions"), (0, i.jsxs)(r.kSQ, {
+      children: [C, S]
+    }, "notifications"), (0, i.jsx)(r.kSQ, {
+      children: w
+    }), (0, i.jsxs)(r.kSQ, {
+      children: [U, x, A, F]
+    }, "admin-actions"), (0, i.jsx)(r.kSQ, {
+      children: T
     }, "developer-actions")]
   })
 }, [Chunk100527.Z.CONTEXT_MENU, Chunk100527.Z.CHANNEL_LIST_THREAD_MENU])

@@ -27,30 +27,30 @@ function p(e) {
 
 function h(e, t, n) {
   let r = s.ZP.canSaveImage(e, null != n ? n : t),
-    i = a.Z.isDiscordAssetUrl(e, t, n),
-    o = p(e);
-  return r && i && o
+    i = o.Z.isDiscordAssetUrl(e, t, n),
+    a = p(e);
+  return r && i && a
 }
 
 function m(e, t, n) {
   let r = s.ZP.canCopyImage(e, null != n ? n : t),
-    i = a.Z.isDiscordAssetUrl(e, t, n),
-    o = p(e);
-  return r && i && o
+    i = o.Z.isDiscordAssetUrl(e, t, n),
+    a = p(e);
+  return r && i && a
 }
 
 function g(e, t) {
-  return (0, o.ii)() && null != e ? e : t
+  return (0, a.ii)() && null != e ? e : t
 }
 
 function E(e, t, n, r) {
-  let i = a.Z.toURLSafe(e);
+  let i = o.Z.toURLSafe(e);
   if (null == i || i.host === u) return e;
   let l = (0, s.xG)(e, t),
     p = false;
-  if (i.origin === c && (p = true), (0, o.ii)() && i.origin === _ && (p = true), i.searchParams.delete("width"), i.searchParams.delete("height"), i.searchParams.delete("quality"), i.searchParams.delete("size"), p)
-    if ((0, o.ii)()) {
-      if (a.Z.isOriginalContentTypeDifferent(t, n)) return i.toString();
+  if (i.origin === c && (p = true), (0, a.ii)() && i.origin === _ && (p = true), i.searchParams.delete("width"), i.searchParams.delete("height"), i.searchParams.delete("quality"), i.searchParams.delete("size"), p)
+    if ((0, a.ii)()) {
+      if (o.Z.isOriginalContentTypeDifferent(t, n)) return i.toString();
       i.host = d, i.port = f, i.pathname.startsWith("/attachments/") && (i.pathname = "/channels/" + i.pathname.substring(13))
     } else i.host = u;
   return i.searchParams.delete("format"), null == l && null != r && i.searchParams.append("format", r), i.toString()

@@ -1,4 +1,4 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 614173, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => c
@@ -12,9 +12,9 @@ var Chunk73800 = require("./73800.js"),
 
 function c(e) {
   let t = (0, i.e7)([l.Z], () => l.Z.getChannel(e), [e]),
-    n = a.Uu(o.Plq.REQUEST_TO_SPEAK, t),
+    n = a.Uu(s.Plq.REQUEST_TO_SPEAK, t),
     [c, u] = r.useState(n);
   return n !== c && u(n), [c, e => {
-    null != t && (u(e), (0, s.Pq)(t, o.Plq.REQUEST_TO_SPEAK, e))
+    null != t && (u(e), (0, o.Pq)(t, s.Plq.REQUEST_TO_SPEAK, e))
   }]
 }

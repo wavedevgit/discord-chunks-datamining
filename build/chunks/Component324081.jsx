@@ -1,7 +1,7 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 324081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => P
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -28,14 +28,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk888097 = require("./888097.js");
-let P = {
+let I = {
   top: 8,
   bottom: 8,
   left: false,
   right: false
 };
 
-function I(e) {
+function P(e) {
   var t, n;
   let {
     channel: i,
@@ -46,7 +46,7 @@ function I(e) {
     toggleCollapsed: d
   } = e, p = (0, o.JA)("recents-header-".concat(i.id, "-").concat((0, b.Dt)()));
   return (0, r.jsx)(s.tEY, {
-    offset: P,
+    offset: I,
     children: (0, r.jsxs)("div", (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -129,11 +129,11 @@ function Z(e) {
     channel: t,
     gotoChannel: n
   } = e, i = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id));
-  return null == i ? null : (0, r.jsx)(O.Z, {
+  return null == i ? null : (0, r.jsx)(_.Z, {
     "aria-hidden": true,
     className: S.guildIcon,
     guild: i,
-    size: O.Z.Sizes.MEDIUM,
+    size: _.Z.Sizes.MEDIUM,
     active: true,
     onClick: n,
     tabIndex: false
@@ -196,13 +196,13 @@ function A(e) {
     status: i,
     activities: l,
     applicationStream: o
-  } = (0, a.cj)([E.default, j.Z, _.Z], () => {
+  } = (0, a.cj)([E.default, j.Z, O.Z], () => {
     let e = E.default.getUser(t.getRecipientId());
     return {
       user: e,
       status: null != e ? j.Z.getStatus(e.id) : null,
       activities: null != e ? j.Z.getActivities(e.id) : null,
-      applicationStream: null != e ? _.Z.getAnyStreamForUser(e.id) : null
+      applicationStream: null != e ? O.Z.getAnyStreamForUser(e.id) : null
     }
   }), {
     voiceActivityStatusEnabled: s

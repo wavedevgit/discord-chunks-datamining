@@ -1,4 +1,4 @@
-/** Chunk was on 58511 **/
+/** Chunk was on 47463 **/
 /** chunk id: 869157, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -32,7 +32,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk547063 = require("./547063.js");
 
-function T(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -108,10 +108,10 @@ function k(e) {
         }
       })
     }, [l, m, v]),
-    I = r.useCallback((e, t) => {
+    T = r.useCallback((e, t) => {
       n({}, [(0, N.rE)(e, t)])
     }, [n]),
-    T = r.useCallback((e, t, i) => {
+    P = r.useCallback((e, t, i) => {
       let r = (0, N.rE)(e, t);
       null != m[r] && n({
         [r]: {
@@ -134,14 +134,14 @@ function k(e) {
   return w.length > 0 ? w.map(e => (0, i.jsx)(A, {
     guild: f,
     commandId: t,
-    onChange: t => T(e.id, e.type, t),
-    onRemove: () => I(e.id, e.type),
+    onChange: t => P(e.id, e.type, t),
+    onRemove: () => T(e.id, e.type),
     overwrite: e,
     integration: k,
     canShowMigrationTooltip: D,
     hasAccessToMutatePermissions: g
   }, e.id)) : (0, i.jsx)("div", {
-    className: P.noItemsSelected,
+    className: I.noItemsSelected,
     children: (0, i.jsx)(s.Text, {
       color: "text-muted",
       variant: "text-sm/normal",
@@ -166,12 +166,12 @@ function A(e) {
     C = null == j || null == (n = j.application) || null == (t = n.bot) ? true : t.username,
     N = !x.canWrite || !O,
     k = f.default.getId();
-  O ? x.canWrite || (x.type === u.Kw.USER ? a = x.id === k ? I.intl.string(I.t["1VF/09"]) : I.intl.string(I.t.P1GnER) : x.type === u.Kw.ROLE && (a = I.intl.string(I.t.mcAijY))) : a = null != c ? I.intl.string(I.t.tybdam) : I.intl.string(I.t.z2hjk5);
+  O ? x.canWrite || (x.type === u.Kw.USER ? a = x.id === k ? T.intl.string(T.t["1VF/09"]) : T.intl.string(T.t.P1GnER) : x.type === u.Kw.ROLE && (a = T.intl.string(T.t.mcAijY))) : a = null != c ? T.intl.string(T.t.tybdam) : T.intl.string(T.t.z2hjk5);
   let A = y && null != j && x.id === o.id && true !== C && !x.permission;
   r.useEffect(() => {
     if (A) {
       var e;
-      v.default.track(w.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, E(T({}, (0, d.hH)(o.id)), {
+      v.default.track(w.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, E(P({}, (0, d.hH)(o.id)), {
         application_id: null == j || null == (e = j.application) ? true : e.id,
         location: "toggle"
       }))
@@ -179,12 +179,12 @@ function A(e) {
   }, [o.id, null == j || null == (l = j.application) ? true : l.id, A]);
   let R = r.useRef(null),
     L = (0, i.jsx)(s.ua7, {
-      tooltipClassName: P.tooltip,
+      tooltipClassName: I.tooltip,
       text: a,
       shouldShow: N,
       position: "left",
       hideOnClick: false,
-      children: e => (0, i.jsx)("div", E(T({}, e), {
+      children: e => (0, i.jsx)("div", E(P({}, e), {
         ref: R,
         children: (0, i.jsx)(S.Z, {
           isDisabled: N,
@@ -202,8 +202,8 @@ function A(e) {
           e.stopPropagation(), m.Z.dismissToggleTooltip(o.id, j)
         },
         children: (0, i.jsx)(g.ZP, {
-          className: P.tooltip,
-          content: I.intl.format(I.t.pW4Cr6, {
+          className: I.tooltip,
+          content: T.intl.format(T.t.pW4Cr6, {
             botName: C,
             link: "https://discord.com/blog/welcome-to-the-new-era-of-discord-apps/"
           }),
@@ -219,9 +219,9 @@ function A(e) {
       children: () => L
     });
   return (0, i.jsxs)("div", {
-    className: P.entryItem,
+    className: I.entryItem,
     children: [(0, i.jsx)("div", {
-      className: P.entryName,
+      className: I.entryName,
       children: (0, i.jsx)(Z.Z, {
         guild: o,
         id: x.id,
@@ -230,7 +230,7 @@ function A(e) {
         lockTooltipText: a
       })
     }), (0, i.jsxs)("div", {
-      className: P.entryActions,
+      className: I.entryActions,
       children: [(0, i.jsx)(D, {
         commandId: c,
         isSentinel: _,
@@ -249,15 +249,15 @@ function D(e) {
     onRemove: l
   } = e;
   return r ? null : null == t && n ? null : (0, i.jsx)("div", {
-    className: P.removeActions,
+    className: I.removeActions,
     children: (0, i.jsx)(s.P3F, {
-      className: P.removeContainer,
-      "aria-label": I.intl.string(I.t.mT0CQE),
+      className: I.removeContainer,
+      "aria-label": T.intl.string(T.t.mT0CQE),
       onClick: l,
       children: (0, i.jsx)(s.XHJ, {
         size: "md",
         color: "currentColor",
-        className: P.removeIcon
+        className: I.removeIcon
       })
     })
   })

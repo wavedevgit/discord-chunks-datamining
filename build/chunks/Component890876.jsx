@@ -20,7 +20,7 @@ function c(e) {
   } = e;
   return n ? c ? null : (0, r.jsx)("div", {
     className: l.footer,
-    children: (0, r.jsx)(o.O1, {
+    children: (0, r.jsx)(a.O1, {
       variant: "primary",
       text: s.intl.string(s.t["+Xp3ho"]),
       onClick: () => (0, i.openUserProfileModal)({
@@ -32,7 +32,7 @@ function c(e) {
   }) : (0, r.jsx)("div", {
     className: l.footer,
     inert: true,
-    children: (0, r.jsx)(a.Z, {
+    children: (0, r.jsx)(o.Z, {
       user: t
     })
   })

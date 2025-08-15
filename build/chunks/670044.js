@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 670044, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 670044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 });
 var Chunk990547 = require("./990547.js"),
   Chunk213609 = require("./213609.js");
 
-function o(e) {
+function l(e) {
   return (0, i.Z)({
     type: r.ImpressionTypes.VIEW,
     name: r.ImpressionNames.NOTIFICATION_SETTING_UNREAD_NUDGE

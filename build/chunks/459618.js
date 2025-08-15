@@ -66,7 +66,7 @@ function b(e) {
   let n = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
     r = null == e.gatewaySeenTimestamp ? null : e.gatewaySeenTimestamp - e.initialSendTimestamp,
     i = (0, s.d)();
-  d.default.track(f.rMx.SEND_MESSAGE_ROUNDTRIP, p(m(p({}, (0, a.Z)()), {
+  d.default.track(f.rMx.SEND_MESSAGE_ROUNDTRIP, p(m(p({}, (0, o.Z)()), {
     api_latency_ms: n,
     gateway_latency_ms: r,
     channel_id: t.id,
@@ -89,9 +89,9 @@ function y(e) {
 }
 class O extends Chunk442837.ZP.Store {
   recordMessageSendAttempt(e, t) {
-    var n, r, i, o;
-    let a = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
-      s = (null != (i = null == (n = a.attachments) ? true : n.length) ? i : 0) + (null != (o = null == (r = a.attachmentsToUpload) ? true : r.length) ? o : 0),
+    var n, r, i, a;
+    let o = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
+      s = (null != (i = null == (n = o.attachments) ? true : n.length) ? i : 0) + (null != (a = null == (r = o.attachmentsToUpload) ? true : r.length) ? a : 0),
       l = {
         initialSendTimestamp: Date.now(),
         apiResponseTimestamp: null,

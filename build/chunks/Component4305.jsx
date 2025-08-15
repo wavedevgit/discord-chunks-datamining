@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 4305, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 4305, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => s
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -11,12 +10,12 @@ var Chunk352736 = require("./352736.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function l(e) {
+function s(e) {
   let {
     message: t,
-    usernameHook: l,
+    usernameHook: s,
     compact: c
-  } = e, u = (0, o.ZP)(t), d = l(u), f = i.Z.getSystemMessageUserJoin(t.id), _ = s.intl.format(f, {
+  } = e, u = (0, l.ZP)(t), d = s(u), p = i.Z.getSystemMessageUserJoin(t.id), m = o.intl.format(p, {
     username: u.nick,
     usernameHook: d
   });
@@ -24,6 +23,6 @@ function l(e) {
     icon: n(570111),
     timestamp: t.timestamp,
     compact: c,
-    children: _
+    children: m
   })
 }

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 705563, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 705563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -21,101 +20,89 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk482722 = require("./482722.js");
 
-function E(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function b(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      E(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function y(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function v(e) {
+function y(e) {
   let {
     channelId: t,
     showProfile: n = false,
-    showTrailingDivider: E = false
-  } = e, y = d.default.cast(t), {
-    joinRequest: v,
-    isModmin: I,
-    guildId: T,
-    maxMembers: S
-  } = (0, i.cj)([f.Z, c.Z, u.Z], () => {
-    let e = f.Z.getRequest(y),
+    showTrailingDivider: y = false
+  } = e, _ = d.default.cast(t), {
+    joinRequest: C,
+    isModmin: x,
+    guildId: v,
+    maxMembers: j
+  } = (0, i.cj)([p.Z, c.Z, u.Z], () => {
+    let e = p.Z.getRequest(_),
       t = c.Z.getGuild(null == e ? true : e.guildId);
     return {
       joinRequest: e,
-      isModmin: null != t && u.Z.can(h.Plq.KICK_MEMBERS, t),
+      isModmin: null != t && u.Z.can(m.Plq.KICK_MEMBERS, t),
       guildId: null == t ? true : t.id,
       maxMembers: null == t ? true : t.maxMembers
     }
-  }), A = (0, i.e7)([l.Z], () => null != T ? l.Z.getMemberCount(T) : 0), N = null != S && (null != A ? A : 0) >= S, {
-    approveRequest: C,
-    rejectRequest: R,
-    submitting: P
-  } = (0, p.s)(null == v ? true : v.guildId, null == v ? true : v.userId, null == v ? true : v.joinRequestId);
-  if (null == v || v.applicationStatus !== _.wB.SUBMITTED || !I) return null;
-  let w = () => {
-    (0, s.openUserProfileModal)({
-      userId: v.userId,
-      guildId: v.guildId
-    })
-  };
-  return (0, r.jsxs)("div", {
-    className: g.buttons,
-    children: [(0, r.jsx)(o.ua7, {
-      text: m.intl.string(m.t.cdPGbG),
-      shouldShow: N,
-      children: e => (0, r.jsx)(o.zxk, O(b({
-        variant: "active",
-        size: "sm",
-        text: m.intl.string(m.t.BzjDQE)
-      }, e), {
-        loading: P,
-        onClick: C,
-        disabled: N
-      }))
-    }), (0, r.jsx)(o.zxk, {
+  }), O = (0, i.e7)([s.Z], () => null != v ? s.Z.getMemberCount(v) : 0), E = null != j && (null != O ? O : 0) >= j, {
+    approveRequest: S,
+    rejectRequest: P,
+    submitting: I
+  } = (0, f.s)(null == C ? true : C.guildId, null == C ? true : C.userId, null == C ? true : C.joinRequestId);
+  return null != C && C.applicationStatus === h.wB.SUBMITTED && x ? (0, r.jsxs)("div", {
+    className: b.buttons,
+    children: [(0, r.jsx)(l.ua7, {
+      text: g.intl.string(g.t.cdPGbG),
+      shouldShow: E,
+      children: e => {
+        var t, n;
+        return (0, r.jsx)(l.zxk, (t = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({
+          variant: "active",
+          size: "sm",
+          text: g.intl.string(g.t.BzjDQE)
+        }, e), n = n = {
+          loading: I,
+          onClick: S,
+          disabled: E
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(n)).forEach(function(e) {
+          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+        }), t))
+      }
+    }), (0, r.jsx)(l.zxk, {
       variant: "critical-primary",
       size: "sm",
-      text: m.intl.string(m.t.hDtbs7),
-      onClick: R,
-      disabled: P || v.applicationStatus !== _.wB.SUBMITTED
-    }), n && (0, r.jsx)(o.zxk, {
-      onClick: w,
+      text: g.intl.string(g.t.hDtbs7),
+      onClick: P,
+      disabled: I || C.applicationStatus !== h.wB.SUBMITTED
+    }), n && (0, r.jsx)(l.zxk, {
+      onClick: () => {
+        (0, o.openUserProfileModal)({
+          userId: C.userId,
+          guildId: C.guildId
+        })
+      },
       variant: "secondary",
       size: "sm",
-      text: m.intl.string(m.t.iXAna2)
-    }), E && (0, r.jsx)(a.ZP.Divider, {})]
-  })
+      text: g.intl.string(g.t.iXAna2)
+    }), y && (0, r.jsx)(a.ZP.Divider, {})]
+  }) : null
 }

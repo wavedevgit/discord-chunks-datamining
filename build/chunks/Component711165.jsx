@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 711165, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _: () => w
@@ -135,7 +135,7 @@ function T(e) {
         scheduledMessages: i
       }] = e;
       return (0, r.jsxs)("div", {
-        className: I.channelRow,
+        className: P.channelRow,
         children: [(0, r.jsx)(E.Z, {
           channel: n,
           gotoChannel: () => (0, h.uL)(S.Z5c.CHANNEL(n.getGuildId(), n.id)),
@@ -170,62 +170,62 @@ let A = Chunk73800.memo(function(e) {
     switch (e) {
       case b._.SCHEDULED:
         return {
-          isError: false, stateMessage: P.intl.string(P.t.Fn6Odn)
+          isError: false, stateMessage: I.intl.string(I.t.Fn6Odn)
         };
       case b._.ERROR_CHANNEL_NOT_FOUND:
         return {
-          isError: true, stateMessage: P.intl.string(P.t.v5O2dH)
+          isError: true, stateMessage: I.intl.string(I.t.v5O2dH)
         };
       case b._.ERROR_USER_NOT_FOUND:
         return {
-          isError: true, stateMessage: P.intl.string(P.t.j8uIfH)
+          isError: true, stateMessage: I.intl.string(I.t.j8uIfH)
         };
       case b._.ERROR_USER_CANNOT_USE_SCHEDULED_MESSAGES:
         return {
-          isError: true, stateMessage: P.intl.string(P.t.w6zHX1)
+          isError: true, stateMessage: I.intl.string(I.t.w6zHX1)
         };
       case b._.ERROR_SEND_FAILED:
         return {
-          isError: true, stateMessage: P.intl.string(P.t["pflV7+"])
+          isError: true, stateMessage: I.intl.string(I.t["pflV7+"])
         };
       case b._.ERROR_SCHEDULED_MESSAGES_DISABLED:
         return {
-          isError: true, stateMessage: P.intl.string(P.t.j8uIfH)
+          isError: true, stateMessage: I.intl.string(I.t.j8uIfH)
         };
       default:
         (0, C.vE)(e)
     }
   }(t.state), p = i.useCallback(() => {
     (0, g.gD)(t.scheduledMessageId).then(() => {
-      (0, O.C$)()
+      (0, _.C$)()
     }).catch(e => {
-      (0, O.wW)(e.message)
+      (0, _.wW)(e.message)
     })
   }, [t.scheduledMessageId]);
   return (0, r.jsx)("div", {
-    className: o()(I.messageContainer, {
-      [I.messageSendError]: c,
-      [I.messageSendScheduled]: !c
+    className: o()(P.messageContainer, {
+      [P.messageSendError]: c,
+      [P.messageSendScheduled]: !c
     }),
     children: l ? (0, r.jsx)(d.$jN, {
-      className: I.messageSpinner
+      className: P.messageSpinner
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.Text, {
         variant: "text-xs/semibold",
         color: c ? "text-danger" : "text-feedback-positive",
-        className: I.messageState,
+        className: P.messageState,
         children: u
       }), (0, r.jsxs)("div", {
-        className: I.channelMessageAndCancelButton,
+        className: P.channelMessageAndCancelButton,
         children: [(0, r.jsx)(f.Z, {
           message: a,
           channel: n,
-          className: I.message,
-          compact: _.jU.getSetting(),
+          className: P.message,
+          compact: O.jU.getSetting(),
           animateAvatar: false,
           focusProps: N
         }, a.id), (0, r.jsx)(d.P3F, {
-          className: I.cancelMessageButton,
+          className: P.cancelMessageButton,
           onClick: p,
           children: (0, r.jsx)(d.k$p, {})
         })]

@@ -10,12 +10,12 @@ function r(e) {
     scrollToEnd: i
   } = e;
 
-  function o(e) {
+  function a(e) {
     var n;
     return null != (n = t().find(t => !!(e.compareDocumentPosition(t) & (Node.DOCUMENT_POSITION_FOLLOWING | Node.DOCUMENT_POSITION_CONTAINED_BY)))) ? n : null
   }
 
-  function a(e) {
+  function o(e) {
     let n = t();
     for (let t = n.length - 1; t >= 0; t--) {
       let r = n[t];
@@ -38,13 +38,13 @@ function r(e) {
     getNextFocusableElement: async function(e) {
       let t = (null == e ? true : e.from) || n();
       if (null == t) return null;
-      let i = o(t);
+      let i = a(t);
       return null == i && (null == e ? true : e.wrap) ? (await (null == r ? true : r()), s()) : i
     },
     getPreviousFocusableElement: async function(e) {
       let t = (null == e ? true : e.from) || n();
       if (null == t) return null;
-      let r = a(t);
+      let r = o(t);
       return null == r && (null == e ? true : e.wrap) ? (await (null == i ? true : i()), l()) : r
     },
     getFirstFocusableElement: s,

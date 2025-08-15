@@ -2,7 +2,7 @@
 /** chunk id: 435064, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => eo
+  Z: () => ea
 }), require("./388685.js"), require("./997841.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -109,7 +109,7 @@ function M(e) {
   L.hardwareClassificationForDecoupled = t, L.hardwareClassificationForDecoupled === _.x.MEETS_AUTO_ENABLE && r !== _.x.MEETS_AUTO_ENABLE && L.clipsSettings.clipsEnabled && (L.clipsSettings.decoupledClipsEnabled = true)
 }
 
-function j(e) {
+function k(e) {
   let {
     clip: t
   } = e;
@@ -120,7 +120,7 @@ function j(e) {
     }
 }
 
-function k(e) {
+function j(e) {
   let {
     settings: t
   } = e;
@@ -157,7 +157,7 @@ function B() {
   S = Math.max(S - 1, 0)
 }
 
-function Z(e) {
+function V(e) {
   var t, n;
   let {
     clip: r
@@ -184,7 +184,7 @@ function F(e) {
   T = [t, ...T]
 }
 
-function V(e) {
+function Z(e) {
   let {
     clipId: t
   } = e;
@@ -450,10 +450,10 @@ g(er, "displayName", "ClipsStore"), g(er, "persistKey", "ClipsStore"), g(er, "mi
   }
 })]);
 let ei = new er(Chunk570140.Z, {
-    CLIPS_SETTINGS_UPDATE: k,
-    CLIPS_SAVE_CLIP: Z,
+    CLIPS_SETTINGS_UPDATE: j,
+    CLIPS_SAVE_CLIP: V,
     CLIPS_SAVE_CLIP_PLACEHOLDER: F,
-    CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR: V,
+    CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR: Z,
     CLIPS_SAVE_CLIP_START: U,
     CLIPS_SAVE_CLIP_ERROR: B,
     CLIPS_SAVE_ANIMATION_END: G,
@@ -463,7 +463,7 @@ let ei = new er(Chunk570140.Z, {
     CLIPS_CLEAR_NEW_CLIP_IDS: $,
     CLIPS_LOAD_DIRECTORY_SUCCESS: X,
     CLIPS_DELETE_CLIP: Q,
-    CLIPS_UPDATE_METADATA: j,
+    CLIPS_UPDATE_METADATA: k,
     RTC_CONNECTION_FLAGS: ee,
     CLIPS_SHOW_CALL_WARNING: H,
     VOICE_CHANNEL_SELECT: Y,
@@ -473,4 +473,4 @@ let ei = new er(Chunk570140.Z, {
     CLIPS_DISMISS_EDUCATION: en,
     RUNNING_GAMES_CHANGE: et
   }),
-  eo = ei
+  ea = ei

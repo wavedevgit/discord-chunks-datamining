@@ -1,7 +1,7 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 358652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => O
 }), require("./388685.js");
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -29,20 +29,20 @@ function b(e) {
   } = e, n = c.Z.getChannel(t);
   return null != n && !!(0, a.hv)(n.type) && g()
 }
-class O extends(r = Chunk442837.ZP.Store) {
+class _ extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk55589.Z, Chunk592125.Z, Chunk944486.Z, Chunk306680.ZP)
   }
   getUnreadPrivateChannelIds() {
     return f
   }
-}(i = "displayName") in O ? Object.defineProperty(O, i, {
+}(i = "displayName") in _ ? Object.defineProperty(_, i, {
   value: "PrivateChannelReadStateStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : O[i] = "PrivateChannelReadStateStore";
-let _ = new O(Chunk570140.Z, {
+}) : _[i] = "PrivateChannelReadStateStore";
+let O = new _(Chunk570140.Z, {
   CONNECTION_OPEN: m,
   OVERLAY_INITIALIZE: m,
   MESSAGE_CREATE: b,

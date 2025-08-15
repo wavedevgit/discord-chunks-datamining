@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk717976 = require("./717976.js"),
   Chunk990547 = require("./990547.js"),
   Chunk793030 = require("./793030.js"),
@@ -65,7 +65,7 @@ function O(e) {
   var t;
   let {
     transitionState: n,
-    animationVariant: o = "default",
+    animationVariant: a = "default",
     size: m = "md",
     paddingSize: E = "sm",
     fullScreenOnMobile: y = true,
@@ -82,7 +82,7 @@ function O(e) {
     onClose: T
   }), [C, T]), P = 0 === n || 1 === n, {
     reducedMotion: w
-  } = i.useContext(d.S), D = P || w.enabled || "subtle" === o ? "scale(1)" : "scale(0.9)", L = (0, u.q)({
+  } = i.useContext(d.S), D = P || w.enabled || "subtle" === a ? "scale(1)" : "scale(0.9)", L = (0, u.q)({
     opacity: +!!P,
     transform: D,
     config: P ? p.jF : p.W$,
@@ -101,12 +101,12 @@ function O(e) {
       children: (0, r.jsx)(c.y5, {
         forceLevel: 1,
         children: (0, r.jsxs)("div", {
-          className: a()(h.outerContainer, {
+          className: o()(h.outerContainer, {
             [h.fullScreenOnMobile]: y
           }),
           children: [S, (0, r.jsx)(s.animated.div, {
             "data-mana-component": "modal",
-            className: a()(h.container, h["size-".concat(m)], h["padding-size-".concat(E)]),
+            className: o()(h.container, h["size-".concat(m)], h["padding-size-".concat(E)]),
             style: L,
             children: N
           })]

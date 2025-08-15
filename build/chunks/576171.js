@@ -1,7 +1,7 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 576171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
@@ -13,13 +13,13 @@ var Chunk73800 = require("./73800.js"),
   Chunk981631 = require("./981631.js"),
   Chunk440493 = require("./440493.js");
 
-function h(e) {
-  let t = (0, i.e7)([o.Z, a.Z, c.default, s.ZP], () => {
-    let t = o.Z.getGuild(e);
+function p(e) {
+  let t = (0, i.e7)([s.Z, a.Z, c.default, o.ZP], () => {
+    let t = s.Z.getGuild(e);
     if ((null == t ? true : t.features.has(u.oNc.HUB)) !== true || true === a.Z.hasViewedPrompt(d.r.REAL_NAME_PROMPT, t.id)) return null;
     let n = c.default.getCurrentUser();
     if (null == n) return null;
-    let r = s.ZP.getMember(t.id, null == n ? true : n.id);
+    let r = o.ZP.getMember(t.id, null == n ? true : n.id);
     return (null == r ? true : r.nick) == null
   });
   return r.useEffect(() => {

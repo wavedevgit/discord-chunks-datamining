@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 86203, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 86203, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -20,24 +19,23 @@ function c(e) {
     onMouseEnter: u,
     onMouseLeave: d
   } = e, {
-    error: f,
-    loaded: _,
-    message: p
-  } = (0, s.a)(t);
-  if (null == p && (_ || f)) return null;
-  let h = () => {
-      null == c || c(), o.Z.closePrivateChannel(t.id)
-    },
-    m = e => {
-      e.stopPropagation(), null == n || n(), null != p && (0, a.WL)(p, h)
-    };
+    error: p,
+    loaded: h,
+    message: f
+  } = (0, o.a)(t);
+  if (null == f && (h || p)) return null;
+  let m = () => {
+    null == c || c(), l.Z.closePrivateChannel(t.id)
+  };
   return (0, r.jsx)(i.zxk, {
     variant: "critical-primary",
     size: "sm",
-    disabled: null == p,
-    onClick: m,
+    disabled: null == f,
+    onClick: e => {
+      e.stopPropagation(), null == n || n(), null != f && (0, a.WL)(f, m)
+    },
     onMouseEnter: u,
     onMouseLeave: d,
-    text: l.intl.string(l.t["+78Pfn"])
+    text: s.intl.string(s.t["+78Pfn"])
   })
 }

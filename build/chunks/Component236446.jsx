@@ -6,9 +6,9 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk362762 = require("./362762.js"),
@@ -49,10 +49,10 @@ class L extends Chunk73800.PureComponent {
     (0, Chunk108427.e)("guildTemplate"), Chunk436620.KO || Chunk954824.Z.launch("discord://" + Chunk981631.Z5c.GUILD_TEMPLATE(this.props.code), () => true)
   }
   componentDidUpdate(e) {
-    this.props.code !== e.code && f.Z.resolveGuildTemplate(this.props.code)
+    this.props.code !== e.code && m.Z.resolveGuildTemplate(this.props.code)
   }
   renderButton(e, t) {
-    return T.KO ? (0, r.jsx)(u.zx, {
+    return A.KO ? (0, r.jsx)(u.zx, {
       className: R.marginTop40,
       onClick: t,
       children: e
@@ -73,7 +73,7 @@ class L extends Chunk73800.PureComponent {
         src: require("./167969.js"),
         className: Chunk197571.marginBottom8
       }), (0, Chunk255367.jsx)(Chunk388905.Dx, {
-        className: o()(Chunk197571.marginTop8, Chunk197571.marginBottom8),
+        className: a()(Chunk197571.marginTop8, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.C7ZRNz)
       }), (0, Chunk255367.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t.A6MwXF)
@@ -94,7 +94,7 @@ class L extends Chunk73800.PureComponent {
     let {
       guildTemplate: e
     } = this.props;
-    return (a()(null != module, "guild template must not be null"), module.state === Chunk260539.Rj.RESOLVING) ? (0, Chunk255367.jsx)(Chunk388905.ZP, {
+    return (o()(null != module, "guild template must not be null"), module.state === Chunk260539.Rj.RESOLVING) ? (0, Chunk255367.jsx)(Chunk388905.ZP, {
       className: Chunk160033.authBox,
       children: (0, Chunk255367.jsx)(Chunk306453.Z, {
         guildTemplate: module
@@ -160,8 +160,8 @@ function D(e) {
   let t = {
     guildTemplate: (0, c.e7)([h.Z], () => h.Z.getGuildTemplate(e.code)),
     nativeAppState: (0, c.e7)([d.Z], () => d.Z.getState(e.code)),
-    authenticated: (0, c.e7)([E.default], () => E.default.isAuthenticated()),
-    defaultRoute: (0, c.e7)([v.Z], () => v.Z.defaultRoute)
+    authenticated: (0, c.e7)([v.default], () => v.default.isAuthenticated()),
+    defaultRoute: (0, c.e7)([E.Z], () => E.Z.defaultRoute)
   };
   return (0, r.jsx)(L, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -184,7 +184,7 @@ function k(e) {
     form: n,
     handleSubmit: i
   } = (0, p.Z)(t, false);
-  b.Z.flowStep(A.MK.ORGANIC_GUILD_TEMPLATES, A.X2.GUILD_CREATE);
+  b.Z.flowStep(T.MK.ORGANIC_GUILD_TEMPLATES, T.X2.GUILD_CREATE);
   let l = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Dx, {
       className: P.header,
@@ -195,9 +195,9 @@ function k(e) {
       children: Z.intl.string(Z.t.xr59t7)
     })]
   });
-  return (0, r.jsx)(O.Z, {
+  return (0, r.jsx)(y.Z, {
     className: P.authBox,
-    children: () => [(0, r.jsx)(m.Z, {
+    children: () => [(0, r.jsx)(g.Z, {
       guildTemplate: t
     }, "template"), (0, r.jsx)("div", {
       className: P.formContainer,

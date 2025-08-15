@@ -20,8 +20,8 @@ function u(e) {
     onOpenProfile: u
   } = e, {
     note: d
-  } = (0, o.Z)(t), f = null != d && "" !== d;
-  return (0, r.jsx)(a.y, {
+  } = (0, a.Z)(t), f = null != d && "" !== d;
+  return (0, r.jsx)(o.y, {
     action: "PRESS_ADD_NOTE",
     icon: f ? i.hH0 : i.Wos,
     tooltipText: f ? d : l.intl.string(l.t["1ZZttr"]),

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 975368, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37220 **/
+/** chunk id: 975368, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 }), require("./997841.js");
@@ -15,14 +14,14 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e) {
-  let t = (0, l.X)("use-save-voice-message-audio");
+  let t = (0, s.X)("use-save-voice-message-audio");
   return (0, a.yE)(e.flags, c.iLy.IS_VOICE_MESSAGE) && t ? (0, r.jsx)(i.sNh, {
     id: "save-voice-message-audio",
     label: u.intl.string(u.t.vbAEaG),
     icon: i._8t,
     action: () => {
-      let t = (0, o.s$)(e.attachments[0].url);
-      (0, s.q)({
+      let t = (0, l.s$)(e.attachments[0].url);
+      (0, o.q)({
         href: t
       })
     }

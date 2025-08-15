@@ -1,43 +1,44 @@
-/** Chunk was on 77512 **/
+/** Chunk was on 81498 **/
 /** chunk id: 696936, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  W: () => c,
-  Z: () => a
+  W: () => a,
+  Z: () => u
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk762641 = require("./762641.js");
-let c = {
+let a = {
   RED: Chunk762641.redMessageBlock,
   YELLOW: Chunk762641.yellowMessageBlock,
   BROWN: Chunk762641.brownMessageBlock
 };
 
-function a(e) {
+function u(e) {
   let {
     color: t,
     icon: n,
-    children: i,
-    className: c
+    children: r,
+    className: a
   } = e;
-  return (0, r.jsx)(o.kzN, {
-    icon: e => (0, r.jsx)(n, function(e) {
+  return (0, i.jsx)(l.kzN, {
+    icon: e => (0, i.jsx)(n, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), i.forEach(function(t) {
+          var i;
+          i = n[t], t in e ? Object.defineProperty(e, t, {
+            value: i,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = i
         })
       }
       return e
@@ -45,8 +46,8 @@ function a(e) {
       height: 20,
       width: 20
     }, e)),
-    iconClassName: s.messageBlockIcon,
-    className: l()(t, c),
-    children: i
+    iconClassName: o.messageBlockIcon,
+    className: s()(t, a),
+    children: r
   })
 }

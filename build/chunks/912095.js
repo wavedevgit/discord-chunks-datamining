@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk874141 = require("./874141.js"),
   i = require.n(Chunk874141),
   Chunk565925 = require("./565925.js"),
-  a = require.n(Chunk565925),
+  o = require.n(Chunk565925),
   Chunk839548 = require("./839548.js"),
   Chunk46973 = require("./46973.js"),
   Chunk886848 = require("./886848.js"),
@@ -91,8 +91,8 @@ class E extends Chunk839548.Z {
     if (null != t.capture && null != t.capture.width && null != t.capture.height && null != e.remoteSinkWantsPixelCount && 0 !== e.remoteSinkWantsPixelCount && 0 !== t.capture.height) {
       let r = t.capture.width / t.capture.height,
         i = Math.sqrt(e.remoteSinkWantsPixelCount * r),
-        o = t.capture.width / i;
-      n = o < 1 ? true : o
+        a = t.capture.width / i;
+      n = a < 1 ? true : a
     }
     this.logger.verbose("BaseWebRTCConnection.updateVideoQuality: resolutionScaleFactor: ".concat(n, ", ") + "encodingVideoWidth: ".concat(e.encodingVideoWidth, ", remoteSinkWantsMaxFramerate: ").concat(e.remoteSinkWantsMaxFramerate, ", ") + "encodingVideoMaxBitRate: ".concat(e.encodingVideoMaxBitRate, ", localWant: ").concat(this.getLocalWant())), this.setVideoEncoderParameters([{
       parameter: 1,
@@ -105,16 +105,16 @@ class E extends Chunk839548.Z {
       value: e.remoteSinkWantsMaxFramerate
     }]);
     let i = e.encodingVideoWidth,
-      o = e.encodingVideoHeight;
+      a = e.encodingVideoHeight;
     for (let e of r.getTracks()) {
-      var a, s;
+      var o, s;
       let t = e.getConstraints(),
-        n = null == (a = t.width) ? true : a.max,
+        n = null == (o = t.width) ? true : o.max,
         r = null == (s = t.height) ? true : s.max;
-      (n !== i || r !== o) && (this.logger.info("BaseWebRTCConnection.updateVideoQuality: old: ".concat(n, " x ").concat(r, ", new: ").concat(i, " x ").concat(o)), t.width = {
+      (n !== i || r !== a) && (this.logger.info("BaseWebRTCConnection.updateVideoQuality: old: ".concat(n, " x ").concat(r, ", new: ").concat(i, " x ").concat(a)), t.width = {
         max: i
       }, t.height = {
-        max: o
+        max: a
       }, e.applyConstraints(t))
     }
   }
@@ -144,7 +144,7 @@ class E extends Chunk839548.Z {
       for (let t of this.videoStreamParameters) {
         let r = e.findIndex(e => e.rid === t.rid);
         if (false === r) return void n(Error("Invalid rid"));
-        a()(this.videoStreamParameters[r], e[r]) || (this.videoStreamParameters[r] = m({}, e[r]))
+        o()(this.videoStreamParameters[r], e[r]) || (this.videoStreamParameters[r] = m({}, e[r]))
       }
       t()
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 59727 **/
 /** chunk id: 739319, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk454585 = require("./454585.js"),
   Chunk572004 = require("./572004.js"),
@@ -19,41 +19,41 @@ function m(e) {
       data: {
         title: t,
         body: n,
-        sms: l,
+        sms: i,
         is_localized: m
       }
     }
-  } = e, [p, g] = i.useState(false), _ = i.useRef(o.Z.reactParserFor(o.Z.defaultRules));
+  } = e, [p, _] = a.useState(false), g = a.useRef(s.Z.reactParserFor(s.Z.defaultRules));
   return m ? (0, r.jsxs)("div", {
     className: u.container,
-    children: [(0, r.jsx)(s.X6q, {
+    children: [(0, r.jsx)(o.X6q, {
       variant: "heading-sm/semibold",
       color: "header-secondary",
       className: u.header,
       children: t
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       className: u.bodyText,
-      children: _.current(n)
+      children: g.current(n)
     }), (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
-        className: a()(u.smsNumberContainer, {
+        className: l()(u.smsNumberContainer, {
           [u.copied]: p
         }),
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-md/normal",
           selectable: true,
           className: u.smsNumberText,
-          children: l
+          children: i
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: u.__invalid_trailingButton,
-          children: (0, r.jsx)(s.zxk, {
+          children: (0, r.jsx)(o.zxk, {
             variant: "secondary",
             size: "sm",
             text: p ? d.intl.string(d.t["t5VZ8/"]) : d.intl.string(d.t.OpuAlJ),
             onClick: () => {
-              (0, c.JG)(l, () => g(true))
+              (0, c.JG)(i, () => _(true))
             }
           })
         })]

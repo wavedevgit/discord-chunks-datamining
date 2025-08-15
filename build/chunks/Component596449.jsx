@@ -1,4 +1,4 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 596449, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -16,7 +16,7 @@ function c(e) {
     className: t,
     guildId: c
   } = e, u = (0, a.Z)();
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(o.Z, {
     className: t,
     icon: (0, r.jsx)(l.Que, {
       size: "custom",
@@ -25,13 +25,13 @@ function c(e) {
       width: 20
     }),
     color: i.Z.unsafe_rawColors.BRAND_500.css,
-    title: o.intl.string(o.t["60lJ0N"]),
-    description: o.intl.string(o.t["EYn7//"]),
+    title: s.intl.string(s.t["60lJ0N"]),
+    description: s.intl.string(s.t["EYn7//"]),
     onClick: function() {
       (0, l.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("36599"), n.e("22347"), n.e("82758"), n.e("61"), n.e("31163")]).then(n.bind(n, 779250));
+        } = await Promise.all([n.e("36599"), n.e("60962"), n.e("22347"), n.e("82758"), n.e("61"), n.e("32821")]).then(n.bind(n, 779250));
         return t => {
           var n, i;
           return (0, r.jsx)(e, (n = function(e) {

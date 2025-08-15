@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 468706, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 468706, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  e: () => f
+  e: () => u
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -13,35 +12,13 @@ var Chunk481060 = require("./481060.js"),
   Chunk774863 = require("./774863.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function d(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      u(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function f(e, t) {
-  if ((0, s.aP)({
-      action: s.Yy.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED,
+function u(e, t) {
+  if ((0, o.aP)({
+      action: o.Yy.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED,
       messageId: t,
       channelId: e
-    }), !l.Z.canSubmitFpReport(t)) {
-    o.Z.show({
+    }), !s.Z.canSubmitFpReport(t)) {
+    l.Z.show({
       title: c.intl.string(c.t["iS/eFB"]),
       body: c.intl.string(c.t.YrjcgY),
       confirmText: c.intl.string(c.t.BddRzc)
@@ -51,7 +28,24 @@ function f(e, t) {
     let {
       default: i
     } = await n(773276);
-    return n => (0, r.jsx)(i, d({
+    return n => (0, r.jsx)(i, function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({
       channelId: e,
       messageId: t
     }, n))

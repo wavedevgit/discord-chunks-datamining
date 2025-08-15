@@ -1,7 +1,7 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 285573, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => _
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -18,13 +18,13 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk490897 = require("./490897.js"),
   Chunk55940 = require("./55940.js");
-let O = (0, Chunk146773.B)(function(e) {
+let _ = (0, Chunk146773.B)(function(e) {
   let {
     guild: t,
     selectedChannelId: l,
     position: c,
-    disableManageChannels: O,
-    sorting: _,
+    disableManageChannels: _,
+    sorting: O,
     sortingType: y,
     sortingPosition: v,
     connectChannelDragSource: j,
@@ -33,7 +33,7 @@ let O = (0, Chunk146773.B)(function(e) {
   } = e, x = (0, a.e7)([u.Z, d.ZP], () => {
     let e = d.ZP.getDirectoryChannelIds(t.id);
     return 0 === e.length ? null : u.Z.getChannel(e[0])
-  }), S = (0, a.e7)([u.Z], () => u.Z.getChannel(null == x ? true : x.parent_id)), P = l === (null == x ? true : x.id), I = (0, a.e7)([p.Z], () => null != S ? p.Z.can(g.Plq.MANAGE_CHANNELS, S) : null != t && p.Z.can(g.Plq.MANAGE_CHANNELS, t)), N = i.useCallback(e => {
+  }), S = (0, a.e7)([u.Z], () => u.Z.getChannel(null == x ? true : x.parent_id)), I = l === (null == x ? true : x.id), P = (0, a.e7)([p.Z], () => null != S ? p.Z.can(g.Plq.MANAGE_CHANNELS, S) : null != t && p.Z.can(g.Plq.MANAGE_CHANNELS, t)), N = i.useCallback(e => {
     null != x && (0, s.jW)(e, async () => {
       let {
         default: e
@@ -74,18 +74,18 @@ let O = (0, Chunk146773.B)(function(e) {
   }, [x]);
   if (null == x) return null;
   let w = (0, f.jo)(c, v),
-    Z = (0, f.CN)(x, _, y),
+    Z = (0, f.CN)(x, O, y),
     T = (0, r.jsx)("div", {
       className: o()(w, {
         [b.disabled]: Z,
-        [b.selected]: P
+        [b.selected]: I
       }),
       "data-dnd-name": x.name,
       children: (0, r.jsxs)(h.ZP, {
         className: b.iconVisibility,
         channel: x,
         guild: t,
-        selected: P,
+        selected: I,
         onContextMenu: N,
         forceInteractable: true,
         resolvedUnreadSetting: m.i.ONLY_MENTIONS,
@@ -94,10 +94,10 @@ let O = (0, Chunk146773.B)(function(e) {
           tabIndex: E
         }), (0, r.jsx)(f.hR, {
           channel: x,
-          disableManageChannels: O,
+          disableManageChannels: _,
           tabIndex: E
         })]
       })
     });
-  return I && (T = C(j(T))), T
+  return P && (T = C(j(T))), T
 })

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 596739, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 596739, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => c
 }), require("./953529.js");
@@ -18,48 +17,48 @@ function c(e) {
     onDismiss: c,
     buttons: u,
     dismissible: d = true
-  } = e, f = i.useCallback(() => {
+  } = e, p = i.useCallback(() => {
     null == c || c()
   }, [c]);
   return (0, r.jsxs)("div", {
-    className: s.safetyBanner,
+    className: o.safetyBanner,
     children: [(0, r.jsxs)("div", {
-      className: s.shieldAndHeading,
+      className: o.shieldAndHeading,
       children: [(0, r.jsx)("img", {
-        className: s.safetyShieldIcon,
-        src: l,
+        className: o.safetyShieldIcon,
+        src: s,
         alt: ""
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.X6q, {
+        children: [(0, r.jsx)(l.X6q, {
           variant: "heading-md/semibold",
           color: "text-primary",
           children: t
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "text-primary",
           children: n
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: s.buttons,
+      className: o.buttons,
       children: null == u ? true : u.map((e, t) => {
         var n;
-        return (0, r.jsx)(o.zxk, {
+        return (0, r.jsx)(l.zxk, {
           text: e.text,
           variant: null != (n = e.variant) ? n : "secondary",
           onClick: e.onClick,
           size: "sm"
         }, t)
       })
-    }), d ? (0, r.jsx)(o.P3F, {
-      className: s.closeButton,
-      onClick: f,
+    }), d ? (0, r.jsx)(l.P3F, {
+      className: o.closeButton,
+      onClick: p,
       role: "button",
       "aria-label": a.intl.string(a.t.WAI6xs),
-      children: (0, r.jsx)(o.Dio, {
+      children: (0, r.jsx)(l.Dio, {
         size: "md",
         color: "currentColor",
-        className: s.closeButton
+        className: o.closeButton
       })
     }) : null]
   })

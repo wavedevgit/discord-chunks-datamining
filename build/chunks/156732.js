@@ -2,11 +2,11 @@
 /** chunk id: 156732, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js");
 
-function o(e, t) {
+function a(e, t) {
   return (0, r.e7)([i.Z], () => i.Z.useReducedMotion) || false === t ? e.staticImageUrl : e.animatedImageUrl
 }

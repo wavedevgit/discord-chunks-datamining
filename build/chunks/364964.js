@@ -6,7 +6,7 @@ require.r(exports), require.d(exports, {
 }), require("./388685.js"), require("./35282.js"), require("./415506.js"), require("./704826.js");
 var Chunk466332 = require("./466332.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk462176 = require("./462176.js");
 Chunk466332.Z.registerLanguage("ansi", Chunk462176.Z);
 let s = /(<script\/?\\?>)|(html\\?`)/g,
@@ -42,7 +42,7 @@ let _ = {
     isKnownLanguage: e => d.has(e.toLowerCase()),
     resolveLanguageName: f
   },
-  p = o().repeat("/", 15);
+  p = a().repeat("/", 15);
 
 function h(e, t) {
   if (e.indexOf(p) >= 0) returnfalse;

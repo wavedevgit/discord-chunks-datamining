@@ -1,7 +1,7 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 168843, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -15,17 +15,17 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function h(e) {
   let {
     channelId: t
-  } = e, n = (0, i.e7)([o.ZP], () => o.ZP.getSection(t)), p = (0, i.e7)([c.Z], () => c.Z.getGuildId()), f = n === d.ULH.MEMBERS;
+  } = e, n = (0, i.e7)([s.ZP], () => s.ZP.getSection(t)), h = (0, i.e7)([c.Z], () => c.Z.getGuildId()), f = n === d.ULH.MEMBERS;
   return (0, r.jsx)(u.JO, {
-    tooltip: f ? h.intl.string(h.t.Axvx8f) : h.intl.string(h.t.gxChDw),
+    tooltip: f ? p.intl.string(p.t.Axvx8f) : p.intl.string(p.t.gxChDw),
     icon: l.BFJ,
     onClick: () => {
-      s.ZP.trackWithMetadata(d.rMx.MEMBER_LIST_TOGGLED, {
+      o.ZP.trackWithMetadata(d.rMx.MEMBER_LIST_TOGGLED, {
         channel_id: t,
-        guild_id: p,
+        guild_id: h,
         member_list_open: !f
       }), a.Z.toggleMembersSection()
     },

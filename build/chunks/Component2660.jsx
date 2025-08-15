@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 2660, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37447 **/
+/** chunk id: 2660, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -13,49 +12,44 @@ var Chunk442837 = require("./442837.js"),
   Chunk113434 = require("./113434.js"),
   Chunk182294 = require("./182294.js"),
   Chunk522226 = require("./522226.js");
-
-function d(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function f(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      d(e, t, n[t])
-    })
-  }
-  return e
-}
-let _ = e => {
+let d = e => {
     let {
       questConfig: t,
       fallback: n,
       isFocused: d
-    } = e, f = (0, i.e7)([s.default], () => s.default.getCurrentUser()), {
-      avatarDecoration: _,
-      isFetching: p
+    } = e, m = (0, s.e7)([a.default], () => a.default.getCurrentUser()), {
+      avatarDecoration: p,
+      isFetching: g
     } = (0, l.DU)(t);
-    return p ? (0, r.jsx)("div", {
+    return g ? (0, r.jsx)("div", {
       className: u.questsCollectibleReward,
       children: (0, r.jsx)(o.$jN, {})
-    }) : null == f || null == _ ? n : (0, r.jsx)("div", {
+    }) : null == m || null == p ? n : (0, r.jsx)("div", {
       className: u.questsCollectibleReward,
-      children: (0, r.jsx)(a.Z, {
+      children: (0, r.jsx)(i.Z, {
         avatarSize: c.EF.SIZE_56,
-        user: f,
+        user: m,
         guildId: null,
-        avatarDecorationOverride: _,
+        avatarDecorationOverride: p,
         animateOnHover: !d
       })
     })
   },
-  p = e => (0, r.jsx)(_, f({}, e))
+  m = e => (0, r.jsx)(d, function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = r
+      })
+    }
+    return e
+  }({}, e))

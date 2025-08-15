@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
-/** chunk id: 5560, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 5560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  V: () => T,
-  Z: () => S
+  V: () => j,
+  Z: () => O
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  s = require.n(Chunk512722),
   Chunk374470 = require("./374470.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk10401 = require("./10401.js"),
   Chunk131257 = require("./131257.js");
 
-function y(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,36 +31,32 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
 }
 
 function v(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class T extends Chunk73800.PureComponent {
+class j extends Chunk73800.PureComponent {
   componentDidMount() {
     this.updateCache()
   }
@@ -73,11 +68,11 @@ class T extends Chunk73800.PureComponent {
         y: r
       },
       targetWidth: i,
-      targetHeight: o,
+      targetHeight: l,
       position: a,
-      offset: s
+      offset: o
     } = e;
-    (this.props.tutorialId !== t || this.props.origin.x !== n || this.props.origin.y !== r || this.props.targetWidth !== i || this.props.targetHeight !== o || this.props.position !== a || this.props.offset.x !== s.x || this.props.offset.y !== s.y) && this.updateCache()
+    (this.props.tutorialId !== t || this.props.origin.x !== n || this.props.origin.y !== r || this.props.targetWidth !== i || this.props.targetHeight !== l || this.props.position !== a || this.props.offset.x !== o.x || this.props.offset.y !== o.y) && this.updateCache()
   }
   updateCache() {
     var e, t;
@@ -86,7 +81,7 @@ class T extends Chunk73800.PureComponent {
     let {
       offsetWidth: r,
       offsetHeight: i
-    } = require, o = {
+    } = require, l = {
       offsetX: (this.props.targetWidth - Chunk255367) / 2,
       offsetY: (this.props.targetHeight - Chunk73800) / 2
     };
@@ -120,50 +115,35 @@ class T extends Chunk73800.PureComponent {
       autoInvert: t,
       focused: n,
       origin: i
-    } = this.props, o = (0, Chunk21825.S)(module);
+    } = this.props, l = (0, Chunk21825.S)(module);
     if (null == Chunk120356) return null;
     let {
-      media: s,
-      textAlign: l,
+      media: o,
+      textAlign: s,
       isLongText: c,
       highPriority: u,
-      spacing: f,
-      arrowAlignment: p = Chunk997638.cy.TOP,
-      popoutPosition: h
+      spacing: p,
+      arrowAlignment: f = Chunk997638.cy.TOP,
+      popoutPosition: m
     } = Chunk120356, {
-      offsetX: g,
-      offsetY: E
-    } = this.state, y = {
+      offsetX: b,
+      offsetY: y
+    } = this.state, C = {
       left: null != Chunk232495 ? Chunk73800.x + Chunk232495 : true,
       top: null != Chunk10401 ? Chunk73800.y + Chunk10401 : true
-    }, v = e => {
-      let t = n && !e;
-      returntrue !== u ? null : (0, r.jsxs)("div", {
-        children: [(0, r.jsx)("div", {
-          className: a()(b.top, {
-            [b.animating]: t,
-            [b.notAnimating]: !t
-          })
-        }), (0, r.jsx)("div", {
-          className: a()(b.bottom, {
-            [b.animating]: t,
-            [b.notAnimating]: !t
-          })
-        })]
-      })
-    }, T = e => {
+    }, j = e => {
       let t = n && !e;
       return {
-        [b.animating]: t,
-        [b.notAnimating]: !t,
-        [b.highPriority]: u
+        [_.animating]: t,
+        [_.notAnimating]: !t,
+        [_.highPriority]: u
       }
-    }, S = this.getTutorialPopoutText();
-    return (0, Chunk255367.jsx)(Chunk997638.ZP, I(O({
+    }, O = this.getTutorialPopoutText();
+    return (0, Chunk255367.jsx)(Chunk997638.ZP, v(x({
       innerRef: this.contentRef,
       position: Chunk451478,
       renderMedia: Chunk512722,
-      textAlign: l,
+      textAlign: s,
       spacing: Chunk260300,
       isLongText: Chunk374470,
       uniqueId: module,
@@ -171,21 +151,36 @@ class T extends Chunk73800.PureComponent {
       arrowAlignment: Chunk819640,
       onSkipAll: this.handleSkipTips,
       onComplete: this.handleDismiss
-    }, S), {
+    }, O), {
       children: (e, t) => {
         let {
-          isShown: n
+          isShown: i
         } = t;
-        return (0, r.jsx)(d.P3F, I(O({}, e), {
-          className: b.indicator,
-          style: y,
+        return (0, r.jsx)(d.P3F, v(x({}, e), {
+          className: _.indicator,
+          style: C,
           innerRef: this.contentRef,
           children: (0, r.jsxs)("div", {
-            className: a()(b.animationContainer, T(n)),
-            children: [v(n), (0, r.jsx)("div", {
-              className: a()(b.innerCircle, T(n))
+            className: a()(_.animationContainer, j(i)),
+            children: [(e => {
+              let t = n && !e;
+              returntrue !== u ? null : (0, r.jsxs)("div", {
+                children: [(0, r.jsx)("div", {
+                  className: a()(_.top, {
+                    [_.animating]: t,
+                    [_.notAnimating]: !t
+                  })
+                }), (0, r.jsx)("div", {
+                  className: a()(_.bottom, {
+                    [_.animating]: t,
+                    [_.notAnimating]: !t
+                  })
+                })]
+              })
+            })(i), (0, r.jsx)("div", {
+              className: a()(_.innerCircle, j(i))
             }), (0, r.jsx)("div", {
-              className: a()(b.outerCircle, T(n))
+              className: a()(_.outerCircle, j(i))
             })]
           })
         }))
@@ -193,15 +188,15 @@ class T extends Chunk73800.PureComponent {
     }))
   }
   constructor(...e) {
-    super(...e), y(this, "state", {
+    super(...e), C(this, "state", {
       offsetX: null,
       offsetY: null
-    }), y(this, "contentRef", i.createRef()), y(this, "handleDismiss", () => {
-      f.Z.dismiss(this.props.tutorialId)
+    }), C(this, "contentRef", i.createRef()), C(this, "handleDismiss", () => {
+      p.Z.dismiss(this.props.tutorialId)
     })
   }
 }
-let S = function() {
+let O = 12633 == require.j ? function() {
   let {
     indicators: e,
     tutorialData: t,
@@ -215,12 +210,12 @@ let S = function() {
   }));
   return Chunk73800 ? (0, Chunk255367.jsx)(Chunk255367.Fragment, {
     children: Object.entries(module).map(e => {
-      let [i, o] = e, a = t[i];
-      return l()(null != a, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(T, O({
+      let [i, l] = e, a = t[i];
+      return s()(null != a, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(j, x({
         tutorialId: i,
         tutorialDefinition: a,
         focused: n
-      }, o), i)
+      }, l), i)
     })
   }) : null
-}
+} : null

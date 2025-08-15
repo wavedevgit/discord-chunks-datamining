@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk70097 = require("./70097.jsx"),
@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk819838 = require("./819838.js");
 
 function _(e) {
-  var t, n, o;
+  var t, n, a;
   let {
     videoActive: _,
     imageAsset: p,
@@ -44,14 +44,14 @@ function _(e) {
       preload: "auto",
       poster: I,
       playsInline: true,
-      className: a()(h.className, f.video, {
+      className: o()(h.className, f.video, {
         [f.hidden]: !_
       }),
       controls: false,
       onProgress: g,
       children: (0, r.jsx)("source", {
         src: h.asset.url,
-        type: null != (o = h.asset.mimetype) ? o : true
+        type: null != (a = h.asset.mimetype) ? a : true
       })
     })]
   })

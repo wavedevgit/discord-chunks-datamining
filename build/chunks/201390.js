@@ -3,8 +3,8 @@
 "use strict";
 var Chunk77826 = require("./77826.js"),
   i = Math.max,
-  o = Math.min;
+  a = Math.min;
 module.exports = function(e, t) {
   var n = r(e);
-  return n < 0 ? i(n + t, 0) : o(n, t)
+  return n < 0 ? i(n + t, 0) : a(n, t)
 }

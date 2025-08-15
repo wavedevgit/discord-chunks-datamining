@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 944103, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 944103, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => s
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
@@ -10,17 +9,17 @@ var Chunk73800 = require("./73800.js"),
   Chunk423589 = require("./423589.js"),
   Chunk390289 = require("./390289.js");
 
-function l(e) {
+function s(e) {
   let t = (0, a.Mn)("useShouldRenderBanner"),
-    [n, l] = r.useState("");
+    [n, s] = r.useState("");
   r.useEffect(() => {
-    l("")
+    s("")
   }, [e.id]);
-  let c = (0, i.e7)([s.Z], () => s.Z.getLastActionTime(e.id));
+  let c = (0, i.e7)([o.Z], () => o.Z.getLastActionTime(e.id));
   r.useEffect(() => {
-    o.$N.has(e.type) && n !== e.id && t && s.Z.maybeAutoUpgradeChannel(e.id) && l(e.id)
+    l.$N.has(e.type) && n !== e.id && t && o.Z.maybeAutoUpgradeChannel(e.id) && s(e.id)
   }, [n, t, c, e]);
-  let u = r.useCallback(() => l(""), []);
+  let u = r.useCallback(() => s(""), []);
   return {
     showUnreadsNotice: n === e.id,
     clearUnreadsNotice: u

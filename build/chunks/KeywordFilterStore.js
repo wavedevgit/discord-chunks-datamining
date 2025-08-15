@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 803141, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 25292 **/
+/** chunk id: 803141, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 }), require("./388685.js"), require("./539854.js");
 var Chunk750041 = require("./750041.js"),
   Chunk594174 = require("./594174.js"),
@@ -11,7 +10,7 @@ var Chunk750041 = require("./750041.js"),
   Chunk363072 = require("./363072.js"),
   Chunk526761 = require("./526761.js");
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,67 +18,65 @@ function c(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let u = null;
+let l = null;
 
-function d() {
+function g() {
   let e = (0, Chunk131681.U)() ? [...Chunk932941.pF, ...Chunk932941.wq, ...Chunk932941.$u] : [],
     t = Chunk594174.default.getCurrentUser();
   if (null == exports ? true : exports.isStaff()) {
     let t = require("./932941.js").Bk;
     module.push(...exports)
-  }(u = new Chunk363072.B).addWords(module)
+  }(l = new Chunk363072.B).addWords(module)
 }
 
-function f() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
-  null == u && (u = new Chunk363072.B), u.addWords(module)
+function k() {
+  g()
 }
 
-function _() {
-  d()
+function d() {
+  g()
 }
 
-function p() {
-  d()
-}
-
-function h(e) {
+function f(e) {
   let {
     local: t,
     settings: n
   } = e;
-  if (!t || n.type !== l.yP.PRELOADED_USER_SETTINGS) returnfalse;
-  null != u && u.clear(), d()
+  if (!t || n.type !== s.yP.PRELOADED_USER_SETTINGS) returnfalse;
+  null != l && l.clear(), g()
 }
-class m extends Chunk750041.Z {
+class h extends Chunk750041.Z {
   loadCache() {
-    let e = this.readSnapshot(m.LATEST_SNAPSHOT_VERSION);
-    null != module && (u = null != module.keywordTrie ? Chunk363072.B.fromSnapshot(module.keywordTrie) : null)
+    let e = this.readSnapshot(h.LATEST_SNAPSHOT_VERSION);
+    null != module && (l = null != module.keywordTrie ? Chunk363072.B.fromSnapshot(module.keywordTrie) : null)
   }
   takeSnapshot() {
     return {
-      version: m.LATEST_SNAPSHOT_VERSION,
+      version: h.LATEST_SNAPSHOT_VERSION,
       data: {
-        keywordTrie: u
+        keywordTrie: l
       }
     }
   }
   getKeywordTrie() {
-    return u
+    return l
   }
   initializeForKeywordTests() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
-    f(module)
+    ! function() {
+      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
+      null == l && (l = new Chunk363072.B), l.addWords(module)
+    }(module)
   }
   constructor() {
     super({
-      CONNECTION_OPEN: _,
-      CONNECTION_OPEN_SUPPLEMENTAL: _,
+      CONNECTION_OPEN: k,
+      CONNECTION_OPEN_SUPPLEMENTAL: k,
       CACHE_LOADED: () => this.loadCache(),
-      OVERLAY_INITIALIZE: p,
-      USER_SETTINGS_PROTO_UPDATE: h
+      OVERLAY_INITIALIZE: d,
+      USER_SETTINGS_PROTO_UPDATE: f
     })
   }
 }
-c(m, "displayName", "KeywordFilterStore"), c(m, "LATEST_SNAPSHOT_VERSION", 2);
-let g = new m
+u(h, "displayName", "KeywordFilterStore"), u(h, "LATEST_SNAPSHOT_VERSION", 2);
+let b = new h

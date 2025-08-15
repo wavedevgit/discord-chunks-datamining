@@ -7,13 +7,13 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk834721 = require("./834721.js");
 let l = Chunk73800.forwardRef((e, t) => {
   let {
     muted: n = false,
     highlighted: i = false,
-    avatar: o,
+    avatar: a,
     decorators: l,
     name: c,
     subText: u,
@@ -23,15 +23,15 @@ let l = Chunk73800.forwardRef((e, t) => {
   } = e;
   return (0, r.jsxs)("div", {
     ref: t,
-    className: a()(s.layout, f, {
+    className: o()(s.layout, f, {
       [s.muted]: n,
       [s.highlighted]: i
     }),
     children: [(0, r.jsx)("div", {
-      className: a()(s.avatar, d),
-      children: o
+      className: o()(s.avatar, d),
+      children: a
     }), (0, r.jsxs)("div", {
-      className: a()(s.content, {
+      className: o()(s.content, {
         [s.withDisplayNameStyles]: _
       }),
       children: [(0, r.jsxs)("div", {

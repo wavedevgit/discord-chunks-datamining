@@ -97,7 +97,7 @@ function N() {
 }
 class C extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (c = e), this.waitFor(a.Z), this.syncWith([a.Z], N)
+    null != e && (c = e), this.waitFor(o.Z), this.syncWith([o.Z], N)
   }
   get outboundPromotions() {
     return h

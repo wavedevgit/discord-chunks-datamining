@@ -22,19 +22,19 @@ let c = e => {
       className: t,
       children: (0, r.jsxs)("div", {
         className: l.awaitingWrapper,
-        children: [(0, r.jsx)(o.X6q, {
+        children: [(0, r.jsx)(a.X6q, {
           variant: "heading-xl/bold",
           children: s.intl.string(s.t.Q03WWV)
         }), (0, r.jsxs)("p", {
-          children: [(0, r.jsx)(o.Text, {
+          children: [(0, r.jsx)(a.Text, {
             variant: "text-md/normal",
             children: s.intl.string(s.t.BxPxhI)
-          }), (0, r.jsx)("br", {}), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)("br", {}), (0, r.jsx)(a.Text, {
             variant: "text-md/normal",
             children: s.intl.string(s.t.Y3fdOj)
-          }), (0, r.jsx)("br", {}), (0, r.jsxs)(o.Text, {
+          }), (0, r.jsx)("br", {}), (0, r.jsxs)(a.Text, {
             variant: "text-md/normal",
-            children: [s.intl.string(s.t.Paa4v7), "\xa0", n ? s.intl.string(s.t.StGVvL) : (0, r.jsx)(o.eee, {
+            children: [s.intl.string(s.t.Paa4v7), "\xa0", n ? s.intl.string(s.t.StGVvL) : (0, r.jsx)(a.eee, {
               onClick: i,
               children: s.intl.string(s.t.Ex7sk5)
             })]

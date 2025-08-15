@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 390322, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37447 **/
+/** chunk id: 390322, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
 });
@@ -13,6 +12,6 @@ function o(e) {
   } = e, {
     preventIdle: n,
     allowIdle: o
-  } = (0, i.Y)("popup");
+  } = (0, s.Y)("popup");
   return r.useEffect(() => (n(), () => o()), [o, n]), t
 }

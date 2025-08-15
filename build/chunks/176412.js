@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 176412, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 176412, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Bm: () => w,
-  P7: () => P,
-  X: () => D,
-  ae: () => R
+  Bm: () => A,
+  P7: () => N,
+  X: () => w,
+  ae: () => P
 });
-var Chunk73800 = require("./73800.js"),
+var r, i, Chunk73800 = require("./73800.js"),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -29,111 +28,102 @@ var Chunk73800 = require("./73800.js"),
   Chunk346683 = require("./346683.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-
-function S(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function A(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-let N = function(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
-      Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-  }(function(e) {
+let S = (r = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
       "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), r.forEach(function(t) {
-        S(e, t, n[t])
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = r
       })
     }
     return e
-  }({}, Chunk428595.Z.RULES.commandMention), {
+  }({}, Chunk428595.Z.RULES.commandMention), i = i = {
     parse: (e, t, n) => ({
-      content: m.Z.RULES.commandMention.parse(e, t, n).content
+      content: b.Z.RULES.commandMention.parse(e, t, n).content
     })
-  }),
-  C = o().pick((0, Chunk364458.Z)([Chunk428595.Z.RULES, {
-    commandMention: N
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(i)).forEach(function(e) {
+    Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+  }), r),
+  T = o().pick((0, Chunk364458.Z)([Chunk428595.Z.RULES, {
+    commandMention: S
   }, (0, Chunk691424.Z)({
     enableBuildOverrides: false,
     enableEmojiClick: false
   })]), ["commandMention", "customEmoji", "em", "emoji", "emoticon", "highlight", "inlineCode", "looseEm", "s", "strong", "text", "timestamp", "u", "spoiler"]),
-  R = Chunk25209.w4(C);
+  P = Chunk25209.w4(T);
 
-function P(e) {
+function N(e) {
   let {
     context: t,
     application: n,
-    location: i,
-    sectionName: o,
-    commandName: s,
-    autoDismissOnClick: h = true,
-    launchingComponentId: m,
-    submitting: g = false,
-    fetchesApplication: E = true,
-    onConfirmActivityLaunchChecksAlertOpen: S
-  } = e, A = (0, c.O)(), N = (0, u.Qv)({
+    location: r,
+    sectionName: i,
+    commandName: a,
+    autoDismissOnClick: o = true,
+    launchingComponentId: c,
+    submitting: h = false,
+    fetchesApplication: b = true,
+    onConfirmActivityLaunchChecksAlertOpen: E
+  } = e, C = (0, d.O)(), S = (0, p.Qv)({
     context: t,
     applicationId: n.id,
-    fetchesApplication: E
-  }), C = (0, v.Q)(N), R = (0, a.e7)([y.Z], () => y.Z.entrypoint()), P = r.useMemo(() => {
+    fetchesApplication: b
+  }), T = (0, x.Q)(S), P = (0, s.e7)([O.Z], () => O.Z.entrypoint()), N = l.useMemo(() => {
     var e, r, i;
     if ("channel" !== t.type) return null != (i = null == (e = n.bot) ? true : e.id) ? i : null == (r = (0, _.If)(t, n.id).descriptor) ? true : r.botId
-  }, [t, n.id, n.bot]), w = (0, u.w1)({
+  }, [t, n.id, n.bot]), A = (0, p.w1)({
     application: n,
-    botUserIdForAppDM: P,
-    embeddedActivitiesManager: d.Z,
+    botUserIdForAppDM: N,
+    embeddedActivitiesManager: m.Z,
     context: t,
-    locationObject: A.location,
+    locationObject: C.location,
     onActivityItemSelectedProp: e => {
       let {
         applicationId: t
       } = e;
-      h && b.yT(O.ti.ACTIVITY), (0, f.yw)(I.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
-        location: i,
+      o && v.yT(y.ti.ACTIVITY), (0, f.yw)(j.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
+        location: r,
         application_id: t,
-        section_name: o,
-        action: C,
-        source: R
+        section_name: i,
+        action: T,
+        source: P
       })
     },
-    launchingComponentId: m,
-    commandOrigin: p.bB.APPLICATION_LAUNCHER,
-    sectionName: o,
-    source: R,
-    fetchesApplication: E,
-    onConfirmActivityLaunchChecksAlertOpen: S
-  }), D = "primary", L = l.Tt.BRAND, x = null != s ? s : T.intl.string(T.t.zKX8Nj);
-  return C === u.JS.JOIN ? (D = "active", L = l.Tt.GREEN, x = T.intl.string(T.t.d9PsMj)) : C !== u.JS.LEAVE || g || (D = "critical-primary", x = T.intl.string(T.t["Hi1/aW"])), {
-    onActivityItemSelected: w,
-    activityAction: C,
-    buttonVariant: D,
-    buttonColor: L,
-    buttonText: x
+    launchingComponentId: c,
+    commandOrigin: g.bB.APPLICATION_LAUNCHER,
+    sectionName: i,
+    source: P,
+    fetchesApplication: b,
+    onConfirmActivityLaunchChecksAlertOpen: E
+  }), w = "primary", Z = u.Tt.BRAND, R = null != a ? a : I.intl.string(I.t.zKX8Nj);
+  return T === p.JS.JOIN ? (w = "active", Z = u.Tt.GREEN, R = I.intl.string(I.t.d9PsMj)) : T !== p.JS.LEAVE || h || (w = "critical-primary", R = I.intl.string(I.t["Hi1/aW"])), {
+    onActivityItemSelected: A,
+    activityAction: T,
+    buttonVariant: w,
+    buttonColor: Z,
+    buttonText: R
   }
 }
 
-function w(e, t) {
-  let n = y.Z.entrypoint(),
-    o = r.useMemo(() => (0, i.debounce)((e, t) => {
-      (0, f.yw)(I.rMx.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
+function A(e, t) {
+  let n = O.Z.entrypoint(),
+    r = l.useMemo(() => (0, a.debounce)((e, t) => {
+      (0, f.yw)(j.rMx.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
         type: e,
         source: t
       })
@@ -141,13 +131,13 @@ function w(e, t) {
       leading: false,
       trailing: true
     }), []);
-  r.useEffect(() => {
-    null != e && o(e, n)
-  }, [e, t, n, o])
+  l.useEffect(() => {
+    null != e && r(e, n)
+  }, [e, t, n, r])
 }
 
-function D(e) {
-  E.S.dispatchToLastSubscribed(I.CkL.OPEN_APP_LAUNCHER, {
+function w(e) {
+  C.S.dispatchToLastSubscribed(j.CkL.OPEN_APP_LAUNCHER, {
     applicationId: e
   })
 }

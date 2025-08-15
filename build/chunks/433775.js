@@ -15,29 +15,29 @@ let u = {
 };
 
 function d(e, t, n) {
-  let [d, m] = r.useState(u), [x, g] = r.useState(false), h = r.useRef(false), v = null == e ? true : e.id, p = null == e ? true : e.features.has(c.oNc.HAS_DIRECTORY_ENTRY);
+  let [d, x] = r.useState(u), [m, g] = r.useState(false), v = r.useRef(false), h = null == e ? true : e.id, f = null == e ? true : e.features.has(c.oNc.HAS_DIRECTORY_ENTRY);
   r.useEffect(() => {
-    if (!p) return void m(u);
-    h.current || null == v || (async () => {
-      h.current = true;
+    if (!f) return void x(u);
+    v.current || null == h || (async () => {
+      v.current = true;
       try {
-        let e = await (0, s.X)(v, o.C2.GUILD_SCHEDULED_EVENT, t);
-        m(e)
+        let e = await (0, s.X)(h, o.C2.GUILD_SCHEDULED_EVENT, t);
+        x(e)
       } catch (e) {
-        m(u)
+        x(u)
       }
-      h.current = false
+      v.current = false
     })()
-  }, [v, p, t]), r.useEffect(() => {
+  }, [h, f, t]), r.useEffect(() => {
     var e;
     if (!d.can_broadcast) return void g(false);
     g(null == (e = d.has_broadcast) || e)
   }, [d]);
-  let f = (0, l.e7)([a.Z], () => (0, i.wg)(n, [a.Z]));
+  let p = (0, l.e7)([a.Z], () => (0, i.wg)(n, [a.Z]));
   return {
     broadcastInfo: d,
-    broadcastToDirectoryChannels: f && x,
+    broadcastToDirectoryChannels: p && m,
     setBroadcastToDirectoryChannels: g,
-    canEveryoneRoleViewEvent: f
+    canEveryoneRoleViewEvent: p
   }
 }

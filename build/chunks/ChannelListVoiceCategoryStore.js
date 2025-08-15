@@ -1,12 +1,13 @@
-/** Chunk was on 62117 **/
+/** Chunk was on 81498 **/
 /** chunk id: 203818, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => c
 });
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function r(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -14,32 +15,32 @@ function r(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let a = {};
+let o = {};
 
-function d(e) {
+function a(e) {
   let {
     guildId: t,
     expand: n
   } = e;
-  n ? a[t] = true : delete a[t]
+  n ? o[t] = true : delete o[t]
 }
-class o extends(i = Chunk442837.ZP.PersistedStore) {
+class u extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    a = null != e ? e : {}
+    o = null != e ? e : {}
   }
   isVoiceCategoryExpanded(e) {
     var t;
-    return null != (t = null != e && a[e]) && t
+    return null != (t = null != e && o[e]) && t
   }
   isVoiceCategoryCollapsed(e) {
     return !this.isVoiceCategoryExpanded(e)
   }
   getState() {
-    return a
+    return o
   }
 }
-r(o, "displayName", "ChannelListVoiceCategoryStore"), r(o, "persistKey", "ChannelListVoiceCategoryStore");
-let h = new o(Chunk570140.Z, {
-  VOICE_CATEGORY_COLLAPSE: d,
-  VOICE_CATEGORY_EXPAND: d
+l(u, "displayName", "ChannelListVoiceCategoryStore"), l(u, "persistKey", "ChannelListVoiceCategoryStore");
+let c = new u(Chunk570140.Z, {
+  VOICE_CATEGORY_COLLAPSE: a,
+  VOICE_CATEGORY_EXPAND: a
 })

@@ -1,70 +1,66 @@
-/** Chunk was on web.js **/
-/** chunk id: 879154, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 879154, original params: t,e,r (module,exports,require) **/
 "use strict";
-
-function r(e, t) {
-  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
-}
 var Chunk359282 = require("./359282.js"),
   Chunk720379 = require("./720379.js"),
   Chunk65183 = require("./65183.js"),
-  s = Chunk65183.List,
-  l = Chunk65183.Map,
-  c = Chunk65183.OrderedSet,
-  u = Chunk65183.Record,
-  d = Chunk65183.Repeat,
-  f = c(),
-  _ = u({
+  a = Chunk65183.List,
+  u = Chunk65183.Map,
+  s = Chunk65183.OrderedSet,
+  c = Chunk65183.Record,
+  l = Chunk65183.Repeat,
+  f = s(),
+  p = c({
     key: "",
     type: "unstyled",
     text: "",
-    characterList: s(),
+    characterList: a(),
     depth: 0,
-    data: l()
+    data: u()
   }),
-  p = function(e) {
-    if (!e) return e;
-    var t = e.characterList,
-      n = e.text;
-    return n && !t && (e.characterList = s(d(i.EMPTY, n.length))), e
+  h = function(t) {
+    if (!t) return t;
+    var e = t.characterList,
+      r = t.text;
+    return r && !e && (t.characterList = a(l(n.EMPTY, r.length))), t
   };
 
-function h(e, t) {
-  return e.getStyle() === t.getStyle()
+function d(t, e) {
+  return t.getStyle() === e.getStyle()
 }
 
-function m(e, t) {
-  return e.getEntity() === t.getEntity()
+function g(t, e) {
+  return t.getEntity() === e.getEntity()
 }
-module.exports = function(e) {
-  function t(t) {
-    return e.call(this, p(t)) || this
+module.exports = function(t) {
+  function e(e) {
+    return t.call(this, h(e)) || this
   }
-  r(t, e);
-  var n = t.prototype;
-  return n.getKey = function() {
+  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t;
+  var r = e.prototype;
+  return r.getKey = function() {
     return this.get("key")
-  }, n.getType = function() {
+  }, r.getType = function() {
     return this.get("type")
-  }, n.getText = function() {
+  }, r.getText = function() {
     return this.get("text")
-  }, n.getCharacterList = function() {
+  }, r.getCharacterList = function() {
     return this.get("characterList")
-  }, n.getLength = function() {
+  }, r.getLength = function() {
     return this.getText().length
-  }, n.getDepth = function() {
+  }, r.getDepth = function() {
     return this.get("depth")
-  }, n.getData = function() {
+  }, r.getData = function() {
     return this.get("data")
-  }, n.getInlineStyleAt = function(e) {
-    var t = this.getCharacterList().get(e);
-    return t ? t.getStyle() : f
-  }, n.getEntityAt = function(e) {
-    var t = this.getCharacterList().get(e);
-    return t ? t.getEntity() : null
-  }, n.findStyleRanges = function(e, t) {
-    o(this.getCharacterList(), h, e, t)
-  }, n.findEntityRanges = function(e, t) {
-    o(this.getCharacterList(), m, e, t)
-  }, t
-}(_)
+  }, r.getInlineStyleAt = function(t) {
+    var e = this.getCharacterList().get(t);
+    return e ? e.getStyle() : f
+  }, r.getEntityAt = function(t) {
+    var e = this.getCharacterList().get(t);
+    return e ? e.getEntity() : null
+  }, r.findStyleRanges = function(t, e) {
+    i(this.getCharacterList(), d, t, e)
+  }, r.findEntityRanges = function(t, e) {
+    i(this.getCharacterList(), g, t, e)
+  }, e
+}(p)

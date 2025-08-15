@@ -1,7 +1,7 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 14338, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => C
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -50,19 +50,19 @@ function y(e, t) {
   }), e
 }
 
-function x(e) {
+function _(e) {
   let {
     channel: t,
     speaker: l,
     className: f
-  } = e, x = i.useRef(null), {
-    newestAnalyticsLocation: j
-  } = (0, d.ZP)(), _ = (0, u.bp)(), {
-    reducedMotion: O
-  } = i.useContext(s.Sfi), v = (0, c.Z)({
+  } = e, _ = i.useRef(null), {
+    newestAnalyticsLocation: C
+  } = (0, d.ZP)(), x = (0, u.bp)(), {
+    reducedMotion: v
+  } = i.useContext(o.Sfi), j = (0, c.Z)({
     userId: l.id
-  }), C = null != l.member ? (0, g.CA)(l.member) : null, E = e => {
-    (0, o.jW)(e, async () => {
+  }), O = null != l.member ? (0, m.CA)(l.member) : null, E = e => {
+    (0, s.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
@@ -73,57 +73,57 @@ function x(e) {
         showMediaItems: true,
         showStageChannelItems: true,
         showChatItems: false,
-        onInteraction: (0, h.u)("GuildChannelUserContextMenu", j)
+        onInteraction: (0, p.u)("GuildChannelUserContextMenu", C)
       }))
     }, {
-      context: _
+      context: x
     })
   };
-  return (0, r.jsx)(p.Z, {
-    targetElementRef: x,
+  return (0, r.jsx)(h.Z, {
+    targetElementRef: _,
     user: l.user,
     guildId: t.guild_id,
     channelId: t.id,
     clickTrap: true,
-    children: e => (0, r.jsx)(s.ua7, {
-      targetElementRef: x,
+    children: e => (0, r.jsx)(o.ua7, {
+      targetElementRef: _,
       text: l.userNick,
       position: "bottom",
-      children: n => (0, r.jsx)(s.P3F, y(b({}, n, e), {
-        innerRef: x,
+      children: n => (0, r.jsx)(o.P3F, y(b({}, n, e), {
+        innerRef: _,
         onClick: t => {
           t.stopPropagation(), e.onClick(t)
         },
         onContextMenu: E,
-        children: (0, r.jsx)(s.qEK, {
-          src: null != C ? C : l.user.getAvatarURL(t.guild_id, 24),
-          size: s.EFr.SIZE_24,
-          className: a()(m.avatar, f),
+        children: (0, r.jsx)(o.qEK, {
+          src: null != O ? O : l.user.getAvatarURL(t.guild_id, 24),
+          size: o.EFr.SIZE_24,
+          className: a()(g.avatar, f),
           "aria-label": l.userNick,
-          isSpeaking: v && !O.enabled
+          isSpeaking: j && !v.enabled
         })
       }))
     })
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     speakers: t,
     channel: n
   } = e;
   return (0, r.jsx)(f.Z, {
-    className: m.summary,
+    className: g.summary,
     guildId: n.guild_id,
     users: t,
     max: 10,
-    renderUser: (e, t, i) => (0, r.jsx)(x, {
+    renderUser: (e, t, i) => (0, r.jsx)(_, {
       channel: n,
       speaker: e,
       className: t
     }, i),
     renderMoreUsers: (e, t, n) => (0, r.jsx)("div", {
-      className: a()(m.speakers, t),
+      className: a()(g.speakers, t),
       children: e
     }, n)
   })

@@ -21,14 +21,14 @@ function _(e) {
       if (!t || e.author_type !== i.i.USER) return null;
       let n = d.Z.getVoiceStateForUser(e.author_id),
         r = l.Z.getChannel(null == n ? true : n.channelId),
-        a = "channel_id" in e ? e.channel_id : null;
-      return (null == a || a === (null == n ? true : n.channelId)) && (null == r || (0, o.Z)(r, c.Z)) ? r : null
+        o = "channel_id" in e ? e.channel_id : null;
+      return (null == o || o === (null == n ? true : n.channelId)) && (null == r || (0, a.Z)(r, c.Z)) ? r : null
     }, [e, t]),
     _ = (0, r.e7)([u.Z], () => null != t ? u.Z.getPrimaryActivity(e.author_id, null == n ? true : n.guild_id) : null, [n, e.author_id, t]),
     p = (0, r.e7)([s.Z], () => t ? s.Z.getStreamForUser(e.author_id, null == n ? true : n.guild_id) : null, [n, e.author_id, t]),
     {
       previewUrl: h
-    } = (0, a.Z)(null == p ? true : p.guildId, null == p ? true : p.channelId, null == p ? true : p.ownerId);
+    } = (0, o.Z)(null == p ? true : p.guildId, null == p ? true : p.channelId, null == p ? true : p.ownerId);
   return {
     channel: n,
     activity: _,

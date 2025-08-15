@@ -1,31 +1,28 @@
-/** Chunk was on web.js **/
-/** chunk id: 327220, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 89311 **/
+/** chunk id: 327220, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => o
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
   Chunk592125 = require("./592125.js"),
   Chunk9156 = require("./9156.js");
-let s = null;
 
-function l(e) {
-  let t = (0, i.e7)([o.Z], () => o.Z.getPrivateChannelsVersion()),
-    n = (0, i.e7)([o.Z], () => o.Z.getMutableDMsByUserIds(), [t]),
-    l = (0, i.e7)([a.ZP], () => a.ZP.getMutedChannels(s)),
-    c = r.useMemo(() => {
+function o(e) {
+  let t = (0, a.e7)([i.Z], () => i.Z.getPrivateChannelsVersion()),
+    r = (0, a.e7)([i.Z], () => i.Z.getMutableDMsByUserIds(), [t]),
+    o = (0, a.e7)([l.ZP], () => l.ZP.getMutedChannels(null)),
+    s = n.useMemo(() => {
       let e = new Set;
-      for (let t in n) {
-        let r = t,
-          i = n[r];
-        null != i && l.has(i) && e.add(r)
+      for (let t in r) {
+        let n = r[t];
+        null != n && o.has(n) && e.add(t)
       }
       return e
-    }, [n, l]);
-  return r.useMemo(() => null == e ? true : e.filter(e => {
+    }, [r, o]);
+  return n.useMemo(() => null == e ? true : e.filter(e => {
     for (let t of e.participants)
-      if (c.has(t)) returnfalse;
+      if (s.has(t)) returnfalse;
     returntrue
-  }), [e, c])
+  }), [e, s])
 }

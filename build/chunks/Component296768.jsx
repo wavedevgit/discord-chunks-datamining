@@ -47,23 +47,23 @@ let _ = e => {
     onClose: r,
     trackClick: a
   } = e, i = (0, c.e7)([m.Z], () => m.Z.getApplication(t.applicationId));
-  return (0, n.jsx)(d.ua7, {
+  return (0, n.jsx)(u.ua7, {
     text: t.name,
     children: e => {
       var l, o;
-      return (0, n.jsx)(d.P3F, (l = y({}, e), o = o = {
+      return (0, n.jsx)(u.P3F, (l = y({}, e), o = o = {
         className: O.similarGameImageClickable,
         onClick: async () => {
-          a(p.as.ClickSimilarGame, t.applicationId), (0, d.ZDy)(() => Promise.resolve(e => (0, n.jsx)(v.default, y({
+          a(g.as.ClickSimilarGame, t.applicationId), (0, u.ZDy)(() => Promise.resolve(e => (0, n.jsx)(h.default, y({
             applicationId: t.applicationId,
-            source: p.m1.SimilarGames
+            source: g.m1.SimilarGames
           }, e)))), await new Promise(e => setTimeout(e, 10)), r()
         },
-        children: (0, n.jsx)(j.C, {
+        children: (0, n.jsx)(v.C, {
           game: t,
           application: i,
           className: O.similarGameImage,
-          size: j.Z.SMALL
+          size: v.Z.SMALL
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var r = Object.keys(e);
@@ -86,14 +86,14 @@ function I(e) {
     trackAction: i,
     similarGames: o,
     similarGamesError: m
-  } = e, p = (0, c.e7)([f.Z, g.Z], () => {
-    let e = true === f.Z.getSimilarGames(t) && null == f.Z.getSimilarGamesError(t),
-      r = o.some(e => g.Z.isFetching(e));
+  } = e, g = (0, c.e7)([p.Z, f.Z], () => {
+    let e = true === p.Z.getSimilarGames(t) && null == p.Z.getSimilarGamesError(t),
+      r = o.some(e => f.Z.isFetching(e));
     return e || r
-  }), j = (0, c.Wu)([g.Z], () => o.map(e => g.Z.getGame(e)).filter(e => null != e).filter(e => (0, x.z6)(e.applicationId)).slice(0, 5));
+  }), v = (0, c.Wu)([f.Z], () => o.map(e => f.Z.getGame(e)).filter(e => null != e).filter(e => (0, x.z6)(e.applicationId)).slice(0, 5));
   return (a.useEffect(() => {
-    o.length > 0 && u.Z.getDetectableGamesSupplemental([t, ...o])
-  }, [t, o]), p && null == m) ? (0, n.jsxs)("div", {
+    o.length > 0 && d.Z.getDetectableGamesSupplemental([t, ...o])
+  }, [t, o]), g && null == m) ? (0, n.jsxs)("div", {
     children: [(0, n.jsx)("div", {
       className: l()(O.loadingHeading, b.sectionHeader)
     }), (0, n.jsx)("div", {
@@ -102,16 +102,16 @@ function I(e) {
         className: O.loadingArtwork
       }, e))
     })]
-  }) : (p || 0 !== j.length) && null == m ? (0, n.jsxs)("div", {
-    children: [(0, n.jsx)(d.X6q, {
+  }) : (g || 0 !== v.length) && null == m ? (0, n.jsxs)("div", {
+    children: [(0, n.jsx)(u.X6q, {
       className: b.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
-      children: h.intl.string(h.t["6rLyQE"])
+      children: j.intl.string(j.t["6rLyQE"])
     }), (0, n.jsx)("div", {
       className: O.similarGames,
       style: {},
-      children: j.map(e => (0, n.jsx)(_, {
+      children: v.map(e => (0, n.jsx)(_, {
         game: e,
         onClose: r,
         trackClick: i

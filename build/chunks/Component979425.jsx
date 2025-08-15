@@ -1,48 +1,47 @@
-/** Chunk was on web.js **/
-/** chunk id: 979425, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 24255 **/
+/** chunk id: 979425, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => c
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk871118 = require("./871118.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk7504 = require("./7504.js");
 
-function u(e) {
+function c(e) {
   let {
     stream: t,
     isSmall: n,
-    selected: i,
-    isSelfStream: u
+    selected: l,
+    isSelfStream: c
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.Z, {
-      className: o()(c.absoluteFill, c.streamPreviewOpacity),
+    children: [(0, r.jsx)(o.Z, {
+      className: i()(s.absoluteFill, s.streamPreviewOpacity),
       stream: t,
       noText: true
-    }), !i && (0, r.jsxs)("div", {
-      className: o()(c.content, c.streamUnavailable, {
-        [c.small]: n
+    }), !l && (0, r.jsxs)("div", {
+      className: i()(s.content, s.streamUnavailable, {
+        [s.small]: n
       }),
       children: [(0, r.jsx)(a.Text, {
-        className: c.streamUnavailableText,
+        className: s.streamUnavailableText,
         color: "always-white",
         variant: n ? "text-sm/semibold" : "text-md/semibold",
-        children: u ? l.intl.string(l.t.UeEwj4) : l.intl.string(l.t["1i3tSU"])
+        children: c ? u.intl.string(u.t.UeEwj4) : u.intl.string(u.t["1i3tSU"])
       }), (0, r.jsx)(a.DY3, {
-        text: u ? l.intl.string(l.t["ro/HNz"]) : l.intl.string(l.t.UPf6ZG),
-        className: c.darkCircle,
+        text: c ? u.intl.string(u.t["ro/HNz"]) : u.intl.string(u.t.UPf6ZG),
+        className: s.darkCircle,
         children: (0, r.jsx)("div", {
           children: (0, r.jsx)(a.o8v, {
             size: "md",
             color: "currentColor",
-            className: c.stopStreamIcon,
-            colorClass: c.stopStreamForeground
+            className: s.stopStreamIcon,
+            colorClass: s.stopStreamForeground
           })
         })
       })]

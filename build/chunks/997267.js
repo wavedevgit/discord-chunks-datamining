@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 997267, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 997267, original params: e,t,n (module,exports,require) **/
 module.exports = {
   outerContainer: "outerContainer__2055a",
   outerContainerNoProgress: "outerContainerNoProgress__2055a",

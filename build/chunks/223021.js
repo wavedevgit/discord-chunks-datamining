@@ -1,18 +1,17 @@
-/** Chunk was on web.js **/
-/** chunk id: 223021, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 31978 **/
+/** chunk id: 223021, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => i
 }), require("./35282.js");
 var Chunk724913 = require("./724913.js");
-let i = {
+let l = {
     LATIN12: Chunk724913.latin12CompactTimeStamp,
     LATIN24: Chunk724913.latin24CompactTimeStamp,
     ASIAN: Chunk724913.asianCompactTimeStamp
   },
-  o = 5,
-  a = /(AM|PM)$/;
+  o = /(AM|PM)$/;
 
-function s(e) {
-  return null != e.match(a) ? i.LATIN24 : e.length <= o ? i.LATIN12 : i.ASIAN
+function i(e) {
+  return null != e.match(o) ? l.LATIN24 : e.length <= 5 ? l.LATIN12 : l.ASIAN
 }

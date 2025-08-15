@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   BU: () => L,
-  Cd: () => k,
+  Cd: () => j,
   DZ: () => P,
   PS: () => D,
   T6: () => N,
@@ -14,7 +14,7 @@ require.d(exports, {
   hW: () => R,
   m9: () => U,
   nm: () => x,
-  sr: () => Z,
+  sr: () => V,
   w9: () => G
 }), require("./415506.js"), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
 var Chunk512722 = require("./512722.js"),
@@ -84,11 +84,11 @@ class C {
     let r = this.ProtoClass.fields.find(t => t.localName === e);
     if (null == r) throw Error("Unknown proto field name ".concat(String(e)));
     let i = r.T(),
-      o = this.getCurrentValue()[e],
-      a = null != o ? i.fromBinary(i.toBinary(o), b.Uc) : i.create();
-    if (false === t(a)) return;
+      a = this.getCurrentValue()[e],
+      o = null != a ? i.fromBinary(i.toBinary(a), b.Uc) : i.create();
+    if (false === t(o)) return;
     let s = this.ProtoClass.create();
-    s[e] = a, __OVERLAY__ ? u.Z.dispatch({
+    s[e] = o, __OVERLAY__ ? u.Z.dispatch({
       type: "USER_SETTINGS_PROTO_ENQUEUE_UPDATE",
       settings: {
         type: this.type,
@@ -109,7 +109,7 @@ class C {
     i()(!__OVERLAY__, "this cannot run in the overlay");
     let {
       editInfo: r
-    } = this.getEditInfo(), o = {
+    } = this.getEditInfo(), a = {
       timeout: r.timeout
     };
     if (!r.loaded) throw Error("Cannot edit user settings proto because we have not yet loaded the stored version from the DB");
@@ -122,12 +122,12 @@ class C {
       partial: true,
       local: true
     });
-    let a = null != (n = t.delaySeconds) ? n : 0;
-    if (null != o.timeout && a < r.timeoutDelay && !r.rateLimited && (clearTimeout(o.timeout), o.timeout = true), null == o.timeout) {
-      let e = a * h.Z.Millis.SECOND;
-      t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * h.Z.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), o.timeout = setTimeout(this.persistChanges, e), o.timeoutDelay = a
+    let o = null != (n = t.delaySeconds) ? n : 0;
+    if (null != a.timeout && o < r.timeoutDelay && !r.rateLimited && (clearTimeout(a.timeout), a.timeout = true), null == a.timeout) {
+      let e = o * h.Z.Millis.SECOND;
+      t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * h.Z.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), a.timeout = setTimeout(this.persistChanges, e), a.timeoutDelay = o
     }
-    null != t.cleanup && (o.cleanupFuncs = [...r.cleanupFuncs, ...t.cleanup]), null == r.protoToSave ? o.protoToSave = e : o.protoToSave = (0, b.re)(this.ProtoClass, r.protoToSave, e), this.dispatchChanges(o)
+    null != t.cleanup && (a.cleanupFuncs = [...r.cleanupFuncs, ...t.cleanup]), null == r.protoToSave ? a.protoToSave = e : a.protoToSave = (0, b.re)(this.ProtoClass, r.protoToSave, e), this.dispatchChanges(a)
   }
   dispatchChanges(e) {
     u.Z.dispatch({
@@ -163,7 +163,7 @@ class C {
           body: {
             settings: t
           }
-        } = await o.tn.get({
+        } = await a.tn.get({
           url: O.ANM.USER_SETTINGS_PROTO(this.type),
           rejectWithError: false
         }), n = (0, b.d5)(this.ProtoClass, t);
@@ -174,7 +174,7 @@ class C {
         let r = g.Z[this.type],
           {
             proto: i,
-            isDirty: a,
+            isDirty: o,
             cleanupFuncs: s
           } = (0, b.xt)(n, r);
         return await u.Z.dispatch({
@@ -183,9 +183,9 @@ class C {
             type: this.type,
             proto: n
           },
-          resetEditInfo: a || e,
+          resetEditInfo: o || e,
           local: false
-        }), a && this.markDirtyFromMigration(i, s), n
+        }), o && this.markDirtyFromMigration(i, s), n
       } catch (e) {
         throw this.dispatchChanges({
           loading: false
@@ -245,7 +245,7 @@ class C {
         this.saveLastSendTime();
         let {
           body: n
-        } = await o.tn.patch({
+        } = await a.tn.patch({
           url: O.ANM.USER_SETTINGS_PROTO(this.type),
           body: {
             settings: t,
@@ -306,17 +306,17 @@ function x(e) {
 }
 
 function M(e) {
-  !E.Z.hasLoaded(y.yP.PRELOADED_USER_SETTINGS) && (j(e) || p.default.track(O.rMx.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
-    content_type: a.z[e]
+  !E.Z.hasLoaded(y.yP.PRELOADED_USER_SETTINGS) && (k(e) || p.default.track(O.rMx.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
+    content_type: o.z[e]
   }))
 }
 
-function j(e) {
+function k(e) {
   var t;
   let n = null == (t = E.Z.settings.userContent) ? true : t.dismissedContents;
   return null != n && (0, m.jl)(n, e)
 }
-async function k(e, t) {
+async function j(e, t) {
   return await R.updateAsync("userContent", n => {
     n.recurringDismissibleContentStates[e] = I({}, n.recurringDismissibleContentStates[e], t)
   }, y.fy.INFREQUENT_USER_ACTION)
@@ -335,14 +335,14 @@ function G(e) {
 }
 
 function B(e) {
-  return k(e, {
+  return j(e, {
     lastDismissedVersion: 0,
     lastDismissedAtMs: "0",
     lastDismissedObjectId: "0"
   })
 }
 
-function Z() {
+function V() {
   return R.updateAsync("userContent", e => {
     e.dismissedContents = new Uint8Array, e.recurringDismissibleContentStates = {}
   }, Chunk526761.fy.INFREQUENT_USER_ACTION)

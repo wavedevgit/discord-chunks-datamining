@@ -1,7 +1,7 @@
 /** Chunk was on 74543 **/
 /** chunk id: 643611, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => v
+  default: () => _
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -15,12 +15,12 @@ var Chunk255367 = require("./255367.js"),
   Chunk594174 = require("./594174.js"),
   Chunk556012 = require("./556012.js"),
   Chunk388032 = require("./388032.jsx");
-let p = t => {
+let N = t => {
   let {
     guildId: n,
     channel: e,
-    onSelectChannel: i
-  } = t, a = (0, r.Wu)([o.ZP], () => o.ZP.getChannels(n)[o.sH].filter(t => {
+    onSelectChannel: r
+  } = t, a = (0, i.Wu)([d.ZP], () => d.ZP.getChannels(n)[d.sH].filter(t => {
     let {
       channel: n
     } = t;
@@ -31,72 +31,72 @@ let p = t => {
     } = t;
     return n
   }), [n]);
-  return (0, l.jsx)(s.xJW, {
+  return (0, l.jsx)(u.xJW, {
     required: true,
-    children: (0, l.jsx)(s.VcW, {
+    children: (0, l.jsx)(u.VcW, {
       value: null == e ? true : e.id,
       options: a.map(t => ({
         value: t.id,
-        label: (0, u.F6)(t, h.default, c.Z, true)
+        label: (0, s.F6)(t, o.default, j.Z, true)
       })),
       onChange: t => {
         let n = a.find(n => n.id === t);
-        i(null != n ? n : true)
+        r(null != n ? n : true)
       },
-      placeholder: g.intl.string(g.t["N+T69/"])
+      placeholder: E.intl.string(E.t["N+T69/"])
     })
   })
 };
 
-function v(t) {
+function _(t) {
   let {
     action: n,
     triggerType: e,
-    guildId: u,
-    isEdit: o,
-    onEditChannel: c,
-    onClose: h,
-    transitionState: v
-  } = t, [C, m] = i.useState(n.metadata.channelId), [f, j] = i.useState(null), k = (0, r.e7)([d.Z], () => d.Z.getChannel(C), [C]), Z = (0, x.c)(n.type, n, e);
-  if (null == Z) return null;
+    guildId: s,
+    isEdit: d,
+    onEditChannel: j,
+    onClose: o,
+    transitionState: _
+  } = t, [S, h] = r.useState(n.metadata.channelId), [C, I] = r.useState(null), L = (0, i.e7)([c.Z], () => c.Z.getChannel(S), [S]), g = (0, A.c)(n.type, n, e);
+  if (null == g) return null;
   let {
-    headerText: b
-  } = Z;
+    headerText: T
+  } = g;
   return (0, l.jsx)(a.Modal, {
-    onClose: h,
-    transitionState: v,
-    title: b,
-    subtitle: g.intl.string(g.t["z/ZF2t"]),
+    onClose: o,
+    transitionState: _,
+    title: T,
+    subtitle: E.intl.string(E.t["z/ZF2t"]),
     actions: [{
-      text: g.intl.string(g.t["ETE/oK"]),
+      text: E.intl.string(E.t["ETE/oK"]),
       onClick: () => {
-        h()
+        o()
       },
       variant: "secondary"
     }, {
-      text: o ? g.intl.string(g.t.bt75u7) : g.intl.string(g.t.R3BPHx),
+      text: d ? E.intl.string(E.t.bt75u7) : E.intl.string(E.t.R3BPHx),
       onClick: () => {
-        if (null == C) return void j(g.intl.string(g.t.lM1NLi));
-        c(C)
+        if (null == S) return void I(E.intl.string(E.t.lM1NLi));
+        j(S)
       }
     }],
-    children: (0, l.jsxs)(s.Kqy, {
+    children: (0, l.jsxs)(u.Kqy, {
       gap: 8,
       direction: "vertical",
-      children: [(0, l.jsx)(p, {
-        guildId: u,
-        channel: k,
+      children: [(0, l.jsx)(N, {
+        guildId: s,
+        channel: L,
         onSelectChannel: t => {
-          null != t && m(t.id)
+          null != t && h(t.id)
         }
-      }), null != f ? (0, l.jsx)(s.Text, {
+      }), null != C ? (0, l.jsx)(u.Text, {
         color: "text-danger",
         variant: "text-sm/normal",
-        children: f
-      }) : (0, l.jsx)(s.Text, {
+        children: C
+      }) : (0, l.jsx)(u.Text, {
         color: "text-muted",
         variant: "text-sm/normal",
-        children: g.intl.string(g.t["ric+5u"])
+        children: E.intl.string(E.t["ric+5u"])
       })]
     })
   })

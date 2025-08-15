@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 457396, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  g: () => B,
-  i: () => V
+  g: () => V,
+  i: () => B
 }), require("./388685.js"), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -42,15 +42,15 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
-let V = e => {
+let B = e => {
     let {
       selected: t
     } = e, n = (0, a.e7)([g.default], () => g.default.getCurrentUser()), r = (0, a.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), i = (0, T.N)(), l = (0, N.Ng)(), o = (0, E.Vi)(), s = (0, L.V)(), c = (0, _.Qo)(n, r), u = (0, a.e7)([O.Z], () => O.Z.getCreatedAtOverride()), d = t || null != i || null != l || o || null != s || c, p = null != u ? u : null == n ? true : n.createdAt;
     return d || null != n && null != p && Date.now() - p.getTime() > 12096e5
   },
-  B = e => {
+  V = e => {
     let t, n, O;
-    var B, H, {
+    var V, H, {
         selected: F,
         nitroTabButtonRef: z,
         route: W,
@@ -124,7 +124,7 @@ let V = e => {
     let [eO, eE] = (0, h.US)(e_, true, true);
     if (i.useEffect(() => {
         true === F && null != eO && eE(U.L.AUTO_DISMISS)
-      }, [eE, F, eO]), !V({
+      }, [eE, F, eO]), !B({
         selected: F
       })) return null;
     let ey = () => {
@@ -180,7 +180,7 @@ let V = e => {
         has_premium: Q
       }), (0, j.ZL)()
     });
-    let eI = (0, r.jsx)(c.Qj, (B = function(e) {
+    let eI = (0, r.jsx)(c.Qj, (V = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -208,7 +208,7 @@ let V = e => {
     }, K, et), H = H = {
       className: t,
       children: n
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(B, Object.getOwnPropertyDescriptors(H)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(V, Object.getOwnPropertyDescriptors(H)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
@@ -216,8 +216,8 @@ let V = e => {
       }
       return n
     })(Object(H)).forEach(function(e) {
-      Object.defineProperty(B, e, Object.getOwnPropertyDescriptor(H, e))
-    }), B));
+      Object.defineProperty(V, e, Object.getOwnPropertyDescriptor(H, e))
+    }), V));
     return es && ec.cohort === I.xI.Static ? (0, r.jsx)(x.X, {
       children: eI
     }) : eu ? (0, r.jsx)(Z.C, {

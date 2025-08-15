@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk866442 = require("./866442.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
@@ -67,8 +67,8 @@ function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -76,8 +76,8 @@ function S(e, t) {
 function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let N = e => {
@@ -92,7 +92,7 @@ function C(e) {
   var t;
   let {
     user: n,
-    displayProfile: o,
+    displayProfile: a,
     guildId: b,
     pendingBanner: O,
     children: v,
@@ -105,15 +105,15 @@ function C(e) {
     themePadding: P,
     pendingAccentColor: w,
     animateOnHover: D = false
-  } = e, L = (0, _.Dt)(), [x, M] = i.useState(false), j = (0, l.e7)([m.Z], () => m.Z.isFocused()), k = h.QK.getSetting(), {
+  } = e, L = (0, _.Dt)(), [x, M] = i.useState(false), k = (0, l.e7)([m.Z], () => m.Z.isFocused()), j = h.QK.getSetting(), {
     bannerSrc: U,
     status: G
   } = (0, E.Z)({
-    displayProfile: o,
+    displayProfile: a,
     pendingBanner: O,
     size: C,
-    canAnimate: D || !k ? x : j
-  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), Z = n.getAvatarURL(b, (0, u.pxk)(T)), F = (0, s._i)((0, d.ZP)(Z, B, false)), V = (0, f.Z)(null != (t = null != w ? w : null == o ? true : o.primaryColor) ? t : F).hex, H = N(T), Y = H + S - P, W = R - A - P;
+    canAnimate: D || !j ? x : k
+  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), V = n.getAvatarURL(b, (0, u.pxk)(T)), F = (0, s._i)((0, d.ZP)(V, B, false)), Z = (0, f.Z)(null != (t = null != w ? w : null == a ? true : a.primaryColor) ? t : F).hex, H = N(T), Y = H + S - P, W = R - A - P;
   return (0, r.jsxs)("svg", {
     className: y.mask,
     viewBox: "0 0 ".concat(C, " ").concat(R),
@@ -143,16 +143,16 @@ function C(e) {
       overflow: "visible",
       mask: "url(#".concat(L, ")"),
       children: [v, (0, r.jsxs)("div", {
-        className: a()(y.banner, I),
+        className: o()(y.banner, I),
         onMouseMove: () => M(true),
         onMouseLeave: () => M(false),
         style: {
           height: R,
           minHeight: R,
           backgroundImage: null != U ? "url(".concat(U, ")") : true,
-          backgroundColor: "COMPLETE" !== G ? c.Z.unsafe_rawColors.PRIMARY_800.css : V
+          backgroundColor: "COMPLETE" !== G ? c.Z.unsafe_rawColors.PRIMARY_800.css : Z
         },
-        children: [!k && (0, g.F8)(U) && (0, r.jsx)(p.Z, {
+        children: [!j && (0, g.F8)(U) && (0, r.jsx)(p.Z, {
           className: y.gifTag
         }), v]
       })]
@@ -165,11 +165,11 @@ function R(e) {
     themeType: t,
     displayProfile: n,
     canUsePremiumProfileCustomization: i = false
-  } = e, o = S(e, ["themeType", "displayProfile", "canUsePremiumProfileCustomization"]);
-  let a = b.q[t],
+  } = e, a = S(e, ["themeType", "displayProfile", "canUsePremiumProfileCustomization"]);
+  let o = b.q[t],
     s = i || (null == n ? true : n.canUsePremiumProfileCustomization) || false;
-  return (0, r.jsx)(C, T(v({}, o, a), {
+  return (0, r.jsx)(C, T(v({}, a, o), {
     displayProfile: n,
-    themePadding: s ? a.themePadding : 0
+    themePadding: s ? o.themePadding : 0
   }))
 }

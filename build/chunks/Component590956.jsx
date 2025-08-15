@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
@@ -64,7 +64,7 @@ let I = e => {
     var t;
     let {
       node: n,
-      tooltipPosition: o = p.b_.position,
+      tooltipPosition: a = p.b_.position,
       enableClick: s = true,
       channelId: u,
       messageId: d
@@ -80,7 +80,7 @@ let I = e => {
       text: (0, p.Y)(n.name, s),
       "aria-label": m
     }, p.b_), {
-      position: o,
+      position: a,
       shouldShow: !g,
       onTooltipShow: () => {
         s && S({
@@ -95,7 +95,7 @@ let I = e => {
           var n;
           b(true), null == e || null == (n = e.onClick) || n.call(e, t)
         },
-        className: a()(E.emojiContainer, {
+        className: o()(E.emojiContainer, {
           [E.emojiContainerClickable]: s,
           [E.emojiJumbo]: n.jumboable
         }),
@@ -124,7 +124,7 @@ let I = e => {
     let {
       node: t,
       isInteracting: n,
-      tooltipPosition: o = p.b_.position,
+      tooltipPosition: a = p.b_.position,
       enableClick: u = true,
       channelId: g,
       messageId: b
@@ -143,7 +143,7 @@ let I = e => {
       text: (0, p.Y)(t.name, u),
       "aria-label": t.name
     }, p.b_), {
-      position: o,
+      position: a,
       shouldShow: !N,
       onTooltipShow: () => {
         A(true), u && (S({
@@ -168,7 +168,7 @@ let I = e => {
           }), A(false))
         },
         tag: "span",
-        className: a()(E.emojiContainer, {
+        className: o()(E.emojiContainer, {
           [E.emojiContainerClickable]: u,
           [E.emojiJumbo]: t.jumboable
         }),

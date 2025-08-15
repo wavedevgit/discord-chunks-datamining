@@ -55,7 +55,7 @@ function A(e, t) {
   (0, f.ZDy)(async () => {
     let {
       default: n
-    } = await Promise.all([r.e("82412"), r.e("20137")]).then(r.bind(r, 107807));
+    } = await Promise.all([r.e("82412"), r.e("68930")]).then(r.bind(r, 107807));
     return r => (0, l.jsx)(n, C({
       role: e,
       guildId: t

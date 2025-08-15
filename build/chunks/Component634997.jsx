@@ -1,7 +1,7 @@
 /** Chunk was on 80144 **/
-/** chunk id: 634997, original params: e,t,r (module,exports,require) **/
+/** chunk id: 634997, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => L
 }), require("./388685.js"), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -22,68 +22,68 @@ var Chunk255367 = require("./255367.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk678189 = require("./678189.js");
-let h = function(e) {
+let L = function(e) {
   let {
     transitionState: t,
-    entryPoint: r,
-    onClose: h
-  } = e, [j, A] = o.useState(l.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), m = o.useRef(j), [x, C] = (0, u.US)([j], true, true), {
-    loading: v,
-    initiateAgeVerification: S
-  } = (0, y.WD)(h), k = o.useMemo(() => (0, i.Z)(), []), I = o.useRef(false);
-  return o.useEffect(() => {
-    m.current = x
-  }, [x]), o.useLayoutEffect(() => () => {
-    if (I.current) return;
-    let e = m.current;
-    null != e && (I.current = true, p.Z.maybeOpenAgeVerificationUserFeedback({
+    entryPoint: n,
+    onClose: L
+  } = e, [T, b] = i.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), C = i.useRef(T), [P, R] = (0, a.US)([T], true, true), {
+    loading: x,
+    initiateAgeVerification: h
+  } = (0, O.WD)(L), M = i.useMemo(() => (0, o.Z)(), []), y = i.useRef(false);
+  return i.useEffect(() => {
+    C.current = P
+  }, [P]), i.useLayoutEffect(() => () => {
+    if (y.current) return;
+    let e = C.current;
+    null != e && (y.current = true, E.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: e
     }))
-  }, []), o.useEffect(() => {
-    (0, d.lA)(k, d.d_.PRIMARY, r)
-  }, [k, r]), (0, n.jsxs)(c.Modal, {
+  }, []), i.useEffect(() => {
+    (0, I.lA)(M, I.d_.PRIMARY, n)
+  }, [M, n]), (0, r.jsxs)(l.Modal, {
     transitionState: t,
-    onClose: h,
-    title: g.intl.string(g.t.JHNunp),
-    subtitle: g.intl.string(g.t["+BLIGh"]),
+    onClose: L,
+    title: f.intl.string(f.t.JHNunp),
+    subtitle: f.intl.string(f.t["+BLIGh"]),
     actions: [{
-      text: g.intl.string(g.t.SJMnkZ),
-      loading: v,
-      icon: s.Gr1,
+      text: f.intl.string(f.t.SJMnkZ),
+      loading: x,
+      icon: c.Gr1,
       iconPosition: "end",
       onClick: async () => {
-        (0, d.x3)(k, d.d_.PRIMARY, d.sU.GET_STARTED), A(l.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE), await S()
+        (0, I.x3)(M, I.d_.PRIMARY, I.sU.GET_STARTED), b(s.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE), await h()
       }
     }],
-    actionBarInput: (0, n.jsxs)(a.Z, {
+    actionBarInput: (0, r.jsxs)(u.Z, {
       onClick: () => {
-        O.Z.openUrl(b.Z.getArticleURL(_.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, d.x3)(k, d.d_.PRIMARY, d.sU.LEARN_MORE)
+        p.Z.openUrl(d.Z.getArticleURL(m.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, I.x3)(M, I.d_.PRIMARY, I.sU.LEARN_MORE)
       },
-      className: P.learnMoreButton,
-      children: [g.intl.string(g.t["aA6q//"]), (0, n.jsx)(s.Gr1, {
+      className: A.learnMoreButton,
+      children: [f.intl.string(f.t["aA6q//"]), (0, r.jsx)(c.Gr1, {
         size: "xs",
         color: "currentColor"
       })]
     }),
-    children: [(0, E.uH)(k).map((e, t) => {
+    children: [(0, S.uH)(M).map((e, t) => {
       let {
-        title: r,
-        description: o
+        title: n,
+        description: i
       } = e;
-      return (0, n.jsx)(f.JZ, {
-        title: r,
-        description: o,
+      return (0, r.jsx)(_.JZ, {
+        title: n,
+        description: i,
         listType: "numbered",
         index: t
       }, t)
-    }), (0, n.jsx)(s.Text, {
+    }), (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
-      className: P.requestContainer,
-      children: g.intl.format(g.t.pJAxgY, {
+      className: A.requestContainer,
+      children: f.intl.format(f.t.pJAxgY, {
         handleOnRequestHook: () => {
-          O.Z.openUrl(R.sQ.APPEALS_LINK), (0, d.x3)(k, d.d_.PRIMARY, d.sU.MANUAL_REVIEW_REQUEST)
+          p.Z.openUrl(N.sQ.APPEALS_LINK), (0, I.x3)(M, I.d_.PRIMARY, I.sU.MANUAL_REVIEW_REQUEST)
         }
       })
     })]

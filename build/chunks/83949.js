@@ -34,11 +34,11 @@ function f() {
         n = 0 !== t.length,
         r = null != e.token,
         l = null == e.RTCRegionStore ? null : JSON.parse(e.RTCRegionStore),
-        f = null == l || null == d(l) || d(l) <= d(o.K.get("RTCRegionStore"));
-      n && r && !f && (o.K.clear(), t.forEach(t => {
+        f = null == l || null == d(l) || d(l) <= d(a.K.get("RTCRegionStore"));
+      n && r && !f && (a.K.clear(), t.forEach(t => {
         let n = e[t];
         try {
-          o.K.set(t, JSON.parse(n))
+          a.K.set(t, JSON.parse(n))
         } catch (e) {}
       })), s.default.track(u.rMx.DOMAIN_MIGRATED, {
         success: true,
@@ -46,7 +46,7 @@ function f() {
         has_data: n
       }, {
         flush: true
-      }), o.K.set(i.SV, true), a.Z.userDataCache.deleteCache(), c.Pg()
+      }), a.K.set(i.SV, true), o.Z.userDataCache.deleteCache(), c.Pg()
     }))
   }, []), null
 }

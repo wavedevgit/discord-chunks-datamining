@@ -1,22 +1,21 @@
-/** Chunk was on web.js **/
-/** chunk id: 38755, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 85362 **/
+/** chunk id: 38755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk763520 = require("./763520.js");
 
-function o(e) {
+function l(e) {
   let {
     location: t,
     videoSpinnerContext: n,
-    userId: o,
-    streamId: a,
-    loading: s,
-    paused: l = false
+    userId: l,
+    streamId: o,
+    loading: a,
+    paused: s = false
   } = e, [c] = r.useState(() => new i.o(t));
   r.useEffect(() => {
-    l || (s ? c.onSpinnerStarted() : null != a && c.trackSpinnerDuration(n, o, a))
-  }, [s, l, a, c, n, o])
+    s || (a ? c.onSpinnerStarted() : null != o && c.trackSpinnerDuration(n, l, o))
+  }, [a, s, o, c, n, l])
 }

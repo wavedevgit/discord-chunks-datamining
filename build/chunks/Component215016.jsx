@@ -2,14 +2,14 @@
 /** chunk id: 215016, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  PY: () => Z,
+  PY: () => V,
   ZP: () => F,
   iR: () => G
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk944611 = require("./944611.js"),
@@ -88,18 +88,18 @@ function M(e) {
   return e === u.EO.VIDEO
 }
 
-function j(e) {
+function k(e) {
   return ((0, E._M)(e) || (0, E.MO)(e)) && (e.pathname.toLowerCase().endsWith(".webp") || e.pathname.toLowerCase().endsWith(".avif"))
 }
 
-function k(e) {
+function j(e) {
   return ((0, E._M)(e) || (0, E.MO)(e)) && e.pathname.toLowerCase().endsWith(".gif")
 }
 
 function U(e) {
   let t = y.Z.toURLSafe(e),
-    n = null != t && k(t);
-  return null != t && (j(t) || n) ? (n && t.searchParams.set("format", "webp"), t.searchParams.set("animated", "true"), t.toString()) : e
+    n = null != t && j(t);
+  return null != t && (k(t) || n) ? (n && t.searchParams.set("format", "webp"), t.searchParams.set("animated", "true"), t.toString()) : e
 }
 class G extends Chunk73800.PureComponent {
   componentDidMount() {
@@ -113,11 +113,11 @@ class G extends Chunk73800.PureComponent {
         },
         videoPool: i
       },
-      ref: o
+      ref: a
     } = this;
     if (module !== Chunk377108.EO.VIDEO || null == Chunk120356) return;
-    let a = Chunk73800.getElement();
-    a.oncanplay = this.handleCanPlay, a.src = exports, a.width = require, a.height = Chunk255367, Chunk120356.appendChild(a), this._video = a
+    let o = Chunk73800.getElement();
+    o.oncanplay = this.handleCanPlay, o.src = exports, o.width = require, o.height = Chunk255367, Chunk120356.appendChild(o), this._video = o
   }
   componentDidUpdate(e) {
     let {
@@ -161,9 +161,9 @@ class G extends Chunk73800.PureComponent {
       renderExtras: t,
       format: n,
       coords: i,
-      focused: o
+      focused: a
     } = this.props, {
-      color: a,
+      color: o,
       loaded: s
     } = this.state;
     return (0, Chunk255367.jsxs)(Chunk481060.P3F, {
@@ -175,7 +175,7 @@ class G extends Chunk73800.PureComponent {
       "data-focused": Chunk120356,
       onClick: this.handleClick,
       style: A({
-        backgroundColor: Chunk392711 ? true : a
+        backgroundColor: Chunk392711 ? true : o
       }, Chunk73800),
       children: [M(require) ? null : this.renderGIF(), null != exports ? exports(module) : null]
     })
@@ -221,7 +221,7 @@ class B extends Chunk73800.PureComponent {
       onSelectGIF: n,
       resultType: r,
       data: i,
-      resultQuery: o
+      resultQuery: a
     } = this.props;
     null != n && n(e), (0, p.R7)({
       type: r,
@@ -230,7 +230,7 @@ class B extends Chunk73800.PureComponent {
       limit: this.props.searchLimit,
       results: i.length,
       totalResults: this.props.searchTotalResults,
-      query: o,
+      query: a,
       gifId: e.id
     })
   }
@@ -334,19 +334,19 @@ class B extends Chunk73800.PureComponent {
     }), S(this, "renderItem", (e, t, n, i) => {
       if (e > 0) return null;
       let {
-        focusedId: o
-      } = this.state, a = this.props.data[t];
-      return null == a ? null : (0, r.jsx)(G, {
-        item: a,
+        focusedId: a
+      } = this.state, o = this.props.data[t];
+      return null == o ? null : (0, r.jsx)(G, {
+        item: o,
         index: t,
-        format: a.format,
-        src: a.src,
+        format: o.format,
+        src: o.src,
         coords: n,
         onClick: this.handleClickItem,
         renderExtras: () => (0, r.jsx)(b.Z, A({
           className: T.favButton
-        }, a)),
-        focused: w(a) === o,
+        }, o)),
+        focused: w(o) === a,
         imagePool: this.props.imagePool,
         videoPool: this.props.videoPool
       }, i)
@@ -361,25 +361,25 @@ class B extends Chunk73800.PureComponent {
       return null != r ? null != (n = r.id) ? n : r.src : null
     }), S(this, "renderSection", (e, t, n) => {
       let {
-        onSelectSuggestion: o,
-        suggestions: a
+        onSelectSuggestion: a,
+        suggestions: o
       } = this.props;
       return 1 === e ? (0, r.jsx)("div", {
         className: T.endContainer,
         style: t,
-        children: a.length > 0 ? (0, r.jsxs)(i.Fragment, {
+        children: o.length > 0 ? (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)("div", {
             className: T.endText,
             children: I.intl.string(I.t["3JGJo6"])
           }), (0, r.jsx)("div", {
             className: T.searchSuggestions,
-            children: a.map(e => (0, r.jsx)(f.zx, {
+            children: o.map(e => (0, r.jsx)(f.zx, {
               look: f.zx.Looks.OUTLINED,
               color: f.zx.Colors.PRIMARY,
               size: f.zx.Sizes.SMALL,
               className: T.searchSuggestion,
               onClick: () => {
-                o(e)
+                a(e)
               },
               children: e
             }, e))
@@ -389,14 +389,14 @@ class B extends Chunk73800.PureComponent {
     }), S(this, "renderContent", (e, t, n) => {
       let {
         className: i,
-        data: o,
+        data: a,
         resultQuery: s,
         query: l,
         resultType: c
       } = this.props;
-      return 0 === o.length && (s !== l || c === v.wI2.TRENDING_GIFS) ? (0, r.jsx)(_.GMG, {
+      return 0 === a.length && (s !== l || c === v.wI2.TRENDING_GIFS) ? (0, r.jsx)(_.GMG, {
         fade: true,
-        className: a()(T.results, i),
+        className: o()(T.results, i),
         sections: [P.length],
         columns: e,
         itemGutter: 12,
@@ -408,9 +408,9 @@ class B extends Chunk73800.PureComponent {
         ref: this._masonryRef,
         fade: true,
         itemGutter: 12,
-        className: a()(T.results, i),
+        className: o()(T.results, i),
         columns: e,
-        sections: [o.length, 0],
+        sections: [a.length, 0],
         getItemKey: this.getItemKey,
         getItemHeight: this.getItemHeight,
         renderItem: this.renderItem,
@@ -433,7 +433,7 @@ class B extends Chunk73800.PureComponent {
   }
 }
 
-function Z() {
+function V() {
   let {
     renderWindow: e
   } = Chunk73800.useContext(Chunk40851.ZP), t = module.document, [n] = Chunk73800.useState(() => new Chunk944611.w(() => exports.createElement("img"), e => {
@@ -454,6 +454,6 @@ function Z() {
   }
 }
 let F = function(e) {
-  let t = Z();
+  let t = V();
   return (0, r.jsx)(B, A({}, e, t))
 }

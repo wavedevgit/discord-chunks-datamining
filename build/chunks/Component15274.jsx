@@ -55,17 +55,17 @@ function d(e, t) {
 function f(e) {
   let {
     eventId: t,
-    parentGuildId: o,
-    recurrenceId: a
+    parentGuildId: a,
+    recurrenceId: o
   } = e;
   (0, i.ZD)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("22347"), n.e("25046")]).then(n.bind(n, 697849));
+    } = await Promise.all([n.e("34082"), n.e("22347"), n.e("98464")]).then(n.bind(n, 697849));
     return n => (0, r.jsx)(e, c({
       guildScheduledEventId: t,
-      parentGuildId: o,
-      initialRecurrenceId: a
+      parentGuildId: a,
+      initialRecurrenceId: o
     }, n))
   })
 }
@@ -73,7 +73,7 @@ async function _(e, t) {
   let {
     guild_id: n
   } = e;
-  await o.Z.transitionToGuildSync(n, t), f({
+  await a.Z.transitionToGuildSync(n, t), f({
     eventId: e.id,
     event: e
   })
@@ -83,11 +83,11 @@ function p(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t
-    } = await n.e("21395").then(n.bind(n, 312757));
+    } = await Promise.all([n.e("42743"), n.e("22569")]).then(n.bind(n, 312757));
     return n => (0, r.jsx)(t, d(c({}, n), {
       channel: e
     }))
   }, {
-    contextKey: t === a.IlC.POPOUT ? s.u1 : s.z1
+    contextKey: t === o.IlC.POPOUT ? s.u1 : s.z1
   })
 }

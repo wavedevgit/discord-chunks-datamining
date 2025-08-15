@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 60174, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 60174, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  X: () => D
+  X: () => N
 }), require("./997841.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk954955 = require("./954955.js"),
-  l = require.n(Chunk954955),
+  s = require.n(Chunk954955),
   Chunk507274 = require("./507274.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk255963 = require("./255963.js"),
@@ -30,7 +29,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk127947 = require("./127947.js"),
   Chunk893973 = require("./893973.js");
 
-function C(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,56 +38,39 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
 }
-
-function P(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-class D extends Chunk73800.Component {
+class N extends Chunk73800.Component {
   render() {
     let {
       type: e,
       message: t,
       className: n,
       children: i,
-      useChatFontScaling: o,
-      tabIndex: s = 0
+      useChatFontScaling: l,
+      tabIndex: o = 0
     } = this.props, {
-      isReactionPickerActive: l
-    } = this.state, c = exports.state === Chunk981631.yb.SENDING, p = module === Chunk566006.O.BURST;
+      isReactionPickerActive: s
+    } = this.state, c = exports.state === Chunk981631.yb.SENDING, f = module === Chunk566006.O.BURST;
     if (Chunk507274 || (0, Chunk630388.yE)(exports.flags, Chunk981631.iLy.EPHEMERAL)) return null;
-    let h = Chunk594174.default.getCurrentUser(),
-      m = (0, Chunk74538.I5)(Chunk222677),
-      g = Chunk659215 ? Chunk388032.intl.string(Chunk388032.t.Kfcszs) : Chunk388032.intl.string(Chunk388032.t.lfIHs7);
-    !Chunk995774 && Chunk659215 && (g = (0, Chunk255367.jsx)(Chunk466794.X, {
+    let _ = Chunk594174.default.getCurrentUser(),
+      g = (0, Chunk74538.I5)(Chunk222677),
+      h = Chunk659215 ? Chunk388032.intl.string(Chunk388032.t.Kfcszs) : Chunk388032.intl.string(Chunk388032.t.lfIHs7);
+    !Chunk995774 && Chunk659215 && (h = (0, Chunk255367.jsx)(Chunk466794.X, {
       tooltipText: Chunk388032.intl.string(Chunk388032.t.Kfcszs)
     }));
-    let T = Chunk120356 ? Chunk893973 : Chunk127947,
-      C = {
+    let x = Chunk120356 ? Chunk893973 : Chunk127947,
+      T = {
         size: "sm",
         color: "currentColor",
         className: Chunk474936.icon
@@ -98,83 +80,93 @@ class D extends Chunk73800.Component {
       className: a()(Chunk474936.reactionBtn, require)
     }) : (0, Chunk255367.jsx)(Chunk481060.yRy, {
       targetElementRef: this.ref,
-      shouldShow: l,
+      shouldShow: s,
       onRequestClose: this.handleReactionPickerToggle,
       renderPopout: this.renderReactionPopout,
       position: "right",
       children: (e, t) => {
+        var l, s;
         let {
-          isShown: o
+          isShown: c
         } = t;
         return (0, r.jsx)(u.DY3, {
-          text: g,
+          text: h,
           color: u.FGA.PRIMARY,
-          "aria-label": p ? S.intl.string(S.t.Kfcszs) : S.intl.string(S.t.lfIHs7),
-          tooltipClassName: T.__invalid_addReactionTooltip,
-          children: (0, r.jsxs)(u.P3F, w(R({}, e), {
+          "aria-label": f ? j.intl.string(j.t.Kfcszs) : j.intl.string(j.t.lfIHs7),
+          tooltipClassName: x.__invalid_addReactionTooltip,
+          children: (0, r.jsxs)(u.P3F, (l = P({}, e), s = s = {
             innerRef: this.ref,
-            tabIndex: s,
+            tabIndex: o,
             onClick: e => {
               this.handleAddReactionClick(e)
             },
-            onMouseEnter: () => (0, d.x)(I.qR.AddReactionPopoutMouseEntered),
-            onFocus: () => (0, d.x)(I.qR.AddReactionPopoutFocused),
-            className: a()(T.reactionBtn, {
-              [T.active]: o
+            onMouseEnter: () => (0, d.x)(y.qR.AddReactionPopoutMouseEntered),
+            onFocus: () => (0, d.x)(y.qR.AddReactionPopoutFocused),
+            className: a()(x.reactionBtn, {
+              [x.active]: c
             }, n),
-            children: [p ? (0, r.jsx)(u.Pt5, R({}, C)) : (0, r.jsx)(u.EO4, R({}, C)), i]
-          }))
+            children: [f ? (0, r.jsx)(u.Pt5, P({}, T)) : (0, r.jsx)(u.EO4, P({}, T)), i]
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
+            }
+            return n
+          })(Object(s)).forEach(function(e) {
+            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
+          }), l))
         })
       }
     })
   }
   constructor(...e) {
-    super(...e), C(this, "state", {
+    super(...e), T(this, "state", {
       isReactionPickerActive: false
-    }), C(this, "ref", i.createRef()), C(this, "onAddReaction", (e, t) => {
+    }), T(this, "ref", i.createRef()), T(this, "onAddReaction", (e, t) => {
       if (null == e) return;
       let {
         channel: n,
         message: r,
         isForumToolbar: i
       } = this.props;
-      (0, h.rU)(n.id, r.id, (0, m.g1)(e), i ? h.TW.FORUM_TOOLBAR : h.TW.MESSAGE_INLINE_BUTTON, {
+      (0, _.rU)(n.id, r.id, (0, g.g1)(e), i ? _.TW.FORUM_TOOLBAR : _.TW.MESSAGE_INLINE_BUTTON, {
         burst: t
       })
-    }), C(this, "handleReactionPickerToggle", () => {
+    }), T(this, "handleReactionPickerToggle", () => {
       this.setState(e => ({
         isReactionPickerActive: !e.isReactionPickerActive
       }))
-    }), C(this, "handleAddReactionClick", e => {
+    }), T(this, "handleAddReactionClick", e => {
       let {
         type: t,
         channel: n
       } = this.props;
       e.stopPropagation();
-      let r = E.default.getCurrentUser();
-      t !== O.O.BURST || (0, y.I5)(r) || (0, p.m)({
+      let r = b.default.getCurrentUser();
+      t !== v.O.BURST || (0, C.I5)(r) || (0, f.m)({
         analytics: {
-          type: T.cd.BURST_REACTION_UPSELL,
-          page: null != n.getGuildId() ? v.ZY5.GUILD_CHANNEL : v.ZY5.DM_CHANNEL,
-          section: (0, m.s4)(n),
-          object: v.qAy.INLINE_REACTION_PICKER_UPSELL
+          type: x.cd.BURST_REACTION_UPSELL,
+          page: null != n.getGuildId() ? O.ZY5.GUILD_CHANNEL : O.ZY5.DM_CHANNEL,
+          section: (0, g.s4)(n),
+          object: O.qAy.INLINE_REACTION_PICKER_UPSELL
         }
       }), this.handleReactionPickerToggle()
-    }), C(this, "renderReactionPopout", e => {
+    }), T(this, "renderReactionPopout", e => {
       let {
         closePopout: t
       } = e, {
         type: n,
         channel: i,
-        message: o
-      } = this.props, a = R({
+        message: l
+      } = this.props, a = P({
         openPopoutType: "message_reaction_emoji_picker"
-      }, n === O.O.BURST && {
+      }, n === v.O.BURST && {
         openPopoutType: "message_super_reaction_emoji_picker",
-        page: null != i.getGuildId() ? v.ZY5.GUILD_CHANNEL : v.ZY5.DM_CHANNEL,
-        section: (0, m.s4)(i),
-        object: v.qAy.REACTION_RAIL
-      }), s = (0, r.jsx)(g.$, {
+        page: null != i.getGuildId() ? O.ZY5.GUILD_CHANNEL : O.ZY5.DM_CHANNEL,
+        section: (0, g.s4)(i),
+        object: O.qAy.REACTION_RAIL
+      }), o = (0, r.jsx)(h.$, {
         closePopout: t,
         channel: i,
         onSelectEmoji: e => {
@@ -183,10 +175,10 @@ class D extends Chunk73800.Component {
             willClose: r,
             isBurst: i
           } = e;
-          this.onAddReaction(n, i), r && (i ? l()(t, 150)() : t())
+          this.onAddReaction(n, i), r && (i ? s()(t, 150)() : t())
         },
         analyticsOverride: a,
-        messageId: o.id
+        messageId: l.id
       });
       return (0, r.jsx)(c.M.Consumer, {
         children: e => {
@@ -194,9 +186,9 @@ class D extends Chunk73800.Component {
             inDialog: t
           } = e;
           return t ? (0, r.jsx)(u.VqE, {
-            "aria-label": S.intl.string(S.t["7Xqzdn"]),
-            children: s
-          }) : s
+            "aria-label": j.intl.string(j.t["7Xqzdn"]),
+            children: o
+          }) : o
         }
       })
     })

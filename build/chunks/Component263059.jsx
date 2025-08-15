@@ -2,12 +2,12 @@
 /** chunk id: 263059, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./35282.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk503438 = require("./503438.js"),
   Chunk100527 = require("./100527.js"),
@@ -58,19 +58,19 @@ function M(e) {
   return e
 }
 
-function j(e) {
+function k(e) {
   var t;
   let {
     user: n,
-    currentUser: o,
+    currentUser: a,
     activity: x,
-    profileGuildId: j,
-    className: k,
+    profileGuildId: k,
+    className: j,
     onClose: U
-  } = e, G = (0, p.Dt)(), B = (0, p.Dt)(), Z = i.useRef(null), {
+  } = e, G = (0, p.Dt)(), B = (0, p.Dt)(), V = i.useRef(null), {
     themeType: F
   } = (0, I.z)(), {
-    interactionSource: V,
+    interactionSource: Z,
     interactionSourceId: H
   } = (0, y.Xo)(), Y = (0, _.Z)({
     activity: x,
@@ -92,22 +92,22 @@ function j(e) {
   if (!(0, l.Z)(x)) return null;
   let J = () => {
       var e, t;
-      let o = null != (t = null == (e = x.state) ? true : e.split(";")) ? t : [];
-      return 0 === o.length ? null : null == x.sync_id ? (0, r.jsx)(C.Z, {
+      let a = null != (t = null == (e = x.state) ? true : e.split(";")) ? t : [];
+      return 0 === a.length ? null : null == x.sync_id ? (0, r.jsx)(C.Z, {
         variant: "text-xs/normal",
-        text: o.join(", ")
+        text: a.join(", ")
       }) : (0, r.jsx)(C.Z, {
         variant: "text-xs/normal",
-        text: o.map((e, t) => (0, r.jsxs)(i.Fragment, {
+        text: a.map((e, t) => (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(s.P3F, {
-            className: a()(L.clickableText, L.inline),
+            className: o()(L.clickableText, L.inline),
             onClick: e => {
               e.stopPropagation(), X({
                 action: "OPEN_SPOTIFY_ARTIST"
               }), (0, h.d$)(x, n.id, t)
             },
             children: e
-          }), t < o.length - 1 ? ", " : ""]
+          }), t < a.length - 1 ? ", " : ""]
         }, t))
       })
     },
@@ -125,7 +125,7 @@ function j(e) {
         end: n
       })
     },
-    ee = () => n.id === o.id ? null : (0, r.jsx)("div", {
+    ee = () => n.id === a.id ? null : (0, r.jsx)("div", {
       className: L.actions,
       children: (0, r.jsx)(P.Z, {
         user: n,
@@ -135,16 +135,16 @@ function j(e) {
     });
   if (null === F) return null;
   let et = null != (t = x.application_id) ? t : x.name,
-    en = V === D.n_.ACTIVITY && H === et;
+    en = Z === D.n_.ACTIVITY && H === et;
   return (0, r.jsx)(u.Gt, {
     value: q,
     children: (0, r.jsx)(T.Z, {
-      targetElementRef: Z,
+      targetElementRef: V,
       sourceType: D.n_.ACTIVITY,
       user: n,
       children: (0, r.jsx)(O.Z, {
         user: n,
-        guildId: j,
+        guildId: k,
         themeType: F,
         sourceId: et,
         sourceDetails: null == Y ? (0, b.Z)(x) : null,
@@ -152,7 +152,7 @@ function j(e) {
         sourceType: D.n_.ACTIVITY,
         onAction: X,
         children: () => (0, r.jsx)(v.Z, {
-          ref: Z,
+          ref: V,
           user: n,
           className: L.toolbarContainer,
           sourceType: D.n_.ACTIVITY,
@@ -171,7 +171,7 @@ function j(e) {
           }),
           children: (0, r.jsxs)(A.Z, {
             ref: Q,
-            className: a()(k, {
+            className: o()(j, {
               [L.hoisted]: en
             }),
             onAction: X,

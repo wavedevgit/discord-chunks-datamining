@@ -1,7 +1,7 @@
-/** Chunk was on 79521 **/
-/** chunk id: 637565, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 30557 **/
+/** chunk id: 637565, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  T: () => o
+  T: () => s
 }), require("./388685.js");
 var Chunk601964 = require("./601964.js"),
   Chunk345162 = require("./345162.js"),
@@ -9,17 +9,17 @@ var Chunk601964 = require("./601964.js"),
   Chunk790285 = require("./790285.js"),
   Chunk981631 = require("./981631.js");
 
-function o(t, e, n) {
-  let o = new Set;
-  for (let t of Object.keys(n.permissionOverwrites)) {
-    let i = e[t],
-      l = n.permissionOverwrites[t];
-    (0, r.Z)(i) && (0, a.TG)(n, l) && o.add(i)
+function s(t, n, e) {
+  let s = new Set;
+  for (let t of Object.keys(e.permissionOverwrites)) {
+    let i = n[t],
+      l = e.permissionOverwrites[t];
+    (0, r.Z)(i) && (0, a.TG)(e, l) && s.add(i)
   }
-  let d = e[(0, i.lV)(t)],
-    c = !(0, l.Fs)(d, s.Plq.VIEW_CHANNEL),
-    u = (0, a.wB)(n, n.permissionOverwrites[t.id]);
-  if (c && !u)
-    for (let t of Object.values(e))(0, r.Z)(t) && (0, a.yt)(t) && o.add(t);
-  return [...o]
+  let _ = n[(0, i.lV)(t)],
+    o = !(0, l.Fs)(_, d.Plq.VIEW_CHANNEL),
+    p = (0, a.wB)(e, e.permissionOverwrites[t.id]);
+  if (o && !p)
+    for (let t of Object.values(n))(0, r.Z)(t) && (0, a.yt)(t) && s.add(t);
+  return [...s]
 }

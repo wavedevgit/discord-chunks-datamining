@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 563917, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 563917, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -17,26 +16,26 @@ let u = e => {
     stageInstance: n,
     guild: u,
     message: d,
-    isMember: f,
-    onTransitionToInviteChannel: _,
-    onAcceptInstantInvite: p
+    isMember: p,
+    onTransitionToInviteChannel: m,
+    onAcceptInstantInvite: f
   } = e, {
-    analyticsLocations: h
-  } = (0, s.ZP)(a.Z.INVITE_EMBED), m = i.useCallback(() => {
+    analyticsLocations: _
+  } = (0, o.ZP)(a.Z.INVITE_EMBED), g = i.useCallback(() => {
     let e = "noop";
-    f ? (_(), e = "transition") : (p(), e = "accept"), (0, o.r$)({
+    p ? (m(), e = "transition") : (f(), e = "accept"), (0, l.r$)({
       invite: t,
       action: e,
       inviter_id: d.author.id,
       invite_message_id: d.id
-    }, h)
-  }, [t, d, h, f, _, p]);
+    }, _)
+  }, [t, d, _, p, m, f]);
   return (0, r.jsx)(c.Z, {
-    children: (0, r.jsx)(l.Z, {
+    children: (0, r.jsx)(s.Z, {
       isEmbed: true,
       stageInstance: n,
       guild: u,
-      onClick: m
+      onClick: g
     })
   })
 }

@@ -17,8 +17,8 @@ function d(e, t) {
   var n;
   let d = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
     f = null != (n = null == e ? true : e.guild_id) ? n : c.lds,
-    _ = (0, i.e7)([a.ZP], () => a.ZP.getFlattenedGuildIds()),
-    p = (0, i.e7)([o.Z], () => null == e || null == e.guild_id || o.Z.can(u.Pl.USE_EXTERNAL_SOUNDS, e));
+    _ = (0, i.e7)([o.ZP], () => o.ZP.getFlattenedGuildIds()),
+    p = (0, i.e7)([a.Z], () => null == e || null == e.guild_id || a.Z.can(u.Pl.USE_EXTERNAL_SOUNDS, e));
   return r.useMemo(() => {
     if ((l.ZP.canUseSoundboardEverywhere(d) || !t) && p) {
       let e = "" !== f,

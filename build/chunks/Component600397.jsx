@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 600397, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 600397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -17,43 +16,43 @@ var Chunk657707 = require("./657707.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk372563 = require("./372563.js");
 
-function p(e) {
+function f(e) {
   let {
     message: t,
     channel: n,
-    author: p,
-    compact: h
+    author: f,
+    compact: _
   } = e, {
-    nick: m
-  } = (0, l.Sw)(p, n), g = (0, c.l)({
-    user: p,
+    nick: g
+  } = (0, s.Sw)(f, n), h = (0, c.l)({
+    user: f,
     channelId: n.id,
     guildId: true,
     messageId: true
-  })(), E = (0, o.q)(t.applicationId);
-  if (null == E) return null;
-  let b = f.intl.format(f.t.m7Lwam, {
-    username: m,
-    usernameHook: g,
-    gameName: E.name,
+  })(), b = (0, l.q)(t.applicationId);
+  if (null == b) return null;
+  let E = p.intl.format(p.t.m7Lwam, {
+    username: g,
+    usernameHook: h,
+    gameName: b.name,
     gameIconHook: e => (0, r.jsxs)("span", {
-      className: _.gameContainer,
+      className: m.gameContainer,
       children: [(0, r.jsx)(a.Z, {
-        game: E,
+        game: b,
         size: a.Z.Sizes.XXSMALL,
-        className: _.inlineIcon
+        className: m.inlineIcon
       }), " ", e]
     }),
-    helpdeskArticle: s.Z.getArticleURL(d.BhN.SOCIAL_LAYER_CONNECTIONS)
+    helpdeskArticle: o.Z.getArticleURL(d.BhN.SOCIAL_LAYER_CONNECTIONS)
   });
   return (0, r.jsx)(u.Z, {
     iconNode: (0, r.jsx)(i.iWm, {
       size: "sm"
     }),
-    compact: h,
-    contentClassName: _.content,
+    compact: _,
+    contentClassName: m.content,
     children: (0, r.jsx)("div", {
-      children: b
+      children: E
     })
   })
 }

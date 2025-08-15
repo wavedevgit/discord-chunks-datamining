@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   Hm: () => s,
-  Tv: () => a,
+  Tv: () => o,
   __: () => i,
-  yT: () => o
+  yT: () => a
 });
 var Chunk570140 = require("./570140.js");
 
@@ -18,14 +18,14 @@ function i(e, t, n) {
   })
 }
 
-function o(e) {
+function a(e) {
   r.Z.dispatch({
     type: "APP_LAUNCHER_DISMISS",
     closeReason: e
   })
 }
 
-function a(e) {
+function o(e) {
   r.Z.dispatch({
     type: "APP_LAUNCHER_ADD_FAILED_APP_DM_LOAD",
     channelId: e

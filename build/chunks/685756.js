@@ -364,18 +364,18 @@ class L extends Chunk47770.Z {
       channelId: n,
       userId: r,
       sessionId: i,
-      token: o,
-      maxDaveProtocolVersion: a,
+      token: a,
+      maxDaveProtocolVersion: o,
       video: s = false,
       streamParameters: l
     } = e;
-    this.serverId = t, this.channelId = n, this.sessionId = i, this.token = o, this.connectionState = 2, this.send(0, {
+    this.serverId = t, this.channelId = n, this.sessionId = i, this.token = a, this.connectionState = 2, this.send(0, {
       server_id: t,
       channel_id: n,
       user_id: r,
       session_id: i,
-      token: o,
-      max_dave_protocol_version: a,
+      token: a,
+      max_dave_protocol_version: o,
       video: s,
       streams: R(l)
     })
@@ -403,22 +403,22 @@ class L extends Chunk47770.Z {
     this.close()
   }
   selectProtocol(e, t, n, r) {
-    let i, o = {};
-    null == n ? i = null : "sdp" in n && null != n.sdp && "" !== n.sdp ? (i = n.sdp, o = m(p({}, n), {
+    let i, a = {};
+    null == n ? i = null : "sdp" in n && null != n.sdp && "" !== n.sdp ? (i = n.sdp, a = m(p({}, n), {
       codecs: C(n.codecs),
       rtc_connection_id: t
     })) : "address" in n && null != n.address && "" !== n.address && n.port && null != n.mode && "" !== n.mode && (i = {
       address: n.address,
       port: n.port,
       mode: n.mode
-    }, o = m(p({}, n), {
+    }, a = m(p({}, n), {
       codecs: C(n.codecs),
       rtc_connection_id: t,
       experiments: r
     })), this.send(1, p({
       protocol: e,
       data: i
-    }, o))
+    }, a))
   }
   updateSession(e) {
     this.send(14, {
@@ -468,6 +468,6 @@ class L extends Chunk47770.Z {
     this.heartbeatIntervalModifier = e
   }
   constructor(e, t = f.Yn.DEFAULT) {
-    super(), _(this, "url", true), _(this, "logger", true), _(this, "backoff", new o.Z(1e3, 5e3)), _(this, "webSocket", true), _(this, "connectionState", true), _(this, "heartbeatInterval", true), _(this, "helloTimeout", true), _(this, "heartbeater", true), _(this, "lastHeartbeatAckTime", true), _(this, "expeditedHeartbeatTimeout", true), _(this, "heartbeatAck", true), _(this, "heartbeatIntervalModifier", true), _(this, "connectionStartTime", true), _(this, "lastRecvSeqNum", true), _(this, "sessionId", true), _(this, "serverId", true), _(this, "channelId", true), _(this, "token", true), _(this, "resumable", true), _(this, "serverVersion", 0), this.url = e, this.logger = new l.Z("RTCControlSocket(".concat(t, ")")), this.logger.enableNativeLogger(true), this.webSocket = null, this.connectionState = 0, this.helloTimeout = null, this.lastHeartbeatAckTime = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = true, this.expeditedHeartbeatTimeout = null, this.heartbeatIntervalModifier = 1, this.connectionStartTime = 0, this.lastRecvSeqNum = null, this.sessionId = null, this.serverId = null, this.channelId = null, this.token = null, this.resumable = false
+    super(), _(this, "url", true), _(this, "logger", true), _(this, "backoff", new a.Z(1e3, 5e3)), _(this, "webSocket", true), _(this, "connectionState", true), _(this, "heartbeatInterval", true), _(this, "helloTimeout", true), _(this, "heartbeater", true), _(this, "lastHeartbeatAckTime", true), _(this, "expeditedHeartbeatTimeout", true), _(this, "heartbeatAck", true), _(this, "heartbeatIntervalModifier", true), _(this, "connectionStartTime", true), _(this, "lastRecvSeqNum", true), _(this, "sessionId", true), _(this, "serverId", true), _(this, "channelId", true), _(this, "token", true), _(this, "resumable", true), _(this, "serverVersion", 0), this.url = e, this.logger = new l.Z("RTCControlSocket(".concat(t, ")")), this.logger.enableNativeLogger(true), this.webSocket = null, this.connectionState = 0, this.helloTimeout = null, this.lastHeartbeatAckTime = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = true, this.expeditedHeartbeatTimeout = null, this.heartbeatIntervalModifier = 1, this.connectionStartTime = 0, this.lastRecvSeqNum = null, this.sessionId = null, this.serverId = null, this.channelId = null, this.token = null, this.resumable = false
   }
 }

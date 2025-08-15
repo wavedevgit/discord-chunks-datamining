@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Gk: () => s,
-  Ni: () => a,
-  PV: () => o,
+  Ni: () => o,
+  PV: () => a,
   d$: () => i
 });
 var Chunk570140 = require("./570140.js");
@@ -15,14 +15,14 @@ function i() {
   })
 }
 
-function o(e) {
+function a(e) {
   r.Z.dispatch({
     type: "MESSAGE_GIFT_INTENT_SHOWN",
     recipientUserId: e
   })
 }
 
-function a(e) {
+function o(e) {
   r.Z.dispatch({
     type: "GIFT_INTENT_FLOW_PURCHASED_GIFT",
     recipientUserId: e

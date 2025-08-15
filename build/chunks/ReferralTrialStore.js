@@ -51,9 +51,9 @@ function R(e) {
     sent_user_ids: n,
     refresh_at: r,
     recipient_status: i,
-    has_eligible_friends: o
+    has_eligible_friends: a
   } = e;
-  T = null == r && o, h = false, f = t, _ = new Set(n), S = r, p = i
+  T = null == r && a, h = false, f = t, _ = new Set(n), S = r, p = i
 }
 
 function P(e) {
@@ -93,14 +93,14 @@ function M(e) {
   m.delete(t), g.add(t)
 }
 
-function j(e) {
+function k(e) {
   let {
     message: t
   } = e;
   G(t)
 }
 
-function k(e) {
+function j(e) {
   let {
     messages: t
   } = e;
@@ -111,20 +111,20 @@ function U(e) {
   let {
     userTrialOfferId: t
   } = e;
-  h || (0, l.C$)(), m.has(t) || (L(t), a.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
+  h || (0, l.C$)(), m.has(t) || (L(t), o.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
 }
 
 function G(e) {
   let t = e.type === i.u.PREMIUM_REFERRAL ? e.content : null;
   if (null == t) returnfalse;
-  g.has(t) || m.has(t) || (L(t), a.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
+  g.has(t) || m.has(t) || (L(t), o.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
 }
 
 function B() {
   v = true
 }
 
-function Z(e) {
+function V(e) {
   let {
     users: t,
     nextIndex: n
@@ -135,7 +135,7 @@ function Z(e) {
 function F() {
   v = false
 }
-class V extends(r = Chunk442837.ZP.Store) {
+class Z extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk594174.default), this.syncWith([Chunk594174.default], N)
   }
@@ -179,8 +179,8 @@ class V extends(r = Chunk442837.ZP.Store) {
     return p
   }
 }
-u(V, "displayName", "ReferralTrialStore");
-let H = new V(Chunk570140.Z, {
+u(Z, "displayName", "ReferralTrialStore");
+let H = new Z(Chunk570140.Z, {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: U,
   BILLING_REFERRALS_REMAINING_FETCH_START: C,
   BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: R,
@@ -190,10 +190,10 @@ let H = new V(Chunk570140.Z, {
   BILLING_REFERRAL_RESOLVE_SUCCESS: x,
   BILLING_REFERRAL_RESOLVE_FAIL: M,
   REFERRALS_FETCH_ELIGIBLE_USER_START: B,
-  REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: Z,
+  REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: V,
   REFERRALS_FETCH_ELIGIBLE_USER_FAIL: F,
-  LOAD_MESSAGES_SUCCESS: k,
-  MESSAGE_CREATE: j,
-  LOAD_MESSAGES_AROUND_SUCCESS: k,
+  LOAD_MESSAGES_SUCCESS: j,
+  MESSAGE_CREATE: k,
+  LOAD_MESSAGES_AROUND_SUCCESS: j,
   LOGOUT: A
 })

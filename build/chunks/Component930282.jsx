@@ -1,17 +1,17 @@
-/** Chunk was on web.js **/
-/** chunk id: 930282, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 31978 **/
+/** chunk id: 930282, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  HR: () => E,
-  L5: () => m,
-  ZP: () => b
+  HR: () => h,
+  L5: () => b,
+  ZP: () => y
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk653603 = require("./653603.js"),
-  l = require.n(Chunk653603),
+  s = require.n(Chunk653603),
   Chunk902704 = require("./902704.js"),
   Chunk453687 = require("./453687.js"),
   Chunk328966 = require("./328966.jsx"),
@@ -20,48 +20,46 @@ var Chunk255367 = require("./255367.js"),
   Chunk724913 = require("./724913.js"),
   Chunk430864 = require("./430864.js");
 
-function m(e, t) {
-  return e.type === f.uaV.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(f.iLy.SOURCE_MESSAGE_DELETED) ? _.intl.string(_.t.JOtgS0) : t
+function b(e, t) {
+  return e.type === p.uaV.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(p.iLy.SOURCE_MESSAGE_DELETED) ? m.intl.string(m.t.JOtgS0) : t
 }
 
-function g(e) {
+function h(e, t) {
+  var n, r;
+  let {
+    message: l
+  } = t, {
+    message: o
+  } = e;
+  return (0, c.Z)(e, t, ["message"]) && l.content === o.content && l.state === o.state && (null == (n = l.editedTimestamp) ? true : n.toString()) === (null == (r = o.editedTimestamp) ? true : r.toString())
+}
+let y = Chunk73800.memo(function(e) {
   var t;
   let {
     className: n,
     message: o,
-    children: s,
+    children: a,
     content: c,
-    onUpdate: _,
-    contentRef: g,
-    compact: E
-  } = e, b = o.state === f.yb.SEND_FAILED, y = o.state === f.yb.SENDING, O = o.isCommandType(), v = null == (t = o.editedTimestamp) ? true : t.toString(), I = i.useRef(false);
-  return i.useLayoutEffect(() => {
-    I.current ? null != _ && _() : I.current = true
-  }, [_, o.content, c, v, s]), (0, r.jsxs)("div", {
+    onUpdate: m,
+    contentRef: h,
+    compact: y
+  } = e, O = o.state === p.yb.SEND_FAILED, v = o.state === p.yb.SENDING, j = o.isCommandType(), P = null == (t = o.editedTimestamp) ? true : t.toString(), x = l.useRef(false);
+  return l.useLayoutEffect(() => {
+    x.current ? null != m && m() : x.current = true
+  }, [m, o.content, c, P, a]), (0, r.jsxs)("div", {
     id: (0, u.ut)(o),
-    ref: g,
-    className: a()(n, h.markup, {
-      [p.messageContent]: true,
-      [p.isSending]: y && !O,
-      [p.markupRtl]: "rtl" === l()(o.content),
-      [p.isFailed]: b,
-      [p.isUnsupported]: o.isUnsupported
+    ref: h,
+    className: i()(n, f.markup, {
+      [g.messageContent]: true,
+      [g.isSending]: v && !j,
+      [g.markupRtl]: "rtl" === s()(o.content),
+      [g.isFailed]: O,
+      [g.isUnsupported]: o.isUnsupported
     }),
-    children: [null != s ? s : m(o, c), (0, r.jsx)(d.Z, {
+    children: [null != a ? a : b(o, c), (0, r.jsx)(d.Z, {
       message: o,
-      compact: E,
+      compact: y,
       location: d.H.WITH_CONTENT
     })]
   })
-}
-
-function E(e, t) {
-  var n, r;
-  let {
-    message: i
-  } = t, {
-    message: o
-  } = e;
-  return (0, c.Z)(e, t, ["message"]) && i.content === o.content && i.state === o.state && (null == (n = i.editedTimestamp) ? true : n.toString()) === (null == (r = o.editedTimestamp) ? true : r.toString())
-}
-let b = Chunk73800.memo(g, E)
+}, h)

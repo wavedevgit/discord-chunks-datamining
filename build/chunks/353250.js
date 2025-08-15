@@ -1,16 +1,16 @@
-/** Chunk was on 61643 **/
+/** Chunk was on 36514 **/
 /** chunk id: 353250, original params: e,t,r (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  CaptchaCancelError: () => c,
-  CaptchaError: () => s,
-  emitCaptchaDistributionMetric: () => i,
-  extractCaptchaPropsFromResponse: () => l
+  CaptchaCancelError: () => s,
+  CaptchaError: () => o,
+  emitCaptchaDistributionMetric: () => p,
+  extractCaptchaPropsFromResponse: () => i
 }), require("./415506.js");
-var n, Chunk644947 = require("./644947.js"),
+var c, Chunk644947 = require("./644947.js"),
   Chunk234888 = require("./234888.js"),
-  s = ((n = {}).CANCEL = "cancel", n.ERROR = "error", n.EXPIRED = "expired", n);
+  o = ((c = {}).CANCEL = "cancel", c.ERROR = "error", c.EXPIRED = "expired", c);
 
-function l(e) {
+function i(e) {
   var t;
   return {
     captchaService: e.captcha_service,
@@ -25,10 +25,10 @@ function l(e) {
   }
 }
 
-function i(e) {
-  (0, o._8)() && setTimeout(() => (0, o.Zq)(), a.i), (0, o.s$)(e)
+function p(e) {
+  (0, a._8)() && setTimeout(() => (0, a.Zq)(), n.i), (0, a.s$)(e)
 }
-class c extends Error {
+class s extends Error {
   constructor() {
     super("Captcha cancelled")
   }

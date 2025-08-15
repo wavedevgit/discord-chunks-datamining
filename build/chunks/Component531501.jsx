@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk44792 = require("./44792.js");
 
 function s(e) {
@@ -17,9 +17,9 @@ function s(e) {
     color: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(a.container, n),
+    className: a()(o.container, n),
     children: [(0, r.jsxs)("svg", {
-      className: a.border,
+      className: o.border,
       width: "48",
       height: "48",
       viewBox: "0 0 48 48",

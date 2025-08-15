@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   EO: () => G,
-  LY: () => j,
+  LY: () => k,
   Nj: () => Chunk90463.Z,
   a5: () => x,
   c4: () => L,
@@ -14,7 +14,7 @@ require.d(exports, {
   rX: () => C,
   rY: () => P,
   rt: () => R,
-  wR: () => k,
+  wR: () => j,
   wl: () => M
 }), require("./415506.js"), require("./539854.js"), require("./388685.js");
 var Chunk149765 = require("./149765.js"),
@@ -67,10 +67,10 @@ function S(e, t, n) {
 
 function A(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
-    o = [];
-  return (n.length > 0 || r) && o.push(T(e, t, i.BN.ROLE)), n.forEach(e => {
-    o.push(S(e, t, i.BN.ROLE))
-  }), o
+    a = [];
+  return (n.length > 0 || r) && a.push(T(e, t, i.BN.ROLE)), n.forEach(e => {
+    a.push(S(e, t, i.BN.ROLE))
+  }), a
 }
 
 function N(e, t) {
@@ -92,15 +92,15 @@ function R(e) {
 
 function P(e, t, n) {
   var r, i;
-  let o = e.getGuildId(),
-    s = n.getGuild(o),
+  let a = e.getGuildId(),
+    s = n.getGuild(a),
     l = null != (r = null == s ? true : s.maxVideoChannelUsers) ? r : false,
     c = null != (i = null == s ? true : s.maxStageVideoChannelUsers) ? i : false,
     u = p.ZP.countVoiceStatesForChannel(e.id),
     d = p.ZP.getVoiceStatesForChannel(e),
     _ = f.Z.can(g.Plq.MOVE_MEMBERS, e) && f.Z.can(g.Plq.CONNECT, e),
     h = false;
-  h = e.type === v ? null != o && (t.hasVideo(e.id) || (0, a.a)(d)) && c > 0 && u >= c : null != o && t.hasVideo(e.id) && l > 0 && u >= l + +!!_;
+  h = e.type === v ? null != a && (t.hasVideo(e.id) || (0, o.a)(d)) && c > 0 && u >= c : null != a && t.hasVideo(e.id) && l > 0 && u >= l + +!!_;
   let m = e.userLimit > 0 && u >= e.userLimit;
   return h || m && !_
 }
@@ -115,14 +115,14 @@ function D(e) {
     selectedChannelId: n,
     selectedVoiceChannelId: r,
     voiceStates: i
-  } = e, o = [];
+  } = e, a = [];
   return t.forEach(e => {
     if (e.id === r || e.id === n) return;
     let t = i[e.id];
     null != t && (e.isGuildStageVoice() ? t.forEach(e => {
-      (0, l.gf)(e.voiceState) === l.xO.ON_STAGE && o.push(e)
-    }) : t.forEach(e => o.push(e)))
-  }), o
+      (0, l.gf)(e.voiceState) === l.xO.ON_STAGE && a.push(e)
+    }) : t.forEach(e => a.push(e)))
+  }), a
 }
 
 function L(e) {
@@ -181,7 +181,7 @@ function M(e) {
   else if (c.sR.has(e.type)) return "text"
 }
 
-function j(e) {
+function k(e) {
   let t, n = u.Z.getChannel(_.Z.getLastSelectedChannelId());
   if (null != n && n.getGuildId() === e && n.type === g.d4z.GUILD_TEXT) t = n.id;
   else {
@@ -191,19 +191,19 @@ function j(e) {
   return g.Z5c.CHANNEL(e, t)
 }
 
-function k(e, t, n, r) {
+function j(e, t, n, r) {
   let i = null == r ? "" : "?summaryId=".concat(r);
   return "".concat(location.protocol, "//").concat(location.host).concat(g.Z5c.CHANNEL(e, t, n)).concat(i)
 }
 
 function U(e, t, n, r) {
-  return null == e || null == t || null == n ? k(e, t, r) : "".concat(location.protocol, "//").concat(location.host).concat(g.Z5c.CHANNEL_THREAD_VIEW(e, t, n, r))
+  return null == e || null == t || null == n ? j(e, t, r) : "".concat(location.protocol, "//").concat(location.host).concat(g.Z5c.CHANNEL_THREAD_VIEW(e, t, n, r))
 }
 
 function G(e, t, n, r) {
-  let i, o = e.getGuildId(),
-    a = (0, s.BC)(o, t);
-  return null != t && a ? U(o, t.id, e.id, m.default.castChannelIdAsMessageId(e.id)) : null != r ? r : k(o, e.id, n)
+  let i, a = e.getGuildId(),
+    o = (0, s.BC)(a, t);
+  return null != t && o ? U(a, t.id, e.id, m.default.castChannelIdAsMessageId(e.id)) : null != r ? r : j(a, e.id, n)
 }
 
 function B(e) {

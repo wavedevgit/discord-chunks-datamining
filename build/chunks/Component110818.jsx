@@ -7,7 +7,7 @@ require.d(exports, {
   NQ: () => E,
   fe: () => x
 }), require("./388685.js");
-var r, i, o, a, Chunk255367 = require("./255367.js"),
+var r, i, a, o, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   u = require.n(Chunk120356),
@@ -76,7 +76,7 @@ class E extends(r = Chunk73800.PureComponent) {
       onScenePlay: n,
       onSceneComplete: r,
       pause: i,
-      pauseWhileUnfocused: o
+      pauseWhileUnfocused: a
     } = this.props;
     return (0, Chunk255367.jsx)(Chunk481060.kci, {
       className: u()(Chunk298185.sequencedAnimation, module),
@@ -85,7 +85,7 @@ class E extends(r = Chunk73800.PureComponent) {
       sceneSegments: g,
       onScenePlay: require,
       onSceneComplete: r,
-      pauseWhileUnfocused: o,
+      pauseWhileUnfocused: a,
       pause: i
     })
   }
@@ -143,7 +143,7 @@ class O extends(i = Chunk73800.PureComponent) {
       onScenePlay: n,
       onSceneComplete: r,
       pause: i,
-      pauseWhileUnfocused: o
+      pauseWhileUnfocused: a
     } = this.props;
     return (0, Chunk255367.jsx)(Chunk481060.kci, {
       className: u()(Chunk298185.sequencedAnimation, module),
@@ -152,7 +152,7 @@ class O extends(i = Chunk73800.PureComponent) {
       sceneSegments: y,
       onScenePlay: require,
       onSceneComplete: r,
-      pauseWhileUnfocused: o,
+      pauseWhileUnfocused: a,
       pause: i
     })
   }
@@ -249,7 +249,7 @@ let S = Object.freeze({
     }
   }),
   A = 1.2;
-class N extends(o = Chunk73800.PureComponent) {
+class N extends(a = Chunk73800.PureComponent) {
   static getNextScene(e) {
     switch (e) {
       case N.Scenes.IDLE_ENTRY:
@@ -460,22 +460,22 @@ function L(e) {
   let {
     animate: t
   } = e, [n, r] = l.useState(0), i = (0, _.bYB)(w.length, w.map((e, i) => {
-    let o = i > 0 ? D.DELAY_STAGGER * i + Math.random() * (D.DELAY_MAX - D.DELAY_MIN) + D.DELAY_MIN : 0,
-      a = Math.random() * (D.SIZE_MAX - D.SIZE_MIN) + D.SIZE_MIN;
+    let a = i > 0 ? D.DELAY_STAGGER * i + Math.random() * (D.DELAY_MAX - D.DELAY_MIN) + D.DELAY_MIN : 0,
+      o = Math.random() * (D.SIZE_MAX - D.SIZE_MIN) + D.SIZE_MIN;
     return {
       from: {
         scale: D.SCALE_INITIAL,
         rotate: D.ROTATE_INITIAL,
         top: e.top,
         left: e.left,
-        width: a,
-        height: a
+        width: o,
+        height: o
       },
       to: async e => {
         t ? (await e({
           scale: D.SCALE_MIDDLE,
           rotate: D.ROTATE_MIDDLE,
-          delay: o,
+          delay: a,
           config: {
             duration: D.DURATION_MIDDLE,
             easing: D.EASING_MIDDLE
@@ -514,7 +514,7 @@ function L(e) {
     })
   })
 }
-class x extends(a = Chunk73800.PureComponent) {
+class x extends(o = Chunk73800.PureComponent) {
   static getNextScene(e) {
     switch (e) {
       case "entry":
@@ -540,7 +540,7 @@ class x extends(a = Chunk73800.PureComponent) {
       pause: n,
       onScenePlay: r,
       onSceneComplete: i,
-      pauseWhileUnfocused: o
+      pauseWhileUnfocused: a
     } = this.props;
     return (0, Chunk255367.jsxs)("div", {
       className: u()(Chunk298185.guildWrapper, module),
@@ -551,7 +551,7 @@ class x extends(a = Chunk73800.PureComponent) {
         sceneSegments: R,
         onScenePlay: r,
         onSceneComplete: i,
-        pauseWhileUnfocused: o,
+        pauseWhileUnfocused: a,
         pause: require
       }), (0, Chunk255367.jsx)(L, {
         animate: !require && "stars" === exports

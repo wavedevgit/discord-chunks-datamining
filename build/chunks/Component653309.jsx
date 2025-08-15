@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk887490 = require("./887490.js"),
   Chunk12888 = require("./12888.js"),
   Chunk953782 = require("./953782.js"),
@@ -62,7 +62,7 @@ let p = {
   url: Chunk12888.fakeLink,
   autolink: Chunk12888.fakeLink,
   silentPrefix: Chunk12888.fakeLink,
-  spoiler: o()(Chunk926095.spoilerContent, Chunk926095.spoilerMarkdownContent, Chunk926095.obscuredTextContent, Chunk12888.spoiler),
+  spoiler: a()(Chunk926095.spoilerContent, Chunk926095.spoilerMarkdownContent, Chunk926095.obscuredTextContent, Chunk12888.spoiler),
   staticRouteLink: Chunk12888.fakeLink,
   syntaxBefore: Chunk12888.syntaxBefore,
   syntaxAfter: Chunk12888.syntaxAfter,
@@ -80,8 +80,8 @@ function h(e, t) {
       text: f
     } = t,
     h = false,
-    [m] = a.bN.node(e, a.C0.parent(a.bN.findPath(e, f)));
-  switch (a.bN.isEditor(m) ? "editor" : m.type) {
+    [m] = o.bN.node(e, o.C0.parent(o.bN.findPath(e, f)));
+  switch (o.bN.isEditor(m) ? "editor" : m.type) {
     case "line":
     case "blockQuote": {
       h = true;
@@ -97,12 +97,12 @@ function h(e, t) {
           throw Error("Slate: Unknown decoration attribute: ".concat(t))
         }
       }).filter(e => null != e).join(" ");
-      n = o()(e, {
+      n = a()(e, {
         [s.syntaxOverride]: "||" === u.text || "\\" === u.text
       })
     }
   }
-  return n = o()(n, {
+  return n = a()(n, {
     [l.emptyText]: "" === f.text
   }), (0, r.jsx)("span", _(d({}, i), {
     className: n,

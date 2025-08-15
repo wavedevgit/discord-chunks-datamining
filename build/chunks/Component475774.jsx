@@ -9,7 +9,7 @@ require("./73800.js");
 var Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -34,17 +34,17 @@ async function l(e) {
   let t = await (0, i.ZDy)(async () => {
     let {
       default: t
-    } = await n.e("57650").then(n.bind(n, 677012));
+    } = await Promise.all([n.e("8739"), n.e("60301")]).then(n.bind(n, 677012));
     return n => (0, r.jsx)(t, s({}, n, e))
   }, {
     onCloseCallback: () => {
-      o.Z.dispatch({
+      a.Z.dispatch({
         type: "INTERACTION_IFRAME_MODAL_CLOSE",
         applicationId: e.application.id
       })
     }
   });
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "INTERACTION_IFRAME_MODAL_KEY_CREATE",
     modalKey: t
   })

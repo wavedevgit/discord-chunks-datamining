@@ -1,7 +1,7 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 986035, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 }), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -12,55 +12,55 @@ var Chunk255367 = require("./255367.js"),
   Chunk480916 = require("./480916.js"),
   Chunk469438 = require("./469438.js"),
   Chunk197571 = require("./197571.js");
-let h = function(e) {
+let p = function(e) {
   let {
     title: t,
     description: n,
     agreement: l,
-    disagreement: h,
-    onAgree: p,
+    disagreement: p,
+    onAgree: h,
     onDisagree: f,
-    imageClassName: g,
-    agreementButtonColor: m = s.zx.Colors.RED,
+    imageClassName: m,
+    agreementButtonColor: g = o.zx.Colors.RED,
     modalType: b,
     channelId: y,
-    guildId: x
+    guildId: _
   } = e;
   i.useEffect(() => {
-    (0, c.YT)(b, y, x)
-  }, [b, y, x]);
-  let j = i.useCallback(() => {
-      (0, c.qd)(c.iP.NSFW_CHANNEL_DISAGREE_CTA, b, y, x), null == f || f()
-    }, [f, b, y, x]),
-    _ = i.useCallback(() => {
-      (0, c.qd)(c.iP.NSFW_CHANNEL_AGREE_CTA, b, y, x), null == p || p()
-    }, [p, b, y, x]);
-  return (0, r.jsxs)(o.Kqy, {
+    (0, c.YT)(b, y, _)
+  }, [b, y, _]);
+  let C = i.useCallback(() => {
+      (0, c.qd)(c.iP.NSFW_CHANNEL_DISAGREE_CTA, b, y, _), null == f || f()
+    }, [f, b, y, _]),
+    x = i.useCallback(() => {
+      (0, c.qd)(c.iP.NSFW_CHANNEL_AGREE_CTA, b, y, _), null == h || h()
+    }, [h, b, y, _]);
+  return (0, r.jsxs)(s.Kqy, {
     className: u.gatedContent,
     justify: "center",
     align: "center",
     direction: "vertical",
     children: [(0, r.jsx)("div", {
-      className: a()(u.image, g)
+      className: a()(u.image, m)
     }), (0, r.jsx)("div", {
       className: a()(u.title, d.marginBottom8),
       children: t
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       className: a()(u.description, d.marginBottom20),
       children: n
-    }), (0, r.jsxs)(o.Kqy, {
+    }), (0, r.jsxs)(s.Kqy, {
       direction: "horizontal",
       justify: "center",
       align: "center",
       gap: 16,
-      children: [null != h && null != f ? (0, r.jsx)(o.zxk, {
+      children: [null != p && null != f ? (0, r.jsx)(s.zxk, {
         variant: "secondary",
-        text: h,
-        onClick: j
-      }) : null, null != l && null != p ? (0, r.jsx)(s.zx, {
-        color: m,
-        onClick: _,
+        text: p,
+        onClick: C
+      }) : null, null != l && null != h ? (0, r.jsx)(o.zx, {
+        color: g,
+        onClick: x,
         children: l
       }) : null]
     })]

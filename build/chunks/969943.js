@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Oe: () => r,
-  fx: () => o,
+  fx: () => a,
   mX: () => i
 });
 var r = function(e) {
@@ -12,6 +12,6 @@ var r = function(e) {
   i = function(e) {
     return e.REDUCED_MOTION = "REDUCED_MOTION", e.REDUCED_MOTION_STICKERS = "REDUCED_MOTION_STICKERS", e
   }({}),
-  o = function(e) {
+  a = function(e) {
     return e.AUTO = "auto", e.COMPACT = "compact", e.COZY = "cozy", e
   }({})

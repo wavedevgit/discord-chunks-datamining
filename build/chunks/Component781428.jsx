@@ -127,11 +127,11 @@ class X extends(r = Chunk73800.PureComponent) {
       handoffAvailable: i
     } = this.props, {
       checkingHandoff: l,
-      redirecting: o
+      redirecting: a
     } = this.state;
-    if (!n || e.authenticated || l && (i || o) || (this.state.conditionalMediationAbortController.abort(), this.loginOrSSO(n, r)), t.errors !== this.state.errors) {
-      var s, a, c;
-      this.hasError("password") ? null == (s = this.passwordRef) || s.focus() : this.hasError("email") || this.hasError("login") ? null == (a = this.loginRef) || a.focus() : this.hasError("code") && (null == (c = this.codeRef) || c.focus())
+    if (!n || e.authenticated || l && (i || a) || (this.state.conditionalMediationAbortController.abort(), this.loginOrSSO(n, r)), t.errors !== this.state.errors) {
+      var s, o, c;
+      this.hasError("password") ? null == (s = this.passwordRef) || s.focus() : this.hasError("email") || this.hasError("login") ? null == (o = this.loginRef) || o.focus() : this.hasError("code") && (null == (c = this.codeRef) || c.focus())
     }
   }
   get loginSource() {
@@ -172,7 +172,7 @@ class X extends(r = Chunk73800.PureComponent) {
       transitionTo: t,
       redirectTo: n,
       replaceWith: r
-    } = this.props, i = null != e ? (0, a.parse)(e.search) : {};
+    } = this.props, i = null != e ? (0, o.parse)(e.search) : {};
     if (delete i.redirect_to, null != n) null != r ? r(n) : t(n);
     else if (null == i.service) t(G.Z5c.APP);
     else {
@@ -180,7 +180,7 @@ class X extends(r = Chunk73800.PureComponent) {
         t = Y(q({}, i), {
           token: P.default.getToken()
         });
-      window.location = "".concat(e, "?").concat((0, a.stringify)(t))
+      window.location = "".concat(e, "?").concat((0, o.stringify)(t))
     }
   }
   hasError(e) {
@@ -330,14 +330,14 @@ class X extends(r = Chunk73800.PureComponent) {
     let n, {
         invite: r,
         giftCode: l,
-        loginStatus: o,
-        country: a,
+        loginStatus: a,
+        country: o,
         showMobileWebHandoff: c,
         disableAutofocusOnDefaultForm: u
       } = this.props,
       h = !this.hasError("email") && this.hasError("password"),
       p = (null == r ? true : r.stage_instance) != null;
-    return n = null == r || p ? null != l ? (0, i.jsx)(B.Z, {
+    return n = null == r || p ? null != l ? (0, i.jsx)(M.Z, {
       giftCode: l
     }) : (0, i.jsxs)("div", {
       className: H.header,
@@ -347,7 +347,7 @@ class X extends(r = Chunk73800.PureComponent) {
       }, "title"), false === (0, k.isAndroidWeb)() ? (0, i.jsx)(_.DK, {
         children: V.intl.string(V.t.euS7r6)
       }, "subtitle") : null]
-    }) : (0, i.jsx)(M.Z, {
+    }) : (0, i.jsx)(B.Z, {
       invite: r
     }), (0, i.jsxs)(b.Z, {
       direction: b.Z.Direction.HORIZONTAL,
@@ -378,8 +378,8 @@ class X extends(r = Chunk73800.PureComponent) {
           children: (0, i.jsxs)(_.gO, {
             className: K.marginTop20,
             children: [(0, i.jsx)(C.Z, {
-              alpha2: a.alpha2,
-              countryCode: a.code.split(" ")[0],
+              alpha2: o.alpha2,
+              countryCode: o.code.split(" ")[0],
               className: K.marginBottom20,
               label: V.intl.string(V.t.tUjnxs),
               error: null != (t = this.renderError("login")) ? t : this.renderError("email"),
@@ -417,7 +417,7 @@ class X extends(r = Chunk73800.PureComponent) {
               children: V.intl.string(V.t.wWIufn)
             }), (0, i.jsx)(_.zx, {
               type: "submit",
-              submitting: o === G.u34.LOGGING_IN,
+              submitting: a === G.u34.LOGGING_IN,
               color: p ? _.zx.Colors.GREEN : _.zx.Colors.BRAND,
               className: K.marginBottom8,
               children: p ? V.intl.string(V.t.wvVThI) : V.intl.string(V.t.dKhVQE)
@@ -465,7 +465,7 @@ class X extends(r = Chunk73800.PureComponent) {
       onSubmit: this.handleLogin,
       tag: "form",
       className: s()(this.props.authBoxClassName, H.horizontalAuthBox),
-      children: () => [(0, i.jsx)(v.Z, {
+      children: () => [(0, i.jsx)(E.Z, {
         guildTemplate: e
       }, "template"), this.renderDefaultForm(false)]
     })
@@ -549,7 +549,7 @@ class X extends(r = Chunk73800.PureComponent) {
       loginStatus: r,
       handoffAvailable: l
     } = this.props, {
-      checkingHandoff: o,
+      checkingHandoff: a,
       redirecting: s
     } = this.state;
     if (s || Chunk120356) return (0, Chunk255367.jsx)(J, {});
@@ -634,7 +634,7 @@ class X extends(r = Chunk73800.PureComponent) {
           invite: this.props.invite
         })
       } catch (t) {
-        let e = (0, g.p)(t);
+        let e = (0, f.p)(t);
         this.setState({
           errors: e
         })
@@ -666,7 +666,7 @@ class X extends(r = Chunk73800.PureComponent) {
           token: n
         } = await N.Z.verifyPhone(this.getFullLogin(), e, false);
         t(G.Z5c.RESET, {
-          search: (0, a.stringify)({
+          search: (0, o.stringify)({
             token: n,
             from_login: "true"
           })
@@ -711,7 +711,7 @@ class X extends(r = Chunk73800.PureComponent) {
           })
         })))
       } catch (t) {
-        let e = (0, g.p)(t);
+        let e = (0, f.p)(t);
         this.setState({
           errors: e
         })
@@ -743,15 +743,15 @@ class X extends(r = Chunk73800.PureComponent) {
           giftCode: r,
           guildTemplate: i,
           location: l,
-          transitionTo: o,
+          transitionTo: a,
           redirectTo: s
         } = this.props,
-        c = null != l ? (0, a.parse)(l.search) : {};
-      "" !== t && (c.email = t), null != n ? (c.mode = "register", e = G.Z5c.INVITE(n.code)) : null != r ? (c.mode = "register", e = G.Z5c.GIFT_CODE(r.code)) : null != i ? e = G.Z5c.GUILD_TEMPLATE(i.code) : null != s ? (e = G.Z5c.REGISTER, c.redirect_to = s) : e = G.Z5c.REGISTER, this.loginReset(), o(e, {
-        search: (0, a.stringify)(c)
+        c = null != l ? (0, o.parse)(l.search) : {};
+      "" !== t && (c.email = t), null != n ? (c.mode = "register", e = G.Z5c.INVITE(n.code)) : null != r ? (c.mode = "register", e = G.Z5c.GIFT_CODE(r.code)) : null != i ? e = G.Z5c.GUILD_TEMPLATE(i.code) : null != s ? (e = G.Z5c.REGISTER, c.redirect_to = s) : e = G.Z5c.REGISTER, this.loginReset(), a(e, {
+        search: (0, o.stringify)(c)
       }), D.S.dispatch(G.CkL.WAVE_EMPHASIZE)
     });
-    let r = null != e.location ? (0, a.parse)(e.location.search) : {};
+    let r = null != e.location ? (0, o.parse)(e.location.search) : {};
     this.state = {
       redirecting: e.authenticated,
       checkingHandoff: e.handoffAvailable,
@@ -772,7 +772,7 @@ W(X, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
 let Q = function(e) {
-  let t = (0, u.cj)([R.Z, w.Z, P.default, O.Z, y.Z], () => ({
+  let t = (0, u.cj)([R.Z, w.Z, P.default, y.Z, S.Z], () => ({
     authenticated: P.default.isAuthenticated(),
     handoffAvailable: R.Z.isHandoffAvailable(),
     user: R.Z.user,
@@ -780,8 +780,8 @@ let Q = function(e) {
     mfaTicket: P.default.getMFATicket(),
     mfaMethods: P.default.getMFAMethods(),
     defaultRoute: w.Z.defaultRoute,
-    country: y.Z.getCountryCode(),
-    hasLoggedInAccounts: O.Z.getHasLoggedInAccounts()
+    country: S.Z.getCountryCode(),
+    hasLoggedInAccounts: y.Z.getHasLoggedInAccounts()
   }));
   return (0, i.jsx)(X, q({}, e, t))
 }

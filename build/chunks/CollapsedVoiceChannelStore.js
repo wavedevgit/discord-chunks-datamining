@@ -1,14 +1,15 @@
-/** Chunk was on 62117 **/
+/** Chunk was on 81498 **/
 /** chunk id: 58468, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 }), require("./388685.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk709054 = require("./709054.js"),
   Chunk592125 = require("./592125.js");
 
-function d(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,47 +17,47 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = {},
-  h = o;
+let u = {},
+  c = u;
 
-function u() {
-  Chunk709054.default.keys(h).forEach(e => {
-    null == a.Z.getChannel(e) && delete h[e]
+function d() {
+  Chunk709054.default.keys(c).forEach(e => {
+    null == o.Z.getChannel(e) && delete c[e]
   })
 }
-class c extends(i = Chunk442837.ZP.PersistedStore) {
+class h extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(a.Z), h = null != e ? e : o
+    this.waitFor(o.Z), c = null != e ? e : u
   }
   getState() {
-    return h
+    return c
   }
   getCollapsed() {
-    return h
+    return c
   }
   isCollapsed(e) {
-    return h[e] || false
+    return c[e] || false
   }
 }
-d(c, "displayName", "CollapsedVoiceChannelStore"), d(c, "persistKey", "collapsedChannels");
-let g = new c(Chunk570140.Z, {
-  CONNECTION_OPEN: u,
-  OVERLAY_INITIALIZE: u,
+a(h, "displayName", "CollapsedVoiceChannelStore"), a(h, "persistKey", "collapsedChannels");
+let p = new h(Chunk570140.Z, {
+  CONNECTION_OPEN: d,
+  OVERLAY_INITIALIZE: d,
   CHANNEL_COLLAPSE: function(e) {
     let {
       channelId: t
     } = e;
-    h[t] ? delete h[t] : h[t] = true, h = function(e) {
+    c[t] ? delete c[t] : c[t] = true, c = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), i.forEach(function(t) {
-          d(e, t, n[t])
+          a(e, t, n[t])
         })
       }
       return e
-    }({}, h)
+    }({}, c)
   }
 })

@@ -90,14 +90,14 @@ class S {
       filters: n,
       blacklist: r,
       boosters: i,
-      boosterFallback: o
+      boosterFallback: a
     } = e;
     this._nextQuery = {
       query: t,
       filters: n,
       blacklist: r,
       boosters: null != i ? i : {},
-      boosterFallback: null != o ? o : 1,
+      boosterFallback: null != a ? a : 1,
       limit: this._limit
     }, this._setNextQuery()
   }
@@ -112,7 +112,7 @@ class S {
     b(this, "_worker", true), b(this, "_uuid", true), b(this, "_callback", true), b(this, "_limit", true), b(this, "_currentQuery", true), b(this, "_nextQuery", true), b(this, "_subscribed", true), b(this, "handleMessages", e => {
       let t = e.data;
       null != t && "USER_RESULTS" === t.type && t.uuid === this._uuid && (false !== this._currentQuery && this._callback(t.payload), null != this._currentQuery && (this._currentQuery = null), this._setNextQuery())
-    }), this._worker = e, this._uuid = (0, o.Z)(), this._callback = t, this._limit = n, this._currentQuery = null, this._nextQuery = null, this._subscribed = false, this.subscribe()
+    }), this._worker = e, this._uuid = (0, a.Z)(), this._callback = t, this._limit = n, this._currentQuery = null, this._nextQuery = null, this._subscribed = false, this.subscribe()
   }
 }
 class A extends Chunk147913.Z {
@@ -196,10 +196,10 @@ class A extends Chunk147913.Z {
         let r = u.ZP.getMutableAllGuildsAndMembers();
         for (let e in r)
           for (let t in r[e]) {
-            var i, o;
-            let a = n[t],
-              s = null != (o = null == (i = r[e][t]) ? true : i.nick) ? o : g.ZP.getGlobalName(a);
-            null != a && v(a, e, s)
+            var i, a;
+            let o = n[t],
+              s = null != (a = null == (i = r[e][t]) ? true : i.nick) ? a : g.ZP.getGlobalName(o);
+            null != o && v(o, e, s)
           }
         this.updateUsers(Object.values(n), "connection_open")
       }, 3e3)
@@ -235,8 +235,8 @@ class A extends Chunk147913.Z {
         if (null != t)
           for (let n of m.default.keys(t)) {
             let i = r.get(n),
-              o = t[n];
-            null != i && null != o && null != o.nick && (v(i, e, o.nick), r.set(n, i))
+              a = t[n];
+            null != i && null != a && null != a.nick && (v(i, e, a.nick), r.set(n, i))
           }
       }
       this.updateUsers(Array.from(r.values()), "overlay_initialize"), r.clear()

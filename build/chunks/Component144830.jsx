@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
-/** chunk id: 144830, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 144830, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => h
 }), require("./415506.js"), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
+var r, i, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk379649 = require("./379649.js"),
   Chunk846519 = require("./846519.js"),
   Chunk388032 = require("./388032.jsx");
 
-function l(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,94 +18,55 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 
-function c(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      l(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
-
-function u(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function d(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function f(e, t) {
-  if (null == e) return {};
-  var n, r, i = _(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function _(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-var p = function(e) {
-    return e.ACTIVITY_FEED = "ACTIVITY_FEED", e.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", e.USER_ACTIVITY = "USER_ACTIVITY", e.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", e.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", e
-  }(p || {}),
-  h = function(e) {
-    return e.START = "START", e.END = "END", e.TIME = "TIME", e
-  }(h || {});
-let m = e => (t, n) => null == n ? "" : s.intl.format(e(), c({
+var f = ((r = f || {}).ACTIVITY_FEED = "ACTIVITY_FEED", r.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", r.USER_ACTIVITY = "USER_ACTIVITY", r.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", r.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", r),
+  p = ((i = p || {}).START = "START", i.END = "END", i.TIME = "TIME", i);
+let m = e => (t, n) => null == n ? "" : c.intl.format(e(), d({
     time: t
   }, n)),
   g = {
     ACTIVITY_FEED: {
       START: {
         [Chunk379649.J6.SECONDS]: () => Chunk388032.intl.string(Chunk388032.t.ahzZr6),
-        [Chunk379649.J6.MINUTES]: e => s.intl.formatToPlainString(s.t["03mIHR"], {
+        [Chunk379649.J6.MINUTES]: e => c.intl.formatToPlainString(c.t["03mIHR"], {
           time: e
         }),
-        [Chunk379649.J6.HOURS]: e => s.intl.formatToPlainString(s.t.eNoooa, {
+        [Chunk379649.J6.HOURS]: e => c.intl.formatToPlainString(c.t.eNoooa, {
           time: e
         }),
-        [Chunk379649.J6.DAYS]: e => s.intl.formatToPlainString(s.t["2rUo/v"], {
+        [Chunk379649.J6.DAYS]: e => c.intl.formatToPlainString(c.t["2rUo/v"], {
           time: e
         })
       },
       END: {
         [Chunk379649.J6.SECONDS]: () => Chunk388032.intl.string(Chunk388032.t.EluAd3),
-        [Chunk379649.J6.MINUTES]: e => s.intl.formatToPlainString(s.t.BZxG8f, {
+        [Chunk379649.J6.MINUTES]: e => c.intl.formatToPlainString(c.t.BZxG8f, {
           time: e
         }),
-        [Chunk379649.J6.HOURS]: e => s.intl.formatToPlainString(s.t.cRMUp6, {
+        [Chunk379649.J6.HOURS]: e => c.intl.formatToPlainString(c.t.cRMUp6, {
           time: e
         }),
-        [Chunk379649.J6.DAYS]: e => s.intl.formatToPlainString(s.t["yP1T8/"], {
+        [Chunk379649.J6.DAYS]: e => c.intl.formatToPlainString(c.t["yP1T8/"], {
           time: e
         }),
-        [Chunk379649.J6.WEEKS]: e => s.intl.formatToPlainString(s.t.AWkdqa, {
+        [Chunk379649.J6.WEEKS]: e => c.intl.formatToPlainString(c.t.AWkdqa, {
           time: e
         }),
-        [Chunk379649.J6.MONTHS]: e => s.intl.formatToPlainString(s.t.upamAw, {
+        [Chunk379649.J6.MONTHS]: e => c.intl.formatToPlainString(c.t.upamAw, {
           time: e
         }),
-        [Chunk379649.J6.YEARS]: e => s.intl.formatToPlainString(s.t.vfMC2t, {
+        [Chunk379649.J6.YEARS]: e => c.intl.formatToPlainString(c.t.vfMC2t, {
           time: e
         })
       }
@@ -119,16 +79,16 @@ let m = e => (t, n) => null == n ? "" : s.intl.format(e(), c({
         [Chunk379649.J6.DAYS]: m(() => Chunk388032.t.hbUpBA)
       },
       END: {
-        [Chunk379649.J6.SECONDS]: e => s.intl.formatToPlainString(s.t.C3MTOD, {
+        [Chunk379649.J6.SECONDS]: e => c.intl.formatToPlainString(c.t.C3MTOD, {
           seconds: e
         }),
-        [Chunk379649.J6.MINUTES]: e => s.intl.formatToPlainString(s.t["GqQ/Y2"], {
+        [Chunk379649.J6.MINUTES]: e => c.intl.formatToPlainString(c.t["GqQ/Y2"], {
           minutes: e
         }),
-        [Chunk379649.J6.HOURS]: e => s.intl.formatToPlainString(s.t.c5zfWV, {
+        [Chunk379649.J6.HOURS]: e => c.intl.formatToPlainString(c.t.c5zfWV, {
           hours: e
         }),
-        [Chunk379649.J6.DAYS]: e => s.intl.formatToPlainString(s.t.amjnaG, {
+        [Chunk379649.J6.DAYS]: e => c.intl.formatToPlainString(c.t.amjnaG, {
           days: e
         })
       }
@@ -138,25 +98,25 @@ let m = e => (t, n) => null == n ? "" : s.intl.format(e(), c({
         [Chunk379649.J6.SECONDS]: () => Chunk388032.intl.string(Chunk388032.t.ahzZr6),
         [Chunk379649.J6.MINUTES]: function(e, t) {
           let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-          return n ? s.intl.formatToPlainString(s.t["03mIHR"], {
+          return n ? c.intl.formatToPlainString(c.t["03mIHR"], {
             time: e
-          }) : s.intl.formatToPlainString(s.t["vQml+P"], {
+          }) : c.intl.formatToPlainString(c.t["vQml+P"], {
             time: e
           })
         },
         [Chunk379649.J6.HOURS]: function(e, t) {
           let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-          return n ? s.intl.formatToPlainString(s.t.eNoooa, {
+          return n ? c.intl.formatToPlainString(c.t.eNoooa, {
             time: e
-          }) : s.intl.formatToPlainString(s.t["4Wq+6+"], {
+          }) : c.intl.formatToPlainString(c.t["4Wq+6+"], {
             time: e
           })
         },
         [Chunk379649.J6.DAYS]: function(e, t) {
           let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-          return n ? s.intl.formatToPlainString(s.t["2rUo/v"], {
+          return n ? c.intl.formatToPlainString(c.t["2rUo/v"], {
             time: e
-          }) : s.intl.formatToPlainString(s.t["jN3/fX"], {
+          }) : c.intl.formatToPlainString(c.t["jN3/fX"], {
             time: e
           })
         }
@@ -165,13 +125,13 @@ let m = e => (t, n) => null == n ? "" : s.intl.format(e(), c({
     GAME_LIBRARY_TIME_PLAYED: {
       TIME: {
         [Chunk379649.J6.NONE]: () => Chunk388032.intl.string(Chunk388032.t.LqDiCg),
-        [Chunk379649.J6.SECONDS]: e => s.intl.formatToPlainString(s.t.xDIDBA, {
+        [Chunk379649.J6.SECONDS]: e => c.intl.formatToPlainString(c.t.xDIDBA, {
           time: e
         }),
-        [Chunk379649.J6.MINUTES]: e => s.intl.formatToPlainString(s.t.KGqJcX, {
+        [Chunk379649.J6.MINUTES]: e => c.intl.formatToPlainString(c.t.KGqJcX, {
           time: e
         }),
-        [Chunk379649.J6.HOURS]: e => s.intl.formatToPlainString(s.t.OLchUF, {
+        [Chunk379649.J6.HOURS]: e => c.intl.formatToPlainString(c.t.OLchUF, {
           time: e
         })
       }
@@ -180,40 +140,31 @@ let m = e => (t, n) => null == n ? "" : s.intl.format(e(), c({
       END: {
         [Chunk379649.J6.NONE]: () => Chunk388032.intl.string(Chunk388032.t.EoWLrq),
         [Chunk379649.J6.SECONDS]: () => Chunk388032.intl.string(Chunk388032.t.QTHa8f),
-        [Chunk379649.J6.MINUTES]: e => s.intl.formatToPlainString(s.t.SVEfcX, {
+        [Chunk379649.J6.MINUTES]: e => c.intl.formatToPlainString(c.t.SVEfcX, {
           time: e
         }),
-        [Chunk379649.J6.HOURS]: e => s.intl.formatToPlainString(s.t["0Gbusb"], {
+        [Chunk379649.J6.HOURS]: e => c.intl.formatToPlainString(c.t["0Gbusb"], {
           time: e
         }),
-        [Chunk379649.J6.DAYS]: e => s.intl.formatToPlainString(s.t.hnPZZ2, {
+        [Chunk379649.J6.DAYS]: e => c.intl.formatToPlainString(c.t.hnPZZ2, {
           time: e
         }),
-        [Chunk379649.J6.WEEKS]: e => s.intl.formatToPlainString(s.t.L3fTpK, {
+        [Chunk379649.J6.WEEKS]: e => c.intl.formatToPlainString(c.t.L3fTpK, {
           time: e
         }),
-        [Chunk379649.J6.MONTHS]: e => s.intl.formatToPlainString(s.t.xAFWQU, {
+        [Chunk379649.J6.MONTHS]: e => c.intl.formatToPlainString(c.t.xAFWQU, {
           time: e
         }),
-        [Chunk379649.J6.YEARS]: e => s.intl.formatToPlainString(s.t["9Yr3NT"], {
+        [Chunk379649.J6.YEARS]: e => c.intl.formatToPlainString(c.t["9Yr3NT"], {
           time: e
         })
       }
     }
   };
 
-function E(e, t, n) {
-  let r = g[n];
-  if (null != r) {
-    let n = r[t];
-    if (null != n) return null != n[e]
-  }
-  returnfalse
-}
-
-function b(e) {
+function h(e) {
   var t, n;
-  return n = class extends(t = i.PureComponent) {
+  return n = class extends(t = a.PureComponent) {
     componentDidMount() {
       this.timer.start(1e4, this.update)
     }
@@ -240,7 +191,14 @@ function b(e) {
       return null != e ? i = r - e : null != t && (i = r - t), Math.abs(i) / 1e3 / 60
     }
     getTimeUnit(e, t, n) {
-      let r = (0, o.jU)(e, e => E(e, n, t));
+      let r = (0, o.jU)(e, e => (function(e, t, n) {
+        let r = g[n];
+        if (null != r) {
+          let n = r[t];
+          if (null != n) return null != n[e]
+        }
+        returnfalse
+      })(e, n, t));
       if (null == r) throw Error("Could not get the time unit in PlayTime with time: ".concat(e, " for type: ").concat(n, " in location: ").concat(t));
       return r
     }
@@ -253,35 +211,59 @@ function b(e) {
       return null != e ? "START" : null != t ? "END" : null != n ? "TIME" : null
     }
     render() {
-      let t = this.props,
+      var t, n;
+      let r = this.props,
         {
-          location: n,
-          messageProps: i,
-          isApplicationStreaming: a
-        } = t,
-        s = f(t, ["location", "messageProps", "isApplicationStreaming"]),
+          location: i,
+          messageProps: a,
+          isApplicationStreaming: s
+        } = r,
+        c = function(e, t) {
+          if (null == e) return {};
+          var n, r, i = function(e, t) {
+            if (null == e) return {};
+            var n, r, i = {},
+              l = Object.keys(e);
+            for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+            return i
+          }(e, t);
+          if (Object.getOwnPropertySymbols) {
+            var l = Object.getOwnPropertySymbols(e);
+            for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+          }
+          return i
+        }(r, ["location", "messageProps", "isApplicationStreaming"]),
         {
-          time: l
+          time: u
         } = this.state,
-        u = this.getType();
-      if (null == u) return null;
-      let _ = this.getTimeUnit(l, n, u),
-        p = g[n][u];
-      if (null == p) return null;
-      let h = p[_],
-        m = Math.floor((0, o.A3)(l, _));
-      return (0, r.jsx)(e, d(c({}, s), {
-        children: null == h ? true : h(m, i, a)
-      }))
+        f = this.getType();
+      if (null == f) return null;
+      let p = this.getTimeUnit(u, i, f),
+        m = g[i][f];
+      if (null == m) return null;
+      let h = m[p],
+        b = Math.floor((0, o.A3)(u, p));
+      return (0, l.jsx)(e, (t = d({}, c), n = n = {
+        children: null == h ? true : h(b, a, s)
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
+        }
+        return n
+      })(Object(n)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      }), t))
     }
     constructor(...e) {
-      super(...e), l(this, "timer", new a.Xp), l(this, "state", {
+      super(...e), u(this, "timer", new s.Xp), u(this, "state", {
         time: this.getDiff()
-      }), l(this, "update", () => {
+      }), u(this, "update", () => {
         this.setState({
           time: this.getDiff()
         })
       })
     }
-  }, l(n, "Locations", p), l(n, "Types", h), n
+  }, u(n, "Locations", f), u(n, "Types", p), n
 }

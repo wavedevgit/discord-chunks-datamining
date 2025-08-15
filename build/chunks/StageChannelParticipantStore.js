@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => en
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk348327 = require("./348327.js"),
-  o = require.n(Chunk348327),
+  a = require.n(Chunk348327),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -75,22 +75,22 @@ function M(e) {
   return null != e && e.isGuildStageVoice() && O.ZP.countVoiceStatesForChannel(e.id) > 0
 }
 
-function j(e, t) {
+function k(e, t) {
   let n = p.Z.getChannel(e);
   return null != n && n.isGuildStageVoice() ? 0 === t.size() ? B(n.id) : null == N.get(n.id) && N.set(n.id, n) : B(e)
 }
 
-function k(e) {
+function j(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : w();
   return t.reduce((t, n) => {
     let r = x(n);
-    return e(r) ? (j(n, r), true) : t
+    return e(r) ? (k(n, r), true) : t
   }, false)
 }
 
 function U(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : w();
-  return k(t => t.updateParticipant(e), t)
+  return j(t => t.updateParticipant(e), t)
 }
 
 function G(e) {
@@ -102,7 +102,7 @@ function B(e) {
   return null != e && (delete R[e], N.delete(e), true)
 }
 
-function Z() {
+function V() {
   C.clear(), N.clear(), R = {}
 }
 
@@ -112,7 +112,7 @@ function F(e, t, n) {
   (null == r ? true : r.isGuildStageVoice()) && (t.add(n), null == R[n] && e.add(n))
 }
 
-function V(e) {
+function Z(e) {
   let {
     voiceStates: t
   } = e, n = new Set;
@@ -194,16 +194,16 @@ function J(e) {
   } = e, n = t.reduce((e, t) => {
     if (!t.isGuildStageVoice() || !C.has(t.guild_id)) return e;
     let n = N.get(t.id);
-    return null == n || o()(t.permissionOverwrites, n.permissionOverwrites) || (e.push(t.id), N.set(t.id, t)), e
+    return null == n || a()(t.permissionOverwrites, n.permissionOverwrites) || (e.push(t.id), N.set(t.id, t)), e
   }, []);
-  return k(e => e.rebuild(), n), n.length > 0
+  return j(e => e.rebuild(), n), n.length > 0
 }
 
 function $(e) {
   let {
     guildId: t
   } = e;
-  if (C.has(t)) return k(e => e.rebuild(), w(t))
+  if (C.has(t)) return j(e => e.rebuild(), w(t))
 }
 let ee = [];
 class et extends(r = Chunk442837.ZP.Store) {
@@ -243,9 +243,9 @@ class et extends(r = Chunk442837.ZP.Store) {
 }
 S(et, "displayName", "StageChannelParticipantStore");
 let en = new et(Chunk570140.Z, {
-  CONNECTION_OPEN: Z,
-  OVERLAY_INITIALIZE: Z,
-  VOICE_STATE_UPDATES: V,
+  CONNECTION_OPEN: V,
+  OVERLAY_INITIALIZE: V,
+  VOICE_STATE_UPDATES: Z,
   CHANNEL_DELETE: Q,
   GUILD_MEMBERS_CHUNK_BATCH: H,
   USER_UPDATE: W,

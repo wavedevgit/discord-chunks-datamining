@@ -1,10 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 449168, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 449168, original params: t,e,r (module,exports,require) **/
 "use strict";
-
-function r(e, t) {
-  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
-}
 var Chunk512972 = require("./512972.js"),
   Chunk359282 = require("./359282.js"),
   Chunk879154 = require("./879154.js"),
@@ -15,89 +11,89 @@ var Chunk512972 = require("./512972.js"),
   Chunk223138 = require("./223138.js"),
   Chunk65183 = require("./65183.js"),
   Chunk555159 = require("./555159.js"),
-  p = Chunk65183.List,
-  h = Chunk65183.Record,
-  m = Chunk65183.Repeat;
-module.exports = function(e) {
-  function t() {
-    return e.apply(this, arguments) || this
+  h = Chunk65183.List,
+  d = Chunk65183.Record,
+  g = Chunk65183.Repeat;
+module.exports = function(t) {
+  function e() {
+    return t.apply(this, arguments) || this
   }
-  r(t, e);
-  var n = t.prototype;
-  return n.getEntityMap = function() {
-    return l
-  }, n.getBlockMap = function() {
+  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t;
+  var r = e.prototype;
+  return r.getEntityMap = function() {
+    return u
+  }, r.getBlockMap = function() {
     return this.get("blockMap")
-  }, n.getSelectionBefore = function() {
+  }, r.getSelectionBefore = function() {
     return this.get("selectionBefore")
-  }, n.getSelectionAfter = function() {
+  }, r.getSelectionAfter = function() {
     return this.get("selectionAfter")
-  }, n.getBlockForKey = function(e) {
-    return this.getBlockMap().get(e)
-  }, n.getKeyBefore = function(e) {
-    return this.getBlockMap().reverse().keySeq().skipUntil(function(t) {
-      return t === e
+  }, r.getBlockForKey = function(t) {
+    return this.getBlockMap().get(t)
+  }, r.getKeyBefore = function(t) {
+    return this.getBlockMap().reverse().keySeq().skipUntil(function(e) {
+      return e === t
     }).skip(1).first()
-  }, n.getKeyAfter = function(e) {
-    return this.getBlockMap().keySeq().skipUntil(function(t) {
-      return t === e
+  }, r.getKeyAfter = function(t) {
+    return this.getBlockMap().keySeq().skipUntil(function(e) {
+      return e === t
     }).skip(1).first()
-  }, n.getBlockAfter = function(e) {
-    return this.getBlockMap().skipUntil(function(t, n) {
-      return n === e
+  }, r.getBlockAfter = function(t) {
+    return this.getBlockMap().skipUntil(function(e, r) {
+      return r === t
     }).skip(1).first()
-  }, n.getBlockBefore = function(e) {
-    return this.getBlockMap().reverse().skipUntil(function(t, n) {
-      return n === e
+  }, r.getBlockBefore = function(t) {
+    return this.getBlockMap().reverse().skipUntil(function(e, r) {
+      return r === t
     }).skip(1).first()
-  }, n.getBlocksAsArray = function() {
+  }, r.getBlocksAsArray = function() {
     return this.getBlockMap().toArray()
-  }, n.getFirstBlock = function() {
+  }, r.getFirstBlock = function() {
     return this.getBlockMap().first()
-  }, n.getLastBlock = function() {
+  }, r.getLastBlock = function() {
     return this.getBlockMap().last()
-  }, n.getPlainText = function(e) {
-    return this.getBlockMap().map(function(e) {
-      return e ? e.getText() : ""
-    }).join(e || "\n")
-  }, n.getLastCreatedEntityKey = function() {
-    return l.__getLastCreatedEntityKey()
-  }, n.hasText = function() {
-    var e = this.getBlockMap();
-    return e.size > 1 || escape(e.first().getText()).replace(/%u200B/g, "").length > 0
-  }, n.createEntity = function(e, t, n) {
-    return l.__create(e, t, n), this
-  }, n.mergeEntityData = function(e, t) {
-    return l.__mergeData(e, t), this
-  }, n.replaceEntityData = function(e, t) {
-    return l.__replaceData(e, t), this
-  }, n.addEntity = function(e) {
-    return l.__add(e), this
-  }, n.getEntity = function(e) {
-    return l.__get(e)
-  }, t.createFromBlockArray = function(e, n) {
-    var r = Array.isArray(e) ? e : e.contentBlocks,
-      o = i.createFromArray(r),
-      a = o.isEmpty() ? new c : c.createEmpty(o.first().getKey());
-    return new t({
+  }, r.getPlainText = function(t) {
+    return this.getBlockMap().map(function(t) {
+      return t ? t.getText() : ""
+    }).join(t || "\n")
+  }, r.getLastCreatedEntityKey = function() {
+    return u.__getLastCreatedEntityKey()
+  }, r.hasText = function() {
+    var t = this.getBlockMap();
+    return t.size > 1 || escape(t.first().getText()).replace(/%u200B/g, "").length > 0
+  }, r.createEntity = function(t, e, r) {
+    return u.__create(t, e, r), this
+  }, r.mergeEntityData = function(t, e) {
+    return u.__mergeData(t, e), this
+  }, r.replaceEntityData = function(t, e) {
+    return u.__replaceData(t, e), this
+  }, r.addEntity = function(t) {
+    return u.__add(t), this
+  }, r.getEntity = function(t) {
+    return u.__get(t)
+  }, e.createFromBlockArray = function(t, r) {
+    var i = Array.isArray(t) ? t : t.contentBlocks,
+      o = n.createFromArray(i),
+      a = o.isEmpty() ? new s : s.createEmpty(o.first().getKey());
+    return new e({
       blockMap: o,
-      entityMap: n || l,
+      entityMap: r || u,
       selectionBefore: a,
       selectionAfter: a
     })
-  }, t.createFromText = function(e) {
-    var n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : /\r\n?|\n/g,
-      r = e.split(n).map(function(e) {
-        return e = _(e), new(d("draft_tree_data_support") ? s : a)({
-          key: u(),
-          text: e,
+  }, e.createFromText = function(t) {
+    var r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : /\r\n?|\n/g,
+      n = t.split(r).map(function(t) {
+        return t = p(t), new(l("draft_tree_data_support") ? a : o)({
+          key: c(),
+          text: t,
           type: "unstyled",
-          characterList: p(m(o.EMPTY, e.length))
+          characterList: h(g(i.EMPTY, t.length))
         })
       });
-    return t.createFromBlockArray(r)
-  }, t
-}(h({
+    return e.createFromBlockArray(n)
+  }, e
+}(d({
   entityMap: null,
   blockMap: null,
   selectionBefore: null,

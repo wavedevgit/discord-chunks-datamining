@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 627325, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 627325, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  w: () => I
+  w: () => S
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -21,28 +20,27 @@ var Chunk255367 = require("./255367.js"),
   Chunk990525 = require("./990525.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk335189 = require("./335189.js");
-let y = 130,
-  O = [51],
-  v = [Chunk388032.t.OpqAoq];
+let y = [51],
+  O = [Chunk388032.t.OpqAoq];
 
-function I(e) {
+function S(e) {
   let {
     columns: t,
     handleScroll: n,
     voiceListRef: i,
-    showSectionHeaders: o = false,
+    showSectionHeaders: l = false,
     query: a
-  } = e, s = S(), I = (0, l.e7)([f.default], () => (0, _.I5)(f.default.getCurrentUser())), A = N(a, I), C = Math.ceil(A.length / t), {
-    isNativeModuleLoaded: R,
-    isNativeModuleLoading: P,
-    catalogLastFetchTime: w
-  } = (0, l.cj)([h.Z], () => ({
-    isNativeModuleLoaded: h.Z.isNativeModuleLoaded(),
-    isNativeModuleLoading: h.Z.isNativeModuleLoading(),
-    catalogLastFetchTime: h.Z.getCatalogLastFetchTime()
+  } = e, o = j(), S = (0, s.e7)([f.default], () => (0, p.I5)(f.default.getCurrentUser())), E = x(a, S), P = Math.ceil(E.length / t), {
+    isNativeModuleLoaded: C,
+    isNativeModuleLoading: T,
+    catalogLastFetchTime: N
+  } = (0, s.cj)([g.Z], () => ({
+    isNativeModuleLoaded: g.Z.isNativeModuleLoaded(),
+    isNativeModuleLoading: g.Z.isNativeModuleLoading(),
+    catalogLastFetchTime: g.Z.getCatalogLastFetchTime()
   }));
-  return a && 0 === A.length ? (0, r.jsxs)("div", {
-    className: b.iconMessage,
+  return a && 0 === E.length ? (0, r.jsxs)("div", {
+    className: _.iconMessage,
     children: [(0, r.jsx)(u._Ve, {
       width: 40,
       height: 40,
@@ -51,10 +49,10 @@ function I(e) {
     }), (0, r.jsx)(u.X6q, {
       variant: "heading-sm/medium",
       color: "header-muted",
-      children: E.intl.string(E.t.ZzukHh)
+      children: v.intl.string(v.t.ZzukHh)
     })]
-  }) : s ? (0, r.jsxs)("div", {
-    className: b.iconMessage,
+  }) : o ? (0, r.jsxs)("div", {
+    className: _.iconMessage,
     children: [(0, r.jsx)(u.aNP, {
       width: 40,
       height: 40,
@@ -63,33 +61,33 @@ function I(e) {
     }), (0, r.jsx)(u.X6q, {
       variant: "heading-md/normal",
       color: "header-muted",
-      children: E.intl.string(E.t.DpZNJy)
+      children: v.intl.string(v.t.DpZNJy)
     }), (0, r.jsx)(u.Text, {
       variant: "text-sm/normal",
       color: "header-muted",
-      children: E.intl.format(E.t["5afO9f"], {
-        onClick: R ? m.wV : m.r5
+      children: v.intl.format(v.t["5afO9f"], {
+        onClick: C ? h.wV : h.r5
       })
     })]
-  }) : P || null == w ? (0, r.jsx)("div", {
-    className: b.loading,
+  }) : T || null == N ? (0, r.jsx)("div", {
+    className: _.loading,
     children: (0, r.jsx)(u.$jN, {
       type: u.$jN.Type.CHASING_DOTS,
       animated: true
     })
   }) : (0, r.jsx)(d.Z, {
     fade: true,
-    className: b.container,
+    className: _.container,
     renderRow: e => {
       let n = e * t,
-        i = A.slice(n, n + t);
-      return (0, r.jsx)(T, {
-        children: i.map((n, i) => (0, r.jsx)(g.J, {
+        i = E.slice(n, n + t);
+      return (0, r.jsx)(I, {
+        children: i.map((n, i) => (0, r.jsx)(b.J, {
           voiceFilter: n,
-          hasNitro: I,
+          hasNitro: S,
           analyticsContext: {
-            reason: p.W.USER_SELECTION,
-            gridRows: C,
+            reason: m.W.USER_SELECTION,
+            gridRows: P,
             gridColumns: t,
             interactedRow: e,
             interactedColumn: i
@@ -97,49 +95,47 @@ function I(e) {
         }, null == n ? true : n.id))
       }, e)
     },
-    renderSectionHeader: false === o ? true : e => (0, r.jsx)(u.Text, {
+    renderSectionHeader: false === l ? true : e => (0, r.jsx)(u.Text, {
       variant: "text-sm/medium",
       color: "header-muted",
-      className: b.header,
-      children: E.intl.string(v[e])
+      className: _.header,
+      children: v.intl.string(O[e])
     }),
-    sectionHeaderHeight: false === o ? true : e => O[e],
-    rowCount: C,
-    rowHeight: y,
+    sectionHeaderHeight: false === l ? true : e => y[e],
+    rowCount: P,
+    rowHeight: 130,
     onScroll: n,
     ref: i,
-    sectionFooterHeight: 40 * !I
+    sectionFooterHeight: 40 * !S
   })
 }
 
-function T(e) {
+function I(e) {
   let {
     children: t
   } = e, n = i.useRef(null);
   return (0, r.jsx)("div", {
     ref: n,
-    className: b.row,
+    className: _.row,
     children: (0, r.jsx)(u.JcV, {
       containerRef: n,
       children: t
     })
   })
 }
-let S = () => (0, Chunk442837.e7)([Chunk709706.Z], () => {
+let j = () => (0, Chunk442837.e7)([Chunk709706.Z], () => {
     var e;
     return !Object.keys(null != (e = Chunk709706.Z.getVoiceFilterModels()) ? module : {}).length && (Chunk709706.Z.getCatalogFetchFailed() || Chunk709706.Z.hasNativeModuleFailed())
   }),
-  A = (e, t) => {
-    let n = (0, s._I)(t.toLowerCase());
-    return "" === n ? e : e.filter(e => {
+  x = (e, t) => (0, s.Wu)([g.Z], () => {
+    let n = g.Z.getVoiceFilters(),
+      r = g.Z.getSortedVoiceFilters();
+    var i = t ? Object.values(n) : r;
+    let l = (0, o._I)(e.toLowerCase());
+    return "" === l ? i : i.filter(e => {
       let {
         name: t
-      } = e, r = (0, s._I)(E.intl.string(t)).toLowerCase();
-      return a()(n, r)
+      } = e, n = (0, o._I)(v.intl.string(t)).toLowerCase();
+      return a()(l, n)
     })
-  },
-  N = (e, t) => (0, l.Wu)([h.Z], () => {
-    let n = h.Z.getVoiceFilters(),
-      r = h.Z.getSortedVoiceFilters();
-    return A(t ? Object.values(n) : r, e)
   }, [e, t])

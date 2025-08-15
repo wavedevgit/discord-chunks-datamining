@@ -2,7 +2,7 @@
 /** chunk id: 474366, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  q: () => P
+  q: () => O
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -26,14 +26,14 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk65766 = require("./65766.js");
 
-function O(e) {
+function w(e) {
   let {
     className: t,
     sound: n,
     playSound: a,
     isPlaying: s,
     text: d
-  } = e, u = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, m = _.intl.formatToPlainString(_.t.tuMUJy, {
+  } = e, u = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, m = C.intl.formatToPlainString(C.t.tuMUJy, {
     emojiName: null == n ? true : n.emojiName,
     soundName: null == n ? true : n.name
   }), h = i.useCallback(() => {
@@ -59,7 +59,7 @@ function O(e) {
   })
 }
 
-function w(e) {
+function T(e) {
   let {
     containerRef: t,
     text: n
@@ -103,7 +103,7 @@ function w(e) {
       }
     }
   }, [x, o, c, t]);
-  return true === l ? null : (0, r.jsx)(O, {
+  return true === l ? null : (0, r.jsx)(w, {
     sound: l,
     playSound: b,
     isPlaying: f,
@@ -111,7 +111,7 @@ function w(e) {
   })
 }
 
-function P() {
+function O() {
   let e = Chunk73800.useRef(null);
   return (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
     className: Chunk65766.container,
@@ -140,7 +140,7 @@ function P() {
         variant: "text-md/medium",
         color: "text-secondary",
         children: Chunk388032.intl.format(Chunk764295.default["8N4c5+"], {
-          airhornHook: t => (0, r.jsx)(w, {
+          airhornHook: t => (0, r.jsx)(T, {
             containerRef: e,
             text: t
           })

@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   Z: () => s,
-  i: () => a
+  i: () => o
 });
 var Chunk818083 = require("./818083.js"),
   Chunk171393 = require("./171393.js"),
   Chunk987338 = require("./987338.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-05_align_chat_input",
   label: "bottom-aligned chat input",
@@ -27,7 +27,7 @@ let a = (0, Chunk818083.B)({
 
 function s(e) {
   let t = (0, i.Z)("go_back_to_regular_input");
-  return a.useExperiment({
+  return o.useExperiment({
     location: e
   }, {
     disable: t,

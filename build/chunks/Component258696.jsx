@@ -52,32 +52,32 @@ function A(e) {
     isEmpty: P,
     showAllButtons: w,
     children: D
-  } = e, L = (0, a.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), x = N(C.id, O, P), {
+  } = e, L = (0, o.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), x = N(C.id, O, P), {
     activeCommand: M,
-    activeCommandOption: j
-  } = (0, a.cj)([c.Z], () => ({
+    activeCommandOption: k
+  } = (0, o.cj)([c.Z], () => ({
     activeCommand: c.Z.getActiveCommand(C.id),
     activeCommandOption: c.Z.getActiveOption(C.id)
   })), {
-    paymentsBlocked: k
+    paymentsBlocked: j
   } = u.Z.useExperiment({
     location: "dc120b_3"
   }, {
     autoTrackExposure: false
-  }), U = [], G = !C.isDM() || true === C.recipients || C.recipients.length > 1, B = (0, a.e7)([h.default], () => G ? null : h.default.getUser(C.recipients[0])), Z = (0, d.Nt)() && (null == (t = O.confetti) ? true : t.button) != null;
-  return (o.tq || ((null == (_ = O.gifts) ? true : _.button) != null && null == M && !k && (null == B || m.ZP.isPremiumEligible(B)) && U.push((0, r.jsx)(S, {
+  }), U = [], G = !C.isDM() || true === C.recipients || C.recipients.length > 1, B = (0, o.e7)([h.default], () => G ? null : h.default.getUser(C.recipients[0])), V = (0, d.Nt)() && (null == (t = O.confetti) ? true : t.button) != null;
+  return (a.tq || ((null == (_ = O.gifts) ? true : _.button) != null && null == M && !j && (null == B || m.ZP.isPremiumEligible(B)) && U.push((0, r.jsx)(S, {
     disabled: A,
     channel: C
   }, "gift")), (null == (p = O.gifs) ? true : p.button) != null && null == M && w && U.push((0, r.jsx)(E.Z, {
     disabled: A,
     type: O
-  }, "gif")), Z && null == M && U.push((0, r.jsx)(b.Z, {
+  }, "gif")), V && null == M && U.push((0, r.jsx)(b.Z, {
     disabled: A,
     channel: C
-  }, "confetti")), !Z && (null == (y = O.stickers) ? true : y.button) != null && null == M && w && U.push((0, r.jsx)(I.Z, {
+  }, "confetti")), !V && (null == (y = O.stickers) ? true : y.button) != null && null == M && w && U.push((0, r.jsx)(I.Z, {
     disabled: A,
     type: O
-  }, "sticker"))), (null == (n = O.emojis) ? true : n.button) != null && (null == M || null != j && j.type !== s.jw.ATTACHMENT) && U.push((0, r.jsx)(g.Z, {
+  }, "sticker"))), (null == (n = O.emojis) ? true : n.button) != null && (null == M || null != k && k.type !== s.jw.ATTACHMENT) && U.push((0, r.jsx)(g.Z, {
     disabled: A,
     type: O
   }, "emoji")), null != D && U.push(D), (null == (i = O.submit) ? true : i.button) != null && ((null == (f = O.submit) ? true : f.ignorePreference) || L) && U.push((0, r.jsx)(v.Z, {
@@ -90,7 +90,7 @@ function A(e) {
 }
 
 function N(e, t, n) {
-  return (0, a.e7)([_.Z, p.Z], () => {
+  return (0, o.e7)([_.Z, p.Z], () => {
     let r = _.Z.getStickerPreview(e, t.drafts.type),
       i = null != r && r.length > 0;
     return 0 === p.Z.getUploads(e, t.drafts.type).length && n && !i

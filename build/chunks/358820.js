@@ -4,7 +4,7 @@
 require.d(exports, {
   fz: () => P,
   ge: () => M,
-  r5: () => j,
+  r5: () => k,
   rk: () => w,
   wV: () => x
 }), require("./388685.js"), require("./415506.js"), require("./457542.js");
@@ -84,11 +84,11 @@ function P(e) {
       modelId: r,
       fileName: i
     } = e,
-    o = m.Z.getModelState(r),
-    a = R.get(r);
-  if (null != a) return a;
-  if ((null == o ? true : o.status) === g.L.DOWNLOADED) return Promise.resolve();
-  if ((null == o ? true : o.status) === g.L.DOWNLOADING) return Promise.reject(Error("Voice filter model is downloading but not in active downloads map"));
+    a = m.Z.getModelState(r),
+    o = R.get(r);
+  if (null != o) return o;
+  if ((null == a ? true : a.status) === g.L.DOWNLOADED) return Promise.resolve();
+  if ((null == a ? true : a.status) === g.L.DOWNLOADING) return Promise.reject(Error("Voice filter model is downloading but not in active downloads map"));
   s.Z.dispatch(v({
     type: "VOICE_FILTER_DOWNLOAD_STARTED"
   }, e));
@@ -105,13 +105,13 @@ function P(e) {
     }))
   }).then(n => {
     if (n.fetchedFromNetwork) {
-      var i, o;
+      var i, a;
       u.default.track(y.rMx.VOICE_FILTER_DOWNLOAD_ATTEMPTED, {
         active_voice_filter_id: null != (i = c.Z.getActiveVoiceFilter()) ? i : null,
         success: true,
         voice_filter_id: e.voiceFilterId,
         model_id: r,
-        reason: null != (o = null == t ? true : t.reason) ? o : null
+        reason: null != (a = null == t ? true : t.reason) ? a : null
       })
     }
     s.Z.dispatch(T(v({
@@ -151,7 +151,7 @@ function P(e) {
 }
 async function w(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
-  await j();
+  await k();
   let n = performance.now();
   try {
     let r = p.ZP.getVoiceFilters();
@@ -184,11 +184,11 @@ async function D(e) {
       rejectWithError: true
     }),
     r = n.text,
-    o = n.body,
-    a = n.headers["x-discord-catalog-signature"];
-  if (null == o.models) throw Error("Voice filters catalog response is empty");
-  if (null == a) throw Error("Voice filters catalog signature is missing");
-  return await e.setCatalog(r, a), o
+    a = n.body,
+    o = n.headers["x-discord-catalog-signature"];
+  if (null == a.models) throw Error("Voice filters catalog response is empty");
+  if (null == o) throw Error("Voice filters catalog signature is missing");
+  return await e.setCatalog(r, o), a
 }
 async function L(e) {
   if (!p.ZP.canCheckVoiceFilterFilesExist()) return;
@@ -206,7 +206,7 @@ async function L(e) {
     status: t ? g.L.DOWNLOADED : g.L.MISSING
   };
   let i = t.map(e => e.fileName);
-  return (0, a.dZ)(i) && await (0, E.A)(i), r
+  return (0, o.dZ)(i) && await (0, E.A)(i), r
 }
 async function x() {
   if (!Chunk709706.Z.isNativeModuleLoaded()) return void S.info("Voice Filter catalog refresh ignored, module not loaded.");
@@ -237,7 +237,7 @@ function M() {
     type: "VOICE_FILTER_DOWNLOAD_CANCELED"
   })
 }
-async function j() {
+async function k() {
   if (!(Chunk709706.Z.isNativeModuleLoaded() || Chunk709706.Z.isNativeModuleLoading()) && !__OVERLAY__) {
     if (!(0, Chunk358085.isWindows)() && !(0, Chunk358085.isMac)()) return void Chunk570140.Z.dispatch({
       type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",

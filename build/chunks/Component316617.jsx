@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 59727 **/
 /** chunk id: 316617, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -22,11 +22,11 @@ var Chunk255367 = require("./255367.js"),
 let f = e => {
   let {
     message: t
-  } = e, n = (0, o.ZP)(t), f = (0, l.e7)([_.Z], () => _.Z.getChannel(t.channel_id)), v = i.useMemo(() => (0, s.Z)(t), [t]), {
+  } = e, n = (0, s.ZP)(t), f = (0, i.e7)([g.Z], () => g.Z.getChannel(t.channel_id)), v = a.useMemo(() => (0, o.Z)(t), [t]), {
     content: j
   } = (0, p.Z)(v, {
     hideSimpleEmbedContent: false
-  }), y = g.jU.useSetting(), O = i.useCallback(() => {
+  }), y = _.jU.useSetting(), C = a.useCallback(() => {
     let {
       leadingIcon: e,
       trailingIcon: n
@@ -46,14 +46,14 @@ let f = e => {
   }, [t, j, y]);
   return null == f ? null : (0, r.jsxs)("div", {
     className: x.container,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(l.X6q, {
       className: x.header,
       variant: "heading-sm/semibold",
       children: h.intl.string(h.t.iouM3d)
-    }), (0, r.jsx)(a.Ttm, {
+    }), (0, r.jsx)(l.Ttm, {
       className: x.messagePreviewContainer,
       children: (0, r.jsx)(c.Z, {
-        childrenMessageContent: O(),
+        childrenMessageContent: C(),
         childrenHeader: (0, r.jsx)(u.ZP, {
           message: t,
           channel: f,

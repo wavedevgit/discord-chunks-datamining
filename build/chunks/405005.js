@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 405005, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 405005, original params: e,t,n (module,exports,require) **/
 module.exports = {
   headerContainer: "headerContainer__9a59b",
   chatBubbleContainer: "chatBubbleContainer__9a59b",

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -40,7 +40,7 @@ function d(e) {
       padding: 4
     },
     children: [!h && null != p && (0, r.jsx)("div", {
-      className: o()(c.art, c[f]),
+      className: a()(c.art, c[f]),
       style: {
         backgroundImage: "url(".concat(p, ")")
       }
@@ -60,11 +60,11 @@ function d(e) {
       className: c.description,
       variant: "text-sm/medium",
       children: u
-    }) : null, m || null == n ? null : (0, r.jsx)(a.zx, {
+    }) : null, m || null == n ? null : (0, r.jsx)(o.zx, {
       className: c.outerButton,
-      size: a.zx.Sizes.NONE,
-      color: a.zx.Colors.WHITE,
-      look: a.zx.Looks.BLANK,
+      size: o.zx.Sizes.NONE,
+      color: o.zx.Colors.WHITE,
+      look: o.zx.Looks.BLANK,
       innerClassName: c.button,
       onClick: e => {
         e.stopPropagation(), null == t || t(e)

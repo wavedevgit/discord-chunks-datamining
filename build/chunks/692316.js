@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 692316, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 692316, original params: e,t,n (module,exports,require) **/
 module.exports = {
   productCard: "productCard__8d9f6",
   productCardClickable: "productCardClickable__8d9f6",

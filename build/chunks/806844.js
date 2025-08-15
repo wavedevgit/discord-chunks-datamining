@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 806844, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 806844, original params: e,t,n (module,exports,require) **/
 module.exports = {
   dropdownArrowHitbox: "dropdownArrowHitbox_e8c23e",
   dropdownArrow: "dropdownArrow_e8c23e",

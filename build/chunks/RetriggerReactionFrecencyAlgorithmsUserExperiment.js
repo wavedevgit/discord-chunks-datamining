@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   E2: () => l,
-  Xb: () => a,
-  ZP: () => o,
+  Xb: () => o,
+  ZP: () => a,
   p3: () => s
 });
 var Chunk818083 = require("./818083.js");
@@ -46,8 +46,8 @@ let i = (0, Chunk818083.B)({
       }
     }]
   }),
-  o = i,
-  a = (0, Chunk818083.B)({
+  a = i,
+  o = (0, Chunk818083.B)({
     kind: "user",
     id: "2024-10_retrigger_reaction_frecency_algorithms",
     label: "(Retrigger) Reaction Frecency Algorithms",

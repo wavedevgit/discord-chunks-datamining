@@ -50,9 +50,9 @@ class d {
     i[t] = (null != (r = i[t]) ? r : 0) + 1, this._unsubscriptions[e] = i, 1 === i[t] && this._unsubscribe.delay(false)
   }
   checkForLeaks(e, t) {
-    var n, r, i, o;
-    let s = (null != (i = null == (n = this._subscriptions[e]) ? true : n[t]) ? i : 0) - (null != (o = null == (r = this._unsubscriptions[e]) ? true : r[t]) ? o : 0);
-    s > 5 && new a.Z("GuildMemberSubscriptions").warn("GuildMemberSubscriptions.subscribe(...): Potential reference leak! (".concat(s, " subscriptions)"))
+    var n, r, i, a;
+    let s = (null != (i = null == (n = this._subscriptions[e]) ? true : n[t]) ? i : 0) - (null != (a = null == (r = this._unsubscriptions[e]) ? true : r[t]) ? a : 0);
+    s > 5 && new o.Z("GuildMemberSubscriptions").warn("GuildMemberSubscriptions.subscribe(...): Potential reference leak! (".concat(s, " subscriptions)"))
   }
   flushUnsubscriptions() {
     i().isEmpty(this._unsubscriptions) || (i().forEach(this._unsubscriptions, (e, t) => {
@@ -64,6 +64,6 @@ class d {
     }), this._unsubscriptions = {})
   }
   constructor(e) {
-    c(this, "_subscriptions", {}), c(this, "_unsubscriptions", {}), c(this, "_onChange", true), c(this, "_unsubscribe", new o.sW(u, () => this.flushUnsubscriptions())), this._onChange = e
+    c(this, "_subscriptions", {}), c(this, "_unsubscriptions", {}), c(this, "_onChange", true), c(this, "_unsubscribe", new a.sW(u, () => this.flushUnsubscriptions())), this._onChange = e
   }
 }

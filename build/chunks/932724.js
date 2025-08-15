@@ -9,12 +9,12 @@ require("./594174.js");
 var Chunk74538 = require("./74538.js"),
   Chunk647177 = require("./647177.js");
 
-function a(e, t) {
-  let n = (0, o.Gx)(e, t.id);
-  return (0, o.rD)(n) && !i.ZP.canUseCustomBackgrounds(t) ? null : "number" != typeof n || (0, o.sd)(n) ? n : null
+function o(e, t) {
+  let n = (0, a.Gx)(e, t.id);
+  return (0, a.rD)(n) && !i.ZP.canUseCustomBackgrounds(t) ? null : "number" != typeof n || (0, a.sd)(n) ? n : null
 }
 
 function s(e) {
   var t;
-  return a(null == (t = r.Z.settings.voiceAndVideo) ? true : t.videoBackgroundFilterDesktop, e)
+  return o(null == (t = r.Z.settings.voiceAndVideo) ? true : t.videoBackgroundFilterDesktop, e)
 }

@@ -30,12 +30,12 @@ let u = new Chunk585483.b,
   f = new Map;
 
 function _(e, t) {
-  let [n, r] = i.useState((0, s.ZY)(t)), o = i.useMemo(() => new a.b, []), l = i.useMemo(() => ({
+  let [n, r] = i.useState((0, s.ZY)(t)), a = i.useMemo(() => new o.b, []), l = i.useMemo(() => ({
     appContext: e,
     renderWindow: t,
-    windowDispatch: o,
+    windowDispatch: a,
     windowId: n
-  }), [e, t, o, n]);
+  }), [e, t, a, n]);
   return i.useEffect(() => {
     if (null != n) return;
     let e = setInterval(() => {
@@ -62,7 +62,7 @@ function p(e) {
 
 function h(e) {
   var t;
-  return (0, o.k)(null == e ? true : e.target) && null != (t = p(e.target)) ? t : null
+  return (0, a.k)(null == e ? true : e.target) && null != (t = p(e.target)) ? t : null
 }
 
 function m() {
@@ -85,9 +85,9 @@ function b(e) {
     appContext: t,
     renderWindow: n,
     children: i
-  } = e, o = _(t, n);
+  } = e, a = _(t, n);
   return (0, r.jsx)(d.Provider, {
-    value: o,
+    value: a,
     children: i
   })
 }

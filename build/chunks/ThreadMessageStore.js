@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => X
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk786761 = require("./786761.js"),
@@ -61,14 +61,14 @@ let O = new Set,
   I = {};
 
 function T(e) {
-  v = o().omitBy(v, t => {
+  v = a().omitBy(v, t => {
     let n = t.guildId === e;
     return n && delete I[t.parentId], n
   })
 }
 
 function S(e) {
-  v = o().omitBy(v, t => t.parentId === e), delete I[e]
+  v = a().omitBy(v, t => t.parentId === e), delete I[e]
 }
 
 function A(e, t) {
@@ -147,14 +147,14 @@ function M(e) {
   T(t.id)
 }
 
-function j(e) {
+function k(e) {
   let {
     channel: t
   } = e;
   P(t)
 }
 
-function k(e) {
+function j(e) {
   let {
     threads: t,
     mostRecentMessages: n
@@ -198,7 +198,7 @@ function B(e) {
   S(t.id)
 }
 
-function Z(e) {
+function V(e) {
   let {
     channel: t
   } = e;
@@ -213,14 +213,14 @@ function F(e) {
     sendMessageOptions: i
   } = e;
   if (n || r || null != i) returnfalse;
-  let o = f.Z.getChannel(t.channel_id);
-  if (null == o || !c.Ec.has(o.type) || !V(o, t)) returnfalse;
-  A(o, e => {
+  let a = f.Z.getChannel(t.channel_id);
+  if (null == a || !c.Ec.has(a.type) || !Z(a, t)) returnfalse;
+  A(a, e => {
     e.count = Math.min(e.count + 1, h.M3), e.mostRecentRawMessage = t, e.mostRecentMessage = null
   })
 }
 
-function V(e, t) {
+function Z(e, t) {
   return !(t.type === m.uaV.THREAD_STARTER_MESSAGE || e.isForumPost() && t.id === p.default.castChannelIdAsMessageId(e.id))
 }
 
@@ -242,11 +242,11 @@ function Y(e) {
   } = e, r = v[n];
   if (null == r) returnfalse;
   let i = p.default.castChannelIdAsMessageId(n) !== t,
-    o = !O.has(t);
+    a = !O.has(t);
   N(r, e => {
     var n;
     let r = null != (n = e.mostRecentRawMessage) ? n : e.mostRecentMessage;
-    null != r && r.id === t && (e.mostRecentMessage = null, e.mostRecentRawMessage = null), e.count = i && o ? Math.max(e.count - 1, 0) : e.count, O.add(t)
+    null != r && r.id === t && (e.mostRecentMessage = null, e.mostRecentRawMessage = null), e.count = i && a ? Math.max(e.count - 1, 0) : e.count, O.add(t)
   })
 }
 
@@ -320,9 +320,9 @@ let X = new q(Chunk570140.Z, {
   OVERLAY_INITIALIZE: L,
   GUILD_CREATE: x,
   GUILD_DELETE: M,
-  THREAD_CREATE: j,
-  THREAD_UPDATE: j,
-  THREAD_LIST_SYNC: k,
+  THREAD_CREATE: k,
+  THREAD_UPDATE: k,
+  THREAD_LIST_SYNC: j,
   LOAD_THREADS_SUCCESS: U,
   LOAD_ARCHIVED_THREADS_SUCCESS: U,
   RELATIONSHIP_ADD: z,
@@ -330,7 +330,7 @@ let X = new q(Chunk570140.Z, {
   RELATIONSHIP_REMOVE: z,
   SEARCH_MESSAGES_SUCCESS: G,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: G,
-  THREAD_DELETE: Z,
+  THREAD_DELETE: V,
   CHANNEL_DELETE: B,
   MESSAGE_CREATE: F,
   MESSAGE_UPDATE: H,

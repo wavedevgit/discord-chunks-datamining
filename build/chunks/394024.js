@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 394024, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 394024, original params: e,t,n (module,exports,require) **/
 module.exports = {
   voiceCallWrapper: "voiceCallWrapper_a21736",
   videoGridWrapper: "videoGridWrapper_a21736",

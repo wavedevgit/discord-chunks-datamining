@@ -1,4 +1,4 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 405954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -24,25 +24,25 @@ let b = function(e) {
     activePickerChannelId: n,
     openPickerForChannel: b,
     closePicker: y
-  } = (0, o.B)(), {
-    canAccessPicker: x,
-    entryPoint: j
+  } = (0, s.B)(), {
+    canAccessPicker: _,
+    entryPoint: C
   } = (0, c.m)({
     location: "channel_header_toolbar",
     channelId: t.id
-  }), _ = (0, u.Nj)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), O = x && j === s.FN.TOOLBAR && _, [v, C] = (0, d.US)(O ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = v === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, S = i.useCallback(() => {
-    E && C(g.L.TAKE_ACTION), n === t.id ? (y(), h.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {
+  }), x = (0, u.Nj)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), v = _ && C === o.FN.TOOLBAR && x, [j, O] = (0, d.US)(v ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = j === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, S = i.useCallback(() => {
+    E && O(m.L.TAKE_ACTION), n === t.id ? (y(), p.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {
       action: "close"
-    })) : (b(t.id), h.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {
+    })) : (b(t.id), p.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {
       action: "open"
     }))
-  }, [n, t.id, y, b, E, C]);
-  return O ? (0, r.jsx)(p.JO, {
+  }, [n, t.id, y, b, E, O]);
+  return v ? (0, r.jsx)(h.JO, {
     onClick: S,
-    tooltip: m.intl.string(m.t.GixvUl),
+    tooltip: g.intl.string(g.t.GixvUl),
     icon: a.XBm,
     iconSize: 20,
-    "aria-label": m.intl.string(m.t.GixvUl),
+    "aria-label": g.intl.string(g.t.GixvUl),
     showBadge: E,
     selected: n === t.id
   }) : null

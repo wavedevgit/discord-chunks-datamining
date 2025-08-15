@@ -1,7 +1,7 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 429122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => O,
+  ZP: () => _,
   dt: () => m,
   eo: () => b
 }), require("./539854.js"), require("./388685.js");
@@ -61,7 +61,7 @@ function b(e, t, n) {
   } = (0, d.ie)(t, n, e);
   return "section-footer-".concat(e).concat(r ? "-divider" : "").concat(i ? "-voice-summary" : "")
 }
-let O = Chunk73800.memo(function(e) {
+let _ = Chunk73800.memo(function(e) {
   let {
     sectionIndex: t,
     guildChannels: n,
@@ -69,12 +69,12 @@ let O = Chunk73800.memo(function(e) {
     voiceStates: f,
     guildId: m,
     selectedChannelId: b,
-    selectedVoiceChannelId: O,
-    optInEnabled: _
+    selectedVoiceChannelId: _,
+    optInEnabled: O
   } = e, {
     hasDivider: y,
     canHaveVoiceSummary: v
-  } = i.useMemo(() => (0, d.ie)(n, _, t), [n, _, t, p]), j = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, p]), C = (0, a.DM)(m), E = (0, l.Wu)([s.ZP], () => {
+  } = i.useMemo(() => (0, d.ie)(n, O, t), [n, O, t, p]), j = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, p]), C = (0, a.DM)(m), E = (0, l.Wu)([s.ZP], () => {
     if (null == j || !j.isCollapsed || !v) return [];
     let e = j.getChannelRecords(),
       t = [];
@@ -87,9 +87,9 @@ let O = Chunk73800.memo(function(e) {
   }, [j, v, m, C]), x = i.useMemo(() => (0, c.c4)({
     channels: E,
     selectedChannelId: b,
-    selectedVoiceChannelId: O,
+    selectedVoiceChannelId: _,
     voiceStates: f
-  }), [E, b, O, f]);
+  }), [E, b, _, f]);
   if (t === n.voiceChannelsSectionNumber) return (0, r.jsx)(g, {
     guildChannels: n,
     guildChannelsVersion: p

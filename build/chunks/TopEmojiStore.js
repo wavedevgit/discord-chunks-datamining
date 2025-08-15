@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -53,7 +53,7 @@ class _ extends(r = Chunk442837.ZP.PersistedStore) {
     return c[e]
   }
 }
-a(_, "displayName", "TopEmojiStore"), a(_, "persistKey", "TopEmojiStore");
+o(_, "displayName", "TopEmojiStore"), o(_, "persistKey", "TopEmojiStore");
 let p = new _(Chunk570140.Z, {
   LOGOUT: u,
   TOP_EMOJIS_FETCH: d,

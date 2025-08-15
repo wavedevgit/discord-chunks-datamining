@@ -1,4 +1,4 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 12779, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -18,36 +18,36 @@ let d = Chunk73800.memo(function(e) {
     onClick: i,
     className: l,
     collapsed: d,
-    speakers: h,
-    channel: p,
+    speakers: p,
+    channel: h,
     isStreamLive: f
   } = e;
-  return (0, r.jsxs)(s.P3F, {
+  return (0, r.jsxs)(o.P3F, {
     onClick: i,
     className: a()(u.container, l),
-    children: [null == h ? (0, r.jsx)(s.BFJ, {
+    children: [null == p ? (0, r.jsx)(o.BFJ, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
       className: u.micIcon
-    }) : (0, r.jsx)(s.S6n, {
+    }) : (0, r.jsx)(o.S6n, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
       className: u.micIcon
-    }), (0, r.jsxs)(s.Text, {
+    }), (0, r.jsxs)(o.Text, {
       color: "header-primary",
       variant: "text-md/semibold",
       className: u.text,
       children: [t, " — ", n]
-    }), d && null != p && null != h && h.length > 0 && (0, r.jsxs)(r.Fragment, {
+    }), d && null != h && null != p && p.length > 0 && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.Z, {
-        channel: p,
-        speakers: h
-      }), f && (0, r.jsx)(o.ZP, {})]
-    }), (0, r.jsx)(s.CJ0, {
+        channel: h,
+        speakers: p
+      }), f && (0, r.jsx)(s.ZP, {})]
+    }), (0, r.jsx)(o.CJ0, {
       size: "custom",
       color: "currentColor",
       width: 20,

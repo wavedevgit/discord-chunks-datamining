@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 240657, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 240657, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -17,22 +16,22 @@ function d(e) {
   let {
     color: t,
     className: n,
-    variant: o,
+    variant: l,
     text: d,
-    lineClamp: f
-  } = e, _ = (0, s.xSt)(), p = i.useMemo(() => null == d ? null : (0, l.Z)(d, true, {
-    allowHeading: null == f,
-    allowList: null == f,
-    initialHeaderLevel: _
-  }), [d, f, _]);
-  return (0, r.jsx)(s.Text, {
+    lineClamp: p
+  } = e, m = (0, o.xSt)(), f = i.useMemo(() => null == d ? null : (0, s.Z)(d, true, {
+    allowHeading: null == p,
+    allowList: null == p,
+    initialHeaderLevel: m
+  }), [d, p, m]);
+  return (0, r.jsx)(o.Text, {
     className: a()(n, u.markup, {
-      [c.lineClamp2Plus]: null != f && f > 1,
-      [c.lineClamp1]: 1 === f
+      [c.lineClamp2Plus]: null != p && p > 1,
+      [c.lineClamp1]: 1 === p
     }),
     color: t,
-    variant: o,
-    lineClamp: f,
-    children: p
+    variant: l,
+    lineClamp: p,
+    children: f
   })
 }

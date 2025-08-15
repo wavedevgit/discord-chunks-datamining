@@ -1,8 +1,8 @@
-/** Chunk was on 73872 **/
-/** chunk id: 191980, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 62634 **/
+/** chunk id: 191980, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   $: () => i,
-  C: () => a
+  C: () => c
 });
 var Chunk570140 = require("./570140.js");
 
@@ -12,7 +12,7 @@ function i() {
   })
 }
 
-function a() {
+function c() {
   Chunk570140.Z.dispatch({
     type: "HIDE_KEYBOARD_SHORTCUTS"
   })

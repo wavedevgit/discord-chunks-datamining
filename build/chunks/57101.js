@@ -1,20 +1,17 @@
-/** Chunk was on web.js **/
-/** chunk id: 57101, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 57101, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => l
 });
 var Chunk392711 = require("./392711.js"),
   Chunk897325 = require("./897325.js");
-
-function o(e) {
+let l = (0, Chunk392711.memoize)(function(e) {
   let {
     theme: t,
     layoutType: n
   } = e;
   return (0, i._)(t, n)
-}
-let a = (0, Chunk392711.memoize)(o, e => {
+}, e => {
   let {
     theme: t,
     layoutType: n

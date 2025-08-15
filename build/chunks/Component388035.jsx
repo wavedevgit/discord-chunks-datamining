@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 388035, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 54157 **/
+/** chunk id: 388035, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => g
 }), require("./388685.js");
@@ -15,46 +14,45 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk684642 = require("./684642.js"),
   Chunk235810 = require("./235810.js");
-let p = Chunk704215.z.FOR_LATER_POPOUT_COACHMARK,
-  h = () => (0, Chunk255367.jsx)("div", {
+let f = Chunk704215.z.FOR_LATER_POPOUT_COACHMARK,
+  _ = () => (0, Chunk255367.jsx)("div", {
     className: Chunk684642.imageContainer,
     children: (0, Chunk255367.jsx)("img", {
       className: Chunk684642.image,
       src: Chunk235810,
       alt: ""
     })
-  }),
-  m = e => (0, r.jsx)(l.ZP, {
-    className: f.container,
-    asset: (0, r.jsx)(h, {}),
-    header: d.intl.string(d.t.qPbFKy),
-    content: d.intl.string(d.t.URrJq6),
-    buttonCTA: d.intl.string(d.t["NX+WJC"]),
-    buttonProps: {
-      color: o.Tt.WHITE,
-      innerClassName: f.primaryButton
-    },
-    onClick: () => e(u.L.USER_DISMISS),
-    markAsDismissed: e,
-    caretPosition: l.DF.TOP_RIGHT
   });
 
 function g(e) {
   let {
     location: t,
     children: n,
-    targetElementRef: i
+    targetElementRef: s
   } = e, {
-    enabled: o,
-    inInbox: l
+    enabled: p,
+    inInbox: g
   } = c.Z.useExperiment({
     location: "ForLaterCoachmarkWeb"
   }, {
     autoTrackExposure: false
-  }), u = t === (l ? "inbox-button" : "bookmarks-button"), d = o && u ? [p] : [], [f, _] = (0, s.US)(d, true);
-  return f !== p ? n : (0, r.jsx)(a.yRy, {
-    targetElementRef: i,
-    renderPopout: () => m(_),
+  }), [S, m] = (0, i.US)(p && t === (g ? "inbox-button" : "bookmarks-button") ? [f] : [], true);
+  return S !== f ? n : (0, r.jsx)(a.yRy, {
+    targetElementRef: s,
+    renderPopout: () => (0, r.jsx)(o.ZP, {
+      className: h.container,
+      asset: (0, r.jsx)(_, {}),
+      header: d.intl.string(d.t.qPbFKy),
+      content: d.intl.string(d.t.URrJq6),
+      buttonCTA: d.intl.string(d.t["NX+WJC"]),
+      buttonProps: {
+        color: l.Tt.WHITE,
+        innerClassName: h.primaryButton
+      },
+      onClick: () => m(u.L.USER_DISMISS),
+      markAsDismissed: m,
+      caretPosition: o.DF.TOP_RIGHT
+    }),
     position: "bottom",
     align: "right",
     animation: a.yRy.Animation.TRANSLATE,

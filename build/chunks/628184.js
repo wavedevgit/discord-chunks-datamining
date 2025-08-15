@@ -4,45 +4,45 @@
 var n;
 
 function r(e) {
-  for (let t = 0; t < e.length; t++) e[t] = o(e[t]);
+  for (let t = 0; t < e.length; t++) e[t] = a(e[t]);
   returntrue
 }
 
 function i(e) {
-  let [t, i, o, a, s] = e;
-  for (let e in o) r(o[e]), o[e] = {
-    value: o[e]
+  let [t, i, a, o, s] = e;
+  for (let e in a) r(a[e]), a[e] = {
+    value: a[e]
   };
   return t === n.Plural ? {
     type: t,
     value: i,
-    options: o,
-    offset: a,
+    options: a,
+    offset: o,
     pluralType: s
   } : {
     type: t,
     value: i,
-    options: o,
-    offset: a
+    options: a,
+    offset: o
   }
 }
 
-function o(e) {
+function a(e) {
   if ("string" == typeof e) return {
     type: 0,
     value: e
   };
-  let [o] = e;
-  switch (o) {
+  let [a] = e;
+  switch (a) {
     case n.Argument:
       return {
-        type: o, value: e[1]
+        type: a, value: e[1]
       };
     case n.Number:
     case n.Date:
     case n.Time:
       return {
-        type: o, value: e[1], style: e[2]
+        type: a, value: e[1], style: e[2]
       };
     case n.Select:
     case n.Plural:
@@ -50,21 +50,21 @@ function o(e) {
     case n.Pound:
       return t.FORMAT_JS_POUND;
     case n.Tag: {
-      let [t, n, i, o] = e;
-      return r(i), null != o && r(o), {
+      let [t, n, i, a] = e;
+      return r(i), null != a && r(a), {
         type: t,
         value: n,
         children: i,
-        control: o
+        control: a
       }
     }
     default:
-      throw Error(`FormatJS keyless JSON encountered an unknown type: ${o}`)
+      throw Error(`FormatJS keyless JSON encountered an unknown type: ${a}`)
   }
 }
 
-function a(e) {
-  return "string" == typeof e ? o(e) : "string" == typeof e[0] ? (r(e), e) : 0 === e.length ? e : Array.isArray(e[0]) ? (r(e), e) : o(e)
+function o(e) {
+  return "string" == typeof e ? a(e) : "string" == typeof e[0] ? (r(e), e) : 0 === e.length ? e : Array.isArray(e[0]) ? (r(e), e) : a(e)
 }
 
 function s(e) {
@@ -100,7 +100,7 @@ function l(e) {
 }
 Object.defineProperty(exports, "__esModule", {
     value: true
-  }), exports.FORMAT_JS_POUND = exports.FormatJsNodeType = true, exports.hydrateFormatJsAst = a, exports.compressFormatJsToAst = s, exports.isCompressedAst = l,
+  }), exports.FORMAT_JS_POUND = exports.FormatJsNodeType = true, exports.hydrateFormatJsAst = o, exports.compressFormatJsToAst = s, exports.isCompressedAst = l,
   function(e) {
     e[e.Literal = 0] = "Literal", e[e.Argument = 1] = "Argument", e[e.Number = 2] = "Number", e[e.Date = 3] = "Date", e[e.Time = 4] = "Time", e[e.Select = 5] = "Select", e[e.Plural = 6] = "Plural", e[e.Pound = 7] = "Pound", e[e.Tag = 8] = "Tag"
   }(n || (exports.FormatJsNodeType = n = {})), exports.FORMAT_JS_POUND = Object.freeze({

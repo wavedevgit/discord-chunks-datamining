@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 759875, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37220 **/
+/** chunk id: 759875, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -13,12 +12,12 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c(e, t) {
-  return (0, o.a)(e) ? (0, r.jsx)(i.sNh, {
+  return (0, l.a)(e) ? (0, r.jsx)(i.sNh, {
     id: "forward",
-    label: l.intl.string(l.t.I3ltXF),
+    label: s.intl.string(s.t.I3ltXF),
     icon: a.Z,
     action: () => {
-      (0, s.ts)(t, e)
+      (0, o.ts)(t, e)
     }
   }) : null
 }

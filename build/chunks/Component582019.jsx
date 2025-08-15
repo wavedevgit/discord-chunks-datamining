@@ -1,79 +1,68 @@
-/** Chunk was on web.js **/
-/** chunk id: 582019, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 24255 **/
+/** chunk id: 582019, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => d
+  j: () => o
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk709014 = require("./709014.jsx");
-
-function a(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function s(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      a(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function l(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function c(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let u = {
+let a = {
     all: {
       name: "all",
       start: 0,
       duration: 66
     }
   },
-  d = () => {
+  o = () => {
     let e = Chunk73800.useRef(null),
       t = Chunk73800.useCallback(() => {
         null != module.current && module.current.play("all")
       }, []),
-      a = Chunk73800.useCallback(() => {
+      o = Chunk73800.useCallback(() => {
         null != module.current && module.current.play("all")
       }, []),
-      l = Chunk73800.useCallback(() => {
+      u = Chunk73800.useCallback(() => {
         null != module.current && module.current.stopIfPlaying("all")
       }, []),
-      d = Chunk73800.useCallback(t => (0, r.jsx)(o.L, c(s({}, t), {
-        src: () => n.e("66944").then(n.t.bind(n, 166174, 19)),
-        ref: e,
-        markers: u
-      })), []);
+      s = Chunk73800.useCallback(t => {
+        var l, o;
+        return (0, r.jsx)(i.L, (l = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({}, t), o = o = {
+          src: () => n.e("66944").then(n.t.bind(n, 166174, 19)),
+          ref: e,
+          markers: a
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(o)).forEach(function(e) {
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
+        }), l))
+      }, []);
     return {
       events: {
         onClick: exports,
-        onMouseEnter: a,
-        onMouseLeave: l
+        onMouseEnter: o,
+        onMouseLeave: u
       },
       play: exports,
       getDuration: Chunk73800.useCallback(() => {
@@ -84,6 +73,6 @@ let u = {
         var t, n;
         return null != (n = null == (t = module.current) ? true : exports.getCurrentFrame()) ? require : null
       }, []),
-      Component: d
+      Component: s
     }
   }

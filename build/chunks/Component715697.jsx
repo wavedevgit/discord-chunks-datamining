@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 715697, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 53937 **/
+/** chunk id: 715697, original params: e,l,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => m
 }), require("./35282.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk729594 = require("./729594.js"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
@@ -16,39 +15,37 @@ var Chunk120356 = require("./120356.js"),
   Chunk902692 = require("./902692.js"),
   Chunk781452 = require("./781452.js");
 
-function _(e) {
-  var t, n;
+function m(e) {
+  var l, t;
   let {
-    className: i,
+    className: n,
     embed: {
-      url: _
+      url: m
     }
-  } = e, p = (0, s.e7)([c.Z], () => (0, l.wj)(c.Z.theme));
-  if (null == _) return null;
-  let h = null,
-    m = null,
-    g = null;
+  } = e, p = (0, a.e7)([d.Z], () => (0, o.wj)(d.Z.theme));
+  if (null == m) return null;
+  let g = null,
+    b = null,
+    f = null;
   try {
-    let e = a.parse(_, true);
-    h = e.host, m = e.pathname, g = null != (n = e.query.i) ? n : null, Array.isArray(g) && (g = g[0])
+    let e = s.parse(m, true);
+    g = e.host, b = e.pathname, f = null != (t = e.query.i) ? t : null, Array.isArray(f) && (f = f[0])
   } catch (e) {
     return null
   }
-  if (!(0, u.L)(h) || null == m) return null;
-  let E = /^\/([a-z]{2}(?:-[a-z]{2})?)\//.test(m) ? 2 : 1,
-    b = null == (t = m.split("/")[E]) ? true : t.toLowerCase();
-  null != g && (b = "song");
-  let y = 450;
-  "song" === b ? y = 175 : "music-video" === b && (y = 371), m = m.substr(1);
-  let O = p ? "dark" : "light";
-  return (0, r.jsx)("iframe", {
-    className: o()(f.embedAppleMusic, i),
-    src: d.P.EMBED(m, O, g),
+  if (!(0, u.L)(g) || null == b) return null;
+  let v = /^\/([a-z]{2}(?:-[a-z]{2})?)\//.test(b) ? 2 : 1,
+    y = null == (l = b.split("/")[v]) ? true : l.toLowerCase();
+  null != f && (y = "song");
+  let x = 450;
+  return "song" === y ? x = 175 : "music-video" === y && (x = 371), b = b.substr(1), (0, r.jsx)("iframe", {
+    className: i()(c.embedAppleMusic, n),
+    src: h.P.EMBED(b, p ? "dark" : "light", f),
     style: {
       maxWidth: 660,
       minWidth: 300,
       width: "100%",
-      height: y
+      height: x
     },
     frameBorder: 0,
     sandbox: "allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation",

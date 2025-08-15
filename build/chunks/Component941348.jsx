@@ -1,4 +1,4 @@
-/** Chunk was on 9885 **/
+/** Chunk was on 42521 **/
 /** chunk id: 941348, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -22,11 +22,11 @@ let p = function(e) {
     onCtxMenuOpened: f,
     onCtxMenuClosed: x,
     onCtxMenuSelection: h,
-    quest: j,
-    useReducedMotion: b,
-    collapsedHeight: _,
+    quest: b,
+    useReducedMotion: _,
+    collapsedHeight: j,
     shouldShowRewardsCTAWhenCollapsed: v
-  } = e, C = s.useRef(null), y = s.useRef(null), E = (null == (t = j.userStatus) ? true : t.enrolledAt) != null, O = (0, o.Rf)(j);
+  } = e, C = s.useRef(null), y = s.useRef(null), E = (null == (t = b.userStatus) ? true : t.enrolledAt) != null, O = (0, o.Rf)(b);
   return (0, r.jsxs)(i.p, {
     expandedContentRef: n,
     collapsedContentRef: C,
@@ -37,8 +37,8 @@ let p = function(e) {
       expansionSpring: p,
       isExpanded: m,
       isExpansionAnimationComplete: g,
-      quest: j,
-      useReducedMotion: b,
+      quest: b,
+      useReducedMotion: _,
       taskDetails: O,
       onCtxMenuOpen: f,
       onCtxMenuClose: x,
@@ -48,15 +48,15 @@ let p = function(e) {
     }, v ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
       expansionSpring: p,
       className: d.content,
-      collapsedHeight: _,
+      collapsedHeight: j,
       onCtxMenuOpen: f,
       onCtxMenuClose: x,
       onCtxMenuSelect: h,
       overlayRef: y,
       isExpanded: m,
       isExpansionAnimationComplete: g,
-      quest: j,
-      useReducedMotion: b,
+      quest: b,
+      useReducedMotion: _,
       ref: n,
       taskDetails: O,
       children: (0, r.jsxs)(r.Fragment, {
@@ -64,9 +64,9 @@ let p = function(e) {
           expansionSpring: p,
           isExpanded: m
         }), !E && (0, r.jsx)(a.Z, {
-          quest: j,
+          quest: b,
           expansionSpring: p,
-          useReducedMotion: b,
+          useReducedMotion: _,
           isExpanded: m,
           isExpansionAnimationComplete: g,
           onCtxMenuOpen: f,

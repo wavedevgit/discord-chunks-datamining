@@ -36,13 +36,13 @@ function f(e) {
         height: m + 8
       },
       alt: ""
-    }), (0, r.jsx)(o.Z, {
+    }), (0, r.jsx)(a.Z, {
       className: _,
       user: t,
       size: p
     }), "hidden" !== f && (0, r.jsx)("div", {
       className: s.rankBadge,
-      children: (0, r.jsx)(a._, {
+      children: (0, r.jsx)(o._, {
         rank: n,
         hideInnerBorder: "visibleWithoutBorder" === f
       })

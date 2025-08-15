@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 389303, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 389303, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 }), require("./388685.js");
@@ -12,12 +11,12 @@ var Chunk314897 = require("./314897.js"),
   Chunk85243 = require("./85243.js");
 
 function c(e) {
-  if (!e.isGuildVoice() || s.ZP.getGuildScheduledEventsByIndex(s.bN.CHANNEL_EVENT_ACTIVE(e.id)).length < 1 || !i.Z.can(l.AN, e)) returnfalse;
-  let t = new Set(o.ZP.getVoiceStatesForChannel(e).map(e => e.user.id)),
+  if (!e.isGuildVoice() || o.ZP.getGuildScheduledEventsByIndex(o.bN.CHANNEL_EVENT_ACTIVE(e.id)).length < 1 || !i.Z.can(s.AN, e)) returnfalse;
+  let t = new Set(l.ZP.getVoiceStatesForChannel(e).map(e => e.user.id)),
     n = r.default.getId();
   for (let r of t)
     if (r !== n && a.BT({
-        permission: l.AN,
+        permission: s.AN,
         user: r,
         context: e
       })) returnfalse;

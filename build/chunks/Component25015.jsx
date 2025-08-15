@@ -1,8 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 25015, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 31978 **/
+/** chunk id: 25015, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -17,75 +17,75 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk491068 = require("./491068.js");
-let m = Chunk73800.lazy(() => Promise.all([require.e("87597"), require.e("85831")]).then(require.bind(require, 120314)));
+let b = Chunk73800.lazy(() => Promise.all([require.e("87597"), require.e("85831")]).then(require.bind(require, 120314)));
 
-function g(e, t) {
+function h(e, t) {
   let {
-    hideSimpleEmbedContent: g,
-    formatInline: E = false,
-    noStyleAndInteraction: b = false,
-    isInteracting: y = false,
-    allowHeading: O = false,
-    allowList: v = false,
-    allowLinks: I = false,
-    allowDevLinks: T = false,
-    previewLinkTarget: S = false,
-    viewingChannelId: A
-  } = t, N = (0, a.p)(), C = o.d.useExperiment({
+    hideSimpleEmbedContent: h,
+    formatInline: y = false,
+    noStyleAndInteraction: O = false,
+    isInteracting: v = false,
+    allowHeading: j = false,
+    allowList: P = false,
+    allowLinks: x = false,
+    allowDevLinks: w = false,
+    previewLinkTarget: C = false,
+    viewingChannelId: S
+  } = t, E = (0, i.p)(), N = o.d.useExperiment({
     location: "useMessageRenderedContent"
-  }).enabled, R = (0, f.o)({
+  }).enabled, R = (0, p.o)({
     location: "useMessageRenderedContent"
-  }), [P, w] = i.useState(false), D = i.useCallback(e => {
-    e && w(true)
+  }), [T, Z] = l.useState(false), I = l.useCallback(e => {
+    e && Z(true)
   }, []);
-  return i.useEffect(() => {
-    w(false)
-  }, [e.content]), i.useMemo(() => {
+  return l.useEffect(() => {
+    Z(false)
+  }, [e.content]), l.useMemo(() => {
     if (null != e.customRenderedContent) return e.customRenderedContent;
     if (e.isUnsupported) return {
-      content: p.intl.string(p.t.sWi5ER),
+      content: g.intl.string(g.t.sWi5ER),
       hasSpoilerEmbeds: false
     };
-    if (e.isCommandType() && 0 === e.content.length || e.hasFlag(_.iLy.LOADING)) return (0, u.Z)(e);
-    if (e.type === _.uaV.CHANGELOG) {
+    if (e.isCommandType() && 0 === e.content.length || e.hasFlag(m.iLy.LOADING)) return (0, u.Z)(e);
+    if (e.type === m.uaV.CHANGELOG) {
       let {
         renderChangelogMessageMarkup: t
       } = n(55406);
-      return t(e, h, {
+      return t(e, f, {
         track: (e, t) => {
-          s.default.track(e, t)
+          a.default.track(e, t)
         }
       })
     }
     return R.enabled ? {
-      content: (0, r.jsx)(i.Suspense, {
+      content: (0, r.jsx)(l.Suspense, {
         children: (0, r.jsx)(d.v.Provider, {
           value: {
             messageId: e.id,
             channelId: e.channel_id,
-            viewingChannelId: A,
-            guildId: (0, l.k)(e),
-            setHasSpoilerEmbeds: D
+            viewingChannelId: S,
+            guildId: (0, s.k)(e),
+            setHasSpoilerEmbeds: I
           },
-          children: (0, r.jsx)(m, {
+          children: (0, r.jsx)(b, {
             content: e.content
           })
         })
       }),
-      hasSpoilerEmbeds: P
+      hasSpoilerEmbeds: T
     } : (0, c.ZP)(e, {
-      hideSimpleEmbedContent: g,
-      formatInline: E,
-      noStyleAndInteraction: b,
-      isInteracting: y,
-      allowHeading: O,
-      allowList: v,
-      allowLinks: I,
-      allowDevLinks: T,
-      previewLinkTarget: S,
-      shouldFilterKeywords: N,
-      viewingChannelId: A,
-      allowGameMentions: C
+      hideSimpleEmbedContent: h,
+      formatInline: y,
+      noStyleAndInteraction: O,
+      isInteracting: v,
+      allowHeading: j,
+      allowList: P,
+      allowLinks: x,
+      allowDevLinks: w,
+      previewLinkTarget: C,
+      shouldFilterKeywords: E,
+      viewingChannelId: S,
+      allowGameMentions: N
     })
-  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, g, E, b, y, O, v, I, S, N, T, A, R.enabled, C, P])
+  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, h, y, O, v, j, P, x, C, E, w, S, R.enabled, N, T])
 }

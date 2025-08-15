@@ -11,7 +11,7 @@ require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk31775 = require("./31775.js"),
-  a = require.n(Chunk31775),
+  o = require.n(Chunk31775),
   Chunk664751 = require("./664751.js"),
   Chunk261470 = require("./261470.js"),
   Chunk956664 = require("./956664.js"),
@@ -43,7 +43,7 @@ let m = 5,
   g = /\.webp($|\?|#)/i,
   E = /\.avif($|\?|#)/i,
   b = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096],
-  y = new(a())({
+  y = new(o())({
     max: 1e3
   });
 
@@ -136,8 +136,8 @@ function C(e) {
     src: t,
     sourceWidth: n,
     sourceHeight: r,
-    targetWidth: o,
-    targetHeight: a,
+    targetWidth: a,
+    targetHeight: o,
     format: l = null,
     quality: u = null,
     animated: f = false,
@@ -147,12 +147,12 @@ function C(e) {
   let [h, m] = N(t);
   null != l && (m.format = l), null != u && (m.quality = u), f && p && (g.test(t) || E.test(t)) && (m.animated = true), E.test(t) && (m.format = "webp");
   let b = (0, c.Tj)({
-    width: o,
-    height: a,
+    width: a,
+    height: o,
     maxWidth: _.hiG,
     maxHeight: _.hiG
   });
-  return o = b.width, a = b.height, (o !== n || a !== r) && (m.width = 0 | o, m.height = 0 | a), i().isEmpty(m) || (h += "?" + s.stringify(m)), h
+  return a = b.width, o = b.height, (a !== n || o !== r) && (m.width = 0 | a, m.height = 0 | o), i().isEmpty(m) || (h += "?" + s.stringify(m)), h
 }
 
 function R(e) {
@@ -161,14 +161,14 @@ function R(e) {
     width: n,
     height: r,
     maxWidth: i,
-    maxHeight: o,
-    ratio: a = 1,
+    maxHeight: a,
+    ratio: o = 1,
     format: s = null,
     quality: l = null,
     animated: c = false,
     srcIsAnimated: u = false
   } = e, d = n, _ = r;
-  a < 1 && (d = Math.round(n * a), _ = Math.round(r * a)), null != i && (d = Math.min(d, i)), null != o && (_ = Math.min(_, o));
+  o < 1 && (d = Math.round(n * o), _ = Math.round(r * o)), null != i && (d = Math.min(d, i)), null != a && (_ = Math.min(_, a));
   let p = (0, f.Z)();
   return C({
     src: t,

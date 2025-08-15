@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 941389, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37220 **/
+/** chunk id: 941389, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -14,11 +13,11 @@ var Chunk481060 = require("./481060.js"),
 
 function c(e, t) {
   let n = t.getGuildId();
-  return null != n && e.type === s.uaV.USER_JOIN && o.Z.canWithPartialContext(s.Plq.MANAGE_GUILD, {
+  return null != n && e.type === o.uaV.USER_JOIN && l.Z.canWithPartialContext(o.Plq.MANAGE_GUILD, {
     guildId: n
   }) ? (0, r.jsx)(i.sNh, {
     id: "configure",
-    label: l.intl.string(l.t.NpHUi4),
+    label: s.intl.string(s.t.NpHUi4),
     icon: i.idN,
     action: () => (0, a.zW)(t)
   }) : null

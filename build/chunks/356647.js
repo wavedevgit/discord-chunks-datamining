@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 356647, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 356647, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  f: () => _
+  f: () => p
 }), require("./388685.js"), require("./997841.js");
 var Chunk602715 = require("./602715.js"),
   Chunk258732 = require("./258732.js"),
@@ -14,7 +13,7 @@ var Chunk602715 = require("./602715.js"),
 let u = new Map;
 
 function d(e, t) {
-  let n = (0, l.ZP)({
+  let n = (0, s.ZP)({
       channelId: t,
       type: c.uaV.IN_GAME_MESSAGE_NUX,
       content: "",
@@ -22,21 +21,19 @@ function d(e, t) {
       flags: c.iLy.EPHEMERAL,
       state: c.yb.SENT
     }),
-    r = (0, s.e5)(n);
+    r = (0, o.e5)(n);
   return r.applicationId = e.applicationId, r.timestamp = e.timestamp, r
 }
 
-function f(e, t) {
-  var n, s;
-  if (u.get(t.id) === e.id) return d(e, t.id);
-  if (null == e.applicationId || !(0, a.yE)(e.flags, c.iLy.SENT_BY_SOCIAL_LAYER_INTEGRATION) || !t.isDM() || e.author.id === o.default.getId() || (0, a.yE)(null != (n = t.recipientFlags) ? n : 0, r.V.DISMISSED_IN_GAME_MESSAGE_NUX) || u.has(t.id)) return null;
-  let l = d(e, t.id);
-  u.set(t.id, e.id);
-  let f = (0, a.mB)(null != (s = t.recipientFlags) ? s : 0, r.V.DISMISSED_IN_GAME_MESSAGE_NUX, true);
-  return i.Z.updatePrivateChannelRecipientFlags(t.id, f), l
-}
-
-function _(e, t) {
-  let n = f(e, t);
+function p(e, t) {
+  let n = function(e, t) {
+    var n, o;
+    if (u.get(t.id) === e.id) return d(e, t.id);
+    if (null == e.applicationId || !(0, a.yE)(e.flags, c.iLy.SENT_BY_SOCIAL_LAYER_INTEGRATION) || !t.isDM() || e.author.id === l.default.getId() || (0, a.yE)(null != (n = t.recipientFlags) ? n : 0, r.V.DISMISSED_IN_GAME_MESSAGE_NUX) || u.has(t.id)) return null;
+    let s = d(e, t.id);
+    u.set(t.id, e.id);
+    let p = (0, a.mB)(null != (o = t.recipientFlags) ? o : 0, r.V.DISMISSED_IN_GAME_MESSAGE_NUX, true);
+    return i.Z.updatePrivateChannelRecipientFlags(t.id, p), s
+  }(e, t);
   return null != n ? n : null
 }

@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 562293, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 562293, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   H: () => a,
-  Z: () => s
+  Z: () => o
 });
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -13,19 +12,19 @@ function a(e) {
   let t = i()();
   if (e <= t) return;
   let n = e.diff(t, "days");
-  if (n > 1) return o.intl.formatToPlainString(o.t.dex68f, {
+  if (n > 1) return l.intl.formatToPlainString(l.t.dex68f, {
     days: n
   });
   let r = e.diff(t, "hours");
-  if (r > 1) return o.intl.formatToPlainString(o.t.BWqf0d, {
+  if (r > 1) return l.intl.formatToPlainString(l.t.BWqf0d, {
     hours: r
   });
   let a = e.diff(t, "minutes");
-  return o.intl.formatToPlainString(o.t["3SLXAw"], {
+  return l.intl.formatToPlainString(l.t["3SLXAw"], {
     minutes: a
   })
 }
 
-function s(e) {
+function o(e) {
   if (null != e) return a(e)
 }

@@ -65,8 +65,8 @@ function I(e, t) {
   if (null == e) return {};
   var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -74,8 +74,8 @@ function I(e, t) {
 function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let S = [Chunk409813.h8.PAYMENT_ELEMENT],
@@ -83,7 +83,7 @@ let S = [Chunk409813.h8.PAYMENT_ELEMENT],
     var {
       originalPaymentType: t,
       wallets: n = [],
-      analyticsContext: a,
+      analyticsContext: o,
       options: s,
       onChange: l,
       step: c
@@ -98,29 +98,29 @@ let S = [Chunk409813.h8.PAYMENT_ELEMENT],
         return [h.zK[t]]
       }, [t]),
       g = i.useCallback(e => {
-        if (c === d.h8.PAYMENT_ELEMENT && (null != l && l(e), null != a)) {
+        if (c === d.h8.PAYMENT_ELEMENT && (null != l && l(e), null != o)) {
           let {
             contextMetadata: t,
             activitySessionId: n,
             analyticsData: r
-          } = a, i = (0, h.hR)(e.value.type), o = null != i ? h.Ho[i] : e.value.type;
+          } = o, i = (0, h.hR)(e.value.type), a = null != i ? h.Ho[i] : e.value.type;
           f.default.track(m.rMx.PAYMENT_ELEMENT_CHANGED, {
             load_id: t.loadId,
             activity_session_id: n,
             location: r.location,
-            payment_element_selected_method: o,
+            payment_element_selected_method: a,
             payment_source_type: i,
             complete: e.complete,
             empty: e.empty
           })
         }
-      }, [l, a, c]),
+      }, [l, o, c]),
       E = i.useMemo(() => ({
         applePay: n.includes("applePay") ? "auto" : "never",
         googlePay: n.includes("googlePay") ? "auto" : "never",
         link: n.includes("link") ? "auto" : "never"
       }), [n]);
-    return (0, r.jsx)(o.PaymentElement, y({
+    return (0, r.jsx)(a.PaymentElement, y({
       id: "stripe-payment-element",
       options: y(v(y({}, null != p && {
         paymentMethodOrder: p
@@ -137,13 +137,13 @@ let S = [Chunk409813.h8.PAYMENT_ELEMENT],
     var {
       options: t,
       renderWithoutElement: n,
-      billingAddressInfo: a
+      billingAddressInfo: o
     } = e, s = I(e, ["options", "renderWithoutElement", "billingAddressInfo"]);
     let l = i.useMemo(() => {
         let {
           name: e,
           address: t
-        } = (0, _.XZ)(a);
+        } = (0, _.XZ)(o);
         return y({
           name: null != e ? e : null
         }, null != t && {
@@ -152,17 +152,17 @@ let S = [Chunk409813.h8.PAYMENT_ELEMENT],
             return true !== n
           }))
         })
-      }, [a]),
+      }, [o]),
       {
         stripe: c
       } = (0, u.JL)(),
-      d = i.useMemo(() => (0, r.jsx)(o.AddressElement, y({
+      d = i.useMemo(() => (0, r.jsx)(a.AddressElement, y({
         options: y({
           mode: "billing",
           defaultValues: l
         }, t)
       }, s)), [l, t, s]);
-    return n ? d : (0, r.jsx)(o.Elements, {
+    return n ? d : (0, r.jsx)(a.Elements, {
       stripe: c,
       children: d
     })
@@ -171,13 +171,13 @@ let S = [Chunk409813.h8.PAYMENT_ELEMENT],
     let {
       step: t,
       billingAddressInfo: n,
-      stripePaymentElementProps: a,
+      stripePaymentElementProps: o,
       stripeAddressElementProps: l,
       elementsRef: c,
       originalPaymentType: u,
       paymentElementSelectedType: f,
       analyticsContext: _
-    } = e, p = (0, o.useElements)();
+    } = e, p = (0, a.useElements)();
     i.useEffect(() => {
       c.current = p
     }, [p, c]);
@@ -190,7 +190,7 @@ let S = [Chunk409813.h8.PAYMENT_ELEMENT],
           [E.cardElementContainer]: f === g.He.CARD,
           [E.customPaymentElementContainer]: f === g.He.PAYPAL
         }),
-        children: (0, r.jsx)(A, v(y({}, a), {
+        children: (0, r.jsx)(A, v(y({}, o), {
           step: t,
           originalPaymentType: u,
           analyticsContext: _
@@ -210,19 +210,19 @@ let S = [Chunk409813.h8.PAYMENT_ELEMENT],
     } = e, n = I(e, ["onSetupError"]);
     let {
       elementsOptions: i,
-      isLoading: a,
+      isLoading: o,
       setupError: s
     } = (0, p.S)({
       onSetupError: t
     }), {
       stripe: c
     } = (0, u.JL)();
-    return a || null != s || null == c ? (0, r.jsx)("div", {
+    return o || null != s || null == c ? (0, r.jsx)("div", {
       className: E.loadingContainer,
       children: (0, r.jsx)(l.$jN, {
         type: l.$jN.Type.SPINNING_CIRCLE_SIMPLE
       })
-    }) : (0, r.jsx)(o.Elements, {
+    }) : (0, r.jsx)(a.Elements, {
       stripe: c,
       options: y({}, i),
       children: (0, r.jsx)(C, y({}, n))
@@ -235,16 +235,16 @@ let S = [Chunk409813.h8.PAYMENT_ELEMENT],
       step: t,
       handleStepChange: n,
       paymentElementsEnabled: r,
-      logger: o,
-      onBillingAddressChange: a,
+      logger: a,
+      onBillingAddressChange: o,
       shouldLogOnChangeEvents: s,
       continueSessionToInitialStep: l
     } = e, u = i.useRef(null), [f, _] = i.useState(false), [p, m] = i.useState(l === d.h8.CREDIT_CARD_INFORMATION ? g.He.CARD : null), E = r && (t === d.h8.PAYMENT_ELEMENT || t === d.h8.ADDRESS), b = i.useMemo(() => ({
       onChange: e => {
-        s && null != o && o.log("PaymentElements onChange event:", e), _(e.complete), m((0, h.hR)(e.value.type))
+        s && null != a && a.log("PaymentElements onChange event:", e), _(e.complete), m((0, h.hR)(e.value.type))
       },
       wallets: w
-    }), [o, s]), y = i.useMemo(() => ({
+    }), [a, s]), y = i.useMemo(() => ({
       onChange: e => {
         var t;
         let {
@@ -253,7 +253,7 @@ let S = [Chunk409813.h8.PAYMENT_ELEMENT],
             address: r,
             name: i
           }
-        } = e, o = {
+        } = e, a = {
           name: i,
           country: r.country,
           city: r.city,
@@ -262,12 +262,12 @@ let S = [Chunk409813.h8.PAYMENT_ELEMENT],
           state: r.state,
           postalCode: r.postal_code
         }, s = P.every(e => {
-          let t = o[e];
+          let t = a[e];
           return null != t && "" !== t
         }) && n;
-        a(o, s)
+        o(a, s)
       }
-    }), [a]), O = i.useCallback(function(e) {
+    }), [o]), O = i.useCallback(function(e) {
       let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
       true !== e && m(e), n(d.h8.PAYMENT_ELEMENT, t)
     }, [n]);

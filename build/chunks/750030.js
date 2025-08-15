@@ -1,12 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 750030, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 31978 **/
+/** chunk id: 750030, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  k: () => i
+  k: () => l
 }), require("./622822.js");
 var Chunk592125 = require("./592125.js");
 
-function i(e) {
+function l(e) {
   var t, n;
   return null != (n = null == (t = r.Z.getChannel(e.channel_id)) ? true : t.guild_id) ? n : true
 }

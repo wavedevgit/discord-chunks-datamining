@@ -2,7 +2,7 @@
 /** chunk id: 162461, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  DG: () => a,
+  DG: () => o,
   me: () => s,
   nP: () => f,
   sA: () => c,
@@ -12,7 +12,7 @@ require.d(exports, {
 var Chunk818083 = require("./818083.js"),
   Chunk518929 = require("./518929.js"),
   Chunk987338 = require("./987338.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
     kind: "user",
     id: "2024-03_content_inventory_memberlist_and_ranker",
     label: "Enables the memberlist content feed",
@@ -66,7 +66,7 @@ let a = (0, Chunk818083.B)({
 function c(e) {
   let {
     enabled: t
-  } = a.getCurrentConfig({
+  } = o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: true
@@ -78,7 +78,7 @@ function u(e) {
   let {
     enabled: t,
     impressionCappingEnabled: n
-  } = a.getCurrentConfig({
+  } = o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false

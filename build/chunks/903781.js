@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 903781, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 903781, original params: e,t,n (module,exports,require) **/
 module.exports = {
   container: "container__87dda",
   placeholderItem: "placeholderItem__87dda",

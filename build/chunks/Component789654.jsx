@@ -83,7 +83,7 @@ function E() {
   let e = (0, Chunk410030.Fg)(),
     [t, a, l, s, d, u] = (0, Chunk500949.zn)(),
     {
-      semanticColorOverrides: v,
+      semanticColorOverrides: f,
       rawColorOverrides: C,
       tab: O,
       scales: E
@@ -295,7 +295,7 @@ function S(e) {
   }, [a]), b = Object.keys(C).map(e => ({
     value: e,
     label: N(e)
-  })), f = Object.keys(u.b).map(e => ({
+  })), v = Object.keys(u.b).map(e => ({
     value: e,
     label: e
   }));
@@ -315,7 +315,7 @@ function S(e) {
           "--custom-color": "var(--".concat(e.label, ")")
         }
       }),
-      popoutLayerContext: v.O$
+      popoutLayerContext: f.O$
     }), (0, n.jsx)("ul", {
       className: g.overrides,
       children: Object.entries(i).map(e => {
@@ -376,7 +376,7 @@ function S(e) {
                   }
                 })
               },
-              popoutLayerContext: v.O$
+              popoutLayerContext: f.O$
             }), (0, n.jsx)(x.oil, {
               inputClassName: g.opacityInput,
               type: "number",
@@ -411,7 +411,7 @@ function S(e) {
       variant: "text-lg/semibold",
       children: "Raw Tokens"
     }), (0, n.jsx)(x.VcW, {
-      options: f,
+      options: v,
       placeholder: "Search for a raw color...",
       value: true,
       onChange: d,
@@ -426,7 +426,7 @@ function S(e) {
           }
         })
       },
-      popoutLayerContext: v.O$
+      popoutLayerContext: f.O$
     }), (0, n.jsx)("ul", {
       className: g.rawOverrides,
       children: Object.entries(s).map(e => {

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 597843, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 597843, original params: e,t,n (module,exports,require) **/
 module.exports = {
   root: "root__6981d",
   tileWrapper: "tileWrapper__6981d",

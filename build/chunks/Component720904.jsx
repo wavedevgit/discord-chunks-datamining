@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 720904, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37220 **/
+/** chunk id: 720904, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => P
 }), require("./781311.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk543241 = require("./543241.js"),
@@ -23,120 +22,111 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk561782 = require("./561782.js");
 
-function y(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function O(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function v(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
+let S = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
 
-function S(e) {
+function E(e) {
   var t;
   let {
     emoji: n,
     isFocused: i
   } = e, {
     animated: a,
-    src: l,
+    src: s,
     surrogates: c
   } = n;
-  return null == l && null != n.id ? l = p.ZP.getEmojiURL({
+  return null == s && null != n.id ? s = b.ZP.getEmojiURL({
     id: n.id,
     animated: !!a,
     size: 20
-  }) : null == l && (l = h.ZP.getURL(c)), (0, r.jsx)(s.ua7, {
+  }) : null == s && (s = p.ZP.getURL(c)), (0, r.jsx)(o.ua7, {
     text: n.allNamesString,
     hideOnClick: true,
     spacing: 16,
     forceOpen: i,
-    children: e => (0, r.jsx)("div", I(O({
-      "aria-label": E.intl.formatToPlainString(E.t["/iYSo6"], {
+    children: e => (0, r.jsx)("div", j(v({
+      "aria-label": m.intl.formatToPlainString(m.t["/iYSo6"], {
         emojiName: n.name
       }),
-      className: o()(b.button, {
-        [b.focused]: i
+      className: l()(h.button, {
+        [h.focused]: i
       })
     }, e), {
-      children: null == l || "" === l.trim() ? (0, r.jsx)("span", I(O({
-        className: o()("emoji", "emoji-text", b.icon)
+      children: null == s || "" === s.trim() ? (0, r.jsx)("span", j(v({
+        className: l()("emoji", "emoji-text", h.icon)
       }, e), {
         children: c
       })) : (0, r.jsx)("img", {
-        className: b.icon,
-        src: l,
+        className: h.icon,
+        src: s,
         alt: ""
       })
     }))
   }, null != (t = n.id) ? t : n.name)
 }
 
-function A(e, t) {
-  let n = (0, l.MZ)(t.guild_id).filter(e => {
+function P(e, t) {
+  let n = (0, s.MZ)(t.guild_id).filter(e => {
     var n;
-    return !(e.useSpriteSheet && T.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !h.ZP.isEmojiPremiumLocked({
+    return !(e.useSpriteSheet && S.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !p.ZP.isEmojiPremiumLocked({
       emoji: e,
       channel: t,
-      intention: g.Hz.REACTION
+      intention: y.Hz.REACTION
     })
   });
   n.length > 4 && (n.length = 4);
   let i = f.nc.useSetting(),
-    o = (0, d.$R)(t),
-    p = (0, a.e7)([_.Z], () => i && o && (t.isPrivate() || _.Z.can(m.Plq.ADD_REACTIONS, t)), [t, o, i]),
-    E = n => {
-      (0, c.rU)(t.id, e.id, (0, u.g1)(n), c.TW.MESSAGE_CONTEXT_MENU)
-    };
-  return p && n.length > 0 ? (0, r.jsx)(s.kSQ, {
-    className: b.wrapper,
-    children: n.map((e, t) => {
-      var n;
-      return (0, r.jsx)(s.sNh, {
-        id: "quickreact-".concat(null != (n = e.id) ? n : t),
-        render: t => {
+    l = (0, d.$R)(t);
+  return (0, a.e7)([g.Z], () => i && l && (t.isPrivate() || g.Z.can(O.Plq.ADD_REACTIONS, t)), [t, l, i]) && n.length > 0 ? (0, r.jsx)(o.kSQ, {
+    className: h.wrapper,
+    children: n.map((n, i) => {
+      var l;
+      return (0, r.jsx)(o.sNh, {
+        id: "quickreact-".concat(null != (l = n.id) ? l : i),
+        render: e => {
           let {
-            isFocused: n
-          } = t;
-          return (0, r.jsx)(S, {
-            emoji: e,
-            isFocused: n
+            isFocused: t
+          } = e;
+          return (0, r.jsx)(E, {
+            emoji: n,
+            isFocused: t
           })
         },
-        action: () => E(e),
+        action: () => {
+          (0, c.rU)(t.id, e.id, (0, u.g1)(n), c.TW.MESSAGE_CONTEXT_MENU)
+        },
         dontCloseOnActionIfHoldingShiftKey: true
-      }, t)
+      }, i)
     })
   }) : null
 }

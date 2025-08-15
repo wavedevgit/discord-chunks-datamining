@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 73274, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 73274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => d
 });
 var Chunk73800 = require("./73800.js"),
   Chunk924826 = require("./924826.js"),
@@ -13,29 +12,25 @@ var Chunk73800 = require("./73800.js"),
   Chunk959517 = require("./959517.js"),
   Chunk981631 = require("./981631.js");
 
-function d(e, t) {
-  if (null == e) return {};
-  var n, r, i = f(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function f(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-
-function _(e) {
+function d(e) {
   var {
     scrollerRef: t
-  } = e, n = d(e, ["scrollerRef"]);
-  let f = (0, o.Z)(() => {
+  } = e, n = function(e, t) {
+    if (null == e) return {};
+    var n, r, i = function(e, t) {
+      if (null == e) return {};
+      var n, r, i = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
+    }(e, t);
+    if (Object.getOwnPropertySymbols) {
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    }
+    return i
+  }(e, ["scrollerRef"]);
+  let d = (0, l.Z)(() => {
       let e = t.current;
       return null == e ? Promise.resolve() : new Promise(t => {
         e.scrollToBottom({
@@ -43,7 +38,7 @@ function _(e) {
         })
       })
     }),
-    _ = (0, o.Z)(() => {
+    p = (0, l.Z)(() => {
       let e = t.current;
       return null == e ? Promise.resolve() : new Promise(t => {
         e.scrollToTop({
@@ -51,28 +46,28 @@ function _(e) {
         })
       })
     }),
-    p = r.useCallback(e => {
-      var r, i, o;
+    h = r.useCallback(e => {
+      var r, i, l;
       if (!n.keyboardModeEnabled) return;
       let a = null == (i = t.current) || null == (r = i.getScrollerNode()) ? true : r.ownerDocument,
-        s = null == a ? true : a.querySelector(e);
-      null != s && (null == (o = t.current) || o.scrollIntoViewNode({
-        node: s,
+        o = null == a ? true : a.querySelector(e);
+      null != o && (null == (l = t.current) || l.scrollIntoViewNode({
+        node: o,
         padding: 4 * c.kQ,
-        callback: () => null == s ? true : s.focus()
+        callback: () => null == o ? true : o.focus()
       }))
     }, [n.keyboardModeEnabled, t]),
-    h = r.useCallback(() => {
-      n.hasMoreAfter || s.S.dispatchToLastSubscribed(u.CkL.TEXTAREA_FOCUS)
+    f = r.useCallback(() => {
+      n.hasMoreAfter || o.S.dispatchToLastSubscribed(u.CkL.TEXTAREA_FOCUS)
     }, [n.hasMoreAfter]),
     m = (0, i.ZP)({
-      id: l.W,
+      id: s.W,
       preserveFocusPosition: false,
-      setFocus: p,
+      setFocus: h,
       isEnabled: n.keyboardModeEnabled && !n.isEditing,
-      scrollToStart: _,
-      scrollToEnd: f,
-      onNavigateNextAtEnd: h
+      scrollToStart: p,
+      scrollToEnd: d,
+      onNavigateNextAtEnd: f
     }),
     g = r.useCallback(e => {
       let {

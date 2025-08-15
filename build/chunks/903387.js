@@ -2,7 +2,7 @@
 /** chunk id: 903387, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk58406 = require("./58406.js");
 class i extends Chunk58406.g {
@@ -18,4 +18,4 @@ class i extends Chunk58406.g {
   }
   openAlertModal(e) {}
 }
-let o = new i
+let a = new i

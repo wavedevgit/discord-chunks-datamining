@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 313876, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 313876, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 }), require("./953529.js");
@@ -17,17 +16,17 @@ function c(e) {
   let {
     author: c,
     inviteError: u
-  } = e, d = (0, i.e7)([a.default], () => a.default.getId()) === c.id ? l.intl.string(l.t.C89OLC) : l.intl.string(l.t["YVub5+"]), f = (0, s.l)(null == u ? true : u.code);
-  return (0, r.jsxs)(o.Z, {
-    children: [(0, r.jsx)(o.Z.Header, {
+  } = e, d = (0, i.e7)([a.default], () => a.default.getId()) === c.id ? s.intl.string(s.t.C89OLC) : s.intl.string(s.t["YVub5+"]), p = (0, o.l)(null == u ? true : u.code);
+  return (0, r.jsxs)(l.Z, {
+    children: [(0, r.jsx)(l.Z.Header, {
       text: d
-    }), (0, r.jsxs)(o.Z.Body, {
-      children: [(0, r.jsx)(o.Z.Icon, {
+    }), (0, r.jsxs)(l.Z.Body, {
+      children: [(0, r.jsx)(l.Z.Icon, {
         expired: true
-      }), (0, r.jsx)(o.Z.Info, {
+      }), (0, r.jsx)(l.Z.Info, {
         expired: true,
-        title: null != (t = null == f ? true : f.title) ? t : l.intl.string(l.t["Jhx/ub"]),
-        children: null != (n = null == f ? true : f.description) ? n : null == u ? true : u.message
+        title: null != (t = null == p ? true : p.title) ? t : s.intl.string(s.t["Jhx/ub"]),
+        children: null != (n = null == p ? true : p.description) ? n : null == u ? true : u.message
       })]
     })]
   })

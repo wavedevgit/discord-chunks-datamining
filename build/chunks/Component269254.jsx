@@ -1,7 +1,7 @@
 /** Chunk was on 39010 **/
-/** chunk id: 269254, original params: t,e,i (module,exports,require) **/
+/** chunk id: 269254, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => p
 }), require("./35282.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -15,32 +15,32 @@ var Chunk828214 = require("./828214.js"),
   Chunk691251 = require("./691251.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(t) {
+function p(t) {
   let {
     target: e,
-    onSelect: i
-  } = t, b = e.getAttribute("data-type"), g = e.getAttribute("data-id"), S = e.getAttribute("data-name"), h = e.getAttribute("data-surrogates"), k = "true" === e.getAttribute("data-animated"), v = u.Sb.useSetting(), x = (0, c.Z)({
-    type: b,
+    onSelect: n
+  } = t, p = e.getAttribute("data-type"), g = e.getAttribute("data-id"), f = e.getAttribute("data-name"), O = e.getAttribute("data-surrogates"), y = "true" === e.getAttribute("data-animated"), j = u.Sb.useSetting(), S = (0, c.Z)({
+    type: p,
     id: g,
-    name: S,
+    name: f,
     isInExpressionPicker: true
-  }), A = null != h ? (0, n.jsx)(a.sN, {
+  }), v = null != O ? (0, r.jsx)(i.sN, {
     id: "copy",
-    label: p.intl.string(p.t.ad58UF),
-    action: () => (0, d.JG)(h)
-  }) : null, I = (0, r.Z)({
+    label: d.intl.string(d.t.ad58UF),
+    action: () => (0, s.JG)(O)
+  }) : null, E = (0, a.Z)({
     id: g,
-    shiftId: b === o.S.EMOJI ? "<".concat(k ? "a" : "", ":").concat(null == S ? true : S.split("~")[0], ":").concat(g, ">") : true,
-    label: b === o.S.STICKER ? p.intl.string(p.t["SJ324+"]) : p.intl.string(p.t.Ap2oV1)
+    shiftId: p === b.S.EMOJI ? "<".concat(y ? "a" : "", ":").concat(null == f ? true : f.split("~")[0], ":").concat(g, ">") : true,
+    label: p === b.S.STICKER ? d.intl.string(d.t["SJ324+"]) : d.intl.string(d.t.Ap2oV1)
   });
-  return (0, n.jsx)(s.v2r, {
+  return (0, r.jsx)(l.v2r, {
     navId: "expression-picker",
-    onClose: l.Zy,
-    "aria-label": p.intl.string(p.t.XoasSE),
-    onSelect: i,
+    onClose: o.Zy,
+    "aria-label": d.intl.string(d.t.XoasSE),
+    onSelect: n,
     className: "context-menu",
-    children: (0, n.jsxs)(s.kSQ, {
-      children: [x, d.wS && v ? null != A ? A : I : null]
+    children: (0, r.jsxs)(l.kSQ, {
+      children: [S, s.wS && j ? null != v ? v : E : null]
     })
   })
 }

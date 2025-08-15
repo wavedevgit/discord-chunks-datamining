@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 297047, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 78086 **/
+/** chunk id: 297047, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => h,
+  Z: () => g,
   q: () => p
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js");
@@ -18,32 +17,29 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e, t) {
+function p(e, n) {
   let {
-    id: n
+    id: t
   } = e, r = "@".concat(d.ZP.getUserTag(e, {
     decoration: "never"
-  })), i = "<@".concat(n, ">");
+  }));
   u.S.dispatchToLastSubscribed(f.CkL.INSERT_TEXT, {
     plainText: r,
-    rawText: i
-  }), null != t && a.Z.startTyping(t)
+    rawText: "<@".concat(t, ">")
+  }), null != n && o.Z.startTyping(n)
 }
 
-function h(e, t, n) {
-  let [a, u] = (0, i.Wu)([c.Z, s.Z, l.Z], () => {
-    let e = c.Z.getChannelId(t),
-      n = s.Z.getChannel(e);
-    return [e, null != n && (n.isMultiUserDM() || l.Z.can(f.Plq.SEND_MESSAGES, n))]
-  }, [t]), d = n === f.IlC.POPOUT;
-  if (!u || d) return null;
-
-  function h() {
-    p(e, a)
-  }
-  return (0, r.jsx)(o.sNh, {
+function g(e, n, t) {
+  let [o, u] = (0, i.Wu)([s.Z, a.Z, c.Z], () => {
+    let e = s.Z.getChannelId(n),
+      t = a.Z.getChannel(e);
+    return [e, null != t && (t.isMultiUserDM() || c.Z.can(f.Plq.SEND_MESSAGES, t))]
+  }, [n]), d = t === f.IlC.POPOUT;
+  return !u || d ? null : (0, r.jsx)(l.sNh, {
     id: "mention",
-    label: _.intl.string(_.t.P8tvKC),
-    action: h
+    label: h.intl.string(h.t.P8tvKC),
+    action: function() {
+      p(e, o)
+    }
   })
 }

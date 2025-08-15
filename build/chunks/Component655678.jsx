@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk328908 = require("./328908.js"),
   Chunk992970 = require("./992970.js"),
@@ -19,16 +19,16 @@ var Chunk255367 = require("./255367.js"),
 function p(e, t) {
   let {
     disabled: n,
-    channel: o
-  } = e, p = (0, l.LN)(o.id), h = i.useCallback(() => {
-    (0, l.Rg)(o.id, c.MG.MessageComposerButtons)
-  }, [o.id]);
+    channel: a
+  } = e, p = (0, l.LN)(a.id), h = i.useCallback(() => {
+    (0, l.Rg)(a.id, c.MG.MessageComposerButtons)
+  }, [a.id]);
   return n ? null : (0, r.jsx)("div", {
-    className: a()(d.CT, _.buttonContainer),
+    className: o()(d.CT, _.buttonContainer),
     ref: t,
     children: (0, r.jsx)(u.Z, {
-      className: a()(_.button, _.messageConfettiButton),
-      childClassName: a()(_.messageConfettiIcon, {
+      className: o()(_.button, _.messageConfettiButton),
+      childClassName: o()(_.messageConfettiIcon, {
         [_.active]: p
       }),
       onClick: h,

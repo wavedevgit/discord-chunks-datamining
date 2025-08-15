@@ -538,12 +538,12 @@ er.Header = en, er.Body = e => {
     participants: a
   } = e, [o, c] = l.useState(null), d = t.application_id;
   l.useEffect(() => {
-    null != d && (0, V.hR)(d, ["embedded_background"]).then(e => {
+    null != d && (0, B.hR)(d, ["embedded_background"]).then(e => {
       let [t] = e;
       return c(t)
     })
   }, [d]);
-  let p = (0, s.Wu)([M.default, D.default], () => Array.from(a).map(e => D.default.getId() === e ? null : M.default.getUser(e)).filter(B.lm)),
+  let p = (0, s.Wu)([M.default, D.default], () => Array.from(a).map(e => D.default.getId() === e ? null : M.default.getUser(e)).filter(V.lm)),
     h = (0, f.O)(),
     {
       analyticsLocations: m
@@ -554,7 +554,7 @@ er.Header = en, er.Body = e => {
   let _ = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at
     } : true,
-    O = (0, V.xF)(b.id, o, 300);
+    O = (0, B.xF)(b.id, o, 300);
   return (0, i.jsxs)(J, {
     children: [(0, i.jsxs)("div", {
       className: Y.embeddedActivityTopRow,

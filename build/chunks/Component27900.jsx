@@ -1,7 +1,7 @@
 /** Chunk was on 6524 **/
 /** chunk id: 27900, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => I
+  default: () => T
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -27,7 +27,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -66,115 +66,115 @@ function A(e) {
     channelId: o,
     mediaEngineContext: a,
     onSelect: c,
-    onShowProfile: S,
-    onWatchStream: h,
+    onShowProfile: p,
+    onWatchStream: j,
     appContext: P
   } = e, A = (0, v.Z)({
     onAction: () => {
-      null == S || S()
+      null == p || p()
     }
-  }), M = (0, Z.Z)({
+  }), I = (0, E.Z)({
     user: t,
     context: P
-  }), I = (0, b.Z)({
+  }), T = (0, g.Z)({
     user: t,
     appContext: P
-  }), x = (0, p.Z)(t.id, h), C = (0, m.Z)(t.id), D = (0, E.Z)(t.id, a), N = (0, j.Z)({
+  }), M = (0, m.Z)(t.id, j), D = (0, Z.Z)(t.id), N = (0, h.Z)(t.id, a), C = (0, y.Z)({
     user: t
-  }), T = (0, u.Z)(null, t), w = (0, f.Z)({
+  }), w = (0, u.Z)(null, t), x = (0, f.Z)({
     user: t,
     appContext: P
   }), U = (0, O.Z)({
     user: t,
     appContext: P
-  }), k = (0, y.Z)({
+  }), k = (0, _.Z)({
     user: t,
     appContext: P
-  }), L = (0, s.Z)({
+  }), R = (0, d.Z)({
     id: t.id,
-    label: _.intl.string(_.t["/AXYnJ"])
-  }), R = (0, d.Z)(t), B = (0, g.Z)(t, n, o), V = t.isNonUserBot();
+    label: S.intl.string(S.t["/AXYnJ"])
+  }), L = (0, s.Z)(t), B = (0, b.Z)(t, n, o), V = t.isNonUserBot();
   return (0, l.jsxs)(r.v2r, {
     navId: "user-context",
     onClose: i.Zy,
-    "aria-label": _.intl.string(_.t.liqwPD),
+    "aria-label": S.intl.string(S.t.liqwPD),
     onSelect: c,
     children: [!V && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(r.kSQ, {
-        children: R
+        children: L
       }), (0, l.jsxs)(r.kSQ, {
-        children: [A, M, I, x]
+        children: [A, I, T, M]
       }), (0, l.jsx)(r.kSQ, {
-        children: C
+        children: D
       }), (0, l.jsx)(r.kSQ, {
-        children: T
+        children: w
       }), (0, l.jsxs)(r.kSQ, {
-        children: [D, N, w, k, U]
+        children: [N, C, x, k, U]
       }), (0, l.jsx)(r.kSQ, {
         children: B
       })]
     }), (0, l.jsx)(r.kSQ, {
-      children: L
+      children: R
     })]
   })
 }
 
-function M(e) {
+function I(e) {
   let {
     user: t,
     mediaEngineContext: n,
     onSelect: o,
     onShowProfile: a,
     onWatchStream: c,
-    appContext: g
-  } = e, S = (0, v.Z)({
+    appContext: b
+  } = e, p = (0, v.Z)({
     onAction: () => {
       null == a || a()
     }
-  }), h = (0, Z.Z)({
+  }), j = (0, E.Z)({
     user: t,
-    context: g
-  }), P = (0, b.Z)({
+    context: b
+  }), P = (0, g.Z)({
     user: t,
-    appContext: g
-  }), A = (0, p.Z)(t.id, c), M = (0, m.Z)(t.id), I = (0, E.Z)(t.id, n), x = (0, j.Z)({
+    appContext: b
+  }), A = (0, m.Z)(t.id, c), I = (0, Z.Z)(t.id), T = (0, h.Z)(t.id, n), M = (0, y.Z)({
     user: t
-  }), C = (0, u.Z)(null, t), D = (0, f.Z)({
+  }), D = (0, u.Z)(null, t), N = (0, f.Z)({
     user: t,
-    appContext: g
-  }), N = (0, O.Z)({
+    appContext: b
+  }), C = (0, O.Z)({
     user: t,
-    appContext: g
-  }), T = (0, y.Z)({
+    appContext: b
+  }), w = (0, _.Z)({
     user: t,
-    appContext: g
-  }), w = (0, s.Z)({
+    appContext: b
+  }), x = (0, d.Z)({
     id: t.id,
-    label: _.intl.string(_.t["/AXYnJ"])
-  }), U = (0, d.Z)(t), k = t.isNonUserBot();
+    label: S.intl.string(S.t["/AXYnJ"])
+  }), U = (0, s.Z)(t), k = t.isNonUserBot();
   return (0, l.jsxs)(r.v2r, {
     navId: "user-context",
     onClose: i.Zy,
-    "aria-label": _.intl.string(_.t.liqwPD),
+    "aria-label": S.intl.string(S.t.liqwPD),
     onSelect: o,
     children: [!k && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(r.kSQ, {
         children: U
       }), (0, l.jsxs)(r.kSQ, {
-        children: [S, h, P, A]
+        children: [p, j, P, A]
       }), (0, l.jsx)(r.kSQ, {
-        children: M
+        children: I
       }), (0, l.jsx)(r.kSQ, {
-        children: C
+        children: D
       }), (0, l.jsxs)(r.kSQ, {
-        children: [I, x, D, T, N]
+        children: [T, M, N, w, C]
       })]
     }), (0, l.jsx)(r.kSQ, {
-      children: w
+      children: x
     })]
   })
 }
-let I = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let T = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   var {
     guildId: t,
     channelId: n
@@ -193,10 +193,10 @@ let I = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     }
     return r
   }(e, ["guildId", "channelId"]);
-  return null != t && null != n ? (0, l.jsx)(A, P(h({}, r), {
+  return null != t && null != n ? (0, l.jsx)(A, P(j({}, r), {
     guildId: t,
     channelId: n
-  })) : (0, l.jsx)(M, P(h({}, r), {
+  })) : (0, l.jsx)(I, P(j({}, r), {
     guildId: t,
     channelId: n
   }))

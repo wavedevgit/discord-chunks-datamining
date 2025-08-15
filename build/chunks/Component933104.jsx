@@ -1,9 +1,9 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 933104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $h: () => I,
+  $h: () => P,
   cO: () => w,
-  jG: () => P,
+  jG: () => I,
   yI: () => N
 });
 var Chunk255367 = require("./255367.js");
@@ -32,7 +32,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk283902 = require("./283902.js"),
   Chunk225375 = require("./225375.js");
 
-function P(e) {
+function I(e) {
   let {
     guildId: t,
     powerup: n,
@@ -54,7 +54,7 @@ function P(e) {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     guildId: t,
     markAsDismissed: n
@@ -71,7 +71,7 @@ function I(e) {
     onClick: () => i ? (0, g.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERKS) : (0, d.f)({
       guildId: t,
       location: {
-        section: _.jXE.GUILD_POWERUPS_NEW_PERKS_COACHMARK
+        section: O.jXE.GUILD_POWERUPS_NEW_PERKS_COACHMARK
       }
     }),
     markAsDismissed: n,
@@ -136,7 +136,7 @@ function w(e) {
     markAsDismissed: i,
     buttonCTA: j.intl.string(j.t.RzWDqa)
   });
-  let a = n.find(e => O.NL.has(e.skuId));
+  let a = n.find(e => _.NL.has(e.skuId));
   return null != a ? (0, r.jsx)(Z, {
     header: j.intl.string(v.default["kA2c+v"]),
     content: j.intl.string(v.default.TUilLi),

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 589049, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 589049, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -15,20 +14,19 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f() {
+function p() {
   let e = (0, Chunk40851.bp)(),
     {
       analyticsLocations: t
-    } = (0, Chunk906732.ZP)(),
-    n = () => {
-      (0, Chunk174609.Z)(), Chunk230711.Z.open(Chunk981631.oAB.VOICE, null, {
-        analyticsLocations: exports
-      })
-    };
+    } = (0, Chunk906732.ZP)();
   return module === Chunk981631.IlC.APP || Chunk358085.isPlatformEmbedded ? (0, Chunk255367.jsx)(Chunk481060.sNh, {
     id: "voice-and-video-settings",
     label: Chunk388032.intl.string(Chunk388032.t.dsXapK),
-    action: require,
+    action: () => {
+      (0, Chunk174609.Z)(), Chunk230711.Z.open(Chunk981631.oAB.VOICE, null, {
+        analyticsLocations: exports
+      })
+    },
     icon: Chunk481060.ewm
   }) : null
 }

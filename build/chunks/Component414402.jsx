@@ -23,11 +23,11 @@ function f(e) {
   } = e, {
     themeType: _
   } = (0, s.z)();
-  if (!(0, o.Z)(n, u.xjy.INSTANCE)) return null;
+  if (!(0, a.Z)(n, u.xjy.INSTANCE)) return null;
   let p = e => {
     e.stopPropagation(), null == f || f({
       action: "PRESS_NOTIFY_BUTTON"
-    }), new a.Z("UserActivityActions").log("notify", t.id, n)
+    }), new o.Z("UserActivityActions").log("notify", t.id, n)
   };
   return _ === c.lY.MODAL_V2 ? (0, r.jsx)(l.tG, {
     text: d.intl.string(d.t.vwl1PD),

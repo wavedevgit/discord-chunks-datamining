@@ -75,13 +75,13 @@ class I extends Chunk147913.Z {
     }), b(this, "handleGuildMemberUpdate", e => {
       let {
         flags: t,
-        user: o,
-        guildId: a
+        user: a,
+        guildId: o
       } = e;
-      if (o.id === s.default.getId() && !this.onboardingCompleteGuilds.has(a) && (0, d.yE)(null != t ? t : 0, E.q.COMPLETED_HOME_ACTIONS)) {
+      if (a.id === s.default.getId() && !this.onboardingCompleteGuilds.has(o) && (0, d.yE)(null != t ? t : 0, E.q.COMPLETED_HOME_ACTIONS)) {
         var l, c;
-        this.onboardingCompleteGuilds.add(a);
-        let e = null != (c = null == (l = _.Z.getNewMemberActions(a)) ? true : l.length) ? c : 0;
+        this.onboardingCompleteGuilds.add(o);
+        let e = null != (c = null == (l = _.Z.getNewMemberActions(o)) ? true : l.length) ? c : 0;
         if (0 === e) return;
         (0, i.ZDy)(async () => {
           let {
@@ -107,8 +107,8 @@ class I extends Chunk147913.Z {
       let {
         memberActions: r,
         completedActions: i
-      } = await this._getOrLoadOnboardingMemberActions(t), o = null == r ? true : r.find(e => e.channelId === n);
-      (null == i ? true : i[n]) !== true && null != o && o.actionType === p.oi.VIEW && (0, f.Oh)(t, n)
+      } = await this._getOrLoadOnboardingMemberActions(t), a = null == r ? true : r.find(e => e.channelId === n);
+      (null == i ? true : i[n]) !== true && null != a && a.actionType === p.oi.VIEW && (0, f.Oh)(t, n)
     }), b(this, "handleMessageSend", e => {
       var t;
       let {
@@ -117,8 +117,8 @@ class I extends Chunk147913.Z {
         message: i
       } = e;
       if (null == n || null == r || (null == (t = i.author) ? true : t.id) !== s.default.getId()) return;
-      let o = l.Z.getChannel(r);
-      (null == o ? true : o.isForumPost()) && (null == o ? true : o.parent_id) != null && this._completeChatAction(n, o.parent_id), this._completeChatAction(n, r)
+      let a = l.Z.getChannel(r);
+      (null == a ? true : a.isForumPost()) && (null == a ? true : a.parent_id) != null && this._completeChatAction(n, a.parent_id), this._completeChatAction(n, r)
     }), b(this, "handleThreadCreate", e => {
       var t;
       let {
@@ -134,14 +134,14 @@ class I extends Chunk147913.Z {
       (null == r ? true : r[t]) !== true && null != i && i.actionType === p.oi.CHAT && (0, f.Oh)(e, t)
     }), b(this, "_getOrLoadOnboardingMemberActions", async e => {
       let t = (0, m.s)(e),
-        n = a.Z.isFullServerPreview(e);
+        n = o.Z.isFullServerPreview(e);
       if (!t && !n) return {};
       let r = c.ZP.getSelfMember(e);
       if (null == r || !(0, g.m)(e)) return {};
-      let [i, o] = await Promise.all([this._getOrLoadOnboardingHomeSettings(e), this._getOrLoadMemberActions(e, r)]);
+      let [i, a] = await Promise.all([this._getOrLoadOnboardingHomeSettings(e), this._getOrLoadMemberActions(e, r)]);
       return {
         memberActions: i,
-        completedActions: o
+        completedActions: a
       }
     }), b(this, "_getOrLoadOnboardingHomeSettings", async e => {
       let t = _.Z.getNewMemberActions(e),

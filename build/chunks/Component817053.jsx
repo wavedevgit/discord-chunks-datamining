@@ -1,4 +1,4 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 817053, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -85,11 +85,11 @@ function g(e) {
     trackEntryPointImpression: true
   }), y = null != n ? n : d.intl.string(d.t.GIWFlJ), O = d.intl.formatToPlainString(d.t["8QLQBw"], {
     gameName: y
-  }), x = e => b ? e() : (0, r.jsx)(a.ua7, {
+  }), h = e => b ? e() : (0, r.jsx)(a.ua7, {
     text: y,
     children: t => e(t)
   });
-  return x(null == j ? e => (0, r.jsx)("div", p(f({
+  return h(null == j ? e => (0, r.jsx)("div", p(f({
     className: g
   }, e), {
     children: (0, r.jsx)(m, {

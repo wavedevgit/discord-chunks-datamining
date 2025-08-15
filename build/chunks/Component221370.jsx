@@ -31,9 +31,9 @@ function m(e) {
   }
   return e
 }
-let g = [Chunk758713.z.DESKTOP, Chunk758713.z.XBOX, Chunk758713.z.PLAYSTATION, Chunk758713.z.NINTENDO];
+let f = [Chunk758713.z.DESKTOP, Chunk758713.z.XBOX, Chunk758713.z.PLAYSTATION, Chunk758713.z.NINTENDO];
 
-function p(e) {
+function g(e) {
   var {
     platform: t
   } = e, r = function(e, t) {
@@ -73,12 +73,12 @@ function p(e) {
   }
 }
 
-function f(e) {
+function p(e) {
   let {
     platforms: t
   } = e;
   return (0, n.jsx)("div", {
-    className: l()(u.row, u.gapSm),
+    className: l()(d.row, d.gapSm),
     style: {
       alignItems: "center"
     },
@@ -86,20 +86,20 @@ function f(e) {
       text: function(e) {
         switch (e) {
           case o.z.DESKTOP:
-            return d.intl.string(d.t.KT6uCA);
+            return u.intl.string(u.t.KT6uCA);
           case o.z.XBOX:
-            return d.intl.string(d.t.DDWUJi);
+            return u.intl.string(u.t.DDWUJi);
           case o.z.PLAYSTATION:
-            return d.intl.string(d.t.fzMz2t);
+            return u.intl.string(u.t.fzMz2t);
           case o.z.NINTENDO:
-            return d.intl.string(d.t.AMW8jY);
+            return u.intl.string(u.t.AMW8jY);
           default:
             return null
         }
       }(e),
       children: t => {
         var r, a;
-        return (0, n.jsx)(p, (r = m({}, t), a = a = {
+        return (0, n.jsx)(g, (r = m({}, t), a = a = {
           platform: e
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var r = Object.keys(e);
@@ -123,11 +123,11 @@ function x(e) {
   } = e, i = a.useMemo(() => {
     let e = new Set(t.platforms),
       r = [...e];
-    return !e.has(o.z.DESKTOP) && (e.has(o.z.MACOS) || e.has(o.z.LINUX)) && r.push(o.z.DESKTOP), r.filter(e => g.includes(e))
+    return !e.has(o.z.DESKTOP) && (e.has(o.z.MACOS) || e.has(o.z.LINUX)) && r.push(o.z.DESKTOP), r.filter(e => f.includes(e))
   }, [t.platforms]);
   return 0 === i.length ? null : (0, n.jsx)("div", {
-    className: l()(u.column, u.gapLg, r),
-    children: i.length > 0 && (0, n.jsx)(f, {
+    className: l()(d.column, d.gapLg, r),
+    children: i.length > 0 && (0, n.jsx)(p, {
       platforms: i
     })
   })

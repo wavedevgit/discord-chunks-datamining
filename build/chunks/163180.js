@@ -8,7 +8,7 @@ module.exports = function(e) {
       className: "literal",
       begin: "\\b(t{1}|nil)\\b"
     },
-    o = {
+    a = {
       className: "number",
       variants: [{
         begin: r,
@@ -24,7 +24,7 @@ module.exports = function(e) {
         end: "\\)"
       }]
     },
-    a = e.inherit(e.QUOTE_STRING_MODE, {
+    o = e.inherit(e.QUOTE_STRING_MODE, {
       illegal: null
     }),
     s = e.COMMENT(";", "$", {
@@ -48,10 +48,10 @@ module.exports = function(e) {
     f = {
       begin: "\\(",
       end: "\\)",
-      contains: ["self", i, a, o, u]
+      contains: ["self", i, o, a, u]
     },
     _ = {
-      contains: [o, a, l, c, f, u],
+      contains: [a, o, l, c, f, u],
       variants: [{
         begin: "['`]\\(",
         end: "\\)"
@@ -88,9 +88,9 @@ module.exports = function(e) {
     }, {
       begin: n
     }]
-  }, m], m.contains = [_, p, h, i, o, a, s, l, c, d, u], {
+  }, m], m.contains = [_, p, h, i, a, o, s, l, c, d, u], {
     name: "Lisp",
     illegal: /\S/,
-    contains: [o, e.SHEBANG(), i, a, s, _, p, h, u]
+    contains: [a, e.SHEBANG(), i, o, s, _, p, h, u]
   }
 }

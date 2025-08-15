@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 905041, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96473 **/
+/** chunk id: 905041, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => m
 }), require("./704826.js"), require("./35282.js"), require("./539854.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -18,75 +17,70 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function m(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      h(e, t, n[t])
+function p(t) {
+  for (var n = 1; n < arguments.length; n++) {
+    var e = null != arguments[n] ? arguments[n] : {},
+      l = Object.keys(e);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(e).filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    }))), l.forEach(function(n) {
+      var l;
+      l = e[n], n in t ? Object.defineProperty(t, n, {
+        value: l,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : t[n] = l
     })
   }
-  return e
+  return t
 }
-let g = /^(tel|sms|mailto):([^?;]+)/;
+let b = /^(tel|sms|mailto):([^?;]+)/;
 
-function E(e, t, n, h) {
-  let E = (0, a.Z)(null == n ? true : n.getChannelId());
-  if (!u.isPlatformEmbedded || null == e || "" === e || E || (null == h ? true : h.shouldHideMediaOptions) === true || !(0, o.Jj)(e)) return null;
-  let b = (0, s.F)(e),
-    y = e => {
-      l.default.track(_.rMx.CONTEXT_MENU_LINK_COPIED, m({
-        hostname: b
-      }, (0, f.v)())), d.ZP.copy(e), (0, i.showToast)((0, i.createToast)(p.intl.string(p.t["L/PwZW"]), i.ToastType.SUCCESS))
+function m(t, n, e, m) {
+  let g = (0, a.Z)(null == e ? true : e.getChannelId());
+  if (!c.isPlatformEmbedded || null == t || "" === t || g || (null == m ? true : m.shouldHideMediaOptions) === true || !(0, r.Jj)(t)) return null;
+  let O = (0, o.F)(t),
+    y = t => {
+      s.default.track(h.rMx.CONTEXT_MENU_LINK_COPIED, p({
+        hostname: O
+      }, (0, v.v)())), d.ZP.copy(t), (0, i.showToast)((0, i.createToast)(f.intl.string(f.t["L/PwZW"]), i.ToastType.SUCCESS))
     },
-    O = () => {
-      y(e)
-    },
-    v = (n, r) => {
-      let i = true === r ? e.replace("tel:", "sms:") : e;
-      l.default.track(_.rMx.CONTEXT_MENU_LINK_OPENED, m({
-        hostname: b
-      }, (0, f.v)())), (0, c.q)({
+    _ = (e, l) => {
+      let i = true === l ? t.replace("tel:", "sms:") : t;
+      s.default.track(h.rMx.CONTEXT_MENU_LINK_OPENED, p({
+        hostname: O
+      }, (0, v.v)())), (0, u.q)({
         href: i,
-        trusted: (0, c.r)(e, t),
+        trusted: (0, u.r)(t, n),
         shouldConfirm: true
-      }, n)
+      }, e)
     },
-    I = [],
-    T = e.match(g);
-  if (null != T) {
-    let e = () => {
-        y(T[2])
-      },
-      t = p.intl.string("mailto" === T[1] ? p.t.ZYLVKi : p.t["3zozoa"]);
-    I.push((0, r.jsx)(i.sNh, {
+    Z = [],
+    C = t.match(b);
+  if (null != C) {
+    let t = f.intl.string("mailto" === C[1] ? f.t.ZYLVKi : f.t["3zozoa"]);
+    Z.push((0, l.jsx)(i.sNh, {
       id: "copy-native-contact",
       label: t,
-      action: e
-    }, "copy-native-contact")), "tel" === T[1] && I.push((0, r.jsx)(i.sNh, {
+      action: () => {
+        y(C[2])
+      }
+    }, "copy-native-contact")), "tel" === C[1] && Z.push((0, l.jsx)(i.sNh, {
       id: "native-send-sms",
-      label: p.intl.string(p.t["+wbjMT"]),
-      action: e => v(e, true)
+      label: f.intl.string(f.t["+wbjMT"]),
+      action: t => _(t, true)
     }, "native-send-sms"))
   }
-  return [(0, r.jsx)(i.sNh, {
+  return [(0, l.jsx)(i.sNh, {
     id: "copy-native-link",
-    label: p.intl.string(p.t.WqhZsr),
-    action: O
-  }, "copy-native-link"), ...I, (0, r.jsx)(i.sNh, {
+    label: f.intl.string(f.t.WqhZsr),
+    action: () => {
+      y(t)
+    }
+  }, "copy-native-link"), ...Z, (0, l.jsx)(i.sNh, {
     id: "open-native-link",
-    label: p.intl.string(p.t.wuRE8P),
-    action: e => v(e)
+    label: f.intl.string(f.t.wuRE8P),
+    action: t => _(t)
   }, "open-native-link")]
 }

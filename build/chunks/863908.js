@@ -11,7 +11,7 @@ var Chunk458725 = require("./458725.js"),
   Chunk388032 = require("./388032.jsx");
 
 function l(e, t, n, l) {
-  if (e.state === a.jm8.RECONNECTING) {
+  if (e.state === o.jm8.RECONNECTING) {
     var c;
     let e = (0, i.tc)({
         location: "getScreenMessageForStream"
@@ -25,13 +25,13 @@ function l(e, t, n, l) {
       }) : true
     }
   }
-  return e.state === a.jm8.PAUSED ? n ? {
+  return e.state === o.jm8.PAUSED ? n ? {
     mainText: s.intl.string(s.t["5q17w8"]),
     supportingText: s.intl.string(s.t.LV1NSE)
   } : {
     mainText: s.intl.string(s.t["5q17w8"]),
     supportingText: s.intl.formatToPlainString(s.t.meVVlZ, {
-      username: o.ZP.getName(e.guildId, e.channelId, t)
+      username: a.ZP.getName(e.guildId, e.channelId, t)
     })
   } : l ? {
     mainText: s.intl.string(s.t.JmaKtL),

@@ -1,7 +1,7 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 264233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => O,
+  S: () => _,
   Z: () => g
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
@@ -114,7 +114,7 @@ function b() {
   })
 }
 
-function O() {
+function _() {
   return 0 === (0, Chunk442837.Wu)([Chunk317632.Z], () => Chunk317632.Z.getInvites()).length ? null : (0, Chunk255367.jsx)(Chunk481060.M0o, {
     tooltip: Chunk388032.intl.string(Chunk388032.t.Zy3MR0),
     color: Chunk481060.YX$.SECONDARY,

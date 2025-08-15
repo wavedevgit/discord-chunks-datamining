@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -28,7 +28,7 @@ function E(e) {
     className: t
   } = e, n = (0, c.ZP)(), i = (0, s.wj)(n) ? m : g;
   return (0, r.jsxs)("div", {
-    className: o()(h.container, t),
+    className: a()(h.container, t),
     children: [(0, r.jsx)(l.X6q, {
       className: h.header,
       variant: "heading-xl/semibold",
@@ -86,14 +86,14 @@ function O(e) {
     className: t
   } = e;
   return (0, f.Q)() ? (0, r.jsxs)(l.Zbd, {
-    className: o()(h.blockedPaymentsWarning, t),
+    className: a()(h.blockedPaymentsWarning, t),
     type: l.Zbd.Types.CUSTOM,
     children: [(0, r.jsx)(l.Mgn, {
       size: "custom",
       width: 20,
       height: 20,
       className: h.blockedPaymentsWarningIcon,
-      color: a.Z.unsafe_rawColors.YELLOW_300.css
+      color: o.Z.unsafe_rawColors.YELLOW_300.css
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: p.intl.format(p.t.NYkcCg, {

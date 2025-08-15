@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk420660 = require("./420660.js"),
@@ -70,7 +70,7 @@ function R(e) {
   let {
     user: t,
     displayProfile: n,
-    guildId: o,
+    guildId: a,
     channelId: h,
     themeType: T,
     animateOnHover: A,
@@ -83,21 +83,21 @@ function R(e) {
     analyticsLocations: L
   } = (0, d.ZP)(u.Z.AVATAR), {
     trackUserProfileAction: x
-  } = (0, m.KZ)(), M = p.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.p9.TIER_2), j = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
-    live: k
-  } = (0, g.Z)(t.id), [U] = k, {
+  } = (0, m.KZ)(), M = p.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.p9.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
+    live: j
+  } = (0, g.Z)(t.id), [U] = j, {
     status: G,
     isMobileOnline: B
   } = (0, s.cj)([_.Z], () => ({
     status: (0, c.Z)(U) ? O.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), Z = true !== w ? w : G, F = [y.lY.MODAL, y.lY.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, V = a()(I.avatar, P), {
+  })), V = true !== w ? w : G, F = [y.lY.MODAL, y.lY.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = o()(I.avatar, P), {
     avatarDecorationSrc: H,
     avatarSrc: Y,
     eventHandlers: W
   } = (0, E.Z)({
     userId: t.id,
-    guildId: null != n ? n.guildId : o,
+    guildId: null != n ? n.guildId : a,
     size: F,
     animateOnHover: A
   }), K = (0, r.jsx)(C, {
@@ -106,17 +106,17 @@ function R(e) {
     size: F,
     "aria-label": t.username,
     imageClassName: null != R ? I.overlay : true,
-    status: j ? O.Skl.UNKNOWN : Z,
-    statusBackdropColor: M && !j ? (0, l.QFD)(D) : true,
+    status: k ? O.Skl.UNKNOWN : V,
+    statusBackdropColor: M && !k ? (0, l.QFD)(D) : true,
     isMobile: B,
     statusTooltip: true,
     statusTooltipDelay: y.vB
   });
   return null == R ? (0, r.jsx)("div", N(S({}, W), {
-    className: V,
+    className: Z,
     children: K
   })) : (0, r.jsx)(l.P3F, N(S({}, W), {
-    className: a()(V, I.clickable),
+    className: o()(Z, I.clickable),
     focusProps: {
       ringClassName: I.focusRing
     },

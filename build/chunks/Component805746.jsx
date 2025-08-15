@@ -1,7 +1,7 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 59727 **/
 /** chunk id: 805746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => _
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,27 +14,27 @@ var Chunk255367 = require("./255367.js"),
   Chunk881998 = require("./881998.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let g = e => {
+let _ = e => {
   let {
     application: t,
     reportId: n
-  } = e, [g, _] = i.useState(false), b = (0, l.e7)([u.Z], () => u.Z.getNewestTokenForApplication(t.id));
-  i.useEffect(() => {
-    null != b && _(true)
+  } = e, [_, g] = a.useState(false), b = (0, i.e7)([u.Z], () => u.Z.getNewestTokenForApplication(t.id));
+  a.useEffect(() => {
+    null != b && g(true)
   }, [b]);
-  let h = i.useRef(false);
-  i.useEffect(() => {
-    h.current || (a.Z.fetch(), h.current = true)
+  let h = a.useRef(false);
+  a.useEffect(() => {
+    h.current || (l.Z.fetch(), h.current = true)
   }, []);
-  let x = (0, l.e7)([s.ZP], () => s.ZP.getSelfEmbeddedActivities()),
-    f = i.useCallback(() => {
-      if (_(false), c.ZP.trackWithMetadata(m.rMx.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
+  let x = (0, i.e7)([o.ZP], () => o.ZP.getSelfEmbeddedActivities()),
+    f = a.useCallback(() => {
+      if (g(false), c.ZP.trackWithMetadata(m.rMx.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
           application_id: t.id,
           report_id: n
         }), null == b) return;
-      a.Z.delete(b.id);
+      l.Z.delete(b.id);
       let e = x.get(t.id);
-      null != e && o.Z.leaveActivity({
+      null != e && s.Z.leaveActivity({
         location: e.location,
         applicationId: t.id,
         showFeedback: false
@@ -43,9 +43,9 @@ let g = e => {
   return null == t ? null : (0, r.jsx)(d.JZ, {
     title: p.intl.string(p.t.ygG62N),
     description: p.intl.string(p.t.S51EKi),
-    buttonText: g ? p.intl.string(p.t.xXpoGR) : p.intl.string(p.t.JsiUnJ),
-    buttonDisabled: !g,
+    buttonText: _ ? p.intl.string(p.t.xXpoGR) : p.intl.string(p.t.JsiUnJ),
+    buttonDisabled: !_,
     onButtonPress: f,
-    buttonVariant: g ? "critical-primary" : "secondary"
+    buttonVariant: _ ? "critical-primary" : "secondary"
   })
 }

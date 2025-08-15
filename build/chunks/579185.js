@@ -1,27 +1,26 @@
-/** Chunk was on web.js **/
-/** chunk id: 579185, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 579185, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk846519 = require("./846519.js");
 
-function o(e, t) {
-  let [n, o] = r.useState(false), a = r.useRef(new i.sW(t, () => o(false))), s = r.useRef(new i.sW(e, () => o(true))), l = r.useCallback(() => {
-    a.current.cancel(), s.current.cancel()
+function l(e, t) {
+  let [n, l] = r.useState(false), a = r.useRef(new i.sW(t, () => l(false))), o = r.useRef(new i.sW(e, () => l(true))), s = r.useCallback(() => {
+    a.current.cancel(), o.current.cancel()
   }, []);
-  r.useEffect(() => l, [l]);
+  r.useEffect(() => s, [s]);
   let c = r.useCallback(() => {
-    l(), a.current.delay()
-  }, [l]);
+    s(), a.current.delay()
+  }, [s]);
   return {
     isHovered: n,
-    setIsHovered: o,
+    setIsHovered: l,
     onMouseEnter: r.useCallback(() => {
-      l(), s.current.delay()
-    }, [l]),
+      s(), o.current.delay()
+    }, [s]),
     onMouseLeave: c,
-    cancelTimers: l
+    cancelTimers: s
   }
 }

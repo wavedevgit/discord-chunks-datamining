@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 685006, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 685006, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => A,
-  xL: () => S
+  ZP: () => S,
+  xL: () => E
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -25,98 +24,98 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk314734 = require("./314734.js"),
   Chunk409575 = require("./409575.js");
-let I = (0, Chunk97519.U)(() => ({
+let j = (0, Chunk97519.U)(() => ({
     visible: false
   })),
-  T = e => {
-    (0, l.j)(() => {
-      I.setState({
+  O = e => {
+    (0, s.j)(() => {
+      j.setState({
         visible: e
       })
     })
   },
-  S = I;
+  E = j;
 
-function A(e) {
+function S(e) {
   let {
     context: t,
     entryPointCommandButtonRef: n,
-    type: o
+    type: l
   } = e, {
     isInitialLoading: a,
-    application: s,
-    primaryEntryPointCommand: l
-  } = (0, _.Z)({
+    application: o,
+    primaryEntryPointCommand: s
+  } = (0, h.Z)({
     context: t
-  }), c = null == s ? true : s.id, p = (0, b.Z)({
-    type: o
+  }), c = null == o ? true : o.id, f = (0, _.Z)({
+    type: l
   }), {
-    sectionCommands: O
-  } = (0, g.If)(t, null != c ? c : ""), v = i.useCallback(() => {
-    p ? h.yT(m.ti.DISMISSED) : (h.__(m._b.TEXT, E.Ie.NORMAL, {
+    sectionCommands: x
+  } = (0, b.If)(t, null != c ? c : ""), v = i.useCallback(() => {
+    f ? m.yT(g.ti.DISMISSED) : (m.__(g._b.TEXT, y.Ie.NORMAL, {
       applicationId: c
-    }), (0, f.yw)(y.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
+    }), (0, p.yw)(C.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
       application_id: c,
       location: d.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON,
-      source: m._b.TEXT
+      source: g._b.TEXT
     }))
-  }, [c, p]), I = null != O && O.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, S = !a && null != s && true === I;
-  return (i.useEffect(() => (T(S), () => {
-    T(false)
-  }), [S]), S) ? (0, r.jsx)(N, {
+  }, [c, f]), j = null != x && x.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, E = !a && null != o && true === j;
+  return (i.useEffect(() => (O(E), () => {
+    O(false)
+  }), [E]), E) ? (0, r.jsx)(P, {
     context: t,
-    application: s,
-    primaryEntryPointCommand: l,
+    application: o,
+    primaryEntryPointCommand: s,
     onOpenButtonPress: v,
     entryPointCommandButtonRef: n,
-    type: o
+    type: l
   }) : null
 }
 
-function N(e) {
+function P(e) {
   let {
     context: t,
     application: n,
     primaryEntryPointCommand: i,
-    onOpenButtonPress: o,
-    entryPointCommandButtonRef: s,
-    type: l
-  } = e, u = (0, b.Z)({
-    type: l
+    onOpenButtonPress: l,
+    entryPointCommandButtonRef: o,
+    type: s
+  } = e, u = (0, _.Z)({
+    type: s
   }), {
     isExecutingLaunchInteraction: d,
-    buttonText: f,
-    hasActiveMatchingEmbeddedActivity: _,
-    isEmbeddedApp: h,
-    currentEmbeddedActivity: m,
-    channelRecipientUserId: g,
-    setIsExecutingLaunchInteraction: E,
-    analyticsLocations: y
-  } = (0, p.Z)({
+    buttonText: p,
+    hasActiveMatchingEmbeddedActivity: h,
+    isEmbeddedApp: m,
+    currentEmbeddedActivity: g,
+    channelRecipientUserId: b,
+    setIsExecutingLaunchInteraction: y,
+    analyticsLocations: C
+  } = (0, f.Z)({
     context: t,
     primaryEntryPointCommand: i,
     application: n,
     showAppLauncherPopup: u
-  }), I = (0, p.J)({
+  }), j = (0, f.J)({
     context: t,
     application: n,
-    isEmbeddedApp: h,
-    hasActiveMatchingEmbeddedActivity: _,
-    currentEmbeddedActivity: m,
-    onOpenButtonPress: o,
-    channelRecipientUserId: g,
-    setIsExecutingLaunchInteraction: E,
-    analyticsLocations: y
-  }), T = _ ? "critical-primary" : "primary";
+    isEmbeddedApp: m,
+    hasActiveMatchingEmbeddedActivity: h,
+    currentEmbeddedActivity: g,
+    onOpenButtonPress: l,
+    channelRecipientUserId: b,
+    setIsExecutingLaunchInteraction: y,
+    analyticsLocations: C
+  }), O = h ? "critical-primary" : "primary";
   return (0, r.jsx)("div", {
-    className: a()(v.entryPointAppCommandButtonContainer, O.Id),
+    className: a()(v.entryPointAppCommandButtonContainer, x.Id),
     children: (0, r.jsx)(c.zxk, {
-      variant: T,
+      variant: O,
       loading: d,
-      onClick: I,
+      onClick: j,
       fullWidth: true,
-      buttonRef: s,
-      text: f
+      buttonRef: o,
+      text: p
     })
   })
 }

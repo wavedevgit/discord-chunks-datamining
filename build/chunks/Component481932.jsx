@@ -22,7 +22,7 @@ function f(e) {
     shouldShowTooltip: f = false
   } = e, {
     newestAnalyticsLocation: _
-  } = (0, o.ZP)(), p = (0, i.e7)([a.default], () => a.default.getId() === t.id), h = (0, i.e7)([s.Z], () => s.Z.getRelationshipType(t.id)), {
+  } = (0, a.ZP)(), p = (0, i.e7)([o.default], () => o.default.getId() === t.id), h = (0, i.e7)([s.Z], () => s.Z.getRelationshipType(t.id)), {
     gameFriends: m,
     hasOutgoingPendingGameFriends: g,
     hasIncomingPendingGameFriends: E

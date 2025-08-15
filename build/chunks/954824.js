@@ -8,18 +8,18 @@ var Chunk525654 = require("./525654.js"),
   i = require.n(Chunk525654),
   Chunk444675 = require("./444675.js");
 
-function a(e, t) {
-  if (!e.startsWith("discord:")) return location.href = e, o.nextTick(() => t(true));
+function o(e, t) {
+  if (!e.startsWith("discord:")) return location.href = e, a.nextTick(() => t(true));
   let {
     body: n
   } = document;
-  if (null == n) return o.nextTick(() => t(false));
+  if (null == n) return a.nextTick(() => t(false));
   let r = document.createElement("iframe");
   n.appendChild(r);
   try {
-    null != r.contentWindow && (r.contentWindow.location.href = e), o.nextTick(() => t(true))
+    null != r.contentWindow && (r.contentWindow.location.href = e), a.nextTick(() => t(true))
   } catch (e) {
-    "NS_ERROR_UNKNOWN_PROTOCOL" === e.name && o.nextTick(() => t(false))
+    "NS_ERROR_UNKNOWN_PROTOCOL" === e.name && a.nextTick(() => t(false))
   }
   window.setTimeout(() => {
     var e;
@@ -43,11 +43,11 @@ function l(e, t) {
 }
 
 function c(e, t) {
-  location.href = e, o.nextTick(() => t(true))
+  location.href = e, a.nextTick(() => t(true))
 }
 let u = {
   launch: function() {
     var e, t;
-    return (null == (e = i().os) ? true : module.family) === "Android" || (null == (t = i().os) ? true : exports.family) === "iOS" ? c : "Gecko" === i().layout ? a : null != i().ua && false !== i().ua.indexOf("Valve Steam GameOverlay") ? l : s
+    return (null == (e = i().os) ? true : module.family) === "Android" || (null == (t = i().os) ? true : exports.family) === "iOS" ? c : "Gecko" === i().layout ? o : null != i().ua && false !== i().ua.indexOf("Valve Steam GameOverlay") ? l : s
   }()
 }

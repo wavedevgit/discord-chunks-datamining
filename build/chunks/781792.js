@@ -12,7 +12,7 @@ var Chunk544891 = require("./544891.js"),
 
 function l(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-  return a.Z.isFullServerPreview(e) ? void(0, o.aq)(e, {
+  return o.Z.isFullServerPreview(e) ? void(0, a.aq)(e, {
     memberOptions: t
   }) : (i.Z.dispatch({
     type: "GUILD_MEMBER_UPDATE_LOCAL",

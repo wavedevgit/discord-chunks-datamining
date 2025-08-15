@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk147913 = require("./147913.js"),
   Chunk695346 = require("./695346.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,20 +15,20 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let a = false;
+let o = false;
 class s extends Chunk147913.Z {
   maybeShowChangeLanguageToast() {}
   setVerifyTimezone() {
-    a = true
+    o = true
   }
   ensureTimezoneUpdated() {
-    if (!a) return;
-    a = false;
+    if (!o) return;
+    o = false;
     let e = new Date().getTimezoneOffset();
     Chunk695346.rN.getSetting() !== module && setImmediate(() => Chunk695346.rN.updateSetting(module))
   }
   constructor(...e) {
-    super(...e), o(this, "actions", {
+    super(...e), a(this, "actions", {
       POST_CONNECTION_OPEN: () => {
         this.setVerifyTimezone(), this.maybeShowChangeLanguageToast()
       },

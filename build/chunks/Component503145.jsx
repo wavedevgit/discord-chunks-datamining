@@ -48,7 +48,7 @@ class u extends(r = Chunk73800.Component) {
     })
   }
   constructor(...e) {
-    super(...e), c(this, "ref", o.createRef()), c(this, "animationFrame", true), c(this, "shouldRenderFrame", true), c(this, "animate", () => {
+    super(...e), c(this, "ref", a.createRef()), c(this, "animationFrame", true), c(this, "shouldRenderFrame", true), c(this, "animate", () => {
       let {
         intensity: e,
         isShaking: t

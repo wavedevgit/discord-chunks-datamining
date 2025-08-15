@@ -1,13 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 675411, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 675411, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk222671 = require("./222671.js");
-module.exports = function(e) {
-  var t = r(e);
+module.exports = function(t) {
+  var e = n(t);
   return {
-    x: t.left,
-    y: t.top,
-    width: t.right - t.left,
-    height: t.bottom - t.top
+    x: e.left,
+    y: e.top,
+    width: e.right - e.left,
+    height: e.bottom - e.top
   }
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 886794, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => w
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -31,27 +31,27 @@ var Chunk255367 = require("./255367.js"),
   Chunk54966 = require("./54966.js"),
   Chunk602727 = require("./602727.js");
 
-function S(e) {
+function w(e) {
   let {
     user: t,
     guildId: n,
-    channelId: S,
-    messageId: w,
+    channelId: w,
+    messageId: S,
     roleId: A,
     sessionId: C,
     transitionState: D,
     openedAt: L,
     onClose: R,
     sourceAnalyticsLocations: G = []
-  } = e, k = n === P.ME ? true : n, B = (0, p.ZP)(t.id, k), M = u.ZP.getName(k, S, t), U = (0, s.Dt)(), {
+  } = e, k = n === P.ME ? true : n, B = (0, p.ZP)(t.id, k), M = u.ZP.getName(k, w, t), U = (0, s.Dt)(), {
     analyticsLocations: F
   } = (0, c.ZP)([...G, a.Z.USER_PROFILE_MODAL]), V = (0, f.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: C,
     guildId: k,
-    channelId: S,
-    messageId: w,
+    channelId: w,
+    messageId: S,
     roleId: A
   }), Y = i.useRef(null), W = (0, o.Z)(Y);
   return (0, r.jsx)(c.Gt, {
@@ -78,7 +78,7 @@ function S(e) {
               })
             })
           }),
-          children: (0, r.jsxs)(x.Z, {
+          children: (0, r.jsxs)(h.Z, {
             user: t,
             displayProfile: B,
             themeType: I.lY.MODAL,
@@ -98,13 +98,13 @@ function S(e) {
                   user: t,
                   displayProfile: B,
                   guildId: k,
-                  channelId: S,
+                  channelId: w,
                   themeType: I.lY.MODAL
                 })
               })]
             }), (0, r.jsxs)("div", {
               className: T.body,
-              children: [(0, r.jsx)(h.Z, {
+              children: [(0, r.jsx)(x.Z, {
                 className: T.username,
                 user: t,
                 nickname: M,

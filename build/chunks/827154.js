@@ -1,4 +1,4 @@
-/** Chunk was on 7384 **/
+/** Chunk was on 30202 **/
 /** chunk id: 827154, original params: e,t,n (module,exports,require) **/
 module.exports = {
   giftButton: "giftButton__82222",

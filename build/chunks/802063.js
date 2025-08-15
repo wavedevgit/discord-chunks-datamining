@@ -14,18 +14,18 @@ function s(e) {
     channelId: t,
     userId: r,
     nickname: s,
-    onAlertOpen: a
-  } = e, u = function(e) {
+    onAlertOpen: o
+  } = e, c = function(e) {
     let {
       userId: t
     } = e;
-    return (0, l.e7)([o.Z, c.Z], () => (0, i.UB)(t, [o.Z, c.Z]))
+    return (0, l.e7)([i.Z, u.Z], () => (0, a.UB)(t, [i.Z, u.Z]))
   }({
     userId: r
   }), d = n.useRef(null);
   n.useEffect(() => {
-    u && null == d.current ? d.current = setTimeout(() => {
-      a(), (0, i.lg)({
+    c && null == d.current ? d.current = setTimeout(() => {
+      o(), (0, a.lg)({
         userId: r,
         channelId: t,
         nickname: s
@@ -35,5 +35,5 @@ function s(e) {
     return () => {
       clearTimeout(e)
     }
-  }, [t, u, s, a, r])
+  }, [t, c, s, o, r])
 }

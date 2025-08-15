@@ -42,11 +42,11 @@ let d = e => {
       isFriend: r = false
     } = e;
     if (null != t && t !== i.Q4.UNSET_EXPLICIT_CONTENT_REDACTION) return t;
-    let o = a.default.getCurrentUser();
+    let a = o.default.getCurrentUser();
     return (0, s.bc)("resolveSettingWithDefaults") ? f({
       isDm: n,
       isFriend: r
-    }) : (0, s.g2)("resolveSettingWithDefaults") ? i.Q4.BLUR : (null == o ? true : o.nsfwAllowed) === false ? p({
+    }) : (0, s.g2)("resolveSettingWithDefaults") ? i.Q4.BLUR : (null == a ? true : a.nsfwAllowed) === false ? p({
       isDm: n,
       isFriend: r
     }) : _({
@@ -76,7 +76,7 @@ let d = e => {
     return t && n ? i.Q4.BLUR : t ? i.Q4.BLOCK : i.Q4.BLUR
   },
   h = e => {
-    let t = null != e ? e : o.j7.getSetting();
+    let t = null != e ? e : a.j7.getSetting();
     return {
       goreContentGuilds: d({
         setting: null == t ? true : t.goreContentGuilds
@@ -94,6 +94,6 @@ let d = e => {
   },
   m = e => {
     let t = h();
-    o.j7.updateSetting(u({}, t, e))
+    a.j7.updateSetting(u({}, t, e))
   },
   g = () => Chunk73800.useMemo(() => Chunk981631.BhN.EXPLICIT_MEDIA_REDACTION, [])

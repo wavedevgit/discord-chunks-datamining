@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 862679, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 862679, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -13,46 +12,46 @@ var Chunk255367 = require("./255367.js"),
   Chunk346486 = require("./346486.jsx"),
   Chunk433355 = require("./433355.js"),
   Chunk944701 = require("./944701.js");
-let f = function(e) {
+let p = function(e) {
   let {
     message: t,
     subtitle: n,
-    countdown: f,
-    buttonText: _,
-    buttonColor: p,
-    buttonSubmitting: h,
-    onButtonClick: m,
-    imageSrc: g,
-    animationSrc: E,
-    secondaryButtonText: b,
-    onSecondaryButtonClick: y,
-    children: O,
+    countdown: p,
+    buttonText: h,
+    buttonColor: f,
+    buttonSubmitting: m,
+    onButtonClick: g,
+    imageSrc: b,
+    animationSrc: y,
+    secondaryButtonText: _,
+    onSecondaryButtonClick: C,
+    children: x,
     useReducedMotion: v = false
-  } = e, I = (0, a.e7)([u.ZP], () => u.ZP.getState().isMembersOpen);
-  if (o.tq && I) return null;
+  } = e, j = (0, a.e7)([u.ZP], () => u.ZP.getState().isMembersOpen);
+  if (l.tq && j) return null;
   if (null == t) return (0, r.jsx)(r.Fragment, {
-    children: i.Children.only(O)
+    children: i.Children.only(x)
   });
-  let T = null;
-  return null != g ? T = (0, r.jsx)("img", {
+  let O = null;
+  return null != b ? O = (0, r.jsx)("img", {
     alt: "",
-    src: g,
+    src: b,
     className: d.image
-  }) : null != E && (T = (0, r.jsx)(l.Fmz, {
-    importData: E,
+  }) : null != y && (O = (0, r.jsx)(s.Fmz, {
+    importData: y,
     shouldAnimate: !v,
     className: d.animation
   })), (0, r.jsxs)("div", {
     className: d.wrapper,
     children: [(0, r.jsxs)("div", {
       className: d.content,
-      children: [T, (0, r.jsxs)("div", {
+      children: [O, (0, r.jsxs)("div", {
         className: d.text,
-        children: [(0, r.jsx)(l.X6q, {
+        children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/semibold",
           className: d.title,
           children: t
-        }), null != n && (0, r.jsx)(l.Text, {
+        }), null != n && (0, r.jsx)(s.Text, {
           color: "text-muted",
           variant: "text-xs/normal",
           children: n
@@ -60,26 +59,26 @@ let f = function(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: d.buttonContainer,
-      children: [null != b && (0, r.jsx)(s.zx, {
+      children: [null != _ && (0, r.jsx)(o.zx, {
         className: d.button,
-        size: s.zx.Sizes.SMALL,
-        onClick: y,
-        look: s.zx.Looks.LINK,
-        color: s.zx.Colors.PRIMARY,
-        submitting: h,
-        children: b
-      }), null != _ && (0, r.jsx)(s.zx, {
+        size: o.zx.Sizes.SMALL,
+        onClick: C,
+        look: o.zx.Looks.LINK,
+        color: o.zx.Colors.PRIMARY,
+        submitting: m,
+        children: _
+      }), null != h && (0, r.jsx)(o.zx, {
         className: d.button,
         innerClassName: d.innerButton,
-        size: s.zx.Sizes.SMALL,
-        onClick: m,
-        submitting: h,
-        color: null != p ? p : s.zx.Colors.PRIMARY,
-        children: _
+        size: o.zx.Sizes.SMALL,
+        onClick: g,
+        submitting: m,
+        color: null != f ? f : o.zx.Colors.PRIMARY,
+        children: h
       })]
-    }), null != f && (0, r.jsx)(c.Z, {
+    }), null != p && (0, r.jsx)(c.Z, {
       className: d.countdown,
-      deadline: f
+      deadline: p
     })]
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 7654 **/
 /** chunk id: 948851, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -14,21 +14,21 @@ var Chunk533800 = require("./533800.js"),
 let d = Chunk971130.ZP.getMaxAgeOptions,
   c = Chunk971130.ZP.getMaxUsesOptions;
 
-function g(e) {
+function h(e) {
   var t;
   let {
     shouldHideTemporaryInviteToggle: n,
     maxAge: a,
-    maxUses: g,
-    temporary: h,
+    maxUses: h,
+    temporary: g,
     onGenerateNewLink: m,
     onToggleTemporary: p,
     onSelectMaxAge: v,
-    onSelectMaxUses: x,
-    isGuestInviteCreationToggleEnabled: I,
+    onSelectMaxUses: I,
+    isGuestInviteCreationToggleEnabled: x,
     inviteFlags: f,
-    onSetInviteFlags: j
-  } = e, N = d.find(e => e.value === a), _ = c.find(e => e.value === g);
+    onSetInviteFlags: N
+  } = e, j = d.find(e => e.value === a), _ = c.find(e => e.value === h);
   return (0, l.jsx)("div", {
     className: u.settingsContent,
     children: (0, l.jsxs)("form", {
@@ -38,7 +38,7 @@ function g(e) {
         title: o.intl.string(o.t["60qw29"]),
         children: (0, l.jsx)(r.VcW, {
           options: d,
-          value: null != (t = null == N ? true : N.value) ? t : d[0].value,
+          value: null != (t = null == j ? true : j.value) ? t : d[0].value,
           onChange: v
         })
       }), (0, l.jsx)(r.xJW, {
@@ -46,12 +46,12 @@ function g(e) {
         children: (0, l.jsx)(r.VcW, {
           options: c,
           value: null == _ ? true : _.value,
-          onChange: x
+          onChange: I
         })
       }), !n && (0, l.jsx)(r.xJW, {
         children: (0, l.jsx)(r.j7V, {
           className: u.switch,
-          value: h,
+          value: g,
           onChange: e => p(e),
           note: o.intl.string(o.t.UN5IRU),
           hideBorder: true,
@@ -60,11 +60,11 @@ function g(e) {
             children: o.intl.string(o.t["wE+9dn"])
           })
         })
-      }), I && (0, l.jsx)(r.xJW, {
+      }), x && (0, l.jsx)(r.xJW, {
         children: (0, l.jsx)(r.j7V, {
           className: u.switch,
           value: (0, s.yE)(f, i.$.IS_GUEST_INVITE),
-          onChange: e => j((0, s.mB)(f, i.$.IS_GUEST_INVITE, e)),
+          onChange: e => N((0, s.mB)(f, i.$.IS_GUEST_INVITE, e)),
           note: o.intl.string(o.t["/FeTKy"]),
           hideBorder: true,
           children: (0, l.jsx)(r.Text, {

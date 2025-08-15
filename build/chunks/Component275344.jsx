@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 275344, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 275344, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p,
-  v: () => f
+  Z: () => f,
+  v: () => p
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -15,34 +14,34 @@ var Chunk255367 = require("./255367.js"),
   Chunk918088 = require("./918088.js");
 let d = Chunk73800.createContext(true);
 
-function f(e) {
+function p(e) {
   var t;
   let n = null != (t = i.useContext(d)) ? t : e;
   return a()(null != n, "Using PollReferenceMessageContext without a provider (or a fallback)"), n
 }
 
-function _(e) {
+function m(e) {
   let {
     message: t,
     children: n
-  } = e, o = (0, s.e7)([c.Z], () => c.Z.getMessage(t.channel_id, t.id), [t.channel_id, t.id]), a = null != o;
+  } = e, l = (0, o.e7)([c.Z], () => c.Z.getMessage(t.channel_id, t.id), [t.channel_id, t.id]), a = null != l;
   return i.useEffect(() => {
-    a || l.Z.focusMessage({
+    a || s.Z.focusMessage({
       channelId: t.channel_id,
       messageId: t.id
     })
   }, [a, t.channel_id, t.id]), (0, r.jsx)(d.Provider, {
-    value: null != o ? o : t,
+    value: null != l ? l : t,
     children: n
   })
 }
 
-function p(e) {
+function f(e) {
   let {
     message: t,
     children: n
   } = e;
-  return (0, u.r8)(t) ? n : (0, r.jsx)(_, {
+  return (0, u.r8)(t) ? n : (0, r.jsx)(m, {
     message: t,
     children: n
   })

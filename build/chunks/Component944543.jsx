@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 944543, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 944543, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 }), require("./704826.js"), require("./35282.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -16,7 +15,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk397660 = require("./397660.js");
 
-function p(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,21 +23,21 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = {
+let m = {
     position: "bottom",
     autoInvert: false
   },
-  m = e => {
+  g = e => {
     let {
       region: t,
-      className: n = _.regionSelectName
+      className: n = h.regionSelectName
     } = e, i = t.name.replace(/ \(VIP\)$/, "");
     return (0, r.jsx)("div", {
       className: n,
       children: i
     })
   };
-class g extends Chunk73800.PureComponent {
+class b extends Chunk73800.PureComponent {
   render() {
     let {
       region: e,
@@ -49,7 +48,7 @@ class g extends Chunk73800.PureComponent {
       className: a()({
         selected: exports
       }),
-      children: [(0, Chunk255367.jsx)(m, {
+      children: [(0, Chunk255367.jsx)(g, {
         region: module,
         className: Chunk397660.regionSelectName
       }), exports ? (0, Chunk255367.jsx)("i", {
@@ -58,7 +57,7 @@ class g extends Chunk73800.PureComponent {
     })
   }
 }
-class E extends Chunk73800.PureComponent {
+class y extends Chunk73800.PureComponent {
   componentDidMount() {
     null == this.props.regions && Chunk771340.Z.fetchRegions(null)
   }
@@ -84,15 +83,15 @@ class E extends Chunk73800.PureComponent {
       value: require,
       onChange: this.handleChangeVoiceRegion,
       renderOption: this.renderOption,
-      popoutProps: h,
+      popoutProps: m,
       popoutClassName: Chunk397660.regionSelectPopout
     })
   }
   constructor(...e) {
-    super(...e), p(this, "renderOption", (e, t) => (0, r.jsx)(g, {
+    super(...e), f(this, "renderOption", (e, t) => (0, r.jsx)(b, {
       region: e.value,
       selected: t
-    }, e.value.id)), p(this, "getSelectedRegion", () => {
+    }, e.value.id)), f(this, "getSelectedRegion", () => {
       var e;
       let {
         regions: t,
@@ -108,12 +107,12 @@ class E extends Chunk73800.PureComponent {
         id: n.region
       } : {
         id: "automatic",
-        name: f.intl.string(f.t.JEmsam),
+        name: p.intl.string(p.t.JEmsam),
         vip: false,
         deprecated: false,
         hidden: false
       }
-    }), p(this, "handleChangeVoiceRegion", e => {
+    }), f(this, "handleChangeVoiceRegion", e => {
       let {
         value: t
       } = e, {
@@ -123,6 +122,6 @@ class E extends Chunk73800.PureComponent {
     })
   }
 }
-let b = Chunk442837.ZP.connectStores([Chunk903223.Z], () => ({
+let _ = Chunk442837.ZP.connectStores([Chunk903223.Z], () => ({
   regions: Chunk903223.Z.getRegions(null)
-}))(E)
+}))(y)

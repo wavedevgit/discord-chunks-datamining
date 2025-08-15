@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 190263, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93886 **/
+/** chunk id: 190263, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   D: () => c,
-  o: () => u
+  o: () => d
 });
 var Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -27,14 +26,14 @@ let c = (0, Chunk818083.B)({
   }]
 });
 
-function u(e) {
+function d(e) {
   var t;
-  let n = (0, r.e7)([s.Z], () => s.Z.can(l.Plq.ADMINISTRATOR, e)),
-    a = c.useExperiment({
+  let a = (0, n.e7)([s.Z], () => s.Z.can(o.Plq.ADMINISTRATOR, e)),
+    i = c.useExperiment({
       guildId: null == e ? true : e.id,
       location: "useIsPinPermissionMigrationNotificationAvailable"
     }).enabled,
-    u = null == e ? true : e.features.has(l.oNc.PIN_PERMISSION_MIGRATION_COMPLETE),
-    d = (0, o.OA)(i.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, null != (t = null == e ? true : e.id) ? t : l.lds);
-  return n && a && !u && !d
+    d = null == e ? true : e.features.has(o.oNc.PIN_PERMISSION_MIGRATION_COMPLETE),
+    u = (0, l.OA)(r.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, null != (t = null == e ? true : e.id) ? t : o.lds);
+  return a && i && !d && !u
 }

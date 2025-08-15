@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 127255, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 127255, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 }), require("./388685.js"), require("./539854.js");
@@ -17,16 +16,16 @@ function c(e) {
     enableFilter: n = false
   } = e, {
     filter: c
-  } = (0, i.cj)([o.Z], () => ({
-    filter: o.Z.getFilter()
-  })), u = (0, a.E)(t), d = (0, s.Z)(u), f = (0, l.o)();
-  return r.useMemo(() => {
+  } = (0, i.cj)([r.Z], () => ({
+    filter: r.Z.getFilter()
+  })), u = (0, a.E)(t), d = (0, o.Z)(u), p = (0, s.o)();
+  return l.useMemo(() => {
     function e(e) {
       return !!(!n || "" === c || e.application.name.toLowerCase().includes(c.toLowerCase()))
     }
-    let t = [...f].filter(e),
-      r = new Set(t.map(e => e.application.id));
-    for (let n of d) !r.has(n.application.id) && e(n) && t.push(n);
+    let t = [...p].filter(e),
+      l = new Set(t.map(e => e.application.id));
+    for (let n of d) !l.has(n.application.id) && e(n) && t.push(n);
     return t
-  }, [f, n, c, d])
+  }, [p, n, c, d])
 }

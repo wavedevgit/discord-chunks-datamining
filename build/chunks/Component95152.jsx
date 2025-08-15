@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk166459 = require("./166459.js"),
@@ -66,7 +66,7 @@ let A = 104,
   N = 16;
 
 function C(e) {
-  var t, n, o;
+  var t, n, a;
   let {
     file: s
   } = e, [l, c] = i.useState(), [d, f] = i.useState(false), [_, p] = i.useState({}), h = i.useRef(null);
@@ -97,14 +97,14 @@ function C(e) {
   return (0, r.jsx)("img", {
     ref: h,
     src: l,
-    className: a()(y.icon, {
+    className: o()(y.icon, {
       [y.image]: !d
     }),
     "aria-hidden": true,
     alt: "",
     style: {
       width: null != (n = _.width) ? n : "initial",
-      height: null != (o = _.height) ? o : A,
+      height: null != (a = _.height) ? a : A,
       marginLeft: g,
       marginRight: g,
       marginTop: null != _.height ? A - _.height - 33 : false
@@ -117,7 +117,7 @@ class R extends Chunk73800.Component {
     return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk255367.jsx)(C, {
       file: this.props.upload.item.file
     }) : (0, Chunk255367.jsx)("div", {
-      className: a()(Chunk995751.icon, {
+      className: o()(Chunk995751.icon, {
         [Chunk995751[null != (e = this.props.upload.classification) ? module : ""]]: true
       })
     })
@@ -145,7 +145,7 @@ class P extends Chunk73800.Component {
       upload: e,
       transitionState: t,
       messageMaxLength: n,
-      disableSpoiler: o
+      disableSpoiler: a
     } = this.props, {
       hasSpoiler: c
     } = this.state;
@@ -158,7 +158,7 @@ class P extends Chunk73800.Component {
       children: [(0, Chunk255367.jsxs)("div", {
         className: Chunk995751.inner,
         children: [(0, Chunk255367.jsxs)("div", {
-          className: a()(Chunk995751.file, {
+          className: o()(Chunk995751.file, {
             [Chunk995751.expandable]: module.isImage
           }),
           children: [(0, Chunk255367.jsx)(R, {
@@ -183,7 +183,7 @@ class P extends Chunk73800.Component {
               children: Chunk388032.intl.string(Chunk388032.t.ILJuBg)
             })
           }), (0, Chunk255367.jsx)(Chunk755721.Is, {
-            className: a()(Chunk995751.channelTextAreaUpload, Chunk197571.marginTop8),
+            className: o()(Chunk995751.channelTextAreaUpload, Chunk197571.marginTop8),
             value: this.state.filename,
             onChange: e => this.setState({
               filename: e
@@ -198,7 +198,7 @@ class P extends Chunk73800.Component {
                 children: Chunk388032.intl.string(Chunk388032.t.eOB2eX)
               })
             }), (0, Chunk255367.jsx)(Chunk755721.Is, {
-              className: a()(Chunk995751.channelTextAreaUpload, Chunk197571.marginTop8),
+              className: o()(Chunk995751.channelTextAreaUpload, Chunk197571.marginTop8),
               placeholder: Chunk388032.intl.string(Chunk388032.t.RNH1jo),
               value: this.state.description,
               onChange: e => this.setState({
@@ -223,7 +223,7 @@ class P extends Chunk73800.Component {
       }), (0, Chunk255367.jsx)("div", {
         className: Chunk995751.footer,
         children: (0, Chunk255367.jsxs)("div", {
-          className: a()(Chunk995751.hasSpoilers, Chunk995751.footerRightAlign),
+          className: o()(Chunk995751.hasSpoilers, Chunk995751.footerRightAlign),
           children: [(0, Chunk255367.jsx)(Chunk755721.zx, {
             type: "button",
             look: Chunk755721.zx.Looks.LINK,
@@ -244,7 +244,7 @@ class P extends Chunk73800.Component {
     })
   }
   constructor(e) {
-    var t, n, r, i, o, a;
+    var t, n, r, i, a, o;
     super(e), v(this, "cancelAll", () => {
       c.Z.clearAll(this.props.channelId, this.props.draftType), this.props.onClose()
     }), v(this, "cancel", () => {
@@ -262,22 +262,22 @@ class P extends Chunk73800.Component {
       } = this.props, {
         filename: r,
         description: i,
-        hasSpoiler: o
+        hasSpoiler: a
       } = this.state;
       n({
         upload: e,
         name: r,
         description: i,
-        spoiler: o
+        spoiler: a
       }), t()
     });
     let s = e.ignoreDraft ? "" : p.Z.getDraft(this.props.channelId, e.draftType);
     this.state = S(I({}, (0, f.eK)(s)), {
       textFocused: true,
       hasSpoiler: null != (i = null == (t = e.upload) ? true : t.spoiler) && i,
-      filename: null != (o = null == (n = e.upload) ? true : n.filename) ? o : "",
+      filename: null != (a = null == (n = e.upload) ? true : n.filename) ? a : "",
       contentWarningProps: null,
-      description: null != (a = null == (r = e.upload) ? true : r.description) ? a : ""
+      description: null != (o = null == (r = e.upload) ? true : r.description) ? o : ""
     })
   }
 }

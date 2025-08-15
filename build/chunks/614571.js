@@ -57,9 +57,9 @@ async function E(e) {
       });
       p = false, h = false;
       let i = new Date(1e3 * e),
-        o = new Date,
-        a = Math.max(0, i.getTime() - o.getTime());
-      _.start(a, () => (0, l._7)({
+        a = new Date,
+        o = Math.max(0, i.getTime() - a.getTime());
+      _.start(o, () => (0, l._7)({
         riotConnectionId: t,
         lolConnectionId: n
       }))
@@ -109,7 +109,7 @@ class O extends Chunk147913.Z {
   constructor(...e) {
     super(...e), d(this, "actions", {
       RUNNING_GAMES_CHANGE: this.handleRunningGameChange
-    }), d(this, "stores", new Map().set(a.Z, this.handleDependantStoreChanges).set(o.Z, this.handleDependantStoreChanges))
+    }), d(this, "stores", new Map().set(o.Z, this.handleDependantStoreChanges).set(a.Z, this.handleDependantStoreChanges))
   }
 }
 let v = new O

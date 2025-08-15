@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 900902, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 900902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -13,81 +12,81 @@ var Chunk255367 = require("./255367.js"),
   Chunk507418 = require("./507418.jsx"),
   Chunk348238 = require("./348238.jsx"),
   Chunk981631 = require("./981631.js");
-let f = Chunk73800.memo(function(e) {
+let p = Chunk73800.memo(function(e) {
     let {
       message: t,
       channel: n,
-      compact: o = false,
+      compact: l = false,
       groupId: a,
-      isGroupStart: l,
-      usernameProfile: f,
-      avatarProfile: _,
-      setPopout: p,
-      author: h,
-      repliedMessage: m,
-      roleIcon: g
-    } = e, E = (0, u.wq)(t.author.id, n.id), b = (0, u.XO)(t, n, f, p), y = (0, u.R9)(_, p), O = i.useCallback(() => {
-      p({
+      isGroupStart: s,
+      usernameProfile: p,
+      avatarProfile: h,
+      setPopout: f,
+      author: m,
+      repliedMessage: g,
+      roleIcon: b
+    } = e, y = (0, u.wq)(t.author.id, n.id), _ = (0, u.XO)(t, n, p, f), C = (0, u.R9)(h, f), x = i.useCallback(() => {
+      f({
         usernameProfile: false,
         avatarProfile: false,
         referencedUsernameProfile: false
       })
-    }, [p]);
-    return (0, r.jsx)(s.ZP, {
+    }, [f]);
+    return (0, r.jsx)(o.ZP, {
       guildId: n.guild_id,
       message: t,
       channel: n,
-      repliedMessage: m,
-      author: h,
-      compact: o,
+      repliedMessage: g,
+      author: m,
+      compact: l,
       subscribeToGroupId: a,
-      showTimestampOnHover: !l && o && t.type !== d.uaV.REPLY,
+      showTimestampOnHover: !s && l && t.type !== d.uaV.REPLY,
       renderPopout: c.Z,
-      showAvatarPopout: _,
-      showUsernamePopout: f,
-      onClickAvatar: y,
-      onClickUsername: b,
-      onContextMenu: E,
-      onPopoutRequestClose: O,
-      roleIcon: g
+      showAvatarPopout: h,
+      showUsernamePopout: p,
+      onClickAvatar: C,
+      onClickUsername: _,
+      onContextMenu: y,
+      onPopoutRequestClose: x,
+      roleIcon: b
     })
   }),
-  _ = Chunk73800.memo(Chunk318713.Z);
+  h = Chunk73800.memo(Chunk318713.Z);
 
-function p(e) {
+function f(e) {
   let {
     messageProps: t,
     setPopout: n,
     messagePopouts: i,
-    replyReference: s,
-    author: l,
+    replyReference: o,
+    author: s,
     repliedMessage: c,
     roleIcon: u
   } = e, {
     message: d,
-    compact: p,
-    channel: h,
-    groupId: m
+    compact: f,
+    channel: m,
+    groupId: g
   } = t, {
-    usernameProfile: g,
-    avatarProfile: E
+    usernameProfile: b,
+    avatarProfile: y
   } = i;
-  if ((0, o.Z)(d)) return null;
-  let b = d.id === m;
-  return b || p || null != s ? (0, r.jsx)(f, {
+  if ((0, l.Z)(d)) return null;
+  let _ = d.id === g;
+  return _ || f || null != o ? (0, r.jsx)(p, {
     message: d,
-    channel: h,
-    compact: p,
-    subscribeToGroupId: m,
-    isGroupStart: b,
-    groupId: m,
+    channel: m,
+    compact: f,
+    subscribeToGroupId: g,
+    isGroupStart: _,
+    groupId: g,
     setPopout: n,
-    usernameProfile: g,
-    avatarProfile: E,
-    author: l,
+    usernameProfile: b,
+    avatarProfile: y,
+    author: s,
     repliedMessage: c,
     roleIcon: u
-  }) : (0, r.jsx)(_, {
+  }) : (0, r.jsx)(h, {
     compact: true,
     timestamp: d.timestamp,
     isInline: false,

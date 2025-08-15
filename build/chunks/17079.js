@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 17079, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 17079, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  T: () => o,
+  T: () => l,
   k: () => a
 });
 var Chunk570140 = require("./570140.js"),
   Chunk155414 = require("./155414.js");
-async function o(e, t) {
+async function l(e, t) {
   r.Z.dispatch({
     type: "CREATOR_MONETIZATION_PRICE_TIERS_FETCH",
     guildId: e,

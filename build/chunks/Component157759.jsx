@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 59727 **/
 /** chunk id: 157759, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -21,13 +21,13 @@ let h = e => {
   let {
     application: t,
     reportId: n
-  } = e, [h, x] = i.useState(false), [f, v] = i.useState(false), j = (0, l.e7)([g.Z, u.Z], () => {
+  } = e, [h, x] = a.useState(false), [f, v] = a.useState(false), j = (0, i.e7)([_.Z, u.Z], () => {
     var e;
-    return null == (e = u.Z.getChannel(g.Z.getChannelId())) ? true : e.guild_id
-  }), [y, O] = i.useState(null);
-  i.useEffect(() => {
+    return null == (e = u.Z.getChannel(_.Z.getChannelId())) ? true : e.guild_id
+  }), [y, C] = a.useState(null);
+  a.useEffect(() => {
     null != y && (x(true), v(true))
-  }, [y]), i.useEffect(() => {
+  }, [y]), a.useEffect(() => {
     if (null == j) return;
     let e = false;
     return (async () => {
@@ -40,28 +40,28 @@ let h = e => {
         var n;
         return (null == (n = e.application) ? true : n.id) === t.id
       });
-      null != r && O(r)
+      null != r && C(r)
     })(), () => {
       e = true
     }
   }, [j, t.id]);
-  let Z = i.useCallback(() => {
-      v(false), s.ZP.trackWithMetadata(_.rMx.IAR_REMOVE_APP_BUTTON_CLICKED, {
+  let O = a.useCallback(() => {
+      v(false), o.ZP.trackWithMetadata(g.rMx.IAR_REMOVE_APP_BUTTON_CLICKED, {
         guild_id: j,
         application_id: t.id,
         report_id: n
-      }), null != j && null != y && o.Z.disableIntegration(j, y.id).catch(() => {
-        a.Z.show({
+      }), null != j && null != y && s.Z.disableIntegration(j, y.id).catch(() => {
+        l.Z.show({
           title: b.intl.string(b.t.wYqMmJ),
           body: b.intl.string(b.t.A4Mnsr)
         })
       })
     }, [t.id, j, y, n]),
-    I = (0, l.e7)([p.Z, m.Z], () => {
+    I = (0, i.e7)([p.Z, m.Z], () => {
       let e = m.Z.getGuild(j);
       if (null == e) returnfalse;
-      let n = p.Z.can(_.Plq.MANAGE_GUILD, e),
-        r = null == t.bot || p.Z.canManageUser(_.Plq.MANAGE_GUILD, t.bot.id, e);
+      let n = p.Z.can(g.Plq.MANAGE_GUILD, e),
+        r = null == t.bot || p.Z.canManageUser(g.Plq.MANAGE_GUILD, t.bot.id, e);
       return n && r
     });
   return null != t && null != j && h && I ? (0, r.jsx)(d.JZ, {
@@ -69,7 +69,7 @@ let h = e => {
     description: b.intl.string(b.t["FlcC+/"]),
     buttonText: f ? b.intl.string(b.t.aCJlq6) : b.intl.string(b.t["6I1F3t"]),
     buttonDisabled: !f,
-    onButtonPress: Z,
+    onButtonPress: O,
     buttonVariant: f ? "critical-primary" : "secondary"
   }) : null
 }

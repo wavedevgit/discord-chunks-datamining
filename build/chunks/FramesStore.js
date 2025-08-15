@@ -52,7 +52,7 @@ let f = null;
 function _(e) {
   let {
     applicationId: t
-  } = e, n = (0, a.ZP)(t);
+  } = e, n = (0, o.ZP)(t);
   null != n && (null != f && (f = null), f = {
     applicationId: t,
     url: n,

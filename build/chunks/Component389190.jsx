@@ -1,4 +1,4 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 389190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -28,11 +28,11 @@ function g(e) {
     analyticsLocations: y
   } = (0, a.ZP)(), {
     context: O,
-    trackUserProfileAction: x
-  } = (0, c.KZ)(), h = (0, o.Z)();
+    trackUserProfileAction: h
+  } = (0, c.KZ)(), x = (0, o.Z)();
   return i.useEffect(() => {
-    (0, d.Z)(t.id, h)
-  }, [t.id, h]), (0, r.jsx)(l.zJl, {
+    (0, d.Z)(t.id, x)
+  }, [t.id, x]), (0, r.jsx)(l.zJl, {
     className: m.listScroller,
     fade: true,
     children: null == j ? (0, r.jsx)("div", {
@@ -59,7 +59,7 @@ function g(e) {
         channelId: g,
         onSelect: () => {
           var e, t, n;
-          null == b || b(), x({
+          null == b || b(), h({
             action: "PRESS_MUTUAL_FRIEND"
           }), e = i.id, (0, u.openUserProfileModal)((t = function(e) {
             for (var t = 1; t < arguments.length; t++) {

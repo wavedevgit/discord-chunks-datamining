@@ -2,18 +2,18 @@
 /** chunk id: 408160, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  announce: () => o,
-  clearAnnouncer: () => a,
+  announce: () => a,
+  clearAnnouncer: () => o,
   destroyAnnouncer: () => s
 });
 let r = 7e3,
   i = null;
 
-function o(e, t = "assertive", n = r) {
+function a(e, t = "assertive", n = r) {
   i || (i = new l), i.announce(e, t, n)
 }
 
-function a(e) {
+function o(e) {
   i && i.clear(e)
 }
 

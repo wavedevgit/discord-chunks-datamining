@@ -3,14 +3,14 @@
 var r = require("./575270.js").RBTree;
 
 function i(e, t, n) {
-  this.discrete = false === e, this.delta = e || .01, this.K = true === t ? 25 : t, this.CX = true === n ? 1.1 : n, this.centroids = new r(o), this.nreset = 0, this.reset()
-}
-
-function o(e, t) {
-  return e.mean > t.mean ? 1 : e.mean < t.mean ? false : 0
+  this.discrete = false === e, this.delta = e || .01, this.K = true === t ? 25 : t, this.CX = true === n ? 1.1 : n, this.centroids = new r(a), this.nreset = 0, this.reset()
 }
 
 function a(e, t) {
+  return e.mean > t.mean ? 1 : e.mean < t.mean ? false : 0
+}
+
+function o(e, t) {
   return e.mean_cumn - t.mean_cumn
 }
 
@@ -79,8 +79,8 @@ i.prototype.reset = function() {
   else if (i === r) this._new_centroid(e, t, this.n);
   else if (this.discrete) this._new_centroid(e, t, i.cumn);
   else {
-    var o = i.mean_cumn / this.n;
-    Math.floor(4 * this.n * this.delta * o * (1 - o)) - i.n >= t ? this._addweight(i, e, t) : this._new_centroid(e, t, i.cumn)
+    var a = i.mean_cumn / this.n;
+    Math.floor(4 * this.n * this.delta * a * (1 - a)) - i.n >= t ? this._addweight(i, e, t) : this._new_centroid(e, t, i.cumn)
   }
   this._cumulate(false), !this.discrete && this.K && this.size() > this.K / this.delta && this.compress()
 }, i.prototype.bound_mean = function(e) {
@@ -106,11 +106,11 @@ i.prototype.reset = function() {
     return n !== r && (i += (e - n.mean) * (r.mean_cumn - n.mean_cumn) / (r.mean - n.mean)), i / this.n
   }
 }, i.prototype.bound_mean_cumn = function(e) {
-  this.centroids._comparator = a;
+  this.centroids._comparator = o;
   var t = this.centroids.upperBound({
     mean_cumn: e
   });
-  this.centroids._comparator = o;
+  this.centroids._comparator = a;
   var n = t.prev(),
     r = n && n.mean_cumn === e ? n : t.next();
   return [n, r]
@@ -124,9 +124,9 @@ i.prototype.reset = function() {
       n = this.centroids.max(),
       r = this.n * e,
       i = this.bound_mean_cumn(r),
-      o = i[0],
-      a = i[1];
-    return a === o || null === o || null === a ? (o || a).mean : this.discrete ? r <= o.cumn ? o.mean : a.mean : o.mean + (r - o.mean_cumn) * (a.mean - o.mean) / (a.mean_cumn - o.mean_cumn)
+      a = i[0],
+      o = i[1];
+    return o === a || null === a || null === o ? (a || o).mean : this.discrete ? r <= a.cumn ? a.mean : o.mean : a.mean + (r - a.mean_cumn) * (o.mean - a.mean) / (o.mean_cumn - a.mean_cumn)
   }
 }, i.prototype.compress = function() {
   if (!this.compressing) {

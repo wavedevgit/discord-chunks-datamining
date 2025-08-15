@@ -1,5 +1,5 @@
 /** Chunk was on 8246 **/
-/** chunk id: 540679, original params: t,n,e (module,exports,require) **/
+/** chunk id: 540679, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   default: () => g
 });
@@ -15,48 +15,48 @@ var Chunk442837 = require("./442837.js"),
   Chunk444766 = require("./444766.js");
 let g = t => {
   let {
-    onClose: n,
-    channelId: e,
+    onClose: e,
+    channelId: n,
     applicationId: g,
-    transitionState: p
-  } = t, h = (0, l.e7)([d.ZP], () => d.ZP.getChannelMuteConfig(null, e));
+    transitionState: f
+  } = t, p = (0, l.e7)([s.ZP], () => s.ZP.getChannelMuteConfig(null, n));
   return (0, i.jsxs)(a.Y0X, {
-    transitionState: p,
+    transitionState: f,
     size: a.CgR.SMALL,
-    "aria-label": c.intl.string(c.t.uAmAiI),
+    "aria-label": o.intl.string(o.t.uAmAiI),
     parentComponent: "MuteAppNotificationsModalV2",
     children: [(0, i.jsx)(a.hzk, {
-      className: o.content,
+      className: d.content,
       children: (0, i.jsx)(a.xJW, {
-        title: c.intl.string(c.t.NkwaBg),
+        title: o.intl.string(o.t.NkwaBg),
         tag: "h1",
         children: (0, i.jsx)(a.FXm, {
           options: (0, u.k)().map(t => {
             let {
-              label: n,
-              value: e
+              label: e,
+              value: n
             } = t;
             return {
-              name: n,
-              value: e
+              name: e,
+              value: n
             }
           }),
           onChange: t => {
-            var n;
-            return n = t.value, void s.Z.updateAppDMOverrideSettings(null, e, g, (0, u.u9)(n), r.ZB.Muted)
+            var e;
+            return e = t.value, void r.Z.updateAppDMOverrideSettings(null, n, g, (0, u.u9)(e), c.ZB.Muted)
           },
-          value: null == h ? true : h.selected_time_window
+          value: null == p ? true : p.selected_time_window
         })
       })
     }), (0, i.jsx)(a.olH, {
-      className: o.closeButton,
-      onClick: n
+      className: d.closeButton,
+      onClick: e
     }), (0, i.jsx)(a.mzw, {
       children: (0, i.jsx)(a.zxk, {
         variant: "secondary",
-        text: c.intl.string(c.t.cpT0Cg),
+        text: o.intl.string(o.t.cpT0Cg),
         type: "button",
-        onClick: n
+        onClick: e
       })
     })]
   })

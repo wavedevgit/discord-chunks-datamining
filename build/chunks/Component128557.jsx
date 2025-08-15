@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 128557, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 128557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => U,
-  i: () => M
+  Z: () => R,
+  i: () => w
 }), require("./388685.js"), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -34,313 +33,302 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk183334 = require("./183334.js");
 
-function w(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function D(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function L(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function M(e) {
+function w(e) {
   let {
     className: t,
     iconUrl: n,
-    icon: o,
-    header: s,
-    completed: l,
+    icon: l,
+    header: o,
+    completed: s,
     onClick: c
-  } = e, [d, _] = i.useState(false), p = (0, f.Z)(l);
+  } = e, [d, h] = i.useState(false), f = (0, p.Z)(s);
   return i.useEffect(() => {
-    null != p && l !== p && (_(true), setTimeout(() => _(false), 1e3))
-  }, [l, p]), (0, r.jsxs)(u.P3F, {
-    className: a()(t, P.card, {
-      [P.completed]: l
+    null != f && s !== f && (h(true), setTimeout(() => h(false), 1e3))
+  }, [s, f]), (0, r.jsxs)(u.P3F, {
+    className: a()(t, T.card, {
+      [T.completed]: s
     }),
     onClick: c,
-    children: [null != o ? o : (0, r.jsx)("img", {
-      className: P.icon,
+    children: [null != l ? l : (0, r.jsx)("img", {
+      className: T.icon,
       src: n,
       alt: ""
     }), (0, r.jsx)(u.Text, {
       color: "header-primary",
-      className: a()(P.cardTextContainer, P.cardHeader),
+      className: a()(T.cardTextContainer, T.cardHeader),
       variant: "text-sm/normal",
-      children: s
-    }), l ? (0, r.jsx)(u.dz2, {
+      children: o
+    }), s ? (0, r.jsx)(u.dz2, {
       size: "md",
       color: "currentColor",
-      className: a()(P.checkmark, {
-        [P.animate]: d
+      className: a()(T.checkmark, {
+        [T.animate]: d
       })
-    }) : (0, r.jsx)(O.Z, {
-      className: P.arrow,
-      direction: O.Z.Directions.RIGHT
+    }) : (0, r.jsx)(x.Z, {
+      className: T.arrow,
+      direction: x.Z.Directions.RIGHT
     })]
   })
 }
 
-function j(e) {
-  let t = i.useCallback(() => {
-      _.ZP.trackWithMetadata(N.rMx.SERVER_SETUP_CTA_CLICKED, {
-        setup_type: C.Ft.CHANNEL_WELCOME,
-        action: C.j7.INVITE
-      }), null != e && (0, u.ZDy)(async () => {
-        let {
-          default: t
-        } = await Promise.all([n.e("7654"), n.e("49049"), n.e("53020")]).then(n.bind(n, 560114));
-        return n => (0, r.jsx)(t, x(D({}, n), {
-          guild: e,
-          source: N.t4x.CHANNEL_WELCOME,
-          analyticsLocation: {
-            section: N.jXE.CHANNEL_WELCOME_CTA
-          }
-        }))
-      })
-    }, [e]),
-    o = i.useCallback(() => {
-      _.ZP.trackWithMetadata(N.rMx.SERVER_SETUP_CTA_CLICKED, {
-        setup_type: C.Ft.CHANNEL_WELCOME,
-        action: C.j7.SEND_MESSAGE
-      }), v.S.dispatch(N.CkL.TEXTAREA_FOCUS, {
-        highlight: true,
-        channelId: N.lds
-      })
-    }, []),
-    a = i.useCallback(() => {
-      _.ZP.trackWithMetadata(N.rMx.SERVER_SETUP_CTA_CLICKED, {
-        setup_type: C.Ft.CHANNEL_WELCOME,
-        action: C.j7.PERSONALIZE_SERVER
-      }), null != e && h.Z.open(e.id, (0, g.r)(), {
-        section: N.jXE.CHANNEL_WELCOME_CTA
-      })
-    }, [e]);
-  return {
-    handleInvite: t,
-    handleMessage: o,
-    handlePersonalize: a,
-    handleDownload: i.useCallback(() => {
-      _.ZP.trackWithMetadata(N.rMx.SERVER_SETUP_CTA_CLICKED, {
-        setup_type: C.Ft.CHANNEL_WELCOME,
-        action: C.j7.DOWNLOAD
-      }), (0, u.ZDy)(async () => {
-        let {
-          default: e
-        } = await Promise.all([n.e("32996"), n.e("74023")]).then(n.bind(n, 431583));
-        return t => (0, r.jsx)(e, D({
-          source: N.jXE.CHANNEL_WELCOME_CTA
-        }, t))
-      })
-    }, []),
-    handleAddApplication: i.useCallback(() => {
-      null != e && (_.ZP.trackWithMetadata(N.rMx.SERVER_SETUP_CTA_CLICKED, {
-        setup_type: C.Ft.CHANNEL_WELCOME,
-        action: C.j7.ADD_APP
-      }), (0, u.ZDy)(async () => {
-        let {
-          default: t
-        } = await n.e("77046").then(n.bind(n, 272509));
-        return n => {
-          var i;
-          return (0, r.jsx)(t, x(D({
-            guildId: null != (i = e.id) ? i : ""
-          }, n), {
-            analyticsType: c.z.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL
-          }))
-        }
-      }))
-    }, [e])
-  }
-}
-
-function k(e) {
-  let t = (0, d.Z)(() => new s.Z.Value(0)),
-    n = (0, d.Z)(() => new s.Z.Value(0)),
-    r = (0, d.Z)(() => [new s.Z.Value(0), new s.Z.Value(0), new s.Z.Value(0), new s.Z.Value(0)]);
-  return i.useEffect(() => {
-    s.Z.stagger(300, [s.Z.parallel([s.Z.timing(n, {
-      toValue: 1,
-      duration: 450
-    }), s.Z.timing(t, {
-      toValue: 1,
-      duration: 450
-    })]), s.Z.stagger(100, [s.Z.timing(r[0], {
-      toValue: 1,
-      duration: 300
-    }), s.Z.timing(r[1], {
-      toValue: 1,
-      duration: 300
-    }), s.Z.timing(r[2], {
-      toValue: 1,
-      duration: 300
-    }), s.Z.timing(r[3], {
-      toValue: 1,
-      duration: 300
-    })])]).start()
-  }, [n, t, r]), {
-    titleAnimatedStyle: e ? {
-      transform: [{
-        translateY: t.interpolate({
-          inputRange: [0, 1],
-          outputRange: ["-20px", "0px"]
-        })
-      }],
-      opacity: n
-    } : {},
-    opacities: r
-  }
-}
-
-function U(e) {
+function R(e) {
   let {
     channel: t
-  } = e, n = (0, l.e7)([b.Z], () => null != t ? b.Z.getGuild(t.getGuildId()) : null, [t]), o = null != n && S.default.extractTimestamp(n.id) < Date.now() - N._8R, c = (0, l.e7)([E.default], () => (null == n ? true : n.ownerId) === E.default.getId(), [n]), {
-    canInvite: d,
-    canManageGuild: f,
-    canMessage: _
-  } = (0, p.TE)(t, n), h = (0, l.e7)([y.default], () => {
+  } = e, l = (0, s.e7)([_.Z], () => null != t ? _.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && E.default.extractTimestamp(l.id) < Date.now() - P._8R, x = (0, s.e7)([y.default], () => (null == l ? true : l.ownerId) === y.default.getId(), [l]), {
+    canInvite: R,
+    canManageGuild: M,
+    canMessage: k
+  } = (0, f.TE)(t, l), D = (0, s.e7)([C.default], () => {
     var e, t;
-    return (null == (e = y.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = y.default.getCurrentUser()) ? true : t.mobile) === true
+    return (null == (e = C.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = C.default.getCurrentUser()) ? true : t.mobile) === true
   }), {
-    guildPopulated: g,
-    guildMessaged: O,
-    guildPersonalized: v
-  } = (0, p.h_)(n), {
-    handleInvite: C,
-    handleMessage: w,
-    handlePersonalize: D,
-    handleDownload: L,
-    handleAddApplication: x
-  } = j(n), U = !(h || g || O || v), {
-    titleAnimatedStyle: G,
-    opacities: B
-  } = k(U), [Z, F] = i.useState([]), V = Z.length > 0;
+    guildPopulated: L,
+    guildMessaged: U,
+    guildPersonalized: B
+  } = (0, f.h_)(l), {
+    handleInvite: F,
+    handleMessage: H,
+    handlePersonalize: G,
+    handleDownload: V,
+    handleAddApplication: z
+  } = function(e) {
+    let t = i.useCallback(() => {
+        h.ZP.trackWithMetadata(P.rMx.SERVER_SETUP_CTA_CLICKED, {
+          setup_type: I.Ft.CHANNEL_WELCOME,
+          action: I.j7.INVITE
+        }), null != e && (0, u.ZDy)(async () => {
+          let {
+            default: t
+          } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
+          return n => (0, r.jsx)(t, A(N({}, n), {
+            guild: e,
+            source: P.t4x.CHANNEL_WELCOME,
+            analyticsLocation: {
+              section: P.jXE.CHANNEL_WELCOME_CTA
+            }
+          }))
+        })
+      }, [e]),
+      l = i.useCallback(() => {
+        h.ZP.trackWithMetadata(P.rMx.SERVER_SETUP_CTA_CLICKED, {
+          setup_type: I.Ft.CHANNEL_WELCOME,
+          action: I.j7.SEND_MESSAGE
+        }), v.S.dispatch(P.CkL.TEXTAREA_FOCUS, {
+          highlight: true,
+          channelId: P.lds
+        })
+      }, []),
+      a = i.useCallback(() => {
+        h.ZP.trackWithMetadata(P.rMx.SERVER_SETUP_CTA_CLICKED, {
+          setup_type: I.Ft.CHANNEL_WELCOME,
+          action: I.j7.PERSONALIZE_SERVER
+        }), null != e && m.Z.open(e.id, (0, b.r)(), {
+          section: P.jXE.CHANNEL_WELCOME_CTA
+        })
+      }, [e]);
+    return {
+      handleInvite: t,
+      handleMessage: l,
+      handlePersonalize: a,
+      handleDownload: i.useCallback(() => {
+        h.ZP.trackWithMetadata(P.rMx.SERVER_SETUP_CTA_CLICKED, {
+          setup_type: I.Ft.CHANNEL_WELCOME,
+          action: I.j7.DOWNLOAD
+        }), (0, u.ZDy)(async () => {
+          let {
+            default: e
+          } = await Promise.all([n.e("32996"), n.e("74023")]).then(n.bind(n, 431583));
+          return t => (0, r.jsx)(e, N({
+            source: P.jXE.CHANNEL_WELCOME_CTA
+          }, t))
+        })
+      }, []),
+      handleAddApplication: i.useCallback(() => {
+        null != e && (h.ZP.trackWithMetadata(P.rMx.SERVER_SETUP_CTA_CLICKED, {
+          setup_type: I.Ft.CHANNEL_WELCOME,
+          action: I.j7.ADD_APP
+        }), (0, u.ZDy)(async () => {
+          let {
+            default: t
+          } = await n.e("77046").then(n.bind(n, 272509));
+          return n => {
+            var i;
+            return (0, r.jsx)(t, A(N({
+              guildId: null != (i = e.id) ? i : ""
+            }, n), {
+              analyticsType: c.z.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL
+            }))
+          }
+        }))
+      }, [e])
+    }
+  }(l), W = !(D || L || U || B), {
+    titleAnimatedStyle: Y,
+    opacities: q
+  } = function(e) {
+    let t = (0, d.Z)(() => new o.Z.Value(0)),
+      n = (0, d.Z)(() => new o.Z.Value(0)),
+      r = (0, d.Z)(() => [new o.Z.Value(0), new o.Z.Value(0), new o.Z.Value(0), new o.Z.Value(0)]);
+    return i.useEffect(() => {
+      o.Z.stagger(300, [o.Z.parallel([o.Z.timing(n, {
+        toValue: 1,
+        duration: 450
+      }), o.Z.timing(t, {
+        toValue: 1,
+        duration: 450
+      })]), o.Z.stagger(100, [o.Z.timing(r[0], {
+        toValue: 1,
+        duration: 300
+      }), o.Z.timing(r[1], {
+        toValue: 1,
+        duration: 300
+      }), o.Z.timing(r[2], {
+        toValue: 1,
+        duration: 300
+      }), o.Z.timing(r[3], {
+        toValue: 1,
+        duration: 300
+      })])]).start()
+    }, [n, t, r]), {
+      titleAnimatedStyle: e ? {
+        transform: [{
+          translateY: t.interpolate({
+            inputRange: [0, 1],
+            outputRange: ["-20px", "0px"]
+          })
+        }],
+        opacity: n
+      } : {},
+      opacities: r
+    }
+  }(W), [K, X] = i.useState([]), Q = K.length > 0;
   if (i.useEffect(() => {
       (async () => {
         try {
           var e;
-          let t = await (0, m.i)(null != (e = null == n ? true : n.id) ? e : N.lds);
-          F(t.map(e => e.id))
+          let t = await (0, g.i)(null != (e = null == l ? true : l.id) ? e : P.lds);
+          X(t.map(e => e.id))
         } catch (e) {}
       })()
-    }, [null == n ? true : n.id]), null == n) return null;
-  let H = [];
-  o || (d && H.push((0, r.jsx)(s.Z.div, {
-    className: P.cardWrapper,
-    style: U ? {
-      opacity: B[H.length]
+    }, [null == l ? true : l.id]), null == l) return null;
+  let J = [];
+  p || (R && J.push((0, r.jsx)(o.Z.div, {
+    className: T.cardWrapper,
+    style: W ? {
+      opacity: q[J.length]
     } : {},
-    children: (0, r.jsx)(M, {
+    children: (0, r.jsx)(w, {
       iconUrl: u.YvY,
-      header: R.intl.string(R.t.q9n0TU),
-      completed: g,
-      onClick: C
+      header: Z.intl.string(Z.t.q9n0TU),
+      completed: L,
+      onClick: F
     })
-  }, "invite")), f && H.push((0, r.jsx)(s.Z.div, {
-    className: P.cardWrapper,
-    style: U ? {
-      opacity: B[H.length]
+  }, "invite")), M && J.push((0, r.jsx)(o.Z.div, {
+    className: T.cardWrapper,
+    style: W ? {
+      opacity: q[J.length]
     } : {},
-    children: (0, r.jsx)(M, {
+    children: (0, r.jsx)(w, {
       iconUrl: u.$_T,
-      header: R.intl.string(R.t.c5kxPj),
-      completed: v,
-      onClick: D
+      header: Z.intl.string(Z.t.c5kxPj),
+      completed: B,
+      onClick: G
     })
-  }, "customize")), _ && H.push((0, r.jsx)(s.Z.div, {
-    className: P.cardWrapper,
-    style: U ? {
-      opacity: B[H.length]
+  }, "customize")), k && J.push((0, r.jsx)(o.Z.div, {
+    className: T.cardWrapper,
+    style: W ? {
+      opacity: q[J.length]
     } : {},
-    children: (0, r.jsx)(M, {
+    children: (0, r.jsx)(w, {
       iconUrl: u.qMX,
-      header: R.intl.string(R.t["SoP7+v"]),
-      completed: O,
-      onClick: w
+      header: Z.intl.string(Z.t["SoP7+v"]),
+      completed: U,
+      onClick: H
     })
-  }, "message")), (0, T.isWeb)() && H.push((0, r.jsx)(s.Z.div, {
-    className: P.cardWrapper,
-    style: U ? {
-      opacity: B[H.length]
+  }, "message")), (0, O.isWeb)() && J.push((0, r.jsx)(o.Z.div, {
+    className: T.cardWrapper,
+    style: W ? {
+      opacity: q[J.length]
     } : {},
-    children: (0, r.jsx)(M, {
+    children: (0, r.jsx)(w, {
       iconUrl: u.yIb,
-      header: R.intl.string(R.t.pGVNIy),
-      completed: h,
-      onClick: L
+      header: Z.intl.string(Z.t.pGVNIy),
+      completed: D,
+      onClick: V
     })
-  }, "download")), H.push((0, r.jsx)(s.Z.div, {
-    className: P.cardWrapper,
-    style: U ? {
-      opacity: B[H.length]
+  }, "download")), J.push((0, r.jsx)(o.Z.div, {
+    className: T.cardWrapper,
+    style: W ? {
+      opacity: q[J.length]
     } : {},
-    children: (0, r.jsx)(M, {
+    children: (0, r.jsx)(w, {
       iconUrl: u.Tg$,
-      header: R.intl.string(R.t.IhHDEB),
-      completed: V,
-      onClick: x
+      header: Z.intl.string(Z.t.IhHDEB),
+      completed: Q,
+      onClick: z
     })
   }, "addapp")));
-  let Y = c ? R.intl.string(R.t["1ach9P"]) : R.intl.string(R.t["ezm+/v"]);
-  o && (Y = R.intl.string(R.t["gwyU/P"]));
-  let W = "".concat(I.Z.getArticleURL(N.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
-  return (0, r.jsx)(A.ZP, {
+  let $ = x ? Z.intl.string(Z.t["1ach9P"]) : Z.intl.string(Z.t["ezm+/v"]);
+  p && ($ = Z.intl.string(Z.t["gwyU/P"]));
+  let ee = "".concat(j.Z.getArticleURL(P.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
+  return (0, r.jsx)(S.ZP, {
     channelId: t.id,
     children: (0, r.jsx)("div", {
-      className: P.container,
+      className: T.container,
       children: (0, r.jsxs)("div", {
-        className: P.inner,
-        children: [(0, r.jsxs)(s.Z.div, {
-          style: G,
+        className: T.inner,
+        children: [(0, r.jsxs)(o.Z.div, {
+          style: Y,
           children: [(0, r.jsx)(u.X6q, {
-            className: P.titleName,
+            className: T.titleName,
             variant: "heading-xxl/medium",
-            children: R.intl.format(R.t.rkHVKS, {
-              guildName: n.name
+            children: Z.intl.format(Z.t.rkHVKS, {
+              guildName: l.name
             })
           }), (0, r.jsxs)(u.Text, {
             color: "header-secondary",
             className: a()({
-              [P.subtitle]: true,
-              [P.noChildren]: 0 === H.length
+              [T.subtitle]: true,
+              [T.noChildren]: 0 === J.length
             }),
             variant: "text-sm/normal",
-            children: [Y, " ", H.length > 0 ? R.intl.format(R.t.UOtD39, {
-              guideURL: W
+            children: [$, " ", J.length > 0 ? Z.intl.format(Z.t.UOtD39, {
+              guideURL: ee
             }) : null]
           })]
-        }), H]
+        }), J]
       })
     })
   })

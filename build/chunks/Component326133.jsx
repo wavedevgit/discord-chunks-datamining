@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -69,8 +69,8 @@ function C(e, t) {
   if (null == e) return {};
   var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -78,8 +78,8 @@ function C(e, t) {
 function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let P = 490,
@@ -88,31 +88,31 @@ let P = 490,
   L = 200,
   x = 120,
   M = Chunk73800.forwardRef(function(e, t) {
-    var n, o, T, A, R, M, j;
+    var n, a, T, A, R, M, k;
     let {
-      channel: k,
+      channel: j,
       type: U,
       editorHeight: G,
       onVisibilityChange: B,
-      editorScrollerRef: Z,
+      editorScrollerRef: V,
       barsHeight: F
-    } = e, V = (0, h.Dt)(), H = (0, l.e7)([E.Z], () => {
+    } = e, Z = (0, h.Dt)(), H = (0, l.e7)([E.Z], () => {
       var e;
-      return null != (e = E.Z.getGuild(k.guild_id)) ? e : null
-    }, [k.guild_id]), Y = i.useRef(null), [W, K, z] = (0, O.Z)(N(S({}, e), {
+      return null != (e = E.Z.getGuild(j.guild_id)) ? e : null
+    }, [j.guild_id]), Y = i.useRef(null), [W, K, z] = (0, O.Z)(N(S({}, e), {
       guild: H
     }), t, Y), q = (null == (n = U.autocomplete) ? true : n.forceChatLayer) ? g.ZP : m.ZP, X = (0, _.DJ)(W.selectedIndex);
-    (0, p.KR)(V, W.isVisible, X);
+    (0, p.KR)(Z, W.isVisible, X);
     let Q = (0, y.Z)({
         editorHeight: G,
         type: U,
         state: W
       }),
       J = (0, l.e7)([d.ZP], () => {
-        let e = d.ZP.getSelfEmbeddedActivityForChannel(k.id),
+        let e = d.ZP.getSelfEmbeddedActivityForChannel(j.id),
           t = d.ZP.getActivityPanelMode();
-        return (0, u.l5)(k) && null != e && (0, f.p)(e.location) === k.id && t === v.Ez.PANEL
-      }, [k]),
+        return (0, u.l5)(j) && null != e && (0, f.p)(e.location) === j.id && t === v.Ez.PANEL
+      }, [j]),
       $ = i.useMemo(() => (null == Q ? true : Q.top) == null && (null == Q ? true : Q.left) == null && (null == Q ? true : Q.bottom) == null && (null == Q ? true : Q.right) == null ? "" : String(Date.now()), [null == Q ? true : Q.top, null == Q ? true : Q.left, null == Q ? true : Q.bottom, null == Q ? true : Q.right]);
     if (i.useEffect(() => {
         B(W.isVisible)
@@ -120,7 +120,7 @@ let P = 490,
     let ee = null != (T = W.query.typeInfo.renderResults({
       results: W.query.results,
       selectedIndex: W.selectedIndex,
-      channel: k,
+      channel: j,
       guild: H,
       query: W.query.queryText,
       options: W.query.options,
@@ -136,12 +136,12 @@ let P = 490,
       },
       en = P;
     null != Q && (en = (null == (A = U.autocomplete) ? true : A.small) ? L : (null == (R = W.query) ? true : R.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
-    let er = Math.max(G, null != (M = null == Z || null == (o = Z.current) ? true : o.clientHeight) ? M : 0),
+    let er = Math.max(G, null != (M = null == V || null == (a = V.current) ? true : a.clientHeight) ? M : 0),
       ei = Math.min(.5 * window.innerHeight, er);
     en = Math.min(window.innerHeight - x - ei - (null != F ? F : 0), en);
-    let eo = (0, r.jsx)(_.ZP, {
-      id: V,
-      className: a()(I.autocomplete, et),
+    let ea = (0, r.jsx)(_.ZP, {
+      id: Z,
+      className: o()(I.autocomplete, et),
       innerClassName: I.autocompleteInner,
       onMouseDown: e => e.preventDefault(),
       children: (0, r.jsx)(s.bG, {
@@ -152,7 +152,7 @@ let P = 490,
               ref: t
             } = e, n = C(e, ["ref"]);
             return (0, r.jsx)(c.h21, N(S({
-              id: V,
+              id: Z,
               ref: e => {
                 var n;
                 t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null, Y.current = e
@@ -163,7 +163,7 @@ let P = 490,
                 maxHeight: en
               },
               role: "listbox",
-              "aria-labelledby": (0, _.rp)(V),
+              "aria-labelledby": (0, _.rp)(Z),
               children: ee
             }))
           }
@@ -175,12 +175,12 @@ let P = 490,
         targetRef: e.targetRef,
         overrideTargetRect: Q,
         positionKey: $,
-        position: null != (j = e.position) ? j : "top",
+        position: null != (k = e.position) ? k : "top",
         align: "left",
         spacing: 8,
         autoInvert: true,
         nudgeAlignIntoViewport: true,
-        children: () => eo
+        children: () => ea
       })
-    }) : eo
+    }) : ea
   })

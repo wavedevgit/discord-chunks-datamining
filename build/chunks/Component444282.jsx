@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk166459 = require("./166459.js"),
   Chunk53281 = require("./53281.jsx"),
@@ -24,7 +24,7 @@ function E(e) {
   let {
     channelId: t,
     option: n,
-    keyboardModeEnabled: o
+    keyboardModeEnabled: a
   } = e, E = i.useRef(null), [b, y] = i.useState(false), O = f.Z.getUpload(t, n.name, d.d.SlashCommand), v = i.useRef(null), I = e => {
     if (e.which === h.yXg.ENTER) {
       var t;
@@ -76,7 +76,7 @@ function E(e) {
   return null != O ? (0, r.jsx)(p.Z, {
     channelId: t,
     upload: O,
-    keyboardModeEnabled: o,
+    keyboardModeEnabled: a,
     draftType: d.d.SlashCommand,
     label: (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsxs)(s.Text, {
@@ -94,15 +94,15 @@ function E(e) {
   }) : (0, r.jsxs)(_.Z, {
     id: n.name,
     channelId: t,
-    keyboardModeEnabled: o,
+    keyboardModeEnabled: a,
     onKeyDown: I,
-    className: a()(m.emptyOption, {
+    className: o()(m.emptyOption, {
       [m.emptyOptionActive]: b
     }),
     draftType: d.d.SlashCommand,
     ref: v,
     children: [(0, r.jsx)("span", {
-      className: a()(m.optionName, {
+      className: o()(m.optionName, {
         [m.optionNameActive]: b
       }),
       children: n.name

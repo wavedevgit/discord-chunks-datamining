@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk688619 = require("./688619.js"),
-  o = require.n(Chunk688619);
+  a = require.n(Chunk688619);
 require("./979590.js");
 var Chunk442837 = require("./442837.js"),
   Chunk866442 = require("./866442.js"),
@@ -17,15 +17,15 @@ var Chunk442837 = require("./442837.js"),
 let f = 8,
   _ = .725,
   p = e => {
-    let t = (0, a.e7)([l.Z], () => l.Z.saturation),
-      n = (0, a.e7)([u.Z], () => u.Z.theme),
+    let t = (0, o.e7)([l.Z], () => l.Z.saturation),
+      n = (0, o.e7)([u.Z], () => u.Z.theme),
       i = (0, d.L)(n, t),
       [p, h] = (0, c.Cf)(e, i);
     return r.useMemo(() => {
       let e = (0, s._i)(p),
         t = (0, s._i)(h);
-      for (let t = 1; t < f && !((0, s.Bd)(e) >= _); t++) e = o()(e).darken(.5).num();
-      for (let e = 1; e < f && !((0, s.Bd)(t) >= _); e++) t = o()(t).darken(.5).num();
+      for (let t = 1; t < f && !((0, s.Bd)(e) >= _); t++) e = a()(e).darken(.5).num();
+      for (let e = 1; e < f && !((0, s.Bd)(t) >= _); e++) t = a()(t).darken(.5).num();
       return {
         primaryColor: (0, s.Rf)(e),
         secondaryColor: (0, s.Rf)(t)

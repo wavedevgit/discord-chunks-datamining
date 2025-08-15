@@ -2,22 +2,22 @@
 /** chunk id: 789407, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  XB: () => o,
+  XB: () => a,
   r9: () => l
 });
 var Chunk726542 = require("./726542.js"),
   Chunk973616 = require("./973616.js");
-let o = "spotify",
-  a = Chunk726542.Z.get(o);
+let a = "spotify",
+  o = Chunk726542.Z.get(a);
 class s extends Chunk973616.ZP {
   getIconURL(e) {
-    return a.icon.lightPNG
+    return o.icon.lightPNG
   }
   getWhiteIconURL() {
-    return a.icon.whitePNG
+    return o.icon.whitePNG
   }
   constructor() {
-    super({}), this.id = o, this.name = a.name
+    super({}), this.id = a, this.name = o.name
   }
 }
 let l = new s

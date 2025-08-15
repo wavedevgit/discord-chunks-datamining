@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
@@ -57,7 +57,7 @@ function m(e) {
   let {
     src: t,
     size: n,
-    constrain: o = "height",
+    constrain: a = "height",
     className: f,
     alt: p,
     fallbackSrc: m,
@@ -72,9 +72,9 @@ function m(e) {
     style: {
       maxWidth: y
     },
-    className: a()(d.contentImage, f)
+    className: o()(d.contentImage, f)
   });
-  let A = "height" === o ? {
+  let A = "height" === a ? {
     maxWidth: y,
     height: y
   } : {
@@ -87,7 +87,7 @@ function m(e) {
     shouldShow: E,
     children: e => (0, r.jsx)("img", h(_({}, e), {
       style: A,
-      className: a()(d.contentImage, f),
+      className: o()(d.contentImage, f),
       src: O && null != m ? m : t,
       "aria-hidden": g,
       alt: null != p ? p : g ? true : u.intl.string(u.t["2B/phI"]),

@@ -1,7 +1,7 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 987889, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => I
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -101,8 +101,8 @@ function x(e) {
     Menu: s,
     interactionType: c,
     actionType: u
-  } = e, d = (0, h.fJ)(), [p, f] = (0, i.useState)(false), [g, b] = (0, i.useState)(false), O = (0, i.useRef)(null), {
-    openMenu: _,
+  } = e, d = (0, h.fJ)(), [p, f] = (0, i.useState)(false), [g, b] = (0, i.useState)(false), _ = (0, i.useRef)(null), {
+    openMenu: O,
     closeMenu: C
   } = (0, m.z)();
   return (0, r.jsx)(o.yRy, {
@@ -111,13 +111,13 @@ function x(e) {
     position: "right",
     align: "top",
     autoInvert: false,
-    targetElementRef: O,
+    targetElementRef: _,
     onRequestClose: () => {
       b(false), C(n.id, u)
     },
     renderPopout: e => (0, r.jsx)(o.VqE, {
       onClick: e => e.stopPropagation(),
-      returnRef: O,
+      returnRef: _,
       children: (0, r.jsx)(s, {
         renderPopoutProps: e,
         channel: t,
@@ -131,7 +131,7 @@ function x(e) {
       onTooltipShow: () => f(true),
       onTooltipHide: () => f(false),
       children: t => (0, r.jsx)(o.P3F, j(v({}, t), {
-        innerRef: O,
+        innerRef: _,
         className: y.action,
         onClick: e => {
           (0, h.Qz)({
@@ -140,7 +140,7 @@ function x(e) {
             viewId: d
           }), e.stopPropagation();
           let t = !g;
-          b(t), t ? _(n.id, u) : C(n.id, u)
+          b(t), t ? O(n.id, u) : C(n.id, u)
         },
         children: (0, r.jsx)(a, j(v({}, e), {
           message: n,
@@ -163,8 +163,8 @@ let S = {
         messageId: e.id,
         channelId: e.channel_id
       }), s.In(e.channel_id, {
-        object: O.qAy.MARK_MESSAGE_AS_READ_BUTTON,
-        objectType: O.Qqv.ACK_MANUAL
+        object: _.qAy.MARK_MESSAGE_AS_READ_BUTTON,
+        objectType: _.Qqv.ACK_MANUAL
       }, true, true, e.id)
     },
     interactionType: Chunk804932.s_.ACK
@@ -184,12 +184,12 @@ let S = {
       });
       return (0, r.jsxs)(o.v2r, j(v({}, n), {
         navId: "message-reminder-create",
-        "aria-label": _.intl.string(_.t.mJ3P0N),
+        "aria-label": O.intl.string(O.t.mJ3P0N),
         onClose: n.closePopout,
         onSelect: () => null,
         children: [null != i ? (0, r.jsx)(o.sNh, {
           id: "remove-from-for-later",
-          label: _.intl.string(_.t.SvXS1d),
+          label: O.intl.string(O.t.SvXS1d),
           icon: o.plf,
           action: () => (0, d.x)({
             channelId: t.channel_id,
@@ -199,7 +199,7 @@ let S = {
           })
         }) : (0, r.jsx)(o.sNh, {
           id: "create-bookmark",
-          label: _.intl.string(_.t["9p3D9v"]),
+          label: O.intl.string(O.t["9p3D9v"]),
           icon: o.gt9,
           action: () => (0, d.z)({
             channelId: t.channel_id,
@@ -223,17 +223,17 @@ let S = {
       return t.isThread() ? (0, r.jsx)(f.Z, j(v({}, n), {
         channel: t,
         navId: "thread-context",
-        label: _.intl.string(_.t["1NBjqa"])
+        label: O.intl.string(O.t["1NBjqa"])
       })) : (0, r.jsx)(c.Z, j(v({}, n), {
         channel: t,
         navId: "channel-context",
-        label: _.intl.string(_.t.Xm41aW)
+        label: O.intl.string(O.t.Xm41aW)
       }))
     }
   }
 };
 
-function P(e) {
+function I(e) {
   let {
     message: t,
     channel: n,

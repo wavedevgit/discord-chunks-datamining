@@ -1,6 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 120021, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 120021, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  n: () => r
+});
 
 function r(e) {
   let {
@@ -9,6 +11,3 @@ function r(e) {
   } = e;
   return t > false && n > false
 }
-require.d(exports, {
-  n: () => r
-})

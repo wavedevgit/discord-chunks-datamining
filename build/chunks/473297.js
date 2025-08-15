@@ -1,25 +1,25 @@
-/** Chunk was on web.js **/
-/** chunk id: 473297, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 473297, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk621796 = require("./621796.js"),
   i = require("./223138.js")("draft_tree_data_support");
-module.exports = function(e, t, n) {
-  var o = e.getSelection(),
-    a = e.getCurrentContent(),
-    s = o,
-    l = o.getAnchorKey(),
+module.exports = function(t, e, r) {
+  var o = t.getSelection(),
+    a = t.getCurrentContent(),
+    u = o,
+    s = o.getAnchorKey(),
     c = o.getFocusKey(),
-    u = a.getBlockForKey(l);
-  if (i && "forward" === n && l !== c) return a;
+    l = a.getBlockForKey(s);
+  if (i && "forward" === r && s !== c) return a;
   if (o.isCollapsed()) {
-    if ("forward" === n) {
-      if (e.isSelectionAtEndOfContent()) return a;
-      if (i && o.getAnchorOffset() === a.getBlockForKey(l).getLength()) {
-        var d = a.getBlockForKey(u.nextSibling);
-        if (!d || 0 === d.getLength()) return a
+    if ("forward" === r) {
+      if (t.isSelectionAtEndOfContent()) return a;
+      if (i && o.getAnchorOffset() === a.getBlockForKey(s).getLength()) {
+        var f = a.getBlockForKey(l.nextSibling);
+        if (!f || 0 === f.getLength()) return a
       }
-    } else if (e.isSelectionAtStartOfContent()) return a;
-    if ((s = t(e)) === o) return a
+    } else if (t.isSelectionAtStartOfContent()) return a;
+    if ((u = e(t)) === o) return a
   }
-  return r.removeRange(a, s, n)
+  return n.removeRange(a, u, r)
 }

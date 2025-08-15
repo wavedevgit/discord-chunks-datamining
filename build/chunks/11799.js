@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 11799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y6: () => p
@@ -26,8 +26,8 @@ let p = () => {
       isDesktop: p,
       withMentions: f = false,
       initialPageSize: h
-    } = e, g = (0, i.e7)([u.Z], () => u.Z.shouldReload()), m = r.useRef(false), [b, O] = r.useState(false), {
-      initialized: _,
+    } = e, g = (0, i.e7)([u.Z], () => u.Z.shouldReload()), m = r.useRef(false), [b, _] = r.useState(false), {
+      initialized: O,
       loading: y,
       items: v,
       hasMore: j,
@@ -48,22 +48,22 @@ let p = () => {
       roleFilter: a.ZP.roleFilter
     }));
     r.useEffect(() => ((0, s.Vk)(true), () => (0, s.Vk)(false)), []), r.useEffect(() => {
-      _ && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
-    }, [t, _]);
-    let P = (0, o.Z)();
+      O && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
+    }, [t, O]);
+    let I = (0, o.Z)();
     r.useEffect(() => () => {
-      p ? !P() && (E || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
-    }, [n, v, p, P, E]), r.useEffect(() => {
+      p ? !I() && (E || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
+    }, [n, v, p, I, E]), r.useEffect(() => {
       let e = g && t;
-      (!_ || e) && (0, s.jk)({
+      (!O || e) && (0, s.jk)({
         limit: null != h ? h : f ? 8 : 20,
         with_mentions: f,
         roles_filter: x,
         everyone_filter: S
       })
-    }, [_, g, t, f, x, S, h]);
-    let I = r.useCallback(async e => {
-      !m.current && _ && j && null != C && (e || !E) && (m.current = true, O(true), await (0, s.jk)({
+    }, [O, g, t, f, x, S, h]);
+    let P = r.useCallback(async e => {
+      !m.current && O && j && null != C && (e || !E) && (m.current = true, _(true), await (0, s.jk)({
         after: C,
         with_mentions: f,
         roles_filter: x,
@@ -71,14 +71,14 @@ let p = () => {
         limit: f ? 8 : 20
       }, () => {
         m.current = false
-      }), O(false))
-    }, [_, j, C, E, f, x, S]);
+      }), _(false))
+    }, [O, j, C, E, f, x, S]);
     return {
-      initialized: _,
+      initialized: O,
       loading: y,
       items: v,
       hasMore: j,
-      loadMore: I,
+      loadMore: P,
       loadingMore: b,
       setReadNotifItemToAcked: e => {
         e.acked || (e.acked = true)

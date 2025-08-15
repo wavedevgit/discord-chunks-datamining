@@ -15,10 +15,10 @@ function s(e) {
     onClick: n,
     size: s = i.Ph.SMALL
   } = e;
-  return (0, r.jsx)(o.tG, {
+  return (0, r.jsx)(a.tG, {
     size: s,
     action: t ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-    text: a.intl.string(a.t["UJKH/v"]),
+    text: o.intl.string(o.t["UJKH/v"]),
     autoFocus: true,
     fullWidth: false,
     onClick: n

@@ -1,44 +1,39 @@
-/** Chunk was on web.js **/
-/** chunk id: 128854, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 30243 **/
+/** chunk id: 128854, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  F: () => c,
-  c: () => l
+  F: () => a,
+  c: () => o
 }), require("./415506.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js");
+let i = Chunk73800.createContext(null);
 
-function o(e, t) {
-  if (null == e) return {};
-  var n, r, i = a(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function a(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-let s = Chunk73800.createContext(null);
-
-function l() {
-  let e = Chunk73800.useContext(s);
+function o() {
+  let e = Chunk73800.useContext(i);
   if (null == module) throw Error("Could not find context for useMessageAccessoriesComponentContext.");
   return module
 }
 
-function c(e) {
+function a(e) {
   var {
     children: t
-  } = e, n = o(e, ["children"]);
-  return (0, r.jsx)(s.Provider, {
-    value: n,
+  } = e, r = function(e, t) {
+    if (null == e) return {};
+    var r, n, l = function(e, t) {
+      if (null == e) return {};
+      var r, n, l = {},
+        i = Object.keys(e);
+      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
+      return l
+    }(e, t);
+    if (Object.getOwnPropertySymbols) {
+      var i = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
+    }
+    return l
+  }(e, ["children"]);
+  return (0, n.jsx)(i.Provider, {
+    value: r,
     children: t
   })
 }

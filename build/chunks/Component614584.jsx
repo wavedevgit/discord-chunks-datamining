@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 614584, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 614584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => R
+  Z: () => P
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -26,160 +25,153 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function S(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function A(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = Chunk73800.memo(function(e) {
+let S = Chunk73800.memo(function(e) {
   var t;
   let {
     baseMessage: n,
-    referencedMessage: T,
-    channel: A,
-    compact: C = false,
-    referencedUsernameProfile: R,
-    referencedAvatarProfile: P,
-    setPopout: w,
-    isReplySpineClickable: D,
-    showReplySpine: L
-  } = e, x = T.state === p.Y.LOADED ? T.message : true, M = (0, E.Uj)(x), j = (0, u.p)(), k = l.d.useExperiment({
+    referencedMessage: S,
+    channel: P,
+    compact: I = false,
+    referencedUsernameProfile: Z,
+    referencedAvatarProfile: T,
+    setPopout: N,
+    isReplySpineClickable: A,
+    showReplySpine: w
+  } = e, R = S.state === f.Y.LOADED ? S.message : true, M = (0, y.Uj)(R), k = (0, u.p)(), D = s.d.useExperiment({
     location: "repliedMessage"
-  }).enabled, U = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), G = i.useMemo(() => {
-    if (null == x) return null;
-    let e = (0, s.Z)(x);
-    if (e.type === v.uaV.USER_JOIN) return (0, a.Rp)(I.intl.formatToParts(m.Z.getSystemMessageUserJoin(e.id), {
+  }).enabled, L = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = i.useMemo(() => {
+    if (null == R) return null;
+    let e = (0, o.Z)(R);
+    if (e.type === v.uaV.USER_JOIN) return (0, a.Rp)(j.intl.formatToParts(g.Z.getSystemMessageUserJoin(e.id), {
       username: null != M ? M.nick : e.author.username,
       usernameHook: e => e
     }));
     if (e.type === v.uaV.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.Rp)((0, c.PA)({
       username: null != M ? M.nick : e.author.username,
-      guildId: null == A ? true : A.guild_id,
+      guildId: null == P ? true : P.guild_id,
       roleSubscriptionData: e.roleSubscriptionData
     }));
-    if (e.type === v.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.Rp)((0, f.Y)({
+    if (e.type === v.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.Rp)((0, p.Y)({
       application: null == e ? true : e.application,
       username: null == M ? true : M.nick
     }));
-    if (e.type === v.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.Rp)((0, _.B2)({
+    if (e.type === v.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.Rp)((0, h.B2)({
       application: null == e ? true : e.application,
       username: null == M ? true : M.nick
     }));
-    if (e.type === v.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.Rp)((0, _.hj)({
+    if (e.type === v.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.Rp)((0, h.hj)({
       application: null == e ? true : e.application,
       username: null == M ? true : M.nick
     }));
-    else if (e.type === v.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : I.intl.string(I.t.wnn1DQ);
+    else if (e.type === v.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : j.intl.string(j.t.wnn1DQ);
     if (null != e.content && "" !== e.content) {
       let t = {
           formatInline: true,
           allowLinks: true,
-          shouldFilterKeywords: j
+          shouldFilterKeywords: k
         },
-        n = e.isFirstMessageInForumPost(A) ? N(S({}, t), {
+        n = e.isFirstMessageInForumPost(P) ? E(O({}, t), {
           noStyleAndInteraction: true,
           allowHeading: true,
           allowList: true,
-          allowGameMentions: k
-        }) : N(S({}, t), {
+          allowGameMentions: D
+        }) : E(O({}, t), {
           formatInline: true,
-          allowHeading: U,
-          allowList: U,
-          allowGameMentions: k
+          allowHeading: L,
+          allowList: L,
+          allowGameMentions: D
         });
-      return (0, g.ZP)(e, n).content
+      return (0, b.ZP)(e, n).content
     }
     return null
-  }, [x, M, A, U, j, k]), {
+  }, [R, M, P, L, k, D]), {
     isReplyAuthorBlocked: B,
-    isReplyAuthorIgnored: Z
-  } = (0, o.cj)([h.Z], () => ({
-    isReplyAuthorBlocked: null != x && h.Z.isBlockedForMessage(x),
-    isReplyAuthorIgnored: null != x && h.Z.isIgnoredForMessage(x)
-  }), [x]), F = (0, O.wq)(null == x ? true : x.author.id, A.id), V = (0, O.$3)(n, x), H = (0, O.Wl)(x, A, R, w), Y = (0, O.rY)(P, w), W = i.useCallback(() => {
-    w({
+    isReplyAuthorIgnored: F
+  } = (0, l.cj)([m.Z], () => ({
+    isReplyAuthorBlocked: null != R && m.Z.isBlockedForMessage(R),
+    isReplyAuthorIgnored: null != R && m.Z.isIgnoredForMessage(R)
+  }), [R]), H = (0, x.wq)(null == R ? true : R.author.id, P.id), G = (0, x.$3)(n, R), V = (0, x.Wl)(R, P, Z, N), z = (0, x.rY)(T, N), W = i.useCallback(() => {
+    N({
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [w]), K = (0, E.Uj)(n);
-  return (0, r.jsx)(b.Z, {
+  }, [N]), Y = (0, y.Uj)(n);
+  return (0, r.jsx)(_.Z, {
     repliedAuthor: M,
     baseMessage: n,
-    channel: A,
-    baseAuthor: K,
-    referencedMessage: T,
-    content: G,
-    compact: C,
+    channel: P,
+    baseAuthor: Y,
+    referencedMessage: S,
+    content: U,
+    compact: I,
     isReplyAuthorBlocked: B,
-    isReplyAuthorIgnored: Z,
-    showAvatarPopout: P,
-    showUsernamePopout: R,
-    renderPopout: y.Z,
-    onClickAvatar: Y,
-    onClickUsername: H,
-    onClickReply: V,
-    onContextMenu: F,
+    isReplyAuthorIgnored: F,
+    showAvatarPopout: T,
+    showUsernamePopout: Z,
+    renderPopout: C.Z,
+    onClickAvatar: z,
+    onClickUsername: V,
+    onClickReply: G,
+    onContextMenu: H,
     onPopoutRequestClose: W,
-    isReplySpineClickable: D,
-    showReplySpine: L
+    isReplySpineClickable: A,
+    showReplySpine: w
   })
 });
 
-function R(e) {
+function P(e) {
   let {
     message: t,
     channel: n,
     compact: i,
-    setPopout: o,
+    setPopout: l,
     referencedUsernameProfile: a,
-    referencedAvatarProfile: s,
-    replyReference: l,
+    referencedAvatarProfile: o,
+    replyReference: s,
     replyMessage: c,
     isReplySpineClickable: u,
     showReplySpine: d = true
   } = e;
-  return null != l && (0, r.jsx)(C, {
+  return null != s && (0, r.jsx)(S, {
     baseMessage: t,
-    replyReference: l,
+    replyReference: s,
     referencedMessage: c,
     channel: n,
     compact: i,
-    setPopout: o,
+    setPopout: l,
     referencedUsernameProfile: a,
-    referencedAvatarProfile: s,
+    referencedAvatarProfile: o,
     isReplySpineClickable: u,
     showReplySpine: d
   })

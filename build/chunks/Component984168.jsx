@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 984168, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 984168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk314734 = require("./314734.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -21,28 +20,28 @@ function u(e) {
   } = e, u = e => {
     n(e), i()
   };
-  return (0, r.jsx)("div", {
-    className: o()(s.Jh, c.container),
-    children: (0, r.jsx)(a.v2r, {
+  return (0, l.jsx)("div", {
+    className: r()(o.Jh, c.container),
+    children: (0, l.jsx)(a.v2r, {
       navId: "command-list-sort",
-      "aria-label": l.intl.string(l.t.Ugo9ub),
+      "aria-label": s.intl.string(s.t.Ugo9ub),
       hideScroller: true,
       onClose: i,
       onSelect: i,
-      children: (0, r.jsxs)(a.kSQ, {
-        label: l.intl.string(l.t.yeYaHR),
-        children: [(0, r.jsx)(a.k5B, {
+      children: (0, l.jsxs)(a.kSQ, {
+        label: s.intl.string(s.t.yeYaHR),
+        children: [(0, l.jsx)(a.k5B, {
           id: "sort-by-popular",
           group: "sort-by",
-          label: l.intl.string(l.t.SzxiqK),
-          action: () => u(s.bS.POPULAR),
-          checked: t === s.bS.POPULAR
-        }), (0, r.jsx)(a.k5B, {
+          label: s.intl.string(s.t.SzxiqK),
+          action: () => u(o.bS.POPULAR),
+          checked: t === o.bS.POPULAR
+        }), (0, l.jsx)(a.k5B, {
           id: "sort-by-alphabetical",
           group: "sort-by",
-          label: l.intl.string(l.t.m8xstr),
-          action: () => u(s.bS.ALPHABETICAL),
-          checked: t === s.bS.ALPHABETICAL
+          label: s.intl.string(s.t.m8xstr),
+          action: () => u(o.bS.ALPHABETICAL),
+          checked: t === o.bS.ALPHABETICAL
         })]
       })
     })

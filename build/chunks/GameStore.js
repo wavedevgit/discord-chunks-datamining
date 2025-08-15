@@ -5,7 +5,7 @@ let r;
 require.d(exports, {
   Z: () => D
 }), require("./388685.js"), require("./35282.js");
-var i, o, Chunk442837 = require("./442837.js"),
+var i, a, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js"),
   Chunk642047 = require("./642047.js"),
@@ -33,7 +33,7 @@ let h = "GameStoreReportedGames",
   I = null;
 
 function T(e) {
-  var t, n, r, i, o, a, s, l;
+  var t, n, r, i, a, o, s, l;
   return {
     id: e.id,
     name: e.name,
@@ -41,8 +41,8 @@ function T(e) {
     overlay: null != (n = e.overlay) && n,
     overlayWarn: null != (r = e.overlay_warn) && r,
     overlayCompatibilityHook: null != (i = e.overlay_compatibility_hook) && i,
-    hook: null == (o = e.hook) || o,
-    aliases: null != (a = e.aliases) ? a : [],
+    hook: null == (a = e.hook) || a,
+    aliases: null != (o = e.aliases) ? o : [],
     supportsOutOfProcessOverlay: d.ZP.supportsOutOfProcessOverlay(e.overlay_methods),
     themes: null != (s = e.themes) ? s : [],
     icon: null != (l = e.icon_hash) ? l : true
@@ -95,7 +95,7 @@ function P(e) {
   for (let e of (null != n && v !== n && (v = n), t)) A(T(e));
   r = true, I = Date.now()
 }
-class w extends(o = Chunk442837.ZP.PersistedStore) {
+class w extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
     null != e && (null != e.detectableGamesEtag && (v = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => A(e)))
@@ -146,14 +146,14 @@ class w extends(o = Chunk442837.ZP.PersistedStore) {
     let r;
     if (null == e.exePath) return null;
     let i = e.exePath.split("/").pop(),
-      o = e.exePath.split("/").slice(false).join("/");
+      a = e.exePath.split("/").slice(false).join("/");
     if (null != e.name) {
       if (null != (r = this.getGameByName(e.name)) && null != r.executables) {
         let e = r.executables.map(e => e.name);
-        if (e.includes(i) || e.includes(o)) return r
+        if (e.includes(i) || e.includes(a)) return r
       } else if (null != r) return null
     }
-    return null != (n = null != (t = this.getGameByExecutable(i)) ? t : this.getGameByExecutable(o)) ? n : r
+    return null != (n = null != (t = this.getGameByExecutable(i)) ? t : this.getGameByExecutable(a)) ? n : r
   }
   shouldReport(e) {
     let t = null != this.getGameByName(e),

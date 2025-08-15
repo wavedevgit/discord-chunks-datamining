@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 351248, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 351248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => R
+  Z: () => v
 }), require("./539854.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -21,7 +20,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk149715 = require("./149715.js"),
   Chunk162130 = require("./162130.js");
 
-function b(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,21 +28,15 @@ function b(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let y = 8,
-  O = 23,
-  v = 17,
-  I = 26,
-  T = {
-    SCALE_MIN: .7,
-    SCALE_MAX: 1,
-    DURATION_IN: 300,
-    DURATION_OUT: 170,
-    EASING_IN: Chunk748780.Z.Easing.inOut(Chunk748780.Z.Easing.back()),
-    EASING_OUT: Chunk748780.Z.Easing.quad
-  },
-  S = 200,
-  A = 125;
-class N extends Chunk73800.PureComponent {
+let C = {
+  SCALE_MIN: .7,
+  SCALE_MAX: 1,
+  DURATION_IN: 300,
+  DURATION_OUT: 170,
+  EASING_IN: Chunk748780.Z.Easing.inOut(Chunk748780.Z.Easing.back()),
+  EASING_OUT: Chunk748780.Z.Easing.quad
+};
+class x extends Chunk73800.PureComponent {
   componentDidMount() {
     this.componentDidAppear()
   }
@@ -59,13 +52,13 @@ class N extends Chunk73800.PureComponent {
       scaleAnimation: t,
       widthAnimation: n
     } = this;
-    t.setValue(0), n.setValue(0), s.Z.parallel([s.Z.timing(t, {
+    t.setValue(0), n.setValue(0), o.Z.parallel([o.Z.timing(t, {
       toValue: 1,
-      duration: T.DURATION_IN,
-      easing: T.EASING_IN
-    }), s.Z.timing(n, {
+      duration: C.DURATION_IN,
+      easing: C.EASING_IN
+    }), o.Z.timing(n, {
       toValue: 1,
-      duration: S
+      duration: 200
     })]).start(e)
   }
   componentWillLeave(e) {
@@ -76,18 +69,18 @@ class N extends Chunk73800.PureComponent {
       widthAnimation: i
     } = this;
     r.setValue(1), n.setValue(0);
-    let o = [];
-    for (let e = 0; e < O; e++) o.push(s.Z.timing(n, {
-      toValue: -I * e,
-      duration: v
+    let l = [];
+    for (let e = 0; e < 23; e++) l.push(o.Z.timing(n, {
+      toValue: false * e,
+      duration: 17
     }));
-    s.Z.sequence([s.Z.timing(t, {
+    o.Z.sequence([o.Z.timing(t, {
       toValue: 0,
-      duration: T.DURATION_OUT,
-      easing: T.EASING_OUT
-    }), s.Z.sequence(o), s.Z.timing(i, {
+      duration: C.DURATION_OUT,
+      easing: C.EASING_OUT
+    }), o.Z.sequence(l), o.Z.timing(i, {
       toValue: 0,
-      duration: A
+      duration: 125
     })]).start(e)
   }
   getScaleStyle() {
@@ -98,7 +91,7 @@ class N extends Chunk73800.PureComponent {
       transform: [{
         scale: module.interpolate({
           inputRange: [0, 1],
-          outputRange: [T.SCALE_MIN, T.SCALE_MAX]
+          outputRange: [C.SCALE_MIN, C.SCALE_MAX]
         })
       }],
       opacity: module
@@ -127,7 +120,7 @@ class N extends Chunk73800.PureComponent {
       theme: e,
       children: t,
       className: n
-    } = this.props, i = (0, Chunk780384.wj)(module), o = a()(Chunk907894.sprite, {
+    } = this.props, i = (0, Chunk780384.wj)(module), l = a()(Chunk907894.sprite, {
       [Chunk162130.crossWhite]: Chunk73800,
       [Chunk162130.crossGrey]: !Chunk73800
     });
@@ -147,51 +140,48 @@ class N extends Chunk73800.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), b(this, "scaleAnimation", new s.Z.Value(0)), b(this, "spriteAnimation", new s.Z.Value(0)), b(this, "spriteOpacity", new s.Z.Value(0)), b(this, "widthAnimation", new s.Z.Value(0))
+    super(...e), _(this, "scaleAnimation", new o.Z.Value(0)), _(this, "spriteAnimation", new o.Z.Value(0)), _(this, "spriteOpacity", new o.Z.Value(0)), _(this, "widthAnimation", new o.Z.Value(0))
   }
 }
 
-function C(e, t) {
-  return ((0, d.pxk)(d.EFr.SIZE_80) + 2 * y) * t > e ? d.EFr.SIZE_40 : d.EFr.SIZE_80
-}
-
-function R(e) {
+function v(e) {
+  var t;
   let {
-    participants: t,
-    onContextMenu: n,
-    className: i,
+    participants: n,
+    onContextMenu: i,
+    className: l,
     onClick: o,
-    width: s,
-    guildId: u
-  } = e, g = (0, f.ZP)(), E = C(s, t.length), b = (0, l.e7)([_.Z], () => _.Z.isFocused()), y = t.map(e => {
-    var t, i;
-    if (e.type !== h.fO.USER) return null;
+    width: u,
+    guildId: b
+  } = e, y = (0, p.ZP)(), _ = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), C = (0, s.e7)([h.Z], () => h.Z.isFocused()), v = n.map(e => {
+    var t, n;
+    if (e.type !== m.fO.USER) return null;
     let {
-      user: a,
-      voiceState: s,
-      speaking: l,
+      user: l,
+      voiceState: a,
+      speaking: s,
       ringing: c
     } = e;
-    return (0, r.jsx)(N, {
-      className: m.participant,
-      width: (0, d.pxk)(E),
-      theme: g,
-      children: (0, r.jsx)(p.Z, {
-        userId: a.id,
-        src: a.getAvatarURL(u, (0, d.pxk)(E), l && b),
-        size: E,
-        muted: null != (t = null == s ? true : s.isVoiceMuted()) && t,
-        deafen: null != (i = null == s ? true : s.isVoiceDeafened()) && i,
-        speaking: l,
+    return (0, r.jsx)(x, {
+      className: g.participant,
+      width: (0, d.pxk)(_),
+      theme: y,
+      children: (0, r.jsx)(f.Z, {
+        userId: l.id,
+        src: l.getAvatarURL(b, (0, d.pxk)(_), s && C),
+        size: _,
+        muted: null != (t = null == a ? true : a.isVoiceMuted()) && t,
+        deafen: null != (n = null == a ? true : a.isVoiceDeafened()) && n,
+        speaking: s,
         ringing: c,
         onClick: t => null == o ? true : o(e, t),
-        onContextMenu: t => null == n ? true : n(e, t)
+        onContextMenu: t => null == i ? true : i(e, t)
       }, e.id)
-    }, a.id)
+    }, l.id)
   });
   return (0, r.jsx)(c.W, {
     component: "div",
-    className: a()(m.root, i),
-    children: y
+    className: a()(g.root, l),
+    children: v
   })
 }

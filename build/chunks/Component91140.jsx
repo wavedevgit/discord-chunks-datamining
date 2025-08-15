@@ -35,7 +35,7 @@ let E = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
       showCoverImage: false
     }), {
       data: v
-    } = (0, l.IX)(n.extra.application_id), I = (0, s.q)(v, "MemberListGamingContent"), T = I ? [o.z.CLOUD_PLAY_NEW_BADGE] : [], [S] = (0, u.US)(T), A = I;
+    } = (0, l.IX)(n.extra.application_id), I = (0, s.q)(v, "MemberListGamingContent"), T = I ? [a.z.CLOUD_PLAY_NEW_BADGE] : [], [S] = (0, u.US)(T), A = I;
     return (0, r.jsxs)(p.Zb, {
       selected: b,
       usesCardRows: true,
@@ -67,15 +67,15 @@ let E = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
           className: m.cloudPlaySection,
           children: [(0, r.jsxs)("div", {
             className: m.cloudPlaySectionTextContainer,
-            children: [(0, r.jsx)(a.v3n, {
-              color: a.TVs.colors.ICON_SECONDARY,
+            children: [(0, r.jsx)(o.v3n, {
+              color: o.TVs.colors.ICON_SECONDARY,
               size: "xxs"
-            }), (0, r.jsx)(a.Text, {
+            }), (0, r.jsx)(o.Text, {
               variant: "text-xs/normal",
               color: "text-secondary",
               children: h.intl.string(h.t["5HiF2t"])
             })]
-          }), S === o.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(a.IGR, {
+          }), S === a.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(o.IGR, {
             text: h.intl.string(h.t.y2b7CA),
             color: c.Z.BG_BRAND
           })]

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk658722 = require("./658722.js"),
   i = require.n(Chunk658722),
   Chunk954955 = require("./954955.js"),
-  a = require.n(Chunk954955),
+  o = require.n(Chunk954955),
   Chunk339085 = require("./339085.js"),
   Chunk633302 = require("./633302.js"),
   Chunk626135 = require("./626135.js"),
@@ -23,8 +23,8 @@ let f = 100,
   b = 2,
   y = 1,
   O = 350,
-  v = a()(T, O),
-  I = a()(S, O);
+  v = o()(T, O),
+  I = o()(S, O);
 
 function T(e, t) {
   c.default.track(d.rMx.SEARCH_STARTED, {
@@ -45,18 +45,18 @@ function S(e, t, n, r) {
 }
 
 function A(e, t, n, r) {
-  var o;
-  let a = 0,
+  var a;
+  let o = 0,
     c = t.name.toLocaleLowerCase(),
     d = null != t.emojiId ? s.ZP.getCustomEmojiById(t.emojiId) : null,
     O = null != t.emojiName ? l.ZP.convertSurrogateToName(t.emojiName, false) : null,
     v = null != O ? l.ZP.getByName(O) : null,
-    I = null != d ? [d.name] : null != (o = null == v ? true : v.names) ? o : [];
-  return e === c && (a += _), I.includes(e) && (a += p), c.startsWith(e) && (a += h), I.some(t => t.startsWith(e)) && (a += m), c.endsWith(e) && (a += g), I.some(t => t.endsWith(e)) && (a += E), i()(e, t.name.toLocaleLowerCase()) && (a += b), I.some(t => i()(e, t)) && (a += y), a > 0 && (0, u.Nq)(n, t, r) && (a += f), a
+    I = null != d ? [d.name] : null != (a = null == v ? true : v.names) ? a : [];
+  return e === c && (o += _), I.includes(e) && (o += p), c.startsWith(e) && (o += h), I.some(t => t.startsWith(e)) && (o += m), c.endsWith(e) && (o += g), I.some(t => t.endsWith(e)) && (o += E), i()(e, t.name.toLocaleLowerCase()) && (o += b), I.some(t => i()(e, t)) && (o += y), o > 0 && (0, u.Nq)(n, t, r) && (o += f), o
 }
 
 function N(e, t, n, r, i) {
-  let o = t.reduce((t, o) => (v(i, null == r ? true : r.id), t[o.soundId] = A(e.toLocaleLowerCase(), o, n, r), t), {}),
-    a = t.filter(e => o[e.soundId] > 0).sort((e, t) => o[t.soundId] - o[e.soundId]);
-  return I(a, i, null == r ? true : r.id, e), a
+  let a = t.reduce((t, a) => (v(i, null == r ? true : r.id), t[a.soundId] = A(e.toLocaleLowerCase(), a, n, r), t), {}),
+    o = t.filter(e => a[e.soundId] > 0).sort((e, t) => a[t.soundId] - a[e.soundId]);
+  return I(o, i, null == r ? true : r.id, e), o
 }

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 399654, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 22878 **/
+/** chunk id: 399654, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => u
+  a: () => s
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -10,57 +9,57 @@ var Chunk544891 = require("./544891.js"),
   Chunk70956 = require("./70956.js"),
   Chunk844439 = require("./844439.js"),
   Chunk981631 = require("./981631.js");
-let c = 10 * Chunk70956.Z.Millis.MINUTE;
-async function u(e) {
+let u = 10 * Chunk70956.Z.Millis.MINUTE;
+async function s(e) {
   let {
     channelId: t,
     location: n,
-    withCommands: a
+    withCommands: o
   } = e;
   if (null == t) return;
-  let u = Date.now(),
-    d = s.ZP.getFetchState({
+  let s = Date.now(),
+    d = a.ZP.getFetchState({
       location: n,
       channelId: t,
-      withCommands: a
+      withCommands: o
     }),
-    f = s.ZP.getLastFetchTimeMs({
+    m = a.ZP.getLastFetchTimeMs({
       location: n,
       channelId: t,
-      withCommands: a
+      withCommands: o
     });
-  if (d !== s.M.FETCHING && (null == f || !(f + c > u))) {
-    i.Z.dispatch({
+  if (d !== a.M.FETCHING && (null == m || !(m + u > s))) {
+    l.Z.dispatch({
       type: "APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS",
       location: n,
       channelId: t,
-      withCommands: a
+      withCommands: o
     });
     try {
-      var _;
+      var p;
       let e = await r.tn.get({
-        url: l.ANM.APP_RECOMMENDATIONS,
+        url: c.ANM.APP_RECOMMENDATIONS,
         query: {
-          locale: o.default.locale,
+          locale: i.default.locale,
           channel_id: t,
           location: n,
-          with_commands: a
+          with_commands: o
         },
         rejectWithError: false
       });
-      i.Z.dispatch({
+      l.Z.dispatch({
         type: "APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS",
         location: n,
         channelId: t,
-        recommendations: null != (_ = e.body) ? _ : [],
-        withCommands: a
+        recommendations: null != (p = e.body) ? p : [],
+        withCommands: o
       })
     } catch (e) {
-      i.Z.dispatch({
+      l.Z.dispatch({
         type: "APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_FAILURE",
         location: n,
         channelId: t,
-        withCommands: a
+        withCommands: o
       })
     }
   }

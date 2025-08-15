@@ -1,37 +1,24 @@
-/** Chunk was on web.js **/
-/** chunk id: 172367, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 172367, original params: t,e,r (module,exports,require) **/
 "use strict";
 
-function r(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      i(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function i(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
+function n(t, e, r) {
+  return e in t ? Object.defineProperty(t, e, {
+    value: r,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = n, e
+  }) : t[e] = r, t
 }
 var Chunk968514 = require("./968514.js"),
   Chunk449168 = require("./449168.js"),
   Chunk497218 = require("./497218.js"),
   Chunk116514 = require("./116514.js"),
   Chunk65183 = require("./65183.js"),
-  u = Chunk65183.OrderedSet,
-  d = Chunk65183.Record,
+  c = Chunk65183.OrderedSet,
+  l = Chunk65183.Record,
   f = Chunk65183.Stack,
-  _ = d({
+  p = l({
     allowUndo: true,
     currentContent: null,
     decorator: null,
@@ -46,48 +33,67 @@ var Chunk968514 = require("./968514.js"),
     treeMap: null,
     undoStack: f()
   }),
-  p = function() {
-    exports.createEmpty = function(e) {
-      return t.createWithContent(a.createFromText(""), e)
-    }, exports.createWithContent = function(e, n) {
-      if (0 === e.getBlockMap().count()) return t.createEmpty(n);
-      var r = e.getBlockMap().first().getKey();
-      return t.create({
-        currentContent: e,
+  h = function() {
+    exports.createEmpty = function(t) {
+      return e.createWithContent(o.createFromText(""), t)
+    }, exports.createWithContent = function(t, r) {
+      if (0 === t.getBlockMap().count()) return e.createEmpty(r);
+      var n = t.getBlockMap().first().getKey();
+      return e.create({
+        currentContent: t,
         undoStack: f(),
         redoStack: f(),
-        decorator: n || null,
-        selection: l.createEmpty(r)
+        decorator: r || null,
+        selection: u.createEmpty(n)
       })
-    }, exports.create = function(e) {
-      var n = e.currentContent,
-        i = e.decorator;
-      return new t(new _(r({}, e, {
-        treeMap: m(n, i),
-        directionMap: s.getDirectionMap(n)
+    }, exports.create = function(t) {
+      var r = t.currentContent,
+        i = t.decorator;
+      return new e(new p(function(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var r = null != arguments[e] ? arguments[e] : {},
+            i = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
+            return Object.getOwnPropertyDescriptor(r, t).enumerable
+          }))), i.forEach(function(e) {
+            n(t, e, r[e])
+          })
+        }
+        return t
+      }({}, t, {
+        treeMap: g(r, i),
+        directionMap: a.getDirectionMap(r)
       })))
-    }, exports.set = function(e, n) {
-      return new t(e.getImmutable().withMutations(function(t) {
-        var r = t.get("decorator"),
-          i = r;
-        null === n.decorator ? i = null : n.decorator && (i = n.decorator);
-        var o = n.currentContent || e.getCurrentContent();
-        if (i !== r) {
-          var a, s = t.get("treeMap");
-          a = i && r ? E(o, o.getBlockMap(), s, i, r) : m(o, i), t.merge({
-            decorator: i,
-            treeMap: a,
+    }, exports.set = function(t, r) {
+      return new e(t.getImmutable().withMutations(function(e) {
+        var n, o, a, u, s, c, l = e.get("decorator"),
+          f = l;
+        null === r.decorator ? f = null : r.decorator && (f = r.decorator);
+        var p = r.currentContent || t.getCurrentContent();
+        if (f !== l) {
+          var h, d, y, v, m, _, b = e.get("treeMap");
+          _ = f && l ? (h = p, d = p.getBlockMap(), y = b, v = f, m = l, y.merge(d.toSeq().filter(function(t) {
+            return v.getDecorations(t, h) !== m.getDecorations(t, h)
+          }).map(function(t) {
+            return i.generate(h, t, v)
+          }))) : g(p, f), e.merge({
+            decorator: f,
+            treeMap: _,
             nativelyRenderedContent: null
           });
           return
         }
-        o !== e.getCurrentContent() && t.set("treeMap", g(e, o.getBlockMap(), o.getEntityMap(), i)), t.merge(n)
+        p !== t.getCurrentContent() && e.set("treeMap", (n = t, o = p.getBlockMap(), a = p.getEntityMap(), u = f, c = (s = n.getCurrentContent().set("entityMap", a)).getBlockMap(), n.getImmutable().get("treeMap").merge(o.toSeq().filter(function(t, e) {
+          return t !== c.get(e)
+        }).map(function(t) {
+          return i.generate(s, t, u)
+        })))), e.merge(r)
       }))
     };
-    var e = exports.prototype;
+    var t = exports.prototype;
 
-    function t(e) {
-      i(this, "_immutable", true), this._immutable = e
+    function e(t) {
+      n(this, "_immutable", true), this._immutable = t
     }
     return module.toJS = function() {
       return this.getImmutable().toJS()
@@ -113,173 +119,137 @@ var Chunk968514 = require("./968514.js"),
       return this.getImmutable().get("lastChangeType")
     }, module.getInlineStyleOverride = function() {
       return this.getImmutable().get("inlineStyleOverride")
-    }, exports.setInlineStyleOverride = function(e, n) {
-      return t.set(e, {
-        inlineStyleOverride: n
+    }, exports.setInlineStyleOverride = function(t, r) {
+      return e.set(t, {
+        inlineStyleOverride: r
       })
     }, module.getCurrentInlineStyle = function() {
-      var e = this.getInlineStyleOverride();
-      if (null != module) return module;
-      var t = this.getCurrentContent(),
-        n = this.getSelection();
-      return require.isCollapsed() ? y(exports, require) : O(exports, require)
-    }, module.getBlockTree = function(e) {
-      return this.getImmutable().getIn(["treeMap", e])
+      var t, e, r, n, i, o, a, u, s, c, l = this.getInlineStyleOverride();
+      if (null != l) return l;
+      var f = this.getCurrentContent(),
+        p = this.getSelection();
+      return p.isCollapsed() ? (t = f, r = (e = p).getStartKey(), n = exports.getStartOffset(), i = module.getBlockForKey(require), n > 0 ? Chunk968514.getInlineStyleAt(n - 1) : Chunk968514.getLength() ? Chunk968514.getInlineStyleAt(0) : y(module, require)) : (o = f, u = (a = p).getStartKey(), s = Chunk497218.getStartOffset(), Chunk65183 < (c = Chunk449168.getBlockForKey(Chunk116514)).getLength() ? c.getInlineStyleAt(Chunk65183) : Chunk65183 > 0 ? c.getInlineStyleAt(Chunk65183 - 1) : y(Chunk449168, Chunk116514))
+    }, module.getBlockTree = function(t) {
+      return this.getImmutable().getIn(["treeMap", t])
     }, module.isSelectionAtStartOfContent = function() {
-      var e = this.getCurrentContent().getBlockMap().first().getKey();
+      var t = this.getCurrentContent().getBlockMap().first().getKey();
       return this.getSelection().hasEdgeWithin(module, 0, 0)
     }, module.isSelectionAtEndOfContent = function() {
-      var e = this.getCurrentContent().getBlockMap().last(),
-        t = module.getLength();
+      var t = this.getCurrentContent().getBlockMap().last(),
+        e = module.getLength();
       return this.getSelection().hasEdgeWithin(module.getKey(), exports, exports)
     }, module.getDirectionMap = function() {
       return this.getImmutable().get("directionMap")
-    }, exports.acceptSelection = function(e, t) {
-      return h(e, t, false)
-    }, exports.forceSelection = function(e, t) {
-      return t.getHasFocus() || (t = t.set("hasFocus", true)), h(e, t, true)
-    }, exports.moveSelectionToEnd = function(e) {
-      var n = e.getCurrentContent().getLastBlock(),
-        r = n.getKey(),
-        i = n.getLength();
-      return t.acceptSelection(e, new l({
-        anchorKey: r,
+    }, exports.acceptSelection = function(t, e) {
+      return d(t, e, false)
+    }, exports.forceSelection = function(t, e) {
+      return e.getHasFocus() || (e = e.set("hasFocus", true)), d(t, e, true)
+    }, exports.moveSelectionToEnd = function(t) {
+      var r = t.getCurrentContent().getLastBlock(),
+        n = r.getKey(),
+        i = r.getLength();
+      return e.acceptSelection(t, new u({
+        anchorKey: n,
         anchorOffset: i,
-        focusKey: r,
+        focusKey: n,
         focusOffset: i,
         isBackward: false
       }))
-    }, exports.moveFocusToEnd = function(e) {
-      var n = t.moveSelectionToEnd(e);
-      return t.forceSelection(n, n.getSelection())
-    }, exports.push = function(e, n, r) {
-      var i = !(arguments.length > 3) || true === arguments[3] || arguments[3];
-      if (e.getCurrentContent() === n) return e;
-      var o = s.getDirectionMap(n, e.getDirectionMap());
-      if (!e.getAllowUndo()) return t.set(e, {
-        currentContent: n,
-        directionMap: o,
-        lastChangeType: r,
-        selection: n.getSelectionAfter(),
-        forceSelection: i,
+    }, exports.moveFocusToEnd = function(t) {
+      var r = e.moveSelectionToEnd(t);
+      return e.forceSelection(r, r.getSelection())
+    }, exports.push = function(t, r, n) {
+      var i, o, u = !(arguments.length > 3) || true === arguments[3] || arguments[3];
+      if (t.getCurrentContent() === r) return t;
+      var s = a.getDirectionMap(r, t.getDirectionMap());
+      if (!t.getAllowUndo()) return e.set(t, {
+        currentContent: r,
+        directionMap: s,
+        lastChangeType: n,
+        selection: r.getSelectionAfter(),
+        forceSelection: u,
         inlineStyleOverride: null
       });
-      var a = e.getSelection(),
-        l = e.getCurrentContent(),
-        c = e.getUndoStack(),
-        u = n;
-      a !== l.getSelectionAfter() || b(e, r) ? (c = c.push(l), u = u.set("selectionBefore", a)) : ("insert-characters" === r || "backspace-character" === r || "delete-character" === r) && (u = u.set("selectionBefore", l.getSelectionBefore()));
-      var d = e.getInlineStyleOverride();
-      false === ["adjust-depth", "change-block-type", "split-block"].indexOf(r) && (d = null);
-      var _ = {
-        currentContent: u,
-        directionMap: o,
-        undoStack: c,
+      var c = t.getSelection(),
+        l = t.getCurrentContent(),
+        p = t.getUndoStack(),
+        h = r;
+      c !== l.getSelectionAfter() || (i = t, (o = n) !== i.getLastChangeType() || "insert-characters" !== o && "backspace-character" !== o && "delete-character" !== o) ? (p = p.push(l), h = h.set("selectionBefore", c)) : ("insert-characters" === n || "backspace-character" === n || "delete-character" === n) && (h = h.set("selectionBefore", l.getSelectionBefore()));
+      var d = t.getInlineStyleOverride();
+      false === ["adjust-depth", "change-block-type", "split-block"].indexOf(n) && (d = null);
+      var g = {
+        currentContent: h,
+        directionMap: s,
+        undoStack: p,
         redoStack: f(),
-        lastChangeType: r,
-        selection: n.getSelectionAfter(),
-        forceSelection: i,
+        lastChangeType: n,
+        selection: r.getSelectionAfter(),
+        forceSelection: u,
         inlineStyleOverride: d
       };
-      return t.set(e, _)
-    }, exports.undo = function(e) {
-      if (!e.getAllowUndo()) return e;
-      var n = e.getUndoStack(),
-        r = n.peek();
-      if (!r) return e;
-      var i = e.getCurrentContent(),
-        o = s.getDirectionMap(r, e.getDirectionMap());
-      return t.set(e, {
-        currentContent: r,
+      return e.set(t, g)
+    }, exports.undo = function(t) {
+      if (!t.getAllowUndo()) return t;
+      var r = t.getUndoStack(),
+        n = r.peek();
+      if (!n) return t;
+      var i = t.getCurrentContent(),
+        o = a.getDirectionMap(n, t.getDirectionMap());
+      return e.set(t, {
+        currentContent: n,
         directionMap: o,
-        undoStack: n.shift(),
-        redoStack: e.getRedoStack().push(i),
+        undoStack: r.shift(),
+        redoStack: t.getRedoStack().push(i),
         forceSelection: true,
         inlineStyleOverride: null,
         lastChangeType: "undo",
         nativelyRenderedContent: null,
         selection: i.getSelectionBefore()
       })
-    }, exports.redo = function(e) {
-      if (!e.getAllowUndo()) return e;
-      var n = e.getRedoStack(),
-        r = n.peek();
-      if (!r) return e;
-      var i = e.getCurrentContent(),
-        o = s.getDirectionMap(r, e.getDirectionMap());
-      return t.set(e, {
-        currentContent: r,
+    }, exports.redo = function(t) {
+      if (!t.getAllowUndo()) return t;
+      var r = t.getRedoStack(),
+        n = r.peek();
+      if (!n) return t;
+      var i = t.getCurrentContent(),
+        o = a.getDirectionMap(n, t.getDirectionMap());
+      return e.set(t, {
+        currentContent: n,
         directionMap: o,
-        undoStack: e.getUndoStack().push(i),
-        redoStack: n.shift(),
+        undoStack: t.getUndoStack().push(i),
+        redoStack: r.shift(),
         forceSelection: true,
         inlineStyleOverride: null,
         lastChangeType: "redo",
         nativelyRenderedContent: null,
-        selection: r.getSelectionAfter()
+        selection: n.getSelectionAfter()
       })
     }, module.getImmutable = function() {
       return this._immutable
     }, exports
   }();
 
-function h(e, t, n) {
-  return p.set(e, {
-    selection: t,
-    forceSelection: n,
+function d(t, e, r) {
+  return h.set(t, {
+    selection: e,
+    forceSelection: r,
     nativelyRenderedContent: null,
     inlineStyleOverride: null
   })
 }
 
-function m(e, t) {
-  return e.getBlockMap().map(function(n) {
-    return o.generate(e, n, t)
+function g(t, e) {
+  return t.getBlockMap().map(function(r) {
+    return i.generate(t, r, e)
   }).toOrderedMap()
 }
 
-function g(e, t, n, r) {
-  var i = e.getCurrentContent().set("entityMap", n),
-    a = i.getBlockMap();
-  return e.getImmutable().get("treeMap").merge(t.toSeq().filter(function(e, t) {
-    return e !== a.get(t)
-  }).map(function(e) {
-    return o.generate(i, e, r)
-  }))
-}
-
-function E(e, t, n, r, i) {
-  return n.merge(t.toSeq().filter(function(t) {
-    return r.getDecorations(t, e) !== i.getDecorations(t, e)
-  }).map(function(t) {
-    return o.generate(e, t, r)
-  }))
-}
-
-function b(e, t) {
-  return t !== e.getLastChangeType() || "insert-characters" !== t && "backspace-character" !== t && "delete-character" !== t
-}
-
-function y(e, t) {
-  var n = t.getStartKey(),
-    r = t.getStartOffset(),
-    i = e.getBlockForKey(n);
-  return r > 0 ? i.getInlineStyleAt(r - 1) : i.getLength() ? i.getInlineStyleAt(0) : v(e, n)
-}
-
-function O(e, t) {
-  var n = t.getStartKey(),
-    r = t.getStartOffset(),
-    i = e.getBlockForKey(n);
-  return r < i.getLength() ? i.getInlineStyleAt(r) : r > 0 ? i.getInlineStyleAt(r - 1) : v(e, n)
-}
-
-function v(e, t) {
-  var n = e.getBlockMap().reverse().skipUntil(function(e, n) {
-    return n === t
-  }).skip(1).skipUntil(function(e, t) {
-    return e.getLength()
+function y(t, e) {
+  var r = t.getBlockMap().reverse().skipUntil(function(t, r) {
+    return r === e
+  }).skip(1).skipUntil(function(t, e) {
+    return t.getLength()
   }).first();
-  return n ? n.getInlineStyleAt(n.getLength() - 1) : u()
+  return r ? r.getInlineStyleAt(r.getLength() - 1) : c()
 }
-module.exports = p
+module.exports = h

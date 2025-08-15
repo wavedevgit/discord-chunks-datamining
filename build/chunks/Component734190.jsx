@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 734190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -68,10 +68,10 @@ function Z(e) {
     withGuildIcon: n,
     inverted: i
   } = e, l = {
-    className: o()(I.spine, {
-      [I.spineWithGuildIcon]: n
+    className: o()(P.spine, {
+      [P.spineWithGuildIcon]: n
     }, {
-      [I.invertedSpine]: i
+      [P.invertedSpine]: i
     }),
     style: t
   }, {
@@ -129,10 +129,10 @@ let T = Chunk73800.memo(function(e) {
   let {
     thread: t,
     isSelectedChannel: l,
-    isSelectedVoice: I,
+    isSelectedVoice: P,
     isLast: T,
     withGuildIcon: A
-  } = e, R = (0, s.e7)([O.ZP], () => O.ZP.getVoiceStatesForChannel(t), [t]), D = (0, s.e7)([b.Z], () => b.Z.hasVideo(t.id)), {
+  } = e, R = (0, s.e7)([_.ZP], () => _.ZP.getVoiceStatesForChannel(t), [t]), D = (0, s.e7)([b.Z], () => b.Z.hasVideo(t.id)), {
     unread: L,
     mentionCount: M,
     isMentionLowImportance: k
@@ -154,9 +154,9 @@ let T = Chunk73800.memo(function(e) {
         channel: i
       }))
     })
-  }, [t.id]), F = null == R ? 0 : R.length, H = (0, a.JA)(t.id), {
+  }, [t.id]), H = null == R ? 0 : R.length, F = (0, a.JA)(t.id), {
     role: z
-  } = H, W = function(e, t) {
+  } = F, W = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -170,7 +170,7 @@ let T = Chunk73800.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(H, ["role"]), K = i.useRef(null), Y = M > 0 ? x.intl.formatToPlainString(x.t["ZL7+Iy"], {
+  }(F, ["role"]), K = i.useRef(null), Y = M > 0 ? x.intl.formatToPlainString(x.t["ZL7+Iy"], {
     channelName: t.name,
     mentionCount: M
   }) : L ? x.intl.formatToPlainString(x.t.YlVvmZ, {
@@ -200,37 +200,37 @@ let T = Chunk73800.memo(function(e) {
         right: 4
       },
       children: (0, r.jsxs)("div", {
-        className: o()(S.iconVisibility, P.wrapper, P.typeThread, {
-          [P.modeSelected]: l,
-          [P.modeMuted]: !l && U,
-          [P.modeUnreadImportant]: !U && !l && L,
-          [P.withGuildIcon]: A
+        className: o()(S.iconVisibility, I.wrapper, I.typeThread, {
+          [I.modeSelected]: l,
+          [I.modeMuted]: !l && U,
+          [I.modeUnreadImportant]: !U && !l && L,
+          [I.withGuildIcon]: A
         }),
         onMouseDown: B,
         onContextMenu: V,
         children: [!L || U || l ? null : (0, r.jsx)("div", {
-          className: o()(P.unread, P.unreadImportant)
+          className: o()(I.unread, I.unreadImportant)
         }), (0, r.jsx)(c.P3F, w(N({}, W), {
           innerRef: K,
-          className: P.link,
+          className: I.link,
           onClick: G,
           "aria-label": Y,
           focusProps: {
             enabled: false
           },
           children: (0, r.jsxs)("div", {
-            className: o()(P.linkTop, P.__invalid_threadMainContent),
+            className: o()(I.linkTop, I.__invalid_threadMainContent),
             children: [(0, r.jsx)(p.Z, {
-              className: P.name,
+              className: I.name,
               "aria-hidden": true,
               children: t.name
             }), (0, r.jsxs)("div", {
-              className: P.children,
-              children: [F > 0 && t.userLimit > 0 ? (0, r.jsx)(y.Z, {
-                userCount: F,
+              className: I.children,
+              children: [H > 0 && t.userLimit > 0 ? (0, r.jsx)(y.Z, {
+                userCount: H,
                 video: D,
                 channel: t
-              }) : null, (0, _.Z)(M) ? (0, r.jsx)(v.Z, {
+              }) : null, (0, O.Z)(M) ? (0, r.jsx)(v.Z, {
                 mentionsCount: M,
                 isMentionLowImportance: k
               }) : null]
@@ -240,7 +240,7 @@ let T = Chunk73800.memo(function(e) {
       })
     }), (0, r.jsx)(j.Z, {
       channel: t,
-      collapsed: !I,
+      collapsed: !P,
       collapsedMax: 6,
       voiceStates: R,
       location: C.Sbl.GUILD_CHANNEL_LIST

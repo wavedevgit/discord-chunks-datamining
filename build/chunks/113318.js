@@ -1,4 +1,4 @@
-/** Chunk was on 25548 **/
+/** Chunk was on 48091 **/
 /** chunk id: 113318, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function u(e, t) {
-  let n = (0, i.e7)([s.Z], () => s.Z.getChannel(t)),
+  let n = (0, r.e7)([s.Z], () => s.Z.getChannel(t)),
     {
       needSubscriptionToAccess: u
     } = (0, c.Z)(null == n ? true : n.id);
@@ -28,7 +28,7 @@ function u(e, t) {
         routeDirectlyToChannel: true
       }) : (0, a.uL)(d.Z5c.CHANNEL(e, n.id))
     },
-    ariaLabel: (0, r.ZP)({
+    ariaLabel: (0, i.ZP)({
       channel: n
     })
   }

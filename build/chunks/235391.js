@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 235391, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 235391, original params: e,t,n (module,exports,require) **/
 module.exports = {
   sharePromptContainer: "sharePromptContainer__56d6c",
   sharePromptContent: "sharePromptContent__56d6c",

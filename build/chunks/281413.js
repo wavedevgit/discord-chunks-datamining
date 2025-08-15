@@ -1,4 +1,4 @@
-/** Chunk was on 7384 **/
+/** Chunk was on 30202 **/
 /** chunk id: 281413, original params: e,t,n (module,exports,require) **/
 module.exports = {
   socialLinks: "socialLinks__7df54",

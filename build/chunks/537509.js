@@ -1,8 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 537509, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-var r = {
+/** Chunk was on 66866 **/
+/** chunk id: 537509, original params: e,t,n (module,exports,require) **/
+require.r(module.exports = {
   effect: "effect__263e4",
   effects: "effects__263e4"
-};
-require.r(module.exports = r)
+})

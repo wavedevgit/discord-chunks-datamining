@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 35125, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 16766 **/
+/** chunk id: 35125, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  PA: () => d,
-  Tn: () => u,
-  _i: () => g,
-  eI: () => h,
-  vp: () => p,
-  y8: () => m
+  PA: () => m,
+  Tn: () => c,
+  _i: () => f,
+  eI: () => T,
+  vp: () => _,
+  y8: () => I
 });
 var Chunk367907 = require("./367907.js"),
   Chunk200876 = require("./200876.js"),
@@ -17,135 +16,134 @@ require("./709054.js"), require("./523361.js");
 var Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function c(e) {
-  return e
+function s(t) {
+  return t
 }
 
-function u(e) {
+function c(t) {
   let {
-    username: t,
+    username: e,
     usernameOnClickHandler: n,
     roleSubscriptionOnClickHandler: r,
-    guildId: i,
-    roleSubscriptionData: o
-  } = e, {
-    content: a,
-    formatParams: s
-  } = _({
-    username: t,
+    guildId: l,
+    roleSubscriptionData: a
+  } = t, {
+    content: i,
+    formatParams: u
+  } = N({
+    username: e,
     usernameOnClickHandler: n,
     roleSubscriptionOnClickHandler: r,
-    guildId: i,
-    roleSubscriptionData: o
+    guildId: l,
+    roleSubscriptionData: a
   });
-  return l.intl.format(a, s)
+  return o.intl.format(i, u)
 }
 
-function d(e) {
+function m(t) {
   let {
-    username: t,
+    username: e,
     usernameOnClickHandler: n,
     roleSubscriptionOnClickHandler: r,
-    guildId: i,
-    roleSubscriptionData: o
-  } = e, {
-    content: a,
-    formatParams: s
-  } = _({
-    username: t,
+    guildId: l,
+    roleSubscriptionData: a
+  } = t, {
+    content: i,
+    formatParams: u
+  } = N({
+    username: e,
     usernameOnClickHandler: n,
     roleSubscriptionOnClickHandler: r,
-    guildId: i,
-    roleSubscriptionData: o
+    guildId: l,
+    roleSubscriptionData: a
   });
-  return l.intl.formatToParts(a, s)
+  return o.intl.formatToParts(i, u)
 }
 
-function f(e, t) {
+function d(t, e) {
   var n, r;
-  let i = o.Z.getGuild(e),
-    a = null != (n = null == t ? true : t.total_months_subscribed) ? n : 0,
-    s = a > 0;
+  let l = a.Z.getGuild(t),
+    i = null != (n = null == e ? true : e.total_months_subscribed) ? n : 0;
   return {
-    guild: i,
-    totalMonthsSubscribed: a,
-    showWithDuration: s,
-    isRenewal: null != (r = null == t ? true : t.is_renewal) && r
+    guild: l,
+    totalMonthsSubscribed: i,
+    showWithDuration: i > 0,
+    isRenewal: null != (r = null == e ? true : e.is_renewal) && r
   }
 }
 
-function _(e) {
+function N(t) {
   let {
-    username: t,
-    usernameOnClickHandler: n = c,
-    roleSubscriptionOnClickHandler: r = s.dG4,
-    guildId: i,
-    roleSubscriptionData: o
-  } = e, {
-    guild: a,
-    totalMonthsSubscribed: u,
-    showWithDuration: d,
-    isRenewal: _
-  } = f(i, o);
+    username: e,
+    usernameOnClickHandler: n = s,
+    roleSubscriptionOnClickHandler: r = u.dG4,
+    guildId: l,
+    roleSubscriptionData: a
+  } = t, {
+    guild: i,
+    totalMonthsSubscribed: c,
+    showWithDuration: m,
+    isRenewal: N
+  } = d(l, a);
   return {
-    content: d ? _ ? l.t.Iy66Mz : l.t.eCgb2d : _ ? l.t.mPTTdn : l.t.mYjFFx,
+    content: m ? N ? o.t.Iy66Mz : o.t.eCgb2d : N ? o.t.mPTTdn : o.t.mYjFFx,
     formatParams: {
-      username: t,
+      username: e,
       usernameHook: n,
-      guildName: null == a ? true : a.name,
+      guildName: null == i ? true : i.name,
       handleGuildNameClick: r,
-      tierName: null == o ? true : o.tier_name,
-      months: u
+      tierName: null == a ? true : a.tier_name,
+      months: c
     }
   }
 }
 
-function p(e) {
-  let t, {
+function _(t) {
+  let e, {
       username: n,
-      usernameOnClickHandler: r = c,
-      roleSubscriptionOnClickHandler: i = s.dG4,
-      guildId: o,
-      roleSubscriptionData: a
-    } = e,
+      usernameOnClickHandler: r = s,
+      roleSubscriptionOnClickHandler: l = u.dG4,
+      guildId: a,
+      roleSubscriptionData: i
+    } = t,
     {
-      guild: u,
-      totalMonthsSubscribed: d,
-      showWithDuration: _,
-      isRenewal: p
-    } = f(o, a);
-  return t = _ ? p ? l.t.OQ0OU1 : l.t["+N9bxs"] : p ? l.t.OxP1ND : l.t["6Z1E+/"], l.intl.formatToParts(t, {
-    guildName: null == u ? true : u.name,
-    tierName: null == a ? true : a.tier_name,
+      guild: c,
+      totalMonthsSubscribed: m,
+      showWithDuration: N,
+      isRenewal: _
+    } = d(a, i);
+  return e = N ? _ ? o.t.OQ0OU1 : o.t["+N9bxs"] : _ ? o.t.OxP1ND : o.t["6Z1E+/"], o.intl.formatToParts(e, {
+    guildName: null == c ? true : c.name,
+    tierName: null == i ? true : i.tier_name,
     username: n,
     usernameOnClick: r,
-    roleSubscriptionOnClick: i,
-    months: d
+    roleSubscriptionOnClick: l,
+    months: m
   })
 }
 
-function h(e) {
-  return (0, i.l)(e)
+function T(t) {
+  return (0, l.l)(t)
 }
 
-function m(e, t, n, i) {
-  var o;
-  r.ZP.trackWithMetadata(s.rMx.ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CLICKED, {
-    guild_id: e,
-    user_id: null == (o = a.default.getCurrentUser()) ? true : o.id,
-    channel_id: t,
+function I(t, e, n, l) {
+  var a;
+  r.ZP.trackWithMetadata(u.rMx.ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CLICKED, {
+    guild_id: t,
+    user_id: null == (a = i.default.getCurrentUser()) ? true : a.id,
+    channel_id: e,
     message_id: n,
-    role_subscription_listing_id: i
+    role_subscription_listing_id: l
   })
 }
 
-function g(e, t) {
+function f(t, e) {
   var n;
   return {
-    guild_id: e.guild_id,
-    sender: null == (n = a.default.getCurrentUser()) ? true : n.id,
-    target_user: t.author.id,
-    channel_id: e.id,
-    message_id: t.id
+    guild_id: t.guild_id,
+    sender: null == (n = i.default.getCurrentUser()) ? true : n.id,
+    target_user: e.author.id,
+    channel_id: t.id,
+    message_id: e.id
   }
 }

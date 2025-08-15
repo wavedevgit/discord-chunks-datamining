@@ -53,8 +53,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -62,8 +62,8 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let p = e => e === r.Z.VARIANTS_GROUP || e === r.Z.EXTERNAL_SKU;
@@ -73,7 +73,7 @@ class h extends Chunk803358.Z {
       products: t,
       logo: n,
       hero_ranking: r,
-      pdp_bg: o,
+      pdp_bg: a,
       mobile_bg: l,
       mobile_banner: u,
       banner: _,
@@ -93,7 +93,7 @@ class h extends Chunk803358.Z {
       }, []),
       logo: n,
       heroRanking: r,
-      pdpBg: o,
+      pdpBg: a,
       mobileBg: l,
       mobileBanner: u,
       banner: _,
@@ -103,7 +103,7 @@ class h extends Chunk803358.Z {
       featuredBlock: b,
       heroLogo: y,
       bannerTextColor: O,
-      heroBannerConfig: null != v ? a.Z.fromServer(v) : true,
+      heroBannerConfig: null != v ? o.Z.fromServer(v) : true,
       heroLogoDisplayConfig: null != I ? s.X.fromServer(I) : true
     }))
   }

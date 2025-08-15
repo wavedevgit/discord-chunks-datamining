@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 316595, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 316595, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,32 +13,32 @@ var Chunk255367 = require("./255367.js"),
   Chunk375954 = require("./375954.js"),
   Chunk921944 = require("./921944.js");
 
-function f(e) {
+function p(e) {
   let {
     children: t,
     enabled: n,
-    animationContainerClassName: f,
-    glowClassName: _,
-    trinketsClassName: p
-  } = e, h = (0, o.e7)([u.Z], () => u.Z.hasCurrentUserSentMessageSinceAppStart()), m = i.useMemo(() => {
+    animationContainerClassName: p,
+    glowClassName: h,
+    trinketsClassName: f
+  } = e, m = (0, l.e7)([u.Z], () => u.Z.hasCurrentUserSentMessageSinceAppStart()), g = i.useMemo(() => {
     let e = [];
-    return h && n && e.push(a.z.ACTIVITIES_CHAT_BUTTON_NUX_V2), e
-  }, [h, n]), g = () => {
-    setTimeout(() => (0, l.Q3)(a.z.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
+    return m && n && e.push(a.z.ACTIVITIES_CHAT_BUTTON_NUX_V2), e
+  }, [m, n]), b = () => {
+    setTimeout(() => (0, s.Q3)(a.z.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
       dismissAction: d.L.AUTO_DISMISS
     }), 1e4)
   };
   return (0, r.jsx)(c.ZP, {
-    contentTypes: m,
+    contentTypes: g,
     children: e => {
       let {
         visibleContent: n
       } = e;
-      return n === a.z.ACTIVITIES_CHAT_BUTTON_NUX_V2 ? (0, r.jsx)(s.b, {
-        animationContainerClassName: f,
-        glowClassName: _,
-        trinketsClassName: p,
-        onMount: g,
+      return n === a.z.ACTIVITIES_CHAT_BUTTON_NUX_V2 ? (0, r.jsx)(o.b, {
+        animationContainerClassName: p,
+        glowClassName: h,
+        trinketsClassName: f,
+        onMount: b,
         children: t
       }) : t
     }

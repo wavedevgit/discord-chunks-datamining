@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 475468, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 475468, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  K: () => l,
+  K: () => s,
   z: () => c
 });
 var Chunk481060 = require("./481060.js"),
@@ -11,10 +10,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk905423 = require("./905423.js"),
   Chunk981631 = require("./981631.js");
 
-function l(e, t) {
+function s(e, t) {
   let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-    l = arguments.length > 3 && true !== arguments[3] && arguments[3];
-  (0, r.$sL)() || (n && o.Z.channelListScrollTo(e, t), l && null != t && i.Z.updateChatOpen(t, true), a.Z.getState().updatePath(s.Z5c.CHANNEL(e, t)))
+    s = arguments.length > 3 && true !== arguments[3] && arguments[3];
+  (0, r.$sL)() || (n && l.Z.channelListScrollTo(e, t), s && null != t && i.Z.updateChatOpen(t, true), a.Z.getState().updatePath(o.Z5c.CHANNEL(e, t)))
 }
 
 function c(e) {

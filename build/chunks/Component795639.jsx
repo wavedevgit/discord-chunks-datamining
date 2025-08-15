@@ -32,14 +32,14 @@ let S = [{
     name: "Media Post Thumbnail",
     extensions: ["jpg", "jpeg", "png", "gif", "webp"]
   }],
-  T = (0, Chunk313201.hQ)();
+  N = (0, Chunk313201.hQ)();
 
-function N(e) {
+function P(e) {
   let {
     mediaAttachments: t,
     containerWidth: n,
     containerHeight: i
-  } = e, a = (0, _.tu)({
+  } = e, a = (0, C.tu)({
     numAttachments: t.length,
     containerWidth: n,
     containerHeight: i
@@ -51,11 +51,11 @@ function N(e) {
         style: a[t],
         children: true === e.isVideo ? (0, r.jsx)(j.Z, {
           src: e.src,
-          className: P.thumbnail,
+          className: O.thumbnail,
           "aria-hidden": true
         }) : (0, r.jsx)("img", {
           src: e.src,
-          className: P.thumbnail,
+          className: O.thumbnail,
           "aria-hidden": true,
           alt: null != (n = null == e ? true : e.alt) ? n : ""
         })
@@ -69,28 +69,28 @@ let I = e => {
     parentChannel: a
   } = e, {
     textAreaState: s
-  } = (0, C.xH)(e => {
+  } = (0, _.xH)(e => {
     let {
       textAreaState: t
     } = e;
     return {
       textAreaState: t
     }
-  }, c.X), b = (0, d.e7)([g.Z], () => g.Z.keyboardModeEnabled), j = (0, O.Z)(a, null == (t = s.textValue) ? true : t.trim()), _ = i.useMemo(() => j.find(e => e.isThumbnail), [j]), I = null != j && j.length > 0, E = i.useMemo(() => {
+  }, c.X), b = (0, d.e7)([g.Z], () => g.Z.keyboardModeEnabled), j = (0, w.Z)(a, null == (t = s.textValue) ? true : t.trim()), C = i.useMemo(() => j.find(e => e.isThumbnail), [j]), I = null != j && j.length > 0, E = i.useMemo(() => {
     let e = (null == j ? true : j.length) > 1 ? 1.15 : 1;
     return {
       width: 153 * e,
       height: 86 * e
     }
   }, [j]), R = i.useCallback(e => {
-    null != _ && h.Z.remove(a.id, _.id, f.Ie.CREATE_FORUM_POST.drafts.type), (0, y.d)(e.currentTarget.files, a, f.Ie.CREATE_FORUM_POST.drafts.type, {
+    null != C && h.Z.remove(a.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type), (0, y.d)(e.currentTarget.files, a, f.Ie.CREATE_FORUM_POST.drafts.type, {
       requireConfirm: true,
       isThumbnail: true,
       origin: "file_picker"
     }), e.currentTarget.value = null
-  }, [a, _]), M = e => {
-    e.stopPropagation(), (null == _ ? true : _.upload) != null && (0, m.ZDy)(async () => {
-      let e = _.upload;
+  }, [a, C]), M = e => {
+    e.stopPropagation(), (null == C ? true : C.upload) != null && (0, m.ZDy)(async () => {
+      let e = C.upload;
       o()(null != e, "upload should not be null");
       let {
         default: t
@@ -145,31 +145,31 @@ let I = e => {
     })
   }, Z = (0, r.jsx)(v.Z, {
     color: u.Tt.CUSTOM,
-    className: P.uploadFileInputContainer,
-    innerClassName: P.uploadThumbnailContainer,
+    className: O.uploadFileInputContainer,
+    innerClassName: O.uploadThumbnailContainer,
     onChange: R,
     multiple: false,
     "aria-hidden": true,
     filters: S,
-    "aria-describedby": T,
-    "aria-label": I ? w.intl.string(w.t.MxJI3d) : w.intl.string(w.t.CbiofX),
+    "aria-describedby": N,
+    "aria-label": I ? T.intl.string(T.t.MxJI3d) : T.intl.string(T.t.CbiofX),
     children: I ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(N, {
+      children: [(0, r.jsx)(P, {
         mediaAttachments: j,
         containerWidth: E.width,
         containerHeight: E.height
       }), (0, r.jsxs)("div", {
-        className: l()(P.changeThumbnailLabelContainer, {
-          [P.changeThumbnailLabelOverflow]: (null == j ? true : j.length) > 2
+        className: l()(O.changeThumbnailLabelContainer, {
+          [O.changeThumbnailLabelOverflow]: (null == j ? true : j.length) > 2
         }),
         children: [(0, r.jsx)(m.Text, {
           variant: "text-xs/medium",
           color: "header-secondary",
-          children: w.intl.string(w.t.MxJI3d)
-        }), null == _ && (0, r.jsx)(m.vdY, {
+          children: T.intl.string(T.t.MxJI3d)
+        }), null == C && (0, r.jsx)(m.vdY, {
           size: "xs",
           color: "currentColor",
-          className: P.editIcon
+          className: O.editIcon
         })]
       })]
     }) : (0, r.jsxs)(r.Fragment, {
@@ -178,31 +178,31 @@ let I = e => {
         width: 39,
         height: 39,
         color: "currentColor",
-        className: P.uploadIcon
+        className: O.uploadIcon
       }), (0, r.jsx)(m.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: w.intl.string(w.t.CbiofX)
+        children: T.intl.string(T.t.CbiofX)
       })]
     })
   });
   return (0, r.jsx)("div", {
-    className: P.thumbnailContainer,
+    className: O.thumbnailContainer,
     style: E,
-    children: null != _ ? (0, r.jsx)(p.Z, {
+    children: null != C ? (0, r.jsx)(p.Z, {
       actions: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(x.Z, {
-          className: P.action,
-          tooltip: w.intl.string(w.t.Y8ujqq),
+          className: O.action,
+          tooltip: T.intl.string(T.t.Y8ujqq),
           onClick: M,
           children: (0, r.jsx)(m.vdY, {
             size: "xs",
             color: "currentColor"
           })
         }), (0, r.jsx)(x.Z, {
-          className: P.action,
-          tooltip: w.intl.string(w.t.vN7REx),
-          onClick: () => h.Z.remove(a.id, _.id, f.Ie.CREATE_FORUM_POST.drafts.type),
+          className: O.action,
+          tooltip: T.intl.string(T.t.vN7REx),
+          onClick: () => h.Z.remove(a.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type),
           dangerous: true,
           children: (0, r.jsx)(m.XHJ, {
             size: "md",
@@ -211,12 +211,12 @@ let I = e => {
         })]
       }),
       draftType: f.Ie.CREATE_FORUM_POST.drafts.type,
-      id: _.id,
+      id: C.id,
       channelId: a.id,
       handleEditModal: M,
       keyboardModeEnabled: b,
       size: p.q.SMALL,
-      className: P.attachmentListItem,
+      className: O.attachmentListItem,
       children: Z
     }) : Z
   })

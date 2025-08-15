@@ -1,7 +1,7 @@
 /** Chunk was on 7654 **/
 /** chunk id: 585385, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  D: () => h
+  D: () => g
 }), require("./997841.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -14,23 +14,23 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk451964 = require("./451964.js"),
   Chunk197571 = require("./197571.js");
-let h = e => {
+let g = e => {
   let {
     handleDone: t,
     headerId: n,
     modalState: i,
-    shouldHideTemporaryInviteToggle: h,
+    shouldHideTemporaryInviteToggle: g,
     onGenerateNewLink: m,
     onToggleTemporary: p,
     onSelectMaxAge: v,
-    onSelectMaxUses: x,
-    isGuestInviteCreationToggleEnabled: I,
+    onSelectMaxUses: I,
+    isGuestInviteCreationToggleEnabled: x,
     onSetInviteFlags: f
-  } = e, j = (0, a.ZP)(), {
-    maxAge: N,
+  } = e, N = (0, a.ZP)(), {
+    maxAge: j,
     maxUses: _,
-    temporary: S,
-    flags: E
+    temporary: E,
+    flags: S
   } = i;
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsxs)(s.xBx, {
@@ -44,26 +44,26 @@ let h = e => {
         children: (0, l.jsx)(s.vwX, {
           id: n,
           tag: "h2",
-          className: r()(g.marginReset, c.headerCloseButtonSpacing, c.headerText),
+          className: r()(h.marginReset, c.headerCloseButtonSpacing, c.headerText),
           children: d.intl.string(d.t.Atdlys)
         })
       })]
     }), (0, l.jsx)(o.Z, {
-      shouldHideTemporaryInviteToggle: h,
-      maxAge: N,
+      shouldHideTemporaryInviteToggle: g,
+      maxAge: j,
       maxUses: _,
-      temporary: S,
+      temporary: E,
       onToggleTemporary: p,
       onSelectMaxAge: v,
-      onSelectMaxUses: x,
+      onSelectMaxUses: I,
       onGenerateNewLink: m,
-      isGuestInviteCreationToggleEnabled: I,
+      isGuestInviteCreationToggleEnabled: x,
       onSetInviteFlags: f,
-      inviteFlags: E
+      inviteFlags: S
     }), (0, l.jsx)(s.mzw, {
       className: c.settingsFooter,
       children: (0, l.jsx)(u.Z, {
-        theme: j,
+        theme: N,
         onConfirm: () => {
           m(), t()
         },

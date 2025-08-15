@@ -49,12 +49,12 @@ function _(e) {
   if (0 !== r) returnfalse;
   let {
     leaderboard: i
-  } = n, a = u(i.guild_id, i.leaderboard_id, i.interval_start), l = {
+  } = n, o = u(i.guild_id, i.leaderboard_id, i.interval_start), l = {
     ranks: i.users.map(e => e.user_id),
     ttl: s.default.extractTimestamp(i.interval_end)
-  }, c = f.currentLeaderboardRanks[a];
-  if ((0, o.E)(l.ranks, null != (t = null == c ? true : c.ranks) ? t : [])) returnfalse;
-  f.prevLeaderboardRanks[a] = c, f.currentLeaderboardRanks[a] = l
+  }, c = f.currentLeaderboardRanks[o];
+  if ((0, a.E)(l.ranks, null != (t = null == c ? true : c.ranks) ? t : [])) returnfalse;
+  f.prevLeaderboardRanks[o] = c, f.currentLeaderboardRanks[o] = l
 }
 
 function p() {

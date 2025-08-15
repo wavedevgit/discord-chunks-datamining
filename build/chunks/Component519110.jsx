@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 519110, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 39010 **/
+/** chunk id: 519110, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => h
 }), require("./704826.js"), require("./35282.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -22,97 +21,90 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function y(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function O(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
+function v(t) {
+  for (var e = 1; e < arguments.length; e++) {
+    var n = null != arguments[e] ? arguments[e] : {},
       r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      y(e, t, n[t])
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+      return Object.getOwnPropertyDescriptor(n, t).enumerable
+    }))), r.forEach(function(e) {
+      var r;
+      r = n[e], e in t ? Object.defineProperty(t, e, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : t[e] = r
     })
   }
-  return e
+  return t
 }
 
-function v(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
+function E(t, e) {
+  return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
+    var n = Object.keys(t);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(t);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(e)).forEach(function(n) {
+    Object.defineProperty(t, n, Object.getOwnPropertyDescriptor(e, n))
+  }), t
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
+function P(t) {
+  return b.ZP.getByName(t.replace(/(^:|:$)/g, ""))
 }
 
-function T(e) {
-  return d.ZP.getByName(e.replace(/(^:|:$)/g, ""))
-}
-
-function S(e) {
+function h(t) {
   let {
-    type: t,
+    type: e,
     id: n,
-    name: y,
-    isInExpressionPicker: v = false
-  } = e, {
-    location: S
-  } = (0, l.O)(), A = i.useMemo(() => I(O({}, S), {
-    section: v ? E.jXE.EXPRESSION_PICKER : E.jXE.CONTEXT_MENU
-  }), [S, v]), N = (0, h.Go)(), C = (0, o.e7)([m.Z], () => t === f.S.STICKER && null != n ? m.Z.getStickerById(n) : null), R = null != C && N.includes(C.id), P = (0, o.e7)([u.ZP], () => {
-    if (t === f.S.EMOJI) {
-      if (null != n) return u.ZP.getDisambiguatedEmojiContext().getById(n);
-      else if (null != y) {
-        var e;
-        return null != (e = T(y)) ? e : T(d.ZP.convertSurrogateToName(y))
+    name: h,
+    isInExpressionPicker: m = false
+  } = t, {
+    location: I
+  } = (0, c.O)(), w = i.useMemo(() => E(v({}, I), {
+    section: m ? j.jXE.EXPRESSION_PICKER : j.jXE.CONTEXT_MENU
+  }), [I, m]), C = (0, f.Go)(), N = (0, l.e7)([O.Z], () => e === d.S.STICKER && null != n ? O.Z.getStickerById(n) : null), k = null != N && C.includes(N.id), x = (0, l.e7)([s.ZP], () => {
+    if (e === d.S.EMOJI) {
+      if (null != n) return s.ZP.getDisambiguatedEmojiContext().getById(n);
+      else if (null != h) {
+        var t;
+        return null != (t = P(h)) ? t : P(b.ZP.convertSurrogateToName(h))
       }
     }
-  }), w = (0, c.C1)(null, P);
-  return null != C && t === f.S.STICKER ? (0, g.J8)(C) && !(0, g.V9)(C) ? null : R ? (0, r.jsx)(a.sNh, {
+  }), A = (0, u.C1)(null, x);
+  return null != N && e === d.S.STICKER ? (0, y.J8)(N) && !(0, y.V9)(N) ? null : k ? (0, r.jsx)(o.sNh, {
     id: "unfavorite",
-    action: () => (0, _.hW)(C.id),
-    label: b.intl.string(b.t.XhzKyM)
-  }) : (0, r.jsx)(a.sNh, {
+    action: () => (0, p.hW)(N.id),
+    label: S.intl.string(S.t.XhzKyM)
+  }) : (0, r.jsx)(o.sNh, {
     id: "favorite",
     action: () => {
-      (0, p.cQ)({
-        sticker: C,
-        location: I(O({}, A), {
-          object: E.qAy.STICKER
+      (0, g.cQ)({
+        sticker: N,
+        location: E(v({}, w), {
+          object: j.qAy.STICKER
         })
-      }), (0, _.SA)(null == C ? true : C.id)
+      }), (0, p.SA)(null == N ? true : N.id)
     },
-    label: b.intl.string(b.t.kWmiPT)
-  }) : null != P && t === f.S.EMOJI ? w ? (0, r.jsx)(a.sNh, {
+    label: S.intl.string(S.t.kWmiPT)
+  }) : null != x && e === d.S.EMOJI ? A ? (0, r.jsx)(o.sNh, {
     id: "unfavorite",
-    action: () => (0, s.Xe)(P),
-    label: b.intl.string(b.t.Ay49KC)
-  }) : (0, r.jsx)(a.sNh, {
+    action: () => (0, a.Xe)(x),
+    label: S.intl.string(S.t.Ay49KC)
+  }) : (0, r.jsx)(o.sNh, {
     id: "favorite",
     action: () => {
-      (0, c.J1)({
-        emoji: P,
-        location: I(O({}, A), {
-          object: E.qAy.EMOJI
+      (0, u.J1)({
+        emoji: x,
+        location: E(v({}, w), {
+          object: j.qAy.EMOJI
         })
-      }), (0, s.$K)(P)
+      }), (0, a.$K)(x)
     },
-    label: b.intl.string(b.t["nNsr6+"])
+    label: S.intl.string(S.t["nNsr6+"])
   }) : true
 }

@@ -1,30 +1,29 @@
-/** Chunk was on web.js **/
-/** chunk id: 540650, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 24255 **/
+/** chunk id: 540650, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  R: () => s
+  R: () => o
 });
 var Chunk255367 = require("./255367.js"),
   Chunk659580 = require("./659580.jsx"),
   Chunk875527 = require("./875527.js"),
   Chunk306609 = require("./306609.jsx");
 
-function s(e) {
+function o(e) {
   let {
     onClose: t,
     onInteraction: n,
-    location: s,
-    overlayLimitedInteraction: l = false
+    location: o,
+    overlayLimitedInteraction: u = false
   } = e;
-  return (0, o.Hu)({
-    location: s,
+  return (0, i.Hu)({
+    location: o,
     autoTrackExposure: true
   }) ? (0, r.jsx)(a.l, {
     wide: true,
     showOutputDevices: true,
     onSettingsButtonClick: t,
-    showSearchBar: !l
-  }) : (0, r.jsx)(i.default, {
+    showSearchBar: !u
+  }) : (0, r.jsx)(l.default, {
     onClose: t,
     renderInputDevices: true,
     renderOutputDevices: true,

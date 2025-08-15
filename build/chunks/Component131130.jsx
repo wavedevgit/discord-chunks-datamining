@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 131130, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 31253 **/
+/** chunk id: 131130, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => _
+  q: () => E
 }), require("./953529.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -15,42 +14,42 @@ var Chunk704215 = require("./704215.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk50953 = require("./50953.js");
-let _ = e => {
+let E = e => {
   let {
     dismissibleContent: t,
     noticeType: n
   } = e, {
-    analyticsLocations: _
-  } = (0, a.ZP)(), p = (0, l.Z)();
+    analyticsLocations: E
+  } = (0, o.ZP)(), I = (0, c.Z)();
   return (0, r.jsx)(u.Xf, {
     contentType: t,
-    latestVersion: (0, c.t)(t),
-    groupName: d.R.NOTICE_BAR,
+    latestVersion: (0, s.t)(t),
+    groupName: _.R.NOTICE_BAR,
     bypassAutoDismiss: true,
     children: e => {
       let {
         visibleContent: t,
-        markAsDismissed: a
+        markAsDismissed: o
       } = e;
       if (t === i.z.GIFTING_PROMOTION_REMINDER) {
-        let e = null == p ? true : p.reminderNagbar;
-        return (0, r.jsxs)(o.qXd, {
-          color: o.DM8.PREMIUM_TIER_2,
-          children: [(0, r.jsx)(o.RyX, {
-            onClick: () => a(d.L.USER_DISMISS),
+        let e = null == I ? true : I.reminderNagbar;
+        return (0, r.jsxs)(l.qXd, {
+          color: l.DM8.PREMIUM_TIER_2,
+          children: [(0, r.jsx)(l.RyX, {
+            onClick: () => o(_.L.USER_DISMISS),
             noticeType: n
-          }), (0, r.jsx)(o.OgN, {
+          }), (0, r.jsx)(l.OgN, {
             size: "custom",
             width: 20,
             height: 20,
             color: "currentColor",
-            className: f.giftIcon
-          }), null == e ? true : e.description(), (0, r.jsx)(o.NoS, {
+            className: d.giftIcon
+          }), null == e ? true : e.description(), (0, r.jsx)(l.NoS, {
             onClick: () => {
-              (0, s.Z)({
+              (0, a.Z)({
                 isGift: true,
                 initialPlanId: null,
-                analyticsLocations: _,
+                analyticsLocations: E,
                 analyticsLocation: null == e ? true : e.analyticsLocation,
                 analyticsObject: {
                   page: null == e ? true : e.analyticsPage

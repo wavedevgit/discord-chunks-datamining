@@ -129,8 +129,8 @@ class N extends Chunk147913.Z {
       let {
         progressSeconds: n,
         targetSeconds: i
-      } = (0, h.il)(t, r.T.DESKTOP), o = Math.max(0, (i - n) * _.Z.Millis.SECOND);
-      return o <= O ? o + I : O
+      } = (0, h.il)(t, r.T.DESKTOP), a = Math.max(0, (i - n) * _.Z.Millis.SECOND);
+      return a <= O ? a + I : O
     }), y(this, "initiateHeartbeat", (e, t) => {
       let n = this.heartbeats[t];
       if (n.has(e)) return void T.log("~ initiateHeartbeat -> Heartbeat already initiated for questId: ".concat(e));
@@ -150,9 +150,9 @@ class N extends Chunk147913.Z {
           } else T.log("~ initiateHeartbeat -> Sending heartbeat for questId: ".concat(e)), (0, m.m0)({
             questId: e
           });
-          let o = this.calculateHeartbeatDurationMs(e),
-            a = window.setTimeout(i, o);
-          n.set(e, a)
+          let a = this.calculateHeartbeatDurationMs(e),
+            o = window.setTimeout(i, a);
+          n.set(e, o)
         } else T.log("~ initiateHeartbeat -> Quest ".concat(e, " is no longer actively progressing, terminating heartbeat")), this.terminateHeartbeat(e, t)
       };
       T.log("~ initiateHeartbeat -> Initiating heartbeat for Quest ".concat(e)), i()

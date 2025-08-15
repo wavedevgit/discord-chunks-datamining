@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk570140 = require("./570140.js"),
   Chunk430742 = require("./430742.js"),
   Chunk40851 = require("./40851.jsx"),
@@ -32,7 +32,7 @@ var Chunk512722 = require("./512722.js"),
 function T(e, t, n) {
   if (!(0, _.WF)(e.id)) return void(0, f.V)();
   c.UI.dispatch(v.CkL.POPOUT_CLOSE);
-  let r = !a().isEmpty(b.Z.getVoiceStatesForChannel(e.id));
+  let r = !o().isEmpty(b.Z.getVoiceStatesForChannel(e.id));
   if (t || !m.vF.getSetting() || __OVERLAY__ || r) {
     s.Z.dispatch({
       type: "SIDEBAR_CLOSE",
@@ -43,8 +43,8 @@ function T(e, t, n) {
     return
   }
   i()(null != e.parent_id, "all threads must have parents");
-  let o = E.Z.getChannelId();
-  e.parent_id === o || (0, I.ME)(o) || (0, h.Kh)(e.parent_id), (0, p.uL)(v.Z5c.CHANNEL_THREAD_VIEW((0, d.e)(e), (0, I.ME)(o) ? I.oC.GUILD_HOME : e.parent_id, e.id), e.isForumPost() ? {
+  let a = E.Z.getChannelId();
+  e.parent_id === a || (0, I.ME)(a) || (0, h.Kh)(e.parent_id), (0, p.uL)(v.Z5c.CHANNEL_THREAD_VIEW((0, d.e)(e), (0, I.ME)(a) ? I.oC.GUILD_HOME : e.parent_id, e.id), e.isForumPost() ? {
     source: O.on.FORUM
   } : true), setTimeout(() => {
     y.S.dispatch(v.CkL.FOCUS_CHANNEL_TEXT_AREA, {

@@ -23,7 +23,7 @@ function d(e) {
     entry: r
   } = e;
   return null != r ? {
-    applicationId: (0, o.dX)(r) ? r.extra.application_id : true,
+    applicationId: (0, a.dX)(r) ? r.extra.application_id : true,
     sourceUserId: r.author_id
   } : null != n ? {
     applicationId: n.type === c.IIU.PLAYING && null != n.application_id ? n.application_id : true,
@@ -56,7 +56,7 @@ function _(e) {
   let {
     user: t,
     activity: n,
-    entry: o,
+    entry: a,
     onAction: l,
     isMenuOpen: c,
     appContext: f
@@ -65,11 +65,11 @@ function _(e) {
     sourceUserId: p
   } = d({
     activity: n,
-    entry: o,
+    entry: a,
     user: t
   }), h = (0, s.Z)({
     location: "UserProfileActivityContextMenu",
-    source: a.m1.UserProfileCardContextMenu,
+    source: o.m1.UserProfileCardContextMenu,
     trackEntryPointImpression: c,
     applicationId: _,
     sourceUserId: p,

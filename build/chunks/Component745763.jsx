@@ -1,7 +1,7 @@
 /** Chunk was on 3865 **/
-/** chunk id: 745763, original params: t,n,e (module,exports,require) **/
+/** chunk id: 745763, original params: n,t,l (module,exports,require) **/
 require.d(exports, {
-  default: () => o
+  default: () => d
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -12,23 +12,23 @@ var Chunk481060 = require("./481060.js"),
   Chunk89013 = require("./89013.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function o(t) {
+function d(n) {
   let {
-    text: n,
-    onSelect: e
-  } = t, o = (0, a.Z)(n);
-  return c.isPlatformEmbedded ? (0, i.jsxs)(s.v2r, {
+    text: t,
+    onSelect: l
+  } = n, d = (0, s.Z)(t);
+  return c.isPlatformEmbedded ? (0, e.jsxs)(o.v2r, {
     navId: "text-context",
-    onClose: l.Zy,
-    "aria-label": d.intl.string(d.t.s285pq),
-    onSelect: e,
-    children: [(0, i.jsx)(s.kSQ, {
-      children: o
-    }), (0, i.jsx)(s.kSQ, {
-      children: (0, i.jsx)(s.sNh, {
+    onClose: a.Zy,
+    "aria-label": r.intl.string(r.t.s285pq),
+    onSelect: l,
+    children: [(0, e.jsx)(o.kSQ, {
+      children: d
+    }), (0, e.jsx)(o.kSQ, {
+      children: (0, e.jsx)(o.sNh, {
         id: "copy",
-        label: d.intl.string(d.t.OpuAlJ),
-        action: () => r.ZP.copy(n)
+        label: r.intl.string(r.t.OpuAlJ),
+        action: () => i.ZP.copy(t)
       })
     })]
   }) : null

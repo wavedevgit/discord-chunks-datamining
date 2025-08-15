@@ -1,21 +1,20 @@
-/** Chunk was on web.js **/
-/** chunk id: 980568, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 46653 **/
+/** chunk id: 980568, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk570140 = require("./570140.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js");
-let a = {
-  dismissForApplicationId(e) {
-    r.Z.dispatch({
+let o = {
+  dismissForApplicationId(t) {
+    n.Z.dispatch({
       type: "ACTIVITY_INVITE_EDUCATION_DISMISS",
-      key: e,
+      key: t,
       value: true
-    }), i.default.track(o.rMx.CLOSE_TUTORIAL, {
+    }), r.default.track(s.rMx.CLOSE_TUTORIAL, {
       tutorial: "activity-invite-nux-inline",
-      application_id: e,
+      application_id: t,
       acknowledged: true
     })
   }

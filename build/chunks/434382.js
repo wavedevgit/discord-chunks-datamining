@@ -43,7 +43,7 @@ function v(e, t) {
   if (!(0, f.NM)({
       guildId: e,
       location: "GuildLeaderboardManager"
-    }) || !c.Z.isFocused() || !a.Z.isConnected()) returnfalse;
+    }) || !c.Z.isFocused() || !o.Z.isConnected()) returnfalse;
   let i = s.Z.getIdleSince();
   return !(null != i && Date.now() - i > g) && true
 }
@@ -72,17 +72,17 @@ async function S(e) {
     force: r = false
   } = e;
   if (!(v(t, n) || r)) return;
-  let o = O(t, n);
-  if (!b.has(o)) try {
-    b.add(o);
+  let a = O(t, n);
+  if (!b.has(a)) try {
+    b.add(a);
     let e = await (0, u.pV)({
         guildId: t,
         leaderboardId: n,
         intervalOffset: 0,
         force: r
       }),
-      a = d.Z.get(t, n);
-    if ((null == a ? true : a.interval_start) !== e.leaderboard.interval_start) {
+      o = d.Z.get(t, n);
+    if ((null == o ? true : o.interval_start) !== e.leaderboard.interval_start) {
       let e = await (0, u.pV)({
         guildId: t,
         leaderboardId: n,
@@ -99,13 +99,13 @@ async function S(e) {
       type: "SET_GUILD_LEADERBOARD",
       leaderboardResponse: e,
       intervalOffset: 0
-    }), y.delete(o), b.delete(o), T()
+    }), y.delete(a), b.delete(a), T()
   } catch (i) {
-    var a;
-    let e = (null != (a = y.get(o)) ? a : 0) + 1;
-    if (y.set(o, e), !v(t, n)) return;
+    var o;
+    let e = (null != (o = y.get(a)) ? o : 0) + 1;
+    if (y.set(a, e), !v(t, n)) return;
     let r = 1e3 * Math.pow(m, e);
-    E.set(o, setTimeout(() => S({
+    E.set(a, setTimeout(() => S({
       guildId: t,
       leaderboardId: n,
       force: true

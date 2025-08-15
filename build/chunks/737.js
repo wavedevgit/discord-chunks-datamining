@@ -1,7 +1,7 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 737, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js"), require("./539854.js");
 var Chunk442837 = require("./442837.js"),
   Chunk963374 = require("./963374.js"),
@@ -16,20 +16,20 @@ var Chunk442837 = require("./442837.js"),
   Chunk817190 = require("./817190.js");
 let f = [];
 
-function g(e) {
+function m(e) {
   let {
     searchContext: t
-  } = e, n = (0, s.p)(), g = a.d.useExperiment({
+  } = e, n = (0, o.p)(), m = a.d.useExperiment({
     location: "useMessageRenderedContent"
-  }).enabled, m = (0, r.e7)([p.Z, d.Z, l.Z], () => {
+  }).enabled, g = (0, r.e7)([h.Z, d.Z, l.Z], () => {
     var e;
-    let r = (0, h.Tm)(t),
-      a = p.Z.getSearchResultsQuery(r),
-      s = d.Z.getMessages(r);
-    if (null == a || null == s || 0 === s.length) return f;
-    let u = (0, i.nC)(null != (e = (0, h.UP)(a)) ? e : ""),
-      m = [];
-    return s.forEach(e => {
+    let r = (0, p.Tm)(t),
+      a = h.Z.getSearchResultsQuery(r),
+      o = d.Z.getMessages(r);
+    if (null == a || null == o || 0 === o.length) return f;
+    let u = (0, i.nC)(null != (e = (0, p.UP)(a)) ? e : ""),
+      g = [];
+    return o.forEach(e => {
       let t = new c.ZP(e),
         r = (t = function(e, t) {
           let [n] = t, r = n.getMessage(e.id, e.channel_id);
@@ -37,21 +37,21 @@ function g(e) {
             attachments: r.attachments,
             embeds: r.embeds
           })), e
-        }(t, [l.Z])).isSearchHit ? t.set("customRenderedContent", (0, o.ZP)(t, {
+        }(t, [l.Z])).isSearchHit ? t.set("customRenderedContent", (0, s.ZP)(t, {
           postProcessor: u,
           allowHeading: true,
           allowList: true,
-          allowGameMentions: g,
+          allowGameMentions: m,
           shouldFilterKeywords: n
         })) : t;
-      m.push([r])
-    }), m
-  }, [g, t, n], r.pF);
+      g.push([r])
+    }), g
+  }, [m, t, n], r.pF);
   return (0, r.e7)([u.Z], () => {
     let e = 0,
       t = 0;
     return {
-      searchResults: m.map(n => n.filter(n => {
+      searchResults: g.map(n => n.filter(n => {
         let r = u.Z.isBlockedForMessage(n),
           i = u.Z.isIgnoredForMessage(n);
         return r && n.isSearchHit ? e++ : i && n.isSearchHit && t++, !r && !i || n.isSearchHit
@@ -59,5 +59,5 @@ function g(e) {
       blockCount: e,
       ignoreCount: t
     }
-  }, [m], r.pF)
+  }, [g], r.pF)
 }

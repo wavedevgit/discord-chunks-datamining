@@ -50,7 +50,7 @@ function I(e) {
           action: "OPEN_VOICE_GUILD"
         }), null == S || S()
       };
-      return (0, r.jsx)(o.DY3, {
+      return (0, r.jsx)(a.DY3, {
         text: n.name,
         "aria-label": false,
         children: (0, r.jsx)(u.Z, {
@@ -62,7 +62,7 @@ function I(e) {
       })
     },
     D = () => {
-      if (!P) return (0, r.jsx)(o.Text, {
+      if (!P) return (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
         lineClamp: 1,
@@ -71,14 +71,14 @@ function I(e) {
         })
       });
       let e = e => {
-        e.stopPropagation(), a.default.selectVoiceChannel(I.id), (0, d.Kh)(I.id), null == T || T({
+        e.stopPropagation(), o.default.selectVoiceChannel(I.id), (0, d.Kh)(I.id), null == T || T({
           action: "OPEN_VOICE_CHANNEL"
         }), null == S || S()
       };
-      return (0, r.jsx)(o.P3F, {
+      return (0, r.jsx)(a.P3F, {
         onClick: e,
         className: O.clickableText,
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "text-secondary",
           lineClamp: 1,
@@ -94,15 +94,15 @@ function I(e) {
       className: O.voiceChannelDivider
     }), (0, r.jsxs)("div", {
       className: O.voiceChannel,
-      children: [w(), (0, r.jsx)(o.Fbu, {
+      children: [w(), (0, r.jsx)(a.Fbu, {
         size: "xxs",
-        color: o.TVs.colors.TEXT_SECONDARY
+        color: a.TVs.colors.TEXT_SECONDARY
       }), (0, r.jsxs)("div", {
         className: O.voiceChannelText,
         children: [(0, r.jsx)(g.Z, {
           channel: I,
           size: "xxs",
-          color: o.TVs.colors.TEXT_SECONDARY,
+          color: a.TVs.colors.TEXT_SECONDARY,
           className: O.voiceIcon
         }), D()]
       }), (0, r.jsx)(c.Z, {
@@ -110,7 +110,7 @@ function I(e) {
         guildId: n.id,
         channelId: I.id,
         maxUsers: v,
-        size: o.EFr.SIZE_16,
+        size: a.EFr.SIZE_16,
         overflowCountColor: "text-secondary",
         overflowCountClassName: O.voiceChannelOverflowCount,
         onClickOverflow: e => {

@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 558706, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 558706, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Yn: () => f,
-  tJ: () => _
+  Yn: () => u,
+  tJ: () => d
 }), require("./415506.js");
 var Chunk664751 = require("./664751.js"),
   Chunk544891 = require("./544891.js"),
@@ -11,7 +10,7 @@ var Chunk664751 = require("./664751.js"),
   Chunk70956 = require("./70956.js"),
   Chunk981631 = require("./981631.js");
 
-function l(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,9 +18,7 @@ function l(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let c = 5e3,
-  u = 5;
-class d {
+class c {
   async fetch(e, t, n) {
     if (!this.isCanceled) try {
       let i = await this.makeRequest({
@@ -31,12 +28,12 @@ class d {
       if (200 === i.status) e(i);
       else if (202 === i.status) {
         var r;
-        if (this.query.attempts = (null != (r = this.query.attempts) ? r : 0) + 1, this.query.attempts > u) return;
-        let o = parseInt(i.headers["retry-after"]);
-        this.retryDelay = isNaN(o) || 0 === o ? c : o * a.Z.Millis.SECOND, this.retryLater(e, t, n), t(i)
+        if (this.query.attempts = (null != (r = this.query.attempts) ? r : 0) + 1, this.query.attempts > 5) return;
+        let l = parseInt(i.headers["retry-after"]);
+        this.retryDelay = isNaN(l) || 0 === l ? 5e3 : l * a.Z.Millis.SECOND, this.retryLater(e, t, n), t(i)
       }
     } catch (e) {
-      new o.Z("SearchFetcher").error(e), n(e)
+      new l.Z("SearchFetcher").error(e), n(e)
     }
   }
   cancel() {
@@ -46,10 +43,10 @@ class d {
     null != this.indexingPollId && clearTimeout(this.indexingPollId), this.indexingPollId = setTimeout(this.fetch.bind(this, e, t, n), this.retryDelay)
   }
   constructor(e, t, n) {
-    l(this, "indexingPollId", true), l(this, "searchId", true), l(this, "searchType", true), l(this, "query", true), l(this, "retryDelay", true), l(this, "isCanceled", false), this.searchId = e, this.searchType = t, this.query = n
+    s(this, "indexingPollId", true), s(this, "searchId", true), s(this, "searchType", true), s(this, "query", true), s(this, "retryDelay", true), s(this, "isCanceled", false), this.searchId = e, this.searchType = t, this.query = n
   }
 }
-class f extends d {
+class u extends c {
   getEndpoint() {
     switch (this.searchType) {
       case Chunk981631.aib.FAVORITES:
@@ -76,7 +73,7 @@ class f extends d {
     })
   }
 }
-class _ extends d {
+class d extends c {
   getEndpoint() {
     switch (this.searchType) {
       case Chunk981631.aib.DMS:
@@ -105,6 +102,6 @@ class _ extends d {
     })
   }
   constructor(e, t, n, r) {
-    super(e, t, n), l(this, "payload", true), this.payload = r
+    super(e, t, n), s(this, "payload", true), this.payload = r
   }
 }

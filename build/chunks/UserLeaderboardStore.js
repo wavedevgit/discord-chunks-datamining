@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -50,7 +50,7 @@ class u extends(r = Chunk442837.ZP.PersistedStore) {
     return l.lastUpdateRequested[e]
   }
 }
-a(u, "displayName", "UserLeaderboardStore"), a(u, "persistKey", "UserLeaderboardStore");
+o(u, "displayName", "UserLeaderboardStore"), o(u, "persistKey", "UserLeaderboardStore");
 let d = new u(Chunk570140.Z, {
   SET_USER_LEADERBOARD_LAST_UPDATE_REQUESTED: c
 })

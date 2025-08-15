@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 910548, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 910548, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => et
+  ZP: () => U
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
+var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk505266 = require("./505266.js"),
   Chunk772848 = require("./772848.js"),
   Chunk468194 = require("./468194.js"),
@@ -25,92 +24,74 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk465687 = require("./465687.js");
 
-function I(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function T(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function S(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = 50,
-  C = {
-    enter: {
-      BEG: 0,
-      END: 22
-    },
-    confetti: {
-      BEG: 23,
-      END: 119
-    },
-    leaf_peel: {
-      BEG: 120,
-      END: 160
-    },
-    leaf_fall: {
-      BEG: 161,
-      END: 163
-    },
-    exit: {
-      BEG: 164,
-      END: 200
-    }
-  };
-var R = function(e) {
-  return e.TOP_LEFT = "TOP_LEFT", e.TOP_RIGHT = "TOP_RIGHT", e.BOTTOM_LEFT = "BOTTOM_LEFT", e.BOTTOM_RIGHT = "BOTTOM_RIGHT", e
-}({});
-let P = ["TOP_LEFT", "TOP_RIGHT"],
-  w = (0, Chunk468194.Mg)(Chunk477690.Z.USER_PREMIUM_GUILD_SUBSCRIPTION_EASTER_EGG_SIZE),
-  D = 11,
-  L = 125,
-  x = {
+let I = {
+  enter: {
+    BEG: 0,
+    END: 22
+  },
+  confetti: {
+    BEG: 23,
+    END: 119
+  },
+  leaf_peel: {
+    BEG: 120,
+    END: 160
+  },
+  leaf_fall: {
+    BEG: 161,
+    END: 163
+  },
+  exit: {
+    BEG: 164,
+    END: 200
+  }
+};
+var S = ((r = {}).TOP_LEFT = "TOP_LEFT", r.TOP_RIGHT = "TOP_RIGHT", r.BOTTOM_LEFT = "BOTTOM_LEFT", r.BOTTOM_RIGHT = "BOTTOM_RIGHT", r);
+let T = ["TOP_LEFT", "TOP_RIGHT"],
+  P = (0, Chunk468194.Mg)(Chunk477690.Z.USER_PREMIUM_GUILD_SUBSCRIPTION_EASTER_EGG_SIZE),
+  N = {
     leafPosition: {
       x: 85,
       y: 125
     },
     leafRotationDirection: 1
   },
-  M = 10,
-  j = 80,
-  k = 80,
-  U = 180,
-  G = 8,
-  B = 12,
-  Z = Object.freeze({
+  A = Object.freeze({
     TOP_LEFT: {
       getConfettiPosition: e => ({
-        x: e - D,
-        y: e - L
+        x: e - 11,
+        y: e - 125
       }),
       confettiVelocityDirection: {
         x: 1,
@@ -124,8 +105,8 @@ let P = ["TOP_LEFT", "TOP_RIGHT"],
     },
     TOP_RIGHT: {
       getConfettiPosition: e => ({
-        x: D,
-        y: e - L
+        x: 11,
+        y: e - 125
       }),
       confettiVelocityDirection: {
         x: false,
@@ -137,20 +118,20 @@ let P = ["TOP_LEFT", "TOP_RIGHT"],
       },
       leafRotationDirection: false
     },
-    BOTTOM_LEFT: A(T({}, x), {
+    BOTTOM_LEFT: j(x({}, N), {
       getConfettiPosition: e => ({
-        x: e - D,
-        y: L
+        x: e - 11,
+        y: 125
       }),
       confettiVelocityDirection: {
         x: 1,
         y: false
       }
     }),
-    BOTTOM_RIGHT: A(T({}, x), {
+    BOTTOM_RIGHT: j(x({}, N), {
       getConfettiPosition: e => ({
-        x: D,
-        y: L
+        x: 11,
+        y: 125
       }),
       confettiVelocityDirection: {
         x: false,
@@ -158,39 +139,13 @@ let P = ["TOP_LEFT", "TOP_RIGHT"],
       }
     })
   }),
-  F = "falling-leaf";
-
-function V(e) {
-  switch (e.type) {
-    case y.uaV.GUILD_BOOST_TIER_1:
-      return y.Eu4.TIER_1;
-    case y.uaV.GUILD_BOOST_TIER_2:
-      return y.Eu4.TIER_2;
-    case y.uaV.GUILD_BOOST_TIER_3:
-      return y.Eu4.TIER_3
-  }
-  return null
-}
-
-function H() {
-  switch (Math.floor(Math.random() * Object.keys(R).length)) {
-    case 0:
-      return "TOP_LEFT";
-    case 2:
-      return "TOP_RIGHT";
-    case 3:
-      return "BOTTOM_LEFT";
-    default:
-      return "BOTTOM_RIGHT"
-  }
-}
-let Y = 45,
-  W = ["#61D5B2"],
+  w = "falling-leaf",
+  Z = ["#61D5B2"],
   Chunk303893 = require("./303893.js"),
   Chunk313226 = require("./313226.js"),
-  q = [Chunk303893, Chunk313226];
+  D = [Chunk303893, Chunk313226];
 
-function X() {
+function M() {
   return require.e("77843").then(require.t.bind(require, 931152, 19)).then(e => {
     let {
       default: t
@@ -199,97 +154,102 @@ function X() {
   })
 }
 
-function Q(e, t) {
-  if (null == e) return "enter";
-  switch (e) {
-    case "enter":
-      return "confetti";
-    case "confetti":
-      if (P.includes(t)) return "leaf_peel";
-      return "exit";
-    case "leaf_peel":
-      return "leaf_fall";
-    case "leaf_fall":
-      return "exit";
-    case "exit":
-      return "enter"
-  }
-}
-
-function J(e, t) {
-  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : w,
-    r = null == e ? true : e.getBoundingClientRect();
-  if (null == r) return {
-    x: 0,
-    y: 0
-  };
-  let i = Z[t].getConfettiPosition(n);
-  return {
-    x: r.left + i.x,
-    y: r.top + i.y
-  }
-}
-
-function $(e, t) {
-  let n = null == e ? true : e.getBoundingClientRect();
-  if (null == n) return {
-    x: 0,
-    y: 0
-  };
-  let r = Z[t];
-  return {
-    x: n.left + r.leafPosition.x,
-    y: n.top + r.leafPosition.y
-  }
-}
-
-function ee(e) {
+function k(e) {
   let {
     onAnimationComplete: t,
     onClick: n,
-    position: o,
-    size: c
-  } = e, u = i.useRef(null), [f, p] = i.useState(null), [h] = i.useState(null != o ? o : H()), {
-    createMultipleConfettiAt: m,
-    confettiCanvas: g
-  } = i.useContext(_.h), [E, b] = i.useState(null), y = (0, s.uR)(g, E), O = Q(f, h), I = P.includes(h), T = I && "exit" === f, S = i.useCallback(e => {
-    p(e)
-  }, []), A = i.useCallback(() => {
-    "exit" === f && (null == t || t())
-  }, [t, f]), N = i.useCallback(e => {
+    position: r,
+    size: a
+  } = e, u = l.useRef(null), [d, m] = l.useState(null), [_] = l.useState(null != r ? r : function() {
+    switch (Math.floor(Math.random() * Object.keys(S).length)) {
+      case 0:
+        return "TOP_LEFT";
+      case 2:
+        return "TOP_RIGHT";
+      case 3:
+        return "BOTTOM_LEFT";
+      default:
+        return "BOTTOM_RIGHT"
+    }
+  }()), {
+    createMultipleConfettiAt: g,
+    confettiCanvas: h
+  } = l.useContext(f.h), [b, E] = l.useState(null), C = (0, s.uR)(h, b), v = function(e, t) {
+    if (null == e) return "enter";
+    switch (e) {
+      case "enter":
+        return "confetti";
+      case "confetti":
+        if (T.includes(t)) return "leaf_peel";
+        return "exit";
+      case "leaf_peel":
+        return "leaf_fall";
+      case "leaf_fall":
+        return "exit";
+      case "exit":
+        return "enter"
+    }
+  }(d, _), O = T.includes(_), x = O && "exit" === d, j = l.useCallback(e => {
+    m(e)
+  }, []), N = l.useCallback(() => {
+    "exit" === d && (null == t || t())
+  }, [t, d]), k = l.useCallback(e => {
     u.current = e
   }, []);
-  return i.useEffect(() => {
-    if ("confetti" === f) {
+  return l.useEffect(() => {
+    if ("confetti" === d) {
       let {
         confettiVelocityDirection: e
-      } = Z[h], t = J(u.current, h, c);
-      m(t.x, t.y, {
+      } = A[_], t = function(e, t) {
+        let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : P,
+          r = null == e ? true : e.getBoundingClientRect();
+        if (null == r) return {
+          x: 0,
+          y: 0
+        };
+        let i = A[t].getConfettiPosition(n);
+        return {
+          x: r.left + i.x,
+          y: r.top + i.y
+        }
+      }(u.current, _, a);
+      g(t.x, t.y, {
         velocity: {
           type: "static-random",
           minValue: {
-            x: M * e.x,
-            y: k * e.y
+            x: 10 * e.x,
+            y: 80 * e.y
           },
           maxValue: {
-            x: j * e.x,
-            y: U * e.y
+            x: 80 * e.x,
+            y: 180 * e.y
           }
         }
       })
     }
-  }, [m, h, f, c]), i.useEffect(() => {
-    if (I && "leaf_fall" === f) {
-      let e = Z[h].leafRotationDirection;
-      y.createConfetti({
-        id: "".concat(F, "-").concat((0, l.Z)()),
+  }, [g, _, d, a]), l.useEffect(() => {
+    if (O && "leaf_fall" === d) {
+      let e = A[_].leafRotationDirection;
+      C.createConfetti({
+        id: "".concat(w, "-").concat((0, c.Z)()),
         position: {
           type: "static",
-          value: $(u.current, h)
+          value: function(e, t) {
+            let n = null == e ? true : e.getBoundingClientRect();
+            if (null == n) return {
+              x: 0,
+              y: 0
+            };
+            let r = A[t];
+            return {
+              x: n.left + r.leafPosition.x,
+              y: n.top + r.leafPosition.y
+            }
+          }(u.current, _)
         },
         size: {
           type: "static",
-          value: Y
+          value: 45
         },
         rotation: {
           type: "linear-random",
@@ -306,135 +266,145 @@ function ee(e) {
           minAddValue: {
             x: 0,
             y: 0,
-            z: G * e
+            z: 8 * e
           },
           maxAddValue: {
             x: 0,
             y: 0,
-            z: B * e
+            z: 12 * e
           }
         }
       }, {
-        sprite: "TOP_LEFT" === h ? K : z
+        sprite: "TOP_LEFT" === _ ? R : L
       })
     }
-  }, [I, y, h, f]), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.Ji, {
-      ref: b,
-      sprites: q,
-      colors: W,
-      spriteWidth: Y,
-      spriteHeight: Y
-    }), (0, r.jsx)(d.P3F, {
+  }, [O, C, _, d]), (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(s.Ji, {
+      ref: E,
+      sprites: D,
+      colors: Z,
+      spriteWidth: 45,
+      spriteHeight: 45
+    }), (0, i.jsx)(p.P3F, {
       onClick: n,
-      className: a()(v.easterEggAnimationClickTarget, {
-        [v.easterEggAnimationClickTargetTopLeft]: "TOP_LEFT" === h,
-        [v.easterEggAnimationClickTargetTopRight]: "TOP_RIGHT" === h,
-        [v.easterEggAnimationClickTargetBottomLeft]: "BOTTOM_LEFT" === h,
-        [v.easterEggAnimationClickTargetBottomRight]: "BOTTOM_RIGHT" === h
+      className: o()(y.easterEggAnimationClickTarget, {
+        [y.easterEggAnimationClickTargetTopLeft]: "TOP_LEFT" === _,
+        [y.easterEggAnimationClickTargetTopRight]: "TOP_RIGHT" === _,
+        [y.easterEggAnimationClickTargetBottomLeft]: "BOTTOM_LEFT" === _,
+        [y.easterEggAnimationClickTargetBottomRight]: "BOTTOM_RIGHT" === _
       }),
-      children: (0, r.jsx)(d.kci, {
-        animationRef: N,
-        className: a()(v.easterEggAnimation, {
-          [v.easterEggAnimationHideLeaf]: T
+      children: (0, i.jsx)(p.kci, {
+        animationRef: k,
+        className: o()(y.easterEggAnimation, {
+          [y.easterEggAnimationHideLeaf]: x
         }),
-        nextScene: O,
-        sceneSegments: C,
-        onScenePlay: S,
-        onSceneComplete: A,
-        importData: X,
+        nextScene: v,
+        sceneSegments: I,
+        onScenePlay: j,
+        onSceneComplete: N,
+        importData: M,
         pauseWhileUnfocused: false
       })
     })]
   })
 }
 
-function et(e) {
+function U(e) {
   let t, {
       message: n,
-      compact: o,
+      compact: r,
       guild: a,
-      usernameHook: s,
-      onClickMessage: l
+      usernameHook: o,
+      onClickMessage: s
     } = e,
-    c = V(n),
-    u = (0, m.Z)(n),
+    c = function(e) {
+      switch (e.type) {
+        case v.uaV.GUILD_BOOST_TIER_1:
+          return v.Eu4.TIER_1;
+        case v.uaV.GUILD_BOOST_TIER_2:
+          return v.Eu4.TIER_2;
+        case v.uaV.GUILD_BOOST_TIER_3:
+          return v.Eu4.TIER_3
+      }
+      return null
+    }(n),
+    u = (0, h.Z)(n),
     {
-      createMultipleConfettiAt: I,
-      addClickListener: T
-    } = i.useContext(_.h),
-    [S, A] = i.useState(false),
-    C = i.useRef(null),
+      createMultipleConfettiAt: d,
+      addClickListener: x
+    } = l.useContext(f.h),
+    [j, I] = l.useState(false),
+    S = l.useRef(null),
     {
-      reducedMotion: R
-    } = i.useContext(d.Sfi),
+      reducedMotion: T
+    } = l.useContext(p.Sfi),
     P = (0, E.ZP)(n),
-    w = P.nick,
-    D = s(P);
+    N = P.nick,
+    A = o(P);
   t = null == c || null == a ? u > 1 ? O.intl.format(O.t.yfC9dn, {
-    username: w,
-    usernameHook: D,
+    username: N,
+    usernameHook: A,
     numSubscriptions: u
   }) : O.intl.format(O.t["57St//"], {
-    username: w,
-    usernameHook: D
+    username: N,
+    usernameHook: A
   }) : u > 1 ? O.intl.format(O.t.PO9uJC, {
-    username: w,
-    usernameHook: D,
+    username: N,
+    usernameHook: A,
     numSubscriptions: u,
     guildName: a.name,
-    newTierName: (0, g.nW)(c)
+    newTierName: (0, b.nW)(c)
   }) : O.intl.format(O.t.cUfTTE, {
-    username: w,
-    usernameHook: D,
+    username: N,
+    usernameHook: A,
     guildName: a.name,
-    newTierName: (0, g.nW)(c)
+    newTierName: (0, b.nW)(c)
   });
-  let L = i.useCallback(() => {
-      if (!R.enabled)
-        if (S || 0 !== Math.floor(Math.random() * N)) {
+  let Z = l.useCallback(() => {
+      if (!T.enabled)
+        if (j || 0 !== Math.floor(50 * Math.random())) {
           var e;
-          let t = null == (e = C.current) ? true : e.getBoundingClientRect();
+          let t = null == (e = S.current) ? true : e.getBoundingClientRect();
           if (null == t) return;
-          I(t.left + t.width / 2, t.top + t.height / 2)
-        } else A(true)
-    }, [I, R, S]),
-    x = i.useCallback(() => {
-      A(false)
+          d(t.left + t.width / 2, t.top + t.height / 2)
+        } else I(true)
+    }, [d, T, j]),
+    R = l.useCallback(() => {
+      I(false)
     }, []),
-    M = i.useCallback(() => {
-      (0, h.AI)({
+    L = l.useCallback(() => {
+      (0, g.AI)({
         settingsVisible: true
-      }), f.Z.open(y.oAB.POGGERMODE), A(false)
+      }), m.Z.open(v.oAB.POGGERMODE), I(false)
     }, []),
-    j = i.useCallback((e, t) => {
-      (null == t ? true : t.id.startsWith(F)) && M()
-    }, [M]);
-  i.useEffect(() => T(j));
-  let k = (0, r.jsx)(d.P3F, {
-    className: v.iconWrapper,
-    innerRef: C,
-    onClick: l,
-    children: (0, r.jsx)(d.$Eu, {
-      color: d.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-      className: v.icon,
-      onMouseEnter: L
+    D = l.useCallback((e, t) => {
+      (null == t ? true : t.id.startsWith(w)) && L()
+    }, [L]);
+  l.useEffect(() => x(D));
+  let M = (0, i.jsx)(p.P3F, {
+    className: y.iconWrapper,
+    innerRef: S,
+    onClick: s,
+    children: (0, i.jsx)(p.$Eu, {
+      color: p.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
+      className: y.icon,
+      onMouseEnter: Z
     })
   });
-  return (0, r.jsxs)(b.Z, {
-    iconNode: k,
+  return (0, i.jsxs)(C.Z, {
+    iconNode: M,
     timestamp: n.timestamp,
-    compact: o,
-    children: [(0, r.jsx)("div", {
-      onClick: l,
-      className: v.message,
+    compact: r,
+    children: [(0, i.jsx)("div", {
+      onClick: s,
+      className: y.message,
       children: t
-    }), S ? (0, r.jsx)(p.ZP, {
-      children: (0, r.jsx)("div", {
-        className: v.cannonWrapper,
-        children: (0, r.jsx)(ee, {
-          onAnimationComplete: x,
-          onClick: M
+    }), j ? (0, i.jsx)(_.ZP, {
+      children: (0, i.jsx)("div", {
+        className: y.cannonWrapper,
+        children: (0, i.jsx)(k, {
+          onAnimationComplete: R,
+          onClick: L
         })
       })
     }) : null]

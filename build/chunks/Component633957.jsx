@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 633957, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 633957, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => F
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -40,120 +39,131 @@ var Chunk255367 = require("./255367.js"),
   Chunk701488 = require("./701488.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk853392 = require("./853392.js");
-
-function G(e) {
-  var t, n, o, l;
+let U = Chunk73800.memo(e => {
+  let {
+    start: t
+  } = e, [n, r] = i.useState(0), l = (0, Z.n)(), a = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), c = false === l || a;
+  return i.useEffect(() => {
+    let e = new s.Xp;
+    return e.start(c ? 15 * A.Z.Millis.SECOND : A.Z.Millis.SECOND, () => {
+      r((new Date().getTime() - t) / A.Z.Millis.SECOND)
+    }), () => e.stop()
+  }, [c, t]), (0, y.m)(n)
+});
+U.displayName = "ActivityRuntimeCounter";
+let F = Chunk73800.memo(function(e) {
+  var t, n, l, s;
   let d, {
-      application: I,
-      channelId: w,
-      guildId: L
+      application: y,
+      channelId: A,
+      guildId: Z
     } = e,
     {
-      analyticsLocations: G
-    } = (0, g.ZP)(m.Z.ACTIVITY_INSTANCE_EMBED),
-    Z = (0, u.O)(),
-    F = (0, s.e7)([A.Z], () => A.Z.getChannel(w), [w]),
-    V = (null == F || null == (t = F.isThread) ? true : t.call(F)) ? null == F ? true : F.parent_id : w,
-    H = (0, s.e7)([S.default], () => S.default.getId()),
+      analyticsLocations: F
+    } = (0, h.ZP)(g.Z.ACTIVITY_INSTANCE_EMBED),
+    B = (0, u.O)(),
+    G = (0, o.e7)([I.Z], () => I.Z.getChannel(A), [A]),
+    H = (null == G || null == (t = G.isThread) ? true : t.call(G)) ? null == G ? true : G.parent_id : A,
+    V = (0, o.e7)([j.default], () => j.default.getId()),
     {
-      embeddedActivity: Y,
+      embeddedActivity: z,
       currentEmbeddedActivity: W,
-      activityLaunchState: K
-    } = (0, s.cj)([f.ZP], () => ({
-      embeddedActivity: f.ZP.getEmbeddedActivitiesForChannel(null != V ? V : "").find(e => e.applicationId === I.id),
-      currentEmbeddedActivity: f.ZP.getCurrentEmbeddedActivity(),
-      activityLaunchState: f.ZP.getLaunchState(I.id, null != V ? V : true)
-    }), [V, I.id]),
-    z = null == Y ? true : Y.userIds,
-    q = (0, s.Wu)([C.default], () => Array.from(null != z ? z : []).map(e => C.default.getUser(e)).filter(D.lm), [z]),
-    X = (0, s.e7)([N.Z], () => {
-      if (null == z) return null;
-      for (let e of z) {
-        let t = N.Z.findActivity(e, e => e.application_id === I.id);
+      activityLaunchState: Y
+    } = (0, o.cj)([p.ZP], () => ({
+      embeddedActivity: p.ZP.getEmbeddedActivitiesForChannel(null != H ? H : "").find(e => e.applicationId === y.id),
+      currentEmbeddedActivity: p.ZP.getCurrentEmbeddedActivity(),
+      activityLaunchState: p.ZP.getLaunchState(y.id, null != H ? H : true)
+    }), [H, y.id]),
+    K = null == z ? true : z.userIds,
+    X = (0, o.Wu)([T.default], () => Array.from(null != K ? K : []).map(e => T.default.getUser(e)).filter(w.lm), [K]),
+    q = (0, o.e7)([S.Z], () => {
+      if (null == K) return null;
+      for (let e of K) {
+        let t = S.Z.findActivity(e, e => e.application_id === y.id);
         if (null != t) return t
       }
       return null
-    }, [I.id, z]),
-    Q = null == X ? true : X.details,
+    }, [y.id, K]),
+    Q = null == q ? true : q.details,
     J = i.useMemo(() => {
-      let e = new T.ZP(I);
-      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = j.wT), e
-    }, [I]),
-    $ = (0, h.s5)({
-      userId: H,
-      channelId: w,
+      let e = new x.ZP(y);
+      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = D.wT), e
+    }, [y]),
+    $ = (0, _.s5)({
+      userId: V,
+      channelId: A,
       application: J
     }),
-    ee = null == Y,
-    et = (0, x.NL)({
-      embeddedActivity: Y,
+    ee = null == z,
+    et = (0, R.NL)({
+      embeddedActivity: z,
       joinability: $,
       currentEmbeddedActivity: W,
-      channel: F
+      channel: G
     }),
     en = i.useId(),
-    er = null != K && K.isLaunching && K.componentId === en,
+    er = null != Y && Y.isLaunching && Y.componentId === en,
     ei = async () => {
-      R.default.track(M.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
-        application_id: I.id,
-        channel_id: w,
-        channel_type: null == F ? true : F.type,
+      P.default.track(L.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+        application_id: y.id,
+        channel_id: A,
+        channel_type: null == G ? true : G.type,
         is_activity_start: ee,
         cta: "Play"
-      }), ee ? await (0, p.Z)({
-        targetApplicationId: I.id,
-        channelId: w,
-        locationObject: Z.location,
-        analyticsLocations: G,
+      }), ee ? await (0, f.Z)({
+        targetApplicationId: y.id,
+        channelId: A,
+        locationObject: B.location,
+        analyticsLocations: F,
         componentId: en,
-        commandOrigin: E.bB.ACTIVITY_INSTANCE_EMBED
-      }) : await (0, _.Z)({
-        applicationId: Y.applicationId,
-        activityChannelId: w,
-        locationObject: Z.location,
-        analyticsLocations: G,
+        commandOrigin: b.bB.ACTIVITY_INSTANCE_EMBED
+      }) : await (0, m.Z)({
+        applicationId: z.applicationId,
+        activityChannelId: A,
+        locationObject: B.location,
+        analyticsLocations: F,
         componentId: en
       })
-    }, eo = et.disabled ? k.intl.string(k.t.JBnc7O) : k.intl.string(k.t.cX9uLS), ea = (0, v.G)(J, () => {
-      R.default.track(M.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
-        application_id: I.id,
-        channel_id: w,
-        channel_type: null == F ? true : F.type,
+    }, el = et.disabled ? M.intl.string(M.t.JBnc7O) : M.intl.string(M.t.cX9uLS), ea = (0, O.G)(J, () => {
+      P.default.track(L.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+        application_id: y.id,
+        channel_id: A,
+        channel_type: null == G ? true : G.type,
         cta: "View"
       })
-    }), es = P.ZP.getApplicationIconURL({
-      id: I.id,
-      icon: I.icon,
-      bot: I.bot
+    }), eo = N.ZP.getApplicationIconURL({
+      id: y.id,
+      icon: y.icon,
+      bot: y.bot
     });
-  et.disabled && (d = null != (o = et.tooltip) ? o : et.text);
-  let el = q.length,
-    ec = null != (l = null == X || null == (n = X.timestamps) ? true : n.start) ? l : null == X ? true : X.created_at,
-    eu = (0, y.r)(X),
+  et.disabled && (d = null != (l = et.tooltip) ? l : et.text);
+  let es = X.length,
+    ec = null != (s = null == q || null == (n = q.timestamps) ? true : n.start) ? s : null == q ? true : q.created_at,
+    eu = (0, C.r)(q),
     ed = [{
-      label: ee ? k.intl.string(k.t.RscU7O) : k.intl.string(k.t.VJlc0d),
-      trackingArea: O.j_.PLAY,
+      label: ee ? M.intl.string(M.t.RscU7O) : M.intl.string(M.t.VJlc0d),
+      trackingArea: v.j_.PLAY,
       onClick: ei,
       disabledReason: d,
       submitting: er
     }];
-  return (0, r.jsx)(b.W, {
-    header: k.intl.string(k.t.pkq6Vl),
-    title: I.name,
-    iconSrc: es,
+  return (0, r.jsx)(E.W, {
+    header: M.intl.string(M.t.pkq6Vl),
+    title: y.name,
+    iconSrc: eo,
     info: (0, r.jsx)("div", {
-      className: U.infoWrapper,
+      className: k.infoWrapper,
       children: ee ? (0, r.jsx)(c.Text, {
         variant: "text-xs/medium",
         color: "none",
-        children: eo
+        children: el
       }) : (0, r.jsxs)(r.Fragment, {
         children: [null != Q && (0, r.jsxs)("div", {
-          className: U.activityPresenceDetailsContainer,
+          className: k.activityPresenceDetailsContainer,
           children: [null != ec && (0, r.jsxs)("div", {
-            className: U.activityPresenceDetailsItemContainer,
+            className: k.activityPresenceDetailsItemContainer,
             children: [(0, r.jsx)("div", {
-              className: U.activityPresenceDetailsItemIconContainer,
+              className: k.activityPresenceDetailsItemIconContainer,
               children: (0, r.jsx)(eu.Icon, {
                 size: "xxs",
                 color: "currentColor"
@@ -161,12 +171,12 @@ function G(e) {
             }), (0, r.jsx)(c.Text, {
               variant: "text-xs/medium",
               color: "none",
-              children: (0, r.jsx)(B, {
+              children: (0, r.jsx)(U, {
                 start: ec
               })
             })]
           }), (0, r.jsxs)("div", {
-            className: a()(U.activityPresenceDetailsItemContainer, U.truncatesText),
+            className: a()(k.activityPresenceDetailsItemContainer, k.truncatesText),
             children: [(0, r.jsx)("div", {
               children: (0, r.jsx)(c.hH0, {
                 size: "xxs",
@@ -179,9 +189,9 @@ function G(e) {
               children: Q
             })]
           })]
-        }), el > 0 && (0, r.jsx)(y.K, {
-          activityUsers: q,
-          guildId: L,
+        }), es > 0 && (0, r.jsx)(C.K, {
+          activityUsers: X,
+          guildId: Z,
           activityText: eu.text
         })]
       })
@@ -189,21 +199,8 @@ function G(e) {
     actions: ed,
     onClickContent: ea,
     trackingConfig: {
-      id: I.id,
-      linkType: O.Un.ACTIVITY_INSTANCE
+      id: y.id,
+      linkType: v.Un.ACTIVITY_INSTANCE
     }
   })
-}
-let B = Chunk73800.memo(e => {
-  let {
-    start: t
-  } = e, [n, r] = i.useState(0), o = (0, L.n)(), a = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === o || a;
-  return i.useEffect(() => {
-    let e = new l.Xp;
-    return e.start(c ? 15 * w.Z.Millis.SECOND : w.Z.Millis.SECOND, () => {
-      r((new Date().getTime() - t) / w.Z.Millis.SECOND)
-    }), () => e.stop()
-  }, [c, t]), (0, I.m)(n)
-});
-B.displayName = "ActivityRuntimeCounter";
-let Z = Chunk73800.memo(G)
+})

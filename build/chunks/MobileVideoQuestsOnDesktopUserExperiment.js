@@ -2,13 +2,13 @@
 /** chunk id: 530691, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => a,
+  S: () => o,
   f: () => s
 });
 var Chunk73800 = require("./73800.js"),
   Chunk818083 = require("./818083.js"),
   Chunk46140 = require("./46140.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   id: "2025-08_mobile_video_quests_on_desktop",
   kind: "user",
   label: "Mobile Video Quests on Desktop",
@@ -37,8 +37,8 @@ function s(e) {
   let {
     location: t,
     questFeatures: n
-  } = e, i = r.useMemo(() => n.includes(o.S7.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE), [n]);
-  return a.useExperiment({
+  } = e, i = r.useMemo(() => n.includes(a.S7.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE), [n]);
+  return o.useExperiment({
     location: t
   }, {
     autoTrackExposure: i

@@ -13,11 +13,11 @@ function s(e) {
   let {
     activity: t,
     user: n
-  } = e, s = (0, r.e7)([o.Z], () => {
-    o.Z.getMatchingInboxEntry({
+  } = e, s = (0, r.e7)([a.Z], () => {
+    a.Z.getMatchingInboxEntry({
       activity: t,
       userId: n.id,
-      feedId: a.YN.GLOBAL_FEED
+      feedId: o.YN.GLOBAL_FEED
     })
   }, [t, n.id]), l = (0, r.e7)([i.Z], () => i.Z.getMatchingOutboxEntry({
     activity: t,

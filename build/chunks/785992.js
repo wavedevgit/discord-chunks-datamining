@@ -1,24 +1,22 @@
-/** Chunk was on web.js **/
-/** chunk id: 785992, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 53937 **/
+/** chunk id: 785992, original params: e,l,t (module,exports,require) **/
 require.d(exports, {
-  E: () => a,
+  E: () => i,
   Z: () => s
 });
 var Chunk729594 = require("./729594.js"),
   Chunk981631 = require("./981631.js");
-let o = "open.spotify.com";
 
-function a(e) {
-  return null != e && e === o
+function i(e) {
+  return null != e && "open.spotify.com" === e
 }
 
 function s(e) {
-  var t;
-  if (null == e.url || (null == (t = e.provider) ? true : t.name) !== "Spotify" || e.type !== i.hBH.LINK) returnfalse;
+  var l;
+  if (null == e.url || (null == (l = e.provider) ? true : l.name) !== "Spotify" || e.type !== n.hBH.LINK) returnfalse;
   try {
-    let t = r.parse(e.url, true).host;
-    return a(t)
+    let l = r.parse(e.url, true).host;
+    return i(l)
   } catch (e) {
     returnfalse
   }

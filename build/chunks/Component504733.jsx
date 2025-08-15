@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 504733, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 504733, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -18,13 +17,13 @@ function u(e) {
     message: t,
     channel: n,
     compact: u
-  } = e, d = (0, o.ZP)(t), f = t.application, _ = (0, a.l)({
+  } = e, d = (0, l.ZP)(t), p = t.application, m = (0, a.l)({
     user: t.author,
     channelId: n.id,
     guildId: n.guild_id,
     messageId: t.id
   });
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(o.Z, {
     iconNode: (0, r.jsx)(i.Prq, {
       size: "md",
       color: "currentColor",
@@ -32,10 +31,10 @@ function u(e) {
     }),
     timestamp: t.timestamp,
     compact: u,
-    children: (0, l.A)({
-      application: f,
+    children: (0, s.A)({
+      application: p,
       username: d.nick,
-      usernameHook: _(d)
+      usernameHook: m(d)
     })
   })
 }

@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./35282.js"), require("./539854.js"), require("./583741.js");
 var Chunk765085 = require("./765085.js"),
   Chunk937490 = require("./937490.js"),
-  o = require.n(Chunk937490),
+  a = require.n(Chunk937490),
   Chunk78650 = require("./78650.js"),
   s = require.n(Chunk78650),
   Chunk505444 = require("./505444.js"),
@@ -55,8 +55,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -105,8 +105,8 @@ function v(e, t, n) {
 function I(e, t) {
   let n, {
       toValueMin: i,
-      toValueMax: o,
-      tension: a = 0,
+      toValueMax: a,
+      tension: o = 0,
       friction: s = 0,
       loop: l,
       reverse: c,
@@ -120,10 +120,10 @@ function I(e, t) {
     b = p(t, ["toValueMin", "toValueMax", "tension", "friction", "loop", "reverse", "invert", "callback", "type", "shouldLoop", "durationMin", "durationMax"]),
     y = e._value,
     O = v(t.duration, g, E),
-    T = v(t.toValue, i, o),
+    T = v(t.toValue, i, a),
     S = r[h](e, _(d({}, b), {
       toValue: T,
-      tension: a,
+      tension: o,
       friction: s,
       duration: O
     })),
@@ -132,7 +132,7 @@ function I(e, t) {
     let i = v(t.duration, g, E);
     n = r[h](e, _(d({}, b), {
       toValue: c ? y : -T,
-      tension: a,
+      tension: o,
       friction: s,
       duration: i
     })), A = r.sequence([S, n])
@@ -154,7 +154,7 @@ let S = {
     CLAMP: "clamp"
   },
   A = _(d({}, Chunk765085), {
-    Easing: o(),
+    Easing: a(),
     accelerate: O,
     animate: I,
     interpolate: T,

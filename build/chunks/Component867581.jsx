@@ -1,8 +1,8 @@
 /** Chunk was on 24209 **/
 /** chunk id: 867581, original params: e,t,n (module,exports,require) **/
-let r, o;
+let r, i;
 require.d(exports, {
-  Z: () => L
+  Z: () => h
 }), require("./388685.js"), require("./781311.js"), require("./35282.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -21,11 +21,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk604509 = require("./604509.js"),
   Chunk216019 = require("./216019.js"),
   Chunk286359 = require("./286359.js");
-let S = "hTKzmak",
-  C = (0, Chunk313201.hQ)(),
-  g = (r = window.GLOBAL_ENV.INVITE_HOST, o = "", null == r && (r = location.host, o = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(o, "/")),
-  x = [S, "".concat(g).concat(S), "".concat(g).concat("wumpus-friends")],
-  h = e => {
+let C = "hTKzmak",
+  b = (0, Chunk313201.hQ)(),
+  g = (r = window.GLOBAL_ENV.INVITE_HOST, i = "", null == r && (r = location.host, i = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(i, "/")),
+  L = [C, "".concat(g).concat(C), "".concat(g).concat("wumpus-friends")],
+  D = e => {
     let {
       onClick: t
     } = e;
@@ -39,7 +39,7 @@ let S = "hTKzmak",
         height: 40,
         className: E.rowIcon,
         alt: "",
-        src: b
+        src: O
       }), (0, l.jsxs)("div", {
         children: [(0, l.jsx)(u.X6q, {
           className: E.rowText,
@@ -53,26 +53,26 @@ let S = "hTKzmak",
       }), (0, l.jsx)("img", {
         className: E.rowArrow,
         alt: "",
-        src: O
+        src: S
       })]
     })
   };
 
-function L(e) {
+function h(e) {
   let {
     onBack: t,
     onClose: n,
     isSlideReady: r
-  } = e, [o, a] = i.useState(""), [p, f] = i.useState(false), [N, O] = i.useState(null), b = i.useRef(null);
-  i.useEffect(() => {
+  } = e, [i, a] = o.useState(""), [p, f] = o.useState(false), [N, S] = o.useState(null), O = o.useRef(null);
+  o.useEffect(() => {
     var e;
-    r && (null == (e = b.current) || e.focus())
+    r && (null == (e = O.current) || e.focus())
   }, [r]);
-  let L = e => {
+  let h = e => {
     e.preventDefault();
-    let t = o.trim();
-    if ("" === t) return void O(T.intl.string(T.t.IRq5am));
-    O(null), f(true);
+    let t = i.trim();
+    if ("" === t) return void S(T.intl.string(T.t.IRq5am));
+    S(null), f(true);
     let r = t.split("/"),
       l = r[r.length - 1];
     _.ZP.resolveInvite(l, "Join Guild", {
@@ -81,7 +81,7 @@ function L(e) {
       let {
         invite: t
       } = e;
-      if (f(false), null == t) return void O(T.intl.string(T.t["GEYI+f"]));
+      if (f(false), null == t) return void S(T.intl.string(T.t["GEYI+f"]));
       if (null != t.channel) {
         let e = _.ZP.getInviteContext("Join Guild", t);
         _.ZP.acceptInvite({
@@ -91,13 +91,13 @@ function L(e) {
             n(), _.ZP.transitionToInvite(e)
           }
         }).then(() => {}, e => {
-          e instanceof d.yZ || e instanceof d.Hx ? O((0, I.O)(e.code)) : O(T.intl.string(T.t.dDZRd3))
+          e instanceof d.yZ || e instanceof d.Hx ? S((0, I.O)(e.code)) : S(T.intl.string(T.t.dDZRd3))
         })
       }
     }, e => {
       f(false);
       let t = new d.yZ(e);
-      O((0, I.O)(t.code))
+      S((0, I.O)(t.code))
     })
   };
   return (0, l.jsxs)("div", {
@@ -120,11 +120,11 @@ function L(e) {
     }), (0, l.jsxs)(u.hzk, {
       className: E.__invalid_content,
       children: [(0, l.jsx)("form", {
-        onSubmit: L,
+        onSubmit: h,
         className: E.inputForm,
         children: (0, l.jsxs)(u.xJW, {
           children: [(0, l.jsx)(u.vwX, {
-            id: C,
+            id: b,
             error: N,
             className: s()(E.formTitle, {
               [E.error]: null != N
@@ -132,24 +132,24 @@ function L(e) {
             required: true,
             children: T.intl.string(T.t.qreV29)
           }), (0, l.jsx)(u.oil, {
-            value: o,
+            value: i,
             onChange: a,
-            placeholder: "".concat(g).concat(S),
-            inputRef: b,
+            placeholder: "".concat(g).concat(C),
+            inputRef: O,
             required: true,
-            "aria-labelledby": C
+            "aria-labelledby": b
           })]
         })
       }), (0, l.jsx)(u.xJW, {
         title: T.intl.string(T.t.Bnq46O),
         titleClassName: E.formTitle,
         className: E.examplesForm,
-        children: x.map(e => (0, l.jsx)(u.P3F, {
+        children: L.map(e => (0, l.jsx)(u.P3F, {
           className: E.sampleLink,
           onClick: () => a(e),
           children: e
         }, e))
-      }), (0, l.jsx)(h, {
+      }), (0, l.jsx)(D, {
         onClick: n
       })]
     }), (0, l.jsxs)(u.mzw, {
@@ -158,7 +158,7 @@ function L(e) {
         variant: "primary",
         text: T.intl.string(T.t["Ts/9AQ"]),
         loading: p,
-        onClick: L
+        onClick: h
       }), (0, l.jsx)(c.zx, {
         color: c.zx.Colors.PRIMARY,
         look: c.zx.Looks.LINK,

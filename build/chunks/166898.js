@@ -1,26 +1,26 @@
-/** Chunk was on web.js **/
-/** chunk id: 166898, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 166898, original params: t,e,r (module,exports,require) **/
 "use strict";
 
-function r(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
+function n(t, e, r) {
+  return e in t ? Object.defineProperty(t, e, {
+    value: r,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = n, e
+  }) : t[e] = r, t
 }
 var Chunk746117 = require("./746117.js"),
   Chunk856084 = require("./856084.js"),
   Chunk581079 = require("./581079.js");
 module.exports = function() {
-  function e(e) {
-    r(this, "_defaultDir", true), r(this, "_lastDir", true), e ? o.isStrong(e) || a(false) : e = o.getGlobalDir(), this._defaultDir = e, this.reset()
+  function t(t) {
+    n(this, "_defaultDir", true), n(this, "_lastDir", true), t ? o.isStrong(t) || a(false) : t = o.getGlobalDir(), this._defaultDir = t, this.reset()
   }
-  var t = module.prototype;
+  var e = module.prototype;
   return exports.reset = function() {
     this._lastDir = this._defaultDir
-  }, exports.getDirection = function(e) {
-    return this._lastDir = i.getDirection(e, this._lastDir), this._lastDir
+  }, exports.getDirection = function(t) {
+    return this._lastDir = i.getDirection(t, this._lastDir), this._lastDir
   }, module
 }()

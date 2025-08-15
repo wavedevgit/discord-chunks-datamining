@@ -1,10 +1,10 @@
-/** Chunk was on 1355 **/
-/** chunk id: 987707, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 78079 **/
+/** chunk id: 987707, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => F
+  Z: () => R
 }), require("./583741.js"), require("./539854.js"), require("./388685.js"), require("./290780.js");
-var r, l, Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
+var n, r, Chunk392711 = require("./392711.js"),
+  i = require.n(Chunk392711),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -15,221 +15,221 @@ var r, l, Chunk392711 = require("./392711.js"),
   Chunk485386 = require("./485386.js"),
   Chunk430824 = require("./430824.js"),
   Chunk981631 = require("./981631.js");
-let I = Chunk149765.$e(Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.BAN_MEMBERS, Chunk981631.Plq.ADMINISTRATOR, Chunk981631.Plq.MANAGE_CHANNELS, Chunk981631.Plq.MANAGE_GUILD, Chunk981631.Plq.MANAGE_MESSAGES, Chunk981631.Plq.MANAGE_NICKNAMES, Chunk981631.Plq.MANAGE_ROLES, Chunk981631.Plq.MANAGE_WEBHOOKS, Chunk981631.Plq.MANAGE_GUILD_EXPRESSIONS, Chunk981631.Plq.MOVE_MEMBERS, Chunk981631.Plq.MUTE_MEMBERS, Chunk981631.Plq.DEAFEN_MEMBERS),
-  g = null,
-  N = [],
-  h = [],
-  f = [],
-  O = [],
+let E = Chunk149765.$e(Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.BAN_MEMBERS, Chunk981631.Plq.ADMINISTRATOR, Chunk981631.Plq.MANAGE_CHANNELS, Chunk981631.Plq.MANAGE_GUILD, Chunk981631.Plq.MANAGE_MESSAGES, Chunk981631.Plq.MANAGE_NICKNAMES, Chunk981631.Plq.MANAGE_ROLES, Chunk981631.Plq.MANAGE_WEBHOOKS, Chunk981631.Plq.MANAGE_GUILD_EXPRESSIONS, Chunk981631.Plq.MOVE_MEMBERS, Chunk981631.Plq.MUTE_MEMBERS, Chunk981631.Plq.DEAFEN_MEMBERS),
+  C = null,
+  B = [],
+  w = [],
+  D = [],
+  M = [],
   p = [],
-  R = [],
-  S = [],
-  C = [],
-  D = true,
-  L = false,
-  U = false,
-  M = true,
-  v = false,
-  b = null,
-  x = Chunk981631.rsA.ALL,
-  P = null,
-  j = {},
-  y = 0;
+  I = [],
+  H = [],
+  b = [],
+  O = true,
+  Q = false,
+  P = false,
+  j = true,
+  V = false,
+  m = null,
+  T = Chunk981631.rsA.ALL,
+  y = null,
+  L = {},
+  x = 0;
 
-function w(e) {
-  let t = [],
-    n = 0;
-  return e.reverse().forEach(e => {
-    var r, l, i;
+function N(A) {
+  let e = [],
+    t = 0;
+  return A.reverse().forEach(A => {
+    var n, r, l;
     let a = [],
+      s = null,
       o = null,
-      u = null,
-      d = null;
-    if (null != e.reason && a.push(new c.ms(m.zUn.REASON, null, e.reason)), null != e.changes)
-      for (let t of e.changes) {
-        let e = new c.ms(t.key, t.old_value, t.new_value);
-        a.push(e), e.key === m.zUn.NAME ? o = e : e.key === m.zUn.TYPE ? d = e : e.key === m.zUn.TITLE && (u = e)
+      f = null;
+    if (null != A.reason && a.push(new g.ms(d.zUn.REASON, null, A.reason)), null != A.changes)
+      for (let e of A.changes) {
+        let A = new g.ms(e.key, e.old_value, e.new_value);
+        a.push(A), A.key === d.zUn.NAME ? s = A : A.key === d.zUn.TYPE ? f = A : A.key === d.zUn.TITLE && (o = A)
       }
-    if (e.action_type === m.rsA.MEMBER_PRUNE) {
-      let t = null != e && null != e.options && null != e.options.delete_member_days ? e.options.delete_member_days : 1,
-        n = new c.ms(m.zUn.PRUNE_DELETE_DAYS, null, t);
-      a.push(n)
+    if (A.action_type === d.rsA.MEMBER_PRUNE) {
+      let e = null != A && null != A.options && null != A.options.delete_member_days ? A.options.delete_member_days : 1,
+        t = new g.ms(d.zUn.PRUNE_DELETE_DAYS, null, e);
+      a.push(t)
     }
-    e.action_type === m.rsA.AUTO_MODERATION_BLOCK_MESSAGE && (null == (l = e.options) ? true : l.auto_moderation_rule_name) != null && a.push(new c.ms(m.zUn.AUTO_MODERATION_TRIGGERED_RULE_NAME, null, e.options.auto_moderation_rule_name)), e.action_type === m.rsA.VOICE_CHANNEL_STATUS_CREATE && (null == (r = e.options) ? true : r.status) != null && a.push(new c.ms(m.zUn.STATUS, null, e.options.status));
-    let _ = new c.ZP({
-        id: e.id,
-        action: e.action_type,
-        targetId: e.target_id,
-        userId: e.user_id,
+    A.action_type === d.rsA.AUTO_MODERATION_BLOCK_MESSAGE && (null == (r = A.options) ? true : r.auto_moderation_rule_name) != null && a.push(new g.ms(d.zUn.AUTO_MODERATION_TRIGGERED_RULE_NAME, null, A.options.auto_moderation_rule_name)), A.action_type === d.rsA.VOICE_CHANNEL_STATUS_CREATE && (null == (n = A.options) ? true : n.status) != null && a.push(new g.ms(d.zUn.STATUS, null, A.options.status));
+    let v = new g.ZP({
+        id: A.id,
+        action: A.action_type,
+        targetId: A.target_id,
+        userId: A.user_id,
         changes: a,
-        options: e.options
+        options: A.options
       }),
-      A = t[0];
-    if (function(e, t, n) {
-        let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 30,
-          l = arguments.length > 4 && true !== arguments[4] ? arguments[4] : 50;
-        return null != e && e.action === t.action && e.targetId === t.targetId && e.userId === t.userId && s().isEqual(e.options, t.options) && t.timestampStart.diff(e.timestampStart, "minutes") < r && n < l && t.targetType !== m.KFR.INVITE && t.action !== m.rsA.MESSAGE_DELETE && t.action !== m.rsA.MESSAGE_BULK_DELETE && t.action !== m.rsA.MESSAGE_PIN && t.action !== m.rsA.MESSAGE_UNPIN && t.action !== m.rsA.MEMBER_MOVE && t.action !== m.rsA.MEMBER_DISCONNECT && t.action !== m.rsA.BOT_ADD && t.action !== m.rsA.APPLICATION_COMMAND_PERMISSION_UPDATE && t.action !== m.rsA.MEMBER_PRUNE
-      }(A, _, n)) {
-      t[0] = A.merge({
-        changes: [...A.changes, ..._.changes],
-        timestampEnd: _.timestampStart
-      }), n++;
+      u = e[0];
+    if (function(A, e, t) {
+        let n = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 30,
+          r = arguments.length > 4 && true !== arguments[4] ? arguments[4] : 50;
+        return null != A && A.action === e.action && A.targetId === e.targetId && A.userId === e.userId && i().isEqual(A.options, e.options) && e.timestampStart.diff(A.timestampStart, "minutes") < n && t < r && e.targetType !== d.KFR.INVITE && e.action !== d.rsA.MESSAGE_DELETE && e.action !== d.rsA.MESSAGE_BULK_DELETE && e.action !== d.rsA.MESSAGE_PIN && e.action !== d.rsA.MESSAGE_UNPIN && e.action !== d.rsA.MEMBER_MOVE && e.action !== d.rsA.MEMBER_DISCONNECT && e.action !== d.rsA.BOT_ADD && e.action !== d.rsA.APPLICATION_COMMAND_PERMISSION_UPDATE && e.action !== d.rsA.MEMBER_PRUNE
+      }(u, v, t)) {
+      e[0] = u.merge({
+        changes: [...u.changes, ...v.changes],
+        timestampEnd: v.timestampStart
+      }), t++;
       return
     }
-    if (_.actionType === m.vB8.DELETE && (null != o || null != u)) {
-      let e = null != (i = null == o ? true : o.oldValue) ? i : null == u ? true : u.oldValue;
-      (_.targetType === m.KFR.CHANNEL || _.targetType === m.KFR.CHANNEL_OVERWRITE) && null !== d && (0, E.r8)(d.oldValue) && (e = "#".concat(e)), null == j[_.targetType] ? j[_.targetType] = {
-        [_.targetId]: e
-      } : j[_.targetType][_.targetId] = e
+    if (v.actionType === d.vB8.DELETE && (null != s || null != o)) {
+      let A = null != (l = null == s ? true : s.oldValue) ? l : null == o ? true : o.oldValue;
+      (v.targetType === d.KFR.CHANNEL || v.targetType === d.KFR.CHANNEL_OVERWRITE) && null !== f && (0, c.r8)(f.oldValue) && (A = "#".concat(A)), null == L[v.targetType] ? L[v.targetType] = {
+        [v.targetId]: A
+      } : L[v.targetType][v.targetId] = A
     }
-    n = 0, t.unshift(_)
-  }), t
+    t = 0, e.unshift(v)
+  }), e
 }
 
-function G(e) {
+function Z(A) {
   let {
-    section: t
-  } = e;
-  if (t !== m.pNK.AUDIT_LOG) returnfalse;
-  let n = _.ZP.getMembers(g),
-    r = T.Z.getGuild(g),
-    l = null != g ? A.Z.getUnsafeMutableRoles(g) : true;
-  f = s()(n).filter(e => e.roles.some(t => {
-    if (null != r) {
-      if (e.userId === r.ownerId) returntrue;
-      let n = null == l ? true : l[t];
-      return null != n && (0, d._N)(n, I)
+    section: e
+  } = A;
+  if (e !== d.pNK.AUDIT_LOG) returnfalse;
+  let t = v.ZP.getMembers(C),
+    n = h.Z.getGuild(C),
+    r = null != C ? u.Z.getUnsafeMutableRoles(C) : true;
+  D = i()(t).filter(A => A.roles.some(e => {
+    if (null != n) {
+      if (A.userId === n.ownerId) returntrue;
+      let t = null == r ? true : r[e];
+      return null != t && (0, f._N)(t, E)
     }
-  })).map(e => e.userId).value()
+  })).map(A => A.userId).value()
 }
-class k extends(r = Chunk442837.ZP.Store) {
+class S extends(n = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk485386.Z, Chunk271383.ZP)
   }
   get logs() {
-    return N
+    return B
   }
   get integrations() {
-    return h
+    return w
   }
   get webhooks() {
-    return O
+    return M
   }
   get guildScheduledEvents() {
     return p
   }
   get automodRules() {
-    return R
+    return I
   }
   get threads() {
-    return S
+    return H
   }
   get applicationCommands() {
-    return C
-  }
-  get isInitialLoading() {
-    return D
-  }
-  get isLoading() {
-    return L
-  }
-  get isLoadingNextPage() {
-    return U
-  }
-  get hasOlderLogs() {
-    return M
-  }
-  get hasError() {
-    return v
-  }
-  get userIds() {
-    return f
-  }
-  get userIdFilter() {
     return b
   }
-  get targetIdFilter() {
+  get isInitialLoading() {
+    return O
+  }
+  get isLoading() {
+    return Q
+  }
+  get isLoadingNextPage() {
     return P
   }
-  get actionFilter() {
-    return x
-  }
-  get deletedTargets() {
+  get hasOlderLogs() {
     return j
   }
-  get groupedFetchCount() {
+  get hasError() {
+    return V
+  }
+  get userIds() {
+    return D
+  }
+  get userIdFilter() {
+    return m
+  }
+  get targetIdFilter() {
     return y
   }
-}(l = "displayName") in k ? Object.defineProperty(k, l, {
+  get actionFilter() {
+    return T
+  }
+  get deletedTargets() {
+    return L
+  }
+  get groupedFetchCount() {
+    return x
+  }
+}(r = "displayName") in S ? Object.defineProperty(S, r, {
   value: "GuildSettingsAuditLogStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : k[l] = "GuildSettingsAuditLogStore";
-let F = new k(Chunk570140.Z, {
+}) : S[r] = "GuildSettingsAuditLogStore";
+let R = new S(Chunk570140.Z, {
   AUDIT_LOG_FETCH_START: function() {
-    L = true
+    Q = true
   },
-  AUDIT_LOG_FETCH_SUCCESS: function(e) {
-    var t;
-    y = 0, D = false, L = false, M = true, v = false, N = w(e.logs), h = e.integrations, O = e.webhooks, p = e.guildScheduledEvents, R = null != (t = e.automodRules) ? t : [], S = e.threads, C = e.applicationCommands, e.logs.length < m.Rg9 && (M = false)
+  AUDIT_LOG_FETCH_SUCCESS: function(A) {
+    var e;
+    x = 0, O = false, Q = false, j = true, V = false, B = N(A.logs), w = A.integrations, M = A.webhooks, p = A.guildScheduledEvents, I = null != (e = A.automodRules) ? e : [], H = A.threads, b = A.applicationCommands, A.logs.length < d.Rg9 && (j = false)
   },
   AUDIT_LOG_FETCH_FAIL: function() {
-    L = false, v = true, N = []
+    Q = false, V = true, B = []
   },
-  AUDIT_LOG_FETCH_NEXT_PAGE_START: function(e) {
+  AUDIT_LOG_FETCH_NEXT_PAGE_START: function(A) {
     let {
-      isGroupedFetch: t
-    } = e;
-    U = true, t && y++
+      isGroupedFetch: e
+    } = A;
+    P = true, e && x++
   },
-  AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS: function(e) {
+  AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS: function(A) {
     let {
-      logs: t,
-      integrations: n,
-      webhooks: r,
-      guildScheduledEvents: l,
-      automodRules: i,
-      threads: s,
+      logs: e,
+      integrations: t,
+      webhooks: n,
+      guildScheduledEvents: r,
+      automodRules: l,
+      threads: i,
       applicationCommands: a
-    } = e;
-    if (U = false, h = n, O = r, p = l, R = i, S = s, C = a, (0 === t.length || t.length < m.Rg9) && (M = false), t.length > 0) {
-      let e = w(t);
-      N = [...N, ...e]
+    } = A;
+    if (P = false, w = t, M = n, p = r, I = l, H = i, b = a, (0 === e.length || e.length < d.Rg9) && (j = false), e.length > 0) {
+      let A = N(e);
+      B = [...B, ...A]
     }
   },
   AUDIT_LOG_FETCH_NEXT_PAGE_FAIL: function() {
-    U = false
+    P = false
   },
-  AUDIT_LOG_FILTER_BY_ACTION: function(e) {
+  AUDIT_LOG_FILTER_BY_ACTION: function(A) {
     let {
-      action: t
-    } = e;
-    x = t
+      action: e
+    } = A;
+    T = e
   },
-  AUDIT_LOG_FILTER_BY_USER: function(e) {
+  AUDIT_LOG_FILTER_BY_USER: function(A) {
     let {
-      userId: t
-    } = e;
-    b = t
+      userId: e
+    } = A;
+    m = e
   },
-  AUDIT_LOG_FILTER_BY_TARGET: function(e) {
+  AUDIT_LOG_FILTER_BY_TARGET: function(A) {
     let {
-      targetId: t
-    } = e;
-    P = t
+      targetId: e
+    } = A;
+    y = e
   },
-  GUILD_SETTINGS_SET_SECTION: G,
-  GUILD_SETTINGS_INIT: function(e) {
+  GUILD_SETTINGS_SET_SECTION: Z,
+  GUILD_SETTINGS_INIT: function(A) {
     let {
-      guildId: t,
-      section: n
-    } = e;
-    return g = t, P = null, G({
-      section: n
+      guildId: e,
+      section: t
+    } = A;
+    return C = e, y = null, Z({
+      section: t
     })
   },
   GUILD_SETTINGS_CLOSE: function() {
-    N = [], f = [], x = Chunk981631.rsA.ALL, b = null, P = null, j = {}, y = 0, D = true, h = [], O = [], p = [], R = [], S = []
+    B = [], D = [], T = Chunk981631.rsA.ALL, m = null, y = null, L = {}, x = 0, O = true, w = [], M = [], p = [], I = [], H = []
   }
 })

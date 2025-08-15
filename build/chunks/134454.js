@@ -8,14 +8,14 @@
     n = ["Faoi", "Gear", "M\xe0rt", "Gibl", "C\xe8it", "\xd2gmh", "Iuch", "L\xf9n", "Sult", "D\xe0mh", "Samh", "D\xf9bh"],
     r = ["Did\xf2mhnaich", "Diluain", "Dim\xe0irt", "Diciadain", "Diardaoin", "Dihaoine", "Disathairne"],
     i = ["Did", "Dil", "Dim", "Dic", "Dia", "Dih", "Dis"],
-    o = ["D\xf2", "Lu", "M\xe0", "Ci", "Ar", "Ha", "Sa"];
+    a = ["D\xf2", "Lu", "M\xe0", "Ci", "Ar", "Ha", "Sa"];
   return e.defineLocale("gd", {
     months: t,
     monthsShort: n,
     monthsParseExact: true,
     weekdays: r,
     weekdaysShort: i,
-    weekdaysMin: o,
+    weekdaysMin: a,
     longDateFormat: {
       LT: "HH:mm",
       LTS: "HH:mm:ss",

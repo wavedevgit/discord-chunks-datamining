@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk1561 = require("./1561.jsx"),
   Chunk761224 = require("./761224.js"),
   Chunk670596 = require("./670596.js"),
@@ -59,7 +59,7 @@ function E(e) {
   let {
     color: t = "default",
     label: n,
-    checked: o,
+    checked: a,
     subtext: p,
     disabled: m,
     isFocused: E,
@@ -80,14 +80,14 @@ function E(e) {
   }, [y, I]);
   return (0, r.jsxs)(s.P, g(h({
     innerRef: T,
-    className: a()(_.item, _.checkboxContainer, _.labelContainer, f._[t], O, {
+    className: o()(_.item, _.checkboxContainer, _.labelContainer, f._[t], O, {
       [_.disabled]: m,
       [_.focused]: E,
       [null != v ? v : ""]: E
     }),
     onClick: m ? true : S
   }, b), {
-    "aria-checked": o,
+    "aria-checked": a,
     "aria-disabled": m,
     children: [(0, r.jsxs)("div", {
       className: _.label,
@@ -100,7 +100,7 @@ function E(e) {
       children: (0, r.jsx)(d.FZ5, {
         shape: d.XZJ.Shapes.BOX,
         size: 20,
-        value: o,
+        value: a,
         disabled: m
       })
     })]

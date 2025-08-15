@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 185413, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 7590 **/
+/** chunk id: 185413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => k,
-  default: () => B,
-  t: () => G
+  default: () => P,
+  t: () => Z
 }), require("./953529.js"), require("./388685.js"), require("./781311.js"), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -32,68 +31,26 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk257803 = require("./257803.js");
 
-function C(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
+function C(e) {
+  var t = function(e, t) {
+    if ("object" !== N(e) || null === e) return e;
+    var n = e[Symbol.toPrimitive];
+    if (true !== n) {
+      var r = n.call(e, t || "default");
+      if ("object" !== N(r)) return r;
+      throw TypeError("@@toPrimitive must return a primitive value.")
+    }
+    return ("string" === t ? String : Number)(e)
+  }(e, "string");
+  return "symbol" === N(t) ? t : String(t)
 }
 
-function R(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      C(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function P(e, t) {
-  if (null == e) return {};
-  var n, r, i = w(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function w(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-
-function D(e, t) {
-  if ("object" !== x(e) || null === e) return e;
-  var n = e[Symbol.toPrimitive];
-  if (true !== n) {
-    var r = n.call(e, t || "default");
-    if ("object" !== x(r)) return r;
-    throw TypeError("@@toPrimitive must return a primitive value.")
-  }
-  return ("string" === t ? String : Number)(e)
-}
-
-function L(e) {
-  var t = D(e, "string");
-  return "symbol" === x(t) ? t : String(t)
-}
-
-function x(e) {
+function N(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
 let M = (0, Chunk313201.hQ)();
 
-function j(e, t) {
+function L(e, t) {
   return t ? e.slice(1) : e
 }
 
@@ -102,230 +59,247 @@ function k(e) {
       guild: n,
       channel: a,
       permission: s,
-      pendingAdditions: l,
-      setPendingAdditions: u,
-      isStageChannel: d = null != a && a.isGuildStageVoice(),
-      description: f
+      pendingAdditions: o,
+      setPendingAdditions: d,
+      isStageChannel: u = null != a && a.isGuildStageVoice(),
+      description: m
     } = e,
-    [_, m] = i.useState(false),
-    [g, E] = i.useState(""),
-    T = (0, o.e7)([h.Z], () => h.Z.getSortedRoles(n.id));
-
-  function S(e) {
-    let t = j(g.trim(), _);
-    return RegExp("".concat(y.Z.escape(t)), "i").test(e)
-  }
-  let A = (0, o.Wu)([p.ZP], () => p.ZP.getMemberIds(n.id));
-  _ ? t = [] : d ? t = O.Wx(n, T, a, s, S) : 0 === (t = O.ik(n, T, a, s, S)).length && "" === g.trim() && 1 === T.length && (t = O.aq());
-  let N = O.iI(A, a, n, s, S);
-
-  function C(e) {
-    let t = e.trim(),
-      r = "@" === t.charAt(0);
-    b.Z.requestMembers(n.id, j(t, r), I.EQ), E(e), m(r)
-  }
+    [x, y] = l.useState(false),
+    [f, p] = l.useState(""),
+    T = (0, i.e7)([b.Z], () => b.Z.getSortedRoles(n.id));
 
   function w(e) {
-    let t = (0, v.G)(e);
-    u(n => {
-      let r = R({}, n);
-      if (t in r) delete r[t];
-      else {
-        let n;
-        e.rowType === I.aC.ROLE || e.rowType === I.aC.ADMINISTRATOR ? n = {
-          type: c.F.ROLE,
-          label: e.name,
-          color: e.colorString
-        } : (e.rowType === I.aC.MEMBER || e.rowType === I.aC.OWNER) && (n = {
-          type: c.F.MEMBER,
-          label: e.name,
-          avatar: e.avatarURL
-        }), null != n && (r[t] = {
-          display: n,
-          row: e
-        })
-      }
-      return r
-    })
+    let t = L(f.trim(), x);
+    return RegExp("".concat(j.Z.escape(t)), "i").test(e)
   }
-
-  function D(e) {
-    u(t => {
-      let {
-        [e]: n
-      } = t;
-      return P(t, [e].map(L))
-    })
-  }
-  let {
-    placeholderText: x,
-    hintText: M,
-    renderEmptyText: k
-  } = U();
-  return (0, r.jsx)(G, {
-    pendingAdditions: l,
-    query: g,
-    onQueryChange: C,
-    onClickRow: w,
-    onRemovePendingAddition: D,
+  let O = (0, i.Wu)([h.ZP], () => h.ZP.getMemberIds(n.id));
+  x ? t = [] : u ? t = v.Wx(n, T, a, s, w) : 0 === (t = v.ik(n, T, a, s, w)).length && "" === f.trim() && 1 === T.length && (t = v.aq());
+  let N = v.iI(O, a, n, s, w),
+    {
+      placeholderText: M,
+      hintText: k,
+      renderEmptyText: P
+    } = {
+      placeholderText: R.intl.string(R.t.iezLLi),
+      hintText: R.intl.string(R.t["rwFx8/"]),
+      renderEmptyText: e => R.intl.format(R.t.ErpIY2, {
+        query: e
+      })
+    };
+  return (0, r.jsx)(Z, {
+    pendingAdditions: o,
+    query: f,
+    onQueryChange: function(e) {
+      let t = e.trim(),
+        r = "@" === t.charAt(0);
+      g.Z.requestMembers(n.id, L(t, r), S.EQ), p(e), y(r)
+    },
+    onClickRow: function(e) {
+      let t = (0, E.G)(e);
+      d(n => {
+        let r = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({}, n);
+        if (t in r) delete r[t];
+        else {
+          let n;
+          e.rowType === S.aC.ROLE || e.rowType === S.aC.ADMINISTRATOR ? n = {
+            type: c.F.ROLE,
+            label: e.name,
+            color: e.colorString
+          } : (e.rowType === S.aC.MEMBER || e.rowType === S.aC.OWNER) && (n = {
+            type: c.F.MEMBER,
+            label: e.name,
+            avatar: e.avatarURL
+          }), null != n && (r[t] = {
+            display: n,
+            row: e
+          })
+        }
+        return r
+      })
+    },
+    onRemovePendingAddition: function(e) {
+      d(t => {
+        let {
+          [e]: n
+        } = t;
+        return function(e, t) {
+          if (null == e) return {};
+          var n, r, l = function(e, t) {
+            if (null == e) return {};
+            var n, r, l = {},
+              i = Object.keys(e);
+            for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+            return l
+          }(e, t);
+          if (Object.getOwnPropertySymbols) {
+            var i = Object.getOwnPropertySymbols(e);
+            for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+          }
+          return l
+        }(t, [e].map(C))
+      })
+    },
     roles: t,
     members: N,
-    placeholderText: x,
-    hintText: M,
-    renderEmptyText: k,
-    isStageChannel: d,
-    description: f
+    placeholderText: M,
+    hintText: k,
+    renderEmptyText: P,
+    isStageChannel: u,
+    description: m
   })
 }
 
-function U() {
-  return {
-    placeholderText: Chunk388032.intl.string(Chunk388032.t.iezLLi),
-    hintText: Chunk388032.intl.string(Chunk388032.t["rwFx8/"]),
-    renderEmptyText: e => A.intl.format(A.t.ErpIY2, {
-      query: e
-    })
-  }
-}
-
-function G(e) {
-  let {
-    listClassName: t,
-    pendingAdditions: n,
+function Z(e) {
+  let t, {
+    listClassName: n,
+    pendingAdditions: l,
     query: i,
-    onQueryChange: o,
-    onClickRow: a,
-    onRemovePendingAddition: l,
-    roles: c,
+    onQueryChange: a,
+    onClickRow: o,
+    onRemovePendingAddition: c,
+    roles: d,
     members: u,
-    placeholderText: d,
-    hintText: f,
-    renderEmptyText: _,
-    isStageChannel: p,
-    focusSearchAfterReady: h,
-    isReady: m,
-    description: g
-  } = e, E = () => {
-    let e = g;
-    return (null == e && p && (e = A.intl.string(A.t.f7VbhI)), null == e || "" === e) ? null : (0, r.jsx)(s.Text, {
-      color: "header-secondary",
-      className: N.description,
-      variant: "text-sm/normal",
-      children: e
-    })
-  };
+    placeholderText: m,
+    hintText: x,
+    renderEmptyText: h,
+    isStageChannel: b,
+    focusSearchAfterReady: y,
+    isReady: f,
+    description: p
+  } = e;
   return (0, r.jsxs)("div", {
-    className: N.content,
-    children: [E(), (0, r.jsx)(v.Z, {
-      listClassName: t,
-      pendingAdditions: n,
+    className: O.content,
+    children: [(null == (t = p) && b && (t = R.intl.string(R.t.f7VbhI)), null == t || "" === t) ? null : (0, r.jsx)(s.Text, {
+      color: "header-secondary",
+      className: O.description,
+      variant: "text-sm/normal",
+      children: t
+    }), (0, r.jsx)(E.Z, {
+      listClassName: n,
+      pendingAdditions: l,
       query: i,
-      onQueryChange: o,
-      onClickRow: a,
-      onRemovePendingAddition: l,
-      roles: c,
+      onQueryChange: a,
+      onClickRow: o,
+      onRemovePendingAddition: c,
+      roles: d,
       members: u,
-      placeholderText: d,
-      hintText: f,
-      renderEmptyText: _,
-      disabledText: p ? A.intl.string(A.t.MVVOCg) : null,
-      focusSearchAfterReady: h,
-      isReady: m,
-      maxCount: S.ey
+      placeholderText: m,
+      hintText: x,
+      renderEmptyText: h,
+      disabledText: b ? R.intl.string(R.t.MVVOCg) : null,
+      focusSearchAfterReady: y,
+      isReady: f,
+      maxCount: w.ey
     })]
   })
 }
 
-function B(e) {
+function P(e) {
   let {
     transitionState: t,
     onClose: n,
-    channelId: l,
-    newChannel: c,
-    inSettings: d
-  } = e, [p, h] = i.useState(false), [E, b] = i.useState({}), y = (0, o.e7)([_.Z], () => _.Z.getChannel(l), [l]), O = (0, o.e7)([m.Z], () => m.Z.getGuild(null == y ? true : y.getGuildId()));
-  if (i.useEffect(() => {
-      g.default.track(T.rMx.OPEN_MODAL, {
+    channelId: c,
+    newChannel: u,
+    inSettings: h
+  } = e, [b, g] = l.useState(false), [j, v] = l.useState({}), E = (0, i.e7)([x.Z], () => x.Z.getChannel(c), [c]), w = (0, i.e7)([y.Z], () => y.Z.getGuild(null == E ? true : E.getGuildId()));
+  if (l.useEffect(() => {
+      f.default.track(T.rMx.OPEN_MODAL, {
         type: "Grant Channel Access"
       })
-    }, []), null == y || null == O) return null;
-  let v = c && 0 === Object.keys(E).length;
-  async function I() {
-    if (null == y || 0 === Object.keys(E).length) return void n();
-    h(true);
+    }, []), null == E || null == w) return null;
+  let C = u && 0 === Object.keys(j).length;
+  async function N() {
+    if (null == E || 0 === Object.keys(j).length) return void n();
+    g(true);
     try {
-      await Z(y, E, d), n(), h(false)
+      await
+      function(e, t, n) {
+        let r = [];
+        return Object.values(t).forEach(t => {
+          let {
+            row: n
+          } = t;
+          null != n.id && "" !== n.id && (n.rowType === S.aC.ROLE ? r.push((0, p.rX)(n.id, e.type)) : n.rowType === S.aC.MEMBER && r.push((0, p.jZ)(n.id, e.type)))
+        }), (0, o.hw)(e.id, r, n)
+      }(E, j, h), n(), g(false)
     } catch (e) {
-      h(false)
+      g(false)
     }
   }
-  let S = (0, f.zi)(y.type) ? s.W4G : s.gjC;
+  let L = (0, m.zi)(E.type) ? s.W4G : s.gjC;
   return (0, r.jsxs)(s.Y0X, {
     transitionState: t,
     size: s.CgR.SMALL,
     "aria-labelledby": M,
-    className: N.modalRoot,
+    className: O.modalRoot,
     parentComponent: "AddMembersModal",
     children: [(0, r.jsxs)(s.xBx, {
       separator: false,
-      direction: u.Z.Direction.VERTICAL,
-      align: u.Z.Align.CENTER,
-      className: N.header,
+      direction: d.Z.Direction.VERTICAL,
+      align: d.Z.Align.CENTER,
+      className: O.header,
       children: [(0, r.jsx)(s.X6q, {
         id: M,
         variant: "heading-xl/semibold",
-        children: A.intl.string(A.t.dMJ3Y2)
+        children: R.intl.string(R.t.dMJ3Y2)
       }), (0, r.jsxs)(s.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        className: N.headerSubtitle,
-        children: [(0, r.jsx)(S, {
+        className: O.headerSubtitle,
+        children: [(0, r.jsx)(L, {
           size: "xs",
           color: "currentColor",
-          className: N.headerSubtitleIcon
-        }), y.name]
+          className: O.headerSubtitleIcon
+        }), E.name]
       })]
     }), (0, r.jsx)(k, {
-      guild: O,
-      channel: y,
-      permission: y.accessPermissions,
-      pendingAdditions: E,
-      setPendingAdditions: b
+      guild: w,
+      channel: E,
+      permission: E.accessPermissions,
+      pendingAdditions: j,
+      setPendingAdditions: v
     }), (0, r.jsxs)(s.mzw, {
-      children: [!v && (0, r.jsxs)(r.Fragment, {
+      children: [!C && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: N.button,
+          className: O.button,
           children: (0, r.jsx)(s.zxk, {
             variant: "primary",
             size: "sm",
-            text: A.intl.string(A.t.i4jeWV),
-            onClick: I,
-            loading: p
+            text: R.intl.string(R.t.i4jeWV),
+            onClick: N,
+            loading: b
           })
         }), (0, r.jsx)(a.zx, {
           look: a.zx.Looks.LINK,
           color: a.zx.Colors.TRANSPARENT,
           onClick: n,
           size: a.zx.Sizes.SMALL,
-          children: A.intl.string(A.t["ETE/oK"])
+          children: R.intl.string(R.t["ETE/oK"])
         })]
-      }), v && (0, r.jsx)(s.zxk, {
+      }), C && (0, r.jsx)(s.zxk, {
         variant: "secondary",
         size: "sm",
-        text: A.intl.string(A.t.u46sxc),
+        text: R.intl.string(R.t.u46sxc),
         onClick: n
       })]
     })]
   })
-}
-
-function Z(e, t, n) {
-  let r = [];
-  return Object.values(t).forEach(t => {
-    let {
-      row: n
-    } = t;
-    null != n.id && "" !== n.id && (n.rowType === I.aC.ROLE ? r.push((0, E.rX)(n.id, e.type)) : n.rowType === I.aC.MEMBER && r.push((0, E.jZ)(n.id, e.type)))
-  }), (0, l.hw)(e.id, r, n)
 }

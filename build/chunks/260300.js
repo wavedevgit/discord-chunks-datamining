@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 260300, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 260300, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -26,7 +25,7 @@ let a = {
       type: "TUTORIAL_INDICATOR_DISMISS",
       tutorialId: e
     })), r.tn.put({
-      url: o.ANM.TUTORIAL_INDICATOR(e),
+      url: l.ANM.TUTORIAL_INDICATOR(e),
       oldFormErrors: true,
       rejectWithError: true
     })

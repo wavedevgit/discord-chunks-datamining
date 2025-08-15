@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 639539, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 639539, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => v
 }), require("./388685.js");
@@ -15,53 +14,14 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk636433 = require("./636433.js");
 
-function _(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
 function p(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      _(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function h(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function g(e) {
   if (null != e) {
     let t = new Date,
       {
         hours: n,
         minutes: r,
         seconds: i
-      } = (0, s.Z)({
+      } = (0, o.Z)({
         start: t,
         end: e
       });
@@ -81,7 +41,7 @@ function g(e) {
     countdownString: ""
   }
 }
-let E = e => {
+let m = e => {
     let {
       digit: t
     } = e, n = (0, c.Yzy)(t, {
@@ -105,31 +65,58 @@ let E = e => {
     });
     return (0, r.jsx)("div", {
       className: f.animatedDigit,
-      children: n((e, t) => (0, r.jsx)(l.animated.div, {
-        style: m(p({}, e), {
-          position: "absolute",
-          width: "100%",
-          textAlign: "center"
-        }),
-        children: (0, r.jsx)(c.Text, {
-          variant: "text-sm/bold",
-          children: t
+      children: n((e, t) => {
+        var n, i;
+        return (0, r.jsx)(s.animated.div, {
+          style: (n = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
+                }) : e[t] = r
+              })
+            }
+            return e
+          }({}, e), i = i = {
+            position: "absolute",
+            width: "100%",
+            textAlign: "center"
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
+            }
+            return n
+          })(Object(i)).forEach(function(e) {
+            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+          }), n),
+          children: (0, r.jsx)(c.Text, {
+            variant: "text-sm/bold",
+            children: t
+          })
         })
-      }))
+      })
     })
   },
-  b = () => {
+  g = () => {
     let [e, t] = Chunk73800.useState(false);
     Chunk73800.useEffect(() => {
       let e;
-
-      function n() {
+      return ! function n() {
         let r = Date.now();
         e = setTimeout(() => {
           exports(e => !e), require()
         }, Math.max(100, (Math.floor(Chunk255367 / Chunk70956.Z.Millis.HALF_SECOND) + 1) * Chunk70956.Z.Millis.HALF_SECOND - Chunk255367))
-      }
-      return require(), () => {
+      }(), () => {
         clearTimeout(module)
       }
     }, []);
@@ -149,35 +136,35 @@ let E = e => {
       })]
     })
   },
-  y = e => {
+  h = e => {
     let {
       digits: t
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: f.digitContainer,
-        children: (0, r.jsx)(E, {
+        children: (0, r.jsx)(m, {
           digit: t[0]
         })
       }), (0, r.jsx)("div", {
         className: f.digitContainer,
-        children: (0, r.jsx)(E, {
+        children: (0, r.jsx)(m, {
           digit: t[1]
         })
       })]
     })
   },
-  O = e => {
+  b = e => {
     let {
       countdown: t
     } = e;
     return (0, r.jsxs)("div", {
       className: f.digitsContainer,
-      children: [(0, r.jsx)(y, {
+      children: [(0, r.jsx)(h, {
         digits: t.hours
-      }), (0, r.jsx)(b, {}), (0, r.jsx)(y, {
+      }), (0, r.jsx)(g, {}), (0, r.jsx)(h, {
         digits: t.minutes
-      }), (0, r.jsx)(b, {}), (0, r.jsx)(y, {
+      }), (0, r.jsx)(g, {}), (0, r.jsx)(h, {
         digits: t.seconds
       })]
     })
@@ -187,19 +174,19 @@ function v(e) {
   let {
     textVariant: t,
     className: n,
-    catalogUpdateTime: o,
-    isScrolled: s
-  } = e, [l, u] = i.useState(() => g(o));
+    catalogUpdateTime: l,
+    isScrolled: o
+  } = e, [s, u] = i.useState(() => p(l));
   return i.useEffect(() => {
     let e = setInterval(() => {
-      u(() => g(o))
+      u(() => p(l))
     }, 1e3);
     return () => clearInterval(e)
-  }, [o]), (0, r.jsxs)("div", {
+  }, [l]), (0, r.jsxs)("div", {
     className: a()(n, f.countdownContainer, {
-      [f.isScrolled]: s
+      [f.isScrolled]: o
     }),
-    "aria-label": l.countdownString,
+    "aria-label": s.countdownString,
     children: [(0, r.jsxs)("div", {
       className: f.iconContainer,
       children: [(0, r.jsx)("div", {
@@ -218,8 +205,8 @@ function v(e) {
       })]
     }), (0, r.jsx)("div", {
       className: f.digitsContainer,
-      children: (0, r.jsx)(O, {
-        countdown: l
+      children: (0, r.jsx)(b, {
+        countdown: s
       })
     })]
   })

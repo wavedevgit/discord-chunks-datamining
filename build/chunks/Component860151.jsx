@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 860151, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 64838 **/
+/** chunk id: 860151, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk381176 = require("./381176.js"),
+  Chunk192023 = require("./192023.js"),
   Chunk373370 = require("./373370.js"),
   Chunk644646 = require("./644646.jsx"),
   Chunk73231 = require("./73231.js");
@@ -17,39 +16,39 @@ let d = function(e) {
   let {
     className: t,
     autoplay: n,
-    quest: i,
+    quest: s,
     questContent: d,
-    taskDetails: f,
-    location: _,
-    sourceQuestContent: p
-  } = e, h = (0, l.DD)({
-    quest: i,
-    taskDetails: f,
-    location: _,
+    taskDetails: E,
+    location: S,
+    sourceQuestContent: m
+  } = e, T = (0, o.DD)({
+    quest: s,
+    taskDetails: E,
+    location: S,
     questContent: d,
-    sourceQuestContent: p
-  }), m = (0, s.h)({
-    location: _,
-    questConfig: i.config
+    sourceQuestContent: m
+  }), A = (0, u.h)({
+    location: S,
+    questConfig: s.config
   });
-  return (0, r.jsxs)("div", {
-    className: o()(u.wrapper, t),
-    style: m ? true : {
-      color: i.config.colors.primary
+  return (0, l.jsxs)("div", {
+    className: r()(c.wrapper, t),
+    style: A ? true : {
+      color: s.config.colors.primary
     },
-    children: [(0, r.jsx)(c.Z, {
+    children: [(0, l.jsx)(a.Z, {
       autoplay: n,
-      className: u.rewardTile,
-      quest: i,
+      className: c.rewardTile,
+      quest: s,
       questContent: d,
-      location: _,
-      sourceQuestContent: p
-    }), (0, r.jsx)("div", {
-      className: u.copy,
-      children: (0, r.jsx)(a.Text, {
+      location: S,
+      sourceQuestContent: m
+    }), (0, l.jsx)("div", {
+      className: c.copy,
+      children: (0, l.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: h
+        children: T
       })
     })]
   })

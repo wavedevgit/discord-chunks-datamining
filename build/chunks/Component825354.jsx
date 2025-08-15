@@ -1,4 +1,4 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 825354, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -68,7 +68,7 @@ function b(e) {
     })
   }, O = () => {
     (0, c.G1)(b, t)
-  }, x = (0, l.e7)([s.default], () => s.default.getId() === b);
+  }, h = (0, l.e7)([s.default], () => s.default.getId() === b);
   return (0, r.jsx)(o.yRy, {
     targetElementRef: j,
     align: "top",
@@ -86,7 +86,7 @@ function b(e) {
         onSelect: () => {},
         "aria-label": p.intl.string(p.t.xpSHSk),
         children: (0, r.jsx)(o.kSQ, {
-          children: x ? (0, r.jsx)(o.sNh, {
+          children: h ? (0, r.jsx)(o.sNh, {
             id: "remove-widget",
             label: p.intl.string(p.t.Mm07YW),
             action: y,

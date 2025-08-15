@@ -1,5 +1,5 @@
-/** Chunk was on 1355 **/
-/** chunk id: 101695, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 78079 **/
+/** chunk id: 101695, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -8,25 +8,25 @@ var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
   Chunk254610 = require("./254610.js");
 
-function a(e) {
+function a(A) {
   let {
-    onPageChange: t,
-    offset: n,
+    onPageChange: e,
+    offset: t,
     totalCount: a,
-    pageSize: o,
-    renderPageWrapper: u
-  } = e, c = Math.floor(n / o) + 1, E = l.useCallback(e => {
-    t(e - 1)
-  }, [t]);
-  return (0, r.jsx)("div", {
-    className: s.container,
-    children: (0, r.jsx)(i.DsT, {
-      currentPage: c,
+    pageSize: s,
+    renderPageWrapper: o
+  } = A, g = Math.floor(t / s) + 1, c = r.useCallback(A => {
+    e(A - 1)
+  }, [e]);
+  return (0, n.jsx)("div", {
+    className: i.container,
+    children: (0, n.jsx)(l.DsT, {
+      currentPage: g,
       totalCount: a,
-      pageSize: o,
-      onPageChange: E,
+      pageSize: s,
+      onPageChange: c,
       maxVisiblePages: 5,
-      renderPageWrapper: u
+      renderPageWrapper: o
     })
   })
 }

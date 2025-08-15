@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk189798 = require("./189798.jsx"),
   Chunk646164 = require("./646164.js");
 
@@ -54,8 +54,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -72,19 +72,19 @@ function h(e) {
   let {
     children: t,
     size: n = 16,
-    className: o,
+    className: a,
     flowerStarClassName: c
   } = e, d = _(e, ["children", "size", "className", "flowerStarClassName"]), p = i.Children.only(t), h = {
     width: n,
     height: n
   }, m = !e.allowFullSizedIcon;
   return (0, r.jsxs)("div", {
-    className: a()(l.flowerStarContainer, o),
+    className: o()(l.flowerStarContainer, a),
     style: h,
     children: [(0, r.jsx)(s.Z, f(u({}, d), {
-      className: a()(c, l.flowerStar)
+      className: o()(c, l.flowerStar)
     })), (0, r.jsx)("div", {
-      className: a()(l.childContainer, {
+      className: o()(l.childContainer, {
         [l.redesignIconChildContainer]: m
       }),
       children: p

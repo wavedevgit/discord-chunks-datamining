@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 268623, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37220 **/
+/** chunk id: 268623, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m,
-  x: () => g
+  Z: () => O,
+  x: () => y
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,18 +18,18 @@ var Chunk255367 = require("./255367.js"),
   Chunk70956 = require("./70956.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function O(e) {
   let {
     enabled: t
-  } = l.Z.useExperiment({
+  } = s.Z.useExperiment({
     location: "LongPressMessageActionSheet"
-  }), n = (0, o.e7)([d.Z], () => d.Z.getSavedMessage(e.channel_id, e.id)), i = g({
+  }), n = (0, l.e7)([d.Z], () => d.Z.getSavedMessage(e.channel_id, e.id)), i = y({
     message: e,
     savedMessage: n
   });
   return t ? null != n || (0, f.Z)() ? (0, r.jsxs)(a.sNh, {
     id: "save-for-later",
-    label: h.intl.string(h.t.tpxJtr),
+    label: p.intl.string(p.t.tpxJtr),
     action: () => null == n ? (0, c.z)({
       channelId: e.channel_id,
       messageId: e.id,
@@ -43,7 +42,7 @@ function m(e) {
     }),
     children: [null != n ? (0, r.jsx)(a.sNh, {
       id: "remove-from-for-later",
-      label: h.intl.string(h.t.SvXS1d),
+      label: p.intl.string(p.t.SvXS1d),
       icon: a.plf,
       action: () => (0, c.x)({
         channelId: e.channel_id,
@@ -53,7 +52,7 @@ function m(e) {
       })
     }) : (0, r.jsx)(a.sNh, {
       id: "create-bookmark",
-      label: h.intl.string(h.t["9p3D9v"]),
+      label: p.intl.string(p.t["9p3D9v"]),
       icon: a.gt9,
       action: () => (0, c.z)({
         channelId: e.channel_id,
@@ -63,10 +62,10 @@ function m(e) {
     }), (0, r.jsx)(a.Clw, {}), i]
   }) : (0, r.jsx)(a.sNh, {
     id: "save-for-later-upsell",
-    label: h.intl.string(h.t.tpxJtr),
+    label: p.intl.string(p.t.tpxJtr),
     icon: a.SrA,
     iconProps: {
-      color: s.JX.PREMIUM_TIER_2
+      color: o.JX.PREMIUM_TIER_2
     },
     action: () => (0, c.z)({
       channelId: e.channel_id,
@@ -76,41 +75,41 @@ function m(e) {
   }) : null
 }
 
-function g(e) {
+function y(e) {
   let {
     message: t,
     savedMessage: n
-  } = e, [o, s] = i.useState(new Date);
+  } = e, [l, o] = i.useState(new Date);
   i.useEffect(() => {
-    let e = setInterval(() => s(new Date), p.Z.Millis.MINUTE);
+    let e = setInterval(() => o(new Date), b.Z.Millis.MINUTE);
     return () => {
       clearInterval(e)
     }
   }, []);
-  let l = i.useCallback(e => (0, c.z)({
+  let s = i.useCallback(e => (0, c.z)({
       channelId: t.channel_id,
       messageId: t.id,
       dueAt: e,
       displayToast: true
     }), [t.channel_id, t.id]),
-    d = (0, _.r)({
-      createReminder: l
+    d = (0, g.r)({
+      createReminder: s
     }),
     {
       dueInText: f
     } = (0, u.AT)({
       dueAt: null == n ? true : n.saveData.dueAt,
-      now: o,
+      now: l,
       type: u.hQ.LONG
     });
   return (null == n ? true : n.saveData.dueAt) == null ? (0, r.jsx)(a.kSQ, {
-    label: h.intl.string(h.t.roMu1N),
+    label: p.intl.string(p.t.roMu1N),
     children: d
   }) : (0, r.jsxs)(a.kSQ, {
     label: f,
     children: [(0, r.jsx)(a.sNh, {
       id: "mark-complete",
-      label: h.intl.string(h.t.yjGtdH),
+      label: p.intl.string(p.t.yjGtdH),
       icon: a.kmB,
       action: () => (0, c.z)({
         channelId: t.channel_id,
@@ -119,7 +118,7 @@ function g(e) {
       })
     }), (0, r.jsx)(a.sNh, {
       id: "edit-reminder",
-      label: h.intl.string(h.t.vrbqs7),
+      label: p.intl.string(p.t.vrbqs7),
       children: d
     })]
   })

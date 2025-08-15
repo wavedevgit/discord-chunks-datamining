@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 739754, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 71088 **/
+/** chunk id: 739754, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  ZP: () => O,
-  c4: () => g,
-  st: () => b
+  ZP: () => x,
+  c4: () => I,
+  st: () => h
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -20,95 +19,91 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk954800 = require("./954800.js");
 
-function m(e) {
+function b(e) {
   return {
     text: e,
-    icon: (0, r.jsx)(c.bbz, {
-      className: h.icon,
+    icon: (0, o.jsx)(_.bbz, {
+      className: p.icon,
       dotRadius: 3.5,
       themed: true
     })
   }
 }
 
-function g(e) {
+function I(e) {
   return {
-    text: null != e ? e : p.intl.string(p.t.VCsUJi),
+    text: null != e ? e : f.intl.string(f.t.VCsUJi),
     color: "text-danger",
-    icon: (0, r.jsx)(c.Mgn, {
+    icon: (0, o.jsx)(_.Mgn, {
       size: "xs",
       color: "currentColor",
-      className: a()(h.icon, h.errorIcon)
+      className: a()(p.icon, p.errorIcon)
     })
   }
 }
 
-function E(e, t) {
-  switch ((0, f.t$)(t, e)) {
-    case f.rQ.SENDING:
-      return m(p.intl.string(p.t.RiLfBQ));
-    case f.rQ.CREATED:
-      return m(p.intl.formatToPlainString(p.t["7ePV4u"], {
-        applicationName: t.author.username
-      }));
-    case f.rQ.TIMED_OUT:
-      return g(p.intl.string(p.t.h8hzPT));
-    case f.rQ.FAILED:
-      return g(t.interactionError)
-  }
-}
-
-function b(e) {
+function h(e) {
   let {
-    className: t,
-    icon: n,
+    className: n,
+    icon: t,
     text: i,
-    color: o
+    color: r
   } = e;
-  return (0, r.jsxs)("div", {
-    className: a()(h.wrapper, t),
-    children: [n, (0, r.jsx)(c.Text, {
+  return (0, o.jsxs)("div", {
+    className: a()(p.wrapper, n),
+    children: [t, (0, o.jsx)(_.Text, {
       variant: "text-md/normal",
-      color: o,
+      color: r,
       scaleFontToUserSetting: true,
       children: i
     })]
   })
 }
-
-function y(e) {
+let x = Chunk73800.memo(function(e) {
   let {
-    message: t,
-    className: n,
-    component: o
-  } = e, a = (0, s.Z)(), c = (0, l.e7)([d.ZP], () => d.ZP.getInteraction(t), [t]);
+    message: n,
+    className: t,
+    component: r
+  } = e, a = (0, c.Z)(), _ = (0, l.e7)([d.ZP], () => d.ZP.getInteraction(n), [n]);
   i.useEffect(() => {
     let e = null;
-    if (t.hasFlag(_.iLy.LOADING) && null != c) {
-      let n = (0, f.ow)(t.id) - Date.now();
-      n > 0 && (e = setTimeout(() => a(), 1e3 + n))
+    if (n.hasFlag(m.iLy.LOADING) && null != _) {
+      let t = (0, u.ow)(n.id) - Date.now();
+      t > 0 && (e = setTimeout(() => a(), 1e3 + t))
     }
     return () => {
       clearTimeout(e)
     }
-  }, [a, c, t]);
+  }, [a, _, n]);
   let p = null;
-  if (null == o) p = E(c, t);
+  if (null == r) p = function(e, n) {
+    switch ((0, u.t$)(n, e)) {
+      case u.rQ.SENDING:
+        return b(f.intl.string(f.t.RiLfBQ));
+      case u.rQ.CREATED:
+        return b(f.intl.formatToPlainString(f.t["7ePV4u"], {
+          applicationName: n.author.username
+        }));
+      case u.rQ.TIMED_OUT:
+        return I(f.intl.string(f.t.h8hzPT));
+      case u.rQ.FAILED:
+        return I(n.interactionError)
+    }
+  }(_, n);
   else {
-    let e = (0, u.SD)(c, t, o);
-    null != e && (p = g(e))
+    let e = (0, s.SD)(_, n, r);
+    null != e && (p = I(e))
   }
   if (null == p) return null;
   let {
-    text: h,
-    icon: m,
-    color: y
+    text: x,
+    icon: g,
+    color: C
   } = p;
-  return (0, r.jsx)(b, {
-    icon: m,
-    text: h,
-    className: n,
-    color: y
+  return (0, o.jsx)(h, {
+    icon: g,
+    text: x,
+    className: t,
+    color: C
   })
-}
-let O = Chunk73800.memo(y)
+})

@@ -34,25 +34,25 @@ var Chunk507604 = require("./507604.js"),
   L = Chunk46015("".slice),
   x = /^\?<[^\s\d!#%&*+<=>@^][^\s!#%&*+<=>@^]*>/,
   M = /a/g,
-  j = /a/g,
-  k = new A(M) !== M,
+  k = /a/g,
+  j = new A(M) !== M,
   U = Chunk751954.MISSED_STICKY,
   G = Chunk751954.UNSUPPORTED_Y,
-  B = Chunk507604 && (!k || U || Chunk923646 || Chunk204954 || Chunk621523(function() {
-    return j[S] = false, A(M) !== M || A(j) === j || "/a/i" !== String(A(M, "i"))
+  B = Chunk507604 && (!j || U || Chunk923646 || Chunk204954 || Chunk621523(function() {
+    return k[S] = false, A(M) !== M || A(k) === k || "/a/i" !== String(A(M, "i"))
   })),
-  Z = function(e) {
-    for (var t, n = e.length, r = 0, i = "", o = false; r <= n; r++) {
+  V = function(e) {
+    for (var t, n = e.length, r = 0, i = "", a = false; r <= n; r++) {
       if ("\\" === (t = P(e, r))) {
         i += t + P(e, ++r);
         continue
       }
-      o || "." !== t ? ("[" === t ? o = true : "]" === t && (o = false), i += t) : i += "[\\s\\S]"
+      a || "." !== t ? ("[" === t ? a = true : "]" === t && (a = false), i += t) : i += "[\\s\\S]"
     }
     return i
   },
   F = function(e) {
-    for (var t, n = e.length, r = 0, i = "", o = [], a = c(null), s = false, l = false, u = 0, d = ""; r <= n; r++) {
+    for (var t, n = e.length, r = 0, i = "", a = [], o = c(null), s = false, l = false, u = 0, d = ""; r <= n; r++) {
       if ("\\" === (t = P(e, r))) t += P(e, ++r);
       else if ("]" === t) s = false;
       else if (!s) switch (true) {
@@ -64,28 +64,28 @@ var Chunk507604 = require("./507604.js"),
           R(x, L(e, r + 1)) && (r += 2, l = true), u++;
           continue;
         case ">" === t && l:
-          if ("" === d || b(a, d)) throw new C("Invalid capture group name");
-          a[d] = true, o[o.length] = [d, u], l = false, d = "";
+          if ("" === d || b(o, d)) throw new C("Invalid capture group name");
+          o[d] = true, a[a.length] = [d, u], l = false, d = "";
           continue
       }
       l ? d += t : i += t
     }
-    return [i, o]
+    return [i, a]
   };
 if (Chunk275717("RegExp", B)) {
-  for (var V = function(e, t) {
-      var n, r, i, o, a, c, u = d(N, this),
+  for (var Z = function(e, t) {
+      var n, r, i, a, o, c, u = d(N, this),
         h = f(e),
         m = true === t,
         g = [],
         E = e;
-      if (!u && h && m && e.constructor === V) return e;
-      if ((h || d(N, e)) && (e = e.source, m && (t = p(E))), e = true === e ? "" : _(e), t = true === t ? "" : _(t), E = e, I && "dotAll" in M && (r = !!t && D(t, "s") > false) && (t = w(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && D(t, "y") > false) && G && (t = w(t, /y/g, "")), T && (e = (o = F(e))[0], g = o[1]), a = s(A(e, t), u ? this : N, V), (r || i || g.length) && (c = y(a), r && (c.dotAll = true, c.raw = V(Z(e), n)), i && (c.sticky = true), g.length && (c.groups = g)), e !== E) try {
-        l(a, "source", "" === E ? "(?:)" : E)
+      if (!u && h && m && e.constructor === Z) return e;
+      if ((h || d(N, e)) && (e = e.source, m && (t = p(E))), e = true === e ? "" : _(e), t = true === t ? "" : _(t), E = e, I && "dotAll" in M && (r = !!t && D(t, "s") > false) && (t = w(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && D(t, "y") > false) && G && (t = w(t, /y/g, "")), T && (e = (a = F(e))[0], g = a[1]), o = s(A(e, t), u ? this : N, Z), (r || i || g.length) && (c = y(o), r && (c.dotAll = true, c.raw = Z(V(e), n)), i && (c.sticky = true), g.length && (c.groups = g)), e !== E) try {
+        l(o, "source", "" === E ? "(?:)" : E)
       } catch (e) {}
-      return a
-    }, H = u(A), Y = 0; H.length > Y;) Chunk316096(V, A, H[Y++]);
-  N.constructor = V, V.prototype = N, Chunk556585(Chunk127849, "RegExp", V, {
+      return o
+    }, H = u(A), Y = 0; H.length > Y;) Chunk316096(Z, A, H[Y++]);
+  N.constructor = Z, Z.prototype = N, Chunk556585(Chunk127849, "RegExp", Z, {
     constructor: true
   })
 }

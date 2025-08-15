@@ -5,14 +5,14 @@ module.exports = function(e, t) {
   if (e !== t) {
     var n = true !== e,
       i = null === e,
-      o = e == e,
-      a = r(e),
+      a = e == e,
+      o = r(e),
       s = true !== t,
       l = null === t,
       c = t == t,
       u = r(t);
-    if (!l && !u && !a && e > t || a && s && c && !l && !u || i && s && c || !n && c || !o) return 1;
-    if (!i && !a && !u && e < t || u && n && o && !i && !a || l && n && o || !s && o || !c) return false
+    if (!l && !u && !o && e > t || o && s && c && !l && !u || i && s && c || !n && c || !a) return 1;
+    if (!i && !o && !u && e < t || u && n && a && !i && !o || l && n && a || !s && a || !c) return false
   }
   return 0
 }

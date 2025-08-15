@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 442168, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 24255 **/
+/** chunk id: 442168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => b
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -17,135 +16,128 @@ var Chunk255367 = require("./255367.js"),
   Chunk314910 = require("./314910.jsx"),
   Chunk565063 = require("./565063.js");
 
-function h(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function m(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
-let g = 3e3,
-  E = .1,
-  b = {
+let g = {
     visibility: "hidden"
   },
-  y = {
+  S = {
     precision: 1e-4,
     duration: 300
   },
-  O = {
+  v = {
     tension: 150,
     friction: 20,
     precision: 1e-4,
     bounce: 0
   },
-  v = {
+  h = {
     duration: 1e3
   };
 
-function I(e) {
+function b(e) {
   let {
     stream: t,
     inPopout: n
   } = e, {
-    reducedMotion: h
-  } = i.useContext(s.Sf), I = (0, i.useRef)(null), T = d.n.getState().clipsButtonRef, S = (0, f.V9)(t), A = (0, a.e7)([c.Z], () => c.Z.getActiveAnimation()), N = (0, a.Wu)([c.Z], () => c.Z.getStreamClipAnimations(S)), C = (0, i.useRef)(true);
-  i.useEffect(() => () => {
-    (0, u.Gh)(S)
-  }, [S]);
-  let R = () => {
-      var e;
-      let t = null == (e = I.current) ? true : e.getBoundingClientRect();
-      return null == t || n ? b : {
-        width: t.width,
-        height: t.height,
-        top: t.top,
-        left: t.left
-      }
-    },
-    P = e => {
-      let t = null == T ? true : T.getBoundingClientRect();
-      if (C.current = t, e.timestamp !== A || null == t || n) return b;
+    reducedMotion: b
+  } = l.useContext(o.Sf), O = (0, l.useRef)(null), y = d.n.getState().clipsButtonRef, _ = (0, f.V9)(t), Z = (0, a.e7)([s.Z], () => s.Z.getActiveAnimation()), j = (0, a.Wu)([s.Z], () => s.Z.getStreamClipAnimations(_)), I = (0, l.useRef)(true);
+  l.useEffect(() => () => {
+    (0, c.Gh)(_)
+  }, [_]);
+  let w = e => {
+      let t = null == y ? true : y.getBoundingClientRect();
+      if (I.current = t, e.timestamp !== Z || null == t || n) return g;
       let {
         top: r,
-        left: i
+        left: l
       } = t;
       return {
         top: r + 36,
-        left: i - 216,
+        left: l - 216,
         height: 151,
         width: 268
       }
     },
-    w = () => {
-      if (null != C.current) return {
-        top: C.current.top + 12,
-        left: C.current.left + 12
-      }
-    },
-    D = (0, i.useRef)(null),
-    L = (0, l.Yzy)(N, {
+    P = (0, l.useRef)(null),
+    A = (0, u.Yzy)(j, {
       keys: e => e.timestamp,
-      ref: D,
+      ref: P,
       from: {
         opacity: .2
       },
       enter: {
         opacity: 0
       },
-      config: y
+      config: S
     }, "animate-always"),
-    x = (0, i.useRef)(null),
-    M = (0, l.Yzy)(N, {
-      ref: x,
+    C = (0, l.useRef)(null),
+    x = (0, u.Yzy)(j, {
+      ref: C,
       keys: e => e.timestamp,
-      from: e => m({
+      from: e => E({
         position: "fixed",
         visibility: "hidden",
         opacity: 1
-      }, h.enabled ? P(e) : R()),
-      enter: e => [m({
+      }, b.enabled ? w(e) : (() => {
+        var e;
+        let t = null == (e = O.current) ? true : e.getBoundingClientRect();
+        return null == t || n ? g : {
+          width: t.width,
+          height: t.height,
+          top: t.top,
+          left: t.left
+        }
+      })()),
+      enter: e => [E({
         opacity: 1,
         visibility: "visible"
-      }, P(e))],
-      leave: m({
+      }, w(e))],
+      leave: E({
         opacity: 0
-      }, !h.enabled && m({
+      }, !b.enabled && E({
         height: 0,
         width: 0
-      }, w())),
-      config: h.enabled ? v : O,
+      }, (() => {
+        if (null != I.current) return {
+          top: I.current.top + 12,
+          left: I.current.left + 12
+        }
+      })())),
+      config: b.enabled ? h : v,
       onRest: (e, t) => {
-        null != t.item && null != N.find(e => e.timestamp === t.item.timestamp) && (0, u.Gh)(S, t.item.timestamp)
+        null != t.item && null != j.find(e => e.timestamp === t.item.timestamp) && (0, c.Gh)(_, t.item.timestamp)
       }
     }, "animate-always");
-  return (0, o.useChain)([D, x], [0, E], g), (0, r.jsxs)(r.Fragment, {
+  return (0, i.useChain)([P, C], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: p.hidden,
-      ref: I
-    }), L((e, t) => null != t && (0, r.jsx)(o.animated.div, {
-      className: p.whiteFlash,
+      className: m.hidden,
+      ref: O
+    }), A((e, t) => null != t && (0, r.jsx)(i.animated.div, {
+      className: m.whiteFlash,
       style: e
-    })), (0, r.jsx)(_.ZP, {
+    })), (0, r.jsx)(p.ZP, {
       children: (0, r.jsx)("div", {
-        className: p.hidden,
-        children: M((e, t, n, i) => (null == t ? true : t.thumbnail) != null && (0, r.jsx)(o.animated.img, {
+        className: m.hidden,
+        children: x((e, t, n, l) => (null == t ? true : t.thumbnail) != null && (0, r.jsx)(i.animated.img, {
           src: t.thumbnail,
-          className: p.movingImage,
+          className: m.movingImage,
           style: e
         }))
       })

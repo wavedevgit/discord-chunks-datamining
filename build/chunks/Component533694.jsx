@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 533694, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 533694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -18,32 +17,32 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk418783 = require("./418783.js");
 
-function h(e) {
+function _(e) {
   let {
     guildId: t,
     user: n,
-    username: s
-  } = e, l = (0, i.e7)([a.Z], () => !a.Z.useReducedMotion), c = n.getAvatarURL(t, 56, l), u = (0, r.jsx)("img", {
+    username: o
+  } = e, s = (0, i.e7)([a.Z], () => !a.Z.useReducedMotion), c = n.getAvatarURL(t, 56, s), u = (0, r.jsx)("img", {
     src: c,
-    className: p.userAvatar,
+    className: f.userAvatar,
     alt: ""
   });
   return (0, r.jsxs)("div", {
-    className: p.thankYouCard,
+    className: f.thankYouCard,
     role: "img",
-    "aria-label": _.intl.formatToPlainString(_.t["utf8+f"], {
-      username: s
+    "aria-label": m.intl.formatToPlainString(m.t["utf8+f"], {
+      username: o
     }),
     children: [(0, r.jsx)(d.Z, {
       avatar: u
-    }), (0, r.jsx)(o.Text, {
-      className: p.thankYouText,
+    }), (0, r.jsx)(l.Text, {
+      className: f.thankYouText,
       tag: "p",
       color: "status-positive-text",
       variant: "heading-xl/medium",
-      children: _.intl.format(_.t["52BAtL"], {
-        username: s,
-        usernameHook: (e, t) => (0, r.jsx)(o.Text, {
+      children: m.intl.format(m.t["52BAtL"], {
+        username: o,
+        usernameHook: (e, t) => (0, r.jsx)(l.Text, {
           tag: "span",
           color: "status-positive-text",
           variant: "heading-xxl/extrabold",
@@ -55,34 +54,34 @@ function h(e) {
   })
 }
 
-function m(e) {
-  var t, i, o;
+function g(e) {
+  var t, i, l;
   let {
     channel: a,
     message: d,
-    compact: p
-  } = e, m = (0, s.ZP)(d), g = (0, l.l)({
+    compact: f
+  } = e, g = (0, o.ZP)(d), h = (0, s.l)({
     user: d.author,
     channelId: a.id,
     guildId: a.guild_id,
     messageId: d.id
-  })(m), E = _.intl.format(_.t.TQs67u, {
-    username: m.nick,
-    usernameHook: g,
-    productName: null != (o = null == (i = d.purchaseNotification) || null == (t = i.guild_product_purchase) ? true : t.product_name) ? o : "",
+  })(g), b = m.intl.format(m.t.TQs67u, {
+    username: g.nick,
+    usernameHook: h,
+    productName: null != (l = null == (i = d.purchaseNotification) || null == (t = i.guild_product_purchase) ? true : t.product_name) ? l : "",
     handleProductListingClick: () => {
       var e, t, n;
-      (0, u.uL)(f.Z5c.GUILD_PRODUCT(a.guild_id, null != (n = null == (t = d.purchaseNotification) || null == (e = t.guild_product_purchase) ? true : e.listing_id) ? n : ""))
+      (0, u.uL)(p.Z5c.GUILD_PRODUCT(a.guild_id, null != (n = null == (t = d.purchaseNotification) || null == (e = t.guild_product_purchase) ? true : e.listing_id) ? n : ""))
     }
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       icon: n(570111),
       timestamp: d.timestamp,
-      compact: p,
-      children: E
-    }), (0, r.jsx)(h, {
-      username: m.nick,
+      compact: f,
+      children: b
+    }), (0, r.jsx)(_, {
+      username: g.nick,
       guildId: a.guild_id,
       user: d.author
     })]

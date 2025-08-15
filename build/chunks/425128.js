@@ -17,7 +17,7 @@ let l = 9e5,
       guildId: t,
       leaderboardId: n,
       intervalOffset: i = 0,
-      force: a = false
+      force: o = false
     } = e;
     try {
       var c;
@@ -25,14 +25,14 @@ let l = 9e5,
           url: s.ANM.GUILD_LEADERBOARD(t, n),
           query: {
             interval_offset: i,
-            cached: !a
+            cached: !o
           },
           rejectWithError: false
         })).body,
-        o = null != (c = e.wait_ms_until_next_fetch) ? c : l;
-      return null != o && (e.expires_at = Date.now() + o), e
+        a = null != (c = e.wait_ms_until_next_fetch) ? c : l;
+      return null != a && (e.expires_at = Date.now() + a), e
     } catch (e) {
-      throw new o.Hx(e)
+      throw new a.Hx(e)
     }
   }, u = async e => {
     let {
@@ -52,18 +52,18 @@ let l = 9e5,
       })).body;
       return null != e.update_enqueued_timestamp && i.Z.dispatch({
         type: "SET_USER_LEADERBOARD_LAST_UPDATE_REQUESTED",
-        leaderboardId: a.z,
+        leaderboardId: o.z,
         lastUpdateRequested: e.update_enqueued_timestamp
       }), e
     } catch (e) {
-      throw new o.Hx(e)
+      throw new a.Hx(e)
     }
   }, d = async e => {
     let {
       guildId: t,
       leaderboardId: n,
       sortByStatisticId: i,
-      sortDesc: a,
+      sortDesc: o,
       showWinnerCrown: l
     } = e;
     try {
@@ -71,12 +71,12 @@ let l = 9e5,
         url: s.ANM.GUILD_LEADERBOARD_SETTINGS(t, n),
         body: {
           sort_by_statistic_id: i,
-          sort_desc: a,
+          sort_desc: o,
           show_winner_crown: l
         },
         rejectWithError: false
       })).body
     } catch (e) {
-      throw new o.Hx(e)
+      throw new a.Hx(e)
     }
   }

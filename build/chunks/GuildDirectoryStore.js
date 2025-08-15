@@ -1,14 +1,14 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 273387, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => _
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk975984 = require("./975984.js"),
   Chunk75666 = require("./75666.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function c(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -43,51 +43,51 @@ function u(e, t) {
   }), e
 }
 let d = Object.freeze({}),
-  h = false,
-  p = {},
+  p = false,
+  h = {},
   f = {},
-  g = {},
   m = {},
+  g = {},
   b = {};
 class y extends(r = Chunk442837.ZP.Store) {
   isFetching() {
-    return h
+    return p
   }
   getCurrentCategoryId(e) {
     var t;
-    return null != (t = f[e]) ? t : s.AR.ALL
+    return null != (t = f[e]) ? t : o.AR.ALL
   }
   getDirectoryEntries(e, t) {
     var n;
-    return null != t ? null == (n = g[e]) ? true : n[t] : p[e]
+    return null != t ? null == (n = m[e]) ? true : n[t] : h[e]
   }
   getDirectoryEntry(e, t) {
     var n;
-    return null == (n = p[e]) ? true : n[t]
+    return null == (n = h[e]) ? true : n[t]
   }
   getDirectoryAllEntriesCount(e) {
     var t;
-    return Object.keys(null != (t = p[e]) ? t : {}).length
+    return Object.keys(null != (t = h[e]) ? t : {}).length
   }
   getDirectoryCategoryCounts(e) {
     var t;
-    return null != (t = m[e]) ? t : d
+    return null != (t = g[e]) ? t : d
   }
   getAdminGuildEntryIds(e) {
     return b[e]
   }
 }
-o(y, "displayName", "GuildDirectoryStore");
-let x = new y(Chunk570140.Z, {
+s(y, "displayName", "GuildDirectoryStore");
+let _ = new y(Chunk570140.Z, {
   GUILD_DIRECTORY_FETCH_START: function() {
-    h = true
+    p = true
   },
   GUILD_DIRECTORY_FETCH_SUCCESS: function(e) {
     let {
       channelId: t,
       entries: n
     } = e;
-    h = false;
+    p = false;
     let r = {},
       i = {};
     n.forEach(e => {
@@ -95,29 +95,29 @@ let x = new y(Chunk570140.Z, {
       r[t.guildId] = t, null != i[t.primaryCategoryId] ? i[t.primaryCategoryId][t.guildId] = t : i[t.primaryCategoryId] = {
         [t.guildId]: t
       }
-    }), p[t] = r, g[t] = i
+    }), h[t] = r, m[t] = i
   },
   GUILD_DIRECTORY_FETCH_FAILURE: function() {
-    h = false
+    p = false
   },
   GUILD_DIRECTORY_ENTRY_CREATE: function(e) {
     var t, n, r, i, l;
     let {
-      channelId: o,
+      channelId: s,
       entry: d
-    } = e, h = (0, a.MQ)(d);
-    if (null == h || (null == (t = p[o]) ? true : t[h.guildId]) != null) return;
-    p[o] = u(c({}, p[o]), {
-      [h.guildId]: h
+    } = e, p = (0, a.MQ)(d);
+    if (null == p || (null == (t = h[s]) ? true : t[p.guildId]) != null) return;
+    h[s] = u(c({}, h[s]), {
+      [p.guildId]: p
     });
-    let f = null != (r = h.primaryCategoryId) ? r : s.AR.UNCATEGORIZED;
-    if (g[o] = u(c({}, g[o]), {
-        [f]: u(c({}, null == (n = g[o]) ? true : n[f]), {
-          [h.guildId]: h
+    let f = null != (r = p.primaryCategoryId) ? r : o.AR.UNCATEGORIZED;
+    if (m[s] = u(c({}, m[s]), {
+        [f]: u(c({}, null == (n = m[s]) ? true : n[f]), {
+          [p.guildId]: p
         })
-      }), null != m[o]) {
-      let e = null != (l = null == (i = m[o]) ? true : i[f]) ? l : 0;
-      m[o] = u(c({}, m[o]), {
+      }), null != g[s]) {
+      let e = null != (l = null == (i = g[s]) ? true : i[f]) ? l : 0;
+      g[s] = u(c({}, g[s]), {
         [f]: e + 1
       })
     }
@@ -127,41 +127,41 @@ let x = new y(Chunk570140.Z, {
     let {
       channelId: r,
       guildId: i
-    } = e, l = null == (t = p[r]) ? true : t[i];
+    } = e, l = null == (t = h[r]) ? true : t[i];
     if (null == l) return;
     let a = l.primaryCategoryId,
-      s = Object.assign({}, p[r]);
-    delete s[i], null == (n = b[r]) || n.delete(i), b[r] = new Set(b[r]), p[r] = s;
-    let o = Object.assign({}, g[r][a]);
-    if (delete o[i], g[r] = u(c({}, g[r]), {
-        [a]: o
-      }), null != m[r]) {
-      let e = m[r][a] - 1;
-      m[r] = u(c({}, m[r]), {
+      o = Object.assign({}, h[r]);
+    delete o[i], null == (n = b[r]) || n.delete(i), b[r] = new Set(b[r]), h[r] = o;
+    let s = Object.assign({}, m[r][a]);
+    if (delete s[i], m[r] = u(c({}, m[r]), {
+        [a]: s
+      }), null != g[r]) {
+      let e = g[r][a] - 1;
+      g[r] = u(c({}, g[r]), {
         [a]: e >= 0 ? e : 0
       })
     }
   },
   GUILD_DIRECTORY_ENTRY_UPDATE: function(e) {
-    var t, n, r, i, l, o, d, h, f;
+    var t, n, r, i, l, s, d, p, f;
     let {
       channelId: b,
       entry: y
-    } = e, x = (0, a.MQ)(y), j = null == (t = p[b]) ? true : t[x.guildId];
-    p[b] = u(c({}, p[b]), {
-      [x.guildId]: c({}, j, x)
+    } = e, _ = (0, a.MQ)(y), C = null == (t = h[b]) ? true : t[_.guildId];
+    h[b] = u(c({}, h[b]), {
+      [_.guildId]: c({}, C, _)
     });
-    let _ = null != (i = null == j ? true : j.primaryCategoryId) ? i : s.AR.UNCATEGORIZED,
-      O = null != (l = x.primaryCategoryId) ? l : s.AR.UNCATEGORIZED,
-      v = Object.assign({}, null == (n = g[b]) ? true : n[_]);
-    null != j && _ !== O && delete v[x.guildId], g[b] = u(c({}, g[b]), {
-      [_]: v,
-      [O]: u(c({}, null == (r = g[b]) ? true : r[O]), {
-        [x.guildId]: c({}, j, x)
+    let x = null != (i = null == C ? true : C.primaryCategoryId) ? i : o.AR.UNCATEGORIZED,
+      v = null != (l = _.primaryCategoryId) ? l : o.AR.UNCATEGORIZED,
+      j = Object.assign({}, null == (n = m[b]) ? true : n[x]);
+    null != C && x !== v && delete j[_.guildId], m[b] = u(c({}, m[b]), {
+      [x]: j,
+      [v]: u(c({}, null == (r = m[b]) ? true : r[v]), {
+        [_.guildId]: c({}, C, _)
       })
-    }), O !== _ && null != m[b] && (m[b] = u(c({}, m[b]), {
-      [_]: (null == (o = m[b]) ? true : o[_]) > 0 ? (null == (d = m[b]) ? true : d[_]) - 1 : 0,
-      [O]: (null != (f = null == (h = m[b]) ? true : h[O]) ? f : 0) + 1
+    }), v !== x && null != g[b] && (g[b] = u(c({}, g[b]), {
+      [x]: (null == (s = g[b]) ? true : s[x]) > 0 ? (null == (d = g[b]) ? true : d[x]) - 1 : 0,
+      [v]: (null != (f = null == (p = g[b]) ? true : p[v]) ? f : 0) + 1
     }))
   },
   GUILD_DIRECTORY_CATEGORY_SELECT: function(e) {
@@ -176,7 +176,7 @@ let x = new y(Chunk570140.Z, {
       channelId: t,
       counts: n
     } = e;
-    m[t] = n
+    g[t] = n
   },
   GUILD_DIRECTORY_ADMIN_ENTRIES_FETCH_SUCCESS: function(e) {
     let {

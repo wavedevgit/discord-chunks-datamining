@@ -149,15 +149,15 @@ function T(e) {
   });
   if (r) returntrue;
   let i = null != (t = f.Z.getFeedbackConfig(e)) ? t : I[e],
-    o = [A, S],
+    a = [A, S],
     {
-      doGroupEligibilityCheck: a
+      doGroupEligibilityCheck: o
     } = (0, h.T)({
       location: "FeedbackManager"
     });
-  a ? o.push(C) : o.push(e => N(e, e));
+  o ? a.push(C) : a.push(e => N(e, e));
   let s = null != (n = i.eligibilityChecks) ? n : [];
-  return o.every(e => e(i)) && s.every(e => e(i))
+  return a.every(e => e(i)) && s.every(e => e(i))
 }
 
 function S(e) {
@@ -191,9 +191,9 @@ function N(e, t) {
     location: "FeedbackManager/".concat(e.feedbackType)
   });
   if (n) {
-    var o, a, s;
-    let n, l = null == (o = u.A2.getSetting()[t.feedbackType]) ? true : o.lastImpressionTime;
-    return (null == l || Number.isNaN(l)) && null != t.storageKey && (null == (n = null != (a = i.K.get(t.storageKey)) ? a : true) || Number.isNaN(n) || u.A2.updateSetting(e => y(E({}, e), {
+    var a, o, s;
+    let n, l = null == (a = u.A2.getSetting()[t.feedbackType]) ? true : a.lastImpressionTime;
+    return (null == l || Number.isNaN(l)) && null != t.storageKey && (null == (n = null != (o = i.K.get(t.storageKey)) ? o : true) || Number.isNaN(n) || u.A2.updateSetting(e => y(E({}, e), {
       [t.feedbackType]: y(E({}, e[t.feedbackType]), {
         lastImpressionTime: n
       })

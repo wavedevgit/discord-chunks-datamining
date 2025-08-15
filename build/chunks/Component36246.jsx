@@ -1,4 +1,4 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 36246, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -20,9 +20,9 @@ function u(e) {
   } = e, {
     horizontalScrollNotice: u,
     handleScroll: d,
-    handleSetScrollerRef: h,
-    handleSetContainerRef: p
-  } = (0, o.Z)(t), f = (0, r.jsx)("div", {
+    handleSetScrollerRef: p,
+    handleSetContainerRef: h
+  } = (0, s.Z)(t), f = (0, r.jsx)("div", {
     className: c.tierPreviewsContainer,
     children: (0, r.jsx)("div", {
       className: l()(c.tierPreviews, i),
@@ -30,16 +30,16 @@ function u(e) {
     })
   });
   return a.tq || (f = (0, r.jsxs)(r.Fragment, {
-    children: [u, (0, r.jsx)(s.Den, {
+    children: [u, (0, r.jsx)(o.Den, {
       className: c.scroller,
       orientation: "horizontal",
-      ref: h,
+      ref: p,
       onScroll: d,
       children: f
     })]
   })), (0, r.jsx)("div", {
     className: c.carouselMaxWidth,
-    ref: p,
+    ref: h,
     children: f
   })
 }

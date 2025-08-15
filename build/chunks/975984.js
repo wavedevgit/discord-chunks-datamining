@@ -1,9 +1,9 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 975984, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Lz: () => d,
-  MQ: () => o,
-  TR: () => h,
+  MQ: () => s,
+  TR: () => p,
   Th: () => u,
   _N: () => c
 }), require("./953529.js"), require("./388685.js");
@@ -13,9 +13,9 @@ var Chunk512722 = require("./512722.js"),
   a = require.n(Chunk392711),
   Chunk75666 = require("./75666.js");
 
-function o(e) {
-  var t, n, r, l, a, o, c;
-  return i()(e.type === s.C2.GUILD, "Directory entries must be connected to a guild!"), {
+function s(e) {
+  var t, n, r, l, a, s, c;
+  return i()(e.type === o.C2.GUILD, "Directory entries must be connected to a guild!"), {
     channelId: e.directory_channel_id,
     guildId: e.entity_id,
     type: e.type,
@@ -28,7 +28,7 @@ function o(e) {
     splash: null == (r = e.guild) ? true : r.splash,
     features: new Set(null == (l = e.guild) ? true : l.features),
     approximateMemberCount: null == (a = e.guild) ? true : a.approximate_member_count,
-    approximatePresenceCount: null == (o = e.guild) ? true : o.approximate_presence_count,
+    approximatePresenceCount: null == (s = e.guild) ? true : s.approximate_presence_count,
     featurableInDirectory: null == (c = e.guild) ? true : c.featurable_in_directory
   }
 }
@@ -43,6 +43,6 @@ function d(e) {
   return (t = e.filter(e => e.featurableInDirectory), a().orderBy(t, [e => e.createdAt], ["desc"])).slice(0, c)
 }
 
-function h(e) {
+function p(e) {
   return u(e)
 }

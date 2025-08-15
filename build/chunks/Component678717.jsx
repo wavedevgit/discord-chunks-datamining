@@ -114,7 +114,7 @@ function em(e) {
       group: el.v0.EVENTS,
       render: () => (0, n.jsx)(S.Z, {})
     }];
-    return f.Z.isDeveloper && (e.push({
+    return v.Z.isDeveloper && (e.push({
       id: "shop",
       name: "Shop",
       group: el.v0.BILLING,
@@ -138,7 +138,7 @@ function em(e) {
       id: "feedback",
       name: "Feedback",
       group: el.v0.USERS,
-      render: () => (0, n.jsx)(w.Z, {})
+      render: () => (0, n.jsx)(I.Z, {})
     }), e.push({
       id: "overlay",
       name: "Overlay v3",
@@ -178,7 +178,7 @@ function em(e) {
       id: "overlays",
       name: "Dev Overlays",
       group: el.v0.DEVELOPMENT,
-      render: () => (0, n.jsx)(k.Z, {
+      render: () => (0, n.jsx)(R.Z, {
         devSettingsCategory: _.zU.OVERLAYS
       })
     }), e.push({
@@ -190,7 +190,7 @@ function em(e) {
       id: "reporting",
       name: "Reporting",
       group: el.v0.EXPERIMENTS,
-      render: () => (0, n.jsx)(k.Z, {
+      render: () => (0, n.jsx)(R.Z, {
         devSettingsCategory: _.zU.REPORTING
       })
     }), e.push({
@@ -202,12 +202,12 @@ function em(e) {
       id: "modals",
       name: "Modals",
       group: el.v0.UI,
-      render: () => (0, n.jsx)(U.Z, {})
+      render: () => (0, n.jsx)(B.Z, {})
     }), e.push({
       id: "layers",
       name: "Layers",
       group: el.v0.UI,
-      render: () => (0, n.jsx)(M.Z, {})
+      render: () => (0, n.jsx)(U.Z, {})
     }), e.push({
       id: "affinity",
       name: "Affinity",
@@ -218,7 +218,7 @@ function em(e) {
       name: "Widgets",
       group: el.v0.USERS,
       render: () => (0, n.jsx)(en.Z, {})
-    }), f.Z.isDeveloper && (e.push({
+    }), v.Z.isDeveloper && (e.push({
       id: "content_inventory",
       name: "Content Inventory",
       group: el.v0.USERS,
@@ -262,12 +262,12 @@ function em(e) {
       id: "fractional_nitro",
       name: "Fractional Nitro",
       group: el.v0.PREMIUM,
-      render: () => (0, n.jsx)(I.Z, {})
+      render: () => (0, n.jsx)(w.Z, {})
     })), e.push({
       id: "gifting_intent",
       name: "Gifting Intent",
       group: el.v0.PREMIUM,
-      render: () => (0, n.jsx)(R.Z, {})
+      render: () => (0, n.jsx)(k.Z, {})
     }), e.push({
       id: "voice_filters",
       name: "Voice Filters",
@@ -292,7 +292,7 @@ function em(e) {
   }, []), {
     TabBar: i,
     renderSelectedTab: d,
-    selectedTabId: v
+    selectedTabId: f
   } = (0, el.ZP)({
     tabs: l,
     initialSelectedTabId: null != (t = g.Z.lastOpenTabId) ? t : true,
@@ -306,9 +306,9 @@ function em(e) {
     type: s.ImpressionTypes.PANE,
     name: s.ImpressionNames.VIEW_PANEL_DEVTOOLS,
     properties: {
-      panel: v
+      panel: f
     }
-  }), (0, n.jsxs)(B.Gk, {
+  }), (0, n.jsxs)(M.Gk, {
     children: [(0, n.jsxs)(x.ZP, {
       className: ec.headerBar,
       toolbar: a ? null : (0, n.jsxs)(n.Fragment, {
@@ -341,7 +341,7 @@ function em(e) {
       }), (0, n.jsx)(x.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, n.jsx)(i, {}), d(), (0, n.jsx)(B.Br, {
+    }), (0, n.jsx)(i, {}), d(), (0, n.jsx)(M.Br, {
       className: eo.layerContainer
     }), y ? (0, n.jsx)(eu, {}) : null]
   })

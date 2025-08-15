@@ -19,11 +19,11 @@ function s(e) {
     size: c
   } = e;
   return (0, r.jsxs)(i.Z, {
-    className: a.root,
+    className: o.root,
     justify: i.Z.Justify.CENTER,
     align: i.Z.Align.CENTER,
     direction: i.Z.Direction.VERTICAL,
-    children: [(0, r.jsx)(o.Z, {
+    children: [(0, r.jsx)(a.Z, {
       header: t,
       description: n,
       errorCodeMessage: s,

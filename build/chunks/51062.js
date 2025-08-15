@@ -64,20 +64,20 @@ function v(e, t, n) {
   let {
     channel: P,
     type: w
-  } = e, [D, L] = r.useState(() => (0, p.PA)()), x = (0, i.Z)(), M = (0, o.e7)([u.ZP, _.default], () => {
+  } = e, [D, L] = r.useState(() => (0, p.PA)()), x = (0, i.Z)(), M = (0, a.e7)([u.ZP, _.default], () => {
     var e, t;
     let n = _.default.getCurrentUser();
     return null != (t = null != P.guild_id && null != n ? null == (e = u.ZP.getMember(P.guild_id, n.id)) ? true : e.isPending : null) && t
   }), {
-    canMentionEveryone: j,
-    hidePersonalInformation: k
-  } = (0, o.cj)([d.Z, f.Z], () => ({
+    canMentionEveryone: k,
+    hidePersonalInformation: j
+  } = (0, a.cj)([d.Z, f.Z], () => ({
     canMentionEveryone: P.isPrivate() || M || w === l.Ie.RULES_INPUT || d.Z.can(m.Plq.MENTION_EVERYONE, P),
     hidePersonalInformation: f.Z.hidePersonalInformation
   }), [P, w, M]), {
     activeCommand: U,
     activeCommandOption: G
-  } = (0, o.cj)([s.Z], () => ({
+  } = (0, a.cj)([s.Z], () => ({
     activeCommand: s.Z.getActiveCommand(P.id),
     activeCommandOption: s.Z.getActiveOption(P.id)
   })), B = (0, h.Z)({
@@ -85,21 +85,21 @@ function v(e, t, n) {
     scrollerRef: n,
     state: D,
     onFocus: e => Y.setSelectedIndex(e)
-  }), Z = null == (E = e.editorRef.current) ? true : E.getCurrentWord(), F = null == (y = e.editorRef.current) ? true : y.getSlateEditor(), V = null;
-  null != F && (V = null != (A = null == (S = c.bN.getSelectedParentOfType(F, p.un)) ? true : S[0]) ? A : null);
+  }), V = null == (E = e.editorRef.current) ? true : E.getCurrentWord(), F = null == (y = e.editorRef.current) ? true : y.getSlateEditor(), Z = null;
+  null != F && (Z = null != (A = null == (S = c.bN.getSelectedParentOfType(F, p.un)) ? true : S[0]) ? A : null);
   let H = O(b({}, e), {
       navigator: B,
       activeCommand: U,
       activeCommandOption: G,
-      activeInlineAutocompleteInput: V,
+      activeInlineAutocompleteInput: Z,
       canMentionUsers: null != (N = null == (v = w.users) ? true : v.allowMentioning) && N,
-      canMentionEveryone: j,
-      hidePersonalInformation: k,
+      canMentionEveryone: k,
+      hidePersonalInformation: j,
       hideMentionDescription: w === l.Ie.RULES_INPUT,
       emojiIntention: w === l.Ie.RULES_INPUT ? g.Hz.COMMUNITY_CONTENT : g.Hz.CHAT,
-      currentWord: null != (C = null == Z ? true : Z.word) ? C : "",
-      currentWordIsAtStart: (null == Z ? true : Z.isAtStart) === true,
-      optionText: null != G ? (0, a.KF)({
+      currentWord: null != (C = null == V ? true : V.word) ? C : "",
+      currentWordIsAtStart: (null == V ? true : V.isAtStart) === true,
+      optionText: null != G ? (0, o.KF)({
         [G.name]: null != (R = null == (I = e.editorRef.current) ? true : I.getCurrentCommandOptionValue()) ? R : []
       }, G.name) : ""
     }),

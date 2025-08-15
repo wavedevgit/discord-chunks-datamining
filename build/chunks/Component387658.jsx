@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 387658, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 387658, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => H
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -35,62 +34,61 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk202874 = require("./202874.js"),
   Chunk698342 = require("./698342.js");
-let x = 5,
-  M = "placeholder",
-  j = [, , , , , ].fill(M);
+let Z = "placeholder",
+  w = [, , , , , ].fill(Z);
 
 function k(e) {
   var t, n;
   let {
-    context: o,
+    context: r,
     command: a,
-    section: l,
+    section: s,
     sectionName: c
   } = e, d = i.useCallback(() => {
-    let e = O.Z.entrypoint();
-    y.yT(v.ti.COMMAND), (0, E.Mo)({
+    let e = j.Z.entrypoint();
+    g.yT(N.ti.COMMAND), (0, x.Mo)({
       command: a,
-      location: m.Vh.APP_LAUNCHER_APPLICATION_VIEW,
+      location: v.Vh.APP_LAUNCHER_APPLICATION_VIEW,
       sectionName: c
-    }), "channel" === o.type && (_.Po({
-      channelId: o.channel.id,
+    }), "channel" === r.type && (m.Po({
+      channelId: r.channel.id,
       command: a,
-      section: l,
-      location: m.Vh.APP_LAUNCHER_APPLICATION_VIEW,
+      section: s,
+      location: v.Vh.APP_LAUNCHER_APPLICATION_VIEW,
       sectionName: c,
       source: e,
-      commandOrigin: m.bB.APPLICATION_LAUNCHER
-    }), b.S.dispatch(R.CkL.FOCUS_CHANNEL_TEXT_AREA, {
-      channelId: o.channel.id
+      commandOrigin: v.bB.APPLICATION_LAUNCHER
+    }), b.S.dispatch(I.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+      channelId: r.channel.id
     }))
-  }, [o, a, l, c]), f = (null != (n = null == (t = a.options) ? true : t.length) ? n : 0) > 0, p = i.useMemo(() => (0, N.ae)(a.displayDescription, true), [a.displayDescription]), h = i.useMemo(() => (0, r.jsxs)("div", {
-    className: L.commandTextContainer,
-    children: [(0, r.jsx)(u.Text, {
+  }, [r, a, s, c]), p = (null != (n = null == (t = a.options) ? true : t.length) ? n : 0) > 0, f = i.useMemo(() => (0, A.ae)(a.displayDescription, true), [a.displayDescription]), h = i.useMemo(() => (0, l.jsxs)("div", {
+    className: R.commandTextContainer,
+    children: [(0, l.jsx)(u.Text, {
       variant: "text-sm/semibold",
       color: "header-primary",
       children: a.displayName
-    }), (0, r.jsx)(u.Text, {
+    }), (0, l.jsx)(u.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
       lineClamp: 1,
-      children: p
+      children: f
     })]
-  }), [a.displayName, p]);
-  return (0, r.jsxs)(u.P3F, {
-    className: L.command,
+  }), [a.displayName, f]);
+  return (0, l.jsxs)(u.P3F, {
+    className: R.command,
     onClick: d,
-    children: [(0, r.jsx)(u.Rny, {
-      className: L.commandFocusBlock,
+    children: [(0, l.jsx)(u.Rny, {
+      className: R.commandFocusBlock,
       children: h
-    }), f ? (0, r.jsx)(s.F, {}) : (0, r.jsx)(G, {
-      context: o,
+    }), p ? (0, l.jsx)(o.F, {}) : (0, l.jsx)(U, {
+      context: r,
       command: a,
       sectionName: c
     })]
   })
 }
 
-function U() {
+function M() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     {
       styleLarge: t,
@@ -105,7 +103,7 @@ function U() {
         height: "auto"
       }
     }), []),
-    o = Chunk73800.useMemo(() => (0, Chunk255367.jsxs)("div", {
+    r = Chunk73800.useMemo(() => (0, Chunk255367.jsxs)("div", {
       className: Chunk698342.commandTextContainerPlaceholder,
       children: [(0, Chunk255367.jsx)("div", {
         className: Chunk202874.textPlaceholder,
@@ -137,78 +135,78 @@ function U() {
   })
 }
 
-function G(e) {
+function U(e) {
   let {
     context: t,
     command: n,
-    sectionName: o
+    sectionName: r
   } = e;
-  (0, p.PL)(true, true), (0, p.em)(t, true, true);
-  let a = (0, I.D)(t),
-    [s, c] = i.useState(false),
+  (0, f.PL)(true, true), (0, f.em)(t, true, true);
+  let a = (0, C.D)(t),
+    [o, c] = i.useState(false),
     d = i.useCallback(async e => {
       if ("channel" !== t.type) return;
       e.stopPropagation();
-      let r = O.Z.lastShownEntrypoint();
+      let l = j.Z.lastShownEntrypoint();
       try {
         let {
           isAuthorized: e
-        } = await (0, g.L)({
+        } = await (0, y.L)({
           applicationId: n.applicationId,
           channel: "channel" === t.type ? t.channel : true,
           commandIntegrationTypes: n.integration_types,
           appLauncherContext: {
-            entrypoint: r,
-            location: m.Vh.APP_LAUNCHER_APPLICATION_VIEW,
-            sectionName: o
+            entrypoint: l,
+            location: v.Vh.APP_LAUNCHER_APPLICATION_VIEW,
+            sectionName: r
           }
         });
-        e && (await (0, A.Y$)({
+        e && (await (0, O.Y$)({
           command: n,
           optionValues: {},
           context: a,
-          sectionName: o,
-          commandOrigin: m.bB.APP_LAUNCHER_APPLICATION_VIEW
-        }), y.yT(v.ti.COMMAND))
+          sectionName: r,
+          commandOrigin: v.bB.APP_LAUNCHER_APPLICATION_VIEW
+        }), g.yT(N.ti.COMMAND))
       } finally {
         c(false)
       }
-    }, [n, t, o, a]);
-  return (0, r.jsx)(u.zxk, {
+    }, [n, t, r, a]);
+  return (0, l.jsx)(u.zxk, {
     type: "submit",
     onClick: d,
-    disabled: s,
+    disabled: o,
     variant: "secondary",
-    "aria-label": w.intl.formatToPlainString(w.t.UXw6W1, {
+    "aria-label": T.intl.formatToPlainString(T.t.UXw6W1, {
       commandName: n.untranslatedName
     }),
-    text: w.intl.string(w.t.TXNS7e),
-    icon: l.U,
+    text: T.intl.string(T.t.TXNS7e),
+    icon: s.U,
     iconPosition: "end",
     size: "md"
   })
 }
 
-function B(e) {
+function D(e) {
   let {
     context: t,
     commands: n,
     section: i,
-    headerName: o,
+    headerName: r,
     sectionName: a,
-    children: s
+    children: o
   } = e;
-  return 0 === n.length ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)("div", {
-      className: L.commandListHeader,
-      children: [(0, r.jsx)(u.X6q, {
+  return 0 === n.length ? null : (0, l.jsxs)(l.Fragment, {
+    children: [(0, l.jsxs)("div", {
+      className: R.commandListHeader,
+      children: [(0, l.jsx)(u.X6q, {
         variant: "heading-sm/semibold",
-        children: o
-      }), s]
-    }), (0, r.jsx)("ul", {
-      className: L.commandContainer,
-      "aria-label": o,
-      children: n.map((e, n) => e === M ? (0, r.jsx)(U, {}, e + n) : (0, r.jsx)(k, {
+        children: r
+      }), o]
+    }), (0, l.jsx)("ul", {
+      className: R.commandContainer,
+      "aria-label": r,
+      children: n.map((e, n) => e === Z ? (0, l.jsx)(M, {}, e + n) : (0, l.jsx)(k, {
         context: t,
         command: e,
         section: i,
@@ -218,19 +216,19 @@ function B(e) {
   })
 }
 
-function Z(e) {
+function H(e) {
   var t;
   let {
     context: n,
-    application: o,
+    application: r,
     sectionName: a,
-    installOnDemand: s,
-    setHasCommands: l
+    installOnDemand: o,
+    setHasCommands: s
   } = e, {
     filterSection: c,
     commandsByActiveSection: u,
-    sectionDescriptors: f,
-    loading: _
+    sectionDescriptors: p,
+    loading: m
   } = h.wi({
     context: n,
     filters: {
@@ -238,49 +236,49 @@ function Z(e) {
     },
     options: {
       placeholderCount: 0,
-      limit: P.tn,
+      limit: S.tn,
       includeFrecency: true,
-      allowApplicationState: s,
-      installOnDemand: s,
-      applicationId: o.id
+      allowApplicationState: o,
+      installOnDemand: o,
+      applicationId: r.id
     },
     allowFetch: true
-  }), p = null != (t = f.find(e => e.id === o.id)) ? t : null, {
-    sortOrder: m,
-    setSortOrder: g,
-    commands: E,
+  }), f = null != (t = p.find(e => e.id === r.id)) ? t : null, {
+    sortOrder: v,
+    setSortOrder: y,
+    commands: x,
     canSort: b
-  } = (0, S.Z)({
-    sectionId: o.id,
+  } = (0, P.Z)({
+    sectionId: r.id,
     commandsByActiveSection: u
   });
   i.useEffect(() => {
-    c(o.id)
-  }, [o.id, c]);
-  let y = (0, T.Z)({
+    c(r.id)
+  }, [r.id, c]);
+  let g = (0, E.Z)({
     context: n,
-    commands: E,
-    limit: x
+    commands: x,
+    limit: 5
   });
   return (i.useEffect(() => {
-    l(E.length > 0)
-  }, [l, E]), _ || 0 !== E.length) ? (0, r.jsxs)("ul", {
-    className: L.contentContainer,
-    children: [(0, r.jsx)(B, {
+    s(x.length > 0)
+  }, [s, x]), m || 0 !== x.length) ? (0, l.jsxs)("ul", {
+    className: R.contentContainer,
+    children: [(0, l.jsx)(D, {
       context: n,
-      section: p,
-      commands: y,
-      headerName: w.intl.string(w.t.acSE0t),
+      section: f,
+      commands: g,
+      headerName: T.intl.string(T.t.acSE0t),
       sectionName: a
-    }), (0, r.jsx)(B, {
+    }), (0, l.jsx)(D, {
       context: n,
-      section: p,
-      commands: _ ? j : E,
-      headerName: w.intl.string(w.t.DUU9Ly),
+      section: f,
+      commands: m ? w : x,
+      headerName: T.intl.string(T.t.DUU9Ly),
       sectionName: a,
-      children: b && (0, r.jsx)(C.Z, {
-        sortOrder: m,
-        onSortOptionClick: g
+      children: b && (0, l.jsx)(_.Z, {
+        sortOrder: v,
+        onSortOptionClick: y
       })
     })]
   }) : null

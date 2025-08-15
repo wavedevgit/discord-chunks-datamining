@@ -11,5 +11,5 @@ var Chunk127849 = require("./127849.js"),
   u = Chunk571078("wks"),
   d = Chunk677671 ? c.for || c : c && c.withoutSetter || Chunk744569;
 module.exports = function(e) {
-  return o(u, e) || (u[e] = s && o(c, e) ? c[e] : d("Symbol." + e)), u[e]
+  return a(u, e) || (u[e] = s && a(c, e) ? c[e] : d("Symbol." + e)), u[e]
 }

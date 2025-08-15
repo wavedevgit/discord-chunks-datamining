@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 299852, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => E
 }), require("./35282.js"), require("./388685.js");
 var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -28,7 +28,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 Chunk442837.ZP.initialize();
-class E extends(r = Chunk73800.PureComponent) {
+class v extends(r = Chunk73800.PureComponent) {
   componentDidMount() {
     let e = (0, Chunk129293.Z)(this.props.location),
       t = (0, Chunk593473.parse)(this.props.location.search);
@@ -85,7 +85,7 @@ class E extends(r = Chunk73800.PureComponent) {
         className: x.marginTop8,
         color: d.zx.Colors.LINK,
         look: d.zx.Looks.LINK,
-        onClick: () => r(m.Z5c.SETTINGS("notifications", g.vG)),
+        onClick: () => r(g.Z5c.SETTINGS("notifications", f.vG)),
         children: _.intl.string(_.t.YYTira)
       })]
     })
@@ -156,9 +156,9 @@ class E extends(r = Chunk73800.PureComponent) {
     })
   }
 }
-b(E, "defaultProps", {
+b(v, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let v = Chunk442837.ZP.connectStores([Chunk896797.Z], () => ({
+let E = Chunk442837.ZP.connectStores([Chunk896797.Z], () => ({
   defaultRoute: Chunk896797.Z.defaultRoute
-}))(E)
+}))(v)

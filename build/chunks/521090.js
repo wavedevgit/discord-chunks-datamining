@@ -25,7 +25,7 @@ function h(e) {
     case r.d.GUILD_VOICE:
     case r.d.GUILD_STAGE_VOICE:
     case r.d.GUILD_CATEGORY:
-      return '#"'.concat((0, a.le)(e.name), '"');
+      return '#"'.concat((0, o.le)(e.name), '"');
     default:
       let t = l.ZP.getTextChannelNameDisambiguations(e.guild_id)[e.id];
       return "#".concat(null != t ? t.name : e.name)
@@ -38,21 +38,21 @@ function m(e) {
 let g = {
   sentinel: Chunk761652.zy,
   matches: (e, t, n, r, i) => i.mentions.channel !== d.nS.DENY && !e.isPrivate(),
-  queryResults(e, t, n, r, o) {
-    let a, s, u = l.sH;
-    return n.charAt(0) === i.xQ.VOICE_CHANNEL && (u = l.Zb, n = n.substring(1)), r.forNonStringCommandOption ? a = c.ZP.queryApplicationCommandChannelResults({
+  queryResults(e, t, n, r, a) {
+    let o, s, u = l.sH;
+    return n.charAt(0) === i.xQ.VOICE_CHANNEL && (u = l.Zb, n = n.substring(1)), r.forNonStringCommandOption ? o = c.ZP.queryApplicationCommandChannelResults({
       query: n,
       channel: e,
       channelTypes: r.allowedChannelTypes
-    }) : (a = c.ZP.queryChannelResults({
+    }) : (o = c.ZP.queryChannelResults({
       query: n,
       channel: e,
       type: u
     }), null != t && (s = c.ZP.queryStaticRouteChannels({
       query: n,
       guild: t
-    }), a.channels.unshift(...s))), {
-      results: a,
+    }), o.channels.unshift(...s))), {
+      results: o,
       staticRouteChannels: s
     }
   },
@@ -61,7 +61,7 @@ let g = {
         results: {
           channels: r
         },
-        selectedIndex: a,
+        selectedIndex: o,
         query: l,
         options: c,
         onHover: d,
@@ -70,13 +70,13 @@ let g = {
       h = l.charAt(0) === i.xQ.VOICE_CHANNEL;
     return h ? (t = p.t.rMUL39, n = p.intl.string(p.t.CYnO4u), l = l.substring(1)) : c.forNonStringCommandOption ? (t = p.t.upNFT0, n = p.intl.string(p.t.OGiMXF)) : (t = p.t.UhnmJC, n = p.intl.string(p.t.nIfr0d)), (0, u.HI)({
       query: l,
-      selectedIndex: a,
+      selectedIndex: o,
       autocompletes: r,
       onHover: d,
       onClick: _,
       titleWithQuery: t,
       titleWithoutQuery: n,
-      Component: o.ZP.Channel,
+      Component: a.ZP.Channel,
       getProps: e => ({
         channel: e,
         key: e.id,

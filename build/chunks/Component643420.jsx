@@ -110,9 +110,9 @@ let h = 1e3 / 60,
 function y(e) {
   let {
     children: t
-  } = e, [n, l] = i.useState(false), d = (0, a.bp)(), [_, y] = i.useState(null), {
+  } = e, [n, l] = i.useState(false), d = (0, o.bp)(), [_, y] = i.useState(null), {
     confettiCanvas: O
-  } = i.useContext(s.h), v = (0, o.uR)(O, _), I = i.useMemo(() => ({
+  } = i.useContext(s.h), v = (0, a.uR)(O, _), I = i.useMemo(() => ({
     triggerAnimation: () => l(true),
     untriggerAnimation: () => l(false)
   }), []), T = i.useCallback(() => {
@@ -138,7 +138,7 @@ function y(e) {
     return () => clearInterval(e)
   }, [n, T]), d === u.IlC.OVERLAY) ? t : (0, r.jsxs)(c.Rm.Provider, {
     value: I,
-    children: [t, (0, r.jsx)(o.Ji, {
+    children: [t, (0, r.jsx)(a.Ji, {
       ref: y,
       colors: E,
       sprites: b,

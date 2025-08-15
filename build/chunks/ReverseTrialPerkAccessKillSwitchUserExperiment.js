@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk818083 = require("./818083.js"),
   Chunk630388 = require("./630388.js"),
   Chunk474936 = require("./474936.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-02_reverse_trial_perk_access_kill_switch",
     label: "Reverse Trial Perk Access Kill Switch",
@@ -22,7 +22,7 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  s = (e, t) => null != t && !!(0, i.yE)(t.purchasedFlags, o.in.ON_REVERSE_TRIAL) && a.getCurrentConfig({
+  s = (e, t) => null != t && !!(0, i.yE)(t.purchasedFlags, a.in.ON_REVERSE_TRIAL) && o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false

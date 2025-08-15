@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 303135, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 303135, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -18,8 +17,8 @@ function u(e) {
     message: t,
     usernameHook: n,
     compact: u
-  } = e, d = (0, s.ZP)(t), f = n(d);
-  return (0, r.jsx)(l.Z, {
+  } = e, d = (0, o.ZP)(t), p = n(d);
+  return (0, r.jsx)(s.Z, {
     iconNode: (0, r.jsx)(i.vdY, {
       size: "xs",
       color: "currentColor"
@@ -28,14 +27,14 @@ function u(e) {
     compact: u,
     children: c.intl.format(c.t["4wLp29"], {
       username: d.nick,
-      usernameHook: f,
+      usernameHook: p,
       editGroupButton: (0, r.jsx)(i.Text, {
         tag: "span",
         variant: "text-md/medium",
         color: "text-link",
         children: c.intl.string(c.t["5Q9+/P"])
       }, "edit-group-button-".concat(t.id)),
-      onEditGroup: () => (0, a.B)(t.channel_id, o.Z.GROUP_DM_SYSTEM_MESSAGE_ICON)
+      onEditGroup: () => (0, a.B)(t.channel_id, l.Z.GROUP_DM_SYSTEM_MESSAGE_ICON)
     })
   })
 }

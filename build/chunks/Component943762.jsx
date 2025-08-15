@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 943762, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 943762, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => c,
   r: () => u
@@ -20,12 +19,12 @@ function c(e) {
     activityText: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: l.wrapper,
-    children: [(0, r.jsx)(o.ZP, {
+    className: s.wrapper,
+    children: [(0, r.jsx)(l.ZP, {
       guildId: n,
       users: t,
       max: 6,
-      size: o.u8.SIZE_16
+      size: l.u8.SIZE_16
     }), (0, r.jsxs)(i.Text, {
       variant: "text-xs/normal",
       color: "none",
@@ -38,15 +37,15 @@ function u(e) {
   switch (null == e ? true : e.type) {
     case a.IIU.STREAMING:
       return {
-        text: s.intl.string(s.t["Jpkr/v"]), Icon: i.m3e
+        text: o.intl.string(o.t["Jpkr/v"]), Icon: i.m3e
       };
     case a.IIU.LISTENING:
       return {
-        text: s.intl.string(s.t.kUEnxM), Icon: i.RZG
+        text: o.intl.string(o.t.kUEnxM), Icon: i.RZG
       };
     default:
       return {
-        text: s.intl.string(s.t.BMTj29), Icon: i.iWm
+        text: o.intl.string(o.t.BMTj29), Icon: i.iWm
       }
   }
 }

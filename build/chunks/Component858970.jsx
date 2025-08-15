@@ -1,4 +1,4 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 858970, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -53,24 +53,24 @@ function I(e) {
     transitionState: T,
     openedAt: Z,
     onHide: N,
-    sourceAnalyticsLocations: S = []
-  } = e, w = n === x.ME ? true : n, A = (0, i.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
+    sourceAnalyticsLocations: w = []
+  } = e, S = n === h.ME ? true : n, A = (0, i.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: C
-  } = (0, c.ZP)([...S, A ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), D = (0, f.ZB)({
+  } = (0, c.ZP)([...w, A ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), D = (0, f.ZB)({
     layout: "MODAL_V2",
     userId: t.id,
     showGuildProfile: true,
-    guildId: w,
+    guildId: S,
     channelId: I,
     messageId: P,
     roleId: E
   }), L = [{
     icon: o.owK,
-    description: h.intl.string(h.t.kcuWvb)
+    description: x.intl.string(x.t.kcuWvb)
   }, {
     icon: o.owK,
-    description: h.intl.string(A ? h.t.QxrDY2 : h.t.W6fjkZ)
-  }], R = (0, m.ZP)(t.id, w), G = u.ZP.getName(null == R ? true : R.guildId, I, t), k = h.intl.formatToPlainString(h.t.KRe1Fh, {
+    description: x.intl.string(A ? x.t.QxrDY2 : x.t.W6fjkZ)
+  }], R = (0, m.ZP)(t.id, S), G = u.ZP.getName(null == R ? true : R.guildId, I, t), k = x.intl.formatToPlainString(x.t.KRe1Fh, {
     name: G
   });
   return (0, r.jsx)(c.Gt, {
@@ -97,18 +97,18 @@ function I(e) {
             className: v.content,
             children: [(0, r.jsx)(g.Z, {
               user: t,
-              guildId: w,
+              guildId: S,
               iconColor: o.TVs.colors.TEXT_DEFAULT
             }), (0, r.jsxs)("div", {
               className: v.textContainer,
               children: [(0, r.jsx)(o.X6q, {
                 variant: "heading-xl/bold",
                 color: "text-default",
-                children: h.intl.string(h.t.b33pLC)
+                children: x.intl.string(x.t.b33pLC)
               }), (0, r.jsx)(o.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
-                children: h.intl.format(A ? h.t.T7QiLi : h.t.MnEow8, {
+                children: x.intl.format(A ? x.t.T7QiLi : x.t.MnEow8, {
                   username: G
                 })
               })]

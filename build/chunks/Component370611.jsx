@@ -2,7 +2,7 @@
 /** chunk id: 370611, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -72,14 +72,14 @@ function L(e, t) {
 }
 let x = 10,
   M = 15,
-  j = "leaderboard.png";
+  k = "leaderboard.png";
 
-function k(e) {
+function j(e) {
   let {
     leaderboard: t,
     previewMode: n = false,
     trackRankingItemInteraction: s
-  } = e, f = (0, o.e7)([d.default], () => d.default.getId()), _ = (0, o.e7)([u.default], () => u.default.locale), {
+  } = e, f = (0, a.e7)([d.default], () => d.default.getId()), _ = (0, a.e7)([u.default], () => u.default.locale), {
     rankChanges: h
   } = (0, y.Z)({
     guildId: t.guild_id,
@@ -98,10 +98,10 @@ function k(e) {
       sort_by_statistic_id: n
     } = t.guild_settings;
     return t.users.map((t, r) => {
-      var i, o;
+      var i, a;
       return {
         userId: t.user_id,
-        value: null != (o = null == (i = t.statistics[n]) ? true : i.value) ? o : 0,
+        value: null != (a = null == (i = t.statistics[n]) ? true : i.value) ? a : 0,
         rank: r + 1,
         previousRank: e.get(t.user_id)
       }
@@ -136,15 +136,15 @@ function k(e) {
       className: R.table,
       children: [(0, r.jsxs)("div", {
         className: R.headerRow,
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-xxs/medium",
           className: R.headerRank,
           children: "#"
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-xxs/medium",
           className: R.headerPlayer,
           children: C.intl.string(C.t["6ii1+/"])
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-xxs/medium",
           className: R.headerValue,
           children: (0, E.s)({
@@ -153,7 +153,7 @@ function k(e) {
             aggregationType: null == P ? true : P.aggregation_type
           })
         })]
-      }), (0, r.jsxs)(a.u2D, {
+      }), (0, r.jsxs)(o.u2D, {
         className: R.rows,
         children: [m.map(e => (0, i.createElement)(G, L(w({}, e), {
           key: e.userId,
@@ -177,7 +177,7 @@ function U(e) {
     imageUrl: n,
     children: (0, r.jsxs)("span", {
       className: R.emptyTitleContainer,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(o.Text, {
         tag: "span",
         variant: "text-lg/normal",
         className: R.emptyTitle,
@@ -200,7 +200,7 @@ function G(e) {
     locale: d,
     leaderboard: p,
     trackRankingItemInteraction: E
-  } = e, b = (0, o.e7)([_.default], () => _.default.getUser(t)), y = h.ZP.getName(c, true, b), O = null != u && u > n, [v, P] = i.useState("default"), D = (0, o.e7)([f.Z], () => {
+  } = e, b = (0, a.e7)([_.default], () => _.default.getUser(t)), y = h.ZP.getName(c, true, b), O = null != u && u > n, [v, P] = i.useState("default"), D = (0, a.e7)([f.Z], () => {
     let e = f.Z.getPrimaryActivity(t);
     return (null == e ? true : e.application_id) != null && A.T.includes(e.application_id)
   }), {
@@ -215,25 +215,25 @@ function G(e) {
     imageOptions: {
       pixelRatio: 4
     }
-  }), k = async () => {
+  }), j = async () => {
     try {
       let e = await M();
-      await g.ZP.copyImageBlob(e, j), P("copied"), null == E || E(N.xP.COPIED_LEADERBOARD_ROW)
+      await g.ZP.copyImageBlob(e, k), P("copied"), null == E || E(N.xP.COPIED_LEADERBOARD_ROW)
     } catch (e) {
       P("error")
     }
-  }, U = (0, r.jsx)(a.Text, {
+  }, U = (0, r.jsx)(o.Text, {
     className: R.tooltip,
     variant: "text-sm/medium",
     children: "copied" === v ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.kSu, {
+      children: [(0, r.jsx)(o.kSu, {
         size: "xs",
-        color: a.TVs.colors.STATUS_POSITIVE
+        color: o.TVs.colors.STATUS_POSITIVE
       }), C.intl.string(C.t.ZO0ku7)]
     }) : "error" === v ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.P$X, {
+      children: [(0, r.jsx)(o.P$X, {
         size: "xs",
-        color: a.TVs.colors.STATUS_DANGER
+        color: o.TVs.colors.STATUS_DANGER
       }), C.intl.string(C.t.j2d6Ki)]
     }) : (0, r.jsx)(r.Fragment, {
       children: C.intl.string(C.t.mikfoa)
@@ -247,7 +247,7 @@ function G(e) {
       className: R.userRank,
       children: n <= 3 ? (0, r.jsx)(I._, {
         rank: n
-      }) : (0, r.jsx)(a.Text, {
+      }) : (0, r.jsx)(o.Text, {
         tabularNumbers: true,
         color: "text-muted",
         variant: "text-xs/medium",
@@ -255,54 +255,54 @@ function G(e) {
       })
     }), (0, r.jsxs)("div", {
       className: R.userPlayer,
-      children: [(0, r.jsx)(a.qEK, {
+      children: [(0, r.jsx)(o.qEK, {
         src: null == b ? true : b.getAvatarURL(c, 16),
-        size: a.EFr.SIZE_16,
+        size: o.EFr.SIZE_16,
         "aria-label": "avatar"
-      }), (0, r.jsx)(a.LZC, {
+      }), (0, r.jsx)(o.LZC, {
         size: 6,
         horizontal: true
-      }), (0, r.jsx)(a.X6q, {
+      }), (0, r.jsx)(o.X6q, {
         lineClamp: 1,
         variant: "heading-sm/medium",
         color: "header-primary",
         children: y
       }), 1 === n ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(a.LZC, {
+        children: [(0, r.jsx)(o.LZC, {
           size: 4,
           horizontal: true
         }), (0, r.jsx)(S.Z, {
           className: R.userWinnerImage,
           leaderboard: p
         })]
-      }) : null, O ? (0, r.jsx)(Z, {
+      }) : null, O ? (0, r.jsx)(V, {
         rankChange: u - n
       }) : null]
     }), (0, r.jsxs)("div", {
       className: R.badgesContainer,
-      children: [D && (0, r.jsx)(a.iWm, {
+      children: [D && (0, r.jsx)(o.iWm, {
         size: "xs",
-        color: a.TVs.colors.TEXT_FEEDBACK_POSITIVE,
+        color: o.TVs.colors.TEXT_FEEDBACK_POSITIVE,
         className: R.liveIcon
-      }), m.isPlatformEmbedded && (0, r.jsx)(a.ua7, {
+      }), m.isPlatformEmbedded && (0, r.jsx)(o.ua7, {
         text: U,
         "aria-label": false,
         shouldShow: !x,
         onTooltipHide: () => P("default"),
-        children: e => (0, r.jsx)(a.P3F, L(w({}, e), {
-          onClick: x ? true : k,
+        children: e => (0, r.jsx)(o.P3F, L(w({}, e), {
+          onClick: x ? true : j,
           "aria-busy": x,
           className: R.copyLinkContainer,
-          children: x ? (0, r.jsx)(a.$jN, {
-            type: a.$jN.Type.SPINNING_CIRCLE_SIMPLE,
+          children: x ? (0, r.jsx)(o.$jN, {
+            type: o.$jN.Type.SPINNING_CIRCLE_SIMPLE,
             className: R.copySpinner
-          }) : (0, r.jsx)(a.xPt, {
+          }) : (0, r.jsx)(o.xPt, {
             size: "xs",
             className: R.copyLink
           })
         }))
       })]
-    }), (0, r.jsx)(a.X6q, {
+    }), (0, r.jsx)(o.X6q, {
       variant: "heading-sm/medium",
       color: "header-primary",
       tabularNumbers: true,
@@ -317,7 +317,7 @@ function B(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: R.joinLeaderboardCTAContainer,
-    children: [(0, r.jsx)(a.Text, {
+    children: [(0, r.jsx)(o.Text, {
       variant: "text-xs/normal",
       children: C.intl.string(C.t.BfRGk5)
     }), (0, r.jsx)(S.Z, {
@@ -327,16 +327,16 @@ function B(e) {
   })
 }
 
-function Z(e) {
+function V(e) {
   let {
     rankChange: t
   } = e;
   return (0, r.jsxs)("div", {
     className: R.rankChangeBadge,
-    children: [(0, r.jsx)(a.wj7, {
+    children: [(0, r.jsx)(o.wj7, {
       size: "xxs",
-      color: a.TVs.colors.TEXT_MUTED
-    }), (0, r.jsx)(a.Text, {
+      color: o.TVs.colors.TEXT_MUTED
+    }), (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
       children: t

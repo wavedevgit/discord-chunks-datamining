@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk381338 = require("./381338.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -21,11 +21,11 @@ var Chunk120356 = require("./120356.js"),
 
 function m(e) {
   switch (e) {
-    case a.q.DAILY:
+    case o.q.DAILY:
       return p.intl.string(p.t.UfbhDA);
-    case a.q.WEEKLY:
+    case o.q.WEEKLY:
       return p.intl.string(p.t["9x5Nam"]);
-    case a.q.MONTHLY:
+    case o.q.MONTHLY:
       return p.intl.string(p.t.xB2Co6);
     default:
       return p.intl.string(p.t["4N67JS"])
@@ -33,14 +33,14 @@ function m(e) {
 }
 
 function g(e) {
-  var t, n, i, a;
+  var t, n, i, o;
   let {
     guildId: g,
     leaderboard: E,
     className: b
   } = e, y = null == E || null == (t = E.users) ? true : t[0], {
     sort_by_statistic_id: O
-  } = E.guild_settings, v = null != (a = null == y || null == (i = y.statistics) || null == (n = i[O]) ? true : n.value) ? a : 0, I = p.intl.formatToPlainString(p.t.yhdo8v, {
+  } = E.guild_settings, v = null != (o = null == y || null == (i = y.statistics) || null == (n = i[O]) ? true : n.value) ? o : 0, I = p.intl.formatToPlainString(p.t.yhdo8v, {
     value: v,
     statisticName: (0, f.C)(O)
   }), T = (0, _.j)(E), {
@@ -50,7 +50,7 @@ function g(e) {
   if (null == N) return null;
   let C = d.ZP.getName(g, true, N);
   return (0, r.jsxs)("div", {
-    className: o()(h.container, b),
+    className: a()(h.container, b),
     style: {
       backgroundImage: "linear-gradient(90deg, ".concat(A, " 0%, ").concat(S, " 100%)")
     },

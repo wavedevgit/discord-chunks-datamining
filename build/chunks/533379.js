@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 533379, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 533379, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => a
 });
@@ -12,13 +11,13 @@ function a(e) {
   let {
     channel: t,
     chatInputType: n
-  } = e, a = (0, o.g)(t), {
-    activeCommand: s
+  } = e, a = (0, l.g)(t), {
+    activeCommand: o
   } = (0, r.cj)([i.Z], () => {
     var e;
     return {
       activeCommand: (null == (e = n.commands) ? true : e.enabled) ? i.Z.getActiveCommand(t.id) : null
     }
   });
-  return null == s && a
+  return null == o && a
 }

@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 467531, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 467531, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => a,
-  W: () => s
+  W: () => o
 });
 var Chunk544891 = require("./544891.js"),
   Chunk881052 = require("./881052.js"),
@@ -15,26 +14,25 @@ async function a(e) {
     answerIds: a
   } = e;
   try {
-    let e = {
-      answer_ids: a
-    };
     await r.tn.put({
-      url: o.ANM.POLL_ANSWERS(t, n),
-      body: e,
+      url: l.ANM.POLL_ANSWERS(t, n),
+      body: {
+        answer_ids: a
+      },
       rejectWithError: false
     })
   } catch (e) {
     throw new i.Hx(e)
   }
 }
-async function s(e) {
+async function o(e) {
   let {
     channelId: t,
     messageId: n
   } = e;
   try {
     await r.tn.post({
-      url: o.ANM.POLL_EXPIRE(t, n),
+      url: l.ANM.POLL_EXPIRE(t, n),
       rejectWithError: false
     })
   } catch (e) {

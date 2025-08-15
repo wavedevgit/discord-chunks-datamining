@@ -29,7 +29,7 @@ let _ = {
   getTwitterURL: () => (0, Chunk299379.Z)(Chunk981631.RK.TWITTER),
   getCommunityURL: () => d("/hc/".concat(f())),
   getSubmitRequestURL(e) {
-    let t = d("/hc/".concat(f(), "/requests/new?platform=").concat(encodeURIComponent((0, o.getPlatformName)())));
+    let t = d("/hc/".concat(f(), "/requests/new?platform=").concat(encodeURIComponent((0, a.getPlatformName)())));
     return null != e && (t += "&device_info=".concat(encodeURIComponent(e))), t
   },
   getSearchURL(e) {

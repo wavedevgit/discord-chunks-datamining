@@ -25,12 +25,12 @@ function d(e) {
   return (0, r.jsx)(s.Z, {
     className: null != h ? h : u.marginTop20,
     align: s.Z.Align.CENTER,
-    children: (0, r.jsx)(o.XZJ, {
+    children: (0, r.jsx)(a.XZJ, {
       value: t,
-      type: o.XZJ.Types.INVERTED,
+      type: a.XZJ.Types.INVERTED,
       onChange: (e, t) => n(t),
       className: c.checkbox,
-      children: (0, r.jsx)(a.i_, {
+      children: (0, r.jsx)(o.i_, {
         className: l()(p, {
           [c.subText]: !d
         }),

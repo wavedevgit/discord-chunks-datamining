@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 1626, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37220 **/
+/** chunk id: 1626, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -13,9 +12,9 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c(e, t) {
-  return e.state !== s.yb.SEND_FAILED ? null : (0, r.jsx)(i.sNh, {
+  return e.state !== o.yb.SEND_FAILED ? null : (0, r.jsx)(i.sNh, {
     id: "resend",
-    label: l.intl.string(l.t.lXHojo),
-    action: () => (0, a.Z)(t, e, true, o.Z.getOptions(e.id))
+    label: s.intl.string(s.t.lXHojo),
+    action: () => (0, a.Z)(t, e, true, l.Z.getOptions(e.id))
   })
 }

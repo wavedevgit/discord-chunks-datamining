@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 554838, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 554838, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => d,
-  Z: () => f
+  Z: () => p
 });
 var Chunk111810 = require("./111810.js"),
   Chunk55935 = require("./55935.js"),
@@ -15,17 +14,17 @@ var Chunk111810 = require("./111810.js"),
 let u = 7 * Chunk70956.Z.Millis.MINUTE;
 
 function d(e, t, n) {
-  return null == t || t.type === c.ys_.MESSAGE && t.content.id === t.content.channel_id || t.type !== c.ys_.MESSAGE && t.type !== c.ys_.THREAD_STARTER_MESSAGE || f(e, t.content, n)
+  return null == t || t.type === c.ys_.MESSAGE && t.content.id === t.content.channel_id || t.type !== c.ys_.MESSAGE && t.type !== c.ys_.THREAD_STARTER_MESSAGE || p(e, t.content, n)
 }
 
-function f(e, t, n) {
+function p(e, t, n) {
   if (n.hasFlag(c.iLy.HAS_THREAD) || n.isCommandType()) returntrue;
-  if (n.type > c.uaV.DEFAULT) return !(0, l.Z)(t) || n.type === c.uaV.REPLY;
-  if ((0, l.Z)(t) || t.author.id !== n.author.id || t.hasFlag(c.iLy.EPHEMERAL) !== n.hasFlag(c.iLy.EPHEMERAL) || null != n.webhookId && t.author.username !== n.author.username || (null == e ? true : e.isForumPost()) && t.id === a.default.castChannelIdAsMessageId(e.id) || !(0, i._w)(t.timestamp, n.timestamp, u) || n.hasFlag(c.iLy.SUPPRESS_NOTIFICATIONS) && !t.hasFlag(c.iLy.SUPPRESS_NOTIFICATIONS) || t.hasFlag(c.iLy.SUPPRESS_NOTIFICATIONS) && !n.hasFlag(c.iLy.SUPPRESS_NOTIFICATIONS) && (n.mentions.length > 0 || n.mentionRoles.length > 0 || n.mentionEveryone) || (0, s.f)(n)) returntrue;
-  let o = r.HZ.getCurrentConfig({
+  if (n.type > c.uaV.DEFAULT) return !(0, s.Z)(t) || n.type === c.uaV.REPLY;
+  if ((0, s.Z)(t) || t.author.id !== n.author.id || t.hasFlag(c.iLy.EPHEMERAL) !== n.hasFlag(c.iLy.EPHEMERAL) || null != n.webhookId && t.author.username !== n.author.username || (null == e ? true : e.isForumPost()) && t.id === a.default.castChannelIdAsMessageId(e.id) || !(0, i._w)(t.timestamp, n.timestamp, u) || n.hasFlag(c.iLy.SUPPRESS_NOTIFICATIONS) && !t.hasFlag(c.iLy.SUPPRESS_NOTIFICATIONS) || t.hasFlag(c.iLy.SUPPRESS_NOTIFICATIONS) && !n.hasFlag(c.iLy.SUPPRESS_NOTIFICATIONS) && (n.mentions.length > 0 || n.mentionRoles.length > 0 || n.mentionEveryone) || (0, o.f)(n)) returntrue;
+  let l = r.HZ.getCurrentConfig({
     location: "isNewMessageGroup"
   }, {
     autoTrackExposure: false
   }).canSeeConfetti;
-  return !!n.hasPotions() && !!o || n.applicationId !== t.applicationId
+  return !!n.hasPotions() && !!l || n.applicationId !== t.applicationId
 }

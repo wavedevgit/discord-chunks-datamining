@@ -12,18 +12,18 @@ function r(e, t, n) {
 }
 require.d(exports, {
   ZP: () => s,
-  k2: () => o
+  k2: () => a
 }), require("./388685.js");
 let i = new(require("./710845.js")).Z("AssetMap");
-async function o(e) {
-  let t = new a,
+async function a(e) {
+  let t = new o,
     n = Object.entries(e).map(e => {
       let [n, r] = e;
       return t.loadRemoteImage(n, r).catch(e => i.warn("Failed to load canvas asset", e, n, r))
     });
   return await Promise.all(n), t
 }
-class a {
+class o {
   loadFonts() {
     return Promise.resolve()
   }
@@ -41,4 +41,4 @@ class a {
     r(this, "assets", {}), r(this, "fontManager", true)
   }
 }
-let s = a
+let s = o

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 179295, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 24255 **/
+/** chunk id: 179295, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => c
 });
 var Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
@@ -12,32 +11,31 @@ var Chunk73800 = require("./73800.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
 
-function u(e, t, n) {
-  s.default.track(l.rMx.PREMIUM_FEATURE_USAGE, {
-    feature_name: "".concat(c.QP.SHARED_CANVAS, "_").concat(e.type),
-    feature_tier: c.h1.FREE,
-    media_session_id: t.getMediaSessionId(),
-    parent_media_session_id: t.parentMediaSessionId,
-    guild_id: t.guildId,
-    duration: n
-  })
-}
-
-function d(e, t) {
+function c(e, t) {
   let {
     handleMouseDown: n,
-    handleMouseMove: s,
-    handleMouseUp: l,
-    handleMouseEnter: c
-  } = e, d = r.useRef(null), f = (0, i.e7)([a.Z], () => a.Z.getRTCConnection((0, o.V9)(t))), _ = r.useCallback((e, t, r) => {
-    d.current = Date.now(), n(e, t, r)
+    handleMouseMove: c,
+    handleMouseUp: d,
+    handleMouseEnter: f
+  } = e, p = r.useRef(null), m = (0, l.e7)([a.Z], () => a.Z.getRTCConnection((0, i.V9)(t))), E = r.useCallback((e, t, r) => {
+    p.current = Date.now(), n(e, t, r)
   }, [n]);
   return {
     handleMouseUp: r.useCallback((e, t, n) => {
-      l(e, t, n), null != d.current && (null != f && u(e, f, Date.now() - d.current), d.current = null)
-    }, [l, f]),
-    handleMouseDown: _,
-    handleMouseMove: s,
-    handleMouseEnter: c
+      if (d(e, t, n), null != p.current) {
+        var r;
+        null != m && (r = Date.now() - p.current, o.default.track(u.rMx.PREMIUM_FEATURE_USAGE, {
+          feature_name: "".concat(s.QP.SHARED_CANVAS, "_").concat(e.type),
+          feature_tier: s.h1.FREE,
+          media_session_id: m.getMediaSessionId(),
+          parent_media_session_id: m.parentMediaSessionId,
+          guild_id: m.guildId,
+          duration: r
+        })), p.current = null
+      }
+    }, [d, m]),
+    handleMouseDown: E,
+    handleMouseMove: c,
+    handleMouseEnter: f
   }
 }

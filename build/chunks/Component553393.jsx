@@ -2,7 +2,7 @@
 /** chunk id: 553393, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => V
+  Z: () => Z
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -38,7 +38,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk85468 = require("./85468.js");
 
-function j(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,14 +47,14 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -63,7 +63,7 @@ let U = "8px",
   G = "11px",
   B = 222;
 
-function Z(e, t) {
+function V(e, t) {
   return null != e && null != t && (0, g.p9)(t, v.Z, y.Z, O.Z, m.Z)[0]
 }
 
@@ -72,15 +72,15 @@ function F(e) {
   let {
     quest: v,
     memberListItemRef: N,
-    applicationStream: j,
+    applicationStream: k,
     position: F,
-    closePopout: V,
+    closePopout: Z,
     updatePosition: H,
     impressionRef: Y,
     name: W
   } = e, K = (0, s.e7)([b.Z], () => {
     var e;
-    return null != (e = b.Z.getChannel(null == j ? true : j.channelId)) ? e : null
+    return null != (e = b.Z.getChannel(null == k ? true : k.channelId)) ? e : null
   }), z = (0, P.hf)({
     quest: v,
     questContent: S.jn.MEMBERS_LIST,
@@ -88,13 +88,13 @@ function F(e) {
   }), q = (0, T.tP)(v), X = (null == v || null == (t = v.userStatus) ? true : t.claimedAt) != null, Q = (null == v || null == (m = v.userStatus) ? true : m.enrolledAt) != null, J = (null == v || null == (g = v.userStatus) ? true : g.completedAt) != null, $ = (0, s.e7)([E.Z], () => E.Z.getState().theme), ee = (0, l.wj)($) ? L.BR.DARK : L.BR.LIGHT, et = (0, s.e7)([h.Z], () => h.Z.useReducedMotion), {
     ref: en,
     height: er
-  } = (0, _.ZP)(), [ei, eo] = i.useState(et), ea = (0, p.Aq)(), es = (0, a.eg)();
+  } = (0, _.ZP)(), [ei, ea] = i.useState(et), eo = (0, p.Aq)(), es = (0, o.eg)();
   i.useEffect(() => {
     let e = es.current;
-    return null == e || e.addEventListener("scroll", V), () => {
-      null == e || e.removeEventListener("scroll", V)
+    return null == e || e.addEventListener("scroll", Z), () => {
+      null == e || e.removeEventListener("scroll", Z)
     }
-  }, [V, es]), i.useEffect(() => {
+  }, [Z, es]), i.useEffect(() => {
     let e = es.current,
       t = N.current;
     if (null == e || null == t) return;
@@ -115,7 +115,7 @@ function F(e) {
         tension: 450,
         friction: 45
       },
-      onRest: () => eo(true)
+      onRest: () => ea(true)
     }),
     ec = (0, u.Yzy)(ei, {
       from: {
@@ -128,10 +128,10 @@ function F(e) {
       }
     }),
     eu = () => {
-      ea.dispatch(D.CkL.POPOUT_CLOSE)
+      eo.dispatch(D.CkL.POPOUT_CLOSE)
     },
     ed = "top" === F ? "".concat(U, " ").concat(U, " 0 0") : "0 0 ".concat(U, " ").concat(U);
-  if (null == v || q || X && !Z(j, K)) return null;
+  if (null == v || q || X && !V(k, K)) return null;
   let ef = () => {
       (0, I._3)({
         questId: v.id,
@@ -161,7 +161,7 @@ function F(e) {
       e.stopPropagation(), ef()
     },
     eh = () => {
-      Z(j, K) && null != K ? ((0, I._3)({
+      V(k, K) && null != K ? ((0, I._3)({
         questId: v.id,
         questContent: S.jn.MEMBERS_LIST,
         questContentCTA: I.jZ.WATCH_STREAM,
@@ -171,7 +171,7 @@ function F(e) {
         let {
           default: e
         } = await n.e("85045").then(n.bind(n, 748862));
-        return t => (0, r.jsx)(e, k({
+        return t => (0, r.jsx)(e, j({
           username: null != W ? W : "",
           onConfirm: () => ((0, I._3)({
             questId: v.id,
@@ -179,7 +179,7 @@ function F(e) {
             questContentCTA: I.jZ.WATCH_STREAM_CONFIRM,
             trackGuildAndChannelMetadata: true,
             sourceQuestContent: S.jn.MEMBERS_LIST
-          }), d.default.selectVoiceChannel(K.id), (0, f.iV)(j))
+          }), d.default.selectVoiceChannel(K.id), (0, f.iV)(k))
         }, t))
       })) : e_()
     },
@@ -193,7 +193,7 @@ function F(e) {
       ctaText: x.intl.string(x.t.VN1Ajo),
       handleClickCta: e_,
       tileAssetType: "reward"
-    } : Z(j, K) ? {
+    } : V(k, K) ? {
       headerText: x.intl.string(x.t.Bz6SkJ),
       ctaText: x.intl.string(x.t.BXFP39),
       handleClickCta: eh,
@@ -204,7 +204,7 @@ function F(e) {
       handleClickCta: e_,
       tileAssetType: "game"
     };
-  return (0, r.jsx)(o.animated.div, {
+  return (0, r.jsx)(a.animated.div, {
     ref: e => {
       Y.current = e
     },
@@ -255,7 +255,7 @@ function F(e) {
           className: M.right,
           children: (0, r.jsxs)("div", {
             className: M.imgWrapper,
-            children: [ec((e, t) => t && (0, r.jsx)(o.animated.div, {
+            children: [ec((e, t) => t && (0, r.jsx)(a.animated.div, {
               style: e,
               className: M.imgUnderlay
             })), "game" === em.tileAssetType && (0, r.jsx)("img", {
@@ -288,13 +288,13 @@ function F(e) {
   })
 }
 
-function V(e) {
+function Z(e) {
   return null == e.quest || e.isQuestEnrollmentBlocked ? null : (0, r.jsx)(N.A, {
     questOrQuests: e.quest,
     questContent: S.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: true,
     sourceQuestContent: S.jn.MEMBERS_LIST,
-    children: t => (0, r.jsx)(F, k({
+    children: t => (0, r.jsx)(F, j({
       impressionRef: t
     }, e))
   })

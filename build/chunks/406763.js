@@ -3,15 +3,15 @@
 "use strict";
 require.d(exports, {
   Q: () => s,
-  X: () => a
+  X: () => o
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t) {
+function o(e, t) {
   r.tn.patch({
-    url: o.ANM.GAME_NOTIFICATION_SETTING_UPDATE(e),
+    url: a.ANM.GAME_NOTIFICATION_SETTING_UPDATE(e),
     body: {
       muted: t
     },

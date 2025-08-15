@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 874341, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 874341, original params: e,t,n (module,exports,require) **/
 module.exports = {
   emojiWrapper: "emojiWrapper__21d2d",
   emoji: "emoji__21d2d",

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 736052, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 736052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 }), require("./997841.js");
@@ -15,8 +14,8 @@ var Chunk399606 = require("./399606.js"),
 function u(e) {
   let t = (0, r.e7)([i.Z, a.Z], () => {
       let t = i.Z.getChannel(e);
-      if (null != t && (0, o.yE)(t.flags, c.zZ.IS_GUILD_RESOURCE_CHANNEL) && a.Z.getSelectedResourceChannelId(null == t ? true : t.guild_id) === t.id) return t.guild_id
+      if (null != t && (0, l.yE)(t.flags, c.zZ.IS_GUILD_RESOURCE_CHANNEL) && a.Z.getSelectedResourceChannelId(null == t ? true : t.guild_id) === t.id) return t.guild_id
     }),
-    n = (0, s.g)(null != t ? t : l.lds);
+    n = (0, o.g)(null != t ? t : s.lds);
   return null != t && n
 }

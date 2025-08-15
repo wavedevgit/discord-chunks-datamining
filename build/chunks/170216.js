@@ -1,19 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 170216, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-
-function r(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
+/** Chunk was on 54157 **/
+/** chunk id: 170216, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L: () => i
+  L: () => r
 }), require("./388685.js");
-class i {
+class r {
   cleanUp(e) {
     this.cancel(e), this.delete(e)
   }
@@ -31,6 +21,13 @@ class i {
     this.searchFetchers.set(e, t)
   }
   constructor() {
-    r(this, "searchFetchers", new Map)
+    ! function(e, t, n) {
+      t in e ? Object.defineProperty(e, t, {
+        value: n,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = n
+    }(this, "searchFetchers", new Map)
   }
 }

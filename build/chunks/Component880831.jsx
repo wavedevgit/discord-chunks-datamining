@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 880831, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 880831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x,
-  z: () => P
+  Z: () => N,
+  z: () => Z
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -31,141 +30,137 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk217702 = require("./217702.js"),
   Chunk89019 = require("./89019.js");
-let R = 3,
-  P = 10 * Chunk70956.Z.Millis.SECOND,
-  w = 8;
+let Z = 10 * Chunk70956.Z.Millis.SECOND;
 
-function D(e) {
-  var t;
-  let {
-    channelId: n,
-    isFrozen: r,
-    count: o,
-    lingerMs: a
-  } = e, [s, l] = i.useState([]), [u, f] = i.useState(false), _ = i.useRef(null), p = i.useRef(true), h = i.useCallback(() => {
-    l([]), f(true)
-  }, []);
-  i.useEffect(() => {
-    function e(e) {
-      let {
-        channelId: t,
-        message: r,
-        optimistic: i
-      } = e;
-      t !== n || r.type === A.uaV.STAGE_START || r.type === A.uaV.STAGE_END || r.type === A.uaV.STAGE_TOPIC || r.type === A.uaV.STAGE_SPEAKER || r.type === A.uaV.STAGE_RAISE_HAND || i || (clearTimeout(p.current), p.current = setTimeout(h, a), l(e => [...e, r.id]))
-    }
-    return d.Z.subscribe("MESSAGE_CREATE", e), () => {
-      d.Z.unsubscribe("MESSAGE_CREATE", e)
-    }
-  }, [n, h, o, a]), i.useEffect(() => () => {
-    clearTimeout(p.current)
-  }, []), i.useEffect(() => {
-    s.length > R && l(e => {
-      let t = e.length - R;
-      return [...e.slice(t)]
-    })
-  }, [s]), r && null == _.current ? _.current = s : r || null == _.current || (_.current = null);
-  let m = null != (t = _.current) ? t : s;
-  return {
-    toastsHidden: u,
-    toastMessages: (0, c.Wu)([O.Z], () => m.map(e => O.Z.getMessage(n, e)), [n, m]).filter(S.lm)
-  }
-}
-
-function L(e) {
+function T(e) {
   var t;
   let {
     message: n
   } = e, {
-    isBlocked: o,
-    isIgnored: s
+    isBlocked: l,
+    isIgnored: o
   } = (0, c.cj)([v.Z], () => ({
     isBlocked: v.Z.isBlockedForMessage(n),
     isIgnored: v.Z.isIgnoredForMessage(n)
-  }), [n]), l = (0, g.Uj)(n), d = i.useContext(p.Z), [O, T] = i.useState(false), S = (0, h.p)(), A = i.useCallback(e => {
-    "A" !== e.target.nodeName && (f.Z.updateChatOpen(n.channel_id, true), _.Z.jumpToMessage({
+  }), [n]), s = (0, b.Uj)(n), d = i.useContext(f.Z), [x, O] = i.useState(false), E = (0, m.p)(), S = i.useCallback(e => {
+    "A" !== e.target.nodeName && (p.Z.updateChatOpen(n.channel_id, true), h.Z.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.id,
       flash: true
     }))
-  }, [n.channel_id, n.id]), R = null != n.content && "" !== n.content ? (0, m.ZP)(n, {
-    isInteracting: O,
-    shouldFilterKeywords: S
+  }, [n.channel_id, n.id]), Z = null != n.content && "" !== n.content ? (0, g.ZP)(n, {
+    isInteracting: x,
+    shouldFilterKeywords: E
   }).content : null, {
-    contentPlaceholder: P,
-    renderedContent: w,
-    trailingIcon: D,
-    leadingIcon: L
-  } = (0, E.f)(n, R, o, s, C.messageContent, {
-    trailingIconClass: C.messageContentTrailingIcon,
-    leadingIconClass: C.messageContentLeadingIcon,
-    iconSize: N.WW
-  }), x = (0, b.cv)(n), M = x.length > 0 ? x.map(e => (0, r.jsx)(y.Z, {
-    className: C.sticker,
+    contentPlaceholder: T,
+    renderedContent: N,
+    trailingIcon: A,
+    leadingIcon: w
+  } = (0, y.f)(n, Z, l, o, I.messageContent, {
+    trailingIconClass: I.messageContentTrailingIcon,
+    leadingIconClass: I.messageContentLeadingIcon,
+    iconSize: P.WW
+  }), R = (0, _.cv)(n), M = R.length > 0 ? R.map(e => (0, r.jsx)(C.Z, {
+    className: I.sticker,
     size: 128,
     sticker: e,
-    isInteracting: O
+    isInteracting: x
   }, e.id)) : null;
   return (0, r.jsxs)(u.P3F, {
-    className: C.toast,
+    className: I.toast,
     onMouseEnter: () => {
-      T(true)
+      O(true)
     },
     onMouseLeave: () => {
-      T(false)
+      O(false)
     },
-    onClick: A,
+    onClick: S,
     children: [(0, r.jsxs)("div", {
-      className: a()(C.messageContentWrapper, {
-        [C.mentioned]: n.mentioned
+      className: a()(I.messageContentWrapper, {
+        [I.mentioned]: n.mentioned
       }),
-      children: [null != M ? null : L, null != (t = null != w ? w : M) ? t : (0, r.jsx)("span", {
-        children: P
-      }), null != M ? null : D]
+      children: [null != M ? null : w, null != (t = null != N ? N : M) ? t : (0, r.jsx)("span", {
+        children: T
+      }), null != M ? null : A]
     }), (0, r.jsx)("img", {
       alt: "",
-      src: (null == l ? true : l.guildMemberAvatar) != null && null != d ? (0, I.JM)({
+      src: (null == s ? true : s.guildMemberAvatar) != null && null != d ? (0, j.JM)({
         guildId: d,
         userId: n.author.id,
-        avatar: l.guildMemberAvatar
+        avatar: s.guildMemberAvatar
       }) : n.author.getAvatarURL(d, 32),
-      className: C.avatar
+      className: I.avatar
     })]
   })
 }
 
-function x(e) {
+function N(e) {
   let {
     channelId: t,
     className: n
-  } = e, [o, c] = i.useState(false), {
-    toastsHidden: d,
+  } = e, [l, p] = i.useState(false), {
+    toastsHidden: h,
     toastMessages: f
-  } = D({
+  } = function(e) {
+    var t;
+    let {
+      channelId: n,
+      isFrozen: r,
+      count: l,
+      lingerMs: a
+    } = e, [o, s] = i.useState([]), [u, p] = i.useState(false), h = i.useRef(null), f = i.useRef(true), m = i.useCallback(() => {
+      s([]), p(true)
+    }, []);
+    i.useEffect(() => {
+      function e(e) {
+        let {
+          channelId: t,
+          message: r,
+          optimistic: i
+        } = e;
+        t !== n || r.type === S.uaV.STAGE_START || r.type === S.uaV.STAGE_END || r.type === S.uaV.STAGE_TOPIC || r.type === S.uaV.STAGE_SPEAKER || r.type === S.uaV.STAGE_RAISE_HAND || i || (clearTimeout(f.current), f.current = setTimeout(m, a), s(e => [...e, r.id]))
+      }
+      return d.Z.subscribe("MESSAGE_CREATE", e), () => {
+        d.Z.unsubscribe("MESSAGE_CREATE", e)
+      }
+    }, [n, m, l, a]), i.useEffect(() => () => {
+      clearTimeout(f.current)
+    }, []), i.useEffect(() => {
+      o.length > 3 && s(e => {
+        let t = e.length - 3;
+        return [...e.slice(t)]
+      })
+    }, [o]), r && null == h.current ? h.current = o : r || null == h.current || (h.current = null);
+    let g = null != (t = h.current) ? t : o;
+    return {
+      toastsHidden: u,
+      toastMessages: (0, c.Wu)([x.Z], () => g.map(e => x.Z.getMessage(n, e)), [n, g]).filter(E.lm)
+    }
+  }({
     channelId: t,
-    isFrozen: o,
-    count: R,
-    lingerMs: P
-  }), _ = i.useRef({}), [p, h] = i.useState({}), m = i.useCallback((e, t) => {
-    null == t ? delete _.current[e] : _.current[e] = t
-  }, []), g = i.useRef(p);
+    isFrozen: l,
+    count: 3,
+    lingerMs: Z
+  }), m = i.useRef({}), [g, b] = i.useState({}), y = i.useCallback((e, t) => {
+    null == t ? delete m.current[e] : m.current[e] = t
+  }, []), _ = i.useRef(g);
   i.useLayoutEffect(() => {
-    g.current = p
+    _.current = g
   }), i.useLayoutEffect(() => {
     let e = {},
       t = 0;
     for (let r of f) {
       var n;
-      let i = null != (n = _.current[r.id]) ? n : 0;
-      e[r.id] = t, t += i + w
-    }(0, s.isEqual)(e, g.current) || h(e)
+      let i = null != (n = m.current[r.id]) ? n : 0;
+      e[r.id] = t, t += i + 8
+    }(0, o.isEqual)(e, _.current) || b(e)
   }, [f]);
-  let E = f.map(e => ({
+  let C = f.map(e => ({
       message: e,
-      height: _.current[e.id],
-      y: p[e.id]
+      height: m.current[e.id],
+      y: g[e.id]
     })),
-    b = (0, u.Yzy)(E, {
+    v = (0, u.Yzy)(C, {
       keys: e => e.message.id,
       from: () => ({
         opacity: 0
@@ -194,26 +189,26 @@ function x(e) {
         } = e;
         return {
           opacity: 0,
-          translateY: d ? n : -(null != t ? t : 0) - w,
+          translateY: h ? n : -(null != t ? t : 0) - 8,
           pointerEvents: "none"
         }
       }
     });
   return (0, r.jsx)(u.f6W, {
-    theme: A.BRd.DARK,
+    theme: S.BRd.DARK,
     children: e => (0, r.jsx)("div", {
       className: a()(n, e),
       onMouseEnter: () => {
-        c(true)
+        p(true)
       },
       onMouseLeave: () => {
-        c(false)
+        p(false)
       },
-      children: b((e, t) => (0, r.jsx)(l.animated.div, {
-        ref: e => m(t.message.id, null != e ? e.offsetHeight : null),
-        className: C.toastWrapper,
+      children: v((e, t) => (0, r.jsx)(s.animated.div, {
+        ref: e => y(t.message.id, null != e ? e.offsetHeight : null),
+        className: I.toastWrapper,
         style: e,
-        children: (0, r.jsx)(L, {
+        children: (0, r.jsx)(T, {
           message: t.message
         })
       }))

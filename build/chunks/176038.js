@@ -17,9 +17,9 @@ var Chunk73800 = require("./73800.js"),
   Chunk74538 = require("./74538.js"),
   Chunk981631 = require("./981631.js"),
   Chunk469115 = require("./469115.js");
-let f = [Chunk981631.BRd.DARK, Chunk981631.BRd.LIGHT, Chunk981631.BRd.DARKER, Chunk981631.BRd.MIDNIGHT];
+let v = [Chunk981631.BRd.DARK, Chunk981631.BRd.LIGHT, Chunk981631.BRd.DARKER, Chunk981631.BRd.MIDNIGHT];
 
-function v(e) {
+function f(e) {
   return e[Math.floor(Math.random() * e.length)]
 }
 async function j() {
@@ -31,19 +31,19 @@ async function j() {
   try {
     if (exports) {
       let t, n = [...module, null],
-        r = v(Chunk73800);
+        r = f(Chunk73800);
       if (null != Chunk442837) {
         var a;
         let e = Chunk469115.qt[Chunk442837];
         t = null != (a = null == module ? true : module.theme) ? require : Chunk981631.BRd.DARK
-      } else t = v([Chunk981631.BRd.DARK, Chunk981631.BRd.DARKER, Chunk981631.BRd.MIDNIGHT]);
+      } else t = f([Chunk981631.BRd.DARK, Chunk981631.BRd.DARKER, Chunk981631.BRd.MIDNIGHT]);
       await Chunk153867.ZI({
         theme: exports,
         backgroundGradientPresetId: null != Chunk442837 ? Chunk442837 : true,
         customUserThemeSettings: true
       }, Chunk675478.fy.INFREQUENT_USER_ACTION)
     } else {
-      let e = v(f);
+      let e = f(v);
       await Chunk153867.ZI({
         theme: module,
         backgroundGradientPresetId: true,
@@ -57,11 +57,11 @@ async function g(e, t) {
     n = t.length > 0;
   if (a || n) try {
     if (a) {
-      let t = v([...e, null]);
+      let t = f([...e, null]);
       (0, l.cV)(t)
     }
     if (n) {
-      let e = v([...t, null]);
+      let e = f([...t, null]);
       (0, l.Rx)(e)
     }
     let r = m.Z.getAllPending(),

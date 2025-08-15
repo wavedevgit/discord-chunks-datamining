@@ -1,4 +1,4 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 76076, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -70,7 +70,7 @@ let b = {
     i.useEffect(() => {
       null !== l ? (g(true), O(b[l]), s.uvj.announce(b[l].message)) : g(false)
     }, [l]);
-    let x = (0, s.Yzy)(p, {
+    let h = (0, s.Yzy)(p, {
       from: {
         transform: f ? "translateY(0)" : "translateY(-12px)",
         opacity: 0
@@ -98,7 +98,7 @@ let b = {
         return () => clearTimeout(e)
       }
     }, [p, n]), (0, r.jsx)(r.Fragment, {
-      children: x((e, n) => n && null !== y && (0, r.jsx)(a.animated.div, {
+      children: h((e, n) => n && null !== y && (0, r.jsx)(a.animated.div, {
         className: o()(t, m.toastContainer),
         style: e,
         children: (0, r.jsx)(j, function(e) {

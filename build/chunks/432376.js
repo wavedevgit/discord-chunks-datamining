@@ -1,25 +1,24 @@
-/** Chunk was on web.js **/
-/** chunk id: 432376, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 38626 **/
+/** chunk id: 432376, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => i
+});
 
-function r(e) {
+function i(e) {
   let {
     channel: t,
     canChat: n,
-    renderReactions: r,
-    canAddNewReactions: i,
-    isLurking: o,
-    isGuest: a,
-    communicationDisabled: s,
-    isActiveChannelOrUnarchivableThread: l,
+    renderReactions: i,
+    canAddNewReactions: r,
+    isLurking: l,
+    isGuest: o,
+    communicationDisabled: a,
+    isActiveChannelOrUnarchivableThread: s,
     isAutomodQuarantined: c
-  } = e, u = t.isPrivate(), d = t.isSystemDM(), f = (true === i || u) && !d && l, _ = (n || u) && l, p = o || a || !_ || true === s || true === c;
+  } = e, u = t.isPrivate(), d = t.isSystemDM(), h = (n || u) && s;
   return {
-    disableReactionReads: !r,
-    disableReactionCreates: o || a || !_ || !f,
-    disableReactionUpdates: p
+    disableReactionReads: !i,
+    disableReactionCreates: l || o || !h || !((true === r || u) && !d && s),
+    disableReactionUpdates: l || o || !h || true === a || true === c
   }
 }
-require.d(exports, {
-  Z: () => r
-})

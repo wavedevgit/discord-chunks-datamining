@@ -1,7 +1,7 @@
-/** Chunk was on 25548 **/
+/** Chunk was on 48091 **/
 /** chunk id: 265985, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  h: () => _,
+  h: () => j,
   x: () => y
 });
 var Chunk255367 = require("./255367.js");
@@ -23,47 +23,47 @@ var Chunk120356 = require("./120356.js"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk673854 = require("./673854.js");
-let _ = e => {
+let j = e => {
     let {
       onClose: t,
       listing: n,
-      step: r,
+      step: i,
       guildId: a
-    } = e, o = (0, g.YB)(a), u = (0, c.Z)(j.Xy), f = (() => {
+    } = e, o = (0, f.YB)(a), u = (0, c.Z)(C.Xy), p = (() => {
       var e;
       if (u) return null;
       let t = (null == o || null == (e = o.cover_image_asset) ? true : e.application_id) != null ? (0, m._W)(o.cover_image_asset.application_id, o.cover_image_asset, 440) : true;
-      return null == t && r !== d.h8.CONFIRM ? null : null == t ? (0, i.jsx)("div", {
-        className: x.headerImageEmpty
-      }) : (0, i.jsx)("img", {
+      return null == t && i !== d.h8.CONFIRM ? null : null == t ? (0, r.jsx)("div", {
+        className: b.headerImageEmpty
+      }) : (0, r.jsx)("img", {
         src: t,
         alt: "",
-        className: x.headerImage
+        className: b.headerImage
       })
     })();
-    return (0, i.jsxs)("div", {
-      className: l()(x.headerContainer, {
-        [x.headerEmpty]: u || null == f
+    return (0, r.jsxs)("div", {
+      className: l()(b.headerContainer, {
+        [b.headerEmpty]: u || null == p
       }),
-      children: [f, (() => {
-        if (r !== d.h8.CONFIRM) return null;
+      children: [p, (() => {
+        if (i !== d.h8.CONFIRM) return null;
         let e = null == n.image_asset ? true : (0, m._W)(n.application_id, n.image_asset, 80);
-        return (0, i.jsx)("div", {
-          className: x.tierImageContainer,
-          children: (0, i.jsx)("img", {
+        return (0, r.jsx)("div", {
+          className: b.tierImageContainer,
+          children: (0, r.jsx)("img", {
             src: e,
             alt: "",
-            className: x.tierImage
+            className: b.tierImage
           })
         })
-      })(), (0, i.jsx)(s.P3F, {
-        className: x.closeContainer,
+      })(), (0, r.jsx)(s.P3F, {
+        className: b.closeContainer,
         onClick: () => t(false),
-        "aria-label": b.intl.string(b.t.cpT0Cg),
-        children: (0, i.jsx)(s.Dio, {
+        "aria-label": _.intl.string(_.t.cpT0Cg),
+        children: (0, r.jsx)(s.Dio, {
           size: "md",
           color: "currentColor",
-          className: x.closeIcon
+          className: b.closeIcon
         })
       })]
     })
@@ -72,77 +72,77 @@ let _ = e => {
     let {
       onClose: t,
       listing: n,
-      guildId: r
-    } = e, l = (0, a.e7)([u.Z], () => u.Z.getGuild(r), [r]), c = (0, h.Z)(r).filter(e => e.roles.includes(n.role_id)), d = n.role_benefits.benefits.filter(f.rC).slice(0, null === c.length ? 4 : 3), m = (0, p.Z)(d).slice(0, null === c.length ? 4 : 3);
-    return (0, i.jsxs)("div", {
-      className: x.confirmationContainer,
-      children: [(0, i.jsx)(s.X6q, {
-        className: x.confirmationHeader,
+      guildId: i
+    } = e, l = (0, a.e7)([u.Z], () => u.Z.getGuild(i), [i]), c = (0, h.Z)(i).filter(e => e.roles.includes(n.role_id)), d = n.role_benefits.benefits.filter(p.rC).slice(0, null === c.length ? 4 : 3), m = (0, g.Z)(d).slice(0, null === c.length ? 4 : 3);
+    return (0, r.jsxs)("div", {
+      className: b.confirmationContainer,
+      children: [(0, r.jsx)(s.X6q, {
+        className: b.confirmationHeader,
         variant: "heading-xl/semibold",
         color: "header-secondary",
-        children: b.intl.format(b.t["1HIsTk"], {
+        children: _.intl.format(_.t["1HIsTk"], {
           serverName: null == l ? true : l.name
         })
-      }), (0, i.jsx)(s.Text, {
-        className: x.confirmationSubtitle,
+      }), (0, r.jsx)(s.Text, {
+        className: b.confirmationSubtitle,
         variant: "text-md/normal",
         color: "header-secondary",
-        children: b.intl.format(b.t.oi3gio, {
+        children: _.intl.format(_.t.oi3gio, {
           tier: n.name
         })
-      }), m.length > 0 && (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(s.Text, {
+      }), m.length > 0 && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          className: x.confirmationSectionLabel,
-          children: b.intl.string(b.t.w0CQ09)
-        }), (0, i.jsx)("div", {
-          className: x.confirmationBenefits,
-          children: m.map(e => (0, i.jsx)(v.Z, {
+          className: b.confirmationSectionLabel,
+          children: _.intl.string(_.t.w0CQ09)
+        }), (0, r.jsx)("div", {
+          className: b.confirmationBenefits,
+          children: m.map(e => (0, r.jsx)(v.Z, {
             benefit: e,
-            guildId: r,
+            guildId: i,
             onClick: () => t(true)
-          }, (0, f.ab)(e)))
+          }, (0, p.ab)(e)))
         })]
       }), (() => {
         var e;
         if (0 === c.length) return null;
         let t = c[0];
-        return (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(s.Text, {
+        return (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(s.Text, {
             variant: "text-xs/medium",
             color: "header-secondary",
-            className: x.confirmationSectionLabel,
-            children: b.intl.string(b.t["6Y1FLi"])
-          }), (0, i.jsxs)("div", {
-            className: x.emojiBenefitsRow,
-            children: [(0, i.jsx)(o.Z, {
+            className: b.confirmationSectionLabel,
+            children: _.intl.string(_.t["6Y1FLi"])
+          }), (0, r.jsxs)("div", {
+            className: b.emojiBenefitsRow,
+            children: [(0, r.jsx)(o.Z, {
               emojiId: t.id,
               emojiName: t.name,
               animated: null != (e = t.animated) && e,
-              className: x.emojiImage
-            }), (0, i.jsxs)("div", {
-              children: [(0, i.jsx)(s.Text, {
+              className: b.emojiImage
+            }), (0, r.jsxs)("div", {
+              children: [(0, r.jsx)(s.Text, {
                 variant: "text-md/medium",
                 color: "header-primary",
-                className: x.emojiName,
-                children: b.intl.string(b.t.PrKk4u)
-              }), (0, i.jsx)(s.Text, {
+                className: b.emojiName,
+                children: _.intl.string(_.t.PrKk4u)
+              }), (0, r.jsx)(s.Text, {
                 color: "interactive-normal",
                 variant: "text-sm/normal",
-                children: b.intl.format(b.t["2ICUkJ"], {
+                children: _.intl.format(_.t["2ICUkJ"], {
                   count: c.length
                 })
               })]
             })]
           })]
         })
-      })(), (0, i.jsx)("div", {
+      })(), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: x.confirmationButton,
-        children: (0, i.jsx)(s.zxk, {
+        className: b.confirmationButton,
+        children: (0, r.jsx)(s.zxk, {
           variant: "primary",
-          text: b.intl.string(b.t["Ph+ecH"]),
+          text: _.intl.string(_.t["Ph+ecH"]),
           onClick: () => t(true)
         })
       })]

@@ -7,24 +7,24 @@ require.d(exports, {
 var Chunk961742 = require("./961742.js"),
   Chunk27273 = require("./27273.js"),
   Chunk262068 = require("./262068.js");
-let a = {};
+let o = {};
 async function s(e) {
-  let t = a[e];
+  let t = o[e];
   if (null != t) return t;
   let n = await fetch(e);
   return t = {
     url: e,
     cssText: await n.text()
-  }, a[e] = t, t
+  }, o[e] = t, t
 }
 async function l(e, t) {
   let n = e.cssText,
     r = /url\(["']?([^"')]+)["']?\)/g;
-  return Promise.all((n.match(/url\([^)]+\)/g) || []).map(async o => {
-    let a = o.replace(r, "$1");
-    return a.startsWith("https://") || (a = new URL(a, e.url).href), (0, i.cd)(a, t.fetchRequestInit, ({
+  return Promise.all((n.match(/url\([^)]+\)/g) || []).map(async a => {
+    let o = a.replace(r, "$1");
+    return o.startsWith("https://") || (o = new URL(o, e.url).href), (0, i.cd)(o, t.fetchRequestInit, ({
       result: e
-    }) => (n = n.replace(o, `url(${e})`), [o, e]))
+    }) => (n = n.replace(a, `url(${e})`), [a, e]))
   })).then(() => n)
 }
 
@@ -40,14 +40,14 @@ function c(e) {
     t.push(e[0])
   }
   r = r.replace(i, "");
-  let o = /@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi,
-    a = RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})", "gi");
+  let a = /@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi,
+    o = RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})", "gi");
   for (;;) {
-    let e = o.exec(r);
+    let e = a.exec(r);
     if (null === e) {
-      if (null === (e = a.exec(r))) break;
-      o.lastIndex = a.lastIndex
-    } else a.lastIndex = o.lastIndex;
+      if (null === (e = o.exec(r))) break;
+      a.lastIndex = o.lastIndex
+    } else o.lastIndex = a.lastIndex;
     t.push(e[0])
   }
   return t
@@ -59,11 +59,11 @@ async function u(e, t) {
     if ("cssRules" in n) try {
       (0, r.qo)(n.cssRules || []).forEach((e, r) => {
         if (e.type === CSSRule.IMPORT_RULE) {
-          let o = r + 1,
-            a = e.href,
-            u = s(a).then(e => l(e, t)).then(e => c(e).forEach(e => {
+          let a = r + 1,
+            o = e.href,
+            u = s(o).then(e => l(e, t)).then(e => c(e).forEach(e => {
               try {
-                n.insertRule(e, e.startsWith("@import") ? o += 1 : n.cssRules.length)
+                n.insertRule(e, e.startsWith("@import") ? a += 1 : n.cssRules.length)
               } catch (t) {
                 console.error("Error inserting rule from remote css", {
                   rule: e,
@@ -76,13 +76,13 @@ async function u(e, t) {
           i.push(u)
         }
       })
-    } catch (o) {
+    } catch (a) {
       let r = e.find(e => null == e.href) || document.styleSheets[0];
       null != n.href && i.push(s(n.href).then(e => l(e, t)).then(e => c(e).forEach(e => {
         r.insertRule(e, n.cssRules.length)
       })).catch(e => {
         console.error("Error loading remote stylesheet", e)
-      })), console.error("Error inlining remote css file", o)
+      })), console.error("Error inlining remote css file", a)
     }
   }), Promise.all(i).then(() => (e.forEach(e => {
     if ("cssRules" in e) try {
@@ -96,7 +96,7 @@ async function u(e, t) {
 }
 
 function d(e) {
-  return e.filter(e => e.type === CSSRule.FONT_FACE_RULE).filter(e => (0, o.w7)(e.style.getPropertyValue("src")))
+  return e.filter(e => e.type === CSSRule.FONT_FACE_RULE).filter(e => (0, a.w7)(e.style.getPropertyValue("src")))
 }
 async function f(e, t) {
   if (null == e.ownerDocument) throw Error("Provided element is not within a Document");
@@ -107,7 +107,7 @@ async function _(e, t) {
   let n = await f(e, t);
   return (await Promise.all(n.map(e => {
     let n = e.parentStyleSheet ? e.parentStyleSheet.href : null;
-    return (0, o.vg)(e.cssText, n, t)
+    return (0, a.vg)(e.cssText, n, t)
   }))).join("\n")
 }
 async function p(e, t) {

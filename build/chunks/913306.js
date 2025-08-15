@@ -7,14 +7,14 @@ n || (t = function(e) {
   returnfalse
 });
 var i = n ? Map.prototype.has : null,
-  o = r ? Set.prototype.has : null;
+  a = r ? Set.prototype.has : null;
 t || i || (t = function(e) {
   returnfalse
 }), module.exports = t || function(e) {
   if (!e || "object" != typeof e) returnfalse;
   try {
-    if (i.call(e), o) try {
-      o.call(e)
+    if (i.call(e), a) try {
+      a.call(e)
     } catch (e) {
       returntrue
     }

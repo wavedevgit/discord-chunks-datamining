@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 636433, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 636433, original params: e,t,n (module,exports,require) **/
 module.exports = {
   countdownContainer: "countdownContainer__8fece",
   iconContainer: "iconContainer__8fece",

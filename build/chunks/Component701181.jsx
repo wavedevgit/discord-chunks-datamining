@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 701181, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 701181, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -17,19 +16,19 @@ function c(e) {
     message: t,
     compact: n,
     usernameHook: c
-  } = e, u = (0, o.ZP)(t), d = c(u), f = s.intl.format(s.t.dKW5Cw, {
+  } = e, u = (0, l.ZP)(t), d = c(u), p = o.intl.format(o.t.dKW5Cw, {
     username: u.nick,
     usernameHook: d
   });
   return (0, r.jsx)(a.Z, {
-    className: l.stageSystemMessage,
+    className: s.stageSystemMessage,
     iconNode: (0, r.jsx)(i.Lrb, {
       size: "md",
       color: "currentColor"
     }),
-    iconContainerClassName: l.iconContainer,
+    iconContainerClassName: s.iconContainer,
     timestamp: t.timestamp,
     compact: n,
-    children: f
+    children: p
   })
 }

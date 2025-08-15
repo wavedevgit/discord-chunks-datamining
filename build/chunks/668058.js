@@ -1,32 +1,31 @@
-/** Chunk was on web.js **/
-/** chunk id: 668058, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 668058, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $: () => o
+  $: () => l
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk881052 = require("./881052.js");
 
-function o(e) {
+function l(e) {
   let {
     onError: t,
     onSuccess: n,
-    report: o
-  } = e, [a, s] = r.useState(false), l = a;
+    report: l
+  } = e, [a, o] = r.useState(false);
   return {
     reportFalsePositive: r.useCallback(async () => {
-      if (!l) {
-        s(true);
+      if (!a) {
+        o(true);
         try {
-          await o(), null == n || n()
+          await l(), null == n || n()
         } catch (n) {
           let e = new i.Hx(n);
           null == t || t(e)
         } finally {
-          s(false)
+          o(false)
         }
       }
-    }, [l, t, n, o]),
+    }, [a, t, n, l]),
     isReportFalsePositiveLoading: a
   }
 }

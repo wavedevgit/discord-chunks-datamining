@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk688619 = require("./688619.js"),
-  a = require.n(Chunk688619),
+  o = require.n(Chunk688619),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk522942 = require("./522942.js"),
@@ -27,14 +27,14 @@ let v = Chunk73800.memo(function(e) {
   var t;
   let {
     userName: n,
-    displayNameStyles: o,
+    displayNameStyles: a,
     effectDisplayType: s = g.F.STATIC,
     inProfile: v = false,
     textClassName: T,
     loop: S = false,
     shouldWrap: A = false
   } = e, N = (0, y.j)({
-    displayNameStyles: o,
+    displayNameStyles: a,
     inProfile: v
   }), {
     useReducedMotion: C,
@@ -48,17 +48,17 @@ let v = Chunk73800.memo(function(e) {
     location: "useDisplayNameStylesFont"
   }), w = (0, m.Y)({
     location: "UserNameWithEffects"
-  }), D = (0, f.dQu)(f.TVs.colors.BACKGROUND_BASE_LOW).hex(), L = (0, b.R)(null != (t = null == o ? true : o.effectId) ? t : c.m.SOLID), x = (0, f.qgQ)(n), M = (0, d.EJ)(x, (null == o ? true : o.effectId) === c.m.TOON ? O.emoji : true), j = i.useMemo(() => null != o && w ? o.colors.map(e => (0, p.wh)({
-    foreground: a()(e),
-    background: (null == o ? true : o.effectId) === c.m.TOON ? a()("#333") : a()(D),
+  }), D = (0, f.dQu)(f.TVs.colors.BACKGROUND_BASE_LOW).hex(), L = (0, b.R)(null != (t = null == a ? true : a.effectId) ? t : c.m.SOLID), x = (0, f.qgQ)(n), M = (0, d.EJ)(x, (null == a ? true : a.effectId) === c.m.TOON ? O.emoji : true), k = i.useMemo(() => null != a && w ? a.colors.map(e => (0, p.wh)({
+    foreground: o()(e),
+    background: (null == a ? true : a.effectId) === c.m.TOON ? o()("#333") : o()(D),
     ratio: L.minContrastRatio,
     saturationFactor: R
-  }).hex()) : [], [o, w, L.minContrastRatio, R, D]);
-  if (!w || !v && !P || null == o) return n;
-  let k = (0, E.K)(o.effectId, j, {
+  }).hex()) : [], [a, w, L.minContrastRatio, R, D]);
+  if (!w || !v && !P || null == a) return n;
+  let j = (0, E.K)(a.effectId, k, {
       shouldWrap: A
     }),
-    U = I(o.effectId);
+    U = I(a.effectId);
   return (0, r.jsxs)("div", {
     className: l()(O.container, N, T, {
       [O.showEffect]: s !== g.F.PLAIN,
@@ -66,7 +66,7 @@ let v = Chunk73800.memo(function(e) {
       [O.loop]: S,
       [O.inProfile]: v
     }),
-    style: k,
+    style: j,
     children: [(0, r.jsx)("span", {
       "data-username-with-effects": x,
       className: l()(O.innerContainer, null == U ? true : U.effectClassName),

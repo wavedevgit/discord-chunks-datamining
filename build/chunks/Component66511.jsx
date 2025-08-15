@@ -57,17 +57,17 @@ let p = () => {
     })
   },
   h = e => {
-    o.default.track(c.rMx.OPEN_MODAL, {
+    a.default.track(c.rMx.OPEN_MODAL, {
       type: l.N4,
       guild_id: e
     })
   },
   m = {
-    openMemberVerificationModal(e, t, o) {
+    openMemberVerificationModal(e, t, a) {
       if (__OVERLAY__) return;
       h(e);
       let c = async t => {
-        await a.ZP.submitVerificationForm(e, t)
+        await o.ZP.submitVerificationForm(e, t)
       };
       (0, i.ZD)(async () => {
         let {
@@ -75,7 +75,7 @@ let p = () => {
         } = await Promise.all([n.e("54408"), n.e("36605")]).then(n.bind(n, 645264));
         return n => (0, r.jsx)(t, _(d({}, n), {
           guildId: e,
-          inviteKey: o,
+          inviteKey: a,
           onComplete: c,
           onClose: async function() {
             let e = arguments.length > 0 && true !== arguments[0] && arguments[0];

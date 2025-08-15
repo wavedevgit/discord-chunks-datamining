@@ -13,7 +13,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk987338 = require("./987338.js");
 
 function u(e) {
-  return e === c.NZ.CONTROL ? o.k3.CONTROL : e === c.NZ.NOT_ELIGIBLE ? o.k3.UNSPECIFIED : o.k3.TREATMENT
+  return e === c.NZ.CONTROL ? a.k3.CONTROL : e === c.NZ.NOT_ELIGIBLE ? a.k3.UNSPECIFIED : a.k3.TREATMENT
 }
 
 function d() {
@@ -29,8 +29,8 @@ function d() {
         title: Chunk73800.title,
         variants: Chunk73800.buckets.map((e, t) => ({
           id: e.valueOf(),
-          label: "object" == typeof r.description ? r.description[t] : a.Z.getExperimentBucketName(e),
-          shortLabel: a.Z.getExperimentBucketName(e),
+          label: "object" == typeof r.description ? r.description[t] : o.Z.getExperimentBucketName(e),
+          shortLabel: o.Z.getExperimentBucketName(e),
           type: u(e)
         }))
       };

@@ -10,7 +10,7 @@ require.d(exports, {
   xt: () => J
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
   Chunk570140 = require("./570140.js"),
@@ -115,11 +115,11 @@ function R(e) {
 
 function P(e) {
   var t, n, r, i;
-  let o = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    a = C(e.guild_scheduled_event_exception_id),
-    s = (null == (n = T[e.guild_scheduled_event_id]) || null == (t = n[a]) ? true : t[e.user_id]) != null,
+  let a = !(arguments.length > 1) || true === arguments[1] || arguments[1],
+    o = C(e.guild_scheduled_event_exception_id),
+    s = (null == (n = T[e.guild_scheduled_event_id]) || null == (t = n[o]) ? true : t[e.user_id]) != null,
     l = e.user_id === c.default.getId();
-  (s || !l) && (null == (i = T[e.guild_scheduled_event_id]) || null == (r = i[a]) || delete r[e.user_id], L(e), o && (O += 1))
+  (s || !l) && (null == (i = T[e.guild_scheduled_event_id]) || null == (r = i[o]) || delete r[e.user_id], L(e), a && (O += 1))
 }
 
 function w(e, t, n) {
@@ -155,18 +155,18 @@ function M(e) {
   A(t)
 }
 
-function j(e) {
+function k(e) {
   let {
     guildId: t,
     guildScheduledEvents: n
   } = e, r = y.values(g.GUILD_EVENT(t), true).map(e => e.id), i = n.map(e => e.id);
-  for (let e of (o().difference(r, i).forEach(e => {
+  for (let e of (a().difference(r, i).forEach(e => {
       N(e)
     }), n)) A(e);
   returntrue
 }
 
-function k(e) {
+function j(e) {
   let {
     guild: t
   } = e;
@@ -191,7 +191,7 @@ function B(e) {
   return A(t), true
 }
 
-function Z(e) {
+function V(e) {
   let {
     guildScheduledEvent: t
   } = e;
@@ -210,7 +210,7 @@ function F(e) {
   })), true
 }
 
-function V(e) {
+function Z(e) {
   let {
     eventException: t
   } = e, n = y.get(t.event_id);
@@ -249,17 +249,17 @@ function K(e) {
   let {
     userId: r,
     guildEventId: i,
-    guildId: o,
-    guildEventExceptionId: a,
+    guildId: a,
+    guildEventExceptionId: o,
     response: s
-  } = e, l = C(a), c = null == (n = T[i]) || null == (t = n[l]) ? true : t[r];
+  } = e, l = C(o), c = null == (n = T[i]) || null == (t = n[l]) ? true : t[r];
   null != c && P(c, false);
-  let d = u.ZP.getMember(o, r);
+  let d = u.ZP.getMember(a, r);
   return R({
     user_id: r,
     guild_scheduled_event_id: i,
     member: null != d ? d : true,
-    guild_scheduled_event_exception_id: a,
+    guild_scheduled_event_exception_id: o,
     response: s
   }), true
 }
@@ -331,23 +331,23 @@ class et extends(r = Chunk442837.ZP.Store) {
   getRsvp(e, t, n) {
     var r, i;
     if (null == e) return null;
-    let o = C(t);
-    return null == (i = T[e]) || null == (r = i[o]) ? true : r[n]
+    let a = C(t);
+    return null == (i = T[e]) || null == (r = i[a]) ? true : r[n]
   }
   isInterestedInEventRecurrence(e, t) {
     let n = c.default.getId(),
       r = this.getRsvp(e, null, n),
       i = this.getRsvp(e, t, n),
-      o = (null == r ? true : r.response) === f.gv.INTERESTED,
-      a = (null == i ? true : i.response) === f.gv.INTERESTED,
+      a = (null == r ? true : r.response) === f.gv.INTERESTED,
+      o = (null == i ? true : i.response) === f.gv.INTERESTED,
       s = (null == i ? true : i.response) === f.gv.UNINTERESTED;
-    return o && !s || a
+    return a && !s || o
   }
   getUserCount(e, t) {
-    var n, r, i, o;
+    var n, r, i, a;
     if (null == e) return 0;
-    let a = null != (i = null == (n = S[e]) ? true : n[I]) ? i : 0;
-    return null == t ? a : a - (null != (o = null == (r = S[e]) ? true : r[t]) ? o : 0)
+    let o = null != (i = null == (n = S[e]) ? true : n[I]) ? i : 0;
+    return null == t ? o : o - (null != (a = null == (r = S[e]) ? true : r[t]) ? a : 0)
   }
   hasUserCount(e, t) {
     var n;
@@ -370,13 +370,13 @@ class et extends(r = Chunk442837.ZP.Store) {
 _(et, "displayName", "GuildScheduledEventStore");
 let en = new et(Chunk570140.Z, {
   CONNECTION_OPEN: x,
-  GUILD_CREATE: k,
+  GUILD_CREATE: j,
   GUILD_DELETE: U,
   FETCH_GUILD_EVENT: M,
-  FETCH_GUILD_EVENTS_FOR_GUILD: j,
+  FETCH_GUILD_EVENTS_FOR_GUILD: k,
   GUILD_SCHEDULED_EVENT_CREATE: B,
   GUILD_SCHEDULED_EVENT_UPDATE: B,
-  GUILD_SCHEDULED_EVENT_DELETE: Z,
+  GUILD_SCHEDULED_EVENT_DELETE: V,
   GUILD_SCHEDULED_EVENT_USER_ADD: K,
   GUILD_SCHEDULED_EVENT_USER_REMOVE: z,
   GUILD_SCHEDULED_EVENT_RSVPS_FETCH_SUCESS: Y,
@@ -385,7 +385,7 @@ let en = new et(Chunk570140.Z, {
   INVITE_RESOLVE_SUCCESS: Q,
   GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE: F,
   GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: F,
-  GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE: V,
+  GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE: Z,
   GUILD_SCHEDULED_EVENT_EXCEPTIONS_DELETE: H,
   LOGOUT: X
 })

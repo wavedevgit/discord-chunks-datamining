@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 97352, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 97352, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -21,14 +20,14 @@ function d() {
       let {
         messageId: r,
         channelId: i,
-        emoji: o,
+        emoji: l,
         optimistic: a,
-        reactionType: l
+        reactionType: s
       } = n;
-      a || l !== u.O.BURST || !e || t || (0, s.T6)({
+      a || s !== u.O.BURST || !e || t || (0, o.T6)({
         channelId: i,
         messageId: r,
-        emoji: o,
+        emoji: l,
         key: c.I.EXTERNAL
       })
     }

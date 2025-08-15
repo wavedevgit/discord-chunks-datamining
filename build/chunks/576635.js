@@ -23,7 +23,7 @@ function f(e) {
     pendingAvatarSrc: m,
     isPreview: g,
     forceUserTheme: E
-  } = e, b = (0, a.ZP)(), y = (0, i.e7)([s.Z], () => s.Z.syncProfileThemeWithUserTheme), O = null != m ? m : null == _ ? true : _.getAvatarURL(null == p ? true : p.guildId, 80), v = (0, c.Sl)(d.Ilk.PRIMARY_530).hex, [I, T] = (0, l.Cf)(O, v, false);
+  } = e, b = (0, o.ZP)(), y = (0, i.e7)([s.Z], () => s.Z.syncProfileThemeWithUserTheme), O = null != m ? m : null == _ ? true : _.getAvatarURL(null == p ? true : p.guildId, 80), v = (0, c.Sl)(d.Ilk.PRIMARY_530).hex, [I, T] = (0, l.Cf)(O, v, false);
   if (!(null == p ? true : p.canEditThemes) && !g) return {
     theme: b,
     primaryColor: null,
@@ -33,7 +33,7 @@ function f(e) {
     A = null != (t = null == S ? true : S[0]) ? t : (0, r._i)(I),
     N = null != (n = null == S ? true : S[1]) ? n : (0, r._i)(T),
     C = y || E ? b : null != (f = (0, u.V3)(A)) ? f : b;
-  return C === d.BRd.DARK && (0, o.wj)(b) ? C = b : C === d.BRd.DARK && (0, o.ap)(b) && (C = d.BRd.DARKER), {
+  return C === d.BRd.DARK && (0, a.wj)(b) ? C = b : C === d.BRd.DARK && (0, a.ap)(b) && (C = d.BRd.DARKER), {
     theme: C,
     primaryColor: A,
     secondaryColor: N

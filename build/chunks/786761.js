@@ -93,19 +93,19 @@ function R(e) {
     components: (0, s.uZ)(null != (t = e.components) ? t : [], {
       includeEmojiSrc: false
     }),
-    codedLinks: e.type === O.uaV.THREAD_CREATED ? [] : (0, a.ZP)(e.content)
+    codedLinks: e.type === O.uaV.THREAD_CREATED ? [] : (0, o.ZP)(e.content)
   }))
 }
 
 function P(e) {
-  var t, n, r, i, a, s, c, f;
+  var t, n, r, i, o, s, c, f;
   let h, m, {
       reactions: y,
       interactionData: v
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     T = R(e),
     A = null != (i = null == (t = e.mentions) ? true : t.map(e => e.id)) ? i : [],
-    P = null != (a = e.mention_roles) ? a : [],
+    P = null != (o = e.mention_roles) ? o : [],
     w = null != (s = e.mention_channels) ? s : [],
     D = null != (c = e.mention_games) ? c : [],
     L = e.message_reference,
@@ -113,10 +113,10 @@ function P(e) {
     U = null,
     G = null == e ? true : e.gift_info,
     B = e.gifting_prompt,
-    Z = null != e.interaction ? u.Z.createFromServer(e.interaction) : null,
+    V = null != e.interaction ? u.Z.createFromServer(e.interaction) : null,
     F = e.type === O.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
-    V = e.content;
-  return new d.ZP((e.type === O.uaV.PREMIUM_REFERRAL ? (h = E.default.isProbablyAValidSnowflake(e.content) ? e.content : true, V = "") : e.type === O.uaV.CHAT_WALLPAPER_SET && (m = (0, o.Z)(e.content), V = ""), C(e)) ? S(I({}, U), {
+    Z = e.content;
+  return new d.ZP((e.type === O.uaV.PREMIUM_REFERRAL ? (h = E.default.isProbablyAValidSnowflake(e.content) ? e.content : true, Z = "") : e.type === O.uaV.CHAT_WALLPAPER_SET && (m = (0, a.Z)(e.content), Z = ""), C(e)) ? S(I({}, U), {
     id: e.id,
     channel_id: e.channel_id,
     type: O.uaV.DEFAULT,
@@ -143,12 +143,12 @@ function P(e) {
       mentionGames: D.map(e => e.id)
     }),
     giftCodes: (0, g.Fp)(e) ? (0, g.Q_)(null == e ? true : e.embeds[0].url) : (0, g.Q_)(e.content),
-    content: V,
+    content: Z,
     referralTrialOfferId: h,
     call: x(e.call, T.timestamp),
-    messageSnapshots: k(e),
-    reactions: j(null != y ? y : e.reactions, e.poll),
-    interaction: Z,
+    messageSnapshots: j(e),
+    reactions: k(null != y ? y : e.reactions, e.poll),
+    interaction: V,
     interactionData: null != v ? v : e.interaction_data,
     interactionMetadata: e.interaction_metadata,
     roleSubscriptionData: e.role_subscription_data,
@@ -175,11 +175,11 @@ function D(e, t) {
   });
   let n = e,
     r = false;
-  if (null != t.call && (n = n.set("call", x(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", L(t))), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", M(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", k(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new f.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, s.uZ)(t.components, {
+  if (null != t.call && (n = n.set("call", x(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", L(t))), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", M(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", j(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new f.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, s.uZ)(t.components, {
       includeEmojiSrc: false
     }))), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
     var i;
-    n = n.set("reactions", j(null != (i = e.reactions) ? i : t.reactions))
+    n = n.set("reactions", k(null != (i = e.reactions) ? i : t.reactions))
   }
   return null != t.poll && (n = n.set("poll", (0, l.Z)(t.poll))), null != t.mentions && (n = n.set("mentions", t.mentions.map(e => e.id)), r = true), null != t.mention_games && (n = n.set("mentionGames", t.mention_games), r = true), null != t.mention_everyone && (n = n.set("mentionEveryone", t.mention_everyone), r = true), null != t.mention_roles && (n = n.set("mentionRoles", t.mention_roles), r = true), null != t.potions && (n = n.set("potions", t.potions)), r && (n = n.set("mentioned", (0, b.ZP)({
     message: n,
@@ -212,7 +212,7 @@ function M(e) {
   return (0, m.o3)(t)
 }
 
-function j(e, t) {
+function k(e, t) {
   var n;
   if (null == e && (null == t ? true : t.results) == null) return [];
   let r = null == t || null == (n = t.results) ? true : n.answer_counts.map(e => ({
@@ -240,7 +240,7 @@ function j(e, t) {
   })
 }
 
-function k(e) {
+function j(e) {
   return null == e.message_snapshots ? [] : e.message_snapshots.map(e => {
     let {
       message: t,

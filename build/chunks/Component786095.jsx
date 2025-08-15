@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 786095, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37220 **/
+/** chunk id: 786095, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
 }), require("./388685.js"), require("./35282.js");
@@ -21,106 +20,95 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk335260 = require("./335260.js");
 
-function b(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function y(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function O(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
 function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = Chunk273504.fX.KEYWORD,
-  T = 400;
+let j = Chunk273504.fX.KEYWORD;
 
 function S(e, t) {
   let {
     perGuildMaxCount: n
-  } = c.I6[I], {
-    isLoading: b,
-    saveRule: O,
-    errorMessage: S
+  } = c.I6[j], {
+    isLoading: S,
+    saveRule: E,
+    errorMessage: P
   } = (0, d.w)(), {
-    createNewEditingRule: A
-  } = (0, d.V)(), [N, C] = i.useState(false), [R, P] = (0, l.I2)(t), {
-    rulesByTriggerType: w,
-    updateRule: D
-  } = (0, l.pH)(t), L = i.useMemo(() => {
+    createNewEditingRule: _
+  } = (0, d.V)(), [Z, T] = i.useState(false), [w, I] = (0, s.I2)(t), {
+    rulesByTriggerType: A,
+    updateRule: N
+  } = (0, s.pH)(t), x = i.useMemo(() => {
     var e;
-    return null != (e = w[I]) ? e : []
-  }, [w]), x = 0 === L.length, M = n > L.length && !x;
+    return null != (e = A[j]) ? e : []
+  }, [A]), D = 0 === x.length, M = n > x.length && !D;
   if (!i.useMemo(() => (0, u.ze)(t), [t]) || null == e || 0 === e.length || null == t) return null;
-  let j = e.split(" "),
-    k = j.length;
+  let C = e.split(" "),
+    R = C.length;
   try {
-    (0, s.km)(j, m.RH)
+    (0, o.km)(C, O.RH)
   } catch (e) {
     return null
   }
-  let U = () => {
-      N || (C(true), P())
-    },
-    G = () => {
-      null != t && ((0, a.Zy)(), p.Z.open(t, h.pNK.GUILD_AUTOMOD), setTimeout(() => {
-        A(t, I, {
+  let L = () => {
+      null != t && ((0, a.Zy)(), b.Z.open(t, p.pNK.GUILD_AUTOMOD), setTimeout(() => {
+        _(t, j, {
           triggerMetadata: {
             keywordFilter: [e],
             regexPatterns: [],
             allowList: []
           }
         })
-      }, T))
+      }, 400))
     },
-    B = async t => {
+    k = async t => {
       var n, r;
-      if ((0, a.Zy)(), !await (0, _.XN)(t.name, e)) return;
-      let i = v(y({}, t), {
-        triggerMetadata: v(y({}, t.triggerMetadata), {
+      if ((0, a.Zy)(), !await (0, g.XN)(t.name, e)) return;
+      let i = v(h({}, t), {
+        triggerMetadata: v(h({}, t.triggerMetadata), {
           keywordFilter: [...null != (r = null == (n = t.triggerMetadata) ? true : n.keywordFilter) ? r : [], e]
         })
       });
-      await O(i, L), D(i), null != S ? (0, o.showToast)((0, o.createToast)(g.intl.string(g.t.wH6L0t), o.ToastType.FAILURE)) : (0, o.showToast)((0, o.createToast)(g.intl.string(g.t["0rdYm5"]), o.ToastType.SUCCESS))
-    }, Z = (0, r.jsx)(o.sNh, {
+      await E(i, x), N(i), null != P ? (0, l.showToast)((0, l.createToast)(y.intl.string(y.t.wH6L0t), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(y.intl.string(y.t["0rdYm5"]), l.ToastType.SUCCESS))
+    }, G = (0, r.jsx)(l.sNh, {
       id: "automod-rules-loading",
-      label: g.intl.string(g.t.ZTNur6)
+      label: y.intl.string(y.t.ZTNur6)
     });
-  return R || (Z = (0, r.jsxs)(r.Fragment, {
-    children: [x && (0, r.jsx)(o.sNh, {
+  return w || (G = (0, r.jsxs)(r.Fragment, {
+    children: [D && (0, r.jsx)(l.sNh, {
       id: "add-first-rule",
-      label: g.intl.string(g.t.f72Zqa),
-      action: G,
-      disabled: b
-    }), L.map(e => {
-      let t = (0, c.V9)(I).reduce((t, n) => {
+      label: y.intl.string(y.t.f72Zqa),
+      action: L,
+      disabled: S
+    }), x.map(e => {
+      let t = (0, c.V9)(j).reduce((t, n) => {
         let r = e.actions.find(e => {
           let {
             type: t
@@ -131,34 +119,36 @@ function S(e, t) {
         let i = (0, f.c)(n, r);
         return t + ", ".concat(null == i ? true : i.headerText)
       }, "");
-      return (0, r.jsx)(o.k5B, {
+      return (0, r.jsx)(l.k5B, {
         id: e.id,
         label: e.name,
-        subtext: (0, r.jsx)(o.Text, {
+        subtext: (0, r.jsx)(l.Text, {
           color: "text-muted",
-          className: E.actionTextHeader,
+          className: m.actionTextHeader,
           variant: "text-xs/normal",
           children: t.slice(2)
         }),
         group: "automod-rule-selection",
         checked: false,
-        disabled: b,
-        action: () => B(e)
+        disabled: S,
+        action: () => k(e)
       }, e.id)
     }), M && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.Clw, {}), (0, r.jsx)(o.sNh, {
+      children: [(0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         id: "add-another-rule",
-        label: g.intl.string(g.t["0K5jDA"]),
-        action: G,
-        disabled: b
+        label: y.intl.string(y.t["0K5jDA"]),
+        action: L,
+        disabled: S
       })]
     })]
-  })), (0, r.jsx)(o.sNh, {
+  })), (0, r.jsx)(l.sNh, {
     id: "guild-automod-add-selection",
-    label: g.intl.formatToPlainString(g.t.Kkjv1t, {
-      keywordCount: k
+    label: y.intl.formatToPlainString(y.t.Kkjv1t, {
+      keywordCount: R
     }),
-    onFocus: U,
-    children: Z
+    onFocus: () => {
+      Z || (T(true), I())
+    },
+    children: G
   })
 }

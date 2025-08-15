@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
 /** chunk id: 891949, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -12,11 +12,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk226788 = require("./226788.js"),
   Chunk275914 = require("./275914.js");
 
-function u(e) {
+function d(e) {
   let {
     detectedGame: t,
     trackAction: r
-  } = e, u = a.useRef(null), m = a.useMemo(() => {
+  } = e, d = a.useRef(null), m = a.useMemo(() => {
     let e = t.artwork.map(e => ({
       url: e,
       type: "IMAGE"
@@ -25,12 +25,12 @@ function u(e) {
       url: e,
       type: "IMAGE"
     })), ...e]
-  }, [t.artwork, t.screenshots]), g = m.length > 2;
+  }, [t.artwork, t.screenshots]), f = m.length > 2;
 
-  function p(e) {
-    if (null == u.current) return;
-    let t = u.current.getScrollerState().scrollLeft;
-    u.current.scrollTo({
+  function g(e) {
+    if (null == d.current) return;
+    let t = d.current.getScrollerState().scrollLeft;
+    d.current.scrollTo({
       to: t + 280 * e,
       animate: true
     })
@@ -42,16 +42,16 @@ function u(e) {
       color: "header-primary",
       children: s.intl.string(s.t["bNdK5+"])
     }), (0, n.jsxs)("div", {
-      className: g ? d.gameProfileMediaSmall : d.gameProfileMediaLarge,
+      className: f ? u.gameProfileMediaSmall : u.gameProfileMediaLarge,
       children: [(0, n.jsx)(i.xVE, {
-        ref: u,
-        className: d.imageScroller,
+        ref: d,
+        className: u.imageScroller,
         orientation: "horizontal",
         children: m.map((e, t) => (0, n.jsx)(i.P3F, {
-          className: d.imageClickable,
+          className: u.imageClickable,
           focusProps: {
             offset: 4,
-            ringClassName: d.gameArtworkFocusRing
+            ringClassName: u.gameArtworkFocusRing
           },
           onClick: () => {
             r(o.as.ClickImage), (0, l.K)({
@@ -63,30 +63,30 @@ function u(e) {
           },
           children: (0, n.jsx)("img", {
             src: e.url,
-            className: d.gameArtwork,
+            className: u.gameArtwork,
             alt: s.intl.formatToPlainString(s.t.COYYrq, {
               game: name
             })
           })
         }, t))
-      }), g && (0, n.jsxs)("div", {
-        className: d.mediaOverlay,
+      }), f && (0, n.jsxs)("div", {
+        className: u.mediaOverlay,
         children: [(0, n.jsx)("div", {
-          className: d.gradientLeft
+          className: u.gradientLeft
         }), (0, n.jsx)(i.P3F, {
-          className: d.arrowClickable,
-          onClick: () => p(false),
+          className: u.arrowClickable,
+          onClick: () => g(false),
           children: (0, n.jsx)(i.whL, {
-            className: d.arrow,
+            className: u.arrow,
             color: "currentColor"
           })
         }), (0, n.jsx)("div", {
-          className: d.gradientRight
+          className: u.gradientRight
         }), (0, n.jsx)(i.P3F, {
-          className: d.arrowClickable,
-          onClick: () => p(1),
+          className: u.arrowClickable,
+          onClick: () => g(1),
           children: (0, n.jsx)(i.ZSh, {
-            className: d.arrow,
+            className: u.arrow,
             color: "currentColor"
           })
         })]

@@ -1,7 +1,7 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 59727 **/
 /** chunk id: 763431, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -9,28 +9,28 @@ var Chunk481060 = require("./481060.js"),
   Chunk565138 = require("./565138.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk99563 = require("./99563.js");
-let o = e => {
+let s = e => {
   let {
     guild: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: s.container,
-    children: [(0, r.jsx)(i.X6q, {
-      className: s.header,
+    className: o.container,
+    children: [(0, r.jsx)(a.X6q, {
+      className: o.header,
       variant: "heading-sm/semibold",
-      children: a.intl.string(a.t["0ox7Hh"])
+      children: l.intl.string(l.t["0ox7Hh"])
     }), (0, r.jsx)("div", {
-      className: s.guildContainer,
+      className: o.guildContainer,
       children: (0, r.jsxs)("div", {
-        className: s.guildInfo,
+        className: o.guildInfo,
         children: [(0, r.jsx)("div", {
-          className: s.guildIcon,
-          children: (0, r.jsx)(l.Z, {
+          className: o.guildIcon,
+          children: (0, r.jsx)(i.Z, {
             guild: t,
-            size: l.Z.Sizes.LARGE
+            size: i.Z.Sizes.LARGE
           })
         }), (0, r.jsx)("div", {
-          children: (0, r.jsx)(i.Text, {
+          children: (0, r.jsx)(a.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
             children: t.name

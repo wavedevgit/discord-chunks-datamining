@@ -34,8 +34,8 @@ class f extends Chunk147913.Z {
       let d = s.Z.getMessage(e.channelId, t);
       if ((null == d || null == (n = d.activity) ? true : n.type) !== u.mFx.STREAM_REQUEST || (null == (i = d.application) ? true : i.id) == null) continue;
       let f = l.Z.getApplicationActivity(e.userId, d.application.id, e.guildId);
-      if (!(0, o.Z)(f, d, d.application.id)) continue;
-      let _ = a.Z.getStreamForUser(e.userId, e.guildId);
+      if (!(0, a.Z)(f, d, d.application.id)) continue;
+      let _ = o.Z.getStreamForUser(e.userId, e.guildId);
       null != _ && r.rn(_, {
         forceMultiple: true,
         noFocus: true

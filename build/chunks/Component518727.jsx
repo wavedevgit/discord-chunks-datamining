@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -30,7 +30,7 @@ let I = 1e3,
     let {
       children: t,
       isConfirmationStep: n
-    } = e, o = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [I, T] = (0, i.useState)("entry"), S = (0, i.useRef)(null), A = (0, i.useRef)(null), N = (0, i.useCallback)(() => {
+    } = e, a = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [I, T] = (0, i.useState)("entry"), S = (0, i.useRef)(null), A = (0, i.useRef)(null), N = (0, i.useCallback)(() => {
       if ("entry" === I && (T("idle"), null != S.current)) {
         var e;
         null == (e = S.current) || e.play()
@@ -52,24 +52,24 @@ let I = 1e3,
     }, [D]);
     let M = (0, f.P)(R, !!P, w),
       {
-        mediaUrls: j,
-        isSuccess: k
-      } = (0, E.Z)(!o && M && L),
+        mediaUrls: k,
+        isSuccess: j
+      } = (0, E.Z)(!a && M && L),
       U = (0, i.useRef)(null),
       [G, B] = (0, i.useState)(false),
-      [Z, F] = (0, i.useState)(false),
-      [V, H] = (0, i.useState)("none"),
+      [V, F] = (0, i.useState)(false),
+      [Z, H] = (0, i.useState)("none"),
       [Y, W] = (0, i.useState)(false);
     if ((0, i.useEffect)(() => {
         let e;
-        M && n && !Y && "none" === V && (o || !k ? (H("static"), o || (W(true), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (H("animated"), F(true), e = true), c.Z.dispatch({
+        M && n && !Y && "none" === Z && (a || !j ? (H("static"), a || (W(true), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (H("animated"), F(true), e = true), c.Z.dispatch({
           type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
           value: true,
           isAnimated: e
         }), _.default.track(b.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED, {
           wow_moment_type: e ? "animated" : "static"
         }))
-      }, [o, M, n, k, Y, V]), (0, i.useEffect)(() => {
+      }, [a, M, n, j, Y, Z]), (0, i.useEffect)(() => {
         function e() {
           B(true), C()
         }
@@ -82,7 +82,7 @@ let I = 1e3,
           value: false,
           isAnimated: false
         })
-      }, []), "animated" === V) return (0, r.jsxs)("div", {
+      }, []), "animated" === Z) return (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: y.videoContainer,
         children: [(0, r.jsx)("div", {
@@ -92,9 +92,9 @@ let I = 1e3,
             muted: true,
             autoPlay: true,
             onEnded: N,
-            className: a()(y.video, "entry" === I ? y.visible : y.hidden),
+            className: o()(y.video, "entry" === I ? y.visible : y.hidden),
             children: (0, r.jsx)("source", {
-              src: j.modalGlowEntry
+              src: k.modalGlowEntry
             })
           })
         }), (0, r.jsx)(d.Z, {
@@ -102,17 +102,17 @@ let I = 1e3,
           playsInline: true,
           muted: true,
           loop: true,
-          className: a()(y.video, "idle" === I ? y.visible : y.hidden),
+          className: o()(y.video, "idle" === I ? y.visible : y.hidden),
           children: (0, r.jsx)("source", {
-            src: j.modalGlowIdle
+            src: k.modalGlowIdle
           })
         }), (0, r.jsx)(d.Z, {
           ref: A,
           playsInline: true,
           muted: true,
-          className: a()(y.video, "exit" === I ? y.visible : y.hidden),
+          className: o()(y.video, "exit" === I ? y.visible : y.hidden),
           children: (0, r.jsx)("source", {
-            src: j.modalGlowExit
+            src: k.modalGlowExit
           })
         })]
       }), (0, r.jsx)("div", {
@@ -122,7 +122,7 @@ let I = 1e3,
           ref: U,
           dataBinding: {
             ExitTrigger: G,
-            EntryTrigger: Z
+            EntryTrigger: V
           }
         })
       }), (0, r.jsx)("div", {
@@ -131,7 +131,7 @@ let I = 1e3,
       })]
     });
     let K = !G;
-    return "static" === V ? (0, r.jsxs)(r.Fragment, {
+    return "static" === Z ? (0, r.jsxs)(r.Fragment, {
       children: [K && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("img", {
           src: O.Z,

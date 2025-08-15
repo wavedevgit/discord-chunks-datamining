@@ -1,4 +1,4 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 595145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => en
@@ -87,7 +87,7 @@ function en(e) {
     messageId: el,
     roleId: eo,
     showGuildProfile: em
-  }), eO = i.useRef(null), ex = (0, s.Z)(eO), [eh, ev] = i.useState(false), e_ = (0, N.$m)(), eI = (0, a.q_F)({
+  }), eO = i.useRef(null), eh = (0, s.Z)(eO), [ex, ev] = i.useState(false), e_ = (0, N.$m)(), eI = (0, a.q_F)({
     opacity: +(null != e_.interactionType),
     config: {
       duration: 150
@@ -101,12 +101,12 @@ function en(e) {
     {
       relationshipType: eZ,
       originApplicationId: eN
-    } = (0, o.cj)([x.Z], () => ({
-      relationshipType: x.Z.getRelationshipType(n.id),
-      originApplicationId: x.Z.getOriginApplicationId(n.id)
+    } = (0, o.cj)([h.Z], () => ({
+      relationshipType: h.Z.getRelationshipType(n.id),
+      originApplicationId: h.Z.getOriginApplicationId(n.id)
     })),
-    eS = (0, o.e7)([h.Z], () => h.Z.hidePersonalInformation),
-    ew = null == eE ? true : eE.getBannerURL({
+    ew = (0, o.e7)([x.Z], () => x.Z.hidePersonalInformation),
+    eS = null == eE ? true : eE.getBannerURL({
       canAnimate: false,
       size: 1024
     }),
@@ -147,7 +147,7 @@ function en(e) {
       children: (0, r.jsx)(N.NJ, {
         value: e_,
         children: (0, r.jsx)(a.UkV, {
-          isShaking: eh,
+          isShaking: ex,
           intensity: 1.4,
           children: (0, r.jsxs)(a.Y0X, {
             "data-migration-pending": true,
@@ -186,10 +186,10 @@ function en(e) {
                 user: n,
                 displayProfile: eE,
                 themeType: Q.lY.MODAL_V2,
-                children: [null != ew && (0, r.jsx)("div", {
+                children: [null != eS && (0, r.jsx)("div", {
                   className: et.backgroundImage,
                   style: {
-                    backgroundImage: "url(".concat(ew, ")")
+                    backgroundImage: "url(".concat(eS, ")")
                   }
                 }), null != e_.interactionType && (0, r.jsx)(l.animated.div, {
                   style: eI,
@@ -210,7 +210,7 @@ function en(e) {
                       userId: n.id,
                       onClose: ep,
                       className: et.interactionToast
-                    }), (0, r.jsx)(S.Z, {
+                    }), (0, r.jsx)(w.Z, {
                       location: "UserProfileModalV2",
                       user: n,
                       displayProfile: eE,
@@ -240,7 +240,7 @@ function en(e) {
                       }),
                       nicknameVariant: "heading-xl/semibold",
                       pronouns: null == eE ? true : eE.pronouns,
-                      tags: (0, r.jsx)(w.Z, {
+                      tags: (0, r.jsx)(S.Z, {
                         displayProfile: eE,
                         themeType: Q.lY.MODAL_V2,
                         onClose: ep
@@ -272,7 +272,7 @@ function en(e) {
                       }, i)
                     }), n.isProvisional && (0, r.jsx)(U.Z.Overlay, {
                       className: et.profileOverlay,
-                      children: (0, r.jsx)(H.Z, {
+                      children: (0, r.jsx)(K.Z, {
                         heading: ee.intl.string(ee.t.Iyka0d),
                         headingVariant: "text-md/semibold",
                         headingIcon: (0, r.jsx)(a.Mgn, {
@@ -302,15 +302,15 @@ function en(e) {
                         relationshipType: eZ,
                         onClose: ep
                       })
-                    }), (null == eE ? true : eE.bio) != null && (null == eE ? true : eE.bio) !== "" && !eS && (0, r.jsx)(C.Z, {
+                    }), (null == eE ? true : eE.bio) != null && (null == eE ? true : eE.bio) !== "" && !ew && (0, r.jsx)(C.Z, {
                       userBio: eE.bio,
                       setLineClamp: false
-                    }), eL.length > 0 && (0, r.jsx)(H.Z, {
+                    }), eL.length > 0 && (0, r.jsx)(K.Z, {
                       heading: ee.intl.string(ee.t["Uv/eT0"]),
                       children: (0, r.jsx)(R.Z, {
                         applicationIds: eL
                       })
-                    }), (0, r.jsx)(H.Z, {
+                    }), (0, r.jsx)(K.Z, {
                       heading: ee.intl.string(ee.t.a6XYDw),
                       children: (0, r.jsx)(B.Z, {
                         userId: n.id,
@@ -325,7 +325,7 @@ function en(e) {
                       headingVariant: "text-xs/medium",
                       headingColor: "currentColor",
                       scrollIntoView: es === Q.Tb.ROLES
-                    }), eG.length > 0 && (0, r.jsx)(H.Z, {
+                    }), eG.length > 0 && (0, r.jsx)(K.Z, {
                       heading: ee.intl.string(ee.t["3fe7U1"]),
                       scrollIntoView: es === Q.Tb.CONNECTIONS,
                       children: (0, r.jsx)(z.Z, {
@@ -333,7 +333,7 @@ function en(e) {
                         userId: n.id,
                         className: et.profileAppConnections
                       })
-                    }), (0, r.jsx)(H.Z, {
+                    }), (0, r.jsx)(K.Z, {
                       heading: ee.intl.string(ee.t["mQKv+v"]),
                       scrollIntoView: es === Q.Tb.NOTE,
                       children: (0, r.jsx)(c.Z, {
@@ -364,9 +364,9 @@ function en(e) {
                     })]
                   }), (null == eE ? true : eE.profileEffectId) != null && (0, r.jsx)(y.Z, {
                     profileEffectId: null == eE ? true : eE.profileEffectId,
-                    isHovering: ex
+                    isHovering: eh
                   })]
-                }), (0, r.jsx)(K.Z, {
+                }), (0, r.jsx)(H.Z, {
                   user: n,
                   currentUser: en,
                   displayProfile: eE,

@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 574650, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 31253 **/
+/** chunk id: 574650, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 }), require("./539854.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
-  Chunk114858 = require("./114858.js"),
-  Chunk442837 = require("./442837.js"),
+  l = require.n(Chunk120356);
+if (12633 == require.j) var Chunk114858 = require("./114858.js");
+var Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk430824 = require("./430824.js"),
@@ -25,105 +24,94 @@ var Chunk120356 = require("./120356.js"),
   Chunk342891 = require("./342891.js"),
   Chunk226910 = require("./226910.js");
 
-function v(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function I(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
-
-function T(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let A = () => {
+let C = 12633 == require.j ? () => {
   var e, t;
   let i = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId(), []),
-    v = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(Chunk120356), [Chunk120356]),
-    T = (0, Chunk442837.e7)([Chunk937111.Z], () => null != Chunk120356 ? Chunk937111.Z.getRequest(Chunk120356) : null, [Chunk120356]),
-    A = (0, Chunk114858.TH)(),
-    N = (null == (e = (0, Chunk114858.LX)(A.pathname, Chunk981631.Z5c.CHANNEL(null == v ? true : v.id, Chunk176505.oC.GUILD_ONBOARDING))) ? true : module.isExact) === true;
-  if (null == v || !(0, Chunk983736.Dc)(v) || N) return null;
-  let C = () => {
-      (0, Chunk305325.hk)(v.id)
-    },
-    R = () => {
-      (0, Chunk481060.h7j)(e => (0, r.jsx)(c.ConfirmModal, S(I({
-        header: b.intl.string(b.t.aIz1oa),
-        confirmText: b.intl.string(b.t["cY+Ooa"]),
-        cancelText: b.intl.string(b.t["ETE/oK"]),
-        onConfirm: () => f.Z.removeGuildJoinRequest(v.id),
-        confirmButtonColor: l.zx.Colors.BRAND
-      }, e), {
-        children: (0, r.jsx)(c.Text, {
-          variant: "text-md/normal",
-          children: b.intl.string(b.t["13tjTU"])
-        })
-      })))
-    },
-    P = () => {
-      (0, Chunk481060.ZDy)(async () => {
-        let {
-          default: e
-        } = await require.e("3378").then(require.bind(require, 76075));
-        return t => (0, r.jsx)(e, I({
-          guildId: v.id
-        }, t))
-      })
-    },
-    w = null != (t = null == T ? true : T.applicationStatus) ? exports : Chunk246364.wB.STARTED,
-    D = null,
-    L = null,
-    x = null,
-    M = [Chunk342891.notice, Chunk226910.notice];
-  switch (w) {
+    C = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(Chunk120356), [Chunk120356]),
+    m = (0, Chunk442837.e7)([Chunk937111.Z], () => null != Chunk120356 ? Chunk937111.Z.getRequest(Chunk120356) : null, [Chunk120356]),
+    g = (0, Chunk114858.TH)(),
+    P = (null == (e = (0, Chunk114858.LX)(g.pathname, Chunk981631.Z5c.CHANNEL(null == C ? true : C.id, Chunk176505.oC.GUILD_ONBOARDING))) ? true : module.isExact) === true;
+  if (null == C || !(0, Chunk983736.Dc)(C) || P) return null;
+  let D = null != (t = null == m ? true : m.applicationStatus) ? exports : Chunk246364.wB.STARTED,
+    b = null,
+    y = null,
+    h = null,
+    U = [Chunk342891.notice, Chunk226910.notice];
+  switch (D) {
     case Chunk246364.wB.SUBMITTED:
-      D = Chunk388032.intl.string(Chunk388032.t["5iLvS0"]), L = Chunk388032.intl.string(Chunk388032.t.mqtdmZ), x = R;
+      b = Chunk388032.intl.string(Chunk388032.t["5iLvS0"]), y = Chunk388032.intl.string(Chunk388032.t.mqtdmZ), h = () => {
+        (0, Chunk481060.h7j)(e => {
+          var t, n;
+          return (0, r.jsx)(s.ConfirmModal, (t = A({
+            header: p.intl.string(p.t.aIz1oa),
+            confirmText: p.intl.string(p.t["cY+Ooa"]),
+            cancelText: p.intl.string(p.t["ETE/oK"]),
+            onConfirm: () => d.Z.removeGuildJoinRequest(C.id),
+            confirmButtonColor: c.zx.Colors.BRAND
+          }, e), n = n = {
+            children: (0, r.jsx)(s.Text, {
+              variant: "text-md/normal",
+              children: p.intl.string(p.t["13tjTU"])
+            })
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
+            }
+            return n
+          })(Object(n)).forEach(function(e) {
+            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+          }), t))
+        })
+      };
       break;
     case Chunk246364.wB.REJECTED:
-      D = Chunk388032.intl.string(Chunk388032.t.lk30cX), L = Chunk388032.intl.string(Chunk388032.t["8RrsHh"]), x = P, M.push(Chunk342891.error);
+      b = Chunk388032.intl.string(Chunk388032.t.lk30cX), y = Chunk388032.intl.string(Chunk388032.t["8RrsHh"]), h = () => {
+        (0, Chunk481060.ZDy)(async () => {
+          let {
+            default: e
+          } = await require.e("3378").then(require.bind(require, 76075));
+          return t => (0, r.jsx)(e, A({
+            guildId: C.id
+          }, t))
+        })
+      }, U.push(Chunk342891.error);
       break;
     default:
-      D = Chunk388032.intl.string(Chunk388032.t.G5YKXF), L = Chunk388032.intl.string(Chunk388032.t["r8/DT0"]), x = C
+      b = Chunk388032.intl.string(Chunk388032.t.G5YKXF), y = Chunk388032.intl.string(Chunk388032.t["r8/DT0"]), h = () => {
+        (0, Chunk305325.hk)(C.id)
+      }
   }
   return (0, Chunk255367.jsxs)("div", {
-    className: o()(...M),
+    className: l()(...U),
     children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
       className: Chunk342891.header,
       variant: "text-sm/normal",
-      children: D
+      children: b
     }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
       variant: "overlay-primary",
       size: "sm",
-      onClick: x,
-      text: L
+      onClick: h,
+      text: y
     })]
   })
-}
+} : null

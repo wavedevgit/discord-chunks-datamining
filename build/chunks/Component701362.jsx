@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 701362, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 701362, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => T
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -29,64 +28,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk839021 = require("./839021.js");
-
-function C(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function R(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      C(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function P(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function D(e, t) {
-  if (null == e) return {};
-  var n, r, i = L(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function L(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-class x extends Chunk73800.PureComponent {
+class C extends Chunk73800.PureComponent {
   componentDidMount() {
     let {
       user: e,
@@ -106,21 +48,21 @@ class x extends Chunk73800.PureComponent {
       onWatch: t,
       activeStream: n,
       currentUserId: i,
-      canWatch: o,
+      canWatch: l,
       unavailableReason: a
     } = this.props;
-    return (0, r.jsxs)(l.P3F, {
+    return (0, r.jsxs)(s.P3F, {
       onClick: t,
-      className: N.previewContainer,
-      children: [(0, r.jsx)(T.Z, {
-        className: N.previewImage,
+      className: P.previewContainer,
+      children: [(0, r.jsx)(j.Z, {
+        className: P.previewImage,
         stream: e
-      }), o ? (0, r.jsx)("div", {
-        className: N.previewHover,
-        children: (0, r.jsx)(l.Text, {
+      }), l ? (0, r.jsx)("div", {
+        className: P.previewHover,
+        children: (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "none",
-          className: N.white,
+          className: P.white,
           children: (0, I.Z)(e, n, i, a)
         })
       }) : null]
@@ -132,8 +74,8 @@ class x extends Chunk73800.PureComponent {
       user: t,
       stream: n,
       previewIsOpen: i,
-      onAction: o,
-      hideTip: s
+      onAction: l,
+      hideTip: o
     } = this.props;
     return null == require ? null : (0, Chunk255367.jsx)("div", {
       className: a()(Chunk839021.streamPreviewWrapper, {
@@ -177,22 +119,63 @@ class x extends Chunk73800.PureComponent {
   }
 }
 
-function M(e) {
-  var {
-    user: t,
-    channel: n
-  } = e, o = D(e, ["user", "channel"]);
-  let [a, l] = (0, s.Wu)([b.Z, m.Z, g.Z, _.Z], () => (0, O.p9)(n, b.Z, m.Z, g.Z, _.Z)), c = (0, s.e7)([p.Z], () => p.Z.getStreamForUser(t.id, n.getGuildId())), d = (0, s.e7)([p.Z], () => p.Z.getActiveStreamForApplicationStream(c)), f = (0, s.e7)([h.default], () => h.default.getId()), y = (0, v.Cf)(c), I = (0, s.e7)([E.Z], () => (0, v.Um)(c, E.Z)), T = i.useMemo(() => ({
-    [n.guild_id]: [t.id]
-  }), [n.guild_id, t.id]);
-  return (0, u.$)(T), (0, r.jsx)(x, w(R({}, o), {
-    canWatch: a,
-    unavailableReason: l,
-    user: t,
-    streamApplication: y,
-    stream: c,
-    activeStream: d,
-    currentUserId: f,
-    activity: I
-  }))
+function T(e) {
+  var t, n, {
+      user: l,
+      channel: a
+    } = e,
+    s = function(e, t) {
+      if (null == e) return {};
+      var n, r, i = function(e, t) {
+        if (null == e) return {};
+        var n, r, i = {},
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        return i
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      }
+      return i
+    }(e, ["user", "channel"]);
+  let [c, d] = (0, o.Wu)([_.Z, h.Z, b.Z, p.Z], () => (0, O.p9)(a, _.Z, h.Z, b.Z, p.Z)), f = (0, o.e7)([m.Z], () => m.Z.getStreamForUser(l.id, a.getGuildId())), y = (0, o.e7)([m.Z], () => m.Z.getActiveStreamForApplicationStream(f)), I = (0, o.e7)([g.default], () => g.default.getId()), j = (0, S.Cf)(f), x = (0, o.e7)([v.Z], () => (0, S.Um)(f, v.Z)), E = i.useMemo(() => ({
+    [a.guild_id]: [l.id]
+  }), [a.guild_id, l.id]);
+  return (0, u.$)(E), (0, r.jsx)(C, (t = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = r
+      })
+    }
+    return e
+  }({}, s), n = n = {
+    canWatch: c,
+    unavailableReason: d,
+    user: l,
+    streamApplication: j,
+    stream: f,
+    activeStream: y,
+    currentUserId: I,
+    activity: x
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+  }), t))
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 248400, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -32,7 +32,7 @@ let c = () => (0, Chunk255367.jsx)(Chunk481060.ua7, {
       }
       return e
     }({}, e), n = n = {
-      className: o.container,
+      className: s.container,
       children: (0, r.jsx)(a.Z, {
         color: i.Z.unsafe_rawColors.WHITE_500.css
       })

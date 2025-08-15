@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 128435, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 128435, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => v
 }), require("./314940.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -18,15 +17,6 @@ var Chunk255367 = require("./255367.js"),
   Chunk920557 = require("./920557.jsx"),
   Chunk290550 = require("./290550.js");
 
-function m(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
@@ -34,19 +24,25 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function E(e) {
+function h(e) {
   let {
     media: t
   } = e;
   return (0, r.jsx)(c.X6q, {
     variant: "text-md/medium",
-    className: h.question,
+    className: _.question,
     scaleFontToUserSetting: true,
     children: t.text
   })
@@ -57,12 +53,12 @@ function b(e) {
     buttonLabel: t,
     secondaryLabel: n,
     handleClick: i,
-    isInteractive: o,
-    className: s
+    isInteractive: l,
+    className: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(h.detailsText, s),
-    children: [o ? (0, r.jsx)(c.Avr, {
+    className: a()(_.detailsText, o),
+    children: [l ? (0, r.jsx)(c.Avr, {
       text: t,
       onClick: i,
       variant: "secondary",
@@ -81,93 +77,91 @@ function b(e) {
   })
 }
 
-function y(e, t) {
-  let n = {
-    answers: t.answers,
-    answersInteraction: t.answersInteraction,
-    answerTapAccessibilityLabel: t.answerTapAccessibilityLabel,
-    isExpired: t.isExpired,
-    canTapAnswers: t.canTapAnswers,
-    hasSelectedAnyAnswer: t.hasSelectedAnswer,
-    myAvatarUrl: t.myAvatarUrl,
-    canShowVoteCounts: t.canShowVoteCounts
-  };
-  return (0, s.EQ)(t.layoutType).with(l.C.DEFAULT, () => (0, r.jsx)(p.K, g({}, n))).with(l.C.IMAGE_ONLY_ANSWERS, () => (0, r.jsx)(d.Z, g({}, n))).otherwise(() => null)
-}
-
-function O(e) {
+function E(e) {
   let {
     action: t,
     channelId: n,
-    messageId: o,
+    messageId: l,
     isInteractive: a,
-    className: s
+    className: o
   } = e, {
-    actionButtonRef: l,
+    actionButtonRef: s,
     manageFocusOnAction: d
-  } = (0, _.dv)(), f = i.useCallback(async () => {
+  } = (0, m.dv)(), p = i.useCallback(async () => {
     (null == t ? true : t.type) != null && (await u.Z.handlePollActionTapped({
       channelId: n,
-      messageId: o,
+      messageId: l,
       type: t.type
     }), d(t.type))
-  }, [null == t ? true : t.type, n, o, d]);
+  }, [null == t ? true : t.type, n, l, d]);
   return null == t ? null : "button" === t.presentation || "secondaryButton" === t.presentation ? (0, r.jsx)(c.zxk, {
-    buttonRef: l,
-    onClick: f,
+    buttonRef: s,
+    onClick: p,
     disabled: !t.enabled,
     variant: "secondaryButton" === t.presentation ? "secondary" : "primary",
     size: "sm",
     text: t.label
   }, t.presentation) : "textButton" === t.presentation ? (0, r.jsx)(c.Avr, {
-    buttonRef: l,
-    onClick: f,
+    buttonRef: s,
+    onClick: p,
     text: t.label,
     variant: "secondary",
     textVariant: "text-sm/medium"
   }) : (0, r.jsx)(b, {
     buttonLabel: t.label,
     secondaryLabel: t.secondaryLabel,
-    handleClick: f,
+    handleClick: p,
     isInteractive: a,
-    className: s
+    className: o
   })
 }
 
-function v(e) {
+function C(e) {
   let {
     message: t,
     poll: n,
     className: i
-  } = e, o = (0, f.$B)(n.containerStyle), s = y(t, n);
-  return null == s ? null : (0, r.jsx)("div", {
-    className: a()(h.container, o, i),
+  } = e, l = (0, p.$B)(n.containerStyle), u = function(e, t) {
+    let n = {
+      answers: t.answers,
+      answersInteraction: t.answersInteraction,
+      answerTapAccessibilityLabel: t.answerTapAccessibilityLabel,
+      isExpired: t.isExpired,
+      canTapAnswers: t.canTapAnswers,
+      hasSelectedAnyAnswer: t.hasSelectedAnswer,
+      myAvatarUrl: t.myAvatarUrl,
+      canShowVoteCounts: t.canShowVoteCounts
+    };
+    return (0, o.EQ)(t.layoutType).with(s.C.DEFAULT, () => (0, r.jsx)(f.K, g({}, n))).with(s.C.IMAGE_ONLY_ANSWERS, () => (0, r.jsx)(d.Z, g({}, n))).otherwise(() => null)
+  }(0, n);
+  return null == u ? null : (0, r.jsx)("div", {
+    className: a()(_.container, l, i),
     children: (0, r.jsxs)(c.y5t, {
       children: [(0, r.jsxs)("div", {
-        className: h.header,
-        children: [(0, r.jsx)(E, {
+        className: _.header,
+        children: [(0, r.jsx)(h, {
           media: n.question
         }), null != n.promptLabel && (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: h.prompt,
+          className: _.prompt,
           scaleFontToUserSetting: true,
           children: n.promptLabel
         })]
-      }), s, (0, r.jsxs)("div", {
-        className: h.bottomBar,
-        children: [(0, r.jsx)(O, {
+      }), u, (0, r.jsxs)("div", {
+        className: _.bottomBar,
+        children: [(0, r.jsx)(E, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.secondaryAction,
-          className: h.secondaryAction,
+          className: _.secondaryAction,
           isInteractive: n.isInteractive
-        }), (0, r.jsx)(O, {
+        }), (0, r.jsx)(E, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.tertiaryAction,
-          className: h.tertiaryAction
-        }), (0, r.jsx)(O, {
+          className: _.tertiaryAction
+        }), (0, r.jsx)(E, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.primaryAction
@@ -177,17 +171,17 @@ function v(e) {
   })
 }
 
-function I(e) {
+function v(e) {
   let {
     message: t,
     poll: n,
     className: i
   } = e;
-  return (0, r.jsx)(f.XL, {
+  return (0, r.jsx)(p.XL, {
     message: t,
     poll: n,
-    children: (0, r.jsx)(_.Pk, {
-      children: (0, r.jsx)(v, {
+    children: (0, r.jsx)(m.Pk, {
+      children: (0, r.jsx)(C, {
         message: t,
         poll: n,
         className: i

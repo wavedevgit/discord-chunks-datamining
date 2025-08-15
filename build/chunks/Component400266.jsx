@@ -1,55 +1,49 @@
-/** Chunk was on web.js **/
-/** chunk id: 400266, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 53937 **/
+/** chunk id: 400266, original params: e,l,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 }), require("./704826.js"), require("./35282.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk729594 = require("./729594.js"),
   Chunk785992 = require("./785992.js"),
   Chunk616922 = require("./616922.js"),
   Chunk781452 = require("./781452.js");
 
 function u(e) {
-  let t = /intl-[^/]+\//;
-  return e.replace(t, "")
-}
-
-function d(e) {
   let {
-    className: t,
+    className: l,
     embed: {
-      url: n
+      url: t
     }
   } = e;
-  if (null == n) return null;
-  let i = null,
-    d = null;
+  if (null == t) return null;
+  let n = null,
+    u = null;
   try {
-    let e = a.parse(u(n), true);
-    i = e.host, d = e.pathname
+    let e = s.parse(t.replace(/intl-[^/]+\//, ""), true);
+    n = e.host, u = e.pathname
   } catch (e) {
     return null
   }
-  if (!(0, s.E)(i) || null == d) return null;
-  let f = d.split("/"),
-    _ = null != f[1] ? f[1].toLowerCase() : null,
-    p = null != f[3] ? f[3].toLowerCase() : null,
-    h = f[4];
-  if (!["track", "playlist", "album", "artist", "user", "show", "episode"].includes(null != _ ? _ : "") || "user" === _ && "playlist" !== p) return null;
-  "user" === _ && "playlist" === p && null != h && (d = "/playlist/".concat(h));
-  let m = 352;
-  return "track" === _ ? m = 80 : ("episode" === _ || "show" === _) && (m = 232), (0, r.jsx)("iframe", {
-    className: o()(c.embedSpotify, t),
-    src: l.C7.EMBED(d),
+  if (!(0, a.E)(n) || null == u) return null;
+  let h = u.split("/"),
+    c = null != h[1] ? h[1].toLowerCase() : null,
+    m = null != h[3] ? h[3].toLowerCase() : null,
+    p = h[4];
+  if (!["track", "playlist", "album", "artist", "user", "show", "episode"].includes(null != c ? c : "") || "user" === c && "playlist" !== m) return null;
+  "user" === c && "playlist" === m && null != p && (u = "/playlist/".concat(p));
+  let g = 352;
+  return "track" === c ? g = 80 : ("episode" === c || "show" === c) && (g = 232), (0, r.jsx)("iframe", {
+    className: i()(d.embedSpotify, l),
+    src: o.C7.EMBED(u),
     style: {
       maxWidth: 400,
       minWidth: 300,
       width: "100%",
-      height: m
+      height: g
     },
     frameBorder: 0,
     sandbox: "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts",

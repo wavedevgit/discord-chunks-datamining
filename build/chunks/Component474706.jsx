@@ -1,5 +1,5 @@
-/** Chunk was on 47238 **/
-/** chunk id: 474706, original params: e,r,n (module,exports,require) **/
+/** Chunk was on 54433 **/
+/** chunk id: 474706, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   f: () => c
 });
@@ -15,9 +15,9 @@ var Chunk255367 = require("./255367.js"),
 function c() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     {
-      claimableRewards: r
+      claimableRewards: n
     } = (0, Chunk987209.wD)(),
-    n = (0, Chunk347896.Z)(),
+    t = (0, Chunk347896.Z)(),
     c = null == require ? true : require.planSelection;
   return null == c || null == exports || 0 === exports.length ? null : (0, Chunk255367.jsxs)("div", {
     className: Chunk487276.container,

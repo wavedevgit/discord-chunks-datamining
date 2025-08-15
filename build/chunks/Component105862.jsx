@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 105862, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 105862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => y
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,48 +18,48 @@ var Chunk255367 = require("./255367.js"),
   Chunk983008 = require("./983008.js"),
   Chunk478408 = require("./478408.js");
 
-function g(e) {
+function y(e) {
   let {
     showImage: t = true,
     padding: n = false
-  } = e, g = (0, s.ZP)(), E = (0, o.ap)(g) ? m : h, b = i.useCallback(() => {
-    (0, l.Z)(c.Z.getAppsSupportURL(f.BhN.APPS_LEARN_MORE))
+  } = e, y = (0, o.ZP)(), x = (0, r.ap)(y) ? v : h, b = i.useCallback(() => {
+    (0, s.Z)(c.Z.getAppsSupportURL(p.BhN.APPS_LEARN_MORE))
   }, []), {
-    trackSectionImpressionRef: y
+    trackSectionImpressionRef: g
   } = (0, d.Z)({
     sectionName: u.L3.NEW_TO_APPS,
     numItems: 1,
     numVisibleItems: 1
   });
-  return (0, r.jsx)("div", {
-    className: n ? p.containerPadding : true,
-    children: (0, r.jsxs)("div", {
+  return (0, l.jsx)("div", {
+    className: n ? f.containerPadding : true,
+    children: (0, l.jsxs)("div", {
       ref: e => {
-        y.current = e
+        g.current = e
       },
-      className: p.container,
-      children: [t && (0, r.jsx)("img", {
-        className: p.image,
-        src: E,
+      className: f.container,
+      children: [t && (0, l.jsx)("img", {
+        className: f.image,
+        src: x,
         alt: "",
         "aria-hidden": true
-      }), (0, r.jsxs)("div", {
-        className: p.body,
-        children: [(0, r.jsx)(a.X6q, {
+      }), (0, l.jsxs)("div", {
+        className: f.body,
+        children: [(0, l.jsx)(a.X6q, {
           variant: "heading-lg/bold",
           color: "header-primary",
-          children: _.intl.string(_.t["kw8/ER"])
-        }), (0, r.jsx)(a.Text, {
+          children: m.intl.string(m.t["kw8/ER"])
+        }), (0, l.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "text-default",
-          children: _.intl.string(_.t.GZoV1N)
+          children: m.intl.string(m.t.GZoV1N)
         })]
-      }), (0, r.jsx)(a.zxk, {
+      }), (0, l.jsx)(a.zxk, {
         variant: "primary",
-        text: _.intl.string(_.t.Ye51oa),
-        "aria-label": _.intl.formatToPlainString(_.t.xx5Sur, {
-          sectionTitle: _.intl.string(_.t["kw8/ER"]),
-          sectionBody: _.intl.string(_.t.GZoV1N)
+        text: m.intl.string(m.t.Ye51oa),
+        "aria-label": m.intl.formatToPlainString(m.t.xx5Sur, {
+          sectionTitle: m.intl.string(m.t["kw8/ER"]),
+          sectionBody: m.intl.string(m.t.GZoV1N)
         }),
         onClick: b
       })]

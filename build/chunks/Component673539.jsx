@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 673539, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 673539, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -14,10 +13,10 @@ var Chunk442837 = require("./442837.js"),
 
 function c(e) {
   let t = (0, i.e7)([a.Z], () => a.Z.getToastsEnabled(e));
-  return (0, r.jsx)(o.S89, {
+  return (0, r.jsx)(l.S89, {
     id: "show-call-chat-toasts",
-    label: l.intl.string(l.t["5NL5vb"]),
+    label: s.intl.string(s.t["5NL5vb"]),
     checked: t,
-    action: () => s.Z.setCallChatToastsEnabled(e, !t)
+    action: () => o.Z.setCallChatToastsEnabled(e, !t)
   })
 }

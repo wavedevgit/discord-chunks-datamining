@@ -43,10 +43,10 @@ let D = (e, t, n) => {
   let {
     artist: r,
     media: i
-  } = e, o = C.t["6iNxrq"], a = m.ZP.getName(t.guild_id, t.id, n);
-  return C.intl.formatToMarkdownString(o, {
+  } = e, a = C.t["6iNxrq"], o = m.ZP.getName(t.guild_id, t.id, n);
+  return C.intl.formatToMarkdownString(a, {
     artist: r,
-    userName: a,
+    userName: o,
     media: i
   }).replaceAll("*", "")
 };
@@ -55,9 +55,9 @@ function L(e) {
   let {
     activity: t
   } = e, n = t.timestamps, {
-    now: o
+    now: a
   } = (0, T.tS)(), {
-    durationTimestamp: a,
+    durationTimestamp: o,
     seekBarStyles: s
   } = i.useMemo(() => {
     var e;
@@ -66,18 +66,18 @@ function L(e) {
       end: r
     } = null != (e = t.timestamps) ? e : {};
     if (null == n || null == r) return {};
-    let i = Math.min(r, o),
-      a = r - n,
-      s = Math.floor(Math.max(i - n, 0) / a * 100);
+    let i = Math.min(r, a),
+      o = r - n,
+      s = Math.floor(Math.max(i - n, 0) / o * 100);
     return {
       seekBarStyles: {
         width: "".concat(s, "%")
       },
       durationTimestamp: (0, E.T_)({
         start: 0
-      }, a)
+      }, o)
     }
-  }, [t, o]);
+  }, [t, a]);
   return null == s ? null : (0, r.jsxs)("div", {
     className: R.listeningTimeline,
     children: [(0, r.jsx)(T.x3, {
@@ -93,7 +93,7 @@ function L(e) {
       variant: "text-xs/normal",
       tabularNumbers: true,
       color: true,
-      children: a
+      children: o
     })]
   })
 }
@@ -104,8 +104,8 @@ function x(e) {
       channel: R,
       entry: x,
       closePopout: M,
-      onReaction: j,
-      onVoiceChannelPreview: k
+      onReaction: k,
+      onVoiceChannelPreview: j
     } = e,
     {
       largeImage: U
@@ -115,55 +115,55 @@ function x(e) {
     {
       activity: G,
       currentEntry: B,
-      artist: Z,
+      artist: V,
       title: F,
-      user: V
+      user: Z
     } = (0, v.pi)(x),
     {
       primaryColor: H,
       secondaryColor: Y
     } = (0, O.Z)(null == U ? true : U.src),
     W = (0, y.Z)(A.ABu.SPOTIFY),
-    K = (0, a.e7)([u.Z, p.default], () => (null == G ? true : G.type) === A.IIU.LISTENING && null != V ? (0, f.Z)(u.Z, p.default, V, G) : true, [G, V], s.Z),
+    K = (0, o.e7)([u.Z, p.default], () => (null == G ? true : G.type) === A.IIU.LISTENING && null != Z ? (0, f.Z)(u.Z, p.default, Z, G) : true, [G, Z], s.Z),
     z = i.useCallback(() => {
       var e;
-      if (null == R || null == V) return;
+      if (null == R || null == Z) return;
       let t = null == (e = G.timestamps) ? true : e.start,
         n = (0, E.T_)(null != t ? {
           start: t
         } : x, Date.now());
       return (0, b.CR)({
-        user: V,
+        user: Z,
         channel: R,
         mediaImageSrc: null == U ? true : U.src,
-        artist: Z,
+        artist: V,
         description: D({
-          artist: Z,
+          artist: V,
           media: F
-        }, R, V),
+        }, R, Z),
         colors: [H, Y],
         badges: (0, b.jE)({
           timestamp: n
         })
       })
-    }, [G, Z, R, x, null == U ? true : U.src, H, Y, F, V]);
+    }, [G, V, R, x, null == U ? true : U.src, H, Y, F, Z]);
   if (null == G || null == B) return null;
-  let q = Z,
+  let q = V,
     X = [];
-  if (B.media.provider === o.p.SPOTIFY) {
+  if (B.media.provider === a.p.SPOTIFY) {
     m = () => {
       (0, c.aG)(G)
     }, T = () => {
-      (0, c.Z5)(G, V.id)
+      (0, c.Z5)(G, Z.id)
     }, n = () => {
       var e;
       null != (e = null == W ? true : W()) || (0, c.aG)(G)
     };
     let e = e => {
-      (0, c.d$)(G, V.id, e)
+      (0, c.d$)(G, Z.id, e)
     };
     if (q = (0, r.jsx)(d.Z, {
-        artists: Z,
+        artists: V,
         canOpen: null != G.sync_id,
         linkClassName: P.popoutTextSecondary,
         onOpenSpotifyArtist: e
@@ -182,7 +182,7 @@ function x(e) {
     onClickThumbnail: T,
     channel: R,
     entry: x,
-    headerIcons: B.media.provider === o.p.SPOTIFY ? (0, r.jsx)(S.Z, {
+    headerIcons: B.media.provider === a.p.SPOTIFY ? (0, r.jsx)(S.Z, {
       onClick: n,
       "aria-label": C.intl.string(C.t.rRffNz),
       Icon: h.Z
@@ -199,12 +199,12 @@ function x(e) {
   return (0, r.jsxs)(I.yR, {
     children: [Q, (0, r.jsx)(I.St, {
       children: (0, r.jsx)(I.WT, {
-        onReaction: j,
-        onVoiceChannelPreview: k,
-        user: V,
+        onReaction: k,
+        onVoiceChannelPreview: j,
+        user: Z,
         channel: R,
         generateReactionImage: z,
-        reactionImageAltText: w(Z, V),
+        reactionImageAltText: w(V, Z),
         entry: x,
         buttons: X
       })

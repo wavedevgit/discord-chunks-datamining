@@ -1,11 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 111583, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 81498 **/
+/** chunk id: 111583, original params: e,t,n (module,exports,require) **/
 "use strict";
-let r;
+let i;
 require.d(exports, {
-  Z: () => w
+  Z: () => _
 });
-var i, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk333023 = require("./333023.js"),
@@ -14,7 +14,7 @@ var i, Chunk442837 = require("./442837.js"),
   Chunk300429 = require("./300429.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,152 +23,136 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      _(e, t, n[t])
+    }))), i.forEach(function(t) {
+      p(e, t, n[t])
     })
   }
   return e
 }
-let h = 10 * Chunk70956.Z.Millis.SECOND,
-  m = 1.5 * Chunk70956.Z.Millis.SECOND,
-  g = 5,
-  E = {},
-  b = Object.freeze({});
+let f = 10 * Chunk70956.Z.Millis.SECOND,
+  v = 1.5 * Chunk70956.Z.Millis.SECOND,
+  m = {},
+  C = Object.freeze({});
+
+function b(e) {
+  var t;
+  return null != (t = m[e]) ? t : C
+}
 
 function y(e) {
-  var t;
-  return null != (t = E[e]) ? t : b
+  let {
+    channelId: t,
+    userId: n
+  } = e, i = g({}, b(t));
+  clearTimeout(i[n]), i[n] = setTimeout(() => {
+    o.Z.dispatch({
+      type: "TYPING_STOP",
+      channelId: t,
+      userId: n
+    })
+  }, f), m[t] = i
 }
 
 function O(e) {
   let {
-    channelId: t
-  } = e, n = u.default.getId();
-  if (null == n || t === l.V) returnfalse;
-  null != r && r.channelId !== t && (null != r.timeout && clearTimeout(r.timeout), r = null);
-  let i = Date.now(),
-    o = .8 * h;
-  if (null != r && (null != r.timeout || r.prevSend + o > i)) returnfalse;
-  let c = setTimeout(() => {
-    null != r && r.channelId === t && n === u.default.getId() && null != r.timeout && (r.timeout = null, R(t) > g || a.tn.post({
-      url: f.ANM.TYPING(t),
-      oldFormErrors: true,
-      rejectWithError: true
-    }).then(e => {
-      if (200 === e.status) {
-        var n, r;
-        let i = null != (n = e.body.message_send_cooldown_ms) ? n : 0,
-          o = null != (r = e.body.thread_create_cooldown_ms) ? r : 0;
-        i > 0 && s.Z.dispatch({
-          type: "SLOWMODE_SET_COOLDOWN",
-          channelId: t,
-          slowmodeType: d.S.SendMessage,
-          cooldownMs: i
-        }), o > 0 && s.Z.dispatch({
-          type: "SLOWMODE_SET_COOLDOWN",
-          channelId: t,
-          slowmodeType: d.S.CreateThread,
-          cooldownMs: o
-        })
-      }
-    }))
-  }, null == r || r.prevSend > i - 2 * o ? m : 0);
-  return r = {
-    channelId: t,
-    timeout: c,
-    prevSend: i
-  }, S({
     channelId: t,
     userId: n
-  })
+  } = e, i = m[t];
+  if (null == i || null == i[n]) returnfalse;
+  let r = g({}, i);
+  clearTimeout(r[n]), delete r[n], m[t] = r
 }
 
-function v(e) {
-  if (null == r || r.channelId !== e) returnfalse;
-  null != r.timeout && clearTimeout(r.timeout), r = null
+function S() {
+  m = {}
 }
-
-function I(e) {
-  let {
-    channelId: t
-  } = e, n = u.default.getId();
-  return null != n && null != r && r.channelId === t && null != r.timeout && (clearTimeout(r.timeout), r = null, A({
-    channelId: t,
-    userId: n
-  }))
-}
-
-function T(e, t) {
-  return setTimeout(() => {
-    s.Z.dispatch({
-      type: "TYPING_STOP",
-      channelId: e,
-      userId: t
-    })
-  }, h)
-}
-
-function S(e) {
-  let {
-    channelId: t,
-    userId: n
-  } = e, r = p({}, y(t));
-  clearTimeout(r[n]), r[n] = T(t, n), E[t] = r
-}
-
-function A(e) {
-  let {
-    channelId: t,
-    userId: n
-  } = e, r = E[t];
-  if (null == r || null == r[n]) returnfalse;
-  let i = p({}, r);
-  clearTimeout(i[n]), delete i[n], E[t] = i
-}
-
-function N(e) {
-  let {
-    channelId: t,
-    message: {
-      author: n
-    },
-    optimistic: r
-  } = e;
-  return r && v(t), null != n && A({
-    channelId: t,
-    userId: n.id
-  })
-}
-
-function C() {
-  E = {}
-}
-
-function R(e) {
-  let t = y(e);
-  return t === b ? 0 : Object.keys(t).length
-}
-class P extends(i = Chunk442837.ZP.Store) {
+class E extends(r = Chunk442837.ZP.Store) {
   getTypingUsers(e) {
-    return y(e)
+    return b(e)
   }
   isTyping(e, t) {
-    return null != y(e)[t]
+    return null != b(e)[t]
   }
 }
-_(P, "displayName", "TypingStore");
-let w = new P(Chunk570140.Z, {
-  TYPING_START: S,
-  TYPING_STOP: A,
-  TYPING_START_LOCAL: O,
-  TYPING_STOP_LOCAL: I,
-  CONNECTION_OPEN: C,
-  OVERLAY_INITIALIZE: C,
-  MESSAGE_CREATE: N
+p(E, "displayName", "TypingStore");
+let _ = new E(Chunk570140.Z, {
+  TYPING_START: y,
+  TYPING_STOP: O,
+  TYPING_START_LOCAL: function(e) {
+    let {
+      channelId: t
+    } = e, n = c.default.getId();
+    if (null == n || t === a.V) returnfalse;
+    null != i && i.channelId !== t && (null != i.timeout && clearTimeout(i.timeout), i = null);
+    let r = Date.now(),
+      s = .8 * f;
+    if (null != i && (null != i.timeout || i.prevSend + s > r)) returnfalse;
+    let u = setTimeout(() => {
+      null != i && i.channelId === t && n === c.default.getId() && null != i.timeout && (i.timeout = null, function(e) {
+        let t = b(e);
+        return t === C ? 0 : Object.keys(t).length
+      }(t) > 5 || l.tn.post({
+        url: h.ANM.TYPING(t),
+        oldFormErrors: true,
+        rejectWithError: true
+      }).then(e => {
+        if (200 === e.status) {
+          var n, i;
+          let r = null != (n = e.body.message_send_cooldown_ms) ? n : 0,
+            s = null != (i = e.body.thread_create_cooldown_ms) ? i : 0;
+          r > 0 && o.Z.dispatch({
+            type: "SLOWMODE_SET_COOLDOWN",
+            channelId: t,
+            slowmodeType: d.S.SendMessage,
+            cooldownMs: r
+          }), s > 0 && o.Z.dispatch({
+            type: "SLOWMODE_SET_COOLDOWN",
+            channelId: t,
+            slowmodeType: d.S.CreateThread,
+            cooldownMs: s
+          })
+        }
+      }))
+    }, null == i || i.prevSend > r - 2 * s ? v : 0);
+    return i = {
+      channelId: t,
+      timeout: u,
+      prevSend: r
+    }, y({
+      channelId: t,
+      userId: n
+    })
+  },
+  TYPING_STOP_LOCAL: function(e) {
+    let {
+      channelId: t
+    } = e, n = c.default.getId();
+    return null != n && null != i && i.channelId === t && null != i.timeout && (clearTimeout(i.timeout), i = null, O({
+      channelId: t,
+      userId: n
+    }))
+  },
+  CONNECTION_OPEN: S,
+  OVERLAY_INITIALIZE: S,
+  MESSAGE_CREATE: function(e) {
+    let {
+      channelId: t,
+      message: {
+        author: n
+      },
+      optimistic: r
+    } = e;
+    return r && function(e) {
+      if (null != i && i.channelId === e) null != i.timeout && clearTimeout(i.timeout), i = null
+    }(t), null != n && O({
+      channelId: t,
+      userId: n.id
+    })
+  }
 })

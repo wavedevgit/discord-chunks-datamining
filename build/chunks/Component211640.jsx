@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 211640, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 211640, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk255367 = require("./255367.js"),
   Chunk442837 = require("./442837.js"),
@@ -17,33 +16,32 @@ var Chunk255367 = require("./255367.js"),
   Chunk764295 = require("./764295.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function m(e) {
   let {
     message: t,
     user: n,
-    guild: h,
-    channel: m
-  } = e, g = (0, i.e7)([d.Z], () => null != n && null != h && (0, l.CX)(n, h, [d.Z])), {
-    messageReference: E
-  } = t, b = (0, i.e7)([u.Z], () => null != E ? u.Z.getMessage(E.channel_id, E.message_id) : null), y = (0, i.e7)([c.Z], () => null != b ? c.Z.getChannel(b.channel_id) : null), O = (0, i.e7)([c.Z], () => {
+    guild: m,
+    channel: g
+  } = e, b = (0, i.e7)([d.Z], () => null != n && null != m && (0, s.CX)(n, m, [d.Z])), {
+    messageReference: y
+  } = t, _ = (0, i.e7)([u.Z], () => null != y ? u.Z.getMessage(y.channel_id, y.message_id) : null), C = (0, i.e7)([c.Z], () => null != _ ? c.Z.getChannel(_.channel_id) : null), x = (0, i.e7)([c.Z], () => {
     var e, t;
-    return null != (t = null == (e = c.Z.getChannel(m.id)) ? true : e.isArchivedThread()) && t
+    return null != (t = null == (e = c.Z.getChannel(g.id)) ? true : e.isArchivedThread()) && t
   });
-  if (!g) return null;
-  let v = () => {
-      null != y && null != b && s.Z.confirmDelete(y, b, false, {
-        isFlagResolved: O,
-        moderatorReportChannelId: m.id
+  if (!b) return null;
+  let v = null == _ ? f.intl.string(h.default["0IZbwM"]) : f.intl.string(h.default.Uj6oDw),
+    j = null == _,
+    O = "delete-message-".concat(t.id);
+  return (0, r.jsx)(p.Z, {
+    text: v,
+    icon: a.XHJ,
+    onClick: () => {
+      null != C && null != _ && o.Z.confirmDelete(C, _, false, {
+        isFlagResolved: x,
+        moderatorReportChannelId: g.id
       })
     },
-    I = null == b ? p.intl.string(_.default["0IZbwM"]) : p.intl.string(_.default.Uj6oDw),
-    T = null == b,
-    S = "delete-message-".concat(t.id);
-  return (0, r.jsx)(f.Z, {
-    text: I,
-    icon: a.XHJ,
-    onClick: v,
-    disabled: T,
-    color: o.zx.Colors.RED
-  }, S)
+    disabled: j,
+    color: l.zx.Colors.RED
+  }, O)
 }

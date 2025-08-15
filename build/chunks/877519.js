@@ -32,9 +32,9 @@ class b extends Chunk147913.Z {
   _fetch(e) {
     if ((0, d.cB)({
         location: f.dr.QUESTS_MANAGER
-      }) && !s.Z.isFetchingCurrentQuests)(0, a.xw)(), c.D.getConfig({
+      }) && !s.Z.isFetchingCurrentQuests)(0, o.xw)(), c.D.getConfig({
       location: f.dr.QUESTS_MANAGER
-    }).enabled && "focused" !== i.Z.getState() || (0, a.w)(l.Ok.DESKTOP_ACCOUNT_PANEL_AREA, e)
+    }).enabled && "focused" !== i.Z.getState() || (0, o.w)(l.Ok.DESKTOP_ACCOUNT_PANEL_AREA, e)
   }
   constructor(...e) {
     super(...e), _(this, "instantiatedAt", Date.now()), _(this, "initialFetchTimerId", null), _(this, "recurringFetchTimerId", null), _(this, "lastFetchAttemptedAt", 0), _(this, "lastFetchedQuestForLocaleChangeAt", 0), _(this, "handleQuestsFetchCurrentQuestsBegin", () => {

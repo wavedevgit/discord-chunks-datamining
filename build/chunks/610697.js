@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 610697, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 48091 **/
+/** chunk id: 610697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 }), require("./388685.js");
@@ -9,7 +8,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk594174 = require("./594174.js"),
   Chunk823162 = require("./823162.js"),
   Chunk355298 = require("./355298.js");
-let l = new Set(["GB"]);
+let o = new Set(["GB"]);
 
 function c() {
   let e = (0, Chunk442837.e7)([Chunk355298.Z], () => Chunk355298.Z.getUserCountryCode()),
@@ -19,5 +18,5 @@ function c() {
     });
   return Chunk73800.useEffect(() => {
     null == module && (0, Chunk823162.hi)()
-  }, [module]), null != module && !!l.has(module.alpha2) && !!exports
+  }, [module]), null != module && !!o.has(module.alpha2) && !!exports
 }

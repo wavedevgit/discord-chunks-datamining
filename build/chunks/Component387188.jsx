@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 387188, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 28467 **/
+/** chunk id: 387188, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Zh: () => A,
-  e: () => N,
-  iq: () => C
+  Zh: () => O,
+  e: () => v,
+  iq: () => b
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk657707 = require("./657707.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
@@ -24,72 +23,15 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk871320 = require("./871320.js");
 
-function y(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
 function O(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      y(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function v(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function T(e, t) {
-  if (null == e) return {};
-  var n, r, i = S(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function S(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-
-function A(e) {
   let {
     message: t,
     rendered: n
   } = e;
-  return null == (0, m.xE)(t.content) ? E.intl.format(E.t.k6Jc9f, {
+  return null == (0, j.xE)(t.content) ? f.intl.format(f.t.k6Jc9f, {
     username: null,
     usernameHook: () => null
-  }) : E.intl.format(E.t.IihHBw, {
+  }) : f.intl.format(f.t.IihHBw, {
     emojiPreview: n,
     emojiName: null,
     username: null,
@@ -97,119 +39,160 @@ function A(e) {
   })
 }
 
-function N(e) {
+function v(e) {
   let {
     message: t,
     className: n
-  } = e, [o, s] = i.useState(false), u = t.getChannelId(), d = (0, m.xE)(t.content), f = i.useCallback(() => {
-    null != d && (0, _.rU)(u, t.id, {
-      id: d.id,
-      name: d.name
-    }, _.TW.MESSAGE)
-  }, [u, d, t.id]);
-  return null == d ? null : (0, r.jsx)(l.ua7, {
+  } = e, [r, i] = a.useState(false), u = t.getChannelId(), m = (0, j.xE)(t.content), d = a.useCallback(() => {
+    null != m && (0, p.rU)(u, t.id, {
+      id: m.id,
+      name: m.name
+    }, p.TW.MESSAGE)
+  }, [u, m, t.id]);
+  return null == m ? null : (0, s.jsx)(o.ua7, {
     "aria-label": false,
-    text: (0, r.jsx)(c.Z, {
-      emojiName: d.name,
+    text: (0, s.jsx)(c.Z, {
+      emojiName: m.name,
       size: "jumbo",
-      emojiId: d.id,
-      animated: d.animated,
+      emojiId: m.id,
+      animated: m.animated,
       isInteracting: true,
       channelId: u,
       messageId: t.id
     }),
     children: e => {
-      var {
-        onMouseEnter: i,
-        onMouseLeave: _
-      } = e, p = T(e, ["onMouseEnter", "onMouseLeave"]);
-      return (0, r.jsx)(l.P3F, I(O({}, p), {
-        className: a()(n, b.ctaReactionButton),
-        onClick: f,
+      var a, p, {
+          onMouseEnter: g,
+          onMouseLeave: h
+        } = e,
+        j = function(e, t) {
+          if (null == e) return {};
+          var n, s, a = function(e, t) {
+            if (null == e) return {};
+            var n, s, a = {},
+              r = Object.keys(e);
+            for (s = 0; s < r.length; s++) n = r[s], t.indexOf(n) >= 0 || (a[n] = e[n]);
+            return a
+          }(e, t);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            for (s = 0; s < r.length; s++) n = r[s], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+          }
+          return a
+        }(e, ["onMouseEnter", "onMouseLeave"]);
+      return (0, s.jsx)(o.P3F, (a = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            s = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), s.forEach(function(t) {
+            var s;
+            s = n[t], t in e ? Object.defineProperty(e, t, {
+              value: s,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = s
+          })
+        }
+        return e
+      }({}, j), p = p = {
+        className: l()(n, C.ctaReactionButton),
+        onClick: d,
         onMouseEnter: () => {
-          s(true), null == i || i()
+          i(true), null == g || g()
         },
         onMouseLeave: () => {
-          s(false), null == _ || _()
+          i(false), null == h || h()
         },
-        children: (0, r.jsx)(l.Text, {
+        children: (0, s.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "text-secondary",
-          className: b.ctaText,
-          children: E.intl.format(E.t.z5Rnl5, {
-            renderedEmoji: (0, r.jsx)(c.Z, {
-              emojiName: d.name,
+          className: C.ctaText,
+          children: f.intl.format(f.t.z5Rnl5, {
+            renderedEmoji: (0, s.jsx)(c.Z, {
+              emojiName: m.name,
               size: "default",
-              emojiId: d.id,
-              animated: d.animated,
-              isInteracting: o,
+              emojiId: m.id,
+              animated: m.animated,
+              isInteracting: r,
               channelId: u,
               messageId: t.id,
-              className: b.ctaEmoji
+              className: C.ctaEmoji
             })
           })
         })
-      }))
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var s = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, s)
+        }
+        return n
+      })(Object(p)).forEach(function(e) {
+        Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(p, e))
+      }), a))
     }
   })
 }
 
-function C(e) {
+function b(e) {
   var t;
   let {
     message: n,
-    compact: o,
-    usernameHook: a
-  } = e, c = n.content, [_, y] = i.useState(false), O = (0, u.ZP)(n), v = a(O), I = (0, m.xE)(c), T = i.useCallback(() => {
-    null != I && h.S.dispatchToLastSubscribed(g.CkL.INSERT_TEXT, {
-      plainText: ":".concat(I.name, ":"),
+    compact: r,
+    usernameHook: l
+  } = e, c = n.content, [p, O] = a.useState(false), v = (0, u.ZP)(n), b = l(v), y = (0, j.xE)(c), P = a.useCallback(() => {
+    null != y && h.S.dispatchToLastSubscribed(x.CkL.INSERT_TEXT, {
+      plainText: ":".concat(y.name, ":"),
       rawText: c,
       addSpace: true
     })
-  }, [I, c]), S = i.useMemo(() => {
+  }, [y, c]), N = a.useMemo(() => {
     var e;
-    return null == I ? null : {
-      src: p.ZP.getEmojiURL({
-        id: I.id,
-        animated: I.animated,
+    return null == y ? null : {
+      src: g.ZP.getEmojiURL({
+        id: y.id,
+        animated: y.animated,
         size: 48
       }),
-      emojiId: I.id,
-      name: ":".concat(null != (e = I.originalName) ? e : I.name, ":"),
-      animated: I.animated
+      emojiId: y.id,
+      name: ":".concat(null != (e = y.originalName) ? e : y.name, ":"),
+      animated: y.animated
     }
-  }, [I]);
-  return (0, r.jsx)(f.Z, {
-    iconNode: (0, r.jsx)(s.EO4, {
+  }, [y]);
+  return (0, s.jsx)(d.Z, {
+    iconNode: (0, s.jsx)(i.EO4, {
       size: "refresh_sm",
       color: "currentColor"
     }),
-    iconContainerClassName: b.iconContainer,
+    iconContainerClassName: C.iconContainer,
     timestamp: n.timestamp,
-    compact: o,
-    contentClassName: b.content,
-    children: (0, r.jsx)("span", {
-      children: null == I || null == S ? E.intl.format(E.t.k6Jc9f, {
-        username: O.nick,
-        usernameHook: v
-      }) : E.intl.format(E.t.IihHBw, {
-        username: O.nick,
-        usernameHook: v,
-        emojiPreview: (0, r.jsx)(d.Y, {
-          node: S,
-          isInteracting: _
+    compact: r,
+    contentClassName: C.content,
+    children: (0, s.jsx)("span", {
+      children: null == y || null == N ? f.intl.format(f.t.k6Jc9f, {
+        username: v.nick,
+        usernameHook: b
+      }) : f.intl.format(f.t.IihHBw, {
+        username: v.nick,
+        usernameHook: b,
+        emojiPreview: (0, s.jsx)(m.Y, {
+          node: N,
+          isInteracting: p
         }),
-        emojiName: (0, r.jsx)(l.P3F, {
-          className: b.clickableEmoji,
+        emojiName: (0, s.jsx)(o.P3F, {
+          className: C.clickableEmoji,
           tag: "span",
-          onClick: T,
-          onMouseEnter: () => y(true),
-          onMouseLeave: () => y(false),
-          children: (0, r.jsx)(l.Text, {
+          onClick: P,
+          onMouseEnter: () => O(true),
+          onMouseLeave: () => O(false),
+          children: (0, s.jsx)(o.Text, {
             tag: "span",
             variant: "text-md/medium",
             color: "text-primary",
-            children: ":".concat(null != (t = I.originalName) ? t : I.name, ":")
+            children: ":".concat(null != (t = y.originalName) ? t : y.name, ":")
           })
         })
       })

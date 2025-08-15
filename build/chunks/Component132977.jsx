@@ -59,8 +59,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,8 +68,8 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var b = function(e) {
@@ -91,7 +91,7 @@ class v extends(r = Chunk73800.PureComponent) {
         shineSize: n,
         shinePaused: r
       } = module,
-      o = g(module, ["className", "shineSize", "shinePaused"]);
+      a = g(module, ["className", "shineSize", "shinePaused"]);
     return (0, Chunk255367.jsx)(Chunk748780.Z.div, m(p({}, Chunk73800), {
       className: s()(Chunk929370.shineContainer, exports, {
         [Chunk929370.shinePaused]: r
@@ -115,22 +115,22 @@ let I = e => {
     children: t,
     className: n,
     disabled: r,
-    submitting: a,
+    submitting: o,
     pauseAnimation: l,
     shineSize: d = "default",
     shinePaused: _,
     buttonShineClassName: h,
     onlyShineOnHover: E
   } = e, b = g(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]);
-  let y = o.useRef(null),
+  let y = a.useRef(null),
     O = (0, u.Z)(y),
-    I = !r && !a && true !== l && (!E || O);
+    I = !r && !o && true !== l && (!E || O);
   return (0, i.jsxs)(c.zx, m(p({
     buttonRef: y
   }, b), {
     className: s()(f.shinyButton, n),
     disabled: r,
-    submitting: a,
+    submitting: o,
     children: [t, I ? (0, i.jsx)(v, {
       shinePaused: _,
       className: s()(f.buttonShine, E ? f.onlyShineOnHover : true, h),

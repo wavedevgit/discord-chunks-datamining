@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 39628, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 39628, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk846519 = require("./846519.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk243404 = require("./243404.js");
@@ -27,7 +26,7 @@ function f(e) {
     isSingleLine: n
   } = e;
   return (0, i.jsx)("div", {
-    className: s()({
+    className: o()({
       [u.bar]: n,
       [u.barInMultiLine]: !n
     }),
@@ -40,18 +39,18 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   return String(e).padStart(2, "0")
 }
 
-function p(e) {
+function m(e) {
   let {
     time: t,
     padLargestUnit: n
-  } = e, r = Math.floor(t) % 60, i = Math.floor(t / 60) % 60, o = Math.floor(t / 3600);
-  return 0 === o ? n ? "".concat(_(i), ":").concat(_(r)) : "".concat(i, ":").concat(_(r)) : n ? "".concat(_(o), ":").concat(_(i), ":").concat(_(r)) : "".concat(o, ":").concat(_(i), ":").concat(_(r))
+  } = e, r = Math.floor(t) % 60, i = Math.floor(t / 60) % 60, l = Math.floor(t / 3600);
+  return 0 === l ? n ? "".concat(p(i), ":").concat(p(r)) : "".concat(i, ":").concat(p(r)) : n ? "".concat(p(l), ":").concat(p(i), ":").concat(p(r)) : "".concat(l, ":").concat(p(i), ":").concat(p(r))
 }
-class h extends(r = Chunk73800.PureComponent) {
+class g extends(r = Chunk73800.PureComponent) {
   componentDidMount() {
     this.timer.start(500, () => {
       this.setState({
@@ -68,17 +67,17 @@ class h extends(r = Chunk73800.PureComponent) {
       end: t,
       className: n,
       themed: r,
-      singleLine: o = false
+      singleLine: l = false
     } = this.props, {
       now: a
-    } = this.state, l = (exports - module) / 1e3, d = Math.max(Math.min((Chunk120356 - module) / 1e3, Chunk846519), 0);
+    } = this.state, s = (exports - module) / 1e3, d = Math.max(Math.min((Chunk120356 - module) / 1e3, Chunk846519), 0);
     return Chunk73800 ? (0, Chunk255367.jsxs)("div", {
-      className: s()(require, {
+      className: o()(require, {
         [Chunk243404.themed]: r
       }, Chunk243404.singleLineContainer),
       children: [(0, Chunk255367.jsx)("div", {
         className: Chunk243404.textLeftInSingleLine,
-        children: p({
+        children: m({
           time: d,
           padLargestUnit: true
         })
@@ -90,13 +89,13 @@ class h extends(r = Chunk73800.PureComponent) {
         })
       }), (0, Chunk255367.jsx)("div", {
         className: Chunk243404.textRight,
-        children: p({
+        children: m({
           time: Chunk846519,
           padLargestUnit: true
         })
       })]
     }) : (0, Chunk255367.jsxs)("div", {
-      className: s()(require, {
+      className: o()(require, {
         [Chunk243404.themed]: r
       }),
       children: [(0, Chunk255367.jsx)(f, {
@@ -106,14 +105,14 @@ class h extends(r = Chunk73800.PureComponent) {
         children: [(0, Chunk255367.jsx)(Chunk600164.Z.Child, {
           grow: 1,
           className: Chunk243404.textLeft,
-          children: p({
+          children: m({
             time: d,
             padLargestUnit: false
           })
         }), (0, Chunk255367.jsx)(Chunk600164.Z.Child, {
           grow: 0,
           className: Chunk243404.textRight,
-          children: p({
+          children: m({
             time: Chunk846519,
             padLargestUnit: false
           })
@@ -122,12 +121,12 @@ class h extends(r = Chunk73800.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), d(this, "timer", new l.Xp), d(this, "state", {
+    super(...e), d(this, "timer", new s.Xp), d(this, "state", {
       now: Date.now()
     })
   }
 }
-d(h, "defaultProps", {
+d(g, "defaultProps", {
   themed: false
 });
-let m = h
+let h = g

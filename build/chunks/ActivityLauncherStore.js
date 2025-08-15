@@ -50,8 +50,8 @@ function p(e, t, n) {
   } = n, l = null != (r = u[i]) ? r : {};
   if (l[t] = e, u[i] = l, !__OVERLAY__ && e === s.OcF.FAILED) {
     null != d[i] && d[i].stop();
-    let e = new o.V7;
-    e.start(f, () => a.Z.dispatch({
+    let e = new a.V7;
+    e.start(f, () => o.Z.dispatch({
       type: "ACTIVITY_LAUNCH_FAIL",
       applicationId: i,
       activityType: t

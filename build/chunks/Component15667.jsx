@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 59727 **/
 /** chunk id: 15667, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -11,28 +11,28 @@ var Chunk392711 = require("./392711.js"),
   Chunk764295 = require("./764295.js"),
   Chunk158168 = require("./158168.js");
 let c = e => {
-  let t = (0, i.flatMap)(e.history, e => {
+  let t = (0, a.flatMap)(e.history, e => {
     var t;
     let {
       destination: [n],
       multiSelect: r
-    } = e, i = [null, null], l = Object.values(null != (t = null == r ? true : r.state) ? t : {});
-    return l.length > 0 && (i[0] = l.join(", ")), "" !== n && (i[1] = n), i
+    } = e, a = [null, null], i = Object.values(null != (t = null == r ? true : r.state) ? t : {});
+    return i.length > 0 && (a[0] = i.join(", ")), "" !== n && (a[1] = n), a
   }).filter(e => null != e);
   return 0 === t.length ? null : (0, r.jsxs)("div", {
-    className: o.container,
-    children: [(0, r.jsx)(l.X6q, {
-      className: o.breadcrumbsHeader,
+    className: s.container,
+    children: [(0, r.jsx)(i.X6q, {
+      className: s.breadcrumbsHeader,
       color: "header-secondary",
       variant: "heading-sm/semibold",
-      children: e.isModeratorReport ? a.intl.string(s.default["6mx/DA"]) : a.intl.string(a.t["+3V9Tk"])
+      children: e.isModeratorReport ? l.intl.string(o.default["6mx/DA"]) : l.intl.string(l.t["+3V9Tk"])
     }), t.map((e, t) => (0, r.jsxs)("div", {
-      className: o.breadcrumbContainer,
+      className: s.breadcrumbContainer,
       children: [(0, r.jsx)("div", {
-        className: o.breadcrumbDot
-      }), (0, r.jsx)(l.Text, {
+        className: s.breadcrumbDot
+      }), (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
-        className: o.breadcrumbText,
+        className: s.breadcrumbText,
         children: e
       })]
     }, "".concat(e, "+").concat(t)))]

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk951394 = require("./951394.jsx"),
   Chunk820230 = require("./820230.js");
@@ -16,13 +16,13 @@ function u(e) {
   let {
     onClick: t,
     children: n,
-    tooltip: o,
+    tooltip: a,
     dangerous: u = false,
     className: d,
     "aria-label": f
   } = e;
   return (0, r.jsx)(s.ua7, {
-    text: o,
+    text: a,
     hideOnClick: true,
     children: e => {
       let {
@@ -37,10 +37,10 @@ function u(e) {
           e.stopPropagation(), null == p || p(), t(e)
         },
         dangerous: u,
-        "aria-label": null != f ? f : o,
+        "aria-label": null != f ? f : a,
         className: d,
         children: i.Children.map(n, e => i.isValidElement(e) ? i.cloneElement(e, {
-          className: a()(e.props.className, c.actionBarIcon)
+          className: o()(e.props.className, c.actionBarIcon)
         }) : e)
       })
     }

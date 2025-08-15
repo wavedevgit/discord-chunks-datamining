@@ -1,4 +1,4 @@
-/** Chunk was on 7384 **/
+/** Chunk was on 30202 **/
 /** chunk id: 211712, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ib: () => s,
@@ -42,7 +42,7 @@ let r = {
       themeColors: [6094952, 1007678],
       getName: () => Chunk388032.intl.string(Chunk388032.t.UdNuqq),
       getHeaderSrc: () => require("./338430.js").Z,
-      getBannerSrc: e => e ? n(217258).Z : n(187812).Z
+      getBannerSrc: e => e ? n(217258).Z : n(892814).Z
     }
   },
   s = e => r[e]

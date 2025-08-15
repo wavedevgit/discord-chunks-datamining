@@ -1,4 +1,4 @@
-/** Chunk was on 9885 **/
+/** Chunk was on 42521 **/
 /** chunk id: 788284, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -41,7 +41,7 @@ function h(e) {
     className: o,
     quest: i,
     useReducedMotion: l
-  } = e, f = (0, c.e7)([d.Z], () => d.Z.isFocused()), h = s.useRef(null), [j, b] = s.useState(false), _ = s.useMemo(() => {
+  } = e, f = (0, c.e7)([d.Z], () => d.Z.isFocused()), h = s.useRef(null), [b, _] = s.useState(false), j = s.useMemo(() => {
     if (null == i) return null;
     let e = (0, p.oo)(i.config.colors.primary),
       t = {
@@ -57,9 +57,9 @@ function h(e) {
     f ? C && (null == (r = h.current) || null == (n = r.animation) || n.play()) : null == (t = h.current) || null == (e = t.animation) || e.goToAndStop(0, true)
   }, [C, f]);
   let y = s.useCallback(() => {
-    b(true)
+    _(true)
   }, []);
-  return null == _ || v ? (0, r.jsx)("div", {
+  return null == j || v ? (0, r.jsx)("div", {
     className: m.backgroundFallback,
     style: {
       backgroundImage: "linear-gradient(90deg, ".concat(i.config.colors.primary, ", ").concat(i.config.colors.secondary, ")")
@@ -69,8 +69,8 @@ function h(e) {
     children: (0, r.jsx)(u.Fmz, {
       ref: h,
       onComplete: y,
-      importData: () => _,
-      shouldAnimate: !j && C,
+      importData: () => j,
+      shouldAnimate: !b && C,
       className: a()(m.lottieAnimation, m.lottieAnimationBackground, n),
       loop: 0,
       rendererSettings: {

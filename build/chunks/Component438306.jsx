@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 438306, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 438306, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -20,34 +19,34 @@ var Chunk442837 = require("./442837.js"),
   Chunk734335 = require("./734335.js"),
   Chunk430864 = require("./430864.js");
 
-function g(e) {
+function b(e) {
   let {
     channel: t
-  } = e, n = (0, s.ZP)(t, true), g = (0, i.e7)([u.Z], () => u.Z.can(_.Plq.MANAGE_CHANNELS, t) && c.dF.has(t.type));
-  return (0, r.jsxs)(f.ZP, {
+  } = e, n = (0, o.ZP)(t, true), b = (0, i.e7)([u.Z], () => u.Z.can(h.Plq.MANAGE_CHANNELS, t) && c.dF.has(t.type));
+  return (0, r.jsxs)(p.ZP, {
     channelId: t.id,
-    children: [(0, r.jsx)(f.Kq, {
+    children: [(0, r.jsx)(p.Kq, {
       channelType: t.type
-    }), (0, r.jsx)(f.Ot, {
-      children: p.intl.format(p.t.I3R7Vl, {
+    }), (0, r.jsx)(p.Ot, {
+      children: f.intl.format(f.t.I3R7Vl, {
         channelName: n
       })
-    }), (0, r.jsx)(f.jz, {
-      className: m.markup,
-      children: p.intl.format(p.t.pYMVRU, {
+    }), (0, r.jsx)(p.jz, {
+      className: g.markup,
+      children: f.intl.format(f.t.pYMVRU, {
         channelName: n,
-        topicHook: () => l.Z.parseTopic(t.topic, true, {
+        topicHook: () => s.Z.parseTopic(t.topic, true, {
           channelId: t.id
         })
       })
-    }), g ? (0, r.jsx)("div", {
-      className: h.buttonContainer,
+    }), b ? (0, r.jsx)("div", {
+      className: m.buttonContainer,
       children: (0, r.jsx)(d.Z, {
-        label: p.intl.string(p.t["3gUsJS"]),
+        label: f.intl.string(f.t["3gUsJS"]),
         onClick: () => {
           a.ZP.open(t.id)
         },
-        icon: (0, r.jsx)(o.vdY, {
+        icon: (0, r.jsx)(l.vdY, {
           size: "xs",
           color: "currentColor"
         })

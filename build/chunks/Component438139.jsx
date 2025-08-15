@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 438139, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 438139, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => d
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk846519 = require("./846519.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,60 +17,37 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function l(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
 }
 
 function c(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function u(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function d(e, t) {
-  if (null == e) return {};
-  var n, r, i = f(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
+function u(e) {
+  return "".concat(e).length < 13 ? 1e3 * e : e
 }
 
-function f(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-let _ = 13;
-
-function p(e) {
-  return "".concat(e).length < _ ? 1e3 * e : e
-}
-
-function h(e) {
+function d(e) {
   return class extends i.PureComponent {
     componentDidMount() {
       this._interval.start(1e3, () => this.setState(this.getUpdatedTime()))
@@ -86,7 +62,7 @@ function h(e) {
       let {
         timestamps: e
       } = this.props, t = Date.now() / 1e3;
-      return null != e.end ? this.getDiff(t, p(e.end) / 1e3) : null != e.start ? this.getDiff(p(e.start) / 1e3, t) : {
+      return null != e.end ? this.getDiff(t, u(e.end) / 1e3) : null != e.start ? this.getDiff(u(e.start) / 1e3, t) : {
         hours: 0,
         minutes: 0,
         seconds: 0
@@ -111,25 +87,39 @@ function h(e) {
         {
           timestamps: n
         } = t,
-        i = d(t, ["timestamps"]),
+        i = function(e, t) {
+          if (null == e) return {};
+          var n, r, i = function(e, t) {
+            if (null == e) return {};
+            var n, r, i = {},
+              l = Object.keys(e);
+            for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+            return i
+          }(e, t);
+          if (Object.getOwnPropertySymbols) {
+            var l = Object.getOwnPropertySymbols(e);
+            for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+          }
+          return i
+        }(t, ["timestamps"]),
         {
-          hours: o,
-          minutes: s,
-          seconds: c
+          hours: l,
+          minutes: o,
+          seconds: u
         } = this.state,
-        f = {
-          hours: this.renderTime(o, true),
-          minutes: this.renderTime(s),
-          seconds: this.renderTime(c)
+        d = {
+          hours: this.renderTime(l, true),
+          minutes: this.renderTime(o),
+          seconds: this.renderTime(u)
         };
-      return null != n.end ? (0, r.jsx)(e, u(l({}, i), {
-        message: a.intl.formatToPlainString(a.t["I/J7vL"], f)
-      })) : null != n.start ? (0, r.jsx)(e, u(l({}, i), {
-        message: a.intl.formatToPlainString(a.t.M9Fexc, f)
+      return null != n.end ? (0, r.jsx)(e, c(s({}, i), {
+        message: a.intl.formatToPlainString(a.t["I/J7vL"], d)
+      })) : null != n.start ? (0, r.jsx)(e, c(s({}, i), {
+        message: a.intl.formatToPlainString(a.t.M9Fexc, d)
       })) : null
     }
     constructor(e) {
-      super(e), s(this, "_interval", true), this._interval = new o.Xp, this.state = l({}, this.getUpdatedTime())
+      super(e), o(this, "_interval", true), this._interval = new l.Xp, this.state = s({}, this.getUpdatedTime())
     }
   }
 }

@@ -1,83 +1,80 @@
-/** Chunk was on web.js **/
-/** chunk id: 352978, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 24255 **/
+/** chunk id: 352978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L: () => f,
-  Z: () => _
+  L: () => p,
+  Z: () => m
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
+var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk885524 = require("./885524.js"),
   Chunk38755 = require("./38755.js"),
   Chunk153066 = require("./153066.js"),
   Chunk412418 = require("./412418.js"),
-  f = function(e) {
-    return e.CONTAIN = "contain", e.COVER = "cover", e
-  }({});
-let _ = Chunk73800.memo(function(e) {
+  p = ((r = {}).CONTAIN = "contain", r.COVER = "cover", r);
+let m = Chunk73800.memo(function(e) {
   let {
     streamId: t,
     onResize: n,
-    wrapperClassName: o,
-    videoComponent: f,
-    className: _,
-    fit: p = "contain",
-    mirror: h = false,
-    paused: m = false,
-    streamPreviewURL: g,
-    videoSpinnerContext: E,
-    userId: b,
-    streamKey: y
-  } = e, [O, v] = i.useState(true);
+    wrapperClassName: r,
+    videoComponent: a,
+    className: p,
+    fit: m = "contain",
+    mirror: E = false,
+    paused: g = false,
+    streamPreviewURL: S,
+    videoSpinnerContext: v,
+    userId: h,
+    streamKey: b
+  } = e, [O, y] = i.useState(true);
   (0, c.Z)({
     location: "VideoStream",
-    videoSpinnerContext: E,
-    userId: b,
+    videoSpinnerContext: v,
+    userId: h,
     streamId: t,
     loading: O,
-    paused: m
+    paused: g
   });
   let {
-    onReady: I
-  } = (0, l.Z)({
+    onReady: _
+  } = (0, s.Z)({
     streamId: t,
-    userId: b,
+    userId: h,
     loading: O,
-    videoSpinnerContext: E,
-    streamKey: y,
-    paused: m
-  }), T = i.useCallback(() => {
-    v(false), I()
-  }, [I]);
-  return (0, r.jsxs)("div", {
-    className: a()(d.wrapper, o),
-    children: [null != t && (0, r.jsx)(f, {
-      className: a()(d.video, (0, u.l)(d, "video", p), {
-        [d.mirror]: h
-      }, _),
+    videoSpinnerContext: v,
+    streamKey: b,
+    paused: g
+  }), Z = i.useCallback(() => {
+    y(false), _()
+  }, [_]);
+  return (0, l.jsxs)("div", {
+    className: o()(f.wrapper, r),
+    children: [null != t && (0, l.jsx)(a, {
+      className: o()(f.video, (0, d.l)(f, "video", m), {
+        [f.mirror]: E
+      }, p),
       streamId: t,
       onResize: n,
-      onReady: T,
-      paused: m
-    }), m ? null : (0, r.jsx)("div", {
-      className: a()(d.previewWrapper, {
-        [d.loading]: O
+      onReady: Z,
+      paused: g
+    }), g ? null : (0, l.jsx)("div", {
+      className: o()(f.previewWrapper, {
+        [f.loading]: O
       }),
-      children: O && (0, r.jsxs)(i.Fragment, {
-        children: [null != g ? (0, r.jsx)("img", {
-          src: g,
+      children: O && (0, l.jsxs)(i.Fragment, {
+        children: [null != S ? (0, l.jsx)("img", {
+          src: S,
           alt: "",
-          className: d.previewImage
-        }) : (0, r.jsx)("div", {
-          className: d.emptyPreviewWrapper,
-          children: (0, r.jsx)("div", {
-            className: d.emptyPreview
+          className: f.previewImage
+        }) : (0, l.jsx)("div", {
+          className: f.emptyPreviewWrapper,
+          children: (0, l.jsx)("div", {
+            className: f.emptyPreview
           })
-        }), (0, r.jsx)(s.$jN, {
-          className: d.spinner
+        }), (0, l.jsx)(u.$jN, {
+          className: f.spinner
         })]
       })
     })]

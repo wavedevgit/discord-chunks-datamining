@@ -2,7 +2,7 @@
 /** chunk id: 386923, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => T
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -30,7 +30,7 @@ let y = {
     friction: 18,
     clamp: true
   },
-  O = e => {
+  w = e => {
     let {
       guild: t
     } = e, n = (0, o.e7)([g.Z], () => g.Z.can(x.Plq.MANAGE_GUILD, t));
@@ -170,7 +170,7 @@ let y = {
           })]
         })]
       }), (0, r.jsx)("img", {
-        src: _,
+        src: C,
         alt: b.intl.string(b.t.gAlJzc),
         width: u.TJ,
         height: u.TJ
@@ -178,7 +178,7 @@ let y = {
     })
   };
 
-function w(e) {
+function T(e) {
   let t, {
       guild: n
     } = e,
@@ -226,7 +226,7 @@ function w(e) {
   }, [a, g]), a) ? null : h((e, t) => t ? (0, r.jsxs)(s.animated.div, {
     style: e,
     onClick: () => m(!u),
-    className: l()(C.container, j.container, v.mainCard),
+    className: l()(_.container, j.container, v.mainCard),
     children: [(0, r.jsxs)("div", {
       className: j.inline,
       children: [(0, r.jsxs)("div", {
@@ -262,7 +262,7 @@ function w(e) {
       style: e,
       children: [(0, r.jsx)("hr", {
         className: j.separator
-      }), (0, r.jsx)(O, {
+      }), (0, r.jsx)(w, {
         guild: n
       })]
     }) : null)]

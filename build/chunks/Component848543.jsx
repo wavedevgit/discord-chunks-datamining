@@ -93,8 +93,8 @@ function x(e) {
     }),
     [U, G] = (0, b.cv)(M),
     {
-      analyticsLocations: V,
-      parentAnalyticsLocation: B
+      analyticsLocations: B,
+      parentAnalyticsLocation: V
     } = (0, h.ZP)(f.Z.SOUNDBOARD_BUTTON);
 
   function H(e) {
@@ -104,7 +104,7 @@ function x(e) {
       } = await n.e("56049").then(n.bind(n, 338991));
       return t => (0, r.jsx)(e, j(P({
         guildId: k,
-        sourceAnalyticsLocations: V
+        sourceAnalyticsLocations: B
       }, t), {
         onInteraction: (0, m.u)("SoundboardContextMenu", f.Z.RTC_PANEL)
       }))
@@ -124,7 +124,7 @@ function x(e) {
     event: C.CkL.TOGGLE_SOUNDBOARD,
     handler: K
   }), (0, r.jsx)(h.Gt, {
-    value: V,
+    value: B,
     children: (0, r.jsx)(d.ua7, {
       targetElementRef: x,
       text: A ? N.intl.string(N.t["Ox4/zc"]) : Z ? N.intl.string(N.t["+YBKYG"]) : w ? N.intl.string(N.t.X1lQlp) : N.intl.string(N.t["6EJvHh"]),
@@ -163,7 +163,7 @@ function x(e) {
             disabled: L,
             onClick: () => {
               var t;
-              null != U && U !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && G(S.L.UNKNOWN), null == e || null == (t = e.onClick) || t.call(e), D(!R), z(), (0, g.v)(B, g.d.SOUNDBOARD)
+              null != U && U !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && G(S.L.UNKNOWN), null == e || null == (t = e.onClick) || t.call(e), D(!R), z(), (0, g.v)(V, g.d.SOUNDBOARD)
             },
             onMouseEnter: t => {
               var n, r;

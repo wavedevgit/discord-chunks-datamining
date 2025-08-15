@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -31,7 +31,7 @@ function S(e) {
   let {
     windowKey: t,
     children: n
-  } = e, o = null != t, [S] = i.useState(() => v.ZP.getEnableHardwareAcceleration()), {
+  } = e, a = null != t, [S] = i.useState(() => v.ZP.getEnableHardwareAcceleration()), {
     locale: A,
     theme: N,
     focused: C,
@@ -42,8 +42,8 @@ function S(e) {
     saturation: L,
     desaturateUserColors: x,
     useForcedColors: M,
-    systemForcedColors: j,
-    useReducedMotion: k,
+    systemForcedColors: k,
+    useReducedMotion: j,
     alwaysShowLinkDecorations: U,
     confettiMode: G,
     highContrastMode: B
@@ -52,8 +52,8 @@ function S(e) {
     return {
       locale: b.default.locale,
       theme: y.Z.theme,
-      focused: o ? m.Z.getWindowFocused(t) : O.Z.isFocused(),
-      currentWindow: o && null != (e = m.Z.getWindow(t)) ? e : window,
+      focused: a ? m.Z.getWindowFocused(t) : O.Z.isFocused(),
+      currentWindow: a && null != (e = m.Z.getWindow(t)) ? e : window,
       fontScale: c.Z.fontScale,
       fontScaleClass: c.Z.fontScaleClass,
       keyboardModeEnabled: c.Z.keyboardModeEnabled,
@@ -66,12 +66,12 @@ function S(e) {
       highContrastMode: c.Z.isHighContrastModeEnabled,
       confettiMode: g.Z.confettiMode
     }
-  }), Z = u.U.useExperiment({
+  }), V = u.U.useExperiment({
     location: "RootThemeContextProvider"
   }, {
     autoTrackExposure: true
-  }).enabled, F = (0, p.Z)(R, __OVERLAY__ || C), V = 0;
-  1 !== L && (V = (0, l.OdO)(V, l.bgu.REDUCE_SATURATION_ENABLED));
+  }).enabled, F = (0, p.Z)(R, __OVERLAY__ || C), Z = 0;
+  1 !== L && (Z = (0, l.OdO)(Z, l.bgu.REDUCE_SATURATION_ENABLED));
   let H = (0, I.A)(),
     Y = (0, h.Ml)("RootThemeContextProvider"),
     W = (0, h.CL)("RootThemeContextProvider"),
@@ -84,12 +84,12 @@ function S(e) {
       location: "RootThemeContextProvider"
     }),
     Q = (0, _.On)({
-      isPopoutWindow: o,
+      isPopoutWindow: a,
       isSearchDesktopTopLevelEnabled: X
     });
   return (0, r.jsx)(l.wMY, {
     theme: N,
-    flags: V,
+    flags: Z,
     saturation: L,
     density: H,
     children: (0, r.jsx)(T.cE, {
@@ -104,12 +104,12 @@ function S(e) {
       saturation: L,
       desaturateUserColors: x,
       useForcedColors: M,
-      systemForcedColors: j,
-      useReducedMotion: k,
+      systemForcedColors: k,
+      useReducedMotion: j,
       alwaysShowLinkDecorations: U,
       hardwareAccelerationEnabled: S,
-      highContrastMode: Z && B,
-      rootClassName: a()(Q, {
+      highContrastMode: V && B,
+      rootClassName: o()(Q, {
         "confetti-mode": G,
         "refresh-fast-follow-avatars": Y && !q,
         "refresh-fast-follow-guild-bg": W,

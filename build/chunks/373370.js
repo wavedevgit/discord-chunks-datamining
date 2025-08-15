@@ -65,8 +65,8 @@ function E(e) {
       quest: n,
       taskDetails: r,
       withoutMarkdown: i,
-      hasNitro: o,
-      collectibleRewardDuration: a
+      hasNitro: a,
+      collectibleRewardDuration: o
     } = e,
     l = c.r.build(n.config).defaultRewardNameWithArticle,
     {
@@ -76,11 +76,11 @@ function E(e) {
     _ = n.config.messages.gameTitle,
     p = (0, s.f$)(n.config),
     h = (0, s._p)(n.config);
-  return g(t = d ? f.t.BfgxRk : o && p ? h ? f.t["eb/SnZ"] : f.t.ziB0HB : p || null != a ? f.t.AwuMRU : f.t.NIimTk, {
+  return g(t = d ? f.t.BfgxRk : a && p ? h ? f.t["eb/SnZ"] : f.t.ziB0HB : p || null != o ? f.t.AwuMRU : f.t.NIimTk, {
     gameTitle: _,
     streamingDurationRequirement: u,
     rewardNameWithArticle: l,
-    duration: a,
+    duration: o,
     targetMinutes: u,
     onClick: () => {}
   }, i, d)
@@ -91,8 +91,8 @@ function b(e) {
       quest: n,
       taskDetails: r,
       withoutMarkdown: i,
-      hasNitro: o,
-      collectibleRewardDuration: a
+      hasNitro: a,
+      collectibleRewardDuration: o
     } = e,
     l = c.r.build(n.config).defaultRewardNameWithArticle,
     {
@@ -101,11 +101,11 @@ function b(e) {
     d = n.config.messages.gameTitle,
     _ = (0, s.f$)(n.config),
     p = (0, s._p)(n.config);
-  return g(t = o && _ ? p ? f.t["eb/SnZ"] : f.t.ziB0HB : _ || null != a ? f.t.AwuMRU : f.t.NIimTk, {
+  return g(t = a && _ ? p ? f.t["eb/SnZ"] : f.t.ziB0HB : _ || null != o ? f.t.AwuMRU : f.t.NIimTk, {
     gameTitle: d,
     targetMinutes: u,
     rewardNameWithArticle: l,
-    duration: a,
+    duration: o,
     streamingDurationRequirement: u
   }, i)
 }
@@ -115,8 +115,8 @@ function y(e) {
       quest: n,
       taskDetails: r,
       withoutMarkdown: i,
-      hasNitro: o,
-      collectibleRewardDuration: a
+      hasNitro: a,
+      collectibleRewardDuration: o
     } = e,
     l = c.r.build(n.config).defaultRewardNameWithArticle,
     {
@@ -126,11 +126,11 @@ function y(e) {
     _ = n.config.messages.gameTitle,
     p = (0, s.f$)(n.config),
     h = (0, s._p)(n.config);
-  return g(t = d ? f.t.BfgxRk : o && p ? h ? f.t["eb/SnZ"] : f.t.ziB0HB : p || null != a ? f.t.AwuMRU : f.t.FZL5Q0, {
+  return g(t = d ? f.t.BfgxRk : a && p ? h ? f.t["eb/SnZ"] : f.t.ziB0HB : p || null != o ? f.t.AwuMRU : f.t.FZL5Q0, {
     gameTitle: _,
     streamingDurationRequirement: u,
     rewardNameWithArticle: l,
-    duration: a,
+    duration: o,
     questReward: l,
     targetMinutes: u,
     onClick: () => {}
@@ -144,21 +144,21 @@ function O(e) {
     withoutMarkdown: r
   } = e, {
     targetMinutes: i
-  } = n, o = t.config.messages.gameTitle;
+  } = n, a = t.config.messages.gameTitle;
   return g(f.t["a/ia7O"], {
-    gameTitle: o,
+    gameTitle: a,
     streamingDurationRequirement: i
   }, r)
 }
 
 function v(e, t, n, r) {
   var i;
-  let o, a = c.r.build(e.config).defaultWatchVideoTask,
-    l = null != (i = null == a ? true : a.messages.videoTitle) ? i : "video",
+  let a, o = c.r.build(e.config).defaultWatchVideoTask,
+    l = null != (i = null == o ? true : o.messages.videoTitle) ? i : "video",
     d = c.r.build(e.config).defaultRewardNameWithArticle,
     _ = (0, s.f$)(e.config),
     p = (0, s._p)(e.config);
-  return g(o = _ && n ? p ? f.t["xqX+r6"] : f.t["vs/xBg"] : _ || null != t ? f.t["W/HkLC"] : e.id === u.V6 ? f.t.Rsd5bG : f.t["g+InPD"], {
+  return g(a = _ && n ? p ? f.t["xqX+r6"] : f.t["vs/xBg"] : _ || null != t ? f.t["W/HkLC"] : e.id === u.V6 ? f.t.Rsd5bG : f.t["g+InPD"], {
     videoTitle: l,
     rewardNameWithArticle: d,
     duration: t
@@ -170,10 +170,10 @@ function I(e) {
     quest: t,
     taskDetails: n,
     withoutMarkdown: r
-  } = e, i = n.targetMinutes, o = c.r.build(t.config).defaultRewardNameWithArticle;
+  } = e, i = n.targetMinutes, a = c.r.build(t.config).defaultRewardNameWithArticle;
   return g(f.t.VYwSSk, {
     streamingDurationRequirement: i,
-    questReward: o
+    questReward: a
   }, r)
 }
 
@@ -182,8 +182,8 @@ function T(e) {
       quest: n,
       taskDetails: r,
       withoutMarkdown: i,
-      hasNitro: o,
-      collectibleRewardDuration: a
+      hasNitro: a,
+      collectibleRewardDuration: o
     } = e,
     l = c.r.build(n.config).defaultRewardNameWithArticle,
     {
@@ -192,10 +192,10 @@ function T(e) {
     d = n.config.messages.gameTitle,
     _ = (0, s.f$)(n.config),
     p = (0, s._p)(n.config);
-  return g(t = o && _ ? p ? f.t["X8Yt//"] : f.t.smG9qq : _ || null != a ? f.t.BLyDvL : f.t["hkJ+Gh"], {
+  return g(t = a && _ ? p ? f.t["X8Yt//"] : f.t.smG9qq : _ || null != o ? f.t.BLyDvL : f.t["hkJ+Gh"], {
     gameTitle: d,
     streamingDurationRequirement: u,
-    duration: a,
+    duration: o,
     questReward: l
   }, i)
 }
@@ -206,8 +206,8 @@ function S(e) {
     taskDetails: n,
     thirdPartyTaskDetails: r,
     withoutMarkdown: i,
-    currentUser: o
-  } = e, l = (0, a.I5)(o, d.p9.TIER_2), c = (0, s.Kr)(t.config);
+    currentUser: a
+  } = e, l = (0, o.I5)(a, d.p9.TIER_2), c = (0, s.Kr)(t.config);
   if ((0, s.$J)(t) && (0, s.$H)(t)) return E({
     quest: t,
     taskDetails: n,
@@ -254,7 +254,7 @@ function S(e) {
 function A(e) {
   var t;
   return S(m(p({}, e), {
-    currentUser: null != (t = e.currentUser) ? t : o.default.getCurrentUser()
+    currentUser: null != (t = e.currentUser) ? t : a.default.getCurrentUser()
   }))
 }
 
@@ -263,13 +263,13 @@ function N(e) {
     quest: t,
     questContent: n,
     sourceQuestContent: r
-  } = e, a = (0, l.uA)({
+  } = e, o = (0, l.uA)({
     quest: t,
     questContent: n,
     sourceQuestContent: r
-  }), s = (0, i.e7)([o.default], () => o.default.getCurrentUser()), c = (0, l.Jf)(t);
+  }), s = (0, i.e7)([a.default], () => a.default.getCurrentUser()), c = (0, l.Jf)(t);
   return A(m(p({}, e), {
-    connectedConsoleLinkOnClick: a,
+    connectedConsoleLinkOnClick: o,
     currentUser: s,
     withoutMarkdown: false,
     thirdPartyTaskDetails: null != c ? c : true

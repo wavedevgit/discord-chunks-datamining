@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 458182, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 458182, original params: e,t,n (module,exports,require) **/
 module.exports = {
   base: "base_b88801",
   text: "text_b88801",

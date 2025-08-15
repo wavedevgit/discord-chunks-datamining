@@ -1,31 +1,30 @@
-/** Chunk was on web.js **/
-/** chunk id: 477839, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 477839, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  EC: () => ex,
-  FK: () => eD,
-  Ly: () => ej,
-  MH: () => eB,
-  SZ: () => ey,
-  U8: () => ev,
-  VU: () => eG,
-  Vx: () => eM,
-  Wq: () => ek,
-  YG: () => eP,
-  ZJ: () => ew,
-  bO: () => eb,
-  bl: () => eL,
-  eg: () => eU,
-  h0: () => eR,
-  ne: () => eC,
-  oK: () => eZ,
-  r7: () => eN,
-  tH: () => eO,
-  uv: () => eT,
-  w2: () => eS,
-  yN: () => eI
+  EC: () => eU,
+  FK: () => eM,
+  Ly: () => eV,
+  MH: () => eW,
+  SZ: () => ej,
+  U8: () => eE,
+  VU: () => eB,
+  Vx: () => eR,
+  Wq: () => eF,
+  YG: () => eZ,
+  ZJ: () => eL,
+  bO: () => eI,
+  bl: () => ek,
+  eg: () => eG,
+  h0: () => eD,
+  ne: () => ew,
+  oK: () => eH,
+  r7: () => eA,
+  tH: () => ex,
+  uv: () => eC,
+  w2: () => eT,
+  yN: () => eP
 });
-var Chunk562858 = require("./562858.js"),
+var r, i, l, a, Chunk562858 = require("./562858.js"),
   Chunk702319 = require("./702319.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk511479 = require("./511479.js"),
@@ -95,17 +94,13 @@ var Chunk562858 = require("./562858.js"),
   Chunk718256 = require("./718256.js"),
   Chunk255785 = require("./255785.js"),
   Chunk429413 = require("./429413.js");
-let eb = "1344176506041139230",
-  ey = [200, 500, 1e3],
-  eO = 5,
-  ev = "https://discord.com/settings/clicker-game";
-var eI = function(e) {
-    return e[e.CLICKER_BUTTON = 0] = "CLICKER_BUTTON", e[e.RAIN = 1] = "RAIN", e[e.SUN = 2] = "SUN", e[e.STATS = 3] = "STATS", e[e.RATE = 4] = "RATE", e[e.ACHIEVEMENTS = 5] = "ACHIEVEMENTS", e[e.SNEK = 6] = "SNEK", e[e.WEEDS = 7] = "WEEDS", e[e.PET_WUMPUS = 8] = "PET_WUMPUS", e[e.BOUNCING_LOGO = 9] = "BOUNCING_LOGO", e[e.NAGBAR = 10] = "NAGBAR", e[e.ANT = 11] = "ANT", e[e.SNAIL = 12] = "SNAIL", e[e.BEE = 13] = "BEE", e[e.WORM = 14] = "WORM", e[e.BUTTERFLY = 15] = "BUTTERFLY", e[e.TULIP = 16] = "TULIP", e[e.SUNFLOWER = 17] = "SUNFLOWER", e[e.ORCHID = 18] = "ORCHID", e[e.LOOTBOXES = 19] = "LOOTBOXES", e[e.MESSAGES = 20] = "MESSAGES", e[e.AT_SOMEONE = 21] = "AT_SOMEONE", e[e.CURSORS = 22] = "CURSORS", e[e.POURING_WATER = 23] = "POURING_WATER", e[e.WATERING_CAN = 24] = "WATERING_CAN", e[e.LEVELING = 25] = "LEVELING", e[e.MUSIC = 26] = "MUSIC", e[e.LAWNMOWER = 27] = "LAWNMOWER", e[e.COMPLETE_GAME = 28] = "COMPLETE_GAME", e
-  }({}),
-  eT = function(e) {
-    return e[e.CLICKER_BUTTON_STRONGER = 0] = "CLICKER_BUTTON_STRONGER", e[e.WEED_KILLER = 1] = "WEED_KILLER", e[e.BOUNCING_LOGO_MORE_LOGOS = 2] = "BOUNCING_LOGO_MORE_LOGOS", e[e.BOUNCING_LOGO_CORNERS = 3] = "BOUNCING_LOGO_CORNERS", e[e.BOUNCING_LOGO_SPEED = 4] = "BOUNCING_LOGO_SPEED", e[e.BOUNCING_LOGO_COLORS = 5] = "BOUNCING_LOGO_COLORS", e[e.CLICKER_BUTTON_AFFIRMATIONS = 6] = "CLICKER_BUTTON_AFFIRMATIONS", e[e.SUN_RAISE = 7] = "SUN_RAISE", e[e.FULLSCREEN_AT_SOMEONE = 8] = "FULLSCREEN_AT_SOMEONE", e[e.CLICKER_BUTTON_RAINBOW = 9] = "CLICKER_BUTTON_RAINBOW", e[e.MUSIC_CHANGE = 10] = "MUSIC_CHANGE", e
-  }({});
-let eS = () => ({
+let eI = "1344176506041139230",
+  ej = [200, 500, 1e3],
+  ex = 5,
+  eE = "https://discord.com/settings/clicker-game";
+var eP = ((r = {})[r.CLICKER_BUTTON = 0] = "CLICKER_BUTTON", r[r.RAIN = 1] = "RAIN", r[r.SUN = 2] = "SUN", r[r.STATS = 3] = "STATS", r[r.RATE = 4] = "RATE", r[r.ACHIEVEMENTS = 5] = "ACHIEVEMENTS", r[r.SNEK = 6] = "SNEK", r[r.WEEDS = 7] = "WEEDS", r[r.PET_WUMPUS = 8] = "PET_WUMPUS", r[r.BOUNCING_LOGO = 9] = "BOUNCING_LOGO", r[r.NAGBAR = 10] = "NAGBAR", r[r.ANT = 11] = "ANT", r[r.SNAIL = 12] = "SNAIL", r[r.BEE = 13] = "BEE", r[r.WORM = 14] = "WORM", r[r.BUTTERFLY = 15] = "BUTTERFLY", r[r.TULIP = 16] = "TULIP", r[r.SUNFLOWER = 17] = "SUNFLOWER", r[r.ORCHID = 18] = "ORCHID", r[r.LOOTBOXES = 19] = "LOOTBOXES", r[r.MESSAGES = 20] = "MESSAGES", r[r.AT_SOMEONE = 21] = "AT_SOMEONE", r[r.CURSORS = 22] = "CURSORS", r[r.POURING_WATER = 23] = "POURING_WATER", r[r.WATERING_CAN = 24] = "WATERING_CAN", r[r.LEVELING = 25] = "LEVELING", r[r.MUSIC = 26] = "MUSIC", r[r.LAWNMOWER = 27] = "LAWNMOWER", r[r.COMPLETE_GAME = 28] = "COMPLETE_GAME", r),
+  eC = ((i = {})[i.CLICKER_BUTTON_STRONGER = 0] = "CLICKER_BUTTON_STRONGER", i[i.WEED_KILLER = 1] = "WEED_KILLER", i[i.BOUNCING_LOGO_MORE_LOGOS = 2] = "BOUNCING_LOGO_MORE_LOGOS", i[i.BOUNCING_LOGO_CORNERS = 3] = "BOUNCING_LOGO_CORNERS", i[i.BOUNCING_LOGO_SPEED = 4] = "BOUNCING_LOGO_SPEED", i[i.BOUNCING_LOGO_COLORS = 5] = "BOUNCING_LOGO_COLORS", i[i.CLICKER_BUTTON_AFFIRMATIONS = 6] = "CLICKER_BUTTON_AFFIRMATIONS", i[i.SUN_RAISE = 7] = "SUN_RAISE", i[i.FULLSCREEN_AT_SOMEONE = 8] = "FULLSCREEN_AT_SOMEONE", i[i.CLICKER_BUTTON_RAINBOW = 9] = "CLICKER_BUTTON_RAINBOW", i[i.MUSIC_CHANGE = 10] = "MUSIC_CHANGE", i);
+let eT = () => ({
   0: {
     name: Chunk388032.intl.string(Chunk511479.default["1pCxsL"]),
     description: Chunk388032.intl.string(Chunk511479.default["1pCxsL"]),
@@ -313,14 +308,14 @@ let eS = () => ({
   }
 });
 
-function eA(e) {
+function eN(e) {
   let {
     numAlreadyPurchased: t
   } = e, n = [1.67, 1.6, 1.25, 1.5], r = 250;
   for (let e = 0; e < t; e++) r *= n[e % n.length], r = Math.floor(r);
   return r
 }
-let eN = () => ({
+let eA = () => ({
     0: {
       itemId: 0,
       name: Chunk511479.default.Th5Tfn,
@@ -360,7 +355,7 @@ let eN = () => ({
       name: Chunk388032.intl.string(Chunk511479.default.eAck29),
       description: Chunk388032.intl.string(Chunk511479.default.cfQopK),
       pointsDescription: Chunk511479.default.K3FGT0,
-      cost: eA,
+      cost: eN,
       purchaseIconSrc: Chunk9917
     },
     3: {
@@ -393,7 +388,7 @@ let eN = () => ({
           numAlreadyPurchased: t,
           lifetimePoints: n
         } = e;
-        return t < ey.length - 1 && n > 2e4
+        return t < ej.length - 1 && n > 2e4
       },
       purchaseIconSrc: Chunk997278
     },
@@ -440,7 +435,7 @@ let eN = () => ({
         let {
           numAlreadyPurchased: t
         } = e;
-        return t < eO
+        return t < ex
       },
       purchaseIconSrc: Chunk599643
     },
@@ -487,7 +482,7 @@ let eN = () => ({
       purchaseIconSrc: Chunk527474
     }
   }),
-  eC = [{
+  ew = [{
     type: Chunk562858.h.ITEM,
     id: 17
   }, {
@@ -587,7 +582,7 @@ let eN = () => ({
     type: Chunk562858.h.ITEM,
     id: 28
   }],
-  eR = [{
+  eD = [{
     type: Chunk562858.h.ITEM_UPGRADE,
     id: 0
   }, {
@@ -600,24 +595,22 @@ let eN = () => ({
     type: Chunk562858.h.ITEM_UPGRADE,
     id: 7
   }],
-  eP = [{
+  eZ = [{
     itemId: 7,
     purchasesRequired: 10
   }, {
     itemId: 27,
     purchasesRequired: 30
   }],
-  ew = [{
+  eL = [{
     id: 7,
     neutralizerId: 1
   }, {
     id: 27,
     neutralizerId: null
   }];
-var eD = function(e) {
-  return e[e.CLICKS_1 = 0] = "CLICKS_1", e[e.CLICKS_2 = 1] = "CLICKS_2", e[e.CLICKS_3 = 2] = "CLICKS_3", e[e.PURCHASE_1 = 3] = "PURCHASE_1", e[e.PURCHASE_2 = 4] = "PURCHASE_2", e[e.PURCHASE_3 = 5] = "PURCHASE_3", e[e.PURCHASE_4 = 6] = "PURCHASE_4", e[e.PURCHASE_5 = 7] = "PURCHASE_5", e[e.LEVEL_1 = 8] = "LEVEL_1", e[e.LEVEL_2 = 9] = "LEVEL_2", e[e.LEVEL_3 = 10] = "LEVEL_3", e[e.LEVEL_4 = 11] = "LEVEL_4", e[e.WEED = 13] = "WEED", e[e.LAWNMOWER_1 = 14] = "LAWNMOWER_1", e[e.LAWNMOWER_2 = 15] = "LAWNMOWER_2", e[e.MESSAGE_1 = 16] = "MESSAGE_1", e[e.MESSAGE_2 = 17] = "MESSAGE_2", e[e.MESSAGE_3 = 18] = "MESSAGE_3", e[e.BOUNCE_1 = 19] = "BOUNCE_1", e[e.BOUNCE_2 = 20] = "BOUNCE_2", e[e.BOUNCE_3 = 21] = "BOUNCE_3", e
-}({});
-let eL = {
+var eM = ((l = {})[l.CLICKS_1 = 0] = "CLICKS_1", l[l.CLICKS_2 = 1] = "CLICKS_2", l[l.CLICKS_3 = 2] = "CLICKS_3", l[l.PURCHASE_1 = 3] = "PURCHASE_1", l[l.PURCHASE_2 = 4] = "PURCHASE_2", l[l.PURCHASE_3 = 5] = "PURCHASE_3", l[l.PURCHASE_4 = 6] = "PURCHASE_4", l[l.PURCHASE_5 = 7] = "PURCHASE_5", l[l.LEVEL_1 = 8] = "LEVEL_1", l[l.LEVEL_2 = 9] = "LEVEL_2", l[l.LEVEL_3 = 10] = "LEVEL_3", l[l.LEVEL_4 = 11] = "LEVEL_4", l[l.WEED = 13] = "WEED", l[l.LAWNMOWER_1 = 14] = "LAWNMOWER_1", l[l.LAWNMOWER_2 = 15] = "LAWNMOWER_2", l[l.MESSAGE_1 = 16] = "MESSAGE_1", l[l.MESSAGE_2 = 17] = "MESSAGE_2", l[l.MESSAGE_3 = 18] = "MESSAGE_3", l[l.BOUNCE_1 = 19] = "BOUNCE_1", l[l.BOUNCE_2 = 20] = "BOUNCE_2", l[l.BOUNCE_3 = 21] = "BOUNCE_3", l);
+let ek = {
     0: 100,
     1: 500,
     2: 1e3,
@@ -625,7 +618,7 @@ let eL = {
     4: 3,
     5: 6,
     6: 9,
-    7: Object.values(eI).length + Object.values(eT).length - 1,
+    7: Object.values(eP).length + Object.values(eC).length - 1,
     8: 5,
     9: 10,
     10: 15,
@@ -640,54 +633,54 @@ let eL = {
     20: 1e3,
     21: 5e3
   },
-  ex = () => ({
+  eU = () => ({
     0: {
       icon: Chunk297036,
       name: Chunk388032.intl.string(Chunk511479.default.hYTmQU),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default["87JVSk"], {
-        count: eL[0]
+        count: ek[0]
       })
     },
     1: {
       icon: Chunk360552,
       name: Chunk388032.intl.string(Chunk511479.default.Pf9Hv7),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default["87JVSk"], {
-        count: eL[1]
+        count: ek[1]
       })
     },
     2: {
       icon: Chunk284867,
       name: Chunk388032.intl.string(Chunk511479.default.oTL1qq),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default["87JVSk"], {
-        count: eL[2]
+        count: ek[2]
       })
     },
     3: {
       icon: Chunk99321,
       name: Chunk388032.intl.string(Chunk511479.default["3FgleX"]),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default.ttVnXV, {
-        count: eL[3]
+        count: ek[3]
       })
     },
     4: {
       icon: Chunk407239,
       name: Chunk388032.intl.string(Chunk511479.default.dWrQpq),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default.ttVnXV, {
-        count: eL[4]
+        count: ek[4]
       })
     },
     5: {
       icon: Chunk29823,
       name: Chunk388032.intl.string(Chunk511479.default.z4uabm),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default.ttVnXV, {
-        count: eL[5]
+        count: ek[5]
       })
     },
     6: {
       icon: Chunk516038,
       name: Chunk388032.intl.string(Chunk511479.default.mVKL2d),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default.ttVnXV, {
-        count: eL[6]
+        count: ek[6]
       })
     },
     7: {
@@ -699,49 +692,49 @@ let eL = {
       icon: Chunk406543,
       name: Chunk388032.intl.string(Chunk511479.default.q6Wkho),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default["3RaLUF"], {
-        level: eL[8]
+        level: ek[8]
       })
     },
     9: {
       icon: Chunk31316,
       name: Chunk388032.intl.string(Chunk511479.default["g9+rmp"]),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default["3RaLUF"], {
-        level: eL[9]
+        level: ek[9]
       })
     },
     10: {
       icon: Chunk187695,
       name: Chunk388032.intl.string(Chunk511479.default.qA3ns7),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default["3RaLUF"], {
-        level: eL[10]
+        level: ek[10]
       })
     },
     11: {
       icon: Chunk618492,
       name: Chunk388032.intl.string(Chunk511479.default.gujDDQ),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default["3RaLUF"], {
-        level: eL[11]
+        level: ek[11]
       })
     },
     13: {
       icon: Chunk968796,
       name: Chunk388032.intl.string(Chunk511479.default.ihlJt7),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default.gNIyY2, {
-        count: eL[13]
+        count: ek[13]
       })
     },
     14: {
       icon: Chunk928132,
       name: Chunk388032.intl.string(Chunk511479.default.IdVao6),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default.AmNmLy, {
-        count: eL[14]
+        count: ek[14]
       })
     },
     15: {
       icon: Chunk520803,
       name: Chunk388032.intl.string(Chunk511479.default.kM9kxs),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default.AmNmLy, {
-        count: eL[15]
+        count: ek[15]
       })
     },
     16: {
@@ -753,14 +746,14 @@ let eL = {
       icon: Chunk940415,
       name: Chunk388032.intl.string(Chunk511479.default.tWKo9v),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default.C34HAQ, {
-        count: eL[16]
+        count: ek[16]
       })
     },
     18: {
       icon: Chunk550376,
       name: Chunk388032.intl.string(Chunk511479.default.R6FY6O),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default.C34HAQ, {
-        count: eL[17]
+        count: ek[17]
       })
     },
     19: {
@@ -772,21 +765,19 @@ let eL = {
       icon: Chunk299372,
       name: Chunk388032.intl.string(Chunk511479.default["0RU5mZ"]),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default["59Cedn"], {
-        count: eL[19]
+        count: ek[19]
       })
     },
     21: {
       icon: Chunk350445,
       name: Chunk388032.intl.string(Chunk511479.default.la7ZOz),
       description: Chunk388032.intl.formatToPlainString(Chunk511479.default["59Cedn"], {
-        count: eL[20]
+        count: ek[20]
       })
     }
   });
-var eM = function(e) {
-  return e[e.DEFAULT = 0] = "DEFAULT", e[e.CAT = 1] = "CAT", e[e.SWORD = 2] = "SWORD", e[e.PIZZA = 3] = "PIZZA", e
-}({});
-let ej = () => ({
+var eR = ((a = {})[a.DEFAULT = 0] = "DEFAULT", a[a.CAT = 1] = "CAT", a[a.SWORD = 2] = "SWORD", a[a.PIZZA = 3] = "PIZZA", a);
+let eV = () => ({
     0: {
       name: Chunk388032.intl.string(Chunk511479.default.jcJhmZ),
       src: Chunk456191,
@@ -808,8 +799,8 @@ let ej = () => ({
       activeSrc: Chunk289011
     }
   }),
-  ek = [0, 1, 2, 3],
-  eU = 8,
-  eG = "1349486948942745695",
-  eB = "1349486948942745696",
-  eZ = Chunk981631.XAJ
+  eF = [0, 1, 2, 3],
+  eG = 8,
+  eB = "1349486948942745695",
+  eW = "1349486948942745696",
+  eH = Chunk981631.XAJ

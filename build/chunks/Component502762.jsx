@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk576635 = require("./576635.js"),
   Chunk213053 = require("./213053.js"),
@@ -17,7 +17,7 @@ let f = Object.assign(Chunk73800.forwardRef(function(e, t) {
   let {
     user: n,
     displayProfile: i,
-    themeType: o,
+    themeType: a,
     className: f,
     pendingThemeColors: _,
     themeOverride: p,
@@ -39,13 +39,13 @@ let f = Object.assign(Chunk73800.forwardRef(function(e, t) {
     profileThemeClassName: v
   } = (0, c.Z)({
     theme: null != p ? p : E,
-    themeType: o,
+    themeType: a,
     primaryColor: b,
     secondaryColor: y,
     forceUserTheme: g
   });
   return (0, r.jsx)("div", {
-    className: a()(d.outer, v, f),
+    className: o()(d.outer, v, f),
     style: O,
     ref: t,
     children: (0, r.jsx)("div", {
@@ -53,7 +53,7 @@ let f = Object.assign(Chunk73800.forwardRef(function(e, t) {
       children: (0, r.jsx)(s.ze6, {
         theme: null != p ? p : E,
         children: (0, r.jsx)(u.X, {
-          themeType: o,
+          themeType: a,
           theme: null != p ? p : E,
           primaryColor: b,
           secondaryColor: y,
@@ -70,7 +70,7 @@ let f = Object.assign(Chunk73800.forwardRef(function(e, t) {
     } = e;
     return (0, r.jsx)("div", {
       ref: t,
-      className: a()(d.overlay, i),
+      className: o()(d.overlay, i),
       children: n
     })
   })

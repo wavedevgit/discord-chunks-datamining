@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 173790, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 173790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => C
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -24,76 +23,74 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk30787 = require("./30787.js"),
   Chunk413097 = require("./413097.js");
-let I = 2048,
-  T = 84;
 
-function S(e) {
+function C(e) {
   var t;
   let {
     context: n,
-    application: l,
+    application: s,
     sectionName: c
-  } = e, I = "channel" === n.type ? n.channel : true, S = (0, o.e7)([f.Z], () => f.Z.entrypoint()), N = null != (t = (0, d.q)(l.id === b.bi.BUILT_IN ? null : l.id)) ? t : l, C = (0, p.ye)(N) ? A : E.Z, R = i.useRef(null), [P, w] = i.useState(false), {
-    iconURL: D,
+  } = e, C = "channel" === n.type ? n.channel : true, P = (0, r.e7)([p.Z], () => p.Z.entrypoint()), O = null != (t = (0, d.q)(s.id === b.bi.BUILT_IN ? null : s.id)) ? t : s, A = (0, f.ye)(O) ? E : x.Z, _ = i.useRef(null), [I, S] = i.useState(false), {
+    iconURL: T,
     name: L
-  } = i.useMemo(() => (0, p.sl)(N, {
-    fakeAppIconURL: v,
-    size: T
-  }), [N]), x = (0, u.PL)(true, true), M = (0, u.LD)(null == I ? true : I.guild_id, true), j = i.useMemo(() => (0, u.If)(n, N.id), [x, M, n, N.id]), k = !j.isGuildInstalled && !j.isUserInstalled;
+  } = i.useMemo(() => (0, f.sl)(O, {
+    fakeAppIconURL: N,
+    size: 84
+  }), [O]), R = (0, u.PL)(true, true), Z = (0, u.LD)(null == C ? true : C.guild_id, true), w = i.useMemo(() => (0, u.If)(n, O.id), [R, Z, n, O.id]), k = !w.isGuildInstalled && !w.isUserInstalled;
   return i.useEffect(() => {
-    k && u.ZP.queryInstallOnDemandApp(N.id, null == I ? true : I.id)
-  }, [N.id, null == I ? true : I.id, k]), (0, r.jsxs)(s.u2D, {
-    className: O.container,
+    k && u.ZP.queryInstallOnDemandApp(O.id, null == C ? true : C.id)
+  }, [O.id, null == C ? true : C.id, k]), (0, l.jsxs)(o.u2D, {
+    className: j.container,
     fade: true,
-    ref: R,
+    ref: _,
     role: "region",
-    "aria-label": y.intl.formatToPlainString(y.t["4OP4Ul"], {
+    "aria-label": g.intl.formatToPlainString(g.t["4OP4Ul"], {
       applicationName: L
     }),
-    children: [(0, r.jsx)(g.Z, {
-      application: N,
+    children: [(0, l.jsx)(y.Z, {
+      application: O,
       context: n,
       name: L,
-      iconURL: D,
-      scrollerRef: R,
+      iconURL: T,
+      scrollerRef: _,
       sectionName: c
-    }), null != D && (0, r.jsx)(h.Z, {
-      src: D,
-      className: O.appIcon
-    }), (0, r.jsx)(a.Z, {
+    }), null != T && (0, l.jsx)(h.Z, {
+      src: T,
+      className: j.appIcon
+    }), (0, l.jsx)(a.Z, {
       size: 54
-    }), (0, r.jsx)(C, {
+    }), (0, l.jsx)(A, {
       context: n,
-      application: N,
+      application: O,
       sectionName: c,
-      hasCommands: P
-    }), S === _._b.TEXT ? (0, r.jsx)(m.Z, {
+      hasCommands: I
+    }), P === m._b.TEXT ? (0, l.jsx)(v.Z, {
       context: n,
-      application: N,
+      application: O,
       sectionName: c,
       installOnDemand: k,
-      setHasCommands: w
+      setHasCommands: S
     }) : null]
   })
 }
 
-function A(e) {
+function E(e) {
   let {
     context: t,
     application: n,
     sectionName: i,
-    hasCommands: o
+    hasCommands: r
   } = e, a = (0, c.Z)({
     applicationId: n.id,
-    size: I,
+    size: 2048,
     names: ["embedded_cover"]
-  }), s = (0, p.yJ)(n), u = null != s && null != s.activity_preview_video_asset_id ? (0, l.Z)(n.id, s.activity_preview_video_asset_id) : null;
-  return (0, r.jsx)(E.Z, {
+  }), o = (0, f.yJ)(n), u = null != o && null != o.activity_preview_video_asset_id ? (0, s.Z)(n.id, o.activity_preview_video_asset_id) : null;
+  return (0, l.jsx)(x.Z, {
     context: t,
     application: n,
     imageCoverUrl: a.url,
     videoUrl: u,
     sectionName: i,
-    hasCommands: o
+    hasCommands: r
   })
 }

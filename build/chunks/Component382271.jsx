@@ -1,12 +1,12 @@
-/** Chunk was on 4048 **/
-/** chunk id: 382271, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 84533 **/
+/** chunk id: 382271, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  m: () => S
+  m: () => Z
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  n = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk257465 = require("./257465.jsx"),
   Chunk667202 = require("./667202.jsx"),
@@ -26,89 +26,89 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk734501 = require("./734501.js"),
   Chunk690813 = require("./690813.js");
-let N = e => {
+let C = e => {
     let {
       recipient: t,
-      status: r,
+      status: a,
       onClose: i
     } = e, {
-      avatarSrc: n,
+      avatarSrc: s,
       eventHandlers: l
     } = (0, p.Z)({
       userId: null == t ? true : t.id,
       size: u.EFr.SIZE_56
-    }), o = _.ZP.getName(t), c = r === j.Fz.FAIL;
-    return (0, a.jsxs)("div", {
-      className: C.trialRecipientRow,
-      children: [(0, a.jsx)(u.qEK, function(e) {
+    }), o = g.ZP.getName(t), c = a === v.Fz.FAIL;
+    return (0, r.jsxs)("div", {
+      className: S.trialRecipientRow,
+      children: [(0, r.jsx)(u.qEK, function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {},
-            a = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), a.forEach(function(t) {
-            var a;
-            a = r[t], t in e ? Object.defineProperty(e, t, {
-              value: a,
+          var a = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(a);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(a, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = a[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = a
+            }) : e[t] = r
           })
         }
         return e
       }({
-        imageClassName: s()({
-          [C.erroredAvatar]: c
+        imageClassName: n()({
+          [S.erroredAvatar]: c
         }),
-        src: n,
+        src: s,
         "aria-label": o,
         size: u.EFr.SIZE_32
-      }, l)), c ? (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(u.Text, {
-          className: C.errorDisplayName,
+      }, l)), c ? (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(u.Text, {
+          className: S.errorDisplayName,
           variant: "text-md/medium",
           color: "text-primary",
           children: o
-        }), (0, a.jsx)(u.Text, {
+        }), (0, r.jsx)(u.Text, {
           variant: "text-md/medium",
-          className: C.userName,
+          className: S.userName,
           color: "text-primary",
-          children: E.intl.format(E.t.RO3T4O, {
+          children: y.intl.format(y.t.RO3T4O, {
             userName: o
           })
         })]
-      }) : (0, a.jsx)(u.Text, {
+      }) : (0, r.jsx)(u.Text, {
         variant: "text-md/medium",
-        className: C.trialRecipientRowDisplayName,
+        className: S.trialRecipientRowDisplayName,
         color: "text-primary",
         children: o
-      }), (0, a.jsx)(u.zxk, {
+      }), (0, r.jsx)(u.zxk, {
         variant: "secondary",
         size: "sm",
-        text: E.intl.string(E.t["E+yYpq"]),
+        text: y.intl.string(y.t["E+yYpq"]),
         icon: u.kBi,
         onClick: () => {
           var e;
-          return e = t.id, void(x.Z.hasLayers() && (0, f.xf)(), m.Z.openPrivateChannel({
+          return e = t.id, void(f.Z.hasLayers() && (0, x.xf)(), m.Z.openPrivateChannel({
             recipientIds: e
           }), i())
         }
       })]
     })
   },
-  S = e => {
+  Z = e => {
     let {
       results: t,
-      onClose: r
-    } = e, n = (0, l.e7)([g.Z], () => g.Z.getReferralsRemaining());
-    b.default.track(v.rMx.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
+      onClose: a
+    } = e, s = (0, l.e7)([b.Z], () => b.Z.getReferralsRemaining());
+    h.default.track(R.rMx.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
     let {
-      reducedMotion: s
+      reducedMotion: n
     } = i.useContext(d.Sf);
-    return null === n ? (0, a.jsx)(u.$jN, {}) : (0, a.jsx)(c.I, {
-      graphic: s.enabled ? {
-        src: y.Z,
+    return null === s ? (0, r.jsx)(u.$jN, {}) : (0, r.jsx)(c.I, {
+      graphic: n.enabled ? {
+        src: N.Z,
         type: "image"
       } : {
         rive: u.p8m,
@@ -116,24 +116,24 @@ let N = e => {
       },
       gradientColor: "nitro-pink",
       title: (() => {
-        let e = E.intl.string(E.t.Pcb7KC),
-          r = t.filter(e => e.status === j.Fz.SUCCESS).length;
-        return n > 0 && (e = E.intl.formatToPlainString(E.t.iWtOfH, {
-          numReferrals: r
-        })), 0 === r && (e = E.intl.string(E.t["7VBEub"])), e
+        let e = y.intl.string(y.t.Pcb7KC),
+          a = t.filter(e => e.status === v.Fz.SUCCESS).length;
+        return s > 0 && (e = y.intl.formatToPlainString(y.t.iWtOfH, {
+          numReferrals: a
+        })), 0 === a && (e = y.intl.string(y.t["7VBEub"])), e
       })(),
-      subtitle: E.intl.format(E.t.CZaMHh, {
-        days: R.p,
-        helpdeskArticle: h.Z.getArticleURL(v.BhN.REFERRAL_PROGRAM)
+      subtitle: y.intl.format(y.t.CZaMHh, {
+        days: E.p,
+        helpdeskArticle: j.Z.getArticleURL(R.BhN.REFERRAL_PROGRAM)
       }),
-      onClose: r,
+      onClose: a,
       transitionState: o.D.ENTERED,
-      children: (0, a.jsx)("div", {
-        className: C.trialRecipientContainer,
-        children: t.map(e => (0, a.jsx)(N, {
+      children: (0, r.jsx)("div", {
+        className: S.trialRecipientContainer,
+        children: t.map(e => (0, r.jsx)(C, {
           recipient: e.recipient,
           status: e.status,
-          onClose: r
+          onClose: a
         }, e.recipient.id))
       })
     })

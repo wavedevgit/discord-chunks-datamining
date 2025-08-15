@@ -70,8 +70,8 @@ function E(e) {
   var t;
   let n = (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation);
   if (null == e) return;
-  let o = m(e);
-  return n && o.toLocaleLowerCase() === (null == (t = e.username) ? true : t.toLocaleLowerCase()) && "0" === e.discriminator && (o = f(o)), o
+  let a = m(e);
+  return n && a.toLocaleLowerCase() === (null == (t = e.username) ? true : t.toLocaleLowerCase()) && "0" === e.discriminator && (a = f(a)), a
 }
 
 function b(e) {
@@ -93,19 +93,19 @@ function y(e) {
 function O(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   switch (e) {
-    case a.Skl.ONLINE:
+    case o.Skl.ONLINE:
       return t ? s.intl.string(s.t["9hghLC"]) : s.intl.string(s.t.WbGtnJ);
-    case a.Skl.OFFLINE:
+    case o.Skl.OFFLINE:
       return s.intl.string(s.t.Vv0abG);
-    case a.Skl.IDLE:
+    case o.Skl.IDLE:
       return s.intl.string(s.t.qWbtVV);
-    case a.Skl.DND:
+    case o.Skl.DND:
       return s.intl.string(s.t.jaNpQE);
-    case a.Skl.INVISIBLE:
+    case o.Skl.INVISIBLE:
       return s.intl.string(s.t.bg24HB);
-    case a.Skl.STREAMING:
+    case o.Skl.STREAMING:
       return s.intl.string(s.t.XKYej4);
-    case a.Skl.UNKNOWN:
+    case o.Skl.UNKNOWN:
     default:
       return null
   }
@@ -118,9 +118,9 @@ function v(e, t) {
   } = t;
   if (null == e) returnfalse;
   let i = Date.now() - e.createdAt.getTime(),
-    o = null == n || i <= u * n,
-    a = i >= u * r;
-  return !!o && !!a
+    a = null == n || i <= u * n,
+    o = i >= u * r;
+  return !!a && !!o
 }
 
 function I(e) {
@@ -141,7 +141,7 @@ function S(e, t, n) {
   if (null == e) return s.intl.string(s.t.sKdZ6e);
   if (!h(e.username)) return d;
   let r = n;
-  if ("always" === t.identifiable ? r = false : "never" === t.identifiable && (r = true), "0" !== e.discriminator && e.discriminator !== a.fo$ && !t.forcePomelo) return "username" === t.mode || r ? e.username : "".concat(e.username, "#").concat(e.discriminator);
+  if ("always" === t.identifiable ? r = false : "never" === t.identifiable && (r = true), "0" !== e.discriminator && e.discriminator !== o.fo$ && !t.forcePomelo) return "username" === t.mode || r ? e.username : "".concat(e.username, "#").concat(e.discriminator);
   let i = r ? f(e.username) : e.username;
   return "never" !== t.decoration ? _(i) : i
 }
@@ -153,8 +153,8 @@ function A(e, t) {
 }
 
 function N(e) {
-  return (0, r.e7)([o.default], () => {
-    if (null != e) return e.isPrivate() && e.isDM() ? o.default.getUser(e.getRecipientId()) : null
+  return (0, r.e7)([a.default], () => {
+    if (null != e) return e.isPrivate() && e.isDM() ? a.default.getUser(e.getRecipientId()) : null
   })
 }
 

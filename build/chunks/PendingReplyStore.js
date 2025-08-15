@@ -58,14 +58,14 @@ function m(e) {
     message: n,
     shouldMention: r = true,
     showMentionToggle: i = true,
-    source: o
+    source: a
   } = e;
   _[t.id] = {
     channel: t,
     message: n,
     shouldMention: r,
     showMentionToggle: i
-  }, h[t.id] = o
+  }, h[t.id] = a
 }
 
 function g(e) {
@@ -106,12 +106,12 @@ function y(e) {
   var t, n, r;
   let {
     id: i,
-    channelId: o
+    channelId: a
   } = e;
-  if ((null == (n = _[o]) || null == (t = n.message) ? true : t.id) === i) delete _[o], delete h[o];
+  if ((null == (n = _[a]) || null == (t = n.message) ? true : t.id) === i) delete _[a], delete h[a];
   else {
-    if ((null == (r = p[o]) ? true : r.messageId) !== i) returnfalse;
-    delete p[o], delete h[o]
+    if ((null == (r = p[a]) ? true : r.messageId) !== i) returnfalse;
+    delete p[a], delete h[a]
   }
 }
 
@@ -120,7 +120,7 @@ function O(e) {
   let t = p[e];
   if (null == t) returnfalse;
   let n = s.Z.getMessage(e, t.messageId),
-    r = a.Z.getChannel(t.channelId);
+    r = o.Z.getChannel(t.channelId);
   if (null == n || null == r) returnfalse;
   _[e] = {
     channel: r,
@@ -146,7 +146,7 @@ function I(e) {
 
 function T() {
   Chunk709054.default.keys(p).forEach(e => {
-    null == a.Z.getChannel(e) && delete p[e]
+    null == o.Z.getChannel(e) && delete p[e]
   })
 }
 
@@ -165,7 +165,7 @@ class A extends(r = Chunk442837.ZP.PersistedStore) {
     return u({}, p, module)
   }
   initialize(e) {
-    this.waitFor(s.Z, a.Z), p = null != e ? e : {}
+    this.waitFor(s.Z, o.Z), p = null != e ? e : {}
   }
   getPendingReply(e) {
     return _[e]

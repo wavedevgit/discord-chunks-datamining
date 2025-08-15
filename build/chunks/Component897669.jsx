@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 897669, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 897669, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -15,19 +14,19 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk719188 = require("./719188.js");
 
-function f(e) {
+function p(e) {
   let {
     guildEvent: t,
     recurrenceId: n
-  } = e, f = (0, s.ZP)(t, n), _ = (0, a.Z)(n, t.id);
+  } = e, p = (0, o.ZP)(t, n), h = (0, a.Z)(n, t.id);
   if (null == t) return null;
-  let p = (null == t ? true : t.scheduled_start_time) != null ? (0, l.lh)(_, f.startTime, new Date(null == t ? true : t.scheduled_start_time)) : null;
+  let f = (null == t ? true : t.scheduled_start_time) != null ? (0, s.lh)(h, p.startTime, new Date(null == t ? true : t.scheduled_start_time)) : null;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.ZP.Divider, {
+    children: [(0, r.jsx)(l.ZP.Divider, {
       className: d.divider
     }), (0, r.jsx)(c.z, {
-      startTime: f.startTime.toISOString(),
-      status: null != p ? p : t.status,
+      startTime: p.startTime.toISOString(),
+      status: null != f ? f : t.status,
       liveText: u.intl.string(u.t.kM6e4O),
       className: d.eventSchedule,
       textVariant: "text-lg/semibold",

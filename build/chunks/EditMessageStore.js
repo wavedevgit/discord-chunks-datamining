@@ -58,12 +58,12 @@ function m(e) {
     messageId: n,
     content: r,
     source: i
-  } = e, o = l.dN.getSetting(), c = s.ZP.unparse(r, t);
+  } = e, a = l.dN.getSetting(), c = s.ZP.unparse(r, t);
   p[t] = {
     channelId: t,
     messageId: n,
     textValue: c,
-    richValue: (0, a.JM)(o ? c : r)
+    richValue: (0, o.JM)(a ? c : r)
   }, h[t] = i
 }
 

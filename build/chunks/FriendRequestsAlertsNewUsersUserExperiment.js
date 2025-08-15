@@ -8,7 +8,7 @@ require.d(exports, {
 });
 var Chunk818083 = require("./818083.js"),
   Chunk128064 = require("./128064.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-01_friend_requests_alerts",
     label: "Friend Request Setting Defaults",
@@ -32,7 +32,7 @@ let o = (0, Chunk818083.B)({
       }
     }]
   }),
-  a = (0, Chunk818083.B)({
+  o = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-01_friend_requests_alerts_new_users",
     label: "Friend Request Setting Defaults",
@@ -56,31 +56,31 @@ let o = (0, Chunk818083.B)({
       }
     }]
   }),
-  s = e => 2 === o.getCurrentConfig({
+  s = e => 2 === a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false
-  }).bucket || 2 === a.getCurrentConfig({
+  }).bucket || 2 === o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false
   }).bucket,
-  l = e => 1 === o.getCurrentConfig({
+  l = e => 1 === a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false
-  }).bucket || 1 === a.getCurrentConfig({
+  }).bucket || 1 === o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false
   }).bucket || (0, i.c_)(e),
   c = e => {
-    let t = o.useExperiment({
+    let t = a.useExperiment({
         location: e
       }, {
         autoTrackExposure: false
       }).bucket,
-      n = a.useExperiment({
+      n = o.useExperiment({
         location: e
       }, {
         autoTrackExposure: false

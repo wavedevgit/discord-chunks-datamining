@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 603490, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 603490, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -18,9 +17,9 @@ function c(e) {
     togglePopout: c,
     renderEmojiPicker: u,
     shouldShow: d
-  } = e, f = i.useRef(null);
+  } = e, p = i.useRef(null);
   return (0, r.jsx)(a.yRy, {
-    targetElementRef: f,
+    targetElementRef: p,
     animation: a.yRy.Animation.FADE,
     renderPopout: e => {
       let {
@@ -30,12 +29,12 @@ function c(e) {
     },
     shouldShow: d,
     onRequestClose: c,
-    position: o.tq ? "top" : "left",
-    align: o.tq ? "center" : "top",
+    position: l.tq ? "top" : "left",
+    align: l.tq ? "center" : "top",
     clickTrap: true,
-    children: () => (0, r.jsx)(s.sF, {
-      ref: f,
-      label: l.intl.string(l.t.lfIHs7),
+    children: () => (0, r.jsx)(o.sF, {
+      ref: p,
+      label: s.intl.string(s.t.lfIHs7),
       icon: a.EO4,
       onClick: c
     }, "add-reaction")

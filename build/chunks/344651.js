@@ -74,21 +74,21 @@ function M(e, t) {
   }), e
 }
 
-function j(e, t) {
+function k(e, t) {
   if (null == e) return {};
-  var n, r, i = k(e, t);
+  var n, r, i = j(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
 
-function k(e, t) {
+function j(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let U = new Chunk710845.Z("ConnectionStore"),
@@ -100,11 +100,11 @@ let U = new Chunk710845.Z("ConnectionStore"),
     };
     let r = (0, E.q_)(t),
       i = O.Z.getChannel(t.id),
-      o = null == i ? true : i.merge(M(L({}, r), {
+      a = null == i ? true : i.merge(M(L({}, r), {
         recipients: i.recipients,
         bitrate: null != (n = r.bitrate) ? n : i.bitrate
       }));
-    return e.channels.push(null != o ? o : r), e
+    return e.channels.push(null != a ? a : r), e
   }, e => "CHANNEL_UPDATE" !== e),
   B = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null == e ? {
     type: "SOUNDBOARD_SOUNDS_RECEIVED",
@@ -122,7 +122,7 @@ let U = new Chunk710845.Z("ConnectionStore"),
       guildId: t.guild_id
     }))
   }), e), e => "SOUNDBOARD_SOUNDS" !== e),
-  Z = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null != e ? e : {
+  V = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null != e ? e : {
     type: "GUILD_MEMBERS_CHUNK_BATCH",
     chunks: []
   }).chunks.push(t), e), e => "GUILD_MEMBERS_CHUNK" !== e),
@@ -130,24 +130,24 @@ let U = new Chunk710845.Z("ConnectionStore"),
     type: "PRESENCE_UPDATES",
     updates: []
   } : e).updates.push(t), e), e => "PRESENCE_UPDATE" !== e && "GUILD_MEMBERS_CHUNK" !== e),
-  V = {};
+  Z = {};
 
 function H(e, t) {
-  for (let n of e) V[n] = {
+  for (let n of e) Z[n] = {
     preload: () => null,
     dispatch: t
   }
 }
 
 function Y(e, t, n) {
-  for (let r of e) V[r] = {
+  for (let r of e) Z[r] = {
     preload: t,
     dispatch: n
   }
 }
 
 function W(e) {
-  return V[e]
+  return Z[e]
 }
 
 function K(e) {
@@ -178,14 +178,14 @@ function K(e) {
 }
 
 function z(e) {
-  a.Z.dispatch(e).catch(t => w.Wb.resetSocketOnDispatchError({
+  o.Z.dispatch(e).catch(t => w.Wb.resetSocketOnDispatchError({
     error: t,
     action: e.type
   }))
 }
 
 function q(e, t, n) {
-  var r, o, a;
+  var r, a, o;
   let {
     roles: s,
     nick: l,
@@ -199,7 +199,7 @@ function q(e, t, n) {
     unusual_dm_activity_until: g,
     collectibles: E
   } = n, b = v.ZP.getMember(e, t.id);
-  null != b && b.nick === l && b.avatar === c && i().isEqual(b.roles, s) && (0, u.sr)(null != (r = b.avatarDecoration) ? r : null, null != d ? d : null) && b.premiumSince === _ && b.isPending === p && b.joinedAt === h && b.communicationDisabledUntil === m && b.flags === f && (null != (o = b.unusualDMActivityUntil) ? o : null) === (null != g ? g : null) && i().isEqual(null != (a = b.collectibles) ? a : null, null != E ? E : null) || z({
+  null != b && b.nick === l && b.avatar === c && i().isEqual(b.roles, s) && (0, u.sr)(null != (r = b.avatarDecoration) ? r : null, null != d ? d : null) && b.premiumSince === _ && b.isPending === p && b.joinedAt === h && b.communicationDisabledUntil === m && b.flags === f && (null != (a = b.unusualDMActivityUntil) ? a : null) === (null != g ? g : null) && i().isEqual(null != (o = b.collectibles) ? o : null, null != E ? E : null) || z({
     type: "GUILD_MEMBER_ADD",
     guildId: e,
     user: t,
@@ -255,23 +255,23 @@ function J(e) {
     user: n,
     status: r,
     activities: i,
-    hiddenActivities: o,
-    clientStatus: a,
+    hiddenActivities: a,
+    clientStatus: o,
     processedAtTimestamp: s
   } = e;
   F.add({
     guildId: t,
     user: n,
     status: r,
-    clientStatus: a,
+    clientStatus: o,
     activities: i,
-    hiddenActivities: o,
+    hiddenActivities: a,
     processedAtTimestamp: s
   })
 }
 Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id]), e => {
   m.Z.initialGuild.measure(() => {
-    o.ZP.Emitter.batched(() => {
+    a.ZP.Emitter.batched(() => {
       let t = R.Fx(e, w.Wb.identifyStartTime);
       null != T.default.getCurrentUser() && (z({
         type: "GUILD_CREATE",
@@ -301,7 +301,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
   })
 }), H(["READY_SUPPLEMENTAL"], e => {
   m.Z.readySupplemental.measure(() => {
-    o.ZP.Emitter.batched(() => {
+    a.ZP.Emitter.batched(() => {
       var t, n;
       e = m.Z.hydrateReadySupplemental.measure(() => R.r$(e, w.Wb.identifyStartTime));
       let r = e => e.map(e => ({
@@ -316,16 +316,16 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
       i.forEach(e => {
         e.presences = r(e.presences || [])
       });
-      let o = e.presences ? r(e.presences) : [],
-        a = (null != (t = e.lazy_private_channels) ? t : []).map(e => (0, E.q_)(e)),
+      let a = e.presences ? r(e.presences) : [],
+        o = (null != (t = e.lazy_private_channels) ? t : []).map(e => (0, E.q_)(e)),
         s = null != (n = e.game_invites) ? n : [];
       m.Z.dispatchReadySupplemental.measure(() => {
         var t;
         z({
           type: "CONNECTION_OPEN_SUPPLEMENTAL",
           guilds: i,
-          presences: o,
-          lazyPrivateChannels: a,
+          presences: a,
+          lazyPrivateChannels: o,
           gameInvites: s,
           userActivities: null != (t = e.user_activities) ? t : true
         })
@@ -375,15 +375,15 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
     type: "LOGOUT"
   });
   m.Z.ready.measure(() => {
-    o.ZP.Emitter.batched(() => {
+    a.ZP.Emitter.batched(() => {
       let t = (e = m.Z.hydrateReady.measure(() => R.IM(e, w.Wb.identifyStartTime, n))).private_channels.map(e => (0, E.q_)(e)),
         r = e.guilds.filter(e => true === e.unavailable && true !== e.geo_restricted).map(e => e.id),
         i = e.guilds.filter(e => true !== e.unavailable),
-        o = e.guilds.filter(e => true === e.geo_restricted);
+        a = e.guilds.filter(e => true === e.geo_restricted);
       i.forEach(e => {
         e.presences = []
       });
-      let a = null == e.user_settings_proto ? true : (0, g.ac)(e.user_settings_proto);
+      let o = null == e.user_settings_proto ? true : (0, g.ac)(e.user_settings_proto);
       m.Z.dispatchReady.measure(() => {
         var n, s;
         z({
@@ -414,13 +414,13 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
           pendingPayments: e.pending_payments,
           countryCode: null != (s = e.country_code) ? s : true,
           guildJoinRequests: e.guild_join_requests || [],
-          userSettingsProto: a,
+          userSettingsProto: o,
           apiCodeVersion: e.api_code_version,
           auth: e.auth,
           notificationSettings: {
             flags: e.notification_settings.flags
           },
-          geoRestrictedGuilds: o,
+          geoRestrictedGuilds: a,
           explicitContentScanVersion: e.explicit_content_scan_version,
           failedStates: e.failed_states
         })
@@ -572,7 +572,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
 }), Y(["THREAD_CREATE", "THREAD_UPDATE", "THREAD_DELETE"], e => O.o.loadGuildIds([e.guild_id]), (e, t) => {
   let {
     newly_created: n
-  } = e, r = j(e, ["newly_created"]);
+  } = e, r = k(e, ["newly_created"]);
   z({
     type: t,
     isNewlyCreated: n,
@@ -690,8 +690,8 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
     guildId: e.id
   })
 }), H(["GUILD_MEMBERS_CHUNK"], e => {
-  o.ZP.Emitter.batched(() => {
-    Z.add({
+  a.ZP.Emitter.batched(() => {
+    V.add({
       guildId: e.guild_id,
       members: e.members,
       notFound: e.not_found
@@ -700,23 +700,23 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
         user: n,
         status: r,
         client_status: i,
-        activities: o,
-        hidden_activities: a,
+        activities: a,
+        hidden_activities: o,
         processed_at_timestamp: s
       } = t;
       return J({
         guildId: e.guild_id,
         user: n,
         status: r,
-        activities: o,
-        hiddenActivities: a,
+        activities: a,
+        hiddenActivities: o,
         clientStatus: i,
         processedAtTimestamp: s
       })
     }), P.Z.flush("GUILD_MEMBERS_CHUNK")
   })
 }), H(["THREAD_MEMBER_LIST_UPDATE"], e => {
-  o.ZP.Emitter.batched(() => {
+  a.ZP.Emitter.batched(() => {
     z({
       type: "THREAD_MEMBER_LIST_UPDATE",
       guildId: e.guild_id,
@@ -727,16 +727,16 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
         user: n,
         status: r,
         client_status: i,
-        activities: o,
-        hidden_activities: a,
+        activities: a,
+        hidden_activities: o,
         processed_at_timestamp: s
       } = t;
       return J({
         guildId: e.guild_id,
         user: n,
         status: r,
-        activities: o,
-        hiddenActivities: a,
+        activities: a,
+        hiddenActivities: o,
         clientStatus: i,
         processedAtTimestamp: s
       })
@@ -1125,7 +1125,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
     })
   })
 }), H(["GUILD_MEMBER_LIST_UPDATE"], e => {
-  o.ZP.Emitter.batched(() => {
+  a.ZP.Emitter.batched(() => {
     let t = t => {
       if (null == t.member) return;
       let {

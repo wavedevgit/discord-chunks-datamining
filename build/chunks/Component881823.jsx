@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk224706 = require("./224706.js"),
@@ -23,7 +23,7 @@ function g(e) {
   let {
     applicationId: t,
     name: n,
-    setPopoutRef: o,
+    setPopoutRef: a,
     onClose: g
   } = e, E = (0, f.q)(t), b = (0, s.e7)([_.Z], () => _.Z.getGame(t)), {
     isFetching: y,
@@ -43,10 +43,10 @@ function g(e) {
     u.ZP.fetchApplication(t), c.Z.getDetectableGamesSupplemental([t])
   }, [t]);
   i.useEffect(() => {
-    null == o || o(null == T ? true : T.current)
-  }, [T, o]);
+    null == a || a(null == T ? true : T.current)
+  }, [T, a]);
   let A = i.useMemo(() => y || v ? (0, r.jsx)("div", {
-    className: a()(m.container, m.spinnerContainer),
+    className: o()(m.container, m.spinnerContainer),
     children: (0, r.jsx)(l.$jN, {})
   }) : O || I || null == E || null == b ? (0, r.jsx)("div", {
     className: m.container,

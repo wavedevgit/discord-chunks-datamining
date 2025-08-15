@@ -4,10 +4,10 @@
 var Chunk46015 = require("./46015.js"),
   Chunk621523 = require("./621523.js"),
   Chunk796138 = require("./796138.js"),
-  a = Object,
+  o = Object,
   s = Chunk46015("".split);
 module.exports = Chunk621523(function() {
-  return !a("z").propertyIsEnumerable(0)
+  return !o("z").propertyIsEnumerable(0)
 }) ? function(e) {
-  return "String" === o(e) ? s(e, "") : a(e)
-} : a
+  return "String" === a(e) ? s(e, "") : o(e)
+} : o

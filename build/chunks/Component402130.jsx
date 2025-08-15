@@ -1,4 +1,4 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 402130, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -40,41 +40,41 @@ function b(e) {
 function y(e) {
   let {
     channel: t
-  } = e, [n] = t.recipients, y = (0, l.e7)([o.default], () => o.default.getUser(n)), x = (0, l.e7)([o.default], () => o.default.getCurrentUser()), j = (0, d.Z)(), [_, O] = (0, u.Z)(n);
+  } = e, [n] = t.recipients, y = (0, l.e7)([s.default], () => s.default.getUser(n)), _ = (0, l.e7)([s.default], () => s.default.getCurrentUser()), C = (0, d.Z)(), [x, v] = (0, u.Z)(n);
   if (i.useEffect(() => {
-      (0, s.t)()
+      (0, o.t)()
     }, []), i.useEffect(() => {
-      (0, h.Z)(null != y ? y : n, {
+      (0, p.Z)(null != y ? y : n, {
         type: "sidebar",
         withMutualFriendsCount: (null == y ? true : y.bot) !== true,
         withMutualFriends: false,
         withMutualGuilds: true,
         channelId: t.id
       })
-    }, [y, n, t.id]), null == y || null == x || !j) return null;
-  let v = "user-profile-sidebar-heading-".concat(y.id),
-    C = c.ZP.getName(null, t.id, y);
+    }, [y, n, t.id]), null == y || null == _ || !C) return null;
+  let j = "user-profile-sidebar-heading-".concat(y.id),
+    O = c.ZP.getName(null, t.id, y);
   return (0, r.jsx)("aside", {
-    "aria-labelledby": v,
+    "aria-labelledby": j,
     children: (0, r.jsx)(a.y5t, {
       component: (0, r.jsx)(a.nn4, {
         children: (0, r.jsx)(a.H, {
-          id: v,
-          children: m.intl.format(m.t.KRe1Fh, {
-            name: C
+          id: j,
+          children: g.intl.format(g.t.KRe1Fh, {
+            name: O
           })
         })
       }),
-      children: _ ? (0, r.jsx)(f.Z, b({
+      children: x ? (0, r.jsx)(f.Z, b({
         user: y,
-        currentUser: x,
-        onHide: O
-      }, e)) : y.isNonUserBot() ? (0, r.jsx)(p.Z, b({
+        currentUser: _,
+        onHide: v
+      }, e)) : y.isNonUserBot() ? (0, r.jsx)(h.Z, b({
         user: y,
-        currentUser: x
-      }, e)) : (0, r.jsx)(g.Z, b({
+        currentUser: _
+      }, e)) : (0, r.jsx)(m.Z, b({
         user: y,
-        currentUser: x
+        currentUser: _
       }, e))
     })
   })

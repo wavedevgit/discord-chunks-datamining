@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 606925, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 606925, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -22,27 +21,26 @@ function u(e) {
     Icon: f
   } = e;
   if ((0, i.e7)([a.Z], () => a.Z.getAccounts().some(e => e.type === t.type))) return null;
-  let _ = () => {
-      null == d || d(), (0, o.Z)({
+  let p = null != f ? (0, r.jsx)(f, {
+    className: c.platformIcon
+  }) : (0, r.jsx)("img", {
+    alt: "",
+    className: c.platformIcon,
+    src: t.icon.whiteSVG
+  });
+  return (0, r.jsx)(o.Z, {
+    onClick: () => {
+      null == d || d(), (0, l.Z)({
         platformType: t.type,
         location: "Activity Action"
       })
     },
-    p = null != f ? (0, r.jsx)(f, {
-      className: c.platformIcon
-    }) : (0, r.jsx)("img", {
-      alt: "",
-      className: c.platformIcon,
-      src: t.icon.whiteSVG
-    });
-  return (0, r.jsx)(s.Z, {
-    onClick: _,
     color: n,
     look: u,
     fullWidth: true,
     children: (0, r.jsxs)("div", {
       className: c.flex,
-      children: [p, l.intl.format(l.t.XWSHTU, {
+      children: [p, s.intl.format(s.t.XWSHTU, {
         platform: t.name
       })]
     })

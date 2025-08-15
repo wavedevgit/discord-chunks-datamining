@@ -1,8 +1,9 @@
-/** Chunk was on 7654 **/
+/** Chunk was on 86915 **/
 /** chunk id: 603236, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  I: () => E,
-  S: () => S
+  I: () => S,
+  S: () => N
 }), require("./997841.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -24,95 +25,95 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk451964 = require("./451964.js"),
   Chunk197571 = require("./197571.js");
-let S = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
+let N = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
     hideValue: Chunk246946.Z.hideInstantInvites
   }))(e => {
     let {
       value: t,
       autoFocus: n,
-      hideValue: i,
+      hideValue: l,
       onCopy: r,
       disabled: s
     } = e;
-    return (0, l.jsx)(c.Z, {
+    return (0, i.jsx)(u.Z, {
       value: t,
-      hideMessage: i ? j.intl.string(j.t["6HzNgY"]) : null,
-      buttonColor: u.zx.Colors.BRAND,
+      hideMessage: l ? v.intl.string(v.t["6HzNgY"]) : null,
+      buttonColor: c.zx.Colors.BRAND,
       onCopy: r,
       autoFocus: n,
       disabled: s
     })
   }),
-  E = e => {
+  S = e => {
     let {
       guild: t,
       noInvitesAvailable: n,
       showFriends: r,
       onClose: o,
-      modalState: u,
-      isApplicationBypassToggleEnabled: c,
-      setInviteFlags: h,
-      copyValue: E,
-      changePage: b,
-      inviteChannel: T,
-      source: O,
-      code: y,
-      guildScheduledEvent: C,
-      disabled: P,
-      application: Z
+      modalState: c,
+      isApplicationBypassToggleEnabled: u,
+      setInviteFlags: g,
+      copyValue: S,
+      changePage: O,
+      inviteChannel: E,
+      source: w,
+      code: T,
+      guildScheduledEvent: Z,
+      disabled: R,
+      application: I
     } = e, {
-      maxAge: w,
-      maxUses: A,
-      networkError: M,
-      showVanityURL: R,
-      flags: k
-    } = u, D = i.useCallback(() => {
-      m.default.track(f.rMx.COPY_INSTANT_INVITE, {
-        server: g.Z.getGuildId(),
-        channel: null == T ? true : T.id,
-        channel_type: null == T ? true : T.type,
-        location: O,
-        code: y,
-        guild_scheduled_event_id: null == C ? true : C.id,
-        application_id: null == Z ? true : Z.id
+      maxAge: _,
+      maxUses: P,
+      networkError: A,
+      showVanityURL: L,
+      flags: D
+    } = c, M = l.useCallback(() => {
+      m.default.track(b.rMx.COPY_INSTANT_INVITE, {
+        server: h.Z.getGuildId(),
+        channel: null == E ? true : E.id,
+        channel_type: null == E ? true : E.type,
+        location: w,
+        code: T,
+        guild_scheduled_event_id: null == Z ? true : Z.id,
+        application_id: null == I ? true : I.id
       })
-    }, [null == Z ? true : Z.id, T, O, y, C]);
-    return (0, l.jsxs)(l.Fragment, {
-      children: [(0, l.jsx)(S, {
-        value: E,
+    }, [null == I ? true : I.id, E, w, T, Z]);
+    return (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsx)(N, {
+        value: S,
         autoFocus: r,
-        onCopy: D,
-        disabled: P
-      }), c && (0, l.jsxs)(l.Fragment, {
-        children: [(0, l.jsx)("div", {
-          className: N.divider
-        }), (0, l.jsx)(d.j7V, {
-          className: N.toggle,
-          value: (0, p.yE)(k, a.$.IS_APPLICATION_BYPASS),
-          onChange: e => h((0, p.mB)(k, a.$.IS_APPLICATION_BYPASS, e)),
-          disabled: P,
+        onCopy: M,
+        disabled: R
+      }), u && (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)("div", {
+          className: y.divider
+        }), (0, i.jsx)(d.j7V, {
+          className: y.toggle,
+          value: (0, p.yE)(D, a.$.IS_APPLICATION_BYPASS),
+          onChange: e => g((0, p.mB)(D, a.$.IS_APPLICATION_BYPASS, e)),
+          disabled: R,
           hideBorder: true,
-          children: (0, l.jsxs)("div", {
-            className: N.formText,
-            children: [(0, l.jsx)(d.Text, {
+          children: (0, i.jsxs)("div", {
+            className: y.formText,
+            children: [(0, i.jsx)(d.Text, {
               variant: "text-md/semibold",
-              children: j.intl.string(j.t["1i1bUl"])
-            }), (0, l.jsx)(d.ua7, {
-              text: j.intl.string(j.t["jvd/LC"]),
-              children: e => (0, l.jsx)(d.d3s, function(e) {
+              children: v.intl.string(v.t["1i1bUl"])
+            }), (0, i.jsx)(d.ua7, {
+              text: v.intl.string(v.t["jvd/LC"]),
+              children: e => (0, i.jsx)(d.d3s, function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
-                    l = Object.keys(n);
-                  "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                    i = Object.keys(n);
+                  "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                     return Object.getOwnPropertyDescriptor(n, e).enumerable
-                  }))), l.forEach(function(t) {
-                    var l;
-                    l = n[t], t in e ? Object.defineProperty(e, t, {
-                      value: l,
+                  }))), i.forEach(function(t) {
+                    var i;
+                    i = n[t], t in e ? Object.defineProperty(e, t, {
+                      value: i,
                       enumerable: true,
                       configurable: true,
                       writable: true
-                    }) : e[t] = l
+                    }) : e[t] = i
                   })
                 }
                 return e
@@ -123,20 +124,20 @@ let S = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
             })]
           })
         })]
-      }), n || R ? null : (0, l.jsxs)(d.Text, {
+      }), n || L ? null : (0, i.jsxs)(d.Text, {
         variant: "text-xs/normal",
-        className: s()(_.marginTop8, N.footerText),
-        children: [(0, v.Vg)(w, A), " ", r ? (0, l.jsx)(d.eee, {
-          onClick: () => b(I.RV.SETTINGS),
-          children: j.intl.string(j.t.VNe8Pz)
+        className: s()(C.marginTop8, y.footerText),
+        children: [(0, f.Vg)(_, P), " ", r ? (0, i.jsx)(d.eee, {
+          onClick: () => O(j.RV.SETTINGS),
+          children: v.intl.string(v.t.VNe8Pz)
         }) : null]
-      }), !n && r && R ? (0, l.jsxs)(d.Text, {
+      }), !n && r && L ? (0, i.jsxs)(d.Text, {
         variant: "text-xs/normal",
-        className: s()(_.marginTop8, N.footerText),
-        children: [j.intl.string(j.t["0M2U9/"]), " "]
-      }) : null, null != M ? (0, l.jsx)(x.W, {
+        className: s()(C.marginTop8, y.footerText),
+        children: [v.intl.string(v.t["0M2U9/"]), " "]
+      }) : null, null != A ? (0, i.jsx)(x.W, {
         guild: t,
-        error: M,
+        error: A,
         onClose: o
       }) : null]
     })

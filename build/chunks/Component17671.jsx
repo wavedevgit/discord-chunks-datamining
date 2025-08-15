@@ -96,7 +96,7 @@ function T(e) {
             (0, a.ZDy)(async () => {
               let {
                 default: e
-              } = await Promise.all([t.e("36599"), t.e("49049"), t.e("82758"), t.e("61"), t.e("72946")]).then(t.bind(t, 779250));
+              } = await Promise.all([t.e("36599"), t.e("60962"), t.e("49049"), t.e("82758"), t.e("61"), t.e("72946")]).then(t.bind(t, 779250));
               return n => {
                 var t, r;
                 return (0, i.jsx)(e, (t = function(e) {

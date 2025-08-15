@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 6148, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37220 **/
+/** chunk id: 6148, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -15,13 +14,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e, t) {
-  let n = (0, i.e7)([l.default], () => l.default.getId()),
-    d = (0, s.$R)(t),
-    f = (0, s.Gu)(t);
-  return (0, c.Z)(e, n) && d && !f ? (0, r.jsx)(o.sNh, {
+  let n = (0, i.e7)([s.default], () => s.default.getId()),
+    d = (0, o.$R)(t),
+    f = (0, o.Gu)(t);
+  return (0, c.Z)(e, n) && d && !f ? (0, r.jsx)(l.sNh, {
     id: "edit",
     label: u.intl.string(u.t.fsBWmZ),
     action: () => a.Z.startEditMessageRecord(t.id, e),
-    icon: o.vdY
+    icon: l.vdY
   }) : null
 }

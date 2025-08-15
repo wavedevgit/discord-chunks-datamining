@@ -1,5 +1,6 @@
-/** Chunk was on 44808 **/
+/** Chunk was on 20296 **/
 /** chunk id: 766411, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   E: () => d
 });
@@ -13,34 +14,34 @@ var Chunk73800 = require("./73800.js"),
 function c(e, t) {
   let {
     changelog: n,
-    loadState: a,
+    loadState: i,
     defaultChangelog: c,
     defaultLoadState: d
-  } = (0, l.cj)([i.Z], () => {
-    let n = null != e ? i.Z.getChangelog(e, t) : null,
-      r = null != e ? i.Z.getChangelog(e, "en-US") : null,
-      l = null != e && i.Z.getChangelogLoadStatus(e, "en-US");
+  } = (0, o.cj)([s.Z], () => {
+    let n = null != e ? s.Z.getChangelog(e, t) : null,
+      r = null != e ? s.Z.getChangelog(e, "en-US") : null,
+      o = null != e && s.Z.getChangelogLoadStatus(e, "en-US");
     return {
       changelog: n,
-      loadState: null != e && i.Z.getChangelogLoadStatus(e, t),
+      loadState: null != e && s.Z.getChangelogLoadStatus(e, t),
       defaultChangelog: r,
-      defaultLoadState: l
+      defaultLoadState: o
     }
   }, [e, t]);
   return (r.useEffect(() => {
-    null != e && null == n && a === s.LU.NOT_LOADED && o.Z.fetchChangelog(e, t)
-  }, [e, n, a, t]), null == e) ? {
+    null != e && null == n && i === l.LU.NOT_LOADED && a.Z.fetchChangelog(e, t)
+  }, [e, n, i, t]), null == e) ? {
     id: e,
     changelog: null,
     loaded: false
-  } : null == n && a === s.LU.LOADED_FAILURE ? {
+  } : null == n && i === l.LU.LOADED_FAILURE ? {
     id: e,
     changelog: c,
-    loaded: d !== s.LU.NOT_LOADED
+    loaded: d !== l.LU.NOT_LOADED
   } : {
     id: e,
     changelog: n,
-    loaded: a !== s.LU.NOT_LOADED
+    loaded: i !== l.LU.NOT_LOADED
   }
 }
 
@@ -49,25 +50,25 @@ function d() {
     t = (0, Chunk399606.e7)([Chunk802098.Z], () => Chunk802098.Z.latestChangelogId()),
     n = (0, Chunk399606.e7)([Chunk802098.Z], () => Chunk802098.Z.getConfig()),
     r = null != require && 0 === Object.keys(require).length,
-    o = null != require && Object.keys(require).length > 0 && null == exports,
-    s = (0, Chunk399606.e7)([Chunk802098.Z], () => Chunk802098.Z.overrideId()),
+    a = null != require && Object.keys(require).length > 0 && null == exports,
+    l = (0, Chunk399606.e7)([Chunk802098.Z], () => Chunk802098.Z.overrideId()),
     {
       changelog: d,
-      loaded: h
+      loaded: u
     } = c(exports, module),
     {
-      changelog: u,
-      loaded: g
+      changelog: p,
+      loaded: m
     } = c(Chunk596401, module);
-  return null == Chunk596401 || null == u && g ? {
+  return null == Chunk596401 || null == p && m ? {
     id: exports,
     changelog: d,
-    loaded: !!Chunk73800 || h,
+    loaded: !!Chunk73800 || u,
     clientTooOld: Chunk661111
   } : {
     id: Chunk596401,
-    changelog: u,
-    loaded: g,
+    changelog: p,
+    loaded: m,
     clientTooOld: false
   }
 }

@@ -56,23 +56,23 @@ let c = () => ({
   h = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : r.Z.unsafe_rawColors.PREMIUM_PERK_PURPLE.css,
       n = 0,
-      o = 0;
+      a = 0;
     switch (e) {
       case s.Eu4.TIER_1:
-        n = 15, o = 100;
+        n = 15, a = 100;
         break;
       case s.Eu4.TIER_2:
-        n = 30, o = 150;
+        n = 30, a = 150;
         break;
       case s.Eu4.TIER_3:
-        n = 60, o = 250
+        n = 60, a = 250
     }
     return {
       color: t,
       icon: i.SlE,
       description: l.intl.formatToPlainString(l.t["12vFYG"], {
         numStickers: n,
-        numEmojis: o
+        numEmojis: a
       })
     }
   },

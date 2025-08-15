@@ -1,8 +1,8 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => _,
-  Z: () => h
+  Z: () => x
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -22,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk795990 = require("./795990.jsx"),
   Chunk830202 = require("./830202.js");
 
-function x(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function x(e) {
   return e
 }
 
-function h(e) {
+function x(e) {
   var {
     widget: t
   } = e, n = function(e, t) {
@@ -61,19 +61,19 @@ function h(e) {
   }(e, ["widget"]);
   switch (t.type) {
     case l.l.FAVORITE_GAMES:
-      return (0, r.jsx)(m.Z, x({
+      return (0, r.jsx)(m.Z, h({
         widget: t
       }, n));
     case l.l.CURRENT_GAMES:
-      return (0, r.jsx)(p.Z, x({
+      return (0, r.jsx)(p.Z, h({
         widget: t
       }, n));
     case l.l.WANT_TO_PLAY_GAMES:
-      return (0, r.jsx)(b.Z, x({
+      return (0, r.jsx)(b.Z, h({
         widget: t
       }, n));
     case l.l.PLAYED_GAMES:
-      return (0, r.jsx)(g.Z, x({
+      return (0, r.jsx)(g.Z, h({
         widget: t
       }, n));
     default:
@@ -91,7 +91,7 @@ function v(e) {
     isGameFetching: s
   } = (0, u.Z)(l), d = (0, o.e7)([c.default], () => c.default.getId() === t.id);
   return 0 === a.length && d ? (0, r.jsx)(y.Z, {}) : (0, r.jsxs)(r.Fragment, {
-    children: [a.map(e => (0, r.jsx)(h, {
+    children: [a.map(e => (0, r.jsx)(x, {
       widget: e,
       user: t,
       guildId: n,
@@ -108,6 +108,6 @@ function _(e) {
   }, [t]), (0, r.jsx)(a.Ttm, {
     className: O.scroller,
     fade: true,
-    children: (0, r.jsx)(v, x({}, e))
+    children: (0, r.jsx)(v, h({}, e))
   })
 }

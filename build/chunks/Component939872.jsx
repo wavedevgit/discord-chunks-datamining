@@ -1,4 +1,4 @@
-/** Chunk was on 25548 **/
+/** Chunk was on 48091 **/
 /** chunk id: 939872, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => m
@@ -18,31 +18,31 @@ let m = e => {
     onClose: t,
     listing: n,
     guildId: m
-  } = e, f = (0, r.e7)([o.Z], () => o.Z.getGuild(m), [m]), g = (0, c.Z)({
+  } = e, p = (0, i.e7)([o.Z], () => o.Z.getGuild(m), [m]), f = (0, c.Z)({
     listing: n,
     guildId: m
   });
-  return (0, i.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: u.confirmationContainer,
-    children: [(0, i.jsx)(a.X6q, {
+    children: [(0, r.jsx)(a.X6q, {
       className: u.confirmationHeader,
       variant: "heading-lg/extrabold",
       children: d.intl.format(d.t.I5dYFh, {
-        serverName: null == f ? true : f.name,
+        serverName: null == p ? true : p.name,
         tierName: n.name
       })
-    }), !g.isEmpty() && (0, i.jsx)(a.Text, {
+    }), !f.isEmpty() && (0, r.jsx)(a.Text, {
       className: u.confirmationSubtitle,
       variant: "text-sm/normal",
       color: "header-secondary",
       children: d.intl.format(d.t.TnhFHh, {
-        benefits: g.asString()
+        benefits: f.asString()
       })
-    }), (0, i.jsx)(l.zx, {
+    }), (0, r.jsx)(l.zx, {
       className: u.openDiscordButton,
       onClick: () => (0, s.Z)("role_sub_mweb_success_modal"),
       children: d.intl.string(d.t.WWvswM)
-    }), (0, i.jsx)(l.zx, {
+    }), (0, r.jsx)(l.zx, {
       className: u.doneButton,
       look: l.zx.Looks.BLANK,
       onClick: () => t(true),

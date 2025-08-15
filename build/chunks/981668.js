@@ -29,7 +29,7 @@ function h(e) {
   return e.filter(e => e.type === _.IIU.PLAYING && e.application_id).map(e => e.application_id)
 }
 async function m(e) {
-  await o.ZP.fetchApplications(e, false)
+  await a.ZP.fetchApplications(e, false)
 }
 async function g(e) {
   if (null == e) return;
@@ -44,9 +44,9 @@ async function g(e) {
   if (null == t || !((0, f.Ku)("running_games_change", false) || n)) return;
   let r = d.Z.getActivities();
   if (0 === r.length) return;
-  let o = h([...r]);
-  await m([...o]);
-  let u = a.Z.getApplication(o[0]);
+  let a = h([...r]);
+  await m([...a]);
+  let u = o.Z.getApplication(a[0]);
   null != u && i.ZP.trackWithMetadata(_.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_SET, {
     channel_id: e,
     guild_id: t.guild_id,

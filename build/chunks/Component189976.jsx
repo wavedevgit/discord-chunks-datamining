@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 189976, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37220 **/
+/** chunk id: 189976, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 }), require("./388685.js"), require("./781311.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -15,104 +14,100 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk418087 = require("./418087.js");
-let p = new Map;
+let b = new Map;
 
-function h(e) {
-  let [t, n] = i.useState(false), r = (0, o.e7)([u.default], () => u.default.locale);
-  return {
-    handleTranslate: i.useCallback(async (i, o) => {
-      var c, u;
-      if (t) return;
-      let _ = null != i ? i : r;
-      n(true);
-      let h = null != (u = null != o ? o : null == (c = (0, f.getAvailableLocales)().find(e => e.value === _)) ? true : c.name) ? u : _;
-      p.has(e.id) || p.set(e.id, e.content), (0, s.showToast)((0, s.createToast)(f.intl.formatToPlainString(f.t.Znl8Z2, {
-        targetLanguage: h
-      }), s.ToastType.AI));
-      try {
-        let t = await a.tn.post({
-          url: d.ANM.AI_TRANSLATE,
-          body: {
-            content: e.content,
-            locale: _
-          },
-          rejectWithError: false
-        });
-        t.ok && t.body && (l.Z.dispatch({
-          type: "MESSAGE_UPDATE",
-          message: {
-            id: e.id,
-            channel_id: e.channel_id,
-            content: t.body.content
-          }
-        }), (0, s.showToast)((0, s.createToast)(f.intl.formatToPlainString(f.t.FtVUqq, {
-          targetLanguage: h
-        }), s.ToastType.SUCCESS)))
-      } finally {
-        n(false)
-      }
-    }, [e, t, r]),
-    handleRevertTranslation: i.useCallback(() => {
-      let t = p.get(e.id);
-      null != t && (l.Z.dispatch({
-        type: "MESSAGE_UPDATE",
-        message: {
-          id: e.id,
-          channel_id: e.channel_id,
-          content: t
-        }
-      }), p.delete(e.id))
-    }, [e.id, e.channel_id]),
-    isTranslating: t,
-    isTranslated: p.has(e.id)
-  }
-}
-
-function m(e, t) {
-  let o = (0, f.getAvailableLocales)();
-  return i.useMemo(() => o.map(i => {
-    let o;
-    try {
-      o = n(621287)("./".concat(i.value, ".png"))
-    } catch (e) {
-      o = n(1474)
-    }
-    return (0, r.jsx)(s.sNh, {
-      id: "translate-".concat(i.value),
-      label: i.name,
-      icon: () => (0, r.jsx)("img", {
-        alt: "",
-        src: o,
-        className: _.flagIcon
-      }),
-      action: () => e(i.value, i.name),
-      disabled: t
-    }, i.value)
-  }), [e, t, o])
-}
-
-function g(e, t) {
-  let n = c.C.useExperiment({
+function p(e, t) {
+  let p = c.C.useExperiment({
       location: "MessageContextMenu"
     }),
     {
-      handleTranslate: i,
-      handleRevertTranslation: o,
-      isTranslating: a,
-      isTranslated: l
-    } = h(e),
-    u = m(i, a);
-  return null != e.content && "" !== e.content.trim() && (null == n ? true : n.enableAIFeatures) ? l ? (0, r.jsx)(s.sNh, {
+      handleTranslate: O,
+      handleRevertTranslation: y,
+      isTranslating: m,
+      isTranslated: h
+    } = function(e) {
+      let [t, n] = i.useState(false), r = (0, l.e7)([u.default], () => u.default.locale);
+      return {
+        handleTranslate: i.useCallback(async (i, l) => {
+          var c, u;
+          if (t) return;
+          let g = null != i ? i : r;
+          n(true);
+          let p = null != (u = null != l ? l : null == (c = (0, f.getAvailableLocales)().find(e => e.value === g)) ? true : c.name) ? u : g;
+          b.has(e.id) || b.set(e.id, e.content), (0, o.showToast)((0, o.createToast)(f.intl.formatToPlainString(f.t.Znl8Z2, {
+            targetLanguage: p
+          }), o.ToastType.AI));
+          try {
+            let t = await a.tn.post({
+              url: d.ANM.AI_TRANSLATE,
+              body: {
+                content: e.content,
+                locale: g
+              },
+              rejectWithError: false
+            });
+            t.ok && t.body && (s.Z.dispatch({
+              type: "MESSAGE_UPDATE",
+              message: {
+                id: e.id,
+                channel_id: e.channel_id,
+                content: t.body.content
+              }
+            }), (0, o.showToast)((0, o.createToast)(f.intl.formatToPlainString(f.t.FtVUqq, {
+              targetLanguage: p
+            }), o.ToastType.SUCCESS)))
+          } finally {
+            n(false)
+          }
+        }, [e, t, r]),
+        handleRevertTranslation: i.useCallback(() => {
+          let t = b.get(e.id);
+          null != t && (s.Z.dispatch({
+            type: "MESSAGE_UPDATE",
+            message: {
+              id: e.id,
+              channel_id: e.channel_id,
+              content: t
+            }
+          }), b.delete(e.id))
+        }, [e.id, e.channel_id]),
+        isTranslating: t,
+        isTranslated: b.has(e.id)
+      }
+    }(e),
+    v = function(e, t) {
+      let l = (0, f.getAvailableLocales)();
+      return i.useMemo(() => l.map(i => {
+        let l;
+        try {
+          l = n(621287)("./".concat(i.value, ".png"))
+        } catch (e) {
+          l = n(1474)
+        }
+        return (0, r.jsx)(o.sNh, {
+          id: "translate-".concat(i.value),
+          label: i.name,
+          icon: () => (0, r.jsx)("img", {
+            alt: "",
+            src: l,
+            className: g.flagIcon
+          }),
+          action: () => e(i.value, i.name),
+          disabled: t
+        }, i.value)
+      }), [e, t, l])
+    }(O, m);
+  return null != e.content && "" !== e.content.trim() && (null == p ? true : p.enableAIFeatures) ? h ? (0, r.jsx)(o.sNh, {
     id: "revert-translation",
     label: f.intl.string(f.t.JC9BXl),
-    icon: s.os0,
-    action: o,
-    disabled: a
-  }) : (0, r.jsx)(s.sNh, {
+    icon: o.os0,
+    action: y,
+    disabled: m
+  }) : (0, r.jsx)(o.sNh, {
     id: "translate",
-    label: a ? f.intl.string(f.t.SVKIdX) : f.intl.string(f.t["6epDlZ"]),
-    action: () => i(),
-    disabled: a,
-    children: u
+    label: m ? f.intl.string(f.t.SVKIdX) : f.intl.string(f.t["6epDlZ"]),
+    action: () => O(),
+    disabled: m,
+    children: v
   }) : null
 }

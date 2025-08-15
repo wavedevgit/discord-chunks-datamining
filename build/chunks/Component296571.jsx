@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 296571, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 296571, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -19,31 +18,31 @@ function d(e) {
   let {
     message: n,
     compact: d,
-    usernameHook: f,
-    onClickThread: _,
-    onClickViewThreads: p,
-    onContextMenuThread: h
-  } = e, m = (0, s.ZP)(n), g = f(m), E = (0, i.e7)([a.Z], () => {
+    usernameHook: p,
+    onClickThread: m,
+    onClickViewThreads: f,
+    onContextMenuThread: _
+  } = e, g = (0, o.ZP)(n), h = p(g), b = (0, i.e7)([a.Z], () => {
     var e;
     return a.Z.getChannel(null == (e = n.messageReference) ? true : e.channel_id)
-  }), b = c.intl.format(c.t.cZ9Uf3, {
-    actorName: m.nick,
-    actorHook: g,
-    threadName: null != (t = null == E ? true : E.name) ? t : n.content,
+  }), E = c.intl.format(c.t.cZ9Uf3, {
+    actorName: g.nick,
+    actorHook: h,
+    threadName: null != (t = null == b ? true : b.name) ? t : n.content,
     threadOnClick: {
-      onClick: _,
-      onContextMenu: h
+      onClick: m,
+      onContextMenu: _
     },
-    viewThreadsOnClick: p
+    viewThreadsOnClick: f
   });
-  return (0, r.jsx)(l.Z, {
-    iconNode: (0, r.jsx)(o.or_, {
+  return (0, r.jsx)(s.Z, {
+    iconNode: (0, r.jsx)(l.or_, {
       size: "md",
       color: "currentColor",
       className: u.icon
     }),
     timestamp: n.timestamp,
     compact: d,
-    children: b
+    children: E
   })
 }

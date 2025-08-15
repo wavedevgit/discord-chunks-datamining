@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -163,7 +163,7 @@ class R extends(r = Chunk73800.PureComponent) {
     } = this.props, {
       hovered: h,
       animating: m
-    } = this.state, b = module.isMultiUserDM() && null == module.icon && Chunk43267, O = () => (0, Chunk255367.jsx)(Chunk481060.LYs, w({
+    } = this.state, b = module.isMultiUserDM() && null == module.icon && Chunk43267, _ = () => (0, Chunk255367.jsx)(Chunk481060.LYs, w({
       to: Chunk981631.Z5c.CHANNEL(Chunk981631.ME, module.id),
       onMouseEnter: () => this.setState({
         hovered: true
@@ -264,8 +264,8 @@ let D = Chunk73800.forwardRef(function(e, t) {
     o = (0, s.e7)([b.Z], () => b.Z.getChannelId(), []),
     u = (0, s.e7)([d.Z], () => null != o ? d.Z.getMode(o) : S.WtW.VOICE, [o]),
     p = (0, s.e7)([m.Z], () => m.Z.getAllApplicationStreamsForChannel(n).length > 0),
-    g = (0, s.e7)([_.Z], () => _.Z.getChannelId(), []),
-    y = (0, s.e7)([O.ZP], () => O.ZP.getMentionCount(n), [n]),
+    g = (0, s.e7)([O.Z], () => O.Z.getChannelId(), []),
+    y = (0, s.e7)([_.ZP], () => _.ZP.getMentionCount(n), [n]),
     {
       isFacepileEnabled: v
     } = h.Z.useExperiment({

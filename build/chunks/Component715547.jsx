@@ -20,8 +20,8 @@ function d(e) {
     onAction: n
   } = e, {
     themeType: d
-  } = (0, s.z)(), f = (0, o.Z)(t);
-  if (!(0, a.Z)(t) || null == f) return null;
+  } = (0, s.z)(), f = (0, a.Z)(t);
+  if (!(0, o.Z)(t) || null == f) return null;
   let _ = e => (e.stopPropagation(), null == n || n({
     action: "PRESS_WATCH_BUTTON"
   }), window.open(f));

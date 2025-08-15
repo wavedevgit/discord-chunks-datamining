@@ -1,36 +1,35 @@
-/** Chunk was on web.js **/
-/** chunk id: 839662, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 24255 **/
+/** chunk id: 839662, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => i
 });
 var Chunk44136 = require("./44136.js"),
   Chunk354459 = require("./354459.js");
 
-function o(e, t) {
-  var n, o;
+function i(e, t) {
+  var n, i;
   let a = null,
-    s = null,
-    l = null,
-    c = false,
-    u = false;
+    o = null,
+    u = null,
+    s = false,
+    c = false;
   switch (e.type) {
-    case i.fO.ACTIVITY:
+    case l.fO.ACTIVITY:
       break;
-    case i.fO.USER:
-      a = e.streamId, l = e.voiceState, c = e.speaking, u = e.ringing;
+    case l.fO.USER:
+      a = e.streamId, u = e.voiceState, s = e.speaking, c = e.ringing;
       break;
-    case i.fO.STREAM:
-      a = e.streamId, s = e.stream
+    case l.fO.STREAM:
+      a = e.streamId, o = e.stream
   }
   return {
     streamId: a,
-    stream: s,
-    speaking: c,
-    ringing: u,
-    muted: null != (n = null == l ? true : l.isVoiceMuted()) && n,
-    deafen: null != (o = null == l ? true : l.isVoiceDeafened()) && o,
-    mirror: e.type === i.fO.USER && e.user.id === t,
+    stream: o,
+    speaking: s,
+    ringing: c,
+    muted: null != (n = null == u ? true : u.isVoiceMuted()) && n,
+    deafen: null != (i = null == u ? true : u.isVoiceDeafened()) && i,
+    mirror: e.type === l.fO.USER && e.user.id === t,
     hasVideo: (0, r.ZP)(e)
   }
 }

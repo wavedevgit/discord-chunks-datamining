@@ -1,7 +1,7 @@
-/** Chunk was on 25548 **/
+/** Chunk was on 96750 **/
 /** chunk id: 850020, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  K: () => o
+  K: () => s
 });
 var Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
@@ -9,20 +9,20 @@ var Chunk73800 = require("./73800.js"),
   Chunk346811 = require("./346811.js"),
   Chunk4242 = require("./4242.js");
 
-function o(e) {
+function s(e) {
   let {
     user: t,
     guildId: n,
-    location: o = ""
+    location: s = ""
   } = e, {
     enabled: c
   } = a.Z.useConfig({
-    location: o
-  }), d = (0, r.e7)([l.ZP], () => null != n && null != t ? l.ZP.getMember(n, t.id) : null);
-  return (0, i.useMemo)(() => {
+    location: s
+  }), u = (0, i.e7)([l.ZP], () => null != n && null != t ? l.ZP.getMember(n, t.id) : null);
+  return (0, r.useMemo)(() => {
     var e;
     if (null == t) return;
-    let i = (0, s.Pb)(null == d || null == (e = d.collectibles) ? true : e.nameplate);
-    return null != n && c && null != i ? i : t.nameplate
-  }, [d, n, c, t])
+    let r = (0, o.Pb)(null == u || null == (e = u.collectibles) ? true : e.nameplate);
+    return null != n && c && null != r ? r : t.nameplate
+  }, [u, n, c, t])
 }

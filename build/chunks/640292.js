@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 640292, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 640292, original params: e,t,n (module,exports,require) **/
 module.exports = {
   voiceFiltersPopout: "voiceFiltersPopout_e2f668",
   wide: "wide_e2f668",

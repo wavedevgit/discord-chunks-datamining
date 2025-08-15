@@ -1,14 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 219797, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 219797, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L9: () => w,
-  ZK: () => P,
-  d4: () => R,
-  dS: () => S,
-  jY: () => C,
-  q7: () => N,
-  vZ: () => A
+  L9: () => P,
+  ZK: () => T,
+  d4: () => S,
+  dS: () => y,
+  jY: () => I,
+  q7: () => j,
+  vZ: () => x
 }), require("./953529.js"), require("./997841.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -29,15 +28,6 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk512399 = require("./512399.js");
 
-function O(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
@@ -45,35 +35,37 @@ function v(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function I(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function O(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e) {
+function y(e) {
   var t;
   let n = e.item.originalItem;
-  return (0, g.Yi)(T(v({}, e), {
+  return (0, h.Yi)(O(v({}, e), {
     alt: n.description,
-    src: (0, _.q)({
+    src: (0, m.q)({
       proxyURL: n.proxy_url,
       url: n.url
     }),
@@ -82,7 +74,7 @@ function S(e) {
     placeholderVersion: n.placeholder_version,
     contentType: n.content_type,
     originalContentType: n.original_content_type,
-    srcIsAnimated: (0, p.yE)(null != (t = n.flags) ? t : 0, E.J0y.IS_ANIMATED),
+    srcIsAnimated: (0, f.yE)(null != (t = n.flags) ? t : 0, b.J0y.IS_ANIMATED),
     sourceMetadata: {
       message: e.message,
       identifier: {
@@ -97,35 +89,35 @@ function S(e) {
   }))
 }
 
-function A(e) {
+function x(e) {
   var t;
   let n = e.item.originalItem,
-    o = i.useCallback(() => {
+    l = i.useCallback(() => {
       var e;
-      return (0, p.yE)(null != (e = n.flags) ? e : 0, E.J0y.IS_CLIP) ? (0, r.jsxs)(s.DY, {
-        text: b.intl.string(b.t["/fgfWl"]),
-        className: y.clipPill,
-        children: [(0, r.jsx)(l.AlX, {
+      return (0, f.yE)(null != (e = n.flags) ? e : 0, b.J0y.IS_CLIP) ? (0, r.jsxs)(o.DY, {
+        text: E.intl.string(E.t["/fgfWl"]),
+        className: C.clipPill,
+        children: [(0, r.jsx)(s.AlX, {
           size: "xs",
           color: "currentColor"
         }), (0, r.jsx)(a.x, {
           variant: "text-xs/semibold",
           color: "always-white",
-          children: b.intl.string(b.t.oA4afH)
+          children: E.intl.string(E.t.oA4afH)
         })]
       }) : null
     }, [n]),
-    c = h.Z.toURLSafe(n.proxy_url);
-  return null == c ? null : (c.searchParams.append("format", "webp"), (0, g.lV)(T(v({}, e), {
+    c = _.Z.toURLSafe(n.proxy_url);
+  return null == c ? null : (c.searchParams.append("format", "webp"), (0, h.lV)(O(v({}, e), {
     alt: n.description,
     poster: c.toString(),
     fileSize: n.size,
-    fileName: (0, m.Z)(n),
+    fileName: (0, g.Z)(n),
     src: n.url,
     placeholder: n.placeholder,
     placeholderVersion: n.placeholder_version,
-    srcIsAnimated: (0, p.yE)(null != (t = n.flags) ? t : 0, E.J0y.IS_ANIMATED),
-    renderOverlayContent: o,
+    srcIsAnimated: (0, f.yE)(null != (t = n.flags) ? t : 0, b.J0y.IS_ANIMATED),
+    renderOverlayContent: l,
     sourceMetadata: {
       message: e.message,
       identifier: {
@@ -138,92 +130,92 @@ function A(e) {
   })))
 }
 
-function N(e) {
+function j(e) {
   let t = e.item.originalItem;
-  return (0, g.hX)(T(v({}, e), {
+  return (0, h.hX)(O(v({}, e), {
     fileSize: t.size,
-    fileName: (0, m.Z)(t),
+    fileName: (0, g.Z)(t),
     src: t.url
   }))
 }
 
-function C(e) {
+function I(e) {
   let {
     message: t,
     item: n
-  } = e, r = n.originalItem, o = (0, u.RT)(u.Ir.VOICE_MESSAGE, r.id), a = i.useCallback((e, n, i) => {
-    var o;
-    (0, d.tb)(t.id, null != (o = r.duration_secs) ? o : null, n, t.author.id)
-  }, [t, r.duration_secs]), s = i.useCallback((e, n) => {
+  } = e, r = n.originalItem, l = (0, u.RT)(u.Ir.VOICE_MESSAGE, r.id), a = i.useCallback((e, n, i) => {
+    var l;
+    (0, d.tb)(t.id, null != (l = r.duration_secs) ? l : null, n, t.author.id)
+  }, [t, r.duration_secs]), o = i.useCallback((e, n) => {
     var i;
     (0, d.EW)(t.id, null != (i = r.duration_secs) ? i : null, e, t.author.id, n)
-  }, [t, r.duration_secs]), l = i.useCallback(e => {
+  }, [t, r.duration_secs]), s = i.useCallback(e => {
     var n;
     (0, d.Np)(t.id, null != (n = null == e ? true : e.message) ? n : null)
   }, [t]);
-  return (0, g.wj)(T(v({}, e), {
+  return (0, h.wj)(O(v({}, e), {
     fileSize: r.size,
-    fileName: (0, m.Z)(r),
+    fileName: (0, g.Z)(r),
     src: r.url,
     durationSecs: r.duration_secs,
     waveform: r.waveform,
     onPlay: a,
-    onPause: s,
-    onError: l,
-    playbackCacheKey: o
+    onPause: o,
+    onError: s,
+    playbackCacheKey: l
   }))
 }
 
-function R(e) {
+function S(e) {
   let t = e.item.originalItem;
-  return (0, g.xi)(T(v({}, e), {
+  return (0, h.xi)(O(v({}, e), {
     url: t.url,
-    fileName: (0, m.Z)(t),
+    fileName: (0, g.Z)(t),
     fileSize: t.size,
     contentType: t.content_type
   }))
 }
 
-function P(e) {
+function T(e) {
   let t = e.item.originalItem;
-  return (0, g.ur)(T(v({}, e), {
+  return (0, h.ur)(O(v({}, e), {
     url: t.url,
-    fileName: (0, m.Z)(t),
+    fileName: (0, g.Z)(t),
     fileSize: t.size
   }))
 }
 
-function w(e) {
-  return "CLIP" === e.item.type ? (0, r.jsx)(D, {
+function P(e) {
+  return "CLIP" === e.item.type ? (0, r.jsx)(N, {
     attachment: e.item.originalItem,
     message: e.message
   }) : null
 }
 
-function D(e) {
+function N(e) {
   var t;
   let {
     attachment: n,
     message: i
-  } = e, a = i.channel_id, s = (0, o.e7)([f.Z], () => {
+  } = e, a = i.channel_id, o = (0, l.e7)([p.Z], () => {
     var e;
-    return null == (e = f.Z.getBasicChannel(a)) ? true : e.guild_id
+    return null == (e = p.Z.getBasicChannel(a)) ? true : e.guild_id
   }), {
-    clip_created_at: l,
+    clip_created_at: s,
     clip_participants: u,
     title: d,
-    application: _
+    application: m
   } = n;
   return (0, r.jsx)(c.Z, {
-    createdAt: null != l ? Date.parse(l) : true,
+    createdAt: null != s ? Date.parse(s) : true,
     participantIds: null != (t = null == u ? true : u.map(e => {
       let {
         id: t
       } = e;
       return t
     })) ? t : [],
-    applicationId: null == _ ? true : _.id,
+    applicationId: null == m ? true : m.id,
     title: d,
-    guildId: s
+    guildId: o
   })
 }

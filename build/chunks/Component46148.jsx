@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 46148, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => E
@@ -49,14 +49,14 @@ let E = Chunk73800.memo(function(e) {
     x = (0, l.e7)([p.Z], () => p.Z.getLayers().includes(b.S9g.USER_SETTINGS)),
     {
       canAccessPicker: S,
-      entryPoint: P
+      entryPoint: I
     } = (0, h.m)({
       location: "ChatWallpaperDMListCoachmark",
       channelId: t
     }),
-    I = P === f.FN.CONTEXT_MENU,
-    [N, w] = (0, u.US)(E && I && n && S && !x ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []),
-    Z = (0, d.m)(_.p9.TIER_2),
+    P = I === f.FN.CONTEXT_MENU,
+    [N, w] = (0, u.US)(E && P && n && S && !x ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []),
+    Z = (0, d.m)(O.p9.TIER_2),
     T = (0, g.Z)(t),
     A = N === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK,
     R = (0, i.useRef)(null),
@@ -75,7 +75,7 @@ let E = Chunk73800.memo(function(e) {
       return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
     }, [A]), !A) return (0, r.jsx)(s.ZP, C({}, e));
   let U = () => {
-      w(O.L.USER_DISMISS)
+      w(_.L.USER_DISMISS)
     },
     G = ((e, t) => {
       let n = null != t && !t.isPreview;

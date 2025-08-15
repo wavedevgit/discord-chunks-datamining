@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 22665, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 22665, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
-  l = require.n(Chunk913527),
+  s = require.n(Chunk913527),
   Chunk481060 = require("./481060.js"),
   Chunk739566 = require("./739566.js"),
   Chunk318713 = require("./318713.jsx"),
@@ -22,44 +21,44 @@ var Chunk255367 = require("./255367.js"),
   Chunk424271 = require("./424271.js"),
   Chunk724913 = require("./724913.js"),
   Chunk328756 = require("./328756.js");
-let O = e => {
+let v = e => {
   let {
     reportingUserId: t,
     guildId: n,
-    compact: o,
-    channel: s,
-    messageId: O,
-    reportedTimestamp: v
-  } = e, I = p.default.getUser(t), T = i.useMemo(() => o ? (0, f.Z)((0, h.vc)(l()(), "LT")) : null, [o]), S = (0, _.l)({
-    user: I,
-    channelId: s.id,
+    compact: l,
+    channel: o,
+    messageId: v,
+    reportedTimestamp: O
+  } = e, y = f.default.getUser(t), x = i.useMemo(() => l ? (0, p.Z)((0, _.vc)(s()(), "LT")) : null, [l]), j = (0, m.l)({
+    user: y,
+    channelId: o.id,
     guildId: n,
-    messageId: O
-  })((0, u.JZ)(I, s)), A = null != I ? I.getAvatarURL(n, (0, c.pxk)(c.EFr.SIZE_16)) : y, N = null != I ? g.intl.format(m.default["+zqXZm"], {
-    username: I.username,
-    onUserClick: S
-  }) : g.intl.string(m.default.xpRjfX);
+    messageId: v
+  })((0, u.JZ)(y, o)), I = null != y ? y.getAvatarURL(n, (0, c.pxk)(c.EFr.SIZE_16)) : C, S = null != y ? h.intl.format(g.default["+zqXZm"], {
+    username: y.username,
+    onUserClick: j
+  }) : h.intl.string(g.default.xpRjfX);
   return (0, r.jsxs)("div", {
-    className: a()(b.messageSpine, b.repliedMessage, T),
+    className: a()(E.messageSpine, E.repliedMessage, x),
     children: [(0, r.jsx)(c.qEK, {
-      src: A,
+      src: I,
       size: c.EFr.SIZE_16,
-      className: E.avatar,
+      className: b.avatar,
       "aria-label": ""
     }), (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: E.username,
-      children: N
+      className: b.username,
+      children: S
     }), (0, r.jsxs)(c.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
       children: [(0, r.jsx)("span", {
-        className: E.timestampSeparator,
+        className: b.timestampSeparator,
         children: "•"
       }), (0, r.jsx)(d.Z, {
-        timestamp: v,
-        className: E.timestamp
+        timestamp: O,
+        className: b.timestamp
       })]
     })]
   })

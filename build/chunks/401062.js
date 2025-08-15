@@ -32,7 +32,7 @@ function h(e) {
 function m(e, t, n) {
   var r;
   let {
-    abortController: a,
+    abortController: o,
     onRequestProgress: c
   } = h(e), p = null != (r = u.Z.getState().animationType) ? r : f.q.BASIC, m = {
     animation_type: p,
@@ -41,17 +41,17 @@ function m(e, t, n) {
   i.tn.post({
     url: _.ANM.CUSTOM_CALL_SOUNDS(e),
     body: m,
-    signal: a.signal,
+    signal: o.signal,
     onRequestProgress: c,
     rejectWithError: true
   }).then(_.VqG, () => {
-    if (a.signal.aborted) return
-  }), (0, l.Z)([o.Z.CHANNEL_CALL], n, t, s.jy.ENTRY)
+    if (o.signal.aborted) return
+  }), (0, l.Z)([a.Z.CHANNEL_CALL], n, t, s.jy.ENTRY)
 }
 
 function g(e, t, n, r) {
-  var o, c;
-  let u = a.ZP.getCustomEmojiById(null != (o = t.emojiId) ? o : ""),
+  var a, c;
+  let u = o.ZP.getCustomEmojiById(null != (a = t.emojiId) ? a : ""),
     {
       abortController: d,
       onRequestProgress: f

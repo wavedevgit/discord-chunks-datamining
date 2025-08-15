@@ -28,7 +28,7 @@ class c extends Chunk77450.h {
       return Math.ceil(e / 1024)
     }(null == (t = performance.memory) ? true : exports.usedJSHeapSize) == null && l.error("usedJSHeapSize is not available."), setInterval(() => {
       var e, t, r;
-      let o = null != (t = null == (e = performance.memory) ? true : module.usedJSHeapSize) ? exports : 0;
+      let a = null != (t = null == (e = performance.memory) ? true : module.usedJSHeapSize) ? exports : 0;
       require({
         memoryUsageKB: null != (r = this.lastMemoryUsageKB) ? Chunk579806 : 0,
         usedJSHeapSizeKB: Chunk710845(Chunk77450)

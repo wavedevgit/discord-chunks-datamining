@@ -31,7 +31,7 @@ function c(e) {
   if ((null == i ? true : i.body) != null && (null == (t = i.shouldShow) ? true : t.call(i, e)) !== false) {
     let t = i.body;
     return (0, r.jsx)("section", {
-      className: a.section,
+      className: o.section,
       children: (0, r.jsx)(t, {
         activity: e
       })

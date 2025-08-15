@@ -56,8 +56,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function h(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let g = {
@@ -80,27 +80,27 @@ let g = {
         showPreview: t,
         showInput: n
       } = e, i = h(e, ["showPreview", "showInput"]);
-      return (0, r.jsxs)(a.Kqy, {
+      return (0, r.jsxs)(o.Kqy, {
         gap: 16,
         align: "center",
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-md/normal",
           children: "Click the button below to open the modal"
-        }), (0, r.jsx)(a.zxk, {
+        }), (0, r.jsx)(o.zxk, {
           variant: "primary",
           text: "Open Modal",
-          onClick: () => (0, a.h7j)(e => (0, r.jsx)(l.Modal, p(f({}, i, e), {
-            input: n ? (0, r.jsx)(a.E1j, {
+          onClick: () => (0, o.h7j)(e => (0, r.jsx)(l.Modal, p(f({}, i, e), {
+            input: n ? (0, r.jsx)(o.E1j, {
               placeholder: "Search...",
               onChange: () => {},
               query: ""
             }) : true,
-            preview: t ? (0, r.jsxs)(a.Kqy, {
+            preview: t ? (0, r.jsxs)(o.Kqy, {
               gap: 8,
-              children: [(0, r.jsx)(a.Text, {
+              children: [(0, r.jsx)(o.Text, {
                 variant: "text-lg/semibold",
                 children: "Preview Content"
-              }), (0, r.jsx)(a.Text, {
+              }), (0, r.jsx)(o.Text, {
                 variant: "text-md/normal",
                 color: "text-secondary",
                 children: "This is preview content that appears in the modal footer."
@@ -115,14 +115,14 @@ let g = {
               text: "Submit",
               onClick: e.onClose
             }],
-            children: (0, r.jsxs)(a.Kqy, {
+            children: (0, r.jsxs)(o.Kqy, {
               gap: 16,
-              children: [(0, r.jsx)(a.xJW, {
+              children: [(0, r.jsx)(o.xJW, {
                 title: "Example Input",
-                children: (0, r.jsx)(a.oil, {
+                children: (0, r.jsx)(o.oil, {
                   placeholder: "Enter some text..."
                 })
-              }), (0, r.jsx)(a.Text, {
+              }), (0, r.jsx)(o.Text, {
                 variant: "text-md/normal",
                 children: "This is the main content area of the modal. You can place any content here."
               })]
@@ -182,7 +182,7 @@ let g = {
         aspectRatio: "6/4"
       } : 2 === t ? {
         type: "rive",
-        rive: o.PerfTestRive
+        rive: a.PerfTestRive
       } : 3 === t ? {
         type: "video",
         src: u.Z,
@@ -191,21 +191,21 @@ let g = {
         loopAt: 2.5
       } : 4 === t ? {
         type: "dynamic",
-        component: a.AX$.DEMO,
+        component: o.AX$.DEMO,
         props: {
           text: "Dynamic Content"
         }
       } : true, [t]);
-      return (0, r.jsxs)(a.Kqy, {
+      return (0, r.jsxs)(o.Kqy, {
         gap: 16,
         align: "center",
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-md/normal",
           children: "Click the button below to open the expressive modal"
-        }), (0, r.jsx)(a.zxk, {
+        }), (0, r.jsx)(o.zxk, {
           variant: "primary",
           text: "Open ExpressiveModal",
-          onClick: () => (0, a.h7j)(e => (0, r.jsx)(s.I, p(f({}, l, e), {
+          onClick: () => (0, o.h7j)(e => (0, r.jsx)(s.I, p(f({}, l, e), {
             graphic: d,
             actions: [{
               variant: "secondary",
@@ -216,9 +216,9 @@ let g = {
               text: "Submit",
               onClick: e.onClose
             }],
-            children: (0, r.jsx)(a.Kqy, {
+            children: (0, r.jsx)(o.Kqy, {
               gap: 16,
-              children: (0, r.jsx)(a.Text, {
+              children: (0, r.jsx)(o.Text, {
                 variant: "text-md/normal",
                 children: "This is an expressive modal with a gradient background and optional badge."
               })

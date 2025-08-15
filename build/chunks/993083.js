@@ -1,5 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 993083, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 993083, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk621796 = require("./621796.js"),
   Chunk172367 = require("./172367.js"),
@@ -18,53 +18,22 @@ var Chunk621796 = require("./621796.js"),
   Chunk561099 = require("./561099.js"),
   Chunk655000 = require("./655000.js"),
   Chunk920267 = require("./920267.js"),
-  y = Chunk147521.isOptionKeyCommand,
-  O = Chunk169774.isBrowser("Chrome");
+  b = Chunk147521.isOptionKeyCommand,
+  S = Chunk169774.isBrowser("Chrome");
+module.exports = function(t, e) {
+  var r = e.which,
+    o = t._latestEditorState;
 
-function v(e, t, n) {
-  switch (e) {
-    case "redo":
-      return i.redo(t);
-    case "delete":
-      return g(t);
-    case "delete-word":
-      return f(t);
-    case "backspace":
-      return m(t);
-    case "backspace-word":
-      return d(t);
-    case "backspace-to-start-of-line":
-      return u(t, n);
-    case "split-block":
-      return _(t);
-    case "transpose-characters":
-      return E(t);
-    case "move-selection-to-start-of-block":
-      return h(t);
-    case "move-selection-to-end-of-block":
-      return p(t);
-    case "secondary-cut":
-      return s.cut(t);
-    case "secondary-paste":
-      return s.paste(t);
-    default:
-      return t
+  function s(r) {
+    var n = t.props[r];
+    return !!n && (n(e), true)
   }
-}
-module.exports = function(e, t) {
-  var n = t.which,
-    o = e._latestEditorState;
-
-  function s(n) {
-    var r = e.props[n];
-    return !!r && (r(t), true)
-  }
-  switch (n) {
+  switch (r) {
     case a.RETURN:
-      if (t.preventDefault(), e.props.handleReturn && c(e.props.handleReturn(t, o))) return;
+      if (e.preventDefault(), t.props.handleReturn && c(t.props.handleReturn(e, o))) return;
       break;
     case a.ESC:
-      if (t.preventDefault(), s("onEscape")) return;
+      if (e.preventDefault(), s("onEscape")) return;
       break;
     case a.TAB:
       if (s("onTab")) return;
@@ -82,19 +51,48 @@ module.exports = function(e, t) {
       if (s("onLeftArrow")) return;
       break;
     case a.SPACE:
-      O && y(t) && t.preventDefault()
+      S && b(e) && e.preventDefault()
   }
-  var l = e.props.keyBindingFn(t);
-  if (null == l || "" === l) {
-    if (n === a.SPACE && O && y(t)) {
-      var u = r.replaceText(o.getCurrentContent(), o.getSelection(), "\xa0");
-      e.update(i.push(o, u, "insert-characters"))
+  var w = t.props.keyBindingFn(e);
+  if (null == w || "" === w) {
+    if (r === a.SPACE && S && b(e)) {
+      var x = n.replaceText(o.getCurrentContent(), o.getSelection(), "\xa0");
+      t.update(i.push(o, x, "insert-characters"))
     }
     return
   }
-  if ("undo" === l) return void b(t, o, e.update);
-  if (t.preventDefault(), !(e.props.handleKeyCommand && c(e.props.handleKeyCommand(l, o, t.timeStamp)))) {
-    var d = v(l, o, t);
-    d !== o && e.update(d)
+  if ("undo" === w) return void _(e, o, t.update);
+  if (e.preventDefault(), !(t.props.handleKeyCommand && c(t.props.handleKeyCommand(w, o, e.timeStamp)))) {
+    var k = function(t, e, r) {
+      switch (t) {
+        case "redo":
+          return i.redo(e);
+        case "delete":
+          return v(e);
+        case "delete-word":
+          return p(e);
+        case "backspace":
+          return y(e);
+        case "backspace-word":
+          return f(e);
+        case "backspace-to-start-of-line":
+          return l(e, r);
+        case "split-block":
+          return h(e);
+        case "transpose-characters":
+          return m(e);
+        case "move-selection-to-start-of-block":
+          return g(e);
+        case "move-selection-to-end-of-block":
+          return d(e);
+        case "secondary-cut":
+          return u.cut(e);
+        case "secondary-paste":
+          return u.paste(e);
+        default:
+          return e
+      }
+    }(w, o, e);
+    k !== o && t.update(k)
   }
 }

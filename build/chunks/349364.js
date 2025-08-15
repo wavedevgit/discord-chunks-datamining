@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 349364, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 349364, original params: e,t,n (module,exports,require) **/
 module.exports = {
   root: "root_bfe55a",
   idle: "idle_bfe55a",

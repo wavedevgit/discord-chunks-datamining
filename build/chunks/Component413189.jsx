@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 413189, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 413189, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => x
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -26,75 +25,75 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk664677 = require("./664677.js");
 
-function T(e) {
-  var t, n, T, S;
-  let A, N, C, {
-      message: R,
-      channel: P,
-      compact: w
+function x(e) {
+  var t, n, x, j;
+  let I, S, T, {
+      message: P,
+      channel: N,
+      compact: A
     } = e,
-    D = null == (t = R.chatWallpaperInfo) ? true : t.wallpaperId,
+    w = null == (t = P.chatWallpaperInfo) ? true : t.wallpaperId,
     {
-      enabled: L
-    } = (0, p.sX)({
+      enabled: Z
+    } = (0, f.sX)({
       location: "ChatWallpaperSetSystemMessage"
     }),
-    x = p.qM.useExperiment({
+    R = f.qM.useExperiment({
       location: "ChatWallpaperSetSystemMessage"
     }).lightMode,
-    M = (0, c.ZP)(R),
-    j = (0, s.wjy)((0, l.ZP)()),
+    L = (0, c.ZP)(P),
+    D = (0, o.wjy)((0, s.ZP)()),
     {
-      chatWallpaper: k,
-      isUpdatingChatWallpaperFlag: U,
-      lastSetMessageId: G
-    } = (0, o.cj)([h.Z], () => ({
-      chatWallpaper: h.Z.getWallpaperById(D),
-      isUpdatingChatWallpaperFlag: h.Z.isUpdatingChatWallpaperFlagForChannel(P.id),
-      lastSetMessageId: h.Z.getLastSetWallpaperMessageIdForChannel(P.id)
+      chatWallpaper: M,
+      isUpdatingChatWallpaperFlag: k,
+      lastSetMessageId: U
+    } = (0, l.cj)([_.Z], () => ({
+      chatWallpaper: _.Z.getWallpaperById(w),
+      isUpdatingChatWallpaperFlag: _.Z.isUpdatingChatWallpaperFlagForChannel(N.id),
+      lastSetMessageId: _.Z.getLastSetWallpaperMessageIdForChannel(N.id)
     })),
-    B = (0, E.Z)(P.id),
-    Z = G === R.id,
-    F = (0, o.e7)([f.default], () => f.default.getCurrentUser()),
-    V = (null == F ? true : F.id) === R.author.id,
-    H = (0, u.m)(O.p9.TIER_2),
-    Y = m.t(P);
+    F = (0, b.Z)(N.id),
+    B = U === P.id,
+    G = (0, l.e7)([p.default], () => p.default.getCurrentUser()),
+    H = (null == G ? true : G.id) === P.author.id,
+    V = (0, u.m)(v.p9.TIER_2),
+    z = g.t(N);
   return (i.useEffect(() => {
-    null == k && h.Z.shouldFetchWallpapers && g.k9()
-  }, [k]), null == D) ? null : (A = V ? v.intl.format(v.t.z847Tk, {
-    wallpaper_name: null != (n = null == k ? true : k.label) ? n : v.intl.string(v.t["UQMV/P"])
-  }) : v.intl.format(v.t["+lKndX"], {
-    username: null == M ? true : M.nick,
-    wallpaper_name: null != (T = null == k ? true : k.label) ? T : v.intl.string(v.t["UQMV/P"])
-  }), L ? j || x ? Y && Z ? N = v.intl.formatToPlainString(v.t.PzTpVV, {
-    wallpaperName: null != (S = null == k ? true : k.label) ? S : v.intl.string(v.t["UQMV/P"])
-  }) : V || H || !Z || (N = v.intl.format(v.t.JwUhHh, {
+    null == M && _.Z.shouldFetchWallpapers && h.k9()
+  }, [M]), null == w) ? null : (I = H ? O.intl.format(O.t.z847Tk, {
+    wallpaper_name: null != (n = null == M ? true : M.label) ? n : O.intl.string(O.t["UQMV/P"])
+  }) : O.intl.format(O.t["+lKndX"], {
+    username: null == L ? true : L.nick,
+    wallpaper_name: null != (x = null == M ? true : M.label) ? x : O.intl.string(O.t["UQMV/P"])
+  }), Z ? D || R ? z && B ? S = O.intl.formatToPlainString(O.t.PzTpVV, {
+    wallpaperName: null != (j = null == M ? true : M.label) ? j : O.intl.string(O.t["UQMV/P"])
+  }) : H || V || !B || (S = O.intl.format(O.t.JwUhHh, {
     onClickNitro: () => {
-      (0, d.uL)(y.Z5c.NITRO_HOME)
+      (0, d.uL)(C.Z5c.NITRO_HOME)
     }
-  })) : N = v.intl.format(v.t.dBxFsL, {
-    learnMoreLink: _.Z.getArticleURL(y.BhN.DM_WALLPAPERS)
-  }) : N = v.intl.string(v.t["6JSOu7"]), (null == B ? true : B.isViewable) && Z && !V && (C = (0, r.jsx)("div", {
-    className: I.action,
+  })) : S = O.intl.format(O.t.dBxFsL, {
+    learnMoreLink: m.Z.getArticleURL(C.BhN.DM_WALLPAPERS)
+  }) : S = O.intl.string(O.t["6JSOu7"]), (null == F ? true : F.isViewable) && B && !H && (T = (0, r.jsx)("div", {
+    className: y.action,
     children: (0, r.jsx)(a.z, {
       variant: "primary",
-      text: v.intl.string(Y ? v.t.o6850d : v.t["/ubFp6"]),
-      loading: U,
+      text: O.intl.string(z ? O.t.o6850d : O.t["/ubFp6"]),
+      loading: k,
       onClick: () => {
-        g.X(P, D, {
-          shouldClear: !Y,
+        h.X(N, w, {
+          shouldClear: !z,
           onError: () => {
-            (0, s.showToast)((0, s.createToast)(v.intl.string(v.t.F8FvU1), s.ToastType.FAILURE))
+            (0, o.showToast)((0, o.createToast)(O.intl.string(O.t.F8FvU1), o.ToastType.FAILURE))
           }
         })
       }
     })
-  })), (0, r.jsx)(b.Z, {
-    channel: P,
-    content: A,
-    subtitle: N,
-    action: C,
-    compact: w,
-    message: R
+  })), (0, r.jsx)(E.Z, {
+    channel: N,
+    content: I,
+    subtitle: S,
+    action: T,
+    compact: A,
+    message: P
   }))
 }

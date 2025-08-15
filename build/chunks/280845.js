@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 280845, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37220 **/
+/** chunk id: 280845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => _,
-  o: () => p
+  U: () => g,
+  o: () => b
 }), require("./388685.js");
 var Chunk275726 = require("./275726.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,30 +14,29 @@ var Chunk275726 = require("./275726.js"),
   Chunk231338 = require("./231338.js");
 
 function d(e, t, n) {
-  let i;
-  return (i = e.isPrivate() ? !e.isSystemDM() : n.can(u.Pl.SEND_MESSAGES, e) && n.can(u.Pl.READ_MESSAGE_HISTORY, e)) && r.V.REPLYABLE.has(t.type)
+  return (e.isPrivate() ? !e.isSystemDM() : n.can(u.Pl.SEND_MESSAGES, e) && n.can(u.Pl.READ_MESSAGE_HISTORY, e)) && r.V.REPLYABLE.has(t.type)
 }
 
 function f(e, t, n, r, i) {
-  let o = t.hasFlag(c.iLy.EPHEMERAL),
+  let l = t.hasFlag(c.iLy.EPHEMERAL),
     a = t.state === c.yb.SENT,
-    s = !e.isArchivedThread() || i;
-  return n && a && !o && !r && s
+    o = !e.isArchivedThread() || i;
+  return n && a && !l && !r && o
 }
 
-function _(e, t) {
+function g(e, t) {
   var n;
   let r = (0, a.tc)(e),
-    [, l] = (0, o.AB)(null != (n = null == e ? true : e.getGuildId()) ? n : true),
-    c = (0, i.e7)([s.Z], () => null != e && null != t && d(e, t, s.Z));
-  return null != e && null != t && f(e, t, c, l, r)
+    [, s] = (0, l.AB)(null != (n = null == e ? true : e.getGuildId()) ? n : true),
+    c = (0, i.e7)([o.Z], () => null != e && null != t && d(e, t, o.Z));
+  return null != e && null != t && f(e, t, c, s, r)
 }
 
-function p(e, t) {
+function b(e, t) {
   var n;
   let r = (0, a.kn)(e),
-    i = d(e, t, s.Z),
-    c = l.default.getCurrentUser(),
-    [, u] = (0, o.s5)(null == c ? true : c.id, null != (n = e.getGuildId()) ? n : true);
+    i = d(e, t, o.Z),
+    c = s.default.getCurrentUser(),
+    [, u] = (0, l.s5)(null == c ? true : c.id, null != (n = e.getGuildId()) ? n : true);
   return f(e, t, i, u, r)
 }

@@ -1,8 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 397589, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 31978 **/
+/** chunk id: 397589, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => O
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -20,95 +20,85 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk975405 = require("./975405.js");
-
-function b(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function y(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      b(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function O(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let I = e => {
+let O = e => {
   var t;
   let {
     message: n
-  } = e, b = i.useRef(null), O = (0, f.p7)("Message Header") && n.hasPotions(), I = s.Z.getChannel(n.getChannelId()), T = null == (t = n.potions) ? true : t[0], S = i.useMemo(() => {
+  } = e, O = l.useRef(null), v = (0, p.p7)("Message Header") && n.hasPotions(), j = a.Z.getChannel(n.getChannelId()), P = null == (t = n.potions) ? true : t[0], x = l.useMemo(() => {
     var e;
-    if (null == T) return null;
-    let t = l.default.getUser(T.used_by);
-    return null != (e = (0, u.y)(null == I ? true : I.getGuildId(), null == I ? true : I.id, t)) ? e : null == t ? true : t.globalName
-  }, [T, I]), A = i.useCallback(() => {
-    if (null != b.current && (0, h.Uw)(n)) {
+    if (null == P) return null;
+    let t = s.default.getUser(P.used_by);
+    return null != (e = (0, u.y)(null == j ? true : j.getGuildId(), null == j ? true : j.id, t)) ? e : null == t ? true : t.globalName
+  }, [P, j]), w = l.useCallback(() => {
+    if (null != O.current && (0, f.Uw)(n)) {
       let {
         x: e,
         y: t,
         width: r,
-        height: i
-      } = b.current.getBoundingClientRect();
-      (0, _.Z)(n, {
+        height: l
+      } = O.current.getBoundingClientRect();
+      (0, m.Z)(n, {
         x: e,
         y: t,
         w: r,
-        h: i
+        h: l
       }, true, d.LL.UserTriggered)
     }
-  }, [n]), N = i.useCallback(() => {
-    (0, a.Z)(c.Z.getArticleURL(m.BhN.CONFETTI_POTION))
+  }, [n]), C = l.useCallback(() => {
+    (0, i.Z)(c.Z.getArticleURL(b.BhN.CONFETTI_POTION))
   }, []);
-  return O && null != S && (null == T ? true : T.type) === p.B.CONFETTI ? (0, r.jsx)(o.P3F, {
-    onFocus: A,
-    onClick: N,
-    "aria-label": g.intl.string(g.t.Mp5k6O),
+  return v && null != x && (null == P ? true : P.type) === g.B.CONFETTI ? (0, r.jsx)(o.P3F, {
+    onFocus: w,
+    onClick: C,
+    "aria-label": h.intl.string(h.t.Mp5k6O),
     children: (0, r.jsx)(o.ua7, {
-      text: g.intl.formatToPlainString(g.t["FE++aG"], {
-        user: S
+      text: h.intl.formatToPlainString(h.t["FE++aG"], {
+        user: x
       }),
-      children: e => (0, r.jsxs)("div", v(y({
-        ref: b,
-        className: E.potionBadge
-      }, e), {
-        children: [(0, r.jsx)(o.l22, {
-          size: "custom",
-          color: "currentColor",
-          width: 12,
-          height: 12
-        }), (0, r.jsx)(o.Text, {
-          variant: "text-xs/bold",
-          color: "currentColor",
-          children: g.intl.string(g.t["8Rrro6"])
-        })]
-      }))
+      children: e => {
+        var t, n;
+        return (0, r.jsxs)("div", (t = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({
+          ref: O,
+          className: y.potionBadge
+        }, e), n = n = {
+          children: [(0, r.jsx)(o.l22, {
+            size: "custom",
+            color: "currentColor",
+            width: 12,
+            height: 12
+          }), (0, r.jsx)(o.Text, {
+            variant: "text-xs/bold",
+            color: "currentColor",
+            children: h.intl.string(h.t["8Rrro6"])
+          })]
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(n)).forEach(function(e) {
+          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+        }), t))
+      }
     })
   }) : null
 }

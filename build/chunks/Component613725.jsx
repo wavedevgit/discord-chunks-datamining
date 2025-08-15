@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 613725, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 613725, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -18,7 +17,7 @@ var Chunk94171 = require("./94171.js"),
   Chunk768581 = require("./768581.js"),
   Chunk870515 = require("./870515.js");
 
-function h() {
+function m() {
   let {
     guildId: e,
     channelId: t
@@ -31,27 +30,27 @@ function h() {
       guildId: t,
       channelId: n
     }
-  }, Chunk94171.X), n = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(module)), h = (0, Chunk442837.e7)([Chunk592125.Z], () => null == require ? Chunk592125.Z.getChannel(exports) : null), m = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), g = null != h ? (0, Chunk43267.x)(h) : null, E = null != m ? m.getAvatarURL(module, 80) : Chunk768581.pK["0"], b = (0, Chunk255367.jsx)(Chunk481060.qEK, {
-    src: E,
+  }, Chunk94171.X), n = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(module)), m = (0, Chunk442837.e7)([Chunk592125.Z], () => null == require ? Chunk592125.Z.getChannel(exports) : null), g = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), b = null != m ? (0, Chunk43267.x)(m) : null, y = null != g ? g.getAvatarURL(module, 80) : Chunk768581.pK["0"], _ = (0, Chunk255367.jsx)(Chunk481060.qEK, {
+    src: y,
     "aria-hidden": true,
     size: Chunk481060.EFr.SIZE_80,
     className: Chunk870515.avatarSizeOverride
-  }), y = null;
-  return y = null != require ? (0, Chunk255367.jsx)(Chunk565138.Z, {
+  }), C = null;
+  return C = null != require ? (0, Chunk255367.jsx)(Chunk565138.Z, {
     guild: require
-  }) : null != g ? (0, Chunk255367.jsx)(Chunk481060.qEK, {
+  }) : null != b ? (0, Chunk255367.jsx)(Chunk481060.qEK, {
     "aria-hidden": true,
-    src: g,
+    src: b,
     size: Chunk481060.EFr.SIZE_80,
     className: Chunk870515.avatarSizeOverride
-  }) : b, (0, Chunk255367.jsxs)("div", {
+  }) : _, (0, Chunk255367.jsxs)("div", {
     className: Chunk870515.container,
     children: [(0, Chunk255367.jsx)("div", {
       className: Chunk870515.personAvatar,
-      children: b
+      children: _
     }), (0, Chunk255367.jsx)("div", {
       className: Chunk870515.guildAvatar,
-      children: y
+      children: C
     }), (0, Chunk255367.jsx)("svg", {
       className: Chunk870515.illustration,
       xmlns: "http://www.w3.org/2000/svg",

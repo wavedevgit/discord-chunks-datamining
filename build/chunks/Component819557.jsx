@@ -1,24 +1,23 @@
-/** Chunk was on web.js **/
-/** chunk id: 819557, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93886 **/
+/** chunk id: 819557, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   q: () => c,
-  z: () => l
+  z: () => o
 }), require("./953529.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk262441 = require("./262441.js");
 
-function l(e) {
+function o(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsx)("div", {
+  return (0, n.jsx)("div", {
     className: s.cellGroup,
-    children: (0, r.jsx)("div", {
+    children: (0, n.jsx)("div", {
       className: s.content,
       children: t
     })
@@ -28,36 +27,54 @@ function l(e) {
 function c(e) {
   let {
     icon: t,
-    title: n,
-    description: i,
-    iconClassName: l,
+    title: a,
+    description: r,
+    iconClassName: o,
     color: c,
-    listType: u = "icon",
-    index: d
+    listType: d = "icon",
+    completed: u = false,
+    index: m
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, n.jsxs)("div", {
     className: s.cell,
-    children: ["numbered" === u && null != d ? (0, r.jsx)(a.X6q, {
-      variant: "heading-md/semibold",
-      color: "text-brand",
-      className: s.number,
-      children: d + 1
-    }) : null != t && (0, r.jsx)("div", {
-      className: s.iconContainer,
-      children: (0, r.jsx)(t, {
-        color: null != c ? c : "currentColor",
-        className: o()(s.icon, l)
+    children: [(() => {
+      if ("numbered" === d && null != m)
+        if (u) return (0, n.jsx)("div", {
+          className: s.number,
+          children: (0, n.jsx)(i.sV5, {
+            color: "green",
+            className: l()(s.icon, o)
+          })
+        });
+        else return (0, n.jsx)(i.X6q, {
+          variant: "heading-md/semibold",
+          color: "text-brand",
+          className: s.number,
+          children: m + 1
+        });
+      if (null != t) return (0, n.jsx)("div", {
+        className: s.iconContainer,
+        children: (0, n.jsx)(t, {
+          color: null != c ? c : "currentColor",
+          className: l()(s.icon, o)
+        })
       })
-    }), (0, r.jsxs)("div", {
+    })(), (0, n.jsxs)("div", {
       className: s.textContainer,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, n.jsx)(i.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: n
-      }), null != i && (0, r.jsx)(a.Text, {
+        className: l()({
+          [s.completedText]: u
+        }),
+        children: a
+      }), null != r && (0, n.jsx)(i.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: i
+        className: l()({
+          [s.completedText]: u
+        }),
+        children: r
       })]
     })]
   })

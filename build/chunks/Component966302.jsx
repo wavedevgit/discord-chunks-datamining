@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk717976 = require("./717976.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -102,25 +102,25 @@ let ee = {
   er = 267,
   ei = 128;
 
-function eo(e) {
+function ea(e) {
   let {
     header: t
-  } = e, n = L.Z.getCameraComponent(), o = (0, l.e7)([L.Z], () => L.Z.getVideoDeviceId()), a = (0, I.Z)();
+  } = e, n = L.Z.getCameraComponent(), a = (0, l.e7)([L.Z], () => L.Z.getVideoDeviceId()), o = (0, I.Z)();
   return i.useEffect(() => {
     let e = x.default.getCurrentUser();
-    if (a && null != e) {
+    if (o && null != e) {
       let t = (0, O.P)(e);
-      (0, v.FU)(t, o, {
+      (0, v.FU)(t, a, {
         track: false
       }).catch(H.dG4)
     }
-  }, [a, o]), (0, r.jsxs)("div", {
+  }, [o, a]), (0, r.jsxs)("div", {
     className: z.previewRoot,
     children: [(0, r.jsx)(c.$jN, {}), (0, r.jsx)("div", {
       className: z.preview,
       children: (0, r.jsx)(n, {
         disabled: false,
-        deviceId: o,
+        deviceId: a,
         width: en,
         height: er
       })
@@ -131,25 +131,25 @@ function eo(e) {
   })
 }
 
-function ea(e) {
+function eo(e) {
   let {
     canVideo: t,
     channel: n,
-    numVideoDevices: o
+    numVideoDevices: a
   } = e, {
     parentAnalyticsLocation: s
   } = (0, m.ZP)(), {
     cameraUnavailable: l,
     enabled: d
-  } = (0, T.Z)(), _ = (0, S.Z)(n), p = i.useRef(null), g = o > 1;
+  } = (0, T.Z)(), _ = (0, S.Z)(n), p = i.useRef(null), g = a > 1;
   return (0, r.jsxs)("div", {
-    className: a()(z.wrapper, z.actions),
+    className: o()(z.wrapper, z.actions),
     children: [(0, r.jsx)(N.Z, {
       iconComponent: c.Dio,
       label: W.intl.string(W.t.WAI6xs),
       className: z.actionButton,
       onClick: () => {
-        (0, Z.v)(s, Z.d.DISCONNECT), j.default.track(H.rMx.RING_CALL_DECLINED, Q({
+        (0, V.v)(s, V.d.DISCONNECT), k.default.track(H.rMx.RING_CALL_DECLINED, Q({
           location: s,
           guild_id: n.guild_id
         }, (0, h.v_)(n))), u.Z.stopRinging(n.id)
@@ -163,7 +163,7 @@ function ea(e) {
         return (0, r.jsx)(B.Z, {
           onClose: t,
           onInteraction: (0, F.u)("VideoDeviceMenu", s, {
-            entrypoint: V.A5.CARET
+            entrypoint: Z.A5.CARET
           })
         })
       },
@@ -174,13 +174,13 @@ function ea(e) {
         let {
           onClick: i
         } = e, {
-          isShown: o
+          isShown: a
         } = t;
         return (0, r.jsx)(R.C, {
           buttonRef: p,
           join: true,
           enabled: d,
-          className: a()(z.actionButton, {
+          className: o()(z.actionButton, {
             [z.fullRegionDropdownButtonOverride]: g
           }),
           color: "green",
@@ -189,11 +189,11 @@ function ea(e) {
           cameraUnavailable: l,
           channel: n,
           onPopoutClick: g ? i : null,
-          popoutOpen: o,
+          popoutOpen: a,
           onCameraUnavailable: A.Z,
           onChange: () => {
             var e;
-            (0, Z.v)(s, Z.d.JOIN_VIDEO_CALL), j.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
+            (0, V.v)(s, V.d.JOIN_VIDEO_CALL), k.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
               location: s,
               guild_id: n.guild_id
             }, (0, h.v_)(n))), f.default.selectVoiceChannel(n.id, true), (0, y.XU)(null != (e = n.guild_id) ? e : H.ME, n.id)
@@ -204,7 +204,7 @@ function ea(e) {
       channel: n,
       color: "join",
       centerButton: true,
-      onCallJoined: () => j.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
+      onCallJoined: () => k.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
         location: s,
         guild_id: n.guild_id
       }, (0, h.v_)(n))),
@@ -217,18 +217,18 @@ function es(e) {
   var t;
   let {
     animatedStyle: n,
-    y: o,
+    y: a,
     x: f,
     channel: h
   } = e, {
     analyticsLocations: y
-  } = (0, m.ZP)(p.Z.INCOMING_CALL_MODAL), [O, v] = i.useState(false), I = (0, l.e7)([D.Z], () => D.Z.getGuild(h.guild_id)), T = null != I ? k.ZP.getGuildIconURL({
+  } = (0, m.ZP)(p.Z.INCOMING_CALL_MODAL), [O, v] = i.useState(false), I = (0, l.e7)([D.Z], () => D.Z.getGuild(h.guild_id)), T = null != I ? j.ZP.getGuildIconURL({
     id: I.id,
     icon: I.icon,
     size: ei
-  }) : null, S = null != (t = (0, g.x)(h, ei, true)) ? t : T, A = (0, E.ZP)(h), [N, C] = (0, l.Wu)([L.Z], () => [L.Z.supports(Y.AN.VIDEO), Object.keys(L.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, x = (0, l.e7)([M.Z], () => M.Z.isFocused()), j = (0, l.e7)([U.Z], () => U.Z.getMode(h.id)), B = i.useCallback(e => {
+  }) : null, S = null != (t = (0, g.x)(h, ei, true)) ? t : T, A = (0, E.ZP)(h), [N, C] = (0, l.Wu)([L.Z], () => [L.Z.supports(Y.AN.VIDEO), Object.keys(L.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, x = (0, l.e7)([M.Z], () => M.Z.isFocused()), k = (0, l.e7)([U.Z], () => U.Z.getMode(h.id)), B = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
-  }, []), Z = (0, c.q_F)({
+  }, []), V = (0, c.q_F)({
     value: +!!O,
     config: $(Q({}, s.config.stiff), {
       clamp: true
@@ -240,24 +240,24 @@ function es(e) {
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [h]);
-  let F = j === H.WtW.VIDEO && N && C > 0,
+  let F = k === H.WtW.VIDEO && N && C > 0,
     {
-      enabled: V
+      enabled: Z
     } = P.Z.useExperiment({
       guildId: null == h ? true : h.guild_id,
       location: "IncomingCallModal"
     }),
-    X = j === H.WtW.VOICE || V && h.type === H.d4z.GUILD_VOICE ? W.intl.string(W.t.Js8cKy) : W.intl.string(W.t.KcnWCA),
+    X = k === H.WtW.VOICE || Z && h.type === H.d4z.GUILD_VOICE ? W.intl.string(W.t.Js8cKy) : W.intl.string(W.t.KcnWCA),
     J = (0, r.jsxs)(r.Fragment, {
       children: [null != I && null == T ? (0, r.jsx)("div", {
-        className: a()(z.icon, K.wrapper, K.ringingIncoming),
+        className: o()(z.icon, K.wrapper, K.ringingIncoming),
         children: (0, r.jsx)(b.ZP, {
           className: z.mask,
           mask: b.QS.AVATAR_DEFAULT,
           width: O ? 40 : 80,
           height: O ? 40 : 80,
           children: (0, r.jsx)("div", {
-            className: a()(z.guildIcon, z.guildIconWithoutImage),
+            className: o()(z.guildIcon, z.guildIconWithoutImage),
             children: (0, r.jsx)("div", {
               className: z.guildAcronym,
               children: (0, w.gM)(I)
@@ -294,7 +294,7 @@ function es(e) {
       selector: ".".concat(z.root),
       initialPosition: {
         left: f,
-        top: o
+        top: a
       },
       maxX: el.width,
       maxY: el.height,
@@ -303,20 +303,20 @@ function es(e) {
       children: (0, r.jsx)(c.f6W, {
         theme: O ? H.BRd.DARK : true,
         children: e => (0, r.jsxs)(s.animated.div, {
-          className: a()(z.root, q.elevationHigh, {
+          className: o()(z.root, q.elevationHigh, {
             [z.previewCamera]: O
           }, e),
           style: $(Q({}, n), {
-            width: Z.value.interpolate([0, 1], [es.width, en]),
-            minHeight: Z.value.interpolate([0, 1], [es.height, er]),
-            translateX: Z.value.interpolate([0, 1], [0, false * Math.abs(en - es.width) / 2])
+            width: V.value.interpolate([0, 1], [es.width, en]),
+            minHeight: V.value.interpolate([0, 1], [es.height, er]),
+            translateX: V.value.interpolate([0, 1], [0, false * Math.abs(en - es.width) / 2])
           }),
-          children: [O ? (0, r.jsx)(eo, {
+          children: [O ? (0, r.jsx)(ea, {
             header: J
           }) : (0, r.jsx)("div", {
             className: z.mainChannelInfo,
             children: J
-          }), (0, r.jsx)(ea, {
+          }), (0, r.jsx)(eo, {
             canVideo: F,
             channel: h,
             numVideoDevices: C

@@ -1,50 +1,51 @@
-/** Chunk was on 92078 **/
-/** chunk id: 153002, original params: n,r,t (module,exports,require) **/
+/** Chunk was on 44947 **/
+/** chunk id: 153002, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  e: () => o
+  e: () => i
 });
 
-function e(n, r, t) {
-  return r in n ? Object.defineProperty(n, r, {
-    value: t,
+function r(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : n[r] = t, n
+  }) : e[t] = n, e
 }
-var o = function() {
-  var n;
+var i = function() {
+  var e;
 
-  function r(n, t) {
-    if (!(this instanceof r)) throw TypeError("Cannot call a class as a function");
-    e(this, "spec", true), e(this, "monitor", true), this.spec = n, this.monitor = t
+  function t(e, n) {
+    if (!(this instanceof t)) throw TypeError("Cannot call a class as a function");
+    r(this, "spec", true), r(this, "monitor", true), this.spec = e, this.monitor = n
   }
-  return n = [{
+  return e = [{
       key: "canDrop",
       value: function() {
-        var n = this.spec,
-          r = this.monitor;
+        var e = this.spec,
+          t = this.monitor;
         return !module.canDrop || module.canDrop(exports.getItem(), exports)
       }
     }, {
       key: "hover",
       value: function() {
-        var n = this.spec,
-          r = this.monitor;
+        var e = this.spec,
+          t = this.monitor;
         module.hover && module.hover(exports.getItem(), exports)
       }
     }, {
       key: "drop",
       value: function() {
-        var n = this.spec,
-          r = this.monitor;
+        var e = this.spec,
+          t = this.monitor;
         if (module.drop) return module.drop(exports.getItem(), exports)
       }
     }],
-    function(n, r) {
-      for (var t = 0; t < r.length; t++) {
-        var e = r[t];
-        e.enumerable = e.enumerable || false, e.configurable = true, "value" in e && (e.writable = true), Object.defineProperty(n, e.key, e)
+    function(e, t) {
+      for (var n = 0; n < t.length; n++) {
+        var r = t[n];
+        r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
       }
     }(exports.prototype, module), exports
 }()

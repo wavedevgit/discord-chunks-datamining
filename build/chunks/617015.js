@@ -4,12 +4,12 @@
 require.d(exports, {
   M1: () => s,
   NV: () => i,
-  aS: () => o,
+  aS: () => a,
   nG: () => r,
-  yf: () => a
+  yf: () => o
 });
 let r = 64,
   i = 62,
-  o = 50,
-  a = 5,
+  a = 50,
+  o = 5,
   s = "ACCEPT_FRIEND_REQUEST_CONFIRMATION_MODAL"

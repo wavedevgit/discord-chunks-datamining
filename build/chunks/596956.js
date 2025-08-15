@@ -2,7 +2,7 @@
 /** chunk id: 596956, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => o,
+  S: () => a,
   T: () => i
 });
 var Chunk476326 = require("./476326.js");
@@ -24,6 +24,6 @@ function i(e, t) {
   returnfalse
 }
 
-function o(e, t) {
+function a(e, t) {
   return 0 === t ? 0 : Math.min(Math.floor(e / t * 100), 100)
 }

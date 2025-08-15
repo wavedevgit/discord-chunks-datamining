@@ -59,7 +59,7 @@ function g(e, t, _) {
   if (d.isPlatformEmbedded)(0, i.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("46746"), n.e("74304")]).then(n.bind(n, 60594));
+    } = await Promise.all([n.e("70274"), n.e("38697"), n.e("46746"), n.e("1834")]).then(n.bind(n, 60594));
     return n => {
       var i;
       return (0, r.jsx)(t, m(p({}, n), {
@@ -72,7 +72,7 @@ function g(e, t, _) {
   else {
     var h;
     let n = s.Z.getChannel(t),
-      r = (0, a.Z)(f.tI.PRESET_CUSTOM, f.LY.RESOLUTION_1080, f.ws.FPS_30, u.default.getCurrentUser(), null == (h = l.Z.getGuild(e)) ? true : h.premiumTier, n) ? {
+      r = (0, o.Z)(f.tI.PRESET_CUSTOM, f.LY.RESOLUTION_1080, f.ws.FPS_30, u.default.getCurrentUser(), null == (h = l.Z.getGuild(e)) ? true : h.premiumTier, n) ? {
         width: 1920,
         height: 1080
       } : {
@@ -80,7 +80,7 @@ function g(e, t, _) {
         height: 720
       };
     c.Z.getMediaEngine().getDesktopSource(r, true).then(n => {
-      (0, o.WH)(e, t, {
+      (0, a.WH)(e, t, {
         pid: null,
         sourceId: n,
         sourceName: null,

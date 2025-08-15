@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 799567, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 799567, original params: e,t,n (module,exports,require) **/
 module.exports = {
   slowModeIcon: "slowModeIcon_b21699",
   cooldownWrapper: "cooldownWrapper_b21699",

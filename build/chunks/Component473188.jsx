@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk448817 = require("./448817.js");
 
@@ -17,16 +17,16 @@ function l(e) {
     hideInnerBorder: n = false
   } = e, i = t <= 3 ? "text-xs/semibold" : "text-xs/medium";
   return (0, r.jsx)("div", {
-    className: o()(s.rankContainer, {
+    className: a()(s.rankContainer, {
       [s.goldBorder]: 1 === t,
       [s.silverBorder]: 2 === t,
       [s.bronzeBorder]: 3 === t,
       [s.defaultBorder]: t > 3
     }),
-    children: (0, r.jsx)(a.Text, {
+    children: (0, r.jsx)(o.Text, {
       tabularNumbers: true,
       variant: i,
-      className: o()(s.rank, {
+      className: a()(s.rank, {
         [s.rankWithBorder]: !n,
         [s.goldText]: 1 === t,
         [s.silverText]: 2 === t,

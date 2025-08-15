@@ -59,8 +59,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,8 +68,8 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -81,7 +81,7 @@ function E(e) {
     shouldShowTooltip: c
   } = e, u = m(e, ["type", "userId", "analyticsLocation", "shouldShowTooltip"]);
   let f = i.useCallback(() => {
-      a.Z.addRelationship({
+      o.Z.addRelationship({
         userId: n,
         context: {
           location: l
@@ -91,7 +91,7 @@ function E(e) {
     p = t === s.j8.TEXT ? s.tG : s.oY;
   return (0, r.jsx)(p, _({
     action: "SEND_FRIEND_REQUEST",
-    icon: o.oLu,
+    icon: a.oLu,
     text: d.intl.string(d.t.w5uwoK),
     tooltipText: d.intl.string(d.t.w5uwoK),
     shouldShowTooltip: c,
@@ -103,15 +103,15 @@ function b(e) {
   var {
     type: t,
     user: n,
-    analyticsLocation: o
-  } = e, a = m(e, ["type", "user", "analyticsLocation"]);
+    analyticsLocation: a
+  } = e, o = m(e, ["type", "user", "analyticsLocation"]);
   let c = (0, l.Y)({
       user: n,
-      analyticsLocation: o
+      analyticsLocation: a
     }),
     u = i.useRef(null),
     d = t === s.j8.ICON ? s.ef : s.oY;
-  return 0 === c.length ? (0, r.jsx)(d, h(_({}, a), {
+  return 0 === c.length ? (0, r.jsx)(d, h(_({}, o), {
     disabled: true
   })) : (0, r.jsx)(l.Z, {
     targetElementRef: u,
@@ -119,7 +119,7 @@ function b(e) {
     children: e => (0, r.jsx)("div", h(_({
       ref: u
     }, e), {
-      children: (0, r.jsx)(d, _({}, a))
+      children: (0, r.jsx)(d, _({}, o))
     }))
   })
 }
@@ -139,8 +139,8 @@ function v(e) {
     type: t,
     user: n,
     relationshipType: i,
-    analyticsLocation: o,
-    shouldShowTooltip: a
+    analyticsLocation: a,
+    shouldShowTooltip: o
   } = e, s = m(e, ["type", "user", "relationshipType", "analyticsLocation", "shouldShowTooltip"]);
   let l = y[i],
     c = O[i]();
@@ -149,8 +149,8 @@ function v(e) {
     user: n,
     icon: l,
     tooltipText: c,
-    shouldShowTooltip: a,
-    analyticsLocation: o
+    shouldShowTooltip: o,
+    analyticsLocation: a
   }, s))
 }
 
@@ -159,8 +159,8 @@ function I(e) {
     type: t,
     user: n,
     gameFriends: i,
-    hasOutgoingPendingGameFriends: o,
-    hasIncomingPendingGameFriends: a,
+    hasOutgoingPendingGameFriends: a,
+    hasIncomingPendingGameFriends: o,
     analyticsLocation: s,
     shouldShowTooltip: l
   } = e, u = m(e, ["type", "user", "gameFriends", "hasOutgoingPendingGameFriends", "hasIncomingPendingGameFriends", "analyticsLocation", "shouldShowTooltip"]);
@@ -171,8 +171,8 @@ function I(e) {
     icon: h
   } = (0, c.N)({
     gameFriends: i,
-    hasOutgoingPendingGameFriends: o,
-    hasIncomingPendingGameFriends: a
+    hasOutgoingPendingGameFriends: a,
+    hasIncomingPendingGameFriends: o
   });
   return (0, r.jsx)(b, _({
     type: t,

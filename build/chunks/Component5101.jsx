@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 5101, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 5101, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => u,
   default: () => d
@@ -19,22 +18,22 @@ function d(e) {
     transitionState: t,
     onClose: n,
     handleResolveFlag: d
-  } = e, [f, _] = i.useState(false), p = () => {
-    f && o.K.set(u, true), n(), d()
-  };
+  } = e, [p, h] = i.useState(false);
   return (0, r.jsx)(a.Modal, {
     transitionState: t,
     onClose: n,
-    title: c.intl.string(l.default["8R4eur"]),
-    subtitle: c.intl.string(l.default.xgOraW),
+    title: c.intl.string(s.default["8R4eur"]),
+    subtitle: c.intl.string(s.default.xgOraW),
     actions: [{
-      text: c.intl.string(l.default.ctefOz),
-      onClick: p
+      text: c.intl.string(s.default.ctefOz),
+      onClick: () => {
+        p && l.K.set(u, true), n(), d()
+      }
     }],
-    actionBarInput: (0, r.jsx)(s.XZJ, {
-      value: f,
-      onChange: (e, t) => _(t),
-      children: c.intl.string(l.default["3puq5e"])
+    actionBarInput: (0, r.jsx)(o.XZJ, {
+      value: p,
+      onChange: (e, t) => h(t),
+      children: c.intl.string(s.default["3puq5e"])
     })
   })
 }

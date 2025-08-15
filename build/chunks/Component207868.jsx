@@ -1,7 +1,7 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 207868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => _
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,29 +19,29 @@ var Chunk255367 = require("./255367.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let x = Chunk73800.memo(function(e) {
+let _ = Chunk73800.memo(function(e) {
   let {
     channel: t
-  } = e, n = (0, u.Z)(), l = (0, s.e7)([f.Z], () => f.Z.isInChannel(t.id)), x = (0, s.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), j = (0, s.e7)([p.Z], () => p.Z.can(b.Plq.CONNECT, t)), {
-    needSubscriptionToAccess: _
-  } = (0, d.Z)(t.id), O = (0, h.$R)(t), v = i.useCallback(() => {
+  } = e, n = (0, u.Z)(), l = (0, o.e7)([f.Z], () => f.Z.isInChannel(t.id)), _ = (0, o.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), C = (0, o.e7)([h.Z], () => h.Z.can(b.Plq.CONNECT, t)), {
+    needSubscriptionToAccess: x
+  } = (0, d.Z)(t.id), v = (0, p.$R)(t), j = i.useCallback(() => {
     c.Z.handleVoiceConnect({
       channel: t,
       connected: l,
-      needSubscriptionToAccess: _,
+      needSubscriptionToAccess: x,
       locked: false
     })
-  }, [t, l, _]);
-  return (i.useEffect(() => (g.S.subscribe(b.CkL.CALL_START, v), () => {
-    g.S.unsubscribe(b.CkL.CALL_START, v)
-  }), [v]), h.tM.useExperiment({
+  }, [t, l, x]);
+  return (i.useEffect(() => (m.S.subscribe(b.CkL.CALL_START, j), () => {
+    m.S.unsubscribe(b.CkL.CALL_START, j)
+  }), [j]), p.tM.useExperiment({
     guildId: t.guild_id,
     location: "63250c_1"
   }, {
     autoTrackExposure: false
-  }).enabled && !n && !l && j && O && t.isVocalThread()) ? (0, r.jsx)(m.ZP.Icon, {
-    icon: o.Csw,
-    onClick: v,
-    tooltip: x ? y.intl.string(y.t.fdEeb2) : y.intl.string(y.t.focH1t)
+  }).enabled && !n && !l && C && v && t.isVocalThread()) ? (0, r.jsx)(g.ZP.Icon, {
+    icon: s.Csw,
+    onClick: j,
+    tooltip: _ ? y.intl.string(y.t.fdEeb2) : y.intl.string(y.t.focH1t)
   }) : null
 })

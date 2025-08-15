@@ -19,21 +19,21 @@ function g(t) {
     guildEventId: n,
     recurrenceId: e,
     guild: g,
-    channel: v
+    channel: f
   } = t, b = null != e, {
-    canManageGuildEvent: f
-  } = (0, o.XJ)(null != v ? v : g), [p, j] = (0, i.Wu)([a.ZP], () => [a.ZP.isActive(n), a.ZP.getGuildScheduledEvent(n)]), h = (0, s.Z)(e, null == j ? true : j.id), y = null != j && f(j), Z = (null == j ? true : j.recurrence_rule) != null && !b, m = (0, u.zI)(n, e);
-  if (!y || p && !Z && !b || b && !b || null == j || null == m) return null;
+    canManageGuildEvent: p
+  } = (0, o.XJ)(null != f ? f : g), [v, h] = (0, i.Wu)([a.ZP], () => [a.ZP.isActive(n), a.ZP.getGuildScheduledEvent(n)]), y = (0, u.Z)(e, null == h ? true : h.id), E = null != h && p(h), O = (null == h ? true : h.recurrence_rule) != null && !b, j = (0, s.zI)(n, e);
+  if (!E || v && !O && !b || b && !b || null == h || null == j) return null;
   let {
-    startTime: O
-  } = m;
-  if (p && b) {
-    var P;
-    if (null == O) return null;
-    let t = new Date(null != (P = null == h ? true : h.scheduled_start_time) ? P : O);
+    startTime: m
+  } = j;
+  if (v && b) {
+    var _;
+    if (null == m) return null;
+    let t = new Date(null != (_ = null == y ? true : y.scheduled_start_time) ? _ : m);
     if (new Date > t) return null
   }
-  let w = t => {
+  let P = t => {
     (0, r.h7j)(i => {
       var o, a;
       return (0, l.jsxs)(r.ConfirmModal, (o = function(t) {
@@ -55,13 +55,13 @@ function g(t) {
         return t
       }({}, i), a = a = {
         header: d.intl.string(d.t.R5bpio),
-        confirmText: Z || t ? d.intl.string(d.t["8ZsNv7"]) : d.intl.string(d.t.B9sJLS),
+        confirmText: O || t ? d.intl.string(d.t["8ZsNv7"]) : d.intl.string(d.t.B9sJLS),
         cancelText: d.intl.string(d.t.oEAioK),
-        onConfirm: () => b && !t ? c.Z.deleteRecurrence(g.id, n, e, h) : c.Z.deleteGuildEvent(n, g.id),
+        onConfirm: () => b && !t ? c.Z.deleteRecurrence(g.id, n, e, y) : c.Z.deleteGuildEvent(n, g.id),
         children: [(0, l.jsx)(r.Text, {
           variant: "text-md/normal",
           children: d.intl.string(d.t.v2GWNT)
-        }), (0, l.jsx)("br", {}), (Z || t) && (0, l.jsx)(r.Text, {
+        }), (0, l.jsx)("br", {}), (O || t) && (0, l.jsx)(r.Text, {
           variant: "text-md/normal",
           children: d.intl.format(d.t.ZcpcyM, {})
         })]
@@ -80,19 +80,19 @@ function g(t) {
   return (0, l.jsx)(r.sNh, {
     id: d.intl.string(d.t.B9sJLS),
     label: d.intl.string(d.t.B9sJLS),
-    action: b ? true : () => w(),
+    action: b ? true : () => P(),
     color: "danger",
     children: b && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(r.sNh, {
         id: d.intl.string(d.t.tqCll5),
         label: d.intl.string(d.t.tqCll5),
-        action: () => w(),
-        disabled: null == h ? true : h.is_canceled,
+        action: () => P(),
+        disabled: null == y ? true : y.is_canceled,
         color: "danger"
       }), (0, l.jsx)(r.sNh, {
         id: d.intl.string(d.t.wr33ra),
         label: d.intl.string(d.t.wr33ra),
-        action: () => w(true),
+        action: () => P(true),
         color: "danger"
       })]
     })

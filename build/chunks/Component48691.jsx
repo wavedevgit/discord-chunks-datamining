@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 48691, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 48691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => f,
+  b: () => p,
   t: () => d
 });
 var Chunk255367 = require("./255367.js");
@@ -18,8 +17,8 @@ function u(e) {
   let {
     label: t,
     backgroundColor: n = a.Z.BUTTON_SECONDARY_BACKGROUND,
-    icon: o,
-    iconColor: s
+    icon: l,
+    iconColor: o
   } = e;
   return (0, r.jsxs)("div", {
     className: c.badge,
@@ -31,9 +30,9 @@ function u(e) {
       color: "always-white",
       className: c.__invalid_badgeText,
       children: t
-    }), (0, r.jsx)(o, {
+    }), (0, r.jsx)(l, {
       className: c.badgeIcon,
-      color: null != s ? s : "currentColor",
+      color: null != o ? o : "currentColor",
       "aria-hidden": true
     })]
   })
@@ -47,7 +46,7 @@ function d() {
   })
 }
 
-function f() {
+function p() {
   return (0, Chunk255367.jsx)(u, {
     label: Chunk388032.intl.string(Chunk388032.t.TgsPaG),
     icon: Chunk481060.vdY,

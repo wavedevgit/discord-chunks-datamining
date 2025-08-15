@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 475674, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 24255 **/
+/** chunk id: 475674, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 }), require("./388685.js"), require("./642613.js");
 var Chunk442837 = require("./442837.js"),
   Chunk458725 = require("./458725.js"),
@@ -16,10 +15,10 @@ let a = {
   [Chunk458725.u.STREAM_BAD_NETWORK_QUALITY]: 3
 };
 
-function s(e) {
+function o(e) {
   let t = e.id;
-  return (0, r.e7)([o.Z], () => {
-    let e = Array.from(o.Z.getActiveErrors().values()).filter(e => "streamKey" in e && e.streamKey === t && null != a[e.type]).sort((e, t) => {
+  return (0, r.e7)([i.Z], () => {
+    let e = Array.from(i.Z.getActiveErrors().values()).filter(e => "streamKey" in e && e.streamKey === t && null != a[e.type]).sort((e, t) => {
       var n, r;
       return (null != (n = a[e.type]) ? n : 0) - (null != (r = a[t.type]) ? r : 0)
     })[0];

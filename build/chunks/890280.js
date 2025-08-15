@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 890280, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 890280, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -17,11 +16,11 @@ function c(e) {
     context: n,
     launchingComponentId: c,
     onSubmissionComplete: u
-  } = e, d = (0, s.q)(t), f = (0, i.e7)([a.ZP], () => a.ZP.getLaunchState(t, "channel" === n.type ? n.channel.id : true)), _ = !(null != d && (0, l.g)(d)) && null != f && f.isLaunching && f.componentId === c, p = (0, o.Z)(_);
-  return r.useEffect(() => {
-    !_ && p && (null == u || u())
-  }, [_, p, u]), {
-    submitting: _,
-    wasSubmitting: null != p ? p : null
+  } = e, d = (0, o.q)(t), p = (0, i.e7)([a.ZP], () => a.ZP.getLaunchState(t, "channel" === n.type ? n.channel.id : true)), m = !(null != d && (0, s.g)(d)) && null != p && p.isLaunching && p.componentId === c, f = (0, r.Z)(m);
+  return l.useEffect(() => {
+    !m && f && (null == u || u())
+  }, [m, f, u]), {
+    submitting: m,
+    wasSubmitting: null != f ? f : null
   }
 }

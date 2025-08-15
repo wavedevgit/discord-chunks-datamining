@@ -19,7 +19,7 @@ function l(e) {
     onFocus: f
   } = e, {
     renderWindow: _
-  } = r.useContext(a.ZP), p = (e, t) => {
+  } = r.useContext(o.ZP), p = (e, t) => {
     let n = _.document.querySelector(e);
     if (null != n) {
       var r;
@@ -44,7 +44,7 @@ function l(e) {
   }, g = (0, i.ZP)({
     id: c,
     isEnabled: d.isVisible,
-    orientation: o.hy.VERTICAL,
+    orientation: a.hy.VERTICAL,
     useVirtualFocus: true,
     setFocus: p,
     onNavigateNextAtEnd: () => h(true),

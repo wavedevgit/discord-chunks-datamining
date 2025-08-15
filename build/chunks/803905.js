@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   $0: () => R,
-  AN: () => j,
+  AN: () => k,
   Ct: () => A,
-  DU: () => Z,
+  DU: () => V,
   EQ: () => B,
   Ej: () => T,
   ME: () => m,
@@ -17,7 +17,7 @@ require.d(exports, {
   _G: () => O,
   _O: () => S,
   _y: () => g,
-  do: () => k,
+  do: () => j,
   g7: () => P,
   g_: () => p,
   hs: () => b,
@@ -87,20 +87,20 @@ let p = new _(Chunk848246.q.ANIMATED_EMOJIS),
   L = new _("fancyVoiceChannelReactions"),
   x = new _("installPremiumApplications"),
   M = new _("redeemPremiumPerks"),
-  j = new _(Chunk848246.q.VIDEO_FILTER_ASSETS);
+  k = new _(Chunk848246.q.VIDEO_FILTER_ASSETS);
 new Chunk533293.Z(Chunk848246.q.INCREASED_FILE_UPLOAD_SIZE, Chunk380684.h);
-let k = new _(Chunk848246.q.INCREASED_GUILD_LIMIT),
+let j = new _(Chunk848246.q.INCREASED_GUILD_LIMIT),
   U = new _(Chunk848246.q.INCREASED_MESSAGE_LENGTH),
   G = new _("increasedVideoUploadQuality"),
   B = new _("uploadLargeFiles"),
-  Z = new _(Chunk848246.q.CHAT_WALLPAPERS),
+  V = new _(Chunk848246.q.CHAT_WALLPAPERS),
   F = Object.freeze({
-    [Chunk474936.Si.TIER_0]: new Chunk575691.Z(Chunk474936.Si.TIER_0, [p, h, m, I, j, G, B, A]),
+    [Chunk474936.Si.TIER_0]: new Chunk575691.Z(Chunk474936.Si.TIER_0, [p, h, m, I, k, G, B, A]),
     [Chunk474936.Si.TIER_1]: new Chunk575691.Z(Chunk474936.Si.TIER_1, [p, h, y, O, I, C, P, L, G, B, A]),
-    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [p, h, m, g, E, y, O, v, I, T, N, C, R, P, w, L, x, M, j, k, U, G, B, A, S, D, b, Z])
+    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [p, h, m, g, E, y, O, v, I, T, N, C, R, P, w, L, x, M, k, j, U, G, B, A, S, D, b, V])
   }),
-  V = [C, R];
+  Z = [C, R];
 
 function H(e, t, n) {
-  return !((0, s.U)("canUserUse", t) || null !== n && n === c.a$.FP_ONLY && V.includes(e)) && e.getFeatureValue(t)
+  return !((0, s.U)("canUserUse", t) || null !== n && n === c.a$.FP_ONLY && Z.includes(e)) && e.getFeatureValue(t)
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk717976 = require("./717976.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -25,10 +25,10 @@ let g = e => {
       userId: n,
       onClose: i
     } = e, {
-      trackUserProfileAction: a
+      trackUserProfileAction: o
     } = (0, d.KZ)();
     return (0, r.jsxs)("div", {
-      className: o()(m.toast, h.toastPadding),
+      className: a()(m.toast, h.toastPadding),
       children: [(0, r.jsx)(l.dz2, {
         size: "sm",
         className: h.toastIcon,
@@ -43,7 +43,7 @@ let g = e => {
           variant: "text-sm/semibold",
           children: p.intl.format(p.t.QEW8Mj, {
             onClick: () => {
-              a({
+              o({
                 action: "PRESS_REACT_REPLY_TOAST"
               }), null == i || i(), c.Z.openPrivateChannel({
                 recipientIds: n
@@ -55,7 +55,7 @@ let g = e => {
     })
   },
   E = () => (0, Chunk255367.jsxs)("div", {
-    className: o()(Chunk583140.toast, Chunk882909.toastPadding),
+    className: a()(Chunk583140.toast, Chunk882909.toastPadding),
     children: [(0, Chunk255367.jsx)(Chunk481060.$jN, {
       type: Chunk481060.RAz.SPINNING_CIRCLE_SIMPLE,
       className: Chunk882909.toastIcon
@@ -95,8 +95,8 @@ let g = e => {
       delay: 200
     }, "animate-always");
     return (0, r.jsx)(r.Fragment, {
-      children: y((e, s) => s && (0, r.jsx)(a.animated.div, {
-        className: o()(h.toastContainer, i),
+      children: y((e, s) => s && (0, r.jsx)(o.animated.div, {
+        className: a()(h.toastContainer, i),
         style: e,
         children: null != c ? (0, r.jsx)(l.FNi, {
           message: "",

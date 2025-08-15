@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk796914 = require("./796914.js"),
@@ -19,12 +19,12 @@ function u(e) {
     textClassName: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(l.paymentModalLockIcon, c.flex, c.alignCenter),
-    children: [(0, r.jsx)(a.mBM, {
+    className: a()(l.paymentModalLockIcon, c.flex, c.alignCenter),
+    children: [(0, r.jsx)(o.mBM, {
       size: "sm",
       color: "currentColor",
-      className: o()(l.lockIcon, t)
-    }), (0, r.jsx)(a.Text, {
+      className: a()(l.lockIcon, t)
+    }), (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       className: null != n ? n : true,
       children: s.intl.string(s.t.Kv6Z4O)

@@ -2,7 +2,7 @@
 /** chunk id: 40455, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => j
+  ZP: () => k
 }), require("./388685.js");
 var Chunk592125 = require("./592125.js"),
   Chunk650774 = require("./650774.js"),
@@ -131,7 +131,7 @@ function N() {
 function C(e) {
   let t = e.id,
     n = (0, f.v)(e),
-    r = a.Z.getChannelId();
+    r = o.Z.getChannelId();
   n && t === r && S.recordChannel(t), n || S.deleteChannel(t)
 }
 
@@ -163,4 +163,4 @@ function M(e) {
   T = true
 }
 p(S, "displayName", "SaveableChannelsStore"), p(S, "LATEST_SNAPSHOT_VERSION", 1);
-let j = new S
+let k = new S

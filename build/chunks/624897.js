@@ -1,45 +1,37 @@
-/** Chunk was on web.js **/
-/** chunk id: 624897, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 624897, original params: t,e,r (module,exports,require) **/
 "use strict";
-
-function r(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-var i = require("./65183.js").List,
-  o = ".";
-
-function a(e, t, n) {
-  for (var r = t; r < n; r++)
-    if (null != e[r]) returnfalse;
-  returntrue
-}
-
-function s(e, t, n, r) {
-  for (var i = t; i < n; i++) e[i] = r
-}
+var n = require("./65183.js").List;
 module.exports = function() {
-  function e(e) {
-    r(this, "_decorators", true), this._decorators = e.slice()
+  function t(t) {
+    var e, r;
+    r = true, (e = "_decorators") in this ? Object.defineProperty(this, e, {
+      value: r,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    }) : this[e] = r, this._decorators = t.slice()
   }
-  var t = module.prototype;
-  return exports.getDecorations = function(e, t) {
-    var n = Array(e.getText().length).fill(null);
-    return this._decorators.forEach(function(r, i) {
-      var l = 0;
-      (0, r.strategy)(e, function(e, t) {
-        a(n, e, t) && (s(n, e, t, i + o + l), l++)
-      }, t)
-    }), i(n)
-  }, exports.getComponentForKey = function(e) {
-    var t = parseInt(e.split(o)[0], 10);
-    return this._decorators[t].component
-  }, exports.getPropsForKey = function(e) {
-    var t = parseInt(e.split(o)[0], 10);
-    return this._decorators[t].props
+  var e = module.prototype;
+  return exports.getDecorations = function(t, e) {
+    var r = Array(t.getText().length).fill(null);
+    return this._decorators.forEach(function(n, i) {
+      var o = 0;
+      (0, n.strategy)(t, function(t, e) {
+        (function(t, e, r) {
+          for (var n = e; n < r; n++)
+            if (null != t[n]) returnfalse;
+          returntrue
+        })(r, t, e) && (function(t, e, r, n) {
+          for (var i = e; i < r; i++) t[i] = n
+        }(r, t, e, i + "." + o), o++)
+      }, e)
+    }), n(r)
+  }, exports.getComponentForKey = function(t) {
+    var e = parseInt(t.split(".")[0], 10);
+    return this._decorators[e].component
+  }, exports.getPropsForKey = function(t) {
+    var e = parseInt(t.split(".")[0], 10);
+    return this._decorators[e].props
   }, module
 }()

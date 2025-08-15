@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 /** chunk id: 199902, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, o, a, s, l;
+let r, i, a, o, s, l;
 require.d(exports, {
-  Z: () => ea
+  Z: () => eo
 }), require("./388685.js"), require("./539854.js");
 var c, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -67,11 +67,11 @@ let L = null,
   x = {},
   M = null;
 
-function j() {
-  r = new Map, i = {}, o = {}, a = {}
+function k() {
+  r = new Map, i = {}, a = {}, o = {}
 }
 
-function k(e) {
+function j(e) {
   var t;
   null == i[e.ownerId] && (i[e.ownerId] = {}), i[e.ownerId][null != (t = e.guildId) ? t : N.kod] = e
 }
@@ -95,11 +95,11 @@ function B() {
   return module
 }
 
-function Z(e) {
+function V(e) {
   let {
     applicationStreamState: t
   } = e;
-  i = t.streamsByUserAndGuild, r = new Map(t.activeStreams), o = t.rtcStreams, a = t.streamerActiveStreamMetadatas
+  i = t.streamsByUserAndGuild, r = new Map(t.activeStreams), a = t.rtcStreams, o = t.streamerActiveStreamMetadatas
 }
 
 function F(e) {
@@ -111,11 +111,11 @@ function F(e) {
       userId: n,
       guildId: r,
       channelId: i,
-      sessionId: o,
-      selfStream: a,
+      sessionId: a,
+      selfStream: o,
       discoverable: s
     } = t;
-    if (a && null != i) return k({
+    if (o && null != i) return j({
       streamType: null != r ? C.lo.GUILD : C.lo.CALL,
       ownerId: n,
       guildId: r,
@@ -124,12 +124,12 @@ function F(e) {
     }), true;
     {
       let t = b.default.getSessionId();
-      return n === b.default.getId() && o !== t && null != T.Z.getChannelId() ? e : U(n, r) || e
+      return n === b.default.getId() && a !== t && null != T.Z.getChannelId() ? e : U(n, r) || e
     }
   }, false)
 }
 
-function V(e) {
+function Z(e) {
   let {
     streamKey: t
   } = e, n = (0, p.my)(t);
@@ -143,7 +143,7 @@ function H(e) {
   let {
     streamType: n,
     guildId: i,
-    channelId: o,
+    channelId: a,
     pid: c,
     sourceName: u,
     sourceId: d,
@@ -152,12 +152,12 @@ function H(e) {
   } = e, m = (0, p.V9)({
     streamType: n,
     guildId: i,
-    channelId: o,
+    channelId: a,
     ownerId: b.default.getId()
   });
   (null == d ? true : d.startsWith("prepicked:")) && null == c && (c = s);
   let g = null != (t = (null == d ? true : d.startsWith("prepicked:")) && null != l ? l : null != c ? _.ZP.getGameForPID(c) : null != d ? _.ZP.getRunningGames().find(e => (0, E.Z)(d, e.windowHandle)) : null) ? t : null;
-  a[m] = {
+  o[m] = {
     id: null == g ? true : g.id,
     pid: c,
     sourceName: u,
@@ -167,7 +167,7 @@ function H(e) {
   }, r.delete(m), r.set(m, {
     streamType: n,
     guildId: i,
-    channelId: o,
+    channelId: a,
     ownerId: b.default.getId(),
     state: N.jm8.CONNECTING
   })
@@ -192,16 +192,16 @@ function W(e) {
     errorCode: i
   } = e;
   if ((null == t ? true : t.desktopSettings) != null || (null == t ? true : t.cameraSettings) != null || null == i) returnfalse;
-  let o = false;
-  for (let e in a) {
+  let a = false;
+  for (let e in o) {
     let t = r.get(e);
     null != t && (r.set(e, D(P({}, t), {
       state: N.jm8.FAILED,
       endReason: n,
       errorCode: i
-    })), o = true)
+    })), a = true)
   }
-  return o
+  return a
 }
 
 function K(e) {
@@ -216,19 +216,19 @@ function K(e) {
       id: null == l ? true : l.id
     };
   null != r && (i.sourceName = r);
-  let o = false;
-  for (let e in a) {
+  let a = false;
+  for (let e in o) {
     var c, u;
-    (null == (u = a[e]) || null == (c = u.sourceId) ? true : c.startsWith("prepicked:")) && (a[e] = P({}, a[e], i), o = true)
+    (null == (u = o[e]) || null == (c = u.sourceId) ? true : c.startsWith("prepicked:")) && (o[e] = P({}, o[e], i), a = true)
   }
-  return o
+  return a
 }
 
 function z(e) {
   let {
     streamKey: t
   } = e;
-  a[t] = null
+  o[t] = null
 }
 
 function q(e) {
@@ -236,11 +236,11 @@ function q(e) {
     streamKey: t,
     region: n,
     viewerIds: i,
-    paused: a
+    paused: o
   } = e;
   r.set(t, D(P({}, (0, p.my)(t)), {
-    state: a ? N.jm8.PAUSED : N.jm8.ACTIVE
-  })), o[t] = {
+    state: o ? N.jm8.PAUSED : N.jm8.ACTIVE
+  })), a[t] = {
     streamKey: t,
     region: n,
     viewerIds: i
@@ -268,15 +268,15 @@ function J(e) {
   let {
     streamKey: t,
     unavailable: i,
-    reason: a
+    reason: o
   } = e;
-  delete o[t];
+  delete a[t];
   let s = r.get(t);
   if (null == s) returnfalse;
   let l = N.jm8.ENDED;
   if (i) l = N.jm8.RECONNECTING;
-  else if (a === N.si2.UNAUTHORIZED) l = N.jm8.FAILED;
-  else if (a === N.si2.SAFETY_GUILD_RATE_LIMITED) {
+  else if (o === N.si2.UNAUTHORIZED) l = N.jm8.FAILED;
+  else if (o === N.si2.SAFETY_GUILD_RATE_LIMITED) {
     let {
       guildId: e
     } = (0, p.my)(t);
@@ -286,7 +286,7 @@ function J(e) {
       } = t;
       n(e)
     }), l = N.jm8.ENDED
-  } else s.state === N.jm8.FAILED && a === N.si2.USER_REQUESTED && (l = N.jm8.FAILED);
+  } else s.state === N.jm8.FAILED && o === N.si2.USER_REQUESTED && (l = N.jm8.FAILED);
   r.set(t, D(P({}, s), {
     state: l
   })), l === N.jm8.ENDED && L !== t && G(t)
@@ -310,17 +310,17 @@ function ee(e) {
   if (null == t) returnfalse;
   let i = r.get(t);
   if (null == i || i.state === N.jm8.ENDED || i.state === N.jm8.FAILED && i.ownerId === b.default.getId()) returnfalse;
-  let o = i.state;
+  let a = i.state;
   switch (n) {
     case N.hes.DISCONNECTED:
-      o = N.jm8.RECONNECTING;
+      a = N.jm8.RECONNECTING;
       break;
     case N.hes.RTC_CONNECTED:
-      o = N.jm8.ACTIVE
+      a = N.jm8.ACTIVE
   }
-  if (o === i.state) returnfalse;
+  if (a === i.state) returnfalse;
   r.set(t, D(P({}, i), {
-    state: o
+    state: a
   }))
 }
 
@@ -349,8 +349,8 @@ function ei(e) {
   let t = y.Z.getBasicChannel(e.channelId);
   return null != t && (0, h.p9)(t, A.Z, O.Z, I.Z, f.Z)[0]
 }
-j();
-class eo extends(c = Chunk442837.ZP.PersistedStore) {
+k();
+class ea extends(c = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.syncWith([I.Z], () => true), this.waitFor(_.ZP, I.Z), (null == e ? true : e.selfStreamParticipantsHidden) !== true && Object.assign(x, null == e ? true : e.selfStreamParticipantsHidden)
   }
@@ -399,15 +399,15 @@ class eo extends(c = Chunk442837.ZP.PersistedStore) {
       n = Chunk592125.Z.getChannel(exports);
     if (null == require) return null;
     let r = this.getActiveStreamForUser(Chunk314897.default.getId(), require.getGuildId());
-    return null == r ? null : null != (e = a[(0, Chunk569545.V9)(r)]) ? module : null
+    return null == r ? null : null != (e = o[(0, Chunk569545.V9)(r)]) ? module : null
   }
   getStreamerActiveStreamMetadataForStream(e) {
     var t;
-    return null != (t = a[e]) ? t : null
+    return null != (t = o[e]) ? t : null
   }
   getIsActiveStreamPreviewDisabled(e) {
     var t;
-    let n = a[e];
+    let n = o[e];
     return null != (t = null == n ? true : n.previewDisabled) && t
   }
   getAnyStreamForUser(e) {
@@ -430,7 +430,7 @@ class eo extends(c = Chunk442837.ZP.PersistedStore) {
   }
   getRTCStream(e) {
     var t;
-    return (0, m.Z)(v.Z) && null != (t = o[e]) ? t : null
+    return (0, m.Z)(v.Z) && null != (t = a[e]) ? t : null
   }
   getAllApplicationStreams() {
     return (0, Chunk139656.Z)(Chunk131951.Z) ? B().filter(e => null != e && er(e.streamType, e.channelId)) : []
@@ -441,7 +441,7 @@ class eo extends(c = Chunk442837.ZP.PersistedStore) {
   getViewerIds(e) {
     if (!(0, m.Z)(v.Z)) return [];
     let t = null,
-      n = null != (t = "string" == typeof e ? e : (0, p.V9)(e)) ? o[t] : null;
+      n = null != (t = "string" == typeof e ? e : (0, p.V9)(e)) ? a[t] : null;
     return null != n ? n.viewerIds : []
   }
   getCurrentAppIntent() {
@@ -451,8 +451,8 @@ class eo extends(c = Chunk442837.ZP.PersistedStore) {
     return (0, Chunk139656.Z)(Chunk131951.Z) ? {
       activeStreams: Array.from(r.entries()),
       streamsByUserAndGuild: i,
-      rtcStreams: o,
-      streamerActiveStreamMetadatas: a
+      rtcStreams: a,
+      streamerActiveStreamMetadatas: o
     } : {
       activeStreams: [],
       streamsByUserAndGuild: {},
@@ -461,13 +461,13 @@ class eo extends(c = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-R(eo, "displayName", "ApplicationStreamingStore"), R(eo, "persistKey", "ApplicationStreamingStore");
-let ea = new eo(Chunk570140.Z, {
+R(ea, "displayName", "ApplicationStreamingStore"), R(ea, "persistKey", "ApplicationStreamingStore");
+let eo = new ea(Chunk570140.Z, {
   MEDIA_ENGINE_SET_GO_LIVE_SOURCE: W,
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: K,
-  OVERLAY_INITIALIZE: Z,
+  OVERLAY_INITIALIZE: V,
   VOICE_STATE_UPDATES: F,
-  STREAM_WATCH: V,
+  STREAM_WATCH: Z,
   STREAM_START: H,
   STREAM_STOP: z,
   STREAM_CREATE: q,
@@ -479,7 +479,7 @@ let ea = new eo(Chunk570140.Z, {
   SET_STREAM_APP_INTENT: en,
   RTC_CONNECTION_STATE: ee,
   CHANNEL_RTC_SELECT_PARTICIPANT: Q,
-  CONNECTION_OPEN: j,
-  CONNECTION_CLOSED: j,
-  LOGOUT: j
+  CONNECTION_OPEN: k,
+  CONNECTION_CLOSED: k,
+  LOGOUT: k
 })

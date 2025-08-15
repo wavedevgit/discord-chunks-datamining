@@ -1,45 +1,43 @@
-/** Chunk was on web.js **/
-/** chunk id: 42311, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 42311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk626786 = require("./626786.jsx"),
   Chunk628012 = require("./628012.js");
-let u = 6;
 
-function d(e) {
+function u(e) {
   let {
     className: t,
     roleColor: n,
     roleName: i,
-    hasRemoveIcon: d = false,
-    onClick: f,
-    disabled: _ = false,
-    verified: p = false
+    hasRemoveIcon: u = false,
+    onClick: d,
+    disabled: p = false,
+    verified: h = false
   } = e;
   return (0, r.jsx)(a.zx, {
-    className: o()(t, c.button),
+    className: l()(t, c.button),
     look: a.zx.Looks.BLANK,
     size: a.zx.Sizes.NONE,
-    onClick: f,
-    disabled: _,
-    children: (0, r.jsx)(l.Z, {
+    onClick: d,
+    disabled: p,
+    children: (0, r.jsx)(s.Z, {
       className: c.role,
       roleColor: n,
       roleName: i,
-      verified: p,
-      children: d && (0, r.jsx)(s.Dio, {
+      verified: h,
+      children: u && (0, r.jsx)(o.Dio, {
         size: "custom",
         color: "currentColor",
-        height: u,
-        width: u,
+        height: 6,
+        width: 6,
         className: c.removeRole,
         colorClass: c.removeRoleIcon
       })

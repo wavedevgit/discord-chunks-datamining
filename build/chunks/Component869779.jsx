@@ -108,22 +108,22 @@ class k extends Chunk73800.PureComponent {
               size: "xxs",
               color: "currentColor",
               className: D.channelIcon
-            }) : null, (0, g.F6)(t, Z.default, O.Z), null != n ? (0, i.jsx)(s.Text, {
+            }) : null, (0, g.F6)(t, w.default, E.Z), null != n ? (0, i.jsx)(s.Text, {
               tag: "span",
               variant: "text-xs/semibold",
               color: "header-secondary",
               lineClamp: 1,
               className: D.category,
-              children: (0, g.F6)(n, Z.default, O.Z)
+              children: (0, g.F6)(n, w.default, E.Z)
             }) : null]
           }) : L.intl.string(L.t.XPDhcX)
         }, {
           section: A.CoT.OVERVIEW,
           label: L.intl.string(L.t["/dp6yc"]),
           ariaLabel: L.intl.string(L.t["/dp6yc"]),
-          element: I.Z,
+          element: _.Z,
           notice: {
-            element: I.G,
+            element: _.G,
             stores: [N.Z]
           },
           predicate: () => !t.isModeratorReportChannel()
@@ -139,7 +139,7 @@ class k extends Chunk73800.PureComponent {
         }, {
           section: A.CoT.INSTANT_INVITES,
           label: L.intl.string(L.t["9F90iY"]),
-          element: _.Z,
+          element: I.Z,
           type: u.bT.CUSTOM,
           predicate: () => t.type !== x && r && !j && !t.isModeratorReportChannel()
         }, {
@@ -157,8 +157,8 @@ class k extends Chunk73800.PureComponent {
         }, {
           section: A.CoT.DELETE,
           onClick() {
-            (0, T.w)(t, function() {
-              w.S.subscribeOnce(A.CkL.LAYER_POP_COMPLETE, () => {
+            (0, Z.w)(t, function() {
+              T.S.subscribeOnce(A.CkL.LAYER_POP_COMPLETE, () => {
                 (0, o.zz)(t.id)
               }), (0, c.xf)()
             })

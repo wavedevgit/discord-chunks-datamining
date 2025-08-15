@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk249458 = require("./249458.js"),
   Chunk138599 = require("./138599.jsx"),
@@ -25,22 +25,22 @@ let d = e => {
   } = e;
   return (0, r.jsx)(s.G.Consumer, {
     children: e => (0, r.jsxs)("div", {
-      className: o()(i, u.wrapper, {
+      className: a()(i, u.wrapper, {
         [u.disableInteractions]: e.disableInteractions
       }),
       children: [f && null == t ? (0, r.jsx)("div", {
         className: u.iconWrapper,
-        children: (0, r.jsx)(a.o1U, {
+        children: (0, r.jsx)(o.o1U, {
           size: "xs",
           color: "currentColor",
           className: u.iconPlay
         })
-      }) : null, null != t ? (0, r.jsx)(a.P3F, {
+      }) : null, null != t ? (0, r.jsx)(o.P3F, {
         onClick: t,
         className: u.iconWrapperActive,
         tabIndex: f ? false : 0,
         "aria-label": c.intl.string(c.t.RscU7O),
-        children: (0, r.jsx)(a.o1U, {
+        children: (0, r.jsx)(o.o1U, {
           size: "xs",
           color: "currentColor",
           className: u.iconPlay

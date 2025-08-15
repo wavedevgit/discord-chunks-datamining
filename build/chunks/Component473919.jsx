@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk556638 = require("./556638.js"),
   Chunk80568 = require("./80568.js");
@@ -58,12 +58,12 @@ function _(e) {
     tooltipAriaLabel: i,
     className: c,
     onTooltipShow: d
-  } = e, _ = (0, a.vjg)(a.Skl.ONLINE);
+  } = e, _ = (0, o.vjg)(o.Skl.ONLINE);
   return null == n ? (0, r.jsx)(t, {
     size: "custom",
     color: _,
-    className: o()(l.icon, c)
-  }) : (0, r.jsx)(a.ua7, {
+    className: a()(l.icon, c)
+  }) : (0, r.jsx)(o.ua7, {
     text: n,
     "aria-label": i,
     tooltipContentClassName: l.container,
@@ -72,7 +72,7 @@ function _(e) {
     children: e => (0, r.jsx)(t, f(u({}, e), {
       size: "custom",
       color: _,
-      className: o()(l.icon, c)
+      className: a()(l.icon, c)
     }))
   })
 }

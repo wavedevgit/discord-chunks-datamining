@@ -1,7 +1,7 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 931928, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  u: () => _
+  u: () => O
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -18,12 +18,12 @@ var Chunk255367 = require("./255367.js"),
   Chunk921944 = require("./921944.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx");
-let O = [Chunk981631.Z5c.ME, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.NITRO_HOME],
-  _ = e => {
+let _ = [Chunk981631.Z5c.ME, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.NITRO_HOME],
+  O = e => {
     let {
       targetElementRef: t,
       scrollToBottom: n,
-      renderDiscoveryButton: _,
+      renderDiscoveryButton: O,
       isGuildBarScrolling: y
     } = e, {
       enabled: v
@@ -51,8 +51,8 @@ let O = [Chunk981631.Z5c.ME, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.
           dismissAction: g.L.INDIRECT_ACTION,
           groupName: g.R.VIRTUAL_CURRENCY_ONBOARDING
         }), d(e)
-      }, [d]), _ = i.useCallback(() => {
-        d("CTA_CLICK"), O.includes(r) || (0, s.uL)(f.Z5c.COLLECTIBLES_SHOP_WITH_TAB(h.AW.ORBS))
+      }, [d]), O = i.useCallback(() => {
+        d("CTA_CLICK"), _.includes(r) || (0, s.uL)(f.Z5c.COLLECTIBLES_SHOP_WITH_TAB(h.AW.ORBS))
       }, [d, r]), y = i.useCallback(() => {
         b("CTA_CLICK"), (0, c.Y)({
           pageType: f.ZY5.GUILD_LIST,
@@ -64,7 +64,7 @@ let O = [Chunk981631.Z5c.ME, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.
         shouldShow: u,
         questId: m.V6,
         onClose: b,
-        onCtaClick: _,
+        onCtaClick: O,
         onDiscoveryButtonClick: y
       } : {
         shouldShow: false,
@@ -79,7 +79,7 @@ let O = [Chunk981631.Z5c.ME, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.
         targetElementRef: t,
         scrollToBottom: n
       })
-    }), P = i.useMemo(() => ({
+    }), I = i.useMemo(() => ({
       onCtaClick: x,
       onClose: E,
       titleText: b.intl.string(b.t.KnWRQU),
@@ -92,10 +92,10 @@ let O = [Chunk981631.Z5c.ME, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.
       errorBoundarySource: "ORBS_DISCOVERY_ONBOARDING_COACHMARK",
       targetElementRef: t,
       targetQuestId: C,
-      renderDiscoveryButton: _,
+      renderDiscoveryButton: O,
       showingCoachmark: j,
       isGuildBarScrolling: y,
       onDiscoveryButtonClick: S,
-      innerCoachmarkProps: P
+      innerCoachmarkProps: I
     })
   }

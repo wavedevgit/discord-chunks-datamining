@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 324701, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 54157 **/
+/** chunk id: 324701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  x: () => b,
-  z: () => E
+  x: () => g,
+  z: () => _
 });
 var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
@@ -17,84 +16,77 @@ var Chunk255367 = require("./255367.js"),
   Chunk989925 = require("./989925.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function h(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      p(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function m(e, t) {
+function f(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, s = function(e, t) {
+    if (null == e) return {};
+    var n, r, s = {},
+      l = Object.keys(e);
+    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
+    return s
+  }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var l = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
   }
-  return i
+  return s
 }
-
-function g(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-async function E(e) {
+async function _(e) {
   var {
     displayToast: t = false
-  } = e, p = m(e, ["displayToast"]);
-  if (null == c.Z.getSavedMessage(p.channelId, p.messageId) && !(0, u.Z)()) return void(0, i.ZDy)(async () => {
+  } = e, _ = f(e, ["displayToast"]);
+  if (null == c.Z.getSavedMessage(_.channelId, _.messageId) && !(0, u.Z)()) return void(0, s.ZDy)(async () => {
     let {
       default: e
     } = await n.e("34906").then(n.bind(n, 639565));
-    return t => (0, r.jsx)(e, h({
+    return t => (0, r.jsx)(e, function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({
       source: a.Z.FOR_LATER_HELPERS
     }, t))
   });
-  if (null != await (0, l.XA)(p).catch(e => {
+  if (null != await (0, o.XA)(_).catch(e => {
       var t, n, r;
-      return (null == e || null == (t = e.body) ? true : t.code) === d.evJ.TOO_MANY_SAVED_MESSAGES ? o.Z.show({
-        title: _.intl.string(_.t.mlbiZW),
-        body: _.intl.formatToPlainString(_.t["1zVbEB"], {
-          max: f.D
+      return (null == e || null == (t = e.body) ? true : t.code) === d.evJ.TOO_MANY_SAVED_MESSAGES ? l.Z.show({
+        title: p.intl.string(p.t.mlbiZW),
+        body: p.intl.formatToPlainString(p.t["1zVbEB"], {
+          max: h.D
         }),
-        cancelText: _.intl.string(_.t.BddRzc),
-        confirmText: _.intl.string(_.t.ZGbTc3),
-        onConfirm: () => s.S.dispatch(d.CkL.TOGGLE_FOR_LATER)
-      }) : (0, i.showToast)((0, i.createToast)(null != (r = null == e || null == (n = e.body) ? true : n.message) ? r : _.intl.string(_.t.R0RpRU), i.ToastType.FAILURE)), null
+        cancelText: p.intl.string(p.t.BddRzc),
+        confirmText: p.intl.string(p.t.ZGbTc3),
+        onConfirm: () => i.S.dispatch(d.CkL.TOGGLE_FOR_LATER)
+      }) : (0, s.showToast)((0, s.createToast)(null != (r = null == e || null == (n = e.body) ? true : n.message) ? r : p.intl.string(p.t.R0RpRU), s.ToastType.FAILURE)), null
     }) && t) {
-    let e = null != p.dueAt ? _.intl.string(_.t.i1IsOz) : _.intl.string(_.t["WQdL//"]),
-      t = null != p.dueAt ? i.ToastType.CLOCK : i.ToastType.BOOKMARK;
-    (0, i.showToast)((0, i.createToast)(e, t))
+    let e = null != _.dueAt ? p.intl.string(p.t.i1IsOz) : p.intl.string(p.t["WQdL//"]),
+      t = null != _.dueAt ? s.ToastType.CLOCK : s.ToastType.BOOKMARK;
+    (0, s.showToast)((0, s.createToast)(e, t))
   }
 }
-async function b(e) {
+async function g(e) {
   var {
     displayToast: t = false
-  } = e, n = m(e, ["displayToast"]);
-  if (null != await (0, l.ep)(n).catch(e => {
+  } = e, n = f(e, ["displayToast"]);
+  if (null != await (0, o.ep)(n).catch(e => {
       var t, n;
-      return (0, i.showToast)((0, i.createToast)(null != (n = null == e || null == (t = e.body) ? true : t.message) ? n : _.intl.string(_.t.R0RpRU), i.ToastType.FAILURE)), null
+      return (0, s.showToast)((0, s.createToast)(null != (n = null == e || null == (t = e.body) ? true : t.message) ? n : p.intl.string(p.t.R0RpRU), s.ToastType.FAILURE)), null
     }) && t) {
-    let e = null != n.dueAt ? _.intl.string(_.t.D0tS09) : _.intl.string(_.t["5KOMiY"]),
-      t = null != n.dueAt ? i.ToastType.CLOCK : i.ToastType.BOOKMARK;
-    (0, i.showToast)((0, i.createToast)(e, t))
+    let e = null != n.dueAt ? p.intl.string(p.t.D0tS09) : p.intl.string(p.t["5KOMiY"]),
+      t = null != n.dueAt ? s.ToastType.CLOCK : s.ToastType.BOOKMARK;
+    (0, s.showToast)((0, s.createToast)(e, t))
   }
 }

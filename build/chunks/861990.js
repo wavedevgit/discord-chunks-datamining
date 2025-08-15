@@ -5,11 +5,11 @@ require.d(exports, {
   B: () => l,
   Lc: () => c,
   hn: () => u,
-  zz: () => a
+  zz: () => o
 }), require("./953529.js"), require("./415506.js"), require("./35282.js");
 var Chunk830496 = require("./830496.js"),
   Chunk959517 = require("./959517.js");
-let o = [{
+let a = [{
     reName: /\.jpe?g$/i,
     name: e => "image".concat(e, ".jpg"),
     type: "image/jpeg"
@@ -58,7 +58,7 @@ let o = [{
     name: e => "video".concat(e, ".webm"),
     type: "image/webm"
   }],
-  a = 524288e3;
+  o = 524288e3;
 
 function s(e) {
   let {
@@ -71,14 +71,14 @@ function l(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
     i = arguments.length > 2 ? arguments[2] : true,
-    o = {
+    a = {
       id: null != (t = null == n ? true : n.toString()) ? t : e.id
     };
-  null != e.description && (o.description = e.description);
-  let a = s({
+  null != e.description && (a.description = e.description);
+  let o = s({
     spoiler: e.spoiler
   });
-  return o.filename = "".concat(a).concat(null != i ? i : e.filename), o.uploaded_filename = e.uploadedFilename, "durationSecs" in e && null != e.durationSecs && (o.duration_secs = e.durationSecs), "waveform" in e && null != e.waveform && (o.waveform = e.waveform), "isThumbnail" in e && true === e.isThumbnail && (o.is_thumbnail = e.isThumbnail), "isRemix" in e && true === e.isRemix && (o.is_remix = e.isRemix), "clip" in e && null != e.clip && (o.is_clip = true, o.title = e.clip.name, o.application_id = e.clip.applicationId, o.clip_created_at = (0, r.U)(e.clip.id), o.clip_participant_ids = (0, r.Z)(e.clip.users)), "item" in e && null != e.item && "originalContentType" in e.item && (o.original_content_type = e.item.originalContentType), o
+  return a.filename = "".concat(o).concat(null != i ? i : e.filename), a.uploaded_filename = e.uploadedFilename, "durationSecs" in e && null != e.durationSecs && (a.duration_secs = e.durationSecs), "waveform" in e && null != e.waveform && (a.waveform = e.waveform), "isThumbnail" in e && true === e.isThumbnail && (a.is_thumbnail = e.isThumbnail), "isRemix" in e && true === e.isRemix && (a.is_remix = e.isRemix), "clip" in e && null != e.clip && (a.is_clip = true, a.title = e.clip.name, a.application_id = e.clip.applicationId, a.clip_created_at = (0, r.U)(e.clip.id), a.clip_participant_ids = (0, r.Z)(e.clip.users)), "item" in e && null != e.item && "originalContentType" in e.item && (a.original_content_type = e.item.originalContentType), a
 }
 
 function c(e) {
@@ -92,7 +92,7 @@ function c(e) {
 }
 
 function u(e) {
-  var t, n, r, i, a, s;
+  var t, n, r, i, o, s;
   let l, {
       uri: c,
       i: u,
@@ -102,8 +102,8 @@ function u(e) {
     _ = c.split("/"),
     p = _[_.length - 1];
   p = null != (r = null == (n = p.split("?")) || null == (t = n[0]) ? true : t.toLowerCase()) ? r : "";
-  let h = o.find(e => e.reName.test(p));
-  if (null == h && null != d && (h = o.find(e => e.reName.test(d))), null != h && null != d) {
+  let h = a.find(e => e.reName.test(p));
+  if (null == h && null != d && (h = a.find(e => e.reName.test(d))), null != h && null != d) {
     let e = h.name(u).split(".").pop(),
       t = d.lastIndexOf(".");
     l = false !== t ? "".concat(d.substr(0, t), ".").concat(e) : "".concat(d, ".").concat(e)
@@ -112,7 +112,7 @@ function u(e) {
     uri: c,
     filename: l,
     type: null != (i = null != f ? f : null == h ? true : h.type) ? i : "unknown",
-    isVideo: false !== (null != (a = null != f ? f : null == h ? true : h.name(u)) ? a : "").indexOf("video"),
+    isVideo: false !== (null != (o = null != f ? f : null == h ? true : h.name(u)) ? o : "").indexOf("video"),
     isImage: false !== (null != (s = null != f ? f : null == h ? true : h.name(u)) ? s : "").indexOf("image")
   }
 }

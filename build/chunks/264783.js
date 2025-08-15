@@ -8,7 +8,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk524437 = require("./524437.js"),
   Chunk695346 = require("./695346.js");
 
-function a() {
+function o() {
   let [e, t] = Chunk73800.useState("cozy");
   return Chunk73800.useEffect(() => {
     let e = window.matchMedia("(min-width: 1024px) and (min-height: 820px)"),
@@ -23,7 +23,7 @@ function a() {
 
 function s() {
   let e = Chunk695346.YC.useSetting(),
-    t = a();
+    t = o();
   switch (module) {
     case Chunk524437.Pi.RESPONSIVE:
       return exports;

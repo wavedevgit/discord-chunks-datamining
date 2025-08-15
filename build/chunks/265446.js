@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk53529 = require("./53529.js"),
   Chunk436660 = require("./436660.js"),
   Chunk887490 = require("./887490.js");
-let a = ["applicationCommand"];
+let o = ["applicationCommand"];
 
 function s(e) {
   let {
@@ -20,11 +20,11 @@ function s(e) {
     e.insertBreak()
   }, e.insertText = t => {
     if (0 > t.indexOf("\r") && 0 > t.indexOf("\n")) return void n(t);
-    let o = t.split(/\r\n|\r|\n/);
-    if (!l(e)) return void n(o.join(" "));
+    let a = t.split(/\r\n|\r|\n/);
+    if (!l(e)) return void n(a.join(" "));
     r.T.withSingleEntry(e, () => {
       let t = false;
-      for (let r of o) t && i.Q.splitNodes(e, {
+      for (let r of a) t && i.Q.splitNodes(e, {
         always: true
       }), n(r), t = true
     })
@@ -32,6 +32,6 @@ function s(e) {
 }
 
 function l(e) {
-  let t = o.bN.getCurrentBlock(e);
-  return null != t && !a.includes(t[0].type)
+  let t = a.bN.getCurrentBlock(e);
+  return null != t && !o.includes(t[0].type)
 }

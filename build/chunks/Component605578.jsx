@@ -76,11 +76,11 @@ let d = Chunk73800.forwardRef(function(e, t) {
     onDoubleClick: p,
     onMouseDown: y,
     onContextMenu: h,
-    children: [(0, r.jsx)(o.P, u(l({}, v), {
+    children: [(0, r.jsx)(a.P, u(l({}, v), {
       focusProps: l({
         ringTarget: T
       }, f),
-      className: a.focusTarget,
+      className: o.focusTarget,
       "aria-label": I,
       onClick: e => {
         e.stopPropagation(), null == _ || _(e)

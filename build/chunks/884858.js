@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 884858, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 89006 **/
+/** chunk id: 884858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -10,9 +9,9 @@ var Chunk531643 = require("./531643.jsx"),
 
 function a(e) {
   (0, r.openUploadError)({
-    title: o.intl.string(o.t["/tGlcn"]),
-    help: o.intl.formatToPlainString(o.t.fxEKdX, {
-      maxSize: (0, i.Ng)(e)
+    title: i.intl.string(i.t["/tGlcn"]),
+    help: i.intl.formatToPlainString(i.t.fxEKdX, {
+      maxSize: (0, o.Ng)(e)
     })
   })
 }

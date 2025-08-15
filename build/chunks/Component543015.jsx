@@ -105,7 +105,7 @@ let ec = Chunk73800.memo(function(e) {
     let a = (0, h.e7)([q.ZP], () => q.ZP.getCurrentSidebarChannelId(r.parent_id) === r.id),
       {
         firstMessage: l
-      } = (0, P.cl)(r),
+      } = (0, O.cl)(r),
       s = function(e) {
         let {
           firstMessage: t,
@@ -137,7 +137,7 @@ let ec = Chunk73800.memo(function(e) {
       d = null == s ? true : s.firstMedia,
       {
         messageCountText: u
-      } = (0, w.nP)(r);
+      } = (0, T.nP)(r);
     return {
       channel: r,
       isOpen: a,
@@ -151,7 +151,7 @@ let ec = Chunk73800.memo(function(e) {
     overrideMedia: s
   });
   (0, ee.KK)(j);
-  let C = (0, h.e7)([Y.default, X.Z], () => {
+  let _ = (0, h.e7)([Y.default, X.Z], () => {
       var e, t, n, r, i, a;
       let l = Y.default.getUser(null == j || null == (t = j.messageSnapshots[0]) || null == (e = t.moderatorReport) ? true : e.reported_user_id);
       if (null != l) return l;
@@ -162,21 +162,21 @@ let ec = Chunk73800.memo(function(e) {
       return null
     }),
     {
-      ref: _,
+      ref: C,
       height: y
     } = (0, x.ZP)(),
-    O = (0, I.xH)(e => e.setCardHeight, u.X);
+    w = (0, I.xH)(e => e.setCardHeight, u.X);
   i.useEffect(() => {
-    null != y && O(t, y)
-  }, [y, O, t]), i.useEffect(() => {
-    null == a || a(_.current, t)
-  }, [_, a, t]);
-  let T = i.useRef(null),
+    null != y && w(t, y)
+  }, [y, w, t]), i.useEffect(() => {
+    null == a || a(C.current, t)
+  }, [C, a, t]);
+  let N = i.useRef(null),
     {
-      handleLeftClick: N,
+      handleLeftClick: P,
       handleRightClick: E
     } = (0, M.Z)({
-      facepileRef: T,
+      facepileRef: N,
       goToThread: n,
       channel: d
     }),
@@ -206,17 +206,17 @@ let ec = Chunk73800.memo(function(e) {
       handleBlur: U
     } = (0, R.Z)(F);
   return (0, r.jsxs)("div", {
-    ref: _,
+    ref: C,
     "data-item-id": t,
-    onClick: N,
+    onClick: P,
     onContextMenu: E,
     className: l()(el.container, ea.container, c, {
       [el.isOpen]: f
     }),
     children: [(0, r.jsx)(g.P3F, eo({
-      onClick: N,
+      onClick: P,
       focusProps: {
-        ringTarget: _
+        ringTarget: C
       },
       onContextMenu: E,
       "aria-label": ei.intl.formatToPlainString(ei.t.pgYN6e, {
@@ -236,7 +236,7 @@ let ec = Chunk73800.memo(function(e) {
             firstMessage: j,
             content: b,
             hasMediaAttachment: null != v,
-            originalAuthor: C
+            originalAuthor: _
           }), (null == j ? true : j.blocked) || null == v ? null : (0, r.jsx)(eb, {
             channel: d,
             firstMedia: v
@@ -247,7 +247,7 @@ let ec = Chunk73800.memo(function(e) {
         children: (0, r.jsx)(em, {
           channel: d,
           firstMessage: j,
-          facepileRef: T
+          facepileRef: N
         })
       })]
     })]
@@ -263,7 +263,7 @@ function ed(e) {
     originalAuthor: s
   } = e, {
     hasUnreads: o
-  } = (0, w.J$)(t);
+  } = (0, T.J$)(t);
   return (0, r.jsxs)("div", {
     className: l()(ea.body, el.body),
     children: [(0, r.jsx)(E.ZP, {
@@ -289,7 +289,7 @@ let eu = Chunk73800.memo(function(e) {
     hasMediaAttachment: a,
     hasUnreads: s,
     originalAuthor: o
-  } = e, c = (0, h.e7)([T.Z], () => T.Z.isLoading(n.id)), d = (0, h.e7)([K.Z], () => K.Z.can(en.Plq.MANAGE_MESSAGES, n)), u = G.cC.useSetting(), m = (0, h.e7)([J.Z], () => J.Z.getGuildId()), {
+  } = e, c = (0, h.e7)([N.Z], () => N.Z.isLoading(n.id)), d = (0, h.e7)([K.Z], () => K.Z.can(en.Plq.MANAGE_MESSAGES, n)), u = G.cC.useSetting(), m = (0, h.e7)([J.Z], () => J.Z.getGuildId()), {
     contentPlaceholder: f,
     renderedContent: x
   } = null == t ? {
@@ -310,7 +310,7 @@ let eu = Chunk73800.memo(function(e) {
     "aria-label": "",
     children: null == t ? c ? null : ei.intl.string(ei.t.mE3KJC) : f
   });
-  return (0, r.jsxs)(_.aQ.Provider, {
+  return (0, r.jsxs)(C.aQ.Provider, {
     value: (0, D.Z)(u, d),
     children: [null != o ? (0, r.jsx)(g.qEK, {
       size: g.EFr.SIZE_40,
@@ -338,7 +338,7 @@ function em(e) {
     firstMessage: i
   } = e, {
     isNew: a
-  } = (0, w.J$)(t), l = (0, C.Q)(t.id), s = (null == i ? true : i.reactions) != null && i.reactions.length > 0;
+  } = (0, T.J$)(t), l = (0, _.Q)(t.id), s = (null == i ? true : i.reactions) != null && i.reactions.length > 0;
   return (0, r.jsxs)("div", {
     className: ea.footer,
     children: [(0, r.jsxs)("div", {
@@ -398,7 +398,7 @@ function eh(e) {
   } = e, {
     messageCountText: a,
     unreadCount: s
-  } = (0, w.nP)(t);
+  } = (0, T.nP)(t);
   return (0, r.jsxs)("div", {
     className: l()(el.messageCountBox, {
       [el.hasRead]: i && null == s
@@ -433,7 +433,7 @@ function eg(e) {
   let {
     firstMessage: t,
     channel: n
-  } = e, i = (0, h.e7)([W.Z], () => W.Z.getChannel(n.parent_id)), a = (0, w.Bs)(i), {
+  } = e, i = (0, h.e7)([W.Z], () => W.Z.getChannel(n.parent_id)), a = (0, T.Bs)(i), {
     disableReactionCreates: l,
     isLurking: s,
     isPendingMember: o
@@ -463,7 +463,7 @@ function ef(e) {
     channel: n
   } = e, {
     sortOrder: i
-  } = (0, O.H)(n.parent_id), a = (0, w.xw)(n, i), l = null == (t = n.threadMetadata) ? true : t.createTimestamp, s = null == l ? null : ei.intl.formatToPlainString(ei.t["13euCQ"], {
+  } = (0, w.H)(n.parent_id), a = (0, T.xw)(n, i), l = null == (t = n.threadMetadata) ? true : t.createTimestamp, s = null == l ? null : ei.intl.formatToPlainString(ei.t["13euCQ"], {
     timestamp: (0, $.vc)(d()(l), "LLLL")
   });
   return (0, r.jsx)(g.ua7, {
@@ -496,7 +496,7 @@ function ex(e) {
     channel: t,
     userIds: n,
     facepileRef: i
-  } = e, a = (0, w.iM)(t, n);
+  } = e, a = (0, T.iM)(t, n);
   return (0, r.jsx)("div", {
     ref: i,
     children: (0, r.jsx)(p.ZP, {
@@ -592,7 +592,7 @@ function eb(e) {
         shouldObscure: i,
         obscureReason: a,
         shouldShowAgeVerification: s
-      }), i && (0, r.jsx)(N.Z, {
+      }), i && (0, r.jsx)(P.Z, {
         iconClassname: el.obscuredTag,
         obscureReason: a
       })]

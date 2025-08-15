@@ -1,21 +1,20 @@
-/** Chunk was on web.js **/
-/** chunk id: 187462, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 54157 **/
+/** chunk id: 187462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
 var Chunk558706 = require("./558706.js"),
   Chunk170216 = require("./170216.js");
-class o extends Chunk170216.L {
+class l extends Chunk170216.L {
   create(e) {
     let {
       id: t,
       searchType: n,
-      searchQuery: i
+      searchQuery: s
     } = e;
     this.cancel(t);
-    let o = new r.Yn(t, n, i);
-    return this.set(t, o), o
+    let l = new r.Yn(t, n, s);
+    return this.set(t, l), l
   }
 }
-let a = new o
+let a = new l

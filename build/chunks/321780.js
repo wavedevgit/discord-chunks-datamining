@@ -1,21 +1,21 @@
-/** Chunk was on web.js **/
-/** chunk id: 321780, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 321780, original params: t,e,r (module,exports,require) **/
 "use strict";
-var r = require("./207549.js").getPunctuation(),
+var n = require("./207549.js").getPunctuation(),
   i = "['‘’]",
-  o = "\\s|(?![_])" + r,
+  o = "\\s|(?![_])" + n,
   a = RegExp("^(?:" + o + ")*(?:" + i + "|(?!" + o + ").)*(?:(?!" + o + ").)"),
-  s = RegExp("(?:(?!" + o + ").)(?:" + i + "|(?!" + o + ").)*(?:" + o + ")*$");
+  u = RegExp("(?:(?!" + o + ").)(?:" + i + "|(?!" + o + ").)*(?:" + o + ")*$");
 
-function l(e, t) {
-  var n = t ? s.exec(e) : a.exec(e);
-  return n ? n[0] : e
+function s(t, e) {
+  var r = e ? u.exec(t) : a.exec(t);
+  return r ? r[0] : t
 }
 module.exports = {
-  getBackward: function(e) {
-    return l(e, true)
+  getBackward: function(t) {
+    return s(t, true)
   },
-  getForward: function(e) {
-    return l(e, false)
+  getForward: function(t) {
+    return s(t, false)
   }
 }

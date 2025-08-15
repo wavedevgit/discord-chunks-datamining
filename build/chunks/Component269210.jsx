@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 269210, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 74891 **/
+/** chunk id: 269210, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Gm: () => m,
-  Uj: () => h,
-  ZI: () => p
+  Gm: () => O,
+  Uj: () => S,
+  ZI: () => f
 }), require("./953529.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk708816 = require("./708816.jsx"),
   Chunk368072 = require("./368072.jsx"),
   Chunk777207 = require("./777207.jsx"),
@@ -17,90 +16,89 @@ var Chunk120356 = require("./120356.js"),
   Chunk330711 = require("./330711.js"),
   Chunk870756 = require("./870756.js"),
   Chunk818632 = require("./818632.js");
-let _ = 48,
-  p = 5;
+let f = 5;
 
-function h(e) {
+function S(t) {
   let {
-    description: t,
+    description: e,
     imgSrc: n,
-    renderPurchaseButton: i,
-    onPurchase: h,
-    title: m,
-    onDetails: g,
-    benefitItems: E,
-    benefitsSummary: b,
-    subtitle: y,
-    maxBenefits: O = p
-  } = e;
-  return (0, r.jsx)(a.tE, {
-    children: (0, r.jsxs)("div", {
-      className: o()(d.container, f.hoverCard),
+    renderPurchaseButton: r,
+    onPurchase: S,
+    title: O,
+    onDetails: I,
+    benefitItems: b,
+    benefitsSummary: g,
+    subtitle: _,
+    maxBenefits: y = f
+  } = t;
+  return (0, i.jsx)(o.tE, {
+    children: (0, i.jsxs)("div", {
+      className: l()(d.container, p.hoverCard),
       tabIndex: 0,
       onClick: () => {
-        null != g ? g() : null != h && h()
+        null != I ? I() : null != S && S()
       },
-      onKeyUp: e => {
-        "Enter" === e.key && (e.stopPropagation(), e.preventDefault(), null != g ? g() : null != h && h())
+      onKeyUp: t => {
+        "Enter" === t.key && (t.stopPropagation(), t.preventDefault(), null != I ? I() : null != S && S())
       },
-      children: [(0, r.jsx)("div", {
+      children: [(0, i.jsx)("div", {
         className: d.card,
-        children: (0, r.jsxs)("div", {
+        children: (0, i.jsxs)("div", {
           className: d.body,
-          children: [(0, r.jsx)(l.x, {
+          children: [(0, i.jsx)(u.x, {
             tag: "div",
             variant: "heading-lg/semibold",
-            children: m
-          }), (0, r.jsx)("div", {
+            children: O
+          }), (0, i.jsx)("div", {
             className: d.image,
-            children: null != n ? (0, r.jsx)("img", {
+            children: null != n ? (0, i.jsx)("img", {
               src: n.toString(),
               alt: ""
-            }) : (0, r.jsx)(s.V, {
-              color: c.Z.colors.ICON_PRIMARY,
+            }) : (0, i.jsx)(a.V, {
+              color: s.Z.colors.ICON_PRIMARY,
               size: "custom",
-              height: _,
-              width: _
+              height: 48,
+              width: 48
             })
-          }), null != i ? i({
-            onClick: e => {
-              e.stopPropagation(), null == h || h()
+          }), null != r ? r({
+            onClick: t => {
+              t.stopPropagation(), null == S || S()
             }
-          }) : null, y, null != t && "" !== t && (0, r.jsx)(l.x, {
+          }) : null, _, null != e && "" !== e && (0, i.jsx)(u.x, {
             className: d.description,
             color: "text-default",
             variant: "text-sm/medium",
-            children: t
+            children: e
           })]
         })
-      }), null != b && (0, r.jsx)("div", {
+      }), null != g && (0, i.jsx)("div", {
         className: d.benefitsSummary,
-        children: (0, r.jsx)(l.x, {
+        children: (0, i.jsx)(u.x, {
           color: "interactive-normal",
           variant: "text-sm/medium",
-          children: u.Z.Messages.STOREFRONT_BENEFITS_SUMMARY.format({
-            count: b
+          children: c.Z.Messages.STOREFRONT_BENEFITS_SUMMARY.format({
+            count: g
           })
         })
-      }), null != E && E.length > 0 && (0, r.jsx)("div", {
+      }), null != b && b.length > 0 && (0, i.jsx)("div", {
         className: d.benefits,
-        children: (0, r.jsx)("div", {
+        children: (0, i.jsx)("div", {
           className: d.benefitsContainer,
-          children: (0, r.jsxs)("div", {
+          children: (0, i.jsxs)("div", {
             className: d.benefitsList,
-            children: [(0, r.jsx)(l.x, {
+            children: [(0, i.jsx)(u.x, {
               color: "header-secondary",
               variant: "eyebrow",
-              children: u.Z.Messages.STOREFRONT_BENEFITS_TITLE
-            }), E.length > O ? (0, r.jsxs)(r.Fragment, {
-              children: [E.slice(0, O), (0, r.jsx)(l.x, {
+              children: c.Z.Messages.STOREFRONT_BENEFITS_TITLE
+            }), b.length > y ? (0, i.jsxs)(i.Fragment, {
+              children: [b.slice(0, y), (0, i.jsx)(u.x, {
                 variant: "text-md/semibold",
                 color: "text-secondary",
-                children: u.Z.Messages.STOREFRONT_MORE_BENEFITS.format({
-                  count: E.length - O
+                children: c.Z.Messages.STOREFRONT_MORE_BENEFITS.format({
+                  count: b.length - y
                 })
               })]
-            }) : E]
+            }) : b]
           })
         })
       })]
@@ -108,25 +106,25 @@ function h(e) {
   })
 }
 
-function m(e) {
+function O(t) {
   let {
-    icon: t,
+    icon: e,
     header: n,
-    description: i
-  } = e;
-  return (0, r.jsxs)("div", {
+    description: r
+  } = t;
+  return (0, i.jsxs)("div", {
     className: d.cardBenefit,
-    children: [(0, r.jsx)("div", {
+    children: [(0, i.jsx)("div", {
       className: d.cardBenefitIcon,
-      children: t
-    }), (0, r.jsxs)("div", {
-      children: [null != n && (0, r.jsx)(l.x, {
+      children: e
+    }), (0, i.jsxs)("div", {
+      children: [null != n && (0, i.jsx)(u.x, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: n
-      }), (0, r.jsx)(l.x, {
+      }), (0, i.jsx)(u.x, {
         variant: "text-sm/normal",
-        children: i
+        children: r
       })]
     })]
   })

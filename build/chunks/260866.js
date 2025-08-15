@@ -17,20 +17,20 @@ require.d(exports, {
   P2: () => f,
   ie: () => i,
   jb: () => s,
-  kn: () => o,
+  kn: () => a,
   qR: () => u,
   x3: () => l
 }), require("./35282.js"), require("./388685.js");
 let i = "data-list-item-id",
-  o = "data-list-id",
-  a = "___";
+  a = "data-list-id",
+  o = "___";
 
 function s(e, t) {
-  return "".concat(e).concat(a).concat(t)
+  return "".concat(e).concat(o).concat(t)
 }
 
 function l(e) {
-  return e.split(a)[1]
+  return e.split(o)[1]
 }
 
 function c(e) {
@@ -49,7 +49,7 @@ function d(e, t, n) {
 function f(e, t) {
   let n = false;
   return function() {
-    for (var r = arguments.length, i = Array(r), o = 0; o < r; o++) i[o] = arguments[o];
+    for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
     n || (e(...i), n = true, setTimeout(() => n = false, t))
   }
 }

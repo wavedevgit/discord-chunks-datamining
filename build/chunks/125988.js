@@ -25,12 +25,12 @@ let f = e => {
     avatarDecorationOverride: g
   } = e, [E, b] = r.useState(false), {
     canAnimate: y
-  } = (0, o.j)(E, p), O = (0, i.e7)([s.ZP], () => null != f && null != n ? s.ZP.getMember(f, n.id) : null), v = (0, i.e7)([l.default], () => {
+  } = (0, a.j)(E, p), O = (0, i.e7)([s.ZP], () => null != f && null != n ? s.ZP.getMember(f, n.id) : null), v = (0, i.e7)([l.default], () => {
     var e;
     return null == (e = l.default.getCurrentUser()) ? true : e.id
   }), I = null == O ? null == n ? true : n.avatarDecoration : null === O.avatarDecoration ? null : null != (t = O.avatarDecoration) ? t : null == n ? true : n.avatarDecoration, {
     pendingAvatarDecoration: T
-  } = (0, a.Z)({
+  } = (0, o.Z)({
     isTryItOut: m,
     guildId: f
   }), S = h && true !== T && true !== v && v === (null == n ? true : n.id), A = null != f && null === T, N = (0, u.Z)(S ? A ? null == n ? true : n.avatarDecoration : null != T ? T : I : null != I ? I : null == n ? true : n.avatarDecoration), C = r.useMemo(() => (0, c.NZ)({

@@ -84,14 +84,14 @@ function v(e) {
       n = new Date(e.current_set_start),
       r = new Date(e.current_set_end),
       i = new Date(e.next_set_start),
-      o = new Date(e.next_set_end);
+      a = new Date(e.next_set_end);
     if (t >= n && t < r) return {
       currentSet: e.current_set,
       catalogUpdateTime: r
     };
-    if (t >= i && t < o) return {
+    if (t >= i && t < a) return {
       currentSet: e.next_set,
-      catalogUpdateTime: o
+      catalogUpdateTime: a
     }
   }
   return {
@@ -119,8 +119,8 @@ function S(e) {
   } = e, r = y();
   E.catalogFetchFailed = false, E.models = t.models, E.limitedTimeVoices = t.limited_time_voices;
   let i = {},
-    o = v(E.limitedTimeVoices);
-  if (E.catalogUpdateTime = o.catalogUpdateTime, r)
+    a = v(E.limitedTimeVoices);
+  if (E.catalogUpdateTime = a.catalogUpdateTime, r)
     for (let e of Object.keys(d.x)) i[e] = h(_({}, d.x[e]), {
       id: e,
       modelIds: true,
@@ -129,13 +129,13 @@ function S(e) {
   for (let {
       id: e,
       models: n,
-      available: a
+      available: o
     }
     of t.voices) Object.hasOwn(d.x, e) && (i[e] = h(_({}, d.x[e]), {
     id: e,
     modelIds: n,
-    available: !!r || a,
-    temporarilyAvailable: o.currentSet.includes(e)
+    available: !!r || o,
+    temporarilyAvailable: a.currentSet.includes(e)
   }));
   E.voiceFilters = i, E.sortedVoiceFilters = T(E.voiceFilters), E.catalogLastFetchTime = new Date, null != n && (Object.keys(E.modelState).length > 0 ? E.modelState = n : g.warn("Attempted to replace existing model state with initial model state"))
 }
@@ -261,7 +261,7 @@ function L(e) {
   let {
     timeInSeconds: t
   } = e;
-  I((0, o.Z)(new Date, t))
+  I((0, a.Z)(new Date, t))
 }
 
 function x(e) {
@@ -272,11 +272,11 @@ function M() {
   E.error = "ERROR_ACTIVATING_VOICE_FILTER"
 }
 
-function j() {
+function k() {
   E.error = null
 }
 
-function k() {
+function j() {
   b = Date.now()
 }
 f(N, "displayName", "VoiceFilterStore");
@@ -291,6 +291,6 @@ let U = new N(Chunk570140.Z, {
   VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME: L,
   VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE: x,
   VOICE_FILTER_APPLY_FAILED: M,
-  VOICE_FILTER_REQUEST_SWITCH: j,
-  VOICE_FILTER_LAGGING: k
+  VOICE_FILTER_REQUEST_SWITCH: k,
+  VOICE_FILTER_LAGGING: j
 })

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 360328, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 360328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  s: () => f
+  s: () => p
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,39 +13,39 @@ var Chunk255367 = require("./255367.js"),
   Chunk246364 = require("./246364.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e, t, f, _) {
-  let [p, h] = i.useState(false), m = (0, o.e7)([l.Z], () => l.Z.getChannel(_)), g = i.useCallback(() => {
+function p(e, t, p, h) {
+  let [f, m] = i.useState(false), g = (0, l.e7)([s.Z], () => s.Z.getChannel(h)), b = i.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(d.intl.string(d.t.R0RpRU), a.ToastType.FAILURE))
-  }, []), E = i.useCallback(async () => {
-    if (!p && null != e && null != t && null != f) {
-      if (null != m) return void s.default.selectPrivateChannel(m.id);
-      if (!p) {
-        h(true);
+  }, []), y = i.useCallback(async () => {
+    if (!f && null != e && null != t && null != p) {
+      if (null != g) return void o.default.selectPrivateChannel(g.id);
+      if (!f) {
+        m(true);
         try {
-          await c.Z.createOrEnterJoinRequestInterview(f)
+          await c.Z.createOrEnterJoinRequestInterview(p)
         } catch (e) {
-          g()
+          b()
         } finally {
-          h(false)
+          m(false)
         }
       }
     }
-  }, [e, f, m, g, p, t]);
+  }, [e, p, g, b, f, t]);
   return {
     approveRequest: async () => {
-      if (!p && null != e && null != t && null != f) {
-        h(true);
+      if (!f && null != e && null != t && null != p) {
+        m(true);
         try {
-          await c.Z.updateGuildJoinRequest(e, t, f, u.wB.APPROVED)
+          await c.Z.updateGuildJoinRequest(e, t, p, u.wB.APPROVED)
         } catch (e) {
-          g()
+          b()
         } finally {
-          h(false)
+          m(false)
         }
       }
     },
     rejectRequest: () => {
-      null != e && null != t && null != f && (0, a.ZDy)(async () => {
+      null != e && null != t && null != p && (0, a.ZDy)(async () => {
         let {
           default: i
         } = await n.e("56496").then(n.bind(n, 113886));
@@ -54,12 +53,12 @@ function f(e, t, f, _) {
           modalProps: n,
           guildId: e,
           userId: t,
-          guildJoinRequestId: f,
-          onError: g
+          guildJoinRequestId: p,
+          onError: b
         })
       })
     },
-    submitting: p,
-    handleOpenInterview: E
+    submitting: f,
+    handleOpenInterview: y
   }
 }

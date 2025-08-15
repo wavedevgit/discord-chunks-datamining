@@ -54,8 +54,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let h = {
@@ -77,7 +77,7 @@ let h = {
       var {
         text: t,
         position: n,
-        align: a,
+        align: o,
         caretAlign: l,
         customOffset: c,
         delay: d,
@@ -94,12 +94,12 @@ let h = {
       return (0, r.jsx)(s.u, f(u({
         text: t,
         position: n,
-        align: a,
+        align: o,
         delay: d,
         spacing: p,
         caretConfig: m
       }, h), {
-        children: (0, r.jsx)(o.zxk, {
+        children: (0, r.jsx)(a.zxk, {
           variant: "primary",
           text: "Hover me"
         })
@@ -212,7 +212,7 @@ let h = {
           src: l.Z,
           alt: "Graphic"
         }) : true, [s]);
-      return (0, r.jsx)(a.i_, f(u({
+      return (0, r.jsx)(o.i_, f(u({
         title: t,
         body: n,
         position: c,
@@ -222,7 +222,7 @@ let h = {
         caretConfig: b,
         asset: y
       }, E), {
-        children: (0, r.jsx)(o.zxk, {
+        children: (0, r.jsx)(a.zxk, {
           variant: "primary",
           text: "Hover me (rich)"
         })

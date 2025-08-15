@@ -9,7 +9,7 @@ module.exports = function(e) {
     },
     r = /(_[a-z_\d]+)?/,
     i = /([de][+-]?\d+)?/,
-    o = {
+    a = {
       className: "number",
       variants: [{
         begin: t.concat(/\b\d+/, /\.(\d*)/, i, r)
@@ -44,6 +44,6 @@ module.exports = function(e) {
       relevance: 0
     }), e.COMMENT("begin_doc", "end_doc", {
       relevance: 10
-    }), o]
+    }), a]
   }
 }

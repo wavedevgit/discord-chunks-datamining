@@ -1,43 +1,41 @@
-/** Chunk was on web.js **/
-/** chunk id: 171277, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 171277, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk254238 = require("./254238.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk508773 = require("./508773.js");
-let f = 280;
 
-function _(e) {
+function p(e) {
   let {
     height: t
-  } = e, i = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), _ = () => n.e("78698").then(n.t.bind(n, 141923, 19)).then(e => {
-    let {
-      default: t
-    } = e;
-    return t
-  });
+  } = e, i = (0, a.e7)([s.Z], () => s.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
     className: d.root,
-    children: [(0, r.jsx)(s.Fmz, {
-      importData: _,
+    children: [(0, r.jsx)(o.Fmz, {
+      importData: () => n.e("78698").then(n.t.bind(n, 141923, 19)).then(e => {
+        let {
+          default: t
+        } = e;
+        return t
+      }),
       shouldAnimate: !i,
-      className: o()(d.art, {
-        [d.hidden]: t <= f
+      className: l()(d.art, {
+        [d.hidden]: t <= 280
       })
-    }), (0, r.jsx)(s.X6q, {
+    }), (0, r.jsx)(o.X6q, {
       className: d.header,
       variant: "heading-md/bold",
       children: u.intl.string(u.t["C+tj1d"])
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
       children: u.intl.format(u.t["nNHd//"], {

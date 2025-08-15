@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -57,7 +57,7 @@ class b extends Chunk73800.Component {
       eulaId: e,
       applicationName: t,
       hasPreviouslyAcceptedEULA: i,
-      forceShow: o,
+      forceShow: a,
       disabled: s,
       className: c,
       checkboxClassname: d,
@@ -102,7 +102,7 @@ class b extends Chunk73800.Component {
           })
         })
       }) : null, null == b ? null : (0, Chunk255367.jsx)("div", {
-        className: a()(Chunk209857.finePrint, A),
+        className: o()(Chunk209857.finePrint, A),
         children: b
       }), O ? (0, Chunk255367.jsxs)("div", {
         className: Chunk442837,
@@ -111,9 +111,9 @@ class b extends Chunk73800.Component {
           value: C,
           onChange: this.handleToggleEUWithdralWaiverAcceptance,
           disabled: Chunk512722,
-          className: a()(Chunk209857.checkbox, Chunk850840),
+          className: o()(Chunk209857.checkbox, Chunk850840),
           children: (0, Chunk255367.jsx)("div", {
-            className: a()(Chunk209857.checkboxLabel, g),
+            className: o()(Chunk209857.checkboxLabel, g),
             children: Chunk388032.intl.string(Chunk388032.t.DFCVNz)
           })
         }), (0, Chunk255367.jsx)("div", {

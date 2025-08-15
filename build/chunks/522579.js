@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
-/** chunk id: 522579, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 522579, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  z9: () => o
+  z9: () => l
 }), require("./399606.js");
 var Chunk592125 = require("./592125.js"),
   Chunk709054 = require("./709054.js");
 
-function o(e, t) {
+function l(e, t) {
   if (e !== i.default.castChannelIdAsMessageId(t)) returnfalse;
   let n = r.Z.getChannel(t);
   if (null == n || !n.isForumPost()) returnfalse;
-  let o = r.Z.getChannel(n.parent_id);
-  return (null == o ? true : o.isMediaChannel()) === true
+  let l = r.Z.getChannel(n.parent_id);
+  return (null == l ? true : l.isMediaChannel()) === true
 }

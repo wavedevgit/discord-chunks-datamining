@@ -34,7 +34,7 @@ function b(e) {
     let {
       default: t
     } = n(314897), {
-      default: a
+      default: o
     } = n(857192), {
       default: s
     } = n(706454), {
@@ -49,8 +49,8 @@ function b(e) {
       e.url = (0, r.K0)() + e.url, "Authorization" in e.header || "authorization" in e.header || e.set("Authorization", t.getToken()), (0, i.c)();
       let n = c.getSuperPropertiesBase64();
       null != n && e.set("X-Super-Properties", n);
-      let o = t.getFingerprint();
-      if (null != o && "" !== o && e.set("X-Fingerprint", o), d) {
+      let a = t.getFingerprint();
+      if (null != a && "" !== a && e.set("X-Fingerprint", a), d) {
         let t = [];
         null != navigator && (t = (f = [...navigator.languages], f));
         let n = b(t);
@@ -59,8 +59,8 @@ function b(e) {
       e.set("X-Discord-Locale", s.locale);
       let u = (0, _.Z)();
       null != u && e.set("X-Discord-Timezone", u);
-      let h = a.getDebugOptionsHeaderValue();
-      if (null != h && "" !== h && e.set("X-Debug-Options", h), a.isTracingRequests) {
+      let h = o.getDebugOptionsHeaderValue();
+      if (null != h && "" !== h && e.set("X-Debug-Options", h), o.isTracingRequests) {
         let t = l.getCurrentUser(),
           n = m.generate(null != (p = null == t ? true : t.id) ? p : "0");
         e.set("x-client-trace-id", n);
@@ -75,12 +75,12 @@ function b(e) {
         }
       }
     }
-    o.Hj("Network", "Sending ".concat(e.method, " to ").concat(e.url)), e.on("response", t => {
+    a.Hj("Network", "Sending ".concat(e.method, " to ").concat(e.url)), e.on("response", t => {
       let n = null != t && t.status >= 400 ? t.text : null,
         r = null == n ? "" : "and body: ".concat(n);
-      o.Hj("Network", "Completed ".concat(e.method, " to ").concat(e.url, " with status: ").concat(null == t ? true : t.status, " ").concat(r))
+      a.Hj("Network", "Completed ".concat(e.method, " to ").concat(e.url, " with status: ").concat(null == t ? true : t.status, " ").concat(r))
     }), e.on("error", (t, n) => {
-      if (o.Hj("Network", "Failed ".concat(e.method, " to ").concat(e.url, " with status ").concat(null == t ? true : t.status, " and body: ").concat(null == n ? true : n.text)), null != t && "parse" in t && t.parse) {
+      if (a.Hj("Network", "Failed ".concat(e.method, " to ").concat(e.url, " with status ").concat(null == t ? true : t.status, " and body: ").concat(null == n ? true : n.text)), null != t && "parse" in t && t.parse) {
         let n = "[FILTERED]";
         if (h.includes(e.url)) {
           var r, i;
@@ -100,7 +100,7 @@ function b(e) {
     })
   },
   interceptResponse(e, t, r) {
-    var i, o, c, u, d;
+    var i, a, c, u, d;
     return 400 === e.statusCode && (null == (i = e.body) ? true : i.captcha_key) ? (Promise.all([n.e("36514").then(n.bind(n, 475271)), n.e("31177").then(n.bind(n, 353250))]).then(t => {
       let [{
         default: n
@@ -113,11 +113,11 @@ function b(e) {
         captcha_key: n,
         captcha_rqtoken: r,
         captcha_session_id: i
-      } = e, o = {
+      } = e, a = {
         "X-Captcha-Key": n
       };
-      null != r && (o["X-Captcha-Rqtoken"] = r), null != i && (o["X-Captcha-Session-Id"] = i), t(o)
-    }).catch(r), true) : 401 === e.statusCode && (null == (o = e.body) ? true : o.code) === p.evJ.MFA_REQUIRED && (null == (c = e.body) ? true : c.mfa) ? (Promise.all([n.e("52030"), n.e("4408")]).then(n.bind(n, 24031)).then(n => {
+      null != r && (a["X-Captcha-Rqtoken"] = r), null != i && (a["X-Captcha-Session-Id"] = i), t(a)
+    }).catch(r), true) : 401 === e.statusCode && (null == (a = e.body) ? true : a.code) === p.evJ.MFA_REQUIRED && (null == (c = e.body) ? true : c.mfa) ? (Promise.all([n.e("52030"), n.e("4408")]).then(n.bind(n, 24031)).then(n => {
       let {
         openMFAModal: i
       } = n;
@@ -127,7 +127,7 @@ function b(e) {
         default: t
       } = e;
       t()
-    }) : (0, a.b)(e.statusCode, null == (d = e.body) ? true : d.code) ? n.e("76731").then(n.bind(n, 626892)).then(t => {
+    }) : (0, o.b)(e.statusCode, null == (d = e.body) ? true : d.code) ? n.e("76731").then(n.bind(n, 626892)).then(t => {
       var n;
       let {
         default: r
@@ -141,5 +141,5 @@ function b(e) {
     }), false)
   }
 }), (0, Chunk544891.Jt)(async e => {
-  o.Hj("Network", "Request to ".concat(e, " failed, will retry.")), c.Z.isOnline() || (await c.Z.awaitOnline(), o.Hj("Network", "Network detected online, retrying ".concat(e)))
+  a.Hj("Network", "Request to ".concat(e, " failed, will retry.")), c.Z.isOnline() || (await c.Z.awaitOnline(), a.Hj("Network", "Network detected online, retrying ".concat(e)))
 })

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 265299, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 265299, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => m
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -15,30 +14,30 @@ var Chunk255367 = require("./255367.js"),
   Chunk683650 = require("./683650.jsx"),
   Chunk506207 = require("./506207.js");
 
-function _(e) {
+function m(e) {
   let {
     questId: t
   } = e, {
     quests: n,
-    excludedQuests: _,
-    isFetchingCurrentQuests: p
-  } = (0, s.J2)({
+    excludedQuests: m,
+    isFetchingCurrentQuests: f
+  } = (0, o.J2)({
     fetchPolicy: "cache-or-network",
     callerSource: "embed"
-  }), h = i.useMemo(() => n.find(e => e.id === t), [t, n]), m = i.useMemo(() => _.find(e => e.id === t), [t, _]);
-  return p ? (0, r.jsx)(o.$jN, {
-    className: f.spinner
-  }) : null != m ? (0, r.jsx)(u.W, {
+  }), _ = i.useMemo(() => n.find(e => e.id === t), [t, n]), g = i.useMemo(() => m.find(e => e.id === t), [t, m]);
+  return f ? (0, r.jsx)(l.$jN, {
+    className: p.spinner
+  }) : null != g ? (0, r.jsx)(u.W, {
     questId: t
-  }) : null == h ? (0, r.jsx)(d.o, {
+  }) : null == _ ? (0, r.jsx)(d.o, {
     questId: t,
     reason: d.X.NOT_FOUND
-  }) : (0, a.HJ)(h) ? (0, r.jsx)(d.o, {
+  }) : (0, a.HJ)(_) ? (0, r.jsx)(d.o, {
     questId: t,
     reason: d.X.MOBILE_ONLY
   }) : (0, r.jsx)(c.Z, {
-    quest: h,
-    location: l.jn.QUESTS_EMBED,
-    sourceQuestContent: l.jn.QUESTS_EMBED
-  }, h.id)
+    quest: _,
+    location: s.jn.QUESTS_EMBED,
+    sourceQuestContent: s.jn.QUESTS_EMBED
+  }, _.id)
 }

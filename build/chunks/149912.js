@@ -3,7 +3,7 @@
 var Chunk466293 = require("./466293.js"),
   Chunk443735 = require("./443735.js"),
   Chunk402428 = require("./402428.js"),
-  a = Chunk466293 ? Chunk466293.isConcatSpreadable : true;
+  o = Chunk466293 ? Chunk466293.isConcatSpreadable : true;
 module.exports = function(e) {
-  return o(e) || i(e) || !!(a && e && e[a])
+  return a(e) || i(e) || !!(o && e && e[o])
 }

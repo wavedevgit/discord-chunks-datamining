@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 362604, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 362604, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 }), require("./388685.js"), require("./472816.js"), require("./794429.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -22,50 +21,50 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk38297 = require("./38297.js");
 
-function y(e) {
+function C(e) {
   let {
     message: t,
-    channel: o,
-    compact: y
-  } = e, O = (0, s.Wu)([f.Z], () => Array.from(f.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [v, I] = i.useState(null);
+    channel: l,
+    compact: C
+  } = e, v = (0, o.Wu)([p.Z], () => Array.from(p.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [O, y] = i.useState(null);
   return (i.useEffect(() => {
     let e = setInterval(() => {
-      O.length > 0 && I(O[Math.floor(Math.random() * O.length)])
+      v.length > 0 && y(v[Math.floor(Math.random() * v.length)])
     }, 500);
     return () => clearInterval(e)
-  }, [O]), null == o.guild_id) ? null : (0, r.jsxs)("div", {
+  }, [v]), null == l.guild_id) ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(u.Z, {
-      className: a()(b.mainContainer, {
-        [b.compact]: y
+      className: a()(E.mainContainer, {
+        [E.compact]: C
       }),
       icon: n(570111),
-      compact: y,
+      compact: C,
       children: (0, r.jsx)("div", {
-        className: a()(b.__invalid_content, {
-          [b.compact]: y
+        className: a()(E.__invalid_content, {
+          [E.compact]: C
         }),
         children: (0, r.jsx)("div", {
-          className: a()(b.__invalid_messageContent, {
-            [b.compact]: y
+          className: a()(E.__invalid_messageContent, {
+            [E.compact]: C
           }),
-          children: "" !== t.content ? t.content : E.intl.string(E.t.wnn1DQ)
+          children: "" !== t.content ? t.content : b.intl.string(b.t.wnn1DQ)
         })
       })
     }), (0, r.jsxs)("div", {
-      className: b.actions,
+      className: E.actions,
       children: [(0, r.jsx)(c.DY3, {
-        text: E.intl.string(E.t.ASZTf3),
-        children: (0, r.jsx)(l.zx, {
-          color: l.zx.Colors.PRIMARY,
+        text: b.intl.string(b.t.ASZTf3),
+        children: (0, r.jsx)(s.zx, {
+          color: s.zx.Colors.PRIMARY,
           onClick: () => {
-            p.default.track(g.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
+            f.default.track(h.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
               message_id: t.id,
-              channel_id: o.id,
-              guild_id: o.guild_id,
+              channel_id: l.id,
+              guild_id: l.guild_id,
               action_type: "upload_file"
-            }), h.S.dispatch(g.CkL.UPLOAD_FILE), (0, d.fE)({
+            }), _.S.dispatch(h.CkL.UPLOAD_FILE), (0, d.fE)({
               message: t,
-              channel: o,
+              channel: l,
               shouldMention: true
             })
           },
@@ -75,20 +74,20 @@ function y(e) {
           })
         })
       }), (0, r.jsx)(c.DY3, {
-        text: E.intl.string(E.t.gbrrAw),
-        children: (0, r.jsx)(l.zx, {
-          color: l.zx.Colors.PRIMARY,
+        text: b.intl.string(b.t.gbrrAw),
+        children: (0, r.jsx)(s.zx, {
+          color: s.zx.Colors.PRIMARY,
           onClick: () => {
-            p.default.track(g.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
+            f.default.track(h.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
               message_id: t.id,
-              channel_id: o.id,
-              guild_id: o.guild_id,
+              channel_id: l.id,
+              guild_id: l.guild_id,
               action_type: "sticker"
-            }), (0, m.O)(t.id, o)
+            }), (0, g.O)(t.id, l)
           },
-          children: null != v ? (0, r.jsx)(_.Z, {
+          children: null != O ? (0, r.jsx)(m.Z, {
             size: 32,
-            sticker: v
+            sticker: O
           }) : (0, r.jsx)(c.EO4, {
             size: "md",
             color: "currentColor"

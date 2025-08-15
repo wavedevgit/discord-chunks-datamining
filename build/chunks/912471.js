@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ai: () => es,
-  DL: () => eo,
-  Gg: () => ea
+  DL: () => ea,
+  Gg: () => eo
 }), require("./415506.js"), require("./539854.js");
 var Chunk772848 = require("./772848.js"),
   Chunk923452 = require("./923452.js"),
@@ -61,8 +61,8 @@ let T = 25,
     state: "uninitialized"
   },
   M = Chunk19780.Z.getState(),
-  j = (0, Chunk127438.H)(),
-  k = Chunk314897.default.getToken();
+  k = (0, Chunk127438.H)(),
+  j = Chunk314897.default.getToken();
 
 function U() {
   if (null != P) return;
@@ -104,7 +104,7 @@ function B() {
   }), (0, Chunk188471.Z)())
 }
 
-function Z() {
+function V() {
   var e;
   let t = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0;
   return {
@@ -117,7 +117,7 @@ function Z() {
 }
 async function F() {
   let e = Date.now(),
-    t = await ea(),
+    t = await eo(),
     n = Date.now();
   if (null == exports) return void Chunk960048.Z.captureException(Error("Null session when tracking session heartbeat. Waited ".concat(require - module, "ms")));
   Chunk960048.Z.addBreadcrumb({
@@ -130,12 +130,12 @@ async function F() {
   let r = I({
     client_heartbeat_initialization_timestamp: exports.createdAtTimestamp,
     client_heartbeat_version: T
-  }, (0, Chunk343420.O)(), Z());
+  }, (0, Chunk343420.O)(), V());
   Chunk626135.default.track(Chunk981631.rMx.CLIENT_HEARTBEAT, Chunk772848), L = performance.now(), (0, Chunk188471.Z)()
 }
 
-function V() {
-  if (!(null != k && (0, Chunk733879.y)()) || performance.now() - L <= S) return;
+function Z() {
+  if (!(null != j && (0, Chunk733879.y)()) || performance.now() - L <= S) return;
   let e = {
     client_heartbeat_version: T
   };
@@ -146,7 +146,7 @@ function H() {}
 
 function Y() {
   let e = [];
-  return null != k && (j && module.push("foregrounded"), M !== Chunk981631.hes.DISCONNECTED && M !== Chunk981631.hes.RTC_DISCONNECTED && module.push("rtc_connected")), {
+  return null != j && (k && module.push("foregrounded"), M !== Chunk981631.hes.DISCONNECTED && M !== Chunk981631.hes.RTC_DISCONNECTED && module.push("rtc_connected")), {
     active: module.length > 0,
     ver: T,
     reasons: module
@@ -164,7 +164,7 @@ function K() {
 function z() {
   null == w && (w = {
     id: setInterval(() => {
-      V()
+      Z()
     }, S),
     type: "interval"
   })
@@ -173,7 +173,7 @@ function z() {
 function q(e) {
   let t = performance.now();
   if (!(t - D < A)) try {
-    a.K.set(N, e), D = t
+    o.K.set(N, e), D = t
   } catch (e) {
     m.Z.captureException(e)
   }
@@ -195,7 +195,7 @@ function J() {
   null == (e = Chunk38618.Z.getSocket()) || module.handleActiveStateChange(Y())
 }
 async function $() {
-  let e = await ea(false);
+  let e = await eo(false);
   if (null != module) {
     var t;
     null == (t = Chunk38618.Z.getSocket()) || exports.handleUpdateTimeSpentSessionId(module.createdAtTimestamp, module.uuid, Chunk923452.s)
@@ -204,7 +204,7 @@ async function $() {
 
 function ee() {
   let e = Chunk314897.default.getToken();
-  k !== module && (k = module, Q()), K()
+  j !== module && (j = module, Q()), K()
 }
 
 function et() {
@@ -215,30 +215,30 @@ function en(e) {
   let {
     focused: t
   } = e;
-  j = t, K()
+  k = t, K()
 }
 
 function er(e) {
   let {
     state: t
   } = e;
-  j = t === O.$7l.ACTIVE, K()
+  k = t === O.$7l.ACTIVE, K()
 }
 
 function ei() {
-  M = Chunk19780.Z.getState(), j = (0, Chunk127438.H)(), ee()
+  M = Chunk19780.Z.getState(), k = (0, Chunk127438.H)(), ee()
 }
 
-function eo() {
+function ea() {
   Chunk960048.Z.addBreadcrumb({
     message: "Initializing SessionHeartbeatScheduler"
   }), Chunk19780.Z.addChangeListener(et), Chunk314897.default.addChangeListener(ee), Chunk570140.Z.subscribe("WINDOW_FOCUS", en), Chunk570140.Z.subscribe("APP_STATE_UPDATE", er), Chunk570140.Z.subscribe("CONNECTION_OPEN", $), K(), z(), Chunk442837.ZP.initialized.then(ei)
 }
-async function ea() {
+async function eo() {
   var e;
   let t = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     n = null,
-    o = "loaded" === x.state ? null == (e = x.session) ? true : module.uuid : null;
+    a = "loaded" === x.state ? null == (e = x.session) ? true : module.uuid : null;
   try {
     n = "uninitialized" === x.state ? X(await Chunk433517.K.getAfterRefresh(N)) : x.session
   } catch (e) {
@@ -255,8 +255,8 @@ async function ea() {
         state: "loaded",
         session: require
       }, null != require && Chunk442837 !== require.uuid && exports) {
-      var a;
-      null == (a = Chunk38618.Z.getSocket()) || Chunk433517.handleUpdateTimeSpentSessionId(require.createdAtTimestamp, require.uuid, Chunk923452.s)
+      var o;
+      null == (o = Chunk38618.Z.getSocket()) || Chunk433517.handleUpdateTimeSpentSessionId(require.createdAtTimestamp, require.uuid, Chunk923452.s)
     }
     return require
   })()

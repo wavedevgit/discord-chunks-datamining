@@ -18,13 +18,13 @@ require.r(exports), require.d(exports, {
   extendSuperProperties: () => z,
   getCampaignParams: () => L,
   getDevice: () => U,
-  getOS: () => k,
+  getOS: () => j,
   getSuperProperties: () => X,
   getSuperPropertiesBase64: () => Q,
   isThrottled: () => K,
   trackMaker: () => q
 }), require("./35282.js"), require("./704826.js"), require("./413496.js"), require("./433524.js"), require("./388685.js");
-var o, Chunk348327 = require("./348327.js"),
+var a, Chunk348327 = require("./348327.js"),
   s = require.n(Chunk348327),
   Chunk512722 = require("./512722.js"),
   c = require.n(Chunk512722),
@@ -89,7 +89,7 @@ if (null != P) {
   let e, t = P.remoteApp.getVersion(),
     n = P.process.platform,
     i = P.os.release,
-    a = P.os.arch,
+    o = P.os.arch,
     s = P.os.appArch,
     l = P.remoteApp.getReleaseChannel(),
     c = (0, Chunk627420.qf)();
@@ -117,7 +117,7 @@ if (null != P) {
       system_locale: c,
       has_client_mods: (0, Chunk903772.e)(),
       client_launch_id: Chunk923452.s
-    }, (null == (o = d().name) ? true : o.toLocaleLowerCase()) === "electron" && (r.browser_user_agent = d().ua || "", r.browser_version = d().version || ""), "linux" === require) {
+    }, (null == (a = d().name) ? true : a.toLocaleLowerCase()) === "electron" && (r.browser_user_agent = d().ua || "", r.browser_version = d().version || ""), "linux" === require) {
     let e = P.crashReporter.getMetadata();
     r.window_manager = module.wm, r.distro = module.distro
   } else "darwin" === require ? r.os_sdk_version = null == i ? true : i.split(".")[0] : "win32" === require && (r.os_sdk_version = null == i ? true : i.split(".")[2])
@@ -157,7 +157,7 @@ function M() {
   return module
 }
 
-function j() {
+function k() {
   let {
     userAgent: e,
     vendor: t = ""
@@ -179,7 +179,7 @@ function j() {
   else return ""
 }
 
-function k() {
+function j() {
   let {
     userAgent: e
   } = window.navigator;
@@ -211,10 +211,10 @@ function G() {
 
 function B() {
   let e = {};
-  return module.os = k(), module.browser = j(), module.device = U(), module.system_locale = (0, Chunk627420.qf)(), module.has_client_mods = (0, Chunk903772.e)(), module
+  return module.os = j(), module.browser = k(), module.device = U(), module.system_locale = (0, Chunk627420.qf)(), module.has_client_mods = (0, Chunk903772.e)(), module
 }
 
-function Z() {
+function V() {
   var e, t;
   return S(I({}, {
     browser_user_agent: window.navigator.userAgent || "",
@@ -229,7 +229,7 @@ function F() {
   return module.referrer = document.referrer, module.referring_domain = G(), e = I({}, module, L(window.location.href), M())
 }
 
-function V(e, t) {
+function Z(e, t) {
   let n = {};
   return Object.keys(e).map(r => n["".concat(r).concat(t)] = e[r]), n
 }
@@ -240,7 +240,7 @@ function H() {
   let t = Chunk433517.K.get(N);
   null == exports && (t = F(), Chunk433517.K.set(N, exports));
   let n = Chunk298444.x.get(N);
-  return null == require && (n = V(F(), "_current"), Chunk298444.x.set(N, require)), I({}, module, Z(), exports, require)
+  return null == require && (n = Z(F(), "_current"), Chunk298444.x.set(N, require)), I({}, module, V(), exports, require)
 }
 
 function Y() {
@@ -255,10 +255,10 @@ function W() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == require.release_channel || "" === require.release_channel) && (require.release_channel = r.split("-")[0]);
-  let i = parseInt("432161", 10);
+  let i = parseInt("432183", 10);
   isNaN(i) || (require.client_build_number = i);
-  let o = null == P || null == (e = (t = P.remoteApp).getBuildNumber) ? true : module.call(exports);
-  return isNaN(o) || (require.native_build_number = o), require.client_event_source = Y(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require
+  let a = null == P || null == (e = (t = P.remoteApp).getBuildNumber) ? true : module.call(exports);
+  return isNaN(a) || (require.native_build_number = a), require.client_event_source = Y(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require
 }
 
 function K(e) {
@@ -279,30 +279,30 @@ let q = e => {
     analyticEventConfigs: t,
     dispatcher: r,
     TRACK_ACTION_NAME: i
-  } = e, o = (0, m.$)(r, i);
+  } = e, a = (0, m.$)(r, i);
   return function(e, r) {
     let i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
     if (null != n.g.isServerRendering && true === n.g.isServerRendering) return Promise.resolve();
-    let a = null != r ? r : {},
+    let o = null != r ? r : {},
       l = t[e];
     if ("function" == typeof l) {
       var u;
-      l = null != (u = l(a)) ? u : null
+      l = null != (u = l(o)) ? u : null
     }
     if (null != l)
       if ("throttlePeriod" in l) {
-        let t = [e, ...l.throttleKeys(a)].join("_");
+        let t = [e, ...l.throttleKeys(o)].join("_");
         if (K(t) || "number" == typeof l.throttlePercent && Math.random() > l.throttlePercent) return Promise.resolve();
         if (l.deduplicate) {
           let e = R[t];
-          if (s()(e, a)) return Promise.resolve();
-          R[t] = a
+          if (s()(e, o)) return Promise.resolve();
+          R[t] = o
         }
         C[t] = Date.now() + l.throttlePeriod
       } else if ("throttlePercent" in l) {
       if (Math.random() > l.throttlePercent) return Promise.resolve()
     } else c()(false, "Unsupported analytics event config: ".concat(l));
-    return o(e, r, i)
+    return a(e, r, i)
   }
 };
 

@@ -184,18 +184,18 @@ function y(e) {
         style: e,
         children: y && i === v ? (0, r.jsx)("div", {
           className: u.overflowCount,
-          children: (0, r.jsx)(o.Text, {
+          children: (0, r.jsx)(a.Text, {
             variant: "text-xxs/semibold",
             lineClamp: 1,
-            children: (0, r.jsx)(a.Z, {
+            children: (0, r.jsx)(o.Z, {
               children: O > 99 ? ">99" : "+".concat(O)
             })
           })
-        }) : (0, r.jsx)(o.ua7, {
+        }) : (0, r.jsx)(a.ua7, {
           text: s.ZP.getName(n.guild_id, n.id, l),
           children: e => (0, r.jsx)("img", p(f({}, e), {
             className: u.avatar,
-            src: l.getAvatarURL(n.guild_id, (0, o.pxk)(o.EFr.SIZE_80)),
+            src: l.getAvatarURL(n.guild_id, (0, a.pxk)(a.EFr.SIZE_80)),
             alt: ""
           }))
         })

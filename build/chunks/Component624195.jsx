@@ -1,54 +1,51 @@
-/** Chunk was on web.js **/
-/** chunk id: 624195, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 53937 **/
+/** chunk id: 624195, original params: e,l,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => u
 }), require("./413496.js"), require("./433524.js"), require("./35282.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk729594 = require("./729594.js"),
   Chunk781452 = require("./781452.js");
-let l = RegExp("^music\\.amazon\\.(?:com|co\\.uk|de|co\\.jp|es|fr|it|com\\.au|in|ca|com\\.mx|com\\.br)"),
-  c = 500,
-  u = 400;
+let o = RegExp("^music\\.amazon\\.(?:com|co\\.uk|de|co\\.jp|es|fr|it|com\\.au|in|ca|com\\.mx|com\\.br)");
 
 function d(e) {
-  let t = null,
-    n = null,
+  let l = null,
+    t = null,
     r = null;
   try {
-    t = (r = a.parse(e, true)).host, n = r.pathname
+    l = (r = s.parse(e, true)).host, t = r.pathname
   } catch (e) {
     return null
   }
-  return null != r && l.test(null != t ? t : "") && null != n ? r : null
+  return null != r && o.test(null != l ? l : "") && null != t ? r : null
 }
 
-function f(e) {
+function u(e) {
   let {
-    className: t,
+    className: l,
     embed: {
-      url: n,
-      thumbnail: i
+      url: t,
+      thumbnail: n
     }
   } = e;
-  if (null == n || null == i) return null;
-  let a = d(n);
-  if (null == a) return null;
-  let l = a.query.iframe_url;
-  if (null == l || Array.isArray(l) || null == d(l)) return null;
+  if (null == t || null == n) return null;
+  let s = d(t);
+  if (null == s) return null;
+  let o = s.query.iframe_url;
+  if (null == o || Array.isArray(o) || null == d(o)) return null;
   let {
-    width: f,
-    height: _
-  } = i, p = f, h = _;
-  return (f > c || _ > u) && (f > _ ? (p = c, h = c * _ / f) : (p = u * f / _, h = u)), (0, r.jsx)("iframe", {
-    className: o()(s.embedAmazonMusic, t),
-    src: l,
+    width: u,
+    height: h
+  } = n, c = u, m = h;
+  return (u > 500 || h > 400) && (u > h ? (c = 500, m = 500 * h / u) : (c = 400 * u / h, m = 400)), (0, r.jsx)("iframe", {
+    className: i()(a.embedAmazonMusic, l),
+    src: o,
     style: {
-      width: p,
-      height: h
+      width: c,
+      height: m
     },
     frameBorder: 0,
     sandbox: "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"

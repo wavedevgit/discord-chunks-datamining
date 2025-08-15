@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 561472, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 561472, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
 }), require("./388685.js");
@@ -28,31 +27,31 @@ let v = function(e) {
     className: t,
     style: n,
     channel: v,
-    draftType: I
-  } = e, [T, S] = i.useState(true), A = (0, o.e7)([f.Z], () => f.Z.hasLayers()), N = (0, o.e7)([_.Z], () => null != v && _.Z.can(y.Plq.ATTACH_FILES, v), [v]), C = null != (0, o.e7)([s.Z], () => s.Z.getActiveCommand(v.id)), R = v.getGuildId(), P = I === c.d.FirstThreadMessage, w = (0, o.e7)([h.default], () => {
+    draftType: j
+  } = e, [O, E] = i.useState(true), S = (0, l.e7)([p.Z], () => p.Z.hasLayers()), P = (0, l.e7)([h.Z], () => null != v && h.Z.can(C.Plq.ATTACH_FILES, v), [v]), I = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(v.id)), Z = v.getGuildId(), T = j === c.d.FirstThreadMessage, N = (0, l.e7)([m.default], () => {
     var e;
-    returntrue == !(null == (e = h.default.getCurrentUser()) ? true : e.nsfwAllowed)
-  }), D = (0, o.e7)([u.Z], () => u.Z.didAgree(R)) && !w, L = i.useMemo(() => !A && (v.isPrivate() && !v.isManaged() || null != R && (!(0, a.aC)(v) || D) && N && d.Z.canChatInGuild(R)), [N, D, v, R, A]), x = e => {
-    if (C) returnfalse;
-    L && null != v && ((0, g.d)(e, v, I, {
-      requireConfirm: T,
-      showLargeMessageDialog: false,
-      origin: "drag_drop"
-    }), m.S.dispatchToLastSubscribed(y.CkL.TEXTAREA_FOCUS))
-  }, M = () => S(true), j = e => {
-    if (C) returnfalse;
-    P || e.shiftKey !== T || S(!e.shiftKey)
-  }, k = P ? y.TPd.GUILD_THREADS_ONLY.has(v.type) ? O.intl.string(O.t.RBBLhI) : O.intl.string(O.t.gUx4en) : T ? O.intl.format(O.t.dYP2FR, {
-    destination: (0, l.F6)(v, h.default, p.Z, true)
-  }) : O.intl.string(O.t.h76ulJ);
-  return C || !L ? null : (0, r.jsx)(E.Z, {
+    returntrue == !(null == (e = m.default.getCurrentUser()) ? true : e.nsfwAllowed)
+  }), A = (0, l.e7)([u.Z], () => u.Z.didAgree(Z)) && !N, w = i.useMemo(() => !S && (v.isPrivate() && !v.isManaged() || null != Z && (!(0, a.aC)(v) || A) && P && d.Z.canChatInGuild(Z)), [P, A, v, Z, S]), R = T ? C.TPd.GUILD_THREADS_ONLY.has(v.type) ? x.intl.string(x.t.RBBLhI) : x.intl.string(x.t.gUx4en) : O ? x.intl.format(x.t.dYP2FR, {
+    destination: (0, s.F6)(v, m.default, f.Z, true)
+  }) : x.intl.string(x.t.h76ulJ);
+  return I || !w ? null : (0, r.jsx)(y.Z, {
     className: t,
     style: n,
-    title: k,
-    description: P ? O.intl.string(O.t.lpgkzs) : O.intl.string(O.t.usQh4O),
-    icons: b.J6,
-    onDrop: x,
-    onDragClear: M,
-    onDragOver: j
+    title: R,
+    description: T ? x.intl.string(x.t.lpgkzs) : x.intl.string(x.t.usQh4O),
+    icons: _.J6,
+    onDrop: e => {
+      if (I) returnfalse;
+      w && null != v && ((0, b.d)(e, v, j, {
+        requireConfirm: O,
+        showLargeMessageDialog: false,
+        origin: "drag_drop"
+      }), g.S.dispatchToLastSubscribed(C.CkL.TEXTAREA_FOCUS))
+    },
+    onDragClear: () => E(true),
+    onDragOver: e => {
+      if (I) returnfalse;
+      T || e.shiftKey !== O || E(!e.shiftKey)
+    }
   })
 }

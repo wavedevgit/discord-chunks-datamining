@@ -14,7 +14,7 @@ require.d(exports, {
   b9: () => v,
   cV: () => d,
   g_: () => _,
-  iq: () => a,
+  iq: () => o,
   pG: () => y,
   sr: () => m,
   xn: () => f,
@@ -23,10 +23,10 @@ require.d(exports, {
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
-async function a(e, t) {
+async function o(e, t) {
   let {
     nick: n,
-    avatar: a,
+    avatar: o,
     avatarDescription: s,
     avatarId: l,
     avatarDecoration: c,
@@ -38,7 +38,7 @@ async function a(e, t) {
   });
   let d = {
     nick: n,
-    avatar: a,
+    avatar: o,
     avatar_description: s,
     avatar_id: l,
     avatar_decoration_id: null === c ? null : null == c ? true : c.id,
@@ -52,7 +52,7 @@ async function a(e, t) {
   };
   try {
     let t = await r.tn.patch({
-        url: o.ANM.SET_GUILD_MEMBER(e),
+        url: a.ANM.SET_GUILD_MEMBER(e),
         body: d,
         oldFormErrors: true,
         rejectWithError: false
@@ -64,7 +64,7 @@ async function a(e, t) {
       type: "GUILD_MEMBER_PROFILE_UPDATE",
       guildMember: n,
       guildId: e
-    }), (null != a || null != l) && i.Z.dispatch({
+    }), (null != o || null != l) && i.Z.dispatch({
       type: "RECENT_AVATARS_UPDATE"
     }), t
   } catch (t) {

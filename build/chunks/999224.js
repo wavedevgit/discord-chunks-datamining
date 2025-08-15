@@ -54,7 +54,7 @@ function F(e, t, n) {
   }) : e[t] = n, e
 }
 
-function V(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -207,7 +207,7 @@ let W = {
   },
   K = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-    return V(Y(V({}, e), {
+    return Z(Y(Z({}, e), {
       previewSoundURLs: [],
       underDevelopment: true
     }), t)

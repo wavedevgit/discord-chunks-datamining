@@ -51,14 +51,14 @@ function b(e) {
     fakeAppIconURL: h,
     size: E
   }), [t]), m = i.useMemo(() => [{
-    type: o.Y.USER_INSTALL,
-    icon: a.oLu,
+    type: a.Y.USER_INSTALL,
+    icon: o.oLu,
     title: f.intl.string(f.t.aCg60N),
     subtitle: f.intl.string(f.t.YeiIUV),
     beta: false
   }, {
-    type: o.Y.GUILD_INSTALL,
-    icon: a.QTo,
+    type: a.Y.GUILD_INSTALL,
+    icon: o.QTo,
     title: f.intl.string(f.t.E64YCw),
     subtitle: f.intl.string(f.t.bbtoKi),
     beta: false
@@ -82,7 +82,7 @@ function b(e) {
       })]
     }), (0, r.jsx)("ul", {
       className: _.rows,
-      children: m.map(e => (0, r.jsxs)(a.P3F, {
+      children: m.map(e => (0, r.jsxs)(o.P3F, {
         tag: "li",
         className: _.row,
         onClick: () => n(e.type),
@@ -94,16 +94,16 @@ function b(e) {
           className: _.rowInner,
           children: [(0, r.jsxs)("div", {
             className: _.rowDetails,
-            children: [(0, r.jsx)(a.Text, {
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-md/medium",
               color: "interactive-active",
               children: e.title
-            }), (0, r.jsx)(a.Text, {
+            }), (0, r.jsx)(o.Text, {
               variant: "text-xs/medium",
               color: "text-muted",
               children: e.subtitle
             })]
-          }), e.beta && (0, r.jsx)(u.Z, {}), (0, r.jsx)(a.Fbu, {
+          }), e.beta && (0, r.jsx)(u.Z, {}), (0, r.jsx)(o.Fbu, {
             size: "md",
             color: "currentColor",
             className: _.rightIcon
@@ -135,13 +135,13 @@ function O(e) {
   } = e, n = t.name, i = (0, s.vJ)(t);
   return (0, r.jsxs)("div", {
     className: _.titleContainer,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(o.X6q, {
       variant: "heading-xl/extrabold",
       lineClamp: 1,
       children: n
     }), i ? (0, r.jsx)("div", {
       className: _.partnerLabelContainer,
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-default",
         children: f.intl.string(f.t.LO4f0N)
@@ -154,7 +154,7 @@ let v = 3;
 function I(e) {
   let {
     description: t
-  } = e, [o, s] = i.useState(true);
+  } = e, [a, s] = i.useState(true);
   i.useLayoutEffect(() => s(false), []);
   let l = i.useMemo(() => {
       let {
@@ -183,16 +183,16 @@ function I(e) {
       isTransitioning: b,
       onTransitionEnd: y
     } = (0, c.Z)(g({
-      isExpanded: o
+      isExpanded: a
     }, m)),
-    O = o || b;
+    O = a || b;
   return (0, r.jsxs)("div", {
     className: _.descriptionContainer,
     children: [(0, r.jsx)("div", {
       ref: E,
       className: _.overflowHidden,
       onTransitionEnd: y,
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(o.Text, {
         ref: u,
         className: p.markup,
         variant: "text-sm/medium",
@@ -202,19 +202,19 @@ function I(e) {
         },
         children: l
       })
-    }), null != h && h > v ? (0, r.jsxs)(a.P3F, {
+    }), null != h && h > v ? (0, r.jsxs)(o.P3F, {
       className: _.expandableDescriptionClickable,
       onClick: () => s(e => !e),
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "text-brand",
         children: O ? f.intl.string(f.t.u4YJ8v) : f.intl.string(f.t["N/tajI"])
-      }), O ? (0, r.jsx)(a.u04, {
+      }), O ? (0, r.jsx)(o.u04, {
         size: "sm",
-        color: a.TVs.colors.TEXT_BRAND
-      }) : (0, r.jsx)(a.CJ0, {
+        color: o.TVs.colors.TEXT_BRAND
+      }) : (0, r.jsx)(o.CJ0, {
         size: "sm",
-        color: a.TVs.colors.TEXT_BRAND
+        color: o.TVs.colors.TEXT_BRAND
       })]
     }) : null]
   })
@@ -223,7 +223,7 @@ function I(e) {
 function T() {
   let e = Chunk73800.useRef(null),
     [t, n] = Chunk73800.useState(null),
-    [r, o] = Chunk73800.useState(null);
+    [r, a] = Chunk73800.useState(null);
   return Chunk73800.useLayoutEffect(() => {
     let t = module.current;
     if (null === exports || 0 === exports.clientHeight) return;

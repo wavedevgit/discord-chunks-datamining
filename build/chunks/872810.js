@@ -5,11 +5,11 @@ require.d(exports, {
   L6: () => F,
   Rc: () => B,
   WH: () => R,
-  aP: () => j,
-  dV: () => Z,
+  aP: () => k,
+  dV: () => V,
   g: () => M,
   iV: () => x,
-  n9: () => k,
+  n9: () => j,
   pR: () => L,
   rn: () => D,
   tK: () => P,
@@ -97,7 +97,7 @@ function D(e, t) {
   } = e;
   if (null != n && w(n, r)) return;
   let i = (0, c.V9)(e),
-    o = (null == t ? true : t.forceMultiple) || _.Z.getAllActiveStreamsForChannel(r).filter(e => {
+    a = (null == t ? true : t.forceMultiple) || _.Z.getAllActiveStreamsForChannel(r).filter(e => {
       let {
         ownerId: t
       } = e;
@@ -106,8 +106,8 @@ function D(e, t) {
   s.Z.dispatch({
     type: "STREAM_WATCH",
     streamKey: i,
-    allowMultiple: o
-  }), o || null != t && t.noFocus || I.Z.selectParticipant(e.channelId, i)
+    allowMultiple: a
+  }), a || null != t && t.noFocus || I.Z.selectParticipant(e.channelId, i)
 }
 
 function L(e, t) {
@@ -126,21 +126,21 @@ function x(e, t) {
   if (null != n && w(n, r)) return;
   D(e, t);
   let i = d.Z.getWindowOpen(T.KJ3.CHANNEL_CALL_POPOUT),
-    o = g.Z.getVoiceChannelId();
-  i && o === r || (0, u.Z)(e)
+    a = g.Z.getVoiceChannelId();
+  i && a === r || (0, u.Z)(e)
 }
 
 function M(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
-  n && j(e, t), s.Z.dispatch({
+  n && k(e, t), s.Z.dispatch({
     type: "STREAM_STOP",
     streamKey: e,
     appContext: __OVERLAY__ ? T.IlC.OVERLAY : T.IlC.APP
   })
 }
 
-function j(e) {
+function k(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   s.Z.dispatch({
     type: "STREAM_CLOSE",
@@ -148,7 +148,7 @@ function j(e) {
     canShowFeedback: t
   })
 }
-async function k(e, t, n) {
+async function j(e, t, n) {
   if (!f.Z.shouldFetchPreview(e, t, n)) return;
   let r = (0, c.V9)({
     streamType: null != e ? S.lo.GUILD : S.lo.CALL,
@@ -161,7 +161,7 @@ async function k(e, t, n) {
     streamKey: r
   });
   try {
-    let e = await a.tn.get({
+    let e = await o.tn.get({
       url: T.ANM.STREAM_PREVIEW(r),
       query: {
         version: Date.now()
@@ -189,7 +189,7 @@ async function U(e) {
       url: T.ANM.STREAM_NOTIFY(e),
       oldFormErrors: true,
       trackedActionData: {
-        event: o.NetworkActionNames.STREAM_NOTIFY
+        event: a.NetworkActionNames.STREAM_NOTIFY
       },
       rejectWithError: true
     })
@@ -204,8 +204,8 @@ function B(e) {
   }, e))
 }
 
-function Z(e, t) {
-  a.tn.patch({
+function V(e, t) {
+  o.tn.patch({
     url: T.ANM.STREAM(e),
     body: {
       region: t

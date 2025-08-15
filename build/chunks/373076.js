@@ -13,10 +13,10 @@ var Chunk73800 = require("./73800.js"),
   Chunk474936 = require("./474936.js");
 
 function u(e) {
-  let t = (0, o.ZP)(e),
+  let t = (0, a.ZP)(e),
     n = (0, i.e7)([s.default], () => l.ZP.canUseChatWallpapers(s.default.getUser(e))),
     u = n || (null == t ? true : t.premiumType) === c.p9.TIER_2;
   return r.useEffect(() => {
-    n || null != t || null == e || (0, a.Z)(e)
+    n || null != t || null == e || (0, o.Z)(e)
   }, [n, t, e]), u
 }

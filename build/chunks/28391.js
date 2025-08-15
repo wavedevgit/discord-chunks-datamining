@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 28391, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 28391, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -15,7 +14,7 @@ var Chunk87051 = require("./87051.js"),
 function u(e, t, n) {
   r.Z.updateChannelOverrideSettings(e, t, {
     flags: (0, a.pq)(i.ZP.getChannelIdFlags(e, t), n)
-  }, o.UE.unreads(n === c.ic.UNREADS_ALL_MESSAGES ? l.i.ALL_MESSAGES : l.i.ONLY_MENTIONS), {
-    object: s.qAy.NOTIFICATION_SETTING_UNREAD_NOTICE
+  }, l.UE.unreads(n === c.ic.UNREADS_ALL_MESSAGES ? s.i.ALL_MESSAGES : s.i.ONLY_MENTIONS), {
+    object: o.qAy.NOTIFICATION_SETTING_UNREAD_NOTICE
   })
 }

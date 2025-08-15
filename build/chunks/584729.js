@@ -1,17 +1,16 @@
-/** Chunk was on web.js **/
-/** chunk id: 584729, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 24255 **/
+/** chunk id: 584729, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk271383 = require("./271383.js"),
   Chunk5192 = require("./5192.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e, t, n) {
-  var s, l;
-  if (t.type === o.fO.ACTIVITY) return null != (l = null == n ? true : n.name) ? l : null;
-  let c = r.ZP.isGuestOrLurker(e.guild_id, null == (s = t.user) ? true : s.id);
-  return i.ZP.getName(e.getGuildId(), e.id, t.user) + (c ? " ".concat(a.intl.string(a.t["pFO/Pj"])) : "")
+function o(e, t, n) {
+  var o, u;
+  if (t.type === i.fO.ACTIVITY) return null != (u = null == n ? true : n.name) ? u : null;
+  let s = r.ZP.isGuestOrLurker(e.guild_id, null == (o = t.user) ? true : o.id);
+  return l.ZP.getName(e.getGuildId(), e.id, t.user) + (s ? " ".concat(a.intl.string(a.t["pFO/Pj"])) : "")
 }

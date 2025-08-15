@@ -12,9 +12,9 @@ var Chunk442837 = require("./442837.js"),
 function s(e, t) {
   let {
     enableHangStatus: n
-  } = o.n.useExperiment({
+  } = a.n.useExperiment({
     guildId: null == t ? true : t.guild_id,
     location: e
-  }), s = (0, r.e7)([i.Z], () => i.Z.can(a.Pl.CONNECT, t));
+  }), s = (0, r.e7)([i.Z], () => i.Z.can(o.Pl.CONNECT, t));
   return n && s
 }

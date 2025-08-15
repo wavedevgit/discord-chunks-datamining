@@ -1,7 +1,7 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 739830, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,37 +46,37 @@ function f(e, t) {
   }), e
 }
 
-function g(e) {
+function m(e) {
   let {
     channel: t
-  } = e, n = (0, o.B)(t), [g, m] = i.useState(false), b = i.useRef(null);
+  } = e, n = (0, s.B)(t), [m, g] = i.useState(false), b = i.useRef(null);
   i.useEffect(() => {
-    let e = () => m(true);
-    return s.S.subscribe(d.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-      s.S.unsubscribe(d.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+    let e = () => g(true);
+    return o.S.subscribe(d.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+      o.S.unsubscribe(d.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
-  let y = h.intl.string(h.t.h850Sk);
+  let y = p.intl.string(p.t.h850Sk);
   return (0, r.jsx)(l.yRy, {
     targetElementRef: b,
-    shouldShow: g,
+    shouldShow: m,
     animation: l.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: false,
-    onRequestClose: () => m(false),
-    renderPopout: e => (0, r.jsx)(c.Z, f(p({}, e), {
+    onRequestClose: () => g(false),
+    renderPopout: e => (0, r.jsx)(c.Z, f(h({}, e), {
       channel: t,
       navId: "thread-context",
-      label: h.intl.string(h.t["1NBjqa"])
+      label: p.intl.string(p.t["1NBjqa"])
     })),
     children: (e, t) => {
       let {
         isShown: i
       } = t;
-      return (0, r.jsx)(a.ZP.Icon, f(p({}, e), {
+      return (0, r.jsx)(a.ZP.Icon, f(h({}, e), {
         ref: b,
-        onClick: () => m(e => !e),
+        onClick: () => g(e => !e),
         tooltip: i ? null : y,
         icon: n === u.iN.NO_MESSAGES ? l.owu : l.Dkj,
         "aria-label": y,

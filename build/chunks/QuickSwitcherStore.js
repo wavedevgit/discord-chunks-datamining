@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => el
 }), require("./539854.js"), require("./388685.js"), require("./583741.js"), require("./290780.js"), require("./35282.js"), require("./781311.js");
 var i, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js"),
@@ -44,20 +44,20 @@ function L(e, t, n) {
 }
 let x = "seenQSTutorial",
   M = 5,
-  j = 100,
-  k = [Chunk212819.h8.USER, Chunk212819.h8.GROUP_DM, Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GUILD, Chunk212819.h8.APPLICATION, Chunk212819.h8.LINK, Chunk212819.h8.IN_APP_NAVIGATION],
+  k = 100,
+  j = [Chunk212819.h8.USER, Chunk212819.h8.GROUP_DM, Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GUILD, Chunk212819.h8.APPLICATION, Chunk212819.h8.LINK, Chunk212819.h8.IN_APP_NAVIGATION],
   U = 0,
   G = false,
   B = false,
-  Z = null,
-  F = [],
   V = null,
+  F = [],
+  Z = null,
   H = 0,
   Y = [],
   W = [];
 
 function K() {
-  B = Chunk430824.Z.getGuildCount() >= 3 || a().size(Chunk592125.Z.getMutablePrivateChannels()) >= 20, Y = []
+  B = Chunk430824.Z.getGuildCount() >= 3 || o().size(Chunk592125.Z.getMutablePrivateChannels()) >= 20, Y = []
 }
 
 function z(e) {
@@ -74,14 +74,14 @@ function z(e) {
 
 function q(e) {
   let t = (0, d.Z)(e);
-  return null == t || null != Z && Z !== t.type ? null : t
+  return null == t || null != V && V !== t.type ? null : t
 }
 
 function X() {
   var e, t;
   let n = null != (e = Chunk914010.Z.getGuildId()) ? module : true,
     r = null != (t = Chunk944486.Z.getChannelId()) ? exports : true;
-  switch (Z) {
+  switch (V) {
     case Chunk212819.h8.USER: {
       let e = Chunk314897.default.getId();
       return Chunk483360.ZP.getRecentlyTalked(r, 100).filter(t => {
@@ -121,7 +121,7 @@ function X() {
       })
   }
   let i = [],
-    o = [];
+    a = [];
   for (let e = 1; module < W.length; e += 1) {
     let t = q(W[module]);
     null != exports && (exports.type !== Chunk212819.h8.TEXT_CHANNEL && exports.type !== Chunk212819.h8.VOICE_CHANNEL || Chunk496675.Z.can(Chunk981631.Plq.VIEW_CHANNEL, exports.record)) && Chunk392711.push(exports)
@@ -142,11 +142,11 @@ function X() {
       }
     }), module.length > 0 && (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t.ieCAhI))), i = i.concat(module))
   }
-  return a()(i).uniqBy(e => e.record.id).value()
+  return o()(i).uniqBy(e => e.record.id).value()
 }
 
 function Q(e, t) {
-  switch (Z) {
+  switch (V) {
     case u.h8.USER: {
       let t = v.Z.getGuild(A.Z.getGuildId());
       e.unshift((0, u.o6)(null != t ? D.intl.formatToPlainString(D.t.FREzQk, {
@@ -169,7 +169,7 @@ function Q(e, t) {
     default:
       F = e
   }
-  if (t !== V) V = t, H = Math.max(t.length, H), U = (0, u.gJ)(u.a8.DOWN, false, F);
+  if (t !== Z) Z = t, H = Math.max(t.length, H), U = (0, u.gJ)(u.a8.DOWN, false, F);
   else {
     let e = F[U];
     null != e && e.type === u.h8.HEADER && (U = (0, u.gJ)(u.a8.DOWN, U, F))
@@ -182,11 +182,11 @@ function J(e) {
   let {
     query: n,
     queryMode: i
-  } = e, o = null != (t = A.Z.getGuildId()) ? t : true, a = new Set(["user:".concat(m.default.getId())]);
-  null != o && a.add("guild:".concat(o)), r = null != r ? r : new u.ZP(et, k, null != i ? j : M, {
+  } = e, a = null != (t = A.Z.getGuildId()) ? t : true, o = new Set(["user:".concat(m.default.getId())]);
+  null != a && o.add("guild:".concat(a)), r = null != r ? r : new u.ZP(et, j, null != i ? k : M, {
     frecencyBoosters: true,
-    blacklist: a
-  }), V = null, H = n.length, Z = i, r.search(n)
+    blacklist: o
+  }), Z = null, H = n.length, V = i, r.search(n)
 }
 
 function $(e) {
@@ -212,43 +212,43 @@ function et(e, t) {
 }
 
 function en() {
-  V = null, H = 0, Y = [], null != r && (r.destroy(), r = null)
+  Z = null, H = 0, Y = [], null != r && (r.destroy(), r = null)
 }
 
 function er(e) {
   var t, n;
   let {
     query: i,
-    queryMode: o
+    queryMode: a
   } = e;
   if (null == r) returnfalse;
-  if (Z !== o) {
-    r.setResultTypes(null != o ? [o] : k), r.setLimit(null != o ? j : M);
+  if (V !== a) {
+    r.setResultTypes(null != a ? [a] : j), r.setLimit(null != a ? k : M);
     let e = null != (t = A.Z.getGuildId()) ? t : true;
-    o === u.h8.USER && null != e ? r.setOptions({
+    a === u.h8.USER && null != e ? r.setOptions({
       userFilters: {
         guild: e,
         friends: true
       }
-    }, true) : o === u.h8.VOICE_CHANNEL ? r.setOptions({
+    }, true) : a === u.h8.VOICE_CHANNEL ? r.setOptions({
       voiceChannelGuildFilter: null
     }, true) : r.setOptions({
       userFilters: null,
       voiceChannelGuildFilter: true
     }, true)
   }
-  if ((Z = o) === u.h8.USER) {
+  if ((V = a) === u.h8.USER) {
     let e = null != (n = A.Z.getGuildId()) ? n : null;
     r.search(i, e);
     return
   }
   let {
-    enabled: a,
+    enabled: o,
     type: s
   } = (0, _.$)({
     location: "QuickSwitcher"
   });
-  if (!a) return void r.search(i, true);
+  if (!o) return void r.search(i, true);
   switch (s) {
     case _.N.ALL_GUILDS:
       let l = v.Z.getGuildIds();
@@ -270,11 +270,11 @@ function ei(e) {
   U = e.selectedIndex
 }
 
-function eo() {
+function ea() {
   if (G) returnfalse;
   G = true, Chunk433517.K.set(x, true)
 }
-class ea extends(i = Chunk442837.ZP.PersistedStore) {
+class eo extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
     this.waitFor(O.ZP, v.Z, g.Z), this.syncWith([h.Z], () => true), G = l.K.get(x) || false, W = null != (t = null == e ? true : e.channelHistory) ? t : []
@@ -307,7 +307,7 @@ class ea extends(i = Chunk442837.ZP.PersistedStore) {
     return {
       theme: Chunk210887.Z.theme,
       query: null != r ? r.query : "",
-      queryMode: Z,
+      queryMode: V,
       results: F,
       selectedIndex: U,
       seenTutorial: G,
@@ -315,8 +315,8 @@ class ea extends(i = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-L(ea, "displayName", "QuickSwitcherStore"), L(ea, "persistKey", "QuickSwitcherStore");
-let es = new ea(Chunk570140.Z, {
+L(eo, "displayName", "QuickSwitcherStore"), L(eo, "persistKey", "QuickSwitcherStore");
+let es = new eo(Chunk570140.Z, {
     CONNECTION_OPEN: K,
     CONNECTION_OPEN_SUPPLEMENTAL: K,
     QUICKSWITCHER_SHOW: J,
@@ -326,7 +326,7 @@ let es = new ea(Chunk570140.Z, {
     HIDE_ACTION_SHEET_QUICK_SWITCHER: en,
     QUICKSWITCHER_SEARCH: er,
     QUICKSWITCHER_SELECT: ei,
-    QUICKSWITCHER_SWITCH_TO: eo,
+    QUICKSWITCHER_SWITCH_TO: ea,
     CHANNEL_SELECT: $
   }),
   el = es

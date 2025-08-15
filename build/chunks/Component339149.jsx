@@ -1,7 +1,7 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 339149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E: () => I,
+  E: () => P,
   Z: () => N
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk255367 = require("./255367.js"),
@@ -146,7 +146,7 @@ class S extends Chunk73800.PureComponent {
     })
   }
 }
-class P extends(r = Chunk73800.PureComponent) {
+class I extends(r = Chunk73800.PureComponent) {
   componentWillAppear(e) {
     this.state.animationScale.setValue(1), e()
   }
@@ -230,7 +230,7 @@ class P extends(r = Chunk73800.PureComponent) {
   }
 }
 
-function I(e, t) {
+function P(e, t) {
   return e.reduce((e, n) => {
     let {
       applicationId: r,
@@ -239,12 +239,12 @@ function I(e, t) {
     return null != l && e.push(l), e
   }, [])
 }
-C(P, "defaultProps", {
+C(I, "defaultProps", {
   strokeSize: Chunk481060._3P.StrokeSizes.MEDIUM
 });
 let N = Chunk442837.ZP.connectStores([Chunk941128.Z, Chunk417363.Z, Chunk812206.Z], () => {
   let e = Chunk941128.Z.activeItems,
-    t = I(module, Chunk417363.Z),
+    t = P(module, Chunk417363.Z),
     {
       total: n,
       progress: r
@@ -275,6 +275,6 @@ let N = Chunk442837.ZP.connectStores([Chunk941128.Z, Chunk417363.Z, Chunk812206.
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
     component: l.Fragment,
-    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(P, E({}, n)) : null
-  }) : (0, i.jsx)(P, E({}, n))
+    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(I, E({}, n)) : null
+  }) : (0, i.jsx)(I, E({}, n))
 })

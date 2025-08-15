@@ -34,7 +34,7 @@ class p extends(r = Chunk73800.Component) {
       avatarSize: t,
       className: n,
       childrenClassName: r,
-      doNotAnimate: o
+      doNotAnimate: a
     } = this.props;
     return "2" === module ? (0, Chunk255367.jsxs)("div", {
       className: s()(Chunk433409.multiplePlaceholder, Chunk433409.multiplePlaceholderAnimated, require),

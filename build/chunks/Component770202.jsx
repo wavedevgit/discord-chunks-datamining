@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 770202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -109,12 +109,12 @@ class E extends Chunk98597.ZP {
       ! function(e) {
         let t = e.getGuildId();
         if (null == t) throw Error("TextChannel, transitionTo: Channel does not have a guildId");
-        (0, p.uL)(O.Z5c.CHANNEL(t, e.id), {
+        (0, p.uL)(_.Z5c.CHANNEL(t, e.id), {
           state: {
             analyticsSource: {
-              page: O.ZY5.GUILD_CHANNEL,
-              section: O.jXE.CHANNEL_LIST,
-              object: O.qAy.CHANNEL
+              page: _.ZY5.GUILD_CHANNEL,
+              section: _.jXE.CHANNEL_LIST,
+              object: _.qAy.CHANNEL
             }
           }
         })
@@ -131,8 +131,8 @@ let x = (0, Chunk146773.B)(E),
     } = e, l = (0, a.cj)([f.Z, g.Z], () => {
       let e = f.Z.getChannel(t.parent_id);
       return {
-        canManageChannel: g.Z.can(O.Plq.MANAGE_CHANNELS, t),
-        canReorderChannel: true !== i && null != e ? g.Z.can(O.Plq.MANAGE_CHANNELS, e) : g.Z.can(O.Plq.MANAGE_CHANNELS, n)
+        canManageChannel: g.Z.can(_.Plq.MANAGE_CHANNELS, t),
+        canReorderChannel: true !== i && null != e ? g.Z.can(_.Plq.MANAGE_CHANNELS, e) : g.Z.can(_.Plq.MANAGE_CHANNELS, n)
       }
     });
     return (0, r.jsx)(x, j({}, l, e))

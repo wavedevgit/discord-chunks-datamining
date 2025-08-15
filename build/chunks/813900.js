@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 813900, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 24255 **/
+/** chunk id: 813900, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  FO: () => s,
+  FO: () => o,
   Fq: () => a,
   Ks: () => r,
-  q2: () => o,
-  qh: () => i
+  q2: () => i,
+  qh: () => l
 });
 let r = 80,
-  i = 48,
-  o = 3,
+  l = 48,
+  i = 3,
   a = 500,
-  s = 5e3
+  o = 5e3

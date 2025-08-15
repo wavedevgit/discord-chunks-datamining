@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   $H: () => r,
-  Ip: () => a,
+  Ip: () => o,
   Ui: () => i,
-  _5: () => o
+  _5: () => a
 });
 let r = 5,
   i = "switch-accounts-modal",
-  o = "multiaccount-login-modal",
-  a = "multiaccount_cta_tooltip_seen"
+  a = "multiaccount-login-modal",
+  o = "multiaccount_cta_tooltip_seen"

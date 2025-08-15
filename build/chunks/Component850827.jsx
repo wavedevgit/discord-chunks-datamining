@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 850827, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 850827, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => H
+  Z: () => V
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  s = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk730749 = require("./730749.jsx"),
@@ -41,64 +40,25 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk511479 = require("./511479.js"),
   Chunk964719 = require("./964719.js");
-
-function G(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function B(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      G(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function Z(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let V = e => {
+let R = e => {
     let {
       user: t,
       color: n,
       look: i,
-      activity: o,
+      activity: l,
       onAction: a
-    } = e, s = (0, f.Aq)(), l = () => {
-      s.dispatch(x.CkL.POPOUT_CLOSE), (0, h.closeUserProfileModal)(), null == a || a()
-    };
-    return (0, r.jsx)(S.Z, {
+    } = e, o = (0, f.Aq)();
+    return (0, r.jsx)(x.Z, {
       user: t,
       color: n,
       look: i,
-      activity: o,
-      onAction: l
+      activity: l,
+      onAction: () => {
+        o.dispatch(Z.CkL.POPOUT_CLOSE), (0, g.closeUserProfileModal)(), null == a || a()
+      }
     }, "custom-activity-button")
   },
-  H = (0, Chunk730749.Z)(e => {
+  V = (0, Chunk730749.Z)(e => {
     let {
       activity: t,
       embeddedActivity: n,
@@ -106,125 +66,153 @@ let V = e => {
       applicationStream: a,
       className: u,
       guildId: f,
-      channelId: h,
-      source: G,
-      color: Z = c.zx.Colors.WHITE,
-      look: H = c.zx.Looks.OUTLINED,
-      type: Y,
+      channelId: g,
+      source: V,
+      color: F = c.zx.Colors.WHITE,
+      look: G = c.zx.Looks.OUTLINED,
+      type: B,
       onAction: W
-    } = e, K = (0, l.e7)([g.default], () => {
-      let e = g.default.getCurrentUser();
-      return s()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-    }), z = Y === I.Y.STREAM_PREVIEW || null != a, q = (0, O.Z)(t), X = q || z ? _.Z.Direction.HORIZONTAL : _.Z.Direction.VERTICAL, Q = (null == t ? true : t.type) === x.IIU.HANG_STATUS, J = (0, l.e7)([E.Z, m.Z], () => {
+    } = e, H = (0, s.e7)([b.default], () => {
+      let e = b.default.getCurrentUser();
+      return o()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
+    }), Y = B === I.Y.STREAM_PREVIEW || null != a, z = (0, O.Z)(t), J = z || Y ? p.Z.Direction.HORIZONTAL : p.Z.Direction.VERTICAL, K = (null == t ? true : t.type) === Z.IIU.HANG_STATUS, q = (0, s.e7)([v.Z, h.Z], () => {
       var e;
-      return Q ? m.Z.getChannel(null == (e = E.Z.getVoiceStateForUser(i.id)) ? true : e.channelId) : null
+      return K ? h.Z.getChannel(null == (e = v.Z.getVoiceStateForUser(i.id)) ? true : e.channelId) : null
     });
-    if ((null == t ? true : t.application_id) === M.bO) return t = F(B({}, t), {
-      buttons: [j.intl.string(k.default["Fv/2Oz"])],
-      metadata: {
-        button_urls: [M.U8]
-      }
-    }), (0, r.jsx)(V, {
-      user: i,
-      color: Z,
-      look: H,
-      activity: t,
-      onAction: W
-    });
-    let $ = () => {
-        if ((0, v.Z)(t)) return (0, r.jsx)(T.Z, {
-          platform: d.Z.get(x.ABu.XBOX),
-          look: H,
-          color: Z,
+    if ((null == t ? true : t.application_id) === L.bO) {
+      var X, Q;
+      return X = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = r
+          })
+        }
+        return e
+      }({}, t), Q = Q = {
+        buttons: [M.intl.string(k.default["Fv/2Oz"])],
+        metadata: {
+          button_urls: [L.U8]
+        }
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(X, Object.getOwnPropertyDescriptors(Q)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
+        }
+        return n
+      })(Object(Q)).forEach(function(e) {
+        Object.defineProperty(X, e, Object.getOwnPropertyDescriptor(Q, e))
+      }), t = X, (0, r.jsx)(R, {
+        user: i,
+        color: F,
+        look: G,
+        activity: t,
+        onAction: W
+      })
+    }
+    let $ = J === p.Z.Direction.VERTICAL;
+    return (0, r.jsx)(p.Z, {
+      grow: 0,
+      align: p.Z.Align.STRETCH,
+      direction: J,
+      wrap: $ ? p.Z.Wrap.WRAP : p.Z.Wrap.NO_WRAP,
+      className: l()(u, U.buttonsWrapper, $ ? U.vertical : U.horizontal),
+      children: (() => {
+        if ((0, S.Z)(t)) return (0, r.jsx)(j.Z, {
+          platform: d.Z.get(Z.ABu.XBOX),
+          look: G,
+          color: F,
           onAction: W,
           Icon: y.Z
         }, "ConnectPlatformActivityButton");
-        if ((null == t ? true : t.platform) === x.M7m.PS4 || (null == t ? true : t.platform) === x.M7m.PS5) return (0, r.jsx)(T.Z, {
-          look: H,
-          color: Z,
-          platform: d.Z.get(x.ABu.PLAYSTATION),
+        if ((null == t ? true : t.platform) === Z.M7m.PS4 || (null == t ? true : t.platform) === Z.M7m.PS5) return (0, r.jsx)(j.Z, {
+          look: G,
+          color: F,
+          platform: d.Z.get(Z.ABu.PLAYSTATION),
           onAction: W,
-          Icon: b.Z
+          Icon: _.Z
         }, "ConnectPlatformActivityButton");
-        if (q) {
-          let e = (0, r.jsx)(w.Z, {
+        if (z) {
+          let e = (0, r.jsx)(A.Z, {
               activity: t,
               user: i,
               guildId: f,
-              channelId: h,
-              source: G,
-              look: H,
-              color: Z,
+              channelId: g,
+              source: V,
+              look: G,
+              color: F,
               onAction: W
             }, "spotify-activity-sync-button"),
-            n = (0, r.jsx)(P.Z, {
+            n = (0, r.jsx)(N.Z, {
               activity: t,
               user: i,
-              source: G,
-              look: H,
-              color: Z,
+              source: V,
+              look: G,
+              color: F,
               onAction: W
             }, "spotify-activity-play-button");
           return (0, r.jsxs)(r.Fragment, {
             children: [n, e]
           })
         }
-        if ((0, p.dS)(t)) {
-          let e = (0, p.rq)(t);
+        if ((0, m.dS)(t)) {
+          let e = (0, m.rq)(t);
           return null == e ? null : (0, r.jsx)(C.Z, {
             guildId: e.guildId,
             channelId: e.channelId,
-            color: Z,
-            look: H,
+            color: F,
+            look: G,
             onAction: W
           }, e.channelId)
         }
-        return z ? (0, r.jsx)(L.Z, {
-          isCurrentUser: K.id === i.id,
-          color: Z,
-          look: H,
+        return Y ? (0, r.jsx)(D.Z, {
+          isCurrentUser: H.id === i.id,
+          color: F,
+          look: G,
           applicationStream: a,
           onAction: W
-        }, "watch-button") : Q && null != J ? (0, r.jsx)(N.Z, {
-          color: Z,
-          look: H,
-          hangStatusChannel: J,
+        }, "watch-button") : K && null != q ? (0, r.jsx)(P.Z, {
+          color: F,
+          look: G,
+          hangStatusChannel: q,
           onAction: W
         }, "hang-status-button") : (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(D.Z, {
+          children: [(0, r.jsx)(w.Z, {
             activity: t,
-            color: Z,
-            look: H,
+            color: F,
+            look: G,
             onAction: W
-          }, "watch-button"), (0, r.jsx)(A.Z, {
+          }, "watch-button"), (0, r.jsx)(E.Z, {
             activity: t,
             embeddedActivity: n,
             user: i,
-            color: Z,
-            look: H,
+            color: F,
+            look: G,
             onAction: W
-          }, "join-activity-button"), (0, r.jsx)(R.Z, {
+          }, "join-activity-button"), (0, r.jsx)(T.Z, {
             activity: t,
             user: i,
-            color: Z,
-            look: H,
+            color: F,
+            look: G,
             onAction: W
-          }, "notify-button"), (0, r.jsx)(S.Z, {
+          }, "notify-button"), (0, r.jsx)(x.Z, {
             user: i,
-            color: Z,
-            look: H,
+            color: F,
+            look: G,
             activity: t,
             onAction: W
           }, "custom-activity-button")]
         })
-      },
-      ee = X === _.Z.Direction.VERTICAL;
-    return (0, r.jsx)(_.Z, {
-      grow: 0,
-      align: _.Z.Align.STRETCH,
-      direction: X,
-      wrap: ee ? _.Z.Wrap.WRAP : _.Z.Wrap.NO_WRAP,
-      className: o()(u, U.buttonsWrapper, ee ? U.vertical : U.horizontal),
-      children: $()
+      })()
     })
   })

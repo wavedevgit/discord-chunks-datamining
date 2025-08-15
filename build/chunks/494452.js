@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 494452, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 494452, original params: e,t,n (module,exports,require) **/
 module.exports = {
   metadata: "metadata__857bf",
   libraryLink: "libraryLink__857bf",

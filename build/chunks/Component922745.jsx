@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk215569 = require("./215569.js"),
   Chunk481060 = require("./481060.js"),
@@ -48,8 +48,8 @@ function y(e, t) {
   if (null == e) return {};
   var n, r, i = O(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -57,8 +57,8 @@ function y(e, t) {
 function O(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -67,11 +67,11 @@ function v(e) {
     title: t,
     onJumpToChannel: n,
     onHide: i,
-    idle: o,
+    idle: a,
     preventIdleComponent: s
-  } = e, c = (0, a.e7)([f.Z], () => f.Z.getChannelId()), d = null != c ? (0, r.jsx)(_.Z, {
+  } = e, c = (0, o.e7)([f.Z], () => f.Z.getChannelId()), d = null != c ? (0, r.jsx)(_.Z, {
     voiceChannelId: c,
-    idle: o
+    idle: a
   }) : null, {
     enabled: p
   } = u.Z.useExperiment({
@@ -107,7 +107,7 @@ function I(e) {
     children: t,
     idle: n,
     onJumpToChannel: i,
-    onHide: a,
+    onHide: o,
     backgroundKey: l,
     onActive: u,
     onForceIdle: f,
@@ -123,7 +123,7 @@ function I(e) {
     onMouseMove: u,
     onMouseDown: u,
     onMouseLeave: f,
-    className: o()(g.pictureInPictureVideo, {
+    className: a()(g.pictureInPictureVideo, {
       [g.idle]: n
     }, O),
     onDoubleClick: i,
@@ -135,13 +135,13 @@ function I(e) {
     }), null != m ? (0, r.jsx)(p.Z, b({
       size: "small"
     }, m)) : null, !E && (0, r.jsxs)("div", {
-      className: o()(g.videoControls, T, "theme-dark"),
+      className: a()(g.videoControls, T, "theme-dark"),
       children: [(0, r.jsx)("div", {
         className: g.topControls,
         children: (0, r.jsx)(v, b({
           idle: n,
           onJumpToChannel: i,
-          onHide: a
+          onHide: o
         }, S))
       }), (0, r.jsxs)("div", {
         className: g.bottomControls,

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 184279, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 184279, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -15,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk405005 = require("./405005.js"),
   Chunk191986 = require("./191986.js");
-let _ = () => (0, Chunk255367.jsx)("svg", {
+let h = () => (0, Chunk255367.jsx)("svg", {
   width: "46",
   height: "34",
   viewBox: "0 0 46 34",
@@ -26,29 +25,29 @@ let _ = () => (0, Chunk255367.jsx)("svg", {
   })
 });
 
-function p(e) {
+function f(e) {
   var t;
   let {
     channel: n
-  } = e, p = null != (t = (0, a.ZP)(n)) ? t : "";
+  } = e, f = null != (t = (0, a.ZP)(n)) ? t : "";
   return (0, r.jsxs)("div", {
-    id: (0, l.p)(n.id, n.id),
+    id: (0, s.p)(n.id, n.id),
     className: d.headerContainer,
     children: [(0, r.jsx)("img", {
-      src: f,
+      src: p,
       className: d.wumpusImage,
       alt: ""
     }), (0, r.jsxs)("div", {
       className: d.chatBubbleContainer,
-      children: [(0, r.jsx)(_, {}), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(h, {}), (0, r.jsxs)("div", {
         className: d.chatBubble,
         children: [(0, r.jsx)(i.qEK, {
-          "aria-label": p,
+          "aria-label": f,
           size: i.EFr.SIZE_80,
-          src: (0, o.x)(n, 80, false)
+          src: (0, l.x)(n, 80, false)
         }), (0, r.jsxs)(c.Ot, {
           className: d.emptyMessageHeader,
-          children: [p, (0, r.jsx)(s.Z, {
+          children: [f, (0, r.jsx)(o.Z, {
             className: d.flowerStar,
             size: 24,
             children: (0, r.jsx)(i.kmB, {

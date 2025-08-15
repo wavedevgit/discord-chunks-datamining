@@ -1,16 +1,16 @@
-/** Chunk was on 25548 **/
+/** Chunk was on 48091 **/
 /** chunk id: 622545, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
 });
 var Chunk388032 = require("./388032.jsx");
-let r = ["a", "b", "c", "d"],
+let i = ["a", "b", "c", "d"],
   l = e => e;
 
 function a(e, t) {
   let n = {},
-    i = Math.min(e.length, r.length);
-  for (let l = 0; l < i; ++l) n[r[l]] = (n, i) => t(e[l], i);
+    r = Math.min(e.length, i.length);
+  for (let l = 0; l < r; ++l) n[i[l]] = (n, r) => t(e[l], r);
   return n
 }
 class s {
@@ -27,11 +27,11 @@ class s {
       case 1:
         return e(this.items[0], "");
       case 2:
-        return i.intl.format(i.t.GENERIC_FORMATTED_LIST_TWO, a(this.items, e));
+        return r.intl.format(r.t.GENERIC_FORMATTED_LIST_TWO, a(this.items, e));
       case 3:
-        return i.intl.format(i.t.GENERIC_FORMATTED_LIST_THREE, a(this.items, e));
+        return r.intl.format(r.t.GENERIC_FORMATTED_LIST_THREE, a(this.items, e));
       default:
-        return i.intl.format(i.t.GENERIC_FORMATTED_LIST_FOUR, a(this.items, e))
+        return r.intl.format(r.t.GENERIC_FORMATTED_LIST_FOUR, a(this.items, e))
     }
   }
   constructor(e) {

@@ -53,10 +53,10 @@ function h(e) {
         r = (0, s.x3)(e);
       p(n, r), (0, a.h)(t, r, true)
     }, [t, p]),
-    [v, C] = i.useState(false),
-    _ = i.useRef(v);
+    [v, _] = i.useState(false),
+    C = i.useRef(v);
   i.useLayoutEffect(() => {
-    _.current = v
+    C.current = v
   }, [v]), i.useLayoutEffect(() => {
     let e = g.current;
     if (null != e) return e.addEventListener("focusin", n), e.addEventListener("focusout", r), e.addEventListener("focus", i), e.addEventListener("scroll", a, {
@@ -66,11 +66,11 @@ function h(e) {
     };
 
     function n() {
-      C(true)
+      _(true)
     }
 
     function r(e) {
-      e.currentTarget.contains(e.relatedTarget) || (C(false), requestAnimationFrame(() => {
+      e.currentTarget.contains(e.relatedTarget) || (_(false), requestAnimationFrame(() => {
         let e = c.current;
         null !== e && null == x((0, s.P1)(e, o)) && b((0, s.P1)(t, "data-grid-id"))
       }))
@@ -78,7 +78,7 @@ function h(e) {
 
     function i() {
       let e = g.current;
-      if (_.current || null == e) return
+      if (C.current || null == e) return
     }
 
     function a() {
@@ -175,7 +175,7 @@ function h(e) {
         }
       }
     }, [x, j]),
-    O = i.useCallback(e => {
+    w = i.useCallback(e => {
       c.current = null != e ? (0, s.jb)(t, e) : null
     }, [t]);
   return i.useMemo(() => ({
@@ -184,8 +184,8 @@ function h(e) {
       onKeyDown: y,
       ref: g
     },
-    setFocus: O
-  }), [t, y, O])
+    setFocus: w
+  }), [t, y, w])
 }
 let g = {
     id: "NO_LIST",

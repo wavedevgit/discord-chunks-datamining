@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk385499 = require("./385499.jsx"),
   Chunk674563 = require("./674563.js"),
   Chunk685679 = require("./685679.js");
@@ -29,10 +29,10 @@ let c = e => {
     usernameIcon: g
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(c, l.nameTag),
+    className: a()(c, l.nameTag),
     style: h,
     children: [(0, r.jsxs)("span", {
-      className: o()(l.username, d),
+      className: a()(l.username, d),
       style: null != s ? {
         color: s
       } : true,
@@ -40,10 +40,10 @@ let c = e => {
     }), null != n ? (0, r.jsxs)("span", {
       className: null != f ? f : true,
       children: ["#", n]
-    }) : null, null != u ? (0, r.jsx)(a.Z, {
+    }) : null, null != u ? (0, r.jsx)(o.Z, {
       type: u,
       invertColor: i,
-      className: o()(_, l.bot),
+      className: a()(_, l.bot),
       verified: p,
       useRemSizes: m
     }) : null]

@@ -61,7 +61,7 @@ let _ = "mp4",
   I = "downsized_small.mp4",
   T = "original.mp4",
   S = m,
-  A = j(S) ? Chunk377108.EO.VIDEO : Chunk377108.EO.IMAGE,
+  A = k(S) ? Chunk377108.EO.VIDEO : Chunk377108.EO.IMAGE,
   N = null,
   C = "",
   R = "",
@@ -78,7 +78,7 @@ function M(e) {
   "" === (C = e.query) && (R = "", P = [], D = [])
 }
 
-function j(e) {
+function k(e) {
   switch (e) {
     case b:
     case y:
@@ -98,7 +98,7 @@ function j(e) {
   }
 }
 
-function k(e) {
+function j(e) {
   return e.replace(/^https?:/, "")
 }
 
@@ -110,16 +110,16 @@ function U(e) {
       height: n,
       src: r,
       gif_src: i,
-      url: o,
-      id: a
+      url: a,
+      id: o
     } = e;
     return {
       width: t,
       height: n,
-      src: k(r),
-      gifSrc: k(i),
-      url: o,
-      id: a,
+      src: j(r),
+      gifSrc: j(i),
+      url: a,
+      id: o,
       format: A
     }
   })
@@ -138,16 +138,16 @@ function B(e) {
   w = [...null != e.trendingGIFPreview ? [{
     type: s.wI2.TRENDING_GIFS,
     name: l.intl.string(l.t.H6zNFx),
-    src: k(e.trendingGIFPreview.src),
+    src: j(e.trendingGIFPreview.src),
     format: A
   }] : [], ...t.map(e => f(u({}, e), {
-    src: k(e.src),
+    src: j(e.src),
     type: s.wI2.TRENDING_CATEGORY,
     format: A
   }))]
 }
 
-function Z(e) {
+function V(e) {
   let {
     items: t
   } = e;
@@ -160,7 +160,7 @@ function F(e) {
   } = e;
   L = t
 }
-class V extends(r = Chunk442837.ZP.Store) {
+class Z extends(r = Chunk442837.ZP.Store) {
   getAnalyticsID() {
     return N
   }
@@ -186,13 +186,13 @@ class V extends(r = Chunk442837.ZP.Store) {
     return L
   }
 }
-c(V, "displayName", "GIFPickerViewStore");
-let H = new V(Chunk570140.Z, {
+c(Z, "displayName", "GIFPickerViewStore");
+let H = new Z(Chunk570140.Z, {
   GIF_PICKER_INITIALIZE: x,
   GIF_PICKER_QUERY: M,
   GIF_PICKER_QUERY_SUCCESS: U,
   GIF_PICKER_QUERY_FAILURE: G,
   GIF_PICKER_TRENDING_FETCH_SUCCESS: B,
-  GIF_PICKER_SUGGESTIONS_SUCCESS: Z,
+  GIF_PICKER_SUGGESTIONS_SUCCESS: V,
   GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: F
 })

@@ -97,7 +97,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk890332 = require("./890332.js"),
   Chunk197571 = require("./197571.js");
 
-function eB(e, t, n) {
+function eV(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -113,7 +113,7 @@ function eH(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      eB(e, t, n[t])
+      eV(e, t, n[t])
     })
   }
   return e
@@ -697,14 +697,14 @@ class e$ extends Chunk73800.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), eB(this, "ref", i.createRef()), eB(this, "krispButtonRef", i.createRef()), eB(this, "handleChannelLinkClick", e => {
+    super(...e), eV(this, "ref", i.createRef()), eV(this, "krispButtonRef", i.createRef()), eV(this, "handleChannelLinkClick", e => {
       var t;
       let {
         guild: n,
         channel: r
       } = this.props;
       s()(null != r, "Channel is null during navigation click"), e.stopPropagation(), O.Z.channelListScrollTo(null != (t = null == n ? true : n.id) ? t : eR.ME, r.id), (0, R.v)(x.Z.RTC_PANEL, R.d.CHANNEL_LINK)
-    }), eB(this, "handleChannelLinkContextMenu", e => {
+    }), eV(this, "handleChannelLinkContextMenu", e => {
       let {
         channel: t,
         analyticsLocations: i
@@ -721,9 +721,9 @@ class e$ extends Chunk73800.PureComponent {
           }))
         })
       })
-    }), eB(this, "handleCloseVoicePanelIntroduction", () => {
+    }), eV(this, "handleCloseVoicePanelIntroduction", () => {
       W.Kw(eM.v.VOICE_PANEL_INTRODUCTION)
-    }), eB(this, "renderVoicePanelIntroduction", () => (0, r.jsxs)("div", {
+    }), eV(this, "renderVoicePanelIntroduction", () => (0, r.jsxs)("div", {
       className: a()(eG.voicePanelIntroductionWrapper, "theme-light"),
       children: [(0, r.jsx)(m.X6q, {
         className: eG.voicePanelIntroductionHeader,
@@ -777,8 +777,8 @@ function e0(e) {
   }))
 }
 let e1 = (0, Chunk730749.Z)(function(e) {
-  let t = (0, B.Z)(),
-    n = (0, u.e7)([V.Z], () => V.Z.getAwaitingRemoteSessionInfo()),
+  let t = (0, V.Z)(),
+    n = (0, u.e7)([B.Z], () => B.Z.getAwaitingRemoteSessionInfo()),
     l = (0, u.e7)([eS.default], () => eS.default.getCurrentUser()),
     a = (0, u.cj)([eI.Z], () => null != t ? {
       channelId: t.channelId,

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 246841, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 246841, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -20,20 +19,20 @@ function c(e) {
     className: u,
     size: d,
     look: f,
-    color: _,
-    fullWidth: p,
-    onAction: h
+    color: p,
+    fullWidth: m,
+    onAction: g
   } = e, {
-    label: m,
-    tooltip: g,
-    loading: E,
-    disabled: b,
+    label: h,
+    tooltip: b,
+    loading: v,
+    disabled: _,
     onClick: y
-  } = (0, s.Ih)(t, n, c), O = () => {
-    null == h || h(), y()
+  } = (0, o.Ih)(t, n, c), O = () => {
+    null == g || g(), y()
   };
-  return (0, r.jsx)(o.ua7, {
-    text: g,
+  return (0, r.jsx)(l.ua7, {
+    text: b,
     children: e => {
       let {
         onMouseEnter: t,
@@ -41,20 +40,20 @@ function c(e) {
       } = e;
       return (0, r.jsxs)(i.zx, {
         className: u,
-        innerClassName: l.playButtonInner,
+        innerClassName: s.playButtonInner,
         size: d,
         look: f,
-        color: _,
-        fullWidth: p,
+        color: p,
+        fullWidth: m,
         onClick: O,
         onMouseEnter: t,
         onMouseLeave: n,
-        disabled: b,
-        submitting: E,
+        disabled: _,
+        submitting: v,
         children: [(0, r.jsx)(a.Z, {
           width: 16,
           height: 16
-        }), m]
+        }), h]
       })
     }
   })

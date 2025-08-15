@@ -1,7 +1,7 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 82888, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -15,26 +15,26 @@ var Chunk399606 = require("./399606.js"),
   Chunk918559 = require("./918559.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e) {
+function h(e) {
   let {
     maxHeight: t,
     renderExternalHeader: n
   } = e, {
-    connectedChannelId: p,
+    connectedChannelId: h,
     connectedActivity: f,
-    activityPanelMode: g
-  } = (0, i.cj)([s.ZP], () => {
-    let e = s.ZP.getConnectedActivityLocation(),
-      t = s.ZP.getSelfEmbeddedActivityForLocation(e);
+    activityPanelMode: m
+  } = (0, i.cj)([o.ZP], () => {
+    let e = o.ZP.getConnectedActivityLocation(),
+      t = o.ZP.getSelfEmbeddedActivityForLocation(e);
     return {
-      connectedChannelId: (0, o.p)(e),
+      connectedChannelId: (0, s.p)(e),
       connectedActivity: t,
-      activityPanelMode: s.ZP.getActivityPanelMode()
+      activityPanelMode: o.ZP.getActivityPanelMode()
     }
-  }), m = (0, i.e7)([l.Z], () => l.Z.getWindowOpen(h.KJ3.ACTIVITY_POPOUT));
-  if (!(0, a.NX)(p)) return null;
+  }), g = (0, i.e7)([l.Z], () => l.Z.getWindowOpen(p.KJ3.ACTIVITY_POPOUT));
+  if (!(0, a.NX)(h)) return null;
   let b = null == f ? true : f.applicationId;
-  return g !== d.Ez.PANEL || null == b || m || null == p || null == f || (0, c.Z)(p) ? null : (0, r.jsx)(u.Z, {
+  return m !== d.Ez.PANEL || null == b || g || null == h || null == f || (0, c.Z)(h) ? null : (0, r.jsx)(u.Z, {
     maxHeight: t,
     connectedLocation: f.location,
     renderExternalHeader: n

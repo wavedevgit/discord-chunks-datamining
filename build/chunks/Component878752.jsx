@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 878752, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 878752, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -19,39 +18,39 @@ var Chunk100527 = require("./100527.js"),
   Chunk159909 = require("./159909.jsx"),
   Chunk474830 = require("./474830.js");
 
-function m(e) {
+function g(e) {
   let {
     channel: t,
     hasActiveStream: n,
-    showRightDivider: m = false
+    showRightDivider: g = false
   } = e, {
-    analyticsLocations: g
-  } = (0, o.ZP)(i.Z.VOICE_CONTROL_TRAY), E = null != (0, s.Z)(), {
-    isSharedCanvasEnabled: b
+    analyticsLocations: b
+  } = (0, l.ZP)(i.Z.VOICE_CONTROL_TRAY), y = (0, o.Z)(), {
+    isSharedCanvasEnabled: _
   } = c.Z.useExperiment({
     guildId: null == t ? true : t.guild_id,
     location: "b7309a_1"
   }), {
-    enableViewerClipping: y
-  } = l.Z.useExperiment({
+    enableViewerClipping: C
+  } = s.Z.useExperiment({
     location: "VoiceEffectsActionBar"
   }, {
     autoTrackExposure: false
-  }), O = (0, a.Z)(u.Z);
-  if (null == t || E) return null;
-  let v = y && O,
-    I = b && n;
-  return (0, r.jsxs)(o.Gt, {
-    value: g,
+  }), x = (0, a.Z)(u.Z);
+  if (null == t || null != y) return null;
+  let v = C && x,
+    j = _ && n;
+  return (0, r.jsxs)(l.Gt, {
+    value: b,
     children: [(0, r.jsxs)("div", {
-      className: h.voiceEffectsActionBar,
+      className: m.voiceEffectsActionBar,
       children: [v && (0, r.jsx)(d.Z, {
         channel: t
-      }), I && (0, r.jsx)(f.Z, {}), I && (0, r.jsx)(_.Z, {
+      }), j && (0, r.jsx)(p.Z, {}), j && (0, r.jsx)(h.Z, {
         channel: t
-      }), I && (0, r.jsx)(p.Z, {})]
-    }), m && (v || I) && (0, r.jsx)("div", {
-      className: h.divider
+      }), j && (0, r.jsx)(f.Z, {})]
+    }), g && (v || j) && (0, r.jsx)("div", {
+      className: m.divider
     })]
   })
 }

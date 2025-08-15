@@ -2,7 +2,7 @@
 /** chunk id: 768943, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Z
+  Z: () => V
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
@@ -82,8 +82,8 @@ function I(e) {
   null == h.get(n) && (g = Date.now()), h.set(n, e);
   let r = e.saveData.messageId,
     i = e.saveData.channelId,
-    o = null != (t = y.get(i)) ? t : new Set;
-  o.add(r), y.set(i, o), null == e.message && b.add(r), null != e.saveData.dueAt && new Date > e.saveData.dueAt ? E.add(r) : E.delete(r)
+    a = null != (t = y.get(i)) ? t : new Set;
+  a.add(r), y.set(i, a), null == e.message && b.add(r), null != e.saveData.dueAt && new Date > e.saveData.dueAt ? E.add(r) : E.delete(r)
 }
 
 function T(e) {
@@ -134,8 +134,8 @@ function P(e) {
     channelId: n
   }), i = h.get(r);
   if ((null == i ? true : i.message) == null) returnfalse;
-  let o = d({}, i);
-  return o.message = null, h.set(r, o), true
+  let a = d({}, i);
+  return a.message = null, h.set(r, a), true
 }
 
 function w(e) {
@@ -188,7 +188,7 @@ function M(e) {
   m = true
 }
 
-function j(e) {
+function k(e) {
   let {
     channels: t
   } = e;
@@ -198,7 +198,7 @@ function j(e) {
   return n
 }
 
-function k(e) {
+function j(e) {
   let {
     channel: t
   } = e;
@@ -269,7 +269,7 @@ class B extends(r = Chunk442837.ZP.Store) {
   }
 }
 u(B, "displayName", "SavedMessagesStore");
-let Z = new B(Chunk570140.Z, {
+let V = new B(Chunk570140.Z, {
   POST_CONNECTION_OPEN: S,
   LOGOUT: A,
   SAVED_MESSAGES_UPDATE: N,
@@ -282,8 +282,8 @@ let Z = new B(Chunk570140.Z, {
   GUILD_UPDATE: x,
   GUILD_DELETE: x,
   CHANNEL_CREATE: M,
-  CHANNEL_UPDATES: j,
-  CHANNEL_DELETE: k,
+  CHANNEL_UPDATES: k,
+  CHANNEL_DELETE: j,
   GUILD_MEMBER_UPDATE: U,
   GUILD_ROLE_CREATE: x,
   GUILD_ROLE_UPDATE: x,

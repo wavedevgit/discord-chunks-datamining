@@ -40,10 +40,10 @@ function d(e) {
     colorMix: c
   } = e, {
     firstFocusableItemProps: d
-  } = i.useContext(a.M);
+  } = i.useContext(o.M);
   return (0, r.jsx)("div", {
     className: l.closeButton,
-    children: (0, r.jsx)(o.P, u({
+    children: (0, r.jsx)(a.P, u({
       size: "sm",
       "aria-label": n,
       onClick: t,

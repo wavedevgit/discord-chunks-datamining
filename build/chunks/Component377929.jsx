@@ -1,7 +1,7 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 377929, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => P
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -58,25 +58,25 @@ function S(e, t) {
   }), e
 }
 
-function I(e) {
+function P(e) {
   let {
     channel: t
   } = e, [n, l] = i.useState(false), a = i.useRef(null);
 
-  function s() {
+  function o() {
     l(e => !e)
   }
-  let c = C.intl.string(C.t.UKOtz8);
-  return (0, r.jsx)(o.yRy, {
+  let c = O.intl.string(O.t.UKOtz8);
+  return (0, r.jsx)(s.yRy, {
     targetElementRef: a,
     shouldShow: n,
-    animation: o.yRy.Animation.NONE,
+    animation: s.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: false,
     onRequestClose: () => l(false),
     renderPopout: function(e) {
-      return (0, r.jsx)(Z, S(E({}, e), {
+      return (0, r.jsx)(I, S(E({}, e), {
         channel: t
       }))
     },
@@ -84,11 +84,11 @@ function I(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsx)(j.ZP.Icon, S(E({}, e), {
+      return (0, r.jsx)(C.ZP.Icon, S(E({}, e), {
         ref: a,
-        onClick: s,
+        onClick: o,
         tooltip: n ? null : c,
-        icon: o.xhG,
+        icon: s.xhG,
         "aria-label": c,
         selected: n
       }))
@@ -96,34 +96,34 @@ function I(e) {
   })
 }
 
-function Z(e) {
+function I(e) {
   let {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, l = (0, c.Z)(t), j = (0, f.Z)(t), E = (0, b.Z)(t.id), S = (0, m.Z)(t), I = (0, x.Z)({
+  } = e, l = (0, c.Z)(t), C = (0, f.Z)(t), E = (0, b.Z)(t.id), S = (0, g.Z)(t), P = (0, _.Z)({
     id: t.id,
-    label: C.intl.string(C.t.DQ797u)
-  }), Z = (0, u.Z)(t), P = (0, d.Z)(t), T = (0, h.Z)(t, "Toolbar Overflow"), N = (0, g.Z)(t), R = (0, p.Z)(t), w = (0, y.Z)(t), A = _.vF.useSetting(), D = (0, s.e7)([O.Z], () => !a().isEmpty(O.Z.getVoiceStatesForChannel(t.id)));
-  return (0, r.jsxs)(o.v2r, {
+    label: O.intl.string(O.t.DQ797u)
+  }), I = (0, u.Z)(t), Z = (0, d.Z)(t), T = (0, p.Z)(t, "Toolbar Overflow"), N = (0, m.Z)(t), A = (0, h.Z)(t), w = (0, y.Z)(t), R = x.vF.useSetting(), M = (0, o.e7)([v.Z], () => !a().isEmpty(v.Z.getVoiceStatesForChannel(t.id)));
+  return (0, r.jsxs)(s.v2r, {
     navId: "thread-context",
     onClose: n,
-    "aria-label": C.intl.string(C.t["1NBjqa"]),
+    "aria-label": O.intl.string(O.t["1NBjqa"]),
     onSelect: i,
-    children: [(0, r.jsxs)(o.kSQ, {
-      children: [T, R]
-    }), (0, r.jsxs)(o.kSQ, {
-      children: [S, N, E, A && !D ? (0, r.jsx)(o.sNh, {
+    children: [(0, r.jsxs)(s.kSQ, {
+      children: [T, A]
+    }), (0, r.jsxs)(s.kSQ, {
+      children: [S, N, E, R && !M ? (0, r.jsx)(s.sNh, {
         id: "open",
-        label: C.intl.string(C.t.bX7EaG),
+        label: O.intl.string(O.t.bX7EaG),
         action: function() {
-          (0, v.ok)(t)
+          (0, j.ok)(t)
         }
       }) : null]
-    }), (0, r.jsxs)(o.kSQ, {
-      children: [w, l, j, P]
-    }), (0, r.jsxs)(o.kSQ, {
-      children: [Z, I]
+    }), (0, r.jsxs)(s.kSQ, {
+      children: [w, l, C, Z]
+    }), (0, r.jsxs)(s.kSQ, {
+      children: [I, P]
     })]
   })
 }

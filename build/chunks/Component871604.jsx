@@ -53,8 +53,8 @@ function N(e, t) {
   if (null == e) return {};
   var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -62,8 +62,8 @@ function N(e, t) {
 function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -73,11 +73,11 @@ function R(e) {
     closePopout: n
   } = e, S = N(e, ["user", "closePopout"]);
   let C = i.useRef(null),
-    R = (0, o.e7)([y.Z], () => {
+    R = (0, a.e7)([y.Z], () => {
       var e;
       return null == (e = y.Z.getUserProfile(t.id)) ? true : e.application
     }),
-    P = (0, o.e7)([h.Z, p.Z], () => p.Z.getChannel(h.Z.getChannelId())),
+    P = (0, a.e7)([h.Z, p.Z], () => p.Z.getChannel(h.Z.getChannelId())),
     w = (0, s.Z)(P),
     D = t.id,
     L = i.useCallback(() => {
@@ -88,7 +88,7 @@ function R(e) {
             r = null != _.ZP.getSidebarState(e) || (null == t ? true : t.isGuildVocal()) ? f.Ie.SIDEBAR : f.Ie.NORMAL;
           l.__(c._b.TEXT, r, {
             applicationId: R.id
-          }), (0, a.Mr3)((0, O.z)(D, null == P ? true : P.guild_id)), null == n || n(), m.default.track(I.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
+          }), (0, o.Mr3)((0, O.z)(D, null == P ? true : P.guild_id)), null == n || n(), m.default.track(I.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
             application_id: R.id
           })
         } else(0, b.L)(A({
@@ -99,20 +99,20 @@ function R(e) {
   if (null == R || !(0, d.Eb)(R)) return null;
   let {
     customInstallUrl: M
-  } = R, j = null == M || E.Z.isDiscordUrl(M) ? a.qJs : a.Gr1, k = w ? true : j;
-  return g.wS ? (0, r.jsx)(a.yRy, {
+  } = R, k = null == M || E.Z.isDiscordUrl(M) ? o.qJs : o.Gr1, j = w ? true : k;
+  return g.wS ? (0, r.jsx)(o.yRy, {
     targetElementRef: C,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(a.v2r, {
+      return (0, r.jsx)(o.v2r, {
         navId: "user-bot-profile-add-app",
         onClose: t,
         "aria-label": T.intl.string(T.t.dbkxVl),
         onSelect: true,
-        children: (0, r.jsx)(a.kSQ, {
-          children: (0, r.jsx)(a.sNh, {
+        children: (0, r.jsx)(o.kSQ, {
+          children: (0, r.jsx)(o.sNh, {
             id: "copy",
             label: T.intl.string(T.t.XWDiho),
             action: () => (0, g.JG)((0, u.J)(R))
@@ -128,7 +128,7 @@ function R(e) {
         ref: C,
         action: "PRESS_ADD_APP",
         text: x,
-        icon: k,
+        icon: j,
         onContextMenu: t,
         onClick: L
       }, n, S))
@@ -136,7 +136,7 @@ function R(e) {
   }) : (0, r.jsx)(v.tG, A({
     action: "PRESS_ADD_APP",
     text: x,
-    icon: k,
+    icon: j,
     onClick: L
   }, S))
 }

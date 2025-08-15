@@ -1,4 +1,4 @@
-/** Chunk was on 9885 **/
+/** Chunk was on 42521 **/
 /** chunk id: 453217, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -24,14 +24,14 @@ let h = function(e) {
     className: n,
     expansionSpring: s,
     isExpanded: h,
-    isExpansionAnimationComplete: j,
-    quest: b,
-    useReducedMotion: _
-  } = e, v = (null == (t = b.userStatus) ? true : t.enrolledAt) != null, {
+    isExpansionAnimationComplete: b,
+    quest: _,
+    useReducedMotion: j
+  } = e, v = (null == (t = _.userStatus) ? true : t.enrolledAt) != null, {
     percentComplete: C
-  } = (0, l.Rf)(b), y = (0, l.Jf)(b), E = null != y ? y.percentComplete > 0 : C > 0;
+  } = (0, l.Rf)(_), y = (0, l.Jf)(_), E = null != y ? y.percentComplete > 0 : C > 0;
   return (0, r.jsxs)(a.animated.div, {
-    "aria-hidden": h && j,
+    "aria-hidden": h && b,
     className: o()(n, x.contentCollapsed, {
       [x.contentCollapsedExpanded]: h,
       [x.contentCollapsedAccepted]: v
@@ -43,22 +43,22 @@ let h = function(e) {
       })
     },
     children: [(0, r.jsx)(m.Z, {
-      quest: b,
-      useReducedMotion: _
+      quest: _,
+      useReducedMotion: j
     }), (0, r.jsx)("div", {
       className: x.contentCollapsedWrapper,
       children: v ? (0, r.jsxs)("div", {
         className: x.questProgressWrapper,
         children: [(0, r.jsx)(p.Z, {
           className: x.questProgressRewardTile,
-          quest: b,
+          quest: _,
           questContent: c.jn.QUEST_BAR,
           autoplay: false,
           location: g.dr.QUESTS_BAR,
           sourceQuestContent: c.jn.QUEST_BAR
         }), E ? (0, r.jsx)(d.Z, {
           className: x.questProgressBar,
-          quest: b
+          quest: _
         }) : (0, r.jsx)(i.Text, {
           className: x.questProgressHint,
           color: "always-white",
@@ -69,13 +69,13 @@ let h = function(e) {
         className: x.brandingWrapper,
         children: [(0, r.jsx)(u.ZP, {
           className: x.partnerBranding,
-          quest: b
+          quest: _
         }), (0, r.jsx)(i.X6q, {
           color: "always-white",
           variant: "heading-sm/medium",
           className: x.questName,
           children: f.intl.format(f.t.EAYZAg, {
-            questName: b.config.messages.questName
+            questName: _.config.messages.questName
           })
         })]
       })

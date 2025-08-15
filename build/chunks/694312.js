@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 694312, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 694312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E: () => f
+  E: () => p
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
@@ -14,26 +13,26 @@ var Chunk73800 = require("./73800.js"),
   Chunk317381 = require("./317381.js"),
   Chunk761122 = require("./761122.js");
 
-function f(e) {
+function p(e) {
   let t = (0, i.e7)([a.default], a.default.getCurrentUser),
     n = (0, i.Wu)([u.ZP], () => u.ZP.getShelfActivities(e)),
-    f = (0, i.e7)([s.Z], () => s.Z.testModeEmbeddedApplicationId),
-    _ = n.map(e => e.application_id),
-    p = null != f ? [f, ..._] : _,
-    h = (0, o.Z)(p),
-    m = r.useMemo(() => h.filter(l.lm), [h]),
-    g = r.useMemo(() => null != f && m.length > 0 && m[0].id === f && null != m[0].embeddedActivityConfig ? [{
-      activity: m[0].embeddedActivityConfig,
-      application: m[0]
-    }] : [], [m, f]),
-    E = r.useMemo(() => n.map(e => {
-      let t = m.find(t => t.id === e.application_id);
+    p = (0, i.e7)([o.Z], () => o.Z.testModeEmbeddedApplicationId),
+    m = n.map(e => e.application_id),
+    f = null != p ? [p, ...m] : m,
+    h = (0, r.Z)(f),
+    v = l.useMemo(() => h.filter(s.lm), [h]),
+    y = l.useMemo(() => null != p && v.length > 0 && v[0].id === p && null != v[0].embeddedActivityConfig ? [{
+      activity: v[0].embeddedActivityConfig,
+      application: v[0]
+    }] : [], [v, p]),
+    x = l.useMemo(() => n.map(e => {
+      let t = v.find(t => t.id === e.application_id);
       return null == t ? null : {
         activity: e,
         application: t
       }
-    }).filter(l.lm), [n, m]);
-  return r.useMemo(() => [...g, ...E].filter(e => {
+    }).filter(s.lm), [n, v]);
+  return l.useMemo(() => [...y, ...x].filter(e => {
     var t;
     let {
       activity: n
@@ -44,5 +43,5 @@ function f(e) {
       activity: n
     } = e;
     return !n.requires_age_gate || (null == t ? true : t.nsfwAllowed) === true || (null == t ? true : t.nsfwAllowed) == null
-  }), [null == t ? true : t.nsfwAllowed, E, g])
+  }), [null == t ? true : t.nsfwAllowed, x, y])
 }

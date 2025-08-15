@@ -77,7 +77,7 @@ function f(e) {
 function _(e, t, n) {
   let {
     name: i,
-    description: o,
+    description: a,
     privacyLevel: s,
     channelId: c,
     scheduledStartTime: d,
@@ -89,9 +89,9 @@ function _(e, t, n) {
     eventExceptions: g
   } = e;
   return {
-    id: null != n ? n : a.Ku,
+    id: null != n ? n : o.Ku,
     name: i,
-    description: null != o ? o : null,
+    description: null != a ? a : null,
     privacy_level: s,
     scheduled_start_time: d,
     scheduled_end_time: f,
@@ -101,7 +101,7 @@ function _(e, t, n) {
     channel_id: c,
     guild_id: t,
     creator_id: r.default.getId(),
-    status: a.p1.SCHEDULED,
+    status: o.p1.SCHEDULED,
     recurrence_rule: l(m),
     guild_scheduled_event_exceptions: u(g)
   }
@@ -111,10 +111,10 @@ function p(e, t) {
   var n, r, s, l, u, _, p;
   let h = {
     name: null != (n = null == e ? true : e.name) ? n : "",
-    privacyLevel: null != (r = null == e ? true : e.privacy_level) ? r : a.j8.GUILD_ONLY,
+    privacyLevel: null != (r = null == e ? true : e.privacy_level) ? r : o.j8.GUILD_ONLY,
     description: null != (s = null == e ? true : e.description) ? s : "",
-    scheduledStartTime: null != (l = null == e ? true : e.scheduled_start_time) ? l : (0, o.ib)().toISOString(),
-    entityType: null != (u = null == e ? true : e.entity_type) ? u : a.WX.NONE,
+    scheduledStartTime: null != (l = null == e ? true : e.scheduled_start_time) ? l : (0, a.ib)().toISOString(),
+    entityType: null != (u = null == e ? true : e.entity_type) ? u : o.WX.NONE,
     entityMetadata: null != (_ = null == e ? true : e.entity_metadata) ? _ : true,
     channelId: null == e ? true : e.channel_id,
     creatorId: null == e ? true : e.creator_id,
@@ -123,11 +123,11 @@ function p(e, t) {
     recurrenceRule: c(null == e ? true : e.recurrence_rule),
     eventExceptions: d(null != (p = null == e ? true : e.guild_scheduled_event_exceptions) ? p : [])
   };
-  if (f(e) && (null == e ? true : e.entity_type) === a.WX.EXTERNAL) {
+  if (f(e) && (null == e ? true : e.entity_type) === o.WX.EXTERNAL) {
     let t = (0, i.cS)(e);
     null != t && (h.entityMetadata = {
       location: t
     })
-  } else null == h.channelId && null != t && (h.channelId = t.id, t.isGuildStageVoice() ? h.entityType = a.WX.STAGE_INSTANCE : t.isGuildVoice() && (h.entityType = a.WX.VOICE));
+  } else null == h.channelId && null != t && (h.channelId = t.id, t.isGuildStageVoice() ? h.entityType = o.WX.STAGE_INSTANCE : t.isGuildVoice() && (h.entityType = o.WX.VOICE));
   return h
 }

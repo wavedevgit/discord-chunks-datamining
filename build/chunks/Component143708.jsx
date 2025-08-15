@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 143708, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 143708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -19,54 +18,52 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk105341 = require("./105341.js");
 
-function m(e) {
-  let t, n, m, {
-      author: g,
-      banned: E,
-      channelId: b
+function g(e) {
+  let t, n, g, {
+      author: h,
+      banned: b,
+      channelId: E
     } = e,
-    y = (0, i.e7)([l.default], () => l.default.getId()),
-    O = f.ZP.useName(g),
-    v = y === g.id,
-    I = (0, i.e7)([c.Z, u.Z], () => {
-      let e = c.Z.getChannel(b);
+    C = (0, i.e7)([s.default], () => s.default.getId()),
+    v = p.ZP.useName(h),
+    O = C === h.id,
+    y = (0, i.e7)([c.Z, u.Z], () => {
+      let e = c.Z.getChannel(E);
       if (null == e) returnfalse;
       if (e.isPrivate()) returntrue;
       if (e.isThread()) {
-        let t = (0, s.xl)(e),
-          n = u.Z.can(_.Plq.SEND_MESSAGES_IN_THREADS, e);
+        let t = (0, o.xl)(e),
+          n = u.Z.can(m.Plq.SEND_MESSAGES_IN_THREADS, e);
         return !t && n
       }
-      return u.Z.can(_.Plq.SEND_MESSAGES, e)
+      return u.Z.can(m.Plq.SEND_MESSAGES, e)
     });
-
-  function T() {
-    let {
-      id: e
-    } = g, t = "@".concat(f.ZP.getUserTag(g, {
-      decoration: "never"
-    })), n = "<@".concat(e, ">");
-    d.S.dispatchToLastSubscribed(_.CkL.INSERT_TEXT, {
-      plainText: t,
-      rawText: n
-    }), null != b && o.Z.startTyping(b)
-  }
-  return v ? (t = p.intl.string(p.t["F/OLvL"]), m = p.intl.string(p.t.C89OLC)) : (m = p.intl.string(p.t["YVub5+"]), E ? t = p.intl.string(p.t["57nBt7"]) : null != O && I ? (t = p.intl.formatToPlainString(p.t["9Akp1t"], {
-    username: O
+  return O ? (t = f.intl.string(f.t["F/OLvL"]), g = f.intl.string(f.t.C89OLC)) : (g = f.intl.string(f.t["YVub5+"]), b ? t = f.intl.string(f.t["57nBt7"]) : null != v && y ? (t = f.intl.formatToPlainString(f.t["9Akp1t"], {
+    username: v
   }), n = (0, r.jsx)(a.Z.Button, {
-    onClick: T,
-    children: p.intl.string(p.t.P8tvKC)
-  })) : t = p.intl.string(p.t["SMJr+f"])), (0, r.jsxs)(a.Z, {
+    onClick: function() {
+      let {
+        id: e
+      } = h, t = "@".concat(p.ZP.getUserTag(h, {
+        decoration: "never"
+      }));
+      d.S.dispatchToLastSubscribed(m.CkL.INSERT_TEXT, {
+        plainText: t,
+        rawText: "<@".concat(e, ">")
+      }), null != E && l.Z.startTyping(E)
+    },
+    children: f.intl.string(f.t.P8tvKC)
+  })) : t = f.intl.string(f.t["SMJr+f"])), (0, r.jsxs)(a.Z, {
     children: [(0, r.jsx)(a.Z.Header, {
-      text: m
+      text: g
     }), (0, r.jsxs)(a.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: h.headerLine,
+        className: _.headerLine,
         children: [(0, r.jsx)(a.Z.Icon, {
           expired: true
         }), (0, r.jsx)(a.Z.Info, {
           expired: true,
-          title: p.intl.string(p.t["Jhx/ub"]),
+          title: f.intl.string(f.t["Jhx/ub"]),
           children: t
         })]
       }), n]

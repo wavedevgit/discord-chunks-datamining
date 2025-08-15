@@ -9,7 +9,7 @@ require("./73800.js");
 var Chunk481060 = require("./481060.js"),
   Chunk624315 = require("./624315.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -52,41 +52,41 @@ function u(e) {
   let {
     controls: t,
     props: n,
-    onPropsChange: a
+    onPropsChange: o
   } = e, l = (e, t) => {
-    a(c(s({}, n), {
+    o(c(s({}, n), {
       [e]: t
     }))
   }, u = Object.entries(t);
   return 0 === u.length ? null : (0, r.jsx)("div", {
-    className: o.controlsSection,
+    className: a.controlsSection,
     children: (0, r.jsx)(i.Kqy, {
       gap: 16,
       children: u.map(e => {
         var t;
-        let [o, a] = e, s = null != (t = n[o]) ? t : a.defaultValue;
+        let [a, o] = e, s = null != (t = n[a]) ? t : o.defaultValue;
         return (0, r.jsxs)(i.xJW, {
-          title: "boolean" === a.type ? true : a.label,
-          children: ["select" === a.type && null != a.options && (0, r.jsx)(i.q4e, {
+          title: "boolean" === o.type ? true : o.label,
+          children: ["select" === o.type && null != o.options && (0, r.jsx)(i.q4e, {
             value: s,
-            onChange: e => l(o, e),
-            options: a.options
-          }), "boolean" === a.type && (0, r.jsx)(i.XZJ, {
+            onChange: e => l(a, e),
+            options: o.options
+          }), "boolean" === o.type && (0, r.jsx)(i.XZJ, {
             value: s,
-            onChange: (e, t) => l(o, t),
+            onChange: (e, t) => l(a, t),
             children: (0, r.jsx)(i.Text, {
               variant: "text-md/medium",
-              children: a.label
+              children: o.label
             })
-          }), "text" === a.type && (0, r.jsx)(i.oil, {
+          }), "text" === o.type && (0, r.jsx)(i.oil, {
             value: s,
-            onChange: e => l(o, e)
-          }), "number" === a.type && (0, r.jsx)(i.oil, {
+            onChange: e => l(a, e)
+          }), "number" === o.type && (0, r.jsx)(i.oil, {
             type: "number",
             value: String(s),
-            onChange: e => l(o, Number(e))
+            onChange: e => l(a, Number(e))
           })]
-        }, o)
+        }, a)
       })
     })
   })

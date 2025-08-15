@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 663924, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 663924, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => S
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -24,56 +23,78 @@ var Chunk255367 = require("./255367.js"),
   Chunk149203 = require("./149203.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk681524 = require("./681524.js");
-
-function I(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function T(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      I(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function S(e, t) {
-  if (null == e) return {};
-  var n, r, i = A(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function A(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-let N = {
+let j = {
   height: Chunk314734.lv
 };
 
-function C(e) {
+function O() {
+  Chunk499254.yT(Chunk827498.ti.DISMISSED)
+}
+
+function E(e) {
+  let {
+    channel: t,
+    closeOnModalOuterClick: n = false,
+    parentModalKey: u
+  } = e, f = i.useRef(null), {
+    renderWindow: x,
+    windowDispatch: v
+  } = i.useContext(s.ZP), j = null != u, E = (0, a.Jw)(null != u ? u : ""), S = i.useCallback(e => {
+    var t;
+    if (!j && (0, a.$s)() || j && !(E && n) || d.Z.isOpen() || e.defaultPrevented) return;
+    let {
+      target: r
+    } = e;
+    if ((0, l.k)(r) && null != r.closest("." + y.Jh)) return;
+    for (;
+      (0, l.k)(r);) {
+      if (r === f.current) return;
+      if (r.classList.contains(y.t4) || r.classList.contains(y.Id)) return void e.preventDefault();
+      if (r.classList.contains(y.NN)) return;
+      let t = [C.cZ, c.N];
+      if (r.classList.contains(y.I4) || t.includes(r.id)) return;
+      r = r.parentNode
+    }
+    O();
+    let i = null == (t = (0, h.uB)(e)) ? true : t.activeElement;
+    (null == i || "BODY" === i.tagName) && p.S.dispatchToLastSubscribed(_.CkL.TEXTAREA_FOCUS)
+  }, [n, E, j]);
+  i.useLayoutEffect(() => (x.addEventListener("mousedown", S), x.addEventListener("contextmenu", S), v.subscribe(_.CkL.POPOUT_CLOSE, O), () => {
+    x.removeEventListener("mousedown", S), x.removeEventListener("contextmenu", S), v.unsubscribe(_.CkL.POPOUT_CLOSE, O)
+  }), [S, x, v]), (0, o.Tbt)(f), i.useEffect(() => {
+    (!j && (0, a.$s)() || j && !E) && O()
+  }, [E, j]);
+  let P = (0, b.Z)();
+  return (0, r.jsx)(g.Z, {
+    ref: f,
+    context: {
+      channel: t,
+      type: "channel"
+    },
+    entrypoint: m._b.TEXT,
+    initHistory: P
+  })
+}
+let S = Chunk73800.memo(function(e) {
   var {
     positionTargetRef: t
-  } = e, n = S(e, ["positionTargetRef"]);
+  } = e, n = function(e, t) {
+    if (null == e) return {};
+    var n, r, i = function(e, t) {
+      if (null == e) return {};
+      var n, r, i = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
+    }(e, t);
+    if (Object.getOwnPropertySymbols) {
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    }
+    return i
+  }(e, ["positionTargetRef"]);
   return (0, r.jsx)("span", {
-    style: E.u$,
+    style: y.u$,
     children: (0, r.jsx)(u.W5, {
       className: v.positionLayer,
       targetRef: t,
@@ -89,61 +110,28 @@ function C(e) {
         return (0, r.jsx)("section", {
           className: v.positionContainer,
           role: "dialog",
-          style: N,
-          "aria-label": O.intl.string(O.t["3CNGLC"]),
-          children: t && (0, r.jsx)(P, T({}, n))
+          style: j,
+          "aria-label": x.intl.string(x.t["3CNGLC"]),
+          children: t && (0, r.jsx)(E, function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
+                }) : e[t] = r
+              })
+            }
+            return e
+          }({}, n))
         })
       }
     })
   })
-}
-
-function R() {
-  Chunk499254.yT(Chunk827498.ti.DISMISSED)
-}
-
-function P(e) {
-  let {
-    channel: t,
-    closeOnModalOuterClick: n = false,
-    parentModalKey: u
-  } = e, p = i.useRef(null), {
-    renderWindow: O,
-    windowDispatch: v
-  } = i.useContext(l.ZP), I = null != u, T = (0, a.Jw)(null != u ? u : ""), S = i.useCallback(e => {
-    var t;
-    if (!I && (0, a.$s)() || I && !(T && n) || d.Z.isOpen() || e.defaultPrevented) return;
-    let {
-      target: r
-    } = e;
-    if ((0, o.k)(r) && null != r.closest("." + E.Jh)) return;
-    for (;
-      (0, o.k)(r);) {
-      if (r === p.current) return;
-      if (r.classList.contains(E.t4) || r.classList.contains(E.Id)) return void e.preventDefault();
-      if (r.classList.contains(E.NN)) return;
-      let t = [y.cZ, c.N];
-      if (r.classList.contains(E.I4) || t.includes(r.id)) return;
-      r = r.parentNode
-    }
-    R();
-    let i = null == (t = (0, _.uB)(e)) ? true : t.activeElement;
-    (null == i || "BODY" === i.tagName) && f.S.dispatchToLastSubscribed(b.CkL.TEXTAREA_FOCUS)
-  }, [n, T, I]);
-  i.useLayoutEffect(() => (O.addEventListener("mousedown", S), O.addEventListener("contextmenu", S), v.subscribe(b.CkL.POPOUT_CLOSE, R), () => {
-    O.removeEventListener("mousedown", S), O.removeEventListener("contextmenu", S), v.unsubscribe(b.CkL.POPOUT_CLOSE, R)
-  }), [S, O, v]), (0, s.Tbt)(p), i.useEffect(() => {
-    (!I && (0, a.$s)() || I && !T) && R()
-  }, [T, I]);
-  let A = (0, g.Z)();
-  return (0, r.jsx)(m.Z, {
-    ref: p,
-    context: {
-      channel: t,
-      type: "channel"
-    },
-    entrypoint: h._b.TEXT,
-    initHistory: A
-  })
-}
-let w = Chunk73800.memo(C)
+})

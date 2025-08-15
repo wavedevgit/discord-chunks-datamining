@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 804063, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 804063, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk668781 = require("./668781.js"),
   Chunk699516 = require("./699516.js"),
   Chunk493892 = require("./493892.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
+function o(e) {
   let t = null;
   return i.Z.isBlockedForMessage(e) ? t = {
     title: a.t["j7eA/v"],
@@ -17,7 +16,7 @@ function s(e) {
   } : i.Z.isIgnoredForMessage(e) ? t = {
     title: a.t.XyWoKS,
     body: a.t["8t8doK"]
-  } : (0, o.DQ)(e) && (t = {
+  } : (0, l.DQ)(e) && (t = {
     title: a.t["6vJKFh"],
     body: a.t.zKNgPD
   }), null == t || (r.Z.show({

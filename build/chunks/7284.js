@@ -59,15 +59,15 @@ function _(e) {
     displayNameStyles: n,
     inProfile: r
   } = e, {
-    includeNonProfile: o
+    includeNonProfile: a
   } = s.f.useExperiment({
     location: "useDisplayNameStylesFont"
   });
   if (!(0, l.Y)({
       location: "useDisplayNameStylesFont"
-    }) || !r && !o || null == n) return "";
+    }) || !r && !a || null == n) return "";
   let c = null != (t = f[n.fontId]) ? t : d;
   return "" === c.className ? "" : i()(u.dnsFont, c.className, {
-    [u.safari]: (0, a.G6)()
+    [u.safari]: (0, o.G6)()
   })
 }

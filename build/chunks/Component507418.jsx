@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 507418, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 507418, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./35282.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk527562 = require("./527562.jsx"),
   Chunk245315 = require("./245315.js"),
   Chunk556041 = require("./556041.jsx"),
@@ -16,70 +15,57 @@ var Chunk512722 = require("./512722.js"),
   Chunk594174 = require("./594174.js"),
   Chunk368859 = require("./368859.js");
 
-function _(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function p(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      _(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function h(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
 function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function g(e, t) {
-  if ((0, s.cp)(t)) return (0, r.jsx)(l.Z, {});
-  if ((0, f.Z)(t)) {
-    var n, i;
-    let o = (null != (i = null == t || null == (n = t.author) ? true : n.username) ? i : "").split(" ").slice(0, false).join(" "),
+  var n, i, m, f;
+  if ((0, o.cp)(t)) return (0, r.jsx)(s.Z, {});
+  if ((0, p.Z)(t)) {
+    let l = (null != (i = null == t || null == (n = t.author) ? true : n.username) ? i : "").split(" ").slice(0, false).join(" "),
       {
-        guild_id: s
+        guild_id: o
       } = t.messageReference;
-    if (null != s) return (0, r.jsx)(a.Z, {
+    if (null != o) return (0, r.jsx)(a.Z, {
       setPopoutRef: e.setPopoutRef,
-      guildId: s,
-      name: o
+      guildId: o,
+      name: l
     })
   }
   if (null != t.interaction && "SENDING" === t.state) return (0, r.jsx)(r.Fragment, {});
   let _ = null != t.webhookId ? t.author : d.default.getUser(t.author.id);
-  o()(null != _, "renderUserGuildPopout: user should never be null");
-  let h = d.default.getCurrentUser();
-  o()(null != h, "renderUserGuildPopout: currentUser should never be null");
-  let g = u.Z.getChannel(t.channel_id);
-  return o()(null != g, "renderUserGuildPopout: channel should never be null"), (0, r.jsx)(c.Z, m(p({}, e), {
+  l()(null != _, "renderUserGuildPopout: user should never be null");
+  let g = d.default.getCurrentUser();
+  l()(null != g, "renderUserGuildPopout: currentUser should never be null");
+  let h = u.Z.getChannel(t.channel_id);
+  return l()(null != h, "renderUserGuildPopout: channel should never be null"), (0, r.jsx)(c.Z, (m = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = r
+      })
+    }
+    return e
+  }({}, e), f = f = {
     user: _,
-    currentUser: h,
-    guildId: g.guild_id,
+    currentUser: g,
+    guildId: h.guild_id,
     channelId: t.channel_id,
     messageId: t.id
-  }))
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(m, Object.getOwnPropertyDescriptors(f)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(f)).forEach(function(e) {
+    Object.defineProperty(m, e, Object.getOwnPropertyDescriptor(f, e))
+  }), m))
 }

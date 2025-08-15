@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
@@ -46,9 +46,9 @@ let f = [{
   _ = function(e) {
     let {
       className: t
-    } = e, [n, o] = i.useState(null);
+    } = e, [n, a] = i.useState(null);
     return (0, r.jsxs)("div", {
-      className: a()(d.wrapper, t),
+      className: o()(d.wrapper, t),
       children: [(0, r.jsx)(s.X6q, {
         className: d.heading,
         variant: "heading-xxl/bold",
@@ -60,10 +60,10 @@ let f = [{
           return (0, r.jsxs)("div", {
             className: d.listItem,
             children: [(0, r.jsxs)(s.P3F, {
-              className: a()(d.questionWrapper, {
+              className: o()(d.questionWrapper, {
                 [d.questionWrapperExpanded]: i
               }),
-              onClick: () => o(e => e === t ? null : t),
+              onClick: () => a(e => e === t ? null : t),
               tag: "li",
               children: [(0, r.jsx)(s.Text, {
                 className: d.question,

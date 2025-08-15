@@ -1,7 +1,7 @@
-/** Chunk was on 9885 **/
+/** Chunk was on 42521 **/
 /** chunk id: 415104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => j
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -20,14 +20,14 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk88036 = require("./88036.js");
 
-function b(e) {
+function _(e) {
   var t, n;
   let {
     quest: o,
     className: u,
     questContent: d,
-    contentPosition: b,
-    rowIndex: _,
+    contentPosition: _,
+    rowIndex: j,
     impressionRef: v,
     sourceQuestContent: C
   } = e, [y, E] = s.useState(false), [O, S] = s.useState([]), T = (0, c.qb)(o), w = s.useMemo(() => (0, l.q8)(o), [o]), P = (0, i._F)(), A = s.useCallback(() => {
@@ -71,7 +71,7 @@ function b(e) {
     ref: e => {
       v.current = e, B.current = e
     },
-    className: a()(j.container, u),
+    className: a()(b.container, u),
     onMouseEnter: A,
     onMouseLeave: N,
     onFocus: A,
@@ -87,8 +87,8 @@ function b(e) {
       quest: o,
       questContent: d,
       isHovering: y,
-      contentPosition: b,
-      rowIndex: _,
+      contentPosition: _,
+      rowIndex: j,
       onReceiveErrorHints: S,
       isVisibleInViewport: k,
       sourceQuestContent: C
@@ -96,7 +96,7 @@ function b(e) {
   })
 }
 
-function _(e) {
+function j(e) {
   return (0, r.jsx)(d.A, {
     questOrQuests: e.quest,
     questContent: e.questContent,
@@ -106,7 +106,7 @@ function _(e) {
     sourceQuestContent: e.sourceQuestContent,
     children: t => {
       var n, s;
-      return (0, r.jsx)(b, (n = function(e) {
+      return (0, r.jsx)(_, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

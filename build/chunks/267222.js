@@ -1,94 +1,89 @@
-/** Chunk was on web.js **/
-/** chunk id: 267222, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 267222, original params: t,e,r (module,exports,require) **/
 "use strict";
-
-function r(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      i(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function i(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
 var Chunk879154 = require("./879154.js"),
   Chunk214788 = require("./214788.js"),
   Chunk370260 = require("./370260.js"),
   Chunk653192 = require("./653192.js"),
   Chunk330296 = require("./330296.js"),
   Chunk581079 = require("./581079.js"),
-  d = function(e, t) {
+  c = function(t, e) {
     return {
-      key: e.getKey(),
-      text: e.getText(),
-      type: e.getType(),
-      depth: e.getDepth(),
-      inlineStyleRanges: c(e),
-      entityRanges: l(e, t),
-      data: e.getData().toObject()
+      key: t.getKey(),
+      text: t.getText(),
+      type: t.getType(),
+      depth: t.getDepth(),
+      inlineStyleRanges: u(t),
+      entityRanges: a(t, e),
+      data: t.getData().toObject()
     }
   },
-  f = function(e, t, n, i) {
-    if (e instanceof o) return void n.push(d(e, t));
-    e instanceof a || u(false);
-    var s = e.getParentKey(),
-      l = i[e.getKey()] = r({}, d(e, t), {
+  l = function(t, e, r, o) {
+    if (t instanceof n) return void r.push(c(t, e));
+    t instanceof i || s(false);
+    var a = t.getParentKey(),
+      u = o[t.getKey()] = function(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var r = null != arguments[e] ? arguments[e] : {},
+            n = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
+            return Object.getOwnPropertyDescriptor(r, t).enumerable
+          }))), n.forEach(function(e) {
+            var n, i, o;
+            n = t, i = e, o = r[e], i in n ? Object.defineProperty(n, i, {
+              value: o,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : n[i] = o
+          })
+        }
+        return t
+      }({}, c(t, e), {
         children: []
       });
-    if (s) return void i[s].children.push(l);
-    n.push(l)
+    if (a) return void o[a].children.push(u);
+    r.push(u)
   },
-  _ = function(e, t) {
-    var n = t.entityMap,
-      r = [],
+  f = function(t, e) {
+    var r = e.entityMap,
+      n = [],
       i = {},
-      o = {},
-      a = 0;
-    return e.getBlockMap().forEach(function(e) {
-      e.findEntityRanges(function(e) {
-        return null !== e.getEntity()
-      }, function(t) {
-        var r = e.getEntityAt(t),
-          i = s.stringify(r);
-        !o[i] && (o[i] = r, n[i] = "".concat(a), a++)
-      }), f(e, n, r, i)
-    }), {
-      blocks: r,
-      entityMap: n
-    }
-  },
-  p = function(e, t) {
-    var n = t.blocks,
-      r = t.entityMap,
-      i = {};
-    return Object.keys(r).forEach(function(t, n) {
-      var r = e.getEntity(s.unstringify(t));
-      i[n] = {
-        type: r.getType(),
-        mutability: r.getMutability(),
-        data: r.getData()
-      }
+      a = {},
+      u = 0;
+    return t.getBlockMap().forEach(function(t) {
+      t.findEntityRanges(function(t) {
+        return null !== t.getEntity()
+      }, function(e) {
+        var n = t.getEntityAt(e),
+          i = o.stringify(n);
+        !a[i] && (a[i] = n, r[i] = "".concat(u), u++)
+      }), l(t, r, n, i)
     }), {
       blocks: n,
+      entityMap: r
+    }
+  },
+  p = function(t, e) {
+    var r = e.blocks,
+      n = e.entityMap,
+      i = {};
+    return Object.keys(n).forEach(function(e, r) {
+      var n = t.getEntity(o.unstringify(e));
+      i[r] = {
+        type: n.getType(),
+        mutability: n.getMutability(),
+        data: n.getData()
+      }
+    }), {
+      blocks: r,
       entityMap: i
     }
   };
-module.exports = function(e) {
-  var t = {
+module.exports = function(t) {
+  var e = {
     entityMap: {},
     blocks: []
   };
-  return t = _(e, t), t = p(e, t)
+  return e = f(t, e), e = p(t, e)
 }

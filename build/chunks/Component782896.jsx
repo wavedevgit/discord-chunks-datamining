@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 782896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   c: () => m
@@ -62,8 +62,8 @@ function m(e) {
     guildIds: t
   } = e, n = (0, l.e7)([c.Z], () => c.Z.getGuildId()), a = (0, l.Wu)([s.Z], () => t.map(e => s.Z.getGuild(e)), [t]), m = (0, i.useMemo)(() => a.filter(e => null != e), [a]), {
     visibleGuilds: b,
-    numTruncated: O,
-    visibleGuildsTooltip: _,
+    numTruncated: _,
+    visibleGuildsTooltip: O,
     numTruncatedTooltipGuilds: y
   } = (0, i.useMemo)(() => {
     let e = [...m];
@@ -86,7 +86,7 @@ function m(e) {
   return (0, r.jsx)(o.DY3, {
     "aria-label": p.intl.string(d.default.TG0Qsb),
     text: (0, r.jsx)(g, {
-      guilds: _,
+      guilds: O,
       numTruncated: y
     }),
     position: "top",
@@ -97,12 +97,12 @@ function m(e) {
           guild: e,
           size: 20
         })
-      }, e.id)), O > 0 && (0, r.jsx)(h, {
+      }, e.id)), _ > 0 && (0, r.jsx)(h, {
         children: (0, r.jsxs)(o.Text, {
           className: f.textItem,
           color: "text-secondary",
           variant: "text-xxs/semibold",
-          children: ["+", O]
+          children: ["+", _]
         })
       })]
     })

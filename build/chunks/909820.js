@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 909820, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 909820, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B2: () => s,
+  B2: () => o,
   H_: () => a,
-  ZP: () => l
+  ZP: () => s
 });
 let {
   Layer: r,
   LayerContainer: i,
-  LayerProvider: o
-} = (0, require("./481060.js").Xvx)("ChannelCallChat"), a = i, s = o, l = r
+  LayerProvider: l
+} = (0, require("./481060.js").Xvx)("ChannelCallChat"), a = i, o = l, s = r

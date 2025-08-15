@@ -10,7 +10,7 @@ var Chunk46015 = require("./46015.js"),
   c = RegExp("(^|[^" + Chunk868984 + "])[" + Chunk868984 + "]+$"),
   u = function(e) {
     return function(t) {
-      var n = o(i(t));
+      var n = a(i(t));
       return 1 & e && (n = s(n, l, "")), 2 & e && (n = s(n, c, "$1")), n
     }
   };

@@ -63,7 +63,7 @@ function m(e, t) {
 }
 
 function g(e) {
-  let t = a.default.getId(),
+  let t = o.default.getId(),
     n = s.ZP.isModerator(t, e.id),
     r = l.Z.isLive(e.id);
   n && !r ? E(e) : n && r && b(e)
@@ -73,7 +73,7 @@ function E(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("82758"), n.e("73736")]).then(n.bind(n, 581355));
+    } = await Promise.all([n.e("70274"), n.e("82758"), n.e("73736")]).then(n.bind(n, 581355));
     return n => (0, r.jsx)(t, m(p({}, n), {
       channel: e
     }))
@@ -86,7 +86,7 @@ function b(e) {
   (0, i.ZD)(async () => {
     let {
       default: t
-    } = await n.e("84686").then(n.bind(n, 665111));
+    } = await Promise.all([n.e("70274"), n.e("84686")]).then(n.bind(n, 665111));
     return n => (0, r.jsx)(t, m(p({}, n), {
       channel: e
     }))
@@ -97,7 +97,7 @@ function y(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t
-    } = await n.e("2634").then(n.bind(n, 548841));
+    } = await Promise.all([n.e("70274"), n.e("2634")]).then(n.bind(n, 548841));
     return n => (0, r.jsx)(t, m(p({}, n), {
       channel: e
     }))
@@ -109,7 +109,7 @@ function y(e, t) {
 function O(e) {}
 
 function v(e) {
-  (0, o.Kh)(e.id)
+  (0, a.Kh)(e.id)
 }
 
 function I(e, t) {
@@ -128,7 +128,7 @@ function T(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t
-    } = await n.e("85885").then(n.bind(n, 124779));
+    } = await Promise.all([n.e("70274"), n.e("85885")]).then(n.bind(n, 124779));
     return n => (0, r.jsx)(t, m(p({}, n), {
       channel: e
     }))
@@ -138,7 +138,7 @@ function T(e, t) {
 }
 
 function S(e) {
-  let t = a.default.getId(),
+  let t = o.default.getId(),
     n = (0, u.Z7)(e),
     r = (0, u.wK)(e);
   return !s.ZP.isModerator(t, e) && (n > 0 || r > 0)

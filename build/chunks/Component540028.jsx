@@ -66,19 +66,19 @@ function T(e) {
     closePopout: t,
     idle: n,
     pipWindows: i,
-    voiceChannelId: a,
+    voiceChannelId: o,
     onSelect: h
   } = e;
   n && t();
-  let b = (0, o.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()),
-    y = (0, o.e7)([p.Z], () => p.Z.pipWindow),
-    O = (0, o.e7)([f.Z], () => f.Z.getSelectedParticipant(a)),
-    v = (0, o.e7)([f.Z], () => f.Z.getStreamParticipants(a));
+  let b = (0, a.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()),
+    y = (0, a.e7)([p.Z], () => p.Z.pipWindow),
+    O = (0, a.e7)([f.Z], () => f.Z.getSelectedParticipant(o)),
+    v = (0, a.e7)([f.Z], () => f.Z.getStreamParticipants(o));
 
   function I(e) {
     (null == y ? true : y.id) !== e.pipWindow.id && (0, c.k3)(e.pipWindow.id);
     let t = e.participant;
-    null != t && t.type !== g.fO.ACTIVITY && l.Z.selectParticipant(a, t.id)
+    null != t && t.type !== g.fO.ACTIVITY && l.Z.selectParticipant(o, t.id)
   }
 
   function T(e) {
@@ -112,13 +112,13 @@ function T(e) {
     var t;
     let n = e.pipWindow.id,
       i = null == (t = e.participant) ? true : t.id,
-      o = T(e),
-      a = "".concat(n).concat(null != i ? i : "");
+      a = T(e),
+      o = "".concat(n).concat(null != i ? i : "");
     return (0, r.jsx)(s.sNh, {
-      id: a,
-      label: o,
+      id: o,
+      label: a,
       action: () => I(e)
-    }, a)
+    }, o)
   }
   return (0, r.jsx)(s.v2r, {
     navId: "pip-menu",
@@ -132,7 +132,7 @@ let S = function(e) {
   let {
     voiceChannelId: t,
     idle: n
-  } = e, l = i.useRef(null), c = Array.from((0, o.e7)([p.Z], () => p.Z.pipWindows).values()).filter(e => e.component !== m.NYg.ACTIVITY), u = (0, o.Wu)([_.Z], () => _.Z.getAllActiveStreamsForChannel(t)).filter(e => {
+  } = e, l = i.useRef(null), c = Array.from((0, a.e7)([p.Z], () => p.Z.pipWindows).values()).filter(e => e.component !== m.NYg.ACTIVITY), u = (0, a.Wu)([_.Z], () => _.Z.getAllActiveStreamsForChannel(t)).filter(e => {
     var n;
     return e.ownerId !== (null == (n = h.default.getCurrentUser()) ? true : n.id) && e.channelId === t
   }), d = 1 === c.length && c[0].component === m.NYg.ACTIVITY || 0 === u.length, f = 1 === c.length && u.length <= 1;
@@ -150,7 +150,7 @@ let S = function(e) {
       innerRef: l,
       children: (0, r.jsx)(s.Huf, {
         size: "md",
-        color: a.Z.unsafe_rawColors.WHITE_500.css
+        color: o.Z.unsafe_rawColors.WHITE_500.css
       })
     }))
   })

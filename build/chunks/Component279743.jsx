@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 279743, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -29,7 +29,7 @@ function h(e) {
     opacity: 0
   }), b = (0, c.dQu)(p).spring({
     opacity: 1
-  }), [O, _] = (0, c.q_F)(() => ({
+  }), [_, O] = (0, c.q_F)(() => ({
     from: {
       backgroundColor: h,
       borderColor: h
@@ -57,7 +57,7 @@ function h(e) {
     } = v.current, {
       useReducedMotion: o
     } = d.Z, a = 200 * !o;
-    _({
+    O({
       reset: true,
       immediate: false,
       to: {
@@ -68,7 +68,7 @@ function h(e) {
         duration: a,
         easing: s.Z.Easing.ease
       }
-    }), _({
+    }), O({
       delay: l,
       immediate: o,
       to: [{
@@ -79,7 +79,7 @@ function h(e) {
         duration: a,
         easing: s.Z.Easing.ease
       }
-    }), _({
+    }), O({
       delay: l + 200 + 200,
       immediate: o,
       to: [{
@@ -92,8 +92,8 @@ function h(e) {
       },
       onRest: t
     })
-  }, [_]), (0, r.jsx)(a.animated.div, {
-    style: O,
+  }, [O]), (0, r.jsx)(a.animated.div, {
+    style: _,
     className: o()(f.settingsItemHighlight, n),
     children: t
   })

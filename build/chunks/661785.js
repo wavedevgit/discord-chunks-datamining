@@ -1,29 +1,29 @@
-/** Chunk was on web.js **/
-/** chunk id: 661785, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 661785, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk65183 = require("./65183.js"),
   Chunk475854 = require("./475854.js"),
   Chunk581079 = require("./581079.js"),
   a = Chunk65183.Repeat;
-module.exports = function(e, t, n, r) {
-  t.isCollapsed() || o(false);
-  var s = null;
-  if (null != n && (s = n.length), null == s || 0 === s) return e;
-  var l = e.getBlockMap(),
-    c = t.getStartKey(),
-    u = t.getStartOffset(),
-    d = l.get(c),
-    f = d.getText(),
-    _ = d.merge({
-      text: f.slice(0, u) + n + f.slice(u, d.getLength()),
-      characterList: i(d.getCharacterList(), a(r, s).toList(), u)
+module.exports = function(t, e, r, n) {
+  e.isCollapsed() || o(false);
+  var u = null;
+  if (null != r && (u = r.length), null == u || 0 === u) return t;
+  var s = t.getBlockMap(),
+    c = e.getStartKey(),
+    l = e.getStartOffset(),
+    f = s.get(c),
+    p = f.getText(),
+    h = f.merge({
+      text: p.slice(0, l) + r + p.slice(l, f.getLength()),
+      characterList: i(f.getCharacterList(), a(n, u).toList(), l)
     }),
-    p = u + s;
-  return e.merge({
-    blockMap: l.set(c, _),
-    selectionAfter: t.merge({
-      anchorOffset: p,
-      focusOffset: p
+    d = l + u;
+  return t.merge({
+    blockMap: s.set(c, h),
+    selectionAfter: e.merge({
+      anchorOffset: d,
+      focusOffset: d
     })
   })
 }

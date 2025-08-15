@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 477734, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 40694 **/
+/** chunk id: 477734, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  X$: () => i,
-  _f: () => o
+  X$: () => l,
+  _f: () => i
 }), require("./906732.jsx");
 let r = (0, require("./818083.js").B)({
   kind: "user",
@@ -41,7 +40,7 @@ let r = (0, require("./818083.js").B)({
   }]
 });
 
-function i() {
+function l() {
   return r.useExperiment({
     location: "canSeeRemixBadge"
   }, {
@@ -49,7 +48,7 @@ function i() {
   }).canSeeRemixBadge
 }
 
-function o() {
+function i() {
   return !!r.useExperiment({
     location: "isRemixANitroPerkHook"
   }, {

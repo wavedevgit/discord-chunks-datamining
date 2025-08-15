@@ -52,7 +52,7 @@ let h = () => {
       let e = Chunk724723.Z.getCurrentConfig({
         location: "InteractionRequired"
       }).enabled;
-      exports.current = (0, Chunk481060.h7j)(t => e ? (0, r.jsx)(a.Modal, p({
+      exports.current = (0, Chunk481060.h7j)(t => e ? (0, r.jsx)(o.Modal, p({
         title: f.intl.string(f.t.dLLxCw),
         subtitle: f.intl.string(f.t["64lmt7"]),
         actions: [{

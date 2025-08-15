@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk696450 = require("./696450.js"),
   Chunk711322 = require("./711322.js"),
   Chunk451429 = require("./451429.js");
-let v = {
+let f = {
     [Chunk981631.kNB.QUEST_REWARD]: "Quest Reward",
     [Chunk981631.kNB.DEVELOPER_GIFT]: "Developer Gift",
     [Chunk981631.kNB.INVOICE]: "Invoice",
@@ -53,7 +53,7 @@ let v = {
         variant: "text-md/normal",
         children: ["Entitlement source type: ", (() => {
           let e = a.sourceType;
-          return null != e && e in v ? v[e] : "Unknown source type ".concat(e)
+          return null != e && e in f ? f[e] : "Unknown source type ".concat(e)
         })()]
       }), r && null != l && (0, n.jsx)(o.zx, {
         className: p.deleteEntitlementButton,
@@ -77,7 +77,7 @@ let v = {
   }];
 
 function _() {
-  let [e, t] = Chunk73800.useState(false), [a, l] = Chunk73800.useState(Chunk314794.a.PREMIUM_TIER_2_1_HOUR), [u, v] = Chunk73800.useState([]), [_, y] = Chunk73800.useState([]), {
+  let [e, t] = Chunk73800.useState(false), [a, l] = Chunk73800.useState(Chunk314794.a.PREMIUM_TIER_2_1_HOUR), [u, f] = Chunk73800.useState([]), [_, y] = Chunk73800.useState([]), {
     refreshEntitlementList: C,
     grantFractionalPremium: N,
     deleteFractionalPremium: O,
@@ -88,7 +88,7 @@ function _() {
   return Chunk73800.useEffect(() => {
     C()
   }, [C]), Chunk73800.useEffect(() => {
-    v(E.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.qc2.FRACTIONAL_REDEMPTION)), y(E.filter(e => Object.values(s.a).includes(e.skuId) && null == e.startsAt))
+    f(E.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.qc2.FRACTIONAL_REDEMPTION)), y(E.filter(e => Object.values(s.a).includes(e.skuId) && null == e.startsAt))
   }, [E]), (0, Chunk255367.jsx)(Chunk481060.zJl, {
     className: Chunk451429.panel,
     children: (0, Chunk255367.jsxs)("div", {

@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk19391 = require("./19391.js"),
   Chunk600243 = require("./600243.jsx"),
@@ -18,11 +18,11 @@ function u(e) {
     className: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(c.labelRow, n),
+    className: a()(c.labelRow, n),
     children: [(0, r.jsx)(l.Z, {
       label: t,
       size: "xxs"
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
       className: c.labelText,

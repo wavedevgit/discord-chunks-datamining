@@ -1,4 +1,4 @@
-/** Chunk was on 58511 **/
+/** Chunk was on 47463 **/
 /** chunk id: 936726, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -73,9 +73,9 @@ function w(e) {
     editedWebhook: l,
     channelOptions: h,
     isExpanded: w,
-    isNew: I,
-    errors: P,
-    onToggleExpand: T
+    isNew: T,
+    errors: I,
+    onToggleExpand: P
   } = e, [E, k] = r.useState(false), [A] = r.useState(new s.V7);
   r.useEffect(() => () => A.stop(), [A]);
   let D = r.useMemo(() => S(n, n.avatar), [n]),
@@ -151,10 +151,10 @@ function w(e) {
             makeURL: e => S(n, e),
             imageClassName: C.avatarUploaderInner,
             showIcon: true
-          }), null != P.avatar && "" !== P.avatar ? (0, i.jsx)(c.Text, {
+          }), null != I.avatar && "" !== I.avatar ? (0, i.jsx)(c.Text, {
             color: "text-danger",
             variant: "text-sm/normal",
-            children: P.avatar
+            children: I.avatar
           }) : null]
         })
       }), (0, i.jsxs)(m.Z, {
@@ -172,7 +172,7 @@ function w(e) {
                   })
                 },
                 maxLength: 80,
-                error: P.name
+                error: I.name
               })
             })
           }), (0, i.jsx)(m.Z.Child, {
@@ -249,13 +249,13 @@ function w(e) {
   })), (0, i.jsx)(c.Zbd, {
     editable: true,
     id: t,
-    className: a()(C.card, I ? C.pulse : null),
+    className: a()(C.card, T ? C.pulse : null),
     children: (0, i.jsxs)(m.Z, {
       direction: m.Z.Direction.VERTICAL,
       children: [(0, i.jsx)(c.P3F, {
         className: C.header,
         "aria-expanded": w,
-        onClick: T,
+        onClick: P,
         children: (0, i.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
           children: [(0, i.jsx)(y.Z, {

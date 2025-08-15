@@ -150,33 +150,33 @@ function M(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Date.now(),
     r = {};
-  for (let [i, o] of Object.entries(e)) {
+  for (let [i, a] of Object.entries(e)) {
     let e = t[i];
-    if (Array.isArray(o))
-      if ("object" == typeof o[0]) {
+    if (Array.isArray(a))
+      if ("object" == typeof a[0]) {
         let t = Array.isArray(e) ? e : [],
-          a = r[i] = [];
-        for (let e = 0; e < o.length; e++) {
+          o = r[i] = [];
+        for (let e = 0; e < a.length; e++) {
           let r = t[e],
             i = "object" == typeof r ? r : {};
-          a.push(M(o[e], i, n))
+          o.push(M(a[e], i, n))
         }
-      } else r[i] = o;
-    else if ("object" == typeof o && null !== o) {
+      } else r[i] = a;
+    else if ("object" == typeof a && null !== a) {
       let t = "object" == typeof e && null !== e ? e : {};
-      r[i] = M(o, t, n)
-    } else if (i in E && "number" == typeof o) {
+      r[i] = M(a, t, n)
+    } else if (i in E && "number" == typeof a) {
       let t = r[i] = Array.isArray(e) ? e : [];
       t.push({
-        value: o,
+        value: a,
         time: n
       }), t.length > b && t.shift()
-    } else r[i] = o
+    } else r[i] = a
   }
   return r
 }
 
-function j(e) {
+function k(e) {
   let {
     connectionStats: t
   } = e;
@@ -187,7 +187,7 @@ function j(e) {
       } = t;
       return n === e
     }).forEach((t, n) => {
-      k({
+      j({
         context: e,
         stats: t.stats,
         index: n
@@ -196,21 +196,21 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     context: t,
     stats: n,
     index: r
   } = e, i = m[t];
   if (null != n) {
-    let [e, o, a] = h.split(":");
-    if (e === t && parseInt(a) === r && null != c.default.getUser(o)) {
+    let [e, a, o] = h.split(":");
+    if (e === t && parseInt(o) === r && null != c.default.getUser(a)) {
       let {
         rtp: {
           inbound: e
         }
       } = n;
-      Object.keys(e).includes(o) || (h = p)
+      Object.keys(e).includes(a) || (h = p)
     }
     i[r] = M(n, i[r])
   } else delete i[r]
@@ -226,22 +226,22 @@ function G(e) {
   } = e, n = l.Z.getMediaEngine();
   if (R(), !n.supports(d.AN.CONNECTION_REPLAY) || 0 === t.length) return;
   let r = n.createReplayConnection(d.Yn.DEFAULT, t);
-  null != r && (S = r, r.on(o.Sh.Video, (e, t, n, i, o) => {
-    a.Z.dispatch({
+  null != r && (S = r, r.on(a.Sh.Video, (e, t, n, i, a) => {
+    o.Z.dispatch({
       type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT",
       mediaEngineConnectionId: r.mediaEngineConnectionId,
       userId: e,
       videoSsrc: null != i ? i : 0,
       streamId: null != t ? t : ""
     })
-  }), a.Z.wait(() => s.bA()))
+  }), o.Z.wait(() => s.bA()))
 }
 
 function B(e) {
   I = I.put(e.mediaEngineConnectionId, e.userId, e.videoSsrc, e.streamId)
 }
 
-function Z(e) {
+function V(e) {
   let {
     value: t
   } = e;
@@ -257,27 +257,27 @@ function F(e) {
   g.set(O(t, n), r)
 }
 C();
-class V extends(r = Chunk442837.ZP.Store) {
+class Z extends(r = Chunk442837.ZP.Store) {
   getSection() {
     return h
   }
   getInboundStats(e, t) {
     var n, r;
     let i = null == (r = this.getAllStats(t)[0]) || null == (n = r.rtp) ? true : n.inbound[e],
-      o = null == i ? true : i.find(e => "video" === e.type);
+      a = null == i ? true : i.find(e => "video" === e.type);
     return {
-      codec: null == o ? true : o.codec.name,
-      resolution: null == o ? true : o.resolution,
+      codec: null == a ? true : a.codec.name,
+      resolution: null == a ? true : a.resolution,
       bitrateEstimate: true
     }
   }
   getOutboundStats(e) {
     var t, n, r;
-    let i, o = this.getAllStats(e),
-      a = null == (t = o[0]) ? true : t.transport,
-      s = null == (r = o[0]) || null == (n = r.rtp) ? true : n.outbound,
+    let i, a = this.getAllStats(e),
+      o = null == (t = a[0]) ? true : t.transport,
+      s = null == (r = a[0]) || null == (n = r.rtp) ? true : n.outbound,
       l = null == s ? true : s.find(e => "video" === e.type);
-    return Array.isArray(null == a ? true : a.availableOutgoingBitrate) && a.availableOutgoingBitrate.length > 0 && (i = a.availableOutgoingBitrate[a.availableOutgoingBitrate.length - 1].value), {
+    return Array.isArray(null == o ? true : o.availableOutgoingBitrate) && o.availableOutgoingBitrate.length > 0 && (i = o.availableOutgoingBitrate[o.availableOutgoingBitrate.length - 1].value), {
       codec: null == l ? true : l.codec.name,
       resolution: null == l ? true : l.resolution,
       bitrateEstimate: i
@@ -298,17 +298,17 @@ class V extends(r = Chunk442837.ZP.Store) {
     return g.has(n) ? g.get(n) : d.Z.NO_OVERRIDE
   }
 }
-f(V, "displayName", "RTCDebugStore");
-let H = new V(Chunk570140.Z, {
+f(Z, "displayName", "RTCDebugStore");
+let H = new Z(Chunk570140.Z, {
   RTC_DEBUG_MODAL_OPEN: P,
   RTC_DEBUG_MODAL_CLOSE: w,
   RTC_DEBUG_MODAL_SET_SECTION: x,
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: G,
   RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: B,
-  RTC_DEBUG_SET_RECORDING_FLAG: Z,
+  RTC_DEBUG_SET_RECORDING_FLAG: V,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F,
   VOICE_CHANNEL_SELECT: D,
   RTC_CONNECTION_VIDEO: L,
-  MEDIA_ENGINE_CONNECTION_STATS: j
+  MEDIA_ENGINE_CONNECTION_STATS: k
 })

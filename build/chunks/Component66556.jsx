@@ -1,7 +1,7 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 66556, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -16,19 +16,19 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk568592 = require("./568592.js");
 
-function g(e) {
+function m(e) {
   let {
     channel: t
-  } = e, [n, g] = i.useState(false), m = i.useRef(null), b = (0, l.e7)([c.Z, u.default], () => {
+  } = e, [n, m] = i.useState(false), g = i.useRef(null), b = (0, l.e7)([c.Z, u.default], () => {
     let e = u.default.getCurrentUser();
-    return null == e || (0, s.aC)(t) && (!e.nsfwAllowed || !c.Z.didAgree(t.getGuildId()))
+    return null == e || (0, o.aC)(t) && (!e.nsfwAllowed || !c.Z.didAgree(t.getGuildId()))
   }, [t]), y = i.useCallback(() => {
-    g(false)
-  }, []), x = i.useCallback(() => {
-    n || (0, d.U4)("Popout"), g(!n)
+    m(false)
+  }, []), _ = i.useCallback(() => {
+    n || (0, d.U4)("Popout"), m(!n)
   }, [n]);
   return (0, r.jsx)(a.yRy, {
-    targetElementRef: m,
+    targetElementRef: g,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
@@ -37,7 +37,7 @@ function g(e) {
     onRequestClose: y,
     renderPopout: function() {
       return (0, r.jsx)(a.VqE, {
-        children: (0, r.jsx)(h.Z, {
+        children: (0, r.jsx)(p.Z, {
           className: f.browser,
           channel: t,
           onClose: y
@@ -50,7 +50,7 @@ function g(e) {
       let {
         isShown: l
       } = t;
-      return (0, r.jsx)(o.JO, (n = function(e) {
+      return (0, r.jsx)(s.JO, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -68,12 +68,12 @@ function g(e) {
         }
         return e
       }({}, e), i = i = {
-        ref: m,
+        ref: g,
         className: f.icon,
-        onClick: x,
+        onClick: _,
         icon: a.or_,
-        "aria-label": p.intl.string(p.t.B2panJ),
-        tooltip: l ? null : p.intl.string(p.t.B2panJ),
+        "aria-label": h.intl.string(h.t.B2panJ),
+        tooltip: l ? null : h.intl.string(h.t.B2panJ),
         disabled: b,
         selected: l
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

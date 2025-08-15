@@ -2,13 +2,13 @@
 /** chunk id: 618136, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 }), require("./388685.js");
 var Chunk436660 = require("./436660.js"),
   Chunk887490 = require("./887490.js"),
   Chunk42530 = require("./42530.js");
 
-function a(e) {
+function o(e) {
   let {
     apply: t,
     onChange: n
@@ -17,20 +17,20 @@ function a(e) {
     t(n), i.Ew.isValid(e, e.selection) && (e.lastGoodSelection = e.selection)
   }, e.onChange = () => {
     if (i.Ew.isValid(e, e.selection) || (e.selection = s(e)), null != e.selection) {
-      let t, n, [a, s] = i.M8.edges(e.selection),
+      let t, n, [o, s] = i.M8.edges(e.selection),
         l = false;
-      for (; null != a && null != (t = i.bN.getParentVoid(e, a)) && !o.On.includes(t[0].type);) a = i.bN.before(e, a, {
+      for (; null != o && null != (t = i.bN.getParentVoid(e, o)) && !a.On.includes(t[0].type);) o = i.bN.before(e, o, {
         unit: "offset"
       }), l = true;
-      for (; null != s && null != (n = i.bN.getParentVoid(e, s)) && !o.On.includes(n[0].type);) s = i.bN.after(e, s, {
+      for (; null != s && null != (n = i.bN.getParentVoid(e, s)) && !a.On.includes(n[0].type);) s = i.bN.after(e, s, {
         unit: "offset"
       }), l = true;
-      l && null != a && null != s && (i.M8.isForward(e.selection) ? r.Q.select(e, {
-        anchor: a,
+      l && null != o && null != s && (i.M8.isForward(e.selection) ? r.Q.select(e, {
+        anchor: o,
         focus: s
       }) : r.Q.select(e, {
         anchor: s,
-        focus: a
+        focus: o
       }))
     }
     n()

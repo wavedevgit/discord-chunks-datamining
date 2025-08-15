@@ -54,7 +54,7 @@ function C(e) {
     icon: () => (0, r.jsx)(h.Z, {}),
     onAction: C
   });
-  if ((0, a.Z)(n)) return (0, r.jsx)(y.Z, {
+  if ((0, o.Z)(n)) return (0, r.jsx)(y.Z, {
     platformType: A.ABu.PLAYSTATION,
     icon: () => (0, r.jsx)(p.Z, {}),
     onAction: C
@@ -63,7 +63,7 @@ function C(e) {
     activity: n,
     onAction: C
   });
-  let x = (0, i.Z)(n, A.xjy.JOIN) || (0, o.Z)(n),
+  let x = (0, i.Z)(n, A.xjy.JOIN) || (0, a.Z)(n),
     M = (null == n ? true : n.application_id) != null;
   return !D && w && null != P ? (0, r.jsx)(S.Z, {
     application: P,

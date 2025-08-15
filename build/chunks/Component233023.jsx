@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk111028 = require("./111028.jsx"),
   Chunk359588 = require("./359588.js"),
@@ -43,7 +43,7 @@ function m(e) {
     P = R || null != N,
     w = null;
   null != E && T ? w = (0, r.jsx)(d.Z, {
-    className: o()(i, h.hangStatusIcon),
+    className: a()(i, h.hangStatusIcon),
     hangStatusActivity: E
   }) : null == S || O || (w = (0, r.jsx)(_.Z, {
     emoji: S,
@@ -62,10 +62,10 @@ function m(e) {
         children: [C, w, D]
       })
     };
-  return (0, r.jsx)(a.Text, {
+  return (0, r.jsx)(o.Text, {
     variant: "text-".concat(b, "/medium"),
     color: "none",
-    className: o()(h.truncated, n),
+    className: a()(h.truncated, n),
     children: L()
   })
 }

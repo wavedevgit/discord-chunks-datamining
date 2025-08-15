@@ -33,7 +33,7 @@ class u extends Chunk317770.Z {
         guildId: n
       } = e;
       if (null != t) {
-        let e = a.Z.getChannel(t);
+        let e = o.Z.getChannel(t);
         if (null == e || e.isGuildStageVoice()) return
       }
       this.terminate();
@@ -41,7 +41,7 @@ class u extends Chunk317770.Z {
       this.handleDisconnectFromStageChannel(r)
     }), c(this, "handleDisconnectFromStageChannel", e => {
       let t = s.Z.getGuildId();
-      (0, o.O)([t, e].filter(l.lm))
+      (0, a.O)([t, e].filter(l.lm))
     }), c(this, "handleLogout", () => {
       this.terminate(), this.handleDisconnectFromStageChannel(null)
     })

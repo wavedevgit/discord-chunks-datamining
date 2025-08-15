@@ -1,4 +1,4 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 993160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -27,8 +27,8 @@ function g(e) {
     relationshipType: y,
     onClose: O
   } = e, {
-    newestAnalyticsLocation: x
-  } = (0, o.ZP)(), h = (0, a.Z)({
+    newestAnalyticsLocation: h
+  } = (0, o.ZP)(), x = (0, a.Z)({
     user: t,
     guildId: g,
     channelId: b,
@@ -52,7 +52,7 @@ function g(e) {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: h,
+      viewProfileItem: x,
       themeColor: "secondary"
     })]
   }) : t.bot ? (0, r.jsxs)(r.Fragment, {
@@ -65,7 +65,7 @@ function g(e) {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: h,
+      viewProfileItem: x,
       themeColor: "secondary"
     })]
   }) : y === m.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
@@ -94,12 +94,12 @@ function g(e) {
       relationshipType: y,
       shouldShowTooltip: true,
       themeColor: "secondary",
-      analyticsLocation: x
+      analyticsLocation: h
     }), (0, r.jsx)(d.Z, {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: h,
+      viewProfileItem: x,
       themeColor: "secondary"
     })]
   }) : y === m.OGo.NONE && P ? (0, r.jsxs)(r.Fragment, {
@@ -111,7 +111,7 @@ function g(e) {
     }), (0, r.jsx)(f.k9, {
       type: "icon",
       user: t,
-      analyticsLocation: x,
+      analyticsLocation: h,
       themeColor: "secondary",
       gameFriends: v,
       tooltipPosition: "top",
@@ -123,14 +123,14 @@ function g(e) {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: h,
+      viewProfileItem: x,
       themeColor: "secondary"
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z7, {
       type: "text",
       userId: t.id,
-      analyticsLocation: x,
+      analyticsLocation: h,
       color: i.zx.Colors.BRAND,
       autoFocus: true
     }), (0, r.jsx)(s.Z, {
@@ -142,7 +142,7 @@ function g(e) {
       type: "icon",
       user: t,
       guildId: g,
-      viewProfileItem: h,
+      viewProfileItem: x,
       themeColor: "secondary"
     })]
   })

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 224184, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 224184, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => D
+  Z: () => P
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -28,145 +27,128 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk84709 = require("./84709.js");
-
-function N(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function C(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      N(e, t, n[t])
+let P = e => {
+  let {
+    hangStatusActivity: t,
+    userId: l,
+    channel: P,
+    previewIsOpen: I,
+    targetElementRef: Z
+  } = e, {
+    enableHangStatus: T
+  } = _.n.useExperiment({
+    guildId: P.guild_id,
+    location: "HangStatusPopout"
+  }), N = (0, o.e7)([p.default], () => p.default.getId()), A = (0, o.e7)([g.default], () => g.default.getUser(l)), w = (0, o.e7)([m.Z], () => m.Z.getChannelId() === P.id), R = (0, o.e7)([f.Z], () => f.Z.can(O.Plq.CONNECT, P)), M = (null == t ? true : t.emoji) == null || (0, x.K)(t.emoji, P), k = (0, o.e7)([h.ZP], () => null != P.guild_id && null != A ? h.ZP.getMember(P.guild_id, l) : null), D = i.useMemo(() => null != A ? (0, d.SG)(true, k, A, {
+    size: 40
+  }) : true, [k, A]);
+  return (i.useEffect(() => {
+    (0, y.UP)()
+  }, []), i.useEffect(() => {
+    T && null != t && I && null != A && N !== l && b.default.track(O.rMx.VIEW_HANG_STATUS, {
+      source: "HangStatusPopout",
+      guild_id: P.guild_id,
+      channel_id: P.id
     })
-  }
-  return e
-}
-
-function R(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let w = 40,
-  D = e => {
-    let {
-      hangStatusActivity: t,
-      userId: o,
-      channel: N,
-      previewIsOpen: R,
-      targetElementRef: D
-    } = e, {
-      enableHangStatus: L
-    } = b.n.useExperiment({
-      guildId: N.guild_id,
-      location: "HangStatusPopout"
-    }), x = (0, s.e7)([f.default], () => f.default.getId()), M = (0, s.e7)([m.default], () => m.default.getUser(o)), j = (0, s.e7)([h.Z], () => h.Z.getChannelId() === N.id), k = (0, s.e7)([p.Z], () => p.Z.can(T.Plq.CONNECT, N)), U = (null == t ? true : t.emoji) == null || (0, O.K)(t.emoji, N), G = (0, s.e7)([_.ZP], () => null != N.guild_id && null != M ? _.ZP.getMember(N.guild_id, o) : null), B = i.useMemo(() => null != M ? (0, d.SG)(true, G, M, {
-      size: w
-    }) : true, [G, M]);
-    i.useEffect(() => {
-      (0, E.UP)()
-    }, []);
-    let Z = () => {
-      !j && k && (u.default.selectVoiceChannel(N.id), g.default.track(T.rMx.HANG_STATUS_CTA_CLICKED, {
-        source: "HangStatusPopout",
-        guild_id: N.guild_id,
-        channel_id: N.id
-      }))
-    };
-    if (i.useEffect(() => {
-        L && null != t && R && null != M && x !== o && g.default.track(T.rMx.VIEW_HANG_STATUS, {
-          source: "HangStatusPopout",
-          guild_id: N.guild_id,
-          channel_id: N.id
-        })
-      }, [L, t, R, M, x, o, N]), !L || null == M) return null;
-    if (x === o) return (0, r.jsx)("div", {
-      className: a()(A.popoutWrapper, {
-        [A.mounted]: R
-      }),
-      children: (0, r.jsx)(I.v, {
-        currentStatus: t,
-        channel: N
-      })
-    });
-    if (null == t) return null;
-    let F = () => {
-      let e = t.state;
-      e === T.tNA.CUSTOM ? (0, c.ZDy)(async () => {
-        let {
-          default: e
-        } = await n.e("1631").then(n.bind(n, 333541));
-        return n => (0, r.jsx)(e, P(C({}, n), {
-          startingText: t.details,
-          startingEmoji: t.emoji
-        }))
-      }) : (0, E.Zx)(e, true), g.default.track(T.rMx.SWIPE_HANG_STATUS, {
-        guild_id: N.guild_id,
-        channel_id: N.id,
-        media_session_id: h.Z.getMediaSessionId()
-      })
-    };
-    return (0, r.jsxs)(l.m, {
-      position: "right",
-      targetElementRef: D,
+  }, [T, t, I, A, N, l, P]), T && null != A) ? N === l ? (0, r.jsx)("div", {
+    className: a()(S.popoutWrapper, {
+      [S.mounted]: I
+    }),
+    children: (0, r.jsx)(j.v, {
+      currentStatus: t,
+      channel: P
+    })
+  }) : null == t ? null : (0, r.jsxs)(s.m, {
+    position: "right",
+    targetElementRef: Z,
+    children: [(0, r.jsxs)("div", {
+      className: S.contentContainer,
       children: [(0, r.jsxs)("div", {
-        className: A.contentContainer,
-        children: [(0, r.jsxs)("div", {
-          className: A.statusGroup,
-          children: [(0, r.jsx)(c.Text, {
-            variant: "text-xs/medium",
-            color: "text-muted",
-            children: S.intl.string(S.t["74vS//"])
-          }), (0, r.jsx)(c.Text, {
-            variant: "text-sm/semibold",
-            className: A.statusText,
-            children: (0, y.O8)(t)
-          })]
+        className: S.statusGroup,
+        children: [(0, r.jsx)(c.Text, {
+          variant: "text-xs/medium",
+          color: "text-muted",
+          children: E.intl.string(E.t["74vS//"])
+        }), (0, r.jsx)(c.Text, {
+          variant: "text-sm/semibold",
+          className: S.statusText,
+          children: (0, C.O8)(t)
+        })]
+      }), (0, r.jsxs)("div", {
+        className: S.iconGroup,
+        children: [(0, r.jsx)(v.Z, {
+          className: S.statusIcon,
+          hangStatusActivity: t
         }), (0, r.jsxs)("div", {
-          className: A.iconGroup,
-          children: [(0, r.jsx)(v.Z, {
-            className: A.statusIcon,
-            hangStatusActivity: t
-          }), (0, r.jsxs)("div", {
-            className: A.avatarWrapper,
-            children: [(0, r.jsx)(c.qEK, {
-              className: A.avatar,
-              size: c.EFr.SIZE_40,
-              src: B,
-              "aria-hidden": true
-            }), (0, r.jsx)("div", {
-              className: A.outline
-            })]
+          className: S.avatarWrapper,
+          children: [(0, r.jsx)(c.qEK, {
+            className: S.avatar,
+            size: c.EFr.SIZE_40,
+            src: D,
+            "aria-hidden": true
+          }), (0, r.jsx)("div", {
+            className: S.outline
           })]
         })]
-      }), !j && k ? (0, r.jsx)(c.zxk, {
-        size: "sm",
-        text: S.intl.string(S.t["B/dHXF"]),
-        onClick: Z
-      }) : null, j && U ? (0, r.jsx)(c.zxk, {
-        size: "sm",
-        text: S.intl.string(S.t.xcVcFR),
-        onClick: F
-      }) : null]
-    })
-  }
+      })]
+    }), !w && R ? (0, r.jsx)(c.zxk, {
+      size: "sm",
+      text: E.intl.string(E.t["B/dHXF"]),
+      onClick: () => {
+        !w && R && (u.default.selectVoiceChannel(P.id), b.default.track(O.rMx.HANG_STATUS_CTA_CLICKED, {
+          source: "HangStatusPopout",
+          guild_id: P.guild_id,
+          channel_id: P.id
+        }))
+      }
+    }) : null, w && M ? (0, r.jsx)(c.zxk, {
+      size: "sm",
+      text: E.intl.string(E.t.xcVcFR),
+      onClick: () => {
+        let e = t.state;
+        e === O.tNA.CUSTOM ? (0, c.ZDy)(async () => {
+          let {
+            default: e
+          } = await n.e("1631").then(n.bind(n, 333541));
+          return n => {
+            var i, l;
+            return (0, r.jsx)(e, (i = function(e) {
+              for (var t = 1; t < arguments.length; t++) {
+                var n = null != arguments[t] ? arguments[t] : {},
+                  r = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                  return Object.getOwnPropertyDescriptor(n, e).enumerable
+                }))), r.forEach(function(t) {
+                  var r;
+                  r = n[t], t in e ? Object.defineProperty(e, t, {
+                    value: r,
+                    enumerable: true,
+                    configurable: true,
+                    writable: true
+                  }) : e[t] = r
+                })
+              }
+              return e
+            }({}, n), l = l = {
+              startingText: t.details,
+              startingEmoji: t.emoji
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+              var n = Object.keys(e);
+              if (Object.getOwnPropertySymbols) {
+                var r = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, r)
+              }
+              return n
+            })(Object(l)).forEach(function(e) {
+              Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+            }), i))
+          }
+        }) : (0, y.Zx)(e, true), b.default.track(O.rMx.SWIPE_HANG_STATUS, {
+          guild_id: P.guild_id,
+          channel_id: P.id,
+          media_session_id: m.Z.getMediaSessionId()
+        })
+      }
+    }) : null]
+  }) : null
+}

@@ -1,12 +1,12 @@
-/** Chunk was on 39476 **/
+/** Chunk was on 19370 **/
 /** chunk id: 860153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => h
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk700582 = require("./700582.jsx"),
@@ -19,31 +19,31 @@ var Chunk255367 = require("./255367.js"),
   Chunk545093 = require("./545093.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk774846 = require("./774846.js");
-let h = Chunk73800.memo(function(e) {
+let _ = Chunk73800.memo(function(e) {
   let {
     message: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.getChannel(t.channel_id));
-  return null == n ? null : (0, i.jsx)(y.ZP, {
-    children: e => (0, i.jsxs)(u.Z.Provider, {
+  } = e, n = (0, l.e7)([m.Z], () => m.Z.getChannel(t.channel_id));
+  return null == n ? null : (0, a.jsx)(y.ZP, {
+    children: e => (0, a.jsxs)(u.Z.Provider, {
       value: n.guild_id,
-      children: [(0, i.jsx)(c.Z, {
+      children: [(0, a.jsx)(s.Z, {
         user: t.author,
-        size: s.EFr.SIZE_40,
-        className: l()(g.authorAvatar, e)
-      }), (0, i.jsxs)("div", {
-        className: l()(g.author, e),
-        children: [(0, i.jsx)(s.Rny, {
-          children: (0, i.jsx)("div", {
-            className: g.authorNameWrapper,
-            children: (0, i.jsx)(p.Z, {
-              className: g.authorName,
+        size: c.EFr.SIZE_40,
+        className: o()(O.authorAvatar, e)
+      }), (0, a.jsxs)("div", {
+        className: o()(O.author, e),
+        children: [(0, a.jsx)(c.Rny, {
+          children: (0, a.jsx)("div", {
+            className: O.authorNameWrapper,
+            children: (0, a.jsx)(p.Z, {
+              className: O.authorName,
               message: t,
               channel: n
             })
           })
-        }), (0, i.jsx)(d.Z, {
+        }), (0, a.jsx)(d.Z, {
           timestamp: t.timestamp,
-          className: g.timestamp,
+          className: O.timestamp,
           tooltipPosition: "bottom"
         })]
       })]
@@ -51,27 +51,27 @@ let h = Chunk73800.memo(function(e) {
   })
 });
 
-function E(e) {
+function h(e) {
   var t;
   let {
     item: n,
     hideMediaOptions: r,
-    onClose: o
-  } = e, a = null == (t = n.sourceMetadata) ? true : t.message;
-  return (0, i.jsxs)("div", {
-    className: g.topBar,
-    children: [null != a && (0, i.jsx)(h, {
-      message: a
-    }), (0, i.jsx)(f.Z, {
+    onClose: i
+  } = e, l = null == (t = n.sourceMetadata) ? true : t.message;
+  return (0, a.jsxs)("div", {
+    className: O.topBar,
+    children: [null != l && (0, a.jsx)(_, {
+      message: l
+    }), (0, a.jsx)(g.Z, {
       item: n,
       hideMediaOptions: r
-    }), (0, i.jsx)(y.ZP, {
+    }), (0, a.jsx)(y.ZP, {
       mode: y.lx.PINNED,
-      children: e => (0, i.jsx)(b.Z, {
-        onClick: o,
-        icon: s.Dio,
-        tooltip: O.intl.string(O.t.cpT0Cg),
-        className: l()(g.closeButton, e)
+      children: e => (0, a.jsx)(f.Z, {
+        onClick: i,
+        icon: c.Dio,
+        tooltip: b.intl.string(b.t.cpT0Cg),
+        className: o()(O.closeButton, e)
       })
     })]
   })

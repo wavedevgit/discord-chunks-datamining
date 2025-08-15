@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 575890, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 575890, original params: e,t,n (module,exports,require) **/
 module.exports = {
   container: "container_cc2dff",
   scroller: "scroller_cc2dff",

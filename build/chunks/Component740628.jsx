@@ -1,7 +1,7 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 740628, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -21,7 +21,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk878449 = require("./878449.js"),
   Chunk602727 = require("./602727.js");
 
-function x(e) {
+function h(e) {
   let {
     section: t,
     subsection: n,
@@ -64,7 +64,7 @@ function x(e) {
   })
 }
 
-function h(e) {
+function x(e) {
   var t, n, d;
   let {
     user: u,
@@ -72,7 +72,7 @@ function h(e) {
     displayProfile: p,
     guildId: m,
     items: g,
-    initialSection: h = b.oh.USER_INFO,
+    initialSection: x = b.oh.USER_INFO,
     initialSubsection: v,
     onClose: _
   } = e, {
@@ -85,7 +85,7 @@ function h(e) {
       let {
         section: t
       } = e;
-      return t === h
+      return t === x
     })) ? true : t.section) ? d : null == (n = g[0]) ? true : n.section,
     subsection: v
   });
@@ -137,7 +137,7 @@ function h(e) {
           })
         }, t)
       })
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(h, {
       items: g,
       section: E,
       subsection: T,

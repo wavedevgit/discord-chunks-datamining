@@ -1,4 +1,4 @@
-/** Chunk was on 40725 **/
+/** Chunk was on 6049 **/
 /** chunk id: 290135, original params: e,t,n (module,exports,require) **/
 module.exports = {
   cardContentsContainer: "cardContentsContainer_ed9c90",

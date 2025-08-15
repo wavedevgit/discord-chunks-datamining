@@ -1,4 +1,4 @@
-/** Chunk was on 9885 **/
+/** Chunk was on 42521 **/
 /** chunk id: 652380, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F,
@@ -107,12 +107,12 @@ function L() {
     progress: {}
   }
 }
-let Z = "1193992107035983872",
-  W = {
-    id: Z,
+let W = "1193992107035983872",
+  Z = {
+    id: W,
     preview: true,
     config: {
-      id: Z,
+      id: W,
       configVersion: 2,
       startsAt: "2024-01-01T00:00:00+00:00",
       expiresAt: "2030-01-01T00:00:00+00:00",
@@ -177,12 +177,12 @@ let Z = "1193992107035983872",
   };
 
 function U() {
-  var e, t, o, u, d, k, M, Z;
-  let [U, H] = Chunk73800.useState(W), F = Chunk73800.useCallback(e => {
+  var e, t, o, u, d, k, M, W;
+  let [U, H] = Chunk73800.useState(Z), F = Chunk73800.useCallback(e => {
     H(I(q({}, e), {
       preview: true
     }))
-  }, []), [z, X] = Chunk73800.useState(Chunk899457.a.UNENROLLED), [K, Y] = Chunk73800.useState(false), [G, J] = Chunk73800.useState(false), [$, ee] = Chunk73800.useState(null), et = (Z = U.config, (0, Chunk278074.EQ)(Z).with({
+  }, []), [z, X] = Chunk73800.useState(Chunk899457.a.UNENROLLED), [K, Y] = Chunk73800.useState(false), [G, J] = Chunk73800.useState(false), [$, ee] = Chunk73800.useState(null), et = (W = U.config, (0, Chunk278074.EQ)(W).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 

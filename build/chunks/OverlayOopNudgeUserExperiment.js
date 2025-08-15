@@ -4,7 +4,7 @@
 require.d(exports, {
   J0: () => E,
   NW: () => l,
-  OV: () => o,
+  OV: () => a,
   Rb: () => s,
   Se: () => _,
   XE: () => c,
@@ -13,13 +13,13 @@ require.d(exports, {
   dj: () => d,
   hS: () => p,
   mB: () => h,
-  o4: () => a,
+  o4: () => o,
   qA: () => g,
   td: () => f
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   kind: "user",
   id: "2024-10_overlay_v3",
   label: "Overlay V3 Shared Context OOP",
@@ -69,15 +69,15 @@ let o = (0, Chunk818083.B)({
   }]
 });
 
-function a(e) {
-  return o.useExperiment({
+function o(e) {
+  return a.useExperiment({
     location: e
   })
 }
 
 function s(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return o.getCurrentConfig({
+  return a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
@@ -90,7 +90,7 @@ function l(e) {
 }
 
 function c(e) {
-  return a(e).overlayV3tech
+  return o(e).overlayV3tech
 }
 
 function u(e) {

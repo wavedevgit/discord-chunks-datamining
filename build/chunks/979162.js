@@ -1,5 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 979162, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 979162, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk630685 = require("./630685.js"),
   Chunk295864 = require("./295864.js"),
@@ -8,61 +8,62 @@ var Chunk630685 = require("./630685.js"),
   Chunk613078 = require("./613078.js"),
   Chunk467159 = require("./467159.js");
 
-function c(e) {
-  for (; e.firstChild && (s(e.firstChild) && "true" === e.firstChild.getAttribute("data-blocks") || i(e.firstChild));) e = e.firstChild;
-  return e
-}
-
-function u(e) {
-  for (; e.lastChild && (s(e.lastChild) && "true" === e.lastChild.getAttribute("data-blocks") || i(e.lastChild));) e = e.lastChild;
-  return e
-}
-
-function d(e, t, n) {
-  var o = t,
-    d = r(o);
-  if (null != d || e && (e === o || e.firstChild === o) || a(false), e === o && (s(o = o.firstChild) || a(false), "true" !== o.getAttribute("data-contents") && a(false), n > 0 && (n = o.childNodes.length)), 0 === n) {
-    var _ = null;
+function c(t, e, r) {
+  var o = e,
+    c = n(o);
+  if (null != c || t && (t === o || t.firstChild === o) || a(false), t === o && (u(o = o.firstChild) || a(false), "true" !== o.getAttribute("data-contents") && a(false), r > 0 && (r = o.childNodes.length)), 0 === r) {
+    var f = null;
+    if (null != c) f = c;
+    else {
+      var p = function(t) {
+        for (; t.firstChild && (u(t.firstChild) && "true" === t.firstChild.getAttribute("data-blocks") || i(t.firstChild));) t = t.firstChild;
+        return t
+      }(o);
+      f = s(i(p))
+    }
     return {
-      key: _ = null != d ? d : l(i(c(o))),
+      key: f,
       offset: 0
     }
   }
-  var p = o.childNodes[n - 1],
-    h = null,
-    m = null;
-  if (i(p)) {
-    var g = u(p);
-    h = l(i(g)), m = f(g)
-  } else h = l(d), m = f(p);
+  var h = o.childNodes[r - 1],
+    d = null,
+    g = null;
+  if (i(h)) {
+    var y = function(t) {
+      for (; t.lastChild && (u(t.lastChild) && "true" === t.lastChild.getAttribute("data-blocks") || i(t.lastChild));) t = t.lastChild;
+      return t
+    }(h);
+    d = s(i(y)), g = l(y)
+  } else d = s(c), g = l(h);
   return {
-    key: h,
-    offset: m
+    key: d,
+    offset: g
   }
 }
 
-function f(e) {
-  var t = e.textContent;
-  return "\n" === t ? 0 : t.length
+function l(t) {
+  var e = t.textContent;
+  return "\n" === e ? 0 : e.length
 }
-module.exports = function(e, t, n, i, a, s) {
-  var c = n.nodeType === Node.TEXT_NODE,
-    u = a.nodeType === Node.TEXT_NODE;
-  if (c && u) return {
-    selectionState: o(e, l(r(n)), i, l(r(a)), s),
+module.exports = function(t, e, r, i, a, u) {
+  var l = r.nodeType === Node.TEXT_NODE,
+    f = a.nodeType === Node.TEXT_NODE;
+  if (l && f) return {
+    selectionState: o(t, s(n(r)), i, s(n(a)), u),
     needsRecovery: false
   };
-  var f = null,
-    _ = null,
-    p = true;
-  return c ? (f = {
-    key: l(r(n)),
+  var p = null,
+    h = null,
+    d = true;
+  return l ? (p = {
+    key: s(n(r)),
     offset: i
-  }, _ = d(t, a, s)) : u ? (_ = {
-    key: l(r(a)),
-    offset: s
-  }, f = d(t, n, i)) : (f = d(t, n, i), _ = d(t, a, s), n === a && i === s && (p = !!n.firstChild && "BR" !== n.firstChild.nodeName)), {
-    selectionState: o(e, f.key, f.offset, _.key, _.offset),
-    needsRecovery: p
+  }, h = c(e, a, u)) : f ? (h = {
+    key: s(n(a)),
+    offset: u
+  }, p = c(e, r, i)) : (p = c(e, r, i), h = c(e, a, u), r === a && i === u && (d = !!r.firstChild && "BR" !== r.firstChild.nodeName)), {
+    selectionState: o(t, p.key, p.offset, h.key, h.offset),
+    needsRecovery: d
   }
 }

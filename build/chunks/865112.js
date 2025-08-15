@@ -1,11 +1,11 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 865112, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   RB: () => y,
-  VH: () => O,
+  VH: () => _,
   Vi: () => v,
   Vu: () => j,
-  q7: () => _
+  q7: () => O
 });
 var Chunk692547 = require("./692547.js"),
   Chunk497089 = require("./497089.js"),
@@ -22,7 +22,7 @@ var Chunk692547 = require("./692547.js"),
   Chunk549931 = require("./549931.js"),
   Chunk178561 = require("./178561.js"),
   Chunk39863 = require("./39863.js");
-let O = {
+let _ = {
     MISSED_MESSAGES: Chunk333722,
     FRIEND_REQUEST_REMINDER: Chunk584914,
     SCHEDULED_GUILD_EVENT: Chunk659953,
@@ -33,7 +33,7 @@ let O = {
     ADD_FRIEND: Chunk389765,
     FIRST_MESSAGE: Chunk178561
   },
-  _ = e => {
+  O = e => {
     switch (e.type) {
       case "lifecycle_item":
         switch (e.item_enum) {

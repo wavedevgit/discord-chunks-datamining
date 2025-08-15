@@ -1,7 +1,7 @@
 /** Chunk was on 85885 **/
-/** chunk id: 124779, original params: t,i,n (module,exports,require) **/
+/** chunk id: 124779, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => o
+  default: () => c
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -10,29 +10,29 @@ var Chunk82659 = require("./82659.jsx"),
   Chunk471253 = require("./471253.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o(t) {
+function c(t) {
   let {
-    channel: i,
-    transitionState: n,
-    onClose: o
+    channel: n,
+    transitionState: e,
+    onClose: c
   } = t;
 
-  function l() {
-    r.default.disconnect(), o()
+  function o() {
+    l.default.disconnect(), c()
   }
-  return (0, a.jsx)(s.Modal, {
-    transitionState: n,
-    title: e.intl.string(e.t.pADdJi),
-    subtitle: e.intl.string(e.t.mT7jwM),
-    onClose: o,
+  return (0, i.jsx)(r.Modal, {
+    transitionState: e,
+    title: u.intl.string(u.t.pADdJi),
+    subtitle: u.intl.string(u.t.mT7jwM),
+    onClose: c,
     actions: [{
-      text: e.intl.string(e.t.xTwqz8),
-      onClick: l,
+      text: u.intl.string(u.t.xTwqz8),
+      onClick: o,
       variant: "secondary"
     }, {
-      text: e.intl.string(e.t["sBP/1t"]),
+      text: u.intl.string(u.t["sBP/1t"]),
       onClick: function() {
-        (0, c.NZ)(i), l()
+        (0, a.NZ)(n), o()
       },
       variant: "critical-primary"
     }]

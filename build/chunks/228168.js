@@ -5,19 +5,19 @@ require.d(exports, {
   Ej: () => d,
   P: () => _,
   Tb: () => s,
-  Tg: () => o,
+  Tg: () => a,
   cm: () => c,
   lY: () => l,
   n_: () => f,
-  oh: () => a,
+  oh: () => o,
   qb: () => p,
   vB: () => i,
   yM: () => u
 });
 var Chunk981631 = require("./981631.js");
 let i = 300,
-  o = "user-profile-popout";
-var a = function(e) {
+  a = "user-profile-popout";
+var o = function(e) {
     return e.FEATURED = "FEATURED", e.USER_INFO = "USER_INFO", e.BOT_INFO = "BOT_INFO", e.ACTIVITY = "ACTIVITY", e.MUTUALS = "MUTUALS", e.MUTUAL_GUILDS = "MUTUAL_GUILDS", e.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", e.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", e.WIDGETS = "WIDGETS", e
   }({}),
   s = function(e) {

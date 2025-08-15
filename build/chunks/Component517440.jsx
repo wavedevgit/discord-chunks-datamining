@@ -1,7 +1,8 @@
 /** Chunk was on 41984 **/
 /** chunk id: 517440, original params: t,e,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => h
 }), require("./388685.js"), require("./781311.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -18,101 +19,101 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk35777 = require("./35777.js");
 
-function y(t) {
-  let e = c.C.useExperiment({
+function h(t) {
+  let e = l.C.useExperiment({
       location: "ChannelTextAreaContextMenu"
     }),
     {
-      selection: y
+      selection: h
     } = t,
-    m = null != y ? (0, b.sk)(p.bN.richValue(t), {
+    y = null != h ? (0, f.sk)(g.bN.richValue(t), {
       mode: "plain",
-      range: y,
+      range: h,
       preventEmojiSurrogates: false
     }) : "",
-    S = a.useCallback(e => {
-      i.F3.focus(t), d.T.withSingleEntry(t, () => {
+    m = a.useCallback(e => {
+      r.F3.focus(t), p.T.withSingleEntry(t, () => {
         t.deleteFragment(), t.insertText(e)
       })
     }, [t]),
-    j = function(t, e) {
-      let [n, i] = a.useState(false), r = a.useCallback(async () => {
+    S = function(t, e) {
+      let [n, r] = a.useState(false), i = a.useCallback(async () => {
         if (!n) {
-          i(true), (0, o.showToast)((0, o.createToast)(f.intl.string(f.t.p54KYW), o.ToastType.AI));
+          r(true), (0, o.showToast)((0, o.createToast)(b.intl.string(b.t.p54KYW), o.ToastType.AI));
           try {
-            let n = await s.tn.post({
-              url: g.ANM.AI_FIX_GRAMMAR,
+            let n = await c.tn.post({
+              url: d.ANM.AI_FIX_GRAMMAR,
               body: {
                 content: t
               },
               rejectWithError: false
             });
-            n.ok && n.body && (e(n.body.content), (0, o.showToast)((0, o.createToast)(f.intl.string(f.t.mxQpUV), o.ToastType.SUCCESS)))
+            n.ok && n.body && (e(n.body.content), (0, o.showToast)((0, o.createToast)(b.intl.string(b.t.mxQpUV), o.ToastType.SUCCESS)))
           } finally {
-            i(false)
+            r(false)
           }
         }
       }, [n, t, e]);
-      return (0, l.jsx)(o.sNh, {
+      return (0, s.jsx)(o.sNh, {
         id: "fix-grammar",
-        label: n ? f.intl.string(f.t.p54KYW) : f.intl.string(f.t.fCpOHh),
+        label: n ? b.intl.string(b.t.p54KYW) : b.intl.string(b.t.fCpOHh),
         icon: o.$2U,
-        action: r,
+        action: i,
         disabled: n
       })
-    }(m, S),
-    T = function(t, e) {
-      let [i, c] = a.useState(false), d = (0, r.e7)([u.default], () => u.default.locale), b = a.useCallback(async (n, l) => {
-        if (i) return;
-        let a = null != n ? n : d;
-        c(true);
-        let r = null != l ? l : a;
-        (0, o.showToast)((0, o.createToast)(f.intl.formatToPlainString(f.t.Znl8Z2, {
-          targetLanguage: r
+    }(y, m),
+    j = function(t, e) {
+      let [r, l] = a.useState(false), p = (0, i.e7)([u.default], () => u.default.locale), f = a.useCallback(async (n, s) => {
+        if (r) return;
+        let a = null != n ? n : p;
+        l(true);
+        let i = null != s ? s : a;
+        (0, o.showToast)((0, o.createToast)(b.intl.formatToPlainString(b.t.Znl8Z2, {
+          targetLanguage: i
         }), o.ToastType.AI));
         try {
-          let n = await s.tn.post({
-            url: g.ANM.AI_TRANSLATE,
+          let n = await c.tn.post({
+            url: d.ANM.AI_TRANSLATE,
             body: {
               content: t,
               locale: a
             },
             rejectWithError: false
           });
-          n.ok && n.body && (e(n.body.content), (0, o.showToast)((0, o.createToast)(f.intl.formatToPlainString(f.t.FtVUqq, {
-            targetLanguage: r
+          n.ok && n.body && (e(n.body.content), (0, o.showToast)((0, o.createToast)(b.intl.formatToPlainString(b.t.FtVUqq, {
+            targetLanguage: i
           }), o.ToastType.SUCCESS)))
         } finally {
-          c(false)
+          l(false)
         }
-      }, [i, d, t, e]), p = (0, f.getAvailableLocales)().map(t => {
+      }, [r, p, t, e]), g = (0, b.getAvailableLocales)().map(t => {
         let e;
         try {
           e = n(621287)("./".concat(t.value, ".png"))
         } catch (t) {
           e = n(1474)
         }
-        return (0, l.jsx)(o.sNh, {
+        return (0, s.jsx)(o.sNh, {
           id: "translate-".concat(t.value),
           label: t.name,
-          icon: () => (0, l.jsx)("img", {
+          icon: () => (0, s.jsx)("img", {
             alt: "",
             src: e,
-            className: h.flagIcon
+            className: x.flagIcon
           }),
-          action: () => b(t.value, t.name),
-          disabled: i
+          action: () => f(t.value, t.name),
+          disabled: r
         }, t.value)
       });
-      return (0, l.jsx)(o.sNh, {
+      return (0, s.jsx)(o.sNh, {
         id: "translate",
-        label: i ? f.intl.string(f.t.SVKIdX) : f.intl.string(f.t["6epDlZ"]),
-        action: () => b(),
-        disabled: i,
-        children: p
+        label: r ? b.intl.string(b.t.SVKIdX) : b.intl.string(b.t["6epDlZ"]),
+        action: () => f(),
+        disabled: r,
+        children: g
       })
-    }(m, S);
-  return "" !== m.trim() && (null == e ? true : e.enableAIFeatures) ? (0, l.jsxs)(l.Fragment, {
-    children: [j, T]
+    }(y, m);
+  return "" !== y.trim() && (null == e ? true : e.enableAIFeatures) ? (0, s.jsxs)(s.Fragment, {
+    children: [S, j]
   }) : null
 }

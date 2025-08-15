@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 395041, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 54157 **/
+/** chunk id: 395041, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => d,
   w: () => u
@@ -8,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk819439 = require("./819439.js"),
   Chunk624595 = require("./624595.js");
@@ -24,18 +23,18 @@ function c(e, t) {
   })
 }
 let u = e => {
-    let t = (0, s.$)({
+    let t = (0, i.$)({
       location: "SearchTokens"
     });
-    return c(e, o()(l.searchFilter, {
-      [l.searchTokenTopLevel]: t
+    return c(e, l()(o.searchFilter, {
+      [o.searchTokenTopLevel]: t
     }))
   },
   d = e => {
-    let t = (0, s.$)({
+    let t = (0, i.$)({
       location: "SearchTokens"
     });
-    return c(e, o()(l.searchAnswer, {
-      [l.searchTokenTopLevel]: t
+    return c(e, l()(o.searchAnswer, {
+      [o.searchTokenTopLevel]: t
     }))
   }

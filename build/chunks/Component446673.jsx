@@ -11,13 +11,13 @@ var Chunk255367 = require("./255367.js"),
 let s = e => {
   switch (e) {
     case "new":
-      return o.intl.string(o.t.y2b7CA);
+      return a.intl.string(a.t.y2b7CA);
     case "beta":
-      return o.intl.string(o.t.oW0eUV);
+      return a.intl.string(a.t.oW0eUV);
     case "early_access":
-      return o.intl.string(o.t.EYxi0t);
+      return a.intl.string(a.t.EYxi0t);
     case "free_trial":
-      return o.intl.string(o.t.IBYG5e);
+      return a.intl.string(a.t.IBYG5e);
     default:
       return e.text
   }
@@ -29,7 +29,7 @@ function l(e) {
   } = e;
   return (0, r.jsx)(i.Text, {
     variant: "eyebrow",
-    className: a.badge,
+    className: o.badge,
     children: s(t)
   })
 }

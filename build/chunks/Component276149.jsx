@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 276149, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 276149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -20,18 +19,18 @@ function d(e) {
     color: n,
     look: d,
     hangStatusChannel: f,
-    onAction: _
-  } = e, p = (0, i.e7)([a.Z], () => a.Z.getChannelId() === f.id), h = () => {
-    null == _ || _(), o.default.selectVoiceChannel(f.id), s.default.track(c.rMx.HANG_STATUS_CTA_CLICKED, {
-      source: "UserProfilePopout",
-      guild_id: f.guild_id,
-      channel_id: f.id
-    })
-  };
-  return (0, r.jsx)(l.Z, {
+    onAction: p
+  } = e, m = (0, i.e7)([a.Z], () => a.Z.getChannelId() === f.id);
+  return (0, r.jsx)(s.Z, {
     className: t,
-    disabled: p,
-    onClick: h,
+    disabled: m,
+    onClick: () => {
+      null == p || p(), l.default.selectVoiceChannel(f.id), o.default.track(c.rMx.HANG_STATUS_CTA_CLICKED, {
+        source: "UserProfilePopout",
+        guild_id: f.guild_id,
+        channel_id: f.id
+      })
+    },
     color: n,
     look: d,
     fullWidth: true,

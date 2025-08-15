@@ -24,11 +24,11 @@ let _ = [Chunk297781.An],
       channel: n,
       selected: i
     } = e, {
-      largeImage: o
+      largeImage: a
     } = (0, s.rv)({
       entry: t
     }), h = (0, c.Nq)(t);
-    return null != h && (0, a.Hi)(h, p) ? (0, r.jsxs)(d.Zb, {
+    return null != h && (0, o.Hi)(h, p) ? (0, r.jsxs)(d.Zb, {
       selected: i,
       children: [(0, r.jsxs)(d.e$, {
         children: [(0, r.jsx)(d.F9, {
@@ -44,7 +44,7 @@ let _ = [Chunk297781.An],
           }, n))
         })]
       }), (0, r.jsx)(l.f, {
-        src: null == o ? true : o.src,
+        src: null == a ? true : a.src,
         size: 48,
         className: f.thumbnail
       })]

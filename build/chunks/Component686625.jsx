@@ -1,4 +1,4 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 686625, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -19,29 +19,29 @@ function u(e) {
     listClassName: u,
     onExpand: d
   } = e, {
-    trackUserProfileAction: h
-  } = (0, o.KZ)(), p = i.useId(), [f, g] = i.useState(false), m = f ? s.CJ0 : s.Fbu;
+    trackUserProfileAction: p
+  } = (0, s.KZ)(), h = i.useId(), [f, m] = i.useState(false), g = f ? o.CJ0 : o.Fbu;
   return (0, r.jsxs)("section", {
     className: c.section,
-    children: [(0, r.jsxs)(s.P3F, {
+    children: [(0, r.jsxs)(o.P3F, {
       className: a()(c.header, c.clickable),
-      "aria-controls": p,
+      "aria-controls": h,
       "aria-expanded": f,
       onClick: () => {
-        g(!f), f || (h({
+        m(!f), f || (p({
           action: "PRESS_SECTION",
           section: t
         }), null == d || d())
       },
-      children: [(0, r.jsxs)(s.X6q, {
+      children: [(0, r.jsxs)(o.X6q, {
         variant: "text-sm/medium",
         color: "text-default",
         children: [n, " — ", l.length]
-      }), (0, r.jsx)(m, {
+      }), (0, r.jsx)(g, {
         size: "md"
       })]
     }), l.length > 0 && (0, r.jsx)("ul", {
-      id: p,
+      id: h,
       hidden: !f,
       className: a()(c.list, u),
       children: l

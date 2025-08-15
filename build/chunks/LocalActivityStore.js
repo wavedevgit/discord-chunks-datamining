@@ -2,10 +2,10 @@
 /** chunk id: 293273, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Z
+  Z: () => V
 }), require("./539854.js"), require("./388685.js"), require("./997841.js");
 var r, Chunk348327 = require("./348327.js"),
-  o = require.n(Chunk348327),
+  a = require.n(Chunk348327),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -84,7 +84,7 @@ function L() {
     let [, n] = t;
     null != n.application_id && (i.add(n.name), e.push(n))
   });
-  let a = Chunk594190.ZP.getVisibleGame(),
+  let o = Chunk594190.ZP.getVisibleGame(),
     l = null != Chunk392711 && null != Chunk392711.name && (Chunk348327.has(Chunk392711.name) || (0, Chunk674691.G)(Chunk392711, [...module, ...Chunk797258.Z.getRemoteActivities()])),
     c = null != Chunk392711 && Chunk392711.isLauncher,
     u = null != Chunk199902.Z.getCurrentUserActiveStream(),
@@ -118,7 +118,7 @@ function L() {
       emoji: null == exports ? true : exports.emoji
     })
   }
-  o()(w, module) || (w = module)
+  a()(w, module) || (w = module)
 }
 
 function x() {
@@ -131,18 +131,18 @@ function M(e) {
     pid: n,
     activity: r
   } = e;
-  if (o()(D[t], [n, r])) returnfalse;
+  if (a()(D[t], [n, r])) returnfalse;
   null != r ? D[t] = [n, r] : delete D[t], L()
 }
 
-function j(e) {
+function k(e) {
   let {
     socketId: t
   } = e;
   delete D[t], L()
 }
 
-function k(e) {
+function j(e) {
   let {
     localActivities: t
   } = e;
@@ -152,13 +152,13 @@ function k(e) {
 function U() {
   let e = {},
     t = false;
-  for (let [r, [i, o]] of Object.entries(D)) {
+  for (let [r, [i, a]] of Object.entries(D)) {
     var n;
-    let a = null != (n = o.flags) ? require : 0,
+    let o = null != (n = a.flags) ? require : 0,
       s = (0, Chunk212517.Ix)(Chunk392711);
-    s !== Chunk392711 ? (module[r] = [Chunk348327, P(C({}, o), {
+    s !== Chunk392711 ? (module[r] = [Chunk348327, P(C({}, a), {
       flags: s
-    })], t = true) : module[r] = [Chunk348327, o]
+    })], t = true) : module[r] = [Chunk348327, a]
   }
   return exports ? (D = module, "APPLICATION_ACTIVITIES_CHANGED") : "NO_CHANGES"
 }
@@ -195,13 +195,13 @@ class B extends(r = Chunk442837.ZP.Store) {
   }
 }
 N(B, "displayName", "LocalActivityStore");
-let Z = new B(Chunk570140.Z, {
+let V = new B(Chunk570140.Z, {
   ROBLOX_SUBGAME_UPDATE: L,
   ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS: L,
-  OVERLAY_INITIALIZE: k,
+  OVERLAY_INITIALIZE: j,
   START_SESSION: x,
   LOCAL_ACTIVITY_UPDATE: M,
-  RPC_APP_DISCONNECTED: j,
+  RPC_APP_DISCONNECTED: k,
   RUNNING_GAMES_CHANGE: L,
   LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: L,
   SPOTIFY_PLAYER_STATE: L,

@@ -3,19 +3,19 @@
 "use strict";
 require.d(exports, {
   Zg: () => l,
-  pj: () => a,
+  pj: () => o,
   pr: () => s
 }), require("./642613.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e) {
+function o(e) {
   i.Z.dispatch({
     type: "TOP_EMOJIS_FETCH",
     guildId: e
   }), r.tn.get({
-    url: o.ANM.TOP_EMOJIS_FOR_GUILD(e),
+    url: a.ANM.TOP_EMOJIS_FOR_GUILD(e),
     oldFormErrors: true,
     rejectWithError: true
   }).then(t => i.Z.dispatch({

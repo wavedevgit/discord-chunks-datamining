@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 712114, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 712114, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => h
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -15,31 +14,27 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk945202 = require("./945202.js");
 
-function _(e) {
+function h(e) {
   let {
     onOpenClips: t,
     lastClipsSession: n,
-    closePopout: _
+    closePopout: h
   } = e;
-
-  function p() {
-    (0, l.Kw)(l.v6.CLIPS_CHANNEL_ATTACH_REMINDER), _()
-  }
   return (i.useEffect(() => () => {
     (0, c.eL)()
-  }, []), (0, s.Z)({
-    type: o.ImpressionTypes.VIEW,
-    name: o.ImpressionNames.HOTSPOT,
+  }, []), (0, o.Z)({
+    type: l.ImpressionTypes.VIEW,
+    name: l.ImpressionNames.HOTSPOT,
     properties: {
-      hotspot_location: l.v6.CLIPS_CHANNEL_ATTACH_REMINDER
+      hotspot_location: s.v6.CLIPS_CHANNEL_ATTACH_REMINDER
     }
   }), null == n) ? null : (0, r.jsxs)("div", {
-    className: f.recentClipsPopout,
+    className: p.recentClipsPopout,
     children: [(0, r.jsx)("div", {
-      className: f.thumbnailStackContainer,
+      className: p.thumbnailStackContainer,
       children: (0, r.jsx)(u.Z, {})
     }), (0, r.jsx)(a.X6q, {
-      className: f.header,
+      className: p.header,
       color: "header-primary",
       variant: "heading-md/extrabold",
       children: d.intl.format(d.t["+qxkzM"], {
@@ -47,18 +42,20 @@ function _(e) {
       })
     }), (0, r.jsx)(a.Text, {
       color: "text-default",
-      className: f.__invalid_content,
+      className: p.__invalid_content,
       variant: "text-sm/medium",
       children: d.intl.format(d.t["7XX0/f"], {
         applicationName: n.applicationName
       })
     }), (0, r.jsx)("div", {
-      className: f.buttonsContainer,
+      className: p.buttonsContainer,
       children: (0, r.jsxs)(a.hE2, {
         children: [(0, r.jsx)(a.zxk, {
           variant: "secondary",
           text: d.intl.string(d.t["7r5Z19"]),
-          onClick: p
+          onClick: function() {
+            (0, s.Kw)(s.v6.CLIPS_CHANNEL_ATTACH_REMINDER), h()
+          }
         }), (0, r.jsx)(a.zxk, {
           variant: "primary",
           text: d.intl.string(d.t.md4qKy),

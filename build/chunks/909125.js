@@ -1,4 +1,4 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 909125, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => c
@@ -7,8 +7,8 @@ var Chunk73800 = require("./73800.js"),
   Chunk619864 = require("./619864.js"),
   Chunk672041 = require("./672041.js"),
   Chunk981631 = require("./981631.js");
-let s = Chunk619864.vU + Chunk981631.vpv,
-  o = Chunk619864.vU / Chunk981631.vpv;
+let o = Chunk619864.vU + Chunk981631.vpv,
+  s = Chunk619864.vU / Chunk981631.vpv;
 
 function c(e) {
   let {
@@ -19,12 +19,12 @@ function c(e) {
     n || u(t)
   }, [t, n]);
   let d = c > i.vU + a.vpv,
-    h = (0, l.t)({
+    p = (0, l.t)({
       location: "useSearchResultsPagination"
     });
   return {
-    isPaginationTotalCountLimited: d && h,
-    paginationTotalCount: Math.min(c, s),
-    paginationMaxIndex: o
+    isPaginationTotalCountLimited: d && p,
+    paginationTotalCount: Math.min(c, o),
+    paginationMaxIndex: s
   }
 }

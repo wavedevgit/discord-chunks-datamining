@@ -2,12 +2,12 @@
 /** chunk id: 724145, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Z
+  Z: () => V
 }), require("./388685.js"), require("./314940.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk278074 = require("./278074.js"),
   Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
@@ -38,7 +38,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk204089 = require("./204089.js");
-let k = () => (0, Chunk255367.jsx)("div", {
+let j = () => (0, Chunk255367.jsx)("div", {
     className: Chunk204089.editorHeader,
     children: (0, Chunk255367.jsxs)("div", {
       className: Chunk204089.bannerUpsell,
@@ -58,14 +58,14 @@ let k = () => (0, Chunk255367.jsx)("div", {
       null != t && t(L.L.DISMISS), n(D.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, R.C)()
     };
     return (0, r.jsxs)("div", {
-      className: j.editorHeader,
+      className: k.editorHeader,
       children: [(0, r.jsx)(f.P3F, {
-        className: j.closeCircleButton,
+        className: k.closeCircleButton,
         onClick: i,
         children: (0, r.jsx)(f.k$p, {
           size: "md",
           color: "currentColor",
-          className: j.closeCircle
+          className: k.closeCircle
         })
       }), (0, r.jsx)(f.X6q, {
         variant: "heading-lg/extrabold",
@@ -76,8 +76,8 @@ let k = () => (0, Chunk255367.jsx)("div", {
   G = e => {
     var t, n, i;
     let {
-      onSubscribeSuccess: o,
-      markAsDismissed: a
+      onSubscribeSuccess: a,
+      markAsDismissed: o
     } = e, {
       analyticsLocations: s
     } = (0, E.ZP)(g.Z.CLIENT_THEMES_EDITOR), [u, f] = (0, l.Wu)([T.default, N.Z], () => [N.Z.gradientPreset, A.ZP.isPremium(T.default.getCurrentUser())]), p = (0, y.N)(), {
@@ -88,7 +88,7 @@ let k = () => (0, Chunk255367.jsx)("div", {
       intervalType: null == p || null == (t = p.subscription_trial) ? true : t.interval,
       intervalCount: null == p || null == (n = p.subscription_trial) ? true : n.interval_count
     }), b = f ? M.intl.string(M.t.IJI7ys) : (null == p || null == (i = p.subscription_trial) ? true : i.sku_id) === x.Si.TIER_2 ? m : M.intl.string(M.t.mr4K7O), I = e => {
-      e && (null == o || o(), null != a && a(L.L.PRIMARY), null != u && ((0, w.Yk)({
+      e && (null == a || a(), null != o && o(L.L.PRIMARY), null != u && ((0, w.Yk)({
         isPersisted: true,
         themeName: c.Us[u.id],
         analyticsLocations: s
@@ -120,17 +120,17 @@ let k = () => (0, Chunk255367.jsx)("div", {
       markAsDismissed: t,
       isCoachmark: n
     } = e, {
-      isPreview: o
+      isPreview: a
     } = (0, l.cj)([N.Z], () => ({
       isPreview: N.Z.isPreview
     })), {
-      v2EditorEnabled: a
+      v2EditorEnabled: o
     } = C.Mc.useExperiment({
       location: "ClientThemesEditor"
     }), [c, d] = i.useState(false), f = (0, P.q)(), _ = () => {
       null != t && t(L.L.DISMISS), f(D.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, R.C)(), n || p.Z.open()
     }, h = (0, s.EQ)({
-      isPreview: o,
+      isPreview: a,
       isCoachmark: n,
       forceShowCloseButton: c
     }).with({
@@ -139,10 +139,10 @@ let k = () => (0, Chunk255367.jsx)("div", {
       forceShowCloseButton: true
     }, () => M.intl.string(M.t.cpT0Cg)).with({
       isPreview: true
-    }, () => M.intl.string(M.t["dqH+qq"])).otherwise(() => M.intl.string(M.t.Olc2Ky)), m = a ? j.editorFooterV2 : j.editorFooter;
+    }, () => M.intl.string(M.t["dqH+qq"])).otherwise(() => M.intl.string(M.t.Olc2Ky)), m = o ? k.editorFooterV2 : k.editorFooter;
     return (0, r.jsxs)("div", {
       className: m,
-      children: [o && (0, r.jsx)(G, {
+      children: [a && (0, r.jsx)(G, {
         onSubscribeSuccess: () => {
           d(true)
         },
@@ -156,12 +156,12 @@ let k = () => (0, Chunk255367.jsx)("div", {
     })
   };
 
-function Z(e) {
+function V(e) {
   let {
     markAsDismissed: t,
     showClientThemesCoachmark: n
   } = e, {
-    analyticsLocations: o
+    analyticsLocations: a
   } = (0, E.ZP)(g.Z.CLIENT_THEMES_EDITOR), {
     isPreview: s,
     shouldEditorAnimate: c
@@ -172,30 +172,30 @@ function Z(e) {
   i.useEffect(() => d(D.rMx.CLIENT_THEME_PREVIEW_VIEWED), [d]), i.useEffect(() => {
     s && S.default.track(D.rMx.PREMIUM_UPSELL_VIEWED, {
       type: x.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
-      location_stack: o
+      location_stack: a
     })
-  }, [s, o]);
+  }, [s, a]);
   let _ = (0, P.J)(),
     p = (0, h.Z)(null, s ? _ : D.dG4);
   return i.useEffect(() => {
     if (s && !u) return _
   }, [s, u, _]), (0, r.jsx)(E.Gt, {
-    value: o,
+    value: a,
     children: (0, r.jsx)("div", {
       ref: p,
       "data-app-right-panel": true,
-      className: a()(j.themeEditor, c ? j.editorAnimate : null),
+      className: o()(k.themeEditor, c ? k.editorAnimate : null),
       children: (0, r.jsxs)(f.y5t, {
-        children: [n ? (0, r.jsx)(k, {}) : (0, r.jsx)(U, {
+        children: [n ? (0, r.jsx)(j, {}) : (0, r.jsx)(U, {
           markAsDismissed: t
         }), (0, r.jsx)(f.Ttm, {
-          className: j.editorBody,
+          className: k.editorBody,
           children: (0, r.jsxs)(w.ZP, {
             type: w.yH.EDITOR,
             children: [!s && (0, r.jsx)(w.ZP.Basic, {
-              className: j.selectionGroup
+              className: k.selectionGroup
             }), (0, r.jsx)(w.ZP.Gradient, {
-              className: j.selectionGroup,
+              className: k.selectionGroup,
               isCoachmark: n
             })]
           })

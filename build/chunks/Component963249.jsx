@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk97613 = require("./97613.js"),
-  o = require.n(Chunk97613),
+  a = require.n(Chunk97613),
   Chunk772848 = require("./772848.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -68,8 +68,8 @@ function A(e, t) {
   if (null == e) return {};
   var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -77,8 +77,8 @@ function A(e, t) {
 function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -97,35 +97,35 @@ function C(e) {
     paymentModalBanner: L,
     isGift: x = false,
     giftMessage: M,
-    giftStyle: j,
-    giftingOrigin: k,
+    giftStyle: k,
+    giftingOrigin: j,
     subscriptionTier: U,
     trialId: G,
     postSuccessGuild: B,
-    openInvoiceId: Z,
+    openInvoiceId: V,
     applicationId: F,
-    referralTrialOfferId: V,
+    referralTrialOfferId: Z,
     giftRecipient: H,
     returnRef: Y,
     subscription: W,
     skipConfirm: K
-  } = null != e ? e : {}, z = false, q = (0, a.Z)(), X = h.default.getCurrentUser(), Q = (0, E.M5)(X, O.p9.TIER_2), J = o()("payment-modal"), $ = (0, E.Wz)(U), ee = false;
+  } = null != e ? e : {}, z = false, q = (0, o.Z)(), X = h.default.getCurrentUser(), Q = (0, E.M5)(X, O.p9.TIER_2), J = a()("payment-modal"), $ = (0, E.Wz)(U), ee = false;
   return (0, s.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("8016"), n.e("17938"), n.e("94136"), n.e("84992"), n.e("47238")]).then(n.bind(n, 7305));
+    } = await Promise.all([n.e("8016"), n.e("17938"), n.e("94136"), n.e("84992"), n.e("54433"), n.e("99315")]).then(n.bind(n, 7305));
     return n => {
       var {
-        onClose: o
-      } = n, a = A(n, ["onClose"]);
-      return (0, r.jsx)(e, S(I({}, a), {
+        onClose: a
+      } = n, o = A(n, ["onClose"]);
+      return (0, r.jsx)(e, S(I({}, o), {
         loadId: q,
         subscriptionTier: U,
         skuId: $,
         isGift: x,
         giftMessage: M,
-        giftStyle: j,
-        giftingOrigin: k,
+        giftStyle: k,
+        giftingOrigin: j,
         giftRecipient: H,
         initialPlanId: t,
         followupSKUInfo: i,
@@ -133,7 +133,7 @@ function C(e) {
           if (ee) return;
           ee = true, g.S.dispatch(y.CkL.PREMIUM_PAYMENT_MODAL_CLOSED);
           let n = () => {
-            o(), null == v || v(e), e && (null == N || N(), (0, p.M)(x, Q, t) && g.S.dispatch(y.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
+            a(), null == v || v(e), e && (null == N || N(), (0, p.M)(x, Q, t) && g.S.dispatch(y.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
               type: "PREMIUM_PAYMENT_MODAL_CLOSE",
               didSucceed: e
             })
@@ -155,9 +155,9 @@ function C(e) {
         trialId: G,
         postSuccessGuild: B,
         planGroup: O.Y1,
-        openInvoiceId: Z,
+        openInvoiceId: V,
         applicationId: F,
-        referralTrialOfferId: V,
+        referralTrialOfferId: Z,
         returnRef: Y,
         subscription: W,
         skipConfirm: !!K,

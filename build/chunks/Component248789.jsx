@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 248789, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 248789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Y: () => y
 }), require("./388685.js");
@@ -18,15 +17,6 @@ var Chunk255367 = require("./255367.js"),
   Chunk134612 = require("./134612.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
@@ -34,25 +24,27 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function E(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
 function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -60,97 +52,97 @@ function b(e, t) {
 function y(e) {
   let {
     channelId: t,
-    warningId: m,
-    senderId: E
-  } = e, y = i.useCallback(() => {
-    (0, u.T)(t, [m])
-  }, [t, m]), O = (0, a.e7)([c.Z], () => c.Z.isBlocked(E)), v = i.useMemo(() => ({
+    warningId: y,
+    senderId: _
+  } = e, C = i.useCallback(() => {
+    (0, u.T)(t, [y])
+  }, [t, y]), x = (0, a.e7)([c.Z], () => c.Z.isBlocked(_)), v = i.useMemo(() => ({
     channelId: t,
-    warningId: m,
-    senderId: E,
+    warningId: y,
+    senderId: _,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2
-  }), [t, m, E]);
+  }), [t, y, _]);
   i.useEffect(() => {
-    (0, f.KQ)(b(g({}, v), {
-      viewName: f.pb.SAFETY_WARNING_BANNER
-    })), l.Z.increment({
-      name: o.V.SAFETY_WARNING_VIEW
+    (0, p.KQ)(b(g({}, v), {
+      viewName: p.pb.SAFETY_WARNING_BANNER
+    })), s.Z.increment({
+      name: l.V.SAFETY_WARNING_VIEW
     })
   }, [v]);
-  let I = i.useCallback(e => {
-      (0, f.qc)(b(g({}, v), {
+  let j = i.useCallback(e => {
+      (0, p.qc)(b(g({}, v), {
         cta: e
       }))
     }, [v]),
-    T = i.useCallback(() => {
-      (0, s.ZDy)(async () => {
+    O = i.useCallback(() => {
+      (0, o.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("49508"), n.e("37031"), n.e("89650"), n.e("899")]).then(n.bind(n, 611446));
+        } = await Promise.all([n.e("49508"), n.e("37031"), n.e("89650")]).then(n.bind(n, 611446));
         return n => {
           let {
             transitionState: i,
-            onClose: o
+            onClose: l
           } = n;
           return (0, r.jsx)(e, {
-            otherUserId: E,
+            otherUserId: _,
             channelId: t,
-            warningId: m,
+            warningId: y,
             warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
             transitionState: i,
-            onClose: o
+            onClose: l
           })
         }
       }, {
-        modalKey: p.X_
-      }), I(f.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
-    }, [t, E, m, I]),
+        modalKey: f.X_
+      }), j(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
+    }, [t, _, y, j]),
+    E = i.useCallback(() => {
+      C(), j(p.NM.USER_BANNER_BLOCK_CONFIRM)
+    }, [C, j]),
     S = i.useCallback(() => {
-      y(), I(f.NM.USER_BANNER_BLOCK_CONFIRM)
-    }, [y, I]),
-    A = i.useCallback(() => {
-      y(), I(f.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
-    }, [y, I]),
-    N = i.useCallback(() => {
-      (0, s.ZDy)(async () => {
+      C(), j(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
+    }, [C, j]),
+    P = i.useCallback(() => {
+      (0, o.ZDy)(async () => {
         let {
           default: e
         } = await n.e("19538").then(n.bind(n, 699783));
         return n => {
           let {
             transitionState: i,
-            onClose: o
+            onClose: l
           } = n;
           return (0, r.jsx)(e, {
             transitionState: i,
-            onBlock: S,
-            onBlockAndReport: A,
+            onBlock: E,
+            onBlockAndReport: S,
             onCancel: () => {
-              null == o || o(), I(f.NM.USER_BANNER_BLOCK_CANCEL)
+              null == l || l(), j(p.NM.USER_BANNER_BLOCK_CANCEL)
             },
-            onClose: o,
-            userId: E,
+            onClose: l,
+            userId: _,
             channelId: t
           })
         }
       })
-    }, [S, A, E, t, I]);
-  return (0, r.jsx)(_.Q, {
+    }, [E, S, _, t, j]);
+  return (0, r.jsx)(h.Q, {
     channelId: t,
-    warningId: m,
-    senderId: E,
+    warningId: y,
+    senderId: _,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
-    header: h.intl.string(h.t.ZzlB5u),
-    description: h.intl.string(h.t["D1aU+v"]),
-    onDismiss: y,
+    header: m.intl.string(m.t.ZzlB5u),
+    description: m.intl.string(m.t["D1aU+v"]),
+    onDismiss: C,
     buttons: [{
-      text: h.intl.string(h.t.Qyu4UF),
+      text: m.intl.string(m.t.Qyu4UF),
       variant: "primary",
-      onClick: T
-    }, ...O ? [] : [{
-      text: h.intl.string(h.t["7q0bNT"]),
+      onClick: O
+    }, ...x ? [] : [{
+      text: m.intl.string(m.t["7q0bNT"]),
       variant: "secondary",
-      onClick: N
+      onClick: P
     }]]
   })
 }

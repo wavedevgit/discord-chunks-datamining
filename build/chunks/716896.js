@@ -22,9 +22,9 @@ class l extends Chunk147913.Z {
     let {
       channelId: t
     } = e;
-    if ((0, a.AB)(t)) return;
+    if ((0, o.AB)(t)) return;
     let n = i.Z.getChannel(t);
-    null != n && n.isForumLikeChannel() && (0, o.EB)(n)
+    null != n && n.isForumLikeChannel() && (0, a.EB)(n)
   }
   constructor(...e) {
     super(...e), s(this, "actions", {

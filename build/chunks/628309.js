@@ -2,13 +2,13 @@
 /** chunk id: 628309, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  u: () => a
+  u: () => o
 }), require("./539854.js");
 var Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
   Chunk411149 = require("./411149.js");
 
-function a() {
+function o() {
   let e = (0, Chunk442837.Wu)([Chunk411149.Z], () => Chunk411149.Z.wallpapers);
   return Chunk73800.useMemo(() => module.reduce((e, t) => {
     var n, r, i;

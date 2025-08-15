@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk562558 = require("./562558.js"),
   Chunk681102 = require("./681102.jsx"),
@@ -41,20 +41,20 @@ function p(e) {
     profile: t,
     className: n
   } = e, {
-    gamesToDisplay: o,
+    gamesToDisplay: a,
     lastGameToDisplay: f,
     remainingGames: p
   } = (0, l.Z)(t), h = i.useMemo(() => t.traits.map((e, t) => _({
     key: "trait-".concat(t)
   }, e)).filter(e => e.label.length > 0), [t]), m = t.description.length > 0;
-  return m || o.length > 0 || h.length > 0 ? (0, r.jsxs)("div", {
-    className: a()(d.body, n),
+  return m || a.length > 0 || h.length > 0 ? (0, r.jsxs)("div", {
+    className: o()(d.body, n),
     children: [m ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
       children: t.description
     }) : null, (0, r.jsx)(c.Z, {
-      gamesToDisplay: o,
+      gamesToDisplay: a,
       lastGameToDisplay: f,
       remainingGames: p,
       activity: t.gameActivity

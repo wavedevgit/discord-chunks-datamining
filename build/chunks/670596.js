@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   U: () => i,
-  p: () => o
+  p: () => a
 });
 var Chunk73800 = require("./73800.js"),
   i = function(e) {
     return e.DEFAULT = "default", e.CHECKBOX = "checkbox", e.RADIO = "radio", e.SLIDER = "slider", e.SEARCH = "search", e.IMAGE_UPLOAD = "image upload", e
   }({});
-let o = Chunk73800.createContext({
+let a = Chunk73800.createContext({
   onSelect: true
 })

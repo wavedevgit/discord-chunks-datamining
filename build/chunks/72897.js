@@ -87,14 +87,14 @@ function b(e) {
   let {
     getRawDevices: t,
     getNoDevicesMessage: n
-  } = E(e), i = (0, o.e7)([l.Z], () => t(l.Z)), a = n();
+  } = E(e), i = (0, a.e7)([l.Z], () => t(l.Z)), o = n();
   return (0, r.useMemo)(() => {
     let e = h({}, i),
       t = e[f.w5];
     return null != t && (e[f.w5] = g(h({}, t), {
-      name: t.disabled ? a : t.name.replace(f.fU, _.intl.string(_.t.bBvAEB))
+      name: t.disabled ? o : t.name.replace(f.fU, _.intl.string(_.t.bBvAEB))
     })), e
-  }, [i, a])
+  }, [i, o])
 }
 
 function y(e) {
@@ -102,7 +102,7 @@ function y(e) {
     {
       getCurrentDeviceId: n
     } = E(e);
-  return t[(0, o.e7)([l.Z], () => n(l.Z))]
+  return t[(0, a.e7)([l.Z], () => n(l.Z))]
 }
 
 function O(e, t) {
@@ -118,7 +118,7 @@ function O(e, t) {
     location: n
   }), f = b(e), {
     getAllDeviceIdsSortedByFrecency: _
-  } = E(e), p = (0, a.Z)((0, o.Wu)([d.Z], () => _(d.Z))), {
+  } = E(e), p = (0, o.Z)((0, a.Wu)([d.Z], () => _(d.Z))), {
     id: h
   } = y(e);
   return (0, r.useMemo)(() => {
@@ -137,11 +137,11 @@ function v(e) {
     getCurrentDeviceId: r,
     getSelectedDeviceId: i
   } = E(e), {
-    resolvedId: a,
+    resolvedId: o,
     selectedId: c
-  } = (0, o.cj)([l.Z], () => ({
+  } = (0, a.cj)([l.Z], () => ({
     resolvedId: r(l.Z),
     selectedId: i(l.Z)
-  })), u = null != (t = (0, s.Z)(a)) ? t : a, d = a !== u, f = null != (n = (0, s.Z)(c)) ? n : c, _ = c !== f;
+  })), u = null != (t = (0, s.Z)(o)) ? t : o, d = o !== u, f = null != (n = (0, s.Z)(c)) ? n : c, _ = c !== f;
   return d && !_
 }

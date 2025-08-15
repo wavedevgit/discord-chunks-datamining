@@ -1,7 +1,7 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 52639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => _
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -21,26 +21,26 @@ var Chunk81897 = require("./81897.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk439178 = require("./439178.js");
 
-function x(e) {
+function _(e) {
   let {
     user: t,
     channelId: n
   } = e, {
-    analyticsLocations: x
+    analyticsLocations: _
   } = (0, l.ZP)(), {
-    context: j
-  } = (0, o.KZ)(), _ = (0, i.Z)(), {
-    mutualFriendsCount: O,
-    mutualFriends: v,
-    mutualGuilds: C
-  } = (0, c.Z)(t), E = !t.bot && null != O && O > 0, S = null != C && C.length > 0;
-  return E || S ? (0, r.jsxs)(g.Z.Overlay, {
+    context: C
+  } = (0, s.KZ)(), x = (0, i.Z)(), {
+    mutualFriendsCount: v,
+    mutualFriends: j,
+    mutualGuilds: O
+  } = (0, c.Z)(t), E = !t.bot && null != v && v > 0, S = null != O && O.length > 0;
+  return E || S ? (0, r.jsxs)(m.Z.Overlay, {
     className: y.overlay,
-    children: [S && (0, r.jsx)(m.Z, {
+    children: [S && (0, r.jsx)(g.Z, {
       section: "MUTUAL_GUILDS",
       header: b.intl.string(b.t["4lTDZm"]),
       listClassName: y.list,
-      items: C.map(e => {
+      items: O.map(e => {
         let {
           guild: n,
           nick: i
@@ -49,18 +49,18 @@ function x(e) {
           user: t,
           guild: n,
           nick: i,
-          onSelect: () => (0, s.X)(n.id)
+          onSelect: () => (0, o.X)(n.id)
         }, n.id)
       })
-    }), S && E && (0, r.jsx)(h.Z, {
+    }), S && E && (0, r.jsx)(p.Z, {
       className: y.divider
-    }), E && (0, r.jsx)(m.Z, {
+    }), E && (0, r.jsx)(g.Z, {
       section: "MUTUAL_FRIENDS",
       header: b.intl.string(b.t["0mTJ3t"]),
       listClassName: y.list,
-      onExpand: () => (0, u.Z)(t.id, _),
-      items: null == v ? Array.from({
-        length: O
+      onExpand: () => (0, u.Z)(t.id, x),
+      items: null == j ? Array.from({
+        length: v
       }).map((e, t) => (0, r.jsxs)("div", {
         className: y.loadingMutualFriend,
         children: [(0, r.jsx)(a.ZT, {
@@ -70,13 +70,13 @@ function x(e) {
           width: 135,
           opacity: .08
         })]
-      }, t)) : v.map(e => {
+      }, t)) : j.map(e => {
         let {
           key: t,
           user: i,
           status: l
         } = e;
-        return (0, r.jsx)(p.Z, {
+        return (0, r.jsx)(h.Z, {
           user: i,
           status: l,
           channelId: n,
@@ -99,9 +99,9 @@ function x(e) {
                 })
               }
               return e
-            }({}, j), t = t = {
+            }({}, C), t = t = {
               userId: i.id,
-              sourceAnalyticsLocations: x
+              sourceAnalyticsLocations: _
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

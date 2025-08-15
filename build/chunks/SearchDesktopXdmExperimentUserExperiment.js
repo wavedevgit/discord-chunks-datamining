@@ -9,15 +9,15 @@ require.d(exports, {
 });
 var Chunk818083 = require("./818083.js"),
   Chunk154579 = require("./154579.js");
-let o = {
+let a = {
     enabled: false,
     inExperiment: false
   },
-  a = (0, Chunk818083.B)({
+  o = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-06_search_desktop_xdm_experiment",
     label: "Search Desktop XDM Experiment",
-    defaultConfig: o,
+    defaultConfig: a,
     treatments: [{
       id: 0,
       label: "Control group for xDM search on desktop",
@@ -43,14 +43,14 @@ function s(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    enabled: o
-  } = a.getCurrentConfig({
+    enabled: a
+  } = o.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
-  return o
+  return a
 }
 
 function l(e) {
@@ -61,14 +61,14 @@ function l(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    enabled: o
-  } = a.useExperiment({
+    enabled: a
+  } = o.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
-  return o
+  return a
 }
 
 function c(e) {
@@ -79,14 +79,14 @@ function c(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    inExperiment: o
-  } = a.useExperiment({
+    inExperiment: a
+  } = o.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
-  return o
+  return a
 }
 
 function u(e) {
@@ -97,12 +97,12 @@ function u(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    inExperiment: o
-  } = a.getCurrentConfig({
+    inExperiment: a
+  } = o.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
-  return o
+  return a
 }

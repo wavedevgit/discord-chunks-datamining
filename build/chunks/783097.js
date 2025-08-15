@@ -5,20 +5,20 @@ require.d(exports, {
   $d: () => D,
   BQ: () => w,
   Cb: () => F,
-  Hu: () => V,
+  Hu: () => Z,
   L1: () => z,
   Ow: () => K,
   PZ: () => q,
-  WA: () => k,
+  WA: () => j,
   Wx: () => P,
   XZ: () => Y,
   Y$: () => B,
   Yn: () => H,
   dF: () => U,
   jD: () => L,
-  lf: () => j,
+  lf: () => k,
   pF: () => W,
-  sl: () => Z,
+  sl: () => V,
   vJ: () => M,
   yJ: () => G,
   ye: () => x
@@ -88,8 +88,8 @@ function C(e, t) {
   if (null == e) return {};
   var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -97,8 +97,8 @@ function C(e, t) {
 function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let P = {
@@ -127,27 +127,27 @@ function M(e) {
   return w(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.PARTNER)
 }
 
-function j(e) {
+function k(e) {
   var t;
   return w(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.PROMOTED)
 }
 
-function k(e) {
+function j(e) {
   let t = G(e),
     n = null == t ? true : t.client_platform_config[(0, s.Z)((0, g.getOS)())],
     r = Date.now();
   if ((null == n ? true : n.label_until) != null && r < Date.parse(n.label_until) && (null == n ? true : n.label_from) != null && r > Date.parse(n.label_from)) {
     var i;
-    return null != (i = null == n ? true : n.label_type) ? i : a.ww.NONE
+    return null != (i = null == n ? true : n.label_type) ? i : o.ww.NONE
   }
-  return a.ww.NONE
+  return o.ww.NONE
 }
 
 function U(e) {
-  switch (k(e)) {
-    case a.ww.NEW:
+  switch (j(e)) {
+    case o.ww.NEW:
       return "New";
-    case a.ww.UPDATED:
+    case o.ww.UPDATED:
       return "Updated";
     default:
       return ""
@@ -163,7 +163,7 @@ function B(e) {
     command: t,
     optionValues: n,
     context: r,
-    commandTargetId: a,
+    commandTargetId: o,
     maxSizeCallback: s,
     sectionName: l,
     commandOrigin: u = c.bB.APPLICATION_LAUNCHER
@@ -175,7 +175,7 @@ function B(e) {
         command: t,
         optionValues: n,
         context: r,
-        commandTargetId: a,
+        commandTargetId: o,
         maxSizeCallback: s,
         commandOrigin: u,
         sectionName: l,
@@ -184,7 +184,7 @@ function B(e) {
       if (t.inputType === c.iw.BUILT_IN_TEXT && null != i && null != r.channel) {
         var e;
         let t = _.ZP.parse(f, i.content);
-        t.tts = null != (e = i.tts) && e, o.Z.sendMessage(r.channel.id, t, true, {
+        t.tts = null != (e = i.tts) && e, a.Z.sendMessage(r.channel.id, t, true, {
           location: v.dy.APP_COMMAND
         })
       }
@@ -200,7 +200,7 @@ function B(e) {
   return p()
 }
 
-function Z(e) {
+function V(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     {
       fakeAppIconURL: n
@@ -224,7 +224,7 @@ function F(e) {
   return !!w(e) && (e instanceof p.ZP ? e.isMonetized : e.is_monetized)
 }
 
-function V(e) {
+function Z(e) {
   let t = G(e);
   return null != t && t.displays_advertisements
 }

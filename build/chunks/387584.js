@@ -3,16 +3,16 @@
 "use strict";
 var Chunk166691 = require("./166691.js"),
   i = Chunk166691("Date.prototype.getDay"),
-  o = function(e) {
+  a = function(e) {
     try {
       return i(e), true
     } catch (e) {
       returnfalse
     }
   },
-  a = Chunk166691("Object.prototype.toString"),
+  o = Chunk166691("Object.prototype.toString"),
   s = "[object Date]",
   l = require("./195653.js")();
 module.exports = function(e) {
-  return "object" == typeof e && null !== e && (l ? o(e) : a(e) === s)
+  return "object" == typeof e && null !== e && (l ? a(e) : o(e) === s)
 }

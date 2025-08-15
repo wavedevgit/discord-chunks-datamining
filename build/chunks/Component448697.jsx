@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 448697, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 448697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  R: () => h
+  R: () => m
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -16,41 +15,39 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk48528 = require("./48528.js");
 
-function p() {
-  let e = (0, Chunk442837.cj)([Chunk709706.Z], () => Chunk709706.Z.getOngoingDownloads()),
-    t = Chunk73800.useRef({});
-  Chunk73800.useEffect(() => {
-    0 === Object.entries(module).length && (exports.current = {}), Object.assign(exports.current, module)
-  }, [module]);
-  let n = Object.values(exports.current),
-    r = require.some(e => {
-      let {
-        downloadedBytes: t
-      } = e;
-      return (null != t ? t : 0) > 0
-    }),
-    a = (0, Chunk392711.sumBy)(require, e => {
-      var t;
-      return null != (t = null == e ? true : e.downloadedBytes) ? t : 0
-    }),
-    l = (0, Chunk392711.sumBy)(require, e => {
-      var t;
-      return null != (t = null == e ? true : e.totalBytes) ? t : 0
-    });
-  return {
-    hasActiveDownloads: Chunk255367,
-    progress: 0 === Chunk481060 ? 0 : Math.floor(Chunk717976 / Chunk481060 * 100)
-  }
-}
-
-function h() {
+function m() {
   let {
     hasActiveDownloads: e,
     progress: t
-  } = p(), {
+  } = function() {
+    let e = (0, Chunk442837.cj)([Chunk709706.Z], () => Chunk709706.Z.getOngoingDownloads()),
+      t = Chunk73800.useRef({});
+    Chunk73800.useEffect(() => {
+      0 === Object.entries(module).length && (exports.current = {}), Object.assign(exports.current, module)
+    }, [module]);
+    let n = Object.values(exports.current),
+      r = require.some(e => {
+        let {
+          downloadedBytes: t
+        } = e;
+        return (null != t ? t : 0) > 0
+      }),
+      a = (0, Chunk392711.sumBy)(require, e => {
+        var t;
+        return null != (t = null == e ? true : e.downloadedBytes) ? t : 0
+      }),
+      s = (0, Chunk392711.sumBy)(require, e => {
+        var t;
+        return null != (t = null == e ? true : e.totalBytes) ? t : 0
+      });
+    return {
+      hasActiveDownloads: Chunk255367,
+      progress: 0 === Chunk481060 ? 0 : Math.floor(Chunk717976 / Chunk481060 * 100)
+    }
+  }(), {
     activeVoice: n
-  } = (0, Chunk378441.o)(), i = null != require, o = module ? Chunk73800 ? "voice-on" : "voice-off" : null;
-  return (0, Chunk481060.Yzy)(Chunk392711, {
+  } = (0, Chunk378441.o)();
+  return (0, Chunk481060.Yzy)(module ? null != require ? "voice-on" : "voice-off" : null, {
     from: {
       opacity: 0,
       translateY: 20
@@ -65,26 +62,26 @@ function h() {
     }
   }, "respect-motion-settings")((e, n) => null != n ? (0, r.jsx)(a.animated.div, {
     style: e,
-    className: _.floaterWrapper,
+    className: p.floaterWrapper,
     children: (0, r.jsxs)("div", {
-      className: _.visibleFloater,
+      className: p.visibleFloater,
       children: [(0, r.jsxs)("div", {
-        className: _.progressText,
-        children: [(0, r.jsx)(l.Text, {
+        className: p.progressText,
+        children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "text-primary",
           children: f.intl.format(f.t["r+uZYW"], {
             progress: t
           })
-        }), (0, r.jsx)(l.Avr, {
+        }), (0, r.jsx)(s.Avr, {
           text: f.intl.string(f.t["ETE/oK"]),
           onClick: d.ge,
           variant: "always-white",
           textVariant: "text-sm/normal"
         })]
-      }), (0, r.jsx)(l.Exd, {
+      }), (0, r.jsx)(s.Exd, {
         percent: t,
-        size: l.Exd.Sizes.XSMALL
+        size: s.Exd.Sizes.XSMALL
       })]
     })
   }) : null)

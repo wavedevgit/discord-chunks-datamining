@@ -1,4 +1,4 @@
-/** Chunk was on 16459 **/
+/** Chunk was on 1268 **/
 /** chunk id: 900927, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -35,7 +35,7 @@ function b(e) {
   return e
 }
 
-function m(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,47 +54,47 @@ function j(e) {
     guildId: r,
     textClassName: j,
     tooltipDelay: v
-  } = e, O = (0, i.e7)([o.default], () => o.default.locale), y = (0, i.e7)([u.Z], () => null != r ? u.Z.getGuild(r) : null), g = (0, i.e7)([c.ZP], () => null != r ? c.ZP.getMember(r, t) : null), x = (0, l.FI)(d.default.extractTimestamp(t), O), h = (0, l.FI)(null == g ? true : g.joinedAt, O);
-  return null == y || null == g ? (0, n.jsx)(a.Text, {
+  } = e, x = (0, i.e7)([s.default], () => s.default.locale), y = (0, i.e7)([u.Z], () => null != r ? u.Z.getGuild(r) : null), O = (0, i.e7)([c.ZP], () => null != r ? c.ZP.getMember(r, t) : null), h = (0, l.FI)(d.default.extractTimestamp(t), x), g = (0, l.FI)(null == O ? true : O.joinedAt, x);
+  return null == y || null == O ? (0, n.jsx)(a.Text, {
     variant: "text-sm/normal",
     className: j,
-    children: x
+    children: h
   }) : (0, n.jsxs)("div", {
-    className: f.memberSinceWrapper,
+    className: p.memberSinceWrapper,
     children: [(0, n.jsxs)("div", {
-      className: f.memberSince,
+      className: p.memberSince,
       children: [(0, n.jsx)(a.ua7, {
-        text: p.intl.string(p.t.uvGmCw),
+        text: m.intl.string(m.t.uvGmCw),
         delay: v,
-        children: e => (0, n.jsx)(a.gw7, m(b({
+        children: e => (0, n.jsx)(a.gw7, f(b({
           size: "custom",
           width: 28,
           height: 28,
           color: "currentColor"
         }, e), {
-          className: f.discordIcon
-        }))
-      }), (0, n.jsx)(a.Text, {
-        variant: "text-sm/normal",
-        className: j,
-        children: x
-      })]
-    }), (0, n.jsx)("div", {
-      className: f.divider
-    }), (0, n.jsxs)("div", {
-      className: f.memberSince,
-      children: [(0, n.jsx)(a.ua7, {
-        text: y.name,
-        delay: v,
-        children: e => (0, n.jsx)(s.Z, m(b({}, e), {
-          guild: y,
-          size: s.Z.Sizes.SMOL,
-          className: f.guildIcon
+          className: p.discordIcon
         }))
       }), (0, n.jsx)(a.Text, {
         variant: "text-sm/normal",
         className: j,
         children: h
+      })]
+    }), (0, n.jsx)("div", {
+      className: p.divider
+    }), (0, n.jsxs)("div", {
+      className: p.memberSince,
+      children: [(0, n.jsx)(a.ua7, {
+        text: y.name,
+        delay: v,
+        children: e => (0, n.jsx)(o.Z, f(b({}, e), {
+          guild: y,
+          size: o.Z.Sizes.SMOL,
+          className: p.guildIcon
+        }))
+      }), (0, n.jsx)(a.Text, {
+        variant: "text-sm/normal",
+        className: j,
+        children: g
       })]
     })]
   })

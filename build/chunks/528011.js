@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 528011, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 31253 **/
+/** chunk id: 528011, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  g: () => g,
-  mI: () => m
+  g: () => O,
+  mI: () => T
 }), require("./388685.js");
 var Chunk149765 = require("./149765.js"),
   Chunk399606 = require("./399606.js"),
@@ -18,45 +17,43 @@ var Chunk149765 = require("./149765.js"),
   Chunk487419 = require("./487419.js"),
   Chunk676770 = require("./676770.js");
 
-function h(e) {
-  let t = c.default.getCurrentUser(),
-    n = _.Z.getIncidentsByGuild();
-  for (let i of d.default.keys(n).map(e => a.Z.getGuild(e))) {
-    if (null == i) continue;
-    let o = n[i.id];
-    if (!(null == o || !(0, f.i9)(o) && !(0, f.ur)(o) || (0, f.ur)(o) && i.id !== e) && r.Db(u.uB({
-        user: t,
-        context: i,
-        checkElevated: false
-      }), p.cv)) return i.id
-  }
-  return null
-}
-
-function m(e) {
-  let t = (0, i.e7)([a.Z, s.Z], () => {
-      let t = a.Z.getGuild(e);
+function T(e) {
+  let t = (0, i.e7)([o.Z, a.Z], () => {
+      let t = o.Z.getGuild(e);
       if (null == t) returnfalse;
-      let n = s.Z.getGuildPermissions(t);
-      return null != n && r.Db(n, p.cv)
+      let n = a.Z.getGuildPermissions(t);
+      return null != n && r.Db(n, I.cv)
     }),
-    n = (0, i.e7)([_.Z], () => null != e ? _.Z.getGuildIncident(e) : null),
-    o = null != n && (0, f.ur)(n);
+    n = (0, i.e7)([E.Z], () => null != e ? E.Z.getGuildIncident(e) : null),
+    l = null != n && (0, d.ur)(n);
   return {
     shouldShowIncidentActions: t,
     incidentData: n,
-    isUnderLockdown: o
+    isUnderLockdown: l
   }
 }
 
-function g() {
+function O() {
   var e;
-  let t = h(Chunk914010.Z.getGuildId()),
+  let t = function(e) {
+      let t = s.default.getCurrentUser(),
+        n = E.Z.getIncidentsByGuild();
+      for (let i of _.default.keys(n).map(e => o.Z.getGuild(e))) {
+        if (null == i) continue;
+        let l = n[i.id];
+        if (!(null == l || !(0, d.i9)(l) && !(0, d.ur)(l) || (0, d.ur)(l) && i.id !== e) && r.Db(u.uB({
+            user: t,
+            context: i,
+            checkElevated: false
+          }), I.cv)) return i.id
+      }
+      return null
+    }(Chunk914010.Z.getGuildId()),
     n = null != (e = Chunk581883.Z.getGuildsProto()) ? module : {},
-    r = null != exports ? require[exports] : null,
-    i = null != Chunk149765 && Chunk149765.disableRaidAlertNag;
+    i = null != exports ? require[exports] : null,
+    a = null != Chunk399606 && Chunk399606.disableRaidAlertNag;
   return {
-    show: null != exports && !Chunk399606,
+    show: null != exports && !Chunk496675,
     guildId: exports
   }
 }

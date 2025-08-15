@@ -14,7 +14,7 @@ require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk913527 = require("./913527.js"),
-  a = require.n(Chunk913527),
+  o = require.n(Chunk913527),
   Chunk866442 = require("./866442.js"),
   Chunk630388 = require("./630388.js"),
   Chunk709054 = require("./709054.js"),
@@ -48,8 +48,8 @@ function O(e) {
     proxy_url: n,
     width: r,
     height: i,
-    placeholder: o,
-    placeholder_version: a,
+    placeholder: a,
+    placeholder_version: o,
     description: s,
     flags: c,
     content_type: d
@@ -59,8 +59,8 @@ function O(e) {
     proxyURL: n,
     width: r,
     height: i,
-    placeholder: o,
-    placeholderVersion: a,
+    placeholder: a,
+    placeholderVersion: o,
     description: s,
     srcIsAnimated: (0, l.yE)(null != c ? c : 0, u.FoC.IS_ANIMATED),
     flags: null != c ? c : 0,
@@ -91,7 +91,7 @@ function v(e, t, n) {
     }), null != n.provider && null != n.provider.name && (r.provider = {
       name: n.provider.name,
       url: n.provider.url
-    }), null != n.timestamp && (r.timestamp = a()(new Date(n.timestamp))), null != n.color && (r.color = (0, s.ho)(n.color, true)), null != n.thumbnail && b(n.thumbnail)) switch (r.type) {
+    }), null != n.timestamp && (r.timestamp = o()(new Date(n.timestamp))), null != n.color && (r.color = (0, s.ho)(n.color, true)), null != n.thumbnail && b(n.thumbnail)) switch (r.type) {
     case u.hBH.ARTICLE:
     case u.hBH.IMAGE:
       r.image = O(n.thumbnail);
@@ -106,8 +106,8 @@ function v(e, t, n) {
         format: "webp"
       })
     }), null != r.thumbnail && b(n.video) && y(t, n.provider, n.video) && (r.video = O(n.video))), d.k.has(r.type)) {
-    var o;
-    r.fields = (null != (o = n.fields) ? o : []).map(e => {
+    var a;
+    r.fields = (null != (a = n.fields) ? a : []).map(e => {
       let {
         name: t,
         value: n,
@@ -150,9 +150,9 @@ function S(e) {
     video: n,
     type: r,
     author: i,
-    rawTitle: o
+    rawTitle: a
   } = e;
-  return (null != t || null != n) && (r === u.hBH.GIFV || r !== u.hBH.RICH && null == i && null == o)
+  return (null != t || null != n) && (r === u.hBH.GIFV || r !== u.hBH.RICH && null == i && null == a)
 }
 
 function A(e) {

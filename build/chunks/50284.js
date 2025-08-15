@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 50284, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 31253 **/
+/** chunk id: 50284, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => I
 }), require("./642613.js"), require("./583741.js");
 var Chunk544891 = require("./544891.js"),
   Chunk710845 = require("./710845.js"),
@@ -14,26 +13,26 @@ var Chunk544891 = require("./544891.js"),
   Chunk594174 = require("./594174.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js");
-let _ = new Chunk710845.Z("markUnread");
-async function p(e, t) {
+let E = new Chunk710845.Z("markUnread");
+async function I(e, t) {
   let n = u.default.getCurrentUser();
   if (null == n) return;
-  let i = l.Z.getMessages(e),
-    p = i.toArray().filter(e => 0 > d.default.compare(e.id, t)).sort((e, t) => d.default.compare(e.id, t.id)).reverse()[0],
-    h = null == p ? d.default.atPreviousMillisecond(t) : p.id,
-    m = 0;
+  let i = c.Z.getMessages(e),
+    I = i.toArray().filter(e => 0 > _.default.compare(e.id, t)).sort((e, t) => _.default.compare(e.id, t.id)).reverse()[0],
+    T = null == I ? _.default.atPreviousMillisecond(t) : I.id,
+    O = 0;
   i.forAll(e => {
-    d.default.compare(e.id, h) > 0 && (0, c.Ex)(e, n) && m++
+    _.default.compare(e.id, T) > 0 && (0, s.Ex)(e, n) && O++
   });
-  let g = s.Z.getChannel(e);
-  null != g && g.isThread() && (g.isArchivedThread() && await a.Z.unarchiveThread(g, false), o.Z.hasJoined(e) || await a.Z.joinThread(g, "Mark Unread")), _.log("Marking unread", {
+  let N = a.Z.getChannel(e);
+  null != N && N.isThread() && (N.isArchivedThread() && await o.Z.unarchiveThread(N, false), l.Z.hasJoined(e) || await o.Z.joinThread(N, "Mark Unread")), E.log("Marking unread", {
     channelId: e,
     messageId: t
   }), r.tn.post({
-    url: f.ANM.MESSAGE_ACK(e, h),
+    url: d.ANM.MESSAGE_ACK(e, T),
     body: {
       manual: true,
-      mention_count: m
+      mention_count: O
     },
     oldFormErrors: true,
     rejectWithError: true

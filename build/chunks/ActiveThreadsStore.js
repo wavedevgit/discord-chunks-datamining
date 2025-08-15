@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => D
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk131704 = require("./131704.js"),
@@ -84,7 +84,7 @@ function v(e) {
   let {
     channels: t
   } = e;
-  h = {}, o()(t).filter(e => l.Ec.has(e.type)).groupBy("guild_id").forEach((e, t) => {
+  h = {}, a()(t).filter(e => l.Ec.has(e.type)).groupBy("guild_id").forEach((e, t) => {
     h[t] = {}, e.forEach(e => y(t, e))
   })
 }
@@ -139,7 +139,7 @@ function N(e) {
   if (null == t || null == n || !(t in h) || !(n in h[t]) || !(r in h[t][n])) returnfalse;
   h[t] = p(f({}, h[t]), {
     [n]: f({}, h[t][n])
-  }), delete h[t][n][r], o().isEmpty(h[t][n]) && delete h[t][n]
+  }), delete h[t][n][r], a().isEmpty(h[t][n]) && delete h[t][n]
 }
 
 function C(e) {
@@ -173,7 +173,7 @@ class w extends(r = Chunk442837.ZP.Store) {
     return null != (n = this.getThreadsForGuild(e)[t]) ? n : P
   }
   hasThreadsForChannel(e, t) {
-    return !o().isEmpty(this.getThreadsForParent(e, t))
+    return !a().isEmpty(this.getThreadsForParent(e, t))
   }
   forEachGuild(e) {
     u.default.keys(h).forEach(t => {

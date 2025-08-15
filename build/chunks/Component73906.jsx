@@ -13,7 +13,7 @@ let s = function(e) {
     match: t,
     location: n
   } = e, s = async (e, t) => {
-    await (0, i.s)(o.jE.CHANNEL, {
+    await (0, i.s)(a.jE.CHANNEL, {
       guildId: e.params.guildId,
       channelId: e.params.channelId,
       messageId: e.params.messageId,

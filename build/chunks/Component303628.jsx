@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk536895 = require("./536895.js"),
   Chunk442837 = require("./442837.js"),
@@ -69,8 +69,8 @@ function C(e, t) {
   if (null == e) return {};
   var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -78,8 +78,8 @@ function C(e, t) {
 function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let P = [];
@@ -88,7 +88,7 @@ function w(e) {
   let {
     channelId: t,
     type: n,
-    ignoreFile: o,
+    ignoreFile: a,
     smallAttachments: T = false
   } = e, A = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled), R = (0, p.Z)("attachments", l.hy.HORIZONTAL), w = (0, c.e7)([m.Z], () => m.Z.getUploads(t, n.drafts.type)), {
     isApplicationCommand: D,
@@ -113,7 +113,7 @@ function w(e) {
       var t;
       return e.type === f.jw.ATTACHMENT && (null == x || null == (t = x[e.name]) ? true : t.hasValue)
     })) ? e : []
-  }, [L, x]), [j, k] = i.useState([]);
+  }, [L, x]), [k, j] = i.useState([]);
   i.useEffect(() => {
     let e = () => {
       d.Z.clearAll(t, n.drafts.type)
@@ -129,7 +129,7 @@ function w(e) {
   });
   let G = {
       isApplicationCommand: D,
-      previousUploadOptions: j,
+      previousUploadOptions: k,
       uploadOptions: M
     },
     B = i.useRef(G);
@@ -147,26 +147,26 @@ function w(e) {
         i.some(e => t.name === e.name) || e.push(t)
       }), e.forEach(e => {
         d.Z.remove(t, e.name, n.drafts.type)
-      }), k(i)
+      }), j(i)
     }
   }, [t, M.length, n]);
-  let Z = w.filter(e => e.filename !== o);
-  return !D && 0 === Z.length || D && 0 === M.length ? null : (0, r.jsx)(s.bG, {
+  let V = w.filter(e => e.filename !== a);
+  return !D && 0 === V.length || D && 0 === M.length ? null : (0, r.jsx)(s.bG, {
     navigator: R,
     children: (0, r.jsx)(s.SJ, {
       children: e => {
         var {
           ref: i
-        } = e, o = C(e, ["ref"]);
+        } = e, a = C(e, ["ref"]);
         return (0, r.jsx)("ul", N(S({
           ref: i
-        }, o), {
-          className: a()(v.channelAttachmentArea, I.scrollbarGhost),
+        }, a), {
+          className: o()(v.channelAttachmentArea, I.scrollbarGhost),
           children: D ? M.map(e => (0, r.jsx)(b.Z, {
             channelId: t,
             keyboardModeEnabled: A,
             option: e
-          }, e.name)) : Z.map(e => (0, r.jsx)(y.Z, {
+          }, e.name)) : V.map(e => (0, r.jsx)(y.Z, {
             channelId: t,
             draftType: n.drafts.type,
             upload: e,
@@ -185,14 +185,14 @@ function D(e) {
     channelId: t,
     type: n,
     canAttachFiles: i,
-    ignoreFile: o,
-    smallAttachments: a = false
+    ignoreFile: a,
+    smallAttachments: o = false
   } = e;
   return i ? (0, r.jsx)(w, {
     channelId: t,
     type: n,
-    ignoreFile: o,
-    smallAttachments: a
+    ignoreFile: a,
+    smallAttachments: o
   }) : null
 }
 let L = Chunk73800.memo(D)

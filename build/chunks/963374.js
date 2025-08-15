@@ -1,69 +1,69 @@
-/** Chunk was on 39810 **/
-/** chunk id: 963374, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 78079 **/
+/** chunk id: 963374, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
-  nC: () => g
+  nC: () => v
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
-  n = require.n(Chunk392711),
+  r = require.n(Chunk392711),
   Chunk697741 = require("./697741.js"),
   Chunk619864 = require("./619864.js"),
   Chunk193995 = require("./193995.js");
-let l = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
+let s = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
 
-function h(t) {
-  return t.replace(/('|\u2019|\uFF07)(s|S)$/, "")
+function o(A) {
+  return A.replace(/('|\u2019|\uFF07)(s|S)$/, "")
 }
 
-function d(t) {
-  return t.toLowerCase()
+function g(A) {
+  return A.toLowerCase()
 }
 
-function u(t) {
-  return l.has(t)
+function c(A) {
+  return s.has(A)
 }
 
-function c(t) {
-  return 0 === t.length
+function f(A) {
+  return 0 === A.length
 }
 
-function g(t) {
+function v(A) {
   let e = arguments.length > 1 && true !== arguments[1] && arguments[1],
-    i = t.length >= o.zV && t.length <= o.y_ && e,
-    s = new Set(function(t) {
-      let e = arguments.length > 1 && true !== arguments[1] ? arguments[1] : a.$;
-      return n()(t.split(/\W+/)).map(h).reject(c).map(d).reject(u).map(e).value()
-    }(t, i ? r.a : a.$));
-  return t => (function t(e, i, s) {
-    if (Array.isArray(e)) e.forEach(e => t(e, i, s));
-    else if ("list" === e.type) e.items.forEach(e => t(e, i, s));
+    t = A.length >= i.zV && A.length <= i.y_ && e,
+    n = new Set(function(A) {
+      let e = arguments.length > 1 && true !== arguments[1] ? arguments[1] : l.$;
+      return r()(A.split(/\W+/)).map(o).reject(f).map(g).reject(c).map(e).value()
+    }(A, t ? a.a : l.$));
+  return A => (function A(e, t, n) {
+    if (Array.isArray(e)) e.forEach(e => A(e, t, n));
+    else if ("list" === e.type) e.items.forEach(e => A(e, t, n));
     else if ("string" == typeof e.content && "codeBlock" !== e.type) {
-      let t = [],
-        n = "";
+      let A = [],
+        r = "";
       e.content.split(/(\W+)/g).forEach(e => {
-        ! function(t, e) {
-          let i = arguments.length > 2 && true !== arguments[2] && arguments[2];
-          if (c(t = d(h(t))) || u(t)) returnfalse;
-          if (i) {
-            for (let i of e.values())
-              if (t.includes(i)) returntrue;
+        ! function(A, e) {
+          let t = arguments.length > 2 && true !== arguments[2] && arguments[2];
+          if (f(A = g(o(A))) || c(A)) returnfalse;
+          if (t) {
+            for (let t of e.values())
+              if (A.includes(t)) returntrue;
             returnfalse
           }
-          return e.has((0, a.$)(t))
-        }(e, i, s) ? n += e: (n.length > 0 && t.push({
+          return e.has((0, l.$)(A))
+        }(e, t, n) ? r += e: (r.length > 0 && A.push({
           type: "text",
-          content: n
-        }), t.push({
+          content: r
+        }), A.push({
           type: "highlight",
           content: e
-        }), n = "")
-      }), t.length > 0 && (n.length > 0 && t.push({
+        }), r = "")
+      }), A.length > 0 && (r.length > 0 && A.push({
         type: "text",
-        content: n
-      }), "text" === e.type ? e.content = t : e.content = [{
+        content: r
+      }), "text" === e.type ? e.content = A : e.content = [{
         type: "text",
-        content: t
+        content: A
       }])
-    } else null != e.content && t(e.content, i, s);
+    } else null != e.content && A(e.content, t, n);
     return e
-  })(t, s, i)
+  })(A, n, t)
 }

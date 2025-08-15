@@ -74,7 +74,7 @@ function T(e) {
     if (null == n);
     else if (null != b[n]) return b[n];
     else if (null != T[n]) return T[n]
-  }, [b, T, n]), N = l.default.getId(), C = (0, h.a)(S, N), R = i.useMemo(() => null == C || null == S ? null : S.system === f.I.LEGACY ? d.Z.getExperimentBucketName(C.bucket) : S.system === f.I.APEX ? "Variant ".concat(C.variantId) : null, [C, S]), P = (0, o.e7)([c.default], () => {
+  }, [b, T, n]), N = l.default.getId(), C = (0, h.a)(S, N), R = i.useMemo(() => null == C || null == S ? null : S.system === f.I.LEGACY ? d.Z.getExperimentBucketName(C.bucket) : S.system === f.I.APEX ? "Variant ".concat(C.variantId) : null, [C, S]), P = (0, a.e7)([c.default], () => {
     let e = c.default.getCurrentUser();
     return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
   });
@@ -88,12 +88,12 @@ function T(e) {
     M = (0, r.jsx)(I, {
       url: t
     }),
-    j = null;
-  return (1 === D && null != w ? j = (0, r.jsx)(s.Text, {
+    k = null;
+  return (1 === D && null != w ? k = (0, r.jsx)(s.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     children: w.label
-  }) : null != C && (j = (0, r.jsxs)(s.Text, {
+  }) : null != C && (k = (0, r.jsxs)(s.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     children: ["Server Config: ", R]
@@ -114,7 +114,7 @@ function T(e) {
             children: [(0, r.jsx)(s.Text, {
               variant: "text-md/semibold",
               children: S.title
-            }), j]
+            }), k]
           }), M]
         })
       })
@@ -128,10 +128,10 @@ function T(e) {
         align: "center",
         gap: 4,
         justify: "end",
-        children: (0, r.jsx)(a.zx, {
+        children: (0, r.jsx)(o.zx, {
           fullWidth: true,
           onClick: x,
-          color: L ? a.zx.Colors.RED : a.zx.Colors.BRAND,
+          color: L ? o.zx.Colors.RED : o.zx.Colors.BRAND,
           children: L ? "Clear Treatment ".concat(w.value) : "Apply Treatment ".concat(w.value)
         })
       }) : (0, r.jsx)("div", {

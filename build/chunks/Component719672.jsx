@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 719672, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => f
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -38,7 +38,7 @@ let p = e => {
       return "".concat(t, " ").concat(s.z[a])
     }
   }],
-  f = [{
+  v = [{
     key: "candidates",
     render(e) {
       let {
@@ -48,12 +48,12 @@ let p = e => {
     }
   }];
 
-function v() {
+function f() {
   let e = (0, Chunk442837.e7)([Chunk713284.Z], () => Chunk713284.Z.getDCFEvents()),
     t = (0, Chunk211644.ZP)(e => e.candidates),
     a = (0, Chunk211644.ZP)(e => e.lastWinnerTime),
     r = 0 !== require ? l()(require).fromNow() : "n/a",
-    v = (0, Chunk211644.ZP)(e => e.recentlyShown[0]),
+    f = (0, Chunk211644.ZP)(e => e.recentlyShown[0]),
     j = module.map(e => {
       let {
         eventType: t,
@@ -103,12 +103,12 @@ function v() {
       children: ["Last winner time: ", Chunk913527]
     }), (0, Chunk255367.jsx)("br", {}), (0, Chunk255367.jsxs)("div", {
       className: Chunk882754.info,
-      children: ["Last winner: ", null != v ? Chunk704215.z[v] : "None"]
+      children: ["Last winner: ", null != f ? Chunk704215.z[f] : "None"]
     }), (0, Chunk255367.jsx)("br", {}), (0, Chunk255367.jsx)("div", {
       className: Chunk882754.candidatesTableContainer,
       children: (0, Chunk255367.jsx)(Chunk681619.Z, {
         className: Chunk882754.candidatesTable,
-        columns: f,
+        columns: v,
         data: g
       })
     }), (0, Chunk255367.jsx)("br", {}), (0, Chunk255367.jsx)(Chunk681619.Z, {

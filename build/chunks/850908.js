@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 850908, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 43694 **/
+/** chunk id: 850908, original params: e,t,a (module,exports,require) **/
+require.d(exports, {
+  Z: () => o
+});
 
-function r(e) {
+function o(e) {
   if (null != e.title && null != e.filename) {
     let t = e.filename.lastIndexOf("."),
-      n = t > 0 ? e.filename.substr(t) : "";
-    return e.title + n
+      a = t > 0 ? e.filename.substr(t) : "";
+    return e.title + a
   }
   return e.filename
 }
-require.d(exports, {
-  Z: () => r
-})

@@ -1,4 +1,4 @@
-/** Chunk was on 7384 **/
+/** Chunk was on 30202 **/
 /** chunk id: 620163, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   i: () => e7
@@ -1029,7 +1029,7 @@ let e3 = () => {
         section: eK.oAB.VOICE,
         searchableTitles: [eJ.intl.string(eJ.t["8/udY2"])],
         parent: eW.s6.VOICE_AND_VIDEO_VIDEO_TAB,
-        predicate: () => tp
+        predicate: () => tp && !(0, $.isWeb)()
       },
       [eW.s6.VOICE_AND_VIDEO_VOICE_ADVANCED]: {
         section: eK.oAB.VOICE,

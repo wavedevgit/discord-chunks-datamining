@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 974042, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => V
+  ZP: () => B
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
@@ -235,7 +235,7 @@ class G extends(r = Chunk442837.ZP.Store) {
   }
 }
 v(G, "displayName", "FriendsStore");
-let V = new G(Chunk570140.Z, {
+let B = new G(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
     k()
   },

@@ -1,40 +1,33 @@
-/** Chunk was on web.js **/
-/** chunk id: 947268, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 947268, original params: t,e,r (module,exports,require) **/
 "use strict";
-var Chunk567701 = require("./567701.js"),
-  i = "Unknown",
-  o = {
-    "Mac OS": "Mac OS X"
-  };
-
-function a(e) {
-  return o[e] || e
-}
-
-function s(e) {
-  if (!e) return {
-    major: "",
-    minor: ""
-  };
-  var t = e.split(".");
-  return {
-    major: t[0],
-    minor: t[1]
-  }
-}
-var l = new Chunk567701().getResult(),
-  c = s(l.browser.version);
+var n, Chunk567701 = require("./567701.js"),
+  o = "Unknown",
+  a = new Chunk567701().getResult(),
+  u = function(t) {
+    if (!t) return {
+      major: "",
+      minor: ""
+    };
+    var e = t.split(".");
+    return {
+      major: e[0],
+      minor: e[1]
+    }
+  }(a.browser.version);
 module.exports = {
-  browserArchitecture: l.cpu.architecture || i,
-  browserFullVersion: l.browser.version || i,
-  browserMinorVersion: c.minor || i,
-  browserName: l.browser.name || i,
-  browserVersion: l.browser.major || i,
-  deviceName: l.device.model || i,
-  engineName: l.engine.name || i,
-  engineVersion: l.engine.version || i,
-  platformArchitecture: l.cpu.architecture || i,
-  platformName: a(l.os.name) || i,
-  platformVersion: l.os.version || i,
-  platformFullVersion: l.os.version || i
+  browserArchitecture: a.cpu.architecture || o,
+  browserFullVersion: a.browser.version || o,
+  browserMinorVersion: u.minor || o,
+  browserName: a.browser.name || o,
+  browserVersion: a.browser.major || o,
+  deviceName: a.device.model || o,
+  engineName: a.engine.name || o,
+  engineVersion: a.engine.version || o,
+  platformArchitecture: a.cpu.architecture || o,
+  platformName: ({
+    "Mac OS": "Mac OS X"
+  })[n = a.os.name] || n || o,
+  platformVersion: a.os.version || o,
+  platformFullVersion: a.os.version || o
 }

@@ -9,10 +9,10 @@ module.exports = function(e) {
       built_in: t,
       literal: r
     },
-    o = e.inherit(e.TITLE_MODE, {
+    a = e.inherit(e.TITLE_MODE, {
       begin: "[a-zA-Z](\\.?\\w)*"
     }),
-    a = {
+    o = {
       className: "number",
       variants: [{
         begin: "\\b(0b[01']+)"
@@ -81,7 +81,7 @@ module.exports = function(e) {
         begin: '""'
       }, d]
     });
-  u.contains = [_, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, a, e.C_BLOCK_COMMENT_MODE], d.contains = [p, f, c, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, a, e.inherit(e.C_BLOCK_COMMENT_MODE, {
+  u.contains = [_, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, o, e.C_BLOCK_COMMENT_MODE], d.contains = [p, f, c, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, o, e.inherit(e.C_BLOCK_COMMENT_MODE, {
     illegal: /\n/
   })];
   let h = {
@@ -92,7 +92,7 @@ module.exports = function(e) {
       end: ">",
       contains: [{
         beginKeywords: "in out"
-      }, o]
+      }, a]
     },
     g = e.IDENT_RE + "(<" + e.IDENT_RE + "(\\s*,\\s*" + e.IDENT_RE + ")*>)?(\\[\\])?",
     E = {
@@ -125,26 +125,26 @@ module.exports = function(e) {
       keywords: {
         keyword: "if else elif endif define undef warning error line region endregion pragma checksum"
       }
-    }, h, a, {
+    }, h, o, {
       beginKeywords: "class interface",
       relevance: 0,
       end: /[{;=]/,
       illegal: /[^\s:,]/,
       contains: [{
         beginKeywords: "where class"
-      }, o, m, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
+      }, a, m, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
     }, {
       beginKeywords: "namespace",
       relevance: 0,
       end: /[{;=]/,
       illegal: /[^\s:]/,
-      contains: [o, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
+      contains: [a, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
     }, {
       beginKeywords: "record",
       relevance: 0,
       end: /[{;=]/,
       illegal: /[^\s:]/,
-      contains: [o, m, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
+      contains: [a, m, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
     }, {
       className: "meta",
       begin: "^\\s*\\[(?=[\\w])",
@@ -184,7 +184,7 @@ module.exports = function(e) {
         excludeEnd: true,
         keywords: i,
         relevance: 0,
-        contains: [h, a, e.C_BLOCK_COMMENT_MODE]
+        contains: [h, o, e.C_BLOCK_COMMENT_MODE]
       }, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
     }, E]
   }

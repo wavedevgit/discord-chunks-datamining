@@ -12,6 +12,6 @@ var r = require("./112493.js").IteratorPrototype,
 module.exports = function(e, t, n, c) {
   var u = t + " Iterator";
   return e.prototype = i(r, {
-    next: o(+!c, n)
-  }), a(e, u, false, true), s[u] = l, e
+    next: a(+!c, n)
+  }), o(e, u, false, true), s[u] = l, e
 }

@@ -3,7 +3,7 @@
 "use strict";
 var Chunk46015 = require("./46015.js"),
   i = Chunk46015({}.toString),
-  o = Chunk46015("".slice);
+  a = Chunk46015("".slice);
 module.exports = function(e) {
-  return o(i(e), 8, false)
+  return a(i(e), 8, false)
 }

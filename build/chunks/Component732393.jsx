@@ -1,7 +1,7 @@
-/** Chunk was on 46154 **/
-/** chunk id: 732393, original params: t,n,e (module,exports,require) **/
+/** Chunk was on 86357 **/
+/** chunk id: 732393, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => b
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -18,58 +18,58 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk433307 = require("./433307.js");
 
-function Z(t) {
+function g(e) {
   let {
-    tag: n
-  } = t, {
-    name: e,
+    tag: t
+  } = e, {
+    name: n,
     emojiId: l,
-    emojiName: r
-  } = n, d = (0, a.e7)([s.ZP], () => null != l ? s.ZP.getUsableCustomEmojiById(l) : null);
-  return (0, i.jsxs)(i.Fragment, {
-    children: [null != r || null != l ? (0, i.jsx)(o.Z, {
-      className: g.emoji,
+    emojiName: a
+  } = t, c = (0, i.e7)([s.ZP], () => null != l ? s.ZP.getUsableCustomEmojiById(l) : null);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [null != a || null != l ? (0, r.jsx)(o.Z, {
+      className: m.emoji,
       emojiId: l,
-      emojiName: r,
-      animated: !!(null == d ? true : d.animated)
-    }) : null, e]
+      emojiName: a,
+      animated: !!(null == c ? true : c.animated)
+    }) : null, n]
   })
 }
 
-function p(t) {
-  let n = (0, a.e7)([f.Z], () => f.Z.getChannel(t), [t]),
-    e = (0, c.C7)(n),
-    o = (0, a.e7)([f.Z], () => f.Z.getChannel(null == n ? true : n.parent_id), [n]),
+function b(e) {
+  let t = (0, i.e7)([p.Z], () => p.Z.getChannel(e), [e]),
+    n = (0, d.C7)(t),
+    o = (0, i.e7)([p.Z], () => p.Z.getChannel(null == t ? true : t.parent_id), [t]),
     s = (0, u.Vm)(o),
-    g = (0, u.eV)(n),
-    p = g.length >= h.Cn,
-    b = (0, c.$R)(n);
-  if (null == n) return (0, r.Zy)(), null;
-  if (!e || __OVERLAY__ || !n.isForumPost() || (null == s ? true : s.length) === 0 || !b || n.isModeratorReportChannel()) return null;
-  let C = null == s ? true : s.map(t => {
-    let e = g.includes(t);
-    return (0, i.jsx)(l.S89, {
-      id: t.id,
-      label: (0, i.jsx)(Z, {
-        tag: t
+    m = (0, u.eV)(t),
+    b = m.length >= h.Cn,
+    y = (0, d.$R)(t);
+  if (null == t) return (0, a.Zy)(), null;
+  if (!n || __OVERLAY__ || !t.isForumPost() || (null == s ? true : s.length) === 0 || !y || t.isModeratorReportChannel()) return null;
+  let _ = null == s ? true : s.map(e => {
+    let n = m.includes(e);
+    return (0, r.jsx)(l.S89, {
+      id: e.id,
+      label: (0, r.jsx)(g, {
+        tag: e
       }),
-      disabled: p && !e,
-      action: () => (t => {
-        let e = new Set(g);
-        if (e.has(t)) e.delete(t);
+      disabled: b && !n,
+      action: () => (e => {
+        let n = new Set(m);
+        if (n.has(e)) n.delete(e);
         else {
-          if (p) return;
-          e.add(t)
+          if (b) return;
+          n.add(e)
         }
-        let i = Array.from(e).map(t => t.id);
-        d.Z.updateForumPostTags(n.id, i)
-      })(t),
-      checked: e
-    }, t.id)
+        let r = Array.from(n).map(e => e.id);
+        c.Z.updateForumPostTags(t.id, r)
+      })(e),
+      checked: n
+    }, e.id)
   });
-  return (0, i.jsx)(l.sNh, {
+  return (0, r.jsx)(l.sNh, {
     id: "edit-tags",
-    label: v.intl.string(v.t["436ZFx"]),
-    children: C
+    label: f.intl.string(f.t["436ZFx"]),
+    children: _
   })
 }

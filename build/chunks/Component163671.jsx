@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 163671, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -10,10 +10,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk646956 = require("./646956.js");
 
-function a(e) {
+function o(e) {
   var t, n, {
       children: i,
-      className: a
+      className: o
     } = e,
     c = function(e, t) {
       if (null == e) return {};
@@ -31,7 +31,7 @@ function a(e) {
       return i
     }(e, ["children", "className"]);
   let u = i();
-  return (0, r.jsx)(o.ZP, (t = function(e) {
+  return (0, r.jsx)(a.ZP, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -49,7 +49,7 @@ function a(e) {
     }
     return e
   }({}, c), n = n = {
-    className: l()(a, s.container),
+    className: l()(o, s.container),
     contentClassName: s.content,
     children: u.map((e, t) => (0, r.jsx)("div", {
       className: s.column,

@@ -1,4 +1,4 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 407908, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -22,18 +22,18 @@ function b(e) {
   var t, n;
   let {
     channel: b
-  } = e, y = i.useContext(h.AnalyticsContext), x = (0, a.Aq)(), j = g.intl.string(m.default["Beo/7u"]), {
-    firstMessage: _
-  } = (0, o.cl)(b), O = null == _ || null == (t = _.messageSnapshots) ? true : t[0], v = null == O || null == (n = O.moderatorReport) ? true : n.reported_user_id;
-  return b.isModeratorReportChannel() && null != v ? (0, r.jsx)(u.ZP.Icon, {
+  } = e, y = i.useContext(p.AnalyticsContext), _ = (0, a.Aq)(), C = m.intl.string(g.default["Beo/7u"]), {
+    firstMessage: x
+  } = (0, s.cl)(b), v = null == x || null == (t = x.messageSnapshots) ? true : t[0], j = null == v || null == (n = v.moderatorReport) ? true : n.reported_user_id;
+  return b.isModeratorReportChannel() && null != j ? (0, r.jsx)(u.ZP.Icon, {
     onClick: () => {
-      (0, d.Kh)(b.id), (0, s.i)(), (0, c.r)(b.guild_id, v, b.id, {
+      (0, d.Kh)(b.id), (0, o.i)(), (0, c.r)(b.guild_id, j, b.id, {
         modViewPanel: f.k.INFO,
         sourceLocation: null != location ? location : y.location
-      }), x.dispatch(p.CkL.POPOUT_CLOSE)
+      }), _.dispatch(h.CkL.POPOUT_CLOSE)
     },
-    tooltip: j,
+    tooltip: C,
     icon: l.HI3,
-    "aria-label": j
+    "aria-label": C
   }) : null
 }

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 544142, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 544142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => S
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -24,97 +23,90 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk149623 = require("./149623.js");
 
-function v(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function I(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function T(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function A(e) {
-  var t, o, f;
+function O(e) {
+  var t, l, p;
   let {
-    userId: E,
-    channel: b
-  } = e, y = i.useRef(null), {
-    analyticsLocations: v
-  } = (0, d.ZP)(u.Z.USERNAME), T = (0, s.e7)([m.default], () => m.default.getUser(E)), A = (0, s.e7)([h.ZP], () => null != E ? h.ZP.getMember(b.guild_id, E) : null), N = (0, _.X7)(b.guild_id, null != E ? E : true, null != (t = null == A ? true : A.colorStrings) ? t : null);
+    userId: y,
+    channel: _
+  } = e, C = i.useRef(null), {
+    analyticsLocations: O
+  } = (0, d.ZP)(u.Z.USERNAME), E = (0, o.e7)([g.default], () => g.default.getUser(y)), S = (0, o.e7)([m.ZP], () => null != y ? m.ZP.getMember(_.guild_id, y) : null), P = (0, h.X7)(_.guild_id, null != y ? y : true, null != (t = null == S ? true : S.colorStrings) ? t : null);
 
-  function C(e) {
-    if (null == T) return null;
+  function I(e) {
+    if (null == E) return null;
     (0, c.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("70675"), n.e("85994")]).then(n.bind(n, 654663));
-      return t => (0, r.jsx)(e, S(I({}, t), {
-        user: T,
-        guildId: b.guild_id,
-        channel: b
+      } = await Promise.all([n.e("79695"), n.e("70675")]).then(n.bind(n, 654663));
+      return t => (0, r.jsx)(e, j(v({}, t), {
+        user: E,
+        guildId: _.guild_id,
+        channel: _
       }))
     })
   }
-  let R = null != (f = null != (o = null == A ? true : A.nick) ? o : g.ZP.getName(T)) ? f : "???",
-    P = null == A ? true : A.colorString;
-  return null == T ? (0, r.jsx)("span", {
-    className: a()(O.threadCreatorName, O.unknownCreatorName),
-    children: R
+  let Z = null != (p = null != (l = null == S ? true : S.nick) ? l : b.ZP.getName(E)) ? p : "???",
+    T = null == S ? true : S.colorString;
+  return null == E ? (0, r.jsx)("span", {
+    className: a()(x.threadCreatorName, x.unknownCreatorName),
+    children: Z
   }) : (0, r.jsx)(d.Gt, {
-    value: v,
-    children: (0, r.jsx)(p.Z, {
-      targetElementRef: y,
-      user: T,
-      guildId: b.guild_id,
-      channelId: b.id,
-      roleId: null == A ? true : A.colorRoleId,
+    value: O,
+    children: (0, r.jsx)(f.Z, {
+      targetElementRef: C,
+      user: E,
+      guildId: _.guild_id,
+      channelId: _.id,
+      roleId: null == S ? true : S.colorRoleId,
       clickTrap: true,
-      children: e => (0, r.jsx)(l.P3F, S(I({}, e), {
-        innerRef: y,
+      children: e => (0, r.jsx)(s.P3F, j(v({}, e), {
+        innerRef: C,
         tag: "span",
-        className: O.threadCreatorName,
-        onContextMenu: C,
-        children: (0, r.jsx)(l.PUh, {
-          name: R,
-          colorString: null != P ? P : null,
-          colorStrings: N
+        className: x.threadCreatorName,
+        onContextMenu: I,
+        children: (0, r.jsx)(s.PUh, {
+          name: Z,
+          colorString: null != T ? T : null,
+          colorStrings: P
         })
       }))
     })
   })
 }
 
-function N(e) {
+function E(e) {
   let {
     channel: t
   } = e, {
@@ -125,41 +117,41 @@ function N(e) {
       marginTop: false
     }
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.Text, {
+    children: [(0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
       children: (0, r.jsx)("div", {
-        className: O.subtitle,
-        children: y.intl.format(y.t.imPXd3, {
-          usernameHook: (e, n) => (0, r.jsx)(A, {
+        className: x.subtitle,
+        children: C.intl.format(C.t.imPXd3, {
+          usernameHook: (e, n) => (0, r.jsx)(O, {
             userId: t.ownerId,
             channel: t
           }, n)
         })
       })
-    }), t.type === b.d4z.PRIVATE_THREAD ? (0, r.jsx)(l.Text, {
+    }), t.type === _.d4z.PRIVATE_THREAD ? (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: y.intl.string(y.t["1awbZG"])
+      children: C.intl.string(C.t["1awbZG"])
     }) : null]
   })
 }
 
-function C(e) {
+function S(e) {
   var t;
   let {
     channel: n
-  } = e, i = null != (t = (0, f.KS)(n)) ? t : l.or_;
-  return (0, r.jsxs)(E.ZP, {
+  } = e, i = null != (t = (0, p.KS)(n)) ? t : s.or_;
+  return (0, r.jsxs)(y.ZP, {
     channelId: n.id,
     children: [(0, r.jsx)("div", {
-      className: O.iconWrapper,
+      className: x.iconWrapper,
       children: (0, r.jsx)(i, {
-        className: O.icon
+        className: x.icon
       })
-    }), (0, r.jsx)(E.Ot, {
+    }), (0, r.jsx)(y.Ot, {
       children: n.name
-    }), (0, r.jsx)(N, {
+    }), (0, r.jsx)(E, {
       channel: n
     })]
   })

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,7 +23,7 @@ function m(e) {
   let {
     stream: t,
     width: n
-  } = e, i = (0, a.e7)([f.Z], () => f.Z.getChannel(t.channelId));
+  } = e, i = (0, o.e7)([f.Z], () => f.Z.getChannel(t.channelId));
 
   function m(e) {
     return e < 550 ? "small" : e < 1e3 ? "medium" : "large"
@@ -37,13 +37,13 @@ function m(e) {
     disableAdaptiveTheme: true,
     theme: _.BR.MIDNIGHT,
     children: e => (0, r.jsx)("div", {
-      className: o()(h.container, e),
+      className: a()(h.container, e),
       children: (0, r.jsxs)("div", {
         className: h.content,
         children: [(0, r.jsx)("div", {
-          className: o()(h.artContainer, h[b]),
+          className: a()(h.artContainer, h[b]),
           children: (0, r.jsx)("div", {
-            className: o()(h.art, h[b])
+            className: a()(h.art, h[b])
           })
         }), (0, r.jsxs)("div", {
           className: h.cta,

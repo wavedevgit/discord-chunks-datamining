@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk846519 = require("./846519.js"),
   Chunk186325 = require("./186325.js"),
   Chunk840954 = require("./840954.js");
@@ -33,7 +33,7 @@ function p(e) {
   let {
     position: t,
     type: n,
-    children: o
+    children: a
   } = e, {
     reducedMotion: d
   } = i.useContext(l.S), p = d.enabled ? 3 : n, [h, m] = i.useState(null != t), [g] = i.useState(() => new s.V7), [E, b] = i.useState(true), y = i.useRef(null);
@@ -48,11 +48,11 @@ function p(e) {
     null != t && g.start(10, () => m(true))
   }, [t, g]), (0, r.jsx)("div", {
     "data-popout-animating": E,
-    className: a()(null != t ? _[t] : null, {
+    className: o()(null != t ? _[t] : null, {
       [f[p]]: null != t,
       [c.didRender]: h
     }),
-    children: o
+    children: a
   })
 }
 p.Types = d

@@ -1,7 +1,7 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 400251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => R,
+  Z: () => A,
   m: () => T
 }), require("./388685.js"), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
@@ -29,7 +29,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk777261 = require("./777261.js"),
   Chunk883760 = require("./883760.js");
 
-function I(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function I(e) {
   return e
 }
 
-function Z(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,7 +61,7 @@ function Z(e, t) {
   }), e
 }
 
-function P(e, t) {
+function Z(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -90,7 +90,7 @@ let T = e => {
       variant: "text-sm/semibold",
       color: "header-primary",
       className: E.addServerText,
-      children: C.intl.string(C.t.H9jxS0)
+      children: O.intl.string(O.t.H9jxS0)
     })]
   })
 };
@@ -98,33 +98,33 @@ let T = e => {
 function N(e) {
   let {
     entry: t
-  } = e, [l, s] = i.useState(false), o = i.useRef(null), {
+  } = e, [l, o] = i.useState(false), s = i.useRef(null), {
     canEdit: u
-  } = (0, _.Z)(t);
+  } = (0, x.Z)(t);
   return (0, r.jsx)("div", {
     className: a()(E.actionButtonsContainer, {
       [E.forceButtonsShow]: l
     }),
-    children: (0, r.jsxs)(p.ZP, {
+    children: (0, r.jsxs)(h.ZP, {
       children: [u ? (0, r.jsx)(c.ua7, {
-        text: C.intl.string(C.t.XnuOvL),
+        text: O.intl.string(O.t.XnuOvL),
         hideOnClick: true,
         children: e => {
           var {
             onClick: i
-          } = e, l = P(e, ["onClick"]);
-          return (0, r.jsx)(p.zx, Z(I({}, l), {
+          } = e, l = Z(e, ["onClick"]);
+          return (0, r.jsx)(h.zx, I(P({}, l), {
             onClick: () => {
               null == i || i(), (0, c.ZDy)(async () => {
                 let {
                   default: e
                 } = await n.e("34191").then(n.bind(n, 303647));
-                return n => (0, r.jsx)(e, Z(I({}, n), {
+                return n => (0, r.jsx)(e, I(P({}, n), {
                   entry: t
                 }))
               })
             },
-            "aria-label": C.intl.string(C.t.XnuOvL),
+            "aria-label": O.intl.string(O.t.XnuOvL),
             children: (0, r.jsx)(c.vdY, {
               size: "xs",
               color: "currentColor",
@@ -132,29 +132,29 @@ function N(e) {
             })
           }))
         }
-      }) : null, (0, r.jsx)(O.Z, {
-        targetElementRef: o,
-        onRequestOpen: () => s(true),
-        onRequestClose: () => s(false),
+      }) : null, (0, r.jsx)(v.Z, {
+        targetElementRef: s,
+        onRequestOpen: () => o(true),
+        onRequestClose: () => o(false),
         entry: t,
         hideEditButton: true,
         children: e => {
           var {
             onClick: t
-          } = e, n = P(e, ["onClick"]);
+          } = e, n = Z(e, ["onClick"]);
           return (0, r.jsx)(c.ua7, {
-            text: C.intl.string(C.t.UKOtz8),
+            text: O.intl.string(O.t.UKOtz8),
             hideOnClick: true,
             children: e => {
               var {
                 onClick: i
-              } = e, l = P(e, ["onClick"]);
-              return (0, r.jsx)(p.zx, Z(I({}, n, l), {
-                ref: o,
+              } = e, l = Z(e, ["onClick"]);
+              return (0, r.jsx)(h.zx, I(P({}, n, l), {
+                ref: s,
                 onClick: e => {
                   null == i || i(), t(e)
                 },
-                "aria-label": C.intl.string(C.t.UKOtz8),
+                "aria-label": O.intl.string(O.t.UKOtz8),
                 children: (0, r.jsx)(c.xhG, {
                   size: "md",
                   color: "currentColor",
@@ -168,36 +168,36 @@ function N(e) {
     })
   })
 }
-let R = e => {
+let A = e => {
   var t;
   let {
     entry: l
-  } = e, [a, p] = i.useState(false), _ = null != (0, s.e7)([y.Z], () => y.Z.getGuild(l.guildId)), O = async () => {
-    p(true);
+  } = e, [a, h] = i.useState(false), x = null != (0, o.e7)([y.Z], () => y.Z.getGuild(l.guildId)), v = async () => {
+    h(true);
     try {
-      _ ? (0, b.X)(l.guildId) : await d.Z.joinGuild(l.guildId, {
-        source: v.vtS.DIRECTORY_ENTRY
+      x ? (0, b.X)(l.guildId) : await d.Z.joinGuild(l.guildId, {
+        source: j.vtS.DIRECTORY_ENTRY
       })
     } finally {
-      p(false)
+      h(false)
     }
-  }, S = x.ZP.getGuildSplashURL({
+  }, S = _.ZP.getGuildSplashURL({
     id: l.guildId,
     splash: l.splash,
-    size: 300 * (0, m.x_)()
-  }), P = null != (t = x.ZP.getGuildIconURL({
+    size: 300 * (0, g.x_)()
+  }), Z = null != (t = _.ZP.getGuildIconURL({
     id: l.guildId,
     icon: l.icon,
     size: 40
-  })) ? t : true, T = C.intl.string(C.t.VJlc0d);
-  return _ && (T = C.intl.string(C.t.cqWE2d)), (0, r.jsxs)("div", {
+  })) ? t : true, T = O.intl.string(O.t.VJlc0d);
+  return x && (T = O.intl.string(O.t.cqWE2d)), (0, r.jsxs)("div", {
     className: E.card,
     onContextMenu: e => {
       (0, u.jW)(e, async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 643560));
-        return t => (0, r.jsx)(e, Z(I({}, t), {
+        return t => (0, r.jsx)(e, I(P({}, t), {
           entry: l
         }))
       })
@@ -213,16 +213,16 @@ let R = e => {
         })
       }), (0, r.jsx)("div", {
         className: E.guildIcon,
-        children: (0, r.jsx)(h.ZP, {
-          mask: h.ZP.Masks.SQUIRCLE,
+        children: (0, r.jsx)(p.ZP, {
+          mask: p.ZP.Masks.SQUIRCLE,
           width: 48,
           height: 48,
           children: (0, r.jsx)("div", {
             className: E.iconMask,
             children: (0, r.jsx)(f.Z, {
               className: E.icon,
-              iconSrc: P,
-              guild: (0, j.e)(l),
+              iconSrc: Z,
+              guild: (0, C.e)(l),
               size: f.Z.Sizes.MEDIUM,
               active: true
             })
@@ -233,7 +233,7 @@ let R = e => {
       className: E.guildInfo,
       children: [(0, r.jsxs)("div", {
         className: E.title,
-        children: [(0, r.jsx)(g.Z, {
+        children: [(0, r.jsx)(m.Z, {
           className: E.guildBadge,
           guild: l,
           tooltipColor: c.ua7.Colors.PRIMARY
@@ -257,7 +257,7 @@ let R = e => {
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: C.intl.format(C.t["LC+S+v"], {
+            children: O.intl.format(O.t["LC+S+v"], {
               membersOnline: l.approximatePresenceCount
             })
           })]
@@ -268,16 +268,16 @@ let R = e => {
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: C.intl.format(C.t.zRl6XV, {
+            children: O.intl.format(O.t.zRl6XV, {
               count: l.approximateMemberCount
             })
           })]
         })]
-      }), (0, r.jsx)(o.zx, {
+      }), (0, r.jsx)(s.zx, {
         submitting: a,
         className: E.joinButton,
-        color: _ ? o.zx.Colors.PRIMARY : o.zx.Colors.GREEN,
-        onClick: O,
+        color: x ? s.zx.Colors.PRIMARY : s.zx.Colors.GREEN,
+        onClick: v,
         children: T
       })]
     }), (0, r.jsx)(N, {

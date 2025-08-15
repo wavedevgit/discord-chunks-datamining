@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 735959, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => v
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -18,11 +18,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk257785 = require("./257785.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function f() {
+function v() {
   let e = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
     [t, a] = Chunk73800.useState(),
     i = (0, Chunk125697.runtimeHashMessageKey)(null != exports ? exports : ""),
-    f = Chunk73800.useMemo(() => Chunk388032.t[Chunk913527], [Chunk913527]);
+    v = Chunk73800.useMemo(() => Chunk388032.t[Chunk913527], [Chunk913527]);
   return (0, Chunk255367.jsxs)("div", {
     children: [(0, Chunk255367.jsxs)(Chunk665149.ZP, {
       children: [(0, Chunk255367.jsx)(Chunk665149.ZP.Icon, {
@@ -78,10 +78,10 @@ function f() {
         children: Chunk913527
       }), (0, Chunk255367.jsx)(Chunk257785.Z9, {
         name: "Exists?",
-        children: null != f ? "yes" : "no"
+        children: null != v ? "yes" : "no"
       })]
     }), (0, Chunk255367.jsx)(Chunk428530.Z, {
-      data: null == f ? true : f(module)
+      data: null == v ? true : v(module)
     })]
   })
 }

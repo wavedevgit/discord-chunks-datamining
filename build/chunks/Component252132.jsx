@@ -1,7 +1,7 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 252132, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -9,27 +9,27 @@ var Chunk27457 = require("./27457.jsx"),
   Chunk131951 = require("./131951.js"),
   Chunk441997 = require("./441997.js");
 
-function s(e) {
+function o(e) {
   var {
     aspectRatio: t,
     blocked: n,
-    ignored: s,
-    channel: o,
+    ignored: o,
+    channel: s,
     className: c,
     focused: u,
     children: d,
-    inCall: h,
-    inPopout: p,
+    inCall: p,
+    inPopout: h,
     noBorder: f,
-    onClick: g,
-    onContextMenu: m,
+    onClick: m,
+    onContextMenu: g,
     onDoubleClick: b,
     onVideoResize: y,
-    paused: x,
-    pulseSpeakingIndicator: j,
-    participant: _,
-    width: O
-  } = e, v = function(e, t) {
+    paused: _,
+    pulseSpeakingIndicator: C,
+    participant: x,
+    width: v
+  } = e, j = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -44,10 +44,10 @@ function s(e) {
     }
     return i
   }(e, ["aspectRatio", "blocked", "ignored", "channel", "className", "focused", "children", "inCall", "inPopout", "noBorder", "onClick", "onContextMenu", "onDoubleClick", "onVideoResize", "paused", "pulseSpeakingIndicator", "participant", "width"]);
-  let C = l.Z.getVideoComponent();
+  let O = l.Z.getVideoComponent();
   return (0, r.jsx)("div", {
     style: {
-      width: O
+      width: v
     },
     className: a.spaceBetweenTiles,
     children: (0, r.jsxs)("div", {
@@ -74,23 +74,23 @@ function s(e) {
         return e
       }({
         blocked: n,
-        ignored: s,
-        channel: o,
+        ignored: o,
+        channel: s,
         className: c,
         focused: u,
-        inCall: h,
-        inPopout: p,
+        inCall: p,
+        inPopout: h,
         noBorder: f,
-        onClick: g,
-        onContextMenu: m,
+        onClick: m,
+        onContextMenu: g,
         onDoubleClick: b,
         onVideoResize: y,
-        participant: _,
-        paused: x,
-        pulseSpeakingIndicator: j,
-        videoComponent: C,
-        width: O
-      }, v)), d]
+        participant: x,
+        paused: _,
+        pulseSpeakingIndicator: C,
+        videoComponent: O,
+        width: v
+      }, j)), d]
     })
   })
 }

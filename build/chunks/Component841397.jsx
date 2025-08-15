@@ -1,14 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 841397, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 841397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => a
 });
 var Chunk255367 = require("./255367.js"),
   Chunk998502 = require("./998502.js"),
   Chunk202738 = require("./202738.js");
-
-function a() {
+let a = Chunk998502.ZP.getEnableHardwareAcceleration() ? function() {
   return (0, Chunk255367.jsx)("div", {
     children: (0, Chunk255367.jsxs)("div", {
       className: Chunk202738.gradientBackground,
@@ -25,9 +23,7 @@ function a() {
       })]
     })
   })
-}
-
-function s() {
+} : function() {
   return (0, Chunk255367.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1000",
@@ -112,4 +108,3 @@ function s() {
     })]
   })
 }
-let l = Chunk998502.ZP.getEnableHardwareAcceleration() ? a : s

@@ -2,11 +2,11 @@
 /** chunk id: 829967, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk316138 = require("./316138.js"),
   Chunk882159 = require("./882159.js");
-let o = {
+let a = {
   name: "applyStyles",
   enabled: true,
   phase: "write",
@@ -14,11 +14,11 @@ let o = {
     var t = e.state;
     Object.keys(t.elements).forEach(function(e) {
       var n = t.styles[e] || {},
-        o = t.attributes[e] || {},
-        a = t.elements[e];
-      (0, i.Re)(a) && (0, r.Z)(a) && (Object.assign(a.style, n), Object.keys(o).forEach(function(e) {
-        var t = o[e];
-        false === t ? a.removeAttribute(e) : a.setAttribute(e, true === t ? "" : t)
+        a = t.attributes[e] || {},
+        o = t.elements[e];
+      (0, i.Re)(o) && (0, r.Z)(o) && (Object.assign(o.style, n), Object.keys(a).forEach(function(e) {
+        var t = a[e];
+        false === t ? o.removeAttribute(e) : o.setAttribute(e, true === t ? "" : t)
       }))
     })
   },
@@ -39,13 +39,13 @@ let o = {
     return Object.assign(t.elements.popper.style, n.popper), t.styles = n, t.elements.arrow && Object.assign(t.elements.arrow.style, n.arrow),
       function() {
         Object.keys(t.elements).forEach(function(e) {
-          var o = t.elements[e],
-            a = t.attributes[e] || {},
+          var a = t.elements[e],
+            o = t.attributes[e] || {},
             s = Object.keys(t.styles.hasOwnProperty(e) ? t.styles[e] : n[e]).reduce(function(e, t) {
               return e[t] = "", e
             }, {});
-          (0, i.Re)(o) && (0, r.Z)(o) && (Object.assign(o.style, s), Object.keys(a).forEach(function(e) {
-            o.removeAttribute(e)
+          (0, i.Re)(a) && (0, r.Z)(a) && (Object.assign(a.style, s), Object.keys(o).forEach(function(e) {
+            a.removeAttribute(e)
           }))
         })
       }

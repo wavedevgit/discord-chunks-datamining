@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 576799, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 576799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -16,56 +15,54 @@ var Chunk255367 = require("./255367.js"),
   Chunk217702 = require("./217702.js"),
   Chunk724913 = require("./724913.js");
 
-function p(e) {
+function f(e) {
   let {
     message: t,
     channel: n
   } = e, {
-    isBlocked: c,
-    isIgnored: f
-  } = (0, o.cj)([d.Z], () => ({
+    isBlocked: f,
+    isIgnored: _
+  } = (0, l.cj)([d.Z], () => ({
     isBlocked: d.Z.isBlockedForMessage(t),
     isIgnored: d.Z.isIgnoredForMessage(t)
-  }), [t]), p = (0, s.p)(), m = i.useMemo(() => ({
+  }), [t]), g = (0, o.p)(), h = i.useMemo(() => ({
     [n.guild_id]: [t.author.id]
   }), [n.guild_id, t.author.id]);
-  (0, a.$)(m);
-  let g = i.useMemo(() => null != t.content && "" !== t.content ? (0, l.ZP)(t, {
+  (0, a.$)(h);
+  let b = i.useMemo(() => null != t.content && "" !== t.content ? (0, s.ZP)(t, {
     formatInline: true,
-    shouldFilterKeywords: p
-  }).content : null, [t, p]);
+    shouldFilterKeywords: g
+  }).content : null, [t, g]);
   return (0, r.jsxs)("div", {
-    className: _.threadMessageAccessory,
+    className: m.threadMessageAccessory,
     children: [(0, r.jsx)("img", {
       alt: "",
       src: t.author.getAvatarURL(n.guild_id, 16),
-      className: _.threadMessageAccessoryAvatar
+      className: m.threadMessageAccessoryAvatar
     }), (0, r.jsx)(u.Z, {
       message: t,
       channel: n,
       compact: true
     }), (0, r.jsx)("div", {
-      className: _.threadMessageAccessoryPreview,
-      children: h(t, g, c, f)
+      className: m.threadMessageAccessoryPreview,
+      children: function(e, t, n, i) {
+        let {
+          contentPlaceholder: l,
+          renderedContent: a,
+          leadingIcon: o,
+          trailingIcon: s
+        } = (0, c.f)(e, t, n, i, m.threadMessageAccessoryContent, {
+          trailingIconClass: m.threadMessageAccessoryContentTrailingIcon,
+          leadingIconClass: m.threadMessageAccessoryContentLeadingIcon,
+          iconSize: p.WW
+        });
+        return (0, r.jsxs)(r.Fragment, {
+          children: [o, null != a ? a : (0, r.jsx)("span", {
+            className: m.threadMessageAccessoryPlaceholder,
+            children: l
+          }), s]
+        })
+      }(t, b, f, _)
     })]
-  })
-}
-
-function h(e, t, n, i) {
-  let {
-    contentPlaceholder: o,
-    renderedContent: a,
-    leadingIcon: s,
-    trailingIcon: l
-  } = (0, c.f)(e, t, n, i, _.threadMessageAccessoryContent, {
-    trailingIconClass: _.threadMessageAccessoryContentTrailingIcon,
-    leadingIconClass: _.threadMessageAccessoryContentLeadingIcon,
-    iconSize: f.WW
-  });
-  return (0, r.jsxs)(r.Fragment, {
-    children: [s, null != a ? a : (0, r.jsx)("span", {
-      className: _.threadMessageAccessoryPlaceholder,
-      children: o
-    }), l]
   })
 }

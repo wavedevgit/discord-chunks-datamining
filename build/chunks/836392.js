@@ -1,28 +1,27 @@
-/** Chunk was on web.js **/
-/** chunk id: 836392, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 836392, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk159063 = require("./159063.js"),
   Chunk65183 = require("./65183.js");
-module.exports = function(e, t, n) {
-  var o = e.getBlockMap(),
-    a = t.getStartKey(),
-    s = t.getStartOffset(),
-    l = t.getEndKey(),
-    c = t.getEndOffset(),
-    u = o.skipUntil(function(e, t) {
-      return t === a
-    }).takeUntil(function(e, t) {
-      return t === l
+module.exports = function(t, e, r) {
+  var o = t.getBlockMap(),
+    a = e.getStartKey(),
+    u = e.getStartOffset(),
+    s = e.getEndKey(),
+    c = e.getEndOffset(),
+    l = o.skipUntil(function(t, e) {
+      return e === a
+    }).takeUntil(function(t, e) {
+      return e === s
     }).toOrderedMap().merge(i.OrderedMap([
-      [l, o.get(l)]
-    ])).map(function(e, t) {
-      var i = t === a ? s : 0,
-        o = t === l ? c : e.getLength();
-      return r(e, i, o, n)
+      [s, o.get(s)]
+    ])).map(function(t, e) {
+      var i = e === s ? c : t.getLength();
+      return n(t, e === a ? u : 0, i, r)
     });
-  return e.merge({
-    blockMap: o.merge(u),
-    selectionBefore: t,
-    selectionAfter: t
+  return t.merge({
+    blockMap: o.merge(l),
+    selectionBefore: e,
+    selectionAfter: e
   })
 }

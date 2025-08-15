@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 431286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   t: () => S
@@ -36,7 +36,7 @@ function S() {
     user: S
   } = (0, Chunk442837.cj)([Chunk594174.default], () => ({
     user: Chunk594174.default.getCurrentUser()
-  })), P = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()), I = (0, Chunk275388.GE)(x), N = (0, Chunk74538.EO)(S) || P || I, [w, Z] = (0, Chunk243778.US)(module && !N ? [Chunk704215.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...Chunk331663.b.useSelectedDismissibleContent);
+  })), I = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()), P = (0, Chunk275388.GE)(x), N = (0, Chunk74538.EO)(S) || I || P, [w, Z] = (0, Chunk243778.US)(module && !N ? [Chunk704215.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...Chunk331663.b.useSelectedDismissibleContent);
   Chunk73800.useEffect(() => {
     w !== Chunk704215.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL || exports || (Chunk570140.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
@@ -78,5 +78,5 @@ function S() {
         Z(Chunk921944.L.USER_DISMISS), (0, Chunk481060.Mr3)(x)
       }
     }))
-  }, [w, module, exports, Z, P])
+  }, [w, module, exports, Z, I])
 }

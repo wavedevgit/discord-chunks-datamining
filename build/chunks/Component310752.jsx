@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk731994 = require("./731994.js"),
   Chunk995751 = require("./995751.js");
 let l = function(e) {
@@ -16,21 +16,21 @@ let l = function(e) {
     className: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(s.icons, n),
+    className: a()(s.icons, n),
     children: [(0, r.jsx)("div", {
       className: s.wrapOne,
       children: (0, r.jsx)("div", {
-        className: o()(s.icon, s.one, a.bd[t[0]])
+        className: a()(s.icon, s.one, o.bd[t[0]])
       })
     }), (0, r.jsx)("div", {
       className: s.wrapThree,
       children: (0, r.jsx)("div", {
-        className: o()(s.icon, s.three, a.bd[t[2]])
+        className: a()(s.icon, s.three, o.bd[t[2]])
       })
     }), (0, r.jsx)("div", {
       className: s.wrapTwo,
       children: (0, r.jsx)("div", {
-        className: o()(s.icon, s.two, a.bd[t[1]])
+        className: a()(s.icon, s.two, o.bd[t[1]])
       })
     })]
   })

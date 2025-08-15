@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 853476, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 24255 **/
+/** chunk id: 853476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => s
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -12,24 +11,20 @@ var Chunk458725 = require("./458725.js"),
   Chunk42326 = require("./42326.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function c(e) {
-  return e === i.u.CAMERA_SEND_LOW_FPS ? l.intl.string(l.t["1NyoVl"]) : true
-}
-
-function u(e) {
+function s(e) {
   let {
     userId: t,
     className: n
-  } = e, i = (0, a.Z)(t), {
-    avErrorUIEnabled: l
-  } = (0, o.JN)({
+  } = e, s = (0, a.Z)(t), {
+    avErrorUIEnabled: c
+  } = (0, i.JN)({
     location: "VideoWarning"
   });
-  if (null == i) return null;
-  let u = c(i);
-  return null != u ? (0, r.jsx)(s.Z, {
+  if (null == s) return null;
+  let d = s === l.u.CAMERA_SEND_LOW_FPS ? u.intl.string(u.t["1NyoVl"]) : true;
+  return null != d ? (0, r.jsx)(o.Z, {
     className: n,
-    errorMessage: u,
-    avError: l ? i : null
+    errorMessage: d,
+    avError: c ? s : null
   }) : null
 }

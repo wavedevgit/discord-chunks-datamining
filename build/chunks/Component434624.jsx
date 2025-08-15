@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 434624, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 434624, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  l: () => T
+  l: () => h
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -17,143 +16,124 @@ var Chunk255367 = require("./255367.js"),
   Chunk287151 = require("./287151.jsx"),
   Chunk127947 = require("./127947.js"),
   Chunk893973 = require("./893973.js");
-
-function m(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function g(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      m(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function E(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function y(e, t) {
-  if (null == e) return {};
-  var n, r, i = O(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function O(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-let v = Chunk73800.memo(function(e) {
-  let t, n, {
-      useChatFontScaling: i,
-      hideEmoji: o,
-      emoji: c,
-      className: m,
-      count: g,
-      me: E,
-      me_burst: b,
-      burst_count: y,
-      burst_colors: O,
-      readOnly: v,
-      isLurking: I,
-      isGuest: T,
-      isPendingMember: S,
-      type: A,
-      emojiSize: N
-    } = e,
-    C = A === f.O.BURST,
-    R = (0, _.y4)(E, b, A),
-    P = (0, d.v)(C && null != O ? O : []),
-    w = i ? h : p,
-    D = C ? y : g,
-    L = (0, u.y)(D, _.aO),
-    x = {};
-  if (C && null != P) {
-    var M;
-    let {
-      accentColor: e,
-      backgroundColor: r,
-      opacity: i
-    } = P, o = null != (M = (0, s.wK)(null != r ? r : "", i)) ? M : "";
-    R && (x.borderColor = r), x.background = o, t = e, n = e
-  }
-  let j = {
-    minWidth: L,
-    color: t,
-    borderColor: n
-  };
-  return (0, r.jsxs)("div", {
-    className: a()(w.reaction, w.reactionInner, m, {
-      [w.reactionMe]: R,
-      [w.reactionReadOnly]: v && !I && !S && !T
-    }),
-    style: x,
-    children: [(0, r.jsx)(l.Z, {
-      className: a()({
-        [w.hideEmoji]: o
+let g = Chunk73800.memo(function(e) {
+    let t, n, {
+        useChatFontScaling: i,
+        hideEmoji: l,
+        emoji: c,
+        className: g,
+        count: h,
+        me: b,
+        me_burst: E,
+        burst_count: C,
+        burst_colors: v,
+        readOnly: O,
+        isLurking: y,
+        isGuest: x,
+        isPendingMember: j,
+        type: I,
+        emojiSize: S
+      } = e,
+      T = I === p.O.BURST,
+      P = (0, m.y4)(b, E, I),
+      N = (0, d.v)(T && null != v ? v : []),
+      A = i ? _ : f,
+      w = T ? C : h,
+      Z = (0, u.y)(w, m.aO),
+      R = {};
+    if (T && null != N) {
+      var L;
+      let {
+        accentColor: e,
+        backgroundColor: r,
+        opacity: i
+      } = N, l = null != (L = (0, o.wK)(null != r ? r : "", i)) ? L : "";
+      P && (R.borderColor = r), R.background = l, t = e, n = e
+    }
+    let D = {
+      minWidth: Z,
+      color: t,
+      borderColor: n
+    };
+    return (0, r.jsxs)("div", {
+      className: a()(A.reaction, A.reactionInner, g, {
+        [A.reactionMe]: P,
+        [A.reactionReadOnly]: O && !y && !j && !x
       }),
-      emojiId: c.id,
-      emojiName: c.name,
-      size: N,
-      animated: C && c.animated
-    }), (0, r.jsx)("div", {
-      className: w.reactionCount,
-      style: j,
-      children: D
-    })]
-  })
-});
-
-function I(e) {
-  var t;
-  return "".concat(e.type === f.O.BURST ? "burst:" : "").concat(null != (t = e.emoji.id) ? t : 0, ":").concat(e.emoji.name)
-}
-let T = Chunk73800.memo(function(e) {
-  var {
-    showImmediate: t,
-    reactions: n
-  } = e, o = y(e, ["showImmediate", "reactions"]);
-  let [a, s] = i.useState(false), [l, u] = i.useTransition(), d = i.useCallback(e => {
-    !e || a || l || u(() => {
-      s(true)
+      style: R,
+      children: [(0, r.jsx)(s.Z, {
+        className: a()({
+          [A.hideEmoji]: l
+        }),
+        emojiId: c.id,
+        emojiName: c.name,
+        size: S,
+        animated: T && c.animated
+      }), (0, r.jsx)("div", {
+        className: A.reactionCount,
+        style: D,
+        children: w
+      })]
     })
-  }, [a, l]), f = (0, c.O)(d), p = a && !l || t ? _.le : v;
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)("div", {
-      ref: f
-    }), n.map(e => (0, r.jsx)(p, b(g({}, o, e), {
-      emojiSize: "reaction"
-    }), I(e)))]
+  }),
+  h = Chunk73800.memo(function(e) {
+    var {
+      showImmediate: t,
+      reactions: n
+    } = e, l = function(e, t) {
+      if (null == e) return {};
+      var n, r, i = function(e, t) {
+        if (null == e) return {};
+        var n, r, i = {},
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        return i
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      }
+      return i
+    }(e, ["showImmediate", "reactions"]);
+    let [a, o] = i.useState(false), [s, u] = i.useTransition(), d = i.useCallback(e => {
+      !e || a || s || u(() => {
+        o(true)
+      })
+    }, [a, s]), f = (0, c.O)(d), _ = a && !s || t ? m.le : g;
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)("div", {
+        ref: f
+      }), n.map(e => {
+        var t, n, i;
+        return (0, r.jsx)(_, (t = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({}, l, e), n = n = {
+          emojiSize: "reaction"
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(n)).forEach(function(e) {
+          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+        }), t), "".concat(e.type === p.O.BURST ? "burst:" : "").concat(null != (i = e.emoji.id) ? i : 0, ":").concat(e.emoji.name))
+      })]
+    })
   })
-})

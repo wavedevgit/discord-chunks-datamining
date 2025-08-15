@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 669021, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 669021, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => b
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -17,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk70097 = require("./70097.jsx"),
   Chunk548238 = require("./548238.js");
 
-function h(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,10 +24,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = 2e3,
-  g = 400,
-  E = .3;
-class b extends Chunk73800.Component {
+class g extends Chunk73800.Component {
   renderMedia() {
     let {
       src: e,
@@ -55,7 +51,7 @@ class b extends Chunk73800.Component {
       src: n
     } = this.props, {
       imageLoadError: i,
-      imageLoading: o
+      imageLoading: l
     } = this.state;
     return null == require || Chunk73800 ? (0, Chunk255367.jsx)(Chunk748780.Z.div, {
       className: a()(Chunk548238.titleContainer, module),
@@ -73,34 +69,34 @@ class b extends Chunk73800.Component {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "_animatedValue", new s.Z.Value(1)), h(this, "state", {
+    super(...e), _(this, "_animatedValue", new o.Z.Value(1)), _(this, "state", {
       imageLoadError: false,
       imageLoading: true
-    }), h(this, "componentWillEnter", e => {
-      this._animatedValue.setValue(0), s.Z.timing(this._animatedValue, {
+    }), _(this, "componentWillEnter", e => {
+      this._animatedValue.setValue(0), o.Z.timing(this._animatedValue, {
         toValue: 1,
-        duration: g
+        duration: 400
       }).start(e)
-    }), h(this, "componentWillLeave", e => {
-      s.Z.timing(this._animatedValue, {
+    }), _(this, "componentWillLeave", e => {
+      o.Z.timing(this._animatedValue, {
         toValue: 0,
-        duration: g
+        duration: 400
       }).start(e)
-    }), h(this, "getImageStyle", () => ({
+    }), _(this, "getImageStyle", () => ({
       opacity: this._animatedValue
-    })), h(this, "handleImageError", () => {
+    })), _(this, "handleImageError", () => {
       this.setState({
         imageLoadError: true,
         imageLoading: false
       })
-    }), h(this, "handleImageLoaded", () => {
+    }), _(this, "handleImageLoaded", () => {
       this.setState({
         imageLoading: false
       })
     })
   }
 }
-class y extends Chunk73800.Component {
+class h extends Chunk73800.Component {
   componentWillUnmount() {
     this.videoTimeout.stop()
   }
@@ -110,12 +106,12 @@ class y extends Chunk73800.Component {
     } = this.props, n = this._video.current;
     if (null != n)
       if (t && !e.playing) {
-        this.videoTimeout.stop(), isFinite(n.duration) && isFinite(n.currentTime) && (n.currentTime = 0), n.volume = E;
+        this.videoTimeout.stop(), isFinite(n.duration) && isFinite(n.currentTime) && (n.currentTime = 0), n.volume = .3;
         let e = n.play();
         null != e && e.then(() => {
           this.videoPlaying = true
         })
-      } else e.playing && !t && this.videoTimeout.start(g, () => {
+      } else e.playing && !t && this.videoTimeout.start(400, () => {
         this.videoPlaying && (n.pause(), this.videoPlaying = false)
       })
   }
@@ -125,15 +121,15 @@ class y extends Chunk73800.Component {
       slideImages: t,
       image: n,
       title: i,
-      splashClassName: o
+      splashClassName: l
     } = this.props;
-    return null == exports ? (0, Chunk255367.jsx)(b, {
+    return null == exports ? (0, Chunk255367.jsx)(g, {
       className: a()(Chunk548238.splash, Chunk120356),
       src: require,
       title: Chunk73800
     }, "image") : (0, Chunk255367.jsx)(Chunk679056.Z, {
       onInterval: this.nextItem,
-      interval: m,
+      interval: 2e3,
       className: Chunk548238.slideshowWrapper,
       disable: !module,
       children: (0, Chunk255367.jsx)(Chunk215569.W, {
@@ -147,10 +143,10 @@ class y extends Chunk73800.Component {
       className: t,
       placeholder: n,
       renderMediaOverlay: i,
-      playing: o
+      playing: l
     } = this.props, {
-      videoLoadError: s,
-      videoLoaded: l
+      videoLoadError: o,
+      videoLoaded: s
     } = this.state;
     return require ? (0, Chunk255367.jsx)("div", {
       className: exports
@@ -160,40 +156,40 @@ class y extends Chunk73800.Component {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "state", {
+    super(...e), _(this, "state", {
       currentIndex: 0,
       videoLoadError: false,
       videoLoaded: false
-    }), h(this, "_video", i.createRef()), h(this, "videoTimeout", new c.V7), h(this, "videoPlaying", false), h(this, "handleToggleMute", e => {
+    }), _(this, "_video", i.createRef()), _(this, "videoTimeout", new c.V7), _(this, "videoPlaying", false), _(this, "handleToggleMute", e => {
       e.stopPropagation(), e.preventDefault();
       let {
         onToggleMute: t
       } = this.props;
       null == t || t(e)
-    }), h(this, "handleVideoError", () => {
+    }), _(this, "handleVideoError", () => {
       this.setState({
         videoLoadError: true
       })
-    }), h(this, "handleVideoLoaded", () => {
+    }), _(this, "handleVideoLoaded", () => {
       this.setState({
         videoLoaded: true
       })
-    }), h(this, "renderTypeVideo", () => {
+    }), _(this, "renderTypeVideo", () => {
       let {
         videoLoaded: e
       } = this.state, {
         video: t,
         image: n,
-        title: o,
-        playing: s,
+        title: l,
+        playing: o,
         muted: c,
-        splashClassName: f,
-        splashPlaceholderClassName: h,
-        renderMediaOverlay: m
-      } = this.props, g = c ? d.OyP : d.gj8;
+        splashClassName: p,
+        splashPlaceholderClassName: _,
+        renderMediaOverlay: h
+      } = this.props, b = c ? d.OyP : d.gj8;
       return (0, r.jsxs)(i.Fragment, {
-        children: [l.tq ? null : (0, r.jsx)(_.Z, {
-          className: a()(p.splash, f),
+        children: [s.tq ? null : (0, r.jsx)(m.Z, {
+          className: a()(f.splash, p),
           muted: c,
           loop: true,
           preload: "none",
@@ -205,48 +201,48 @@ class y extends Chunk73800.Component {
             type: "video/mp4"
           })
         }), (0, r.jsx)(u.W, {
-          children: s && e ? null : (0, r.jsx)(b, {
-            className: a()(p.splashPlaceholder, h),
+          children: o && e ? null : (0, r.jsx)(g, {
+            className: a()(f.splashPlaceholder, _),
             src: n,
-            title: o
+            title: l
           }, 0)
         }), (0, r.jsx)(d.P3F, {
-          className: a()(p.muteContainer, {
-            [p.muteContainerPlaying]: s && e,
-            [p.muteContainerMediaOverlay]: null != m
+          className: a()(f.muteContainer, {
+            [f.muteContainerPlaying]: o && e,
+            [f.muteContainerMediaOverlay]: null != h
           }),
           onClick: this.handleToggleMute,
-          children: s && e ? (0, r.jsx)(g, {
-            className: p.mute
+          children: o && e ? (0, r.jsx)(b, {
+            className: f.mute
           }) : null
         })]
       })
-    }), h(this, "nextItem", () => {
+    }), _(this, "nextItem", () => {
       let {
         slideImages: e
       } = this.props;
       null != e && this.setState({
         currentIndex: (this.state.currentIndex + 1) % e.length
       })
-    }), h(this, "renderSlideItem", e => {
+    }), _(this, "renderSlideItem", e => {
       let {
         image: t,
         title: n,
         playing: i,
-        splashClassName: o
+        splashClassName: l
       } = this.props, {
-        currentIndex: s
+        currentIndex: o
       } = this.state;
-      return i ? (0, r.jsx)(b, {
-        className: a()(p.splash, o),
-        src: e[s],
+      return i ? (0, r.jsx)(g, {
+        className: a()(f.splash, l),
+        src: e[o],
         title: n
-      }, s) : (0, r.jsx)(b, {
-        className: a()(p.splash, o),
+      }, o) : (0, r.jsx)(g, {
+        className: a()(f.splash, l),
         src: t,
         title: n
       }, "image")
     })
   }
 }
-let O = y
+let b = h

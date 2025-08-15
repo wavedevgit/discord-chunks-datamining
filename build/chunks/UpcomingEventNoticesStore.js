@@ -1,17 +1,16 @@
-/** Chunk was on web.js **/
-/** chunk id: 835184, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 42743 **/
+/** chunk id: 835184, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => g
 });
-var r, Chunk442837 = require("./442837.js"),
+var l, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk314897 = require("./314897.js"),
   Chunk924301 = require("./924301.js"),
   Chunk658041 = require("./658041.js"),
   Chunk765305 = require("./765305.js");
 
-function u(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,101 +19,91 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      u(e, t, n[t])
+    }))), l.forEach(function(t) {
+      o(e, t, n[t])
     })
   }
   return e
 }
-let f = {},
-  _ = {};
+let a = {},
+  f = {};
 
-function p(e) {
-  let t = d({}, f);
-  delete t[e], f = t;
-  let n = d({}, _);
-  delete n[e], _ = n
+function N(e) {
+  let t = s({}, a);
+  delete t[e], a = t;
+  let n = s({}, f);
+  delete n[e], f = n
 }
-
-function h(e) {
-  let {
-    eventId: t
-  } = e, n = d({}, f);
-  n[t] = Date.now(), f = n
-}
-
-function m(e) {
-  let {
-    guildScheduledEvent: t
-  } = e;
-  (t.status === c.p1.CANCELED || t.status === c.p1.COMPLETED) && p(t.id)
-}
-
-function g(e) {
-  let {
-    guildScheduledEvent: t
-  } = e;
-  p(t.id)
-}
-
-function E(e) {
-  let {
-    userId: t,
-    guildEventId: n
-  } = e;
-  if (t !== a.default.getId()) return;
-  let r = s.ZP.getGuildScheduledEvent(n);
-  if (null == r || r.status !== c.p1.SCHEDULED || null != f[n]) return;
-  let i = _[n];
-  if ((0, l.M)(r, true, i, false) === c.X_.NEW_EVENT) {
-    let e = d({}, f);
-    e[n] = Date.now(), f = e
-  }
-}
-
-function b(e) {
-  let {
-    guildEventId: t
-  } = e, n = d({}, _);
-  n[t] = Date.now(), _ = n
-}
-class y extends(r = Chunk442837.ZP.PersistedStore) {
+class _ extends(l = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n;
-      f = null != (t = e.upcomingEventDismissals) ? t : {}, _ = null != (n = e.upcomingEventSeenTimestamps) ? n : {}
+      a = null != (t = e.upcomingEventDismissals) ? t : {}, f = null != (n = e.upcomingEventSeenTimestamps) ? n : {}
     }
   }
   getGuildEventNoticeDismissalTime(e) {
-    return f[e]
+    return a[e]
   }
   getAllEventDismissals() {
-    return f
+    return a
   }
   getUpcomingNoticeSeenTime(e) {
-    return _[e]
+    return f[e]
   }
   getAllUpcomingNoticeSeenTimes() {
-    return _
+    return f
   }
   getState() {
     return {
-      upcomingEventDismissals: f,
-      upcomingEventSeenTimestamps: _
+      upcomingEventDismissals: a,
+      upcomingEventSeenTimestamps: f
     }
   }
 }
-u(y, "displayName", "UpcomingEventNoticesStore"), u(y, "persistKey", "UpcomingEventNotices");
-let O = new y(Chunk570140.Z, {
-  UPCOMING_GUILD_EVENT_NOTICE_HIDE: h,
-  GUILD_SCHEDULED_EVENT_UPDATE: m,
-  GUILD_SCHEDULED_EVENT_DELETE: g,
-  GUILD_SCHEDULED_EVENT_USER_ADD: E,
-  UPCOMING_GUILD_EVENT_NOTICE_SEEN: b
+o(_, "displayName", "UpcomingEventNoticesStore"), o(_, "persistKey", "UpcomingEventNotices");
+let g = new _(Chunk570140.Z, {
+  UPCOMING_GUILD_EVENT_NOTICE_HIDE: function(e) {
+    let {
+      eventId: t
+    } = e, n = s({}, a);
+    n[t] = Date.now(), a = n
+  },
+  GUILD_SCHEDULED_EVENT_UPDATE: function(e) {
+    let {
+      guildScheduledEvent: t
+    } = e;
+    (t.status === d.p1.CANCELED || t.status === d.p1.COMPLETED) && N(t.id)
+  },
+  GUILD_SCHEDULED_EVENT_DELETE: function(e) {
+    let {
+      guildScheduledEvent: t
+    } = e;
+    N(t.id)
+  },
+  GUILD_SCHEDULED_EVENT_USER_ADD: function(e) {
+    let {
+      userId: t,
+      guildEventId: n
+    } = e;
+    if (t !== i.default.getId()) return;
+    let l = c.ZP.getGuildScheduledEvent(n);
+    if (null == l || l.status !== d.p1.SCHEDULED || null != a[n]) return;
+    let r = f[n];
+    if ((0, E.M)(l, true, r, false) === d.X_.NEW_EVENT) {
+      let e = s({}, a);
+      e[n] = Date.now(), a = e
+    }
+  },
+  UPCOMING_GUILD_EVENT_NOTICE_SEEN: function(e) {
+    let {
+      guildEventId: t
+    } = e, n = s({}, f);
+    n[t] = Date.now(), f = n
+  }
 })

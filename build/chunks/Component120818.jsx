@@ -1,7 +1,7 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 120818, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  T: () => O
+  T: () => _
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -25,17 +25,17 @@ function b(e, t) {
     children: e
   }, t)
 }
-let O = Chunk73800.memo(function(e) {
+let _ = Chunk73800.memo(function(e) {
   var t, n;
   let {
-    guild: O
-  } = e, _ = (0, o.e7)([c.Z], () => c.Z.getNewMemberActions(O.id), [O.id]), y = (0, o.e7)([u.Z], () => u.Z.getCompletedActions(O.id)), v = i.useMemo(() => {
-    if (null == _ || null == y) return 0;
+    guild: _
+  } = e, O = (0, o.e7)([c.Z], () => c.Z.getNewMemberActions(_.id), [_.id]), y = (0, o.e7)([u.Z], () => u.Z.getCompletedActions(_.id)), v = i.useMemo(() => {
+    if (null == O || null == y) return 0;
     let e = 0;
-    return _.forEach(t => {
+    return O.forEach(t => {
       null != y[t.channelId] && e++
     }), e
-  }, [y, _]), j = null == _ ? 0 : _.length, C = (0, l.JA)("progress-bar-".concat(O.id));
+  }, [y, O]), j = null == O ? 0 : O.length, C = (0, l.JA)("progress-bar-".concat(_.id));
   return (0, r.jsxs)("li", {
     children: [(0, r.jsxs)(a.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -63,7 +63,7 @@ let O = Chunk73800.memo(function(e) {
       },
       className: m.progressBarContainer,
       onClick: function() {
-        (0, d.uL)(f.Z5c.CHANNEL(O.id, h.oC.GUILD_HOME))
+        (0, d.uL)(f.Z5c.CHANNEL(_.id, h.oC.GUILD_HOME))
       },
       children: [(0, r.jsxs)("div", {
         className: m.progressBarText,

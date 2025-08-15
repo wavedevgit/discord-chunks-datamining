@@ -5,15 +5,15 @@ require.d(exports, {
   ML: () => s,
   nH: () => l,
   vK: () => d,
-  yV: () => o
+  yV: () => a
 });
 var Chunk180650 = require("./180650.js"),
   Chunk921948 = require("./921948.js");
-let o = 1060,
-  a = 180,
+let a = 1060,
+  o = 180,
   s = e => e * (0, i.Z)(),
   l = function(e) {
-    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : a,
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : o,
       {
         primary: n,
         secondary: r

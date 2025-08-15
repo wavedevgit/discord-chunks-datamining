@@ -51,18 +51,18 @@ function g(e) {
     nonce: n,
     channelId: r,
     query: i,
-    name: o
-  } = e, a = h(r);
-  if (a.optionNameToLastQuery.get(o) === i) returnfalse;
-  a.optionNameToLastQuery.set(o, i);
-  let s = null == (t = a.optionNameToAutocompleteQueries.get(o)) ? true : t.get(i);
-  if (null != s) return a.lastErrored = false, a.optionNameToLastResults.set(o, s), true;
-  let l = a.optionNameToNonce.get(o);
+    name: a
+  } = e, o = h(r);
+  if (o.optionNameToLastQuery.get(a) === i) returnfalse;
+  o.optionNameToLastQuery.set(a, i);
+  let s = null == (t = o.optionNameToAutocompleteQueries.get(a)) ? true : t.get(i);
+  if (null != s) return o.lastErrored = false, o.optionNameToLastResults.set(a, s), true;
+  let l = o.optionNameToNonce.get(a);
   if (null != l && f.delete(l), f.set(n, {
       channelId: r,
       query: i,
-      name: o
-    }), p.set(n, new Date), a.optionNameToNonce.set(o, n), a.lastErrored) return a.lastErrored = false, true
+      name: a
+    }), p.set(n, new Date), o.optionNameToNonce.set(a, n), o.lastErrored) return o.lastErrored = false, true
 }
 let E = (0, Chunk358085.isDesktop)();
 
@@ -70,13 +70,13 @@ function b(e) {
   var t, n, r;
   let {
     choices: i,
-    nonce: o
-  } = e, l = f.get(o);
+    nonce: a
+  } = e, l = f.get(a);
   if (null == l) returnfalse;
-  f.delete(o);
+  f.delete(a);
   let d = h(l.channelId);
   null == d.optionNameToAutocompleteQueries.get(l.name) && d.optionNameToAutocompleteQueries.set(l.name, new Map);
-  let _ = E && (null == (t = c.Z.getActiveOption(l.channelId)) ? true : t.type) === a.jw.INTEGER,
+  let _ = E && (null == (t = c.Z.getActiveOption(l.channelId)) ? true : t.type) === o.jw.INTEGER,
     m = null != (r = null == i ? true : i.map(e => {
       let {
         value: t,
@@ -89,13 +89,13 @@ function b(e) {
         value: t = _ ? Number(t) : t
       }
     })) ? r : [],
-    g = p.get(o),
+    g = p.get(a),
     b = null != g ? new Date().getTime() - g.getTime() : 0;
   return (0, s.yw)(u.rMx.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, {
     duration_ms: b,
     error: false,
     num_options: m.length
-  }), p.delete(o), null == (n = d.optionNameToAutocompleteQueries.get(l.name)) || n.set(l.query, m), d.optionNameToLastQuery.get(l.name) === l.query && (d.lastErrored = false, d.optionNameToLastResults.set(l.name, m)), d.lastResponseNonce = o, true
+  }), p.delete(a), null == (n = d.optionNameToAutocompleteQueries.get(l.name)) || n.set(l.query, m), d.optionNameToLastQuery.get(l.name) === l.query && (d.lastErrored = false, d.optionNameToLastResults.set(l.name, m)), d.lastResponseNonce = a, true
 }
 
 function y(e) {

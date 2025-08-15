@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 538084, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 538084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => _,
-  k: () => f
+  default: () => p,
+  k: () => d
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -13,84 +12,83 @@ var Chunk255367 = require("./255367.js"),
   Chunk45251 = require("./45251.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk206536 = require("./206536.js");
-let d = 365,
-  f = "SCHEDULED_MESSAGE_CREATE_MODAL_KEY";
+let d = "SCHEDULED_MESSAGE_CREATE_MODAL_KEY";
 
-function _(e) {
+function p(e) {
   let {
     channel: t,
     transitionState: n,
-    onClose: o,
-    prefilledTime: _
-  } = e, p = a()(), h = a()().add(d, "days"), [m, g] = i.useState(null != _ ? a()(_.substring(0, 200)) : p), E = e => {
-    g(e)
-  }, b = e => {
-    e.isValid() && g(e)
-  }, y = () => {
-    (0, l._e)({
-      channelId: t.id,
-      scheduledTimestamp: m.toISOString()
-    }), (0, s.Mr3)(f)
-  };
-  return (0, r.jsxs)(s.Y0X, {
+    onClose: l,
+    prefilledTime: p
+  } = e, h = a()(), f = a()().add(365, "days"), [m, g] = i.useState(null != p ? a()(p.substring(0, 200)) : h);
+  return (0, r.jsxs)(o.Y0X, {
     transitionState: n,
-    size: s.CgR.SMALL,
+    size: o.CgR.SMALL,
     "aria-label": c.intl.string(c.t.WbFpq6),
     parentComponent: "ScheduledMessageCreateModal",
-    children: [(0, r.jsx)(s.olH, {
-      onClick: o,
+    children: [(0, r.jsx)(o.olH, {
+      onClick: l,
       className: u.closeButton
-    }), (0, r.jsx)(s.xBx, {
+    }), (0, r.jsx)(o.xBx, {
       separator: false,
       className: u.header,
-      children: (0, r.jsx)(s.X6q, {
+      children: (0, r.jsx)(o.X6q, {
         variant: "heading-xl/medium",
         children: c.intl.string(c.t["3+ii4O"])
       })
-    }), (0, r.jsx)(s.hzk, {
+    }), (0, r.jsx)(o.hzk, {
       children: (0, r.jsxs)("div", {
         className: u.doubleInput,
         children: [(0, r.jsx)("div", {
           className: u.column,
-          children: (0, r.jsx)(s.xJW, {
+          children: (0, r.jsx)(o.xJW, {
             title: c.intl.string(c.t.pSZKvL),
             required: true,
-            children: (0, r.jsx)(s.Wrb, {
+            children: (0, r.jsx)(o.Wrb, {
               value: m,
-              onSelect: E,
-              minDate: p,
-              maxDate: h,
+              onSelect: e => {
+                g(e)
+              },
+              minDate: h,
+              maxDate: f,
               disabled: false
             })
           })
         }), (0, r.jsx)("div", {
           className: u.column,
-          children: (0, r.jsx)(s.xJW, {
+          children: (0, r.jsx)(o.xJW, {
             title: c.intl.string(c.t.GOmEb2),
             required: true,
-            children: (0, r.jsx)(s.MGJ, {
+            children: (0, r.jsx)(o.MGJ, {
               value: m,
-              onChange: b,
+              onChange: e => {
+                e.isValid() && g(e)
+              },
               hideValue: false,
               disabled: false
             })
           })
         })]
       })
-    }), (0, r.jsxs)(s.mzw, {
+    }), (0, r.jsxs)(o.mzw, {
       className: u.footer,
       children: [(0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: u.cancelButton,
-        children: (0, r.jsx)(s.zxk, {
+        children: (0, r.jsx)(o.zxk, {
           variant: "secondary",
           text: c.intl.string(c.t["ETE/oK"]),
-          onClick: o
+          onClick: l
         })
-      }), (0, r.jsx)(s.zxk, {
+      }), (0, r.jsx)(o.zxk, {
         variant: "primary",
         text: c.intl.string(c.t.iQ1Swc),
-        onClick: y,
+        onClick: () => {
+          (0, s._e)({
+            channelId: t.id,
+            scheduledTimestamp: m.toISOString()
+          }), (0, o.Mr3)(d)
+        },
         disabled: false
       })]
     })]

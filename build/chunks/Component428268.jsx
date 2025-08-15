@@ -103,7 +103,7 @@ let v = function(e) {
     let e = N ? (0, r.jsx)(s.d3s, {
         className: g.infoMessageIcon
       }) : (0, r.jsx)(s.aNP, {
-        color: o.Z.colors.STATUS_WARNING,
+        color: a.Z.colors.STATUS_WARNING,
         className: g.infoMessageIcon
       }),
       t = N ? m.intl.string(m.t["Ihg/Dg"]) : m.intl.string(m.t["J8U+Iy"]);
@@ -119,7 +119,7 @@ let v = function(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Z, {
       className: g.divider
-    }), x(), (0, r.jsxs)(a.zx, {
+    }), x(), (0, r.jsxs)(o.zx, {
       className: g.joinLeaderboardButton,
       innerClassName: g.joinLeaderboardButtonInner,
       onClick: D,

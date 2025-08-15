@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 532239, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 532239, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => d
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -14,58 +13,53 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function f(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      d(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function _(e, t, n, d) {
-  let _ = {
+function d(e, t, n, d) {
+  let p = {
       streamUserId: n,
       channel: e,
       applicationId: d,
-      appContext: (0, o.bp)()
+      appContext: (0, l.bp)()
     },
-    p = () => {
-      null != t && e.type === c.d4z.GUILD_VOICE && (0, s.W)(f({
+    h = () => {
+      null != t && e.type === c.d4z.GUILD_VOICE && (0, o.W)(function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = r
+          })
+        }
+        return e
+      }({
         guild: t
-      }, _))
+      }, p))
     },
     {
-      entrypoints: h
+      entrypoints: f
     } = (0, a._k)({
       location: "more_settings_invite_item"
     }),
-    m = h ? i.oLu : i.ejJ;
+    m = f ? i.oLu : i.ejJ;
   if (null != d) return (0, r.jsx)(i.sNh, {
     id: "invite-to-stream",
     label: u.intl.string(u.t["OzOM/v"]),
-    action: p,
+    action: h,
     icon: i.ejJ
   });
-  if (null == t || null == e || !l.Z.can(c.Plq.CREATE_INSTANT_INVITE, e)) return null;
-  let g = h ? u.intl.string(u.t["EE+P0N"]) : u.intl.string(u.t["6Qgren"]);
+  if (null == t || null == e || !s.Z.can(c.Plq.CREATE_INSTANT_INVITE, e)) return null;
+  let g = f ? u.intl.string(u.t["EE+P0N"]) : u.intl.string(u.t["6Qgren"]);
   return (0, r.jsx)(i.sNh, {
     id: "invite-friends",
     label: g,
-    action: p,
+    action: h,
     icon: m
   })
 }

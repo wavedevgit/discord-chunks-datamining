@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 368736, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 368736, original params: e,t,n (module,exports,require) **/
 module.exports = {
   "outgoing-call-pulse": "outgoing-call-pulse__07f91",
   list: "list__07f91",

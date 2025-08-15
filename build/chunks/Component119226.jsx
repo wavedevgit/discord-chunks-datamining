@@ -69,18 +69,18 @@ function S(e) {
   } = e, {
     avatarDecorationSrc: n,
     eventHandlers: i,
-    avatarPlaceholderSrc: o
+    avatarPlaceholderSrc: a
   } = (0, l.Z)({
     avatarDecorationOverride: t,
-    size: (0, s.y9)(a.EFr.SIZE_152)
+    size: (0, s.y9)(o.EFr.SIZE_152)
   });
   return (0, r.jsx)("div", {
     className: E.giftMainAnimationWrapper,
     children: (0, r.jsx)(T, I(O({}, i), {
       avatarDecoration: n,
-      src: o,
+      src: a,
       className: E.avatar,
-      size: a.EFr.SIZE_152,
+      size: o.EFr.SIZE_152,
       "aria-label": g.intl.string(g.t.lqaIxM)
     }))
   })
@@ -125,17 +125,17 @@ function C(e) {
   } = e, {
     selectedGiftStyle: n
   } = (0, m.wD)(), {
-    product: a
-  } = (0, c.T)(null == t ? true : t.id), s = null == a ? true : a.items[0], l = (0, i.EQ)(s).with({
-    type: o.Z.AVATAR_DECORATION
+    product: o
+  } = (0, c.T)(null == t ? true : t.id), s = null == o ? true : o.items[0], l = (0, i.EQ)(s).with({
+    type: a.Z.AVATAR_DECORATION
   }, e => (0, r.jsx)(S, {
     avatarDecoration: e
   })).with({
-    type: o.Z.PROFILE_EFFECT
+    type: a.Z.PROFILE_EFFECT
   }, e => (0, r.jsx)(A, {
     id: e.id
   })).with({
-    type: o.Z.NAMEPLATE
+    type: a.Z.NAMEPLATE
   }, e => (0, r.jsx)(N, {
     nameplate: e
   })).otherwise(() => null);

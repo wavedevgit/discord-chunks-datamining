@@ -1,5 +1,5 @@
-/** Chunk was on 4048 **/
-/** chunk id: 476034, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 83773 **/
+/** chunk id: 476034, original params: e,t,a (module,exports,require) **/
 module.exports = {
   searchbar: "searchbar__45744",
   list: "list__45744",

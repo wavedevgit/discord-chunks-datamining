@@ -1,70 +1,66 @@
-/** Chunk was on web.js **/
-/** chunk id: 251794, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 78079 **/
+/** chunk id: 251794, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
-  q: () => l,
-  z: () => s
+  q: () => a,
+  z: () => i
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk481060 = require("./481060.js");
 
-function o(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function a(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      o(e, t, n[t])
+function l(A) {
+  for (var e = 1; e < arguments.length; e++) {
+    var t = null != arguments[e] ? arguments[e] : {},
+      n = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(A) {
+      return Object.getOwnPropertyDescriptor(t, A).enumerable
+    }))), n.forEach(function(e) {
+      var n;
+      n = t[e], e in A ? Object.defineProperty(A, e, {
+        value: n,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : A[e] = n
     })
   }
-  return e
+  return A
 }
 
-function s(e) {
+function i(A) {
   let {
-    guildId: t,
-    userId: o,
-    anaylticsLocations: s,
-    modReportId: l
-  } = e;
-  (0, i.ZDy)(async () => {
+    guildId: e,
+    userId: i,
+    anaylticsLocations: a,
+    modReportId: s
+  } = A;
+  (0, r.ZDy)(async () => {
     let {
-      default: e
-    } = await n.e("72920").then(n.bind(n, 109730));
-    return n => (0, r.jsx)(e, a({
-      guildId: t,
-      userId: o,
-      anaylticsLocations: s,
-      modReportId: l
-    }, n))
+      default: A
+    } = await t.e("72920").then(t.bind(t, 109730));
+    return t => (0, n.jsx)(A, l({
+      guildId: e,
+      userId: i,
+      anaylticsLocations: a,
+      modReportId: s
+    }, t))
   })
 }
 
-function l(e) {
+function a(A) {
   let {
-    guildId: t,
-    userId: o,
-    anaylticsLocations: s
-  } = e;
-  (0, i.ZDy)(async () => {
+    guildId: e,
+    userId: i,
+    anaylticsLocations: a
+  } = A;
+  (0, r.ZDy)(async () => {
     let {
-      default: e
-    } = await n.e("76233").then(n.bind(n, 171494));
-    return n => (0, r.jsx)(e, a({
-      guildId: t,
-      userId: o,
-      anaylticsLocations: s
-    }, n))
+      default: A
+    } = await t.e("76233").then(t.bind(t, 171494));
+    return t => (0, n.jsx)(A, l({
+      guildId: e,
+      userId: i,
+      anaylticsLocations: a
+    }, t))
   })
 }

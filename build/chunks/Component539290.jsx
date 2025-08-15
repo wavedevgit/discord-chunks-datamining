@@ -1,13 +1,14 @@
-/** Chunk was on 77512 **/
+/** Chunk was on 81498 **/
 /** chunk id: 539290, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   E: () => p,
-  Z: () => b
+  Z: () => g
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,42 +21,42 @@ let p = {
   BOTTOM: Chunk672628.verticalStatusWarningBlock
 };
 
-function b(e) {
+function g(e) {
   let {
     className: t,
-    color: n = u.W.YELLOW,
-    buttonPosition: i = p.BOTTOM,
-    notice: b,
-    ctaLabel: O,
-    ctaLoading: m,
-    ctaDisabled: h,
-    ctaClassName: g,
-    onClick: j
-  } = e, y = (0, a.ZP)();
-  return (0, r.jsx)(d.Z, {
-    className: l()(f.statusWarningBlock, {
-      [f.statusWarningBlockWithCta]: null != O
+    color: n = c.W.YELLOW,
+    buttonPosition: r = p.BOTTOM,
+    notice: g,
+    ctaLabel: f,
+    ctaLoading: v,
+    ctaDisabled: m,
+    ctaClassName: C,
+    onClick: b
+  } = e, y = (0, u.ZP)();
+  return (0, i.jsx)(d.Z, {
+    className: s()(h.statusWarningBlock, {
+      [h.statusWarningBlockWithCta]: null != f
     }, t),
-    color: (0, o.wj)(y) ? n : u.W.BROWN,
-    children: (0, r.jsxs)("div", {
-      className: i,
-      children: [(0, r.jsx)(c.Text, {
+    color: (0, l.wj)(y) ? n : c.W.BROWN,
+    children: (0, i.jsxs)("div", {
+      className: r,
+      children: [(0, i.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "interactive-active",
-        children: b
-      }), null != O && null != j && (0, r.jsx)("div", {
-        className: f.ctaButtonContainer,
-        children: (0, r.jsx)(s.zx, {
-          className: l()(f.ctaButton, (0, o.wj)(y) ? true : f.ctaBlackButton, g),
-          color: (0, o.wj)(y) ? s.zx.Colors.WHITE : s.zx.Colors.CUSTOM,
-          size: s.Ph.MEDIUM,
-          onClick: j,
-          disabled: h,
-          submitting: m,
-          children: (0, r.jsx)(c.Text, {
-            className: f.ctaButtonText,
+        children: g
+      }), null != f && null != b && (0, i.jsx)("div", {
+        className: h.ctaButtonContainer,
+        children: (0, i.jsx)(o.zx, {
+          className: s()(h.ctaButton, (0, l.wj)(y) ? true : h.ctaBlackButton, C),
+          color: (0, l.wj)(y) ? o.zx.Colors.WHITE : o.zx.Colors.CUSTOM,
+          size: o.Ph.MEDIUM,
+          onClick: b,
+          disabled: m,
+          submitting: v,
+          children: (0, i.jsx)(a.Text, {
+            className: h.ctaButtonText,
             variant: "text-sm/medium",
-            children: O
+            children: f
           })
         })
       })]

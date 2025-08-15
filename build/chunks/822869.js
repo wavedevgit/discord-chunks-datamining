@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 822869, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37220 **/
+/** chunk id: 822869, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ad: () => m,
-  Lb: () => d,
-  ZF: () => p,
-  gP: () => _,
-  mh: () => h,
-  sF: () => f
+  Ad: () => b,
+  Lb: () => c,
+  ZF: () => f,
+  gP: () => d,
+  mh: () => g,
+  sF: () => u
 });
 var Chunk73800 = require("./73800.js"),
   Chunk392711 = require("./392711.js"),
@@ -17,43 +16,21 @@ var Chunk73800 = require("./73800.js"),
   Chunk981631 = require("./981631.js");
 
 function c(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function u(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      c(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function d(e, t, n) {
-  s.default.track(l.rMx.FORWARD_MESSAGE_STARTED, {
+  o.default.track(s.rMx.FORWARD_MESSAGE_STARTED, {
     channel_id: e,
     message_id: t,
     source: n
   })
 }
 
-function f(e) {
+function u(e) {
   let {
     channelId: t,
     messageId: n,
     numDestinationChanges: r,
     numQueryChanges: i
   } = e;
-  s.default.track(l.rMx.FORWARD_MESSAGE_CANCELLED, {
+  o.default.track(s.rMx.FORWARD_MESSAGE_CANCELLED, {
     channel_id: t,
     message_id: n,
     num_destination_changes: r,
@@ -61,39 +38,56 @@ function f(e) {
   })
 }
 
-function _(e) {
+function d(e) {
   let {
     channelId: t,
     messageId: n,
     hasError: r,
     hasContextMessage: i,
     numDestinations: c,
-    numDestinationChanges: d,
-    numQueryChanges: f,
-    anyDestinationHasSlowmode: _,
-    source: p
+    numDestinationChanges: u,
+    numQueryChanges: d,
+    anyDestinationHasSlowmode: f,
+    source: g
   } = e;
-  if (s.default.track(l.rMx.FORWARD_MESSAGE_SENT, {
+  if (o.default.track(s.rMx.FORWARD_MESSAGE_SENT, {
       channel_id: t,
       message_id: n,
       has_error: r,
       has_context_message: i,
       num_destinations: c,
-      num_destination_changes: d,
-      num_query_changes: f,
-      any_destination_has_slowmode: _
-    }), "message-shortcut" === p) {
+      num_destination_changes: u,
+      num_query_changes: d,
+      any_destination_has_slowmode: f
+    }), "message-shortcut" === g) {
     let e = a.Z.getChannel(t);
-    s.default.track(l.rMx.MESSAGE_SHORTCUT_ACTION_SENT, u({
+    o.default.track(s.rMx.MESSAGE_SHORTCUT_ACTION_SENT, function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({
       action: "forward",
       original_message_id: n
-    }, (0, o.hH)(null == e ? true : e.guild_id), (0, o.v_)(e)))
+    }, (0, l.hH)(null == e ? true : e.guild_id), (0, l.v_)(e)))
   }
 }
 
-function p() {
+function f() {
   return Chunk73800.useMemo(() => (0, Chunk392711.once)((e, t, n) => {
-    s.default.track(l.rMx.FORWARD_ADD_RECIPIENT, {
+    o.default.track(s.rMx.FORWARD_ADD_RECIPIENT, {
       channel_id: e,
       message_id: t,
       has_query: n
@@ -101,18 +95,18 @@ function p() {
   }), [])
 }
 
-function h() {
+function g() {
   return Chunk73800.useMemo(() => (0, Chunk392711.once)((e, t) => {
-    s.default.track(l.rMx.FORWARD_EDIT_SEARCH, {
+    o.default.track(s.rMx.FORWARD_EDIT_SEARCH, {
       channel_id: e,
       message_id: t
     })
   }), [])
 }
 
-function m() {
+function b() {
   return Chunk73800.useMemo(() => (0, Chunk392711.once)((e, t) => {
-    s.default.track(l.rMx.FORWARD_EDIT_CONTEXT_MESSAGE, {
+    o.default.track(s.rMx.FORWARD_EDIT_CONTEXT_MESSAGE, {
       channel_id: e,
       message_id: t
     })

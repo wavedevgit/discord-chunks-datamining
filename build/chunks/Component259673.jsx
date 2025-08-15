@@ -1,7 +1,7 @@
-/** Chunk was on 84691 **/
+/** Chunk was on 32160 **/
 /** chunk id: 259673, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  M: () => d
+  M: () => u
 });
 var Chunk255367 = require("./255367.js"),
   Chunk442837 = require("./442837.js"),
@@ -11,33 +11,33 @@ var Chunk255367 = require("./255367.js"),
   Chunk74538 = require("./74538.js"),
   Chunk755419 = require("./755419.jsx"),
   Chunk526666 = require("./526666.js");
-let d = e => {
+let u = e => {
   var t, n;
   let {
-    user: d
-  } = e, m = s.ZP.canUsePremiumProfileCustomization(d), f = (0, i.cj)([o.Z], () => o.Z.getAllPending()), {
-    pendingAvatar: p
-  } = f, v = function(e, t) {
+    user: u
+  } = e, m = s.ZP.canUsePremiumProfileCustomization(u), p = (0, a.cj)([c.Z], () => c.Z.getAllPending()), {
+    pendingAvatar: _
+  } = p, f = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var n, r, a = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      var n, r, a = {},
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+      return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
     }
-    return i
-  }(f, ["pendingAvatar"]), h = (0, l.SD)({
-    userId: d.id,
-    image: p
+    return a
+  }(p, ["pendingAvatar"]), g = (0, o.SD)({
+    userId: u.id,
+    image: _
   });
   return (0, r.jsx)("div", {
-    className: u.container,
-    children: (0, r.jsx)(a.Z, (t = function(e) {
+    className: d.container,
+    children: (0, r.jsx)(i.Z, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -54,10 +54,10 @@ let d = e => {
         })
       }
       return e
-    }({}, v), n = n = {
-      pendingAvatar: h,
-      user: d,
-      pendingBadges: [(0, c.X)()],
+    }({}, f), n = n = {
+      pendingAvatar: g,
+      user: u,
+      pendingBadges: [(0, l.X)()],
       canUsePremiumCustomization: m,
       disabledInputs: true,
       hideViewFullProfileButton: true

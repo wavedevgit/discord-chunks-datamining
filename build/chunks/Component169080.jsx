@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk297781 = require("./297781.jsx"),
@@ -24,16 +24,16 @@ let g = [require("./191420.js"), require("./774621.js"), require("./49274.js"), 
 function E(e) {
   var t, n;
   let {
-    generateImageRef: o,
+    generateImageRef: a,
     leaderboard: g,
     userId: E,
     guildId: b
   } = e, y = (0, s.e7)([u.default], () => u.default.getUser(E)), O = g.guild_settings.sort_by_statistic_id, v = i.useMemo(() => g.users.findIndex(e => e.user_id === E) + 1, [g, E]), I = i.useMemo(() => g.users.find(e => e.user_id === E), [g, E]);
-  a()(null != I, "User row should not be null"), a()(null != y, "User must exist");
+  o()(null != I, "User row should not be null"), o()(null != y, "User must exist");
   let T = d.ZP.getName(b, true, y),
     S = null != (n = null == (t = I.statistics[O]) ? true : t.value) ? n : 0;
   return (0, r.jsxs)("div", {
-    ref: o,
+    ref: a,
     className: m.container,
     children: [(0, r.jsx)(p.Z, {
       user: y,

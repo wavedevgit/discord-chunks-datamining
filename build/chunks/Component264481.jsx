@@ -1,10 +1,10 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 264481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P9: () => _,
   Uf: () => P,
   b0: () => v,
-  s_: () => h
+  s_: () => x
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -26,7 +26,7 @@ let b = [() => Chunk388032.intl.string(Chunk388032.t.madJdH), () => Chunk388032.
   }), () => Chunk388032.intl.string(Chunk388032.t["rrYh5+"]), () => Chunk388032.intl.string(Chunk388032.t["HX3K+P"]), () => Chunk388032.intl.string(Chunk388032.t["/yW3aW"]), () => Chunk388032.intl.string(Chunk388032.t["PmL/v7"]), () => Chunk388032.intl.string(Chunk388032.t.IALa3t), () => Chunk388032.intl.string(Chunk388032.t.HRcTFB), () => Chunk388032.intl.string(Chunk388032.t.NuCqPj), () => Chunk388032.intl.string(Chunk388032.t["M1tw+/"]), () => Chunk388032.intl.string(Chunk388032.t.UBm1y8), () => Chunk388032.intl.string(Chunk388032.t.Cu95PT), () => Chunk388032.intl.string(Chunk388032.t["R/wFur"]), () => Chunk388032.intl.string(Chunk388032.t.HQPAVV), () => Chunk388032.intl.string(Chunk388032.t.YolGh4)],
   O = [Chunk981631.ABu.STEAM, Chunk981631.ABu.PLAYSTATION, Chunk981631.ABu.XBOX, Chunk981631.ABu.TWITCH, Chunk981631.ABu.BATTLENET, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.EPIC_GAMES, Chunk981631.ABu.RIOT_GAMES, Chunk981631.ABu.ROBLOX, Chunk981631.ABu.SPOTIFY, Chunk981631.ABu.YOUTUBE, Chunk981631.ABu.CRUNCHYROLL, Chunk981631.ABu.BUNGIE];
 
-function x(e) {
+function h(e) {
   let {
     heading: t,
     bodyText: n,
@@ -49,13 +49,13 @@ function x(e) {
   })
 }
 
-function h() {
+function x() {
   let e = Chunk388032.intl.string(Chunk388032.t.RnD2yc),
     [t] = Chunk73800.useState(() => {
       var e;
       return (null != (e = (0, Chunk392711.sample)(b)) ? module : b[0])()
     });
-  return (0, Chunk255367.jsx)(x, {
+  return (0, Chunk255367.jsx)(h, {
     heading: module,
     bodyText: exports
   })
@@ -67,7 +67,7 @@ function v() {
       var e;
       return (null != (e = (0, Chunk392711.sample)(j)) ? module : j[0])()
     });
-  return (0, Chunk255367.jsx)(x, {
+  return (0, Chunk255367.jsx)(h, {
     heading: module,
     bodyText: exports
   })
@@ -89,7 +89,7 @@ function _(e) {
       recipientIds: t.id
     }), null == s || s()
   }, [t.id, s]);
-  return (0, r.jsx)(x, {
+  return (0, r.jsx)(h, {
     heading: p,
     bodyText: b,
     children: (0, r.jsx)("div", {
@@ -129,7 +129,7 @@ function P(e) {
   }, [t]), l = i.useCallback(() => {
     null == t || t(), c.Z.open(p.oAB.CONTENT_AND_SOCIAL, "CONNECTED_GAMES")
   }, [t]);
-  return (0, r.jsxs)(x, {
+  return (0, r.jsxs)(h, {
     heading: m.intl.string(m.t.VB6LWV),
     bodyText: m.intl.string(m.t.KpjsU1),
     children: [(0, r.jsx)(I, {}), (0, r.jsxs)("div", {

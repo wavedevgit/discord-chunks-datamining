@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 37772, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -79,8 +79,8 @@ let B = Chunk73800.memo(function e(t) {
       compact: R = false,
       className: M,
       onContextMenu: B,
-      onClick: F,
-      disableInteraction: H = false,
+      onClick: H,
+      disableInteraction: F = false,
       hasThread: z,
       treatSpam: W
     } = t,
@@ -99,7 +99,7 @@ let B = Chunk73800.memo(function e(t) {
     {
       content: er,
       hasSpoilerEmbeds: ei
-    } = (0, P.Z)(s, {
+    } = (0, I.Z)(s, {
       hideSimpleEmbedContent: Q && J,
       allowList: ee,
       allowHeading: ee,
@@ -110,13 +110,13 @@ let B = Chunk73800.memo(function e(t) {
     eo = (0, a.e7)([g.Z], () => s.hasFlag(D.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(s.id))),
     ea = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === f.Y.LOADED && null != q,
     es = !ea && true === i,
-    ec = (0, I.Z)({
+    ec = (0, P.Z)({
       message: s,
       channel: l,
       enabled: es
     }),
     eu = (0, c.v)(s),
-    ed = (0, O.ro)(s.id, s.channel_id),
+    ed = (0, _.ro)(s.id, s.channel_id),
     ep = (0, p.Z)(s),
     ef = (0, x.iG)(s);
   return ea ? (0, r.jsx)(e, G(U({}, t), {
@@ -131,8 +131,8 @@ let B = Chunk73800.memo(function e(t) {
   }) : (0, r.jsx)(E.Z, {
     compact: R,
     className: o()(M, {
-      [k.ephemeral]: (0, _.Pv)(s),
-      [k.disableInteraction]: H,
+      [k.ephemeral]: (0, O.Pv)(s),
+      [k.disableInteraction]: F,
       [k.groupStart]: t.isGroupStart
     }),
     childrenRepliedMessage: (0, A.Z)(s, l, K, Y, R),
@@ -167,7 +167,7 @@ let B = Chunk73800.memo(function e(t) {
     childrenMessageContent: (0, N.Z)(t, er),
     childrenSystemMessage: (0, Z.Z)(t),
     onContextMenu: B,
-    onClick: F,
+    onClick: H,
     hasThread: false !== z && null != eo && s.hasFlag(D.iLy.HAS_THREAD),
     hasReply: s.type === D.uaV.REPLY,
     isSystemMessage: (0, v.Z)(s),

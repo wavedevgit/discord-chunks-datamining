@@ -36,7 +36,7 @@ function p(e) {
 function h(e) {
   let t = s.L1.getSetting(),
     n = null != t.backgroundGradientPresetId && t.backgroundGradientPresetId in u.qt && u.qt[t.backgroundGradientPresetId].theme !== e;
-  (0, o.y)(e), n && (0, c.kj)()
+  (0, a.y)(e), n && (0, c.kj)()
 }
 
 function m() {
@@ -50,7 +50,7 @@ function m() {
       colors: null != (n = null == d ? true : d.colors) ? n : "reset_button" === t ? [l.Dp] : [],
       gradientAngle: null != (r = null == d ? true : d.gradientAngle) ? r : 0,
       chassisMixAmount: null != (i = null == d ? true : d.baseMix) ? i : l.BH
-    }), "reset_button" === t ? h(p(null != (u = e.current) ? u : a.Z.theme)) : (0, o.UD)();
+    }), "reset_button" === t ? h(p(null != (u = e.current) ? u : o.Z.theme)) : (0, a.UD)();
     let f = s.L1.getSetting().backgroundGradientPresetId;
     null != f && (0, c.zO)(f)
   }, [])
@@ -70,7 +70,7 @@ function b() {
   let {
     colors: r,
     chassisMixAmount: i,
-    gradientAngle: o
-  } = (0, Chunk233398.Ig)(), a = Chunk695346.L1.getSetting().customUserThemeSettings, c = null != (e = null == Chunk210887 ? true : Chunk210887.colors) ? module : [Chunk233398.Dp], u = null != (t = null == Chunk210887 ? true : Chunk210887.gradientAngle) ? exports : 0, d = null != (n = null == Chunk210887 ? true : Chunk210887.baseMix) ? require : Chunk233398.BH;
+    gradientAngle: a
+  } = (0, Chunk233398.Ig)(), o = Chunk695346.L1.getSetting().customUserThemeSettings, c = null != (e = null == Chunk210887 ? true : Chunk210887.colors) ? module : [Chunk233398.Dp], u = null != (t = null == Chunk210887 ? true : Chunk210887.gradientAngle) ? exports : 0, d = null != (n = null == Chunk210887 ? true : Chunk210887.baseMix) ? require : Chunk233398.BH;
   return JSON.stringify(Chunk73800) === JSON.stringify(Chunk238302) && Chunk780384 === Chunk231338 && Chunk781391 === Chunk469115
 }

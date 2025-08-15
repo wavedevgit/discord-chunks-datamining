@@ -4,7 +4,7 @@
 var Chunk444675 = require("./444675.js");
 let Chunk620633 = require("./620633.js"),
   Chunk517024 = require("./517024.js"),
-  a = Chunk517024.isObject,
+  o = Chunk517024.isObject,
   s = Chunk517024.hasOwn;
 
 function l() {}
@@ -77,7 +77,7 @@ l.prototype._shouldRetry = function(e, t) {
 }, l.prototype.get = function(e) {
   return this._header[e.toLowerCase()]
 }, l.prototype.getHeader = l.prototype.get, l.prototype.set = function(e, t) {
-  if (a(e)) {
+  if (o(e)) {
     for (let t in e) s(e, t) && this.set(t, e[t]);
     return this
   }
@@ -87,7 +87,7 @@ l.prototype._shouldRetry = function(e, t) {
 }, l.prototype.field = function(e, t, n) {
   if (null == e) throw Error(".field(name, val) name can not be empty");
   if (this._data) throw Error(".field() can't be used if .send() is used. Please use only .send() or only .field() & .attach()");
-  if (a(e)) {
+  if (o(e)) {
     for (let t in e) s(e, t) && this.field(t, e[t]);
     return this
   }
@@ -131,12 +131,12 @@ l.prototype._shouldRetry = function(e, t) {
     headers: this._header
   }
 }, l.prototype.send = function(e) {
-  let t = a(e),
+  let t = o(e),
     n = this._header["content-type"];
   if (this._formData) throw Error(".send() can't be used if .attach() or .field() is used. Please use only .send() or only .field() & .attach()");
   if (t && !this._data) Array.isArray(e) ? this._data = [] : this._isHost(e) || (this._data = {});
   else if (e && this._data && this._isHost(this._data)) throw Error("Can't merge these send calls");
-  if (t && a(this._data))
+  if (t && o(this._data))
     for (let t in e) {
       if ("bigint" == typeof e[t] && !e[t].toJSON) throw Error("Cannot serialize BigInt value to json");
       s(e, t) && (this._data[t] = e[t])

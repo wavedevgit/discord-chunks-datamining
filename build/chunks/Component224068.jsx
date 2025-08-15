@@ -1,28 +1,28 @@
-/** Chunk was on 84691 **/
+/** Chunk was on 32160 **/
 /** chunk id: 224068, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 }), require("./314940.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk278074 = require("./278074.js"),
   Chunk979554 = require("./979554.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk351768 = require("./351768.js");
 
-function d(e) {
+function u(e) {
   var t;
   let {
     product: n,
-    isDarkText: i = false,
-    isOrbExclusive: d = false
-  } = e, m = (t = n.type, d ? c.intl.string(c.t["0TmQRE"]) : (0, l.EQ)(t).with(o.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOj)).otherwise(() => null));
+    isDarkText: a = false,
+    isOrbExclusive: u = false
+  } = e, m = (t = n.type, u ? l.intl.string(l.t["0TmQRE"]) : (0, o.EQ)(t).with(c.Z.AVATAR_DECORATION, () => l.intl.string(l.t["7v0T9P"])).with(c.Z.PROFILE_EFFECT, () => l.intl.string(l.t.wR5wOj)).otherwise(() => null));
   return null === m ? null : (0, r.jsx)(s.Text, {
     variant: "text-xxs/normal",
-    className: a()([u.container, i ? u.darkText : u.lightText]),
+    className: i()([d.container, a ? d.darkText : d.lightText]),
     children: m
   })
 }

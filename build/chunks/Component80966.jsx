@@ -55,8 +55,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 class m extends Chunk73800.Component {
@@ -98,12 +98,12 @@ class m extends Chunk73800.Component {
         onControlsHide: L,
         onVolumeChange: x,
         onMute: M,
-        disableArrowKeySeek: j,
-        alt: k = Chunk388032.intl.string(Chunk388032.t.FlNoSU)
+        disableArrowKeySeek: k,
+        alt: j = Chunk388032.intl.string(Chunk388032.t.FlNoSU)
       } = module,
       U = p(module, ["src", "fileSize", "className", "mediaPlayerClassName", "poster", "fileName", "naturalWidth", "naturalHeight", "playable", "downloadable", "volume", "autoPlay", "autoMute", "responsive", "mediaLayoutType", "mimeType", "renderOverlayContent", "renderLinkComponent", "onClick", "onPlay", "onPause", "onEnded", "onControlsShow", "onControlsHide", "onVolumeChange", "onMute", "disableArrowKeySeek", "alt"]);
     return (0, Chunk255367.jsx)(Chunk124347.ZP, _(d({
-      alt: k,
+      alt: j,
       className: Chunk73800,
       src: f
     }, U), {
@@ -117,7 +117,7 @@ class m extends Chunk73800.Component {
         let {
           src: i,
           size: {
-            width: a,
+            width: o,
             height: c
           }
         } = e, d = !(m <= l.N_j && g <= l.XKF || m <= l.XKF && g <= l.N_j);
@@ -126,7 +126,7 @@ class m extends Chunk73800.Component {
           forceExternal: d,
           src: t,
           poster: i,
-          width: a,
+          width: o,
           height: c,
           responsive: I,
           volume: y,
@@ -135,7 +135,7 @@ class m extends Chunk73800.Component {
           type: s.ZP.Types.VIDEO,
           mediaLayoutType: T,
           fileName: h,
-          fileSize: null == n ? true : (0, o.Ng)(n),
+          fileSize: null == n ? true : (0, a.Ng)(n),
           fileSizeBytes: null == n ? true : n,
           playable: E,
           renderLinkComponent: N,
@@ -150,7 +150,7 @@ class m extends Chunk73800.Component {
           onControlsHide: L,
           mimeType: S,
           downloadable: b,
-          disableArrowKeySeek: j
+          disableArrowKeySeek: k
         })
       }
     }))

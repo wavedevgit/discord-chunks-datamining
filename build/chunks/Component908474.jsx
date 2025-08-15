@@ -1,7 +1,7 @@
-/** Chunk was on 1355 **/
-/** chunk id: 908474, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 78079 **/
+/** chunk id: 908474, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => u
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -15,52 +15,52 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk87819 = require("./87819.js");
 
-function A(e) {
+function u(A) {
   let {
-    member: t
-  } = e, n = t.userId, A = t.guildId, T = (0, i.e7)([c.Z], () => c.Z.getEnhancedMember(A, n), [n, A]), m = (null != T ? T : t).unusualDMActivityUntil, I = l.useCallback(e => {
-    if (null == e) return null;
-    let t = new Date(e).getTime();
-    return (0, u.fv)(t, u.jq.JOINED_AT)
-  }, []), g = l.useMemo(() => null == t ? null : I(m), [t, I, m]), N = l.useMemo(() => (0, o.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), h = l.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
-  return null != m || N ? (0, r.jsx)(s.xJW, {
-    title: d.intl.string(d.t["7V375+"]),
-    titleClassName: _.infoTitle,
-    children: (0, r.jsxs)(E.WM, {
-      children: [null != m && (0, r.jsx)(E._2, {
-        icon: (0, r.jsx)(s.b6m, {
+    member: e
+  } = A, t = e.userId, u = e.guildId, h = (0, l.e7)([g.Z], () => g.Z.getEnhancedMember(u, t), [t, u]), d = (null != h ? h : e).unusualDMActivityUntil, E = r.useCallback(A => {
+    if (null == A) return null;
+    let e = new Date(A).getTime();
+    return (0, o.fv)(e, o.jq.JOINED_AT)
+  }, []), C = r.useMemo(() => null == e ? null : E(d), [e, E, d]), B = r.useMemo(() => (0, s.J)(e.communicationDisabledUntil), [e.communicationDisabledUntil]), w = r.useMemo(() => null == e.communicationDisabledUntil ? new Date : new Date(e.communicationDisabledUntil), [e.communicationDisabledUntil]);
+  return null != d || B ? (0, n.jsx)(i.xJW, {
+    title: f.intl.string(f.t["7V375+"]),
+    titleClassName: v.infoTitle,
+    children: (0, n.jsxs)(c.WM, {
+      children: [null != d && (0, n.jsx)(c._2, {
+        icon: (0, n.jsx)(i.b6m, {
           size: "custom",
           color: "currentColor",
-          width: E.Mn,
-          height: E.Mn
+          width: c.Mn,
+          height: c.Mn
         }),
-        name: (0, r.jsx)(s.Text, {
+        name: (0, n.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: d.intl.string(d.t.ZRnONz)
+          children: f.intl.string(f.t.ZRnONz)
         }),
-        description: (0, r.jsx)(s.Text, {
+        description: (0, n.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: g
+          children: C
         })
-      }), N && null != h && (0, r.jsx)(E._2, {
-        icon: (0, r.jsx)(s.YlB, {
+      }), B && null != w && (0, n.jsx)(c._2, {
+        icon: (0, n.jsx)(i.YlB, {
           size: "custom",
           color: "currentColor",
-          width: E.Mn,
-          height: E.Mn
+          width: c.Mn,
+          height: c.Mn
         }),
-        name: (0, r.jsx)(s.Text, {
+        name: (0, n.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: d.intl.string(d.t["TJ8/tL"])
+          children: f.intl.string(f.t["TJ8/tL"])
         }),
-        description: (0, r.jsx)(s.Text, {
+        description: (0, n.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: (0, r.jsx)(a.Z, {
-            deadline: h,
+          children: (0, n.jsx)(a.Z, {
+            deadline: w,
             showUnits: true,
             stopAtOneSec: true
           })

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -32,22 +32,22 @@ function h(e) {
     isIgnored: u.Z.isIgnored(t.id)
   }));
   return h || m && !i ? (0, r.jsxs)(d.Z.Overlay, {
-    className: o()(p.container, n),
-    children: [h && (0, r.jsx)(a.xv, {
+    className: a()(p.container, n),
+    children: [h && (0, r.jsx)(o.xv, {
       variant: "text-sm/semibold",
       color: "header-secondary",
       children: _.intl.string(_.t["oC/fU1"])
     }), m && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.xv, {
+      children: [(0, r.jsx)(o.xv, {
         variant: "text-sm/semibold",
         color: "header-secondary",
         children: _.intl.string(_.t.HXz5Ag)
       }), (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(a.xv, {
+        children: [(0, r.jsx)(o.xv, {
           variant: "text-sm/semibold",
           color: "header-secondary",
           children: "•"
-        }), (0, r.jsx)(a.xv, {
+        }), (0, r.jsx)(o.xv, {
           variant: "text-sm/semibold",
           color: "header-secondary",
           children: _.intl.format(_.t.PrtAq6, {

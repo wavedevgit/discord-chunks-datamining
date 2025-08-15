@@ -2,7 +2,7 @@
 /** chunk id: 430075, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => h
+  default: () => L
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -17,7 +17,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk532223 = require("./532223.js");
 
-function _() {
+function d() {
   return (0, Chunk255367.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.DANGER,
     className: Chunk532223.nagbar,
@@ -37,37 +37,37 @@ function _() {
   })
 }
 
-function m(e) {
-  let {} = e, t = (0, i.e7)([d.Z], () => d.Z.getAgeCheckStatus());
-  return t === u.oE.NONE ? null : t === u.oE.SUCCESS ? (0, a.jsx)(r.Wn, {
-    messageType: r.QYI.POSITIVE,
-    children: f.intl.format(f.t.maZDLy, {
+function S(e) {
+  let {} = e, t = (0, r.e7)([_.Z], () => _.Z.getAgeCheckStatus());
+  return t === l.oE.NONE ? null : t === l.oE.SUCCESS ? (0, i.jsx)(a.Wn, {
+    messageType: a.QYI.POSITIVE,
+    children: I.intl.format(I.t.maZDLy, {
       login: "/login"
     })
-  }) : t === u.oE.ERROR ? (0, a.jsx)(r.Wn, {
-    messageType: r.QYI.ERROR,
-    children: f.intl.string(f.t["4sILBQ"])
-  }) : t === u.oE.FAILURE ? (0, a.jsx)(r.Wn, {
-    messageType: r.QYI.ERROR,
-    children: f.intl.string(f.t["40R63t"])
-  }) : (0, a.jsx)(r.Wn, {
-    messageType: r.QYI.INFO,
-    children: f.intl.string(f.t["nhhy/f"])
+  }) : t === l.oE.ERROR ? (0, i.jsx)(a.Wn, {
+    messageType: a.QYI.ERROR,
+    children: I.intl.string(I.t["4sILBQ"])
+  }) : t === l.oE.FAILURE ? (0, i.jsx)(a.Wn, {
+    messageType: a.QYI.ERROR,
+    children: I.intl.string(I.t["40R63t"])
+  }) : (0, i.jsx)(a.Wn, {
+    messageType: a.QYI.INFO,
+    children: I.intl.string(I.t["nhhy/f"])
   })
 }
 
-function g() {
+function N() {
   return (0, Chunk255367.jsxs)("div", {
     className: Chunk532223.pageContainer,
-    children: [(0, Chunk255367.jsx)(m, {}), (0, Chunk255367.jsx)(Chunk518560.Z, {})]
+    children: [(0, Chunk255367.jsx)(S, {}), (0, Chunk255367.jsx)(Chunk518560.Z, {})]
   })
 }
 
-function h() {
+function L() {
   return null == (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getSuspendedUserToken()) && (0, Chunk703656.uL)(Chunk981631.Z5c.LOGIN, {
     source: "suspended_user_safety_hub_page"
   }), (0, Chunk255367.jsxs)("div", {
     className: Chunk532223.container,
-    children: [(0, Chunk255367.jsx)(_, {}), (0, Chunk255367.jsx)(g, {})]
+    children: [(0, Chunk255367.jsx)(d, {}), (0, Chunk255367.jsx)(N, {})]
   })
 }

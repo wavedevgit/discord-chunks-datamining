@@ -1,7 +1,8 @@
-/** Chunk was on 7654 **/
+/** Chunk was on 86915 **/
 /** chunk id: 530436, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  W: () => g
+  W: () => h
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -13,37 +14,37 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk451964 = require("./451964.js");
 
-function g(e) {
+function h(e) {
   let {
     guild: t,
     error: n,
-    onClose: g
-  } = e, h = t.id, m = i.useCallback(() => {
-    g(), a.Z.open(h, u.pNK.INVITES)
-  }, [h, g]), p = i.useCallback(e => (0, l.jsx)(r.P3F, {
-    className: c.errorLink,
+    onClose: h
+  } = e, g = t.id, m = l.useCallback(() => {
+    h(), a.Z.open(g, c.pNK.INVITES)
+  }, [g, h]), p = l.useCallback(e => (0, i.jsx)(r.P3F, {
+    className: u.errorLink,
     onClick: m,
-    children: (0, l.jsx)(r.Text, {
+    children: (0, i.jsx)(r.Text, {
       variant: "text-xs/normal",
       color: "text-link",
       tag: "span",
       children: e
     })
-  }), [m]), v = i.useCallback(e => (0, l.jsx)(r.eee, {
-    href: u.EYA.INVITES_HELP,
+  }), [m]), f = l.useCallback(e => (0, i.jsx)(r.eee, {
+    href: c.EYA.INVITES_HELP,
     target: "_blank",
-    children: (0, l.jsx)(r.Text, {
+    children: (0, i.jsx)(r.Text, {
       variant: "text-xs/normal",
       color: "text-link",
       tag: "span",
       children: e
     })
-  }), []), x = n instanceof s.Z ? n.code !== u.evJ.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.Z.can(u.Plq.MANAGE_GUILD, t) ? d.intl.format(d.t["H/RUY2"], {
+  }), []), x = n instanceof s.Z ? n.code !== c.evJ.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.Z.can(c.Plq.MANAGE_GUILD, t) ? d.intl.format(d.t["H/RUY2"], {
     inviteListHook: p,
-    inviteHelpHook: v
+    inviteHelpHook: f
   }) : d.intl.string(d.t["/FxH6O"]) : "message" in n ? n.message : d.intl.string(d.t.eAn6z8);
-  return (0, l.jsx)(r.Text, {
-    className: c.errorMessage,
+  return (0, i.jsx)(r.Text, {
+    className: u.errorMessage,
     variant: "text-xs/normal",
     color: "text-danger",
     children: x

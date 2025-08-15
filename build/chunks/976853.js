@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 976853, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96473 **/
+/** chunk id: 976853, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -8,10 +7,10 @@ var Chunk399606 = require("./399606.js"),
   Chunk592125 = require("./592125.js"),
   Chunk176505 = require("./176505.js");
 
-function a(e) {
-  let t = (0, r.e7)([i.Z], () => {
-    let t = i.Z.getChannel(e);
-    return (null == t ? true : t.parent_id) != null && t.isForumPost() ? i.Z.getChannel(null == t ? true : t.parent_id) : null
+function a(t) {
+  let n = (0, l.e7)([i.Z], () => {
+    let n = i.Z.getChannel(t);
+    return (null == n ? true : n.parent_id) != null && n.isForumPost() ? i.Z.getChannel(null == n ? true : n.parent_id) : null
   });
-  return (null == t ? true : t.hasFlag(o.zZ.HIDE_MEDIA_DOWNLOAD_OPTIONS)) === true
+  return (null == n ? true : n.hasFlag(r.zZ.HIDE_MEDIA_DOWNLOAD_OPTIONS)) === true
 }

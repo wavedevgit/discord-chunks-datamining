@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk94171 = require("./94171.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -135,8 +135,8 @@ class N extends Chunk73800.PureComponent {
       resultItems: t,
       resultQuery: n,
       query: i,
-      favorites: o,
-      searchOffset: a,
+      favorites: a,
+      searchOffset: o,
       searchLimit: s,
       searchTotalResults: l,
       suggestions: c,
@@ -155,7 +155,7 @@ class N extends Chunk73800.PureComponent {
       resultType: Chunk68405,
       resultQuery: require,
       query: Chunk73800,
-      searchOffset: a,
+      searchOffset: o,
       searchLimit: Chunk94171,
       searchTotalResults: Chunk442837,
       suggestions: Chunk481060,
@@ -171,7 +171,7 @@ class N extends Chunk73800.PureComponent {
       id: Chunk149203.vO,
       role: "tabpanel",
       "aria-labelledby": Chunk149203._3,
-      className: a()(Chunk577021.container, module),
+      className: o()(Chunk577021.container, module),
       onClick: A,
       ref: exports,
       children: [(0, Chunk255367.jsx)("div", {
@@ -228,8 +228,8 @@ let C = Chunk73800.forwardRef((e, t) => {
   e.persistSearch || (0, _.ql)("");
   let {
     query: n,
-    resultQuery: o,
-    resultItems: a,
+    resultQuery: a,
+    resultItems: o,
     suggestions: c
   } = (0, l.cj)([p.Z], () => ({
     query: p.Z.getQuery(),
@@ -251,8 +251,8 @@ let C = Chunk73800.forwardRef((e, t) => {
   }, [d, g]), (0, r.jsx)(N, S(I({}, e), {
     forwardedRef: t,
     query: f,
-    resultQuery: o,
-    resultItems: a,
+    resultQuery: a,
+    resultItems: o,
     suggestions: c,
     favorites: m,
     searchOffset: 0,

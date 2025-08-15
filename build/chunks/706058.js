@@ -1,40 +1,39 @@
-/** Chunk was on web.js **/
-/** chunk id: 706058, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92522 **/
+/** chunk id: 706058, original params: n,e,t (module,exports,require) **/
 require.d(exports, {
-  Dk: () => a,
-  Ix: () => s,
-  me: () => o
+  Dk: () => u,
+  Ix: () => a,
+  me: () => l
 });
 var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
-async function o(e, t, n, o, a) {
-  return (await r.tn.post({
-    url: i.ANM.STAGE_INSTANCES,
+async function l(n, e, t, l, u) {
+  return (await i.tn.post({
+    url: r.ANM.STAGE_INSTANCES,
     body: {
-      channel_id: e,
-      topic: t,
-      privacy_level: n,
-      guild_scheduled_event_id: a,
-      send_start_notification: o
+      channel_id: n,
+      topic: e,
+      privacy_level: t,
+      guild_scheduled_event_id: u,
+      send_start_notification: l
     },
     rejectWithError: false
   })).body
 }
-async function a(e, t, n) {
-  return (await r.tn.patch({
-    url: i.ANM.STAGE_INSTANCE(e),
+async function u(n, e, t) {
+  return (await i.tn.patch({
+    url: r.ANM.STAGE_INSTANCE(n),
     body: {
-      topic: t,
-      privacy_level: n
+      topic: e,
+      privacy_level: t
     },
     rejectWithError: false
   })).body
 }
 
-function s(e) {
-  return r.tn.del({
-    url: i.ANM.STAGE_INSTANCE(e),
+function a(n) {
+  return i.tn.del({
+    url: r.ANM.STAGE_INSTANCE(n),
     rejectWithError: false
   })
 }

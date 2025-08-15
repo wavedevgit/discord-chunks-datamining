@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk658722 = require("./658722.js"),
   l = require.n(Chunk658722),
   Chunk512722 = require("./512722.js"),
@@ -62,7 +62,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk430864 = require("./430864.js"),
   Chunk197571 = require("./197571.js");
 
-function eo(e, t, n) {
+function ea(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -71,14 +71,14 @@ function eo(e, t, n) {
   }) : e[t] = n, e
 }
 
-function ea(e) {
+function eo(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      eo(e, t, n[t])
+      ea(e, t, n[t])
     })
   }
   return e
@@ -93,7 +93,7 @@ function el(e) {
     text: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(en.warningOuterContainer, t),
+    className: o()(en.warningOuterContainer, t),
     children: [(0, r.jsx)(E.d3s, {
       size: "md",
       color: "currentColor",
@@ -150,7 +150,7 @@ let ec = e => {
           applicationName: e.name
         })
       })]
-    })), (0, E.h7j)(e => (0, r.jsx)(T.default, ea({
+    })), (0, E.h7j)(e => (0, r.jsx)(T.default, eo({
       title: n,
       body: i,
       confirmText: et.intl.string(et.t.xUqheH),
@@ -164,12 +164,12 @@ let ec = e => {
       application: t,
       isVisible: n
     } = e, i = () => {
-      null != t.terms_of_service_url && (0, V.q)({
+      null != t.terms_of_service_url && (0, Z.q)({
         href: t.terms_of_service_url,
         shouldConfirm: true
       })
-    }, o = () => {
-      null != t.privacy_policy_url && (0, V.q)({
+    }, a = () => {
+      null != t.privacy_policy_url && (0, Z.q)({
         href: t.privacy_policy_url,
         shouldConfirm: true
       })
@@ -194,7 +194,7 @@ let ec = e => {
           className: en.divider
         }) : null, (0, r.jsxs)(m.P, {
           tag: "a",
-          onClick: o,
+          onClick: a,
           className: en.privacy,
           tabIndex: n ? 0 : false,
           children: [(0, r.jsx)(E.R94, {
@@ -211,28 +211,28 @@ let ec = e => {
   ef = e => {
     let {
       scopes: t,
-      application: o,
+      application: a,
       selectedChannelId: s,
       selectedGuildId: l,
       onDelete: c,
       disclosures: d,
       locale: p,
       id: g
-    } = e, b = o.id, I = i.useMemo(() => M.ZP.createFromServer(o), [o]), T = (0, F.yE)(I.flags, $.udG.EMBEDDED), S = (0, _.e7)([q.Z], () => {
+    } = e, b = a.id, I = i.useMemo(() => M.ZP.createFromServer(a), [a]), T = (0, F.yE)(I.flags, $.udG.EMBEDDED), S = (0, _.e7)([q.Z], () => {
       var e, t, n, r;
       return null == (r = q.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[b]) || null == (e = t.appDmSettings) ? true : e.allowMobilePush
     }, [b]), A = C.w.useExperiment({
       location: "oauth2_authorize"
-    }), P = o.bot, j = (0, _.e7)([k.Z], () => k.Z.getDMFromUserId(null == P ? true : P.id)), {
+    }), P = a.bot, k = (0, _.e7)([j.Z], () => j.Z.getDMFromUserId(null == P ? true : P.id)), {
       appDMChannelMuteConfig: U,
       dmChannelMuted: G
-    } = (0, _.cj)([B.ZP], () => null == j ? {
+    } = (0, _.cj)([B.ZP], () => null == k ? {
       appDMChannelMuteConfig: null,
       dmChannelMuted: false
     } : {
-      appDMChannelMuteConfig: B.ZP.getChannelMuteConfig(null, j),
-      dmChannelMuted: B.ZP.isChannelMuted(null, j)
-    }), [V, W] = i.useState(false), [K, Q] = i.useState(false), eo = () => {
+      appDMChannelMuteConfig: B.ZP.getChannelMuteConfig(null, k),
+      dmChannelMuted: B.ZP.isChannelMuted(null, k)
+    }), [Z, W] = i.useState(false), [K, Q] = i.useState(false), ea = () => {
       let e = [];
       for (let n of t) e.push(...(0, x.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(et.intl.string(et.t.Ls2XRk));
       if (e.length > 0 || null != d && d.length > 0) return (0, r.jsx)(E.zF9, {
@@ -283,7 +283,7 @@ let ec = e => {
             }), !K && (0, r.jsx)(E.Text, {
               variant: "text-sm/normal",
               color: "text-secondary",
-              className: a()(en.appDetailsContent, en.permissionsDescription),
+              className: o()(en.appDetailsContent, en.permissionsDescription),
               children: et.intl.format(et.t.nZOS8v, {
                 numPermissions: e.length
               })
@@ -292,23 +292,23 @@ let ec = e => {
         }
       })
     }, es = i.useMemo(() => {
-      if (null != o.description && "" !== o.description) return (0, r.jsx)(E.Text, {
+      if (null != a.description && "" !== a.description) return (0, r.jsx)(E.Text, {
         className: er.markup,
         variant: "text-sm/normal",
         color: "text-default",
-        children: (0, L.parseBioReact)(o.description)
+        children: (0, L.parseBioReact)(a.description)
       })
-    }, [o.description]), ef = () => {
-      let e = null != o.description && "" !== o.description,
-        t = null != o.terms_of_service_url || null != o.privacy_policy_url;
+    }, [a.description]), ef = () => {
+      let e = null != a.description && "" !== a.description,
+        t = null != a.terms_of_service_url || null != a.privacy_policy_url;
       return e || t ? (0, r.jsx)(E.zF9, {
         className: en.appDetailsSection,
-        isExpanded: V,
+        isExpanded: Z,
         collapsibleContent: (0, r.jsxs)("div", {
           className: en.appDetailsContent,
           children: [e && es, t && (0, r.jsx)(ed, {
-            application: o,
-            isVisible: V
+            application: a,
+            isVisible: Z
           })]
         }),
         children: e => {
@@ -318,13 +318,13 @@ let ec = e => {
           return (0, r.jsxs)(m.P, {
             className: en.appDetailsSectionHeader,
             onClick: e => {
-              W(!V), t(e)
+              W(!Z), t(e)
             },
             children: [(0, r.jsx)(E.X6q, {
               variant: "heading-sm/medium",
               color: "header-primary",
               children: et.intl.string(et.t.fcYgiY)
-            }), V ? (0, r.jsx)(E.CJ0, {
+            }), Z ? (0, r.jsx)(E.CJ0, {
               size: "md",
               color: E.TVs.colors.INTERACTIVE_NORMAL
             }) : (0, r.jsx)(E.Fbu, {
@@ -335,9 +335,9 @@ let ec = e => {
         }
       }) : null
     }, e_ = () => {
-      let e = Z.ZP.getApplicationIconURL({
-          id: o.id,
-          icon: o.icon
+      let e = V.ZP.getApplicationIconURL({
+          id: a.id,
+          icon: a.icon
         }),
         t = null != e ? (0, r.jsx)(D.Z.Child, {
           className: en.appAvatarV2,
@@ -354,8 +354,8 @@ let ec = e => {
           className: en.headerTextContainerV2,
           children: [(0, r.jsx)(E.X6q, {
             variant: "heading-md/semibold",
-            className: a()(en.headerText, ei.marginBottom4),
-            children: o.name
+            className: o()(en.headerText, ei.marginBottom4),
+            children: a.name
           }), (0, r.jsx)(E.Text, {
             variant: "text-sm/normal",
             color: "text-default",
@@ -380,24 +380,24 @@ let ec = e => {
         })
       }, z.fy.INFREQUENT_USER_ACTION), N.ZP.trackWithMetadata($.rMx.NOTIFICATION_SETTINGS_UPDATED, {
         update_type: ee.I.AUTHORIZED_APP_DM_PUSH_NOTIFICATION,
-        application_id: o.id,
+        application_id: a.id,
         label: e ? H.ZB.Unmuted : H.ZB.Muted
       })
     }, eh = i.useCallback(async () => {
       u()(null != P, "dm channel mute setting requires having a bot user");
-      let e = j;
-      null == e && (e = await y.Z.ensurePrivateChannel(P.id)), G ? O.Z.updateAppDMOverrideSettings(null, e, o.id, {
+      let e = k;
+      null == e && (e = await y.Z.ensurePrivateChannel(P.id)), G ? O.Z.updateAppDMOverrideSettings(null, e, a.id, {
         muted: false
       }, H.ZB.Unmuted) : (0, E.ZDy)(async () => {
         let {
           default: t
         } = await n.e("8246").then(n.bind(n, 540679));
-        return n => (0, r.jsx)(t, ea({
+        return n => (0, r.jsx)(t, eo({
           channelId: e,
-          applicationId: o.id
+          applicationId: a.id
         }, n))
       })
-    }, [j, P, G, o.id]), em = () => A.enabled ? (0, r.jsxs)("div", {
+    }, [k, P, G, a.id]), em = () => A.enabled ? (0, r.jsxs)("div", {
       className: en.directMessagesSection,
       children: [(0, r.jsx)(E.X6q, {
         variant: "heading-sm/medium",
@@ -433,17 +433,17 @@ let ec = e => {
           children: et.intl.string(et.t["Pkw//v"])
         })
       }) : null]
-    }) : null, eg = (0, X.O)(o.id), eE = (0, w.Z)(o), eb = () => (0, r.jsxs)("div", {
+    }) : null, eg = (0, X.O)(a.id), eE = (0, w.Z)(a), eb = () => (0, r.jsxs)("div", {
       className: en.footer,
       children: [eE ? (0, r.jsx)(el, {
         className: en.warningContainer,
         text: et.intl.format(et.t.j4B7ER, {
-          applicationName: o.name
+          applicationName: a.name
         })
       }) : eg ? (0, r.jsx)(el, {
         className: en.warningContainer,
         text: et.intl.format(et.t.jUhnwc, {
-          applicationName: o.name,
+          applicationName: a.name,
           onConnectionPress: () => v.Z.setSection($.jXE.SETTINGS_CONNECTIONS)
         })
       }) : null, (0, r.jsx)("div", {
@@ -452,7 +452,7 @@ let ec = e => {
           variant: "critical-secondary",
           size: "sm",
           text: et.intl.string(et.t.xUqheH),
-          onClick: () => eu(o, c)
+          onClick: () => eu(a, c)
         })
       })]
     });
@@ -462,7 +462,7 @@ let ec = e => {
         component: e_(),
         children: (0, r.jsxs)("div", {
           className: en.appDetailsContainer,
-          children: [ef(), eo(), em(), eb()]
+          children: [ef(), ea(), em(), eb()]
         })
       })
     })
@@ -479,8 +479,8 @@ let ec = e => {
         fetchState: Chunk881998.Z.getFetchState(),
         appAuthTokens: Chunk881998.Z.getNewestTokensForNonChildrenApplications()
       })),
-      o = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
-      a = (0, Chunk442837.e7)([Chunk317381.ZP], () => Chunk317381.ZP.getSelfEmbeddedActivities()),
+      a = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
+      o = (0, Chunk442837.e7)([Chunk317381.ZP], () => Chunk317381.ZP.getSelfEmbeddedActivities()),
       s = (0, Chunk442837.e7)([Chunk592125.Z, Chunk944486.Z], () => Chunk592125.Z.getChannel(Chunk944486.Z.getChannelId())),
       c = null == Chunk658722 ? true : Chunk658722.getGuildId();
     Chunk73800.useEffect(() => {
@@ -496,7 +496,7 @@ let ec = e => {
           application: n
         } = e;
         b.Z.delete(t);
-        let r = a.get(n.id);
+        let r = o.get(n.id);
         null != r && A.Z.leaveActivity({
           location: r.location,
           applicationId: n.id,
@@ -540,8 +540,8 @@ let ec = e => {
       }) : 0 === require.length ? Chunk755721(Chunk388032.intl.string(Chunk388032.t.CpPv5u), Chunk388032.intl.string(Chunk388032.t["E+SM6e"])) : 0 === Chunk493683.length ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
         children: [Chunk1561(), Chunk755721(null, Chunk388032.intl.string(Chunk388032.t.EVWFNj))]
       }) : (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-        children: [Chunk1561(), Chunk493683.sort((e, t) => Number(t.id) - Number(e.id)).map(e => (0, r.jsx)(ef, ea({
-          locale: o,
+        children: [Chunk1561(), Chunk493683.sort((e, t) => Number(t.id) - Number(e.id)).map(e => (0, r.jsx)(ef, eo({
+          locale: a,
           onDelete: () => u(e),
           selectedChannelId: null == s ? true : s.id,
           selectedGuildId: null != c ? c : true

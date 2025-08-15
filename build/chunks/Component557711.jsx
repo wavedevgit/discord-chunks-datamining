@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 557711, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 557711, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk5192 = require("./5192.js"),
@@ -21,39 +20,39 @@ function d(e) {
     channelId: i,
     guildId: d,
     source: f,
-    size: _,
-    look: p,
-    color: h,
-    className: m,
-    onAction: g
+    size: p,
+    look: m,
+    color: g,
+    className: h,
+    onAction: b
   } = e, {
-    tooltip: E,
-    loading: b,
+    tooltip: v,
+    loading: _,
     disabled: y,
     onClick: O
-  } = (0, c.Fe)(t, n, f, l.ZP.getNickname(d, i, n)), v = () => {
-    null == g || g(), O()
+  } = (0, c.Fe)(t, n, f, s.ZP.getNickname(d, i, n)), S = () => {
+    null == b || b(), O()
   };
-  return (0, r.jsx)(s.ua7, {
-    text: E,
+  return (0, r.jsx)(o.ua7, {
+    text: v,
     children: e => {
       let {
         onMouseEnter: n,
         onMouseLeave: i
       } = e;
       return (0, r.jsx)(a.zx, {
-        size: _,
-        className: o()(u.syncButton, m),
+        size: p,
+        className: l()(u.syncButton, h),
         innerClassName: u.syncButtonInner,
-        look: p,
-        color: h,
-        onClick: v,
+        look: m,
+        color: g,
+        onClick: S,
         onMouseEnter: n,
         onMouseLeave: i,
         disabled: y,
-        submitting: b,
-        "aria-label": null != E ? E : t.name,
-        children: (0, r.jsx)(s.iOO, {
+        submitting: _,
+        "aria-label": null != v ? v : t.name,
+        children: (0, r.jsx)(o.iOO, {
           size: "xs",
           color: "currentColor"
         })

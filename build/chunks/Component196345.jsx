@@ -33,7 +33,7 @@ function d(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         className: u.termsRowContent,
-        children: a.Z.parseGuildVerificationFormRule(e, true, {
+        children: o.Z.parseGuildVerificationFormRule(e, true, {
           channelId: n
         })
       })]
@@ -68,7 +68,7 @@ function f(e) {
   let {
     formField: t
   } = e;
-  return (0, r.jsx)(o.Ih, {
+  return (0, r.jsx)(a.Ih, {
     icon: s.snC,
     text: c.intl.string(c.t["2xbmoK"]),
     meetsRequirement: !!t.response
@@ -80,7 +80,7 @@ let h = e => {
     formField: n,
     onChange: i
   } = e;
-  return (0, r.jsxs)(o.hK, {
+  return (0, r.jsxs)(a.hK, {
     title: c.intl.string(c.t.Q8OFNz),
     children: [(0, r.jsx)(d, {
       className: u.disabledFieldBackground,

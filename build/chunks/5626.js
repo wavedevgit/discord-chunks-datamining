@@ -1,13 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 5626, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 5626, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk359282 = require("./359282.js"),
   i = require("./65183.js").List;
-module.exports = function(e, t) {
-  return i(e.map(function(e, n) {
-    var i = t[n];
-    return r.create({
-      style: e,
+module.exports = function(t, e) {
+  return i(t.map(function(t, r) {
+    var i = e[r];
+    return n.create({
+      style: t,
       entity: i
     })
   }))

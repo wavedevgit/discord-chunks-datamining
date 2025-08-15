@@ -2,31 +2,31 @@
 /** chunk id: 273284, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk833858 = require("./833858.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function o(e) {
   switch (e.type) {
     case i.IIU.STREAMING:
       let t = null != e.details && "" !== e.details ? e.details : e.name;
-      return null != t ? o.intl.formatToPlainString(o.t["0wJXSk"], {
+      return null != t ? a.intl.formatToPlainString(a.t["0wJXSk"], {
         name: t
       }) : null;
     case i.IIU.LISTENING:
       let n = null != e.details && "" !== e.details ? e.details : e.name;
-      return null != n ? o.intl.formatToPlainString(o.t.Vnuxub, {
+      return null != n ? a.intl.formatToPlainString(a.t.Vnuxub, {
         name: n
       }) : null;
     case i.IIU.WATCHING:
-      let a = null != e.details && "" !== e.details ? e.details : e.name;
-      return null != a ? o.intl.formatToPlainString(o.t.pW3Ip6, {
-        name: a
+      let o = null != e.details && "" !== e.details ? e.details : e.name;
+      return null != o ? a.intl.formatToPlainString(a.t.pW3Ip6, {
+        name: o
       }) : null;
     case i.IIU.COMPETING:
-      return null != e.name ? o.intl.formatToPlainString(o.t.QQ2wVF, {
+      return null != e.name ? a.intl.formatToPlainString(a.t.QQ2wVF, {
         name: e.name
       }) : null;
     case i.IIU.HANG_STATUS:
@@ -35,7 +35,7 @@ function a(e) {
       return null;
     case i.IIU.PLAYING:
     default:
-      return null != e.name ? o.intl.formatToPlainString(o.t.lFApm5, {
+      return null != e.name ? a.intl.formatToPlainString(a.t.lFApm5, {
         game: e.name
       }) : null
   }

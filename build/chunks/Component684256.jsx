@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 684256, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 684256, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
 });
@@ -21,48 +20,48 @@ function h(e) {
   let {
     context: t,
     entrypoint: n,
-    title: o,
+    title: r,
     look: h,
-    items: m,
-    sectionName: g,
-    sectionOverallPosition: E
-  } = e, b = (0, u.s)(), y = i.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
-  return (0, r.jsxs)("section", {
-    className: p.container,
-    "aria-label": _.intl.formatToPlainString(_.t.iobNIC, {
-      sectionTitle: o
+    items: v,
+    sectionName: y,
+    sectionOverallPosition: x
+  } = e, b = (0, u.s)(), g = i.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
+  return (0, l.jsxs)("section", {
+    className: f.container,
+    "aria-label": m.intl.formatToPlainString(m.t.iobNIC, {
+      sectionTitle: r
     }),
-    children: [(0, r.jsxs)("div", {
-      className: p.header,
-      children: [(0, r.jsx)(f.Z, {
-        className: p.backButton
-      }), (0, r.jsx)(s.X6q, {
+    children: [(0, l.jsxs)("div", {
+      className: f.header,
+      children: [(0, l.jsx)(p.Z, {
+        className: f.backButton
+      }), (0, l.jsx)(o.X6q, {
         variant: "heading-md/medium",
         color: "header-primary",
-        children: o
+        children: r
       })]
-    }), (0, r.jsx)(s.Ttm, {
-      children: (0, r.jsx)("div", {
+    }), (0, l.jsx)(o.Ttm, {
+      children: (0, l.jsx)("div", {
         className: a()({
-          [p.appGrid]: h !== d.U4.ROW,
-          [p.rows]: h === d.U4.ROW
+          [f.appGrid]: h !== d.U4.ROW,
+          [f.rows]: h === d.U4.ROW
         }),
-        children: m.map((e, n) => {
+        children: v.map((e, n) => {
           let {
             application: i,
-            installOnDemand: o,
+            installOnDemand: r,
             showsPromoted: a
           } = e;
-          return (0, r.jsx)(y, {
+          return (0, l.jsx)(g, {
             context: t,
             application: i,
             look: h,
-            sectionName: g,
+            sectionName: y,
             resultsPosition: n,
-            location: l.Vh.APP_LAUNCHER_LIST_VIEW_ALL,
-            installOnDemand: o,
+            location: s.Vh.APP_LAUNCHER_LIST_VIEW_ALL,
+            installOnDemand: r,
             isOneClickCTA: b,
-            sectionOverallPosition: E,
+            sectionOverallPosition: x,
             showsPromoted: a
           }, i.id)
         })

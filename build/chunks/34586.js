@@ -1,5 +1,5 @@
-/** Chunk was on 1355 **/
-/** chunk id: 34586, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 78079 **/
+/** chunk id: 34586, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   E: () => a
 });
@@ -8,13 +8,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk206583 = require("./206583.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e) {
-  return (0, r.e7)([l.Z], () => {
-    if (null == e) return;
-    let t = l.Z.getMemberCount(e.id),
-      n = e.features.has(s.oNc.ACTIVITY_FEED_ENABLED_BY_USER),
-      r = e.features.has(s.oNc.ACTIVITY_FEED_DISABLED_BY_USER),
-      a = null != t && t < i.k4;
-    return n || r ? n : a
+function a(A) {
+  return (0, n.e7)([r.Z], () => {
+    if (null == A) return;
+    let e = r.Z.getMemberCount(A.id),
+      t = A.features.has(i.oNc.ACTIVITY_FEED_ENABLED_BY_USER),
+      n = A.features.has(i.oNc.ACTIVITY_FEED_DISABLED_BY_USER),
+      a = null != e && e < l.k4;
+    return t || n ? t : a
   })
 }

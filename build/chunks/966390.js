@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 966390, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 966390, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -14,7 +13,7 @@ let a = {
       channelId: e,
       file: t
     });
-    let n = o.Z.getMessageForFile(t.id);
+    let n = l.Z.getMessageForFile(t.id);
     null != n && "" === i.Z.getDraft(n.channel_id, i.d.ChannelMessage) && r.Z.dispatch({
       type: "DRAFT_SAVE",
       channelId: n.channel_id,

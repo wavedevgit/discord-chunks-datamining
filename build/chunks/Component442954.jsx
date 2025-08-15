@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function f(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var a = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,7 +48,7 @@ function f(e, t) {
     Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(t, a))
   }), e
 }
-let v = {
+let f = {
   CollectiblesExpiryModal: async () => {
     let {
       default: e
@@ -59,7 +59,7 @@ let v = {
     let {
       default: e
     } = await require.e("93288").then(require.bind(require, 396410));
-    return t => (0, n.jsx)(e, f(b({}, t), {
+    return t => (0, n.jsx)(e, v(b({}, t), {
       headerText: x.intl.string(x.t.ZLRYGR),
       confirmButtonText: x.intl.string(x.t.PDTjLC),
       confirmButtonVariant: "primary"
@@ -69,7 +69,7 @@ let v = {
     let {
       default: e
     } = await require.e("94566").then(require.bind(require, 965072));
-    return t => (0, n.jsx)(e, f(b({}, t), {
+    return t => (0, n.jsx)(e, v(b({}, t), {
       headerText: x.intl.string(x.t.H3Q7U1),
       onFormSubmit: () => {},
       onResend: () => {},
@@ -84,7 +84,7 @@ let v = {
     let {
       default: e
     } = await require.e("22447").then(require.bind(require, 686768));
-    return t => (0, n.jsx)(e, f(b({}, t), {
+    return t => (0, n.jsx)(e, v(b({}, t), {
       entryPoint: s.cU.DEV_TOOLS_AGE_VERIFICATION_RETRY_MODAL
     }))
   },
@@ -92,7 +92,7 @@ let v = {
     let {
       default: e
     } = await Promise.all([require.e("6583"), require.e("1337"), require.e("26328")]).then(require.bind(require, 746882));
-    return t => (0, n.jsx)(e, f(b({}, t), {
+    return t => (0, n.jsx)(e, v(b({}, t), {
       source: m.L0.NSFW_SERVER
     }))
   },
@@ -100,14 +100,14 @@ let v = {
     let {
       default: e
     } = await require.e("75435").then(require.bind(require, 751744));
-    return t => (0, n.jsx)(e, f(b({}, t), {
+    return t => (0, n.jsx)(e, v(b({}, t), {
       classificationId: "123"
     }))
   }
 };
 
 function j() {
-  let e = Chunk73800.useMemo(() => Object.keys(v).map(e => ({
+  let e = Chunk73800.useMemo(() => Object.keys(f).map(e => ({
       label: e,
       value: e
     })).sort((e, t) => e.label.localeCompare(t.label)), []),
@@ -133,7 +133,7 @@ function j() {
           }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: "Open",
-            onClick: () => (0, Chunk481060.ZDy)(v[exports])
+            onClick: () => (0, Chunk481060.ZDy)(f[exports])
           })]
         })]
       }), (0, Chunk255367.jsxs)("section", {

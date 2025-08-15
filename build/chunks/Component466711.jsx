@@ -2,7 +2,7 @@
 /** chunk id: 466711, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -91,7 +91,7 @@ function L(e) {
     Component: t,
     events: n,
     play: i
-  } = (0, s.$)(), o = () => {
+  } = (0, s.$)(), a = () => {
     var t;
     i(), null == (t = e.onClick) || t.call(e)
   };
@@ -100,7 +100,7 @@ function L(e) {
     "aria-label": S.intl.string(S.t.Z1RnTk),
     isActive: false,
     noHover: true,
-    onClick: o
+    onClick: a
   }, n), {
     children: (0, r.jsxs)("div", {
       className: A.iconContainer,
@@ -129,10 +129,10 @@ function M(e) {
     channel: l
   } = e, {
     analyticsLocations: E
-  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [v, S] = i.useState(false), N = (0, o.e7)([m.Z], () => !(null === m.Z || true === m.Z ? true : m.Z.hasLayers())), C = (0, o.e7)([g.default], () => g.default.getCurrentUser()), R = null != C ? b.default.age(C.id) : 0, {
+  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [v, S] = i.useState(false), N = (0, a.e7)([m.Z], () => !(null === m.Z || true === m.Z ? true : m.Z.hasLayers())), C = (0, a.e7)([g.default], () => g.default.getCurrentUser()), R = null != C ? b.default.age(C.id) : 0, {
     giftBoxAnimation: P,
     trinketsAnimation: w
-  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, M = null != n.firstTimeNotice && !s && N && R >= x, [j, k] = (0, f.XR)(M ? a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(a.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), U = null != j, G = v || U, B = (0, y.Ft)(l), Z = (0, p.IH)();
+  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, M = null != n.firstTimeNotice && !s && N && R >= x, [k, j] = (0, f.XR)(M ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), U = null != k, G = v || U, B = (0, y.Ft)(l), V = (0, p.IH)();
   if (s) return null;
   let F = () => {
       (0, _.Z)({
@@ -148,17 +148,17 @@ function M(e) {
         }
       })
     },
-    V = () => {
-      S(false), k(T.L.TAKE_ACTION), F()
+    Z = () => {
+      S(false), j(T.L.TAKE_ACTION), F()
     },
     H = true !== P ? (0, r.jsx)(D, {
       config: P,
       hovered: G,
-      onClick: V
-    }) : true !== w && Z ? (0, r.jsx)(L, {
+      onClick: Z
+    }) : true !== w && V ? (0, r.jsx)(L, {
       config: w,
       hovered: G,
-      onClick: V
+      onClick: Z
     }) : (0, r.jsx)(O.Z, {
       disabled: s,
       channel: l
@@ -174,10 +174,10 @@ function M(e) {
     children: true !== n.firstTimeNotice && U ? (0, r.jsx)(h.Z, {
       onComplete: () => S(false),
       onCheckItOutClick: F,
-      markAsDismissed: k,
+      markAsDismissed: j,
       config: n.firstTimeNotice,
       children: H
     }) : H
   })
 }
-let j = Chunk73800.memo(M)
+let k = Chunk73800.memo(M)

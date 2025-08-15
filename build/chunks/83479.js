@@ -1,47 +1,47 @@
-/** Chunk was on 84691 **/
+/** Chunk was on 32160 **/
 /** chunk id: 83479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G: () => u
+  G: () => d
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk979554 = require("./979554.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx");
-let o = function(e) {
+let c = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     if (t) {
       var n;
-      return l.intl.formatToPlainString(l.t["/0Yndn"], {
+      return o.intl.formatToPlainString(o.t["/0Yndn"], {
         num: null == (n = e.bundledProducts) ? true : n.length
       })
     }
-    let [r, i] = null != e.bundledProducts ? e.bundledProducts : [];
-    return l.intl.formatToPlainString(l.t.WQbNhI, {
+    let [r, a] = null != e.bundledProducts ? e.bundledProducts : [];
+    return o.intl.formatToPlainString(o.t.WQbNhI, {
       decoName: r.name,
-      pfxName: i.name
+      pfxName: a.name
     })
   },
   s = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    return null == e ? "" : e.type === i.Z.BUNDLE ? o(e, t) : e.summary
+    return null == e ? "" : e.type === a.Z.BUNDLE ? c(e, t) : e.summary
   },
-  c = function(e) {
+  l = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     switch (null == e ? true : e.type) {
-      case i.Z.AVATAR_DECORATION:
-        return l.intl.string(l.t["3lv7q6"]);
-      case i.Z.PROFILE_EFFECT:
-        return l.intl.string(l.t["VhJL7+"]);
-      case i.Z.NAMEPLATE:
-        return l.intl.string(l.t.ik37ER);
-      case i.Z.BUNDLE:
-        return o(e, t);
+      case a.Z.AVATAR_DECORATION:
+        return o.intl.string(o.t["3lv7q6"]);
+      case a.Z.PROFILE_EFFECT:
+        return o.intl.string(o.t["VhJL7+"]);
+      case a.Z.NAMEPLATE:
+        return o.intl.string(o.t.ik37ER);
+      case a.Z.BUNDLE:
+        return c(e, t);
       default:
         return ""
     }
   },
-  u = function(e) {
+  d = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      n = (null == e ? true : e.skuId) != null && (0, a.o0)(null == e ? true : e.skuId);
-    return (0, r.useMemo)(() => n ? s(e, t) : c(e, t), [n, e, t])
+      n = (null == e ? true : e.skuId) != null && (0, i.o0)(null == e ? true : e.skuId);
+    return (0, r.useMemo)(() => n ? s(e, t) : l(e, t), [n, e, t])
   }

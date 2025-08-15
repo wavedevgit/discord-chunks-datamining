@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk297700 = require("./297700.jsx"),
   Chunk471885 = require("./471885.jsx"),
   Chunk981631 = require("./981631.js"),
@@ -32,13 +32,13 @@ function f(e) {
     iconClassName: i,
     size: l
   } = e;
-  return (0, r.jsx)(a.Z, {
-    className: o()(n, u[t]),
+  return (0, r.jsx)(o.Z, {
+    className: a()(n, u[t]),
     size: l,
     children: (0, r.jsx)(s.Z, {
       tier: t,
       color: "currentColor",
-      className: o()(i, c.boostedGuildIconGem, d[t])
+      className: a()(i, c.boostedGuildIconGem, d[t])
     })
   })
 }

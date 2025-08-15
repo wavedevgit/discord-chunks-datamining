@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 400916, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 400916, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => _
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk399606 = require("./399606.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -18,25 +17,23 @@ var Chunk512722 = require("./512722.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk914388 = require("./914388.js");
 
-function h(e) {
-  var t, n, i, h;
+function _(e) {
+  var t, n, i, _;
   let {
-    guildId: m,
-    productId: g
-  } = e, E = (0, a.e7)([u.Z], () => u.Z.getGuildProduct(g)), b = (null != (h = null == E || null == (t = E.attachments) ? true : t.length) ? h : 0) > 1, y = null == E || null == (i = E.attachments) || null == (n = i[0]) ? true : n.id;
-
-  function O() {
-    d.Z.open({
-      guildId: m,
-      productId: g
-    })
-  }
-  return b ? (0, r.jsxs)(s.zx, {
-    onClick: O,
-    innerClassName: p.textWithIcon,
+    guildId: g,
+    productId: h
+  } = e, b = (0, a.e7)([u.Z], () => u.Z.getGuildProduct(h)), E = (null != (_ = null == b || null == (t = b.attachments) ? true : t.length) ? _ : 0) > 1, C = null == b || null == (i = b.attachments) || null == (n = i[0]) ? true : n.id;
+  return E ? (0, r.jsxs)(o.zx, {
+    onClick: function() {
+      d.Z.open({
+        guildId: g,
+        productId: h
+      })
+    },
+    innerClassName: f.textWithIcon,
     children: [(0, r.jsx)("div", {
-      children: _.intl.string(_.t.UyuiUF)
-    }), (0, r.jsx)(l.LZC, {
+      children: m.intl.string(m.t.UyuiUF)
+    }), (0, r.jsx)(s.LZC, {
       size: 8,
       horizontal: true
     }), (0, r.jsx)(c.Z, {
@@ -44,17 +41,17 @@ function h(e) {
       height: 16,
       direction: c.Z.Directions.RIGHT
     })]
-  }) : (o()(null != y, "No attachment"), (0, r.jsxs)(f.Z, {
-    guildId: m,
-    productId: g,
-    attachmentId: y,
-    innerClassName: p.textWithIcon,
+  }) : (l()(null != C, "No attachment"), (0, r.jsxs)(p.Z, {
+    guildId: g,
+    productId: h,
+    attachmentId: C,
+    innerClassName: f.textWithIcon,
     children: [(0, r.jsx)("div", {
-      children: _.intl.string(_.t.t9bE9f)
-    }), (0, r.jsx)(l.LZC, {
+      children: m.intl.string(m.t.t9bE9f)
+    }), (0, r.jsx)(s.LZC, {
       size: 8,
       horizontal: true
-    }), (0, r.jsx)(l._8t, {
+    }), (0, r.jsx)(s._8t, {
       size: "xs",
       color: "currentColor"
     })]

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk785717 = require("./785717.jsx"),
   Chunk510659 = require("./510659.jsx"),
   Chunk899007 = require("./899007.jsx"),
@@ -60,8 +60,8 @@ function b(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -69,8 +69,8 @@ function b(e, t) {
 function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -78,7 +78,7 @@ function O(e) {
   var {
     user: t,
     themeType: n,
-    animateOnHover: o,
+    animateOnHover: a,
     onOpenProfile: h
   } = e, g = b(e, ["user", "themeType", "animateOnHover", "onOpenProfile"]);
   let y = i.useRef(null),
@@ -89,7 +89,7 @@ function O(e) {
     {
       interactionSource: I
     } = (0, l.Xo)(),
-    T = a()(p.avatar, {
+    T = o()(p.avatar, {
       [p.hoisted]: I === _.n_.AVATAR || I === _.n_.STATUS
     });
   return (0, r.jsx)(f.Z, {
@@ -111,7 +111,7 @@ function O(e) {
         onAction: v,
         children: (0, r.jsx)(c.Z, m({
           user: t,
-          animateOnHover: o,
+          animateOnHover: a,
           onOpenProfile: h,
           themeType: n,
           className: p.withReactReply

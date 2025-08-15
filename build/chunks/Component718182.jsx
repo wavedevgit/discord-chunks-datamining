@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk525654 = require("./525654.js"),
-  o = require.n(Chunk525654),
+  a = require.n(Chunk525654),
   Chunk442837 = require("./442837.js"),
   Chunk893776 = require("./893776.js"),
   Chunk493773 = require("./493773.js"),
@@ -25,11 +25,11 @@ function _(e) {
   } = e, [s, _] = i.useState("submitting");
 
   function x() {
-    return "Android" === o().os.family || "iOS" === o().os.family ? null : (0, r.jsx)(d.zx, {
-      onClick: () => l(f.Z5c.LOGIN, {
+    return "Android" === a().os.family || "iOS" === a().os.family ? null : (0, r.jsx)(d.zx, {
+      onClick: () => l(m.Z5c.LOGIN, {
         source: "authorizeIPAdress"
       }),
-      children: m.intl.string(m.t.dKhVQE)
+      children: g.intl.string(g.t.dKhVQE)
     })
   }
   return ((0, c.ZP)(() => {
@@ -38,7 +38,7 @@ function _(e) {
     if (null == e) return void _("failed");
     (async () => {
       try {
-        await a.Z.authorizeIPAddress(e), _("succeeded")
+        await o.Z.authorizeIPAddress(e), _("succeeded")
       } catch (e) {
         _("failed")
       }
@@ -47,29 +47,29 @@ function _(e) {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(262467),
-      className: g.marginBottom20
+      className: f.marginBottom20
     }), (0, r.jsx)(d.Dx, {
-      className: g.marginBottom8,
-      children: m.intl.string(m.t["f/54a2"])
+      className: f.marginBottom8,
+      children: g.intl.string(g.t["f/54a2"])
     }), (0, r.jsx)(d.DK, {
-      className: g.marginBottom40,
-      children: m.intl.string(m.t.i3ehMj)
+      className: f.marginBottom40,
+      children: g.intl.string(g.t.i3ehMj)
     }), x()]
   }) : "succeeded" === s ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(640356),
-      className: g.marginBottom20
+      className: f.marginBottom20
     }), (0, r.jsx)(d.Dx, {
-      className: g.marginBottom8,
-      children: m.intl.string(m.t.iG0SlJ)
+      className: f.marginBottom8,
+      children: g.intl.string(g.t.iG0SlJ)
     }), (0, r.jsx)(d.DK, {
-      className: g.marginBottom40,
-      children: m.intl.string(m.t["Elv+qq"])
+      className: f.marginBottom40,
+      children: g.intl.string(g.t["Elv+qq"])
     }), x()]
   }) : (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Hh, {}), (0, r.jsx)(d.Dx, {
-      children: m.intl.string(m.t["9exy+f"])
+      children: g.intl.string(g.t["9exy+f"])
     })]
   })
 }

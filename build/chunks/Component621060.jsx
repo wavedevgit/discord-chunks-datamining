@@ -17,8 +17,8 @@ var n, Chunk255367 = require("./255367.js"),
   Chunk246992 = require("./246992.js"),
   Chunk451429 = require("./451429.js"),
   b = ((n = {}).NONE = "", n.EXPERIMENTS = "Experiments", n.EVENTS = "Events", n.PREMIUM = "Premium", n.BILLING = "Billing", n.USERS = "Users", n.GUILDS = "Guilds", n.UI = "UI", n.GAMES = "Games", n.AUDIO_VIDEO = "Audio / Video", n.DEVELOPMENT = "Development", n);
-let f = ["Experiments", "Events", "Premium", "Billing", "Users", "Guilds", "UI", "Games", "Audio / Video", "Development"],
-  v = Chunk73800.forwardRef(function(e, t) {
+let v = ["Experiments", "Events", "Premium", "Billing", "Users", "Guilds", "UI", "Games", "Audio / Video", "Development"],
+  f = Chunk73800.forwardRef(function(e, t) {
     let {
       id: a,
       selected: n,
@@ -59,7 +59,7 @@ function j(e) {
       closePopout: i
     } = e, s = t.filter(e => null == e.group), c = {};
     for (let e of t) null != e.group && (null != c[a = e.group] || (c[a] = []), c[e.group].push(e));
-    for (let e of f) null == (l = c[e]) || l.sort((e, t) => {
+    for (let e of v) null == (l = c[e]) || l.sort((e, t) => {
       var a, n;
       return (null != (a = (0, o.q)(e.name)) ? a : "").localeCompare(null != (n = (0, o.q)(t.name)) ? n : "")
     });
@@ -79,7 +79,7 @@ function j(e) {
           label: a,
           action: () => n(t)
         }, t)
-      }), f.map(e => (0, r.jsx)(d.kSQ, {
+      }), v.map(e => (0, r.jsx)(d.kSQ, {
         label: e,
         children: c[e].map(e => {
           let {
@@ -105,7 +105,7 @@ function j(e) {
           id: t,
           name: l
         } = e;
-        if (!s.has(t)) return (0, r.jsx)(v, {
+        if (!s.has(t)) return (0, r.jsx)(f, {
           id: t,
           selected: a === t,
           onClick: a !== t ? () => n(t) : true,
@@ -118,7 +118,7 @@ function j(e) {
             id: t,
             name: l
           } = e;
-          return (0, r.jsx)(v, {
+          return (0, r.jsx)(f, {
             id: t,
             selected: a === t,
             ref: e => {

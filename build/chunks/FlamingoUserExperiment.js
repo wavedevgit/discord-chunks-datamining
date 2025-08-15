@@ -78,6 +78,6 @@ function f(e) {
     location: t
   }, {
     autoTrackExposure: n
-  }), d = (0, r.e7)([a.Z, o.Z], () => o.Z.getChannel(a.Z.getVoiceChannelId())), f = !s || null != d && l.has(d.guild_id);
+  }), d = (0, r.e7)([o.Z, a.Z], () => a.Z.getChannel(o.Z.getVoiceChannelId())), f = !s || null != d && l.has(d.guild_id);
   return !__OVERLAY__ && i && u() && f
 }

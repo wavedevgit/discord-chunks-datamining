@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 968847, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => U,
@@ -32,11 +32,11 @@ let E = {
     bottomBar: E
   },
   S = {},
-  P = {};
+  I = {};
 
-function I(e) {
+function P(e) {
   let t = h.Z.getChannel(e);
-  return !(null == t || null == t.getGuildId() || t.isGuildVocal()) && !(t.isThread() ? f.Z.isMuted(t.id) : O.ZP.isChannelMuted(t.getGuildId(), t.id)) && (0, u.d)(t)
+  return !(null == t || null == t.getGuildId() || t.isGuildVocal()) && !(t.isThread() ? f.Z.isMuted(t.id) : _.ZP.isChannelMuted(t.getGuildId(), t.id)) && (0, u.d)(t)
 }
 
 function N(e) {
@@ -44,20 +44,20 @@ function N(e) {
   if (null == t) returnfalse;
   let n = t.getGuildId();
   if (null == n) returnfalse;
-  let r = O.ZP.isGuildCollapsed(n),
-    i = O.ZP.isChannelMuted(n, t.id);
+  let r = _.ZP.isGuildCollapsed(n),
+    i = _.ZP.isChannelMuted(n, t.id);
   return (!r || !i) && m.ZP.getMentionCount(e) > 0
 }
 
 function w(e) {
-  return !O.ZP.isChannelMuted(e.guild_id, e.id) && (e.isGuildStageVoice() ? d.Z.getMutableParticipants(e.id, p.pV.SPEAKER).length > 0 : _.ZP.getVoiceStatesForChannel(e).length > 0)
+  return !_.ZP.isChannelMuted(e.guild_id, e.id) && (e.isGuildStageVoice() ? d.Z.getMutableParticipants(e.id, p.pV.SPEAKER).length > 0 : O.ZP.getVoiceStatesForChannel(e).length > 0)
 }
 
 function Z(e) {
   var t, n, r;
   let {
     guildChannels: i
-  } = v.Z.getGuildWithoutChangingGuildActionRows(e), l = i.getChannels(null != (t = P[e]) ? t : []);
+  } = v.Z.getGuildWithoutChangingGuildActionRows(e), l = i.getChannels(null != (t = I[e]) ? t : []);
   if (null == l || 0 === l.length) returnfalse;
   let o = null,
     s = null,
@@ -68,10 +68,10 @@ function Z(e) {
     f = false,
     h = i.getCategoryFromSection(i.voiceChannelsSectionNumber),
     g = null != (n = null == h ? true : h.getShownChannelIds()) ? n : [],
-    [b, O, _] = i.getSlicedChannels(l);
-  for (let e = 0; e < O.length; e++) {
-    let t = O[e];
-    if ((I(t.id) || a().some(t.threadIds, I)) && (p = false), (N(t.id) || a().some(t.threadIds, N)) && (d = false), g.includes(t.id) && (f = true), !p && !d && f) break
+    [b, _, O] = i.getSlicedChannels(l);
+  for (let e = 0; e < _.length; e++) {
+    let t = _[e];
+    if ((P(t.id) || a().some(t.threadIds, P)) && (p = false), (N(t.id) || a().some(t.threadIds, N)) && (d = false), g.includes(t.id) && (f = true), !p && !d && f) break
   }
   let y = 0,
     j = false,
@@ -80,13 +80,13 @@ function Z(e) {
   if (p || d)
     for (let e = b.length - 1; e >= 0; e--) {
       let t = b[e];
-      (I(t.id) || a().some(t.threadIds, I)) && (null == s && (s = t.id), j = true), (N(t.id) || a().some(t.threadIds, N)) && (null == o && (o = t.id), y += m.ZP.getMentionCount(t.id), y += a().sumBy(t.threadIds, m.ZP.getMentionCount))
+      (P(t.id) || a().some(t.threadIds, P)) && (null == s && (s = t.id), j = true), (N(t.id) || a().some(t.threadIds, N)) && (null == o && (o = t.id), y += m.ZP.getMentionCount(t.id), y += a().sumBy(t.threadIds, m.ZP.getMentionCount))
     }
   if (p || d)
-    for (let e = 0; e < _.length; e++) {
-      let t = _[e];
+    for (let e = 0; e < O.length; e++) {
+      let t = O[e];
       if (!p && !d) break;
-      (I(t.id) || a().some(t.threadIds, I)) && (null == u && (u = t.id), x = true), (N(t.id) || a().some(t.threadIds, N)) && (null == c && (c = t.id), C += m.ZP.getMentionCount(t.id), C += a().sumBy(t.threadIds, m.ZP.getMentionCount))
+      (P(t.id) || a().some(t.threadIds, P)) && (null == u && (u = t.id), x = true), (N(t.id) || a().some(t.threadIds, N)) && (null == c && (c = t.id), C += m.ZP.getMentionCount(t.id), C += a().sumBy(t.threadIds, m.ZP.getMentionCount))
     }
   let Z = null,
     T = null,
@@ -181,7 +181,7 @@ let U = new k(Chunk570140.Z, {
       guildId: t,
       channelIds: n
     } = e, r = g.Z.getGuild(t);
-    return null != r && !!r.features.has(j.oNc.COMMUNITY) && null != n && !a().isEqual(P[t], n) && (P[t] = n, Z(t))
+    return null != r && !!r.features.has(j.oNc.COMMUNITY) && null != n && !a().isEqual(I[t], n) && (I[t] = n, Z(t))
   },
   BULK_ACK: function(e) {
     let {

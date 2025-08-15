@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 488977, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 488977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./997841.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -32,160 +31,153 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk820607 = require("./820607.js");
 
-function P(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function w(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      P(e, t, n[t])
+    }))), l.forEach(function(t) {
+      var l;
+      l = n[t], t in e ? Object.defineProperty(e, t, {
+        value: l,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = l
     })
   }
   return e
 }
 
-function D(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var l = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, l)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function x(e) {
+function L(e) {
   var t;
   let {
-    application: o,
-    context: P,
-    className: D,
-    sectionName: x
-  } = e, M = i.useRef(null), j = (0, s.e7)([I.Z], () => I.Z.entrypoint()), k = (0, T.L1)(o), U = (0, _.Eb)(k), G = (0, d.R)(o.id), B = (0, s.e7)([g.Z], () => {
+    application: r,
+    context: L,
+    className: R,
+    sectionName: Z
+  } = e, w = i.useRef(null), k = (0, o.e7)([C.Z], () => C.Z.entrypoint()), M = (0, E.L1)(r), U = (0, m.Eb)(M), D = (0, d.R)(r.id), H = (0, o.e7)([y.Z], () => {
     var e;
-    return null != (e = g.Z.getGuildId()) ? e : true
-  }, []), Z = {
+    return null != (e = y.Z.getGuildId()) ? e : true
+  }, []), V = {
     location: u.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU,
-    application_id: o.id,
-    section_name: x,
-    source: I.Z.lastShownEntrypoint()
-  }, F = E.default.getCurrentUser(), V = (0, p.Z)({
-    id: o.id,
-    label: C.intl.string(C.t["+NP/b2"])
-  }), H = (0, S.P)({
-    application: o
-  }), Y = (0, O.yE)(null != (t = o.flags) ? t : 0, N.udG.EMBEDDED), W = "channel" === P.type ? P.channel : true;
-  return (0, r.jsxs)("div", {
-    className: R.container,
-    children: [(0, r.jsx)(l.P3F, {
+    application_id: r.id,
+    section_name: Z,
+    source: C.Z.lastShownEntrypoint()
+  }, B = x.default.getCurrentUser(), W = (0, f.Z)({
+    id: r.id,
+    label: _.intl.string(_.t["+NP/b2"])
+  }), F = (0, P.P)({
+    application: r
+  }), G = (0, j.yE)(null != (t = r.flags) ? t : 0, A.udG.EMBEDDED), z = "channel" === L.type ? L.channel : true;
+  return (0, l.jsxs)("div", {
+    className: I.container,
+    children: [(0, l.jsx)(s.P3F, {
       onClick: () => {
-        let e = Y ? (0, f.H)({
-          applicationId: o.id,
-          referrerId: null == F ? true : F.id
-        }) : (0, f.J)(w({
-          id: o.id
-        }, k));
-        (0, y.JG)(e, () => (0, l.showToast)((0, l.createToast)(C.intl.string(C.t["L/PwZW"]), l.ToastType.SUCCESS))), b.default.track(N.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
-          application_id: o.id,
-          source: j
+        let e = G ? (0, p.H)({
+          applicationId: r.id,
+          referrerId: null == B ? true : B.id
+        }) : (0, p.J)(S({
+          id: r.id
+        }, M));
+        (0, g.JG)(e, () => (0, s.showToast)((0, s.createToast)(_.intl.string(_.t["L/PwZW"]), s.ToastType.SUCCESS))), b.default.track(A.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
+          application_id: r.id,
+          source: k
         })
       },
-      className: a()(R.clickable, D),
-      "aria-label": C.intl.string(C.t.WqhZsr),
-      children: (0, r.jsx)(l.xPt, {
+      className: a()(I.clickable, R),
+      "aria-label": _.intl.string(_.t.WqhZsr),
+      children: (0, l.jsx)(s.xPt, {
         size: "sm",
-        color: l.TVs.colors.INTERACTIVE_ACTIVE
+        color: s.TVs.colors.INTERACTIVE_ACTIVE
       })
-    }), (0, r.jsx)(l.yRy, {
-      targetElementRef: M,
+    }), (0, l.jsx)(s.yRy, {
+      targetElementRef: w,
       renderPopout: e => {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsxs)(l.v2r, {
-          className: A.NN,
+        return (0, l.jsxs)(s.v2r, {
+          className: O.NN,
           navId: "app-details-more-menu",
           onClose: t,
-          "aria-label": C.intl.string(C.t.AXIHpa),
+          "aria-label": _.intl.string(_.t.AXIHpa),
           onSelect: true,
-          children: [(0, r.jsxs)(l.kSQ, {
-            children: [G && (0, r.jsx)(l.sNh, {
+          children: [(0, l.jsxs)(s.kSQ, {
+            children: [D && (0, l.jsx)(s.sNh, {
               id: "open-storefront",
-              label: C.intl.string(C.t.kRvlKC),
+              label: _.intl.string(_.t.kRvlKC),
               action: () => {
-                (0, l.ZDy)(async () => {
+                (0, s.ZDy)(async () => {
                   let {
                     default: e
-                  } = await Promise.all([n.e("77803"), n.e("18992")]).then(n.bind(n, 7225));
-                  return t => (0, r.jsx)(e, {
+                  } = await Promise.all([n.e("74891"), n.e("77803"), n.e("19517")]).then(n.bind(n, 7225));
+                  return t => (0, l.jsx)(e, {
                     transitionState: t.transitionState,
                     onClose: t.onClose,
-                    appId: o.id,
-                    guildId: B
+                    appId: r.id,
+                    guildId: H
                   })
                 })
               }
-            }), U ? (0, r.jsx)(l.sNh, {
+            }), U ? (0, l.jsx)(s.sNh, {
               id: "add-app",
-              label: C.intl.string(C.t.NgXl3N),
+              label: _.intl.string(_.t.NgXl3N),
               action: () => {
-                null == k.customInstallUrl && (0, c.yw)(N.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, Z), (0, v.L)(L(w({}, k), {
+                null == M.customInstallUrl && (0, c.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, V), (0, N.L)(T(S({}, M), {
                   oauth2Callback: e => {
                     let {
                       location: t
                     } = e;
-                    null != t && (0, c.yw)(N.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, Z)
+                    null != t && (0, c.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, V)
                   },
                   source: "app_launcher_app_details"
                 }))
               }
-            }) : null, o instanceof m.ZP ? (0, r.jsx)(l.sNh, {
+            }) : null, r instanceof v.ZP ? (0, l.jsx)(s.sNh, {
               id: "report-app",
               color: "danger",
-              label: C.intl.string(C.t.jhJze3),
+              label: _.intl.string(_.t.jhJze3),
               action: () => {
                 var e;
                 (0, h.uu)({
-                  application: o,
+                  application: r,
                   entrypoint: "app_launcher",
-                  contextualGuildId: null != (e = null == W ? true : W.getGuildId()) ? e : true,
-                  contextualChannelId: null == W ? true : W.id
+                  contextualGuildId: null != (e = null == z ? true : z.getGuildId()) ? e : true,
+                  contextualChannelId: null == z ? true : z.id
                 })
               }
-            }) : null, H]
-          }), (0, r.jsx)(l.kSQ, {
-            children: V
+            }) : null, F]
+          }), (0, l.jsx)(s.kSQ, {
+            children: W
           })]
         })
       },
       align: "right",
       position: "bottom",
-      children: e => (0, r.jsx)(l.P3F, L(w({
-        innerRef: M
+      children: e => (0, l.jsx)(s.P3F, T(S({
+        innerRef: w
       }, e), {
         onClick: e.onClick,
-        className: a()(R.clickable, D),
-        "aria-label": C.intl.string(C.t.UKOtz8),
-        children: (0, r.jsx)(l.xhG, {
+        className: a()(I.clickable, R),
+        "aria-label": _.intl.string(_.t.UKOtz8),
+        children: (0, l.jsx)(s.xhG, {
           size: "sm",
-          color: l.TVs.colors.INTERACTIVE_ACTIVE
+          color: s.TVs.colors.INTERACTIVE_ACTIVE
         })
       }))
     })]

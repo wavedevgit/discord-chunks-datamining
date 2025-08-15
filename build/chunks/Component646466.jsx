@@ -47,7 +47,7 @@ let h = [{
     label: "[preview all]",
     value: null
   },
-  f = () => {
+  v = () => {
     (0, Chunk481060.nfh)(Chunk637443.g) ? (0, Chunk481060.Mr3)(Chunk637443.g) : (0, Chunk481060.ZDy)(async () => {
       let {
         ShopAssetsPreviewInstructionModal: e
@@ -58,7 +58,7 @@ let h = [{
       onCloseRequest: () => (0, Chunk481060.Mr3)(Chunk637443.g)
     })
   },
-  v = () => {
+  f = () => {
     (0, Chunk481060.nfh)(Chunk637443.c) ? (0, Chunk481060.Mr3)(Chunk637443.c) : (0, Chunk481060.ZDy)(async () => {
       let {
         ShopPFXPreviewInstructionModal: e
@@ -91,7 +91,7 @@ let h = [{
         }), (0, Chunk255367.jsx)(Chunk481060.hU, {
           variant: "icon-only",
           size: "sm",
-          onClick: v,
+          onClick: f,
           icon: Chunk481060.idN,
           "aria-label": "Open PFX preview instructions"
         })]
@@ -327,7 +327,7 @@ let h = [{
         }), (0, Chunk255367.jsx)(Chunk481060.hU, {
           variant: "icon-only",
           size: "sm",
-          onClick: f,
+          onClick: v,
           icon: Chunk481060.idN,
           "aria-label": "Open preview instructions"
         })]

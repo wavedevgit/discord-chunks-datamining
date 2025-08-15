@@ -32,11 +32,11 @@ function u(e) {
   let {
     intervalStart: t,
     intervalEnd: n
-  } = e, s = new Date(a.default.extractTimestamp(t)), c = new Date(a.default.extractTimestamp(n)), u = new Intl.DateTimeFormat(l.intl.currentLocale, {
+  } = e, s = new Date(o.default.extractTimestamp(t)), c = new Date(o.default.extractTimestamp(n)), u = new Intl.DateTimeFormat(l.intl.currentLocale, {
     month: "numeric",
     day: "numeric"
   }).formatRange(s, c);
-  return (0, r.jsx)(o.ej, {
+  return (0, r.jsx)(a.ej, {
     Icon: i.Que,
     text: u
   })
@@ -46,7 +46,7 @@ function d(e) {
   let {
     text: t
   } = e;
-  return (0, r.jsx)(o.ej, {
+  return (0, r.jsx)(a.ej, {
     Icon: i.hAD,
     text: t
   })

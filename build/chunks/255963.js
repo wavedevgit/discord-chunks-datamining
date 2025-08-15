@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   D: () => i,
-  x: () => o
+  x: () => a
 });
 var Chunk570140 = require("./570140.js");
 let i = e => {
@@ -13,7 +13,7 @@ let i = e => {
   })
 };
 
-function o(e) {
+function a(e) {
   r.Z.dispatch({
     type: "EMOJI_INTERACTION_INITIATED",
     interaction: e

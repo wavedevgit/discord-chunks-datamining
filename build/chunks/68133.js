@@ -21,8 +21,8 @@ async function l(e, t) {
     return (0, i.Bi)(r)
   }
   let n = e.poster,
-    r = (0, o.b)(n),
-    s = await (0, a.sx)(n, r, t);
+    r = (0, a.b)(n),
+    s = await (0, o.sx)(n, r, t);
   return (0, i.Bi)(s)
 }
 async function c(e) {
@@ -37,9 +37,9 @@ async function u(e, t) {
 }
 let d = e => null != e.tagName && "SLOT" === e.tagName.toUpperCase();
 async function f(e, t, n) {
-  var r, o;
-  let a = [];
-  return 0 === (a = d(e) && e.assignedNodes ? (0, i.qo)(e.assignedNodes()) : (0, i.oY)(e, HTMLIFrameElement) && (null == (r = e.contentDocument) ? true : r.body) ? (0, i.qo)(e.contentDocument.body.childNodes) : (0, i.qo)((null != (o = e.shadowRoot) ? o : e).childNodes)).length || (0, i.oY)(e, HTMLVideoElement) || await a.reduce((e, r) => e.then(() => E(r, n)).then(e => {
+  var r, a;
+  let o = [];
+  return 0 === (o = d(e) && e.assignedNodes ? (0, i.qo)(e.assignedNodes()) : (0, i.oY)(e, HTMLIFrameElement) && (null == (r = e.contentDocument) ? true : r.body) ? (0, i.qo)(e.contentDocument.body.childNodes) : (0, i.qo)((null != (a = e.shadowRoot) ? a : e).childNodes)).length || (0, i.oY)(e, HTMLVideoElement) || await o.reduce((e, r) => e.then(() => E(r, n)).then(e => {
     e && t.appendChild(e)
   }), Promise.resolve()), t
 }
@@ -48,12 +48,12 @@ function _(e, t) {
   let n = t.style;
   if (!n) return;
   let r = window.getComputedStyle(e);
-  r.cssText ? (n.cssText = r.cssText, n.transformOrigin = r.transformOrigin) : (0, i.qo)(r).forEach(o => {
-    let a = r.getPropertyValue(o);
-    if ("font-size" === o && a.endsWith("px")) {
-      let e = Math.floor(parseFloat(a.substring(0, a.length - 2))) - .1;
-      a = `${e}px`
-    }(0, i.oY)(e, HTMLIFrameElement) && "display" === o && "inline" === a && (a = "block"), "d" === o && t.getAttribute("d") && (a = `path(${t.getAttribute("d")})`), n.setProperty(o, a, r.getPropertyPriority(o))
+  r.cssText ? (n.cssText = r.cssText, n.transformOrigin = r.transformOrigin) : (0, i.qo)(r).forEach(a => {
+    let o = r.getPropertyValue(a);
+    if ("font-size" === a && o.endsWith("px")) {
+      let e = Math.floor(parseFloat(o.substring(0, o.length - 2))) - .1;
+      o = `${e}px`
+    }(0, i.oY)(e, HTMLIFrameElement) && "display" === a && "inline" === o && (o = "block"), "d" === a && t.getAttribute("d") && (o = `path(${t.getAttribute("d")})`), n.setProperty(a, o, r.getPropertyPriority(a))
   })
 }
 
@@ -76,11 +76,11 @@ async function g(e, t) {
   if (0 === n.length) return e;
   let r = {};
   for (let i = 0; i < n.length; i++) {
-    let o = n[i].getAttribute("xlink:href");
-    if (o) {
-      let n = e.querySelector(o),
-        i = document.querySelector(o);
-      n || !i || r[o] || (r[o] = await E(i, t, true))
+    let a = n[i].getAttribute("xlink:href");
+    if (a) {
+      let n = e.querySelector(a),
+        i = document.querySelector(a);
+      n || !i || r[a] || (r[a] = await E(i, t, true))
     }
   }
   let i = Object.values(r);

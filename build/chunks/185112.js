@@ -46,7 +46,7 @@ let f = 10,
           let [t, n] = e;
           return "any" === t || 0 === n
         })) return null;
-      let a = (0, Chunk150457.hj)(exports, Chunk314897.default.getId());
+      let o = (0, Chunk150457.hj)(exports, Chunk314897.default.getId());
       return null == Chunk70956 ? null : Chunk70956.short.frameRate < f || Chunk70956.long.frameRate < f ? [d({
         type: Chunk458725.u.CAMERA_SEND_LOW_FPS,
         userId: Chunk314897.default.getId()

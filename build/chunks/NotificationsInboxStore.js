@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => eE
 }), require("./361932.js"), require("./187205.js"), require("./539854.js"), require("./388685.js"), require("./642613.js"), require("./387201.js");
 var r, Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk786761 = require("./786761.js"),
@@ -44,15 +44,15 @@ let P = {},
   L = new Chunk810457.Z,
   x = false,
   M = false,
-  j = false,
   k = false,
+  j = false,
   U = Chunk709054.default.fromTimestamp(Date.now()),
   G = true,
   B = null,
-  Z = null,
+  V = null,
   F = true;
 
-function V() {
+function Z() {
   let e = Chunk771845.ZP.getFlattenedGuildIds().flatMap(e => m.ZP.getSelectableChannelIds(e)),
     t = Chunk601070.Z.getAllActiveJoinedThreads(),
     n = e => !!N.TPd.GUILD_TEXTUAL.has(e.type) && ((0, _.Q5)(e.type) ? (0, f.J)(e) === C.iN.ALL_MESSAGES && !d.Z.isMuted(e.id) : y.ZP.allowAllMessages(e)),
@@ -63,8 +63,8 @@ function V() {
   }
   for (let e in exports)
     for (let i in exports[module])
-      for (let o in exports[module][Chunk512722]) {
-        let e = Chunk592125.Z.getBasicChannel(o);
+      for (let a in exports[module][Chunk512722]) {
+        let e = Chunk592125.Z.getBasicChannel(a);
         null != module && require(module) && r.push(module)
       }
   return r.map(e => e.id).sort((e, t) => {
@@ -107,8 +107,8 @@ function W() {
   let {
     notifyingChannelIds: e,
     staleChannelIds: t
-  } = V();
-  w = module, D = exports, o()(null != w, "notifyingChannelIds should not be null");
+  } = Z();
+  w = module, D = exports, a()(null != w, "notifyingChannelIds should not be null");
   let n = w.filter(e => null == P[e]),
     r = Object.keys(P).filter(e => !(null == w ? true : w.includes(e)));
   if (0 !== w.length && 0 === require.length && 0 === r.length) returnfalse;
@@ -120,14 +120,14 @@ function W() {
       }, Chunk375954.Z.isReady(module)) {
       let t = H(module);
       if (null != exports) {
-        var i, a;
-        P[module].loadState = Chunk982183.a7.LOADED, P[module].mostRecentMessageId = null != (a = null == (i = exports.last()) ? true : Chunk512722.id) ? Chunk442837 : P[module].mostRecentMessageId
+        var i, o;
+        P[module].loadState = Chunk982183.a7.LOADED, P[module].mostRecentMessageId = null != (o = null == (i = exports.last()) ? true : Chunk512722.id) ? Chunk442837 : P[module].mostRecentMessageId
       }
     } L.updateChannelIds(w), Y()
 }
 
 function K() {
-  P = {}, w = null, D = [], L = new Chunk810457.Z, x = false, M = false, j = false, U = Chunk709054.default.fromTimestamp(Date.now()), G = true, k = false, Z = null, B = null
+  P = {}, w = null, D = [], L = new Chunk810457.Z, x = false, M = false, k = false, U = Chunk709054.default.fromTimestamp(Date.now()), G = true, j = false, V = null, B = null
 }
 
 function z() {
@@ -167,21 +167,21 @@ function J(e) {
   var t, n, r;
   let {
     channelId: i,
-    message: o
+    message: a
   } = e;
-  if (null == w || (null == (t = o.author) ? true : t.id) === (null == (n = O.default.getCurrentUser()) ? true : n.id)) returnfalse;
-  let a = w.includes(i),
-    s = Q(o),
+  if (null == w || (null == (t = a.author) ? true : t.id) === (null == (n = O.default.getCurrentUser()) ? true : n.id)) returnfalse;
+  let o = w.includes(i),
+    s = Q(a),
     l = s.mentioned;
-  if (!a && !l) {
+  if (!o && !l) {
     if (!D.includes(i)) returnfalse;
     W()
   }
-  if (!a && l && !(0, c.ln)(s)) returnfalse;
+  if (!o && l && !(0, c.ln)(s)) returnfalse;
   L.addMessage({
-    id: o.id,
-    channelId: o.channel_id,
-    guildId: null == (r = h.Z.getBasicChannel(o.channel_id)) ? true : r.guild_id,
+    id: a.id,
+    channelId: a.channel_id,
+    guildId: null == (r = h.Z.getBasicChannel(a.channel_id)) ? true : r.guild_id,
     kind: l ? A.fL.MENTION : A.fL.ALL_MESSAGES_CHANNEL,
     message: s
   })
@@ -241,10 +241,10 @@ function ei(e) {
     hasMoreToLoad: n,
     analyticsPayload: r
   } = e;
-  x = false, t ? k = true : (null != n && (G = n), j = true), Z = null != r ? r : null
+  x = false, t ? j = true : (null != n && (G = n), k = true), V = null != r ? r : null
 }
 
-function eo(e) {
+function ea(e) {
   var t;
   let {
     preload: n
@@ -252,11 +252,11 @@ function eo(e) {
   return null != (null == (t = (0, I.Ag)({
     location: "NotificationsInboxStore.canLoadMore",
     autoTrackExposure: false
-  })) ? true : t.notificationCenterVariant) && null != w && !x && !M && (!n || !k) && G
+  })) ? true : t.notificationCenterVariant) && null != w && !x && !M && (!n || !j) && G
 }
 
-function ea() {
-  x = false, Z = null, M = true
+function eo() {
+  x = false, V = null, M = true
 }
 
 function es(e) {
@@ -315,13 +315,13 @@ function e_(e) {
     id: n,
     addedMembers: r,
     removedMemberIds: i
-  } = e, o = null == (t = O.default.getCurrentUser()) ? true : t.id;
-  if (null == o) returnfalse;
-  if (null == r ? true : r.some(e => e.userId === o)) {
+  } = e, a = null == (t = O.default.getCurrentUser()) ? true : t.id;
+  if (null == a) returnfalse;
+  if (null == r ? true : r.some(e => e.userId === a)) {
     let e = h.Z.getBasicChannel(n);
     return !(null == e || d.Z.isMuted(n)) && (0, f.J)(e) !== C.iN.NO_MESSAGES && void q()
   }
-  return null != i && !!i.includes(o) && void q()
+  return null != i && !!i.includes(a) && void q()
 }
 
 function ep(e) {
@@ -354,7 +354,7 @@ class eg extends(r = Chunk442837.ZP.Store) {
     let {
       preload: t
     } = e;
-    return eo({
+    return ea({
       preload: t
     })
   }
@@ -377,10 +377,10 @@ class eg extends(r = Chunk442837.ZP.Store) {
     return x
   }
   get hasLoadedEver() {
-    return j
+    return k
   }
   get hasPreloaded() {
-    return k
+    return j
   }
   get isLoadingComplete() {
     return !x && !G
@@ -389,7 +389,7 @@ class eg extends(r = Chunk442837.ZP.Store) {
     return B
   }
   get currentRequestAnalyticsPayload() {
-    return Z
+    return V
   }
   getDevOverrides() {
     return {
@@ -421,7 +421,7 @@ let eE = new eg(Chunk570140.Z, {
   NOTIFICATIONS_INBOX_OPEN: ec,
   NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_START: er,
   NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS: ei,
-  NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_FAILURE: ea,
+  NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_FAILURE: eo,
   NOTIFICATIONS_INBOX_ITEM_CLICK: es,
   NOTIFICATIONS_INBOX_ITEM_ACK: el,
   NOTIFICATIONS_INBOX_CLOSE: eu,

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 590076, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 24255 **/
+/** chunk id: 590076, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => E
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -16,71 +15,66 @@ var Chunk255367 = require("./255367.js"),
   Chunk90753 = require("./90753.js"),
   Chunk806777 = require("./806777.js");
 
-function p(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function h(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      p(e, t, n[t])
-    })
-  }
-  return e
-}
-
 function m(e) {
   let {
     focused: t,
     channelId: n,
-    streamerId: o,
-    stream: u
-  } = e, p = i.useRef(null), h = (0, s.e7)([c.default], () => c.default.getCurrentUser());
-  a()(null != h, "user cannot be null"), (0, f.Z)(p, h, o, n);
+    streamerId: i,
+    stream: c
+  } = e, m = l.useRef(null), E = (0, o.e7)([s.default], () => s.default.getCurrentUser());
+  a()(null != E, "user cannot be null"), (0, f.Z)(m, E, i, n);
   let {
-    handleClick: m,
-    handleMouseDown: g,
-    handleMouseEnter: E,
-    handleMouseMove: b,
-    handleMouseUp: y
+    handleClick: g,
+    handleMouseDown: S,
+    handleMouseEnter: v,
+    handleMouseMove: h,
+    handleMouseUp: b
   } = (0, d.Z)({
-    user: h,
+    user: E,
     channelId: n,
-    streamerId: o,
-    stream: u,
+    streamerId: i,
+    stream: c,
     focused: t,
-    canvas: p.current
+    canvas: m.current
   });
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(u.Z, {
     children: (0, r.jsx)("canvas", {
-      ref: p,
-      onClick: m,
-      onMouseDown: g,
-      onMouseEnter: E,
-      onMouseMove: b,
-      onMouseUp: y,
-      className: _.sharedCanvas
+      ref: m,
+      onClick: g,
+      onMouseDown: S,
+      onMouseEnter: v,
+      onMouseMove: h,
+      onMouseUp: b,
+      className: p.sharedCanvas
     })
   })
 }
 
-function g(e) {
+function E(e) {
   let {
     isSharedCanvasEnabled: t
-  } = u.Z.useExperiment({
+  } = c.Z.useExperiment({
     guildId: e.guildId,
     location: "d0de1c_1"
   }, {
     autoTrackExposure: true
   });
-  return !t || e.hasScreenMessage ? null : (0, r.jsx)(m, h({}, e))
+  return !t || e.hasScreenMessage ? null : (0, r.jsx)(m, function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = r
+      })
+    }
+    return e
+  }({}, e))
 }

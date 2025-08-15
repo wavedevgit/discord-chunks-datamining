@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -69,8 +69,8 @@ function O(e) {
   var t;
   let {
     application: n,
-    detectedGame: o
-  } = e, a = i.useMemo(() => null == o ? true : o.genres.map(_.P3).join(", "), [o]), l = null != (t = o.name) ? t : null == n ? true : n.name;
+    detectedGame: a
+  } = e, o = i.useMemo(() => null == a ? true : a.genres.map(_.P3).join(", "), [a]), l = null != (t = a.name) ? t : null == n ? true : n.name;
   return (0, r.jsxs)("div", {
     className: E.headingContainer,
     children: [(0, r.jsx)(s.X6, {
@@ -80,7 +80,7 @@ function O(e) {
     }), (0, r.jsx)(s.xv, {
       variant: "text-xs/medium",
       color: "text-secondary",
-      children: a
+      children: o
     })]
   })
 }
@@ -122,19 +122,19 @@ function v(e) {
 function I(e) {
   let {
     application: t
-  } = e, n = i.useMemo(() => (0, p.fP)(), []), o = (0, l.e7)([d.Z], () => d.Z.getMute(t.id)), a = i.useMemo(() => o ? g.intl.string(g.t.tpvw4e) : g.intl.string(g.t["6EwEws"]), [o]);
+  } = e, n = i.useMemo(() => (0, p.fP)(), []), a = (0, l.e7)([d.Z], () => d.Z.getMute(t.id)), o = i.useMemo(() => a ? g.intl.string(g.t.tpvw4e) : g.intl.string(g.t["6EwEws"]), [a]);
   return (0, r.jsxs)("div", {
     className: E.actionButtonsContainer,
     children: [(0, r.jsx)(c.DY3, {
       element: "span",
-      text: a,
-      "aria-label": a,
+      text: o,
+      "aria-label": o,
       delay: 750,
       children: (0, r.jsx)(c.P3F, {
         className: E.actionButton,
-        "aria-label": a,
-        onClick: () => (0, u.X)(t.id, !o),
-        children: o ? (0, r.jsx)(c.owu, {
+        "aria-label": o,
+        onClick: () => (0, u.X)(t.id, !a),
+        children: a ? (0, r.jsx)(c.owu, {
           size: "xs",
           color: c.TVs.colors.WHITE
         }) : (0, r.jsx)(c.Dkj, {
@@ -154,7 +154,7 @@ function T(e) {
   let {
     application: t,
     detectedGame: n,
-    className: o,
+    className: a,
     onClose: s
   } = e, l = (0, h.Z)({
     location: "MiniGameProfile",
@@ -166,7 +166,7 @@ function T(e) {
     null == s || s(), null == l || l(e)
   }, [s, l]);
   return (0, r.jsxs)("div", {
-    className: a()(E.container, o),
+    className: o()(E.container, a),
     children: [(0, r.jsx)(b, {
       detectedGame: n
     }), (0, r.jsx)(I, {

@@ -1,21 +1,21 @@
-/** Chunk was on web.js **/
-/** chunk id: 170261, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 170261, original params: t,e,r (module,exports,require) **/
 "use strict";
-var r = require("./65183.js").Map;
-module.exports = function(e, t, n) {
-  var i = t.getStartKey(),
-    o = t.getEndKey(),
-    a = e.getBlockMap(),
-    s = a.toSeq().skipUntil(function(e, t) {
-      return t === i
-    }).takeUntil(function(e, t) {
-      return t === o
-    }).concat(r([
+var n = require("./65183.js").Map;
+module.exports = function(t, e, r) {
+  var i = e.getStartKey(),
+    o = e.getEndKey(),
+    a = t.getBlockMap(),
+    u = a.toSeq().skipUntil(function(t, e) {
+      return e === i
+    }).takeUntil(function(t, e) {
+      return e === o
+    }).concat(n([
       [o, a.get(o)]
-    ])).map(n);
-  return e.merge({
-    blockMap: a.merge(s),
-    selectionBefore: t,
-    selectionAfter: t
+    ])).map(r);
+  return t.merge({
+    blockMap: a.merge(u),
+    selectionBefore: e,
+    selectionAfter: e
   })
 }

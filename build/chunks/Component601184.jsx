@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 601184, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 38342 **/
+/** chunk id: 601184, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => _
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -18,22 +17,21 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e, t) {
-  let n = (0, i.e7)([d.default], () => d.default.getCurrentUser()),
-    h = (0, c.$R)(t),
-    m = (0, i.e7)([u.Z], () => u.Z.can(_.Plq.MANAGE_MESSAGES, t), [t]);
-
-  function g(n) {
-    e.state === _.yb.SEND_FAILED ? a.Z.deleteMessage(t.id, e.id, true) : n.shiftKey ? a.Z.deleteMessage(t.id, e.id) : s.Z.confirmDelete(t, e, true)
-  }
-  let {
-    firstMessage: E
-  } = (0, i.e7)([l.Z], () => l.Z.getMessage(t.id), [t.id]), b = m || null != n && e.canDeleteOwnMessage(n.id);
-  return e.state === _.yb.SENDING || !b || _.V$x.UNDELETABLE.has(e.type) || !h || t.isModeratorReportChannel() && (e.id === (null == E ? true : E.id) || (0, f.Z)(e)) ? null : (0, r.jsx)(o.sNh, {
+function _(e, t) {
+  let n = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
+    _ = (0, u.$R)(t),
+    g = (0, l.e7)([c.Z], () => c.Z.can(f.Plq.MANAGE_MESSAGES, t), [t]),
+    {
+      firstMessage: S
+    } = (0, l.e7)([o.Z], () => o.Z.getMessage(t.id), [t.id]),
+    N = g || null != n && e.canDeleteOwnMessage(n.id);
+  return e.state === f.yb.SENDING || !N || f.V$x.UNDELETABLE.has(e.type) || !_ || t.isModeratorReportChannel() && (e.id === (null == S ? true : S.id) || (0, E.Z)(e)) ? null : (0, i.jsx)(r.sNh, {
     id: "delete",
-    label: p.intl.string(p.t.xwMqDw),
-    action: g,
+    label: m.intl.string(m.t.xwMqDw),
+    action: function(n) {
+      e.state === f.yb.SEND_FAILED ? s.Z.deleteMessage(t.id, e.id, true) : n.shiftKey ? s.Z.deleteMessage(t.id, e.id) : a.Z.confirmDelete(t, e, true)
+    },
     color: "danger",
-    icon: o.XHJ
+    icon: r.XHJ
   })
 }

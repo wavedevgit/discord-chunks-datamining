@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk481060 = require("./481060.js"),
   Chunk115130 = require("./115130.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -66,7 +66,7 @@ function O(e) {
     plan: n,
     premiumSubscription: r,
     productLine: i,
-    isGift: a,
+    isGift: o,
     planGroup: s,
     isPrepaidPaymentSource: l,
     inReverseTrial: c,
@@ -74,9 +74,9 @@ function O(e) {
     hasPaymentSources: _
   } = e;
   if (null === u && _) return m.intl.string(m.t.CpOiEB);
-  if (t === h.GZ.ONE_TIME) return a ? m.intl.string(m.t.ouo4FB) : m.intl.string(m.t.ExD0Nj);
-  if (o()(null != n, "Subscription plan must be selected to render SubscriptionReviewButton"), i === p.POd.BOOST) return m.intl.string(m.t.eUEeCg);
-  if (a) return m.intl.string(m.t.ouo4FB);
+  if (t === h.GZ.ONE_TIME) return o ? m.intl.string(m.t.ouo4FB) : m.intl.string(m.t.ExD0Nj);
+  if (a()(null != n, "Subscription plan must be selected to render SubscriptionReviewButton"), i === p.POd.BOOST) return m.intl.string(m.t.eUEeCg);
+  if (o) return m.intl.string(m.t.ouo4FB);
   if (c) return m.intl.string(m.t.LQVQIi);
   if ((0, d.PV)(n.id)) return l ? m.intl.string(m.t.cRCCJy) : null != r ? r.isPausedAllowsResumeButNotUpdates ? m.intl.string(m.t.zpi5pq) : (0, f.R4)(r, n.id, s) ? m.intl.string(m.t.IJI7ys) : m.intl.string(m.t.VPuTc3) : (0, d.W_)(null, n);
   return m.intl.string(m.t.YScQSE)
@@ -93,7 +93,7 @@ function I(e) {
   let {
     legalTermsNodeRef: n,
     invoiceError: i,
-    planError: o,
+    planError: a,
     disablePurchase: d,
     flashLegalTerms: f,
     isSubmitting: h,
@@ -113,8 +113,8 @@ function I(e) {
     hasAcceptedTerms: L,
     purchaseType: x,
     paymentSourceId: M,
-    activeSubscription: j,
-    devShelfFetchState: k,
+    activeSubscription: k,
+    devShelfFetchState: j,
     hasPaymentSources: U
   } = (0, c.JL)(), G = O({
     purchaseType: x,
@@ -129,14 +129,14 @@ function I(e) {
   }), {
     analyticsLocations: B
   } = (0, l.ZP)();
-  if (null != i || null != o || d) return (0, r.jsx)(a.zxk, {
+  if (null != i || null != a || d) return (0, r.jsx)(o.zxk, {
     variant: "active",
     text: G,
     disabled: true
   });
-  if (N && U) return (0, r.jsx)(a.ua7, {
+  if (N && U) return (0, r.jsx)(o.ua7, {
     text: m.intl.string(m.t.L7jbQU),
-    children: e => (0, r.jsx)(a.zxk, y(E({
+    children: e => (0, r.jsx)(o.zxk, y(E({
       variant: "primary",
       text: G
     }, e), {
@@ -145,9 +145,9 @@ function I(e) {
       onClick: P
     }))
   });
-  if (N && !U) return (0, r.jsx)(a.ua7, {
+  if (N && !U) return (0, r.jsx)(o.ua7, {
     text: m.intl.string(m.t.L7jbQU),
-    children: e => (0, r.jsx)(a.zxk, y(E({
+    children: e => (0, r.jsx)(o.zxk, y(E({
       variant: "active",
       text: G
     }, e), {
@@ -156,9 +156,9 @@ function I(e) {
       disabled: true
     }))
   });
-  if ((0, u.yE)(null != (t = null == w ? true : w.flags) ? t : 0, p.udG.EMBEDDED) && k === s.O.LOADING) return (0, r.jsx)(a.ua7, {
+  if ((0, u.yE)(null != (t = null == w ? true : w.flags) ? t : 0, p.udG.EMBEDDED) && j === s.O.LOADING) return (0, r.jsx)(o.ua7, {
     text: m.intl.string(m.t.cjA5tr),
-    children: e => (0, r.jsx)(a.zxk, y(E({
+    children: e => (0, r.jsx)(o.zxk, y(E({
       variant: "active",
       text: G
     }, e), {
@@ -167,20 +167,20 @@ function I(e) {
       disabled: true
     }))
   });
-  if (S) return (0, r.jsx)(a.zxk, {
+  if (S) return (0, r.jsx)(o.zxk, {
     variant: "expressive",
     "data-testid": L ? "purchase" : "submitButton",
     text: G,
     onClick: L ? A : () => v(n, f),
     loading: h,
     iconPosition: "start",
-    icon: () => (0, r.jsx)(a.SrA, {
+    icon: () => (0, r.jsx)(o.SrA, {
       color: "currentColor"
     })
   });
-  else if (!L) return (0, r.jsx)(a.ua7, {
+  else if (!L) return (0, r.jsx)(o.ua7, {
     text: m.intl.string(m.t.XdvBLS),
-    children: e => (0, r.jsx)(a.zxk, y(E({
+    children: e => (0, r.jsx)(o.zxk, y(E({
       variant: "active",
       text: G
     }, e), {
@@ -189,15 +189,15 @@ function I(e) {
       "data-testid": "submitButton"
     }))
   });
-  else if (C && null != j && null != M) return (0, r.jsx)(_.Z, {
-    activeSubscription: j,
+  else if (C && null != k && null != M) return (0, r.jsx)(_.Z, {
+    activeSubscription: k,
     onNext: R,
     isSubmitting: h,
     paymentSourceId: M,
     buttonLabel: G,
     analyticsLocations: B
   });
-  else return (0, r.jsx)(a.zxk, {
+  else return (0, r.jsx)(o.zxk, {
     variant: "active",
     text: G,
     "data-testid": "purchase",

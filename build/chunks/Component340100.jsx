@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 340100, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37447 **/
+/** chunk id: 340100, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 }), require("./784620.js"), require("./973216.js");
@@ -16,15 +15,15 @@ var Chunk120356 = require("./120356.js"),
 let d = function(e) {
   let {
     className: t,
-    color: n = a.Z.colors.WHITE,
-    quest: i,
+    color: n = i.Z.colors.WHITE,
+    quest: s,
     isInventory: d
-  } = e, f = (0, l.qb)(e.quest), {
-    percentComplete: _,
-    completedRatioDisplay: p
-  } = (0, l.I)(i);
-  return !d && f.length > 0 ? (0, r.jsx)(c.Z, {
-    children: f.at(0)
+  } = e, m = (0, l.qb)(e.quest), {
+    percentComplete: p,
+    completedRatioDisplay: g
+  } = (0, l.I)(s);
+  return !d && m.length > 0 ? (0, r.jsx)(c.Z, {
+    children: m.at(0)
   }) : (0, r.jsxs)("div", {
     className: o()(u.wrapper, t),
     style: {
@@ -32,30 +31,30 @@ let d = function(e) {
     },
     children: [(0, r.jsxs)("div", {
       className: u.percentCompleteWrapper,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/semibold",
         className: u.percentCompleteLabel,
         color: "none",
-        children: p
+        children: g
       }), (0, r.jsx)("div", {
         className: u.percentCompleteLabelOffset,
         style: {
-          width: "".concat(100 - _, "%")
+          width: "".concat(100 - p, "%")
         }
       })]
     }), (0, r.jsx)("div", {
       className: u.progressBar,
       role: "progressbar",
-      "aria-valuenow": _,
+      "aria-valuenow": p,
       children: (0, r.jsx)("div", {
         className: u.progressBarFill,
         style: {
-          width: "".concat(_, "%")
+          width: "".concat(p, "%")
         }
       })
-    }), f.length > 0 && (0, r.jsx)(c.Z, {
+    }), m.length > 0 && (0, r.jsx)(c.Z, {
       isInventory: d,
-      children: f.at(0)
+      children: m.at(0)
     })]
   })
 }

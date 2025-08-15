@@ -31,8 +31,8 @@ function p(e) {
   }), b = null == (t = (0, s.hp)(h)) ? true : t.errorCode;
 
   function y() {
-    (0, a.w)(i.Yn.DEFAULT, n), o.Z.setDisableLocalVideo(n, d.ZUi.DISABLED, i.Yn.DEFAULT, false), setTimeout(() => {
-      o.Z.setDisableLocalVideo(n, d.ZUi.MANUAL_ENABLED, i.Yn.DEFAULT, false)
+    (0, o.w)(i.Yn.DEFAULT, n), a.Z.setDisableLocalVideo(n, d.ZUi.DISABLED, i.Yn.DEFAULT, false), setTimeout(() => {
+      a.Z.setDisableLocalVideo(n, d.ZUi.MANUAL_ENABLED, i.Yn.DEFAULT, false)
     }, 1e3)
   }
   return (0, r.jsx)(u.Z, {

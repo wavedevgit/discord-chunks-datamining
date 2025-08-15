@@ -1,16 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 695676, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 695676, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  gc: () => i,
-  hH: () => a,
-  uX: () => o
+  gc: () => r,
+  hH: () => o,
+  uX: () => a
 });
-var Chunk73800 = require("./73800.js"),
-  i = function(e) {
-    return e.HOME = "home", e.LIST = "list", e.APPLICATION = "application", e
-  }({});
-let o = Chunk73800.createContext({
+var l, Chunk73800 = require("./73800.js"),
+  r = ((l = {}).HOME = "home", l.LIST = "list", l.APPLICATION = "application", l);
+let a = Chunk73800.createContext({
   history: [],
   discard: {},
   currentView: true,
@@ -21,6 +18,6 @@ let o = Chunk73800.createContext({
   setSlideReady: () => {}
 });
 
-function a() {
-  return Chunk73800.useContext(o)
+function o() {
+  return Chunk73800.useContext(a)
 }

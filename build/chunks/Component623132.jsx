@@ -1,4 +1,4 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 623132, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -52,7 +52,7 @@ function O(e, t) {
   }), e
 }
 
-function x(e) {
+function h(e) {
   var {
     applicationId: t,
     userId: n,
@@ -90,7 +90,7 @@ function x(e) {
   }))
 }
 
-function h(e) {
+function x(e) {
   let {
     text: t,
     user: n,
@@ -150,7 +150,7 @@ function _(e) {
   } = o, Z = {
     variant: "heading-sm/semibold",
     color: "text-default"
-  }, N = a.default.getCurrentUser(), S = (null == N ? true : N.id) === t.id;
+  }, N = a.default.getCurrentUser(), w = (null == N ? true : N.id) === t.id;
   return s ? (0, r.jsxs)("div", {
     className: j.card,
     children: [(0, r.jsx)("div", {
@@ -179,18 +179,18 @@ function _(e) {
       className: j.details,
       children: [p ? (0, r.jsx)(i.X6q, O(y({}, Z), {
         children: _
-      })) : (0, r.jsx)(x, y({
+      })) : (0, r.jsx)(h, y({
         applicationId: P,
         userId: t.id,
         gameName: _
-      }, Z)), null != E && (0, r.jsx)(h, {
+      }, Z)), null != E && (0, r.jsx)(x, {
         text: E,
         user: t,
         guildId: n,
         channelId: l
       }), (0, r.jsx)(u.Z, {
         tags: T,
-        isCurrentUser: S,
+        isCurrentUser: w,
         widgetType: c,
         applicationId: P
       }), !p && (0, r.jsx)(v, {
@@ -199,7 +199,7 @@ function _(e) {
         guildId: n,
         channelId: l
       })]
-    }), !p && S && (0, r.jsx)(f.Z, {
+    }), !p && w && (0, r.jsx)(f.Z, {
       game: o,
       widgetType: c,
       className: j.removeGameButton

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk325767 = require("./325767.js"),
   Chunk645652 = require("./645652.jsx"),
@@ -78,9 +78,9 @@ function m(e) {
   return (0, r.jsx)(l.Z, {
     className: t,
     forceUseColor: n,
-    children: (0, r.jsx)(a.IGR, {
+    children: (0, r.jsx)(o.IGR, {
       disableColor: true,
-      className: o()(u.tag, {
+      className: a()(u.tag, {
         [u.inheritTextColor]: i,
         [u.inheritBackgroundColor]: s
       }),

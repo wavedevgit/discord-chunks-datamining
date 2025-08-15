@@ -1,53 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 664097, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 664097, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  o: () => d
+  o: () => o
 }), require("./642613.js");
 var Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
   Chunk115130 = require("./115130.js"),
   Chunk701488 = require("./701488.js");
-
-function s(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function l(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      s(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function c(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function u(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let d = () => {
+let o = () => {
   let {
     isEnabled: e,
     lastUsedObject: t
@@ -55,14 +15,43 @@ let d = () => {
     isEnabled: Chunk115130.Z.getIsEnabled(),
     lastUsedObject: Chunk115130.Z.getLastUsedObject()
   }), []), n = (0, Chunk442837.Wu)([Chunk115130.Z], () => Chunk115130.Z.getDeveloperShelfItems(), []);
-  return Chunk73800.useMemo(() => module ? require.map(e => ({
-    application: e,
-    activity: u(l({}, a.wT, e.embeddedActivityConfig), {
-      application_id: e.id
-    })
-  })).sort((e, n) => {
-    let r = t[e.application.id],
+  return Chunk73800.useMemo(() => module ? require.map(e => {
+    var t, n;
+    return {
+      application: e,
+      activity: (t = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            l = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), l.forEach(function(t) {
+            var l;
+            l = n[t], t in e ? Object.defineProperty(e, t, {
+              value: l,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = l
+          })
+        }
+        return e
+      }({}, a.wT, e.embeddedActivityConfig), n = n = {
+        application_id: e.id
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var l = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, l)
+        }
+        return n
+      })(Object(n)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      }), t)
+    }
+  }).sort((e, n) => {
+    let l = t[e.application.id],
       i = t[n.application.id];
-    return null == r ? 1 : null == i ? false : i - r
+    return null == l ? 1 : null == i ? false : i - l
   }) : [], [require, module, exports])
 }

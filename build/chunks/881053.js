@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 881053, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 881053, original params: e,t,n (module,exports,require) **/
 module.exports = {
   animationMiddle: "animationMiddle__8177b",
   animationContainer: "animationContainer__8177b",

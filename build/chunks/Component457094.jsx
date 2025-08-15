@@ -470,7 +470,7 @@ function to(e) {
   let {
     location: i
   } = (0, ev.s1)();
-  i.pathname === r && (null == eB.Z.getChannel(t) ? (0, ev.dL)(e3.Z5c.CHANNEL(n)) : (0, ev.dL)(r))
+  i.pathname === r && (null == eV.Z.getChannel(t) ? (0, ev.dL)(e3.Z5c.CHANNEL(n)) : (0, ev.dL)(r))
 }
 class ts extends Chunk73800.PureComponent {
   componentDidMount() {
@@ -534,8 +534,8 @@ class ts extends Chunk73800.PureComponent {
           null != e && ex.ZP.setSelectedSummary(i, e)
         }
         if (null != s && f) {
-          let e = eV.ZP.getCurrentSidebarChannelId(n) !== s,
-            t = null != eV.ZP.getGuildSidebarState(r);
+          let e = eB.ZP.getCurrentSidebarChannelId(n) !== s,
+            t = null != eB.ZP.getGuildSidebarState(r);
           if (null != i && null != s && e)
             if (t)(0, ev.dL)(e3.Z5c.CHANNEL(r, s, o));
             else {
@@ -575,7 +575,7 @@ class ts extends Chunk73800.PureComponent {
       threadId: l
     } = ti(n), a = (0, ey.Ss)(r) && r !== e3.ME && r !== e3.I_8;
     if (null != i && (0, ey.cq)(i) && !(0, e8.AB)(i) && a) {
-      let n = eB.Z.getChannel(i);
+      let n = eV.Z.getChannel(i);
       if (null == n) eA.Z.loadThread(i).then(() => to({
         channelId: i,
         guildId: r,
@@ -587,7 +587,7 @@ class ts extends Chunk73800.PureComponent {
       };
       if (null != l) {
         if (!((0, ey.cq)(l) && !(0, e8.AB)(i))) return null;
-        let n = eB.Z.getChannel(l);
+        let n = eV.Z.getChannel(l);
         if (null == n) eA.Z.loadThread(l).then(() => to({
           channelId: l,
           guildId: r,

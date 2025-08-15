@@ -1,37 +1,34 @@
-/** Chunk was on web.js **/
-/** chunk id: 624030, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 46653 **/
+/** chunk id: 624030, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
-var r, Chunk442837 = require("./442837.js"),
+var n, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
+function o(t, e, i) {
+  return e in t ? Object.defineProperty(t, e, {
+    value: i,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = n, e
+  }) : t[e] = i, t
 }
-let s = {};
-
-function l(e) {
-  return s[e.key] = e.value, true
-}
-class c extends(r = Chunk442837.ZP.PersistedStore) {
-  initialize(e) {
-    Object.assign(s, e)
+let l = {};
+class a extends(n = Chunk442837.ZP.PersistedStore) {
+  initialize(t) {
+    Object.assign(l, t)
   }
   getState() {
-    return s
+    return l
   }
-  shouldShowEducation(e) {
-    returntrue !== s[e]
+  shouldShowEducation(t) {
+    returntrue !== l[t]
   }
 }
-a(c, "displayName", "ActivityInviteEducationStore"), a(c, "persistKey", "ActivityInviteEducationExperimentStore");
-let u = new c(Chunk570140.Z, {
-  ACTIVITY_INVITE_EDUCATION_DISMISS: l
+o(a, "displayName", "ActivityInviteEducationStore"), o(a, "persistKey", "ActivityInviteEducationExperimentStore");
+let d = new a(Chunk570140.Z, {
+  ACTIVITY_INVITE_EDUCATION_DISMISS: function(t) {
+    return l[t.key] = t.value, true
+  }
 })

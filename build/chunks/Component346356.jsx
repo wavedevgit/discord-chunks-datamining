@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 346356, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   H: () => w
@@ -28,7 +28,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk49898 = require("./49898.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx");
-let I = "orbs_discovery_reheat_coachmark",
+let P = "orbs_discovery_reheat_coachmark",
   N = e => {
     let {
       targetElementRef: t,
@@ -42,11 +42,11 @@ let I = "orbs_discovery_reheat_coachmark",
     } = e, d = i.useMemo(() => ({
       onClose: s,
       onCtaClick: c,
-      titleText: P.intl.string(P.t.RAMiYW),
-      descriptionText: P.intl.format(P.t.xk12LC, {
+      titleText: I.intl.string(I.t.RAMiYW),
+      descriptionText: I.intl.format(I.t.xk12LC, {
         quantity: 200
       }),
-      ctaText: P.intl.string(P.t["cA+7mp"])
+      ctaText: I.intl.string(I.t["cA+7mp"])
     }), [c, s]);
     return (0, r.jsx)(v.G6, {
       errorBoundarySource: "ORBS_DISCOVERY_REHEAT_COACHMARK",
@@ -63,7 +63,7 @@ let I = "orbs_discovery_reheat_coachmark",
     let {
       targetElementRef: t,
       scrollToBottom: n,
-      renderDiscoveryButton: P,
+      renderDiscoveryButton: I,
       isGuildBarScrolling: w
     } = e, {
       enabled: Z
@@ -73,8 +73,8 @@ let I = "orbs_discovery_reheat_coachmark",
       let {
         onShowCoachmarkHandler: t,
         isVirtualCurrencyEnabled: n
-      } = e, r = (0, _.F)({
-        location: I
+      } = e, r = (0, O.F)({
+        location: P
       }), [y, v] = i.useState(false), j = (e => {
         let {
           isIntroQuestUnclaimed: t
@@ -89,11 +89,11 @@ let I = "orbs_discovery_reheat_coachmark",
           user: n
         } = (0, o.cj)([g.default], () => ({
           user: g.default.getCurrentUser()
-        })), r = O.Z.useExperiment(e);
+        })), r = _.Z.useExperiment(e);
         return null != n && r.enabled && !(0, m.EO)(n) && t
       })({
-        location: I
-      }), P = (0, o.e7)([h.Z], () => h.Z.hasLayers()), N = (0, s.s9z)(s.JQI), w = n && j && !r && !(N || P), [Z, T] = (0, c.US)(w ? [a.z.VIRTUAL_CURRENCY_DISCOVERY_REHEAT_COACHMARK] : []), A = Z === a.z.VIRTUAL_CURRENCY_DISCOVERY_REHEAT_COACHMARK, R = i.useCallback(() => {
+        location: P
+      }), I = (0, o.e7)([h.Z], () => h.Z.hasLayers()), N = (0, s.s9z)(s.JQI), w = n && j && !r && !(N || I), [Z, T] = (0, c.US)(w ? [a.z.VIRTUAL_CURRENCY_DISCOVERY_REHEAT_COACHMARK] : []), A = Z === a.z.VIRTUAL_CURRENCY_DISCOVERY_REHEAT_COACHMARK, R = i.useCallback(() => {
         T(E.L.TAKE_ACTION), (0, u.k5)({
           source: x.GlobalDiscoveryAnalyticsLocations.VIRTUAL_CURRENCY_REHEAT_COACHMARK
         }), (0, f.navigateToQuestHome)({
@@ -160,13 +160,13 @@ let I = "orbs_discovery_reheat_coachmark",
       return e
     }({
       targetElementRef: t,
-      renderDiscoveryButton: P,
+      renderDiscoveryButton: I,
       isGuildBarScrolling: w,
       shouldShow: A
     }, R)) : (0, r.jsx)(j.u, {
       targetElementRef: t,
       scrollToBottom: n,
-      renderDiscoveryButton: P,
+      renderDiscoveryButton: I,
       isGuildBarScrolling: w
     })
   }

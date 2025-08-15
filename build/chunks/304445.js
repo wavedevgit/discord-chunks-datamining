@@ -32,14 +32,14 @@ class d {
     if (this.routeChangeCount += 1, this.routeChangeCount < u)
       for (let n of this.rewrites) {
         let i = (0, s.s1)().location.pathname,
-          o = n(e, t);
-        if (null != o) return (0, r.n)({
+          a = n(e, t);
+        if (null != a) return (0, r.n)({
           message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route",
           data: {
-            replacePath: o.path,
+            replacePath: a.path,
             previousPath: i
           }
-        }), (0, s.dL)(o.path, o.state), true
+        }), (0, s.dL)(a.path, a.state), true
       } else throw Error("RouteManager: Something has gone horribly wrong with rewrites");
     returnfalse
   }
@@ -73,8 +73,8 @@ class d {
       this.connected = module, exports && (this.routeChangeCount = 0, this.executeRouteRewrites((0, Chunk703656.s1)().location, "REPLACE"))
     }), c(this, "handleRouteChange", (e, t) => {
       if (this.executeRouteRewrites(e, t)) return;
-      if (!(0, a.r)(e)) return void(0, s.dL)(l.Z5c.ME);
-      let n = o.Z.getState();
+      if (!(0, o.r)(e)) return void(0, s.dL)(l.Z5c.ME);
+      let n = a.Z.getState();
       for (let r of (n.basePath !== e.pathname && n.resetPath(e.pathname), this.listeners)) try {
         r(e, t)
       } catch (e) {

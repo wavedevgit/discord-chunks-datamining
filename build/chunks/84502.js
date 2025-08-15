@@ -1,31 +1,31 @@
-/** Chunk was on 87137 **/
-/** chunk id: 84502, original params: A,t,e (module,exports,require) **/
+/** Chunk was on 78079 **/
+/** chunk id: 84502, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
-  s: () => n
+  s: () => i
 });
 var Chunk688619 = require("./688619.js"),
-  g = require.n(Chunk688619);
+  r = require.n(Chunk688619);
 
-function v(A, t, e) {
-  if (!g().valid(t)) return A.map(() => "#000000");
-  let r = g()(t),
-    v = r.luminance();
-  return A.map((A, t) => r.luminance((A * e[t].base + v * e[t].tint) / (e[t].base + e[t].tint)).hex())
+function l(A, e, t) {
+  if (!r().valid(e)) return A.map(() => "#000000");
+  let n = r()(e),
+    l = n.luminance();
+  return A.map((A, e) => n.luminance((A * t[e].base + l * t[e].tint) / (t[e].base + t[e].tint)).hex())
 }
 
-function n(A) {
+function i(A) {
   let {
-    primaryBaseColors: t,
-    primaryTintColor: e,
-    primaryTintLuminances: r,
-    primaryLuminanceWeights: g,
-    secondaryBaseColors: n,
-    secondaryTintColor: f,
-    secondaryTintLuminances: B,
-    secondaryLuminanceWeights: h
-  } = A, l = null != e ? v(r, e, g) : t, i = [];
-  return null != n && null != B && null != h && (i = null != f ? v(B, f, h) : n), {
-    primaryColorsTransformed: l,
-    secondaryColorsTransformed: i
+    primaryBaseColors: e,
+    primaryTintColor: t,
+    primaryTintLuminances: n,
+    primaryLuminanceWeights: r,
+    secondaryBaseColors: i,
+    secondaryTintColor: a,
+    secondaryTintLuminances: s,
+    secondaryLuminanceWeights: o
+  } = A, g = null != t ? l(n, t, r) : e, c = [];
+  return null != i && null != s && null != o && (c = null != a ? l(s, a, o) : i), {
+    primaryColorsTransformed: g,
+    secondaryColorsTransformed: c
   }
 }

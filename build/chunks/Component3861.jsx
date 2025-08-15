@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 3861, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 3861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => y
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,76 +18,76 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk394024 = require("./394024.js");
-let E = (0, Chunk112724.Z)(e => {
+let y = (0, Chunk112724.Z)(e => {
   let {
     participants: t,
     filteredParticipants: n,
-    selectedParticipant: o,
-    participantsVersion: E,
-    layout: b,
-    onSelectParticipant: y,
-    onContextMenuParticipant: O,
+    selectedParticipant: l,
+    participantsVersion: y,
+    layout: _,
+    onSelectParticipant: C,
+    onContextMenuParticipant: x,
     onFullscreenParticipant: v,
-    channel: I,
-    hasConnectPermission: T,
-    className: S,
-    inCall: A,
-    showParticipants: N = true,
-    width: C,
-    height: R,
-    idle: P,
-    mode: w,
-    popoutWindow: D,
-    awaitingRemoteSessionInfo: L,
-    callContainerDimensions: x
+    channel: j,
+    hasConnectPermission: O,
+    className: E,
+    inCall: S,
+    showParticipants: P = true,
+    width: I,
+    height: Z,
+    idle: T,
+    mode: N,
+    popoutWindow: A,
+    awaitingRemoteSessionInfo: w,
+    callContainerDimensions: R
   } = e;
   i.useEffect(() => {
-    c.S.dispatch(h.CkL.REMEASURE_TARGET)
-  }, [C, R, x.width, x.height]);
-  let M = i.useMemo(() => n.filter(e => e.type !== m.fO.ACTIVITY || !e.participants.some(e => (0, a.J)(e))), [n, E]);
-  return (null == L ? true : L.channelId) === I.id ? (0, r.jsx)(d.Z, {
-    height: R
-  }) : (null == I ? true : I.isGuildVocal()) && !A ? (0, r.jsx)(u.Z, {
-    channel: I,
+    c.S.dispatch(m.CkL.REMEASURE_TARGET)
+  }, [I, Z, R.width, R.height]);
+  let M = i.useMemo(() => n.filter(e => e.type !== g.fO.ACTIVITY || !e.participants.some(e => (0, a.J)(e))), [n, y]);
+  return (null == w ? true : w.channelId) === j.id ? (0, r.jsx)(d.Z, {
+    height: Z
+  }) : (null == j ? true : j.isGuildVocal()) && !S ? (0, r.jsx)(u.Z, {
+    channel: j,
     participants: t,
-    hasConnectPermission: T
-  }) : w === h.WtW.VOICE ? (0, r.jsx)(s.Z, {
-    guildId: I.guild_id,
-    width: C,
-    className: g.voiceCallWrapper,
+    hasConnectPermission: O
+  }) : N === m.WtW.VOICE ? (0, r.jsx)(o.Z, {
+    guildId: j.guild_id,
+    width: I,
+    className: b.voiceCallWrapper,
     participants: t,
-    onContextMenu: O
-  }) : (n = A ? n : t, null == o) ? 0 === n.length ? (0, r.jsx)(p.Z, {
-    channelId: I.id
-  }) : (0, r.jsx)(l.Z, {
-    className: g.videoGridWrapper,
-    justify: l.Z.Justify.CENTER,
-    align: l.Z.Align.CENTER,
-    children: (0, r.jsx)(f.Z, {
-      channel: I,
-      className: g.videoGrid,
+    onContextMenu: x
+  }) : (n = S ? n : t, null == l) ? 0 === n.length ? (0, r.jsx)(f.Z, {
+    channelId: j.id
+  }) : (0, r.jsx)(s.Z, {
+    className: b.videoGridWrapper,
+    justify: s.Z.Justify.CENTER,
+    align: s.Z.Align.CENTER,
+    children: (0, r.jsx)(p.Z, {
+      channel: j,
+      className: b.videoGrid,
       participants: M,
       totalNumberOfParticipants: t.length,
-      onClick: y,
+      onClick: C,
       onDoubleClick: v,
-      onContextMenu: O,
-      inCall: A
+      onContextMenu: x,
+      inCall: S
     })
-  }) : (0, r.jsx)(_.Z, {
+  }) : (0, r.jsx)(h.Z, {
     onFullscreenParticipant: v,
-    onContextMenuParticipant: O,
-    onSelectParticipant: y,
-    selectedParticipant: o,
+    onContextMenuParticipant: x,
+    onSelectParticipant: C,
+    selectedParticipant: l,
     filteredParticipants: M,
     participants: t,
-    popoutWindow: D,
-    className: S,
-    idle: P,
-    height: R,
-    width: C,
-    layout: b,
-    inCall: A,
-    channel: I,
-    showParticipants: N
+    popoutWindow: A,
+    className: E,
+    idle: T,
+    height: Z,
+    width: I,
+    layout: _,
+    inCall: S,
+    channel: j,
+    showParticipants: P
   })
 })

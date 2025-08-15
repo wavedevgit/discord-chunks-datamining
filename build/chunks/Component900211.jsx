@@ -1,37 +1,36 @@
-/** Chunk was on web.js **/
-/** chunk id: 900211, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 900211, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk347469 = require("./347469.js"),
   Chunk432267 = require("./432267.js");
 
-function s(e) {
+function o(e) {
   let {
     resizableNode: t,
     onResize: n,
-    onResizeEnd: s,
-    minHeight: l,
+    onResizeEnd: o,
+    minHeight: s,
     maxHeight: c
   } = e, [u, d] = i.useState(null);
   i.useEffect(() => {
     var e, n;
     d(null != (n = null == (e = t.current) ? true : e.offsetHeight) ? n : null)
   }, [t]);
-  let f = (0, o.Z)({
+  let p = (0, l.Z)({
     initialElementDimension: u,
-    minDimension: l,
+    minDimension: s,
     maxDimension: c,
     resizableDomNodeRef: t,
     onElementResize: n,
-    onElementResizeEnd: s,
-    orientation: o.y.VERTICAL_BOTTOM
+    onElementResizeEnd: o,
+    orientation: l.y.VERTICAL_BOTTOM
   });
   return (0, r.jsx)("div", {
-    onMouseDown: f,
+    onMouseDown: p,
     className: a.resizeHandle
   })
 }

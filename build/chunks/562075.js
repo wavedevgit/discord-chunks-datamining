@@ -1,5 +1,6 @@
-/** Chunk was on 92078 **/
-/** chunk id: 562075, original params: n,r,t (module,exports,require) **/
+/** Chunk was on 44947 **/
+/** chunk id: 562075, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   c: () => l
 });
@@ -11,10 +12,10 @@ var Chunk541558 = require("./541558.js"),
   Chunk438044 = require("./438044.js"),
   Chunk573654 = require("./573654.js");
 
-function l(n, r) {
-  var t = (0, o.w)(n, r);
-  (0, f.k)(!t.begin, "useDrag::spec.begin was deprecated in v14. Replace spec.begin() with spec.item(). (see more here - https://react-dnd.github.io/react-dnd/docs/api/use-drag)");
-  var l = (0, i._)(),
-    s = (0, u.Y)(t.options, t.previewOptions);
-  return (0, e.q)(t, l, s), [(0, a.J)(t.collect, l, s), (0, c.u)(s), (0, c.y)(s)]
+function l(e, t) {
+  var n = (0, i.w)(e, t);
+  (0, s.k)(!n.begin, "useDrag::spec.begin was deprecated in v14. Replace spec.begin() with spec.item(). (see more here - https://react-dnd.github.io/react-dnd/docs/api/use-drag)");
+  var l = (0, o._)(),
+    f = (0, a.Y)(n.options, n.previewOptions);
+  return (0, r.q)(n, l, f), [(0, u.J)(n.collect, l, f), (0, c.u)(f), (0, c.y)(f)]
 }

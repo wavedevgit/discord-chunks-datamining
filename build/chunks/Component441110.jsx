@@ -1,8 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 441110, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 31978 **/
+/** chunk id: 441110, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -17,59 +17,57 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk829424 = require("./829424.js");
-let h = function(e) {
+let f = function(e) {
   let {
     guild: t,
     message: n,
-    onClose: h
-  } = e, m = c.Z.getChannel(u.Z.getChannelId(t.id));
-  if ((0, o.ZP)(() => {
-      d.default.track(f.rMx.OPEN_POPOUT, {
-        type: "New Member Badge Popout",
-        guild_id: t.id,
-        channel_id: null == m ? true : m.id
-      })
-    }), null == m) return null;
-  let g = () => {
-    a.ZP.trackWithMetadata(f.rMx.NEW_MEMBER_MENTION_CTA_CLICKED, {
-      target_user_id: n.author.id
-    }), h(), (0, l.q)(n.author, m.id)
-  };
-  return (0, r.jsx)(s.W_, {
-    className: p.messagePopoutContent,
+    onClose: f
+  } = e, b = c.Z.getChannel(u.Z.getChannelId(t.id));
+  return ((0, o.ZP)(() => {
+    d.default.track(p.rMx.OPEN_POPOUT, {
+      type: "New Member Badge Popout",
+      guild_id: t.id,
+      channel_id: null == b ? true : b.id
+    })
+  }), null == b) ? null : (0, r.jsx)(a.W_, {
+    className: g.messagePopoutContent,
     children: (0, r.jsxs)("div", {
-      className: p.popoutContainer,
+      className: g.popoutContainer,
       children: [(0, r.jsxs)("div", {
-        className: p.mainContent,
+        className: g.mainContent,
         children: [(0, r.jsx)("div", {
-          className: p.iconContainer,
-          children: (0, r.jsx)(i.hg2, {
+          className: g.iconContainer,
+          children: (0, r.jsx)(l.hg2, {
             size: "custom",
             color: "currentColor",
             width: 40,
             height: 40
           })
         }), (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(i.X6q, {
+          children: [(0, r.jsx)(l.X6q, {
             variant: "heading-md/semibold",
-            className: p.header,
-            children: _.intl.string(_.t["v/OYd3"])
-          }), (0, r.jsx)(i.Text, {
+            className: g.header,
+            children: m.intl.string(m.t["v/OYd3"])
+          }), (0, r.jsx)(l.Text, {
             variant: "text-sm/normal",
-            children: _.intl.string(_.t.Z85MlJ)
+            children: m.intl.string(m.t.Z85MlJ)
           })]
         })]
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: p.ctaButton,
-        children: (0, r.jsx)(i.zxk, {
+        className: g.ctaButton,
+        children: (0, r.jsx)(l.zxk, {
           variant: "primary",
           size: "sm",
-          text: _.intl.format(_.t["+xsVS0"], {
+          text: m.intl.format(m.t["+xsVS0"], {
             username: n.author.username
           }),
           fullWidth: true,
-          onClick: g
+          onClick: () => {
+            i.ZP.trackWithMetadata(p.rMx.NEW_MEMBER_MENTION_CTA_CLICKED, {
+              target_user_id: n.author.id
+            }), f(), (0, s.q)(n.author, b.id)
+          }
         })
       })]
     })

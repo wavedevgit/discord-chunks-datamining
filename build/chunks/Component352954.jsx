@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 352954, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 80417 **/
+/** chunk id: 352954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => l
 }), require("./415506.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -10,88 +9,80 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function l(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
-
-function c(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function u(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let d = {
+let l = {
   openSecureFramesStreamVerification: function(e, t) {
     (0, i.ZDy)(async () => {
       let i = (await n.e("94904").then(n.bind(n, 660250))).default;
-      return n => (0, r.jsx)(i, l({
+      return n => (0, r.jsx)(i, c({
         streamKey: e,
         channelId: t
       }, n))
     })
   },
-  openSecureFramesUserVerificationModal: function(e, t, a, s) {
-    a() && (0, i.ZDy)(async () => {
+  openSecureFramesUserVerificationModal: function(e, t, o, l) {
+    o() && (0, i.ZDy)(async () => {
       let i = (await n.e("33397").then(n.bind(n, 963410))).default;
-      return n => (0, r.jsx)(i, l({
+      return n => (0, r.jsx)(i, c({
         userId: e,
         channelId: t
       }, n))
     }, {
-      contextKey: s === o.IlC.POPOUT ? i.u1M : i.z1l
+      contextKey: l === a.IlC.POPOUT ? i.u1M : i.z1l
     })
   },
   openSecureFramesUpdateConfirmation: function(e) {
     let {
       title: t,
-      subtitle: o,
-      confirmText: s = a.intl.string(a.t["cY+Ooa"]),
-      onConfirm: c
+      subtitle: a,
+      confirmText: l = o.intl.string(o.t["cY+Ooa"]),
+      onConfirm: u
     } = e;
     (0, i.ZDy)(async () => {
       let {
         ConfirmModal: e
       } = await Promise.resolve().then(n.bind(n, 481060));
-      return n => (0, r.jsx)(e, u(l({
-        header: t,
-        confirmText: s,
-        cancelText: a.intl.string(a.t["ETE/oK"]),
-        onConfirm: c
-      }, n), {
-        children: (0, r.jsx)(i.Text, {
-          variant: "text-sm/normal",
-          color: "header-secondary",
-          children: o
-        })
-      }))
+      return n => {
+        var s, E;
+        return (0, r.jsx)(e, (s = c({
+          header: t,
+          confirmText: l,
+          cancelText: o.intl.string(o.t["ETE/oK"]),
+          onConfirm: u
+        }, n), E = E = {
+          children: (0, r.jsx)(i.Text, {
+            variant: "text-sm/normal",
+            color: "header-secondary",
+            children: a
+          })
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(E)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(E)).forEach(function(e) {
+          Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(E, e))
+        }), s))
+      }
     })
   },
   handleSecureFramesUserVerificationLink: function(e) {

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 783685, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 783685, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 }), require("./388685.js");
@@ -18,25 +17,25 @@ function d(e) {
     botUserId: t,
     applicationId: n,
     analyticsLocations: d
-  } = e, [f, _] = i.useState(false), p = i.useRef(null), h = i.useCallback(async () => {
+  } = e, [p, m] = i.useState(false), f = i.useRef(null), h = i.useCallback(async () => {
     a.default.track(c.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
       application_id: n,
-      button_action: s._y.OPEN_APP_DM
-    }), _(true);
+      button_action: o._y.OPEN_APP_DM
+    }), m(true);
     try {
-      await (0, l.W)({
+      await (0, s.W)({
         appId: n,
         botId: t,
         analyticsLocations: d
       })
     } catch (e) {}
-    clearTimeout(p.current), _(false)
+    clearTimeout(f.current), m(false)
   }, [t, n, d]);
-  return (0, r.jsx)(o.zxk, {
+  return (0, l.jsx)(r.zxk, {
     type: "submit",
     size: "md",
     variant: "secondary",
-    loading: f,
+    loading: p,
     onClick: h,
     "aria-label": u.intl.string(u.t.AUM8hY),
     text: u.intl.string(u.t.AUM8hY)

@@ -1,104 +1,96 @@
-/** Chunk was on web.js **/
-/** chunk id: 743597, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 24255 **/
+/** chunk id: 743597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
 });
 var Chunk73800 = require("./73800.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  i = require.n(Chunk392711),
   Chunk772848 = require("./772848.js"),
   Chunk846519 = require("./846519.js"),
   Chunk125268 = require("./125268.js"),
   Chunk984063 = require("./984063.js"),
   Chunk813900 = require("./813900.js");
 
-function d(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function f(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      d(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function _(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = o().debounce(Chunk125268.BR, Chunk813900.Fq, {
+let p = i().debounce(Chunk125268.BR, Chunk813900.Fq, {
   maxWait: Chunk813900.Fq
 });
 
 function m(e, t, n) {
-  let i = r.useRef((0, a.Z)()),
-    o = r.useRef(new s.Xp),
-    d = r.useCallback(r => {
-      r.lastUpdatedAt = Date.now(), (0, l.gr)(r, e, n), (0, l.BR)(t, n, r)
+  let l = r.useRef((0, a.Z)()),
+    i = r.useRef(new o.Xp),
+    m = r.useCallback(r => {
+      r.lastUpdatedAt = Date.now(), (0, u.gr)(r, e, n), (0, u.BR)(t, n, r)
     }, [t, n, e]),
-    _ = r.useCallback((r, s, _) => {
-      i.current = (0, a.Z)();
-      let h = p(f({}, r), {
-        id: i.current,
-        x: s,
-        y: _,
+    E = r.useCallback((r, o, p) => {
+      l.current = (0, a.Z)();
+      let E = f(d({}, r), {
+        id: l.current,
+        x: o,
+        y: p,
         userId: e,
-        state: c.f.START,
+        state: s.f.START,
         lastUpdatedAt: Date.now()
       });
-      (0, l.BR)(t, n, h), (0, l.gr)(h, e, n), o.current.start(u.FO, () => d(h))
-    }, [e, t, n, d]),
-    m = r.useCallback((r, a, s) => {
-      let _ = p(f({}, r), {
-        id: i.current,
+      (0, u.BR)(t, n, E), (0, u.gr)(E, e, n), i.current.start(c.FO, () => m(E))
+    }, [e, t, n, m]),
+    g = r.useCallback((r, a, o) => {
+      let E = f(d({}, r), {
+        id: l.current,
         x: a,
-        y: s,
+        y: o,
         userId: e,
-        state: c.f.START,
+        state: s.f.START,
         lastUpdatedAt: Date.now()
       });
-      h(t, n, _), (0, l.gr)(_, e, n), o.current.start(u.FO, () => d(_))
-    }, [e, t, n, d]),
-    g = r.useCallback((r, a, s) => {
-      h.cancel(), (0, l.Df)(t, n, i.current), (0, l.gr)(p(f({}, r), {
-        id: i.current,
+      p(t, n, E), (0, u.gr)(E, e, n), i.current.start(c.FO, () => m(E))
+    }, [e, t, n, m]),
+    S = r.useCallback((r, a, o) => {
+      p.cancel(), (0, u.Df)(t, n, l.current), (0, u.gr)(f(d({}, r), {
+        id: l.current,
         x: a,
-        y: s,
+        y: o,
         userId: e,
-        state: c.f.STOP,
+        state: s.f.STOP,
         lastUpdatedAt: Date.now()
-      }), e, n), o.current.stop()
+      }), e, n), i.current.stop()
     }, [t, n, e]),
-    E = r.useCallback((e, t, n) => m(e, t, n), [m]);
+    v = r.useCallback((e, t, n) => g(e, t, n), [g]);
   return r.useMemo(() => ({
-    handleMouseDown: _,
-    handleMouseMove: m,
-    handleMouseUp: g,
-    handleMouseEnter: E
-  }), [_, E, m, g])
+    handleMouseDown: E,
+    handleMouseMove: g,
+    handleMouseUp: S,
+    handleMouseEnter: v
+  }), [E, v, g, S])
 }

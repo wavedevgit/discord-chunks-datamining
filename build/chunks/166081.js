@@ -1,19 +1,18 @@
-/** Chunk was on web.js **/
-/** chunk id: 166081, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 166081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => s
+  U: () => o
 });
 var Chunk73800 = require("./73800.js"),
   Chunk695346 = require("./695346.js"),
   Chunk73346 = require("./73346.js"),
   Chunk834431 = require("./834431.js");
 
-function s(e, t) {
+function o(e, t) {
   let {
     shouldAnimate: n = true
-  } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, s = i.QK.useSetting(), l = (0, a.n)(), c = n && l && s;
+  } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, o = i.QK.useSetting(), s = (0, a.n)(), c = n && s && o;
   return r.useMemo(() => {
-    if ((null == e ? true : e.image_asset) != null) return (0, o._W)(e.application_id, e.image_asset, t, c ? true : "webp")
+    if ((null == e ? true : e.image_asset) != null) return (0, l._W)(e.application_id, e.image_asset, t, c ? true : "webp")
   }, [t, e, c])
 }

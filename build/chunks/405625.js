@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 405625, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 405625, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => s
 }), require("./539854.js"), require("./388685.js"), require("./642613.js");
 var Chunk73800 = require("./73800.js"),
   Chunk911969 = require("./911969.js"),
@@ -10,8 +9,8 @@ var Chunk73800 = require("./73800.js"),
   Chunk358085 = require("./358085.js"),
   Chunk761122 = require("./761122.js");
 
-function l(e) {
-  return o.DZ.loadIfNecessary(), r.useMemo(() => {
+function s(e) {
+  return r.DZ.loadIfNecessary(), l.useMemo(() => {
     let t = [];
     e.forEach(e => t.push(e.application.id));
     let n = [...t];
@@ -20,22 +19,22 @@ function l(e) {
 }
 let c = (e, t) => {
   let n = [...e],
-    r = 0;
+    l = 0;
   return t.forEach(e => {
     let t = n.findIndex(t => t.application.id === e);
     if (false !== t) {
       let e = n[t];
-      n.splice(t, 1), n = [...n.slice(0, r), e, ...n.slice(r)], ++r
+      n.splice(t, 1), n = [...n.slice(0, l), e, ...n.slice(l)], ++l
     }
   }), n.map((e, t) => [e, t]).filter(e => {
     var t, n;
-    let [r] = e, o = null == (n = r.application.embeddedActivityConfig) || null == (t = n.client_platform_config[(0, s.Z)((0, a.getOS)())]) ? true : t.label_type;
-    return !!o && (o === i.ww.NEW || o === i.ww.UPDATED)
+    let [l] = e, r = null == (n = l.application.embeddedActivityConfig) || null == (t = n.client_platform_config[(0, o.Z)((0, a.getOS)())]) ? true : t.label_type;
+    return !!r && (r === i.ww.NEW || r === i.ww.UPDATED)
   }).forEach(e => {
-    let [t, r] = e, i = null != t.application.embeddedActivityConfig && null != t.application.embeddedActivityConfig.shelf_rank ? t.application.embeddedActivityConfig.shelf_rank - 1 : r;
-    if (i < r) {
-      let e = n[r];
-      n.splice(r, 1), n = [...n.slice(0, i), e, ...n.slice(i)]
+    let [t, l] = e, i = null != t.application.embeddedActivityConfig && null != t.application.embeddedActivityConfig.shelf_rank ? t.application.embeddedActivityConfig.shelf_rank - 1 : l;
+    if (i < l) {
+      let e = n[l];
+      n.splice(l, 1), n = [...n.slice(0, i), e, ...n.slice(i)]
     }
   }), n
 }

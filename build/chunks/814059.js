@@ -10,20 +10,20 @@ var Chunk913527 = require("./913527.js"),
   Chunk388032 = require("./388032.jsx");
 let s = e => {
   let t = Math.max(0, i()(e).diff(i()(), "s"));
-  if (t < 2 * o.Z.Seconds.HOUR) {
-    let e = Math.round(t / o.Z.Seconds.MINUTE);
-    return a.intl.formatToPlainString(a.t["2JbxRE"], {
+  if (t < 2 * a.Z.Seconds.HOUR) {
+    let e = Math.round(t / a.Z.Seconds.MINUTE);
+    return o.intl.formatToPlainString(o.t["2JbxRE"], {
       count: e
     })
   }
-  if (t < o.Z.Seconds.DAY) {
-    let e = Math.round(t / o.Z.Seconds.HOUR);
-    return a.intl.formatToPlainString(a.t.V9Ebys, {
+  if (t < a.Z.Seconds.DAY) {
+    let e = Math.round(t / a.Z.Seconds.HOUR);
+    return o.intl.formatToPlainString(o.t.V9Ebys, {
       count: e
     })
   } {
-    let e = Math.round(t / o.Z.Seconds.DAY);
-    return a.intl.formatToPlainString(a.t.OQFxHh, {
+    let e = Math.round(t / a.Z.Seconds.DAY);
+    return o.intl.formatToPlainString(o.t.OQFxHh, {
       count: e
     })
   }

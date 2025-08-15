@@ -27,15 +27,15 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx");
 
 function T(e) {
-  if (e === o._.WEEK) return I.t.SjOZfn
+  if (e === a._.WEEK) return I.t.SjOZfn
 }
 let S = (e, t, n, r) => {
     let i = T(r),
-      o = f.ZP.getName(t.guild_id, t.id, n),
-      a = e.extra.artist.name;
+      a = f.ZP.getName(t.guild_id, t.id, n),
+      o = e.extra.artist.name;
     return I.intl.formatToMarkdownString(i, {
-      artist: a,
-      userName: o
+      artist: o,
+      userName: a
     }).replaceAll("*", "")
   },
   A = (e, t) => I.intl.formatToPlainString(I.t.Osmpr6, {
@@ -46,7 +46,7 @@ let S = (e, t, n, r) => {
     let {
       channel: t,
       entry: n,
-      onReaction: o,
+      onReaction: a,
       onVoiceChannelPreview: f
     } = e, {
       parent_title: T,
@@ -69,24 +69,24 @@ let S = (e, t, n, r) => {
       })
     }, [C, R, t, n, w, L, D, P]), M = (0, h.Z)(O.ABu.SPOTIFY);
     if (null == P || !(0, d.Hi)(L, g.y9)) return null;
-    let j = () => {
+    let k = () => {
         let e = v.Hw.ALBUM,
           t = l.Z.isProtocolRegistered() ? v.C7.PLAYER_OPEN(e, n.extra.media.external_parent_id) : v.C7.WEB_OPEN(e, n.extra.media.external_parent_id);
         window.open(t)
       },
-      k = () => {
+      j = () => {
         let e = v.Hw.ARTIST,
           t = l.Z.isProtocolRegistered() ? v.C7.PLAYER_OPEN(e, n.extra.artist.external_id) : v.C7.WEB_OPEN(e, n.extra.artist.external_id);
         window.open(t)
       };
     return (0, r.jsxs)(b.yR, {
       children: [(0, r.jsx)(b.wG, {
-        onClickTitle: j,
-        onClickSubtitle: k,
-        onClickThumbnail: j,
+        onClickTitle: k,
+        onClickSubtitle: j,
+        onClickThumbnail: k,
         channel: t,
         entry: n,
-        headerIcons: N === a.p.SPOTIFY ? (0, r.jsx)(y.Z, {
+        headerIcons: N === o.p.SPOTIFY ? (0, r.jsx)(y.Z, {
           onClick: M,
           Icon: u.Z,
           "aria-label": I.intl.string(I.t["0ZB/XF"])
@@ -102,7 +102,7 @@ let S = (e, t, n, r) => {
         })
       }), (0, r.jsx)(b.St, {
         children: (0, r.jsx)(b.WT, {
-          onReaction: o,
+          onReaction: a,
           onVoiceChannelPreview: f,
           user: P,
           channel: t,

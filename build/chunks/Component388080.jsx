@@ -1,14 +1,15 @@
-/** Chunk was on 44808 **/
+/** Chunk was on 20296 **/
 /** chunk id: 388080, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => S
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
-  s = require.n(Chunk913527),
+  l = require.n(Chunk913527),
   Chunk481060 = require("./481060.js"),
   Chunk446411 = require("./446411.jsx"),
   Chunk468846 = require("./468846.jsx"),
@@ -23,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk491068 = require("./491068.js"),
   Chunk400167 = require("./400167.js");
 
-function y(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,8 +33,8 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 let k = Chunk454585.Z.reactParserFor(Chunk55406.default.getDefaultRules(Chunk491068)),
-  S = {};
-class E extends Chunk73800.PureComponent {
+  v = {};
+class C extends Chunk73800.PureComponent {
   track(e, t, n) {
     this.props.track(e, t, n)
   }
@@ -76,7 +77,7 @@ class E extends Chunk73800.PureComponent {
   renderVideo() {
     let {
       changeLog: e
-    } = this.props, t = module.youtube_video_id, l = module.video, o = module.image;
+    } = this.props, t = module.youtube_video_id, o = module.video, a = module.image;
     if (null != exports && "" !== exports) return (0, Chunk255367.jsx)(Chunk446411.BC, {
       className: Chunk491068.video,
       allowFullScreen: false,
@@ -147,7 +148,7 @@ class E extends Chunk73800.PureComponent {
           })
         })]
       }), (0, Chunk255367.jsx)(Chunk481060.hzk, {
-        className: a()(Chunk400167.content, Chunk491068.container, {}),
+        className: i()(Chunk400167.content, Chunk491068.container, {}),
         scrollerRef: this.scrollerRef,
         onScroll: this.handleScroll,
         children: (0, Chunk255367.jsxs)("div", {
@@ -156,7 +157,7 @@ class E extends Chunk73800.PureComponent {
           "aria-label": Chunk388032.intl.string(Chunk388032.t.HzBchI),
           children: [this.renderVideo(), k(module.body, false, {
             changeLog: this,
-            interpolations: S,
+            interpolations: v,
             onLinkClick: this.trackLinkClick
           })]
         })
@@ -167,7 +168,7 @@ class E extends Chunk73800.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), y(this, "scrollerRef", l.createRef()), y(this, "handleScroll", () => {
+    super(...e), j(this, "scrollerRef", o.createRef()), j(this, "handleScroll", () => {
       let {
         current: e
       } = this.scrollerRef;
@@ -175,30 +176,30 @@ class E extends Chunk73800.PureComponent {
         var t, n;
         null == (t = (n = this.props).onScroll) || t.call(n, e)
       }
-    }), y(this, "trackLinkClick", e => {
-      this.props.track(j.rMx.CHANGE_LOG_CTA_CLICKED, {
+    }), j(this, "trackLinkClick", e => {
+      this.props.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
         cta_type: "inline_link",
         target: e
       }, false)
-    }), y(this, "renderHeader", () => {
+    }), j(this, "renderHeader", () => {
       let {
         changeLog: e
       } = this.props;
-      return (0, r.jsxs)(u.Z.Child, {
+      return (0, r.jsxs)(p.Z.Child, {
         grow: 1,
         shrink: 1,
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-lg/semibold",
-          children: C.intl.string(C.t.LRmNAg)
+          children: y.intl.string(y.t.LRmNAg)
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
-          className: b.date,
-          children: C.intl.format(C.t.Fb8xx8, {
-            date: null != e.date && "" !== e.date ? s()(e.date).toDate() : new Date
+          className: x.date,
+          children: y.intl.format(y.t.Fb8xx8, {
+            date: null != e.date && "" !== e.date ? l()(e.date).toDate() : new Date
           })
         })]
       })
     })
   }
 }
-let _ = E
+let S = C

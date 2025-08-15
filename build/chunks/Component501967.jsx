@@ -102,9 +102,9 @@ class E extends(r = Chunk73800.PureComponent) {
       center: t,
       bottom: n,
       layout: r,
-      focused: o
+      focused: a
     } = this.props, {
-      idle: a
+      idle: o
     } = this.state;
     return (0, Chunk255367.jsx)(Chunk600164.Z, {
       className: s()(Chunk216509.video, m[r], {

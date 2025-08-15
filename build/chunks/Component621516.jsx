@@ -30,14 +30,14 @@ var Chunk255367 = require("./255367.js"),
   Chunk420196 = require("./420196.js"),
   Chunk433075 = require("./433075.js");
 
-function T(e) {
+function N(e) {
   let {
     handleHide: t
   } = e;
   return (0, r.jsx)(d.P3F, {
     onClick: t,
     className: y.closeButton,
-    "aria-label": _.intl.string(_.t.WAI6xs),
+    "aria-label": C.intl.string(C.t.WAI6xs),
     children: (0, r.jsx)(d.Dio, {
       size: "md",
       color: "currentColor",
@@ -46,7 +46,7 @@ function T(e) {
   })
 }
 
-function N(e) {
+function P(e) {
   let {
     username: t,
     title: n,
@@ -71,7 +71,7 @@ function N(e) {
           variant: "text-xs/normal",
           color: "header-secondary",
           className: y.postCreationTimestamp,
-          children: _.intl.string(_.t.mA0IvL)
+          children: C.intl.string(C.t.mA0IvL)
         })]
       })
     }), (0, r.jsx)(d.X6q, {
@@ -139,15 +139,15 @@ let I = e => {
   i.useEffect(() => {
     (0, f.c)(a.id) || k(!R)
   }, [a, k, R]);
-  let L = i.useMemo(() => [_.intl.string(_.t["8pEGAw"]), _.intl.string(_.t.jwfgDQ), _.intl.string(_.t.mPKs29), _.intl.string(_.t.StRbvL)], []),
-    F = i.useMemo(() => [_.intl.string(_.t["m/b58P"]), _.intl.string(_.t.MuJSKy), _.intl.string(_.t["d/Wqvr"]), _.intl.string(_.t.GJklAw)], []),
+  let L = i.useMemo(() => [C.intl.string(C.t["8pEGAw"]), C.intl.string(C.t.jwfgDQ), C.intl.string(C.t.mPKs29), C.intl.string(C.t.StRbvL)], []),
+    F = i.useMemo(() => [C.intl.string(C.t["m/b58P"]), C.intl.string(C.t.MuJSKy), C.intl.string(C.t["d/Wqvr"]), C.intl.string(C.t.GJklAw)], []),
     D = () => {
-      p.Z.open(a.guild_id, C.pNK.ROLE_SUBSCRIPTIONS)
+      p.Z.open(a.guild_id, _.pNK.ROLE_SUBSCRIPTIONS)
     },
-    z = null != (t = null == E ? true : E.features.has(C.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) && t ? _.intl.string(_.t.n0q7sL) : _.intl.string(_.t.QoYdiY),
-    H = null != (n = (null == E ? true : E.features.has(C.oNc.CREATOR_MONETIZABLE)) || (null == E ? true : E.features.has(C.oNc.CREATOR_MONETIZABLE_PROVISIONAL))) && n,
-    B = H ? _.intl.string(_.t["G/7ciY"]) : _.intl.string(_.t.IFOiio),
-    U = H ? _.intl.string(_.t.GjgQOz) : _.intl.string(_.t.E7AO6u);
+    z = null != (t = null == E ? true : E.features.has(_.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) && t ? C.intl.string(C.t.n0q7sL) : C.intl.string(C.t.QoYdiY),
+    H = null != (n = (null == E ? true : E.features.has(_.oNc.CREATOR_MONETIZABLE)) || (null == E ? true : E.features.has(_.oNc.CREATOR_MONETIZABLE_PROVISIONAL))) && n,
+    B = H ? C.intl.string(C.t["G/7ciY"]) : C.intl.string(C.t.IFOiio),
+    U = H ? C.intl.string(C.t.GjgQOz) : C.intl.string(C.t.E7AO6u);
   return (0, r.jsx)(r.Fragment, {
     children: Z((e, t) => t ? (0, r.jsxs)(s.animated.div, {
       style: e,
@@ -161,8 +161,8 @@ let I = e => {
             size: "xxs",
             color: "currentColor",
             className: y.icon
-          }), _.intl.string(_.t.znhX2d)]
-        }), (0, r.jsx)(T, {
+          }), C.intl.string(C.t.znhX2d)]
+        }), (0, r.jsx)(N, {
           handleHide: A
         })]
       }), (0, r.jsxs)("div", {
@@ -173,26 +173,26 @@ let I = e => {
             className: y.contentMediaContainer,
             children: (0, r.jsxs)("div", {
               className: y.contentVideoContainer,
-              children: [(0, r.jsx)(N, {
-                username: _.intl.string(_.t.AkORcn),
+              children: [(0, r.jsx)(P, {
+                username: C.intl.string(C.t.AkORcn),
                 videoSrc: "https://cdn.discordapp.com/assets/media_channel/admin_edu_discord_birthday.mp4",
-                title: _.intl.string(_.t.yO6Fxs),
+                title: C.intl.string(C.t.yO6Fxs),
                 messageCount: "34",
                 reaction: "⚡️",
                 reactionCount: "724",
                 classname: y.backgroundVideo
-              }), (0, r.jsx)(N, {
-                username: _.intl.string(_.t.DPg3YG),
+              }), (0, r.jsx)(P, {
+                username: C.intl.string(C.t.DPg3YG),
                 videoSrc: "https://cdn.discordapp.com/assets/media_channel/admin_edu_wumpus_onboarding.mp4",
-                title: _.intl.string(_.t.R5XnCw),
+                title: C.intl.string(C.t.R5XnCw),
                 messageCount: "34",
                 reactionCount: "84",
                 reaction: "\uD83D\uDC9E",
                 classname: y.backgroundVideo
-              }), (0, r.jsx)(N, {
-                username: _.intl.string(_.t.KIele3),
+              }), (0, r.jsx)(P, {
+                username: C.intl.string(C.t.KIele3),
                 videoSrc: "https://cdn.discordapp.com/assets/media_channel/admin_edu_scientist_wumpus.mp4",
-                title: _.intl.string(_.t.pt88VV),
+                title: C.intl.string(C.t.pt88VV),
                 messageCount: "7,103",
                 reaction: "⚡️",
                 reactionCount: "724",
@@ -214,12 +214,12 @@ let I = e => {
             }), (0, r.jsx)(d.LZC, {
               size: 16
             }), (0, r.jsxs)(d.P3F, {
-              onClick: () => open(j.Z.getCreatorSupportArticleURL(C.BhN.MEDIA_CHANNEL)),
+              onClick: () => open(j.Z.getCreatorSupportArticleURL(_.BhN.MEDIA_CHANNEL)),
               className: y.helpCenterLink,
               children: [(0, r.jsx)(d.Text, {
                 variant: "text-sm/medium",
                 color: "text-link",
-                children: _.intl.string(_.t.OahzBQ)
+                children: C.intl.string(C.t.OahzBQ)
               }), (0, r.jsx)(d.rgF, {
                 size: "xs",
                 color: "currentColor",
@@ -244,11 +244,11 @@ let I = e => {
             children: (0, r.jsxs)("div", {
               className: y.contentImageContainer,
               children: [(0, r.jsx)("img", {
-                src: I ? P : S,
+                src: I ? O : S,
                 alt: "",
                 className: y.previewEmbedImage
               }), (0, r.jsx)("img", {
-                src: I ? O : w,
+                src: I ? w : T,
                 alt: "",
                 className: y.previewEmbedImage
               })]
@@ -258,7 +258,7 @@ let I = e => {
             children: [(0, r.jsxs)(d.Text, {
               variant: "text-xxs/bold",
               className: y.serverSubPill,
-              children: [_.intl.string(_.t.NChGw8), " ", (0, r.jsx)("span", {
+              children: [C.intl.string(C.t.NChGw8), " ", (0, r.jsx)("span", {
                 role: "img",
                 "aria-label": "",
                 children: "\uD83D\uDD25"
@@ -268,13 +268,13 @@ let I = e => {
             }), (0, r.jsx)(d.X6q, {
               variant: "heading-lg/semibold",
               color: "header-primary",
-              children: _.intl.string(_.t["N/TRra"])
+              children: C.intl.string(C.t["N/TRra"])
             }), (0, r.jsx)(d.LZC, {
               size: 8
             }), (0, r.jsx)(d.Text, {
               variant: "text-md/normal",
               color: "text-muted",
-              children: _.intl.string(_.t.t3yWxM)
+              children: C.intl.string(C.t.t3yWxM)
             }), (0, r.jsx)(d.LZC, {
               size: 16
             }), (0, r.jsx)("div", {

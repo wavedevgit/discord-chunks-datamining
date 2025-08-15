@@ -1,14 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 918658, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 31253 **/
+/** chunk id: 918658, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M,
-  d: () => j
+  Z: () => k,
+  d: () => L
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk755721 = require("./755721.js"),
@@ -34,61 +33,44 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk829675 = require("./829675.js");
 
-function w(e) {
+function U(e) {
   let {
     className: t,
     onClick: n,
     children: i,
-    buttonRef: o
+    buttonRef: l
   } = e;
-  return (0, r.jsx)(c.zx, {
-    buttonRef: o,
-    className: a()(P.button, t),
-    innerClassName: P.buttonInner,
-    look: c.zx.Looks.OUTLINED,
-    color: c.zx.Colors.WHITE,
-    size: c.zx.Sizes.NONE,
+  return (0, r.jsx)(s.zx, {
+    buttonRef: l,
+    className: o()(h.button, t),
+    innerClassName: h.buttonInner,
+    look: s.zx.Looks.OUTLINED,
+    color: s.zx.Colors.WHITE,
+    size: s.zx.Sizes.NONE,
     onClick: n,
     children: i
   })
 }
 
-function D(e) {
+function M(e) {
   let {
     onClick: t
   } = e;
-  return (0, r.jsx)(w, {
+  return (0, r.jsx)(U, {
     onClick: t,
-    children: R.intl.string(R.t.R9GHyc)
+    children: y.intl.string(y.t.R9GHyc)
   })
 }
 
-function L(e) {
-  switch (e) {
-    case S.pNK.INTEGRATIONS:
-      return R.intl.string(R.t.k7LGdn);
-    case S.pNK.ROLE_SUBSCRIPTIONS:
-      return R.intl.string(R.t.bRqiqa);
-    case S.pNK.ONBOARDING:
-      return R.intl.string(R.t.qZpU3d);
-    default:
-      return R.intl.string(R.t.MTIXho)
-  }
-}
-
-function x(e) {
-  return e === S.pNK.ROLE_SUBSCRIPTIONS ? R.intl.string(R.t.hZUCzc) : R.intl.string(R.t["/djIh4"])
-}
-
-function M() {
+function k() {
   let e = Chunk73800.useRef(null),
     t = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     n = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId(exports)),
     {
-      viewingRoles: o,
-      backNavigationSection: a,
-      isFullServerPreview: c,
-      isServerShopPreview: O
+      viewingRoles: l,
+      backNavigationSection: o,
+      isFullServerPreview: s,
+      isServerShopPreview: f
     } = (0, Chunk442837.cj)([Chunk160404.Z], () => ({
       viewingRoles: null != exports ? Chunk160404.Z.getViewingRoles(exports) : null,
       backNavigationSection: Chunk160404.Z.getBackNavigationSection(exports),
@@ -96,20 +78,31 @@ function M() {
       isServerShopPreview: null != exports && Chunk160404.Z.isViewingServerShop(exports)
     }));
   if (null == Chunk120356 || null == exports) return null;
-  let M = L(a),
-    j = x(a),
-    k = require === Chunk176505.oC.GUILD_ONBOARDING,
-    U = e => {
+  let k = function(e) {
+      switch (e) {
+        case g.pNK.INTEGRATIONS:
+          return y.intl.string(y.t.k7LGdn);
+        case g.pNK.ROLE_SUBSCRIPTIONS:
+          return y.intl.string(y.t.bRqiqa);
+        case g.pNK.ONBOARDING:
+          return y.intl.string(y.t.qZpU3d);
+        default:
+          return y.intl.string(y.t.MTIXho)
+      }
+    }(o),
+    L = o === Chunk981631.pNK.ROLE_SUBSCRIPTIONS ? Chunk388032.intl.string(Chunk388032.t.hZUCzc) : Chunk388032.intl.string(Chunk388032.t["/djIh4"]),
+    Z = require === Chunk176505.oC.GUILD_ONBOARDING,
+    j = e => {
       let {
         backToSettings: n
       } = e;
-      null != t && (I.Z.isFullServerPreview(t) && (0, m.uL)(S.Z5c.CHANNEL(t)), f.ZP.shouldShowOnboarding(t) && (d.Z.finishOnboarding(t), (0, _.EI)(t)), (0, v.mL)(t), n && h.Z.open(t, a), a === S.pNK.ROLE_SUBSCRIPTIONS && (0, p.GN)(t))
+      null != t && (C.Z.isFullServerPreview(t) && (0, O.uL)(g.Z5c.CHANNEL(t)), d.ZP.shouldShowOnboarding(t) && (_.Z.finishOnboarding(t), (0, E.EI)(t)), (0, A.mL)(t), n && T.Z.open(t, o), o === g.pNK.ROLE_SUBSCRIPTIONS && (0, I.GN)(t))
     };
   return (0, Chunk255367.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.BRAND,
     className: Chunk829675.notice,
-    children: [(0, Chunk255367.jsxs)(w, {
-      onClick: () => U({
+    children: [(0, Chunk255367.jsxs)(U, {
+      onClick: () => j({
         backToSettings: true
       }),
       className: Chunk829675.backButton,
@@ -118,8 +111,8 @@ function M() {
         height: 16,
         direction: Chunk671533.Z.Directions.LEFT,
         className: Chunk829675.backArrow
-      }), M]
-    }), k && Chunk755721 ? (0, Chunk255367.jsx)("div", {
+      }), k]
+    }), Z && Chunk755721 ? (0, Chunk255367.jsx)("div", {
       className: Chunk829675.noticeContents,
       children: (0, Chunk255367.jsx)("div", {
         className: Chunk829675.noticeText,
@@ -144,14 +137,14 @@ function M() {
           let {
             onClick: n
           } = t;
-          return (0, r.jsxs)(w, {
+          return (0, r.jsxs)(U, {
             onClick: n,
             buttonRef: e,
-            children: [j, (0, r.jsx)(y.Z, {
+            children: [L, (0, r.jsx)(R.Z, {
               width: 16,
               height: 16,
-              direction: y.Z.Directions.DOWN,
-              className: P.selectCaret
+              direction: R.Z.Directions.DOWN,
+              className: h.selectCaret
             })]
           })
         }
@@ -173,23 +166,23 @@ function M() {
           color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css
         })
       })]
-    }), Chunk755721 || a === Chunk981631.pNK.ROLE_SUBSCRIPTIONS ? null : (0, Chunk255367.jsx)(D, {
-      onClick: () => U({
+    }), Chunk755721 || o === Chunk981631.pNK.ROLE_SUBSCRIPTIONS ? null : (0, Chunk255367.jsx)(M, {
+      onClick: () => j({
         backToSettings: false
       })
     })]
   })
 }
 
-function j(e) {
+function L(e) {
   let {
     guildId: t
   } = e;
-  return (0, s.e7)([I.Z], () => I.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
-    className: a()(P.settingsWrapper, {
-      [P.windows]: (0, O.isWindows)(),
-      [P.osx]: (0, O.isMac)()
+  return (0, a.e7)([C.Z], () => C.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
+    className: o()(h.settingsWrapper, {
+      [h.windows]: (0, f.isWindows)(),
+      [h.osx]: (0, f.isMac)()
     }),
-    children: (0, r.jsx)(M, {})
+    children: (0, r.jsx)(k, {})
   }) : null
 }

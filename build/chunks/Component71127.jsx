@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 71127, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 71127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -17,23 +16,23 @@ function u(e) {
   let {
     channel: t,
     maxWidth: n
-  } = e, u = () => o.Z.toggleParticipantsList(t.id, false), d = (0, r.jsx)(s.ZP.Icon, {
+  } = e, u = (0, r.jsx)(o.ZP.Icon, {
     icon: i.Dio,
     tooltip: c.intl.string(c.t.cpT0Cg),
-    onClick: u
+    onClick: () => l.Z.toggleParticipantsList(t.id, false)
   });
   return (0, r.jsx)(a.Z, {
     sidebarType: a.y.ParticipantsSidebar,
     maxWidth: n,
-    floatingLayer: l.ZP,
-    children: (0, r.jsxs)(s.ZP, {
-      toolbar: d,
+    floatingLayer: s.ZP,
+    children: (0, r.jsxs)(o.ZP, {
+      toolbar: u,
       "aria-label": c.intl.string(c.t.jNqDh4),
-      children: [(0, r.jsx)(s.ZP.Icon, {
+      children: [(0, r.jsx)(o.ZP.Icon, {
         icon: i.BFJ,
         disabled: true,
         "aria-label": c.intl.string(c.t.jNqDh4)
-      }), (0, r.jsx)(s.ZP.Title, {
+      }), (0, r.jsx)(o.ZP.Title, {
         children: c.intl.string(c.t.jNqDh4)
       })]
     })

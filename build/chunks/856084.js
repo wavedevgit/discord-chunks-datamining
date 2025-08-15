@@ -1,40 +1,32 @@
-/** Chunk was on web.js **/
-/** chunk id: 856084, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 856084, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk581079 = require("./581079.js"),
-  i = "LTR",
-  o = "RTL",
-  a = null;
+  i = null;
 
-function s(e) {
-  return e === i || e === o
+function o(t) {
+  return "LTR" === t || "RTL" === t
 }
 
-function l(e) {
-  return s(e) || r(false), e === i ? "ltr" : "rtl"
-}
-
-function c(e, t) {
-  return s(e) || r(false), s(t) || r(false), e === t ? null : l(e)
-}
-
-function u(e) {
-  a = e
-}
-
-function d() {
-  u(i)
+function a(t) {
+  return o(t) || n(false), "LTR" === t ? "ltr" : "rtl"
 }
 module.exports = {
   NEUTRAL: "NEUTRAL",
-  LTR: i,
-  RTL: o,
-  isStrong: s,
-  getHTMLDir: l,
-  getHTMLDirIfDifferent: c,
-  setGlobalDir: u,
-  initGlobalDir: d,
+  LTR: "LTR",
+  RTL: "RTL",
+  isStrong: o,
+  getHTMLDir: a,
+  getHTMLDirIfDifferent: function(t, e) {
+    return o(t) || n(false), o(e) || n(false), t === e ? null : a(t)
+  },
+  setGlobalDir: function(t) {
+    i = t
+  },
+  initGlobalDir: function() {
+    i = "LTR"
+  },
   getGlobalDir: function() {
-    return a || this.initGlobalDir(), a || Chunk581079(false), a
+    return i || this.initGlobalDir(), i || Chunk581079(false), i
   }
 }

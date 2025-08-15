@@ -1,78 +1,67 @@
-/** Chunk was on web.js **/
-/** chunk id: 187237, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 187237, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  v: () => p
+  v: () => u
 });
 var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk140106 = require("./140106.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk79556 = require("./79556.js");
 
-function u(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function d(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      u(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function f(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function p(e) {
+function u(e) {
   let {
     channel: t,
     children: n,
     className: i,
     editable: u,
-    location: f
+    location: d
   } = e;
   return u ? (0, r.jsx)(a.ua7, {
     position: "bottom",
-    text: l.intl.string(l.t["0qPSMT"]),
-    children: e => (0, r.jsxs)(a.P3F, _(d({}, e), {
-      className: o()(c.editableGdmIcon, i),
-      onClick: () => (0, s.P5)(t.id, f),
-      children: [n, (0, r.jsx)("div", {
-        className: c.editableGdmIconIndicator,
-        children: (0, r.jsx)(a.vdY, {
-          size: "xs",
-          color: "currentColor"
-        })
-      })]
-    }))
+    text: s.intl.string(s.t["0qPSMT"]),
+    children: e => {
+      var s, u;
+      return (0, r.jsxs)(a.P3F, (s = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = r
+          })
+        }
+        return e
+      }({}, e), u = u = {
+        className: l()(c.editableGdmIcon, i),
+        onClick: () => (0, o.P5)(t.id, d),
+        children: [n, (0, r.jsx)("div", {
+          className: c.editableGdmIconIndicator,
+          children: (0, r.jsx)(a.vdY, {
+            size: "xs",
+            color: "currentColor"
+          })
+        })]
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
+        }
+        return n
+      })(Object(u)).forEach(function(e) {
+        Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(u, e))
+      }), s))
+    }
   }) : (0, r.jsx)("div", {
     className: i,
     children: n

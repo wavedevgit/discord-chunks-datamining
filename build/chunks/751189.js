@@ -25,7 +25,7 @@ function c(e) {
     rejectWithError: true
   }).then(t => {
     let n = t.body;
-    return o.default.track(s.rMx.GUILD_TEMPLATE_RESOLVED, {
+    return a.default.track(s.rMx.GUILD_TEMPLATE_RESOLVED, {
       resolved: true,
       guild_template_code: e,
       guild_template_name: n.name,
@@ -36,10 +36,10 @@ function c(e) {
       guildTemplate: n,
       code: e
     }), {
-      guildTemplate: (0, a.Z)(n),
+      guildTemplate: (0, o.Z)(n),
       code: e
     }
-  }, () => (o.default.track(s.rMx.GUILD_TEMPLATE_RESOLVED, {
+  }, () => (a.default.track(s.rMx.GUILD_TEMPLATE_RESOLVED, {
     resolved: false,
     guild_template_code: e
   }), i.Z.dispatch({
@@ -89,11 +89,11 @@ let u = {
       code: t
     })
   }),
-  updateGuildTemplate: (e, t, n, o) => r.tn.patch({
+  updateGuildTemplate: (e, t, n, a) => r.tn.patch({
     url: s.ANM.GUILD_TEMPLATE(e, t),
     body: {
       name: n,
-      description: o
+      description: a
     },
     oldFormErrors: true,
     rejectWithError: false

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk28531 = require("./28531.jsx"),
   Chunk819758 = require("./819758.jsx"),
@@ -19,12 +19,12 @@ let f = e => {
       emojiSubCategory: t
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(d.badgeLabel, t === c.t0.TOP_GUILD_EMOJI ? d.topGuildEmojiBadge : d.newlyAddedBadge),
+      className: a()(d.badgeLabel, t === c.t0.TOP_GUILD_EMOJI ? d.topGuildEmojiBadge : d.newlyAddedBadge),
       children: [t === c.t0.TOP_GUILD_EMOJI ? (0, r.jsx)(s.Z, {
         foreground: d.newlyAddedBadgeIcon
       }) : (0, r.jsx)(l.Z, {
         foreground: d.newlyAddedBadgeIcon
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "always-white",
         children: t === c.t0.TOP_GUILD_EMOJI ? u.intl.string(u.t.TR2B4e) : u.intl.string(u.t["1aZ4V1"])
@@ -42,17 +42,17 @@ let f = e => {
       emojiSubCategory: p = c.t0.NONE
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(d.inspector, t),
+      className: a()(d.inspector, t),
       children: [(0, r.jsx)("div", {
         className: d.graphicPrimary,
         "aria-hidden": true,
         children: n
       }), (0, r.jsxs)("div", {
         className: d.textWrapper,
-        children: [(0, r.jsxs)(a.Text, {
+        children: [(0, r.jsxs)(o.Text, {
           className: d.titlePrimary,
           variant: "text-md/semibold",
-          children: [_ ? (0, r.jsx)(a.r7p, {
+          children: [_ ? (0, r.jsx)(o.r7p, {
             size: "custom",
             color: "currentColor",
             "aria-label": _ ? u.intl.formatToPlainString(u.t["+fdUkZ"], {
@@ -62,7 +62,7 @@ let f = e => {
             height: 15,
             className: d.favorite
           }) : null, s]
-        }), null != l && (0, r.jsx)(a.Text, {
+        }), null != l && (0, r.jsx)(o.Text, {
           className: d.titleSecondary,
           variant: "text-xs/normal",
           children: l

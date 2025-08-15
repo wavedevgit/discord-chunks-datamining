@@ -55,8 +55,8 @@ function R(e, t) {
   if (null == e) return {};
   var n, r, i = P(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function R(e, t) {
 function P(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
@@ -75,9 +75,9 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
   D = (e, t, n) => {
     let r = A.t["bES+y8"],
       i = m.ZP.getName(t.guild_id, t.id, n),
-      o = e.extra.activity_name;
+      a = e.extra.activity_name;
     return A.intl.formatToMarkdownString(r, {
-      gameName: o,
+      gameName: a,
       userName: i
     }).replaceAll("*", "")
   },
@@ -87,8 +87,8 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       channel: n,
       users: r,
       countOthers: i
-    } = e, o = A.t["7j/5mp"];
-    return A.intl.formatToMarkdownString(o, {
+    } = e, a = A.t["7j/5mp"];
+    return A.intl.formatToMarkdownString(a, {
       gameName: t.extra.activity_name,
       user1: m.ZP.getName(null == n ? true : n.guild_id, null == n ? true : n.id, r[0]),
       user2: m.ZP.getName(null == n ? true : n.guild_id, null == n ? true : n.id, r[1]),
@@ -109,15 +109,15 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       showCoverImage: false
     }), {
       user: M,
-      details: j,
-      activity: k,
+      details: k,
+      activity: j,
       embeddedActivity: U
     } = (0, T.n)(n), {
       primaryColor: G,
       secondaryColor: B
-    } = (0, O.Z)(null == x ? true : x.src), Z = (0, o.e7)([p.default], () => p.default.locale), {
+    } = (0, O.Z)(null == x ? true : x.src), V = (0, a.e7)([p.default], () => p.default.locale), {
       displayParticipants: F,
-      participant1: V,
+      participant1: Z,
       participant2: H,
       numOtherParticipants: Y
     } = (0, E.Z)(n, 3), W = () => {
@@ -129,7 +129,7 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
       let r = Y > 0 ? L({
         entry: n,
         channel: t,
-        users: [V, H],
+        users: [Z, H],
         countOthers: Y
       }) : D(n, t, M);
       return (0, y.C4)({
@@ -137,11 +137,11 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         applicationImageSrc: null == x ? true : x.src,
         avatarSrcs: F.map(e => e.getAvatarURL(t.guild_id, 128)),
         description: r,
-        timestamp: (0, b.yh)(n, Z),
+        timestamp: (0, b.yh)(n, V),
         colors: [G, B],
         channelId: e
       })
-    }, [null == x ? true : x.src, t, F, n, Z, Y, V, H, G, B, M]), {
+    }, [null == x ? true : x.src, t, F, n, V, Y, Z, H, G, B, M]), {
       enabled: z
     } = s.c.useExperiment({
       location: "MemberListAcitivtyContentPopout"
@@ -157,7 +157,7 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         channel: t,
         userDescription: (0, b.kr)(n) ? A.t.vPg1JS : A.t.rPqqtr,
         title: n.extra.activity_name,
-        subtitle: j,
+        subtitle: k,
         badges: q,
         entry: n,
         showCoverImage: false,
@@ -165,10 +165,10 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
         onClickSubtitle: P ? true : W,
         onClickThumbnail: P ? true : W
       }),
-      Q = (0, l.Z)(k, S.xjy.JOIN) || (0, c.Z)(k),
+      Q = (0, l.Z)(j, S.xjy.JOIN) || (0, c.Z)(j),
       J = Q ? (0, r.jsx)(u.Z, {
         embeddedActivity: U,
-        activity: k,
+        activity: j,
         user: M,
         ButtonComponent: e => {
           let {
@@ -176,12 +176,12 @@ let w = (e, t) => A.intl.formatToPlainString(A.t.tAwI1t, {
             size: n
           } = e, i = R(e, ["children", "size"]);
           return (0, r.jsx)(I.Ll, C({
-            icon: a.YVR,
+            icon: o.YVR,
             text: t
           }, i))
         }
       }) : null,
-      $ = z ? a.iWm : a.jje,
+      $ = z ? o.iWm : o.jje,
       ee = P ? null : (0, r.jsx)(I.Ll, {
         onClick: W,
         icon: $,

@@ -192,7 +192,7 @@ class ey extends Chunk73800.PureComponent {
       targetElementRef: this.guildHeaderDropdownButtonRef,
       renderPopout: () => (0, r.jsx)("div", {
         onClick: e => e.stopPropagation(),
-        children: (0, r.jsx)(B.ZP, {
+        children: (0, r.jsx)(V.ZP, {
           header: ef.intl.string(ef.t["Q3qa4+"]),
           content: ef.intl.string(ef.t.UyHD4O),
           buttonCTA: ef.intl.string(ef.t.U9PrMz),
@@ -382,7 +382,7 @@ class ey extends Chunk73800.PureComponent {
       null != t && (0, h.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("1806"), n.e("36599"), n.e("7654"), n.e("58175"), n.e("44156"), n.e("58511"), n.e("6850"), n.e("58227"), n.e("54408"), n.e("42926"), n.e("20087"), n.e("40725"), n.e("87154"), n.e("33213"), n.e("23744")]).then(n.bind(n, 545135));
+        } = await Promise.all([n.e("1806"), n.e("36599"), n.e("60962"), n.e("58175"), n.e("7654"), n.e("44156"), n.e("47463"), n.e("6850"), n.e("58227"), n.e("54408"), n.e("42926"), n.e("20087"), n.e("6049"), n.e("87154"), n.e("33213"), n.e("23744")]).then(n.bind(n, 545135));
         return n => (0, r.jsx)(e, eb(em({}, n), {
           guild: t
         }))
@@ -500,16 +500,16 @@ function ev(e) {
     {
       enableStudyGroup: G
     } = (0, A.s)(o),
-    B = (0, v.ZP)(e => e.currentlyShown.has(u.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION)),
-    [Y, er] = i.useState(!B),
+    V = (0, v.ZP)(e => e.currentlyShown.has(u.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION)),
+    [Y, er] = i.useState(!V),
     ei = (0, b.Z)(n),
     {
       analyticsLocations: el
     } = (0, O.ZP)(_.Z.GUILD_HEADER);
   i.useEffect(() => {
-    n !== ei && er(!B)
-  }, [n, ei, B]);
-  let [ea, eo] = (0, v.ZP)(e => [eu.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ed.R.GUILD_HEADER_TOOLTIPS)], s.X), es = (0, y.Z)(o), ep = (0, p.s9z)(p.JQI), ef = (0, c.e7)([X.Z], () => X.Z.hasLayers()), eh = (0, c.e7)([V.Z], () => V.Z.shouldShow(eO)), eg = g && (null == o ? true : o.premiumProgressBarEnabled) === false && !en.s.isDisallowPopupsSet(), em = (0, c.e7)([K.Z], () => K.Z.getMemberCount(n)), eb = g && null != em && em >= 30 && (null == o ? true : o.premiumProgressBarEnabled) === false && !en.s.isDisallowPopupsSet(), e_ = (0, P.Z)(n), eE = (null == o ? true : o.features.has(ec.oNc.HUB)) === true, ev = g && (null == o ? true : o.features.has(ec.oNc.DISCOVERABLE)) === true, eI = (0, E.Q)(), eC = (g || (null == o ? true : o.premiumTier) === ec.Eu4.NONE) && !en.s.isDisallowPopupsSet() && !eI, eS = (0, c.e7)([x.Z, X.Z], () => null != o && null != Z && g && !X.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), eN = (0, c.e7)([F.Z], () => F.Z.getChannel(a)), {
+    n !== ei && er(!V)
+  }, [n, ei, V]);
+  let [ea, eo] = (0, v.ZP)(e => [eu.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ed.R.GUILD_HEADER_TOOLTIPS)], s.X), es = (0, y.Z)(o), ep = (0, p.s9z)(p.JQI), ef = (0, c.e7)([X.Z], () => X.Z.hasLayers()), eh = (0, c.e7)([B.Z], () => B.Z.shouldShow(eO)), eg = g && (null == o ? true : o.premiumProgressBarEnabled) === false && !en.s.isDisallowPopupsSet(), em = (0, c.e7)([K.Z], () => K.Z.getMemberCount(n)), eb = g && null != em && em >= 30 && (null == o ? true : o.premiumProgressBarEnabled) === false && !en.s.isDisallowPopupsSet(), e_ = (0, P.Z)(n), eE = (null == o ? true : o.features.has(ec.oNc.HUB)) === true, ev = g && (null == o ? true : o.features.has(ec.oNc.DISCOVERABLE)) === true, eI = (0, E.Q)(), eC = (g || (null == o ? true : o.premiumTier) === ec.Eu4.NONE) && !en.s.isDisallowPopupsSet() && !eI, eS = (0, c.e7)([x.Z, X.Z], () => null != o && null != Z && g && !X.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), eN = (0, c.e7)([F.Z], () => F.Z.getChannel(a)), {
     isPopoutOpen: eT
   } = (0, S.y)(), eP = null != (t = null == o ? true : o.features.has(ec.oNc.COMMUNITY)) && t, ej = et.ZP.isNewUser(Z), ex = Y && !ej;
   (0, N.Z)(o);

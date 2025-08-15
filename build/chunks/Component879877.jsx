@@ -1,4 +1,4 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 879877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -21,13 +21,13 @@ function m(e) {
     isCurrentUser: n,
     widgetType: l,
     applicationId: o
-  } = e, c = null == t ? true : t.filter(e => null != (0, u.zK)(e)), s = (0, i.useRef)(new Map), m = (0, i.useRef)(null), [O, x] = (0, i.useState)(0), [h, v] = (0, i.useState)(false), {
+  } = e, c = null == t ? true : t.filter(e => null != (0, u.zK)(e)), s = (0, i.useRef)(new Map), m = (0, i.useRef)(null), [O, h] = (0, i.useState)(0), [x, v] = (0, i.useState)(false), {
     trackUserProfileAction: _
-  } = (0, a.KZ)(), I = y(m, c, s, x);
+  } = (0, a.KZ)(), I = y(m, c, s, h);
   if ((0, i.useEffect)(() => (I(), window.addEventListener("resize", I), () => {
       window.removeEventListener("resize", I)
     }), [I, null == c ? true : c.join("")]), null == c || 0 === c.length) return null;
-  let P = h ? c : c.slice(0, c.length - O);
+  let P = x ? c : c.slice(0, c.length - O);
   return (0, r.jsxs)("div", {
     className: p.tagListContainer,
     children: [(0, r.jsx)("ul", {
@@ -42,7 +42,7 @@ function m(e) {
           null != t && s.current.set(e, t)
         }
       }, e))
-    }), O > 0 && (h ? (0, r.jsx)(j, {
+    }), O > 0 && (x ? (0, r.jsx)(j, {
       onClick: () => {
         v(false), _({
           action: "COLLAPSE_GAME_TAGS"

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 738672, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 738672, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  h: () => f
+  h: () => d
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -12,47 +11,46 @@ var Chunk255367 = require("./255367.js"),
   Chunk740492 = require("./740492.js"),
   Chunk937995 = require("./937995.jsx"),
   Chunk618158 = require("./618158.jsx");
-let d = 24;
 
-function f(e) {
+function d(e) {
   let {
     buttonRef: t,
     dismissed: n,
-    onDismiss: f,
-    renderComponent: _,
-    nudgeAlignIntoViewport: p = false,
-    skipForceHide: h = false
-  } = e, m = i.useContext(c.h9), [g, E] = i.useState(""), [b, y] = i.useState(false), O = (0, o.e7)([l.ZP], () => l.ZP.callHeaderHeight), v = i.useRef(null), I = i.useRef(0);
+    onDismiss: d,
+    renderComponent: p,
+    nudgeAlignIntoViewport: h = false,
+    skipForceHide: f = false
+  } = e, m = i.useContext(c.h9), [g, b] = i.useState(""), [y, _] = i.useState(false), C = (0, l.e7)([s.ZP], () => s.ZP.callHeaderHeight), x = i.useRef(null), v = i.useRef(0);
   i.useEffect(() => {
     let e = t.current;
-    if (null != e) return e.addEventListener("click", f), () => e.removeEventListener("click", f)
+    if (null != e) return e.addEventListener("click", d), () => e.removeEventListener("click", d)
   }), i.useEffect(() => {
-    if (!h) {
+    if (!f) {
       var e, t;
-      E(String(I.current)), y(true !== O && O < (null != (t = null == (e = v.current) ? true : e.clientHeight) ? t : 300) + d), I.current += 1
+      b(String(v.current)), _(true !== C && C < (null != (t = null == (e = x.current) ? true : e.clientHeight) ? t : 300) + 24), v.current += 1
     }
-  }, [O, v, h]);
+  }, [C, x, f]);
   let {
-    preventIdle: T,
-    allowIdle: S
+    preventIdle: j,
+    allowIdle: O
   } = (0, u.Y)("popup");
-  return (null == t ? true : t.current) == null ? null : (0, r.jsx)(s.ZP, {
+  return (null == t ? true : t.current) == null ? null : (0, r.jsx)(o.ZP, {
     children: (0, r.jsx)(a.jRF, {
       targetRef: t,
       position: "top",
       align: "center",
       spacing: 0,
       positionKey: g,
-      nudgeAlignIntoViewport: p,
+      nudgeAlignIntoViewport: h,
       children: () => (0, r.jsx)("div", {
-        ref: v,
-        onMouseOver: T,
-        onFocus: T,
-        onBlur: S,
-        onMouseLeave: S,
-        children: _({
-          hidden: b || m || n,
-          onDismiss: f
+        ref: x,
+        onMouseOver: j,
+        onFocus: j,
+        onBlur: O,
+        onMouseLeave: O,
+        children: p({
+          hidden: y || m || n,
+          onDismiss: d
         })
       })
     })

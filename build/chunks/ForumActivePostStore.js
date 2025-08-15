@@ -3,11 +3,11 @@
 "use strict";
 let r;
 require.d(exports, {
-  U: () => Z,
+  U: () => V,
   Z: () => Q
 }), require("./388685.js"), require("./642613.js");
 var i, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk697988 = require("./697988.js"),
   Chunk683860 = require("./683860.js"),
   Chunk843991 = require("./843991.js"),
@@ -40,8 +40,8 @@ let O = [],
   C = [],
   R = false,
   P = [],
-  w = a().chain(O),
-  D = a().chain(O),
+  w = o().chain(O),
+  D = o().chain(O),
   L = new Set,
   x = new Set;
 
@@ -50,12 +50,12 @@ function M(e) {
   return null != (t = m.ZP.lastMessageId(e)) ? t : e
 }
 
-function j(e) {
+function k(e) {
   let t = _.Z.getCount(e);
   return null === t || 0 === t
 }
 
-function k(e) {
+function j(e) {
   return function(t, n) {
     return (0, b.yv)(t) ? false : (0, b.yv)(n) ? 1 : e === l.z.LATEST_ACTIVITY ? E.default.compare(M(n), M(t)) : E.default.compare(n, t)
   }
@@ -74,7 +74,7 @@ function U(e, t) {
 }
 
 function G() {
-  C = [], r = null, I = null, T = new Set, S = Chunk683860.z.LATEST_ACTIVITY, A = Chunk697988.z.MATCH_SOME, N = 0, P = [], w = a().chain(O), D = a().chain(O), x.clear(), L.clear()
+  C = [], r = null, I = null, T = new Set, S = Chunk683860.z.LATEST_ACTIVITY, A = Chunk697988.z.MATCH_SOME, N = 0, P = [], w = o().chain(O), D = o().chain(O), x.clear(), L.clear()
 }
 
 function B() {
@@ -86,14 +86,14 @@ function B() {
   })
 }
 
-function Z(e) {
+function V(e) {
   let t = h.Z.getChannel(e);
   return null == t ? [] : Object.values(f.Z.getThreadsForParent(t.guild_id, t.id)).map(e => {
     let {
       id: t
     } = e;
     return t
-  }).sort(k(S))
+  }).sort(j(S))
 }
 
 function F(e) {
@@ -104,13 +104,13 @@ function F(e) {
       id: t
     } = e;
     return t
-  }), N = 0, R = true), 0 !== L.size && (P = P.filter(e => !L.has(e)), L.clear()), 0 !== x.size && (P = Array.from(new Set([...P, ...x])), x.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (D = a().chain(P).sort(k(l.z.LATEST_ACTIVITY)), w = a().chain(P).sort(k(l.z.CREATION_DATE)));
+  }), N = 0, R = true), 0 !== L.size && (P = P.filter(e => !L.has(e)), L.clear()), 0 !== x.size && (P = Array.from(new Set([...P, ...x])), x.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (D = o().chain(P).sort(j(l.z.LATEST_ACTIVITY)), w = o().chain(P).sort(j(l.z.CREATION_DATE)));
   let n = (S === l.z.LATEST_ACTIVITY ? D : w).value(),
-    i = (C = 0 === T.size ? n : n.filter(U(T, A))).find(e => j(e));
+    i = (C = 0 === T.size ? n : n.filter(U(T, A))).find(e => k(e));
   r = null == i ? null : i
 }
 
-function V(e) {
+function Z(e) {
   var t;
   let {
     guildId: n
@@ -195,14 +195,14 @@ class X extends(i = Chunk442837.ZP.Store) {
   }
   getThreadIds(e, t, n, r) {
     let i = e !== I,
-      o = !(0, c.O)(n, T),
-      a = t !== S,
+      a = !(0, c.O)(n, T),
+      o = t !== S,
       s = r !== A;
     return I = e, T = n, S = t, A = r, i ? F({
       refreshThreadIds: true
-    }) : a ? F({
+    }) : o ? F({
       sortThreadIds: true
-    }) : (o || s) && F(), C
+    }) : (a || s) && F(), C
   }
   getCurrentThreadIds() {
     return C
@@ -222,7 +222,7 @@ let Q = new X(Chunk570140.Z, {
   GUILD_CREATE: B,
   CHANNEL_SELECT: B,
   CHANNEL_DELETE: K,
-  THREAD_LIST_SYNC: V,
+  THREAD_LIST_SYNC: Z,
   THREAD_CREATE: Y,
   THREAD_UPDATE: H,
   THREAD_DELETE: W,

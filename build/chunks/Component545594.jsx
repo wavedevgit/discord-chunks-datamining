@@ -1,29 +1,28 @@
-/** Chunk was on web.js **/
-/** chunk id: 545594, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 545594, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  i: () => s
+  i: () => o
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk458926 = require("./458926.js");
 
-function s(e) {
+function o(e) {
   let {
     bannerIcon: t,
     bannerHeader: n,
     bannerSubtext: i,
-    textStyles: s,
-    headerStyles: l,
+    textStyles: o,
+    headerStyles: s,
     containerStyles: c,
     children: u
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(a.spamBanner, c),
+    className: l()(a.spamBanner, c),
     children: [(0, r.jsxs)("div", {
-      className: o()(a.bannerTextContainer, s),
+      className: l()(a.bannerTextContainer, o),
       children: [null != t && ("string" == typeof t ? (0, r.jsx)("img", {
         src: t,
         alt: "",
@@ -31,7 +30,7 @@ function s(e) {
       }) : t), (0, r.jsxs)("div", {
         className: a.bannerText,
         children: [(0, r.jsx)("div", {
-          className: o()(a.bannerHeader, l),
+          className: l()(a.bannerHeader, s),
           children: n
         }), null != i && (0, r.jsx)("div", {
           className: a.bannerSubtext,

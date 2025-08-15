@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 814820, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 814820, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  f: () => y
+  f: () => C
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -20,52 +19,52 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk628800 = require("./628800.js");
-let b = e => {
+let E = e => {
     let {
       channel: t,
       message: n
-    } = e, o = (0, h.y6)(n.id), c = i.useCallback(() => {
-      (0, p.v)({
-        type: s.Ie.FORM,
+    } = e, l = (0, _.y6)(n.id), c = i.useCallback(() => {
+      (0, f.v)({
+        type: o.Ie.FORM,
         content: "",
         channel: t
       }).then(e => {
         let {
           valid: r
         } = e;
-        r && (0, h.TZ)(t, n, o.id)
+        r && (0, _.TZ)(t, n, l.id)
       })
-    }, [t, n, o]);
+    }, [t, n, l]);
     return (0, r.jsx)("div", {
-      className: E.welcomeCTA,
+      className: b.welcomeCTA,
       children: (0, r.jsx)(a.zx, {
         icon: {
           type: "sticker",
-          asset: o,
-          component: l.Z
+          asset: l,
+          component: s.Z
         },
-        text: g.intl.string(g.t["7Tj6HR"]),
+        text: h.intl.string(h.t["7Tj6HR"]),
         onClick: c,
         variant: "secondary"
       })
     })
   },
-  y = e => {
+  C = e => {
     let {
       message: t,
       channel: n
-    } = e, i = n.getGuildId(), a = (0, o.e7)([_.default, f.Z, d.Z, u.ZP], () => {
+    } = e, i = n.getGuildId(), a = (0, l.e7)([m.default, p.Z, d.Z, u.ZP], () => {
       var e;
-      let r = _.default.getCurrentUser(),
-        o = (0, c.xl)(n),
-        a = f.Z.can(m.Plq.SEND_MESSAGES, n),
-        s = null != i && null != r && (null == (e = u.ZP.getMember(i, r.id)) ? true : e.isPending),
-        l = t.author.bot,
-        p = d.Z.getGuild(i),
-        h = null != p && (p.systemChannelFlags & m.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
-      return a && !o && !s && !l && h
+      let r = m.default.getCurrentUser(),
+        l = (0, c.xl)(n),
+        a = p.Z.can(g.Plq.SEND_MESSAGES, n),
+        o = null != i && null != r && (null == (e = u.ZP.getMember(i, r.id)) ? true : e.isPending),
+        s = t.author.bot,
+        f = d.Z.getGuild(i),
+        _ = null != f && (f.systemChannelFlags & g.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
+      return a && !l && !o && !s && _
     });
-    return null != i && a ? (0, r.jsx)(b, {
+    return null != i && a ? (0, r.jsx)(E, {
       message: t,
       channel: n
     }) : null

@@ -1,7 +1,7 @@
-/** Chunk was on 9885 **/
+/** Chunk was on 42521 **/
 /** chunk id: 759853, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -18,26 +18,26 @@ var Chunk255367 = require("./255367.js"),
   Chunk675654 = require("./675654.js"),
   Chunk674386 = require("./674386.js"),
   Chunk197857 = require("./197857.js");
-let j = ["#51BC9D"],
-  b = e => {
+let b = ["#51BC9D"],
+  _ = e => {
     var t;
     let {
       expansionSpring: n,
       overlayRef: o,
-      quest: b,
-      progressBarRef: _,
+      quest: _,
+      progressBarRef: j,
       isExpanded: v,
       isHovered: C,
       shouldShowRewardsCTAWhenCollapsed: y
     } = e, {
       completionSpring: E,
       startCompletionAnimation: O
-    } = (0, g.G)(), S = (null == (t = b.userStatus) ? true : t.completedAt) != null, T = s.useRef(false), w = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), P = s.useRef(null), A = (0, u.e7)([m.Z], () => m.Z.hasLayers()), N = (0, d.Z)(A), [R, B] = s.useState(null), [k, q] = s.useState(null), I = s.useRef(new i.qA({
+    } = (0, g.G)(), S = (null == (t = _.userStatus) ? true : t.completedAt) != null, T = s.useRef(false), w = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), P = s.useRef(null), A = (0, u.e7)([m.Z], () => m.Z.hasLayers()), N = (0, d.Z)(A), [R, B] = s.useState(null), [k, q] = s.useState(null), I = s.useRef(new i.qA({
       gravity: 0,
       wind: 0
     })), Q = (0, i.uR)(R, k), D = s.useCallback(() => {
       if (w) return;
-      let e = _.current,
+      let e = j.current,
         t = P.current;
       if (null != t && null != e && Q.isReady) {
         var n, r, s, o, a, i;
@@ -113,7 +113,7 @@ let j = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [_, P, Q, w]), V = (0, d.Z)(v);
+    }, [j, P, Q, w]), V = (0, d.Z)(v);
     return (s.useEffect(() => {
       S && v && !V && (O(), D())
     }, [v, S, O, D, V]), s.useEffect(() => {
@@ -153,7 +153,7 @@ let j = ["#51BC9D"],
         }), (0, r.jsx)(i.Ji, {
           ref: q,
           sprites: [h],
-          colors: j,
+          colors: b,
           spriteWidth: f.Ko,
           spriteHeight: f.Ko
         }), null != o.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {

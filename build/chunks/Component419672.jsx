@@ -1,7 +1,7 @@
 /** Chunk was on 89650 **/
 /** chunk id: 419672, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => x
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -15,26 +15,26 @@ var Chunk255367 = require("./255367.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk328355 = require("./328355.js");
-let _ = function(t) {
+let x = function(t) {
   let {
     onClose: e,
     channelId: n
-  } = t, [_, O] = r.useState(false), b = r.useCallback(() => {
+  } = t, [x, b] = r.useState(false), p = r.useCallback(() => {
     l.Z.open(d.oAB.CONTENT_AND_SOCIAL, null, {
       scrollPosition: T.FY.DM_SAFETY_ALERTS_V2
     }), e()
-  }, [e]), E = r.useCallback(() => {
-    _ || (O(true), (0, o.Uj)(n).then(() => {
+  }, [e]), O = r.useCallback(() => {
+    x || (b(true), (0, o.Uj)(n).then(() => {
       e(), (0, c.t)({
         text: S.intl.string(S.t.FhgVWl),
         id: "safety-tools-report-false-positive"
       })
     }).catch(() => {
-      O(false), (0, s.showToast)((0, s.createToast)(S.intl.string(S.t.R0RpRU), s.ToastType.FAILURE))
+      b(false), (0, s.showToast)((0, s.createToast)(S.intl.string(S.t.R0RpRU), s.ToastType.FAILURE))
     }))
-  }, [n, e, _]);
+  }, [n, e, x]);
   return (0, i.jsxs)(u.Z, {
-    style: x.wrapperStyle,
+    style: _.wrapperStyle,
     children: [(0, i.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
@@ -43,18 +43,18 @@ let _ = function(t) {
       })
     }), (0, i.jsxs)("div", {
       children: [(0, i.jsx)(s.zxk, {
-        onClick: b,
+        onClick: p,
         fullWidth: true,
         text: S.intl.string(S.t.qpWnyM)
       }), (0, i.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        className: x.reportFalsePositiveText,
+        className: _.reportFalsePositiveText,
         children: S.intl.format(S.t["2uYViI"], {
           reportFalsePositiveHook: (t, e) => (0, i.jsx)(s.P3F, {
-            className: x.reportFalsePositiveButton,
+            className: _.reportFalsePositiveButton,
             tag: "span",
-            onClick: E,
+            onClick: O,
             children: t
           }, e)
         })

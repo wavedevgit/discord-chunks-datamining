@@ -5,7 +5,7 @@ let r, i;
 require.r(exports), require.d(exports, {
   default: () => Q
 }), require("./539854.js"), require("./388685.js");
-var o, Chunk392711 = require("./392711.js"),
+var a, Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -110,13 +110,13 @@ function M() {
   T = Chunk981631.QZA.SUBMITTING, S = {}
 }
 
-function j(e) {
+function k(e) {
   var t;
   if (T !== p.QZA.SUBMITTING) returnfalse;
   T = p.QZA.OPEN, S = null != (t = e.errors) ? t : {}
 }
 
-function k(e) {
+function j(e) {
   let {
     guildId: t,
     integrations: n
@@ -129,8 +129,8 @@ function k(e) {
         } = t;
         if (n === e.id) returntrue
       })) {
-      var i, o;
-      g.push(e), e.type === (null == y ? true : y.type) && (null == (i = e.account) ? true : i.id) === (null == (o = y.account) ? true : o.id) && (y = e)
+      var i, a;
+      g.push(e), e.type === (null == y ? true : y.type) && (null == (i = e.account) ? true : i.id) === (null == (a = y.account) ? true : a.id) && (y = e)
     } for (let e = g.length - 1; e >= 0; e--) {
     let t = g[e],
       r = n.find(e => {
@@ -193,7 +193,7 @@ function B(e) {
   b = null, S = {}, A = false
 }
 
-function Z(e) {
+function V(e) {
   let {
     integrationId: t
   } = e, n = K(t);
@@ -205,7 +205,7 @@ function F() {
   y = null, S = {}, A = false
 }
 
-function V(e) {
+function Z(e) {
   let {
     webhookId: t
   } = e, n = z(t);
@@ -242,7 +242,7 @@ function z(e) {
     return n === e
   })
 }
-class q extends(o = Chunk442837.ZP.Store) {
+class q extends(a = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk999382.Z, Chunk855674.Z, Chunk496675.Z)
   }
@@ -308,16 +308,16 @@ let X = new q(Chunk570140.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_SET_SECTION: R,
     INTEGRATION_SETTINGS_START_EDITING_COMMAND: G,
     INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: B,
-    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: Z,
+    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: V,
     INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: F,
     INTEGRATION_SETTINGS_UPDATE_INTEGRATION: L,
     INTEGRATION_SETTINGS_UPDATE_WEBHOOK: x,
-    INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: V,
+    INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: Z,
     INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: H,
     GUILD_SETTINGS_CLOSE: w,
-    GUILD_SETTINGS_LOADED_INTEGRATIONS: k,
+    GUILD_SETTINGS_LOADED_INTEGRATIONS: j,
     WEBHOOKS_UPDATE: U,
     INTEGRATION_SETTINGS_SUBMITTING: M,
-    INTEGRATION_SETTINGS_SAVE_FAILURE: j
+    INTEGRATION_SETTINGS_SAVE_FAILURE: k
   }),
   Q = X

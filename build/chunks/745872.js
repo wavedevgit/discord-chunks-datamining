@@ -149,7 +149,7 @@ var M = function e(t) {
     }
     return L[t] = n, n
   },
-  j = {
+  k = {
     __proto__: null,
     "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
     "%ArrayPrototype%": ["Array", "prototype"],
@@ -207,9 +207,9 @@ var M = function e(t) {
   Chunk706165 = require("./706165.js"),
   G = Chunk390976.call(Chunk947599, Array.prototype.concat),
   B = Chunk390976.call(Chunk365088, Array.prototype.splice),
-  Z = Chunk390976.call(Chunk947599, String.prototype.replace),
+  V = Chunk390976.call(Chunk947599, String.prototype.replace),
   F = Chunk390976.call(Chunk947599, String.prototype.slice),
-  V = Chunk390976.call(Chunk947599, RegExp.prototype.exec),
+  Z = Chunk390976.call(Chunk947599, RegExp.prototype.exec),
   H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
   Y = /\\(\\)?/g,
   W = function(e) {
@@ -218,13 +218,13 @@ var M = function e(t) {
     if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
     if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
     var r = [];
-    return Z(e, H, function(e, t, n, i) {
-      r[r.length] = n ? Z(i, Y, "$1") : t || e
+    return V(e, H, function(e, t, n, i) {
+      r[r.length] = n ? V(i, Y, "$1") : t || e
     }), r
   },
   K = function(e, t) {
     var n, r = e;
-    if (U(j, r) && (r = "%" + (n = j[r])[0] + "%"), U(L, r)) {
+    if (U(k, r) && (r = "%" + (n = k[r])[0] + "%"), U(L, r)) {
       var i = L[r];
       if (i === w && (i = M(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
       return {
@@ -238,12 +238,12 @@ var M = function e(t) {
 module.exports = function(e, t) {
   if ("string" != typeof e || 0 === e.length) throw new u("intrinsic name must be a non-empty string");
   if (arguments.length > 1 && "boolean" != typeof t) throw new u('"allowMissing" argument must be a boolean');
-  if (null === V(/^%?[^%]*%?$/, e)) throw new c("`%` may not be present anywhere but at the beginning and end of the intrinsic name");
+  if (null === Z(/^%?[^%]*%?$/, e)) throw new c("`%` may not be present anywhere but at the beginning and end of the intrinsic name");
   var n = W(e),
     r = n.length > 0 ? n[0] : "",
     i = K("%" + r + "%", t),
-    o = i.name,
-    a = i.value,
+    a = i.name,
+    o = i.value,
     s = false,
     l = i.alias;
   l && (r = l[0], B(n, G([0, 1], l)));
@@ -252,18 +252,18 @@ module.exports = function(e, t) {
       p = F(_, 0, 1),
       h = F(_, false);
     if (('"' === p || "'" === p || "`" === p || '"' === h || "'" === h || "`" === h) && p !== h) throw new c("property names with quotes must have matching quotes");
-    if ("constructor" !== _ && f || (s = true), r += "." + _, U(L, o = "%" + r + "%")) a = L[o];
-    else if (null != a) {
-      if (!(_ in a)) {
+    if ("constructor" !== _ && f || (s = true), r += "." + _, U(L, a = "%" + r + "%")) o = L[a];
+    else if (null != o) {
+      if (!(_ in o)) {
         if (!t) throw new u("base intrinsic for " + e + " exists, but the property is not available.");
         return
       }
       if (O && d + 1 >= n.length) {
-        var m = O(a, _);
-        a = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : a[_]
-      } else f = U(a, _), a = a[_];
-      f && !s && (L[o] = a)
+        var m = O(o, _);
+        o = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : o[_]
+      } else f = U(o, _), o = o[_];
+      f && !s && (L[a] = o)
     }
   }
-  return a
+  return o
 }

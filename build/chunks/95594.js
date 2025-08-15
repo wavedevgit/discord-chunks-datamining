@@ -74,12 +74,12 @@ function f(e) {
     paddingVertical: y,
     paddingHorizontal: O,
     dir: v
-  } = e, I = (0, o.Z)(), T = (0, r.useRef)(d), [S] = (0, r.useState)(() => new i.ZP), A = p(), N = Math.min(null != h ? h : 1 / 0, A.offsetWidth), C = null != h ? Math.max(0, A.offsetWidth - h) : 0, {
+  } = e, I = (0, a.Z)(), T = (0, r.useRef)(d), [S] = (0, r.useState)(() => new i.ZP), A = p(), N = Math.min(null != h ? h : 1 / 0, A.offsetWidth), C = null != h ? Math.max(0, A.offsetWidth - h) : 0, {
     dirty: R,
     chunkStart: P,
     chunkEnd: w,
     forceUpdateOnChunkChange: D
-  } = (0, a.Z)({
+  } = (0, o.Z)({
     chunkSize: _,
     getScrollerState: p,
     forceUpdate: I

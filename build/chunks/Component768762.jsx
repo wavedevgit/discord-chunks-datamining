@@ -1,12 +1,12 @@
-/** Chunk was on 77512 **/
-/** chunk id: 768762, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 79312 **/
+/** chunk id: 768762, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => y
 });
-var r, i, Chunk255367 = require("./255367.js"),
+var n, a, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  c = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk192754 = require("./192754.js");
 let d = {
@@ -15,13 +15,13 @@ let d = {
     DOWN: "down",
     LEFT: "left"
   },
-  f = {
+  p = {
     [d.UP]: "",
     [d.RIGHT]: Chunk192754.right,
     [d.DOWN]: Chunk192754.down,
     [d.LEFT]: Chunk192754.left
   };
-class p extends(i = Chunk73800.PureComponent) {
+class f extends(a = Chunk73800.PureComponent) {
   render() {
     let {
       direction: e,
@@ -30,15 +30,15 @@ class p extends(i = Chunk73800.PureComponent) {
     return (0, Chunk255367.jsx)(Chunk481060.wj7, {
       size: "md",
       color: "currentColor",
-      className: c()(exports, {
-        [f[module]]: true
+      className: s()(exports, {
+        [p[module]]: true
       })
     })
   }
-}(r = "Directions") in p ? Object.defineProperty(p, r, {
+}(n = "Directions") in f ? Object.defineProperty(f, n, {
   value: d,
   enumerable: true,
   configurable: true,
   writable: true
-}) : p[r] = d;
-let b = p
+}) : f[n] = d;
+let y = f

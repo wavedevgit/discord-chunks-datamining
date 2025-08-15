@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 753898, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 753898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => C
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -23,99 +22,86 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk963392 = require("./963392.js");
 
-function y(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function O(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      y(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function v(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function T(e) {
-  var t;
+function C(e) {
+  var t, n, C;
   let {
-    channel: n,
-    children: y,
-    user: v
-  } = e, T = (0, i.e7)([l.Z], () => l.Z.useReducedMotion), S = null != (t = (0, d.ZP)(n)) ? t : "", {
-    avatarDecorationSrc: A,
-    eventHandlers: N,
-    isAnimating: C
-  } = (0, m.Z)({
-    userId: null == v ? true : v.id,
-    size: s.EFr.SIZE_80,
+    channel: x,
+    children: v,
+    user: j
+  } = e, O = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), E = null != (t = (0, d.ZP)(x)) ? t : "", {
+    avatarDecorationSrc: S,
+    eventHandlers: P,
+    isAnimating: I
+  } = (0, g.Z)({
+    userId: null == j ? true : j.id,
+    size: o.EFr.SIZE_80,
     animateOnHover: true
-  }), R = () => {
-    let e = !T && C;
-    return n.isMultiUserDM() ? (0, r.jsx)(_.v, {
-      channel: n,
-      editable: true,
-      location: c.Z.EMPTY_GROUP_DM,
-      children: (0, r.jsx)(f.Z, {
-        channel: n,
-        size: s.EFr.SIZE_80,
-        experimentLocation: "empty_messages",
-        animated: e,
-        "aria-label": S
+  });
+  return (0, r.jsxs)(b.ZP, (n = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = r
       })
-    }) : (0, r.jsx)(s.qEK, {
-      "aria-label": S,
-      size: s.EFr.SIZE_80,
-      src: (0, u.x)(n, 80, e),
-      avatarDecoration: A
-    })
-  };
-  return (0, r.jsxs)(g.ZP, I(O({
-    channelId: n.id
-  }, N), {
-    children: [R(), (0, r.jsx)(g.Ot, {
-      children: S
-    }), (0, r.jsx)(g.jz, {
-      children: y
-    }), n.isMultiUserDM() && (0, r.jsxs)(a.h, {
-      className: b.buttonContainer,
-      children: [(0, r.jsx)(h.l, {
-        channel: n,
-        text: E.intl.string(E.t["6Qgren"]),
-        icon: s.ejJ
-      }), (0, r.jsx)(o.z, {
-        icon: s.vdY,
+    }
+    return e
+  }({
+    channelId: x.id
+  }, P), C = C = {
+    children: [(() => {
+      let e = !O && I;
+      return x.isMultiUserDM() ? (0, r.jsx)(h.v, {
+        channel: x,
+        editable: true,
+        location: c.Z.EMPTY_GROUP_DM,
+        children: (0, r.jsx)(p.Z, {
+          channel: x,
+          size: o.EFr.SIZE_80,
+          experimentLocation: "empty_messages",
+          animated: e,
+          "aria-label": E
+        })
+      }) : (0, r.jsx)(o.qEK, {
+        "aria-label": E,
+        size: o.EFr.SIZE_80,
+        src: (0, u.x)(x, 80, e),
+        avatarDecoration: S
+      })
+    })(), (0, r.jsx)(b.Ot, {
+      children: E
+    }), (0, r.jsx)(b.jz, {
+      children: v
+    }), x.isMultiUserDM() && (0, r.jsxs)(a.h, {
+      className: _.buttonContainer,
+      children: [(0, r.jsx)(m.l, {
+        channel: x,
+        text: y.intl.string(y.t["6Qgren"]),
+        icon: o.ejJ
+      }), (0, r.jsx)(l.z, {
+        icon: o.vdY,
         variant: "secondary",
-        text: E.intl.string(E.t["5Q9+/P"]),
-        "aria-label": E.intl.string(E.t["5Q9+/P"]),
-        onClick: () => (0, p.B)(n.id, c.Z.EMPTY_GROUP_DM)
+        text: y.intl.string(y.t["5Q9+/P"]),
+        "aria-label": y.intl.string(y.t["5Q9+/P"]),
+        onClick: () => (0, f.B)(x.id, c.Z.EMPTY_GROUP_DM)
       })]
     })]
-  }))
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(C)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(C)).forEach(function(e) {
+    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(C, e))
+  }), n))
 }

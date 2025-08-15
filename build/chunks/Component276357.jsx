@@ -30,23 +30,23 @@ function j(e) {
     closePopout: n,
     setPopoutRef: j
   } = e, v = (0, m.Vm)(t), {
-    tagFilter: C
-  } = (0, u.H)(t.id), _ = (0, u.v)(), y = (0, s.e7)([d.Z], () => d.Z.keyboardModeEnabled), O = i.useCallback(e => {
+    tagFilter: _
+  } = (0, u.H)(t.id), C = (0, u.v)(), y = (0, s.e7)([d.Z], () => d.Z.keyboardModeEnabled), w = i.useCallback(e => {
     (0, h.e7)({
       guildId: t.guild_id,
       channelId: t.id,
       tagId: e,
-      filterTagIds: Array.from(C),
-      added: !C.has(e),
+      filterTagIds: Array.from(_),
+      added: !_.has(e),
       location: {
         page: f.ZY5.GUILD_CHANNEL,
         section: f.jXE.FORUM_CHANNEL_HEADER,
         object: f.qAy.CHANNEL_TAG
       }
-    }), _.getState().toggleTagFilter(t.id, e)
-  }, [t, C, _]), w = i.useCallback(() => {
-    _.getState().setTagFilter(t.id, new Set), y || n()
-  }, [_, t.id, y, n]), P = (0, a.ZP)({
+    }), C.getState().toggleTagFilter(t.id, e)
+  }, [t, _, C]), T = i.useCallback(() => {
+    C.getState().setTagFilter(t.id, new Set), y || n()
+  }, [C, t.id, y, n]), O = (0, a.ZP)({
     id: "".concat(t.id, "-all-tags-dropdown-navigator"),
     isEnabled: true,
     wrap: true,
@@ -82,12 +82,12 @@ function j(e) {
             color: "none",
             variant: "text-xs/medium",
             tabularNumbers: true,
-            children: C.size
+            children: _.size
           })
         })]
       })
     }), (0, r.jsx)(l.bG, {
-      navigator: P,
+      navigator: O,
       children: (0, r.jsx)(l.SJ, {
         children: e => {
           var t, n, {
@@ -134,8 +134,8 @@ function j(e) {
             children: v.map(e => (0, r.jsx)(g.Z, {
               className: p.tag,
               tag: e,
-              selected: C.has(e.id),
-              onClick: () => O(e.id)
+              selected: _.has(e.id),
+              onClick: () => w(e.id)
             }, e.id))
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
@@ -157,7 +157,7 @@ function j(e) {
       color: o.zx.Colors.CUSTOM,
       className: p.clear,
       "aria-label": x.intl.string(x.t["98EPQE"]),
-      onClick: w,
+      onClick: T,
       children: (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "text-link",

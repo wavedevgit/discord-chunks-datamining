@@ -2,7 +2,7 @@
 /** chunk id: 131333, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => k
+  t: () => j
 }), require("./388685.js"), require("./35282.js"), require("./413496.js"), require("./433524.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -117,12 +117,12 @@ function M(e) {
       return "enter"
   }
 }
-let j = Chunk73800.forwardRef(function(e, t) {
+let k = Chunk73800.forwardRef(function(e, t) {
   let {
     sprites: n
-  } = e, [a, s] = i.useState(null), {
+  } = e, [o, s] = i.useState(null), {
     confettiCanvas: c
-  } = i.useContext(l.h), u = (0, o.uR)(c, a);
+  } = i.useContext(l.h), u = (0, a.uR)(c, o);
   return i.useImperativeHandle(t, () => ({
     fireConfetti: (e, t) => {
       u.createMultipleConfetti(E(m({}, _.We), {
@@ -155,7 +155,7 @@ let j = Chunk73800.forwardRef(function(e, t) {
         }
       }), A)
     }
-  }), [u]), (0, r.jsx)(o.Ji, {
+  }), [u]), (0, r.jsx)(a.Ji, {
     ref: s,
     colors: b,
     sprites: n,
@@ -164,10 +164,10 @@ let j = Chunk73800.forwardRef(function(e, t) {
   })
 });
 
-function k(e) {
+function j(e) {
   let {
     children: t
-  } = e, n = i.useRef({}), [o, l] = i.useState(null), c = M(o), _ = i.useRef(null), [h, m] = i.useState(false), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), b = i.useCallback(e => {
+  } = e, n = i.useRef({}), [a, l] = i.useState(null), c = M(a), _ = i.useRef(null), [h, m] = i.useState(false), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), b = i.useCallback(e => {
     if (!h) {
       let t = D(e);
       null != t && (g.current = t, m(true), l(null))
@@ -183,7 +183,7 @@ function k(e) {
     _.current = e
   }, []);
   return (i.useEffect(() => {
-    if ("confetti" === o) {
+    if ("confetti" === a) {
       if (null == _.current) return;
       let e = _.current.getBoundingClientRect(),
         t = e.left - T,
@@ -191,11 +191,11 @@ function k(e) {
         i = n.current[g.current];
       null == i || i.fireConfetti(t, r)
     }
-  }, [o]), E !== f.IlC.APP) ? t : (0, r.jsxs)(d.Rm.Provider, {
+  }, [a]), E !== f.IlC.APP) ? t : (0, r.jsxs)(d.Rm.Provider, {
     value: y,
     children: [t, Object.keys(w).map(e => {
       let t = w[e];
-      return (0, r.jsx)(j, {
+      return (0, r.jsx)(k, {
         ref: t => {
           null != t ? n.current[e] = t : delete n.current[e]
         },
@@ -204,7 +204,7 @@ function k(e) {
     }), h ? (0, r.jsx)(u.ZP, {
       children: (0, r.jsx)("div", {
         className: p.animationWrapper,
-        children: (0, r.jsx)(a.kci, {
+        children: (0, r.jsx)(o.kci, {
           animationRef: I,
           className: p.lottieAnimation,
           nextScene: c,

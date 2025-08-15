@@ -77,13 +77,13 @@ function A() {
 function N(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null,
-    [a, s] = r.useState(false),
+    [o, s] = r.useState(false),
     u = (0, i.e7)([f.default], () => f.default.getCurrentUser()),
     {
       current: d
     } = r.useRef(null == u ? true : u.ageVerificationStatus),
     h = r.useCallback(() => {
-      o.Z.dispatch({
+      a.Z.dispatch({
         type: "CLOSE_AGE_VERIFICATION_MODAL",
         status: d
       }), t || c.Z.maybeOpenAgeVerificationUserFeedback({
@@ -92,11 +92,11 @@ function N(e) {
       })
     }, [d, t, n]);
   return {
-    loading: a,
+    loading: o,
     initiateAgeVerification: r.useCallback(async t => {
       s(true);
       try {
-        o.Z.dispatch({
+        a.Z.dispatch({
           type: "INITIATE_AGE_VERIFICATION"
         });
         let n = await (0, p.K)();
@@ -122,10 +122,10 @@ function C(e) {
       return null == (e = f.default.getCurrentUser()) ? true : e.ageVerificationStatus
     }),
     n = (0, s.Z)(t),
-    o = (0, i.e7)([u.default], () => null != u.default.getSuspendedUserToken()),
-    a = (0, i.e7)([u.default], () => u.default.isAuthenticated()),
+    a = (0, i.e7)([u.default], () => null != u.default.getSuspendedUserToken()),
+    o = (0, i.e7)([u.default], () => u.default.isAuthenticated()),
     l = null != n && null != t && n !== t,
-    c = !o && !a;
+    c = !a && !o;
   r.useEffect(() => {
     (l || c) && e()
   }, [e, l, c])

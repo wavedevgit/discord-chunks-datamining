@@ -1,9 +1,10 @@
-/** Chunk was on 62117 **/
+/** Chunk was on 81498 **/
 /** chunk id: 22082, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => j
 }), require("./388685.js");
-var i, s, Chunk442837 = require("./442837.js"),
+var i, r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk45114 = require("./45114.js"),
   Chunk897473 = require("./897473.js"),
@@ -19,68 +20,68 @@ var i, s, Chunk442837 = require("./442837.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js");
 let y = new Set,
-  E = {},
-  w = {};
+  O = {},
+  S = {};
 
-function _(e, t) {
-  let n = E[e];
+function E(e, t) {
+  let n = O[e];
   if (null != n && null != t && n.has(t)) {
     var i;
-    !f.ZP.isOptInEnabled(e) || (null == (i = u.Z.getChannel(t)) ? true : i.isThread()) || null != p.ZP.ackMessageId(t) || r.Z.wait(() => (0, a.In)(t, {
-      object: S.qAy.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED,
-      objectType: S.Qqv.ACK_AUTOMATIC
-    }, true, true, I.default.atPreviousMillisecond(t)))
+    !v.ZP.isOptInEnabled(e) || (null == (i = d.Z.getChannel(t)) ? true : i.isThread()) || null != f.ZP.ackMessageId(t) || l.Z.wait(() => (0, o.In)(t, {
+      object: b.qAy.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED,
+      objectType: b.Qqv.ACK_AUTOMATIC
+    }, true, true, C.default.atPreviousMillisecond(t)))
   }
 }
 
-function m(e) {
+function _(e) {
   var t;
-  if (null != E[e]) return;
-  let n = c.ZP.getChannels(e)[c.sH].map(e => e.channel.id),
-    i = null == (t = g.ZP.getMember(e, h.default.getId())) ? true : t.joinedAt;
+  if (null != O[e]) return;
+  let n = h.ZP.getChannels(e)[h.sH].map(e => e.channel.id),
+    i = null == (t = p.ZP.getMember(e, c.default.getId())) ? true : t.joinedAt;
   if (null == i) return;
-  E[e] = new Set;
-  let s = new Date(i).getTime();
-  0 !== n.length && (E[e] = new Set(n.filter(t => {
-    let n = I.default.extractTimestamp(t);
-    return null == p.ZP.getTrackedAckMessageId(t) && n > Date.now() - v.Z.Millis.WEEK && n > o.Z.getGuildRecentsDismissedAt(e) && n > s && !f.ZP.isChannelOrParentOptedIn(e, t)
-  })), w[e] = Date.now())
+  O[e] = new Set;
+  let r = new Date(i).getTime();
+  0 !== n.length && (O[e] = new Set(n.filter(t => {
+    let n = C.default.extractTimestamp(t);
+    return null == f.ZP.getTrackedAckMessageId(t) && n > Date.now() - m.Z.Millis.WEEK && n > u.Z.getGuildRecentsDismissedAt(e) && n > r && !v.ZP.isChannelOrParentOptedIn(e, t)
+  })), S[e] = Date.now())
 }
 
-function b() {
-  Chunk709054.default.keys(E).forEach(e => {
-    let t = E[e];
-    E[e] = new Set([...t].filter(t => !f.ZP.isChannelOrParentOptedIn(e, t)))
+function w() {
+  Chunk709054.default.keys(O).forEach(e => {
+    let t = O[e];
+    O[e] = new Set([...t].filter(t => !v.ZP.isChannelOrParentOptedIn(e, t)))
   })
 }
-class N extends(i = Chunk442837.ZP.Store) {
+class I extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk984933.ZP, Chunk314897.default, Chunk271383.ZP, Chunk9156.ZP, Chunk306680.ZP, Chunk581883.Z), this.syncWith([Chunk9156.ZP], b)
+    this.waitFor(Chunk984933.ZP, Chunk314897.default, Chunk271383.ZP, Chunk9156.ZP, Chunk306680.ZP, Chunk581883.Z), this.syncWith([Chunk9156.ZP], w)
   }
   getNewChannelIds(e) {
     var t;
-    return null != e && null == E[e] && m(e), null != e && null != (t = E[e]) ? t : y
+    return null != e && null == O[e] && _(e), null != e && null != (t = O[e]) ? t : y
   }
   shouldIndicateNewChannel(e, t) {
     var n;
     if (null == e) returnfalse;
-    let i = C.Z.getGuild(e);
-    return null != i && !!i.features.has(S.oNc.COMMUNITY) && (null != e && null == E[e] && m(e), (null == (n = E[e]) ? true : n.has(t)) && null == p.ZP.getTrackedAckMessageId(t))
+    let i = g.Z.getGuild(e);
+    return null != i && !!i.features.has(b.oNc.COMMUNITY) && (null != e && null == O[e] && _(e), (null == (n = O[e]) ? true : n.has(t)) && null == f.ZP.getTrackedAckMessageId(t))
   }
-}(s = "displayName") in N ? Object.defineProperty(N, s, {
+}(r = "displayName") in I ? Object.defineProperty(I, r, {
   value: "NewChannelsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : N[s] = "NewChannelsStore";
-let O = new N(Chunk570140.Z, {
+}) : I[r] = "NewChannelsStore";
+let j = new I(Chunk570140.Z, {
   BULK_CLEAR_RECENTS: function(e) {
     let {
       guildId: t,
       channelIds: n
     } = e;
-    if (null == E[t]) returnfalse;
-    n.forEach(e => E[t].delete(e)), 0 === E[t].size && delete E[t]
+    if (null == O[t]) returnfalse;
+    n.forEach(e => O[t].delete(e)), 0 === O[t].size && delete O[t]
   },
   CHANNEL_ACK: () => true,
   CHANNEL_SELECT: function(e) {
@@ -88,7 +89,7 @@ let O = new N(Chunk570140.Z, {
       guildId: t,
       channelId: n
     } = e;
-    return null != t && (null == E[t] || w[t] < Date.now() - v.Z.Millis.HOUR ? (m(t), true) : (null != n && _(t, n), false))
+    return null != t && (null == O[t] || S[t] < Date.now() - m.Z.Millis.HOUR ? (_(t), true) : (null != n && E(t, n), false))
   },
   SIDEBAR_VIEW_CHANNEL: function(e) {
     let {
@@ -96,26 +97,26 @@ let O = new N(Chunk570140.Z, {
       channelId: n,
       sidebarType: i
     } = e;
-    return null != t && i === d.tI.VIEW_CHANNEL && (_(t, n), false)
+    return null != t && i === a.tI.VIEW_CHANNEL && (E(t, n), false)
   },
   SIDEBAR_VIEW_GUILD: function(e) {
     let {
       guildId: t,
       baseChannelId: n
     } = e;
-    return null != t && (_(t, n), false)
+    return null != t && (E(t, n), false)
   },
   GUILD_DELETE: function(e) {
     let {
       guild: t
     } = e;
-    delete E[t.id]
+    delete O[t.id]
   },
   CHANNEL_CREATE: function(e) {
     var t;
     let {
       channel: n
     } = e;
-    n.isVocal() || (E[n.guild_id] = null != (t = E[n.guild_id]) ? t : new Set, E[n.guild_id].add(n.id))
+    n.isVocal() || (O[n.guild_id] = null != (t = O[n.guild_id]) ? t : new Set, O[n.guild_id].add(n.id))
   }
 })

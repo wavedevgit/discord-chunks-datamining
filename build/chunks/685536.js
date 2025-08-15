@@ -1,14 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 685536, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 685536, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk143310 = require("./143310.js"),
   Chunk688411 = require("./688411.js");
-module.exports = function(e) {
-  var t = r(e.ownerDocument || e.document);
-  e.Window && e instanceof e.Window && (e = t);
-  var n = i(e),
-    o = e === t ? e.ownerDocument.documentElement : e,
-    a = e.scrollWidth - o.clientWidth,
-    s = e.scrollHeight - o.clientHeight;
-  return n.x = Math.max(0, Math.min(n.x, a)), n.y = Math.max(0, Math.min(n.y, s)), n
+module.exports = function(t) {
+  var e = n(t.ownerDocument || t.document);
+  t.Window && t instanceof t.Window && (t = e);
+  var r = i(t),
+    o = t === e ? t.ownerDocument.documentElement : t,
+    a = t.scrollWidth - o.clientWidth,
+    u = t.scrollHeight - o.clientHeight;
+  return r.x = Math.max(0, Math.min(r.x, a)), r.y = Math.max(0, Math.min(r.y, u)), r
 }

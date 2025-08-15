@@ -4,16 +4,16 @@
 require.d(exports, {
   $J: () => r,
   At: () => s,
-  F$: () => a,
+  F$: () => o,
   Og: () => l,
-  mo: () => o,
+  mo: () => a,
   vZ: () => i,
   yC: () => c
 });
 let r = "DISCORD_OutOfProcessOverlay",
   i = 192,
-  o = 120,
-  a = 4,
+  a = 120,
+  o = 4,
   s = 8,
   l = false,
   c = 25

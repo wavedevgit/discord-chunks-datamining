@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 892519, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 30243 **/
+/** chunk id: 892519, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk911969 = require("./911969.js"),
   Chunk739754 = require("./739754.jsx"),
   Chunk970184 = require("./970184.jsx"),
@@ -16,63 +15,58 @@ var Chunk120356 = require("./120356.js"),
   Chunk568248 = require("./568248.jsx"),
   Chunk695796 = require("./695796.js");
 
-function _(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function p(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      _(e, t, n[t])
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = n
     })
   }
   return e
 }
 
-function h(e) {
-  switch (e.type) {
-    case a.re.BUTTON:
-      return (0, r.jsx)(u.Z, p({}, e));
-    case a.re.THUMBNAIL:
-      return (0, r.jsx)(d.Z, p({}, e))
-  }
-}
-
-function m(e) {
+function b(e) {
   let {
     components: t,
-    accessory: n,
-    renderComponents: i
+    accessory: r,
+    renderComponents: l
   } = e, {
-    message: u
-  } = (0, l.CJ)(), [d, _] = (0, c.e4)(), p = (0, c.$Y)(_), m = n.type === a.re.BUTTON;
-  return (0, r.jsxs)("div", {
-    className: f.section,
-    ref: d,
-    children: [(0, r.jsxs)("div", {
-      className: f.children,
-      children: [(0, r.jsx)("div", {
-        className: o()(f.textChildren, {
-          [f.verticallyCenterAlign]: m
+    message: b
+  } = (0, c.CJ)(), [m, O] = (0, s.e4)(), y = (0, s.$Y)(O), j = r.type === o.re.BUTTON;
+  return (0, n.jsxs)("div", {
+    className: p.section,
+    ref: m,
+    children: [(0, n.jsxs)("div", {
+      className: p.children,
+      children: [(0, n.jsx)("div", {
+        className: i()(p.textChildren, {
+          [p.verticallyCenterAlign]: j
         }),
-        children: i(t)
-      }), (0, r.jsx)("div", {
-        className: o()(f.accessory, {
-          [f.restrictWidth]: p
+        children: l(t)
+      }), (0, n.jsx)("div", {
+        className: i()(p.accessory, {
+          [p.restrictWidth]: y
         }),
-        children: h(n)
+        children: function(e) {
+          switch (e.type) {
+            case o.re.BUTTON:
+              return (0, n.jsx)(u.Z, f({}, e));
+            case o.re.THUMBNAIL:
+              return (0, n.jsx)(d.Z, f({}, e))
+          }
+        }(r)
       })]
-    }), null != u ? (0, r.jsx)(s.ZP, {
-      message: u,
+    }), null != b ? (0, n.jsx)(a.ZP, {
+      message: b,
       component: e
     }) : null]
   })

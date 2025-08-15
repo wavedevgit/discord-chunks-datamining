@@ -1,49 +1,48 @@
-/** Chunk was on web.js **/
-/** chunk id: 741361, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 38697 **/
+/** chunk id: 741361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Aj: () => s,
-  S1: () => c,
-  d$: () => l,
-  hw: () => u,
+  Aj: () => a,
+  S1: () => s,
+  d$: () => o,
+  hw: () => c,
   kU: () => d,
-  kY: () => a
+  kY: () => u
 });
 var Chunk570140 = require("./570140.js"),
   Chunk156699 = require("./156699.js"),
   Chunk493683 = require("./493683.js");
-async function a(e, t, n, o) {
-  let a = e.getGuildId();
-  if (null != a && t === a && !await (0, i.u)(e, o, n)) returnfalse;
+async function u(e, t, n, l) {
+  let u = e.getGuildId();
+  if (null != u && t === u && !await (0, i.u)(e, l, n)) returnfalse;
   r.Z.dispatch({
     type: "CHANNEL_SETTINGS_PERMISSIONS_UPDATE_PERMISSION",
     id: t,
     allow: n,
-    deny: o
+    deny: l
   })
 }
 
-function s(e) {
+function a(e) {
   r.Z.dispatch({
     type: "CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION",
     id: e
   })
 }
 
-function l(e) {
+function o(e) {
   r.Z.dispatch({
     type: "CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE",
     advancedMode: e
   })
 }
 
-function c() {
+function s() {
   Chunk570140.Z.dispatch({
     type: "CHANNEL_SETTINGS_PERMISSIONS_INIT"
   })
 }
 
-function u(e, t, n) {
+function c(e, t, n) {
   return d(e, t, [], n)
 }
 
@@ -56,11 +55,11 @@ function d(e, t, n, i) {
       if (t.length > 0) {
         let n = t.pop();
         if (null == n) return i();
-        o.Z.updatePermissionOverwrite(e, n).then(i, i)
+        l.Z.updatePermissionOverwrite(e, n).then(i, i)
       } else {
         let t = n.pop();
         if (null == t) return i();
-        o.Z.clearPermissionOverwrite(e, t).then(i, i)
+        l.Z.clearPermissionOverwrite(e, t).then(i, i)
       }
     };
     i()

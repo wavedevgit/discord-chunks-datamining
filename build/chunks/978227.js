@@ -1,17 +1,16 @@
-/** Chunk was on web.js **/
-/** chunk id: 978227, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 34082 **/
+/** chunk id: 978227, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
   Chunk749210 = require("./749210.js"),
   Chunk594174 = require("./594174.js");
 
-function s(e) {
-  let t = (0, i.e7)([a.default], () => a.default.getUser(null == e ? true : e.creator_id), [e]);
+function a(e) {
+  let t = (0, l.e7)([s.default], () => s.default.getUser(null == e ? true : e.creator_id), [e]);
   return r.useEffect(() => {
-    null == t && (null == e ? true : e.creator_id) != null && o.Z.requestMembersById(e.guild_id, e.creator_id)
+    null == t && (null == e ? true : e.creator_id) != null && i.Z.requestMembersById(e.guild_id, e.creator_id)
   }, [e, t]), t
 }

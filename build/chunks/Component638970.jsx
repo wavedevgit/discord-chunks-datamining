@@ -2,12 +2,12 @@
 /** chunk id: 638970, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./388685.js"), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -97,38 +97,38 @@ let M = {
   height: "auto"
 };
 
-function j(e) {
+function k(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: o,
+    displayProfile: a,
     guildId: m,
     onOpenUserProfileModal: C,
     onClose: P
   } = e, w = (0, _.Dt)(), {
-    analyticsLocations: j
+    analyticsLocations: k
   } = (0, f.ZP)(), {
-    trackUserProfileAction: k
+    trackUserProfileAction: j
   } = (0, g.KZ)(), {
     live: U,
     stream: G
   } = (0, E.Z)(t.id), {
     voiceChannel: B,
-    voiceActivity: Z
+    voiceActivity: V
   } = (0, b.Z)({
     userId: t.id,
     guildId: m
-  }), F = t.id === n.id, V = (0, s.e7)([h.Z, p.Z], () => {
+  }), F = t.id === n.id, Z = (0, s.e7)([h.Z, p.Z], () => {
     let e = F ? h.Z.getStatus() : p.Z.getStatus(t.id, m);
     return e === S.Sk.OFFLINE || e === S.Sk.INVISIBLE
   }), {
     voiceActivityStatusEnabled: H
   } = (0, d.U)({
     location: "UserProfileStackedActivity"
-  }), Y = H && null == G && null == Z && null != B, W = (0, y.yi)(), K = (null == W ? true : W.interactionSource) === T.n_.ACTIVITY, z = i.useRef(null), q = i.useRef(null), X = i.useRef(null), Q = i.useRef(null), [J, $] = i.useReducer(x, M), {
+  }), Y = H && null == G && null == V && null != B, W = (0, y.yi)(), K = (null == W ? true : W.interactionSource) === T.n_.ACTIVITY, z = i.useRef(null), q = i.useRef(null), X = i.useRef(null), Q = i.useRef(null), [J, $] = i.useReducer(x, M), {
     height: ee,
     animationPhase: et
-  } = J, en = "awaitingInput" !== et, er = "animating" === et || "done" === et, ei = [], eo = {
+  } = J, en = "awaitingInput" !== et, er = "animating" === et || "done" === et, ei = [], ea = {
     user: t,
     currentUser: n,
     className: N.card,
@@ -137,24 +137,24 @@ function j(e) {
   null != G && ei.push((0, r.jsx)(v.Z, R({
     location: "UserProfileStackedActivity",
     stream: G,
-    profileGuildId: null == o ? true : o.guildId
-  }, eo), "stream")), U.forEach((e, t) => {
+    profileGuildId: null == a ? true : a.guildId
+  }, ea), "stream")), U.forEach((e, t) => {
     ei.push((0, r.jsx)(O.Z, R({
       activity: e,
-      profileGuildId: null == o ? true : o.guildId
-    }, eo), "live-".concat(t)))
+      profileGuildId: null == a ? true : a.guildId
+    }, ea), "live-".concat(t)))
   }), Y && ei.push((0, r.jsx)(I.Z, R({
     voiceChannel: B
-  }, eo), "voice"));
-  let [ea, ...es] = ei, el = es.length > 0, ec = null != C && el ? (0, r.jsx)(l.zx, {
+  }, ea), "voice"));
+  let [eo, ...es] = ei, el = es.length > 0, ec = null != C && el ? (0, r.jsx)(l.zx, {
     look: l.zx.Looks.BLANK,
     size: l.zx.Sizes.NONE,
     color: l.zx.Colors.TRANSPARENT,
-    className: a()(N.viewAllButton, er && N.isShown),
+    className: o()(N.viewAllButton, er && N.isShown),
     onClick: () => {
-      k({
+      j({
         action: "PRESS_VIEW_PROFILE",
-        analyticsLocations: j
+        analyticsLocations: k
       }), C({
         section: T.oh.ACTIVITY
       })
@@ -166,9 +166,9 @@ function j(e) {
     })
   }) : null, eu = i.useCallback(() => {
     if (null == z.current || null == X.current) return;
-    k({
+    j({
       action: "PRESS_SHOW_MORE_ACTIVITY",
-      analyticsLocations: j
+      analyticsLocations: k
     });
     let e = z.current.getBoundingClientRect().height,
       t = X.current.getBoundingClientRect().height;
@@ -187,10 +187,10 @@ function j(e) {
         }), null == (e = q.current) || e.focus()
       }, D)
     })
-  }, [j, k]);
+  }, [k, j]);
   return ((0, u.zq)(() => {
     null != Q.current && window.clearTimeout(Q.current)
-  }), V || 0 === ei.length) ? null : (0, r.jsxs)("section", {
+  }), Z || 0 === ei.length) ? null : (0, r.jsxs)("section", {
     "aria-labelledby": w,
     children: [(0, r.jsx)(c.nn4, {
       children: (0, r.jsx)(c.H, {
@@ -209,14 +209,14 @@ function j(e) {
         "aria-labelledby": w,
         tabIndex: false,
         children: [(0, r.jsxs)("li", {
-          className: a()(N.firstCardContainer, !er && es.length > 0 && N.hasShowMoreButton, K && N.isInteracting),
-          children: [ea, el && "done" !== et && (0, r.jsx)("div", {
+          className: o()(N.firstCardContainer, !er && es.length > 0 && N.hasShowMoreButton, K && N.isInteracting),
+          children: [eo, el && "done" !== et && (0, r.jsx)("div", {
             className: N.showMoreButtonContainer,
             children: (0, r.jsx)(l.zx, {
               look: l.zx.Looks.BLANK,
               size: l.zx.Sizes.NONE,
               color: l.zx.Colors.TRANSPARENT,
-              className: a()(N.showMoreButton, er && N.isHidden),
+              className: o()(N.showMoreButton, er && N.isHidden),
               onClick: eu,
               children: (0, r.jsx)(c.Text, {
                 variant: "text-xs/medium",
@@ -228,13 +228,13 @@ function j(e) {
             })
           })]
         }), el && en && es.map((e, t) => (0, r.jsx)("li", {
-          className: a()(N.remainingCardContainer, er && N.isShown),
+          className: o()(N.remainingCardContainer, er && N.isShown),
           children: e
         }, "activity-".concat(t)))]
       }), el && en && ec]
     }), el && (0, r.jsxs)("div", {
       ref: X,
-      className: a()(N.cardsList, N.remainingCardsCopyToMeasure),
+      className: o()(N.cardsList, N.remainingCardsCopyToMeasure),
       children: [es, ec]
     })]
   })

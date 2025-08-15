@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 611855, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37447 **/
+/** chunk id: 611855, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -17,20 +16,20 @@ let d = function(e) {
   let {
     className: t,
     color: n = "header-primary",
-    textOpacity: i = .9
-  } = e, d = (0, l.Fg)(), f = (0, a.wj)(d) ? .2 : .08;
-  return (0, r.jsxs)(s.Text, {
+    textOpacity: s = .9
+  } = e, d = (0, l.Fg)(), m = (0, i.wj)(d);
+  return (0, r.jsxs)(a.Text, {
     variant: "text-xxs/medium",
     color: n,
     className: o()(u.promotedTag, t),
     children: [(0, r.jsx)("span", {
       className: u.promotedTagBackground,
       style: {
-        backgroundColor: "rgba(0, 0, 0, ".concat(f, ")")
+        backgroundColor: "rgba(0, 0, 0, ".concat(m ? .2 : .08, ")")
       }
     }), (0, r.jsx)("span", {
       style: {
-        opacity: i
+        opacity: s
       },
       children: c.intl.string(c.t.o6FLcH)
     })]

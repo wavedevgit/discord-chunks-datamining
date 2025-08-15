@@ -1,4 +1,4 @@
-/** Chunk was on 9885 **/
+/** Chunk was on 42521 **/
 /** chunk id: 693900, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   n: () => m,
@@ -39,21 +39,21 @@ function m(e) {
     ref: f,
     height: x = null
   } = (0, l.ZP)(), h = null != (t = (0, c.Z)(x)) ? t : null, [{
-    height: j
-  }, b] = (0, i.q_F)(() => ({
+    height: b
+  }, _] = (0, i.q_F)(() => ({
     from: {
       height: 0
     },
     config: p
   }));
   return s.useLayoutEffect(() => {
-    null !== x && b({
+    null !== x && _({
       height: x,
       immediate: !m || g || null === h
     })
-  }, [x, b, m, g, h]), (0, r.jsx)(o.animated.div, {
+  }, [x, _, m, g, h]), (0, r.jsx)(o.animated.div, {
     style: {
-      height: null === h ? "auto" : j,
+      height: null === h ? "auto" : b,
       overflow: "hidden"
     },
     children: (0, r.jsx)("div", {

@@ -1,23 +1,22 @@
-/** Chunk was on web.js **/
-/** chunk id: 778087, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 778087, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 }), require("./49124.js"), require("./781311.js");
 var Chunk73800 = require("./73800.js"),
   Chunk10718 = require("./10718.js");
 
-function o(e, t) {
+function l(e, t) {
   let n = r.useRef(null),
-    o = r.useCallback((e, t) => {
-      var r, i, o;
-      e.preventDefault(), e.clipboardData.setData("application/x-discord-interaction-data", JSON.stringify(t)), e.clipboardData.setData("text/plain", null != (o = null == (i = n.current) || null == (r = i.textContent) ? true : r.trim()) ? o : "")
+    l = r.useCallback((e, t) => {
+      var r, i, l;
+      e.preventDefault(), e.clipboardData.setData("application/x-discord-interaction-data", JSON.stringify(t)), e.clipboardData.setData("text/plain", null != (l = null == (i = n.current) || null == (r = i.textContent) ? true : r.trim()) ? l : "")
     }, []);
   return i.YZ({
     channel: e,
     type: "channel"
   }, t), {
-    onCopy: o,
+    onCopy: l,
     copyRef: n
   }
 }

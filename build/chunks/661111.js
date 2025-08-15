@@ -33,7 +33,7 @@ let u = {
       type: "CHANGE_LOG_MARK_SEEN",
       changelogId: e,
       changelogDate: t
-    }), a.l4.updateSetting(e)
+    }), o.l4.updateSetting(e)
   },
   setChangelogOverride(e) {
     i.Z.dispatch({
@@ -58,18 +58,18 @@ let u = {
     })
   },
   async fetchChangelog(e, t) {
-    if (arguments.length > 2 && true !== arguments[2] && arguments[2], null != o.Z.getChangelog(e, t)) return null;
+    if (arguments.length > 2 && true !== arguments[2] && arguments[2], null != a.Z.getChangelog(e, t)) return null;
     let n = l.Vw.DESKTOP;
     try {
-      let o = await r.tn.get({
+      let a = await r.tn.get({
         url: "https://cdn.discordapp.com/changelogs/".concat(n, "/").concat(e, "/").concat(t, ".json?").concat(c()),
         rejectWithError: true
       });
       return i.Z.dispatch({
         type: "CHANGE_LOG_FETCH_SUCCESS",
         id: e,
-        changelog: o.body
-      }), o.body
+        changelog: a.body
+      }), a.body
     } catch (n) {
       if (i.Z.dispatch({
           type: "CHANGE_LOG_FETCH_FAILED",

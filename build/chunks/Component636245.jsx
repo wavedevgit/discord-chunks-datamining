@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 636245, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 636245, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -19,16 +18,16 @@ let u = e => {
     color: u,
     look: d,
     onAction: f
-  } = e, _ = (0, i.e7)([a.Z], () => a.Z.isInChannel(n), [n]), p = () => {
-    null == f || f(), o.AC(t, n)
-  };
-  return (0, r.jsx)(s.Z, {
+  } = e, p = (0, i.e7)([a.Z], () => a.Z.isInChannel(n), [n]);
+  return (0, r.jsx)(o.Z, {
     className: c.button,
     color: u,
     look: d,
-    disabled: _,
-    onClick: p,
+    disabled: p,
+    onClick: () => {
+      null == f || f(), l.AC(t, n)
+    },
     fullWidth: true,
-    children: l.intl.string(l.t.ZYO5OD)
+    children: s.intl.string(s.t.ZYO5OD)
   }, "stage")
 }

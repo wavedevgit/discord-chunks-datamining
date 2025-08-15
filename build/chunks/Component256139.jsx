@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk46999 = require("./46999.js");
 
@@ -53,8 +53,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -62,8 +62,8 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -72,11 +72,11 @@ function p(e) {
     className: t,
     onClick: n
   } = e, i = f(e, ["className", "onClick"]);
-  let l = (0, r.jsx)(a.P3F, d(c({}, i), {
-    className: o()(null != n && s.clickable, t),
+  let l = (0, r.jsx)(o.P3F, d(c({}, i), {
+    className: a()(null != n && s.clickable, t),
     onClick: n
   }));
-  return null == n ? (0, r.jsx)(a.nuw, {
+  return null == n ? (0, r.jsx)(o.nuw, {
     children: l
   }) : l
 }

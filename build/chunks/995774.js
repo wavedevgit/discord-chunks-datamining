@@ -23,11 +23,11 @@ function u(e) {
 }
 
 function d(e, t, n, r) {
-  var i, o, a;
+  var i, a, o;
   let s;
   return s = r ? e ? c.t.i9DXqK : c.t["Z/l+qq"] : e ? c.t.CLuzw8 : c.t.PirBBA, c.intl.formatToPlainString(s, {
     reactions: t,
-    emojiName: null != (a = null == (o = u(n)) || null == (i = o.replace(/[:_]/g, " ")) ? true : i.trim()) ? a : ""
+    emojiName: null != (o = null == (a = u(n)) || null == (i = a.replace(/[:_]/g, " ")) ? true : i.trim()) ? o : ""
   })
 }
 
@@ -56,12 +56,12 @@ function h(e) {
   let {
     userId: t,
     optimistic: n
-  } = e, r = o.default.getId() === t;
+  } = e, r = a.default.getId() === t;
   return !n || !!r
 }
 
 function m(e, t) {
-  i.fz.updateSetting(e), a.default.track(s.rMx.NOTIFICATION_SETTINGS_UPDATED, {
+  i.fz.updateSetting(e), o.default.track(s.rMx.NOTIFICATION_SETTINGS_UPDATED, {
     update_type: l.I.ACCOUNT,
     reaction_notifications: e,
     reaction_notifications_old: t

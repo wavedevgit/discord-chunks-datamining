@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 291407, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 291407, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,31 +13,31 @@ var Chunk255367 = require("./255367.js"),
   Chunk890977 = require("./890977.jsx"),
   Chunk921944 = require("./921944.js");
 
-function f(e) {
+function p(e) {
   let {
     children: t,
     animationContainerClassName: n,
-    glowClassName: f,
-    trinketsClassName: _
-  } = e, p = (0, o.e7)([c.Z], () => c.Z.hasCurrentUserSentMessageSinceAppStart()), h = i.useMemo(() => {
+    glowClassName: p,
+    trinketsClassName: h
+  } = e, f = (0, l.e7)([c.Z], () => c.Z.hasCurrentUserSentMessageSinceAppStart()), m = i.useMemo(() => {
     let e = [];
-    return p && e.push(a.z.DESKTOP_APP_LAUNCHER_ONBOARDING), e
-  }, [p]), m = () => {
-    setTimeout(() => (0, s.Q3)(a.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
+    return f && e.push(a.z.DESKTOP_APP_LAUNCHER_ONBOARDING), e
+  }, [f]), g = () => {
+    setTimeout(() => (0, o.Q3)(a.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
       dismissAction: d.L.AUTO_DISMISS
     }), 1e4)
   };
-  return (0, r.jsx)(l.ZP, {
-    contentTypes: h,
+  return (0, r.jsx)(s.ZP, {
+    contentTypes: m,
     children: e => {
       let {
         visibleContent: i
       } = e;
       return i === a.z.DESKTOP_APP_LAUNCHER_ONBOARDING ? (0, r.jsx)(u.b, {
         animationContainerClassName: n,
-        glowClassName: f,
-        trinketsClassName: _,
-        onMount: m,
+        glowClassName: p,
+        trinketsClassName: h,
+        onMount: g,
         children: t
       }) : t
     }

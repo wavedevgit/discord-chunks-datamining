@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Dl: () => s,
-  Mk: () => a,
-  fD: () => o,
+  Mk: () => o,
+  fD: () => a,
   mO: () => i
 });
 let r = (0, require("./818083.js").B)({
@@ -43,12 +43,12 @@ let r = (0, require("./818083.js").B)({
   }, {
     autoTrackExposure: false
   }).enabled,
-  o = e => r.getCurrentConfig({
+  a = e => r.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false
   }).defaultTimeout,
-  a = e => r.useExperiment({
+  o = e => r.useExperiment({
     location: e
   }, {
     autoTrackExposure: false

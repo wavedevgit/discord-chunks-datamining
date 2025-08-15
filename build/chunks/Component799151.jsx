@@ -46,26 +46,26 @@ function _() {
     config: Chunk717976.config.stiff
   }, "animate-always")((t, n) => n ? (0, r.jsx)("div", {
     className: f.positioner,
-    children: (0, r.jsx)(o.animated.div, {
+    children: (0, r.jsx)(a.animated.div, {
       className: f.container,
       style: t,
       children: e.map((t, n) => {
         let {
-          keybinds: o,
-          name: a
+          keybinds: a,
+          name: o
         } = t;
         return (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(l.Text, {
             variant: "text-md/semibold",
             className: f.bindName,
-            children: a
-          }), o.map(e => (0, r.jsx)(s.M, {
+            children: o
+          }), a.map(e => (0, r.jsx)(s.M, {
             shortcut: e,
             className: f.shortcut
           }, e)), n < e.length - 1 ? (0, r.jsx)("span", {
             className: f.separator
           }) : null]
-        }, a)
+        }, o)
       })
     })
   }) : null)

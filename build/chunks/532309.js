@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 532309, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 532309, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => s
 });
 var Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
@@ -10,29 +9,29 @@ var Chunk990547 = require("./990547.js"),
   Chunk541099 = require("./541099.js"),
   Chunk312871 = require("./312871.js");
 
-function l(e) {
+function s(e) {
   let {
     applicationId: t,
     commandId: n,
-    searchResultsPosition: l,
+    searchResultsPosition: s,
     query: c
-  } = e, u = (0, i.e7)([a.Z], () => a.Z.entrypoint()), d = () => {
-    (0, o.h)({
-      type: r.ImpressionTypes.VIEW,
-      name: r.ImpressionNames.APP_LAUNCHER_SEARCH_RESULTS_ITEM,
-      properties: {
-        application_id: t,
-        command_id: n,
-        search_results_position: l,
-        query: c,
-        source: u
-      }
-    })
-  }, f = 1;
+  } = e, u = (0, i.e7)([a.Z], () => a.Z.entrypoint());
   return {
-    trackSearchResultsItemImpressionRef: (0, s.Z)({
-      onVisible: d,
-      threshold: f
+    trackSearchResultsItemImpressionRef: (0, o.Z)({
+      onVisible: () => {
+        (0, r.h)({
+          type: l.ImpressionTypes.VIEW,
+          name: l.ImpressionNames.APP_LAUNCHER_SEARCH_RESULTS_ITEM,
+          properties: {
+            application_id: t,
+            command_id: n,
+            search_results_position: s,
+            query: c,
+            source: u
+          }
+        })
+      },
+      threshold: 1
     })
   }
 }

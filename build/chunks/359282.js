@@ -1,54 +1,50 @@
-/** Chunk was on web.js **/
-/** chunk id: 359282, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 359282, original params: t,e,r (module,exports,require) **/
 "use strict";
-
-function r(e, t) {
-  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
-}
 var Chunk65183 = require("./65183.js"),
-  o = Chunk65183.Map,
-  a = Chunk65183.OrderedSet,
-  s = Chunk65183.Record,
-  l = a(),
-  c = {
-    style: l,
+  i = Chunk65183.Map,
+  o = Chunk65183.OrderedSet,
+  a = Chunk65183.Record,
+  u = o(),
+  s = {
+    style: u,
     entity: null
   },
-  u = function(e) {
-    function t() {
-      return e.apply(this, arguments) || this
+  c = function(t) {
+    function e() {
+      return t.apply(this, arguments) || this
     }
-    r(t, e);
-    var n = t.prototype;
-    return n.getStyle = function() {
+    e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t;
+    var r = e.prototype;
+    return r.getStyle = function() {
       return this.get("style")
-    }, n.getEntity = function() {
+    }, r.getEntity = function() {
       return this.get("entity")
-    }, n.hasStyle = function(e) {
-      return this.getStyle().includes(e)
-    }, t.applyStyle = function(e, n) {
-      var r = e.set("style", e.getStyle().add(n));
-      return t.create(r)
-    }, t.removeStyle = function(e, n) {
-      var r = e.set("style", e.getStyle().remove(n));
-      return t.create(r)
-    }, t.applyEntity = function(e, n) {
-      var r = e.getEntity() === n ? e : e.set("entity", n);
-      return t.create(r)
-    }, t.create = function(e) {
-      if (!e) return d;
-      var n = o({
-          style: l,
+    }, r.hasStyle = function(t) {
+      return this.getStyle().includes(t)
+    }, e.applyStyle = function(t, r) {
+      var n = t.set("style", t.getStyle().add(r));
+      return e.create(n)
+    }, e.removeStyle = function(t, r) {
+      var n = t.set("style", t.getStyle().remove(r));
+      return e.create(n)
+    }, e.applyEntity = function(t, r) {
+      var n = t.getEntity() === r ? t : t.set("entity", r);
+      return e.create(n)
+    }, e.create = function(t) {
+      if (!t) return l;
+      var r = i({
+          style: u,
           entity: null
-        }).merge(e),
-        r = f.get(n);
-      if (r) return r;
-      var i = new t(n);
-      return f = f.set(n, i), i
-    }, t
-  }(s(c)),
-  d = new u,
-  f = o([
-    [o(c), d]
+        }).merge(t),
+        n = f.get(r);
+      if (n) return n;
+      var o = new e(r);
+      return f = f.set(r, o), o
+    }, e
+  }(a(s)),
+  l = new c,
+  f = i([
+    [i(s), l]
   ]);
-u.EMPTY = d, module.exports = u
+c.EMPTY = l, module.exports = c

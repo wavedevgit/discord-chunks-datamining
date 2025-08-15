@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 358993, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 358993, original params: e,t,n (module,exports,require) **/
 module.exports = {
   modalContent: "modalContent__46773",
   iconSection: "iconSection__46773",

@@ -9,16 +9,16 @@ var Chunk626135 = require("./626135.js"),
   Chunk777754 = require("./777754.js"),
   Chunk754688 = require("./754688.js"),
   Chunk981631 = require("./981631.js");
-let l = [e => o.Z.isInvite(e) ? "Discord Server Invite" : null, e => {
+let l = [e => a.Z.isInvite(e) ? "Discord Server Invite" : null, e => {
   let t = i.Z.safeParseWithQuery(e);
   if (null == t) return null;
-  let n = (0, a.Qj)(t.path);
+  let n = (0, o.Qj)(t.path);
   return null == n ? null : c({
     guildId: n.guildId,
     channelId: n.channelId,
     messageId: n.messageId
   })
-}, e => o.Z.isDiscoveryLink(e) ? "Discord Discovery Link" : null];
+}, e => a.Z.isDiscoveryLink(e) ? "Discord Discovery Link" : null];
 
 function c(e) {
   return null != e.guildId && null != e.channelId && null != e.messageId ? "Discord Message Link" : null != e.guildId && null != e.channelId ? "Discord Channel Link" : "Unknown"
@@ -55,15 +55,15 @@ let f = {
       messageId: t,
       channelId: n,
       guildId: i,
-      sourceChannelId: o,
-      sourceGuildId: a
+      sourceChannelId: a,
+      sourceGuildId: o
     } = e;
     r.default.track(s.rMx.ANNOUNCEMENT_MESSAGE_LINK_CLICKED, {
       message_id: t,
       channel_id: n,
       guild_id: i,
-      source_channel_id: o,
-      source_guild_id: a
+      source_channel_id: a,
+      source_guild_id: o
     })
   }
 }

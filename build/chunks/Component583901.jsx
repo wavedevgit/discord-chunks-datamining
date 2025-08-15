@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk278074 = require("./278074.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
@@ -79,7 +79,7 @@ function O(e) {
     name: t,
     className: n,
     style: i,
-    onSelect: a,
+    onSelect: o,
     isSelected: s = false,
     tabIndex: l,
     children: c,
@@ -96,11 +96,11 @@ function O(e) {
       className: h.themeSelectionContainer,
       children: [(0, r.jsx)(u.P3F, b(g({}, e, m), {
         tabIndex: null != l ? l : m.tabIndex,
-        className: o()(h.themeSelection, {
+        className: a()(h.themeSelection, {
           [h.selected]: s
         }, n),
         style: i,
-        onClick: s ? _.dG4 : a,
+        onClick: s ? _.dG4 : o,
         children: c
       })), (s || p) && (0, r.jsx)(y, {}), !s && d && (0, r.jsx)("div", {
         className: h.redCircle
@@ -120,7 +120,7 @@ function v(e) {
     theme: t,
     isSelected: n,
     onSelect: i
-  } = e, l = (0, s.e7)([d.Z], () => d.Z.systemTheme), c = d.Z.themePreferenceForSystemTheme(l), f = (0, a.EQ)({
+  } = e, l = (0, s.e7)([d.Z], () => d.Z.systemTheme), c = d.Z.themePreferenceForSystemTheme(l), f = (0, o.EQ)({
     theme: t,
     themePreferenceForSystemTheme: c
   }).with({
@@ -143,12 +143,12 @@ function v(e) {
     theme: _.BRd.DARKER
   }, () => h.darkerIcon).with({
     theme: _.BRd.MIDNIGHT
-  }, () => h.midnightIcon).otherwise(() => h.darkIcon), m = (0, a.EQ)(t).with(_.BRd.LIGHT, () => p.intl.string(p.t.K2sFfn)).with(_.BRd.DARK, () => p.intl.string(p.t.SMPT1t)).with(_.BRd.DARKER, () => p.intl.string(p.t.b8Cei4)).with(_.BRd.MIDNIGHT, () => p.intl.string(p.t.Do4ZJy)).with("system", () => p.intl.string(p.t["7rOU6u"])).exhaustive();
+  }, () => h.midnightIcon).otherwise(() => h.darkIcon), m = (0, o.EQ)(t).with(_.BRd.LIGHT, () => p.intl.string(p.t.K2sFfn)).with(_.BRd.DARK, () => p.intl.string(p.t.SMPT1t)).with(_.BRd.DARKER, () => p.intl.string(p.t.b8Cei4)).with(_.BRd.MIDNIGHT, () => p.intl.string(p.t.Do4ZJy)).with("system", () => p.intl.string(p.t["7rOU6u"])).exhaustive();
   return (0, r.jsx)(O, {
     onSelect: i,
     isSelected: n,
     name: m,
-    className: o()(h.defaultThemeSelection, f),
+    className: a()(h.defaultThemeSelection, f),
     children: "system" === t && (0, r.jsx)("div", {
       className: h.iconWrapper,
       children: (0, r.jsx)(u.f6W, {
@@ -166,7 +166,7 @@ function I(e) {
     preset: t,
     isSelected: n,
     disabled: i,
-    tabIndex: a,
+    tabIndex: o,
     onSelect: s,
     showBadge: l,
     showLockedBadge: u
@@ -182,11 +182,11 @@ function I(e) {
     onSelect: i ? true : s,
     isSelected: n,
     name: t.getName(),
-    className: o()([i ? h.disabled : null, (0, c.wj)(p) ? h.darkOverlay : h.lightOverlay]),
+    className: a()([i ? h.disabled : null, (0, c.wj)(p) ? h.darkOverlay : h.lightOverlay]),
     style: {
       background: "var(--background-gradient), ".concat(m)
     },
-    tabIndex: a,
+    tabIndex: o,
     showBadge: l,
     showLockedBadge: u
   })

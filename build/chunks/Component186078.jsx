@@ -19,7 +19,7 @@ function d(e) {
     disabled: t,
     field: n,
     value: l,
-    radioItemClassName: o,
+    radioItemClassName: a,
     radioItemIconClassName: c,
     onChange: d
   } = e, {
@@ -30,13 +30,13 @@ function d(e) {
     radioItemIconClassName: s()(u.multipleChoiceIcon, c),
     radioBarClassName: u.multipleChoiceItem
   })), [m, c]);
-  return (0, r.jsx)(a.FXm, {
+  return (0, r.jsx)(o.FXm, {
     radioPosition: "right",
     disabled: t,
     options: f,
     value: l,
     onChange: d,
-    radioItemClassName: o,
+    radioItemClassName: a,
     itemTitleClassName: u.multipleChoiceTitle
   })
 }
@@ -45,7 +45,7 @@ function m(e) {
   let {
     formField: t
   } = e, n = null != t.response ? t.choices[t.response] : "";
-  return (0, r.jsx)(o.CA, {
+  return (0, r.jsx)(a.CA, {
     title: t.label,
     children: (0, r.jsx)(c.Gi, {
       className: u.disabledFieldBackground,
@@ -60,7 +60,7 @@ function f(e) {
     formField: t,
     onChange: n
   } = e;
-  return (0, r.jsx)(o.hK, {
+  return (0, r.jsx)(a.hK, {
     title: t.label,
     children: (0, r.jsx)(d, {
       field: t,

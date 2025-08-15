@@ -113,8 +113,8 @@ function j(e) {
     U = null != x ? x : y.ZP.getName(j),
     {
       icon: G,
-      colorize: V,
-      getStatus: B
+      colorize: B,
+      getStatus: V
     } = null != (l = function(e) {
       let {
         serverDeaf: t,
@@ -135,9 +135,9 @@ function j(e) {
       mute: A,
       localMute: R
     })) ? l : {},
-    H = null != B ? I.intl.formatToPlainString(I.t["1+MVBA"], {
+    H = null != V ? I.intl.formatToPlainString(I.t["1+MVBA"], {
       userName: U,
-      status: B()
+      status: V()
     }) : U;
 
   function F(e) {
@@ -157,7 +157,7 @@ function j(e) {
     }) : (0, c.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
+      } = await Promise.all([n.e("79695"), n.e("69220"), n.e("74820")]).then(n.bind(n, 881351));
       return t => (0, r.jsx)(e, N(S({}, t), {
         user: j,
         showMediaItems: true,
@@ -196,7 +196,7 @@ function j(e) {
             },
             children: null != G ? (0, r.jsx)(G, {
               className: a()(C.avatarIconOverlay, {
-                [C.avatarIconRed]: V
+                [C.avatarIconRed]: B
               }),
               color: "currentColor",
               size: "xs"

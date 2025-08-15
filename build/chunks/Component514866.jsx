@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk594174 = require("./594174.js"),
   Chunk517269 = require("./517269.js"),
   Chunk197571 = require("./197571.js");
-let v = () => {
+let f = () => {
   Promise.all([require.e("52030"), require.e("1286")]).then(require.bind(require, 24031)).then(e => {
     let {
       openMFAModal: t
@@ -56,7 +56,7 @@ function j() {
       children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Launch MFA",
-        onClick: v
+        onClick: f
       })
     }), (0, Chunk255367.jsx)("div", {
       className: l()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),

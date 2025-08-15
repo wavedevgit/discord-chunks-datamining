@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk287734 = require("./287734.js"),
@@ -52,7 +52,7 @@ function W(e) {
   let {
     user: t,
     currentUser: n,
-    stream: o,
+    stream: a,
     className: W,
     onClose: K,
     profileGuildId: z
@@ -62,38 +62,38 @@ function W(e) {
   } = (0, w.z)(), {
     interactionSource: J,
     interactionSourceId: $
-  } = (0, C.Xo)(), ee = (0, s.e7)([v.Z], () => v.Z.getGuild(null == o ? true : o.guildId)), et = (0, s.e7)([O.Z], () => O.Z.getChannel(null == o ? true : o.channelId)), en = (0, s.Wu)([S.ZP], () => null != et ? S.ZP.getVoiceStatesForChannel(et).map(e => {
+  } = (0, C.Xo)(), ee = (0, s.e7)([v.Z], () => v.Z.getGuild(null == a ? true : a.guildId)), et = (0, s.e7)([O.Z], () => O.Z.getChannel(null == a ? true : a.channelId)), en = (0, s.Wu)([S.ZP], () => null != et ? S.ZP.getVoiceStatesForChannel(et).map(e => {
     let {
       user: t
     } = e;
     return t
   }) : []), er = (0, s.e7)([T.Z], () => T.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, _.Z)(e))), {
     analyticsLocations: ei
-  } = (0, m.ZP)(h.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), eo = (0, A.Z)({
+  } = (0, m.ZP)(h.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ea = (0, A.Z)({
     display: "live",
     voiceChannelId: null == et ? true : et.id,
     user: t,
-    stream: o,
+    stream: a,
     analyticsLocations: ei
-  }), ea = (0, N.Z)({
+  }), eo = (0, N.Z)({
     userId: t.id,
-    onAction: eo
+    onAction: ea
   }), [es, el] = (0, y.wq)(et), ec = (0, p.Kt)() && (0, p.zd)(null == et ? true : et.id), {
     previewUrl: eu,
     isLoading: ed
-  } = (0, b.Z)(o.guildId, o.channelId, o.ownerId), ef = (0, s.e7)([I.Z], () => null != et && !ec && I.Z.canBasicChannel(B.S7T.CONNECT, et)), e_ = (0, d.Z)(ed ? null : eu), ep = ed || null == eu ? e_ : eu;
-  if (null == ee || null == et || false === o.discoverable || null === X) return null;
+  } = (0, b.Z)(a.guildId, a.channelId, a.ownerId), ef = (0, s.e7)([I.Z], () => null != et && !ec && I.Z.canBasicChannel(B.S7T.CONNECT, et)), e_ = (0, d.Z)(ed ? null : eu), ep = ed || null == eu ? e_ : eu;
+  if (null == ee || null == et || false === a.discoverable || null === X) return null;
   let eh = () => {
       let e = e => {
-        e.stopPropagation(), es && (eo({
+        e.stopPropagation(), es && (ea({
           action: "PRESS_IMAGE"
-        }), c.default.selectVoiceChannel(o.channelId), (0, u.iV)(o), null == K || K())
+        }), c.default.selectVoiceChannel(a.channelId), (0, u.iV)(a), null == K || K())
       };
       return null == ep && ed ? (0, r.jsx)("div", {
-        className: V.preview,
+        className: Z.preview,
         children: (0, r.jsx)(l.$jN, {})
       }) : null == ep || ec ? (0, r.jsxs)(l.P3F, {
-        className: a()(V.preview, V.overlay, es ? V.clickable : V.disabled),
+        className: o()(Z.preview, Z.overlay, es ? Z.clickable : Z.disabled),
         onClick: e,
         "aria-label": (0, y.gR)(el),
         "aria-disabled": !es,
@@ -102,34 +102,34 @@ function W(e) {
           src: Q === B.BRd.LIGHT ? Y : H
         }), X !== G.lY.MODAL && X !== G.lY.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
-            className: V.overlayText,
+            className: Z.overlayText,
             variant: "text-sm/medium",
             color: "always-white",
             children: (0, y.P9)(el)
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
-            children: ef ? Z.intl.string(Z.t.uQZTBQ) : Z.intl.string(Z.t.pgUTZG)
+            children: ef ? V.intl.string(V.t.uQZTBQ) : V.intl.string(V.t.pgUTZG)
           })]
         })]
       }) : (0, r.jsxs)(l.P3F, {
-        className: a()(V.preview, V.overlay, es ? V.clickable : V.disabled),
+        className: o()(Z.preview, Z.overlay, es ? Z.clickable : Z.disabled),
         onClick: e,
         "aria-label": (0, y.gR)(el),
         "aria-disabled": !es,
         children: [(0, r.jsx)("img", {
           alt: "",
           src: ep,
-          className: V.image
+          className: Z.image
         }), X !== G.lY.MODAL && X !== G.lY.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
-            className: V.overlayText,
+            className: Z.overlayText,
             variant: "text-sm/medium",
             color: "always-white",
             children: (0, y.P9)(el)
           }), (0, r.jsx)(l.gw7, {
             size: "xs",
             color: "currentColor",
-            className: V.clyde
+            className: Z.clyde
           })]
         })]
       })
@@ -139,45 +139,45 @@ function W(e) {
       children: [(0, r.jsx)(M.Z, {
         channel: et,
         guild: ee,
-        onAction: eo,
+        onAction: ea,
         onClose: K
       }), (0, r.jsx)(E.Z, {
         users: en,
         guildId: ee.id,
         channelId: et.id,
-        maxUsers: j.W,
+        maxUsers: k.W,
         size: l.EFr.SIZE_16,
         onClickOverflow: e => {
-          null == e || e.stopPropagation(), null == eo || eo({
+          null == e || e.stopPropagation(), null == ea || ea({
             action: "PRESS_VOICE_CHANNEL_AVATARS"
           })
         },
         onUserClick: e => e.stopPropagation(),
         disableUserPopout: e => e === t.id,
         overflowCountColor: "text-muted",
-        "aria-label": Z.intl.string(Z.t.jNqDh4)
+        "aria-label": V.intl.string(V.t.jNqDh4)
       }), X === G.lY.MODAL_V2 && eE()]
     }),
-    eg = () => X === G.lY.MODAL || X === G.lY.MODAL_V2 ? null : (0, r.jsx)(j.Z, {
+    eg = () => X === G.lY.MODAL || X === G.lY.MODAL_V2 ? null : (0, r.jsx)(k.Z, {
       user: t,
       guild: ee,
       channel: et,
-      onAction: eo,
+      onAction: ea,
       onClose: K
     }),
     eE = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: F.actions,
-      children: (0, r.jsx)(k.Z, {
+      children: (0, r.jsx)(j.Z, {
         channel: et,
-        onAction: eo,
+        onAction: ea,
         onClose: K
       })
     }),
     eb = eu,
     ey = J === G.n_.ACTIVITY && $ === eb,
-    eO = null != er ? Z.intl.formatToPlainString(Z.t["4CQq9f"], {
+    eO = null != er ? V.intl.formatToPlainString(V.t["4CQq9f"], {
       name: er.name
-    }) : Z.intl.string(Z.t["Jpkr/v"]);
+    }) : V.intl.string(V.t["Jpkr/v"]);
   return (0, r.jsx)(m.Gt, {
     value: ei,
     children: (0, r.jsx)(D.Z, {
@@ -191,15 +191,15 @@ function W(e) {
         sourceId: eb,
         sourceDetails: eO,
         sourceType: G.n_.ACTIVITY,
-        onAction: eo,
+        onAction: ea,
         children: () => (0, r.jsx)(P.Z, {
           ref: q,
           user: t,
           className: F.toolbarContainer,
           interactionSourceId: eb,
           sourceType: G.n_.ACTIVITY,
-          onAction: eo,
-          onShowToolbar: () => eo({
+          onAction: ea,
+          onShowToolbar: () => ea({
             action: "HOVER_ACTIVITY_CARD"
           }),
           renderMoreButtonPopout: e => (0, r.jsx)(U.Z, {
@@ -209,11 +209,11 @@ function W(e) {
             children: e
           }),
           children: (0, r.jsxs)(L.Z, {
-            ref: ea,
-            className: a()(W, {
+            ref: eo,
+            className: o()(W, {
               [F.hoisted]: ey
             }),
-            onAction: eo,
+            onAction: ea,
             onClose: K,
             "aria-label": eO,
             children: [(0, r.jsx)(x.Z, {

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 277707, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 277707, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   e: () => i
 });
@@ -11,19 +10,19 @@ function i(e) {
     isVoiceChannel: t,
     isHubGuild: n,
     isOwnInvite: i,
-    isGuest: o,
+    isGuest: l,
     isStage: a,
-    isStream: s
+    isStream: o
   } = e;
   if (t)
     if (i)
-      if (s) return r.intl.string(r.t.N85DCg);
+      if (o) return r.intl.string(r.t.N85DCg);
       else if (a) return r.intl.string(r.t.TJQcNj);
-  else if (o) return r.intl.string(r.t.mJyBio);
+  else if (l) return r.intl.string(r.t.mJyBio);
   else return r.intl.string(r.t.lxTgPz);
-  else if (s) return r.intl.string(r.t.Mnvc3N);
+  else if (o) return r.intl.string(r.t.Mnvc3N);
   else if (a) return r.intl.string(r.t.FdPNr6);
-  else if (o) return r.intl.string(r.t.f4gmra);
+  else if (l) return r.intl.string(r.t.f4gmra);
   else return r.intl.string(r.t.H39rER);
   return n ? i ? r.intl.string(r.t.UxmnHx) : r.intl.string(r.t.sigPER) : i ? r.intl.string(r.t["oU/lsr"]) : r.intl.string(r.t.BoQUFR)
 }

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 279329, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37220 **/
+/** chunk id: 279329, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -13,11 +12,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c(e, t) {
-  let n = (0, i.e7)([s.Z], () => s.Z.isSpeakingMessage(t.id, e.id), [t, e]);
-  return "" === e.content ? null : (0, r.jsx)(o.sNh, {
+  let n = (0, i.e7)([o.Z], () => o.Z.isSpeakingMessage(t.id, e.id), [t, e]);
+  return "" === e.content ? null : (0, r.jsx)(l.sNh, {
     id: "tts",
-    label: n ? l.intl.string(l.t.CJ30BA) : l.intl.string(l.t.yGLjXF),
-    icon: o.J2R,
+    label: n ? s.intl.string(s.t.CJ30BA) : s.intl.string(s.t.yGLjXF),
+    icon: l.J2R,
     action: () => n ? (0, a.NB)() : (0, a.LA)(t, e)
   })
 }

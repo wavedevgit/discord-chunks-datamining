@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk168107 = require("./168107.jsx"),
@@ -66,7 +66,7 @@ let v = e => {
       className: t
     } = e;
     return (0, r.jsx)("div", {
-      className: a()(m.spoilerWarning, t),
+      className: o()(m.spoilerWarning, t),
       children: h.intl.string(h.t["F+x38P"])
     })
   },
@@ -77,7 +77,7 @@ let v = e => {
       obscureOnly: i
     } = e;
     return (0, r.jsx)("div", {
-      className: a()(m.explicitContentWarning, t),
+      className: o()(m.explicitContentWarning, t),
       children: i ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.fFY, {
           size: "lg",
@@ -123,10 +123,10 @@ let v = e => {
       obscureReason: t,
       isVisible: n,
       handleToggleObscurity: i,
-      obscurityControlClassName: o
+      obscurityControlClassName: a
     } = e;
     return t !== _.wk.EXPLICIT_CONTENT && t !== _.wk.GORE_CONTENT ? null : (0, r.jsx)("div", {
-      className: a()(m.obscureButtonContainer, o),
+      className: o()(m.obscureButtonContainer, a),
       children: (0, r.jsx)(l.P3F, {
         className: m.obscureHoverButton,
         onClick: i,
@@ -165,7 +165,7 @@ class N extends Chunk73800.PureComponent {
       inline: t,
       className: n,
       containerStyles: i,
-      obscured: o = true,
+      obscured: a = true,
       reason: s = Chunk936141.wk.SPOILER,
       isSingleMosaicItem: c = false,
       obscurityControlClassName: u,
@@ -175,12 +175,12 @@ class N extends Chunk73800.PureComponent {
       visible: p
     } = this.state, h = (0, Chunk255367.jsx)(A.Consumer, {
       children: h => {
-        let g = h || p || !o;
+        let g = h || p || !a;
         return _.Xh.has(s) && !t ? (0, r.jsxs)("div", {
           "aria-label": g ? true : this.ariaLabel,
           "aria-expanded": g,
           style: i,
-          className: a()(n, m.spoilerContent, m.spoilerContainer, m.attachmentContainer, {
+          className: o()(n, m.spoilerContent, m.spoilerContainer, m.attachmentContainer, {
             [m.hidden]: !g,
             [m.constrainedObscureContent]: c,
             [m.opaque]: d || f
@@ -205,7 +205,7 @@ class N extends Chunk73800.PureComponent {
           "aria-label": g ? true : this.ariaLabel,
           "aria-expanded": g,
           style: i,
-          className: a()(n, m.spoilerContent, m.spoilerContainer, m.attachmentContainer, {
+          className: o()(n, m.spoilerContent, m.spoilerContainer, m.attachmentContainer, {
             [m.hidden]: !g,
             [m.hiddenSpoiler]: !g
           }),
@@ -230,7 +230,7 @@ class N extends Chunk73800.PureComponent {
       className: t,
       containerStyles: n,
       isSingleMosaicItem: i,
-      obscurityControlClassName: o,
+      obscurityControlClassName: a,
       reason: s = Chunk936141.wk.SPOILER,
       shouldAgeVerify: c,
       isVerifiedTeen: u
@@ -244,7 +244,7 @@ class N extends Chunk73800.PureComponent {
           "aria-label": d ? true : this.ariaLabel,
           "aria-expanded": p,
           style: n,
-          className: a()(t, m.spoilerContent, m.spoilerContainer, m.embedContainer, {
+          className: o()(t, m.spoilerContent, m.spoilerContainer, m.embedContainer, {
             [m.hidden]: !p,
             [m.opaque]: c || u
           }),
@@ -261,12 +261,12 @@ class N extends Chunk73800.PureComponent {
             obscureReason: s,
             isVisible: d,
             handleToggleObscurity: this.handleToggleObscurity,
-            obscurityControlClassName: o
+            obscurityControlClassName: a
           })]
         }) : (0, r.jsxs)(l.P3F, {
           "aria-label": this.ariaLabel,
           "aria-expanded": p,
-          className: a()(t, m.spoilerContent, m.spoilerContainer, m.embedContainer, {
+          className: o()(t, m.spoilerContent, m.spoilerContainer, m.embedContainer, {
             [m.hidden]: !p
           }),
           onClick: p ? true : this.removeObscurity,
@@ -290,10 +290,10 @@ class N extends Chunk73800.PureComponent {
       renderTextElement: t,
       className: n
     } = this.props, {
-      visible: o
+      visible: a
     } = this.state, s = (0, Chunk255367.jsx)(A.Consumer, {
       children: s => {
-        let c = s || o,
+        let c = s || a,
           u = i.Children.toArray(e(c)),
           d = i.Children.map(u, e => i.isValidElement(e) && null != t ? t(e, c) : e);
         return (0, r.jsx)(l.P3F, {
@@ -303,7 +303,7 @@ class N extends Chunk73800.PureComponent {
           "aria-expanded": c,
           tabIndex: c ? false : 0,
           role: c ? "presentation" : "button",
-          className: a()("obscured", n, m.spoilerContent, m.spoilerMarkdownContent, {
+          className: o()("obscured", n, m.spoilerContent, m.spoilerMarkdownContent, {
             [m.hidden]: !c
           }),
           children: (0, r.jsx)("span", {

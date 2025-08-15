@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 910424, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 910424, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -21,100 +20,93 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk603634 = require("./603634.js");
 
-function E(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function y(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function v(e) {
+function y(e) {
   let {
     isCurrentUser: t,
     color: n,
-    look: E,
-    applicationStream: y,
-    onAction: v
+    look: y,
+    applicationStream: O,
+    onAction: S
   } = e, {
     activeStream: I,
-    watchingOtherStream: T
+    watchingOtherStream: j
   } = (0, i.cj)([d.Z], () => ({
-    activeStream: d.Z.getActiveStreamForApplicationStream(y),
-    watchingOtherStream: null != y && d.Z.getAllActiveStreamsForChannel(y.channelId).filter(e => {
+    activeStream: d.Z.getActiveStreamForApplicationStream(O),
+    watchingOtherStream: null != O && d.Z.getAllActiveStreamsForChannel(O.channelId).filter(e => {
       let {
         ownerId: t
       } = e;
-      return t !== y.ownerId
+      return t !== O.ownerId
     }).length > 0
-  })), S = (0, i.e7)([f.Z], () => f.Z.getChannel(null == y ? true : y.channelId)), [A, N] = (0, u.wq)(S), C = (0, c.Aq)(), R = null != I && null != y && I.state !== h.jm8.ENDED && I.ownerId === y.ownerId, P = e => {
-    null != y && (null == v || v(), s.default.selectVoiceChannel(y.channelId), R || (0, l.iV)(y, {
+  })), x = (0, i.e7)([f.Z], () => f.Z.getChannel(null == O ? true : O.channelId)), [E, P] = (0, u.wq)(x), C = (0, c.Aq)(), T = null != I && null != O && I.state !== g.jm8.ENDED && I.ownerId === O.ownerId, N = e => {
+    null != O && (null == S || S(), o.default.selectVoiceChannel(O.channelId), T || (0, s.iV)(O, {
       forceMultiple: e
-    }), C.dispatch(h.CkL.POPOUT_CLOSE), _.S.dispatch(h.CkL.MODAL_CLOSE), a.Z.popAll())
+    }), C.dispatch(g.CkL.POPOUT_CLOSE), p.S.dispatch(g.CkL.MODAL_CLOSE), a.Z.popAll())
   };
-  if (null == y) return null;
-  let w = (0, u.P9)(N);
-  t ? w = m.intl.string(m.t.XvBdeX) : R && (w = m.intl.string(m.t.JH1SJy));
-  let D = {
+  if (null == O) return null;
+  let A = (0, u.P9)(P);
+  t ? A = h.intl.string(h.t.XvBdeX) : T && (A = h.intl.string(h.t.JH1SJy));
+  let w = {
     color: n,
-    look: E
+    look: y
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(p.Z, O(b({
-      disabled: t || R || !A,
-      onClick: () => P(false)
-    }, D), {
+    children: [(0, r.jsxs)(m.Z, _(v({
+      disabled: t || T || !E,
+      onClick: () => N(false)
+    }, w), {
       fullWidth: true,
-      children: [(0, r.jsx)(o.hGI, {
+      children: [(0, r.jsx)(l.hGI, {
         size: "md",
         color: "currentColor",
-        className: g.streamIcon
-      }), w]
-    }), "play"), T && !R ? (0, r.jsx)(o.ua7, {
-      text: m.intl.string(m.t.wCrzur),
-      children: e => (0, r.jsx)(p.Z, O(b(O(b({}, e), {
+        className: b.streamIcon
+      }), A]
+    }), "play"), j && !T ? (0, r.jsx)(l.ua7, {
+      text: h.intl.string(h.t.wCrzur),
+      children: e => (0, r.jsx)(m.Z, _(v(_(v({}, e), {
         onClick: () => {
           var t;
-          null == (t = e.onClick) || t.call(e), P(true)
+          null == (t = e.onClick) || t.call(e), N(true)
         }
-      }), D), {
-        className: g.iconButton,
-        size: g.iconButtonSize,
-        children: (0, r.jsx)(o.OgY, {
+      }), w), {
+        className: b.iconButton,
+        size: b.iconButtonSize,
+        children: (0, r.jsx)(l.OgY, {
           size: "xs",
           color: "currentColor",
-          className: g.iconSize
+          className: b.iconSize
         })
       }))
     }) : null]

@@ -1,7 +1,7 @@
-/** Chunk was on 87137 **/
-/** chunk id: 369509, original params: A,t,e (module,exports,require) **/
+/** Chunk was on 78079 **/
+/** chunk id: 369509, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
-  S: () => B
+  S: () => s
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -10,19 +10,19 @@ var Chunk172751 = require("./172751.jsx"),
   Chunk131085 = require("./131085.js"),
   Chunk215486 = require("./215486.js");
 
-function B(A) {
-  let t = null === A.tag || 0 === A.tag.length ? "WUMP" : A.tag;
-  return (0, r.jsx)("div", {
-    className: f.badgeContainer,
-    children: (0, r.jsx)(g.m0, {
+function s(A) {
+  let e = null === A.tag || 0 === A.tag.length ? "WUMP" : A.tag;
+  return (0, n.jsx)("div", {
+    className: a.badgeContainer,
+    children: (0, n.jsx)(r.m0, {
       guildId: A.guildId,
-      textClassName: f.tagText,
-      guildTag: t,
-      guildBadge: "string" == typeof A.badge ? A.badge : (0, r.jsx)(v.v, {
-        className: f.badgePreview,
+      textClassName: a.tagText,
+      guildTag: e,
+      guildBadge: "string" == typeof A.badge ? A.badge : (0, n.jsx)(l.v, {
+        className: a.badgePreview,
         badge: A.badge,
-        width: n.Gg.SIZE_12,
-        height: n.Gg.SIZE_12,
+        width: i.Gg.SIZE_12,
+        height: i.Gg.SIZE_12,
         primaryTintColor: A.primaryColor,
         secondaryTintColor: A.secondaryColor
       })

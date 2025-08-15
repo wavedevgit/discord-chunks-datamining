@@ -17,8 +17,8 @@ var Chunk442837 = require("./442837.js"),
 function p(e) {
   let {
     isFavoritesPerk: t
-  } = (0, c.z)("useChannelOptInItems"), n = (0, a.DM)(e.guild_id), p = (0, i.e7)([u.ZP], () => u.ZP.isChannelOptedIn(e.guild_id, e.id)), b = (0, i.e7)([u.ZP], () => null != e.parent_id && u.ZP.isChannelOptedIn(e.guild_id, e.parent_id)), f = (0, i.e7)([u.ZP], () => u.ZP.isFavorite(e.guild_id, e.id)), O = () => {
-    (0, o.XQ)(e.guild_id, e.id, !p, {
+  } = (0, o.z)("useChannelOptInItems"), n = (0, a.DM)(e.guild_id), p = (0, i.e7)([u.ZP], () => u.ZP.isChannelOptedIn(e.guild_id, e.id)), b = (0, i.e7)([u.ZP], () => null != e.parent_id && u.ZP.isChannelOptedIn(e.guild_id, e.parent_id)), f = (0, i.e7)([u.ZP], () => u.ZP.isFavorite(e.guild_id, e.id)), O = () => {
+    (0, c.XQ)(e.guild_id, e.id, !p, {
       section: s.jXE.CONTEXT_MENU
     })
   };
@@ -35,14 +35,14 @@ function p(e) {
       id: "opt-in-favorite-channel",
       label: t ? g : y,
       action: () => {
-        (0, o.dM)(e.guild_id, e.id, !f, {
+        (0, c.dM)(e.guild_id, e.id, !f, {
           section: s.jXE.CONTEXT_MENU
         })
       }
     }), b ? (0, r.jsx)(l.sNh, {
       id: "opt-out-category",
       label: d.intl.string(d.t.jNphKS),
-      action: () => void(null != e.parent_id && (0, o.XQ)(e.guild_id, e.parent_id, false, {
+      action: () => void(null != e.parent_id && (0, c.XQ)(e.guild_id, e.parent_id, false, {
         section: s.jXE.CONTEXT_MENU
       }))
     }) : (0, r.jsx)(l.sNh, {

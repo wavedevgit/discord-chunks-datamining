@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk607070 = require("./607070.js"),
   Chunk226690 = require("./226690.jsx"),
@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
 function u(e) {
   let {
     className: t
-  } = e, i = (0, a.e7)([s.Z], () => s.Z.useReducedMotion);
+  } = e, i = (0, o.e7)([s.Z], () => s.Z.useReducedMotion);
   async function u() {
     let {
       default: e
@@ -26,6 +26,6 @@ function u(e) {
   return (0, r.jsx)(l.F, {
     importData: u,
     shouldAnimate: !i,
-    className: o()(c.sparkles, t)
+    className: a()(c.sparkles, t)
   })
 }

@@ -1,8 +1,8 @@
 /** Chunk was on 89311 **/
 /** chunk id: 485267, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Bt: () => u,
-  Jn: () => d,
+  Bt: () => d,
+  Jn: () => u,
   lY: () => c
 });
 var Chunk570140 = require("./570140.js");
@@ -24,13 +24,13 @@ let c = () => {
   })
 };
 
-function d() {
+function u() {
   Chunk570140.Z.dispatch({
     type: "GAME_PROFILE_OPEN"
   })
 }
 
-function u() {
+function d() {
   Chunk570140.Z.dispatch({
     type: "CONTENT_INVENTORY_CLEAR_DELETE_HISTORY_ERROR"
   })

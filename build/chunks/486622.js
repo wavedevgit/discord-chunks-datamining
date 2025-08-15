@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 486622, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 486622, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => g
+  m: () => b
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk707019 = require("./707019.js"),
-  o = require.n(Chunk707019),
+  l = require.n(Chunk707019),
   Chunk881052 = require("./881052.js"),
   Chunk726521 = require("./726521.js"),
   Chunk621853 = require("./621853.js"),
@@ -19,118 +18,116 @@ var Chunk73800 = require("./73800.js"),
   Chunk687683 = require("./687683.js"),
   Chunk981631 = require("./981631.js");
 
-function g(e) {
+function b(e) {
   let {
     user: t,
     onAcceptSuccess: n,
     onRejectSuccess: i,
-    onError: g
-  } = e, E = (0, p.Z)(), [b, y] = r.useState(false), [O, v] = r.useState(false), [I, T] = r.useState(false), [S, A] = r.useState(false), [N, C] = r.useState(false), R = b || O || I, P = r.useCallback(async e => {
-    if (!R) {
-      y(true);
+    onError: b
+  } = e, y = (0, f.Z)(), [_, C] = r.useState(false), [x, v] = r.useState(false), [j, O] = r.useState(false), [E, S] = r.useState(false), [P, I] = r.useState(false), Z = _ || x || j, T = r.useCallback(async e => {
+    if (!Z) {
+      C(true);
       try {
-        await (0, f.e4)(e), A(true), null == n || n()
+        await (0, p.e4)(e), S(true), null == n || n()
       } catch (t) {
         let e = new a.Hx(t);
-        null == g || g(e)
+        null == b || b(e)
       } finally {
-        y(false)
+        C(false)
       }
     }
-  }, [R, n, g]), w = r.useCallback(async e => {
-    if (!R) {
+  }, [Z, n, b]), N = r.useCallback(async e => {
+    if (!Z) {
       v(true);
       try {
-        await (0, f.gN)(e), C(true), null == i || i()
+        await (0, p.gN)(e), I(true), null == i || i()
       } catch (t) {
         let e = new a.Hx(t);
-        null == g || g(e)
+        null == b || b(e)
       } finally {
         v(false)
       }
     }
-  }, [R, i, g]), D = r.useCallback(async e => {
-    if (R) return;
+  }, [Z, i, b]), A = r.useCallback(async e => {
+    if (Z) return;
     v(true);
-    let t = o()(e, h.t$);
+    let t = l()(e, m.t$);
     try {
-      for (let e of t) await (0, f.r_)(e);
-      C(true), null == i || i()
+      for (let e of t) await (0, p.r_)(e);
+      I(true), null == i || i()
     } catch (t) {
       let e = new a.Hx(t);
-      null == g || g(e)
+      null == b || b(e)
     } finally {
       v(false)
     }
-  }, [R, i, g]), L = r.useCallback(async e => {
-    if (R) return;
-    if (null != t && null == l.Z.getMutualGuilds(t.id)) {
-      T(true);
+  }, [Z, i, b]), w = r.useCallback(async e => {
+    if (Z) return;
+    if (null != t && null == s.Z.getMutualGuilds(t.id)) {
+      O(true);
       try {
         await (0, c.Z)(t.id, t.getAvatarURL(true, 80), {
           withMutualGuilds: true,
           withMutualFriendsCount: true
         })
       } catch (e) {} finally {
-        T(false)
+        O(false)
       }
     }
-    let n = () => {
+    let n = async () => {
+      var n;
+      let r = null != t ? null == (n = s.Z.getMutualGuilds(t.id)) ? true : n.map(e => e.guild.id) : [];
+      d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
+        action: m.cl.ACCEPT_CONFIRMATION_PROMPT,
+        channel_id: e,
+        mutual_guild_ids: null != r ? r : [],
+        other_user_id: null == t ? true : t.id
+      }), await T(e)
+    };
+    (0, h.H)({
+      channelId: e,
+      onConfirm: n,
+      onCancel: () => {
         var n;
-        let r = null != t ? null == (n = l.Z.getMutualGuilds(t.id)) ? true : n.map(e => e.guild.id) : [];
-        d.default.track(m.rMx.MESSAGE_REQUEST_ACTION, {
-          action: h.cl.DISMISS_CONFIRMATION_PROMPT,
+        let r = null != t ? null == (n = s.Z.getMutualGuilds(t.id)) ? true : n.map(e => e.guild.id) : [];
+        d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
+          action: m.cl.DISMISS_CONFIRMATION_PROMPT,
           channel_id: e,
           mutual_guild_ids: null != r ? r : [],
           other_user_id: null == t ? true : t.id
         })
-      },
-      r = async () => {
-        var n;
-        let r = null != t ? null == (n = l.Z.getMutualGuilds(t.id)) ? true : n.map(e => e.guild.id) : [];
-        d.default.track(m.rMx.MESSAGE_REQUEST_ACTION, {
-          action: h.cl.ACCEPT_CONFIRMATION_PROMPT,
-          channel_id: e,
-          mutual_guild_ids: null != r ? r : [],
-          other_user_id: null == t ? true : t.id
-        }), await P(e)
-      };
-    (0, _.H)({
-      channelId: e,
-      onConfirm: r,
-      onCancel: n
+      }
     })
-  }, [P, R, t]), x = r.useCallback((e, t, n) => {
+  }, [T, Z, t]), R = r.useCallback((e, t, n) => {
     let r = (r, i) => {
-        i && u.kJ.updateSetting(r), r && null != t && (0, s.zd)(t), P(e.id), d.default.track(m.rMx.MESSAGE_REQUEST_ACTION, {
-          action: h.cl.ACCEPT_HAM_CONFIRMATION_PROMPT,
+        i && u.kJ.updateSetting(r), r && null != t && (0, o.zd)(t), T(e.id), d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
+          action: m.cl.ACCEPT_HAM_CONFIRMATION_PROMPT,
           channel_id: e.id,
           is_dont_show_again_checked: i,
           non_spam_retraining_opt_in: r
         }), null != n && n()
       },
-      i = () => {
-        d.default.track(m.rMx.MESSAGE_REQUEST_ACTION, {
-          action: h.cl.DISMISS_HAM_CONFIRMATION_PROMPT,
-          channel_id: e.id
-        })
-      },
-      o = u.kJ.getSetting();
-    null == o ? (0, _.V)({
+      i = u.kJ.getSetting();
+    null == i ? (0, h.V)({
       channel: e,
       onConfirm: r,
-      onCancel: i
-    }) : r(o)
-  }, [P]);
+      onCancel: () => {
+        d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
+          action: m.cl.DISMISS_HAM_CONFIRMATION_PROMPT,
+          channel_id: e.id
+        })
+      }
+    }) : r(i)
+  }, [T]);
   return {
-    acceptMessageRequest: E ? L : P,
-    rejectMessageRequest: w,
-    rejectAll: D,
-    markAsNotSpam: x,
-    isAcceptLoading: b,
-    isRejectLoading: O,
-    isUserProfileLoading: I,
-    isOptimisticAccepted: S,
-    isOptimisticRejected: N
+    acceptMessageRequest: y ? w : T,
+    rejectMessageRequest: N,
+    rejectAll: A,
+    markAsNotSpam: R,
+    isAcceptLoading: _,
+    isRejectLoading: x,
+    isUserProfileLoading: j,
+    isOptimisticAccepted: E,
+    isOptimisticRejected: P
   }
 }

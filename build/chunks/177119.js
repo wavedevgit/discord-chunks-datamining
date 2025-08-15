@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 177119, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 177119, original params: e,t,n (module,exports,require) **/
 module.exports = {
   blockedEdit: "blockedEdit_b7ab2c",
   blockedSend: "blockedSend_b7ab2c",

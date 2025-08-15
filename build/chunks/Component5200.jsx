@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 5200, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 5200, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y: () => b
+  Y: () => C
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
+var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk717976 = require("./717976.js"),
   Chunk481060 = require("./481060.js"),
   Chunk542094 = require("./542094.js"),
@@ -17,120 +16,118 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk748788 = require("./748788.js");
-let m = ["embedded_cover"],
-  g = {
+let b = ["embedded_cover"],
+  y = {
     tension: 800,
     friction: 24
   };
-var E = function(e) {
-  return e[e.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", e[e.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", e
-}(E || {});
+var _ = ((r = _ || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
 
-function b(e) {
+function C(e) {
   var t;
   let {
     context: n,
-    activityItem: o,
-    onClick: E,
-    aspectRatio: b = 0,
-    animatedDivClass: y,
-    commandOrigin: O
+    activityItem: r,
+    onClick: a,
+    aspectRatio: _ = 0,
+    animatedDivClass: C,
+    commandOrigin: x
   } = e, {
     onActivityItemSelected: v,
-    imageBackground: I,
-    activityAction: T,
-    labelType: S
-  } = (0, c.ZP)({
+    imageBackground: j,
+    activityAction: O,
+    labelType: E
+  } = (0, u.ZP)({
     context: n,
-    activityItem: o,
+    activityItem: r,
     guildId: null != (t = n.channel.getGuildId()) ? t : true,
     locationObject: {},
-    onActivityItemSelected: E,
-    embeddedActivitiesManager: f.Z,
-    assetNames: m,
-    commandOrigin: O
-  }), [A, N] = i.useState(false), C = i.useCallback(() => {
-    N(true)
-  }, [N]), R = i.useCallback(() => {
-    N(false)
-  }, [N]), P = i.useMemo(() => (0, r.jsx)("div", {
-    className: h.overlayBadge,
-    children: (0, r.jsx)("div", {
-      className: h.badgeContainer,
-      children: (0, r.jsx)(d.Z, {
-        labelType: S
+    onActivityItemSelected: a,
+    embeddedActivitiesManager: h.Z,
+    assetNames: b,
+    commandOrigin: x
+  }), [S, P] = l.useState(false), I = l.useCallback(() => {
+    P(true)
+  }, [P]), Z = l.useCallback(() => {
+    P(false)
+  }, [P]), T = l.useMemo(() => (0, i.jsx)("div", {
+    className: g.overlayBadge,
+    children: (0, i.jsx)("div", {
+      className: g.badgeContainer,
+      children: (0, i.jsx)(p.Z, {
+        labelType: E
       })
     })
-  }), [S]), w = i.useMemo(() => {
-    switch (T) {
-      case c.JS.JOIN:
-        return (0, r.jsx)("div", {
-          className: h.activityAction,
-          children: (0, r.jsx)("div", {
-            className: h.activityActionButton,
-            children: (0, r.jsx)(l.Text, {
+  }), [E]), N = l.useMemo(() => {
+    switch (O) {
+      case u.JS.JOIN:
+        return (0, i.jsx)("div", {
+          className: g.activityAction,
+          children: (0, i.jsx)("div", {
+            className: g.activityActionButton,
+            children: (0, i.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "always-white",
-              children: p.intl.string(p.t.VJlc0d)
+              children: m.intl.string(m.t.VJlc0d)
             })
           })
         });
-      case c.JS.LEAVE:
-        return (0, r.jsx)("div", {
-          className: h.activityAction,
-          children: (0, r.jsx)("div", {
-            className: a()(h.activityActionButton, h.activityActionButtonDanger),
-            children: (0, r.jsx)(l.Text, {
+      case u.JS.LEAVE:
+        return (0, i.jsx)("div", {
+          className: g.activityAction,
+          children: (0, i.jsx)("div", {
+            className: o()(g.activityActionButton, g.activityActionButtonDanger),
+            children: (0, i.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "always-white",
-              children: p.intl.string(p.t["wH/wDA"])
+              children: m.intl.string(m.t["wH/wDA"])
             })
           })
         });
-      case c.JS.START:
+      case u.JS.START:
       default:
         return null
     }
-  }, [T]);
-  return (0, r.jsx)(l.P3F, {
+  }, [O]);
+  return (0, i.jsx)(c.P3F, {
     onClick: v,
-    onFocus: C,
-    onBlur: R,
-    onMouseEnter: C,
-    onMouseLeave: R,
-    className: h.activityItemButtonInnerClass,
-    children: (0, r.jsx)(l.AMe, {
-      config: g,
+    onFocus: I,
+    onBlur: Z,
+    onMouseEnter: I,
+    onMouseLeave: Z,
+    className: g.activityItemButtonInnerClass,
+    children: (0, i.jsx)(c.AMe, {
+      config: y,
       from: {
         value: 0
       },
       to: {
-        value: +!!A
+        value: +!!S
       },
       children: e => {
         let {
           value: t
         } = e;
-        return (0, r.jsx)(l.f6W, {
-          theme: _.BRd.DARK,
-          children: e => (0, r.jsxs)(s.animated.div, {
-            className: a()(e, h.activityItem, y, {
-              [h.activityItem_13_11]: 0 === b,
-              [h.activityItem_16_9]: 1 === b
+        return (0, i.jsx)(c.f6W, {
+          theme: f.BRd.DARK,
+          children: e => (0, i.jsxs)(s.animated.div, {
+            className: o()(e, g.activityItem, C, {
+              [g.activityItem_13_11]: 0 === _,
+              [g.activityItem_16_9]: 1 === _
             }),
             style: {
               transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
             },
-            children: [(0, r.jsx)(u.Z, {
-              imageBackground: I,
-              applicationName: o.application.name,
-              imageClassName: h.activitySuggestionImage,
-              imageNotFoundClassName: h.brokenImageIconWrapper
-            }), P, w]
+            children: [(0, i.jsx)(d.Z, {
+              imageBackground: j,
+              applicationName: r.application.name,
+              imageClassName: g.activitySuggestionImage,
+              imageNotFoundClassName: g.brokenImageIconWrapper
+            }), T, N]
           })
         })
       }
     })
   })
 }
-b.AspectRatio = E
+C.AspectRatio = _

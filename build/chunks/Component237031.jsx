@@ -22,7 +22,7 @@ let i = "collectibles shop product details modal",
     (0, a.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([r.e("78223"), r.e("84691")]).then(r.bind(r, 702370));
+      } = await Promise.all([r.e("25292"), r.e("31978"), r.e("40694"), r.e("78223"), r.e("32160")]).then(r.bind(r, 702370));
       return r => {
         var a, i;
         return (0, n.jsx)(e, (a = function(e) {

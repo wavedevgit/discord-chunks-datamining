@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk525751 = require("./525751.js");
 
 function s(e) {
@@ -15,7 +15,7 @@ function s(e) {
     children: t
   } = e;
   return null == t ? null : (0, r.jsx)("footer", {
-    className: o()(a.footer, a.section),
+    className: a()(o.footer, o.section),
     children: t
   })
 }

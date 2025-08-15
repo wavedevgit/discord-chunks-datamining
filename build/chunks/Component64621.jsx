@@ -38,10 +38,10 @@ function A(e) {
     themeType: C
   } = (0, m.z)(), R = (0, h.T)({
     location: "UserProfilePopoutInteractionCoachmark"
-  }), P = (0, o.e7)([p.default], () => {
+  }), P = (0, a.e7)([p.default], () => {
     var e;
     return (null == (e = p.default.getCurrentUser()) ? true : e.id) === A.id
-  }), w = (0, o.e7)([_.Z], () => _.Z.findActivity(A.id, e => {
+  }), w = (0, a.e7)([_.Z], () => _.Z.findActivity(A.id, e => {
     let {
       type: t
     } = e;
@@ -50,12 +50,12 @@ function A(e) {
   (0, c.Z)(() => x(true), D() ? I : null);
   let {
     asset: M,
-    assetClassName: j,
-    className: k,
+    assetClassName: k,
+    className: j,
     content: U,
     header: G,
     spacing: B,
-    dismissibleContentType: Z
+    dismissibleContentType: V
   } = R ? {
     asset: v,
     assetClassName: y.profileImage,
@@ -63,7 +63,7 @@ function A(e) {
     content: b.intl.string(b.t.HEGlIC),
     header: b.intl.string(b.t["R/RaKy"]),
     spacing: S,
-    dismissibleContentType: a.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ALL
+    dismissibleContentType: o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ALL
   } : {
     asset: O,
     assetClassName: true,
@@ -71,8 +71,8 @@ function A(e) {
     content: b.intl.string(b.t.LQ32TU),
     header: b.intl.string(b.t.XDBiPT),
     spacing: T,
-    dismissibleContentType: a.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
-  }, F = (0, u.Nj)(a.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), V = L && !F ? [Z] : [], [H, Y] = (0, d.US)(V);
+    dismissibleContentType: o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
+  }, F = (0, u.Nj)(o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), Z = L && !F ? [V] : [], [H, Y] = (0, d.US)(Z);
   return (0, r.jsx)(l.yRy, {
     targetElementRef: N,
     align: "center",
@@ -90,11 +90,11 @@ function A(e) {
           null == i || i(e)
         },
         children: (0, r.jsx)(f.ZP, {
-          className: k,
+          className: j,
           asset: (0, r.jsx)("img", {
             alt: "",
             src: M,
-            className: j
+            className: k
           }),
           buttonCTA: b.intl.string(b.t["+IrDzM"]),
           buttonLayout: f._F.STACKED,

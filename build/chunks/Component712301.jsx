@@ -25,37 +25,37 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function v(e, n) {
-  let t = (0, i.e7)([c.ZP], () => c.ZP.getChannels(n)[c.Zb], [n]),
-    v = (0, i.e7)([p.Z, d.Z], () => {
-      let t = p.Z.getUserVoiceChannelId(n, e.id);
-      return d.Z.getChannel(t)
+  let t = (0, i.e7)([d.ZP], () => d.ZP.getChannels(n)[d.Zb], [n]),
+    v = (0, i.e7)([m.Z, c.Z], () => {
+      let t = m.Z.getUserVoiceChannelId(n, e.id);
+      return c.Z.getChannel(t)
     }, [n, e.id]);
   if ((0, i.e7)([g.ZP], () => g.ZP.isGuestOrLurker(n, e.id), [n, e.id]) || null == v) return null;
   let x = e.id === s.default.getId();
-  if (!x && !f.Z.can(j.Plq.MOVE_MEMBERS, v)) return null;
-  let y = t.filter(n => {
+  if (!x && !b.Z.can(j.Plq.MOVE_MEMBERS, v)) return null;
+  let _ = t.filter(n => {
     let {
       channel: t
     } = n;
-    return t.id !== v.id && (x ? f.Z.can(j.Plq.CONNECT, t) && !(0, m.rY)(t, p.Z, Z.Z) : f.Z.can(j.Plq.MOVE_MEMBERS, t) && (f.Z.can(j.Plq.CONNECT, t) || h.BT({
+    return t.id !== v.id && (x ? b.Z.can(j.Plq.CONNECT, t) && !(0, O.rY)(t, m.Z, Z.Z) : b.Z.can(j.Plq.MOVE_MEMBERS, t) && (b.Z.can(j.Plq.CONNECT, t) || h.BT({
       permission: j.Plq.CONNECT,
       user: e,
       context: t
-    })) && !(0, m.rY)(t, p.Z, Z.Z))
+    })) && !(0, O.rY)(t, m.Z, Z.Z))
   });
-  return 0 === y.length ? null : (0, l.jsx)(r.sNh, {
+  return 0 === _.length ? null : (0, l.jsx)(r.sNh, {
     id: "voice-move",
     label: P.intl.string(P.t.FAplmp),
-    children: y.map(t => {
+    children: _.map(t => {
       let {
         channel: i
       } = t;
       return (0, l.jsx)(r.sNh, {
         id: i.id,
         action: () => {
-          e.id === s.default.getId() ? u.default.selectVoiceChannel(i.id) : a.Z.setChannel(n, e.id, i.id)
+          e.id === s.default.getId() ? o.default.selectVoiceChannel(i.id) : a.Z.setChannel(n, e.id, i.id)
         },
-        label: (0, o.F6)(i, O.default, b.Z)
+        label: (0, u.F6)(i, p.default, f.Z)
       }, i.id)
     })
   })

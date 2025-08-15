@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 173033, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 173033, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => i
 });
@@ -10,9 +9,9 @@ function i(e, t) {
   let n = e.offsetTop,
     i = e.offsetParent;
   for (; null != i;) {
-    var o;
+    var l;
     if (i === t || !(0, r.k)(i, HTMLElement)) break;
-    n += null != (o = i.offsetTop) ? o : 0, i = i.offsetParent
+    n += null != (l = i.offsetTop) ? l : 0, i = i.offsetParent
   }
   return n
 }

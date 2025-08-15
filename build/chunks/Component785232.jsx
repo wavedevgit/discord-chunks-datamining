@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 785232, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 87337 **/
+/** chunk id: 785232, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => o
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -10,45 +9,41 @@ var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk289823 = require("./289823.jsx"),
   Chunk594174 = require("./594174.js");
-
-function l(e, t) {
-  if (null == e) return {};
-  var n, r, i = c(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function c(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-let u = function(e) {
+let o = function(e) {
   var {
     recipients: t,
     size: n,
-    status: c,
-    isTyping: u,
-    className: d
-  } = e, f = l(e, ["recipients", "size", "status", "isTyping", "className"]);
-  let _ = o.ny6[n],
-    p = (0, i.Wu)([s.default], () => t.slice(0, 2).map(e => {
-      let t = s.default.getUser(e);
+    status: o,
+    isTyping: c,
+    className: u
+  } = e, d = function(e, t) {
+    if (null == e) return {};
+    var n, r, s = function(e, t) {
+      if (null == e) return {};
+      var n, r, s = {},
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
+      return s
+    }(e, t);
+    if (Object.getOwnPropertySymbols) {
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
+    }
+    return s
+  }(e, ["recipients", "size", "status", "isTyping", "className"]);
+  let _ = i.ny6[n],
+    A = (0, s.Wu)([l.default], () => t.slice(0, 2).map(e => {
+      let t = l.default.getUser(e);
       if (null != t) return t.getAvatarURL(true, _.size, false)
     }), [t, _.size]);
   return (0, r.jsx)(a.Z, {
-    "aria-label": f["aria-label"],
-    "aria-hidden": f["aria-hidden"],
-    backSrc: p[0],
-    frontSrc: p[1],
+    "aria-label": d["aria-label"],
+    "aria-hidden": d["aria-hidden"],
+    backSrc: A[0],
+    frontSrc: A[1],
     size: n,
-    status: c,
-    isTyping: null != u && u,
-    className: d
+    status: o,
+    isTyping: null != c && c,
+    className: u
   })
 }

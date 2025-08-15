@@ -6,7 +6,7 @@ require.d(exports, {
   MW: () => u,
   Mf: () => c,
   Or: () => i,
-  Wv: () => a,
+  Wv: () => o,
   ko: () => l
 }), require("./35282.js"), require("./73800.js");
 let r = ["gif", "webp", "png", "apng"];
@@ -15,13 +15,13 @@ function i(e) {
   return "type" in e && "image" === e.type && "string" == typeof e.src
 }
 
-function o(e) {
+function a(e) {
   if (!i(e) || null == e.src) returnfalse;
   let t = e.src.toLowerCase().split(".").pop();
   return null != t && r.includes(t)
 }
 
-function a(e) {
+function o(e) {
   return "type" in e && "video" === e.type && "string" == typeof e.src
 }
 
@@ -38,5 +38,5 @@ function c(e) {
 }
 
 function u(e) {
-  return null != e && (o(e) || a(e) || s(e) || l(e))
+  return null != e && (a(e) || o(e) || s(e) || l(e))
 }

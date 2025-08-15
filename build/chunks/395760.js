@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 395760, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 395760, original params: e,t,n (module,exports,require) **/
 module.exports = {
   voiceFilterHero: "voiceFilterHero_cb3698",
   bgGradient: "bgGradient_cb3698",

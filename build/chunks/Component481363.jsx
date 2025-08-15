@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 481363, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 481363, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 }), require("./997841.js");
@@ -22,21 +21,21 @@ function c(e) {
     },
     isFocused: d,
     buttonProps: {
-      message: f,
-      channel: _,
-      groupId: p,
-      compact: h = false
+      message: p,
+      channel: h,
+      groupId: f,
+      compact: m = false
     },
-    messageWindow: m
-  } = e, g = f.state === s.yb.SENDING, E = f.id === p, b = (0, i.yE)(f.flags, s.iLy.EPHEMERAL), y = f.state === s.yb.SEND_FAILED;
-  return g || b && !y ? null : (0, r.jsx)(a.Z, {
-    className: l.buttons,
-    innerClassName: l.buttonsInner,
-    isHeader: !h && E && !(0, o.Z)(f),
-    isReply: !h && f.type === s.uaV.REPLY && null != f.messageReference,
-    channel: _,
-    message: f,
-    messageWindow: m,
+    messageWindow: g
+  } = e, b = p.state === o.yb.SENDING, y = p.id === f, _ = (0, i.yE)(p.flags, o.iLy.EPHEMERAL), C = p.state === o.yb.SEND_FAILED;
+  return b || _ && !C ? null : (0, r.jsx)(a.Z, {
+    className: s.buttons,
+    innerClassName: s.buttonsInner,
+    isHeader: !m && y && !(0, l.Z)(p),
+    isReply: !m && p.type === o.uaV.REPLY && null != p.messageReference,
+    channel: h,
+    message: p,
+    messageWindow: g,
     setPopout: t,
     showEmojiPicker: n,
     showEmojiBurstPicker: c,

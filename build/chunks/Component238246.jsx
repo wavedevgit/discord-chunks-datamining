@@ -46,7 +46,7 @@ var Chunk587061 = require("./587061.js"),
   Chunk501787 = require("./501787.js"),
   Chunk413943 = require("./413943.js");
 
-function V(e, t, n) {
+function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -62,7 +62,7 @@ function H(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      V(e, t, n[t])
+      Z(e, t, n[t])
     })
   }
   return e
@@ -127,12 +127,12 @@ class z extends(r = Chunk73800.Component) {
       guestWindow: t
     } = this.props, n = exports.document, r = false, i = require.head;
     u()(null != Chunk255367, "Window document ".concat(r ? "body" : "head", " was null"));
-    let o = Chunk255367.querySelector("style[".concat(Chunk168551.PQ, "]"));
+    let a = Chunk255367.querySelector("style[".concat(Chunk168551.PQ, "]"));
     if (null != Chunk73800) {
       Chunk73800.textContent = module;
       return
     }
-    let a = require.createElement("style");
+    let o = require.createElement("style");
     Chunk120356.setAttribute(Chunk168551.PQ, "true"), Chunk120356.textContent = module, Chunk255367.appendChild(Chunk120356)
   }
   registerPopoutGlobalKeybinds() {
@@ -153,8 +153,8 @@ class z extends(r = Chunk73800.Component) {
       forcedColors: t,
       children: n,
       windowKey: r,
-      isFullScreen: o,
-      withTitleBar: a,
+      isFullScreen: a,
+      withTitleBar: o,
       guestWindow: c,
       clientThemesClassName: u,
       contentClassName: f,
@@ -201,53 +201,53 @@ class z extends(r = Chunk73800.Component) {
     })
   }
   constructor(...e) {
-    super(...e), V(this, "rootRef", o.createRef()), V(this, "_cleanupWindowActionCreators", true), V(this, "_combokeys", null), V(this, "beforeUnload", e => {
+    super(...e), Z(this, "rootRef", a.createRef()), Z(this, "_cleanupWindowActionCreators", true), Z(this, "_combokeys", null), Z(this, "beforeUnload", e => {
       let {
         onBeforeUnload: t
       } = this.props, n = () => {
-        G.Z.unmountWindow(this.props.windowKey), M.isPlatformEmbedded && k.ZP.close(this.props.windowKey)
+        G.Z.unmountWindow(this.props.windowKey), M.isPlatformEmbedded && j.ZP.close(this.props.windowKey)
       };
       null != t ? t({
         e,
         unmountWindow: n
       }) : n()
-    }), V(this, "handleBlur", () => {
+    }), Z(this, "handleBlur", () => {
       var e, t;
       null == (e = (t = this.props).onBlur) || e.call(t)
     })
   }
 }
-V(z, "defaultProps", {
+Z(z, "defaultProps", {
   withTitleBar: true
 });
 let q = Chunk73800.forwardRef(function(e, t) {
     let {
       guestWindow: n,
       className: r,
-      children: a
+      children: o
     } = e, {
       lang: l,
       style: c,
       className: d
     } = (0, x.vP)();
-    return o.useEffect(() => {
+    return a.useEffect(() => {
       let e = n.document.documentElement;
       u()(null != e, "Window document element was null"), e.setAttribute("style", c)
-    }, [n, c]), o.useEffect(() => {
+    }, [n, c]), a.useEffect(() => {
       let e = n.document.documentElement;
       u()(null != e, "Window document element was null"), e.setAttribute("lang", l)
     }, [n, l]), (0, i.jsx)("div", {
       "data-popout-root": true,
       ref: t,
       className: s()(d, r),
-      children: a
+      children: o
     })
   }),
   X = Chunk73800.forwardRef(function(e, t) {
     let {
       guestWindow: n,
       focused: r,
-      isFullScreen: o
+      isFullScreen: a
     } = (0, _.cj)([G.Z], () => ({
       guestWindow: G.Z.getWindow(e.windowKey),
       focused: G.Z.getWindowFocused(e.windowKey),
@@ -255,7 +255,7 @@ let q = Chunk73800.forwardRef(function(e, t) {
     }));
     u()(null != n, "Missing guestWindow reference");
     let {
-      forcedColors: a,
+      forcedColors: o,
       connectedEmbeddedActivity: s
     } = (0, _.cj)([b.Z, O.ZP], () => ({
       forcedColors: b.Z.useForcedColors ? "yes" : "no",
@@ -276,8 +276,8 @@ let q = Chunk73800.forwardRef(function(e, t) {
         }, e), {
           guestWindow: n,
           focused: r,
-          isFullScreen: o,
-          forcedColors: a,
+          isFullScreen: a,
+          forcedColors: o,
           connectedEmbeddedActivity: s,
           clientThemesClassName: c,
           clientThemesCSS: d

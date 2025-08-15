@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 373662, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 373662, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => O,
-  fO: () => y,
-  sF: () => b
+  ZP: () => b,
+  fO: () => h,
+  sF: () => g
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -17,15 +16,6 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk261334 = require("./261334.js");
 
-function _(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
@@ -33,67 +23,54 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function h(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
 function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function g(e, t) {
   if (null == e) return {};
-  var n, r, i = E(e, t);
+  var n, r, i = function(e, t) {
+    if (null == e) return {};
+    var n, r, i = {},
+      l = Object.keys(e);
+    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    return i
+  }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var l = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
-
-function E(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-let b = Chunk73800.forwardRef(function(e, t) {
+let g = Chunk73800.forwardRef(function(e, t) {
   var {
     label: n,
     ariaLabel: i,
-    tooltipText: o,
-    tooltipColor: _,
+    tooltipText: l,
+    tooltipColor: g,
     icon: h,
-    iconProps: E,
-    onClick: b,
-    onTooltipShow: y,
-    onTooltipHide: O,
-    disabled: v,
-    dangerous: I,
-    separator: T,
-    sparkle: S,
-    showNewBadge: A,
-    buttonClassName: N,
-    children: C
-  } = e, R = g(e, ["label", "ariaLabel", "tooltipText", "tooltipColor", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "sparkle", "showNewBadge", "buttonClassName", "children"]);
+    iconProps: b,
+    onClick: v,
+    onTooltipShow: _,
+    onTooltipHide: y,
+    disabled: O,
+    dangerous: S,
+    separator: I,
+    sparkle: j,
+    showNewBadge: x,
+    buttonClassName: E,
+    children: P
+  } = e, C = m(e, ["label", "ariaLabel", "tooltipText", "tooltipColor", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "sparkle", "showNewBadge", "buttonClassName", "children"]);
   let {
-    canShowReactionsOnMessageHover: P
+    canShowReactionsOnMessageHover: T
   } = u.ZP.useExperiment({
     location: "HoverBarButton"
   }, {
@@ -103,57 +80,67 @@ let b = Chunk73800.forwardRef(function(e, t) {
     location: "HoverBarButton"
   }, {
     autoTrackExposure: true
-  }), (0, r.jsx)(s.ua7, {
-    text: null != o ? o : n,
-    color: null != _ ? _ : s.FGA.PRIMARY,
+  }), (0, r.jsx)(o.ua7, {
+    text: null != l ? l : n,
+    color: null != g ? g : o.FGA.PRIMARY,
     "aria-label": n,
-    onTooltipShow: y,
-    onTooltipHide: O,
+    onTooltipShow: _,
+    onTooltipHide: y,
     hideOnClick: true,
     tooltipClassName: f.tooltip,
     children: e => {
+      var l, u;
       let {
-        onMouseEnter: o,
-        onMouseLeave: u,
+        onMouseEnter: m,
+        onMouseLeave: g,
         onFocus: _,
-        onBlur: g,
-        onClick: y
+        onBlur: y,
+        onClick: N
       } = e;
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsxs)(c.zx, m(p({
+        children: [(0, r.jsxs)(c.zx, (l = p({
           ref: t,
-          className: a()(N, {
-            [f.hoverBarButton]: P
+          className: a()(E, {
+            [f.hoverBarButton]: T
           }),
-          onMouseEnter: o,
-          onMouseLeave: u,
+          onMouseEnter: m,
+          onMouseLeave: g,
           onFocus: _,
-          onBlur: g,
+          onBlur: y,
           onClick: e => {
-            null == y || y(), b(e)
+            null == N || N(), v(e)
           },
           "aria-label": null != i ? i : n,
-          disabled: v,
-          dangerous: I
-        }, R), {
+          disabled: O,
+          dangerous: S
+        }, C), u = u = {
           children: [null != h ? (0, r.jsx)(h, p({
             className: f.icon,
             color: "currentColor"
-          }, E)) : null, null != C ? (0, r.jsx)("div", {
+          }, b)) : null, null != P ? (0, r.jsx)("div", {
             className: a()(f.icon, f.buttonContent),
-            children: C
-          }) : null, S && (0, r.jsx)(s.K1N, {}), A && (0, r.jsx)(s.IGR, {
+            children: P
+          }) : null, j && (0, r.jsx)(o.K1N, {}), x && (0, r.jsx)(o.IGR, {
             text: d.intl.string(d.t.y2b7CA),
-            color: l.Z.BG_BRAND,
+            color: s.Z.BG_BRAND,
             className: f.newBadge
           })]
-        })), T && (0, r.jsx)(c.Z0, {})]
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(u)).forEach(function(e) {
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(u, e))
+        }), l)), I && (0, r.jsx)(c.Z0, {})]
       })
     }
   })
 });
 
-function y(e) {
+function h(e) {
   let {
     className: t
   } = e;
@@ -162,10 +149,10 @@ function y(e) {
   })
 }
 
-function O(e) {
+function b(e) {
   var {
     children: t
-  } = e, n = g(e, ["children"]);
+  } = e, n = m(e, ["children"]);
   let {
     canShowReactionsOnMessageHover: i
   } = u.ZP.useExperiment({

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 512100, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86282 **/
+/** chunk id: 512100, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
-  u: () => u
+  u: () => c
 }), require("./953529.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -11,65 +10,64 @@ var Chunk409794 = require("./409794.jsx"),
   Chunk541822 = require("./541822.jsx"),
   Chunk330711 = require("./330711.js"),
   Chunk163315 = require("./163315.js");
-let c = 96;
 
-function u(e) {
+function c(e) {
   let {
-    benefits: t,
-    description: n,
-    imgSrc: u,
+    benefits: n,
+    description: l,
+    imgSrc: c,
     title: d,
-    tag: f,
-    FallbackIcon: _
-  } = e, p = null != u ? {
-    "--custom-background-url": "url(".concat(u.toString(), ")")
-  } : true, h = null != n && "" !== n;
-  return (0, r.jsx)("div", {
-    className: l.container,
-    children: (0, r.jsx)(a.Z, {
-      className: l.scroller,
-      children: (0, r.jsxs)("div", {
-        className: l.scrollContent,
-        children: [(0, r.jsxs)("div", {
-          className: l.header,
-          children: [(0, r.jsx)("div", {
-            className: l.headerBackground,
-            style: p
-          }), (0, r.jsx)("div", {
-            className: l.headerImage,
-            children: null != u ? (0, r.jsx)("img", {
-              src: u.toString(),
+    tag: u,
+    FallbackIcon: m
+  } = e, x = null != c ? {
+    "--custom-background-url": "url(".concat(c.toString(), ")")
+  } : true;
+  return (0, t.jsx)("div", {
+    className: o.container,
+    children: (0, t.jsx)(s.Z, {
+      className: o.scroller,
+      children: (0, t.jsxs)("div", {
+        className: o.scrollContent,
+        children: [(0, t.jsxs)("div", {
+          className: o.header,
+          children: [(0, t.jsx)("div", {
+            className: o.headerBackground,
+            style: x
+          }), (0, t.jsx)("div", {
+            className: o.headerImage,
+            children: null != c ? (0, t.jsx)("img", {
+              src: c.toString(),
               alt: ""
-            }) : (0, r.jsx)(_, {
+            }) : (0, t.jsx)(m, {
               size: "custom",
               color: "var(--text-muted)",
-              height: c,
-              width: c
+              height: 96,
+              width: 96
             })
           })]
-        }), (0, r.jsxs)("div", {
-          className: l.content,
-          children: [(0, r.jsxs)("div", {
-            className: l.details,
-            children: [null != f && (0, r.jsx)("div", {
-              children: f
-            }), (0, r.jsx)(i.X, {
+        }), (0, t.jsxs)("div", {
+          className: o.content,
+          children: [(0, t.jsxs)("div", {
+            className: o.details,
+            children: [null != u && (0, t.jsx)("div", {
+              children: u
+            }), (0, t.jsx)(r.X, {
               color: "header-primary",
               variant: "heading-xl/semibold",
               children: d
-            }), h && (0, r.jsx)(o.x, {
+            }), null != l && "" !== l && (0, t.jsx)(i.x, {
               color: "text-default",
               variant: "text-md/normal",
-              className: l.description,
-              children: n
+              className: o.description,
+              children: l
             })]
-          }), null != t && (0, r.jsxs)("div", {
-            className: l.benefits,
-            children: [(0, r.jsx)(o.x, {
+          }), null != n && (0, t.jsxs)("div", {
+            className: o.benefits,
+            children: [(0, t.jsx)(i.x, {
               color: "header-secondary",
               variant: "eyebrow",
-              children: s.Z.Messages.STOREFRONT_BENEFITS_TITLE
-            }), t]
+              children: a.Z.Messages.STOREFRONT_BENEFITS_TITLE
+            }), n]
           })]
         })]
       })

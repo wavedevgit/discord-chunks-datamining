@@ -1,31 +1,30 @@
-/** Chunk was on web.js **/
-/** chunk id: 658041, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 42743 **/
+/** chunk id: 658041, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  M: () => s
+  M: () => c
 });
 var Chunk913527 = require("./913527.js"),
-  i = require.n(Chunk913527),
+  r = require.n(Chunk913527),
   Chunk709054 = require("./709054.js"),
   Chunk765305 = require("./765305.js");
 
-function s(e, t, n, r) {
-  let s = i()(),
-    l = new Date(e.scheduled_start_time).getTime(),
-    c = {
-      start: l - a.VF,
-      end: l
+function c(e, t, n, l) {
+  let c = r()(),
+    E = new Date(e.scheduled_start_time).getTime(),
+    d = {
+      start: E - i.VF,
+      end: E
     };
-  if (s.isBetween(c.start, c.end)) {
+  if (c.isBetween(d.start, d.end)) {
     if (null != t) {
-      let e = i()(t),
-        n = e.isBetween(c.start, c.end),
-        o = e.isBetween(i()(l).subtract(a.zV, "days"), l);
-      return n || o && !r ? true : a.X_.EVENT_STARTING_SOON
+      let e = r()(t),
+        n = e.isBetween(d.start, d.end),
+        u = e.isBetween(r()(E).subtract(i.zV, "days"), E);
+      return n || u && !l ? true : i.X_.EVENT_STARTING_SOON
     }
-    return a.X_.EVENT_STARTING_SOON
+    return i.X_.EVENT_STARTING_SOON
   }
-  let u = o.default.extractTimestamp(e.id),
-    d = Math.min((null != n ? n : u) + a.Fc, l);
-  if (s.isBetween(u, d) && null == t && !r) return a.X_.NEW_EVENT
+  let o = u.default.extractTimestamp(e.id),
+    s = Math.min((null != n ? n : o) + i.Fc, E);
+  if (c.isBetween(o, s) && null == t && !l) return i.X_.NEW_EVENT
 }

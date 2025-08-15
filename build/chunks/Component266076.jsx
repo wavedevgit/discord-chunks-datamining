@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 266076, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86590 **/
+/** chunk id: 266076, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => o
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -10,57 +9,51 @@ var Chunk255367 = require("./255367.js"),
   Chunk43267 = require("./43267.js"),
   Chunk93687 = require("./93687.js"),
   Chunk785232 = require("./785232.jsx");
-
-function c(e, t) {
-  if (null == e) return {};
-  var n, r, i = u(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function u(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-
-function d(e) {
+let o = Chunk73800.memo(function(e) {
   var {
     channel: t,
     size: n,
-    facepileSizeOverride: i,
-    experimentLocation: u,
-    isTyping: d,
-    status: f,
-    className: _,
-    animated: p = false
-  } = e, h = c(e, ["channel", "size", "facepileSizeOverride", "experimentLocation", "isTyping", "status", "className", "animated"]);
+    facepileSizeOverride: r,
+    experimentLocation: o,
+    isTyping: u,
+    status: d,
+    className: f,
+    animated: E = false
+  } = e, I = function(e, t) {
+    if (null == e) return {};
+    var n, i, r = function(e, t) {
+      if (null == e) return {};
+      var n, i, r = {},
+        a = Object.keys(e);
+      for (i = 0; i < a.length; i++) n = a[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      return r
+    }(e, t);
+    if (Object.getOwnPropertySymbols) {
+      var a = Object.getOwnPropertySymbols(e);
+      for (i = 0; i < a.length; i++) n = a[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+    }
+    return r
+  }(e, ["channel", "size", "facepileSizeOverride", "experimentLocation", "isTyping", "status", "className", "animated"]);
   let {
-    isFacepileEnabled: m
+    isFacepileEnabled: p
   } = s.Z.useExperiment({
-    location: u
+    location: o
   }, {
     autoTrackExposure: true
   });
-  return t.recipients.length >= 2 && m && null == t.icon ? (0, r.jsx)(l.Z, {
-    "aria-label": h["aria-label"],
-    "aria-hidden": h["aria-hidden"],
-    className: _,
+  return t.recipients.length >= 2 && p && null == t.icon ? (0, i.jsx)(c.Z, {
+    "aria-label": I["aria-label"],
+    "aria-hidden": I["aria-hidden"],
+    className: f,
     recipients: t.recipients,
-    size: null != i ? i : n,
-    isTyping: d,
-    status: f
-  }) : (0, r.jsx)(o.qEK, {
-    "aria-hidden": h["aria-hidden"],
-    "aria-label": h["aria-label"],
-    className: _,
+    size: null != r ? r : n,
+    isTyping: u,
+    status: d
+  }) : (0, i.jsx)(a.qEK, {
+    "aria-hidden": I["aria-hidden"],
+    "aria-label": I["aria-label"],
+    className: f,
     size: n,
-    src: (0, a.x)(t, 80, p)
+    src: (0, l.x)(t, 80, E)
   })
-}
-let f = Chunk73800.memo(d)
+})

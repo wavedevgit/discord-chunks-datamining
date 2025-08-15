@@ -2,13 +2,13 @@
 /** chunk id: 779618, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk358085 = require("./358085.js"),
   Chunk924557 = require("./924557.js"),
   Chunk65154 = require("./65154.js");
 
-function a(e) {
+function o(e) {
   let {
     ignorePlatformRestriction: t
   } = i.NV.getCurrentConfig({
@@ -16,5 +16,5 @@ function a(e) {
   }, {
     autoTrackExposure: false
   });
-  return t || r.isDesktop() && e.getMediaEngine().supports(o.AN.CLIPS)
+  return t || r.isDesktop() && e.getMediaEngine().supports(a.AN.CLIPS)
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk911969 = require("./911969.js"),
   Chunk367907 = require("./367907.js"),
   Chunk998698 = require("./998698.js"),
@@ -37,18 +37,18 @@ var Chunk255367 = require("./255367.js"),
 let L = Chunk73800.forwardRef(function(e, t) {
   let {
     value: n,
-    type: o,
+    type: a,
     channel: L,
     className: x,
     id: M,
-    disabled: j,
-    submitting: k,
+    disabled: k,
+    submitting: j,
     placeholder: U,
     required: G,
     textAreaPaddingClassName: B,
-    onChange: Z,
+    onChange: V,
     onPaste: F,
-    onResize: V,
+    onResize: Z,
     onFocus: H,
     onBlur: Y,
     onKeyDown: W,
@@ -64,8 +64,8 @@ let L = Chunk73800.forwardRef(function(e, t) {
     canOnlyUseTextCommands: en,
     disableAutoFocus: er,
     disableEnterToSubmit: ei,
-    allowNewLines: eo,
-    "aria-owns": ea,
+    allowNewLines: ea,
+    "aria-owns": eo,
     "aria-expanded": es,
     "aria-haspopup": el,
     "aria-activedescendant": ec,
@@ -74,34 +74,34 @@ let L = Chunk73800.forwardRef(function(e, t) {
     "aria-describedby": ef,
     "aria-labelledby": e_,
     "aria-autocomplete": ep
-  } = e, eh = i.useRef(null), em = i.useRef(null), eg = i.useRef(true), eE = i.useRef(true), eb = j || k, ey = i.useCallback((e, t, n) => {
+  } = e, eh = i.useRef(null), em = i.useRef(null), eg = i.useRef(true), eE = i.useRef(true), eb = k || j, ey = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
-      selection: o
-    } = n, a = b.bN.richValue(e), s = e.selection, l = false;
-    if (true !== i && i !== a) {
+      selection: a
+    } = n, o = b.bN.richValue(e), s = e.selection, l = false;
+    if (true !== i && i !== o) {
       if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === _.Ie.EDIT) {
         try {
           e.previewMarkdown = true, (0, N.KH)(e, L.guild_id, L.id)
         } finally {
           e.previewMarkdown = false
-        }(0, N.KH)(e, L.guild_id, L.id), o = true
+        }(0, N.KH)(e, L.guild_id, L.id), a = true
       }
-      "undo" !== t && true !== i && i !== a && h.T.insertEntry(e, "other", false, a, s), l = true
+      "undo" !== t && true !== i && i !== o && h.T.insertEntry(e, "other", false, o, s), l = true
     }
-    if (null == o || b.Ew.isValid(e, o) || (o = true), (l || !b.Ew.isValid(e, s)) && true === o) {
+    if (null == a || b.Ew.isValid(e, a) || (a = true), (l || !b.Ew.isValid(e, s)) && true === a) {
       let t = b.bN.end(e, []);
-      o = {
+      a = {
         anchor: t,
         focus: t
       }
     }
-    let u = null != o && !b.Ew.equals(o, s);
-    if (l && !er && b.bN.focus(e), null != o && u) {
-      e.selection = o;
+    let u = null != a && !b.Ew.equals(a, s);
+    if (l && !er && b.bN.focus(e), null != a && u) {
+      e.selection = a;
       let t = h.T.currentEntry(e);
-      null != t && (t.selection = o), l = true
+      null != t && (t.selection = a), l = true
     }
     let d = p.cr(e);
     if (null != d && d[0].command.id !== (null == (r = c.Z.getActiveCommand(L.id)) ? true : r.id) && h.T.withMergedEntry(e, () => {
@@ -118,7 +118,7 @@ let L = Chunk73800.forwardRef(function(e, t) {
     eg.current = true
   }, []), eI = (0, O.Z)({
     channel: L,
-    chatInputType: o,
+    chatInputType: a,
     canUseCommands: et,
     canOnlyUseTextCommands: en,
     onChangeStart: eO,
@@ -136,14 +136,14 @@ let L = Chunk73800.forwardRef(function(e, t) {
     if (null != t && null != t.options) {
       let i = eT(t, false);
       e = i.values;
-      let o = p.cu(eI).filter(e => !i.results[e].success).map(e => {
+      let a = p.cu(eI).filter(e => !i.results[e].success).map(e => {
         var n;
         return (null != (n = t.options) ? n : []).find(t => t.name === e)
       });
-      for (let e of t.options) !e.required || e.name in i.values || (E.Q.insertCommandOption(eI, e), o.push(e));
-      if (o.length > 0) {
+      for (let e of t.options) !e.required || e.name in i.values || (E.Q.insertCommandOption(eI, e), a.push(e));
+      if (a.length > 0) {
         var n, r;
-        let e = o[0];
+        let e = a[0];
         E.Q.selectCommandOption(eI, e.name), f.S.dispatch(w.CkL.SHAKE_APP, {
           duration: 200,
           intensity: 2
@@ -161,7 +161,7 @@ let L = Chunk73800.forwardRef(function(e, t) {
       ignoreTrailingEmptyNodes: true
     }), t, e)
   }, [L.id, eI, X, eT, et]);
-  (0, v.Z)(t, eI, L, eS), (0, S.Z)(eI, eh, V);
+  (0, v.Z)(t, eI, L, eS), (0, S.Z)(eI, eh, Z);
   let {
     handleKeyDown: eA,
     handleKeyUp: eN
@@ -173,7 +173,7 @@ let L = Chunk73800.forwardRef(function(e, t) {
     onKeyUp: K,
     onTab: z,
     onEnter: q,
-    allowNewLines: eo,
+    allowNewLines: ea,
     submit: eS,
     hideAutocomplete: J,
     moveSelection: $
@@ -183,10 +183,10 @@ let L = Chunk73800.forwardRef(function(e, t) {
   } = (0, T.Z)(eI, eb, F), eP = i.useCallback(e => {
     null == Q || Q()
   }, [Q]), ew = i.useCallback(e => {
-    e !== em.current ? eE.current && (null == Z || Z(null, (0, g.sk)(e, {
+    e !== em.current ? eE.current && (null == V || V(null, (0, g.sk)(e, {
       mode: "raw"
     }), e)) : eE.current && Q()
-  }, [Q, Z]);
+  }, [Q, V]);
   i.useLayoutEffect(() => {
     eg.current && (em.current = n, ey(eI, "parent", {
       value: n
@@ -211,18 +211,18 @@ let L = Chunk73800.forwardRef(function(e, t) {
       handler: eR
     }), (0, r.jsx)("div", {
       ref: eh,
-      className: a()(x, D.slateContainer),
+      className: o()(x, D.slateContainer),
       children: (0, r.jsx)(m.Z, {
         id: M,
         editor: eI,
         channelId: L.id,
         guildId: L.guild_id,
-        className: a()(D.slateTextArea, B),
+        className: o()(D.slateTextArea, B),
         placeholder: U,
         readOnly: eb,
         spellCheck: ee,
         autoFocus: !er,
-        canFocus: !j,
+        canFocus: !k,
         onChange: ew,
         onFocus: H,
         onBlur: Y,
@@ -233,7 +233,7 @@ let L = Chunk73800.forwardRef(function(e, t) {
         decorateExtra: eD,
         renderExtraElement: eL,
         renderExtraLeaf: ex,
-        "aria-owns": ea,
+        "aria-owns": eo,
         "aria-haspopup": el,
         "aria-expanded": es,
         "aria-activedescendant": ec,

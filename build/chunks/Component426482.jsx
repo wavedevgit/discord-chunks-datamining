@@ -2,7 +2,7 @@
 /** chunk id: 426482, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   C: () => m,
-  Z: () => u
+  Z: () => d
 }), require("./388685.js");
 var n, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -11,7 +11,7 @@ var n, Chunk255367 = require("./255367.js"),
   Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk451697 = require("./451697.js"),
-  u = ((n = {})[n.SMALL = 0] = "SMALL", n[n.LARGE = 1] = "LARGE", n);
+  d = ((n = {})[n.SMALL = 0] = "SMALL", n[n.LARGE = 1] = "LARGE", n);
 
 function m(e) {
   var t;
@@ -19,35 +19,35 @@ function m(e) {
     game: r,
     application: n,
     size: l,
-    className: u
-  } = e, [m, g] = i.useState(false), p = null != (t = null == n ? true : n.name) ? t : r.name, f = null != r.firstReleaseDate ? new Date(r.firstReleaseDate) : null;
+    className: d
+  } = e, [m, f] = i.useState(false), g = null != (t = null == n ? true : n.name) ? t : r.name, p = null != r.firstReleaseDate ? new Date(r.firstReleaseDate) : null;
   return null == r.coverImageUrl || m ? (0, a.jsxs)("div", {
-    className: o()(d.fallback, u),
+    className: o()(u.fallback, d),
     children: [(0, a.jsx)("div", {
-      className: d.spacer
+      className: u.spacer
     }), (0, a.jsx)(s.xv, {
       variant: 1 === l ? "text-md/medium" : "text-xs/medium",
       color: "always-white",
       lineClamp: 1 === l ? 4 : 3,
-      children: p
+      children: g
     }), (0, a.jsx)("div", {
-      className: d.spacer
+      className: u.spacer
     }), (0, a.jsx)(s.xv, {
       variant: 1 === l ? "text-sm/normal" : "text-xxs/normal",
       color: "always-white",
-      children: null != f ? "(".concat(null == f ? true : f.getFullYear(), ")") : null
+      children: null != p ? "(".concat(null == p ? true : p.getFullYear(), ")") : null
     })]
   }) : (0, a.jsx)("img", {
-    className: u,
+    className: d,
     src: r.coverImageUrl,
     alt: c.intl.formatToPlainString(c.t["3ev90d"], {
-      game: p
+      game: g
     }),
     onError: () => {
-      g(true)
+      f(true)
     },
     onLoad: () => {
-      g(false)
+      f(false)
     }
   })
 }

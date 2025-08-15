@@ -1,62 +1,62 @@
-/** Chunk was on web.js **/
-/** chunk id: 108267, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 108267, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk39472 = require("./39472.js"),
   Chunk38465 = require("./38465.js"),
   Chunk581079 = require("./581079.js");
 
-function a(e, t, n, a, s, l, c) {
-  var u = n.getStartOffset(),
-    d = n.getEndOffset(),
-    f = e.__get(s).getMutability(),
-    _ = c ? u : d;
-  if ("MUTABLE" === f) return n;
-  var p = i(t, s).filter(function(e) {
-    return _ <= e.end && _ >= e.start
+function a(t, e, r, a, u, s, c) {
+  var l = r.getStartOffset(),
+    f = r.getEndOffset(),
+    p = t.__get(u).getMutability(),
+    h = c ? l : f;
+  if ("MUTABLE" === p) return r;
+  var d = i(e, u).filter(function(t) {
+    return h <= t.end && h >= t.start
   });
-  1 != p.length && o(false);
-  var h = p[0];
-  if ("IMMUTABLE" === f) return n.merge({
-    anchorOffset: h.start,
-    focusOffset: h.end,
+  1 != d.length && o(false);
+  var g = d[0];
+  if ("IMMUTABLE" === p) return r.merge({
+    anchorOffset: g.start,
+    focusOffset: g.end,
     isBackward: false
   });
-  l || (c ? d = h.end : u = h.start);
-  var m = r.getRemovalRange(u, d, t.getText().slice(h.start, h.end), h.start, a);
-  return n.merge({
-    anchorOffset: m.start,
-    focusOffset: m.end,
+  s || (c ? f = g.end : l = g.start);
+  var y = n.getRemovalRange(l, f, e.getText().slice(g.start, g.end), g.start, a);
+  return r.merge({
+    anchorOffset: y.start,
+    focusOffset: y.end,
     isBackward: false
   })
 }
-module.exports = function(e, t, n, r, i) {
-  var o = r.getStartOffset(),
-    s = r.getEndOffset(),
-    l = t.getEntityAt(o),
-    c = n.getEntityAt(s - 1);
-  if (!l && !c) return r;
-  var u = r;
-  if (l && l === c) u = a(e, t, u, i, l, true, true);
-  else if (l && c) {
-    var d = a(e, t, u, i, l, false, true),
-      f = a(e, n, u, i, c, false, false);
-    u = u.merge({
-      anchorOffset: d.getAnchorOffset(),
-      focusOffset: f.getFocusOffset(),
+module.exports = function(t, e, r, n, i) {
+  var o = n.getStartOffset(),
+    u = n.getEndOffset(),
+    s = e.getEntityAt(o),
+    c = r.getEntityAt(u - 1);
+  if (!s && !c) return n;
+  var l = n;
+  if (s && s === c) l = a(t, e, l, i, s, true, true);
+  else if (s && c) {
+    var f = a(t, e, l, i, s, false, true),
+      p = a(t, r, l, i, c, false, false);
+    l = l.merge({
+      anchorOffset: f.getAnchorOffset(),
+      focusOffset: p.getFocusOffset(),
       isBackward: false
     })
-  } else if (l) {
-    var _ = a(e, t, u, i, l, false, true);
-    u = u.merge({
-      anchorOffset: _.getStartOffset(),
+  } else if (s) {
+    var h = a(t, e, l, i, s, false, true);
+    l = l.merge({
+      anchorOffset: h.getStartOffset(),
       isBackward: false
     })
   } else if (c) {
-    var p = a(e, n, u, i, c, false, false);
-    u = u.merge({
-      focusOffset: p.getEndOffset(),
+    var d = a(t, r, l, i, c, false, false);
+    l = l.merge({
+      focusOffset: d.getEndOffset(),
       isBackward: false
     })
   }
-  return u
+  return l
 }

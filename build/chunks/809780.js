@@ -1,7 +1,7 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 809780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  As: () => H,
+  As: () => F,
   ZP: () => $,
   hC: () => W,
   jd: () => z
@@ -65,7 +65,7 @@ function V(e) {
   return e
 }
 
-function F(e, t) {
+function H(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -77,7 +77,7 @@ function F(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var H = ((r = {})[r.Favorite = 0] = "Favorite", r[r.PrivateChannel = 1] = "PrivateChannel", r[r.HighImportanceMentioned = 2] = "HighImportanceMentioned", r[r.LowImportanceMentioned = 3] = "LowImportanceMentioned", r[r.AllMessagesNotifications = 4] = "AllMessagesNotifications", r[r.GuildChannel = 5] = "GuildChannel", r[r.OldChannel = 6] = "OldChannel", r[r.NoNotifications = 7] = "NoNotifications", r[r.ReallyOldChannel = 8] = "ReallyOldChannel", r),
+var F = ((r = {})[r.Favorite = 0] = "Favorite", r[r.PrivateChannel = 1] = "PrivateChannel", r[r.HighImportanceMentioned = 2] = "HighImportanceMentioned", r[r.LowImportanceMentioned = 3] = "LowImportanceMentioned", r[r.AllMessagesNotifications = 4] = "AllMessagesNotifications", r[r.GuildChannel = 5] = "GuildChannel", r[r.OldChannel = 6] = "OldChannel", r[r.NoNotifications = 7] = "NoNotifications", r[r.ReallyOldChannel = 8] = "ReallyOldChannel", r),
   z = ((i = {}).Loading = "loading", i.Loaded = "loaded", i.Done = "done", i);
 let W = 25;
 class K extends Chunk836560.EventEmitter {
@@ -91,7 +91,7 @@ class K extends Chunk836560.EventEmitter {
       r = exports.map(e => {
         if (e.isFullyLoaded || e.deleted || n) return e;
         if (e.collapsed)
-          if (!e.hasLoadedAnything) return F(V({}, e), {
+          if (!e.hasLoadedAnything) return H(V({}, e), {
             hasLoadedAnything: true
           });
           else return e;
@@ -104,13 +104,13 @@ class K extends Chunk836560.EventEmitter {
   }
   populateInitialStateFromStore(e) {
     if ("messages" === e.type) return Y(e, false);
-    if ("nsfw" === e.type) return F(V({}, e), {
+    if ("nsfw" === e.type) return H(V({}, e), {
       isFullyLoaded: true,
       hasLoadedAnything: true
     });
     if ("forum" === e.type) {
       let t = v.Z.hasLoaded(e.guildId);
-      return F(V({}, e), {
+      return H(V({}, e), {
         isFullyLoaded: t,
         hasLoadedAnything: true
       })
@@ -139,7 +139,7 @@ class K extends Chunk836560.EventEmitter {
         channels: this.updateChannel(e.channelId, e => {
           s()("messages" === e.type, "channel cannot change type");
           let n = Y(e, true);
-          return (0 === n.messages.length || n.messages.length === e.messages.length) && (n = F(V({}, n), {
+          return (0 === n.messages.length || n.messages.length === e.messages.length) && (n = H(V({}, n), {
             hasLoadedAnything: true,
             isFullyLoaded: true,
             hasError: !t
@@ -151,7 +151,7 @@ class K extends Chunk836560.EventEmitter {
         loadState: "loaded",
         channels: this.updateChannel(e.channelId, e => {
           var t;
-          return s()("messages" === e.type, "channel cannot change type"), F(V({}, Y(e, true)), {
+          return s()("messages" === e.type, "channel cannot change type"), H(V({}, Y(e, true)), {
             isFullyLoaded: true,
             hasError: true,
             hasLoadedAnything: true,
@@ -193,7 +193,7 @@ class K extends Chunk836560.EventEmitter {
       let r = this.state.channels.find(e => e.channelId === t);
       if (null != r && this.undoStack.push(r), 1 === this.state.channels.length) return void this.deleteChannel(t);
       this.setState({
-        channels: this.updateChannel(t, e => F(V({}, e), {
+        channels: this.updateChannel(t, e => H(V({}, e), {
           deleted: true
         }))
       }), h.Z.useReducedMotion && this.deleteChannel(t), this.maybeLoadMore()
@@ -213,7 +213,7 @@ class K extends Chunk836560.EventEmitter {
         channels: n
       })
     }, this.markGuildRead = e => {
-      d.Z.wait(() => (0, O.Z)([e], U.jXE.INBOX)), this.setState({
+      d.Z.wait(() => (0, _.Z)([e], U.jXE.INBOX)), this.setState({
         channels: this.state.channels.filter(t => t.guildId !== e)
       }), this.maybeLoadMore()
     }, this.deleteChannel = e => {
@@ -243,7 +243,7 @@ class K extends Chunk836560.EventEmitter {
         scrollToChannelIndex: o,
         collapsedChannels: i,
         loadState: "done" !== l || s || a.isFullyLoaded ? l : "loaded",
-        channels: this.updateChannel(t, e => F(V({}, e), {
+        channels: this.updateChannel(t, e => H(V({}, e), {
           collapsed: s
         }))
       }), a.collapsed ? a.isFullyLoaded || this.loadMore() : this.maybeLoadMore()
@@ -263,7 +263,7 @@ class K extends Chunk836560.EventEmitter {
         {
           if (!e.hasLoadedAnything) return e;
           let t = v.Z.hasLoaded(e.guildId);
-          return F(V({}, e), {
+          return H(V({}, e), {
             isFullyLoaded: t,
             hasLoadedAnything: true
           })
@@ -286,7 +286,7 @@ function Y(e, t) {
   let o = null != i.getAfter(e.oldestReadMessageId) || (null == (n = l[0]) ? true : n.id) === e.oldestUnreadMessageId,
     a = l[l.length - 1],
     s = k.default.compare(null == a ? true : a.id, e.newestUnreadMessageId) >= 0 || l.length >= W;
-  return F(V({}, e), {
+  return H(V({}, e), {
     messages: l,
     hasLoadedAnything: e.hasLoadedAnything || o || t,
     hasLoadedFirst: e.hasLoadedFirst || o || t,
@@ -308,9 +308,9 @@ function q() {
     }(),
     t = function(e) {
       let t = [];
-      return P.Z.getSortedPrivateChannels().forEach(n => X(e, t, null, n.id)), R.ZP.getFlattenedGuildIds().forEach(n => {
+      return I.Z.getSortedPrivateChannels().forEach(n => X(e, t, null, n.id)), R.ZP.getFlattenedGuildIds().forEach(n => {
         if (null == n) return;
-        let r = I.ZP.getSelectableChannelIds(n),
+        let r = P.ZP.getSelectableChannelIds(n),
           i = y.Z.getActiveJoinedUnreadThreadsForGuild(n);
         r.forEach(r => {
           var l;
@@ -334,11 +334,11 @@ function q() {
 
 function X(e, t, n, r) {
   if (null == r) return;
-  let i = P.Z.getChannel(r);
+  let i = I.Z.getChannel(r);
   if (null == i || !S.Ec.has(i.type) && D.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
   if (i.isPrivate()) {
     if (0 === A.ZP.getMentionCount(r)) return
-  } else if (!(0, _.d)(i) && 0 === A.ZP.getMentionCount(r)) return;
+  } else if (!(0, O.d)(i) && 0 === A.ZP.getMentionCount(r)) return;
   if (!i.isPrivate() && !T.Z.can(U.Plq.READ_MESSAGE_HISTORY, i) || (0, m.aC)(i) && (0, g.sf)()) return;
   let l = A.ZP.ackMessageId(r);
   if (null == l) {
@@ -365,7 +365,7 @@ function X(e, t, n, r) {
     hasMentionsOrUnreads: c,
     mentionCount: s,
     sortOrder: function(e, t, n) {
-      let r = P.Z.getChannel(t);
+      let r = I.Z.getChannel(t);
       if (b.Z.isFavorite(t)) return 0;
       if (r.isPrivate()) return 1;
       if (A.ZP.getMentionCount(t) > 0) return A.ZP.getIsMentionLowImportance(t) ? 3 : 2;
@@ -385,11 +385,11 @@ function X(e, t, n, r) {
     }(n, r, a),
     order: 0
   };
-  (0, m.aC)(i) && !N.Z.didAgree(i.guild_id) ? t.push(F(V({}, u), {
+  (0, m.aC)(i) && !N.Z.didAgree(i.guild_id) ? t.push(H(V({}, u), {
     type: "nsfw"
-  })) : i.isForumLikeChannel() ? t.push(F(V({}, u), {
+  })) : i.isForumLikeChannel() ? t.push(H(V({}, u), {
     type: "forum"
-  })) : t.push(F(V({}, u), {
+  })) : t.push(H(V({}, u), {
     type: "messages",
     messages: []
   }))

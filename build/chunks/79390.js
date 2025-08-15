@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   D$: () => P,
-  N4: () => j,
+  N4: () => k,
   UI: () => R,
   Uu: () => S,
   cS: () => w,
-  cZ: () => k,
+  cZ: () => j,
   e1: () => B,
   eQ: () => C,
   fw: () => N,
@@ -125,7 +125,7 @@ function x(e) {
   let n = null == e || null == (t = e.answers) ? true : t.map((e, t) => {
       var n, r;
       let i = null == (n = e.poll_media) ? true : n.emoji,
-        o = T(v({}, e.poll_media), {
+        a = T(v({}, e.poll_media), {
           emoji: null != i ? {
             id: i.id,
             name: null != (r = i.name) ? r : ""
@@ -133,7 +133,7 @@ function x(e) {
         });
       return T(v({}, e), {
         answer_id: t + 1,
-        poll_media: o
+        poll_media: a
       })
     }),
     r = (null == e ? true : e.duration) != null ? L(e.duration) : "0";
@@ -144,12 +144,12 @@ function x(e) {
 }
 
 function M(e, t) {
-  var n, r, i, o;
-  let s = null != (o = null == (i = e.embeds[0]) || null == (r = i.fields) || null == (n = r.find(e => "poll_question_text" === e.rawName)) ? true : n.rawValue) ? o : "";
-  return null != t ? (0, a.aF)(s, t) : s
+  var n, r, i, a;
+  let s = null != (a = null == (i = e.embeds[0]) || null == (r = i.fields) || null == (n = r.find(e => "poll_question_text" === e.rawName)) ? true : n.rawValue) ? a : "";
+  return null != t ? (0, o.aF)(s, t) : s
 }
 
-function j(e) {
+function k(e) {
   let t = (0, u.ZH)(e),
     n = M(e, E.Dv);
   return y.intl.format(y.t.Vn97KS, {
@@ -158,7 +158,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   return e.reduce((e, t) => {
     var n, r;
     return e + (null != (r = null == (n = t.count_details) ? true : n.vote) ? r : 0)
@@ -172,11 +172,11 @@ function U(e, t) {
       name: "",
       animated: false
     },
-    o = e.getChannelId(),
-    a = f.Z.getReactions(o, e.id, r, E.$J, c.O.VOTE),
-    s = d.Z.getChannel(o),
+    a = e.getChannelId(),
+    o = f.Z.getReactions(a, e.id, r, E.$J, c.O.VOTE),
+    s = d.Z.getChannel(a),
     l = null == s || s.isPrivate() ? null : s.getGuildId();
-  return i()(Array.from(null != (n = null == a ? true : a.values()) ? n : [])).reject(e => h.Z.isBlockedOrIgnored(e.id)).take(E.$J).map(e => g.ZP.getName(l, null == s ? true : s.id, e)).value()
+  return i()(Array.from(null != (n = null == o ? true : o.values()) ? n : [])).reject(e => h.Z.isBlockedOrIgnored(e.id)).take(E.$J).map(e => g.ZP.getName(l, null == s ? true : s.id, e)).value()
 }
 
 function G(e, t) {
@@ -213,14 +213,14 @@ function G(e, t) {
 
 function B(e, t, n) {
   var r, i;
-  let o = _.Z.getMessage(t, e);
-  if (null == o) return "";
-  let a = o.getReaction({
+  let a = _.Z.getMessage(t, e);
+  if (null == a) return "";
+  let o = a.getReaction({
       id: n,
       name: "",
       animated: false
     }),
-    s = null != (i = null == a || null == (r = a.count_details) ? true : r.vote) ? i : 0,
-    l = U(o, n);
+    s = null != (i = null == o || null == (r = o.count_details) ? true : r.vote) ? i : 0,
+    l = U(a, n);
   return 0 === l.length ? "" : G(l, s)
 }

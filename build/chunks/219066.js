@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 219066, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 219066, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  r = require.n(Chunk392711),
   Chunk911969 = require("./911969.js"),
   Chunk254711 = require("./254711.js"),
   Chunk213459 = require("./213459.js"),
@@ -14,13 +13,13 @@ var Chunk73800 = require("./73800.js"),
   Chunk148958 = require("./148958.js"),
   Chunk689079 = require("./689079.js");
 
-function f(e) {
+function p(e) {
   var t;
   let {
     context: n
-  } = e, i = "channel" === n.type ? n.channel : true, f = (0, l.LD)(null == i ? true : i.guild_id, true), {
-    commandsByActiveSection: _,
-    loading: p
+  } = e, i = "channel" === n.type ? n.channel : true, p = (0, s.LD)(null == i ? true : i.guild_id, true), {
+    commandsByActiveSection: m,
+    loading: f
   } = c.wi({
     context: n,
     filters: {
@@ -32,30 +31,30 @@ function f(e) {
       includeFrecency: true
     },
     allowFetch: true
-  }), h = r.useMemo(() => _.reduce((e, t) => {
+  }), h = l.useMemo(() => m.reduce((e, t) => {
     let {
       section: n,
-      data: r
+      data: l
     } = t;
-    return r.length > 0 && e.add(n.id), e
-  }, new Set), [_]), m = r.useMemo(() => {
+    return l.length > 0 && e.add(n.id), e
+  }, new Set), [m]), v = l.useMemo(() => {
     var e, t;
-    return Object.values(null != (t = null == (e = f.result) ? true : e.sections) ? t : {}).map(e => {
+    return Object.values(null != (t = null == (e = p.result) ? true : e.sections) ? t : {}).map(e => {
       let {
         descriptor: t
       } = e;
       return t
-    }).filter(e => !(e.id in s.Tm) && h.has(e.id))
-  }, [null == (t = f.result) ? true : t.sections, h]), g = (0, u.h)(m);
+    }).filter(e => !(e.id in o.Tm) && h.has(e.id))
+  }, [null == (t = p.result) ? true : t.sections, h]), y = (0, u.h)(v);
   return {
-    appsInThisServer: r.useMemo(() => o().compact(g.map(e => {
+    appsInThisServer: l.useMemo(() => r().compact(y.map(e => {
       let {
         application: t
       } = e;
       return t
     })).map(e => ({
       application: e
-    })), [g]),
-    isLoading: f.fetchState.fetching || p
+    })), [y]),
+    isLoading: p.fetchState.fetching || f
   }
 }

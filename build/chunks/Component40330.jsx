@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk112456 = require("./112456.js"),
   s = require.n(Chunk112456),
   Chunk481060 = require("./481060.js"),
@@ -18,10 +18,10 @@ var Chunk120356 = require("./120356.js"),
 let f = e => {
     let {
       filename: t
-    } = e, i = (0, c.uV)(t), o = n(148660)("./icon-file-".concat(i, ".svg"));
+    } = e, i = (0, c.uV)(t), a = n(148660)("./icon-file-".concat(i, ".svg"));
     return (0, r.jsx)("img", {
       className: d.icon,
-      src: o,
+      src: a,
       alt: u.intl.formatToPlainString(u.t.g6KdFh, {
         fileType: i
       }),
@@ -33,8 +33,8 @@ let f = e => {
       filename: t,
       size: n,
       progress: i,
-      onCancelUpload: o,
-      onClick: a,
+      onCancelUpload: a,
+      onClick: o,
       onContextMenu: c
     } = e, _ = 100 === i, p = !_ && n > 0;
     return (0, r.jsx)("div", {
@@ -49,7 +49,7 @@ let f = e => {
             className: d.filenameWrapper,
             children: [(0, r.jsx)(l.P3F, {
               className: d.filename,
-              onClick: a,
+              onClick: o,
               onContextMenu: c,
               children: t
             }), p ? (0, r.jsx)("div", {
@@ -64,7 +64,7 @@ let f = e => {
             })
           })]
         }), _ ? null : (0, r.jsx)(l.P3F, {
-          onClick: o,
+          onClick: a,
           children: (0, r.jsx)(l.Dio, {
             size: "md",
             color: "currentColor",
@@ -79,13 +79,13 @@ let f = e => {
       className: t,
       url: n,
       fileName: i,
-      fileSize: a,
+      fileSize: o,
       onClick: c,
       onContextMenu: u,
       renderAdjacentContent: _
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(d.fileWrapper, t),
+      className: a()(d.fileWrapper, t),
       children: [(0, r.jsxs)("div", {
         className: d.file,
         children: [(0, r.jsx)(f, {
@@ -104,7 +104,7 @@ let f = e => {
           }), (0, r.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: s().filesize(a)
+            children: s().filesize(o)
           })]
         })]
       }), null != _ && _()]

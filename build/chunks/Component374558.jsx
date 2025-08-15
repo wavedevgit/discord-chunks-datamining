@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk1561 = require("./1561.jsx"),
   Chunk981729 = require("./981729.jsx"),
   Chunk94321 = require("./94321.js");
@@ -57,8 +57,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -66,8 +66,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let m = {
@@ -84,7 +84,7 @@ let m = {
     let {
       className: n,
       tooltip: i,
-      color: o,
+      color: a,
       size: u = g.SIZE_32,
       icon: f,
       onMouseDown: h,
@@ -103,7 +103,7 @@ let m = {
           innerRef: t,
           "aria-label": i,
           "aria-disabled": E,
-          className: a()(n, c.button, o, u, {
+          className: o()(n, c.button, a, u, {
             [c.disabled]: E
           }),
           onMouseDown: h,

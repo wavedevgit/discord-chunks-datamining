@@ -54,11 +54,11 @@ function _(e) {
   if (Math.random() > f) return;
   let t = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
     n = (0, i.d)();
-  a.default.track(s.rMx.QUEST_DECISION_ROUNDTRIP, d(c(d(c({}, (0, r.Z)()), {
+  o.default.track(s.rMx.QUEST_DECISION_ROUNDTRIP, d(c(d(c({}, (0, r.Z)()), {
     endpoint: e.endpoint,
     was_successful: e.wasSuccessful,
     api_latency_ms: t,
-    mobile_network_type: o.Z.getType()
+    mobile_network_type: a.Z.getType()
   }), null != n && {
     mobile_signal_strength_level: n
   }), {

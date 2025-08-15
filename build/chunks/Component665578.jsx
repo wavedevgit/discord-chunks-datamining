@@ -1,7 +1,7 @@
-/** Chunk was on 58511 **/
+/** Chunk was on 47463 **/
 /** chunk id: 665578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => I
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -48,7 +48,7 @@ function w(e) {
   return e
 }
 
-function I(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,13 +61,13 @@ function I(e, t) {
   }), e
 }
 
-function P(e) {
+function I(e) {
   let {
     applicationId: t,
     commandId: l,
     guildId: j,
     inModal: v,
-    editedTargetPermissions: P,
+    editedTargetPermissions: I,
     originalApplicationPermissions: k,
     originalCommandPermissions: A,
     selectedPermissionCount: D
@@ -82,12 +82,12 @@ function P(e) {
       commandLevelPermissions: A,
       defaultMemberPermissions: null == R ? true : R.defaultMemberPermissions
     })
-  }, [j, R, k, A]), B = null != l ? l : t, [U, W] = r.useMemo(() => {
+  }, [j, R, k, A]), B = null != l ? l : t, [W, U] = r.useMemo(() => {
     let e = {},
       t = {};
-    for (let [n, i] of Object.entries(P)) i.type === d.Kw.CHANNEL ? e[n] = i : t[n] = i;
+    for (let [n, i] of Object.entries(I)) i.type === d.Kw.CHANNEL ? e[n] = i : t[n] = i;
     return [e, t]
-  }, [P]), H = r.useCallback(e => {
+  }, [I]), H = r.useCallback(e => {
     let t = g.Z.getGuild(j),
       n = m.ZP.getSelfMember(j);
     return null != t && null != n && (null != l ? (0, u.Ft)({
@@ -106,7 +106,7 @@ function P(e) {
   }, [j, R, l, k]), G = r.useCallback((e, t) => {
     let n, i = null;
     if (0 !== t.length) {
-      let e = P[t[0]];
+      let e = I[t[0]];
       if (e.type === d.Kw.USER) n = O.s.REMOVE_SELF;
       else {
         let t = e.id;
@@ -124,17 +124,17 @@ function P(e) {
         i = null != e ? e.name : "role"
       }
     }(0, O._)(n, i)
-  }, [j, P]), z = r.useCallback((e, n) => {
+  }, [j, I]), z = r.useCallback((e, n) => {
     let i = {};
-    for (let [e, t] of Object.entries(P)) i[e] = {
+    for (let [e, t] of Object.entries(I)) i[e] = {
       id: t.id,
       permission: t.permission,
       type: t.type
     };
     if (i = Object.assign(i, e), n.length > 0 && (i = a().omit(i, n)), !H(i)) return void G(e, n);
     h.W4(t, B, i)
-  }, [t, P, B, H, G]), F = r.useCallback(() => {
-    let e = Object.keys(U);
+  }, [t, I, B, H, G]), F = r.useCallback(() => {
+    let e = Object.keys(W);
     return (0, c.ZDy)(async () => {
       let {
         default: t
@@ -145,13 +145,13 @@ function P(e) {
         headerText: Z.intl.string(Z.t["i1c+kZ"]),
         hasMemberSearch: false,
         overwrittenKeys: e,
-        search: T,
+        search: P,
         searchPlaceholderText: Z.intl.string(Z.t["TLQo/v"]),
         selectedPermissionCount: D
       }, n))
     })
-  }, [z, U, j, D]), K = r.useCallback(() => {
-    let e = Object.keys(W);
+  }, [z, W, j, D]), K = r.useCallback(() => {
+    let e = Object.keys(U);
     return (0, c.ZDy)(async () => {
       let {
         default: t
@@ -167,31 +167,31 @@ function P(e) {
         selectedPermissionCount: D
       }, n))
     })
-  }, [z, j, W, D]), q = r.useCallback(() => (0, c.ZDy)(async () => {
+  }, [z, j, U, D]), V = r.useCallback(() => (0, c.ZDy)(async () => {
     let {
       default: e
     } = await n.e("21897").then(n.bind(n, 303313)), t = R.defaultMemberPermissions;
-    return o.fS(t, u.BO) && (t = C.Plq.ADMINISTRATOR), n => (0, i.jsx)(e, I(w({}, n), {
+    return o.fS(t, u.BO) && (t = C.Plq.ADMINISTRATOR), n => (0, i.jsx)(e, T(w({}, n), {
       defaultMemberPermissions: t
     }))
-  }), [R]), V = D - N._n, Y = V >= 0, X = [{
+  }), [R]), q = D - N._n, Y = q >= 0, $ = [{
     buttonClick: K,
     buttonText: Z.intl.string(Z.t["56jRn5"]),
     noneSelectedText: Z.intl.string(Z.t.C0rYfn),
-    overwrites: W,
+    overwrites: U,
     title: null == l ? Z.intl.string(Z.t["vPWe+/"]) : Z.intl.string(Z.t["1jLVGB"])
   }, {
     buttonClick: F,
     buttonText: Z.intl.string(Z.t["i1c+kZ"]),
     noneSelectedText: Z.intl.string(Z.t.UBJhCw),
-    overwrites: U,
+    overwrites: W,
     title: null == l ? Z.intl.string(Z.t.OGiMXF) : Z.intl.string(Z.t.Ujbaqq)
   }];
   return (0, i.jsxs)(r.Fragment, {
-    children: [V > 0 ? (0, i.jsx)(c.Wn, {
+    children: [q > 0 ? (0, i.jsx)(c.Wn, {
       messageType: c.QYI.WARNING,
       children: Z.intl.format(Z.t["B/dFBA"], {
-        removeCount: V
+        removeCount: q
       })
     }) : null, L ? (0, i.jsxs)("div", {
       className: S.requiredPermissionsBanner,
@@ -205,17 +205,17 @@ function P(e) {
       }), (0, i.jsx)(c.zxk, {
         variant: "secondary",
         size: "sm",
-        onClick: q,
+        onClick: V,
         text: Z.intl.string(Z.t["HO/oXl"])
       })]
-    }) : null, X.map((e, t) => {
+    }) : null, $.map((e, t) => {
       let n = null;
       return M ? Y && (n = Z.intl.string(Z.t.XTwtW1)) : n = null != l ? Z.intl.string(Z.t.tybdam) : Z.intl.string(Z.t.z2hjk5), (0, i.jsx)(_.Z, {
         bar: (0, i.jsx)(c.ua7, {
           tooltipClassName: S.tooltip,
           text: n,
           shouldShow: null != n,
-          children: t => (0, i.jsx)(c.zxk, I(w({}, t), {
+          children: t => (0, i.jsx)(c.zxk, T(w({}, t), {
             variant: "secondary",
             disabled: Y || !M,
             onClick: e.buttonClick,
@@ -241,10 +241,10 @@ function P(e) {
   })
 }
 
-function T(e) {
+function P(e) {
   let t = (0, j.w)(e);
-  return I(w({}, t), {
-    results: t.results.map(e => I(w({}, e), {
+  return T(w({}, t), {
+    results: t.results.map(e => T(w({}, e), {
       type: d.Kw.CHANNEL
     }))
   })
@@ -252,10 +252,10 @@ function T(e) {
 
 function E(e) {
   let t = (0, v.U)(e);
-  return I(w({}, t), {
-    results: t.results.roles.map(e => I(w({}, e), {
+  return T(w({}, t), {
+    results: t.results.roles.map(e => T(w({}, e), {
       type: d.Kw.ROLE
-    })).concat(t.results.members.map(e => I(w({}, e), {
+    })).concat(t.results.members.map(e => T(w({}, e), {
       type: d.Kw.USER
     })))
   })

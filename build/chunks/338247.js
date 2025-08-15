@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 338247, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 338247, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   s: () => a
 });
@@ -12,5 +11,5 @@ function a(e, t) {
   if (null == t) returnfalse;
   let n = (0, i.p)(t, "should_show_report_to_mod_survey"),
     a = r.Z.getGuild(t);
-  return n && null != a && a.ownerId === e.id && a.features.has(o.oNc.REPORT_TO_MOD_SURVEY)
+  return n && null != a && a.ownerId === e.id && a.features.has(l.oNc.REPORT_TO_MOD_SURVEY)
 }

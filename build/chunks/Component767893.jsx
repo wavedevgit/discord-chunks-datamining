@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 767893, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 54157 **/
+/** chunk id: 767893, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => m
 });
 var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk708816 = require("./708816.jsx"),
   Chunk657707 = require("./657707.js"),
   Chunk442837 = require("./442837.js"),
@@ -18,51 +17,30 @@ var Chunk255367 = require("./255367.js"),
   Chunk430824 = require("./430824.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk478942 = require("./478942.js");
-let g = {
+let S = {
   top: 8,
   bottom: 8,
   left: false,
   right: false
 };
 
-function E(e) {
+function m(e) {
   let {
     channel: t,
     children: n
   } = e;
   return (0, r.jsx)(a.tE, {
-    offset: g,
+    offset: S,
     children: (0, r.jsxs)("div", {
-      className: m.channelHeader,
+      className: g.channelHeader,
       "data-recents-channel": t.id,
-      children: [(0, r.jsx)(b, {
+      children: [(0, r.jsx)(y, {
         channel: t
-      }), t.isPrivate() ? null : (0, r.jsx)(s.Fbu, {
+      }), t.isPrivate() ? null : (0, r.jsx)(i.Fbu, {
         size: "xxs"
-      }), (0, r.jsx)(y, {
+      }), (0, r.jsx)(b, {
         channel: t
       }), n]
-    })
-  })
-}
-
-function b(e) {
-  let {
-    channel: t
-  } = e, n = (0, l.e7)([p.Z], () => p.Z.getGuild(t.guild_id));
-  return null != n ? (0, r.jsx)(_.Z, {
-    className: m.icon,
-    guild: n,
-    size: _.Z.Sizes.SMALLER,
-    "aria-hidden": true
-  }) : t.isGroupDM() ? (0, r.jsx)(f.Z, {
-    channel: t,
-    size: c.EFr.SIZE_24,
-    experimentLocation: "ForLaterChannelHeader"
-  }) : (0, r.jsx)("div", {
-    className: o()(m.icon, m.dmIcon),
-    children: (0, r.jsx)(s.kBi, {
-      size: "xxs"
     })
   })
 }
@@ -70,18 +48,39 @@ function b(e) {
 function y(e) {
   let {
     channel: t
-  } = e, n = (0, l.e7)([p.Z], () => p.Z.getGuild(t.guild_id)), i = (0, u.ZP)(t, false), o = (0, d.KS)(t, n), a = t.isPrivate() || null == o, s = t.isDM() ? h.intl.formatToPlainString(h.t.smD7XV, {
-    username: i
-  }) : i;
+  } = e, n = (0, o.e7)([f.Z], () => f.Z.getGuild(t.guild_id));
+  return null != n ? (0, r.jsx)(p.Z, {
+    className: g.icon,
+    guild: n,
+    size: p.Z.Sizes.SMALLER,
+    "aria-hidden": true
+  }) : t.isGroupDM() ? (0, r.jsx)(h.Z, {
+    channel: t,
+    size: c.EFr.SIZE_24,
+    experimentLocation: "ForLaterChannelHeader"
+  }) : (0, r.jsx)("div", {
+    className: l()(g.icon, g.dmIcon),
+    children: (0, r.jsx)(i.kBi, {
+      size: "xxs"
+    })
+  })
+}
+
+function b(e) {
+  let {
+    channel: t
+  } = e, n = (0, o.e7)([f.Z], () => f.Z.getGuild(t.guild_id)), s = (0, u.ZP)(t, false), l = (0, d.KS)(t, n), a = t.isPrivate() || null == l, i = t.isDM() ? _.intl.formatToPlainString(_.t.smD7XV, {
+    username: s
+  }) : s;
   return (0, r.jsxs)("div", {
-    className: m.channelNameSection,
-    children: [a ? null : (0, r.jsx)(o, {
-      className: m.channelTypeIcon,
+    className: g.channelNameSection,
+    children: [a ? null : (0, r.jsx)(l, {
+      className: g.channelTypeIcon,
       size: "xxs"
     }), (0, r.jsx)(c.X6q, {
       variant: "text-md/semibold",
       color: "header-secondary",
-      children: s
+      children: i
     })]
   })
 }

@@ -1,13 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 549157, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 549157, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk172367 = require("./172367.js"),
   Chunk169774 = require("./169774.js");
-module.exports = function(e, t) {
-  var n = e._latestEditorState,
-    o = n.getSelection();
+module.exports = function(t, e) {
+  var r = t._latestEditorState,
+    o = r.getSelection();
   if (!o.getHasFocus()) {
     var a = o.set("hasFocus", true);
-    e.props.onFocus && e.props.onFocus(t), i.isBrowser("Chrome < 60.0.3081.0") ? e.update(r.forceSelection(n, a)) : e.update(r.acceptSelection(n, a))
+    t.props.onFocus && t.props.onFocus(e), i.isBrowser("Chrome < 60.0.3081.0") ? t.update(n.forceSelection(r, a)) : t.update(n.acceptSelection(r, a))
   }
 }

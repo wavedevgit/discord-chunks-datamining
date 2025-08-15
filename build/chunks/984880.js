@@ -1,154 +1,139 @@
-/** Chunk was on web.js **/
-/** chunk id: 984880, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 984880, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk381538 = require("./381538.js");
 
 function i() {
-  return (i = Chunk381538 || function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = arguments[t];
-      for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+  return (i = Chunk381538 || function(t) {
+    for (var e = 1; e < arguments.length; e++) {
+      var r = arguments[e];
+      for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (t[n] = r[n])
     }
-    return e
+    return t
   }).apply(this, arguments)
-}
-
-function o(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      a(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function a(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function s(e, t) {
-  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
 var Chunk962759 = require("./962759.js"),
   Chunk152477 = require("./152477.js"),
   Chunk73800 = require("./73800.js"),
   Chunk606166 = require("./606166.js"),
   Chunk679785 = require("./679785.js"),
-  Chunk467159 = require("./467159.js"),
-  p = function(e, t, n, r) {
-    return d({
-      "public/DraftStyleDefault/unorderedListItem": "unordered-list-item" === e,
-      "public/DraftStyleDefault/orderedListItem": "ordered-list-item" === e,
-      "public/DraftStyleDefault/reset": n,
-      "public/DraftStyleDefault/depth0": 0 === t,
-      "public/DraftStyleDefault/depth1": 1 === t,
-      "public/DraftStyleDefault/depth2": 2 === t,
-      "public/DraftStyleDefault/depth3": 3 === t,
-      "public/DraftStyleDefault/depth4": t >= 4,
-      "public/DraftStyleDefault/listLTR": "LTR" === r,
-      "public/DraftStyleDefault/listRTL": "RTL" === r
-    })
-  };
-module.exports = function(e) {
-  function t() {
-    return e.apply(this, arguments) || this
+  Chunk467159 = require("./467159.js");
+module.exports = function(t) {
+  function e() {
+    return t.apply(this, arguments) || this
   }
-  s(t, e);
-  var n = t.prototype;
-  return n.shouldComponentUpdate = function(e) {
-    var t = this.props.editorState,
-      n = e.editorState;
-    if (t.getDirectionMap() !== n.getDirectionMap() || t.getSelection().getHasFocus() !== n.getSelection().getHasFocus()) returntrue;
-    var r = n.getNativelyRenderedContent(),
-      i = t.isInCompositionMode(),
-      o = n.isInCompositionMode();
-    if (t === n || null !== r && n.getCurrentContent() === r || i && o) returnfalse;
-    var a = t.getCurrentContent(),
-      s = n.getCurrentContent(),
-      l = t.getDecorator(),
-      c = n.getDecorator();
-    return i !== o || a !== s || l !== c || n.mustForceSelection()
-  }, n.render = function() {
-    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, a = e.customStyleMap, s = e.customStyleFn, d = e.editorState, h = e.editorKey, m = e.preventScroll, g = e.textDirectionality, E = d.getCurrentContent(), b = d.getSelection(), y = d.mustForceSelection(), O = d.getDecorator(), v = _(d.getDirectionMap()), I = E.getBlocksAsArray(), T = [], S = null, A = null, N = 0; N < I.length; N++) {
-      var C = I[N],
-        R = C.getKey(),
-        P = C.getType(),
-        w = n(C),
-        D = true,
-        L = true,
-        x = true;
-      w && (D = w.component, L = w.props, x = w.editable);
-      var M = g || v.get(R),
-        j = c.encode(R, 0, 0),
-        k = {
-          contentState: E,
-          block: C,
-          blockProps: L,
-          blockStyleFn: r,
-          customStyleMap: a,
-          customStyleFn: s,
-          decorator: O,
-          direction: M,
-          forceSelection: y,
-          offsetKey: j,
-          preventScroll: m,
-          selection: b,
-          tree: d.getBlockTree(R)
+  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t;
+  var r = e.prototype;
+  return r.shouldComponentUpdate = function(t) {
+    var e = this.props.editorState,
+      r = t.editorState;
+    if (e.getDirectionMap() !== r.getDirectionMap() || e.getSelection().getHasFocus() !== r.getSelection().getHasFocus()) returntrue;
+    var n = r.getNativelyRenderedContent(),
+      i = e.isInCompositionMode(),
+      o = r.isInCompositionMode();
+    if (e === r || null !== n && r.getCurrentContent() === n || i && o) returnfalse;
+    var a = e.getCurrentContent(),
+      u = r.getCurrentContent(),
+      s = e.getDecorator(),
+      c = r.getDecorator();
+    return i !== o || a !== u || s !== c || r.mustForceSelection()
+  }, r.render = function() {
+    for (var t = this.props, e = t.blockRenderMap, r = t.blockRendererFn, n = t.blockStyleFn, f = t.customStyleMap, p = t.customStyleFn, h = t.editorState, d = t.editorKey, g = t.preventScroll, y = t.textDirectionality, v = h.getCurrentContent(), m = h.getSelection(), _ = h.mustForceSelection(), b = h.getDecorator(), S = l(h.getDirectionMap()), w = v.getBlocksAsArray(), x = [], k = null, C = null, E = 0; E < w.length; E++) {
+      var D = w[E],
+        O = D.getKey(),
+        K = D.getType(),
+        T = r(D),
+        M = true,
+        A = true,
+        I = true;
+      T && (M = T.component, A = T.props, I = T.editable);
+      var B = y || S.get(O),
+        L = a.encode(O, 0, 0),
+        R = {
+          contentState: v,
+          block: D,
+          blockProps: A,
+          blockStyleFn: n,
+          customStyleMap: f,
+          customStyleFn: p,
+          decorator: b,
+          direction: B,
+          forceSelection: _,
+          offsetKey: L,
+          preventScroll: g,
+          selection: m,
+          tree: h.getBlockTree(O)
         },
-        U = t.get(P) || t.get("unstyled"),
-        G = U.wrapper,
-        B = U.element || t.get("unstyled").element,
-        Z = C.getDepth(),
-        F = "";
-      if (r && (F = r(C)), "li" === B) {
-        var V = A !== G || null === S || Z > S;
-        F = f(F, p(P, Z, V, M))
-      }
-      var H = D || l,
-        Y = {
-          className: F,
+        N = e.get(K) || e.get("unstyled"),
+        F = N.wrapper,
+        z = N.element || e.get("unstyled").element,
+        P = D.getDepth(),
+        j = "";
+      (n && (j = n(D)), "li" === z) && (j = c(j, s({
+        "public/DraftStyleDefault/unorderedListItem": "unordered-list-item" === K,
+        "public/DraftStyleDefault/orderedListItem": "ordered-list-item" === K,
+        "public/DraftStyleDefault/reset": C !== F || null === k || P > k,
+        "public/DraftStyleDefault/depth0": 0 === P,
+        "public/DraftStyleDefault/depth1": 1 === P,
+        "public/DraftStyleDefault/depth2": 2 === P,
+        "public/DraftStyleDefault/depth3": 3 === P,
+        "public/DraftStyleDefault/depth4": P >= 4,
+        "public/DraftStyleDefault/listLTR": "LTR" === B,
+        "public/DraftStyleDefault/listRTL": "RTL" === B
+      })));
+      var U = M || o,
+        q = {
+          className: j,
           "data-block": true,
-          "data-editor": h,
-          "data-offset-key": j,
-          key: R
+          "data-editor": d,
+          "data-offset-key": L,
+          key: O
         };
-      true !== x && (Y = o({}, Y, {
-        contentEditable: x,
+      true !== I && (q = function(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var r = null != arguments[e] ? arguments[e] : {},
+            n = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
+            return Object.getOwnPropertyDescriptor(r, t).enumerable
+          }))), n.forEach(function(e) {
+            var n, i, o;
+            n = t, i = e, o = r[e], i in n ? Object.defineProperty(n, i, {
+              value: o,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : n[i] = o
+          })
+        }
+        return t
+      }({}, q, {
+        contentEditable: I,
         suppressContentEditableWarning: true
       }));
-      var W = u.createElement(B, Y, u.createElement(H, i({}, k, {
-        key: R
+      var H = u.createElement(z, q, u.createElement(U, i({}, R, {
+        key: O
       })));
-      T.push({
-        block: W,
-        wrapperTemplate: G,
-        key: R,
-        offsetKey: j
-      }), S = G ? C.getDepth() : null, A = G
+      x.push({
+        block: H,
+        wrapperTemplate: F,
+        key: O,
+        offsetKey: L
+      }), k = F ? D.getDepth() : null, C = F
     }
-    for (var K = [], z = 0; z < T.length;) {
-      var q = T[z];
-      if (q.wrapperTemplate) {
-        var X = [];
-        do X.push(T[z].block), z++; while (z < T.length && T[z].wrapperTemplate === q.wrapperTemplate);
-        var Q = u.cloneElement(q.wrapperTemplate, {
-          key: q.key + "-wrap",
-          "data-offset-key": q.offsetKey
-        }, X);
-        K.push(Q)
-      } else K.push(q.block), z++
+    for (var W = [], V = 0; V < x.length;) {
+      var G = x[V];
+      if (G.wrapperTemplate) {
+        var J = [];
+        do J.push(x[V].block), V++; while (V < x.length && x[V].wrapperTemplate === G.wrapperTemplate);
+        var X = u.cloneElement(G.wrapperTemplate, {
+          key: G.key + "-wrap",
+          "data-offset-key": G.offsetKey
+        }, J);
+        W.push(X)
+      } else W.push(G.block), V++
     }
     return u.createElement("div", {
       "data-contents": "true"
-    }, K)
-  }, t
+    }, W)
+  }, e
 }(Chunk73800.Component)

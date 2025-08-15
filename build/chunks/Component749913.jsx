@@ -118,7 +118,7 @@ function es(e) {
     }
   }, c.X), [p, b] = i.useState(null), j = i.useContext(D.oo), v = i.useCallback(() => {
     j.bumpDispatchPriority()
-  }, [j]), C = (0, h.e7)([k.Z], () => k.Z.can(ee.Plq.ATTACH_FILES, t)), w = (0, h.Wu)([L.Z], () => L.Z.getUploads(t.id, Z.d.FirstThreadMessage)), P = g && C && u, I = (null == t ? true : t.isMediaChannel()) === true, M = function(e, t) {
+  }, [j]), _ = (0, h.e7)([k.Z], () => k.Z.can(ee.Plq.ATTACH_FILES, t)), T = (0, h.Wu)([L.Z], () => L.Z.getUploads(t.id, Z.d.FirstThreadMessage)), O = g && _ && u, I = (null == t ? true : t.isMediaChannel()) === true, M = function(e, t) {
     let n = (0, K.AF)(),
       r = (0, G.ql)(e);
     return i.useCallback(() => {
@@ -164,10 +164,10 @@ function es(e) {
       null == t && (t = l.textValue), t = t.trim();
       let {
         content: s
-      } = O.ZP.parse(e, t);
+      } = w.ZP.parse(e, t);
       if (t = s, null == r || 0 === r.length) {
         var o;
-        r = null == (o = T.Z.getStickerPreview(e.id, el.drafts.type)) ? true : o.map(e => e.id)
+        r = null == (o = N.Z.getStickerPreview(e.id, el.drafts.type)) ? true : o.map(e => e.id)
       }
       if ((null == i || 0 === i.length) && (i = L.Z.getUploads(e.id, Z.d.FirstThreadMessage)), null != i && i.length > 0 && e.isMediaChannel()) {
         let e = i.findIndex(e => true === e.isThumbnail);
@@ -210,9 +210,9 @@ function es(e) {
         stickers: b,
         uploads: j,
         hasNameError: v,
-        hasMessageError: C
+        hasMessageError: _
       } = a(t, i, l);
-      if (s(v ? (0, B.V_)() : null), o(C ? (0, B.T4)() : null), v || C) return {
+      if (s(v ? (0, B.V_)() : null), o(_ ? (0, B.T4)() : null), v || _) return {
         shouldClear: false,
         shouldRefocus: true
       };
@@ -232,13 +232,13 @@ function es(e) {
           shouldRefocus: true
         };
         let n = await r(p, b, j);
-        return (0, E.ok)(n), U.Z.resort(e.id), (0, N.qB)(e.id, el.drafts.type), d(), m(false), h(false), V.Z.markAsSeen(e.id), f(false), {
+        return (0, E.ok)(n), U.Z.resort(e.id), (0, P.qB)(e.id, el.drafts.type), d(), m(false), h(false), V.Z.markAsSeen(e.id), f(false), {
           shouldClear: true,
           shouldRefocus: false
         }
       } catch (t) {
-        var _, y;
-        return (null == (_ = t.body) ? true : _.code) === ee.evJ.AUTOMOD_TITLE_BLOCKED ? s((0, B.Gx)(t.body, e)) : (null == (y = t.body) ? true : y.code) === ee.evJ.AUTOMOD_MESSAGE_BLOCKED && o((0, B.Gx)(t.body, e)), {
+        var C, y;
+        return (null == (C = t.body) ? true : C.code) === ee.evJ.AUTOMOD_TITLE_BLOCKED ? s((0, B.Gx)(t.body, e)) : (null == (y = t.body) ? true : y.code) === ee.evJ.AUTOMOD_MESSAGE_BLOCKED && o((0, B.Gx)(t.body, e)), {
           shouldClear: false,
           shouldRefocus: true
         }
@@ -247,7 +247,7 @@ function es(e) {
       }
     }, [r, a, e, n])
   }(t);
-  return i.useLayoutEffect(s, [g, m, w, s]), (0, r.jsx)(r.Fragment, {
+  return i.useLayoutEffect(s, [g, m, T, s]), (0, r.jsx)(r.Fragment, {
     children: (0, r.jsx)("div", {
       "aria-label": u ? en.intl.string(en.t.dq7mAQ) : en.intl.string(en.t["5h0QOD"]),
       className: l()(er.container, {
@@ -282,14 +282,14 @@ function es(e) {
               submit: A,
               disabled: !u
             }), x && (0, r.jsx)(eh, {})]
-          }), P && (I ? (0, r.jsx)(y._, {
+          }), O && (I ? (0, r.jsx)(y._, {
             parentChannel: t
           }) : (0, r.jsx)(X.Z, {
             channelId: t.id
           }))]
         }), (0, r.jsxs)("div", {
           className: er.form,
-          children: [P && I && (0, r.jsx)(_.Z, {
+          children: [O && I && (0, r.jsx)(C.Z, {
             parentChannel: t
           }), g && (0, r.jsx)(ep, {
             className: er.horizontalPadding,
@@ -337,7 +337,7 @@ let eo = Chunk73800.memo(function(e) {
         guildId: t.guild_id,
         channelId: t.id
       })
-    }, [m, t.id, t.guild_id, a]), b = i.useMemo(() => n && !l ? (0, r.jsx)(eC, {}) : n || l || 0 !== o.textValue.trim().length && o.textValue.trim() !== h ? !l && (s.trim().length > 0 || o.textValue.trim().length > 0 && o.textValue.trim() !== h || L.Z.getUploads(t.id, Z.d.FirstThreadMessage).length > 0) && d ? (0, r.jsx)(f.vdY, {
+    }, [m, t.id, t.guild_id, a]), b = i.useMemo(() => n && !l ? (0, r.jsx)(e_, {}) : n || l || 0 !== o.textValue.trim().length && o.textValue.trim() !== h ? !l && (s.trim().length > 0 || o.textValue.trim().length > 0 && o.textValue.trim() !== h || L.Z.getUploads(t.id, Z.d.FirstThreadMessage).length > 0) && d ? (0, r.jsx)(f.vdY, {
       size: "md",
       color: "currentColor",
       className: er.pencilIcon
@@ -398,7 +398,7 @@ let eo = Chunk73800.memo(function(e) {
         hasClickedForm: l,
         submitting: s
       }
-    }, c.X), j = (0, K.AF)(), v = null != t.topic && 0 !== t.topic.length, C = V.Z.hasSeen(t.id), _ = (0, G.ql)(t), y = (0, h.e7)([F.default], () => F.default.getCurrentUser());
+    }, c.X), j = (0, K.AF)(), v = null != t.topic && 0 !== t.topic.length, _ = V.Z.hasSeen(t.id), C = (0, G.ql)(t), y = (0, h.e7)([F.default], () => F.default.getCurrentUser());
     o()(null != y, "current user cannot be null"), (0, D.yp)({
       event: ee.CkL.FOCUS_COMPOSER_TITLE,
       handler: () => {
@@ -407,25 +407,25 @@ let eo = Chunk73800.memo(function(e) {
         null == t || t.focus(), j.getState().setTitleFocused(true), j.getState().setFormOpen(true), j.getState().setHasClickedForm(true)
       }
     });
-    let O = i.useCallback(e => {
+    let w = i.useCallback(e => {
         let n = e.clipboardData.files[0];
         null != n && n.type.startsWith("image/") && (e.preventDefault(), (0, H.d)([n], t, Z.d.FirstThreadMessage, {
           origin: "clipboard"
         }), j.getState().setFormOpenFromUserAction())
       }, [t, j]),
-      w = (0, B.Op)(m, {
+      T = (0, B.Op)(m, {
         content: x
       });
     return (0, r.jsxs)("div", {
       className: er.titleContainer,
-      onPaste: O,
+      onPaste: w,
       children: [u && b ? (0, r.jsx)(f.X6q, {
         variant: "heading-md/semibold",
         className: er.title,
         children: x
       }) : (0, r.jsx)(g.iS, {
         value: x,
-        placeholder: a ? u || p.textValue.length > 0 && p.textValue.trim() !== _ ? en.intl.string(en.t.lU4dDQ) : en.intl.string(en.t.CjmivL) : en.intl.string(en.t["5h0QOD"]),
+        placeholder: a ? u || p.textValue.length > 0 && p.textValue.trim() !== C ? en.intl.string(en.t.lU4dDQ) : en.intl.string(en.t.CjmivL) : en.intl.string(en.t["5h0QOD"]),
         flex: true,
         autosize: u,
         rows: 1,
@@ -437,7 +437,7 @@ let eo = Chunk73800.memo(function(e) {
           j.getState().setName(n);
           let r = 0 === n.trim().length,
             i = 0 === p.textValue.trim().length,
-            a = p.textValue.trim() === _;
+            a = p.textValue.trim() === C;
           r && (i || a) && j.getState().setHasClickedForm(false), u || U.Z.updateForumSearchQuery(t.id, n)
         },
         onFocus: () => {
@@ -453,7 +453,7 @@ let eo = Chunk73800.memo(function(e) {
           "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), u && x.length > 0 ? null == l || l.focus() : a && e.shiftKey ? ((0, q.nH)({
             guildId: t.guild_id,
             channelId: t.id
-          }), v && !C && j.getState().setGuidelinesOpen(true), j.getState().setFormOpenFromUserAction(), x.trim().length > 0 && (j.getState().setBodyFocused(true), null == l || l.focus())) : u || !(x.length > 0) || null != d || s || U.Z.updateForumSearchQuery(t.id, x));
+          }), v && !_ && j.getState().setGuidelinesOpen(true), j.getState().setFormOpenFromUserAction(), x.trim().length > 0 && (j.getState().setBodyFocused(true), null == l || l.focus())) : u || !(x.length > 0) || null != d || s || U.Z.updateForumSearchQuery(t.id, x));
           let o = n.current instanceof f.lcI ? null == (r = n.current) ? true : r._textArea : n.current;
           if ("Home" === e.key || "End" === e.key) {
             if (null == o) return;
@@ -468,7 +468,7 @@ let eo = Chunk73800.memo(function(e) {
           }
           "Escape" !== e.key || j.getState().submitting || (null == (i = n.current) || i.blur(), j.getState().setFormOpen(false), j.getState().setTitleFocused(false), j.getState().setBodyFocused(false), j.getState().setPreviewing(false))
         },
-        error: w,
+        error: T,
         className: er.title,
         inputRef: n
       }), u ? null : (0, r.jsxs)(r.Fragment, {
@@ -520,7 +520,7 @@ let eu = Chunk73800.memo(function(e) {
       content: n
     }), {
       content: a
-    } = (0, w.Z)(i, {
+    } = (0, T.Z)(i, {
       hideSimpleEmbedContent: true,
       isInteracting: false,
       formatInline: false,
@@ -528,7 +528,7 @@ let eu = Chunk73800.memo(function(e) {
       allowHeading: true,
       previewLinkTarget: true,
       allowLinks: true
-    }), s = (0, P.Z)({
+    }), s = (0, O.Z)({
       message: i,
       channel: t,
       compact: false
@@ -573,10 +573,10 @@ let eu = Chunk73800.memo(function(e) {
       guildId: t.guild_id,
       channelId: t.id
     }), [t.guild_id, t.id]);
-    let C = i.useCallback(() => {
+    let _ = i.useCallback(() => {
         j.getState().setBodyFocused(true)
       }, [j]),
-      _ = i.useCallback(() => {
+      C = i.useCallback(() => {
         j.getState().setBodyFocused(false)
       }, [j]),
       y = i.useCallback((e, t, n) => {
@@ -588,7 +588,7 @@ let eu = Chunk73800.memo(function(e) {
           richValue: n
         })
       }, [j]),
-      O = i.useCallback(e => {
+      w = i.useCallback(e => {
         let {
           value: t,
           uploads: r,
@@ -598,12 +598,12 @@ let eu = Chunk73800.memo(function(e) {
       }, [n]);
     (0, D.yp)({
       event: ee.CkL.TEXTAREA_FOCUS,
-      handler: C
+      handler: _
     }), (0, D.yp)({
       event: ee.CkL.TEXTAREA_BLUR,
-      handler: _
+      handler: C
     });
-    let w = (0, B.Op)(m, {
+    let T = (0, B.Op)(m, {
       content: x.textValue
     });
     return (0, r.jsx)("div", {
@@ -614,7 +614,7 @@ let eu = Chunk73800.memo(function(e) {
           parentChannel: t,
           textValue: x.textValue
         }) : (0, r.jsx)("div", {
-          onClick: C,
+          onClick: _,
           children: (0, r.jsx)(v.ZP, {
             type: el,
             setEditorRef: d,
@@ -625,10 +625,10 @@ let eu = Chunk73800.memo(function(e) {
             focused: p,
             className: er.channelTextArea,
             innerClassName: l()(er.channelTextAreaInner, {
-              [er.channelTextAreaInnerError]: null != w
+              [er.channelTextAreaInnerError]: null != T
             }),
             onChange: y,
-            onSubmit: O,
+            onSubmit: w,
             promptToUpload: H.d,
             disabled: a,
             onKeyDown: e => {
@@ -637,7 +637,7 @@ let eu = Chunk73800.memo(function(e) {
             autoCompletePosition: "bottom"
           })
         }), (0, r.jsx)(f.pdY, {
-          error: w
+          error: T
         })]
       })
     })
@@ -752,7 +752,7 @@ let ep = Chunk73800.memo(function(e) {
         className: er.controls,
         children: [(0, r.jsxs)("div", {
           className: er.wrappedControls,
-          children: [(0, r.jsx)(C.Z, {
+          children: [(0, r.jsx)(_.Z, {
             type: el,
             textValue: l.textValue,
             className: er.characterCount
@@ -848,7 +848,7 @@ function ev(e) {
   }), {
     containerRef: g,
     containerWidth: x
-  } = (0, Q.Z)(), p = i.useRef(null), b = i.useRef(null), [j, v] = i.useState(true), C = (0, G.Vm)(t), [_, y] = i.useState(0);
+  } = (0, Q.Z)(), p = i.useRef(null), b = i.useRef(null), [j, v] = i.useState(true), _ = (0, G.Vm)(t), [C, y] = i.useState(0);
   return (i.useLayoutEffect(() => {
     var e;
     let t = p.current,
@@ -870,7 +870,7 @@ function ev(e) {
       }
       y(r)
     }
-  }, [C, j, g, x]), 0 === C.length) ? null : (0, r.jsxs)("div", {
+  }, [_, j, g, x]), 0 === _.length) ? null : (0, r.jsxs)("div", {
     className: er.tagsContainer,
     ref: g,
     children: [(0, r.jsx)(f.lO_, {
@@ -905,7 +905,7 @@ function ev(e) {
               className: er.tagListInner,
               ref: t
             }, i), {
-              children: C.map(e => (0, r.jsx)(J.Z, {
+              children: _.map(e => (0, r.jsx)(J.Z, {
                 ariaLabel: en.intl.formatToPlainString(en.t.FSZVIS, {
                   tagName: e.name
                 }),
@@ -941,7 +941,7 @@ function ev(e) {
         ref: b,
         className: er.tagsButton,
         style: {
-          left: _
+          left: C
         },
         children: (0, r.jsx)(f.zxk, ea(ei({}, e), {
           size: "sm",
@@ -964,7 +964,7 @@ function ev(e) {
   })
 }
 
-function eC(e) {
+function e_(e) {
   let {
     style: t,
     className: n

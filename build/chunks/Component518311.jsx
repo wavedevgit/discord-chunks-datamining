@@ -1,14 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 518311, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 518311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eA,
-  l: () => eN
+  Z: () => eC,
+  l: () => ex
 }), require("./642613.js"), require("./415506.js"), require("./539854.js"), require("./388685.js"), require("./35282.js"), require("./49124.js");
 var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk913527 = require("./913527.js"),
   u = require.n(Chunk913527),
@@ -63,7 +62,7 @@ var r, Chunk255367 = require("./255367.js"),
   Chunk918324 = require("./918324.js"),
   Chunk197571 = require("./197571.js");
 
-function es(e, t, n) {
+function eo(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -72,138 +71,128 @@ function es(e, t, n) {
   }) : e[t] = n, e
 }
 
-function el(e) {
+function es(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      es(e, t, n[t])
+      eo(e, t, n[t])
     })
   }
   return e
 }
 
 function ec(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function eu(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ec(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function ed(e, t) {
+function eu(e, t) {
   if (null == e) return {};
-  var n, r, i = ef(e, t);
+  var n, r, i = function(e, t) {
+    if (null == e) return {};
+    var n, r, i = {},
+      l = Object.keys(e);
+    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    return i
+  }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var l = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
+let ed = (0, Chunk313201.hQ)(),
+  ep = (0, Chunk313201.hQ)();
 
-function ef(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-let e_ = 48,
-  ep = 42,
-  eh = 24,
-  em = (0, Chunk313201.hQ)(),
-  eg = (0, Chunk313201.hQ)(),
-  eE = 110;
-
-function eb(e) {
+function eh(e) {
   let {
     className: t,
     children: n
   } = e;
-  return (0, i.jsxs)(w.Z, {
-    align: w.Z.Align.CENTER,
-    justify: w.Z.Justify.CENTER,
-    direction: w.Z.Direction.VERTICAL,
-    className: s()(eo.errorState, t),
+  return (0, i.jsxs)(N.Z, {
+    align: N.Z.Align.CENTER,
+    justify: N.Z.Justify.CENTER,
+    direction: N.Z.Direction.VERTICAL,
+    className: o()(el.errorState, t),
     children: [(0, i.jsx)("div", {
-      className: s()(eo.errorStateIcon, ea.marginBottom20)
+      className: o()(el.errorStateIcon, ea.marginBottom20)
     }), n]
   })
 }
-let ey = e => {
+let ef = e => {
     var t;
     let {
       channel: n,
       onClose: r
-    } = e, o = null != (t = (0, P.ZP)(n)) ? t : "", a = (0, f.e7)([H.ZP], () => {
+    } = e, l = null != (t = (0, T.ZP)(n)) ? t : "", a = (0, p.e7)([V.ZP], () => {
       var e;
-      return null != (e = H.ZP.lastMessageId(n.id)) ? e : n.id
+      return null != (e = V.ZP.lastMessageId(n.id)) ? e : n.id
     });
-    return (0, i.jsx)(p.P3F, {
+    return (0, i.jsx)(f.P3F, {
       onClick: () => {
-        (0, j.XU)(er.ME, n.id), r()
+        (0, k.XU)(er.ME, n.id), r()
       },
       children: (0, i.jsxs)("div", {
-        className: eo.confirmChannelItemContainer,
-        children: [(0, i.jsx)(p.qEK, {
-          src: (0, R.x)(n),
-          size: p.EFr.SIZE_24,
-          "aria-label": o
+        className: el.confirmChannelItemContainer,
+        children: [(0, i.jsx)(f.qEK, {
+          src: (0, Z.x)(n),
+          size: f.EFr.SIZE_24,
+          "aria-label": l
         }), (0, i.jsx)("span", {
-          className: eo.confirmChannelName,
-          children: o
+          className: el.confirmChannelName,
+          children: l
         }), (0, i.jsx)("span", {
-          className: eo.lastActiveTimestamp,
+          className: el.lastActiveTimestamp,
           children: u()(J.default.extractTimestamp(a)).fromNow()
         })]
       })
     })
   },
-  eO = e => {
+  em = e => {
     var {
       onConfirm: t,
       channelIds: n
-    } = e, r = ed(e, ["onConfirm", "channelIds"]);
-    let o = (0, f.Wu)([B.Z], () => Array.from(n).map(B.Z.getChannel), [n]);
-    return (0, i.jsxs)(p.ConfirmModal, eu(el({
+    } = e, r = eu(e, ["onConfirm", "channelIds"]);
+    let l = (0, p.Wu)([B.Z], () => Array.from(n).map(B.Z.getChannel), [n]);
+    return (0, i.jsxs)(f.ConfirmModal, ec(es({
       header: ei.intl.string(ei.t.uFHxNT),
       confirmText: ei.intl.string(ei.t.KCNNJi),
       cancelText: ei.intl.string(ei.t["ETE/oK"]),
       onConfirm: t,
-      confirmButtonColor: _.zx.Colors.BRAND
+      confirmButtonColor: h.zx.Colors.BRAND
     }, r), {
-      children: [(0, i.jsx)(p.Text, {
+      children: [(0, i.jsx)(f.Text, {
         variant: "text-md/normal",
         children: ei.intl.string(ei.t.rIsSqK)
-      }), (0, i.jsx)(p.vwX, {
-        className: eo.selectExistingFormHeader,
+      }), (0, i.jsx)(f.vwX, {
+        className: el.selectExistingFormHeader,
         children: ei.intl.string(ei.t.cjE7wM)
-      }), (0, i.jsx)(p.Ttm, {
-        className: eo.confirmInviteScroller,
-        children: o.filter(Q.lm).sort((e, t) => {
+      }), (0, i.jsx)(f.Ttm, {
+        className: el.confirmInviteScroller,
+        children: l.filter(Q.lm).sort((e, t) => {
           var n, r;
           let i = null != (n = e.lastMessageId) ? n : e.id,
-            o = null != (r = t.lastMessageId) ? r : t.id;
-          return J.default.compare(o, i)
-        }).map(e => (0, i.jsx)(ey, {
+            l = null != (r = t.lastMessageId) ? r : t.id;
+          return J.default.compare(l, i)
+        }).map(e => (0, i.jsx)(ef, {
           onClose: r.onClose,
           channel: e
         }, e.id))
       })]
     }))
   };
-class ev extends(r = Chunk73800.PureComponent) {
+class eg extends(r = Chunk73800.PureComponent) {
   componentDidUpdate(e) {
     if (e.selectedUsers !== this.props.selectedUsers || e.query !== this.props.query) {
       var t, n;
@@ -225,7 +214,7 @@ class ev extends(r = Chunk73800.PureComponent) {
     } = this.props;
     Chunk570140.Z.wait(() => Chunk708690.Z.open(null == module ? true : module.id));
     let t = (0, Chunk367907.v_)(module);
-    Chunk626135.default.track(Chunk981631.rMx.OPEN_POPOUT, eu(el({}, exports), {
+    Chunk626135.default.track(Chunk981631.rMx.OPEN_POPOUT, ec(es({}, exports), {
       type: this._getAnalyticsEntryPoint().entryPointType,
       source: this._getAnalyticsEntryPoint().entryPointSource,
       is_friend: !this.isNotFriends()
@@ -282,7 +271,7 @@ class ev extends(r = Chunk73800.PureComponent) {
     let {
       channel: e,
       selectedUsers: t
-    } = this.props, n = this.getRemaining(), r = null != module && 0 === exports.size || require < 0, o = exports.size > 1 || null != module ? Chunk388032.intl.string(Chunk388032.t.ZGMNAw) : Chunk388032.intl.string(Chunk388032.t["6Urw1t"]);
+    } = this.props, n = this.getRemaining(), r = null != module && 0 === exports.size || require < 0, l = exports.size > 1 || null != module ? Chunk388032.intl.string(Chunk388032.t.ZGMNAw) : Chunk388032.intl.string(Chunk388032.t["6Urw1t"]);
     return (0, Chunk255367.jsx)(Chunk481060.zxk, {
       variant: "primary",
       fullWidth: true,
@@ -320,7 +309,7 @@ class ev extends(r = Chunk73800.PureComponent) {
       });
     return (0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
-      className: s()(Chunk918324.subtitle, {
+      className: o()(Chunk918324.subtitle, {
         [Chunk918324.subtitleWarning]: module < 0
       }, Chunk197571.marginTop4),
       children: exports
@@ -332,14 +321,14 @@ class ev extends(r = Chunk73800.PureComponent) {
       query: t,
       hasFriends: n,
       results: r,
-      selectedRow: o,
+      selectedRow: l,
       selectedUsers: a
     } = this.props;
     if (!require || this.isNotFriends()) return null;
-    let s = [];
+    let o = [];
     return Chunk120356.forEach(e => {
-      let t = K.default.getUser(e);
-      null != t && s.push($.ZP.getName(t))
+      let t = Y.default.getUser(e);
+      null != t && o.push($.ZP.getName(t))
     }), (0, Chunk255367.jsxs)("div", {
       className: Chunk918324.searchBar,
       children: [(0, Chunk255367.jsx)(Chunk794433.Z, {
@@ -349,19 +338,19 @@ class ev extends(r = Chunk73800.PureComponent) {
         placeholder: 0 === Chunk120356.size ? Chunk388032.intl.string(Chunk388032.t.Wxnb6u) : "",
         disabled: this.isPartyFull(),
         size: Chunk794433.Z.Sizes.MEDIUM,
-        maxHeight: this.props.inBornThisNamedExperiment ? eE : true,
+        maxHeight: this.props.inBornThisNamedExperiment ? 110 : true,
         query: exports,
         selectedRow: Chunk73800,
         sections: [null != (e = null == r ? true : r.length) ? module : 0],
-        tags: s,
+        tags: o,
         onSelect: this.handleSelect,
         onSelectionChange: this.handleSelectionChange,
         onQueryChange: this.handleQueryChange,
         onRemoveTag: this.handleRemoveUser,
         onHeightChange: this.scrollToCounterSearchBarHeightChange,
         inputProps: {
-          "aria-labelledby": em,
-          "aria-controls": eg,
+          "aria-labelledby": ed,
+          "aria-controls": ep,
           "aria-expanded": true,
           "aria-activedescendant": "user-row-".concat(Chunk73800),
           autoComplete: "off"
@@ -378,7 +367,7 @@ class ev extends(r = Chunk73800.PureComponent) {
       className: Chunk918324.header,
       separator: module,
       children: [Chunk873546.tq ? this.renderMobileCloseButton() : null, (0, Chunk255367.jsx)(Chunk481060.X6q, {
-        id: em,
+        id: ed,
         variant: "heading-lg/semibold",
         children: exports
       }), this.renderSubtitle(), (0, Chunk255367.jsx)(Chunk481060.olH, {
@@ -398,8 +387,8 @@ class ev extends(r = Chunk73800.PureComponent) {
       if (null == exports) throw Error("no recipient in DM");
       let n = Chunk594174.default.getUser(exports),
         r = null != require ? require.username : "",
-        o = null != require && Chunk699516.Z.getRelationshipType(require.id) === Chunk981631.OGo.PENDING_OUTGOING;
-      return (0, Chunk255367.jsxs)(eb, {
+        l = null != require && Chunk699516.Z.getRelationshipType(require.id) === Chunk981631.OGo.PENDING_OUTGOING;
+      return (0, Chunk255367.jsxs)(eh, {
         className: Chunk918324.notFriends,
         children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-sm/medium",
@@ -420,7 +409,7 @@ class ev extends(r = Chunk73800.PureComponent) {
         })]
       })
     }
-    return exports ? this.isPartyFull() ? (0, Chunk255367.jsxs)(eb, {
+    return exports ? this.isPartyFull() ? (0, Chunk255367.jsxs)(eh, {
       className: Chunk918324.partyFull,
       children: [(0, Chunk255367.jsx)("div", {
         children: Chunk388032.intl.string(Chunk388032.t.OtTQDw)
@@ -429,8 +418,8 @@ class ev extends(r = Chunk73800.PureComponent) {
           number: this.getMaxParticipants()
         })
       })]
-    }) : 0 === require.length ? (0, Chunk255367.jsx)(eb, {
-      className: s()(Chunk918324.noResults, Chunk197571.marginBottom20),
+    }) : 0 === require.length ? (0, Chunk255367.jsx)(eh, {
+      className: o()(Chunk918324.noResults, Chunk197571.marginBottom20),
       children: (0, Chunk255367.jsx)("div", {
         children: Chunk388032.intl.string(Chunk388032.t.SV4DJy)
       })
@@ -449,10 +438,10 @@ class ev extends(r = Chunk73800.PureComponent) {
       fade: true,
       role: true,
       innerRole: "listbox",
-      innerId: eg,
+      innerId: ep,
       innerAriaMultiselectable: true,
       innerAriaOrientation: "vertical"
-    }) : (0, Chunk255367.jsxs)(eb, {
+    }) : (0, Chunk255367.jsxs)(eh, {
       className: Chunk918324.noFriends,
       children: [(0, Chunk255367.jsx)("div", {
         children: Chunk388032.intl.string(Chunk388032.t["7orY6O"])
@@ -483,7 +472,7 @@ class ev extends(r = Chunk73800.PureComponent) {
     } = this.state;
     if (null == module || !module.isMultiUserDM() || this.isPartyFull()) return null;
     let a = null != exports ? (0, Chunk366980.Z)(exports.code) : "",
-      l = Chunk120356.length > 0;
+      s = Chunk120356.length > 0;
     return (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
       children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
         tag: "h5",
@@ -501,9 +490,9 @@ class ev extends(r = Chunk73800.PureComponent) {
         }
       }), Chunk120356.length > 0 ? (0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-xs/normal",
-        className: s()(Chunk197571.marginTop8, Chunk918324.footerText),
+        className: o()(Chunk197571.marginTop8, Chunk918324.footerText),
         children: Chunk388032.intl.format(Chunk388032.t.ZVdJMz, {
-          numHours: "".concat(eh)
+          numHours: "".concat(24)
         })
       }) : null]
     })
@@ -517,7 +506,7 @@ class ev extends(r = Chunk73800.PureComponent) {
     if (this.isNotFriends() || !module || this.isPartyFull()) return null;
     if (null == exports) return (0, Chunk255367.jsxs)(Chunk481060.mzw, {
       className: Chunk918324.footer,
-      children: [require.size > 1 && (0, Chunk255367.jsx)(eI, {
+      children: [require.size > 1 && (0, Chunk255367.jsx)(eb, {
         previewIcon: this.state.previewIcon,
         selectedUsers: require,
         channelName: this.state.newChannelName,
@@ -547,7 +536,7 @@ class ev extends(r = Chunk73800.PureComponent) {
     } = this.props;
     return (0, Chunk255367.jsxs)(Chunk481060.Y0X, {
       transitionState: null != module ? module : Chunk481060.Dvm.ENTERED,
-      className: s()(Chunk918324.popout, {
+      className: o()(Chunk918324.popout, {
         [Chunk918324.showAsModal]: exports,
         [Chunk918324.showAsPopout]: !exports
       }),
@@ -557,7 +546,7 @@ class ev extends(r = Chunk73800.PureComponent) {
     })
   }
   handleAddFriend(e) {
-    this.props.onClose(), O.Z.sendRequest({
+    this.props.onClose(), x.Z.sendRequest({
       discordTag: $.ZP.getUserTag(e, {
         identifiable: "always"
       }),
@@ -570,47 +559,47 @@ class ev extends(r = Chunk73800.PureComponent) {
     return {
       affinities: e.map(e => {
         var t;
-        let n = U.Z.getUserAffinity(e);
+        let n = L.Z.getUserAffinity(e);
         return null != (t = null == n ? true : n.communicationProbability) ? t : false
       })
     }
   }
   constructor(...e) {
-    super(...e), es(this, "state", {
+    super(...e), eo(this, "state", {
       separator: false,
       copied: false,
       newChannelName: "",
       previewIcon: true
-    }), es(this, "copyTimeout", true), es(this, "scrollerRef", o.createRef()), es(this, "searchBarRef", o.createRef()), es(this, "_mobileCloseRef", o.createRef()), es(this, "_searchCounter", 0), es(this, "_existingTimeout", null), es(this, "scrollPageUp", () => {
+    }), eo(this, "copyTimeout", true), eo(this, "scrollerRef", l.createRef()), eo(this, "searchBarRef", l.createRef()), eo(this, "_mobileCloseRef", l.createRef()), eo(this, "_searchCounter", 0), eo(this, "_existingTimeout", null), eo(this, "scrollPageUp", () => {
       var e;
       null == (e = this.scrollerRef.current) || e.scrollPageUp({
         animate: true
       })
-    }), es(this, "scrollPageDown", () => {
+    }), eo(this, "scrollPageDown", () => {
       var e;
       null == (e = this.scrollerRef.current) || e.scrollPageDown({
         animate: true
       })
-    }), es(this, "renderMobileCloseButton", () => (0, i.jsx)("div", {
-      className: eo.mobileToolsContainer,
+    }), eo(this, "renderMobileCloseButton", () => (0, i.jsx)("div", {
+      className: el.mobileToolsContainer,
       ref: this._mobileCloseRef,
-      children: (0, i.jsx)(p.JcV, {
+      children: (0, i.jsx)(f.JcV, {
         containerRef: this._mobileCloseRef,
         children: (0, i.jsx)("div", {
           children: (0, i.jsx)(v.Z, {
-            className: eo.mobileToolsCloseIcon,
+            className: el.mobileToolsCloseIcon,
             closeAction: this.props.onClose,
             keybind: "ESC"
           })
         })
       })
-    })), es(this, "getRowHeight", (e, t) => {
+    })), eo(this, "getRowHeight", (e, t) => {
       if (e > 0) return 0;
       let {
         results: n
       } = this.props;
-      return null != n[t] ? this.props.inBornThisNamedExperiment ? e_ : ep : 0
-    }), es(this, "renderRow", e => {
+      return null != n[t] ? this.props.inBornThisNamedExperiment ? 48 : 42 : 0
+    }), eo(this, "renderRow", e => {
       let {
         section: t,
         row: n
@@ -618,22 +607,22 @@ class ev extends(r = Chunk73800.PureComponent) {
       if (t > 0) return null;
       let {
         results: r,
-        selectedUsers: o,
+        selectedUsers: l,
         selectedRow: a,
-        hideDiscriminator: s
-      } = this.props, l = r[n];
-      if (null == l) return null;
+        hideDiscriminator: o
+      } = this.props, s = r[n];
+      if (null == s) return null;
       let {
         user: c,
         comparator: u
-      } = l, d = o.has(c.id), f = !d && 0 >= this.getRemaining();
+      } = s, d = l.has(c.id), p = !d && 0 >= this.getRemaining();
       return (0, i.jsx)(en.Z, {
         row: n,
         user: c,
-        hideDiscriminator: s,
+        hideDiscriminator: o,
         comparator: u,
         checked: d,
-        disabled: f,
+        disabled: p,
         selected: n === a,
         onClick: this.handleClick,
         onMouseEnter: this.focusResult,
@@ -641,78 +630,78 @@ class ev extends(r = Chunk73800.PureComponent) {
         "aria-setsize": r.length,
         inlineUsername: !this.props.inBornThisNamedExperiment
       }, c.id)
-    }), es(this, "forceFocus", () => {
+    }), eo(this, "forceFocus", () => {
       let e = this.searchBarRef.current;
       null == e || e.focus()
-    }), es(this, "focusResult", e => {
-      y.Z.select(e)
-    }), es(this, "handleSelect", (e, t) => {
+    }), eo(this, "focusResult", e => {
+      C.Z.select(e)
+    }), eo(this, "handleSelect", (e, t) => {
       let {
         results: n,
         channel: r
       } = this.props;
-      null == t ? y.Z.clear(null == r ? true : r.id) : null != n && this.handleClick(n[t].user.id)
-    }), es(this, "handleSelectionChange", (e, t) => {
-      y.Z.select(t);
+      null == t ? C.Z.clear(null == r ? true : r.id) : null != n && this.handleClick(n[t].user.id)
+    }), eo(this, "handleSelectionChange", (e, t) => {
+      C.Z.select(t);
       let n = this.scrollerRef.current;
       null != n && n.scrollToIndex({
         section: e,
         row: t,
         padding: 8
       })
-    }), es(this, "handleQueryChange", e => {
+    }), eo(this, "handleQueryChange", e => {
       let {
         channel: t
-      } = this.props, n = (0, N.v_)(t);
-      y.Z.search(e, null == t ? true : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
-        z.default.track(er.rMx.SEARCH_USER_LIST_STARTED, eu(el({}, n), {
+      } = this.props, n = (0, P.v_)(t);
+      C.Z.search(e, null == t ? true : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
+        q.default.track(er.rMx.SEARCH_USER_LIST_STARTED, ec(es({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
           entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
           search_query_length: e.length
         })), this._searchCounter++
       }, 500)
-    }), es(this, "handleRemoveUser", e => {
+    }), eo(this, "handleRemoveUser", e => {
       let t = Array.from(this.props.selectedUsers);
-      y.Z.removeUser(t[e]), this.forceFocus()
-    }), es(this, "handleClick", e => {
+      C.Z.removeUser(t[e]), this.forceFocus()
+    }), eo(this, "handleClick", e => {
       let {
         selectedUsers: t,
         query: n,
         channel: r
       } = this.props;
-      t.has(e) ? y.Z.removeUser(e) : this.getRemaining() > 0 && (y.Z.addUser(e), n.length > 0 && y.Z.clear(null == r ? true : r.id)), this.forceFocus()
-    }), es(this, "handleAddFriendNavigation", () => {
-      E.Z.transitionToSection(er.pJs.ADD_FRIEND, {
+      t.has(e) ? C.Z.removeUser(e) : this.getRemaining() > 0 && (C.Z.addUser(e), n.length > 0 && C.Z.clear(null == r ? true : r.id)), this.forceFocus()
+    }), eo(this, "handleAddFriendNavigation", () => {
+      y.Z.transitionToSection(er.pJs.ADD_FRIEND, {
         explicit: true
       }), this.props.onClose()
-    }), es(this, "handleScroll", () => {
+    }), eo(this, "handleScroll", () => {
       let e = this.scrollerRef.current;
       null != e && this.setState({
         separator: !e.isScrolledToTop()
       })
-    }), es(this, "handleChannelNameChange", e => {
+    }), eo(this, "handleChannelNameChange", e => {
       this.setState({
         newChannelName: e
       })
-    }), es(this, "handleIconChange", e => {
+    }), eo(this, "handleIconChange", e => {
       let {
         imageUri: t
       } = e;
       this.setState({
         previewIcon: t
       })
-    }), es(this, "handleIconRemove", () => {
+    }), eo(this, "handleIconRemove", () => {
       this.setState({
         previewIcon: null
       })
-    }), es(this, "createNewDM", e => {
+    }), eo(this, "createNewDM", e => {
       let t = this._searchCounter,
         {
           channel: n
         } = this.props,
-        r = (0, N.v_)(n),
+        r = (0, P.v_)(n),
         i = true;
-      1 === e.length && (i = null == g.Z._openCachedDMChannel(e[0])), z.default.track(er.rMx.CREATE_DM_USER_LIST_CLICKED, eu(el({}, r), {
+      1 === e.length && (i = null == b.Z._openCachedDMChannel(e[0])), q.default.track(er.rMx.CREATE_DM_USER_LIST_CLICKED, ec(es({}, r), {
         is_new_dm: i,
         entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
         entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -721,29 +710,29 @@ class ev extends(r = Chunk73800.PureComponent) {
         affinity_score: this._getUserAffinities(e).affinities,
         name_is_set: "" !== this.state.newChannelName,
         icon_is_set: null != this.state.previewIcon
-      })), g.Z.openPrivateChannel({
+      })), b.Z.openPrivateChannel({
         recipientIds: e,
         location: "New Group DM"
       }).then(e => {
         let t = {};
-        "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && g.Z.updateChannel(e, t, A.Z.NEW_GROUP_DM_INVITE_MODAL), z.default.track(er.rMx.GDM_EDIT_INTERACTED, {
+        "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && b.Z.updateChannel(e, t, S.Z.NEW_GROUP_DM_INVITE_MODAL), q.default.track(er.rMx.GDM_EDIT_INTERACTED, {
           channel_id: e,
           channel_type: er.d4z.GROUP_DM,
-          location: A.Z.NEW_GROUP_DM_INVITE_MODAL,
+          location: S.Z.NEW_GROUP_DM_INVITE_MODAL,
           new_name_set: "" !== this.state.newChannelName,
           new_icon_set: null != this.state.previewIcon
         })
       })
-    }), es(this, "pushToExistingDM", (e, t) => {
+    }), eo(this, "pushToExistingDM", (e, t) => {
       let n = this._searchCounter,
-        r = (0, N.v_)(e),
-        i = V.Z.getChannelId() === e.id;
-      g.Z.addRecipients(e.id, t, er.Sbl.ADD_FRIENDS_TO_DM).then(n => {
+        r = (0, P.v_)(e),
+        i = G.Z.getChannelId() === e.id;
+      b.Z.addRecipients(e.id, t, er.Sbl.ADD_FRIENDS_TO_DM).then(n => {
         if (i) {
-          if (e.isDM() && n !== e.id) return void m.Z.call(n, false, true);
-          m.Z.ring(n, t, "dm_invite")
+          if (e.isDM() && n !== e.id) return void g.Z.call(n, false, true);
+          g.Z.ring(n, t, "dm_invite")
         }
-      }), z.default.track(er.rMx.CREATE_DM_USER_LIST_CLICKED, eu(el({}, r), {
+      }), q.default.track(er.rMx.CREATE_DM_USER_LIST_CLICKED, ec(es({}, r), {
         is_new_dm: true,
         entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
         entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -751,45 +740,45 @@ class ev extends(r = Chunk73800.PureComponent) {
         num_searches: n,
         affinity_score: this._getUserAffinities(t).affinities
       }))
-    }), es(this, "handleInviteUsers", () => {
+    }), eo(this, "handleInviteUsers", () => {
       let {
         channel: e,
         selectedUsers: t,
         onClose: n
       } = this.props, r = Array.from(t);
       if (null != e) {
-        let t = eC(Array.from(new Set([...e.recipients, ...r])));
-        t.size > 0 ? (0, p.h7j)(n => (0, i.jsx)(eO, eu(el({}, n), {
+        let t = ev(Array.from(new Set([...e.recipients, ...r])));
+        t.size > 0 ? (0, f.h7j)(n => (0, i.jsx)(em, ec(es({}, n), {
           onConfirm: () => this.pushToExistingDM(e, r),
           channelIds: t
-        })), {}, (0, p.VnL)(this.context.appContext)) : this.pushToExistingDM(e, r)
+        })), {}, (0, f.VnL)(this.context.appContext)) : this.pushToExistingDM(e, r)
       } else {
-        let e = eC(r);
-        r.length > 1 && e.size > 0 ? (0, p.h7j)(t => (0, i.jsx)(eO, eu(el({}, t), {
+        let e = ev(r);
+        r.length > 1 && e.size > 0 ? (0, f.h7j)(t => (0, i.jsx)(em, ec(es({}, t), {
           onConfirm: () => this.createNewDM(r),
           channelIds: e
-        })), {}, (0, p.VnL)(this.context.appContext)) : this.createNewDM(r)
+        })), {}, (0, f.VnL)(this.context.appContext)) : this.createNewDM(r)
       }
       n()
-    }), es(this, "handleCopyInvite", e => {
+    }), eo(this, "handleCopyInvite", e => {
       let {
         channel: t,
         invite: n
       } = this.props;
-      null != n && (0, q.JG)(e), null != this.copyTimeout && clearTimeout(this.copyTimeout), this.setState({
+      null != n && (0, K.JG)(e), null != this.copyTimeout && clearTimeout(this.copyTimeout), this.setState({
         copied: true
       }), this.copyTimeout = setTimeout(() => {
         this.setState({
           copied: false
         })
-      }, 1e3), z.default.track(er.rMx.COPY_INSTANT_INVITE, {
+      }, 1e3), q.default.track(er.rMx.COPY_INSTANT_INVITE, {
         server: null,
         channel: null != t ? t.id : null,
         channel_type: null != t ? t.type : null,
         location: er.Sbl.ADD_FRIENDS_TO_DM,
         code: null != n ? n.code : null
       })
-    }), es(this, "scrollToCounterSearchBarHeightChange", e => {
+    }), eo(this, "scrollToCounterSearchBarHeightChange", e => {
       var t, n;
       if (!this.props.inBornThisNamedExperiment) return;
       let r = null == (n = this.scrollerRef.current) || null == (t = n.getScrollerNode) ? true : t.call(n);
@@ -798,151 +787,145 @@ class ev extends(r = Chunk73800.PureComponent) {
   }
 }
 
-function eI(e) {
+function eb(e) {
   let {
     selectedUsers: t,
     channelName: n,
     previewIcon: r,
-    onIconChange: o,
+    onIconChange: l,
     onIconRemove: a,
-    onChange: s
+    onChange: o
   } = e, {
-    analyticsLocations: l
-  } = (0, C.ZP)(A.Z.NEW_GROUP_DM_INVITE_MODAL);
-  if (!(0, L.a)(A.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
-  let c = (0, P.pT)(Array.from(t), K.default, Y.Z);
+    analyticsLocations: s
+  } = (0, I.ZP)(S.Z.NEW_GROUP_DM_INVITE_MODAL);
+  if (!(0, w.a)(S.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
+  let c = (0, T.pT)(Array.from(t), Y.default, z.Z);
   return (0, i.jsxs)("div", {
-    className: eo.customizationContainer,
-    children: [(0, i.jsx)(x.B, {
-      className: eo.iconSelector,
+    className: el.customizationContainer,
+    children: [(0, i.jsx)(R.B, {
+      className: el.iconSelector,
       channel: null,
       previewIcon: r,
-      onIconChange: o,
+      onIconChange: l,
       onIconRemove: a,
-      analyticsLocations: l,
+      analyticsLocations: s,
       petite: true,
       allowRemovingIcon: false
-    }), (0, i.jsx)(p.Text, {
-      className: eo.channelNameLabel,
+    }), (0, i.jsx)(f.Text, {
+      className: el.channelNameLabel,
       variant: "text-sm/medium",
       color: "header-muted",
       children: ei.intl.string(ei.t.YynaLC)
-    }), (0, i.jsx)(_.Is, {
+    }), (0, i.jsx)(h.Is, {
       "aria-label": ei.intl.string(ei.t.YynaLC),
-      className: eo.channelNameInput,
-      inputClassName: eo.channelNameInputInner,
+      className: el.channelNameInput,
+      inputClassName: el.channelNameInputInner,
       name: "create-gdm-channel-name",
       placeholder: c,
       value: n,
-      onChange: s
+      onChange: o
     })]
   })
 }
 
-function eT(e) {
+function ey(e) {
   var {
     channel: t
-  } = e, n = ed(e, ["channel"]);
-  let r = (0, f.cj)([F.Z, Z.Z, W.Z], () => {
+  } = e, n = eu(e, ["channel"]);
+  let r = (0, p.cj)([H.Z, F.Z, W.Z], () => {
     let e;
-    return null != t && null != (e = Z.Z.getInvite(t.id)) && e.isExpired() && (e = null), eu(el({}, F.Z.getState()), {
+    return null != t && null != (e = F.Z.getInvite(t.id)) && e.isExpired() && (e = null), ec(es({}, H.Z.getState()), {
       invite: e,
       hideDiscriminator: W.Z.hidePersonalInformation,
       hideInstantInvites: W.Z.hideInstantInvites
     })
   });
-  return (0, i.jsx)(ev, el({
+  return (0, i.jsx)(eg, es({
     channel: t
   }, n, r))
 }
 
-function eS(e) {
+function e_(e) {
   let {
     channel: t,
     location: n,
     subscribeToGlobalHotkey: r,
     initialPopoutOpen: a
-  } = e, [s, l] = o.useState(null != a && a), c = (0, L.a)(n), u = "channel-invite-modal-".concat(null == t ? true : t.id), d = (0, p.VXO)(u), f = o.useCallback(() => (0, p.ZDy)(() => Promise.resolve(e => (0, i.jsx)(eT, eu(el({}, e), {
+  } = e, [o, s] = l.useState(null != a && a), c = (0, w.a)(n), u = "channel-invite-modal-".concat(null == t ? true : t.id), d = (0, f.VXO)(u), p = l.useCallback(() => (0, f.ZDy)(() => Promise.resolve(e => (0, i.jsx)(ey, ec(es({}, e), {
     channel: t,
     inBornThisNamedExperiment: c
   }))), {
     modalKey: u
-  }), [t, u, c]), _ = o.useCallback(() => {
-    let e = () => d ? (0, p.Mr3)(u) : f(),
-      t = () => l(e => !e);
-    return c ? e() : t()
-  }, [c, d, u, f, l]);
-  o.useEffect(() => (r && X.S.subscribe(er.CkL.TOGGLE_DM_CREATE, _), () => {
-    X.S.unsubscribe(er.CkL.TOGGLE_DM_CREATE, _)
-  }), [r, _, c]);
-  let h = e => (0, i.jsx)(eT, eu(el({}, e), {
-    onClose: e.closePopout,
-    channel: t,
-    inBornThisNamedExperiment: c
-  }));
-  return (0, T.ZP)(() => {
-    (0, k._)()
+  }), [t, u, c]), h = l.useCallback(() => c ? d ? (0, f.Mr3)(u) : p() : s(e => !e), [c, d, u, p, s]);
+  return l.useEffect(() => (r && X.S.subscribe(er.CkL.TOGGLE_DM_CREATE, h), () => {
+    X.S.unsubscribe(er.CkL.TOGGLE_DM_CREATE, h)
+  }), [r, h, c]), (0, O.ZP)(() => {
+    (0, D._)()
   }), {
-    showModal: f,
-    renderPopout: h,
-    toggleVisible: _,
-    popoutOpen: s,
-    setPopoutOpen: l,
+    showModal: p,
+    renderPopout: e => (0, i.jsx)(ey, ec(es({}, e), {
+      onClose: e.closePopout,
+      channel: t,
+      inBornThisNamedExperiment: c
+    })),
+    toggleVisible: h,
+    popoutOpen: o,
+    setPopoutOpen: s,
     inBornThisNamedExperiment: c
   }
 }
 
-function eA(e) {
+function eC(e) {
   var t, n;
   let {
     channel: r,
     iconClassName: a,
-    className: s,
-    icon: l,
+    className: o,
+    icon: s,
     tooltip: c,
     tooltipPosition: u = "bottom",
     popoutPosition: d = "bottom",
-    popoutAlign: _ = "right",
-    subscribeToGlobalHotkey: h = false,
-    location: m
-  } = e, g = o.useRef(null), E = null != l ? l : null == r ? p.kL_ : p.ejJ, {
-    showModal: b,
-    renderPopout: y,
-    toggleVisible: O,
+    popoutAlign: h = "right",
+    subscribeToGlobalHotkey: m = false,
+    location: g
+  } = e, b = l.useRef(null), y = null != s ? s : null == r ? f.kL_ : f.ejJ, {
+    showModal: _,
+    renderPopout: C,
+    toggleVisible: x,
     popoutOpen: v,
-    setPopoutOpen: I,
-    inBornThisNamedExperiment: T
-  } = eS({
+    setPopoutOpen: j,
+    inBornThisNamedExperiment: O
+  } = e_({
     initialPopoutOpen: null != r && r.isGroupDM() && 0 === r.recipients.length,
     channel: r,
-    location: m,
-    subscribeToGlobalHotkey: h
-  }), S = (0, f.e7)([K.default], () => K.default.getUser(null == r ? true : r.getRecipientId()));
-  return null != (t = null == S ? true : S.bot) && t || null != (n = null == S ? true : S.isProvisional) && n ? null : T ? (0, i.jsx)(et.ZP.Icon, {
-    ref: g,
-    onClick: b,
-    icon: E,
-    className: s,
+    location: g,
+    subscribeToGlobalHotkey: m
+  }), E = (0, p.e7)([Y.default], () => Y.default.getUser(null == r ? true : r.getRecipientId()));
+  return null != (t = null == E ? true : E.bot) && t || null != (n = null == E ? true : E.isProvisional) && n ? null : O ? (0, i.jsx)(et.ZP.Icon, {
+    ref: b,
+    onClick: _,
+    icon: y,
+    className: o,
     iconClassName: a,
     tooltip: c,
     tooltipPosition: u
-  }) : (0, i.jsx)(p.yRy, {
-    targetElementRef: g,
-    renderPopout: y,
+  }) : (0, i.jsx)(f.yRy, {
+    targetElementRef: b,
+    renderPopout: C,
     position: d,
     shouldShow: v,
     nudgeAlignIntoViewport: true,
     autoInvert: true,
-    align: _,
-    onRequestClose: () => I(false),
-    animation: p.yRy.Animation.NONE,
+    align: h,
+    onRequestClose: () => j(false),
+    animation: f.yRy.Animation.NONE,
     ignoreModalClicks: true,
     clickTrap: true,
-    children: e => (0, i.jsx)(et.ZP.Icon, eu(el({}, e), {
-      ref: g,
-      onClick: O,
-      icon: E,
-      className: s,
+    children: e => (0, i.jsx)(et.ZP.Icon, ec(es({}, e), {
+      ref: b,
+      onClick: x,
+      icon: y,
+      className: o,
       iconClassName: a,
       tooltip: c,
       tooltipPosition: u
@@ -950,68 +933,68 @@ function eA(e) {
   })
 }
 
-function eN(e) {
+function ex(e) {
   var {
     channel: t,
     popoutPosition: n = "bottom",
     popoutAlign: r = "right",
     fullWidth: a = false,
-    text: s,
-    icon: l,
+    text: o,
+    icon: s,
     subscribeToGlobalHotkey: c = false
-  } = e, u = ed(e, ["channel", "popoutPosition", "popoutAlign", "fullWidth", "text", "icon", "subscribeToGlobalHotkey"]);
-  let d = o.useRef(null),
+  } = e, u = eu(e, ["channel", "popoutPosition", "popoutAlign", "fullWidth", "text", "icon", "subscribeToGlobalHotkey"]);
+  let d = l.useRef(null),
     {
-      showModal: f,
-      renderPopout: _,
-      toggleVisible: h,
-      popoutOpen: m,
-      setPopoutOpen: g,
-      inBornThisNamedExperiment: E
-    } = eS({
+      showModal: p,
+      renderPopout: h,
+      toggleVisible: m,
+      popoutOpen: g,
+      setPopoutOpen: b,
+      inBornThisNamedExperiment: y
+    } = e_({
       initialPopoutOpen: false,
       channel: t,
       location: "PrivateChannelRecipientsInviteTextButton",
       subscribeToGlobalHotkey: c
     });
-  return E ? (0, i.jsx)(p.zxk, eu(el({}, u), {
-    onClick: f,
+  return y ? (0, i.jsx)(f.zxk, ec(es({}, u), {
+    onClick: p,
     variant: "primary",
     buttonRef: d,
-    text: s,
-    "aria-label": s,
-    icon: l,
+    text: o,
+    "aria-label": o,
+    icon: s,
     fullWidth: a
-  })) : (0, i.jsx)(p.yRy, {
+  })) : (0, i.jsx)(f.yRy, {
     targetElementRef: d,
-    renderPopout: _,
+    renderPopout: h,
     position: n,
-    shouldShow: m,
+    shouldShow: g,
     nudgeAlignIntoViewport: true,
     autoInvert: true,
     align: r,
-    onRequestClose: () => g(false),
-    animation: p.yRy.Animation.NONE,
+    onRequestClose: () => b(false),
+    animation: f.yRy.Animation.NONE,
     ignoreModalClicks: true,
     clickTrap: true,
-    children: e => (0, i.jsx)(p.zxk, eu(el({}, e, u), {
-      onClick: h,
+    children: e => (0, i.jsx)(f.zxk, ec(es({}, e, u), {
+      onClick: m,
       variant: "primary",
       buttonRef: d,
-      text: s,
-      "aria-label": s,
-      icon: l,
+      text: o,
+      "aria-label": o,
+      icon: s,
       fullWidth: a
     }))
   })
 }
 
-function eC(e) {
-  let t = eR(e);
-  return new Set((0, l.chain)(B.Z.getMutablePrivateChannels()).values().filter(e => (0, G.bc)(e.type)).filter(e => eR(e.recipients) === t).map(e => e.id).value())
+function ev(e) {
+  let t = ej(e);
+  return new Set((0, s.chain)(B.Z.getMutablePrivateChannels()).values().filter(e => (0, U.bc)(e.type)).filter(e => ej(e.recipients) === t).map(e => e.id).value())
 }
 
-function eR(e) {
+function ej(e) {
   return JSON.stringify(e.sort())
 }
-es(ev, "contextType", Chunk40851.ZP)
+eo(eg, "contextType", Chunk40851.ZP)

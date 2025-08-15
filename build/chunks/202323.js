@@ -1,4 +1,4 @@
-/** Chunk was on 7384 **/
+/** Chunk was on 30202 **/
 /** chunk id: 202323, original params: e,t,n (module,exports,require) **/
 module.exports = {
   clickerGameIcon: "clickerGameIcon__581ea",

@@ -329,7 +329,7 @@ let eO = Chunk73800.memo(function(e) {
   return (0, r.jsxs)("nav", {
     className: ea.privateChannels,
     "aria-label": ei.intl.string(ei.t.ZH9aPz),
-    children: [(0, r.jsx)(B.Z, {
+    children: [(0, r.jsx)(V.Z, {
       childRef: b,
       tutorialId: "direct-messages",
       position: "right",

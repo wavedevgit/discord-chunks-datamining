@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 570949, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 570949, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => p,
+  P: () => f,
   Z: () => h
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
@@ -17,17 +16,17 @@ var Chunk255367 = require("./255367.js"),
   Chunk314734 = require("./314734.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function f(e) {
   var t;
   let {
     application: n
-  } = e, r = null != (t = c.Z.getGuildId()) ? t : true, o = () => {
-    (0, i.Mr3)(f.e9), (0, u.yT)(d.ti.DISMISSED)
-  };
-  return (0, s.Z)({
+  } = e, l = null != (t = c.Z.getGuildId()) ? t : true;
+  return (0, o.Z)({
     application: n,
-    guildId: r,
-    onItemClick: o
+    guildId: l,
+    onItemClick: () => {
+      (0, i.Mr3)(p.e9), (0, u.yT)(d.ti.DISMISSED)
+    }
   })
 }
 
@@ -35,20 +34,20 @@ function h(e) {
   let {
     application: t,
     onSelect: n
-  } = e, s = l.Sb.useSetting(), c = (0, a.Z)({
+  } = e, o = s.Sb.useSetting(), c = (0, a.Z)({
     id: t.id,
-    label: _.intl.string(_.t["+NP/b2"])
-  }), u = p({
+    label: m.intl.string(m.t["+NP/b2"])
+  }), u = f({
     application: t
   });
-  return (0, r.jsxs)(i.v2r, {
+  return (0, l.jsxs)(i.v2r, {
     navId: "activity-shelf-item-context",
-    onClose: o.Zy,
-    "aria-label": _.intl.string(_.t.WkcHT0),
+    onClose: r.Zy,
+    "aria-label": m.intl.string(m.t.WkcHT0),
     onSelect: n,
-    children: [null != u && (0, r.jsxs)(i.kSQ, {
+    children: [null != u && (0, l.jsxs)(i.kSQ, {
       children: [...u]
-    }, "manage-app-actions"), s && (0, r.jsx)(i.kSQ, {
+    }, "manage-app-actions"), o && (0, l.jsx)(i.kSQ, {
       children: c
     }, "developer-actions")]
   })

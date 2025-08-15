@@ -3,40 +3,40 @@
 "use strict";
 require.d(exports, {
   HV: () => l,
-  IS: () => a,
+  IS: () => o,
   VY: () => c
 }), require("./804061.js"), require("./704826.js"), require("./35282.js");
 var Chunk5192 = require("./5192.js"),
   Chunk561308 = require("./561308.js"),
   Chunk388032 = require("./388032.jsx");
-let a = (e, t) => o.intl.formatToPlainString(o.t.tAwI1t, {
+let o = (e, t) => a.intl.formatToPlainString(a.t.tAwI1t, {
     username: t.username,
     activity: e.extra.game_name
   }),
   s = e => {
     let t = (0, i.kr)(e);
-    return (0, i.Ol)(e) ? t ? o.t.MHO1AQ : o.t.i7AOz8 : t ? o.t.lLPKY2 : o.t["bES+y8"]
+    return (0, i.Ol)(e) ? t ? a.t.MHO1AQ : a.t.i7AOz8 : t ? a.t.lLPKY2 : a.t["bES+y8"]
   },
   l = (e, t, n) => {
     let i = s(e),
-      a = r.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n),
+      o = r.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n),
       l = e.extra.game_name;
-    return o.intl.formatToMarkdownString(i, {
+    return a.intl.formatToMarkdownString(i, {
       gameName: l,
-      userName: a
+      userName: o
     }).replaceAll("*", "")
   },
   c = e => {
     let {
       entry: t,
       channel: n,
-      users: a,
+      users: o,
       countOthers: s
-    } = e, l = (0, i.kr)(t) ? o.t.QaUWPT : o.t["7j/5mp"];
-    return o.intl.formatToMarkdownString(l, {
+    } = e, l = (0, i.kr)(t) ? a.t.QaUWPT : a.t["7j/5mp"];
+    return a.intl.formatToMarkdownString(l, {
       gameName: t.extra.game_name,
-      user1: r.ZP.getName(null == n ? true : n.guild_id, null == n ? true : n.id, a[0]),
-      user2: r.ZP.getName(null == n ? true : n.guild_id, null == n ? true : n.id, a[1]),
+      user1: r.ZP.getName(null == n ? true : n.guild_id, null == n ? true : n.id, o[0]),
+      user2: r.ZP.getName(null == n ? true : n.guild_id, null == n ? true : n.id, o[1]),
       countOthers: s
     }).replaceAll("*", "")
   }

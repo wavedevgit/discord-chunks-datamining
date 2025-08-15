@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 365831, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 365831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  y: () => C
+  y: () => x
 }), require("./388685.js"), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -21,123 +20,114 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk395760 = require("./395760.js");
 
-function b(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function y(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function O(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = e => 1 - Math.pow(1 - e, 4),
-  T = {
+let O = e => 1 - Math.pow(1 - e, 4),
+  S = {
     mass: 1,
     friction: 64,
     tension: 1e3,
     clamp: true
   },
-  S = {
+  I = {
     mass: 1,
     friction: 64,
     tension: 1e3
   },
-  A = {
+  j = {
     mass: 1,
     friction: 35,
     tension: 1e3
   };
 
-function N() {
-  let {
-    activeVoice: e
-  } = (0, Chunk378441.o)(), t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getVoiceFilterPlaybackEnabled()), n = Chunk73800.useCallback(() => {
-    (0, Chunk460181.GN)(exports ? "voice_filter_loopback_off" : "voice_filter_loopback_on"), (0, Chunk743498._j)(!exports)
-  }, [exports]);
-  return Chunk73800.useEffect(() => (Chunk846027.Z.setLoopback("voice_filter_preview", null != module && exports), () => {
-    Chunk846027.Z.setLoopback("voice_filter_preview", false)
-  }), [exports, module]), {
-    isLoopbackEnabled: exports,
-    toggleLoopback: require
-  }
-}
-
-function C(e) {
+function x(e) {
   var t;
   let {} = e, {
     activeVoice: n
-  } = (0, m.o)(), o = (0, d.Z)(n), l = (0, h.z)(n), {
-    toggleLoopback: u,
-    isLoopbackEnabled: f
-  } = N(), _ = f ? c.Iy5 : c.X_q, b = i.useCallback(() => (0, p.v6)(null), []), O = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOWER).hex(), C = (0, c.dQu)(c.TVs.colors.WHITE).hex(), R = i.useRef(0), P = n !== o ? R.current + 1 : R.current;
+  } = (0, h.o)(), l = (0, d.Z)(n), x = (0, g.z)(n), {
+    toggleLoopback: E,
+    isLoopbackEnabled: P
+  } = function() {
+    let {
+      activeVoice: e
+    } = (0, h.o)(), t = (0, s.e7)([p.Z], () => p.Z.getVoiceFilterPlaybackEnabled()), n = i.useCallback(() => {
+      (0, f.GN)(t ? "voice_filter_loopback_off" : "voice_filter_loopback_on"), (0, m._j)(!t)
+    }, [t]);
+    return i.useEffect(() => (u.Z.setLoopback("voice_filter_preview", null != e && t), () => {
+      u.Z.setLoopback("voice_filter_preview", false)
+    }), [t, e]), {
+      isLoopbackEnabled: t,
+      toggleLoopback: n
+    }
+  }(), C = P ? c.Iy5 : c.X_q, T = i.useCallback(() => (0, m.v6)(null), []), N = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOWER).hex(), A = (0, c.dQu)(c.TVs.colors.WHITE).hex(), w = i.useRef(0), D = n !== l ? w.current + 1 : w.current;
   i.useEffect(() => {
-    R.current = P
-  }, [P]);
-  let w = null != n,
-    D = !w,
-    L = w && null != o,
-    x = null == n && null != o,
-    M = (0, c.q_F)({
-      opacity: +!!w,
-      height: 72 * !!w,
-      pointerEvents: w ? "auto" : "none",
-      backgroundColor: null != (t = null == l ? true : l.baseColor) ? t : O,
+    w.current = D
+  }, [D]);
+  let Z = null != n,
+    L = !Z,
+    M = Z && null != l,
+    k = null == n && null != l,
+    U = (0, c.q_F)({
+      opacity: +!!Z,
+      height: 72 * !!Z,
+      pointerEvents: Z ? "auto" : "none",
+      backgroundColor: null != (t = null == x ? true : x.baseColor) ? t : N,
       config: e => "backgroundColor" === e ? {
-        easing: I,
+        easing: O,
         duration: 200
-      } : T,
-      delay: 100 * !!L
+      } : S,
+      delay: 100 * !!M
     }, "respect-motion-settings"),
-    j = (0, c.Yzy)(null == l ? true : l.id, {
-      key: P,
+    R = (0, c.Yzy)(null == x ? true : x.id, {
+      key: D,
       from: {
         opacity: 0,
-        background: null == l ? true : l.splashGradient
+        background: null == x ? true : x.splashGradient
       },
       enter: {
         opacity: 1,
-        delay: L ? 100 : 50
+        delay: M ? 100 : 50
       },
       leave: {
         opacity: 0,
-        delay: L ? 100 : 150
+        delay: M ? 100 : 150
       },
       config: {
-        easing: I,
-        duration: L ? 250 : 200
+        easing: O,
+        duration: M ? 250 : 200
       }
     }, "respect-motion-settings"),
-    [k] = (0, c.bYB)(2, e => ({
-      from: L ? {
+    [V] = (0, c.bYB)(2, e => ({
+      from: M ? {
         translateY: 0,
         opacity: 1
       } : {
@@ -147,22 +137,22 @@ function C(e) {
       to: null == n ? {
         translateY: 16,
         opacity: 0
-      } : L ? null : {
+      } : M ? null : {
         translateY: 0,
         opacity: 1
       },
       config: e => "opacity" === e ? {
-        easing: I,
+        easing: O,
         duration: 200
-      } : S,
-      delay: x ? 50 - 50 * e : 200 + 50 * e
+      } : I,
+      delay: k ? 50 - 50 * e : 200 + 50 * e
     }), "respect-motion-settings", [n]),
-    U = (0, c.Yzy)(null == l ? true : l.iconURL, {
-      key: P,
+    F = (0, c.Yzy)(null == x ? true : x.iconURL, {
+      key: D,
       from: {
         opacity: 0,
         scale: 80 / 88,
-        translateX: L ? false : 0
+        translateX: M ? false : 0
       },
       enter: {
         opacity: 1,
@@ -172,21 +162,21 @@ function C(e) {
       },
       leave: {
         opacity: 0,
-        scale: w ? 80 / 88 : 1,
-        translateX: 24 * !!w,
-        delay: 150 * !L
+        scale: Z ? 80 / 88 : 1,
+        translateX: 24 * !!Z,
+        delay: 150 * !M
       },
       config: e => "opacity" === e ? {
-        easing: I,
+        easing: O,
         duration: 200
-      } : w ? T : A
+      } : Z ? S : j
     }, "respect-motion-settings"),
-    G = (0, c.Yzy)(null == l ? true : l.name, {
-      key: P,
+    G = (0, c.Yzy)(null == x ? true : x.name, {
+      key: D,
       from: {
         opacity: 0,
-        scale: L ? .9 : 1,
-        translateY: 16 * !L
+        scale: M ? .9 : 1,
+        translateY: 16 * !M
       },
       enter: {
         opacity: 1,
@@ -195,116 +185,116 @@ function C(e) {
         translateY: 0,
         delay: 150,
         config: e => "opacity" === e ? {
-          easing: I,
+          easing: O,
           duration: 200
-        } : L ? T : S
+        } : M ? S : I
       },
       leave: {
         opacity: 0,
         translateX: 24 * (null != n),
         translateY: 16 * (null == n),
-        delay: x ? 100 : 50,
+        delay: k ? 100 : 50,
         config: e => "opacity" === e ? {
-          easing: I,
+          easing: O,
           duration: 200
-        } : L ? T : S
+        } : M ? S : I
       }
     }, "respect-motion-settings"),
-    B = g.intl.string(f ? g.t.esVyo6 : g.t.UQqFCA);
-  return (0, r.jsxs)(s.animated.div, {
-    className: E.voiceFilterHero,
-    "aria-hidden": D,
-    style: M,
+    B = b.intl.string(P ? b.t.esVyo6 : b.t.UQqFCA);
+  return (0, r.jsxs)(o.animated.div, {
+    className: v.voiceFilterHero,
+    "aria-hidden": L,
+    style: U,
     children: [(0, r.jsx)("div", {
-      className: a()([E.bgGradient, E.bgGradientHighlight])
-    }), j(e => (0, r.jsx)(s.animated.div, {
-      className: E.bgGradient,
+      className: a()([v.bgGradient, v.bgGradientHighlight])
+    }), R(e => (0, r.jsx)(o.animated.div, {
+      className: v.bgGradient,
       style: e
     })), (0, r.jsx)("div", {
-      className: E.iconWrapper,
-      children: U((e, t) => (0, r.jsx)(s.animated.img, {
-        className: E.activeVoiceIcon,
+      className: v.iconWrapper,
+      children: F((e, t) => (0, r.jsx)(o.animated.img, {
+        className: v.activeVoiceIcon,
         style: e,
         alt: "",
         src: t
       }, t))
     }), (0, r.jsx)("div", {
-      className: E.descriptionWrapper,
-      children: G((e, t) => (0, r.jsxs)(s.animated.div, {
-        className: E.description,
+      className: v.descriptionWrapper,
+      children: G((e, t) => (0, r.jsxs)(o.animated.div, {
+        className: v.description,
         style: e,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
           color: "always-white",
-          className: E.offWhiteText,
-          children: g.intl.string(g.t.WW5DAA)
+          className: v.offWhiteText,
+          children: b.intl.string(b.t.WW5DAA)
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "always-white",
-          children: null != t ? g.intl.string(t) : ""
+          children: null != t ? b.intl.string(t) : ""
         })]
       }))
     }), (0, r.jsxs)("div", {
-      className: E.buttonWrapper,
+      className: v.buttonWrapper,
       children: [(0, r.jsx)(c.ua7, {
         "aria-label": B,
-        tooltipClassName: E.tooltip,
-        tooltipContentClassName: E.tooltipContent,
-        shouldShow: w,
+        tooltipClassName: v.tooltip,
+        tooltipContentClassName: v.tooltipContent,
+        shouldShow: Z,
         text: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-sm/normal",
             color: "header-primary",
-            className: E.tooltipHeader,
+            className: v.tooltipHeader,
             children: B
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-muted",
-            children: g.intl.string(f ? g.t.Sg6cfn : g.t.ZKhtw8)
+            children: b.intl.string(P ? b.t.Sg6cfn : b.t.ZKhtw8)
           })]
         }),
-        children: e => (0, r.jsx)(s.animated.div, {
-          className: E.buttonWrapper,
-          style: k[0],
-          children: (0, r.jsx)(c.P3F, v(y({
-            className: a()(E.button, {
-              [E.loopbackEnabled]: f
+        children: e => (0, r.jsx)(o.animated.div, {
+          className: v.buttonWrapper,
+          style: V[0],
+          children: (0, r.jsx)(c.P3F, y(_({
+            className: a()(v.button, {
+              [v.loopbackEnabled]: P
             }),
-            "aria-hidden": D,
+            "aria-hidden": L,
             focusProps: {
-              enabled: w
+              enabled: Z
             },
-            tabIndex: w ? 0 : false
+            tabIndex: Z ? 0 : false
           }, e), {
-            onClick: () => u(),
-            children: (0, r.jsx)(_, {
+            onClick: () => E(),
+            children: (0, r.jsx)(C, {
               size: "custom",
               width: 20,
               height: 20,
-              color: C
+              color: A
             })
           }))
         })
       }), (0, r.jsx)(c.ua7, {
-        shouldShow: w,
-        text: g.intl.string(g.t.UvMx7O),
-        children: e => (0, r.jsx)(s.animated.div, {
-          className: E.buttonWrapper,
-          style: k[1],
-          children: (0, r.jsx)(c.P3F, v(y({
-            className: E.button,
-            "aria-hidden": D,
+        shouldShow: Z,
+        text: b.intl.string(b.t.UvMx7O),
+        children: e => (0, r.jsx)(o.animated.div, {
+          className: v.buttonWrapper,
+          style: V[1],
+          children: (0, r.jsx)(c.P3F, y(_({
+            className: v.button,
+            "aria-hidden": L,
             focusProps: {
-              enabled: w
+              enabled: Z
             },
-            tabIndex: w ? 0 : false
+            tabIndex: Z ? 0 : false
           }, e), {
-            onClick: b,
+            onClick: T,
             children: (0, r.jsx)(c.k$p, {
               size: "custom",
               width: 20,
               height: 20,
-              color: C
+              color: A
             })
           }))
         })

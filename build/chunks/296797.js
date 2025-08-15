@@ -1,7 +1,7 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 296797, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk73800 = require("./73800.js"),
   Chunk592125 = require("./592125.js"),
@@ -13,7 +13,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk197386 = require("./197386.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e) {
+function p(e) {
   let {
     onTransition: t
   } = e;
@@ -21,8 +21,8 @@ function h(e) {
     async function e(e) {
       let {
         location: n
-      } = e, r = (0, s.p)(n);
-      if (null == r || !(0, o.Z)(r)) return;
+      } = e, r = (0, o.p)(n);
+      if (null == r || !(0, s.Z)(r)) return;
       l.Z.getVoiceChannelId() !== r && await (0, c.Z)({
         channelId: r
       });

@@ -1,11 +1,10 @@
-/** Chunk was on web.js **/
-/** chunk id: 691731, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 691731, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  g: () => r
+});
 
 function r(e, t) {
   var n, r;
   return (null == t || null == (n = t.party) ? true : n.id) != null && (null == e || null == (r = e.party) ? true : r.id) != null && e.party.id === t.party.id
 }
-require.d(exports, {
-  g: () => r
-})

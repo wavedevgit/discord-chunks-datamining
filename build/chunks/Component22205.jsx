@@ -2,12 +2,12 @@
 /** chunk id: 22205, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk717976 = require("./717976.js"),
   Chunk818405 = require("./818405.js"),
   Chunk587158 = require("./587158.js"),
@@ -41,7 +41,7 @@ function w(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let D = a().throttle(() => {
+let D = o().throttle(() => {
     Chunk797614.Z.increment({
       name: Chunk286379.V.APP_CRASHED,
       tags: ["reason:".concat(Chunk818405.v.UNHANDLED_JS_ERROR), "level:".concat(Chunk587158.c.FATAL)]
@@ -54,8 +54,8 @@ let D = a().throttle(() => {
 function x(e) {
   var t, n;
   let {
-    error: o,
-    onLock: a,
+    error: a,
+    onLock: o,
     onReload: l,
     onDisable: c,
     onCrashDisabled: u
@@ -66,22 +66,22 @@ function x(e) {
     null != m.current && clearTimeout(m.current)
   }));
   let T = i.useCallback(() => {
-      _.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == a || a(), null == u || u()
-    }, [_, a, u]),
+      _.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == o || o(), null == u || u()
+    }, [_, o, u]),
     w = i.useCallback(e => {
-      O || (v(true), null == a || a(), p.Z.track(C.rMx.NOTIFICATION_CLICKED, {
+      O || (v(true), null == o || o(), p.Z.track(C.rMx.NOTIFICATION_CLICKED, {
         notif_type: N.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => null == l ? true : l(), 200))
-    }, [a, l, O]),
+    }, [o, l, O]),
     D = i.useCallback(e => {
       e.stopPropagation(), e.shiftKey ? (y(true), null != m.current && clearTimeout(m.current)) : y(false)
     }, [y]),
     x = i.useCallback(e => {
-      e.stopPropagation(), null == a || a(), null == c || c()
-    }, [c, a]),
+      e.stopPropagation(), null == o || o(), null == c || c()
+    }, [c, o]),
     M = (0, d.e7)([S.ZP], () => S.ZP.getFocusedRunningGame()),
-    j = g ? (0, r.jsxs)("div", {
+    k = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
         color: "text-primary",
@@ -91,25 +91,25 @@ function x(e) {
         children: [(0, r.jsx)(f.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: o.message
+          children: a.message
         }), (0, r.jsx)(f.Text, {
           variant: "text-xxs/normal",
           color: "text-secondary",
           children: (0, r.jsx)("code", {
             className: P.code,
             children: (0, r.jsx)("pre", {
-              children: o.stack
+              children: a.stack
             })
           })
         })]
       })]
     }) : null,
-    k = g ? null : R.intl.string(R.t.oEJEFh),
+    j = g ? null : R.intl.string(R.t.oEJEFh),
     U = null != (t = null == I ? true : I.isStaff()) && t || null != (n = null == I ? true : I.isStaffPersonal()) && n;
   return (0, r.jsx)(A.Y, {
     title: R.intl.string(R.t.U38qZm),
-    body: j,
-    hint: U ? k : true,
+    body: k,
+    hint: U ? j : true,
     confirmText: R.intl.string(R.t.a3HlgI),
     cancelText: null != M ? R.intl.string(R.t.qIYnPj) : true,
     icon: (0, r.jsx)(b.Z, {
@@ -120,7 +120,7 @@ function x(e) {
     onNotificationClick: D,
     onConfirmClick: w,
     onCancelClick: null != M ? x : true,
-    onDismissClick: a,
+    onDismissClick: o,
     expand: true,
     locked: true,
     notificationId: "overlay-crashed",
@@ -205,4 +205,4 @@ class M extends Chunk73800.PureComponent {
     }), w(this, "pid", null)
   }
 }
-let j = M
+let k = M

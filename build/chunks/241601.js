@@ -51,7 +51,7 @@ async function u(e) {
   let t = l.getState();
   t.setLoadingStarted(e);
   let n = [];
-  a.intl.setLocale(e), n.push(), n.push((async () => {
+  o.intl.setLocale(e), n.push(), n.push((async () => {
     await (0, s.f)(), await (0, i.loadAllMessagesInLocale)(e)
   })()), null != r && (r.setLocale(e), n.push(r.loadPromise)), n.push(d(e)), n.push(f(e)), n.push(_(e)), await Promise.all(n).catch(n => t.setLoadingFailed(n, e)), t.setLoadingSucceeded(e)
 }

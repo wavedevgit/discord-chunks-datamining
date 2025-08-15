@@ -1,4 +1,4 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 753436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => f
@@ -23,7 +23,7 @@ function f(e) {
     channelId: m,
     loading: g = false,
     disableInteraction: b = false
-  } = e, j = (0, c.Z)(t.applicationId), y = j.length > 0, O = i.default.getCurrentUser(), x = (null == O ? true : O.id) === n;
+  } = e, j = (0, c.Z)(t.applicationId), y = j.length > 0, O = i.default.getCurrentUser(), h = (null == O ? true : O.id) === n;
   return g ? (0, r.jsx)("div", {
     className: d.loadingCover
   }) : (0, r.jsxs)("div", {
@@ -35,7 +35,7 @@ function f(e) {
       userId: n,
       disableInteraction: b,
       className: y ? u.socialProofBackdrop : true
-    }), !b && x && (0, r.jsx)(a.Z, {
+    }), !b && h && (0, r.jsx)(a.Z, {
       game: t,
       widgetType: f,
       className: u.removeGameButton,

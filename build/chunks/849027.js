@@ -33,7 +33,7 @@ async function b(e) {
     case E.oC.GUILD_SHOP:
       return (0, i.r)(b, y);
     case E.oC.MEMBER_APPLICATIONS:
-      return (0, o.v)(t);
+      return (0, a.v)(t);
     case E.oC.GUILD_HOME:
       return (0, l.s)(t);
     case E.oC.CHANNEL_BROWSER:
@@ -43,7 +43,7 @@ async function b(e) {
     case E.oC.CUSTOMIZE_COMMUNITY:
       return null != b && b.features.has(g.oNc.COMMUNITY);
     case E.oC.MEMBER_SAFETY:
-      return (0, a.lv)(t);
+      return (0, o.lv)(t);
     case E.oC.GUILD_BOOSTS:
       returntrue;
     case E.oC.REPORT_TO_MOD:

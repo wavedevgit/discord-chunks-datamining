@@ -1,7 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 984211, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-
+/** Chunk was on 66866 **/
+/** chunk id: 984211, original params: e,t,n (module,exports,require) **/
 function r(e) {
   if (null == e || null == e.party || null == e.party.size || e.party.size.length < 2) return {
     partySize: false,

@@ -1,4 +1,4 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 116906, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -41,8 +41,8 @@ function I(e) {
   }), N = (0, u.b)({
     location: "UserProfileModalActivity"
   }), {
-    live: S,
-    recent: w,
+    live: w,
+    recent: S,
     stream: A
   } = (0, f.Z)(t.id), {
     voiceChannel: C,
@@ -53,12 +53,12 @@ function I(e) {
   }), L = (0, i.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, G = (0, i.e7)([s.Z, c.Z], () => {
     let e = R ? s.Z.getStatus() : c.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), k = S.length > 0 || null != A, B = Z && null == A && null == D && null != C, M = !G && (k || B), U = w.length > 0;
+  }), k = w.length > 0 || null != A, B = Z && null == A && null == D && null != C, M = !G && (k || B), U = S.length > 0;
   return M || U || !L ? (0, r.jsxs)(l.zJl, {
     className: v.scroller,
     fade: true,
     children: [M ? (0, r.jsx)(m.Z, {
-      "aria-label": h.intl.string(h.t.J6STd3),
+      "aria-label": x.intl.string(x.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: v.activityList,
         children: [!N && B && (0, r.jsx)("li", {
@@ -77,7 +77,7 @@ function I(e) {
             onClose: T,
             profileGuildId: null == I ? true : I.guildId
           })
-        }), S.map((e, i) => (0, r.jsx)("li", {
+        }), w.map((e, i) => (0, r.jsx)("li", {
           children: (0, r.jsx)(g.Z, {
             user: t,
             currentUser: n,
@@ -88,17 +88,17 @@ function I(e) {
         }, "live-".concat(i)))]
       })
     }) : null, U ? (0, r.jsx)(m.Z, {
-      heading: h.intl.string(h.t.M0zgnZ),
-      introText: R ? h.intl.format(h.t["4bk9Ag"], {
+      heading: x.intl.string(x.t.M0zgnZ),
+      introText: R ? x.intl.format(x.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(l.eee, {
-          href: d.Z.getArticleURL(x.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: d.Z.getArticleURL(h.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : true,
       scrollIntoView: E === O.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: v.activityList,
-        children: w.map(e => (0, r.jsx)("li", {
+        children: S.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(b.Z, {
             location: "UserProfileModalActivity",
             user: t,

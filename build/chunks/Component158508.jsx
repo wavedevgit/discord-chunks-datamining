@@ -76,7 +76,7 @@ function m(e) {
     isIgnored: s.Z.isIgnored(O),
     isBlocked: s.Z.isBlocked(O)
   }), [O]);
-  return v || T ? null : (0, r.jsx)(o.sNh, {
+  return v || T ? null : (0, r.jsx)(a.sNh, {
     id: "ignore",
     color: "default",
     label: I ? u.intl.string(u.t["8wXU9P"]) : (0, r.jsx)("div", {
@@ -84,12 +84,12 @@ function m(e) {
       children: u.intl.string(u.t.ytCpKi)
     }),
     action: I ? () => {
-      null == E || E(), a.Z.unignoreUser(O, null != b ? b : "use-ignore-user-item-web", null != p ? p : true)
+      null == E || E(), o.Z.unignoreUser(O, null != b ? b : "use-ignore-user-item-web", null != p ? p : true)
     } : () => {
-      (0, o.ZDy)(async () => {
+      (0, a.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("97652"), n.e("28246")]).then(n.bind(n, 240515));
+        } = await Promise.all([n.e("97652"), n.e("5210")]).then(n.bind(n, 240515));
         return n => (0, r.jsx)(e, h(_({}, n), {
           guildId: f,
           channelId: p,
@@ -99,7 +99,7 @@ function m(e) {
           location: b
         }))
       }, {
-        contextKey: (0, o.VnL)(y)
+        contextKey: (0, a.VnL)(y)
       })
     }
   })

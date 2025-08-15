@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 582220, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 582220, original params: e,t,n (module,exports,require) **/
 module.exports = {
   safetyBanner: "safetyBanner__51e4d",
   safetyShieldIcon: "safetyShieldIcon__51e4d",

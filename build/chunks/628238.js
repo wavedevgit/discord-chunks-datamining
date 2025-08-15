@@ -1,12 +1,10 @@
-/** Chunk was on web.js **/
-/** chunk id: 628238, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 628238, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => i
 });
 var Chunk709054 = require("./709054.js");
-let i = "1088216706570268682";
 
-function o(e) {
-  return !(e < r.default.extractTimestamp(i))
+function i(e) {
+  return !(e < r.default.extractTimestamp("1088216706570268682"))
 }

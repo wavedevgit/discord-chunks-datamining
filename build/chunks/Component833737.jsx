@@ -1,7 +1,7 @@
 /** Chunk was on 16120 **/
 /** chunk id: 833737, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => v
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -29,77 +29,77 @@ var Chunk255367 = require("./255367.js"),
   Chunk931617 = require("./931617.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let C = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   var t;
   let {
     user: n,
     guildId: u,
     channelId: c,
-    context: M,
-    onSelect: C,
-    moderationAlertId: A,
-    analyticsLocation: I,
-    analyticsLocations: T,
-    onCloseContextMenu: D,
-    showTransferOwnershipItem: x
+    context: I,
+    onSelect: v,
+    moderationAlertId: h,
+    analyticsLocation: T,
+    analyticsLocations: D,
+    onCloseContextMenu: C,
+    showTransferOwnershipItem: U
   } = e, {
-    analyticsLocations: w
-  } = (0, f.ZP)(d.Z.CONTEXT_MENU), U = (0, s.O)(), R = null != (t = null == T ? true : T[0]) ? t : w[0], k = (0, O.sE)(u, {
-    location: R,
+    analyticsLocations: R
+  } = (0, f.ZP)(d.Z.CONTEXT_MENU), L = (0, s.O)(), w = null != (t = null == D ? true : D[0]) ? t : R[0], x = (0, g.sE)(u, {
+    location: w,
     targetUserId: n.id
-  }), L = (0, i.e7)([Z.Z], () => {
+  }), G = (0, i.e7)([y.Z], () => {
     var e;
-    return null != (e = Z.Z.getUserVoiceChannelId(u, n.id)) ? e : true
-  }, [u, n.id]), q = r.useCallback(() => {
-    k(O.jQ.COPY_ID)
-  }, [k]), B = (0, i.e7)([E.ZP], () => E.ZP.isMember(u, n.id), [u, n.id]), G = (0, _.Z)({
+    return null != (e = y.Z.getUserVoiceChannelId(u, n.id)) ? e : true
+  }, [u, n.id]), k = l.useCallback(() => {
+    x(g.jQ.COPY_ID)
+  }, [x]), B = (0, i.e7)([b.ZP], () => b.ZP.isMember(u, n.id), [u, n.id]), q = (0, A.Z)({
     userId: n.id,
     guildId: u,
-    sourceAnalyticsLocations: T
-  }), V = (0, j.Z)(n.id, M), F = (0, g.Z)({
+    sourceAnalyticsLocations: D
+  }), K = (0, j.Z)(n.id, I), F = (0, E.Z)({
     guildId: u,
     userId: n.id,
-    analyticsLocation: null != I ? I : U.location,
-    analyticsLocations: [R],
-    context: M
-  }), K = (0, p.Z)({
+    analyticsLocation: null != T ? T : L.location,
+    analyticsLocations: [w],
+    context: I
+  }), V = (0, p.Z)({
     user: n,
     guildId: u,
-    location: R,
+    location: w,
     channelId: c
-  }), Y = (0, y.Z)({
+  }), W = (0, m.Z)({
     user: n,
     guildId: u,
-    location: R,
+    location: w,
     channelId: c
-  }), Q = (0, P.Z)(n, u, null != c ? c : L, R), H = (0, h.Z)(c, A), W = (0, v.Z)(n, u), X = (0, S.Z)(n.id, u, false, R), z = (0, b.Z)({
+  }), Y = (0, _.Z)(n, u, null != c ? c : G, w), H = (0, M.Z)(c, h), Q = (0, S.Z)(n, u), X = (0, Z.Z)(n.id, u, false, w), J = (0, O.Z)({
     id: n.id,
     label: N.intl.string(N.t["/AXYnJ"]),
-    onSuccess: q
-  }), J = (0, m.Z)(n, u), $ = !!(null == n ? true : n.isNonUserBot());
-  return (0, l.jsxs)(a.v2r, {
+    onSuccess: k
+  }), z = (0, P.Z)(n, u), $ = !!(null == n ? true : n.isNonUserBot());
+  return (0, r.jsxs)(a.v2r, {
     navId: "user-context",
     onClose: () => {
-      (0, o.Zy)(), null == D || D()
+      (0, o.Zy)(), null == C || C()
     },
     "aria-label": N.intl.string(N.t.liqwPD),
-    onSelect: C,
-    children: [!$ && (0, l.jsxs)(l.Fragment, {
-      children: [(0, l.jsxs)(a.kSQ, {
-        children: [G, V]
-      }), (0, l.jsxs)(a.kSQ, {
-        children: [F, Y, K]
-      }), B && (0, l.jsxs)(l.Fragment, {
-        children: [(0, l.jsx)(a.kSQ, {
-          children: Q
-        }), (0, l.jsxs)(a.kSQ, {
-          children: [X, J]
+    onSelect: v,
+    children: [!$ && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsxs)(a.kSQ, {
+        children: [q, K]
+      }), (0, r.jsxs)(a.kSQ, {
+        children: [F, W, V]
+      }), B && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(a.kSQ, {
+          children: Y
+        }), (0, r.jsxs)(a.kSQ, {
+          children: [X, z]
         })]
-      }), null != A ? H : null, x && null != W ? (0, l.jsx)(a.kSQ, {
-        children: W
+      }), null != h ? H : null, U && null != Q ? (0, r.jsx)(a.kSQ, {
+        children: Q
       }) : null]
-    }), (0, l.jsx)(a.kSQ, {
-      children: z
+    }), (0, r.jsx)(a.kSQ, {
+      children: J
     })]
   })
 }, {

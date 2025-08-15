@@ -1,4 +1,4 @@
-/** Chunk was on 9885 **/
+/** Chunk was on 42521 **/
 /** chunk id: 43779, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -40,10 +40,10 @@ function S(e) {
     sourceQuestContent: I
   } = e, Q = s.useMemo(() => f.r.build(P.config), [P.config]), D = Q.defaultRewardName, V = Q.defaultRewardNameWithArticle, M = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, {
     ref: L,
-    scrollHeight: Z
-  } = (0, u.kE)(), W = 104 !== Z, {
+    scrollHeight: W
+  } = (0, u.kE)(), Z = 104 !== W, {
     onAssetLoadComplete: U
-  } = s.useContext(j.k), {
+  } = s.useContext(b.k), {
     expansionSpring: H
   } = (0, c.q_F)({
     expansionSpring: +!!N,
@@ -115,10 +115,10 @@ function S(e) {
     className: E.container,
     children: [(0, r.jsxs)(i.animated.div, {
       style: {
-        maxHeight: H.to([0, 1], [104, (null != Z ? Z : 0) + 12])
+        maxHeight: H.to([0, 1], [104, (null != W ? W : 0) + 12])
       },
       className: E.rewardDescriptionContainer,
-      children: [(0, r.jsx)(b.E, {
+      children: [(0, r.jsx)(_.E, {
         showPlaceholder: !k,
         width: 80,
         height: 80,
@@ -167,7 +167,7 @@ function S(e) {
       }), (0, r.jsxs)("div", {
         ref: L,
         className: a()(E.textContainer, {
-          [E.justifyCenter]: !W
+          [E.justifyCenter]: !Z
         }),
         children: [(0, r.jsx)(c.X6q, {
           variant: "eyebrow",
@@ -182,13 +182,13 @@ function S(e) {
           className: E.header,
           children: $
         }), ee]
-      }), W && (0, r.jsx)(i.animated.div, {
+      }), Z && (0, r.jsx)(i.animated.div, {
         style: {
           opacity: H.to([0, 1], [1, 0])
         },
         className: E.textOverflowBlur
       })]
-    }), (0, r.jsx)(_.Z, {
+    }), (0, r.jsx)(j.Z, {
       quest: P,
       questContent: A,
       contentPosition: R,

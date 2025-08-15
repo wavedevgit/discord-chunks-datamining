@@ -110,26 +110,26 @@ function V(e) {
     gridCoords: g,
     gridSectionBoundaries: f,
     observePostVisibilityAnalytics: x
-  } = e, p = n.id, b = i.useRef(null), j = (0, o.e7)([_.ZP], () => _.ZP.getCurrentSidebarChannelId(n.parent_id) === n.id), {
+  } = e, p = n.id, b = i.useRef(null), j = (0, o.e7)([C.ZP], () => C.ZP.getCurrentSidebarChannelId(n.parent_id) === n.id), {
     firstMessage: v,
-    loaded: C
+    loaded: _
   } = (0, S.cl)(n), {
     messageCountText: y
-  } = (0, P.nP)(n), {
-    isNew: O,
-    hasUnreads: w
-  } = (0, P.J$)(n), T = i.useRef(null), {
-    handleLeftClick: N,
+  } = (0, O.nP)(n), {
+    isNew: w,
+    hasUnreads: T
+  } = (0, O.J$)(n), N = i.useRef(null), {
+    handleLeftClick: P,
     handleRightClick: R
   } = (0, A.Z)({
-    facepileRef: T,
+    facepileRef: N,
     goToThread: a,
     channel: n
   });
   i.useEffect(() => {
     null == x || x(b.current, p)
   }, [x, p]);
-  let Z = (0, P.xw)(n, s.z.CREATION_DATE, L.R6.POSTED_DURATION_AGO),
+  let Z = (0, O.xw)(n, s.z.CREATION_DATE, L.R6.POSTED_DURATION_AGO),
     F = (0, I.NN)(n),
     B = (0, k.nX)({
       id: t,
@@ -158,7 +158,7 @@ function V(e) {
     }(B, ["onFocus"]);
   return (0, r.jsxs)("li", {
     ref: b,
-    onClick: N,
+    onClick: P,
     onFocus: U,
     onContextMenu: R,
     className: l()(z.container, m, {
@@ -166,7 +166,7 @@ function V(e) {
     }),
     style: H({}, h),
     children: [(0, r.jsx)(d.P3F, H({
-      onClick: N,
+      onClick: P,
       focusProps: {
         ringTarget: b
       },
@@ -191,7 +191,7 @@ function V(e) {
             className: z.postCreationTimestamp,
             children: Z
           })]
-        }), O ? (0, r.jsx)(d.IGR, {
+        }), w ? (0, r.jsx)(d.IGR, {
           className: z.newBadge,
           color: c.Z.unsafe_rawColors.BRAND_260.css,
           text: D.intl.string(D.t.y2b7CA)
@@ -200,7 +200,7 @@ function V(e) {
         children: (0, r.jsx)(d.X6q, {
           variant: "heading-md/extrabold",
           className: z.title,
-          color: w ? "header-primary" : "text-muted",
+          color: T ? "header-primary" : "text-muted",
           style: {
             width: "".concat(h.width - 2 * E.I8, "px")
           },
@@ -213,7 +213,7 @@ function V(e) {
         children: (0, r.jsx)(G, {
           channel: n,
           firstMessage: v,
-          isFirstMessageLoaded: C,
+          isFirstMessageLoaded: _,
           overrideMedia: u,
           coords: h
         })
@@ -224,7 +224,7 @@ function V(e) {
         children: (0, r.jsx)(W, {
           channel: n,
           firstMessage: v,
-          facepileRef: T
+          facepileRef: N
         })
       })
     })]
@@ -241,9 +241,9 @@ function G(e) {
   } = e, {
     isBlocked: s,
     isIgnored: c
-  } = (0, o.cj)([w.Z], () => ({
-    isBlocked: null != n && w.Z.isBlockedForMessage(n),
-    isIgnored: null != n && w.Z.isIgnoredForMessage(n)
+  } = (0, o.cj)([T.Z], () => ({
+    isBlocked: null != n && T.Z.isBlockedForMessage(n),
+    isIgnored: null != n && T.Z.isIgnoredForMessage(n)
   }));
   return s ? (0, r.jsx)($, {
     message: D.intl.string(D.t.Lkp2fH),
@@ -271,13 +271,13 @@ function q(e) {
     coords: l
   } = e, s = (0, o.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), {
     firstMedia: c
-  } = (0, P.mX)({
+  } = (0, O.mX)({
     firstMessage: n,
     formatInline: false,
     noStyleAndInteraction: false
   }), {
     hasUnreads: d
-  } = (0, P.J$)(t), u = (0, o.e7)([O.Z], () => O.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = C.QK.useSetting(), h = C.cC.useSetting(), g = (0, b.Z)(h, u), f = (0, T.aU)(n, s, false), [x, p] = (0, E.rI)(l.width - 2 * E.LT), j = (null == n ? true : n.blocked) || null == (null != a ? a : c), v = t.isMediaPost();
+  } = (0, O.J$)(t), u = (0, o.e7)([w.Z], () => w.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = _.QK.useSetting(), h = _.cC.useSetting(), g = (0, b.Z)(h, u), f = (0, N.aU)(n, s, false), [x, p] = (0, E.rI)(l.width - 2 * E.LT), j = (null == n ? true : n.blocked) || null == (null != a ? a : c), v = t.isMediaPost();
   return j ? (0, r.jsx)(Q, {
     channel: t,
     firstMessage: n,
@@ -373,7 +373,7 @@ let X = e => e.preventDefault(),
     } = e, {
       containsVideo: u,
       containsGif: m
-    } = i.useMemo(() => (0, T.cp)(t), [t]), b = i.useMemo(() => t.slice(R.$x, R.GV), [t]), j = (0, R.tu)({
+    } = i.useMemo(() => (0, N.cp)(t), [t]), b = i.useMemo(() => t.slice(R.$x, R.GV), [t]), j = (0, R.tu)({
       numAttachments: b.length,
       containerWidth: a,
       containerHeight: s
@@ -381,21 +381,21 @@ let X = e => e.preventDefault(),
       imageContainerStyles: j,
       containerWidth: a,
       containerHeight: s
-    }), C = (0, f.kh)(g.n.GUILD), _ = i.useMemo(() => b.map((e, t) => {
+    }), _ = (0, f.kh)(g.n.GUILD), C = i.useMemo(() => b.map((e, t) => {
       var i;
-      let [a, s] = (0, p.As)(e, !n, C), g = (0, p.MC)(s), f = B(H({}, v[t]), {
+      let [a, s] = (0, p.As)(e, !n, _), g = (0, p.MC)(s), f = B(H({}, v[t]), {
         src: e.src,
         width: e.width,
         height: e.height,
         alt: null != e.alt && a ? g : e.alt,
         onClick: X,
         shouldRenderAccessory: !m && !u
-      }), b = (0, x.d$)(e.src) ? "".concat(e.src, "?format=png") : e.src, _ = o && !a ? e.src : b;
+      }), b = (0, x.d$)(e.src) ? "".concat(e.src, "?format=png") : e.src, C = o && !a ? e.src : b;
       return (0, r.jsxs)("div", {
         className: z.bodyMediaFrame,
         style: j[t],
         children: [c ? (0, r.jsx)(h.Z, B(H({}, f), {
-          src: _,
+          src: C,
           backgroundSrc: b,
           aspectRatio: f.maxWidth / f.maxHeight,
           alt: null != (i = f.alt) ? i : "",
@@ -417,20 +417,20 @@ let X = e => e.preventDefault(),
           responsive: true
         })), a && (0, r.jsx)("div", {
           className: z.obscuredTagContainer,
-          children: (0, r.jsx)(N.Z, {
+          children: (0, r.jsx)(P.Z, {
             obscureReason: s,
             iconClassname: z.obscuredTag
           })
         })]
       }, e.src)
-    }), [o, m, u, n, j, v, b, c, C]);
+    }), [o, m, u, n, j, v, b, c, _]);
     return (0, r.jsxs)("div", {
       className: z.bodyMedia,
       style: {
         width: a,
         height: s
       },
-      children: [_, (m || u) && (0, r.jsxs)("div", {
+      children: [C, (m || u) && (0, r.jsxs)("div", {
         className: z.mediaIconsRow,
         children: [u && (0, r.jsx)(d.o1U, {
           color: "currentColor",
@@ -483,9 +483,9 @@ function Q(e) {
     isFirstMessageLoaded: a,
     containerWidth: s,
     hasUnreads: o
-  } = e, c = C.jU.useSetting(), [u, m] = (0, E.rI)(s - 2 * E.LT), {
+  } = e, c = _.jU.useSetting(), [u, m] = (0, E.rI)(s - 2 * E.LT), {
     content: h
-  } = (0, P.mX)({
+  } = (0, O.mX)({
     firstMessage: n,
     formatInline: false,
     noStyleAndInteraction: true

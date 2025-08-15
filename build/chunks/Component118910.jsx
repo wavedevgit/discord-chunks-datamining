@@ -22,19 +22,19 @@ function l(e) {
       location: "takeover-modal"
     })) return;
   let d = () => {
-    (0, o.T)(t, [l]), (0, a.qc)({
+    (0, a.T)(t, [l]), (0, o.qc)({
       channelId: t,
       senderId: c,
       warningId: l,
       warningType: u,
-      cta: a.NM.USER_TAKEOVER_MODAL_DISMISS,
+      cta: o.NM.USER_TAKEOVER_MODAL_DISMISS,
       isNudgeWarning: false
     })
   };
   (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("49508"), n.e("37031"), n.e("5749")]).then(n.bind(n, 955708));
+    } = await Promise.all([n.e("49508"), n.e("37031"), n.e("59650")]).then(n.bind(n, 955708));
     return n => (0, r.jsx)(e, {
       channelId: t,
       warningId: l,

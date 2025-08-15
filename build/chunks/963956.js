@@ -1,81 +1,71 @@
-/** Chunk was on web.js **/
-/** chunk id: 963956, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 963956, original params: t,e,r (module,exports,require) **/
 "use strict";
-var Chunk381538 = require("./381538.js");
-
-function i(e) {
-  if (true === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
-  return e
-}
-
-function o(e, t) {
-  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
-}
-
-function a(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-var Chunk846434 = require("./846434.js"),
+var Chunk381538 = require("./381538.js"),
+  Chunk846434 = require("./846434.js"),
   Chunk73800 = require("./73800.js"),
   Chunk581079 = require("./581079.js"),
   Chunk318720 = require("./318720.js"),
-  d = require("./609627.js").setDraftEditorSelection;
-module.exports = function(e) {
-  function t() {
-    for (var t, n = arguments.length, r = Array(n), o = 0; o < n; o++) r[o] = arguments[o];
-    return a(i(t = e.call.apply(e, [this].concat(r)) || this), "leaf", true), t
+  s = require("./609627.js").setDraftEditorSelection;
+module.exports = function(t) {
+  function e() {
+    for (var e, r, n, i, o = arguments.length, a = Array(o), u = 0; u < o; u++) a[u] = arguments[u];
+    return r = function(t) {
+      if (true === t) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
+      return t
+    }(e = t.call.apply(t, [this].concat(a)) || this), i = true, (n = "leaf") in r ? Object.defineProperty(r, n, {
+      value: i,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    }) : r[n] = i, e
   }
-  o(t, e);
-  var n = t.prototype;
-  return n._setSelection = function() {
-    var e, t = this.props.selection;
-    if (null != t && t.getHasFocus()) {
-      var n = this.props,
-        r = n.block,
-        i = n.start,
-        o = n.text,
-        a = r.getKey(),
-        s = i + o.length;
-      if (t.hasEdgeWithin(a, i, s)) {
-        var l = this.leaf;
-        l || c(false);
-        var f = l.firstChild;
-        f || c(false), f.nodeType === Node.TEXT_NODE ? e = f : u(f) ? e = l : (e = f.firstChild) || c(false), d(t, e, a, i, s)
+  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t;
+  var r = e.prototype;
+  return r._setSelection = function() {
+    var t, e = this.props.selection;
+    if (null != e && e.getHasFocus()) {
+      var r = this.props,
+        n = r.block,
+        i = r.start,
+        o = r.text,
+        c = n.getKey(),
+        l = i + o.length;
+      if (e.hasEdgeWithin(c, i, l)) {
+        var f = this.leaf;
+        f || a(false);
+        var p = f.firstChild;
+        p || a(false), p.nodeType === Node.TEXT_NODE ? t = p : u(p) ? t = f : (t = p.firstChild) || a(false), s(e, t, c, i, l)
       }
     }
-  }, n.shouldComponentUpdate = function(e) {
-    var t = this.leaf;
-    return t || c(false), t.textContent !== e.text || e.styleSet !== this.props.styleSet || e.forceSelection
-  }, n.componentDidUpdate = function() {
+  }, r.shouldComponentUpdate = function(t) {
+    var e = this.leaf;
+    return e || a(false), e.textContent !== t.text || t.styleSet !== this.props.styleSet || t.forceSelection
+  }, r.componentDidUpdate = function() {
     this._setSelection()
-  }, n.componentDidMount = function() {
+  }, r.componentDidMount = function() {
     this._setSelection()
-  }, n.render = function() {
-    var e = this,
-      t = this.props.block,
-      n = this.props.text;
-    n.endsWith("\n") && this.props.isLast && (n += "\n");
-    var i = this.props,
-      o = i.customStyleMap,
-      a = i.customStyleFn,
-      c = i.offsetKey,
-      u = i.styleSet,
-      d = u.reduce(function(e, t) {
-        var n = {},
-          i = o[t];
-        return true !== i && e.textDecoration !== i.textDecoration && (n.textDecoration = [e.textDecoration, i.textDecoration].join(" ").trim()), r(e, i, n)
+  }, r.render = function() {
+    var t = this,
+      e = this.props.block,
+      r = this.props.text;
+    r.endsWith("\n") && this.props.isLast && (r += "\n");
+    var a = this.props,
+      u = a.customStyleMap,
+      s = a.customStyleFn,
+      c = a.offsetKey,
+      l = a.styleSet,
+      f = l.reduce(function(t, e) {
+        var r = {},
+          i = u[e];
+        return true !== i && t.textDecoration !== i.textDecoration && (r.textDecoration = [t.textDecoration, i.textDecoration].join(" ").trim()), n(t, i, r)
       }, {});
-    return a && (d = r(d, a(u, t))), l.createElement("span", {
+    return s && (f = n(f, s(l, e))), o.createElement("span", {
       "data-offset-key": c,
-      ref: function(t) {
-        return e.leaf = t
+      ref: function(e) {
+        return t.leaf = e
       },
-      style: d
-    }, l.createElement(s, null, n))
-  }, t
+      style: f
+    }, o.createElement(i, null, r))
+  }, e
 }(Chunk73800.Component)

@@ -108,7 +108,7 @@ let m = e => {
     for (let n of e) E(n, t)
   },
   y = (e, t) => "".concat(e, "/").concat(t),
-  O = e => (0, o.tw)(e.type) || (0, o.X2)(e.type),
+  O = e => (0, a.tw)(e.type) || (0, a.X2)(e.type),
   v = e => {
     var t;
     return null != (t = _[e.name]) ? t : null
@@ -138,8 +138,8 @@ let m = e => {
     for (let i of (await new Promise(e => r.readEntries(e))))
       if (i.isFile) {
         let r = i,
-          o = await new Promise(e => r.file(e));
-        S(e.name, o, t, n)
+          a = await new Promise(e => r.file(e));
+        S(e.name, a, t, n)
       } else {
         let e = await I(i);
         n.ignoredFilenames.push(...e.map(e => y(i.name, e.name)))
@@ -190,7 +190,7 @@ let m = e => {
     })), {
       upsertCollectionAsset: n,
       upsertAvatarDecorationAsset: i
-    } = (0, Chunk619899.N9)(), o = Chunk73800.useCallback(async e => {
+    } = (0, Chunk619899.N9)(), a = Chunk73800.useCallback(async e => {
       let r = await R(e);
       t(r), (0 !== r.collectionFiles.length || 0 !== r.avatarDecorationFiles.length) && (r.collectionFiles.forEach(e => {
         E(e, e => {

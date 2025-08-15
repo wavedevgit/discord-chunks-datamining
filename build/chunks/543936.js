@@ -1,13 +1,13 @@
-/** Chunk was on 82081 **/
-/** chunk id: 543936, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 85362 **/
+/** chunk id: 543936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  x: () => o
+  x: () => l
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk960048 = require("./960048.js");
-class o extends Chunk73800.PureComponent {
+class l extends Chunk73800.PureComponent {
   componentDidCatch(e, t) {
-    a.Z.captureException(e, {
+    i.Z.captureException(e, {
       tags: {
         app_context: "virtual_currency",
         source: this.props.errorSource
@@ -25,13 +25,13 @@ class o extends Chunk73800.PureComponent {
   }
   constructor(...e) {
     super(...e),
-      function(e, t, r) {
+      function(e, t, n) {
         t in e ? Object.defineProperty(e, t, {
-          value: r,
+          value: n,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : e[t] = n
       }(this, "state", {
         error: null,
         info: null

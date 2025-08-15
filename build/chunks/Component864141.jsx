@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -91,7 +91,7 @@ function w(e) {
   }), x = (0, h.Z)({
     userId: t.id,
     onAction: L
-  }), M = (0, a.e7)([d.Z], () => d.Z.getGuild(i.guild_id)), j = (0, _.Z)(i), k = (0, u.ZP)(i), {
+  }), M = (0, o.e7)([d.Z], () => d.Z.getGuild(i.guild_id)), k = (0, _.Z)(i), j = (0, u.ZP)(i), {
     channelStatusEnabled: U
   } = (0, f.D)({
     location: "UserProfileVoiceActivityCard"
@@ -111,17 +111,17 @@ function w(e) {
       onAction: L,
       onClose: R
     })
-  }), Z = i.isDM() || i.isGroupDM() ? S.intl.string(S.t["9FaEzs"]) : i.isGuildStageVoice() ? S.intl.string(S.t.QygGCA) : S.intl.string(S.t.msxteH);
+  }), V = i.isDM() || i.isGroupDM() ? S.intl.string(S.t["9FaEzs"]) : i.isGuildStageVoice() ? S.intl.string(S.t.QygGCA) : S.intl.string(S.t.msxteH);
   return (0, r.jsx)(c.Gt, {
     value: D,
     children: (0, r.jsxs)(g.Z, {
       ref: x,
-      className: o()(A.card, N),
+      className: a()(A.card, N),
       onAction: L,
       onClose: R,
-      "aria-label": "".concat(Z, ", ").concat(k),
+      "aria-label": "".concat(V, ", ").concat(j),
       children: [(0, r.jsx)(E.Z, {
-        text: Z,
+        text: V,
         tags: G(),
         contextMenu: (0, r.jsx)(I.Z, {
           display: "voice",
@@ -133,7 +133,7 @@ function w(e) {
         children: (0, r.jsxs)("div", {
           className: A.content,
           children: [(0, r.jsx)(y.Z, {
-            users: j,
+            users: k,
             channel: i
           }), (0, r.jsxs)("div", {
             className: A.details,

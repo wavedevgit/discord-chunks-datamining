@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 917318, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 917318, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => b
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -15,17 +14,17 @@ var Chunk275726 = require("./275726.js"),
   Chunk594174 = require("./594174.js"),
   Chunk764295 = require("./764295.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = {
+let m = {
     [Chunk275726.u.REPORT_TO_MOD_BAN_USER]: () => Chunk764295.default.komFTk,
     [Chunk275726.u.REPORT_TO_MOD_KICK_USER]: () => Chunk764295.default.FAJmJS,
     [Chunk275726.u.REPORT_TO_MOD_TIMEOUT_USER]: () => Chunk764295.default["90r/sb"]
   },
-  p = {
+  f = {
     [Chunk275726.u.REPORT_TO_MOD_DELETED_MESSAGE]: () => Chunk764295.default["4023i4"],
     [Chunk275726.u.REPORT_TO_MOD_CLOSED_REPORT]: () => Chunk764295.default.UE81zc
   };
 
-function h(e) {
+function _(e) {
   let {
     type: t
   } = e, n = null;
@@ -51,7 +50,7 @@ function h(e) {
   }) : null
 }
 
-function m(e) {
+function g(e) {
   var t;
   let {
     message: n,
@@ -59,81 +58,81 @@ function m(e) {
     compact: a
   } = e, {
     author: d,
-    mentions: p,
-    type: m
-  } = n, g = (0, s.ZP)(n), E = n.getChannelId(), b = (0, o.e7)([u.default], () => u.default.getUser(p[0]), [p]), y = (0, s.JZ)(d, i), O = (0, l.l)({
+    mentions: f,
+    type: g
+  } = n, h = (0, o.ZP)(n), b = n.getChannelId(), E = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), C = (0, o.JZ)(d, i), v = (0, s.l)({
     user: d,
-    channelId: E,
+    channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(y), v = (0, s.Sw)(b, i), I = (0, l.l)({
-    user: b,
-    channelId: E,
+  })(C), O = (0, o.Sw)(E, i), y = (0, s.l)({
+    user: E,
+    channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(v), T = null != (t = _[m]) ? t : null;
-  if (null == T) return null;
-  let S = f.intl.format(T(), {
-    actorName: g.nick,
-    actorHook: O,
-    targetName: null == v ? true : v.nick,
-    targetHook: I
+  })(O), x = null != (t = m[g]) ? t : null;
+  if (null == x) return null;
+  let j = p.intl.format(x(), {
+    actorName: h.nick,
+    actorHook: v,
+    targetName: null == O ? true : O.nick,
+    targetHook: y
   });
   return (0, r.jsx)(c.Z, {
-    iconNode: (0, r.jsx)(h, {
-      type: m
+    iconNode: (0, r.jsx)(_, {
+      type: g
     }),
     timestamp: n.timestamp,
     compact: a,
-    children: S
+    children: j
   })
 }
 
-function g(e) {
+function h(e) {
   var t;
   let {
     message: n,
     channel: i,
-    compact: o
+    compact: l
   } = e, {
     author: a,
     type: u
-  } = n, d = (0, s.ZP)(n), _ = n.getChannelId(), m = (0, s.JZ)(a, i), g = (0, l.l)({
+  } = n, d = (0, o.ZP)(n), m = n.getChannelId(), g = (0, o.JZ)(a, i), h = (0, s.l)({
     user: a,
-    channelId: _,
+    channelId: m,
     guildId: i.guild_id,
     messageId: n.id
-  })(m), E = null != (t = p[u]) ? t : null;
-  if (null == E) return null;
-  let b = f.intl.format(E(), {
+  })(g), b = null != (t = f[u]) ? t : null;
+  if (null == b) return null;
+  let E = p.intl.format(b(), {
     actorName: d.nick,
-    actorHook: g
+    actorHook: h
   });
   return (0, r.jsx)(c.Z, {
-    iconNode: (0, r.jsx)(h, {
+    iconNode: (0, r.jsx)(_, {
       type: u
     }),
     timestamp: n.timestamp,
-    compact: o,
-    children: b
+    compact: l,
+    children: E
   })
 }
 
-function E(e) {
+function b(e) {
   let {
     message: t,
     channel: n,
-    compact: o
+    compact: l
   } = e, {
     type: a
   } = t;
-  return a === i.u.REPORT_TO_MOD_BAN_USER || a === i.u.REPORT_TO_MOD_KICK_USER || a === i.u.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(m, {
+  return a === i.u.REPORT_TO_MOD_BAN_USER || a === i.u.REPORT_TO_MOD_KICK_USER || a === i.u.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(g, {
     message: t,
     channel: n,
-    compact: o
-  }) : (0, r.jsx)(g, {
+    compact: l
+  }) : (0, r.jsx)(h, {
     message: t,
     channel: n,
-    compact: o
+    compact: l
   })
 }

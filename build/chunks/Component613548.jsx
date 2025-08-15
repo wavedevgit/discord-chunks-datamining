@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 613548, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 613548, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => G
+  Z: () => k
 }), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  l = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk475179 = require("./475179.js"),
@@ -35,64 +34,56 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk956235 = require("./956235.js");
 
-function L(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function x(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function M(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = 3;
 
-function U(e) {
+function M(e) {
   let {
     channelId: t,
     guildId: n
-  } = e, i = (0, c.Wu)([A.Z, N.Z], () => {
+  } = e, i = (0, c.Wu)([S.Z, P.Z], () => {
     let e = Date.now();
-    return l()(A.Z.getSpeakers()).map(e => N.Z.getParticipant(t, e)).filter(e => null != e && e.type === P.fO.USER && e.speaking && !(0, b.ZP)(e)).sortBy(t => -A.Z.getSpeakingDuration(t.user.id, e)).slice(0, k).value()
+    return s()(S.Z.getSpeakers()).map(e => P.Z.getParticipant(t, e)).filter(e => null != e && e.type === T.fO.USER && e.speaking && !(0, _.ZP)(e)).sortBy(t => -S.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
   });
   return 0 === i.length ? null : (0, r.jsx)(r.Fragment, {
     children: i.map((e, t) => (0, r.jsx)(u.ua7, {
       position: "bottom",
       color: u.ua7.Colors.GREY,
-      text: w.intl.formatToPlainString(w.t.JjdizM, {
+      text: N.intl.formatToPlainString(N.t.JjdizM, {
         username: e.user.username
       }),
-      children: o => (0, r.jsx)(S.ZP, j(x({}, o), {
-        className: a()(D.speaker, {
-          [D.last]: t === i.length - 1
+      children: l => (0, r.jsx)(E.ZP, R(w({}, l), {
+        className: a()(A.speaker, {
+          [A.last]: t === i.length - 1
         }),
         user: e.user,
         speaking: true,
@@ -103,55 +94,55 @@ function U(e) {
   })
 }
 
-function G(e) {
+function k(e) {
   let {
     channel: t,
     isChatOpen: n
-  } = e, o = i.useRef(null), {
-    analyticsLocations: s
-  } = (0, _.ZP)(f.Z.VOICE_CHANNEL_HEADER), l = t.id, {
-    voiceParticipantsHidden: b,
-    selectedParticipant: S,
-    userParticipantCount: A,
-    participantsListOpen: w
-  } = (0, c.cj)([N.Z], () => ({
-    selectedParticipant: N.Z.getSelectedParticipant(l),
-    voiceParticipantsHidden: N.Z.getVoiceParticipantsHidden(l),
-    userParticipantCount: N.Z.getUserParticipantCount(l),
-    participantsListOpen: N.Z.getParticipantsListOpen(l)
-  }), [l]), L = t.isGuildVoice() && !n, {
-    hasParticipantsPanel: M
-  } = (0, R.Z)({
+  } = e, l = i.useRef(null), {
+    analyticsLocations: o
+  } = (0, h.ZP)(p.Z.VOICE_CHANNEL_HEADER), s = t.id, {
+    voiceParticipantsHidden: _,
+    selectedParticipant: E,
+    userParticipantCount: S,
+    participantsListOpen: N
+  } = (0, c.cj)([P.Z], () => ({
+    selectedParticipant: P.Z.getSelectedParticipant(s),
+    voiceParticipantsHidden: P.Z.getVoiceParticipantsHidden(s),
+    userParticipantCount: P.Z.getUserParticipantCount(s),
+    participantsListOpen: P.Z.getParticipantsListOpen(s)
+  }), [s]), k = t.isGuildVoice() && !n, {
+    hasParticipantsPanel: D
+  } = (0, Z.Z)({
     location: "ChannelCallHeaderToolbar"
-  }), k = !w && M && (t.isGuildVoice() || t.isGroupDM()), {
-    enabled: G,
+  }), L = !N && D && (t.isGuildVoice() || t.isGroupDM()), {
+    enabled: U,
     inInbox: B
-  } = g.Z.useExperiment({
+  } = b.Z.useExperiment({
     location: "ChannelCallHeaderToolbar"
-  }), Z = [];
-  return b && Z.push((0, r.jsx)(U, {
-    channelId: l,
+  }), F = [];
+  return _ && F.push((0, r.jsx)(M, {
+    channelId: s,
     guildId: t.guild_id
-  }, "current-speaker")), Z.push((0, r.jsx)(h.Z, {
-    className: D.button,
-    channelId: l
-  }, "clips-enabled-indicator")), (null == S ? true : S.type) === P.fO.STREAM && (Z.push((0, r.jsx)(y.Z, {
-    className: D.button,
-    participant: S
-  }, "warning")), Z.push((0, r.jsx)(m.Z, {
-    size: p.ZP.Sizes.LARGE,
-    className: D.button,
-    participant: S,
+  }, "current-speaker")), F.push((0, r.jsx)(m.Z, {
+    className: A.button,
+    channelId: s
+  }, "clips-enabled-indicator")), (null == E ? true : E.type) === T.fO.STREAM && (F.push((0, r.jsx)(C.Z, {
+    className: A.button,
+    participant: E
+  }, "warning")), F.push((0, r.jsx)(g.Z, {
+    size: f.ZP.Sizes.LARGE,
+    className: A.button,
+    participant: E,
     showQuality: true,
     premiumIndicator: false
-  }, "live-indicator"))), (null == S ? true : S.type) === P.fO.USER && Z.push((0, r.jsx)(O.Z, {
-    className: D.button,
-    userId: S.id
-  }, "video-warning")), b && !M && Z.push((0, r.jsx)(u.yRy, {
-    targetElementRef: o,
+  }, "live-indicator"))), (null == E ? true : E.type) === T.fO.USER && F.push((0, r.jsx)(x.Z, {
+    className: A.button,
+    userId: E.id
+  }, "video-warning")), _ && !D && F.push((0, r.jsx)(u.yRy, {
+    targetElementRef: l,
     position: "bottom",
     renderPopout: () => (0, r.jsx)(v.Z, {
-      children: (0, r.jsx)(C.Z, {
+      children: (0, r.jsx)(I.Z, {
         channel: t
       })
     }),
@@ -159,29 +150,29 @@ function G(e) {
       let {
         isShown: n
       } = t;
-      return (0, i.createElement)(T.Z, j(x({}, e), {
-        buttonRef: o,
+      return (0, i.createElement)(O.Z, R(w({}, e), {
+        buttonRef: l,
         isActive: n,
-        count: A,
+        count: S,
         key: "call-members",
-        className: D.button
+        className: A.button
       }))
     }
-  }, "call-members-popout")), G && !B && Z.push((0, r.jsx)(E.Z, {
-    className: D.button
-  }, "for-later")), k && Z.push((0, r.jsx)(T.Z, {
-    className: a()(D.button, {
-      [D.lastButton]: n
+  }, "call-members-popout")), U && !B && F.push((0, r.jsx)(y.Z, {
+    className: A.button
+  }, "for-later")), L && F.push((0, r.jsx)(O.Z, {
+    className: a()(A.button, {
+      [A.lastButton]: n
     }),
-    onClick: () => d.Z.toggleParticipantsList(t.id, !w)
-  }, "participants-list-button")), L && Z.push((0, r.jsx)(I.T, {
+    onClick: () => d.Z.toggleParticipantsList(t.id, !N)
+  }, "participants-list-button")), k && F.push((0, r.jsx)(j.T, {
     channelId: t.id,
-    className: a()(D.button, {
-      [D.lastButton]: w
+    className: a()(A.button, {
+      [A.lastButton]: N
     }),
     disabled: n
-  }, "chat-spacer")), (0, r.jsx)(_.Gt, {
-    value: s,
-    children: Z
+  }, "chat-spacer")), (0, r.jsx)(h.Gt, {
+    value: o,
+    children: F
   })
 }

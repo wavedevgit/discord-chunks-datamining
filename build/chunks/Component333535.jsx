@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 333535, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 333535, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,42 +18,42 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk235391 = require("./235391.js");
 
-function g(e) {
+function b(e) {
   let {
     threadId: t
-  } = e, n = (0, o.e7)([l.Z], () => l.Z.getChannel(t)), g = (0, o.e7)([l.Z], () => l.Z.getChannel(null == n ? true : n.parent_id)), E = i.useCallback(() => {
-    null != n && null != g && ((0, s.yw)(p.rMx.MEDIA_POST_SHARE_PROMPT_CLICKED, {
+  } = e, n = (0, l.e7)([s.Z], () => s.Z.getChannel(t)), b = (0, l.e7)([s.Z], () => s.Z.getChannel(null == n ? true : n.parent_id)), y = i.useCallback(() => {
+    null != n && null != b && ((0, o.yw)(f.rMx.MEDIA_POST_SHARE_PROMPT_CLICKED, {
       media_post_id: n.id
-    }), (0, u.JG)((0, c.EO)(n, g)))
-  }, [n, g]), b = () => {
-    (0, f.fn)(t)
-  };
+    }), (0, u.JG)((0, c.EO)(n, b)))
+  }, [n, b]);
   return (0, r.jsxs)("div", {
-    className: m.sharePromptContainer,
-    children: [(0, r.jsx)(_.Z, {}), (0, r.jsxs)("div", {
-      className: m.sharePromptContent,
+    className: g.sharePromptContainer,
+    children: [(0, r.jsx)(h.Z, {}), (0, r.jsxs)("div", {
+      className: g.sharePromptContent,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: h.intl.string(h.t["5uAO7e"])
+        children: m.intl.string(m.t["5uAO7e"])
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: h.intl.format(h.t.WnfPV1, {
-          helpArticleUrl: d.Z.getCreatorSupportArticleURL(p.BhN.MEDIA_CHANNEL)
+        children: m.intl.format(m.t.WnfPV1, {
+          helpArticleUrl: d.Z.getCreatorSupportArticleURL(f.BhN.MEDIA_CHANNEL)
         })
       }), (0, r.jsx)(a.LZC, {
         size: 4
       }), (0, r.jsx)(a.zxk, {
-        text: h.intl.string(h.t.C5UQCw),
+        text: m.intl.string(m.t.C5UQCw),
         variant: "primary",
         icon: a.xPt,
-        onClick: E
+        onClick: y
       })]
     }), (0, r.jsx)(a.P3F, {
-      className: m.closeButton,
-      onClick: b,
-      "aria-label": h.intl.string(h.t["0+xZHx"]),
+      className: g.closeButton,
+      onClick: () => {
+        (0, p.fn)(t)
+      },
+      "aria-label": m.intl.string(m.t["0+xZHx"]),
       children: (0, r.jsx)(a.Dio, {
         color: "currentColor",
         size: "xs"

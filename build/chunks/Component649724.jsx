@@ -39,8 +39,8 @@ class m extends(r = Chunk73800.PureComponent) {
     let {
       value: n,
       mode: r,
-      autoFocus: o,
-      spellCheck: a,
+      autoFocus: a,
+      spellCheck: o,
       inputClassName: l,
       placeholder: c
     } = this.props, u = null == (t = this.context) ? true : t.titleId;
@@ -54,8 +54,8 @@ class m extends(r = Chunk73800.PureComponent) {
       onClick: this.handleInputClick,
       readOnly: true,
       "aria-labelledby": u,
-      autoFocus: o,
-      spellCheck: a,
+      autoFocus: a,
+      spellCheck: o,
       placeholder: c
     })
   }
@@ -64,8 +64,8 @@ class m extends(r = Chunk73800.PureComponent) {
         text: t = Chunk388032.intl.string(Chunk388032.t.OpuAlJ),
         mode: n,
         hideMessage: r,
-        className: o,
-        buttonLook: a,
+        className: a,
+        buttonLook: o,
         supportsCopy: p,
         disabled: m
       } = this.props,
@@ -115,7 +115,7 @@ class m extends(r = Chunk73800.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), p(this, "inputRef", o.createRef()), p(this, "containerRef", o.createRef()), p(this, "handleButtonClick", () => {
+    super(...e), p(this, "inputRef", a.createRef()), p(this, "containerRef", a.createRef()), p(this, "handleButtonClick", () => {
       this.select();
       let {
         onCopy: e,

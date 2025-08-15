@@ -1,4 +1,4 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 179828, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -87,12 +87,12 @@ function T(e) {
   } = e, b = f && null != s, j = i.useRef(null), O = i.useMemo(() => "roles-".concat((0, l.Z)()), []), T = (0, o.ZP)({
     id: O,
     isEnabled: true,
-    scrollToStart: h.Cyb,
-    scrollToEnd: h.Cyb,
+    scrollToStart: x.Cyb,
+    scrollToEnd: x.Cyb,
     wrap: true
   }), Z = d.length, N = 0 === Z ? v.intl.string(v.t["vR7M+/"]) : v.intl.formatToPlainString(v.t.PCs0oq, {
     numRoles: Z
-  }), S = d.map(e => {
+  }), w = d.map(e => {
     var i;
     return (0, r.jsx)(y.Z, {
       role: e,
@@ -114,7 +114,7 @@ function T(e) {
           "aria-label": N,
           ref: t
         }, n), {
-          children: [S, b && (0, r.jsx)(x.Z, {
+          children: [w, b && (0, r.jsx)(h.Z, {
             buttonRef: j,
             guild: c,
             guildMember: s,
@@ -136,14 +136,14 @@ function Z(e) {
   } = e, o = E(e, ["user", "currentUser", "guildId"]);
   let {
     trackUserProfileAction: a
-  } = (0, b.KZ)(), y = (0, c.e7)([p.Z], () => p.Z.getGuild(l)), x = (0, c.e7)([u.ZP], () => u.ZP.getMember(l, t.id)), _ = null == x ? true : x.roles, Z = (0, c.Wu)([f.Z], () => f.Z.getManyRoles(l, null != _ ? _ : []).sort(j.Z), [_, l]), [N] = (0, c.Wu)([m.Z], () => [m.Z.can(h.Plq.MANAGE_ROLES, y), m.Z.getGuildVersion(l)]), S = i.useCallback(e => {
+  } = (0, b.KZ)(), y = (0, c.e7)([p.Z], () => p.Z.getGuild(l)), h = (0, c.e7)([u.ZP], () => u.ZP.getMember(l, t.id)), _ = null == h ? true : h.roles, Z = (0, c.Wu)([f.Z], () => f.Z.getManyRoles(l, null != _ ? _ : []).sort(j.Z), [_, l]), [N] = (0, c.Wu)([m.Z], () => [m.Z.can(x.Plq.MANAGE_ROLES, y), m.Z.getGuildVersion(l)]), w = i.useCallback(e => {
     var n, r;
     a({
       action: "REMOVE_ROLE"
     });
     let i = null != (r = null == _ ? true : _.filter(t => t !== e.id)) ? r : [];
     (null == (n = e.tags) ? true : n.guild_connections) === null ? s.Z.unassignGuildRoleConnection(l, e.id) : d.Z.updateMemberRoles(l, t.id, i, [], [e.id])
-  }, [_, l, t.id, a]), w = i.useCallback(e => {
+  }, [_, l, t.id, a]), S = i.useCallback(e => {
     a({
       action: "ADD_ROLE"
     });
@@ -151,7 +151,7 @@ function Z(e) {
     n.includes(e) || (n = [...n, e]), d.Z.updateMemberRoles(l, t.id, n, [e], [])
   }, [_, l, t.id, a]);
   if (null == y) return null;
-  let A = N && null != x;
+  let A = N && null != h;
   return 0 !== Z.length || A ? (0, r.jsx)(O.Z, P(I({
     heading: v.intl.string(v.t.LPJmLy)
   }, o), {
@@ -159,12 +159,12 @@ function Z(e) {
       user: t,
       currentUser: n,
       guild: y,
-      guildMember: x,
+      guildMember: h,
       roles: Z,
       highestRole: g.e9(y, n.id),
       canManageRoles: N,
-      onAddRole: w,
-      onRemoveRole: S
+      onAddRole: S,
+      onRemoveRole: w
     })
   })) : null
 }

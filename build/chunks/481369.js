@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 481369, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 481369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
 var Chunk399606 = require("./399606.js"),
   Chunk317381 = require("./317381.js"),
@@ -21,7 +20,7 @@ let u = "no_text_activity",
     [Chunk918559.Ez.ACTIVITY_POPOUT_WINDOW]: [Chunk226027.E.NEW_MESSAGES, Chunk226027.E.OPT_IN_CHANNEL, Chunk226027.E.SUMMARIES]
   };
 
-function f() {
+function p() {
   let e = (0, Chunk399606.e7)([Chunk317381.ZP], () => Chunk317381.ZP.getCurrentEmbeddedActivity()),
     t = (0, Chunk399606.e7)([Chunk317381.ZP], () => Chunk317381.ZP.getActivityPanelMode()),
     n = (0, Chunk16609.p)(null == module ? true : module.location);

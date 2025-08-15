@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 716754, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-var r = {
+/** Chunk was on 78079 **/
+/** chunk id: 716754, original params: A,e,t (module,exports,require) **/
+require.r(module.exports = {
   pill: "pill_a2c9e8",
   clickable: "clickable_a2c9e8",
   disabled: "disabled_a2c9e8",
@@ -14,5 +13,4 @@ var r = {
   closeCircle: "closeCircle_a2c9e8 emoji_a2c9e8",
   close: "close_a2c9e8",
   tooltipPill: "tooltipPill_a2c9e8"
-};
-require.r(module.exports = r)
+})

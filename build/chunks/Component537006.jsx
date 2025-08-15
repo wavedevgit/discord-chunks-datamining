@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk755721 = require("./755721.js"),
@@ -53,8 +53,8 @@ function P(e) {
     isPremiumUser: n,
     onInteraction: i
   } = e, {
-    analyticsLocations: o,
-    newestAnalyticsLocation: a
+    analyticsLocations: a,
+    newestAnalyticsLocation: o
   } = (0, d.ZP)(), {
     trackUserProfileAction: s
   } = (0, y.KZ)();
@@ -103,9 +103,9 @@ function P(e) {
         variant: "secondary",
         onClick: () => {
           (0, f.mK)({
-            analyticsLocations: o,
+            analyticsLocations: a,
             openInLayer: false,
-            analyticsSource: a
+            analyticsSource: o
           }), null == i || i()
         }
       })
@@ -117,7 +117,7 @@ function w(e) {
   let {
     isPremiumUser: t,
     onInteraction: n,
-    className: o
+    className: a
   } = e, c = (0, _.Dt)(), {
     themeType: d
   } = (0, O.z)(), f = d === I.lY.MODAL, g = (0, h.Nj)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), E = (0, s.e7)([b.Z], () => b.Z.getGuildId());
@@ -148,10 +148,10 @@ function w(e) {
       tiny: f
     });
   return f ? (0, r.jsx)("aside", {
-    className: a()(C.upsellContainer, o),
+    className: o()(C.upsellContainer, a),
     "aria-labelledby": c,
     children: (0, r.jsxs)("div", {
-      className: a()(C.upsellContent, C.upsellRowContent),
+      className: o()(C.upsellContent, C.upsellRowContent),
       children: [y, (0, r.jsxs)("div", {
         className: C.upsellRowRight,
         children: [(0, r.jsx)("div", {
@@ -162,10 +162,10 @@ function w(e) {
       })]
     })
   }) : (0, r.jsx)("aside", {
-    className: a()(C.upsellContainer, o),
+    className: o()(C.upsellContainer, a),
     "aria-labelledby": c,
     children: (0, r.jsxs)("div", {
-      className: a()(C.upsellContent, C.upsellDefaultContent),
+      className: o()(C.upsellContent, C.upsellDefaultContent),
       children: [(0, r.jsxs)("div", {
         className: C.upsellHeader,
         children: [y, (0, r.jsx)("div", {

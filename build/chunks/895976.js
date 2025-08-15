@@ -17,7 +17,7 @@ function d(e) {
     inviteChannel: n,
     inviteTargetType: d,
     applicationId: c
-  } = e, [g, h, m, p] = (0, i.Wu)([s.Z, a.ZP], () => [s.Z.getInviteSuggestionRows(), s.Z.getTotalSuggestionsCount() >= 1, s.Z.getInitialCounts(), null == n ? null : a.ZP.getVoiceStatesForChannel(n)], [n]), v = l.useMemo(() => {
+  } = e, [h, g, m, p] = (0, i.Wu)([s.Z, a.ZP], () => [s.Z.getInviteSuggestionRows(), s.Z.getTotalSuggestionsCount() >= 1, s.Z.getInitialCounts(), null == n ? null : a.ZP.getVoiceStatesForChannel(n)], [n]), v = l.useMemo(() => {
     let e = new Set;
     return d === o.Iq.STREAM && null != p && p.forEach(t => {
       let {
@@ -35,8 +35,8 @@ function d(e) {
       inviteTargetType: d
     }).catch(u.VqG)
   }, [v, t, n, c, d]), {
-    rows: g,
-    showFriends: h,
+    rows: h,
+    showFriends: g,
     initialCounts: m
   }
 }

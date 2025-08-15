@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 694784, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 694784, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -17,26 +16,26 @@ async function u(e) {
   let n = e.messageReference.guild_id,
     u = e.messageReference.channel_id,
     d = e.messageReference.message_id,
-    f = o.Z.getChannel(u),
-    _ = false;
-  if (null == f && null != n && null == a.Z.getGuild(n)) try {
-    await (0, l.Ub)(n, {
+    p = l.Z.getChannel(u),
+    m = false;
+  if (null == p && null != n && null == a.Z.getGuild(n)) try {
+    await (0, s.Ub)(n, {
       object: c.qAy.FORWARD_BREADCRUMB
     }, {
       shouldNavigate: false
-    }), _ = true, await (0, r.V)(n), f = o.Z.getChannel(u)
+    }), m = true, await (0, r.V)(n), p = l.Z.getChannel(u)
   } catch (e) {}
-  s.default.track(c.rMx.FORWARD_BREADCRUMB_CLICKED, {
-    guild_id: null == (t = o.Z.getBasicChannel(e.channel_id)) ? true : t.guild_id,
+  o.default.track(c.rMx.FORWARD_BREADCRUMB_CLICKED, {
+    guild_id: null == (t = l.Z.getBasicChannel(e.channel_id)) ? true : t.guild_id,
     channel_id: e.channel_id,
     message_id: e.id,
     breadcrumb_guild_id: n,
     breadcrumb_channel_id: u,
     breadcrumb_message_id: d,
-    did_lurk: _
+    did_lurk: m
   });
-  let p = _ ? u : true;
+  let f = m ? u : true;
   (0, i.Z)(c.Z5c.CHANNEL(n, u, d), {
-    welcomeModalChannelId: p
+    welcomeModalChannelId: f
   })
 }

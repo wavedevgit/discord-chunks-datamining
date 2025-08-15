@@ -3,17 +3,17 @@
 "use strict";
 require.d(exports, {
   eU: () => l,
-  s2: () => a,
+  s2: () => o,
   xT: () => s
 });
 var Chunk570140 = require("./570140.js"),
   Chunk566620 = require("./566620.js"),
   Chunk317381 = require("./317381.js");
 
-function a(e) {
+function o(e) {
   let {
     applicationId: t
-  } = e, n = o.ZP.getCurrentEmbeddedActivity();
+  } = e, n = a.ZP.getCurrentEmbeddedActivity();
   null != n && (0, i.mW)({
     location: n.location,
     applicationId: n.applicationId,

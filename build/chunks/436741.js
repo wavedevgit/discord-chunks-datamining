@@ -3,8 +3,8 @@
 let Chunk40231 = require("./40231.js"),
   Chunk889658 = require("./889658.js");
 module.exports = (e, t, n) => {
-  let o = null,
-    a = null,
+  let a = null,
+    o = null,
     s = null;
   try {
     s = new i(t, n)
@@ -12,6 +12,6 @@ module.exports = (e, t, n) => {
     return null
   }
   return e.forEach(e => {
-    s.test(e) && (!o || false === a.compare(e)) && (a = new r(o = e, n))
-  }), o
+    s.test(e) && (!a || false === o.compare(e)) && (o = new r(a = e, n))
+  }), a
 }

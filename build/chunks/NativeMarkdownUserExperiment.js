@@ -1,8 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 479398, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 31978 **/
+/** chunk id: 479398, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  o: () => i
+  o: () => l
 });
 let r = (0, require("./818083.js").B)({
   id: "2025-04_native_markdown",
@@ -26,7 +26,7 @@ let r = (0, require("./818083.js").B)({
   }]
 });
 
-function i(e) {
+function l(e) {
   let {
     location: t
   } = e;

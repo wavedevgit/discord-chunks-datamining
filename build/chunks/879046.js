@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 879046, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 30243 **/
+/** chunk id: 879046, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -15,21 +14,21 @@ var Chunk499254 = require("./499254.js"),
 function u(e) {
   let {
     entry: t
-  } = e, n = (0, o.q)(t.extra.application_id), u = null == n ? true : n.getIconURL(l.Si.LARGE), d = t.extra.activity_name, f = (0, s.Jg)(t) ? c.t.vPg1JS : c.t.rPqqtr, _ = {
+  } = e, r = (0, i.q)(t.extra.application_id), u = null == r ? true : r.getIconURL(c.Si.LARGE), d = t.extra.activity_name, p = (0, a.Jg)(t) ? s.t.vPg1JS : s.t.rPqqtr, f = {
     onClick: () => {
-      r.__(i._b.TEXT, a.Ie.NORMAL, {
+      n.__(l._b.TEXT, o.Ie.NORMAL, {
         applicationId: t.extra.application_id
       })
     },
-    ariaDescription: c.intl.formatToPlainString(c.t.NTHttL, {
+    ariaDescription: s.intl.formatToPlainString(s.t.NTHttL, {
       title: d
     })
   };
   return {
     thumbnailUrl: u,
     title: d,
-    titleClickable: _,
-    thumbnailClickable: _,
-    userDescription: f
+    titleClickable: f,
+    thumbnailClickable: f,
+    userDescription: p
   }
 }

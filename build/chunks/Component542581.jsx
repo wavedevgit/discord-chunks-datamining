@@ -32,25 +32,25 @@ let b = Chunk73800.memo(function(e) {
     return {
       guidelinesOpen: t
     }
-  }, o.X), v = (0, m.r_)(t), [C, _] = i.useState(false), y = i.useCallback(e => {
+  }, o.X), v = (0, m.r_)(t), [_, C] = i.useState(false), y = i.useCallback(e => {
     if (null == e) return;
     let t = e.clientHeight >= 220;
-    t !== C && _(t)
-  }, [C]);
+    t !== _ && C(t)
+  }, [_]);
   i.useLayoutEffect(() => {
     setTimeout(a, 350)
   }, [j, a]);
-  let [O, w] = i.useState(!j), P = (0, c.q_F)({
+  let [w, T] = i.useState(!j), O = (0, c.q_F)({
     opacity: +!!j,
     maxHeight: 500 * !!j,
     config: {
       duration: 300
     },
-    onRest: () => w(!j)
+    onRest: () => T(!j)
   });
   return null != t.topic && t.topic.length > 0 ? (0, r.jsx)(s.animated.div, {
-    style: P,
-    className: O ? x.hiddenVisually : true,
+    style: O,
+    className: w ? x.hiddenVisually : true,
     children: (0, r.jsxs)("div", {
       className: x.container,
       children: [(0, r.jsxs)("div", {
@@ -103,7 +103,7 @@ let b = Chunk73800.memo(function(e) {
               allowList: true
             })
           })
-        }), C && (0, r.jsxs)("div", {
+        }), _ && (0, r.jsxs)("div", {
           className: x.showMore,
           children: [(0, r.jsx)("div", {
             className: x.gradient

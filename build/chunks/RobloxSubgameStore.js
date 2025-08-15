@@ -75,7 +75,7 @@ class p extends(r = Chunk442837.ZP.PersistedStore) {
     var t;
     c = {}, Object.keys(null != (t = null == e ? true : e.universeIdToApplicationInfo) ? t : {}).forEach(t => {
       (null == e ? true : e.universeIdToApplicationInfo[t]) != null && (null == e ? true : e.universeIdToApplicationInfo[t].lastFetchedTime) != null && (c[t] = {
-        application: (null == e ? true : e.universeIdToApplicationInfo[t].application) != null ? new a.ZP(null == e ? true : e.universeIdToApplicationInfo[t].application) : null,
+        application: (null == e ? true : e.universeIdToApplicationInfo[t].application) != null ? new o.ZP(null == e ? true : e.universeIdToApplicationInfo[t].application) : null,
         lastFetchedTime: null == e ? true : e.universeIdToApplicationInfo[t].lastFetchedTime
       })
     })

@@ -1,18 +1,17 @@
-/** Chunk was on web.js **/
-/** chunk id: 866830, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 79381 **/
+/** chunk id: 866830, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U5: () => o,
-  qR: () => i
+  U5: () => i,
+  qR: () => l
 });
 var Chunk273504 = require("./273504.js");
 
-function i(e) {
-  let t = o();
+function l(e) {
+  let t = i();
   return Array.from(e.defaultActionTypes).map(e => t[e])
 }
 
-function o() {
+function i() {
   return {
     [Chunk273504.jj.BLOCK_MESSAGE]: {
       type: Chunk273504.jj.BLOCK_MESSAGE,

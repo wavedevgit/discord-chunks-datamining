@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 631937, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 631937, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => h
 });
 var Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,33 +14,33 @@ var Chunk73800 = require("./73800.js"),
   Chunk702321 = require("./702321.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e) {
+function h(e) {
   let t = (0, u.Z)(e),
     n = (0, i.e7)([a.default], () => a.default.locale),
-    _ = (0, i.e7)([c.Z], () => c.Z.getChangelog(null != t ? t : "", n), [t, n]),
-    p = (0, d.Z)(e),
-    h = r.useRef(p ? Date.now() : null),
-    m = (0, i.e7)([s.ZP], () => s.ZP.getUnreadCount(e), [e]),
-    g = r.useRef(m);
+    h = (0, i.e7)([c.Z], () => c.Z.getChangelog(null != t ? t : "", n), [t, n]),
+    f = (0, d.Z)(e),
+    m = r.useRef(f ? Date.now() : null),
+    g = (0, i.e7)([o.ZP], () => o.ZP.getUnreadCount(e), [e]),
+    b = r.useRef(g);
   r.useEffect(() => {
-    g.current = m
+    b.current = g
   }), r.useEffect(() => {
-    h.current = Date.now()
-  }, [p]), r.useEffect(() => {
-    p && null != t && o.Z.fetchChangelog(t, n, true)
-  }, [t, n, p]), r.useEffect(() => {
-    p && null != _ && l.default.track(f.rMx.CHANGE_LOG_OPENED, {
-      change_log_id: "".concat(_.date, ":").concat(_.revision),
-      unread_count: g.current
+    m.current = Date.now()
+  }, [f]), r.useEffect(() => {
+    f && null != t && l.Z.fetchChangelog(t, n, true)
+  }, [t, n, f]), r.useEffect(() => {
+    f && null != h && s.default.track(p.rMx.CHANGE_LOG_OPENED, {
+      change_log_id: "".concat(h.date, ":").concat(h.revision),
+      unread_count: b.current
     })
-  }, [p, _]), r.useEffect(() => {
-    let e = h.current;
+  }, [f, h]), r.useEffect(() => {
+    let e = m.current;
     return () => {
-      p && null != _ && null != e && (l.default.track(f.rMx.CHANGE_LOG_CLOSED, {
+      f && null != h && null != e && (s.default.track(p.rMx.CHANGE_LOG_CLOSED, {
         seconds_open: Math.round((Date.now() - e) / 1e3),
-        change_log_id: "".concat(_.date, ":").concat(_.revision),
-        unread_count: g.current
-      }), h.current = 0)
+        change_log_id: "".concat(h.date, ":").concat(h.revision),
+        unread_count: b.current
+      }), m.current = 0)
     }
-  }, [p, _])
+  }, [f, h])
 }

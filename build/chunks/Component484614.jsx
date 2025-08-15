@@ -1,9 +1,10 @@
-/** Chunk was on 77512 **/
+/** Chunk was on 81498 **/
 /** chunk id: 484614, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => p
 });
-var r, Chunk255367 = require("./255367.js"),
+var i, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk846519 = require("./846519.js"),
   Chunk755721 = require("./755721.js"),
@@ -19,7 +20,7 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class f extends(r = Chunk73800.PureComponent) {
+class h extends(i = Chunk73800.PureComponent) {
   componentWillUnmount() {
     this._timeout.stop()
   }
@@ -28,29 +29,29 @@ class f extends(r = Chunk73800.PureComponent) {
     let {
       text: n
     } = this.props, {
-      mode: r
-    } = this.state, l = r === Chunk481060.kO8.Modes.SUCCESS ? Chunk388032.intl.string(Chunk388032.t["t5VZ8/"]) : require;
+      mode: i
+    } = this.state, s = i === Chunk481060.kO8.Modes.SUCCESS ? Chunk388032.intl.string(Chunk388032.t["t5VZ8/"]) : require;
     return (0, Chunk255367.jsx)(Chunk481060.kO8, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
+        }))), i.forEach(function(t) {
           d(e, t, n[t])
         })
       }
       return e
     }({}, this.props), t = t = {
       onCopy: this.handleCopy,
-      mode: r,
+      mode: i,
       text: Chunk73800,
       supportsCopy: Chunk572004.wS
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var i = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, i)
       }
       return n
     })(Object(exports)).forEach(function(n) {
@@ -62,31 +63,31 @@ class f extends(r = Chunk73800.PureComponent) {
       onCopy: t,
       delay: n = 1e3
     } = this.props;
-    (0, a.JG)(e, () => this.setState({
-      mode: c.kO8.Modes.SUCCESS
+    (0, u.JG)(e, () => this.setState({
+      mode: a.kO8.Modes.SUCCESS
     }), () => this.setState({
-      mode: c.kO8.Modes.ERROR
+      mode: a.kO8.Modes.ERROR
     })), this._timeout.start(n, () => this.setState({
-      mode: c.kO8.Modes.DEFAULT
+      mode: a.kO8.Modes.DEFAULT
     })), null == t || t(e)
   }
   getVerticalButtonColor(e) {
     switch (e) {
-      case c.kO8.Modes.SUCCESS:
-        return s.zx.Colors.GREEN;
-      case c.kO8.Modes.ERROR:
-        return s.zx.Colors.RED;
+      case a.kO8.Modes.SUCCESS:
+        return o.zx.Colors.GREEN;
+      case a.kO8.Modes.ERROR:
+        return o.zx.Colors.RED;
       default:
-        return s.zx.Colors.BRAND
+        return o.zx.Colors.BRAND
     }
   }
   constructor(e) {
     super(e), d(this, "_timeout", true), this.state = {
-      mode: c.kO8.Modes.DEFAULT
-    }, this._timeout = new o.V7, this.handleCopy = this.handleCopy.bind(this)
+      mode: a.kO8.Modes.DEFAULT
+    }, this._timeout = new l.V7, this.handleCopy = this.handleCopy.bind(this)
   }
 }
-d(f, "defaultProps", {
+d(h, "defaultProps", {
   delay: 1e3
 });
-let p = f
+let p = h

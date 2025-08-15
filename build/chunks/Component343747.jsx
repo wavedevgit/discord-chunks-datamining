@@ -50,7 +50,7 @@ function u(e, t) {
 }
 
 function d(e) {
-  o.Z.open(e, a.pNK.SOUNDBOARD), (0, i.ZDy)(async () => {
+  a.Z.open(e, o.pNK.SOUNDBOARD), (0, i.ZDy)(async () => {
     let {
       default: t
     } = await Promise.all([n.e("12830"), n.e("56035"), n.e("62599")]).then(n.bind(n, 758961));

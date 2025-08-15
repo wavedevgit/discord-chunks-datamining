@@ -35,22 +35,22 @@ function u() {
 function d(e) {
   let {
     isUserVerified: t
-  } = e, u = t ? o.intl.string(o.t.WWzQtb) : o.intl.string(o.t.woMjLS);
+  } = e, u = t ? a.intl.string(a.t.WWzQtb) : a.intl.string(a.t.woMjLS);
   return (0, r.jsx)(s.PU, {
     className: c.editableRequirementContainer,
     icon: i.AtH,
     text: u,
-    footnote: o.intl.string(o.t["jMh+TU"]),
+    footnote: a.intl.string(a.t["jMh+TU"]),
     meetsRequirement: t,
     children: (0, r.jsx)(i.zxk, {
       variant: "primary",
       size: "sm",
-      text: o.intl.string(o.t["13ofGh"]),
+      text: a.intl.string(a.t["13ofGh"]),
       onClick: () => {
         (0, i.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("76540"), n.e("92304")]).then(n.bind(n, 607018));
+          } = await Promise.all([n.e("76540"), n.e("32103")]).then(n.bind(n, 607018));
           return t => (0, r.jsx)(e, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -72,7 +72,7 @@ function d(e) {
             reason: l.L.GUILD_PHONE_REQUIRED
           }, t))
         }, {
-          modalKey: a.M
+          modalKey: o.M
         })
       }
     })

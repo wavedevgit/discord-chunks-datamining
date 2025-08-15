@@ -16,8 +16,8 @@ var Chunk700785 = require("./700785.js"),
 let l = (e, t, n) => {
     if (null == t) return 2;
     let s = i.ZP.canUseCustomStickersEverywhere(t);
-    return (0, o.jl)(e) ? 0 : (0, o.J8)(e) && null != n ? e.available ? null != n.guild_id && "" !== n.guild_id && n.guild_id === e.guild_id ? 0 : null == n.guild_id || r.BT({
-      permission: a.Plq.USE_EXTERNAL_STICKERS,
+    return (0, a.jl)(e) ? 0 : (0, a.J8)(e) && null != n ? e.available ? null != n.guild_id && "" !== n.guild_id && n.guild_id === e.guild_id ? 0 : null == n.guild_id || r.BT({
+      permission: o.Plq.USE_EXTERNAL_STICKERS,
       user: t,
       context: n
     }) ? +!s : 2 : 3 : 2

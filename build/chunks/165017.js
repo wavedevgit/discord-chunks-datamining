@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 165017, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 54157 **/
+/** chunk id: 165017, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  H: () => f
+  H: () => d
 });
 var Chunk442837 = require("./442837.js"),
   Chunk592125 = require("./592125.js"),
@@ -11,32 +10,30 @@ var Chunk442837 = require("./442837.js"),
   Chunk251625 = require("./251625.js"),
   Chunk945577 = require("./945577.js"),
   Chunk981631 = require("./981631.js");
-
-function u(e, t, n, r, i, o) {
-  return i ? {
+let u = (0, Chunk251625.oH)(function(e, t, n, r, s, l) {
+  return s ? {
     type: c.aib.FAVORITES
   } : null != e && null != n ? {
     type: c.aib.GUILD,
     guildId: e
-  } : null == t || null == r ? null : r.isPrivate() && o ? {
+  } : null == t || null == r ? null : r.isPrivate() && l ? {
     type: c.aib.DMS
   } : {
     type: c.aib.CHANNEL,
     channelId: t
   }
-}
-let d = (0, Chunk251625.oH)(u);
+});
 
-function f(e) {
+function d(e) {
   let {
     guildId: t,
     channelId: n
-  } = e, s = (0, l.UX)({
+  } = e, i = (0, o.UX)({
     location: "useDesktopSearchContext"
   });
-  return (0, r.e7)([o.Z, i.Z, a.Z], () => {
-    let e = o.Z.getGuild(t),
-      r = i.Z.getChannel(n);
-    return d(t, n, e, r, a.Z.getGuildId() === c.I_8, s)
+  return (0, r.e7)([l.Z, s.Z, a.Z], () => {
+    let e = l.Z.getGuild(t),
+      r = s.Z.getChannel(n);
+    return u(t, n, e, r, a.Z.getGuildId() === c.I_8, i)
   })
 }

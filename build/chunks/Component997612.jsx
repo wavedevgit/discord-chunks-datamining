@@ -96,9 +96,9 @@ function I() {
     align: "center",
     animation: Chunk481060.yRy.Animation.SCALE,
     onRequestClose: () => {},
-    children: t => (0, r.jsx)(o.hU, y(E({
+    children: t => (0, r.jsx)(a.hU, y(E({
       size: "sm",
-      icon: o.ewm,
+      icon: a.ewm,
       "aria-label": "Settings",
       variant: "icon-only"
     }, t), {
@@ -111,38 +111,38 @@ function T(e) {
   var t;
   let {
     config: n
-  } = e, a = O.useField("selected"), {
+  } = e, o = O.useField("selected"), {
     group: l,
     story: c
   } = i.useMemo(() => {
     var e;
-    let t = n.groups.find(e => e.stories.some(e => e.id === a)),
-      r = null != (e = null == t ? true : t.stories.find(e => e.id === a)) ? e : null;
+    let t = n.groups.find(e => e.stories.some(e => e.id === o)),
+      r = null != (e = null == t ? true : t.stories.find(e => e.id === o)) ? e : null;
     return {
       group: t,
       story: r
     }
-  }, [a, n.groups]), u = e => {
+  }, [o, n.groups]), u = e => {
     O.setState({
       selected: e
     })
   }, p = null != (t = null == l ? true : l.title) ? t : "Mana", h = null == c ? true : c.name, g = () => {
     let e = "dev://mana/".concat(null == c ? true : c.id);
-    (0, d.JG)(e, () => (0, o.showToast)({
+    (0, d.JG)(e, () => (0, a.showToast)({
       id: "playground-link-copied",
       message: "Copied playground link",
-      type: o.ToastType.SUCCESS
+      type: a.ToastType.SUCCESS
     }))
   };
   return (0, r.jsxs)("div", {
     className: m.root,
     children: [(0, r.jsx)("div", {
       className: m.group,
-      children: (0, r.jsx)(o.aRk, {
-        children: (0, r.jsx)(o.ua7, {
+      children: (0, r.jsx)(a.aRk, {
+        children: (0, r.jsx)(a.ua7, {
           position: "right",
           text: "Mana Design System",
-          children: e => (0, r.jsx)(o.LYs, y(E({}, e), {
+          children: e => (0, r.jsx)(a.LYs, y(E({}, e), {
             name: "Mana",
             selected: true
           }))
@@ -164,16 +164,16 @@ function T(e) {
           children: [(0, r.jsx)(s.ZP.Divider, {
             className: m.headerDivider
           }), (0, r.jsx)(s.ZP.Title, {
-            children: (0, r.jsx)(o.eee, {
+            children: (0, r.jsx)(a.eee, {
               href: c.docs,
               children: "Docs"
             })
           })]
-        }) : null, null != c ? (0, r.jsx)(o.hU, {
+        }) : null, null != c ? (0, r.jsx)(a.hU, {
           size: "sm",
           "aria-label": "Copy Link",
           variant: "icon-only",
-          icon: o.TIy,
+          icon: a.TIy,
           onClick: g
         }) : null, (0, r.jsx)("div", {
           className: m.headerRight,
@@ -185,7 +185,7 @@ function T(e) {
           className: m.sidebar,
           children: (0, r.jsx)(f.N, {
             groups: n.groups,
-            selectedStory: a,
+            selectedStory: o,
             onStorySelect: u
           })
         }), (0, r.jsx)("div", {

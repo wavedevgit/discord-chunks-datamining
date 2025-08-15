@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 772606, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 772606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -18,16 +17,16 @@ function d(e) {
     className: t
   } = e, {
     goBack: n
-  } = (0, l.hH)(), o = i.useCallback(() => {
+  } = (0, s.hH)(), r = i.useCallback(() => {
     n()
   }, [n]);
-  return (0, r.jsx)(s.P3F, {
-    onClick: o,
+  return (0, l.jsx)(o.P3F, {
+    onClick: r,
     className: a()(u.clickable, t),
     "aria-label": c.intl.string(c.t.ybUZqq),
-    children: (0, r.jsx)(s.j9r, {
+    children: (0, l.jsx)(o.j9r, {
       size: "sm",
-      color: s.TVs.colors.INTERACTIVE_ACTIVE
+      color: o.TVs.colors.INTERACTIVE_ACTIVE
     })
   })
 }

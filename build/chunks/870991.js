@@ -1,14 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 870991, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 870991, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   D8: () => i,
-  E4: () => o
+  E4: () => l
 });
 var Chunk388032 = require("./388032.jsx");
 let i = "https://discord.com/safety/understanding-and-avoiding-common-scams";
 
-function o() {
+function l() {
   return [{
     title: Chunk388032.intl.string(Chunk388032.t.wSZfJS),
     description: Chunk388032.intl.string(Chunk388032.t.CRwzW1)

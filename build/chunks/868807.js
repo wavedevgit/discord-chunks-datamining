@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 868807, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 868807, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => h
+  a: () => f
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -13,49 +12,45 @@ var Chunk392711 = require("./392711.js"),
   Chunk306680 = require("./306680.js"),
   Chunk748902 = require("./748902.js"),
   Chunk981631 = require("./981631.js");
-let f = 25,
-  _ = new Set,
-  p = null;
+let p = new Set,
+  h = null;
 
-function h(e) {
+function f(e) {
+  var t;
   let {
-    id: t
+    id: n
   } = e, {
-    loaded: n,
-    message: r,
-    error: i
-  } = (0, o.cj)([u.Z, l.Z, c.ZP], () => {
-    let e = c.ZP.lastMessageId(t),
-      n = u.Z.getMessageRequestPreview(t);
-    if (null == n.message && null != e) {
-      let n = l.Z.getMessage(t, e);
-      if (null != n) return {
+    loaded: r,
+    message: i,
+    error: a
+  } = (0, l.cj)([u.Z, s.Z, c.ZP], () => {
+    let e = c.ZP.lastMessageId(n),
+      t = u.Z.getMessageRequestPreview(n);
+    if (null == t.message && null != e) {
+      let t = s.Z.getMessage(n, e);
+      if (null != t) return {
         loaded: true,
         error: false,
-        message: n
+        message: t
       }
     }
-    return n
-  }, [t]), a = (0, o.e7)([u.Z], () => u.Z.shouldLoadMessageRequestPreview(t), [t]);
-  return !n && null == r && a && m(t), {
-    loaded: n,
-    error: i,
-    message: r
+    return t
+  }, [n]), o = (0, l.e7)([u.Z], () => u.Z.shouldLoadMessageRequestPreview(n), [n]);
+  return !r && null == i && o && (t = n, p.add(t), null == h && (h = setTimeout(m, 0))), {
+    loaded: r,
+    error: a,
+    message: i
   }
 }
-
-function m(e) {
-  _.add(e), null == p && (p = setTimeout(g, 0))
+async function m() {
+  try {
+    for (; !i().isEmpty(p);) await g()
+  } finally {
+    h = null
+  }
 }
 async function g() {
-  try {
-    for (; !i().isEmpty(_);) await E()
-  } finally {
-    p = null
-  }
-}
-async function E() {
-  let e = Array.from(_).slice(0, f);
+  let e = Array.from(p).slice(0, 25);
   try {
     let t = await Chunk544891.tn.get({
       url: Chunk981631.ANM.MESSAGE_REQUESTS_SUPPLEMENTAL_DATA,
@@ -75,6 +70,6 @@ async function E() {
       requestedChannelIds: module
     })
   } finally {
-    for (let t of module) _.delete(exports)
+    for (let t of module) p.delete(exports)
   }
 }

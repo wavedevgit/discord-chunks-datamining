@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 7782, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 7782, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => A
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -30,242 +29,238 @@ var Chunk255367 = require("./255367.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk291738 = require("./291738.js");
-let R = 24,
-  P = 3,
-  w = e => {
+let Z = e => {
     let {
       userId: t,
       channelId: n
-    } = e, o = (0, a.e7)([E.Z], () => E.Z.getMutualGuilds(t), [t]), s = i.useMemo(() => null != o ? o.slice(0, P).map((e, t) => {
+    } = e, l = (0, a.e7)([y.Z], () => y.Z.getMutualGuilds(t), [t]), o = i.useMemo(() => null != l ? l.slice(0, 3).map((e, t) => {
       let {
         guild: n
-      } = e, i = null != n ? I.ZP.getGuildIconURL({
+      } = e, i = null != n ? j.ZP.getGuildIconURL({
         id: n.id,
         icon: n.icon,
-        size: R
+        size: 24
       }) : null;
       if (null == i) return null;
-      let a = t === (o.length > P ? P : o.length) - 1,
-        s = (0, r.jsx)("img", {
+      let a = t === (l.length > 3 ? 3 : l.length) - 1,
+        o = (0, r.jsx)("img", {
           src: i,
           alt: "",
-          className: C.avatar
+          className: I.avatar
         }, t);
-      return a ? s : (0, r.jsx)(d.ZP, {
-        className: C.avatarMask,
+      return a ? o : (0, r.jsx)(d.ZP, {
+        className: I.avatarMask,
         mask: d.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
-        width: R,
-        height: R,
-        children: s
+        width: 24,
+        height: 24,
+        children: o
       }, t)
-    }).filter(e => null != e) : [], [o]);
-    if (null == o || 0 === o.length) return (0, r.jsx)(l.Text, {
+    }).filter(e => null != e) : [], [l]);
+    return null == l || 0 === l.length ? (0, r.jsx)(s.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      children: N.intl.string(N.t.zjVh8v)
-    });
-    let c = () => {
-      (0, b.openUserProfileModal)({
-        userId: t,
-        channelId: n,
-        section: A.oh.MUTUAL_GUILDS,
-        sourceAnalyticsLocations: [u.Z.DM_CHANNEL]
-      })
-    };
-    return (0, r.jsxs)(r.Fragment, {
+      children: P.intl.string(P.t.zjVh8v)
+    }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: C.avatarContainer,
-        children: s
-      }), (0, r.jsx)(l.P3F, {
-        onClick: c,
-        children: (0, r.jsx)(l.Text, {
-          className: C.mutualGuilds,
+        className: I.avatarContainer,
+        children: o
+      }), (0, r.jsx)(s.P3F, {
+        onClick: () => {
+          (0, _.openUserProfileModal)({
+            userId: t,
+            channelId: n,
+            section: S.oh.MUTUAL_GUILDS,
+            sourceAnalyticsLocations: [u.Z.DM_CHANNEL]
+          })
+        },
+        children: (0, r.jsx)(s.Text, {
+          className: I.mutualGuilds,
           variant: "text-sm/normal",
-          children: N.intl.format(N.t.eE3oen, {
-            count: o.length
+          children: P.intl.format(P.t.eE3oen, {
+            count: l.length
           })
         })
       })]
     })
   },
-  D = e => {
+  T = e => {
     var t;
     let {
       relationshipType: n,
       userId: i,
-      showingBanner: o
+      showingBanner: l
     } = e, a = null == (t = v.default.getUser(i)) ? true : t.bot, u = () => {
-      c.Z.blockUser(i, {
-        location: S.ZY5.DM_CHANNEL
-      })
-    }, d = () => {
-      c.Z.removeFriend(i, {
-        location: S.ZY5.DM_CHANNEL
-      })
-    }, _ = () => {
-      c.Z.unblockUser(i, {
-        location: S.ZY5.DM_CHANNEL
-      })
-    }, p = () => {
-      c.Z.cancelFriendRequest(i, {
-        location: S.ZY5.DM_CHANNEL
-      })
-    }, h = () => {
       c.Z.addRelationship({
         userId: i,
         context: {
-          location: S.ZY5.DM_CHANNEL
+          location: E.ZY5.DM_CHANNEL
         }
       })
-    }, m = (0, r.jsx)(s.zx, {
-      className: C.action,
-      size: s.zx.Sizes.TINY,
-      color: s.zx.Colors.PRIMARY,
-      onClick: u,
-      children: N.intl.string(N.t.l4EmaW)
-    }), g = (0, f.n)({
+    }, d = (0, r.jsx)(o.zx, {
+      className: I.action,
+      size: o.zx.Sizes.TINY,
+      color: o.zx.Colors.PRIMARY,
+      onClick: () => {
+        c.Z.blockUser(i, {
+          location: E.ZY5.DM_CHANNEL
+        })
+      },
+      children: P.intl.string(P.t.l4EmaW)
+    }), h = (0, p.n)({
       userId: i
     });
     switch (n) {
-      case S.OGo.NONE:
+      case E.OGo.NONE:
         return (0, r.jsxs)(r.Fragment, {
-          children: [!a && !o && (0, r.jsx)(s.zx, {
-            className: C.action,
-            size: s.zx.Sizes.TINY,
-            onClick: h,
-            children: g
-          }), m]
+          children: [!a && !l && (0, r.jsx)(o.zx, {
+            className: I.action,
+            size: o.zx.Sizes.TINY,
+            onClick: u,
+            children: h
+          }), d]
         });
-      case S.OGo.FRIEND:
+      case E.OGo.FRIEND:
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(s.zx, {
-            className: C.action,
-            size: s.zx.Sizes.TINY,
-            onClick: d,
-            color: s.zx.Colors.PRIMARY,
-            children: N.intl.string(N.t.cvSt1N)
-          }), m]
+          children: [(0, r.jsx)(o.zx, {
+            className: I.action,
+            size: o.zx.Sizes.TINY,
+            onClick: () => {
+              c.Z.removeFriend(i, {
+                location: E.ZY5.DM_CHANNEL
+              })
+            },
+            color: o.zx.Colors.PRIMARY,
+            children: P.intl.string(P.t.cvSt1N)
+          }), d]
         });
-      case S.OGo.BLOCKED:
-        return (0, r.jsx)(s.zx, {
-          className: C.action,
-          size: s.zx.Sizes.TINY,
-          onClick: _,
-          color: s.zx.Colors.PRIMARY,
-          children: N.intl.string(N.t.XyHpKC)
+      case E.OGo.BLOCKED:
+        return (0, r.jsx)(o.zx, {
+          className: I.action,
+          size: o.zx.Sizes.TINY,
+          onClick: () => {
+            c.Z.unblockUser(i, {
+              location: E.ZY5.DM_CHANNEL
+            })
+          },
+          color: o.zx.Colors.PRIMARY,
+          children: P.intl.string(P.t.XyHpKC)
         });
-      case S.OGo.PENDING_INCOMING:
+      case E.OGo.PENDING_INCOMING:
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(l.Text, {
-            className: C.action,
+          children: [(0, r.jsx)(s.Text, {
+            className: I.action,
             color: "header-secondary",
             variant: "text-sm/normal",
-            children: N.intl.string(N.t.c2v5nJ)
-          }), (0, r.jsx)(s.zx, {
-            className: C.action,
-            size: s.zx.Sizes.TINY,
-            onClick: h,
-            children: N.intl.string(N.t["+WbSn5"])
-          }), (0, r.jsx)(s.zx, {
-            className: C.action,
-            size: s.zx.Sizes.TINY,
-            color: s.zx.Colors.PRIMARY,
-            onClick: p,
-            children: N.intl.string(N.t.rQSndn)
-          }), m]
+            children: P.intl.string(P.t.c2v5nJ)
+          }), (0, r.jsx)(o.zx, {
+            className: I.action,
+            size: o.zx.Sizes.TINY,
+            onClick: u,
+            children: P.intl.string(P.t["+WbSn5"])
+          }), (0, r.jsx)(o.zx, {
+            className: I.action,
+            size: o.zx.Sizes.TINY,
+            color: o.zx.Colors.PRIMARY,
+            onClick: () => {
+              c.Z.cancelFriendRequest(i, {
+                location: E.ZY5.DM_CHANNEL
+              })
+            },
+            children: P.intl.string(P.t.rQSndn)
+          }), d]
         });
-      case S.OGo.PENDING_OUTGOING:
+      case E.OGo.PENDING_OUTGOING:
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(s.zx, {
-            className: C.action,
-            size: s.zx.Sizes.TINY,
+          children: [(0, r.jsx)(o.zx, {
+            className: I.action,
+            size: o.zx.Sizes.TINY,
             disabled: true,
-            children: N.intl.string(N.t.xMH6vL)
-          }), m]
+            children: P.intl.string(P.t.xMH6vL)
+          }), d]
         });
       default:
         return null
     }
   },
-  L = e => {
+  N = e => {
     let {
       channelId: t,
       otherUserId: n
-    } = e, o = i.useCallback(() => {
-      (0, l.showToast)((0, l.createToast)(N.intl.string(N.t.a2j0ho), l.ToastType.FAILURE))
+    } = e, l = i.useCallback(() => {
+      (0, s.showToast)((0, s.createToast)(P.intl.string(P.t.a2j0ho), s.ToastType.FAILURE))
     }, []), a = i.useCallback(() => {
-      g.Z.closeChannelSidebar(y.uZ)
-    }, []), s = i.useCallback(() => {
-      g.Z.closeChannelSidebar(y.uZ)
+      b.Z.closeChannelSidebar(C.uZ)
+    }, []), o = i.useCallback(() => {
+      b.Z.closeChannelSidebar(C.uZ)
     }, []), {
       acceptMessageRequest: c,
       rejectMessageRequest: u,
       isAcceptLoading: d,
-      isRejectLoading: f,
-      isOptimisticAccepted: _,
-      isOptimisticRejected: h
-    } = (0, p.m)({
+      isRejectLoading: p,
+      isOptimisticAccepted: h,
+      isOptimisticRejected: m
+    } = (0, f.m)({
       user: v.default.getUser(n),
-      onError: o,
-      onAcceptSuccess: s,
+      onError: l,
+      onAcceptSuccess: o,
       onRejectSuccess: a
-    }), m = _ || h, E = d || f || m;
+    }), g = d || p || h || m;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.zxk, {
+      children: [(0, r.jsx)(s.zxk, {
         variant: "primary",
         size: "sm",
-        disabled: E,
+        disabled: g,
         onClick: () => c(t),
         loading: d,
-        text: N.intl.string(N.t.Kz8Pws)
-      }), (0, r.jsx)(l.zxk, {
+        text: P.intl.string(P.t.Kz8Pws)
+      }), (0, r.jsx)(s.zxk, {
         variant: "secondary",
         size: "sm",
-        disabled: E,
+        disabled: g,
         onClick: () => u(t),
-        loading: f,
-        text: N.intl.string(N.t.B2nygY)
+        loading: p,
+        text: P.intl.string(P.t.B2nygY)
       })]
     })
   },
-  x = e => {
+  A = e => {
     let {
       userId: t,
       channel: n,
       showingBanner: i
     } = e, {
-      channelId: s
-    } = (0, h._)(), l = (0, a.e7)([_.Z], () => null != s && _.Z.isSpam(s), [s]), c = (0, a.e7)([O.Z], () => O.Z.getRelationshipType(t), [t]), u = n.id === s, d = !o.tq && !u, f = !!o.tq || u || l, p = l || u ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(L, {
+      channelId: o
+    } = (0, m._)(), s = (0, a.e7)([h.Z], () => null != o && h.Z.isSpam(o), [o]), c = (0, a.e7)([x.Z], () => x.Z.getRelationshipType(t), [t]), u = n.id === o, d = !l.tq && !u, p = !!l.tq || u || s, f = s || u ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(N, {
         channelId: n.id,
         otherUserId: t
-      }), (0, r.jsx)(m.Z, {
+      }), (0, r.jsx)(g.Z, {
         channel: n
       })]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(D, {
+      children: [(0, r.jsx)(T, {
         relationshipType: c,
         userId: t,
         showingBanner: i
-      }), !i && (0, r.jsx)(T.Z, {
+      }), !i && (0, r.jsx)(O.Z, {
         otherUserId: t,
         channel: n,
         navigateAwayOnReportSuccess: d
       })]
     });
     return (0, r.jsxs)("div", {
-      className: f ? C.mobileContainer : C.container,
+      className: p ? I.mobileContainer : I.container,
       children: [(0, r.jsx)("div", {
-        className: C.inline,
-        children: (0, r.jsx)(w, {
+        className: I.inline,
+        children: (0, r.jsx)(Z, {
           userId: t,
           channelId: n.id
         })
-      }), !f && (0, r.jsx)("div", {
-        className: C.divider
+      }), !p && (0, r.jsx)("div", {
+        className: I.divider
       }), (0, r.jsx)("div", {
-        className: C.inline,
-        children: p
+        className: I.inline,
+        children: f
       })]
     })
   }

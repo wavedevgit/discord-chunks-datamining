@@ -43,8 +43,8 @@ class m extends(r = Chunk73800.Component) {
       label: t,
       placeholder: n,
       searchTerm: r,
-      inputClassName: o,
-      className: a,
+      inputClassName: a,
+      className: o,
       onChange: f,
       onFocus: _,
       onBlur: m,
@@ -103,7 +103,7 @@ class m extends(r = Chunk73800.Component) {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "_textInputRef", o.createRef()), f(this, "_containerRef", o.createRef()), f(this, "handleClear", () => {
+    super(...e), f(this, "_textInputRef", a.createRef()), f(this, "_containerRef", a.createRef()), f(this, "handleClear", () => {
       let {
         onClear: e,
         forwardedRef: t

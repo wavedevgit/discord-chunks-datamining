@@ -22,9 +22,9 @@ function d(e) {
     id: "video-settings",
     label: u.intl.string(u.t.LKzQSE),
     action: () => {
-      o.Z.open(l.oAB.VOICE, c.gP, {
+      a.Z.open(l.oAB.VOICE, c.gP, {
         analyticsLocations: t
-      }), (0, a.i)(e)
+      }), (0, o.i)(e)
     },
     icon: i.ewm
   })

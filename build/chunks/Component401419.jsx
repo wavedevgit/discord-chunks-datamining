@@ -1,59 +1,54 @@
-/** Chunk was on web.js **/
-/** chunk id: 401419, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 53937 **/
+/** chunk id: 401419, original params: e,l,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => m,
-  j: () => p
+  Z: () => h,
+  j: () => u
 }), require("./35282.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk729594 = require("./729594.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk126425 = require("./126425.js");
-let c = ["sessionshare.sp-int.playstation.com", "session-share.playstation.com"],
-  u = (e, t, n) => "https://".concat(e, "/embed/").concat(t, "?locale=").concat(n),
-  d = 400,
-  f = 300,
-  _ = 6,
-  p = ["PlayStation"],
-  h = (e, t) => {
+let d = ["sessionshare.sp-int.playstation.com", "session-share.playstation.com"],
+  u = ["PlayStation"];
+
+function h(e) {
+  var l;
+  let t = e.embed.url,
+    n = null == (l = e.embed.provider) ? true : l.name;
+  if (null == t || null == n) return null;
+  let u = null;
+  try {
+    u = s.parse(t, true)
+  } catch (e) {
+    return null
+  }
+  let h = ((e, l) => {
     let {
-      host: n,
+      host: t,
       pathname: r
-    } = t, i = [];
-    if (null != r && (i = r.split("/")), "PlayStation" === e) {
-      if (null == n || !c.includes(n) || 2 !== i.length) return null;
-      let e = i[1];
+    } = l, n = [];
+    if (null != r && (n = r.split("/")), "PlayStation" === e) {
+      let e;
+      if (null == t || !d.includes(t) || 2 !== n.length) return null;
+      let l = n[1];
       return {
-        embedUrl: u(n, e, s.intl.currentLocale),
+        embedUrl: (e = a.intl.currentLocale, "https://".concat(t, "/embed/").concat(l, "?locale=").concat(e)),
         style: {
-          width: d,
-          height: f,
-          borderRadius: _
+          width: 400,
+          height: 300,
+          borderRadius: 6
         }
       }
     }
     return null
-  };
-
-function m(e) {
-  var t;
-  let n = e.embed.url,
-    i = null == (t = e.embed.provider) ? true : t.name;
-  if (null == n || null == i) return null;
-  let s = null;
-  try {
-    s = a.parse(n, true)
-  } catch (e) {
-    return null
-  }
-  let c = h(i, s);
-  return null == c ? null : (0, r.jsx)("iframe", {
-    src: c.embedUrl,
-    className: o()(l.embedIFrame, e.className),
-    style: c.style,
+  })(n, u);
+  return null == h ? null : (0, r.jsx)("iframe", {
+    src: h.embedUrl,
+    className: i()(o.embedIFrame, e.className),
+    style: h.style,
     sandbox: "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 333834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -112,12 +112,12 @@ function D(e) {
     renderMessageGroup: d,
     scrollerClassName: h,
     className: g,
-    listName: I,
+    listName: P,
     ignoreGrouping: N = false
-  } = e, D = (0, y.fJ)(), L = i.useRef(null), M = (0, f.Z)(I, L), {
+  } = e, D = (0, y.fJ)(), L = i.useRef(null), M = (0, f.Z)(P, L), {
     entrypoint: k,
     notificationCenterVariant: U
-  } = (0, _.pN)({
+  } = (0, O.pN)({
     location: "NotificationsInboxSidebarList"
   }), {
     isLoading: G,
@@ -127,8 +127,8 @@ function D(e) {
     isLoading: j.Z.isLoading,
     isLoadingComplete: j.Z.isLoadingComplete,
     hasLoadedEver: j.Z.hasLoadedEver
-  })), F = !V && G, {
-    messageCategoryOpenStates: H,
+  })), H = !V && G, {
+    messageCategoryOpenStates: F,
     toggleOpenState: z
   } = (0, v.Z)(), W = function() {
     let e = (0, u.Wu)([j.Z], () => {
@@ -159,8 +159,8 @@ function D(e) {
         animate: true
       })
     }
-    return b.S.subscribe(P.CkL.SCROLL_PAGE_DOWN, t), b.S.subscribe(P.CkL.SCROLL_PAGE_UP, e), () => {
-      b.S.unsubscribe(P.CkL.SCROLL_PAGE_DOWN, t), b.S.unsubscribe(P.CkL.SCROLL_PAGE_UP, e)
+    return b.S.subscribe(I.CkL.SCROLL_PAGE_DOWN, t), b.S.subscribe(I.CkL.SCROLL_PAGE_UP, e), () => {
+      b.S.unsubscribe(I.CkL.SCROLL_PAGE_DOWN, t), b.S.unsubscribe(I.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
   let K = i.useCallback(() => {
@@ -195,7 +195,7 @@ function D(e) {
         let t = (0, C.bl)(e);
         e.kind === S.fL.MENTION ? r[t].push(e) : e.channelId in i[t] ? i[t][e.channelId].push(e) : i[t][e.channelId] = [e]
       }), s().each(A, t => {
-        [...Object.values(i[t]).map(e => e.reverse()), ...r[t].map(e => [e])].sort((e, t) => O.default.compare(t[0].id, e[0].id)).forEach(n => {
+        [...Object.values(i[t]).map(e => e.reverse()), ...r[t].map(e => [e])].sort((e, t) => _.default.compare(t[0].id, e[0].id)).forEach(n => {
           e[t].push(n)
         })
       })), e
@@ -207,18 +207,18 @@ function D(e) {
       return X ? e.push(a()) : q ? e.push((0, r.jsx)(R, {}, "empty-state")) : N ? (e.push(...n.map(e => d([e], true))), e.push(...t.map(e => d([e], false)))) : s().each(A, t => {
         0 !== Y[t].length && (e.push((0, r.jsx)(T, {
           group: t,
-          isOpen: H[t],
+          isOpen: F[t],
           toggleOpenedState: () => {
-            let e = H[t];
+            let e = F[t];
             z(t), (0, y.RZ)({
               section: t,
               enabled: !e,
               viewId: D
             })
           }
-        }, t)), H[t] && e.push(...Y[t].map(e => d(e, t === S.KZ.UNREAD))))
+        }, t)), F[t] && e.push(...Y[t].map(e => d(e, t === S.KZ.UNREAD))))
       }), e
-    }, [t, n, a, H, z, Y, N, d, q, X, D]),
+    }, [t, n, a, F, z, Y, N, d, q, X, D]),
     J = Q[Q.length - 1],
     $ = i.isValidElement(J) && J.type === T,
     ee = (0, E.d)(e => e.setInboxReadState);
@@ -238,14 +238,14 @@ function D(e) {
     }, [o, l, t])
   }({
     messagesByCategory: Y,
-    loadingInitial: F
+    loadingInitial: H
   });
   let en = i.useCallback(() => {
     var e;
-    let t = A.filter(e => H[e]).reduce((e, t) => e + Y[t].length, 0),
+    let t = A.filter(e => F[e]).reduce((e, t) => e + Y[t].length, 0),
       n = null == (e = L.current) ? true : e.getScrollerState();
     return null == n ? 0 : Math.max(0, Math.ceil(n.offsetHeight / 64) - t)
-  }, [H, Y]);
+  }, [F, Y]);
   i.useEffect(() => {
     X || G || 0 >= en() || (!$ || W) && (null == l || l(S.X.FILL_SCROLLER))
   }, [en, l, X, G, $, W]);

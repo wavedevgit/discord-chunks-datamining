@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 385063, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 385063, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -15,42 +14,42 @@ var Chunk442837 = require("./442837.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e) {
+function p(e) {
   let {
     message: t,
     usernameHook: n,
-    compact: f,
-    isForumPost: _
-  } = e, p = (0, c.ZP)(t), h = n(p), m = (0, i.e7)([l.Z], () => {
+    compact: p,
+    isForumPost: m
+  } = e, f = (0, c.ZP)(t), _ = n(f), g = (0, i.e7)([s.Z], () => {
     var e, n;
-    return null != (n = null == (e = l.Z.getChannel(t.channel_id)) ? true : e.isGroupDM()) && n
+    return null != (n = null == (e = s.Z.getChannel(t.channel_id)) ? true : e.isGroupDM()) && n
   });
   return (0, r.jsx)(u.Z, {
-    compact: f,
-    iconNode: (0, r.jsx)(o.vdY, {
+    compact: p,
+    iconNode: (0, r.jsx)(l.vdY, {
       size: "xs",
       color: "currentColor"
     }),
     timestamp: t.timestamp,
-    children: m ? d.intl.format("" === t.content ? d.t.AI1ZZm : d.t.geP3ra, {
-      username: p.nick,
-      usernameHook: h,
-      channelName: (0, r.jsx)(o.Text, {
+    children: g ? d.intl.format("" === t.content ? d.t.AI1ZZm : d.t.geP3ra, {
+      username: f.nick,
+      usernameHook: _,
+      channelName: (0, r.jsx)(l.Text, {
         tag: "span",
         variant: "text-md/medium",
         color: "text-primary",
         children: t.content
       }, "group-name-".concat(t.id)),
-      editGroupButton: (0, r.jsx)(o.Text, {
+      editGroupButton: (0, r.jsx)(l.Text, {
         tag: "span",
         variant: "text-md/medium",
         color: "text-link",
         children: d.intl.string(d.t["5Q9+/P"])
       }, "edit-group-button-".concat(t.id)),
-      onEditGroup: () => (0, s.B)(t.channel_id, a.Z.GROUP_DM_SYSTEM_MESSAGE_NAME)
-    }) : d.intl.format(_ ? d.t.SOQ4hI : d.t.oItgEx, {
-      username: p.nick,
-      usernameHook: h,
+      onEditGroup: () => (0, o.B)(t.channel_id, a.Z.GROUP_DM_SYSTEM_MESSAGE_NAME)
+    }) : d.intl.format(m ? d.t.SOQ4hI : d.t.oItgEx, {
+      username: f.nick,
+      usernameHook: _,
       channelName: t.content
     })
   })

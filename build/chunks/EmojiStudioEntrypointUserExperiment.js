@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk203311 = require("./203311.js"),
   Chunk818083 = require("./818083.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-04_emoji_studio",
     label: "Emoji Studio",
@@ -37,7 +37,7 @@ let o = (0, Chunk818083.B)({
       }
     }]
   }),
-  a = (0, Chunk818083.B)({
+  o = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-07_emoji_studio_mobile",
     label: "Emoji Studio (Mobile)",
@@ -76,14 +76,14 @@ function l(e) {
   } = e, l = (0, r.$u)(t), {
     enabled: c,
     showExpressionPickerButton: u
-  } = o.useExperiment({
+  } = a.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
     disable: l || i
   }), {
     enabled: d
-  } = a.useExperiment({
+  } = o.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,

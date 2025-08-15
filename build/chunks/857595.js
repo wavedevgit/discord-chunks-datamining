@@ -103,12 +103,12 @@ function b(e) {
 }
 
 function y(e) {
-  let t = a.Z.useReducedMotion;
+  let t = o.Z.useReducedMotion;
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_PREFERS_REDUCED_MOTION",
     prefersReducedMotion: e
   });
-  let n = a.Z.useReducedMotion;
+  let n = o.Z.useReducedMotion;
   !t && n ? i.ZP.applySettingsOverride({
     gifAutoPlay: {
       value: false,
@@ -164,7 +164,7 @@ function A(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_ROLE_STYLE",
     roleStyle: e
-  }), o.default.track(s.rMx.ROLE_STYLE_SETTING_UPDATED, {
+  }), a.default.track(s.rMx.ROLE_STYLE_SETTING_UPDATED, {
     role_style: e
   })
 }

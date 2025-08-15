@@ -1,7 +1,7 @@
-/** Chunk was on 58511 **/
+/** Chunk was on 47463 **/
 /** chunk id: 13051, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => T
 }), require("./388685.js"), require("./642613.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -48,14 +48,14 @@ function w(e) {
   return e
 }
 
-function I(e) {
+function T(e) {
   let t, {
       guild: n,
       integration: l,
       editedIntegration: o,
-      isExpanded: I,
-      onToggleExpand: P,
-      onDisable: T,
+      isExpanded: T,
+      onToggleExpand: I,
+      onDisable: P,
       onEnable: E
     } = e,
     [k, A] = r.useState(false),
@@ -71,7 +71,7 @@ function I(e) {
           header: N.intl.string(N.t.emx3lJ),
           confirmText: r,
           cancelText: N.intl.string(N.t["ETE/oK"]),
-          onConfirm: () => T(l),
+          onConfirm: () => P(l),
           children: (0, i.jsx)(u.Text, {
             variant: "text-md/normal",
             children: l.type === c.b.YOUTUBE ? N.intl.string(N.t.anKQWV) : N.intl.string(N.t["BW/xtr"])
@@ -87,7 +87,7 @@ function I(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
       })
-    }, [l, T]),
+    }, [l, P]),
     M = r.useCallback(() => {
       f.Z.syncIntegration(n.id, l.id)
     }, [n.id, l.id]),
@@ -95,8 +95,8 @@ function I(e) {
       null != l.role_id && (f.Z.setSection(C.pNK.ROLES), f.Z.selectRole(l.role_id))
     }, [l.role_id]),
     {
-      serviceName: U,
-      channelURL: W,
+      serviceName: W,
+      channelURL: U,
       expireBehaviorLabel: H,
       syncLabel: G,
       subscribersText: z
@@ -125,7 +125,7 @@ function I(e) {
     F = (0, d.e7)([x.Z], () => null != l.role_id ? x.Z.getRole(n.id, l.role_id) : true),
     {
       roleLink: K,
-      syncDescriptionText: q
+      syncDescriptionText: V
     } = r.useMemo(() => {
       let e;
       e = null != F ? (0, i.jsx)(u.eee, {
@@ -143,12 +143,12 @@ function I(e) {
         })
       }
     }, [F, B, l.revoked, l.synced_at, l.type, l.user]),
-    V = (0, d.e7)([x.Z], () => x.Z.getSortedRoles(n.id)),
+    q = (0, d.e7)([x.Z], () => x.Z.getSortedRoles(n.id)),
     Y = r.useMemo(() => {
       let e = g.ZP.getGuildEmoji(n.id),
-        t = V.filter(e => null != e.tags && e.tags.integration_id === l.id).map(e => e.id);
+        t = q.filter(e => null != e.tags && e.tags.integration_id === l.id).map(e => e.id);
       return l.enable_emoticons ? e.sort((e, t) => e.name.localeCompare(t.name)).filter(e => null != l.role_id && (null == e ? true : e.roles.some(e => t.includes(e)))) : []
-    }, [n.id, V, l.enable_emoticons, l.id, l.role_id]);
+    }, [n.id, q, l.enable_emoticons, l.id, l.role_id]);
   if (r.useEffect(() => {
       (null == o ? true : o.id) === l.id && (null == o ? true : o.enabled) === true && A(false)
     }, [o, l.id]), l.enabled && null != l.user) t = [{
@@ -161,16 +161,16 @@ function I(e) {
     })
   }];
   else {
-    let e = new URL(W);
+    let e = new URL(U);
     t = [{
       text: N.intl.format(N.t.BegylZ, {
-        serviceName: U,
-        accountUrl: W,
+        serviceName: W,
+        accountUrl: U,
         accountUrlText: e.hostname + e.pathname
       })
     }]
   }
-  let X = (0, i.jsxs)(b.Z, {
+  let $ = (0, i.jsxs)(b.Z, {
       className: Z.header,
       align: b.Z.Align.CENTER,
       children: [(0, i.jsx)(_.Z, {
@@ -182,7 +182,7 @@ function I(e) {
         grow: 0,
         children: (0, i.jsx)(v.Z, {
           className: Z.expandIcon,
-          expanded: I && !k,
+          expanded: T && !k,
           "aria-hidden": true
         })
       }) : (0, i.jsx)(b.Z.Child, {
@@ -202,8 +202,8 @@ function I(e) {
         })
       })]
     }),
-    $ = null;
-  return I && !k && null != o && ($ = (0, i.jsxs)(b.Z, {
+    J = null;
+  return T && !k && null != o && (J = (0, i.jsxs)(b.Z, {
     className: Z.body,
     direction: b.Z.Direction.VERTICAL,
     children: [(0, i.jsx)(u.$i$, {
@@ -267,7 +267,7 @@ function I(e) {
       integration: o,
       labelText: G,
       subscribersText: z,
-      descriptionText: q,
+      descriptionText: V,
       roleLink: K,
       onSync: M
     }), (0, i.jsx)(u.$i$, {
@@ -398,10 +398,10 @@ function I(e) {
       direction: b.Z.Direction.VERTICAL,
       children: [l.enabled ? (0, i.jsx)(u.P3F, {
         className: Z.expandableHeader,
-        "aria-expanded": I && !k,
-        onClick: P,
-        children: X
-      }) : X, $]
+        "aria-expanded": T && !k,
+        onClick: I,
+        children: $
+      }) : $, J]
     })
   })
 }

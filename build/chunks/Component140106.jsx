@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 140106, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 140106, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ND: () => p,
   P5: () => h,
-  g6: () => m
+  g6: () => f
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -16,49 +15,44 @@ var Chunk347715 = require("./347715.js"),
   Chunk346486 = require("./346486.jsx"),
   Chunk486324 = require("./486324.js"),
   Chunk388032 = require("./388032.jsx");
-
-function f(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function _(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      f(e, t, n[t])
-    })
-  }
-  return e
-}
-let p = (e, t) => (0, o.ZDy)(async () => {
+let p = (e, t) => (0, l.ZDy)(async () => {
     let {
       default: i
-    } = await Promise.all([n.e("91689"), n.e("89289"), n.e("27709")]).then(n.bind(n, 28130));
-    return n => (0, r.jsx)(i, _({
+    } = await Promise.all([n.e("91689"), n.e("89289"), n.e("89006")]).then(n.bind(n, 28130));
+    return n => (0, r.jsx)(i, function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({
       maxFileSizeBytes: 8388608,
       onComplete: e,
       uploadType: u.pC.AVATAR,
       showUpsellHeader: false,
       modalTitle: d.intl.string(d.t["6yrpFR"]),
-      analyticsLocation: l.Z.GROUP_DM_ICON_EDITOR,
+      analyticsLocation: s.Z.GROUP_DM_ICON_EDITOR,
       analyticsLocations: t,
       allowRecentAvatarsSelection: false
     }, n))
   }),
   h = (e, t) => {
     p(n => {
-      s.Z.setIcon(e, n.imageUri, t).catch(m)
+      o.Z.setIcon(e, n.imageUri, t).catch(f)
     }, [t])
   },
-  m = e => {
+  f = e => {
     var t;
     if ((null == e || null == (t = e.body) ? true : t.retry_after) != null) {
       let t = (0, i.Z)(new Date, e.body.retry_after);

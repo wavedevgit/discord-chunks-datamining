@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 665302, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 31253 **/
+/** chunk id: 665302, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  h: () => c
+  h: () => s
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -12,30 +11,30 @@ var Chunk755721 = require("./755721.js"),
   Chunk981631 = require("./981631.js"),
   Chunk496526 = require("./496526.js");
 
-function c(e) {
+function s(e) {
   let {
     buttonText: t,
     onGoBack: n,
-    onDismiss: c,
+    onDismiss: s,
     showCloseButton: u
   } = e;
-  return (0, r.jsxs)(o.qXd, {
-    className: l.backNotice,
-    children: [u && (0, r.jsx)(o.RyX, {
-      onClick: c,
-      noticeType: s.kVF.BACK_TO_PREVIOUS_SCREEN
+  return (0, r.jsxs)(l.qXd, {
+    className: c.backNotice,
+    children: [u && (0, r.jsx)(l.RyX, {
+      onClick: s,
+      noticeType: a.kVF.BACK_TO_PREVIOUS_SCREEN
     }), (0, r.jsxs)(i.zx, {
-      className: l.backButton,
-      innerClassName: l.backButtonInner,
+      className: c.backButton,
+      innerClassName: c.backButtonInner,
       look: i.zx.Looks.OUTLINED,
       color: i.zx.Colors.WHITE,
       size: i.zx.Sizes.NONE,
       onClick: n,
-      children: [(0, r.jsx)(a.Z, {
+      children: [(0, r.jsx)(o.Z, {
         width: 16,
         height: 16,
-        direction: a.Z.Directions.LEFT,
-        className: l.__invalid_backArrow
+        direction: o.Z.Directions.LEFT,
+        className: c.__invalid_backArrow
       }), t]
     })]
   })

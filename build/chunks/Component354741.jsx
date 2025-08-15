@@ -28,7 +28,7 @@ let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     channel: t,
     selected: l,
     onSelect: o
-  } = e, v = t.isOwner(g.default.getId()), x = (0, O.Z)(t), P = (0, y.ZP)(t), Z = (0, p.Uf)(_.aIL, t.id, "top"), {
+  } = e, v = t.isOwner(g.default.getId()), x = (0, O.Z)(t), Z = (0, y.ZP)(t), P = (0, p.Uf)(_.aIL, t.id, "top"), {
     rearrangeContextMenu: C
   } = f.Z.useExperiment({
     location: c.Z.GROUP_DM_CONTEXT_MENU
@@ -41,7 +41,7 @@ let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     action: () => (0, i.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("12830"), n.e("97573")]).then(n.bind(n, 892382));
+      } = await n.e("97573").then(n.bind(n, 892382));
       return n => (0, r.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -70,7 +70,7 @@ let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     onClose: a.Zy,
     onSelect: o,
     children: [(0, r.jsxs)(i.kSQ, {
-      children: [x, Z, E]
+      children: [x, P, E]
     }), (0, r.jsxs)(i.kSQ, {
       children: [!C && T, (0, r.jsx)(i.sNh, {
         id: "edit-gdm",
@@ -81,9 +81,9 @@ let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     }), (0, r.jsx)(i.kSQ, {
       children: k
     }), (0, r.jsx)(i.kSQ, {
-      children: !C && P
+      children: !C && Z
     }), (0, r.jsxs)(i.kSQ, {
-      children: [C && P, N, w]
+      children: [C && Z, N, w]
     }), (0, r.jsx)(i.kSQ, {
       children: S
     })]

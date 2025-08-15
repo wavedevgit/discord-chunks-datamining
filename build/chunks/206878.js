@@ -92,7 +92,7 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
       addError: a
     } = e, n = /^[a-z0-9]+(_[a-z0-9]+)*(\.[a-z0-9]+)?$/, r = t.filter(e => !n.test(e));
     r.length > 0 && a("File names must be in lowercase snake case", r)
-  }, f = (e, t, a, n) => {
+  }, v = (e, t, a, n) => {
     let r = t.size,
       l = r > 1e6 ? "".concat((r / 1e6).toFixed(2), "MB") : "".concat((r / 1e3).toFixed(2), "KB"),
       i = "".concat(t.name, " - ").concat(l);
@@ -100,10 +100,10 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
       let t = e.max > 1e6 ? "".concat(Math.round(e.max / 1e6), "MB") : "".concat(Math.round(e.max / 1e3), "KB");
       a("Files exceed the recommended size limit - make sure they are optimized!", ["".concat(i, " (max: ").concat(t, ")")])
     } else r > e.warn && n("Files are a tad chonky - are you sure they're optimized?", ["".concat(i)])
-  }, v = (e, t, a, n) => {
+  }, f = (e, t, a, n) => {
     let r = h[e];
     if (null != r)
-      for (let e of t) e.name.endsWith(".txt") || f(r, e, a, n)
+      for (let e of t) e.name.endsWith(".txt") || v(r, e, a, n)
   }, j = () => {
     let [e, t] = Chunk73800.useState(false), [a, c] = Chunk73800.useState({}), [d, u] = Chunk73800.useState({}), m = Chunk73800.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
@@ -148,7 +148,7 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
             for (let e of t.collectionFiles) {
               let t = (0, r.BU)(e),
                 l = null != t ? h[t] : null;
-              null != l && f(l, e, a, n)
+              null != l && v(l, e, a, n)
             }
             b({
               names: t.collectionFiles.map(e => e.name),
@@ -180,7 +180,7 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
                   return e.substring(0, t > 0 ? t : e.length)
                 }),
                 addError: a
-              }), v(r.aB.PROFILE_EFFECT, l, a, n);
+              }), f(r.aB.PROFILE_EFFECT, l, a, n);
               let s = o.filter(e => !i.some(t => t.startsWith(e) && t.endsWith(".png"))).map(e => "".concat(t, "/").concat(e));
               s.length > 0 && a("Missing required PFX files with prefix", s), i.some(e => e.endsWith(".txt")) || a("PFX configs required - please include both exports! (exception: duplicate variant configs are optional)", [t]);
               let c = i.filter(e => !o.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => "".concat(t, "/").concat(e));
@@ -199,7 +199,7 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
             b({
               names: t.avatarDecorationFiles.map(e => e.name),
               addError: a
-            }), v(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, a, n)
+            }), f(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, a, n)
           })({
             files: a,
             addError: m,

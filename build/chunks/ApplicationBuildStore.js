@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => z
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk570140 = require("./570140.js"),
@@ -65,23 +65,23 @@ function M() {
       applicationId: t,
       branchId: n
     } = (0, Chunk780570.CP)(module);
-    null != Chunk812206.Z.getApplication(exports) && (A.delete(module), j(exports, require))
+    null != Chunk812206.Z.getApplication(exports) && (A.delete(module), k(exports, require))
   }
 }
 
-function j(e, t) {
+function k(e, t) {
   if (null != I[t] && g.Z.shouldBeInstalled(e, t)) {
     let n = I[t],
       r = n.manifestIds,
       i = m.Z.getState(e, t);
-    null != i && i.shouldPatch && (i.buildId !== n.id || !o().isEqual(i.manifestIds, r)) && l.Z.wait(() => {
+    null != i && i.shouldPatch && (i.buildId !== n.id || !a().isEqual(i.manifestIds, r)) && l.Z.wait(() => {
       let i = f.Z.getApplication(e);
       null != i ? (A.delete((0, b.Tu)(e, t)), (0, d.li)(i, t, n.id, r, true)) : A.add((0, b.Tu)(e, t))
     })
   }
 }
 
-function k(e) {
+function j(e) {
   let {
     branchId: t
   } = e;
@@ -96,20 +96,20 @@ function U(e) {
     build: i
   } = e;
   v.delete(n);
-  let o = i.manifests.map(e => {
+  let a = i.manifests.map(e => {
       let {
         id: t
       } = e;
       return t
     }),
-    a = i.id;
+    o = i.id;
   T.delete(n), I[n] = {
-    id: a,
+    id: o,
     applicationId: t,
     branchId: n,
     locale: r,
-    manifestIds: o
-  }, j(t, n)
+    manifestIds: a
+  }, k(t, n)
 }
 
 function G(e) {
@@ -126,7 +126,7 @@ function B(e) {
   S.hasOwnProperty(t) || (S[t] = null)
 }
 
-function Z(e) {
+function V(e) {
   let {
     buildId: t,
     sizeKB: n
@@ -141,7 +141,7 @@ function F(e) {
   null == S[t] && delete S[t]
 }
 
-function V(e) {
+function Z(e) {
   let {
     branches: t
   } = e, n = {};
@@ -210,13 +210,13 @@ O(K, "displayName", "ApplicationBuildStore");
 let z = new K(Chunk570140.Z, {
   CONNECTION_OPEN: L,
   GAMES_DATABASE_UPDATE: M,
-  APPLICATION_BUILD_FETCH_START: k,
+  APPLICATION_BUILD_FETCH_START: j,
   APPLICATION_BUILD_FETCH_SUCCESS: U,
   APPLICATION_BUILD_NOT_FOUND: G,
   APPLICATION_BUILD_SIZE_FETCH_START: B,
-  APPLICATION_BUILD_SIZE_FETCH_SUCCESS: Z,
+  APPLICATION_BUILD_SIZE_FETCH_SUCCESS: V,
   APPLICATION_BUILD_SIZE_FETCH_FAIL: F,
-  APPLICATION_BRANCHES_FETCH_SUCCESS: V,
+  APPLICATION_BRANCHES_FETCH_SUCCESS: Z,
   APPLICATION_BRANCHES_FETCH_FAIL: H,
   CONNECTION_CLOSED: Y,
   LOGOUT: Y,

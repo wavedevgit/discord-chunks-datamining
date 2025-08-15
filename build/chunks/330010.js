@@ -59,8 +59,8 @@ async function f(e) {
     oldFormErrors: true,
     rejectWithError: false
   })).body.map(e => d(c({}, e), {
-    application: "application" in e && null != e.application ? o.ZN.createFromServer(e.application) : true,
-    user: "user" in e && null != e.user ? new a.Z(e.user) : true
+    application: "application" in e && null != e.application ? a.ZN.createFromServer(e.application) : true,
+    user: "user" in e && null != e.user ? new o.Z(e.user) : true
   }));
   return i.Z.dispatch({
     type: "GUILD_SETTINGS_LOADED_INTEGRATIONS",

@@ -2,15 +2,15 @@
 /** chunk id: 690725, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => o
+  f: () => a
 }), require("./415506.js");
 var Chunk4646 = require("./4646.js"),
   Chunk665672 = require("./665672.js");
-async function o(e) {
+async function a(e) {
   let {
     assetsToLoad: t,
-    drawImage: o,
-    exportConfigs: a
+    drawImage: a,
+    exportConfigs: o
   } = e, s = await (0, r.k2)(t);
   await s.loadFonts();
   {
@@ -20,8 +20,8 @@ async function o(e) {
       l = new e(r, s),
       c = new t,
       u = new i.Z(l, c);
-    o(u.canvas);
-    let d = await u.export(a);
+    a(u.canvas);
+    let d = await u.export(o);
     return r.remove(), d
   }
 }

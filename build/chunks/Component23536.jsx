@@ -1,4 +1,4 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 23536, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -24,45 +24,45 @@ function y(e) {
     channel: t,
     onJump: y
   } = e, {
-    items: x,
-    state: j
-  } = (0, l.cj)([h.Z], () => {
+    items: _,
+    state: C
+  } = (0, l.cj)([p.Z], () => {
     var e, n;
-    let r = h.Z.getPins(t.id);
+    let r = p.Z.getPins(t.id);
     return {
       items: null != (e = null == r ? true : r.items) ? e : b,
-      state: null != (n = null == r ? true : r.state) ? n : h.M.LOADING
+      state: null != (n = null == r ? true : r.state) ? n : p.M.LOADING
     }
-  }), _ = i.useMemo(() => x.map(e => e.message), [x]), O = (0, l.e7)([p.ZP], () => p.ZP.hasUnreadPins(t.id));
+  }), x = i.useMemo(() => _.map(e => e.message), [_]), v = (0, l.e7)([h.ZP], () => h.ZP.hasUnreadPins(t.id));
   i.useEffect(() => {
-    O && o.Z.ackPins(t.id)
-  }, [O, t.id]), (0, c.ZP)(() => {
-    _.some(u.k5) && o.Z.fetchPins(t.id, {
+    v && s.Z.ackPins(t.id)
+  }, [v, t.id]), (0, c.ZP)(() => {
+    x.some(u.k5) && s.Z.fetchPins(t.id, {
       reset: true
     })
   });
-  let v = i.useCallback(() => {
-      o.Z.fetchPins(t.id)
+  let j = i.useCallback(() => {
+      s.Z.fetchPins(t.id)
     }, [t.id]),
-    C = i.useCallback(() => {
+    O = i.useCallback(() => {
       var e;
-      o.Z.fetchPins(t.id, {
-        before: null == (e = x.at(false)) ? true : e.pinnedAt
+      s.Z.fetchPins(t.id, {
+        before: null == (e = _.at(false)) ? true : e.pinnedAt
       })
-    }, [t.id, x]),
+    }, [t.id, _]),
     E = (0, l.e7)([d.Z], () => (0, a.ap)(d.Z.theme));
-  return (0, r.jsx)(s.VqE, {
-    "aria-label": m.intl.string(m.t["mp1N//"]),
+  return (0, r.jsx)(o.VqE, {
+    "aria-label": g.intl.string(g.t["mp1N//"]),
     children: (0, r.jsx)(f.ZP, {
       channel: t,
-      onFetch: v,
-      messages: _,
-      loading: j === h.M.LOADING,
-      hasMore: j === h.M.LOADED_HAS_MORE,
+      onFetch: j,
+      messages: x,
+      loading: C === p.M.LOADING,
+      hasMore: C === p.M.LOADED_HAS_MORE,
       analyticsName: "Channel Pins",
       renderEmptyState: function() {
-        if (x.length > 0) return;
-        let e = m.intl.string(t.isPrivate() ? m.t.rhqcbG : m.t.fmyaWF),
+        if (_.length > 0) return;
+        let e = g.intl.string(t.isPrivate() ? g.t.rhqcbG : g.t.fmyaWF),
           i = E ? n(306059) : n(281485);
         return (0, r.jsx)(f.nH, {
           msg: e,
@@ -70,16 +70,16 @@ function y(e) {
         }, "emptystate")
       },
       renderHeader: () => (0, r.jsx)(f.h4, {
-        icon: s.qQX,
-        title: m.intl.string(m.t["mp1N//"])
+        icon: o.qQX,
+        title: g.intl.string(g.t["mp1N//"])
       }),
       onCloseMessage: function(e, n) {
-        null != e && (n.shiftKey ? o.Z.unpinMessage(t, e.id) : g.Z.confirmUnpin(t, e))
+        null != e && (n.shiftKey ? s.Z.unpinMessage(t, e.id) : m.Z.confirmUnpin(t, e))
       },
       onJump: y,
-      loadMore: C,
+      loadMore: O,
       getProTip: function() {
-        return t.isPrivate() ? m.intl.string(m.t["3dLGAg"]) : m.intl.string(m.t.KTbRcn)
+        return t.isPrivate() ? g.intl.string(g.t["3dLGAg"]) : g.intl.string(g.t.KTbRcn)
       },
       listName: "pins"
     })

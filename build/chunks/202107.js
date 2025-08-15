@@ -54,16 +54,16 @@ let f = 1e4,
     let e = Chunk271383.ZP.getCommunicationDisabledUserMap();
     Object.keys(module).forEach(t => {
       let n = t,
-        r = (0, o.O5)(n),
-        i = (0, o.V6)(n),
-        a = e[n];
-      (0, s.J)(a) || h(r, i)
+        r = (0, a.O5)(n),
+        i = (0, a.V6)(n),
+        o = e[n];
+      (0, s.J)(o) || h(r, i)
     })
   },
   h = (e, t) => {
     var n, i, l, u, f, _;
-    let p = o.ZP.getMember(e, t),
-      h = a.default.getUser(t);
+    let p = a.ZP.getMember(e, t),
+      h = o.default.getUser(t);
     if (null == p || null == h || (0, s.b)(p)) return;
     let m = d(c({}, p), {
       guildId: e,

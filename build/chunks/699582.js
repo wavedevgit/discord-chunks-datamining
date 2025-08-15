@@ -3,7 +3,7 @@
 "use strict";
 var r, Chunk863714 = require("./863714.js"),
   Chunk635535 = require("./635535.js"),
-  a = {},
+  o = {},
   s = function() {
     var e = {};
     try {
@@ -404,12 +404,12 @@ function P(e) {
 function w(e) {
   var t, n;
   n = (e = e.toLowerCase()).split("-");
-  for (var r = 1, o = n.length; r < o; r++)
+  for (var r = 1, a = n.length; r < a; r++)
     if (2 === n[r].length) n[r] = n[r].toUpperCase();
     else if (4 === n[r].length) n[r] = n[r].charAt(0).toUpperCase() + n[r].slice(1);
   else if (1 === n[r].length && "x" !== n[r]) break;
   (t = (e = m.call(n, "-")).match(i.expExtSequences)) && t.length > 1 && (t.sort(), e = e.replace(RegExp("(?:" + i.expExtSequences.source + ")+", "i"), m.call(t, ""))), c.call(A, e) && (e = A[e]), n = e.split("-");
-  for (var r = 1, o = n.length; r < o; r++) c.call(N, n[r]) ? n[r] = N[n[r]] : c.call(C, n[r]) && (n[r] = C[n[r]][0], 1 === r && C[n[1]][1] === n[0] && (n = _.call(n, r++), o -= 1));
+  for (var r = 1, a = n.length; r < a; r++) c.call(N, n[r]) ? n[r] = N[n[r]] : c.call(C, n[r]) && (n[r] = C[n[r]][0], 1 === r && C[n[1]][1] === n[0] && (n = _.call(n, r++), a -= 1));
   return m.call(n, "-")
 }
 
@@ -425,11 +425,11 @@ function L(e) {
 function x(e) {
   if (true === e) return new eh;
   for (var t = new eh, e = "string" == typeof e ? [e] : e, n = eE(e), r = n.length, i = 0; i < r;) {
-    var o = String(i);
-    if (o in n) {
-      var a = n[o];
-      if (null == a || "string" != typeof a && "object" != typeof a) throw TypeError("String or Object type expected");
-      var s = String(a);
+    var a = String(i);
+    if (a in n) {
+      var o = n[a];
+      if (null == o || "string" != typeof o && "object" != typeof o) throw TypeError("String or Object type expected");
+      var s = String(o);
       if (!P(s)) throw RangeError("'" + s + "' is not a structurally valid language tag");
       s = w(s), false === d.call(t, s) && h.call(t, s)
     }
@@ -447,43 +447,43 @@ function M(e, t) {
   }
 }
 
-function j(e, t) {
+function k(e, t) {
   for (var n, r = 0, i = t.length; r < i && !n;) {
-    var o = t[r],
-      a = String(o).replace(S, ""),
-      n = M(e, a);
+    var a = t[r],
+      o = String(a).replace(S, ""),
+      n = M(e, o);
     r++
   }
   var s = new ep;
   if (true !== n) {
-    if (s["[[locale]]"] = n, String(o) !== String(a)) {
-      var l = o.match(S)[0],
-        c = o.indexOf("-u-");
+    if (s["[[locale]]"] = n, String(a) !== String(o)) {
+      var l = a.match(S)[0],
+        c = a.indexOf("-u-");
       s["[[extension]]"] = l, s["[[extensionIndex]]"] = c
     }
   } else s["[[locale]]"] = D();
   return s
 }
 
-function k(e, t) {
-  return j(e, t)
+function j(e, t) {
+  return k(e, t)
 }
 
 function U(e, t, n, r, i) {
   if (0 === e.length) throw ReferenceError("No locale data has been provided for this object yet.");
-  if ("lookup" === n["[[localeMatcher]]"]) var o = j(e, t);
-  else var o = k(e, t);
-  var a = o["[[locale]]"];
-  if (c.call(o, "[[extension]]")) var s = o["[[extension]]"],
-    l = o["[[extensionIndex]]"],
+  if ("lookup" === n["[[localeMatcher]]"]) var a = k(e, t);
+  else var a = j(e, t);
+  var o = a["[[locale]]"];
+  if (c.call(a, "[[extension]]")) var s = a["[[extension]]"],
+    l = a["[[extensionIndex]]"],
     u = String.prototype.split,
     f = u.call(s, "-"),
     _ = f.length;
   var p = new ep;
-  p["[[dataLocale]]"] = a;
+  p["[[dataLocale]]"] = o;
   for (var h = "-u", m = 0, g = r.length; m < g;) {
     var E = r[m],
-      b = i[a][E],
+      b = i[o][E],
       y = b["0"],
       O = "",
       v = d;
@@ -506,16 +506,16 @@ function U(e, t, n, r, i) {
     }
     p["[[" + E + "]]"] = y, h += O, m++
   }
-  if (h.length > 2) var N = a.substring(0, l),
-    C = a.substring(l),
-    a = N + h + C;
-  return p["[[locale]]"] = a, p
+  if (h.length > 2) var N = o.substring(0, l),
+    C = o.substring(l),
+    o = N + h + C;
+  return p["[[locale]]"] = o, p
 }
 
 function G(e, t) {
   for (var n = t.length, r = new eh, i = 0; i < n;) {
-    var o = t[i];
-    true !== M(e, String(o).replace(S, "")) && h.call(r, o), i++
+    var a = t[i];
+    true !== M(e, String(a).replace(S, "")) && h.call(r, a), i++
   }
   return _.call(r)
 }
@@ -524,7 +524,7 @@ function B(e, t) {
   return G(e, t)
 }
 
-function Z(e, t, n) {
+function V(e, t, n) {
   if (true !== n) {
     var n = new ep(eE(n)),
       r = n.localeMatcher;
@@ -532,10 +532,10 @@ function Z(e, t, n) {
   }
   if (true === r || "best fit" === r) var i = B(e, t);
   else var i = G(e, t);
-  for (var o in i) c.call(i, o) && u(i, o, {
+  for (var a in i) c.call(i, a) && u(i, a, {
     writable: false,
     configurable: false,
-    value: i[o]
+    value: i[a]
   });
   return u(i, "length", {
     writable: false
@@ -543,19 +543,19 @@ function Z(e, t, n) {
 }
 
 function F(e, t, n, r, i) {
-  var o = e[t];
-  if (true !== o) {
-    if (o = "boolean" === n ? !!o : "string" === n ? String(o) : o, true !== r && false === d.call(r, o)) throw RangeError("'" + o + "' is not an allowed value for `" + t + "`");
-    return o
+  var a = e[t];
+  if (true !== a) {
+    if (a = "boolean" === n ? !!a : "string" === n ? String(a) : a, true !== r && false === d.call(r, a)) throw RangeError("'" + a + "' is not an allowed value for `" + t + "`");
+    return a
   }
   return i
 }
 
-function V(e, t, n, r, i) {
-  var o = e[t];
-  if (true !== o) {
-    if (isNaN(o = Number(o)) || o < n || o > r) throw RangeError("Value is not a number or outside accepted range");
-    return Math.floor(o)
+function Z(e, t, n, r, i) {
+  var a = e[t];
+  if (true !== a) {
+    if (isNaN(a = Number(a)) || a < n || a > r) throw RangeError("Value is not a number or outside accepted range");
+    return Math.floor(a)
   }
   return i
 }
@@ -563,7 +563,7 @@ function V(e, t, n, r, i) {
 function H() {
   var e = arguments[0],
     t = arguments[1];
-  return this && this !== a ? Y(eE(this), module, exports) : new a.NumberFormat(module, exports)
+  return this && this !== o ? Y(eE(this), module, exports) : new o.NumberFormat(module, exports)
 }
 
 function Y(e, t, n) {
@@ -575,13 +575,13 @@ function Y(e, t, n) {
       if (arguments[0] === y) return r
     }
   }), r["[[initializedIntlObject]]"] = true;
-  var o = x(t);
+  var a = x(t);
   n = true === n ? {} : eE(n);
-  var a = new ep,
+  var o = new ep,
     s = F(n, "localeMatcher", "string", new eh("lookup", "best fit"), "best fit");
-  a["[[localeMatcher]]"] = s;
+  o["[[localeMatcher]]"] = s;
   var c = b.NumberFormat["[[localeData]]"],
-    d = U(b.NumberFormat["[[availableLocales]]"], o, a, b.NumberFormat["[[relevantExtensionKeys]]"], c);
+    d = U(b.NumberFormat["[[availableLocales]]"], a, o, b.NumberFormat["[[relevantExtensionKeys]]"], c);
   r["[[locale]]"] = d["[[locale]]"], r["[[numberingSystem]]"] = d["[[nu]]"], r["[[dataLocale]]"] = d["[[dataLocale]]"];
   var f = d["[[dataLocale]]"],
     _ = F(n, "style", "string", new eh("decimal", "percent", "currency"), "decimal");
@@ -595,16 +595,16 @@ function Y(e, t, n) {
   }
   var m = F(n, "currencyDisplay", "string", new eh("code", "symbol", "name"), "symbol");
   "currency" === _ && (r["[[currencyDisplay]]"] = m);
-  var g = V(n, "minimumIntegerDigits", 1, 21, 1);
+  var g = Z(n, "minimumIntegerDigits", 1, 21, 1);
   r["[[minimumIntegerDigits]]"] = g;
-  var E = V(n, "minimumFractionDigits", 0, 20, "currency" === _ ? h : 0);
+  var E = Z(n, "minimumFractionDigits", 0, 20, "currency" === _ ? h : 0);
   r["[[minimumFractionDigits]]"] = E;
   var O = "currency" === _ ? Math.max(E, h) : "percent" === _ ? Math.max(E, 0) : Math.max(E, 3),
-    v = V(n, "maximumFractionDigits", E, 20, O);
+    v = Z(n, "maximumFractionDigits", E, 20, O);
   r["[[maximumFractionDigits]]"] = v;
   var I = n.minimumSignificantDigits,
     T = n.maximumSignificantDigits;
-  (true !== I || true !== T) && (I = V(n, "minimumSignificantDigits", 1, 21, 1), T = V(n, "maximumSignificantDigits", I, 21, 21), r["[[minimumSignificantDigits]]"] = I, r["[[maximumSignificantDigits]]"] = T);
+  (true !== I || true !== T) && (I = Z(n, "minimumSignificantDigits", 1, 21, 1), T = Z(n, "maximumSignificantDigits", I, 21, 21), r["[[minimumSignificantDigits]]"] = I, r["[[maximumSignificantDigits]]"] = T);
   var S = F(n, "useGrouping", "boolean", true, true);
   r["[[useGrouping]]"] = S;
   var A = c[f].patterns[_];
@@ -631,14 +631,14 @@ function K() {
 function z(e, t) {
   var n, r = em(),
     i = eb(e),
-    o = i["[[dataLocale]]"],
-    a = i["[[numberingSystem]]"],
-    s = b.NumberFormat["[[localeData]]"][o],
-    l = s.symbols[a] || s.symbols.latn,
+    a = i["[[dataLocale]]"],
+    o = i["[[numberingSystem]]"],
+    s = b.NumberFormat["[[localeData]]"][a],
+    l = s.symbols[o] || s.symbols.latn,
     u = false;
   if (false === isFinite(t)) isNaN(t) ? n = l.nan : (n = l.infinity, t < 0 && (u = true));
   else {
-    if (t < 0 && (u = true, t = -t), "percent" === i["[[style]]"] && (t *= 100), n = c.call(i, "[[minimumSignificantDigits]]") && c.call(i, "[[maximumSignificantDigits]]") ? q(t, i["[[minimumSignificantDigits]]"], i["[[maximumSignificantDigits]]"]) : X(t, i["[[minimumIntegerDigits]]"], i["[[minimumFractionDigits]]"], i["[[maximumFractionDigits]]"]), Q[a]) {
+    if (t < 0 && (u = true, t = -t), "percent" === i["[[style]]"] && (t *= 100), n = c.call(i, "[[minimumSignificantDigits]]") && c.call(i, "[[maximumSignificantDigits]]") ? q(t, i["[[minimumSignificantDigits]]"], i["[[maximumSignificantDigits]]"]) : X(t, i["[[minimumIntegerDigits]]"], i["[[minimumFractionDigits]]"], i["[[maximumFractionDigits]]"]), Q[o]) {
       var d = Q[i["[[numberingSystem]]"]];
       n = String(n).replace(/\d/g, function(e) {
         return d[e]
@@ -672,13 +672,13 @@ function z(e, t) {
 function q(e, t, n) {
   var r = n;
   if (0 === e) var i = m.call(Array(r + 1), "0"),
-    o = 0;
-  else var o = ed(Math.abs(e)),
-    a = Math.round(Math.exp(Math.abs(o - r + 1) * Math.LN10)),
-    i = String(Math.round(o - r + 1 < 0 ? e * a : e / a));
-  if (o >= r) return i + m.call(Array(o - r + 1 + 1), "0");
-  if (o === r - 1) return i;
-  if (o >= 0 ? i = i.slice(0, o + 1) + "." + i.slice(o + 1) : o < 0 && (i = "0." + m.call(Array(-(o + 1) + 1), "0") + i), i.indexOf(".") >= 0 && n > t) {
+    a = 0;
+  else var a = ed(Math.abs(e)),
+    o = Math.round(Math.exp(Math.abs(a - r + 1) * Math.LN10)),
+    i = String(Math.round(a - r + 1 < 0 ? e * o : e / o));
+  if (a >= r) return i + m.call(Array(a - r + 1 + 1), "0");
+  if (a === r - 1) return i;
+  if (a >= 0 ? i = i.slice(0, a + 1) + "." + i.slice(a + 1) : a < 0 && (i = "0." + m.call(Array(-(a + 1) + 1), "0") + i), i.indexOf(".") >= 0 && n > t) {
     for (var s = n - t; s > 0 && "0" === i.charAt(i.length - 1);) i = i.slice(0, false), s--;
     "." === i.charAt(i.length - 1) && (i = i.slice(0, false))
   }
@@ -686,29 +686,29 @@ function q(e, t, n) {
 }
 
 function X(e, t, n, r) {
-  var i, o = Number.prototype.toFixed.call(e, r),
-    a = o.split(".")[0].length,
+  var i, a = Number.prototype.toFixed.call(e, r),
+    o = a.split(".")[0].length,
     s = r - n,
-    l = (i = o.indexOf("e")) > false ? o.slice(i + 1) : 0;
-  for (l && (o = o.slice(0, i).replace(".", ""), o += m.call(Array(l - (o.length - 1) + 1), "0") + "." + m.call(Array(r + 1), "0"), a = o.length); s > 0 && "0" === o.slice(false);) o = o.slice(0, false), s--;
-  if ("." === o.slice(false) && (o = o.slice(0, false)), a < t) var c = m.call(Array(t - a + 1), "0");
-  return (c || "") + o
+    l = (i = a.indexOf("e")) > false ? a.slice(i + 1) : 0;
+  for (l && (a = a.slice(0, i).replace(".", ""), a += m.call(Array(l - (a.length - 1) + 1), "0") + "." + m.call(Array(r + 1), "0"), o = a.length); s > 0 && "0" === a.slice(false);) a = a.slice(0, false), s--;
+  if ("." === a.slice(false) && (a = a.slice(0, false)), o < t) var c = m.call(Array(t - o + 1), "0");
+  return (c || "") + a
 }
-u(a, "NumberFormat", {
+u(o, "NumberFormat", {
   configurable: true,
   writable: true,
   value: H
-}), u(a.NumberFormat, "prototype", {
+}), u(o.NumberFormat, "prototype", {
   writable: false
 }), b.NumberFormat = {
   "[[availableLocales]]": [],
   "[[relevantExtensionKeys]]": ["nu"],
   "[[localeData]]": {}
-}, u(a.NumberFormat, "supportedLocalesOf", {
+}, u(o.NumberFormat, "supportedLocalesOf", {
   configurable: true,
   writable: true,
   value: E.call(ef, b.NumberFormat)
-}), u(a.NumberFormat.prototype, "format", {
+}), u(o.NumberFormat.prototype, "format", {
   configurable: true,
   get: K
 });
@@ -740,7 +740,7 @@ var Q = {
 function J() {
   var e = arguments[0],
     t = arguments[1];
-  return this && this !== a ? $(eE(this), module, exports) : new a.DateTimeFormat(module, exports)
+  return this && this !== o ? $(eE(this), module, exports) : new o.DateTimeFormat(module, exports)
 }
 
 function $(e, t, n) {
@@ -752,25 +752,25 @@ function $(e, t, n) {
       if (arguments[0] === y) return r
     }
   }), r["[[initializedIntlObject]]"] = true;
-  var o = x(t),
+  var a = x(t),
     n = en(n, "any", "date"),
-    a = new ep;
-  v = F(n, "localeMatcher", "string", new eh("lookup", "best fit"), "best fit"), a["[[localeMatcher]]"] = v;
+    o = new ep;
+  v = F(n, "localeMatcher", "string", new eh("lookup", "best fit"), "best fit"), o["[[localeMatcher]]"] = v;
   var s = b.DateTimeFormat,
     d = s["[[localeData]]"],
-    f = U(s["[[availableLocales]]"], o, a, s["[[relevantExtensionKeys]]"], d);
+    f = U(s["[[availableLocales]]"], a, o, s["[[relevantExtensionKeys]]"], d);
   r["[[locale]]"] = f["[[locale]]"], r["[[calendar]]"] = f["[[ca]]"], r["[[numberingSystem]]"] = f["[[nu]]"], r["[[dataLocale]]"] = f["[[dataLocale]]"];
   var _ = f["[[dataLocale]]"],
     p = n.timeZone;
   if (true !== p && "UTC" !== (p = eg(p))) throw RangeError("timeZone is not supported.");
-  for (var h in r["[[timeZone]]"] = p, a = new ep, ee)
+  for (var h in r["[[timeZone]]"] = p, o = new ep, ee)
     if (c.call(ee, h)) {
       var m = F(n, h, "string", ee[h]);
-      a["[[" + h + "]]"] = m
+      o["[[" + h + "]]"] = m
     } var g, E = d[_],
     O = et(E.formats),
     v = F(n, "formatMatcher", "string", new eh("basic", "best fit"), "best fit");
-  for (var h in E.formats = O, g = "basic" === v ? er(a, O) : eo(a, O), ee)
+  for (var h in E.formats = O, g = "basic" === v ? er(o, O) : ea(o, O), ee)
     if (c.call(ee, h) && c.call(g, h)) {
       var I = g[h];
       r["[[" + h + "]]"] = I
@@ -781,9 +781,9 @@ function $(e, t, n) {
       r["[[hourNo0]]"] = A, T = g.pattern12
     } else T = g.pattern;
   else T = g.pattern;
-  return r["[[pattern]]"] = T, r["[[boundFormat]]"] = true, r["[[initializedDateTimeFormat]]"] = true, l && (e.format = ea.call(e)), i.exp.test(i.input), e
+  return r["[[pattern]]"] = T, r["[[boundFormat]]"] = true, r["[[initializedDateTimeFormat]]"] = true, l && (e.format = eo.call(e)), i.exp.test(i.input), e
 }
-u(a.NumberFormat.prototype, "resolvedOptions", {
+u(o.NumberFormat.prototype, "resolvedOptions", {
   configurable: true,
   writable: true,
   value: function() {
@@ -791,7 +791,7 @@ u(a.NumberFormat.prototype, "resolvedOptions", {
       n = ["locale", "numberingSystem", "style", "currency", "currencyDisplay", "minimumIntegerDigits", "minimumFractionDigits", "maximumFractionDigits", "minimumSignificantDigits", "maximumSignificantDigits", "useGrouping"],
       r = this != null && "object" == typeof this && eb(this);
     if (!r || !r["[[initializedNumberFormat]]"]) throw TypeError("`this` value for resolvedOptions() is not an initialized Intl.NumberFormat object.");
-    for (var i = 0, o = require.length; Chunk863714 < Chunk635535; Chunk863714++) c.call(r, e = "[[" + require[Chunk863714] + "]]") && (exports[require[Chunk863714]] = {
+    for (var i = 0, a = require.length; Chunk863714 < Chunk635535; Chunk863714++) c.call(r, e = "[[" + require[Chunk863714] + "]]") && (exports[require[Chunk863714]] = {
       value: r[module],
       writable: true,
       configurable: true,
@@ -799,7 +799,7 @@ u(a.NumberFormat.prototype, "resolvedOptions", {
     });
     return f({}, exports)
   }
-}), u(a, "DateTimeFormat", {
+}), u(o, "DateTimeFormat", {
   configurable: true,
   writable: true,
   value: J
@@ -819,7 +819,7 @@ var ee = {
 };
 
 function et(e) {
-  return "[object Array]" === Object.prototype.toString.call(e) ? e : o.createDateTimeFormats(e)
+  return "[object Array]" === Object.prototype.toString.call(e) ? e : a.createDateTimeFormats(e)
 }
 
 function en(e, t, n) {
@@ -829,8 +829,8 @@ function en(e, t, n) {
     for (var i in e = new ep, r) e[i] = r[i]
   }
   var e = f(e),
-    o = true;
-  return ("date" === t || "any" === t) && (true !== e.weekday || true !== e.year || true !== e.month || true !== e.day) && (o = false), ("time" === t || "any" === t) && (true !== e.hour || true !== e.minute || true !== e.second) && (o = false), o && ("date" === n || "all" === n) && (e.year = e.month = e.day = "numeric"), o && ("time" === n || "all" === n) && (e.hour = e.minute = e.second = "numeric"), e
+    a = true;
+  return ("date" === t || "any" === t) && (true !== e.weekday || true !== e.year || true !== e.month || true !== e.day) && (a = false), ("time" === t || "any" === t) && (true !== e.hour || true !== e.minute || true !== e.second) && (a = false), a && ("date" === n || "all" === n) && (e.year = e.month = e.day = "numeric"), a && ("time" === n || "all" === n) && (e.hour = e.minute = e.second = "numeric"), e
 }
 
 function er(e, t) {
@@ -838,15 +838,15 @@ function er(e, t) {
 }
 
 function ei(e, t, n) {
-  for (var r, i = 8, o = 120, a = 20, s = 8, l = 6, u = 6, f = 3, _ = false / 0, p = 0, h = t.length; p < h;) {
+  for (var r, i = 8, a = 120, o = 20, s = 8, l = 6, u = 6, f = 3, _ = false / 0, p = 0, h = t.length; p < h;) {
     var m = t[p],
       g = 0;
     for (var E in ee)
       if (c.call(ee, E)) {
         var b = e["[[" + E + "]]"],
           y = c.call(m, E) ? m[E] : true;
-        if (true === b && true !== y) g -= a;
-        else if (true !== b && true === y) g -= o;
+        if (true === b && true !== y) g -= o;
+        else if (true !== b && true === y) g -= a;
         else {
           var O = ["2-digit", "numeric", "narrow", "short", "long"],
             v = d.call(O, b),
@@ -858,11 +858,11 @@ function ei(e, t, n) {
   return r
 }
 
-function eo(e, t) {
+function ea(e, t) {
   return ei(e, t, true)
 }
 
-function ea() {
+function eo() {
   var e = this != null && "object" == typeof this && eb(this);
   if (!module || !module["[[initializedDateTimeFormat]]"]) throw TypeError("`this` value for format() is not an initialized Intl.DateTimeFormat object.");
   if (true === module["[[boundFormat]]"]) {
@@ -881,10 +881,10 @@ function es(e, t) {
   var n = e.__getInternalProperties(y),
     r = em(),
     i = n["[[locale]]"],
-    o = new a.NumberFormat([i], {
+    a = new o.NumberFormat([i], {
       useGrouping: false
     }),
-    s = new a.NumberFormat([i], {
+    s = new o.NumberFormat([i], {
       minimumIntegerDigits: 2,
       useGrouping: false
     }),
@@ -897,7 +897,7 @@ function es(e, t) {
     if (c.call(n, "[[" + p + "]]")) {
       var h, m, g = n["[[" + p + "]]"],
         E = l["[[" + p + "]]"];
-      if ("year" === p && E <= 0 ? E = 1 - E : "month" === p ? E++ : "hour" === p && true === n["[[hour12]]"] && (E %= 12, h = E !== l["[[" + p + "]]"], 0 === E && true === n["[[hourNo0]]"] && (E = 12)), "numeric" === g) m = z(o, E);
+      if ("year" === p && E <= 0 ? E = 1 - E : "month" === p ? E++ : "hour" === p && true === n["[[hour12]]"] && (E %= 12, h = E !== l["[[" + p + "]]"], 0 === E && true === n["[[hourNo0]]"] && (E = 12)), "numeric" === g) m = z(a, E);
       else if ("2-digit" === g)(m = z(s, E)).length > 2 && (m = m.slice(false));
       else if (g in O) switch (p) {
         case "month":
@@ -939,14 +939,14 @@ b.DateTimeFormat = {
   "[[availableLocales]]": [],
   "[[relevantExtensionKeys]]": ["ca", "nu"],
   "[[localeData]]": {}
-}, u(a.DateTimeFormat, "supportedLocalesOf", {
+}, u(o.DateTimeFormat, "supportedLocalesOf", {
   configurable: true,
   writable: true,
   value: E.call(ef, b.DateTimeFormat)
-}), u(a.DateTimeFormat.prototype, "format", {
+}), u(o.DateTimeFormat.prototype, "format", {
   configurable: true,
-  get: ea
-}), u(a.DateTimeFormat.prototype, "resolvedOptions", {
+  get: eo
+}), u(o.DateTimeFormat.prototype, "resolvedOptions", {
   writable: true,
   configurable: true,
   value: function() {
@@ -954,7 +954,7 @@ b.DateTimeFormat = {
       n = ["locale", "calendar", "numberingSystem", "timeZone", "hour12", "weekday", "era", "year", "month", "day", "hour", "minute", "second", "timeZoneName"],
       r = this != null && "object" == typeof this && eb(this);
     if (!r || !r["[[initializedDateTimeFormat]]"]) throw TypeError("`this` value for resolvedOptions() is not an initialized Intl.DateTimeFormat object.");
-    for (var i = 0, o = require.length; Chunk863714 < Chunk635535; Chunk863714++) c.call(r, e = "[[" + require[Chunk863714] + "]]") && (exports[require[Chunk863714]] = {
+    for (var i = 0, a = require.length; Chunk863714 < Chunk635535; Chunk863714++) c.call(r, e = "[[" + require[Chunk863714] + "]]") && (exports[require[Chunk863714]] = {
       value: r[module],
       writable: true,
       configurable: true,
@@ -963,7 +963,7 @@ b.DateTimeFormat = {
     return f({}, exports)
   }
 });
-var ec = a.__localeSensitiveProtos = {
+var ec = o.__localeSensitiveProtos = {
   Number: {},
   Date: {}
 };
@@ -971,9 +971,9 @@ var ec = a.__localeSensitiveProtos = {
 function eu(e, t) {
   if (!e.number) throw Error("Object passed doesn't contain locale data for Intl.NumberFormat");
   var n, i = [t],
-    o = t.split("-");
-  for (o.length > 2 && 4 === o[1].length && h.call(i, o[0] + "-" + o[2]); n = g.call(i);) h.call(b.NumberFormat["[[availableLocales]]"], n), b.NumberFormat["[[localeData]]"][n] = e.number, e.date && (e.date.nu = e.number.nu, h.call(b.DateTimeFormat["[[availableLocales]]"], n), b.DateTimeFormat["[[localeData]]"][n] = e.date);
-  true === r && (r = t), v || (Y(a.NumberFormat.prototype), v = true), e.date && !I && ($(a.DateTimeFormat.prototype), I = true)
+    a = t.split("-");
+  for (a.length > 2 && 4 === a[1].length && h.call(i, a[0] + "-" + a[2]); n = g.call(i);) h.call(b.NumberFormat["[[availableLocales]]"], n), b.NumberFormat["[[localeData]]"][n] = e.number, e.date && (e.date.nu = e.number.nu, h.call(b.DateTimeFormat["[[availableLocales]]"], n), b.DateTimeFormat["[[localeData]]"][n] = e.date);
+  true === r && (r = t), v || (Y(o.NumberFormat.prototype), v = true), e.date && !I && ($(o.DateTimeFormat.prototype), I = true)
 }
 
 function ed(e) {
@@ -988,17 +988,17 @@ function ef(e) {
     n = arguments[1],
     r = this["[[availableLocales]]"],
     i = x(e);
-  return t.exp.test(t.input), Z(r, i, n)
+  return t.exp.test(t.input), V(r, i, n)
 }
 
 function e_(e, t, n, r, i) {
-  var o = e[t] && e[t][n] ? e[t][n] : e.gregory[n],
-    a = {
+  var a = e[t] && e[t][n] ? e[t][n] : e.gregory[n],
+    o = {
       narrow: ["short", "long"],
       short: ["long", "narrow"],
       long: ["short", "narrow"]
     },
-    s = c.call(o, r) ? o[r] : c.call(o, a[r][0]) ? o[a[r][0]] : o[a[r][1]];
+    s = c.call(a, r) ? a[r] : c.call(a, o[r][0]) ? a[o[r][0]] : a[o[r][1]];
   return null != i ? s[i] : s
 }
 
@@ -1021,10 +1021,10 @@ function eh() {
 function em() {
   for (var e = /[.?*+^$[\]\\(){}|-]/g, t = RegExp.lastMatch || "", n = RegExp.multiline ? "m" : "", r = {
       input: RegExp.input
-    }, i = new eh, o = false, a = {}, s = 1; s <= 9; s++) o = (a["$" + s] = RegExp["$" + s]) || Chunk635535;
+    }, i = new eh, a = false, o = {}, s = 1; s <= 9; s++) a = (o["$" + s] = RegExp["$" + s]) || Chunk635535;
   if (t = exports.replace(module, "\\$&"), Chunk635535)
     for (var s = 1; s <= 9; s++) {
-      var l = a["$" + s];
+      var l = o["$" + s];
       l ? (l = l.replace(module, "\\$&"), t = exports.replace(l, "(" + l + ")")) : t = "()" + exports, h.call(Chunk863714, exports.slice(0, exports.indexOf("(") + 1)), t = exports.slice(exports.indexOf("(") + 1)
     }
   return r.exp = new RegExp(m.call(Chunk863714, "") + exports, require), r
@@ -1073,7 +1073,7 @@ ec.Number.toLocaleString = function() {
     n = arguments[1],
     n = en(require, "time", "time");
   return es(new J(exports, require), module)
-}, u(a, "__applyLocaleSensitivePrototypes", {
+}, u(o, "__applyLocaleSensitivePrototypes", {
   writable: true,
   configurable: true,
   value: function() {
@@ -1091,9 +1091,9 @@ ec.Number.toLocaleString = function() {
       value: ec.Date[module]
     })
   }
-}), u(a, "__addLocaleData", {
+}), u(o, "__addLocaleData", {
   value: function(e) {
     if (!P(e.locale)) throw Error("Object passed doesn't identify itself with a valid language tag");
     eu(e, e.locale)
   }
-}), ep.prototype = f(null), eh.prototype = f(null), exports.default = a
+}), ep.prototype = f(null), eh.prototype = f(null), exports.default = o

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk717976 = require("./717976.js"),
   Chunk481060 = require("./481060.js"),
   Chunk436774 = require("./436774.jsx"),
@@ -59,9 +59,9 @@ function p(e) {
       friction: 14
     }
   });
-  return (0, r.jsxs)(a.animated.div, {
+  return (0, r.jsxs)(o.animated.div, {
     style: _({}, v),
-    className: o()(d.upsellContainer, {
+    className: a()(d.upsellContainer, {
       [d.upsellContainerShadow]: E,
       [d.upsellContainerFloating]: "floating" === b,
       [d.upsellContainerInline]: "inline" === b

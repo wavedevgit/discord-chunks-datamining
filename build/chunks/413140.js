@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 413140, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 413140, original params: e,t,n (module,exports,require) **/
 module.exports = {
   "text-sm/normal": "text-sm/normal__6ec1a",
   topic: "topic__6ec1a text-sm/normal__6ec1a",

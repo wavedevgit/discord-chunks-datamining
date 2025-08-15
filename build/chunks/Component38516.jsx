@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
 /** chunk id: 38516, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => g
 }), require("./415506.js"), require("./642613.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -15,32 +15,32 @@ var Chunk120356 = require("./120356.js"),
   Chunk803351 = require("./803351.js");
 let m = [Chunk643872.p.OFFICIAL, Chunk643872.p.TWITTER, Chunk643872.p.YOUTUBE];
 
-function g(e) {
+function f(e) {
   let {
     website: t,
     trackClick: r
   } = e, {
     action: a,
     icon: i,
-    title: d
+    title: u
   } = function(e) {
     switch (e.category) {
       case l.p.OFFICIAL:
         return {
           icon: (0, n.jsx)(o.enf, {
-            colorClass: u.linkIcon
+            colorClass: d.linkIcon
           }), action: s.as.WebsiteLink, title: c.intl.string(c.t.fOUKvr)
         };
       case l.p.TWITTER:
         return {
           icon: (0, n.jsx)(o.TAi, {
-            colorClass: u.linkIcon
+            colorClass: d.linkIcon
           }), action: s.as.XLink, title: c.intl.string(c.t["INic4+"])
         };
       case l.p.YOUTUBE:
         return {
           action: s.as.YouTubeLink, icon: (0, n.jsx)(o.$5w, {
-            colorClass: u.linkIcon
+            colorClass: d.linkIcon
           }), title: c.intl.string(c.t.lNmxbG)
         };
       default:
@@ -49,8 +49,8 @@ function g(e) {
   }(t);
   return (0, n.jsx)(o.ua7, {
     text: t.url,
-    tooltipClassName: u.tooltip,
-    tooltipContentClassName: u.tooltipContent,
+    tooltipClassName: d.tooltip,
+    tooltipContentClassName: d.tooltipContent,
     children: e => {
       var l, s, {
           onClick: c
@@ -88,8 +88,8 @@ function g(e) {
         }
         return e
       }({}, m), s = s = {
-        className: u.linkAnchor,
-        title: d,
+        className: d.linkAnchor,
+        title: u,
         href: t.url,
         onClick: () => {
           r(a), null == c || c()
@@ -109,7 +109,7 @@ function g(e) {
     }
   })
 }
-let p = function(e) {
+let g = function(e) {
   let {
     detectedGame: t,
     trackClick: r
@@ -123,13 +123,13 @@ let p = function(e) {
   }).sort((e, t) => e.category - t.category);
   return 0 === a.length ? null : (0, n.jsxs)("div", {
     children: [(0, n.jsx)(o.X6q, {
-      className: d.sectionHeader,
+      className: u.sectionHeader,
       variant: "text-xs/semibold",
       color: "header-secondary",
       children: c.intl.string(c.t.Oj3o19)
     }), (0, n.jsx)("div", {
-      className: i()(d.row, d.gapMd),
-      children: a.map(e => (0, n.jsx)(g, {
+      className: i()(u.row, u.gapMd),
+      children: a.map(e => (0, n.jsx)(f, {
         website: e,
         trackClick: r
       }, e.url))

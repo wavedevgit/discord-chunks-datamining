@@ -16,8 +16,8 @@ var Chunk304329 = require("./304329.js"),
         var r = [];
         n.activeTargets.forEach(function(t) {
           var n = new i.A(t.target),
-            s = (0, o.D)(t.target);
-          r.push(n), t.lastReportedSize = (0, a.Y)(t.target, t.observedBox), s < e && (e = s)
+            s = (0, a.D)(t.target);
+          r.push(n), t.lastReportedSize = (0, o.Y)(t.target, t.observedBox), s < e && (e = s)
         }), t.push(function() {
           n.callback.call(n.observer, r, n.observer)
         }), n.activeTargets.splice(0, n.activeTargets.length)

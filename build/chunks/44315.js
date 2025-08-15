@@ -8,7 +8,7 @@ require.d(exports, {
 }), require("./704826.js"), require("./35282.js");
 var Chunk73800 = require("./73800.js"),
   Chunk688619 = require("./688619.js"),
-  o = require.n(Chunk688619),
+  a = require.n(Chunk688619),
   Chunk691324 = require("./691324.js"),
   Chunk399606 = require("./399606.js"),
   Chunk900089 = require("./900089.js"),
@@ -23,7 +23,7 @@ function d(e) {
 }
 
 function f(e) {
-  return null != e ? a.b[e] : null
+  return null != e ? o.b[e] : null
 }
 
 function _(e) {
@@ -31,7 +31,7 @@ function _(e) {
   return r.useMemo(() => {
     if (null == e) return null;
     if ("currentColor" === e || e.startsWith("var(")) return e;
-    let n = o()(e);
+    let n = a()(e);
     return n.set("hsl.s", n.get("hsl.s") * t).hex()
   }, [e, t])
 }

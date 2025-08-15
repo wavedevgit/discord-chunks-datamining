@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 925975, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 925975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  g: () => g
+  g: () => b
 }), require("./781311.js"), require("./388685.js"), require("./35282.js"), require("./704826.js"), require("./804061.js");
 var Chunk159635 = require("./159635.js"),
   i = require.n(Chunk159635),
@@ -15,8 +14,8 @@ var Chunk159635 = require("./159635.js"),
   Chunk695346 = require("./695346.js"),
   Chunk375954 = require("./375954.js"),
   Chunk981631 = require("./981631.js");
-let p = /\\([*?+/])/g,
-  h = {
+let f = /\\([*?+/])/g,
+  m = {
     tts: {
       action: () => ({
         tts: Chunk695346.OW.getSetting()
@@ -47,7 +46,7 @@ let p = /\\([*?+/])/g,
         let {
           channel: n
         } = t;
-        if (null != n.guild_id) return o.Z.changeNickname(n.guild_id, n.id, _.ME, e), {
+        if (null != n.guild_id) return l.Z.changeNickname(n.guild_id, n.id, h.ME, e), {
           content: ""
         }
       }
@@ -59,11 +58,11 @@ let p = /\\([*?+/])/g,
           isEdit: n,
           channel: r
         } = t;
-        if (n || !f.Z.hasPresent(r.id)) return;
-        let i = f.Z.getMessages(r.id).last();
+        if (n || !p.Z.hasPresent(r.id)) return;
+        let i = p.Z.getMessages(r.id).last();
         if (null == i || null == i.id) return;
-        let o = l.ZP.getDisambiguatedEmojiContext(r.guild_id).getByName(e.trim().slice(2, false));
-        if (null != o) return (0, c.rU)(r.id, i.id, (0, u.g1)(o)), {
+        let l = s.ZP.getDisambiguatedEmojiContext(r.guild_id).getByName(e.trim().slice(2, false));
+        if (null != l) return (0, c.rU)(r.id, i.id, (0, u.g1)(l)), {
           content: ""
         }
       }
@@ -74,18 +73,18 @@ let p = /\\([*?+/])/g,
         var n, r;
         let {
           isEdit: i,
-          channel: o
+          channel: l
         } = t;
         if (i) return;
-        let s = f.Z.getLastEditableMessage(o.id);
-        if (null == s || null == s.id) return {
+        let o = p.Z.getLastEditableMessage(l.id);
+        if (null == o || null == o.id) return {
           content: ""
         };
-        let [l, c, u, d] = Array.from(null != (n = e.match(this.match.regex)) ? n : []), _ = null != (r = null == d ? true : d.split("")) ? r : [];
-        c = c.replace(p, (e, t) => t), u = u.replace(p, (e, t) => t);
-        let h = _.includes("g") ? s.content.replaceAll(c, u) : s.content.replace(c, u);
-        return (null == h || "" === h.trim()) && 0 === s.attachments.length ? a.Z.deleteMessage(o.id, s.id) : h !== s.content && a.Z.editMessage(o.id, s.id, {
-          content: h
+        let [s, c, u, d] = Array.from(null != (n = e.match(this.match.regex)) ? n : []), h = null != (r = null == d ? true : d.split("")) ? r : [];
+        c = c.replace(f, (e, t) => t), u = u.replace(f, (e, t) => t);
+        let m = h.includes("g") ? o.content.replaceAll(c, u) : o.content.replace(c, u);
+        return (null == m || "" === m.trim()) && 0 === o.attachments.length ? a.Z.deleteMessage(l.id, o.id) : m !== o.content && a.Z.editMessage(l.id, o.id, {
+          content: m
         }), {
           content: ""
         }
@@ -93,29 +92,29 @@ let p = /\\([*?+/])/g,
     },
     spoiler: {
       action: e => ({
-        content: (0, _.XmY)(e).trim()
+        content: (0, h.XmY)(e).trim()
       })
     }
   };
 
-function m(e, t, n, r) {
-  return s.ZP.trackWithMetadata(_.rMx.SLASH_COMMAND_USED, {
+function g(e, t, n, r) {
+  return o.ZP.trackWithMetadata(h.rMx.SLASH_COMMAND_USED, {
     command: e
   }), t.action(n, r)
 }
 
-function g(e, t) {
-  for (let r in h) {
-    let i = h[r];
+function b(e, t) {
+  for (let r in m) {
+    let i = m[r];
     if (null != i.match) {
       var n;
-      if (null == (n = i.match.regex) ? true : n.test(e)) return m(r, i, e, t);
+      if (null == (n = i.match.regex) ? true : n.test(e)) return g(r, i, e, t);
       continue
     }
     if (d.dN.getSetting() && "/" === e[0]) {
       let n = e.split(" ");
-      if (r === n[0].slice(1) && null != i.action) return m(r, i, n.slice(1).join(" "), t)
+      if (r === n[0].slice(1) && null != i.action) return g(r, i, n.slice(1).join(" "), t)
     }
   }
 }
-Object.setPrototypeOf(h, null)
+Object.setPrototypeOf(m, null)

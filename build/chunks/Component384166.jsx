@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk585483 = require("./585483.js"),
@@ -22,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
 function g() {
   let [e, t] = Chunk73800.useState(false), {
     hasPendingChanges: n,
-    pendingWidgets: o
+    pendingWidgets: a
   } = (0, Chunk442837.cj)([Chunk224724.Z], () => ({
     hasPendingChanges: Chunk224724.Z.hasPendingChanges(),
     pendingWidgets: Chunk224724.Z.getPendingWidgets()
@@ -48,12 +48,12 @@ function g() {
       Chunk592183.Z.clearPendingWidgets()
     }, []);
   return require ? (0, Chunk255367.jsx)("div", {
-    className: a()(Chunk461671.container, {
+    className: o()(Chunk461671.container, {
       [Chunk461671.visible]: require
     }),
     role: "status",
     children: (0, Chunk255367.jsxs)("div", {
-      className: a()(Chunk461671.content, {
+      className: o()(Chunk461671.content, {
         [Chunk461671.emphasized]: module
       }),
       children: [(0, Chunk255367.jsx)("div", {

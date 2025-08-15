@@ -97,11 +97,11 @@ function G(e) {
   M(t, n, r, i, l)
 }
 
-function V() {
+function B() {
   return null !== Z && Z.removeEventListener("end", Chunk196051.NB), Chunk419363.M9(), Z = null, true
 }
 
-function B(e) {
+function V(e) {
   var t, n, r;
   let {
     message: i,
@@ -152,6 +152,6 @@ function z() {
 }
 let W = {
   init() {
-    Chunk570140.Z.subscribe("SPEAK_TEXT", G), Chunk570140.Z.subscribe("SPEAK_MESSAGE", B), Chunk570140.Z.subscribe("STOP_SPEAKING", V), Chunk570140.Z.subscribe("MESSAGE_CREATE", H), Chunk570140.Z.subscribe("MESSAGE_DELETE", F), Chunk570140.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", z), Chunk570140.Z.subscribe("USER_SETTINGS_PROTO_UPDATE", k), (0, Chunk241601.Ql)(k)
+    Chunk570140.Z.subscribe("SPEAK_TEXT", G), Chunk570140.Z.subscribe("SPEAK_MESSAGE", V), Chunk570140.Z.subscribe("STOP_SPEAKING", B), Chunk570140.Z.subscribe("MESSAGE_CREATE", H), Chunk570140.Z.subscribe("MESSAGE_DELETE", F), Chunk570140.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", z), Chunk570140.Z.subscribe("USER_SETTINGS_PROTO_UPDATE", k), (0, Chunk241601.Ql)(k)
   }
 }

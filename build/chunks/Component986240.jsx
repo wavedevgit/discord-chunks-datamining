@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 986240, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37220 **/
+/** chunk id: 986240, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -17,32 +16,32 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e, t) {
+function p(e, t) {
   let n = (0, d.Z)(t),
-    h = e.hasPotions(),
-    m = (0, u.Nt)(),
-    g = i.useCallback(n => {
+    p = e.hasPotions(),
+    O = (0, u.Nt)(),
+    y = i.useCallback(n => {
       try {
         (0, a.qc)(t.id, e.id, n)
       } catch (e) {
-        (0, o.showToast)((0, o.createToast)(p.intl.string(p.t.xsfC2d), o.ToastType.FAILURE))
+        (0, l.showToast)((0, l.createToast)(b.intl.string(b.t.xsfC2d), l.ToastType.FAILURE))
       }
     }, [t.id, e.id]),
-    E = i.useCallback(() => {
-      f.default.track(_.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
-        location: l.MG.MessageContextMenu
+    m = i.useCallback(() => {
+      f.default.track(g.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
+        location: s.MG.MessageContextMenu
       }), (0, c.s)({
         channelId: t.id,
         message: e,
-        onRedeem: g,
-        onClose: s.Qy,
-        source: l.YD.MessageContextMenu
+        onRedeem: y,
+        onClose: o.Qy,
+        source: s.YD.MessageContextMenu
       })
-    }, [t.id, e, g]);
-  return n && !h && m ? (0, r.jsx)(o.sNh, {
+    }, [t.id, e, y]);
+  return n && !p && O ? (0, r.jsx)(l.sNh, {
     id: "add-confetti-potion",
-    label: p.intl.string(p.t.icaJW1),
-    icon: o.l22,
-    action: E
+    label: b.intl.string(b.t.icaJW1),
+    icon: l.l22,
+    action: m
   }) : null
 }

@@ -1,47 +1,47 @@
-/** Chunk was on web.js **/
-/** chunk id: 788737, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 788737, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk381538 = require("./381538.js");
 
 function i() {
-  return (i = Chunk381538 || function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = arguments[t];
-      for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+  return (i = Chunk381538 || function(t) {
+    for (var e = 1; e < arguments.length; e++) {
+      var r = arguments[e];
+      for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (t[n] = r[n])
     }
-    return e
+    return t
   }).apply(this, arguments)
 }
 
-function o(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      s(e, t, n[t])
+function o(t) {
+  for (var e = 1; e < arguments.length; e++) {
+    var r = null != arguments[e] ? arguments[e] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
+      return Object.getOwnPropertyDescriptor(r, t).enumerable
+    }))), n.forEach(function(e) {
+      u(t, e, r[e])
     })
   }
-  return e
+  return t
 }
 
-function a(e) {
-  if (true === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
-  return e
+function a(t) {
+  if (true === t) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
+  return t
 }
 
-function s(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
+function u(t, e, r) {
+  return e in t ? Object.defineProperty(t, e, {
+    value: r,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = n, e
+  }) : t[e] = r, t
 }
 
-function l(e, t) {
-  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
+function s(t, e) {
+  t.prototype = Object.create(e.prototype), t.prototype.constructor = t, t.__proto__ = e
 }
 var Chunk687655 = require("./687655.js"),
   Chunk101166 = require("./101166.js"),
@@ -65,171 +65,164 @@ var Chunk687655 = require("./687655.js"),
   Chunk581079 = require("./581079.js"),
   Chunk217492 = require("./217492.js"),
   Chunk467159 = require("./467159.js"),
-  w = Chunk169774.isBrowser("IE"),
-  D = !w,
-  L = {
+  M = Chunk169774.isBrowser("IE"),
+  A = !M,
+  I = {
     edit: Chunk938054,
     composite: Chunk66115,
     drag: Chunk209930,
     cut: null,
     render: null
   },
-  x = false,
-  M = function(e) {
-    function t() {
-      return e.apply(this, arguments) || this
+  B = false,
+  L = function(t) {
+    function e() {
+      return t.apply(this, arguments) || this
     }
-    l(t, e);
-    var n = t.prototype;
-    return n.render = function() {
+    s(e, t);
+    var r = e.prototype;
+    return r.render = function() {
       return null
-    }, n.componentDidMount = function() {
+    }, r.componentDidMount = function() {
       this._update()
-    }, n.componentDidUpdate = function() {
+    }, r.componentDidUpdate = function() {
       this._update()
-    }, n._update = function() {
-      var e = this.props.editor;
-      e._latestEditorState = this.props.editorState, e._blockSelectEvents = true
-    }, t
+    }, r._update = function() {
+      var t = this.props.editor;
+      t._latestEditorState = this.props.editorState, t._blockSelectEvents = true
+    }, e
   }(Chunk73800.Component),
-  j = function(e) {
-    function t(t) {
-      var n;
-      return s(a(n = e.call(this, t) || this), "_blockSelectEvents", true), s(a(n), "_clipboard", true), s(a(n), "_handler", true), s(a(n), "_dragCount", true), s(a(n), "_internalDrag", true), s(a(n), "_editorKey", true), s(a(n), "_placeholderAccessibilityID", true), s(a(n), "_latestEditorState", true), s(a(n), "_latestCommittedEditorState", true), s(a(n), "_pendingStateFromBeforeInput", true), s(a(n), "_onBeforeInput", true), s(a(n), "_onBlur", true), s(a(n), "_onCharacterData", true), s(a(n), "_onCompositionEnd", true), s(a(n), "_onCompositionStart", true), s(a(n), "_onCopy", true), s(a(n), "_onCut", true), s(a(n), "_onDragEnd", true), s(a(n), "_onDragOver", true), s(a(n), "_onDragStart", true), s(a(n), "_onDrop", true), s(a(n), "_onInput", true), s(a(n), "_onFocus", true), s(a(n), "_onKeyDown", true), s(a(n), "_onKeyPress", true), s(a(n), "_onKeyUp", true), s(a(n), "_onMouseDown", true), s(a(n), "_onMouseUp", true), s(a(n), "_onPaste", true), s(a(n), "_onSelect", true), s(a(n), "editor", true), s(a(n), "editorContainer", true), s(a(n), "focus", true), s(a(n), "blur", true), s(a(n), "setMode", true), s(a(n), "exitCurrentMode", true), s(a(n), "restoreEditorDOM", true), s(a(n), "setClipboard", true), s(a(n), "getClipboard", true), s(a(n), "getEditorKey", true), s(a(n), "update", true), s(a(n), "onDragEnter", true), s(a(n), "onDragLeave", true), s(a(n), "_handleEditorContainerRef", function(e) {
-        n.editorContainer = e, n.editor = null !== e ? e.firstChild : null
-      }), s(a(n), "focus", function(e) {
-        var t = n.props.editorState,
-          r = t.getSelection().getHasFocus(),
-          i = n.editor;
+  R = function(t) {
+    function e(e) {
+      var r;
+      return u(a(r = t.call(this, e) || this), "_blockSelectEvents", true), u(a(r), "_clipboard", true), u(a(r), "_handler", true), u(a(r), "_dragCount", true), u(a(r), "_internalDrag", true), u(a(r), "_editorKey", true), u(a(r), "_placeholderAccessibilityID", true), u(a(r), "_latestEditorState", true), u(a(r), "_latestCommittedEditorState", true), u(a(r), "_pendingStateFromBeforeInput", true), u(a(r), "_onBeforeInput", true), u(a(r), "_onBlur", true), u(a(r), "_onCharacterData", true), u(a(r), "_onCompositionEnd", true), u(a(r), "_onCompositionStart", true), u(a(r), "_onCopy", true), u(a(r), "_onCut", true), u(a(r), "_onDragEnd", true), u(a(r), "_onDragOver", true), u(a(r), "_onDragStart", true), u(a(r), "_onDrop", true), u(a(r), "_onInput", true), u(a(r), "_onFocus", true), u(a(r), "_onKeyDown", true), u(a(r), "_onKeyPress", true), u(a(r), "_onKeyUp", true), u(a(r), "_onMouseDown", true), u(a(r), "_onMouseUp", true), u(a(r), "_onPaste", true), u(a(r), "_onSelect", true), u(a(r), "editor", true), u(a(r), "editorContainer", true), u(a(r), "focus", true), u(a(r), "blur", true), u(a(r), "setMode", true), u(a(r), "exitCurrentMode", true), u(a(r), "restoreEditorDOM", true), u(a(r), "setClipboard", true), u(a(r), "getClipboard", true), u(a(r), "getEditorKey", true), u(a(r), "update", true), u(a(r), "onDragEnter", true), u(a(r), "onDragLeave", true), u(a(r), "_handleEditorContainerRef", function(t) {
+        r.editorContainer = t, r.editor = null !== t ? t.firstChild : null
+      }), u(a(r), "focus", function(t) {
+        var e = r.props.editorState,
+          n = e.getSelection().getHasFocus(),
+          i = r.editor;
         if (i) {
-          var o = O.getScrollParent(i),
-            a = e || A(o),
-            s = a.x,
-            l = a.y;
-          R(i) || C(false), i.focus(), o === window ? window.scrollTo(s, l) : y.setTop(o, l), r || n.update(E.forceSelection(t, t.getSelection()))
+          var o = S.getScrollParent(i),
+            a = t || E(o),
+            u = a.x,
+            s = a.y;
+          K(i) || O(false), i.focus(), o === window ? window.scrollTo(u, s) : b.setTop(o, s), n || r.update(m.forceSelection(e, e.getSelection()))
         }
-      }), s(a(n), "blur", function() {
-        var e = n.editor;
-        e && (R(e) || C(false), e.blur())
-      }), s(a(n), "setMode", function(e) {
-        var t = n.props,
-          r = t.onPaste,
-          i = t.onCut,
-          a = t.onCopy,
-          s = o({}, L.edit);
-        r && (s.onPaste = r), i && (s.onCut = i), a && (s.onCopy = a), n._handler = o({}, L, {
-          edit: s
-        })[e]
-      }), s(a(n), "exitCurrentMode", function() {
-        n.setMode("edit")
-      }), s(a(n), "restoreEditorDOM", function(e) {
-        n.setState({
-          contentsKey: n.state.contentsKey + 1
+      }), u(a(r), "blur", function() {
+        var t = r.editor;
+        t && (K(t) || O(false), t.blur())
+      }), u(a(r), "setMode", function(t) {
+        var e = r.props,
+          n = e.onPaste,
+          i = e.onCut,
+          a = e.onCopy,
+          u = o({}, I.edit);
+        n && (u.onPaste = n), i && (u.onCut = i), a && (u.onCopy = a), r._handler = o({}, I, {
+          edit: u
+        })[t]
+      }), u(a(r), "exitCurrentMode", function() {
+        r.setMode("edit")
+      }), u(a(r), "restoreEditorDOM", function(t) {
+        r.setState({
+          contentsKey: r.state.contentsKey + 1
         }, function() {
-          n.focus(e)
+          r.focus(t)
         })
-      }), s(a(n), "setClipboard", function(e) {
-        n._clipboard = e
-      }), s(a(n), "getClipboard", function() {
-        return n._clipboard
-      }), s(a(n), "update", function(e) {
-        n._latestEditorState = e, n.props.onChange(e)
-      }), s(a(n), "onDragEnter", function() {
-        n._dragCount++
-      }), s(a(n), "onDragLeave", function() {
-        n._dragCount--, 0 === n._dragCount && n.exitCurrentMode()
-      }), n._blockSelectEvents = false, n._clipboard = null, n._handler = null, n._dragCount = 0, n._editorKey = t.editorKey || T(), n._placeholderAccessibilityID = "placeholder-" + n._editorKey, n._latestEditorState = t.editorState, n._latestCommittedEditorState = t.editorState, n._onBeforeInput = n._buildHandler("onBeforeInput"), n._onBlur = n._buildHandler("onBlur"), n._onCharacterData = n._buildHandler("onCharacterData"), n._onCompositionEnd = n._buildHandler("onCompositionEnd"), n._onCompositionStart = n._buildHandler("onCompositionStart"), n._onCopy = n._buildHandler("onCopy"), n._onCut = n._buildHandler("onCut"), n._onDragEnd = n._buildHandler("onDragEnd"), n._onDragOver = n._buildHandler("onDragOver"), n._onDragStart = n._buildHandler("onDragStart"), n._onDrop = n._buildHandler("onDrop"), n._onInput = n._buildHandler("onInput"), n._onFocus = n._buildHandler("onFocus"), n._onKeyDown = n._buildHandler("onKeyDown"), n._onKeyPress = n._buildHandler("onKeyPress"), n._onKeyUp = n._buildHandler("onKeyUp"), n._onMouseDown = n._buildHandler("onMouseDown"), n._onMouseUp = n._buildHandler("onMouseUp"), n._onPaste = n._buildHandler("onPaste"), n._onSelect = n._buildHandler("onSelect"), n.getEditorKey = function() {
-        return n._editorKey
-      }, n.state = {
+      }), u(a(r), "setClipboard", function(t) {
+        r._clipboard = t
+      }), u(a(r), "getClipboard", function() {
+        return r._clipboard
+      }), u(a(r), "update", function(t) {
+        r._latestEditorState = t, r.props.onChange(t)
+      }), u(a(r), "onDragEnter", function() {
+        r._dragCount++
+      }), u(a(r), "onDragLeave", function() {
+        r._dragCount--, 0 === r._dragCount && r.exitCurrentMode()
+      }), r._blockSelectEvents = false, r._clipboard = null, r._handler = null, r._dragCount = 0, r._editorKey = e.editorKey || k(), r._placeholderAccessibilityID = "placeholder-" + r._editorKey, r._latestEditorState = e.editorState, r._latestCommittedEditorState = e.editorState, r._onBeforeInput = r._buildHandler("onBeforeInput"), r._onBlur = r._buildHandler("onBlur"), r._onCharacterData = r._buildHandler("onCharacterData"), r._onCompositionEnd = r._buildHandler("onCompositionEnd"), r._onCompositionStart = r._buildHandler("onCompositionStart"), r._onCopy = r._buildHandler("onCopy"), r._onCut = r._buildHandler("onCut"), r._onDragEnd = r._buildHandler("onDragEnd"), r._onDragOver = r._buildHandler("onDragOver"), r._onDragStart = r._buildHandler("onDragStart"), r._onDrop = r._buildHandler("onDrop"), r._onInput = r._buildHandler("onInput"), r._onFocus = r._buildHandler("onFocus"), r._onKeyDown = r._buildHandler("onKeyDown"), r._onKeyPress = r._buildHandler("onKeyPress"), r._onKeyUp = r._buildHandler("onKeyUp"), r._onMouseDown = r._buildHandler("onMouseDown"), r._onMouseUp = r._buildHandler("onMouseUp"), r._onPaste = r._buildHandler("onPaste"), r._onSelect = r._buildHandler("onSelect"), r.getEditorKey = function() {
+        return r._editorKey
+      }, r.state = {
         contentsKey: 0
-      }, n
+      }, r
     }
-    l(t, e);
-    var r = t.prototype;
-    return r._buildHandler = function(e) {
-      var t = this;
-      return function(n) {
-        if (!t.props.readOnly) {
-          var r = t._handler && t._handler[e];
-          r && (h ? h(function() {
-            return r(t, n)
-          }) : r(t, n))
+    s(e, t);
+    var n = e.prototype;
+    return n._buildHandler = function(t) {
+      var e = this;
+      return function(r) {
+        if (!e.props.readOnly) {
+          var n = e._handler && e._handler[t];
+          n && (g ? g(function() {
+            return n(e, r)
+          }) : n(e, r))
         }
       }
-    }, r._showPlaceholder = function() {
+    }, n._showPlaceholder = function() {
       return !!this.props.placeholder && !this.props.editorState.isInCompositionMode() && !this.props.editorState.getCurrentContent().hasText()
-    }, r._renderPlaceholder = function() {
+    }, n._renderPlaceholder = function() {
       if (this._showPlaceholder()) {
-        var e = {
-          text: P(this.props.placeholder),
+        var t = {
+          text: T(this.props.placeholder),
           editorState: this.props.editorState,
           textAlignment: this.props.textAlignment,
           accessibilityID: this._placeholderAccessibilityID
         };
-        return b.createElement(m, e)
+        return _.createElement(y, t)
       }
       return null
-    }, r.render = function() {
-      var e = this.props,
-        t = e.blockRenderMap,
-        n = e.blockRendererFn,
-        r = e.blockStyleFn,
-        a = e.customStyleFn,
-        s = e.customStyleMap,
-        l = e.editorState,
-        c = e.preventScroll,
-        d = e.readOnly,
-        _ = e.textAlignment,
-        p = e.textDirectionality,
-        h = I({
+    }, n.render = function() {
+      var t = this.props,
+        e = t.blockRenderMap,
+        r = t.blockRendererFn,
+        n = t.blockStyleFn,
+        a = t.customStyleFn,
+        u = t.customStyleMap,
+        s = t.editorState,
+        c = t.preventScroll,
+        f = t.readOnly,
+        h = t.textAlignment,
+        d = t.textDirectionality,
+        g = x({
           "DraftEditor/root": true,
-          "DraftEditor/alignLeft": "left" === _,
-          "DraftEditor/alignRight": "right" === _,
-          "DraftEditor/alignCenter": "center" === _
+          "DraftEditor/alignLeft": "left" === h,
+          "DraftEditor/alignRight": "right" === h,
+          "DraftEditor/alignCenter": "center" === h
         }),
+        y = this.props.role || "textbox",
+        v = "combobox" === y ? !!this.props.ariaExpanded : null,
         m = {
-          outline: "none",
-          userSelect: "text",
-          WebkitUserSelect: "text",
-          whiteSpace: "pre-wrap",
-          wordWrap: "break-word"
-        },
-        g = this.props.role || "textbox",
-        E = "combobox" === g ? !!this.props.ariaExpanded : null,
-        y = {
-          blockRenderMap: t,
-          blockRendererFn: n,
-          blockStyleFn: r,
-          customStyleMap: o({}, u, s),
+          blockRenderMap: e,
+          blockRendererFn: r,
+          blockStyleFn: n,
+          customStyleMap: o({}, l, u),
           customStyleFn: a,
           editorKey: this._editorKey,
-          editorState: l,
+          editorState: s,
           preventScroll: c,
-          textDirectionality: p
+          textDirectionality: d
         };
-      return b.createElement("div", {
-        className: h
-      }, this._renderPlaceholder(), b.createElement("div", {
-        className: I("DraftEditor/editorContainer"),
+      return _.createElement("div", {
+        className: g
+      }, this._renderPlaceholder(), _.createElement("div", {
+        className: x("DraftEditor/editorContainer"),
         ref: this._handleEditorContainerRef
-      }, b.createElement("div", {
-        "aria-activedescendant": d ? null : this.props.ariaActiveDescendantID,
-        "aria-autocomplete": d ? null : this.props.ariaAutoComplete,
-        "aria-controls": d ? null : this.props.ariaControls,
+      }, _.createElement("div", {
+        "aria-activedescendant": f ? null : this.props.ariaActiveDescendantID,
+        "aria-autocomplete": f ? null : this.props.ariaAutoComplete,
+        "aria-controls": f ? null : this.props.ariaControls,
         "aria-describedby": this.props.ariaDescribedBy || this._placeholderAccessibilityID,
-        "aria-expanded": d ? null : E,
+        "aria-expanded": f ? null : v,
         "aria-label": this.props.ariaLabel,
         "aria-labelledby": this.props.ariaLabelledBy,
         "aria-multiline": this.props.ariaMultiline,
-        "aria-owns": d ? null : this.props.ariaOwneeID,
+        "aria-owns": f ? null : this.props.ariaOwneeID,
         autoCapitalize: this.props.autoCapitalize,
         autoComplete: this.props.autoComplete,
         autoCorrect: this.props.autoCorrect,
-        className: I({
-          notranslate: !d,
+        className: x({
+          notranslate: !f,
           "public/DraftEditor/content": true
         }),
-        contentEditable: !d,
+        contentEditable: !f,
         "data-testid": this.props.webDriverTestID,
         onBeforeInput: this._onBeforeInput,
         onBlur: this._onBlur,
@@ -252,24 +245,30 @@ var Chunk687655 = require("./687655.js"),
         onPaste: this._onPaste,
         onSelect: this._onSelect,
         ref: this.props.editorRef,
-        role: d ? null : g,
-        spellCheck: D && this.props.spellCheck,
-        style: m,
+        role: f ? null : y,
+        spellCheck: A && this.props.spellCheck,
+        style: {
+          outline: "none",
+          userSelect: "text",
+          WebkitUserSelect: "text",
+          whiteSpace: "pre-wrap",
+          wordWrap: "break-word"
+        },
         suppressContentEditableWarning: true,
         tabIndex: this.props.tabIndex
-      }, b.createElement(M, {
+      }, _.createElement(L, {
         editor: this,
-        editorState: l
-      }), b.createElement(f, i({}, y, {
+        editorState: s
+      }), _.createElement(p, i({}, m, {
         key: "contents" + this.state.contentsKey
       })))))
-    }, r.componentDidMount = function() {
-      this._blockSelectEvents = false, !x && N("draft_ods_enabled") && (x = true, g.initODS()), this.setMode("edit"), w && (this.editor ? this.editor.ownerDocument.execCommand("AutoUrlDetect", false, false) : n.g.execCommand("AutoUrlDetect", false, false))
-    }, r.componentDidUpdate = function() {
+    }, n.componentDidMount = function() {
+      this._blockSelectEvents = false, !B && D("draft_ods_enabled") && (B = true, v.initODS()), this.setMode("edit"), M && (this.editor ? this.editor.ownerDocument.execCommand("AutoUrlDetect", false, false) : r.g.execCommand("AutoUrlDetect", false, false))
+    }, n.componentDidUpdate = function() {
       this._blockSelectEvents = false, this._latestEditorState = this.props.editorState, this._latestCommittedEditorState = this.props.editorState
-    }, t
+    }, e
   }(Chunk73800.Component);
-s(j, "defaultProps", {
+u(R, "defaultProps", {
   blockRenderMap: Chunk687655,
   blockRendererFn: function() {
     return null
@@ -281,4 +280,4 @@ s(j, "defaultProps", {
   readOnly: false,
   spellCheck: false,
   stripPastedStyles: false
-}), module.exports = j
+}), module.exports = R

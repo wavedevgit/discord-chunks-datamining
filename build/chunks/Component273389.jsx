@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 59727 **/
 /** chunk id: 273389, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -17,36 +17,36 @@ let c = e => {
       onClick: u,
       canNavigateBack: m,
       onBackClicked: p,
-      isModeratorReport: g
+      isModeratorReport: _
     } = e,
-    _ = i.useRef(null),
+    g = a.useRef(null),
     b = null != n && "cancel" !== n.type,
     h = m && (null == n ? true : n.type) !== "done",
     x = b || h;
-  if (i.useEffect(() => {
+  if (a.useEffect(() => {
       if ((null == n ? true : n.type) === "submit" || (null == n ? true : n.type) === "done") {
         var e;
-        null == (e = _.current) || e.focus()
+        null == (e = g.current) || e.focus()
       }
     }, [null == n ? true : n.type]), !x) return null;
-  let f = s.intl.string(s.t.i4jeWV);
-  return (null == n ? true : n.type) === "submit" ? (t = "critical-primary", f = g ? s.intl.string(o.default.ZUyreX) : s.intl.string(s.t["G+vU8/"])) : (null == n ? true : n.type) === "next" ? f = s.intl.string(s.t.PDTjLC) : (null == n ? true : n.type) === "cancel" && (f = s.intl.string(s.t["ETE/oK"]), t = "secondary"), (0, r.jsx)(l.mzw, {
+  let f = o.intl.string(o.t.i4jeWV);
+  return (null == n ? true : n.type) === "submit" ? (t = "critical-primary", f = _ ? o.intl.string(s.default.ZUyreX) : o.intl.string(o.t["G+vU8/"])) : (null == n ? true : n.type) === "next" ? f = o.intl.string(o.t.PDTjLC) : (null == n ? true : n.type) === "cancel" && (f = o.intl.string(o.t["ETE/oK"]), t = "secondary"), (0, r.jsx)(i.mzw, {
     "data-migration-pending": true,
-    direction: a.Z.Direction.HORIZONTAL,
-    children: (0, r.jsxs)(l.hE2, {
+    direction: l.Z.Direction.HORIZONTAL,
+    children: (0, r.jsxs)(i.hE2, {
       fullWidth: h && b,
-      children: [h && (0, r.jsx)(l.zxk, {
+      children: [h && (0, r.jsx)(i.zxk, {
         onClick: p,
         variant: "secondary",
         disabled: c,
-        text: s.intl.string(s.t["13/7kZ"])
-      }), b && (0, r.jsx)(l.zxk, {
+        text: o.intl.string(o.t["13/7kZ"])
+      }), b && (0, r.jsx)(i.zxk, {
         onClick: () => {
           null != n && u(n)
         },
         variant: t,
         disabled: c || d,
-        buttonRef: _,
+        buttonRef: g,
         text: f
       })]
     })

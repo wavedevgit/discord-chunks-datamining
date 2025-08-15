@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 59727 **/
 /** chunk id: 521332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -22,18 +22,18 @@ function h(e) {
   let {
     title: t,
     description: n,
-    onButtonClick: l,
-    trackSettingsUpsellsAction: a
-  } = e, [s, c] = i.useState(false);
-  return (0, o.ZP)(() => {
-    a(p.M4.SETTINGS_UPSELLS_VIEWED)
+    onButtonClick: i,
+    trackSettingsUpsellsAction: l
+  } = e, [o, c] = a.useState(false);
+  return (0, s.ZP)(() => {
+    l(p.M4.SETTINGS_UPSELLS_VIEWED)
   }), (0, r.jsx)(d.JZ, {
     title: t,
     description: n,
-    buttonText: s ? _.intl.string(_.t["h+WsPT"]) : _.intl.string(_.t.A8t4NT),
-    buttonDisabled: s,
+    buttonText: o ? g.intl.string(g.t["h+WsPT"]) : g.intl.string(g.t.A8t4NT),
+    buttonDisabled: o,
     onButtonPress: () => {
-      l(), c(true), a(p.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
+      i(), c(true), l(p.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
     }
   })
 }
@@ -42,37 +42,37 @@ function x(e) {
   let {
     settingsUpsells: t,
     channelId: n,
-    onModalClose: i,
-    reportId: o,
+    onModalClose: a,
+    reportId: s,
     reportType: d,
     reportSubType: x
-  } = e, f = (0, l.e7)([u.Z], () => u.Z.getChannel(n)), v = (0, m.jc)(t, null == f ? true : f.type), j = (0, p.i_)(d, x, o);
+  } = e, f = (0, i.e7)([u.Z], () => u.Z.getChannel(n)), v = (0, m.jc)(t, null == f ? true : f.type), j = (0, p.i_)(d, x, s);
   return 0 === v.length ? null : (0, r.jsxs)("div", {
     className: b.container,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(l.X6q, {
       variant: "text-sm/semibold",
       className: b.header,
-      children: _.intl.string(_.t["1yxTIC"])
+      children: g.intl.string(g.t["1yxTIC"])
     }), (0, r.jsx)("div", {
       className: b.upsellsContainer,
       children: v.map((e, n) => {
         let {
-          getTitle: i,
-          getDescription: l,
-          onApply: a
+          getTitle: a,
+          getDescription: i,
+          onApply: l
         } = e;
         return (0, r.jsx)(h, {
-          title: i(),
-          description: l(),
-          onButtonClick: a,
+          title: a(),
+          description: i(),
+          onButtonClick: l,
           trackSettingsUpsellsAction: j(t[n])
         }, n)
       })
-    }), (0, r.jsx)(a.Avr, {
-      text: _.intl.string(_.t.olebGx),
+    }), (0, r.jsx)(l.Avr, {
+      text: g.intl.string(g.t.olebGx),
       onClick: () => {
-        s.Z.open(g.oAB.CONTENT_AND_SOCIAL), i(), c.ZP.trackWithMetadata(g.rMx.IAR_SETTINGS_UPSELLS_ACTION, {
-          report_id: o,
+        o.Z.open(_.oAB.CONTENT_AND_SOCIAL), a(), c.ZP.trackWithMetadata(_.rMx.IAR_SETTINGS_UPSELLS_ACTION, {
+          report_id: s,
           report_type: d.name,
           report_subtype: x,
           action: p.M4.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED

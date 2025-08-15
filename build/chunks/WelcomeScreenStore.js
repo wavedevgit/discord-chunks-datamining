@@ -1,92 +1,92 @@
-/** Chunk was on 1355 **/
-/** chunk id: 995532, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 78079 **/
+/** chunk id: 995532, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => m,
+  Z: () => d,
   a: () => a
 });
-var r, l, Chunk442837 = require("./442837.js"),
+var n, r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 let a = {},
+  s = {},
   o = {},
-  u = {},
+  g = false,
   c = false,
-  E = false,
-  d = false;
+  f = false;
 
-function _(e) {
+function v(A) {
   let {
-    guild: t
-  } = e.invite;
-  return (null == t ? true : t.welcome_screen) != null && (o[t.id] = t.welcome_screen, true)
+    guild: e
+  } = A.invite;
+  return (null == e ? true : e.welcome_screen) != null && (s[e.id] = e.welcome_screen, true)
 }
 
-function A(e) {
+function u(A) {
   let {
-    welcomeScreen: t,
-    guildId: n
-  } = e;
-  o[n] = null != t ? t : a
+    welcomeScreen: e,
+    guildId: t
+  } = A;
+  s[t] = null != e ? e : a
 }
-class T extends(l = Chunk442837.ZP.Store) {
-  get(e) {
-    if (null != e) return o[e]
+class h extends(r = Chunk442837.ZP.Store) {
+  get(A) {
+    if (null != A) return s[A]
   }
   isFetching() {
-    return E
+    return c
   }
   hasError() {
-    return d
+    return f
   }
-  hasSeen(e) {
-    let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    return null != e && (t ? c : u[e] || false)
+  hasSeen(A) {
+    let e = arguments.length > 1 && true !== arguments[1] && arguments[1];
+    return null != A && (e ? g : o[A] || false)
   }
-  isEmpty(e) {
-    if (null == e) returntrue;
-    let t = o[e];
-    return null == t || 0 === t.welcome_channels.length
+  isEmpty(A) {
+    if (null == A) returntrue;
+    let e = s[A];
+    return null == e || 0 === e.welcome_channels.length
   }
-}(r = "displayName") in T ? Object.defineProperty(T, r, {
+}(n = "displayName") in h ? Object.defineProperty(h, n, {
   value: "WelcomeScreenStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : T[r] = "WelcomeScreenStore";
-let m = new T(Chunk570140.Z, {
-  INVITE_RESOLVE_SUCCESS: _,
-  INVITE_ACCEPT_SUCCESS: _,
-  WELCOME_SCREEN_SUBMIT_SUCCESS: A,
-  WELCOME_SCREEN_UPDATE: A,
-  WELCOME_SCREEN_VIEW: function(e) {
+}) : h[n] = "WelcomeScreenStore";
+let d = new h(Chunk570140.Z, {
+  INVITE_RESOLVE_SUCCESS: v,
+  INVITE_ACCEPT_SUCCESS: v,
+  WELCOME_SCREEN_SUBMIT_SUCCESS: u,
+  WELCOME_SCREEN_UPDATE: u,
+  WELCOME_SCREEN_VIEW: function(A) {
     let {
-      guildId: t,
-      isLurking: n
-    } = e;
-    u[t] = true, n && (c = true)
+      guildId: e,
+      isLurking: t
+    } = A;
+    o[e] = true, t && (g = true)
   },
   GUILD_STOP_LURKING: function() {
-    c = false
+    g = false
   },
-  GUILD_DELETE: function(e) {
+  GUILD_DELETE: function(A) {
     let {
       guild: {
-        id: t
+        id: e
       }
-    } = e;
-    u[t] = false
+    } = A;
+    o[e] = false
   },
   WELCOME_SCREEN_FETCH_START: function() {
-    E = true, d = false
+    c = true, f = false
   },
-  WELCOME_SCREEN_FETCH_SUCCESS: function(e) {
-    E = false, d = false;
+  WELCOME_SCREEN_FETCH_SUCCESS: function(A) {
+    c = false, f = false;
     let {
-      welcomeScreen: t,
-      guildId: n
-    } = e;
-    o[n] = null != t ? t : a
+      welcomeScreen: e,
+      guildId: t
+    } = A;
+    s[t] = null != e ? e : a
   },
   WELCOME_SCREEN_FETCH_FAIL: function() {
-    E = false, d = true
+    c = false, f = true
   }
 })

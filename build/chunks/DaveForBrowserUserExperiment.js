@@ -2,7 +2,7 @@
 /** chunk id: 529558, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => o,
+  N: () => a,
   m: () => i
 });
 var Chunk818083 = require("./818083.js");
@@ -23,7 +23,7 @@ let i = (0, Chunk818083.B)({
       }
     }]
   }),
-  o = (0, Chunk818083.B)({
+  a = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-06_dave_for_browser",
     label: "Allowing testing DAVE protocol for browser",

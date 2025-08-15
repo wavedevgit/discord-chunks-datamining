@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 946196, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 946196, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   l: () => d
 }), require("./388685.js");
@@ -22,7 +21,7 @@ function d() {
 let f = e => {
   let {
     error: t
-  } = e, [n, a] = (0, i.useState)(false), d = (0, s.Yzy)(!n, {
+  } = e, [n, a] = (0, i.useState)(false), d = (0, o.Yzy)(!n, {
     from: {
       opacity: 0,
       translateY: 20
@@ -37,24 +36,24 @@ let f = e => {
     }
   }, "respect-motion-settings"), f = (() => {
     switch (t) {
-      case l.r.ERROR_DOWNLOADING_DEPENDENCY:
+      case s.r.ERROR_DOWNLOADING_DEPENDENCY:
         return c.intl.string(c.t.D9neaG);
-      case l.r.ERROR_ACTIVATING_VOICE_FILTER:
+      case s.r.ERROR_ACTIVATING_VOICE_FILTER:
         return c.intl.string(c.t.mNMZZm);
       default:
         return c.intl.string(c.t.F8FvU1)
     }
   })();
-  return d(e => n ? null : (0, r.jsx)(o.animated.div, {
+  return d(e => n ? null : (0, r.jsx)(l.animated.div, {
     style: e,
     className: u.floaterWrapper,
     children: (0, r.jsxs)("div", {
       className: u.visibleFloater,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "always-white",
         children: f
-      }), (0, r.jsx)(s.RyX, {
+      }), (0, r.jsx)(o.RyX, {
         onClick: () => a(true)
       })]
     })

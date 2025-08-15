@@ -1,7 +1,7 @@
 /** Chunk was on 6310 **/
-/** chunk id: 706923, original params: n,t,l (module,exports,require) **/
+/** chunk id: 706923, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => m
+  default: () => S
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -16,36 +16,36 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk477425 = require("./477425.js");
 
-function m(n) {
+function S(e) {
   let {
-    channelId: t,
-    messageId: l,
-    transitionState: m,
-    onClose: x
-  } = n, f = (0, i.e7)([c.Z], () => c.Z.getChannel(t)), [p, C] = (0, u.Z)(t), Z = null == f ? true : f.guild_id;
-  return (0, e.jsx)(s.ConfirmModal, {
+    channelId: n,
+    messageId: t,
+    transitionState: S,
+    onClose: h
+  } = e, F = (0, l.e7)([c.Z], () => c.Z.getChannel(n)), [f, m] = (0, u.Z)(n), p = null == F ? true : F.guild_id;
+  return (0, s.jsx)(i.ConfirmModal, {
     header: g.intl.string(g.t.aIz1oa),
     confirmText: g.intl.string(g.t["cY+Ooa"]),
     cancelText: g.intl.string(g.t["ETE/oK"]),
     confirmButtonColor: o.zx.Colors.BRAND,
-    onConfirm: () => a.Z.crosspostMessage(t, l),
-    transitionState: m,
-    onClose: x,
-    children: (0, e.jsx)(s.Text, {
+    onConfirm: () => a.Z.crosspostMessage(n, t),
+    transitionState: S,
+    onClose: h,
+    children: (0, s.jsx)(i.Text, {
       variant: "text-md/normal",
-      className: h.spacing,
-      children: C ? (0, e.jsx)(s.$jN, {}) : null != p && null != p.guildsFollowing && p.guildsFollowing > 0 ? (0, e.jsxs)(e.Fragment, {
-        children: [(0, e.jsx)(s.Text, {
-          className: h.spacing,
+      className: _.spacing,
+      children: m ? (0, s.jsx)(i.$jN, {}) : null != f && null != f.guildsFollowing && f.guildsFollowing > 0 ? (0, s.jsxs)(s.Fragment, {
+        children: [(0, s.jsx)(i.Text, {
+          className: _.spacing,
           variant: "text-sm/normal",
           children: g.intl.format(g.t.GCGrND, {
-            numGuildsFollowing: p.guildsFollowing
+            numGuildsFollowing: f.guildsFollowing
           })
-        }), (0, e.jsx)(s.Text, {
+        }), (0, s.jsx)(i.Text, {
           variant: "text-sm/normal",
           children: g.intl.format(g.t.IMhGZ2, {
             onClick: () => {
-              null != Z && null != x && (x(), r.Z.open(Z, d.pNK.ANALYTICS))
+              null != p && null != h && (h(), r.Z.open(p, d.pNK.ANALYTICS))
             }
           })
         })]

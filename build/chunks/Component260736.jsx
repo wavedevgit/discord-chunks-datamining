@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 260736, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 260736, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => m
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -16,20 +15,20 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk587091 = require("./587091.js");
 
-function _(e) {
+function m(e) {
   let {
     compact: t,
     message: n,
-    channel: _
-  } = e, p = (0, s.ZP)(n), h = (0, l.l)({
+    channel: m
+  } = e, f = (0, o.ZP)(n), _ = (0, s.l)({
     user: n.author,
     channelId: n.channel_id,
-    guildId: _.guild_id,
+    guildId: m.guild_id,
     messageId: n.id
-  })(p), m = a.Z.getArticleURL(u.BhN.HD_STREAMING_POTION);
+  })(f), g = a.Z.getArticleURL(u.BhN.HD_STREAMING_POTION);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: f.parentContainer,
+      className: p.parentContainer,
       children: (0, r.jsx)(c.Z, {
         iconNode: (0, r.jsx)(i.hh5, {
           size: "sm"
@@ -37,27 +36,27 @@ function _(e) {
         timestamp: n.timestamp,
         compact: t,
         children: d.intl.format(d.t["u0qJ4+"], {
-          actorName: p.nick,
-          actorHook: h
+          actorName: f.nick,
+          actorHook: _
         })
       })
     }), (0, r.jsxs)(i.P3F, {
       onClick: () => {
         window.open(a.Z.getArticleURL(u.BhN.HD_STREAMING_POTION), "_blank")
       },
-      className: f.embed,
-      children: [(0, r.jsx)(o.Z, {}), (0, r.jsxs)("div", {
-        className: f.text,
+      className: p.embed,
+      children: [(0, r.jsx)(l.Z, {}), (0, r.jsxs)("div", {
+        className: p.text,
         children: [(0, r.jsx)(i.Text, {
           color: "text-default",
           variant: "text-sm/semibold",
-          className: f.title,
+          className: p.title,
           children: d.intl.string(d.t["Fh/mk5"])
         }), (0, r.jsx)(i.Text, {
           color: "text-primary",
           variant: "text-xs/normal",
           children: d.intl.format(d.t["bmGF+f"], {
-            helpCenterLink: m
+            helpCenterLink: g
           })
         })]
       })]

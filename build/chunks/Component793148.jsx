@@ -44,8 +44,8 @@ class h extends(r = Chunk73800.PureComponent) {
       iconColor: t,
       className: n,
       sliderWrapperClassName: r,
-      sliderClassName: o,
-      currentWindow: a,
+      sliderClassName: a,
+      currentWindow: o,
       muted: _,
       minValue: h,
       maxValue: m,
@@ -113,7 +113,7 @@ class h extends(r = Chunk73800.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "_mediaBar", o.createRef()), _(this, "_hoverTimeout", true), _(this, "state", {
+    super(...e), _(this, "_mediaBar", a.createRef()), _(this, "_hoverTimeout", true), _(this, "state", {
       hovered: false,
       focused: false,
       dragging: false
@@ -134,7 +134,7 @@ class h extends(r = Chunk73800.PureComponent) {
         value: n,
         maxValue: r,
         onValueChange: i
-      } = this.props, o = .05 * (r - t);
+      } = this.props, a = .05 * (r - t);
       switch (e.key) {
         case "ArrowUp":
           if (e.stopPropagation(), e.preventDefault(), !this.state.focused) {
@@ -143,7 +143,7 @@ class h extends(r = Chunk73800.PureComponent) {
             });
             break
           }
-          null == i || i(Math.min(r, n + o));
+          null == i || i(Math.min(r, n + a));
           break;
         case "ArrowDown":
           if (e.stopPropagation(), e.preventDefault(), !this.state.focused) {
@@ -152,7 +152,7 @@ class h extends(r = Chunk73800.PureComponent) {
             });
             break
           }
-          null == i || i(Math.max(t, n - o));
+          null == i || i(Math.max(t, n - a));
           break;
         case "Escape":
           this.setState({

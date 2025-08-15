@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk144114 = require("./144114.js"),
@@ -19,29 +19,29 @@ var Chunk255367 = require("./255367.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
 let x = () => {
-  let [e, t] = Chunk73800.useState(""), [l, x] = Chunk73800.useState(""), [b, E] = Chunk73800.useState(false), [v, j] = Chunk73800.useState(false), [I, O] = Chunk73800.useState(null), [S, N] = Chunk73800.useState(null), y = (0, Chunk442837.e7)([Chunk541692.Z], () => Chunk541692.Z.getCountryCode()), C = y.code.split(" ")[0], A = async () => {
+  let [e, t] = Chunk73800.useState(""), [l, x] = Chunk73800.useState(""), [b, v] = Chunk73800.useState(false), [E, j] = Chunk73800.useState(false), [I, y] = Chunk73800.useState(null), [O, N] = Chunk73800.useState(null), S = (0, Chunk442837.e7)([Chunk541692.Z], () => Chunk541692.Z.getCountryCode()), C = S.code.split(" ")[0], T = async () => {
     try {
       await Chunk144114.Z.resendCode(module)
     } catch (e) {
       N(module.body.message)
     }
-  }, T = async () => {
-    E(true);
+  }, A = async () => {
+    v(true);
     try {
       let {
         token: t
       } = await Chunk144114.Z.verifyPhone(C + module, Chunk120356);
-      O(null), N(null), j(true), Chunk144114.Z.validatePhoneForSupport(exports)
+      y(null), N(null), j(true), Chunk144114.Z.validatePhoneForSupport(exports)
     } catch (e) {
-      module.body.message ? (O(null), N(module.body.message)) : (O(module.body.phone), N(module.body.code))
+      module.body.message ? (y(null), N(module.body.message)) : (y(module.body.phone), N(module.body.code))
     } finally {
-      E(false)
+      v(false)
     }
   }, Z = (0, Chunk255367.jsxs)(Chunk388905.ZP, {
     children: [(0, Chunk255367.jsx)(Chunk388905.Ee, {
       src: require("./292824.js")
     }), (0, Chunk255367.jsxs)(Chunk388905.Dx, {
-      className: o()(Chunk197571.marginTop20, Chunk149715.flex, Chunk149715.justifyCenter, Chunk149715.alignCenter),
+      className: a()(Chunk197571.marginTop20, Chunk149715.flex, Chunk149715.justifyCenter, Chunk149715.alignCenter),
       children: [Chunk388032.intl.string(Chunk388032.t.WWzQtb), (0, Chunk255367.jsx)(Chunk481060.owK, {
         size: "md",
         color: "currentColor",
@@ -49,7 +49,7 @@ let x = () => {
       })]
     })]
   });
-  return v ? Z : (0, Chunk255367.jsxs)(Chunk388905.ZP, {
+  return E ? Z : (0, Chunk255367.jsxs)(Chunk388905.ZP, {
     children: [(0, Chunk255367.jsx)(Chunk388905.Dx, {
       children: Chunk388032.intl.string(Chunk388032.t.o4JNrK)
     }), (0, Chunk255367.jsx)(Chunk388905.DK, {
@@ -59,7 +59,7 @@ let x = () => {
       className: Chunk197571.marginTop20,
       children: [(0, Chunk255367.jsx)(Chunk952802.Z, {
         label: Chunk388032.intl.string(Chunk388032.t.eJnn09),
-        alpha2: y.alpha2,
+        alpha2: S.alpha2,
         countryCode: C,
         value: module,
         autoComplete: "off",
@@ -73,15 +73,15 @@ let x = () => {
         value: Chunk120356,
         onChange: x,
         maxLength: Chunk815660.z,
-        error: S
+        error: O
       }), (0, Chunk255367.jsx)(Chunk388905.zx, {
         size: Chunk388905.zx.Sizes.SMALL,
         look: Chunk388905.zx.Looks.LINK,
-        onClick: A,
+        onClick: T,
         children: Chunk388032.intl.string(Chunk388032.t["5b60go"])
       }), (0, Chunk255367.jsx)(Chunk388905.zx, {
         className: Chunk197571.marginTop20,
-        onClick: T,
+        onClick: A,
         submitting: b,
         children: Chunk388032.intl.string(Chunk388032.t.i4jeWV)
       })]

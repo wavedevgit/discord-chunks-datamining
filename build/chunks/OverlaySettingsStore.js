@@ -89,7 +89,7 @@ class y extends(r = Chunk442837.ZP.PersistedStore) {
     let n = h();
     m = _(d({}, n, null != e ? e : {}), {
       notificationSettings: new Set(null != (t = null == e ? true : e.notificationSettings) ? t : n.notificationSettings)
-    }), this.waitFor(a.default)
+    }), this.waitFor(o.default)
   }
   getState() {
     return m
@@ -107,8 +107,8 @@ class y extends(r = Chunk442837.ZP.PersistedStore) {
 }
 u(y, "displayName", "OverlaySettingsStore"), u(y, "persistKey", "OverlaySettingsStore"), u(y, "migrations", [e => {
   var t;
-  let n = a.default.getTextChatNotificationMode() === c.Ypu.DISABLED,
-    r = false === a.default.showInviteNotification;
+  let n = o.default.getTextChatNotificationMode() === c.Ypu.DISABLED,
+    r = false === o.default.showInviteNotification;
   return _(d({}, e), {
     notificationSettings: new Set([n ? l.OverlayNotificationDisabledSetting.TEXT_CHAT : true, r ? l.OverlayNotificationDisabledSetting.GAME_ACTIVITY : true, ...Array.from(null != (t = e.notificationSettings) ? t : [])].filter(s.lm))
   })

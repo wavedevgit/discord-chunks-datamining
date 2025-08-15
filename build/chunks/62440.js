@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 62440, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 62440, original params: e,t,n (module,exports,require) **/
 module.exports = {
   embedCard: "embedCard__44c9a",
   compact: "compact__44c9a",

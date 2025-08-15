@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 342526, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 342526, original params: e,t,n (module,exports,require) **/
 module.exports = {
   ephemeralMessage: "ephemeralMessage__124d2",
   userAppsBetaContent: "userAppsBetaContent__124d2",

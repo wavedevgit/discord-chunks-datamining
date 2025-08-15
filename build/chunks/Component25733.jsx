@@ -53,13 +53,13 @@ let f = {
   openDmSettingsUpsellModal(e) {
     let t = i.K.get(s.G),
       l = Date.now();
-    null == t || l - t > s.k ? (i.K.set(s.G, l), (0, o.ZDy)(async () => {
+    null == t || l - t > s.k ? (i.K.set(s.G, l), (0, a.ZDy)(async () => {
       let {
         default: t
       } = await n.e("35489").then(n.bind(n, 582712));
       return n => (0, r.jsx)(t, d(c({}, n), {
         guildId: e
       }))
-    })) : (0, a.L)(a.Q.SUPPRESSED_BY_COOLDOWN, e)
+    })) : (0, o.L)(o.Q.SUPPRESSED_BY_COOLDOWN, e)
   }
 }

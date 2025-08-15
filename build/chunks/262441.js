@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 262441, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 93886 **/
+/** chunk id: 262441, original params: e,t,a (module,exports,require) **/
 module.exports = {
   cell: "cell_f70307",
   iconContainer: "iconContainer_f70307",
@@ -8,5 +7,6 @@ module.exports = {
   textContainer: "textContainer_f70307",
   number: "number_f70307",
   cellGroup: "cellGroup_f70307",
-  content: "content_f70307"
+  content: "content_f70307",
+  completedText: "completedText_f70307"
 }

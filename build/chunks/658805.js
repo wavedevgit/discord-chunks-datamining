@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 658805, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 658805, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => a,
   messagesLoader: () => i
@@ -37,4 +36,4 @@ letChunk125697 = require("./125697.js"), i = r({
   "zh-CN": () => require.e("94859").then(require.t.bind(require, 164606, 19)),
   "zh-TW": () => require.e("46116").then(require.t.bind(require, 520137, 19)),
   "en-US": () => require.e("58651").then(require.bind(require, 109646))
-}, "en-US"), Chunk125697 = require("./125697.js"), a = o(i)
+}, "en-US"), Chunk125697 = require("./125697.js"), a = l(i)

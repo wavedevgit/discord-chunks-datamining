@@ -1,14 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 706950, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 706950, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk682146 = require("./682146.js");
-module.exports = function(e) {
-  var t = e.getSelection();
-  if (!t.rangeCount) return null;
-  var n = r(t.getRangeAt(0)),
-    i = n.top,
-    o = n.right,
-    a = n.bottom,
-    s = n.left;
-  return 0 === i && 0 === o && 0 === a && 0 === s ? null : n
+module.exports = function(t) {
+  var e = t.getSelection();
+  if (!e.rangeCount) return null;
+  var r = n(e.getRangeAt(0)),
+    i = r.top,
+    o = r.right,
+    a = r.bottom,
+    u = r.left;
+  return 0 === i && 0 === o && 0 === a && 0 === u ? null : r
 }

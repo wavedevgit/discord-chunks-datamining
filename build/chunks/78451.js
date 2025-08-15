@@ -1,9 +1,10 @@
-/** Chunk was on 77512 **/
+/** Chunk was on 81498 **/
 /** chunk id: 78451, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  IF: () => a,
-  LJ: () => c,
-  MF: () => u,
+  IF: () => u,
+  LJ: () => a,
+  MF: () => c,
   c7: () => d
 });
 var Chunk524437 = require("./524437.js"),
@@ -13,24 +14,24 @@ var Chunk524437 = require("./524437.js"),
 require("./973005.js");
 var Chunk388032 = require("./388032.jsx");
 
-function c(e) {
+function a(e) {
   return e.map(e => ({
     title: e.name,
     description: e.desc,
     highlightColor: function(e) {
       switch (e) {
-        case (0, i.Fw)("PRIMARY_400"):
-          return l.q.ACCENT;
-        case (0, i.Fw)("GREEN_360"):
-          return l.q.GREEN;
-        case (0, i.Fw)("YELLOW_360"):
-          return l.q.YELLOW;
-        case (0, i.Fw)("ORANGE_345"):
-          return l.q.ORANGE;
-        case (0, i.Fw)("RED_400"):
-          return l.q.RED;
+        case (0, r.Fw)("PRIMARY_400"):
+          return s.q.ACCENT;
+        case (0, r.Fw)("GREEN_360"):
+          return s.q.GREEN;
+        case (0, r.Fw)("YELLOW_360"):
+          return s.q.YELLOW;
+        case (0, r.Fw)("ORANGE_345"):
+          return s.q.ORANGE;
+        case (0, r.Fw)("RED_400"):
+          return s.q.RED;
         default:
-          return l.q.NONE
+          return s.q.NONE
       }
     }(e.color),
     value: e.value,
@@ -38,7 +39,7 @@ function c(e) {
   }))
 }
 
-function a() {
+function u() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
     t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   return [{
@@ -74,7 +75,7 @@ function a() {
   }]
 }
 
-function u() {
+function c() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   return [{
     name: Chunk388032.intl.string(Chunk388032.t.iHuPEx),

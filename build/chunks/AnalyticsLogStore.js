@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 120816, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => v
 }), require("./539854.js"), require("./388685.js");
 var n, r, Chunk772848 = require("./772848.js"),
   Chunk756647 = require("./756647.js"),
@@ -36,7 +36,7 @@ class b extends(n = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : b[r] = "AnalyticsLogStore";
-let f = new b(Chunk570140.Z, {
+let v = new b(Chunk570140.Z, {
   TRACK: function(e) {
     let {
       event: t,

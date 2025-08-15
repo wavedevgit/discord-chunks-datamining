@@ -1,5 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 595173, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 31978 **/
+/** chunk id: 595173, original params: e,t,n (module,exports,require) **/
 var r = {
   "./2017-11-16.mp4": "221825",
   "./channel-following.png": "247815",
@@ -21,7 +21,7 @@ var r = {
   "./store.jpg": "926213"
 };
 
-function i(e) {
+function l(e) {
   return n(o(e))
 }
 
@@ -32,6 +32,6 @@ function o(e) {
   }
   return r[e]
 }
-i.keys = function() {
+l.keys = function() {
   return Object.keys(r)
-}, i.resolve = o, module.exports = i, i.id = 595173
+}, l.resolve = o, module.exports = l, l.id = 595173

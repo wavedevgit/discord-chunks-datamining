@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 232495, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 232495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  k: () => f
+  k: () => p
 }), require("./704826.js"), require("./35282.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -29,57 +28,57 @@ let u = () => (0, Chunk255367.jsx)(Chunk255367.Fragment, {
       })
     })
   },
-  f = e => {
+  p = e => {
     var t, n;
     let i = null != (t = ({
       VOICE_CONVERSATIONS: {
         title: (0, r.jsx)("div", {
           className: c.voiceChannelsTitle,
-          children: l.intl.string(l.t.w5HAlp)
+          children: s.intl.string(s.t.w5HAlp)
         }),
-        body: l.intl.string(l.t.Ww4hho)
+        body: s.intl.string(s.t.Ww4hho)
       },
       WRITING_MESSAGES: {
         title: (0, r.jsx)("div", {
           className: c.writingMessagesTitle,
-          children: l.intl.string(l.t.nkP0l5)
+          children: s.intl.string(s.t.nkP0l5)
         }),
         body: (0, r.jsx)(d, {})
       },
       ORGANIZE_BY_TOPIC: {
         title: (0, r.jsx)("div", {
           className: c.channelsTitle,
-          children: l.intl.string(l.t["j/5+IS"])
+          children: s.intl.string(s.t["j/5+IS"])
         }),
-        body: l.intl.string(l.t.mufH2N)
+        body: s.intl.string(s.t.mufH2N)
       },
       WHOS_ONLINE: {
-        title: l.intl.string(l.t.l2nSoK),
-        body: l.intl.format(l.t.y6tbBA, {})
+        title: s.intl.string(s.t.l2nSoK),
+        body: s.intl.format(s.t.y6tbBA, {})
       },
       INSTANT_INVITE: {
-        title: l.intl.string(l.t.XcehY2),
+        title: s.intl.string(s.t.XcehY2),
         body: (0, r.jsx)(u, {})
       },
       SERVER_SETTINGS: {
-        title: l.intl.string(l.t.wc8wi4),
-        body: l.intl.format(l.t.mIfDhY, {})
+        title: s.intl.string(s.t.wc8wi4),
+        body: s.intl.format(s.t.mIfDhY, {})
       },
       DIRECT_MESSAGES: {
-        title: l.intl.string(l.t["V07x5+"]),
-        body: l.intl.format(l.t.GEBBe3, {})
+        title: s.intl.string(s.t["V07x5+"]),
+        body: s.intl.format(s.t.GEBBe3, {})
       },
       CREATE_MORE_SERVERS: {
-        title: l.intl.string(l.t["50FORk"]),
-        body: l.intl.format(l.t.zVL4qa, {})
+        title: s.intl.string(s.t["50FORk"]),
+        body: s.intl.format(s.t.zVL4qa, {})
       },
       CREATE_FIRST_SERVER: {
-        title: l.intl.string(l.t.CtOX9f),
-        body: l.intl.format(l.t.TflqTU, {})
+        title: s.intl.string(s.t.CtOX9f),
+        body: s.intl.format(s.t.TflqTU, {})
       },
       FRIENDS_LIST: {
-        title: l.intl.string(l.t.Fnk9Ly),
-        body: l.intl.format(l.t.NTq0AQ, {})
+        title: s.intl.string(s.t.Fnk9Ly),
+        body: s.intl.format(s.t.NTq0AQ, {})
       }
     })[e.replace(/-/g, "_").toUpperCase()]) ? t : {};
     return {

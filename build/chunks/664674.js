@@ -6,13 +6,13 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk381338 = require("./381338.js"),
   Chunk99815 = require("./99815.js");
-let o = new Set([Chunk99815.E.LOL_MOST_PLAYED_CHAMPION_ID]);
+let a = new Set([Chunk99815.E.LOL_MOST_PLAYED_CHAMPION_ID]);
 
-function a(e) {
+function o(e) {
   return e.reduce((e, t) => (e[t] = {
     id: t,
     aggregation_type: 1,
-    selectable_for_competition: !o.has(t)
+    selectable_for_competition: !a.has(t)
   }, e), {})
 }
 
@@ -40,7 +40,7 @@ let l = Object.values(Chunk99815.E),
       sort_by_statistic_id: Chunk99815.E.LOL_TOTAL_KILLS,
       sort_desc: true,
       interval_type: Chunk381338.q.WEEKLY,
-      statistics: a(l),
+      statistics: o(l),
       application_id: "1402418696126992445"
     },
     users: [s("213097507503210496", l), s("1011326743526785086", l), s("107562988810027008", l), s("1088605061631983768", l), s("1073722616684232897", l)]

@@ -22,7 +22,7 @@ function c(e, t, n) {
 let u = ["500428425362931713", "451550535720501248", "471376328319303681", "466696214818193408"];
 class d extends Chunk81825.Z {
   static createFromServer(e) {
-    var t, n, r, o, a, l, c;
+    var t, n, r, a, o, l, c;
     let {
       price: u
     } = e;
@@ -58,9 +58,9 @@ class d extends Chunk81825.Z {
       premium: null != (r = e.premium) && r,
       showAgeGate: e.show_age_gate || false,
       restricted: e.restricted || false,
-      slug: null != (o = e.slug) ? o : "",
+      slug: null != (a = e.slug) ? a : "",
       exclusive: e.exclusive || false,
-      locales: null != (a = e.locales) ? a : ["en-US"],
+      locales: null != (o = e.locales) ? o : ["en-US"],
       flags: e.flags,
       externalPurchaseUrl: e.external_purchase_url,
       deleted: null != (l = e.deleted) && l,

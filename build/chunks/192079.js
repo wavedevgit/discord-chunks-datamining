@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 192079, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 92522 **/
+/** chunk id: 192079, original params: n,e,t (module,exports,require) **/
 require.d(exports, {
-  ER: () => d,
-  kk: () => f,
-  s$: () => _
+  ER: () => s,
+  kk: () => _,
+  s$: () => E
 }), require("./388685.js"), require("./392711.js");
 var Chunk19780 = require("./19780.js"),
   Chunk5192 = require("./5192.js"),
@@ -15,40 +14,40 @@ var Chunk19780 = require("./19780.js"),
   Chunk71080 = require("./71080.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e, t, n, r) {
-  let o = t[0],
-    a = i.ZP.getName(e, n, o),
-    s = null != r ? r : t.length;
-  return 1 === s && null != o ? a : null == o ? u.intl.formatToPlainString(u.t.chmM9P, {
-    count: s
-  }) : u.intl.formatToPlainString(u.t.GhkJ29, {
-    name: a,
-    count: s - 1
+function s(n, e, t, i) {
+  let l = e[0],
+    u = r.ZP.getName(n, t, l),
+    a = null != i ? i : e.length;
+  return 1 === a && null != l ? u : null == l ? d.intl.formatToPlainString(d.t.chmM9P, {
+    count: a
+  }) : d.intl.formatToPlainString(d.t.GhkJ29, {
+    name: u,
+    count: a - 1
   })
 }
 
-function f(e, t) {
-  switch (e) {
+function _(n, e) {
+  switch (n) {
     case c.aC.OWNER:
-      return u.intl.string(u.t.icuNBA);
+      return d.intl.string(d.t.icuNBA);
     case c.aC.ADMINISTRATOR:
-      return u.intl.string(u.t.eTmN5e);
+      return d.intl.string(d.t.eTmN5e);
     case c.aC.MEMBER:
     case c.aC.ROLE:
-      return t ? u.intl.string(u.t.Hw3XW1) : u.intl.string(u.t.YieyPj);
+      return e ? d.intl.string(d.t.Hw3XW1) : d.intl.string(d.t.YieyPj);
     case c.aC.EMPTY_STATE:
   }
   return null
 }
 
-function _(e) {
-  let t = a.Z.getStageInstanceByChannel(e.id);
+function E(n) {
+  let e = u.Z.getStageInstanceByChannel(n.id);
   return {
-    channel_id: e.id,
-    guild_id: e.guild_id,
-    topic: null == t ? true : t.topic,
-    media_session_id: r.Z.getMediaSessionId(),
-    request_to_speak_state: o.Uu(l.Plq.REQUEST_TO_SPEAK, e) ? s.BM.EVERYONE : s.BM.NO_ONE,
-    stage_instance_id: null == t ? true : t.id
+    channel_id: n.id,
+    guild_id: n.guild_id,
+    topic: null == e ? true : e.topic,
+    media_session_id: i.Z.getMediaSessionId(),
+    request_to_speak_state: l.Uu(o.Plq.REQUEST_TO_SPEAK, n) ? a.BM.EVERYONE : a.BM.NO_ONE,
+    stage_instance_id: null == e ? true : e.id
   }
 }

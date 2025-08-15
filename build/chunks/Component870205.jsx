@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 870205, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 870205, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => d
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -13,66 +12,26 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk54701 = require("./54701.js");
 
-function d(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function f(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      d(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function _(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let h = 20;
-
-function m(e) {
+function d(e) {
   let t, {
       sortOrder: n,
       onSortOptionClick: d
     } = e,
-    _ = i.useRef(null);
+    p = i.useRef(null);
   switch (n) {
-    case l.bS.POPULAR:
+    case s.bS.POPULAR:
       t = c.intl.string(c.t.SzxiqK);
       break;
-    case l.bS.ALPHABETICAL:
+    case s.bS.ALPHABETICAL:
       t = c.intl.string(c.t.m8xstr)
   }
-  return (0, r.jsx)(a.yRy, {
-    targetElementRef: _,
+  return (0, l.jsx)(a.yRy, {
+    targetElementRef: p,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(s.Z, {
+      return (0, l.jsx)(o.Z, {
         sortOrder: n,
         onSortOptionClick: d,
         closePopout: t
@@ -81,34 +40,61 @@ function m(e) {
     position: "bottom",
     align: "left",
     children: (e, n) => {
+      var i, o;
       let {
-        isShown: i
+        isShown: s
       } = n;
-      return (0, r.jsxs)(o.zx, p(f({}, e), {
-        buttonRef: _,
-        size: o.zx.Sizes.MIN,
-        color: o.zx.Colors.CUSTOM,
+      return (0, l.jsxs)(r.zx, (i = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            l = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), l.forEach(function(t) {
+            var l;
+            l = n[t], t in e ? Object.defineProperty(e, t, {
+              value: l,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = l
+          })
+        }
+        return e
+      }({}, e), o = o = {
+        buttonRef: p,
+        size: r.zx.Sizes.MIN,
+        color: r.zx.Colors.CUSTOM,
         className: u.sortDropdown,
         innerClassName: u.sortDropdownInner,
         "aria-label": c.intl.string(c.t.yeYaHR),
-        children: [(0, r.jsx)(a.uVW, {
+        children: [(0, l.jsx)(a.uVW, {
           size: "xs",
           color: "currentColor",
           className: u.sortIconMargin
-        }), (0, r.jsx)(a.Text, {
+        }), (0, l.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-default",
           children: t
-        }), i ? (0, r.jsx)(a.u04, {
+        }), s ? (0, l.jsx)(a.u04, {
           size: "custom",
           color: "currentColor",
-          width: h
-        }) : (0, r.jsx)(a.CJ0, {
+          width: 20
+        }) : (0, l.jsx)(a.CJ0, {
           size: "custom",
           color: "currentColor",
-          width: h
+          width: 20
         })]
-      }))
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var l = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, l)
+        }
+        return n
+      })(Object(o)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
+      }), i))
     }
   })
 }

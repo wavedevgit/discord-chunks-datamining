@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => L
 });
 var r, Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -60,13 +60,13 @@ function v(e) {
   let {
     userSettingsProto: t
   } = e;
-  null != t && (E.proto = t, o()("string" != typeof E.proto, "UserSettingsProto cannot be a string"));
+  null != t && (E.proto = t, a()("string" != typeof E.proto, "UserSettingsProto cannot be a string"));
   let {
     proto: n,
     isDirty: r,
     cleanupFuncs: i
   } = (0, p.xt)(E.proto, _.Z[h.yP.PRELOADED_USER_SETTINGS]);
-  r && A(E), E.proto = n, o()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = true, Object.values(y).forEach(e => {
+  r && A(E), E.proto = n, a()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = true, Object.values(y).forEach(e => {
     e.lazyLoaded && (e.editInfo.loaded = false, e.editInfo.loading = false)
   }), S()
 }
@@ -98,7 +98,7 @@ function N(e) {
   let {
     userSettingsProto: t
   } = e;
-  E.proto = (0, p.ac)(t), o()("string" != typeof E.proto, "UserSettingsProto cannot be a string")
+  E.proto = (0, p.ac)(t), a()("string" != typeof E.proto, "UserSettingsProto cannot be a string")
 }
 
 function C(e) {
@@ -109,11 +109,11 @@ function C(e) {
     },
     partial: r,
     resetEditInfo: i,
-    local: a
+    local: o
   } = e;
-  O = !a;
+  O = !o;
   let s = y[n];
-  i && A(s), r ? (s.proto = (0, p.re)(s.ProtoClass, s.proto, t), o()("string" != typeof s.proto, "UserSettingsProto cannot be a string")) : (s.proto = t, o()("string" != typeof s.proto, "UserSettingsProto cannot be a string"), s.editInfo.loaded = true, s.editInfo.loading = false)
+  i && A(s), r ? (s.proto = (0, p.re)(s.ProtoClass, s.proto, t), a()("string" != typeof s.proto, "UserSettingsProto cannot be a string")) : (s.proto = t, a()("string" != typeof s.proto, "UserSettingsProto cannot be a string"), s.editInfo.loaded = true, s.editInfo.loading = false)
 }
 
 function R(e) {
@@ -123,7 +123,7 @@ function R(e) {
       changes: n
     }
   } = e;
-  o()(!__OVERLAY__, "this cannot run in the overlay");
+  a()(!__OVERLAY__, "this cannot run in the overlay");
   let r = y[t];
   return r.editInfo = g({}, r.editInfo, n), false
 }
@@ -138,16 +138,16 @@ function P(e) {
 function w(e) {
   null != e && s().forEach(y, (t, n) => {
     var r, i;
-    let a = e[Number(n)];
-    if (null == a) return;
-    let s = null != (r = null == a ? true : a.proto) ? r : "",
+    let o = e[Number(n)];
+    if (null == o) return;
+    let s = null != (r = null == o ? true : o.proto) ? r : "",
       l = (0, p.d5)(t.ProtoClass, s);
     if (null == l) return;
-    t.proto = l, o()("string" != typeof t.proto, "UserSettingsProto cannot be a string");
-    let c = null != (i = null == a ? true : a.protoToSave) ? i : null;
-    if (null == c || null == a.offlineEditDataVersion) return;
+    t.proto = l, a()("string" != typeof t.proto, "UserSettingsProto cannot be a string");
+    let c = null != (i = null == o ? true : o.protoToSave) ? i : null;
+    if (null == c || null == o.offlineEditDataVersion) return;
     let u = (0, p.d5)(t.ProtoClass, c);
-    null != u && (t.editInfo.protoToSave = u, t.editInfo.offlineEditDataVersion = a.offlineEditDataVersion)
+    null != u && (t.editInfo.protoToSave = u, t.editInfo.offlineEditDataVersion = o.offlineEditDataVersion)
   })
 }
 class D extends(r = Chunk442837.ZP.PersistedStore) {
@@ -186,12 +186,12 @@ class D extends(r = Chunk442837.ZP.PersistedStore) {
     return null == exports ? null : exports.map(e => {
       var t, n, r;
       let i = null == (t = e.id) ? true : t.value,
-        o = null == (n = e.color) ? true : n.value;
+        a = null == (n = e.color) ? true : n.value;
       return {
         guildIds: e.guildIds,
         folderId: null == i ? true : Number(i),
         folderName: null == (r = e.name) ? true : r.value,
-        folderColor: null == o ? true : Number(o)
+        folderColor: null == a ? true : Number(a)
       }
     })
   }

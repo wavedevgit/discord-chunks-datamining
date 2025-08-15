@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
@@ -85,7 +85,7 @@ function O() {
 function v(e) {
   let {
     users: t,
-    maxUsers: o,
+    maxUsers: a,
     guildId: s,
     channelId: m,
     className: E,
@@ -103,7 +103,7 @@ function v(e) {
     "aria-label": L,
     "aria-labelledby": x,
     "aria-hidden": M
-  } = e, [j, k] = i.useState(false), U = y(v), G = i.useRef(null), B = t.length - o, Z = B + 1, F = B > 0 && !A && !M, V = () => (0, r.jsx)(c.VqE, {
+  } = e, [k, j] = i.useState(false), U = y(v), G = i.useRef(null), B = t.length - a, V = B + 1, F = B > 0 && !A && !M, Z = () => (0, r.jsx)(c.VqE, {
     className: h.popoutWrapper,
     "aria-label": L,
     "aria-labelledby": x,
@@ -117,30 +117,30 @@ function v(e) {
         disablePopout: "function" == typeof C ? C(e.id) : C,
         onClick: w,
         onPopoutRequestClose: () => {
-          k(false), null == D || D()
+          j(false), null == D || D()
         },
         onContextMenu: t => (0, u.jW)(t, async () => {
           let {
             default: t
-          } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
+          } = await Promise.all([n.e("70274"), n.e("79695"), n.e("69220"), n.e("92522")]).then(n.bind(n, 881351));
           return n => (0, r.jsx)(t, b(g({}, n), {
             user: e,
             guildId: s,
             channelId: m
           }))
         }, {
-          onClose: () => k(false)
+          onClose: () => j(false)
         })
       }, e.id))
     })
   }), H = () => {
-    let e = F ? o - 1 : Math.min(t.length, o),
+    let e = F ? a - 1 : Math.min(t.length, a),
       n = e - 1,
       i = l()(t).take(e).map((e, t) => {
         let i = f.ZP.getNickname(s, m, e),
-          o = null != i ? i : _.ZP.getName(e),
+          a = null != i ? i : _.ZP.getName(e),
           l = t === n && !F,
-          u = a()(h.avatar, U, l && h.isLast),
+          u = o()(h.avatar, U, l && h.isLast),
           d = (0, r.jsx)(c.qEK, {
             src: e.getAvatarURL(s, 24),
             size: v,
@@ -150,14 +150,14 @@ function v(e) {
           className: u,
           children: N ? (0, r.jsx)("span", {
             role: "img",
-            "aria-label": o,
+            "aria-label": a,
             children: d
           }) : (0, r.jsx)(c.ua7, {
-            text: o,
+            text: a,
             "aria-label": false,
             children: e => (0, r.jsx)("span", b(g({}, e), {
               role: "img",
-              "aria-label": o,
+              "aria-label": a,
               children: d
             }))
           })
@@ -172,24 +172,24 @@ function v(e) {
     let e = null != I ? I : O(v);
     return (0, r.jsx)(c.yRy, {
       targetElementRef: G,
-      renderPopout: V,
-      shouldShow: j,
+      renderPopout: Z,
+      shouldShow: k,
       position: "bottom",
-      onRequestClose: () => k(false),
+      onRequestClose: () => j(false),
       children: t => (0, r.jsx)(c.P3F, b(g({}, t), {
         innerRef: G,
-        className: a()(h.overflow, U, S),
+        className: o()(h.overflow, U, S),
         onFocus: P,
         onClick: e => {
-          null == R || R(e), k(true)
+          null == R || R(e), j(true)
         },
         "aria-label": p.intl.formatToPlainString(p.t.R8Z8Qk, {
-          count: Z
+          count: V
         }),
         children: (0, r.jsx)(c.Text, {
           variant: e,
           color: T,
-          children: Z > 99 ? ">99" : "+".concat(Z)
+          children: V > 99 ? ">99" : "+".concat(V)
         })
       }))
     }, "overflow")
@@ -198,7 +198,7 @@ function v(e) {
     role: "group",
     "aria-label": L,
     "aria-labelledby": x,
-    className: a()(E, h.avatars),
+    className: o()(E, h.avatars),
     "aria-hidden": M,
     children: [H(), Y()]
   })

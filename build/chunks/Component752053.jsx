@@ -32,23 +32,23 @@ let p = e => {
     className: m,
     children: [(0, r.jsx)("img", {
       className: u.__invalid_loadIssueImg,
-      src: (0, o.wj)(p) ? d : f,
+      src: (0, a.wj)(p) ? d : f,
       alt: ""
-    }), (0, r.jsx)(a.X6q, {
+    }), (0, r.jsx)(o.X6q, {
       className: u.heading1,
       variant: "heading-xl/semibold",
       children: c.intl.string(c.t["i5SQ7+"])
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       className: u.description,
       variant: "text-md/normal",
       children: g
-    }), h && null != _ && (0, r.jsx)(a.Text, {
+    }), h && null != _ && (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
       children: "staff-only debug: " + _
     }), (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: u.reload,
-      children: (0, r.jsx)(a.zxk, {
+      children: (0, r.jsx)(o.zxk, {
         variant: "primary",
         text: c.intl.string(c.t["+hivLS"]),
         onClick: t

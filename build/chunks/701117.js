@@ -13,7 +13,7 @@ try {
   delete window.sessionStorage
 } catch (e) {}
 
-function o() {
+function a() {
   let e = "test";
   try {
     return r.setItem(module, module), r.removeItem(module), true
@@ -21,7 +21,7 @@ function o() {
     returnfalse
   }
 }
-class a {
+class o {
   get(e, t) {
     let n = r.getItem(e);
     if (null != n) try {
@@ -41,4 +41,4 @@ class a {
     r.clear()
   }
 }
-let s = o() ? new a : new Chunk37082.R
+let s = a() ? new o : new Chunk37082.R

@@ -1,7 +1,7 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 248930, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => h
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -21,13 +21,13 @@ var Chunk255367 = require("./255367.js"),
   Chunk228168 = require("./228168.js"),
   Chunk704543 = require("./704543.js");
 
-function x(e) {
+function h(e) {
   let {
     user: t,
     entry: n,
     profileGuildId: l,
-    className: x,
-    onClose: h,
+    className: h,
+    onClose: x,
     hideContextMenu: v = false
   } = e, _ = i.useRef(null), {
     analyticsLocations: I
@@ -70,14 +70,14 @@ function x(e) {
             display: "recent",
             entry: n,
             user: t,
-            onClose: h,
+            onClose: x,
             children: e
           }),
           children: (0, r.jsx)(b.Z, {
             entry: n,
             user: t,
-            onClose: h,
-            className: o()(x, {
+            onClose: x,
+            className: o()(h, {
               [O.hoisted]: E === y.n_.ACTIVITY && T === n.id
             })
           })

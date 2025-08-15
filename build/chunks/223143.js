@@ -82,8 +82,8 @@ function h(e, t) {
     {
       isFetching: r,
       categories: i,
-      fetchCategoriesError: o,
-      refreshCategories: a
+      fetchCategoriesError: a,
+      refreshCategories: o
     } = (0, l.Z)({
       paymentGateway: n,
       noOp: null == e ? true : e.noOp,
@@ -105,10 +105,10 @@ function h(e, t) {
     isClaiming: s,
     categories: i,
     purchases: f,
-    fetchCategoriesError: o,
+    fetchCategoriesError: a,
     fetchPurchasesError: c,
     claimError: u,
-    refreshCategories: a,
+    refreshCategories: o,
     hasPreviouslyFetched: _
   }
 }

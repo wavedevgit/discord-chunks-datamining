@@ -2,24 +2,24 @@
 /** chunk id: 528567, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => a,
+  C: () => o,
   s: () => s
 });
 var Chunk939639 = require("./939639.js"),
   Chunk99815 = require("./99815.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function o(e) {
   var t;
   return null != (t = ({
-    [i.E.LOL_TOTAL_KILLS]: o.intl.string(o.t.aIbY2N),
-    [i.E.LOL_TOTAL_DEATHS]: o.intl.string(o.t.Jec90d),
-    [i.E.LOL_TOTAL_ASSISTS]: o.intl.string(o.t["8+lHWV"]),
-    [i.E.LOL_TOTAL_DAMAGE_DEALT]: o.intl.string(o.t["XEmO+P"]),
-    [i.E.LOL_TOTAL_DAMAGE_TAKEN]: o.intl.string(o.t["TcQ7//"]),
-    [i.E.LOL_TOTAL_WINS]: o.intl.string(o.t["/QfLjI"]),
-    [i.E.LOL_MAX_CREEP_SCORE]: o.intl.string(o.t.M5pp7e)
-  })[e]) ? t : o.intl.string(o.t["IraB/v"])
+    [i.E.LOL_TOTAL_KILLS]: a.intl.string(a.t.aIbY2N),
+    [i.E.LOL_TOTAL_DEATHS]: a.intl.string(a.t.Jec90d),
+    [i.E.LOL_TOTAL_ASSISTS]: a.intl.string(a.t["8+lHWV"]),
+    [i.E.LOL_TOTAL_DAMAGE_DEALT]: a.intl.string(a.t["XEmO+P"]),
+    [i.E.LOL_TOTAL_DAMAGE_TAKEN]: a.intl.string(a.t["TcQ7//"]),
+    [i.E.LOL_TOTAL_WINS]: a.intl.string(a.t["/QfLjI"]),
+    [i.E.LOL_MAX_CREEP_SCORE]: a.intl.string(a.t.M5pp7e)
+  })[e]) ? t : a.intl.string(a.t["IraB/v"])
 }
 
 function s(e) {
@@ -27,17 +27,17 @@ function s(e) {
     statisticId: t,
     sortDesc: n,
     aggregationType: i
-  } = e, s = a(t);
+  } = e, s = o(t);
   if (i === r.k.MAX)
-    if (n) return o.intl.formatToPlainString(o.t.nJYOFx, {
+    if (n) return a.intl.formatToPlainString(a.t.nJYOFx, {
       statisticName: s
     });
-    else return o.intl.formatToPlainString(o.t.SYKIbW, {
+    else return a.intl.formatToPlainString(a.t.SYKIbW, {
       statisticName: s
     });
-  return n ? o.intl.formatToPlainString(o.t.M9sOp6, {
+  return n ? a.intl.formatToPlainString(a.t.M9sOp6, {
     statisticName: s
-  }) : o.intl.formatToPlainString(o.t.USfwd3, {
+  }) : a.intl.formatToPlainString(a.t.USfwd3, {
     statisticName: s
   })
 }

@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 686380, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 686380, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => B
+  Z: () => M
 }), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
-  l = require.n(Chunk913527),
+  s = require.n(Chunk913527),
   Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
@@ -37,7 +36,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk754761 = require("./754761.js"),
   Chunk295234 = require("./295234.js");
 
-function M(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,39 +44,12 @@ function M(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-
-function j(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      M(e, t, n[t])
-    })
-  }
-  return e
-}
-let k = "???",
-  U = e => {
-    let {
-      analyticsLocations: t
-    } = e;
-    y.default.track(P.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
-      location_stack: t
-    }), (0, f.ZDy)(async () => {
-      let {
-        default: e
-      } = await Promise.all([n.e("83667"), n.e("4048")]).then(n.bind(n, 656139));
-      return t => (0, r.jsx)(e, j({}, t))
-    })
-  };
-class G extends Chunk73800.Component {
+class D extends Chunk73800.Component {
   getTitleText() {
     let e = Chunk594174.default.getUser(this.trialOffer.user_id),
-      t = null != module ? module.username : k,
+      t = null != module ? module.username : "???",
       n = Chunk594174.default.getUser(this.trialOffer.referrer_id),
-      r = null != require ? require.username : k;
+      r = null != require ? require.username : "???";
     return this.recipientHasNitro && true === this.trialOffer.redeemed_at ? Chunk388032.intl.formatToPlainString(Chunk388032.t.Mptau7, {
       username: exports
     }) : this.offerExpired ? this.isSender ? Chunk388032.intl.string(Chunk388032.t["9SNdf3"]) : Chunk388032.intl.formatToPlainString(Chunk388032.t["H0+MxM"], {
@@ -126,12 +98,12 @@ class G extends Chunk73800.Component {
       trialEndsAt: t
     } = this.props;
     if (true !== module.redeemed_at && !this.isSender && null !== exports) return Chunk388032.intl.formatToPlainString(Chunk388032.t.nP0ivb, {
-      date: (0, Chunk55935.vc)(l()(exports), "LL")
+      date: (0, Chunk55935.vc)(s()(exports), "LL")
     });
     if (this.recipientHasNitro || true === module.expires_at) return null;
-    let n = l()(module.expires_at);
+    let n = s()(module.expires_at);
     return this.offerExpired ? Chunk388032.intl.formatToPlainString(Chunk388032.t.PuSHfX, {
-      date: (0, Chunk55935.vc)(l()(require), "LL")
+      date: (0, Chunk55935.vc)(s()(require), "LL")
     }) : (0, Chunk93237.F6)(require.valueOf())
   }
   renderMedia() {
@@ -142,55 +114,78 @@ class G extends Chunk73800.Component {
   renderRefreshedDMEmbed(e) {
     let {
       emphasis: t
-    } = e, n = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(N.Z, {
-        subscriptionTier: R.Si.TIER_2,
-        buttonTextOverride: w.intl.string(w.t.O0etsL),
+    } = e, i = (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(S.Z, {
+        subscriptionTier: P.Si.TIER_2,
+        buttonTextOverride: A.intl.string(A.t.O0etsL),
         size: "md",
         variantOverride: "expressive"
-      }), (0, r.jsx)(f.Text, {
+      }), (0, r.jsx)(p.Text, {
         variant: "text-md/medium",
         color: "text-secondary",
         children: this.renderExpirationDate()
       })]
-    }), i = (0, r.jsx)(d.zx, {
+    }), l = (0, r.jsx)(d.zx, {
       disabled: false,
       color: d.zx.Colors.BRAND,
       size: d.zx.Sizes.MEDIUM,
-      onClick: () => U({
+      onClick: () => (e => {
+        let {
+          analyticsLocations: t
+        } = e;
+        C.default.track(N.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+          location_stack: t
+        }), (0, p.ZDy)(async () => {
+          let {
+            default: e
+          } = await Promise.all([n.e("83667"), n.e("84533"), n.e("83773")]).then(n.bind(n, 656139));
+          return t => (0, r.jsx)(e, function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                L(e, t, n[t])
+              })
+            }
+            return e
+          }({}, t))
+        })
+      })({
         analyticsLocations: []
       }),
-      children: w.intl.string(w.t.Lm2nFR)
-    }), o = this.isSender ? i : n, a = "SOCIAL" === t ? (0, r.jsx)(f.Eep, {
-      src: x.Z,
+      children: A.intl.string(A.t.Lm2nFR)
+    }), a = this.isSender ? l : i, o = "SOCIAL" === t ? (0, r.jsx)(p.Eep, {
+      src: R.Z,
       height: 84,
       width: 144,
-      className: D.imgDMEmbedXP
-    }) : (0, r.jsx)(f.Eep, {
-      src: L.Z,
+      className: w.imgDMEmbedXP
+    }) : (0, r.jsx)(p.Eep, {
+      src: Z.Z,
       height: 137,
       width: 144,
-      className: D.imgDMEmbedXP
+      className: w.imgDMEmbedXP
     });
-    return (0, r.jsxs)(m.Z, {
+    return (0, r.jsxs)(g.Z, {
       compact: false,
-      contentClassName: D.containerDMEmbedXP,
-      children: [a, (0, r.jsxs)("div", {
-        className: D.contentDMEmbedXP,
+      contentClassName: w.containerDMEmbedXP,
+      children: [o, (0, r.jsxs)("div", {
+        className: w.contentDMEmbedXP,
         children: [(0, r.jsxs)("div", {
-          className: D.contentTextDMEmbedXP,
-          children: [(0, r.jsx)(f.X6q, {
+          className: w.contentTextDMEmbedXP,
+          children: [(0, r.jsx)(p.X6q, {
             variant: "heading-md/semibold",
             color: "header-primary",
             children: this.getTitleText()
-          }), (0, r.jsx)(f.Text, {
+          }), (0, r.jsx)(p.Text, {
             variant: "text-md/medium",
             color: "text-secondary",
             children: this.getBodyText()
           })]
         }), (0, r.jsx)("div", {
-          className: D.buttonContainerDMEmbedXP,
-          children: o
+          className: w.buttonContainerDMEmbedXP,
+          children: a
         })]
       })]
     })
@@ -228,41 +223,41 @@ class G extends Chunk73800.Component {
     }
   }
   constructor(e) {
-    super(e), M(this, "trialOffer", true), M(this, "currentUser", true), M(this, "recipientHasNitro", true), M(this, "trialEndsAt", true), M(this, "analyticsLocations", true), M(this, "offerExpired", true), M(this, "isSender", true), M(this, "dmRefreshXPCohort", true), this.trialOffer = e.trialOffer, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.dmRefreshXPCohort = e.dmRefreshXPCohort, this.offerExpired = (0, C.B)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
+    super(e), L(this, "trialOffer", true), L(this, "currentUser", true), L(this, "recipientHasNitro", true), L(this, "trialEndsAt", true), L(this, "analyticsLocations", true), L(this, "offerExpired", true), L(this, "isSender", true), L(this, "dmRefreshXPCohort", true), this.trialOffer = e.trialOffer, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.dmRefreshXPCohort = e.dmRefreshXPCohort, this.offerExpired = (0, T.B)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
   }
 }
 
-function B(e) {
+function M(e) {
   let {
     userTrialOfferId: t,
     canRenderReferralEmbed: n
   } = e, {
     trialOffer: i,
-    isResolving: o
-  } = (0, u.cj)([T.Z], () => ({
-    trialOffer: n ? T.Z.getRelevantUserTrialOffer(t) : null,
-    isResolving: !!n && T.Z.isResolving(t)
-  }), [n, t]), a = E.default.getCurrentUser(), s = (0, u.e7)([E.default], () => null != i && (0, I.I5)(true !== a && i.user_id === a.id ? a : E.default.getUser(i.user_id))), l = (0, u.e7)([b.Z], () => {
+    isResolving: l
+  } = (0, u.cj)([x.Z], () => ({
+    trialOffer: n ? x.Z.getRelevantUserTrialOffer(t) : null,
+    isResolving: !!n && x.Z.isResolving(t)
+  }), [n, t]), a = b.default.getCurrentUser(), o = (0, u.e7)([b.default], () => null != i && (0, y.I5)(true !== a && i.user_id === a.id ? a : b.default.getUser(i.user_id))), s = (0, u.e7)([E.Z], () => {
     var e;
-    return s ? null == (e = b.Z.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
+    return o ? null == (e = E.Z.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
   }), {
     analyticsLocations: d
-  } = (0, h.ZP)(p.Z.SHARE_NITRO_EMBED), f = S.ZP.useExperiment({
+  } = (0, _.ZP)(f.Z.SHARE_NITRO_EMBED), p = j.ZP.useExperiment({
     location: "ConnectedReferralTrialEmbed"
   });
-  return o ? (0, r.jsx)(_.OR, {
+  return l ? (0, r.jsx)(m.OR, {
     isHorizontal: !c.tq
-  }) : n && null != i && true !== a ? (0, r.jsx)(G, {
+  }) : n && null != i && true !== a ? (0, r.jsx)(D, {
     trialOffer: i,
     currentUser: a,
-    recipientHasNitro: s,
-    trialEndsAt: l,
+    recipientHasNitro: o,
+    trialEndsAt: s,
     analyticsLocations: d,
-    dmRefreshXPCohort: f.cohort
+    dmRefreshXPCohort: p.cohort
   }) : (0, r.jsx)("div", {
-    className: D.invalidWrapper,
+    className: w.invalidWrapper,
     children: (0, r.jsx)("div", {
-      className: D.invalid
+      className: w.invalid
     })
   })
 }

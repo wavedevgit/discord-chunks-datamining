@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 748788, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 748788, original params: e,t,n (module,exports,require) **/
 module.exports = {
   activityItemButtonInnerClass: "activityItemButtonInnerClass__8a940",
   activityItem: "activityItem__8a940",

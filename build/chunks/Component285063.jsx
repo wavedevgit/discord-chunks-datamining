@@ -52,12 +52,12 @@ function u(e, t) {
 function d(e) {
   let {
     node: t
-  } = e, n = (0, o.Z)(t);
+  } = e, n = (0, a.Z)(t);
   return (0, r.jsx)(i.ua7, {
     text: t.full,
-    tooltipClassName: a.timestampTooltip,
+    tooltipClassName: o.timestampTooltip,
     children: e => (0, r.jsx)("span", u(l({}, e), {
-      className: a.timestamp,
+      className: o.timestamp,
       children: n
     }))
   })

@@ -1,7 +1,7 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 470134, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -23,7 +23,7 @@ function d(e) {
     }),
     children: [(0, r.jsx)("div", {
       className: u.notice,
-      children: (0, r.jsx)(s.Text, {
+      children: (0, r.jsx)(o.Text, {
         className: u.__invalid_label,
         variant: "text-md/medium",
         color: "header-primary",
@@ -35,18 +35,18 @@ function d(e) {
   })
 }
 
-function h(e) {
-  let [t, n] = i.useState(), [l, a] = i.useState(), [s, u] = i.useState(false), [h, p] = i.useState(false), {
+function p(e) {
+  let [t, n] = i.useState(), [l, a] = i.useState(), [o, u] = i.useState(false), [p, h] = i.useState(false), {
     enabled: f
-  } = (0, o.s1)(e);
+  } = (0, s.s1)(e);
   return i.useEffect(() => {
     f && null != t && null != l ? u(t < l) : u(false)
   }, [f, t, l]), {
-    horizontalScrollNotice: i.useMemo(() => s ? (0, r.jsx)(d, {
+    horizontalScrollNotice: i.useMemo(() => o ? (0, r.jsx)(d, {
       text: c.intl.string(c.t.RfAAHx),
-      hasScrolled: h
-    }) : null, [s, h]),
-    handleScroll: () => p(true),
+      hasScrolled: p
+    }) : null, [o, p]),
+    handleScroll: () => h(true),
     handleSetScrollerRef: e => {
       var t;
       return a(null == e || null == (t = e.getScrollerState()) ? true : t.scrollWidth)

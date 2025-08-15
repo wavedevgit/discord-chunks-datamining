@@ -8,7 +8,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  l = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk481060 = require("./481060.js"),
@@ -31,7 +31,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk620842 = require("./620842.js"),
   Chunk197571 = require("./197571.js");
 
-function _(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,7 +47,7 @@ function P(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
@@ -120,7 +120,7 @@ class R extends Chunk73800.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "handleRevokeInvite", () => {
+    super(...e), E(this, "handleRevokeInvite", () => {
       let {
         onRevoke: e,
         invite: t
@@ -162,7 +162,7 @@ class S extends Chunk73800.PureComponent {
     return module || null == exports ? (0, Chunk255367.jsx)(Chunk481060.$jN, {
       className: Chunk197571.marginTop20,
       type: Chunk481060.$jN.Type.SPINNING_CIRCLE
-    }) : l().isEmpty(exports) ? this.renderEmpty() : (0, Chunk255367.jsxs)("div", {
+    }) : o().isEmpty(exports) ? this.renderEmpty() : (0, Chunk255367.jsxs)("div", {
       className: Chunk525717.container,
       children: [this.renderHeader(), this.renderInvites()]
     })
@@ -216,7 +216,7 @@ class S extends Chunk73800.PureComponent {
       hideDiscriminators: e,
       hideInviteCodes: t
     } = this.props;
-    return l()(this.state.invites).sortBy(e => {
+    return o()(this.state.invites).sortBy(e => {
       var t;
       return (null != (t = e.inviter.username) ? t : "").toLocaleLowerCase()
     }).map(n => (0, r.jsx)(R, {
@@ -255,14 +255,14 @@ class S extends Chunk73800.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), E(this, "state", {
       loading: true,
       invites: null
-    }), _(this, "handleRevoke", e => {
+    }), E(this, "handleRevoke", e => {
       u.ZP.revokeInvite(e), this.setState({
         invites: this.state.invites.filter(t => t !== e)
       })
-    }), _(this, "handleClose", () => {
+    }), E(this, "handleClose", () => {
       let {
         onClose: e
       } = this.props;

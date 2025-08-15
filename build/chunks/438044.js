@@ -1,19 +1,20 @@
-/** Chunk was on 92078 **/
-/** chunk id: 438044, original params: n,r,t (module,exports,require) **/
+/** Chunk was on 44947 **/
+/** chunk id: 438044, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  u: () => o,
-  y: () => i
+  u: () => i,
+  y: () => o
 });
 var Chunk73800 = require("./73800.js");
 
-function o(n) {
-  return (0, e.useMemo)(function() {
-    return n.hooks.dragSource()
-  }, [n])
+function i(e) {
+  return (0, r.useMemo)(function() {
+    return e.hooks.dragSource()
+  }, [e])
 }
 
-function i(n) {
-  return (0, e.useMemo)(function() {
-    return n.hooks.dragPreview()
-  }, [n])
+function o(e) {
+  return (0, r.useMemo)(function() {
+    return e.hooks.dragPreview()
+  }, [e])
 }

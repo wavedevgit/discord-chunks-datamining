@@ -1,44 +1,32 @@
-/** Chunk was on web.js **/
-/** chunk id: 968514, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 968514, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk720379 = require("./720379.js"),
   Chunk65183 = require("./65183.js"),
   o = Chunk65183.List,
   a = Chunk65183.Repeat,
-  s = Chunk65183.Record,
-  l = function() {
+  u = Chunk65183.Record,
+  s = function() {
     returntrue
   },
-  c = s({
+  c = u({
     start: null,
     end: null
   }),
-  u = s({
+  l = u({
     start: null,
     end: null,
     decoratorKey: null,
     leaves: null
   });
 
-function d(e, t) {
-  var n = [];
-  return r(e.map(function(e) {
-    return e.getStyle()
-  }).toList(), f, l, function(e, r) {
-    n.push(new c({
-      start: e + t,
-      end: r + t
-    }))
-  }), o(n)
-}
-
-function f(e, t) {
-  return e === t
+function f(t, e) {
+  return t === e
 }
 module.exports = {
-  generate: function(e, t, n) {
-    var i = t.getLength();
-    if (!i) return o.of(new u({
+  generate: function(t, e, r) {
+    var i = e.getLength();
+    if (!i) return o.of(new l({
       start: 0,
       end: 0,
       decoratorKey: null,
@@ -47,16 +35,24 @@ module.exports = {
         end: 0
       }))
     }));
-    var s = [],
-      _ = n ? n.getDecorations(t, e) : o(a(null, i)),
-      p = t.getCharacterList();
-    return r(_, f, l, function(e, t) {
-      s.push(new u({
-        start: e,
-        end: t,
-        decoratorKey: _.get(e),
-        leaves: d(p.slice(e, t).toList(), e)
+    var u = [],
+      p = r ? r.getDecorations(e, t) : o(a(null, i)),
+      h = e.getCharacterList();
+    return n(p, f, s, function(t, e) {
+      var r, i, a;
+      u.push(new l({
+        start: t,
+        end: e,
+        decoratorKey: p.get(t),
+        leaves: (r = h.slice(t, e).toList(), i = t, a = [], n(r.map(function(t) {
+          return t.getStyle()
+        }).toList(), f, s, function(t, e) {
+          a.push(new c({
+            start: t + i,
+            end: e + i
+          }))
+        }), o(a))
       }))
-    }), o(s)
+    }), o(u)
   }
 }

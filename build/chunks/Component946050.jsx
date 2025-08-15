@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 946050, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 946050, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -20,21 +19,21 @@ function u(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: c.notice,
-    children: [(0, r.jsx)(o.Z, {
+    children: [(0, r.jsx)(l.Z, {
       id: t.id
     }), (0, r.jsx)("div", {
       className: c.info,
       children: (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
-        children: l.intl.format(l.t.P6Y2Nz, {})
+        children: s.intl.format(s.t.P6Y2Nz, {})
       })
     }), (0, r.jsx)(i.zxk, {
       variant: "secondary",
-      text: l.intl.string(l.t.KyUKhY),
+      text: s.intl.string(s.t.KyUKhY),
       icon: i.UEU,
       size: "sm",
       onClick: () => {
-        (0, a.Z)(t.guild_id, t.id, s.ic.UNREADS_ONLY_MENTIONS), n()
+        (0, a.Z)(t.guild_id, t.id, o.ic.UNREADS_ONLY_MENTIONS), n()
       }
     })]
   })

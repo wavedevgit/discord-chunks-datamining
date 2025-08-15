@@ -3,14 +3,14 @@
 "use strict";
 require.d(exports, {
   $: () => l,
-  N: () => o
+  N: () => a
 });
 var Chunk818083 = require("./818083.js"),
   Chunk154579 = require("./154579.js"),
-  o = function(e) {
+  a = function(e) {
     return e.NONE = "NONE", e.ALL_GUILDS = "ALL_GUILDS", e.SELECTED_GUILD = "SELECTED_GUILD", e.FRECENCY_GUILDS = "FRECENCY_GUILDS", e
   }({});
-let a = {
+let o = {
     enabled: false,
     type: "NONE"
   },
@@ -18,7 +18,7 @@ let a = {
     kind: "user",
     id: "2025-08_search_quick_switcher_guild_members",
     label: "Search Quick Switcher Guild Members Experiment",
-    defaultConfig: a,
+    defaultConfig: o,
     treatments: [{
       id: 1,
       label: "Enables searching against all guild members by default",
@@ -51,8 +51,8 @@ function l(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    enabled: o,
-    type: a
+    enabled: a,
+    type: o
   } = s.getCurrentConfig({
     location: t
   }, {
@@ -60,7 +60,7 @@ function l(e) {
     disable: r
   });
   return {
-    enabled: o,
-    type: a
+    enabled: a,
+    type: o
   }
 }

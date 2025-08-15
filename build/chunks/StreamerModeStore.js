@@ -33,7 +33,7 @@ function u(e) {
 }
 
 function d(e, t) {
-  a.default.track(l.rMx.STREAMER_MODE_TOGGLE, {
+  o.default.track(l.rMx.STREAMER_MODE_TOGGLE, {
     enabled: e,
     automatic: t
   })
@@ -65,7 +65,7 @@ function g(e) {
 
 function E(e) {
   let t = u({}, p);
-  return p[e.key] = e.value, "enabled" === e.key ? d(e.value, false) : a.default.track(l.rMx.UPDATE_STREAMER_MODE_SETTINGS, {
+  return p[e.key] = e.value, "enabled" === e.key ? d(e.value, false) : o.default.track(l.rMx.UPDATE_STREAMER_MODE_SETTINGS, {
     enabled: p.enabled,
     automatic: p.autoToggle,
     disable_notifications: p.disableNotifications,

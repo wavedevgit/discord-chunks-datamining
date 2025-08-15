@@ -11,10 +11,10 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 }), require("./539854.js");
 let i = 5;
-class o {
+class a {
   recordStartHeadlessTask(e) {
     this.headlessTasks.length >= i && this.headlessTasks.shift(), this.headlessTasks.push(e), this.latestHeadlessTaskRunOn = Date.now()
   }
@@ -31,4 +31,4 @@ class o {
     r(this, "headlessTasks", []), r(this, "latestHeadlessTaskRunOn", null)
   }
 }
-let a = new o
+let o = new a

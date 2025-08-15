@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +33,7 @@ class f extends(r = Chunk442837.ZP.Store) {
     return l
   }
 }
-a(f, "displayName", "CollectiblesUserDiscountStore");
+o(f, "displayName", "CollectiblesUserDiscountStore");
 let _ = new f(Chunk570140.Z, {
   COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: c,
   SKU_PURCHASE_SUCCESS: u,

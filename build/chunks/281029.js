@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 281029, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Dn: () => p,
@@ -127,20 +127,20 @@ function d(e, t, n, r, l) {
     return null
   }
   let b = l[(null != (d = c(n, l, true)) ? d : 0) + 1],
-    O = s(false, n.id, e.type, l);
-  if (null == O) return null;
+    _ = s(false, n.id, e.type, l);
+  if (null == _) return null;
   if (e.isGuildVocal()) {
     if (null == b || b.channel.isCategory()) return {
-      referenceId: O.channel.id,
+      referenceId: _.channel.id,
       parentId: n.parent_id
     };
     if (b.channel.isGuildVocal()) return {
-      referenceId: O.channel.id,
+      referenceId: _.channel.id,
       parentId: b.channel.parent_id
     }
   }
   return e.isCategory() && (null == b || b.channel.isCategory()) ? {
-    referenceId: O.channel.id,
+    referenceId: _.channel.id,
     parentId: null
   } : null
 }

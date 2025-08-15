@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   C: () => s,
-  Z: () => a
+  Z: () => o
 });
 var Chunk818083 = require("./818083.js"),
   Chunk154579 = require("./154579.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-07_search_author_type_filter",
   label: "Search Author Type Filter",
@@ -23,7 +23,7 @@ let o = (0, Chunk818083.B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   let {
     location: t,
     autoTrackExposure: n = true
@@ -31,14 +31,14 @@ function a(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    enabled: a
-  } = o.getCurrentConfig({
+    enabled: o
+  } = a.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
-  return a
+  return o
 }
 
 function s(e) {
@@ -49,12 +49,12 @@ function s(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    enabled: a
-  } = o.useExperiment({
+    enabled: o
+  } = a.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
-  return a
+  return o
 }

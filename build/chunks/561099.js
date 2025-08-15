@@ -1,20 +1,20 @@
-/** Chunk was on web.js **/
-/** chunk id: 561099, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 561099, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk172367 = require("./172367.js"),
   Chunk733359 = require("./733359.js"),
   Chunk802801 = require("./802801.js"),
   Chunk473297 = require("./473297.js");
-module.exports = function(e) {
-  var t = a(e, function(e) {
-    var t = e.getSelection(),
-      n = e.getCurrentContent(),
-      r = t.getAnchorKey(),
-      a = t.getAnchorOffset(),
-      s = n.getBlockForKey(r).getText()[a];
-    return o(e, s ? i.getUTF16Length(s, 0) : 1)
+module.exports = function(t) {
+  var e = a(t, function(t) {
+    var e = t.getSelection(),
+      r = t.getCurrentContent(),
+      n = e.getAnchorKey(),
+      a = e.getAnchorOffset(),
+      u = r.getBlockForKey(n).getText()[a];
+    return o(t, u ? i.getUTF16Length(u, 0) : 1)
   }, "forward");
-  if (t === e.getCurrentContent()) return e;
-  var n = e.getSelection();
-  return r.push(e, t.set("selectionBefore", n), n.isCollapsed() ? "delete-character" : "remove-range")
+  if (e === t.getCurrentContent()) return t;
+  var r = t.getSelection();
+  return n.push(t, e.set("selectionBefore", r), r.isCollapsed() ? "delete-character" : "remove-range")
 }

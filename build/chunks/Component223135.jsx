@@ -16,13 +16,13 @@ let s = e => {
     hangStatusActivity: s,
     animate: l = true
   } = e;
-  if ((null == s ? true : s.state) === a.tNA.CUSTOM) return null != s.emoji ? (0, r.jsx)(i.Z, {
+  if ((null == s ? true : s.state) === o.tNA.CUSTOM) return null != s.emoji ? (0, r.jsx)(i.Z, {
     emoji: s.emoji,
     className: n,
     hideTooltip: true,
     animate: l
   }) : null;
-  let c = null == (t = (0, o.tV)(s)) ? true : t.icon;
+  let c = null == (t = (0, a.tV)(s)) ? true : t.icon;
   return null != c ? (0, r.jsx)("img", {
     src: c,
     alt: "",

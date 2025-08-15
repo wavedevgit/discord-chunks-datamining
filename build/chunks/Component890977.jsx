@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 890977, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 890977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => b
+  b: () => _
 }), require("./49124.js");
 var r, i, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk500923 = require("./500923.js"),
   u = require.n(Chunk500923),
   Chunk442837 = require("./442837.js"),
@@ -16,8 +15,8 @@ var r, i, Chunk255367 = require("./255367.js"),
   Chunk158877 = require("./158877.js"),
   Chunk505723 = require("./505723.js");
 
-function m(e) {
-  let t = (0, d.e7)([f.Z], () => f.Z.useReducedMotion),
+function g(e) {
+  let t = (0, d.e7)([p.Z], () => p.Z.useReducedMotion),
     n = a.useRef(null);
   return a.useEffect(() => {
     let r;
@@ -33,45 +32,45 @@ function m(e) {
   }, [n, t, e]), n
 }
 
-function g(e) {
+function b(e) {
   let {
     className: t
   } = e;
-  return (0, o.jsx)("div", {
-    ref: m(r || (r = n.t(_, 2))),
-    className: l()(h.glow, t)
+  return (0, l.jsx)("div", {
+    ref: g(r || (r = n.t(h, 2))),
+    className: s()(m.glow, t)
   })
 }
 
-function E(e) {
+function y(e) {
   let {
     className: t
   } = e;
-  return (0, o.jsx)("div", {
-    ref: m(i || (i = n.t(p, 2))),
-    className: l()(h.trinkets, t)
+  return (0, l.jsx)("div", {
+    ref: g(i || (i = n.t(f, 2))),
+    className: s()(m.trinkets, t)
   })
 }
-let b = e => {
+let _ = e => {
   let {
     children: t,
     animationContainerClassName: n,
     glowClassName: r,
     trinketsClassName: i,
-    onMount: s
+    onMount: o
   } = e;
   return a.useEffect(() => {
-    s()
-  }, [s]), (0, o.jsxs)("div", {
+    o()
+  }, [o]), (0, l.jsxs)("div", {
     className: n,
-    children: [(0, o.jsx)(g, {
+    children: [(0, l.jsx)(b, {
       className: r
-    }), (0, o.jsx)("div", {
-      className: h.circleLayer
-    }), (0, o.jsx)("div", {
-      className: h.entrypoint,
+    }), (0, l.jsx)("div", {
+      className: m.circleLayer
+    }), (0, l.jsx)("div", {
+      className: m.entrypoint,
       children: t
-    }), (0, o.jsx)(E, {
+    }), (0, l.jsx)(y, {
       className: i
     })]
   })

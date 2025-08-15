@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 59727 **/
 /** chunk id: 995712, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -18,32 +18,32 @@ let c = e => {
     id: c,
     icon: d,
     name: u
-  } = n, m = null != (t = a.ZP.getGuildIconURL({
+  } = n, m = null != (t = l.ZP.getGuildIconURL({
     id: c,
     icon: d,
     size: 32
   })) ? t : true;
   return (0, r.jsxs)("div", {
-    className: o.container,
-    children: [(0, r.jsx)(i.X6q, {
-      className: o.header,
+    className: s.container,
+    children: [(0, r.jsx)(a.X6q, {
+      className: s.header,
       variant: "heading-sm/semibold",
-      children: s.intl.string(s.t.nTe4HB)
+      children: o.intl.string(o.t.nTe4HB)
     }), (0, r.jsx)("div", {
-      className: o.guildContainer,
+      className: s.guildContainer,
       children: (0, r.jsxs)("div", {
-        className: o.guildInfo,
-        children: [(0, r.jsx)(l.ZP, {
-          mask: l.ZP.Masks.SQUIRCLE,
+        className: s.guildInfo,
+        children: [(0, r.jsx)(i.ZP, {
+          mask: i.ZP.Masks.SQUIRCLE,
           width: 32,
           height: 32,
-          className: o.guildIconMask,
+          className: s.guildIconMask,
           children: (0, r.jsx)("img", {
             src: m,
             alt: "",
-            className: o.guildIcon
+            className: s.guildIcon
           })
-        }), (0, r.jsx)(i.Text, {
+        }), (0, r.jsx)(a.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
           children: u

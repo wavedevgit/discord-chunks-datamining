@@ -5,13 +5,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 var Chunk73800 = require("./73800.js"),
   Chunk685066 = require("./685066.js"),
-  o = function(e) {
+  a = function(e) {
     return e && "object" == typeof e && "default" in e ? e : {
       default: e
     }
   }(Chunk73800),
-  a = function() {
-    return (a = Object.assign || function(e) {
+  o = function() {
+    return (o = Object.assign || function(e) {
       for (var t, n = 1, r = arguments.length; n < r; n++)
         for (var i in t = arguments[n]) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
       return e
@@ -29,12 +29,12 @@ function s(e, t) {
 }
 
 function l(e, t, n, r) {
-  return new(n || (n = Promise))(function(i, o) {
-    function a(e) {
+  return new(n || (n = Promise))(function(i, a) {
+    function o(e) {
       try {
         l(r.next(e))
       } catch (e) {
-        o(e)
+        a(e)
       }
     }
 
@@ -42,7 +42,7 @@ function l(e, t, n, r) {
       try {
         l(r.throw(e))
       } catch (e) {
-        o(e)
+        a(e)
       }
     }
 
@@ -50,14 +50,14 @@ function l(e, t, n, r) {
       var t;
       e.done ? i(e.value) : ((t = e.value) instanceof n ? t : new n(function(e) {
         e(t)
-      })).then(a, s)
+      })).then(o, s)
     }
     l((r = r.apply(e, t || [])).next())
   })
 }
 
 function c(e, t) {
-  var n, r, i, o, a = {
+  var n, r, i, a, o = {
     label: 0,
     sent: function() {
       if (1 & i[0]) throw i[1];
@@ -66,68 +66,68 @@ function c(e, t) {
     trys: [],
     ops: []
   };
-  return o = {
+  return a = {
     next: s(0),
     throw: s(1),
     return: s(2)
-  }, "function" == typeof Symbol && (o[Symbol.iterator] = function() {
+  }, "function" == typeof Symbol && (a[Symbol.iterator] = function() {
     return this
-  }), o;
+  }), a;
 
-  function s(o) {
+  function s(a) {
     return function(s) {
-      return function(o) {
+      return function(a) {
         if (n) throw TypeError("Generator is already executing.");
-        for (; a;) try {
-          if (n = 1, r && (i = 2 & o[0] ? r.return : o[0] ? r.throw || ((i = r.return) && i.call(r), 0) : r.next) && !(i = i.call(r, o[1])).done) return i;
-          switch (r = 0, i && (o = [2 & o[0], i.value]), o[0]) {
+        for (; o;) try {
+          if (n = 1, r && (i = 2 & a[0] ? r.return : a[0] ? r.throw || ((i = r.return) && i.call(r), 0) : r.next) && !(i = i.call(r, a[1])).done) return i;
+          switch (r = 0, i && (a = [2 & a[0], i.value]), a[0]) {
             case 0:
             case 1:
-              i = o;
+              i = a;
               break;
             case 4:
-              return a.label++, {
-                value: o[1],
+              return o.label++, {
+                value: a[1],
                 done: false
               };
             case 5:
-              a.label++, r = o[1], o = [0];
+              o.label++, r = a[1], a = [0];
               continue;
             case 7:
-              o = a.ops.pop(), a.trys.pop();
+              a = o.ops.pop(), o.trys.pop();
               continue;
             default:
-              if (!(i = (i = a.trys).length > 0 && i[i.length - 1]) && (6 === o[0] || 2 === o[0])) {
-                a = 0;
+              if (!(i = (i = o.trys).length > 0 && i[i.length - 1]) && (6 === a[0] || 2 === a[0])) {
+                o = 0;
                 continue
               }
-              if (3 === o[0] && (!i || o[1] > i[0] && o[1] < i[3])) {
-                a.label = o[1];
+              if (3 === a[0] && (!i || a[1] > i[0] && a[1] < i[3])) {
+                o.label = a[1];
                 break
               }
-              if (6 === o[0] && a.label < i[1]) {
-                a.label = i[1], i = o;
+              if (6 === a[0] && o.label < i[1]) {
+                o.label = i[1], i = a;
                 break
               }
-              if (i && a.label < i[2]) {
-                a.label = i[2], a.ops.push(o);
+              if (i && o.label < i[2]) {
+                o.label = i[2], o.ops.push(a);
                 break
               }
-              i[2] && a.ops.pop(), a.trys.pop();
+              i[2] && o.ops.pop(), o.trys.pop();
               continue
           }
-          o = t.call(e, a)
+          a = t.call(e, o)
         } catch (e) {
-          o = [6, e], r = 0
+          a = [6, e], r = 0
         } finally {
           n = i = 0
         }
-        if (5 & o[0]) throw o[1];
+        if (5 & a[0]) throw a[1];
         return {
-          value: o[0] ? o[1] : true,
+          value: a[0] ? a[1] : true,
           done: true
         }
-      }([o, s])
+      }([a, s])
     }
   }
 }
@@ -136,11 +136,11 @@ function u(e) {
   var t = e || d(),
     n = r.useState(t),
     i = n[0],
-    o = n[1];
+    a = n[1];
   return r.useEffect(function() {
     if ("undefined" != typeof window && "matchMedia" in window) {
       var t = function() {
-          o(e || d())
+          a(e || d())
         },
         n = window.matchMedia("screen and (resolution: ".concat(i, "dppx)"));
       return n.hasOwnProperty("addEventListener") ? n.addEventListener("change", t) : n.addListener(t),
@@ -169,11 +169,11 @@ function m(e, t) {
       height: 0
     }),
     i = n[0],
-    o = n[1];
+    a = n[1];
   r.useEffect(function() {
     if ("undefined" != typeof window && t) {
       var e = function() {
-        o({
+        a({
           width: window.innerWidth,
           height: window.innerHeight
         })
@@ -184,15 +184,15 @@ function m(e, t) {
         }
     }
   }, []);
-  var a, s, l, c = r.useRef(new _((a = function(e) {
-    p && o({
+  var o, s, l, c = r.useRef(new _((o = function(e) {
+    p && a({
       width: e[e.length - 1].contentRect.width,
       height: e[e.length - 1].contentRect.height
     })
   }, s = 0, l = 0, function() {
     for (var e = this, t = [], n = 0; n < arguments.length; n++) t[n] = arguments[n];
     clearTimeout(l), l = window.setTimeout(function() {
-      return a.apply(e, t)
+      return o.apply(e, t)
     }, s)
   })));
   return r.useEffect(function() {
@@ -222,9 +222,9 @@ function b(e) {
   var t = e.riveLoaded,
     n = true !== t && t,
     i = e.canvasElem,
-    o = e.containerRef,
-    a = e.options,
-    s = true === a ? {} : a,
+    a = e.containerRef,
+    o = e.options,
+    s = true === o ? {} : o,
     l = e.onCanvasHasResized,
     c = e.artboardBounds,
     d = E(s),
@@ -251,51 +251,51 @@ function b(e) {
     C = d.shouldResizeCanvasToContainer,
     R = d.useDevicePixelRatio,
     P = d.customDevicePixelRatio,
-    w = m(o, C),
+    w = m(a, C),
     D = u(P),
     L = null != c ? c : {},
     x = L.maxX,
     M = L.maxY,
-    j = r.useCallback(function() {
-      var e, t, n, r, i = null != (t = null == (e = o.current) ? true : e.clientWidth) ? t : 0,
-        a = null != (r = null == (n = o.current) ? true : n.clientHeight) ? r : 0;
+    k = r.useCallback(function() {
+      var e, t, n, r, i = null != (t = null == (e = a.current) ? true : e.clientWidth) ? t : 0,
+        o = null != (r = null == (n = a.current) ? true : n.clientHeight) ? r : 0;
       return N && c ? {
         width: i,
         height: i * (c.maxY / c.maxX)
       } : {
         width: i,
-        height: a
+        height: o
       }
-    }, [o, N, x, M]);
+    }, [a, N, x, M]);
   r.useEffect(function() {
-    if (C && o.current && n) {
-      var e = j(),
+    if (C && a.current && n) {
+      var e = k(),
         t = e.width,
         r = e.height,
-        a = false;
+        o = false;
       if (i) {
         var s = t !== h || r !== p;
-        if (d.fitCanvasToArtboardHeight && s && (o.current.style.height = r + "px", a = true), d.useDevicePixelRatio) {
+        if (d.fitCanvasToArtboardHeight && s && (a.current.style.height = r + "px", o = true), d.useDevicePixelRatio) {
           if (s || t * D !== v || r * D !== O) {
             var c = D * t,
               u = D * r;
             i.width = c, i.height = u, i.style.width = t + "px", i.style.height = r + "px", I({
               width: c,
               height: u
-            }), a = true
+            }), o = true
           }
         } else s && (i.width = t, i.height = r, I({
           width: t,
           height: r
-        }), a = true);
+        }), o = true);
         g({
           width: t,
           height: r
         })
       }
-      l && (S || a) && l && l(), S && A(false)
+      l && (S || o) && l && l(), S && A(false)
     }
-  }, [i, o, w, D, j, S, A, O, v, p, h, l, C, N, R, n]), r.useEffect(function() {
+  }, [i, a, w, D, k, S, A, O, v, p, h, l, C, N, R, n]), r.useEffect(function() {
     I({
       width: 0,
       height: 0
@@ -335,16 +335,16 @@ function S(e) {
     l = e.style,
     c = e.children,
     u = s(e, ["setContainerRef", "setCanvasRef", "className", "style", "children"]),
-    d = a({
+    d = o({
       width: "100%",
       height: "100%"
     }, l);
-  return o.default.createElement("div", a({
+  return a.default.createElement("div", o({
     ref: t,
     className: i
   }, !i && {
     style: d
-  }), o.default.createElement("canvas", a({
+  }), a.default.createElement("canvas", o({
     ref: n,
     style: {
       verticalAlign: "top",
@@ -391,7 +391,7 @@ function A(e, t) {
       var t, n = null != f;
       if (null == f) {
         var r = h.useOffscreenRenderer;
-        (t = new i.Rive(a(a({
+        (t = new i.Rive(o(o({
           useOffscreenRenderer: r
         }, e), {
           canvas: s
@@ -441,7 +441,7 @@ function A(e, t) {
     f && N && (f.isPlaying ? (f.stop(f.animationNames), f.play(N)) : f.isPaused && (f.stop(f.animationNames), f.pause(N)))
   }, [N, f]);
   var C = r.useCallback(function(e) {
-    return o.default.createElement(S, a({
+    return a.default.createElement(S, o({
       setContainerRef: O,
       setCanvasRef: y
     }, e))
@@ -458,7 +458,7 @@ function A(e, t) {
 
 function N(e, t, n) {
   var i = r.useState(null),
-    o = i[0],
+    a = i[0],
     s = i[1],
     l = r.useState(n.defaultValue),
     c = l[0],
@@ -495,18 +495,18 @@ function N(e, t, n) {
     return p.current = t, h.current = e, g()
   }, [t, e, g]);
   var E = r.useCallback(function(e) {
-      if (o && p.current === t) try {
-        return e(o), void(m.current.getExtendedData && _(m.current.getExtendedData(o)))
+      if (a && p.current === t) try {
+        return e(a), void(m.current.getExtendedData && _(m.current.getExtendedData(a)))
       } catch (e) {}
       if (p.current) try {
         var n = m.current.getProperty(p.current, h.current);
         n && (s(n), e(n), m.current.getExtendedData && _(m.current.getExtendedData(n)))
       } catch (e) {}
-    }, [o, t]),
+    }, [a, t]),
     b = r.useMemo(function() {
       return m.current.buildPropertyOperations(E)
     }, [E]),
-    y = a({
+    y = o({
       value: c
     }, b);
   return n.getExtendedData && (y.extendedData = f), y
@@ -540,12 +540,12 @@ exports.default = function(e) {
       useOffscreenRenderer: u,
       shouldResizeCanvasToContainer: p
     }).RiveComponent;
-  return o.default.createElement(b, a({}, E), g)
+  return a.default.createElement(b, o({}, E), g)
 }, exports.useResizeCanvas = b, exports.useRive = A, exports.useRiveFile = function(e) {
   var t = this,
     n = r.useState(null),
-    o = n[0],
-    a = n[1],
+    a = n[0],
+    o = n[1],
     s = r.useState("idle"),
     u = s[0],
     d = s[1];
@@ -555,10 +555,10 @@ exports.default = function(e) {
         return c(this, function(t) {
           try {
             d("loading"), (n = new i.RiveFile(e)).init(), n.on(i.EventType.Load, function() {
-              null == n || n.getInstance(), a(n), d("success")
+              null == n || n.getInstance(), o(n), d("success")
             }), n.on(i.EventType.LoadError, function() {
               d("failed")
-            }), a(n)
+            }), o(n)
           } catch (e) {
             console.error(e), d("failed")
           }
@@ -569,13 +569,13 @@ exports.default = function(e) {
         null == n || n.cleanup()
       }
   }, [e.src, e.buffer]), {
-    riveFile: o,
+    riveFile: a,
     status: u
   }
-}, exports.useStateMachineInput = function(e, t, n, o) {
-  var a = r.useState(null),
-    s = a[0],
-    l = a[1];
+}, exports.useStateMachineInput = function(e, t, n, a) {
+  var o = r.useState(null),
+    s = o[0],
+    l = o[1];
   return r.useEffect(function() {
     function r() {
       if (e && t && n || l(null), e && t && n) {
@@ -584,7 +584,7 @@ exports.default = function(e) {
           var i = r.find(function(e) {
             return e.name === n
           });
-          true !== o && i && (i.value = o), l(i || null)
+          true !== a && i && (i.value = a), l(i || null)
         }
       } else l(null)
     }
@@ -594,9 +594,9 @@ exports.default = function(e) {
   }, [e]), s
 }, exports.useViewModel = function(e, t) {
   var n = null != t ? t : {},
-    o = n.name,
-    a = n.useDefault,
-    s = true !== a && a,
+    a = n.name,
+    o = n.useDefault,
+    s = true !== o && o,
     l = r.useState(null),
     c = l[0],
     u = l[1];
@@ -605,19 +605,19 @@ exports.default = function(e) {
       var t;
       if (e) {
         var n = null;
-        u(n = null != o ? (null == (t = e.viewModelByName) ? true : t.call(e, o)) || null : e.defaultViewModel() || null)
+        u(n = null != a ? (null == (t = e.viewModelByName) ? true : t.call(e, a)) || null : e.defaultViewModel() || null)
       } else u(null)
     }
     return t(), e && e.on(i.EventType.Load, t),
       function() {
         e && e.off(i.EventType.Load, t)
       }
-  }, [e, o, s]), c
+  }, [e, a, s]), c
 }, exports.useViewModelInstance = function(e, t) {
   var n = null != t ? t : {},
     i = n.name,
-    o = n.useDefault,
-    a = true !== o && o,
+    a = n.useDefault,
+    o = true !== a && a,
     s = n.useNew,
     l = true !== s && s,
     c = n.rive,
@@ -627,10 +627,10 @@ exports.default = function(e) {
   return r.useEffect(function() {
     var t, n, r;
     if (e) {
-      var o = null;
-      f(o = null != i ? e.instanceByName(i) || null : a ? (null == (t = e.defaultInstance) ? true : t.call(e)) || null : l ? (null == (n = e.instance) ? true : n.call(e)) || null : (null == (r = e.defaultInstance) ? true : r.call(e)) || null), c && o && c.viewModelInstance !== o && c.bindViewModelInstance(o)
+      var a = null;
+      f(a = null != i ? e.instanceByName(i) || null : o ? (null == (t = e.defaultInstance) ? true : t.call(e)) || null : l ? (null == (n = e.instance) ? true : n.call(e)) || null : (null == (r = e.defaultInstance) ? true : r.call(e)) || null), c && a && c.viewModelInstance !== a && c.bindViewModelInstance(a)
     } else f(null)
-  }, [e, i, a, l, c]), d
+  }, [e, i, o, l, c]), d
 }, exports.useViewModelInstanceBoolean = function(e, t) {
   var n = N(e, t, {
     getProperty: r.useCallback(function(e, t) {

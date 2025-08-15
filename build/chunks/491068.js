@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 491068, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-var r = {
+/** Chunk was on 66866 **/
+/** chunk id: 491068, original params: e,t,n (module,exports,require) **/
+require.r(module.exports = {
   video: "video__1689b",
   container: "container__1689b",
   image: "image__1689b",
@@ -17,5 +16,4 @@ var r = {
   premiumBanner: "premiumBanner__1689b",
   premiumIcon: "premiumIcon__1689b",
   date: "date__1689b"
-};
-require.r(module.exports = r)
+})

@@ -2,7 +2,7 @@
 /** chunk id: 276344, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  NM: () => o
+  NM: () => a
 });
 var Chunk162461 = require("./162461.js");
 let i = (0, require("./818083.js").B)({
@@ -21,26 +21,26 @@ let i = (0, require("./818083.js").B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     guildId: t,
     location: n,
-    autoTrackExposure: o = true
+    autoTrackExposure: a = true
   } = e, {
-    enabled: a
+    enabled: o
   } = r.DG.getCurrentConfig({
     location: n
   }, {
     autoTrackExposure: false
   });
-  if (!a) returnfalse;
+  if (!o) returnfalse;
   let {
     enabled: s
   } = i.getCurrentConfig({
     guildId: t,
     location: n
   }, {
-    autoTrackExposure: o
+    autoTrackExposure: a
   });
   return s
 }

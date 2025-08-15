@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 50953, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 31253 **/
+/** chunk id: 50953, original params: e,t,n (module,exports,require) **/
 module.exports = {
   premiumIcon: "premiumIcon__9671b",
   platformIcon: "platformIcon__9671b",

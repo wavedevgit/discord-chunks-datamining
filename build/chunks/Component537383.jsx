@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 537383, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 7590 **/
+/** chunk id: 537383, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -10,42 +9,42 @@ var Chunk255367 = require("./255367.js"),
 let a = Chunk73800.forwardRef(function(e, t) {
   let {
     query: n,
-    onQueryChange: i,
+    onQueryChange: l,
     onRemoveTag: a,
     onSelect: s,
-    onSelectionChange: l,
+    onSelectionChange: o,
     selectedSection: c,
-    selectedRow: u,
-    tags: d,
-    sections: f,
-    placeholder: _ = "",
-    focusAfterReady: p,
-    isReady: h,
-    "aria-labelledby": m,
-    "aria-controls": g
+    selectedRow: d,
+    tags: u,
+    sections: m,
+    placeholder: x = "",
+    focusAfterReady: h,
+    isReady: b,
+    "aria-labelledby": y,
+    "aria-controls": f
   } = e;
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(i.Z, {
     autoFocus: true,
     maxHeight: 100,
-    onQueryChange: i,
+    onQueryChange: l,
     onRemoveTag: a,
     selectedSection: c,
-    selectedRow: u,
+    selectedRow: d,
     onSelect: s,
-    onSelectionChange: l,
-    placeholder: 0 === d.length ? _ : "",
+    onSelectionChange: o,
+    placeholder: 0 === u.length ? x : "",
     query: n,
     ref: t,
-    size: o.Z.Sizes.MEDIUM,
-    tags: d,
-    sections: f,
-    focusAfterReady: p,
-    isReady: h,
+    size: i.Z.Sizes.MEDIUM,
+    tags: u,
+    sections: m,
+    focusAfterReady: h,
+    isReady: b,
     inputProps: {
-      "aria-labelledby": m,
-      "aria-controls": g,
+      "aria-labelledby": y,
+      "aria-controls": f,
       "aria-expanded": true,
-      "aria-activedescendant": "user-row-".concat(u)
+      "aria-activedescendant": "user-row-".concat(d)
     }
   })
 })

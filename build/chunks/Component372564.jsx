@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 372564, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 372564, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => C
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -18,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk413140 = require("./413140.js"),
   Chunk430864 = require("./430864.js");
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,40 +26,23 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
 
-function E(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
 function y(e) {
   return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class O extends Chunk73800.Component {
+class _ extends Chunk73800.Component {
   render() {
     let {
       channel: e
@@ -86,25 +68,25 @@ class O extends Chunk73800.Component {
     }) : null
   }
   constructor(...e) {
-    super(...e), m(this, "_mouseDown", false), m(this, "_mouseUp", false), m(this, "handleOpenTopic", e => {
+    super(...e), g(this, "_mouseDown", false), g(this, "_mouseUp", false), g(this, "handleOpenTopic", e => {
       let t = e.target;
-      if ((0, s.k)(t)) {
+      if ((0, o.k)(t)) {
         if (y(t)) return;
         let e = t.parentNode;
-        if ((0, s.k)(e) && y(e)) return
-      }(0, l.ZDy)(async () => {
+        if ((0, o.k)(e) && y(e)) return
+      }(0, s.ZDy)(async () => {
         let {
           default: e
         } = await n.e("65631").then(n.bind(n, 10722));
-        return t => (0, r.jsx)(e, g({}, t, this.props))
+        return t => (0, r.jsx)(e, b({}, t, this.props))
       })
-    }), m(this, "onMouseDown", () => {
+    }), g(this, "onMouseDown", () => {
       this._mouseDown = true
-    }), m(this, "onMouseMove", () => {
+    }), g(this, "onMouseMove", () => {
       this._mouseDown && (this._mouseDown = false)
-    }), m(this, "onMouseUp", e => {
-      this._mouseDown && e.button !== f.AeJ.SECONDARY && this.handleOpenTopic(e), this._mouseUp = true, this._mouseDown = false
-    }), m(this, "handleContextMenu", e => {
+    }), g(this, "onMouseUp", e => {
+      this._mouseDown && e.button !== p.AeJ.SECONDARY && this.handleOpenTopic(e), this._mouseUp = true, this._mouseDown = false
+    }), g(this, "handleContextMenu", e => {
       let {
         channel: t,
         guild: i
@@ -112,14 +94,25 @@ class O extends Chunk73800.Component {
       (0, c.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("66549"), n.e("25548"), n.e("99956"), n.e("49049"), n.e("62856"), n.e("1355"), n.e("46154"), n.e("91315"), n.e("16459"), n.e("54273"), n.e("24783"), n.e("82358")]).then(n.bind(n, 439635));
-        return n => (0, r.jsx)(e, b(g({}, n), {
+        } = await n.e("24783").then(n.bind(n, 439635));
+        return n => (0, r.jsx)(e, function(e, t) {
+          return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
+            }
+            return n
+          })(Object(t)).forEach(function(n) {
+            Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+          }), e
+        }(b({}, n), {
           channel: t,
           guild: i,
           includeTopic: true
         }))
       })
-    }), m(this, "handleClick", e => {
+    }), g(this, "handleClick", e => {
       if (this._mouseUp) {
         this._mouseUp = false;
         return
@@ -128,4 +121,4 @@ class O extends Chunk73800.Component {
     })
   }
 }
-let v = O
+let C = _

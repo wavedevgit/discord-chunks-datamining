@@ -25,7 +25,7 @@ require.d(exports, {
 }), require("./35282.js");
 var Chunk164369 = require("./164369.js"),
   Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk884439 = require("./884439.js"),
   Chunk876215 = require("./876215.js"),
   Chunk70956 = require("./70956.js"),
@@ -35,10 +35,10 @@ let d = e => {
     let {
       start: t,
       now: n
-    } = e, r = Math.max(n - t, 0) / l.Z.Millis.SECOND, i = Math.floor(r) % l.Z.Seconds.MINUTE, o = Math.floor(r / l.Z.Seconds.MINUTE) % l.Z.Seconds.MINUTE;
+    } = e, r = Math.max(n - t, 0) / l.Z.Millis.SECOND, i = Math.floor(r) % l.Z.Seconds.MINUTE, a = Math.floor(r / l.Z.Seconds.MINUTE) % l.Z.Seconds.MINUTE;
     return {
       seconds: i,
-      minutes: o,
+      minutes: a,
       hours: Math.floor(r / l.Z.Seconds.HOUR),
       days: Math.floor(r / l.Z.Seconds.DAY)
     }
@@ -54,13 +54,13 @@ let d = e => {
       hours: i
     } = f(e, t);
 
-    function o(e) {
+    function a(e) {
       return String(e).padStart(2, "0")
     }
     return u.intl.formatToPlainString(u.t["l5PP//"], {
       hours: i,
-      minutes: i > 0 ? o(r) : r,
-      seconds: o(n)
+      minutes: i > 0 ? a(r) : r,
+      seconds: a(n)
     })
   },
   p = {
@@ -86,7 +86,7 @@ let d = e => {
   h = function(e, t, n) {
     let {
       formatSet: r = p
-    } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {}, i = o()(n), a = o()(c.default.extractTimestamp(e.id)), s = i.diff(a, "s"), u = Math.abs(s);
+    } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {}, i = a()(n), o = a()(c.default.extractTimestamp(e.id)), s = i.diff(o, "s"), u = Math.abs(s);
     if (u < l.Z.Seconds.MINUTE) return r.secondsAgo(s);
     if (u < l.Z.Seconds.HOUR) {
       let e = Math.round(s / l.Z.Seconds.MINUTE);
@@ -119,12 +119,12 @@ function g(e, t) {
 
 function E(e) {
   var t, n;
-  return null != (n = null == (t = g(e, a.N.IS_LIVE)) ? true : t.is_live) && n
+  return null != (n = null == (t = g(e, o.N.IS_LIVE)) ? true : t.is_live) && n
 }
 
 function b(e) {
   var t, n;
-  return null != (n = null == (t = g(e, a.N.FIRST_TIME)) ? true : t.first_time) && n
+  return null != (n = null == (t = g(e, o.N.FIRST_TIME)) ? true : t.first_time) && n
 }
 
 function y(e) {
@@ -137,21 +137,21 @@ function O(e) {
 
 function v(e) {
   var t;
-  return null == (t = g(e, a.N.DURATION_SECONDS)) ? true : t.duration_seconds
+  return null == (t = g(e, o.N.DURATION_SECONDS)) ? true : t.duration_seconds
 }
 
 function I(e) {
   var t;
-  return null == (t = g(e, a.N.AGGREGATE_RANGE)) ? true : t.range
+  return null == (t = g(e, o.N.AGGREGATE_RANGE)) ? true : t.range
 }
 
 function T(e) {
   var t;
-  return null == (t = g(e, a.N.MARATHON)) ? true : t.marathon
+  return null == (t = g(e, o.N.MARATHON)) ? true : t.marathon
 }
 
 function S(e) {
-  let t = g(e, a.N.RESURRECTED);
+  let t = g(e, o.N.RESURRECTED);
   return (null == t ? true : t.resurrected_last_played) != null ? new Date(t.resurrected_last_played) : true
 }
 
@@ -181,15 +181,15 @@ function N(e) {
 }
 
 function C(e, t) {
-  var n, r, i, o;
-  let a, s = null != (i = null == t || null == (n = t.size) ? true : n[0]) ? i : true,
-    l = null != (o = null == t || null == (r = t.size) ? true : r[1]) ? o : true;
-  return null != s && null != l && s > 0 && l > 0 ? a = u.intl.formatToPlainString(u.t.wmUSi4, {
+  var n, r, i, a;
+  let o, s = null != (i = null == t || null == (n = t.size) ? true : n[0]) ? i : true,
+    l = null != (a = null == t || null == (r = t.size) ? true : r[1]) ? a : true;
+  return null != s && null != l && s > 0 && l > 0 ? o = u.intl.formatToPlainString(u.t.wmUSi4, {
     count: s,
     max: l
-  }) : null != s && s > 0 && (a = u.intl.formatToPlainString(u.t.UTYMsb, {
+  }) : null != s && s > 0 && (o = u.intl.formatToPlainString(u.t.UTYMsb, {
     count: s
-  })), null != a && null != e ? "".concat(e, " (").concat(a, ")") : null != e ? e : a
+  })), null != o && null != e ? "".concat(e, " (").concat(o, ")") : null != e ? e : o
 }
 
 function R(e) {
@@ -198,7 +198,7 @@ function R(e) {
 
 function P(e) {
   var t;
-  return null == (t = g(e, a.N.STREAK_DAYS)) ? true : t.streak_count_days
+  return null == (t = g(e, o.N.STREAK_DAYS)) ? true : t.streak_count_days
 }
 
 function w(e) {
@@ -230,5 +230,5 @@ function D(e) {
 
 function L(e) {
   var t;
-  return null == (t = g(e, a.N.TRENDING_CONTENT)) ? true : t.trending
+  return null == (t = g(e, o.N.TRENDING_CONTENT)) ? true : t.trending
 }

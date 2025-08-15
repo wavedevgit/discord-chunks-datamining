@@ -86,7 +86,7 @@ class J extends Chunk73800.PureComponent {
       runningGamePid: R,
       selectedChannelId: M,
       selectedGuildId: U,
-      connected: V
+      connected: B
     } = this.props;
     if (e.voiceChannelId !== u && null != e.voiceChannelId) {
       let t = b.ZP.getCurrentGameForAnalytics(),
@@ -133,9 +133,9 @@ class J extends Chunk73800.PureComponent {
         join_voice_id: k.Z.getJoinVoiceId()
       }, (0, c.oG)(p, u), (0, c.kO)(p, u, y)))
     }
-    let B = null != w && null != w.distributor && null != w.sku && null != e.runningGame && e.runningGame.distributor === w.distributor && w.sku === e.runningGame.sku,
+    let V = null != w && null != w.distributor && null != w.sku && null != e.runningGame && e.runningGame.distributor === w.distributor && w.sku === e.runningGame.sku,
       H = null != e.runningGame && null != w && e.runningGame.isLauncher !== w.isLauncher;
-    if (e.runningGame !== w && null != w && !w.isLauncher && (!B || H)) {
+    if (e.runningGame !== w && null != w && !w.isLauncher && (!V || H)) {
       let e = Z.Z.getGameByName(w.name),
         s = b.ZP.getOverrideForGame(w),
         c = L.Z.getGuildIds(),
@@ -208,7 +208,7 @@ class J extends Chunk73800.PureComponent {
         preview_enabled: x.qF.getSetting()
       }, n, this.getGameMetadata(), (0, c.AB)(u)))
     }
-    if (V && null != M && (!e.connected || M !== e.selectedChannelId || U !== e.selectedGuildId)) {
+    if (B && null != M && (!e.connected || M !== e.selectedChannelId || U !== e.selectedGuildId)) {
       let t = e.selectedChannelId,
         n = A.Z.getChannel(t),
         r = L.Z.getGuild(null == n ? true : n.getGuildId());

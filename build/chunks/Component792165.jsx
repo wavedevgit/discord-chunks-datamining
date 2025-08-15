@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 792165, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 48091 **/
+/** chunk id: 792165, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  o: () => y
+  o: () => _
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -22,61 +21,56 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk262381 = require("./262381.js");
 
-function b(e) {
-  return e === h.p9.TIER_2 ? g.intl.string(g.t.jqO5Qk) : null == e ? g.intl.string(g.t.f2qjw8) : g.intl.string(g.t.SblICQ)
-}
-
-function y(e) {
+function _(e) {
+  var t;
   let {
-    onClose: t,
-    markAsDismissed: n
-  } = e, y = (0, i.e7)([d.default], () => d.default.getCurrentUser()), O = b(null == y ? true : y.premiumType), v = f.ZP.canUseCustomCallSounds(y);
-
-  function I() {
-    l.Z.open(_.oAB.VOICE, m.GA), null == t || t(), null == n || n(p.L.PRIMARY)
-  }
-  return (0, r.jsxs)(u.Z, {
+    onClose: n,
+    markAsDismissed: _
+  } = e, b = (0, i.e7)([u.default], () => u.default.getCurrentUser()), j = (t = null == b ? true : b.premiumType) === h.p9.TIER_2 ? v.intl.string(v.t.jqO5Qk) : null == t ? v.intl.string(v.t.f2qjw8) : v.intl.string(v.t.SblICQ), y = m.ZP.canUseCustomCallSounds(b);
+  return (0, r.jsxs)(d.Z, {
     isShown: true,
-    type: u.Y.PREMIUM,
-    className: E.upsellOuter,
-    backgroundClassName: E.upsellInner,
-    children: [null != n ? (0, r.jsx)(s.P3F, {
-      className: E.close,
-      onClick: () => null == n ? true : n(p.L.DISMISS),
-      "aria-label": g.intl.string(g.t.cpT0Cg),
+    type: d.Y.PREMIUM,
+    className: C.upsellOuter,
+    backgroundClassName: C.upsellInner,
+    children: [null != _ ? (0, r.jsx)(s.P3F, {
+      className: C.close,
+      onClick: () => null == _ ? true : _(f.L.DISMISS),
+      "aria-label": v.intl.string(v.t.cpT0Cg),
       children: (0, r.jsx)(s.Dio, {
         size: "xs",
         color: "currentColor",
-        className: E.closeIcon
+        className: C.closeIcon
       })
     }) : null, (0, r.jsxs)("div", {
-      className: E.upsellTitle,
+      className: C.upsellTitle,
       children: [(0, r.jsx)(s.SrA, {
         size: "sm",
         color: "currentColor",
-        className: E.nitroWheel
+        className: C.nitroWheel
       }), (0, r.jsx)(s.X6q, {
         variant: "heading-sm/bold",
-        children: g.intl.string(g.t.dTbAx8)
+        children: v.intl.string(v.t.dTbAx8)
       })]
-    }), (0, r.jsx)(o.x, {
+    }), (0, r.jsx)(l.x, {
       variant: "text-sm/normal",
-      children: O
-    }), v ? (0, r.jsx)(s.zxk, {
-      onClick: I,
-      text: g.intl.string(g.t.RzWDqa),
+      children: j
+    }), y ? (0, r.jsx)(s.zxk, {
+      onClick: function() {
+        o.Z.open(p.oAB.VOICE, g.GA), null == n || n(), null == _ || _(f.L.PRIMARY)
+      },
+      text: v.intl.string(v.t.RzWDqa),
       fullWidth: true
     }) : (0, r.jsx)(c.Z, {
       textOptions: {
-        textOverride: g.intl.string(g.t.pj0XBA)
+        textOverride: v.intl.string(v.t.pj0XBA)
       },
       subscriptionTier: h.Si.TIER_2,
       premiumModalAnalyticsLocation: {
-        section: _.jXE.SOUNDBOARD_SOUND_PICKER,
-        object: _.qAy.BUTTON_CTA
+        section: p.jXE.SOUNDBOARD_SOUND_PICKER,
+        object: p.qAy.BUTTON_CTA
       },
       color: a.zx.Colors.GREEN,
-      onSubscribeModalClose: () => null == n ? true : n(p.L.PRIMARY)
+      onSubscribeModalClose: () => null == _ ? true : _(f.L.PRIMARY)
     })]
   })
 }

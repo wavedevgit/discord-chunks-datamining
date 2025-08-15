@@ -1,4 +1,4 @@
-/** Chunk was on 58511 **/
+/** Chunk was on 47463 **/
 /** chunk id: 335049, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -81,7 +81,7 @@ function w(e) {
   }, [l]);
   switch (a) {
     case p.Kw.CHANNEL:
-      return (0, i.jsx)(I, {
+      return (0, i.jsx)(T, {
         guild: t,
         id: l,
         isLocked: o,
@@ -89,7 +89,7 @@ function w(e) {
         openEntryContextMenu: m
       });
     case p.Kw.ROLE:
-      return (0, i.jsx)(P, {
+      return (0, i.jsx)(I, {
         guild: t,
         id: l,
         isLocked: o,
@@ -97,7 +97,7 @@ function w(e) {
         openEntryContextMenu: m
       });
     case p.Kw.USER:
-      return (0, i.jsx)(T, {
+      return (0, i.jsx)(P, {
         guild: t,
         id: l,
         isLocked: o,
@@ -107,7 +107,7 @@ function w(e) {
   }
 }
 
-function I(e) {
+function T(e) {
   let {
     guild: t,
     id: n,
@@ -157,7 +157,7 @@ function I(e) {
   })
 }
 
-function P(e) {
+function I(e) {
   var t;
   let {
     guild: l,
@@ -201,7 +201,7 @@ function P(e) {
   })
 }
 
-function T(e) {
+function P(e) {
   let {
     guild: t,
     id: n,

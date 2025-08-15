@@ -1,29 +1,28 @@
-/** Chunk was on web.js **/
-/** chunk id: 24124, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 24255 **/
+/** chunk id: 24124, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   GG: () => a,
-  R2: () => s,
-  h7: () => i,
-  rh: () => o
+  R2: () => o,
+  h7: () => l,
+  rh: () => i
 });
 var Chunk570140 = require("./570140.js");
 
-function i(e, t, n) {
-  return new Promise(i => {
+function l(e, t, n) {
+  return new Promise(l => {
     setTimeout(() => {
       r.Z.dispatch({
         type: "ACTIVITY_INVITE_MODAL_OPEN",
         activity: e,
         isPrivate: t,
         context: n,
-        resolve: i
+        resolve: l
       })
     }, 0)
   })
 }
 
-function o(e) {
+function i(e) {
   r.Z.dispatch({
     type: "ACTIVITY_INVITE_MODAL_QUERY",
     query: e
@@ -37,7 +36,7 @@ function a(e) {
   })
 }
 
-function s(e) {
+function o(e) {
   r.Z.dispatch({
     type: "ACTIVITY_INVITE_MODAL_SEND",
     userId: e

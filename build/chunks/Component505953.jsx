@@ -72,7 +72,7 @@ function N(e) {
     guildId: I,
     unread: S,
     onClick: N
-  } = e, [C, R] = i.useState(false), P = (0, u.Ye)(h.default.extractTimestamp(t.startId)), w = (0, o.e7)([m.Z], () => m.Z.summaryFeedback(t)), D = (e, n) => {
+  } = e, [C, R] = i.useState(false), P = (0, u.Ye)(h.default.extractTimestamp(t.startId)), w = (0, a.e7)([m.Z], () => m.Z.summaryFeedback(t)), D = (e, n) => {
     e.stopPropagation(), (0, g.Z)({
       summary: t,
       channel: f,
@@ -88,7 +88,7 @@ function N(e) {
       }))
     })
   };
-  return (0, r.jsxs)(a.P3F, {
+  return (0, r.jsxs)(o.P3F, {
     className: v.container,
     onClick: N,
     onContextMenu: x,
@@ -102,7 +102,7 @@ function N(e) {
       className: v.rowHeader,
       children: (0, r.jsxs)("div", {
         className: v.rowHeaderLeft,
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(o.Text, {
           className: v.timestamp,
           color: "interactive-normal",
           variant: "text-xs/normal",
@@ -112,11 +112,11 @@ function N(e) {
           width: 4,
           "aria-hidden": "true",
           className: v.dot
-        }), (0, r.jsx)(a.kBi, {
+        }), (0, r.jsx)(o.kBi, {
           size: "xxs",
           color: "currentColor",
           className: v.icon
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           className: v.count,
           color: "interactive-normal",
           variant: "text-xs/normal",
@@ -140,14 +140,14 @@ function N(e) {
       })
     }), C && !w && (0, r.jsxs)("div", {
       className: v.feedbackContainer,
-      children: [(0, r.jsx)(a.P3F, {
+      children: [(0, r.jsx)(o.P3F, {
         onClick: e => D(e, O.aZ.GOOD),
         children: (0, r.jsx)(p.Z, {
           className: v.thumbIcon,
           width: 12,
           height: 12
         })
-      }), (0, r.jsx)(a.P3F, {
+      }), (0, r.jsx)(o.P3F, {
         onClick: e => D(e, O.aZ.BAD),
         children: (0, r.jsx)(_.Z, {
           className: v.thumbIcon,
@@ -155,12 +155,12 @@ function N(e) {
           height: 12
         })
       })]
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       color: "header-primary",
       variant: "text-sm/semibold",
       className: v.title,
       children: t.topic
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
       className: v.subtitle,
@@ -173,21 +173,21 @@ function C(e) {
   let {
     summaries: t,
     summariesMembers: n,
-    channel: a,
+    channel: o,
     selectTopic: s,
     setOpen: l
-  } = e, c = (0, o.e7)([f.ZP], () => f.ZP.getOldestUnreadMessageId(a.id)), u = i.useCallback(e => {
+  } = e, c = (0, a.e7)([f.ZP], () => f.ZP.getOldestUnreadMessageId(o.id)), u = i.useCallback(e => {
     s(e), l(false)
   }, [s, l]);
   return t.length < 1 ? (0, r.jsx)(b.Z, {}) : (0, r.jsx)(r.Fragment, {
     children: t.map((e, t) => {
       var i;
-      let o = null != (i = n[t]) ? i : [];
+      let a = null != (i = n[t]) ? i : [];
       return (0, r.jsx)(N, {
         summary: e,
-        channel: a,
-        members: o,
-        guildId: a.guild_id,
+        channel: o,
+        members: a,
+        guildId: o.guild_id,
         unread: null != c && h.default.compare(e.endId, c) > 0,
         onClick: () => u(t)
       }, t)

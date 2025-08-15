@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk94171 = require("./94171.js"),
   Chunk532772 = require("./532772.jsx"),
   Chunk28546 = require("./28546.js"),
@@ -58,19 +58,19 @@ function g(e, t) {
 function E(e, t) {
   let {
     disabled: n,
-    type: o
+    type: a
   } = e, [p, m] = (0, c.Iu)(e => [e.activeView, e.pickerId], s.X), E = false, b = p === d.X1.STICKER, y = false, O = i.useCallback(() => {
-    (0, c.RO)(d.X1.STICKER, o)
-  }, [o]), {
+    (0, c.RO)(d.X1.STICKER, a)
+  }, [a]), {
     Component: v,
     events: I,
     play: T
   } = (0, l.z)();
   return n ? null : (0, r.jsx)("div", {
-    className: a()(d.CT, _.buttonContainer),
+    className: o()(d.CT, _.buttonContainer),
     ref: t,
     children: (0, r.jsx)(u.Z, g(h({
-      className: a()(_.button, _.stickerButton)
+      className: o()(_.button, _.stickerButton)
     }, I), {
       onClick: () => {
         O(), T()

@@ -1,32 +1,31 @@
-/** Chunk was on web.js **/
-/** chunk id: 257511, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 257511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => s
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk479099 = require("./479099.jsx"),
   Chunk118041 = require("./118041.js");
 
-function l(e) {
+function s(e) {
   let {
     appliedTags: t,
     setAppliedTags: n,
     wrap: i
-  } = e, l = null != n ? e => {
+  } = e, s = null != n ? e => {
     t.has(e) && (t.delete(e), n(new Set(t)))
   } : true;
   return (0, r.jsx)("div", {
-    className: o()(s.tags, {
-      [s.wrap]: i
+    className: l()(o.tags, {
+      [o.wrap]: i
     }),
     children: Array.from(t).map(e => (0, r.jsx)(a.Z, {
       tag: e,
-      onRemove: l,
-      size: null == l ? a.Z.Sizes.SMALL : a.Z.Sizes.MEDIUM
+      onRemove: s,
+      size: null == s ? a.Z.Sizes.SMALL : a.Z.Sizes.MEDIUM
     }, e.id))
   })
 }

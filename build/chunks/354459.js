@@ -9,12 +9,14 @@ require.d(exports, {
   Rv: () => p,
   TH: () => i,
   _5: () => l,
+  _i: () => g,
   cL: () => d,
-  dF: () => o,
+  dF: () => a,
   e5: () => h,
   fO: () => r,
   l8: () => f,
-  wR: () => a
+  oo: () => m,
+  wR: () => o
 });
 var r = function(e) {
     return e[e.STREAM = 0] = "STREAM", e[e.HIDDEN_STREAM = 1] = "HIDDEN_STREAM", e[e.USER = 2] = "USER", e[e.ACTIVITY = 3] = "ACTIVITY", e
@@ -22,10 +24,10 @@ var r = function(e) {
   i = function(e) {
     return e.STREAM = "STREAM", e.USER = "USER", e.ACTIVITY = "ACTIVITY", e
   }({}),
-  o = function(e) {
+  a = function(e) {
     return e.NONE = "NONE", e.AUTO = "AUTO", e
   }({}),
-  a = function(e) {
+  o = function(e) {
     return e[e.DESKTOP = 0] = "DESKTOP", e[e.MOBILE = 1] = "MOBILE", e[e.XBOX = 2] = "XBOX", e[e.PLAYSTATION = 3] = "PLAYSTATION", e
   }({}),
   s = function(e) {
@@ -58,4 +60,6 @@ let f = {
     0: 200,
     1: 160
   },
-  h = 8
+  h = 8,
+  m = 550,
+  g = 230

@@ -23,7 +23,7 @@ function _() {
 }
 
 function p(e, t) {
-  let n = a.QZ.getSetting();
+  let n = o.QZ.getSetting();
   s.hW.updateAsync("notifications", n => {
     n.quietMode = r.D5.create({
       value: e
@@ -38,7 +38,7 @@ function p(e, t) {
     cancelText: f.intl.string(f.t.f3Pet7),
     confirmText: f.intl.string(f.t.BddRzc),
     onConfirm: () => {
-      (0, o.Z)({
+      (0, a.Z)({
         nextStatus: d.Skl.ONLINE
       })
     }

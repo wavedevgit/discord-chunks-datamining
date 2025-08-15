@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 821564, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 821564, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -15,9 +14,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e) {
-  let t = !l.isPlatformEmbedded,
-    n = (0, i.e7)([s.Z], () => s.Z.getMode()),
-    d = (t, i) => (0, r.jsx)(o.k5B, {
+  let t = !s.isPlatformEmbedded,
+    n = (0, i.e7)([o.Z], () => o.Z.getMode()),
+    d = (t, i) => (0, r.jsx)(l.k5B, {
       id: t,
       group: "input-modes",
       label: i,

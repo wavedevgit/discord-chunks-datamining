@@ -1,4 +1,4 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 840367, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -29,7 +29,7 @@ function g(e) {
     headingId: d,
     widget: u,
     disableInteraction: g = false
-  } = e, j = (0, o.e7)([c.default], () => c.default.getId() === n), y = (0, s.kQ)(u), O = m[u.type](), x = j && u.games.length > 0 ? (t = u.type) === l.l.FAVORITE_GAMES ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
+  } = e, j = (0, o.e7)([c.default], () => c.default.getId() === n), y = (0, s.kQ)(u), O = m[u.type](), h = j && u.games.length > 0 ? (t = u.type) === l.l.FAVORITE_GAMES ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
     numGames: i.k[t]
   }) : true;
   return (0, r.jsxs)("div", {
@@ -41,10 +41,10 @@ function g(e) {
         color: "text-default",
         id: d,
         children: O
-      }), null != x && (0, r.jsx)(a.Text, {
+      }), null != h && (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
-        children: x
+        children: h
       })]
     }), (0, r.jsx)(b, {
       widget: u,

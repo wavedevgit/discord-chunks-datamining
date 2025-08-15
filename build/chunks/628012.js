@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 628012, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 628012, original params: e,t,n (module,exports,require) **/
 module.exports = {
   button: "button_fa0dd2",
   role: "role_fa0dd2",

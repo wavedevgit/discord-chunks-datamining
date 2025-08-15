@@ -97,11 +97,11 @@ function M() {
   S && (S = L(S)), A = L(A)
 }
 
-function j() {
+function k() {
   N || Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), N = L(N)
 }
 
-function k(e) {
+function j(e) {
   let {
     sidebarType: t,
     guildId: n,
@@ -109,10 +109,10 @@ function k(e) {
     details: i
   } = e;
   C = false;
-  let o = w(r);
-  return null != o && (P[n] = {
+  let a = w(r);
+  return null != a && (P[n] = {
     type: t,
-    baseChannelId: o,
+    baseChannelId: a,
     guildId: n,
     details: i
   }, true)
@@ -133,16 +133,16 @@ function G(e) {
     details: i
   } = e;
   C = false;
-  let o = w(n);
-  if (null == o) returnfalse;
-  let a = {
+  let a = w(n);
+  if (null == a) returnfalse;
+  let o = {
     type: t,
     channelId: r,
     details: i
   };
-  return t === c.tI.VIEW_MOD_REPORT && (a = I(O({}, a), {
+  return t === c.tI.VIEW_MOD_REPORT && (o = I(O({}, o), {
     baseChannelId: n
-  })), R[o] = a, true
+  })), R[a] = o, true
 }
 
 function B(e) {
@@ -161,7 +161,7 @@ function B(e) {
   })
 }
 
-function Z(e) {
+function V(e) {
   let {
     channel: t
   } = e;
@@ -182,7 +182,7 @@ function F(e) {
   delete R[t.parent_id]
 }
 
-function V(e) {
+function Z(e) {
   var t;
   let {
     channel: n
@@ -228,8 +228,8 @@ function K() {
 class z extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
-      var t, n, r, i, o;
-      S = null != (t = e.isMembersOpen) && t, A = null != (n = e.isSummariesOpen) && n, N = null == (r = e.isProfileOpen) || r, R = null != (i = e.sidebars) ? i : {}, P = null != (o = e.guildSidebars) ? o : {}
+      var t, n, r, i, a;
+      S = null != (t = e.isMembersOpen) && t, A = null != (n = e.isSummariesOpen) && n, N = null == (r = e.isProfileOpen) || r, R = null != (i = e.sidebars) ? i : {}, P = null != (a = e.guildSidebars) ? a : {}
     }
     this.syncWith([s.Z, l.Z], W), this.syncWith([_.Z], H), this.waitFor(l.Z, s.Z)
   }
@@ -271,15 +271,15 @@ class z extends(r = Chunk442837.ZP.PersistedStore) {
 y(z, "displayName", "ChannelSectionStore"), y(z, "persistKey", "ChannelSectionStore2");
 let q = new z(Chunk570140.Z, {
   CHANNEL_TOGGLE_MEMBERS_SECTION: x,
-  USER_PROFILE_SIDEBAR_TOGGLE_SECTION: j,
+  USER_PROFILE_SIDEBAR_TOGGLE_SECTION: k,
   CHANNEL_TOGGLE_SUMMARIES_SECTION: M,
   SIDEBAR_VIEW_CHANNEL: G,
-  SIDEBAR_VIEW_GUILD: k,
+  SIDEBAR_VIEW_GUILD: j,
   SIDEBAR_CREATE_THREAD: B,
   SIDEBAR_CLOSE: Y,
   SIDEBAR_CLOSE_GUILD: U,
-  CHANNEL_DELETE: Z,
+  CHANNEL_DELETE: V,
   CHANNEL_SELECT: K,
-  THREAD_CREATE: V,
+  THREAD_CREATE: Z,
   THREAD_DELETE: F
 })

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 749339, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37220 **/
+/** chunk id: 749339, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -13,15 +12,15 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c(e) {
-  if (!s.wS) return null;
+  if (!o.wS) return null;
   let t = e.getContentMessage(),
-    n = (0, a.hv)(t) ? (0, o.np)(t.components) : t.content;
+    n = (0, a.hv)(t) ? (0, l.np)(t.components) : t.content;
   return null == n || 0 === n.length ? null : (0, r.jsx)(i.sNh, {
     id: "copy-text",
-    label: l.intl.string(l.t.JrGD7O),
+    label: s.intl.string(s.t.JrGD7O),
     icon: i.TIy,
     action: () => {
-      (0, s.JG)(n)
+      (0, o.JG)(n)
     }
   })
 }

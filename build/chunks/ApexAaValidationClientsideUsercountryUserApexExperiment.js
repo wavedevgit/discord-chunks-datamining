@@ -18,7 +18,7 @@ require.d(exports, {
   f7: () => v,
   kF: () => E,
   kS: () => b,
-  l2: () => a,
+  l2: () => o,
   lE: () => g,
   mq: () => l,
   nS: () => C,
@@ -30,7 +30,7 @@ require.d(exports, {
 var Chunk722733 = require("./722733.js"),
   Chunk987170 = require("./987170.js"),
   Chunk987338 = require("./987338.js");
-let a = (0, Chunk987170.Z)({
+let o = (0, Chunk987170.Z)({
     id: "2025-07_apex_aa_validation__clientside__connectionopen__simple",
     kind: "user",
     label: "Apex AA Validation Connection Open Simple",

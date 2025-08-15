@@ -1,9 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 394059, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 80125 **/
+/** chunk id: 394059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  K: () => r
+  K: () => i
 });
-var r = function(e) {
-  return e[e.STREAM = 0] = "STREAM", e[e.VIDEO = 1] = "VIDEO", e
-}({})
+var r, i = ((r = {})[r.STREAM = 0] = "STREAM", r[r.VIDEO = 1] = "VIDEO", r)

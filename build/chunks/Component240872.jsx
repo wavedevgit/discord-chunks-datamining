@@ -88,7 +88,7 @@ let p = {
             null == m || m(), e.onClose()
           },
           variant: p
-        }), (0, r.jsx)(o.Modal, _(d({}, e), {
+        }), (0, r.jsx)(a.Modal, _(d({}, e), {
           size: "sm",
           title: t,
           subtitle: n,
@@ -98,7 +98,7 @@ let p = {
       return (0, r.jsx)(s.default, _(d({}, e), {
         title: t,
         body: n,
-        confirmColor: "critical-primary" === p ? a.Tt.RED : a.Tt.BRAND,
+        confirmColor: "critical-primary" === p ? o.Tt.RED : o.Tt.BRAND,
         confirmText: f,
         cancelText: h,
         onConfirm: m,

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 916796, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 916796, original params: e,t,n (module,exports,require) **/
 module.exports = {
   popoutContainer: "popoutContainer__02e2b",
   image: "image__02e2b",

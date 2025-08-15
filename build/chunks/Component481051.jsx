@@ -1,25 +1,24 @@
-/** Chunk was on web.js **/
-/** chunk id: 481051, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 481051, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => s
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk867506 = require("./867506.js");
 
-function l(e) {
+function s(e) {
   let {
     hasMentions: t,
     truncatedCount: n,
     className: i
   } = e;
   return (0, r.jsx)(a.Text, {
-    className: o()(s.unreadCount, i, {
-      [s.mention]: t
+    className: l()(o.unreadCount, i, {
+      [o.mention]: t
     }),
     variant: "text-xs/normal",
     children: n

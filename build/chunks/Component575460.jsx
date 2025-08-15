@@ -1,4 +1,4 @@
-/** Chunk was on 25548 **/
+/** Chunk was on 48091 **/
 /** chunk id: 575460, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -17,34 +17,34 @@ function d(e) {
     benefit: t,
     guildId: n,
     onClick: d
-  } = e, u = (0, o.Z)(n, t.ref_id), m = (0, i.jsx)(a.Z, {
+  } = e, u = (0, o.Z)(n, t.ref_id), m = (0, r.jsx)(a.Z, {
     guildId: n,
     emojiId: t.emoji_id,
     emojiName: t.emoji_name
   });
-  return (0, i.jsxs)(r.P3F, {
+  return (0, r.jsxs)(i.P3F, {
     className: c.container,
     onClick: () => {
       null == u || u.navigateToChannel(), d()
     },
     "aria-label": null == u ? true : u.ariaLabel,
     role: "link",
-    children: [(0, i.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: c.emojiContainer,
       children: m
-    }), (0, i.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: c.infoContainer,
-      children: [(0, i.jsx)(r.Text, {
+      children: [(0, r.jsx)(i.Text, {
         variant: "text-md/medium",
         color: "header-primary",
         className: c.name,
         children: (0, s.Z)(t)
-      }), (0, i.jsx)(r.Text, {
+      }), (0, r.jsx)(i.Text, {
         color: "interactive-normal",
         variant: "text-sm/normal",
         children: t.description
       })]
-    }), (0, i.jsx)(l.Z, {
+    }), (0, r.jsx)(l.Z, {
       direction: l.Z.Directions.RIGHT,
       className: c.caret
     })]

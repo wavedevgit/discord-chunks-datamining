@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,7 +49,7 @@ class d extends(r = Chunk442837.ZP.Store) {
     return s.isAnimated
   }
 }
-a(d, "displayName", "WowMomentConfirmationStore");
+o(d, "displayName", "WowMomentConfirmationStore");
 let f = new d(Chunk570140.Z, {
   LOGOUT: c,
   WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION: u

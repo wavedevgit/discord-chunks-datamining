@@ -1,8 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 276554, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 31978 **/
+/** chunk id: 276554, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  R: () => i
+  R: () => l
 });
 let r = (0, require("./818083.js").B)({
   kind: "user",
@@ -29,7 +29,7 @@ let r = (0, require("./818083.js").B)({
   }]
 });
 
-function i(e, t) {
+function l(e, t) {
   let n = r.getCurrentConfig({
     location: t
   }, {

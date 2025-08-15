@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 53425, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -24,7 +24,7 @@ let g = Chunk73800.memo(function(e) {
     withGuildIcon: g
   } = e, {
     density: m
-  } = (0, s.TCT)(), b = (0, a.Wu)([c.Z], () => l.map(e => c.Z.getChannel(e)).filter(d.lm), [l]), O = (0, a.e7)([u.ZP], () => {
+  } = (0, s.TCT)(), b = (0, a.Wu)([c.Z], () => l.map(e => c.Z.getChannel(e)).filter(d.lm), [l]), _ = (0, a.e7)([u.ZP], () => {
     let e = b[b.length - 1];
     if (null == e) return 0;
     let t = u.ZP.getVoiceStates(e.guild_id)[e.id];
@@ -42,7 +42,7 @@ let g = Chunk73800.memo(function(e) {
           [h.spineBorderWithGuildIcon]: g
         }),
         style: {
-          bottom: ("cozy" === m ? 28 : 24) + O
+          bottom: ("cozy" === m ? 28 : 24) + _
         }
       }), b.map((e, t) => (0, r.jsx)(p.Z, {
         thread: e,

@@ -1,12 +1,13 @@
-/** Chunk was on 99956 **/
+/** Chunk was on 81498 **/
 /** chunk id: 893729, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => C
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk518738 = require("./518738.js"),
@@ -19,67 +20,67 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk914933 = require("./914933.js");
 
-function E(e) {
+function C(e) {
   let {
     guildId: t,
     role: n,
-    theme: l,
-    content: E = g.intl.string(g.t["6OSasb"]),
-    className: O
-  } = e, y = (0, u.e7)([m.default], () => m.default.getCurrentUser()), S = p.ZP.useName(t, null, y), j = (0, s.Kz)(n), _ = i.useMemo(() => {
+    theme: s,
+    content: C = v.intl.string(v.t["6OSasb"]),
+    className: b
+  } = e, y = (0, o.e7)([p.default], () => p.default.getCurrentUser()), O = g.ZP.useName(t, null, y), S = (0, u.Kz)(n), E = r.useMemo(() => {
     var e, t;
     return (0, c.e5)((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), i.forEach(function(t) {
+          var i;
+          i = n[t], t in e ? Object.defineProperty(e, t, {
+            value: i,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = i
         })
       }
       return e
     }({}, (0, d.ZP)({
       channelId: "0",
-      content: E,
+      content: C,
       tts: true,
       type: true,
       messageReference: true,
       allowedMentions: true,
       author: y
     })), t = t = {
-      state: v.yb.SENT,
+      state: f.yb.SENT,
       id: "0"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var i = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, i)
       }
       return n
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [y, E]), h = {
-    nick: S,
+  }, [y, C]), _ = {
+    nick: O,
     colorString: n.colorString,
     colorStrings: n.colorStrings
   };
-  return (0, r.jsx)(a.f6W, {
-    theme: l,
-    children: e => (0, r.jsx)("div", {
-      className: o()(e, b.container, O),
-      children: (0, r.jsx)(f.Z, {
+  return (0, i.jsx)(a.f6W, {
+    theme: s,
+    children: e => (0, i.jsx)("div", {
+      className: l()(e, m.container, b),
+      children: (0, i.jsx)(h.Z, {
         hideTimestamp: true,
-        author: h,
-        roleIcon: j,
-        message: _,
+        author: _,
+        roleIcon: S,
+        message: E,
         isGroupStart: true,
         disableInteraction: true
       })

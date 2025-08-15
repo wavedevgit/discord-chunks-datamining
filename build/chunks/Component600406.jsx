@@ -28,14 +28,14 @@ function h(e) {
 
 function m(e) {
   var t;
-  let n = (0, o.e7)([c.default], () => {
+  let n = (0, a.e7)([c.default], () => {
       let e = c.default.getCurrentUser();
       return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
     }),
     _ = i.useMemo(() => {
       var t;
       let n = h(e.url);
-      return null == (t = a.$.groups.find(e => e.stories.some(e => e.id === n))) ? true : t.stories.find(e => e.id === n)
+      return null == (t = o.$.groups.find(e => e.stories.some(e => e.id === n))) ? true : t.stories.find(e => e.id === n)
     }, [e.url]),
     p = null != (t = null == _ ? true : _.name) ? t : "Mana Playground",
     m = null != _ && null != _.docs ? (0, r.jsx)(s.eee, {

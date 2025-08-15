@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 771340, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 771340, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -10,7 +9,7 @@ var Chunk544891 = require("./544891.js"),
 let a = {
   fetchRegions(e) {
     r.tn.get({
-      url: o.ANM.REGIONS(e),
+      url: l.ANM.REGIONS(e),
       retries: 1,
       oldFormErrors: true,
       rejectWithError: true
@@ -26,7 +25,7 @@ let a = {
   },
   changeCallRegion(e, t) {
     r.tn.patch({
-      url: o.ANM.CALL(e),
+      url: l.ANM.CALL(e),
       body: {
         region: t
       },

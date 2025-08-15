@@ -1,8 +1,8 @@
-/** Chunk was on 54273 **/
+/** Chunk was on 86357 **/
 /** chunk id: 703180, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  MemberListContentSettingsMenu: () => h,
-  Z: () => p
+  MemberListContentSettingsMenu: () => p,
+  Z: () => h
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -31,10 +31,10 @@ function d(e) {
   }
   return e
 }
-let h = e => {
+let p = e => {
     let {
       closePopout: t
-    } = e, i = (0, l.e7)([o.Z], () => o.Z.hidden);
+    } = e, i = (0, l.e7)([s.Z], () => s.Z.hidden);
     return (0, r.jsx)(a.v2r, {
       onSelect: () => {},
       navId: "member-list-settings-menu",
@@ -58,13 +58,13 @@ let h = e => {
           label: u.intl.string(u.t.AhNYub),
           checked: i,
           action: () => {
-            (0, s.lY)(), null == t || t()
+            (0, o.lY)(), null == t || t()
           }
         })]
       })
     })
   },
-  p = () => {
+  h = () => {
     let e = Chunk73800.useRef(null);
     return (0, Chunk255367.jsx)(Chunk481060.yRy, {
       targetElementRef: module,
@@ -75,7 +75,7 @@ let h = e => {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(h, {
+        return (0, r.jsx)(p, {
           closePopout: t
         })
       },

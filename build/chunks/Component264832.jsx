@@ -15,10 +15,10 @@ function s(e) {
     href: n
   } = e;
   return null == n ? t : (0, r.jsx)(i.eee, {
-    className: a.link,
+    className: o.link,
     href: n,
     onClick: e => {
-      e.stopPropagation(), o.q({
+      e.stopPropagation(), a.q({
         href: n
       }, e)
     },

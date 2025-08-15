@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 920888, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 920888, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => O
 }), require("./388685.js"), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk127947 = require("./127947.js"),
   Chunk893973 = require("./893973.js");
 
-function g(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,43 +27,33 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function b(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = (e, t) => null == e && null == t || e === t,
-  v = (e, t) => e.findIndex(e => O(e.emoji.id, null == t ? true : t.id) && O(e.emoji.name, null == t ? true : t.name)),
-  I = (e, t) => {
-    if (null == t) return e;
-    let n = v(e, t);
-    return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
-  };
-class T extends Chunk73800.PureComponent {
+let C = (e, t) => null == e && null == t || e === t;
+class v extends Chunk73800.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let n = e.message.reactions.length;
     return 0 === t.reactionsCount && n > 0 ? {
@@ -80,27 +69,27 @@ class T extends Chunk73800.PureComponent {
       disableReactionCreates: t,
       disableReactionUpdates: n,
       isLurking: i,
-      isGuest: o,
-      isPendingMember: g,
-      isForumToolbar: E,
-      channel: b,
-      className: y,
-      forceAddReactions: O,
-      reactionClassName: v,
-      useChatFontScaling: I,
-      forceHideReactionCreates: T,
-      remainingReactions: S,
-      combinedReactions: A,
-      visibleReactionsCount: N
+      isGuest: l,
+      isPendingMember: h,
+      isForumToolbar: b,
+      channel: E,
+      className: C,
+      forceAddReactions: v,
+      reactionClassName: O,
+      useChatFontScaling: y,
+      forceHideReactionCreates: x,
+      remainingReactions: j,
+      combinedReactions: I,
+      visibleReactionsCount: S
     } = this.props, {
-      disableTransitionAppear: C
-    } = this.state, R = I ? Chunk893973 : Chunk127947, P = N > 0;
-    if (!P && !O) return null;
-    let w = O || P;
+      disableTransitionAppear: T
+    } = this.state, P = y ? Chunk893973 : Chunk127947, N = S > 0;
+    if (!N && !v) return null;
+    let A = v || N;
     return (0, Chunk255367.jsxs)(Chunk215569.W, {
       component: "div",
-      className: a()(R.reactions, y),
-      transitionAppear: !C,
+      className: a()(P.reactions, C),
+      transitionAppear: !T,
       role: "group",
       transitionLeave: false,
       id: (0, Chunk453687.bY)(module),
@@ -111,77 +100,81 @@ class T extends Chunk73800.PureComponent {
         isHovered: false
       }),
       children: [(0, Chunk255367.jsx)(Chunk434624.l, {
-        reactions: A,
+        reactions: I,
         message: module,
         readOnly: require,
         isLurking: Chunk73800,
         isGuest: Chunk120356,
-        isPendingMember: g,
-        isForumToolbar: E,
-        useChatFontScaling: I,
-        className: v
-      }), S > 0 && (0, Chunk255367.jsx)(Chunk481060.P3F, {
+        isPendingMember: h,
+        isForumToolbar: b,
+        useChatFontScaling: y,
+        className: O
+      }), j > 0 && (0, Chunk255367.jsx)(Chunk481060.P3F, {
         onClick: t => {
-          t.stopPropagation(), (0, _.op)(b, e)
+          t.stopPropagation(), (0, m.op)(E, e)
         },
-        className: a()(R.reaction, v, R.remainingReactions),
+        className: a()(P.reaction, O, P.remainingReactions),
         "aria-label": Chunk388032.intl.string(Chunk388032.t.lfIHs7),
         children: (0, Chunk255367.jsxs)(Chunk481060.Text, {
-          className: R.reactionInner,
+          className: P.reactionInner,
           variant: "text-sm/normal",
-          children: ["+", S]
+          children: ["+", j]
         })
-      }), !exports && !T && (0, Chunk255367.jsx)(Chunk60174.X, {
-        tabIndex: w || this.state.isHovered ? 0 : false,
+      }), !exports && !x && (0, Chunk255367.jsx)(Chunk60174.X, {
+        tabIndex: A || this.state.isHovered ? 0 : false,
         type: Chunk566006.O.NORMAL,
         message: module,
-        channel: b,
-        useChatFontScaling: I,
+        channel: E,
+        useChatFontScaling: y,
         isHovered: this.state.isHovered,
         className: a()({
-          [R.forceShow]: w
+          [P.forceShow]: A
         })
       })]
     })
   }
   constructor(...e) {
-    super(...e), g(this, "state", {
+    super(...e), h(this, "state", {
       disableTransitionAppear: true,
       reactionsCount: this.props.message.reactions.length,
       isHovered: false
     })
   }
 }
-let S = e => {
+let O = e => {
   let {
     message: t,
     maxReactions: n,
-    hoistReaction: o
+    hoistReaction: l
   } = e, {
     combinedReactions: a,
-    remainingReactions: s,
-    visibleReactionsCount: l
+    remainingReactions: o,
+    visibleReactionsCount: s
   } = i.useMemo(() => {
     let e = [],
-      r = I(t.reactions, o),
+      r = ((e, t) => {
+        if (null == t) return e;
+        let n = e.findIndex(e => C(e.emoji.id, null == t ? true : t.id) && C(e.emoji.name, null == t ? true : t.name));
+        return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
+      })(t.reactions, l),
       i = null != n && n < r.length ? r.slice(0, n) : r,
       a = r.length - i.length,
-      s = r.length;
+      o = r.length;
     return i.forEach(t => {
-      t.burst_count > 0 && e.push(y(E({}, t), {
+      t.burst_count > 0 && e.push(E(b({}, t), {
         type: c.O.BURST
-      })), t.count > 0 && e.push(y(E({}, t), {
+      })), t.count > 0 && e.push(E(b({}, t), {
         type: c.O.NORMAL
-      })), null != t.me_vote && --s
+      })), null != t.me_vote && --o
     }), {
       combinedReactions: e,
-      visibleReactionsCount: s,
+      visibleReactionsCount: o,
       remainingReactions: a
     }
-  }, [o, n, t.reactions]);
-  return (0, r.jsx)(T, y(E({}, e), {
-    visibleReactionsCount: l,
+  }, [l, n, t.reactions]);
+  return (0, r.jsx)(v, E(b({}, e), {
+    visibleReactionsCount: s,
     combinedReactions: a,
-    remainingReactions: s
+    remainingReactions: o
   }))
 }

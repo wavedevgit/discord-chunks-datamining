@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 562224, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 562224, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 }), require("./388685.js");
 var Chunk268146 = require("./268146.js"),
   Chunk872810 = require("./872810.js"),
@@ -21,93 +20,74 @@ var Chunk268146 = require("./268146.js"),
   Chunk143135 = require("./143135.js"),
   Chunk37113 = require("./37113.js"),
   Chunk761274 = require("./761274.js");
-
-function y(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function O(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      y(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function v(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function T(e) {
-  return e.hasOwnProperty("pid")
-}
-
-function S(e) {
-  if (T(e)) return {
-    pid: e.pid
-  };
-  let t = (0, g.Z)(true, e, o.ZP.getRunningGames()),
-    n = !(0, p.isWindows)() || null == t || (null == e ? true : e.id.startsWith(r.vA.CAMERA)) || null == t ? null : t.pid;
-  return null != n ? {
-    pid: n
-  } : {
-    sourceId: e.id,
-    sourceName: e.name,
-    sourceIcon: e.icon
-  }
-}
-async function A(e, t) {
-  var n, p, g, y, v, T, A, N;
-  let C = _.default.getCurrentUser(),
-    R = f.Z.getVoiceChannelId(),
-    P = c.Z.getChannel(R),
-    w = null == P ? true : P.getGuildId(),
-    D = null == (n = u.Z.getGuild(w)) ? true : n.premiumTier;
-  if (null == C || null == P || null == R) return [false, "no user or channel"];
-  let L = null;
-  if (null == (L = "number" == typeof e ? o.ZP.getGameForPID(e) : e)) return [false, "no source"];
-  if (!d.Z.getUseSystemScreensharePicker() && !await a.Z.hasPermission(b.Eu.SCREEN_RECORDING, {
+async function C(e, t) {
+  var n, C, v, O, y, x, j, I, S, T;
+  let P = m.default.getCurrentUser(),
+    N = p.Z.getVoiceChannelId(),
+    A = c.Z.getChannel(N),
+    w = null == A ? true : A.getGuildId(),
+    Z = null == (n = u.Z.getGuild(w)) ? true : n.premiumTier;
+  if (null == P || null == A || null == N) return [false, "no user or channel"];
+  let R = null;
+  if (null == (R = "number" == typeof e ? l.ZP.getGameForPID(e) : e)) return [false, "no source"];
+  if (!d.Z.getUseSystemScreensharePicker() && !await a.Z.hasPermission(E.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
     })) return [false, "no permission"];
   let {
-    preset: x,
-    resolution: M,
-    fps: j,
+    preset: L,
+    resolution: D,
+    fps: M,
     soundshareEnabled: k
-  } = l.Z.getState(), U = null != (g = null == t ? true : t.preset) ? g : x, [G, B] = null != (y = (0, m.Z)(U, C, D)) ? y : [], Z = null != (v = null != G ? G : null == t ? true : t.resolution) ? v : M, F = null != (T = null != B ? B : null == t ? true : t.fps) ? T : j, V = null != (A = null == t ? true : t.previewDisabled) ? A : s.I0.getSetting(), H = null != (N = null == t ? true : t.soundshareEnabled) ? N : k;
-  return (0, h.Z)(U, Z, F, C, D, P) || (U = E.tI.PRESET_VIDEO, Z = E.LY.RESOLUTION_720, F = E.ws.FPS_30), (0, i.Rc)({
+  } = s.Z.getState(), U = null != (v = null == t ? true : t.preset) ? v : L, [F, B] = null != (O = (0, g.Z)(U, P, Z)) ? O : [], G = null != (y = null != F ? F : null == t ? true : t.resolution) ? y : D, H = null != (x = null != B ? B : null == t ? true : t.fps) ? x : M, V = null != (j = null == t ? true : t.previewDisabled) ? j : o.I0.getSetting(), z = null != (I = null == t ? true : t.soundshareEnabled) ? I : k;
+  return (0, _.Z)(U, G, H, P, Z, A) || (U = b.tI.PRESET_VIDEO, G = b.LY.RESOLUTION_720, H = b.ws.FPS_30), (0, i.Rc)({
     preset: U,
-    resolution: Z,
-    frameRate: F,
-    soundshareEnabled: H
-  }), (0, i.WH)(w, R, I(O({}, S(L)), {
-    audioSourceId: (null == (p = L.id) ? true : p.startsWith(r.vA.CAMERA)) ? null == t ? true : t.audioSourceId : true,
-    sound: H,
+    resolution: G,
+    frameRate: H,
+    soundshareEnabled: z
+  }), (0, i.WH)(w, N, (S = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = r
+      })
+    }
+    return e
+  }({}, function(e) {
+    if (e.hasOwnProperty("pid")) return {
+      pid: e.pid
+    };
+    let t = (0, h.Z)(true, e, l.ZP.getRunningGames()),
+      n = !(0, f.isWindows)() || null == t || (null == e ? true : e.id.startsWith(r.vA.CAMERA)) || null == t ? null : t.pid;
+    return null != n ? {
+      pid: n
+    } : {
+      sourceId: e.id,
+      sourceName: e.name,
+      sourceIcon: e.icon
+    }
+  }(R)), T = T = {
+    audioSourceId: (null == (C = R.id) ? true : C.startsWith(r.vA.CAMERA)) ? null == t ? true : t.audioSourceId : true,
+    sound: z,
     previewDisabled: V,
     goLiveModalDurationMs: null == t ? true : t.goLiveModalDurationMs,
     analyticsLocations: null == t ? true : t.analyticsLocations
-  })), [true, true]
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(S, Object.getOwnPropertyDescriptors(T)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(T)).forEach(function(e) {
+    Object.defineProperty(S, e, Object.getOwnPropertyDescriptor(T, e))
+  }), S)), [true, true]
 }

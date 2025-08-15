@@ -1,7 +1,7 @@
 /** Chunk was on 12241 **/
-/** chunk id: 115512, original params: n,e,t (module,exports,require) **/
+/** chunk id: 115512, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => o
+  default: () => u
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -12,20 +12,20 @@ var Chunk481060 = require("./481060.js"),
   Chunk905041 = require("./905041.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function o(n) {
+function u(t) {
   let {
-    src: e,
-    onSelect: t
-  } = n, o = (0, a.Z)(e), u = (0, d.Z)(e, null);
-  return s.isPlatformEmbedded ? (0, i.jsxs)(l.v2r, {
+    src: n,
+    onSelect: e
+  } = t, u = (0, o.Z)(n), d = (0, c.Z)(n, null);
+  return r.isPlatformEmbedded ? (0, l.jsxs)(i.v2r, {
     navId: "image-context",
-    onClose: r.Zy,
-    "aria-label": c.intl.string(c.t.Zow2V1),
-    onSelect: t,
-    children: [(0, i.jsx)(l.kSQ, {
-      children: o
-    }), (0, i.jsx)(l.kSQ, {
+    onClose: a.Zy,
+    "aria-label": s.intl.string(s.t.Zow2V1),
+    onSelect: e,
+    children: [(0, l.jsx)(i.kSQ, {
       children: u
+    }), (0, l.jsx)(i.kSQ, {
+      children: d
     })]
   }) : null
 }

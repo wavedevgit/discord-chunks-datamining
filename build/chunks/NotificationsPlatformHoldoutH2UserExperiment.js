@@ -46,7 +46,7 @@ function i(e) {
     }
   }
 }
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-07_growth_holdout_h2",
     label: "Growth Holdout H2",
@@ -68,9 +68,9 @@ let o = (0, Chunk818083.B)({
     }]
   }),
   {
-    useHoldoutExperiment: a,
+    useHoldoutExperiment: o,
     getHoldoutExperiment: s
-  } = i([o, (0, Chunk818083.B)({
+  } = i([a, (0, Chunk818083.B)({
     kind: "user",
     id: "2025-07_access_holdout_h2",
     label: "Access Holdout H2",
@@ -94,7 +94,7 @@ let o = (0, Chunk818083.B)({
   {
     useHoldoutExperiment: l,
     getHoldoutExperiment: c
-  } = i([o, (0, Chunk818083.B)({
+  } = i([a, (0, Chunk818083.B)({
     kind: "user",
     id: "2025-07_experiences_holdout_h2",
     label: "Experiences Holdout H2",
@@ -118,7 +118,7 @@ let o = (0, Chunk818083.B)({
   {
     useHoldoutExperiment: u,
     getHoldoutExperiment: d
-  } = i([o, (0, Chunk818083.B)({
+  } = i([a, (0, Chunk818083.B)({
     kind: "user",
     id: "2025-07_notifications_platform_holdout_h2",
     label: "NotificationsPlatform Holdout H2",

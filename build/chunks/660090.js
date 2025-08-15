@@ -1,84 +1,80 @@
-/** Chunk was on web.js **/
-/** chunk id: 660090, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 660090, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => o
 }), require("./642613.js"), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk471518 = require("./471518.js"),
   Chunk70956 = require("./70956.js"),
   Chunk314734 = require("./314734.js");
 
-function s(e) {
-  let {
-    alphabeticalSortedCommands: t
-  } = e;
-  return r.useMemo(() => {
-    if (t.length <= 1) return {
-      popularSortedCommands: t,
-      canSort: false
-    };
-    let e = false,
-      n = t.map((t, n) => (e = e || null != t.global_popularity_rank, {
-        command: t,
-        alphabeticalSortIndex: n
-      }));
-    return e ? (n.sort((e, t) => {
-      let n = e.command.global_popularity_rank,
-        r = t.command.global_popularity_rank;
-      if (null != n && null != r) {
-        if (n !== r) return n - r
-      } else if (null != n) return false;
-      else if (null != r) return 1;
-      return e.alphabeticalSortIndex - t.alphabeticalSortIndex
-    }), {
-      popularSortedCommands: n.map(e => {
-        let {
-          command: t
-        } = e;
-        return t
-      }),
-      canSort: true
-    }) : {
-      popularSortedCommands: t,
-      canSort: false
-    }
-  }, [t])
-}
-
-function l(e) {
+function o(e) {
   let {
     sectionId: t,
     commandsByActiveSection: n
-  } = e, [l, c] = r.useState(a.bS.ALPHABETICAL), u = r.useMemo(() => {
-    var e, r;
-    return null != (r = null == (e = n.find(e => e.section.id === t)) ? true : e.data) ? r : []
+  } = e, [o, s] = l.useState(a.bS.ALPHABETICAL), c = l.useMemo(() => {
+    var e, l;
+    return null != (l = null == (e = n.find(e => e.section.id === t)) ? true : e.data) ? l : []
   }, [n, t]), {
-    popularSortedCommands: d,
-    canSort: f
-  } = s({
-    alphabeticalSortedCommands: u
+    popularSortedCommands: u,
+    canSort: d
+  } = function(e) {
+    let {
+      alphabeticalSortedCommands: t
+    } = e;
+    return l.useMemo(() => {
+      if (t.length <= 1) return {
+        popularSortedCommands: t,
+        canSort: false
+      };
+      let e = false,
+        n = t.map((t, n) => (e = e || null != t.global_popularity_rank, {
+          command: t,
+          alphabeticalSortIndex: n
+        }));
+      return e ? (n.sort((e, t) => {
+        let n = e.command.global_popularity_rank,
+          l = t.command.global_popularity_rank;
+        if (null != n && null != l) {
+          if (n !== l) return n - l
+        } else if (null != n) return false;
+        else if (null != l) return 1;
+        return e.alphabeticalSortIndex - t.alphabeticalSortIndex
+      }), {
+        popularSortedCommands: n.map(e => {
+          let {
+            command: t
+          } = e;
+          return t
+        }),
+        canSort: true
+      }) : {
+        popularSortedCommands: t,
+        canSort: false
+      }
+    }, [t])
+  }({
+    alphabeticalSortedCommands: c
   });
-  r.useEffect(() => {
-    let e = t;
-    i.i6(e, {
-      dontRefetchMs: o.Z.Millis.DAY
+  l.useEffect(() => {
+    i.i6(t, {
+      dontRefetchMs: r.Z.Millis.DAY
     })
-  }, [t]), r.useLayoutEffect(() => {
-    f && c(a.bS.POPULAR)
-  }, [f]);
-  let _ = u;
-  switch (l) {
+  }, [t]), l.useLayoutEffect(() => {
+    d && s(a.bS.POPULAR)
+  }, [d]);
+  let p = c;
+  switch (o) {
     case a.bS.POPULAR:
-      _ = d;
+      p = u;
       break;
     case a.bS.ALPHABETICAL:
-      _ = u
+      p = c
   }
   return {
-    sortOrder: l,
-    setSortOrder: c,
-    commands: _,
-    canSort: f
+    sortOrder: o,
+    setSortOrder: s,
+    commands: p,
+    canSort: d
   }
 }

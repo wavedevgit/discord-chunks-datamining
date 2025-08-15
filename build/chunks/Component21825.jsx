@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 21825, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 21825, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => c
 });
@@ -10,7 +9,7 @@ var Chunk997638 = require("./997638.jsx"),
   Chunk113570 = require("./113570.jsx"),
   Chunk482641 = require("./482641.jsx"),
   Chunk613725 = require("./613725.jsx");
-let l = Object.freeze({
+let s = Object.freeze({
     "voice-conversations": {
       popoutPosition: "right",
       highPriority: true,
@@ -59,4 +58,4 @@ let l = Object.freeze({
       popoutPosition: "right"
     }
   }),
-  c = e => e in l ? l[e] : null
+  c = e => e in s ? s[e] : null

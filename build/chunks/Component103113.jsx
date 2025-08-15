@@ -63,39 +63,39 @@ function P(e) {
     setPopoutRef: L,
     closePopout: x,
     disableUserProfileLink: M = __OVERLAY__,
-    newAnalyticsLocations: j = [],
-    disableAutoFocus: k = false
+    newAnalyticsLocations: k = [],
+    disableAutoFocus: j = false
   } = e, U = (0, h.ZP)(t.id, n), {
     analyticsLocations: G
-  } = (0, l.ZP)([...j, s.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
+  } = (0, l.ZP)([...k, s.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
     channelId: C,
     messageId: P,
     roleId: w
-  }), Z = i.useRef(null), F = (0, a.Z)(Z);
+  }), V = i.useRef(null), F = (0, o.Z)(V);
   i.useEffect(() => {
-    null == L || L(null == Z ? true : Z.current)
-  }, [Z, L]);
-  let V = () => {
+    null == L || L(null == V ? true : V.current)
+  }, [V, L]);
+  let Z = () => {
       null == x || x(), (0, m.openUserProfileModal)(R({
         sourceAnalyticsLocations: G,
         hideRestrictedProfile: true
       }, B))
     },
     H = !M && (0, c.Z)(t.id),
-    Y = () => H ? (0, r.jsx)(o.sNh, {
+    Y = () => H ? (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),
       action: () => {
-        V(), (0, p.pQ)(R({
+        Z(), (0, p.pQ)(R({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: G
         }, B))
       }
     }) : null,
-    W = k ? "div" : o.VqE,
+    W = j ? "div" : a.VqE,
     K = (0, u.Dt)(),
     z = f.ZP.useName(n, C, t);
   return (0, r.jsx)(l.Gt, {
@@ -107,10 +107,10 @@ function P(e) {
       fetchEndedAt: null == U ? true : U.fetchEndedAt,
       isLoaded: null == U ? true : U.isLoaded,
       children: (0, r.jsxs)(W, {
-        ref: Z,
+        ref: V,
         "aria-labelledby": K,
-        children: [(0, r.jsx)(o.nn4, {
-          children: (0, r.jsx)(o.H, {
+        children: [(0, r.jsx)(a.nn4, {
+          children: (0, r.jsx)(a.H, {
             id: K,
             children: A.intl.format(A.t.KRe1Fh, {
               name: z
@@ -138,15 +138,15 @@ function P(e) {
               guildId: n,
               channelId: C,
               themeType: S.lY.POPOUT,
-              onOpenProfile: H ? V : true
+              onOpenProfile: H ? Z : true
             })]
-          }), (0, r.jsxs)(o.Ttm, {
+          }), (0, r.jsxs)(a.Ttm, {
             fade: true,
             className: N.body,
             children: [(0, r.jsx)(v.Z, {
               user: t,
               nickname: f.ZP.getName(n, C, t),
-              onOpenProfile: H ? V : true,
+              onOpenProfile: H ? Z : true,
               tags: (0, r.jsx)(E.Z, {
                 displayProfile: U,
                 themeType: S.lY.POPOUT,

@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   Co: () => r,
-  WL: () => o,
+  WL: () => a,
   at: () => i
 });
 let r = 450,
   i = 360,
-  o = e => {
+  a = e => {
     let {
       maxWidth: t,
       minWidth: n

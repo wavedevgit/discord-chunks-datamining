@@ -1,7 +1,7 @@
 /** Chunk was on 76233 **/
-/** chunk id: 171494, original params: t,n,l (module,exports,require) **/
+/** chunk id: 171494, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => k
+  default: () => g
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -20,67 +20,67 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk266973 = require("./266973.js");
 
-function k(t) {
-  var n, l;
+function g(t) {
+  var n, e;
   let {
-    guildId: k,
-    userId: v,
-    anaylticsLocations: y,
-    transitionState: T,
-    onClose: g
+    guildId: g,
+    userId: w,
+    anaylticsLocations: x,
+    transitionState: C,
+    onClose: D
   } = t, {
-    analyticsLocations: x
-  } = (0, c.ZP)(), D = null != (l = null != (n = null == y ? true : y[0]) ? n : null == x ? true : x[0]) ? l : null, S = (0, e.e7)([m.default], () => m.default.getUser(v), [v]), [Z, _] = (0, p.ZP)(v, k), [E, N] = i.useState(false), U = i.useCallback(async () => {
-    if (null != S) {
-      N(true);
+    analyticsLocations: k
+  } = (0, c.ZP)(), T = null != (e = null != (n = null == x ? true : x[0]) ? n : null == k ? true : k[0]) ? e : null, _ = (0, a.e7)([p.default], () => p.default.getUser(w), [w]), [S, Z] = (0, f.ZP)(w, g), [E, P] = i.useState(false), U = i.useCallback(async () => {
+    if (null != _) {
+      P(true);
       try {
-        await u.Z.setCommunicationDisabledDuration(k, v, null, null, D), (0, s.showToast)((0, s.createToast)(h.intl.string(h.t["/Mmbfn"]), s.ToastType.SUCCESS)), g()
+        await o.Z.setCommunicationDisabledDuration(g, w, null, null, T), (0, r.showToast)((0, r.createToast)(b.intl.string(b.t["/Mmbfn"]), r.ToastType.SUCCESS)), D()
       } catch (t) {
-        (0, s.showToast)((0, s.createToast)(h.intl.string(h.t.epyCur), s.ToastType.FAILURE))
+        (0, r.showToast)((0, r.createToast)(b.intl.string(b.t.epyCur), r.ToastType.FAILURE))
       } finally {
-        N(false)
+        P(false)
       }
     }
-  }, [k, S, v, g, D]), I = i.useCallback(() => {
-    _ || g()
-  }, [_, g]);
-  return ((0, r.ZP)(() => {
-    null != S && f.default.track(b.rMx.OPEN_MODAL, {
-      type: C.av,
-      guild_id: k,
-      other_user_id: S.id
+  }, [g, _, w, D, T]), j = i.useCallback(() => {
+    Z || D()
+  }, [Z, D]);
+  return ((0, u.ZP)(() => {
+    null != _ && h.default.track(v.rMx.OPEN_MODAL, {
+      type: m.av,
+      guild_id: g,
+      other_user_id: _.id
     })
   }), i.useEffect(() => {
-    (null == S || null == k) && g()
-  }), null == S || null == k) ? null : (0, a.jsx)(o.Modal, {
-    transitionState: T,
-    onClose: g,
-    title: h.intl.string(h.t["+ZD3oq"]),
-    subtitle: h.intl.format(h.t["t+abNT"], {
-      username: S.username,
-      countdown: t => null == Z ? null : (0, a.jsx)(d.Z, {
-        className: w.countdown,
-        deadline: new Date(Z),
-        onInterval: I,
+    (null == _ || null == g) && D()
+  }), null == _ || null == g) ? null : (0, l.jsx)(s.Modal, {
+    transitionState: C,
+    onClose: D,
+    title: b.intl.string(b.t["+ZD3oq"]),
+    subtitle: b.intl.format(b.t["t+abNT"], {
+      username: _.username,
+      countdown: t => null == S ? null : (0, l.jsx)(d.Z, {
+        className: y.countdown,
+        deadline: new Date(S),
+        onInterval: j,
         showUnits: true,
         stopAtOneSec: true
       })
     }),
     actions: [{
-      text: h.intl.string(h.t["ETE/oK"]),
-      onClick: g,
+      text: b.intl.string(b.t["ETE/oK"]),
+      onClick: D,
       variant: "secondary"
     }, {
-      text: h.intl.string(h.t.qXtNtb),
+      text: b.intl.string(b.t.qXtNtb),
       onClick: U,
       loading: E,
       variant: "critical-primary"
     }],
-    children: (0, a.jsx)(s.Text, {
+    children: (0, l.jsx)(r.Text, {
       variant: "text-md/normal",
       color: "interactive-normal",
-      children: h.intl.format(h.t.KtENkJ, {
-        link: C.cu
+      children: b.intl.format(b.t.KtENkJ, {
+        link: m.cu
       })
     })
   })

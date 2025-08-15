@@ -39,9 +39,9 @@ function p(e) {
 let h = {
   getActiveErrors: () => (0, Chunk150457.LN)() ? Chunk199902.Z.getAllActiveStreams().reduce((e, t) => {
     var n;
-    let o = null == (n = s.Z.getRTCConnection((0, i.V9)(t))) ? true : n.getMediaEngineConnectionId();
-    if (null == o || t.ownerId === a.default.getId() || t.state === f.jm8.PAUSED) return e;
-    let _ = (0, d.hj)(o, t.ownerId);
+    let a = null == (n = s.Z.getRTCConnection((0, i.V9)(t))) ? true : n.getMediaEngineConnectionId();
+    if (null == a || t.ownerId === o.default.getId() || t.state === f.jm8.PAUSED) return e;
+    let _ = (0, d.hj)(a, t.ownerId);
     if (null == _) return e;
     let h = r.Z.getParticipant(t.channelId, (0, i.V9)(t));
     if (null == h) return e;

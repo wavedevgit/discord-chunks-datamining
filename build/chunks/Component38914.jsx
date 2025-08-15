@@ -1,7 +1,7 @@
-/** Chunk was on 84691 **/
+/** Chunk was on 32160 **/
 /** chunk id: 38914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => c
+  q: () => l
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -10,7 +10,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk156716 = require("./156716.js"),
   Chunk302681 = require("./302681.js");
-let c = () => {
+let l = () => {
   let e = [Chunk388032.t.E1NP29, Chunk388032.t.kpMomJ, Chunk388032.t.xT1Vfn, Chunk388032.t.myyAEh, Chunk388032.t.zTk8Ul];
   return (0, Chunk255367.jsxs)("div", {
     className: Chunk156716.container,
@@ -23,13 +23,13 @@ let c = () => {
     }), (0, Chunk255367.jsx)("div", {
       className: Chunk156716.benefits,
       children: module.map((e, t) => (0, r.jsxs)("div", {
-        className: o.benefitRow,
-        children: [(0, r.jsx)(i.kmB, {
-          color: i.TVs.colors.WHITE
-        }), (0, r.jsx)(i.Text, {
+        className: c.benefitRow,
+        children: [(0, r.jsx)(a.kmB, {
+          color: a.TVs.colors.WHITE
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "always-white",
-          children: l.intl.string(e)
+          children: o.intl.string(e)
         })]
       }, t))
     })]

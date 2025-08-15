@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 836636, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 71088 **/
+/** chunk id: 836636, original params: e,n,t (module,exports,require) **/
 module.exports = {
   title: "title_cd2e37",
   description: "description_cd2e37"

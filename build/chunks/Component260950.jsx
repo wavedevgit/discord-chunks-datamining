@@ -71,7 +71,7 @@ function N() {
   Chunk73800.useEffect(() => {
     T()
   }, [T]);
-  let E = Chunk73800.useMemo(() => Chunk255078.filter(e => e.status !== v.O0b.ACTIVE).sort((e, t) => e.id > t.id ? false : 1), [Chunk255078]),
+  let E = Chunk73800.useMemo(() => Chunk255078.filter(e => e.status !== f.O0b.ACTIVE).sort((e, t) => e.id > t.id ? false : 1), [Chunk255078]),
     S = async () => {
       await Chunk544891.tn.post({
         url: "/debug/subscription",
@@ -145,7 +145,7 @@ function N() {
           variant: "heading-lg/semibold",
           className: Chunk451429.header,
           children: "Previous Subscriptions"
-        }), E.map(e => (0, n.jsx)(f.Z, {
+        }), E.map(e => (0, n.jsx)(v.Z, {
           subscription: e,
           onUpdated: T
         }, e.id))]

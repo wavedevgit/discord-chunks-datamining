@@ -1,7 +1,7 @@
 /** Chunk was on 2634 **/
-/** chunk id: 548841, original params: t,i,n (module,exports,require) **/
+/** chunk id: 548841, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => c
+  default: () => o
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -9,25 +9,25 @@ var Chunk82659 = require("./82659.jsx"),
   Chunk287734 = require("./287734.js"),
   Chunk471253 = require("./471253.js"),
   Chunk388032 = require("./388032.jsx");
-let c = t => {
+let o = t => {
   let {
-    channel: i,
-    transitionState: n,
-    onClose: c
+    channel: n,
+    transitionState: e,
+    onClose: o
   } = t;
-  return (0, a.jsx)(r.Modal, {
-    transitionState: n,
-    title: l.intl.string(l.t.xrYNBA),
-    subtitle: l.intl.string(l.t.TP1D8v),
-    onClose: c,
+  return (0, i.jsx)(r.Modal, {
+    transitionState: e,
+    title: u.intl.string(u.t.xrYNBA),
+    subtitle: u.intl.string(u.t.TP1D8v),
+    onClose: o,
     actions: [{
-      text: l.intl.string(l.t["ETE/oK"]),
-      onClick: c,
+      text: u.intl.string(u.t["ETE/oK"]),
+      onClick: o,
       variant: "secondary"
     }, {
-      text: l.intl.string(l.t.saZaRU),
+      text: u.intl.string(u.t.saZaRU),
       onClick: () => {
-        (0, e.NZ)(i), s.default.disconnect(), c()
+        (0, a.NZ)(n), l.default.disconnect(), o()
       },
       variant: "critical-primary"
     }]

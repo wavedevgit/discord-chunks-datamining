@@ -51,8 +51,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -60,8 +60,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let m = {
@@ -91,11 +91,11 @@ class g extends(r = Chunk73800.PureComponent) {
     let {
       hideSeparator: e
     } = this.state;
-    return Chunk73800.Children.map(this.props.children, t => o.isValidElement(t) ? t.type === l.hzk || t.type === l.YAO ? o.cloneElement(t, {
+    return Chunk73800.Children.map(this.props.children, t => a.isValidElement(t) ? t.type === l.hzk || t.type === l.YAO ? a.cloneElement(t, {
       scrollerRef: this.setRef,
       onScroll: this.handleScroll,
       onResize: this.handleScroll
-    }) : t.type === l.xBx && e ? o.cloneElement(t, {
+    }) : t.type === l.xBx && e ? a.cloneElement(t, {
       separator: false
     }) : t : t)
   }
@@ -105,8 +105,8 @@ class g extends(r = Chunk73800.PureComponent) {
         className: t,
         children: n,
         tag: r,
-        size: o,
-        fullscreenOnMobile: a
+        size: a,
+        fullscreenOnMobile: o
       } = module,
       l = p(module, ["className", "children", "tag", "size", "fullscreenOnMobile"]);
     return (0, Chunk255367.jsx)(r, _(d({

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 987329, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 987329, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -15,33 +14,33 @@ var Chunk255367 = require("./255367.js"),
   Chunk871499 = require("./871499.jsx"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx");
-let p = e => {
+let f = e => {
   let {
     channel: t,
     remoteMode: n = false
   } = e, {
-    parentAnalyticsLocation: p
-  } = (0, a.ZP)(), h = i.useRef(null);
-  return (0, r.jsx)(o.yRy, {
-    targetElementRef: h,
+    parentAnalyticsLocation: f
+  } = (0, a.ZP)(), m = i.useRef(null);
+  return (0, r.jsx)(l.yRy, {
+    targetElementRef: m,
     renderPopout: e => {
       let {
         closePopout: i
       } = e;
       return (0, r.jsx)(u.Z, {
-        children: (0, r.jsx)(s.Z, {
+        children: (0, r.jsx)(o.Z, {
           onClose: i,
           channel: t,
           remoteMode: n,
-          onInteraction: (0, c.u)("MoreSettingsMenu", p, {
-            entrypoint: f.A5.THREE_DOT
+          onInteraction: (0, c.u)("MoreSettingsMenu", f, {
+            entrypoint: p.A5.THREE_DOT
           })
         })
       })
     },
     align: "right",
     position: "top",
-    animation: o.yRy.Animation.FADE,
+    animation: l.yRy.Animation.FADE,
     spacing: 16,
     children: (e, t) => {
       let {
@@ -50,13 +49,13 @@ let p = e => {
         isShown: i
       } = t;
       return (0, r.jsx)(d.d, {
-        ref: h,
+        ref: m,
         isTrayButton: true,
         onClick: e => {
-          (0, l.v)(p, l.d.MORE), n(e)
+          (0, s.v)(f, s.d.MORE), n(e)
         },
-        label: _.intl.string(_.t.PdRCRk),
-        iconComponent: o.xhG,
+        label: h.intl.string(h.t.PdRCRk),
+        iconComponent: l.xhG,
         color: "primaryDark",
         isActive: i
       })

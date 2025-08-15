@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 773276, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 773276, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => _
+  default: () => m
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -16,33 +15,33 @@ var Chunk399606 = require("./399606.js"),
   Chunk160877 = require("./160877.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function m(e) {
   let {
     channelId: t,
     messageId: n,
-    transitionState: _,
-    onClose: p
-  } = e, h = (0, i.e7)([c.Z], () => c.Z.getFpMessageInfo(n)), m = h.attachments.map(e => e.id), g = h.attachments.map(e => e.filename), {
-    reportFalsePositive: E,
-    isReportFalsePositiveLoading: b
+    transitionState: m,
+    onClose: f
+  } = e, _ = (0, i.e7)([c.Z], () => c.Z.getFpMessageInfo(n)), g = _.attachments.map(e => e.id), h = _.attachments.map(e => e.filename), {
+    reportFalsePositive: b,
+    isReportFalsePositiveLoading: E
   } = (0, u.$)({
     onSuccess: () => {
-      (0, d.s)(p), a.Z.disableFalsePositiveButton(t, n)
+      (0, d.s)(f), a.Z.disableFalsePositiveButton(t, n)
     },
     onError: () => {
-      (0, o.showToast)((0, o.createToast)(f.intl.string(f.t.R0RpRU), o.ToastType.FAILURE))
+      (0, l.showToast)((0, l.createToast)(p.intl.string(p.t.R0RpRU), l.ToastType.FAILURE))
     },
     report: () => {
-      (0, s.Eq)(t, n, m, g)
+      (0, o.Eq)(t, n, g, h)
     }
   });
-  return h.attachments.length > 0 || p(), (0, r.jsx)(d.$, {
+  return _.attachments.length > 0 || f(), (0, r.jsx)(d.$, {
     messageId: n,
     channelId: t,
-    isReportFalsePositiveLoading: b,
-    analyticsContext: l.UU.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW,
-    onConfirmPress: E,
-    transitionState: _,
-    onClose: p
+    isReportFalsePositiveLoading: E,
+    analyticsContext: s.UU.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW,
+    onConfirmPress: b,
+    transitionState: m,
+    onClose: f
   })
 }

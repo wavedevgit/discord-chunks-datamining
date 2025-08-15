@@ -1,89 +1,85 @@
-/** Chunk was on web.js **/
-/** chunk id: 195875, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 195875, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk381538 = require("./381538.js");
 
 function i() {
-  return (i = Chunk381538 || function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = arguments[t];
-      for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+  return (i = Chunk381538 || function(t) {
+    for (var e = 1; e < arguments.length; e++) {
+      var r = arguments[e];
+      for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (t[n] = r[n])
     }
-    return e
+    return t
   }).apply(this, arguments)
-}
-
-function o(e, t) {
-  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
 var Chunk691099 = require("./691099.js"),
   Chunk152477 = require("./152477.js"),
   Chunk73800 = require("./73800.js"),
   Chunk467159 = require("./467159.js");
-module.exports = function(e) {
-  function t() {
-    return e.apply(this, arguments) || this
+module.exports = function(t) {
+  function e() {
+    return t.apply(this, arguments) || this
   }
-  o(t, e);
-  var n = t.prototype;
-  return n.shouldComponentUpdate = function(e) {
-    var t = this.props.editorState,
-      n = e.editorState;
-    if (t.getDirectionMap() !== n.getDirectionMap() || t.getSelection().getHasFocus() !== n.getSelection().getHasFocus()) returntrue;
-    var r = n.getNativelyRenderedContent(),
-      i = t.isInCompositionMode(),
-      o = n.isInCompositionMode();
-    if (t === n || null !== r && n.getCurrentContent() === r || i && o) returnfalse;
-    var a = t.getCurrentContent(),
-      s = n.getCurrentContent(),
-      l = t.getDecorator(),
-      c = n.getDecorator();
-    return i !== o || a !== s || l !== c || n.mustForceSelection()
-  }, n.render = function() {
-    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, o = e.customStyleMap, u = e.customStyleFn, d = e.editorState, f = e.editorKey, _ = e.textDirectionality, p = d.getCurrentContent(), h = d.getSelection(), m = d.mustForceSelection(), g = d.getDecorator(), E = c(d.getDirectionMap()), b = p.getBlocksAsArray()[0], y = [], O = b; O;) {
-      var v = O.getKey(),
-        I = {
-          blockRenderMap: t,
-          blockRendererFn: n,
-          blockStyleFn: r,
-          contentState: p,
-          customStyleFn: u,
-          customStyleMap: o,
-          decorator: g,
-          editorKey: f,
-          editorState: d,
-          forceSelection: m,
-          selection: h,
-          block: O,
-          direction: _ || E.get(v),
-          tree: d.getBlockTree(v)
+  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t;
+  var r = e.prototype;
+  return r.shouldComponentUpdate = function(t) {
+    var e = this.props.editorState,
+      r = t.editorState;
+    if (e.getDirectionMap() !== r.getDirectionMap() || e.getSelection().getHasFocus() !== r.getSelection().getHasFocus()) returntrue;
+    var n = r.getNativelyRenderedContent(),
+      i = e.isInCompositionMode(),
+      o = r.isInCompositionMode();
+    if (e === r || null !== n && r.getCurrentContent() === n || i && o) returnfalse;
+    var a = e.getCurrentContent(),
+      u = r.getCurrentContent(),
+      s = e.getDecorator(),
+      c = r.getDecorator();
+    return i !== o || a !== u || s !== c || r.mustForceSelection()
+  }, r.render = function() {
+    for (var t = this.props, e = t.blockRenderMap, r = t.blockRendererFn, n = t.blockStyleFn, c = t.customStyleMap, l = t.customStyleFn, f = t.editorState, p = t.editorKey, h = t.textDirectionality, d = f.getCurrentContent(), g = f.getSelection(), y = f.mustForceSelection(), v = f.getDecorator(), m = s(f.getDirectionMap()), _ = d.getBlocksAsArray()[0], b = [], S = _; S;) {
+      var w = S.getKey(),
+        x = {
+          blockRenderMap: e,
+          blockRendererFn: r,
+          blockStyleFn: n,
+          contentState: d,
+          customStyleFn: l,
+          customStyleMap: c,
+          decorator: v,
+          editorKey: p,
+          editorState: f,
+          forceSelection: y,
+          selection: g,
+          block: S,
+          direction: h || m.get(w),
+          tree: f.getBlockTree(w)
         },
-        T = (t.get(O.getType()) || t.get("unstyled")).wrapper;
-      y.push({
-        block: l.createElement(a, i({
-          key: v
-        }, I)),
-        wrapperTemplate: T,
-        key: v,
-        offsetKey: s.encode(v, 0, 0)
+        k = (e.get(S.getType()) || e.get("unstyled")).wrapper;
+      b.push({
+        block: u.createElement(o, i({
+          key: w
+        }, x)),
+        wrapperTemplate: k,
+        key: w,
+        offsetKey: a.encode(w, 0, 0)
       });
-      var S = O.getNextSiblingKey();
-      O = S ? p.getBlockForKey(S) : null
+      var C = S.getNextSiblingKey();
+      S = C ? d.getBlockForKey(C) : null
     }
-    for (var A = [], N = 0; N < y.length;) {
-      var C = y[N];
-      if (C.wrapperTemplate) {
-        var R = [];
-        do R.push(y[N].block), N++; while (N < y.length && y[N].wrapperTemplate === C.wrapperTemplate);
-        var P = l.cloneElement(C.wrapperTemplate, {
-          key: C.key + "-wrap",
-          "data-offset-key": C.offsetKey
-        }, R);
-        A.push(P)
-      } else A.push(C.block), N++
+    for (var E = [], D = 0; D < b.length;) {
+      var O = b[D];
+      if (O.wrapperTemplate) {
+        var K = [];
+        do K.push(b[D].block), D++; while (D < b.length && b[D].wrapperTemplate === O.wrapperTemplate);
+        var T = u.cloneElement(O.wrapperTemplate, {
+          key: O.key + "-wrap",
+          "data-offset-key": O.offsetKey
+        }, K);
+        E.push(T)
+      } else E.push(O.block), D++
     }
-    return l.createElement("div", {
+    return u.createElement("div", {
       "data-contents": "true"
-    }, A)
-  }, t
+    }, E)
+  }, e
 }(Chunk73800.Component)

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk717976 = require("./717976.js"),
   Chunk692547 = require("./692547.js"),
   Chunk186325 = require("./186325.js"),
@@ -66,22 +66,22 @@ let E = {
   T = "M4.08643 11.0903L5.67742 9.49929L9.4485 13.2704L7.85751 14.8614L4.08643 11.0903Z";
 
 function S(e, t, n, i) {
-  let o = e.to({
+  let a = e.to({
       output: [t, n]
     }),
-    a = i ? [b, b, I, I] : [b, O, O, I],
+    o = i ? [b, b, I, I] : [b, O, O, I],
     l = i ? [y, y, T, T] : [y, v, v, T];
   return (0, r.jsxs)("svg", {
     viewBox: "0 0 20 20",
     fill: "none",
     children: [(0, r.jsx)(s.animated.path, {
-      fill: o,
+      fill: a,
       d: e.to({
         range: [0, .3, .7, 1],
-        output: a
+        output: o
       })
     }), (0, r.jsx)(s.animated.path, {
-      fill: o,
+      fill: a,
       d: e.to({
         range: [0, .3, .7, 1],
         output: l
@@ -93,7 +93,7 @@ let A = function(e) {
   let {
     id: t,
     onChange: n,
-    checked: o,
+    checked: a,
     disabled: p,
     className: m,
     focusProps: b,
@@ -106,7 +106,7 @@ let A = function(e) {
   } = (0, f.q_F)({
     config: E,
     opacity: p ? .5 : 1,
-    state: I ? o ? .7 : .3 : +!!o
+    state: I ? a ? .7 : .3 : +!!a
   }, "animate-always");
 
   function P(e) {
@@ -126,8 +126,8 @@ let A = function(e) {
     offset: false,
     children: (0, r.jsxs)(s.animated.div, {
       "data-toggleable-component": "switch",
-      className: a()(_.container, m, {
-        [_.checked]: o,
+      className: o()(_.container, m, {
+        [_.checked]: a,
         [_.disabled]: p
       }),
       onMouseDown: () => !p && T(true),
@@ -181,7 +181,7 @@ let A = function(e) {
         onKeyDown: w,
         onKeyUp: D,
         onChange: P,
-        checked: o,
+        checked: a,
         disabled: p
       })]
     })

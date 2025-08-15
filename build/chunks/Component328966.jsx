@@ -1,37 +1,31 @@
-/** Chunk was on web.js **/
-/** chunk id: 328966, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 31978 **/
+/** chunk id: 328966, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   H: () => s,
   Z: () => c
 });
-var Chunk255367 = require("./255367.js");
+var r, Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk318713 = require("./318713.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk724913 = require("./724913.js"),
-  s = function(e) {
-    return e[e.WITH_CONTENT = 0] = "WITH_CONTENT", e[e.AFTER_ACCESSORIES = 1] = "AFTER_ACCESSORIES", e
-  }({});
-
-function l(e, t) {
-  return t || null != e.content && 0 !== e.content.length ? 0 : 1
-}
+  s = ((r = {})[r.WITH_CONTENT = 0] = "WITH_CONTENT", r[r.AFTER_ACCESSORIES = 1] = "AFTER_ACCESSORIES", r);
 
 function c(e) {
   let {
     message: t,
     compact: n,
-    location: s
+    location: r
   } = e;
-  return t.isEdited() && null != t.editedTimestamp && s === l(t, n) ? (0, r.jsxs)(r.Fragment, {
-    children: [" ", (0, r.jsx)(i.Z, {
+  return t.isEdited() && null != t.editedTimestamp ? r !== (n || null != t.content && 0 !== t.content.length ? 0 : 1) ? null : (0, l.jsxs)(l.Fragment, {
+    children: [" ", (0, l.jsx)(o.Z, {
       timestamp: t.editedTimestamp,
       isEdited: true,
       isInline: false,
-      children: (0, r.jsxs)("span", {
+      children: (0, l.jsxs)("span", {
         className: a.edited,
-        children: ["(", o.intl.string(o.t.C8sXIC), ")"]
+        children: ["(", i.intl.string(i.t.C8sXIC), ")"]
       })
     })]
   }) : null

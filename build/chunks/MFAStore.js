@@ -2,7 +2,7 @@
 /** chunk id: 325067, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => E
 });
 var r, o, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -13,11 +13,11 @@ let d = false,
   u = [],
   p = "",
   h = false,
-  f = {
+  _ = {
     viewNonce: "",
     regenerateNonce: ""
   };
-class _ extends(o = Chunk442837.ZP.Store) {
+class f extends(o = Chunk442837.ZP.Store) {
   getVerificationKey() {
     return p
   }
@@ -28,18 +28,18 @@ class _ extends(o = Chunk442837.ZP.Store) {
     return d
   }
   getNonces() {
-    return f
+    return _
   }
   get hasSeenBackupPrompt() {
     return h
   }
-}(r = "displayName") in _ ? Object.defineProperty(_, r, {
+}(r = "displayName") in f ? Object.defineProperty(f, r, {
   value: "MFAStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : _[r] = "MFAStore";
-let S = new _(Chunk570140.Z, {
+}) : f[r] = "MFAStore";
+let E = new f(Chunk570140.Z, {
   MFA_ENABLE_SUCCESS: function(e) {
     let {
       token: t,
@@ -73,7 +73,7 @@ let S = new _(Chunk570140.Z, {
     let {
       nonces: t
     } = e;
-    f = t
+    _ = t
   },
   MFA_SEEN_BACKUP_CODE_PROMPT: function() {
     h = true

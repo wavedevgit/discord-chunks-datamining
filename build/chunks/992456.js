@@ -1,5 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 992456, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 992456, original params: t,e,r (module,exports,require) **/
 "use strict";
 var Chunk581079 = require("./581079.js"),
   i = /\.textClipping$/,
@@ -7,30 +7,27 @@ var Chunk581079 = require("./581079.js"),
     "text/plain": true,
     "text/html": true,
     "text/rtf": true
-  },
-  a = 5e3;
-
-function s(e, t) {
-  if (!n.g.FileReader || e.type && !(e.type in o)) return void t("");
-  if ("" === e.type) {
-    var a = "";
-    i.test(e.name) && (a = e.name.replace(i, "")), t(a);
-    return
-  }
-  var s = new FileReader;
-  s.onload = function() {
-    var e = s.result;
-    "string" != typeof e && r(false), t(e)
-  }, s.onerror = function() {
-    t("")
-  }, s.readAsText(e)
-}
-module.exports = function(e, t) {
-  var n = 0,
-    r = [];
-  e.forEach(function(i) {
-    s(i, function(i) {
-      n++, i && r.push(i.slice(0, a)), n == e.length && t(r.join("\r"))
+  };
+module.exports = function(t, e) {
+  var a = 0,
+    u = [];
+  t.forEach(function(s) {
+    ! function(t, e) {
+      if (!r.g.FileReader || t.type && !(t.type in o)) return e("");
+      if ("" === t.type) {
+        var a = "";
+        i.test(t.name) && (a = t.name.replace(i, "")), e(a);
+        return
+      }
+      var u = new FileReader;
+      u.onload = function() {
+        var t = u.result;
+        "string" != typeof t && n(false), e(t)
+      }, u.onerror = function() {
+        e("")
+      }, u.readAsText(t)
+    }(s, function(r) {
+      a++, r && u.push(r.slice(0, 5e3)), a == t.length && e(u.join("\r"))
     })
   })
 }

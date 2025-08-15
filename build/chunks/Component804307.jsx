@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 804307, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 804307, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,12 +13,12 @@ var Chunk255367 = require("./255367.js"),
   Chunk98880 = require("./98880.jsx"),
   Chunk202874 = require("./202874.js");
 
-function f(e) {
+function p(e) {
   let {
     look: t = u.U4.LARGE_BANNER
-  } = e, n = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
-    styleLarge: o,
-    styleSmall: f
+  } = e, n = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), {
+    styleLarge: r,
+    styleSmall: p
   } = i.useMemo(() => ({
     styleLarge: {
       width: "".concat(10 + 50 * Math.random(), "%")
@@ -28,41 +27,41 @@ function f(e) {
       width: "".concat(30 + 60 * Math.random(), "%")
     }
   }), []);
-  return (0, r.jsxs)("div", {
+  return (0, l.jsxs)("div", {
     className: a()(d.container, d.loadingAnimation, {
       [d.noAnimation]: n,
       [d.containerBorderRadius]: t !== u.U4.ROW,
       [d.rowContainer]: t === u.U4.ROW
     }),
-    children: [(0, r.jsx)("div", {
+    children: [(0, l.jsx)("div", {
       className: a()(d.bannerImage, {
         [d.mediumBanner]: t === u.U4.MEDIUM_BANNER,
         [d.largeBanner]: t === u.U4.LARGE_BANNER
       })
-    }), (0, r.jsxs)("div", {
+    }), (0, l.jsxs)("div", {
       className: a()(d.appDetailsContainer, {
         [d.appDetailsRowContainer]: t === u.U4.ROW
       }),
-      children: [(0, r.jsx)("div", {
+      children: [(0, l.jsx)("div", {
         className: a()(d.iconPlaceholder, {
           [d.rowIconPlaceholder]: t === u.U4.ROW
         })
-      }), (0, r.jsxs)("div", {
+      }), (0, l.jsxs)("div", {
         className: d.textContainer,
-        children: [(0, r.jsx)("div", {
+        children: [(0, l.jsx)("div", {
           className: d.textPlaceholder,
-          style: o,
-          children: (0, r.jsx)(l.X6q, {
+          style: r,
+          children: (0, l.jsx)(s.X6q, {
             className: d.hidden,
             variant: "heading-md/semibold",
             color: "header-primary",
             lineClamp: 1,
             children: "_"
           })
-        }), (0, r.jsx)("div", {
+        }), (0, l.jsx)("div", {
           className: d.textPlaceholder,
-          style: f,
-          children: (0, r.jsx)(l.Text, {
+          style: p,
+          children: (0, l.jsx)(s.Text, {
             className: d.hidden,
             variant: "text-sm/normal",
             color: "text-secondary",
@@ -70,7 +69,7 @@ function f(e) {
             children: "_"
           })
         })]
-      }), t === u.U4.ROW && (0, r.jsx)("div", {
+      }), t === u.U4.ROW && (0, l.jsx)("div", {
         className: d.rowDivider
       })]
     })]

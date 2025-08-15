@@ -2,12 +2,12 @@
 /** chunk id: 179118, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./388685.js"), require("./642613.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -38,11 +38,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk769212 = require("./769212.js");
 let M = 1500;
 
-function j(e) {
+function k(e) {
   let {
     giftCode: t,
     application: n,
-    sku: o,
+    sku: a,
     subscriptionPlan: s,
     selectedGiftStyle: l,
     onClose: u,
@@ -50,19 +50,19 @@ function j(e) {
     giftRecipient: p,
     giftMessageError: g,
     isSendingMessage: y
-  } = e, [O, I] = i.useState(f.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), j = _ || null != l && null != p, U = (null == o ? true : o.productLine) === w.POd.COLLECTIBLES, G = (0, E.Z)(), {
+  } = e, [O, I] = i.useState(f.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), k = _ || null != l && null != p, U = (null == a ? true : a.productLine) === w.POd.COLLECTIBLES, G = (0, E.Z)(), {
     selectedGiftingPromotionReward: B
-  } = (0, P.wD)(), Z = null == G ? true : G.giftPurchaseConfirmation, F = (0, b.tK)(null == B ? true : B.skuId), V = (0, b.a5)(s) && null != F && null != Z, H = () => null != s ? s.skuId : null != o ? o.id : null, Y = () => {
+  } = (0, P.wD)(), V = null == G ? true : G.giftPurchaseConfirmation, F = (0, b.tK)(null == B ? true : B.skuId), Z = (0, b.a5)(s) && null != F && null != V, H = () => null != s ? s.skuId : null != a ? a.id : null, Y = () => {
     let e;
-    return null != g ? L.intl.string(L.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? j ? V ? Z.monthGiftText : L.t["4ZJ+7e"] : L.t["P+z55e"] : j ? V ? Z.yearGiftText : L.t.p0pZXF : L.t.bXqk3t, L.intl.format(e, {
+    return null != g ? L.intl.string(L.t.qB8ayc) : null == s ? null : (e = s.interval === D.rV.MONTH ? k ? Z ? V.monthGiftText : L.t["4ZJ+7e"] : L.t["P+z55e"] : k ? Z ? V.yearGiftText : L.t.p0pZXF : L.t.bXqk3t, L.intl.format(e, {
       skuName: (0, C.aq)(s.id),
       intervalCount: s.intervalCount
     }))
   }, W = () => null != p || _ && null == g ? L.intl.string(L.t.zOmK9P) : null != g ? L.intl.string(L.t.d1lrmZ) : L.intl.string(L.t["/s1xR0"]), K = (e, t) => {
-    null != o && (0, N.dM)(new v.Z({
+    null != a && (0, N.dM)(new v.Z({
       code: t,
       maxUses: 1
-    }), o), (0, A.JG)(e, () => I(f.kO8.Modes.SUCCESS), () => I(f.kO8.Modes.ERROR)), setTimeout(() => {
+    }), a), (0, A.JG)(e, () => I(f.kO8.Modes.SUCCESS), () => I(f.kO8.Modes.ERROR)), setTimeout(() => {
       I(f.kO8.Modes.DEFAULT)
     }, M)
   }, z = () => {
@@ -101,7 +101,7 @@ function j(e) {
     children: [(0, r.jsx)("div", {
       className: x.blurb,
       children: Y()
-    }), null == g && (0, r.jsx)(k, {
+    }), null == g && (0, r.jsx)(j, {
       giftCode: t,
       onClose: u
     }), (0, r.jsx)("div", {
@@ -135,8 +135,8 @@ function j(e) {
       type: f.RAz.PULSING_ELLIPSIS
     })]
   }) : (0, r.jsxs)("div", {
-    className: a()(x.confirmation, {
-      [x.seasonalConfirmationPadding]: V
+    className: o()(x.confirmation, {
+      [x.seasonalConfirmationPadding]: Z
     }),
     children: [null != n ? (0, r.jsx)(m.Z, {
       game: n,
@@ -145,15 +145,15 @@ function j(e) {
       skuId: H()
     }) : null, (0, r.jsx)(f.X6q, {
       variant: "heading-lg/semibold",
-      className: a()({
+      className: o()({
         [x.header]: null == l && !U,
         [x.headerCustomGifting]: null != l && !U
       }),
       children: W()
-    }), _ && null != p && null == g || j ? X() : q()]
+    }), _ && null != p && null == g || k ? X() : q()]
   })
 }
-let k = e => {
+let j = e => {
   let {
     giftCode: t,
     onClose: n
@@ -161,7 +161,7 @@ let k = e => {
   i.useEffect(() => {
     p.Z.fetchRelationships(), (0, y._)()
   }, []);
-  let [o, a] = i.useState(), [s, d] = i.useState(false), [m, E] = i.useState(false), {
+  let [a, o] = i.useState(), [s, d] = i.useState(false), [m, E] = i.useState(false), {
     userAffinities: b,
     isLoading: v
   } = (0, c.cj)([O.Z], () => ({
@@ -187,19 +187,19 @@ let k = e => {
         renderLeading: () => v ? (0, r.jsx)(f.$jN, {
           type: f.RAz.PULSING_ELLIPSIS
         }) : null,
-        value: o,
+        value: a,
         onChange: e => {
-          a(e), d(false)
+          o(e), d(false)
         },
         options: w.map(e => ({
           value: e,
           label: "".concat(R.ZP.getUserTag(e))
         }))
       }), (0, r.jsx)(u.z, {
-        disabled: null == o,
+        disabled: null == a,
         loading: m,
         onClick: () => {
-          E(true), (0, g.YD)(o, t).then(() => {
+          E(true), (0, g.YD)(a, t).then(() => {
             n(), (0, _.Ou)()
           }).catch(() => {
             d(true), E(false)

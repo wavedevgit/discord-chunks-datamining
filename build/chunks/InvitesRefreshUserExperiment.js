@@ -4,11 +4,11 @@
 require.d(exports, {
   ZP: () => l,
   _k: () => s,
-  jW: () => a
+  jW: () => o
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-03_invites_refresh",
   label: "Invites Refresh",
@@ -45,14 +45,14 @@ let o = (0, Chunk818083.B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   let {
     location: t
   } = e, {
     enabled: n,
     entrypoints: r,
     modal: i
-  } = o.getCurrentConfig({
+  } = a.getCurrentConfig({
     location: t
   });
   return {
@@ -69,7 +69,7 @@ function s(e) {
     enabled: n,
     entrypoints: r,
     modal: i
-  } = o.useExperiment({
+  } = a.useExperiment({
     location: t
   });
   return {
@@ -78,4 +78,4 @@ function s(e) {
     modal: i
   }
 }
-let l = o
+let l = a

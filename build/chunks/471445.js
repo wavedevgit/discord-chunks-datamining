@@ -20,21 +20,21 @@ var Chunk481060 = require("./481060.js"),
 function _(e, t, n, r) {
   if (null == e) return null;
   if (e.id === (null == t ? true : t.rulesChannelId)) return f.intl.string(f.t["/7EhaW"]);
-  let o = (0, i.Gb)(e);
+  let a = (0, i.Gb)(e);
   switch (e.type) {
     case d.d4z.GUILD_TEXT:
       if (null != e.linkedLobby) return f.intl.string(f.t.Lt3PAA);
       if (r) return f.intl.string(f.t.LKpYbm);
-      if (o) return f.intl.string(f.t.vvASTU);
+      if (a) return f.intl.string(f.t.vvASTU);
       if ((0, c.Z)(e)) return f.intl.string(f.t.jQ1plp);
       return f.intl.string(f.t.t1yj0N);
     case d.d4z.GUILD_FORUM:
-      let a = e.isMediaChannel();
-      if (o) return a ? f.intl.string(f.t["pZ/fYW"]) : f.intl.string(f.t.ibmpPj);
-      if ((0, c.Z)(e)) return a ? f.intl.string(f.t.gfVCfH) : f.intl.string(f.t.UbLM3N);
-      return a ? f.intl.string(f.t.seKITE) : f.intl.string(f.t["0sDXdn"]);
+      let o = e.isMediaChannel();
+      if (a) return o ? f.intl.string(f.t["pZ/fYW"]) : f.intl.string(f.t.ibmpPj);
+      if ((0, c.Z)(e)) return o ? f.intl.string(f.t.gfVCfH) : f.intl.string(f.t.UbLM3N);
+      return o ? f.intl.string(f.t.seKITE) : f.intl.string(f.t["0sDXdn"]);
     case d.d4z.GUILD_MEDIA:
-      if (o) return f.intl.string(f.t["pZ/fYW"]);
+      if (a) return f.intl.string(f.t["pZ/fYW"]);
       if ((0, c.Z)(e)) return f.intl.string(f.t.gfVCfH);
       return f.intl.string(f.t.seKITE);
     case d.d4z.GUILD_STAGE_VOICE:
@@ -46,7 +46,7 @@ function _(e, t, n, r) {
       if ((0, c.Z)(e)) return f.intl.string(f.t.qaY8Dg);
       return f.intl.string(f.t["0kBmo6"]);
     case d.d4z.GUILD_ANNOUNCEMENT:
-      if (o) return f.intl.string(f.t.eRc6o6);
+      if (a) return f.intl.string(f.t.eRc6o6);
       if ((0, c.Z)(e)) return f.intl.string(f.t.EHLQws);
       return f.intl.string(f.t.GtDRi4);
     case d.d4z.GUILD_STORE:
@@ -77,7 +77,7 @@ function p(e, t) {
     } = n;
   if (null == e) return null;
   null == t && (t = s.Z.getGuild(e.getGuildId()));
-  let g = (0, o.n)(null == t ? true : t.id, [s.Z, l.default, a.ZP]);
+  let g = (0, a.n)(null == t ? true : t.id, [s.Z, l.default, o.ZP]);
   if (e.isModeratorReportChannel()) return r.U65;
   if ((null == e ? true : e.id) === (null == t ? true : t.rulesChannelId)) return r.snC;
   let E = (0, i.Gb)(e);

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 574657, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 574657, original params: e,t,n (module,exports,require) **/
 module.exports = {
   pro: "pro__30cbe",
   tip: "tip__30cbe",

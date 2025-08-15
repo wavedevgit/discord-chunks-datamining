@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 584656, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 584656, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   t: () => a
 });
@@ -15,7 +14,7 @@ function a(e) {
     id: n
   } = e;
   (0, i.showToast)((0, i.createToast)(t, i.ToastType.CUSTOM, {
-    component: (0, r.jsx)(o.o, {
+    component: (0, r.jsx)(l.o, {
       text: t
     }, n)
   }))

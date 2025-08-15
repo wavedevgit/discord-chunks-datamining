@@ -7,9 +7,9 @@ require.d(exports, {
   Hw: () => c,
   Kd: () => i,
   YN: () => r,
-  k4: () => a,
+  k4: () => o,
   kG: () => d,
-  xP: () => o,
+  xP: () => a,
   yh: () => u
 });
 var r = function(e) {
@@ -18,10 +18,10 @@ var r = function(e) {
   i = function(e) {
     return e[e.GUILD_MEMBER_LIST = 1] = "GUILD_MEMBER_LIST", e
   }({}),
-  o = function(e) {
+  a = function(e) {
     return e[e.CARD_POPOUT_OPEN = 2] = "CARD_POPOUT_OPEN", e[e.REACTION_EMOJI_REACT_SENT = 3] = "REACTION_EMOJI_REACT_SENT", e[e.DM_REACTION_MESSAGE_SENT = 4] = "DM_REACTION_MESSAGE_SENT", e[e.CHANNEL_REACTION_MESSAGE_SENT = 5] = "CHANNEL_REACTION_MESSAGE_SENT", e[e.VOICE_CHANNEL_JOINED = 6] = "VOICE_CHANNEL_JOINED", e[e.VOICE_CHANNEL_PREVIEWED = 7] = "VOICE_CHANNEL_PREVIEWED", e[e.OPENED_GAME_PROFILE = 8] = "OPENED_GAME_PROFILE", e[e.COPIED_LEADERBOARD_ROW = 9] = "COPIED_LEADERBOARD_ROW", e
   }({});
-let a = 1e4,
+let o = 1e4,
   s = 7,
   l = "https://www.igdb.com/about",
   c = ["1395438911366627454"],

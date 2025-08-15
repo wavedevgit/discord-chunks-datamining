@@ -27,8 +27,8 @@ t.prototype.clear = function() {
     if (0 === i) return n._cursor = t, n;
     n._ancestors.push(t), t = t.get_child(i > 0)
   }
-  for (var o = n._ancestors.length - 1; o >= 0; --o)
-    if (0 > r(e, (t = n._ancestors[o]).data)) return n._cursor = t, n._ancestors.length = o, n;
+  for (var a = n._ancestors.length - 1; a >= 0; --a)
+    if (0 > r(e, (t = n._ancestors[a]).data)) return n._cursor = t, n._ancestors.length = a, n;
   return n._ancestors.length = 0, n
 }, t.prototype.upperBound = function(e) {
   for (var t = this.lowerBound(e), n = this._comparator; null !== t.data() && 0 === n(t.data(), e);) t.next();

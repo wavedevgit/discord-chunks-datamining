@@ -47,11 +47,11 @@ function b(e, t) {
     Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(t, a))
   }), e
 }
-let f = Object.keys(Chunk500949.jQ).map(e => ({
+let v = Object.keys(Chunk500949.jQ).map(e => ({
     value: e,
     label: e
   })),
-  v = Array.from(Array.from(Object.keys(Chunk407146.b).reduce((e, t) => {
+  f = Array.from(Array.from(Object.keys(Chunk407146.b).reduce((e, t) => {
     let [a] = t.split(".");
     return e.add(a), e
   }, new Set))).map(e => ({
@@ -68,7 +68,7 @@ function j(e) {
   } = t, [i, s] = r.useState(null), o = (0, n.jsxs)("div", {
     className: h.section,
     children: [(0, n.jsx)(d.VcW, {
-      options: v,
+      options: f,
       placeholder: "Select a scale to edit...",
       value: true,
       onChange: e => {
@@ -106,13 +106,13 @@ function j(e) {
         })
       }, e.name))
     })]
-  }), u = l.find(e => e.name === i), f = null != u ? (0, n.jsx)(g, {
+  }), u = l.find(e => e.name === i), v = null != u ? (0, n.jsx)(g, {
     onClose: () => s(null),
     scale: u,
     setState: a
   }) : o;
   return (0, n.jsx)("div", {
-    children: f
+    children: v
   })
 }
 
@@ -125,7 +125,7 @@ function g(e) {
     name: c,
     base: p,
     darkness: b,
-    lightness: v,
+    lightness: f,
     showColumnarPalettePreview: j,
     colorSpace: g,
     easingStrength: _ = 1,
@@ -185,7 +185,7 @@ function g(e) {
         type: d.geA.DESCRIPTION,
         children: "The color space used to generate the palette. Different color spaces will produce different results."
       }), (0, n.jsx)(d.q4e, {
-        options: f,
+        options: v,
         value: g,
         onChange: e => (0, x.t4)(c, e, a),
         popoutLayerContext: m.O$
@@ -193,13 +193,13 @@ function g(e) {
     }), (0, n.jsxs)(d.hjN, {
       title: "Luminance",
       children: [(0, n.jsx)(d.xJW, {}), (0, n.jsxs)(d.xJW, {
-        title: "Lighten (".concat((100 * v).toFixed(), "%)"),
+        title: "Lighten (".concat((100 * f).toFixed(), "%)"),
         children: [(0, n.jsx)(d.R94, {
           type: d.geA.DESCRIPTION,
           children: "Decrease the darkness of the darkest color in the palette. Increasing this makes the darker colors in the palette lighter."
         }), (0, n.jsx)(d.iRW, {
           onValueRender: () => null,
-          initialValue: v,
+          initialValue: f,
           stickToMarkers: true,
           markers: Array.from({
             length: 21

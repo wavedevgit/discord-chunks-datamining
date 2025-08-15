@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 59727 **/
 /** chunk id: 996701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -17,28 +17,28 @@ let u = e => {
     data: {
       url: t,
       link_text: n,
-      link_description: i,
-      is_localized: o
+      link_description: a,
+      is_localized: s
     }
   } = e;
-  return o ? (0, r.jsxs)(a.P3F, {
+  return s ? (0, r.jsxs)(l.P3F, {
     role: "link",
-    className: l()(d.linkButton, c.listElement),
+    className: i()(d.linkButton, c.listElement),
     onClick: () => {
-      (0, s.Z)(t)
+      (0, o.Z)(t)
     },
     children: [(0, r.jsxs)("div", {
       className: d.linkTextContainer,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(l.Text, {
         className: d.__invalid_linkText,
         variant: "text-md/semibold",
         children: n
-      }), null != i && "" !== i && (0, r.jsx)(a.Text, {
+      }), null != a && "" !== a && (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: i
+        children: a
       })]
-    }), (0, r.jsx)(a.Gr1, {
+    }), (0, r.jsx)(l.Gr1, {
       size: "sm",
       color: "currentColor",
       className: d.linkIcon
@@ -64,19 +64,19 @@ function m(e) {
         data: n
       }, "external-link+".concat(t))
     }),
-    i = t.some(e => {
+    a = t.some(e => {
       let {
         data: t
       } = e;
       return t.is_header_hidden
     });
   return (0, r.jsxs)("div", {
-    className: l()(d.linksContainer, c.listElementWrapper),
-    children: [!i && (0, r.jsx)(a.X6q, {
+    className: i()(d.linksContainer, c.listElementWrapper),
+    children: [!a && (0, r.jsx)(l.X6q, {
       variant: "heading-sm/semibold",
       color: "header-secondary",
       className: d.header,
-      children: o.intl.string(o.t.hvVgAQ)
+      children: s.intl.string(s.t.hvVgAQ)
     }), n]
   })
 }

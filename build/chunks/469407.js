@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 469407, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 469407, original params: e,t,n (module,exports,require) **/
 module.exports = {
   friendWrapper: "friendWrapper_bbd192",
   disabled: "disabled_bbd192",

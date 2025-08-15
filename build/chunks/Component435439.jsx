@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 435439, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 30243 **/
+/** chunk id: 435439, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => f
 });
 var Chunk255367 = require("./255367.js"),
   Chunk481060 = require("./481060.js"),
@@ -12,88 +11,71 @@ var Chunk255367 = require("./255367.js"),
   Chunk410441 = require("./410441.jsx"),
   Chunk206583 = require("./206583.js"),
   Chunk388032 = require("./388032.jsx");
-
-function d(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function f(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      d(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function _(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function h(e, t) {
-  if (null == e) return {};
-  var n, r, i = m(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function m(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-let g = {
+let d = {
     [Chunk206583.kG.SPOTIFY]: Chunk908841.Z,
     [Chunk206583.kG.CRUNCHYROLL]: Chunk481060.omf,
     [Chunk206583.kG.XBOX]: Chunk639351.Z,
     [Chunk206583.kG.PLAYSTATION]: Chunk374129.Z
   },
-  E = {
+  p = {
     [Chunk206583.kG.SPOTIFY]: () => Chunk388032.intl.string(Chunk388032.t["0ZB/XF"]),
     [Chunk206583.kG.CRUNCHYROLL]: () => Chunk388032.intl.string(Chunk388032.t.jdJYX1),
     [Chunk206583.kG.XBOX]: () => Chunk388032.intl.string(Chunk388032.t["Nfvo7+"]),
     [Chunk206583.kG.PLAYSTATION]: () => Chunk388032.intl.string(Chunk388032.t.fFl4jo)
   };
 
-function b(e) {
-  var t, {
-      type: n,
-      "aria-label": i
+function f(e) {
+  var t, r, l, {
+      type: i,
+      "aria-label": o
     } = e,
-    o = h(e, ["type", "aria-label"]);
-  let a = g[n];
-  if (null == a) return null;
-  let s = null != i ? i : null == (t = E[n]) ? true : t.call(E);
-  return (0, r.jsx)(l.Z, p(f({
-    Icon: a
-  }, o), {
-    "aria-label": s
-  }))
+    a = function(e, t) {
+      if (null == e) return {};
+      var r, n, l = function(e, t) {
+        if (null == e) return {};
+        var r, n, l = {},
+          i = Object.keys(e);
+        for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
+        return l
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var i = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
+      }
+      return l
+    }(e, ["type", "aria-label"]);
+  let s = d[i];
+  if (null == s) return null;
+  let u = null != o ? o : null == (l = p[i]) ? true : l.call(p);
+  return (0, n.jsx)(c.Z, (t = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var r = null != arguments[t] ? arguments[t] : {},
+        n = Object.keys(r);
+      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(r, e).enumerable
+      }))), n.forEach(function(t) {
+        var n;
+        n = r[t], t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
+      })
+    }
+    return e
+  }({
+    Icon: s
+  }, a), r = r = {
+    "aria-label": u
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+    var r = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var n = Object.getOwnPropertySymbols(e);
+      r.push.apply(r, n)
+    }
+    return r
+  })(Object(r)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+  }), t))
 }

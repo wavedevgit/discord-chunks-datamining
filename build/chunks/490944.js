@@ -1,5 +1,5 @@
-/** Chunk was on 82358 **/
-/** chunk id: 490944, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 30202 **/
+/** chunk id: 490944, original params: e,t,n (module,exports,require) **/
 module.exports = {
   container: "container__24a95",
   emojiContainer: "emojiContainer__24a95",

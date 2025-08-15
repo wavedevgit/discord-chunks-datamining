@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 673052, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 673052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -19,26 +18,26 @@ function d(e) {
     message: t,
     channel: n,
     compact: d
-  } = e, f = (0, a.ZP)(t), _ = (0, s.l)({
+  } = e, p = (0, a.ZP)(t), m = (0, o.l)({
     user: t.author,
     channelId: n.id,
     guildId: n.guild_id,
     messageId: t.id
-  })(f), p = (0, o.q)(t.applicationId);
-  if (null == p) return null;
-  let h = c.intl.format(c.t.mAtJTE, {
+  })(p), f = (0, l.q)(t.applicationId);
+  if (null == f) return null;
+  let _ = c.intl.format(c.t.mAtJTE, {
     username: t.author.username,
-    usernameHook: _,
-    applicationName: p.name,
+    usernameHook: m,
+    applicationName: f.name,
     applicationNameHook: () => (0, r.jsx)(i.Text, {
       className: u.applicationName,
       variant: "text-md/semibold",
       color: "header-primary",
-      children: p.name
-    }, p.name),
+      children: f.name
+    }, f.name),
     helpdeskArticle: "#"
   });
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(s.Z, {
     iconNode: (0, r.jsx)(i.DuK, {
       size: "sm",
       color: i.TVs.colors.STATUS_POSITIVE
@@ -46,6 +45,6 @@ function d(e) {
     timestamp: t.timestamp,
     compact: d,
     contentClassName: u.systemMessage,
-    children: h
+    children: _
   })
 }

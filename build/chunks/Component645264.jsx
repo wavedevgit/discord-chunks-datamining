@@ -1,7 +1,7 @@
 /** Chunk was on 36605 **/
 /** chunk id: 645264, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => _
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -32,44 +32,44 @@ let v = () => (0, Chunk255367.jsx)(Chunk852860.Z, {
     onSaveText: Chunk388032.intl.string(Chunk388032.t["Xt+UaW"]),
     onSaveButtonColor: Chunk755721.Tt.RED
   }),
-  j = e => {
+  _ = e => {
     let {
       transitionState: t,
       guildId: n,
-      onClose: o,
+      onClose: a,
       onComplete: u,
-      inviteKey: p,
+      inviteKey: x,
       isPreview: g = false
-    } = e, j = (0, f.rb)(e => e.shouldShowWarning), {
-      verificationForm: C,
-      hasFetched: _
-    } = (0, h.ng)(n, g, p), O = (0, d.Dt)();
+    } = e, _ = (0, f.rb)(e => e.shouldShowWarning), {
+      verificationForm: j,
+      hasFetched: C
+    } = (0, h.ng)(n, g, x), O = (0, d.Dt)();
     return (i.useEffect(() => {
-      _ && C === m.t && o()
-    }, [_, o, C]), C === m.t) ? null : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(a.I, {
+      C && j === m.t && a()
+    }, [C, a, j]), j === m.t) ? null : (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsxs)(o.I, {
         transitionState: t,
         "aria-labelledby": O,
         size: "xl",
-        onClose: o,
+        onClose: a,
         children: [(0, r.jsx)("div", {
           className: b.closeButton,
           children: (0, r.jsx)(s.P, {
-            onClick: () => o(false)
+            onClick: () => a(false)
           })
         }), (0, r.jsx)("div", {
           className: b.container,
-          children: (0, r.jsx)(x.Z, {
-            verificationForm: C,
+          children: (0, r.jsx)(p.Z, {
+            verificationForm: j,
             headerId: O,
             guildId: n,
-            onClose: o,
+            onClose: a,
             onComplete: u,
             isPreview: g
           })
         })]
       }), (0, r.jsx)(l.W, {
-        children: true === j && (0, r.jsx)(c.oXn, {
+        children: true === _ && (0, r.jsx)(c.oXn, {
           className: b.notice,
           children: (0, r.jsx)(v, {})
         })

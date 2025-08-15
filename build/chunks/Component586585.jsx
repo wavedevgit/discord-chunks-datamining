@@ -63,7 +63,7 @@ let E = e => {
       primaryIcon: t,
       primaryCTA: n,
       primaryType: i,
-      primaryText: o,
+      primaryText: a,
       primaryDisabled: s,
       primarySubmitting: l,
       onPrimary: c,
@@ -77,11 +77,11 @@ let E = e => {
         className: f.primaryIcon
       }),
       loading: l,
-      text: o
+      text: a
     };
-    return 2 === n ? (0, r.jsx)(a.zx, p({
+    return 2 === n ? (0, r.jsx)(o.zx, p({
       variant: "expressive"
-    }, d, u)) : (0, r.jsx)(a.zx, p(m(p({}, d), {
+    }, d, u)) : (0, r.jsx)(o.zx, p(m(p({}, d), {
       variant: 0 === n ? "primary" : "active"
     }), u))
   },
@@ -89,7 +89,7 @@ let E = e => {
     let {
       onBack: t,
       backText: n,
-      primaryIcon: a,
+      primaryIcon: o,
       primaryCTA: f,
       primaryType: _,
       primaryText: h,
@@ -102,7 +102,7 @@ let E = e => {
     } = (0, c.JL)(), I = () => {
       if (null == f || null == h) return null;
       let e = {
-        primaryIcon: a,
+        primaryIcon: o,
         primaryCTA: f,
         primaryType: _,
         primaryText: h,
@@ -118,7 +118,7 @@ let E = e => {
       }) : (0, r.jsx)(E, m(p({}, e), {
         onPrimary: O
       }))
-    }, T = () => null == t ? null : (0, r.jsx)(o.A, {
+    }, T = () => null == t ? null : (0, r.jsx)(a.A, {
       text: null != n ? n : d.intl.string(d.t["13/7kZ"]),
       onClick: t,
       variant: "secondary"

@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 893732, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 893732, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -10,7 +9,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk771371 = require("./771371.js");
 
-function s(e) {
+function o(e) {
   let {
     onClose: t,
     guildName: n
@@ -31,10 +30,10 @@ function s(e) {
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-md/semibold",
         className: a.headerText,
-        children: o.intl.string(o.t.LIIyeH)
+        children: l.intl.string(l.t.LIIyeH)
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
-        children: o.intl.format(o.t["4/6vQk"], {
+        children: l.intl.format(l.t["4/6vQk"], {
           guildName: n
         })
       }), (0, r.jsx)("div", {
@@ -42,7 +41,7 @@ function s(e) {
         className: a.button,
         children: (0, r.jsx)(i.zxk, {
           variant: "primary",
-          text: o.intl.string(o.t.BddRzc),
+          text: l.intl.string(l.t.BddRzc),
           onClick: t
         })
       })]

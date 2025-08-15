@@ -34,14 +34,14 @@ function u(e) {
 }
 
 function d(e, t, r) {
-  var o, c, d;
+  var a, c, d;
   let f = null != r ? i.Z.getDetectableGame(r) : null,
     {
       default: _
     } = n(371651),
-    p = null != (o = null == _ ? true : _.getMostRecentOverlayRenderMethod()) ? o : true,
+    p = null != (a = null == _ ? true : _.getMostRecentOverlayRenderMethod()) ? a : true,
     h = null != p ? s.gl[p] : true;
-  a.default.track(l.rMx.OVERLAY_TOGGLED, {
+  o.default.track(l.rMx.OVERLAY_TOGGLED, {
     enabled: e,
     setting_type: u(t),
     client_setting_type: t,
@@ -52,12 +52,12 @@ function d(e, t, r) {
 }
 
 function f(e, t) {
-  let [n, i] = r.useState(e()), o = r.useRef(e);
+  let [n, i] = r.useState(e()), a = r.useRef(e);
   return r.useEffect(() => {
-    o.current = e
+    a.current = e
   }, [e]), r.useEffect(() => {
     i(e => {
-      let t = o.current();
+      let t = a.current();
       if (e.size > t.size || e.size < t.size) return t;
       for (let n of e)
         if (!t.has(n)) return t;
@@ -76,13 +76,13 @@ function _(e, t) {
     liveUserIds: u,
     contentInventoryIds: d
   } = t;
-  ((null != (n = null == c ? true : c.length) ? n : 0) !== 0 || (null != (r = null == u ? true : u.length) ? r : 0) !== 0 || (null != (i = null == d ? true : d.length) ? i : 0) !== 0) && a.default.track(l.rMx.WIDGET_CONTENT_SHOWN, {
+  ((null != (n = null == c ? true : c.length) ? n : 0) !== 0 || (null != (r = null == u ? true : u.length) ? r : 0) !== 0 || (null != (i = null == d ? true : d.length) ? i : 0) !== 0) && o.default.track(l.rMx.WIDGET_CONTENT_SHOWN, {
     overlay_locked: s,
     widget_type: e,
     shown_user_ids: c,
     live_user_ids: u,
     content_inventory_ids: d,
-    media_session_id: o.Z.getMediaSessionId()
+    media_session_id: a.Z.getMediaSessionId()
   })
 }
 
@@ -91,7 +91,7 @@ function p(e, t) {
     pinned: n,
     opacity: r
   } = t;
-  a.default.track(l.rMx.WIDGET_SETTING_UPDATED, {
+  o.default.track(l.rMx.WIDGET_SETTING_UPDATED, {
     widget_type: e,
     pinned: n,
     opacity: r
@@ -110,11 +110,11 @@ function g(e, t) {
     value: r,
     userId: i
   } = t;
-  a.default.track(l.rMx.WIDGET_INTERACTED, {
+  o.default.track(l.rMx.WIDGET_INTERACTED, {
     widget_type: e,
     interaction_type: n,
     interaction_value: r,
     target_user_id: i,
-    media_session_id: o.Z.getMediaSessionId()
+    media_session_id: a.Z.getMediaSessionId()
   })
 }

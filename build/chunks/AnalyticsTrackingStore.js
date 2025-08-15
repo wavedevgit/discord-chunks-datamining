@@ -6,7 +6,7 @@ require.d(exports, {
   X: () => H,
   l: () => z
 }), require("./358797.js"), require("./290780.js"), require("./388685.js"), require("./539854.js");
-var o, Chunk772848 = require("./772848.js");
+var a, Chunk772848 = require("./772848.js");
 require("./17089.js");
 var Chunk756647 = require("./756647.js"),
   Chunk442837 = require("./442837.js"),
@@ -72,8 +72,8 @@ let m = "x-science-test",
   L = Number.MAX_SAFE_INTEGER,
   x = 0,
   M = 0,
-  j = null,
-  k = false,
+  k = null,
+  j = false,
   U = null,
   G = null;
 
@@ -81,12 +81,12 @@ function B() {
   N = 0, C = 0, R = 0, D = 0, L = Number.MAX_SAFE_INTEGER, x = 0, M = 0, w = Date.now(), P = A
 }
 
-function Z(e) {
+function V(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1;
   return e + t
 }
-let F = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e()),
-  V = new Chunk761609.R,
+let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e()),
+  Z = new Chunk761609.R,
   H = {
     handleConnectionOpen: () => {},
     handleConnectionClosed: () => {},
@@ -102,7 +102,7 @@ let F = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
     var t;
     let {
       dispatcher: n,
-      actionHandler: o,
+      actionHandler: a,
       getFingerprint: u,
       getSessionId: p = K,
       TRACKING_URL: b,
@@ -135,17 +135,17 @@ let F = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
     function $() {
       if (W = null, !Q()) return Promise.resolve();
       let e = Y.slice();
-      Y = [], D = Z(D);
+      Y = [], D = V(D);
       let t = e.length;
-      L = Math.min(L, t), x = Math.max(x, t), M = Z(M, t);
+      L = Math.min(L, t), x = Math.max(x, t), M = V(M, t);
       let n = ee(e);
       return n.then(() => {
         e.forEach(e => {
           var t;
           null == (t = e.resolve) || t.call(e)
-        }), C = Z(C)
+        }), C = V(C)
       }, t => {
-        Y.unshift(...e), R = Z(R);
+        Y.unshift(...e), R = V(R);
         let {
           message: n
         } = t.body || t;
@@ -161,10 +161,10 @@ let F = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
             client_send_timestamp: n
           })
         })),
-        o = {};
-      return k || (G = (0, a.Z)(), o[m] = G, k = true), c.tn.post({
+        a = {};
+      return j || (G = (0, o.Z)(), a[m] = G, j = true), c.tn.post({
         url: t,
-        headers: o,
+        headers: a,
         body: {
           token: r,
           events: i
@@ -172,7 +172,7 @@ let F = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
         retries: 3,
         rejectWithError: false
       }).then(e => {
-        if (o[m]) {
+        if (a[m]) {
           var t, n;
           U = null != (n = null == e || null == (t = e.headers) ? true : t[m]) ? n : null
         }
@@ -205,32 +205,32 @@ let F = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
     }
 
     function en() {
-      if (null == j) returnfalse;
-      switch (j.type) {
+      if (null == k) returnfalse;
+      switch (k.type) {
         case "timeout":
-          clearTimeout(j.id);
+          clearTimeout(k.id);
           break;
         case "interval":
-          clearInterval(j.id);
+          clearInterval(k.id);
           break;
         default:
-          j.type
+          k.type
       }
-      return j = null, true
+      return k = null, true
     }
 
     function er() {
-      if (null != j) return;
+      if (null != k) return;
       let e = () => {
         let t = .1 * v;
-        j = {
+        k = {
           type: "timeout",
           id: setTimeout(() => {
             et(), e()
           }, Math.max(v + (Math.floor(Math.random() * t * 2) - t), I))
         }
       };
-      j = {
+      k = {
         type: "timeout",
         id: setTimeout(() => {
           et(), e()
@@ -259,24 +259,24 @@ let F = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
         properties: n,
         flush: r,
         fingerprint: i,
-        resolve: o
+        resolve: a
       } = e;
       return p().then(e => {
         let {
-          sessionId: a
+          sessionId: o
         } = e, s = {
           type: t,
           fingerprint: i,
           properties: _({
             client_track_timestamp: Date.now(),
-            client_heartbeat_session_id: a,
+            client_heartbeat_session_id: o,
             event_sequence_number: ++A
           }, n),
-          resolve: o
+          resolve: a
         }, l = X(s);
-        if (null != l && (s.properties.client_uuid = V.generate(l)), Y.push(s), Y.length > E) {
+        if (null != l && (s.properties.client_uuid = Z.generate(l)), Y.push(s), Y.length > E) {
           let e = Y.length - E;
-          N = Z(N, e), Y = Y.slice(-E)
+          N = V(N, e), Y = Y.slice(-E)
         }
         r ? J({
           shouldFlushOnNextTick: true
@@ -285,7 +285,7 @@ let F = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
         })
       }), false
     };
-    class eo extends(t = l.ZP.Store) {
+    class ea extends(t = l.ZP.Store) {
       initialize() {
         null != O && this.waitFor(...O)
       }
@@ -293,5 +293,5 @@ let F = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
         super(...e), f(this, "submitEventsImmediately", ee)
       }
     }
-    return f(eo, "displayName", "AnalyticsTrackingStore"), new eo(n, o)
+    return f(ea, "displayName", "AnalyticsTrackingStore"), new ea(n, a)
   }

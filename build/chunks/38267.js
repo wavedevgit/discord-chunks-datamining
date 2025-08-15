@@ -1,45 +1,39 @@
-/** Chunk was on web.js **/
-/** chunk id: 38267, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 38267, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => o
 }), require("./388685.js");
 var Chunk73800 = require("./73800.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function s(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      a(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function l(e) {
+function a(e) {
   return Object.keys(e).some(t => e[t])
 }
 
-function c(e, t) {
-  let [n, a] = r.useState(t), [c, u] = r.useState(l(n)), d = r.useRef(c), f = r.useRef(null), _ = r.useCallback(e => {
-    a(t => {
-      let n = s({}, t, e),
-        r = l(n);
-      return r !== d.current && (d.current = r, null != f.current && (cancelAnimationFrame(f.current), f.current = null), r ? u(true) : f.current = requestAnimationFrame(() => u(false))), n
+function o(e, t) {
+  let [n, o] = r.useState(t), [s, c] = r.useState(a(n)), u = r.useRef(s), d = r.useRef(null), p = r.useCallback(e => {
+    o(t => {
+      let n = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: true,
+                configurable: true,
+                writable: true
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({}, t, e),
+        r = a(n);
+      return r !== u.current && (u.current = r, null != d.current && (cancelAnimationFrame(d.current), d.current = null), r ? c(true) : d.current = requestAnimationFrame(() => c(false))), n
     })
   }, []);
   return r.useEffect(() => {
@@ -48,15 +42,15 @@ function c(e, t) {
         emojiPicker: t,
         emojiBurstPicker: n
       } = e;
-      return _({
+      return p({
         emojiPicker: t,
         emojiBurstPicker: n
       })
     };
-    return i.S.subscribeKeyed(o.LPv.TOGGLE_REACTION_POPOUT, e, t), () => void i.S.unsubscribeKeyed(o.LPv.TOGGLE_REACTION_POPOUT, e, t)
-  }, [e, _]), {
+    return i.S.subscribeKeyed(l.LPv.TOGGLE_REACTION_POPOUT, e, t), () => void i.S.unsubscribeKeyed(l.LPv.TOGGLE_REACTION_POPOUT, e, t)
+  }, [e, p]), {
     popouts: n,
-    setPopout: _,
-    selected: c
+    setPopout: p,
+    selected: s
   }
 }

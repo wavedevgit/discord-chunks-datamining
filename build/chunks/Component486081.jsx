@@ -9,7 +9,7 @@ require("./73800.js");
 var Chunk331595 = require("./331595.js"),
   Chunk267843 = require("./267843.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -52,8 +52,8 @@ function u(e, t) {
   if (null == e) return {};
   var n, r, i = d(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -61,20 +61,20 @@ function u(e, t) {
 function d(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let f = e => {
   var t, n, {
-      size: a = "md",
+      size: o = "md",
       width: l,
       height: d,
       color: f = "#C12A35",
       colorClass: _ = ""
     } = e,
     p = u(e, ["size", "width", "height", "color", "colorClass"]);
-  let h = (0, o.m)(a),
+  let h = (0, a.m)(o),
     m = null != (t = null == h ? true : h.width) ? t : l,
     g = null != (n = null == h ? true : h.height) ? n : d;
   return (0, r.jsx)("svg", c(s({}, (0, i.Z)(p)), {

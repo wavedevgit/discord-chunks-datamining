@@ -1,7 +1,7 @@
-/** Chunk was on 25046 **/
+/** Chunk was on 98464 **/
 /** chunk id: 464766, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 }), require("./539854.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -10,34 +10,34 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk500537 = require("./500537.js");
 
-function a(e) {
+function s(e) {
   let {
     selectedTab: n,
     onTabSelected: t,
-    userCount: a,
-    isHub: u = false
-  } = e, d = i.useRef(null);
-  i.useEffect(() => {
+    userCount: s,
+    isHub: c = false
+  } = e, u = l.useRef(null);
+  l.useEffect(() => {
     var e, n, t;
-    return null == (t = d.current) || null == (n = t.ref) || null == (e = n.blur) ? true : e.call(n)
+    return null == (t = u.current) || null == (n = t.ref) || null == (e = n.blur) ? true : e.call(n)
   }, []);
-  let f = c.intl.formatToPlainString(c.t["ZrTT/P"], {
-      userCount: a
+  let _ = a.intl.formatToPlainString(a.t["ZrTT/P"], {
+      userCount: s
     }),
-    g = [(0, l.jsx)(r.njP.Item, {
-      className: s.tabBarItem,
-      id: o.fL.EVENT_INFO,
-      children: c.intl.string(c.t.iW6Xur)
+    g = [(0, i.jsx)(r.njP.Item, {
+      className: o.tabBarItem,
+      id: d.fL.EVENT_INFO,
+      children: a.intl.string(a.t.iW6Xur)
     }, "event-details")];
-  return u || g.push((0, l.jsx)(r.njP.Item, {
-    className: s.tabBarItem,
-    id: o.fL.RSVP_LIST,
-    children: f
-  }, "is-hub")), (0, l.jsx)("div", {
-    className: s.container,
-    children: (0, l.jsx)(r.njP, {
-      className: s.tabBar,
-      "aria-label": c.intl.string(c.t["+1H47u"]),
+  return c || g.push((0, i.jsx)(r.njP.Item, {
+    className: o.tabBarItem,
+    id: d.fL.RSVP_LIST,
+    children: _
+  }, "is-hub")), (0, i.jsx)("div", {
+    className: o.container,
+    children: (0, i.jsx)(r.njP, {
+      className: o.tabBar,
+      "aria-label": a.intl.string(a.t["+1H47u"]),
       selectedItem: n,
       type: "top",
       onItemSelect: t,

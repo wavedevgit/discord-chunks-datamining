@@ -1,12 +1,12 @@
-/** Chunk was on 1355 **/
-/** chunk id: 727381, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 78079 **/
+/** chunk id: 727381, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => w
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk271383 = require("./271383.js"),
@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk87819 = require("./87819.js");
 
-function N() {
+function B() {
   return (0, Chunk255367.jsxs)("div", {
     className: Chunk87819.header,
     children: [(0, Chunk255367.jsxs)("div", {
@@ -43,32 +43,32 @@ function N() {
   })
 }
 
-function h(e) {
+function w(A) {
   let {
-    userId: t,
-    guildId: n,
-    location: l,
-    className: c,
-    onNavigate: I
-  } = e, h = (0, s.e7)([u.default], () => u.default.getUser(t), [t]), f = (0, s.e7)([o.ZP], () => o.ZP.getMember(n, t), [n, t]);
-  return null == h || null == f ? null : (0, r.jsxs)("div", {
-    className: i()(g.container, c),
-    children: [(0, r.jsx)(N, {}), (0, r.jsxs)(a.Ttm, {
-      className: g.innerContainer,
-      children: [(0, r.jsx)(T.Z, {
-        member: f
-      }), (0, r.jsx)(m.Z, {
-        userId: t,
-        guildId: n
-      }), (0, r.jsx)(A.Z, {
-        member: f,
-        onNavigate: I
-      }), (0, r.jsx)(d.Z, {
-        member: f
-      }), (0, r.jsx)(E.Z, {
-        member: f
-      }), (0, r.jsx)(_.Z, {
-        member: f
+    userId: e,
+    guildId: t,
+    location: r,
+    className: g,
+    onNavigate: E
+  } = A, w = (0, i.e7)([o.default], () => o.default.getUser(e), [e]), D = (0, i.e7)([s.ZP], () => s.ZP.getMember(t, e), [t, e]);
+  return null == w || null == D ? null : (0, n.jsxs)("div", {
+    className: l()(C.container, g),
+    children: [(0, n.jsx)(B, {}), (0, n.jsxs)(a.Ttm, {
+      className: C.innerContainer,
+      children: [(0, n.jsx)(h.Z, {
+        member: D
+      }), (0, n.jsx)(d.Z, {
+        userId: e,
+        guildId: t
+      }), (0, n.jsx)(u.Z, {
+        member: D,
+        onNavigate: E
+      }), (0, n.jsx)(f.Z, {
+        member: D
+      }), (0, n.jsx)(c.Z, {
+        member: D
+      }), (0, n.jsx)(v.Z, {
+        member: D
       })]
     })]
   })

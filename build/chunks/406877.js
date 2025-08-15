@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 406877, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 406877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 }), require("./388685.js");
@@ -26,12 +25,12 @@ function c(e, t) {
             productId: t,
             attachmentId: n
           });
-          await s.L(r)
+          await o.L(r)
         } catch (t) {
-          let e = t instanceof o.Hx ? t.getAnyErrorMessage() : true;
+          let e = t instanceof l.Hx ? t.getAnyErrorMessage() : true;
           i.Z.show({
-            title: l.intl.string(l.t.R0RpRU),
-            body: null != e ? e : l.intl.string(l.t.eAn6z8)
+            title: s.intl.string(s.t.R0RpRU),
+            body: null != e ? e : s.intl.string(s.t.eAn6z8)
           })
         } finally {
           c(false)

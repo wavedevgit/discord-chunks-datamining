@@ -29,20 +29,20 @@ function h(e, t) {
   }, {
     autoTrackExposure: false
   }), r = null != e ? (0, d.Z)(e) : null, i = null == r ? true : r.id, {
-    data: o
+    data: a
   } = (0, s.IX)(i), {
     bot: l
-  } = null != o ? o : {
+  } = null != a ? a : {
     bot: null
   };
-  return !!n && null != e && (!!p(e) || null != i && null != l && null != o && !!(0, a.ye)(o))
+  return !!n && null != e && (!!p(e) || null != i && null != l && null != a && !!(0, o.ye)(a))
 }
 
 function m(e) {
   let {
     application: t,
     location: n,
-    analyticsLocations: a
+    analyticsLocations: o
   } = e, c = h(t, n), {
     bot: u
   } = null != t ? t : {
@@ -62,17 +62,17 @@ function m(e) {
       })
     };
     return p(t) && null != u ? () => {
-      e(), (0, o.W)({
+      e(), (0, a.W)({
         appId: t.id,
         botId: u.id,
-        analyticsLocations: null != a ? a : []
+        analyticsLocations: null != o ? o : []
       })
     } : null != m && null != E ? () => {
-      e(), (0, o.W)({
+      e(), (0, a.W)({
         appId: m,
         botId: E.id,
-        analyticsLocations: null != a ? a : []
+        analyticsLocations: null != o ? o : []
       })
     } : true
-  }, [c, t, u, m, E, a])
+  }, [c, t, u, m, E, o])
 }

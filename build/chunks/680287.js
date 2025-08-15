@@ -10,7 +10,7 @@ var Chunk865275 = require("./865275.js"),
   Chunk388032 = require("./388032.jsx");
 class s extends Chunk865275.Z {
   async uploadFiles(e) {
-    super.upload(a.intl.string(a.t.jfKTen), e);
+    super.upload(o.intl.string(o.t.jfKTen), e);
     let t = new Promise((e, t) => {
         this.once("error", (e, n, r, i) => {
           t({
@@ -31,7 +31,7 @@ class s extends Chunk865275.Z {
       throw this._handleException(e), {
         file: this._file,
         reason: {
-          type: o.xi.ERROR_SOURCE_UNKNOWN,
+          type: a.xi.ERROR_SOURCE_UNKNOWN,
           msg: e.toString()
         }
       }

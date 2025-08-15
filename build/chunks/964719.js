@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 964719, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 96750 **/
+/** chunk id: 964719, original params: e,t,n (module,exports,require) **/
 module.exports = {
   buttonsWrapper: "buttonsWrapper__65bb6",
   horizontal: "horizontal__65bb6",

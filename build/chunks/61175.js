@@ -1,47 +1,47 @@
-/** Chunk was on web.js **/
-/** chunk id: 61175, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 8381 **/
+/** chunk id: 61175, original params: t,e,r (module,exports,require) **/
 "use strict";
 require("./42547.js"), module.exports = {
-  isValidBlock: function(e, t) {
-    var n = e.getKey(),
-      r = e.getParentKey();
-    if (null != r && !t.get(r).getChildKeys().includes(n) || !e.getChildKeys().map(function(e) {
-        return t.get(e)
-      }).every(function(e) {
-        return e.getParentKey() === n
+  isValidBlock: function(t, e) {
+    var r = t.getKey(),
+      n = t.getParentKey();
+    if (null != n && !e.get(n).getChildKeys().includes(r) || !t.getChildKeys().map(function(t) {
+        return e.get(t)
+      }).every(function(t) {
+        return t.getParentKey() === r
       })) returnfalse;
-    var i = e.getPrevSiblingKey();
-    if (null != i && t.get(i).getNextSiblingKey() !== n) returnfalse;
-    var o = e.getNextSiblingKey();
-    return (null == o || t.get(o).getPrevSiblingKey() === n) && (null === o || null === i || i !== o) && ("" == e.text || !(e.getChildKeys().size > 0))
+    var i = t.getPrevSiblingKey();
+    if (null != i && e.get(i).getNextSiblingKey() !== r) returnfalse;
+    var o = t.getNextSiblingKey();
+    return (null == o || e.get(o).getPrevSiblingKey() === r) && (null === o || null === i || i !== o) && ("" == t.text || !(t.getChildKeys().size > 0))
   },
-  isConnectedTree: function(e) {
-    var t = e.toArray().filter(function(e) {
-      return null == e.getParentKey() && null == e.getPrevSiblingKey()
+  isConnectedTree: function(t) {
+    var e = t.toArray().filter(function(t) {
+      return null == t.getParentKey() && null == t.getPrevSiblingKey()
     });
-    if (1 !== t.length) returnfalse;
-    for (var n = t.shift(), r = 0, i = n.getKey(), o = []; null != i;) {
-      var a = e.get(i),
-        s = a.getChildKeys(),
-        l = a.getNextSiblingKey();
-      if (s.size > 0) {
-        null != l && o.unshift(l);
-        var c = s.map(function(t) {
-          return e.get(t)
-        }).find(function(e) {
-          return null == e.getPrevSiblingKey()
+    if (1 !== e.length) returnfalse;
+    for (var r = e.shift(), n = 0, i = r.getKey(), o = []; null != i;) {
+      var a = t.get(i),
+        u = a.getChildKeys(),
+        s = a.getNextSiblingKey();
+      if (u.size > 0) {
+        null != s && o.unshift(s);
+        var c = u.map(function(e) {
+          return t.get(e)
+        }).find(function(t) {
+          return null == t.getPrevSiblingKey()
         });
         if (null == c) returnfalse;
         i = c.getKey()
       } else i = null != a.getNextSiblingKey() ? a.getNextSiblingKey() : o.shift();
-      r++
+      n++
     }
-    return r === e.size
+    return n === t.size
   },
-  isValidTree: function(e) {
-    var t = this;
-    return !!e.toArray().every(function(n) {
-      return t.isValidBlock(n, e)
-    }) && this.isConnectedTree(e)
+  isValidTree: function(t) {
+    var e = this;
+    return !!t.toArray().every(function(r) {
+      return e.isValidBlock(r, t)
+    }) && this.isConnectedTree(t)
   }
 }

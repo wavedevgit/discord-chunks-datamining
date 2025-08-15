@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 97009, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 97009, original params: e,t,n (module,exports,require) **/
 module.exports = {
   chat: "chat_f75fb0",
   threadSidebarOpen: "threadSidebarOpen_f75fb0",

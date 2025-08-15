@@ -1,4 +1,4 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 128156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -37,10 +37,10 @@ function P(e) {
     subsection: Z,
     onClose: N
   } = e, {
-    voiceActivityStatusEnabled: S
+    voiceActivityStatusEnabled: w
   } = (0, o.U)({
     location: "UserProfileModalV2Activity"
-  }), w = (0, f.b)({
+  }), S = (0, f.b)({
     location: "UserProfileModalV2Activity"
   }), {
     live: A,
@@ -55,7 +55,7 @@ function P(e) {
   }), G = (0, i.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), k = t.id === n.id, B = (0, i.e7)([d.Z, s.Z], () => {
     let e = k ? d.Z.getStatus() : s.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), M = A.length > 0 || null != D, U = S && null == D && null == R && null != L, F = !B && (M || U), V = C.length > 0;
+  }), M = A.length > 0 || null != D, U = w && null == D && null == R && null != L, F = !B && (M || U), V = C.length > 0;
   if (!F && !V && G) return (0, r.jsx)("div", {
     className: I.cards,
     children: Array.from({
@@ -85,11 +85,11 @@ function P(e) {
   return (0, r.jsxs)(l.Ttm, {
     className: I.scroller,
     fade: true,
-    children: [F ? (0, r.jsx)(x.Z, {
+    children: [F ? (0, r.jsx)(h.Z, {
       heading: _.intl.string(_.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: I.cards,
-        children: [!w && U && (0, r.jsx)("li", {
+        children: [!S && U && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -113,7 +113,7 @@ function P(e) {
             onClose: N,
             profileGuildId: null == P ? true : P.guildId
           })
-        }, "live-".concat(i))), w && U && (0, r.jsx)("li", {
+        }, "live-".concat(i))), S && U && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -122,7 +122,7 @@ function P(e) {
           })
         })]
       })
-    }) : null, V ? (0, r.jsx)(x.Z, {
+    }) : null, V ? (0, r.jsx)(h.Z, {
       heading: _.intl.string(_.t.jzgEoK),
       introText: k ? _.intl.format(_.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(l.eee, {
@@ -130,7 +130,7 @@ function P(e) {
           children: e
         }, t)
       }) : true,
-      scrollIntoView: Z === h.Tb.RECENT_ACTIVITY,
+      scrollIntoView: Z === x.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: I.cards,
         children: C.map(e => (0, r.jsx)("li", {

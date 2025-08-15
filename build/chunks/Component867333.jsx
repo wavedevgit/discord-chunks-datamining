@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk1561 = require("./1561.jsx"),
   Chunk761224 = require("./761224.js"),
   Chunk670596 = require("./670596.js"),
@@ -59,7 +59,7 @@ function E(e) {
   let {
     color: t = "default",
     label: n,
-    checked: o,
+    checked: a,
     subtext: p,
     disabled: m,
     isFocused: E,
@@ -78,13 +78,13 @@ function E(e) {
   }, [y, O]);
   return (0, r.jsxs)(s.P, g(h({
     innerRef: v,
-    className: a()(_.item, _.labelContainer, f._[t], {
+    className: o()(_.item, _.labelContainer, f._[t], {
       [_.disabled]: m,
       [_.focused]: E
     }),
     onClick: m ? true : I
   }, b), {
-    "aria-checked": o,
+    "aria-checked": a,
     "aria-disabled": m,
     children: [(0, r.jsxs)("div", {
       className: _.label,
@@ -95,7 +95,7 @@ function E(e) {
     }), (0, r.jsx)("div", {
       className: _.iconContainer,
       children: (0, r.jsx)(d.Fj9, {
-        checked: o,
+        checked: a,
         disabled: m,
         radioItemIconClassName: _.radioIcon
       })

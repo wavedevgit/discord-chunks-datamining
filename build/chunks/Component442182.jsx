@@ -1,4 +1,4 @@
-/** Chunk was on 40725 **/
+/** Chunk was on 6049 **/
 /** chunk id: 442182, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => L
@@ -308,7 +308,7 @@ function L(e) {
     }), (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await n.e("15968").then(n.bind(n, 24722));
+      } = await Promise.all([n.e("7590"), n.e("71993")]).then(n.bind(n, 24722));
       return n => (0, r.jsx)(e, w(P({}, n), {
         roleId: l.id,
         guildId: t.id

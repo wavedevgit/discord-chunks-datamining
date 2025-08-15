@@ -27,11 +27,11 @@ function u(e) {
     leaderboard: r
   } = t, {
     guild_id: i,
-    leaderboard_id: o
-  } = r, a = c.get(n);
-  null == a && (a = new Map, c.set(n, a));
-  let s = a.get(i);
-  null == s && (s = new Map, a.set(i, s)), s.set(o, t)
+    leaderboard_id: a
+  } = r, o = c.get(n);
+  null == o && (o = new Map, c.set(n, o));
+  let s = o.get(i);
+  null == s && (s = new Map, o.set(i, s)), s.set(a, t)
 }
 
 function d() {
@@ -46,7 +46,7 @@ class f extends(r = Chunk442837.ZP.Store) {
   get(e, t) {
     var n;
     let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 0;
-    return l ? a.Z : null == (n = this.getLeaderboardResponse(e, t, r)) ? true : n.leaderboard
+    return l ? o.Z : null == (n = this.getLeaderboardResponse(e, t, r)) ? true : n.leaderboard
   }
   getLeaderboardResponse(e, t) {
     var n, r;

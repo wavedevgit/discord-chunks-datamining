@@ -28,7 +28,7 @@ function m() {
 }
 
 function g(e) {
-  if (null == e || e === a.V || (0, _.AB)(e) || null != u.Z.getChannel(e) || (m(), !s.Z.isConnected())) return Promise.resolve();
+  if (null == e || e === o.V || (0, _.AB)(e) || null != u.Z.getChannel(e) || (m(), !s.Z.isConnected())) return Promise.resolve();
   let t = p[e];
   if (null != t)
     if ("LOADING" === t.type) return t.promise;
@@ -48,7 +48,7 @@ function g(e) {
           type: "LOADED"
         }, c.Ec.has(r.type)) {
         var i;
-        o.Z.dispatch({
+        a.Z.dispatch({
           type: "THREAD_CREATE",
           channel: (0, c.q_)(r),
           messageId: null == n || null == (i = n.params) ? true : i.messageId
@@ -58,7 +58,7 @@ function g(e) {
       var t;
       p[e] = {
         type: "NOT_FOUND"
-      }, o.Z.dispatch({
+      }, a.Z.dispatch({
         type: "CHANNEL_DELETE",
         channel: {
           id: e,

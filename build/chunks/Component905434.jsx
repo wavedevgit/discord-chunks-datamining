@@ -1,4 +1,4 @@
-/** Chunk was on 54844 **/
+/** Chunk was on 59727 **/
 /** chunk id: 905434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -13,27 +13,27 @@ var Chunk481060 = require("./481060.js"),
 let c = e => {
   let {
     stageInstance: t
-  } = e, n = a.Z.getGuild(t.guild_id);
+  } = e, n = l.Z.getGuild(t.guild_id);
   return null == n ? null : (0, r.jsxs)("div", {
-    className: o.container,
-    children: [(0, r.jsx)(i.X6q, {
-      className: o.header,
+    className: s.container,
+    children: [(0, r.jsx)(a.X6q, {
+      className: s.header,
       variant: "heading-sm/semibold",
-      children: s.intl.string(s.t["InbJ8/"])
+      children: o.intl.string(o.t["InbJ8/"])
     }), (0, r.jsxs)("div", {
-      className: o.guildContainer,
+      className: s.guildContainer,
       children: [(0, r.jsxs)("div", {
-        className: o.guildInfo,
-        children: [(0, r.jsx)(l.Z, {
+        className: s.guildInfo,
+        children: [(0, r.jsx)(i.Z, {
           guild: n,
-          size: l.Z.Sizes.MINI,
-          className: o.guildIcon
-        }), (0, r.jsx)(i.Text, {
+          size: i.Z.Sizes.MINI,
+          className: s.guildIcon
+        }), (0, r.jsx)(a.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
           children: n.name
         })]
-      }), (0, r.jsx)(i.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: t.topic

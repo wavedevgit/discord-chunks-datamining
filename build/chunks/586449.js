@@ -1,5 +1,5 @@
-/** Chunk was on 37214 **/
-/** chunk id: 586449, original params: i,a,n (module,exports,require) **/
+/** Chunk was on 43694 **/
+/** chunk id: 586449, original params: e,t,a (module,exports,require) **/
 module.exports = {
   classificationContainer: "classificationContainer_a48d6b",
   classificationHeader: "classificationHeader_a48d6b",

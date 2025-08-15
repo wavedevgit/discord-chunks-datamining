@@ -1,7 +1,7 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 378844, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  R: () => _,
+  R: () => O,
   Z: () => y
 });
 var r, Chunk255367 = require("./255367.js");
@@ -20,7 +20,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk36973 = require("./36973.js");
 
-function O(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,24 +38,24 @@ function O(e) {
   }
   return e
 }
-var _ = ((r = {})[r.VOICE = 0] = "VOICE", r);
+var O = ((r = {})[r.VOICE = 0] = "VOICE", r);
 let y = e => {
   let {
     type: t,
     guildId: r,
-    closePopout: _
+    closePopout: O
   } = e, y = (0, u.Dt)(), {
     notClaimed: v,
     notEmailVerified: j,
     notPhoneVerified: C,
     newAccount: E,
     newMember: x
-  } = (0, l.e7)([p.Z], () => p.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BA"]) : null, P = null, I = null;
-  return (0 === t && (v ? (P = m.intl.string(m.t.IRxUlJ), I = m.intl.string(m.t.fiNVio)) : C ? (P = m.intl.string(m.t.vW8iUF), I = m.intl.string(m.t["50gfOj"])) : j ? (P = m.intl.string(m.t.vdSOp6), I = m.intl.string(m.t.lm1UKi)) : x ? (P = m.intl.formatToPlainString(m.t.v1ktYW, {
+  } = (0, l.e7)([p.Z], () => p.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BA"]) : null, I = null, P = null;
+  return (0 === t && (v ? (I = m.intl.string(m.t.IRxUlJ), P = m.intl.string(m.t.fiNVio)) : C ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOj"])) : j ? (I = m.intl.string(m.t.vdSOp6), P = m.intl.string(m.t.lm1UKi)) : x ? (I = m.intl.formatToPlainString(m.t.v1ktYW, {
     min: h.YeM.MEMBER_AGE
-  }), I = m.intl.string(m.t.BddRzc)) : E && (P = m.intl.formatToPlainString(m.t["sncw4+"], {
+  }), P = m.intl.string(m.t.BddRzc)) : E && (I = m.intl.formatToPlainString(m.t["sncw4+"], {
     min: h.YeM.ACCOUNT_AGE
-  }), I = m.intl.string(m.t.BddRzc))), null == S || null == P) ? null : (0, i.jsxs)(a.VqE, {
+  }), P = m.intl.string(m.t.BddRzc))), null == S || null == I) ? null : (0, i.jsxs)(a.VqE, {
     className: b.container,
     "aria-labelledby": y,
     children: [(0, i.jsx)("img", {
@@ -71,28 +71,28 @@ let y = e => {
       }), (0, i.jsx)(a.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: P
+        children: I
       }), (0, i.jsxs)("div", {
         className: b.buttonContainer,
-        children: [null != I ? (0, i.jsx)("div", {
+        children: [null != P ? (0, i.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: b.primaryButton,
           children: (0, i.jsx)(a.zxk, {
             variant: "primary",
-            text: I,
+            text: P,
             onClick: () => {
               v ? c.j() : C ? (0, a.ZDy)(async () => {
                 let {
                   default: e
                 } = await Promise.resolve().then(n.bind(n, 607018));
-                return t => (0, i.jsx)(e, O({
+                return t => (0, i.jsx)(e, _({
                   reason: d.L.GUILD_PHONE_REQUIRED
                 }, t))
               }, {
                 modalKey: g.M
               }) : j && (s.Z.verifyResend(), (0, a.h7j)(e => {
                 var t, n, r;
-                return (0, i.jsx)(a.ConfirmModal, (n = O({
+                return (0, i.jsx)(a.ConfirmModal, (n = _({
                   header: m.intl.string(m.t.LykQYm),
                   confirmText: m.intl.string(m.t.BddRzc),
                   confirmButtonColor: o.zx.Colors.BRAND
@@ -113,11 +113,11 @@ let y = e => {
                 })(Object(r)).forEach(function(e) {
                   Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
                 }), n))
-              })), _()
+              })), O()
             }
           })
         }) : null, v || C || j ? (0, i.jsx)(o.zx, {
-          onClick: _,
+          onClick: O,
           look: o.zx.Looks.BLANK,
           className: b.cancel,
           children: m.intl.string(m.t.oEAioK)

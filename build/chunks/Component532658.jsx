@@ -470,7 +470,7 @@ let F = Chunk73800.memo(function(e) {
         O || (0, u.jW)(e, async () => {
           let {
             default: e
-          } = await Promise.all([n.e("79695"), n.e("6524")]).then(n.bind(n, 27900));
+          } = await Promise.all([n.e("70274"), n.e("79695"), n.e("6524")]).then(n.bind(n, 27900));
           return (0, V.Ws)(k.Odu.VOICE_V3, {
             type: V.Qu.VOICE,
             value: V.bk.SETTINGS_OPENED,

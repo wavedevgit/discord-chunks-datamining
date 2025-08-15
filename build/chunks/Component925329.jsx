@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk829968 = require("./829968.js"),
   Chunk565138 = require("./565138.jsx"),
@@ -84,15 +84,15 @@ let m = e => {
   if (null != c && (t = p(c)), null != n && null == t && (t = n.getIconURL(_(b))), true === (t = (0, s.Z)(m, t)) && null != i) {
     let e = h(b);
     return (0, r.jsx)(l.Z, {
-      className: o()(d.gameIcon, E, g),
+      className: a()(d.gameIcon, E, g),
       guild: i,
       size: e
     })
   }
-  if (true === t || "" === t) return y ? (0, r.jsx)(a.IMN, {
+  if (true === t || "" === t) return y ? (0, r.jsx)(o.IMN, {
     size: "md",
     color: "currentColor",
-    className: o()(d.gameIcon, b, g)
+    className: a()(d.gameIcon, b, g)
   }) : null;
   let O = null == n ? true : n.name,
     v = null != O && "" !== O ? u.intl.formatToPlainString(u.t.tiKyYm, {
@@ -101,7 +101,7 @@ let m = e => {
   return (0, r.jsx)("img", {
     alt: v,
     src: t,
-    className: o()(d.gameIcon, b, g)
+    className: a()(d.gameIcon, b, g)
   })
 };
 m.Sizes = f;

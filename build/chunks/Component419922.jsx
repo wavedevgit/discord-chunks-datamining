@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk717976 = require("./717976.js"),
@@ -55,13 +55,13 @@ let P = e => {
       children: t,
       hasError: n,
       isLoading: i,
-      maskAsset: o,
+      maskAsset: a,
       size: s,
       withLoadingIndicator: l = true
     } = e, c = s >= T;
     return (0, r.jsxs)("div", {
-      className: a()(O.assetWrapper, {
-        [O.assetWrapperMasked]: n || o
+      className: o()(O.assetWrapper, {
+        [O.assetWrapperMasked]: n || a
       }),
       style: {
         height: s,
@@ -89,8 +89,8 @@ let P = e => {
   w = e => {
     let {
       shouldAnimate: t,
-      size: o,
-      sticker: a,
+      size: a,
+      sticker: o,
       fileUri: s,
       assetData: c,
       isFocused: u,
@@ -101,11 +101,11 @@ let P = e => {
       onError: m
     } = e, g = i.useRef(null), E = i.useRef(null), [v, I] = i.useState(true), [T, S] = i.useState(false), A = i.useRef(false);
     A.current = t && u;
-    let N = null == s ? (0, b.Q6)(a) : s;
-    return (l()(null != N, "Unable to determine sticker asset URL. Sticker ID: ".concat(a.id)), i.useEffect(() => {
+    let N = null == s ? (0, b.Q6)(o) : s;
+    return (l()(null != N, "Unable to determine sticker asset URL. Sticker ID: ".concat(o.id)), i.useEffect(() => {
       if (null == g.current || null == N) return;
       let e = Math.min(2, (0, p.x_)());
-      g.current.width = o * e, g.current.height = o * e;
+      g.current.width = a * e, g.current.height = a * e;
       let t = false;
       return (async () => {
         let {
@@ -113,7 +113,7 @@ let P = e => {
         } = await n.e("21617").then(n.bind(n, 186952));
         null != g.current && (E.current = new e({
           canvas: g.current,
-          animationId: a.id,
+          animationId: o.id,
           assetUrl: N,
           assetData: c,
           onInitialDraw: () => {
@@ -127,25 +127,25 @@ let P = e => {
         var e;
         null == (e = E.current) || e.drop(), E.current = null, t = true
       }
-    }, [N, o, a.id, c, m]), i.useEffect(() => {
+    }, [N, a, o.id, c, m]), i.useEffect(() => {
       var e;
       let n;
       t || (n = 0), null == (e = E.current) || e.setState(t && u, n)
-    }, [a, t, u]), null == N) ? null : (0, r.jsx)("div", {
+    }, [o, t, u]), null == N) ? null : (0, r.jsx)("div", {
       role: "img",
       className: d,
-      "aria-label": T ? y.intl.string(y.t.yEvsKy) : R(a),
+      "aria-label": T ? y.intl.string(y.t.yEvsKy) : R(o),
       ref: _,
       children: (0, r.jsx)(P, {
         hasError: T,
         isLoading: v,
         maskAsset: f,
-        size: o,
+        size: a,
         withLoadingIndicator: h,
         children: C((0, r.jsx)("canvas", {
           className: O.lottieCanvas,
           ref: g
-        }), a.id)
+        }), o.id)
       })
     })
   },
@@ -153,7 +153,7 @@ let P = e => {
     let {
       shouldAnimate: t,
       sticker: n,
-      isFocused: o,
+      isFocused: a,
       size: s,
       className: l,
       maskAsset: c,
@@ -161,7 +161,7 @@ let P = e => {
       withLoadingIndicator: f,
       fileUri: _
     } = e, [p, h] = i.useState(false), [m, g] = i.useState(true), [E, y] = i.useState(false), T = i.useRef(null), S = i.useRef(null), A = null != _ ? _ : (0, b.Q6)(n, {
-      isPreview: !t || !p || !o,
+      isPreview: !t || !p || !a,
       size: s
     }), N = i.useCallback(() => {
       g(false)
@@ -184,7 +184,7 @@ let P = e => {
       onChange: h,
       threshold: I,
       children: (0, r.jsx)("div", {
-        className: a()(l, O.__invalid_pngImageWrapper),
+        className: o()(l, O.__invalid_pngImageWrapper),
         ref: u,
         children: (0, r.jsx)(P, {
           hasError: E,
@@ -210,15 +210,15 @@ let P = e => {
     let {
       disableAnimation: t,
       enlargeScaleFactor: n,
-      enlargeWithName: o,
-      isInteracting: a,
+      enlargeWithName: a,
+      isInteracting: o,
       positionRef: s,
       size: l,
       sticker: d
     } = e, p = (0, u.e7)([_.Z], () => _.Z.useReducedMotion), m = i.useRef(null), g = {
       transform: "scale(".concat(p ? 1 : 1 / n, ")"),
       opacity: 0
-    }, E = (0, f.Yzy)(a, {
+    }, E = (0, f.Yzy)(o, {
       ref: m,
       from: g,
       enter: {
@@ -229,11 +229,11 @@ let P = e => {
       config: A
     }), b = i.useRef(null), y = (0, f.q_F)({
       ref: b,
-      transform: a || p ? "translateY(0)" : "translateY(-25px)",
-      opacity: +!!a,
+      transform: o || p ? "translateY(0)" : "translateY(-25px)",
+      opacity: +!!o,
       config: N
     }, "animate-always");
-    return (0, c.useChain)(a ? [m, b] : [b, m], a ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(h.W5, {
+    return (0, c.useChain)(o ? [m, b] : [b, m], o ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(h.W5, {
       className: O.positionedLayer,
       fixed: true,
       align: "center",
@@ -248,13 +248,13 @@ let P = e => {
             className: O.__invalid_overlaySticker,
             disableAnimation: t,
             enlargeOnInteraction: false,
-            isInteracting: a,
+            isInteracting: o,
             maskAsset: false,
             sticker: d,
             size: Math.round(l * n),
             withLoadingIndicator: false
           })
-        }), o && (0, r.jsx)(c.animated.div, {
+        }), a && (0, r.jsx)(c.animated.div, {
           className: O.overlayLabelWrapper,
           style: y,
           children: (0, r.jsx)(f.Text, {
@@ -270,8 +270,8 @@ let P = e => {
     let {
       isInteracting: t = false,
       disableAnimation: n = false,
-      enlargeOnInteraction: o = false,
-      enlargeWithName: a = true,
+      enlargeOnInteraction: a = false,
+      enlargeWithName: o = true,
       enlargeScaleFactor: s = S,
       maskAsset: l = false,
       size: c,
@@ -297,10 +297,10 @@ let P = e => {
         assetData: _,
         fileUri: p,
         onError: h
-      }), o && (0, r.jsx)(L, {
+      }), a && (0, r.jsx)(L, {
         disableAnimation: n,
         enlargeScaleFactor: s,
-        enlargeWithName: a,
+        enlargeWithName: o,
         isInteracting: t,
         positionRef: O,
         size: c,

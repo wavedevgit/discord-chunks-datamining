@@ -1,75 +1,61 @@
-/** Chunk was on web.js **/
-/** chunk id: 176127, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 176127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => c
 }), require("./583741.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk435064 = require("./435064.js"),
   Chunk538454 = require("./538454.js");
 
-function c(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function u(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      c(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function d(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let _ = 4;
-
-function p() {
-  let e = (0, Chunk442837.Wu)([Chunk435064.Z], () => {
+function c() {
+  var e, t;
+  let n = (0, Chunk442837.Wu)([Chunk435064.Z], () => {
     var e;
     let t = null == (e = Chunk435064.Z.getLastClipsSession()) ? true : module.newClipIds;
-    return null == exports ? [] : Chunk435064.Z.getClips().slice(0, _).filter(e => t.includes(e.id))
+    return null == exports ? [] : Chunk435064.Z.getClips().slice(0, 4).filter(e => t.includes(e.id))
   });
   return (0, Chunk255367.jsx)("div", {
-    className: o()(Chunk538454.thumbnailStack, {
-      [Chunk538454["height-1"]]: 1 === module.length,
-      [Chunk538454["height-2"]]: 2 === module.length,
-      [Chunk538454["height-3"]]: 3 === module.length,
-      [Chunk538454["height-max"]]: module.length >= 4
+    className: l()(Chunk538454.thumbnailStack, {
+      [Chunk538454["height-1"]]: 1 === require.length,
+      [Chunk538454["height-2"]]: 2 === require.length,
+      [Chunk538454["height-3"]]: 3 === require.length,
+      [Chunk538454["height-max"]]: require.length >= 4
     }),
-    children: Array.from(f(u({}, module), {
-      length: _
-    })).map((e, t) => null != e ? (0, r.jsx)("img", {
+    children: Array.from((e = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({}, require), t = t = {
+      length: 4
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
+      }
+      return n
+    })(Object(exports)).forEach(function(n) {
+      Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    }), module)).map((e, t) => null != e ? (0, r.jsx)("img", {
       alt: "",
-      className: l.thumbnail,
+      className: s.thumbnail,
       src: e.thumbnail
     }, e.id) : (0, r.jsx)("div", {}, "placeholder-".concat(t))).reverse()
   })

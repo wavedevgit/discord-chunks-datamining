@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 861529, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 30243 **/
+/** chunk id: 861529, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => b
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk454585 = require("./454585.js"),
   Chunk937889 = require("./937889.js"),
   Chunk970184 = require("./970184.jsx"),
@@ -16,25 +15,23 @@ var Chunk255367 = require("./255367.js"),
   Chunk709136 = require("./709136.js"),
   Chunk430864 = require("./430864.js");
 
-function p(e) {
-  let t = (0, c.CJ)();
-  return (0, i.useMemo)(() => {
-    let n;
-    return null === t ? null : (n = null != t.message ? (0, l.rs)(t.message, d.u) : (0, l.p6)({
-      channelId: t.channelId,
-      renderOptions: d.u
-    }), s.Z.parse(e, true, n))
-  }, [e, t])
-}
-
-function h(e) {
+function b(e) {
   let {
     content: t,
-    className: n
-  } = e, i = p(t), o = (0, u.Gt)();
-  return (0, r.jsx)("div", {
-    className: a()(n, _.markup, f.markdownContainer, {
-      [f.containerSizedText]: o
+    className: r
+  } = e, i = function(e) {
+    let t = (0, s.CJ)();
+    return (0, l.useMemo)(() => {
+      let r;
+      return null === t ? null : (r = null != t.message ? (0, c.rs)(t.message, d.u) : (0, c.p6)({
+        channelId: t.channelId,
+        renderOptions: d.u
+      }), a.Z.parse(e, true, r))
+    }, [e, t])
+  }(t), b = (0, u.Gt)();
+  return (0, n.jsx)("div", {
+    className: o()(r, f.markup, p.markdownContainer, {
+      [p.containerSizedText]: b
     }),
     children: i
   })

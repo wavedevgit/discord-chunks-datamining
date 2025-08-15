@@ -2,7 +2,7 @@
 /** chunk id: 227172, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Z,
+  Z: () => V,
   v: () => B
 });
 var Chunk255367 = require("./255367.js"),
@@ -39,7 +39,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function j(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,14 +48,14 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -65,8 +65,8 @@ function U(e, t) {
   if (null == e) return {};
   var n, r, i = G(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -74,8 +74,8 @@ function U(e, t) {
 function G(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let B = {
@@ -88,21 +88,21 @@ let B = {
     [Chunk758713.z.XBOX]: Chunk639351.Z,
     [Chunk758713.z.PLAYSTATION]: Chunk374129.Z
   },
-  Z = e => {
+  V = e => {
     let {
       channel: t,
       entry: n,
       disableGameProfileLinks: E,
       onReaction: b,
-      onVoiceChannelPreview: j,
+      onVoiceChannelPreview: k,
       onUserPopoutClosed: G,
-      trackRankingItemInteraction: Z
+      trackRankingItemInteraction: V
     } = e, {
       largeImage: F
     } = (0, O.rv)({
       entry: n
     }), {
-      user: V,
+      user: Z,
       details: H,
       appName: Y,
       activity: W,
@@ -110,7 +110,7 @@ let B = {
     } = (0, L.n)(n), {
       primaryColor: z,
       secondaryColor: q
-    } = (0, C.Z)(null == F ? true : F.src), X = (0, a.e7)([g.default], () => g.default.locale), {
+    } = (0, C.Z)(null == F ? true : F.src), X = (0, o.e7)([g.default], () => g.default.locale), {
       streamPreviewUrl: Q,
       stream: J
     } = (0, I.Z)(n), {
@@ -118,16 +118,16 @@ let B = {
       participant1: ee,
       participant2: et,
       numOtherParticipants: en
-    } = (0, v.Z)(n, 3), er = n.extra.platform, ei = null != er ? B[er] : null, eo = er === o.z.XBOX ? x.ABu.XBOX : er === o.z.PLAYSTATION ? x.ABu.PLAYSTATION : true, ea = (0, N.Z)(eo), {
+    } = (0, v.Z)(n, 3), er = n.extra.platform, ei = null != er ? B[er] : null, ea = er === a.z.XBOX ? x.ABu.XBOX : er === a.z.PLAYSTATION ? x.ABu.PLAYSTATION : true, eo = (0, N.Z)(ea), {
       data: es
     } = (0, h.IX)(n.extra.application_id), el = (0, d.q)(es, "MemberListGamingContentPopout"), ec = (0, m.L)(W, K), eu = i.useCallback(e => {
-      if ((null == F ? true : F.src) == null || null == t || null == V) return;
+      if ((null == F ? true : F.src) == null || null == t || null == Z) return;
       let r = en > 0 ? (0, A.VY)({
         entry: n,
         channel: t,
         users: [ee, et],
         countOthers: en
-      }) : (0, A.HV)(n, t, V);
+      }) : (0, A.HV)(n, t, Z);
       return (0, S.SO)({
         entry: n,
         applicationImageSrc: null == F ? true : F.src,
@@ -137,8 +137,8 @@ let B = {
         colors: [z, q],
         channelId: e
       })
-    }, [null == F ? true : F.src, t, $, n, X, en, ee, et, z, q, V]);
-    if (null == V) return null;
+    }, [null == F ? true : F.src, t, $, n, X, en, ee, et, z, q, Z]);
+    if (null == Z) return null;
     let ed = (0, r.jsx)(P.Gk, {
         location: null == Q ? P.Gt.POPOUT : P.Gt.STREAMING_POPOUT,
         children: R.W.map((e, t) => (0, r.jsx)(e, {
@@ -148,7 +148,7 @@ let B = {
       ef = null == J ? (0, r.jsx)(w.wG, {
         channel: t,
         headerIcons: null == ei ? null : (0, r.jsx)(D.Z, {
-          onClick: ea,
+          onClick: eo,
           Icon: ei,
           "aria-label": M.intl.string(M.t.YR4cHB)
         }),
@@ -159,7 +159,7 @@ let B = {
         entry: n,
         disableGameProfileLinks: E,
         onUserPopoutClosed: G,
-        trackRankingItemInteraction: Z
+        trackRankingItemInteraction: V
       }) : (0, r.jsx)(w.jL, {
         channel: t,
         title: n.extra.game_name,
@@ -169,7 +169,7 @@ let B = {
         entry: n,
         stream: J,
         onUserPopoutClosed: G,
-        trackRankingItemInteraction: Z
+        trackRankingItemInteraction: V
       }),
       e_ = !ec && el ? (0, r.jsx)(f.Z, {
         application: es,
@@ -178,7 +178,7 @@ let B = {
             children: t,
             size: n
           } = e, i = U(e, ["children", "size"]);
-          return (0, r.jsx)(w.Ll, k({
+          return (0, r.jsx)(w.Ll, j({
             icon: s.v3n,
             text: t
           }, i))
@@ -187,13 +187,13 @@ let B = {
       }) : null,
       ep = [null == e_ && ((0, l.Z)(W, x.xjy.JOIN) || (0, c.Z)(W)) ? (0, r.jsx)(_.Z, {
         activity: W,
-        user: V,
+        user: Z,
         ButtonComponent: e => {
           let {
             children: t,
             size: n
           } = e, i = U(e, ["children", "size"]);
-          return (0, r.jsx)(w.Ll, k({
+          return (0, r.jsx)(w.Ll, j({
             icon: s.iWm,
             text: t
           }, i))
@@ -205,7 +205,7 @@ let B = {
             children: t,
             size: n
           } = e, i = U(e, ["children", "size"]);
-          return (0, r.jsx)(w.Ll, k({
+          return (0, r.jsx)(w.Ll, j({
             icon: s.tEF,
             text: t
           }, i))
@@ -215,11 +215,11 @@ let B = {
       children: [ef, (0, r.jsx)(w.St, {
         children: (0, r.jsx)(w.WT, {
           onReaction: b,
-          onVoiceChannelPreview: j,
-          user: V,
+          onVoiceChannelPreview: k,
+          user: Z,
           channel: t,
           generateReactionImage: eu,
-          reactionImageAltText: (0, A.IS)(n, V),
+          reactionImageAltText: (0, A.IS)(n, Z),
           entry: n,
           buttons: ep
         })

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk680295 = require("./680295.jsx"),
   Chunk687158 = require("./687158.js"),
@@ -44,14 +44,14 @@ function v(e) {
     pendingLegacyUsernameDisabled: L,
     pendingDisplayNameStyles: x,
     avatarClassName: M,
-    containerClassName: j,
-    isTryItOutFlow: k = false,
+    containerClassName: k,
+    isTryItOutFlow: j = false,
     disabledInputs: U = false,
     hideCustomStatus: G = false,
     hideBioSection: B = false,
-    hideMessageInput: Z = true,
+    hideMessageInput: V = true,
     pendingBadges: F,
-    shouldOpenBadgeTooltip: V,
+    shouldOpenBadgeTooltip: Z,
     hideViewFullProfileButton: H = false,
     interactive: Y = true
   } = e, W = (0, l.ZP)(t.id, null == n ? true : n.id), {
@@ -62,7 +62,7 @@ function v(e) {
     guildId: null == n ? true : n.id,
     avatarDecorationOverride: C,
     avatarOverride: N,
-    size: a.EFr.SIZE_80,
+    size: o.EFr.SIZE_80,
     showPending: true
   }), q = (0, _.ZT)({
     pendingProfileEffectId: D,
@@ -80,7 +80,7 @@ function v(e) {
     displayProfile: W,
     themeType: b.lY.POPOUT,
     pendingThemeColors: w,
-    className: o()(O.container, j),
+    className: a()(O.container, k),
     forceShowPremium: i,
     children: [(0, r.jsxs)("div", {
       className: O.header,
@@ -91,7 +91,7 @@ function v(e) {
         canUsePremiumCustomization: i,
         pendingBanner: I,
         pendingAccentColor: T,
-        isTryItOutFlow: k,
+        isTryItOutFlow: j,
         disabledInputs: U,
         onUpsellClick: () => null == v ? true : v({
           object: E.qAy.EDIT_PROFILE_BANNER
@@ -107,7 +107,7 @@ function v(e) {
         previewPrimaryColor: Q,
         className: M,
         disabledInputs: U,
-        isTryItOutFlow: k,
+        isTryItOutFlow: j,
         onUpsellClick: () => null == v ? true : v({
           object: E.qAy.AVATAR
         })
@@ -128,13 +128,13 @@ function v(e) {
       pendingPronouns: A,
       pendingLegacyUsernameDisabled: L,
       pendingDisplayNameStyles: x,
-      isTryItOutFlow: k,
+      isTryItOutFlow: j,
       hideBioSection: B,
       pendingBadges: F,
-      shouldOpenBadgeTooltip: V
+      shouldOpenBadgeTooltip: Z
     }), (0, r.jsx)(g.Z, {
       user: t,
-      hideMessageInput: Z,
+      hideMessageInput: V,
       hideViewFullProfileButton: H
     }), null != q && (0, r.jsx)(s.Z, {
       profileEffectId: q
@@ -143,7 +143,7 @@ function v(e) {
   return Y ? J : (0, r.jsx)("div", {
     role: "img",
     "aria-label": y.intl.string(y.t.ayozFh),
-    children: (0, r.jsx)(a.Rny, {
+    children: (0, r.jsx)(o.Rny, {
       children: J
     })
   })

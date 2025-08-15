@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 900085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => q
@@ -109,7 +109,7 @@ let V = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
       category: y.Z.getChannel(t.parent_id)
     }
   })(B),
-  F = Chunk442837.ZP.connectStores([Chunk938475.ZP], e => {
+  H = Chunk442837.ZP.connectStores([Chunk938475.ZP], e => {
     let {
       channel: t
     } = e;
@@ -118,7 +118,7 @@ let V = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
       voiceStates: x.ZP.getVoiceStates(t.guild_id)[t.id]
     }
   })(B),
-  H = Chunk442837.ZP.connectStores([Chunk888369.default], e => {
+  F = Chunk442837.ZP.connectStores([Chunk888369.default], e => {
     let {
       guild: t
     } = e;
@@ -241,7 +241,7 @@ class Y extends Chunk73800.PureComponent {
     })
   }
   focusNode(e) {
-    P.S.dispatch(R.CkL.QUICKSWITCHER_RESULT_FOCUS, {
+    I.S.dispatch(R.CkL.QUICKSWITCHER_RESULT_FOCUS, {
       node: e
     })
   }
@@ -288,7 +288,7 @@ class Y extends Chunk73800.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), M(this, "scrollerRef", l.createRef()), M(this, "inputRef", l.createRef()), M(this, "_listId", (0, O.hQ)()), M(this, "state", {
+    super(...e), M(this, "scrollerRef", l.createRef()), M(this, "inputRef", l.createRef()), M(this, "_listId", (0, _.hQ)()), M(this, "state", {
       query: this.props.query,
       mouseFocusDisabled: true
     }), M(this, "handleInputChange", () => {
@@ -314,7 +314,7 @@ class Y extends Chunk73800.PureComponent {
           return (0, d.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("1806"), n.e("36599"), n.e("7654"), n.e("58175"), n.e("44156"), n.e("58511"), n.e("6850"), n.e("58227"), n.e("54408"), n.e("42926"), n.e("20087"), n.e("40725"), n.e("56534"), n.e("87154"), n.e("33213"), n.e("35237")]).then(n.bind(n, 545135));
+            } = await Promise.all([n.e("1806"), n.e("36599"), n.e("60962"), n.e("58175"), n.e("7654"), n.e("44156"), n.e("47463"), n.e("6850"), n.e("58227"), n.e("54408"), n.e("42926"), n.e("20087"), n.e("6049"), n.e("56534"), n.e("87154"), n.e("33213"), n.e("35237")]).then(n.bind(n, 545135));
             return n => (0, i.jsx)(e, U(k({}, n), {
               guild: t.record,
               onSelect: N.Cp,
@@ -402,7 +402,7 @@ class Y extends Chunk73800.PureComponent {
           return (0, d.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
+            } = await Promise.all([n.e("79695"), n.e("69220"), n.e("74820")]).then(n.bind(n, 881351));
             return n => (0, i.jsx)(e, U(k({}, n), {
               user: t.record,
               onSelect: N.Cp
@@ -484,7 +484,7 @@ class Y extends Chunk73800.PureComponent {
             score: l ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
         case h.h8.VOICE_CHANNEL:
-          return (0, i.jsx)(F, {
+          return (0, i.jsx)(H, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -495,7 +495,7 @@ class Y extends Chunk73800.PureComponent {
             score: l ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
         case h.h8.GUILD:
-          return (0, i.jsx)(H, {
+          return (0, i.jsx)(F, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -572,7 +572,7 @@ class Y extends Chunk73800.PureComponent {
 
 function q(e) {
   let t = (0, s.cj)([w.Z], () => w.Z.getProps()),
-    n = (0, _.Pt)(),
+    n = (0, O.Pt)(),
     r = A.Z.useExperiment({
       location: "QuickSwitcher"
     }).enabled,

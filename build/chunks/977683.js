@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 977683, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66866 **/
+/** chunk id: 977683, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -14,15 +13,15 @@ var Chunk73800 = require("./73800.js"),
 
 function u(e, t) {
   var n;
-  let u = (0, s.v)(e),
+  let u = (0, o.v)(e),
     d = (0, a.cE)(u.getChannelId())[u.id],
-    f = (0, c.Z)(null == (n = u.poll) ? true : n.expiry),
-    _ = o.Yk.useSetting(),
-    p = (0, i.ZP)(),
-    h = null != t ? t : p;
-  return r.useMemo(() => (0, l.ZP)(u, d, {
-    animateEmoji: _,
-    theme: h,
-    formattedExpirationLabel: f
-  }), [_, u, d, f, h])
+    p = (0, c.Z)(null == (n = u.poll) ? true : n.expiry),
+    m = l.Yk.useSetting(),
+    f = (0, i.ZP)(),
+    _ = null != t ? t : f;
+  return r.useMemo(() => (0, s.ZP)(u, d, {
+    animateEmoji: m,
+    theme: _,
+    formattedExpirationLabel: p
+  }), [m, u, d, p, _])
 }

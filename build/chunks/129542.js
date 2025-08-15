@@ -2,12 +2,12 @@
 /** chunk id: 129542, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D: () => o
+  D: () => a
 }), require("./415506.js");
 var Chunk358085 = require("./358085.js"),
   Chunk981631 = require("./981631.js");
 
-function o() {
+function a() {
   switch ((0, Chunk358085.getPlatform)()) {
     case Chunk358085.PlatformTypes.WINDOWS:
       let e = "x86";

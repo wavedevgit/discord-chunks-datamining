@@ -1,98 +1,90 @@
-/** Chunk was on web.js **/
-/** chunk id: 912332, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 37220 **/
+/** chunk id: 912332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Np: () => _,
-  l8: () => d,
-  mc: () => f,
-  so: () => u
+  Np: () => d,
+  l8: () => c,
+  mc: () => u,
+  so: () => s
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk481060 = require("./481060.js"),
   Chunk822869 = require("./822869.js");
 
-function a(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function s(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function l(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function c(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
+function o(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = "forward-modal";
+let s = "forward-modal";
 
-function d(e) {
+function c(e) {
   let {
     message: t,
-    source: a,
-    initialSelectedDestinations: l = [],
+    source: c,
+    initialSelectedDestinations: u = [],
     forwardOptions: d,
     onRequestSent: f
   } = e;
-  (0, o.Lb)(t.channel_id, t.id, a), (0, i.ZDy)(async () => {
+  (0, l.Lb)(t.channel_id, t.id, c), (0, i.ZDy)(async () => {
     let {
       ForwardModal: e
-    } = await n.e("33648").then(n.bind(n, 930864));
-    return n => (0, r.jsx)(e, c(s({}, n), {
+    } = await Promise.all([n.e("25292"), n.e("6380"), n.e("19157")]).then(n.bind(n, 930864));
+    return n => (0, r.jsx)(e, o(a({}, n), {
       message: t,
-      initialSelectedDestinations: l,
+      initialSelectedDestinations: u,
       forwardOptions: d,
       onRequestSent: f
     }))
   }, {
-    modalKey: u
+    modalKey: s
   })
 }
 
-function f() {
-  (0, Chunk481060.Mr3)(u)
+function u() {
+  (0, Chunk481060.Mr3)(s)
 }
 
-function _(e) {
+function d(e) {
   let {
     message: t,
-    failedDestinations: o,
-    forwardOptions: a
+    failedDestinations: l,
+    forwardOptions: s
   } = e;
   (0, i.ZDy)(async () => {
     let {
       ForwardFailedAlertModal: e
     } = await n.e("86590").then(n.bind(n, 384331));
-    return n => (0, r.jsx)(e, c(s({}, n), {
+    return n => (0, r.jsx)(e, o(a({}, n), {
       message: t,
-      failedDestinations: o,
-      forwardOptions: a
+      failedDestinations: l,
+      forwardOptions: s
     }))
   })
 }

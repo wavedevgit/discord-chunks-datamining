@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 568248, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 30243 **/
+/** chunk id: 568248, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => y
 }), require("./953529.js"), require("./997841.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk95398 = require("./95398.jsx"),
   Chunk936141 = require("./936141.js"),
   Chunk768494 = require("./768494.js"),
@@ -18,53 +17,52 @@ var Chunk255367 = require("./255367.js"),
   Chunk295435 = require("./295435.jsx"),
   Chunk217702 = require("./217702.js"),
   Chunk156259 = require("./156259.js");
-let g = 85;
 
-function E(e) {
+function y(e) {
   let {
     media: t,
-    spoiler: n,
-    description: o
-  } = e, E = (0, u.pU)(t), b = (0, _.yE)(t.flags, c.hR.IS_ANIMATED), {
-    gifAutoPlay: y
-  } = (0, d.c)(), [O, v] = i.useState(n), I = e => {
-    var n, i;
-    return "IMAGE" !== E ? (0, r.jsx)(p.S, {
-      className: m.imgContainer,
+    spoiler: r,
+    description: i
+  } = e, y = (0, u.pU)(t), j = (0, f.yE)(t.flags, s.hR.IS_ANIMATED), {
+    gifAutoPlay: g
+  } = (0, d.c)(), [h, v] = l.useState(r), P = e => {
+    var r, l;
+    return "IMAGE" !== y ? (0, n.jsx)(b.S, {
+      className: O.imgContainer,
       media: t,
-      placeholderWidth: g,
-      placeholderHeight: g,
-      maxWidth: g,
-      maxHeight: g,
+      placeholderWidth: 85,
+      placeholderHeight: 85,
+      maxWidth: 85,
+      maxHeight: 85,
       hiddenSpoilers: e
-    }) : (0, r.jsx)(f.Yi, {
-      containerClassName: a()(m.imgContainer, {
-        [m.hiddenSpoiler]: e
+    }) : (0, n.jsx)(p.Yi, {
+      containerClassName: o()(O.imgContainer, {
+        [O.hiddenSpoiler]: e
       }),
-      imageClassName: m.img,
+      imageClassName: O.img,
       src: t.proxyUrl,
-      alt: o,
+      alt: i,
       original: t.url,
       placeholder: t.placeholder,
       placeholderVersion: t.placeholderVersion,
-      width: null != (n = t.width) ? n : 0,
-      height: null != (i = t.height) ? i : 0,
+      width: null != (r = t.width) ? r : 0,
+      height: null != (l = t.height) ? l : 0,
       hiddenSpoilers: e,
-      maxWidth: 2 * g,
-      maxHeight: 2 * g,
-      minWidth: g,
-      minHeight: g,
-      autoPlay: y && !e,
-      mediaLayoutType: h.hV.MOSAIC,
+      maxWidth: 170,
+      maxHeight: 170,
+      minWidth: 85,
+      minHeight: 85,
+      autoPlay: g && !e,
+      mediaLayoutType: m.hV.MOSAIC,
       reducedSizeAltTextButton: true,
-      srcIsAnimated: b
+      srcIsAnimated: j
     })
   };
-  return n ? (0, r.jsx)(s.ZP, {
-    type: s.ZP.Types.ATTACHMENT,
-    reason: l.wk.SPOILER,
-    obscured: O,
+  return r ? (0, n.jsx)(a.ZP, {
+    type: a.ZP.Types.ATTACHMENT,
+    reason: c.wk.SPOILER,
+    obscured: h,
     onToggleObscurity: () => v(e => !e),
-    children: e => I(e)
-  }) : I(false)
+    children: e => P(e)
+  }) : P(false)
 }

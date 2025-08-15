@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 226026, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 35755 **/
+/** chunk id: 226026, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => c
 });
 var Chunk73800 = require("./73800.js"),
   Chunk990547 = require("./990547.js"),
@@ -10,38 +9,37 @@ var Chunk73800 = require("./73800.js"),
   Chunk213609 = require("./213609.js"),
   Chunk541099 = require("./541099.js"),
   Chunk312871 = require("./312871.js");
-let c = 1e3;
 
-function u(e) {
+function c(e) {
   let {
     applicationId: t,
     applicationFlags: n,
-    sectionName: u,
-    sectionPosition: d,
-    sectionOverallPosition: f,
-    promotionalLabel: _,
-    numFriendsWhoPlay: p
-  } = e, h = (0, o.e7)([s.Z], () => s.Z.entrypoint()), m = r.useCallback(() => {
+    sectionName: c,
+    sectionPosition: u,
+    sectionOverallPosition: d,
+    promotionalLabel: p,
+    numFriendsWhoPlay: m
+  } = e, f = (0, r.e7)([o.Z], () => o.Z.entrypoint()), h = l.useCallback(() => {
     (0, a.h)({
       type: i.ImpressionTypes.VIEW,
       name: i.ImpressionNames.APP_LAUNCHER_ITEM,
       properties: {
         application_id: t,
         application_flags: n,
-        section_name: u,
-        section_position: d,
-        section_overall_position: f,
-        source: h,
-        promotional_label: _,
-        num_friends_who_play: p
+        section_name: c,
+        section_position: u,
+        section_overall_position: d,
+        source: f,
+        promotional_label: p,
+        num_friends_who_play: m
       }
     })
-  }, [p]), g = .5;
+  }, [m]);
   return {
-    trackItemImpressionRef: (0, l.Z)({
-      onVisible: m,
-      threshold: g,
-      minTimeVisibleMs: c
+    trackItemImpressionRef: (0, s.Z)({
+      onVisible: h,
+      threshold: .5,
+      minTimeVisibleMs: 1e3
     })
   }
 }

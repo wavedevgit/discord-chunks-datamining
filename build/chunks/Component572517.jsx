@@ -1,7 +1,7 @@
-/** Chunk was on 47238 **/
-/** chunk id: 572517, original params: e,r,n (module,exports,require) **/
+/** Chunk was on 54433 **/
+/** chunk id: 572517, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  c: () => _
+  c: () => x
 });
 var Chunk255367 = require("./255367.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,33 +15,33 @@ var Chunk255367 = require("./255367.js"),
   Chunk897942 = require("./897942.jsx"),
   Chunk432483 = require("./432483.js");
 
-function _() {
+function x() {
   var e;
-  let r = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    n = (0, Chunk410030.ZP)(),
-    _ = (0, Chunk780384.wj)(require),
-    x = (0, Chunk347896.Z)(),
-    f = null == x ? true : x.planSelectionBanner,
+  let n = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
+    t = (0, Chunk410030.ZP)(),
+    x = (0, Chunk780384.wj)(require),
+    h = (0, Chunk347896.Z)(),
+    j = null == h ? true : h.planSelectionBanner,
     {
-      claimableRewards: m
+      claimableRewards: f
     } = (0, Chunk987209.wD)();
-  if (null == f || null == m) return null;
-  let h = null == (e = f.gradientConfig) ? true : module.call(f, {
-      isDarkMode: _,
+  if (null == j || null == f) return null;
+  let m = null == (e = j.gradientConfig) ? true : module.call(j, {
+      isDarkMode: x,
       isAndroid: false
     }),
-    j = (0, Chunk717401.Tl)(h);
+    _ = (0, Chunk717401.Tl)(m);
   return (0, Chunk255367.jsxs)("div", {
     className: Chunk432483.promotionalFooterBanner,
-    style: j,
+    style: _,
     children: [(0, Chunk255367.jsx)(Chunk897942.Z, {
-      claimableRewards: m,
-      maxRewardImageSrc: f.getImageUrl(_, exports),
+      claimableRewards: f,
+      maxRewardImageSrc: j.getImageUrl(x, exports),
       size: Chunk481060.EFr.SIZE_40
     }), (0, Chunk255367.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       className: Chunk432483.bannerText,
-      children: f.desktopBannerText(m.length)
+      children: j.desktopBannerText(f.length)
     })]
   })
 }

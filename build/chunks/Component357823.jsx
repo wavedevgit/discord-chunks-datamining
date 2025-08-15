@@ -1,7 +1,7 @@
-/** Chunk was on 81141 **/
+/** Chunk was on 47817 **/
 /** chunk id: 357823, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => h
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -19,44 +19,44 @@ var Chunk481060 = require("./481060.js"),
   Chunk933409 = require("./933409.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let C = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let h = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: t,
     channel: n,
     guildId: u,
-    onSelect: a,
-    onInteraction: d,
-    context: g
-  } = e, C = n.id, M = t.isNonUserBot(), S = t.id === E.default.getId(), O = (0, _.Z)(t), b = (0, s.Z)(t, u, C), I = (0, A.Y)({
-    isOwnSettings: S,
+    onSelect: o,
+    onInteraction: a,
+    context: b
+  } = e, h = n.id, p = t.isNonUserBot(), v = t.id === f.default.getId(), A = (0, s.Z)(t), y = (0, _.Z)(t, u, h), S = (0, E.Y)({
+    isOwnSettings: v,
     userId: t.id,
-    channelId: C,
+    channelId: h,
     guildId: u,
-    context: g
-  }), [Z, T] = (0, A.E)(t, C, u), h = (0, f.Z)(t, u, C), N = (0, o.Z)({
+    context: b
+  }), [T, m] = (0, E.E)(t, h, u), I = (0, g.Z)(t, u, h), P = (0, c.Z)({
     id: t.id,
-    label: v.intl.string(v.t["/AXYnJ"])
-  }), k = (0, c.Z)(t.id, n);
-  return (0, i.jsx)(l.v2r, {
+    label: O.intl.string(O.t["/AXYnJ"])
+  }), M = (0, d.Z)(t.id, n);
+  return (0, r.jsx)(l.v2r, {
     navId: "user-context",
-    onClose: r.Zy,
-    "aria-label": v.intl.string(v.t.liqwPD),
-    onSelect: a,
-    onInteraction: d,
+    onClose: i.Zy,
+    "aria-label": O.intl.string(O.t.liqwPD),
+    onSelect: o,
+    onInteraction: a,
     variant: "fixed",
-    children: !M && (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsxs)(l.kSQ, {
-        children: [O, b]
-      }), k, I, !S && (0, i.jsx)(l.kSQ, {
-        children: (0, i.jsxs)(l.sNh, {
+    children: !p && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsxs)(l.kSQ, {
+        children: [A, y]
+      }), M, S, !v && (0, r.jsx)(l.kSQ, {
+        children: (0, r.jsxs)(l.sNh, {
           id: "more-options",
-          label: v.intl.string(v.t.PdRCRk),
-          children: [Z, (0, i.jsx)(l.kSQ, {
-            children: h
-          }), T]
+          label: O.intl.string(O.t.PdRCRk),
+          children: [T, (0, r.jsx)(l.kSQ, {
+            children: I
+          }), m]
         })
-      }), S && (0, i.jsx)(l.kSQ, {
-        children: N
+      }), v && (0, r.jsx)(l.kSQ, {
+        children: P
       })]
     })
   })

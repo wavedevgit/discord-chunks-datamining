@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk831209 = require("./831209.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -91,8 +91,8 @@ function A(e) {
     forceShowBetaLabel: n = false
   } = e, i = (0, p.V2)({
     location: "SoundmojiBanner"
-  }), o = (0, l.e7)([d.default], () => _.ZP.canUseSoundboardEverywhere(d.default.getCurrentUser())), a = (0, l.e7)([u.Z], () => u.Z.getGuildId());
-  return n || o || t.guildId === g.X8 || t.guildId === a || !i ? (0, r.jsx)(c.IGR, {
+  }), a = (0, l.e7)([d.default], () => _.ZP.canUseSoundboardEverywhere(d.default.getCurrentUser())), o = (0, l.e7)([u.Z], () => u.Z.getGuildId());
+  return n || a || t.guildId === g.X8 || t.guildId === o || !i ? (0, r.jsx)(c.IGR, {
     text: "BETA",
     color: s.Z.BG_BRAND,
     className: b.betaBadge
@@ -125,7 +125,7 @@ function N(e) {
     sound: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(b.infoContainer, b.infoTooltip),
+    className: o()(b.infoContainer, b.infoTooltip),
     children: [(0, r.jsx)(A, {
       sound: t
     }), (0, r.jsxs)("div", {
@@ -155,8 +155,8 @@ function C(e) {
   let {
     renderPopout: t,
     position: n,
-    tooltipText: o,
-    children: a,
+    tooltipText: a,
+    children: o,
     setTooltipShowing: s,
     clickableClassName: l
   } = e, [u, d] = i.useState(false), [f, _] = i.useState(String(Date.now())), p = i.useCallback(e => {
@@ -193,16 +193,16 @@ function C(e) {
       onTooltipShow: () => {
         g && (null == s || s(true))
       },
-      text: o,
+      text: a,
       position: "top",
       shouldShow: g,
       children: t => (0, r.jsx)(c.P3F, T(v({
         innerRef: m
       }, t, e), {
-        "aria-label": o,
+        "aria-label": a,
         onClick: p,
         className: l,
-        children: a
+        children: o
       }))
     })
   })

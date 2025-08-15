@@ -1,16 +1,14 @@
-/** Chunk was on web.js **/
-/** chunk id: 546247, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 546247, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => o
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk481060 = require("./481060.js"),
   Chunk998502 = require("./998502.js"),
   Chunk70185 = require("./70185.js");
-
-function s(e) {
+let o = Chunk998502.ZP.getEnableHardwareAcceleration() ? function(e) {
   let {
     eventTargetRef: t
   } = e;
@@ -18,9 +16,7 @@ function s(e) {
     className: a.pulseGradient,
     eventTargetRef: t
   })
-}
-
-function l() {
+} : function() {
   return (0, Chunk255367.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "1000",
@@ -153,4 +149,3 @@ function l() {
     })]
   })
 }
-let c = Chunk998502.ZP.getEnableHardwareAcceleration() ? s : l

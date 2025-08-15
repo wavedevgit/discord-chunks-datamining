@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 62072, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 62072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => I
 });
 var Chunk73800 = require("./73800.js"),
   Chunk904245 = require("./904245.js"),
@@ -29,83 +28,73 @@ var Chunk73800 = require("./73800.js"),
   Chunk432376 = require("./432376.js"),
   Chunk996861 = require("./996861.js"),
   Chunk981631 = require("./981631.js");
-
-function C(e) {
-  return E.Z.can(N.Plq.MANAGE_MESSAGES, e)
-}
-
-function R(e, t, n) {
-  return !t.isSystemDM() && (0, I.Z)(n, e)
-}
-
-function P(e) {
-  let t = null == e.guild_id || m.Z.canChatInGuild(e.guild_id),
-    n = d.nc.getSetting(),
-    {
-      disableReactionCreates: r
-    } = (0, S.Z)({
-      channel: e,
-      canChat: t,
-      renderReactions: n,
-      canAddNewReactions: t && E.Z.can(N.Plq.ADD_REACTIONS, e),
-      isLurking: null != e.guild_id && s.Z.isLurking(e.guild_id),
-      isGuest: null != e.guild_id && h.ZP.isCurrentUserGuest(e.guild_id),
-      isActiveChannelOrUnarchivableThread: (0, c.RG)(e)
-    });
-  return !r && n
-}
-let w = function(e, t, n) {
-  let s = r.useRef(n);
-  return s.current = n, r.useCallback(n => {
-    if (!s.current || n.target !== n.currentTarget) return;
+let I = function(e, t, n) {
+  let I = r.useRef(n);
+  return I.current = n, r.useCallback(n => {
+    if (!I.current || n.target !== n.currentTarget) return;
     let r = !n.altKey && !n.ctrlKey && !n.metaKey && !n.shiftKey,
-      d = n.altKey && !(n.ctrlKey || n.metaKey || n.shiftKey),
-      h = n.ctrlKey && !(n.altKey || n.metaKey || n.shiftKey),
-      m = n.metaKey && !(n.altKey || n.ctrlKey || n.shiftKey),
-      E = n.shiftKey && !(n.altKey || n.ctrlKey || n.metaKey),
-      I = g.Z.getMessage(t, e),
-      S = _.Z.getChannel(t);
-    if (null == I || null == S) return;
-    let w = f.default.getId();
+      Z = n.altKey && !(n.ctrlKey || n.metaKey || n.shiftKey),
+      T = n.ctrlKey && !(n.altKey || n.metaKey || n.shiftKey),
+      N = n.metaKey && !(n.altKey || n.ctrlKey || n.shiftKey),
+      A = n.shiftKey && !(n.altKey || n.ctrlKey || n.metaKey),
+      w = b.Z.getMessage(t, e),
+      R = h.Z.getChannel(t);
+    if (null == w || null == R) return;
+    let M = p.default.getId();
     switch (n.key.toLowerCase()) {
       case "backspace":
-        r && (C(S) || I.canDeleteOwnMessage(w)) && (n.preventDefault(), (0, A.$Z)(S, I, n));
+        r && (y.Z.can(P.Plq.MANAGE_MESSAGES, R) || w.canDeleteOwnMessage(M)) && (n.preventDefault(), (0, S.$Z)(R, w, n));
         break;
       case "c":
-        ((0, O.isMac)() ? m : h) && b.wS && (n.preventDefault(), (0, b.JG)(I.content));
+        ((0, x.isMac)() ? N : T) && _.wS && (n.preventDefault(), (0, _.JG)(w.content));
         break;
       case "e":
-        r && R(w, S, I) && (n.preventDefault(), (0, A.Hd)(S, I));
+        r && !R.isSystemDM() && (0, j.Z)(w, M) && (n.preventDefault(), (0, S.Hd)(R, w));
         break;
       case "p":
-        (r || E) && (0, T.Z)(I, S) && (n.preventDefault(), (0, A.rY)(S, I, n));
+        (r || A) && (0, O.Z)(w, R) && (n.preventDefault(), (0, S.rY)(R, w, n));
         break;
       case "+":
-        (r || E) && P(S) && (n.preventDefault(), y.S.dispatchKeyed(N.LPv.TOGGLE_REACTION_POPOUT, I.id, {
+        (r || A) && function(e) {
+          let t = null == e.guild_id || g.Z.canChatInGuild(e.guild_id),
+            n = d.nc.getSetting(),
+            {
+              disableReactionCreates: r
+            } = (0, E.Z)({
+              channel: e,
+              canChat: t,
+              renderReactions: n,
+              canAddNewReactions: t && y.Z.can(P.Plq.ADD_REACTIONS, e),
+              isLurking: null != e.guild_id && o.Z.isLurking(e.guild_id),
+              isGuest: null != e.guild_id && m.ZP.isCurrentUserGuest(e.guild_id),
+              isActiveChannelOrUnarchivableThread: (0, c.RG)(e)
+            });
+          return !r && n
+        }(R) && (n.preventDefault(), C.S.dispatchKeyed(P.LPv.TOGGLE_REACTION_POPOUT, w.id, {
           emojiPicker: true
         }));
         break;
       case "r":
-        (r || E) && (0, l.o)(S, I) && (n.preventDefault(), (0, A.HH)(S, I, n));
+        (r || A) && (0, s.o)(R, w) && (n.preventDefault(), (0, S.HH)(R, w, n));
         break;
       case "f":
-        (r || E) && (0, o.h)(I) && (n.preventDefault(), (0, a.l8)({
-          message: I,
+        (r || A) && (0, l.h)(w) && (n.preventDefault(), (0, a.l8)({
+          message: w,
           source: "keyboard-shortcut"
         }));
         break;
       case "t":
-        if (r && (0, c.ki)(S, I)) n.preventDefault(), (0, u.R6)(S, I, "Message Shortcut");
-        else if (I.hasFlag(N.iLy.HAS_THREAD)) {
-          let e = _.Z.getChannel(v.default.castMessageIdAsChannelId(I.id));
-          null != e && (r || E) && (n.preventDefault(), (0, u.ok)(e, E))
+        if (r && (0, c.ki)(R, w)) n.preventDefault(), (0, u.R6)(R, w, "Message Shortcut");
+        else if (w.hasFlag(P.iLy.HAS_THREAD)) {
+          let e = h.Z.getChannel(v.default.castMessageIdAsChannelId(w.id));
+          null != e && (r || A) && (n.preventDefault(), (0, u.ok)(e, A))
         }
         break;
       case "enter":
-        d && (n.preventDefault(), (0, A.B8)(S, I));
+        Z && (n.preventDefault(), (0, S.B8)(R, w));
         break;
       case "escape":
-        p.Z.isEditing(S.id, I.id) ? i.Z.endEditMessage(S.id) : y.S.dispatch(N.CkL.TEXTAREA_FOCUS)
+        f.Z.isEditing(R.id, w.id) ? i.Z.endEditMessage(R.id) : C.S.dispatch(P.CkL.TEXTAREA_FOCUS)
     }
   }, [e, t])
 }

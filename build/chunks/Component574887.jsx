@@ -1,4 +1,4 @@
-/** Chunk was on 76708 **/
+/** Chunk was on 12756 **/
 /** chunk id: 574887, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -22,7 +22,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk20163 = require("./20163.js");
 
-function x(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function x(e) {
   return e
 }
 
-function h(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function v(e) {
     className: O.connection,
     children: [(0, r.jsx)(a.ua7, {
       text: null == v ? true : v.name,
-      children: e => (0, r.jsx)("div", h(x({}, e), {
+      children: e => (0, r.jsx)("div", x(h({}, e), {
         className: O.platformIconContainer,
         children: (0, r.jsx)("img", {
           alt: y.intl.formatToPlainString(y.t.rtm15O, {
@@ -84,7 +84,7 @@ function v(e) {
           return null == t ? (0, r.jsx)(a.ua7, {
             overflowOnly: true,
             text: n.name,
-            children: e => (0, r.jsx)(a.Text, h(x({}, e), {
+            children: e => (0, r.jsx)(a.Text, x(h({}, e), {
               variant: "text-sm/normal",
               className: O.accountNameText,
               children: n.name
@@ -108,7 +108,7 @@ function v(e) {
               children: [(0, r.jsx)(a.ua7, {
                 overflowOnly: true,
                 text: n.name,
-                children: e => (0, r.jsx)(a.Text, h(x({}, e), {
+                children: e => (0, r.jsx)(a.Text, x(h({}, e), {
                   variant: "text-sm/normal",
                   className: O.accountNameText,
                   children: n.name

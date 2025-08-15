@@ -38,7 +38,7 @@ function b(e) {
       variant: "text-lg/normal",
       color: "header-secondary",
       children: g.intl.string(g.t.uT1CPT)
-    }), (0, r.jsx)(o.X6, {
+    }), (0, r.jsx)(a.X6, {
       variant: "heading-xxl/bold",
       color: "header-primary",
       children: n.name
@@ -66,7 +66,7 @@ function b(e) {
     className: E.header,
     children: [(0, r.jsxs)("div", {
       className: E.headerIcons,
-      children: [(0, r.jsx)(a.qE, {
+      children: [(0, r.jsx)(o.qE, {
         className: E.avatar,
         src: S,
         size: m.EF.SIZE_80,
@@ -80,7 +80,7 @@ function b(e) {
         }), (0, r.jsx)("div", {
           className: E.ellipse
         })]
-      }), (0, r.jsx)(a.qE, {
+      }), (0, r.jsx)(o.qE, {
         className: E.avatar,
         src: A,
         size: m.EF.SIZE_80,

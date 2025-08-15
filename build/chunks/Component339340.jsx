@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk343817 = require("./343817.js"),
   Chunk667202 = require("./667202.jsx"),
@@ -37,24 +37,24 @@ function P(e) {
   let {
     channel: t,
     transitionState: n,
-    sourceAnalyticsLocations: o,
+    sourceAnalyticsLocations: a,
     onClose: P
   } = e, w = b.Z.getCurrentConfig({
     location: "VoiceChannelStatusModal"
   }, {
     autoTrackExposure: true
-  }).enabled, D = (0, s.e7)([p.Z], () => p.Z.getChannelStatus(t)), L = (0, s.e7)([O.Z], () => O.Z.getMediaSessionId()), [x, M] = i.useState(null != D ? D : ""), [j, k] = i.useState(false), [U, G] = i.useState(null), B = (0, s.e7)([v.default], () => v.default.getCurrentUser()), Z = x.length > R;
+  }).enabled, D = (0, s.e7)([p.Z], () => p.Z.getChannelStatus(t)), L = (0, s.e7)([O.Z], () => O.Z.getMediaSessionId()), [x, M] = i.useState(null != D ? D : ""), [k, j] = i.useState(false), [U, G] = i.useState(null), B = (0, s.e7)([v.default], () => v.default.getCurrentUser()), V = x.length > R;
   i.useEffect(() => {
     I.default.track(T.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
       guild_id: t.guild_id,
-      location_stack: o
+      location_stack: a
     })
-  }, [t.guild_id, o]);
+  }, [t.guild_id, a]);
   let F = e => {
       G(new l.Hx(e, e.status).getAnyErrorMessage())
     },
-    V = e => {
+    Z = e => {
       let {
         invalidEmojis: n
       } = e;
@@ -62,7 +62,7 @@ function P(e) {
         let {
           errorMessage: e
         } = _.Z.validateMessage(n, B, t.id);
-        return G(e), k(false), {
+        return G(e), j(false), {
           hasErrors: true
         }
       }
@@ -71,14 +71,14 @@ function P(e) {
       }
     },
     H = async e => {
-      x === D && P(), null == e || e.preventDefault(), G(null), k(true);
+      x === D && P(), null == e || e.preventDefault(), G(null), j(true);
       let n = x.length,
         r = x.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
         i = y.ZP.parse(t, x),
         {
-          hasErrors: a
-        } = V(i);
-      if (!a) {
+          hasErrors: o
+        } = Z(i);
+      if (!o) {
         try {
           let e = await f.ZP.updateVoiceChannelStatus(t.id, i.content);
           204 === e.status ? (I.default.track(T.rMx.VOICE_CHANNEL_TOPIC_SET, {
@@ -87,16 +87,16 @@ function P(e) {
             media_session_id: L,
             raw_length: n,
             text_length: r,
-            location_stack: o
+            location_stack: a
           }), P()) : F(e)
         } catch (e) {
           F(e)
         }
-        k(false)
+        j(false)
       }
     }, [Y, W] = i.useState((0, m.JM)(x)), K = (e, t, n) => {
       M(t), W(n)
-    }, z = async () => (Z || j || await H(), Promise.resolve({
+    }, z = async () => (V || k || await H(), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
     })), q = (0, r.jsxs)(d.hjN, {
@@ -141,8 +141,8 @@ function P(e) {
       onClick: P
     }, {
       variant: "primary",
-      loading: j,
-      disabled: Z,
+      loading: k,
+      disabled: V,
       text: S.intl.string(S.t.XqK2Iy),
       onClick: H
     }],
@@ -153,7 +153,7 @@ function P(e) {
     children: (0, r.jsxs)(d.Y0X, {
       transitionState: n,
       size: d.CgR.SMALL,
-      className: a()(A.modal, A.gradientBorder),
+      className: o()(A.modal, A.gradientBorder),
       parentComponent: "VoiceChannelStatusModal",
       children: [(0, r.jsxs)(d.hzk, {
         className: A.container,
@@ -190,9 +190,9 @@ function P(e) {
           })
         }), (0, r.jsx)(u.zx, {
           onClick: H,
-          submitting: j,
+          submitting: k,
           className: A.button,
-          disabled: Z,
+          disabled: V,
           children: S.intl.string(S.t.XqK2Iy)
         })]
       })]

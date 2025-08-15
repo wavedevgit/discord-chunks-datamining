@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => q
 }), require("./388685.js"), require("./539854.js"), require("./642613.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk913527 = require("./913527.js"),
   s = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
@@ -63,8 +63,8 @@ function R(e, t) {
   r.setFullYear(t);
   let i = new Date(r.getTime());
   i.setDate(r.getDate() - y);
-  let o = new Date(r.getTime());
-  return o.setDate(r.getDate() + y), n > i && n < o
+  let a = new Date(r.getTime());
+  return a.setDate(r.getDate() + y), n > i && n < a
 }
 
 function P(e) {
@@ -118,11 +118,11 @@ function M() {
   x()
 }
 
-function j() {
+function k() {
   T = I(), x()
 }
 
-function k() {
+function j() {
   T.lastShownFriendsListGiftIntents = Array.from(A)
 }
 
@@ -130,7 +130,7 @@ function U(e) {
   let {
     recipientUserId: t
   } = e;
-  Z(t)
+  V(t)
 }
 
 function G() {
@@ -141,10 +141,10 @@ function B(e) {
   let {
     recipientUserId: t
   } = e;
-  Z(t)
+  V(t)
 }
 
-function Z(e) {
+function V(e) {
   null == T.messageGiftIntentLastShownMap[e] && (T.messageGiftIntentLastShownMap[e] = Date.now())
 }
 
@@ -155,7 +155,7 @@ function F() {
   }
 }
 
-function V() {
+function Z() {
   T.lastShownFriendsListGiftIntents = []
 }
 
@@ -190,7 +190,7 @@ function K(e) {
   if (!t) return;
   C = e;
   let n = _.Z.getFriendIDs().filter(e => !_.Z.isIgnored(e));
-  o().sampleSize(n, e).forEach(e => {
+  a().sampleSize(n, e).forEach(e => {
     let t = _.Z.getSince(e);
     if (null != t) {
       let n = new Date(t);
@@ -248,12 +248,12 @@ m(z, "displayName", "PremiumGiftingIntentStore"), m(z, "persistKey", "PremiumGif
 }]);
 let q = new z(Chunk570140.Z, {
   CONNECTION_OPEN: M,
-  LOGOUT: j,
+  LOGOUT: k,
   MESSAGE_GIFT_INTENT_SHOWN: U,
-  FRIENDS_LIST_GIFT_INTENTS_SHOWN: k,
+  FRIENDS_LIST_GIFT_INTENTS_SHOWN: j,
   FRIENDS_TAB_BADGE_DISMISS: G,
   GIFT_INTENT_FLOW_PURCHASED_GIFT: B,
-  DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: V,
+  DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: Z,
   DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET: H,
   DEV_TOOLS_FRIENDS_TAB_BADGE_COOLDOWN_RESET: Y,
   DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT: W

@@ -1,4 +1,4 @@
-/** Chunk was on 50737 **/
+/** Chunk was on 85362 **/
 /** chunk id: 553984, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   p: () => g
@@ -24,7 +24,7 @@ function g(e) {
     setSelectedFilter: m
   } = (0, c.Z)(), b = (0, d.d)(e => e.setInboxReadState);
   if (!i) return null;
-  let O = () => {
+  let _ = () => {
       let e = g === p.V5.ALL ? p.V5.BOOKMARKS : p.V5.ALL;
       m(e), e === p.V5.ALL && b(false), (0, s.RZ)({
         section: e,
@@ -32,10 +32,10 @@ function g(e) {
         viewId: n
       })
     },
-    _ = g === p.V5.ALL ? f.intl.string(f.t["2pAkDA"]) : f.intl.string(f.t.HcoRu7);
+    O = g === p.V5.ALL ? f.intl.string(f.t["2pAkDA"]) : f.intl.string(f.t.HcoRu7);
   return (0, r.jsx)(o.ua7, {
     position: "bottom",
-    text: _,
+    text: O,
     children: e => {
       var n, i;
       return (0, r.jsx)(o.P3F, (n = function(e) {
@@ -59,8 +59,8 @@ function g(e) {
         className: l()(t, h.headerButton, {
           [h.enabled]: g === p.V5.BOOKMARKS
         }),
-        "aria-label": _,
-        onClick: O,
+        "aria-label": O,
+        onClick: _,
         children: g === p.V5.BOOKMARKS ? (0, r.jsx)(o.plf, {
           size: "xs",
           color: a.Z.ICON_DEFAULT

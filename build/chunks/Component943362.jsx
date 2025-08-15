@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk782568 = require("./782568.js"),
@@ -63,7 +63,7 @@ function y(e) {
     react(t, i, m) {
       let E = m.noStyleAndInteraction ? true : async n => {
         let r = await (0, d.B_)(t.attachmentUrl);
-        e.shouldStopPropagation && (null == n || n.stopPropagation()), c.Z.trackLinkClicked(r), e.shouldCloseDefaultModals && (0, a.pTH)(), (0, l.Z)(r)
+        e.shouldStopPropagation && (null == n || n.stopPropagation()), c.Z.trackLinkClicked(r), e.shouldCloseDefaultModals && (0, o.pTH)(), (0, l.Z)(r)
       }, y = m.noStyleAndInteraction ? _.dG4 : e => {
         (0, s.jW)(e, async () => {
           let {
@@ -81,9 +81,9 @@ function y(e) {
         onClick: E,
         onContextMenu: y,
         className: "attachmentLink",
-        children: [(0, r.jsx)(a.Ujz, {
+        children: [(0, r.jsx)(o.Ujz, {
           size: "xs",
-          className: o()(h.icon, p.icon),
+          className: a()(h.icon, p.icon),
           color: "currentColor"
         }), (0, f.S)(t, i, m)]
       }, m.key)

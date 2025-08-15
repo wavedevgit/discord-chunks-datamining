@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 773359, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 773359, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -16,20 +15,20 @@ let d = e => {
   let {
     channelId: t
   } = e, n = i.useCallback(() => {
-    s.Z.reopenModReport(t)
+    o.Z.reopenModReport(t)
   }, [t]);
   return (0, r.jsx)(a.i, {
-    bannerHeader: (0, r.jsx)(o.Text, {
+    bannerHeader: (0, r.jsx)(l.Text, {
       variant: "text-md/medium",
       color: "text-muted",
-      children: c.intl.string(l.default["0eUUeH"])
+      children: c.intl.string(s.default["0eUUeH"])
     }),
     headerStyles: u.bannerHeader,
     containerStyles: u.bannerContainer,
-    children: (0, r.jsx)(o.zxk, {
+    children: (0, r.jsx)(l.zxk, {
       variant: "secondary",
       size: "sm",
-      text: c.intl.string(l.default["6quCi4"]),
+      text: c.intl.string(s.default["6quCi4"]),
       onClick: n
     })
   })

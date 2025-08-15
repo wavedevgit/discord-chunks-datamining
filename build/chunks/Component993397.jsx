@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 993397, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 86357 **/
+/** chunk id: 993397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => y
 }), require("./314940.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -19,95 +18,94 @@ var Chunk255367 = require("./255367.js"),
   Chunk378661 = require("./378661.js"),
   Chunk360514 = require("./360514.js");
 
-function g(e) {
+function b(e) {
   let {
     expanded: t,
     onClick: n,
     count: i,
-    compact: o,
+    compact: l,
     collapsedReason: a
-  } = e, u = (0, s.EQ)({
+  } = e, u = (0, o.EQ)({
     collapsedReason: a
   }).with({
-    collapsedReason: p.t.VFWjc3
-  }, () => (0, r.jsx)(l.kZF, {
+    collapsedReason: f.t.VFWjc3
+  }, () => (0, r.jsx)(s.kZF, {
     size: "md",
     color: "currentColor",
-    className: h.blockedIcon
+    className: m.blockedIcon
   })).with({
-    collapsedReason: p.t["+FcYMz"]
-  }, () => (0, r.jsx)(l.t6m, {
+    collapsedReason: f.t["+FcYMz"]
+  }, () => (0, r.jsx)(s.t6m, {
     size: "md",
     color: "currentColor",
-    className: h.blockedIcon
-  })).otherwise(() => (0, r.jsx)(l.Dio, {
+    className: m.blockedIcon
+  })).otherwise(() => (0, r.jsx)(s.Dio, {
     size: "md",
     color: "currentColor",
-    className: h.blockedIcon
+    className: m.blockedIcon
   }));
   return (0, r.jsx)(c.Z, {
-    compact: o,
+    compact: l,
     role: "group",
-    childrenMessageContent: (0, r.jsx)(f.Z, {
-      compact: o,
-      className: h.blockedSystemMessage,
+    childrenMessageContent: (0, r.jsx)(p.Z, {
+      compact: l,
+      className: m.blockedSystemMessage,
       iconNode: u,
       children: (0, r.jsxs)("div", {
-        className: h.blockedMessageText,
-        children: [p.intl.format(a, {
+        className: m.blockedMessageText,
+        children: [f.intl.format(a, {
           count: i
-        }), " —", " ", (0, r.jsx)(l.P3F, {
+        }), " —", " ", (0, r.jsx)(s.P3F, {
           tag: "span",
           onClick: n,
-          className: h.blockedAction,
-          children: t ? p.intl.string(p.t.fgq1go) : p.intl.string(p.t.XJuakJ)
+          className: m.blockedAction,
+          children: t ? f.intl.string(f.t.fgq1go) : f.intl.string(f.t.XJuakJ)
         })]
       })
     })
   })
 }
-
-function E(e) {
+let y = Chunk73800.memo(function(e) {
   var t;
   let {
     messages: n,
-    channel: o,
-    compact: s = false,
-    unreadId: l,
+    channel: l,
+    compact: o = false,
+    unreadId: s,
     collapsedReason: c
   } = e, {
-    hasJumpTarget: f = false
-  } = n, [p, E] = i.useState(f), b = i.useCallback(() => E(e => !e), []), y = n.hasUnread ? n.content.length - 1 : n.content.length;
+    hasJumpTarget: p = false
+  } = n, [f, y] = i.useState(p), _ = i.useCallback(() => y(e => !e), []), C = n.hasUnread ? n.content.length - 1 : n.content.length;
   return (0, r.jsxs)("div", {
     className: a()({
-      [m.groupStart]: true,
-      [h.expanded]: p
+      [g.groupStart]: true,
+      [m.expanded]: f
     }),
-    children: [n.hasUnread && (!p || (null == (t = n.content[0]) ? true : t.type) === _.ys_.DIVIDER) ? (0, r.jsx)(d.Z, {
+    children: [n.hasUnread && (!f || (null == (t = n.content[0]) ? true : t.type) === h.ys_.DIVIDER) ? (0, r.jsx)(d.Z, {
       isUnread: true,
-      id: l
-    }, "divider") : null, (0, r.jsx)(g, {
-      count: y,
-      compact: s,
-      expanded: p,
-      onClick: b,
+      id: s
+    }, "divider") : null, (0, r.jsx)(b, {
+      count: C,
+      compact: o,
+      expanded: f,
+      onClick: _,
       collapsedReason: c
-    }, "collapsed-message-item"), p ? n.content.map((e, t) => {
-      if (e.type === _.ys_.DIVIDER && t > 0) {
+    }, "collapsed-message-item"), f ? n.content.map((e, t) => {
+      if (e.type === h.ys_.DIVIDER && t > 0) {
         var i, a;
         let e = null != (a = null == (i = n.content[t + 1]) ? true : i.isGroupStart) && a;
         return (0, r.jsx)(d.Z, {
           isUnread: true,
           isBeforeGroup: e,
-          id: l
+          id: s
         }, "divider")
       }
-      if (e.type === _.ys_.MESSAGE || e.type === _.ys_.THREAD_STARTER_MESSAGE) {
-        let t = e.type === _.ys_.THREAD_STARTER_MESSAGE ? u.Ru : u.ZP;
+      if (e.type === h.ys_.MESSAGE || e.type === h.ys_.THREAD_STARTER_MESSAGE) {
+        let t = e.type === h.ys_.THREAD_STARTER_MESSAGE ? u.Ru : u.ZP;
         return (0, r.jsx)(t, {
-          className: h.__invalid_blocked,
-          compact: s,
-          channel: o,
+          className: m.__invalid_blocked,
+          compact: o,
+          channel: l,
           message: e.content,
           groupId: e.groupId,
           flashKey: e.flashKey,
@@ -117,5 +115,4 @@ function E(e) {
       }
     }) : null]
   })
-}
-let b = Chunk73800.memo(E)
+})

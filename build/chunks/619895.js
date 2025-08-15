@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 619895, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 22878 **/
+/** chunk id: 619895, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => h,
+  Q: () => d,
   h: () => m
 }), require("./35282.js");
 var Chunk73800 = require("./73800.js"),
-  Chunk892814 = require("./892814.js"),
+  Chunk228458 = require("./228458.js"),
   Chunk442837 = require("./442837.js"),
   Chunk895924 = require("./895924.js"),
   Chunk581364 = require("./581364.js"),
@@ -14,46 +13,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk399654 = require("./399654.js"),
   Chunk844439 = require("./844439.js");
 
-function d(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function f(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      d(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function _(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function h(e) {
+function d(e) {
   let {
     contentType: t
   } = e;
@@ -76,14 +36,36 @@ function m(e) {
     channelId: t
   } = e, {
     fetchState: n,
-    recommendationsSections: i
-  } = g({
+    recommendationsSections: d
+  } = function(e) {
+    let {
+      channelId: t
+    } = e, n = l.I.CONTEXTUAL_IMAGE, o = r.useMemo(() => ({
+      channelId: t,
+      location: n,
+      withCommands: true
+    }), [t, n]);
+    r.useEffect(() => {
+      (0, u.a)(o)
+    }, [o]);
+    let {
+      fetchState: a,
+      recommendationsSections: c
+    } = (0, i.cj)([s.ZP], () => ({
+      fetchState: s.ZP.getFetchState(o),
+      recommendationsSections: s.ZP.getRecommendations(o)
+    }));
+    return {
+      fetchState: a,
+      recommendationsSections: c
+    }
+  }({
     channelId: t
   });
   return {
     fetchState: n,
     imageRecCommandContexts: r.useMemo(() => {
-      let e = i.length > 0 ? i[0].items : true;
+      let e = d.length > 0 ? d[0].items : true;
       if (true === e) return [];
       let t = {};
       return e.forEach(e => {
@@ -93,71 +75,73 @@ function m(e) {
           t[e] = r[e]
         })
       }), Object.keys(t).map(t => {
-        var n, r, i, o, l, c, u, d, _, h, m, g;
-        let E, b, y = e.find(e => {
+        var n, r, l, i, c, u, s, d, m, p, f, b, O, g;
+        let E, y, h = e.find(e => {
           var n;
           return null != (E = null == (n = e.commands) ? true : n.find(e => e.id === t))
         });
-        if (null == y) return null;
+        if (null == h) return null;
         let {
-          application: O
-        } = y;
+          application: v
+        } = h;
         if (null == E) return null;
-        let v = (0, s.Z8)({
+        let C = (0, a.Z8)({
             rootCommand: E,
             command: E,
-            applicationId: O.id
+            applicationId: v.id
           }),
-          I = null == (i = y.command_metadata) || null == (r = i[t]) || null == (n = r.overrideSendCommandInfo) ? true : n.commandId;
-        if (null != I) {
-          let e = null != I ? null == (m = y.commands) ? true : m.find(e => e.id === I) : true;
-          null != e && (b = (0, s.Z8)({
+          j = null == (l = h.command_metadata) || null == (r = l[t]) || null == (n = r.overrideSendCommandInfo) ? true : n.commandId;
+        if (null != j) {
+          let e = null != j ? null == (f = h.commands) ? true : f.find(e => e.id === j) : true;
+          null != e && (y = (0, a.Z8)({
             rootCommand: e,
             command: e,
-            applicationId: O.id
+            applicationId: v.id
           }))
         }
         return {
-          command: p(f({}, v), {
-            displayName: v.displayName.split(/[_ ]/).map(e => e.charAt(0).toUpperCase() + e.slice(1)).join(" ")
-          }),
-          imageOption: null == (l = y.command_metadata) || null == (o = l[t]) ? true : o.imageOption,
-          overrideSendCommand: b,
-          overrideSendCommandInfo: null == (u = y.command_metadata) || null == (c = u[t]) ? true : c.overrideSendCommandInfo,
-          onlyAllowEdit: null == (_ = y.command_metadata) || null == (d = _[t]) ? true : d.onlyAllowEdit,
+          command: (O = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
+                }) : e[t] = r
+              })
+            }
+            return e
+          }({}, C), g = g = {
+            displayName: C.displayName.split(/[_ ]/).map(e => e.charAt(0).toUpperCase() + e.slice(1)).join(" ")
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(O, Object.getOwnPropertyDescriptors(g)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
+            }
+            return n
+          })(Object(g)).forEach(function(e) {
+            Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(g, e))
+          }), O),
+          imageOption: null == (c = h.command_metadata) || null == (i = c[t]) ? true : i.imageOption,
+          overrideSendCommand: y,
+          overrideSendCommandInfo: null == (s = h.command_metadata) || null == (u = s[t]) ? true : u.overrideSendCommandInfo,
+          onlyAllowEdit: null == (m = h.command_metadata) || null == (d = m[t]) ? true : d.onlyAllowEdit,
           section: {
-            type: a.Qi.APPLICATION,
-            id: O.id,
-            icon: O.icon,
-            name: null != (g = null == O || null == (h = O.bot) ? true : h.username) ? g : O.name,
-            application: O
+            type: o.Qi.APPLICATION,
+            id: v.id,
+            icon: v.icon,
+            name: null != (b = null == v || null == (p = v.bot) ? true : p.username) ? b : v.name,
+            application: v
           }
         }
-      }).filter(l.lm)
-    }, [i])
-  }
-}
-
-function g(e) {
-  let {
-    channelId: t
-  } = e, n = i.I.CONTEXTUAL_IMAGE, a = r.useMemo(() => ({
-    channelId: t,
-    location: n,
-    withCommands: true
-  }), [t, n]);
-  r.useEffect(() => {
-    (0, c.a)(a)
-  }, [a]);
-  let {
-    fetchState: s,
-    recommendationsSections: l
-  } = (0, o.cj)([u.ZP], () => ({
-    fetchState: u.ZP.getFetchState(a),
-    recommendationsSections: u.ZP.getRecommendations(a)
-  }));
-  return {
-    fetchState: s,
-    recommendationsSections: l
+      }).filter(c.lm)
+    }, [d])
   }
 }

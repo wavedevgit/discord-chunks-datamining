@@ -15,7 +15,7 @@ function l(e, t, n) {
   if (null == e) returnfalse;
   let c = null != t.activity ? t.activity.party_id : null,
     u = null != c && (null == (r = e.party) ? true : r.id) !== c,
-    d = (null == (l = t.activity) ? true : l.type) === o.mFx.STREAM_REQUEST ? a.e : s,
+    d = (null == (l = t.activity) ? true : l.type) === a.mFx.STREAM_REQUEST ? o.e : s,
     f = i.default.extractTimestamp(t.id) + d < Date.now(),
     _ = null != e.application_id && e.application_id !== n;
   return !u && !f && !_
