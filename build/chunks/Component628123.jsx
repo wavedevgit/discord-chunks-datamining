@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => R
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk818405 = require("./818405.js"),
@@ -37,7 +37,7 @@ function S(e, t, n) {
 }
 
 function A() {
-  let [e, t] = Chunk73800.useState(false);
+  let [e, t] = Chunk647438.useState(false);
   if (null == (0, Chunk442837.e7)([Chunk304761.C], () => {
       var e;
       return (0, Chunk865427.fD)() ? null == (e = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : module.discord_web : null
@@ -49,7 +49,7 @@ function A() {
       exports(false)
     }
   };
-  return (0, Chunk255367.jsx)(Chunk755721.zx, {
+  return (0, Chunk951288.jsx)(Chunk755721.zx, {
     size: Chunk755721.Ph.LARGE,
     onClick: require,
     submitting: module,
@@ -65,7 +65,7 @@ let N = o().throttle(e => {
 }, 100, {
   trailing: false
 });
-class C extends Chunk73800.PureComponent {
+class C extends Chunk647438.PureComponent {
   componentDidCatch(e, t) {
     this.triggerSoftCrash(e, t)
   }
@@ -108,22 +108,22 @@ class C extends Chunk73800.PureComponent {
       renderCustomMessage: t
     } = this.props;
     if (null !== this.state.error) {
-      let e = (0, Chunk255367.jsxs)("div", {
-          children: [(0, Chunk255367.jsx)("p", {
+      let e = (0, Chunk951288.jsxs)("div", {
+          children: [(0, Chunk951288.jsx)("p", {
             children: Chunk388032.intl.string(Chunk388032.t.tx8CkJ)
-          }), (0, Chunk255367.jsx)("p", {
+          }), (0, Chunk951288.jsx)("p", {
             children: Chunk388032.intl.string(Chunk388032.t.CvQlAA)
           })]
         }),
-        n = (0, Chunk255367.jsxs)("div", {
+        n = (0, Chunk951288.jsxs)("div", {
           className: Chunk991056.buttons,
-          children: [(0, Chunk255367.jsx)(Chunk755721.zx, {
+          children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
             size: Chunk755721.Ph.LARGE,
             onClick: this._handleSubmitReport,
             children: Chunk388032.intl.string(Chunk388032.t["+hivLS"])
-          }), (0, Chunk255367.jsx)(A, {})]
+          }), (0, Chunk951288.jsx)(A, {})]
         });
-      return (0, Chunk255367.jsx)(Chunk406128.Z, {
+      return (0, Chunk951288.jsx)(Chunk406128.Z, {
         title: Chunk388032.intl.string(Chunk388032.t["3h+n+/"]),
         note: null != exports ? exports() : module,
         action: require,

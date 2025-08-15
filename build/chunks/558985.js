@@ -4,7 +4,7 @@
 require.d(exports, {
   $: () => d
 }), require("./388685.js"), require("./415506.js");
-var r, Chunk73800 = require("./73800.js"),
+var r, Chunk647438 = require("./647438.js"),
   Chunk772848 = require("./772848.js"),
   Chunk324404 = require("./324404.js");
 
@@ -19,7 +19,7 @@ function s(e, t, n) {
 let l = (0, Chunk772848.Z)(),
   c = new Map,
   u = new Map;
-class d extends(r = Chunk73800.Component) {
+class d extends(r = Chunk647438.Component) {
   componentDidMount() {
     if (this.props.active) {
       let e = this.getVisibilityObserver();
@@ -48,7 +48,7 @@ class d extends(r = Chunk73800.Component) {
     return exports
   }
   render() {
-    return Chunk73800.Children.only(this.props.children)
+    return Chunk647438.Children.only(this.props.children)
   }
   constructor(e) {
     super(e), s(this, "elementId", true), s(this, "isVisible", false);
@@ -68,7 +68,7 @@ class d extends(r = Chunk73800.Component) {
 }
 s(d, "defaultProps", {
   active: true,
-  children: Chunk73800.createElement("span"),
+  children: Chunk647438.createElement("span"),
   root: null,
   rootMargin: "0px 0px 0px 0px",
   threshold: [0, 5e-324]

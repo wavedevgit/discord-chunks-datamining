@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => d
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk670863 = require("./670863.jsx"),
@@ -14,9 +14,9 @@ var Chunk442837 = require("./442837.js"),
 
 function d() {
   let e = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isVideoAvailable());
-  return (0, Chunk255367.jsx)(Chunk481060.xJW, {
+  return (0, Chunk951288.jsx)(Chunk481060.xJW, {
     title: Chunk388032.intl.string(Chunk388032.t.FsQ3OT),
-    children: (0, Chunk255367.jsx)(Chunk670863.j, {
+    children: (0, Chunk951288.jsx)(Chunk670863.j, {
       deviceType: Chunk65154.h7.VIDEO_INPUT,
       location: "UserSettingsCameraSelect",
       isDisabled: !module,

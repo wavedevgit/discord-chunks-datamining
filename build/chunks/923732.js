@@ -1,5 +1,6 @@
-/** Chunk was on 32160 **/
-/** chunk id: 923732, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 45620 **/
+/** chunk id: 923732, original params: e,t,r (module,exports,require) **/
+"use strict";
 module.exports = {
   shopBanner: "shopBanner__7f856",
   animationAsset: "animationAsset__7f856",

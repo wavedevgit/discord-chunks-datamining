@@ -5,8 +5,8 @@ require.d(exports, {
   ZP: () => b,
   aN: () => m
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
   Chunk866442 = require("./866442.js"),
@@ -72,7 +72,7 @@ function h(e) {
 }
 
 function m() {
-  return (0, Chunk255367.jsx)(Chunk481060.Mgn, {
+  return (0, Chunk951288.jsx)(Chunk481060.Mgn, {
     size: "xs",
     color: "currentColor",
     className: Chunk340036.warningIcon

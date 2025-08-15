@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => f
 }), require("./388685.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk754921 = require("./754921.js");
@@ -31,7 +31,7 @@ function u(e) {
   }
   return e
 }
-class d extends(r = Chunk73800.PureComponent) {
+class d extends(r = Chunk647438.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     let {
       streamId: n
@@ -89,7 +89,7 @@ class d extends(r = Chunk73800.PureComponent) {
       mirror: e,
       className: t
     } = this.props;
-    return (0, Chunk255367.jsxs)("div", {
+    return (0, Chunk951288.jsxs)("div", {
       className: s()(Chunk754921.video, exports, {
         [Chunk754921.mirror]: module
       }),

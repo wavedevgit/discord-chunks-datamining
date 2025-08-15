@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => ez
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -139,7 +139,7 @@ let eH = {
     [Chunk981631.IlC.APP]: null,
     [Chunk981631.IlC.OVERLAY]: null
   };
-class eV extends Chunk73800.PureComponent {
+class eV extends Chunk647438.PureComponent {
   getRootNode() {
     var e, t;
     return (null != (t = null == (e = this.props.popoutWindow) ? true : module.window) ? exports : window).document.getElementById("app-mount")
@@ -201,19 +201,19 @@ class eV extends Chunk73800.PureComponent {
       mode: t,
       channel: n,
       inCall: r
-    } = this.props, i = exports === Chunk981631.WtW.VIDEO && Chunk255367 && !(this.popoutOpen && !this.inPopout), l = exports === Chunk981631.WtW.VIDEO && Chunk255367 && this.popoutSupported, a = exports !== Chunk981631.WtW.VOICE && require.isPrivate() && !this.inPopout && Chunk255367, o = require.type === Chunk981631.d4z.GUILD_VOICE, s = module === Chunk981631.AEg.MINIMUM || module === Chunk981631.AEg.NORMAL, c = this.inPopout && this.nativePopoutSupported, u = {
+    } = this.props, i = exports === Chunk981631.WtW.VIDEO && Chunk951288 && !(this.popoutOpen && !this.inPopout), l = exports === Chunk981631.WtW.VIDEO && Chunk951288 && this.popoutSupported, a = exports !== Chunk981631.WtW.VOICE && require.isPrivate() && !this.inPopout && Chunk951288, o = require.type === Chunk981631.d4z.GUILD_VOICE, s = module === Chunk981631.AEg.MINIMUM || module === Chunk981631.AEg.NORMAL, c = this.inPopout && this.nativePopoutSupported, u = {
       renderHeader: true,
       useTheme: false,
       useExternalHeader: s,
       canInvite: Chunk512722,
       canPopout: Chunk120356,
-      canFullscreen: Chunk73800,
+      canFullscreen: Chunk647438,
       canSelectRegion: require.isPrivate(),
       canChangeLayout: a,
       canStayOnTop: Chunk990547
     };
-    if (!Chunk255367) return eF(eB({}, Chunk442837), {
-      canFullscreen: Chunk73800,
+    if (!Chunk951288) return eF(eB({}, Chunk442837), {
+      canFullscreen: Chunk647438,
       useTheme: true
     });
     switch (module) {
@@ -298,8 +298,8 @@ class eV extends Chunk73800.PureComponent {
       participantsListOpen: d
     } = this.props, {
       resizedHeight: p
-    } = this.state, f = Chunk73800 === Chunk981631.WtW.VIDEO, m = module !== Chunk981631.AEg.NO_CHAT && module !== Chunk981631.AEg.FULL_SCREEN && null != Chunk990547, g = Chunk981631.BRd.MIDNIGHT;
-    return (0, Chunk255367.jsxs)("div", {
+    } = this.state, f = Chunk647438 === Chunk981631.WtW.VIDEO, m = module !== Chunk981631.AEg.NO_CHAT && module !== Chunk981631.AEg.FULL_SCREEN && null != Chunk990547, g = Chunk981631.BRd.MIDNIGHT;
+    return (0, Chunk951288.jsxs)("div", {
       className: a()(Chunk598411.wrapper, eH[module], eG[Chunk512722], {
         [Chunk598411.poppedOut]: this.popoutOpen && !this.inPopout && module !== Chunk981631.AEg.NO_CHAT && exports.isPrivate(),
         [Chunk598411.video]: Chunk570140,
@@ -313,7 +313,7 @@ class eV extends Chunk73800.PureComponent {
         maxHeight: Chunk990547,
         height: Chunk846519
       } : true,
-      children: [(0, Chunk255367.jsx)(Chunk481060.f6W, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.f6W, {
         theme: Chunk239091,
         children: t => (0, r.jsx)("div", {
           className: a()(eL.callContainer, l || e !== ek.AEg.FULL_SCREEN ? true : eL.fullScreen, t),
@@ -325,23 +325,23 @@ class eV extends Chunk73800.PureComponent {
             children: e => this.renderContent(e)
           })
         })
-      }), Chunk475179 && (0, Chunk255367.jsx)(Chunk900211.Z, {
+      }), Chunk475179 && (0, Chunk951288.jsx)(Chunk900211.Z, {
         minHeight: Chunk354459._i,
         maxHeight: Chunk990547,
         resizableNode: this._wrapperRef,
         onResize: this.handleCallResize,
         onResizeEnd: this.props.updateStoredCallHeaderHeight
-      }), (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk951288.jsx)("div", {
         className: Chunk598411.channelChatWrapper,
         ref: e => {
           this._channelChatRef.current = e, this.props.channelChatRef.current = e
         },
-        children: (!Chunk442837 || !this.popoutOpen || this.inPopout) && (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-          children: [Chunk120356 && (0, Chunk255367.jsx)(Chunk493010.Z, {
+        children: (!Chunk442837 || !this.popoutOpen || this.inPopout) && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+          children: [Chunk120356 && (0, Chunk951288.jsx)(Chunk493010.Z, {
             channel: exports,
             guild: require,
             maxWidth: s
-          }), Chunk704215 && (0, Chunk255367.jsx)(Chunk71127.Z, {
+          }), Chunk704215 && (0, Chunk951288.jsx)(Chunk71127.Z, {
             channel: exports,
             maxWidth: s
           })]

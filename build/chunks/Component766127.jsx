@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => c
 });
-var Chunk255367 = require("./255367.js"),
+var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk364203 = require("./364203.jsx"),
   Chunk630242 = require("./630242.js"),
@@ -16,7 +16,7 @@ function c() {
     t = (0, Chunk630242.R)({
       isSettingsOpen: module
     });
-  return module ? null : null != exports ? (0, Chunk255367.jsx)(Chunk364203.Z, {
+  return module ? null : null != exports ? (0, Chunk951288.jsx)(Chunk364203.Z, {
     config: exports
   }) : null
 }

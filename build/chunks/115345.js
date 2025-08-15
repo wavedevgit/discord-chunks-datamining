@@ -9,7 +9,7 @@ require.d(exports, {
   oL: () => X,
   vo: () => Z
 }), require("./388685.js"), require("./997841.js"), require("./415506.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -114,7 +114,7 @@ function B() {
     t = {};
   for (let i of module) {
     var n, r;
-    let e = null != (r = (null != (n = Chunk9156.ZP.getAllSettings().userGuildSettings[Chunk392711.id]) ? require : {}).flags) ? Chunk73800 : 0;
+    let e = null != (r = (null != (n = Chunk9156.ZP.getAllSettings().userGuildSettings[Chunk392711.id]) ? require : {}).flags) ? Chunk647438 : 0;
     e = (0, Chunk630388.mB)(module, Chunk526761.vc.UNREADS_ALL_MESSAGES, true), e = (0, Chunk630388.mB)(module, Chunk526761.vc.UNREADS_ONLY_MENTIONS, false), exports[Chunk392711.id] = {
       flags: module
     }

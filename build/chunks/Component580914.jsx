@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => D
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk180650 = require("./180650.js"),
@@ -88,9 +88,9 @@ let R = {
       onVisibilityChange: H
     } = e, W = (0, p.O)(e => {
       null == H || H(e)
-    }, .1, null != H), V = (0, u.e7)([m.default], () => m.default.getCurrentUser()), U = (0, L.Z)(), z = (0, v.sp)(), {
+    }, .1, null != H), V = (0, u.e7)([h.default], () => h.default.getCurrentUser()), U = (0, L.Z)(), z = (0, v.sp)(), {
       showBetaTag: G
-    } = h.Z.useExperiment({
+    } = m.Z.useExperiment({
       location: "collectible_hero_block"
     }), q = l.useMemo(() => {
       var e, t, r, n;
@@ -117,10 +117,10 @@ let R = {
       bannerOverrides: K,
       bannerStyleOverrides: Y,
       logoStyleOverrides: X,
-      heroLogo: J,
-      heroBannerStatic: Q,
+      heroLogo: Q,
+      heroBannerStatic: J,
       heroBannerAnimated: $
-    } = (0, P.hr)(q), ee = null == K ? true : K.heroBanner, et = null != (t = null == Y ? true : Y.responsive) && t, er = null == Y ? true : Y.backgroundStyle, en = l.useMemo(() => U(q.rankedSkuIds), [r, U, q.rankedSkuIds]), el = (0, S.a)()(en), ea = (0, y.l)(el).slice(0, 4), ei = (0, k.St)(ea), eo = F === N.AW.ORBS ? w.intl.string(w.t["1CdL8f"]) : w.intl.formatToPlainString(w.t.wvKYCg, {
+    } = (0, T.hr)(q), ee = null == K ? true : K.heroBanner, et = null != (t = null == Y ? true : Y.responsive) && t, er = null == Y ? true : Y.backgroundStyle, en = l.useMemo(() => U(q.rankedSkuIds), [r, U, q.rankedSkuIds]), el = (0, y.a)()(en), ea = (0, S.l)(el).slice(0, 4), ei = (0, k.St)(ea), eo = F === N.AW.ORBS ? A.intl.string(A.t["1CdL8f"]) : A.intl.formatToPlainString(A.t.wvKYCg, {
       category_name: q.name
     }), es = (0, E.FF)("CollectiblesContent");
     return null != V && (r || q !== R) ? (0, n.jsxs)("div", {
@@ -132,7 +132,7 @@ let R = {
           background: er
         } : true,
         children: [(0, n.jsx)(I.Z, {
-          bannerStatic: Q,
+          bannerStatic: J,
           bannerAnimated: $,
           isResponsive: et
         }), (null == Y ? true : Y.hideSideShadow) === true ? null : (0, n.jsx)(Z, {
@@ -151,13 +151,13 @@ let R = {
             className: B.heroHeaderBadgeLogoSummaryContainer,
             children: [null != q.unpublishedAt && (0, n.jsx)(d.IGR, {
               disableColor: true,
-              text: w.intl.string(w.t["h/uBCQ"]),
+              text: A.intl.string(A.t["h/uBCQ"]),
               className: B.limitedTimeBadge
             }), (0, n.jsxs)("div", {
               className: B.heroLogoNameContainer,
               children: [null != q.logoUrl && (0, n.jsx)("img", {
                 className: B.heroHeaderLogo,
-                src: J,
+                src: Q,
                 alt: q.name,
                 style: null == X ? true : X.toDesktopStyles()
               }), null != q.title && (0, n.jsxs)(d.X6q, {
@@ -180,12 +180,12 @@ let R = {
               variant: "overlay-primary",
               onClick: () => {
                 F === N.AW.ORBS ? ((0, b.Y)({
-                  pageType: A.ZY5.SHOP_ORBS_TAB,
-                  sectionType: A.jXE.ORBS_SHOP_HERO_BLOCK,
-                  ctaObject: A.qAy.CTA_TO_QUEST_HOME
+                  pageType: w.ZY5.SHOP_ORBS_TAB,
+                  sectionType: w.jXE.ORBS_SHOP_HERO_BLOCK,
+                  ctaObject: w.qAy.CTA_TO_QUEST_HOME
                 }), (0, f.navigateToQuestHome)({
                   fromContent: s.j.ORBS_SHOP_HERO_CTA
-                })) : (a("shop latest category hero", es && q.categorySkuId !== o.T.ORB ? true : q.categorySkuId), _.default.track(A.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                })) : (a("shop latest category hero", es && q.categorySkuId !== o.T.ORB ? true : q.categorySkuId), _.default.track(w.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == z ? true : z.sessionId,
                   sku_id: q.categorySkuId,
                   page_type: F,
@@ -212,7 +212,7 @@ let R = {
                   pageSection: "top 4",
                   categoryPosition: 0
                 },
-                children: (0, n.jsx)(T.Z, {
+                children: (0, n.jsx)(P.Z, {
                   product: e,
                   category: r,
                   user: V,

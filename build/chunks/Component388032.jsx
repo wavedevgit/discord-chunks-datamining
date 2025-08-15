@@ -12,9 +12,9 @@ require.r(exports), require.d(exports, {
   t: () => Chunk253185.k,
   useSyncMessages: () => b
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
-  Chunk125697 = require("./125697.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk631562 = require("./631562.js"),
   Chunk159635 = require("./159635.js"),
   s = require.n(Chunk159635),
   Chunk253185 = require("./253185.js"),
@@ -65,11 +65,11 @@ function h(e) {
 }
 let m = h("en-US"),
   g = (0, Chunk424395.YI)(m, "en-US"),
-  E = new Chunk125697.IntlManager({
+  E = new Chunk631562.IntlManager({
     initialLocale: g,
     defaultLocale: "en-US"
   }).withFormatters({
-    format: (0, Chunk125697.makeReactFormatter)({
+    format: (0, Chunk631562.makeReactFormatter)({
       $i: (e, t) => (0, r.jsx)("em", {
         children: e
       }, t),
@@ -107,8 +107,8 @@ let m = h("en-US"),
         }), e)
       }
     }),
-    formatToPlainString: Chunk125697.stringFormatter,
-    formatToMarkdownString: Chunk125697.markdownFormatter,
-    formatToParts: Chunk125697.astFormatter
+    formatToPlainString: Chunk631562.stringFormatter,
+    formatToMarkdownString: Chunk631562.markdownFormatter,
+    formatToParts: Chunk631562.astFormatter
   }),
   b = e => (0, c.j1)(e, E)

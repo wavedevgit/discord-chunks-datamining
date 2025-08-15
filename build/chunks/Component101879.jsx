@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => d
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
+var Chunk951288 = require("./951288.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
   Chunk243778 = require("./243778.jsx"),
@@ -17,12 +17,12 @@ function d() {
   let [e, t] = (0, Chunk243778.bf)(Chunk704215.z.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK, {
     cooldownDurationMs: Chunk987562.pv
   });
-  return module !== Chunk704215.z.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK ? null : (0, Chunk255367.jsxs)(Chunk481060.qXd, {
+  return module !== Chunk704215.z.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK ? null : (0, Chunk951288.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.BRAND,
-    children: [(0, Chunk255367.jsx)(Chunk481060.RyX, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.RyX, {
       onClick: () => exports(Chunk921944.L.DISMISS),
       noticeType: Chunk981631.kVF.IGNORE_USER_FEEDBACK_NAGBAR
-    }), Chunk388032.intl.string(Chunk388032.t.XkeW9P), (0, Chunk255367.jsx)(Chunk481060.NoS, {
+    }), Chunk388032.intl.string(Chunk388032.t.XkeW9P), (0, Chunk951288.jsx)(Chunk481060.NoS, {
       onClick: () => {
         (0, Chunk496729.v3)(), exports(Chunk921944.L.TAKE_ACTION)
       },

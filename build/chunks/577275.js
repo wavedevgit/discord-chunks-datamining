@@ -4,15 +4,15 @@
 require.d(exports, {
   Z: () => s
 }), require("./388685.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk586739 = require("./586739.js");
 let s = function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     {
       refreshOnDepChange: t
     } = module,
-    [n, s] = Chunk73800.useState([]),
-    [l, o] = Chunk73800.useState(true),
+    [n, s] = Chunk647438.useState([]),
+    [l, o] = Chunk647438.useState(true),
     a = async () => {
       o(true);
       try {
@@ -20,8 +20,8 @@ let s = function() {
         s(module.body)
       } catch (e) {}
       o(false)
-    }, u = Chunk73800.useRef(true);
-  return Chunk73800.useEffect(() => {
+    }, u = Chunk647438.useRef(true);
+  return Chunk647438.useEffect(() => {
     (u.current || exports) && (u.current = false, a())
   }, [exports]), {
     teams: require,

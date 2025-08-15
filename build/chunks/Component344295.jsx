@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => W
 }), require("./997841.js"), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk533800 = require("./533800.js"),
@@ -60,7 +60,7 @@ async function H(e) {
   } = await d.ZP.resolveInvite(e, G);
   null != t && (0, m.A)(t)
 }
-class K extends Chunk73800.PureComponent {
+class K extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       isUnderage: e,
@@ -161,16 +161,16 @@ class K extends Chunk73800.PureComponent {
   }
   renderInvalidInvite() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    return (0, Chunk255367.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk255367.jsx)(Chunk388905.Ee, {
+    return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
+      children: [(0, Chunk951288.jsx)(Chunk388905.Ee, {
         src: require("./167969.js"),
         className: Chunk197571.marginBottom8
-      }), (0, Chunk255367.jsx)(Chunk388905.Dx, {
+      }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: a()(Chunk197571.marginTop8, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.kux01N)
-      }), (0, Chunk255367.jsx)(Chunk388905.DK, {
+      }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         children: module ? Chunk388032.intl.string(Chunk388032.t["5AkWAQ"]) : Chunk388032.intl.string(Chunk388032.t["+qUJAg"])
-      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16O)), (0, Chunk255367.jsx)(Chunk388905.zx, {
+      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16O)), (0, Chunk951288.jsx)(Chunk388905.zx, {
         onClick: () => window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.INVALID_INVITES), "_blank"),
         look: Chunk388905.zx.Looks.LINK,
         color: Chunk388905.zx.Colors.LINK,
@@ -181,8 +181,8 @@ class K extends Chunk73800.PureComponent {
   }
   renderErrorInvite() {
     var e, t;
-    return (0, Chunk255367.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk255367.jsx)(Chunk588705.Z, {
+    return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
+      children: [(0, Chunk951288.jsx)(Chunk588705.Z, {
         invite: this.props.invite,
         error: null == (e = this.state.error) ? true : module.message
       }), (null == (t = this.state.error) ? true : exports.code) === Chunk981631.evJ.INVALID_CANNOT_FRIEND_SELF ? this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16O)) : this.renderButton(Chunk388032.intl.string(Chunk388032.t.ohMvm5), this.handleAccept)]
@@ -209,13 +209,13 @@ class K extends Chunk73800.PureComponent {
     let {
       invite: e
     } = this.props;
-    return null != module.stage_instance && null != module.guild ? (0, Chunk255367.jsx)(Chunk792766.Z, {
+    return null != module.stage_instance && null != module.guild ? (0, Chunk951288.jsx)(Chunk792766.Z, {
       stageInstance: module.stage_instance,
       guild: module.guild
-    }) : null != module.guild_scheduled_event ? (0, Chunk255367.jsx)(Chunk639946.r, {
+    }) : null != module.guild_scheduled_event ? (0, Chunk951288.jsx)(Chunk639946.r, {
       channel: module.channel,
       guildScheduledEvent: module.guild_scheduled_event
-    }) : (0, Chunk255367.jsx)(Chunk588705.Z, {
+    }) : (0, Chunk951288.jsx)(Chunk588705.Z, {
       invite: module
     })
   }
@@ -223,9 +223,9 @@ class K extends Chunk73800.PureComponent {
     let {
       invite: e
     } = this.props;
-    return (null != module.stage_instance || null != module.guild_scheduled_event) && null != module.guild ? (0, Chunk255367.jsx)(Chunk388905.ZP, {
+    return (null != module.stage_instance || null != module.guild_scheduled_event) && null != module.guild ? (0, Chunk951288.jsx)(Chunk388905.ZP, {
       className: Chunk197571.marginTop20,
-      children: (0, Chunk255367.jsx)(Chunk792766.y, {
+      children: (0, Chunk951288.jsx)(Chunk792766.y, {
         guild: module.guild,
         onlineCount: module.approximate_presence_count
       })
@@ -235,15 +235,15 @@ class K extends Chunk73800.PureComponent {
     let {
       invite: e
     } = this.props, t = null != module.stage_instance ? Chunk388032.intl.string(Chunk388032.t["5UKyUl"]) : Chunk388032.intl.string(Chunk388032.t.ohMvm5);
-    return (0, Chunk255367.jsxs)("div", {
-      children: [(0, Chunk255367.jsxs)(Chunk388905.ZP, {
+    return (0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk951288.jsxs)(Chunk388905.ZP, {
         children: [this.renderAuthenticatedHeader(), this.renderButton(exports, this.handleAccept)]
       }), this.renderAuthenicatedFooter()]
     })
   }
   renderContinue() {
-    return (0, Chunk255367.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk255367.jsx)(Chunk388905.Dx, {
+    return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
+      children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
         children: Chunk388032.intl.string(Chunk388032.t.fOc4go)
       }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16O))]
     })
@@ -268,18 +268,18 @@ class K extends Chunk73800.PureComponent {
         return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVV"]));
       case Chunk981631.r2o.RESOLVED:
         var a;
-        if (require && (0, Chunk630388.yE)(null != (a = module.flags) ? a : 0, Chunk533800.$.IS_GUEST_INVITE)) return Chunk447543.ZP.openApp(module.code), Chunk298444.x.set(Chunk978684.J, module.code), this.renderAppOpened(() => Chunk73800(Chunk981631.Z5c.APP));
+        if (require && (0, Chunk630388.yE)(null != (a = module.flags) ? a : 0, Chunk533800.$.IS_GUEST_INVITE)) return Chunk447543.ZP.openApp(module.code), Chunk298444.x.set(Chunk978684.J, module.code), this.renderAppOpened(() => Chunk647438(Chunk981631.Z5c.APP));
         if (require || !Chunk436620.KO) return this.renderAuthenticatedOrDownload();
-        if (this.getMode() === V) return (0, Chunk255367.jsx)(Chunk781428.Z, {
+        if (this.getMode() === V) return (0, Chunk951288.jsx)(Chunk781428.Z, {
           invite: module,
-          transitionTo: Chunk73800,
+          transitionTo: Chunk647438,
           location: Chunk120356
         });
-        else return (0, Chunk255367.jsx)(Chunk423527.Z, {
+        else return (0, Chunk951288.jsx)(Chunk423527.Z, {
           invite: module,
           onLoginStart: () => this.track(Chunk981631.rMx.INVITE_LOGIN, true),
           location: Chunk120356,
-          transitionTo: Chunk73800
+          transitionTo: Chunk647438
         });
       case Chunk981631.r2o.ACCEPTING:
         return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["6wsY19"]));

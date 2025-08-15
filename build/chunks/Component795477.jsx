@@ -4,20 +4,20 @@
 require.d(exports, {
   Z: () => o
 });
-var Chunk255367 = require("./255367.js"),
+var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk831901 = require("./831901.js");
-let o = () => (0, Chunk255367.jsxs)("div", {
+let o = () => (0, Chunk951288.jsxs)("div", {
   className: Chunk831901.error,
-  children: [(0, Chunk255367.jsx)("img", {
+  children: [(0, Chunk951288.jsx)("img", {
     className: Chunk831901.errorImage,
     src: "https://cdn.discordapp.com/assets/content/ca0857da281051f734229e1994112aaa95b21d6f7fce7a1e509357d94c58a949.png",
     alt: Chunk388032.intl.string(Chunk388032.t["p8+qtb"])
-  }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+  }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
     variant: "heading-xl/semibold",
     children: Chunk388032.intl.string(Chunk388032.t["p8+qtb"])
-  }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+  }), (0, Chunk951288.jsx)(Chunk481060.Text, {
     variant: "text-md/medium",
     children: Chunk388032.intl.string(Chunk388032.t.UEiyvr)
   })]

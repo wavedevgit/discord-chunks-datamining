@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => C
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -24,7 +24,7 @@ var Chunk255367 = require("./255367.js"),
 let E = (0, Chunk313201.hQ)();
 
 function C() {
-  let [e, t] = Chunk73800.useState(false), [n, s] = Chunk73800.useState(false), {
+  let [e, t] = Chunk647438.useState(false), [n, s] = Chunk647438.useState(false), {
     threshold: C,
     autoThreshold: O
   } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
@@ -50,7 +50,7 @@ function C() {
       autoThreshold: t
     })
   }
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     let e = new Chunk846519.V7;
     return module.start(1e3, () => {
       Chunk131951.Z.getMediaEngine().on(Chunk46973.aB.VoiceActivity, N), module.stop()
@@ -58,9 +58,9 @@ function C() {
       Chunk131951.Z.getMediaEngine().removeListener(Chunk46973.aB.VoiceActivity, N), module.stop()
     }
   }, []);
-  let y = (0, Chunk255367.jsx)("section", {
+  let y = (0, Chunk951288.jsx)("section", {
     className: a()(Chunk192294.inputSensitivityToggle, Chunk192294.manual),
-    children: (0, Chunk255367.jsx)(Chunk481060.iRW, {
+    children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
       initialValue: C + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
       onValueChange: e => I(-((100 - e) * 1), O),
@@ -71,38 +71,38 @@ function C() {
         background: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css
       },
       "aria-labelledby": E,
-      children: (0, Chunk255367.jsxs)("div", {
+      children: (0, Chunk951288.jsxs)("div", {
         className: a()(Chunk192294.sliderBar, Chunk192294.microphone, Chunk192294.inputSensitivityBar, Chunk89079.bar),
-        children: [(0, Chunk255367.jsx)("div", {
+        children: [(0, Chunk951288.jsx)("div", {
           className: a()(Chunk192294.fill, Chunk192294.inputSensitivityBarFill),
           style: {
             width: module + 100 + "%"
           }
-        }), (0, Chunk255367.jsx)("div", {
+        }), (0, Chunk951288.jsx)("div", {
           className: "grow"
         })]
       })
     })
   });
-  return O && (y = (0, Chunk255367.jsxs)("section", {
+  return O && (y = (0, Chunk951288.jsxs)("section", {
     className: Chunk192294.inputSensitivityToggle,
-    children: [(0, Chunk255367.jsx)("div", {
+    children: [(0, Chunk951288.jsx)("div", {
       className: Chunk192294.inputSensitivitySlider,
-      children: (0, Chunk255367.jsx)("div", {
+      children: (0, Chunk951288.jsx)("div", {
         className: a()(Chunk192294.inputSensitivityBar, Chunk192294.sliderBar, {
           [Chunk192294.speaking]: require
         })
       })
-    }), (0, Chunk255367.jsx)(Chunk481060.R94, {
+    }), (0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.R94.Types.DESCRIPTION,
       className: Chunk197571.marginBottom8,
       children: Chunk388032.intl.string(Chunk388032.t.W3K5Ii)
     })]
-  })), (0, Chunk255367.jsxs)(Chunk481060.xJW, {
+  })), (0, Chunk951288.jsxs)(Chunk481060.xJW, {
     title: Chunk388032.intl.string(Chunk388032.t["sqUm+v"]),
     titleId: E,
     className: Chunk192294.sensitivity,
-    children: [S && (0, Chunk255367.jsx)(Chunk313201.FG, {
+    children: [S && (0, Chunk951288.jsx)(Chunk313201.FG, {
       children: e => (0, i.jsxs)("div", {
         className: a()(_.horizontal, j.marginBottom4),
         children: [(0, i.jsx)(u.vwX, {
@@ -118,7 +118,7 @@ function C() {
           onChange: e => I(C, e)
         })]
       })
-    }), y, !T && (0, Chunk255367.jsx)(Chunk481060.R94, {
+    }), y, !T && (0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.R94.Types.DESCRIPTION,
       className: a()(Chunk192294.inputDisabledWarning, Chunk197571.marginBottom8),
       children: Chunk388032.intl.format(Chunk388032.t["O13I+P"], {

@@ -5,8 +5,8 @@ require.d(exports, {
   Ch: () => A,
   Tr: () => S
 }), require("./642613.js"), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk680018 = require("./680018.jsx"),
@@ -67,7 +67,7 @@ let v = new Chunk710845.Z("PaymentRequest"),
     link: "link",
     browserCard: "browserCard"
   });
-class T extends Chunk73800.Component {
+class T extends Chunk647438.Component {
   componentDidMount() {
     if (!(0, Chunk358085.isDesktop)()) {
       if (!this.isBrowserCompatible()) return void this.onPaymentRequestFailure();
@@ -147,13 +147,13 @@ class T extends Chunk73800.Component {
     }, i), h.HeQ.PAYMENT_REQUEST)
   }
   renderConnectorView() {
-    return (0, Chunk255367.jsxs)("div", {
+    return (0, Chunk951288.jsxs)("div", {
       className: this.props.className,
-      children: [(0, Chunk255367.jsx)(Chunk219929.ZP, {
+      children: [(0, Chunk951288.jsx)(Chunk219929.ZP, {
         type: Chunk219929.ZP.Types.PAYMENT_REQUEST,
         size: Chunk219929.Uy.MEDIUM,
         className: Chunk360751.paymentRequestIcon
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         className: Chunk360751.connectionInstructions,
         children: Chunk388032.intl.string(Chunk388032.t.f19PPT)
@@ -268,13 +268,13 @@ class S extends T {
     }
   }
   renderConnectorView() {
-    return (0, Chunk255367.jsxs)("div", {
+    return (0, Chunk951288.jsxs)("div", {
       className: this.props.className,
-      children: [(0, Chunk255367.jsx)(Chunk219929.ZP, {
+      children: [(0, Chunk951288.jsx)(Chunk219929.ZP, {
         type: Chunk219929.ZP.Types.G_PAY,
         size: Chunk219929.Uy.MEDIUM,
         className: Chunk360751.paymentRequestIcon
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         className: Chunk360751.connectionInstructions,
         children: Chunk388032.intl.string(Chunk388032.t.ueoGeX)
@@ -328,13 +328,13 @@ class A extends T {
     }
   }
   renderConnectorView() {
-    return (0, Chunk255367.jsxs)("div", {
+    return (0, Chunk951288.jsxs)("div", {
       className: this.props.className,
-      children: [(0, Chunk255367.jsx)(Chunk219929.ZP, {
+      children: [(0, Chunk951288.jsx)(Chunk219929.ZP, {
         type: Chunk219929.ZP.Types.APPLE,
         size: Chunk219929.Uy.MEDIUM,
         className: o()(Chunk360751.paymentRequestIcon, Chunk360751.appleConnectorIcon)
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         className: Chunk360751.connectionInstructions,
         children: Chunk388032.intl.string(Chunk388032.t.iv8pQU)

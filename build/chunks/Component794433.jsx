@@ -4,8 +4,8 @@ require.d(exports, {
   F: () => g,
   Z: () => h
 }), require("./539854.js"), require("./388685.js");
-var r, n, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, n, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -28,7 +28,7 @@ let _ = Object.freeze({
   LARGE: Chunk599684.large
 });
 var g = ((n = {}).MEMBER = "MEMBER", n.ROLE = "ROLE", n.CHANNEL = "CHANNEL", n.GUILD = "GUILD", n.USER = "USER", n);
-class p extends(r = Chunk73800.Component) {
+class p extends(r = Chunk647438.Component) {
   componentDidMount() {
     let e = this.containerRef.current;
     null != module && (this.previousHeight = module.offsetHeight)
@@ -177,10 +177,10 @@ class p extends(r = Chunk73800.Component) {
         className: f.close,
         "aria-label": E.intl.string(E.t.N86XcH)
       })]
-    }, t))))), (0, Chunk255367.jsx)(Chunk481060.tEY, {
+    }, t))))), (0, Chunk951288.jsx)(Chunk481060.tEY, {
       focusTarget: this.ref,
       ringTarget: this.containerRef,
-      children: (0, Chunk255367.jsx)(Chunk481060.f6W, {
+      children: (0, Chunk951288.jsx)(Chunk481060.f6W, {
         theme: r,
         children: r => (0, o.jsx)("div", {
           ref: this.containerRef,

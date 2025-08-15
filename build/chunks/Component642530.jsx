@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => d
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk987209 = require("./987209.jsx"),
   Chunk563132 = require("./563132.jsx"),
   Chunk367074 = require("./367074.js"),
@@ -21,7 +21,7 @@ let d = () => {
     {
       isGift: n
     } = (0, Chunk987209.wD)();
-  return require || exports !== Chunk474936.Si.TIER_2 || !module ? null : (0, Chunk255367.jsx)(Chunk196567.Z, {
+  return require || exports !== Chunk474936.Si.TIER_2 || !module ? null : (0, Chunk951288.jsx)(Chunk196567.Z, {
     copy: Chunk388032.intl.string(Chunk388032.t.OejPtr),
     bannerImage: Chunk430597,
     textColor: "text-invert",

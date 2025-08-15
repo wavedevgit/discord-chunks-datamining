@@ -4,8 +4,8 @@ let i;
 require.d(exports, {
   Z: () => ej
 }), require("./539854.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk921738 = require("./921738.js"),
@@ -171,7 +171,7 @@ let eE = e => {
       ctrlKey: o
     }
   };
-class ex extends Chunk73800.Component {
+class ex extends Chunk647438.Component {
   handleLock() {
     (0, Chunk481060.$sL)() || Chunk574254.Z.isOpen() || Chunk13245.Z.setInputLocked(true, (0, Chunk145597.getPID)())
   }
@@ -221,7 +221,7 @@ class ex extends Chunk73800.Component {
       location: "Overlay"
     });
     let d = require && !i && null != Chunk120356,
-      u = module && null != Chunk255367 && null != Chunk73800,
+      u = module && null != Chunk951288 && null != Chunk647438,
       h = (0, Chunk266454.zu)(Chunk704215.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX),
       p = {
         type: Chunk987650.nc.WELCOME
@@ -236,8 +236,8 @@ class ex extends Chunk73800.Component {
       } : Chunk954955 && u ? p = {
         type: Chunk987650.nc.GO_LIVE_VOICE,
         game: Chunk120356,
-        voiceChannelId: Chunk73800,
-        voiceGuild: Chunk255367
+        voiceChannelId: Chunk647438,
+        voiceGuild: Chunk951288
       } : Chunk954955 && (p = {
         type: Chunk987650.nc.GO_LIVE_NON_VOICE,
         game: Chunk120356
@@ -275,11 +275,11 @@ class ex extends Chunk73800.Component {
     window.removeEventListener("resize", this.handleWindowResize), window.removeEventListener("keydown", this.onKeyDownGlobal, true), window.removeEventListener("keyup", this.onKeyUpGlobal, true), this.props.locked && window.removeEventListener("contextmenu", e_, false), Chunk377400.Z.terminate(), Chunk185666.Z.terminate(), Chunk329557.Z.terminate()
   }
   renderInvalidSizeMessage() {
-    return (0, Chunk255367.jsx)(Chunk600164.Z, {
+    return (0, Chunk951288.jsx)(Chunk600164.Z, {
       justify: Chunk600164.Z.Justify.CENTER,
       align: Chunk600164.Z.Align.CENTER,
       className: Chunk722363.invalidContainer,
-      children: (0, Chunk255367.jsx)("div", {
+      children: (0, Chunk951288.jsx)("div", {
         className: Chunk722363.inactiveContainer,
         children: Chunk388032.intl.format(Chunk388032.t.ketnW1, Chunk145597.OVERLAY_MIN_RESOLUTION)
       })
@@ -301,34 +301,34 @@ class ex extends Chunk73800.Component {
       width: p,
       height: f
     } = c;
-    if (0 === p || 0 === Chunk442837 || require || !Chunk73800) return null;
+    if (0 === p || 0 === Chunk442837 || require || !Chunk647438) return null;
     let g = module || Chunk120356,
       m = Chunk314897.default.getId();
-    return (0, Chunk255367.jsxs)("div", {
+    return (0, Chunk951288.jsxs)("div", {
       className: Chunk722363.overlay,
-      children: [(0, Chunk255367.jsx)(Chunk708383.Z, {}), Chunk120356 && (0, Chunk255367.jsx)("header", {
+      children: [(0, Chunk951288.jsx)(Chunk708383.Z, {}), Chunk120356 && (0, Chunk951288.jsx)("header", {
         className: Chunk722363.previewingInGameHeader,
         children: Chunk388032.intl.string(Chunk388032.t.iOq96u)
-      }), i, (!module || Chunk921738.has(Chunk981631.O0n.TEXT_WIDGET)) && (0, Chunk255367.jsx)(eE, {
+      }), i, (!module || Chunk921738.has(Chunk981631.O0n.TEXT_WIDGET)) && (0, Chunk951288.jsx)(eE, {
         locked: module,
         keybind: exports,
         onClick: module ? this.handleDeactivate : this.handleLock,
         isPreviewingInGame: Chunk120356
-      }), (0, Chunk145597.validResolution)(c) ? (0, Chunk255367.jsx)(Chunk312178.Z, {
+      }), (0, Chunk145597.validResolution)(c) ? (0, Chunk951288.jsx)(Chunk312178.Z, {
         className: s()({
           [Chunk722363.layoutLocked]: module,
           [Chunk722363.layoutUnlocked]: !module
         })
-      }) : module ? null : this.renderInvalidSizeMessage(), (0, Chunk255367.jsx)(Chunk107200.Z, {}), null != Chunk954955 && null != u && (0, Chunk255367.jsx)(Chunk923532.Z, {
+      }) : module ? null : this.renderInvalidSizeMessage(), (0, Chunk951288.jsx)(Chunk107200.Z, {}), null != Chunk954955 && null != u && (0, Chunk951288.jsx)(Chunk923532.Z, {
         streamerId: Chunk481060,
         guildId: Chunk954955.id,
         channelId: u
-      }), Chunk498607 && (0, Chunk255367.jsx)(Chunk983660.Z, {
+      }), Chunk498607 && (0, Chunk951288.jsx)(Chunk983660.Z, {
         locked: module
-      }), (0, Chunk255367.jsx)(Chunk348733.Z, {
+      }), (0, Chunk951288.jsx)(Chunk348733.Z, {
         locked: Chunk704215,
         keybind: exports
-      }), (0, Chunk255367.jsx)(Chunk681603.Z, {})]
+      }), (0, Chunk951288.jsx)(Chunk681603.Z, {})]
     })
   }
   constructor(e) {
@@ -381,12 +381,12 @@ function ej() {
     useContextualNudge: I,
     disableNudge: T
   } = (0, Chunk32300.J0)("OverlaySetup");
-  return (0, Chunk255367.jsx)(Chunk906732.Gt, {
+  return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: Chunk239091,
-    children: (0, Chunk255367.jsx)(ex, {
+    children: (0, Chunk951288.jsx)(ex, {
       locked: require,
       initialized: i,
-      incompatibleApp: Chunk73800,
+      incompatibleApp: Chunk647438,
       activeRegions: Chunk120356,
       isPreviewingInGame: s,
       windowSize: c,

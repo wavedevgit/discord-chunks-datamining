@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => E
 }), require("./539854.js");
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
   Chunk481060 = require("./481060.js"),
@@ -52,12 +52,12 @@ function E() {
         })
       }
     }),
-    v = [(0, Chunk255367.jsxs)(Chunk481060.kSQ, {
+    v = [(0, Chunk951288.jsxs)(Chunk481060.kSQ, {
       children: [O(Chunk981631.BRd.LIGHT, Chunk388032.intl.string(Chunk388032.t.K2sFfn)), O(Chunk981631.BRd.DARK, Chunk388032.intl.string(Chunk388032.t.SMPT1t)), O(Chunk981631.BRd.DARKER, Chunk388032.intl.string(Chunk388032.t.b8Cei4)), O(Chunk981631.BRd.MIDNIGHT, Chunk388032.intl.string(Chunk388032.t.Do4ZJy)), O("system", Chunk388032.intl.string(Chunk388032.t["7rOU6u"]))]
     }, "theme-items")];
-  return v.push((0, Chunk255367.jsxs)(Chunk481060.kSQ, {
+  return v.push((0, Chunk951288.jsxs)(Chunk481060.kSQ, {
     label: "UI Density",
-    children: [(0, Chunk255367.jsx)(Chunk481060.k5B, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.k5B, {
       id: "compact-ui",
       group: "list-density",
       label: Chunk388032.intl.string(Chunk388032.t["7iegX1"]),
@@ -65,7 +65,7 @@ function E() {
       action: () => {
         Chunk695346.YC.updateSetting(Chunk524437.Pi.COMPACT)
       }
-    }), (0, Chunk255367.jsx)(Chunk481060.k5B, {
+    }), (0, Chunk951288.jsx)(Chunk481060.k5B, {
       id: "default-ui",
       group: "list-density",
       label: Chunk388032.intl.string(Chunk388032.t.bBvAEB),
@@ -73,7 +73,7 @@ function E() {
       action: () => {
         Chunk695346.YC.updateSetting(Chunk524437.Pi.DEFAULT)
       }
-    }), (0, Chunk255367.jsx)(Chunk481060.k5B, {
+    }), (0, Chunk951288.jsx)(Chunk481060.k5B, {
       id: "cozy-ui",
       group: "list-density",
       label: Chunk388032.intl.string(Chunk388032.t["4cuYHx"]),
@@ -82,9 +82,9 @@ function E() {
         Chunk695346.YC.updateSetting(Chunk524437.Pi.COZY)
       }
     })]
-  }, "list-density")), v.push((0, Chunk255367.jsxs)(Chunk481060.kSQ, {
+  }, "list-density")), v.push((0, Chunk951288.jsxs)(Chunk481060.kSQ, {
     label: "Message Display",
-    children: [(0, Chunk255367.jsx)(Chunk481060.k5B, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.k5B, {
       id: "cozy-chat",
       group: "chat-density",
       label: Chunk388032.intl.string(Chunk388032.t.Jqj4cX),
@@ -92,7 +92,7 @@ function E() {
       action: () => {
         Chunk695346.jU.updateSetting(false), (0, Chunk857595.ZZ)()
       }
-    }), (0, Chunk255367.jsx)(Chunk481060.k5B, {
+    }), (0, Chunk951288.jsx)(Chunk481060.k5B, {
       id: "compact-chat",
       group: "chat-density",
       label: Chunk388032.intl.string(Chunk388032.t["1JNcPT"]),

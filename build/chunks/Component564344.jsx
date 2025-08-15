@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => A
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -48,7 +48,7 @@ function A() {
       hasSearchResults: D,
       searchResults: Z
     } = (0, Chunk839469.E)();
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     null != A && (0, Chunk484459.Z)(A.id, A.getAvatarURL(null == Chunk120356 ? true : Chunk120356.id, 80), {
       guildId: null == Chunk120356 ? true : Chunk120356.id
     })
@@ -69,36 +69,36 @@ function A() {
       t === T.NB.GUILD && null == e && null != s && (0, p.Fq)(s), R(t)
     }
   }
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     P === Chunk526761.NB.GUILD && L(Chunk921944.L.TAKE_ACTION)
   }, [P, L]);
   let U = true,
     V = true;
-  return D && 1 === Z.length && (Z.includes(Chunk726985.s6.PROFILE_SERVER_PROFILES) ? (M(Chunk526761.NB.GUILD), V = false) : Z.includes(Chunk726985.s6.PROFILE_USER_PROFILE) && (M(Chunk526761.NB.USER_PROFILE), U = false)), (0, Chunk255367.jsxs)(Chunk481060.y5t, {
-    component: (0, Chunk255367.jsx)(Chunk481060.X6q, {
+  return D && 1 === Z.length && (Z.includes(Chunk726985.s6.PROFILE_SERVER_PROFILES) ? (M(Chunk526761.NB.GUILD), V = false) : Z.includes(Chunk726985.s6.PROFILE_USER_PROFILE) && (M(Chunk526761.NB.USER_PROFILE), U = false)), (0, Chunk951288.jsxs)(Chunk481060.y5t, {
+    component: (0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/semibold",
       children: Chunk388032.intl.string(Chunk388032.t["vi7f+v"])
     }),
-    children: [(0, Chunk255367.jsxs)(Chunk481060.njP, {
+    children: [(0, Chunk951288.jsxs)(Chunk481060.njP, {
       className: Chunk455734.tabBar,
       type: "top",
       look: "brand",
       selectedItem: P,
       onItemSelect: M,
-      children: [V ? (0, Chunk255367.jsx)(Chunk481060.njP.Item, {
+      children: [V ? (0, Chunk951288.jsx)(Chunk481060.njP.Item, {
         className: Chunk455734.tabBarItem,
         id: Chunk526761.NB.USER_PROFILE,
         children: Chunk388032.intl.string(Chunk388032.t["2p07FR"])
-      }, Chunk526761.NB.USER_PROFILE) : null, U ? (0, Chunk255367.jsxs)(Chunk481060.njP.Item, {
+      }, Chunk526761.NB.USER_PROFILE) : null, U ? (0, Chunk951288.jsxs)(Chunk481060.njP.Item, {
         className: a()(Chunk455734.tabBarItem, Chunk455734.guildTabBarItem),
         "aria-label": Chunk388032.intl.string(Chunk388032.t.kPHroa),
         id: Chunk526761.NB.GUILD,
-        children: [Chunk388032.intl.string(Chunk388032.t.kPHroa), B && P !== Chunk526761.NB.GUILD && (0, Chunk255367.jsx)(Chunk481060.IGR, {
+        children: [Chunk388032.intl.string(Chunk388032.t.kPHroa), B && P !== Chunk526761.NB.GUILD && (0, Chunk951288.jsx)(Chunk481060.IGR, {
           text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
         })]
       }, Chunk526761.NB.GUILD) : null]
-    }), P === Chunk526761.NB.GUILD ? (0, Chunk255367.jsx)(Chunk851894.Z, {
+    }), P === Chunk526761.NB.GUILD ? (0, Chunk951288.jsx)(Chunk851894.Z, {
       selectedGuild: Chunk120356
-    }) : (0, Chunk255367.jsx)(Chunk216045.Z, {})]
+    }) : (0, Chunk951288.jsx)(Chunk216045.Z, {})]
   })
 }

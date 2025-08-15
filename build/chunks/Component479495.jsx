@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => E
 }), require("./35282.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk593473 = require("./593473.js"),
@@ -34,7 +34,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 Chunk442837.ZP.initialize();
-class P extends(r = Chunk73800.PureComponent) {
+class P extends(r = Chunk647438.PureComponent) {
   componentDidMount() {
     (0, Chunk108427.e)("reset_password")
   }
@@ -48,20 +48,20 @@ class P extends(r = Chunk73800.PureComponent) {
       theme: a,
       authBoxClassName: l
     } = this.props, o = null != exports ? exports : this.renderError("password");
-    return (0, Chunk255367.jsxs)(Chunk388905.ZP, {
+    return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       onSubmit: this.handleSubmit,
       tag: "form",
       theme: Chunk120356,
       className: l,
-      children: [(0, Chunk255367.jsx)("img", {
+      children: [(0, Chunk951288.jsx)("img", {
         alt: "",
         src: null == Chunk593473 ? require("./26230.js") : require("./935227.js"),
         className: Chunk197571.marginBottom20
-      }), (0, Chunk255367.jsx)(Chunk388905.Dx, {
+      }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
         children: Chunk388032.intl.string(Chunk388032.t["1LV6Ki"])
-      }), (0, Chunk255367.jsxs)(Chunk388905.gO, {
+      }), (0, Chunk951288.jsxs)(Chunk388905.gO, {
         className: Chunk197571.marginTop20,
-        children: [(0, Chunk255367.jsx)(Chunk388905.II, {
+        children: [(0, Chunk951288.jsx)(Chunk388905.II, {
           label: Chunk388032.intl.string(Chunk388032.t["8dM4FB"]),
           className: Chunk197571.marginBottom20,
           name: "password",
@@ -73,14 +73,14 @@ class P extends(r = Chunk73800.PureComponent) {
           type: "password",
           autoComplete: "new-password",
           required: true
-        }), (0, Chunk255367.jsx)(Chunk388905.zx, {
+        }), (0, Chunk951288.jsx)(Chunk388905.zx, {
           type: "submit",
-          submitting: Chunk73800,
+          submitting: Chunk647438,
           children: Chunk388032.intl.string(Chunk388032.t["FRep5+"])
-        }), r ? (0, Chunk255367.jsx)(Chunk388905.zx, {
+        }), r ? (0, Chunk951288.jsx)(Chunk388905.zx, {
           className: Chunk197571.marginTop8,
           onClick: this.handleGoToLogin,
-          submitting: Chunk73800,
+          submitting: Chunk647438,
           color: Chunk388905.zx.Colors.PRIMARY,
           children: Chunk388032.intl.string(Chunk388032.t["ETE/oK"])
         }) : null]
@@ -101,13 +101,13 @@ class P extends(r = Chunk73800.PureComponent) {
       } = e;
       return this.handleTokenSubmitMFAv2(t, n)
     };
-    return (0, Chunk255367.jsx)(Chunk388905.ZP, {
+    return (0, Chunk951288.jsx)(Chunk388905.ZP, {
       style: {
         padding: 0
       },
       theme: require,
       className: r,
-      children: (0, Chunk255367.jsx)(Chunk124860.Cd, {
+      children: (0, Chunk951288.jsx)(Chunk124860.Cd, {
         mfaFinish: Chunk120356,
         mfaChallenge: {
           ticket: module,
@@ -118,7 +118,7 @@ class P extends(r = Chunk73800.PureComponent) {
             type: "LOGIN_RESET"
           })
         },
-        width: null != Chunk73800 ? Chunk73800 : 480
+        width: null != Chunk647438 ? Chunk647438 : 480
       })
     })
   }
@@ -127,17 +127,17 @@ class P extends(r = Chunk73800.PureComponent) {
       theme: e,
       authBoxClassName: t
     } = this.props;
-    return (0, Chunk255367.jsxs)(Chunk388905.ZP, {
+    return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       theme: module,
       className: exports,
-      children: [(0, Chunk255367.jsx)("img", {
+      children: [(0, Chunk951288.jsx)("img", {
         alt: "",
         src: require("./26230.js"),
         className: l()(Chunk197571.marginBottom20, Chunk873546.tq ? Chunk197571.marginTop20 : "")
-      }), (0, Chunk255367.jsx)(Chunk388905.Dx, {
+      }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom40,
         children: Chunk388032.intl.string(Chunk388032.t.WAUOoK)
-      }), (0, Chunk255367.jsx)(Chunk388905.zx, {
+      }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         onClick: this.handleOpenApp,
         children: Chunk388032.intl.string(Chunk388032.t.uJWIj4)
       })]

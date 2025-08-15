@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => h
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk524437 = require("./524437.js"),
@@ -28,15 +28,15 @@ let x = [{
 }];
 
 function h() {
-  let e = Chunk73800.useRef(null),
+  let e = Chunk647438.useRef(null),
     t = Chunk695346.JG.useSetting();
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     ref: module,
     className: i()(Chunk451429.panel, Chunk441900.panel),
-    children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       children: "Receive DMs In Game"
-    }), (0, Chunk255367.jsx)(Chunk481060.PhF, {
+    }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
       options: x,
       isSelected: e => e === t,
       select: Chunk695346.JG.updateSetting,

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => A
 }), require("./388685.js"), require("./49124.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
@@ -267,12 +267,12 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
   };
 
 function A() {
-  let e = Chunk73800.useRef(null),
-    [t, a] = Chunk73800.useState(""),
+  let e = Chunk647438.useRef(null),
+    [t, a] = Chunk647438.useState(""),
     l = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.loggedEventsVersion),
-    [s, o] = Chunk73800.useState(() => Object.keys(k)),
-    [m, x] = Chunk73800.useState(Chunk120816.Z.loggedEvents),
-    h = Chunk73800.useCallback(e => {
+    [s, o] = Chunk647438.useState(() => Object.keys(k)),
+    [m, x] = Chunk647438.useState(Chunk120816.Z.loggedEvents),
+    h = Chunk647438.useCallback(e => {
       x(e)
     }, []);
   (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, Z, [Chunk120356]);
@@ -281,7 +281,7 @@ function A() {
         if (k[t].filter(e)) returntrue;
       returnfalse
     }),
-    [v, f] = Chunk73800.useState(true),
+    [v, f] = Chunk647438.useState(true),
     _ = Chunk594174.find(e => e.key === v),
     {
       TabBar: P,
@@ -289,27 +289,27 @@ function A() {
     } = (0, Chunk621060.ZP)({
       tabs: R
     }, []);
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     ref: module,
     className: i()(Chunk451429.panel, Chunk599832.panel),
-    children: [(0, Chunk255367.jsxs)("div", {
+    children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk599832.toolbar,
-      children: [(0, Chunk255367.jsx)(Chunk755721.zx, {
+      children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
         className: Chunk599832.toolbarButton,
         look: Chunk755721.zx.Looks.BLANK,
         size: Chunk755721.zx.Sizes.ICON,
         onClick: Chunk31336.Zw,
-        children: (0, Chunk255367.jsx)("span", {
+        children: (0, Chunk951288.jsx)("span", {
           title: Chunk388032.intl.string(Chunk388032.t.VkKicX),
-          children: (0, Chunk255367.jsx)(Chunk481060.XHJ, {
+          children: (0, Chunk951288.jsx)(Chunk481060.XHJ, {
             size: "md",
             color: "currentColor",
             "aria-label": Chunk388032.intl.string(Chunk388032.t.VkKicX)
           })
         })
-      }), (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk951288.jsx)("div", {
         className: Chunk599832.toolbarDivider
-      }), (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk951288.jsx)("div", {
         className: Chunk599832.filters,
         children: Object.entries(k).map(e => {
           let [t, a] = e;
@@ -322,9 +322,9 @@ function A() {
           }, t)
         })
       })]
-    }), (0, Chunk255367.jsx)("div", {
+    }), (0, Chunk951288.jsx)("div", {
       className: Chunk599832.toolbar,
-      children: (0, Chunk255367.jsx)(Chunk481060.E1j, {
+      children: (0, Chunk951288.jsx)(Chunk481060.E1j, {
         size: "sm",
         className: Chunk599832.searchBar,
         query: exports,
@@ -332,16 +332,16 @@ function A() {
         onClear: () => require(""),
         placeholder: "Search by event name"
       })
-    }), (0, Chunk255367.jsx)(Chunk681619.Z, {
+    }), (0, Chunk951288.jsx)(Chunk681619.Z, {
       columns: S,
       data: Chunk594174,
       selectedRowKey: Chunk572004,
       onClickRow: e => f(e.key)
-    }), null != Chunk257785 && (0, Chunk255367.jsxs)(Chunk484036.Z, {
+    }), null != Chunk257785 && (0, Chunk951288.jsxs)(Chunk484036.Z, {
       className: Chunk599832.subPanel,
       minHeight: 100,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300,
-      children: [(0, Chunk255367.jsx)(P, {}), I({
+      children: [(0, Chunk951288.jsx)(P, {}), I({
         loggedEvent: Chunk257785,
         onClose: () => Chunk55935(true),
         filteredEvents: Chunk594174

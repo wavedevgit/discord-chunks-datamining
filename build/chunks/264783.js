@@ -4,13 +4,13 @@
 require.d(exports, {
   A: () => s
 }), require("./388685.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk524437 = require("./524437.js"),
   Chunk695346 = require("./695346.js");
 
 function o() {
-  let [e, t] = Chunk73800.useState("cozy");
-  return Chunk73800.useEffect(() => {
+  let [e, t] = Chunk647438.useState("cozy");
+  return Chunk647438.useEffect(() => {
     let e = window.matchMedia("(min-width: 1024px) and (min-height: 820px)"),
       n = e => {
         t(e.matches ? "cozy" : "compact")

@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => d
 });
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk355467 = require("./355467.js"),
   Chunk78839 = require("./78839.js"),
@@ -14,8 +14,8 @@ let c = [];
 function d() {
   let {
     ensureFresh: e = false
-  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = (0, Chunk261744.Z)() === Chunk293810.PY.SUBSCRIBED, n = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getActiveGuildSubscriptions()), d = Chunk73800.useRef(false);
-  return Chunk73800.useEffect(() => {
+  } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = (0, Chunk261744.Z)() === Chunk293810.PY.SUBSCRIBED, n = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getActiveGuildSubscriptions()), d = Chunk647438.useRef(false);
+  return Chunk647438.useEffect(() => {
     (function(e) {
       var t;
       let {

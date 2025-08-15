@@ -3,7 +3,7 @@
 require.d(exports, {
   o: () => o
 }), require("./642613.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk115130 = require("./115130.js"),
   Chunk701488 = require("./701488.js");
@@ -15,7 +15,7 @@ let o = () => {
     isEnabled: Chunk115130.Z.getIsEnabled(),
     lastUsedObject: Chunk115130.Z.getLastUsedObject()
   }), []), n = (0, Chunk442837.Wu)([Chunk115130.Z], () => Chunk115130.Z.getDeveloperShelfItems(), []);
-  return Chunk73800.useMemo(() => module ? require.map(e => {
+  return Chunk647438.useMemo(() => module ? require.map(e => {
     var t, n;
     return {
       application: e,

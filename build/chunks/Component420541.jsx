@@ -3,8 +3,8 @@
 require.r(exports), require.d(exports, {
   default: () => f
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk597846 = require("./597846.jsx"),
   Chunk885006 = require("./885006.js"),
   Chunk111810 = require("./111810.js"),
@@ -13,15 +13,15 @@ var Chunk255367 = require("./255367.js"),
   Chunk313677 = require("./313677.js");
 let d = () => {
     let e = (0, Chunk885006.Z)(),
-      t = Chunk73800.useMemo(() => ({
+      t = Chunk647438.useMemo(() => ({
         w: module.width,
         h: module.height
       }), [module]),
       r = (0, Chunk516604.Z)(exports);
-    return (0, Chunk317568.Z)(), (0, Chunk255367.jsx)("div", {
+    return (0, Chunk317568.Z)(), (0, Chunk951288.jsx)("div", {
       className: Chunk313677.canvasWrapper,
       id: "simple-confetti-canvas",
-      children: (0, Chunk255367.jsx)(Chunk597846.z, {
+      children: (0, Chunk951288.jsx)(Chunk597846.z, {
         playing: require.playing,
         size: exports,
         useClockOptions: {
@@ -36,4 +36,4 @@ let d = () => {
       })
     })
   },
-  f = () => (0, Chunk111810.kf)("ConfettiCanvasComponent") ? (0, Chunk255367.jsx)(d, {}) : null
+  f = () => (0, Chunk111810.kf)("ConfettiCanvasComponent") ? (0, Chunk951288.jsx)(d, {}) : null

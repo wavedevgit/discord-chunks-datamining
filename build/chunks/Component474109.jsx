@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => v
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk18998 = require("./18998.jsx"),
   Chunk664915 = require("./664915.js"),
@@ -29,7 +29,7 @@ function O(e) {
   return e === h.x8Z.SERVER_DISCOVERY_BADGE && !d.Z.hasViewed(h.x8Z.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? true : t.highImportanceMentionCount) > 0
 }
 let y = (0, Chunk251625.oH)((e, t, n) => ["null", ...t, ...e, b, h.x8Z.E3_SERVER_DISCOVERY_BADGE, m]),
-  v = Chunk73800.forwardRef(function(e, t) {
+  v = Chunk647438.forwardRef(function(e, t) {
     var n, i;
     let d = (0, l.Wu)([u.ZP, c.Z, s.default], () => y(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), s.default.getStoreChangeSentinel())),
       f = (0, l.e7)([p.Z], () => p.Z.isFocused()),

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => X
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -79,7 +79,7 @@ function K(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class q extends Chunk73800.PureComponent {
+class q extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       currentUser: e
@@ -94,11 +94,11 @@ class q extends Chunk73800.PureComponent {
       currentUser: e
     } = this.props;
     if (!module.isClaimed()) {
-      let e = (0, Chunk255367.jsxs)("section", {
-        children: [(0, Chunk255367.jsx)("div", {
+      let e = (0, Chunk951288.jsxs)("section", {
+        children: [(0, Chunk951288.jsx)("div", {
           className: Chunk343396.accountWarningBodyText,
           children: Chunk388032.intl.string(Chunk388032.t.qKs3vr)
-        }), (0, Chunk255367.jsx)(Chunk755721.zx, {
+        }), (0, Chunk951288.jsx)(Chunk755721.zx, {
           look: Chunk755721.iL.OUTLINED,
           size: Chunk755721.Ph.SMALL,
           color: Chunk755721.zx.Colors.WHITE,
@@ -106,7 +106,7 @@ class q extends Chunk73800.PureComponent {
           children: Chunk388032.intl.string(Chunk388032.t["7psymp"])
         })]
       });
-      return (0, Chunk255367.jsx)(Chunk481060.ToO, {
+      return (0, Chunk951288.jsx)(Chunk481060.ToO, {
         type: Chunk481060.ToO.Types.DANGER,
         className: Chunk197571.marginBottom20,
         imageData: {
@@ -120,16 +120,16 @@ class q extends Chunk73800.PureComponent {
     }
     if (null == module.email) return null;
     if (!module.verified) {
-      let e = (0, Chunk255367.jsxs)("section", {
-        children: [(0, Chunk255367.jsx)("div", {
+      let e = (0, Chunk951288.jsxs)("section", {
+        children: [(0, Chunk951288.jsx)("div", {
           className: Chunk343396.accountWarningBodyText,
           children: Chunk388032.intl.string(Chunk388032.t.NAzplJ)
-        }), (0, Chunk255367.jsx)(Chunk418632.Z, {
+        }), (0, Chunk951288.jsx)(Chunk418632.Z, {
           size: Chunk755721.Ph.SMALL,
           color: Chunk755721.zx.Colors.PRIMARY
         })]
       });
-      return (0, Chunk255367.jsx)(Chunk481060.ToO, {
+      return (0, Chunk951288.jsx)(Chunk481060.ToO, {
         type: Chunk481060.ToO.Types.PRIMARY,
         className: Chunk197571.marginBottom20,
         imageData: {
@@ -143,10 +143,10 @@ class q extends Chunk73800.PureComponent {
     }
   }
   renderPomeloWarning() {
-    return this.props.shouldRenderPomeloWarning ? (0, Chunk255367.jsxs)(Chunk481060.Wn, {
+    return this.props.shouldRenderPomeloWarning ? (0, Chunk951288.jsxs)(Chunk481060.Wn, {
       className: Chunk343396.accountWarningBodyText,
       messageType: Chunk481060.QYI.WARNING,
-      children: [Chunk388032.intl.format(Chunk388032.t.pdYZys, {}), " ", "", (0, Chunk255367.jsx)(Chunk690221.Z, {
+      children: [Chunk388032.intl.format(Chunk388032.t.pdYZys, {}), " ", "", (0, Chunk951288.jsx)(Chunk690221.Z, {
         className: Chunk343396.noticeTextButton,
         onClick: () => (0, Chunk303172.Z)(Chunk801461.Kq.USER_SETTINGS),
         children: Chunk388032.intl.string(Chunk388032.t.LhlgY2)
@@ -155,10 +155,10 @@ class q extends Chunk73800.PureComponent {
   }
   renderAccountSettings() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
-      t = (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-        children: [this.renderPomeloWarning(), this.renderAccountWarning(), (0, Chunk255367.jsx)(Chunk2719.Z, {})]
+      t = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        children: [this.renderPomeloWarning(), this.renderAccountWarning(), (0, Chunk951288.jsx)(Chunk2719.Z, {})]
       });
-    return module ? (0, Chunk255367.jsx)(Chunk481060.hjN, {
+    return module ? (0, Chunk951288.jsx)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H1,
       title: Chunk388032.intl.string(Chunk388032.t["JAIM/v"]),
       children: exports
@@ -169,27 +169,27 @@ class q extends Chunk73800.PureComponent {
       backupCodes: e,
       currentUser: t,
       theme: r
-    } = this.props, s = (0, Chunk780384.wj)(Chunk73800) ? require("./555702.js") : require("./610802.js");
-    return (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+    } = this.props, s = (0, Chunk780384.wj)(Chunk647438) ? require("./555702.js") : require("./610802.js");
+    return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       className: a()(Chunk343396.userSettingsSecurity, Chunk197571.marginTop40),
       title: Chunk388032.intl.string(Chunk388032.t.pKSjEh),
       tag: "h1",
-      children: [exports.mfaEnabled ? (0, Chunk255367.jsx)(Chunk481060.hjN, {
-        children: (0, Chunk255367.jsxs)(Chunk481060.vwX, {
+      children: [exports.mfaEnabled ? (0, Chunk951288.jsx)(Chunk481060.hjN, {
+        children: (0, Chunk951288.jsxs)(Chunk481060.vwX, {
           className: a()(Chunk343396.isEnabled, Chunk197571.marginBottom20),
-          children: [(0, Chunk255367.jsx)("img", {
+          children: [(0, Chunk951288.jsx)("img", {
             alt: "",
             className: Chunk343396.lockIcon,
             src: require("./511391.js")
           }), Chunk388032.intl.string(Chunk388032.t.FsmBy8)]
         })
-      }) : null, (0, Chunk255367.jsx)(Chunk921801.F, {
+      }) : null, (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_CHANGE_PASSWORD,
-        children: (0, Chunk255367.jsx)("div", {
-          children: (0, Chunk255367.jsx)("div", {
+        children: (0, Chunk951288.jsx)("div", {
+          children: (0, Chunk951288.jsx)("div", {
             "data-button-hoisted-classname-wrapper": true,
             className: Chunk343396.changePasswordButton,
-            children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+            children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
               variant: "primary",
               size: "sm",
               text: Chunk388032.intl.string(Chunk388032.t["FRep5+"]),
@@ -199,20 +199,20 @@ class q extends Chunk73800.PureComponent {
             })
           })
         })
-      }), (0, Chunk255367.jsx)(Chunk921801.F, {
+      }), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        children: (0, Chunk255367.jsxs)(Chunk600164.Z, {
+        children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
           align: Chunk600164.Z.Align.STRETCH,
-          children: [(0, Chunk255367.jsx)(Chunk600164.Z.Child, {
+          children: [(0, Chunk951288.jsx)(Chunk600164.Z.Child, {
             wrap: true,
-            children: (0, Chunk255367.jsx)(Chunk730820.Z, {
+            children: (0, Chunk951288.jsx)(Chunk730820.Z, {
               backupCodes: module
             })
-          }), exports.mfaEnabled ? null : (0, Chunk255367.jsx)(Chunk600164.Z, {
+          }), exports.mfaEnabled ? null : (0, Chunk951288.jsx)(Chunk600164.Z, {
             align: Chunk600164.Z.Align.CENTER,
             basis: "323px",
             grow: 0,
-            children: (0, Chunk255367.jsx)("img", {
+            children: (0, Chunk951288.jsx)("img", {
               src: Chunk120356,
               className: Chunk343396.userSettingsSecurityImage,
               alt: ""
@@ -230,18 +230,18 @@ class q extends Chunk73800.PureComponent {
       shouldRenderOwnedTeamsModal: r,
       disableAccountErrorMessage: s
     } = this.state;
-    if (Chunk73800) {
+    if (Chunk647438) {
       let e = () => this.setState({
         shouldRenderOwnedTeamsModal: false
       });
-      return (0, Chunk255367.jsx)(Chunk481060.sYh, {
+      return (0, Chunk951288.jsx)(Chunk481060.sYh, {
         dismissable: true,
         header: Chunk388032.intl.string(Chunk388032.t.UNGZDA),
         confirmText: Chunk388032.intl.string(Chunk388032.t.BddRzc),
         confirmButtonColor: Chunk755721.Tt.BRAND,
         onCancel: module,
         onConfirm: module,
-        children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: Chunk388032.intl.string(Chunk388032.t.alpAUl)
         })
@@ -251,14 +251,14 @@ class q extends Chunk73800.PureComponent {
       let e = () => this.setState({
         shouldRenderOwnedGuildsModal: false
       });
-      return (0, Chunk255367.jsx)(Chunk481060.sYh, {
+      return (0, Chunk951288.jsx)(Chunk481060.sYh, {
         dismissable: true,
         header: Chunk388032.intl.string(Chunk388032.t.I5UrbW),
         confirmText: Chunk388032.intl.string(Chunk388032.t.BddRzc),
         confirmButtonColor: Chunk755721.Tt.BRAND,
         onCancel: module,
         onConfirm: module,
-        children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: Chunk388032.intl.string(Chunk388032.t.UyVVam)
         })
@@ -268,14 +268,14 @@ class q extends Chunk73800.PureComponent {
       let e = () => this.setState({
         shouldRenderDeleteAccountConfirmModal: false
       });
-      return (0, Chunk255367.jsx)(Chunk481060.sYh, {
+      return (0, Chunk951288.jsx)(Chunk481060.sYh, {
         dismissable: true,
         header: Chunk388032.intl.string(Chunk388032.t["8lQ2ra"]),
         confirmText: Chunk388032.intl.string(Chunk388032.t["8lQ2ra"]),
         cancelText: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
         onCancel: module,
         onConfirm: () => (0, Chunk809206.ss)("", true).then(module),
-        children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: Chunk388032.intl.string(Chunk388032.t.FB4H1N)
         })
@@ -286,14 +286,14 @@ class q extends Chunk73800.PureComponent {
         shouldRenderDisableAccountErrorModal: false,
         disableAccountErrorMessage: null
       });
-      return (0, Chunk255367.jsx)(Chunk481060.sYh, {
+      return (0, Chunk951288.jsx)(Chunk481060.sYh, {
         dismissable: true,
         header: Chunk388032.intl.string(Chunk388032.t.LX0nT0),
         confirmText: Chunk388032.intl.string(Chunk388032.t.BddRzc),
         confirmButtonColor: Chunk755721.Tt.BRAND,
         onCancel: module,
         onConfirm: module,
-        children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: Chunk120356
         })
@@ -306,7 +306,7 @@ class q extends Chunk73800.PureComponent {
       currentUser: e,
       userTeamsLoading: t
     } = this.props;
-    return (0, Chunk255367.jsx)(Chunk888256.Z, {
+    return (0, Chunk951288.jsx)(Chunk888256.Z, {
       className: Chunk197571.marginTop40,
       currentUser: module,
       disabled: exports,
@@ -315,14 +315,14 @@ class q extends Chunk73800.PureComponent {
     })
   }
   renderSecuritySettingsRedesign() {
-    return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-      children: [this.renderConfirmModals(), (0, Chunk255367.jsx)(Chunk921801.F, {
+    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      children: [this.renderConfirmModals(), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_PROFILE,
         children: this.renderAccountSettings(false)
-      }), (0, Chunk255367.jsx)(Chunk921801.F, {
+      }), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_PASSWORD_AND_AUTHENTICATION,
         children: this.renderSecuritySettings()
-      }), (0, Chunk255367.jsx)(Chunk921801.F, {
+      }), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_REMOVAL,
         children: this.renderAccountRemovalSettings()
       })]
@@ -332,9 +332,9 @@ class q extends Chunk73800.PureComponent {
     let {
       subsection: e
     } = this.props;
-    return (0, Chunk255367.jsx)(Chunk10298.N, {
+    return (0, Chunk951288.jsx)(Chunk10298.N, {
       header: Chunk388032.intl.string(Chunk388032.t["JAIM/v"]),
-      children: (0, Chunk255367.jsx)(Chunk526156.Z, {
+      children: (0, Chunk951288.jsx)(Chunk526156.Z, {
         parentSetting: Chunk726985.s6.ACCOUNT,
         settingsSection: Chunk981631.oAB.ACCOUNT,
         panelClassName: Chunk343396.tabPanel,
@@ -357,7 +357,7 @@ class q extends Chunk73800.PureComponent {
     })
   }
   render() {
-    return this.props.hide ? (0, Chunk255367.jsx)(Chunk497321.Z, {}) : this.renderUnhidden()
+    return this.props.hide ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : this.renderUnhidden()
   }
   handleDisableAccountError(e) {
     if (e.body.code === G.evJ.INVALID_PASSWORD) throw e;
@@ -377,7 +377,7 @@ class q extends Chunk73800.PureComponent {
         userTeams: r
       } = this.props,
       s = Chunk430824.Z.getGuildsArray().filter(e => e.ownerId === n.id);
-    return (null != (e = null == Chunk73800 ? true : Chunk73800.filter(e => e.owner_user_id === n.id)) ? module : []).length > 0 ? void this.setState({
+    return (null != (e = null == Chunk647438 ? true : Chunk647438.filter(e => e.owner_user_id === n.id)) ? module : []).length > 0 ? void this.setState({
       shouldRenderOwnedTeamsModal: true
     }) : Chunk120356.length > 0 ? void this.setState({
       shouldRenderOwnedGuildsModal: true
@@ -417,8 +417,8 @@ let X = () => {
     } = (0, Chunk577275.Z)({
       refreshOnDepChange: true
     });
-  return (0, Chunk255367.jsx)(q, {
-    theme: Chunk73800,
+  return (0, Chunk951288.jsx)(q, {
+    theme: Chunk647438,
     currentUser: module,
     backupCodes: exports,
     hide: require,

@@ -5,8 +5,8 @@ require.d(exports, {
   Uf: () => v,
   ng: () => x
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
@@ -49,7 +49,7 @@ function E() {
       autoTrackExposure: true
     }),
     [t] = (0, Chunk706140.cv)([Chunk704215.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE]);
-  return module.enabled && module.nestedEntry && exports === Chunk704215.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE && (0, Chunk255367.jsx)(Chunk481060.IGR, {
+  return module.enabled && module.nestedEntry && exports === Chunk704215.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE && (0, Chunk951288.jsx)(Chunk481060.IGR, {
     className: Chunk392238.newBadge,
     text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
   })

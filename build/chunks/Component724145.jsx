@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => V
 }), require("./388685.js"), require("./314940.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk278074 = require("./278074.js"),
@@ -38,13 +38,13 @@ var Chunk255367 = require("./255367.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk204089 = require("./204089.js");
-let j = () => (0, Chunk255367.jsx)("div", {
+let j = () => (0, Chunk951288.jsx)("div", {
     className: Chunk204089.editorHeader,
-    children: (0, Chunk255367.jsxs)("div", {
+    children: (0, Chunk951288.jsxs)("div", {
       className: Chunk204089.bannerUpsell,
-      children: [(0, Chunk255367.jsx)(Chunk587446.Z, {
+      children: [(0, Chunk951288.jsx)(Chunk587446.Z, {
         className: Chunk204089.premiumIcon
-      }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+      }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-md/bold",
         color: "always-white",
         children: Chunk388032.intl.string(Chunk388032.t.POSLGR)

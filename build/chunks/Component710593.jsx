@@ -4,8 +4,8 @@
 require.d(exports, {
   M: () => f
 }), require("./35282.js");
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk358085 = require("./358085.js"),
@@ -47,58 +47,58 @@ function u(e) {
   })
 }
 let d = {
-  ctrl: () => (0, Chunk255367.jsx)(u, {
+  ctrl: () => (0, Chunk951288.jsx)(u, {
     macText: "⌃",
     text: "ctrl",
     label: Chunk388032.intl.string(Chunk388032.t.jm6v8v)
   }),
-  cmd: () => (0, Chunk255367.jsx)(u, {
+  cmd: () => (0, Chunk951288.jsx)(u, {
     macText: "⌘",
     text: "cmd",
     label: Chunk388032.intl.string(Chunk388032.t.pYkiQk)
   }),
-  mod: () => (0, Chunk255367.jsx)(u, {
+  mod: () => (0, Chunk951288.jsx)(u, {
     macText: "⌘",
     text: "ctrl",
     label: Chunk388032.intl.string(Chunk388032.t.jm6v8v),
     macLabel: Chunk388032.intl.string(Chunk388032.t.pYkiQk)
   }),
-  alt: () => (0, Chunk255367.jsx)(u, {
+  alt: () => (0, Chunk951288.jsx)(u, {
     macText: "⌥",
     text: "alt",
     label: Chunk388032.intl.string(Chunk388032.t.R2n7d3),
     macLabel: Chunk388032.intl.string(Chunk388032.t.FMYSJS)
   }),
-  shift: () => (0, Chunk255367.jsx)(u, {
+  shift: () => (0, Chunk951288.jsx)(u, {
     macText: "⇧",
     text: Chunk388032.intl.string(Chunk388032.t["L+jWo6"]),
     label: Chunk388032.intl.string(Chunk388032.t["q+/2+f"])
   }),
-  up: () => (0, Chunk255367.jsx)(u, {
+  up: () => (0, Chunk951288.jsx)(u, {
     label: Chunk388032.intl.string(Chunk388032.t.HxzHDQ),
     macText: "▲",
-    children: (0, Chunk255367.jsx)(c, {
+    children: (0, Chunk951288.jsx)(c, {
       direction: "up"
     })
   }),
-  down: () => (0, Chunk255367.jsx)(u, {
+  down: () => (0, Chunk951288.jsx)(u, {
     label: Chunk388032.intl.string(Chunk388032.t["a+iRlJ"]),
     macText: "▼",
-    children: (0, Chunk255367.jsx)(c, {
+    children: (0, Chunk951288.jsx)(c, {
       direction: "down"
     })
   }),
-  left: () => (0, Chunk255367.jsx)(u, {
+  left: () => (0, Chunk951288.jsx)(u, {
     label: Chunk388032.intl.string(Chunk388032.t.xFjIVF),
     macText: "◀",
-    children: (0, Chunk255367.jsx)(c, {
+    children: (0, Chunk951288.jsx)(c, {
       direction: "left"
     })
   }),
-  right: () => (0, Chunk255367.jsx)(u, {
+  right: () => (0, Chunk951288.jsx)(u, {
     label: Chunk388032.intl.string(Chunk388032.t.BT3jf3),
     macText: "▶",
-    children: (0, Chunk255367.jsx)(c, {
+    children: (0, Chunk951288.jsx)(c, {
       direction: "right"
     })
   }),
@@ -106,27 +106,27 @@ let d = {
   pagedown: () => Chunk388032.intl.string(Chunk388032.t.gpSh3d),
   "any-character": () => Chunk388032.intl.string(Chunk388032.t.CkGpcX),
   plus: () => "+",
-  return: () => (0, Chunk255367.jsx)(u, {
+  return: () => (0, Chunk951288.jsx)(u, {
     macText: "⏎",
     text: Chunk388032.intl.string(Chunk388032.t.SUweGx),
     label: Chunk388032.intl.string(Chunk388032.t.yLNalZ),
     macLabel: Chunk388032.intl.string(Chunk388032.t.V7nPj4)
   }),
-  enter: () => (0, Chunk255367.jsx)(u, {
+  enter: () => (0, Chunk951288.jsx)(u, {
     macText: "⏎",
     text: Chunk388032.intl.string(Chunk388032.t.SUweGx),
     label: Chunk388032.intl.string(Chunk388032.t.yLNalZ),
     macLabel: Chunk388032.intl.string(Chunk388032.t.V7nPj4)
   }),
-  escape: () => (0, Chunk255367.jsx)(u, {
+  escape: () => (0, Chunk951288.jsx)(u, {
     text: Chunk388032.intl.string(Chunk388032.t.cQmsQE),
     label: Chunk388032.intl.string(Chunk388032.t["2qsw5+"])
   }),
-  esc: () => (0, Chunk255367.jsx)(u, {
+  esc: () => (0, Chunk951288.jsx)(u, {
     text: Chunk388032.intl.string(Chunk388032.t.cQmsQE),
     label: Chunk388032.intl.string(Chunk388032.t["2qsw5+"])
   }),
-  backspace: () => (0, Chunk255367.jsx)(u, {
+  backspace: () => (0, Chunk951288.jsx)(u, {
     macText: "⌫",
     text: Chunk388032.intl.string(Chunk388032.t["L+36+v"]),
     label: Chunk388032.intl.string(Chunk388032.t["9c/Ikp"]),

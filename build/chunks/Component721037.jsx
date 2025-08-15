@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => G
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk519938 = require("./519938.js"),
   Chunk317381 = require("./317381.js"),
@@ -54,7 +54,7 @@ let M = {
     maxWidth: Chunk354459.$i[Chunk354459.cL.VIDEO]
   },
   j = [];
-class U extends Chunk73800.PureComponent {
+class U extends Chunk647438.PureComponent {
   render() {
     let {
       selectedPIPWindow: e,
@@ -73,13 +73,13 @@ class U extends Chunk73800.PureComponent {
       chatOpen: p,
       callChatSidebarWidth: h
     } = this.props, E = document.body.style.getPropertyValue("--custom-guild-sidebar-width"), b = "" !== Chunk238246 ? parseInt(Chunk238246, 10) : Chunk981631.PrS, y = Chunk866885.width - Chunk928518 - (Chunk591472 ? Chunk857096 : 0), O = null != Chunk950796, v = !Chunk358221 && Chunk210887 && Chunk591472 && Chunk819439 < Chunk354459.oo;
-    return (0, Chunk255367.jsxs)(Chunk522501._X, {
-      children: [(0, Chunk255367.jsx)(Chunk241915.Z, {
+    return (0, Chunk951288.jsxs)(Chunk522501._X, {
+      children: [(0, Chunk951288.jsx)(Chunk241915.Z, {
         pictureInPictureComponents: M,
         selectedPIPWindow: module,
         pipWindows: exports,
         pipWidth: require,
-        maxX: Chunk73800,
+        maxX: Chunk647438,
         maxY: Chunk442837,
         dockedRect: Chunk317381,
         theme: Chunk519938,
@@ -89,7 +89,7 @@ class U extends Chunk73800.PureComponent {
         roundCorners: Chunk16609,
         resizeConfig: k,
         getDockedRectPositionY: Chunk917107
-      }), (0, Chunk255367.jsx)(Chunk522501.mK, {
+      }), (0, Chunk951288.jsx)(Chunk522501.mK, {
         className: Chunk740492 ? Chunk639965.belowSidebar : true
       })]
     })

@@ -3,8 +3,8 @@
 require.d(exports, {
   I: () => f
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk168107 = require("./168107.jsx"),
   Chunk480916 = require("./480916.js"),
   Chunk81643 = require("./81643.js"),
@@ -18,7 +18,7 @@ var Chunk168107 = require("./168107.jsx"),
 
 function g() {
   let e = (0, Chunk925513.v6)();
-  return (0, Chunk255367.jsx)(Chunk907995.f, {
+  return (0, Chunk951288.jsx)(Chunk907995.f, {
     label: Chunk388032.t.EUo0ys,
     labelHook: () => {
       window.open(Chunk63063.Z.getArticleURL(module), "_blank")
@@ -28,7 +28,7 @@ function g() {
 }
 
 function h() {
-  return (0, Chunk255367.jsx)(Chunk907995.f, {
+  return (0, Chunk951288.jsx)(Chunk907995.f, {
     label: Chunk388032.t.OX4ybm,
     labelHook: () => {
       Chunk168107.Z.showAgeVerificationGetStartedModal(Chunk480916.cU.CONTENT_AND_SOCIAL_NOTICE)
@@ -41,5 +41,5 @@ function f() {
   var e;
   let t = null == (e = (0, Chunk880257.Z)()) || module,
     n = (0, Chunk81643.l6)();
-  return (0, Chunk128064.pY)("ContentAndSocialNotice") && !require ? (0, Chunk255367.jsx)(h, {}) : exports ? null : (0, Chunk255367.jsx)(g, {})
+  return (0, Chunk128064.pY)("ContentAndSocialNotice") && !require ? (0, Chunk951288.jsx)(h, {}) : exports ? null : (0, Chunk951288.jsx)(g, {})
 }

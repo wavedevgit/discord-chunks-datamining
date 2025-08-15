@@ -3,8 +3,8 @@
 require.d(exports, {
   w: () => E
 }), require("./388685.js"), require("./781311.js"), require("./953529.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk852860 = require("./852860.jsx"),
@@ -230,18 +230,18 @@ function E() {
       settingsGuild: module,
       settingsMetadata: exports,
       originalGuild: require,
-      guildProfile: Chunk255367
+      guildProfile: Chunk951288
     }
   });
-  return null == module || null == require ? null : module.joinType === Chunk384632.A.DISCOVERABLE && module.settingsView === Chunk386885.U.INELIGIBLE ? (0, Chunk255367.jsx)(Chunk852860.Z, {
+  return null == module || null == require ? null : module.joinType === Chunk384632.A.DISCOVERABLE && module.settingsView === Chunk386885.U.INELIGIBLE ? (0, Chunk951288.jsx)(Chunk852860.Z, {
     message: Chunk388032.intl.string(Chunk388032.t.TEXwRk),
     onReset: () => Chunk434404.Z.init(require.id, Chunk981631.pNK.ACCESS)
-  }) : (0, Chunk255367.jsx)(I, {
+  }) : (0, Chunk951288.jsx)(I, {
     pendingState: module,
     dirtyState: exports,
     originalGuild: Chunk481060,
     settingsGuild: require,
-    settingsMetadata: Chunk73800,
+    settingsMetadata: Chunk647438,
     settingsProfile: Chunk881052
   })
 }

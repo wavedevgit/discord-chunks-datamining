@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => h
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -18,7 +18,7 @@ var Chunk255367 = require("./255367.js"),
 let h = () => {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = Chunk73800.useRef(null), {
+  } = (0, Chunk906732.ZP)(Chunk100527.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = Chunk647438.useRef(null), {
     asset: n,
     popoutAsset: h,
     title: f,
@@ -26,40 +26,40 @@ let h = () => {
     version: x,
     revertTextColor: _
   } = (0, Chunk196033.W)();
-  return Chunk73800.useEffect(() => {
+  return Chunk647438.useEffect(() => {
     Chunk626135.default.track(Chunk981631.rMx.PREMIUM_UPSELL_VIEWED, {
       type: Chunk474936.cd.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
       location_stack: module,
       version: x
     })
-  }, [module, x]), (0, Chunk255367.jsxs)("div", {
+  }, [module, x]), (0, Chunk951288.jsxs)("div", {
     ref: exports,
     className: Chunk227919.container,
     style: {
       backgroundImage: "url(".concat(require, ")")
     },
-    children: [(0, Chunk255367.jsx)("div", {
+    children: [(0, Chunk951288.jsx)("div", {
       className: Chunk227919.artContainer,
       "aria-hidden": true,
       role: "presentation",
-      children: (0, Chunk255367.jsx)("img", {
+      children: (0, Chunk951288.jsx)("img", {
         src: h,
         className: Chunk227919.art,
         alt: ""
       })
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk227919.mainColumn,
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/extrabold",
         color: _ ? "redesign-button-overlay-text" : "currentColor",
         className: Chunk227919.title,
         children: f
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: _ ? "redesign-button-overlay-text" : "currentColor",
         children: b
       })]
-    }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+    }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
       onClick: () => {
         (0, Chunk335131.mK)({
           analyticsLocations: module,

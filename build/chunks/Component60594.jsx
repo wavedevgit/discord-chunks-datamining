@@ -3,13 +3,13 @@
 require.d(exports, {
   default: () => ea
 }), require("./388685.js"), require("./539854.js"), require("./35282.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
-  Chunk717976 = require("./717976.js"),
+  Chunk815061 = require("./815061.js"),
   Chunk209739 = require("./209739.js"),
   u = require.n(Chunk209739),
   Chunk442837 = require("./442837.js"),
@@ -228,7 +228,7 @@ function eo(e) {
       (0, W.t)(), (0, W.T)(null != e ? e : e$)
     }, [e$]);
 
-  function e7(e) {
+  function e8(e) {
     if (e.preventDefault(), 1 === eT) return e3();
     if (2 === eT) return eE(3);
     if (null != e$) return eE(1);
@@ -247,10 +247,10 @@ function eo(e) {
       })
     } else e2()
   }
-  let e8 = i.useCallback(e => {
+  let e4 = i.useCallback(e => {
       eL(e), null != e && (ey && (null == e ? true : e.id.startsWith("camera:")) !== true ? e1(e.id.split(":")[1]) : e1(true), eE(3), eR(true))
     }, [ey]),
-    e4 = i.useCallback(e => {
+    e7 = i.useCallback(e => {
       eq(e);
       eE(B ? 2 : 3)
     }, [B]),
@@ -379,7 +379,7 @@ function eo(e) {
         children: () => {
           var e;
           return (0, r.jsxs)("form", {
-            onSubmit: e7,
+            onSubmit: e8,
             ref: eh,
             children: [(0, r.jsxs)(h.MyZ, {
               springConfig: el(ei({}, c.config.stiff), {
@@ -392,7 +392,7 @@ function eo(e) {
                 children: (0, r.jsx)("div", {
                   className: en.modalSize,
                   children: (0, r.jsx)(V.Z, {
-                    onSelectGuild: e4
+                    onSelectGuild: e7
                   })
                 })
               }), (0, r.jsx)(h.Mi4, {
@@ -400,10 +400,10 @@ function eo(e) {
                 children: (0, r.jsx)("div", {
                   className: en.modalSize,
                   children: ey ? (0, r.jsx)(Y.se, {
-                    onSourceSelect: e8
+                    onSourceSelect: e4
                   }) : (0, r.jsx)(Y.oA, {
                     selectedSource: ek,
-                    onChangeSelectedSource: e8
+                    onChangeSelectedSource: e4
                   })
                 })
               }), (0, r.jsx)(h.Mi4, {
@@ -424,7 +424,7 @@ function eo(e) {
                     onChangeSelectedResolution: e => e5(eU, e, eH),
                     onChangeSelectedPreset: e => e5(e, eW, eH),
                     onChangeSelectedChannelId: eM,
-                    onChangeSelectedSource: e8,
+                    onChangeSelectedSource: e4,
                     onChangeSource: () => tt(),
                     onChangeAudioDevice: e => eB(e),
                     onChangeGuild: () => eE(0),

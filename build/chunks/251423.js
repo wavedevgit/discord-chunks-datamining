@@ -3,7 +3,7 @@
 require.d(exports, {
   L: () => o
 });
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk480387 = require("./480387.js"),
@@ -14,7 +14,7 @@ function o() {
     isLoading: Chunk726745.Z.getIsValidatingUsers(),
     multiAccountUsers: Chunk726745.Z.getUsers()
   }));
-  return Chunk73800.useEffect(() => {
+  return Chunk647438.useEffect(() => {
     Chunk570140.Z.wait(() => {
       Chunk480387.HJ()
     })

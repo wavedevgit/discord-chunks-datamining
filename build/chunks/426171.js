@@ -4,10 +4,10 @@
 require.d(exports, {
   Kp: () => E,
   u9: () => C,
-  xV: () => S
+  xV: () => y
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./388685.js");
-var Chunk73800 = require("./73800.js"),
-  Chunk114858 = require("./114858.js"),
+var Chunk647438 = require("./647438.js"),
+  Chunk843611 = require("./843611.js"),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk100527 = require("./100527.js"),
@@ -35,20 +35,20 @@ let _ = "".concat("#").concat("itemSkuId", "="),
   E = () => {
     let e = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.getLayers().includes(Chunk981631.S9g.COLLECTIBLES_SHOP)),
       t = (0, Chunk258939.R)(),
-      r = Chunk73800.useRef(null),
-      i = (0, Chunk114858.TH)(),
+      r = Chunk647438.useRef(null),
+      i = (0, Chunk843611.TH)(),
       _ = Chunk607070.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP ? Chunk100527.Z.HOME_PAGE_SHOP_TAB : Chunk607070.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? Chunk100527.Z.COLLECTIBLES_SHOP_FULLSCREEN : Chunk100527.Z.COLLECTIBLES_SHOP,
       {
         analyticsLocations: O
       } = (0, Chunk906732.ZP)(_),
       C = (0, Chunk410127.Z)();
-    Chunk73800.useEffect(() => {
+    Chunk647438.useEffect(() => {
       if (module) return;
       let t = v.exec(Chunk607070.hash);
       null != exports ? require.current = exports[1] : require.current = null
     }, [C, module, Chunk607070.hash]);
     let E = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
-    Chunk73800.useEffect(() => {
+    Chunk647438.useEffect(() => {
       if (exports) return;
       let n = null;
       if (null != (n = module ? E : require.current)) {
@@ -62,7 +62,7 @@ let _ = "".concat("#").concat("itemSkuId", "="),
             } = e, a = u.Z.getProduct(t), i = u.Z.getCategoryForProduct(t);
             if (null != a && null != i) {
               let e = a,
-                s = (0, h.oQ)({
+                s = (0, m.oQ)({
                   product: a
                 }),
                 c = document.getElementById("shop-item-".concat(e.skuId));
@@ -84,7 +84,7 @@ let _ = "".concat("#").concat("itemSkuId", "="),
               })
             }
           })({
-            productSkuId: Chunk73800,
+            productSkuId: Chunk647438,
             analyticsLocations: O,
             analyticsSource: _,
             tab: C
@@ -94,7 +94,7 @@ let _ = "".concat("#").concat("itemSkuId", "="),
       }
     }, [module, O, _, exports, E, C])
   },
-  S = e => {
+  y = e => {
     let t = n.useRef({}),
       r = (0, a.e7)([i.Z], () => i.Z.useReducedMotion),
       l = (0, a.e7)([u.Z], () => u.Z.isFetchingCategories),

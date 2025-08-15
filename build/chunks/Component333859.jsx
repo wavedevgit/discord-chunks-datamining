@@ -3,8 +3,8 @@
 require.d(exports, {
   c: () => C
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -38,20 +38,20 @@ let C = () => {
   } = Chunk803038.Mc.useExperiment({
     location: "UserSettingsAppearanceInAppIcon"
   });
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk980676.selectionGroup,
-    children: [(0, Chunk255367.jsx)(Chunk539873.Z, {
+    children: [(0, Chunk951288.jsx)(Chunk539873.Z, {
       disabled: exports,
       renderCTAButtons: () => {
         let e = require ? Chunk980676.tryItOutButtonsV2 : Chunk980676.tryItOutButtons;
-        return (0, Chunk255367.jsxs)("div", {
+        return (0, Chunk951288.jsxs)("div", {
           className: module,
-          children: [(0, Chunk255367.jsx)(Chunk755721.zx, {
+          children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
             size: Chunk755721.zx.Sizes.MEDIUM,
             color: exports ? Chunk755721.zx.Colors.PRIMARY : Chunk755721.zx.Colors.BRAND,
             onClick: () => void((0, Chunk550385.XO)(Chunk550385.wh.APP_ICON), (0, Chunk37234.xf)()),
             children: Chunk388032.intl.string(Chunk388032.t["hb/wEx"])
-          }), exports ? require ? (0, Chunk255367.jsx)(Chunk638212.Z, {
+          }), exports ? require ? (0, Chunk951288.jsx)(Chunk638212.Z, {
             subscriptionTier: Chunk474936.Si.TIER_2,
             defaultTextOverride: Chunk388032.intl.string(Chunk388032.t.mr4K7O),
             premiumModalAnalyticsLocation: {
@@ -59,7 +59,7 @@ let C = () => {
               objectType: Chunk981631.Qqv.BUY
             },
             fullWidth: true
-          }) : (0, Chunk255367.jsx)(Chunk767714.Z, {
+          }) : (0, Chunk951288.jsx)(Chunk767714.Z, {
             className: Chunk980676.tryItOutButton,
             showGradient: false,
             subscriptionTier: Chunk474936.Si.TIER_2,
@@ -69,7 +69,7 @@ let C = () => {
           }) : null]
         })
       }
-    }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
+    }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
       className: Chunk980676.divider
     })]
   })

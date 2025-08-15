@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => ee
 }), require("./388685.js"), require("./953529.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -230,7 +230,7 @@ function $(e) {
       productId: er
     }, e)), e3)
   }, [$, e3, er]);
-  let e6 = async e => {
+  let e9 = async e => {
     let t = (0, I.pM)({
       newRoleParams: eL
     });
@@ -252,7 +252,7 @@ function $(e) {
   }, [eS, $, eo]), r.useEffect(() => {
     eJ && eH(true)
   }, [eJ]);
-  let e9 = r.useRef(null);
+  let e6 = r.useRef(null);
   return (0, n.jsxs)(g.Y0X, {
     transitionState: eA,
     size: g.CgR.DYNAMIC,
@@ -284,7 +284,7 @@ function $(e) {
       children: [(0, n.jsx)(g.zJl, {
         children: (0, n.jsxs)("div", {
           className: B.productFieldsSection,
-          ref: e9,
+          ref: e6,
           children: [(0, n.jsx)(g.xJW, {
             title: k.intl.string(k.t.Hsk7xc),
             tag: "label",
@@ -358,7 +358,7 @@ function $(e) {
             children: (0, n.jsx)(K.s, {
               onFileAdded: () => {
                 var e;
-                null == (e = e9.current) || e.scrollIntoView({
+                null == (e = e6.current) || e.scrollIntoView({
                   behavior: "smooth",
                   block: "end"
                 })
@@ -383,7 +383,7 @@ function $(e) {
             disabledTooltip: ei ? k.intl.string(k.t["0NQ00t"]) : k.intl.string(k.t["Ax89/f"]),
             published: ei,
             onClick: () => {
-              o()(e0, "Attempting to publish/unpublish when not allowed"), eH(ei ? "unpublish" : "publish"), e6(E(D({}, eM), {
+              o()(e0, "Attempting to publish/unpublish when not allowed"), eH(ei ? "unpublish" : "publish"), e9(E(D({}, eM), {
                 published: !ei
               }))
             },
@@ -464,7 +464,7 @@ function $(e) {
             disabled: !e$,
             loading: ew,
             onClick: () => {
-              o()(e$, "cannot save changes for published product without adding all fields"), eH("update_publish"), e6(eM)
+              o()(e$, "cannot save changes for published product without adding all fields"), eH("update_publish"), e9(eM)
             }
           }) : (0, n.jsx)(g.zxk, {
             variant: "secondary",
@@ -472,7 +472,7 @@ function $(e) {
             disabled: !e_,
             loading: ew,
             onClick: () => {
-              o()(e_, "cannot save changes without name or price tier"), eH("draft"), e6(eM)
+              o()(e_, "cannot save changes without name or price tier"), eH("draft"), e9(eM)
             }
           })
         })]

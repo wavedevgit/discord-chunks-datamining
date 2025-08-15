@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => m
 });
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk374470 = require("./374470.js"),
   Chunk442837 = require("./442837.js"),
   Chunk260300 = require("./260300.js"),
@@ -33,7 +33,7 @@ function h(e) {
   }
   return e
 }
-class f extends(r = Chunk73800.Component) {
+class f extends(r = Chunk647438.Component) {
   componentDidMount() {
     let {
       visible: e,
@@ -104,15 +104,15 @@ class f extends(r = Chunk73800.Component) {
       position: o,
       autoInvert: s
     } = this.props, c = Chunk10401.Z.getData()[exports];
-    return null != module && null != Chunk451478 ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-      children: [require, r && (0, Chunk255367.jsx)(Chunk5560.V, h({
+    return null != module && null != Chunk451478 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      children: [require, r && (0, Chunk951288.jsx)(Chunk5560.V, h({
         autoInvert: Chunk260300,
         position: Chunk442837,
         tutorialId: exports,
         tutorialDefinition: Chunk451478,
         focused: Chunk374470
       }, module))]
-    }) : Chunk73800.Children.only(require)
+    }) : Chunk647438.Children.only(require)
   }
 }
 

@@ -3,15 +3,15 @@
 require.d(exports, {
   Z: () => l
 }), require("./388685.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk393238 = require("./393238.js");
 
 function l() {
   let {
     ref: e,
     width: t
-  } = (0, Chunk393238.ZP)(), [n, l] = Chunk73800.useState();
-  return Chunk73800.useEffect(() => {
+  } = (0, Chunk393238.ZP)(), [n, l] = Chunk647438.useState();
+  return Chunk647438.useEffect(() => {
     null == require && null != exports && l(exports)
   }, [require, exports]), [module, require]
 }

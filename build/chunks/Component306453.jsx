@@ -4,8 +4,8 @@ require.d(exports, {
   D: () => f,
   Z: () => g
 }), require("./953529.js");
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -19,11 +19,11 @@ var Chunk120356 = require("./120356.js"),
   Chunk197571 = require("./197571.js");
 
 function h() {
-  return (0, Chunk255367.jsx)(Chunk297700.Z, {
+  return (0, Chunk951288.jsx)(Chunk297700.Z, {
     className: Chunk930029.verifiedIcon,
-    children: (0, Chunk255367.jsx)("div", {
+    children: (0, Chunk951288.jsx)("div", {
       className: Chunk930029.verifiedCheckContainer,
-      children: (0, Chunk255367.jsx)(Chunk481060.kmB, {
+      children: (0, Chunk951288.jsx)(Chunk481060.kmB, {
         size: "xs",
         color: "currentColor",
         className: Chunk930029.verifiedCheck

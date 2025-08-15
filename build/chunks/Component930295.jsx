@@ -5,11 +5,11 @@ require.d(exports, {
   F: () => S,
   H: () => N
 }), require("./953529.js"), require("./388685.js"), require("./415506.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk97613 = require("./97613.js"),
   s = require.n(Chunk97613),
-  Chunk867309 = require("./867309.js"),
+  Chunk603113 = require("./603113.js"),
   Chunk374470 = require("./374470.js"),
   Chunk846519 = require("./846519.js"),
   Chunk302901 = require("./302901.jsx"),
@@ -63,7 +63,7 @@ function T(e, t) {
 }
 let S = Symbol("POPOUT_PREVENT_CLOSE"),
   A = new Set(["Spacebar", " ", "Enter"]);
-class N extends(r = Chunk73800.Component) {
+class N extends(r = Chunk647438.Component) {
   shouldShowPopout(e, t) {
     return null != e.shouldShow ? e.shouldShow : t.shouldShowPopout
   }
@@ -100,7 +100,7 @@ class N extends(r = Chunk73800.Component) {
   unsubscribe() {
     var e, t, n, r;
     let i = this.domElementRef.current;
-    null != Chunk255367 && (null == (t = Chunk255367.ownerDocument) || exports.removeEventListener("mousedown", this.handleDocumentMouseDown, true), null == (n = Chunk255367.ownerDocument) || require.removeEventListener("mouseup", this.handleDocumentMouseUp, true), null == (r = Chunk255367.ownerDocument) || r.removeEventListener("scroll", this.handleScroll, true)), this.context.windowDispatch.unsubscribe(Chunk981631.CkL.POPOUT_CLOSE, this.close), this.context.windowDispatch.unsubscribe(Chunk981631.CkL.POPOUT_CLOSE_AFTER_MODALS, this.close), null == (e = this.resizeObserver) || module.disconnect()
+    null != Chunk951288 && (null == (t = Chunk951288.ownerDocument) || exports.removeEventListener("mousedown", this.handleDocumentMouseDown, true), null == (n = Chunk951288.ownerDocument) || require.removeEventListener("mouseup", this.handleDocumentMouseUp, true), null == (r = Chunk951288.ownerDocument) || r.removeEventListener("scroll", this.handleScroll, true)), this.context.windowDispatch.unsubscribe(Chunk981631.CkL.POPOUT_CLOSE, this.close), this.context.windowDispatch.unsubscribe(Chunk981631.CkL.POPOUT_CLOSE_AFTER_MODALS, this.close), null == (e = this.resizeObserver) || module.disconnect()
   }
   componentWillUnmount() {
     this.unsubscribe(), this.domElementRef.current = null, this.loadingTimeout.stop(), this.validClickTimeout.stop()
@@ -110,7 +110,7 @@ class N extends(r = Chunk73800.Component) {
       children: e,
       useMouseEnter: t
     } = this.props, n = this.shouldShowPopout(this.props, this.state);
-    return (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
+    return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [module(T(v({
         onMouseDown: this.handlePreload
       }, exports ? {
@@ -123,7 +123,7 @@ class N extends(r = Chunk73800.Component) {
       }), {
         isShown: require,
         position: this.state.renderedPosition
-      }), (0, Chunk255367.jsx)(Chunk481060.y5t, {
+      }), (0, Chunk951288.jsx)(Chunk481060.y5t, {
         forceLevel: 2,
         children: this.renderLayer()
       })]
@@ -148,9 +148,9 @@ class N extends(r = Chunk73800.Component) {
       isLoading: h,
       shouldShowLoadingState: g
     } = this.state;
-    return Chunk40851 && !Chunk574254 ? null : (0, Chunk255367.jsx)(Chunk302901.mh, {
+    return Chunk40851 && !Chunk574254 ? null : (0, Chunk951288.jsx)(Chunk302901.mh, {
       layerContext: null != Chunk846519 ? Chunk846519 : Chunk314910.nz,
-      children: (0, Chunk255367.jsx)(Chunk539907.j, {
+      children: (0, Chunk951288.jsx)(Chunk539907.j, {
         ref: this.layerRef,
         onMount: this.handlePopoutShow,
         onUnmount: this.handlePopoutHide,
@@ -160,10 +160,10 @@ class N extends(r = Chunk73800.Component) {
         align: exports,
         nudgeAlignIntoViewport: require,
         useRawTargetDimensions: r,
-        spacing: Chunk73800,
+        spacing: Chunk647438,
         autoInvert: Chunk97613,
         fixed: s,
-        positionKey: null != Chunk867309 ? Chunk867309 : String(Chunk481060),
+        positionKey: null != Chunk603113 ? Chunk603113 : String(Chunk481060),
         disablePointerEvents: Chunk374470,
         onPositionChange: this.handlePopoutPositionChange,
         clickTrap: Chunk952265,
@@ -283,6 +283,6 @@ O(N, "defaultProps", {
   autoInvert: false,
   nudgeAlignIntoViewport: false,
   spacing: 0,
-  loadingComponent: (0, Chunk255367.jsx)(Chunk920676.x, {}),
+  loadingComponent: (0, Chunk951288.jsx)(Chunk920676.x, {}),
   closeOnClickOutside: true
 }), O(N, "contextType", Chunk40851.ZP)

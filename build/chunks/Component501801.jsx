@@ -5,8 +5,8 @@ require.d(exports, {
   tP: () => m,
   xO: () => O
 }), require("./539854.js"), require("./953529.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -58,14 +58,14 @@ function j(A, e) {
     }
   }, A)
 }
-class V extends Chunk73800.PureComponent {
+class V extends Chunk647438.PureComponent {
   render() {
     let {
       actionType: A,
       targetType: e,
       action: t,
       themeOverride: r
-    } = this.props, l = null != Chunk73800 ? Chunk404211["themeOverride".concat((0, Chunk624138.De)(Chunk73800))] : null, a = i()(Chunk404211.icon, Q[module], require === Chunk981631.rsA.MESSAGE_DELETE ? Chunk404211.targetMessage : require === Chunk981631.rsA.AUTO_MODERATION_BLOCK_MESSAGE || require === Chunk981631.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || require === Chunk981631.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || require === Chunk981631.rsA.AUTO_MODERATION_QUARANTINE_USER ? Chunk404211.autoModerationBlockMessage : ({
+    } = this.props, l = null != Chunk647438 ? Chunk404211["themeOverride".concat((0, Chunk624138.De)(Chunk647438))] : null, a = i()(Chunk404211.icon, Q[module], require === Chunk981631.rsA.MESSAGE_DELETE ? Chunk404211.targetMessage : require === Chunk981631.rsA.AUTO_MODERATION_BLOCK_MESSAGE || require === Chunk981631.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || require === Chunk981631.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || require === Chunk981631.rsA.AUTO_MODERATION_QUARANTINE_USER ? Chunk404211.autoModerationBlockMessage : ({
       [Chunk981631.KFR.ALL]: Chunk404211.targetAll,
       [Chunk981631.KFR.GUILD]: Chunk404211.targetGuild,
       [Chunk981631.KFR.CHANNEL]: Chunk404211.targetChannel,
@@ -92,7 +92,7 @@ class V extends Chunk73800.PureComponent {
       [Chunk981631.KFR.GUILD_MEMBER_VERIFICATION]: Chunk404211.targetMember,
       [Chunk981631.KFR.GUILD_PROFILE]: Chunk404211.targetGuild
     })[exports], Chunk120356);
-    return (0, Chunk255367.jsx)("div", {
+    return (0, Chunk951288.jsx)("div", {
       className: Chunk392711
     })
   }

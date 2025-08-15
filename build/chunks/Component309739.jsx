@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => M
 }), require("./388685.js"), require("./781311.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk658722 = require("./658722.js"),
@@ -96,40 +96,40 @@ function Z() {
       value: Chunk524437.GI.ACTIVITY_STATUS_OFF,
       label: Chunk388032.intl.string(Chunk388032.t.MIgNPD)
     }];
-  return (0, Chunk255367.jsx)(Chunk921801.F, {
+  return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_STATUS,
-    children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-      children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+    children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
         tag: Chunk481060.RB0.H5,
         className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t["8ka8lp"])
-      }), (0, Chunk255367.jsx)(Chunk481060.j7V, {
+      }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: module,
         onChange: e => N.G6.updateSetting(e),
-        note: Chunk73800,
+        note: Chunk647438,
         children: Chunk388032.intl.string(Chunk388032.t["4q/Ewc"])
-      }), require ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-        children: [(0, Chunk255367.jsxs)(Chunk481060.xJW, {
+      }), require ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        children: [(0, Chunk951288.jsxs)(Chunk481060.xJW, {
           tag: Chunk481060.RB0.H3,
           title: Chunk388032.intl.string(Chunk388032.t.ffGYGx),
-          children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
             color: "header-secondary",
             className: Chunk197571.marginBottom8,
             children: Chunk388032.intl.format(Chunk388032.t.aUxRra, {
               helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.ACTIVITY_STATUS_SETTINGS)
             })
-          }), (0, Chunk255367.jsx)(Chunk481060.q4e, {
+          }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
             options: Chunk120356,
             value: exports,
             onChange: e => {
               N.no.updateSetting(e), D(e !== d.GI.ACTIVITY_STATUS_OFF)
             }
           })]
-        }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
+        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
           className: a()(Chunk197571.marginBottom20, Chunk197571.marginTop20)
         })]
-      }) : (0, Chunk255367.jsx)(Chunk481060.j7V, {
+      }) : (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: exports === Chunk524437.GI.ACTIVITY_STATUS_OFF,
         note: Chunk388032.intl.format(Chunk388032.t["+5/xu7"], {
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.ACTIVITY_STATUS_SETTINGS)
@@ -147,20 +147,20 @@ function Z() {
 function w() {
   let e = Chunk695346.cP.useSetting(),
     t = Chunk695346.Ou.useSetting();
-  return (0, Chunk255367.jsx)(Chunk921801.F, {
+  return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
-    children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+    children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       className: Chunk197571.marginBottom40,
-      children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
         tag: Chunk481060.RB0.H5,
         className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.VOszPD)
-      }), (0, Chunk255367.jsx)(Chunk481060.j7V, {
+      }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: module,
         note: Chunk388032.intl.string(Chunk388032.t.Hdh7sb),
         onChange: e => N.cP.updateSetting(e),
         children: Chunk388032.intl.string(Chunk388032.t.WEWQQk)
-      }), (0, Chunk255367.jsx)(Chunk481060.j7V, {
+      }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: exports,
         note: Chunk388032.intl.string(Chunk388032.t.Czr3Bg),
         onChange: e => N.Ou.updateSetting(e),
@@ -171,11 +171,11 @@ function w() {
 }
 
 function k() {
-  return (0, Chunk255367.jsx)(Chunk921801.F, {
+  return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_TOS,
-    children: (0, Chunk255367.jsx)(Chunk481060.hjN, {
+    children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
       className: Chunk197571.marginBottom40,
-      children: (0, Chunk255367.jsx)(Chunk481060.ToO, {
+      children: (0, Chunk951288.jsx)(Chunk481060.ToO, {
         type: Chunk481060.ToO.Types.PRIMARY,
         body: Chunk388032.intl.format(Chunk388032.t.xvCsx8, {
           termsLink: Chunk981631.EYA.TERMS,
@@ -242,21 +242,21 @@ function L(e) {
 
 function B() {
   let e = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
-    t = Chunk73800.useMemo(() => module.filter(e => f.Z.isSupported(e.type) && y.vbS.has(e.type)), [module]),
-    [n, s] = Chunk73800.useState(""),
-    a = Chunk73800.useMemo(() => {
+    t = Chunk647438.useMemo(() => module.filter(e => f.Z.isSupported(e.type) && y.vbS.has(e.type)), [module]),
+    [n, s] = Chunk647438.useState(""),
+    a = Chunk647438.useMemo(() => {
       let e = require.trim().toLowerCase();
       return "" === module ? exports : exports.filter(t => o()(e, f.Z.get(t.type).name.toLowerCase()))
     }, [exports, require]);
-  return 0 === exports.length ? null : (0, Chunk255367.jsx)(Chunk921801.F, {
+  return 0 === exports.length ? null : (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY,
-    children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+    children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       className: Chunk197571.marginBottom40,
-      children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
         tag: Chunk481060.RB0.H5,
         className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t["4F2KoK"])
-      }), (0, Chunk255367.jsx)(Chunk755721.Is, {
+      }), (0, Chunk951288.jsx)(Chunk755721.Is, {
         className: Chunk85240.searchInput,
         value: require,
         onChange: Chunk120356,

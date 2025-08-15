@@ -4,8 +4,8 @@ require.d(exports, {
   g: () => L,
   i: () => w
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk780384 = require("./780384.js"),
@@ -50,40 +50,40 @@ let Z = () => {
     } = Chunk803038.Mc.useExperiment({
       location: "UserSettingsAppearanceClientThemes"
     });
-    Chunk73800.useEffect(() => {
+    Chunk647438.useEffect(() => {
       Chunk704215 && Chunk626135.default.track(Chunk981631.rMx.PREMIUM_UPSELL_VIEWED, {
         type: Chunk474936.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
         location_stack: require
       })
     }, [Chunk704215, require]);
-    let x = Chunk780384 && Chunk704215 && (0, Chunk255367.jsxs)("div", {
-        children: [(0, Chunk255367.jsx)(Chunk755721.zx, {
+    let x = Chunk780384 && Chunk704215 && (0, Chunk951288.jsxs)("div", {
+        children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
           className: Chunk505575.previewThemeButtonWide,
           color: Chunk755721.zx.Colors.PRIMARY,
           onClick: () => Z(),
           children: Chunk388032.intl.string(Chunk388032.t["E+COuL"])
-        }), (0, Chunk255367.jsx)("div", {
+        }), (0, Chunk951288.jsx)("div", {
           className: Chunk505575.premiumTier2Divider
-        }), (0, Chunk255367.jsx)(Chunk165583.ZP, {
+        }), (0, Chunk951288.jsx)(Chunk165583.ZP, {
           type: Chunk474936.cd.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
           subscriptionTier: Chunk474936.Si.TIER_2
         })]
       }),
-      _ = (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-        children: [(0, Chunk255367.jsx)(Chunk705262.ZP.Gradient, {
+      _ = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        children: [(0, Chunk951288.jsx)(Chunk705262.ZP.Gradient, {
           disabled: !Chunk607070 && Chunk704215,
           renderCTAButtons: () => {
             if (!Chunk704215 || Chunk780384) return null;
             let e = Chunk857595 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.bkQ4bG, {
               percent: null == Chunk37234 ? true : Chunk37234.discount.amount
             }) : Chunk388032.intl.string(Chunk388032.t.mr4K7O);
-            return Chunk607070 ? (0, Chunk255367.jsxs)("div", {
+            return Chunk607070 ? (0, Chunk951288.jsxs)("div", {
               className: Chunk505575.tryItOutButtonsV2,
-              children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+              children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
                 variant: "secondary",
                 text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
                 onClick: () => Z()
-              }), (0, Chunk255367.jsx)(Chunk638212.Z, {
+              }), (0, Chunk951288.jsx)(Chunk638212.Z, {
                 subscriptionTier: Chunk474936.Si.TIER_2,
                 defaultTextOverride: module,
                 premiumModalAnalyticsLocation: {
@@ -92,13 +92,13 @@ let Z = () => {
                 },
                 fullWidth: true
               })]
-            }) : (0, Chunk255367.jsxs)("div", {
+            }) : (0, Chunk951288.jsxs)("div", {
               className: Chunk505575.tryItOutButtons,
-              children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+              children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
                 variant: "secondary",
                 text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
                 onClick: () => Z()
-              }), (0, Chunk255367.jsx)(Chunk767714.Z, {
+              }), (0, Chunk951288.jsx)(Chunk767714.Z, {
                 showGradient: false,
                 subscriptionTier: Chunk474936.Si.TIER_2,
                 textOptions: {
@@ -110,18 +110,18 @@ let Z = () => {
           }
         }), Chunk550385]
       });
-    return (0, Chunk255367.jsxs)("div", {
-      children: [(0, Chunk255367.jsxs)(Chunk705262.ZP, {
+    return (0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk951288.jsxs)(Chunk705262.ZP, {
         type: Chunk705262.yH.SETTINGS,
-        children: [(0, Chunk255367.jsx)(Chunk705262.ZP.Basic, {
+        children: [(0, Chunk951288.jsx)(Chunk705262.ZP.Basic, {
           className: Chunk505575.basicThemeSelectors
-        }), (0, Chunk255367.jsx)(k, {}), Chunk607070 ? Chunk266454 : (0, Chunk255367.jsx)(Chunk504983.Z, {
+        }), (0, Chunk951288.jsx)(k, {}), Chunk607070 ? Chunk266454 : (0, Chunk951288.jsx)(Chunk504983.Z, {
           className: Chunk505575.featureBorder,
           isShown: Chunk704215,
           type: Chunk504983.Y.PREMIUM,
           children: Chunk266454
         })]
-      }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
+      }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
         className: Chunk505575.divider
       })]
     })
@@ -138,19 +138,19 @@ function k() {
       useForcedColors: Chunk607070.Z.useForcedColors,
       gradientPreset: Chunk514361.Z.gradientPreset
     }));
-  return exports !== Chunk981631.BRd.LIGHT ? null : (0, Chunk255367.jsx)(Chunk481060.j7V, {
+  return exports !== Chunk981631.BRd.LIGHT ? null : (0, Chunk951288.jsx)(Chunk481060.j7V, {
     hideBorder: true,
     value: module && (0, Chunk780384.ap)(exports) && !require,
-    disabled: exports !== Chunk981631.BRd.LIGHT || require || null != Chunk73800,
+    disabled: exports !== Chunk981631.BRd.LIGHT || require || null != Chunk647438,
     onChange: Chunk857595.lq,
     className: Chunk505575.darkSidebarToggle,
-    children: (0, Chunk255367.jsx)("span", {
+    children: (0, Chunk951288.jsx)("span", {
       className: Chunk505575.title,
       children: Chunk388032.intl.string(Chunk388032.t.yF54Ki)
     })
   })
 }
-let L = () => (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.isPreview) ? null : (0, Chunk255367.jsx)(Chunk481060.zxk, {
+let L = () => (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.isPreview) ? null : (0, Chunk951288.jsx)(Chunk481060.zxk, {
   variant: "primary",
   text: Chunk388032.intl.string(Chunk388032.t.qYXrkZ),
   onClick: Z

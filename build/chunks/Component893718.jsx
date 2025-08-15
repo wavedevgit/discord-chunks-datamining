@@ -15,14 +15,14 @@ require.d(exports, {
   qz: () => eA,
   x2: () => eT
 }), require("./388685.js"), require("./415506.js"), require("./781311.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk836560 = require("./836560.js"),
   Chunk512722 = require("./512722.js"),
   c = require.n(Chunk512722),
-  Chunk94171 = require("./94171.js"),
+  Chunk524825 = require("./524825.js"),
   Chunk873546 = require("./873546.js"),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
@@ -273,12 +273,12 @@ function eT(e, t, n) {
 }
 
 function eS() {
-  let e = Chunk73800.useRef(null),
-    t = Chunk73800.useCallback(() => {
+  let e = Chunk647438.useRef(null),
+    t = Chunk647438.useCallback(() => {
       var t;
       null == (t = module.current) || exports.onMaybeShowAutocomplete()
     }, []),
-    n = Chunk73800.useCallback(() => {
+    n = Chunk647438.useCallback(() => {
       var t;
       null == (t = module.current) || exports.onHideAutocomplete()
     }, []);
@@ -457,9 +457,9 @@ function eD(e, t) {
     isLurking: e2,
     isPendingMember: e3,
     disabled: e4,
-    canAttachFiles: e5,
+    canAttachFiles: e8,
     canCreateThreads: e6,
-    canEveryoneSendMessages: e8
+    canEveryoneSendMessages: e5
   } = eC(k, j, e0, L), e7 = j.toolbarType === X.OW.STATIC, e9 = !U.dN.useSetting() && !(0, z.isAndroidWeb)() && null != window.ResizeObserver, te = !e9 || !(null == (n = j.commands) ? true : n.enabled) || !G || f !== el.GI, tt = (0, w.Z)(), {
     fontSize: tn
   } = (0, _.cj)([g.Z], () => ({
@@ -507,7 +507,7 @@ function eD(e, t) {
   } = eR(j, to, ez), tC = ew(to, ez);
   (0, q.S)(to, k.guild_id, k.id);
   let tR = null != Y,
-    tP = e4 && !((e2 || e3) && e8) || tl && (null == (s = j.submit) ? true : s.useDisabledStylesOnSubmit),
+    tP = e4 && !((e2 || e3) && e5) || tl && (null == (s = j.submit) ? true : s.useDisabledStylesOnSubmit),
     tw = null;
   null != e0 ? tw = null == Z ? true : Z(e0, e1, eu.attachButton) : (!e4 || e6) && (tw = null == V ? true : V(tR, eu.attachButton));
   let tD = e9 && null != h && !e4 && j.showCharacterCount && null == e0,
@@ -579,7 +579,7 @@ function eD(e, t) {
           }), j.hideAttachmentArea ? null : (0, r.jsx)(en.Z, {
             channelId: k.id,
             type: j,
-            canAttachFiles: e5
+            canAttachFiles: e8
           }), (0, r.jsxs)("div", {
             className: o()(eu.inner, {
               [eu.innerDisabled]: tP,
@@ -603,10 +603,10 @@ function eD(e, t) {
                 placeholder: x,
                 required: P,
                 accessibilityLabel: M,
-                isPreviewing: (e2 || e3) && e8,
+                isPreviewing: (e2 || e3) && e5,
                 channel: k,
                 type: j,
-                canPasteFiles: e5,
+                canPasteFiles: e8,
                 uploadPromptCharacterCount: es.en1,
                 maxCharacterCount: null != eg ? eg : tt,
                 allowNewLines: eL,
@@ -687,4 +687,4 @@ function eD(e, t) {
     })
   })
 }
-let eL = Chunk73800.memo(Chunk73800.forwardRef(eD))
+let eL = Chunk647438.memo(Chunk647438.forwardRef(eD))

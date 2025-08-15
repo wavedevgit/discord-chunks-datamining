@@ -5,14 +5,14 @@ require.d(exports, {
   Y: () => K,
   Z: () => X
 }), require("./388685.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk670481 = require("./670481.js"),
+  Chunk34415 = require("./34415.js"),
   Chunk512722 = require("./512722.js"),
   u = require.n(Chunk512722),
-  Chunk688642 = require("./688642.js"),
+  Chunk799899 = require("./799899.js"),
   Chunk731965 = require("./731965.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -92,7 +92,7 @@ function K(e) {
   } = e;
   return t && M.isPlatformEmbedded && !n
 }
-class z extends(r = Chunk73800.Component) {
+class z extends(r = Chunk647438.Component) {
   componentDidMount() {
     let {
       guestWindow: e
@@ -126,14 +126,14 @@ class z extends(r = Chunk73800.Component) {
       clientThemesCSS: e,
       guestWindow: t
     } = this.props, n = exports.document, r = false, i = require.head;
-    u()(null != Chunk255367, "Window document ".concat(r ? "body" : "head", " was null"));
-    let a = Chunk255367.querySelector("style[".concat(Chunk168551.PQ, "]"));
-    if (null != Chunk73800) {
-      Chunk73800.textContent = module;
+    u()(null != Chunk951288, "Window document ".concat(r ? "body" : "head", " was null"));
+    let a = Chunk951288.querySelector("style[".concat(Chunk168551.PQ, "]"));
+    if (null != Chunk647438) {
+      Chunk647438.textContent = module;
       return
     }
     let o = require.createElement("style");
-    Chunk120356.setAttribute(Chunk168551.PQ, "true"), Chunk120356.textContent = module, Chunk255367.appendChild(Chunk120356)
+    Chunk120356.setAttribute(Chunk168551.PQ, "true"), Chunk120356.textContent = module, Chunk951288.appendChild(Chunk120356)
   }
   registerPopoutGlobalKeybinds() {
     var e;
@@ -163,38 +163,38 @@ class z extends(r = Chunk73800.Component) {
     (0, Chunk358085.getPlatform)();
     let m = K({
         withTitleBar: Chunk120356,
-        isFullScreen: Chunk73800
+        isFullScreen: Chunk647438
       }),
       g = r === Chunk501787.$J ? Chunk22205.Z : Chunk628123.Z;
-    return (0, Chunk255367.jsx)(Chunk688642.VK, {
-      children: (0, Chunk255367.jsx)(Chunk746106.w, {
+    return (0, Chunk951288.jsx)(Chunk799899.VK, {
+      children: (0, Chunk951288.jsx)(Chunk746106.w, {
         windowKey: r,
-        children: (0, Chunk255367.jsx)(Chunk899663.Z, {
-          children: (0, Chunk255367.jsxs)(Chunk481060.JcV, {
+        children: (0, Chunk951288.jsx)(Chunk899663.Z, {
+          children: (0, Chunk951288.jsxs)(Chunk481060.JcV, {
             containerRef: this.rootRef,
-            children: [(0, Chunk255367.jsx)(q, {
+            children: [(0, Chunk951288.jsx)(q, {
               guestWindow: Chunk512722,
               className: u,
-              children: (0, Chunk255367.jsxs)(Chunk280492, {
-                children: [(0, Chunk255367.jsx)(Chunk686546.Co, {}), (0, Chunk255367.jsx)(Chunk40851.Wu, {
+              children: (0, Chunk951288.jsxs)(Chunk280492, {
+                children: [(0, Chunk951288.jsx)(Chunk686546.Co, {}), (0, Chunk951288.jsx)(Chunk40851.Wu, {
                   appContext: Chunk981631.IlC.POPOUT,
                   renderWindow: Chunk512722,
-                  children: (0, Chunk255367.jsx)(Chunk260035.m, {
-                    children: (0, Chunk255367.jsxs)(Chunk314910.yP, {
-                      children: [(0, Chunk255367.jsxs)("div", {
+                  children: (0, Chunk951288.jsx)(Chunk260035.m, {
+                    children: (0, Chunk951288.jsxs)(Chunk314910.yP, {
+                      children: [(0, Chunk951288.jsxs)("div", {
                         className: Chunk413943.popout,
-                        children: [Chunk175724 && (0, Chunk255367.jsx)(Chunk950796.TF, {
+                        children: [Chunk175724 && (0, Chunk951288.jsx)(Chunk950796.TF, {
                           windowKey: r
-                        }), null, (0, Chunk255367.jsx)("div", {
+                        }), null, (0, Chunk951288.jsx)("div", {
                           className: s()(Chunk413943.content, Chunk731965),
                           children: require
                         })]
-                      }), !Chunk442837 && (0, Chunk255367.jsx)(Chunk481060.nKe, {}), (0, Chunk255367.jsx)(Chunk490173.Z, {}), (0, Chunk255367.jsx)(Chunk314910.Un, {})]
+                      }), !Chunk442837 && (0, Chunk951288.jsx)(Chunk481060.nKe, {}), (0, Chunk951288.jsx)(Chunk490173.Z, {}), (0, Chunk951288.jsx)(Chunk314910.Un, {})]
                     })
                   })
                 })]
               })
-            }), (0, Chunk255367.jsx)(Chunk670481.OU, {})]
+            }), (0, Chunk951288.jsx)(Chunk34415.OU, {})]
           })
         })
       }, exports)
@@ -220,7 +220,7 @@ class z extends(r = Chunk73800.Component) {
 Z(z, "defaultProps", {
   withTitleBar: true
 });
-let q = Chunk73800.forwardRef(function(e, t) {
+let q = Chunk647438.forwardRef(function(e, t) {
     let {
       guestWindow: n,
       className: r,
@@ -243,7 +243,7 @@ let q = Chunk73800.forwardRef(function(e, t) {
       children: o
     })
   }),
-  X = Chunk73800.forwardRef(function(e, t) {
+  X = Chunk647438.forwardRef(function(e, t) {
     let {
       guestWindow: n,
       focused: r,

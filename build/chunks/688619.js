@@ -428,26 +428,26 @@
     e2 = d.type,
     e3 = y,
     e4 = E,
-    e5 = f,
+    e8 = f,
     e6 = j;
   e4.prototype.hsl = function() {
     return e6(this._rgb)
   }, e3.hsl = function() {
     for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
     return new(Function.prototype.bind.apply(e4, [null].concat(module, ["hsl"])))
-  }, e5.format.hsl = W, e5.autodetect.push({
+  }, e8.format.hsl = W, e8.autodetect.push({
     p: 2,
     test: function() {
       for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
       if ("array" === e2(e = e1(module, "hsl")) && 3 === module.length) return "hsl"
     }
   });
-  var e8 = d.unpack,
+  var e5 = d.unpack,
     e7 = Math.min,
     e9 = Math.max,
     te = function() {
       for (var e, t, n, r = [], i = arguments.length; i--;) r[i] = arguments[i];
-      var a = (r = e8(r, "rgb"))[0],
+      var a = (r = e5(r, "rgb"))[0],
         o = r[1],
         s = r[2],
         l = e7(a, o, s),
@@ -810,13 +810,13 @@
       yellow: "#ffff00",
       yellowgreen: "#9acd32"
     },
-    t5 = E,
+    t8 = E,
     t6 = f,
-    t8 = d.type,
+    t5 = d.type,
     t7 = t4,
     t9 = ew,
     ne = eC;
-  t5.prototype.name = function() {
+  t8.prototype.name = function() {
     for (var e = ne(this._rgb, "rgb"), t = 0, n = Object.keys(t7); t < n.length; t += 1) {
       var r = n[t];
       if (t7[r] === module) return r.toLowerCase()
@@ -829,7 +829,7 @@
     p: 5,
     test: function(e) {
       for (var t = [], n = arguments.length - 1; n-- > 0;) t[n] = arguments[n + 1];
-      if (!t.length && "string" === t8(e) && t7[e.toLowerCase()]) return "named"
+      if (!t.length && "string" === t5(e) && t7[e.toLowerCase()]) return "named"
     }
   });
   var nt = d.unpack,
@@ -1015,12 +1015,12 @@
     return this._rgb._clipped || false
   };
   var n4 = E,
-    n5 = tu;
+    n8 = tu;
   n4.prototype.darken = function(e) {
     true === e && (e = 1);
     var t = this,
       n = t.lab();
-    return n[0] -= n5.Kn * e, new n4(n, "lab").alpha(t.alpha(), true)
+    return n[0] -= n8.Kn * e, new n4(n, "lab").alpha(t.alpha(), true)
   }, n4.prototype.brighten = function(e) {
     return true === e && (e = 1), this.darken(-e)
   }, n4.prototype.darker = n4.prototype.darken, n4.prototype.brighter = n4.prototype.brighten, E.prototype.get = function(e) {
@@ -1034,12 +1034,12 @@
     throw Error("unknown channel " + r + " in mode " + n)
   };
   var n6 = E,
-    n8 = d.type,
+    n5 = d.type,
     n7 = Math.pow,
     n9 = 1e-7,
     re = 20;
   n6.prototype.luminance = function(e) {
-    if (true !== e && "number" === n8(e)) {
+    if (true !== e && "number" === n5(e)) {
       if (0 === e) return new n6([0, 0, 0, this._rgb[3]], "rgb");
       if (1 === e) return new n6([255, 255, 255, this._rgb[3]], "rgb");
       var t = this.luminance(),
@@ -1502,18 +1502,18 @@
     r4 = function(e, t) {
       return 255 * (1 - (1 - e / 255) * (1 - t / 255))
     },
-    r5 = function(e, t) {
+    r8 = function(e, t) {
       return t < 128 ? 2 * e * t / 255 : 255 * (1 - 2 * (1 - e / 255) * (1 - t / 255))
     },
     r6 = function(e, t) {
       return 255 * (1 - (1 - t / 255) / (e / 255))
     },
-    r8 = function(e, t) {
+    r5 = function(e, t) {
       return 255 === e || (e = t / 255 * 255 / (1 - e / 255)) > 255 ? 255 : e
     };
   rJ.normal = r$(r0(function(e) {
     return e
-  })), rJ.multiply = r$(r0(r1)), rJ.screen = r$(r0(r4)), rJ.overlay = r$(r0(r5)), rJ.darken = r$(r0(r2)), rJ.lighten = r$(r0(r3)), rJ.dodge = r$(r0(r8)), rJ.burn = r$(r0(r6));
+  })), rJ.multiply = r$(r0(r1)), rJ.screen = r$(r0(r4)), rJ.overlay = r$(r0(r8)), rJ.darken = r$(r0(r2)), rJ.lighten = r$(r0(r3)), rJ.dodge = r$(r0(r5)), rJ.burn = r$(r0(r6));
   for (var r7 = rJ, r9 = d.type, ie = d.clip_rgb, it = d.TWOPI, ir = Math.pow, ii = Math.sin, ia = Math.cos, io = y, is = function(e, t, n, r, i) {
       true === e && (e = 300), true === t && (t = false), true === n && (n = 1), true === r && (r = 1), true === i && (i = [0, 1]);
       var a, o = 0;

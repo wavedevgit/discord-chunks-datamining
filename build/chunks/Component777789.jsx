@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => C
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -17,16 +17,16 @@ var Chunk255367 = require("./255367.js"),
   Chunk905128 = require("./905128.js"),
   Chunk151494 = require("./151494.js"),
   Chunk234865 = require("./234865.js");
-class j extends Chunk73800.PureComponent {
+class j extends Chunk647438.PureComponent {
   render() {
     let {
       tier: e
     } = this.props;
-    return (0, Chunk255367.jsxs)("div", {
+    return (0, Chunk951288.jsxs)("div", {
       className: Chunk234865.tierPill,
-      children: [(0, Chunk255367.jsx)(Chunk297700.Z, {
+      children: [(0, Chunk951288.jsx)(Chunk297700.Z, {
         className: Chunk234865.tierPillStar,
-        children: (0, Chunk255367.jsx)(Chunk471885.Z, {
+        children: (0, Chunk951288.jsx)(Chunk471885.Z, {
           tier: module,
           color: "currentColor",
           className: Chunk234865.tierPillGem

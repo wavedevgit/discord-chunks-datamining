@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => y
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
   Chunk990547 = require("./990547.js"),
@@ -78,9 +78,9 @@ function j(e) {
 }
 
 function O() {
-  return (0, Chunk255367.jsx)("div", {
+  return (0, Chunk951288.jsx)("div", {
     className: Chunk163589.emptyArt,
-    children: (0, Chunk255367.jsx)("img", {
+    children: (0, Chunk951288.jsx)("img", {
       src: Chunk505913,
       width: "189",
       height: "177",

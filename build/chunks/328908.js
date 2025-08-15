@@ -14,7 +14,7 @@ require.d(exports, {
   t0: () => I,
   z8: () => b
 });
-var Chunk97519 = require("./97519.js"),
+var Chunk879690 = require("./879690.js"),
   Chunk731965 = require("./731965.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js");
@@ -61,7 +61,7 @@ let d = Object.freeze({
     messageSendConfetti: {},
     messageReactionConfetti: true
   }),
-  f = (0, Chunk97519.U)(() => d),
+  f = (0, Chunk879690.U)(() => d),
   _ = (e, t) => {
     a.default.track(o.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
       location: t

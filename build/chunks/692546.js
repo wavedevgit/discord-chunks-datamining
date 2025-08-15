@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => E
 }), require("./388685.js");
-var i, Chunk73800 = require("./73800.js"),
+var i, Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk374470 = require("./374470.js"),
@@ -79,7 +79,7 @@ function _(e, t) {
     }
 }
 let b = false;
-class E extends(i = Chunk73800.PureComponent) {
+class E extends(i = Chunk647438.PureComponent) {
   componentDidMount() {
     this.props.observe ? this.observeZone() : this.updateZone()
   }
@@ -93,7 +93,7 @@ class E extends(i = Chunk73800.PureComponent) {
     t !== e.observe && (t ? this.observeZone() : this.interval.stop())
   }
   render() {
-    return Chunk73800.Children.only(this.props.children)
+    return Chunk647438.Children.only(this.props.children)
   }
   observeZone() {
     this.updateZone(), this.interval.start(this.props.observeInterval, this.updateZone)

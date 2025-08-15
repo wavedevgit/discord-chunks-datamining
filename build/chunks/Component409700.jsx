@@ -7,8 +7,8 @@ require.d(exports, {
   ZP: () => R,
   hq: () => S
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk831209 = require("./831209.js"),
@@ -70,13 +70,13 @@ function S() {
     volume: e,
     onVolumeChange: t
   } = (0, Chunk824690.Z)();
-  return (0, Chunk255367.jsxs)(Chunk481060.P3F, {
+  return (0, Chunk951288.jsxs)(Chunk481060.P3F, {
     className: Chunk937309.sliderContainer,
     onClick: e => e.stopPropagation(),
-    children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       children: Chunk388032.intl.string(Chunk388032.t["2JbvKy"])
-    }), (0, Chunk255367.jsx)(Chunk481060.iRW, {
+    }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
       onValueChange: exports,
       className: Chunk937309.slider,
       initialValue: (0, Chunk36703.P)(module),

@@ -4,8 +4,8 @@ require.d(exports, {
   b: () => p,
   t: () => d
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk44315 = require("./44315.js"),
   Chunk377171 = require("./377171.js"),
@@ -39,7 +39,7 @@ function u(e) {
 }
 
 function d() {
-  return (0, Chunk255367.jsx)(u, {
+  return (0, Chunk951288.jsx)(u, {
     label: Chunk388032.intl.string(Chunk388032.t["I+02Gh"]),
     backgroundColor: "#207B8D",
     icon: Chunk481060.T$Z
@@ -47,7 +47,7 @@ function d() {
 }
 
 function p() {
-  return (0, Chunk255367.jsx)(u, {
+  return (0, Chunk951288.jsx)(u, {
     label: Chunk388032.intl.string(Chunk388032.t.TgsPaG),
     icon: Chunk481060.vdY,
     iconColor: (0, Chunk44315.Lq)(Chunk981631.Ilk.PRIMARY_330)

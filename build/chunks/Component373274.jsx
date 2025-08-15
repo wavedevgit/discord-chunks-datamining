@@ -4,8 +4,8 @@ require.d(exports, {
   E: () => ev,
   j: () => ey
 }), require("./388685.js"), require("./539854.js"), require("./35282.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk91192 = require("./91192.jsx"),
@@ -111,7 +111,7 @@ function eb(e) {
     density: e
   }) + 2
 }
-class e_ extends(r = Chunk73800.PureComponent) {
+class e_ extends(r = Chunk647438.PureComponent) {
   componentDidMount() {
     this.setState({
       initialized: true
@@ -201,16 +201,16 @@ class e_ extends(r = Chunk73800.PureComponent) {
       guildChannels: o,
       guildChannelsVersion: a
     } = this.props;
-    return (0, Chunk255367.jsx)("div", {
+    return (0, Chunk951288.jsx)("div", {
       className: Chunk776677.positionedContainer,
-      children: (0, Chunk255367.jsx)(Chunk950969.Z, {
+      children: (0, Chunk951288.jsx)(Chunk950969.Z, {
         ref: this.unreadTopRef,
         textUnread: Chunk388032.intl.string(Chunk388032.t.FCRiT0),
         textMention: Chunk388032.intl.string(Chunk388032.t["8zH0LC"]),
         hide: null == module && (r || null != exports || null != require),
         className: Chunk776677.unreadTop,
         barClassName: Chunk776677.unreadBar,
-        guildId: Chunk73800,
+        guildId: Chunk647438,
         guildChannels: Chunk392711,
         guildChannelsVersion: a,
         isVisible: this.isChannelVisible,
@@ -228,12 +228,12 @@ class e_ extends(r = Chunk73800.PureComponent) {
       bottomMention: r,
       isUnreadVisible: l
     } = this.state;
-    return (0, Chunk255367.jsx)(Chunk950969.Z, {
+    return (0, Chunk951288.jsx)(Chunk950969.Z, {
       reverse: true,
       ref: this.unreadBottomRef,
       textUnread: Chunk388032.intl.string(Chunk388032.t.FCRiT0),
       textMention: Chunk388032.intl.string(Chunk388032.t["8zH0LC"]),
-      hide: null == r && Chunk73800,
+      hide: null == r && Chunk647438,
       className: Chunk776677.unreadBottom,
       barClassName: Chunk776677.unreadBar,
       guildId: module,
@@ -253,7 +253,7 @@ class e_ extends(r = Chunk73800.PureComponent) {
       selectedGuildId: l,
       density: o
     } = this.props, a = {};
-    Chunk73800 === Chunk981631.I_8 && (a["data-favorites"] = true);
+    Chunk647438 === Chunk981631.I_8 && (a["data-favorites"] = true);
     let s = this.context,
       {
         ref: c
@@ -276,7 +276,7 @@ class e_ extends(r = Chunk73800.PureComponent) {
       d = 0;
     null != require ? d = Chunk327530.Q0 : (0, Chunk598056.Z)(exports) && !r && (d = Chunk327530.JD);
     let f = "compact" === Chunk392711 ? 8 : Chunk327530.$k;
-    return (0, Chunk255367.jsx)(Chunk481060.Wdt, {
+    return (0, Chunk951288.jsx)(Chunk481060.Wdt, {
       children: t => (0, i.jsx)(p.aVo, eg({
         ref: this.setListRef,
         className: ef.scroller,
@@ -305,7 +305,7 @@ class e_ extends(r = Chunk73800.PureComponent) {
       guildChannelsVersion: t,
       showNewUnreadsBar: n
     } = this.props;
-    return (0, Chunk255367.jsx)(Chunk313201.FG, {
+    return (0, Chunk951288.jsx)(Chunk313201.FG, {
       children: r => (0, i.jsx)(p.y5t, {
         component: (0, i.jsx)(p.nn4, {
           children: (0, i.jsx)(p.H, {

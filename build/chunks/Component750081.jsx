@@ -2,9 +2,9 @@
 /** chunk id: 750081, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./358797.js");
-var r, i, a, o, s, l, c, Chunk255367 = require("./255367.js");
-require("./92138.js"), require("./73800.js");
-var Chunk155458 = require("./155458.js"),
+var r, i, a, o, s, l, c, Chunk951288 = require("./951288.js");
+require("./92138.js"), require("./647438.js");
+var Chunk602954 = require("./602954.js"),
   Chunk512722 = require("./512722.js"),
   _ = require.n(Chunk512722),
   Chunk832037 = require("./832037.jsx"),
@@ -40,7 +40,7 @@ Chunk857192.default.cssDebuggingEnabled && require.e("95666").then(require.bind(
 let F = 5 * Chunk70956.Z.Millis.MINUTE,
   Z = document.getElementById("app-mount");
 _()(null != Z, "Could not find app-mount"), Z.className = __OVERLAY__ ? "" : Chunk113752.appMount;
-let H = (0, Chunk155458.createRoot)(Z),
+let H = (0, Chunk602954.createRoot)(Z),
   Y = {
     "/oauth2/authorize": Chunk534713.Z
   };
@@ -71,9 +71,9 @@ if (null != Chunk579806.Z) {
     nativeBuildNumber: null == exports ? true : exports.toString()
   });
   let u = Object.keys(require).filter(e => null != n[e]).map(e => "".concat(e, ": ").concat(n[e])).join(", ");
-  new Chunk710845.Z().log("[NATIVE INFO] host ".concat(module, ", modules: ").concat(Chunk255367, ", build: ").concat(exports));
+  new Chunk710845.Z().log("[NATIVE INFO] host ".concat(module, ", modules: ").concat(Chunk951288, ", build: ").concat(exports));
   let d = null == (l = (c = Chunk579806.Z.remoteApp).getReleaseChannel) ? true : l.call(c);
-  ("ptb" === Chunk155458 || "canary" === Chunk155458 || "development" === Chunk155458) && Chunk998502.ZP.pauseFrameEvictor(), Chunk998502.ZP.initializeExitHook(), Chunk998502.ZP.initializeWERHandler()
+  ("ptb" === Chunk602954 || "canary" === Chunk602954 || "development" === Chunk602954) && Chunk998502.ZP.pauseFrameEvictor(), Chunk998502.ZP.initializeExitHook(), Chunk998502.ZP.initializeWERHandler()
 }
 if ((0, Chunk473159.O)(window), __OVERLAY__) K(Chunk832037.Z.Overlay);
 else if (null != window.require && null == window.DiscordNative) K(Chunk832037.Z.OutdatedClient);

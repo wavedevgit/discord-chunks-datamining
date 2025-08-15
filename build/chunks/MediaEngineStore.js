@@ -237,9 +237,9 @@ let eK = {},
   e2 = false,
   e3 = false,
   e4 = false,
-  e5 = false,
+  e8 = false,
   e6 = false,
-  e8 = Chunk65154.Av,
+  e5 = Chunk65154.Av,
   e7 = false,
   e9 = false,
   te = false,
@@ -331,7 +331,7 @@ function tM() {
   let i = arguments.length > 0 && true !== arguments[0] ? arguments[0] : e6,
     o = arguments.length > 1 && true !== arguments[1] ? arguments[1] : a,
     s = a;
-  if ((null == s ? true : s.desktopSource) != null && s.desktopSource.id !== (null == o || null == (e = o.desktopSource) ? true : module.id) && (null != s.desktopSource.soundshareId && (0, Chunk358085.isWindows)() && Chunk887278.pn(s.desktopSource.soundshareId), eW.setGoLiveSource(null, eQ)), (null == s ? true : s.cameraSource) != null && (s.cameraSource.videoDeviceGuid !== (null == o || null == (t = o.cameraSource) ? true : exports.videoDeviceGuid) || s.cameraSource.audioDeviceGuid !== (null == o || null == (n = o.cameraSource) ? true : require.audioDeviceGuid)) && eW.setGoLiveSource(null, eQ), (e6 || i) && (e8 = (e6 = i) ? t0(e1, tP().videoDeviceId) : Chunk65154.Av, eW.setVideoInputDevice(e8)), a = o, null != o) {
+  if ((null == s ? true : s.desktopSource) != null && s.desktopSource.id !== (null == o || null == (e = o.desktopSource) ? true : module.id) && (null != s.desktopSource.soundshareId && (0, Chunk358085.isWindows)() && Chunk887278.pn(s.desktopSource.soundshareId), eW.setGoLiveSource(null, eQ)), (null == s ? true : s.cameraSource) != null && (s.cameraSource.videoDeviceGuid !== (null == o || null == (t = o.cameraSource) ? true : exports.videoDeviceGuid) || s.cameraSource.audioDeviceGuid !== (null == o || null == (n = o.cameraSource) ? true : require.audioDeviceGuid)) && eW.setGoLiveSource(null, eQ), (e6 || i) && (e5 = (e6 = i) ? t0(e1, tP().videoDeviceId) : Chunk65154.Av, eW.setVideoInputDevice(e5)), a = o, null != o) {
     let e = {
       resolution: o.quality.resolution,
       frameRate: o.quality.frameRate
@@ -837,8 +837,8 @@ function t3(e) {
   let t = e1;
   if (e1 = t$(e, eT.intl.string(eT.t.WKWARU)), e6 && !p().isEqual(e1, t)) {
     var n;
-    let e = true !== e1[e8],
-      r = e8 === eI.w5 && (null == (n = t[eI.w5]) ? true : n.disabled);
+    let e = true !== e1[e5],
+      r = e5 === eI.w5 && (null == (n = t[eI.w5]) ? true : n.disabled);
     tM(e || r)
   }
 }
@@ -872,7 +872,7 @@ function t4() {
   }
 }
 
-function t5(e) {
+function t8(e) {
   if (null == r) return eR.info("Error: trying to get soundshare id before MediaEngineStore is instantiated."), {
     soundshareId: null,
     soundshareSession: ""
@@ -900,8 +900,8 @@ function t6(e, t) {
   })
 }
 
-function t8(e) {
-  i = e.sessionId, e2 = false, e5 = false, (0, ea.isWeb)() || (Y.Z.subscribe({
+function t5(e) {
+  i = e.sessionId, e2 = false, e8 = false, (0, ea.isWeb)() || (Y.Z.subscribe({
     location: "handleConnectionOpen"
   }, e => {
     let t = tP();
@@ -912,7 +912,7 @@ function t8(e) {
     }), nN(e.sidechainEnabled))
   }), nR());
   let t = tP();
-  if (tH() && (tY() ? n6(eI.iA.AUTOMATIC) : t.automaticAudioSubsystem && n8()), eW.supports(eI.AN.OFFLOAD_ADM_CONTROLS)) {
+  if (tH() && (tY() ? n6(eI.iA.AUTOMATIC) : t.automaticAudioSubsystem && n5()), eW.supports(eI.AN.OFFLOAD_ADM_CONTROLS)) {
     let e = false;
     (0, ea.isDesktop)() ? e = (0, k.E)({
       location: "handleConnectionOpen"
@@ -966,7 +966,7 @@ function nt(e) {
   } = e;
   return t.reduce((e, t) => {
     if (i === t.sessionId) {
-      e2 = t.mute || t.suppress, e5 = t.deaf, eW.eachConnection(tL);
+      e2 = t.mute || t.suppress, e8 = t.deaf, eW.eachConnection(tL);
       let e = null != t.guildId && null != t.channelId && null != tm && tm !== t.channelId,
         n = !ts && null == t.channelId;
       return tM(!e && !n && e6), tm = t.channelId, true
@@ -1543,19 +1543,19 @@ function n4(e) {
   }), eW.setAudioInputBypassSystemProcessing(t), nI(e.location)
 }
 
-function n5(e) {
+function n8(e) {
   n6(e.subsystem)
 }
 
 function n6(e) {
   e === eI.iA.AUTOMATIC ? (tz({
     automaticAudioSubsystem: true
-  }), n8()) : (tz({
+  }), n5()) : (tz({
     automaticAudioSubsystem: false
   }), eW.setAudioSubsystem(e))
 }
 
-function n8() {
+function n5() {
   eW.queueAudioSubsystem(Chunk65154.iA.EXPERIMENTAL)
 }
 
@@ -1634,7 +1634,7 @@ function ri(e) {
   ({
     soundshareId: l,
     soundshareSession: c
-  } = t5(u));
+  } = t8(u));
   let d = {
     desktopSource: {
       id: t,
@@ -1693,7 +1693,7 @@ function ro(e) {
     ea.isPlatformEmbedded && true === o && ({
       soundshareId: e,
       soundshareSession: r
-    } = t5(c), null != e && t6(e, r)), tx(s), tM(s === eI.Yn.STREAM && e6, {
+    } = t8(c), null != e && t6(e, r)), tx(s), tM(s === eI.Yn.STREAM && e6, {
       desktopSource: {
         id: i,
         sourcePid: c,
@@ -1888,7 +1888,7 @@ class ry extends(u = Chunk442837.ZP.Store) {
     return this.isSelfMute() || e2
   }
   isDeaf() {
-    return this.isSelfDeaf() || e5
+    return this.isSelfDeaf() || e8
   }
   hasContext(e) {
     return null != eK[e]
@@ -2275,7 +2275,7 @@ eS(ry, "displayName", "MediaEngineStore");
 let rv = r = new ry(Chunk570140.Z, {
   VOICE_CHANNEL_SELECT: n7,
   VOICE_STATE_UPDATES: nt,
-  CONNECTION_OPEN: t8,
+  CONNECTION_OPEN: t5,
   CONNECTION_CLOSED: t9,
   RTC_CONNECTION_STATE: ne,
   AUDIO_SET_TEMPORARY_SELF_MUTE: nn,
@@ -2313,7 +2313,7 @@ let rv = r = new ry(Chunk570140.Z, {
   AUDIO_VOLUME_CHANGE: nv,
   AUDIO_RESET: nW,
   AUDIO_INPUT_DETECTED: nK,
-  AUDIO_SET_SUBSYSTEM: n5,
+  AUDIO_SET_SUBSYSTEM: n8,
   AUDIO_SET_BYPASS_SYSTEM_INPUT_PROCESSING: n4,
   MEDIA_ENGINE_SET_AUDIO_ENABLED: rn,
   MEDIA_ENGINE_SET_VIDEO_ENABLED: rr,

@@ -13,7 +13,7 @@ require.d(exports, {
   mH: () => P,
   uk: () => C
 }), require("./388685.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk772848 = require("./772848.js"),
   Chunk516796 = require("./516796.js"),
   Chunk930446 = require("./930446.js"),
@@ -176,7 +176,7 @@ function x(e) {
 
 function M() {
   let e = (0, Chunk915750.WD)();
-  return Chunk73800.useCallback(t => {
+  return Chunk647438.useCallback(t => {
     w(T(v({}, t), {
       properties: T(v({}, t.properties), {
         impression_id: null == e ? true : e.getId()
@@ -187,7 +187,7 @@ function M() {
 
 function k() {
   let e = M();
-  return Chunk73800.useCallback(t => {
+  return Chunk647438.useCallback(t => {
     let {
       questId: n,
       questContent: r,

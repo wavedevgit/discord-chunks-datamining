@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => U
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk231757 = require("./231757.jsx"),
@@ -79,7 +79,7 @@ function U(t) {
         n.type === c.ABu.XBOX ? (0, d.ZDy)(async () => {
           let {
             default: n
-          } = await Promise.all([e.e("35992"), e.e("522")]).then(e.bind(e, 200623));
+          } = await Promise.all([e.e("87442"), e.e("522")]).then(e.bind(e, 200623));
           return e => (0, i.jsx)(n, g(T({}, e), {
             channel: t
           }))

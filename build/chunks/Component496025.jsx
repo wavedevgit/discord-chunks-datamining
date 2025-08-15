@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => E
 }), require("./388685.js"), require("./35282.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk602715 = require("./602715.js"),
@@ -29,7 +29,7 @@ var Chunk255367 = require("./255367.js"),
 function O() {
   var e;
   let t = (0, Chunk442837.Wu)([Chunk55589.Z], () => Chunk55589.Z.getSortedChannels()[1]),
-    [a, l] = Chunk73800.useState(exports.length > 0 ? exports[0].channelId : true),
+    [a, l] = Chunk647438.useState(exports.length > 0 ? exports[0].channelId : true),
     {
       selectedChannel: i,
       options: d
@@ -43,20 +43,20 @@ function O() {
         }
       })
     })),
-    j = Chunk73800.useCallback(() => {
+    j = Chunk647438.useCallback(() => {
       var e;
       if (null == i || !i.isPrivate()) return;
       let t = (0, Chunk630388.x9)(null != (e = i.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
       Chunk258732.Z.updatePrivateChannelRecipientFlags(i.id, exports)
     }, [i]),
     g = null != i && !!i.isPrivate() && (0, Chunk630388.yE)(null != (e = i.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
-  return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-    children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/semibold",
       children: "In-Game NUX Message for DMs"
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk165432.inGameNuxContainer,
-      children: [(0, Chunk255367.jsx)(Chunk481060.VcW, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.VcW, {
         wrapperClassName: Chunk165432.search,
         options: Chunk493683,
         placeholder: "Select DM",
@@ -72,7 +72,7 @@ function O() {
           })
         },
         popoutLayerContext: Chunk246992.O$
-      }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         size: "sm",
         text: Chunk432877 ? "Clear NUX Flag" : "Set NUX Flag",
@@ -84,12 +84,12 @@ function O() {
 }
 
 function T() {
-  let e = Chunk73800.useCallback(() => {
+  let e = Chunk647438.useCallback(() => {
     Chunk493683.Z.openPrivateChannel({
       recipientIds: [Chunk894257.I]
     })
   }, []);
-  return (0, Chunk255367.jsx)(Chunk481060.zxk, {
+  return (0, Chunk951288.jsx)(Chunk481060.zxk, {
     variant: "primary",
     size: "sm",
     text: "Open System DM",
@@ -110,12 +110,12 @@ function E() {
       children: r
     }, t)
   });
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: i()(Chunk451429.panel, Chunk165432.panel),
-    children: [module, (0, Chunk255367.jsx)("div", {
+    children: [module, (0, Chunk951288.jsx)("div", {
       className: Chunk165432.divider
-    }), (0, Chunk255367.jsx)(O, {}), (0, Chunk255367.jsx)("div", {
+    }), (0, Chunk951288.jsx)(O, {}), (0, Chunk951288.jsx)("div", {
       className: Chunk165432.divider
-    }), (0, Chunk255367.jsx)(T, {})]
+    }), (0, Chunk951288.jsx)(T, {})]
   })
 }

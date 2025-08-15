@@ -5,7 +5,7 @@ require.d(exports, {
   W: () => c,
   s: () => l
 }), require("./388685.js"), require("./539854.js");
-var r, Chunk73800 = require("./73800.js"),
+var r, Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711);
 
@@ -20,13 +20,13 @@ function s(e, t, n) {
 var l = function(e) {
   return e.PAGE = "PAGE", e.GAP = "GAP", e.BACK = "BACK", e.NEXT = "NEXT", e
 }({});
-class c extends(r = Chunk73800.PureComponent) {
+class c extends(r = Chunk647438.PureComponent) {
   getNeighborBounds() {
     let {
       totalPageCount: e,
       maxVisiblePages: t,
       selectedPage: n
-    } = this.props, r = Math.ceil(exports / 2), i = Math.floor(exports / 2), a = [1, module], [o, s] = a = require <= r ? [1, exports] : require > module - Chunk73800 ? [module - exports + 1, module] : [require - r + 1, require + Chunk73800];
+    } = this.props, r = Math.ceil(exports / 2), i = Math.floor(exports / 2), a = [1, module], [o, s] = a = require <= r ? [1, exports] : require > module - Chunk647438 ? [module - exports + 1, module] : [require - r + 1, require + Chunk647438];
     return [Math.max(o, 1), Math.min(s, module)]
   }
   getPageList() {
@@ -55,7 +55,7 @@ class c extends(r = Chunk73800.PureComponent) {
     }, {
       type: "GAP",
       key: "left-gap"
-    }], r += 2), Chunk73800 < module && (c = [{
+    }], r += 2), Chunk647438 < module && (c = [{
       type: "GAP",
       key: "right-gap"
     }], require || c.push({
@@ -63,7 +63,7 @@ class c extends(r = Chunk73800.PureComponent) {
       key: "page-".concat(module),
       targetPage: module,
       navigateToPage: () => this.handleJump(module)
-    }), i -= 2), [Chunk392711, ...l, ...o().range(r, Chunk73800 + 1).map(e => ({
+    }), i -= 2), [Chunk392711, ...l, ...o().range(r, Chunk647438 + 1).map(e => ({
       type: "PAGE",
       key: "page-".concat(e),
       targetPage: e,

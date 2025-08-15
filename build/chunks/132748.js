@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => l
 }), require("./388685.js");
-var r, i, Chunk73800 = require("./73800.js");
+var r, i, Chunk647438 = require("./647438.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -18,7 +18,7 @@ function o(e, t, n) {
 function s(e, t, n) {
   return Math.min(Math.max(Math.floor(e / t), 1), n)
 }
-let l = (0, require("./112724.jsx").Z)((i = class extends(r = Chunk73800.Component) {
+let l = (0, require("./112724.jsx").Z)((i = class extends(r = Chunk647438.Component) {
   static getDerivedStateFromProps(e, t) {
     let {
       width: n,

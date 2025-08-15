@@ -3,20 +3,20 @@
 require.d(exports, {
   Z: () => m
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
   Chunk481250 = require("./481250.jsx"),
   Chunk513547 = require("./513547.jsx"),
   Chunk388032 = require("./388032.jsx");
-class u extends Chunk73800.PureComponent {
+class u extends Chunk647438.PureComponent {
   render() {
     let {
       screenshare: e
     } = this.props;
-    if (null == module) return (0, Chunk255367.jsx)(Chunk481060.$jN, {
+    if (null == module) return (0, Chunk951288.jsx)(Chunk481060.$jN, {
       type: Chunk481060.$jN.Type.SPINNING_CIRCLE
     });
     let t = l().map(module, (e, t) => {
@@ -25,7 +25,7 @@ class u extends Chunk73800.PureComponent {
         value: e
       }, t)
     });
-    return (0, Chunk255367.jsx)(Chunk481060.hjN, {
+    return (0, Chunk951288.jsx)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H2,
       title: Chunk388032.intl.string(Chunk388032.t["gWbr/f"]),
       children: (0, Chunk481250.a)(exports)

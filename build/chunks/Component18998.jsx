@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => O
 }), require("./583741.js"), require("./388685.js"), require("./539854.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk954955 = require("./954955.js"),
@@ -39,7 +39,7 @@ let m = {
   friction: 10,
   tension: 300
 };
-class b extends Chunk73800.Component {
+class b extends Chunk647438.Component {
   shouldComponentUpdate(e, t) {
     return !(0, d.Z)(this.props, e, ["animate"]) || !(0, d.Z)(this.state, t)
   }
@@ -87,14 +87,14 @@ class b extends Chunk73800.Component {
       hide: n,
       onClick: r
     } = this.props;
-    return (0, Chunk255367.jsx)(Chunk748780.Z.div, {
+    return (0, Chunk951288.jsx)(Chunk748780.Z.div, {
       className: a()(Chunk247060.bar, module, {
         [Chunk247060.hidden]: require
       }),
       onClick: r,
       style: this.getAnimatedStyle(),
       "aria-hidden": require,
-      children: (0, Chunk255367.jsx)("span", {
+      children: (0, Chunk951288.jsx)("span", {
         className: Chunk247060.text,
         children: exports
       })
@@ -122,7 +122,7 @@ class b extends Chunk73800.Component {
     }
   }
 }
-class _ extends(r = Chunk73800.PureComponent) {
+class _ extends(r = Chunk647438.PureComponent) {
   componentDidMount() {
     this.calculateState()
   }
@@ -147,13 +147,13 @@ class _ extends(r = Chunk73800.PureComponent) {
     } = this.props, {
       reducedMotion: d
     } = this.context;
-    return (0, Chunk255367.jsx)("div", {
+    return (0, Chunk951288.jsx)("div", {
       className: null != Chunk120356 ? Chunk120356 : true,
-      children: (0, Chunk255367.jsx)(b, {
+      children: (0, Chunk951288.jsx)(b, {
         hide: true === c || null == module && null == exports,
         className: a()(Chunk954955, null != exports ? Chunk247060.mention : Chunk247060.unread),
         text: null != exports ? require : r,
-        reverse: Chunk73800,
+        reverse: Chunk647438,
         animate: Chunk748780 && !Chunk902704.enabled,
         onClick: this.handleClick
       })

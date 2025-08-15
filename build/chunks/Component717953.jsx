@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => v
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk657707 = require("./657707.js"),
@@ -24,30 +24,30 @@ var Chunk255367 = require("./255367.js"),
   Chunk279457 = require("./279457.js");
 
 function O() {
-  return (0, Chunk255367.jsxs)("svg", {
+  return (0, Chunk951288.jsxs)("svg", {
     className: Chunk279457.newRing,
     width: "68",
     height: "68",
     viewBox: "0 0 68 68",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
-    children: [(0, Chunk255367.jsx)("circle", {
+    children: [(0, Chunk951288.jsx)("circle", {
       cx: "33.875",
       cy: "33.875",
       r: "32.875",
       stroke: "url(#paint0_linear_1368_16544)",
       "stroke-width": "2"
-    }), (0, Chunk255367.jsx)("defs", {
-      children: (0, Chunk255367.jsxs)("linearGradient", {
+    }), (0, Chunk951288.jsx)("defs", {
+      children: (0, Chunk951288.jsxs)("linearGradient", {
         id: "paint0_linear_1368_16544",
         x1: "33.875",
         y1: "2",
         x2: "33.875",
         y2: "65.75",
         gradientUnits: "userSpaceOnUse",
-        children: [(0, Chunk255367.jsx)("stop", {
+        children: [(0, Chunk951288.jsx)("stop", {
           "stop-color": "#B473F5"
-        }), (0, Chunk255367.jsx)("stop", {
+        }), (0, Chunk951288.jsx)("stop", {
           offset: "1",
           "stop-color": "#E292AA"
         })]

@@ -4,8 +4,8 @@ require.d(exports, {
   B: () => m,
   b: () => d
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk893776 = require("./893776.js"),
   Chunk489813 = require("./489813.jsx"),
@@ -13,8 +13,8 @@ var Chunk255367 = require("./255367.js"),
   Chunk624463 = require("./624463.js");
 
 function u() {
-  let [e, t] = Chunk73800.useState(false), [n, o] = Chunk73800.useState(false), [u, d] = Chunk73800.useState(false);
-  Chunk73800.useEffect(() => {
+  let [e, t] = Chunk647438.useState(false), [n, o] = Chunk647438.useState(false), [u, d] = Chunk647438.useState(false);
+  Chunk647438.useEffect(() => {
     let e;
     return require && (e = setTimeout(() => {
       Chunk489813(false)
@@ -32,12 +32,12 @@ function u() {
       }
     }
   };
-  return require ? (0, Chunk255367.jsx)(Chunk481060.Text, {
+  return require ? (0, Chunk951288.jsx)(Chunk481060.Text, {
     className: Chunk624463.verifyConfirmText,
     variant: "text-sm/normal",
     color: "text-feedback-positive",
     children: Chunk388032.intl.string(Chunk388032.t.H3Q7U1)
-  }) : (0, Chunk255367.jsx)(Chunk481060.zxk, {
+  }) : (0, Chunk951288.jsx)(Chunk481060.zxk, {
     variant: "primary",
     size: "sm",
     text: u ? Chunk388032.intl.string(Chunk388032.t.WnX4Jy) : Chunk388032.intl.string(Chunk388032.t["13ofGh"]),
@@ -47,15 +47,15 @@ function u() {
 }
 
 function d() {
-  return (0, Chunk255367.jsx)(Chunk489813.PU, {
+  return (0, Chunk951288.jsx)(Chunk489813.PU, {
     className: Chunk624463.editableRequirementContainer,
     icon: Chunk481060._XJ,
     text: Chunk388032.intl.string(Chunk388032.t.c6EUJC),
     footnote: Chunk388032.intl.string(Chunk388032.t["jMh+TU"]),
     meetsRequirement: false,
-    children: (0, Chunk255367.jsx)(Chunk481060.DY3, {
+    children: (0, Chunk951288.jsx)(Chunk481060.DY3, {
       text: Chunk388032.intl.string(Chunk388032.t.mGlP39),
-      children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         size: "sm",
         disabled: true,

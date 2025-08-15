@@ -14,7 +14,7 @@ require.d(exports, {
   mc: () => x,
   og: () => R
 }), require("./388685.js"), require("./290780.js");
-var Chunk362383 = require("./362383.js"),
+var Chunk131193 = require("./131193.js"),
   Chunk731965 = require("./731965.js"),
   Chunk261376 = require("./261376.js");
 
@@ -69,7 +69,7 @@ let u = new(require("./499303.js")).I,
     lastWinnerTime: 0,
     postConnectionOpen: false
   }),
-  p = (0, Chunk362383.F)(_),
+  p = (0, Chunk131193.F)(_),
   h = e => c(s({}, e), {
     candidates: new Map(e.candidates),
     currentlyShown: new Set(e.currentlyShown),

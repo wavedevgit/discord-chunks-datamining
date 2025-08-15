@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => O
 }), require("./388685.js"), require("./539854.js"), require("./415506.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -35,9 +35,9 @@ let I = Chunk566006.O.VOTE;
 
 function P() {
   let e = (0, Chunk410030.ZP)();
-  return (0, Chunk255367.jsxs)(Chunk481060.ubH, {
+  return (0, Chunk951288.jsxs)(Chunk481060.ubH, {
     theme: module,
-    children: [(0, Chunk255367.jsx)(Chunk481060.oxh, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.oxh, {
       darkSrc: Chunk144452,
       lightSrc: Chunk144452,
       width: 106,
@@ -45,7 +45,7 @@ function P() {
       style: {
         marginBottom: 10
       }
-    }), (0, Chunk255367.jsx)(Chunk481060.OZU, {
+    }), (0, Chunk951288.jsx)(Chunk481060.OZU, {
       note: Chunk388032.intl.string(Chunk388032.t.bwytdn),
       noteClassName: Chunk731595.emptyText,
       className: Chunk731595.emptyTitle,

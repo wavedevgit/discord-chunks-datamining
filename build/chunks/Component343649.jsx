@@ -4,8 +4,8 @@ require.d(exports, {
   P: () => er,
   default: () => eu
 }), require("./388685.js"), require("./49124.js");
-var l, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var l, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -213,9 +213,9 @@ function ec(e) {
     (async () => {
       if (true === eY) try {
         if (null == U.Z.redirectedPaymentId) return;
-        await (0, P.OP)(U.Z.redirectedPaymentId), l(L.h8.CONFIRM), e4(T.A.COMPLETED), null != n && await ea(n, 0 !== eP), null == r || r()
+        await (0, P.OP)(U.Z.redirectedPaymentId), l(L.h8.CONFIRM), e7(T.A.COMPLETED), null != n && await ea(n, 0 !== eP), null == r || r()
       } catch (n) {
-        e4(T.A.FAIL), o(n), W.default.track(q.rMx.PAYMENT_FLOW_FAILED, el(en({}, e), {
+        e7(T.A.FAIL), o(n), W.default.track(q.rMx.PAYMENT_FLOW_FAILED, el(en({}, e), {
           payment_error_code: null == n ? true : n.code,
           payment_gateway: q.gg$.STRIPE,
           payment_source_id: i,
@@ -234,12 +234,12 @@ function ec(e) {
       guild_id: ec
     })
   });
-  let [e1, e2] = i.useState(es), [e7, e4] = i.useState(T.A.WAITING), [e5, e6] = i.useState(true), e9 = () => {
-    l(e7 === T.A.COMPLETED)
+  let [e1, e2] = i.useState(es), [e4, e7] = i.useState(T.A.WAITING), [e6, e5] = i.useState(true), e9 = () => {
+    l(e4 === T.A.COMPLETED)
   }, te = null != e_ && e_.isPurchasedExternally;
   i.useEffect(() => {
     ek !== k.wr.PENDING && eq !== L.h8.CONFIRM && null != ef && (e1 !== es && e2(es), es.includes(eq) || eq === L.h8.PREMIUM_UPSELL || e0(L.h8.REVIEW)), eq === L.h8.ADD_PAYMENT_STEPS && e1 !== eo && e2(eo), te && eq !== L.h8.PLAN_SELECT && eJ(L.h8.PLAN_SELECT)
-  }, [eq, e0, te, ek, e_, ef, e1]), (0, k.bp)(eq, ek, e0, e4), (0, L.dZ)(eq, e7, e4);
+  }, [eq, e0, te, ek, e_, ef, e1]), (0, k.bp)(eq, ek, e0, e7), (0, L.dZ)(eq, e4, e7);
   let tt = i.useRef(null),
     [tn, tl] = (0, I.Z)(false, 500),
     [tr, ti] = i.useState(null),
@@ -326,7 +326,7 @@ function ec(e) {
           premiumSubscriptionPlan: eg,
           numGuildBoosts: eG,
           setNumGuildBoosts: ez,
-          setForceDisableSubmitButton: e6,
+          setForceDisableSubmitButton: e5,
           premiumSubscription: e_,
           existingAvailableSlots: ex,
           onClickPremiumSubscriptionLink: () => {
@@ -354,7 +354,7 @@ function ec(e) {
           variant: "primary",
           text: ee.intl.string(ee.t["3PatS0"]),
           type: "submit",
-          disabled: e5 || 0 === eG || te,
+          disabled: e6 || 0 === eG || te,
           onClick: () => {
             if (!ed && (null == eN || eN.premiumSubscriptionType !== J.p9.TIER_2)) return void e0(L.h8.PREMIUM_UPSELL);
             e0(null != ef || eU ? L.h8.REVIEW : L.h8.ADD_PAYMENT_STEPS)
@@ -393,7 +393,7 @@ function ec(e) {
             let e = (0, j.m)(eT, eC);
             ej(null);
             try {
-              e4(T.A.PURCHASING), eA(true), c()(null != eC, "Missing paymentSourceId"), c()(null != ey, "Missing invoicePreview");
+              e7(T.A.PURCHASING), eA(true), c()(null != eC, "Missing paymentSourceId"), c()(null != ey, "Missing invoicePreview");
               let t = {
                   amount: ey.total,
                   currency: ey.currency
@@ -422,9 +422,9 @@ function ec(e) {
                 let r = await (0, P.Mg)(e_, l, t, n, eK);
                 if (r.redirectConfirmation) return void tc(null != r.redirectURL)
               }
-              0 === eP && e0(L.h8.CONFIRM), e4(T.A.COMPLETED), null != ec && await ea(ec, 0 !== eP), 0 !== eP && e9(), null == eu || eu()
+              0 === eP && e0(L.h8.CONFIRM), e7(T.A.COMPLETED), null != ec && await ea(ec, 0 !== eP), 0 !== eP && e9(), null == eu || eu()
             } catch (t) {
-              e4(T.A.FAIL), ej(t), W.default.track(q.rMx.PAYMENT_FLOW_FAILED, el(en({}, e$), {
+              e7(T.A.FAIL), ej(t), W.default.track(q.rMx.PAYMENT_FLOW_FAILED, el(en({}, e$), {
                 payment_error_code: null == t ? true : t.code,
                 payment_gateway: null != e ? e.type === q.HeQ.CARD ? q.gg$.STRIPE : q.gg$.BRAINTREE : null,
                 payment_source_id: eC,
@@ -500,7 +500,7 @@ function ec(e) {
   return eh || eq === L.h8.PREMIUM_UPSELL || (td = (0, r.jsx)(X.Z, {
     onClose: e9,
     currentStep: eq,
-    purchaseState: e7
+    purchaseState: e4
   })), (0, r.jsxs)(m.Y0X, {
     transitionState: n,
     className: o()({

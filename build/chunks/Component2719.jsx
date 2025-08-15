@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => en
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -492,9 +492,9 @@ function en() {
       userId: null == exports ? true : exports.id,
       size: Chunk481060.EFr.SIZE_80
     });
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk378846.accountProfileCard,
-    children: [(0, Chunk255367.jsx)(Chunk867176.b, {
+    children: [(0, Chunk951288.jsx)(Chunk867176.b, {
       user: exports,
       displayProfile: require,
       avatarSize: Chunk481060.EFr.SIZE_80,
@@ -503,72 +503,72 @@ function en() {
       bannerWidth: 660,
       bannerHeight: 100,
       themePadding: 0
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk378846.userInfo,
-      children: [(0, Chunk255367.jsx)(Y, {
+      children: [(0, Chunk951288.jsx)(Y, {
         className: Chunk378846.avatar,
         src: Chunk692547,
         avatarDecoration: Chunk755721,
         status: Chunk120356,
         size: Chunk481060.EFr.SIZE_80,
         "aria-label": exports.username
-      }), (0, Chunk255367.jsxs)("div", {
-        children: [(0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
+        children: [(0, Chunk951288.jsxs)("div", {
           className: Chunk378846.profileCardUsernameRow,
-          children: [(0, Chunk255367.jsx)(Chunk129861.Z, {
+          children: [(0, Chunk951288.jsx)(Chunk129861.Z, {
             user: exports,
             className: Chunk378846.userTag,
             discriminatorClass: Chunk378846.discriminator,
             displayNameStylesType: Chunk821795.F.STATIC
-          }), (0, Chunk255367.jsx)($, {
+          }), (0, Chunk951288.jsx)($, {
             user: exports
           })]
-        }), (0, Chunk255367.jsx)(Chunk184325.Z, {
-          badges: Chunk73800,
+        }), (0, Chunk951288.jsx)(Chunk184325.Z, {
+          badges: Chunk647438,
           className: Chunk378846.badgeList,
           badgeClassName: Chunk378846.badge
         })]
-      }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         size: "sm",
         text: Chunk388032.intl.string(Chunk388032.t["2p2aY2"]),
         onClick: ee
       })]
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk378846.background,
-      children: [null != Chunk512722 ? (0, Chunk255367.jsx)(Chunk481060.Text, {
+      children: [null != Chunk512722 ? (0, Chunk951288.jsx)(Chunk481060.Text, {
         className: Chunk378846.avatarError,
         variant: "text-xs/normal",
         color: "text-danger",
         children: Chunk512722
-      }) : null, (0, Chunk255367.jsxs)("div", {
+      }) : null, (0, Chunk951288.jsxs)("div", {
         className: Chunk378846.fieldList,
-        children: [(0, Chunk255367.jsx)(Chunk921801.F, {
+        children: [(0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_DISPLAY_NAME,
-          children: (0, Chunk255367.jsx)(q, {
+          children: (0, Chunk951288.jsx)(q, {
             className: Chunk378846.fieldSpacerBottom,
             user: exports
           })
-        }), (0, Chunk255367.jsx)(Chunk921801.F, {
+        }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_USERNAME,
-          children: (0, Chunk255367.jsx)(K, {
+          children: (0, Chunk951288.jsx)(K, {
             user: exports
           })
-        }), (0, Chunk255367.jsx)(Chunk921801.F, {
+        }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_EMAIL,
-          children: (0, Chunk255367.jsx)(J, {
+          children: (0, Chunk951288.jsx)(J, {
             className: Chunk378846.fieldSpacer,
             user: exports
           })
-        }), (0, Chunk255367.jsx)(Chunk921801.F, {
+        }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_PHONE_NUMBER,
-          children: (0, Chunk255367.jsx)(Q, {
+          children: (0, Chunk951288.jsx)(Q, {
             className: Chunk378846.fieldSpacer,
             user: exports
           })
-        }), (0, Chunk255367.jsx)(Chunk921801.F, {
+        }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_AGE_GROUP,
-          children: (0, Chunk255367.jsx)(et, {
+          children: (0, Chunk951288.jsx)(et, {
             className: Chunk378846.fieldSpacer
           })
         })]

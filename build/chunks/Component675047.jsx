@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => C
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk924628 = require("./924628.js"),
   Chunk493773 = require("./493773.js"),
   Chunk630759 = require("./630759.js"),
@@ -22,37 +22,37 @@ var Chunk924628 = require("./924628.js"),
   Chunk388032 = require("./388032.jsx");
 
 function _() {
-  return (0, Chunk255367.jsxs)(Chunk893996.Z, {
+  return (0, Chunk951288.jsxs)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.WWaFn5),
     description: Chunk388032.intl.format(Chunk388032.t["/6sFWV"], {
       helpArticle: (0, Chunk630759.uV)()
     }),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_VOICE_SECURITY,
-    children: [(0, Chunk255367.jsx)(Chunk230341.Z, {}), (0, Chunk255367.jsx)(Chunk266132.Z, {})]
+    children: [(0, Chunk951288.jsx)(Chunk230341.Z, {}), (0, Chunk951288.jsx)(Chunk266132.Z, {})]
   })
 }
 
 function j() {
-  return (0, Chunk255367.jsx)(Chunk893996.Z, {
+  return (0, Chunk951288.jsx)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.BG7Qsb),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
-    children: (0, Chunk255367.jsx)(Chunk623196.Z, {})
+    children: (0, Chunk951288.jsx)(Chunk623196.Z, {})
   })
 }
 
 function E() {
-  return (0, Chunk255367.jsxs)(Chunk893996.Z, {
+  return (0, Chunk951288.jsxs)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.SRZyHh),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
-    children: [(0, Chunk255367.jsx)(Chunk402583.Z, {}), (0, Chunk255367.jsx)(Chunk940021.Z, {}), (0, Chunk255367.jsx)(Chunk883382.Z, {}), (0, Chunk255367.jsx)(Chunk993315.Z, {})]
+    children: [(0, Chunk951288.jsx)(Chunk402583.Z, {}), (0, Chunk951288.jsx)(Chunk940021.Z, {}), (0, Chunk951288.jsx)(Chunk883382.Z, {}), (0, Chunk951288.jsx)(Chunk993315.Z, {})]
   })
 }
 
 function C() {
   return (0, Chunk493773.ZP)(() => {
     (0, Chunk924628.I)(), (0, Chunk398826.A)()
-  }), (0, Chunk255367.jsxs)(Chunk10298.N, {
+  }), (0, Chunk951288.jsxs)(Chunk10298.N, {
     header: Chunk388032.intl.string(Chunk388032.t.OAuOHB),
-    children: [(0, Chunk255367.jsx)(E, {}), (0, Chunk255367.jsx)(j, {}), (0, Chunk255367.jsx)(_, {})]
+    children: [(0, Chunk951288.jsx)(E, {}), (0, Chunk951288.jsx)(j, {}), (0, Chunk951288.jsx)(_, {})]
   })
 }

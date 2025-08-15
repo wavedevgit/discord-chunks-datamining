@@ -4,7 +4,7 @@ require.d(exports, {
   E: () => c,
   G: () => a
 }), require("./388685.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk113434 = require("./113434.js");
@@ -17,7 +17,7 @@ function a() {
   }), "animate-always");
   return {
     completionSpring: module,
-    startCompletionAnimation: Chunk73800.useCallback(() => {
+    startCompletionAnimation: Chunk647438.useCallback(() => {
       exports({
         spring: 1
       }), exports({

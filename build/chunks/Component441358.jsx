@@ -3,21 +3,21 @@
 require.d(exports, {
   v: () => a
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk388032 = require("./388032.jsx"),
   Chunk478394 = require("./478394.js"),
   Chunk652430 = require("./652430.js");
-let a = () => (0, Chunk255367.jsxs)("div", {
+let a = () => (0, Chunk951288.jsxs)("div", {
   className: Chunk478394.container,
-  children: [(0, Chunk255367.jsx)("img", {
+  children: [(0, Chunk951288.jsx)("img", {
     className: Chunk478394.image,
     alt: "",
     src: Chunk652430
-  }), (0, Chunk255367.jsx)("div", {
+  }), (0, Chunk951288.jsx)("div", {
     className: Chunk478394.title,
     children: Chunk388032.intl.string(Chunk388032.t.MwjTvr)
-  }), (0, Chunk255367.jsx)("div", {
+  }), (0, Chunk951288.jsx)("div", {
     className: Chunk478394.body,
     children: Chunk388032.intl.string(Chunk388032.t.AKBgPz)
   })]

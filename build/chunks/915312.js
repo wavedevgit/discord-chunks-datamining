@@ -4,15 +4,15 @@ require.d(exports, {
   LL: () => h,
   bN: () => f
 }), require("./388685.js"), require("./49124.js"), require("./539854.js"), require("./953529.js");
-var Chunk73800 = require("./73800.js"),
-  Chunk97519 = require("./97519.js"),
+var Chunk647438 = require("./647438.js"),
+  Chunk879690 = require("./879690.js"),
   Chunk731965 = require("./731965.js"),
   Chunk692114 = require("./692114.js"),
   Chunk626135 = require("./626135.js"),
   Chunk532810 = require("./532810.js"),
   Chunk981631 = require("./981631.js");
 let s = new Chunk692114.Z("a11y_violations"),
-  d = (0, Chunk97519.U)(() => ({
+  d = (0, Chunk879690.U)(() => ({
     check: null
   }));
 
@@ -53,14 +53,14 @@ function h() {
     }
     of module.values())
     for (let [e, a] of require.entries()) {
-      let n = Chunk97519.map(e => e.element),
-        l = Chunk97519[0].message;
+      let n = Chunk879690.map(e => e.element),
+        l = Chunk879690[0].message;
       exports.push({
         key: module,
-        title: Chunk73800.metadata.description,
-        description: Chunk73800.metadata.help,
-        id: Chunk73800.id,
-        tags: Chunk73800.tags,
+        title: Chunk647438.metadata.description,
+        description: Chunk647438.metadata.help,
+        id: Chunk647438.id,
+        tags: Chunk647438.tags,
         elements: require,
         message: Chunk731965
       })

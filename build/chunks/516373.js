@@ -4,13 +4,13 @@
 require.d(exports, {
   D: () => s
 });
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk675478 = require("./675478.js"),
   Chunk581883 = require("./581883.js");
 
 function s() {
-  return Chunk73800.useEffect(() => {
+  return Chunk647438.useEffect(() => {
     Chunk675478.DZ.loadIfNecessary()
   }, []), (0, Chunk442837.e7)([Chunk581883.Z], () => Chunk581883.Z.frecencyWithoutFetchingLatest)
 }

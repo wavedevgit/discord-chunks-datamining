@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => j
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -43,20 +43,20 @@ let _ = [{
 }];
 
 function j() {
-  let [e, t] = Chunk73800.useState(Math.round(window.outerWidth / window.innerWidth * 100)), {
+  let [e, t] = Chunk647438.useState(Math.round(window.outerWidth / window.innerWidth * 100)), {
     platformZoom: n,
     theme: s
   } = (0, Chunk442837.cj)([Chunk210887.Z, Chunk607070.Z], () => ({
     theme: Chunk210887.Z.theme,
     platformZoom: Chunk607070.Z.zoom
-  })), [j, E] = Chunk73800.useState("upright"), C = ["normal", "medium", "semibold", "bold", "extrabold"], O = new Map([
+  })), [j, E] = Chunk647438.useState("upright"), C = ["normal", "medium", "semibold", "bold", "extrabold"], O = new Map([
     ["normal", 400],
     ["medium", 500],
     ["semibold", 600],
     ["bold", 700],
     ["extrabold", 800]
   ]);
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     Chunk358085.isPlatformEmbedded || window.addEventListener("resize", () => {
       exports(Math.round(window.outerWidth / window.innerWidth * 100))
     })
@@ -68,7 +68,7 @@ function j() {
     }),
     [T, N] = (0, Chunk918222.R)("playground-overrideText", null),
     [I, y] = (0, Chunk918222.R)("playground-defaultText", _[0].value),
-    A = Chunk73800.useCallback(e => {
+    A = Chunk647438.useCallback(e => {
       let t = _.find(t => {
         let {
           value: n
@@ -77,24 +77,24 @@ function j() {
       });
       "" === e || null == e ? (y(_[0].value), N(null)) : null != t ? y(t.value) : (y("custom"), N(e))
     }, [N, y]);
-  return (0, Chunk255367.jsx)("div", {
+  return (0, Chunk951288.jsx)("div", {
     style: {
       "--playground-font-family": "mono" === j ? "gg mono" : "gg sans",
       "--playground-font-style": "italic" === j ? "italic" : "normal"
     },
-    children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+    children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H1,
-      children: [(0, Chunk255367.jsxs)("div", {
+      children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk461059.toolbar,
-        children: [(0, Chunk255367.jsxs)("div", {
-          children: [(0, Chunk255367.jsxs)(Chunk481060.Text, {
+        children: [(0, Chunk951288.jsxs)("div", {
+          children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
             tag: "div",
             variant: "heading-lg/bold",
             style: {
               display: "inline-block"
             },
             children: ["Zoom: ", v, "%"]
-          }), null != S ? (0, Chunk255367.jsxs)(Chunk481060.Text, {
+          }), null != S ? (0, Chunk951288.jsxs)(Chunk481060.Text, {
             tag: "div",
             variant: "heading-lg/bold",
             style: {
@@ -104,27 +104,27 @@ function j() {
             color: "header-secondary",
             children: ["(", S.id, ")"]
           }) : null]
-        }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
-          children: (0, Chunk255367.jsx)(Chunk481060.q4e, {
+        }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
+          children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
             className: Chunk461059.select,
             options: _,
             onChange: e => A(e),
             value: I
           })
-        }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
-          children: (0, Chunk255367.jsx)("div", {
+        }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
+          children: (0, Chunk951288.jsx)("div", {
             className: Chunk461059.input,
-            children: (0, Chunk255367.jsx)(Chunk481060.oil, {
+            children: (0, Chunk951288.jsx)(Chunk481060.oil, {
               placeholder: "Enter custom input...",
               value: null != T ? T : "",
               onChange: A
             })
           })
         })]
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         className: Chunk461059.toolbar,
-        children: [(0, Chunk255367.jsx)(Chunk481060.xJW, {
-          children: (0, Chunk255367.jsx)(Chunk481060.FXm, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
+          children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
             withTransparentBackground: true,
             className: Chunk461059.theme,
             orientation: "horizontal",
@@ -142,8 +142,8 @@ function j() {
             },
             value: Chunk120356
           })
-        }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
-          children: (0, Chunk255367.jsx)(Chunk481060.FXm, {
+        }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
+          children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
             withTransparentBackground: true,
             className: Chunk461059.theme,
             orientation: "horizontal",
@@ -163,9 +163,9 @@ function j() {
             value: j
           })
         })]
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         className: Chunk461059.textGrid,
-        children: [(0, Chunk255367.jsx)("div", {}), C.map(e => (0, i.jsx)("div", {
+        children: [(0, Chunk951288.jsx)("div", {}), C.map(e => (0, i.jsx)("div", {
           className: x.columnHeading,
           children: (0, i.jsx)(o.X6q, {
             variant: "eyebrow",

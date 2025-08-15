@@ -6,8 +6,8 @@ require.d(exports, {
   kA: () => er,
   qR: () => ea
 }), require("./953529.js"), require("./997841.js"), require("./388685.js"), require("./415506.js");
-var l, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var l, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -324,7 +324,7 @@ function J(e) {
 }
 
 function K() {
-  return (0, Chunk255367.jsx)(Chunk481060.ua7, {
+  return (0, Chunk951288.jsx)(Chunk481060.ua7, {
     text: Chunk388032.intl.string(Chunk388032.t.CfTySU),
     children: e => (0, i.jsx)("div", z(G({
       className: V.devShelfBadge

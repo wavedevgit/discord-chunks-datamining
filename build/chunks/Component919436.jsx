@@ -3,9 +3,9 @@
 require.d(exports, {
   Z: () => D
 }), require("./415506.js"), require("./388685.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
-  Chunk717976 = require("./717976.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk815061 = require("./815061.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -81,7 +81,7 @@ function A(e) {
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
 }
-class R extends(r = Chunk73800.PureComponent) {
+class R extends(r = Chunk647438.PureComponent) {
   componentWillEnter(e) {
     let {
       controller: t
@@ -138,7 +138,7 @@ class R extends(r = Chunk73800.PureComponent) {
     return {
       opacity: require,
       height: r.to([0, 1], [0, module]),
-      transform: Chunk255367.to([0, 1], [.5, 1]).to(e => "scale(".concat(e, ")"))
+      transform: Chunk951288.to([0, 1], [.5, 1]).to(e => "scale(".concat(e, ")"))
     }
   }
   getChannelIcon() {
@@ -163,7 +163,7 @@ class R extends(r = Chunk73800.PureComponent) {
     } = this.props, {
       hovered: h,
       animating: m
-    } = this.state, b = module.isMultiUserDM() && null == module.icon && Chunk43267, _ = () => (0, Chunk255367.jsx)(Chunk481060.LYs, w({
+    } = this.state, b = module.isMultiUserDM() && null == module.icon && Chunk43267, _ = () => (0, Chunk951288.jsx)(Chunk481060.LYs, w({
       to: Chunk981631.Z5c.CHANNEL(Chunk981631.ME, module.id),
       onMouseEnter: () => this.setState({
         hovered: true
@@ -179,7 +179,7 @@ class R extends(r = Chunk73800.PureComponent) {
       onContextMenu: this.handleContextMenu,
       icon: Chunk19780 ? true : this.getChannelIcon(),
       backgroundStyle: Chunk19780 ? "on-hover" : "always",
-      children: Chunk19780 ? (0, Chunk255367.jsx)(Chunk266076.Z, {
+      children: Chunk19780 ? (0, Chunk951288.jsx)(Chunk266076.Z, {
         channel: module,
         size: Chunk481060.EFr.SIZE_40,
         facepileSizeOverride: Chunk481060.EFr.SIZE_32,
@@ -187,23 +187,23 @@ class R extends(r = Chunk73800.PureComponent) {
         "aria-hidden": true
       }) : true
     }, Chunk933557));
-    return (0, Chunk255367.jsx)(Chunk717976.animated.div, {
+    return (0, Chunk951288.jsx)(Chunk815061.animated.div, {
       style: this.getAnimatedStyle(),
-      children: (0, Chunk255367.jsxs)(Chunk682662.H, {
-        children: [(0, Chunk255367.jsx)(Chunk276952.Z, {
+      children: (0, Chunk951288.jsxs)(Chunk682662.H, {
+        children: [(0, Chunk951288.jsx)(Chunk276952.Z, {
           hovered: !Chunk199902 && Chunk93687,
           selected: !Chunk199902 && require,
           unread: !Chunk199902 && Chunk358221,
           className: Chunk514483.pill
-        }), (0, Chunk255367.jsx)(Chunk662146.Z, {
+        }), (0, Chunk951288.jsx)(Chunk662146.Z, {
           text: null != exports ? exports : "",
           selected: require,
-          children: (0, Chunk255367.jsx)(Chunk481060.aRk, {
+          children: (0, Chunk951288.jsx)(Chunk481060.aRk, {
             rounded: true,
             selected: false,
             lowerBadge: r > 0 ? (0, Chunk674552.Ne)(r, true, true) : null,
             upperBadge: (0, Chunk674552.Or)({
-              audio: Chunk73800,
+              audio: Chunk647438,
               video: Chunk91192,
               screenshare: Chunk442837,
               isCurrentUserConnected: Chunk239091
@@ -257,7 +257,7 @@ N(R, "defaultProps", {
   video: false,
   isCurrentUserInThisDMCall: false
 });
-let D = Chunk73800.forwardRef(function(e, t) {
+let D = Chunk647438.forwardRef(function(e, t) {
   let n = e.channel.id,
     r = (0, f.ZP)(e.channel),
     l = (0, a.Ie)(n, 2),

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => S
 }), require("./388685.js"), require("./953529.js"), require("./781311.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -33,8 +33,8 @@ function S() {
     } = (0, Chunk136097.h)(),
     s = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
     a = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    [u, p] = Chunk73800.useState(false);
-  Chunk73800.useEffect(() => {
+    [u, p] = Chunk647438.useState(false);
+  Chunk647438.useEffect(() => {
     (0, Chunk266454.Q3)(Chunk704215.z.AUTH_SESSIONS_NEW, {
       dismissAction: Chunk921944.L.AUTO
     }), (0, Chunk43015.fw)();
@@ -49,22 +49,22 @@ function S() {
         rejectWithError: true
       })
     },
-    [j, S] = Chunk73800.useState(new Set);
-  return Chunk120356 ? (0, Chunk255367.jsx)(Chunk497321.Z, {}) : (e = null == exports && 0 === require.length ? Chunk230711 ? (0, Chunk255367.jsx)("div", {
+    [j, S] = Chunk647438.useState(new Set);
+  return Chunk120356 ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (e = null == exports && 0 === require.length ? Chunk230711 ? (0, Chunk951288.jsx)("div", {
     className: Chunk844642.loading,
-    children: (0, Chunk255367.jsx)(Chunk481060.$jN, {})
-  }) : null : (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-    children: [(0, Chunk255367.jsxs)("div", {
+    children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
+  }) : null : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk844642.sessions,
-      children: [(0, Chunk255367.jsx)(Chunk481060.hjN, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
         tag: Chunk481060.RB0.H5,
         title: Chunk388032.intl.string(Chunk388032.t.LLS19v),
         titleClassName: Chunk844642.groupTitle,
-        children: null != exports ? (0, Chunk255367.jsx)(T, {
+        children: null != exports ? (0, Chunk951288.jsx)(T, {
           session: exports,
           current: true
         }) : null
-      }), !(require.length > 0) && (null == a ? true : a.mfaEnabled) ? null : (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+      }), !(require.length > 0) && (null == a ? true : a.mfaEnabled) ? null : (0, Chunk951288.jsxs)(Chunk481060.hjN, {
         tag: Chunk481060.RB0.H5,
         title: Chunk388032.intl.string(Chunk388032.t.xx1MWV),
         titleClassName: Chunk844642.groupTitle,
@@ -77,18 +77,18 @@ function S() {
             let n = new Set(j);
             t ? n.add(e.id_hash) : n.delete(e.id_hash), S(n)
           }
-        }, e.id_hash)), (null == a ? true : a.mfaEnabled) ? null : (0, Chunk255367.jsx)(N, {})]
+        }, e.id_hash)), (null == a ? true : a.mfaEnabled) ? null : (0, Chunk951288.jsx)(N, {})]
       })]
-    }), require.length > 0 ? (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+    }), require.length > 0 ? (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H5,
       title: Chunk823379.size > 0 ? Chunk388032.intl.string(Chunk388032.t.mMEmRE) : Chunk388032.intl.string(Chunk388032.t.Vij32N),
-      children: [(0, Chunk255367.jsx)(Chunk481060.R94, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.geA.DESCRIPTION,
         children: Chunk388032.intl.string(Chunk388032.t.OTXyaW)
-      }), (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk951288.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: Chunk844642.logOutAllButton,
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "critical-secondary",
           size: "sm",
           text: Chunk823379.size > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["83CPLi"], {
@@ -100,25 +100,25 @@ function S() {
         })
       })]
     }) : null]
-  }), (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+  }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     tag: Chunk481060.RB0.H1,
     title: Chunk388032.intl.string(Chunk388032.t["+1h0k5"]),
-    children: [(0, Chunk255367.jsx)(Chunk481060.R94, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.geA.DESCRIPTION,
       className: Chunk844642.description,
       children: Chunk388032.intl.string(Chunk388032.t.zZp619)
-    }), (null == a ? true : a.isStaff()) ? (0, Chunk255367.jsxs)("div", {
+    }), (null == a ? true : a.isStaff()) ? (0, Chunk951288.jsxs)("div", {
       className: Chunk844642.tools,
-      children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         className: Chunk844642.toolsTitle,
         variant: "text-md/bold",
         children: "DEV TOOLS"
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         className: Chunk844642.toolsTitle,
         variant: "text-sm/normal",
         color: "text-danger",
         children: "These tools are only shown to staff users."
-      }), (0, Chunk255367.jsx)(Chunk481060.ua7, {
+      }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
         text: "Triggers mobile and email suspicious session notifications for the current user",
         children: e => {
           let {
@@ -227,28 +227,28 @@ function T(e) {
 }
 
 function N() {
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: a()(Chunk844642.session, Chunk844642.legacySession),
-    children: [(0, Chunk255367.jsx)("div", {
+    children: [(0, Chunk951288.jsx)("div", {
       className: Chunk844642.sessionIcon,
-      children: (0, Chunk255367.jsx)(Chunk460562.Z, {
+      children: (0, Chunk951288.jsx)(Chunk460562.Z, {
         width: "32",
         height: "32"
       })
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk844642.sessionInfo,
-      children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
         className: Chunk844642.sessionInfoRow,
         color: "text-muted",
-        children: (0, Chunk255367.jsx)("span", {
+        children: (0, Chunk951288.jsx)("span", {
           children: Chunk388032.intl.string(Chunk388032.t.iUa0sr)
         })
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         className: Chunk844642.sessionInfoRow,
         color: "text-muted",
-        children: (0, Chunk255367.jsx)("span", {
+        children: (0, Chunk951288.jsx)("span", {
           children: Chunk388032.intl.format(Chunk388032.t["044+8v"], {
             onClick: () => Chunk230711.Z.setSection(Chunk981631.oAB.ACCOUNT, null, {
               analyticsLocations: [Chunk100527.Z.USER_SETTINGS_SESSIONS]

@@ -4,8 +4,8 @@ require.d(exports, {
   M: () => m,
   Z: () => b
 }), require("./415506.js"), require("./781311.js"), require("./388685.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -108,7 +108,7 @@ function m(e, t, n) {
     "aria-selected": n
   }
 }
-class y extends(r = Chunk73800.PureComponent) {
+class y extends(r = Chunk647438.PureComponent) {
   renderQuery(e) {
     let {
       query: t,
@@ -189,14 +189,14 @@ class y extends(r = Chunk73800.PureComponent) {
       navId: n,
       className: r
     } = this.props, l = "" === module.trim();
-    return (0, Chunk255367.jsxs)("div", {
+    return (0, Chunk951288.jsxs)("div", {
       className: i()(Chunk575209.container, r),
       onMouseDown: S,
       role: "listbox",
       id: require,
       tabIndex: false,
       "aria-activedescendant": "".concat(require, "-").concat(exports),
-      children: [this.renderQuery(Chunk73800), this.renderSearchInSelectedChannelAutocomplete(), this.renderResults(Chunk73800)]
+      children: [this.renderQuery(Chunk647438), this.renderSearchInSelectedChannelAutocomplete(), this.renderResults(Chunk647438)]
     })
   }
   constructor(...e) {

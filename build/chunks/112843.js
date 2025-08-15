@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => u
 });
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk399606 = require("./399606.js"),
   Chunk745510 = require("./745510.jsx"),
   Chunk351780 = require("./351780.js");
@@ -35,14 +35,14 @@ let c = 7;
 function u() {
   let {
     createMultipleConfettiAt: e
-  } = Chunk73800.useContext(Chunk745510.h), t = (0, Chunk399606.e7)([Chunk351780.Z], () => Chunk351780.Z.getState()), n = Chunk73800.useCallback(e => ({
+  } = Chunk647438.useContext(Chunk745510.h), t = (0, Chunk399606.e7)([Chunk351780.Z], () => Chunk351780.Z.getState()), n = Chunk647438.useCallback(e => ({
     size: {
       type: "static-random",
       minValue: e.confettiSize - c,
       maxValue: e.confettiSize + c
     }
   }), []);
-  return Chunk73800.useMemo(() => ({
+  return Chunk647438.useMemo(() => ({
     fire: (r, i, a) => {
       var o, s;
       let c = (null == a ? true : a.settings) != null ? l({}, t, a.settings) : t;

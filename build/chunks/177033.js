@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => c
 });
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk592125 = require("./592125.js"),
   Chunk594174 = require("./594174.js"),
@@ -24,7 +24,7 @@ function c() {
         null != n && (e[t.id] = n)
       }), module
     }, [exports]);
-  return Chunk73800.useMemo(() => exports.map(e => ({
+  return Chunk647438.useMemo(() => exports.map(e => ({
     channel: e,
     user: n[e.id]
   })), [exports, require])

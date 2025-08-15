@@ -3,15 +3,15 @@
 require.d(exports, {
   Z: () => m
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk7093 = require("./7093.js"),
   Chunk101966 = require("./101966.js"),
   Chunk40347 = require("./40347.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk92038 = require("./92038.js");
-let u = Chunk73800.lazy(() => require.e("22274").then(require.bind(require, 269792)));
+let u = Chunk647438.lazy(() => require.e("22274").then(require.bind(require, 269792)));
 
 function m() {
   let e = (0, Chunk101966.Z)({
@@ -19,7 +19,7 @@ function m() {
     }),
     t = (0, Chunk7093.Z)(e => e.shouldRenderTenureLevelUp),
     n = (0, Chunk40347.Z)();
-  return module && exports && null != require ? (0, Chunk255367.jsx)(p, {
+  return module && exports && null != require ? (0, Chunk951288.jsx)(p, {
     levelUpData: require
   }) : null
 }

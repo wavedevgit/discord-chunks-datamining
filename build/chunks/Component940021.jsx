@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => u
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk63063 = require("./63063.js"),
   Chunk695346 = require("./695346.js"),
   Chunk838436 = require("./838436.jsx"),
@@ -15,9 +15,9 @@ var Chunk63063 = require("./63063.js"),
 
 function u() {
   let e = Chunk695346.bh.useSetting();
-  return (0, Chunk255367.jsx)(Chunk838436.U, {
+  return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_DATA_QUESTS_V2,
-    children: (0, Chunk255367.jsx)(Chunk51331.Z, {
+    children: (0, Chunk951288.jsx)(Chunk51331.Z, {
       title: Chunk388032.intl.string(Chunk388032.t.VkS7YW),
       note: Chunk388032.intl.format(Chunk388032.t["7Q2yX1"], {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_PRIVACY_CONTROLS)

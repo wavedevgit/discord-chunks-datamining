@@ -1361,7 +1361,7 @@
             return 48 <= t && 57 >= t ? `_${e}` : e
           }
 
-          function e5(e, t) {
+          function e8(e, t) {
             return ({
               [e = e4(e)]: function() {
                 return t.apply(this, arguments)
@@ -1372,13 +1372,13 @@
           function e6() {
             this.M = [true], this.hb = []
           }
-          var e8 = new e6,
+          var e5 = new e6,
             e7 = true;
 
           function e9(e) {
             throw new e7(e)
           }
-          var te = e => (e || e9("Cannot use deleted val. handle = " + e), e8.get(e).value),
+          var te = e => (e || e9("Cannot use deleted val. handle = " + e), e5.get(e).value),
             tt = e => {
               switch (e) {
                 case true:
@@ -1388,7 +1388,7 @@
                   casetrue: return 3;
                   casefalse: return 4;
                 default:
-                  return e8.pa({
+                  return e5.pa({
                     tb: 1,
                     value: e
                   })
@@ -1397,7 +1397,7 @@
 
           function tn(e) {
             var t = Error,
-              n = e5(e, function(t) {
+              n = e8(e, function(t) {
                 this.name = e, this.message = t, true !== (t = Error(t).stack) && (this.stack = this.toString() + "\n" + t.replace(/^Error(:[^\n]*)?\n/, ""))
               });
             return n.prototype = Object.create(t.prototype), n.prototype.constructor = n, n.prototype.toString = function() {
@@ -1687,7 +1687,7 @@
           }
 
           function t$(e) {
-            e >= e8.h && 0 == --e8.get(e).tb && e8.Zb(e)
+            e >= e5.h && 0 == --e5.get(e).tb && e5.Zb(e)
           }
 
           function t0(e, t, n) {
@@ -1755,7 +1755,7 @@
             }
           }
           var t4 = "undefined" != typeof TextDecoder ? new TextDecoder("utf-16le") : true,
-            t5 = (e, t) => {
+            t8 = (e, t) => {
               for (var n = e >> 1, r = n + t / 2; !(n >= r) && N[n];) ++n;
               if (32 < (n <<= 1) - e && t4) return t4.decode(S.subarray(e, n));
               for (r = 0, n = ""; !(r >= t / 2); ++r) {
@@ -1773,7 +1773,7 @@
               for (var i = 0; i < n; ++i) A[t >> 1] = e.charCodeAt(i), t += 2;
               return A[t >> 1] = 0, t - r
             },
-            t8 = e => 2 * e.length,
+            t5 = e => 2 * e.length,
             t7 = (e, t) => {
               for (var n = 0, r = ""; !(n >= t / 4);) {
                 var i = C[e + 4 * n >> 2];
@@ -2053,7 +2053,7 @@
             constructor(e) {
               super(e), this.name = "BindingError"
             }
-          }, e8.M.push({
+          }, e5.M.push({
             value: true
           }, {
             value: null
@@ -2061,8 +2061,8 @@
             value: true
           }, {
             value: false
-          }), e8.h = e8.M.length, a.count_emval_handles = function() {
-            for (var e = 0, t = e8.h; t < e8.M.length; ++t) true !== e8.M[t] && ++e;
+          }), e5.h = e5.M.length, a.count_emval_handles = function() {
+            for (var e = 0, t = e5.h; t < e5.M.length; ++t) true !== e5.M[t] && ++e;
             return e
           }, tr = a.PureVirtualError = tn("PureVirtualError");
           for (var nm = Array(256), ng = 0; 256 > ng; ++ng) nm[ng] = String.fromCharCode(ng);
@@ -2250,7 +2250,7 @@
                 a = i.N,
                 o = i.A.N,
                 s = i.A.constructor;
-              for (var l in e = e5(e, function() {
+              for (var l in e = e8(e, function() {
                   i.A.qb.forEach((function(e) {
                     if (this[e] === o[e]) throw new tr(`Pure virtual function ${e} must be implemented in JavaScript`)
                   }).bind(this)), Object.defineProperty(this, "__parent", {
@@ -2348,7 +2348,7 @@
                 else i = tx.prototype;
                 var o = Object.create(i, {
                   constructor: {
-                    value: t = e5(_, function() {
+                    value: t = e8(_, function() {
                       if (Object.getPrototypeOf(this) !== o) throw new e7("Use 'new' to construct " + u);
                       if (true === l.$) throw new e7(u + " has no accessible constructor");
                       var e = l.$[arguments.length];
@@ -2516,7 +2516,7 @@
                   value: n
                 },
                 constructor: {
-                  value: e5(`${r.name}_${t}`, function() {})
+                  value: e8(`${r.name}_${t}`, function() {})
                 }
               }), e.values[n] = r, e[t] = r
             },
@@ -2623,9 +2623,9 @@
               })
             },
             _embind_register_std_wstring: function(e, t, n) {
-              if (n = ta(n), 2 === t) var r = t5,
+              if (n = ta(n), 2 === t) var r = t8,
                 i = t6,
-                a = t8,
+                a = t5,
                 o = () => N,
                 s = 1;
               else 4 === t && (r = t7, i = t9, a = ne, o = () => R, s = 2);
@@ -2716,7 +2716,7 @@
               return tt((e = te(e))[t = te(t)])
             },
             _emval_incref: function(e) {
-              4 < e && (e8.get(e).tb += 1)
+              4 < e && (e5.get(e).tb += 1)
             },
             _emval_new_array: function() {
               return tt([])

@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => c
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk834427 = require("./834427.jsx");
 
 function o(e, t, n) {
@@ -29,7 +29,7 @@ function s(e) {
   }
   return e
 }
-class l extends Chunk73800.Component {
+class l extends Chunk647438.Component {
   activateUploadDialogue() {
     if (null != this._ref) return this._ref.activateUploadDialogue()
   }
@@ -37,7 +37,7 @@ class l extends Chunk73800.Component {
     this._ref = e
   }
   render() {
-    return (0, Chunk255367.jsx)(Chunk834427.S, s({
+    return (0, Chunk951288.jsx)(Chunk834427.S, s({
       ref: this.setRef
     }, this.props))
   }

@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => g
 }), require("./290780.js");
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk857595 = require("./857595.js"),
@@ -86,15 +86,15 @@ function g() {
       enabled: !h
     }), (0, Chunk857595.X2)(!h)
   }
-  let y = [(0, Chunk255367.jsx)(Chunk481060.kSQ, {
-    children: (0, Chunk255367.jsx)(Chunk481060.S89, {
+  let y = [(0, Chunk951288.jsx)(Chunk481060.kSQ, {
+    children: (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "reduced-motion",
       label: Chunk388032.intl.string(Chunk388032.t.b3XBzs),
       checked: exports,
       action: () => (0, Chunk857595.Zt)(exports ? "no-preference" : "reduce")
     })
-  }, "reduced-motion"), (0, Chunk255367.jsx)(Chunk481060.kSQ, {
-    children: (0, Chunk255367.jsx)(Chunk481060.II_, {
+  }, "reduced-motion"), (0, Chunk951288.jsx)(Chunk481060.kSQ, {
+    children: (0, Chunk951288.jsx)(Chunk481060.II_, {
       id: "input",
       label: Chunk388032.intl.string(Chunk388032.t["5PWWCQ"]),
       control: (t, n) => (0, r.jsx)(a._wy, m(p({}, t), {
@@ -104,8 +104,8 @@ function g() {
         "aria-label": d.intl.string(d.t["5PWWCQ"])
       }))
     })
-  }, "input"), (0, Chunk255367.jsx)(Chunk481060.kSQ, {
-    children: (0, Chunk255367.jsx)(Chunk481060.sNh, {
+  }, "input"), (0, Chunk951288.jsx)(Chunk481060.kSQ, {
+    children: (0, Chunk951288.jsx)(Chunk481060.sNh, {
       id: "role-colors",
       label: Chunk388032.intl.string(Chunk388032.t.uSOPWl),
       children: E.map(e => {
@@ -122,16 +122,16 @@ function g() {
         }, i)
       })
     })
-  }, "role-colors"), (0, Chunk255367.jsx)(Chunk481060.kSQ, {
-    children: (0, Chunk255367.jsx)(Chunk481060.S89, {
+  }, "role-colors"), (0, Chunk951288.jsx)(Chunk481060.kSQ, {
+    children: (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "display-name-styles",
       label: Chunk388032.intl.string(Chunk693450.default["2gFUEx"]),
       checked: h,
       action: b
     })
   }, "display-name-styles")];
-  return g && y.unshift((0, Chunk255367.jsx)(Chunk481060.kSQ, {
-    children: (0, Chunk255367.jsx)(Chunk481060.S89, {
+  return g && y.unshift((0, Chunk951288.jsx)(Chunk481060.kSQ, {
+    children: (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "high-contrast",
       label: "Enable High Contrast Mode",
       checked: _,

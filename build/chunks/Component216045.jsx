@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => z
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -119,28 +119,28 @@ function z() {
     }),
     et = (0, Chunk266454.Nj)(Chunk704215.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
     en = ee && !et;
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     en && (0, Chunk266454.Q3)(Chunk704215.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
       forceTrack: true
     })
   }, [en]);
   let [ei, er] = (0, Chunk243778.US)([Chunk704215.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE]), es = ei === Chunk704215.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE;
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     es && er(Chunk921944.L.TAKE_ACTION)
   }, [es, er]);
   let [ea, el] = (0, Chunk243778.US)([Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE]), eo = ea === Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE;
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     eo && el(Chunk921944.L.TAKE_ACTION)
-  }, [eo, el]), Chunk73800.useEffect(() => () => Chunk570140.Z.wait(Chunk809206.W3), []);
-  let [ec, ed] = Chunk73800.useState(false), {
+  }, [eo, el]), Chunk647438.useEffect(() => () => Chunk570140.Z.wait(Chunk809206.W3), []);
+  let [ec, ed] = Chunk647438.useState(false), {
     showRedesign: eu
   } = Chunk413182.b.useExperiment({
     location: "profile customization"
-  }), em = !J, ep = Chunk73800.useRef(null);
-  return exports ? (0, Chunk255367.jsx)(Chunk497321.Z, {}) : (0, Chunk255367.jsxs)(Chunk906732.Gt, {
+  }), em = !J, ep = Chunk647438.useRef(null);
+  return exports ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)(Chunk906732.Gt, {
     value: Q,
-    children: [(0, Chunk255367.jsx)(Chunk475977.Z, {}), (0, Chunk255367.jsx)(Chunk296810.Z, {
-      profilePreview: (0, Chunk255367.jsx)(Chunk678135.Z, H(F({
+    children: [(0, Chunk951288.jsx)(Chunk475977.Z, {}), (0, Chunk951288.jsx)(Chunk296810.Z, {
+      profilePreview: (0, Chunk951288.jsx)(Chunk678135.Z, H(F({
         user: module,
         canUsePremiumCustomization: J,
         onUpsellClick: Chunk265159.Z,
@@ -148,7 +148,7 @@ function z() {
       }, Y), {
         pendingAvatar: K
       })),
-      nameplatePreview: (0, Chunk255367.jsx)(Chunk22267.Z, H(F({
+      nameplatePreview: (0, Chunk951288.jsx)(Chunk22267.Z, H(F({
         user: module,
         nameplate: W,
         nameplateData: true === W ? module.nameplate : true
@@ -156,21 +156,21 @@ function z() {
         className: Chunk391371.nameplatePreview,
         isHighlighted: true
       })),
-      children: (0, Chunk255367.jsx)(Chunk532495.Z, {})
-    }), eu && (0, Chunk255367.jsx)(Chunk610794.Z, {}), (0, Chunk255367.jsx)(Chunk622535.$, {
+      children: (0, Chunk951288.jsx)(Chunk532495.Z, {})
+    }), eu && (0, Chunk951288.jsx)(Chunk610794.Z, {}), (0, Chunk951288.jsx)(Chunk622535.$, {
       innerRef: ep,
       onChange: e => ed(e),
       threshold: .25,
       active: em,
-      children: (0, Chunk255367.jsx)("div", {
+      children: (0, Chunk951288.jsx)("div", {
         ref: ep,
-        children: (0, Chunk255367.jsx)(Chunk935147.Z, {
+        children: (0, Chunk951288.jsx)(Chunk935147.Z, {
           user: module,
           shouldShow: em,
           isVisible: ec
         })
       })
-    }), em && !q && (0, Chunk255367.jsx)(Chunk53691.p, {
+    }), em && !q && (0, Chunk951288.jsx)(Chunk53691.p, {
       className: Chunk391371.floatingNitroUpsell,
       showUpsell: em && !ec,
       text: Chunk388032.intl.format(Chunk388032.t.TmfgIy, {
@@ -179,7 +179,7 @@ function z() {
         })
       }),
       textVariant: "heading-md/medium",
-      button: (0, Chunk255367.jsxs)(Chunk481060.gtL, {
+      button: (0, Chunk951288.jsxs)(Chunk481060.gtL, {
         className: Chunk391371.floatingNitroButton,
         innerClassName: Chunk391371.floatingNitroButtonInner,
         onClick: () => {
@@ -192,10 +192,10 @@ function z() {
         },
         color: Chunk755721.zx.Colors.GREEN,
         size: Chunk755721.Ph.MEDIUM,
-        children: [(0, Chunk255367.jsx)(Chunk481060.SrA, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.SrA, {
           size: "sm",
           color: "currentColor"
-        }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/medium",
           color: "currentColor",
           children: Chunk388032.intl.string(Chunk388032.t.uw9zIy)

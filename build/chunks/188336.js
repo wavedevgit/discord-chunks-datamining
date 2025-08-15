@@ -1,9 +1,8 @@
-/** Chunk was on 32160 **/
+/** Chunk was on 17768 **/
 /** chunk id: 188336, original params: e,t,n (module,exports,require) **/
 module.exports = {
   modalRoot: "modalRoot_c50f62",
   modalContent: "modalContent_c50f62",
-  profilePreviewHeader: "profilePreviewHeader_c50f62",
   collectibleInfoContainer: "collectibleInfoContainer_c50f62",
   collectiblePreviewsContainer: "collectiblePreviewsContainer_c50f62",
   previewsContainerInner: "previewsContainerInner_c50f62",
@@ -12,6 +11,7 @@ module.exports = {
   collectiblePreviewsContainerNoChat: "collectiblePreviewsContainerNoChat_c50f62 collectiblePreviewsContainer_c50f62",
   collectiblePreviewsContainerWithChat: "collectiblePreviewsContainerWithChat_c50f62 collectiblePreviewsContainer_c50f62",
   fractionalNitroPreviewContainer: "fractionalNitroPreviewContainer_c50f62 collectiblePreviewsContainer_c50f62",
+  pdpControls: "pdpControls_c50f62",
   avatarPreviewContainer: "avatarPreviewContainer_c50f62",
   pfxPreviewContainer: "pfxPreviewContainer_c50f62",
   bundlePreviewContainer: "bundlePreviewContainer_c50f62",
@@ -33,8 +33,6 @@ module.exports = {
   mockInput: "mockInput_c50f62",
   mockInputButton: "mockInputButton_c50f62",
   titleContainer: "titleContainer_c50f62",
-  titleImageContainer: "titleImageContainer_c50f62",
-  titleImage: "titleImage_c50f62",
   description: "description_c50f62",
   disclaimer: "disclaimer_c50f62",
   disclaimerLight: "disclaimerLight_c50f62",
@@ -46,7 +44,6 @@ module.exports = {
   buttonsContainer: "buttonsContainer_c50f62",
   checkoutButtonsRow: "checkoutButtonsRow_c50f62",
   variantsSwitch: "variantsSwitch_c50f62",
-  headerButtonContainer: "headerButtonContainer_c50f62",
   externalProductProfilePreview: "externalProductProfilePreview_c50f62",
   orbIconAligned: "orbIconAligned_c50f62",
   modalFooter: "modalFooter_c50f62",

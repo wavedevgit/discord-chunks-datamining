@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => m
 });
-var Chunk255367 = require("./255367.js"),
+var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk626562 = require("./626562.js"),
@@ -21,9 +21,9 @@ function m() {
     p = (0, Chunk626562.V)({
       location: "UserProfileAccountPopoutMenuItemStatusLabel"
     });
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk61952.container,
-    children: [require, require.length > 0 && p && m && (0, Chunk255367.jsx)(Chunk481060.ua7, {
+    children: [require, require.length > 0 && p && m && (0, Chunk951288.jsx)(Chunk481060.ua7, {
       text: Chunk388032.intl.string(Chunk388032.t.L99HQk),
       children: e => (0, i.jsx)(s.Mgn, function(e) {
         for (var t = 1; t < arguments.length; t++) {

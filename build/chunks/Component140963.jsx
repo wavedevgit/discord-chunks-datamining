@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => I
 }), require("./781311.js"), require("./35282.js"), require("./388685.js"), require("./704826.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -58,7 +58,7 @@ function b(e, t) {
 }
 let y = ":",
   O = /(\t|\s)/;
-class v extends Chunk73800.PureComponent {
+class v extends Chunk647438.PureComponent {
   componentDidMount() {
     this.props.disableAutoFocus || (Promise.resolve().then(() => {
       var e;
@@ -92,7 +92,7 @@ class v extends Chunk73800.PureComponent {
       r = module.selectionEnd;
     for (; require > 0 && !O.test(exports[require - 1]);) require--;
     return {
-      word: exports.slice(require, Chunk255367),
+      word: exports.slice(require, Chunk951288),
       isAtStart: 0 === require
     }
   }
@@ -166,11 +166,11 @@ class v extends Chunk73800.PureComponent {
       "aria-expanded": m,
       "aria-activedescendant": g
     } = this.props;
-    return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-      children: [(0, Chunk255367.jsx)(Chunk459273.d9, {
+    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      children: [(0, Chunk951288.jsx)(Chunk459273.d9, {
         event: Chunk981631.CkL.GLOBAL_CLIPBOARD_PASTE,
         handler: this.handleGlobalPaste
-      }), (0, Chunk255367.jsx)(Chunk481060.lcI, {
+      }), (0, Chunk951288.jsx)(Chunk481060.lcI, {
         ref: this.handleSetRef,
         className: o()(Chunk239091, Chunk358085),
         id: Chunk555573,
@@ -178,7 +178,7 @@ class v extends Chunk73800.PureComponent {
         fontWidthEstimate: 6,
         placeholder: require,
         disabled: exports || Chunk998698,
-        required: Chunk73800,
+        required: Chunk647438,
         onChange: this.handleOnChange,
         onResize: Chunk120356,
         onKeyPress: this.handleKeyPress,

@@ -4,8 +4,8 @@
 require.d(exports, {
   default: () => F
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -92,23 +92,23 @@ let C = e => {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 };
-class A extends Chunk73800.PureComponent {
+class A extends Chunk647438.PureComponent {
   renderSMSSection() {
     let {
       currentUser: e
     } = this.props, t = null != this.props.currentUser.phone, n = module.hasFlag(Chunk981631.xW$.MFA_SMS), o = module.hasFlag(Chunk981631.xW$.PARTNER) || module.hasFlag(Chunk981631.xW$.STAFF);
-    return exports ? (0, Chunk255367.jsxs)(C, {
+    return exports ? (0, Chunk951288.jsxs)(C, {
       label: Chunk388032.intl.string(Chunk388032.t.DZQe29),
       text: Chunk388032.intl.string(Chunk388032.t.fspJ4O),
-      children: [(0, Chunk255367.jsxs)(Chunk481060.Text, {
+      children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         className: Chunk505198.sectionBody,
-        children: [(0, Chunk255367.jsx)("strong", {
+        children: [(0, Chunk951288.jsx)("strong", {
           className: Chunk505198.phoneNumber,
           children: Chunk388032.intl.format(Chunk388032.t.PXVoEB, {
             phoneNumber: module.phone
           })
-        }), (0, Chunk255367.jsx)(Chunk755721.zx, {
+        }), (0, Chunk951288.jsx)(Chunk755721.zx, {
           look: Chunk755721.zx.Looks.LINK,
           color: Chunk755721.zx.Colors.LINK,
           size: Chunk755721.zx.Sizes.MIN,
@@ -116,22 +116,22 @@ class A extends Chunk73800.PureComponent {
           onClick: this.handleChangePhoneNumber,
           children: Chunk388032.intl.string(Chunk388032.t.Ulqq6O)
         })]
-      }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "active",
         size: "sm",
-        text: Chunk73800 ? Chunk388032.intl.string(Chunk388032.t.Sq6Q1t) : require ? Chunk388032.intl.string(Chunk388032.t.kSbHTE) : Chunk388032.intl.string(Chunk388032.t.DZQe29),
+        text: Chunk647438 ? Chunk388032.intl.string(Chunk388032.t.Sq6Q1t) : require ? Chunk388032.intl.string(Chunk388032.t.kSbHTE) : Chunk388032.intl.string(Chunk388032.t.DZQe29),
         onClick: this.handleEnableSMS,
-        disabled: require || Chunk73800
+        disabled: require || Chunk647438
       })]
-    }) : (0, Chunk255367.jsx)(C, {
+    }) : (0, Chunk951288.jsx)(C, {
       label: Chunk388032.intl.string(Chunk388032.t.DZQe29),
       text: Chunk388032.intl.string(Chunk388032.t.fspJ4O),
-      children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "active",
         size: "sm",
-        text: Chunk73800 ? Chunk388032.intl.string(Chunk388032.t.Sq6Q1t) : Chunk388032.intl.string(Chunk388032.t["O5qS/v"]),
+        text: Chunk647438 ? Chunk388032.intl.string(Chunk388032.t.Sq6Q1t) : Chunk388032.intl.string(Chunk388032.t["O5qS/v"]),
         onClick: this.handleEnableSMS,
-        disabled: Chunk73800
+        disabled: Chunk647438
       })
     })
   }
@@ -213,13 +213,13 @@ class A extends Chunk73800.PureComponent {
     } = this.props, {
       showConfirmModal: t
     } = this.state;
-    return (0, Chunk255367.jsxs)(Chunk481060.Y0X, {
+    return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: module,
       className: Chunk505198.modal,
       parentComponent: "MFAEnableSuccess",
-      children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t["681MPT"]), Chunk388032.intl.format(Chunk388032.t.pQioMz, {})), (0, Chunk255367.jsxs)(Chunk481060.hzk, {
+      children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t["681MPT"]), Chunk388032.intl.format(Chunk388032.t.pQioMz, {})), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
         className: Chunk505198.modalInner,
-        children: [this.renderSMSSection(), (0, Chunk255367.jsx)(Chunk481060.$i$, {
+        children: [this.renderSMSSection(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
           className: Chunk505198.divider
         }), this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.M0Dogo, {}))]
       }), exports && this.renderConfirmModal(Chunk388032.intl.string(Chunk388032.t.WJFPHB))]
@@ -231,11 +231,11 @@ class A extends Chunk73800.PureComponent {
     } = this.props, {
       showConfirmModal: t
     } = this.state;
-    return (0, Chunk255367.jsxs)(Chunk481060.Y0X, {
+    return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: module,
       className: Chunk505198.modal,
       parentComponent: "MFAEnableSuccess",
-      children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t.x6ielJ), Chunk388032.intl.format(Chunk388032.t.Xb5JGh, {})), (0, Chunk255367.jsx)(Chunk481060.hzk, {
+      children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t.x6ielJ), Chunk388032.intl.format(Chunk388032.t.Xb5JGh, {})), (0, Chunk951288.jsx)(Chunk481060.hzk, {
         className: Chunk505198.modalInner,
         children: this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.p59QLS, {}))
       }), exports && this.renderConfirmModal(Chunk388032.intl.string(Chunk388032.t.aoNIXF))]

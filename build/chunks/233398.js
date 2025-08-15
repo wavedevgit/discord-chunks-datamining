@@ -6,11 +6,11 @@ require.d(exports, {
   Dp: () => a,
   Ig: () => s
 });
-var Chunk97519 = require("./97519.js"),
+var Chunk879690 = require("./879690.js"),
   Chunk731965 = require("./731965.js");
 let a = "#5865F2",
   o = 74,
-  s = (0, Chunk97519.U)(e => ({
+  s = (0, Chunk879690.U)(e => ({
     colors: [],
     chassisMixAmount: o,
     gradientAngle: 0,

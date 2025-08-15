@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => R
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -74,7 +74,7 @@ function R() {
         }
         return e
       }({}, require), t = t = {
-        errors: Chunk255367
+        errors: Chunk951288
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -99,64 +99,64 @@ function R() {
     et = (null != (n = null == (e = Y.global_name) ? true : module.length) ? require : 0) > 0 ? Y.global_name : null != (r = null == q ? true : q.nick) ? Chunk512722 : [],
     en = (null != (R = null == (t = Y.bio) ? true : exports.length) ? R : 0) > 0 ? Y.bio : null != (D = null == q ? true : q.bio) ? D : [],
     ei = (0, Chunk396402.w)();
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk436360.sectionsContainer,
-    children: [(0, Chunk255367.jsx)(Chunk349177.Z, {
+    children: [(0, Chunk951288.jsx)(Chunk349177.Z, {
       placeholder: k.username,
       errors: et,
       currentGlobalName: k.globalName,
       pendingGlobalName: M,
       onGlobalNameChange: Chunk809206.W0,
       user: k
-    }), (0, Chunk255367.jsx)(Chunk906364.Z, {
+    }), (0, Chunk951288.jsx)(Chunk906364.Z, {
       sectionTitle: Chunk388032.intl.string(Chunk388032.t["+T3RIy"]),
       errors: Y.pronouns,
       onPronounsChange: Chunk350327.ID,
       pendingPronouns: G,
       currentPronouns: null != (Z = null == L ? true : L.pronouns) ? Z : ""
-    }, "pronouns"), (0, Chunk255367.jsx)(Chunk532432.Z, {
+    }, "pronouns"), (0, Chunk951288.jsx)(Chunk532432.Z, {
       onAvatarChange: Chunk809206.I5,
       showRemoveAvatarButton: J,
       errors: Y.avatar,
       sectionTitle: Chunk388032.intl.string(Chunk388032.t.lqaIxM),
       forcedDivider: true
-    }, "avatar"), (0, Chunk255367.jsx)(Chunk433411.Z, {
+    }, "avatar"), (0, Chunk951288.jsx)(Chunk433411.Z, {
       user: k,
       sectionTitle: Chunk388032.intl.string(Chunk388032.t["7v0T9P"])
-    }, "decoration"), (0, Chunk255367.jsx)(Chunk818420.Z, {
+    }, "decoration"), (0, Chunk951288.jsx)(Chunk818420.Z, {
       user: k
-    }), (0, Chunk255367.jsx)(Chunk513901.Z, {
+    }), (0, Chunk951288.jsx)(Chunk513901.Z, {
       user: k,
       sectionTitle: Chunk388032.intl.string(Chunk388032.t.wR5wOj)
-    }, "effect"), X ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-      children: [(0, Chunk255367.jsx)(Chunk134795.Z, {
+    }, "effect"), X ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      children: [(0, Chunk951288.jsx)(Chunk134795.Z, {
         showRemoveBannerButton: Q,
         errors: Y.banner,
         onBannerChange: Chunk350327.g_,
         forcedDivider: true
-      }, "banner"), (0, Chunk255367.jsx)(Chunk451392.Z, {
+      }, "banner"), (0, Chunk951288.jsx)(Chunk451392.Z, {
         user: k,
         pendingAvatarSrc: K,
         pendingColors: H,
         onThemeColorsChange: Chunk350327.z5,
         forcedDivider: true
       })]
-    }) : (0, Chunk255367.jsx)(Chunk610966.Z, {
+    }) : (0, Chunk951288.jsx)(Chunk610966.Z, {
       user: k,
       savedUserColor: null == L ? true : L.accentColor,
       pendingColor: F,
       setPendingAccentColor: Chunk350327.CM
-    }, "color"), (0, Chunk255367.jsx)(Chunk126631.Z, {
+    }, "color"), (0, Chunk951288.jsx)(Chunk126631.Z, {
       sectionTitle: Chunk388032.intl.string(Chunk388032.t.NepzEx),
       errors: en,
       onBioChange: e => (0, u.xQ)(e, null == L ? true : L.bio),
       pendingBio: V,
       currentBio: null != (w = null == L ? true : L.bio) ? w : ""
-    }, "bio"), ei.length > 0 && (0, Chunk255367.jsx)(Chunk74469.Z, {
+    }, "bio"), ei.length > 0 && (0, Chunk951288.jsx)(Chunk74469.Z, {
       availablePrimaryGuilds: ei,
       pendingPrimaryGuildId: W,
       onChange: e => (0, l.s4)(e)
-    }), null != ee && (0, Chunk255367.jsx)(Chunk872736.Z, {
+    }), null != ee && (0, Chunk951288.jsx)(Chunk872736.Z, {
       legacyUsername: ee,
       pendingLegacyUsernameDisabled: z
     }, "legacy_username")]

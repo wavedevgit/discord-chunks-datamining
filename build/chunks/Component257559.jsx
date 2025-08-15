@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => I
 }), require("./997841.js"), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk82659 = require("./82659.jsx"),
@@ -62,7 +62,7 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class D extends Chunk73800.PureComponent {
+class D extends Chunk647438.PureComponent {
   render() {
     let e, t, n = Chunk724723.Z.getCurrentConfig({
         location: "DeleteModal"
@@ -94,29 +94,29 @@ class D extends Chunk73800.PureComponent {
         return r
       }(s, ["channel", "message", "showContextMenuHint", "moderatorReportData"]),
       j = Chunk755721.type === Chunk981631.d4z.GUILD_ANNOUNCEMENT && (0, Chunk630388.yE)(Chunk332148.flags, Chunk981631.iLy.CROSSPOSTED);
-    Chunk904245 && (e = (0, Chunk255367.jsx)(Chunk576855.Z, {
+    Chunk904245 && (e = (0, Chunk951288.jsx)(Chunk576855.Z, {
       className: Chunk477425.spacingTop,
       children: Chunk388032.intl.format(Chunk388032.t.IxY7Ex, {})
-    })), (0, Chunk970257.vc)(Chunk332148) && (t = (0, Chunk255367.jsx)(Chunk481060.j7V, {
-      value: Chunk73800,
+    })), (0, Chunk970257.vc)(Chunk332148) && (t = (0, Chunk951288.jsx)(Chunk481060.j7V, {
+      value: Chunk647438,
       onChange: this.handleToggleReport,
       hideBorder: true,
       className: Chunk477425.spacingTop,
       children: Chunk388032.intl.string(Chunk388032.t.x0jzo6)
     }));
     let v = Chunk501517 ? Chunk388032.intl.string(Chunk388032.t["2kHABQ"]) : Chunk388032.intl.string(Chunk388032.t.AMvpS0),
-      y = (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-        children: [(0, Chunk255367.jsx)("div", {
+      y = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        children: [(0, Chunk951288.jsx)("div", {
           className: Chunk477425.message,
-          children: (0, Chunk255367.jsx)(Chunk294218.Z, {
+          children: (0, Chunk951288.jsx)(Chunk294218.Z, {
             channel: Chunk755721,
             message: Chunk332148,
             disableInteraction: true
           })
         }), exports, module]
       }),
-      P = (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-        children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      P = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/medium",
           className: Chunk477425.spacing,
           children: Chunk699516
@@ -126,34 +126,34 @@ class D extends Chunk73800.PureComponent {
       let {
         isFlagResolved: e
       } = Chunk933557;
-      return (0, Chunk255367.jsx)(Chunk372900.Z.Provider, {
+      return (0, Chunk951288.jsx)(Chunk372900.Z.Provider, {
         value: Chunk755721.guild_id,
-        children: (0, Chunk255367.jsxs)(Chunk481060.Y0X, T(S({
+        children: (0, Chunk951288.jsxs)(Chunk481060.Y0X, T(S({
           parentComponent: "DeleteModal"
         }, Chunk726521), {
-          children: [(0, Chunk255367.jsx)(Chunk481060.xBx, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.xBx, {
             separator: false,
-            children: (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+            children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
               direction: "vertical",
               justify: "space-between",
-              children: [(0, Chunk255367.jsx)(Chunk481060.olH, {
+              children: [(0, Chunk951288.jsx)(Chunk481060.olH, {
                 className: Chunk477425.closeButton,
                 onClick: Chunk726521.onClose
-              }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+              }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
                 variant: "heading-xl/bold",
                 children: Chunk388032.intl.string(Chunk388032.t.MWMcg4)
               })]
             })
-          }), (0, Chunk255367.jsx)(Chunk481060.hzk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.hzk, {
             children: P
-          }), (0, Chunk255367.jsxs)(Chunk481060.mzw, {
-            children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsxs)(Chunk481060.mzw, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
               variant: "critical-primary",
               size: "sm",
               text: Chunk388032.intl.string(Chunk388032.t.oyYWHB),
               type: "submit",
               onClick: this.handleDelete
-            }), !module && (0, Chunk255367.jsx)(Chunk481060.XZJ, {
+            }), !module && (0, Chunk951288.jsx)(Chunk481060.XZJ, {
               value: Chunk120356,
               onChange: (e, t) => this.handleToggleResolveFlag(t),
               children: Chunk388032.intl.string(Chunk764295.default["8yIKen"])
@@ -162,9 +162,9 @@ class D extends Chunk73800.PureComponent {
         }))
       })
     }
-    return (0, Chunk255367.jsx)(Chunk372900.Z.Provider, {
+    return (0, Chunk951288.jsx)(Chunk372900.Z.Provider, {
       value: Chunk755721.guild_id,
-      children: require ? (0, Chunk255367.jsx)(Chunk82659.Modal, {
+      children: require ? (0, Chunk951288.jsx)(Chunk82659.Modal, {
         title: Chunk501517 ? Chunk388032.intl.string(Chunk388032.t.aIz1oa) : Chunk388032.intl.string(Chunk388032.t.MWMcg4),
         subtitle: Chunk699516,
         actions: [{
@@ -179,7 +179,7 @@ class D extends Chunk73800.PureComponent {
         onClose: Chunk726521.onClose,
         transitionState: Chunk726521.transitionState,
         children: Chunk594174
-      }) : (0, Chunk255367.jsx)(Chunk481060.ConfirmModal, T(S({
+      }) : (0, Chunk951288.jsx)(Chunk481060.ConfirmModal, T(S({
         header: Chunk501517 ? Chunk388032.intl.string(Chunk388032.t.aIz1oa) : Chunk388032.intl.string(Chunk388032.t.MWMcg4),
         confirmText: Chunk388032.intl.string(Chunk388032.t.oyYWHB),
         cancelText: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),

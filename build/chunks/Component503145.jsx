@@ -4,8 +4,8 @@
 require.d(exports, {
   U: () => u
 }), require("./388685.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk607070 = require("./607070.js");
@@ -18,7 +18,7 @@ function c(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class u extends(r = Chunk73800.Component) {
+class u extends(r = Chunk647438.Component) {
   componentDidMount() {
     this.props.isShaking && this.startShaking()
   }
@@ -41,7 +41,7 @@ class u extends(r = Chunk73800.Component) {
       className: e,
       children: t
     } = this.props;
-    return (0, Chunk255367.jsx)("div", {
+    return (0, Chunk951288.jsx)("div", {
       className: module,
       ref: this.ref,
       children: exports

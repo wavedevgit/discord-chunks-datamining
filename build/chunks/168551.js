@@ -6,7 +6,7 @@ require.d(exports, {
   ZP: () => h,
   e3: () => Chunk575196.e3
 });
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
   Chunk210887 = require("./210887.js"),
@@ -18,7 +18,7 @@ var Chunk73800 = require("./73800.js"),
 let f = "data-client-themes",
   _ = () => {
     let e = (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.gradientPreset);
-    return Chunk73800.useMemo(() => {
+    return Chunk647438.useMemo(() => {
       if (null == module) return null;
       let t = Chunk514361.Z.getLinearGradient();
       return null == exports ? null : (0, Chunk575196.yf)(module, exports)
@@ -40,8 +40,8 @@ function p() {
       var e, t;
       return null == (t = Chunk581883.Z.settings.appearance) || null == (e = exports.clientThemeSettings) ? true : module.customUserThemeSettings
     }),
-    h = Chunk73800.useRef(true);
-  return Chunk73800.useEffect(() => {
+    h = Chunk647438.useRef(true);
+  return Chunk647438.useEffect(() => {
     if (!(0, Chunk392711.isEqual)(p, h.current)) {
       var e, t, n;
       h.current = p, _({
@@ -50,7 +50,7 @@ function p() {
         chassisMixAmount: null != (n = null == p ? true : p.baseMix) ? require : Chunk233398.BH
       })
     }
-  }, [p, _]), Chunk73800.useMemo(() => module && 0 !== require.length ? (0, Chunk575196.gj)(require, f, Chunk514361, exports) : null, [require, Chunk514361, f, module, exports])
+  }, [p, _]), Chunk647438.useMemo(() => module && 0 !== require.length ? (0, Chunk575196.gj)(require, f, Chunk514361, exports) : null, [require, Chunk514361, f, module, exports])
 }
 
 function h() {

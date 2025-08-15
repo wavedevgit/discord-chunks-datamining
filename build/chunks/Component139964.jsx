@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => O
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -111,26 +111,26 @@ function O(e) {
 }
 
 function y() {
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk644515.row,
-    children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       children: Chunk388032.intl.string(Chunk388032.t.PL48CA)
-    }), (0, Chunk255367.jsx)(v, {})]
+    }), (0, Chunk951288.jsx)(v, {})]
   })
 }
 
 function v() {
-  return null != (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccount(null, Chunk981631.ABu.RIOT_GAMES)) ? (0, Chunk255367.jsxs)(Chunk755721.zx, {
+  return null != (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccount(null, Chunk981631.ABu.RIOT_GAMES)) ? (0, Chunk951288.jsxs)(Chunk755721.zx, {
     disabled: true,
     color: Chunk755721.zx.Colors.TRANSPARENT,
     look: Chunk755721.zx.Looks.OUTLINED,
     innerClassName: Chunk644515.doneButton,
-    children: [(0, Chunk255367.jsx)(Chunk481060.kmB, {}), (0, Chunk255367.jsx)(Chunk481060.Text, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.kmB, {}), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       children: Chunk388032.intl.string(Chunk388032.t.i4jeWV)
     })]
-  }) : (0, Chunk255367.jsx)(Chunk481060.zxk, {
+  }) : (0, Chunk951288.jsx)(Chunk481060.zxk, {
     variant: "secondary",
     size: "sm",
     text: Chunk388032.intl.string(Chunk388032.t.To26Nj),

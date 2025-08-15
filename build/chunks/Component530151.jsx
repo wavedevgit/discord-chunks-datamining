@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => ee
 }), require("./415506.js"), require("./388685.js"), require("./539854.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -255,7 +255,7 @@ function z(e) {
   }
   throw Error("Invalid Dispatch stage")
 }
-class W extends Chunk73800.PureComponent {
+class W extends Chunk647438.PureComponent {
   get isFocused() {
     let {
       cellProps: e
@@ -326,10 +326,10 @@ class W extends Chunk73800.PureComponent {
         total: i,
         stage: l
       } = require;
-      if (null != Chunk255367 && null != Chunk73800) {
-        let n = V(Chunk73800, Chunk120356),
-          a = V(Chunk255367, Chunk120356),
-          o = Math.floor(t = Chunk780570.xI(Chunk255367, Chunk73800));
+      if (null != Chunk951288 && null != Chunk647438) {
+        let n = V(Chunk647438, Chunk120356),
+          a = V(Chunk951288, Chunk120356),
+          o = Math.floor(t = Chunk780570.xI(Chunk951288, Chunk647438));
         e = Chunk120356 === Chunk981631.f07.PAUSING ? Chunk388032.intl.formatToPlainString(Chunk388032.t.vjxhWl, {
           percent: Chunk392711,
           progress: a,
@@ -343,7 +343,7 @@ class W extends Chunk73800.PureComponent {
     }
     return (null == exports || null == module) && (t = 0, e = Chunk388032.intl.string(Chunk388032.t["qS+iKS"])), this.renderBody({
       percent: exports,
-      foregroundColor: (0, Chunk780384.ap)(Chunk255367) ? Chunk981631.Ilk.PRIMARY_300 : Chunk981631.Ilk.PRIMARY_500,
+      foregroundColor: (0, Chunk780384.ap)(Chunk951288) ? Chunk981631.Ilk.PRIMARY_300 : Chunk981631.Ilk.PRIMARY_500,
       message: module
     })
   }
@@ -359,22 +359,22 @@ class W extends Chunk73800.PureComponent {
       progress: n,
       total: r
     } = module;
-    if (null == require || null == Chunk255367) return null;
-    let i = Chunk780570.xI(require, Chunk255367),
-      l = Math.floor(Chunk73800),
-      a = 0 === require && 1 === Chunk255367 ? Chunk388032.intl.string(Chunk388032.t["+pfsFR"]) : Chunk388032.intl.formatToPlainString(Chunk388032.t["+feX8f"], {
+    if (null == require || null == Chunk951288) return null;
+    let i = Chunk780570.xI(require, Chunk951288),
+      l = Math.floor(Chunk647438),
+      a = 0 === require && 1 === Chunk951288 ? Chunk388032.intl.string(Chunk388032.t["+pfsFR"]) : Chunk388032.intl.formatToPlainString(Chunk388032.t["+feX8f"], {
         percent: Chunk120356,
         progress: (0, Chunk424218.BU)(require),
-        total: (0, Chunk424218.BU)(Chunk255367)
+        total: (0, Chunk424218.BU)(Chunk951288)
       });
     return this.renderBody({
       message: a,
       foregroundColor: (0, Chunk780384.ap)(exports) ? Chunk981631.Ilk.PRIMARY_300 : Chunk981631.Ilk.PRIMARY_500,
-      percent: Chunk73800
+      percent: Chunk647438
     })
   }
   renderProgressPatching() {
-    return (0, Chunk255367.jsx)(Chunk353042.Z, {
+    return (0, Chunk951288.jsx)(Chunk353042.Z, {
       getHistoricalTotalBytes: Chunk417363.Z.getHistoricalTotalBytesWritten,
       updateInterval: 5e3,
       children: this.renderProgressPatchingBody
@@ -391,14 +391,14 @@ class W extends Chunk73800.PureComponent {
       stage: r,
       type: i
     } = module;
-    if (null == exports || null == require || null == Chunk255367) return null;
+    if (null == exports || null == require || null == Chunk951288) return null;
     let l = Chunk780570.xI(require, exports),
       a = Math.floor(Chunk120356);
     return this.renderBody({
       percent: Chunk120356,
       message: z({
-        type: Chunk73800,
-        stage: Chunk255367,
+        type: Chunk647438,
+        stage: Chunk951288,
         percent: a,
         progress: require,
         total: exports
@@ -465,12 +465,12 @@ class W extends Chunk73800.PureComponent {
     })
   }
 }
-let Y = () => (0, Chunk255367.jsx)(B, {
+let Y = () => (0, Chunk951288.jsx)(B, {
     icon: Chunk481060.o1U,
     tooltip: Chunk388032.intl.string(Chunk388032.t.YGm6SU),
     onClick: () => Chunk51025.v4()
   }),
-  K = () => (0, Chunk255367.jsx)(B, {
+  K = () => (0, Chunk951288.jsx)(B, {
     icon: Chunk481060.fpf,
     tooltip: Chunk388032.intl.string(Chunk388032.t.TVAd5O),
     onClick: () => Chunk51025.wO()
@@ -542,7 +542,7 @@ let Y = () => (0, Chunk255367.jsx)(B, {
       })
     }
   }];
-class J extends Chunk73800.PureComponent {
+class J extends Chunk647438.PureComponent {
   componentDidMount() {
     window.addEventListener("resize", this.throttledUpdateHeight)
   }
@@ -567,24 +567,24 @@ class J extends Chunk73800.PureComponent {
       theme: l,
       analyticsContext: o
     } = this.props;
-    return 0 === module.length ? null : (0, Chunk255367.jsxs)("div", {
+    return 0 === module.length ? null : (0, Chunk951288.jsxs)("div", {
       className: Chunk248241.gameUpdates,
-      children: [(0, Chunk255367.jsxs)("div", {
+      children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk248241.headerRow,
-        children: [(0, Chunk255367.jsx)(Chunk86826.Z, {
+        children: [(0, Chunk951288.jsx)(Chunk86826.Z, {
           className: a()(Chunk248241.headerCell, Chunk248241.networkProgress),
           title: Chunk388032.intl.string(Chunk388032.t.ytoXKi),
           getHistoricalTotalBytes: Chunk417363.Z.getHistoricalTotalBytesDownloaded,
           color: Chunk981631.Ilk.GREEN_360,
-          animate: Chunk73800
-        }), (0, Chunk255367.jsx)(Chunk86826.Z, {
+          animate: Chunk647438
+        }), (0, Chunk951288.jsx)(Chunk86826.Z, {
           className: a()(Chunk248241.headerCell, Chunk248241.diskProgress),
           title: Chunk388032.intl.string(Chunk388032.t.SjohhI),
           getHistoricalTotalBytes: Chunk417363.Z.getHistoricalTotalBytesWritten,
           color: Chunk981631.Ilk.BLUE_345,
-          animate: Chunk73800
+          animate: Chunk647438
         })]
-      }), (0, Chunk255367.jsx)(Chunk167533.Z, {
+      }), (0, Chunk951288.jsx)(Chunk167533.Z, {
         hasHeader: false,
         columns: Q,
         data: module,
@@ -593,7 +593,7 @@ class J extends Chunk73800.PureComponent {
         rowComponent: U,
         cellProps: {
           paused: exports,
-          isFocused: Chunk73800,
+          isFocused: Chunk647438,
           theme: Chunk120356
         },
         rowProps: {

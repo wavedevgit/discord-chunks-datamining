@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => R
 }), require("./388685.js"), require("./539854.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
@@ -66,7 +66,7 @@ function R() {
       favoriteAdded: R,
       clearFavoriteAdded: D
     } = (0, Chunk593214.up)(),
-    [L, M] = Chunk73800.useState(false),
+    [L, M] = Chunk647438.useState(false),
     {
       favoriteServerMuted: k,
       favoriteChannels: U
@@ -113,23 +113,23 @@ function R() {
       })
     }(U),
     W = H > 0 ? (0, Chunk593364.N)(H) : null,
-    K = Chunk73800.useCallback(() => {
+    K = Chunk647438.useCallback(() => {
       D()
     }, [D]);
-  return (0, Chunk255367.jsxs)(Chunk682662.H, {
-    children: [(0, Chunk255367.jsx)(Chunk276952.Z, {
+  return (0, Chunk951288.jsxs)(Chunk682662.H, {
+    children: [(0, Chunk951288.jsx)(Chunk276952.Z, {
       selected: V,
       hovered: L,
       unread: F && !k,
       className: Chunk499951.pill
-    }), (0, Chunk255367.jsx)(Chunk603274.Z, {
+    }), (0, Chunk951288.jsx)(Chunk603274.Z, {
       onShow: K,
-      children: (0, Chunk255367.jsx)(Chunk110977.S, {
-        children: (0, Chunk255367.jsx)(Chunk481060.aRk, {
+      children: (0, Chunk951288.jsx)(Chunk110977.S, {
+        children: (0, Chunk951288.jsx)(Chunk481060.aRk, {
           selected: true,
           upperBadge: z,
           lowerBadge: W,
-          children: (0, Chunk255367.jsx)(Chunk481060.LYs, (e = T({}, Chunk120356), t = t = {
+          children: (0, Chunk951288.jsx)(Chunk481060.LYs, (e = T({}, Chunk120356), t = t = {
             ariaLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t["/uzRsr"], {
               guildName: Chunk388032.intl.string(Chunk388032.t.wMWycn),
               mentions: H
@@ -153,11 +153,11 @@ function R() {
                 return t => (0, r.jsx)(e, T({}, t))
               })
             },
-            children: (0, Chunk255367.jsx)("div", {
+            children: (0, Chunk951288.jsx)("div", {
               className: o()(Chunk499951.ring, {
                 [Chunk499951.ringActive]: R
               }),
-              children: (0, Chunk255367.jsx)(Chunk481060.r7p, {
+              children: (0, Chunk951288.jsx)(Chunk481060.r7p, {
                 size: "custom",
                 color: "currentColor",
                 className: Chunk499951.favoriteIcon,

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => j
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -30,7 +30,7 @@ function j() {
   } = (0, Chunk406613.F)({
     location: "UserSettingsVoiceAndVideo"
   });
-  if (!require) return (0, Chunk255367.jsx)(Chunk674116.Z, {});
+  if (!require) return (0, Chunk951288.jsx)(Chunk674116.Z, {});
   let j = [{
       title: Chunk388032.intl.string(Chunk388032.t.K3lovL),
       component: Chunk661950.Z,
@@ -51,11 +51,11 @@ function j() {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_DEBUG_TAB
     }],
     E = j.findIndex(e => null != e.subsection && e.subsection === t);
-  return (0, Chunk255367.jsx)(Chunk906732.Gt, {
+  return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: module,
-    children: (0, Chunk255367.jsx)(Chunk10298.N, {
+    children: (0, Chunk951288.jsx)(Chunk10298.N, {
       header: Chunk388032.intl.string(Chunk388032.t.B1fFpa),
-      children: (0, Chunk255367.jsx)(Chunk526156.Z, {
+      children: (0, Chunk951288.jsx)(Chunk526156.Z, {
         parentSetting: Chunk726985.s6.VOICE_AND_VIDEO,
         settingsSection: Chunk981631.oAB.VOICE,
         tabs: j,

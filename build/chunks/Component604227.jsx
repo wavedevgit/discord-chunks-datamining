@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => h
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./539854.js");
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk525654 = require("./525654.js"),
@@ -20,8 +20,8 @@ var Chunk120356 = require("./120356.js"),
 function h() {
   var e, t, n, r, a;
   let h = window.GLOBAL_ENV.RELEASE_CHANNEL,
-    f = "432363",
-    b = "705e422b1f5682184700f2029e1d292b67bd02d4".substring(0, 7),
+    f = "432389",
+    b = "e47817ac375a369b0c5863157f538aebb63ef787".substring(0, 7),
     x = null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.remoteApp.getVersion(),
     _ = null === Chunk579806.Z || true === Chunk579806.Z || null == (e = (t = Chunk579806.Z.remoteApp).getBuildNumber) ? true : module.call(exports),
     j = null === Chunk579806.Z || true === Chunk579806.Z || null == (n = (r = Chunk579806.Z.remoteApp).getAppArch) ? true : require.call(Chunk120356),
@@ -32,10 +32,10 @@ function h() {
       if (null == exports || null == Chunk579806.Z) return null;
       let n = Chunk579806.Z.os.release,
         [i, r, s] = Chunk998502.ZP.parsedOSRelease;
-      return exports.includes("Windows 10") && true !== s && s >= 22e3 && (t = exports.replace("Windows 10", "Windows 11")), exports.includes("OS X 10.15.7") && true !== Chunk255367 && Chunk255367 >= 20 && (t = "macOS ".concat(Chunk255367 >= 25 ? Chunk255367 + 1 : Chunk255367 - 9)), "".concat(exports, " (").concat(require, ")")
+      return exports.includes("Windows 10") && true !== s && s >= 22e3 && (t = exports.replace("Windows 10", "Windows 11")), exports.includes("OS X 10.15.7") && true !== Chunk951288 && Chunk951288 >= 20 && (t = "macOS ".concat(Chunk951288 >= 25 ? Chunk951288 + 1 : Chunk951288 - 9)), "".concat(exports, " (").concat(require, ")")
     }(),
     O = [h, f, "(".concat(b, ")")];
-  return null != x && (O.push("Host ".concat(x)), null != j && O.push(j.toLowerCase()), null != _ && O.push("(".concat(_, ")"))), O.push("Build Override: ".concat(null != E ? E.id : "N/A")), null != C && O.push(C), (0, Chunk255367.jsx)(Chunk320161.Z, {
+  return null != x && (O.push("Host ".concat(x)), null != j && O.push(j.toLowerCase()), null != _ && O.push("(".concat(_, ")"))), O.push("Build Override: ".concat(null != E ? E.id : "N/A")), null != C && O.push(C), (0, Chunk951288.jsx)(Chunk320161.Z, {
     copyValue: O.join(" "),
     text: Chunk388032.intl.string(Chunk388032.t["9Al4QU"]),
     "aria-label": false,

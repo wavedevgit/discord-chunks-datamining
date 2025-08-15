@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => y
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -40,7 +40,7 @@ function E(e) {
   }
   return e
 }
-class b extends Chunk73800.Component {
+class b extends Chunk647438.Component {
   componentDidMount() {
     this.props.onChange(this.hasAcceptedNeccessaryTerms(this.props, this.state))
   }
@@ -74,18 +74,18 @@ class b extends Chunk73800.Component {
       hasAcceptedEULA: N,
       hasAcceptedWithdrawalWaiver: C
     } = this.state;
-    return (l()(!v || null != S, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), Chunk120356 || null != module && !Chunk73800 || O) ? (0, Chunk255367.jsxs)("div", {
+    return (l()(!v || null != S, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), Chunk120356 || null != module && !Chunk647438 || O) ? (0, Chunk951288.jsxs)("div", {
       className: Chunk442837,
-      children: [O && (0, Chunk255367.jsx)(Chunk481060.vwX, {
+      children: [O && (0, Chunk951288.jsx)(Chunk481060.vwX, {
         className: Chunk209857.formTitle,
         children: Chunk388032.intl.string(Chunk388032.t.Ogvn5u)
-      }), null != module && (Chunk120356 || !Chunk73800) ? (0, Chunk255367.jsx)(Chunk481060.XZJ, {
+      }), null != module && (Chunk120356 || !Chunk647438) ? (0, Chunk951288.jsx)(Chunk481060.XZJ, {
         type: Chunk481060.XZJ.Types.INVERTED,
         value: N,
         onChange: this.handleToggleEULAAcceptance,
         disabled: Chunk512722,
         className: Chunk209857.checkbox,
-        children: (0, Chunk255367.jsx)("div", {
+        children: (0, Chunk951288.jsx)("div", {
           className: Chunk209857.checkboxLabel,
           children: Chunk388032.intl.format(Chunk388032.t.IodJKS, {
             applicationName: exports,
@@ -101,31 +101,31 @@ class b extends Chunk73800.Component {
             }
           })
         })
-      }) : null, null == b ? null : (0, Chunk255367.jsx)("div", {
+      }) : null, null == b ? null : (0, Chunk951288.jsx)("div", {
         className: o()(Chunk209857.finePrint, A),
         children: b
-      }), O ? (0, Chunk255367.jsxs)("div", {
+      }), O ? (0, Chunk951288.jsxs)("div", {
         className: Chunk442837,
-        children: [(0, Chunk255367.jsx)(Chunk481060.XZJ, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.XZJ, {
           type: Chunk481060.XZJ.Types.INVERTED,
           value: C,
           onChange: this.handleToggleEUWithdralWaiverAcceptance,
           disabled: Chunk512722,
           className: o()(Chunk209857.checkbox, Chunk850840),
-          children: (0, Chunk255367.jsx)("div", {
+          children: (0, Chunk951288.jsx)("div", {
             className: o()(Chunk209857.checkboxLabel, g),
             children: Chunk388032.intl.string(Chunk388032.t.DFCVNz)
           })
-        }), (0, Chunk255367.jsx)("div", {
+        }), (0, Chunk951288.jsx)("div", {
           className: Chunk209857.finePrint,
           children: Chunk388032.intl.string(Chunk388032.t.jhu6zs)
         })]
-      }) : null, y && (0, Chunk255367.jsxs)("div", {
+      }) : null, y && (0, Chunk951288.jsxs)("div", {
         className: Chunk209857.finePrint,
         children: ["*", Chunk388032.intl.format(Chunk388032.t["5zmY3N"], {
           documentationLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.LOCALIZED_PRICING)
         })]
-      }), v && null != S && (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), v && null != S && (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
         children: Chunk388032.intl.format(Chunk388032.t["Hvo/Z2"], {
@@ -134,7 +134,7 @@ class b extends Chunk73800.Component {
           cancelSubscriptionArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_DETAILS_CANCEL_SUB),
           paidServiceTermsArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         })
-      }), I && null != S && (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), I && null != S && (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
         children: Chunk388032.intl.format(Chunk388032.t.Oo2FeX, {
@@ -143,7 +143,7 @@ class b extends Chunk73800.Component {
           cancelSubscriptionArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_DETAILS_CANCEL_SUB),
           paidServiceTermsArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         })
-      }), T && null != S && (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), T && null != S && (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
         children: Chunk388032.intl.format(Chunk388032.t["Z2c+aW"], {

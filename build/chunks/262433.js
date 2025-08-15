@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk772848 = require("./772848.js"),
-  Chunk97519 = require("./97519.js"),
+  Chunk879690 = require("./879690.js"),
   Chunk731965 = require("./731965.js"),
   Chunk125268 = require("./125268.js"),
   Chunk673125 = require("./673125.js"),
@@ -27,7 +27,7 @@ let m = {
     SIZE_MIN: Chunk813900.qh / 2,
     SIZE_MAX: Chunk813900.qh
   },
-  E = (0, Chunk97519.U)(() => ({
+  E = (0, Chunk879690.U)(() => ({
     particles: {},
     lastSpawned: {}
   }));

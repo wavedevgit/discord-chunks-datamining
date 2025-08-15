@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => u
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
 
 function u() {
   let e = 0 === (0, Chunk810473.Z)().length,
-    t = Chunk73800.useCallback(() => {
+    t = Chunk647438.useCallback(() => {
       (0, Chunk481060.ZDy)(async () => {
         let {
           default: e
@@ -41,14 +41,14 @@ function u() {
         stackingBehavior: "stack"
       })
     }, []);
-  return (0, Chunk255367.jsxs)(Chunk481060.P3F, {
+  return (0, Chunk951288.jsxs)(Chunk481060.P3F, {
     className: o()(Chunk684066.addWidgetButton, module && Chunk684066.disabled),
     onClick: module ? true : exports,
     "aria-disabled": module,
-    children: [(0, Chunk255367.jsx)(Chunk481060.qJs, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.qJs, {
       size: "sm",
       color: "currentColor"
-    }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       color: module ? "text-muted" : "text-default",
       children: Chunk388032.intl.string(Chunk388032.t.lBG2s7)

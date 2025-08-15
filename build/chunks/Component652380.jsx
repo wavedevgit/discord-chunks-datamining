@@ -4,8 +4,8 @@ require.d(exports, {
   Z: () => F,
   b: () => M
 }), require("./388685.js"), require("./314940.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
   Chunk278074 = require("./278074.js"),
@@ -97,9 +97,9 @@ function L() {
   return {
     userId: "123",
     questId: "1193992107035983872",
-    enrolledAt: Chunk255367,
+    enrolledAt: Chunk951288,
     completedAt: require,
-    claimedAt: Chunk73800,
+    claimedAt: Chunk647438,
     claimedTier: null,
     lastStreamHeartbeatAt: null,
     streamProgressSeconds: exports,
@@ -178,11 +178,11 @@ let W = "1193992107035983872",
 
 function U() {
   var e, t, o, u, d, k, M, W;
-  let [U, H] = Chunk73800.useState(Z), F = Chunk73800.useCallback(e => {
+  let [U, H] = Chunk647438.useState(Z), F = Chunk647438.useCallback(e => {
     H(I(q({}, e), {
       preview: true
     }))
-  }, []), [z, X] = Chunk73800.useState(Chunk899457.a.UNENROLLED), [K, Y] = Chunk73800.useState(false), [G, J] = Chunk73800.useState(false), [$, ee] = Chunk73800.useState(null), et = (W = U.config, (0, Chunk278074.EQ)(W).with({
+  }, []), [z, X] = Chunk647438.useState(Chunk899457.a.UNENROLLED), [K, Y] = Chunk647438.useState(false), [G, J] = Chunk647438.useState(false), [$, ee] = Chunk647438.useState(null), et = (W = U.config, (0, Chunk278074.EQ)(W).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -325,22 +325,22 @@ function U() {
       sourceQuestContent: Chunk497505.jn.INTERNAL_PREVIEW_TOOL
     })
   }
-  let eu = Chunk73800.useMemo(() => {
+  let eu = Chunk647438.useMemo(() => {
       for (let [e, t] of Object.entries(U.config.taskConfigV2.tasks))
         if (null != exports.target) return exports.target;
       return 10 * Chunk70956.Z.Seconds.MINUTE
     }, [U.config.taskConfigV2.tasks]),
-    ed = Chunk73800.useMemo(() => Chunk754700.X.WATCH_VIDEO in U.config.taskConfigV2.tasks, [U.config.taskConfigV2.tasks]);
+    ed = Chunk647438.useMemo(() => Chunk754700.X.WATCH_VIDEO in U.config.taskConfigV2.tasks, [U.config.taskConfigV2.tasks]);
   a()(false !== U.preview && null != U.preview, "Preview config must have property preview: true");
   let ep = U.config.taskConfigV2.tasks[Chunk754700.X.WATCH_VIDEO];
-  return (0, Chunk255367.jsxs)("div", {
-    children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+  return (0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/bold",
       className: Chunk301188.heading,
       children: "Quest Preview Tool"
-    }), (0, Chunk255367.jsx)("div", {
+    }), (0, Chunk951288.jsx)("div", {
       className: Chunk301188.fields,
-      children: (0, Chunk255367.jsx)(Chunk916028.Z, {
+      children: (0, Chunk951288.jsx)(Chunk916028.Z, {
         onSelect: function(e) {
           ee(e), null != e && (X(function(e) {
             if (null == e.userStatus) return R.a.UNENROLLED;
@@ -354,13 +354,13 @@ function U() {
         },
         quest: $
       })
-    }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-md/semibold",
       className: Chunk301188.subheading,
       children: "Task Config"
-    }), (0, Chunk255367.jsx)("div", {
+    }), (0, Chunk951288.jsx)("div", {
       className: Chunk301188.fields,
-      children: (0, Chunk255367.jsx)(Chunk749912.Z, {
+      children: (0, Chunk951288.jsx)(Chunk749912.Z, {
         taskDuration: eu,
         taskConfigV2: U.config.taskConfigV2,
         onSelect: function(e) {
@@ -371,113 +371,113 @@ function U() {
           }))
         }
       })
-    }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-md/semibold",
       className: Chunk301188.subheading,
       children: "Messages"
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk301188.fields,
-      children: [(0, Chunk255367.jsx)(Chunk602683.Z, {
+      children: [(0, Chunk951288.jsx)(Chunk602683.Z, {
         title: "Quest Name",
         assetKey: "questName",
         onMessageChange: eo,
         initialValue: U.config.messages.questName
-      }), (0, Chunk255367.jsx)(Chunk602683.Z, {
+      }), (0, Chunk951288.jsx)(Chunk602683.Z, {
         title: "Game Title",
         assetKey: "gameTitle",
         onMessageChange: eo,
         initialValue: U.config.messages.gameTitle
-      }), (0, Chunk255367.jsx)(Chunk602683.Z, {
+      }), (0, Chunk951288.jsx)(Chunk602683.Z, {
         title: "Game Publisher",
         assetKey: "gamePublisher",
         onMessageChange: eo,
         initialValue: U.config.messages.gamePublisher
-      }), ed && (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-        children: [(0, Chunk255367.jsx)(Chunk602683.Z, {
+      }), ed && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        children: [(0, Chunk951288.jsx)(Chunk602683.Z, {
           title: "Video Title",
           assetKey: "videoTitle",
           onMessageChange: ea,
           initialValue: null == ep ? true : ep.messages.videoTitle
-        }), (0, Chunk255367.jsx)(Chunk602683.Z, {
+        }), (0, Chunk951288.jsx)(Chunk602683.Z, {
           title: "End CTA Title",
           assetKey: "videoEndCtaTitle",
           onMessageChange: ea,
           initialValue: null == ep ? true : ep.messages.videoEndCtaTitle
-        }), (0, Chunk255367.jsx)(Chunk602683.Z, {
+        }), (0, Chunk951288.jsx)(Chunk602683.Z, {
           title: "End CTA Subtitle",
           assetKey: "videoEndCtaSubtitle",
           onMessageChange: ea,
           initialValue: null == ep ? true : ep.messages.videoEndCtaSubtitle
         })]
       })]
-    }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-md/semibold",
       className: Chunk301188.subheading,
       children: "Assets"
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk301188.fields,
-      children: [(0, Chunk255367.jsx)(Chunk210851.Z, {
+      children: [(0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Hero",
         assetKey: "hero",
         onFileChange: en,
         filters: V,
         initialValue: U.config.assets.hero
-      }), (0, Chunk255367.jsx)(Chunk210851.Z, {
+      }), (0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Hero Video (optional)",
         assetKey: "heroVideo",
         onFileChange: en,
         filters: V,
         initialValue: null != (k = U.config.assets.heroVideo) ? k : true
-      }), (0, Chunk255367.jsx)(Chunk210851.Z, {
+      }), (0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Quest Bar Hero",
         assetKey: "questBarHero",
         onFileChange: en,
         filters: V,
         initialValue: U.config.assets.questBarHero
-      }), (0, Chunk255367.jsx)(Chunk210851.Z, {
+      }), (0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Quest Bar Hero Video (optional)",
         assetKey: "questBarHeroVideo",
         onFileChange: en,
         filters: V,
         initialValue: null != (M = U.config.assets.questBarHeroVideo) ? M : true
-      }), (0, Chunk255367.jsx)(Chunk210851.Z, {
+      }), (0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Game Tile",
         assetKey: "gameTile",
         onFileChange: en,
         filters: [...D, "svg"],
         initialValue: U.config.assets.gameTile
-      }), (0, Chunk255367.jsx)(Chunk210851.Z, {
+      }), (0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Logotype",
         assetKey: "logotype",
         onFileChange: en,
         filters: [...Q, "svg"],
         initialValue: U.config.assets.logotype
-      }), ed && (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-        children: [(0, Chunk255367.jsx)(Chunk210851.Z, {
+      }), ed && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        children: [(0, Chunk951288.jsx)(Chunk210851.Z, {
           title: "Quest Video",
           assetKey: "videoPlayerVideo",
           onFileChange: er,
           filters: V,
           initialValue: null == ep ? true : ep.assets.video.url
-        }), (0, Chunk255367.jsx)(Chunk210851.Z, {
+        }), (0, Chunk951288.jsx)(Chunk210851.Z, {
           title: "Quest Video (Low Resolution)",
           assetKey: "videoPlayerVideoLowRes",
           onFileChange: er,
           filters: V,
           initialValue: null == ep || null == (e = ep.assets.videoLowRes) ? true : module.url
-        }), (0, Chunk255367.jsx)(Chunk210851.Z, {
+        }), (0, Chunk951288.jsx)(Chunk210851.Z, {
           title: "Video Player Thumbnail (optional)",
           assetKey: "videoPlayerThumbnail",
           onFileChange: er,
           filters: D,
           initialValue: null == ep ? true : ep.assets.video.thumbnail
-        }), (0, Chunk255367.jsx)(Chunk210851.Z, {
+        }), (0, Chunk951288.jsx)(Chunk210851.Z, {
           title: "Quest Bar Preview Video (optional)",
           assetKey: "questBarPreviewVideo",
           onFileChange: es,
           filters: V,
           initialValue: null == (t = U.config.videoMetadata) ? true : exports.assets.questBarPreviewVideo
-        }), (0, Chunk255367.jsx)(Chunk210851.Z, {
+        }), (0, Chunk951288.jsx)(Chunk210851.Z, {
           title: "Quest Home Video (optional)",
           assetKey: "questHomeVideo",
           onFileChange: es,
@@ -534,32 +534,32 @@ function U() {
           })]
         })]
       })]
-    }, t)), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+    }, t)), (0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-md/semibold",
       className: Chunk301188.subheading,
       children: "Colors & Quest States"
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk301188.fields,
-      children: [(0, Chunk255367.jsxs)("div", {
+      children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk301188.fields,
         style: {
           marginBottom: 0
         },
-        children: [(0, Chunk255367.jsx)(Chunk478977.Z, {
+        children: [(0, Chunk951288.jsx)(Chunk478977.Z, {
           title: "Primary",
           colorKey: "primary",
           onChange: el,
           value: U.config.colors.primary
-        }), (0, Chunk255367.jsx)(Chunk478977.Z, {
+        }), (0, Chunk951288.jsx)(Chunk478977.Z, {
           title: "Secondary",
           colorKey: "secondary",
           onChange: el,
           value: U.config.colors.secondary
         })]
-      }), (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk951288.jsx)("div", {
         className: Chunk301188.fields,
-        children: (0, Chunk255367.jsx)(Chunk815183.Z, {})
-      }), (0, Chunk255367.jsx)(Chunk899457.Z, {
+        children: (0, Chunk951288.jsx)(Chunk815183.Z, {})
+      }), (0, Chunk951288.jsx)(Chunk899457.Z, {
         onChange: function(e) {
           switch (X(e), e) {
             case R.a.UNENROLLED:
@@ -620,45 +620,45 @@ function U() {
         },
         value: z
       })]
-    }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/bold",
       className: Chunk301188.heading,
       children: "Component Previews"
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk301188.componentPreviews,
-      children: [(0, Chunk255367.jsxs)(Chunk456799.Z, {
+      children: [(0, Chunk951288.jsxs)(Chunk456799.Z, {
         withBorder: true,
-        children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Quest Bar"
-        }), (0, Chunk255367.jsxs)("div", {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk301188.questBarPreviewWrapper,
-          children: [(null == (u = U.userStatus) ? true : Chunk820827.claimedAt) != null && (0, Chunk255367.jsx)(Chunk481060.Text, {
+          children: [(null == (u = U.userStatus) ? true : Chunk820827.claimedAt) != null && (0, Chunk951288.jsx)(Chunk481060.Text, {
             color: "text-secondary",
             variant: "text-sm/normal",
             children: "The Quest Bar is hidden when the user has claimed the reward."
-          }), (0, Chunk255367.jsx)("div", {
+          }), (0, Chunk951288.jsx)("div", {
             className: Chunk301188.questBarPreview,
-            children: (0, Chunk255367.jsx)(Chunk78826.p, {
+            children: (0, Chunk951288.jsx)(Chunk78826.p, {
               isPreview: true,
               source: "preview",
               questId: "0",
-              children: (0, Chunk255367.jsx)(Chunk130653.Z, {
-                children: (0, Chunk255367.jsx)(Chunk210724.P, {
+              children: (0, Chunk951288.jsx)(Chunk130653.Z, {
+                children: (0, Chunk951288.jsx)(Chunk210724.P, {
                   quest: U
                 })
               })
             })
           })]
         })]
-      }), (0, Chunk255367.jsxs)(Chunk456799.Z, {
+      }), (0, Chunk951288.jsxs)(Chunk456799.Z, {
         withBorder: true,
-        children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Quest Home Card"
-        }), (0, Chunk255367.jsx)(Chunk78826.p, {
+        }), (0, Chunk951288.jsx)(Chunk78826.p, {
           isPreview: true,
           source: "preview",
           questId: "0",
-          children: (0, Chunk255367.jsx)(Chunk415104.Z, {
+          children: (0, Chunk951288.jsx)(Chunk415104.Z, {
             quest: U,
             className: Chunk301188.questTile,
             questContent: Chunk497505.jn.QUEST_HOME_DESKTOP,
@@ -667,23 +667,23 @@ function U() {
             sourceQuestContent: Chunk497505.jn.INTERNAL_PREVIEW_TOOL
           })
         })]
-      }), (0, Chunk255367.jsxs)(Chunk456799.Z, {
+      }), (0, Chunk951288.jsxs)(Chunk456799.Z, {
         withBorder: true,
-        children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Channel Call Header"
-        }), (null == (d = U.userStatus) ? true : Chunk458708.claimedAt) != null && (0, Chunk255367.jsx)(Chunk481060.Text, {
+        }), (null == (d = U.userStatus) ? true : Chunk458708.claimedAt) != null && (0, Chunk951288.jsx)(Chunk481060.Text, {
           color: "text-secondary",
           variant: "text-sm/normal",
           children: "The Quest Channel Call Header is hidden when the user has claimed the reward."
-        }), (0, Chunk255367.jsx)("div", {
+        }), (0, Chunk951288.jsx)("div", {
           className: Chunk301188.questBarPreviewWrapper,
-          children: (0, Chunk255367.jsx)(Chunk78826.p, {
+          children: (0, Chunk951288.jsx)(Chunk78826.p, {
             isPreview: true,
             source: "preview",
             questId: "0",
-            children: (0, Chunk255367.jsx)("div", {
+            children: (0, Chunk951288.jsx)("div", {
               className: Chunk301188.questChannelCallHeaderPreview,
-              children: (0, Chunk255367.jsx)(Chunk134483.Z, {
+              children: (0, Chunk951288.jsx)(Chunk134483.Z, {
                 channelId: "123",
                 previewQuest: U,
                 isParticipatingOverride: K
@@ -691,10 +691,10 @@ function U() {
             })
           })
         })]
-      }), (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk951288.jsx)("div", {
         className: Chunk301188.toggleSwitch,
-        children: (0, Chunk255367.jsx)(Chunk481060.xJW, {
-          children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
+        children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
+          children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
             value: K,
             onChange: function(e) {
               Y(e)
@@ -703,33 +703,33 @@ function U() {
             children: "Is Participating:"
           })
         })
-      }), (0, Chunk255367.jsxs)(Chunk456799.Z, {
+      }), (0, Chunk951288.jsxs)(Chunk456799.Z, {
         withBorder: true,
-        children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Quest Card Embed"
-        }), G ? (0, Chunk255367.jsx)(Chunk683650.o, {
+        }), G ? (0, Chunk951288.jsx)(Chunk683650.o, {
           questId: U.id
-        }) : (0, Chunk255367.jsx)(Chunk37303.Z, {
+        }) : (0, Chunk951288.jsx)(Chunk37303.Z, {
           quest: U,
           location: Chunk497505.jn.QUESTS_EMBED,
           sourceQuestContent: Chunk497505.jn.INTERNAL_PREVIEW_TOOL
         }, U.id)]
-      }), (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk951288.jsx)("div", {
         className: Chunk301188.toggleSwitch,
-        children: (0, Chunk255367.jsx)(Chunk481060.xJW, {
-          children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
+        children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
+          children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
             value: G,
             onChange: J,
             hideBorder: true,
             children: "Invalid Quests Embed:"
           })
         })
-      }), ed && (0, Chunk255367.jsxs)(Chunk456799.Z, {
+      }), ed && (0, Chunk951288.jsxs)(Chunk456799.Z, {
         withBorder: true,
         allowClicks: true,
-        children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Video Player"
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Open Video Player Modal",
           onClick: () => {
@@ -755,7 +755,7 @@ function U() {
     })]
   })
 }
-class H extends Chunk73800.Component {
+class H extends Chunk647438.Component {
   componentDidCatch(e) {
     this.setState({
       error: e
@@ -766,25 +766,25 @@ class H extends Chunk73800.Component {
       error: e,
       renderKey: t
     } = this.state;
-    return null != module ? (0, Chunk255367.jsxs)("div", {
+    return null != module ? (0, Chunk951288.jsxs)("div", {
       className: Chunk301188.errorBoundary,
-      children: [(0, Chunk255367.jsx)(Chunk481060.Mgn, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Mgn, {
         className: Chunk301188.errorBoundaryIcon
-      }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+      }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",
         children: "Something broke in the Quest preview tool :("
-      }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "secondary",
         text: "Reset",
         onClick: this.handleResetState
-      }), null != module.message && (0, Chunk255367.jsx)(Chunk481060.Zbd, {
+      }), null != module.message && (0, Chunk951288.jsx)(Chunk481060.Zbd, {
         className: Chunk301188.errorMessageWrapper,
-        children: (0, Chunk255367.jsx)("code", {
+        children: (0, Chunk951288.jsx)("code", {
           className: Chunk301188.errorMessage,
           children: module.message
         })
       })]
-    }) : (0, Chunk255367.jsx)(U, {}, exports)
+    }) : (0, Chunk951288.jsx)(U, {}, exports)
   }
   constructor(...e) {
     super(...e), k(this, "state", {

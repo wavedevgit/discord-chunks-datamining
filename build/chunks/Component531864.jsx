@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => b
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
@@ -96,7 +96,7 @@ let g = {
       peaking: t,
       transitioning: r,
       style: a
-    } = e, g = window.innerHeight, [b, h] = l.useState(false), m = f.map(e => {
+    } = e, g = window.innerHeight, [b, m] = l.useState(false), h = f.map(e => {
       let {
         skuId: t
       } = e;
@@ -104,7 +104,7 @@ let g = {
     });
     return l.useEffect(() => {
       r && setTimeout(() => {
-        h(true)
+        m(true)
       }, d.lb)
     }, [r]), (0, n.jsx)("div", {
       style: a,
@@ -119,8 +119,8 @@ let g = {
           left: c,
           rotation: f,
           size: b,
-          skuId: h
-        } = e, _ = null == (l = m[t]) ? true : l.items[0], v = null == (a = m[t]) ? true : a.type, O = v === o.Z.AVATAR_DECORATION ? 384 : 512;
+          skuId: m
+        } = e, _ = null == (l = h[t]) ? true : l.items[0], v = null == (a = h[t]) ? true : a.type, O = v === o.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, n.jsxs)("div", {
           className: p.asset,
           style: {
@@ -139,7 +139,7 @@ let g = {
             isPurchased: false,
             isHovering: true
           })]
-        }, h + t)
+        }, m + t)
       })
     })
   }

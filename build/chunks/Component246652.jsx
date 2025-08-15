@@ -3,11 +3,11 @@
 require.d(exports, {
   k: () => l
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk959591 = require("./959591.js");
-class l extends Chunk73800.PureComponent {
+class l extends Chunk647438.PureComponent {
   componentDidCatch(e, t) {
     console.error("Error rendering component (LocalErrorBoundary): ", e), this.setState({
       error: e,
@@ -15,8 +15,8 @@ class l extends Chunk73800.PureComponent {
     })
   }
   render() {
-    return null != this.state.error ? (0, Chunk255367.jsx)("div", {
-      children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+    return null != this.state.error ? (0, Chunk951288.jsx)("div", {
+      children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         color: "text-danger",
         variant: "text-md/normal",
         className: Chunk959591.labelSpacing,

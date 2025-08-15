@@ -6,8 +6,8 @@ require.d(exports, {
   b0: () => v,
   s_: () => x
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
@@ -51,11 +51,11 @@ function h(e) {
 
 function x() {
   let e = Chunk388032.intl.string(Chunk388032.t.RnD2yc),
-    [t] = Chunk73800.useState(() => {
+    [t] = Chunk647438.useState(() => {
       var e;
       return (null != (e = (0, Chunk392711.sample)(b)) ? module : b[0])()
     });
-  return (0, Chunk255367.jsx)(h, {
+  return (0, Chunk951288.jsx)(h, {
     heading: module,
     bodyText: exports
   })
@@ -63,11 +63,11 @@ function x() {
 
 function v() {
   let e = Chunk388032.intl.string(Chunk388032.t.bFgqYG),
-    [t] = Chunk73800.useState(() => {
+    [t] = Chunk647438.useState(() => {
       var e;
       return (null != (e = (0, Chunk392711.sample)(j)) ? module : j[0])()
     });
-  return (0, Chunk255367.jsx)(h, {
+  return (0, Chunk951288.jsx)(h, {
     heading: module,
     bodyText: exports
   })
@@ -106,7 +106,7 @@ function _(e) {
 
 function I() {
   let e = (0, Chunk410030.ZP)();
-  return (0, Chunk255367.jsx)("div", {
+  return (0, Chunk951288.jsx)("div", {
     className: Chunk839468.connectionPlatforms,
     children: O.map((t, n) => {
       let i = d.Z.get(t);

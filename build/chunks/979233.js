@@ -3,16 +3,16 @@
 require.d(exports, {
   M: () => i
 });
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk660384 = require("./660384.js");
 
 function i() {
-  let e = Chunk73800.useRef(new Chunk660384.Z),
-    t = Chunk73800.useCallback(t => {
+  let e = Chunk647438.useRef(new Chunk660384.Z),
+    t = Chunk647438.useCallback(t => {
       e.current.handleScroll(t)
     }, []);
   return {
-    resetScrollPosition: Chunk73800.useCallback(() => {
+    resetScrollPosition: Chunk647438.useCallback(() => {
       module.current.scrollPosition.set(0)
     }, []),
     scrollPosition: module.current.scrollPosition,

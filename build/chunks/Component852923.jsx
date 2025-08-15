@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => O
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -51,19 +51,19 @@ function T(e) {
 
 function O() {
   let e = (0, Chunk623633.Z)();
-  return null == module ? null : (0, Chunk255367.jsxs)(Chunk481060.qXd, {
+  return null == module ? null : (0, Chunk951288.jsxs)(Chunk481060.qXd, {
     className: Chunk250043.container,
     color: Chunk481060.DM8.DEFAULT,
-    children: [Chunk388032.intl.string(Chunk388032.t.Ul1RJS), (0, Chunk255367.jsx)(T, {
+    children: [Chunk388032.intl.string(Chunk388032.t.Ul1RJS), (0, Chunk951288.jsx)(T, {
       channelId: module.id
-    }), (0, Chunk255367.jsxs)(Chunk481060.hE2, {
+    }), (0, Chunk951288.jsxs)(Chunk481060.hE2, {
       size: "sm",
       className: Chunk250043.buttonGroup,
-      children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "overlay-primary",
         text: Chunk388032.intl.string(Chunk388032.t.MpO0p6),
         onClick: () => I(false)
-      }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "secondary",
         onClick: () => I(true),
         text: Chunk388032.intl.string(Chunk388032.t["1YDv7e"])

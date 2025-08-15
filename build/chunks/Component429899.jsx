@@ -3,11 +3,11 @@
 require.d(exports, {
   Z: () => s
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk558381 = require("./558381.js"),
   Chunk613311 = require("./613311.jsx");
-class o extends Chunk73800.Component {
+class o extends Chunk647438.Component {
   componentDidMount() {
     this.fetchStoreListing()
   }
@@ -20,12 +20,12 @@ class o extends Chunk73800.Component {
       pageSize: l,
       location: o
     } = this.props;
-    return (0, Chunk255367.jsx)(Chunk613311.Z, {
+    return (0, Chunk951288.jsx)(Chunk613311.Z, {
       inputSkuId: module,
       applicationId: exports,
       fetchStoreListing: this.fetchStoreListing,
       slug: require,
-      storeListingId: Chunk73800,
+      storeListingId: Chunk647438,
       location: o,
       pageSize: Chunk558381
     })

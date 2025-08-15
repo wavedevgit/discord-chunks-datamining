@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => J
 }), require("./388685.js"), require("./539854.js"), require("./457542.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -428,24 +428,24 @@ function W(e) {
 }
 
 function Y() {
-  return Chunk73800.useEffect(() => () => {
+  return Chunk647438.useEffect(() => () => {
     (0, Chunk266454.Q3)(Chunk704215.z.NEW_CRUNCHYROLL_CONNECTION, {
       dismissAction: Chunk921944.L.AUTO
     })
-  }, []), (0, Chunk255367.jsxs)("div", {
+  }, []), (0, Chunk951288.jsxs)("div", {
     className: Chunk11049.connectContainer,
-    children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-md/bold",
       color: "interactive-active",
       className: Chunk11049.connectHeader,
       children: Chunk388032.intl.string(Chunk388032.t.ZeDrUV)
-    }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
       color: "header-secondary",
       children: Chunk388032.intl.format(Chunk388032.t["oYc+Gx"], {
         privacyPolicyUrl: Chunk981631.EYA.PRIVACY
       })
-    }), (0, Chunk255367.jsx)(q, {})]
+    }), (0, Chunk951288.jsx)(q, {})]
   })
 }
 
@@ -468,13 +468,13 @@ function q() {
     })
   }
   let t = (0, Chunk122021.fq)();
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk11049.connectionsContainer,
     children: [exports.slice(0, 10).map(e => (0, i.jsx)(f.Z, {
       type: e.type,
       className: G.__invalid_accountButton,
       innerClassName: G.accountButtonInner
-    }, e.type)), (0, Chunk255367.jsx)(Chunk481060.ua7, {
+    }, e.type)), (0, Chunk951288.jsx)(Chunk481060.ua7, {
       text: Chunk388032.intl.string(Chunk388032.t.QqTz8f),
       children: t => {
         let {
@@ -544,13 +544,13 @@ let J = () => {
     s = (0, Chunk410030.ZP)();
   (0, Chunk442837.e7)([Chunk771845.ZP], () => Chunk771845.ZP.getFlattenedGuildIds());
   let a = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale);
-  return (Chunk73800.useEffect(() => {
+  return (Chunk647438.useEffect(() => {
     Chunk457330.Z.fetch()
-  }, []), module) ? (0, Chunk255367.jsx)(Chunk497321.Z, {}) : (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+  }, []), module) ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     className: Chunk11049.__invalid_connections,
     tag: Chunk481060.RB0.H1,
     title: Chunk388032.intl.string(Chunk388032.t["3fe7U1"]),
-    children: [(0, Chunk255367.jsx)(Y, {}), (0, Chunk255367.jsx)(X, {
+    children: [(0, Chunk951288.jsx)(Y, {}), (0, Chunk951288.jsx)(X, {
       fetching: exports,
       accounts: require,
       theme: Chunk120356,

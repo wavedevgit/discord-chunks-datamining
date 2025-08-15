@@ -3,10 +3,10 @@
 require.r(exports), require.d(exports, {
   default: () => E
 }), require("./388685.js"), require("./35282.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk593473 = require("./593473.js"),
-  Chunk114858 = require("./114858.js"),
+  Chunk843611 = require("./843611.js"),
   Chunk399606 = require("./399606.js"),
   Chunk893776 = require("./893776.js"),
   Chunk702493 = require("./702493.js"),
@@ -26,8 +26,8 @@ var Chunk255367 = require("./255367.js"),
 let Chunk575703 = require("./575703.js");
 
 function w() {
-  let e, t = (0, Chunk114858.TH)(),
-    [n, d] = Chunk73800.useState(() => {
+  let e, t = (0, Chunk843611.TH)(),
+    [n, d] = Chunk647438.useState(() => {
       if (exports.pathname === Chunk981631.Z5c.ACTIVATE_HANDOFF) {
         let {
           user_code: e
@@ -43,27 +43,27 @@ function w() {
       }
     }),
     w = (0, Chunk399606.e7)([Chunk353926.Z], () => Chunk353926.Z.hasLoadedExperiments);
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     Chunk314897.default.isAuthenticated() && !w && Chunk893776.Z.getExperiments()
   }, [w]), (0, Chunk702493.Z)(), (0, Chunk643366.Y)(require);
-  let N = Chunk73800.useCallback(() => {
+  let N = Chunk647438.useCallback(() => {
       Chunk77987({
         type: "user-code-input"
       })
     }, [Chunk77987]),
-    E = Chunk73800.useCallback(e => {
+    E = Chunk647438.useCallback(e => {
       d({
         type: "authorization",
         userCodeData: e
       })
     }, [Chunk77987]),
-    k = Chunk73800.useCallback(e => {
+    k = Chunk647438.useCallback(e => {
       d({
         type: "success",
         userCodeData: e
       })
     }, [Chunk77987]),
-    I = Chunk73800.useCallback(e => {
+    I = Chunk647438.useCallback(e => {
       d({
         type: "error",
         userCodeData: e
@@ -72,18 +72,18 @@ function w() {
     T = true;
   switch (require.type) {
     case "handoff":
-      e = (0, Chunk255367.jsx)(Chunk581690.c, {
+      e = (0, Chunk951288.jsx)(Chunk581690.c, {
         code: require.code
       }), T = false;
       break;
     case "user-code-input":
-      e = (0, Chunk255367.jsx)(Chunk521937.v, {
+      e = (0, Chunk951288.jsx)(Chunk521937.v, {
         usePrefilledCode: require.usePrefilledCode || false,
         onUserCodeAccepted: E
       });
       break;
     case "authorization":
-      e = (0, Chunk255367.jsx)(Chunk94628.B, {
+      e = (0, Chunk951288.jsx)(Chunk94628.B, {
         data: require.userCodeData,
         onDenied: N,
         onError: I,
@@ -91,29 +91,29 @@ function w() {
       }), T = false;
       break;
     case "success":
-      e = (0, Chunk255367.jsx)(Chunk902928.u, {
+      e = (0, Chunk951288.jsx)(Chunk902928.u, {
         onComplete: () => (0, Chunk703656.uL)(Chunk981631.Z5c.ME),
         data: require.userCodeData
       });
       break;
     case "error":
-      e = (0, Chunk255367.jsx)(Chunk659154.c, {
+      e = (0, Chunk951288.jsx)(Chunk659154.c, {
         onTryAgain: N
       });
       break;
     default:
       e = null
   }
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk298899.activatePage,
-    children: [(0, Chunk255367.jsx)("img", {
+    children: [(0, Chunk951288.jsx)("img", {
       className: Chunk298899.artwork,
       src: Chunk575703,
       alt: ""
-    }), (0, Chunk255367.jsx)(Chunk133853.Z, {
+    }), (0, Chunk951288.jsx)(Chunk133853.Z, {
       show: true,
       className: Chunk298899.logo
-    }), T ? (0, Chunk255367.jsx)("div", {
+    }), T ? (0, Chunk951288.jsx)("div", {
       className: Chunk298899.content,
       children: module
     }) : module]
@@ -121,5 +121,5 @@ function w() {
 }
 let N = (0, Chunk77987.e)(w),
   E = function() {
-    return (0, Chunk114858.TH)().pathname !== Chunk981631.Z5c.ACTIVATE_HANDOFF ? (0, Chunk255367.jsx)(N, {}) : (0, Chunk255367.jsx)(w, {})
+    return (0, Chunk843611.TH)().pathname !== Chunk981631.Z5c.ACTIVATE_HANDOFF ? (0, Chunk951288.jsx)(N, {}) : (0, Chunk951288.jsx)(w, {})
   }

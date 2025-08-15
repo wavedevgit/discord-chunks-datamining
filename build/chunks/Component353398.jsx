@@ -5,8 +5,8 @@ require.d(exports, {
   Sf: () => S,
   ZP: () => w
 }), require("./781311.js"), require("./953529.js"), require("./388685.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -70,10 +70,10 @@ I(E, "displayName", "GuildSettingsTemplateMetadataStore_");
 let S = new E(Chunk570140.Z);
 
 function T() {
-  let [e, t] = Chunk73800.useState(false), n = async () => {
+  let [e, t] = Chunk647438.useState(false), n = async () => {
     exports(true), await S.save(), exports(false)
   };
-  return (0, Chunk255367.jsx)(Chunk852860.Z, {
+  return (0, Chunk951288.jsx)(Chunk852860.Z, {
     submitting: module,
     onReset: S.reset,
     onSave: require,
@@ -86,20 +86,20 @@ function P(e) {
 }
 
 function w() {
-  return (0, Chunk255367.jsx)(Chunk481060.hjN, {
+  return (0, Chunk951288.jsx)(Chunk481060.hjN, {
     className: Chunk197571.marginBottom4,
-    children: (0, Chunk255367.jsxs)(Chunk481060.y5t, {
-      component: (0, Chunk255367.jsx)(Chunk481060.vwX, {
+    children: (0, Chunk951288.jsxs)(Chunk481060.y5t, {
+      component: (0, Chunk951288.jsx)(Chunk481060.vwX, {
         tag: Chunk481060.RB0.H1,
         children: Chunk388032.intl.string(Chunk388032.t.KUw7Sk)
       }),
-      children: [(0, Chunk255367.jsx)(Chunk481060.R94, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         className: Chunk197571.marginBottom20,
         type: Chunk481060.geA.DESCRIPTION,
         children: Chunk388032.intl.format(Chunk388032.t.c0m8bG, {})
-      }), (0, Chunk255367.jsx)(Z, {}), (0, Chunk255367.jsx)(Chunk481060.$i$, {
+      }), (0, Chunk951288.jsx)(Z, {}), (0, Chunk951288.jsx)(Chunk481060.$i$, {
         className: Chunk86477.divider
-      }), (0, Chunk255367.jsx)(R, {})]
+      }), (0, Chunk951288.jsx)(R, {})]
     })
   })
 }
@@ -110,7 +110,7 @@ function R() {
   } = Chunk999382.Z.getProps();
   c()(null != module, "guild cannot be null");
   let t = (0, Chunk442837.e7)([S], () => S.error),
-    [n, r] = Chunk73800.useState(true),
+    [n, r] = Chunk647438.useState(true),
     {
       loading: a,
       guildTemplate: s
@@ -130,7 +130,7 @@ function R() {
         guildTemplate: (0, d.e7)([j.Z], () => j.Z.getForGuild(e), [e])
       }
     }(module.id);
-  if (Chunk73800.useEffect(() => {
+  if (Chunk647438.useEffect(() => {
       if (require && !Chunk120356) {
         if (null != s) {
           var e, t;
@@ -138,21 +138,21 @@ function R() {
         }
         r(false)
       }
-    }, [require, s, Chunk120356]), Chunk73800.useEffect(() => () => {
+    }, [require, s, Chunk120356]), Chunk647438.useEffect(() => () => {
       S.reset(), S.setError(null)
-    }, []), require) return null != exports ? (0, Chunk255367.jsx)(Chunk481060.Text, {
+    }, []), require) return null != exports ? (0, Chunk951288.jsx)(Chunk481060.Text, {
     color: "text-danger",
     variant: "text-sm/normal",
     children: exports.message
-  }) : (0, Chunk255367.jsx)(Chunk481060.$jN, {
+  }) : (0, Chunk951288.jsx)(Chunk481060.$jN, {
     className: Chunk197571.marginTop40
   });
   let o = null != exports && null == exports.getFirstFieldErrorMessage("name") && null == exports.getFirstFieldErrorMessage("description");
-  return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-    children: [(0, Chunk255367.jsx)(A, {}), (0, Chunk255367.jsx)(k, {
+  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsx)(A, {}), (0, Chunk951288.jsx)(k, {
       guild: module,
       guildTemplate: s
-    }), Chunk512722 ? (0, Chunk255367.jsx)(Chunk481060.Text, {
+    }), Chunk512722 ? (0, Chunk951288.jsx)(Chunk481060.Text, {
       className: Chunk197571.marginTop8,
       color: "text-danger",
       variant: "text-sm/normal",
@@ -162,62 +162,62 @@ function R() {
 }
 
 function Z() {
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk86477.descriptionBox,
-    children: [(0, Chunk255367.jsxs)("div", {
+    children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk86477.descriptionSection,
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "eyebrow",
         children: Chunk388032.intl.string(Chunk388032.t["f8u+VF"])
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         className: Chunk86477.descriptionRow,
-        children: [(0, Chunk255367.jsx)(Chunk481060.owK, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.owK, {
           size: "md",
           className: Chunk86477.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t.K2tn19)]
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         className: Chunk86477.descriptionRow,
-        children: [(0, Chunk255367.jsx)(Chunk481060.owK, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.owK, {
           size: "md",
           className: Chunk86477.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t.om5gNj)]
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         className: Chunk86477.descriptionRow,
-        children: [(0, Chunk255367.jsx)(Chunk481060.owK, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.owK, {
           size: "md",
           className: Chunk86477.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t["/VNqdH"])]
       })]
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk86477.descriptionSection,
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "eyebrow",
         children: Chunk388032.intl.string(Chunk388032.t["8zhJEh"])
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         className: Chunk86477.descriptionRow,
-        children: [(0, Chunk255367.jsx)(Chunk481060.k$p, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.k$p, {
           size: "md",
           className: Chunk86477.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t.WOKI6u)]
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         className: Chunk86477.descriptionRow,
-        children: [(0, Chunk255367.jsx)(Chunk481060.k$p, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.k$p, {
           size: "md",
           className: Chunk86477.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t.ddhDJC)]
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         className: Chunk86477.descriptionRow,
-        children: [(0, Chunk255367.jsx)(Chunk481060.k$p, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.k$p, {
           size: "md",
           className: Chunk86477.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.RED_400.css,
@@ -252,23 +252,23 @@ function A() {
   let e = (0, Chunk442837.e7)([S], () => S.name),
     t = (0, Chunk442837.e7)([S], () => S.description),
     n = (0, Chunk442837.e7)([S], () => S.error),
-    [r, a] = Chunk73800.useState(false),
-    s = Chunk73800.useCallback(() => {
+    [r, a] = Chunk647438.useState(false),
+    s = Chunk647438.useCallback(() => {
       Chunk120356(false)
     }, []),
-    o = Chunk73800.useCallback(() => {
+    o = Chunk647438.useCallback(() => {
       Chunk120356(true)
     }, []),
-    c = Chunk73800.useMemo(() => {
+    c = Chunk647438.useMemo(() => {
       if (!(r || module.length < 1 || P(module))) return Chunk388032.intl.string(Chunk388032.t.IHAlh4)
     }, [module, r]);
-  return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-    children: [(0, Chunk255367.jsx)(Chunk481060.xJW, {
+  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
       className: Chunk197571.marginBottom20,
       title: Chunk388032.intl.string(Chunk388032.t.z1a9R0),
       required: true,
       error: null == require ? true : require.getFirstFieldErrorMessage("name"),
-      children: (0, Chunk255367.jsx)(Chunk481060.oil, {
+      children: (0, Chunk951288.jsx)(Chunk481060.oil, {
         value: module,
         onChange: e => S.setName(e),
         placeholder: Chunk388032.intl.string(Chunk388032.t.bMlpvr),
@@ -278,11 +278,11 @@ function A() {
         autoFocus: true,
         error: c
       })
-    }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
+    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
       className: Chunk197571.marginBottom20,
       title: Chunk388032.intl.string(Chunk388032.t.GxirWV),
       error: null == require ? true : require.getFirstFieldErrorMessage("description"),
-      children: (0, Chunk255367.jsx)(Chunk481060.Kx8, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Kx8, {
         value: exports,
         onChange: e => S.setDescription(e),
         placeholder: Chunk388032.intl.string(Chunk388032.t.n1FBXl),

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => b
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -48,7 +48,7 @@ function f(e, t) {
   }), e
 }
 let b = function() {
-  let e = Chunk73800.useRef(null),
+  let e = Chunk647438.useRef(null),
     {
       analyticsLocations: t
     } = (0, Chunk906732.ZP)(),
@@ -85,12 +85,12 @@ let b = function() {
   let j = (0, Chunk267642.aq)({
     fractionalState: b
   });
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk569029.wrapper,
-    children: [(0, Chunk255367.jsx)(Chunk481060.$Eu, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.$Eu, {
       color: Chunk481060.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: Chunk569029.boostIcon
-    }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       className: Chunk569029.copy,
       color: "header-secondary",
       variant: "text-sm/medium",

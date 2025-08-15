@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => h
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk524437 = require("./524437.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -22,14 +22,14 @@ function h() {
   let t = Chunk695346.Xr.useSetting(),
     n = Chunk695346.UP.useSetting(),
     h = exports !== Chunk524437.Xr.DEFAULT_UNSET ? exports : null != (e = Chunk973005.O7.get(require)) ? module : Chunk524437.Xr.NON_FRIENDS;
-  return (0, Chunk255367.jsxs)(Chunk838436.U, {
+  return (0, Chunk951288.jsxs)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_DIRECT_MESSAGE_SPAM_FILTER_V2,
-    children: [(0, Chunk255367.jsx)(Chunk838436.H, {
+    children: [(0, Chunk951288.jsx)(Chunk838436.H, {
       header: Chunk388032.intl.string(Chunk388032.t.tiCXaG),
       description: Chunk388032.intl.format(Chunk388032.t.RvjRRE, {
         appealLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SAFE_DIRECT_MESSAGING)
       })
-    }), (0, Chunk255367.jsx)(Chunk481060.FXm, {
+    }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
       className: Chunk918526.radioGroup,
       radioItemClassName: Chunk918526.radioGroupItem,
       value: h,

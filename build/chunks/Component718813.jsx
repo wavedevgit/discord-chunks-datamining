@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => U
 }), require("./539854.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
@@ -87,11 +87,11 @@ let N = (0, Chunk663993.Un)({
     name: "GuildSettings"
   }),
   Z = {
-    [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk526665.yP)("Layers") ? (0, Chunk255367.jsx)(P, {}) : (0, Chunk255367.jsx)(N, {}),
-    [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk255367.jsx)(j, {}),
-    [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk255367.jsx)(A, {}),
-    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk255367.jsx)(x, {}),
-    [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk255367.jsx)(T, {})
+    [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk526665.yP)("Layers") ? (0, Chunk951288.jsx)(P, {}) : (0, Chunk951288.jsx)(N, {}),
+    [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(j, {}),
+    [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk951288.jsx)(A, {}),
+    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(x, {}),
+    [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk951288.jsx)(T, {})
   },
   w = "SHOWN",
   L = "HIDDEN",
@@ -101,9 +101,9 @@ let N = (0, Chunk663993.Un)({
   };
 
 function D() {
-  return Chunk73800.useEffect(() => (Chunk714338.Z.enable(), Chunk714338.Z.enableTemp(Chunk134616.u), () => Chunk714338.Z.disableTemp()), []), null
+  return Chunk647438.useEffect(() => (Chunk714338.Z.enable(), Chunk714338.Z.enableTemp(Chunk134616.u), () => Chunk714338.Z.disableTemp()), []), null
 }
-class k extends(r = Chunk73800.PureComponent) {
+class k extends(r = Chunk647438.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     return e.mode !== t.mode ? {
       animating: true,
@@ -200,7 +200,7 @@ class k extends(r = Chunk73800.PureComponent) {
         for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(exports, ["name", "mode", "children", "baseLayer"]), u = module || r === L ? this.getAnimatedStyle() : null, p = (0, Chunk255367.jsx)(Chunk748780.Z.div, S(C({
+    }(exports, ["name", "mode", "children", "baseLayer"]), u = module || r === L ? this.getAnimatedStyle() : null, p = (0, Chunk951288.jsx)(Chunk748780.Z.div, S(C({
       ref: e => this.containerRef.current = null != e ? e.componentRef : true,
       "data-layer": null != require ? require : "base",
       "aria-hidden": r === L,
@@ -211,9 +211,9 @@ class k extends(r = Chunk73800.PureComponent) {
       }),
       style: Chunk215569
     }, Chunk442837), {
-      children: Chunk73800
+      children: Chunk647438
     }));
-    return Chunk120356 ? Chunk37234 : (0, Chunk255367.jsx)(Chunk481060.EqS, {
+    return Chunk120356 ? Chunk37234 : (0, Chunk951288.jsx)(Chunk481060.EqS, {
       containerRef: this.containerRef,
       children: Chunk37234
     })
@@ -251,7 +251,7 @@ class k extends(r = Chunk73800.PureComponent) {
 I(k, "defaultProps", {
   baseLayer: false
 }), I(k, "contextType", Chunk481060.Sfi);
-class M extends Chunk73800.PureComponent {
+class M extends Chunk647438.PureComponent {
   componentDidMount() {
     Chunk585483.S.subscribe(Chunk981631.CkL.LAYER_POP_ESCAPE_KEY, Chunk37234.xf)
   }
@@ -266,11 +266,11 @@ class M extends Chunk73800.PureComponent {
     } = this.props, {
       length: r
     } = exports, l = [];
-    return Chunk73800.push((0, Chunk255367.jsx)(k, {
+    return Chunk647438.push((0, Chunk951288.jsx)(k, {
       mode: 0 !== r || require ? L : w,
       baseLayer: true,
       children: module
-    }, "layer-base")), exports.forEach((e, t) => l.push(this.renderComponent(e, t, r))), Chunk73800
+    }, "layer-base")), exports.forEach((e, t) => l.push(this.renderComponent(e, t, r))), Chunk647438
   }
   renderComponent(e, t, n) {
     let r;
@@ -281,7 +281,7 @@ class M extends Chunk73800.PureComponent {
     }, "layer-".concat(t))
   }
   renderArtisanalHack() {
-    return (0, Chunk255367.jsx)(Chunk481060.f6W, {
+    return (0, Chunk951288.jsx)(Chunk481060.f6W, {
       theme: this.props.sidebarTheme,
       children: e => (0, i.jsx)("div", {
         className: o()(v.bg, e)
@@ -289,8 +289,8 @@ class M extends Chunk73800.PureComponent {
     })
   }
   render() {
-    return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-      children: [this.renderArtisanalHack(), (0, Chunk255367.jsx)(Chunk215569.W, {
+    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      children: [this.renderArtisanalHack(), (0, Chunk951288.jsx)(Chunk215569.W, {
         component: "div",
         className: o()(Chunk256076.layers, this.props.className),
         children: this.renderLayers()

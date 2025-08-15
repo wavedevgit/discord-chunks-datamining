@@ -5,8 +5,8 @@ require.d(exports, {
   h4: () => A,
   nH: () => N
 }), require("./388685.js"), require("./539854.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -83,20 +83,20 @@ let A = e => {
       })]
     })
   };
-class Z extends Chunk73800.PureComponent {
+class Z extends Chunk647438.PureComponent {
   renderJumpButton() {
     let {
       jumping: e
     } = this.props;
-    return (0, Chunk255367.jsxs)(Chunk481060.P3F, {
+    return (0, Chunk951288.jsxs)(Chunk481060.P3F, {
       className: Chunk547660.jumpButton,
       onClick: this.handleClickJump,
-      children: [(0, Chunk255367.jsx)("div", {
+      children: [(0, Chunk951288.jsx)("div", {
         className: a()(Chunk547660.__invalid_text, {
           hidden: module
         }),
         children: Chunk388032.intl.string(Chunk388032.t.k5WiPT)
-      }), (0, Chunk255367.jsx)(Chunk481060.$jN, {
+      }), (0, Chunk951288.jsx)(Chunk481060.$jN, {
         type: Chunk481060.$jN.Type.PULSING_ELLIPSIS,
         className: a()(Chunk547660.loading, {
           [Chunk547660.visible]: module
@@ -111,11 +111,11 @@ class Z extends Chunk73800.PureComponent {
       canManageMessages: n,
       channel: s
     } = this.props;
-    return null != module && (exports || require || null != Chunk73800 && Chunk73800.isPrivate()) ? (0, Chunk255367.jsx)(Chunk755721.zx, {
+    return null != module && (exports || require || null != Chunk647438 && Chunk647438.isPrivate()) ? (0, Chunk951288.jsx)(Chunk755721.zx, {
       look: Chunk755721.zx.Looks.BLANK,
       size: Chunk755721.zx.Sizes.NONE,
       onClick: this.handleClickClose,
-      children: (0, Chunk255367.jsx)(Chunk481060.Dio, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Dio, {
         size: "md",
         color: "currentColor",
         className: Chunk547660.closeIcon
@@ -123,7 +123,7 @@ class Z extends Chunk73800.PureComponent {
     }) : null
   }
   render() {
-    return (0, Chunk255367.jsxs)("div", {
+    return (0, Chunk951288.jsxs)("div", {
       className: Chunk547660.actionButtons,
       children: [this.renderJumpButton(), this.renderCloseButton()]
     })

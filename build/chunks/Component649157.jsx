@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => m
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk153867 = require("./153867.js"),
@@ -15,8 +15,8 @@ var Chunk255367 = require("./255367.js"),
 
 function m() {
   let e = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
-    [t, m] = Chunk73800.useState(module),
-    [p] = Chunk73800.useState(() => (0, Chunk388032.getAvailableLocales)().map(e => {
+    [t, m] = Chunk647438.useState(module),
+    [p] = Chunk647438.useState(() => (0, Chunk388032.getAvailableLocales)().map(e => {
       var t, r;
       let s;
       try {
@@ -71,19 +71,19 @@ function m() {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
       }), t
     })),
-    g = Chunk73800.useCallback(e => {
+    g = Chunk647438.useCallback(e => {
       let {
         value: t
       } = e;
       m(t), u.nextTick(() => l.ZP.updateLocale(t))
     }, []);
-  return (0, Chunk255367.jsx)(Chunk481060.hjN, {
+  return (0, Chunk951288.jsx)(Chunk481060.hjN, {
     tag: Chunk481060.RB0.H1,
     title: Chunk388032.intl.string(Chunk388032.t.IHMsPj),
-    children: (0, Chunk255367.jsx)(Chunk481060.hjN, {
-      children: (0, Chunk255367.jsx)(Chunk481060.xJW, {
+    children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
+      children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
         title: Chunk388032.intl.string(Chunk388032.t["mx+sp6"]),
-        children: (0, Chunk255367.jsx)(Chunk481060.FXm, {
+        children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
           onChange: g,
           options: p,
           value: exports

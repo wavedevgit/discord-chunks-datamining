@@ -1,0 +1,85 @@
+/** Chunk was on 91584 **/
+/** chunk id: 610650, original params: t,e,r (module,exports,require) **/
+"use strict";
+var Chunk381538 = require("./381538.js");
+
+function i() {
+  return (i = Chunk381538 || function(t) {
+    for (var e = 1; e < arguments.length; e++) {
+      var r = arguments[e];
+      for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (t[n] = r[n])
+    }
+    return t
+  }).apply(this, arguments)
+}
+var Chunk116761 = require("./116761.js"),
+  Chunk654530 = require("./654530.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk467159 = require("./467159.js");
+module.exports = function(t) {
+  function e() {
+    return t.apply(this, arguments) || this
+  }
+  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t;
+  var r = e.prototype;
+  return r.shouldComponentUpdate = function(t) {
+    var e = this.props.editorState,
+      r = t.editorState;
+    if (e.getDirectionMap() !== r.getDirectionMap() || e.getSelection().getHasFocus() !== r.getSelection().getHasFocus()) returntrue;
+    var n = r.getNativelyRenderedContent(),
+      i = e.isInCompositionMode(),
+      o = r.isInCompositionMode();
+    if (e === r || null !== n && r.getCurrentContent() === n || i && o) returnfalse;
+    var a = e.getCurrentContent(),
+      u = r.getCurrentContent(),
+      s = e.getDecorator(),
+      c = r.getDecorator();
+    return i !== o || a !== u || s !== c || r.mustForceSelection()
+  }, r.render = function() {
+    for (var t = this.props, e = t.blockRenderMap, r = t.blockRendererFn, n = t.blockStyleFn, c = t.customStyleMap, l = t.customStyleFn, f = t.editorState, p = t.editorKey, h = t.textDirectionality, d = f.getCurrentContent(), g = f.getSelection(), y = f.mustForceSelection(), v = f.getDecorator(), m = s(f.getDirectionMap()), _ = d.getBlocksAsArray()[0], b = [], S = _; S;) {
+      var w = S.getKey(),
+        x = {
+          blockRenderMap: e,
+          blockRendererFn: r,
+          blockStyleFn: n,
+          contentState: d,
+          customStyleFn: l,
+          customStyleMap: c,
+          decorator: v,
+          editorKey: p,
+          editorState: f,
+          forceSelection: y,
+          selection: g,
+          block: S,
+          direction: h || m.get(w),
+          tree: f.getBlockTree(w)
+        },
+        k = (e.get(S.getType()) || e.get("unstyled")).wrapper;
+      b.push({
+        block: u.createElement(o, i({
+          key: w
+        }, x)),
+        wrapperTemplate: k,
+        key: w,
+        offsetKey: a.encode(w, 0, 0)
+      });
+      var C = S.getNextSiblingKey();
+      S = C ? d.getBlockForKey(C) : null
+    }
+    for (var E = [], D = 0; D < b.length;) {
+      var O = b[D];
+      if (O.wrapperTemplate) {
+        var K = [];
+        do K.push(b[D].block), D++; while (D < b.length && b[D].wrapperTemplate === O.wrapperTemplate);
+        var T = u.cloneElement(O.wrapperTemplate, {
+          key: O.key + "-wrap",
+          "data-offset-key": O.offsetKey
+        }, K);
+        E.push(T)
+      } else E.push(O.block), D++
+    }
+    return u.createElement("div", {
+      "data-contents": "true"
+    }, E)
+  }, e
+}(Chunk647438.Component)

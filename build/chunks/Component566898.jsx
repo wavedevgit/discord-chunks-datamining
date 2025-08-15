@@ -9,8 +9,8 @@ require.d(exports, {
   iv: () => b,
   pk: () => y
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -23,7 +23,7 @@ function u(e) {
 }
 
 function d() {
-  return (0, Chunk255367.jsx)("div", {
+  return (0, Chunk951288.jsx)("div", {
     className: Chunk674944.avatar,
     style: {
       opacity: .08

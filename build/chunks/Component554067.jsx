@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => g
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
   Chunk381585 = require("./381585.jsx"),
@@ -22,23 +22,23 @@ function g(e) {
   } = e, {
     searchQuery: g,
     onSetSearchQuery: f
-  } = (0, s.S)(), [b, h] = l.useState(""), m = (0, o.sp)();
+  } = (0, s.S)(), [b, m] = l.useState(""), h = (0, o.sp)();
   return l.useEffect(() => {
     let e = setTimeout(() => {
       f(b)
     }, 250);
     return () => clearTimeout(e)
   }, [b, f]), l.useEffect(() => {
-    h(g)
+    m(g)
   }, [g]), (0, n.jsx)(a.P3F, {
     ignoreKeyPress: true,
     onClick: () => {
       r !== c.AW.CATALOG && t(c.AW.CATALOG), i.default.track(u.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == m ? true : m.sessionId,
-        page_section: null == m ? true : m.pageSection,
-        page_category: null == m ? true : m.pageCategory,
-        page_index: null == m ? true : m.pageIndex,
-        page_size: null == m ? true : m.pageSize,
+        collectibles_shop_session_id: null == h ? true : h.sessionId,
+        page_section: null == h ? true : h.pageSection,
+        page_category: null == h ? true : h.pageCategory,
+        page_index: null == h ? true : h.pageIndex,
+        page_size: null == h ? true : h.pageSize,
         cta_name: "search bar",
         page_type: r
       })
@@ -50,14 +50,14 @@ function g(e) {
         "Enter" === e.key && f(b)
       },
       query: b,
-      onChange: h,
+      onChange: m,
       onClear: () => {
-        h(""), i.default.track(u.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == m ? true : m.sessionId,
-          page_section: null == m ? true : m.pageSection,
-          page_category: null == m ? true : m.pageCategory,
-          page_index: null == m ? true : m.pageIndex,
-          page_size: null == m ? true : m.pageSize,
+        m(""), i.default.track(u.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          collectibles_shop_session_id: null == h ? true : h.sessionId,
+          page_section: null == h ? true : h.pageSection,
+          page_category: null == h ? true : h.pageCategory,
+          page_index: null == h ? true : h.pageIndex,
+          page_size: null == h ? true : h.pageSize,
           cta_name: "search bar clear",
           page_type: r
         })

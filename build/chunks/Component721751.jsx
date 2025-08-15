@@ -4,8 +4,8 @@ let r;
 require.d(exports, {
   Z: () => j
 }), require("./388685.js"), require("./35282.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -51,7 +51,7 @@ function T(e) {
       return null
   }
 }
-class Z extends Chunk73800.Component {
+class Z extends Chunk647438.Component {
   componentDidMount() {
     window.addEventListener("resize", this.handleResize)
   }
@@ -71,35 +71,35 @@ class Z extends Chunk73800.Component {
   renderDefault() {
     let {
       splash: e
-    } = this.props, t = (0, Chunk255367.jsx)(Chunk605782.Z, {
-      component: Chunk73800.Fragment,
-      children: Chunk73800.Children.map(this.props.children, e => i.cloneElement(e, {
+    } = this.props, t = (0, Chunk951288.jsx)(Chunk605782.Z, {
+      component: Chunk647438.Fragment,
+      children: Chunk647438.Children.map(this.props.children, e => i.cloneElement(e, {
         transitionTo: f.uL,
         replaceWith: f.dL
       }))
     });
-    return (0, Chunk255367.jsx)("div", {
+    return (0, Chunk951288.jsx)("div", {
       className: Chunk816282.characterBackground,
-      children: (0, Chunk255367.jsx)(Chunk481060.y5t, {
+      children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
         forceLevel: 1,
-        children: null != module ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-          children: [(0, Chunk255367.jsx)(Chunk133853.Z, {
+        children: null != module ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+          children: [(0, Chunk951288.jsx)(Chunk133853.Z, {
             show: true,
             className: Chunk816282.logo
-          }), (0, Chunk255367.jsx)(Chunk568154.h, {
+          }), (0, Chunk951288.jsx)(Chunk568154.h, {
             splash: module,
             children: exports
           })]
-        }) : (0, Chunk255367.jsx)(T, {
+        }) : (0, Chunk951288.jsx)(T, {
           children: exports
         })
       })
     })
   }
   renderMobile() {
-    return (0, Chunk255367.jsx)(Chunk605782.Z, {
-      component: Chunk73800.Fragment,
-      children: Chunk73800.Children.map(this.props.children, e => i.cloneElement(e, {
+    return (0, Chunk951288.jsx)(Chunk605782.Z, {
+      component: Chunk647438.Fragment,
+      children: Chunk647438.Children.map(this.props.children, e => i.cloneElement(e, {
         transitionTo: this.mobileTransitionTo,
         replaceWith: this.mobileReplaceWith
       }))

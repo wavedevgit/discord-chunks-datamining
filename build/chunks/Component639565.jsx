@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => f
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk703656 = require("./703656.js"),
   Chunk626135 = require("./626135.js"),
   Chunk790527 = require("./790527.jsx"),
@@ -15,9 +15,9 @@ var Chunk703656 = require("./703656.js"),
   Chunk235810 = require("./235810.js");
 
 function b() {
-  return (0, Chunk255367.jsx)("div", {
+  return (0, Chunk951288.jsx)("div", {
     className: Chunk726718.artContainer,
-    children: (0, Chunk255367.jsx)("img", {
+    children: (0, Chunk951288.jsx)("img", {
       src: Chunk235810,
       className: Chunk726718.artAsset,
       alt: ""

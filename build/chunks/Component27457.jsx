@@ -4,8 +4,8 @@ require.d(exports, {
   BP: () => eo,
   ZP: () => ea
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -87,7 +87,7 @@ function ee(e, t) {
   }), e
 }
 let et = [Chunk354459.fO.ACTIVITY],
-  en = Chunk73800.memo(e => {
+  en = Chunk647438.memo(e => {
     var t, n, l, s, c;
     let {
       participant: b,
@@ -176,15 +176,15 @@ let et = [Chunk354459.fO.ACTIVITY],
       e1 = i.useCallback(e => {
         null == L || L(b, e)
       }, [L, b]),
-      e3 = i.useCallback((e, t, n) => {
+      e4 = i.useCallback((e, t, n) => {
         null == M || M(b, e, t, n)
       }, [M, b]),
+      e8 = null,
       e6 = null,
-      e4 = null,
-      e8 = "";
+      e3 = "";
     switch (b.type) {
       case Y.fO.STREAM:
-        e6 = (0, r.jsx)(H.Z, {
+        e8 = (0, r.jsx)(H.Z, {
           participant: b,
           selected: ep,
           width: es,
@@ -194,19 +194,19 @@ let et = [Chunk354459.fO.ACTIVITY],
           inPopout: ec,
           focused: eg,
           inOverlayPopout: ej
-        }), e4 = (0, r.jsx)(H._, {
+        }), e6 = (0, r.jsx)(H._, {
           participant: b,
           selected: ep,
           width: es,
           focused: eg,
           idle: eC,
           premiumIndicator: false
-        }), e8 = Q.intl.formatToPlainString(Q.t.gHPz3d, {
+        }), e3 = Q.intl.formatToPlainString(Q.t.gHPz3d, {
           streamerName: b.user.username
         });
         break;
       case Y.fO.USER:
-        e6 = (0, r.jsx)(F.Z, {
+        e8 = (0, r.jsx)(F.Z, {
           channel: ea,
           inCall: ed,
           participant: b,
@@ -220,26 +220,26 @@ let et = [Chunk354459.fO.ACTIVITY],
           noVideoRender: eh || eM,
           pulseSpeakingIndicator: ey,
           inOverlayPopout: ej
-        }), e4 = (0, r.jsx)(F.T, {
+        }), e6 = (0, r.jsx)(F.T, {
           participant: b,
           channelId: ea.id
-        }), e8 = Q.intl.formatToPlainString(Q.t["iC/x/f"], {
+        }), e3 = Q.intl.formatToPlainString(Q.t["iC/x/f"], {
           username: b.user.username
         });
         break;
       case Y.fO.ACTIVITY:
-        e6 = (0, r.jsx)(B.ZP, {
+        e8 = (0, r.jsx)(B.ZP, {
           interactible: eg,
           participant: b,
           selected: ep,
           channel: ea,
           width: es
-        }), e8 = Q.intl.formatToPlainString(Q.t.YCvOsL, {
+        }), e3 = Q.intl.formatToPlainString(Q.t.YCvOsL, {
           activityName: null == eA ? true : eA.name
         });
         break;
       case Y.fO.HIDDEN_STREAM:
-        e6 = (0, r.jsx)(H.Z, {
+        e8 = (0, r.jsx)(H.Z, {
           participant: b,
           selected: ep,
           width: es,
@@ -251,8 +251,8 @@ let et = [Chunk354459.fO.ACTIVITY],
           inOverlayPopout: ej
         })
     }
-    let e7 = i.useRef(null),
-      e5 = b.type === Y.fO.STREAM ? u.pzj : u.Odl;
+    let e2 = i.useRef(null),
+      e7 = b.type === Y.fO.STREAM ? u.pzj : u.Odl;
     return (0, r.jsx)(p.Z, {
       section: K.jXE.VOICE_CHANNEL_TILE,
       children: (0, r.jsx)("div", {
@@ -271,7 +271,7 @@ let et = [Chunk354459.fO.ACTIVITY],
           isShaking: ek,
           className: J.tile,
           children: [(0, r.jsx)(V.Z, {
-            ref: e7,
+            ref: e2,
             className: o()(J.tile, {
               [J.noBorder]: ef,
               [J.noInteraction]: null == k,
@@ -281,10 +281,10 @@ let et = [Chunk354459.fO.ACTIVITY],
             style: ei,
             participantUserId: eT,
             children: (0, r.jsxs)(u.kL8, {
-              "aria-label": e8,
+              "aria-label": e3,
               className: J.tileChild,
               onDoubleClick: e1,
-              onContextMenu: e => e3(e, b.type === Y.fO.STREAM),
+              onContextMenu: e => e4(e, b.type === Y.fO.STREAM),
               onClick: e0,
               onMouseDown: z,
               onKeyDown: en,
@@ -302,16 +302,16 @@ let et = [Chunk354459.fO.ACTIVITY],
                   channelId: ea.id,
                   guildId: ea.getGuildId(),
                   containerDimensions: {
-                    width: null != (s = null == e7 || null == (t = e7.current) ? true : t.clientWidth) ? s : 0,
-                    height: null != (c = null == e7 || null == (n = e7.current) ? true : n.clientHeight) ? c : 0
+                    width: null != (s = null == e2 || null == (t = e2.current) ? true : t.clientWidth) ? s : 0,
+                    height: null != (c = null == e2 || null == (n = e2.current) ? true : n.clientHeight) ? c : 0
                   }
                 })
-              }) : null, e6, ef ? null : (0, r.jsx)("div", {
+              }) : null, e8, ef ? null : (0, r.jsx)("div", {
                 className: J.indicators,
-                children: e4
+                children: e6
               }), ep ? (0, r.jsx)("div", {
                 className: J.selectedScreen,
-                children: (0, r.jsx)(e5, {
+                children: (0, r.jsx)(e7, {
                   size: "md",
                   color: "currentColor",
                   className: J.selectedIcon
@@ -331,7 +331,7 @@ let et = [Chunk354459.fO.ACTIVITY],
                 localVideoDisabled: eD,
                 videoToggleState: eL,
                 hideAudioIcon: eH,
-                onContextMenu: e3,
+                onContextMenu: e4,
                 onToggleMute: e$,
                 participantUserId: eT,
                 participantDisplayNameStyles: null == eZ ? true : eZ.displayNameStyles,
@@ -353,7 +353,7 @@ let et = [Chunk354459.fO.ACTIVITY],
             participant: b
           }), (0, r.jsx)(j.Z, {
             isFiring: eE,
-            callTileRef: e7.current
+            callTileRef: e2.current
           })]
         })
       })
@@ -442,7 +442,7 @@ function ei(e) {
   })
 }
 en.displayName = "CallTile";
-let el = Chunk73800.memo(e => {
+let el = Chunk647438.memo(e => {
   let {
     idle: t,
     title: n,

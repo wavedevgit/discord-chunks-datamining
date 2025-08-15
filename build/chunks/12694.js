@@ -3,7 +3,7 @@
 require.d(exports, {
   V: () => d
 });
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk695346 = require("./695346.js"),
@@ -16,7 +16,7 @@ function d() {
   let {
     variantName: e
   } = (0, Chunk316496.D)("not sharing link"), t = Chunk695346.G6.useSetting(), n = (0, Chunk442837.e7)([Chunk885110.Z], () => Chunk885110.Z.getStatus());
-  (0, Chunk73800.useEffect)(() => {
+  (0, Chunk647438.useEffect)(() => {
     Chunk626135.default.track(Chunk981631.rMx.RUNNING_GAME_CARD_STATE_CHANGED, {
       show_current_game: exports,
       status: require,

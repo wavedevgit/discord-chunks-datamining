@@ -3,9 +3,9 @@
 require.d(exports, {
   x: () => l
 }), require("./388685.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk960048 = require("./960048.js");
-class l extends Chunk73800.PureComponent {
+class l extends Chunk647438.PureComponent {
   componentDidCatch(e, t) {
     i.Z.captureException(e, {
       tags: {

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => Z
 }), require("./784620.js"), require("./973216.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -25,7 +25,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk966117 = require("./966117.js"),
   Chunk197571 = require("./197571.js");
-class R extends Chunk73800.PureComponent {
+class R extends Chunk647438.PureComponent {
   render() {
     var e, t;
     let {
@@ -34,7 +34,7 @@ class R extends Chunk73800.PureComponent {
       hidePersonalInformation: i,
       hostname: o
     } = this.props;
-    if (null == require) return (0, Chunk255367.jsx)(Chunk481060.$jN, {
+    if (null == require) return (0, Chunk951288.jsx)(Chunk481060.$jN, {
       type: Chunk481060.$jN.Type.SPINNING_CIRCLE
     });
     let d = (e = function(e) {
@@ -108,11 +108,11 @@ class R extends Chunk73800.PureComponent {
           children: e
         }, e)
       })(e.displayName, e.bitrate, e.lost));
-    return (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+    return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H2,
-      title: Chunk388032.intl.string(Chunk388032.t.wU9INz) + (null != Chunk73800 ? " - " + Chunk73800 : ""),
+      title: Chunk388032.intl.string(Chunk388032.t.wU9INz) + (null != Chunk647438 ? " - " + Chunk647438 : ""),
       className: Chunk966117.allowSelection,
-      children: [(0, Chunk481250.a)(Chunk226961), 0 === Chunk476221.length ? null : (0, Chunk255367.jsx)(Chunk481060.$i$, {
+      children: [(0, Chunk481250.a)(Chunk226961), 0 === Chunk476221.length ? null : (0, Chunk951288.jsx)(Chunk481060.$i$, {
         className: Chunk197571.marginBottom20
       }), (0, Chunk481250.a)(Chunk476221)]
     })

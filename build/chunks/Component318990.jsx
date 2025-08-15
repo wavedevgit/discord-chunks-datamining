@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => d
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
@@ -24,14 +24,14 @@ function d() {
       animateOnHover: true
     }),
     m = e => null != e.globalName ? e.globalName : e.username,
-    C = Chunk73800.useMemo(() => module.length >= 2 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.c7ETJC, {
+    C = Chunk647438.useMemo(() => module.length >= 2 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.c7ETJC, {
       username: m(module[0])
     }) : 1 === module.length ? Chunk388032.intl.formatToPlainString(Chunk388032.t.dpjXPD, {
       username: m(module[0])
     }) : "", [module]);
-  return 0 === module.length ? null : (0, Chunk255367.jsxs)("div", {
+  return 0 === module.length ? null : (0, Chunk951288.jsxs)("div", {
     className: Chunk880406.container,
-    children: [(0, Chunk255367.jsx)(Chunk481060.qEK, function(e) {
+    children: [(0, Chunk951288.jsx)(Chunk481060.qEK, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var i = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(i);
@@ -53,7 +53,7 @@ function d() {
       src: require,
       "aria-label": exports.username,
       size: Chunk481060.EFr.SIZE_24
-    }, d)), (0, Chunk255367.jsx)(Chunk481060.Text, {
+    }, d)), (0, Chunk951288.jsx)(Chunk481060.Text, {
       className: Chunk880406.text,
       variant: "text-sm/normal",
       color: "always-white",

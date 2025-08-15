@@ -4,8 +4,8 @@
 require.d(exports, {
   default: () => w
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./953529.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
@@ -111,19 +111,19 @@ function C(e) {
     }
   })
 }
-class R extends Chunk73800.Component {
+class R extends Chunk647438.Component {
   render() {
     var e;
-    return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk255367.jsx)(C, {
+    return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk951288.jsx)(C, {
       file: this.props.upload.item.file
-    }) : (0, Chunk255367.jsx)("div", {
+    }) : (0, Chunk951288.jsx)("div", {
       className: o()(Chunk995751.icon, {
         [Chunk995751[null != (e = this.props.upload.classification) ? module : ""]]: true
       })
     })
   }
 }
-class P extends Chunk73800.Component {
+class P extends Chunk647438.Component {
   componentDidMount() {
     var e;
     (null == (e = this.props.upload) ? true : module.showLargeMessageDialog) && this.props.upload.item.platform === Chunk476326.ow.WEB && Chunk626135.default.track(Chunk981631.rMx.OPEN_MODAL, {
@@ -149,40 +149,40 @@ class P extends Chunk73800.Component {
     } = this.props, {
       hasSpoiler: c
     } = this.state;
-    return (0, Chunk255367.jsxs)(Chunk481060.Y0X, {
+    return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       "aria-label": Chunk388032.intl.string(Chunk388032.t["3AS4UF"]),
       size: Chunk481060.CgR.DYNAMIC,
       transitionState: exports,
       className: Chunk995751.uploadModal,
       parentComponent: "UploadAttachment",
-      children: [(0, Chunk255367.jsxs)("div", {
+      children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk995751.inner,
-        children: [(0, Chunk255367.jsxs)("div", {
+        children: [(0, Chunk951288.jsxs)("div", {
           className: o()(Chunk995751.file, {
             [Chunk995751.expandable]: module.isImage
           }),
-          children: [(0, Chunk255367.jsx)(R, {
+          children: [(0, Chunk951288.jsx)(R, {
             upload: module
-          }), (0, Chunk255367.jsxs)("div", {
+          }), (0, Chunk951288.jsxs)("div", {
             className: Chunk995751.description,
-            children: [(0, Chunk255367.jsx)("div", {
+            children: [(0, Chunk951288.jsx)("div", {
               className: Chunk995751.filename,
               children: module.showLargeMessageDialog ? Chunk388032.intl.formatToPlainString(Chunk388032.t.QWQxtL, {
                 maxLength: require
               }) : module.filename
-            }), module.showLargeMessageDialog ? (0, Chunk255367.jsx)("div", {
+            }), module.showLargeMessageDialog ? (0, Chunk951288.jsx)("div", {
               className: Chunk995751.subtitle,
               children: Chunk388032.intl.string(Chunk388032.t.Plcu09)
             }) : null]
           })]
-        }), (0, Chunk255367.jsxs)("div", {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk995751.comment,
-          children: [(0, Chunk255367.jsx)("div", {
+          children: [(0, Chunk951288.jsx)("div", {
             className: Chunk995751.label,
-            children: (0, Chunk255367.jsx)("span", {
+            children: (0, Chunk951288.jsx)("span", {
               children: Chunk388032.intl.string(Chunk388032.t.ILJuBg)
             })
-          }), (0, Chunk255367.jsx)(Chunk755721.Is, {
+          }), (0, Chunk951288.jsx)(Chunk755721.Is, {
             className: o()(Chunk995751.channelTextAreaUpload, Chunk197571.marginTop8),
             value: this.state.filename,
             onChange: e => this.setState({
@@ -191,13 +191,13 @@ class P extends Chunk73800.Component {
             onKeyDown: e => {
               if (e.which === E.yXg.ENTER) return this.handleSubmit()
             }
-          }), module.isImage ? (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
-            children: [(0, Chunk255367.jsx)("div", {
+          }), module.isImage ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
+            children: [(0, Chunk951288.jsx)("div", {
               className: Chunk995751.label,
-              children: (0, Chunk255367.jsx)("span", {
+              children: (0, Chunk951288.jsx)("span", {
                 children: Chunk388032.intl.string(Chunk388032.t.eOB2eX)
               })
-            }), (0, Chunk255367.jsx)(Chunk755721.Is, {
+            }), (0, Chunk951288.jsx)(Chunk755721.Is, {
               className: o()(Chunk995751.channelTextAreaUpload, Chunk197571.marginTop8),
               placeholder: Chunk388032.intl.string(Chunk388032.t.RNH1jo),
               value: this.state.description,
@@ -208,34 +208,34 @@ class P extends Chunk73800.Component {
                 if (e.which === E.yXg.ENTER) return this.handleSubmit()
               }
             })]
-          }) : null, true !== Chunk120356 && (0, Chunk255367.jsx)(Chunk481060.XZJ, {
+          }) : null, true !== Chunk120356 && (0, Chunk951288.jsx)(Chunk481060.XZJ, {
             className: Chunk197571.marginBottom20,
             value: Chunk166459,
             onChange: (e, t) => this.setState({
               hasSpoiler: t
             }),
-            children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+            children: (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-sm/normal",
               children: Chunk388032.intl.string(Chunk388032.t["gsI+xM"])
             })
           })]
         })]
-      }), (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk951288.jsx)("div", {
         className: Chunk995751.footer,
-        children: (0, Chunk255367.jsxs)("div", {
+        children: (0, Chunk951288.jsxs)("div", {
           className: o()(Chunk995751.hasSpoilers, Chunk995751.footerRightAlign),
-          children: [(0, Chunk255367.jsx)(Chunk755721.zx, {
+          children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
             type: "button",
             look: Chunk755721.zx.Looks.LINK,
             color: Chunk755721.zx.Colors.PRIMARY,
             onClick: this.cancel,
-            children: (0, Chunk255367.jsx)("span", {
+            children: (0, Chunk951288.jsx)("span", {
               children: Chunk388032.intl.string(Chunk388032.t["ETE/oK"])
             })
-          }), (0, Chunk255367.jsx)(Chunk755721.zx, {
+          }), (0, Chunk951288.jsx)(Chunk755721.zx, {
             type: "submit",
             onClick: this.handleSubmit,
-            children: (0, Chunk255367.jsx)("span", {
+            children: (0, Chunk951288.jsx)("span", {
               children: Chunk388032.intl.string(Chunk388032.t["TY+auL"])
             })
           })]

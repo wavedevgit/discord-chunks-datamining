@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => x
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk772848 = require("./772848.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -21,10 +21,10 @@ var Chunk255367 = require("./255367.js"),
 
 function x() {
   let e = (0, Chunk780384.wj)((0, Chunk410030.ZP)()),
-    t = Chunk73800.useMemo(() => ({
+    t = Chunk647438.useMemo(() => ({
       backgroundImage: "url(".concat("https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png", ")")
     }), []),
-    n = Chunk73800.useCallback(() => {
+    n = Chunk647438.useCallback(() => {
       (0, Chunk37234.xf)(), (0, Chunk110560.navigateToQuestHome)({
         fromContent: Chunk497505.jn.QUEST_HOME_MOVE_CALLOUT
       }), Chunk626135.default.track(Chunk981631.rMx.QUEST_CONTENT_CLICKED, function(e) {
@@ -50,31 +50,31 @@ function x() {
         is_targeted: false
       }, (0, Chunk617136.mH)(Chunk497505.jn.QUEST_HOME_MOVE_CALLOUT)))
     }, []);
-  return (0, Chunk255367.jsx)("div", {
+  return (0, Chunk951288.jsx)("div", {
     className: Chunk154115.container,
     style: exports,
-    children: (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+    children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       className: Chunk154115.textContainer,
       justify: "space-between",
-      children: [(0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+      children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 4,
-        children: [(0, Chunk255367.jsxs)("div", {
+        children: [(0, Chunk951288.jsxs)("div", {
           className: Chunk154115.headerContainer,
-          children: [(0, Chunk255367.jsx)("img", {
+          children: [(0, Chunk951288.jsx)("img", {
             alt: "",
             src: Chunk66094,
             className: Chunk154115.icon
-          }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+          }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
             variant: "heading-lg/bold",
             color: "always-white",
             children: Chunk388032.intl.string(Chunk388032.t.z8YP2N)
           })]
-        }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           color: "text-secondary",
           children: Chunk388032.intl.string(Chunk388032.t.IqmRZ2)
         })]
-      }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: module ? "primary" : "overlay-primary",
         text: Chunk388032.intl.string(Chunk388032.t.GURBQk),
         onClick: require

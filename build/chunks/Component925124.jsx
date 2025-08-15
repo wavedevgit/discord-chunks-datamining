@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => I
 }), require("./388685.js"), require("./642613.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk544891 = require("./544891.js"),
@@ -467,16 +467,16 @@ function P(e) {
 }
 
 function I() {
-  let [e, t] = Chunk73800.useState([]), [a, l] = Chunk73800.useState([]), [i, s] = Chunk73800.useState(), [x, h] = Chunk73800.useState(), [j, N] = Chunk73800.useState([]), [I, w] = Chunk73800.useState([]), [R, k] = Chunk73800.useState(true), [Z, A] = Chunk73800.useState(10080), [D, L] = Chunk73800.useState([]), {
+  let [e, t] = Chunk647438.useState([]), [a, l] = Chunk647438.useState([]), [i, s] = Chunk647438.useState(), [x, h] = Chunk647438.useState(), [j, N] = Chunk647438.useState([]), [I, w] = Chunk647438.useState([]), [R, k] = Chunk647438.useState(true), [Z, A] = Chunk647438.useState(10080), [D, L] = Chunk647438.useState([]), {
     entitlements: M,
     deleteFractionalPremium: U,
     refreshEntitlementList: F
   } = (0, Chunk232867.m)();
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     F()
-  }, [F]), Chunk73800.useEffect(() => {
+  }, [F]), Chunk647438.useEffect(() => {
     L(M.filter(e => e.sourceType === f.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
-  }, [M]), Chunk73800.useEffect(() => {
+  }, [M]), Chunk647438.useEffect(() => {
     (0 === module.length || 0 === require.length || R) && y().then(e => {
       let a = Object.keys(e.trial).map(t => ({
           label: t,
@@ -488,7 +488,7 @@ function I() {
         }));
       t(a), l(n), null == i && s(a[0].value), null == x && h(n[0].value)
     })
-  }, [module, require, i, Chunk572004, R]), Chunk73800.useEffect(() => {
+  }, [module, require, i, Chunk572004, R]), Chunk647438.useEffect(() => {
     R && (k(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), O().then(e => {
       N(e.trial.sort((e, t) => e.id.localeCompare(t.id))), w(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
@@ -503,47 +503,47 @@ function I() {
     let e = new Date(Date.now() + 60 * Z * 1e3).toISOString();
     await E(module), F()
   };
-  return (0, Chunk255367.jsx)(Chunk481060.zJl, {
+  return (0, Chunk951288.jsx)(Chunk481060.zJl, {
     className: Chunk451429.panel,
-    children: (0, Chunk255367.jsxs)("div", {
+    children: (0, Chunk951288.jsxs)("div", {
       className: Chunk711322.panelInner,
-      children: [(0, Chunk255367.jsxs)("section", {
+      children: [(0, Chunk951288.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: "Utils"
-        }), (0, Chunk255367.jsxs)("div", {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk711322.buttons,
-          children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             size: "sm",
             text: "Clear all User Offers",
             onClick: G
-          }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             size: "sm",
             text: "Clear Mobile Trials DismissibleContent",
             onClick: () => (0, Chunk675478.w9)(Chunk704215.z.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE)
-          }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             size: "sm",
             text: "Clear Offer Nagbar DismissibleContent",
             onClick: () => (0, Chunk675478.Z1)(Chunk704215.z.NAGBAR_NOTICE_OFFER_EXPIRING)
-          }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             size: "sm",
             text: "Refresh DevTools",
             onClick: () => k(true)
           })]
         })]
-      }), (0, Chunk255367.jsxs)("section", {
+      }), (0, Chunk951288.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: "Create a Trial Offer"
-        }), (0, Chunk255367.jsxs)("div", {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk711322.inputRow,
-          children: [(0, Chunk255367.jsx)(Chunk481060.PhF, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.PhF, {
             className: Chunk711322.input,
             options: module,
             isSelected: e => i === e,
@@ -551,20 +551,20 @@ function I() {
             serialize: e => String(e),
             select: e => s(e),
             popoutLayerContext: Chunk246992.O$
-          }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: "Create",
             onClick: B
           })]
         })]
-      }), (0, Chunk255367.jsxs)("section", {
+      }), (0, Chunk951288.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: "Create a Discount Offer"
-        }), (0, Chunk255367.jsxs)("div", {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk711322.inputRow,
-          children: [(0, Chunk255367.jsx)(Chunk481060.PhF, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.PhF, {
             className: Chunk711322.input,
             options: require,
             isSelected: e => x === e,
@@ -572,15 +572,15 @@ function I() {
             serialize: e => String(e),
             select: e => h(e),
             popoutLayerContext: Chunk246992.O$
-          }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: "Create",
             onClick: z
           })]
         })]
-      }), Chunk474936.length > 0 && (0, Chunk255367.jsxs)("section", {
+      }), Chunk474936.length > 0 && (0, Chunk951288.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: "Existing Trial Offers"
         }), Chunk474936.map(t => (0, n.jsx)(S, {
@@ -588,9 +588,9 @@ function I() {
           offerOptions: e,
           forceRefetch: () => k(true)
         }, t.id))]
-      }), I.length > 0 && (0, Chunk255367.jsxs)("section", {
+      }), I.length > 0 && (0, Chunk951288.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: "Existing Discount Offers"
         }), I.map(e => (0, n.jsx)(P, {
@@ -598,14 +598,14 @@ function I() {
           offerOptions: a,
           forceRefetch: () => k(true)
         }, e.id))]
-      }), (0, Chunk255367.jsxs)("section", {
+      }), (0, Chunk951288.jsxs)("section", {
         className: Chunk711322.section,
-        children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: "Create a Reverse Trial Entitlement"
-        }), (0, Chunk255367.jsxs)("div", {
+        }), (0, Chunk951288.jsxs)("div", {
           className: Chunk711322.inputRow,
-          children: [(0, Chunk255367.jsx)(Chunk481060.PhF, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.PhF, {
             className: Chunk711322.input,
             options: [{
               label: "5 minutes",
@@ -625,20 +625,20 @@ function I() {
             serialize: e => String(e),
             select: e => A(e),
             popoutLayerContext: Chunk246992.O$
-          }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: "Create",
             onClick: V
           })]
         })]
-      }), D.length > 0 && (0, Chunk255367.jsxs)("div", {
-        children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), D.length > 0 && (0, Chunk951288.jsxs)("div", {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           style: {
             marginTop: "15px"
           },
           variant: "text-md/bold",
           children: "Active reverse trial"
-        }), (0, Chunk255367.jsx)("div", {
+        }), (0, Chunk951288.jsx)("div", {
           children: D.map(e => (0, n.jsx)(p.D, {
             entitlement: e,
             active: true,

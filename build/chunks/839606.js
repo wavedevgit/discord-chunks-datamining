@@ -5,12 +5,12 @@ require.d(exports, {
   B: () => o,
   j: () => a
 });
-var Chunk97519 = require("./97519.js"),
+var Chunk879690 = require("./879690.js"),
   Chunk731965 = require("./731965.js"),
   a = function(e) {
     return e[e.DEFAULT = 0] = "DEFAULT", e[e.COACHMARK = 1] = "COACHMARK", e
   }({});
-let o = (0, Chunk97519.U)(e => ({
+let o = (0, Chunk879690.U)(e => ({
   activePickerChannelId: true,
   previewWallpaperId: true,
   lastShownChatWallpaperPickerType: true,

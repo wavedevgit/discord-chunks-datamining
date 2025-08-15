@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => _
 }), require("./953529.js");
-var i, r, s, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var i, r, s, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   c = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -16,7 +16,7 @@ var i, r, s, Chunk255367 = require("./255367.js"),
   Chunk624138 = require("./624138.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk916648 = require("./916648.js");
-class _ extends(i = Chunk73800.PureComponent) {
+class _ extends(i = Chunk647438.PureComponent) {
   get typeString() {
     let {
       paymentSource: e
@@ -55,7 +55,7 @@ class _ extends(i = Chunk73800.PureComponent) {
       paymentSource: e,
       descriptionClassName: t
     } = this.props;
-    return (0, Chunk255367.jsx)(Chunk481060.Text, {
+    return (0, Chunk951288.jsx)(Chunk481060.Text, {
       className: c()(Chunk916648.description, exports),
       variant: "text-md/semibold",
       children: this.getLabel(module)
@@ -80,27 +80,27 @@ class _ extends(i = Chunk73800.PureComponent) {
       showPaymentSourceIcon: r,
       showLabels: s
     } = this.props, l = this.renderSubText();
-    return (0, Chunk255367.jsxs)(Chunk600164.Z, {
-      children: [r && (0, Chunk255367.jsx)(Chunk219929.ZP, {
+    return (0, Chunk951288.jsxs)(Chunk600164.Z, {
+      children: [r && (0, Chunk951288.jsx)(Chunk219929.ZP, {
         type: this.typeString
-      }), (0, Chunk255367.jsxs)(Chunk600164.Z, {
+      }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
         direction: Chunk600164.Z.Direction.VERTICAL,
         className: Chunk916648.descriptionWrapper,
-        children: [(0, Chunk255367.jsxs)(Chunk600164.Z, {
+        children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
           align: Chunk600164.Z.Align.CENTER,
-          children: [this.renderDescription(), s && module ? (0, Chunk255367.jsx)("div", {
+          children: [this.renderDescription(), s && module ? (0, Chunk951288.jsx)("div", {
             className: Chunk916648.defaultIndicator,
             children: Chunk388032.intl.string(Chunk388032.t.bBvAEB)
-          }) : null, i ? (0, Chunk255367.jsx)("div", {
+          }) : null, i ? (0, Chunk951288.jsx)("div", {
             className: Chunk916648.premiumIndicator,
             children: Chunk388032.intl.string(Chunk388032.t.YCrcPD)
-          }) : null, s && exports.invalid ? (0, Chunk255367.jsx)("div", {
+          }) : null, s && exports.invalid ? (0, Chunk951288.jsx)("div", {
             className: Chunk916648.invalidIndicator,
             children: Chunk388032.intl.string(Chunk388032.t["851k9/"])
           }) : null]
-        }), require && null != Chunk73800 ? (0, Chunk255367.jsx)("div", {
+        }), require && null != Chunk647438 ? (0, Chunk951288.jsx)("div", {
           className: Chunk916648.subText,
-          children: Chunk73800
+          children: Chunk647438
         }) : null]
       })]
     })

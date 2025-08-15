@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => d
 }), require("./388685.js");
-var Chunk73800 = require("./73800.js");
+var Chunk647438 = require("./647438.js");
 let i = new Map,
   l = new Map,
   a = new Map;
@@ -38,8 +38,8 @@ function c(e, t) {
 
 function d() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : window,
-    [t, n] = Chunk73800.useState(s(module));
-  return Chunk73800.useEffect(() => {
+    [t, n] = Chunk647438.useState(s(module));
+  return Chunk647438.useEffect(() => {
     let t = e => {
       n(e)
     };

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => h
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk911969 = require("./911969.js"),
   Chunk925975 = require("./925975.js"),
   Chunk957730 = require("./957730.js"),
@@ -24,7 +24,7 @@ function d(e, t, n) {
 function p(e) {
   e.stopPropagation()
 }
-class h extends Chunk73800.PureComponent {
+class h extends Chunk647438.PureComponent {
   render() {
     let {
       className: e,
@@ -34,21 +34,21 @@ class h extends Chunk73800.PureComponent {
       channel: l,
       onCancel: a,
       children: o
-    } = this.props, s = (0, Chunk255367.jsx)("div", {
+    } = this.props, s = (0, Chunk951288.jsx)("div", {
       className: Chunk26896.operations,
       children: Chunk388032.intl.format(Chunk388032.t.wDsPXl, {
         onCancel: () => Chunk925975(Chunk911969.id),
         onSave: this.onClickSave
       })
     });
-    return (0, Chunk255367.jsxs)("div", {
+    return (0, Chunk951288.jsxs)("div", {
       className: module,
       ref: this.node,
       onContextMenu: p,
       children: [Chunk957730({
         textValue: exports,
         richValue: require,
-        message: Chunk73800,
+        message: Chunk647438,
         channel: Chunk911969,
         onChange: this.onChange,
         onSubmit: this.onSubmit,

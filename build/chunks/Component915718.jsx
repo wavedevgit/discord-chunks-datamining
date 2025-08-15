@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => k
 }), require("./388685.js"), require("./539854.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
@@ -43,7 +43,7 @@ function R(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class M extends Chunk73800.PureComponent {
+class M extends Chunk647438.PureComponent {
   componentDidMount() {
     Chunk585483.S.subscribe(Chunk981631.CkL.CALL_START, this.handleVoiceClick)
   }
@@ -60,11 +60,11 @@ class M extends Chunk73800.PureComponent {
       mode: c,
       isProvisional: u
     } = this.props;
-    if (require || Chunk73800 && Chunk287734 === Chunk981631.WtW.VOICE) return null;
+    if (require || Chunk647438 && Chunk287734 === Chunk981631.WtW.VOICE) return null;
     let d = Chunk26151.isManaged(),
       p = null,
       h = false;
-    return Chunk40851 ? (h = true, p = Chunk388032.intl.string(Chunk388032.t.izMR7u), e = Chunk481060.ua7.Colors.RED) : Chunk131951.Z.supports(Chunk65154.AN.VIDEO) ? Chunk704215 ? (p = Chunk388032.intl.string(Chunk388032.t.PHzjvb), e = Chunk481060.ua7.Colors.RED, h = true) : Chunk73800 && Chunk287734 === Chunk981631.WtW.VIDEO ? (t = this.handleJoinVideoCall, p = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.W68MhI)) : (t = this.handleStartVideoCall, p = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.oCqlGB)) : (h = true, t = this.handleBrowserNotSupported, p = Chunk388032.intl.string(Chunk388032.t.UVpg3d)), (0, Chunk255367.jsx)(Chunk665149.ZP.Icon, {
+    return Chunk40851 ? (h = true, p = Chunk388032.intl.string(Chunk388032.t.izMR7u), e = Chunk481060.ua7.Colors.RED) : Chunk131951.Z.supports(Chunk65154.AN.VIDEO) ? Chunk704215 ? (p = Chunk388032.intl.string(Chunk388032.t.PHzjvb), e = Chunk481060.ua7.Colors.RED, h = true) : Chunk647438 && Chunk287734 === Chunk981631.WtW.VIDEO ? (t = this.handleJoinVideoCall, p = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.W68MhI)) : (t = this.handleStartVideoCall, p = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.oCqlGB)) : (h = true, t = this.handleBrowserNotSupported, p = Chunk388032.intl.string(Chunk388032.t.UVpg3d)), (0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {
       icon: Chunk481060.Odl,
       onClick: exports,
       disabled: Chunk358221 || Chunk442837,
@@ -88,7 +88,7 @@ class M extends Chunk73800.PureComponent {
     let f = Chunk40851.isManaged(),
       g = false;
     Chunk358221 ? (g = true, e = Chunk388032.intl.string(Chunk388032.t.izMR7u), t = Chunk481060.ua7.Colors.RED) : Chunk26151 ? (e = Chunk266454 ? Chunk388032.intl.string(Chunk388032.t.LW2Gho) : Chunk388032.intl.string(Chunk388032.t.rF7lNz), t = Chunk481060.ua7.Colors.RED, g = true) : Chunk287734 ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvb), t = Chunk481060.ua7.Colors.RED, g = true) : e = Chunk442837 ? Chunk266454 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.fdEeb2) : Chunk266454 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.focH1t);
-    let y = (0, Chunk255367.jsx)(Chunk665149.ZP.Icon, {
+    let y = (0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {
       ref: this.iconRef,
       icon: Chunk481060.Csw,
       onClick: this.handleVoiceClick,
@@ -96,7 +96,7 @@ class M extends Chunk73800.PureComponent {
       tooltip: module,
       tooltipColor: exports
     });
-    return (0, Chunk255367.jsx)(Chunk243778.ZP, {
+    return (0, Chunk951288.jsx)(Chunk243778.ZP, {
       contentTypes: Chunk451576,
       children: e => {
         let {
@@ -142,7 +142,7 @@ class M extends Chunk73800.PureComponent {
     })
   }
   render() {
-    return (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
+    return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [this.renderVoiceCallButton(), this.renderVideoCallButton()]
     })
   }

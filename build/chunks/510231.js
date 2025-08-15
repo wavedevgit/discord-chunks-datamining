@@ -5,7 +5,7 @@ require.d(exports, {
   N: () => d,
   h: () => f
 }), require("./583741.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -24,7 +24,7 @@ function d(e) {
 
 function f() {
   let e = (0, Chunk442837.e7)([Chunk77498.Z], () => Chunk77498.Z.games),
-    t = Chunk73800.useMemo(() => a()(module).filter(e => !d(e)).map(e => ({
+    t = Chunk647438.useMemo(() => a()(module).filter(e => !d(e)).map(e => ({
       value: e.id,
       label: e.name
     })).sortBy(e => {
@@ -33,10 +33,10 @@ function f() {
       } = e;
       return u(t)
     }).reverse().value(), [module]),
-    n = Chunk73800.useCallback((e, t) => u(t.item.value) - u(e.item.value), []);
+    n = Chunk647438.useCallback((e, t) => u(t.item.value) - u(e.item.value), []);
   return {
     options: exports,
-    matchSorterOptions: Chunk73800.useMemo(() => ({
+    matchSorterOptions: Chunk647438.useMemo(() => ({
       baseSort: require,
       keys: ["label"]
     }), [require])

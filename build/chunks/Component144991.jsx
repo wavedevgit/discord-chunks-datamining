@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => h
 }), require("./415506.js"), require("./953529.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk149765 = require("./149765.js"),
@@ -16,7 +16,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk557806 = require("./557806.js"),
   Chunk197571 = require("./197571.js");
-class f extends Chunk73800.PureComponent {
+class f extends Chunk647438.PureComponent {
   getOverwriteValue(e) {
     let {
       allow: t,
@@ -126,15 +126,15 @@ class f extends Chunk73800.PureComponent {
       spec: e,
       className: t
     } = this.props;
-    return (0, Chunk255367.jsx)(Chunk481060.hjN, {
+    return (0, Chunk951288.jsx)(Chunk481060.hjN, {
       className: exports,
-      children: (0, Chunk255367.jsxs)(Chunk481060.y5t, {
-        component: (0, Chunk255367.jsx)(Chunk481060.vwX, {
+      children: (0, Chunk951288.jsxs)(Chunk481060.y5t, {
+        component: (0, Chunk951288.jsx)(Chunk481060.vwX, {
           tag: Chunk481060.RB0.H5,
           className: null != module.description ? Chunk197571.marginBottom8 : Chunk197571.marginBottom20,
           children: module.title
         }),
-        children: [null != module.description && (0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: [null != module.description && (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
           className: Chunk197571.marginBottom20,

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => H
 }), require("./953529.js"), require("./388685.js"), require("./539854.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -80,19 +80,19 @@ function U(e) {
   return t([b.Q2.MESSAGE, b.Q2.NAVIGATION, b.Q2.DND, b.Q2.CHAT, b.Q2.VOICE_AND_VIDEO, b.Q2.MISCELLANEOUS])
 }
 let V = o()((0, Chunk612226.Rv)()).filter(e => e.description !== D.intl.string(D.t.HnNtEB)).groupBy(e => e.group).value();
-class G extends Chunk73800.PureComponent {
+class G extends Chunk647438.PureComponent {
   renderMessage() {
     let {
       keybind: e
     } = this.props, t = Chunk13140.BB(module.shortcut);
-    return Chunk714338.Z.hasBind(exports) ? (0, Chunk255367.jsx)(Chunk481060.R94, {
+    return Chunk714338.Z.hasBind(exports) ? (0, Chunk951288.jsx)(Chunk481060.R94, {
       className: Chunk894462.keybindMessage,
       type: Chunk481060.geA.DESCRIPTION,
       style: {
         color: Chunk692547.Z.unsafe_rawColors.RED_400.css
       },
       children: Chunk388032.intl.string(Chunk388032.t["7lQlw8"])
-    }) : Chunk420212.Sp.has(exports) ? (0, Chunk255367.jsx)(Chunk481060.R94, {
+    }) : Chunk420212.Sp.has(exports) ? (0, Chunk951288.jsx)(Chunk481060.R94, {
       className: Chunk894462.keybindMessage,
       type: Chunk481060.geA.DESCRIPTION,
       style: {
@@ -101,7 +101,7 @@ class G extends Chunk73800.PureComponent {
       children: Chunk388032.intl.format(Chunk388032.t.MOIaNT, {
         keyboardNavArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.KEYBOARD_NAVIGATION)
       })
-    }) : (0, Chunk255367.jsx)(Chunk481060.R94, {
+    }) : (0, Chunk951288.jsx)(Chunk481060.R94, {
       className: Chunk894462.keybindMessage,
       type: Chunk481060.geA.DESCRIPTION,
       children: this.props.keybindDescriptions[module.action]
@@ -112,44 +112,44 @@ class G extends Chunk73800.PureComponent {
       managed: e,
       enabled: t
     } = this.props.keybind;
-    return (0, Chunk255367.jsxs)(Chunk600164.Z, {
+    return (0, Chunk951288.jsxs)(Chunk600164.Z, {
       direction: Chunk600164.Z.Direction.VERTICAL,
       className: a()(Chunk894462.keybindGroup, Chunk620842.card),
-      children: [!module && (0, Chunk255367.jsx)(Chunk225433.Z, {
+      children: [!module && (0, Chunk951288.jsx)(Chunk225433.Z, {
         "aria-label": Chunk388032.intl.string(Chunk388032.t.qEHmmJ),
         className: Chunk894462.removeKeybind,
         onClick: this.handleDeleteKeybind,
         look: Chunk225433.Z.Looks.FILLED
-      }), (0, Chunk255367.jsxs)(Chunk600164.Z, {
+      }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
         className: Chunk197571.marginBottom8,
-        children: [(0, Chunk255367.jsx)(Chunk600164.Z.Child, {
+        children: [(0, Chunk951288.jsx)(Chunk600164.Z.Child, {
           basis: "45%",
-          children: (0, Chunk255367.jsx)(Chunk481060.xJW, {
+          children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
             title: Chunk388032.intl.string(Chunk388032.t.UUpADw),
             className: Chunk894462.item,
-            children: (0, Chunk255367.jsx)(Chunk481060.q4e, {
+            children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
               value: this.props.keybind.action,
               options: this.props.keybindActionTypes,
               onChange: this.handleActionChanged,
               isDisabled: module
             })
           })
-        }), (0, Chunk255367.jsx)(Chunk600164.Z.Child, {
+        }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
           basis: "45%",
-          children: (0, Chunk255367.jsx)(Chunk481060.xJW, {
+          children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
             title: Chunk388032.intl.string(Chunk388032.t["1La4tL"]),
             className: Chunk894462.item,
-            children: (0, Chunk255367.jsx)(Chunk825209.Z, {
+            children: (0, Chunk951288.jsx)(Chunk825209.Z, {
               defaultValue: this.props.keybind.shortcut,
               onChange: this.handleShortcutChange
             })
           })
-        }), (0, Chunk255367.jsx)(Chunk600164.Z.Child, {
+        }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
           grow: 0,
           shrink: 0,
-          children: (0, Chunk255367.jsx)(Chunk481060.xJW, {
+          children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
             className: Chunk894462.switch,
-            children: (0, Chunk255367.jsx)(Chunk481060.ua7, {
+            children: (0, Chunk951288.jsx)(Chunk481060.ua7, {
               text: Chunk388032.intl.string(Chunk388032.t.uCD7qK),
               children: e => (0, i.jsx)("div", M(B({}, e), {
                 children: (0, i.jsx)(m.rsf, {
@@ -160,7 +160,7 @@ class G extends Chunk73800.PureComponent {
             })
           })
         })]
-      }), (0, Chunk255367.jsx)(Chunk600164.Z.Child, {
+      }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
         children: this.renderMessage()
       }), this.renderExtraSettings()]
     })
@@ -169,7 +169,7 @@ class G extends Chunk73800.PureComponent {
     let {
       action: e
     } = this.props.keybind;
-    return module === Chunk981631.kg4.SWITCH_TO_VOICE_CHANNEL ? (0, Chunk255367.jsx)(Chunk659947.Z, {
+    return module === Chunk981631.kg4.SWITCH_TO_VOICE_CHANNEL ? (0, Chunk951288.jsx)(Chunk659947.Z, {
       keybind: this.props.keybind
     }) : true
   }
@@ -194,7 +194,7 @@ class G extends Chunk73800.PureComponent {
     })
   }
 }
-class F extends Chunk73800.PureComponent {
+class F extends Chunk647438.PureComponent {
   componentDidMount() {
     Chunk660216.Z.enableAll(false)
   }
@@ -226,7 +226,7 @@ class F extends Chunk73800.PureComponent {
     }, {
       value: Chunk981631.kg4.PUSH_TO_MUTE,
       label: Chunk388032.intl.string(Chunk388032.t.hSCRqa)
-    }, ...Chunk73800, {
+    }, ...Chunk647438, {
       value: Chunk981631.kg4.TOGGLE_MUTE,
       label: Chunk388032.intl.string(Chunk388032.t.PlkYKC)
     }, {
@@ -269,7 +269,7 @@ class F extends Chunk73800.PureComponent {
     }, {
       value: Chunk981631.kg4.SOUNDBOARD_HOLD,
       label: Chunk388032.intl.string(Chunk388032.t["1xFbPz"])
-    }), Chunk255367 && Chunk120356.push({
+    }), Chunk951288 && Chunk120356.push({
       value: Chunk981631.kg4.SAVE_CLIP,
       label: Chunk388032.intl.string(Chunk388032.t.U4URzM)
     })), Chunk120356
@@ -293,7 +293,7 @@ class F extends Chunk73800.PureComponent {
       location: "UserSettingsKeybinds"
     }, {
       autoTrackExposure: false
-    }).separateKeybind && (Chunk255367[Chunk981631.kg4.VAD_PRIORITY] = Chunk388032.intl.string(Chunk388032.t.rSe8IS)), (0, Chunk365023.l)() && (Chunk255367[Chunk981631.kg4.TOGGLE_CAMERA] = Chunk388032.intl.string(Chunk388032.t.v1JBtL)), module && (Chunk255367[Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = Chunk388032.intl.string(Chunk388032.t.IoP5vb)), exports && (0, Chunk358085.isWindows)() && (Chunk255367[Chunk981631.kg4.TOGGLE_GO_LIVE_STREAMING] = Chunk388032.intl.string(Chunk388032.t.s4C239)), (0, Chunk358085.isDesktop)() && (Chunk255367[Chunk981631.kg4.NAVIGATE_BACK] = Chunk388032.intl.string(Chunk388032.t.nKDlEh), Chunk255367[Chunk981631.kg4.NAVIGATE_FORWARD] = Chunk388032.intl.string(Chunk388032.t.DK0FFh), Chunk255367[Chunk981631.kg4.SOUNDBOARD] = (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t["5wJefH"]) : Chunk388032.intl.string(Chunk388032.t.gzjsSE), Chunk255367[Chunk981631.kg4.SOUNDBOARD_HOLD] = (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t.RRkZc3) : Chunk388032.intl.string(Chunk388032.t.laNlTk), require && (Chunk255367[Chunk981631.kg4.SAVE_CLIP] = Chunk388032.intl.string(Chunk388032.t.z3Wbam))), Chunk255367
+    }).separateKeybind && (Chunk951288[Chunk981631.kg4.VAD_PRIORITY] = Chunk388032.intl.string(Chunk388032.t.rSe8IS)), (0, Chunk365023.l)() && (Chunk951288[Chunk981631.kg4.TOGGLE_CAMERA] = Chunk388032.intl.string(Chunk388032.t.v1JBtL)), module && (Chunk951288[Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = Chunk388032.intl.string(Chunk388032.t.IoP5vb)), exports && (0, Chunk358085.isWindows)() && (Chunk951288[Chunk981631.kg4.TOGGLE_GO_LIVE_STREAMING] = Chunk388032.intl.string(Chunk388032.t.s4C239)), (0, Chunk358085.isDesktop)() && (Chunk951288[Chunk981631.kg4.NAVIGATE_BACK] = Chunk388032.intl.string(Chunk388032.t.nKDlEh), Chunk951288[Chunk981631.kg4.NAVIGATE_FORWARD] = Chunk388032.intl.string(Chunk388032.t.DK0FFh), Chunk951288[Chunk981631.kg4.SOUNDBOARD] = (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t["5wJefH"]) : Chunk388032.intl.string(Chunk388032.t.gzjsSE), Chunk951288[Chunk981631.kg4.SOUNDBOARD_HOLD] = (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t.RRkZc3) : Chunk388032.intl.string(Chunk388032.t.laNlTk), require && (Chunk951288[Chunk981631.kg4.SAVE_CLIP] = Chunk388032.intl.string(Chunk388032.t.z3Wbam))), Chunk951288
   }
   renderKeybinds(e) {
     return e.map(e => (0, i.jsx)("div", {
@@ -311,33 +311,33 @@ class F extends Chunk73800.PureComponent {
   render() {
     let e = this.props.enableClips,
       t = o()(this.props.keybinds).reject(e => e.managed && ![P.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, P.kg4.SAVE_CLIP].includes(e.action)).reject(t => !e && t.action === P.kg4.SAVE_CLIP).reject(e => !this.props.allowSoundboard && (e.action === P.kg4.SOUNDBOARD || e.action === P.kg4.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => true === e.managed ? false : 0).value();
-    return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-      children: [(0, Chunk255367.jsx)(Chunk481060.hjN, {
+    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.hjN, {
         tag: Chunk481060.RB0.H1,
         title: Chunk388032.intl.string(Chunk388032.t.T9DA2N),
-        children: Chunk358085.isPlatformEmbedded ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-          children: [(0, Chunk255367.jsxs)(Chunk600164.Z, {
+        children: Chunk358085.isPlatformEmbedded ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+          children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
             justify: Chunk600164.Z.Justify.BETWEEN,
             className: Chunk197571.marginBottom20,
-            children: [(0, Chunk255367.jsx)(Chunk600164.Z.Child, {
+            children: [(0, Chunk951288.jsx)(Chunk600164.Z.Child, {
               grow: 0,
-              children: (0, Chunk255367.jsx)(Chunk481060.Wn, {
+              children: (0, Chunk951288.jsx)(Chunk481060.Wn, {
                 messageType: Chunk481060.QYI.WARNING,
                 children: Chunk388032.intl.string(Chunk388032.t.NoKjWF)
               })
-            }), (0, Chunk255367.jsx)(Chunk600164.Z.Child, {
+            }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
               wrap: true,
               grow: 0,
-              children: (0, Chunk255367.jsx)(Chunk755721.zx, {
+              children: (0, Chunk951288.jsx)(Chunk755721.zx, {
                 size: Chunk755721.Ph.LARGE,
                 onClick: this.handleAddKeybind,
                 children: Chunk388032.intl.string(Chunk388032.t.zk6Xbm)
               })
             })]
-          }), (0, Chunk255367.jsx)(Chunk481060.$i$, {}), (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+          }), (0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
             children: [this.renderKeybinds(exports), this.renderEmpty(exports)]
           })]
-        }) : (0, Chunk255367.jsx)(Chunk481060.Wn, {
+        }) : (0, Chunk951288.jsx)(Chunk481060.Wn, {
           messageType: Chunk481060.QYI.INFO,
           textVariant: "text-lg/medium",
           className: Chunk894462.browserNotice,
@@ -345,23 +345,23 @@ class F extends Chunk73800.PureComponent {
             downloadLink: Chunk981631.EYA.DOWNLOAD
           })
         })
-      }), (0, Chunk255367.jsx)(Chunk481060.$i$, {}), (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+      }), (0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
         tag: Chunk481060.RB0.H1,
         title: Chunk388032.intl.string(Chunk388032.t.Lz5KHB),
         className: Chunk197571.marginTop60,
-        children: [(0, Chunk255367.jsxs)("div", {
+        children: [(0, Chunk951288.jsxs)("div", {
           className: Chunk894462.defaultKeybind,
-          children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-md/normal",
             children: Chunk388032.intl.string(Chunk388032.t.sMWLBg)
-          }), (0, Chunk255367.jsx)("div", {
+          }), (0, Chunk951288.jsx)("div", {
             className: Chunk894462.defaultKeybindShortcutGroup,
-            children: (0, Chunk255367.jsx)(Chunk481060.M2$, {
+            children: (0, Chunk951288.jsx)(Chunk481060.M2$, {
               shortcut: Chunk721383._.binds["0"],
               className: Chunk894462.__invalid_defaultKeybindShortcut
             })
           })]
-        }), (0, Chunk255367.jsx)(Chunk481060.$i$, {}), (0, Chunk255367.jsx)(U, {
+        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {}), (0, Chunk951288.jsx)(U, {
           children: e => (0, i.jsx)(i.Fragment, {
             children: e.map((e, t) => {
               let n = (0, b.UD)(e),
@@ -413,11 +413,11 @@ function H() {
     t = (0, Chunk442837.e7)([Chunk131951.Z], () => (0, Chunk74299.Z)(Chunk131951.Z)),
     n = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.isSupported()),
     r = (0, Chunk924557.Go)();
-  return (0, Chunk255367.jsx)(F, {
+  return (0, Chunk951288.jsx)(F, {
     keybinds: module,
     canGoLive: exports,
     overlaySupported: require,
     allowSoundboard: (0, Chunk358085.isWindows)(),
-    enableClips: Chunk73800
+    enableClips: Chunk647438
   })
 }

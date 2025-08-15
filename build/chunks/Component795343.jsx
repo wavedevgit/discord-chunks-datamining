@@ -2,10 +2,10 @@
 /** chunk id: 795343, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => y
 }), require("./388685.js"), require("./35282.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
@@ -25,42 +25,42 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk891131 = require("./891131.js");
 
-function S(e) {
+function y(e) {
   var t;
   let {
     isFetchingCategories: r,
     isFullScreen: a,
-    scrollerRef: S,
-    tab: y
+    scrollerRef: y,
+    tab: S
   } = e, x = (0, d.sp)(), j = null != (t = null == x ? true : x.sessionId) ? t : "", {
-    noCache: T,
-    includeUnpublished: P
+    noCache: P,
+    includeUnpublished: T
   } = (0, v.Z)(), L = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: k,
     currentPage: I,
     totalCount: N,
-    isFetchingResults: A
-  } = (0, b.a)(), w = (0, o.Wu)([p.Z], () => p.Z.getProductsBySkus(k)), B = l.useCallback(() => {
+    isFetchingResults: w
+  } = (0, b.a)(), A = (0, o.Wu)([p.Z], () => p.Z.getProductsBySkus(k)), B = l.useCallback(() => {
     var e;
-    null == S || null == (e = S.current) || e.scrollToTop({
+    null == y || null == (e = y.current) || e.scrollToTop({
       animate: true
     })
-  }, [S]), R = null == k ? true : k.join("");
+  }, [y]), R = null == k ? true : k.join("");
   l.useEffect(() => {
     B()
   }, [R, B]);
   let Z = (0, g.a)(),
-    D = l.useMemo(() => Z(w), [Z, w]);
+    D = l.useMemo(() => Z(A), [Z, A]);
   l.useEffect(() => {
-    r || (0, h.n)({
+    r || (0, m.n)({
       sessionId: j,
-      checkpoint: h.a.SHOP_RENDERED,
-      tab: y,
+      checkpoint: m.a.SHOP_RENDERED,
+      tab: S,
       isFullScreen: a,
-      unpublishedCategoriesShown: P,
-      cacheDisabled: T
+      unpublishedCategoriesShown: T,
+      cacheDisabled: P
     })
-  }, [j, a, P, T, r, y]);
+  }, [j, a, T, P, r, S]);
   let M = l.useRef(null),
     {
       setQueryPageSize: F,
@@ -68,7 +68,7 @@ function S(e) {
       queryPageSize: W
     } = (0, f.S)(),
     [V, U] = l.useState(false),
-    z = r || A || null == L;
+    z = r || w || null == L;
   l.useEffect(() => {
     if (z) return void U(false);
     D.length > 0 && U(true)
@@ -101,7 +101,7 @@ function S(e) {
           [E.loadIn]: V
         }),
         ref: M,
-        children: [z && [...Array(W)].map((e, t) => (0, n.jsx)(m.K, {}, t)), !z && D.map((e, t) => {
+        children: [z && [...Array(W)].map((e, t) => (0, n.jsx)(h.K, {}, t)), !z && D.map((e, t) => {
           let r = p.Z.getCategory(e.categorySkuId);
           return null == r ? null : (0, n.jsx)(d.k0, {
             newValue: {
@@ -111,7 +111,7 @@ function S(e) {
               product: e,
               user: L,
               category: r,
-              tab: y
+              tab: S
             }, e.skuId)
           }, e.skuId)
         })]

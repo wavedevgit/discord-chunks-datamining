@@ -3,10 +3,10 @@
 require.d(exports, {
   R: () => m
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  Chunk717976 = require("./717976.js"),
+  Chunk815061 = require("./815061.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk709706 = require("./709706.js"),
@@ -21,8 +21,8 @@ function m() {
     progress: t
   } = function() {
     let e = (0, Chunk442837.cj)([Chunk709706.Z], () => Chunk709706.Z.getOngoingDownloads()),
-      t = Chunk73800.useRef({});
-    Chunk73800.useEffect(() => {
+      t = Chunk647438.useRef({});
+    Chunk647438.useEffect(() => {
       0 === Object.entries(module).length && (exports.current = {}), Object.assign(exports.current, module)
     }, [module]);
     let n = Object.values(exports.current),
@@ -41,8 +41,8 @@ function m() {
         return null != (t = null == e ? true : e.totalBytes) ? t : 0
       });
     return {
-      hasActiveDownloads: Chunk255367,
-      progress: 0 === Chunk481060 ? 0 : Math.floor(Chunk717976 / Chunk481060 * 100)
+      hasActiveDownloads: Chunk951288,
+      progress: 0 === Chunk481060 ? 0 : Math.floor(Chunk815061 / Chunk481060 * 100)
     }
   }(), {
     activeVoice: n

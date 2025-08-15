@@ -3,8 +3,8 @@
 require.d(exports, {
   t: () => u
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk704215 = require("./704215.js"),
   Chunk231757 = require("./231757.jsx"),
   Chunk63063 = require("./63063.js"),
@@ -14,12 +14,12 @@ var Chunk704215 = require("./704215.js"),
   Chunk359734 = require("./359734.js");
 let u = () => {
   let e = Chunk63063.Z.getArticleURL(Chunk981631.BhN.PS_CONNECTION);
-  return (0, Chunk255367.jsx)(Chunk249881.t, {
+  return (0, Chunk951288.jsx)(Chunk249881.t, {
     title: Chunk388032.intl.string(Chunk388032.t.v20wws),
     body: Chunk388032.intl.format(Chunk388032.t.lTZBio, {
       help_article: module
     }),
-    img: (0, Chunk255367.jsx)("img", {
+    img: (0, Chunk951288.jsx)("img", {
       src: Chunk359734,
       width: "82",
       height: "auto",

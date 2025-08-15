@@ -5,8 +5,8 @@ require.d(exports, {
   T: () => l,
   v: () => o
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk481060 = require("./481060.js");
 let i = "collectibles shop product details modal",
   l = e => {
@@ -22,7 +22,7 @@ let i = "collectibles shop product details modal",
     (0, a.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([r.e("25292"), r.e("31978"), r.e("40694"), r.e("78223"), r.e("32160")]).then(r.bind(r, 702370));
+      } = await Promise.all([r.e("25292"), r.e("31978"), r.e("40694"), r.e("17768")]).then(r.bind(r, 702370));
       return r => {
         var a, i;
         return (0, n.jsx)(e, (a = function(e) {

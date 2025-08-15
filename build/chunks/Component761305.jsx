@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => b
 }), require("./35282.js"), require("./388685.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk593473 = require("./593473.js"),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
@@ -26,7 +26,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 Chunk442837.ZP.initialize();
-class x extends(r = Chunk73800.PureComponent) {
+class x extends(r = Chunk647438.PureComponent) {
   componentDidMount() {
     let e = (0, Chunk129293.Z)(this.props.location),
       t = (0, Chunk593473.parse)(this.props.location.search);
@@ -56,8 +56,8 @@ class x extends(r = Chunk73800.PureComponent) {
     })), (0, Chunk108427.e)("disable_server_highlight_notifications")
   }
   renderBusy() {
-    return (0, Chunk255367.jsx)(Chunk388905.ZP, {
-      children: (0, Chunk255367.jsx)(Chunk388905.Hh, {})
+    return (0, Chunk951288.jsx)(Chunk388905.ZP, {
+      children: (0, Chunk951288.jsx)(Chunk388905.Hh, {})
     })
   }
   renderSuccess() {
@@ -67,19 +67,19 @@ class x extends(r = Chunk73800.PureComponent) {
     } = this.props, {
       guild: n
     } = this.state;
-    return (0, Chunk255367.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk255367.jsx)(Chunk388905.Dx, {
+    return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
+      children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.Z33eiI)
-      }), (0, Chunk255367.jsx)(Chunk388905.DK, {
+      }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.format(Chunk388032.t.NRWtfH, {
           guildName: require.name
         })
-      }), (0, Chunk255367.jsx)(Chunk388905.zx, {
+      }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         className: Chunk197571.marginTop40,
         onClick: () => exports(module),
         children: Chunk388032.intl.string(Chunk388032.t.fIv16O)
-      }), (0, Chunk255367.jsx)(Chunk388905.zx, {
+      }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         className: Chunk197571.marginTop8,
         color: Chunk388905.zx.Colors.LINK,
         look: Chunk388905.zx.Looks.LINK,
@@ -95,16 +95,16 @@ class x extends(r = Chunk73800.PureComponent) {
       defaultRoute: e,
       transitionTo: t
     } = this.props;
-    return (0, Chunk255367.jsxs)(Chunk388905.ZP, {
-      children: [(0, Chunk255367.jsx)(Chunk388905.Ee, {
+    return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
+      children: [(0, Chunk951288.jsx)(Chunk388905.Ee, {
         src: require("./105020.js"),
         className: Chunk197571.marginBottom20
-      }), (0, Chunk255367.jsx)(Chunk388905.Dx, {
+      }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.ox9hIS)
-      }), (0, Chunk255367.jsx)(Chunk388905.DK, {
+      }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t["/dcuR0"])
-      }), (0, Chunk255367.jsx)(Chunk388905.zx, {
+      }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         className: Chunk197571.marginTop40,
         onClick: () => exports(module),
         children: Chunk388032.intl.string(Chunk388032.t.fIv16O)

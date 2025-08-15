@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => I
 }), require("./388685.js");
-var r, a, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, a, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -28,7 +28,7 @@ function C(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class j extends(r = Chunk73800.PureComponent) {
+class j extends(r = Chunk647438.PureComponent) {
   componentDidMount() {
     Chunk585483.S.subscribe(Chunk981631.CkL.CAROUSEL_PREV, this.handlePrevious), Chunk585483.S.subscribe(Chunk981631.CkL.CAROUSEL_NEXT, this.handleNext)
   }
@@ -47,21 +47,21 @@ class j extends(r = Chunk73800.PureComponent) {
     } = this.props, c = o()(Chunk633448.arrowHitbox, {
       [Chunk633448.arrowHitboxPadding]: require
     }, r);
-    return (0, Chunk255367.jsxs)("div", {
+    return (0, Chunk951288.jsxs)("div", {
       className: o()(Chunk633448.controls, this.props.className),
-      children: [(0, Chunk255367.jsx)(Chunk755721.zx, {
+      children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
         look: Chunk755721.zx.Looks.BLANK,
         className: Chunk392711,
         onClick: this.handlePrevious,
         "aria-label": Chunk388032.intl.string(Chunk388032.t.vgfxaG),
-        children: "caret" === Chunk120356 ? (0, Chunk255367.jsx)(Chunk259580.Z, {
+        children: "caret" === Chunk120356 ? (0, Chunk951288.jsx)(Chunk259580.Z, {
           className: Chunk633448.arrow,
           direction: Chunk259580.Z.Directions.LEFT
-        }) : (0, Chunk255367.jsx)(Chunk768762.Z, {
+        }) : (0, Chunk951288.jsx)(Chunk768762.Z, {
           className: Chunk633448.arrow,
           direction: Chunk768762.Z.Directions.LEFT
         })
-      }), (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk951288.jsx)("div", {
         className: Chunk633448.dots,
         children: d().times(exports, t => (0, i.jsx)(p.zx, {
           look: p.zx.Looks.BLANK,
@@ -72,15 +72,15 @@ class j extends(r = Chunk73800.PureComponent) {
             pageNumber: t + 1
           })
         }, "dot-".concat(t)))
-      }), (0, Chunk255367.jsx)(Chunk755721.zx, {
+      }), (0, Chunk951288.jsx)(Chunk755721.zx, {
         look: Chunk755721.zx.Looks.BLANK,
         className: Chunk392711,
         onClick: this.handleNext,
         "aria-label": Chunk388032.intl.string(Chunk388032.t.XiOHRU),
-        children: "caret" === Chunk120356 ? (0, Chunk255367.jsx)(Chunk259580.Z, {
+        children: "caret" === Chunk120356 ? (0, Chunk951288.jsx)(Chunk259580.Z, {
           className: Chunk633448.arrow,
           direction: Chunk259580.Z.Directions.RIGHT
-        }) : (0, Chunk255367.jsx)(Chunk768762.Z, {
+        }) : (0, Chunk951288.jsx)(Chunk768762.Z, {
           className: Chunk633448.arrow,
           direction: Chunk768762.Z.Directions.RIGHT
         })
@@ -115,7 +115,7 @@ class j extends(r = Chunk73800.PureComponent) {
 C(j, "defaultProps", {
   includeHitboxPadding: true
 });
-class y extends(a = Chunk73800.PureComponent) {
+class y extends(a = Chunk647438.PureComponent) {
   componentDidMount() {
     Chunk570140.Z.subscribe("WINDOW_FOCUS", this.handleWindowFocusChange), this.props.initialPaused || this.state.paused || this.startTimer()
   }
@@ -174,26 +174,26 @@ class y extends(a = Chunk73800.PureComponent) {
     } = this.props, {
       visibleIndex: x
     } = this.state;
-    return (0, Chunk255367.jsxs)("div", {
+    return (0, Chunk951288.jsxs)("div", {
       className: Chunk633448.root,
-      children: [(0, Chunk255367.jsxs)("div", {
+      children: [(0, Chunk951288.jsxs)("div", {
         className: o()(Chunk633448.carouselContainer, require),
         style: Chunk259580,
         onMouseEnter: this.handleMouseEnter,
         onMouseLeave: this.handleMouseLeave,
-        children: [(0, Chunk255367.jsx)("div", {
+        children: [(0, Chunk951288.jsx)("div", {
           style: {
             aspectRatio: Chunk585483
           },
-          children: (0, Chunk255367.jsx)(Chunk578361.Z, {
+          children: (0, Chunk951288.jsx)(Chunk578361.Z, {
             className: o()(Chunk633448.carousel, r),
             step: Chunk388032,
             direction: this.getCurrentDirection(),
             springSettings: a,
-            fadeInOut: Chunk73800,
+            fadeInOut: Chunk647438,
             children: exports(module[Chunk388032], Chunk388032)
           })
-        }), module.length > 1 && (0, Chunk255367.jsx)(j, {
+        }), module.length > 1 && (0, Chunk951288.jsx)(j, {
           className: o()(Chunk120356, Chunk570140 ? Chunk633448.themedPagination : Chunk633448.pagination),
           arrowClassName: Chunk392711,
           includeHitboxPadding: Chunk768762,

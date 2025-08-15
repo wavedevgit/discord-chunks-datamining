@@ -911,7 +911,7 @@ function e4(e) {
   ej(t)
 }
 
-function e5(e) {
+function e8(e) {
   let {
     readStates: t,
     selectedChannelId: n
@@ -931,7 +931,7 @@ function e6(e) {
   }), ej("full_sync" === t.channels.op ? t.channels.items : t.channels.writes), null != t.channelTimestampUpdates && e3(t.channelTimestampUpdates), eG(t)
 }
 
-function e8(e) {
+function e5(e) {
   let {
     channelId: t,
     isAfter: n,
@@ -1702,10 +1702,10 @@ let t$ = new tJ(Chunk570140.Z, {
     CONNECTION_OPEN: e$,
     CONNECTION_OPEN_SUPPLEMENTAL: e4,
     LOGOUT: e0,
-    OVERLAY_INITIALIZE: e5,
+    OVERLAY_INITIALIZE: e8,
     CACHE_LOADED: tV,
     GUILD_CREATE: e6,
-    LOAD_MESSAGES_SUCCESS: e8,
+    LOAD_MESSAGES_SUCCESS: e5,
     MESSAGE_CREATE: e9,
     MESSAGE_DELETE: e7,
     MESSAGE_DELETE_BULK: e7,

@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => A
 }), require("./953529.js"), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk355467 = require("./355467.js"),
@@ -23,7 +23,7 @@ function d(t, e, i) {
     writable: true
   }) : t[e] = i, t
 }
-class m extends Chunk73800.Component {
+class m extends Chunk647438.Component {
   componentDidMount() {
     Chunk626135.default.track(Chunk981631.rMx.OPEN_MODAL, {
       type: Chunk981631.jXE.PAYMENT_AUTHENTICATION_MODAL
@@ -108,15 +108,15 @@ class m extends Chunk73800.Component {
     let {
       transitionState: t
     } = this.props;
-    return (0, Chunk255367.jsxs)(Chunk82659.Modal, {
+    return (0, Chunk951288.jsxs)(Chunk82659.Modal, {
       transitionState: module,
       "aria-label": this.getTitle(),
       title: this.getTitle(),
       onClose: this.close,
       actions: this.renderButtons(),
-      children: [(0, Chunk255367.jsx)("div", {
+      children: [(0, Chunk951288.jsx)("div", {
         className: this.getImageStyle()
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: this.getMessage()
       })]

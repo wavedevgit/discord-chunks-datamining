@@ -4,11 +4,11 @@
 require.d(exports, {
   Z: () => s
 }), require("./388685.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk817080 = require("./817080.js"),
   Chunk579806 = require("./579806.js"),
   Chunk358085 = require("./358085.js");
-class s extends Chunk73800.Component {
+class s extends Chunk647438.Component {
   getFileContents() {
     let {
       fileContents: e
@@ -27,8 +27,8 @@ class s extends Chunk73800.Component {
   render() {
     let {
       children: e
-    } = this.props, t = Chunk73800.Children.only(module);
-    return Chunk73800.cloneElement(exports, {
+    } = this.props, t = Chunk647438.Children.only(module);
+    return Chunk647438.cloneElement(exports, {
       onClick: this.handleFileDownload
     })
   }

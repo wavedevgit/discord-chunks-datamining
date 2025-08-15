@@ -4,8 +4,8 @@ require.d(exports, {
   BC: () => q,
   ZP: () => X
 }), require("./388685.js"), require("./539854.js"), require("./953529.js"), require("./35282.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk228458 = require("./228458.js"),
@@ -282,7 +282,7 @@ function K(e) {
     sourceMetadata: v
   })
 }
-class X extends(r = Chunk73800.PureComponent) {
+class X extends(r = Chunk647438.PureComponent) {
   renderProvider() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
       {
@@ -292,13 +292,13 @@ class X extends(r = Chunk73800.PureComponent) {
         renderLinkComponent: t,
         message: r
       } = this.props;
-    return null == exports ? null : this.shouldShowStaticPlaceholder ? (0, Chunk255367.jsx)("div", {
+    return null == exports ? null : this.shouldShowStaticPlaceholder ? (0, Chunk951288.jsx)("div", {
       className: a()(Chunk781452.embedProvider, Chunk781452.embedMargin),
       children: this.renderContentPlaceholder({
         width: 80,
         height: 18
       })
-    }) : (0, Chunk255367.jsx)("div", {
+    }) : (0, Chunk951288.jsx)("div", {
       className: a()(Chunk781452.embedProvider, Chunk781452.embedMargin),
       children: null != exports.url ? require({
         className: Chunk781452.embedLink,
@@ -309,7 +309,7 @@ class X extends(r = Chunk73800.PureComponent) {
         rel: "noreferrer noopener",
         messageId: null == r ? true : r.id,
         channelId: null == r ? true : r.channel_id
-      }) : (0, Chunk255367.jsx)("span", {
+      }) : (0, Chunk951288.jsx)("span", {
         children: exports.name
       })
     })
@@ -323,15 +323,15 @@ class X extends(r = Chunk73800.PureComponent) {
         renderLinkComponent: t,
         message: r
       } = this.props;
-    return null == exports ? null : this.shouldShowStaticPlaceholder ? (0, Chunk255367.jsx)("div", {
+    return null == exports ? null : this.shouldShowStaticPlaceholder ? (0, Chunk951288.jsx)("div", {
       className: a()(Chunk781452.embedAuthor, Chunk781452.embedMargin),
       children: this.renderContentPlaceholder({
         width: 150,
         height: 18
       })
-    }) : (0, Chunk255367.jsxs)("div", {
+    }) : (0, Chunk951288.jsxs)("div", {
       className: a()(Chunk781452.embedAuthor, Chunk781452.embedMargin),
-      children: [null != exports.iconProxyURL ? (0, Chunk255367.jsx)("img", {
+      children: [null != exports.iconProxyURL ? (0, Chunk951288.jsx)("img", {
         alt: "",
         className: Chunk781452.embedAuthorIcon,
         src: exports.iconProxyURL
@@ -344,7 +344,7 @@ class X extends(r = Chunk73800.PureComponent) {
         rel: "noreferrer noopener",
         messageId: null == r ? true : r.id,
         channelId: null == r ? true : r.channel_id
-      }) : (0, Chunk255367.jsx)("span", {
+      }) : (0, Chunk951288.jsx)("span", {
         className: Chunk781452.embedAuthorName,
         children: exports.name
       })]
@@ -374,13 +374,13 @@ class X extends(r = Chunk73800.PureComponent) {
         rawTitle: s,
         url: o
       } = exports;
-    return null == Chunk120356 ? null : this.shouldShowStaticPlaceholder ? (0, Chunk255367.jsx)("div", {
+    return null == Chunk120356 ? null : this.shouldShowStaticPlaceholder ? (0, Chunk951288.jsx)("div", {
       className: a()(Chunk781452.embedTitle, Chunk781452.embedMargin),
       children: this.renderContentPlaceholder({
         width: 400,
         height: 30
       })
-    }) : (0, Chunk255367.jsx)("div", {
+    }) : (0, Chunk951288.jsx)("div", {
       className: a()(Chunk781452.embedTitle, Chunk781452.embedMargin),
       children: null != Chunk228458 ? require({
         className: Chunk781452.embedTitleLink,
@@ -389,8 +389,8 @@ class X extends(r = Chunk73800.PureComponent) {
         children: r(exports, Chunk120356),
         target: "_blank",
         rel: "noreferrer noopener",
-        messageId: null == Chunk73800 ? true : Chunk73800.id,
-        channelId: null == Chunk73800 ? true : Chunk73800.channel_id
+        messageId: null == Chunk647438 ? true : Chunk647438.id,
+        channelId: null == Chunk647438 ? true : Chunk647438.channel_id
       }) : r(exports, Chunk120356)
     })
   }
@@ -401,7 +401,7 @@ class X extends(r = Chunk73800.PureComponent) {
     } = this.props, {
       rawDescription: t
     } = module;
-    return null == require ? null : (0, Chunk255367.jsx)("div", {
+    return null == require ? null : (0, Chunk951288.jsx)("div", {
       className: a()(Chunk781452.embedDescription, Chunk781452.embedMargin),
       children: this.shouldShowStaticPlaceholder ? this.renderContentPlaceholder({
         width: 400,
@@ -423,7 +423,7 @@ class X extends(r = Chunk73800.PureComponent) {
       {
         sourceMetadata: a
       } = this.state;
-    return null == exports ? null : (0, Chunk255367.jsx)(Chunk249458.G.Consumer, {
+    return null == exports ? null : (0, Chunk951288.jsx)(Chunk249458.G.Consumer, {
       children: n => {
         let {
           disableAnimations: o
@@ -463,7 +463,7 @@ class X extends(r = Chunk73800.PureComponent) {
         inline: s
       } = l;
       s || null == r || (t.push(r), r = null), null == r && (r = []), r.push([this.props.renderTitle(e, n), this.props.renderDescription(e, i, true)]), 3 !== r.length && s || (t.push(r), r = null)
-    }), null != r && require.push(r), (0, Chunk255367.jsx)("div", {
+    }), null != r && require.push(r), (0, Chunk951288.jsx)("div", {
       className: Chunk781452.embedFields,
       children: require.map((e, l) => {
         let {
@@ -510,29 +510,29 @@ class X extends(r = Chunk73800.PureComponent) {
       isGalleryImage: true,
       allImages: a.images
     }));
-    return null == Chunk481060 && null == Chunk607070 && null == Chunk399654 && null == Chunk370298 ? null : (0, Chunk255367.jsxs)("div", {
+    return null == Chunk481060 && null == Chunk607070 && null == Chunk399654 && null == Chunk370298 ? null : (0, Chunk951288.jsxs)("div", {
       className: Chunk781452.embedGalleryImagesWrapper,
       style: {
         height: Chunk228458
       },
-      children: [(0, Chunk255367.jsxs)("div", {
+      children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk781452.embedGallerySide,
-        children: [(0, Chunk255367.jsx)(Chunk947849.h.Provider, {
+        children: [(0, Chunk951288.jsx)(Chunk947849.h.Provider, {
           value: (0, Chunk963206.P)(a.images[0].url, a.images[0]),
           children: Chunk481060
-        }, 0), null != Chunk370298 && (0, Chunk255367.jsx)(Chunk947849.h.Provider, {
+        }, 0), null != Chunk370298 && (0, Chunk951288.jsx)(Chunk947849.h.Provider, {
           value: (0, Chunk963206.P)(null == (e = a.images[2]) ? true : module.url, a.images[2]),
           children: Chunk399654
         }, 2)]
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         className: Chunk781452.embedGallerySide,
-        children: [(0, Chunk255367.jsx)(Chunk947849.h.Provider, {
+        children: [(0, Chunk951288.jsx)(Chunk947849.h.Provider, {
           value: (0, Chunk963206.P)(null == (l = a.images[1]) ? true : exports.url, a.images[1]),
           children: Chunk607070
-        }, 1), null == Chunk370298 && null != Chunk399654 && (0, Chunk255367.jsx)(Chunk947849.h.Provider, {
+        }, 1), null == Chunk370298 && null != Chunk399654 && (0, Chunk951288.jsx)(Chunk947849.h.Provider, {
           value: (0, Chunk963206.P)(null == (t = a.images[2]) ? true : require.url, a.images[2]),
           children: Chunk399654
-        }, 2), null != Chunk370298 && (0, Chunk255367.jsx)(Chunk947849.h.Provider, {
+        }, 2), null != Chunk370298 && (0, Chunk951288.jsx)(Chunk947849.h.Provider, {
           value: (0, Chunk963206.P)(null == (r = a.images[3]) ? true : r.url, a.images[3]),
           children: Chunk370298
         }, 3)]
@@ -652,8 +652,8 @@ class X extends(r = Chunk73800.PureComponent) {
       E = null != (r = null == (e = Chunk481060.url.split(".").pop()) ? true : module.split("?")[0]) ? r : "";
     "jpg" === Chunk592125 && (E = "jpeg");
     let M = null != Chunk481060 && !Chunk124347.uo.test(null == Chunk481060 ? true : Chunk481060.url) && !(Chunk481060.srcIsAnimated && Chunk124347.YG.test(null == Chunk481060 ? true : Chunk481060.url)) && !(Chunk481060.srcIsAnimated && Chunk124347.FH.test(null == Chunk481060 ? true : Chunk481060.url)),
-      A = true !== this.props.isSearchResult && Chunk228458 && (null == (l = this.props.message) ? true : exports.channel_id) != null && (null == (t = this.props.message) ? true : require.channel_id) !== true && Chunk626135 && !(null != (i = Chunk481060) && (Chunk73800.width <= Chunk217702.OF || Chunk73800.height <= Chunk217702.OF)) && null != Chunk592125;
-    return (0, Chunk255367.jsx)(Chunk947849.h.Consumer, {
+      A = true !== this.props.isSearchResult && Chunk228458 && (null == (l = this.props.message) ? true : exports.channel_id) != null && (null == (t = this.props.message) ? true : require.channel_id) !== true && Chunk626135 && !(null != (i = Chunk481060) && (Chunk647438.width <= Chunk217702.OF || Chunk647438.height <= Chunk217702.OF)) && null != Chunk592125;
+    return (0, Chunk951288.jsx)(Chunk947849.h.Consumer, {
       children: e => (0, n.jsx)(V.G.Consumer, {
         children: l => {
           let {
@@ -705,8 +705,8 @@ class X extends(r = Chunk73800.PureComponent) {
       maxMediaHeight: g,
       sourceMetadata: b
     } = this.state;
-    if (null == r || null == Chunk73800) return null;
-    if (module) return null == Chunk120356 ? null : (0, Chunk255367.jsx)(Chunk249458.G.Consumer, {
+    if (null == r || null == Chunk647438) return null;
+    if (module) return null == Chunk120356 ? null : (0, Chunk951288.jsx)(Chunk249458.G.Consumer, {
       children: e => {
         let {
           disableAnimations: a
@@ -740,11 +740,11 @@ class X extends(r = Chunk73800.PureComponent) {
           videoControlsShown: false
         })
       };
-    return (0, Chunk255367.jsx)(q, {
+    return (0, Chunk951288.jsx)(q, {
       className: Chunk781452.embedMedia,
       href: r,
       allowFullScreen: Chunk399654,
-      thumbnail: Chunk73800,
+      thumbnail: Chunk647438,
       video: Chunk120356,
       provider: null == a ? true : a.name,
       maxWidth: Chunk715697,
@@ -768,24 +768,24 @@ class X extends(r = Chunk73800.PureComponent) {
     } = this.props.embed;
     if (null != module) {
       let t = null != module.iconProxyURL && "" !== module.iconProxyURL ? module.iconProxyURL : module.iconURL;
-      return (0, Chunk255367.jsxs)("div", {
+      return (0, Chunk951288.jsxs)("div", {
         className: a()(Chunk781452.embedFooter, Chunk781452.embedMargin),
-        children: [null != require ? (0, Chunk255367.jsx)("img", {
+        children: [null != require ? (0, Chunk951288.jsx)("img", {
           alt: "",
           className: Chunk781452.embedFooterIcon,
           src: require
-        }) : null, (0, Chunk255367.jsxs)("span", {
+        }) : null, (0, Chunk951288.jsxs)("span", {
           className: Chunk781452.embedFooterText,
-          children: [module.text, null != module.text && null != exports ? (0, Chunk255367.jsx)("span", {
+          children: [module.text, null != module.text && null != exports ? (0, Chunk951288.jsx)("span", {
             className: Chunk781452.embedFooterSeparator,
             children: "•"
           }) : null, null != exports ? (0, Chunk55935.Y4)(exports) : null]
         })]
       })
     }
-    if (null != exports) return (0, Chunk255367.jsx)("div", {
+    if (null != exports) return (0, Chunk951288.jsx)("div", {
       className: a()(Chunk781452.embedFooter, Chunk781452.embedMargin),
-      children: (0, Chunk255367.jsx)("span", {
+      children: (0, Chunk951288.jsx)("span", {
         className: Chunk781452.embedFooterText,
         children: (0, Chunk55935.Y4)(exports)
       })
@@ -808,16 +808,16 @@ class X extends(r = Chunk73800.PureComponent) {
       width: Chunk120356.width,
       height: Chunk120356.height,
       maxWidth: r,
-      maxHeight: Chunk73800
+      maxHeight: Chunk647438
     });
-    return (0, Chunk255367.jsx)(Chunk481060.Eep, {
+    return (0, Chunk951288.jsx)(Chunk481060.Eep, {
       className: exports,
       readyState: Chunk981631.zo9.READY,
       src: "",
       width: a,
       height: Chunk228458,
       maxWidth: r,
-      maxHeight: Chunk73800,
+      maxHeight: Chunk647438,
       mediaLayoutType: Chunk217702.hV.STATIC,
       useFullWidth: false,
       zoomable: false
@@ -866,9 +866,9 @@ class X extends(r = Chunk73800.PureComponent) {
       {
         isVisible: n
       } = this.state,
-      i = this.renderProvider(Chunk255367),
-      s = this.renderAuthor(Chunk255367),
-      a = this.renderTitle(Chunk255367);
+      i = this.renderProvider(Chunk951288),
+      s = this.renderAuthor(Chunk951288),
+      a = this.renderTitle(Chunk951288);
     switch (require.type) {
       case Chunk981631.hBH.IMAGE:
       case Chunk981631.hBH.VIDEO:
@@ -878,15 +878,15 @@ class X extends(r = Chunk73800.PureComponent) {
         e = this.renderDescription()
     }
     let o = this.renderFields();
-    r || (l = this.renderMedia(!Chunk255367));
+    r || (l = this.renderMedia(!Chunk951288));
     let d = this.renderFooter(),
       u = null == exports;
     return require.type === Chunk981631.hBH.RICH && (u = null == require.video), {
-      provider: Chunk73800,
+      provider: Chunk647438,
       author: Chunk120356,
       title: a,
       description: module,
-      thumbnail: !r && Chunk607070 ? this.renderThumbnail(Chunk255367) : null,
+      thumbnail: !r && Chunk607070 ? this.renderThumbnail(Chunk951288) : null,
       fields: Chunk228458,
       media: exports,
       footer: Chunk481060
@@ -1035,19 +1035,19 @@ class X extends(r = Chunk73800.PureComponent) {
       obscureReason: t,
       className: r
     } = this.props;
-    return null != exports.provider && Chunk401419.j.includes(exports.provider.name) ? (0, Chunk255367.jsx)(Chunk401419.Z, {
+    return null != exports.provider && Chunk401419.j.includes(exports.provider.name) ? (0, Chunk951288.jsx)(Chunk401419.Z, {
       embed: exports,
       className: r
-    }) : (0, Chunk785992.Z)(exports) ? (0, Chunk255367.jsx)(Chunk400266.Z, {
+    }) : (0, Chunk785992.Z)(exports) ? (0, Chunk951288.jsx)(Chunk400266.Z, {
       embed: exports,
       className: r
-    }) : (null == (e = exports.provider) ? true : module.name) === "Amazon Music" && exports.type === Chunk981631.hBH.RICH ? (0, Chunk255367.jsx)(Chunk624195.Z, {
+    }) : (null == (e = exports.provider) ? true : module.name) === "Amazon Music" && exports.type === Chunk981631.hBH.RICH ? (0, Chunk951288.jsx)(Chunk624195.Z, {
       embed: exports,
       className: r
-    }) : (0, Chunk635477.Z)(exports) ? (0, Chunk255367.jsx)(Chunk715697.Z, {
+    }) : (0, Chunk635477.Z)(exports) ? (0, Chunk951288.jsx)(Chunk715697.Z, {
       embed: exports,
       className: r
-    }) : this.isInline() ? null != require ? (0, Chunk255367.jsx)(Chunk95398.ZP, {
+    }) : this.isInline() ? null != require ? (0, Chunk951288.jsx)(Chunk95398.ZP, {
       type: Chunk95398.ZP.Types.ATTACHMENT,
       reason: require,
       onReveal: this.onReveal,
@@ -1058,7 +1058,7 @@ class X extends(r = Chunk73800.PureComponent) {
         [Chunk781452.obscureVideoSpacing]: this.state.isVisible && this.state.videoControlsShown
       }),
       children: this.renderInlineMediaEmbed
-    }) : this.renderInlineMediaEmbed() : null != require ? (0, Chunk255367.jsx)(Chunk95398.ZP, {
+    }) : this.renderInlineMediaEmbed() : null != require ? (0, Chunk951288.jsx)(Chunk95398.ZP, {
       type: Chunk95398.ZP.Types.EMBED,
       onReveal: this.onReveal,
       onToggleObscurity: this.onToggleObscurity,

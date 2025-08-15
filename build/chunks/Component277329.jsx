@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => b
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk230711 = require("./230711.js"),
@@ -23,12 +23,12 @@ function b() {
   let e = (0, Chunk326528.b)(),
     t = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
     n = null != exports && module.some(e => e.id === t) ? exports : module[0].id;
-  return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-    children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       className: Chunk830260.heading,
       variant: "heading-xl/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.URyqtL)
-    }), (0, Chunk255367.jsx)(Chunk481060.njP, {
+    }), (0, Chunk951288.jsx)(Chunk481060.njP, {
       className: Chunk830260.tabBar,
       selectedItem: require,
       onItemSelect: e => {
@@ -52,23 +52,23 @@ function b() {
     }), (() => {
       switch (require) {
         case Chunk332325.Z.CLIPS:
-          return (0, Chunk255367.jsx)(Chunk574755.Z, {
+          return (0, Chunk951288.jsx)(Chunk574755.Z, {
             className: Chunk830260.body,
             showHeader: false
           });
         case Chunk332325.Z.OVERLAY:
-          return (0, Chunk255367.jsx)(Chunk327885.Z, {
+          return (0, Chunk951288.jsx)(Chunk327885.Z, {
             className: Chunk830260.body,
             showHeader: false
           });
         case Chunk332325.Z.ACTIVITY_PRIVACY:
-          return (0, Chunk255367.jsx)(Chunk309739.Z, {
+          return (0, Chunk951288.jsx)(Chunk309739.Z, {
             className: Chunk830260.body,
             showHeader: false
           });
         case Chunk332325.Z.MY_GAMES:
         default:
-          return (0, Chunk255367.jsx)(Chunk293389.Z, {
+          return (0, Chunk951288.jsx)(Chunk293389.Z, {
             className: Chunk830260.body,
             showHeader: false
           })

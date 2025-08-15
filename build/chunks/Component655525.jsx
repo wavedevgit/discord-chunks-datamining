@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => d
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk704215 = require("./704215.js"),
@@ -15,22 +15,22 @@ var Chunk120356 = require("./120356.js"),
   Chunk400963 = require("./400963.js");
 
 function d() {
-  return (0, Chunk266454.zu)(Chunk704215.z.BOGO_2025_NITRO_TAB_BADGE) ? (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk266454.zu)(Chunk704215.z.BOGO_2025_NITRO_TAB_BADGE) ? (0, Chunk951288.jsxs)("div", {
     className: s()(Chunk400963.premiumTrialBadge, Chunk400963.premiumTrialAcknowledgedBadge, {}),
-    children: [(0, Chunk255367.jsx)(Chunk481060.T39, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.T39, {
       size: "custom",
       width: 14,
       height: 14,
       color: "currentColor",
       className: Chunk400963.BogoBadgeClockIcon
-    }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "eyebrow",
       color: "text-secondary",
       children: Chunk388032.intl.string(Chunk388032.t.OS9KPj)
     })]
-  }) : (0, Chunk255367.jsx)("div", {
+  }) : (0, Chunk951288.jsx)("div", {
     className: s()(Chunk400963.premiumTrialBadge, Chunk400963.backgroundGradient),
-    children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+    children: (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "eyebrow",
       color: "always-white",
       children: Chunk388032.intl.string(Chunk388032.t.OS9KPj)

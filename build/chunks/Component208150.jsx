@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => E
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -72,16 +72,16 @@ let y = {
       })]
     })
   },
-  N = () => (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+  N = () => (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     title: Chunk388032.intl.string(Chunk388032.t["9N2OWF"]),
-    children: [(0, Chunk255367.jsx)(Chunk481060.R94, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.geA.DESCRIPTION,
       children: Chunk388032.intl.format(Chunk388032.t.hxLvi4, {
         fileSize: (0, Chunk424218.IC)(Chunk611480.Ht, {
           useKibibytes: true
         })
       })
-    }), (0, Chunk255367.jsx)(Chunk481060.R94, {
+    }), (0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.geA.DESCRIPTION,
       children: Chunk388032.intl.format(Chunk388032.t.UBj0aW, {
         articleUrl: Chunk63063.Z.getArticleURL(Chunk981631.BhN.STICKERS_UPLOAD)
@@ -128,21 +128,21 @@ let y = {
       } = (0, Chunk906732.ZP)(Chunk100527.Z.STICKERS);
     if (null == module) return null;
     let l = module.premiumTier !== Chunk981631.Eu4.NONE || exports.length > 0;
-    return (0, Chunk255367.jsx)(Chunk906732.Gt, {
+    return (0, Chunk951288.jsx)(Chunk906732.Gt, {
       value: require,
-      children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+      children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
         title: Chunk388032.intl.string(Chunk388032.t.R5nQkZ),
         tag: Chunk481060.RB0.H1,
-        children: [Chunk755721 ? (0, Chunk255367.jsxs)("div", {
-          children: [(0, Chunk255367.jsx)(I, {
+        children: [Chunk755721 ? (0, Chunk951288.jsxs)("div", {
+          children: [(0, Chunk951288.jsx)(I, {
             guild: module,
             guildStickers: exports
-          }), (0, Chunk255367.jsx)(N, {})]
-        }) : (0, Chunk255367.jsx)(C, {
+          }), (0, Chunk951288.jsx)(N, {})]
+        }) : (0, Chunk951288.jsx)(C, {
           guild: module
-        }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
+        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
           className: Chunk86318.divider
-        }), (0, Chunk255367.jsx)(Chunk145499.Z, {
+        }), (0, Chunk951288.jsx)(Chunk145499.Z, {
           guild: module
         })]
       })

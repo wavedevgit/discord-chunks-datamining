@@ -37,7 +37,7 @@ require.d(exports, {
   z6: () => e_,
   zB: () => ew
 }), require("./388685.js"), require("./642613.js"), require("./539854.js"), require("./953529.js"), require("./314940.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
   Chunk278074 = require("./278074.js"),
@@ -82,7 +82,7 @@ function F() {
       fetchPolicy: "cache-only",
       callerSource: "unknown"
     },
-    [t, n] = Chunk73800.useState(false),
+    [t, n] = Chunk647438.useState(false),
     i = (0, Chunk442837.Wu)([Chunk569984.Z], () => [...Chunk569984.Z.quests.values()]),
     a = (0, Chunk442837.Wu)([Chunk569984.Z], () => [...Chunk569984.Z.excludedQuests.values()]),
     {
@@ -98,7 +98,7 @@ function F() {
     c = Chunk937797.D.useConfig({
       location: Chunk46140.dr.USE_QUESTS
     });
-  return Chunk73800.useEffect(() => {
+  return Chunk647438.useEffect(() => {
     if ("cache-only" !== module.fetchPolicy && ("cache-and-network" === module.fetchPolicy || "cache-or-network" === module.fetchPolicy && 0 === Chunk754700) && Chunk959078 && !exports && !Chunk278074) {
       if (require(true), (0, Chunk272008.xw)(), !Chunk780384.enabled || "focused" === Chunk15624.Z.getState())(0, Chunk272008.w)(Chunk497505.Ok.DESKTOP_ACCOUNT_PANEL_AREA, "use_quests_".concat(module.callerSource))
     }
@@ -179,10 +179,10 @@ function z(e) {
 }
 
 function q() {
-  let e = Chunk73800.useRef(false),
+  let e = Chunk647438.useRef(false),
     t = (0, Chunk442837.Wu)([Chunk569984.Z], () => Array.from(Chunk569984.Z.claimedQuests.values())),
     n = (0, Chunk442837.e7)([Chunk569984.Z], () => Chunk569984.Z.isFetchingClaimedQuests);
-  return Chunk73800.useEffect(() => {
+  return Chunk647438.useEffect(() => {
     require || module.current || (module.current = true, (0, Chunk272008.Ag)())
   }, [require]), {
     claimedQuests: exports,
@@ -325,24 +325,24 @@ function ec() {
     fetchPolicy: "cache-or-network",
     callerSource: "settings_badge"
   }), n = X();
-  return Chunk73800.useMemo(() => {
+  return Chunk647438.useMemo(() => {
     let r = [];
-    if (exports || 0 === module.length) return Chunk73800;
+    if (exports || 0 === module.length) return Chunk647438;
     for (let t of module) {
       var i;
       if (!(0, Chunk509212.vR)(exports, Chunk497505.jn.GIFT_INVENTORY_SETTINGS_BADGE) || null != (i = require.get(exports.id)) && Chunk512722) continue;
       if ((null == exports ? true : exports.userStatus) == null) {
-        Chunk73800.push(exports);
+        Chunk647438.push(exports);
         continue
       }
       let e = null != exports.userStatus.claimedAt,
         a = (0, Chunk509212.zE)(exports.userStatus, Chunk497505.jn.GIFT_INVENTORY_SETTINGS_BADGE);
       if (!module && !a) {
-        Chunk73800.push(exports);
+        Chunk647438.push(exports);
         continue
       }
     }
-    return Chunk73800
+    return Chunk647438
   }, [module, require, exports])
 }
 
@@ -390,14 +390,14 @@ function e_() {
     xboxAccounts: n,
     playstationAccounts: i,
     xboxAndPlaystationAccounts: a
-  } = Chunk73800.useMemo(() => {
+  } = Chunk647438.useMemo(() => {
     let e = exports.filter(e => false === e.revoked),
       n = module.filter(e => e.type === j.ABu.XBOX),
       r = module.filter(e => e.type === j.ABu.PLAYSTATION),
-      i = require.concat(Chunk73800);
+      i = require.concat(Chunk647438);
     return {
       xboxAccounts: require,
-      playstationAccounts: Chunk73800,
+      playstationAccounts: Chunk647438,
       xboxAndPlaystationAccounts: Chunk512722
     }
   }, [exports]);
@@ -445,11 +445,11 @@ let ep = e => {
     let {
       xboxAccounts: e,
       playstationAccounts: t
-    } = e_(), n = module.length > 0, r = exports.length > 0, i = require && !Chunk73800 || !require && Chunk73800, a = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_PLAYSTATION), o = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_XBOX), s = Chunk388032.intl.format(Chunk388032.t.beN4DA, {
+    } = e_(), n = module.length > 0, r = exports.length > 0, i = require && !Chunk647438 || !require && Chunk647438, a = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_PLAYSTATION), o = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_XBOX), s = Chunk388032.intl.format(Chunk388032.t.beN4DA, {
       psHelpdeskArticle: a,
       xboxHelpdeskArticle: Chunk278074
     }), l = Chunk388032.intl.format(Chunk388032.t.HVS7np, {
-      helpdeskArticle: Chunk73800 ? a : Chunk278074
+      helpdeskArticle: Chunk647438 ? a : Chunk278074
     });
     return {
       message: Chunk512722 ? Chunk959078 : Chunk754700,

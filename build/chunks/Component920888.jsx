@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => O
 }), require("./388685.js"), require("./539854.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk215569 = require("./215569.js"),
@@ -53,7 +53,7 @@ function E(e, t) {
   }), e
 }
 let C = (e, t) => null == e && null == t || e === t;
-class v extends Chunk73800.PureComponent {
+class v extends Chunk647438.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let n = e.message.reactions.length;
     return 0 === t.reactionsCount && n > 0 ? {
@@ -86,7 +86,7 @@ class v extends Chunk73800.PureComponent {
     } = this.state, P = y ? Chunk893973 : Chunk127947, N = S > 0;
     if (!N && !v) return null;
     let A = v || N;
-    return (0, Chunk255367.jsxs)(Chunk215569.W, {
+    return (0, Chunk951288.jsxs)(Chunk215569.W, {
       component: "div",
       className: a()(P.reactions, C),
       transitionAppear: !T,
@@ -99,28 +99,28 @@ class v extends Chunk73800.PureComponent {
       onMouseLeave: () => this.setState({
         isHovered: false
       }),
-      children: [(0, Chunk255367.jsx)(Chunk434624.l, {
+      children: [(0, Chunk951288.jsx)(Chunk434624.l, {
         reactions: I,
         message: module,
         readOnly: require,
-        isLurking: Chunk73800,
+        isLurking: Chunk647438,
         isGuest: Chunk120356,
         isPendingMember: h,
         isForumToolbar: b,
         useChatFontScaling: y,
         className: O
-      }), j > 0 && (0, Chunk255367.jsx)(Chunk481060.P3F, {
+      }), j > 0 && (0, Chunk951288.jsx)(Chunk481060.P3F, {
         onClick: t => {
           t.stopPropagation(), (0, m.op)(E, e)
         },
         className: a()(P.reaction, O, P.remainingReactions),
         "aria-label": Chunk388032.intl.string(Chunk388032.t.lfIHs7),
-        children: (0, Chunk255367.jsxs)(Chunk481060.Text, {
+        children: (0, Chunk951288.jsxs)(Chunk481060.Text, {
           className: P.reactionInner,
           variant: "text-sm/normal",
           children: ["+", j]
         })
-      }), !exports && !x && (0, Chunk255367.jsx)(Chunk60174.X, {
+      }), !exports && !x && (0, Chunk951288.jsx)(Chunk60174.X, {
         tabIndex: A || this.state.isHovered ? 0 : false,
         type: Chunk566006.O.NORMAL,
         message: module,

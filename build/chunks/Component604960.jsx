@@ -3,8 +3,8 @@
 require.r(exports), require.d(exports, {
   default: () => a
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk37234 = require("./37234.js"),
   Chunk79808 = require("./79808.jsx"),
   Chunk604227 = require("./604227.jsx"),
@@ -12,7 +12,7 @@ var Chunk37234 = require("./37234.js"),
 
 function a() {
   let e = (0, Chunk535514.M)();
-  return (0, Chunk255367.jsx)(Chunk79808.Z, {
+  return (0, Chunk951288.jsx)(Chunk79808.Z, {
     onClose: Chunk37234.xf,
     root: module,
     sidebarFooter: Chunk604227.Z,

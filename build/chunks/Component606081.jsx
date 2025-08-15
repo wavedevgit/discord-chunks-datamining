@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => E
 }), require("./49124.js"), require("./415506.js");
-var r, i, l, a, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js");
+var r, i, l, a, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,7 +71,7 @@ function _(e) {
   return d("QuantitativeValue", e)
 }
 _.UnitCodes = b;
-class O extends(r = Chunk73800.Component) {
+class O extends(r = Chunk647438.Component) {
   render() {
     let {
       debug: e,
@@ -79,7 +79,7 @@ class O extends(r = Chunk73800.Component) {
     } = this.props, n = JSON.stringify(u({
       "@context": "http://schema.org"
     }, exports));
-    return (0, Chunk255367.jsx)("script", {
+    return (0, Chunk951288.jsx)("script", {
       type: "application/ld+json",
       children: require
     })

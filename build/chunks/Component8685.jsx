@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => E
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk923928 = require("./923928.js"),
@@ -59,12 +59,12 @@ let m = () => {
     Chunk923928.Z.clearSuppressWarning(true)
   },
   E = () => {
-    let e = Chunk73800.useRef(null);
+    let e = Chunk647438.useRef(null);
 
     function t() {
       null !== module.current && ((0, Chunk481060.Mr3)(module.current), module.current = null)
     }
-    let [s, f] = (0, Chunk442837.Wu)([Chunk209590.Z], () => [Chunk209590.Z.shouldShowWarning(), Chunk209590.Z.isAFKChannel()], []), p = Chunk73800.useCallback(() => {
+    let [s, f] = (0, Chunk442837.Wu)([Chunk209590.Z], () => [Chunk209590.Z.shouldShowWarning(), Chunk209590.Z.isAFKChannel()], []), p = Chunk647438.useCallback(() => {
       let t, n;
       f ? (t = Chunk388032.intl.string(Chunk388032.t.Y40JkZ), n = Chunk388032.intl.string(Chunk388032.t["5J4yGR"])) : (t = Chunk388032.intl.string(Chunk388032.t.FJSZVF), n = Chunk388032.intl.string(Chunk388032.t.etJjgY)), module.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(l.default, _({
         title: t,
@@ -74,7 +74,7 @@ let m = () => {
         secondaryConfirmText: d.intl.string(d.t["5E9SBw"]),
         onConfirmSecondary: g
       }, e)))
-    }, [f]), E = Chunk73800.useCallback(() => {
+    }, [f]), E = Chunk647438.useCallback(() => {
       (0, Chunk481060.ZDy)(async () => {
         let {
           default: e
@@ -86,7 +86,7 @@ let m = () => {
         null != t && (e.current = t)
       })
     }, []);
-    return Chunk73800.useEffect(() => (Chunk923928 && (0, Chunk503856.p)() ? E() : Chunk923928 ? p() : exports(), () => {
+    return Chunk647438.useEffect(() => (Chunk923928 && (0, Chunk503856.p)() ? E() : Chunk923928 ? p() : exports(), () => {
       exports()
     }), [Chunk923928, p, E]), null
   }

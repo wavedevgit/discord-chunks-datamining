@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => p
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk873115 = require("./873115.js"),
@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk975060 = require("./975060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk496758 = require("./496758.js");
-class _ extends Chunk73800.PureComponent {
+class _ extends Chunk647438.PureComponent {
   componentDidMount() {
     null != this.props.venmoClient && Chunk873115.by()
   }
@@ -27,25 +27,25 @@ class _ extends Chunk73800.PureComponent {
       className: t,
       venmoClient: n
     } = this.props, i = null != module && "" !== module;
-    return (0, Chunk255367.jsxs)("div", {
+    return (0, Chunk951288.jsxs)("div", {
       className: exports,
-      children: [(0, Chunk255367.jsx)(Chunk219929.ZP, {
+      children: [(0, Chunk951288.jsx)(Chunk219929.ZP, {
         type: Chunk219929.ZP.Types.VENMO,
         size: Chunk219929.Uy.MEDIUM,
         className: Chunk496758.venmoIcon
-      }), Chunk73800 ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-        children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      }), Chunk647438 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: module.length < 25 ? "heading-xl/bold" : "heading-lg/bold",
           className: Chunk496758.connectionInstructions,
           children: Chunk388032.intl.format(Chunk388032.t.DowIra, {
             venmoUsername: module
           })
-        }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           className: Chunk496758.connectionInstructions,
           children: Chunk388032.intl.string(Chunk388032.t.kmEvnZ)
         })]
-      }) : (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }) : (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         className: Chunk496758.connectionInstructions,
         children: null == require ? Chunk388032.intl.string(Chunk388032.t["2ouZDQ"]) : Chunk388032.intl.string(Chunk388032.t.mIL6JS)

@@ -11,7 +11,7 @@ require.d(exports, {
   ux: () => I
 });
 var Chunk995638 = require("./995638.js"),
-  Chunk114858 = require("./114858.js"),
+  Chunk843611 = require("./843611.js"),
   Chunk442837 = require("./442837.js"),
   Chunk230711 = require("./230711.js"),
   Chunk455199 = require("./455199.js"),
@@ -57,7 +57,7 @@ function b(e) {
 function y() {
   let {
     pathname: e
-  } = (0, Chunk114858.TH)();
+  } = (0, Chunk843611.TH)();
   return module.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.STv))
 }
 

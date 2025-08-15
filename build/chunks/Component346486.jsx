@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => u
 }), require("./388685.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk55935 = require("./55935.js"),
@@ -18,7 +18,7 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class h extends(r = Chunk73800.PureComponent) {
+class h extends(r = Chunk647438.PureComponent) {
   componentDidMount() {
     let {
       intervalDuration: e,
@@ -57,13 +57,13 @@ class h extends(r = Chunk73800.PureComponent) {
       className: n,
       stopAtOneSec: r
     } = this.props;
-    if (module === 1 / 0) return (0, Chunk255367.jsx)("span", {
+    if (module === 1 / 0) return (0, Chunk951288.jsx)("span", {
       className: require,
       "aria-label": Chunk388032.intl.string(Chunk388032.t.PqEzn5),
       children: "∞"
     });
     let i = (0, Chunk55935.TD)(Date.now(), module, r);
-    return null != exports ? exports(Chunk73800, this.defaultRender.bind(this, Chunk73800)) : this.defaultRender(Chunk73800)
+    return null != exports ? exports(Chunk647438, this.defaultRender.bind(this, Chunk647438)) : this.defaultRender(Chunk647438)
   }
   constructor(...e) {
     super(...e), d(this, "_interval", true)

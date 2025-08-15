@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => m
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk904245 = require("./904245.js"),
   Chunk340541 = require("./340541.js"),
@@ -23,7 +23,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class g extends Chunk73800.PureComponent {
+class g extends Chunk647438.PureComponent {
   getInviteText() {
     return (0, Chunk340541.jW)({
       location: "invite_notice"
@@ -32,7 +32,7 @@ class g extends Chunk73800.PureComponent {
   render() {
     let e = "".concat(Chunk388032.intl.string(Chunk388032.t.VWqWZW), "\n").concat(Chunk388032.intl.string(Chunk388032.t["0Lgb/P"])),
       t = this.getInviteText();
-    return (0, Chunk255367.jsx)(Chunk82950.Z, {
+    return (0, Chunk951288.jsx)(Chunk82950.Z, {
       guild: this.props.guild,
       onDismissed: this.handleClose,
       onClick: this.handleInvite,

@@ -3,16 +3,16 @@
 require.d(exports, {
   Z: () => a
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk955415 = require("./955415.jsx"),
   Chunk388032 = require("./388032.jsx");
 
 function a() {
-  return (0, Chunk255367.jsxs)(Chunk955415.Z, {
-    children: [(0, Chunk255367.jsx)(Chunk955415.Z.Header, {
+  return (0, Chunk951288.jsxs)(Chunk955415.Z, {
+    children: [(0, Chunk951288.jsx)(Chunk955415.Z.Header, {
       text: Chunk388032.intl.string(Chunk388032.t["N/g9Z2"])
-    }), (0, Chunk255367.jsx)(Chunk955415.Z.Body, {
+    }), (0, Chunk951288.jsx)(Chunk955415.Z.Body, {
       resolving: true
     })]
   })

@@ -5,8 +5,8 @@ require.d(exports, {
   ZP: () => T,
   yo: () => S
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -136,7 +136,7 @@ function O(e) {
 
 function v() {
   let e = (0, Chunk442837.Wu)([Chunk699516.Z], () => Chunk699516.Z.getBlockedIDs());
-  return (0, Chunk255367.jsx)(O, {
+  return (0, Chunk951288.jsx)(O, {
     setting: Chunk726985.s6.BLOCKED_USERS,
     userIds: module,
     listType: "blocked"
@@ -145,7 +145,7 @@ function v() {
 
 function S() {
   let e = (0, Chunk442837.Wu)([Chunk699516.Z], () => Chunk699516.Z.getIgnoredIDs());
-  return (0, Chunk255367.jsx)(O, {
+  return (0, Chunk951288.jsx)(O, {
     setting: Chunk726985.s6.IGNORED_USERS,
     userIds: module,
     listType: "ignored"
@@ -153,15 +153,15 @@ function S() {
 }
 
 function T() {
-  return (0, Chunk255367.jsxs)(Chunk838436.U, {
+  return (0, Chunk951288.jsxs)(Chunk838436.U, {
     setting: Chunk726985.s6.RESTRICTED_USERS,
     scrollPosition: Chunk526761.FY.RESTRICTED_ACCOUNTS,
     scrollHighlightDelay: 900,
-    children: [(0, Chunk255367.jsx)(Chunk838436.H, {
+    children: [(0, Chunk951288.jsx)(Chunk838436.H, {
       header: Chunk388032.intl.string(Chunk388032.t["3wRorq"]),
       description: Chunk388032.intl.format(Chunk388032.t["0aNQo6"], {
         helpArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
       })
-    }), (0, Chunk255367.jsx)(v, {}), (0, Chunk255367.jsx)(S, {})]
+    }), (0, Chunk951288.jsx)(v, {}), (0, Chunk951288.jsx)(S, {})]
   })
 }

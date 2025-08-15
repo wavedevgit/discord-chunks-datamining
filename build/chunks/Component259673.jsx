@@ -1,9 +1,9 @@
-/** Chunk was on 32160 **/
+/** Chunk was on 17768 **/
 /** chunk id: 259673, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  M: () => u
+  M: () => d
 });
-var Chunk255367 = require("./255367.js"),
+var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk678135 = require("./678135.jsx"),
   Chunk643879 = require("./643879.js"),
@@ -11,13 +11,13 @@ var Chunk255367 = require("./255367.js"),
   Chunk74538 = require("./74538.js"),
   Chunk755419 = require("./755419.jsx"),
   Chunk526666 = require("./526666.js");
-let u = e => {
+let d = e => {
   var t, n;
   let {
-    user: u
-  } = e, m = s.ZP.canUsePremiumProfileCustomization(u), p = (0, a.cj)([c.Z], () => c.Z.getAllPending()), {
-    pendingAvatar: _
-  } = p, f = function(e, t) {
+    user: d
+  } = e, p = c.ZP.canUsePremiumProfileCustomization(d), m = (0, a.cj)([l.Z], () => l.Z.getAllPending()), {
+    pendingAvatar: g
+  } = m, f = function(e, t) {
     if (null == e) return {};
     var n, r, a = function(e, t) {
       if (null == e) return {};
@@ -31,12 +31,12 @@ let u = e => {
       for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
     }
     return a
-  }(p, ["pendingAvatar"]), g = (0, o.SD)({
-    userId: u.id,
-    image: _
+  }(m, ["pendingAvatar"]), b = (0, o.SD)({
+    userId: d.id,
+    image: g
   });
   return (0, r.jsx)("div", {
-    className: d.container,
+    className: u.container,
     children: (0, r.jsx)(i.Z, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -55,10 +55,10 @@ let u = e => {
       }
       return e
     }({}, f), n = n = {
-      pendingAvatar: g,
-      user: u,
-      pendingBadges: [(0, l.X)()],
-      canUsePremiumCustomization: m,
+      pendingAvatar: b,
+      user: d,
+      pendingBadges: [(0, s.X)()],
+      canUsePremiumCustomization: p,
       disabledInputs: true,
       hideViewFullProfileButton: true
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

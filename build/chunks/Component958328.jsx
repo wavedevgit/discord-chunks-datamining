@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => g
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk149765 = require("./149765.js"),
@@ -73,19 +73,19 @@ function g() {
         can: r
       }, t)
     });
-  return (0, Chunk255367.jsx)("div", {
+  return (0, Chunk951288.jsx)("div", {
     className: l()(Chunk451429.panel, Chunk989295.panel),
-    children: (0, Chunk255367.jsxs)("div", {
+    children: (0, Chunk951288.jsxs)("div", {
       className: Chunk989295.panelInner,
-      children: [(0, Chunk255367.jsxs)("section", {
+      children: [(0, Chunk951288.jsxs)("section", {
         className: Chunk989295.section,
-        children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: null != y ? "Permissions in ".concat(y) : "No channel selected"
         }), O]
-      }), (0, Chunk255367.jsxs)("section", {
+      }), (0, Chunk951288.jsxs)("section", {
         className: Chunk989295.section,
-        children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-md/semibold",
           children: null != Chunk120356 ? "Permissions in ".concat(Chunk120356.name) : "No guild selected"
         }), T]

@@ -3,17 +3,17 @@
 require.d(exports, {
   s: () => c
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk886886 = require("./886886.js");
 
 function c() {
-  let [e, t] = Chunk73800.useState(false);
+  let [e, t] = Chunk647438.useState(false);
   return {
     isTruncated: module,
-    ExpandableTextContainer: Chunk73800.memo(function(e) {
+    ExpandableTextContainer: Chunk647438.memo(function(e) {
       let {
         showAll: n = false,
         className: i,

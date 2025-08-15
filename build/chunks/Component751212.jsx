@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => Y
 }), require("./388685.js"), require("./539854.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   r = require.n(Chunk392711),
   Chunk913527 = require("./913527.js"),
@@ -91,7 +91,7 @@ function W(e, t) {
   }
   return s
 }
-class B extends Chunk73800.PureComponent {
+class B extends Chunk647438.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let {
       overrides: n,
@@ -146,28 +146,28 @@ class B extends Chunk73800.PureComponent {
     let {
       guild: e
     } = this.props;
-    return null == module ? null : (0, Chunk255367.jsxs)(Chunk481060.xBx, {
+    return null == module ? null : (0, Chunk951288.jsxs)(Chunk481060.xBx, {
       className: Chunk848832.modalHeader,
-      children: [(0, Chunk255367.jsxs)(Chunk600164.Z.Child, {
-        children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsxs)(Chunk600164.Z.Child, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-lg/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.h850Sk)
-        }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           className: Chunk848832.guildName,
           children: module.name
         })]
-      }), (0, Chunk255367.jsx)(Chunk600164.Z.Child, {
+      }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
         grow: 0,
-        children: (0, Chunk255367.jsx)(Chunk481060.olH, {
+        children: (0, Chunk951288.jsx)(Chunk481060.olH, {
           onClick: this.props.onClose
         })
       })]
     })
   }
   renderFooter() {
-    return (0, Chunk255367.jsx)(Chunk481060.mzw, {
-      children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+    return (0, Chunk951288.jsx)(Chunk481060.mzw, {
+      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.i4jeWV),
         onClick: this.props.onClose
@@ -181,37 +181,37 @@ class B extends Chunk73800.PureComponent {
       muteConfig: n,
       guild: s
     } = this.props, l = null != (e = null == require ? true : require.selected_time_window) ? module : Chunk969943.Oe.ALWAYS;
-    return null == Chunk73800 ? null : (0, Chunk255367.jsxs)(Chunk481060.xJW, {
+    return null == Chunk647438 ? null : (0, Chunk951288.jsxs)(Chunk481060.xJW, {
       className: Chunk848832.largeSpacing,
-      children: [(0, Chunk255367.jsx)(Chunk481060.j7V, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
         hideBorder: true,
         value: exports,
         onChange: e => this.handleCheckboxChange("muted", e, R.UE.muted(e)),
         note: Chunk388032.intl.string(Chunk388032.t["8wbTQ0"]),
         children: Chunk388032.intl.format(Chunk388032.t["J+7D9P"], {
-          name: Chunk73800.name
+          name: Chunk647438.name
         })
-      }), exports ? (0, Chunk255367.jsxs)(Chunk600164.Z, {
+      }), exports ? (0, Chunk951288.jsxs)(Chunk600164.Z, {
         className: Chunk848832.spacing,
         align: Chunk600164.Z.Align.CENTER,
-        children: [(0, Chunk255367.jsxs)(Chunk600164.Z, {
+        children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
           direction: Chunk600164.Z.Direction.VERTICAL,
           className: Chunk848832.__invalid_muteUntilTextWrapper,
-          children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
             tag: "h3",
             className: Chunk848832.muteUntilTitle,
             children: Chunk388032.intl.string(Chunk388032.t.Ztu2Ym)
-          }), (0, Chunk255367.jsx)(Chunk777861.Z, {
+          }), (0, Chunk951288.jsx)(Chunk777861.Z, {
             className: Chunk848832.muteUntilText,
             muteConfig: require
           })]
-        }), (0, Chunk255367.jsx)(Chunk481060.q4e, {
+        }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
           className: Chunk848832.muteTimeSelector,
           options: (0, Chunk423589.W9)(),
           value: Chunk392711,
           onChange: this.handleSelectMuteTime
         })]
-      }) : null, (0, Chunk255367.jsx)(Chunk481060.$i$, {})]
+      }) : null, (0, Chunk951288.jsx)(Chunk481060.$i$, {})]
     })
   }
   renderServerSettings() {
@@ -220,12 +220,12 @@ class B extends Chunk73800.PureComponent {
       muted: t,
       memberCount: n
     } = this.props;
-    return (0, Chunk255367.jsxs)("div", {
+    return (0, Chunk951288.jsxs)("div", {
       className: Chunk848832.spacing,
-      children: [(0, Chunk255367.jsx)(Chunk481060.xJW, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
         title: Chunk388032.intl.string(Chunk388032.t.lprV7e),
         className: Chunk848832.largeSpacing,
-        children: (0, Chunk255367.jsx)(Chunk481060.FXm, {
+        children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
           disabled: exports,
           value: module,
           onChange: e => this.handleRadioChange("message_notifications", e, R.UE.notifications(e.value)),
@@ -241,7 +241,7 @@ class B extends Chunk73800.PureComponent {
             value: Chunk981631.bL.NO_MESSAGES
           }]
         })
-      }), (0, Chunk255367.jsx)(Chunk481060.$i$, {})]
+      }), (0, Chunk951288.jsx)(Chunk481060.$i$, {})]
     })
   }
   renderNotificationOptions() {
@@ -254,46 +254,46 @@ class B extends Chunk73800.PureComponent {
       notifyHighlights: r,
       guildId: a
     } = this.props;
-    return (0, Chunk255367.jsxs)(Chunk481060.xJW, {
+    return (0, Chunk951288.jsxs)(Chunk481060.xJW, {
       className: Chunk848832.largeSpacing,
-      children: [(0, Chunk255367.jsx)(Chunk481060.j7V, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
         onChange: e => this.handleCheckboxChange("suppress_everyone", e, R.UE.suppressEveryone(e)),
         value: module,
         children: Chunk388032.intl.format(Chunk388032.t.OWiWAg, {})
-      }), (0, Chunk255367.jsx)(Chunk481060.j7V, {
+      }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         onChange: e => this.handleCheckboxChange("suppress_roles", e, R.UE.suppressRoles(e)),
         value: exports,
         children: Chunk388032.intl.string(Chunk388032.t["O/QdoK"])
-      }), (0, Chunk255367.jsx)(Chunk481060.j7V, {
+      }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         onChange: e => {
           g.Z.updateGuildNotificationSettings(a, {
             notify_highlights: e ? w.gLR.DISABLED : w.gLR.ENABLED
           }, R.UE.highlights(!e))
         },
-        value: Chunk73800 || r === Chunk981631.gLR.DISABLED,
-        disabled: Chunk73800,
-        note: (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-          children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+        value: Chunk647438 || r === Chunk981631.gLR.DISABLED,
+        disabled: Chunk647438,
+        note: (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
             children: Chunk388032.intl.string(Chunk388032.t["Vw/Xn5"])
-          }), (0, Chunk255367.jsx)("div", {
+          }), (0, Chunk951288.jsx)("div", {
             className: Chunk848832.highlightsLink,
-            children: (0, Chunk255367.jsx)(Chunk481060.eee, {
+            children: (0, Chunk951288.jsx)(Chunk481060.eee, {
               href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.HIGHLIGHTS),
               children: Chunk388032.intl.string(Chunk388032.t.PRBn9P)
             })
           })]
         }),
-        children: (0, Chunk255367.jsx)(Chunk255367.Fragment, {
+        children: (0, Chunk951288.jsx)(Chunk951288.Fragment, {
           children: Chunk388032.intl.string(Chunk388032.t.gPuteH)
         })
-      }), (0, Chunk255367.jsx)(Chunk481060.j7V, {
+      }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: Chunk392711,
         onChange: e => this.handleCheckboxChange("mute_scheduled_events", e, R.UE.mutedEvents(e)),
         children: Chunk388032.intl.string(Chunk388032.t.ONG3Y2)
-      }), (0, Chunk255367.jsx)(Chunk481060.j7V, {
-        value: !Chunk73800 && require,
-        disabled: Chunk73800,
+      }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
+        value: !Chunk647438 && require,
+        disabled: Chunk647438,
         onChange: e => this.handleCheckboxChange("mobile_push", e, R.UE.mobilePush(e)),
         children: Chunk388032.intl.string(Chunk388032.t["h1DL6+"])
       })]
@@ -305,11 +305,11 @@ class B extends Chunk73800.PureComponent {
       guildId: t,
       onClose: n
     } = this.props;
-    if (module) return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-      children: [(0, Chunk255367.jsx)(Chunk610617.Z, {
+    if (module) return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      children: [(0, Chunk951288.jsx)(Chunk610617.Z, {
         guildId: exports,
         onClose: require
-      }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
+      }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
         className: Chunk848832.customNotificationSoundsDivider
       })]
     })
@@ -332,14 +332,14 @@ class B extends Chunk73800.PureComponent {
         label: (0, p.F6)(t, I.default, y.Z)
       }
     }).value();
-    return (0, Chunk255367.jsxs)(Chunk481060.xJW, {
+    return (0, Chunk951288.jsxs)(Chunk481060.xJW, {
       title: Chunk388032.intl.string(Chunk388032.t.O4TIvr),
       className: Chunk848832.largeSpacing,
-      children: [(0, Chunk255367.jsx)(Chunk481060.R94, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DESCRIPTION,
         className: Chunk848832.smallSpacing,
         children: Chunk388032.intl.string(Chunk388032.t["2Y9ZfH"])
-      }), (0, Chunk255367.jsx)(Chunk481060.VcW, {
+      }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
         value: Chunk981631.lds,
         placeholder: Chunk388032.intl.string(Chunk388032.t["Z+oF8v"]),
         renderOptionLabel: this.renderOptionLabel,
@@ -377,36 +377,36 @@ class B extends Chunk73800.PureComponent {
         checkboxColor: r
       }, o.id)
     }).filter(Chunk823379.lm);
-    return (0 === Chunk913527.size || 0 === o.length) && o.push((0, Chunk255367.jsx)("div", {
+    return (0 === Chunk913527.size || 0 === o.length) && o.push((0, Chunk951288.jsx)("div", {
       className: Chunk848832.overridePlaceholder,
-      children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         className: Chunk848832.overrideHeader,
         variant: "text-sm/semibold",
         children: Chunk388032.intl.string(Chunk388032.t["2Y9ZfH"])
       })
-    }, "placeholder")), (0, Chunk255367.jsxs)("div", {
+    }, "placeholder")), (0, Chunk951288.jsxs)("div", {
       className: Chunk848832.overrideList,
-      children: [(0, Chunk255367.jsxs)(Chunk600164.Z, {
-        children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "eyebrow",
           className: Chunk848832.headerName,
           children: Chunk388032.intl.string(Chunk388032.t.uShwWl)
-        }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+        }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "eyebrow",
           className: Chunk848832.headerOption,
           children: Chunk388032.intl.string(Chunk388032.t.e29Z19)
-        }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+        }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "eyebrow",
           className: Chunk848832.headerOption,
           children: Chunk388032.intl.string(Chunk388032.t.DD6gNT)
-        }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+        }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "eyebrow",
           className: Chunk848832.headerOption,
           children: Chunk388032.intl.string(Chunk388032.t.CtVGyc)
-        }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+        }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "eyebrow",
           className: Chunk848832.headerOption,
-          children: (0, Chunk255367.jsx)(Chunk481060.ua7, {
+          children: (0, Chunk951288.jsx)(Chunk481060.ua7, {
             text: Chunk388032.intl.string(Chunk388032.t["8wbTQ0"]),
             position: "bottom",
             children: e => (0, i.jsx)("span", V(X({}, e), {
@@ -418,12 +418,12 @@ class B extends Chunk73800.PureComponent {
     })
   }
   render() {
-    return (0, Chunk255367.jsxs)(Chunk481060.Y0X, {
+    return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       "aria-label": Chunk388032.intl.string(Chunk388032.t.h850Sk),
       size: Chunk481060.CgR.MEDIUM,
       transitionState: this.props.transitionState,
       parentComponent: "NotificationSettings",
-      children: [this.renderHeader(), (0, Chunk255367.jsxs)(Chunk481060.hzk, {
+      children: [this.renderHeader(), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
         scrollerRef: this.setScrollerRef,
         children: [this.renderMute(), this.renderServerSettings(), this.renderCustomNotificationSoundOptions(), this.renderNotificationOptions(), this.renderOverrideSelect(), this.renderChannelNotifications()]
       }), this.renderFooter()]

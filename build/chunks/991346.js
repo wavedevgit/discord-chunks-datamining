@@ -7,7 +7,7 @@ require.d(exports, {
   ji: () => W,
   q8: () => H
 }), require("./836215.js"), require("./472816.js"), require("./794429.js"), require("./388685.js"), require("./467055.js"), require("./539854.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk493544 = require("./493544.jsx"),
@@ -142,7 +142,7 @@ function U() {
       inputMode: Chunk131951.Z.getMode(),
       isInputProfileCustom: Chunk131951.Z.isInputProfileCustom()
     }));
-  return Chunk73800.useMemo(() => (0, Chunk620163.i)({
+  return Chunk647438.useMemo(() => (0, Chunk620163.i)({
     unseenGiftCount: Chunk906467,
     showPrepaidPaymentPastDueWarning: Chunk413182,
     impressionSource: Chunk839469,
@@ -283,11 +283,11 @@ function F() {
     } = Chunk413182.b.useExperiment({
       location: "settings"
     }),
-    r = Chunk73800.useMemo(() => M({
+    r = Chunk647438.useMemo(() => M({
       shouldMergeGameSettings: exports,
       showRedesignedThirdPartyAccessSettings: require
     }), [exports, require]);
-  return Chunk73800.useMemo(() => G(Chunk442837, module), [Chunk442837, module])
+  return Chunk647438.useMemo(() => G(Chunk442837, module), [Chunk442837, module])
 }
 
 function H(e) {

@@ -6,8 +6,8 @@ require.d(exports, {
   bL: () => C,
   kA: () => N
 }), require("./539854.js"), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
@@ -106,7 +106,7 @@ let C = e => {
     })
   },
   P = () => {
-    let e = (0, Chunk255367.jsx)(Chunk481060.ua7, {
+    let e = (0, Chunk951288.jsx)(Chunk481060.ua7, {
       text: Chunk388032.intl.string(Chunk388032.t.q3PkLy),
       children: e => (0, r.jsx)(d.d3s, y({
         size: "xs",
@@ -114,12 +114,12 @@ let C = e => {
         className: O.amountDisclaimer
       }, e))
     });
-    return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
+    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [Chunk388032.intl.string(Chunk388032.t["/MWnxs"]), " ", module]
     })
   },
   w = () => {
-    let e = (0, Chunk255367.jsx)(Chunk481060.ua7, {
+    let e = (0, Chunk951288.jsx)(Chunk481060.ua7, {
       text: Chunk388032.intl.string(Chunk388032.t.cIGvZG),
       children: e => (0, r.jsx)(d.d3s, y({
         size: "xs",
@@ -127,7 +127,7 @@ let C = e => {
         className: O.statusDisclaimer
       }, e))
     });
-    return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
+    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [Chunk388032.intl.string(Chunk388032.t.oypxx8), " ", module]
     })
   },
@@ -171,7 +171,7 @@ let C = e => {
   }, {
     key: "amount",
     cellClassName: a()(Chunk698128.amountColumn, Chunk698128.cellAlignRight),
-    renderHeader: () => (0, Chunk255367.jsx)(P, {}),
+    renderHeader: () => (0, Chunk951288.jsx)(P, {}),
     render(e, t) {
       let {
         expandedRows: n
@@ -190,7 +190,7 @@ let C = e => {
   }, {
     key: "status",
     cellClassName: a()(Chunk698128.statusColumn, Chunk698128.cellAlignRight),
-    renderHeader: () => (0, Chunk255367.jsx)(w, {}),
+    renderHeader: () => (0, Chunk951288.jsx)(w, {}),
     render(e) {
       let {
         ppgStatus: t,

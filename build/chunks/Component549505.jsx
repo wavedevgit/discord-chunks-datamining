@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => _
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk688465 = require("./688465.jsx"),
   Chunk547972 = require("./547972.js"),
@@ -77,27 +77,27 @@ function _(e) {
 }
 let h = () => {
   let e = [{
-    icon: (0, Chunk255367.jsx)(Chunk481060.iFz, {
+    icon: (0, Chunk951288.jsx)(Chunk481060.iFz, {
       className: Chunk688364.icon
     }),
     text: Chunk388032.intl.string(Chunk388032.t.vXBrdn)
   }, {
-    icon: (0, Chunk255367.jsx)(Chunk481060.iWm, {
+    icon: (0, Chunk951288.jsx)(Chunk481060.iWm, {
       className: Chunk688364.icon
     }),
     text: Chunk388032.intl.string(Chunk388032.t.aExjOz)
   }, {
-    icon: (0, Chunk255367.jsx)(Chunk481060.kBi, {
+    icon: (0, Chunk951288.jsx)(Chunk481060.kBi, {
       className: Chunk688364.icon
     }),
     text: Chunk388032.intl.string(Chunk388032.t["i7/QHB"])
   }, {
-    icon: (0, Chunk255367.jsx)(Chunk481060.lMe, {
+    icon: (0, Chunk951288.jsx)(Chunk481060.lMe, {
       className: Chunk688364.icon
     }),
     text: Chunk388032.intl.string(Chunk388032.t.ZmBfKC)
   }];
-  return (0, Chunk255367.jsx)("div", {
+  return (0, Chunk951288.jsx)("div", {
     className: Chunk688364.notes,
     children: module.map((e, t) => {
       let {

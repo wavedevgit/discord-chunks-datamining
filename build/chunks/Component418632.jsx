@@ -4,8 +4,8 @@ require.d(exports, {
   Z: () => _,
   s: () => b
 }), require("./388685.js");
-var i, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var i, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -74,14 +74,14 @@ function b(e) {
     }, e)))
   })
 }
-class x extends(i = Chunk73800.Component) {
+class x extends(i = Chunk647438.Component) {
   render() {
     let {
       color: e,
       look: t,
       size: n
     } = this.props;
-    return (0, Chunk255367.jsx)(Chunk755721.zx, {
+    return (0, Chunk951288.jsx)(Chunk755721.zx, {
       look: exports,
       size: require,
       color: module,

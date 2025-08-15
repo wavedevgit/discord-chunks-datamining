@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => C
 }), require("./388685.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk86357 = require("./86357.jsx"),
@@ -26,7 +26,7 @@ function b(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class E extends(r = Chunk73800.PureComponent) {
+class E extends(r = Chunk647438.PureComponent) {
   render() {
     let {
       sku: e,
@@ -38,11 +38,11 @@ class E extends(r = Chunk73800.PureComponent) {
       renderCustomMedia: o,
       isEmbed: s
     } = this.props, c = Chunk86357 ? Chunk568836.$G : Chunk345898.Z;
-    return (0, Chunk255367.jsx)(Chunk54936, {
+    return (0, Chunk951288.jsx)(Chunk54936, {
       className: r,
       renderMedia: null != o ? o : this.renderMedia,
       renderTitle: null != Chunk120356 ? Chunk120356 : () => module.name,
-      renderTagline: null != Chunk73800 ? Chunk73800 : () => exports.tagline,
+      renderTagline: null != Chunk647438 ? Chunk647438 : () => exports.tagline,
       renderActions: this.renderActions,
       isHorizontal: require
     })

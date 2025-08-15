@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => d
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk847033 = require("./847033.jsx"),
@@ -18,18 +18,18 @@ function d() {
     isPhantomPreview: t,
     handlePreviewDismiss: r
   } = (0, Chunk847033.m)();
-  return exports ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-    children: [(0, Chunk255367.jsxs)("div", {
+  return exports ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk790632.previewNotice,
-      children: [(0, Chunk255367.jsx)(Chunk481060.kZF, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.kZF, {
         size: "xs",
         color: "currentColor"
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         className: Chunk790632.previewNoticeText,
         children: module === Chunk544978.y.GUILD_PRODUCTS_PREVIEW ? Chunk388032.intl.string(Chunk388032.t.F4Z0nZ) : Chunk388032.intl.string(Chunk388032.t.pzTFpK)
       })]
-    }), (0, Chunk255367.jsx)(Chunk159691.zx, {
+    }), (0, Chunk951288.jsx)(Chunk159691.zx, {
       text: module === Chunk544978.y.GUILD_PRODUCTS_PREVIEW ? Chunk388032.intl.string(Chunk388032.t.YF35pa) : Chunk388032.intl.string(Chunk388032.t.r30bk5),
       size: "sm",
       variant: "secondary",

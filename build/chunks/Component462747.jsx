@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => U
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   d = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -76,8 +76,8 @@ function T(e) {
 }
 
 function y() {
-  return (0, Chunk255367.jsx)(T, {
-    children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
+  return (0, Chunk951288.jsx)(T, {
+    children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
       color: "header-primary",
       variant: "heading-xl/semibold",
       className: Chunk200608.title,
@@ -87,8 +87,8 @@ function y() {
 }
 
 function x() {
-  return (0, Chunk255367.jsx)(T, {
-    children: (0, Chunk255367.jsx)(Chunk481060.X6q, {
+  return (0, Chunk951288.jsx)(T, {
+    children: (0, Chunk951288.jsx)(Chunk481060.X6q, {
       color: "header-secondary",
       variant: "heading-md/semibold",
       className: Chunk200608.errorTitle,

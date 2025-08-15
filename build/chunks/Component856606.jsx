@@ -5,8 +5,8 @@ require.d(exports, {
   Z: () => et,
   n: () => J
 }), require("./539854.js"), require("./415506.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk149765 = require("./149765.js"),
@@ -274,7 +274,7 @@ function K(e) {
 }
 
 function ee() {
-  let e = Chunk73800.useRef(null),
+  let e = Chunk647438.useRef(null),
     {
       channel: t,
       permissionOverwrites: r,
@@ -295,7 +295,7 @@ function ee() {
     N = (0, Chunk188857.Z)(Chunk144991, Chunk392711),
     S = (0, Chunk410030.ZP)(),
     O = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.roleStyle),
-    w = Chunk73800.useCallback((e, l) => {
+    w = Chunk647438.useCallback((e, l) => {
       if (null == t) return null;
       (0, m.jW)(e, async () => {
         let {
@@ -391,16 +391,16 @@ function ee() {
         })
       }, "".concat(a, "-").concat(e.id))
     }).value();
-  return (0, Chunk255367.jsx)(Chunk325476.ZP.Sidebar, {
+  return (0, Chunk951288.jsx)(Chunk325476.ZP.Sidebar, {
     className: Chunk198750.layoutStyle,
     scrollable: true,
-    children: (0, Chunk255367.jsxs)(Chunk481060.njP, {
+    children: (0, Chunk951288.jsxs)(Chunk481060.njP, {
       onItemSelect: Chunk741361.Aj,
       selectedItem: Chunk149765,
       orientation: "vertical",
       children: [(() => {
         let t = (0, Chunk780384.wj)(Chunk190263) ? require("./521715.js") : require("./299603.js");
-        return (0, Chunk255367.jsx)(Chunk481060.yRy, {
+        return (0, Chunk951288.jsx)(Chunk481060.yRy, {
           targetElementRef: module,
           renderPopout: Chunk388610,
           position: "bottom",
@@ -421,15 +421,15 @@ function ee() {
             })
           }))
         })
-      })(), Chunk496675, Chunk594174, (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
-        children: [(0, Chunk255367.jsx)(Chunk481060.njP.Separator, {
+      })(), Chunk496675, Chunk594174, (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.njP.Separator, {
           style: {
             marginTop: 20,
             marginBottom: 14
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.R94, {
+        }), (0, Chunk951288.jsx)(Chunk481060.R94, {
           type: Chunk481060.geA.DESCRIPTION,
-          children: (0, Chunk255367.jsx)(Chunk481060.eee, {
+          children: (0, Chunk951288.jsx)(Chunk481060.eee, {
             href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PERMISSIONS_TUTORIAL),
             target: "_blank",
             children: Chunk388032.intl.string(Chunk388032.t["pfoA8/"])
@@ -448,10 +448,10 @@ function et() {
   } = (0, Chunk442837.cj)([Chunk277053.Z], () => Chunk277053.Z);
   if (null == (0, Chunk442837.e7)([Chunk430824.Z], () => null != module ? Chunk430824.Z.getGuild(module.getGuildId()) : null) || null == module || null == exports || null == require) return null;
   let l = exports[require];
-  return (0, Chunk255367.jsxs)(Chunk325476.ZP, {
+  return (0, Chunk951288.jsxs)(Chunk325476.ZP, {
     className: Chunk198750.container,
-    children: [(0, Chunk255367.jsx)(ee, {}), (0, Chunk255367.jsx)(q, {
-      overwrite: Chunk73800
+    children: [(0, Chunk951288.jsx)(ee, {}), (0, Chunk951288.jsx)(q, {
+      overwrite: Chunk647438
     })]
   })
 }

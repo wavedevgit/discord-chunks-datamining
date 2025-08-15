@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => _
 }), require("./388685.js"), require("./457542.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk809206 = require("./809206.js"),
   Chunk153867 = require("./153867.js"),
@@ -31,7 +31,7 @@ async function j() {
   try {
     if (exports) {
       let t, n = [...module, null],
-        r = f(Chunk73800);
+        r = f(Chunk647438);
       if (null != Chunk442837) {
         var a;
         let e = Chunk469115.qt[Chunk442837];
@@ -75,10 +75,10 @@ function _() {
   let [e, t] = (0, Chunk442837.Wu)([Chunk1870.Z], () => {
     let e = Chunk1870.Z.purchases;
     return [(0, Chunk884697.Ad)(module), (0, Chunk884697.jT)(module)]
-  }), a = Chunk73800.useCallback(() => {
+  }), a = Chunk647438.useCallback(() => {
     j(), g(module, exports)
   }, [module, exports]);
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     let e = setInterval(() => {
       require()
     }, 5e3);

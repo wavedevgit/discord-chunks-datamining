@@ -5,8 +5,8 @@ require.d(exports, {
   O: () => ec,
   Z: () => ef
 }), require("./388685.js"), require("./856094.js"), require("./472816.js"), require("./794429.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
@@ -213,7 +213,7 @@ function eu(e) {
 }
 
 function ed() {
-  return (0, Chunk255367.jsx)(Chunk788911.Z, {
+  return (0, Chunk951288.jsx)(Chunk788911.Z, {
     message: Chunk388032.intl.string(Chunk388032.t.bgDdND)
   })
 }
@@ -365,7 +365,7 @@ function ef(e) {
     }) : eF && t === eV ? (0, r.jsx)("div", {
       className: o()(q.smallPaddingFooter, q.nitroLocked)
     }) : null
-  }, [eV, eF, eB.length]), e4 = i.useCallback(e => ej((0, G.cK)(e, Array.from(ex.values()).flat(), eS, a, eb)), [a, eS, ex, eb]), e5 = i.useCallback(e => {
+  }, [eV, eF, eB.length]), e4 = i.useCallback(e => ej((0, G.cK)(e, Array.from(ex.values()).flat(), eS, a, eb)), [a, eS, ex, eb]), e8 = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -387,14 +387,14 @@ function ef(e) {
   }) : (0, r.jsx)(c.P3F, {
     tabIndex: 0,
     className: q.settingsClickArea,
-    onClick: e5,
+    onClick: e8,
     "aria-label": z.intl.string(z.t.kbFsAA),
     children: (0, r.jsx)(c.gj8, {
       size: "md",
       color: "currentColor",
       className: q.settingsIcon
     })
-  }), [em, e5]), e8 = i.useCallback(e => (0, r.jsx)(V.Z, {
+  }), [em, e8]), e5 = i.useCallback(e => (0, r.jsx)(V.Z, {
     soundboardListRef: e,
     categories: eL,
     shouldUpsellLockedCategories: eF,
@@ -467,7 +467,7 @@ function ef(e) {
       renderRow: eX,
       renderSectionHeader: e2,
       renderSectionFooter: e3,
-      renderCategoryList: e8,
+      renderCategoryList: e5,
       renderHeaderAccessories: e6,
       rowHeight: en,
       sectionHeaderHeight: e0,

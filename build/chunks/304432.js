@@ -4,7 +4,7 @@ require.d(exports, {
   F: () => u,
   W: () => c
 }), require("./642613.js"), require("./388685.js");
-var i, Chunk73800 = require("./73800.js"),
+var i, Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk695346 = require("./695346.js"),
   Chunk430824 = require("./430824.js"),
@@ -26,14 +26,14 @@ let d = {
 };
 
 function u() {
-  let [e, t] = (0, Chunk73800.useState)(""), [n, i] = (0, Chunk73800.useState)("server-order"), c = (0, Chunk442837.e7)([Chunk771845.ZP], () => Chunk771845.ZP.getFlattenedGuildIds()), u = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuilds()), m = c.map(e => u[e]), p = Chunk695346.CW.useSetting(), [g, h] = (0, Chunk73800.useState)(p), f = async e => {
+  let [e, t] = (0, Chunk647438.useState)(""), [n, i] = (0, Chunk647438.useState)("server-order"), c = (0, Chunk442837.e7)([Chunk771845.ZP], () => Chunk771845.ZP.getFlattenedGuildIds()), u = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuilds()), m = c.map(e => u[e]), p = Chunk695346.CW.useSetting(), [g, h] = (0, Chunk647438.useState)(p), f = async e => {
     h(e);
     try {
       await a.CW.updateSetting(e)
     } catch (e) {
       h(p)
     }
-  }, b = 0 !== g.length, [x, _] = (0, Chunk73800.useState)(() => d[require](m, p)), j = x.map(e => u[e.id]).filter(Boolean);
+  }, b = 0 !== g.length, [x, _] = (0, Chunk647438.useState)(() => d[require](m, p)), j = x.map(e => u[e.id]).filter(Boolean);
   return {
     guilds: "" === module ? j : j.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),
     sortOrder: require,

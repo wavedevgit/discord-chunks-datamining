@@ -4,8 +4,8 @@
 require.d(exports, {
   q: () => _
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk180650 = require("./180650.js"),
@@ -25,35 +25,35 @@ let _ = e => {
     category: O,
     subblock: C,
     badgeText: E,
-    handleTransition: S
+    handleTransition: y
   } = e;
   null != C && (v = null == (t = p.Z.getCategoryByStoreListingId(null == C ? true : C.categoryStoreListingId)) ? true : t.skuId);
-  let y = null != (r = null != v ? v : null == O ? true : O.skuId) ? r : "",
+  let S = null != (r = null != v ? v : null == O ? true : O.skuId) ? r : "",
     {
       handleCardVisibilityChange: x
-    } = (0, g.E)(y, "home", "marketing featured block"),
+    } = (0, g.E)(S, "home", "marketing featured block"),
     {
       featuredBlockBanner: j
     } = (0, f.YG)(O, C),
-    T = l.useRef(null),
-    P = y === o.T.NAMEPLATES_V3,
-    L = P ? "NAMEPLATES VOL.3" : null,
+    P = l.useRef(null),
+    T = S === o.T.NAMEPLATES_V3,
+    L = T ? "NAMEPLATES VOL.3" : null,
     k = null == C ? true : C.bodyText,
     I = (0, d.sp)();
   return (0, n.jsx)(s.$, {
-    innerRef: T,
+    innerRef: P,
     onChange: x,
     threshold: 0,
     children: (0, n.jsxs)(c.P3F, {
-      className: m.featuredBlock,
-      innerRef: T,
+      className: h.featuredBlock,
+      innerRef: P,
       style: {
         backgroundImage: "url(".concat(j, ")")
       },
       onClick: () => {
-        S("shop marketing tile", y), u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        y("shop marketing tile", S), u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == I ? true : I.sessionId,
-          sku_id: y,
+          sku_id: S,
           page_type: "home",
           page_section: null == I ? true : I.pageSection,
           page_category: null == I ? true : I.pageCategory,
@@ -65,13 +65,13 @@ let _ = e => {
       children: [null != E && (0, n.jsx)(c.IGR, {
         disableColor: true,
         text: E,
-        className: m.featuredBlockBadge
+        className: h.featuredBlockBadge
       }), (0, n.jsxs)("div", {
-        className: m.featuredBlockTextContainer,
+        className: h.featuredBlockTextContainer,
         children: [null != L && (0, n.jsx)(c.X6q, {
           lineClamp: 2,
-          className: i()(m.featuredBlockTitleText, {
-            [m.featuredBlockTitleTextNameplate]: P
+          className: i()(h.featuredBlockTitleText, {
+            [h.featuredBlockTitleTextNameplate]: T
           }),
           style: {
             color: null != (a = null == C ? true : C.bannerTextColor) ? a : "white"
@@ -80,7 +80,7 @@ let _ = e => {
           children: L
         }), null != k && (0, n.jsx)(c.X6q, {
           lineClamp: null != L ? 2 : 4,
-          className: m.featuredBlockBodyText,
+          className: h.featuredBlockBodyText,
           style: {
             color: null != (_ = null == C ? true : C.bannerTextColor) ? _ : "white"
           },
@@ -88,14 +88,14 @@ let _ = e => {
           children: k
         })]
       }), (0, n.jsx)("div", {
-        className: m.featuredBlockButtonContainer,
+        className: h.featuredBlockButtonContainer,
         children: (0, n.jsx)(c.zxk, {
           variant: "overlay-primary",
-          text: h.intl.string(h.t.jVcuVV),
+          text: m.intl.string(m.t.jVcuVV),
           onClick: e => {
-            S("shop marketing take me there button", y), e.stopPropagation(), u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            y("shop marketing take me there button", S), e.stopPropagation(), u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == I ? true : I.sessionId,
-              sku_id: y,
+              sku_id: S,
               page_type: "home",
               page_section: null == I ? true : I.pageSection,
               page_category: null == I ? true : I.pageCategory,

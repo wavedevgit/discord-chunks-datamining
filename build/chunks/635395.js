@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => y
 }), require("./388685.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk846027 = require("./846027.js"),
   Chunk230711 = require("./230711.js"),
@@ -19,7 +19,7 @@ var Chunk73800 = require("./73800.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js");
 let _ = (0, Chunk358085.isMac)() ? null : "DEFAULT";
-class O extends Chunk73800.PureComponent {
+class O extends Chunk647438.PureComponent {
   componentDidMount() {
     Chunk998502.ZP.setSystemTrayIcon(this.getIcon())
   }
@@ -68,7 +68,7 @@ Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("SYSTEM_TRAY_TOGGLE_MUTE", 
     speaking: Chunk606304.Z.isCurrentUserSpeaking(),
     muted: Chunk131951.Z.isSelfMute() || Chunk131951.Z.isSelfMutedTemporarily(),
     deafened: Chunk131951.Z.isSelfDeaf(),
-    unread: Chunk73800
+    unread: Chunk647438
   }
 })(O));
 let y = E

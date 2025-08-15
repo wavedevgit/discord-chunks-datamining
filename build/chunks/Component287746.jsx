@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => ts
 }), require("./388685.js"), require("./35282.js"), require("./781311.js"), require("./997841.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -180,11 +180,11 @@ function ti(e) {
     role: "complementary"
   })) : (0, r.jsx)("main", te({}, n))
 }
-let tl = Chunk73800.forwardRef((e, t) => (0, r.jsx)(ta, tt(te({}, e), {
+let tl = Chunk647438.forwardRef((e, t) => (0, r.jsx)(ta, tt(te({}, e), {
   ref: t
 })));
 tl.displayName = "ChannelTextAreaForm";
-class ta extends Chunk73800.PureComponent {
+class ta extends Chunk647438.PureComponent {
   focusEditor() {
     var e;
     null == (e = this.editorRef) || module.focus()
@@ -206,13 +206,13 @@ class ta extends Chunk73800.PureComponent {
       let e = eN.Z.getDraft(n.id, eN.d.ChannelMessage);
       e !== r && this.setState((0, B.eK)(e))
     }
-    t.textValue.length < e7.J6R && r.length >= e7.J6R && eU.default.track(e7.rMx.MESSAGE_LENGTH_LIMIT_REACHED, {})
+    t.textValue.length < e3.J6R && r.length >= e3.J6R && eU.default.track(e3.rMx.MESSAGE_LENGTH_LIMIT_REACHED, {})
   }
   handleEditLastMessage(e) {
     let {
       channel: t
     } = this.props;
-    f.Z.startEditMessageRecord(t.id, e), j.ZP.trackWithMetadata(e7.rMx.MESSAGE_EDIT_UP_ARROW)
+    f.Z.startEditMessageRecord(t.id, e), j.ZP.trackWithMetadata(e3.rMx.MESSAGE_EDIT_UP_ARROW)
   }
   handleRecallLastCommand(e) {
     if (null == e.interactionData) return;
@@ -268,7 +268,7 @@ class ta extends Chunk73800.PureComponent {
       announcementComposerEnabled: C
     } = this.props, {
       contentWarningProps: x
-    } = this.state, v = module.type === Chunk981631.d4z.GUILD_ANNOUNCEMENT && Chunk410030 ? (0, Chunk255367.jsx)(Chunk190210.Z, {
+    } = this.state, v = module.type === Chunk981631.d4z.GUILD_ANNOUNCEMENT && Chunk410030 ? (0, Chunk951288.jsx)(Chunk190210.Z, {
       textValue: this.state.textValue,
       richValue: this.state.richValue,
       focused: exports,
@@ -281,7 +281,7 @@ class ta extends Chunk73800.PureComponent {
       onChange: this.handleTextareaChange,
       onSubmit: this.handleSendMessage,
       onResize: Chunk120356,
-      onFocus: Chunk73800,
+      onFocus: Chunk647438,
       onBlur: require,
       onKeyDown: this.handleKeyDown,
       renderAttachButton: this.renderAttachButton,
@@ -290,7 +290,7 @@ class ta extends Chunk73800.PureComponent {
       promptToUpload: Chunk127654.d,
       highlighted: a,
       setEditorRef: e => this.editorRef = e
-    }) : (0, Chunk255367.jsx)(Chunk893718.ZP, {
+    }) : (0, Chunk951288.jsx)(Chunk893718.ZP, {
       ref: this.props.refInstance,
       textValue: this.state.textValue,
       richValue: this.state.richValue,
@@ -304,7 +304,7 @@ class ta extends Chunk73800.PureComponent {
       onChange: this.handleTextareaChange,
       onSubmit: this.handleSendMessage,
       onResize: Chunk120356,
-      onFocus: Chunk73800,
+      onFocus: Chunk647438,
       onBlur: require,
       onKeyDown: this.handleKeyDown,
       renderAttachButton: this.renderAttachButton,
@@ -317,7 +317,7 @@ class ta extends Chunk73800.PureComponent {
       onCommandSentinelTyped: Chunk144144,
       pendingScheduledMessage: Chunk410575
     });
-    return (0, Chunk255367.jsx)(Chunk481060.yRy, {
+    return (0, Chunk951288.jsx)(Chunk481060.yRy, {
       targetElementRef: this.props.refInstance,
       position: "top",
       onRequestClose: () => {
@@ -335,7 +335,7 @@ class ta extends Chunk73800.PureComponent {
           onClose: t
         }, x))
       },
-      children: () => Chunk904245 ? (0, Chunk255367.jsx)(Chunk481060.UkV, {
+      children: () => Chunk904245 ? (0, Chunk951288.jsx)(Chunk481060.UkV, {
         isShaking: Chunk430742 > 0,
         intensity: Chunk430742,
         className: Chunk97009.shaker,
@@ -368,12 +368,12 @@ class ta extends Chunk73800.PureComponent {
         channel: r
       } = this.props, i = e.shiftKey || e.altKey || e.ctrlKey || e.metaKey, l = 0 !== this.state.textValue.length;
       switch (e.which) {
-        case e7.yXg.DELETE:
-        case e7.yXg.BACKSPACE:
+        case e3.yXg.DELETE:
+        case e3.yXg.BACKSPACE:
           return void this.handleIncrementCombo("", 1);
-        case e7.yXg.ARROW_UP:
+        case e3.yXg.ARROW_UP:
           if (i || l) return;
-          if (e.preventDefault(), t) eD.Z.getUploadCount(r.id, eN.d.ChannelMessage) > 0 ? eH.S.dispatchToLastSubscribed(e7.CkL.FOCUS_ATTACHMENT_AREA) : eH.S.dispatchToLastSubscribed(e7.CkL.FOCUS_MESSAGES, {
+          if (e.preventDefault(), t) eD.Z.getUploadCount(r.id, eN.d.ChannelMessage) > 0 ? eH.S.dispatchToLastSubscribed(e3.CkL.FOCUS_ATTACHMENT_AREA) : eH.S.dispatchToLastSubscribed(e3.CkL.FOCUS_MESSAGES, {
             atEnd: true
           });
           else {
@@ -383,7 +383,7 @@ class ta extends Chunk73800.PureComponent {
             null != t && null != n ? eV.default.compare(n.id, t.id) > 0 ? this.handleEditLastMessage(n) : this.handleRecallLastCommand(t) : null != t ? this.handleRecallLastCommand(t) : null != n && this.handleEditLastMessage(n)
           }
           return;
-        case e7.yXg.ESCAPE:
+        case e3.yXg.ESCAPE:
           if (i || e.target !== e.currentTarget) return;
           if (e.preventDefault(), t) return void(0, x.rf)();
           if (eD.Z.getUploadCount(r.id, eN.d.ChannelMessage) > 0) return void g.Z.clearAll(r.id, eN.d.ChannelMessage)
@@ -439,7 +439,7 @@ class ta extends Chunk73800.PureComponent {
         chatInputType: m
       } = this.props, b = false;
       if (null != l) {
-        if (l.inputType === M.iw.BUILT_IN_INTEGRATION) return eH.S.dispatch(e7.CkL.SHAKE_APP, {
+        if (l.inputType === M.iw.BUILT_IN_INTEGRATION) return eH.S.dispatch(e3.CkL.SHAKE_APP, {
           duration: 200,
           intensity: 2
         }), Promise.resolve({
@@ -512,10 +512,10 @@ class ta extends Chunk73800.PureComponent {
           failureReason: C
         } = e;
         if (!_)
-          if (C === e7.zYc.SLOWMODE_COOLDOWN) return eH.S.dispatch(e7.CkL.SHAKE_APP, {
+          if (C === e3.zYc.SLOWMODE_COOLDOWN) return eH.S.dispatch(e3.CkL.SHAKE_APP, {
             duration: 200,
             intensity: 2
-          }), eH.S.dispatch(e7.CkL.EMPHASIZE_SLOWMODE_COOLDOWN), {
+          }), eH.S.dispatch(e3.CkL.EMPHASIZE_SLOWMODE_COOLDOWN), {
             shouldClear: false,
             shouldRefocus: true
           };
@@ -541,9 +541,9 @@ class ta extends Chunk73800.PureComponent {
           confettiPotionEmoji: i,
           scheduledTimestamp: null == (a = this.props.pendingScheduledMessage) ? true : a.scheduledTimestamp
         })), {
-          location: e8.dy.CHAT_INPUT
+          location: e4.dy.CHAT_INPUT
         });
-        if (null != c && (j.announcementSendOptions = c), null != s && (j.flags = (0, eG.pj)(null != (y = j.flags) ? y : 0, e7.iLy.IS_COMPONENTS_V2)), o) return f.Z.sendMessage(d.id, v, true, j), (0, e_.A6)(d.id), {
+        if (null != c && (j.announcementSendOptions = c), null != s && (j.flags = (0, eG.pj)(null != (y = j.flags) ? y : 0, e3.iLy.IS_COMPONENTS_V2)), o) return f.Z.sendMessage(d.id, v, true, j), (0, e_.A6)(d.id), {
           shouldClear: false,
           shouldRefocus: true
         };
@@ -612,7 +612,7 @@ class ta extends Chunk73800.PureComponent {
     }))
   }
 }
-class to extends Chunk73800.PureComponent {
+class to extends Chunk647438.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let {
       channel: n
@@ -620,7 +620,7 @@ class to extends Chunk73800.PureComponent {
       currentChannelId: r
     } = t;
     return n.id !== r ? {
-      textAreaFocused: null != n && n.type !== e7.d4z.GUILD_ANNOUNCEMENT && !c.tq && eM.Z.can(e7.Plq.SEND_MESSAGES, n),
+      textAreaFocused: null != n && n.type !== e3.d4z.GUILD_ANNOUNCEMENT && !c.tq && eM.Z.can(e3.Plq.SEND_MESSAGES, n),
       currentChannelId: n.id
     } : null
   }
@@ -670,24 +670,24 @@ class to extends Chunk73800.PureComponent {
         textAreaHighlighted: L
       } = this.state,
       B = Chunk442837 === Chunk541716.Ie.SIDEBAR;
-    n = Chunk752305 && Chunk73800.type === Chunk981631.d4z.GUILD_VOICE ? Chunk388032.t.pnnyFR : Chunk752305 && Chunk73800.type === Chunk981631.d4z.GUILD_STAGE_VOICE ? Chunk388032.t.YInSkp : Chunk106351.T.THREADS.has(Chunk73800.type) ? Chunk388032.t["OkzL+f"] : Chunk388032.t.UbNmGR;
-    let F = (0, Chunk255367.jsx)("div", {
+    n = Chunk752305 && Chunk647438.type === Chunk981631.d4z.GUILD_VOICE ? Chunk388032.t.pnnyFR : Chunk752305 && Chunk647438.type === Chunk981631.d4z.GUILD_STAGE_VOICE ? Chunk388032.t.YInSkp : Chunk106351.T.THREADS.has(Chunk647438.type) ? Chunk388032.t["OkzL+f"] : Chunk388032.t.UbNmGR;
+    let F = (0, Chunk951288.jsx)("div", {
         className: Chunk97009.channelBottomBarArea,
-        children: (0, Chunk255367.jsx)(Chunk685722.Z, {})
+        children: (0, Chunk951288.jsx)(Chunk685722.Z, {})
       }),
-      H = (0, Chunk255367.jsxs)("div", {
+      H = (0, Chunk951288.jsxs)("div", {
         className: Chunk97009.channelBottomBarArea,
-        children: [(0, Chunk255367.jsx)(Chunk155409.Z, {
+        children: [(0, Chunk951288.jsx)(Chunk155409.Z, {
           childRef: this.containerDomRef,
           tutorialId: "writing-messages",
           position: "left",
           offsetX: 75,
-          children: (0, Chunk255367.jsx)(tl, {
+          children: (0, Chunk951288.jsx)(tl, {
             ref: this.refToChannelTextAreaFormComponent,
             refInstance: this.containerDomRef,
             focused: Chunk667204,
             highlighted: Chunk104919,
-            channel: Chunk73800,
+            channel: Chunk647438,
             guild: Chunk120356,
             keyboardModeEnabled: Chunk512722,
             onFocus: this.handleInputFocus,
@@ -724,25 +724,25 @@ class to extends Chunk73800.PureComponent {
         location: "ChannelChat"
       }).enabled,
       X = Chunk338390 && null != Chunk541099 && null != Chunk827498 && null != Chunk827498.guild_id;
-    return (0, Chunk255367.jsx)(Chunk410575.Z, {
+    return (0, Chunk951288.jsx)(Chunk410575.Z, {
       page: (0, Chunk934415.mE)(this.props.channel),
-      children: (0, Chunk255367.jsx)(Chunk549006.sW, {
-        children: (0, Chunk255367.jsx)(Chunk146128.BV, {
-          children: (0, Chunk255367.jsxs)(Chunk459273.I3, {
+      children: (0, Chunk951288.jsx)(Chunk549006.sW, {
+        children: (0, Chunk951288.jsx)(Chunk146128.BV, {
+          children: (0, Chunk951288.jsxs)(Chunk459273.I3, {
             ref: this.dispatchGroupRef,
-            children: [(0, Chunk255367.jsx)(Chunk459273.d9, {
+            children: [(0, Chunk951288.jsx)(Chunk459273.d9, {
               event: Chunk981631.CkL.TEXTAREA_FOCUS,
               handler: this.handleInputFocus
-            }), (0, Chunk255367.jsx)(Chunk459273.d9, {
+            }), (0, Chunk951288.jsx)(Chunk459273.d9, {
               event: Chunk981631.CkL.TEXTAREA_BLUR,
               handler: this.handleInputBlur
-            }), (0, Chunk255367.jsx)(Chunk459273.d9, {
+            }), (0, Chunk951288.jsx)(Chunk459273.d9, {
               event: Chunk981631.CkL.OPEN_EXPRESSION_PICKER,
               handler: this.handleOpenExpressionPicker
-            }), (0, Chunk255367.jsx)(Chunk459273.d9, {
+            }), (0, Chunk951288.jsx)(Chunk459273.d9, {
               event: Chunk981631.CkL.OPEN_APP_LAUNCHER,
               handler: this.handleOpenAppLauncher
-            }), (0, Chunk255367.jsxs)(ti, {
+            }), (0, Chunk951288.jsxs)(ti, {
               isSidebar: Chunk752305,
               className: a()(Chunk97009.chatContent, {
                 [Chunk97009.hasWallpaper]: null == Chunk555573 ? true : Chunk555573.isViewable,
@@ -750,31 +750,31 @@ class to extends Chunk73800.PureComponent {
                 [null != (e = (0, Chunk481060.QeD)(Chunk533379)) ? module : ""]: Chunk680835 ? null == Chunk555573 ? true : Chunk555573.isViewable : true
               }),
               "aria-label": Chunk388032.intl.formatToPlainString(require, {
-                channelName: Chunk73800.name
+                channelName: Chunk647438.name
               }),
               onMouseDown: this.handleChatInteract,
               onKeyDown: this.handleKeyDown,
               onFocus: this.handleChatInteract,
               style: null != Chunk456007 ? Chunk456007 : {},
-              children: [(0, Chunk255367.jsx)(Chunk131565.Z, {
-                channel: Chunk73800
-              }), Chunk355888 && (0, Chunk255367.jsx)(Chunk641861.Z, {
+              children: [(0, Chunk951288.jsx)(Chunk131565.Z, {
+                channel: Chunk647438
+              }), Chunk355888 && (0, Chunk951288.jsx)(Chunk641861.Z, {
                 recipientUser: Chunk541099,
                 voiceChannel: Chunk827498
-              }), (0, Chunk255367.jsx)(Chunk25007.Z, {
-                channel: Chunk73800,
+              }), (0, Chunk951288.jsx)(Chunk25007.Z, {
+                channel: Chunk647438,
                 guild: Chunk120356,
                 narrow: Chunk752305
-              }), (0, Chunk255367.jsxs)(Chunk481060.y5t, {
-                component: (0, Chunk255367.jsx)(Chunk481060.nn4, {
-                  children: (0, Chunk255367.jsx)(Chunk481060.H, {
+              }), (0, Chunk951288.jsxs)(Chunk481060.y5t, {
+                component: (0, Chunk951288.jsx)(Chunk481060.nn4, {
+                  children: (0, Chunk951288.jsx)(Chunk481060.H, {
                     children: Chunk388032.intl.format(Chunk388032.t.eTzKk5, {
-                      channelName: Chunk73800.name
+                      channelName: Chunk647438.name
                     })
                   })
                 }),
-                children: [(0, Chunk255367.jsx)(Chunk400023.Z, {
-                  channel: Chunk73800,
+                children: [(0, Chunk951288.jsx)(Chunk400023.Z, {
+                  channel: Chunk647438,
                   forceCozy: Chunk607070,
                   filterAfterTimestamp: Chunk166459,
                   showingQuarantineBanner: Chunk144144,
@@ -782,37 +782,37 @@ class to extends Chunk73800.PureComponent {
                   typingGradient: Chunk10718,
                   isChatInputBottomAligned: Chunk998698
                 }), Chunk607070 ? null : null != (t = this.renderMessageBanner({
-                  channel: Chunk73800,
+                  channel: Chunk647438,
                   showQuarantinedUserBanner: Chunk144144,
                   guild: Chunk120356,
                   communicationDisabledUntil: Chunk744061,
                   showAutomodUserProfileChatBlocker: Chunk367907
-                })) ? exports : (0, Chunk255367.jsxs)("form", {
+                })) ? exports : (0, Chunk951288.jsxs)("form", {
                   ref: this.inputFormRef,
                   onSubmit: tn,
                   className: a()(Chunk97009.form, {
                     [Chunk97009.formWithLoadedChatInput]: !Chunk974251
                   }),
-                  children: [Chunk857595 && (0, Chunk255367.jsx)(Chunk217871.Z, {
-                    channelId: Chunk73800.id
-                  }), Chunk73800.isPrivate() ? (0, Chunk255367.jsx)(Chunk199649.Z, {
-                    channel: Chunk73800,
+                  children: [Chunk857595 && (0, Chunk951288.jsx)(Chunk217871.Z, {
+                    channelId: Chunk647438.id
+                  }), Chunk647438.isPrivate() ? (0, Chunk951288.jsx)(Chunk199649.Z, {
+                    channel: Chunk647438,
                     children: Chunk893718
-                  }) : (0, Chunk255367.jsx)(Chunk1397.Z, {
-                    channel: Chunk73800,
+                  }) : (0, Chunk951288.jsx)(Chunk1397.Z, {
+                    channel: Chunk647438,
                     children: Chunk893718
-                  }), (0, Chunk255367.jsx)(Chunk738619.ZP, {
-                    channel: Chunk73800,
+                  }), (0, Chunk951288.jsx)(Chunk738619.ZP, {
+                    channel: Chunk647438,
                     poggermodeEnabled: Chunk857595,
                     isInTextChannel: true
                   })]
-                }), (0, Chunk255367.jsx)(Chunk549006.kw, {})]
+                }), (0, Chunk951288.jsx)(Chunk549006.kw, {})]
               })]
             })]
           })
         })
       })
-    }, "messages-".concat(Chunk73800.id))
+    }, "messages-".concat(Chunk647438.id))
   }
   constructor(...e) {
     super(...e), e9(this, "containerDomRef", i.createRef()), e9(this, "refToChannelTextAreaFormComponent", i.createRef()), e9(this, "inputFormRef", i.createRef()), e9(this, "state", {
@@ -854,13 +854,13 @@ class to extends Chunk73800.PureComponent {
         channel: r
       } = this.props;
       if (t) switch (e.which) {
-        case e7.yXg.ARROW_LEFT:
-          n === U.Ie.SIDEBAR && eH.S.dispatch(e7.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+        case e3.yXg.ARROW_LEFT:
+          n === U.Ie.SIDEBAR && eH.S.dispatch(e3.CkL.FOCUS_CHANNEL_TEXT_AREA, {
             channelId: ek.Z.getChannelId()
           });
           return;
-        case e7.yXg.ARROW_RIGHT:
-          n === U.Ie.NORMAL && eH.S.dispatch(e7.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+        case e3.yXg.ARROW_RIGHT:
+          n === U.Ie.NORMAL && eH.S.dispatch(e3.CkL.FOCUS_CHANNEL_TEXT_AREA, {
             channelId: eZ.ZP.getCurrentSidebarChannelId(r.id)
           })
       }
@@ -890,9 +890,9 @@ class to extends Chunk73800.PureComponent {
         communicationDisabledUntil: l,
         showAutomodUserProfileChatBlocker: a
       } = e;
-      return t.type === e7.d4z.DM && n ? (0, r.jsx)(ey.Z, {}) : t.isModeratorReportChannel() && t.isArchivedThread() ? (0, r.jsx)(ex.Z, {
+      return t.type === e3.d4z.DM && n ? (0, r.jsx)(ey.Z, {}) : t.isModeratorReportChannel() && t.isArchivedThread() ? (0, r.jsx)(ex.Z, {
         channelId: t.id
-      }) : null != l && (0, en.J)(l) && null != i && !eM.Z.can(e7.Plq.ADMINISTRATOR, i) ? (0, r.jsx)(ei.T, {
+      }) : null != l && (0, en.J)(l) && null != i && !eM.Z.can(e3.Plq.ADMINISTRATOR, i) ? (0, r.jsx)(ei.T, {
         guild: i,
         disabledUntil: l
       }) : a ? (0, r.jsx)(et.h, {
@@ -932,7 +932,7 @@ class to extends Chunk73800.PureComponent {
     })
   }
 }
-let ts = Chunk73800.memo(function(e) {
+let ts = Chunk647438.memo(function(e) {
   let {
     channel: t,
     guild: n,
@@ -945,7 +945,7 @@ let ts = Chunk73800.memo(function(e) {
     channel: t
   }), c = (0, ey.S)(eL.default.getCurrentUser(), t), [u] = (0, er.AB)(null == n ? true : n.id), h = (0, ee.Ux)(null == n ? true : n.id), f = (0, d.e7)([eL.default], () => eL.default.getCurrentUser()), m = (0, d.e7)([ew.ZP], () => {
     var e, t, r;
-    return null != f && null != (r = null == (e = ew.ZP.getMember(null != (t = null == n ? true : n.id) ? t : e7.lds, null == f ? true : f.id)) ? true : e.isPending) && r
+    return null != f && null != (r = null == (e = ew.ZP.getMember(null != (t = null == n ? true : n.id) ? t : e3.lds, null == f ? true : f.id)) ? true : e.isPending) && r
   }), g = (0, d.e7)([ef.Z], () => ef.Z.isEnabled()), y = (0, eb.Z)(t.id), _ = (0, el.Z)(t.id), x = (0, T.R)({
     channel: t,
     chatInputType: l
@@ -974,7 +974,7 @@ let ts = Chunk73800.memo(function(e) {
     F = (0, d.e7)([I.Z], () => I.Z.appDMChannelsWithFailedLoads().has(t.id)),
     H = (0, d.e7)([ek.Z], () => ek.Z.getVoiceChannelId()),
     G = (0, d.e7)([eT.Z], () => eT.Z.getChannel(H)),
-    V = (0, d.e7)([eL.default], () => t.type !== e7.d4z.DM ? null : eL.default.getUser(t.getRecipientId())),
+    V = (0, d.e7)([eL.default], () => t.type !== e3.d4z.DM ? null : eL.default.getUser(t.getRecipientId())),
     z = (0, d.e7)([em.ZP, eI.default], () => em.ZP.getUserCombo(eI.default.getId(), t.id)),
     q = (0, b.iD)(t),
     K = (0, b.d7)(t),

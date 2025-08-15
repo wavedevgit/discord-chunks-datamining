@@ -7,8 +7,8 @@ require.d(exports, {
   ZP: () => w,
   uo: () => S
 }), require("./35282.js"), require("./388685.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   Chunk286379 = require("./286379.js"),
   Chunk622535 = require("./622535.js"),
@@ -69,7 +69,7 @@ let S = /\.gif($|\?|#)/i,
   C = /\.png($|\?|#)/i,
   R = 400,
   P = 300;
-class w extends(r = Chunk73800.Component) {
+class w extends(r = Chunk647438.Component) {
   static isAnimated(e) {
     let {
       src: t,
@@ -271,7 +271,7 @@ class w extends(r = Chunk73800.Component) {
       mediaLayoutType: i,
       useFullWidth: a
     } = this.props;
-    return Chunk255367 === Chunk217702.hV.MOSAIC && Chunk73800 ? (0, Chunk956664.rn)({
+    return Chunk951288 === Chunk217702.hV.MOSAIC && Chunk647438 ? (0, Chunk956664.rn)({
       width: module,
       height: exports,
       maxWidth: require,
@@ -337,7 +337,7 @@ class w extends(r = Chunk73800.Component) {
     } = this.state, k = null != require, j = this.getRatio(), U = (0, Chunk392711.clamp)(Math.round(Chunk866960 * j), null != Chunk768581 ? Chunk768581 : 0, null != Chunk217702 ? Chunk217702 : 1 / 0), G = (0, Chunk392711.clamp)(Math.round(Chunk626135 * j), null != Chunk956664 ? Chunk956664 : 0, null != O ? O : 1 / 0), B = {
       alt: module,
       readyState: L,
-      onContextMenu: null != Chunk73800 ? Chunk73800 : true,
+      onContextMenu: null != Chunk647438 ? Chunk647438 : true,
       zoomable: k,
       className: Chunk818083,
       imageClassName: Chunk279745,
@@ -399,7 +399,7 @@ class w extends(r = Chunk73800.Component) {
           })
         } else B.src = this.getSrc(j)
     }
-    return (0, Chunk255367.jsx)(Chunk916616.E, v({
+    return (0, Chunk951288.jsx)(Chunk916616.E, v({
       ref: this._imageRef
     }, B))
   }

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => j
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -37,12 +37,12 @@ function _(e) {
 
 function j() {
   let e = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
-    t = Chunk73800.useRef(null),
+    t = Chunk647438.useRef(null),
     {
       categories: n,
       initialized: s
     } = (0, Chunk442837.cj)([Chunk151662.Z], () => Chunk151662.Z.getEmailSettings());
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     if (null == Chunk120356)(0, Chunk960412.Y7)();
     else if (module === Chunk930441.vG.toUpperCase()) {
       var n;
@@ -57,11 +57,11 @@ function j() {
       [Chunk930441.$Z.TIPS]: Chunk726985.s6.NOTIFICATIONS_EMAILS_TIPS,
       [Chunk930441.$Z.RECOMMENDATIONS_AND_EVENTS]: Chunk726985.s6.NOTIFICATIONS_EMAILS_RECOMMENDATIONS_AND_EVENTS
     };
-  return Chunk120356 ? (0, Chunk255367.jsxs)(Chunk921801.F, {
+  return Chunk120356 ? (0, Chunk951288.jsxs)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_EMAILS,
-    children: [(0, Chunk255367.jsx)("div", {
+    children: [(0, Chunk951288.jsx)("div", {
       ref: exports
-    }), (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+    }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       className: Chunk197571.marginTop40,
       tag: Chunk481060.RB0.H1,
       title: Chunk388032.intl.string(Chunk388032.t.TPchzM),
@@ -82,19 +82,19 @@ function j() {
           setting: a,
           children: l
         }, r()) : l
-      }), (0, Chunk255367.jsxs)(Chunk921801.F, {
+      }), (0, Chunk951288.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.NOTIFICATIONS_EMAILS_UNSUBSCRIBE_FROM_ALL_MARKETING_EMAILS,
-        children: [(0, Chunk255367.jsx)(Chunk755721.zx, {
+        children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
           className: Chunk882238.marketingUnsubscribeButton,
           disabled: !j,
           look: Chunk755721.iL.LINK,
           color: Chunk755721.Tt.LINK,
           onClick: Chunk960412.oc,
           children: Chunk388032.intl.string(Chunk388032.t.Ra9Pws)
-        }), (0, Chunk255367.jsx)(Chunk481060.R94, {
+        }), (0, Chunk951288.jsx)(Chunk481060.R94, {
           type: Chunk481060.geA.DESCRIPTION,
           children: Chunk388032.intl.string(Chunk388032.t.iYjQ8f)
-        }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
+        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
           className: a()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
         })]
       })]

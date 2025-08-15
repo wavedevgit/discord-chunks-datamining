@@ -5,8 +5,8 @@ require.d(exports, {
   B: () => h,
   Z: () => u
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk139387 = require("./139387.js"),
   Chunk852860 = require("./852860.jsx"),
@@ -45,7 +45,7 @@ function h() {
     channel: e,
     submitting: t
   } = (0, Chunk442837.cj)([Chunk388610.Z], () => Chunk388610.Z.getProps()), n = (0, Chunk442837.e7)([Chunk533947.Z], () => Chunk533947.Z.editedWebhook), a = (0, Chunk442837.e7)([Chunk430824.Z], () => null != module ? Chunk430824.Z.getGuild(module.getGuildId()) : null, [module]);
-  return (0, Chunk255367.jsx)(Chunk852860.Z, {
+  return (0, Chunk951288.jsx)(Chunk852860.Z, {
     submitting: exports,
     onReset: () => {
       Chunk139387.Z.init()

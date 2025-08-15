@@ -4,12 +4,12 @@ require.r(exports), require.d(exports, {
   default: () => ei,
   useAppSidebarState: () => ee
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk114858 = require("./114858.js"),
-  Chunk97519 = require("./97519.js"),
+  Chunk843611 = require("./843611.js"),
+  Chunk879690 = require("./879690.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk230711 = require("./230711.js"),
@@ -85,7 +85,7 @@ function $(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let ee = (0, Chunk97519.U)(() => ({
+let ee = (0, Chunk879690.U)(() => ({
   isOpen: true
 }));
 
@@ -218,8 +218,8 @@ function er(e) {
     focusSectionProps: n
   })
 }
-let ei = Chunk73800.memo(function() {
-  Chunk73800.useLayoutEffect(() => {
+let ei = Chunk647438.memo(function() {
+  Chunk647438.useLayoutEffect(() => {
     Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
   }, []);
   let e = (0, Chunk540059.T)("AppTitleBar"),
@@ -247,7 +247,7 @@ let ei = Chunk73800.memo(function() {
     _ = !exports && module,
     O = null !== require && Chunk120356 === Chunk821020.u3.TITLE_BAR_LEFT,
     y = null === require;
-  Chunk73800.useLayoutEffect(() => {
+  Chunk647438.useLayoutEffect(() => {
     Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
   }, []);
   let N = (0, Chunk984802.Ll)(),
@@ -262,13 +262,13 @@ let ei = Chunk73800.memo(function() {
       } = e;
       return i.useMemo(() => t ? "BACK_FORWARD_NAVIGATION" : n ? "SIDEBAR" : r ? "NOTIFICATIONS_INBOX" : l ? "TITLEBAR_FAST_TRAVEL" : a ? "RECENTS" : "HELP", [t, n, r, l, a])
     }({
-      showBackForwardButtons: Chunk97519,
+      showBackForwardButtons: Chunk879690,
       showCollapsedSidebarIcons: Chunk916069,
       showNotificationsInbox: Chunk591472,
-      titlebarFastTravel: Chunk114858,
+      titlebarFastTravel: Chunk843611,
       showRecentsButton: Chunk565138
     });
-  return Chunk51596 ? null : (0, Chunk255367.jsx)(Chunk481060.Wdt, {
+  return Chunk51596 ? null : (0, Chunk951288.jsx)(Chunk481060.Wdt, {
     children: e => (0, r.jsx)(u.f6W, {
       theme: N,
       children: t => (0, r.jsx)(F.TF, {
@@ -327,7 +327,7 @@ let ei = Chunk73800.memo(function() {
 });
 
 function el() {
-  return (0, Chunk255367.jsxs)("svg", {
+  return (0, Chunk951288.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     className: Chunk82504.icon,
     width: "24",
@@ -338,13 +338,13 @@ function el() {
     "stroke-width": "2",
     "stroke-linecap": "round",
     "stroke-linejoin": "round",
-    children: [(0, Chunk255367.jsx)("rect", {
+    children: [(0, Chunk951288.jsx)("rect", {
       width: "18",
       height: "18",
       x: "3",
       y: "3",
       rx: "2"
-    }), (0, Chunk255367.jsx)("path", {
+    }), (0, Chunk951288.jsx)("path", {
       d: "M9 3v18"
     })]
   })

@@ -4,7 +4,7 @@
 require.d(exports, {
   s: () => d
 }), require("./388685.js"), require("./953529.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk588486 = require("./588486.js"),
   Chunk499533 = require("./499533.js"),
@@ -20,14 +20,14 @@ function d() {
   let e = (0, Chunk442837.cj)([Chunk353926.Z], () => Chunk353926.Z.getRegisteredExperiments()),
     t = (0, Chunk442837.cj)([Chunk353926.Z], () => Chunk353926.Z.getAllExperimentOverrideDescriptors());
   return {
-    experiments: (0, Chunk73800.useMemo)(() => {
+    experiments: (0, Chunk647438.useMemo)(() => {
       let t = {};
       for (let [n, r] of Object.entries(module)) exports[require] = {
         system: Chunk492435.I.LEGACY,
-        kind: Chunk73800.type === Chunk987338.xY.USER ? "user" : "guild",
+        kind: Chunk647438.type === Chunk987338.xY.USER ? "user" : "guild",
         name: require,
-        title: Chunk73800.title,
-        variants: Chunk73800.buckets.map((e, t) => ({
+        title: Chunk647438.title,
+        variants: Chunk647438.buckets.map((e, t) => ({
           id: e.valueOf(),
           label: "object" == typeof r.description ? r.description[t] : o.Z.getExperimentBucketName(e),
           shortLabel: o.Z.getExperimentBucketName(e),
@@ -36,12 +36,12 @@ function d() {
       };
       return exports
     }, [module]),
-    overridesInfo: (0, Chunk73800.useMemo)(() => {
+    overridesInfo: (0, Chunk647438.useMemo)(() => {
       let e = {};
       for (let [n, r] of Object.entries(exports)) module[require] = {
         experimentId: require,
-        variantId: Chunk73800.bucket.valueOf(),
-        originalDescriptor: Chunk73800
+        variantId: Chunk647438.bucket.valueOf(),
+        originalDescriptor: Chunk647438
       };
       return module
     }, [exports])

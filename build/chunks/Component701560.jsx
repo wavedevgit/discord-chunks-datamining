@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => I
 }), require("./388685.js"), require("./415506.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -56,7 +56,7 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class j extends(r = Chunk73800.PureComponent) {
+class j extends(r = Chunk647438.PureComponent) {
   get analyticsLocation() {
     return x(y({}, this.props.analyticsContext.location), {
       object: Chunk981631.qAy.BUTTON_CTA
@@ -66,13 +66,13 @@ class j extends(r = Chunk73800.PureComponent) {
     let {
       dispatchState: e
     } = this.props;
-    return null != module && null != module.launchOptions && Object.keys(module.launchOptions).length > 1 ? (0, Chunk255367.jsxs)(Chunk481060.P3F, {
+    return null != module && null != module.launchOptions && Object.keys(module.launchOptions).length > 1 ? (0, Chunk951288.jsxs)(Chunk481060.P3F, {
       "aria-label": Chunk388032.intl.string(Chunk388032.t.KTPVLC),
       className: Chunk701306.dropdownArrowHitbox,
       onClick: this.handleDropdownClick,
-      children: [(0, Chunk255367.jsx)("div", {
+      children: [(0, Chunk951288.jsx)("div", {
         className: Chunk701306.arrowSeparator
-      }), (0, Chunk255367.jsx)(Chunk481060.CJ0, {
+      }), (0, Chunk951288.jsx)(Chunk481060.CJ0, {
         size: "md",
         color: "currentColor",
         className: Chunk701306.dropdownArrow
@@ -117,10 +117,10 @@ class j extends(r = Chunk73800.PureComponent) {
       isShiny: d,
       hideNotLaunchable: p
     } = this.props;
-    if (!Chunk73800) return Chunk2052 ? null : this.renderDisabledButton(Chunk388032.intl.string(Chunk388032.t["359PbW"]), Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk388032.t.NASLa2) : Chunk388032.intl.string(Chunk388032.t.o1bhkJ));
+    if (!Chunk647438) return Chunk2052 ? null : this.renderDisabledButton(Chunk388032.intl.string(Chunk388032.t["359PbW"]), Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk388032.t.NASLa2) : Chunk388032.intl.string(Chunk388032.t.o1bhkJ));
     if (Chunk442837) return this.renderDisabledButton(Chunk388032.intl.string(Chunk388032.t["3elwAA"]));
     let m = Chunk239091 ? Chunk481060.gtL : Chunk755721.zx;
-    return (0, Chunk255367.jsxs)(Chunk594190, {
+    return (0, Chunk951288.jsxs)(Chunk594190, {
       className: o()(Chunk701306.playButton, module),
       innerClassName: Chunk701306.playButtonContents,
       fullWidth: exports,
@@ -128,7 +128,7 @@ class j extends(r = Chunk73800.PureComponent) {
       color: null != r ? r : Chunk755721.zx.Colors.GREEN,
       submitting: Chunk120356,
       onClick: this.handleClick,
-      children: [(0, Chunk255367.jsx)("div", {
+      children: [(0, Chunk951288.jsx)("div", {
         className: Chunk701306.buttonText,
         children: Chunk388032.intl.string(Chunk388032.t["359PbW"])
       }), this.renderDropdown()]

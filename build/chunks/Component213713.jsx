@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => A
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -113,7 +113,7 @@ function A() {
       var e;
       return (null == (e = Chunk146282.Z.getFeedState(Chunk206583.YN.GLOBAL_FEED)) ? true : module.loading) === true
     }),
-    [Z, A] = Chunk73800.useState(""),
+    [Z, A] = Chunk647438.useState(""),
     L = (0, Chunk442837.e7)([Chunk77498.Z, Chunk812206.Z], () => {
       var e, t, a;
       return parseInt(Z) > 0 ? Z : null != (a = null == (e = Chunk77498.Z.getGameByName(Z)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(Z)) ? true : exports.id
@@ -132,19 +132,19 @@ function A() {
     }),
     F = (0, Chunk835473.Z)(U).filter(Chunk823379.lm),
     B = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
-  return (0, Chunk255367.jsx)("div", {
+  return (0, Chunk951288.jsx)("div", {
     className: Chunk451429.panel,
-    children: (0, Chunk255367.jsxs)(Chunk481060.zJl, {
+    children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
       className: Chunk680027.content,
-      children: [(0, Chunk255367.jsxs)(Chunk481060.hjN, {
-        children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+      children: [(0, Chunk951288.jsxs)(Chunk481060.hjN, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Inventory"
-        }), Chunk392711.length > 0 && (0, Chunk255367.jsx)(Chunk681619.Z, {
+        }), Chunk392711.length > 0 && (0, Chunk951288.jsx)(Chunk681619.Z, {
           columns: k,
           data: Chunk392711
-        }), (0, Chunk255367.jsx)(Chunk481060.LZC, {
+        }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
           size: 8
-        }), (0, Chunk255367.jsx)(Chunk789086.Z, {}), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk789086.Z, {}), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Refresh Now",
           fullWidth: true,
@@ -157,10 +157,10 @@ function A() {
           },
           loading: Chunk876215
         })]
-      }), (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-        children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+      }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Impression Capping"
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Clear Impressions",
           fullWidth: true,
@@ -169,9 +169,9 @@ function A() {
               type: "CONTENT_INVENTORY_DEBUG_CLEAR_IMPRESSIONS"
             })
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.LZC, {
+        }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
           size: 8
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Log Impressions",
           fullWidth: true,
@@ -180,9 +180,9 @@ function A() {
               type: "CONTENT_INVENTORY_DEBUG_LOG_IMPRESSIONS"
             })
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.LZC, {
+        }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
           size: 8
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: Chunk120356 ? "Enable Impression Capping" : "Disable Impression Capping",
           fullWidth: true,
@@ -191,9 +191,9 @@ function A() {
               type: "CONTENT_INVENTORY_DEBUG_TOGGLE_IMPRESSION_CAPPING"
             })
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.LZC, {
+        }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
           size: 8
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: i ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping",
           fullWidth: true,
@@ -203,10 +203,10 @@ function A() {
             })
           }
         })]
-      }), false, (0, Chunk255367.jsx)(Chunk650613.Z, {}), (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-        children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+      }), false, (0, Chunk951288.jsx)(Chunk650613.Z, {}), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Game Profile"
-        }), (0, Chunk255367.jsx)(Chunk755721.Is, {
+        }), (0, Chunk951288.jsx)(Chunk755721.Is, {
           placeholder: "App ID or full name",
           onChange: e => (0 === e.length || e.length >= 18) && A(e),
           onKeyDown: e => {
@@ -216,20 +216,20 @@ function A() {
           style: null != M ? {
             border: "1px solid green"
           } : {}
-        }), (0, Chunk255367.jsx)("ul", {
+        }), (0, Chunk951288.jsx)("ul", {
           children: F.map(e => (0, n.jsx)("li", {
             children: (0, n.jsx)(D, {
               application: e
             })
           }, "follow-game-".concat(e.id)))
         })]
-      }), (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-        children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+      }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Activity Sharing"
-        }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Force show game:"
-        }), (0, Chunk255367.jsx)(Chunk481060.PhF, {
+        }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
           options: Chunk780106.h.map(e => ({
             label: e,
             value: e

@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => v
 }), require("./642613.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk497598 = require("./497598.js"),
@@ -25,28 +25,28 @@ let v = () => {
     sort: e,
     onSetSort: t,
     hasRelevanceFilters: r
-  } = (0, Chunk501431.S)(), a = (0, Chunk381585.sp)(), v = (0, Chunk642909.G)("CollectiblesSortSelect"), O = require(), C = Chunk73800.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== s.E.RELEVANCE || O), [O]), E = Chunk73800.useCallback(e => {
+  } = (0, Chunk501431.S)(), a = (0, Chunk381585.sp)(), v = (0, Chunk642909.G)("CollectiblesSortSelect"), O = require(), C = Chunk647438.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== s.E.RELEVANCE || O), [O]), E = Chunk647438.useCallback(e => {
     let {
       sortType: t,
       sortDirection: r
     } = e;
     return t === s.E.RECENCY ? {
-      label: h.intl.string(h.t["51Bhi4"]),
+      label: m.intl.string(m.t["51Bhi4"]),
       value: "recent"
     } : t === s.E.PRICE ? r === o.F.ASC ? {
-      label: h.intl.string(h.t.m8RVU1),
+      label: m.intl.string(m.t.m8RVU1),
       value: "price-asc"
     } : {
-      label: h.intl.string(h.t.zBwQJC),
+      label: m.intl.string(m.t.zBwQJC),
       value: "price-desc"
     } : t === s.E.RELEVANCE ? {
-      label: h.intl.string(h.t["XoeT//"]),
+      label: m.intl.string(m.t["XoeT//"]),
       value: "relevance"
     } : {
-      label: h.intl.string(h.t.Y68e5u),
+      label: m.intl.string(m.t.Y68e5u),
       value: "popularity"
     }
-  }, []), S = Chunk73800.useCallback(e => ({
+  }, []), y = Chunk647438.useCallback(e => ({
     recent: {
       sortType: s.E.RECENCY,
       sortDirection: o.F.DESC
@@ -67,8 +67,8 @@ let v = () => {
       sortType: s.E.RELEVANCE,
       sortDirection: o.F.DESC
     }
-  })[e], []), y = Chunk73800.useCallback(e => {
-    let r = E(S(e));
+  })[e], []), S = Chunk647438.useCallback(e => {
+    let r = E(y(e));
     u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == a ? true : a.sessionId,
       page_section: null == a ? true : a.pageSection,
@@ -77,17 +77,17 @@ let v = () => {
       page_size: null == a ? true : a.pageSize,
       cta_name: "sort by ".concat(r.label.toLowerCase()),
       page_type: "catalog"
-    }), t(S(e))
-  }, [Chunk120356, E, S, exports]), x = E(module);
-  return (0, Chunk255367.jsx)("div", {
+    }), t(y(e))
+  }, [Chunk120356, E, y, exports]), x = E(module);
+  return (0, Chunk951288.jsx)("div", {
     className: i()({
       [Chunk345213.shopTakeOver]: v
     }),
-    children: (0, Chunk255367.jsx)(Chunk481060.PhF, {
+    children: (0, Chunk951288.jsx)(Chunk481060.PhF, {
       look: Chunk481060.qQH.CUSTOM,
       className: Chunk182668.custom,
       options: C.map(E),
-      select: y,
+      select: S,
       isSelected: e => e === x.value,
       serialize: e => e,
       popoutWidth: 224,

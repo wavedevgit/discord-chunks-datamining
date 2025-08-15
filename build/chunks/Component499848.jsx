@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => f
 }), require("./415506.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk271383 = require("./271383.js"),
@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk51144 = require("./51144.js"),
   Chunk481250 = require("./481250.jsx"),
   Chunk388032 = require("./388032.jsx");
-class h extends Chunk73800.PureComponent {
+class h extends Chunk647438.PureComponent {
   render() {
     let {
       streams: e,
@@ -23,17 +23,17 @@ class h extends Chunk73800.PureComponent {
       mediaEngineConnectionId: a,
       videoStreams: i
     } = this.props;
-    if (null == require || null == module || 0 === module.length) return (0, Chunk255367.jsx)(Chunk481060.$jN, {
+    if (null == require || null == module || 0 === module.length) return (0, Chunk951288.jsx)(Chunk481060.$jN, {
       type: Chunk481060.$jN.Type.SPINNING_CIRCLE
     });
     let c = Chunk19780.Z.getGuildId(),
       h = Chunk594174.default.getUser(require),
       f = Chunk271383.ZP.getNick(Chunk226961, require),
       y = null == h ? Chunk388032.intl.string(Chunk388032.t.SJmZam) : "".concat(Chunk388032.intl.string(Chunk388032.t.SJmZam), " — ").concat(null != f ? f : Chunk51144.ZP.getName(h));
-    return (0, Chunk255367.jsx)(Chunk481060.hjN, {
+    return (0, Chunk951288.jsx)(Chunk481060.hjN, {
       tag: Chunk481060.RB0.H2,
       title: y,
-      children: (0, Chunk481250.V)(module, exports, Chunk73800, require, Chunk442837)
+      children: (0, Chunk481250.V)(module, exports, Chunk647438, require, Chunk442837)
     })
   }
 }

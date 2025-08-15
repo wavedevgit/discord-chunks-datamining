@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => b
 }), require("./539854.js"), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk16084 = require("./16084.js"),
@@ -24,7 +24,7 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends Chunk73800.PureComponent {
+class m extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       sku: e,
@@ -40,19 +40,19 @@ class m extends Chunk73800.PureComponent {
     } = this.props, n = [], i = null;
     if (null != module) {
       let r = Chunk981631.Z5c.APPLICATION_STORE_LISTING_SKU(module.id, module.slug);
-      i = Chunk255367, null != exports && require.push({
+      i = Chunk951288, null != exports && require.push({
         id: Chunk981631.Z5c.APPLICATION_STORE_LISTING_SKU(exports.id, exports.slug),
         label: exports.name
       }), require.push({
-        id: Chunk255367,
+        id: Chunk951288,
         label: module.name
       })
     }
-    return (0, Chunk255367.jsx)(Chunk481060.OoM, {
+    return (0, Chunk951288.jsx)(Chunk481060.OoM, {
       renderCustomBreadcrumb: this.renderCustomBreadcrumb,
       onBreadcrumbClick: this.handleClick,
       breadcrumbs: require,
-      activeId: Chunk73800
+      activeId: Chunk647438
     })
   }
   constructor(...e) {

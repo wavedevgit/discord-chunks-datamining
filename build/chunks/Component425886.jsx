@@ -4,11 +4,11 @@
 require.d(exports, {
   Z: () => s
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk403182 = require("./403182.js"),
   Chunk640108 = require("./640108.jsx");
-class s extends Chunk73800.PureComponent {
+class s extends Chunk647438.PureComponent {
   render() {
     let {
       src: e,
@@ -26,13 +26,13 @@ class s extends Chunk73800.PureComponent {
       mimeType: h,
       onPlay: m
     } = this.props;
-    return (0, Chunk255367.jsx)(Chunk640108.ZP, {
+    return (0, Chunk951288.jsx)(Chunk640108.ZP, {
       src: module,
       fileName: require,
       fileSize: (0, Chunk403182.Ng)(exports),
       fileSizeBytes: exports,
       type: Chunk640108.ZP.Types.AUDIO,
-      className: Chunk73800,
+      className: Chunk647438,
       playable: s,
       volume: l,
       onMute: p,

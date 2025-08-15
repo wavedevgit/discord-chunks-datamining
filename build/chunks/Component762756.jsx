@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => j
 }), require("./388685.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   c = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
@@ -25,7 +25,7 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 let g = Chunk63063.Z.getArticleURL(Chunk981631.BhN.VERIFICATION_FAQ);
-class b extends(r = Chunk73800.PureComponent) {
+class b extends(r = Chunk647438.PureComponent) {
   renderFields() {
     let {
       types: e,
@@ -33,7 +33,7 @@ class b extends(r = Chunk73800.PureComponent) {
       theme: n,
       onCaptchaVerify: r
     } = this.props;
-    return (0, Chunk255367.jsx)(Chunk255367.Fragment, {
+    return (0, Chunk951288.jsx)(Chunk951288.Fragment, {
       children: module.map(e => e === p.PUi.CAPTCHA ? (0, i.jsx)(u.Z, {
         onVerify: r,
         theme: n
@@ -44,13 +44,13 @@ class b extends(r = Chunk73800.PureComponent) {
     })
   }
   render() {
-    return (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+    return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 16,
       className: Chunk222198.verification,
       align: "center",
       direction: "vertical",
       justify: "center",
-      children: [(0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+      children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
         className: c()(Chunk222198.container, {
           [Chunk222198.isMobile]: Chunk873546.tq
@@ -58,60 +58,60 @@ class b extends(r = Chunk73800.PureComponent) {
         align: "center",
         direction: "vertical",
         justify: "center",
-        children: [(0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+        children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
           align: "center",
           direction: "vertical",
           justify: "center",
           gap: 16,
-          children: [(0, Chunk255367.jsx)("div", {
+          children: [(0, Chunk951288.jsx)("div", {
             className: Chunk222198.image
-          }), (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+          }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
             className: Chunk222198.textContainer,
             gap: 4,
             align: "center",
             direction: "vertical",
             justify: "center",
-            children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
               variant: "heading-xl/normal",
               children: Chunk388032.intl.string(Chunk388032.t.Iz0kDg)
-            }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+            }), (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-md/normal",
               children: Chunk388032.intl.format(Chunk388032.t["0rqMV1"], {
                 helpCenterURL: g
               })
             })]
           })]
-        }), (0, Chunk255367.jsx)(Chunk481060.Kqy, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Kqy, {
           gap: 16,
           direction: "vertical",
           justify: "center",
           align: "center",
           children: this.renderFields()
         })]
-      }), (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+      }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 8,
         align: "center",
         direction: "vertical",
         justify: "center",
-        children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
           className: Chunk222198.footer,
           children: Chunk388032.intl.string(Chunk388032.t.qqYun5)
-        }), (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+        }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
           gap: 8,
           align: "center",
           direction: "horizontal",
           justify: "center",
-          children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/semibold",
             className: Chunk222198.footer,
             children: Chunk388032.intl.format(Chunk388032.t.WL51ZW, {
               supportURL: Chunk63063.Z.getSubmitRequestURL()
             })
-          }), (0, Chunk255367.jsx)("div", {
+          }), (0, Chunk951288.jsx)("div", {
             className: c()(Chunk222198.footer, Chunk222198.footerBullet),
             children: "•"
-          }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+          }), (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/semibold",
             className: Chunk222198.footer,
             children: Chunk388032.intl.format(Chunk388032.t.Hv7ztb, {

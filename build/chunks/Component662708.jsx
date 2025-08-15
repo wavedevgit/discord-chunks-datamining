@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => b
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk153867 = require("./153867.js"),
   Chunk663993 = require("./663993.js"),
@@ -25,7 +25,7 @@ let d = (0, Chunk663993.Un)({
   createPromise: () => require.e("4848").then(require.bind(require, 797967)),
   webpackId: 797967
 });
-class m extends Chunk73800.PureComponent {
+class m extends Chunk647438.PureComponent {
   render() {
     let {
       transitionState: e
@@ -33,37 +33,37 @@ class m extends Chunk73800.PureComponent {
       name: t,
       color: r
     } = this.state;
-    return (0, Chunk255367.jsxs)(Chunk481060.Y0X, {
+    return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: module,
       "aria-label": Chunk388032.intl.string(Chunk388032.t.Dx7im5),
       size: Chunk481060.CgR.DYNAMIC,
       parentComponent: "GuildFolderSettings",
-      children: [(0, Chunk255367.jsxs)(Chunk481060.xBx, {
+      children: [(0, Chunk951288.jsxs)(Chunk481060.xBx, {
         className: Chunk713970.header,
         separator: false,
-        children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-lg/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.Dx7im5)
-        }), (0, Chunk255367.jsx)(Chunk481060.olH, {
+        }), (0, Chunk951288.jsx)(Chunk481060.olH, {
           onClick: this.close
         })]
-      }), (0, Chunk255367.jsx)(Chunk481060.hzk, {
-        children: (0, Chunk255367.jsxs)("form", {
+      }), (0, Chunk951288.jsx)(Chunk481060.hzk, {
+        children: (0, Chunk951288.jsxs)("form", {
           onSubmit: this.handleSubmit,
-          children: [(0, Chunk255367.jsx)(Chunk481060.xJW, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
             title: Chunk388032.intl.string(Chunk388032.t.tGRbjI),
             className: Chunk713970.formItem,
-            children: (0, Chunk255367.jsx)(Chunk481060.oil, {
+            children: (0, Chunk951288.jsx)(Chunk481060.oil, {
               maxLength: Chunk981631.dYL,
               value: exports,
               onChange: this.handleNameChange,
               placeholder: Chunk388032.intl.string(Chunk388032.t.xV9hVl),
               autoFocus: true
             })
-          }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
+          }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
             title: Chunk388032.intl.string(Chunk388032.t.xpurRE),
             className: Chunk713970.formItem,
-            children: (0, Chunk255367.jsx)(d, {
+            children: (0, Chunk951288.jsx)(d, {
               defaultColor: Chunk981631.Wyy,
               colors: Chunk981631.pmI,
               value: null != require ? require : Chunk981631.Wyy,
@@ -71,8 +71,8 @@ class m extends Chunk73800.PureComponent {
             })
           })]
         })
-      }), (0, Chunk255367.jsx)(Chunk481060.mzw, {
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.mzw, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: Chunk388032.intl.string(Chunk388032.t.i4jeWV),
           type: "submit",

@@ -7,12 +7,12 @@ require.d(exports, {
   R_: () => l,
   _2: () => u
 }), require("./539854.js"), require("./388685.js"), require("./35282.js");
-var Chunk125697 = require("./125697.js"),
-  Chunk362383 = require("./362383.js"),
+var Chunk631562 = require("./631562.js"),
+  Chunk131193 = require("./131193.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk252517 = require("./252517.js");
 r = require("./330711.js").Z;
-let l = (0, Chunk362383.F)((e, t) => ({
+let l = (0, Chunk131193.F)((e, t) => ({
   isLoading: false,
   inProgressLocale: true,
   error: true,
@@ -62,7 +62,7 @@ async function d(e) {
   {
     let {
       registerLocale: t
-    } = n(352374);
+    } = n(939711);
     t(e, r)
   }
 }

@@ -3,9 +3,9 @@
 require.d(exports, {
   b: () => y
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
-  Chunk708816 = require("./708816.jsx"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk67136 = require("./67136.jsx"),
   Chunk393238 = require("./393238.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -64,30 +64,30 @@ function E(e) {
     }), t))
   })
 }
-let y = Chunk73800.memo(function() {
-  let e = Chunk73800.useRef(null);
+let y = Chunk647438.memo(function() {
+  let e = Chunk647438.useRef(null);
   return (0, Chunk393238.PM)(module, e => {
     let {
       height: t
     } = e;
     document.body.style.setProperty("--custom-app-panels-height", "".concat(t, "px"))
-  }, []), (0, Chunk255367.jsx)("section", {
+  }, []), (0, Chunk951288.jsx)("section", {
     ref: module,
     className: Chunk981028.panels,
     "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWF),
-    children: (0, Chunk255367.jsxs)(Chunk708816.Jc, {
+    children: (0, Chunk951288.jsxs)(Chunk67136.Jc, {
       containerRef: module,
-      children: [(0, Chunk255367.jsx)(Chunk316173.Z, {}), (0, Chunk255367.jsx)(Chunk210724.Z, {}), (0, Chunk255367.jsx)(Chunk235555.Z, {}), (0, Chunk255367.jsx)(Chunk410575.Z, {
+      children: [(0, Chunk951288.jsx)(Chunk316173.Z, {}), (0, Chunk951288.jsx)(Chunk210724.Z, {}), (0, Chunk951288.jsx)(Chunk235555.Z, {}), (0, Chunk951288.jsx)(Chunk410575.Z, {
         section: Chunk981631.jXE.ACTIVITY_PANEL,
-        children: (0, Chunk255367.jsx)(E, {
+        children: (0, Chunk951288.jsx)(E, {
           className: Chunk981028.activityPanel
         })
-      }), (0, Chunk255367.jsx)(Chunk410575.Z, {
+      }), (0, Chunk951288.jsx)(Chunk410575.Z, {
         section: Chunk981631.jXE.RTC_CONNECTION_PANEL,
-        children: (0, Chunk255367.jsx)(Chunk746508.Z, {})
-      }), (0, Chunk255367.jsx)(Chunk410575.Z, {
+        children: (0, Chunk951288.jsx)(Chunk746508.Z, {})
+      }), (0, Chunk951288.jsx)(Chunk410575.Z, {
         section: Chunk981631.jXE.ACCOUNT_PANEL,
-        children: (0, Chunk255367.jsx)(Chunk720734.Z, {})
+        children: (0, Chunk951288.jsx)(Chunk720734.Z, {})
       })]
     })
   })

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => x
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -96,7 +96,7 @@ function P(e) {
     })]
   })
 }
-class j extends Chunk73800.PureComponent {
+class j extends Chunk647438.PureComponent {
   componentWillLeave(e) {
     null != this.peopleListItemRef.current && this.peopleListItemRef.current.componentWillLeave(e)
   }
@@ -116,7 +116,7 @@ class j extends Chunk73800.PureComponent {
     } = this.props, {
       isActiveRow: u
     } = this.state;
-    return (0, Chunk255367.jsx)(Chunk417183.Z, {
+    return (0, Chunk951288.jsx)(Chunk417183.Z, {
       ref: this.peopleListItemRef,
       isFocused: exports,
       isActive: Chunk493683,

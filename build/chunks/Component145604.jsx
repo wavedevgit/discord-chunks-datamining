@@ -3,12 +3,12 @@
 require.d(exports, {
   Z: () => $
 }), require("./583741.js"), require("./997841.js"), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk224706 = require("./224706.js"),
   Chunk593472 = require("./593472.js"),
-  Chunk603113 = require("./603113.js"),
+  Chunk941033 = require("./941033.js"),
   Chunk367907 = require("./367907.js"),
   Chunk731429 = require("./731429.js"),
   Chunk188471 = require("./188471.js"),
@@ -72,7 +72,7 @@ function Q(e) {
   }
   return e
 }
-class J extends Chunk73800.PureComponent {
+class J extends Chunk647438.PureComponent {
   componentDidUpdate(e) {
     var t, n, r, i, l, s;
     let {
@@ -261,7 +261,7 @@ function $() {
     voiceChannelBitrate: null == Chunk318885 ? true : Chunk318885.bitrate,
     runningGame: Chunk695346,
     runningGamePid: null != Chunk695346 ? Chunk695346.pid : null,
-    gamePlatform: (0, Chunk603113.Z)(Chunk427679),
+    gamePlatform: (0, Chunk941033.Z)(Chunk427679),
     gameName: null != Chunk427679 ? Chunk427679.name : null,
     gameId: null != Chunk427679 ? Chunk427679.application_id : null,
     gameExeName: null != Chunk695346 ? Chunk695346.exeName : null,
@@ -270,8 +270,8 @@ function $() {
     postableChannelCount: Chunk77498,
     isTextInVoice: Chunk224706,
     numMessageRequests: Chunk375954
-  }, z = Chunk73800.useRef(Chunk19780);
-  Chunk73800.useEffect(() => {
+  }, z = Chunk647438.useRef(Chunk19780);
+  Chunk647438.useEffect(() => {
     Chunk237997.current = Chunk19780
   }, [Chunk19780]);
   let {
@@ -282,7 +282,7 @@ function $() {
     selectedChannelId: ee,
     selectedGuildId: et
   } = Chunk19780;
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     if (Chunk630388 && null != ee) {
       let e = (0, Chunk731429.K)(Chunk592125.Z.getChannel(ee), true);
       (0, Chunk367907.yw)(Chunk981631.rMx.CHANNEL_OPENED, Q({}, module, (0, Chunk367907.$H)(ee))), (0, Chunk188471.a)(Chunk981631.rMx.CHANNEL_OPENED_CLICKSTREAM, {
@@ -291,11 +291,11 @@ function $() {
         channel_is_nsfw: Chunk237997.current.isNSFWChannel
       })
     }
-  }, [Chunk630388, ee]), Chunk73800.useEffect(() => {
+  }, [Chunk630388, ee]), Chunk647438.useEffect(() => {
     Chunk630388 && null == et && X === Chunk981631.Z5c.FRIENDS && (0, Chunk176881.Z)({
       tab_opened: Chunk823379
     })
-  }, [Chunk630388, Chunk823379, X, et]), Chunk73800.useEffect(() => {
+  }, [Chunk630388, Chunk823379, X, et]), Chunk647438.useEffect(() => {
     if (Chunk630388 && null != et) {
       var e, t, n, r;
       let i = (n = Q({}, $ ? {
@@ -306,25 +306,25 @@ function $() {
         premium_progress_bar_enabled: null != (t = null == (e = Chunk430824.Z.getGuild(Chunk914010.Z.getGuildId())) ? true : module.premiumProgressBarEnabled) && exports,
         viewing_all_channels: !Chunk9156.ZP.isOptInEnabled(et),
         num_recent_channels: Chunk734307.Z.recentsChannelCount(et)
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(require, Object.getOwnPropertyDescriptors(Chunk255367)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(require, Object.getOwnPropertyDescriptors(Chunk951288)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(Chunk255367)).forEach(function(e) {
+      })(Object(Chunk951288)).forEach(function(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
       }), require);
-      (0, Chunk367907.yw)(Chunk981631.rMx.GUILD_VIEWED, Chunk73800), (0, Chunk188471.a)(Chunk981631.rMx.GUILD_VIEWED_CLICKSTREAM, {
+      (0, Chunk367907.yw)(Chunk981631.rMx.GUILD_VIEWED, Chunk647438), (0, Chunk188471.a)(Chunk981631.rMx.GUILD_VIEWED_CLICKSTREAM, {
         guildId: et
       })
     }
   }, [Chunk630388, et, $]);
-  let en = Chunk73800.useRef(false);
-  return Chunk73800.useEffect(() => {
+  let en = Chunk647438.useRef(false);
+  return Chunk647438.useEffect(() => {
     Chunk630388 && null == et && X === Chunk981631.Z5c.MESSAGE_REQUESTS && !en.current && (en.current = true, Chunk626135.default.track(Chunk981631.rMx.MESSAGE_REQUESTS_INITIALIZED, {
       num_message_requests: Chunk237997.current.numMessageRequests
     }))
-  }, [Chunk630388, et, X]), (0, Chunk255367.jsx)(J, Q({}, Chunk19780))
+  }, [Chunk630388, et, X]), (0, Chunk951288.jsx)(J, Q({}, Chunk19780))
 }

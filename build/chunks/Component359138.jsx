@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => u
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk747545 = require("./747545.jsx"),
@@ -15,22 +15,22 @@ var Chunk255367 = require("./255367.js"),
 function u() {
   let e = Chunk131951.Z.getCameraComponent(),
     t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getVideoDeviceId()),
-    [n, u] = Chunk73800.useState(false),
+    [n, u] = Chunk647438.useState(false),
     m = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isVideoAvailable());
-  return require ? (0, Chunk255367.jsx)("div", {
+  return require ? (0, Chunk951288.jsx)("div", {
     className: Chunk766625.cameraWrapper,
-    children: (0, Chunk255367.jsxs)("div", {
+    children: (0, Chunk951288.jsxs)("div", {
       className: Chunk766625.camera,
-      children: [(0, Chunk255367.jsx)(module, {
+      children: [(0, Chunk951288.jsx)(module, {
         deviceId: exports,
         width: 387,
         height: 218,
         disabled: !require
-      }), (0, Chunk255367.jsx)(Chunk747545.S, {})]
+      }), (0, Chunk951288.jsx)(Chunk747545.S, {})]
     })
-  }) : (0, Chunk255367.jsx)("div", {
+  }) : (0, Chunk951288.jsx)("div", {
     className: Chunk766625.cameraWrapper,
-    children: (0, Chunk255367.jsx)(Chunk481060.ua7, {
+    children: (0, Chunk951288.jsx)(Chunk481060.ua7, {
       text: m ? null : Chunk388032.intl.string(Chunk388032.t["8jSzSU"]),
       children: e => {
         var t, n;

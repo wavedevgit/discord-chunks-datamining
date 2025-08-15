@@ -3,11 +3,11 @@
 require.d(exports, {
   I: () => s
 }), require("./388685.js");
-var Chunk97519 = require("./97519.js"),
+var Chunk879690 = require("./879690.js"),
   Chunk731965 = require("./731965.js"),
   Chunk699553 = require("./699553.js");
 let a = new Map,
-  s = (0, Chunk97519.U)((e, t) => ({
+  s = (0, Chunk879690.U)((e, t) => ({
     topGames: new Map,
     tryFetchTopGames: async n => {
       let r = t().topGames,

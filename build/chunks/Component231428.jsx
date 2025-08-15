@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => L
 }), require("./388685.js");
-var i, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var i, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -129,7 +129,7 @@ function Z(e) {
     })
   })
 }
-class w extends(i = Chunk73800.PureComponent) {
+class w extends(i = Chunk647438.PureComponent) {
   get numPages() {
     return Math.max(Math.ceil(this.props.payments.length / 10), 1)
   }
@@ -162,26 +162,26 @@ class w extends(i = Chunk73800.PureComponent) {
       subscription: n,
       locale: i
     } = this.props, s = null != require && require.isPurchasedExternally;
-    return 0 !== exports.length || Chunk73800 ? (0, Chunk255367.jsxs)("div", {
+    return 0 !== exports.length || Chunk647438 ? (0, Chunk951288.jsxs)("div", {
       className: Chunk504333.verticalFit,
-      children: [null != require && Chunk73800 ? this.renderPremiumExternalSubscription(require) : null, exports.length > 0 ? (0, Chunk255367.jsxs)("div", {
+      children: [null != require && Chunk647438 ? this.renderPremiumExternalSubscription(require) : null, exports.length > 0 ? (0, Chunk951288.jsxs)("div", {
         className: l()(Chunk504333.paymentPane, Chunk504333.verticalFit),
-        children: [module ? null : (0, Chunk255367.jsx)("div", {
+        children: [module ? null : (0, Chunk951288.jsx)("div", {
           className: l()(Chunk504333.paymentRow, Chunk504333.bottomDivider),
-          children: (0, Chunk255367.jsxs)(Chunk600164.Z, {
+          children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
             className: Chunk504333.paymentRowHeader,
-            children: [(0, Chunk255367.jsx)("div", {
+            children: [(0, Chunk951288.jsx)("div", {
               className: Chunk982710.date,
               children: Chunk388032.intl.string(Chunk388032.t["5t11BQ"])
-            }), (0, Chunk255367.jsx)("div", {
+            }), (0, Chunk951288.jsx)("div", {
               className: Chunk504333.paymentRowHeaderDescription,
               children: Chunk388032.intl.string(Chunk388032.t.yAAPb2)
-            }), (0, Chunk255367.jsx)("div", {
+            }), (0, Chunk951288.jsx)("div", {
               className: Chunk982710.amount,
               children: Chunk388032.intl.string(Chunk388032.t["6MqHXV"])
             })]
           })
-        }), (0, Chunk255367.jsx)(Z, {
+        }), (0, Chunk951288.jsx)(Z, {
           compactMode: module,
           locale: i,
           payments: exports,

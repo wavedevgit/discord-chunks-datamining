@@ -4,8 +4,8 @@ require.d(exports, {
   E: () => C,
   Z: () => k
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -26,7 +26,7 @@ var Chunk255367 = require("./255367.js"),
 
 function k() {
   var e;
-  let [t, n] = Chunk73800.useState(() => {
+  let [t, n] = Chunk647438.useState(() => {
     let e = Math.floor(Math.random() * Chunk141006.tl.length);
     return {
       primary_color: Chunk141006.tl[module].start,
@@ -42,18 +42,18 @@ function k() {
     includeConvenienceGlow: true,
     animateGradient: true
   });
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk583931.container,
-    children: [(0, Chunk255367.jsx)("div", {
+    children: [(0, Chunk951288.jsx)("div", {
       className: Chunk583931.messageContainer,
-      children: (0, Chunk255367.jsx)(Chunk742409.l, {
+      children: (0, Chunk951288.jsx)(Chunk742409.l, {
         avatar: Chunk957537.Z,
         username: "Cherry",
         usernameStyle: Chunk120356,
         usernameClassName: s()(Chunk839008, Chunk842926.animateGradient),
         message: Chunk388032.intl.string(Chunk388032.t["6OSasb"])
       })
-    }), (0, Chunk255367.jsx)(Chunk797967.default, {
+    }), (0, Chunk951288.jsx)(Chunk797967.default, {
       defaultColor: Chunk981631.p6O,
       colors: Chunk141006.tl,
       value: exports.primary_color,

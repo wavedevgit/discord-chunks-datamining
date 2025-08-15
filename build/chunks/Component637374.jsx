@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => Y
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
@@ -93,7 +93,7 @@ function H(e) {
     })]
   })
 }
-class V extends Chunk73800.PureComponent {
+class V extends Chunk647438.PureComponent {
   get isHorizontal() {
     let {
       width: e
@@ -104,7 +104,7 @@ class V extends Chunk73800.PureComponent {
     Chunk230711.Z.open(Chunk981631.oAB.INVENTORY)
   }
   render() {
-    return (0, Chunk255367.jsx)(Chunk568836.$G, {
+    return (0, Chunk951288.jsx)(Chunk568836.$G, {
       isHorizontal: this.isHorizontal,
       renderTitle: this.renderTitle,
       renderTagline: this.renderTagline,
@@ -130,7 +130,7 @@ class V extends Chunk73800.PureComponent {
     })), F(this, "renderTagline", () => this.props.isSelfGift ? k.intl.string(k.t.aUqE6e) : k.intl.string(k.t["2mWvHB"]))
   }
 }
-class z extends Chunk73800.Component {
+class z extends Chunk647438.Component {
   get analyticsLocation() {
     let {
       analyticsContext: {
@@ -273,7 +273,7 @@ class z extends Chunk73800.Component {
     }) : k.intl.string(k.t.Jdnjjo)
   }
   renderPromotionActions() {
-    return (0, Chunk255367.jsx)(Chunk481060.zxk, {
+    return (0, Chunk951288.jsx)(Chunk481060.zxk, {
       variant: "primary",
       size: "sm",
       text: Chunk388032.intl.string(Chunk388032.t["71nuwc"]),
@@ -285,7 +285,7 @@ class z extends Chunk73800.Component {
       giftCode: e,
       width: t
     } = this.props;
-    return null == module ? null : (0, Chunk255367.jsx)(Chunk626799.$, {
+    return null == module ? null : (0, Chunk951288.jsx)(Chunk626799.$, {
       skuId: module.skuId,
       onEmbedClick: this.handleEmbedClick,
       analyticsSection: Chunk981631.jXE.GIFT_CODE_EMBED,
@@ -303,7 +303,7 @@ class z extends Chunk73800.Component {
       width: n,
       isSelfGift: i
     } = this.props;
-    if (null != module && null != module.promotion) return (0, Chunk255367.jsx)(Chunk626799.$, {
+    if (null != module && null != module.promotion) return (0, Chunk951288.jsx)(Chunk626799.$, {
       skuId: module.skuId,
       onEmbedClick: this.handleClaimPromotion,
       analyticsSection: Chunk981631.jXE.GIFT_CODE_EMBED,
@@ -313,14 +313,14 @@ class z extends Chunk73800.Component {
       width: require
     });
     if (null == module || module.revoked)
-      if (exports) return (0, Chunk255367.jsx)(V, {
-        isSelfGift: Chunk73800,
+      if (exports) return (0, Chunk951288.jsx)(V, {
+        isSelfGift: Chunk647438,
         width: require
       });
-      else return (0, Chunk255367.jsx)(Chunk568836.OR, {
+      else return (0, Chunk951288.jsx)(Chunk568836.OR, {
         isHorizontal: require >= Chunk568836.aL
       });
-    return (0, Chunk884697.mO)(module) ? (0, Chunk255367.jsx)("div", {
+    return (0, Chunk884697.mO)(module) ? (0, Chunk951288.jsx)("div", {
       className: Chunk494452.collectiblesEmbedWrapper,
       children: this.renderEmbed()
     }) : this.renderEmbed()

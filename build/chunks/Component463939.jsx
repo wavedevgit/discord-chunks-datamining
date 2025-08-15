@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => E
 });
-var r, i, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, i, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk913527 = require("./913527.js"),
@@ -132,7 +132,7 @@ let N = (0, Chunk755930.i$)({
     key: "AMOUNT ",
     cellClassName: Chunk744277.amountColumn,
     renderHeader() {
-      let e = (0, Chunk255367.jsx)(Chunk481060.ua7, {
+      let e = (0, Chunk951288.jsx)(Chunk481060.ua7, {
         text: Chunk388032.intl.string(Chunk388032.t.q3PkLy),
         children: e => (0, l.jsx)(u.d3s, O({
           size: "xs",
@@ -140,7 +140,7 @@ let N = (0, Chunk755930.i$)({
           className: _.amountDisclaimer
         }, e))
       });
-      return (0, Chunk255367.jsxs)(Chunk755930.qN, {
+      return (0, Chunk951288.jsxs)(Chunk755930.qN, {
         children: [Chunk388032.intl.string(Chunk388032.t.VodAGR), module]
       })
     },
@@ -149,7 +149,7 @@ let N = (0, Chunk755930.i$)({
   I = (0, Chunk334820.rM)([(0, Chunk334820.Fd)({
     key: "PERIOD",
     cellClassName: Chunk744277.periodColumn,
-    renderHeader: () => (0, Chunk255367.jsx)(Chunk755930.qN, {
+    renderHeader: () => (0, Chunk951288.jsx)(Chunk755930.qN, {
       children: Chunk388032.intl.string(Chunk388032.t.fThnXV)
     }),
     renderContent: e => (0, l.jsx)(y, {
@@ -180,7 +180,7 @@ let N = (0, Chunk755930.i$)({
     key: "STATUS ",
     cellClassName: Chunk744277.statusColumn,
     renderHeader() {
-      let e = (0, Chunk255367.jsx)(Chunk481060.ua7, {
+      let e = (0, Chunk951288.jsx)(Chunk481060.ua7, {
         text: Chunk388032.intl.string(Chunk388032.t.cIGvZG),
         children: e => (0, l.jsx)(u.d3s, O({
           size: "xs",
@@ -188,7 +188,7 @@ let N = (0, Chunk755930.i$)({
           className: _.statusDisclaimer
         }, e))
       });
-      return (0, Chunk255367.jsxs)(Chunk755930.qN, {
+      return (0, Chunk951288.jsxs)(Chunk755930.qN, {
         children: [Chunk388032.intl.string(Chunk388032.t.oypxx8), module]
       })
     },

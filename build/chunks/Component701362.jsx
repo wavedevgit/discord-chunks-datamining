@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => w
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -28,7 +28,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk839021 = require("./839021.js");
-class E extends Chunk73800.PureComponent {
+class E extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       user: e,
@@ -77,15 +77,15 @@ class E extends Chunk73800.PureComponent {
       onAction: l,
       hideTip: o
     } = this.props;
-    return null == require ? null : (0, Chunk255367.jsx)("div", {
+    return null == require ? null : (0, Chunk951288.jsx)("div", {
       className: a()(Chunk839021.streamPreviewWrapper, {
-        [Chunk839021.mounted]: Chunk73800
+        [Chunk839021.mounted]: Chunk647438
       }),
-      children: (0, Chunk255367.jsxs)("div", {
+      children: (0, Chunk951288.jsxs)("div", {
         className: Chunk839021.streamPreview,
-        children: [this.renderPreview(require), (0, Chunk255367.jsxs)("div", {
+        children: [this.renderPreview(require), (0, Chunk951288.jsxs)("div", {
           className: Chunk839021.body,
-          children: [null != module ? (0, Chunk255367.jsx)(Chunk717881.Z, {
+          children: [null != module ? (0, Chunk951288.jsx)(Chunk717881.Z, {
             hideHeader: true,
             type: Chunk717881.P.STREAM_PREVIEW,
             activity: module,
@@ -99,7 +99,7 @@ class E extends Chunk73800.PureComponent {
               }
             },
             onAction: Chunk120356
-          }) : (0, Chunk255367.jsx)(Chunk850827.Z, {
+          }) : (0, Chunk951288.jsx)(Chunk850827.Z, {
             type: Chunk717881.P.STREAM_PREVIEW,
             applicationStream: require,
             user: exports,
@@ -108,7 +108,7 @@ class E extends Chunk73800.PureComponent {
             className: Chunk839021.activityActions,
             color: Chunk839021.watchButton,
             onAction: Chunk120356
-          }), !Chunk442837 && (0, Chunk255367.jsx)(Chunk576855.Z, {
+          }), !Chunk442837 && (0, Chunk951288.jsx)(Chunk576855.Z, {
             type: Chunk576855.Z.Types.INLINE,
             className: Chunk839021.protip,
             children: __OVERLAY__ ? Chunk388032.intl.string(Chunk388032.t["YRdw7+"]) : Chunk388032.intl.string(Chunk388032.t.CCTgbG)

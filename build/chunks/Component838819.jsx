@@ -4,8 +4,8 @@
 require.r(exports), require.d(exports, {
   default: () => M
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
@@ -56,7 +56,7 @@ let D = e => {
   M = function(e) {
     let {
       isFullScreen: t = true,
-      tab: r = A.AW.HOME
+      tab: r = w.AW.HOME
     } = e;
     (0, b.z)(f.f);
     let a = (0, p.Z)((0, o.Z)()),
@@ -64,7 +64,7 @@ let D = e => {
       B = (0, N.G)("CollectiblesShop"),
       {
         closeIntroToOrbsClaimedCoachmark: M
-      } = (0, m.Z)({
+      } = (0, h.Z)({
         location: "CollectiblesShop"
       });
     l.useEffect(() => () => {
@@ -75,27 +75,27 @@ let D = e => {
     } = (0, k.Db)(), {
       currentTab: H,
       hasFilters: W
-    } = (0, j.S)(), V = l.useMemo(() => r === A.AW.HOME && H && W() ? H : r, [r, H, W]), {
+    } = (0, j.S)(), V = l.useMemo(() => r === w.AW.HOME && H && W() ? H : r, [r, H, W]), {
       categories: U,
       refreshCategories: z
-    } = (0, S.ZP)({
+    } = (0, y.ZP)({
       logPerf: true
     }, {
       sessionId: a,
       tab: V,
       isFullScreen: t
     });
-    (0, h.D)();
-    let G = (0, y.O)(U),
+    (0, m.D)();
+    let G = (0, S.O)(U),
       [q, K] = l.useState(),
       Y = (0, s.e7)([C.Z], () => {
         var e;
         return null == (e = C.Z.getCategory(q)) ? true : e.name
       }),
-      [X, J] = l.useState();
-    (0, P.Kp)();
-    let Q = l.useCallback((e, t) => {
-        J(e), K(t)
+      [X, Q] = l.useState();
+    (0, T.Kp)();
+    let J = l.useCallback((e, t) => {
+        Q(e), K(t)
       }, []),
       {
         selectedTab: $,
@@ -109,9 +109,9 @@ let D = e => {
     l.useEffect(() => {
       er()
     }, [er]), l.useEffect(() => {
-      t || (0, d.Y)(w.Z5c.COLLECTIBLES_SHOP)
+      t || (0, d.Y)(A.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let en = (0, s.e7)([_.Z], () => _.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
+    let en = (0, s.e7)([_.Z], () => _.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
       el = l.useRef(null),
       ea = l.useRef(null);
     (0, u.Tbt)(el);
@@ -135,7 +135,7 @@ let D = e => {
         newValue: {
           sessionId: a,
           pageCategory: Y,
-          pageSize: A.kN
+          pageSize: w.kN
         },
         children: (0, n.jsx)(D, {
           onClose: F,
@@ -154,18 +154,18 @@ let D = e => {
               selectedTab: $
             }), (0, n.jsx)("div", {
               className: i()(R.shopViewWrapper, {
-                [R.visible]: ee === A.f7.VISIBLE,
-                [R.in]: ee === A.f7.IN,
-                [R.out]: ee === A.f7.OUT
+                [R.visible]: ee === w.f7.VISIBLE,
+                [R.in]: ee === w.f7.IN,
+                [R.out]: ee === w.f7.OUT
               }),
-              children: (0, n.jsx)(T.Z, {
+              children: (0, n.jsx)(P.Z, {
                 tab: $,
                 isFullScreen: t,
                 refreshCategories: z,
                 transitionToTab: et,
                 transitionState: ee,
                 sortedCategories: G,
-                updateAnalyticsState: Q
+                updateAnalyticsState: J
               })
             })]
           })

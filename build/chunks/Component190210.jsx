@@ -3,13 +3,13 @@
 require.d(exports, {
   Z: () => en
 }), require("./704826.js"), require("./35282.js"), require("./539854.js"), require("./388685.js"), require("./781311.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
-  Chunk717976 = require("./717976.js"),
+  Chunk815061 = require("./815061.js"),
   Chunk772848 = require("./772848.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
@@ -107,7 +107,7 @@ function ee(e, t) {
 function et(e) {
   return null == e ? "unnamed_file" : e.replace(/\s/g, "_")
 }
-let en = Chunk73800.memo(Chunk73800.forwardRef(function(e, t) {
+let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   var n, l, o, u;
   let {
     textValue: p,
@@ -230,11 +230,11 @@ let en = Chunk73800.memo(Chunk73800.forwardRef(function(e, t) {
     var e;
     return null == eM || null == (e = eM.current) ? true : e.hide()
   }, []), {
-    editorHeight: e3,
-    handleResize: e7
+    editorHeight: e8,
+    handleResize: e3
   } = (0, H.oR)(eo), {
-    handleTab: e8,
-    handleEnter: e5,
+    handleTab: e4,
+    handleEnter: e7,
     handleMoveSelection: e6
   } = function(e, t, n) {
     let r = i.useCallback(() => {
@@ -253,7 +253,7 @@ let en = Chunk73800.memo(Chunk73800.forwardRef(function(e, t) {
       }, [n])
     }
   }(e$, eA, eG), {
-    expressionPickerView: e4,
+    expressionPickerView: e5,
     shouldHideExpressionPicker: e9,
     handleAutocompleteVisibilityChange: te,
     handleOuterClick: tt
@@ -366,13 +366,13 @@ let en = Chunk73800.memo(Chunk73800.forwardRef(function(e, t) {
                     allowNewLines: true,
                     "aria-describedby": eb,
                     onChange: en,
-                    onResize: e7,
+                    onResize: e3,
                     onBlur: es,
                     onFocus: ec,
                     onKeyDown: eu,
                     onSubmit: eQ,
-                    onTab: e8,
-                    onEnter: e5,
+                    onTab: e4,
+                    onEnter: e7,
                     onMoveSelection: e6,
                     onSelectionChanged: eK,
                     onMaybeShowAutocomplete: e0,
@@ -471,13 +471,13 @@ let en = Chunk73800.memo(Chunk73800.forwardRef(function(e, t) {
           canSendStickers: true,
           textValue: p,
           focused: q,
-          expressionPickerView: e4,
+          expressionPickerView: e5,
           type: G,
           editorRef: ew,
           onSendMessage: eQ,
           onSendSticker: () => {},
           onVisibilityChange: te,
-          editorHeight: e3,
+          editorHeight: e8,
           setValue: (e, t) => null == en ? true : en(null, e, t),
           position: eC
         }), ex]

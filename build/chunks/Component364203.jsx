@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => ee
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk954955 = require("./954955.js"),
@@ -331,12 +331,12 @@ function J(e) {
 }
 
 function $() {
-  return (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+  return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     direction: "horizontal",
     justify: "space-between",
     className: Chunk839449.footerContainerStack,
     padding: 16,
-    children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
       className: Chunk839449.nonTier2FooterText,
@@ -345,7 +345,7 @@ function $() {
           Chunk626135.default.track(Chunk981631.rMx.CHAT_WALLPAPER_NITRO_LINK_CLICKED), (0, Chunk703656.uL)(Chunk981631.Z5c.NITRO_HOME)
         }
       })
-    }), (0, Chunk255367.jsx)(Chunk784238.Z, {
+    }), (0, Chunk951288.jsx)(Chunk784238.Z, {
       className: Chunk839449.getNitroButton,
       textOptions: {
         textOverride: Chunk388032.intl.string(Chunk388032.t.JST6jo),

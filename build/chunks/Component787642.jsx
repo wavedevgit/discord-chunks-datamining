@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => O
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk703656 = require("./703656.js"),
@@ -45,23 +45,23 @@ function _(e, t, n) {
 
 function O() {
   let e = Chunk430824.Z.getGuildsArray().filter(e => e.features.has(f.oNc.HUB));
-  return (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
-    children: [(0, Chunk255367.jsxs)("header", {
+  return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
+    children: [(0, Chunk951288.jsxs)("header", {
       className: Chunk184904.header,
-      children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
         tag: "h1",
         className: Chunk184904.title,
         children: Chunk388032.intl.string(Chunk388032.t.IuMx1d)
-      }), (0, Chunk255367.jsx)(Chunk481060.R94, {
+      }), (0, Chunk951288.jsx)(Chunk481060.R94, {
         id: b,
         type: Chunk481060.R94.Types.DESCRIPTION,
-        children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           tag: "div",
           variant: "heading-md/normal",
           children: Chunk388032.intl.string(Chunk388032.t.DwevPj)
         })
       })]
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk184904.grid,
       children: [module.map(e => _(d.ZP.getGuildIconURL({
         id: e.id,

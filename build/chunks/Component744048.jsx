@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => v
 }), require("./539854.js"), require("./388685.js");
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk907459 = require("./907459.jsx"),
@@ -43,8 +43,8 @@ let v = function() {
   let [N, C] = (0, Chunk243778.US)(A, Chunk921944.R.SIDEBAR, true), R = N === Chunk704215.z.CLIENT_THEMES_COACHMARK, P = N === Chunk704215.z.CUSTOM_THEME_COACHMARK;
   if ((0, Chunk507962.HA)(v, N), module) return null;
   let w = I ? Chunk884134.Z : Chunk726034.Z;
-  return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-    children: [(T === Chunk550385.wh.CLIENT_THEMES || R) && (0, Chunk255367.jsx)(Chunk724145.Z, {
+  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(T === Chunk550385.wh.CLIENT_THEMES || R) && (0, Chunk951288.jsx)(Chunk724145.Z, {
       markAsDismissed: R ? C : () => {
         (0, Chunk266454.Q3)(Chunk704215.z.CLIENT_THEMES_COACHMARK, {
           dismissAction: Chunk921944.L.INDIRECT_ACTION,
@@ -52,10 +52,10 @@ let v = function() {
         })
       },
       showClientThemesCoachmark: R
-    }), T === Chunk550385.wh.APP_ICON && (0, Chunk255367.jsx)(Chunk907459.Z, {
+    }), T === Chunk550385.wh.APP_ICON && (0, Chunk951288.jsx)(Chunk907459.Z, {
       isCoachmark: false,
       markAsDismissed: C
-    }), (T === Chunk550385.wh.CUSTOM_THEME || P) && (0, Chunk255367.jsx)(w, {
+    }), (T === Chunk550385.wh.CUSTOM_THEME || P) && (0, Chunk951288.jsx)(w, {
       metadata: null != S ? S : {},
       markAsDismissed: C,
       isCoachmark: P

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => T
 }), require("./388685.js"), require("./49124.js"), require("./953529.js"), require("./457542.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk849055 = require("./849055.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
@@ -241,18 +241,18 @@ function T() {
     hasFetchedCredentials: Chunk15980.Z.hasFetchedCredentials(),
     credentials: Chunk15980.Z.getCredentials()
   }));
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     exports || (0, Chunk365007.hL)()
   }, [exports]);
-  let [n, s] = Chunk73800.useState(false);
-  return (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+  let [n, s] = Chunk647438.useState(false);
+  return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     title: Chunk388032.intl.string(Chunk388032.t.y7SXYW),
     className: Chunk421156.settings,
-    children: [(0, Chunk255367.jsx)(Chunk481060.R94, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
       type: Chunk481060.R94.Types.DESCRIPTION,
       className: Chunk421156.description,
       children: Chunk388032.intl.string(Chunk388032.t.TMukAA)
-    }), module.length > 0 && (0, Chunk255367.jsx)("div", {
+    }), module.length > 0 && (0, Chunk951288.jsx)("div", {
       className: Chunk421156.credentialList,
       children: module.map(e => (0, i.jsxs)("div", {
         className: E.credentialItem,
@@ -278,8 +278,8 @@ function T() {
           })
         })]
       }, e.id))
-    }), (0, Chunk255367.jsx)("div", {
-      children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+    }), (0, Chunk951288.jsx)("div", {
+      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         size: "sm",
         text: Chunk388032.intl.string(Chunk388032.t.vrOCCg),

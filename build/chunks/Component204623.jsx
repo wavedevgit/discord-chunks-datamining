@@ -4,11 +4,11 @@
 require.d(exports, {
   Z: () => S
 }), require("./35282.js"), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk525654 = require("./525654.js"),
   o = require.n(Chunk525654),
-  Chunk446431 = require("./446431.js"),
+  Chunk352206 = require("./352206.js"),
   Chunk442837 = require("./442837.js"),
   Chunk336317 = require("./336317.js"),
   Chunk755721 = require("./755721.js"),
@@ -42,7 +42,7 @@ function I() {
 let T = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
   focused: Chunk451478.Z.isFocused()
 }))(Chunk151851.Z);
-class S extends Chunk73800.PureComponent {
+class S extends Chunk647438.PureComponent {
   getPlatform() {
     var e;
     let t = null == (e = o().os) ? true : module.family;
@@ -52,28 +52,28 @@ class S extends Chunk73800.PureComponent {
     I()
   }
   render() {
-    let e = (0, Chunk255367.jsx)("div", {
-        children: (0, Chunk255367.jsxs)("p", {
-          children: [Chunk388032.intl.string(Chunk388032.t["4tRjHB"]), " ", (0, Chunk255367.jsx)(Chunk596454.Z, {
+    let e = (0, Chunk951288.jsx)("div", {
+        children: (0, Chunk951288.jsxs)("p", {
+          children: [Chunk388032.intl.string(Chunk388032.t["4tRjHB"]), " ", (0, Chunk951288.jsx)(Chunk596454.Z, {
             src: Chunk176354.ZP.getURL(Chunk336317.Z.convert.fromCodePoint("1f44c")),
             emojiName: ":ok_hand:",
             animated: false
           })]
         })
       }),
-      t = (0, Chunk255367.jsx)(Chunk755721.zx, {
+      t = (0, Chunk951288.jsx)(Chunk755721.zx, {
         size: Chunk755721.Ph.LARGE,
         onClick: this.handleDownload,
         children: Chunk388032.intl.string(Chunk388032.t["1WjMbG"])
       });
-    return (0, Chunk255367.jsxs)(Chunk73800.Fragment, {
-      children: [(0, Chunk255367.jsx)(Chunk446431.ql, {
-        children: (0, Chunk255367.jsx)("html", {
+    return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
+      children: [(0, Chunk951288.jsx)(Chunk352206.ql, {
+        children: (0, Chunk951288.jsx)("html", {
           className: (0, Chunk481060.QeD)(Chunk981631.BRd.DARK)
         })
-      }), (0, Chunk255367.jsx)(T, {
+      }), (0, Chunk951288.jsx)(T, {
         type: this.getPlatform()
-      }), (0, Chunk255367.jsx)(Chunk406128.Z, {
+      }), (0, Chunk951288.jsx)(Chunk406128.Z, {
         title: Chunk388032.intl.string(Chunk388032.t["3h+n+/"]),
         note: module,
         action: exports

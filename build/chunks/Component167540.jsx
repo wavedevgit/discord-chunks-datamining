@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => x
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -19,14 +19,14 @@ var Chunk255367 = require("./255367.js"),
   Chunk197571 = require("./197571.js");
 
 function b() {
-  return (0, Chunk255367.jsx)(Chunk481060.ToO, {
+  return (0, Chunk951288.jsx)(Chunk481060.ToO, {
     type: Chunk481060.sje.PRIMARY,
     title: Chunk388032.intl.string(Chunk388032.t.XLw6FB),
     body: Chunk388032.intl.string(Chunk388032.t.wVjKGh),
-    button: (0, Chunk255367.jsx)("div", {
+    button: (0, Chunk951288.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: Chunk197571.marginTop20,
-      children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         size: "sm",
         text: Chunk388032.intl.string(Chunk388032.t.BK8LKy),

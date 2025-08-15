@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => p
 });
-var i, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var i, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk846519 = require("./846519.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,7 +20,7 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class h extends(i = Chunk73800.PureComponent) {
+class h extends(i = Chunk647438.PureComponent) {
   componentWillUnmount() {
     this._timeout.stop()
   }
@@ -31,7 +31,7 @@ class h extends(i = Chunk73800.PureComponent) {
     } = this.props, {
       mode: i
     } = this.state, s = i === Chunk481060.kO8.Modes.SUCCESS ? Chunk388032.intl.string(Chunk388032.t["t5VZ8/"]) : require;
-    return (0, Chunk255367.jsx)(Chunk481060.kO8, (e = function(e) {
+    return (0, Chunk951288.jsx)(Chunk481060.kO8, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -45,7 +45,7 @@ class h extends(i = Chunk73800.PureComponent) {
     }({}, this.props), t = t = {
       onCopy: this.handleCopy,
       mode: i,
-      text: Chunk73800,
+      text: Chunk647438,
       supportsCopy: Chunk572004.wS
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
       var n = Object.keys(e);

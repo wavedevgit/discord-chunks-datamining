@@ -1,19 +1,49 @@
-/** Chunk was on 86357 **/
-/** chunk id: 513646, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 3115 **/
+/** chunk id: 513646, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  h: () => a
-}), require("./642613.js");
-var Chunk237292 = require("./237292.js"),
-  Chunk403485 = require("./403485.js"),
-  Chunk604849 = require("./604849.js");
-
-function a(e) {
-  let t = (0, r.y0)({
-      location: "safety-tools-button"
-    }),
-    n = (0, l.c)(),
-    a = (0, i.h)(e);
-  if (!t || !n) return;
-  let o = a.filter(e => null != e.dismiss_timestamp);
-  if (0 !== o.length) return o.sort((e, t) => e.type > t.type || e.dismiss_timestamp < t.dismiss_timestamp ? 1 : false)[0]
+  Z: () => l
+});
+var Chunk647438 = require("./647438.js"),
+  Chunk782497 = require("./782497.js"),
+  Chunk329022 = require("./329022.js"),
+  Chunk962438 = require("./962438.js");
+let l = function(e) {
+  var t = e.colors,
+    r = e.onClick,
+    l = e.onSwatchHover,
+    s = (0, o.default)({
+      default: {
+        swatches: {
+          marginRight: "-10px"
+        },
+        swatch: {
+          width: "22px",
+          height: "22px",
+          float: "left",
+          marginRight: "10px",
+          marginBottom: "10px",
+          borderRadius: "4px"
+        },
+        clear: {
+          clear: "both"
+        }
+      }
+    });
+  return n.createElement("div", {
+    style: s.swatches
+  }, (0, a.Z)(t, function(e) {
+    return n.createElement(i.m4, {
+      key: e,
+      color: e,
+      style: s.swatch,
+      onClick: r,
+      onHover: l,
+      focusStyle: {
+        boxShadow: "0 0 4px " + e
+      }
+    })
+  }), n.createElement("div", {
+    style: s.clear
+  }))
 }

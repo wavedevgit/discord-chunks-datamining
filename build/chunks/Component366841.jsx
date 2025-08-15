@@ -4,8 +4,8 @@
 require.d(exports, {
   G: () => T
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk433517 = require("./433517.js"),
@@ -47,15 +47,15 @@ function v(e) {
 let I = 1e3;
 
 function T() {
-  let [e, t] = Chunk73800.useState(false), O = (0, Chunk481060.VXO)(Chunk596401.Xd), T = Chunk73800.useMemo(() => [Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL], []), [S, A] = (0, Chunk243778.US)(T), N = S === Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL, C = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getId());
-  Chunk73800.useLayoutEffect(() => {
+  let [e, t] = Chunk647438.useState(false), O = (0, Chunk481060.VXO)(Chunk596401.Xd), T = Chunk647438.useMemo(() => [Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL], []), [S, A] = (0, Chunk243778.US)(T), N = S === Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL, C = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getId());
+  Chunk647438.useLayoutEffect(() => {
     null != C && Chunk709054.default.age(C) < Chunk70956.Z.Millis.DAY && (0, Chunk266454.Q3)(Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL);
     let e = "desktop_refresh_theme_migration_key",
       t = "true" === Chunk433517.K.get(module);
     !N || exports || Chunk210887.Z.theme !== Chunk231338.BR.DARK || null != Chunk514361.Z.gradientPreset || exports || (Chunk433517.K.set(module, "true"), (0, Chunk153867.ZI)({
       theme: Chunk231338.BR.DARKER
     }))
-  }, [N, C]), Chunk73800.useLayoutEffect(() => {
+  }, [N, C]), Chunk647438.useLayoutEffect(() => {
     function e() {
       exports(true)
     }
@@ -63,7 +63,7 @@ function T() {
       Chunk570140.Z.unsubscribe("CHANGE_LOG_RESOLVED", module)
     }
   }, []);
-  let R = Chunk73800.useCallback(() => {
+  let R = Chunk647438.useCallback(() => {
     (0, Chunk481060.ZDy)(async () => {
       let {
         DesktopRefreshOnboardingModal: e
@@ -76,7 +76,7 @@ function T() {
       }
     })
   }, [A]);
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     if (N && !O && module) {
       let e = setTimeout(() => {
         R()

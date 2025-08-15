@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => _
 }), require("./704826.js"), require("./35282.js"), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -37,27 +37,27 @@ let m = {
       children: i
     })
   };
-class b extends Chunk73800.PureComponent {
+class b extends Chunk647438.PureComponent {
   render() {
     let {
       region: e,
       selected: t
     } = this.props;
-    return (0, Chunk255367.jsxs)(Chunk600164.Z, {
+    return (0, Chunk951288.jsxs)(Chunk600164.Z, {
       align: Chunk600164.Z.Align.CENTER,
       className: a()({
         selected: exports
       }),
-      children: [(0, Chunk255367.jsx)(g, {
+      children: [(0, Chunk951288.jsx)(g, {
         region: module,
         className: Chunk397660.regionSelectName
-      }), exports ? (0, Chunk255367.jsx)("i", {
+      }), exports ? (0, Chunk951288.jsx)("i", {
         className: Chunk397660.check
       }) : null]
     })
   }
 }
-class y extends Chunk73800.PureComponent {
+class y extends Chunk647438.PureComponent {
   componentDidMount() {
     null == this.props.regions && Chunk771340.Z.fetchRegions(null)
   }
@@ -76,10 +76,10 @@ class y extends Chunk73800.PureComponent {
         value: e,
         key: e.id
       }));
-    return (0, Chunk255367.jsx)(Chunk481060.nsm, {
+    return (0, Chunk951288.jsx)(Chunk481060.nsm, {
       className: Chunk397660.root,
       label: Chunk388032.intl.string(Chunk388032.t.w8gMqq),
-      options: Chunk73800,
+      options: Chunk647438,
       value: require,
       onChange: this.handleChangeVoiceRegion,
       renderOption: this.renderOption,

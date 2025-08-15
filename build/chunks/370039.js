@@ -4,7 +4,7 @@
 require.d(exports, {
   a: () => u
 });
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk399606 = require("./399606.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
@@ -14,7 +14,7 @@ var Chunk73800 = require("./73800.js"),
 let u = () => {
   let e = (0, Chunk399606.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     t = null != module && Chunk74538.ZP.canUseCollectibles(module);
-  return (0, Chunk73800.useCallback)(e => null == e || 0 === e.length ? e : e.filter(e => {
+  return (0, Chunk647438.useCallback)(e => null == e || 0 === e.length ? e : e.filter(e => {
     let {
       isPurchased: r
     } = (0, c.U)(o.Z, e);

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => C
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -45,7 +45,7 @@ function C() {
     fps: y,
     sourceType: O,
     resolution: I
-  }, Z] = (0, Chunk615161.E_)(), w = (0, Chunk544753.Z)(), N = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), [T, E] = null != (e = (0, Chunk396678.Z)(Chunk37113.tI.PRESET_VIDEO)) ? module : [Chunk37113.LY.RESOLUTION_720, Chunk37113.ws.FPS_30], [P, R] = null != (t = (0, Chunk396678.Z)(Chunk37113.tI.PRESET_DOCUMENTS)) ? exports : [Chunk37113.LY.RESOLUTION_SOURCE, Chunk37113.ws.FPS_15], [A, M] = null != (n = (0, Chunk396678.Z)(C)) ? require : [I, y], k = Chunk73800.useMemo(() => C === Chunk37113.tI.PRESET_VIDEO ? T : C === Chunk37113.tI.PRESET_DOCUMENTS ? P : I, [C, T, P, I]), L = Chunk73800.useMemo(() => C === Chunk37113.tI.PRESET_VIDEO ? E : C === Chunk37113.tI.PRESET_DOCUMENTS ? R : y, [C, E, R, y]), D = C === Chunk37113.tI.PRESET_DOCUMENTS, B = Chunk812652.Vf.map(e => {
+  }, Z] = (0, Chunk615161.E_)(), w = (0, Chunk544753.Z)(), N = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), [T, E] = null != (e = (0, Chunk396678.Z)(Chunk37113.tI.PRESET_VIDEO)) ? module : [Chunk37113.LY.RESOLUTION_720, Chunk37113.ws.FPS_30], [P, R] = null != (t = (0, Chunk396678.Z)(Chunk37113.tI.PRESET_DOCUMENTS)) ? exports : [Chunk37113.LY.RESOLUTION_SOURCE, Chunk37113.ws.FPS_15], [A, M] = null != (n = (0, Chunk396678.Z)(C)) ? require : [I, y], k = Chunk647438.useMemo(() => C === Chunk37113.tI.PRESET_VIDEO ? T : C === Chunk37113.tI.PRESET_DOCUMENTS ? P : I, [C, T, P, I]), L = Chunk647438.useMemo(() => C === Chunk37113.tI.PRESET_VIDEO ? E : C === Chunk37113.tI.PRESET_DOCUMENTS ? R : y, [C, E, R, y]), D = C === Chunk37113.tI.PRESET_DOCUMENTS, B = Chunk812652.Vf.map(e => {
     let {
       value: t
     } = e, n = (0, c.Z)(C, t, _.ws.FPS_30, N, w);
@@ -66,11 +66,11 @@ function C() {
       className: t ? true : S.premiumOption
     }
   });
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk189822.root,
-    children: [(0, Chunk255367.jsx)(b, {
+    children: [(0, Chunk951288.jsx)(b, {
       label: Chunk388032.intl.string(Chunk637824.default["7eHfrq"]),
-      children: (0, Chunk255367.jsx)(Chunk481060.PhF, {
+      children: (0, Chunk951288.jsx)(Chunk481060.PhF, {
         isSelected: e => C === e,
         serialize: e => String(e),
         select: e => {
@@ -94,9 +94,9 @@ function C() {
           }
         })
       })
-    }), (0, Chunk255367.jsx)(b, {
+    }), (0, Chunk951288.jsx)(b, {
       label: Chunk388032.intl.string(Chunk637824.default.PYBXFR),
-      children: (0, Chunk255367.jsx)(Chunk481060.sY7, {
+      children: (0, Chunk951288.jsx)(Chunk481060.sY7, {
         className: Chunk189822.segmentedControl,
         options: B,
         look: "pill",
@@ -115,9 +115,9 @@ function C() {
           })
         }(e.value)
       })
-    }), (0, Chunk255367.jsx)(b, {
+    }), (0, Chunk951288.jsx)(b, {
       label: Chunk388032.intl.string(Chunk637824.default["/ssDMT"]),
-      children: (0, Chunk255367.jsx)(Chunk481060.sY7, {
+      children: (0, Chunk951288.jsx)(Chunk481060.sY7, {
         className: Chunk189822.segmentedControl,
         disabled: D,
         options: U,

@@ -3,8 +3,8 @@
 require.d(exports, {
   t: () => S
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk636977 = require("./636977.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -37,7 +37,7 @@ function S() {
   } = (0, Chunk442837.cj)([Chunk594174.default], () => ({
     user: Chunk594174.default.getCurrentUser()
   })), I = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()), P = (0, Chunk275388.GE)(x), N = (0, Chunk74538.EO)(S) || I || P, [w, Z] = (0, Chunk243778.US)(module && !N ? [Chunk704215.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...Chunk331663.b.useSelectedDismissibleContent);
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     w !== Chunk704215.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL || exports || (Chunk570140.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
     }), (0, Chunk952265.ZD)(async () => {

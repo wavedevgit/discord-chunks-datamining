@@ -3,8 +3,8 @@
 require.r(exports), require.d(exports, {
   default: () => k
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk37234 = require("./37234.js"),
   Chunk503089 = require("./503089.jsx"),
@@ -60,7 +60,7 @@ let T = {
   isOwnerWithRequiredMfaLevel: false,
   isGuildAdmin: false
 };
-class I extends Chunk73800.PureComponent {
+class I extends Chunk647438.PureComponent {
   componentDidMount() {
     L(this.props.section, null, this.props.analyticsLocation)
   }
@@ -139,16 +139,16 @@ class I extends Chunk73800.PureComponent {
       }),
       L = (null == (n = Chunk981631.find(e => e.section === a)) || null == (e = exports.predicate) ? true : module.call(exports)) !== false,
       T = (0, Chunk978946.r)();
-    return (0, Chunk255367.jsxs)("div", {
-      children: [(0, Chunk255367.jsx)(Chunk503089.ZP, {
+    return (0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk951288.jsx)(Chunk503089.ZP, {
         theme: require,
-        sidebarTheme: Chunk73800,
+        sidebarTheme: Chunk647438,
         section: L && null != Chunk442837 ? Chunk442837 : T,
         onSetSection: Chunk434404.Z.setSection,
         onClose: Chunk37234.xf,
         title: "" !== Chunk100527.name ? Chunk100527.name : Chunk388032.intl.string(Chunk388032.t["154/bG"]),
         sections: Chunk981631
-      }), (0, Chunk255367.jsx)(Chunk918658.d, {
+      }), (0, Chunk951288.jsx)(Chunk918658.d, {
         guildId: Chunk100527.id
       })]
     })
@@ -166,13 +166,13 @@ function k() {
   } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), {
     analyticsLocations: x
   } = (0, Chunk906732.ZP)(Chunk100527.Z.GUILD_SETTINGS), D = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), L = (0, Chunk984802.Ll)(), k = (0, Chunk442837.e7)([Chunk984933.ZP], () => null != Chunk37234 ? Chunk984933.ZP.getChannels(Chunk37234.id).SELECTABLE : null, [Chunk37234]), K = (0, Chunk442837.cj)([Chunk496675.Z], () => null != Chunk37234 ? Chunk496675.Z.getGuildPermissionProps(Chunk37234) : T), _ = null == Chunk37234 ? true : Chunk37234.id, R = (0, Chunk442837.e7)([Chunk496675.Z], () => null != Chunk37234 && Chunk496675.Z.canAccessGuildSettings(Chunk37234));
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     Chunk896007 || null == _ || (0, Chunk456268.aC)(_)
   }, [Chunk896007, _]);
   let U = null != (e = null == Chunk37234 ? true : Chunk37234.features.has(Chunk981631.oNc.COMMUNITY)) && module;
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     null != _ && U && ((0, Chunk745752.eM)(_), (0, Chunk524329.RM)(_))
-  }, [_, U]), Chunk73800.useEffect(() => {
+  }, [_, U]), Chunk647438.useEffect(() => {
     null != _ && (0, Chunk526120.cP)(_)
   }, [_]);
   let B = (0, Chunk442837.e7)([Chunk409059.Z], () => {
@@ -180,9 +180,9 @@ function k() {
       return (null == Chunk37234 ? true : Chunk37234.id) != null && (null == (e = Chunk409059.Z.getForGuild(Chunk37234.id)) ? true : module.isDirty) === true
     }, [Chunk37234]),
     F = (0, Chunk442837.e7)([Chunk650774.Z], () => Chunk650774.Z.getMemberCount(null == Chunk37234 ? true : Chunk37234.id), [Chunk37234]);
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     null != _ && K.canManageGuild && Chunk751189.Z.loadTemplatesForGuild(_)
-  }, [_, K.canManageGuild]), Chunk73800.useEffect(() => {
+  }, [_, K.canManageGuild]), Chunk647438.useEffect(() => {
     R || Chunk434404.Z.close()
   }, [R]);
   let W = (0, Chunk442837.e7)([Chunk359191.Z], () => Chunk359191.Z.getCurrentPage()),
@@ -190,9 +190,9 @@ function k() {
     Y = (0, Chunk442837.e7)([Chunk995532.Z], () => null != _ && Chunk995532.Z.isEmpty(_)),
     q = (0, Chunk163400.F)(_).length > 0,
     J = (0, Chunk190263.o)(Chunk37234);
-  return (0, Chunk255367.jsx)(Chunk906732.Gt, {
+  return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: Chunk978946,
-    children: (0, Chunk255367.jsx)(I, (n = function(e) {
+    children: (0, Chunk951288.jsx)(I, (n = function(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {},
           l = Object.keys(t);

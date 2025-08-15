@@ -4,8 +4,8 @@
 require.d(exports, {
   B: () => g
 }), require("./388685.js"), require("./539854.js");
-var Chunk73800 = require("./73800.js"),
-  Chunk114858 = require("./114858.js"),
+var Chunk647438 = require("./647438.js"),
+  Chunk843611 = require("./843611.js"),
   Chunk335818 = require("./335818.js"),
   Chunk822857 = require("./822857.js"),
   Chunk870289 = require("./870289.js"),
@@ -28,21 +28,21 @@ let p = {
       setItemTypeFilter: g,
       reset: f,
       setCurrentTab: b
-    } = (0, s.S)(), h = n.useMemo(() => e !== u.AW.ORBS || r ? (0, u.RE)(e) && a ? u.AW.CATALOG : e : u.AW.HOME, [e, r, a]), [m, _] = n.useState(h), [v, O] = n.useState(u.f7.VISIBLE);
+    } = (0, s.S)(), m = n.useMemo(() => e !== u.AW.ORBS || r ? (0, u.RE)(e) && a ? u.AW.CATALOG : e : u.AW.HOME, [e, r, a]), [h, _] = n.useState(m), [v, O] = n.useState(u.f7.VISIBLE);
     n.useEffect(() => {
-      b(m)
-    }, [m, b]), n.useEffect(() => {
-      _(h)
-    }, [h]);
+      b(h)
+    }, [h, b]), n.useEffect(() => {
+      _(m)
+    }, [m]);
     let {
       clearError: C
-    } = (0, c.a)(), E = (0, l.k6)(), S = n.useCallback(async (e, r) => {
+    } = (0, c.a)(), E = (0, l.k6)(), y = n.useCallback(async (e, r) => {
       if (C(), e === u.AW.CATALOG) f();
-      else if ((0, u.RE)(e) && e !== m) {
+      else if ((0, u.RE)(e) && e !== h) {
         let t = p[e];
         null != t ? g(t) : f()
       }
-      if (m === e) return;
+      if (h === e) return;
       if (r) {
         let e;
         O(u.f7.OUT), await (e = 1.1 * u.lb, new Promise(t => setTimeout(t, e)))
@@ -51,10 +51,10 @@ let p = {
       _(n), r && O(u.f7.IN), t || E.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(n), {
         shallow: true
       }), O(u.f7.VISIBLE)
-    }, [E, t, a, g, f, m, C]);
+    }, [E, t, a, g, f, h, C]);
     return {
-      selectedTab: m,
+      selectedTab: h,
       transitionState: v,
-      transitionToTab: S
+      transitionToTab: y
     }
   }

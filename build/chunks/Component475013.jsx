@@ -4,8 +4,8 @@ require.d(exports, {
   Z: () => I,
   _: () => N
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -33,14 +33,14 @@ let N = () => {
   let {
     guild: e
   } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), t = (0, Chunk442837.e7)([Chunk946724.Z], () => Chunk946724.Z.formState), n = (0, Chunk442837.e7)([Chunk946724.Z], () => Chunk946724.Z.errorMessage);
-  return (0, Chunk255367.jsx)(Chunk852860.Z, {
+  return (0, Chunk951288.jsx)(Chunk852860.Z, {
     errorMessage: require,
     onSave: () => {
       if (null == module) return;
       let {
         id: t
       } = module, n = Chunk946724.Z.editedRoleIds.map(e => f.Z.getRole(e)).filter(Chunk823379.lm), r = Chunk946724.Z.getSortDeltas(), i = null, l = null;
-      Chunk946724.Z.hasRoleConfigurationChanges && (l = Chunk946724.Z.editedRoleIdsForConfigurations, i = Chunk946724.Z.getEditedRoleConnectionConfigurationsMap()), (0, Chunk764260.Gf)(exports, require, Chunk255367, Chunk512722, Chunk73800)
+      Chunk946724.Z.hasRoleConfigurationChanges && (l = Chunk946724.Z.editedRoleIdsForConfigurations, i = Chunk946724.Z.getEditedRoleConnectionConfigurationsMap()), (0, Chunk764260.Gf)(exports, require, Chunk951288, Chunk512722, Chunk647438)
     },
     submitting: exports === Chunk981631.QZA.SUBMITTING,
     onReset: Chunk764260.S1

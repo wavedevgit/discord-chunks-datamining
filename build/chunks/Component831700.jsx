@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => en
 }), require("./388685.js"), require("./415506.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -125,13 +125,13 @@ class ee extends Chunk98597.ZP {
     } = this.props, o = null == (e = (0, Chunk873696.D)(this.props.subtitle)) ? true : module.subtitle, {
       hovered: a
     } = this.state;
-    return (0, Chunk255367.jsx)(Chunk653577.Z, {
+    return (0, Chunk951288.jsx)(Chunk653577.Z, {
       onClick: this.handleVoiceStatusClick,
       channel: exports,
       connected: require,
       subtitle: o,
       hovered: Chunk442837,
-      enableHangStatus: Chunk73800,
+      enableHangStatus: Chunk647438,
       allowChannelTopic: Chunk120356
     })
   }
@@ -143,12 +143,12 @@ class ee extends Chunk98597.ZP {
       withGuildIcon: i,
       tabIndex: l
     } = this.props;
-    return (0, Chunk255367.jsx)(Chunk207055.Z, {
+    return (0, Chunk951288.jsx)(Chunk207055.Z, {
       channel: module,
       collapsed: require,
       collapsedMax: 6,
       voiceStates: exports,
-      withGuildIcon: Chunk73800,
+      withGuildIcon: Chunk647438,
       tabIndex: Chunk120356,
       location: Chunk981631.Sbl.GUILD_CHANNEL_LIST
     })
@@ -157,7 +157,7 @@ class ee extends Chunk98597.ZP {
     let {
       channelInfo: e
     } = this.props;
-    return null == module ? null : (0, Chunk255367.jsx)("div", {
+    return null == module ? null : (0, Chunk951288.jsx)("div", {
       className: Chunk55940.channelInfo,
       children: module
     })
@@ -190,23 +190,23 @@ class ee extends Chunk98597.ZP {
       shouldShowGuildVerificationPopout: I
     } = this.state, N = (0, Chunk340541.jW)({
       location: "voice_channel"
-    }).entrypoints, w = this.getVoiceStatesCount(), T = (0, Chunk255367.jsxs)("li", {
+    }).entrypoints, w = this.getVoiceStatesCount(), T = (0, Chunk951288.jsxs)("li", {
       ref: this.ref,
       className: o()(this.getModeClass(), {
         [Chunk55940.disabled]: this.isDisabled()
       }),
       "data-dnd-name": module.name,
-      children: [(0, Chunk255367.jsx)("div", {
+      children: [(0, Chunk951288.jsx)("div", {
         onMouseEnter: this.handleMouseEnter,
         onMouseLeave: this.handleMouseLeave,
-        children: (0, Chunk255367.jsx)(Chunk481060.yRy, {
+        children: (0, Chunk951288.jsx)(Chunk481060.yRy, {
           targetElementRef: this.channelItemRef,
           position: "right",
           renderPopout: this.renderPopout,
           spacing: 0,
           onRequestClose: this.closeGuildVerificationPopout,
           shouldShow: Chunk378844 && !Chunk475179 && !Chunk239091 && !Chunk574176 || Chunk574176,
-          children: () => (0, Chunk255367.jsx)(Chunk481060.ua7, {
+          children: () => (0, Chunk951288.jsx)(Chunk481060.ua7, {
             text: this.getTooltipText(),
             children: c => {
               var {
@@ -277,7 +277,7 @@ class ee extends Chunk98597.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return Chunk557135 && (T = Chunk619915(Chunk695346)), Chunk933557 && (T = Chunk146773(Chunk888651(Chunk695346))), Chunk873696 && (T = (0, Chunk255367.jsx)(Chunk155409.Z, {
+    return Chunk557135 && (T = Chunk619915(Chunk695346)), Chunk933557 && (T = Chunk146773(Chunk888651(Chunk695346))), Chunk873696 && (T = (0, Chunk951288.jsx)(Chunk155409.Z, {
       childRef: this.ref,
       tutorialId: "voice-conversations",
       position: "right",

@@ -4,8 +4,8 @@ require.d(exports, {
   E: () => P,
   Z: () => N
 }), require("./388685.js"), require("./539854.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
@@ -98,7 +98,7 @@ let x = {
     })
   }
 };
-class S extends Chunk73800.PureComponent {
+class S extends Chunk647438.PureComponent {
   renderText() {
     let {
       state: e,
@@ -106,7 +106,7 @@ class S extends Chunk73800.PureComponent {
     } = this.props;
     if (module.type === Chunk981631.vxO.UPDATING || module.type === Chunk981631.vxO.REPAIRING || module.type === Chunk981631.vxO.INSTALLING) {
       if (exports) return Chunk388032.intl.string(Chunk388032.t["5oxtFR"]);
-      else if (module.stage === Chunk981631.f07.PATCHING || module.stage === Chunk981631.f07.REPAIRING) return (0, Chunk255367.jsx)(Chunk353042.Z, {
+      else if (module.stage === Chunk981631.f07.PATCHING || module.stage === Chunk981631.f07.REPAIRING) return (0, Chunk951288.jsx)(Chunk353042.Z, {
         getHistoricalTotalBytes: Chunk417363.Z.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
         children: this.renderProgressBody
@@ -146,7 +146,7 @@ class S extends Chunk73800.PureComponent {
     })
   }
 }
-class I extends(r = Chunk73800.PureComponent) {
+class I extends(r = Chunk647438.PureComponent) {
   componentWillAppear(e) {
     this.state.animationScale.setValue(1), e()
   }
@@ -168,7 +168,7 @@ class I extends(r = Chunk73800.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == module || null == exports ? Chunk388032.intl.string(Chunk388032.t.cw57am) : (0, Chunk255367.jsx)(S, {
+    return null == module || null == exports ? Chunk388032.intl.string(Chunk388032.t.cw57am) : (0, Chunk951288.jsx)(S, {
       application: module,
       state: exports,
       isPaused: require
@@ -180,7 +180,7 @@ class I extends(r = Chunk73800.PureComponent) {
       isPaused: t,
       className: n
     } = this.props;
-    return (0, Chunk255367.jsx)(Chunk748780.Z.div, {
+    return (0, Chunk951288.jsx)(Chunk748780.Z.div, {
       style: {
         transform: [{
           scale: this.state.animationScale
@@ -188,7 +188,7 @@ class I extends(r = Chunk73800.PureComponent) {
       },
       className: a()(require, Chunk820093.progressContainer),
       onClick: this.handleOnClick,
-      children: (0, Chunk255367.jsx)(Chunk481060.ua7, {
+      children: (0, Chunk951288.jsx)(Chunk481060.ua7, {
         text: this.getTooltipText(),
         position: "right",
         "aria-label": false,

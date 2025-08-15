@@ -4,7 +4,7 @@ require.d(exports, {
   S: () => i,
   a: () => l
 }), require("./388685.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk237617 = require("./237617.js"),
   Chunk266338 = require("./266338.js");
 let a = {};
@@ -29,9 +29,9 @@ function i(e, t) {
 }
 
 function l() {
-  let [e, t] = (0, Chunk73800.useState)(false);
+  let [e, t] = (0, Chunk647438.useState)(false);
   return {
-    ref: i((0, Chunk73800.useCallback)(e => {
+    ref: i((0, Chunk647438.useCallback)(e => {
       t(e.isIntersecting)
     }, [])),
     inViewport: module

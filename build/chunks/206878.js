@@ -3,7 +3,7 @@
 require.d(exports, {
   g: () => j
 }), require("./388685.js"), require("./35282.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk281598 = require("./281598.js");
 
 function l(e) {
@@ -37,7 +37,7 @@ function i(e, t) {
     Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(t, a))
   }), e
 }
-let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Chunk281598.jE.PDP_BACKGROUND, Chunk281598.jE.PDP_LOGO, Chunk281598.jE.MOBILE_BANNER, Chunk281598.jE.MOBILE_BACKGROUND]),
+let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Chunk281598.jE.PDP_BACKGROUND, Chunk281598.jE.LOGO, Chunk281598.jE.MOBILE_BANNER, Chunk281598.jE.MOBILE_BACKGROUND]),
   o = ["intro", "idle", "reduced_motion", "static", "thumbnail"],
   c = {
     max: 5e6,
@@ -77,7 +77,7 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
     [Chunk281598.jE.MOBILE_BANNER]: m,
     [Chunk281598.jE.MOBILE_BACKGROUND]: x,
     [Chunk281598.jE.PDP_BACKGROUND]: x,
-    [Chunk281598.jE.PDP_LOGO]: x,
+    [Chunk281598.jE.LOGO]: x,
     [Chunk281598.jE.COACHTIP_AVATAR]: x
   },
   p = async e => {
@@ -105,7 +105,7 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
     if (null != r)
       for (let e of t) e.name.endsWith(".txt") || v(r, e, a, n)
   }, j = () => {
-    let [e, t] = Chunk73800.useState(false), [a, c] = Chunk73800.useState({}), [d, u] = Chunk73800.useState({}), m = Chunk73800.useCallback(function(e) {
+    let [e, t] = Chunk647438.useState(false), [a, c] = Chunk647438.useState({}), [d, u] = Chunk647438.useState({}), m = Chunk647438.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
       u(a => {
         var n;
@@ -114,7 +114,7 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
           [e]: [...r, ...t]
         })
       })
-    }, []), x = Chunk73800.useCallback(function(e) {
+    }, []), x = Chunk647438.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
       c(a => {
         var n;
@@ -123,14 +123,14 @@ let s = new Set([Chunk281598.jE.SHOP_ALL_BANNER_STATIC, Chunk281598.jE.HERO_BANN
           [e]: [...r, ...t]
         })
       })
-    }, []), j = Chunk73800.useCallback(() => {
+    }, []), j = Chunk647438.useCallback(() => {
       exports(false), u({}), c({})
     }, []);
     return {
       validationComplete: module,
       errors: d,
       warnings: require,
-      validateShopAssetPackage: Chunk73800.useCallback(async e => {
+      validateShopAssetPackage: Chunk647438.useCallback(async e => {
         try {
           var a;
           if (0 === e.length) return void m("No files found");

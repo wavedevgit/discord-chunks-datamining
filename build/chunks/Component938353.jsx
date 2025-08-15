@@ -3,10 +3,10 @@
 require.d(exports, {
   $p: () => e9,
   BB: () => e6,
-  ZP: () => e4
+  ZP: () => e7
 }), require("./388685.js"), require("./997841.js"), require("./35282.js"), require("./415506.js"), require("./361932.js"), require("./187205.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk275726 = require("./275726.js"),
@@ -145,13 +145,13 @@ function e1(e, t) {
 }
 
 function e3() {
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk636428.nitroFileSizeUpsell,
-    children: [(0, Chunk255367.jsx)("img", {
+    children: [(0, Chunk951288.jsx)("img", {
       src: Chunk680674,
       className: Chunk636428.nitroBadgeSvg,
       alt: ""
-    }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       children: Chunk388032.intl.format(Chunk388032.t["G/H+s7"], {
@@ -160,10 +160,10 @@ function e3() {
     })]
   })
 }
-let e2 = [Chunk981631.hBH.GIFV],
-  e5 = 15 * Chunk70956.Z.Millis.MINUTE,
-  e8 = new Set(["discord-developers", "discord-testers", "discord-townhall", "discordgameslab"]),
-  e7 = e => () => {
+let e8 = [Chunk981631.hBH.GIFV],
+  e2 = 15 * Chunk70956.Z.Millis.MINUTE,
+  e4 = new Set(["discord-developers", "discord-testers", "discord-townhall", "discordgameslab"]),
+  e5 = e => () => {
     let {
       url: t,
       proxyUrl: n,
@@ -180,12 +180,12 @@ let e2 = [Chunk981631.hBH.GIFV],
       className: eQ.gifFavoriteButton
     }) : null
   };
-class e6 extends(r = Chunk73800.Component) {
+class e6 extends(r = Chunk647438.Component) {
   shouldRenderInvite(e) {
     let {
       channel: t
     } = this.props;
-    return !(t.isDM() && !t.isSystemDM() && !t.isGroupDM() && e8.has(e))
+    return !(t.isDM() && !t.isSystemDM() && !t.isGroupDM() && e4.has(e))
   }
   shouldComponentUpdate(e, t) {
     var n, r;
@@ -219,20 +219,20 @@ class e6 extends(r = Chunk73800.Component) {
     } = this.props, r = null;
     switch (require) {
       case Chunk594173.aD.MARK_AS_FALSE_POSITIVE:
-        r = (0, Chunk255367.jsx)(Chunk674611.Z, {
+        r = (0, Chunk951288.jsx)(Chunk674611.Z, {
           messageId: module.id,
           channelId: exports.id
         });
         break;
       case Chunk594173.aD.AGE_VERIFICATION_RETRY:
-        r = (0, Chunk255367.jsx)(Chunk183431.Z, {
+        r = (0, Chunk951288.jsx)(Chunk183431.Z, {
           channelId: exports.id
         });
         break;
       default:
         return null
     }
-    return (0, Chunk255367.jsx)("div", {
+    return (0, Chunk951288.jsx)("div", {
       className: Chunk636428.ctaButtonContainer,
       children: r
     })
@@ -432,7 +432,7 @@ class e6 extends(r = Chunk73800.Component) {
               duration: r
             })
           },
-          gifFavoriteButton: e7(o),
+          gifFavoriteButton: e5(o),
           isSearchResult: this.props.isSearchResult
         },
         c = (0, eg.q)({
@@ -480,7 +480,7 @@ class e6 extends(r = Chunk73800.Component) {
     } = this.props;
     return (0, i.jsx)(ek.F, {
       gifAutoPlay: t,
-      getGifFavButton: e7,
+      getGifFavButton: e5,
       getOnMediaItemContextMenu: null == a ? true : e => t => {
         t.stopPropagation(), t.preventDefault(), null == a || a(t, e)
       },
@@ -536,7 +536,7 @@ class e6 extends(r = Chunk73800.Component) {
     })
   }
   renderThreadRoleMentionWarning(e) {
-    if (e.hasFlag(eK.iLy.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD) && this.props.isCurrentUser && !(Date.now() - ev.default.extractTimestamp(e.id) >= e5)) return (0, i.jsx)("div", {
+    if (e.hasFlag(eK.iLy.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD) && this.props.isCurrentUser && !(Date.now() - ev.default.extractTimestamp(e.id) >= e2)) return (0, i.jsx)("div", {
       className: eQ.threadRoleMentionFailure,
       children: eq.intl.string(eq.t.ma8Rs7)
     })
@@ -546,7 +546,7 @@ class e6 extends(r = Chunk73800.Component) {
       channel: e,
       message: t
     } = this.props;
-    return (0, Chunk255367.jsxs)(Chunk481060.sYh, {
+    return (0, Chunk951288.jsxs)(Chunk481060.sYh, {
       dismissable: true,
       header: Chunk388032.intl.string(Chunk388032.t.VL1KOj),
       confirmText: Chunk388032.intl.string(Chunk388032.t.YEHppK),
@@ -559,12 +559,12 @@ class e6 extends(r = Chunk73800.Component) {
           showSuppressModal: false
         })
       },
-      children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-default",
         className: Chunk636428.confirmText,
         children: Chunk388032.intl.string(Chunk388032.t["vXZ+Fh"])
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: Chunk388032.intl.string(Chunk388032.t["5j2by8"])
@@ -580,7 +580,7 @@ class e6 extends(r = Chunk73800.Component) {
     } = this.state;
     return null == require ? void this.setState({
       showRemoveAttachmentModal: false
-    }) : (0, Chunk255367.jsx)(Chunk481060.sYh, {
+    }) : (0, Chunk951288.jsx)(Chunk481060.sYh, {
       dismissable: true,
       header: Chunk388032.intl.string(Chunk388032.t.CbTIEh),
       confirmText: Chunk388032.intl.string(Chunk388032.t.kFwAsb),
@@ -596,7 +596,7 @@ class e6 extends(r = Chunk73800.Component) {
           attachmentToDelete: null
         })
       },
-      children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-default",
         className: Chunk636428.confirmText,
@@ -678,10 +678,10 @@ class e6 extends(r = Chunk73800.Component) {
       showSuppressModal: l,
       showRemoveAttachmentModal: a
     } = this.state, s = this.renderEditedTag(exports, r), c = this.renderCodedLinks(exports), u = this.renderGiftCodes(exports), d = this.renderReferralTrial(exports), p = this.renderAttachments(exports), m = this.renderCtaButton(), f = this.renderSocialProofingFileSizeNitroUpsell(exports), _ = this.renderEmbeds(exports), g = this.renderActivityInvite(exports), h = this.renderReactions(exports), b = this.renderPublishBump(exports), E = this.renderEphemeralAccessories(exports), C = this.renderStickersAccessories(exports), v = this.renderThreadAccessories(exports), O = this.renderComponentAccessories(exports), y = this.renderThreadRoleMentionWarning(exports), x = this.renderEmbeddedApplicationInstanceEmbed(exports), j = this.renderInteractionPremiumUpsell(exports), I = this.renderMediaPostEmbeds(exports), S = this.renderSafetyPolicyNotice(exports), T = this.renderSafetySystemNotification(exports), P = this.renderMediaObscureNotice(exports), N = this.renderPoll(exports, require), A = this.renderForwardedMessage(exports), w = this.renderReportedMessage(exports);
-    return null == Chunk442837 && null == Chunk481060 && null == Chunk626799 && null == Chunk624367 && null == Chunk183431 && null == Chunk377108 && null == Chunk902704 && null == Chunk421474 && null == Chunk603270 && null == Chunk234431 && null == Chunk162297 && null == Chunk222709 && null == Chunk960904 && null == Chunk446411 && null == Chunk247206 && null == Chunk629710 && null != Chunk161314 && null == Chunk674611 && null == Chunk294734 && null == Chunk947849 ? null : (0, Chunk255367.jsxs)("div", {
+    return null == Chunk442837 && null == Chunk481060 && null == Chunk626799 && null == Chunk624367 && null == Chunk183431 && null == Chunk377108 && null == Chunk902704 && null == Chunk421474 && null == Chunk603270 && null == Chunk234431 && null == Chunk162297 && null == Chunk222709 && null == Chunk960904 && null == Chunk446411 && null == Chunk247206 && null == Chunk629710 && null != Chunk161314 && null == Chunk674611 && null == Chunk294734 && null == Chunk947849 ? null : (0, Chunk951288.jsxs)("div", {
       id: (0, Chunk453687.bX)(exports),
       className: o()(module, Chunk636428.container),
-      children: [Chunk947849, Chunk294734, Chunk446411, Chunk674611, Chunk442837, Chunk377108, Chunk902704, Chunk247206, Chunk481060, Chunk904245, Chunk626799, Chunk761538, Chunk624367, Chunk234431, Chunk222709, Chunk960904, Chunk161314, Chunk637374, Chunk275726, Chunk183431, Chunk421474, Chunk603270, Chunk73800 && this.renderSuppressConfirmModal(), Chunk120356 && this.renderRemoveAttachmentConfirmModal(), Chunk162297, Chunk629710, Chunk262777]
+      children: [Chunk947849, Chunk294734, Chunk446411, Chunk674611, Chunk442837, Chunk377108, Chunk902704, Chunk247206, Chunk481060, Chunk904245, Chunk626799, Chunk761538, Chunk624367, Chunk234431, Chunk222709, Chunk960904, Chunk161314, Chunk637374, Chunk275726, Chunk183431, Chunk421474, Chunk603270, Chunk647438 && this.renderSuppressConfirmModal(), Chunk120356 && this.renderRemoveAttachmentConfirmModal(), Chunk162297, Chunk629710, Chunk262777]
     })
   }
   constructor(...e) {
@@ -713,7 +713,7 @@ class e6 extends(r = Chunk73800.Component) {
         shouldAgeVerify: f
       } = this.props, _ = (0, ex.BP)(e, r, d, p);
       if (e.type === eK.hBH.GIFT) return null;
-      let g = e2.includes(e.type) ? e.url : null != (o = null == (l = e.image) ? true : l.url) ? o : null == (a = e.video) ? true : a.url;
+      let g = e8.includes(e.type) ? e.url : null != (o = null == (l = e.image) ? true : l.url) ? o : null == (a = e.video) ? true : a.url;
       return (0, i.jsx)(w.h.Provider, {
         value: (0, eW.P)(g, e.image, e.video),
         children: (0, i.jsx)(y.ZP, e0({
@@ -759,7 +759,7 @@ class e6 extends(r = Chunk73800.Component) {
   }
 }
 
-function e4(e) {
+function e7(e) {
   var t;
   let {
     channel: n,

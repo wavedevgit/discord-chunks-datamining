@@ -3572,7 +3572,7 @@ class e3 extends Chunk495852.C {
   }
 }
 let e4 = new e3;
-class e5 extends Chunk495852.C {
+class e8 extends Chunk495852.C {
   create(e) {
     let t = {
       feedGeneratedAt: "0"
@@ -3611,8 +3611,8 @@ class e5 extends Chunk495852.C {
     }])
   }
 }
-let e6 = new e5;
-class e8 extends Chunk495852.C {
+let e6 = new e8;
+class e5 extends Chunk495852.C {
   create(e) {
     let t = {
       appSettings: {}
@@ -3674,7 +3674,7 @@ class e8 extends Chunk495852.C {
     }])
   }
 }
-let e7 = new e8;
+let e7 = new e5;
 class e9 extends Chunk495852.C {
   create(e) {
     let t = {};

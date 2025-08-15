@@ -6,8 +6,8 @@ require.d(exports, {
   ag: () => T,
   u8: () => b
 }), require("./539854.js"), require("./388685.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -119,7 +119,7 @@ function R() {
       return y
   }
 }
-class P extends(r = Chunk73800.PureComponent) {
+class P extends(r = Chunk647438.PureComponent) {
   renderUsers() {
     let {
       users: e,
@@ -130,12 +130,12 @@ class P extends(r = Chunk73800.PureComponent) {
     } = this.props, o = [], s = module.length === exports ? module.length : exports - 1, l = this.renderMoreUsers(s), u = 0;
     for (; Chunk670188 < s && Chunk670188 < module.length;) {
       var d;
-      let t = null == Chunk481060 && null == Chunk73800 && Chunk670188 === module.length - 1,
+      let t = null == Chunk481060 && null == Chunk647438 && Chunk670188 === module.length - 1,
         s = require(module[Chunk670188], exports, Chunk670188);
-      Chunk120356.push(exports ? (0, Chunk255367.jsx)("div", {
+      Chunk120356.push(exports ? (0, Chunk951288.jsx)("div", {
         className: Chunk245141.avatarContainer,
         children: s
-      }, S(null != (d = module[Chunk670188]) ? Chunk598077 : null, Chunk670188)) : (0, Chunk255367.jsx)(Chunk686546.ZP, {
+      }, S(null != (d = module[Chunk670188]) ? Chunk598077 : null, Chunk670188)) : (0, Chunk951288.jsx)(Chunk686546.ZP, {
         className: Chunk245141.avatarContainerMasked,
         height: r,
         width: r,
@@ -143,7 +143,7 @@ class P extends(r = Chunk73800.PureComponent) {
         children: s
       }, S(module[Chunk670188], Chunk670188))), Chunk670188++
     }
-    return null != Chunk73800 ? Chunk120356.push(Chunk73800) : null != Chunk481060 && Chunk120356.push(Chunk481060), Chunk120356
+    return null != Chunk647438 ? Chunk120356.push(Chunk647438) : null != Chunk481060 && Chunk120356.push(Chunk481060), Chunk120356
   }
   renderMoreUsers(e) {
     let {
@@ -174,7 +174,7 @@ class P extends(r = Chunk73800.PureComponent) {
     }
   }
   renderIcon() {
-    return this.props.renderIcon ? (0, Chunk255367.jsx)(Chunk481060.gj8, {
+    return this.props.renderIcon ? (0, Chunk951288.jsx)(Chunk481060.gj8, {
       size: "md",
       color: "currentColor",
       colorClass: Chunk245141.__invalid_foreground,
@@ -192,19 +192,19 @@ class P extends(r = Chunk73800.PureComponent) {
     } = this.props, {
       popoutUserId: l
     } = this.state;
-    if (null == Chunk481060) return (0, Chunk255367.jsxs)("div", {
+    if (null == Chunk481060) return (0, Chunk951288.jsxs)("div", {
       className: s()(module, Chunk245141.container, C(exports)),
       children: [this.renderIcon(), this.renderUsers()]
     });
     let c = require.find(e => e instanceof d.Z && e.id === l),
       _ = Chunk120356 && null == Chunk594174.default.getUser(Chunk481060);
-    return (0, Chunk255367.jsx)(Chunk670188.Z, {
+    return (0, Chunk951288.jsx)(Chunk670188.Z, {
       targetElementRef: this._ref,
       userId: Chunk481060,
       user: Chunk426563 && null != Chunk686546 ? Chunk686546 : true,
       guildId: r,
       fixed: true,
-      shouldShow: true === Chunk73800 && null != Chunk481060,
+      shouldShow: true === Chunk647438 && null != Chunk481060,
       onRequestClose: () => this.setState({
         popoutUserId: null
       }),

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => p
 }), require("./388685.js");
-var s, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var s, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
@@ -20,7 +20,7 @@ function u(t, e, i) {
     writable: true
   }) : t[e] = i, t
 }
-class p extends(s = Chunk73800.Component) {
+class p extends(s = Chunk647438.Component) {
   componentDidMount() {
     this.props.show && this.animate(1)
   }
@@ -46,7 +46,7 @@ class p extends(s = Chunk73800.Component) {
     }
   }
   render() {
-    return (0, Chunk255367.jsx)(Chunk748780.Z.a, {
+    return (0, Chunk951288.jsx)(Chunk748780.Z.a, {
       href: Chunk981631.Z5c.INDEX,
       target: "_blank",
       rel: "noopener",

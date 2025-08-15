@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => p
 }), require("./388685.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk302221 = require("./302221.js"),
@@ -18,7 +18,7 @@ function u(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class d extends(r = Chunk73800.PureComponent) {
+class d extends(r = Chunk647438.PureComponent) {
   onDataUpdate(e, t) {
     let {
       maxValue: n,
@@ -45,9 +45,9 @@ class d extends(r = Chunk73800.PureComponent) {
       pixelWidth: t,
       pixelHeight: n
     } = this.props;
-    return (0, Chunk255367.jsx)("div", {
+    return (0, Chunk951288.jsx)("div", {
       className: module,
-      children: (0, Chunk255367.jsx)("canvas", {
+      children: (0, Chunk951288.jsx)("canvas", {
         ref: this.canvas,
         className: Chunk781176.canvas,
         width: exports,

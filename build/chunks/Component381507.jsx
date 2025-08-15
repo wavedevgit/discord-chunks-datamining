@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => h
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
@@ -30,11 +30,11 @@ let h = () => {
     j = (0, Chunk780384.ap)(h),
     f = Chunk51144.ZP.getName(module),
     m = j ? Chunk898969.Z : Chunk703614.Z;
-  return null == module ? null : (0, Chunk255367.jsxs)("div", {
+  return null == module ? null : (0, Chunk951288.jsxs)("div", {
     className: Chunk908780.attributionBannerContainer,
-    children: [(0, Chunk255367.jsx)("div", {
+    children: [(0, Chunk951288.jsx)("div", {
       className: Chunk908780.avatarContainer,
-      children: (0, Chunk255367.jsx)(Chunk481060.qEK, function(e) {
+      children: (0, Chunk951288.jsx)(Chunk481060.qEK, function(e) {
         for (var n = 1; n < arguments.length; n++) {
           var t = null != arguments[n] ? arguments[n] : {},
             i = Object.keys(t);
@@ -56,13 +56,13 @@ let h = () => {
         "aria-label": module.username,
         size: Chunk182294.EF.SIZE_32
       }, require))
-    }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/bold",
       className: Chunk908780.bannerHeader,
       children: Chunk388032.intl.format(Chunk388032.t.oxhCOj, {
         userName: f
       })
-    }), (0, Chunk255367.jsx)(m, {
+    }), (0, Chunk951288.jsx)(m, {
       className: Chunk908780.bannerIcon
     })]
   })

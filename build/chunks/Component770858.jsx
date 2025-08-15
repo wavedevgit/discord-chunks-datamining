@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => S
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -139,7 +139,7 @@ function x(e) {
 }
 
 function S() {
-  let e = Chunk73800.useRef(null),
+  let e = Chunk647438.useRef(null),
     {
       notificationCenterVariant: t
     } = (0, Chunk821020.pN)({
@@ -147,9 +147,9 @@ function S() {
     }),
     n = E(),
     l = (0, Chunk128008.mv)();
-  return exports === Chunk821020.jP.SIDEBAR ? (0, Chunk255367.jsx)(x, {
+  return exports === Chunk821020.jP.SIDEBAR ? (0, Chunk951288.jsx)(x, {
     onClick: Chunk91192
-  }) : exports === Chunk821020.jP.POPOUT ? (0, Chunk255367.jsx)(Chunk961040.Z, {
+  }) : exports === Chunk821020.jP.POPOUT ? (0, Chunk951288.jsx)(Chunk961040.Z, {
     targetElementRef: module,
     popoutPosition: "right",
     popoutAlign: "bottom",
@@ -161,7 +161,7 @@ function S() {
       },
       popoutProps: i
     })
-  }) : exports === Chunk821020.jP.LEGACY ? (0, Chunk255367.jsx)(Chunk178088.k, {
+  }) : exports === Chunk821020.jP.LEGACY ? (0, Chunk951288.jsx)(Chunk178088.k, {
     spacing: 0,
     badgeState: {
       badgeForYou: require

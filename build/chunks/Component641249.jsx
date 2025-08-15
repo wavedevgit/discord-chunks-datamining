@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => j
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk430824 = require("./430824.js"),
@@ -68,19 +68,19 @@ function j() {
     t.delete(e), v(t)
   }
   let S = (0, Chunk723047.mY)();
-  return (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+  return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
     title: Chunk388032.intl.string(Chunk388032.t.D0qeOz),
     disabled: S,
-    children: [(0, Chunk255367.jsxs)(Chunk481060.R94, {
+    children: [(0, Chunk951288.jsxs)(Chunk481060.R94, {
       type: Chunk481060.R94.Types.DESCRIPTION,
       className: Chunk605041.formDescription,
       disabled: S,
       children: [Chunk388032.intl.format(Chunk388032.t.zuwel5, {
         premiumEmojiMaximum: N
-      }), (0, Chunk255367.jsx)("br", {}), Chunk388032.intl.format(Chunk388032.t.sEkgBg, {
+      }), (0, Chunk951288.jsx)("br", {}), Chunk388032.intl.format(Chunk388032.t.sEkgBg, {
         handleTransitionToManageEmoji: y
       })]
-    }), (0, Chunk255367.jsx)(Chunk331146.E, {
+    }), (0, Chunk951288.jsx)(Chunk331146.E, {
       tierEmojiIds: j,
       guildId: exports,
       onRemoveEmoji: function(e) {
@@ -95,9 +95,9 @@ function j() {
           }))
         })
       }
-    }), null != j && j.size > 0 ? (0, Chunk255367.jsx)(Chunk481060.LZC, {
+    }), null != j && j.size > 0 ? (0, Chunk951288.jsx)(Chunk481060.LZC, {
       size: 8
-    }) : null, (0, Chunk255367.jsx)(Chunk861345.s, {
+    }) : null, (0, Chunk951288.jsx)(Chunk861345.s, {
       onClick: function() {
         (0, Chunk481060.ZDy)(async () => {
           let {

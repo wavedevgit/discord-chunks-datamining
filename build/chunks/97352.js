@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => d
 });
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk399606 = require("./399606.js"),
   Chunk570140 = require("./570140.js"),
   Chunk607070 = require("./607070.js"),
@@ -15,7 +15,7 @@ var Chunk73800 = require("./73800.js"),
 function d() {
   let e = Chunk695346.Yk.useSetting(),
     t = (0, Chunk399606.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     function n(n) {
       let {
         messageId: r,

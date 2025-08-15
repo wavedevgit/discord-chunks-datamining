@@ -3,8 +3,8 @@
 require.d(exports, {
   u: () => D
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
@@ -161,7 +161,7 @@ function D() {
           progress: n
         } = Chunk780570.lK(module),
         r = Chunk780570.xI(require, exports);
-      return Chunk255367 > 0 && Chunk255367 < 100
+      return Chunk951288 > 0 && Chunk951288 < 100
     }),
     n = (0, Chunk849862.If)(),
     i = Object.keys(Chunk474936.nG),
@@ -169,7 +169,7 @@ function D() {
       unviewedTrialCount: l,
       unviewedDiscountCount: a
     } = (0, Chunk442837.cj)([Chunk431.Z], () => ({
-      unviewedTrialCount: Chunk431.Z.getUnacknowledgedOffers(Chunk73800).length,
+      unviewedTrialCount: Chunk431.Z.getUnacknowledgedOffers(Chunk647438).length,
       unviewedDiscountCount: Chunk431.Z.getUnacknowledgedDiscountOffers().length
     })),
     s = Chunk91192 + Chunk433517,
@@ -178,7 +178,7 @@ function D() {
     h = require + Chunk481060 + Chunk550385,
     g = Chunk460181 === Chunk481060 && Chunk481060 > 0 && require + Chunk550385 === 0,
     E = Chunk774343.Z.getHomeLink();
-  return Chunk155409 && (E = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk255367.jsx)(R, {
+  return Chunk155409 && (E = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk951288.jsx)(R, {
     selected: module,
     user: Chunk864682,
     selectedChannelId: Chunk944486.Z.getChannelId(Chunk981631.ME),

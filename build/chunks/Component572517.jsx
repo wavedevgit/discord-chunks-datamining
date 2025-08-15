@@ -3,7 +3,7 @@
 require.d(exports, {
   c: () => x
 });
-var Chunk255367 = require("./255367.js"),
+var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -31,14 +31,14 @@ function x() {
       isAndroid: false
     }),
     _ = (0, Chunk717401.Tl)(m);
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk432483.promotionalFooterBanner,
     style: _,
-    children: [(0, Chunk255367.jsx)(Chunk897942.Z, {
+    children: [(0, Chunk951288.jsx)(Chunk897942.Z, {
       claimableRewards: f,
       maxRewardImageSrc: j.getImageUrl(x, exports),
       size: Chunk481060.EFr.SIZE_40
-    }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       className: Chunk432483.bannerText,
       children: j.desktopBannerText(f.length)

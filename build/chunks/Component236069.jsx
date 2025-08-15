@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => N
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk300284 = require("./300284.js"),
@@ -59,9 +59,9 @@ function O() {
   let e = (0, Chunk300284.Z)({
     scrollPosition: Chunk526761.Y_.GUILD_TAG
   });
-  return (0, Chunk255367.jsxs)(Chunk481060.qXd, {
+  return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.DANGER,
-    children: [Chunk388032.intl.string(Chunk388032.t.ZqlecX), (0, Chunk255367.jsx)(Chunk481060.EyT, {
+    children: [Chunk388032.intl.string(Chunk388032.t.ZqlecX), (0, Chunk951288.jsx)(Chunk481060.EyT, {
       onClick: module,
       children: Chunk388032.intl.string(Chunk388032.t.SJehVV)
     })]

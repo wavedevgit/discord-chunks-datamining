@@ -4,8 +4,8 @@ require.d(exports, {
   STEPS: () => H,
   default: () => F
 }), require("./415506.js"), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk821849 = require("./821849.js"),
@@ -208,10 +208,10 @@ let H = [{
   }
 }, {
   key: Chunk409813.h8.AWAITING_PURCHASE_TOKEN_AUTH,
-  renderStep: () => (0, Chunk255367.jsx)(Chunk380898.Z, {})
+  renderStep: () => (0, Chunk951288.jsx)(Chunk380898.Z, {})
 }, {
   key: Chunk409813.h8.AWAITING_AUTHENTICATION,
-  renderStep: () => (0, Chunk255367.jsx)(Chunk793541.Z, {})
+  renderStep: () => (0, Chunk951288.jsx)(Chunk793541.Z, {})
 }, {
   key: Chunk409813.h8.REVIEW,
   renderStep: e => (0, i.jsx)(E.l, N({}, e)),

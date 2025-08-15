@@ -3,8 +3,8 @@
 require.d(exports, {
   X: () => N
 }), require("./997841.js"), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk954955 = require("./954955.js"),
@@ -50,7 +50,7 @@ function P(e) {
   }
   return e
 }
-class N extends Chunk73800.Component {
+class N extends Chunk647438.Component {
   render() {
     let {
       type: e,
@@ -66,7 +66,7 @@ class N extends Chunk73800.Component {
     let _ = Chunk594174.default.getCurrentUser(),
       g = (0, Chunk74538.I5)(Chunk222677),
       h = Chunk659215 ? Chunk388032.intl.string(Chunk388032.t.Kfcszs) : Chunk388032.intl.string(Chunk388032.t.lfIHs7);
-    !Chunk995774 && Chunk659215 && (h = (0, Chunk255367.jsx)(Chunk466794.X, {
+    !Chunk995774 && Chunk659215 && (h = (0, Chunk951288.jsx)(Chunk466794.X, {
       tooltipText: Chunk388032.intl.string(Chunk388032.t.Kfcszs)
     }));
     let x = Chunk120356 ? Chunk893973 : Chunk127947,
@@ -75,10 +75,10 @@ class N extends Chunk73800.Component {
         color: "currentColor",
         className: Chunk474936.icon
       };
-    return exports.type === Chunk981631.uaV.EMOJI_ADDED && 0 === exports.reactions.length ? (0, Chunk255367.jsx)(Chunk387188.e, {
+    return exports.type === Chunk981631.uaV.EMOJI_ADDED && 0 === exports.reactions.length ? (0, Chunk951288.jsx)(Chunk387188.e, {
       message: exports,
       className: a()(Chunk474936.reactionBtn, require)
-    }) : (0, Chunk255367.jsx)(Chunk481060.yRy, {
+    }) : (0, Chunk951288.jsx)(Chunk481060.yRy, {
       targetElementRef: this.ref,
       shouldShow: s,
       onRequestClose: this.handleReactionPickerToggle,

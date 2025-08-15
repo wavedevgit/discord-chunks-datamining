@@ -7,8 +7,8 @@ require.d(exports, {
   jH: () => L,
   zH: () => k
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
@@ -82,7 +82,7 @@ function A(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let N = Chunk73800.lazy(() => Promise.all([require.e("21153"), require.e("28102")]).then(require.bind(require, 534828))),
+let N = Chunk647438.lazy(() => Promise.all([require.e("3115"), require.e("28102")]).then(require.bind(require, 534828))),
   C = 7,
   R = () => Promise.resolve();
 
@@ -157,7 +157,7 @@ function w(e) {
     }))
   })
 }
-class D extends Chunk73800.PureComponent {
+class D extends Chunk647438.PureComponent {
   render() {
     let {
       color: e,
@@ -166,16 +166,16 @@ class D extends Chunk73800.PureComponent {
       disabled: i,
       allowBlackCustomColor: a
     } = this.props;
-    return (0, Chunk255367.jsx)(w, {
+    return (0, Chunk951288.jsx)(w, {
       isDefault: true,
       color: module,
       isSelected: module === require || 0 === require && !Chunk120356,
       onClick: exports,
-      disabled: Chunk73800
+      disabled: Chunk647438
     })
   }
 }
-class L extends Chunk73800.PureComponent {
+class L extends Chunk647438.PureComponent {
   render() {
     let {
       customColor: e,
@@ -183,12 +183,12 @@ class L extends Chunk73800.PureComponent {
       disabled: n,
       "aria-label": i
     } = this.props;
-    return (0, Chunk255367.jsx)(w, {
+    return (0, Chunk951288.jsx)(w, {
       isCustom: true,
       color: module,
       isSelected: exports === module,
       disabled: require,
-      "aria-label": Chunk73800
+      "aria-label": Chunk647438
     })
   }
 }
@@ -301,7 +301,7 @@ function x(e) {
     children: G
   })
 }
-let M = Chunk73800.memo(x);
+let M = Chunk647438.memo(x);
 
 function k(e) {
   let {

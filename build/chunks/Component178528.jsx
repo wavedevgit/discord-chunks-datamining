@@ -3,9 +3,9 @@
 require.d(exports, {
   Z: () => z
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
-  Chunk717976 = require("./717976.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk815061 = require("./815061.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk619915 = require("./619915.js"),
@@ -58,7 +58,7 @@ function M(e) {
   }
   return e
 }
-class L extends Chunk73800.PureComponent {
+class L extends Chunk647438.PureComponent {
   static getDerivedStateFromProps(e) {
     let {
       guild: t
@@ -153,7 +153,7 @@ class L extends Chunk73800.PureComponent {
       }(require, ["onDragStart"]),
       {
         guild: l
-      } = Chunk717976,
+      } = Chunk815061,
       {
         controller: a,
         renderBanner: c,
@@ -161,18 +161,18 @@ class L extends Chunk73800.PureComponent {
         communityInfoVisible: g
       } = this.state,
       m = (null == Chunk442837 ? true : Chunk442837.id) === Chunk647086._ ? Chunk373274.j : Chunk373274.E;
-    return (0, Chunk255367.jsxs)(Chunk711553.Z, {
-      header: null != Chunk442837 ? (0, Chunk255367.jsx)(Chunk315174.ZP, {
+    return (0, Chunk951288.jsxs)(Chunk711553.Z, {
+      header: null != Chunk442837 ? (0, Chunk951288.jsx)(Chunk315174.ZP, {
         guild: Chunk442837,
         controller: Chunk619915,
         renderBanner: Chunk554747,
         bannerVisible: Chunk598056,
         className: Chunk613322.guildHeader,
         headerClassName: Chunk613322.guildHeaderInner,
-        onMouseDown: Chunk73800,
+        onMouseDown: Chunk647438,
         disableBannerAnimation: false,
         communityInfoVisible: Chunk905423,
-        children: (0, Chunk255367.jsx)(Chunk481060.yRy, {
+        children: (0, Chunk951288.jsx)(Chunk481060.yRy, {
           targetElementRef: this.settingsIconRef,
           position: "right",
           renderPopout: this.renderSettings,
@@ -183,9 +183,9 @@ class L extends Chunk73800.PureComponent {
           }, e))
         })
       }) : null,
-      children: [(0, Chunk255367.jsx)("div", {
+      children: [(0, Chunk951288.jsx)("div", {
         className: Chunk613322.channelList,
-        children: null != Chunk442837 ? (0, Chunk255367.jsx)(Chunk680089, (e = M({}, Chunk717976), t = t = {
+        children: null != Chunk442837 ? (0, Chunk951288.jsx)(Chunk680089, (e = M({}, Chunk815061), t = t = {
           guild: Chunk442837,
           disableManageChannels: true,
           onScroll: null != Chunk442837 && null != Chunk442837.banner ? this.handleScroll : null
@@ -198,13 +198,13 @@ class L extends Chunk73800.PureComponent {
           return n
         })(Object(exports)).forEach(function(n) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-        }), module)) : (0, Chunk255367.jsx)(Chunk591190.Z, {
+        }), module)) : (0, Chunk951288.jsx)(Chunk591190.Z, {
           withBannerPadding: false
         })
-      }), null != Chunk442837 && (0, Chunk255367.jsx)("section", {
+      }), null != Chunk442837 && (0, Chunk951288.jsx)("section", {
         className: Chunk613322.panels,
         "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWF),
-        children: (0, Chunk255367.jsx)(Chunk840780.Z, {
+        children: (0, Chunk951288.jsx)(Chunk840780.Z, {
           guildId: Chunk442837.id
         })
       })]

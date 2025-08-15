@@ -3,11 +3,11 @@
 require.d(exports, {
   Z: () => o
 });
-var Chunk255367 = require("./255367.js"),
+var Chunk951288 = require("./951288.js"),
   Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.ON)("HighActivityNotificationsSetting", {
-  render: () => (0, Chunk255367.jsx)("div", {
+  render: () => (0, Chunk951288.jsx)("div", {
     children: Chunk388032.intl.string(Chunk388032.t.D9yVAA)
   }),
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.D9yVAA)]

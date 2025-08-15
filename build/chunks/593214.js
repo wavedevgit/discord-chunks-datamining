@@ -7,7 +7,7 @@ require.d(exports, {
   up: () => x,
   zv: () => f
 }), require("./388685.js"), require("./539854.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk106351 = require("./106351.js"),
   Chunk442837 = require("./442837.js");
 require("./592125.js");
@@ -45,9 +45,9 @@ function m() {
 function x() {
   let {
     isFavoritesPerk: e
-  } = (0, Chunk362658.z)("useFavoriteAdded"), n = (0, Chunk434065.r)(), l = Chunk73800.useCallback(() => {
+  } = (0, Chunk362658.z)("useFavoriteAdded"), n = (0, Chunk434065.r)(), l = Chunk647438.useCallback(() => {
     module && exports.notifyFavoriteAdded()
-  }, [exports, module]), i = Chunk73800.useCallback(() => {
+  }, [exports, module]), i = Chunk647438.useCallback(() => {
     module && exports.clearFavoriteAdded()
   }, [exports, module]);
   return {

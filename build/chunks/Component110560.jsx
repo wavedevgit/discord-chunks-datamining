@@ -15,8 +15,8 @@ require.r(exports), require.d(exports, {
   openQuestsRewardCodeModal: () => k,
   openVideoQuestModal: () => Y
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk772848 = require("./772848.js"),
   Chunk271579 = require("./271579.js"),
   Chunk756647 = require("./756647.js"),
@@ -298,7 +298,7 @@ function z(e) {
   (0, s.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("35992"), n.e("33628")]).then(n.bind(n, 570387));
+    } = await Promise.all([n.e("87442"), n.e("33628")]).then(n.bind(n, 570387));
     return n => (0, r.jsx)(t, L(w({}, n), {
       questId: e.id,
       questName: e.config.messages.questName

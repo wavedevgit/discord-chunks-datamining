@@ -13,7 +13,7 @@ require.d(exports, {
   hm: () => P,
   jE: () => d
 }), require("./388685.js"), require("./539854.js"), require("./472816.js"), require("./794429.js"), require("./642613.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk406432 = require("./406432.js"),
   Chunk619899 = require("./619899.js");
@@ -57,7 +57,7 @@ function u(e, t) {
   }), e
 }
 var d = function(e) {
-    return e.SHOP_ALL_BANNER_STATIC = "shop_all_banner.jpg", e.SHOP_ALL_BANNER_ANIMATED = "shop_all_banner_animated.webm", e.HERO_BANNER_STATIC = "hero_banner.jpg", e.HERO_BANNER_ANIMATED = "hero_banner_animated.webm", e.HERO_LOGO = "hero_logo.png", e.FEATURED_BLOCK = "featured_block.png", e.UPSELL_BANNER = "upsell_banner.jpg", e.UPSELL_BANNER_POPOUT = "upsell_banner_popout.png", e.PDP_BACKGROUND = "pdp_bg.jpg", e.PDP_LOGO = "pdp_logo.png", e.SHOP_BUTTON_BG_HOVER = "shop_button_bg_hover.png", e.SHOP_BUTTON_BG_HOVER_DARK = "shop_button_bg_hover_dark.png", e.SHOP_BUTTON_BG_HOVER_LIGHT = "shop_button_bg_hover_light.png", e.SHOP_BUTTON_BG_RESTING = "shop_button_bg_resting.png", e.SHOP_BUTTON_BG_RESTING_DARK = "shop_button_bg_resting_dark.png", e.SHOP_BUTTON_BG_RESTING_LIGHT = "shop_button_bg_resting_light.png", e.COACHTIP_AVATAR = "coachtip_avatar.png", e.MOBILE_BANNER = "mobile_banner.jpg", e.MOBILE_BACKGROUND = "mobile_bg.jpg", e
+    return e.SHOP_ALL_BANNER_STATIC = "shop_all_banner.jpg", e.SHOP_ALL_BANNER_ANIMATED = "shop_all_banner_animated.webm", e.HERO_BANNER_STATIC = "hero_banner.jpg", e.HERO_BANNER_ANIMATED = "hero_banner_animated.webm", e.HERO_LOGO = "hero_logo.png", e.FEATURED_BLOCK = "featured_block.png", e.UPSELL_BANNER = "upsell_banner.jpg", e.UPSELL_BANNER_POPOUT = "upsell_banner_popout.png", e.PDP_BACKGROUND = "pdp_bg.jpg", e.SHOP_BUTTON_BG_HOVER = "shop_button_bg_hover.png", e.SHOP_BUTTON_BG_HOVER_DARK = "shop_button_bg_hover_dark.png", e.SHOP_BUTTON_BG_HOVER_LIGHT = "shop_button_bg_hover_light.png", e.SHOP_BUTTON_BG_RESTING = "shop_button_bg_resting.png", e.SHOP_BUTTON_BG_RESTING_DARK = "shop_button_bg_resting_dark.png", e.SHOP_BUTTON_BG_RESTING_LIGHT = "shop_button_bg_resting_light.png", e.COACHTIP_AVATAR = "coachtip_avatar.png", e.LOGO = "logo.png", e.MOBILE_BANNER = "mobile_banner.jpg", e.MOBILE_BACKGROUND = "mobile_bg.jpg", e
   }({}),
   f = function(e) {
     return e.PROFILE_EFFECT = "profile_effect", e.AVATAR_DECORATION = "avatar_decoration", e
@@ -72,7 +72,7 @@ let _ = {
     "upsell_banner.jpg": "upsell_banner.jpg",
     "upsell_banner_popout.png": "upsell_banner_popout.png",
     "pdp_bg.jpg": "pdp_bg.jpg",
-    "pdp_logo.png": "pdp_logo.png",
+    "logo.png": "logo.png",
     "shop_button_bg_hover.png": "shop_button_bg_hover.png",
     "shop_button_bg_hover_dark.png": "shop_button_bg_hover_dark.png",
     "shop_button_bg_hover_light.png": "shop_button_bg_hover_light.png",
@@ -182,7 +182,7 @@ let m = e => {
     }
     return t.collectionFiles.sort((e, t) => e.name.localeCompare(t.name)), t.avatarDecorationFiles.sort((e, t) => e.name.localeCompare(t.name)), t.ignoredFilenames.sort((e, t) => e.localeCompare(t)), t
   }, P = () => {
-    let [e, t] = Chunk73800.useState(() => ({
+    let [e, t] = Chunk647438.useState(() => ({
       collectionFiles: [],
       avatarDecorationFiles: [],
       profileEffectFilesMap: {},
@@ -190,7 +190,7 @@ let m = e => {
     })), {
       upsertCollectionAsset: n,
       upsertAvatarDecorationAsset: i
-    } = (0, Chunk619899.N9)(), a = Chunk73800.useCallback(async e => {
+    } = (0, Chunk619899.N9)(), a = Chunk647438.useCallback(async e => {
       let r = await R(e);
       t(r), (0 !== r.collectionFiles.length || 0 !== r.avatarDecorationFiles.length) && (r.collectionFiles.forEach(e => {
         E(e, e => {
@@ -202,13 +202,13 @@ let m = e => {
           i(e)
         })
       }))
-    }, [require, Chunk481060]), s = Chunk73800.useCallback(() => {
+    }, [require, Chunk481060]), s = Chunk647438.useCallback(() => {
       exports(e => u(l({}, e), {
         collectionFiles: [],
         avatarDecorationFiles: [],
         profileEffectFilesMap: {}
       }))
-    }, []), c = Chunk73800.useCallback(() => {
+    }, []), c = Chunk647438.useCallback(() => {
       exports(e => u(l({}, e), {
         ignoredFilenames: []
       }))

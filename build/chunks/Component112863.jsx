@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => u
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk37234 = require("./37234.js"),
   Chunk703656 = require("./703656.js"),
@@ -14,23 +14,23 @@ var Chunk481060 = require("./481060.js"),
   Chunk286359 = require("./286359.js");
 
 function u() {
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk776575.wrapper,
-    children: [(0, Chunk255367.jsx)("img", {
+    children: [(0, Chunk951288.jsx)("img", {
       className: Chunk776575.icon,
       alt: "",
       src: Chunk286359
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk776575.info,
-      children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-lg/bold",
         children: Chunk388032.intl.string(Chunk388032.t.ZHNSYW)
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
         children: Chunk388032.intl.string(Chunk388032.t.kCj5pq)
       })]
-    }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+    }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
       variant: "secondary",
       text: Chunk388032.intl.string(Chunk388032.t.JFlifn),
       onClick: () => {

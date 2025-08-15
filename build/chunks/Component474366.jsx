@@ -4,8 +4,8 @@
 require.d(exports, {
   q: () => O
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -112,8 +112,8 @@ function T(e) {
 }
 
 function O() {
-  let e = Chunk73800.useRef(null);
-  return (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+  let e = Chunk647438.useRef(null);
+  return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     className: Chunk65766.container,
     direction: "vertical",
     align: "center",
@@ -123,19 +123,19 @@ function O() {
       bottom: 24
     },
     ref: module,
-    children: [(0, Chunk255367.jsx)(Chunk481060.l22, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.l22, {
       size: "custom",
       width: 48,
       height: 48
-    }), (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+    }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       direction: "vertical",
       align: "center",
       justify: "center",
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         className: Chunk65766.header,
         variant: "heading-md/medium",
         children: Chunk388032.intl.string(Chunk764295.default.h6QNk5)
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         className: Chunk65766.text,
         variant: "text-md/medium",
         color: "text-secondary",

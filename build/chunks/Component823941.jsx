@@ -1,13 +1,14 @@
-/** Chunk was on 78223 **/
-/** chunk id: 823941, original params: e,n,r (module,exports,require) **/
+/** Chunk was on 45620 **/
+/** chunk id: 823941, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => L,
-  n: () => A
+  Z: () => k,
+  n: () => P
 }), require("./35282.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk180650 = require("./180650.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
@@ -28,26 +29,26 @@ var Chunk255367 = require("./255367.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk923732 = require("./923732.js");
-let A = (0, Chunk884697.IC)(90),
-  E = e => {
+let P = (0, Chunk884697.IC)(90),
+  T = e => {
     let {
-      category: n
+      category: t
     } = e, {
       analyticsLocations: r
-    } = (0, d.ZP)(), o = t.useRef(null), a = (0, i.e7)([m.default], () => m.default.getCurrentUser());
-    return p.ZP.canUseCollectibles(a) ? n.summary : T.intl.format(T.t["9hafRk"], {
-      getPremium: e => (0, l.jsx)(s.P3F, {
-        innerRef: o,
-        className: k.getPremiumHook,
+    } = (0, d.ZP)(), a = l.useRef(null), i = (0, s.e7)([f.default], () => f.default.getCurrentUser());
+    return h.ZP.canUseCollectibles(i) ? t.summary : x.intl.format(x.t["9hafRk"], {
+      getPremium: e => (0, n.jsx)(c.P3F, {
+        innerRef: a,
+        className: j.getPremiumHook,
         onClick: () => {
-          (0, b.Z)({
+          (0, g.Z)({
             subscriptionTier: S.Si.TIER_2,
             analyticsLocations: r,
-            returnRef: o
+            returnRef: a
           })
         },
         tag: "span",
-        children: (0, l.jsx)(s.Text, {
+        children: (0, n.jsx)(c.Text, {
           variant: "text-md/normal",
           color: "always-white",
           tag: "span",
@@ -56,81 +57,81 @@ let A = (0, Chunk884697.IC)(90),
       })
     })
   },
-  P = e => {
+  L = e => {
     let {
-      src: n
+      src: t
     } = e;
-    return /.*\.png/i.test(n) ? (0, l.jsx)("img", {
-      src: n,
+    return /.*\.png/i.test(t) ? (0, n.jsx)("img", {
+      src: t,
       alt: "",
-      className: k.animationAsset
-    }) : (0, l.jsx)(g.Z, {
-      src: n,
-      className: k.animationAsset,
+      className: j.animationAsset
+    }) : (0, n.jsx)(p.Z, {
+      src: t,
+      className: j.animationAsset,
       autoPlay: true,
       loop: true
     })
   };
 
-function L(e) {
+function k(e) {
   let {
-    category: n,
+    category: t,
     className: r,
-    hideLimitedTimeBadge: t = false
+    hideLimitedTimeBadge: l = false
   } = e, {
-    backgroundColors: o
-  } = (0, y.Z)(n.styles), d = (0, i.e7)([c.Z], () => c.Z.useReducedMotion), g = (0, i.e7)([v.Z], () => v.Z.isFocused()), {
-    bannerOverrides: b,
-    shopAllBannerStatic: m,
-    shopAllBannerAnimated: p
-  } = (0, _.t0)(n), S = !!(null == b ? true : b.showDarkBannerText);
-  return (0, l.jsxs)(j.Z, {
-    asset: m,
-    className: a()(k.shopBanner, r),
-    style: null != o ? {
-      background: "".concat((0, B.nH)(o), " border-box border-box"),
-      outlineColor: o.border.toHslString()
+    backgroundColors: a
+  } = (0, v.Z)(t.styles), d = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), p = (0, s.e7)([b.Z], () => b.Z.isFocused()), {
+    bannerOverrides: g,
+    shopAllBannerStatic: f,
+    shopAllBannerAnimated: h
+  } = (0, y.t0)(t), S = !!(null == g ? true : g.showDarkBannerText);
+  return (0, n.jsxs)(O.Z, {
+    asset: f,
+    className: i()(j.shopBanner, r),
+    style: null != a ? {
+      background: "".concat((0, E.nH)(a), " border-box border-box"),
+      outlineColor: a.border.toHslString()
     } : true,
-    children: [!d && null != p && g && (0, l.jsx)(P, {
-      src: p
-    }), (null == b ? true : b.addAttributionLogo) ? (0, l.jsxs)("div", {
-      className: k.discordLogo,
-      children: [(0, l.jsx)(s.gw7, {
+    children: [!d && null != h && p && (0, n.jsx)(L, {
+      src: h
+    }), (null == g ? true : g.addAttributionLogo) ? (0, n.jsxs)("div", {
+      className: j.discordLogo,
+      children: [(0, n.jsx)(c.gw7, {
         size: "custom",
         width: 28,
         height: 28,
         color: "currentColor",
-        className: k.discordIcon
-      }), (0, l.jsx)(O.Z, {
-        className: k.discordWordmark
+        className: j.discordIcon
+      }), (0, n.jsx)(m.Z, {
+        className: j.discordWordmark
       })]
-    }) : (0, l.jsx)(s.LZC, {
+    }) : (0, n.jsx)(c.LZC, {
       size: 28
-    }), (null == b ? true : b.addLogo) ? (0, l.jsx)("img", {
-      className: k.categoryLogo,
-      src: (0, f.uV)(n.logo, {
-        size: A
+    }), (null == g ? true : g.addLogo) ? (0, n.jsx)("img", {
+      className: j.categoryLogo,
+      src: (0, _.uV)(t.logo, {
+        size: P
       }),
-      alt: n.name,
+      alt: t.name,
       style: {
-        maxWidth: null == b ? true : b.logoMaxWidth
+        maxWidth: null == g ? true : g.logoMaxWidth
       }
-    }) : (0, l.jsx)(s.LZC, {
+    }) : (0, n.jsx)(c.LZC, {
       size: 90
-    }), "" !== n.summary && (0, l.jsx)(s.Text, {
-      className: a()(k.summary, {
-        [k.blackSummary]: S
+    }), "" !== t.summary && (0, n.jsx)(c.Text, {
+      className: i()(j.summary, {
+        [j.blackSummary]: S
       }),
-      style: null != n.bannerTextColor ? {
-        color: n.bannerTextColor
+      style: null != t.bannerTextColor ? {
+        color: t.bannerTextColor
       } : true,
       variant: "text-md/normal",
-      children: n.skuId === u.T.DISXCORE ? (0, l.jsx)(E, {
-        category: n
-      }) : n.summary
-    }), !t && (0, l.jsx)(h.Z, {
-      category: n,
-      className: k.limitedTimeBadge,
+      children: t.skuId === o.T.DISXCORE ? (0, n.jsx)(T, {
+        category: t
+      }) : t.summary
+    }), !l && (0, n.jsx)(C.Z, {
+      category: t,
+      className: j.limitedTimeBadge,
       display: "banner"
     })]
   })

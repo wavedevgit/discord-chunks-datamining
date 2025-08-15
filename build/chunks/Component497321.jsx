@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => m
 }), require("./388685.js");
-var r, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var r, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
@@ -23,13 +23,13 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class h extends(r = Chunk73800.Component) {
+class h extends(r = Chunk647438.Component) {
   render() {
-    return (0, Chunk255367.jsxs)("div", {
+    return (0, Chunk951288.jsxs)("div", {
       className: Chunk26621.streamerModeEnabled,
-      children: [(0, Chunk255367.jsx)("div", {
+      children: [(0, Chunk951288.jsx)("div", {
         className: Chunk26621.streamerModeEnabledImage
-      }), (0, Chunk255367.jsx)(Chunk481060.P3F, {
+      }), (0, Chunk951288.jsx)(Chunk481060.P3F, {
         className: s()(Chunk26621.streamerModeEnabledBtn, {
           [Chunk26621.disabled]: this.props.disableButton
         }),

@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => m
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
   Chunk243778 = require("./243778.jsx"),
@@ -51,18 +51,18 @@ function p(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = () => (0, Chunk255367.jsxs)("div", {
+let h = () => (0, Chunk951288.jsxs)("div", {
     className: Chunk170337.coachtipInner,
-    children: [(0, Chunk255367.jsx)("img", {
+    children: [(0, Chunk951288.jsx)("img", {
       src: Chunk442937,
       alt: Chunk388032.intl.string(Chunk388032.t["9wkT19"]),
       className: Chunk170337.coachtipAsset
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk170337.coachtipTextContainer,
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.V5y3qa)
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
         children: Chunk388032.intl.string(Chunk388032.t.eSDHDg)

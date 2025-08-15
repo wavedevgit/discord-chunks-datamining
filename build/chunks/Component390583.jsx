@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => h
 }), require("./388685.js"), require("./953529.js"), require("./539854.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js");
 require("./674180.js");
 var Chunk723047 = require("./723047.js"),
@@ -51,7 +51,7 @@ function h() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, Chunk727843.N)(), [n, h] = Chunk290348.UE(module), f = Chunk73800.useMemo(() => new Set(require.map(e => e.ref_id)), [require]);
+  } = (0, Chunk727843.N)(), [n, h] = Chunk290348.UE(module), f = Chunk647438.useMemo(() => new Set(require.map(e => e.ref_id)), [require]);
 
   function b(e, t) {
     let {
@@ -70,8 +70,8 @@ function h() {
     null != t ? s[t] = o : s.push(o), h(s)
   }
   let x = (0, Chunk723047.mY)();
-  return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-    children: [(0, Chunk255367.jsx)(Chunk861345.p, {
+  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsx)(Chunk861345.p, {
       benefits: require,
       onEdit: function(e) {
         (0, l.h7j)(i => (0, r.jsx)(c.x3, p(g({}, i), {
@@ -91,9 +91,9 @@ function h() {
         r.splice(t, 0, i), h(r)
       },
       guildId: exports
-    }), require.length > 0 && (0, Chunk255367.jsx)(Chunk481060.LZC, {
+    }), require.length > 0 && (0, Chunk951288.jsx)(Chunk481060.LZC, {
       size: 8
-    }), (0, Chunk255367.jsx)(Chunk861345.s, {
+    }), (0, Chunk951288.jsx)(Chunk861345.s, {
       onClick: function() {
         (0, Chunk481060.h7j)(e => (0, r.jsx)(c.x3, p(g({}, e), {
           guildId: t,

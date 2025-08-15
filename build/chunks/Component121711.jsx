@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => X
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
@@ -99,10 +99,10 @@ let X = function() {
     scrollPosition: s
   } = (0, Chunk979233.M)(), d = Chunk150560.Z.getState().getUtmCurrentContext(), m = (0, Chunk833435._)({
     location: Chunk46140.dr.QUEST_HOME_DESKTOP
-  }) ? Chunk736683.Z : Chunk736683.j, P = (0, Chunk879438.z)(e => e.registerAssetLoad), j = Chunk73800.useRef(Chunk607070);
-  Chunk73800.useEffect(() => {
+  }) ? Chunk736683.Z : Chunk736683.j, P = (0, Chunk879438.z)(e => e.registerAssetLoad), j = Chunk647438.useRef(Chunk607070);
+  Chunk647438.useEffect(() => {
     Chunk526167.current = Chunk607070
-  }), Chunk73800.useEffect(() => {
+  }), Chunk647438.useEffect(() => {
     let {
       current: t
     } = Chunk526167;
@@ -126,7 +126,7 @@ let X = function() {
     showBetaTag: W
   } = Chunk794231.Z.useExperiment({
     location: Chunk46140.dr.QUEST_HOME_DESKTOP
-  }), Y = Chunk73800.useCallback(() => {
+  }), Y = Chunk647438.useCallback(() => {
     if (Chunk672188) return void window.open(Chunk981631.EYA.PAID_TERMS_ORBS);
     window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_LEARN_MORE))
   }, [Chunk672188]);
@@ -135,8 +135,8 @@ let X = function() {
   });
   let K = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.BCBIlp, {}) : Chunk388032.intl.format(Chunk388032.t.lmMBf3, {}),
     X = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.U9FY0N, {}) : Chunk388032.intl.string(Chunk388032.t.oWCrBg),
-    Q = Chunk73800.useRef(null),
-    J = Chunk73800.useCallback(() => {
+    Q = Chunk647438.useRef(null),
+    J = Chunk647438.useCallback(() => {
       (0, Chunk507808.Y)({
         pageType: Chunk981631.ZY5.GLOBAL_DISCOVERY_QUESTS,
         sectionType: Chunk981631.jXE.ORBS_BALANCE_MENU,
@@ -148,34 +148,34 @@ let X = function() {
         analyticsSource: Chunk100527.Z.ORBS_BALANCE_MENU
       })
     }, []);
-  return (0, Chunk255367.jsx)(Chunk251360.k.Provider, {
+  return (0, Chunk951288.jsx)(Chunk251360.k.Provider, {
     value: {
       onAssetLoadComplete: Chunk451478
     },
-    children: (0, Chunk255367.jsx)("div", {
+    children: (0, Chunk951288.jsx)("div", {
       className: Chunk728963.container,
-      children: Chunk672188 ? (0, Chunk255367.jsx)(Chunk466962.t.Provider, {
+      children: Chunk672188 ? (0, Chunk951288.jsx)(Chunk466962.t.Provider, {
         value: Q,
-        children: (0, Chunk255367.jsxs)(Chunk283293.Z, {
+        children: (0, Chunk951288.jsxs)(Chunk283293.Z, {
           onScroll: Chunk120356,
           ref: Q,
-          children: [(0, Chunk255367.jsx)(Chunk763433.a, {
+          children: [(0, Chunk951288.jsx)(Chunk763433.a, {
             selectedTabId: module,
             handleTransition: exports,
             tabs: require,
             icon: Chunk481060.qDn,
-            children: (0, Chunk255367.jsx)(Chunk775451.V9, {
+            children: (0, Chunk951288.jsx)(Chunk775451.V9, {
               analyticsPage: Chunk981631.ZY5.GLOBAL_DISCOVERY_QUESTS,
               cardAlignment: Chunk775451.ek.END,
               ctaText: Chunk388032.intl.string(Chunk388032.t["J+vlIS"]),
               ctaOnClick: J
             })
-          }), (0, Chunk255367.jsxs)(Chunk17845.Z, {
+          }), (0, Chunk951288.jsxs)(Chunk17845.Z, {
             title: Chunk164792,
             description: X,
             betaTag: Chunk672188 && Chunk13299,
-            button: Chunk672188 ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-              children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+            button: Chunk672188 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+              children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
                 variant: "overlay-primary",
                 text: Chunk388032.intl.string(Chunk388032.t["1Wm129"]),
                 onClick: () => (0, Chunk335131.mK)({
@@ -184,14 +184,14 @@ let X = function() {
                   analyticsLocations: [],
                   analyticsSource: Chunk100527.Z.INTRO_TO_ORBS_QUEST_BANNER
                 })
-              }), (0, Chunk255367.jsx)(Chunk755721.zx, {
+              }), (0, Chunk951288.jsx)(Chunk755721.zx, {
                 look: Chunk755721.iL.LINK,
                 color: Chunk755721.Tt.CUSTOM,
                 className: Chunk728963.orbsTermsButton,
                 onClick: Chunk606199,
                 children: Chunk388032.intl.string(Chunk388032.t["7kTAgI"])
               })]
-            }) : (0, Chunk255367.jsx)(Chunk481060.zxk, {
+            }) : (0, Chunk951288.jsx)(Chunk481060.zxk, {
               variant: "overlay-primary",
               text: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
               onClick: Chunk606199,
@@ -201,38 +201,38 @@ let X = function() {
             className: a()(Chunk728963.bannerContainer, {
               [Chunk728963.orbsContainer]: Chunk672188
             }),
-            children: [(0, Chunk255367.jsx)("div", {
+            children: [(0, Chunk951288.jsx)("div", {
               className: a()(Chunk728963.bannerGradient, {
                 [Chunk728963.orbsGradient]: Chunk672188
               })
-            }), (0, Chunk255367.jsx)(q, {
+            }), (0, Chunk951288.jsx)(q, {
               onLoadComplete: Chunk451478
             })]
-          }), (0, Chunk255367.jsx)(Chunk374939.Z, {
-            children: module === Chunk113434.e5.CLAIMED ? (0, Chunk255367.jsx)(Chunk70097, {
+          }), (0, Chunk951288.jsx)(Chunk374939.Z, {
+            children: module === Chunk113434.e5.CLAIMED ? (0, Chunk951288.jsx)(Chunk70097, {
               onSelectTab: exports
-            }) : (0, Chunk255367.jsx)(Chunk558652.Z, {})
+            }) : (0, Chunk951288.jsx)(Chunk558652.Z, {})
           })]
         })
-      }) : (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-        children: [(0, Chunk255367.jsxs)(Chunk611928.ZP, {
+      }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        children: [(0, Chunk951288.jsxs)(Chunk611928.ZP, {
           variant: Chunk611928._6.OVERLAY,
-          children: [(0, Chunk255367.jsx)("div", {
+          children: [(0, Chunk951288.jsx)("div", {
             className: Chunk728963.dragRegion
-          }), (0, Chunk255367.jsx)(Chunk611928.z6, {
+          }), (0, Chunk951288.jsx)(Chunk611928.z6, {
             scrollPosition: Chunk442837
-          }), (0, Chunk255367.jsx)(Chunk611928.aV, {
+          }), (0, Chunk951288.jsx)(Chunk611928.aV, {
             icon: Chunk481060.qDn
           })]
-        }), (0, Chunk255367.jsx)(Chunk466962.t.Provider, {
+        }), (0, Chunk951288.jsx)(Chunk466962.t.Provider, {
           value: Q,
-          children: (0, Chunk255367.jsxs)(Chunk283293.Z, {
+          children: (0, Chunk951288.jsxs)(Chunk283293.Z, {
             onScroll: Chunk120356,
             ref: Q,
-            children: [(0, Chunk255367.jsxs)(Chunk17845.Z, {
+            children: [(0, Chunk951288.jsxs)(Chunk17845.Z, {
               title: Chunk164792,
               description: X,
-              button: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+              button: (0, Chunk951288.jsx)(Chunk481060.zxk, {
                 variant: "overlay-primary",
                 text: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
                 onClick: Chunk606199,
@@ -242,24 +242,24 @@ let X = function() {
               className: a()(Chunk728963.bannerContainer, {
                 [Chunk728963.orbsContainer]: Chunk672188
               }),
-              children: [(0, Chunk255367.jsx)("div", {
+              children: [(0, Chunk951288.jsx)("div", {
                 className: a()(Chunk728963.bannerGradient, {
                   [Chunk728963.orbsGradient]: Chunk672188
                 })
-              }), (0, Chunk255367.jsx)(q, {
+              }), (0, Chunk951288.jsx)(q, {
                 onLoadComplete: Chunk451478
               })]
-            }), (0, Chunk255367.jsxs)(Chunk374939.Z, {
-              children: [(0, Chunk255367.jsx)("div", {
+            }), (0, Chunk951288.jsxs)(Chunk374939.Z, {
+              children: [(0, Chunk951288.jsx)("div", {
                 className: Chunk728963.tabs,
-                children: (0, Chunk255367.jsx)(Chunk233374.Z, {
+                children: (0, Chunk951288.jsx)(Chunk233374.Z, {
                   tabs: require,
                   selectedTab: module,
                   onTabSelect: exports
                 })
-              }), module === Chunk113434.e5.CLAIMED ? (0, Chunk255367.jsx)(Chunk70097, {
+              }), module === Chunk113434.e5.CLAIMED ? (0, Chunk951288.jsx)(Chunk70097, {
                 onSelectTab: exports
-              }) : (0, Chunk255367.jsx)(Chunk558652.Z, {})]
+              }) : (0, Chunk951288.jsx)(Chunk558652.Z, {})]
             })]
           })
         })]

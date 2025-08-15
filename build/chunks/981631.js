@@ -57,7 +57,7 @@ require.d(exports, {
   GU0: () => eg,
   GZQ: () => Chunk231338.GZ,
   H0J: () => Chunk231338.H0,
-  HGf: () => n8,
+  HGf: () => n5,
   HN8: () => eH,
   HeQ: () => Chunk231338.He,
   Hqc: () => nA,
@@ -110,7 +110,7 @@ require.d(exports, {
   OYC: () => et,
   OcF: () => tt,
   Odu: () => en,
-  PEY: () => e5,
+  PEY: () => e8,
   PNu: () => eU,
   POd: () => rp,
   PRK: () => e2,
@@ -276,14 +276,14 @@ require.d(exports, {
   oNc: () => V,
   o_z: () => eO,
   p3w: () => tE,
-  p6O: () => t8,
+  p6O: () => t5,
   pAY: () => tg,
   pJs: () => L,
   pKx: () => Chunk231338.pK,
   pM4: () => j,
   pNK: () => C,
   pTL: () => rq,
-  pjP: () => n5,
+  pjP: () => n8,
   pmI: () => t9,
   q5t: () => tj,
   q9n: () => nY,
@@ -319,7 +319,7 @@ require.d(exports, {
   vB8: () => nw,
   vID: () => nT,
   vTt: () => ns,
-  vbS: () => t5,
+  vbS: () => t8,
   vpv: () => tR,
   vtS: () => tY,
   vuo: () => eK,
@@ -344,7 +344,7 @@ require.d(exports, {
   yb: () => z,
   ylB: () => rF,
   yqN: () => nE,
-  ys_: () => e8,
+  ys_: () => e5,
   z7k: () => tS,
   zMe: () => Chunk231338.zM,
   zUn: () => nM,
@@ -1498,9 +1498,9 @@ let eL = 100,
   e2 = 524288e3,
   e3 = e => "||".concat(e, "||"),
   e4 = /^\|\|([\s\S]+?)\|\|/,
-  e5 = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
+  e8 = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
   e6 = /^\d{17,19}$/;
-var e8 = function(e) {
+var e5 = function(e) {
     return e.MESSAGE = "MESSAGE", e.MESSAGE_GROUP_BLOCKED = "MESSAGE_GROUP_BLOCKED", e.MESSAGE_GROUP_IGNORED = "MESSAGE_GROUP_IGNORED", e.MESSAGE_GROUP_SPAMMER = "MESSAGE_GROUP_SPAMMER", e.THREAD_STARTER_MESSAGE = "THREAD_STARTER_MESSAGE", e.DIVIDER = "DIVIDER", e.JUMP_TARGET = "JUMP_TARGET", e.FORUM_POST_ACTION_BAR = "FORUM_POST_ACTION_BAR", e.MESSAGE_GROUP = "MESSAGE_GROUP", e.DIVIDER_TIME_STAMP = "DIVIDER_TIME_STAMP", e.DIVIDER_NEW_MESSAGES = "DIVIDER_NEW_MESSAGES", e
   }({}),
   e7 = function(e) {
@@ -1782,14 +1782,14 @@ Object.freeze({
   AUTHORIZATION_CANCEL_FRAGMENT: "/_discord/auth?cancel=true"
 });
 let t4 = new Set(["facebook", "contacts"]),
-  t5 = new Set(["spotify", "xbox", "playstation", "playstation-stg", "crunchyroll"]),
+  t8 = new Set(["spotify", "xbox", "playstation", "playstation-stg", "crunchyroll"]),
   t6 = Object.freeze({
     DESKTOP: "".concat(location.protocol).concat(window.GLOBAL_ENV.API_ENDPOINT, "/download"),
     IOS: "https://itunes.apple.com/app/discord/id985746746",
     ANDROID: "https://play.google.com/store/apps/details?id=com.discord"
   }),
-  t8 = 0x99aab5,
-  t7 = (0, Chunk866442.Rf)(t8),
+  t5 = 0x99aab5,
+  t7 = (0, Chunk866442.Rf)(t5),
   t9 = [1752220, 3066993, 3447003, 0x9b59b6, 0xe91e63, 0xf1c40f, 0xe67e22, 0xe74c3c, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530, 0xad1457, 0xc27c0e, 0xa84300, 0x992d22, 9936031, 5533306],
   ne = (0, Chunk866442._i)(Chunk674746.Z.BRAND_500);
 i()(null != ne, "Brand color could not be parsed");
@@ -2064,13 +2064,13 @@ let n2 = Object.freeze({
   }),
   n3 = 6016,
   n4 = 3384;
-var n5 = function(e) {
+var n8 = function(e) {
     return e.USAGE_STATISTICS = "usage_statistics", e.PERSONALIZATION = "personalization", e
   }({}),
   n6 = function(e) {
     return e[e.MUTUAL_FRIENDS = 2] = "MUTUAL_FRIENDS", e[e.MUTUAL_GUILDS = 4] = "MUTUAL_GUILDS", e[e.NO_RELATION = 8] = "NO_RELATION", e
   }({});
-let n8 = 14,
+let n5 = 14,
   n7 = 6,
   n9 = 30;
 var re = function(e) {

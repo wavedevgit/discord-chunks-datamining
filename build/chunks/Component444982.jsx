@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => x
 });
-var Chunk255367 = require("./255367.js"),
+var Chunk951288 = require("./951288.js"),
   Chunk239091 = require("./239091.js"),
   Chunk482798 = require("./482798.js"),
   Chunk32300 = require("./32300.js"),
@@ -75,7 +75,7 @@ let x = {
         borderWidth: l
       }) : null
     },
-    renderTitle: () => (0, Chunk255367.jsx)(Chunk430561.PI, {
+    renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
       children: Chunk388032.intl.string(Chunk388032.t.UPvOiY)
     }),
     renderButtons: (e, t) => (0, i.jsxs)(i.Fragment, {
@@ -118,7 +118,7 @@ let x = {
         showEmpty: l
       }) : null
     },
-    renderTitle: () => (0, Chunk255367.jsx)(Chunk430561.PI, {
+    renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
       children: Chunk388032.intl.string(Chunk388032.t.nFv3GR)
     }),
     renderButtons: (e, t) => (0, i.jsxs)(i.Fragment, {
@@ -151,7 +151,7 @@ let x = {
         pinned: t.pinned
       })
     },
-    renderTitle: () => (0, Chunk255367.jsx)(Chunk430561.PI, {
+    renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
       children: "Click Zone Tester"
     }),
     renderButtons: (e, t) => (0, i.jsxs)(i.Fragment, {
@@ -186,7 +186,7 @@ let x = {
         pinned: t.pinned
       })
     },
-    renderTitle: () => (0, Chunk255367.jsx)(Chunk430561.PI, {
+    renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
       children: "Overlay Performance"
     }),
     renderButtons: e => (0, i.jsx)(g.RT, {
@@ -225,7 +225,7 @@ let x = {
         showEmpty: c
       }) : null
     },
-    renderTitle: () => (0, Chunk255367.jsx)(Chunk430561.PI, {
+    renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
       children: Chunk388032.intl.string(Chunk388032.t["386XRk"])
     }),
     renderButtons(e, t) {
@@ -277,7 +277,7 @@ let x = {
         showEmpty: n
       })
     },
-    renderTitle: () => (0, Chunk255367.jsx)(Chunk430561.PI, {
+    renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
       children: Chunk388032.intl.string(Chunk388032.t.gnKWdX)
     }),
     renderButtons: (e, t) => (0, i.jsxs)(i.Fragment, {
@@ -307,7 +307,7 @@ let x = {
         locked: t
       })
     },
-    renderTitle: () => (0, Chunk255367.jsx)(Chunk430561.PI, {
+    renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
       children: Chunk388032.intl.string(Chunk388032.t["6gwSFR"])
     }),
     renderButtons: () => null,
@@ -322,7 +322,7 @@ let x = {
         locked: t
       })
     },
-    renderTitle: () => (0, Chunk255367.jsx)(Chunk430561.PI, {
+    renderTitle: () => (0, Chunk951288.jsx)(Chunk430561.PI, {
       children: Chunk388032.intl.string(Chunk388032.t.TdEu5e)
     }),
     renderButtons: () => null,

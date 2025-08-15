@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => er
 }), require("./539854.js"), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -48,7 +48,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk977594 = require("./977594.js");
 let Y = !Chunk358085.isPlatformEmbedded && false,
-  Q = Y ? (0, Chunk255367.jsx)(Chunk70097.Z, {
+  Q = Y ? (0, Chunk951288.jsx)(Chunk70097.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
     className: Chunk977594.videoDev,
     autoPlay: true,
@@ -101,7 +101,7 @@ function J(e) {
     }
   })
 }
-let q = Chunk73800.memo(function(e) {
+let q = Chunk647438.memo(function(e) {
     let {
       keybind: t,
       onClick: n,
@@ -131,7 +131,7 @@ let q = Chunk73800.memo(function(e) {
       })
     })
   }),
-  $ = Chunk73800.memo(function(e) {
+  $ = Chunk647438.memo(function(e) {
     let {
       locked: t,
       focused: n

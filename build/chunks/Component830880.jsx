@@ -3,8 +3,8 @@
 require.d(exports, {
   R: () => m
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk704215 = require("./704215.js"),
   Chunk230711 = require("./230711.js"),
   Chunk243778 = require("./243778.jsx"),
@@ -19,7 +19,7 @@ var Chunk255367 = require("./255367.js"),
 
 function m() {
   let [e, t] = (0, Chunk243778.US)([Chunk704215.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE]);
-  return Chunk73800.useMemo(() => module === Chunk704215.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE, [module]) ? (0, Chunk255367.jsx)(Chunk907995.f, {
+  return Chunk647438.useMemo(() => module === Chunk704215.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE, [module]) ? (0, Chunk951288.jsx)(Chunk907995.f, {
     label: Chunk388032.t.zqv4nZ,
     labelHook: () => {
       Chunk230711.Z.open(Chunk981631.oAB.CONTENT_AND_SOCIAL, Chunk726985.s6.RESTRICTED_USERS, {

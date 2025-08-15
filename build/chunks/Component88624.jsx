@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => f
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -31,27 +31,27 @@ function f() {
       isVerified: module.verified
     }
   });
-  return (0, Chunk255367.jsxs)(Chunk481060.y5t, {
-    component: (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)(Chunk481060.y5t, {
+    component: (0, Chunk951288.jsxs)("div", {
       className: Chunk133365.intro,
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-xxl/semibold",
         className: Chunk133365.introHeader,
         children: null == module ? Chunk388032.intl.string(Chunk388032.t.iZowCQ) : Chunk388032.intl.string(Chunk388032.t.e7fL7O)
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-lg/normal",
         children: Chunk388032.intl.string(Chunk388032.t["6FaVFB"])
       })]
     }),
-    children: [(0, Chunk255367.jsx)(Chunk843200.Z, {
+    children: [(0, Chunk951288.jsx)(Chunk843200.Z, {
       className: Chunk133365.verificationNotice,
       unclaimedNotice: Chunk388032.intl.string(Chunk388032.t.vZU8Ki),
       unverifiedNotice: Chunk388032.intl.string(Chunk388032.t.T7TYEB)
-    }), (0, Chunk255367.jsx)(Chunk644744.Z, {
+    }), (0, Chunk951288.jsx)(Chunk644744.Z, {
       houseMembership: module,
       isClaimed: exports,
       isVerified: require
-    }), (0, Chunk255367.jsx)(Chunk346951.Z, {}), (0, Chunk255367.jsx)(Chunk792423.Z, {
+    }), (0, Chunk951288.jsx)(Chunk346951.Z, {}), (0, Chunk951288.jsx)(Chunk792423.Z, {
       isHypeSquadOnlineMember: null != module
     })]
   })

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => u
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk767714 = require("./767714.jsx"),
   Chunk382791 = require("./382791.jsx"),
@@ -16,27 +16,27 @@ let u = () => {
   let e = {
     section: Chunk981631.jXE.REVERSE_TRIAL_BANNER
   };
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk838344.banner,
-    children: [(0, Chunk255367.jsx)(Chunk382791.mn, {
+    children: [(0, Chunk951288.jsx)(Chunk382791.mn, {
       text: Chunk388032.intl.string(Chunk388032.t.qYKftb),
       className: Chunk838344.pill
-    }), (0, Chunk255367.jsx)("img", {
+    }), (0, Chunk951288.jsx)("img", {
       src: Chunk309389,
       width: 64,
       height: 64,
       alt: "",
       className: Chunk838344.bannerArt
-    }), (0, Chunk255367.jsx)("div", {
+    }), (0, Chunk951288.jsx)("div", {
       className: Chunk838344.bodyContainer,
-      children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         color: "text-secondary",
         variant: "text-sm/normal",
         children: Chunk388032.intl.format(Chunk388032.t.uu1WAQ, {
           weeks: 1
         })
       })
-    }), (0, Chunk255367.jsx)(Chunk767714.Z, {
+    }), (0, Chunk951288.jsx)(Chunk767714.Z, {
       premiumModalAnalyticsLocation: module,
       showGradient: true,
       className: Chunk838344.promoNitroButton,

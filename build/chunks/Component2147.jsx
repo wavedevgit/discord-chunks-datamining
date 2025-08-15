@@ -5,8 +5,8 @@ require.d(exports, {
   G: () => eT,
   Z: () => eI
 }), require("./997841.js"), require("./953529.js"), require("./290780.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk313361 = require("./313361.js"),
@@ -168,8 +168,8 @@ let eg = (0, Chunk313201.hQ)(),
         module.isThread() && (t = (0, Chunk456077.Z)(exports, true)), (0, Chunk787014.wk)(module.id, {
           name: exports,
           type: require,
-          topic: Chunk255367,
-          bitrate: Chunk73800,
+          topic: Chunk951288,
+          bitrate: Chunk647438,
           userLimit: Chunk120356,
           nsfw: s,
           flags: Chunk313361,
@@ -245,7 +245,7 @@ function eZ(e) {
     }
   })
 }
-class eR extends Chunk73800.PureComponent {
+class eR extends Chunk647438.PureComponent {
   componentDidMount() {
     null == this.props.regions && null != this.props.guild && Chunk771340.Z.fetchRegions(this.props.guild.id)
   }
@@ -863,11 +863,11 @@ class eR extends Chunk73800.PureComponent {
       channelName: t,
       guild: n
     } = this.props;
-    return null == module || null == exports || null == require ? null : (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+    return null == module || null == exports || null == require ? null : (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       className: "channel-settings-overview",
       tag: Chunk481060.RB0.H1,
       title: Chunk388032.intl.string(Chunk388032.t["/dp6yc"]),
-      children: [this.renderChannelInfo(module, exports), this.showVoiceSettings() ? (0, Chunk255367.jsx)(Chunk481060.$i$, {
+      children: [this.renderChannelInfo(module, exports), this.showVoiceSettings() ? (0, Chunk951288.jsx)(Chunk481060.$i$, {
         className: s()(Chunk197571.marginTop40, Chunk197571.marginBottom40)
       }) : null, this.renderVoiceBitrate(module, require), this.renderVideoQualityMode(module), this.renderUserLimit(module), this.renderRegionOverride(module), this.renderJuiceImage(module)]
     })
@@ -1097,10 +1097,10 @@ function eI() {
   })), m = (0, Chunk933557.ZP)(exports), p = Chunk314897.default.getId(), f = (0, Chunk109434.v)(), x = null == exports ? true : exports.id, j = (0, Chunk902840.ts)(exports, false, true), y = Chunk129865.Z.useExperiment({
     guildId: null == exports ? true : exports.guild_id,
     location: "ChannelSettingsOverview"
-  }).enabled, N = Chunk73800.useCallback(e => {
+  }).enabled, N = Chunk647438.useCallback(e => {
     null != x && f.getState().setLayoutType(x, e)
   }, [Chunk410575, Chunk771340]);
-  return (0, Chunk255367.jsx)(eR, {
+  return (0, Chunk951288.jsx)(eR, {
     errors: module,
     channel: exports,
     channelName: Chunk481060,

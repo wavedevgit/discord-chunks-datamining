@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => q
 }), require("./388685.js"), require("./415506.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -113,9 +113,9 @@ class K extends Chunk98597.ZP {
       speakerVoiceStates: i,
       numAudience: l
     } = this.props;
-    return (0, Chunk255367.jsx)(Chunk207055.Z, {
+    return (0, Chunk951288.jsx)(Chunk207055.Z, {
       channel: module,
-      voiceStates: Chunk73800,
+      voiceStates: Chunk647438,
       collapsed: exports,
       tabIndex: require,
       location: Chunk981631.Sbl.GUILD_CHANNEL_LIST,
@@ -146,19 +146,19 @@ class K extends Chunk98597.ZP {
       isFavoriteSuggestion: y
     } = this.props, {
       shouldShowGuildVerificationPopout: v
-    } = this.state, j = this.getVoiceStatesCount(), C = (0, Chunk255367.jsxs)("li", {
+    } = this.state, j = this.getVoiceStatesCount(), C = (0, Chunk951288.jsxs)("li", {
       className: o()(this.getModeClass(), {
         [Chunk55940.disabled]: this.isDisabled()
       }),
       "data-dnd-name": module.name,
-      children: [(0, Chunk255367.jsx)(Chunk481060.yRy, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.yRy, {
         targetElementRef: this.channelItemRef,
         position: "right",
         renderPopout: this.renderPopout,
         spacing: 0,
         onRequestClose: this.closeGuildVerificationPopout,
         shouldShow: Chunk431328,
-        children: () => (0, Chunk255367.jsx)(Chunk481060.ua7, {
+        children: () => (0, Chunk951288.jsx)(Chunk481060.ua7, {
           text: this.getTooltipText(),
           children: l => {
             var {

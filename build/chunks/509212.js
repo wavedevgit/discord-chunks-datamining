@@ -19,7 +19,7 @@ require.d(exports, {
   Fs: () => tc,
   GN: () => ef,
   Gd: () => th,
-  HJ: () => e5,
+  HJ: () => e8,
   Jg: () => eS,
   K: () => eO,
   KM: () => eD,
@@ -736,12 +736,12 @@ let e1 = eq([Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION]),
   e2 = eq([Chunk754700.X.WATCH_VIDEO, Chunk754700.X.WATCH_VIDEO_ON_MOBILE]),
   e3 = eq([Chunk754700.X.WATCH_VIDEO]),
   e4 = eq([Chunk754700.X.WATCH_VIDEO_ON_MOBILE]),
-  e5 = e => e4(e) && !e3(e);
+  e8 = e => e4(e) && !e3(e);
 
 function e6(e) {
   return e1(e)
 }
-let e8 = (e, t) => {
+let e5 = (e, t) => {
   var n, r;
   let i = null == e || null == (r = e.progress[t]) || null == (n = r.heartbeat) ? true : n.expiresAt;
   if (null == i) returnfalse;
@@ -750,7 +750,7 @@ let e8 = (e, t) => {
 };
 
 function e7(e) {
-  return null != e.userStatus && (e8(e.userStatus, o.X.PLAY_ON_XBOX) || e8(e.userStatus, o.X.PLAY_ON_PLAYSTATION))
+  return null != e.userStatus && (e5(e.userStatus, o.X.PLAY_ON_XBOX) || e5(e.userStatus, o.X.PLAY_ON_PLAYSTATION))
 }
 
 function e9(e) {

@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => H
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk140835 = require("./140835.jsx"),
@@ -93,7 +93,7 @@ function M() {
     {
       styleLarge: t,
       styleSmall: n
-    } = Chunk73800.useMemo(() => ({
+    } = Chunk647438.useMemo(() => ({
       styleLarge: {
         width: "".concat(10 + 20 * Math.random(), "%"),
         height: "auto"
@@ -103,22 +103,22 @@ function M() {
         height: "auto"
       }
     }), []),
-    r = Chunk73800.useMemo(() => (0, Chunk255367.jsxs)("div", {
+    r = Chunk647438.useMemo(() => (0, Chunk951288.jsxs)("div", {
       className: Chunk698342.commandTextContainerPlaceholder,
-      children: [(0, Chunk255367.jsx)("div", {
+      children: [(0, Chunk951288.jsx)("div", {
         className: Chunk202874.textPlaceholder,
         style: exports,
-        children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           className: Chunk202874.hidden,
           variant: "text-sm/semibold",
           color: "header-primary",
           lineClamp: 1,
           children: "_"
         })
-      }), (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk951288.jsx)("div", {
         className: Chunk202874.textPlaceholder,
         style: require,
-        children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           className: Chunk202874.hidden,
           variant: "text-xs/medium",
           color: "text-muted",
@@ -127,7 +127,7 @@ function M() {
         })
       })]
     }), [exports, require]);
-  return (0, Chunk255367.jsx)("div", {
+  return (0, Chunk951288.jsx)("div", {
     className: a()(Chunk698342.command, Chunk202874.loadingAnimation, {
       [Chunk202874.noAnimation]: module
     }),

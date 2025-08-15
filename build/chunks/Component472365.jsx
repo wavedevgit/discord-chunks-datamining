@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => G
 }), require("./415506.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
@@ -44,7 +44,7 @@ function U() {
     analyticsLocations: e,
     sourceAnalyticsLocations: n
   } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_UPSELL_TOOLTIP);
-  return Chunk73800.useEffect(() => {
+  return Chunk647438.useEffect(() => {
     Chunk626135.default.track(Chunk981631.rMx.PREMIUM_UPSELL_VIEWED, {
       type: Chunk474936.cd.GUILD_CAP_INLINE_INVITE_MODAL,
       location: {
@@ -52,7 +52,7 @@ function U() {
       },
       location_stack: exports
     })
-  }, [exports]), (0, Chunk255367.jsxs)(Chunk481060.P3F, {
+  }, [exports]), (0, Chunk951288.jsxs)(Chunk481060.P3F, {
     onClick: () => (0, Chunk885714.Z)({
       analyticsSource: {
         page: Chunk981631.Sbl.EXTERNAL_INVITE_LINK_MODAL
@@ -64,14 +64,14 @@ function U() {
       analyticsLocations: module
     }),
     className: Chunk12205.experimentUpsellError,
-    children: [(0, Chunk255367.jsx)(Chunk481060.SrA, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.SrA, {
       size: "md",
       className: Chunk12205.experimentUpsellIcon,
       color: Chunk436774.JX.PREMIUM_TIER_2
-    }), (0, Chunk255367.jsx)("span", {
+    }), (0, Chunk951288.jsx)("span", {
       className: Chunk12205.experimentUpsellText,
       children: Chunk388032.intl.string(Chunk388032.t["4/W4Pz"])
-    }), (0, Chunk255367.jsx)("span", {
+    }), (0, Chunk951288.jsx)("span", {
       className: Chunk12205.experimentGetNitro,
       children: Chunk388032.intl.string(Chunk388032.t.b6KOkJ)
     })]

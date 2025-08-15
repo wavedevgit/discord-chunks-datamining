@@ -5,7 +5,7 @@ require.r(exports), require.d(exports, {
   default: () => o,
   messagesLoader: () => i
 });
-letChunk125697 = require("./125697.js"), i = r({
+letChunk631562 = require("./631562.js"), i = r({
   bg: () => require.e("77002").then(require.t.bind(require, 949760, 19)),
   cs: () => require.e("23397").then(require.t.bind(require, 559155, 19)),
   da: () => require.e("10645").then(require.t.bind(require, 710621, 19)),
@@ -31,10 +31,10 @@ letChunk125697 = require("./125697.js"), i = r({
   ru: () => require.e("59599").then(require.t.bind(require, 588614, 19)),
   "sv-SE": () => require.e("1750").then(require.t.bind(require, 491021, 19)),
   th: () => require.e("40131").then(require.t.bind(require, 877388, 19)),
-  tr: () => require.e("33728").then(require.t.bind(require, 436283, 19)),
+  tr: () => require.e("33728").then(require.t.bind(require, 776261, 19)),
   uk: () => require.e("71236").then(require.t.bind(require, 223824, 19)),
   vi: () => require.e("10945").then(require.t.bind(require, 242644, 19)),
   "zh-CN": () => require.e("65947").then(require.t.bind(require, 553983, 19)),
   "zh-TW": () => require.e("64877").then(require.t.bind(require, 141359, 19)),
   "en-US": () => require.e("47600").then(require.bind(require, 682690))
-}, "en-US"), Chunk125697 = require("./125697.js"), o = a(i)
+}, "en-US"), Chunk631562 = require("./631562.js"), o = a(i)

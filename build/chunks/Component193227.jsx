@@ -2,10 +2,10 @@
 /** chunk id: 193227, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => P
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
@@ -26,7 +26,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk215023 = require("./215023.js"),
   Chunk887353 = require("./887353.js");
 
-function y(e) {
+function S(e) {
   let {
     products: t,
     header: r,
@@ -34,14 +34,14 @@ function y(e) {
   } = e, a = (0, o.e7)([u.default], () => u.default.getCurrentUser()), i = (0, C.St)(t);
   return null == a || 0 === t.length ? null : (0, n.jsxs)("div", {
     children: [null != r ? (0, n.jsx)(s.Text, {
-      className: S.itemTypeTitle,
+      className: y.itemTypeTitle,
       color: "header-secondary",
       variant: "text-sm/bold",
       children: r
     }) : (0, n.jsx)(s.LZC, {
       size: 24
     }), (0, n.jsx)("div", {
-      className: S.cardsContainer,
+      className: y.cardsContainer,
       children: i.map((e, t) => (0, n.jsx)(d.k0, {
         newValue: {
           tilePosition: t
@@ -61,7 +61,7 @@ function x(e) {
   let {
     category: t
   } = e, r = (0, f.l)(t.products), l = (0, g.a)()(r);
-  return (0, n.jsx)(y, {
+  return (0, n.jsx)(S, {
     products: l,
     category: t
   })
@@ -75,9 +75,9 @@ function j(e) {
     i(e)
   }, r ? .13 : .15);
   return (0, n.jsxs)("div", {
-    className: S.categoryWrapper,
+    className: y.categoryWrapper,
     ref: o,
-    children: [(0, n.jsx)(h.Z, {
+    children: [(0, n.jsx)(m.Z, {
       category: t,
       hideLimitedTimeBadge: false
     }), (0, n.jsx)(x, {
@@ -86,7 +86,7 @@ function j(e) {
   })
 }
 
-function T(e) {
+function P(e) {
   var t;
   let {
     sortedCategories: r,
@@ -94,21 +94,21 @@ function T(e) {
     isFullScreen: o,
     currentPage: c,
     handlePageChange: u
-  } = e, g = (0, d.sp)(), f = (0, v.R)(), h = null != (t = null == g ? true : g.sessionId) ? t : "", {
+  } = e, g = (0, d.sp)(), f = (0, v.R)(), m = null != (t = null == g ? true : g.sessionId) ? t : "", {
     noCache: _,
     includeUnpublished: C
-  } = (0, O.Z)(), y = l.useMemo(() => r.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+  } = (0, O.Z)(), S = l.useMemo(() => r.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
       products: t
     } = e;
     return t.length > 0
   }), [r]), x = l.useMemo(() => {
     let e = (c - 1) * E.kN;
-    return y.slice(e, e + E.kN)
-  }, [y, c]);
+    return S.slice(e, e + E.kN)
+  }, [S, c]);
   l.useEffect(() => {
     (0, b.n)({
-      sessionId: h,
+      sessionId: m,
       checkpoint: b.a.SHOP_MOUNTED,
       tab: E.AW.CATALOG,
       isFullScreen: o,
@@ -117,18 +117,18 @@ function T(e) {
     })
   }, []), l.useEffect(() => {
     f || 0 === x.length || (0, b.n)({
-      sessionId: h,
+      sessionId: m,
       checkpoint: b.a.SHOP_RENDERED,
       tab: E.AW.CATALOG,
       isFullScreen: o,
       unpublishedCategoriesShown: C,
       cacheDisabled: _
     })
-  }, [h, o, C, _, f, x.length]);
-  let T = (0, p.FF)("CollectiblesBrowse");
-  return f ? (0, n.jsx)(m.Z, {}) : (0, n.jsxs)("div", {
-    className: i()(S.categories, {
-      [S.categoriesNoFilter]: !T
+  }, [m, o, C, _, f, x.length]);
+  let P = (0, p.FF)("CollectiblesBrowse");
+  return f ? (0, n.jsx)(h.Z, {}) : (0, n.jsxs)("div", {
+    className: i()(y.categories, {
+      [y.categoriesNoFilter]: !P
     }),
     children: [x.map((e, t) => (0, n.jsx)("div", {
       ref: t => a(e.skuId, t),
@@ -142,10 +142,10 @@ function T(e) {
         })
       })
     }, e.skuId)), (0, n.jsx)("div", {
-      className: S.paginationContainer,
+      className: y.paginationContainer,
       children: (0, n.jsx)(s.DsT, {
         currentPage: c,
-        totalCount: y.length,
+        totalCount: S.length,
         pageSize: E.kN,
         onPageChange: u,
         disablePaginationGap: true

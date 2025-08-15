@@ -3,8 +3,8 @@
 require.d(exports, {
   W: () => E
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
@@ -42,7 +42,7 @@ function C(e) {
   }
   return e
 }
-let E = Chunk73800.memo(function(e) {
+let E = Chunk647438.memo(function(e) {
   let t = e.channel.id,
     n = e.selected,
     E = (0, c.Nj)(o.z.CHAT_WALLPAPERS_PICKER_COACHMARK),

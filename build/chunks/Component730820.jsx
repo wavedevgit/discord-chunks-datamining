@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => B
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -100,7 +100,7 @@ function k(e) {
     })
   })
 }
-class L extends Chunk73800.PureComponent {
+class L extends Chunk647438.PureComponent {
   maskPhoneNumber(e) {
     return null == e ? "" : "".concat("*".repeat(e.length - 4)).concat(e.slice(false))
   }
@@ -113,26 +113,26 @@ class L extends Chunk73800.PureComponent {
         togglingSMS: s,
         hasTOTPEnabled: a
       } = this.props,
-      l = null != Chunk73800.phone,
-      o = Chunk73800.hasFlag(Chunk981631.xW$.MFA_SMS);
+      l = null != Chunk647438.phone,
+      o = Chunk647438.hasFlag(Chunk981631.xW$.MFA_SMS);
     if (a) {
       if (Chunk442837 || Chunk755721) {
-        let e = require ? Chunk73800.phone : this.maskPhoneNumber(Chunk73800.phone);
-        t = (0, Chunk255367.jsxs)(Chunk481060.R94, {
+        let e = require ? Chunk647438.phone : this.maskPhoneNumber(Chunk647438.phone);
+        t = (0, Chunk951288.jsxs)(Chunk481060.R94, {
           type: Chunk481060.R94.Types.DESCRIPTION,
           className: Chunk197571.marginBottom8,
           children: [Chunk388032.intl.format(Chunk388032.t.PXVoEB, {
             phoneNumber: module
-          }), (0, Chunk255367.jsx)(Chunk481060.eee, {
+          }), (0, Chunk951288.jsx)(Chunk481060.eee, {
             onClick: this.togglePhoneNumberVisibility,
             className: Chunk343396.phoneRevealer,
             children: require ? Chunk388032.intl.string(Chunk388032.t.FfltIC) : Chunk388032.intl.string(Chunk388032.t.llArAg)
           })]
         })
       }
-      if (Chunk755721) e = (0, Chunk255367.jsx)(Chunk600164.Z, {
+      if (Chunk755721) e = (0, Chunk951288.jsx)(Chunk600164.Z, {
         className: Chunk442837 ? "" : Chunk197571.marginTop8,
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "critical-secondary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t.KLWnio),
@@ -141,18 +141,18 @@ class L extends Chunk73800.PureComponent {
         })
       });
       else {
-        let t = (0, Chunk714565.c)(Chunk73800);
-        e = (0, Chunk255367.jsxs)(Chunk481060.hE2, {
+        let t = (0, Chunk714565.c)(Chunk647438);
+        e = (0, Chunk951288.jsxs)(Chunk481060.hE2, {
           size: "sm",
           className: Chunk442837 ? "" : Chunk197571.marginTop8,
-          children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             size: "sm",
             text: null != exports ? exports : Chunk388032.intl.string(Chunk388032.t.DZQe29),
             onClick: this.handleEnableSMS,
             loading: Chunk512722,
             disabled: null != exports
-          }), Chunk442837 ? (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          }), Chunk442837 ? (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "secondary",
             size: "sm",
             text: Chunk388032.intl.string(Chunk388032.t.Ulqq6O),
@@ -160,12 +160,12 @@ class L extends Chunk73800.PureComponent {
           }) : null]
         })
       }
-      return (0, Chunk255367.jsx)(Chunk921801.F, {
+      return (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_SMS_BACKUP,
-        children: (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+        children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
           className: Chunk197571.marginTop40,
           title: Chunk388032.intl.string(Chunk388032.t.uHAJ5u),
-          children: [(0, Chunk255367.jsx)(Chunk481060.R94, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
             type: Chunk481060.R94.Types.DESCRIPTION,
             children: Chunk388032.intl.string(Chunk388032.t.fspJ4O)
           }), exports, module]
@@ -177,9 +177,9 @@ class L extends Chunk73800.PureComponent {
     let e, {
         backupCodes: t
       } = this.props,
-      n = (0, Chunk255367.jsx)(Chunk921801.F, {
+      n = (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_VIEW_BACKUP_CODES,
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t.xZEzbm),
@@ -187,11 +187,11 @@ class L extends Chunk73800.PureComponent {
         })
       });
     if (exports.length > 0) {
-      n = (0, Chunk255367.jsx)(Chunk23645.Z, {
+      n = (0, Chunk951288.jsx)(Chunk23645.Z, {
         fileContents: this.getDownloadFileContents,
         contentType: "text/plain",
         fileName: "discord_backup_codes.txt",
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t.qZZUy8)
@@ -200,99 +200,99 @@ class L extends Chunk73800.PureComponent {
       let r = e => e.map(e => (0, i.jsx)(k, {
         code: e
       }, e.code));
-      e = (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+      e = (0, Chunk951288.jsxs)(Chunk481060.hjN, {
         title: Chunk388032.intl.string(Chunk388032.t.GfqHPj),
-        children: [(0, Chunk255367.jsx)(Chunk481060.R94, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
           type: Chunk481060.R94.Types.DESCRIPTION,
           className: Chunk197571.marginBottom20,
           children: Chunk388032.intl.format(Chunk388032.t.OhmvYm, {})
-        }), (0, Chunk255367.jsxs)(Chunk600164.Z, {
-          children: [(0, Chunk255367.jsx)(Chunk600164.Z.Child, {
-            children: (0, Chunk255367.jsx)("ul", {
+        }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
+          children: [(0, Chunk951288.jsx)(Chunk600164.Z.Child, {
+            children: (0, Chunk951288.jsx)("ul", {
               className: Chunk343396.checkboxGroup,
-              children: Chunk73800(exports.slice(0, exports.length / 2))
+              children: Chunk647438(exports.slice(0, exports.length / 2))
             })
-          }), (0, Chunk255367.jsx)(Chunk600164.Z.Child, {
-            children: (0, Chunk255367.jsx)("ul", {
+          }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
+            children: (0, Chunk951288.jsx)("ul", {
               className: Chunk343396.checkboxGroup,
-              children: Chunk73800(exports.slice(exports.length / 2))
+              children: Chunk647438(exports.slice(exports.length / 2))
             })
           })]
-        }), (0, Chunk255367.jsx)("div", {
-          children: (0, Chunk255367.jsx)(Chunk755721.zx, {
+        }), (0, Chunk951288.jsx)("div", {
+          children: (0, Chunk951288.jsx)(Chunk755721.zx, {
             onClick: this.generateBackupCodes,
             look: Chunk755721.iL.LINK,
             size: Chunk755721.Ph.MIN,
             children: Chunk388032.intl.string(Chunk388032.t.RIThUl)
           })
-        }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
+        }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
           className: Chunk197571.marginTop20
         })]
       })
     }
-    return (0, Chunk255367.jsxs)(Chunk481060.hjN, {
-      children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+    return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
         children: Chunk388032.intl.string(Chunk388032.t.EPVq09)
-      }), (0, Chunk255367.jsx)(Chunk481060.R94, {
+      }), (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DESCRIPTION,
         className: Chunk197571.marginBottom20,
         children: Chunk388032.intl.string(Chunk388032.t.bQwxiY)
-      }), (0, Chunk255367.jsxs)(Chunk481060.hE2, {
+      }), (0, Chunk951288.jsxs)(Chunk481060.hE2, {
         size: "sm",
         className: Chunk197571.marginBottom20,
-        children: [require, (0, Chunk255367.jsx)(Chunk921801.F, {
+        children: [require, (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_REMOVE_2FA,
-          children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "critical-secondary",
             size: "sm",
             text: Chunk388032.intl.string(Chunk388032.t["D+aE7u"]),
             onClick: this.handleDisableMFA
           })
-        }), (0, Chunk255367.jsx)(Chunk921801.F, {
+        }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_ENABLE_2FA,
-          children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             size: "sm",
             text: Chunk388032.intl.string(Chunk388032.t.cDgKtb),
             onClick: Chunk202858.ZP.enableMFA
           })
         })]
-      }), module, this.renderMFASMS(), (0, Chunk255367.jsx)(Chunk921801.F, {
+      }), module, this.renderMFASMS(), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_SECURITY_KEYS,
-        children: (0, Chunk255367.jsx)(Chunk778764.Z, {})
+        children: (0, Chunk951288.jsx)(Chunk778764.Z, {})
       })]
     })
   }
   renderDisabled() {
-    return (0, Chunk255367.jsxs)(Chunk481060.hjN, {
+    return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
       title: Chunk388032.intl.string(Chunk388032.t.EPVq09),
-      children: [(0, Chunk255367.jsx)(Chunk481060.R94, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DESCRIPTION,
         className: Chunk197571.marginBottom20,
         children: Chunk388032.intl.string(Chunk388032.t["8aDa1t"])
-      }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t.cDgKtb),
           onClick: Chunk202858.ZP.enableMFA
         })
-      }), (0, Chunk255367.jsx)(Chunk778764.Z, {})]
+      }), (0, Chunk951288.jsx)(Chunk778764.Z, {})]
     })
   }
   render() {
     let {
       currentUser: e
     } = this.props;
-    return Chunk287880.uZ ? module.verified ? module.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, Chunk255367.jsx)(Chunk481060.hjN, {
+    return Chunk287880.uZ ? module.verified ? module.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, Chunk951288.jsx)(Chunk481060.hjN, {
       title: Chunk388032.intl.string(Chunk388032.t.EPVq09),
-      children: (0, Chunk255367.jsx)(Chunk481060.R94, {
+      children: (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DESCRIPTION,
         children: Chunk388032.intl.string(Chunk388032.t.uggF7u)
       })
-    }) : (0, Chunk255367.jsx)(Chunk481060.hjN, {
+    }) : (0, Chunk951288.jsx)(Chunk481060.hjN, {
       title: Chunk388032.intl.string(Chunk388032.t.EPVq09),
-      children: (0, Chunk255367.jsx)(Chunk481060.R94, {
+      children: (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DESCRIPTION,
         children: Chunk388032.intl.string(Chunk388032.t.PhHhsr)
       })

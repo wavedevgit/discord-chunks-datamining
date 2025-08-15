@@ -4,8 +4,8 @@
 require.r(exports), require.d(exports, {
   default: () => L
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk703656 = require("./703656.js"),
@@ -18,17 +18,17 @@ var Chunk442837 = require("./442837.js"),
   Chunk532223 = require("./532223.js");
 
 function d() {
-  return (0, Chunk255367.jsxs)(Chunk481060.qXd, {
+  return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.DANGER,
     className: Chunk532223.nagbar,
-    children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       tag: "span",
       color: "always-white",
       variant: "text-md/normal",
       children: Chunk388032.intl.string(Chunk388032.t["MG+Bzc"])
-    }), (0, Chunk255367.jsx)(Chunk481060.u3T, {
+    }), (0, Chunk951288.jsx)(Chunk481060.u3T, {
       href: Chunk800530.sQ.WARNING_SYSTEM_HELPCENTER_LINK,
-      children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "always-white",
         children: Chunk388032.intl.string(Chunk388032.t["9JceHB"])
@@ -57,17 +57,17 @@ function S(e) {
 }
 
 function N() {
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk532223.pageContainer,
-    children: [(0, Chunk255367.jsx)(S, {}), (0, Chunk255367.jsx)(Chunk518560.Z, {})]
+    children: [(0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)(Chunk518560.Z, {})]
   })
 }
 
 function L() {
   return null == (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getSuspendedUserToken()) && (0, Chunk703656.uL)(Chunk981631.Z5c.LOGIN, {
     source: "suspended_user_safety_hub_page"
-  }), (0, Chunk255367.jsxs)("div", {
+  }), (0, Chunk951288.jsxs)("div", {
     className: Chunk532223.container,
-    children: [(0, Chunk255367.jsx)(d, {}), (0, Chunk255367.jsx)(N, {})]
+    children: [(0, Chunk951288.jsx)(d, {}), (0, Chunk951288.jsx)(N, {})]
   })
 }

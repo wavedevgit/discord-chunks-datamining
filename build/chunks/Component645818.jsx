@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => O
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk481060 = require("./481060.js"),
@@ -34,7 +34,7 @@ let h = (0, Chunk481060.GSL)(Chunk863969.Z),
     [Chunk981631.TzF.CONFLICT]: h,
     [Chunk981631.TzF.ERROR]: h
   });
-class _ extends Chunk73800.PureComponent {
+class _ extends Chunk647438.PureComponent {
   componentDidMount() {
     this.getIsRecentlySynced() && this.setRecentlySyncedTimeout()
   }
@@ -96,15 +96,15 @@ class _ extends Chunk73800.PureComponent {
     } = this.props, i = null == module ? {
       type: Chunk981631.TzF.DONE
     } : module, l = this.getIsRecentlySynced(), a = {};
-    (m.has(Chunk73800.type) || Chunk442837) && (Chunk846519.gradientConfig = {
+    (m.has(Chunk647438.type) || Chunk442837) && (Chunk846519.gradientConfig = {
       id: exports.id,
       startColor: "rgba(199, 208, 240, 1)",
       stopColor: "rgba(114, 137, 218, 1)",
-      stop: this.getStop(Chunk73800, Chunk442837)
+      stop: this.getStop(Chunk647438, Chunk442837)
     });
-    let s = Chunk442837 ? g : b[Chunk73800.type];
-    return (0, Chunk255367.jsx)(Chunk481060.ua7, {
-      text: this.getTooltip(Chunk73800, Chunk442837),
+    let s = Chunk442837 ? g : b[Chunk647438.type];
+    return (0, Chunk951288.jsx)(Chunk481060.ua7, {
+      text: this.getTooltip(Chunk647438, Chunk442837),
       children: e => (0, r.jsx)(s, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},

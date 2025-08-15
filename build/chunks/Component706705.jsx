@@ -3,25 +3,25 @@
 require.d(exports, {
   Z: () => l
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk933767 = require("./933767.js");
 
 function l() {
-  let [e, t] = Chunk73800.useState(false), [l, o] = Chunk73800.useState(20), [c, d] = Chunk73800.useState(80);
-  return (0, Chunk255367.jsxs)("div", {
-    children: [(0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+  let [e, t] = Chunk647438.useState(false), [l, o] = Chunk647438.useState(20), [c, d] = Chunk647438.useState(80);
+  return (0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 8,
-      children: [(0, Chunk255367.jsx)(Chunk481060.j7V, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: module,
         onChange: () => exports(!module),
         children: "Enable Rive"
-      }), (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+      }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 8,
-        children: [(0, Chunk255367.jsx)(Chunk481060.R94, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
           children: "Number of animations"
-        }), (0, Chunk255367.jsx)(Chunk481060.iRW, {
+        }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
           initialValue: l,
           defaultValue: 20,
           onValueRender: e => "".concat(Math.round(e), " animations"),
@@ -33,11 +33,11 @@ function l() {
           }, (e, t) => (t + 1) * 20)],
           stickToMarkers: true
         })]
-      }), (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+      }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 8,
-        children: [(0, Chunk255367.jsx)(Chunk481060.R94, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
           children: "Animation size"
-        }), (0, Chunk255367.jsx)(Chunk481060.iRW, {
+        }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
           initialValue: c,
           defaultValue: 80,
           onValueRender: e => "".concat(Math.round(e), "px"),
@@ -47,7 +47,7 @@ function l() {
           markers: [10, 50, 100, 200, 300]
         })]
       })]
-    }), (0, Chunk255367.jsx)("div", {
+    }), (0, Chunk951288.jsx)("div", {
       style: {
         display: "flex",
         flexWrap: "wrap",

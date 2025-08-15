@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => u
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk693789 = require("./693789.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk37234 = require("./37234.js"),
@@ -17,26 +17,26 @@ let u = function() {
     resetOnboardingAnnouncementModal: e,
     resetQuestStatus: t
   } = (0, Chunk52647.Z)();
-  return (0, Chunk255367.jsxs)(Chunk450272.$0, {
-    children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+  return (0, Chunk951288.jsxs)(Chunk450272.$0, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "Virtual Currency Configuration"
-    }), (0, Chunk255367.jsxs)(Chunk450272.E_, {
+    }), (0, Chunk951288.jsxs)(Chunk450272.E_, {
       label: "Reset Onboarding State",
       direction: "vertical",
-      children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-feedback-info",
         style: {
           marginBottom: "8px"
         },
         children: "Click the button below to reset your onboarding state for Virtual Currency."
-      }), (0, Chunk255367.jsx)(Chunk693789.zx, {
+      }), (0, Chunk951288.jsx)(Chunk693789.zx, {
         onClick: () => {
           module(), exports(), (0, Chunk37234.xf)(), (0, Chunk703656.uL)(Chunk981631.Z5c.APP)
         },
         children: "Reset Onboarding State"
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-feedback-info",
         children: "Your may have to refresh your client after being redirected to the main application in order to see these changes."

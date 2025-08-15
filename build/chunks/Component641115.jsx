@@ -4,8 +4,8 @@ require.d(exports, {
   W: () => R,
   Z: () => M
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
@@ -79,13 +79,13 @@ function P(e) {
 }
 
 function R() {
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk381994.toolTipTextContainer,
-    children: [(0, Chunk255367.jsx)(Chunk481060.SrA, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.SrA, {
       size: "md",
       color: Chunk436774.JX.PREMIUM_TIER_2,
       className: Chunk381994.premiumIcon
-    }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       className: Chunk381994.upsellText,
       variant: "text-sm/medium",
       children: Chunk388032.intl.string(Chunk388032.t.sEAnVF)

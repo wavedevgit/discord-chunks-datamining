@@ -4,8 +4,8 @@ require.d(exports, {
   Z: () => f,
   n: () => p
 });
-var i, Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var i, Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
@@ -39,7 +39,7 @@ let g = {
   tension: 40,
   clamp: true
 };
-class h extends Chunk73800.PureComponent {
+class h extends Chunk647438.PureComponent {
   componentWillEnter(e) {
     this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, m({
       toValue: 0
@@ -68,7 +68,7 @@ class h extends Chunk73800.PureComponent {
     })), module
   }
   render() {
-    return (0, Chunk255367.jsx)(Chunk748780.Z.div, {
+    return (0, Chunk951288.jsx)(Chunk748780.Z.div, {
       style: this.getStyle(),
       className: Chunk278397.item,
       children: this.props.children

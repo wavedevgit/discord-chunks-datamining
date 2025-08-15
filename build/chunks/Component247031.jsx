@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => L
 }), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./539854.js"), require("./642613.js"), require("./953529.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -137,28 +137,28 @@ function Z(e) {
     })]
   })
 }
-class D extends Chunk73800.PureComponent {
+class D extends Chunk647438.PureComponent {
   render() {
     let {
       user: e,
       hideDiscriminator: t,
       guild: n
     } = this.props;
-    return (0, Chunk255367.jsxs)(Chunk481060.P3F, {
+    return (0, Chunk951288.jsxs)(Chunk481060.P3F, {
       className: a()(Chunk121884.bannedUser, Chunk620842.card),
       onClick: this.handleShowModal,
       onContextMenu: this.handleContextMenu,
-      children: [(0, Chunk255367.jsx)(Chunk481060.qEK, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.qEK, {
         src: module.getAvatarURL(null == require ? true : require.id, 40),
         "aria-label": module.username,
         size: Chunk481060.EFr.SIZE_40,
         className: Chunk121884.bannedUserAvatar
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         className: Chunk121884.username,
         children: [Chunk51144.ZP.getUserTag(module, {
           mode: "username",
           identifiable: exports ? "never" : "always"
-        }), !exports && !module.hasUniqueUsername() && (0, Chunk255367.jsxs)("span", {
+        }), !exports && !module.hasUniqueUsername() && (0, Chunk951288.jsxs)("span", {
           className: Chunk121884.discrim,
           children: ["#", module.discriminator]
         })]
@@ -191,7 +191,7 @@ class D extends Chunk73800.PureComponent {
     })
   }
 }
-class A extends Chunk73800.PureComponent {
+class A extends Chunk647438.PureComponent {
   makeFilter(e) {
     if (null == e || 0 === e.length) return e => null != e;
     {
@@ -207,8 +207,8 @@ class A extends Chunk73800.PureComponent {
     } = this.props;
     if (null == exports) return null;
     let i = this.getSortedBans(module, require);
-    return (0, Chunk255367.jsx)(Chunk493544.Xi, {
-      sections: [Math.max(1, Chunk73800.length)],
+    return (0, Chunk951288.jsx)(Chunk493544.Xi, {
+      sections: [Math.max(1, Chunk647438.length)],
       sectionHeight: this.getSectionHeight,
       renderSection: this.renderSection,
       rowHeight: this.getRowHeight,
@@ -357,5 +357,5 @@ function L() {
   }, {
     autoTrackExposure: true
   });
-  return require ? (0, Chunk255367.jsx)(Chunk1080.Z, {}) : (0, Chunk255367.jsx)(k, {})
+  return require ? (0, Chunk951288.jsx)(Chunk1080.Z, {}) : (0, Chunk951288.jsx)(k, {})
 }

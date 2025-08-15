@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => p
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk748780 = require("./748780.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
@@ -19,12 +19,12 @@ var Chunk255367 = require("./255367.js"),
 
 function p() {
   let e = (0, Chunk442837.e7)([Chunk277053.Z], () => Chunk277053.Z.advancedMode),
-    [t] = Chunk73800.useState(new Chunk748780.Z.Value(+!!module));
-  return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-    children: [(0, Chunk255367.jsx)(Chunk481060.$i$, {
+    [t] = Chunk647438.useState(new Chunk748780.Z.Value(+!!module));
+  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.$i$, {
       className: Chunk657254.advancedModeDivider
-    }), (0, Chunk255367.jsx)(Chunk481060.y5t, {
-      component: (0, Chunk255367.jsx)(Chunk755721.zx, {
+    }), (0, Chunk951288.jsx)(Chunk481060.y5t, {
+      component: (0, Chunk951288.jsx)(Chunk755721.zx, {
         look: Chunk755721.zx.Looks.BLANK,
         color: Chunk755721.zx.Colors.TRANSPARENT,
         onClick: function() {
@@ -38,10 +38,10 @@ function p() {
             duration: 250
           }).start())
         },
-        children: (0, Chunk255367.jsxs)(Chunk481060.vwX, {
+        children: (0, Chunk951288.jsxs)(Chunk481060.vwX, {
           tag: "h1",
           className: Chunk657254.advancedTitle,
-          children: [Chunk388032.intl.string(Chunk388032.t.dYRsrq), (0, Chunk255367.jsx)(Chunk259580.Z, {
+          children: [Chunk388032.intl.string(Chunk388032.t.dYRsrq), (0, Chunk951288.jsx)(Chunk259580.Z, {
             expanded: module,
             className: Chunk657254.titleCaret,
             width: 20,
@@ -49,11 +49,11 @@ function p() {
           })]
         })
       }),
-      children: module && (0, Chunk255367.jsx)(Chunk748780.Z.div, {
+      children: module && (0, Chunk951288.jsx)(Chunk748780.Z.div, {
         style: {
           opacity: exports
         },
-        children: (0, Chunk255367.jsx)(Chunk856606.Z, {})
+        children: (0, Chunk951288.jsx)(Chunk856606.Z, {})
       })
     })]
   })

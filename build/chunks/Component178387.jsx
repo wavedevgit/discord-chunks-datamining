@@ -3,8 +3,8 @@
 require.d(exports, {
   I: () => x
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk100527 = require("./100527.js"),
@@ -30,43 +30,43 @@ function x() {
     isGuildAdmin: null != exports && Chunk496675.Z.can(Chunk981631.Plq.ADMINISTRATOR, exports),
     canManageGuild: null != exports && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, exports)
   })), j = (0, Chunk158638.g1)(null == exports ? true : exports.id, "GuildSettingsBoostPerks");
-  return null == exports ? null : (0, Chunk255367.jsx)(Chunk906732.Gt, {
+  return null == exports ? null : (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: module,
-    children: (0, Chunk255367.jsxs)("main", {
+    children: (0, Chunk951288.jsxs)("main", {
       className: Chunk884329.container,
-      children: [(0, Chunk255367.jsx)(Chunk793030.X6, {
+      children: [(0, Chunk951288.jsx)(Chunk793030.X6, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: Chunk388032.intl.string(Chunk388032.t.UKgg5O)
-      }), (0, Chunk255367.jsx)(Chunk888125.w, {
+      }), (0, Chunk951288.jsx)(Chunk888125.w, {
         canManageGuild: x,
         premiumProgressBarEnabled: exports.premiumProgressBarEnabled
-      }), (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk951288.jsx)("div", {
         className: Chunk884329.divider
-      }), (0, Chunk255367.jsx)(Chunk92533.A, {
+      }), (0, Chunk951288.jsx)(Chunk92533.A, {
         guild: exports,
         canManageGuild: x
-      }), (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk951288.jsx)("div", {
         className: Chunk884329.divider
-      }), j ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-        children: [require && (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-          children: [(0, Chunk255367.jsx)(Chunk464865.V, {
+      }), j ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        children: [require && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+          children: [(0, Chunk951288.jsx)(Chunk464865.V, {
             guild: exports
-          }), (0, Chunk255367.jsx)("div", {
+          }), (0, Chunk951288.jsx)("div", {
             className: Chunk884329.divider
           })]
-        }), (0, Chunk255367.jsx)(Chunk249363.A, {
+        }), (0, Chunk951288.jsx)(Chunk249363.A, {
           guild: exports,
           canManageGuild: x
         })]
-      }) : (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-        children: [(0, Chunk255367.jsx)(Chunk249363.A, {
+      }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        children: [(0, Chunk951288.jsx)(Chunk249363.A, {
           guild: exports,
           canManageGuild: x
-        }), require && (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-          children: [(0, Chunk255367.jsx)("div", {
+        }), require && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+          children: [(0, Chunk951288.jsx)("div", {
             className: Chunk884329.divider
-          }), (0, Chunk255367.jsx)(Chunk464865.V, {
+          }), (0, Chunk951288.jsx)(Chunk464865.V, {
             guild: exports
           })]
         })]

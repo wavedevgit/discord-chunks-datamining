@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => w
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -89,7 +89,7 @@ let P = e => {
 };
 
 function w() {
-  Chunk73800.useEffect(() => {
+  Chunk647438.useEffect(() => {
     Chunk570140.Z.wait(() => {
       (0, Chunk355467.tZ)(), (0, Chunk821849.Y2)()
     })
@@ -97,32 +97,32 @@ function w() {
   let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
     t = (0, Chunk442837.e7)([Chunk899667.Z], () => null != module ? Chunk899667.Z.getAppliedGuildBoostsForGuild(module.id) : null),
     n = (0, Chunk15640.V)();
-  return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-    children: [(0, Chunk255367.jsxs)(Chunk73800.Fragment, {
-      children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsxs)(Chunk647438.Fragment, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
         tag: Chunk481060.RB0.H1,
         children: Chunk388032.intl.string(Chunk388032.t.nLovSU)
-      }), null != exports && null != module ? (0, Chunk255367.jsx)(T, {
+      }), null != exports && null != module ? (0, Chunk951288.jsx)(T, {
         appliedGuildBoosts: exports,
         guildId: module.id
-      }) : null, (0, Chunk255367.jsx)(Chunk481060.R94, {
+      }) : null, (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DESCRIPTION,
         className: Chunk424359.titleBlurb,
         children: Chunk388032.intl.format(Chunk388032.t.hLOkp6, {
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.GUILD_SUBSCRIPTIONS)
         })
       })]
-    }), null != module && (0, Chunk255367.jsx)(Chunk174604.Z, {
+    }), null != module && (0, Chunk951288.jsx)(Chunk174604.Z, {
       guild: module,
       onButtonClick: function() {
         null != module && ((0, Chunk37234.xf)(), (0, Chunk441536.Z)(module.id, Chunk100527.Z.GUILD_POWERUPS_GUILD_SETTINGS_PREMIUM))
       }
-    }), (0, Chunk255367.jsx)(Chunk399829.Z, {
+    }), (0, Chunk951288.jsx)(Chunk399829.Z, {
       tiers: (0, Chunk267642.cP)(null != module && module.features.has(Chunk981631.oNc.COMMUNITY) && module.maxStageVideoChannelUsers >= Chunk981631.B9o),
       renderTier: P
-    }), (0, Chunk255367.jsx)("div", {
+    }), (0, Chunk951288.jsx)("div", {
       className: Chunk424359.divider
-    }), require ? (0, Chunk255367.jsx)(Chunk404270.Z, {}) : null, require ? (0, Chunk255367.jsx)(Chunk774380.Z, {
+    }), require ? (0, Chunk951288.jsx)(Chunk404270.Z, {}) : null, require ? (0, Chunk951288.jsx)(Chunk774380.Z, {
       onOpenPremiumClick: () => void Chunk626135.default.track(Chunk981631.rMx.PREMIUM_PROMOTION_OPENED, {
         location: {
           page: Chunk981631.ZY5.GUILD_SETTINGS,

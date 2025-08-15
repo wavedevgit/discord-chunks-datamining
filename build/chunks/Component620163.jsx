@@ -1,10 +1,10 @@
 /** Chunk was on 30202 **/
 /** chunk id: 620163, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  i: () => e8
+  i: () => e6
 }), require("./539854.js"), require("./388685.js");
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk990547 = require("./990547.js"),
   Chunk704215 = require("./704215.js"),
   Chunk692547 = require("./692547.js"),
@@ -117,9 +117,9 @@ let e$ = () => {
   e0 = () => {
     let e = e$(),
       [t] = (0, Chunk243778.US)(module);
-    return exports === Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE || exports === Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_BADGE ? (0, Chunk255367.jsx)(Chunk481060.lBU, {
+    return exports === Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE || exports === Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_BADGE ? (0, Chunk951288.jsx)(Chunk481060.lBU, {
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
-    }) : exports === Chunk704215.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE ? (0, Chunk255367.jsx)(Chunk481060.IGR, {
+    }) : exports === Chunk704215.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE ? (0, Chunk951288.jsx)(Chunk481060.IGR, {
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     }) : null
   },
@@ -131,15 +131,15 @@ let e$ = () => {
       location: "SettingsRendererConfig"
     }).enabled && module.push(Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE), module.push(Chunk704215.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE), module
   },
-  e3 = () => {
+  e8 = () => {
     let e = e1(),
       [t] = (0, Chunk243778.US)(module);
-    return exports === Chunk704215.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE ? (0, Chunk255367.jsx)(Chunk158947.Z, {}) : exports === Chunk704215.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE || exports === Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE ? (0, Chunk255367.jsx)(Chunk481060.IGR, {
+    return exports === Chunk704215.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE ? (0, Chunk951288.jsx)(Chunk158947.Z, {}) : exports === Chunk704215.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE || exports === Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE ? (0, Chunk951288.jsx)(Chunk481060.IGR, {
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     }) : null
   },
-  e6 = Chunk200645.Z,
-  e8 = e => {
+  e3 = Chunk200645.Z,
+  e6 = e => {
     let {
       unseenGiftCount: t,
       showPrepaidPaymentPastDueWarning: _,
@@ -147,11 +147,11 @@ let e$ = () => {
       numOfPendingFamilyRequests: N,
       isOverlaySupported: R,
       isClipsBetaTagShowing: V = false,
-      shouldMergeGameSettings: e8,
-      isKeywordFilteringEnabled: e2,
-      isStaff: e5,
-      isInappropriateConversationWarningEnabled: e7,
-      isInapproprateConversationsDefaultOn: e4,
+      shouldMergeGameSettings: e6,
+      isKeywordFilteringEnabled: e4,
+      isStaff: e2,
+      isInappropriateConversationWarningEnabled: e5,
+      isInapproprateConversationsDefaultOn: e7,
       paymentsBlocked: e9,
       isEligibleForQuests: te,
       isStricterMessageRequestsEnabled: tt,
@@ -286,7 +286,7 @@ let e$ = () => {
         label: eq.intl.string(eq.t.URyqtL),
         ariaLabel: eq.intl.string(eq.t.URyqtL),
         element: eB.Z,
-        predicate: () => e8
+        predicate: () => e6
       },
       [eH.s6.GAMES_MY_GAMES]: {
         section: eW.oAB.GAMES,
@@ -315,7 +315,7 @@ let e$ = () => {
         label: eq.intl.string(eq.t["vi7f+v"]),
         ariaLabel: eq.intl.string(eq.t["vi7f+v"]),
         element: L.Z,
-        newIndicator: (0, i.jsx)(e3, {}),
+        newIndicator: (0, i.jsx)(e8, {}),
         newIndicatorDismissibleContentTypes: [...e1()],
         notice: {
           stores: [Y.Z, A.Z],
@@ -522,13 +522,13 @@ let e$ = () => {
         section: eW.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [eq.intl.string(eq.t["1UaUy8"]), eq.intl.string(eq.t["xIk/iI"])],
         parent: eH.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-        predicate: () => e2
+        predicate: () => e4
       },
       [eH.s6.PRIVACY_SAFETY_ALERTS_V2]: {
         section: eW.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [eq.intl.string(eq.t.qFsx5u)],
         parent: eH.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-        predicate: () => e7 && !ts && !e4
+        predicate: () => e5 && !ts && !e7
       },
       [eH.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2]: {
         section: eW.oAB.DATA_AND_PRIVACY,
@@ -607,7 +607,7 @@ let e$ = () => {
         ariaLabel: eq.intl.string(eq.t.z2jK6e),
         icon: V ? (0, i.jsx)(j.Z, {}) : true,
         element: E.Z,
-        predicate: () => !e8,
+        predicate: () => !e6,
         url: eW.Z5c.SETTINGS("clips")
       },
       [eH.s6.RESTRICTED_USERS]: {
@@ -1176,7 +1176,7 @@ let e$ = () => {
         section: eW.oAB.VOICE,
         searchableTitles: [eq.intl.string(eq.t.U4FgFB)],
         parent: eH.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
-        predicate: () => ("canary" === Q.ZP.releaseChannel || "development" === Q.ZP.releaseChannel) && e5 && W.Z.supports(eK.AN.CONNECTION_REPLAY)
+        predicate: () => ("canary" === Q.ZP.releaseChannel || "development" === Q.ZP.releaseChannel) && e2 && W.Z.supports(eK.AN.CONNECTION_REPLAY)
       },
       [eH.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING]: {
         section: eW.oAB.VOICE,
@@ -1465,7 +1465,7 @@ let e$ = () => {
         section: eW.oAB.LINUX,
         searchableTitles: [eq.intl.string(eq.t["7pPjTU"])],
         label: eq.intl.string(eq.t["7pPjTU"]),
-        element: e6,
+        element: e3,
         predicate: () => J.isPlatformEmbedded && (0, J.isLinux)()
       },
       [eH.s6.STREAMER_MODE]: {
@@ -1567,23 +1567,23 @@ let e$ = () => {
         label: eq.intl.string(eq.t.Cq98yM),
         ariaLabel: eq.intl.string(eq.t.Cq98yM),
         element: ec.Z,
-        predicate: () => !e8,
+        predicate: () => !e6,
         url: eW.Z5c.SETTINGS("activity-privacy")
       },
       [eH.s6.ACTIVITY_PRIVACY_STATUS]: {
-        section: e8 ? eW.oAB.GAMES : eW.oAB.ACTIVITY_PRIVACY,
+        section: e6 ? eW.oAB.GAMES : eW.oAB.ACTIVITY_PRIVACY,
         searchableTitles: [eq.intl.string(eq.t["8ka8lp"])],
-        parent: e8 ? eH.s6.GAMES_ACTIVITY_PRIVACY : eH.s6.ACTIVITY_PRIVACY
+        parent: e6 ? eH.s6.GAMES_ACTIVITY_PRIVACY : eH.s6.ACTIVITY_PRIVACY
       },
       [eH.s6.ACTIVITY_PRIVACY_RICH_PRESENCE]: {
-        section: e8 ? eW.oAB.GAMES : eW.oAB.ACTIVITY_PRIVACY,
+        section: e6 ? eW.oAB.GAMES : eW.oAB.ACTIVITY_PRIVACY,
         searchableTitles: [eq.intl.string(eq.t.VOszPD)],
-        parent: e8 ? eH.s6.GAMES_ACTIVITY_PRIVACY : eH.s6.ACTIVITY_PRIVACY
+        parent: e6 ? eH.s6.GAMES_ACTIVITY_PRIVACY : eH.s6.ACTIVITY_PRIVACY
       },
       [eH.s6.ACTIVITY_PRIVACY_TOS]: {
-        section: e8 ? eW.oAB.GAMES : eW.oAB.ACTIVITY_PRIVACY,
+        section: e6 ? eW.oAB.GAMES : eW.oAB.ACTIVITY_PRIVACY,
         searchableTitles: [eH.CF],
-        parent: e8 ? eH.s6.GAMES_ACTIVITY_PRIVACY : eH.s6.ACTIVITY_PRIVACY
+        parent: e6 ? eH.s6.GAMES_ACTIVITY_PRIVACY : eH.s6.ACTIVITY_PRIVACY
       },
       [eH.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY]: {
         section: eW.oAB.ACTIVITY_PRIVACY,
@@ -1595,14 +1595,14 @@ let e$ = () => {
         searchableTitles: [eq.intl.string(eq.t.AVDyEh)],
         label: eq.intl.string(eq.t.AVDyEh),
         element: ej.Z,
-        predicate: () => !e8 && (0, eL.Jw)()
+        predicate: () => !e6 && (0, eL.Jw)()
       },
       [eH.s6.OVERLAY]: {
         section: eW.oAB.OVERLAY,
         searchableTitles: [eq.intl.string(eq.t["9cb1U1"]), eq.intl.string(eq.t.HcoRu7)],
         label: eq.intl.string(eq.t["9cb1U1"]),
         element: eT.Z,
-        predicate: () => !e8 && R
+        predicate: () => !e6 && R
       },
       [eH.s6.CHANGELOG]: {
         section: "changelog",
@@ -1728,7 +1728,7 @@ let e$ = () => {
         section: eW.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Always deliver ads"],
         parent: eH.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => e5 && H.Z.isDeveloper
+        predicate: () => e2 && H.Z.isDeveloper
       },
       [eH.s6.DEVELOPER_OPTIONS_SOURCE_MAPS]: {
         section: eW.oAB.DEVELOPER_OPTIONS,
@@ -1746,7 +1746,7 @@ let e$ = () => {
         section: eW.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Idle Status Indicator"],
         parent: eH.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => e5 && H.Z.isDeveloper
+        predicate: () => e2 && H.Z.isDeveloper
       },
       [eH.s6.DEVELOPER_OPTIONS_ACCESSIBILITY_AUDITING]: {
         section: eW.oAB.DEVELOPER_OPTIONS,
@@ -1758,37 +1758,37 @@ let e$ = () => {
         section: eW.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["CSS Debugging"],
         parent: eH.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => e5 && H.Z.isDeveloper
+        predicate: () => e2 && H.Z.isDeveloper
       },
       [eH.s6.DEVELOPER_OPTIONS_HIGHLIGHT_VOID_TOGGLEABLES]: {
         section: eW.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Highlight Toggleable Components"],
         parent: eH.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => e5 && H.Z.isDeveloper
+        predicate: () => e2 && H.Z.isDeveloper
       },
       [eH.s6.DEVELOPER_OPTIONS_LAYOUT_DEBUGGING]: {
         section: eW.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Layout Debugging"],
         parent: eH.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => e5 && H.Z.isDeveloper
+        predicate: () => e2 && H.Z.isDeveloper
       },
       [eH.s6.DEVELOPER_OPTIONS_LAYOUT_DEBUGGING_OPTIONS]: {
         section: eW.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Layout Debugging"],
         parent: eH.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => e5 && H.Z.isDeveloper && z.default.layoutDebuggingEnabled
+        predicate: () => e2 && H.Z.isDeveloper && z.default.layoutDebuggingEnabled
       },
       [eH.s6.DEVELOPER_OPTIONS_PREVIEW_UNPUBLISHED_COLLECTIONS]: {
         section: eW.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Preview Unpublished Collections"],
         parent: eH.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => e5 && H.Z.isDeveloper
+        predicate: () => e2 && H.Z.isDeveloper
       },
       [eH.s6.DEVELOPER_OPTIONS_DISABLE_APP_COLLECTIONS_CACHE]: {
         section: eW.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Disable App Collections Cache"],
         parent: eH.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => e5 && H.Z.isDeveloper
+        predicate: () => e2 && H.Z.isDeveloper
       },
       [eH.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE]: {
         section: eW.oAB.DEVELOPER_OPTIONS,
@@ -1966,7 +1966,7 @@ let e$ = () => {
         searchableTitles: ["Intl Testing", "i18n"],
         label: "Intl Testing",
         element: P.Z,
-        predicate: () => e5 || H.Z.isDeveloper
+        predicate: () => e2 || H.Z.isDeveloper
       },
       [eH.s6.SHOP_KEEPER]: {
         section: eW.oAB.SHOP_KEEPER,
@@ -1989,7 +1989,7 @@ let e$ = () => {
         searchableTitles: ["Minor Reward Capping Config"],
         label: "Minor Reward Capping Config",
         element: M.Z,
-        predicate: () => e5
+        predicate: () => e2
       },
       [eH.s6.WEB_SETTING_TREE_TOOL]: {
         section: eW.oAB.WEB_SETTING_TREE_TOOL,

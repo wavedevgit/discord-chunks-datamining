@@ -3,7 +3,7 @@
 require.d(exports, {
   f: () => c
 });
-var Chunk255367 = require("./255367.js"),
+var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -19,22 +19,22 @@ function c() {
     } = (0, Chunk987209.wD)(),
     t = (0, Chunk347896.Z)(),
     c = null == require ? true : require.planSelection;
-  return null == c || null == exports || 0 === exports.length ? null : (0, Chunk255367.jsxs)("div", {
+  return null == c || null == exports || 0 === exports.length ? null : (0, Chunk951288.jsxs)("div", {
     className: Chunk487276.container,
-    children: [(0, Chunk255367.jsx)("div", {
+    children: [(0, Chunk951288.jsx)("div", {
       className: Chunk487276.avatar,
-      children: (0, Chunk255367.jsx)(Chunk897942.Z, {
+      children: (0, Chunk951288.jsx)(Chunk897942.Z, {
         maxRewardImageSrc: c.getImageUrl(true, module),
         claimableRewards: exports,
         size: Chunk481060.EFr.SIZE_48
       })
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk487276.textSection,
-      children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "text-primary",
         children: c.heading()
-      }), null != c.subheading && exports.length > 1 && (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), null != c.subheading && exports.length > 1 && (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         className: Chunk487276.subheading,
         children: c.subheading(exports.length)

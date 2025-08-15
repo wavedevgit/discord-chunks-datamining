@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => el
 }), require("./704826.js"), require("./35282.js"), require("./388685.js"), require("./361932.js"), require("./187205.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
@@ -83,18 +83,18 @@ function X(e, t) {
 }
 
 function J() {
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.root,
-    children: [(0, Chunk255367.jsx)(Q, {}), (0, Chunk255367.jsx)(ec, {}), (0, Chunk255367.jsx)(eb, {}), (0, Chunk255367.jsx)(ex, {}), (0, Chunk255367.jsx)(ef, {}), (0, Chunk255367.jsx)(eg, {}), (0, Chunk255367.jsx)(eh, {}), (0, Chunk255367.jsx)(ep, {}), (0, Chunk255367.jsx)(em, {}), (0, Chunk255367.jsx)(eN, {}), (0, Chunk255367.jsx)(eI, {}), (0, Chunk255367.jsx)($, {}), (0, Chunk255367.jsx)(eA, {})]
+    children: [(0, Chunk951288.jsx)(Q, {}), (0, Chunk951288.jsx)(ec, {}), (0, Chunk951288.jsx)(eb, {}), (0, Chunk951288.jsx)(ex, {}), (0, Chunk951288.jsx)(ef, {}), (0, Chunk951288.jsx)(eg, {}), (0, Chunk951288.jsx)(eh, {}), (0, Chunk951288.jsx)(ep, {}), (0, Chunk951288.jsx)(em, {}), (0, Chunk951288.jsx)(eN, {}), (0, Chunk951288.jsx)(eI, {}), (0, Chunk951288.jsx)($, {}), (0, Chunk951288.jsx)(eA, {})]
   })
 }
 
 function Q() {
   let e = (0, Chunk580747.Z)("highlight_mana_components");
-  return (0, Chunk255367.jsx)(Chunk481060.hjN, {
+  return (0, Chunk951288.jsx)(Chunk481060.hjN, {
     title: "Design System Controls",
-    children: (0, Chunk255367.jsx)(Chunk481060.xJW, {
-      children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
+    children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
+      children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
         value: module,
         onChange: e => (0, R.Z)("highlight_mana_components", e),
         note: "Highlights all mana components marked with data-mana-component",
@@ -107,12 +107,12 @@ function Q() {
 
 function $() {
   let e = Object.keys(Chunk481060.DM8);
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
-    children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "Notice"
-    }), (0, Chunk255367.jsx)(Chunk481060.Kqy, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Kqy, {
       gap: 16,
       children: module.map(e => (0, i.jsx)(N.qXd, {
         color: N.DM8[e],
@@ -132,8 +132,8 @@ let ee = ["neutral", "blue_new", "blurple", "green_new", "red_new", "teal_new", 
 
 function ea() {
   let e = (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.gradientPreset);
-  return (0, Chunk255367.jsxs)("div", {
-    children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+  return (0, Chunk951288.jsxs)("div", {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       className: Chunk726927.heading,
       children: "Background Colors"
@@ -209,12 +209,12 @@ function ea() {
           }, e)
         })
       })]
-    }, e)), null !== module && (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+    }, e)), null !== module && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-xl/semibold",
         className: Chunk726927.heading,
         children: "Gradient Background Colors"
-      }), (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk951288.jsx)("div", {
         className: "custom-theme-background",
         style: {
           display: "grid",
@@ -233,7 +233,7 @@ function ea() {
           })
         }, e))
       })]
-    }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       className: Chunk726927.heading,
       children: "Scales"
@@ -266,36 +266,36 @@ function ea() {
 }
 
 function el() {
-  return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-    children: [(0, Chunk255367.jsx)(Chunk526156.Z, {
+  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsx)(Chunk526156.Z, {
       parentSetting: Chunk726985.s6.DESIGN_SYSTEMS,
       settingsSection: Chunk981631.oAB.DESIGN_SYSTEMS,
       tabs: [{
         title: "Components",
-        component: () => (0, Chunk255367.jsx)(J, {}),
+        component: () => (0, Chunk951288.jsx)(J, {}),
         setting: Chunk726985.s6.DESIGN_SYSTEMS_COMPONENTS
       }, {
         title: "Colors",
-        component: () => (0, Chunk255367.jsx)(ea, {}),
+        component: () => (0, Chunk951288.jsx)(ea, {}),
         setting: Chunk726985.s6.DESIGN_SYSTEMS_COLORS
       }, {
         title: "Animations",
-        component: () => (0, Chunk255367.jsx)(Chunk706705.Z, {}),
+        component: () => (0, Chunk951288.jsx)(Chunk706705.Z, {}),
         setting: Chunk726985.s6.ANIMATION_TESTING
       }, {
         title: "Text Playground",
-        component: () => (0, Chunk255367.jsx)(Chunk554042.Z, {}),
+        component: () => (0, Chunk951288.jsx)(Chunk554042.Z, {}),
         setting: Chunk726985.s6.TEXT_PLAYGROUND
       }, {
         title: "Text Componnts",
-        component: () => (0, Chunk255367.jsx)(Chunk799071.Z, {}),
+        component: () => (0, Chunk951288.jsx)(Chunk799071.Z, {}),
         setting: Chunk726985.s6.TEXT_COMPONENTS
       }]
-    }), (0, Chunk255367.jsx)("div", {
+    }), (0, Chunk951288.jsx)("div", {
       className: Chunk726927.themes,
-      children: (0, Chunk255367.jsx)(Chunk705262.ZP, {
+      children: (0, Chunk951288.jsx)(Chunk705262.ZP, {
         type: Chunk705262.yH.SETTINGS,
-        children: (0, Chunk255367.jsx)(Chunk705262.ZP.Basic, {
+        children: (0, Chunk951288.jsx)(Chunk705262.ZP.Basic, {
           className: Chunk726927.themeSelectionGroup
         })
       })
@@ -334,7 +334,7 @@ function eo(e) {
 }
 
 function ec() {
-  let [e, t] = Chunk73800.useState("md"), [n, s] = Chunk73800.useState("start"), [a, o] = Chunk73800.useState(true), c = ["primary", "secondary", "critical-primary", "critical-secondary", "active", "overlay-primary", "overlay-secondary"], d = [...Chunk442837, "expressive"].map(t => (0, i.jsxs)(i.Fragment, {
+  let [e, t] = Chunk647438.useState("md"), [n, s] = Chunk647438.useState("start"), [a, o] = Chunk647438.useState(true), c = ["primary", "secondary", "critical-primary", "critical-secondary", "active", "overlay-primary", "overlay-secondary"], d = [...Chunk442837, "expressive"].map(t => (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(eo, {
       component: u.z,
       variant: t,
@@ -366,16 +366,16 @@ function ec() {
       text: "Text button"
     })
   }, e));
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
-    children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "Buttons"
-    }), (0, Chunk255367.jsxs)(eu, {
+    }), (0, Chunk951288.jsxs)(eu, {
       title: "Button Options",
-      children: [(0, Chunk255367.jsx)(Chunk481060.xJW, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
         title: "Button size",
-        children: (0, Chunk255367.jsx)(Chunk481060.FXm, {
+        children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
           onChange: e => {
             let {
               value: n
@@ -391,9 +391,9 @@ function ec() {
           }],
           value: module
         })
-      }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
+      }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
         title: "Icon position",
-        children: (0, Chunk255367.jsx)(Chunk481060.FXm, {
+        children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
           onChange: e => {
             let {
               value: t
@@ -412,9 +412,9 @@ function ec() {
           }],
           value: require
         })
-      }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
+      }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
         title: "Loading animation",
-        children: (0, Chunk255367.jsx)(Chunk481060.FXm, {
+        children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
           onChange: e => {
             let {
               value: t
@@ -431,50 +431,50 @@ function ec() {
           value: a ? "on" : "off"
         })
       })]
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       style: {
         display: "grid",
         gridTemplateColumns: "repeat(2, 1fr)",
         gap: 16
       },
       children: [Chunk279570, Chunk836459, Chunk780842]
-    }), (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+    }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 16,
       padding: {
         top: 16
       },
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",
         children: "Button Groups"
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-lg/medium",
         children: "Horizontal"
-      }), (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+      }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
         direction: "horizontal",
-        children: [(0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+        children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
           gap: 16,
-          children: [(0, Chunk255367.jsxs)(Chunk374415.h, {
+          children: [(0, Chunk951288.jsxs)(Chunk374415.h, {
             size: module,
-            children: [(0, Chunk255367.jsx)(eo, {
+            children: [(0, Chunk951288.jsx)(eo, {
               component: Chunk680018.z,
               variant: "secondary",
               text: "Cancel",
               showLoadingAnimation: a
-            }), (0, Chunk255367.jsx)(eo, {
+            }), (0, Chunk951288.jsx)(eo, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
               showLoadingAnimation: a
             })]
-          }), (0, Chunk255367.jsxs)(Chunk374415.h, {
+          }), (0, Chunk951288.jsxs)(Chunk374415.h, {
             size: module,
-            children: [(0, Chunk255367.jsx)(eo, {
+            children: [(0, Chunk951288.jsx)(eo, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
               showLoadingAnimation: a
-            }), (0, Chunk255367.jsx)(eo, {
+            }), (0, Chunk951288.jsx)(eo, {
               component: Chunk861066.h,
               variant: "secondary",
               icon: Chunk481060.gw7,
@@ -482,17 +482,17 @@ function ec() {
               showLoadingAnimation: a
             })]
           })]
-        }), (0, Chunk255367.jsx)(Chunk481060.Kqy, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Kqy, {
           gap: 16,
-          children: (0, Chunk255367.jsxs)(Chunk374415.h, {
+          children: (0, Chunk951288.jsxs)(Chunk374415.h, {
             size: module,
             fullWidth: true,
-            children: [(0, Chunk255367.jsx)(eo, {
+            children: [(0, Chunk951288.jsx)(eo, {
               component: Chunk680018.z,
               variant: "secondary",
               text: "Cancel",
               showLoadingAnimation: a
-            }), (0, Chunk255367.jsx)(eo, {
+            }), (0, Chunk951288.jsx)(eo, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
@@ -500,41 +500,41 @@ function ec() {
             })]
           })
         })]
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-lg/medium",
         children: "Vertical"
-      }), (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+      }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
         direction: "horizontal",
-        children: [(0, Chunk255367.jsx)(Chunk481060.Kqy, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Kqy, {
           gap: 16,
-          children: (0, Chunk255367.jsxs)(Chunk374415.h, {
+          children: (0, Chunk951288.jsxs)(Chunk374415.h, {
             direction: "vertical",
             size: module,
-            children: [(0, Chunk255367.jsx)(eo, {
+            children: [(0, Chunk951288.jsx)(eo, {
               component: Chunk680018.z,
               variant: "secondary",
               text: "Cancel",
               showLoadingAnimation: a
-            }), (0, Chunk255367.jsx)(eo, {
+            }), (0, Chunk951288.jsx)(eo, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
               showLoadingAnimation: a
             })]
           })
-        }), (0, Chunk255367.jsx)(Chunk481060.Kqy, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Kqy, {
           gap: 16,
-          children: (0, Chunk255367.jsxs)(Chunk374415.h, {
+          children: (0, Chunk951288.jsxs)(Chunk374415.h, {
             fullWidth: true,
             direction: "vertical",
             size: module,
-            children: [(0, Chunk255367.jsx)(eo, {
+            children: [(0, Chunk951288.jsx)(eo, {
               component: Chunk680018.z,
               variant: "secondary",
               text: "Cancel",
               showLoadingAnimation: a
-            }), (0, Chunk255367.jsx)(eo, {
+            }), (0, Chunk951288.jsx)(eo, {
               component: Chunk680018.z,
               variant: "primary",
               text: "Submit",
@@ -542,7 +542,7 @@ function ec() {
             })]
           })
         })]
-      }), (0, Chunk255367.jsx)(ed, {
+      }), (0, Chunk951288.jsx)(ed, {
         buttonSize: module
       })]
     })]
@@ -609,29 +609,29 @@ function eu(e) {
 }
 
 function em() {
-  let [e, t] = Chunk73800.useState("1");
-  return (0, Chunk255367.jsxs)("div", {
+  let [e, t] = Chunk647438.useState("1");
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
-    children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "TabBar"
-    }), (0, Chunk255367.jsxs)(Chunk481060.njP, {
+    }), (0, Chunk951288.jsxs)(Chunk481060.njP, {
       type: "top",
       look: "brand",
       selectedItem: module,
       onItemSelect: e => t(e),
       className: Chunk726927.tabBar,
-      children: [(0, Chunk255367.jsx)(Chunk481060.njP.Item, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.njP.Item, {
         id: "1",
         children: "Tab 1"
-      }), (0, Chunk255367.jsx)(Chunk481060.njP.Item, {
+      }), (0, Chunk951288.jsx)(Chunk481060.njP.Item, {
         id: "2",
         children: "Tab 2"
-      }), (0, Chunk255367.jsx)(Chunk481060.njP.Item, {
+      }), (0, Chunk951288.jsx)(Chunk481060.njP.Item, {
         id: "3",
         children: "Tab 3"
       })]
-    }), (0, Chunk255367.jsxs)(Chunk481060.Text, {
+    }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
       variant: "text-md/medium",
       children: ["Selected tab: ", module]
     })]
@@ -639,70 +639,70 @@ function em() {
 }
 
 function ep() {
-  let [e, t] = Chunk73800.useState(1), [n, s] = Chunk73800.useState(false), [a, l] = Chunk73800.useState(5), [o, c] = Chunk73800.useState(false), d = Chunk73800.useRef(null);
-  return (0, Chunk255367.jsxs)("div", {
+  let [e, t] = Chunk647438.useState(1), [n, s] = Chunk647438.useState(false), [a, l] = Chunk647438.useState(5), [o, c] = Chunk647438.useState(false), d = Chunk647438.useRef(null);
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
-    children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "Context Menus"
-    }), (0, Chunk255367.jsx)("span", {
-      children: (0, Chunk255367.jsx)(Chunk481060.yRy, {
+    }), (0, Chunk951288.jsx)("span", {
+      children: (0, Chunk951288.jsx)(Chunk481060.yRy, {
         targetElementRef: Chunk836459,
         shouldShow: Chunk971809,
-        renderPopout: () => (0, Chunk255367.jsxs)(Chunk481060.v2r, {
+        renderPopout: () => (0, Chunk951288.jsxs)(Chunk481060.v2r, {
           navId: "demo",
           "aria-label": "Demo Actions",
           onClose: () => null,
           onSelect: () => null,
-          children: [(0, Chunk255367.jsxs)(Chunk481060.kSQ, {
+          children: [(0, Chunk951288.jsxs)(Chunk481060.kSQ, {
             label: "Basic items",
-            children: [(0, Chunk255367.jsx)(Chunk481060.sNh, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.sNh, {
               id: "first",
               label: "An option"
-            }), (0, Chunk255367.jsx)(Chunk481060.sNh, {
+            }), (0, Chunk951288.jsx)(Chunk481060.sNh, {
               id: "second",
               label: "An option with an icon",
               icon: Chunk481060.kBi
-            }), (0, Chunk255367.jsxs)(Chunk481060.sNh, {
+            }), (0, Chunk951288.jsxs)(Chunk481060.sNh, {
               id: "item-with-submenu",
               label: "Item with submenu",
-              children: [(0, Chunk255367.jsx)(Chunk481060.sNh, {
+              children: [(0, Chunk951288.jsx)(Chunk481060.sNh, {
                 id: "subitem-1",
                 label: "Subitem 1"
-              }), (0, Chunk255367.jsx)(Chunk481060.sNh, {
+              }), (0, Chunk951288.jsx)(Chunk481060.sNh, {
                 id: "subitem-2",
                 label: "Subitem 2"
-              }), (0, Chunk255367.jsx)(Chunk481060.sNh, {
+              }), (0, Chunk951288.jsx)(Chunk481060.sNh, {
                 id: "subitem-3",
                 label: "Subitem 3"
               })]
             })]
-          }), (0, Chunk255367.jsxs)(Chunk481060.kSQ, {
+          }), (0, Chunk951288.jsxs)(Chunk481060.kSQ, {
             label: "Inputs",
-            children: [(0, Chunk255367.jsx)(Chunk481060.S89, {
+            children: [(0, Chunk951288.jsx)(Chunk481060.S89, {
               id: "checkable",
               label: "Checkbox",
               checked: require,
               action: () => Chunk120356(!require)
-            }), (0, Chunk255367.jsx)(Chunk481060.k5B, {
+            }), (0, Chunk951288.jsx)(Chunk481060.k5B, {
               id: "radio-one",
               group: "a-group",
               label: "Radio 1",
               action: () => exports(1),
               checked: 1 === module
-            }), (0, Chunk255367.jsx)(Chunk481060.k5B, {
+            }), (0, Chunk951288.jsx)(Chunk481060.k5B, {
               id: "radio-two",
               group: "a-group",
               label: "Radio 2",
               action: () => exports(2),
               checked: 2 === module
-            }), (0, Chunk255367.jsx)(Chunk481060.k5B, {
+            }), (0, Chunk951288.jsx)(Chunk481060.k5B, {
               id: "radio-three",
               group: "a-group",
               label: "Radio 3",
               action: () => exports(3),
               checked: 3 === module
-            }), (0, Chunk255367.jsx)(Chunk481060.II_, {
+            }), (0, Chunk951288.jsx)(Chunk481060.II_, {
               id: "slider",
               label: "Slider",
               control: (e, t) => (0, i.jsx)(N._wy, {
@@ -714,14 +714,14 @@ function ep() {
                 "aria-label": "Slider"
               })
             })]
-          }), (0, Chunk255367.jsx)(Chunk481060.Clw, {}), (0, Chunk255367.jsx)(Chunk481060.sNh, {
+          }), (0, Chunk951288.jsx)(Chunk481060.Clw, {}), (0, Chunk951288.jsx)(Chunk481060.sNh, {
             id: "danger",
             label: "A destructive option",
             color: "danger",
             icon: Chunk481060.XHJ
           })]
         }),
-        children: () => (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: () => (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Toggle context menu",
           buttonRef: Chunk836459,
@@ -733,35 +733,35 @@ function ep() {
 }
 
 function eg() {
-  let [e, t] = Chunk73800.useState(Chunk481060.FGA.PRIMARY), n = Chunk73800.useMemo(() => Object.entries(Chunk481060.FGA).map(e => {
+  let [e, t] = Chunk647438.useState(Chunk481060.FGA.PRIMARY), n = Chunk647438.useMemo(() => Object.entries(Chunk481060.FGA).map(e => {
     let [t, n] = e;
     return {
       label: t,
       value: n
     }
   }), []);
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
-    children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "Tooltips"
-    }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/semibold",
       children: "Legacy Tooltips"
-    }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
+    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
       title: "Color",
-      children: (0, Chunk255367.jsx)(Chunk481060.q4e, {
+      children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
         value: module,
         onChange: exports,
         options: require
       })
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       style: {
         display: "flex",
         gap: 8,
         flexWrap: "wrap"
       },
-      children: [(0, Chunk255367.jsx)(Chunk481060.ua7, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.ua7, {
         color: module,
         text: "Here's top aligned tooltip text!",
         position: "top",
@@ -769,7 +769,7 @@ function eg() {
           variant: "primary",
           text: "Tooltip on the top"
         }, e))
-      }), (0, Chunk255367.jsx)(Chunk481060.ua7, {
+      }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
         color: module,
         text: "Here's right aligned tooltip text!",
         position: "left",
@@ -777,7 +777,7 @@ function eg() {
           variant: "primary",
           text: "Tooltip on the left"
         }, e))
-      }), (0, Chunk255367.jsx)(Chunk481060.ua7, {
+      }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
         color: module,
         text: "Here's bottom aligned tooltip text!",
         position: "bottom",
@@ -785,7 +785,7 @@ function eg() {
           variant: "primary",
           text: "Tooltip on the bottom"
         }, e))
-      }), (0, Chunk255367.jsx)(Chunk481060.ua7, {
+      }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
         color: module,
         text: "Here's right aligned tooltip text!",
         position: "right",
@@ -794,256 +794,256 @@ function eg() {
           text: "Tooltip on the right"
         }, e))
       })]
-    }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/semibold",
       style: {
         marginTop: 32
       },
       children: "New Mana Tooltips"
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       style: {
         display: "flex",
         gap: 8,
         flexWrap: "wrap"
       },
-      children: [(0, Chunk255367.jsx)(Chunk681715.u, {
+      children: [(0, Chunk951288.jsx)(Chunk681715.u, {
         text: "New Mana Tooltip with animations!",
         position: "top",
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Mana Tooltip (Top)"
         })
-      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+      }), (0, Chunk951288.jsx)(Chunk681715.u, {
         text: "Left positioned animated tooltip",
         position: "left",
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Mana Tooltip (Left)"
         })
-      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+      }), (0, Chunk951288.jsx)(Chunk681715.u, {
         text: "Bottom positioned animated tooltip",
         position: "bottom",
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Mana Tooltip (Bottom)"
         })
-      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+      }), (0, Chunk951288.jsx)(Chunk681715.u, {
         text: "Right positioned animated tooltip",
         position: "right",
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Mana Tooltip (Right)"
         })
-      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+      }), (0, Chunk951288.jsx)(Chunk681715.u, {
         text: "Lorem ipsum dolor sit amet, consectetur elit. Sed do eiusmod non proident amo.",
         position: "right",
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Three lines"
         })
       })]
-    }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/semibold",
       style: {
         marginTop: 32
       },
       children: "Tooltip Caret API Examples"
-    }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       style: {
         marginTop: 16,
         marginBottom: 8
       },
       children: "Vertical Positions"
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       style: {
         display: "flex",
         gap: 8,
         flexWrap: "wrap",
         marginBottom: 16
       },
-      children: [(0, Chunk255367.jsx)(Chunk681715.u, {
+      children: [(0, Chunk951288.jsx)(Chunk681715.u, {
         text: "Top with start",
         position: "top",
         caretConfig: {
           align: "start"
         },
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Top - Start"
         })
-      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+      }), (0, Chunk951288.jsx)(Chunk681715.u, {
         text: "Top with center",
         position: "top",
         caretConfig: {
           align: "center"
         },
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Top - Center"
         })
-      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+      }), (0, Chunk951288.jsx)(Chunk681715.u, {
         text: "Top with end",
         position: "top",
         caretConfig: {
           align: "end"
         },
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Top - End"
         })
-      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+      }), (0, Chunk951288.jsx)(Chunk681715.u, {
         text: "Bottom with start",
         position: "bottom",
         caretConfig: {
           align: "start"
         },
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Bottom - Start"
         })
-      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+      }), (0, Chunk951288.jsx)(Chunk681715.u, {
         text: "Bottom with center",
         position: "bottom",
         caretConfig: {
           align: "center"
         },
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Bottom - Center"
         })
-      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+      }), (0, Chunk951288.jsx)(Chunk681715.u, {
         text: "Bottom with end",
         position: "bottom",
         caretConfig: {
           align: "end"
         },
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Bottom - End"
         })
       })]
-    }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       style: {
         marginBottom: 8
       },
       children: "Horizontal Positions"
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       style: {
         display: "flex",
         gap: 8,
         flexWrap: "wrap",
         marginBottom: 16
       },
-      children: [(0, Chunk255367.jsx)(Chunk681715.u, {
+      children: [(0, Chunk951288.jsx)(Chunk681715.u, {
         text: "Left with center",
         position: "left",
         caretConfig: {
           align: "center"
         },
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Left - Center"
         })
-      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+      }), (0, Chunk951288.jsx)(Chunk681715.u, {
         text: "Right with center",
         position: "right",
         caretConfig: {
           align: "center"
         },
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Right - Center"
         })
       })]
-    }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       style: {
         marginBottom: 8
       },
       children: "Custom Offset"
-    }), (0, Chunk255367.jsx)("div", {
+    }), (0, Chunk951288.jsx)("div", {
       style: {
         display: "flex",
         gap: 8,
         flexWrap: "wrap"
       },
-      children: (0, Chunk255367.jsx)(Chunk681715.u, {
+      children: (0, Chunk951288.jsx)(Chunk681715.u, {
         text: "Bottom with custom",
         position: "bottom",
         caretConfig: {
           align: "custom",
           customOffset: 30
         },
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Custom Offset"
         })
       })
-    }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/semibold",
       style: {
         marginTop: 32
       },
       children: "Tooltip Delays"
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       style: {
         display: "flex",
         gap: 8,
         flexWrap: "wrap"
       },
-      children: [(0, Chunk255367.jsx)(Chunk681715.u, {
+      children: [(0, Chunk951288.jsx)(Chunk681715.u, {
         text: "No delay (immediate)",
         delay: 0,
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "No Delay"
         })
-      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+      }), (0, Chunk951288.jsx)(Chunk681715.u, {
         text: "Short delay (500ms)",
         delay: 500,
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Short Delay"
         })
-      }), (0, Chunk255367.jsx)(Chunk681715.u, {
+      }), (0, Chunk951288.jsx)(Chunk681715.u, {
         text: "Long delay (1000ms)",
         delay: 1e3,
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Long Delay"
         })
       })]
-    }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
+    }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-lg/semibold",
       style: {
         marginTop: 32
       },
       children: "Rich Tooltips"
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       style: {
         display: "flex",
         gap: 8,
         flexWrap: "wrap"
       },
-      children: [(0, Chunk255367.jsx)(Chunk681715.i_, {
+      children: [(0, Chunk951288.jsx)(Chunk681715.i_, {
         title: "Title goes here",
         body: "Body copy goes in this section. Meow.",
         position: "top",
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Rich Tooltip (No Graphic)"
         })
-      }), (0, Chunk255367.jsx)(Chunk681715.i_, {
+      }), (0, Chunk951288.jsx)(Chunk681715.i_, {
         title: "With Graphic Asset",
         body: "This tooltip includes a graphic element on the left side",
-        asset: (0, Chunk255367.jsx)("img", {
+        asset: (0, Chunk951288.jsx)("img", {
           src: Chunk518797.Z,
           alt: "Graphic slot 48px"
         }),
         position: "top",
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "With Asset"
         })
@@ -1053,15 +1053,15 @@ function eg() {
 }
 
 function eh() {
-  let [e, t] = Chunk73800.useState(false), [n, s] = Chunk73800.useState(false), [a, l] = Chunk73800.useState(false), [o, c] = Chunk73800.useState(false), [d, u] = Chunk73800.useState(false), [m, p] = Chunk73800.useState(false), [g, h] = Chunk73800.useState(false), [f, b] = Chunk73800.useState(false), [x, _] = Chunk73800.useState(false), [j, E] = Chunk73800.useState(false), [C, O] = Chunk73800.useState(false), [T, I] = Chunk73800.useState(false), [y, A] = Chunk73800.useState(false), [P, R] = Chunk73800.useState(false), [D, Z] = Chunk73800.useState(false), [w, k] = Chunk73800.useState(false), [L, B] = Chunk73800.useState(false), [M, U] = Chunk73800.useState(false), [V, F] = Chunk73800.useState(false), [H, z] = Chunk73800.useState(false), q = Chunk73800.useRef(null), X = Chunk73800.useRef(null), J = Chunk73800.useRef(null), Q = Chunk73800.useRef(null), $ = Chunk73800.useRef(null), ee = Chunk73800.useRef(null), et = Chunk73800.useRef(null), en = Chunk73800.useRef(null), ei = Chunk73800.useRef(null), er = Chunk73800.useRef(null), es = Chunk73800.useRef(null), ea = Chunk73800.useRef(null), el = Chunk73800.useRef(null), eo = Chunk73800.useRef(null), ec = Chunk73800.useRef(null), ed = Chunk73800.useRef(null), eu = Chunk73800.useRef(null), em = Chunk73800.useRef(null), ep = Chunk73800.useRef(null), eg = Chunk73800.useRef(null), eh = Chunk73800.useCallback(() => {
+  let [e, t] = Chunk647438.useState(false), [n, s] = Chunk647438.useState(false), [a, l] = Chunk647438.useState(false), [o, c] = Chunk647438.useState(false), [d, u] = Chunk647438.useState(false), [m, p] = Chunk647438.useState(false), [g, h] = Chunk647438.useState(false), [f, b] = Chunk647438.useState(false), [x, _] = Chunk647438.useState(false), [j, E] = Chunk647438.useState(false), [C, O] = Chunk647438.useState(false), [T, I] = Chunk647438.useState(false), [y, A] = Chunk647438.useState(false), [P, R] = Chunk647438.useState(false), [D, Z] = Chunk647438.useState(false), [w, k] = Chunk647438.useState(false), [L, B] = Chunk647438.useState(false), [M, U] = Chunk647438.useState(false), [V, F] = Chunk647438.useState(false), [H, z] = Chunk647438.useState(false), q = Chunk647438.useRef(null), X = Chunk647438.useRef(null), J = Chunk647438.useRef(null), Q = Chunk647438.useRef(null), $ = Chunk647438.useRef(null), ee = Chunk647438.useRef(null), et = Chunk647438.useRef(null), en = Chunk647438.useRef(null), ei = Chunk647438.useRef(null), er = Chunk647438.useRef(null), es = Chunk647438.useRef(null), ea = Chunk647438.useRef(null), el = Chunk647438.useRef(null), eo = Chunk647438.useRef(null), ec = Chunk647438.useRef(null), ed = Chunk647438.useRef(null), eu = Chunk647438.useRef(null), em = Chunk647438.useRef(null), ep = Chunk647438.useRef(null), eg = Chunk647438.useRef(null), eh = Chunk647438.useCallback(() => {
     exports(false), Chunk120356(false), Chunk392711(false), Chunk442837(false), Chunk680018(false), Chunk861066(false), Chunk179538(false), Chunk257465(false), Chunk82659(false), Chunk103866(false), Chunk37148(false), Chunk240872(false), Chunk705262(false), Chunk581612(false), Chunk594174(false), Chunk799071(false), Chunk706705(false), Chunk981631(false), Chunk177475(false), Chunk691739(false)
   }, []);
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
-    children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "Popovers"
-    }), (0, Chunk255367.jsx)(Chunk907862.J2, {
+    }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: q,
       shouldShow: module,
       onRequestClose: eh,
@@ -1072,7 +1072,7 @@ function eh() {
       title: "Header",
       body: "Body",
       size: "sm",
-      asset: (0, Chunk255367.jsx)("img", {
+      asset: (0, Chunk951288.jsx)("img", {
         src: Chunk315416.Z,
         alt: "Small placeholder"
       }),
@@ -1081,7 +1081,7 @@ function eh() {
         text: "Button",
         onClick: eh
       }]
-    }), (0, Chunk255367.jsx)(Chunk907862.J2, {
+    }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: X,
       shouldShow: require,
       onRequestClose: eh,
@@ -1091,7 +1091,7 @@ function eh() {
       },
       title: "Header",
       body: "Body",
-      asset: (0, Chunk255367.jsx)("img", {
+      asset: (0, Chunk951288.jsx)("img", {
         src: Chunk453707.Z,
         alt: "Medium placeholder"
       }),
@@ -1100,7 +1100,7 @@ function eh() {
         text: "Button",
         onClick: eh
       }]
-    }), (0, Chunk255367.jsx)(Chunk907862.J2, {
+    }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: J,
       shouldShow: a,
       onRequestClose: eh,
@@ -1114,7 +1114,7 @@ function eh() {
         text: "Button",
         onClick: eh
       }]
-    }), (0, Chunk255367.jsx)(Chunk907862.J2, {
+    }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: Q,
       shouldShow: Chunk971809,
       onRequestClose: eh,
@@ -1124,7 +1124,7 @@ function eh() {
       },
       title: "Ipsum Dolor",
       body: "Lorem ipsum dolor sit amet, consectetur elit. Sed do eiusmod.",
-      asset: (0, Chunk255367.jsx)("img", {
+      asset: (0, Chunk951288.jsx)("img", {
         src: Chunk453707.Z,
         alt: "Medium placeholder"
       }),
@@ -1138,7 +1138,7 @@ function eh() {
         link: "https://discord.com",
         external: true
       }
-    }), (0, Chunk255367.jsx)(Chunk907862.J2, {
+    }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: $,
       shouldShow: Chunk836459,
       onRequestClose: eh,
@@ -1148,7 +1148,7 @@ function eh() {
       },
       title: "Header",
       body: "Body",
-      asset: (0, Chunk255367.jsx)("img", {
+      asset: (0, Chunk951288.jsx)("img", {
         src: Chunk453707.Z,
         alt: "Medium placeholder"
       }),
@@ -1162,7 +1162,7 @@ function eh() {
         onClick: eh,
         variant: "secondary"
       }]
-    }), (0, Chunk255367.jsx)(Chunk907862.J2, {
+    }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: ee,
       shouldShow: Chunk374415,
       onRequestClose: eh,
@@ -1172,12 +1172,12 @@ function eh() {
       },
       title: "No Actions",
       body: "This popover has no action buttons, just content to display.",
-      asset: (0, Chunk255367.jsx)("img", {
+      asset: (0, Chunk951288.jsx)("img", {
         src: Chunk453707.Z,
         alt: "Medium placeholder"
       }),
       badge: "new"
-    }), (0, Chunk255367.jsx)(Chunk907862.J2, {
+    }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: et,
       shouldShow: Chunk780842,
       onRequestClose: eh,
@@ -1187,7 +1187,7 @@ function eh() {
       },
       title: "Custom Caret API",
       body: "Using CaretConfig with END placement",
-      asset: (0, Chunk255367.jsx)("img", {
+      asset: (0, Chunk951288.jsx)("img", {
         src: Chunk453707.Z,
         alt: "Medium placeholder"
       }),
@@ -1196,7 +1196,7 @@ function eh() {
         text: "Got it",
         onClick: eh
       }]
-    }), (0, Chunk255367.jsx)(Chunk907862.J2, {
+    }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: en,
       shouldShow: Chunk279570,
       onRequestClose: eh,
@@ -1206,7 +1206,7 @@ function eh() {
       },
       title: "Left Side Caret",
       body: "Caret positioned on the left side at start",
-      asset: (0, Chunk255367.jsx)("img", {
+      asset: (0, Chunk951288.jsx)("img", {
         src: Chunk453707.Z,
         alt: "Medium placeholder"
       }),
@@ -1215,7 +1215,7 @@ function eh() {
         text: "Close",
         onClick: eh
       }]
-    }), (0, Chunk255367.jsx)(Chunk907862.J2, {
+    }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: ei,
       shouldShow: Chunk667202,
       onRequestClose: eh,
@@ -1226,7 +1226,7 @@ function eh() {
       },
       title: "Custom Offset",
       body: "Caret positioned 50px from center with custom offset",
-      asset: (0, Chunk255367.jsx)("img", {
+      asset: (0, Chunk951288.jsx)("img", {
         src: Chunk453707.Z,
         alt: "Medium placeholder"
       }),
@@ -1235,7 +1235,7 @@ function eh() {
         text: "Amazing!",
         onClick: eh
       }]
-    }), (0, Chunk255367.jsx)(Chunk907862.J2, {
+    }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: er,
       shouldShow: Chunk369585,
       onRequestClose: eh,
@@ -1246,7 +1246,7 @@ function eh() {
       },
       title: "Left Center Positioning",
       body: "Popover appears to the right with caret centered on the left side",
-      asset: (0, Chunk255367.jsx)("img", {
+      asset: (0, Chunk951288.jsx)("img", {
         src: Chunk453707.Z,
         alt: "Medium placeholder"
       }),
@@ -1255,7 +1255,7 @@ function eh() {
         text: "Perfect!",
         onClick: eh
       }]
-    }), (0, Chunk255367.jsx)(Chunk907862.J2, {
+    }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: es,
       shouldShow: Chunk213734,
       onRequestClose: eh,
@@ -1265,7 +1265,7 @@ function eh() {
       },
       title: "Purple Gradient",
       body: "This popover has a beautiful purple gradient background",
-      asset: (0, Chunk255367.jsx)("img", {
+      asset: (0, Chunk951288.jsx)("img", {
         src: Chunk453707.Z,
         alt: "Medium placeholder"
       }),
@@ -1275,7 +1275,7 @@ function eh() {
         text: "Looks Great!",
         onClick: eh
       }]
-    }), (0, Chunk255367.jsx)(Chunk907862.J2, {
+    }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: ea,
       shouldShow: Chunk681715,
       onRequestClose: eh,
@@ -1285,7 +1285,7 @@ function eh() {
       },
       title: "Blue Gradient",
       body: "This popover showcases the blue gradient option",
-      asset: (0, Chunk255367.jsx)("img", {
+      asset: (0, Chunk951288.jsx)("img", {
         src: Chunk453707.Z,
         alt: "Medium placeholder"
       }),
@@ -1295,7 +1295,7 @@ function eh() {
         text: "Nice!",
         onClick: eh
       }]
-    }), (0, Chunk255367.jsx)(Chunk907862.J2, {
+    }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: el,
       shouldShow: Chunk514361,
       onRequestClose: eh,
@@ -1305,7 +1305,7 @@ function eh() {
       },
       title: "Nitro Pink Gradient",
       body: "Experience the premium nitro-pink gradient effect",
-      asset: (0, Chunk255367.jsx)("img", {
+      asset: (0, Chunk951288.jsx)("img", {
         src: Chunk453707.Z,
         alt: "Medium placeholder"
       }),
@@ -1319,7 +1319,7 @@ function eh() {
         text: "Get Nitro",
         onClick: eh
       }]
-    }), (0, Chunk255367.jsx)(Chunk907862.J2, {
+    }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: eo,
       shouldShow: Chunk377089,
       onRequestClose: eh,
@@ -1329,7 +1329,7 @@ function eh() {
       },
       title: "Voice Filters",
       body: "Experience enhanced voice quality with our latest filtering technology. Perfect for gaming and streaming.",
-      asset: (0, Chunk255367.jsx)("img", {
+      asset: (0, Chunk951288.jsx)("img", {
         src: Chunk715720.Z,
         alt: "Voice Filters"
       }),
@@ -1339,7 +1339,7 @@ function eh() {
         text: "Try it now",
         onClick: eh
       }]
-    }), (0, Chunk255367.jsx)(Chunk907862.Mb, {
+    }), (0, Chunk951288.jsx)(Chunk907862.Mb, {
       targetElementRef: ec,
       shouldShow: Chunk580747,
       onRequestClose: eh,
@@ -1356,7 +1356,7 @@ function eh() {
         text: "Learn More",
         onClick: eh
       }
-    }), (0, Chunk255367.jsx)(Chunk907862.Mb, {
+    }), (0, Chunk951288.jsx)(Chunk907862.Mb, {
       targetElementRef: ed,
       shouldShow: Chunk526156,
       onRequestClose: eh,
@@ -1374,7 +1374,7 @@ function eh() {
         text: "Learn More",
         onClick: eh
       }
-    }), (0, Chunk255367.jsx)(Chunk466590.e, {
+    }), (0, Chunk951288.jsx)(Chunk466590.e, {
       targetElementRef: eu,
       shouldShow: Chunk554042,
       onRequestClose: eh,
@@ -1385,7 +1385,7 @@ function eh() {
       steps: [{
         title: "Welcome to Quests!",
         body: "Journey to Quest Home in Discover to start earning Orbs.",
-        asset: (0, Chunk255367.jsx)("img", {
+        asset: (0, Chunk951288.jsx)("img", {
           src: Chunk453707.Z,
           alt: "Medium placeholder"
         }),
@@ -1397,7 +1397,7 @@ function eh() {
       }, {
         title: "Earn Rewards",
         body: "Complete quests to earn Orbs and unlock exclusive rewards.",
-        asset: (0, Chunk255367.jsx)("img", {
+        asset: (0, Chunk951288.jsx)("img", {
           src: Chunk715720.Z,
           alt: "Quest Rewards"
         }),
@@ -1408,7 +1408,7 @@ function eh() {
       }, {
         title: "Quest Complete!",
         body: "You're all set to start your quest adventure. Good luck!",
-        asset: (0, Chunk255367.jsx)("img", {
+        asset: (0, Chunk951288.jsx)("img", {
           src: Chunk453707.Z,
           alt: "Medium placeholder"
         }),
@@ -1423,7 +1423,7 @@ function eh() {
         }
       }],
       onStepChange: e => {}
-    }), (0, Chunk255367.jsx)(Chunk907862.J2, {
+    }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: em,
       shouldShow: Chunk726985,
       onRequestClose: eh,
@@ -1433,7 +1433,7 @@ function eh() {
       },
       title: "Experience Voice Filters",
       body: "Enhanced voice quality with our latest filtering technology. Try the expressive button!",
-      asset: (0, Chunk255367.jsx)("img", {
+      asset: (0, Chunk951288.jsx)("img", {
         src: Chunk715720.Z,
         alt: "Voice Filters"
       }),
@@ -1444,7 +1444,7 @@ function eh() {
         onClick: eh,
         variant: "expressive"
       }]
-    }), (0, Chunk255367.jsx)(Chunk466590.e, {
+    }), (0, Chunk951288.jsx)(Chunk466590.e, {
       targetElementRef: ep,
       shouldShow: Chunk231338,
       onRequestClose: eh,
@@ -1455,7 +1455,7 @@ function eh() {
       steps: [{
         title: "Discover Features",
         body: "Explore amazing new capabilities in Discord.",
-        asset: (0, Chunk255367.jsx)("img", {
+        asset: (0, Chunk951288.jsx)("img", {
           src: Chunk453707.Z,
           alt: "Medium placeholder"
         }),
@@ -1467,7 +1467,7 @@ function eh() {
       }, {
         title: "Unlock Potential",
         body: "Learn how to make the most of your Discord experience.",
-        asset: (0, Chunk255367.jsx)("img", {
+        asset: (0, Chunk951288.jsx)("img", {
           src: Chunk715720.Z,
           alt: "Features"
         }),
@@ -1478,7 +1478,7 @@ function eh() {
       }, {
         title: "Ready to Go!",
         body: "You're all set! Notice the expressive button animation.",
-        asset: (0, Chunk255367.jsx)("img", {
+        asset: (0, Chunk951288.jsx)("img", {
           src: Chunk453707.Z,
           alt: "Medium placeholder"
         }),
@@ -1494,7 +1494,7 @@ function eh() {
         }
       }],
       onStepChange: e => {}
-    }), (0, Chunk255367.jsx)(Chunk907862.Mb, {
+    }), (0, Chunk951288.jsx)(Chunk907862.Mb, {
       targetElementRef: eg,
       shouldShow: Chunk518797,
       onRequestClose: eh,
@@ -1511,35 +1511,35 @@ function eh() {
         onClick: eh,
         variant: "expressive"
       }
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       style: {
         marginTop: 16
       },
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",
         children: "Size Examples"
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         style: {
           display: "flex",
           gap: 16,
           flexWrap: "wrap",
           marginTop: 8
         },
-        children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Small Content",
           buttonRef: q,
           onClick: () => {
             eh(), exports(true)
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Medium Content",
           buttonRef: X,
           onClick: () => {
             eh(), Chunk120356(true)
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           buttonRef: J,
           onClick: () => {
             eh(), Chunk392711(true)
@@ -1547,35 +1547,35 @@ function eh() {
           text: "No Asset"
         })]
       })]
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       style: {
         marginTop: 16
       },
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",
         children: "Actions Examples"
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         style: {
           display: "flex",
           gap: 16,
           flexWrap: "wrap",
           marginTop: 8
         },
-        children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "External Link",
           buttonRef: Q,
           onClick: () => {
             eh(), Chunk442837(true)
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Two Actions",
           buttonRef: $,
           onClick: () => {
             eh(), Chunk680018(true)
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           buttonRef: ee,
           onClick: () => {
             eh(), Chunk861066(true)
@@ -1583,42 +1583,42 @@ function eh() {
           text: "No Actions"
         })]
       })]
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       style: {
         marginTop: 16
       },
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",
         children: "Caret API Examples"
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         style: {
           display: "flex",
           gap: 16,
           flexWrap: "wrap",
           marginTop: 8
         },
-        children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Custom Caret API",
           buttonRef: et,
           onClick: () => {
             eh(), Chunk179538(true)
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Left Side Caret",
           buttonRef: en,
           onClick: () => {
             eh(), Chunk257465(true)
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Custom Offset",
           buttonRef: ei,
           onClick: () => {
             eh(), Chunk82659(true)
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Left Center",
           buttonRef: er,
@@ -1627,35 +1627,35 @@ function eh() {
           }
         })]
       })]
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       style: {
         marginTop: 16
       },
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",
         children: "Gradient Examples"
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         style: {
           display: "flex",
           gap: 16,
           flexWrap: "wrap",
           marginTop: 8
         },
-        children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Purple Gradient",
           buttonRef: es,
           onClick: () => {
             eh(), Chunk37148(true)
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Blue Gradient",
           buttonRef: ea,
           onClick: () => {
             eh(), Chunk240872(true)
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Nitro Pink Gradient",
           buttonRef: el,
@@ -1664,35 +1664,35 @@ function eh() {
           }
         })]
       })]
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       style: {
         marginTop: 16
       },
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",
         children: "With Asset"
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         style: {
           display: "flex",
           gap: 16,
           flexWrap: "wrap",
           marginTop: 8
         },
-        children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Voice Filters",
           buttonRef: eo,
           onClick: () => {
             eh(), Chunk581612(true)
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Video Media Viewer",
           buttonRef: ec,
           onClick: () => {
             eh(), Chunk594174(true)
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Video with Different Preview",
           buttonRef: ed,
@@ -1701,21 +1701,21 @@ function eh() {
           }
         })]
       })]
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       style: {
         marginTop: 16
       },
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",
         children: "Multi-Step"
-      }), (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk951288.jsx)("div", {
         style: {
           display: "flex",
           gap: 16,
           flexWrap: "wrap",
           marginTop: 8
         },
-        children: (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Multi-Step",
           buttonRef: eu,
@@ -1724,35 +1724,35 @@ function eh() {
           }
         })
       })]
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       style: {
         marginTop: 16
       },
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",
         children: "Expressive"
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         style: {
           display: "flex",
           gap: 16,
           flexWrap: "wrap",
           marginTop: 8
         },
-        children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Expressive Popover",
           buttonRef: em,
           onClick: () => {
             eh(), Chunk981631(true)
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Expressive Multi-Step",
           buttonRef: ep,
           onClick: () => {
             eh(), Chunk177475(true)
           }
-        }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Expressive Video",
           buttonRef: eg,
@@ -1766,63 +1766,63 @@ function eh() {
 }
 
 function ef() {
-  let [e, t] = Chunk73800.useState(false), [n, s] = Chunk73800.useState(false), [a, l] = Chunk73800.useState("auto");
-  return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-    children: [(0, Chunk255367.jsxs)("div", {
+  let [e, t] = Chunk647438.useState(false), [n, s] = Chunk647438.useState(false), [a, l] = Chunk647438.useState("auto");
+  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk726927.section,
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-xl/semibold",
         children: "Checkboxes"
-      }), (0, Chunk255367.jsx)(Chunk481060.XZJ, {
+      }), (0, Chunk951288.jsx)(Chunk481060.XZJ, {
         value: module,
         onChange: (e, n) => t(n),
-        children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           children: "Checkbox input"
         })
-      }), (0, Chunk255367.jsx)(Chunk481060.XZJ, {
+      }), (0, Chunk951288.jsx)(Chunk481060.XZJ, {
         value: module,
         onChange: (e, n) => t(n),
         disabled: true,
-        children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           children: "Disabled checkbox"
         })
-      }), (0, Chunk255367.jsx)(Chunk481060.XZJ, {
+      }), (0, Chunk951288.jsx)(Chunk481060.XZJ, {
         value: module,
         onChange: (e, n) => t(n),
         readOnly: true,
-        children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           children: "Read-only checkbox"
         })
-      }), (0, Chunk255367.jsx)(Chunk481060.XZJ, {
+      }), (0, Chunk951288.jsx)(Chunk481060.XZJ, {
         value: module,
         onChange: (e, n) => t(n),
         type: Chunk481060.XZJ.Types.ROW,
-        children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           children: "Checkbox row"
         })
       })]
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk726927.section,
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-xl/semibold",
         children: "Switches"
-      }), (0, Chunk255367.jsx)(Chunk481060.j7V, {
+      }), (0, Chunk951288.jsx)(Chunk481060.j7V, {
         hideBorder: true,
         value: require,
         onChange: e => s(e),
         children: "FormSwitch with a label"
       })]
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk726927.section,
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-xl/semibold",
         children: "Radio Buttons"
-      }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
-        children: (0, Chunk255367.jsx)(Chunk481060.FXm, {
+      }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
+        children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
           onChange: e => {
             let {
               value: t
@@ -1842,75 +1842,75 @@ function ef() {
           value: a
         })
       })]
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk726927.section,
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-xl/semibold",
         children: "Slider"
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         className: Chunk726927.slider,
-        children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           children: "Standard slider"
-        }), (0, Chunk255367.jsx)(Chunk481060.iRW, {
+        }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
           minValue: 0,
           maxValue: 100,
           initialValue: 50,
           defaultValue: 50,
           markers: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
         })]
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         className: Chunk726927.slider,
-        children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           children: "Sticky markers"
-        }), (0, Chunk255367.jsx)(Chunk481060.iRW, {
+        }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
           minValue: 0,
           maxValue: 100,
           initialValue: 50,
           markers: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
           stickToMarkers: true
         })]
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         className: Chunk726927.slider,
-        children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           children: "Non-uniform markers"
-        }), (0, Chunk255367.jsx)(Chunk481060.iRW, {
+        }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
           minValue: 0,
           maxValue: 100,
           initialValue: 50,
           markers: [0, 20, 50, 100],
           equidistant: false
         })]
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         className: Chunk726927.slider,
-        children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           children: "Non-uniform equidistant markers"
-        }), (0, Chunk255367.jsx)(Chunk481060.iRW, {
+        }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
           minValue: 0,
           maxValue: 100,
           initialValue: 50,
           markers: [0, 20, 50, 100],
           equidistant: true
         })]
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         className: Chunk726927.slider,
-        children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           children: "No markers"
-        }), (0, Chunk255367.jsx)(Chunk481060.iRW, {
+        }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
           minValue: 0,
           maxValue: 100,
           initialValue: 50
         })]
-      }), (0, Chunk255367.jsxs)("div", {
+      }), (0, Chunk951288.jsxs)("div", {
         className: Chunk726927.slider,
-        children: [(0, Chunk255367.jsx)(Chunk481060.Text, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           children: "Mini slider"
-        }), (0, Chunk255367.jsx)(Chunk481060.iRW, {
+        }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
           mini: true,
           minValue: 0,
           maxValue: 100,
@@ -1922,37 +1922,37 @@ function ef() {
 }
 
 function eb() {
-  let [e, t] = Chunk73800.useState(null), [n, s] = Chunk73800.useState(null), [a, l] = Chunk73800.useState([]), [c, d] = Chunk73800.useState([]), [u, m] = Chunk73800.useState([]);
-  return (0, Chunk255367.jsxs)("div", {
+  let [e, t] = Chunk647438.useState(null), [n, s] = Chunk647438.useState(null), [a, l] = Chunk647438.useState([]), [c, d] = Chunk647438.useState([]), [u, m] = Chunk647438.useState([]);
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
-    children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "SearchableSelect"
-    }), (0, Chunk255367.jsx)(Chunk481060.VcW, {
+    }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
       placeholder: "Single select",
       value: module,
       onChange: e => t(e),
       options: Chunk971809.G
-    }), (0, Chunk255367.jsx)(Chunk481060.VcW, {
+    }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
       placeholder: "Single select (clearable)",
       clearable: true,
       value: require,
       onChange: e => s(e),
       options: Chunk971809.G
-    }), (0, Chunk255367.jsx)(Chunk481060.VcW, {
+    }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
       placeholder: "Multi select",
       multi: true,
       value: a,
       onChange: e => l(e),
       options: Chunk971809.G
-    }), (0, Chunk255367.jsx)(Chunk481060.VcW, {
+    }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
       placeholder: "Multi select (clearable)",
       multi: true,
       clearable: true,
       value: Chunk680018,
       onChange: e => m(e),
       options: Chunk971809.G
-    }), (0, Chunk255367.jsx)(Chunk481060.VcW, {
+    }), (0, Chunk951288.jsx)(Chunk481060.VcW, {
       placeholder: "Multi select (custom pills)",
       multi: true,
       value: Chunk442837,
@@ -1976,22 +1976,22 @@ function eb() {
 }
 
 function ex() {
-  let [e, t] = Chunk73800.useState(""), [n, s] = Chunk73800.useState(""), [a, l] = Chunk73800.useState(""), o = (0, Chunk377089.U)("UserSettingsDesignSystems");
-  return (0, Chunk255367.jsxs)("div", {
+  let [e, t] = Chunk647438.useState(""), [n, s] = Chunk647438.useState(""), [a, l] = Chunk647438.useState(""), o = (0, Chunk377089.U)("UserSettingsDesignSystems");
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
-    children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "TextInput"
-    }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
+    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
       title: "Search",
-      children: (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+      children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 8,
-        children: [(0, Chunk255367.jsx)(Chunk481060.E1j, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.E1j, {
           placeholder: "Search...",
           onChange: e => l(e),
           query: a,
           onClear: () => Chunk392711("")
-        }), (0, Chunk255367.jsx)(Chunk481060.E1j, {
+        }), (0, Chunk951288.jsx)(Chunk481060.E1j, {
           size: "sm",
           placeholder: "Search...",
           onChange: e => l(e),
@@ -1999,60 +1999,60 @@ function ex() {
           onClear: () => Chunk392711("")
         })]
       })
-    }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
+    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
       title: "Disabled",
       disabled: true,
-      children: (0, Chunk255367.jsx)(Chunk481060.oil, {
+      children: (0, Chunk951288.jsx)(Chunk481060.oil, {
         placeholder: "Disabled",
         disabled: true
       })
-    }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
+    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
       title: "Error",
-      children: (0, Chunk255367.jsx)(Chunk481060.oil, {
+      children: (0, Chunk951288.jsx)(Chunk481060.oil, {
         required: true,
         error: "This must have a value"
       })
-    }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
+    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
       title: "Error",
-      children: (0, Chunk255367.jsx)(Chunk481060.oil, {
+      children: (0, Chunk951288.jsx)(Chunk481060.oil, {
         defaultValue: "Not a valid value",
         error: "This has an error."
       })
-    }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
+    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
       title: "minLength",
-      children: (0, Chunk255367.jsx)(Chunk481060.oil, {
+      children: (0, Chunk951288.jsx)(Chunk481060.oil, {
         minLength: 6,
         value: module,
         onChange: exports,
         placeholder: "Enter at least 6 characters"
       })
-    }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
+    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
       title: "Read only",
-      children: (0, Chunk255367.jsx)(Chunk481060.oil, {
+      children: (0, Chunk951288.jsx)(Chunk481060.oil, {
         value: "Read-only, not-editable field",
         editable: false
       })
-    }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
+    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
       title: "Input with a label",
-      children: (0, Chunk255367.jsx)(Chunk481060.oil, {
+      children: (0, Chunk951288.jsx)(Chunk481060.oil, {
         placeholder: "Real placeholder",
         value: module,
         onChange: exports
       })
-    }), Chunk971809 && (0, Chunk255367.jsx)(Chunk481060.xJW, {
+    }), Chunk971809 && (0, Chunk951288.jsx)(Chunk481060.xJW, {
       title: "Leading and Trailing",
-      children: (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
+      children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
-        children: [(0, Chunk255367.jsx)(Chunk481060.Wn, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.Wn, {
           messageType: Chunk481060.QYI.WARNING,
           children: "Leading and trailing accessories are not yet supported in the public API."
-        }), (0, Chunk255367.jsxs)(Chunk481060.Kqy, {
-          children: [(0, Chunk255367.jsx)(Chunk481060.oil, {
+        }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
             leading: Chunk481060.qJs,
             placeholder: "Create Channel",
             value: module,
             onChange: exports
-          }), (0, Chunk255367.jsx)(Chunk481060.oil, {
+          }), (0, Chunk951288.jsx)(Chunk481060.oil, {
             trailing: Chunk481060.lOy,
             placeholder: "Send Message",
             value: module,
@@ -2060,9 +2060,9 @@ function ex() {
           })]
         })]
       })
-    }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
+    }), (0, Chunk951288.jsx)(Chunk481060.xJW, {
       title: "Text area",
-      children: (0, Chunk255367.jsx)(Chunk481060.Kx8, {
+      children: (0, Chunk951288.jsx)(Chunk481060.Kx8, {
         placeholder: "Text area placeholder",
         showCharacterCount: true,
         value: require,
@@ -2686,19 +2686,19 @@ function eT(e) {
 }
 
 function eN() {
-  return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-    children: [(0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk726927.section,
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-xl/semibold",
         children: "Modals (Void)"
-      }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open modal",
         onClick: () => {
           (0, Chunk481060.h7j)(e => (0, i.jsx)(e_, q({}, e)))
         }
-      }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Show Alert",
         onClick: () => {
@@ -2709,49 +2709,49 @@ function eN() {
             cancelText: "Cancel Text"
           })
         }
-      }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open modal stacking demo",
         onClick: () => {
           (0, Chunk481060.h7j)(e => (0, i.jsx)(ej, q({}, e)))
         }
       })]
-    }), (0, Chunk255367.jsxs)("div", {
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk726927.section,
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-xl/semibold",
         children: "Modals (Mana)"
-      }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open modal section visualizer",
         onClick: () => {
           (0, Chunk481060.h7j)(e => (0, i.jsx)(eE, q({}, e)))
         }
-      }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open demo modal",
         onClick: () => {
           (0, Chunk481060.h7j)(e => (0, i.jsx)(eC, q({}, e)))
         }
-      }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open sample invite modal",
         onClick: () => {
           (0, Chunk481060.h7j)(e => (0, i.jsx)(eO, q({}, e)))
         }
-      }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open sample alert modal",
         onClick: () => {
           (0, Chunk481060.h7j)(e => (0, i.jsx)(ev, q({}, e)))
         }
-      }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open expressive modal",
         onClick: () => {
           (0, Chunk481060.h7j)(e => (0, i.jsx)(eS, q({}, e)))
         }
-      }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
         variant: "primary",
         text: "Open Mana modal stacking demo",
         onClick: () => {
@@ -2763,12 +2763,12 @@ function eN() {
 }
 
 function eI() {
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
-    children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
       variant: "heading-xl/semibold",
       children: "User Avatars"
-    }), (0, Chunk255367.jsx)("div", {
+    }), (0, Chunk951288.jsx)("div", {
       style: {
         display: "flex",
         justifyContent: "space-between"
@@ -2829,7 +2829,7 @@ function ey(e) {
 
 function eA() {
   let e = (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.gradientPreset);
-  return (0, Chunk255367.jsx)(Chunk481060.f6W, {
+  return (0, Chunk951288.jsx)(Chunk481060.f6W, {
     theme: Chunk231338.BR.DARKER,
     disableAdaptiveTheme: true,
     children: t => (0, i.jsxs)("div", {

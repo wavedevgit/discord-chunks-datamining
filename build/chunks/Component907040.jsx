@@ -5,8 +5,8 @@ require.d(exports, {
   Z: () => eb,
   v: () => ec
 }), require("./388685.js"), require("./539854.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk954955 = require("./954955.js"),
@@ -283,7 +283,7 @@ let eu = (e, t) => {
       diversitySurrogate: e3
     } = (0, u.cj)([O.ZP], () => ({
       diversitySurrogate: O.ZP.diversitySurrogate
-    })), e4 = (0, U.DV)(eB, c, l, eP), e5 = null == e4 ? 0 : e4.locked.length + e4.unlocked.length, e6 = D.d4.useSetting(), e8 = i.useMemo(() => new Set(e6), [e6]), e7 = i.useCallback(e => {
+    })), e4 = (0, U.DV)(eB, c, l, eP), e8 = null == e4 ? 0 : e4.locked.length + e4.unlocked.length, e6 = D.d4.useSetting(), e5 = i.useMemo(() => new Set(e6), [e6]), e7 = i.useCallback(e => {
       D.d4.updateSetting(Array.from(e))
     }, []), e9 = (0, N.ep)({
       gridWrapperRef: eV,
@@ -301,7 +301,7 @@ let eu = (e, t) => {
       includeCreateEmojiButton: et,
       pickerIntention: l,
       emojiSearchResults: e4,
-      collapsedSections: e8,
+      collapsedSections: e5,
       emojiPaddingHorizontal: ea,
       emojiSpriteSize: A,
       shouldShowSoundmojiInEmojiPicker: eR,
@@ -393,13 +393,13 @@ let eu = (e, t) => {
       } = T.kJ.getState().inspectedExpressionPosition;
       (null == (e = tn[n]) ? true : e[t]) == null && 0 !== t && T.kJ.setInspectedExpressionPosition(0, 0)
     }, [tn]), i.useEffect(() => {
-      if ("" === eG.current && "" !== eB && (0, U.PC)(e1, l), 0 === e5 && "" !== eB) eh(e1, eB);
+      if ("" === eG.current && "" !== eB && (0, U.PC)(e1, l), 0 === e8 && "" !== eB) eh(e1, eB);
       else if ("" !== eB && eG.current !== eB) {
         var e;
-        em(e5, null != (e = null == e4 ? true : e4.locked.length) ? e : 0, e1, eB, l)
+        em(e8, null != (e = null == e4 ? true : e4.locked.length) ? e : 0, e1, eB, l)
       }
       eG.current = eB
-    }, [eB, e1, e5, e4, l]);
+    }, [eB, e1, e8, e4, l]);
     let t_ = null != eI ? eI : R ? "div" : _.VqE,
       tp = null != e9;
     if ((null == ej ? true : ej.type) === Y.Bg.PREMIUM) {
@@ -483,7 +483,7 @@ let eu = (e, t) => {
               id: X.Vr
             }, tu), {
               children: tp ? (0, r.jsx)(K.Z, {
-                collapsedSections: e8,
+                collapsedSections: e5,
                 diversitySurrogate: e3,
                 emojiGrid: tn,
                 emojiListRef: eF,
@@ -529,4 +529,4 @@ let eu = (e, t) => {
       children: tb
     })
   },
-  eb = Chunk73800.memo(Chunk73800.forwardRef(eE))
+  eb = Chunk647438.memo(Chunk647438.forwardRef(eE))

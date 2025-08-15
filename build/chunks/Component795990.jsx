@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => O
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk296009 = require("./296009.js"),
   Chunk481060 = require("./481060.js"),
   Chunk210753 = require("./210753.js"),
@@ -119,20 +119,20 @@ function y(e) {
 }
 
 function O() {
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk958461.empty,
-    children: [(0, Chunk255367.jsxs)("div", {
+    children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk958461.textContainer,
-      children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-md/medium",
         color: "header-primary",
         children: Chunk388032.intl.string(Chunk388032.t.oqalCw)
-      }), (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: Chunk388032.intl.string(Chunk388032.t.O9SQ1d)
       })]
-    }), (0, Chunk255367.jsx)("ul", {
+    }), (0, Chunk951288.jsx)("ul", {
       className: Chunk958461.widgetGrid,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["+EIBSE"]),
       children: Chunk247397.r.map(e => (0, r.jsx)("li", {

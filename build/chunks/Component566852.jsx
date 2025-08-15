@@ -3,8 +3,8 @@
 require.d(exports, {
   default: () => m
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk923928 = require("./923928.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -22,7 +22,7 @@ function p(t, e, n) {
     writable: true
   }) : t[e] = n, t
 }
-class x extends Chunk73800.Component {
+class x extends Chunk647438.Component {
   componentDidMount() {
     let {
       pid: t
@@ -35,34 +35,34 @@ class x extends Chunk73800.Component {
     })
   }
   render() {
-    return (0, Chunk255367.jsxs)(Chunk481060.Y0X, {
+    return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: this.props.transitionState,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["4xSkEB"]),
       parentComponent: "ElevatedPermissionsSound",
-      children: [(0, Chunk255367.jsxs)(Chunk481060.xBx, {
+      children: [(0, Chunk951288.jsxs)(Chunk481060.xBx, {
         justify: Chunk600164.Z.Justify.BETWEEN,
         separator: false,
-        children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
+        children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-lg/semibold",
           children: Chunk388032.intl.string(Chunk388032.t["4xSkEB"])
-        }), (0, Chunk255367.jsx)(Chunk481060.olH, {
+        }), (0, Chunk951288.jsx)(Chunk481060.olH, {
           onClick: this.handleClose
         })]
-      }), (0, Chunk255367.jsx)(Chunk481060.hzk, {
-        children: (0, Chunk255367.jsx)(Chunk481060.Text, {
+      }), (0, Chunk951288.jsx)(Chunk481060.hzk, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           tag: "strong",
           variant: "text-md/normal",
           className: Chunk197571.marginBottom20,
           children: Chunk388032.intl.string(Chunk388032.t.UCEXPj)
         })
-      }), (0, Chunk255367.jsx)(Chunk481060.mzw, {
-        children: (0, Chunk255367.jsxs)(Chunk481060.hE2, {
+      }), (0, Chunk951288.jsx)(Chunk481060.mzw, {
+        children: (0, Chunk951288.jsxs)(Chunk481060.hE2, {
           direction: "horizontal-reverse",
-          children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+          children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "primary",
             text: Chunk388032.intl.string(Chunk388032.t.taPRcH),
             onClick: this.handleRequestElevated
-          }), (0, Chunk255367.jsx)(Chunk481060.zxk, {
+          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
             variant: "secondary",
             text: Chunk388032.intl.string(Chunk388032.t.of0VoK),
             onClick: this.handleStreamWithoutSound

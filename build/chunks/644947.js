@@ -5,7 +5,7 @@ require.d(exports, {
   _8: () => u,
   s$: () => l
 }), require("./388685.js");
-var Chunk97519 = require("./97519.js"),
+var Chunk879690 = require("./879690.js"),
   Chunk286379 = require("./286379.js"),
   Chunk731965 = require("./731965.js"),
   Chunk797614 = require("./797614.js");
@@ -41,7 +41,7 @@ function p(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let s = (0, Chunk97519.U)(e => ({
+let s = (0, Chunk879690.U)(e => ({
   captchaServeVolume: {}
 }));
 

@@ -4,13 +4,13 @@
 require.d(exports, {
   f: () => l
 }), require("./388685.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk751648 = require("./751648.js"),
   Chunk388032 = require("./388032.jsx");
 
 function l() {
-  let [e, t] = (0, Chunk73800.useState)(""), [r, l] = (0, Chunk73800.useState)([]), [o, s] = (0, Chunk73800.useState)(null), [c, u] = (0, Chunk73800.useState)(false);
-  return (0, Chunk73800.useEffect)(() => {
+  let [e, t] = (0, Chunk647438.useState)(""), [r, l] = (0, Chunk647438.useState)([]), [o, s] = (0, Chunk647438.useState)(null), [c, u] = (0, Chunk647438.useState)(false);
+  return (0, Chunk647438.useEffect)(() => {
     if (null != o) return void exports(Chunk388032.intl.format(Chunk388032.t["7gHWra"], {
       amount: "1 orb",
       errorMessage: o.message

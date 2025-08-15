@@ -468,7 +468,7 @@ function ej(e) {
       if (e.hidden) return;
       ei.gamesSeen.unshift(eE(e))
     }
-  }), ei.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), ew(), w.Z.setRecentGames(eU().map(e => eD(e, e5, A.Z, N.Z))))
+  }), ei.gamesSeen.sort((e, t) => t.lastFocused - e.lastFocused), ew(), w.Z.setRecentGames(eU().map(e => eD(e, e8, A.Z, N.Z))))
 }
 
 function eU() {
@@ -786,7 +786,7 @@ class e4 extends(i = Chunk442837.ZP.Store) {
   }
 }
 G(e4, "displayName", "RunningGameStore");
-let e5 = new e4(Chunk570140.Z, {
+let e8 = new e4(Chunk570140.Z, {
     ROBLOX_SUBGAME_UPDATE: eB,
     ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS: eB,
     RUNNING_GAMES_CHANGE: eV,
@@ -807,4 +807,4 @@ let e5 = new e4(Chunk570140.Z, {
     GAME_DETECTION_DEBUGGING_STOP: eX,
     GAME_DETECTION_DEBUGGING_TICK: eQ
   }),
-  e6 = e5
+  e6 = e8

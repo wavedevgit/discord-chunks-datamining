@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => O
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk13245 = require("./13245.js"),
@@ -17,7 +17,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk264815 = require("./264815.js");
 let g = Object.values(Chunk987650.wF).map(e => 100 * e),
   m = (0, Chunk313201.hQ)();
-class y extends Chunk73800.PureComponent {
+class y extends Chunk647438.PureComponent {
   handleUpdateBackgroundOpacity(e) {
     s.Z.setTextWidgetOpacity((0, d.Z)(e / 100)), s.Z.track(h.rMx.OVERLAY_SETTINGS_UPDATED, {
       text_opacity_slider: e
@@ -27,16 +27,16 @@ class y extends Chunk73800.PureComponent {
     s.Z.setTextWidgetOpacity((0, d.Z)(e / 100))
   }
   render() {
-    return (0, Chunk255367.jsxs)("div", {
+    return (0, Chunk951288.jsxs)("div", {
       className: Chunk264815.container,
-      children: [(0, Chunk255367.jsx)(Chunk481060.vwX, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
         id: m,
         tag: Chunk481060.RB0.H5,
         className: Chunk264815.title,
         children: Chunk388032.intl.string(Chunk388032.t.OVovCQ)
-      }), (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk951288.jsx)("div", {
         className: Chunk264815.sliderContainer,
-        children: (0, Chunk255367.jsx)(Chunk481060.iRW, {
+        children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
           mini: true,
           initialValue: this.initialValue,
           defaultValue: this.initialValue,

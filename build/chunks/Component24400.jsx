@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => p
 });
-var Chunk255367 = require("./255367.js"),
+var Chunk951288 = require("./951288.js"),
   Chunk604849 = require("./604849.js"),
   Chunk278828 = require("./278828.js"),
   Chunk63063 = require("./63063.js"),
@@ -16,10 +16,10 @@ var Chunk255367 = require("./255367.js"),
 
 function p() {
   let e = (0, Chunk604849.c)();
-  return (0, Chunk255367.jsx)(Chunk838436.U, {
+  return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_SAFETY_ALERTS_V2,
     scrollPosition: Chunk526761.FY.DM_SAFETY_ALERTS_V2,
-    children: (0, Chunk255367.jsx)(Chunk51331.Z, {
+    children: (0, Chunk951288.jsx)(Chunk51331.Z, {
       value: module,
       onChange: Chunk278828.Q,
       title: Chunk388032.intl.string(Chunk388032.t.qFsx5u),

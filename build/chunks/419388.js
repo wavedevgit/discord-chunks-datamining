@@ -3,7 +3,7 @@
 require.d(exports, {
   ZP: () => O
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
-var Chunk73800 = require("./73800.js"),
+var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk374470 = require("./374470.js"),
@@ -195,7 +195,7 @@ class j {
       channel: n
     } = this.props, r = this.getScrollerState(), {
       scrollTop: i
-    } = Chunk73800, l = exports && Chunk392711 >= this.newMessageBarBuffer() ? this.newMessageBarBuffer() : 0, a = null, o = t => {
+    } = Chunk647438, l = exports && Chunk392711 >= this.newMessageBarBuffer() ? this.newMessageBarBuffer() : 0, a = null, o = t => {
       var r;
       return false === t ? m.default.castChannelIdAsMessageId(n.id) : null == (r = e._array[t]) ? true : r.id
     }, s = false, c = false;
@@ -203,7 +203,7 @@ class j {
       let t = Chunk925549(Chunk904245);
       if (null == exports) break;
       let n = this.getAnchorData(exports, Chunk392711);
-      if (this._bottomAnchor = require, Chunk45114 && null != require && require.offsetTop > Chunk392711 + l + Chunk73800.offsetHeight) break;
+      if (this._bottomAnchor = require, Chunk45114 && null != require && require.offsetTop > Chunk392711 + l + Chunk647438.offsetHeight) break;
       if (Chunk45114) {
         Chunk904245++;
         continue
@@ -250,7 +250,7 @@ class j {
     } = module;
     if (null != this.focusAnchor) {
       var r;
-      this.isPinned() ? this.scrollTo(Number.MAX_SAFE_INTEGER, false, this.handleScroll) : this.mergeTo(require, this.handleScroll), null == (r = this.ref.current) || Chunk73800.scrollIntoViewNode({
+      this.isPinned() ? this.scrollTo(Number.MAX_SAFE_INTEGER, false, this.handleScroll) : this.mergeTo(require, this.handleScroll), null == (r = this.ref.current) || Chunk647438.scrollIntoViewNode({
         node: exports,
         padding: Chunk959517.kQ + this.props.additionalMessagePadding,
         callback: this.handleScroll
@@ -353,7 +353,7 @@ class j {
       let n = x(module);
       if (null == require) return;
       let r = this.getElementFromMessageId(require);
-      (0, Chunk374470.k)(Chunk73800) ? this.scrollTo(this.getOffsetOrientationFromNode(Chunk73800, "middle", exports ? this.newMessageBarBuffer() : Chunk959517.kQ), true): this.scrollToNewMessages(true, "middle")
+      (0, Chunk374470.k)(Chunk647438) ? this.scrollTo(this.getOffsetOrientationFromNode(Chunk647438, "middle", exports ? this.newMessageBarBuffer() : Chunk959517.kQ), true): this.scrollToNewMessages(true, "middle")
     } else this.scrollTo(Number.MAX_SAFE_INTEGER, true)
   }
   scrollToNewMessages() {
@@ -363,7 +363,7 @@ class j {
       r = arguments.length > 2 ? arguments[2] : true,
       i = null == (e = this.getDocument()) ? true : module.getElementById(Chunk959517.j1),
       l = () => {
-        this.jumping = false, this.setAutomaticAnchor(this.findAnchor()), null != Chunk73800 && Chunk73800(), this.handleScroll()
+        this.jumping = false, this.setAutomaticAnchor(this.findAnchor()), null != Chunk647438 && Chunk647438(), this.handleScroll()
       };
     this.pinned = false, this.jumping = exports, null != Chunk392711 ? this.scrollTo(this.getOffsetOrientationFromNode(Chunk392711, require, this.newMessageBarBuffer()), exports, l) : this.scrollTo(this.getOffsetToPreventLoading("top"), exports, l)
   }
@@ -410,7 +410,7 @@ class j {
       } = this.props;
     if (exports.hasMoreAfter) {
       var r;
-      Chunk904245.Z.jumpToPresent(require.id, Chunk981631.AQB), (0, Chunk703656.XU)(null != (r = require.getGuildId()) ? Chunk73800 : Chunk981631.ME, require.id)
+      Chunk904245.Z.jumpToPresent(require.id, Chunk981631.AQB), (0, Chunk703656.XU)(null != (r = require.getGuildId()) ? Chunk647438 : Chunk981631.ME, require.id)
     } else this.scrollTo(Number.MAX_SAFE_INTEGER, module, () => {
       this.jumping = false, this.handleScroll()
     })

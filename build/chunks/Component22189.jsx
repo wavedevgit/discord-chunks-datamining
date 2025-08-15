@@ -4,8 +4,8 @@ require.d(exports, {
   I: () => ec,
   Z: () => ed
 });
-var i, Chunk255367 = require("./255367.js");
-require("./73800.js");
+var i, Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk399606 = require("./399606.js"),
   Chunk704215 = require("./704215.js"),
   Chunk230711 = require("./230711.js"),
@@ -427,7 +427,7 @@ let ed = () => {
     name: "tenureBadge",
     title: Chunk388032.intl.string(Chunk388032.t.rnsqpa),
     pillText: Chunk388032.intl.string(Chunk388032.t.jyYgZ2).toLocaleUpperCase(),
-    perkComponent: (0, Chunk255367.jsx)(Chunk229555.Z, {}),
+    perkComponent: (0, Chunk951288.jsx)(Chunk229555.Z, {}),
     cardVariant: Chunk391110.zW.NITRO_GRADIENT_HOVER_BORDER,
     onClick: () => (0, Chunk768865.k)({
       analyticsLocations: module

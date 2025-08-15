@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => A
 });
-var Chunk255367 = require("./255367.js"),
-  Chunk73800 = require("./73800.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk902704 = require("./902704.js"),
@@ -30,13 +30,13 @@ var Chunk255367 = require("./255367.js"),
   Chunk823914 = require("./823914.js");
 
 function T() {
-  return (0, Chunk255367.jsxs)("div", {
+  return (0, Chunk951288.jsxs)("div", {
     className: Chunk823914.headerContainer,
-    children: [(0, Chunk255367.jsx)(Chunk245216.Z, {
+    children: [(0, Chunk951288.jsx)(Chunk245216.Z, {
       size: "xs",
       className: Chunk823914.headerIcon,
       color: Chunk692547.Z.colors.TEXT_LOW_CONTRAST
-    }), (0, Chunk255367.jsx)(Chunk793030.xv, {
+    }), (0, Chunk951288.jsx)(Chunk793030.xv, {
       className: Chunk823914.headerText,
       variant: "text-sm/semibold",
       color: "text-low-contrast",

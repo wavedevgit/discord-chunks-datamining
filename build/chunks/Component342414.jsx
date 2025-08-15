@@ -3,8 +3,8 @@
 require.d(exports, {
   Z: () => U
 }), require("./388685.js");
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
@@ -84,24 +84,24 @@ let w = e => {
       headingText: e,
       headingTop: t
     } = M();
-    return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
-      children: [(0, Chunk255367.jsx)("img", {
+    return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      children: [(0, Chunk951288.jsx)("img", {
         src: Chunk578478,
         alt: "",
         className: Chunk644219.headerArtV2
-      }), (0, Chunk255367.jsx)("div", {
+      }), (0, Chunk951288.jsx)("div", {
         className: Chunk644219.containerV2,
         "data-testid": "subscriber-nitro-home-hero-header",
-        children: (0, Chunk255367.jsxs)("div", {
+        children: (0, Chunk951288.jsxs)("div", {
           className: Chunk644219.contentV2,
-          children: [exports, (0, Chunk255367.jsx)(Chunk481060.X6q, {
+          children: [exports, (0, Chunk951288.jsx)(Chunk481060.X6q, {
             variant: "display-lg",
             color: "always-white",
             className: Chunk644219.header,
             children: module
-          }), (0, Chunk255367.jsx)("div", {
+          }), (0, Chunk951288.jsx)("div", {
             className: Chunk644219.premiumSubscribeButton,
-            children: (0, Chunk255367.jsx)(Chunk736519.Z, {
+            children: (0, Chunk951288.jsx)(Chunk736519.Z, {
               look: Chunk755721.iL.FILLED,
               color: Chunk755721.Tt.BRAND,
               textOptions: {
@@ -109,7 +109,7 @@ let w = e => {
               },
               className: Chunk644219.button
             })
-          }), (0, Chunk255367.jsx)(Chunk386733.Z, {})]
+          }), (0, Chunk951288.jsx)(Chunk386733.Z, {})]
         })
       })]
     })
