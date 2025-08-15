@@ -376,32 +376,32 @@ function J(e) {
     isCoachmark: a
   } = e, u = A.Mc.useExperiment({
     location: "ClientThemeColorPickerTools"
-  }).enabled, _ = (0, S.jJ)(), b = i.useRef(false), {
-    colors: y,
-    chassisMixAmount: T,
-    gradientAngle: P,
-    setColors: D,
-    setChassisMixAmount: j,
-    setGradientAngle: k
-  } = (0, I.Ig)(), [U, G] = i.useState(null != (t = y[0]) ? t : I.Dp), B = (0, s.e7)([v.Z], () => v.Z.theme), Z = (0, E.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
-    analyticsLocations: F
-  } = (0, m.ZP)(h.Z.CUSTOM_THEMES_EDITOR), V = async () => {
-    b.current = true, await (0, f.ZI)({
-      theme: B,
+  }).enabled, _ = (0, S.jJ)(), b = (0, S.SK)(), y = i.useRef(false), {
+    colors: T,
+    chassisMixAmount: P,
+    gradientAngle: D,
+    setColors: j,
+    setChassisMixAmount: k,
+    setGradientAngle: U
+  } = (0, I.Ig)(), [G, B] = i.useState(null != (t = T[0]) ? t : I.Dp), Z = (0, s.e7)([v.Z], () => v.Z.theme), F = (0, E.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
+    analyticsLocations: V
+  } = (0, m.ZP)(h.Z.CUSTOM_THEMES_EDITOR), Y = async () => {
+    y.current = true, await (0, f.ZI)({
+      theme: Z,
       customUserThemeSettings: {
-        colors: y,
+        colors: T,
         gradientColorStops: [],
-        gradientAngle: P,
-        baseMix: T
+        gradientAngle: D,
+        baseMix: P
       }
-    }), (0, N.u7)(y, T, P, B, F), null == o || o(w.L.TAKE_ACTION), Z || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
-  }, Y = () => {
+    }), (0, N.u7)(T, P, D, Z, V), null == o || o(w.L.TAKE_ACTION), F || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
+  }, q = () => {
     _(S._m.RESET_BUTTON), (0, N.uf)()
-  }, q = y.length > 0;
+  }, J = T.length > 0;
   return (i.useEffect(() => () => {
-    b.current || _(S._m.EDITOR_CLOSE)
+    y.current || _(S._m.EDITOR_CLOSE)
   }, [_]), (0, p.ZP)(() => {
-    a || (0, S.lT)(y, U, D)
+    a || (0, S.lT)(T, G, j)
   }), u) ? (0, r.jsxs)("div", {
     className: M.container,
     "data-app-right-panel": true,
@@ -426,11 +426,11 @@ function J(e) {
             children: x.intl.string(L.default.uSL2Gx)
           }), (0, r.jsx)(C.U, {
             onChange: e => {
-              G(e), 0 === y.length && (0, S.lT)(y, e, D)
+              B(e), 0 === T.length && (0, S.lT)(T, e, j)
             },
-            value: U,
-            colors: y,
-            setColors: D
+            value: G,
+            colors: T,
+            setColors: j
           })]
         }), (0, r.jsxs)("div", {
           className: M.section,
@@ -438,31 +438,32 @@ function J(e) {
             variant: "text-sm/semibold",
             color: "text-secondary",
             children: x.intl.string(L.default.F1t0c3)
-          }), y.length > 1 && (0, r.jsx)(W, {
-            gradientAngle: P,
-            setGradientAngle: k
+          }), T.length > 1 && (0, r.jsx)(W, {
+            gradientAngle: D,
+            setGradientAngle: U
           }), (0, r.jsx)(K, {
-            chassisMixAmount: T,
+            chassisMixAmount: P,
             setChassisMixAmount: e => {
-              j(e), 0 === y.length && (0, S.lT)(y, U, D)
+              k(e), 0 === T.length && (0, S.lT)(T, G, j)
             }
           })]
         }), (0, r.jsxs)("div", {
           className: M.resetButton,
           children: [(0, r.jsx)(z, {}), (0, r.jsx)(c.z, {
             variant: "secondary",
-            onClick: Y,
+            onClick: q,
+            disabled: b,
             text: x.intl.string(x.t.yBZMsb),
             fullWidth: true
           })]
         })]
       })
     }), a ? (0, r.jsx)(X, {
-      onSaveTheme: V,
-      canApply: q
+      onSaveTheme: Y,
+      canApply: J
     }) : (0, r.jsx)(Q, {
-      onSaveTheme: V,
-      canApply: q,
+      onSaveTheme: Y,
+      canApply: J,
       metadata: n
     })]
   }) : null
