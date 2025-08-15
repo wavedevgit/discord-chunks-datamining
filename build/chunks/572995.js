@@ -11,7 +11,7 @@ var i, r, Chunk230711 = require("./230711.js"),
   Chunk300284 = require("./300284.js"),
   Chunk526167 = require("./526167.js"),
   Chunk63063 = require("./63063.js"),
-  Chunk220654 = require("./220654.js"),
+  Chunk47280 = require("./47280.js"),
   Chunk963590 = require("./963590.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js"),
@@ -63,7 +63,7 @@ let et = () => {
     analyticsLocations: module
   }), n = (0, Chunk526167.rO)(), i = Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM), r = (0, Chunk963590.Z)({
     location: "WhatsNewSection"
-  }), $ = (0, Chunk220654.Z)({
+  }), $ = (0, Chunk47280.ZP)({
     location: "useBentoBoxes"
   }), ee = function(e) {
     for (var t = 1; t < arguments.length; t++) {
