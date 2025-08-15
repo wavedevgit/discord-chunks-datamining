@@ -1,7 +1,7 @@
 /** Chunk was on 30202 **/
 /** chunk id: 851894, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => k
+  Z: () => w
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -16,12 +16,11 @@ var Chunk255367 = require("./255367.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk22267 = require("./22267.jsx"),
   Chunk346811 = require("./346811.js"),
-  Chunk4242 = require("./4242.js"),
+  Chunk850020 = require("./850020.js"),
   Chunk296810 = require("./296810.jsx"),
   Chunk678135 = require("./678135.jsx"),
   Chunk643879 = require("./643879.js"),
   Chunk621853 = require("./621853.js"),
-  Chunk271383 = require("./271383.js"),
   Chunk246946 = require("./246946.js"),
   Chunk594174 = require("./594174.js"),
   Chunk63063 = require("./63063.js"),
@@ -34,7 +33,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function D(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -53,7 +52,7 @@ function D(e) {
   return e
 }
 
-function Z(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,35 +65,34 @@ function Z(e, t) {
   }), e
 }
 
-function w(e) {
+function Z(e) {
   (0, o.ZDy)(async () => {
     let {
       default: t
     } = await n.e("84509").then(n.bind(n, 933696));
-    return n => (0, i.jsx)(t, D({
-      source: Z(D({}, e), {
-        page: P.ZY5.GUILD_MEMBER_PROFILE_SETTINGS
+    return n => (0, i.jsx)(t, R({
+      source: D(R({}, e), {
+        page: A.ZY5.GUILD_MEMBER_PROFILE_SETTINGS
       })
     }, n))
   })
 }
 
-function k(e) {
-  var t;
+function w(e) {
   let {
-    selectedGuild: n
+    selectedGuild: t
   } = e, {
-    analyticsLocations: s
-  } = (0, p.ZP)(u.Z.USER_SETTINGS_GUILD_PROFILE), k = (0, l.e7)([O.default], () => {
-    let e = O.default.getCurrentUser();
+    analyticsLocations: n
+  } = (0, p.ZP)(u.Z.USER_SETTINGS_GUILD_PROFILE), s = (0, l.e7)([C.default], () => {
+    let e = C.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), L = (0, l.e7)([j.Z], () => !j.Z.isFetchingProfile(k.id, null == n ? true : n.id)), B = (0, l.e7)([C.Z], () => C.Z.hidePersonalInformation), M = (0, l.cj)([N.Z], () => Z(D({}, N.Z.getAllPending()), {
-    source: N.Z.getSource()
+  }), w = (0, l.e7)([j.Z], () => !j.Z.isFetchingProfile(s.id, null == t ? true : t.id)), k = (0, l.e7)([E.Z], () => E.Z.hidePersonalInformation), L = (0, l.cj)([T.Z], () => D(R({}, T.Z.getAllPending()), {
+    source: T.Z.getSource()
   })), {
-    source: U,
-    pendingAvatar: V,
-    pendingNameplate: G
-  } = M, F = function(e, t) {
+    source: B,
+    pendingAvatar: M,
+    pendingNameplate: U
+  } = L, V = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -108,57 +106,60 @@ function k(e) {
       for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
-  }(M, ["source", "pendingAvatar", "pendingNameplate"]), H = (0, _.SD)({
-    userId: k.id,
-    image: V
-  }), z = (0, l.e7)([E.ZP], () => null != n ? E.ZP.getMember(n.id, k.id) : null);
-  r.useEffect(() => () => c.Z.wait(T.W3), []), r.useEffect(() => {
-    null != U && m.ZP.trackWithMetadata(P.rMx.SETTINGS_PANE_VIEWED, {
+  }(L, ["source", "pendingAvatar", "pendingNameplate"]), G = (0, _.SD)({
+    userId: s.id,
+    image: M
+  }), F = (0, f.K)({
+    user: s,
+    guildId: null == t ? true : t.id
+  });
+  r.useEffect(() => () => c.Z.wait(S.W3), []), r.useEffect(() => {
+    null != B && m.ZP.trackWithMetadata(A.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "guild",
-      destination_pane: P.jXE.SETTINGS_CUSTOMIZE_PROFILE,
-      source: U
+      destination_pane: A.jXE.SETTINGS_CUSTOMIZE_PROFILE,
+      source: B
     })
-  }, [U]);
+  }, [B]);
   let {
-    enabled: W
+    enabled: H
   } = h.Z.useConfig({
     location: "GuildIdentitySettingsPage"
   });
-  return B ? (0, i.jsx)(d.Z, {}) : L ? (0, i.jsxs)(p.Gt, {
-    value: s,
+  return k ? (0, i.jsx)(d.Z, {}) : w ? (0, i.jsxs)(p.Gt, {
+    value: n,
     children: [(0, i.jsx)(o.Text, {
       variant: "text-sm/normal",
-      children: R.intl.format(R.t["/PTB2N"], {
-        helpCenterLink: v.Z.getArticleURL(P.BhN.GUILD_PROFILES)
+      children: P.intl.format(P.t["/PTB2N"], {
+        helpCenterLink: O.Z.getArticleURL(A.BhN.GUILD_PROFILES)
       })
-    }), null != n ? (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(A.Z, {
-        guildId: n.id,
+    }), null != t ? (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsx)(y.Z, {
+        guildId: t.id,
         onChange: e => {
-          null != e && (0, T.HP)(e)
+          null != e && (0, S.HP)(e)
         }
       }), (0, i.jsx)(b.Z, {
-        profilePreviewTitle: R.intl.formatToPlainString(R.t.Tc0slJ, {
-          guildName: null == n ? true : n.name
+        profilePreviewTitle: P.intl.formatToPlainString(P.t.Tc0slJ, {
+          guildName: null == t ? true : t.name
         }),
-        profilePreview: (0, i.jsx)(x.Z, Z(D({}, F), {
-          pendingAvatar: H,
-          user: k,
-          guild: n,
-          canUsePremiumCustomization: S.ZP.canUsePremiumProfileCustomization(k),
-          onUpsellClick: w
+        profilePreview: (0, i.jsx)(x.Z, D(R({}, V), {
+          pendingAvatar: G,
+          user: s,
+          guild: t,
+          canUsePremiumCustomization: v.ZP.canUsePremiumProfileCustomization(s),
+          onUpsellClick: Z
         })),
-        nameplatePreview: W ? (0, i.jsx)(g.Z, {
-          user: k,
-          guildId: null == n ? true : n.id,
-          nameplate: G,
-          nameplateData: true === G ? (0, f.Pb)(null == z || null == (t = z.collectibles) ? true : t.nameplate) : true,
+        nameplatePreview: H ? (0, i.jsx)(g.Z, {
+          user: s,
+          guildId: null == t ? true : t.id,
+          nameplate: U,
+          nameplateData: true === U ? F : true,
           isHighlighted: true
         }) : null,
-        children: (0, i.jsx)(y.Z, {
-          nameplateEnabled: W
+        children: (0, i.jsx)(I.Z, {
+          nameplateEnabled: H
         })
       })]
-    }) : (0, i.jsx)(I.Z, {})]
+    }) : (0, i.jsx)(N.Z, {})]
   }) : (0, i.jsx)(o.$jN, {})
 }
