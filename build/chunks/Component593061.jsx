@@ -45,28 +45,24 @@ function p(e) {
     className: u.downloadInvoice,
     children: [(0, i.jsx)(a.eee, {
       onClick: () => g(false),
-      children: d.intl.string(d.t.R0xzCA)
+      children: d.intl.formatToPlainString(d.t.R0xzCA, {})
     }), t.hasRefundInvoiceURLs ? (0, i.jsx)(a.eee, {
       className: u.downloadRefundInvoice,
       onClick: () => g(true),
-      children: d.intl.string(d.t["3x6NGx"])
-    }) : null, (0, i.jsx)(a.Text, {
-      color: "text-danger",
-      variant: "text-sm/semibold",
+      children: d.intl.formatToPlainString(d.t["3x6NGx"], {})
+    }) : null, null != o && "" !== o && (0, i.jsx)(a.kzN, {
       children: o
     })]
   }) : t.hasInvoiceURL && null != n ? (0, i.jsxs)("div", {
     className: u.downloadInvoice,
     children: [(0, i.jsx)(a.eee, {
       href: f,
-      children: d.intl.string(d.t.R0xzCA)
+      children: d.intl.formatToPlainString(d.t.R0xzCA, {})
     }), null != b ? b.map((e, t) => (0, i.jsx)(a.eee, {
       className: u.downloadRefundInvoice,
       href: e,
-      children: d.intl.string(d.t["3x6NGx"])
-    }, t)) : null, (0, i.jsx)(a.Text, {
-      color: "text-danger",
-      variant: "text-sm/semibold",
+      children: d.intl.formatToPlainString(d.t["3x6NGx"], {})
+    }, t)) : null, null != o && "" !== o && (0, i.jsx)(a.kzN, {
       children: o
     })]
   }) : h ? (0, i.jsx)("div", {
@@ -76,7 +72,7 @@ function p(e) {
         var e;
         e = t.paymentSource, l.Z.open(t, e)
       },
-      children: d.intl.string(d.t.onRIxc)
+      children: d.intl.formatToPlainString(d.t.onRIxc, {})
     })
   }) : null
 }

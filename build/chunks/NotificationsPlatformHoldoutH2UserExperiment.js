@@ -2,31 +2,34 @@
 /** chunk id: 141537, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  cE: () => c,
-  sM: () => l
+  cE: () => u,
+  sM: () => c
 }), require("./388685.js");
-var Chunk818083 = require("./818083.js");
+var Chunk818083 = require("./818083.js"),
+  Chunk353926 = require("./353926.js");
 
-function i(e) {
-  function t(t) {
-    let n = false;
-    for (let i of e) {
-      var r;
-      if (i.getCurrentConfig({
-          location: t.location
+function a(e) {
+  function t(t, n) {
+    let r = false,
+      a = i.Z.getUserExperimentDescriptor(n.definition.id),
+      o = "location:".concat(t.location, " experiment_name:").concat(n.definition.id);
+    for (let n of (null != a && (o = "".concat(o, " revision:").concat(a.revision)), e)) {
+      var s;
+      if (n.getCurrentConfig({
+          location: o
         }, {
-          autoTrackExposure: null == (r = t.autoTrackExposure) || r
+          autoTrackExposure: null == (s = t.autoTrackExposure) || s
         }).inHoldout) {
-        n = true;
+        r = true;
         break
       }
     }
-    return n
+    return r
   }
   return {
     useHoldoutExperiment: function(e, n) {
       var r;
-      let i = t(n);
+      let i = t(n, e);
       return e.useExperiment({
         location: n.location
       }, {
@@ -36,7 +39,7 @@ function i(e) {
     },
     getHoldoutExperiment: function(e, n) {
       var r;
-      let i = t(n);
+      let i = t(n, e);
       return e.getCurrentConfig({
         location: n.location
       }, {
@@ -46,7 +49,7 @@ function i(e) {
     }
   }
 }
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-07_growth_holdout_h2",
     label: "Growth Holdout H2",
@@ -68,9 +71,9 @@ let a = (0, Chunk818083.B)({
     }]
   }),
   {
-    useHoldoutExperiment: o,
-    getHoldoutExperiment: s
-  } = i([a, (0, Chunk818083.B)({
+    useHoldoutExperiment: s,
+    getHoldoutExperiment: l
+  } = a([o, (0, Chunk818083.B)({
     kind: "user",
     id: "2025-07_access_holdout_h2",
     label: "Access Holdout H2",
@@ -92,9 +95,9 @@ let a = (0, Chunk818083.B)({
     }]
   })]),
   {
-    useHoldoutExperiment: l,
-    getHoldoutExperiment: c
-  } = i([a, (0, Chunk818083.B)({
+    useHoldoutExperiment: c,
+    getHoldoutExperiment: u
+  } = a([o, (0, Chunk818083.B)({
     kind: "user",
     id: "2025-07_experiences_holdout_h2",
     label: "Experiences Holdout H2",
@@ -116,9 +119,9 @@ let a = (0, Chunk818083.B)({
     }]
   })]),
   {
-    useHoldoutExperiment: u,
-    getHoldoutExperiment: d
-  } = i([a, (0, Chunk818083.B)({
+    useHoldoutExperiment: d,
+    getHoldoutExperiment: f
+  } = a([o, (0, Chunk818083.B)({
     kind: "user",
     id: "2025-07_notifications_platform_holdout_h2",
     label: "NotificationsPlatform Holdout H2",
