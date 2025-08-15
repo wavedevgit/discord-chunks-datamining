@@ -8,5 +8,6 @@ module.exports = {
   expandButton: "expandButton__25a50 tag__25a50",
   collapseButton: "collapseButton__25a50 tag__25a50",
   addButton: "addButton__25a50 tag__25a50",
-  caret: "caret__25a50"
+  caret: "caret__25a50",
+  removeButton: "removeButton__25a50"
 }

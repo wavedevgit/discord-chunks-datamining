@@ -2,15 +2,16 @@
 /** chunk id: 86419, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $b: () => C,
-  ES: () => N,
-  X6: () => P,
-  kQ: () => D,
+  $b: () => R,
+  ES: () => C,
+  RZ: () => N,
+  X6: () => w,
+  kQ: () => L,
   n$: () => A,
   np: () => b,
   qH: () => T,
-  tk: () => w,
-  vH: () => R,
+  tk: () => D,
+  vH: () => P,
   y8: () => S
 }), require("./388685.js"), require("./642613.js");
 var Chunk624238 = require("./624238.js"),
@@ -137,7 +138,16 @@ function A(e, t, n) {
   l.Z.setPendingWidgets(c)
 }
 
-function N(e, t) {
+function N(e, t, n) {
+  let r = y().find(t => t.type === e);
+  if (null == r) return;
+  let i = r.games.find(e => e.applicationId === t);
+  if (null == i || null == i.tags || 0 === i.tags.length) return;
+  let o = i.tags.filter(e => e !== n);
+  A(e, t, o.length > 0 ? o : [])
+}
+
+function C(e, t) {
   let n, a = y(),
     s = a.find(t => t.type === e),
     c = r.k[e];
@@ -155,7 +165,7 @@ function N(e, t) {
   l.Z.setPendingWidgets(_), o.Z.getDetectableGamesSupplemental([t.applicationId])
 }
 
-function C(e, t) {
+function R(e, t) {
   let n = y(),
     r = n.find(t => t.type === e);
   if (null == r) return;
@@ -163,7 +173,7 @@ function C(e, t) {
   l.Z.setPendingWidgets(i)
 }
 
-function R(e) {
+function P(e) {
   let t = e => ({
       game_id: e.applicationId,
       comment: e.comment,
@@ -177,7 +187,7 @@ function R(e) {
     }
   }
 }
-async function P() {
+async function w() {
   let e = Chunk224724.Z.getPendingWidgets();
   if (null !== module) try {
     await Chunk592183.Z.savePendingWidgets(module)
@@ -185,7 +195,7 @@ async function P() {
     console.error("Failed to save sample widgets:", module)
   }
 }
-async function w() {
+async function D() {
   try {
     await Chunk592183.Z.savePendingWidgets([])
   } catch (e) {
@@ -193,7 +203,7 @@ async function w() {
   }
 }
 
-function D(e) {
+function L(e) {
   let t = r.k[e.type];
   return e.games.length >= t
 }

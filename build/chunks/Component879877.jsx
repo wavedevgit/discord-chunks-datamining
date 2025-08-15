@@ -1,99 +1,152 @@
 /** Chunk was on 76708 **/
 /** chunk id: 879877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk785717 = require("./785717.jsx"),
+  Chunk221292 = require("./221292.js"),
+  Chunk86419 = require("./86419.js"),
   Chunk978369 = require("./978369.jsx"),
   Chunk286957 = require("./286957.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk44258 = require("./44258.js");
 
-function f(e) {
+function m(e) {
   let {
     tags: t,
     isCurrentUser: n,
     widgetType: i,
     applicationId: o
-  } = e, f = null == t ? true : t.filter(e => null != (0, s.zK)(e)), j = (0, l.useRef)(new Map), y = (0, l.useRef)(null), [O, x] = (0, l.useState)(0), [h, v] = (0, l.useState)(false), {
+  } = e, c = null == t ? true : t.filter(e => null != (0, u.zK)(e)), s = (0, l.useRef)(new Map), m = (0, l.useRef)(null), [O, x] = (0, l.useState)(0), [h, v] = (0, l.useState)(false), {
     trackUserProfileAction: _
-  } = (0, a.KZ)(), I = b(y, f, j, x);
+  } = (0, a.KZ)(), I = y(m, c, s, x);
   if ((0, l.useEffect)(() => (I(), window.addEventListener("resize", I), () => {
       window.removeEventListener("resize", I)
-    }), [I, null == f ? true : f.join("")]), null == f || 0 === f.length) return null;
-  let P = h ? f : f.slice(0, f.length - O);
+    }), [I, null == c ? true : c.join("")]), null == c || 0 === c.length) return null;
+  let P = h ? c : c.slice(0, c.length - O);
   return (0, r.jsxs)("div", {
-    className: u.tagListContainer,
+    className: p.tagListContainer,
     children: [(0, r.jsx)("ul", {
-      className: u.tagList,
-      "aria-label": d.intl.string(d.t.EfjTi4),
-      children: P.map(e => (0, r.jsx)(p, {
+      className: p.tagList,
+      "aria-label": f.intl.string(f.t.EfjTi4),
+      children: P.map(e => (0, r.jsx)(g, {
         tag: e,
+        isCurrentUser: n,
+        applicationId: o,
+        widgetType: i,
         ref: t => {
-          null != t && j.current.set(e, t)
+          null != t && s.current.set(e, t)
         }
       }, e))
-    }), O > 0 && (h ? (0, r.jsx)(g, {
+    }), O > 0 && (h ? (0, r.jsx)(j, {
       onClick: () => {
         v(false), _({
           action: "COLLAPSE_GAME_TAGS"
         })
       }
-    }) : (0, r.jsx)(m, {
+    }) : (0, r.jsx)(b, {
       numHidden: O,
       onClick: () => {
         v(true), _({
           action: "EXPAND_GAME_TAGS"
         })
       },
-      ref: y
-    })), n && (0, r.jsx)(c.Z, {
+      ref: m
+    })), n && (0, r.jsx)(d.Z, {
       tags: t,
       widgetType: i,
       applicationId: o
     })]
   })
 }
-let p = e => {
+let g = e => {
     let {
       tag: t,
-      ref: n
-    } = e, l = (0, s.zK)(t);
-    if (null == l) return null;
+      isCurrentUser: n,
+      applicationId: l,
+      widgetType: o,
+      ref: a
+    } = e, d = (0, u.zK)(t);
+    if (null == d) return null;
     let {
-      getText: o,
-      icon: a
-    } = l;
+      getText: m,
+      icon: g
+    } = d, b = () => {
+      (0, s.RZ)(o, l, t), (0, c.pQ)({
+        action: "REMOVE_GAME_TAGS"
+      })
+    };
     return (0, r.jsxs)("li", {
-      className: u.tag,
-      ref: n,
-      children: [(0, r.jsx)(a, {
+      className: p.tag,
+      ref: a,
+      children: [(0, r.jsx)(g, {
         size: "xxs"
       }), (0, r.jsx)(i.Text, {
         variant: "text-xxs/medium",
         color: "text-secondary",
-        children: o()
+        children: m()
+      }), n && (0, r.jsx)(i.ua7, {
+        text: f.intl.string(f.t.Otv9fH),
+        children: e => {
+          var t, n;
+          return (0, r.jsx)(i.P3F, (t = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
+                  enumerable: true,
+                  configurable: true,
+                  writable: true
+                }) : e[t] = r
+              })
+            }
+            return e
+          }({}, e), n = n = {
+            onClick: b,
+            className: p.removeButton,
+            "aria-label": f.intl.formatToPlainString(f.t.GCn1nZ, {
+              tag: m()
+            }),
+            children: (0, r.jsx)(i.Dio, {
+              size: "xxs"
+            })
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
+            }
+            return n
+          })(Object(n)).forEach(function(e) {
+            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+          }), t))
+        }
       })]
     })
   },
-  m = e => {
+  b = e => {
     let {
       numHidden: t,
       onClick: n,
       ref: l
     } = e;
     return (0, r.jsx)(i.DY3, {
-      className: u.buttonContainer,
-      text: d.intl.string(d.t.mriLXF),
+      className: p.buttonContainer,
+      text: f.intl.string(f.t.mriLXF),
       children: (0, r.jsx)(i.P3F, {
         onClick: n,
-        className: u.expandButton,
+        className: p.expandButton,
         innerRef: l,
-        "aria-label": d.intl.string(d.t.mriLXF),
+        "aria-label": f.intl.string(f.t.mriLXF),
         children: (0, r.jsx)(i.Text, {
           variant: "text-xxs/medium",
           color: "text-secondary",
@@ -102,27 +155,27 @@ let p = e => {
       })
     })
   },
-  g = e => {
+  j = e => {
     let {
       onClick: t
     } = e;
     return (0, r.jsx)(i.DY3, {
-      className: u.buttonContainer,
-      text: d.intl.string(d.t.z9VPra),
+      className: p.buttonContainer,
+      text: f.intl.string(f.t.z9VPra),
       children: (0, r.jsx)(i.P3F, {
         onClick: t,
-        className: u.collapseButton,
-        "aria-label": d.intl.string(d.t.z9VPra),
+        className: p.collapseButton,
+        "aria-label": f.intl.string(f.t.z9VPra),
         children: (0, r.jsx)(o.Z, {
           direction: o.Z.Directions.LEFT,
           width: 12,
           height: 12,
-          className: u.caret
+          className: p.caret
         })
       })
     })
   },
-  b = (e, t, n, r) => (0, l.useCallback)(() => {
+  y = (e, t, n, r) => (0, l.useCallback)(() => {
     var l, i;
     if (null == t) return void r(0);
     let o = null != (i = null == (l = e.current) ? true : l.getBoundingClientRect().width) ? i : 0,

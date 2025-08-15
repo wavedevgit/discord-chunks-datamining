@@ -2,7 +2,7 @@
 /** chunk id: 224724, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => A
 });
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -12,9 +12,16 @@ var Chunk392711 = require("./392711.js"),
   Chunk621853 = require("./621853.js");
 let c = null,
   u = null,
-  d = false;
+  d = false,
+  f = {
+    suggestedGamesIds: [],
+    suggestedWishlistGamesIds: []
+  },
+  _ = false,
+  p = false,
+  h = false;
 
-function f(e) {
+function m(e) {
   let {
     widgets: t
   } = e;
@@ -28,22 +35,45 @@ function f(e) {
   }
 }
 
-function _() {
+function g() {
   c = null, u = null
 }
 
-function p(e) {
+function E(e) {
+  let {
+    suggestedGamesIds: t,
+    suggestedWishlistGamesIds: n
+  } = e;
+  f.suggestedGamesIds = t, f.suggestedWishlistGamesIds = n, p = false, _ = false
+}
+
+function b() {
+  _ = true, p = false
+}
+
+function y() {
+  p = true, _ = false, h = true
+}
+
+function O(e) {
   d = true
 }
 
-function h(e) {
+function v(e) {
   d = false, null !== c && (u = c, c = null)
 }
 
-function m(e) {
+function I(e) {
   d = false
 }
-class g extends Chunk442837.ZP.Store {
+
+function T(e) {
+  let {
+    applicationId: t
+  } = e;
+  f.suggestedGamesIds = f.suggestedGamesIds.filter(e => e !== t), f.suggestedWishlistGamesIds = f.suggestedWishlistGamesIds.filter(e => e !== t)
+}
+class S extends Chunk442837.ZP.Store {
   getPendingWidgets() {
     return c
   }
@@ -53,11 +83,27 @@ class g extends Chunk442837.ZP.Store {
   get isSubmitting() {
     return d
   }
+  get suggestedFetchError() {
+    return _
+  }
+  get suggestedFetchIsLoading() {
+    return p
+  }
+  get suggestedFetchAttempted() {
+    return h
+  }
+  get suggestedGameIds() {
+    return f
+  }
 }
-let E = new g(Chunk570140.Z, {
-  WIDGET_PENDING_SET: f,
-  WIDGET_PENDING_SAVE_START: p,
-  WIDGET_PENDING_SAVE_SUCCESS: h,
-  WIDGET_PENDING_SAVE_FAILURE: m,
-  WIDGET_PENDING_CLEAR: _
+let A = new S(Chunk570140.Z, {
+  WIDGET_PENDING_SET: m,
+  WIDGET_PENDING_SAVE_START: O,
+  WIDGET_PENDING_SAVE_SUCCESS: v,
+  WIDGET_PENDING_SAVE_FAILURE: I,
+  WIDGET_SUGGESTED_FETCH_SUCCESS: E,
+  WIDGET_SUGGESTED_FETCH_FAILURE: b,
+  WIDGET_SUGGESTED_FETCH_START: y,
+  WIDGET_PENDING_CLEAR: g,
+  WIDGET_SUGGESTED_REMOVE_GAME: T
 })

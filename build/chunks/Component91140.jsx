@@ -2,53 +2,85 @@
 /** chunk id: 91140, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => u,
-  Z: () => f
-});
+  W: () => E,
+  Z: () => y
+}), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
+  Chunk704215 = require("./704215.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk206074 = require("./206074.js"),
+  Chunk728345 = require("./728345.js"),
+  Chunk377171 = require("./377171.js"),
+  Chunk243778 = require("./243778.jsx"),
   Chunk379357 = require("./379357.js"),
   Chunk442550 = require("./442550.jsx"),
   Chunk297781 = require("./297781.jsx"),
   Chunk443487 = require("./443487.jsx"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk800371 = require("./800371.js"),
   Chunk451419 = require("./451419.js");
-let u = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk297781.wO, Chunk297781.f, Chunk297781.n8, Chunk297781.v1, Chunk297781.pQ],
-  d = e => {
+let E = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk297781.wO, Chunk297781.f, Chunk297781.n8, Chunk297781.v1, Chunk297781.pQ],
+  b = e => {
     var t;
     let {
       entry: n,
       channel: i,
-      selected: d,
-      hovered: f
+      selected: b,
+      hovered: y
     } = e, {
-      largeImage: _
-    } = (0, o.rv)({
+      largeImage: O
+    } = (0, d.rv)({
       entry: n,
       showCoverImage: false
-    });
-    return (0, r.jsxs)(l.Zb, {
-      selected: d,
-      children: [(0, r.jsxs)(l.e$, {
-        children: [(0, r.jsx)(l.F9, {
-          entry: n,
-          channelId: i.id,
-          guildId: i.guild_id
-        }), (0, r.jsx)(l.ll, {
-          children: n.extra.game_name
-        }), (0, r.jsx)(s.Gk, {
-          location: s.Gt.CARD,
-          children: u.map((e, t) => (0, r.jsx)(e, {
+    }), {
+      data: v
+    } = (0, l.IX)(n.extra.application_id), I = (0, s.q)(v, "MemberListGamingContent"), T = I ? [o.z.CLOUD_PLAY_NEW_BADGE] : [], [S] = (0, u.US)(T), A = I;
+    return (0, r.jsxs)(p.Zb, {
+      selected: b,
+      usesCardRows: true,
+      isAutoHeight: A,
+      children: [(0, r.jsxs)(p.lS, {
+        children: [(0, r.jsxs)(p.e$, {
+          children: [(0, r.jsx)(p.F9, {
             entry: n,
-            hovered: f
-          }, t))
+            channelId: i.id,
+            guildId: i.guild_id
+          }), (0, r.jsx)(p.ll, {
+            children: n.extra.game_name
+          }), (0, r.jsx)(_.Gk, {
+            location: _.Gt.CARD,
+            children: E.map((e, t) => (0, r.jsx)(e, {
+              entry: n,
+              hovered: y
+            }, t))
+          })]
+        }), (0, r.jsx)(f.f, {
+          alt: null != (t = null == O ? true : O.text) ? t : null == O ? true : O.alt,
+          src: null == O ? true : O.src,
+          size: 48,
+          className: g.thumbnail,
+          showTooltip: (null == O ? true : O.text) != null
         })]
-      }), (0, r.jsx)(a.f, {
-        alt: null != (t = null == _ ? true : _.text) ? t : null == _ ? true : _.alt,
-        src: null == _ ? true : _.src,
-        size: 48,
-        className: c.thumbnail,
-        showTooltip: (null == _ ? true : _.text) != null
+      }), I && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(p.xx, {}), (0, r.jsxs)(p.lS, {
+          className: m.cloudPlaySection,
+          children: [(0, r.jsxs)("div", {
+            className: m.cloudPlaySectionTextContainer,
+            children: [(0, r.jsx)(a.v3n, {
+              color: a.TVs.colors.ICON_SECONDARY,
+              size: "xxs"
+            }), (0, r.jsx)(a.Text, {
+              variant: "text-xs/normal",
+              color: "text-secondary",
+              children: h.intl.string(h.t["5HiF2t"])
+            })]
+          }), S === o.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(a.IGR, {
+            text: h.intl.string(h.t.y2b7CA),
+            color: c.Z.BG_BRAND
+          })]
+        })]
       })]
     })
   },
-  f = Chunk73800.memo(d)
+  y = Chunk73800.memo(b)

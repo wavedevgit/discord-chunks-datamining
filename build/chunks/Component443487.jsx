@@ -6,7 +6,9 @@ require.d(exports, {
   Zb: () => E,
   cA: () => g,
   e$: () => b,
-  ll: () => v
+  lS: () => I,
+  ll: () => v,
+  xx: () => T
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -34,12 +36,17 @@ function g() {
 function E(e) {
   let {
     children: t,
-    selected: n
+    selected: n,
+    className: i,
+    usesCardRows: a = false,
+    isAutoHeight: s = false
   } = e;
   return (0, r.jsx)("div", {
     className: o()(m.container, m.openOnHover, {
-      [m.selected]: n
-    }),
+      [m.selected]: n,
+      [m.usesCardRows]: a,
+      [m.isAutoHeight]: s
+    }, i),
     children: t
   })
 }
@@ -153,5 +160,22 @@ function v(e) {
     className: m.contentTitle,
     lineClamp: 1,
     children: t
+  })
+}
+
+function I(e) {
+  let {
+    children: t,
+    className: n
+  } = e;
+  return (0, r.jsx)("div", {
+    className: o()(m.cardRow, n),
+    children: t
+  })
+}
+
+function T() {
+  return (0, Chunk255367.jsx)("div", {
+    className: Chunk451419.divider
   })
 }

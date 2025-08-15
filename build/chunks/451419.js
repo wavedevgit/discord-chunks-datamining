@@ -5,6 +5,9 @@ module.exports = {
   container: "container__0f2e8",
   contentTitle: "contentTitle__0f2e8",
   additionalParticipantBadge: "additionalParticipantBadge__0f2e8",
+  isAutoHeight: "isAutoHeight__0f2e8",
+  usesCardRows: "usesCardRows__0f2e8",
+  cardRow: "cardRow__0f2e8",
   openOnHover: "openOnHover__0f2e8",
   selected: "selected__0f2e8",
   infoSection: "infoSection__0f2e8",
@@ -13,5 +16,6 @@ module.exports = {
   facePile: "facePile__0f2e8",
   facePileItem: "facePileItem__0f2e8",
   additionalParticipantBadgeText: "additionalParticipantBadgeText__0f2e8",
-  thumbnail: "thumbnail__0f2e8"
+  thumbnail: "thumbnail__0f2e8",
+  divider: "divider__0f2e8"
 }

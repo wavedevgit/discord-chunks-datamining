@@ -2,14 +2,15 @@
 /** chunk id: 592183, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => l
+  Z: () => c
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk594174 = require("./594174.js"),
+  Chunk960048 = require("./960048.js"),
   Chunk86419 = require("./86419.js"),
   Chunk981631 = require("./981631.js");
-let l = {
+let c = {
   setPendingWidgets(e) {
     i.Z.dispatch({
       type: "WIDGET_PENDING_SET",
@@ -23,12 +24,12 @@ let l = {
     i.Z.dispatch({
       type: "WIDGET_PENDING_SAVE_START"
     });
-    let l = e.map(a.vH);
+    let a = e.map(s.vH);
     try {
       let e = await r.tn.put({
-        url: s.ANM.USER_PROFILE_WIDGETS,
+        url: l.ANM.USER_PROFILE_WIDGETS,
         body: {
-          widgets: l
+          widgets: a
         },
         oldFormErrors: true,
         rejectWithError: true
@@ -47,6 +48,33 @@ let l = {
   clearPendingWidgets() {
     Chunk570140.Z.dispatch({
       type: "WIDGET_PENDING_CLEAR"
+    })
+  },
+  async fetchSuggestedGames() {
+    Chunk570140.Z.dispatch({
+      type: "WIDGET_SUGGESTED_FETCH_START"
+    });
+    try {
+      var e, t, n, o, s, c;
+      let u = await Chunk544891.tn.get({
+        url: Chunk981631.ANM.USER_PROFILE_SUGGESTED_GAMES,
+        rejectWithError: true
+      });
+      ((null == (e = u.body) ? true : module.suggested_games) == null || (null == (t = u.body) ? true : exports.suggested_wishlist_games) == null) && Chunk960048.Z.captureMessage("Suggested games or wishlist games not found"), Chunk570140.Z.dispatch({
+        type: "WIDGET_SUGGESTED_FETCH_SUCCESS",
+        suggestedGamesIds: null != (s = null == (n = u.body) ? true : require.suggested_games) ? Chunk86419 : [],
+        suggestedWishlistGamesIds: null != (c = null == (o = u.body) ? true : Chunk594174.suggested_wishlist_games) ? c : []
+      })
+    } catch (e) {
+      throw Chunk570140.Z.dispatch({
+        type: "WIDGET_SUGGESTED_FETCH_FAILURE"
+      }), Chunk960048.Z.captureException(module), module
+    }
+  },
+  removeGameFromSuggestedGames(e) {
+    i.Z.dispatch({
+      type: "WIDGET_SUGGESTED_REMOVE_GAME",
+      applicationId: e
     })
   }
 }

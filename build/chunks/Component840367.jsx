@@ -62,7 +62,7 @@ function b(e) {
     disabledInteraction: l,
     userId: a
   } = e, s = (0, o.e7)([c.default], () => c.default.getId() === a);
-  return (s || t.type === i.l.FAVORITE_GAMES) && !l ? (0, r.jsxs)("div", {
+  return !l && (s || t.type === i.l.FAVORITE_GAMES && t.games.some(e => null != e.comment)) ? (0, r.jsxs)("div", {
     className: p.actions,
     children: [s && (0, r.jsx)(d.Z, {
       disabled: n,
