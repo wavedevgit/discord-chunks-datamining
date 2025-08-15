@@ -1,7 +1,7 @@
 /** Chunk was on 9885 **/
 /** chunk id: 69439, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => E
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -71,8 +71,8 @@ function y(e) {
   }
 }
 
-function O(e) {
-  var t, n, O, E;
+function E(e) {
+  var t, n, E, O;
   let {
     quest: S,
     questContent: T,
@@ -95,7 +95,7 @@ function O(e) {
     isClaiming: m.Z.isClaimingReward(S.id) || m.Z.isFetchingRewardCode(S.id),
     isEnrolling: m.Z.isEnrolling(S.id),
     isQuestEnrollmentBlocked: null != m.Z.questEnrollmentBlockedUntil
-  })), L = (null == (t = S.userStatus) ? true : t.enrolledAt) != null, Z = (null == (n = S.userStatus) ? true : n.completedAt) != null, W = Z && (null == (O = S.userStatus) ? true : O.claimedAt) == null, U = (0, d.iQ)(S), H = !(0, d.zi)(S), F = (0, p._Q)(S), z = (0, d.Xv)(S.config), X = (0, d.PB)(S), K = (0, d.HJ)(S), Y = (0, d.Vl)(S), G = (0, p.Rf)(S), [J, $, ee] = (0, p.me)(S, G), et = H && F === p.OH.ACCEPTED, en = et && J === g.LI.SELECT, er = et && !en && $.length > 1, es = s.useCallback(e => {
+  })), L = (null == (t = S.userStatus) ? true : t.enrolledAt) != null, Z = (null == (n = S.userStatus) ? true : n.completedAt) != null, W = Z && (null == (E = S.userStatus) ? true : E.claimedAt) == null, U = (0, d.iQ)(S), H = !(0, d.zi)(S), F = (0, p._Q)(S), z = (0, d.Xv)(S.config), X = (0, d.PB)(S), K = (0, d.HJ)(S), Y = (0, d.Vl)(S), G = (0, p.Rf)(S), [J, $, ee] = (0, p.me)(S, G), et = H && F === p.OH.ACCEPTED, en = et && J === g.LI.SELECT, er = et && !en && $.length > 1, es = s.useCallback(e => {
     ee(e), e === j.cd.DESKTOP && w([])
   }, [ee, w]), {
     text: eo,
@@ -132,7 +132,7 @@ function O(e) {
   }), ec = (0, f.f)({
     location: j.dr.QUEST_HOME_DESKTOP,
     questFeatures: S.config.features
-  }), eu = (null == (E = S.userStatus) ? true : E.claimedAt) != null, ed = null;
+  }), eu = (null == (O = S.userStatus) ? true : O.claimedAt) != null, ed = null;
   return (U && W ? ed = (0, r.jsx)(a.zx, {
     color: a.Tt.BRAND,
     submitting: D,

@@ -30,8 +30,8 @@ let j = ["#51BC9D"],
       isHovered: C,
       shouldShowRewardsCTAWhenCollapsed: y
     } = e, {
-      completionSpring: O,
-      startCompletionAnimation: E
+      completionSpring: E,
+      startCompletionAnimation: O
     } = (0, g.G)(), S = (null == (t = b.userStatus) ? true : t.completedAt) != null, T = s.useRef(false), w = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), P = s.useRef(null), A = (0, u.e7)([m.Z], () => m.Z.hasLayers()), N = (0, d.Z)(A), [R, B] = s.useState(null), [k, q] = s.useState(null), I = s.useRef(new i.qA({
       gravity: 0,
       wind: 0
@@ -115,28 +115,28 @@ let j = ["#51BC9D"],
       }
     }, [_, P, Q, w]), V = (0, d.Z)(v);
     return (s.useEffect(() => {
-      S && v && !V && (E(), D())
-    }, [v, S, E, D, V]), s.useEffect(() => {
+      S && v && !V && (O(), D())
+    }, [v, S, O, D, V]), s.useEffect(() => {
       S && !A && N && setTimeout(() => {
-        E(), D()
+        O(), D()
       }, 200)
-    }, [S, N, A, E, D]), s.useEffect(() => {
-      Q.isReady && (!T.current && S && (E(), D()), T.current = S)
-    }, [S, T, D, E, Q]), s.useEffect(() => {
-      C && y && (E(), D())
-    }, [C, y, E, D]), w) ? null : (0, r.jsxs)("div", {
+    }, [S, N, A, O, D]), s.useEffect(() => {
+      Q.isReady && (!T.current && S && (O(), D()), T.current = S)
+    }, [S, T, D, O, Q]), s.useEffect(() => {
+      C && y && (O(), D())
+    }, [C, y, O, D]), w) ? null : (0, r.jsxs)("div", {
       className: x.wrapper,
       "aria-hidden": "true",
       ref: P,
       children: [(0, r.jsx)(c.animated.div, {
         className: x.background,
         style: {
-          opacity: O
+          opacity: E
         }
       }), (0, r.jsx)(c.animated.div, {
         className: a()(x.borders, x.bordersTopLeft),
         style: {
-          opacity: O
+          opacity: E
         }
       }), (0, r.jsxs)(c.animated.div, {
         className: x.confettiWrapper,
@@ -159,7 +159,7 @@ let j = ["#51BC9D"],
         }), null != o.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
           className: a()(x.borders, x.bordersBottom),
           style: {
-            opacity: O
+            opacity: E
           }
         }), o.current)]
       })]

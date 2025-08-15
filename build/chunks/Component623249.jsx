@@ -27,7 +27,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk301889 = require("./301889.js"),
   Chunk708901 = require("./708901.js");
 
-function E(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -92,7 +92,7 @@ function S(e) {
           children: (0, r.jsx)("img", {
             className: y.icon,
             alt: "",
-            src: O
+            src: E
           })
         }), (0, r.jsx)(u.olH, {
           className: y.closeBtn,
@@ -155,7 +155,7 @@ function S(e) {
             }),
             children: e => {
               var t, n;
-              return (0, r.jsx)("img", (t = E({}, e), n = n = {
+              return (0, r.jsx)("img", (t = O({}, e), n = n = {
                 className: y.gameTile,
                 alt: A.config.messages.gameTitle,
                 src: (0, b.fh)(A, b.eC.GAME_TILE, L).url
@@ -252,6 +252,6 @@ function w(e) {
     let {
       default: t
     } = await Promise.resolve().then(n.bind(n, 623249));
-    return n => (0, r.jsx)(t, E({}, n, e))
+    return n => (0, r.jsx)(t, O({}, n, e))
   })
 }

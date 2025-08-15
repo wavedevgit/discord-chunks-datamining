@@ -25,7 +25,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk642145 = require("./642145.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk289157 = require("./289157.js");
-let E = async () => await require.e("67963").then(require.t.bind(require, 145193, 19));
+let O = async () => await require.e("67963").then(require.t.bind(require, 145193, 19));
 
 function S(e) {
   var t, n, o, S, w;
@@ -84,7 +84,7 @@ function S(e) {
       questId: P.id,
       children: [(0, r.jsx)(p.Z, {
         shouldUseThemeColor: true,
-        className: O.orbsBalanceIcon
+        className: E.orbsBalanceIcon
       }), K]
     })
   }) : z ? (0, r.jsx)(T, {
@@ -95,7 +95,7 @@ function S(e) {
       questId: P.id,
       children: [(0, r.jsx)(p.Z, {
         shouldUseThemeColor: true,
-        className: O.orbsBalanceIcon
+        className: E.orbsBalanceIcon
       }), K]
     })
   }) : y.intl.format(y.t["0IUT4e"], {
@@ -107,30 +107,30 @@ function S(e) {
     if (null != J) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
-      className: O.description,
+      className: E.description,
       children: J
     })
   }, [J]), et = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
-    className: O.container,
+    className: E.container,
     children: [(0, r.jsxs)(i.animated.div, {
       style: {
         maxHeight: H.to([0, 1], [104, (null != Z ? Z : 0) + 12])
       },
-      className: O.rewardDescriptionContainer,
+      className: E.rewardDescriptionContainer,
       children: [(0, r.jsx)(b.E, {
         showPlaceholder: !k,
         width: 80,
         height: 80,
         children: (0, r.jsxs)("div", {
-          className: O.assetWrapper,
+          className: E.assetWrapper,
           children: [!z && F && (0, r.jsx)("div", {
-            className: O.completionAnimation
+            className: E.completionAnimation
           }), M && !z ? (0, r.jsxs)("div", {
-            className: O.progressWrapper,
+            className: E.progressWrapper,
             children: [F && (0, r.jsx)(c.Fmz, {
-              importData: E,
-              className: O.confetti,
+              importData: O,
+              className: E.confetti,
               loop: false,
               autoplay: false,
               shouldAnimate: !et
@@ -140,11 +140,11 @@ function S(e) {
               percentComplete: Y,
               percentCompleteText: N && !(0, m.zi)(P) ? G : true,
               children: (0, r.jsx)("div", {
-                className: O.circularRewardTileWrapper,
+                className: E.circularRewardTileWrapper,
                 children: (0, r.jsx)(h.Z, {
                   quest: P,
                   questContent: A,
-                  className: O.circularQuestRewardTileAsset,
+                  className: E.circularQuestRewardTileAsset,
                   location: v.dr.QUEST_HOME_DESKTOP,
                   autoplay: N,
                   onLoadComplete: U,
@@ -157,7 +157,7 @@ function S(e) {
             quest: P,
             autoplay: N,
             questContent: A,
-            className: O.questRewardTileAsset,
+            className: E.questRewardTileAsset,
             location: v.dr.QUEST_HOME_DESKTOP,
             onLoadComplete: U,
             lazyLoad: true,
@@ -166,27 +166,27 @@ function S(e) {
         })
       }), (0, r.jsxs)("div", {
         ref: L,
-        className: a()(O.textContainer, {
-          [O.justifyCenter]: !W
+        className: a()(E.textContainer, {
+          [E.justifyCenter]: !W
         }),
         children: [(0, r.jsx)(c.X6q, {
           variant: "eyebrow",
           color: "text-brand",
-          className: O.questName,
+          className: E.questName,
           children: y.intl.format(y.t.EAYZAg, {
             questName: P.config.messages.questName
           })
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
-          className: O.header,
+          className: E.header,
           children: $
         }), ee]
       }), W && (0, r.jsx)(i.animated.div, {
         style: {
           opacity: H.to([0, 1], [1, 0])
         },
-        className: O.textOverflowBlur
+        className: E.textOverflowBlur
       })]
     }), (0, r.jsx)(_.Z, {
       quest: P,
@@ -207,7 +207,7 @@ let T = Chunk73800.memo(function(e) {
     variant: "text-md/semibold",
     color: "header-primary",
     tag: "span",
-    className: O.header,
+    className: E.header,
     children: n
   }, "".concat(t, "_reward"))
 })

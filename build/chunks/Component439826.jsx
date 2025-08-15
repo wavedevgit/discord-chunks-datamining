@@ -96,7 +96,7 @@ function q(e) {
     opacity: +!!v,
     height: v ? f : 0,
     config: P.Y
-  }), O = 0 === b ? u.Mgn : u.d3s, E = (0, m.Lq)(A.Ilk.RED_345), S = 0 === b ? E : l ? u.TVs.colors.TEXT_DEFAULT : u.TVs.colors.WHITE;
+  }), E = 0 === b ? u.Mgn : u.d3s, O = (0, m.Lq)(A.Ilk.RED_345), S = 0 === b ? O : l ? u.TVs.colors.TEXT_DEFAULT : u.TVs.colors.WHITE;
   return (0, r.jsx)(i.animated.div, {
     style: y,
     children: (0, r.jsxs)("div", {
@@ -104,7 +104,7 @@ function q(e) {
       className: R.hints,
       children: [(0, r.jsxs)("div", {
         className: R.hintsContainer,
-        children: [(0, r.jsx)(O, {
+        children: [(0, r.jsx)(E, {
           size: "xs",
           color: S
         }), (0, r.jsx)(u.Text, {
@@ -184,7 +184,7 @@ function Q(e) {
       questContent: j.jn.QUEST_HOME_DESKTOP,
       questContentCTA: g.jZ.ACCEPT_QUEST,
       sourceQuestContent: Q
-    }), (0, O.openVideoQuestModal)({
+    }), (0, E.openVideoQuestModal)({
       quest: d,
       questContent: j.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: Q,
@@ -230,7 +230,7 @@ function Q(e) {
                 className: R.utilButtonIcon
               })
             }))
-          }), (0, r.jsx)(E.r, {
+          }), (0, r.jsx)(O.r, {
             onOpen: w,
             onClose: C,
             onSelect: P,

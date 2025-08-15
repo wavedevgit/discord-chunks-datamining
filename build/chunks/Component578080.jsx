@@ -103,7 +103,7 @@ let L = Chunk73800.forwardRef(function(e, t) {
     onCtxMenuSelect: X,
     quest: K,
     useReducedMotion: Y
-  } = e, G = (0, l.e7)([v.Z], () => v.Z.isEnrolling(K.id), [K]), J = (0, h.aM)(), $ = (0, _.B6)(K.config.expiresAt), ee = S.r.build(K.config), et = (0, _.B6)(ee.rewardsExpireAt), en = s.useMemo(() => (0, E.fh)(K, E.eC.HERO), [K]), er = (0, R.tP)(ee.application.id), es = ee.features.has(B.S7.START_QUEST_CTA) ? x.jZ.START_QUEST : x.jZ.ACCEPT_QUEST, eo = ee.features.has(B.S7.START_QUEST_CTA) ? I.intl.string(I.t.E80Bdn) : I.intl.string(I.t.l7E81t), ea = s.useCallback(() => {
+  } = e, G = (0, l.e7)([v.Z], () => v.Z.isEnrolling(K.id), [K]), J = (0, h.aM)(), $ = (0, _.B6)(K.config.expiresAt), ee = S.r.build(K.config), et = (0, _.B6)(ee.rewardsExpireAt), en = s.useMemo(() => (0, O.fh)(K, O.eC.HERO), [K]), er = (0, R.tP)(ee.application.id), es = ee.features.has(B.S7.START_QUEST_CTA) ? x.jZ.START_QUEST : x.jZ.ACCEPT_QUEST, eo = ee.features.has(B.S7.START_QUEST_CTA) ? I.intl.string(I.t.E80Bdn) : I.intl.string(I.t.l7E81t), ea = s.useCallback(() => {
     (0, b.AH)(K.id, {
       questContent: C.jn.QUEST_BAR,
       questContentCTA: es,
@@ -120,7 +120,7 @@ let L = Chunk73800.forwardRef(function(e, t) {
       impressionId: J,
       sourceQuestContent: C.jn.QUEST_BAR
     })
-  }, [J, K]), ec = ee.features.has(B.S7.POST_ENROLLMENT_CTA), eu = (0, _.Rf)(K), ed = (0, _.Jf)(K), ep = null != ed ? ed.progress > 0 : eu.progressSeconds > 0, em = (null == (n = K.userStatus) ? true : n.enrolledAt) != null, eg = (null == (o = K.userStatus) ? true : o.completedAt) != null, ef = s.useMemo(() => (0, j.Xv)(K.config), [K.config]), ex = U && H, eh = (0, O.DD)({
+  }, [J, K]), ec = ee.features.has(B.S7.POST_ENROLLMENT_CTA), eu = (0, _.Rf)(K), ed = (0, _.Jf)(K), ep = null != ed ? ed.progress > 0 : eu.progressSeconds > 0, em = (null == (n = K.userStatus) ? true : n.enrolledAt) != null, eg = (null == (o = K.userStatus) ? true : o.completedAt) != null, ef = s.useMemo(() => (0, j.Xv)(K.config), [K.config]), ex = U && H, eh = (0, E.DD)({
     quest: K,
     taskDetails: eu,
     location: B.dr.QUESTS_BAR,

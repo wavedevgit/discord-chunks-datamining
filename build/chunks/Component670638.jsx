@@ -91,17 +91,18 @@ function P(e) {
     S = (0, f.O5)(),
     A = (0, _.aM)(),
     N = (0, m.Yj)(e.quest),
+    C = true === e.showShareLink && (0, p.vB)(e.quest.config),
     {
-      handleComplete: C,
-      handleProgress: R,
-      handleResetDismissibilityClick: P,
-      handleResetStatusClick: w,
-      handleOverrideDeliveryClick: D
+      handleComplete: R,
+      handleProgress: P,
+      handleResetDismissibilityClick: w,
+      handleResetStatusClick: D,
+      handleOverrideDeliveryClick: L
     } = (0, m.kJ)(e.quest.id),
-    L = () => {
-      R(.9 * Math.random() + .03)
+    x = () => {
+      P(.9 * Math.random() + .03)
     },
-    x = i.useCallback(() => {
+    M = i.useCallback(() => {
       if (e.quest.id === y.V6) return void window.open(d.Z.getArticleURL(O.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
       (0, p.nc)(e.quest, {
         content: e.questContent,
@@ -110,16 +111,16 @@ function P(e) {
         sourceQuestContent: e.sourceQuestContent
       })
     }, [A, e.quest, e.questContent, e.sourceQuestContent]),
-    M = i.useCallback(() => {
-      (0, p.f2)(e.quest.id, {
+    j = i.useCallback(() => {
+      C && ((0, p.f2)(e.quest.id, {
         content: e.questContent,
         position: e.questContentPosition,
         ctaContent: f.jZ.CONTEXT_MENU_COPY_LINK,
         impressionId: A,
         sourceQuestContent: e.sourceQuestContent
-      }), (0, a.showToast)((0, a.createToast)(I.intl.string(I.t["+5kSoa"]), a.ToastType.SUCCESS))
-    }, [A, e.quest.id, e.questContent, e.questContentPosition, e.sourceQuestContent]),
-    j = () => {
+      }), (0, a.showToast)((0, a.createToast)(I.intl.string(I.t["+5kSoa"]), a.ToastType.SUCCESS)))
+    }, [A, e.quest.id, e.questContent, e.questContentPosition, e.sourceQuestContent, C]),
+    k = () => {
       (0, b.openDisclosureModal)(e.quest, {
         content: e.questContent,
         position: e.questContentPosition,
@@ -128,7 +129,7 @@ function P(e) {
         sourceQuestContent: e.sourceQuestContent
       })
     },
-    k = () => {
+    U = () => {
       S({
         questId: e.quest.id,
         questContent: e.questContent,
@@ -140,10 +141,10 @@ function P(e) {
         questId: e.quest.id
       })
     },
-    U = () => {
+    G = () => {
       null != e.onSelect ? e.onSelect() : (0, s.Zy)()
     },
-    G = () => {
+    B = () => {
       S({
         questId: e.quest.id,
         questContent: e.questContent,
@@ -152,23 +153,23 @@ function P(e) {
         sourceQuestContent: e.sourceQuestContent
       }), (0, p.GN)(e.questContent) && ((0, h.gl)(e.quest.id, e.questContent), T && (0, b.maybeShowSurveyForQuest)(e.quest))
     },
-    B = e => (0, a.showToast)((0, a.createToast)(new l.Z(e, e.status).message, a.ToastType.FAILURE)),
-    Z = () => (0, h.CS)(e.quest.id, true).catch(B),
-    F = () => (0, h.is)(e.quest.id).catch(B),
-    V = () => {
-      w(), F()
+    Z = e => (0, a.showToast)((0, a.createToast)(new l.Z(e, e.status).message, a.ToastType.FAILURE)),
+    F = () => (0, h.CS)(e.quest.id, true).catch(Z),
+    V = () => (0, h.is)(e.quest.id).catch(Z),
+    H = () => {
+      D(), V()
     },
-    H = false,
-    Y = i.useMemo(() => (0, r.jsx)(a.S89, {
+    Y = false,
+    W = i.useMemo(() => (0, r.jsx)(a.S89, {
       id: "delivery",
       label: "Show in Quest Bar",
       checked: (null == n ? true : n.id) === e.quest.id,
-      action: D
-    }), [D, e.quest.id, null == n ? true : n.id]),
-    W = e.shouldShowDisclosure && e.quest.id !== y.V6;
+      action: L
+    }), [L, e.quest.id, null == n ? true : n.id]),
+    K = e.shouldShowDisclosure && e.quest.id !== y.V6;
   return (0, r.jsxs)(a.v2r, {
     variant: "fixed",
-    onSelect: U,
+    onSelect: G,
     navId: "quests-entry",
     "aria-label": I.intl.string(I.t.ogxXGh),
     onClose: null != (t = null == e ? true : e.onClose) ? t : v.dG,
@@ -176,48 +177,48 @@ function P(e) {
       children: [(0, r.jsx)(a.sNh, {
         id: "play-game",
         label: N,
-        action: x,
+        action: M,
         icon: a.zFc
-      }), true === e.showShareLink && (0, r.jsx)(a.sNh, {
+      }), C && (0, r.jsx)(a.sNh, {
         id: "share-link",
         label: I.intl.string(I.t.RDE0SU),
-        action: M,
+        action: j,
         icon: a.TIy
-      }), H && Y]
+      }), Y && W]
     }, "major-actions"), (0, r.jsxs)(a.kSQ, {
       children: [!e.hideLearnMore && (0, r.jsx)(a.sNh, {
         id: "learn-more",
         label: I.intl.string(I.t.Ws2Bl5),
-        action: k,
+        action: U,
         icon: a.qDn
-      }), W && (0, r.jsx)(a.sNh, {
+      }), K && (0, r.jsx)(a.sNh, {
         id: "display-disclosure",
         label: I.intl.string(I.t.GcsZKC),
-        action: j
+        action: k
       }), c && (0, r.jsx)(a.sNh, {
         id: "hide-entrypoint",
         label: I.intl.string(I.t.NN79Ex),
-        action: G,
+        action: B,
         subtext: I.intl.string(I.t["1u3YPD"])
       })]
     }, "minor-actions"), e.quest.preview && (0, r.jsxs)(a.kSQ, {
       label: "Preview Controls",
-      children: [!H && Y, (0, r.jsx)(a.sNh, {
+      children: [!Y && W, (0, r.jsx)(a.sNh, {
         id: "dismiss",
         label: "Reset Dismissibility",
-        action: P
+        action: w
       }), (0, r.jsx)(a.sNh, {
         id: "enrollment",
         label: "Reset Quest",
-        action: V
+        action: H
       }), (0, r.jsx)(a.sNh, {
         id: "progress",
         label: "Set Random Quest Progress",
-        action: L
+        action: x
       }), (0, r.jsx)(a.sNh, {
         id: "complete",
         label: "Complete Quest",
-        action: C
+        action: R
       }), (0, p.$J)(e.quest) && (0, r.jsxs)(a.sNh, {
         id: "console",
         label: "Console Heartbeat",
@@ -228,11 +229,11 @@ function P(e) {
         }), (0, r.jsx)(a.sNh, {
           id: "start",
           label: "Start heartbeat (cheatmode)",
-          action: Z
+          action: F
         }), (0, r.jsx)(a.sNh, {
           id: "stop",
           label: "Stop heartbeat",
-          action: F
+          action: V
         })]
       }), (0, r.jsx)(a.sNh, {
         id: "copy-quest-id",

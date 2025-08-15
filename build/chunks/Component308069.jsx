@@ -29,7 +29,7 @@ let b = e => {
     useReducedMotion: v,
     isExpanded: C,
     isExpansionAnimationComplete: y
-  } = e, O = (0, u.aM)(), E = s.useCallback(() => {
+  } = e, E = (0, u.aM)(), O = s.useCallback(() => {
     (0, g.openDisclosureModal)(t, {
       content: p.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_DISCLOSURE,
@@ -39,10 +39,10 @@ let b = e => {
     (0, d.nc)(t, {
       content: p.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_GAME_LINK,
-      impressionId: O,
+      impressionId: E,
       sourceQuestContent: p.jn.QUEST_BAR_V2
     })
-  }, [O, t]), T = C && y, w = (0, r.jsx)(l.P3F, {
+  }, [E, t]), T = C && y, w = (0, r.jsx)(l.P3F, {
     onClick: S,
     className: a()(j.clickable, {
       [j.logo]: T
@@ -87,7 +87,7 @@ let b = e => {
       },
       children: [(0, r.jsxs)(l.P3F, {
         className: j.promotedBadge,
-        onClick: E,
+        onClick: O,
         children: [(0, r.jsx)(l.Text, {
           color: "always-white",
           variant: "text-xs/normal",

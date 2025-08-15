@@ -29,7 +29,7 @@ let h = function(e) {
     useReducedMotion: _
   } = e, v = (null == (t = b.userStatus) ? true : t.enrolledAt) != null, {
     percentComplete: C
-  } = (0, l.Rf)(b), y = (0, l.Jf)(b), O = null != y ? y.percentComplete > 0 : C > 0;
+  } = (0, l.Rf)(b), y = (0, l.Jf)(b), E = null != y ? y.percentComplete > 0 : C > 0;
   return (0, r.jsxs)(a.animated.div, {
     "aria-hidden": h && j,
     className: o()(n, x.contentCollapsed, {
@@ -56,7 +56,7 @@ let h = function(e) {
           autoplay: false,
           location: g.dr.QUESTS_BAR,
           sourceQuestContent: c.jn.QUEST_BAR
-        }), O ? (0, r.jsx)(d.Z, {
+        }), E ? (0, r.jsx)(d.Z, {
           className: x.questProgressBar,
           quest: b
         }) : (0, r.jsx)(i.Text, {

@@ -1,7 +1,7 @@
 /** Chunk was on 9885 **/
 /** chunk id: 205511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => O
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -33,15 +33,15 @@ function y(e) {
   })
 }
 
-function O(e) {
+function E(e) {
   let {
     quest: t,
     useReducedMotion: n
   } = e, o = (0, g.n)(), l = (0, j.k3)(t.id, h.jn.QUEST_BAR_V2, h.jn.QUEST_BAR_V2), u = (0, j.g2)({
     useReducedMotion: n
   }), b = (0, p.O5)(), _ = (0, m.aM)(), {
-    errorHints: O,
-    startingConsoleQuest: E,
+    errorHints: E,
+    startingConsoleQuest: O,
     startConsoleQuest: S
   } = (0, x.GI)({
     questId: t.id,
@@ -58,7 +58,7 @@ function O(e) {
     header: T,
     renderBody: w
   } = s.useMemo(() => {
-    let e = O.length > 0,
+    let e = E.length > 0,
       n = t.config.messages.gameTitle;
     return {
       header: e ? v.intl.formatToPlainString(v.t["28Ql29"], {
@@ -67,7 +67,7 @@ function O(e) {
         gameTitle: n
       }),
       renderBody: e ? () => (0, r.jsx)(r.Fragment, {
-        children: O.map((e, n) => {
+        children: E.map((e, n) => {
           if (e.type === i.K.EXPIRED_CREDENTIAL && o) {
             let s = d.Z.getAccount(e.connected_account_id, e.connected_account_type),
               o = (0, f.C9)(e),
@@ -102,7 +102,7 @@ function O(e) {
         })
       })
     }
-  }, [O, t, o, _]);
+  }, [E, t, o, _]);
   return (0, r.jsxs)("div", {
     className: C.microphoneUnit,
     children: [(0, r.jsxs)("div", {
@@ -110,7 +110,7 @@ function O(e) {
       children: [(0, r.jsx)(c.Mgn, {
         size: "custom",
         color: "currentColor",
-        className: 0 === O.length ? C.warningCircle : C.errorCircle,
+        className: 0 === E.length ? C.warningCircle : C.errorCircle,
         width: 16,
         height: 16
       }), (0, r.jsx)(c.Text, {
@@ -118,22 +118,22 @@ function O(e) {
         children: T
       }), (0, r.jsx)(c.P3F, {
         className: a()(C.microphoneUnitRefreshIconWrapper, {
-          [C.disabled]: E
+          [C.disabled]: O
         }),
         onClick: () => S(),
         children: u.render()
       })]
     }), (0, r.jsxs)("div", {
       className: a()({
-        [C.opacity_50]: E
+        [C.opacity_50]: O
       }),
-      children: [w(), 0 === O.length ? null : (0, r.jsx)(y, {
+      children: [w(), 0 === E.length ? null : (0, r.jsx)(y, {
         children: l
       })]
     })]
   })
 }
-let E = function(e) {
+let O = function(e) {
   let {
     quest: t,
     taskDetails: n
@@ -207,7 +207,7 @@ let E = function(e) {
   return (0, r.jsx)(_.ZP, {
     heading: v.intl.string(v.t.UPWlJi),
     steps: c,
-    children: d && !p && !m && (0, r.jsx)(O, {
+    children: d && !p && !m && (0, r.jsx)(E, {
       useReducedMotion: o,
       quest: t
     })

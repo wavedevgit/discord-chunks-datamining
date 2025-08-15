@@ -66,7 +66,7 @@ function k(e) {
   }), D = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), V = (0, l.e7)([p.Z], () => p.Z.hasLayers()), M = s.useRef(null), L = s.useMemo(() => (0, f.q8)(o), [o]), Z = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, W = (0, u.Z)(Z), U = (null == (n = o.userStatus) ? true : n.completedAt) != null, H = (0, u.Z)(U), {
     hasError: F,
     isLoading: z
-  } = (0, E.d7)(), X = s.useContext(P.T) || k && I && !z && !q, K = s.useRef(X), Y = (0, w.B)(o, X && !F), G = s.useRef(false), J = s.useRef(false), $ = _.H.useConfig({
+  } = (0, O.d7)(), X = s.useContext(P.T) || k && I && !z && !q, K = s.useRef(X), Y = (0, w.B)(o, X && !F), G = s.useRef(false), J = s.useRef(false), $ = _.H.useConfig({
     location: A.dr.QUESTS_BAR
   }).enabled && U, [ee, et] = s.useState(false), [en, er] = s.useState(false), [es, eo] = s.useState(true), [ea, ei] = s.useState(true), [el, ec] = s.useState(Y.preEnrollmentExpandedHeight), eu = s.useRef(null), ed = s.useCallback(e => {
     $ || (eo(false), er(e))
@@ -132,7 +132,7 @@ function k(e) {
   let eC = Z ? A.XZ : A.R4,
     [{
       expansionSpring: ey
-    }, eO] = (0, c.q_F)(() => ({
+    }, eE] = (0, c.q_F)(() => ({
       from: {
         expansionSpring: 0
       },
@@ -145,13 +145,13 @@ function k(e) {
       }
     }));
   s.useEffect(() => {
-    eO({
+    eE({
       expansionSpring: +!!en,
       immediate: D
     })
-  }, [en, eO, D]);
+  }, [en, eE, D]);
   let {
-    visibilitySpring: eE
+    visibilitySpring: eO
   } = (0, c.q_F)({
     from: {
       visibilitySpring: 0
@@ -172,7 +172,7 @@ function k(e) {
     }
   });
   s.useEffect(() => {
-    L && (0, O.loadVideoQuestModal)()
+    L && (0, E.loadVideoQuestModal)()
   }, [L]), s.useLayoutEffect(() => {
     U && !H && Y.canCollapseOnBlur && ep()
   }, [U, em, Y.canCollapseOnBlur, ep, H]), s.useEffect(() => {
@@ -246,7 +246,7 @@ function k(e) {
           }),
           style: {
             color: eS ? true : o.config.colors.secondary,
-            height: eE.to({
+            height: eO.to({
               range: [0, 1],
               output: [0, !Y.canCollapseOnBlur && en ? el : eT]
             })

@@ -39,7 +39,8 @@ let a = e => ({
   taskConfigV2: (0, i._)(e.task_config_v2),
   rewardsConfig: (0, r.v)(e.rewards_config),
   videoMetadata: (0, o.FG)(e.video_metadata),
-  cosponsorMetadata: s(e.cosponsor_metadata)
+  cosponsorMetadata: s(e.cosponsor_metadata),
+  sharePolicy: e.share_policy
 });
 
 function s(e) {
