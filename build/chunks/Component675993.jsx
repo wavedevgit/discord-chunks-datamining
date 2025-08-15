@@ -2,14 +2,13 @@
 /** chunk id: 675993, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js"), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk115130 = require("./115130.js"),
   Chunk147865 = require("./147865.js"),
@@ -32,7 +31,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk208733 = require("./208733.js"),
   Chunk430864 = require("./430864.js");
 
-function P(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,148 +40,150 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      P(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
 }
-let D = 1,
-  L = 2e3;
+let w = 2,
+  D = 2e3;
 
-function x(e) {
+function L(e) {
   let {
     context: t,
     application: n,
     videoUrl: o,
     imageCoverUrl: l,
-    sectionName: c,
-    hasCommands: d
+    sectionName: u,
+    hasCommands: f
   } = e, _ = i.useMemo(() => {
     var e;
-    return null != (e = (0, O.jD)(n)) ? e : ""
-  }, [n]), p = (0, s.e7)([u.Z], () => u.Z.inDevModeForApplication(n.id)), {
+    return null != (e = (0, y.jD)(n)) ? e : ""
+  }, [n]), p = (0, s.e7)([c.Z], () => c.Z.inDevModeForApplication(n.id)), {
     isSlideReady: h
-  } = (0, v.hH)(), [m, E] = i.useState(false);
+  } = (0, O.hH)(), [g, E] = i.useState(false);
   i.useEffect(() => {
     h && E(true)
   }, [h]);
   let b = null != o;
   return (0, r.jsxs)("div", {
-    className: C.container,
-    children: [b ? (0, r.jsxs)("div", {
-      className: C.videoContainer,
-      children: [m ? (0, r.jsx)(g.Z, {
-        className: a()(C.videoCover, C.video),
-        loop: true,
-        muted: true,
-        autoPlay: true,
-        src: o,
-        poster: l
-      }) : null, (0, r.jsx)("img", {
-        className: C.videoCover,
-        src: l,
-        "aria-label": N.intl.string(N.t.X4IxWF)
+    className: N.container,
+    children: [(0, r.jsxs)("div", {
+      children: [b ? (0, r.jsxs)("div", {
+        className: N.videoContainer,
+        children: [g ? (0, r.jsx)(m.Z, {
+          className: a()(N.videoCover, N.video),
+          loop: true,
+          muted: true,
+          autoPlay: true,
+          src: o,
+          poster: l
+        }) : null, (0, r.jsx)("img", {
+          className: N.videoCover,
+          src: l,
+          "aria-label": A.intl.string(A.t.X4IxWF)
+        })]
+      }) : null, (0, r.jsxs)("div", {
+        className: b ? N.overviewContainerWithVideo : N.overviewContainerNoVideo,
+        children: [(0, r.jsx)(M, {
+          application: n
+        }), (0, r.jsx)(j, {
+          application: n
+        }), _.length > 0 ? (0, r.jsx)(G, {
+          description: _
+        }) : null, p ? (0, r.jsx)("div", {
+          className: N.developerShelfControlsContainer,
+          children: (0, r.jsx)(d.W, {
+            hideSearch: true,
+            className: N.developerShelfControls
+          })
+        }) : null, (0, r.jsx)(U, {
+          context: t,
+          application: n,
+          sectionName: u,
+          isDeveloperOfThisApp: p,
+          hasCommands: f
+        })]
       })]
-    }) : null, (0, r.jsxs)("div", {
-      className: b ? C.overviewContainerWithVideo : C.overviewContainerNoVideo,
-      children: [(0, r.jsx)(j, {
-        application: n
-      }), (0, r.jsx)(k, {
-        application: n
-      }), _.length > 0 ? (0, r.jsx)(B, {
-        description: _
-      }) : null, p ? (0, r.jsx)("div", {
-        className: C.developerShelfControlsContainer,
-        children: (0, r.jsx)(f.W, {
-          hideSearch: true,
-          className: C.developerShelfControls
-        })
-      }) : null, (0, r.jsx)(G, {
-        context: t,
-        application: n,
-        sectionName: c,
-        isDeveloperOfThisApp: p,
-        hasCommands: d
-      })]
-    }), (0, r.jsx)(M, {
+    }), (0, r.jsx)(x, {
       application: n
     })]
   })
 }
 
-function M(e) {
+function x(e) {
   let {
     application: t
-  } = e, n = (0, O.Cb)(t), i = (0, O.Hu)(t);
+  } = e, n = (0, y.Cb)(t), i = (0, y.Hu)(t);
   return n || i ? (0, r.jsxs)("div", {
-    className: C.monetizationDisclosureContainerStyle,
+    className: N.monetizationDisclosureContainerStyle,
     children: [n ? (0, r.jsxs)("div", {
-      className: C.monetizationDisclosureStyle,
-      children: [(0, r.jsx)(c.EOn, {
+      className: N.monetizationDisclosureStyle,
+      children: [(0, r.jsx)(l.EOn, {
         size: "sm",
-        color: c.TVs.colors.INTERACTIVE_MUTED
-      }), (0, r.jsx)(c.Text, {
+        color: l.TVs.colors.INTERACTIVE_MUTED
+      }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: N.intl.string(N.t["8z5B2d"])
+        children: A.intl.string(A.t["8z5B2d"])
       })]
     }) : null, i ? (0, r.jsxs)("div", {
-      className: C.monetizationDisclosureStyle,
-      children: [(0, r.jsx)(c.uMN, {
+      className: N.monetizationDisclosureStyle,
+      children: [(0, r.jsx)(l.uMN, {
         size: "sm",
-        color: c.TVs.colors.INTERACTIVE_MUTED
-      }), (0, r.jsx)(c.Text, {
+        color: l.TVs.colors.INTERACTIVE_MUTED
+      }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: N.intl.string(N.t["5khEk5"])
+        children: A.intl.string(A.t["5khEk5"])
       })]
     }) : null]
   }) : null
 }
 
-function j(e) {
+function M(e) {
   var t;
   let {
     application: n
-  } = e, i = (0, O.BQ)(n) ? n.name : null != (t = (0, O.$d)(n)) ? t : "", o = (0, O.vJ)(n);
+  } = e, i = (0, y.BQ)(n) ? n.name : null != (t = (0, y.$d)(n)) ? t : "", o = (0, y.vJ)(n);
   return (0, r.jsxs)("div", {
-    className: C.titleContainer,
-    children: [(0, r.jsx)(c.X6q, {
+    className: N.titleContainer,
+    children: [(0, r.jsx)(l.X6q, {
       variant: "heading-xl/extrabold",
       lineClamp: 1,
       children: i
     }), o ? (0, r.jsx)("div", {
-      className: C.partnerLabelContainer,
-      children: (0, r.jsx)(c.Text, {
+      className: N.partnerLabelContainer,
+      children: (0, r.jsx)(l.Text, {
         variant: "text-xs/medium",
         color: "text-default",
-        children: N.intl.string(N.t.LO4f0N)
+        children: A.intl.string(A.t.LO4f0N)
       })
     }) : null]
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     application: t
   } = e, n = i.useMemo(() => {
     var e;
-    return (0, O.BQ)(t) && null != (e = null == t ? true : t.tags) ? e : []
+    return (0, y.BQ)(t) && null != (e = null == t ? true : t.tags) ? e : []
   }, [t]);
-  return (0, O.ye)(t) ? (0, r.jsxs)("div", {
-    className: C.tagsContainer,
-    children: [(0, r.jsx)(U, {
+  return (0, y.ye)(t) ? (0, r.jsxs)("div", {
+    className: N.tagsContainer,
+    children: [(0, r.jsx)(k, {
       application: t
     }), n.map((e, t) => (0, r.jsx)("div", {
-      className: C.tagContainer,
-      children: (0, r.jsx)(c.Text, {
+      className: N.tagContainer,
+      children: (0, r.jsx)(l.Text, {
         variant: "text-sm/semibold",
         color: "interactive-normal",
         children: e
@@ -191,146 +192,136 @@ function k(e) {
   }) : null
 }
 
-function U(e) {
+function k(e) {
   var t;
   let {
     application: n
   } = e;
-  if (!(0, O.ye)(n)) return null;
-  let i = null != (t = (0, O.BQ)(n) ? n instanceof b.ZP ? n.maxParticipants : n.max_participants : 0) ? t : 0;
+  if (!(0, y.ye)(n)) return null;
+  let i = null != (t = (0, y.BQ)(n) ? n instanceof E.ZP ? n.maxParticipants : n.max_participants : 0) ? t : 0;
   return (0, r.jsxs)("div", {
-    className: C.tagContainer,
-    children: [(0, r.jsx)(c.BFJ, {
+    className: N.tagContainer,
+    children: [(0, r.jsx)(l.BFJ, {
       size: "xs",
-      color: c.TVs.colors.INTERACTIVE_NORMAL
-    }), (0, r.jsx)(c.Text, {
+      color: l.TVs.colors.INTERACTIVE_NORMAL
+    }), (0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
       color: "interactive-normal",
-      children: (0, d.lY)(i)
+      children: (0, u.lY)(i)
     })]
   })
 }
 
-function G(e) {
+function U(e) {
   var t;
   let {
     context: n,
     application: o,
     sectionName: a,
     hasCommands: s,
-    isDeveloperOfThisApp: u
-  } = e, d = (0, h.Fs)(n, o.id), f = (0, m.q)(o.id), g = null == f || null == (t = f.bot) ? true : t.id, E = (0, p.Z)({
+    isDeveloperOfThisApp: c
+  } = e, u = (0, p.Fs)(n, o.id), d = (0, h.q)(o.id), m = null == d || null == (t = d.bot) ? true : t.id, g = (0, _.Z)({
     context: n,
     application: o,
-    botUserId: g
+    botUserId: m
   }), {
-    analyticsLocations: b
-  } = (0, _.ZP)();
-  if (i.useEffect(() => {
-      if (!(0, O.BQ)(o) || !(0, O.ye)(o)) return;
-      let e = setTimeout(() => {
-        (null == d || null == g) && y.default.track(A.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
-          application_id: o.id,
-          is_primary_entry_point_command_non_null: null != d,
-          is_bot_user_id_non_null: null != g,
-          show_try_it_out_button: E
-        })
-      }, L);
-      return () => clearTimeout(e)
-    }, [o, d, g, E]), !(0, O.BQ)(o) || !(0, O.ye)(o)) return null;
-  let v = l.Ph.MAX;
-  return null != d && null != g ? (0, r.jsxs)("div", {
-    className: C.entrypointContainer,
-    children: [(0, r.jsx)("div", {
-      className: C.entryPointContainerFlexChild,
-      children: (0, r.jsx)(T.Z, {
-        context: n,
-        application: o,
-        sectionName: a,
-        primaryEntryPointCommand: d,
-        buttonSize: v
+    analyticsLocations: E
+  } = (0, f.ZP)();
+  return (i.useEffect(() => {
+    if (!(0, y.BQ)(o) || !(0, y.ye)(o)) return;
+    let e = setTimeout(() => {
+      (null == u || null == m) && b.default.track(S.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
+        application_id: o.id,
+        is_primary_entry_point_command_non_null: null != u,
+        is_bot_user_id_non_null: null != m,
+        show_try_it_out_button: g
       })
-    }), E && null != g ? (0, r.jsx)("div", {
-      className: C.entryPointContainerFlexChild,
-      children: (0, r.jsx)(S.Z, {
-        botUserId: g,
-        applicationId: o.id,
-        buttonSize: v,
-        analyticsLocations: b
-      })
+    }, D);
+    return () => clearTimeout(e)
+  }, [o, u, m, g]), (0, y.BQ)(o) && (0, y.ye)(o)) ? null != u && null != m ? (0, r.jsxs)(l.hE2, {
+    fullWidth: true,
+    children: [(0, r.jsx)(I.Z, {
+      context: n,
+      application: o,
+      sectionName: a,
+      primaryEntryPointCommand: u
+    }), g && null != m ? (0, r.jsx)(T.Z, {
+      botUserId: m,
+      applicationId: o.id,
+      analyticsLocations: E
     }) : null]
-  }) : u && !s && (0, O.ye)(o) ? (0, r.jsx)(c.Wn, {
-    className: C.primaryEntryPointWarningMessage,
-    messageType: c.QYI.WARNING,
-    children: N.intl.format(N.t["s/3hjI"], {})
-  }) : null
+  }) : c && !s && (0, y.ye)(o) ? (0, r.jsx)(l.Wn, {
+    className: N.primaryEntryPointWarningMessage,
+    messageType: l.QYI.WARNING,
+    children: A.intl.format(A.t["s/3hjI"], {})
+  }) : null : null
 }
 
-function B(e) {
+function G(e) {
   let {
     description: t
   } = e, [n, o] = i.useState(true);
   i.useLayoutEffect(() => o(false), []);
-  let a = i.useMemo(() => (0, E.parseBioReact)(t), [t]),
+  let a = i.useMemo(() => (0, g.parseBioReact)(t), [t]),
     {
       ref: s,
-      lineHeight: l,
+      lineHeight: c,
       lineCount: u
-    } = Z(),
+    } = B(),
     d = i.useMemo(() => {
-      if (null == l || null == u) return {
+      if (null == c || null == u) return {
         key: 0
       };
-      let e = l * u;
+      let e = c * u;
       return {
         key: 1,
-        minHeightOverride: Math.min(e, D * l),
+        minHeightOverride: Math.min(e, w * c),
         maxHeightOverride: e
       }
-    }, [u, l]),
+    }, [u, c]),
     {
       ref: f,
       isTransitioning: _,
       onTransitionEnd: p
-    } = (0, I.Z)(w({
+    } = (0, v.Z)(P({
       isExpanded: n
     }, d)),
     h = n || _;
   return (0, r.jsxs)("div", {
-    className: C.descriptionContainer,
+    className: N.descriptionContainer,
     children: [(0, r.jsx)("div", {
       ref: f,
-      className: C.overflowHidden,
+      className: N.overflowHidden,
       onTransitionEnd: p,
-      children: (0, r.jsx)(c.Text, {
+      children: (0, r.jsx)(l.Text, {
         ref: s,
-        className: R.markup,
+        className: C.markup,
         variant: "text-sm/medium",
-        lineClamp: h ? true : D,
+        lineClamp: h ? true : w,
         style: {
           maxHeight: h ? true : d.minHeightOverride
         },
         children: a
       })
-    }), null != u && u > D ? (0, r.jsxs)(c.P3F, {
-      className: C.expandableDescriptionClickable,
+    }), null != u && u > w ? (0, r.jsxs)(l.P3F, {
+      className: N.expandableDescriptionClickable,
       onClick: () => o(e => !e),
-      children: [(0, r.jsx)(c.Text, {
+      children: [(0, r.jsx)(l.Text, {
         variant: "text-sm/semibold",
         color: "text-brand",
-        children: h ? N.intl.string(N.t.u4YJ8v) : N.intl.string(N.t["N/tajI"])
-      }), h ? (0, r.jsx)(c.u04, {
+        children: h ? A.intl.string(A.t.u4YJ8v) : A.intl.string(A.t["N/tajI"])
+      }), h ? (0, r.jsx)(l.u04, {
         size: "sm",
-        color: c.TVs.colors.TEXT_BRAND
-      }) : (0, r.jsx)(c.CJ0, {
+        color: l.TVs.colors.TEXT_BRAND
+      }) : (0, r.jsx)(l.CJ0, {
         size: "sm",
-        color: c.TVs.colors.TEXT_BRAND
+        color: l.TVs.colors.TEXT_BRAND
       })]
     }) : null]
   })
 }
 
-function Z() {
+function B() {
   let e = Chunk73800.useRef(null),
     [t, n] = Chunk73800.useState(null),
     [r, o] = Chunk73800.useState(null);

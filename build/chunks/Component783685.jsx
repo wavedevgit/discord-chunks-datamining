@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
   Chunk827498 = require("./827498.js"),
   Chunk915346 = require("./915346.js"),
@@ -17,29 +17,28 @@ function d(e) {
   let {
     botUserId: t,
     applicationId: n,
-    buttonSize: d,
-    analyticsLocations: f
-  } = e, [_, p] = i.useState(false), h = i.useRef(null), m = i.useCallback(async () => {
+    analyticsLocations: d
+  } = e, [f, _] = i.useState(false), p = i.useRef(null), h = i.useCallback(async () => {
     a.default.track(c.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
       application_id: n,
       button_action: s._y.OPEN_APP_DM
-    }), p(true);
+    }), _(true);
     try {
       await (0, l.W)({
         appId: n,
         botId: t,
-        analyticsLocations: f
+        analyticsLocations: d
       })
     } catch (e) {}
-    clearTimeout(h.current), p(false)
-  }, [t, n, f]);
-  return (0, r.jsx)(o.zx, {
+    clearTimeout(p.current), _(false)
+  }, [t, n, d]);
+  return (0, r.jsx)(o.zxk, {
     type: "submit",
-    size: d,
-    color: o.zx.Colors.PRIMARY,
-    submitting: _,
-    onClick: m,
+    size: "md",
+    variant: "secondary",
+    loading: f,
+    onClick: h,
     "aria-label": u.intl.string(u.t.AUM8hY),
-    children: u.intl.string(u.t.AUM8hY)
+    text: u.intl.string(u.t.AUM8hY)
   })
 }

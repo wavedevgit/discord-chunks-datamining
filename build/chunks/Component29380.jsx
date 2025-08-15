@@ -2,11 +2,10 @@
 /** chunk id: 29380, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => A
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk542094 = require("./542094.js"),
   Chunk895924 = require("./895924.js"),
@@ -23,7 +22,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk682964 = require("./682964.js");
 
-function O(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,20 +31,20 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,15 +55,15 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = A(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -72,7 +71,7 @@ function S(e, t) {
   return i
 }
 
-function A(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -80,75 +79,74 @@ function A(e, t) {
   return i
 }
 
-function N(e) {
+function A(e) {
   let {
     context: t,
     application: n,
-    sectionName: O,
-    primaryEntryPointCommand: I,
-    buttonSize: A = o.Ph.MEDIUM
-  } = e, N = i.useId(), C = i.useCallback(() => {
-    d.yT(_.ti.ACTIVITY)
-  }, []), R = i.useCallback(() => {
-    f.Z.shouldShowModal() && C()
-  }, [C]), {
-    submitting: P,
-    wasSubmitting: w
-  } = (0, m.Z)({
+    sectionName: y,
+    primaryEntryPointCommand: v
+  } = e, S = i.useId(), A = i.useCallback(() => {
+    u.yT(f.ti.ACTIVITY)
+  }, []), N = i.useCallback(() => {
+    d.Z.shouldShowModal() && A()
+  }, [A]), {
+    submitting: C,
+    wasSubmitting: R
+  } = (0, h.Z)({
     applicationId: n.id,
     context: t,
-    launchingComponentId: N,
-    onSubmissionComplete: C
-  }), [D, L] = i.useState(false), x = (0, s.Qv)({
+    launchingComponentId: S,
+    onSubmissionComplete: A
+  }), [P, w] = i.useState(false), D = (0, a.Qv)({
     applicationId: n.id,
     context: t
-  }), M = i.useMemo(() => (0, h.XZ)(I.displayName), [I.displayName]), {
-    onActivityItemSelected: j,
-    buttonColor: k,
-    buttonText: U
-  } = (0, g.P7)({
+  }), L = i.useMemo(() => (0, p.XZ)(v.displayName), [v.displayName]), {
+    onActivityItemSelected: x,
+    buttonVariant: M,
+    buttonText: j
+  } = (0, m.P7)({
     context: t,
     application: n,
-    location: l.Vh.APP_LAUNCHER_APPLICATION_VIEW,
-    sectionName: O,
-    commandName: M,
-    autoDismissOnClick: x === s.JS.LEAVE || (0, c.g)(n),
-    launchingComponentId: N,
-    submitting: null != w ? w : P,
-    onConfirmActivityLaunchChecksAlertOpen: R
+    location: s.Vh.APP_LAUNCHER_APPLICATION_VIEW,
+    sectionName: y,
+    commandName: L,
+    autoDismissOnClick: D === a.JS.LEAVE || (0, l.g)(n),
+    launchingComponentId: S,
+    submitting: null != R ? R : C,
+    onConfirmActivityLaunchChecksAlertOpen: N
   }), {
-    disabled: G,
-    reason: B
-  } = (0, p.Z)({
+    disabled: k,
+    reason: U
+  } = (0, _.Z)({
     context: t,
     application: n,
-    activityAction: x
+    activityAction: D
   });
-  return (0, r.jsx)(a.ua7, {
-    shouldShow: null != B,
-    tooltipContentClassName: y.tooltipContent,
-    text: B,
+  return (0, r.jsx)(o.ua7, {
+    shouldShow: null != U,
+    tooltipContentClassName: b.tooltipContent,
+    text: U,
     children: e => {
       var {
         onClick: t
-      } = e, i = S(e, ["onClick"]);
-      return (0, r.jsx)(o.zx, T(v({}, i), {
+      } = e, i = T(e, ["onClick"]);
+      return (0, r.jsx)(o.zxk, I(O({}, i), {
         type: "submit",
-        size: A,
-        color: k,
-        disabled: G,
-        submitting: D,
+        size: "md",
+        variant: M,
+        disabled: k,
+        loading: P,
         onClick: () => {
-          L(true), j(), null == t || t(), u.default.track(E.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+          w(true), x(), null == t || t(), c.default.track(g.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
             application_id: n.id,
-            button_action: _._y.USE_APP_COMMAND
+            button_action: f._y.USE_APP_COMMAND
           })
         },
-        "aria-label": b.intl.formatToPlainString(b.t["XjP/R0"], {
-          buttonText: U,
+        "aria-label": E.intl.formatToPlainString(E.t["XjP/R0"], {
+          buttonText: j,
           applicationName: n.name
         }),
-        children: U
+        text: j
       }))
     }
   })
