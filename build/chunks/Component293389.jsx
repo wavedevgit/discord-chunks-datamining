@@ -77,7 +77,7 @@ function w(e) {
     label: null != e.name ? e.name : ""
   }));
   return (0, i.jsxs)(d.VqE, {
-    className: a()(I.addGamePopout, N.elevationBorderHigh),
+    className: a()(N.addGamePopout, I.elevationBorderHigh),
     "aria-label": T.intl.string(T.t.GTCx0t),
     children: [(0, i.jsx)(d.VcW, {
       placeholder: T.intl.string(T.t.XqMe3N),
@@ -95,9 +95,9 @@ function w(e) {
     }), (0, i.jsx)(d.$i$, {
       className: a()(A.marginTop8, A.marginBottom8)
     }), (0, i.jsxs)("div", {
-      className: a()(I.actions, y.horizontal),
+      className: a()(N.actions, y.horizontal),
       children: [(0, i.jsx)(c.zx, {
-        className: I.cancelButton,
+        className: N.cancelButton,
         look: c.iL.LINK,
         color: c.Tt.PRIMARY,
         onClick: t,
@@ -124,22 +124,22 @@ function k(e) {
     parentGame: C
   } = e, O = (0, l.cj)([g.ZP, _.Z, j.Z], () => (0, g.FZ)(t, g.ZP, _.Z, j.Z)), {
     canToggleDetection: v,
-    isCurrentGameDetectionEnabled: N
+    isCurrentGameDetectionEnabled: I
   } = (0, l.cj)([g.ZP], () => ({
     canToggleDetection: null == C || g.ZP.isDetectionEnabled(C),
     isCurrentGameDetectionEnabled: g.ZP.isDetectionEnabled(O)
   })), A = (0, l.e7)([g.ZP], () => g.ZP.getVisibleGame()), [D, w] = r.useState(false), L = r.useMemo(() => (0, x.le)(O) ? b ? O.gameName : T.intl.formatToPlainString(T.t.G6BGd3, {
     subgameName: O.gameName
   }) : O.name, [O, b]), [B, M] = r.useState(null != L ? L : "???"), U = a()(y.flexCenter, {
-    [I.game]: !s,
-    [I.activeGame]: s,
-    [I.nowPlaying]: null != O && s,
-    [I.subgame]: b,
-    [I.gameHasSubgame]: null != h && h.length > 0
+    [N.game]: !s,
+    [N.activeGame]: s,
+    [N.nowPlaying]: null != O && s,
+    [N.subgame]: b,
+    [N.gameHasSubgame]: null != h && h.length > 0
   });
 
   function V() {
-    null != h && h.length > 0 && N ? (0, d.ZDy)(async () => {
+    null != h && h.length > 0 && I ? (0, d.ZDy)(async () => {
       let {
         Modal: e
       } = await Promise.resolve().then(n.bind(n, 82659));
@@ -181,16 +181,16 @@ function k(e) {
     children: [(0, i.jsxs)("div", {
       className: U,
       children: [(0, i.jsxs)("div", {
-        className: a()(I.gameNameLastPlayed, y.vertical),
+        className: a()(N.gameNameLastPlayed, y.vertical),
         children: [O.verified && !c ? (0, i.jsxs)("div", {
-          className: I.detectedApplication,
+          className: N.detectedApplication,
           children: [(0, i.jsx)("div", {
-            className: I.gameName,
+            className: N.gameName,
             children: L
           }), (0, i.jsx)(d.ua7, {
             text: T.intl.string(T.t["4PJP5u"]),
             children: e => (0, i.jsx)(f.Z, R(P({
-              className: I.gameVerifiedIcon,
+              className: N.gameVerifiedIcon,
               size: 18,
               color: o.Z.unsafe_rawColors.BRAND_500.css
             }, e), {
@@ -203,7 +203,7 @@ function k(e) {
             }))
           })]
         }) : (0, i.jsx)("input", {
-          className: a()(I.gameName, I.gameNameInput),
+          className: a()(N.gameName, N.gameNameInput),
           type: "text",
           maxLength: 128,
           value: B,
@@ -222,7 +222,7 @@ function k(e) {
           return s || F ? e = T.intl.string(T.t.VbV5dn) : null != t && "" !== t && (e = T.intl.format(T.t.gGeOEx, {
             when: t
           })), (0, i.jsx)("div", {
-            className: I.lastPlayed,
+            className: N.lastPlayed,
             children: (0, i.jsx)(p.Z, {
               hoverText: null != n && "" !== n ? n.toUpperCase() : "",
               children: e
@@ -230,7 +230,7 @@ function k(e) {
           })
         }()]
       }), c || D ? null : (0, i.jsx)("div", {
-        className: a()(y.flexCenter, y.noWrap, y.justifyBetween, I.toggleContainer),
+        className: a()(y.flexCenter, y.noWrap, y.justifyBetween, N.toggleContainer),
         children: (0, i.jsx)(d.ua7, {
           text: T.intl.string(T.t["y0B+lp"]),
           children: e => {
@@ -240,15 +240,15 @@ function k(e) {
             } = e;
             return (0, i.jsx)(d.P3F, {
               "aria-label": T.intl.string(T.t["y0B+lp"]),
-              className: I.toggleIcon,
+              className: N.toggleIcon,
               onClick: G,
               onMouseEnter: t,
               onMouseLeave: n,
               children: (0, i.jsx)(d.U65, {
                 size: "md",
                 color: "currentColor",
-                className: I.toggleIconOn,
-                colorClass: I.fill
+                className: N.toggleIconOn,
+                colorClass: N.fill
               })
             })
           }
@@ -259,16 +259,16 @@ function k(e) {
         } = O, t = e && v ? (0, i.jsx)(d.tEF, {
           size: "md",
           color: "currentColor",
-          className: I.toggleIconOn,
-          colorClass: I.fill
+          className: N.toggleIconOn,
+          colorClass: N.fill
         }) : (0, i.jsx)(d.kZF, {
           size: "md",
           color: "currentColor",
-          className: v ? I.toggleIconOff : I.toggleIconInactive,
-          colorClass: I.fill
+          className: v ? N.toggleIconOff : N.toggleIconInactive,
+          colorClass: N.fill
         });
         return (0, i.jsx)("div", {
-          className: a()(y.flexCenter, y.noWrap, y.justifyBetween, I.toggleContainer),
+          className: a()(y.flexCenter, y.noWrap, y.justifyBetween, N.toggleContainer),
           children: (0, i.jsx)(d.ua7, {
             text: T.intl.string(T.t.QmitzM),
             children: e => {
@@ -278,7 +278,7 @@ function k(e) {
               } = e;
               return v ? (0, i.jsx)(d.P3F, {
                 "aria-label": T.intl.string(T.t.QmitzM),
-                className: I.toggleIcon,
+                className: N.toggleIcon,
                 onClick: V,
                 onMouseEnter: n,
                 onMouseLeave: r,
@@ -295,21 +295,21 @@ function k(e) {
         } = O, n = e ? (0, i.jsx)(d.pzj, {
           size: "md",
           color: "currentColor",
-          className: I.toggleIconOn,
-          colorClass: I.fill
+          className: N.toggleIconOn,
+          colorClass: N.fill
         }) : (0, i.jsx)(d.o8v, {
           size: "md",
           color: "currentColor",
-          className: I.toggleIconOff,
-          colorClass: I.fill
+          className: N.toggleIconOff,
+          colorClass: N.fill
         }), r = t ? (0, i.jsx)(d.ua7, {
           text: T.intl.string(T.t.Vfw2Ly),
           children: e => (0, i.jsx)("i", P({
-            className: I.overlayWarningIcon
+            className: N.overlayWarningIcon
           }, e))
         }) : null;
         return (0, i.jsxs)("div", {
-          className: a()(y.flexCenter, y.noWrap, y.justifyBetween, I.toggleContainer),
+          className: a()(y.flexCenter, y.noWrap, y.justifyBetween, N.toggleContainer),
           children: [r, (0, i.jsx)(d.ua7, {
             text: T.intl.string(T.t["1+O+Tk"]),
             children: t => {
@@ -319,7 +319,7 @@ function k(e) {
               } = t;
               return (0, i.jsx)(d.P3F, {
                 "aria-label": T.intl.string(T.t["1+O+Tk"]),
-                className: I.toggleIcon,
+                className: N.toggleIcon,
                 onClick: () => {
                   var t;
                   return t = !e, void u.Z.toggleOverlay(O, t, t)
@@ -332,7 +332,7 @@ function k(e) {
           })]
         })
       }(), s && !c || H ? null : (0, i.jsx)(m.Z, {
-        className: I.removeGame,
+        className: N.removeGame,
         onClick: function() {
           u.Z.deleteEntry(O), null == h || h.forEach(e => {
             u.Z.deleteEntry(e)
@@ -340,7 +340,7 @@ function k(e) {
         }
       })]
     }), null != h && h.length > 0 && !s && (0, i.jsx)("div", {
-      className: I.subgameContainer,
+      className: N.subgameContainer,
       children: h.map((e, t) => (0, i.jsxs)(r.Fragment, {
         children: [(0, i.jsx)(k, {
           rawGame: e,
@@ -348,7 +348,7 @@ function k(e) {
           isSubgame: true,
           parentGame: O
         }), t !== h.length - 1 && (0, i.jsx)("div", {
-          className: I.border
+          className: N.border
         })]
       }, (0, g.rH)(e)))
     })]
@@ -416,7 +416,7 @@ let M = (0, Chunk251625.oH)(function() {
         nowPlaying: true,
         subgames: o.id === b.eB ? p : true
       }, (0, g.rH)(o)) : (0, i.jsx)(L, {}), (0, i.jsxs)("div", {
-        className: a()(I.nowPlayingAdd, A.marginReset, A.marginTop8, A.marginBottom20),
+        className: a()(N.nowPlayingAdd, A.marginReset, A.marginTop8, A.marginBottom20),
         children: [(0, i.jsx)("span", {
           children: T.intl.string(T.t.xwhoqK)
         }), (0, i.jsx)(d.yRy, {
@@ -446,10 +446,10 @@ let M = (0, Chunk251625.oH)(function() {
       }) : (0, i.jsxs)(d.hjN, {
         className: A.marginTop40,
         children: [(0, i.jsx)(d.vwX, {
-          className: I.addedGamesTitle,
+          className: N.addedGamesTitle,
           children: T.intl.string(T.t.jCOdv7)
         }), (0, i.jsx)(d.R94, {
-          className: I.addedGamesDescription,
+          className: N.addedGamesDescription,
           type: d.geA.DESCRIPTION,
           children: T.intl.format(T.t.KPA3m5, {
             igdbLink: "https://www.igdb.com/about"

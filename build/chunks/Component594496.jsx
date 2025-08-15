@@ -120,7 +120,7 @@ function D(e) {
     };
   return (0, i.jsxs)("div", {
     className: A.sectionsContainer,
-    children: [(0, i.jsx)(I.Z, {
+    children: [(0, i.jsx)(N.Z, {
       errors: null != (r = null == F ? true : F.nick) ? r : null == Y ? true : Y.nick,
       username: O.ZP.getName(k),
       pendingNick: B,
@@ -134,7 +134,7 @@ function D(e) {
       },
       pendingPronouns: V,
       currentPronouns: et
-    }, "pronouns"), (0, i.jsxs)(N.Z, {
+    }, "pronouns"), (0, i.jsxs)(I.Z, {
       user: k,
       showOverlay: !X,
       children: [(0, i.jsx)(m.Z, {

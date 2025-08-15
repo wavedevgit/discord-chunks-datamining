@@ -76,7 +76,7 @@ function D(e) {
   let {
     displayType: t
   } = e, n = r.useCallback(() => {
-    (0, o.showToast)((0, o.createToast)(y.intl.string(N.default.Wu8BKy), o.ToastType.FAILURE))
+    (0, o.showToast)((0, o.createToast)(y.intl.string(I.default.Wu8BKy), o.ToastType.FAILURE))
   }, []), s = (0, x.Z)(), l = (0, f.ws)(t), c = (0, f.C7)(t), {
     loadMore: u,
     isMoreLoading: g
@@ -89,7 +89,7 @@ function D(e) {
   }, [t, u]);
   a()(b, "No text for action type");
   let S = b.sectionHeader(c),
-    I = r.useCallback(e => {
+    N = r.useCallback(e => {
       let {
         row: t
       } = e, n = l[t];
@@ -123,7 +123,7 @@ function D(e) {
       style: {
         maxHeight: 65 * R.length
       },
-      children: R.map((e, t) => I({
+      children: R.map((e, t) => N({
         row: t
       }))
     }), R.length !== c ? (0, i.jsx)(o.P3F, {
@@ -136,7 +136,7 @@ function D(e) {
       }) : (0, i.jsx)(o.Text, {
         className: A.loadMore,
         variant: "text-sm/bold",
-        children: y.intl.format(N.default["7dMmJS"], {
+        children: y.intl.format(I.default["7dMmJS"], {
           pageSize: Math.min(c - R.length, T.iB)
         })
       })
@@ -211,7 +211,7 @@ let Z = () => {
       },
       serialize: e => e,
       select: e => {
-        n(e), c.default.track(I.rMx.FAMILY_CENTER_ACTION, {
+        n(e), c.default.track(N.rMx.FAMILY_CENTER_ACTION, {
           action: T.YC.SelectTeen
         })
       },

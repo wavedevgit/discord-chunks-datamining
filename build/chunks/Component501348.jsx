@@ -236,7 +236,7 @@ class et extends Chunk73800.Component {
         className: a()(Chunk226518.preview, Chunk197571.marginBottom40, module ? Chunk226518.compactPreview : true, "group-spacing-".concat(null != require ? require : module ? Chunk959517.c8 : Chunk959517.pq)),
         outline: true,
         "aria-hidden": true,
-        children: Chunk120356.map((t, n) => (0, i.jsx)(I.Z, {
+        children: Chunk120356.map((t, n) => (0, i.jsx)(N.Z, {
           author: (0, T.ZH)(t),
           message: t,
           compact: e,

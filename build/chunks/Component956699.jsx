@@ -866,7 +866,7 @@ function ed() {
       children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
         value: Chunk433517,
         note: "Highlights toggleable components: Checkbox (green), RadioGroup (yellow), Switch (blue)",
-        onChange: e => (0, I.Z)("highlight_void_toggleables", e),
+        onChange: e => (0, N.Z)("highlight_void_toggleables", e),
         children: "Highlight Toggleable Components"
       })
     })]

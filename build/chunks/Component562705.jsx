@@ -45,7 +45,7 @@ function T(e) {
         visibleContent: t,
         markAsDismissed: s
       } = e;
-      return (0, i.jsx)(I, {
+      return (0, i.jsx)(N, {
         recentlyLeveledTenureBadge: r,
         markAsDismissed: s,
         targetElementRef: n,
@@ -55,7 +55,7 @@ function T(e) {
   })
 }
 
-function I(e) {
+function N(e) {
   var t;
   let {
     recentlyLeveledTenureBadge: n,
@@ -70,8 +70,8 @@ function I(e) {
     }), f.S.dispatch(C.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
   }, [s]), T = (0, r.useCallback)(() => {
     s(O.L.USER_DISMISS)
-  }, [s]), I = E.vK[n], N = v.intl.formatToPlainString(v.t.ewkaVV, {
-    timeMilestone: null == (t = (0, b.q)(I.id, I.tenureReqNumMonths)) ? true : t.toLocaleLowerCase()
+  }, [s]), N = E.vK[n], I = v.intl.formatToPlainString(v.t.ewkaVV, {
+    timeMilestone: null == (t = (0, b.q)(N.id, N.tenureReqNumMonths)) ? true : t.toLocaleLowerCase()
   }), y = {
     position: "bottom",
     align: "center"
@@ -91,13 +91,13 @@ function I(e) {
       }), null != x ? (0, i.jsx)(c.V, {
         asset: (0, i.jsx)("img", {
           src: x,
-          alt: v.intl.string(I.nameUnformatted),
+          alt: v.intl.string(N.nameUnformatted),
           className: S.badgeImage
         }),
         size: "md"
       }) : null, (0, i.jsx)(m.Y, {
         title: v.intl.string(v.t.VoDxsb),
-        body: N,
+        body: I,
         hasBottomMargin: true
       }), (0, i.jsx)(o.k, {
         actions: A

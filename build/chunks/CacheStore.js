@@ -78,12 +78,12 @@ async function V(e, t, n) {
     j = null != e ? s.Z.timeAsync("\uD83D\uDCBE", "cache: private_channels", () => x.Z.getAsync(e, null)) : Promise.resolve([]),
     O = null == e ? Promise.resolve({}) : s.Z.timeAsync("\uD83D\uDCBE", "cache: user_settings", () => b.Z.getAll(e)),
     T = null == e ? Promise.resolve([]) : s.Z.timeAsync("\uD83D\uDCBE", "cache: read_states", () => h.Z.getAll(e)),
-    I = null == e ? Promise.resolve([]) : s.Z.timeAsync("\uD83D\uDCBE", "cache: user_guild_settings", () => f.Z.getAll(e)),
+    N = null == e ? Promise.resolve([]) : s.Z.timeAsync("\uD83D\uDCBE", "cache: user_guild_settings", () => f.Z.getAll(e)),
     [
-      [N, A], R, D, Z, w, k, L
-    ] = await Promise.all([p, g, _, j, O, T, I]),
+      [I, A], R, D, Z, w, k, L
+    ] = await Promise.all([p, g, _, j, O, T, N]),
     B = performance.now() - m;
-  if (P.verbose("cache loaded in ".concat(B, "ms (channel_history ").concat(N, "ms)")), null == A) return (0, y.Z)("database:history_cache_null"), P.verbose("finished without dispatching CACHE_LOADED"), [false, null, 0];
+  if (P.verbose("cache loaded in ".concat(B, "ms (channel_history ").concat(I, "ms)")), null == A) return (0, y.Z)("database:history_cache_null"), P.verbose("finished without dispatching CACHE_LOADED"), [false, null, 0];
   {
     let i = Object.fromEntries(A.members.map(e => [e.userId, e])),
       r = null != D.guildId && null != D.channels,
@@ -203,7 +203,7 @@ async function z(e, t, n, i) {
       initialGuildId: n
     };
     C.Z.deserializeCache.measure(() => {
-      null != c.channels && (0, N.ZP)(c.channels), null != c.privateChannels && (0, N.ZP)(c.privateChannels), null != c.guildChannels && (0, N._$)(c.guildChannels)
+      null != c.channels && (0, I.ZP)(c.channels), null != c.privateChannels && (0, I.ZP)(c.privateChannels), null != c.guildChannels && (0, I._$)(c.guildChannels)
     }), C.Z.dispatchLazyCache.measure(() => o.Z.dispatch(c)), P.verbose("late lazy cache loaded (ok: true, took: ".concat(performance.now() - s, "ms)")), g.addAnalytics({
       usedCacheAtStartup: true
     });
@@ -273,7 +273,7 @@ class Y extends(i = Chunk442837.ZP.Store) {
     return (0, T.$8)() ? D ? (P.log("Not writing cache because caches cleared"), false) : !!e || !!B || (P.log("Not writing cache because never connected"), false) : (P.log("Not writing cache because not authenticated"), false)
   }
   async loadCacheAsync(e, t) {
-    let n = (0, I.h)(t);
+    let n = (0, N.h)(t);
     if ("initializing" !== Z) {
       (0, y.Z)("cache:lazy_cache_not_initializing"), n(), setTimeout(() => {
         var e, t;

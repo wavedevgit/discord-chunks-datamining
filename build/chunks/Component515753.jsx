@@ -252,13 +252,13 @@ function ep(e) {
     userId: null == m ? true : m.id,
     size: h.EFr.SIZE_32,
     animateOnHover: !(l || $ || ep || eh)
-  }), eO = t.isMultiUserDM(), ev = t.isSystemDM(), eS = (0, F.Q)(), eT = !eO && !ev && t.type === ee.d4z.DM, eI = eT && (null == m ? true : m.primaryGuild) != null, eN = (0, g.e7)([X.ZP], () => X.ZP.isChannelMuted(t.getGuildId(), t.id)), {
+  }), eO = t.isMultiUserDM(), ev = t.isSystemDM(), eS = (0, F.Q)(), eT = !eO && !ev && t.type === ee.d4z.DM, eN = eT && (null == m ? true : m.primaryGuild) != null, eI = (0, g.e7)([X.ZP], () => X.ZP.isChannelMuted(t.getGuildId(), t.id)), {
     ignored: ey,
     blocked: eA
   } = (0, g.cj)([K.Z], () => ({
     ignored: K.Z.isIgnored(t.getRecipientId()),
     blocked: K.Z.isBlocked(t.getRecipientId())
-  })), eP = eT && ey, eR = eT && eA, eD = (eN || eP || eR) && !(l || $), eZ = (0, g.e7)([Y.ZP], () => Y.ZP.getMentionCount(t.id) > 0), ew = (0, N.ZP)(t), ek = (0, g.e7)([Z.Z], () => Z.Z.isFavorite(t.id)), {
+  })), eP = eT && ey, eR = eT && eA, eD = (eI || eP || eR) && !(l || $), eZ = (0, g.e7)([Y.ZP], () => Y.ZP.getMentionCount(t.id) > 0), ew = (0, I.ZP)(t), ek = (0, g.e7)([Z.Z], () => Z.Z.isFavorite(t.id)), {
     dotsInsteadOfCloseButton: eL,
     rearrangeContextMenu: eB
   } = k.Z.useExperiment({
@@ -341,7 +341,7 @@ function ep(e) {
     displayNameStyles: null == m ? true : m.displayNameStyles,
     effectDisplayType: $ || l || eh ? R.F.ANIMATED : R.F.PLAIN,
     loop: $
-  }), eQ = eI ? (0, i.jsxs)(i.Fragment, {
+  }), eQ = eN ? (0, i.jsxs)(i.Fragment, {
     children: [eJ, (0, i.jsx)(B.ZP, {
       primaryGuild: null == m ? true : m.primaryGuild,
       userId: null == m ? true : m.id,
@@ -417,7 +417,7 @@ function ep(e) {
                     status: U
                   });
                   else return (0, i.jsx)(ea, er(ei({}, eC), {
-                    src: (0, I.x)(t),
+                    src: (0, N.x)(t),
                     "aria-hidden": true,
                     size: e,
                     status: M ? ee.Skl.ONLINE : U,

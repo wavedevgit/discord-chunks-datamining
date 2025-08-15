@@ -89,8 +89,8 @@ let v = e => {
         videoUrl: p,
         shouldLoadVideo: S,
         index: T,
-        customVideoStyle: I,
-        isReducedMotion: N,
+        customVideoStyle: N,
+        isReducedMotion: I,
         onClick: y,
         badgeText: A,
         size: P,
@@ -134,10 +134,10 @@ let v = e => {
         })
       }, 800),
       B = () => {
-        null == Z.current || N || (Z.current.currentTime = w.current, Z.current.play())
+        null == Z.current || I || (Z.current.currentTime = w.current, Z.current.play())
       },
       M = () => {
-        null == Z.current || N || (w.current = Z.current.currentTime, Z.current.pause())
+        null == Z.current || I || (w.current = Z.current.currentTime, Z.current.pause())
       },
       U = R ? E : j;
     t = R ? P === b.y$.LARGE ? "heading-xxl/bold" : "heading-xl/bold" : P === b.y$.SMALL ? "heading-xl/extrabold" : "heading-xxl/extrabold";
@@ -178,7 +178,7 @@ let v = e => {
           poster: u,
           loop: true,
           className: a()(U.boxVideo, {
-            [I]: null != I
+            [N]: null != N
           }),
           ref: Z,
           children: (0, i.jsx)("source", {

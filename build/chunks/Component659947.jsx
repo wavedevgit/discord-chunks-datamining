@@ -1,7 +1,7 @@
 /** Chunk was on 30202 **/
 /** chunk id: 659947, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => N
 }), require("./539854.js"), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -95,7 +95,7 @@ function T() {
   })
 }
 
-function I(e) {
+function N(e) {
   var t, n;
   let {
     keybind: s
@@ -104,7 +104,7 @@ function I(e) {
     o.current = s
   });
   let [d, u] = r.useState(null != (n = null == (t = s.params) ? true : t.channelId) ? n : true), m = r.useCallback(() => {
-    (0, a.ZDy)(async () => e => (0, i.jsx)(N, _(x({}, e), {
+    (0, a.ZDy)(async () => e => (0, i.jsx)(I, _(x({}, e), {
       onSelect: e => {
         u(e), l.Z.setKeybind(_(x({}, o.current), {
           params: {
@@ -137,7 +137,7 @@ function I(e) {
   })
 }
 
-function N(e) {
+function I(e) {
   let {
     transitionState: t,
     onClose: n,
@@ -160,8 +160,8 @@ function N(e) {
       disableMouseFocus: n
     }
   }(), {
-    query: I,
-    updateQuery: N,
+    query: N,
+    updateQuery: I,
     queryResults: y
   } = (0, o.Z)({
     visible: true,
@@ -180,7 +180,7 @@ function N(e) {
         return n
       }, [t]);
     return t ? null : n
-  }(I), {
+  }(N), {
     focusedIndex: P,
     setFocusedIndex: R
   } = function(e) {
@@ -191,7 +191,7 @@ function N(e) {
       focusedIndex: t,
       setFocusedIndex: n
     }
-  }(I);
+  }(N);
   r.useEffect(() => {
     let {
       current: e
@@ -221,8 +221,8 @@ function N(e) {
       children: [(0, i.jsx)("div", {
         className: b.inputWrapper,
         children: (0, i.jsx)(a.oil, {
-          value: I,
-          onChange: N,
+          value: N,
+          onChange: I,
           onKeyDown: function(e) {
             O();
             let t = e.key.toLowerCase();
@@ -254,7 +254,7 @@ function N(e) {
           "aria-autocomplete": "list",
           spellCheck: false
         })
-      }), 0 === D && "" !== I && (0, i.jsx)(T, {}), (D > 0 || "" === I) && (0, i.jsx)(a.Tvr, {
+      }), 0 === D && "" !== N && (0, i.jsx)(T, {}), (D > 0 || "" === N) && (0, i.jsx)(a.Tvr, {
         innerId: c,
         innerRole: "listbox",
         "aria-label": f.intl.string(f.t["+N3fW1"]),

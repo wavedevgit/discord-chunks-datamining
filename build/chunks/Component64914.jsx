@@ -47,9 +47,9 @@ function O() {
     h.bm.updateSetting(!e)
   }, []), T = Chunk73800.useCallback(e => {
     e ? (0, a.h7j)(e => (0, i.jsx)(b.Z, C({}, e))) : l.mc()
-  }, []), I = Chunk73800.useCallback(e => {
-    (0, c.BV)(e, o.Z.USER_SETTINGS)
   }, []), N = Chunk73800.useCallback(e => {
+    (0, c.BV)(e, o.Z.USER_SETTINGS)
+  }, []), I = Chunk73800.useCallback(e => {
     (0, a.h7j)(t => {
       var n, r;
       let s = e ? j.intl.format(j.t.LYXRxM, {}) : j.intl.format(j.t.uDP3Ky, {});
@@ -103,7 +103,7 @@ function O() {
       children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
         className: module ? "" : Chunk692278.formSwitchExtension,
         value: module,
-        onChange: N,
+        onChange: I,
         note: Chunk388032.intl.string(Chunk388032.t.Afc7l5),
         hideBorder: !module,
         children: Chunk388032.intl.string(Chunk388032.t["eOC/Fx"])
@@ -136,7 +136,7 @@ function O() {
       children: (0, Chunk255367.jsx)(Chunk481060.j7V, {
         value: v,
         note: Chunk388032.intl.string(Chunk388032.t["B/qU4O"]),
-        onChange: I,
+        onChange: N,
         children: Chunk388032.intl.string(Chunk388032.t.qDZryM)
       })
     }), (0, Chunk255367.jsxs)(Chunk921801.F, {

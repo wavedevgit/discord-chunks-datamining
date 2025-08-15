@@ -37,26 +37,26 @@ function v(e) {
     autoTrackExposure: false
   }), {
     analyticsLocations: T
-  } = (0, o.ZP)(), I = (0, p.Go)(), {
-    viewerClipsEnabled: N
+  } = (0, o.ZP)(), N = (0, p.Go)(), {
+    viewerClipsEnabled: I
   } = (0, s.cj)([g.Z], () => g.Z.getSettings()), y = (0, h.Z)(m.Z);
   return r.useEffect(() => {
     (0, c.Q3)(a.z.CLIPS_SETTINGS_BETA_TAG)
   }), (0, i.jsxs)(o.Gt, {
     value: T,
-    children: [(I || n) && (0, i.jsx)(l.hjN, {
+    children: [(N || n) && (0, i.jsx)(l.hjN, {
       className: t,
       tag: l.RB0.H1,
       title: n ? (0, i.jsxs)("div", {
         className: E.headerContainer,
         children: [j.intl.string(j.t.z2jK6e), (0, i.jsx)(b.Z, {})]
       }) : null,
-      children: I && (0, i.jsxs)("form", {
+      children: N && (0, i.jsxs)("form", {
         onSubmit: e => e.preventDefault(),
         children: [(0, i.jsx)(x.Z, {}), (0, i.jsx)(_.Z, {})]
       })
-    }), I && (0, i.jsx)(l.$i$, {}), (0, i.jsxs)(l.hjN, {
-      className: n || I ? O.marginTop20 : t,
+    }), N && (0, i.jsx)(l.$i$, {}), (0, i.jsxs)(l.hjN, {
+      className: n || N ? O.marginTop20 : t,
       children: [(0, i.jsx)(l.j7V, {
         hideBorder: true,
         className: C.formItem,
@@ -69,7 +69,7 @@ function v(e) {
       }), S && y && (0, i.jsx)(l.j7V, {
         hideBorder: true,
         className: C.formItem,
-        value: N,
+        value: I,
         note: j.intl.string(j.t["0vjy8P"]),
         onChange: e => f.yl({
           enabled: e,

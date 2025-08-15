@@ -38,8 +38,8 @@ function _() {
     [S, T] = (0, Chunk72897.Ls)(Chunk65154.h7.AUDIO_OUTPUT, {
       location: "UserSettingsDevices"
     }),
-    I = O.concat(v),
-    N = S.concat(T),
+    N = O.concat(v),
+    I = S.concat(T),
     y = Chunk73800.useMemo(() => {
       let e = x.some(e => {
           var t;
@@ -51,8 +51,8 @@ function _() {
         });
       return module && exports && (null == E ? true : E.containerId) != null && E.containerId === (null == C ? true : C.containerId)
     }, [E, C]),
-    A = I[0],
-    P = N[0],
+    A = N[0],
+    P = I[0],
     R = null != (e = null == A ? true : A.disabled) ? module : !_,
     D = null != (t = null == P ? true : P.disabled) ? exports : !j;
 

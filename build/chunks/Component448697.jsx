@@ -62,19 +62,19 @@ function m() {
     }
   }, "respect-motion-settings")((e, n) => null != n ? (0, r.jsx)(a.animated.div, {
     style: e,
-    className: p.floaterWrapper,
+    className: f.floaterWrapper,
     children: (0, r.jsxs)("div", {
-      className: p.visibleFloater,
+      className: f.visibleFloater,
       children: [(0, r.jsxs)("div", {
-        className: p.progressText,
+        className: f.progressText,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "text-primary",
-          children: f.intl.format(f.t["r+uZYW"], {
+          children: p.intl.format(p.t["r+uZYW"], {
             progress: t
           })
         }), (0, r.jsx)(s.Avr, {
-          text: f.intl.string(f.t["ETE/oK"]),
+          text: p.intl.string(p.t["ETE/oK"]),
           onClick: d.ge,
           variant: "always-white",
           textVariant: "text-sm/normal"

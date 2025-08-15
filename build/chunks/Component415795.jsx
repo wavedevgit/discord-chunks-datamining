@@ -1,9 +1,9 @@
 /** Chunk was on 30202 **/
 /** chunk id: 415795, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $W: () => I,
+  $W: () => N,
   Mx: () => A,
-  PZ: () => N,
+  PZ: () => I,
   h4: () => P,
   ic: () => T,
   n5: () => y,
@@ -179,7 +179,7 @@ class T extends Chunk73800.Component {
     })
   }
 }
-class I extends(i = Chunk73800.Component) {
+class N extends(i = Chunk73800.Component) {
   renderIcon() {
     var e;
     let {
@@ -288,10 +288,10 @@ class I extends(i = Chunk73800.Component) {
     })
   }
 }
-v(I, "defaultProps", {
+v(N, "defaultProps", {
   unread: false
 });
-class N extends Chunk73800.Component {
+class I extends Chunk73800.Component {
   renderIcon() {
     let {
       channel: e

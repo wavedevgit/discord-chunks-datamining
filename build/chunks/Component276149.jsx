@@ -18,17 +18,17 @@ function d(e) {
     className: t,
     color: n,
     look: d,
-    hangStatusChannel: f,
-    onAction: p
-  } = e, m = (0, i.e7)([a.Z], () => a.Z.getChannelId() === f.id);
+    hangStatusChannel: p,
+    onAction: f
+  } = e, m = (0, i.e7)([a.Z], () => a.Z.getChannelId() === p.id);
   return (0, r.jsx)(s.Z, {
     className: t,
     disabled: m,
     onClick: () => {
-      null == p || p(), l.default.selectVoiceChannel(f.id), o.default.track(c.rMx.HANG_STATUS_CTA_CLICKED, {
+      null == f || f(), l.default.selectVoiceChannel(p.id), o.default.track(c.rMx.HANG_STATUS_CTA_CLICKED, {
         source: "UserProfilePopout",
-        guild_id: f.guild_id,
-        channel_id: f.id
+        guild_id: p.guild_id,
+        channel_id: p.id
       })
     },
     color: n,

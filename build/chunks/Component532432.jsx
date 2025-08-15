@@ -36,11 +36,11 @@ function E(e) {
     className: v,
     disabled: S = false,
     isTryItOutFlow: T = false,
-    forcedDivider: I,
-    withHighlight: N = false
+    forcedDivider: N,
+    withHighlight: I = false
   } = e, {
     newestAnalyticsLocation: y
-  } = (0, d.ZP)(), A = N ? c.gtL : o.zx, P = (0, m.T)({
+  } = (0, d.ZP)(), A = I ? c.gtL : o.zx, P = (0, m.T)({
     location: "AvatarSection"
   }), R = [];
   P && R.push(l.z.RECENT_AVATARS_SETTINGS_PROFILE_PAGE_NEW_BADGE);
@@ -66,12 +66,12 @@ function E(e) {
     }) : true,
     errors: n,
     disabled: S,
-    forcedDivider: I,
+    forcedDivider: N,
     children: (0, i.jsxs)("div", {
       className: _.buttonsContainer,
       children: [(0, i.jsx)(A, {
         className: a()({
-          [_.buttonHighlighted]: N
+          [_.buttonHighlighted]: I
         }),
         size: o.zx.Sizes.SMALL,
         onClick: k,

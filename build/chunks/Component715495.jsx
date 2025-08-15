@@ -54,7 +54,7 @@ function j(e, t) {
 
 function E() {
   var e;
-  let [t, n] = (0, Chunk73800.useState)(false), [s, l] = (0, Chunk73800.useState)(false), [d, g] = (0, Chunk73800.useState)(null), [f, E] = (0, Chunk73800.useState)(320), N = (0, Chunk73800.useRef)(null), y = (0, Chunk73800.useRef)(null), A = (0, Chunk73800.useRef)(null), P = (0, Chunk396821.ZP)(e => e.toolsCache), {
+  let [t, n] = (0, Chunk73800.useState)(false), [s, l] = (0, Chunk73800.useState)(false), [d, g] = (0, Chunk73800.useState)(null), [f, E] = (0, Chunk73800.useState)(320), I = (0, Chunk73800.useRef)(null), y = (0, Chunk73800.useRef)(null), A = (0, Chunk73800.useRef)(null), P = (0, Chunk396821.ZP)(e => e.toolsCache), {
     setToolsCache: R,
     removeToolsCache: D
   } = (0, Chunk396821.L3)(), {
@@ -81,8 +81,8 @@ function E() {
   }, []), L = (0, Chunk73800.useCallback)(e => {
     D(e)
   }, [D]), B = (0, Chunk73800.useCallback)(e => {
-    if (null != N.current) {
-      let t = N.current.getBoundingClientRect();
+    if (null != I.current) {
+      let t = I.current.getBoundingClientRect();
       E(Math.max(264, Math.min(432, e.clientX - t.left)))
     }
   }, []), M = (0, Chunk73800.useCallback)(e => {
@@ -129,7 +129,7 @@ function E() {
     }), (0, Chunk255367.jsxs)("div", {
       className: Chunk30827.main,
       children: [(0, Chunk255367.jsxs)("div", {
-        ref: N,
+        ref: I,
         className: Chunk30827.previews,
         style: {
           width: "".concat(Chunk852630, "px")
@@ -147,7 +147,7 @@ function E() {
         }), (0, Chunk255367.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
           children: "RTC"
-        }), (0, Chunk255367.jsx)(I, {
+        }), (0, Chunk255367.jsx)(N, {
           nameplate: Chunk594174
         }), (0, Chunk255367.jsx)("div", {
           className: Chunk30827.resizeHandle,
@@ -335,7 +335,7 @@ function T(e) {
   })
 }
 
-function I(e) {
+function N(e) {
   let {
     nameplate: t
   } = e;

@@ -1,8 +1,8 @@
 /** Chunk was on 30202 **/
 /** chunk id: 854444, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  o: () => I,
-  t: () => N
+  o: () => N,
+  t: () => I
 }), require("./388685.js"), require("./539854.js");
 var Chunk73800 = require("./73800.js"),
   Chunk392711 = require("./392711.js"),
@@ -29,15 +29,15 @@ var Chunk73800 = require("./73800.js"),
   Chunk231338 = require("./231338.js");
 let T = 12633 == require.j ? [Chunk317381.ZP, Chunk853856.Z, Chunk924301.ZP, Chunk601070.Z, Chunk569471.Z, Chunk680089.Z, Chunk592125.Z, Chunk77498.Z, Chunk496675.Z, Chunk306680.ZP, Chunk944486.Z, Chunk9156.ZP] : null;
 
-function I() {
-  let [e, t] = Chunk73800.useState(() => N());
+function N() {
+  let [e, t] = Chunk73800.useState(() => I());
   return Chunk73800.useEffect(() => {
-    let e = s().throttle(() => exports(N()), 100);
+    let e = s().throttle(() => exports(I()), 100);
     return T.forEach(t => t.addChangeListener(e)), () => T.forEach(t => t.removeChangeListener(e))
   }, []), module
 }
 
-function N() {
+function I() {
   let e = Chunk853856.Z.getFavoriteChannels(),
     t = Chunk9156.ZP.isGuildCollapsed(Chunk647086._),
     n = Chunk944486.Z.getChannelId(),
@@ -104,7 +104,7 @@ function N() {
         return null == Chunk77498 && (b = Chunk569471(Chunk317381, this)), Chunk77498
       }
     },
-    I = s()(module).values().filter(e => e.type === a.Dd.CATEGORY).sortBy(e => e.order).map(e => {
+    N = s()(module).values().filter(e => e.type === a.Dd.CATEGORY).sortBy(e => e.order).map(e => {
       var t;
       let {
         id: n,
@@ -125,7 +125,7 @@ function N() {
         }
       }
     }).value(),
-    N = {
+    I = {
       isEmpty: () => true,
       getRows: () => [],
       getRow: () => null
@@ -144,12 +144,12 @@ function N() {
     getSections() {
       let e = [];
       module[Chunk540126.Fq] = 0, module[Chunk540126.wZ] = 0, module[Chunk540126.p2] = 0, module[Chunk540126.PB] = 0, module[Chunk540126.wd] = T.channelList.length;
-      for (let t = 0; exports < I.length; exports++) module[Chunk540126.wF + exports] = Math.max(1, I[exports].channelList.length);
+      for (let t = 0; exports < N.length; exports++) module[Chunk540126.wF + exports] = Math.max(1, N[exports].channelList.length);
       return module
     },
-    isPlaceholderRow: (e, t) => !(e < O.wF) && 0 === t && 0 === I[e - O.wF].channelList.length,
-    getCategoryFromSection: e => e === O.wd ? T : I[e - O.wF],
-    getNamedCategoryFromSection: e => I[e - O.wF],
+    isPlaceholderRow: (e, t) => !(e < O.wF) && 0 === t && 0 === N[e - O.wF].channelList.length,
+    getCategoryFromSection: e => e === O.wd ? T : N[e - O.wF],
+    getNamedCategoryFromSection: e => N[e - O.wF],
     getChannelFromSectionRow(e, t) {
       let n = this.getCategoryFromSection(e);
       return null == n || null == n.channelList[t] ? null : {
@@ -157,11 +157,11 @@ function N() {
         channel: n.channelList[t]
       }
     },
-    getGuildActionSection: () => N,
+    getGuildActionSection: () => I,
     getChannelNoticeSection: () => y,
     getFirstVoiceChannel: () => null,
     getSectionRowsFromChannel(e) {
-      let t = [T, ...I];
+      let t = [T, ...N];
       for (let n = 0; n < t.length; n++)
         for (let i = 0; i < t[n].channelList.length; i++)
           if (t[n].channelList[i].id === e) return [{
@@ -171,7 +171,7 @@ function N() {
       return []
     },
     forEachShownChannel(e) {
-      for (let t of [T, ...I])
+      for (let t of [T, ...N])
         for (let n of t.channelList)
           for (let t of (e(n.record), n.threadIds)) {
             let n = h.Z.getChannel(t);
@@ -179,7 +179,7 @@ function N() {
           }
     },
     forEachChannel(e) {
-      for (let t of [T, ...I])
+      for (let t of [T, ...N])
         for (let n of t.getChannelRecords()) e(n)
     },
     getSlicedChannels: e => [

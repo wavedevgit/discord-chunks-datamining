@@ -74,8 +74,8 @@ function eo(e) {
     partySize: o,
     activityActionType: a
   }), u = [...t];
-  for (; u.length < n;) u.push(et.ag);
-  for (; u.length < i;) u.push(null);
+  for (; u.length < n && u.length < 8;) u.push(et.ag);
+  for (; u.length < i && u.length < 8;) u.push(null);
   return (0, r.jsxs)("div", {
     className: ea.partyStatusWrapper,
     children: [u.length > 0 && (0, r.jsx)(et.ZP, {

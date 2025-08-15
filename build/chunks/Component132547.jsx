@@ -1,7 +1,7 @@
 /** Chunk was on 30202 **/
 /** chunk id: 132547, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => I
 }), require("./388685.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./35282.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -28,7 +28,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk677599 = require("./677599.js"),
   Chunk865215 = require("./865215.js");
-let N = e => {
+let I = e => {
   let {
     userId: t
   } = e;
@@ -39,7 +39,7 @@ let N = e => {
   }, [t]), (0, g.z)(p.X);
   let n = r.useRef(null),
     s = r.useRef(null),
-    [N, y] = r.useState(false),
+    [I, y] = r.useState(false),
     {
       analyticsLocations: A
     } = (0, m.ZP)(u.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
@@ -96,7 +96,7 @@ let N = e => {
               className: T.bottomOfPageVisibilitySensor
             })
           }), (0, i.jsx)("img", {
-            src: I,
+            src: N,
             className: T.bottomIllustration,
             width: 112,
             height: 85,
@@ -105,7 +105,7 @@ let N = e => {
         })
       })
     }), (0, i.jsx)(C.Z, {
-      isAllPerksVisible: N,
+      isAllPerksVisible: I,
       setIsAllPerksVisible: y,
       previousComponent: E.MQ.HOME
     })]

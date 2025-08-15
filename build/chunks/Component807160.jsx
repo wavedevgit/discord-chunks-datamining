@@ -186,7 +186,7 @@ function es(e) {
       detail: o
     }), null != l && (0, r.jsx)(er, {
       description: Y.intl.string(Y.t.Wpn8z8),
-      detail: (0, r.jsx)(I.Z, {
+      detail: (0, r.jsx)(N.Z, {
         onClick: c,
         children: l.name
       })
@@ -730,7 +730,7 @@ function eo(e) {
     }
   }), x = (0, m.e7)([f.Z], () => null != u ? f.Z.getApplication(u) : null);
   s.useEffect(() => {
-    p && null != u && (0, N.UM)(u)
+    p && null != u && (0, I.UM)(u)
   }, [u, p]);
   let _ = (0, m.e7)([D.Z], () => D.Z.getGuild(null == h ? true : h.guildId)),
     j = c ? h : true,

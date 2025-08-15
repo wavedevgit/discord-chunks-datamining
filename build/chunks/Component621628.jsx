@@ -124,9 +124,9 @@ function v() {
         return i.unshift(e), i
       })
     },
-    I = exports.map(e => o.z[e]),
-    N = v.filter(e => e.toLowerCase().includes(x.toLowerCase())).filter(e => !I.includes(e)),
-    y = Object.keys(Chunk704215.z).filter(e => !I.includes(e)).filter(e => !v.includes(e)).filter(e => e.toLowerCase().includes(x.toLowerCase())).sort((e, t) => e.localeCompare(t));
+    N = exports.map(e => o.z[e]),
+    I = v.filter(e => e.toLowerCase().includes(x.toLowerCase())).filter(e => !N.includes(e)),
+    y = Object.keys(Chunk704215.z).filter(e => !N.includes(e)).filter(e => !v.includes(e)).filter(e => e.toLowerCase().includes(x.toLowerCase())).sort((e, t) => e.localeCompare(t));
   return (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
     children: [(0, Chunk255367.jsxs)(Chunk481060.hjN, {
       title: "Dismissible Content Fatigue",
@@ -182,18 +182,18 @@ function v() {
             children: "Recently Shown"
           })
         }), (0, Chunk255367.jsx)(O, {
-          items: I,
+          items: N,
           dismissedContents: C,
           handleChange: T
         })]
-      }) : null, N.length > 0 ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
+      }) : null, I.length > 0 ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
         children: [(0, Chunk255367.jsx)("div", {
           className: Chunk197571.marginBottom20,
           children: (0, Chunk255367.jsx)(Chunk481060.vwX, {
             children: "Recent Overrides"
           })
         }), (0, Chunk255367.jsx)(O, {
-          items: N,
+          items: I,
           dismissedContents: C,
           handleChange: T
         })]

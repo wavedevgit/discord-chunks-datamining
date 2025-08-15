@@ -150,7 +150,7 @@ let B = () => {
     var t;
     let n, {
         className: s,
-        hideCTAs: I = false,
+        hideCTAs: N = false,
         headingOverride: D,
         hidePill: Z = false,
         selectedPlanColumnClassName: w,
@@ -197,7 +197,7 @@ let B = () => {
           premiumType: A.p9.TIER_2
         })
       };
-    I ? ea.push({
+    N ? ea.push({
       label: null,
       column1: null,
       column2: null,
@@ -243,10 +243,10 @@ let B = () => {
       withBottomBorder: false,
       withBottomBorderRadius: true,
       buttonsRow: null == J
-    }), n = Z ? null : null != J || null != Q ? (0, i.jsx)(N.Cy, {
+    }), n = Z ? null : null != J || null != Q ? (0, i.jsx)(I.Cy, {
       text: null != J ? P.intl.string(P.t.IBYG5e) : P.intl.string(P.t.ce1v3d),
       className: R.freeTrialPillWithSparkles,
-      colorOptions: J === A.Si.TIER_0 ? Y ? N.VE.PREMIUM_TIER_0_GRADIENT_FILL : N.VE.PREMIUM_TIER_0_WHITE_FILL : Y ? q ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_WHITE_FILL
+      colorOptions: J === A.Si.TIER_0 ? Y ? I.VE.PREMIUM_TIER_0_GRADIENT_FILL : I.VE.PREMIUM_TIER_0_WHITE_FILL : Y ? q ? I.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : I.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : I.VE.PREMIUM_TIER_2_WHITE_FILL
     }) : el ? (0, i.jsx)(B, {}) : (0, i.jsx)(M, {});
     let eu = J === A.Si.TIER_0 || Q === A.p9.TIER_0 || k === A.p9.TIER_0;
     return (0, i.jsx)(p.Gt, {

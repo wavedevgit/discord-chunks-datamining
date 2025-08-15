@@ -34,8 +34,8 @@ function x(e) {
     userAvatarDecoration: v,
     guildAvatarDecoration: S,
     pendingAvatarDecoration: T,
-    pendingErrors: I
-  } = (0, g.$U)(t, n), N = (0, m.Z)("enable_avatar_decoration_uploads"), y = r.useCallback(() => (0, u.ps)({
+    pendingErrors: N
+  } = (0, g.$U)(t, n), I = (0, m.Z)("enable_avatar_decoration_uploads"), y = r.useCallback(() => (0, u.ps)({
     analyticsLocations: C,
     isTryItOutFlow: E,
     guild: n
@@ -45,7 +45,7 @@ function x(e) {
     forcedDivider: x,
     hasBackground: true,
     title: p,
-    errors: I,
+    errors: N,
     children: [(0, i.jsxs)("div", {
       className: b.buttonsContainer,
       children: [(0, i.jsx)(P, {
@@ -67,7 +67,7 @@ function x(e) {
           }
         })
       })]
-    }), t.isStaff() && N && (0, i.jsx)(_, {
+    }), t.isStaff() && I && (0, i.jsx)(_, {
       user: t
     })]
   })

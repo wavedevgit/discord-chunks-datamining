@@ -36,7 +36,7 @@ var Chunk255367 = require("./255367.js"),
 
 function D(e) {
   let t = () => {
-    I.SE.updateSetting(e ? C.Z.getGuildIds() : [])
+    N.SE.updateSetting(e ? C.Z.getGuildIds() : [])
   };
   (0, p.h7j)(e => {
     var n, r;
@@ -105,7 +105,7 @@ function Z() {
         children: Chunk388032.intl.string(Chunk388032.t["8ka8lp"])
       }), (0, Chunk255367.jsx)(Chunk481060.j7V, {
         value: module,
-        onChange: e => I.G6.updateSetting(e),
+        onChange: e => N.G6.updateSetting(e),
         note: Chunk73800,
         children: Chunk388032.intl.string(Chunk388032.t["4q/Ewc"])
       }), require ? (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
@@ -123,7 +123,7 @@ function Z() {
             options: Chunk120356,
             value: exports,
             onChange: e => {
-              I.no.updateSetting(e), D(e !== d.GI.ACTIVITY_STATUS_OFF)
+              N.no.updateSetting(e), D(e !== d.GI.ACTIVITY_STATUS_OFF)
             }
           })]
         }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
@@ -136,7 +136,7 @@ function Z() {
         }),
         onChange: e => {
           var t;
-          return t = !e, void(I.no.updateSetting(t ? d.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : d.GI.ACTIVITY_STATUS_OFF), D(t))
+          return t = !e, void(N.no.updateSetting(t ? d.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS : d.GI.ACTIVITY_STATUS_OFF), D(t))
         },
         children: Chunk388032.intl.string(Chunk388032.t.D5GXTU)
       })]
@@ -158,12 +158,12 @@ function w() {
       }), (0, Chunk255367.jsx)(Chunk481060.j7V, {
         value: module,
         note: Chunk388032.intl.string(Chunk388032.t.Hdh7sb),
-        onChange: e => I.cP.updateSetting(e),
+        onChange: e => N.cP.updateSetting(e),
         children: Chunk388032.intl.string(Chunk388032.t.WEWQQk)
       }), (0, Chunk255367.jsx)(Chunk481060.j7V, {
         value: exports,
         note: Chunk388032.intl.string(Chunk388032.t.Czr3Bg),
-        onChange: e => I.Ou.updateSetting(e),
+        onChange: e => N.Ou.updateSetting(e),
         children: Chunk388032.intl.string(Chunk388032.t.UUvJVl)
       })]
     })

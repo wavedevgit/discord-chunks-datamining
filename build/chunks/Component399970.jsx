@@ -31,7 +31,7 @@ function x(e) {
     authorizedApplicationId: p.Z.testModeApplicationId,
     authorizationError: p.Z.error,
     authorizing: p.Z.isFetchingAuthorization
-  })), [E, C] = r.useState(null != x ? x : ""), [O, v] = r.useState("8080"), [S, T] = r.useState("localhost"), I = (0, m.Dt)(), N = b.test(E);
+  })), [E, C] = r.useState(null != x ? x : ""), [O, v] = r.useState("8080"), [S, T] = r.useState("localhost"), N = (0, m.Dt)(), I = b.test(E);
   async function y() {
     c.q$();
     let e = function(e, t, n) {
@@ -51,14 +51,14 @@ function x(e) {
       c.mc(), C(""), T(null)
     } : y;
   return (0, i.jsxs)(l.Y0X, {
-    "aria-labelledby": I,
+    "aria-labelledby": N,
     transitionState: n,
     parentComponent: "TestModeModal",
     children: [(0, i.jsxs)(l.xBx, {
       justify: u.Z.Justify.BETWEEN,
       separator: false,
       children: [(0, i.jsx)(l.vwX, {
-        id: I,
+        id: N,
         tag: "h1",
         className: f.marginReset,
         children: g.intl.string(g.t.f8fzk5)
@@ -88,7 +88,7 @@ function x(e) {
             children: (0, i.jsx)(l.oil, {
               value: E,
               maxLength: 19,
-              error: N ? null : g.intl.string(g.t.gPNgKC),
+              error: I ? null : g.intl.string(g.t.gPNgKC),
               onChange: function(e) {
                 C(e)
               },
@@ -98,7 +98,7 @@ function x(e) {
             className: h.inputWrapper,
             title: g.intl.string(g.t["/GTqXF"]),
             children: (0, i.jsx)(l.q4e, {
-              isDisabled: !N || "" === E,
+              isDisabled: !I || "" === E,
               value: S,
               options: [{
                 value: "localhost",
@@ -127,7 +127,7 @@ function x(e) {
           }), (0, i.jsx)(a.zx, {
             submitting: j,
             type: "submit",
-            disabled: !N || 0 === E.length || "localhost" === S && 0 === O.length,
+            disabled: !I || 0 === E.length || "localhost" === S && 0 === O.length,
             color: A ? a.zx.Colors.RED : a.zx.Colors.GREEN,
             children: A ? g.intl.string(g.t.d6TR3N) : g.intl.string(g.t.qwuK5O)
           })]

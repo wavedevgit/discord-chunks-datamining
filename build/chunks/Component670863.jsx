@@ -1,7 +1,7 @@
 /** Chunk was on 96750 **/
 /** chunk id: 670863, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => _
+  j: () => h
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -18,18 +18,18 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk118896 = require("./118896.js"),
   Chunk197571 = require("./197571.js");
-let v = "SHOW_MORE";
+let b = "SHOW_MORE";
 
-function _(e) {
+function h(e) {
   var t, {
       deviceType: n,
-      location: _,
+      location: h,
       showAllDevices: y = false,
       selectedDeviceId: O,
-      onSelectDevice: S,
-      hideDeviceTypeIcon: I = false
+      onSelectDevice: j,
+      hideDeviceTypeIcon: S = false
     } = e,
-    j = function(e, t) {
+    x = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -45,11 +45,11 @@ function _(e) {
       return i
     }(e, ["deviceType", "location", "showAllDevices", "selectedDeviceId", "onSelectDevice", "hideDeviceTypeIcon"]);
   let {
-    setDevice: x,
-    Icon: E,
-    getCanSetDevice: P,
-    getWarningMessage: C,
-    getLocation: T
+    setDevice: I,
+    Icon: P,
+    getCanSetDevice: C,
+    getWarningMessage: E,
+    getLocation: w
   } = {
     [m.h7.AUDIO_INPUT]: {
       setDevice: o.Z.setInputDevice,
@@ -79,37 +79,37 @@ function _(e) {
       getLocation: e => "".concat(e, ".SingleSelectVideoDevices")
     }
   } [n], {
-    analyticsLocations: N
-  } = (0, s.ZP)(), [A, w] = i.useState(y), D = T(_), [Z, L] = (0, f.Ls)(n, {
-    location: D
+    analyticsLocations: T
+  } = (0, s.ZP)(), [N, Z] = i.useState(y), A = w(h), [D, k] = (0, p.Ls)(n, {
+    location: A
   }), {
-    id: M
-  } = (0, f.p6)(n), k = (0, l.e7)([u.Z], () => P(u.Z)), U = (0, r.jsx)(a.R94, {
+    id: L
+  } = (0, p.p6)(n), M = (0, l.e7)([u.Z], () => C(u.Z)), U = (0, r.jsx)(a.R94, {
     type: a.R94.Types.DESCRIPTION,
-    className: b.marginTop8,
-    children: C()
+    className: _.marginTop8,
+    children: E()
   }), R = i.useCallback(e => {
-    if (e === v) w(true), d.default.track(p.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
+    if (e === b) Z(true), d.default.track(f.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
       device_type: n,
-      location: D,
-      location_stack: N,
-      shown_device_count: Z.length,
-      hidden_device_count: L.length
+      location: A,
+      location_stack: T,
+      shown_device_count: D.length,
+      hidden_device_count: k.length
     });
     else {
       var t;
-      (null == (t = null == S ? true : S(e)) || t) && x(e, {
-        location: D,
-        analyticsLocations: N
+      (null == (t = null == j ? true : j(e)) || t) && I(e, {
+        location: A,
+        analyticsLocations: T
       })
     }
-  }, [n, D, Z.length, L.length, N, S, x]), V = null != (t = j.renderOptionLabel) ? t : function(e) {
+  }, [n, A, D.length, k.length, T, j, I]), V = null != (t = x.renderOptionLabel) ? t : function(e) {
     let {
       label: t
     } = e;
     return (0, r.jsxs)("div", {
-      className: h.selectedDevice,
-      children: [!I && (0, r.jsx)(E, {
+      className: v.selectedDevice,
+      children: [!S && (0, r.jsx)(P, {
         size: "custom",
         width: 20,
         height: 20,
@@ -141,7 +141,7 @@ function _(e) {
       }
       return e
     }({
-      value: null != O ? O : M,
+      value: null != O ? O : L,
       onChange: R,
       options: function() {
         let e = e => {
@@ -154,27 +154,27 @@ function _(e) {
               label: n
             }
           },
-          t = Z.map(e);
-        if (A || 0 === L.length) {
-          let n = L.map(e);
+          t = D.map(e);
+        if (N || 0 === k.length) {
+          let n = k.map(e);
           return t.concat(n)
         } {
           let e = {
-            value: v,
+            value: b,
             label: g.intl.string(g.t.E99UMj),
             preventCloseOnSelect: true
           };
           return t.concat(e)
         }
       }(),
-      isDisabled: !k,
-      className: h.selector,
+      isDisabled: !M,
+      className: v.selector,
       popoutPosition: "bottom",
       renderOptionLabel: V,
       renderOptionValue: e => {
         let [t] = e;
         return V(t)
       }
-    }, j)), !k && U]
+    }, x)), !M && U]
   })
 }

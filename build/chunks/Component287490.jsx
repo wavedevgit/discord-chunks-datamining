@@ -84,7 +84,7 @@ function S(e) {
     defaultOpen: g
   } = e, [f, x] = r.useState(g), [j, O] = r.useState(false), v = r.useCallback(() => {
     x(e => !e)
-  }, []), S = (0, l.e7)([b.default], () => b.default.getId()), T = (0, h.q)(t, S), I = (0, h.a)(t, S), N = (0, l.Wu)([p.Z], () => a().sortBy(p.Z.getRecentExposures(E.xY.USER, n), e => {
+  }, []), S = (0, l.e7)([b.default], () => b.default.getId()), T = (0, h.q)(t, S), N = (0, h.a)(t, S), I = (0, l.Wu)([p.Z], () => a().sortBy(p.Z.getRecentExposures(E.xY.USER, n), e => {
     let [t, n] = e;
     return -n
   }).map(e => {
@@ -150,7 +150,7 @@ function S(e) {
         children: [(0, i.jsx)(c.R94, {
           type: c.geA.DESCRIPTION,
           children: P
-        }), null == I ? (0, i.jsx)(c.R94, {
+        }), null == N ? (0, i.jsx)(c.R94, {
           type: c.geA.DESCRIPTION,
           children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
         }) : null]
@@ -162,7 +162,7 @@ function S(e) {
         }), (0, i.jsx)(c.Text, {
           variant: "code",
           className: C.pre,
-          children: null == I ? "None" : JSON.stringify(I, true, 2)
+          children: null == N ? "None" : JSON.stringify(N, true, 2)
         }), (0, i.jsx)(c.vwX, {
           tag: "h5",
           className: C.debugTitle,
@@ -178,7 +178,7 @@ function S(e) {
         }), (0, i.jsx)(c.Text, {
           variant: "code",
           className: C.pre,
-          children: 0 === N.length ? "None" : N.join("\n")
+          children: 0 === I.length ? "None" : I.join("\n")
         })]
       }) : (0, i.jsx)(o.zx, {
         className: C.debugButton,

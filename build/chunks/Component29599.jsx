@@ -66,8 +66,8 @@ function w(e) {
   let S = O ? D.intl.string(D.t["2cHUtr"]) : D.intl.string(D.t.O13yh4),
     T = r.useCallback(() => g(false), []),
     {
-      outboundTitle: I,
-      outboundTermsAndConditions: N
+      outboundTitle: N,
+      outboundTermsAndConditions: I
     } = n;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
@@ -86,7 +86,7 @@ function w(e) {
           }), (0, i.jsxs)("div", {
             children: [(0, i.jsx)(u.X6q, {
               variant: "heading-md/semibold",
-              children: I
+              children: N
             }), (0, i.jsx)(u.Text, {
               variant: "text-sm/normal",
               color: "text-default",
@@ -106,7 +106,7 @@ function w(e) {
         className: Z.promotionLegalese,
         variant: "text-xs/normal",
         color: "header-secondary",
-        children: b.Z.parse(N, false, {
+        children: b.Z.parse(I, false, {
           allowLinks: true
         })
       })]
@@ -159,7 +159,7 @@ let k = function() {
       return null == t
     }),
     s = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk74538.ZP.isPremiumExactly(Chunk594174.default.getCurrentUser(), Chunk474936.p9.TIER_2)),
-    l = o().groupBy(exports, e => (0, N.Bg)(e.skuId, e.subscriptionPlanId, e.giftStyle)),
+    l = o().groupBy(exports, e => (0, I.Bg)(e.skuId, e.subscriptionPlanId, e.giftStyle)),
     [d, f] = Chunk73800.useState(false);
   Chunk73800.useEffect(() => {
     Chunk570140.Z.wait(() => {
@@ -296,7 +296,7 @@ let k = function() {
             skuId: t,
             subscriptionPlanId: n,
             giftStyle: r
-          } = (0, N.Z0)(e);
+          } = (0, I.Z0)(e);
           return (0, i.jsx)(A.Z, {
             className: Z.skuCard,
             skuId: t,

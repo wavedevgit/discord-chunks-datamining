@@ -31,7 +31,7 @@ function j(e) {
     analyticsLocations: C
   } = (0, o.ZP)(), O = null != t.displayNameStyles, v = [];
   j && v.push(s.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
-  let [S, T] = (0, c.US)(v), I = S === s.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, N = (0, r.useCallback)(() => {
+  let [S, T] = (0, c.US)(v), N = S === s.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, I = (0, r.useCallback)(() => {
     T(f.L.TAKE_ACTION), m.default.track(h.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, u.I)({
       analyticsLocations: C
     })
@@ -40,7 +40,7 @@ function j(e) {
   }, []);
   return j || O ? (0, i.jsx)(g.Z, {
     title: b.intl.string(x.default["86GtGB"]),
-    titleIcon: I ? (0, i.jsx)(a.IGR, {
+    titleIcon: N ? (0, i.jsx)(a.IGR, {
       text: b.intl.string(b.t.y2b7CA),
       className: _.newBadge
     }) : true,
@@ -52,7 +52,7 @@ function j(e) {
         variant: "primary",
         size: "sm",
         text: b.intl.string(x.default.vJqrIi),
-        onClick: N
+        onClick: I
       }), O && (0, i.jsx)(a.zxk, {
         variant: "secondary",
         size: "sm",

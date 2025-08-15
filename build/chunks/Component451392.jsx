@@ -40,14 +40,14 @@ function x(e) {
     displayProfile: v,
     pendingThemeColors: r,
     isPreview: true
-  }), I = p.ZP.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(_, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(N, y, false);
+  }), N = p.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(_, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(I, y, false);
   if (null == S || null == T) return null;
   let P = e => {
     a(l()(e, null == v ? true : v.themeColors) ? true : e)
   };
   return (0, i.jsx)(h.Z, {
     title: f.intl.string(f.t.DMeO2d),
-    disabled: !I && !x,
+    disabled: !N && !x,
     className: s()(b.__invalid_profileThemesSection, j),
     showPremiumIcon: E,
     forcedDivider: O,

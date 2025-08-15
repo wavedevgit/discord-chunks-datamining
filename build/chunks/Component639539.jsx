@@ -1,7 +1,7 @@
 /** Chunk was on 96750 **/
 /** chunk id: 639539, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => v
+  J: () => b
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -14,7 +14,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk636433 = require("./636433.js");
 
-function p(e) {
+function f(e) {
   if (null != e) {
     let t = new Date,
       {
@@ -64,7 +64,7 @@ let m = e => {
       }
     });
     return (0, r.jsx)("div", {
-      className: f.animatedDigit,
+      className: p.animatedDigit,
       children: n((e, t) => {
         var n, i;
         return (0, r.jsx)(s.animated.div, {
@@ -136,67 +136,67 @@ let m = e => {
       })]
     })
   },
-  h = e => {
+  v = e => {
     let {
       digits: t
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: f.digitContainer,
+        className: p.digitContainer,
         children: (0, r.jsx)(m, {
           digit: t[0]
         })
       }), (0, r.jsx)("div", {
-        className: f.digitContainer,
+        className: p.digitContainer,
         children: (0, r.jsx)(m, {
           digit: t[1]
         })
       })]
     })
   },
-  b = e => {
+  _ = e => {
     let {
       countdown: t
     } = e;
     return (0, r.jsxs)("div", {
-      className: f.digitsContainer,
-      children: [(0, r.jsx)(h, {
+      className: p.digitsContainer,
+      children: [(0, r.jsx)(v, {
         digits: t.hours
-      }), (0, r.jsx)(g, {}), (0, r.jsx)(h, {
+      }), (0, r.jsx)(g, {}), (0, r.jsx)(v, {
         digits: t.minutes
-      }), (0, r.jsx)(g, {}), (0, r.jsx)(h, {
+      }), (0, r.jsx)(g, {}), (0, r.jsx)(v, {
         digits: t.seconds
       })]
     })
   };
 
-function v(e) {
+function b(e) {
   let {
     textVariant: t,
     className: n,
     catalogUpdateTime: l,
     isScrolled: o
-  } = e, [s, u] = i.useState(() => p(l));
+  } = e, [s, u] = i.useState(() => f(l));
   return i.useEffect(() => {
     let e = setInterval(() => {
-      u(() => p(l))
+      u(() => f(l))
     }, 1e3);
     return () => clearInterval(e)
   }, [l]), (0, r.jsxs)("div", {
-    className: a()(n, f.countdownContainer, {
-      [f.isScrolled]: o
+    className: a()(n, p.countdownContainer, {
+      [p.isScrolled]: o
     }),
     "aria-label": s.countdownString,
     children: [(0, r.jsxs)("div", {
-      className: f.iconContainer,
+      className: p.iconContainer,
       children: [(0, r.jsx)("div", {
-        className: f.clockIconWrapper,
+        className: p.clockIconWrapper,
         children: (0, r.jsx)(c.T39, {
           size: "custom",
           height: 16,
           width: 16,
           color: "currentColor",
-          colorClass: f.clockIcon
+          colorClass: p.clockIcon
         })
       }), (0, r.jsx)(c.Text, {
         variant: null != t ? t : "text-sm/medium",
@@ -204,8 +204,8 @@ function v(e) {
         children: d.intl.string(d.t.VZsY3t)
       })]
     }), (0, r.jsx)("div", {
-      className: f.digitsContainer,
-      children: (0, r.jsx)(b, {
+      className: p.digitsContainer,
+      children: (0, r.jsx)(_, {
         countdown: s
       })
     })]

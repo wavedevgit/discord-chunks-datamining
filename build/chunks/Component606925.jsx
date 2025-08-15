@@ -18,10 +18,10 @@ function u(e) {
     color: n,
     look: u,
     onAction: d,
-    Icon: f
+    Icon: p
   } = e;
   if ((0, i.e7)([a.Z], () => a.Z.getAccounts().some(e => e.type === t.type))) return null;
-  let p = null != f ? (0, r.jsx)(f, {
+  let f = null != p ? (0, r.jsx)(p, {
     className: c.platformIcon
   }) : (0, r.jsx)("img", {
     alt: "",
@@ -40,7 +40,7 @@ function u(e) {
     fullWidth: true,
     children: (0, r.jsxs)("div", {
       className: c.flex,
-      children: [p, s.intl.format(s.t.XWSHTU, {
+      children: [f, s.intl.format(s.t.XWSHTU, {
         platform: t.name
       })]
     })

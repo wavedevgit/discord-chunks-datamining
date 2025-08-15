@@ -40,11 +40,11 @@ function C() {
     isEnabled: Chunk131951.Z.isEnabled()
   }));
 
-  function I(e, n) {
+  function N(e, n) {
     t(e), s((n & h.Dg.VOICE) === h.Dg.VOICE)
   }
 
-  function N(e, t) {
+  function I(e, t) {
     m.Z.setMode(v, {
       threshold: e,
       autoThreshold: t
@@ -53,9 +53,9 @@ function C() {
   Chunk73800.useEffect(() => {
     let e = new Chunk846519.V7;
     return module.start(1e3, () => {
-      Chunk131951.Z.getMediaEngine().on(Chunk46973.aB.VoiceActivity, I), module.stop()
+      Chunk131951.Z.getMediaEngine().on(Chunk46973.aB.VoiceActivity, N), module.stop()
     }), () => {
-      Chunk131951.Z.getMediaEngine().removeListener(Chunk46973.aB.VoiceActivity, I), module.stop()
+      Chunk131951.Z.getMediaEngine().removeListener(Chunk46973.aB.VoiceActivity, N), module.stop()
     }
   }, []);
   let y = (0, Chunk255367.jsx)("section", {
@@ -63,7 +63,7 @@ function C() {
     children: (0, Chunk255367.jsx)(Chunk481060.iRW, {
       initialValue: C + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
-      onValueChange: e => N(-((100 - e) * 1), O),
+      onValueChange: e => I(-((100 - e) * 1), O),
       barStyles: {
         background: Chunk692547.Z.unsafe_rawColors.GREEN_360.css
       },
@@ -115,7 +115,7 @@ function C() {
         }), (0, i.jsx)(u.rsf, {
           id: e,
           checked: O,
-          onChange: e => N(C, e)
+          onChange: e => I(C, e)
         })]
       })
     }), y, !T && (0, Chunk255367.jsx)(Chunk481060.R94, {

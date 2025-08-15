@@ -33,18 +33,18 @@ let b = e => {
     } = e,
     S = (0, d.N)(),
     T = null == S ? true : S.subscription_trial,
-    I = (0, c.Ng)(),
-    N = (0, l.Rt)({
+    N = (0, c.Ng)(),
+    I = (0, l.Rt)({
       intervalType: null == T ? true : T.interval,
       intervalCount: null == T ? true : T.interval_count
     }),
     y = (0, o._)({
       defaultResponse: h.intl.string(h.t["8x0jKS"]),
       onNonTier2Subscriber: h.intl.string(h.t.IJI7ys),
-      onTier2TrialOffer: N,
-      onTier0TrialOffer: N,
+      onTier2TrialOffer: I,
+      onTier0TrialOffer: I,
       onDiscountOffer: h.intl.formatToPlainString(h.t.bkQ4bG, {
-        percent: null == I ? true : I.discount.amount
+        percent: null == N ? true : N.discount.amount
       })
     }),
     A = (0, m._)(v);

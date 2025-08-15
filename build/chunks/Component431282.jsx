@@ -83,13 +83,13 @@ function f(e) {
     } = (0, a.f$)(),
     v = r.useRef(null),
     [S, T] = r.useState(false),
-    I = null != x;
+    N = null != x;
   r.useLayoutEffect(() => {
-    if (I) return (0, s.N)(O, e => {
+    if (N) return (0, s.N)(O, e => {
       T(e === t)
     })
-  }, [t, O, I]);
-  let N = e => (0, i.jsxs)(u.kF, g(p({}, e, C, _), {
+  }, [t, O, N]);
+  let I = e => (0, i.jsxs)(u.kF, g(p({}, e, C, _), {
     ref: v,
     role: "button",
     look: o.zx.Looks.BLANK,
@@ -113,19 +113,19 @@ function f(e) {
       children: [(0, i.jsxs)("div", {
         children: [n, d]
       }), b]
-    }), I && (0, i.jsx)(l.Fbu, {
+    }), N && (0, i.jsx)(l.Fbu, {
       size: "xs",
       color: "currentColor"
     })]
   }));
-  return I ? (0, i.jsx)(c.yRy, {
+  return N ? (0, i.jsx)(c.yRy, {
     targetElementRef: v,
     spacing: 0,
     renderPopout: x,
     shouldShow: S,
     onRequestClose: () => T(true),
-    children: N
-  }) : N()
+    children: I
+  }) : I()
 }
 
 function b(e) {

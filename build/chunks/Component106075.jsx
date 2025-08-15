@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk114851 = require("./114851.js"),
+  Chunk979233 = require("./979233.js"),
   Chunk88693 = require("./88693.js"),
   Chunk611928 = require("./611928.jsx"),
   c = (require("./763433.jsx"), require("./922122.jsx")),
@@ -31,7 +31,7 @@ function C() {
       onScroll: t,
       scrollPosition: n,
       resetScrollPosition: C
-    } = (0, Chunk114851.M)(),
+    } = (0, Chunk979233.M)(),
     {
       tabs: S,
       selectedTab: N,

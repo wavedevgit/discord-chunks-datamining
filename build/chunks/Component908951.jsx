@@ -121,10 +121,10 @@ function A(e) {
     return (0, i.jsx)(u.eee, {
       href: e,
       useDefaultUnderlineStyles: false,
-      className: N.externalLink,
+      className: I.externalLink,
       children: (0, i.jsx)(u.zxk, {
         variant: "secondary",
-        text: I.intl.string(I.t.SgX7RU),
+        text: N.intl.string(N.t.SgX7RU),
         fullWidth: true
       })
     })
@@ -135,7 +135,7 @@ function A(e) {
     look: d.zx.Looks.FILLED,
     color: s ? d.zx.Colors.BRAND : d.zx.Colors.PRIMARY,
     onClick: q,
-    children: I.intl.string(I.t.CpOiEB)
+    children: N.intl.string(N.t.CpOiEB)
   });
   {
     let e = E.Z.get(t.planIdForCurrencies);
@@ -146,7 +146,7 @@ function A(e) {
         let e = t.paymentSourceId;
         return (0, i.jsx)(f.ZP, {
           prependOption: null == e ? {
-            label: I.intl.string(I.t.iA5vAw),
+            label: N.intl.string(N.t.iA5vAw),
             value: null
           } : null,
           className: l,
@@ -162,11 +162,11 @@ function A(e) {
       })(), null != t.paymentSourceId ? (0, i.jsx)(h.b, {
         currencies: n,
         children: (0, i.jsxs)("div", {
-          className: a()(N.currency, y.flex, y.alignCenter),
+          className: a()(I.currency, y.flex, y.alignCenter),
           children: [(0, i.jsx)("div", {
-            children: I.intl.string(I.t["0YjaXV"])
+            children: N.intl.string(N.t["0YjaXV"])
           }), (0, i.jsx)(h.Z, {
-            className: N.currencyDropdown,
+            className: I.currencyDropdown,
             selectedCurrency: G,
             currencies: n,
             onChange: e => {

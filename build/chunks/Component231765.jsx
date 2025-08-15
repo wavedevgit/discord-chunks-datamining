@@ -62,8 +62,8 @@ let T = {
     screenshakeEnabled: false,
     confettiEnabled: false
   },
-  I = (0, Chunk392711.range)(0, 11),
-  N = (0, Chunk392711.range)(0, 2.25, .25),
+  N = (0, Chunk392711.range)(0, 11),
+  I = (0, Chunk392711.range)(0, 2.25, .25),
   y = (0, Chunk392711.range)(1, 11),
   A = (0, Chunk392711.range)(1, 26);
 
@@ -256,10 +256,10 @@ function w(e) {
         children: C.intl.string(C.t["/OOFpK"])
       }), (0, i.jsx)(o.iRW, {
         disabled: l,
-        markers: I,
+        markers: N,
         stickToMarkers: true,
-        minValue: I[0],
-        maxValue: I[I.length - 1],
+        minValue: N[0],
+        maxValue: N[N.length - 1],
         initialValue: s,
         onValueChange: e => a({
           combosRequiredCount: e
@@ -302,11 +302,11 @@ function k(e) {
         children: C.intl.string(C.t.CEOEOT)
       }), (0, i.jsx)(o.iRW, {
         disabled: u,
-        markers: N,
+        markers: I,
         equidistant: true,
         stickToMarkers: true,
-        minValue: N[0],
-        maxValue: N[N.length - 1],
+        minValue: I[0],
+        maxValue: I[I.length - 1],
         initialValue: r,
         onValueChange: e => {
           var t;
@@ -314,7 +314,7 @@ function k(e) {
             shakeIntensity: e
           }).shakeIntensity && t.shakeIntensity > r && (0, g.T)(h.hn.MORE), l(t, 1)
         },
-        onMarkerRender: e => e === N[N.length - 1] ? C.intl.string(C.t["4rbMWV"]) : "".concat(100 * e, "%")
+        onMarkerRender: e => e === I[I.length - 1] ? C.intl.string(C.t["4rbMWV"]) : "".concat(100 * e, "%")
       })]
     }), (0, i.jsx)(P, {
       disabled: u,

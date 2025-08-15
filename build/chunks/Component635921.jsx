@@ -2,7 +2,7 @@
 /** chunk id: 635921, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   PK: () => v,
-  ZP: () => I,
+  ZP: () => N,
   _O: () => T
 }), require("./953529.js");
 var Chunk255367 = require("./255367.js"),
@@ -90,7 +90,7 @@ function T(e) {
     })
   })
 }
-let I = Chunk73800.forwardRef((e, t) => {
+let N = Chunk73800.forwardRef((e, t) => {
   let {
     className: n,
     buttonClassName: r,
@@ -98,7 +98,7 @@ let I = Chunk73800.forwardRef((e, t) => {
     isDarkMode: m
   } = e, {
     analyticsLocations: _
-  } = (0, u.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), E = (0, f._O)(), I = (0, h.Nx)(), N = (0, g.Vi)(), y = (0, l.e7)([p.Z], () => p.Z.affinities).length > 0, A = (0, b.ZP)({
+  } = (0, u.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), E = (0, f._O)(), N = (0, h.Nx)(), I = (0, g.Vi)(), y = (0, l.e7)([p.Z], () => p.Z.affinities).length > 0, A = (0, b.ZP)({
     location: "HeroHeading"
   }) ? C.intl.string(C.t["EW+VIS"]) : C.intl.string(C.t.YCZldH);
   return (0, i.jsx)(u.Gt, {
@@ -106,23 +106,23 @@ let I = Chunk73800.forwardRef((e, t) => {
     children: (0, i.jsxs)("div", {
       ref: t,
       className: a()(O.container, n, {
-        [O.settingsContainer]: !I,
-        [O.affinityHeight]: !I && y
+        [O.settingsContainer]: !N,
+        [O.affinityHeight]: !N && y
       }),
       "data-testid": "v2-marketing-page-hero-header",
       children: [(0, i.jsxs)("div", {
-        className: I ? O.fullscreenTextContainer : O.settingsTextContainer,
+        className: N ? O.fullscreenTextContainer : O.settingsTextContainer,
         children: [(0, i.jsx)(c.X6q, {
-          variant: I ? "display-lg" : "display-md",
+          variant: N ? "display-lg" : "display-md",
           color: "always-white",
           children: A
         }), y ? (0, i.jsx)("div", {
           className: O.affinityDescription,
           children: (0, i.jsx)(j.Z, {
             textColor: "always-white",
-            smallerText: !I
+            smallerText: !N
           })
-        }) : (0, i.jsx)(T, {}), N || E ? (0, i.jsx)("div", {
+        }) : (0, i.jsx)(T, {}), I || E ? (0, i.jsx)("div", {
           className: O.buttonContainer,
           children: (0, i.jsx)(x.Z, {
             className: a()(O.button, r),
@@ -130,14 +130,14 @@ let I = Chunk73800.forwardRef((e, t) => {
           })
         }) : (0, i.jsx)(v, {
           subscriptionTier: s,
-          inOfferExperience: I,
+          inOfferExperience: N,
           buttonClassName: r,
           isDarkMode: m
         }), y && (0, i.jsx)(T, {
           variant: "text-md/normal",
           withBottomMargin: false
         })]
-      }), !I && (0, i.jsx)(S, {})]
+      }), !N && (0, i.jsx)(S, {})]
     })
   })
 })

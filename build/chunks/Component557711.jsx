@@ -19,39 +19,39 @@ function d(e) {
     user: n,
     channelId: i,
     guildId: d,
-    source: f,
-    size: p,
+    source: p,
+    size: f,
     look: m,
     color: g,
-    className: h,
-    onAction: b
+    className: v,
+    onAction: _
   } = e, {
-    tooltip: v,
-    loading: _,
+    tooltip: b,
+    loading: h,
     disabled: y,
     onClick: O
-  } = (0, c.Fe)(t, n, f, s.ZP.getNickname(d, i, n)), S = () => {
-    null == b || b(), O()
+  } = (0, c.Fe)(t, n, p, s.ZP.getNickname(d, i, n)), j = () => {
+    null == _ || _(), O()
   };
   return (0, r.jsx)(o.ua7, {
-    text: v,
+    text: b,
     children: e => {
       let {
         onMouseEnter: n,
         onMouseLeave: i
       } = e;
       return (0, r.jsx)(a.zx, {
-        size: p,
-        className: l()(u.syncButton, h),
+        size: f,
+        className: l()(u.syncButton, v),
         innerClassName: u.syncButtonInner,
         look: m,
         color: g,
-        onClick: S,
+        onClick: j,
         onMouseEnter: n,
         onMouseLeave: i,
         disabled: y,
-        submitting: _,
-        "aria-label": null != v ? v : t.name,
+        submitting: h,
+        "aria-label": null != b ? b : t.name,
         children: (0, r.jsx)(o.iOO, {
           size: "xs",
           color: "currentColor"

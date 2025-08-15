@@ -48,7 +48,7 @@ function V(e) {
     user: V,
     isVisible: G,
     shouldShow: F
-  } = e, H = I.ZP.isPremium(V), {
+  } = e, H = N.ZP.isPremium(V), {
     pendingAvatar: z,
     pendingThemeColors: W,
     tryItOutThemeColors: Y,
@@ -129,7 +129,7 @@ function V(e) {
       type: P.Y.PREMIUM,
       isShown: true,
       hasBackground: true,
-      children: [(0, i.jsx)(N.Z, {
+      children: [(0, i.jsx)(I.Z, {
         layoutClassName: U.tryItOutLayout,
         profilePreviewTitle: (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(a.SrA, {

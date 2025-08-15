@@ -35,7 +35,7 @@ let b = {
       className: O
     } = e, {
       balance: v
-    } = (0, d.A)(), [S, T] = r.useState(u.b.DEFAULT), [I, N] = r.useState(false), [y, A] = r.useState(false), P = r.useRef(null), {
+    } = (0, d.A)(), [S, T] = r.useState(u.b.DEFAULT), [N, I] = r.useState(false), [y, A] = r.useState(false), P = r.useRef(null), {
       shouldOpen: R
     } = (0, c.Mm)({
       backgroundElementRef: P,
@@ -44,19 +44,19 @@ let b = {
       onClickPill: g.dG4
     });
     r.useEffect(() => {
-      j && ((0, c.wH)() || R ? (A(true), N(false)) : A(false))
+      j && ((0, c.wH)() || R ? (A(true), I(false)) : A(false))
     }, [j, R]);
     let D = r.useCallback(() => {
-        let e = !I;
+        let e = !N;
         e && null != _ && (0, o.Y)({
           pageType: _,
           sectionType: g.jXE.ORBS_BALANCE_MENU,
           ctaObject: g.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
-        }), T(e ? u.b.SELECTED : u.b.DEFAULT), N(e)
-      }, [I, _]),
+        }), T(e ? u.b.SELECTED : u.b.DEFAULT), I(e)
+      }, [N, _]),
       Z = r.useCallback(() => {
-        I && D()
-      }, [I, D]),
+        N && D()
+      }, [N, D]),
       w = (0, l.Z)(null, Z),
       k = r.useMemo(() => (0, i.jsx)(m.L, {
         analyticsPage: _,
@@ -81,7 +81,7 @@ let b = {
         },
         onClick: D,
         showNotificationBadge: t
-      }), I && (0, i.jsx)("div", {
+      }), N && (0, i.jsx)("div", {
         className: a()(f.cardContainer, C, {
           [f.hidden]: y,
           [f.visible]: !y

@@ -157,7 +157,7 @@ let M = (e, t, n) => (0, r.wj)(e) ? t : n,
       superReactions: {
         title: p.intl.string(p.t.uZt5q6),
         description: p.intl.string(p.t.ZK3Zoa),
-        imageSource: M(n, T, I),
+        imageSource: M(n, T, N),
         imageClassName: t.superReactionsImage
       },
       upload: {
@@ -173,7 +173,7 @@ let M = (e, t, n) => (0, r.wj)(e) ? t : n,
       videoBackground: {
         title: p.intl.string(p.t.NaGpTU),
         description: p.intl.string(p.t["A8O/Q0"]),
-        imageSource: M(n, N, y),
+        imageSource: M(n, I, y),
         imageClassName: t.videoBackgroundImage
       }
     }

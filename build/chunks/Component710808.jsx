@@ -46,7 +46,7 @@ function T(e) {
   return e
 }
 
-function I(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,13 +58,13 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function N() {
+async function I() {
   let e = await Chunk579806.Z.fileManager.getLogPath();
   Chunk579806.Z.fileManager.showItemInFolder(module)
 }
 
 function y(e) {
-  (0, l.h7j)(t => (0, i.jsx)(l.ConfirmModal, I(T({
+  (0, l.h7j)(t => (0, i.jsx)(l.ConfirmModal, N(T({
     header: v.intl.string(v.t["7UXEFx"]),
     confirmText: v.intl.string(v.t.BddRzc),
     cancelText: v.intl.string(v.t["ETE/oK"]),
@@ -100,7 +100,7 @@ function A(e) {
       }), await (0, p.E)(C.GU0.RTC);
       let e = v.intl.string(v.t["fKBB8/"]),
         t = v.intl.string(v.t.BvyxEx);
-      (0, l.h7j)(n => (0, i.jsx)(l.ConfirmModal, I(T({
+      (0, l.h7j)(n => (0, i.jsx)(l.ConfirmModal, N(T({
         header: e,
         confirmButtonColor: a.zx.Colors.BRAND,
         confirmText: v.intl.string(v.t.BddRzc)
@@ -119,7 +119,7 @@ function A(e) {
           o = v.intl.formatToPlainString(v.t["ejOT9/"], {
             errorCode: s
           });
-        (0, l.h7j)(e => (0, i.jsx)(l.ConfirmModal, I(T({
+        (0, l.h7j)(e => (0, i.jsx)(l.ConfirmModal, N(T({
           header: n,
           confirmButtonColor: a.zx.Colors.BRAND,
           confirmText: v.intl.string(v.t.BddRzc)
@@ -214,7 +214,7 @@ function A(e) {
             }), (0, i.jsx)(l.zxk, {
               variant: "primary",
               text: v.intl.string(v.t.nuPtYm),
-              onClick: N
+              onClick: I
             })]
           })
         })]

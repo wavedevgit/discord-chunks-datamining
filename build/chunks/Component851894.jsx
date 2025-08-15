@@ -88,8 +88,8 @@ function k(e) {
   } = (0, p.ZP)(u.Z.USER_SETTINGS_GUILD_PROFILE), k = (0, l.e7)([O.default], () => {
     let e = O.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), L = (0, l.e7)([j.Z], () => !j.Z.isFetchingProfile(k.id, null == n ? true : n.id)), B = (0, l.e7)([C.Z], () => C.Z.hidePersonalInformation), M = (0, l.cj)([I.Z], () => Z(D({}, I.Z.getAllPending()), {
-    source: I.Z.getSource()
+  }), L = (0, l.e7)([j.Z], () => !j.Z.isFetchingProfile(k.id, null == n ? true : n.id)), B = (0, l.e7)([C.Z], () => C.Z.hidePersonalInformation), M = (0, l.cj)([N.Z], () => Z(D({}, N.Z.getAllPending()), {
+    source: N.Z.getSource()
   })), {
     source: U,
     pendingAvatar: V,
@@ -159,6 +159,6 @@ function k(e) {
           nameplateEnabled: W
         })
       })]
-    }) : (0, i.jsx)(N.Z, {})]
+    }) : (0, i.jsx)(I.Z, {})]
   }) : (0, i.jsx)(o.$jN, {})
 }

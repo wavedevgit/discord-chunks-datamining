@@ -31,17 +31,17 @@ function x(e) {
     guildNameplate: C,
     pendingNameplate: O,
     pendingErrors: v
-  } = (0, p.Zx)(t, null == n ? true : n.id), S = j ? [s.z.NAMEPLATE_GUILD_SETTINGS_PROFILE_PAGE_NEW_BADGE] : [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [T, I] = (0, c.US)(S), N = T === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, y = T === s.z.NAMEPLATE_GUILD_SETTINGS_PROFILE_PAGE_NEW_BADGE, A = r.useCallback(() => {
-    I(h.L.TAKE_ACTION), (0, m.f)({
+  } = (0, p.Zx)(t, null == n ? true : n.id), S = j ? [s.z.NAMEPLATE_GUILD_SETTINGS_PROFILE_PAGE_NEW_BADGE] : [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [T, N] = (0, c.US)(S), I = T === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, y = T === s.z.NAMEPLATE_GUILD_SETTINGS_PROFILE_PAGE_NEW_BADGE, A = r.useCallback(() => {
+    N(h.L.TAKE_ACTION), (0, m.f)({
       analyticsLocations: _,
       guildId: null == n ? true : n.id
     })
-  }, [_, I, null == n ? true : n.id]), P = r.useCallback(() => {
+  }, [_, N, null == n ? true : n.id]), P = r.useCallback(() => {
     (null == n ? true : n.id) != null ? (0, d.RH)(null) : (0, l.Rx)(null)
   }, [null == n ? true : n.id]);
   return (0, i.jsx)(g.Z, {
     title: f.intl.string(f.t.x5CoXV),
-    titleIcon: N || y ? (0, i.jsx)(u.Z, {
+    titleIcon: I || y ? (0, i.jsx)(u.Z, {
       className: b.newBadge
     }) : x,
     errors: v,

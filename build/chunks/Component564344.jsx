@@ -36,8 +36,8 @@ function S() {
     S = null != module ? module : exports,
     T = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     {
-      subsection: I,
-      setSubsection: N
+      subsection: N,
+      setSubsection: I
     } = (0, Chunk785145.Z)(),
     {
       hasSearchResults: y,
@@ -45,7 +45,7 @@ function S() {
     } = (0, Chunk839469.E)();
 
   function P(t) {
-    if (I !== t) {
+    if (N !== t) {
       if (n) {
         b.S.dispatch(j.CkL.SHAKE_APP, {
           duration: 300,
@@ -53,7 +53,7 @@ function S() {
         }), b.S.dispatch(j.CkL.EMPHASIZE_NOTICE);
         return
       }
-      t === E.NB.GUILD && null == e && null != S && (0, c.Fq)(S), N(t)
+      t === E.NB.GUILD && null == e && null != S && (0, c.Fq)(S), I(t)
     }
   }
   Chunk73800.useEffect(() => {
@@ -72,7 +72,7 @@ function S() {
       className: Chunk455734.tabBar,
       type: "top",
       look: "brand",
-      selectedItem: I,
+      selectedItem: N,
       onItemSelect: P,
       children: [D ? (0, Chunk255367.jsx)(Chunk481060.njP.Item, {
         className: Chunk455734.tabBarItem,
@@ -83,7 +83,7 @@ function S() {
         id: Chunk526761.NB.GUILD,
         children: Chunk388032.intl.string(Chunk388032.t.kPHroa)
       }, Chunk526761.NB.GUILD) : null]
-    }), I === Chunk526761.NB.GUILD ? (0, Chunk255367.jsx)(Chunk851894.Z, {
+    }), N === Chunk526761.NB.GUILD ? (0, Chunk255367.jsx)(Chunk851894.Z, {
       selectedGuild: S
     }) : (0, Chunk255367.jsx)(Chunk216045.Z, {})]
   })

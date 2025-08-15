@@ -1,7 +1,7 @@
 /** Chunk was on 96750 **/
 /** chunk id: 39628, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => v
 }), require("./388685.js");
 var r, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -20,7 +20,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function p(e) {
   let {
     percentage: t,
     isSingleLine: n
@@ -39,7 +39,7 @@ function f(e) {
   })
 }
 
-function p(e) {
+function f(e) {
   return String(e).padStart(2, "0")
 }
 
@@ -48,7 +48,7 @@ function m(e) {
     time: t,
     padLargestUnit: n
   } = e, r = Math.floor(t) % 60, i = Math.floor(t / 60) % 60, l = Math.floor(t / 3600);
-  return 0 === l ? n ? "".concat(p(i), ":").concat(p(r)) : "".concat(i, ":").concat(p(r)) : n ? "".concat(p(l), ":").concat(p(i), ":").concat(p(r)) : "".concat(l, ":").concat(p(i), ":").concat(p(r))
+  return 0 === l ? n ? "".concat(f(i), ":").concat(f(r)) : "".concat(i, ":").concat(f(r)) : n ? "".concat(f(l), ":").concat(f(i), ":").concat(f(r)) : "".concat(l, ":").concat(f(i), ":").concat(f(r))
 }
 class g extends(r = Chunk73800.PureComponent) {
   componentDidMount() {
@@ -83,7 +83,7 @@ class g extends(r = Chunk73800.PureComponent) {
         })
       }), (0, Chunk255367.jsx)("div", {
         className: Chunk243404.barInSingleLine,
-        children: (0, Chunk255367.jsx)(f, {
+        children: (0, Chunk255367.jsx)(p, {
           percentage: d / Chunk846519,
           isSingleLine: true
         })
@@ -98,7 +98,7 @@ class g extends(r = Chunk73800.PureComponent) {
       className: o()(require, {
         [Chunk243404.themed]: r
       }),
-      children: [(0, Chunk255367.jsx)(f, {
+      children: [(0, Chunk255367.jsx)(p, {
         percentage: d / Chunk846519,
         isSingleLine: false
       }), (0, Chunk255367.jsxs)(Chunk600164.Z, {
@@ -129,4 +129,4 @@ class g extends(r = Chunk73800.PureComponent) {
 d(g, "defaultProps", {
   themed: false
 });
-let h = g
+let v = g

@@ -10,9 +10,7 @@ let a = "_",
   o = /(-|%20)/g,
   s = "AND",
   l = /%26/g,
-  c = {
-    THE_LAST_MEADOW: "CLICKER_GAME"
-  };
+  c = {};
 
 function u(e) {
   return null == e ? "" : e.toUpperCase().replace(o, a).replace(l, s)

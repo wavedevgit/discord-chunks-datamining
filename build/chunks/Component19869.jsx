@@ -33,7 +33,7 @@ function S() {
     location: "revenue_storybook"
   });
   return (0, Chunk255367.jsxs)("div", {
-    children: [module && (0, Chunk255367.jsx)(I, {}), (0, Chunk255367.jsx)(T, {}), (0, Chunk255367.jsx)(N, {})]
+    children: [module && (0, Chunk255367.jsx)(N, {}), (0, Chunk255367.jsx)(T, {}), (0, Chunk255367.jsx)(I, {})]
   })
 }
 
@@ -42,7 +42,7 @@ function T() {
     openIntroToOrbsClaimedCoachmark: e
   } = (0, Chunk511050.l)({
     location: "VirtualCurrencyComponents"
-  }), [t, n] = Chunk73800.useState(150), [p, g] = Chunk73800.useState(150), [_, j] = Chunk73800.useState(500), [S, T] = Chunk73800.useState(Chunk317257.b.DEFAULT), I = () => {
+  }), [t, n] = Chunk73800.useState(150), [p, g] = Chunk73800.useState(150), [_, j] = Chunk73800.useState(500), [S, T] = Chunk73800.useState(Chunk317257.b.DEFAULT), N = () => {
     switch (S) {
       case Chunk317257.b.DEFAULT:
         T(Chunk317257.b.HIGHLIGHTED);
@@ -54,7 +54,7 @@ function T() {
         T(Chunk317257.b.DEFAULT)
     }
   }, {
-    analyticsLocations: N
+    analyticsLocations: I
   } = (0, Chunk906732.ZP)(Chunk100527.Z.PAYMENT_FLOW_TEST_PAGE);
   return (0, Chunk255367.jsxs)(Chunk450272.$0, {
     children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
@@ -89,7 +89,7 @@ function T() {
         onClick: () => {
           (0, Chunk37234.xf)(), (0, Chunk703656.s1)().location.pathname.includes(Chunk981631.Z5c.COLLECTIBLES_SHOP) || (0, Chunk335131.mK)({
             openInLayer: false,
-            analyticsLocations: N,
+            analyticsLocations: I,
             analyticsSource: Chunk100527.Z.REVENUE_STORYBOOK_TEST_PAGE
           }), module({
             forceOpen: true,
@@ -138,7 +138,7 @@ function T() {
         children: (0, Chunk255367.jsx)(Chunk970815.A4, {
           balance: Chunk52647,
           balanceWidgetMode: S,
-          onClick: () => I()
+          onClick: () => N()
         })
       }), (0, Chunk255367.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
@@ -162,7 +162,7 @@ function T() {
         children: (0, Chunk255367.jsx)(Chunk970815.A4, {
           balance: Chunk52647,
           balanceWidgetMode: S,
-          onClick: () => I()
+          onClick: () => N()
         })
       })]
     }), (0, Chunk255367.jsx)(Chunk450272.E_, {
@@ -176,7 +176,7 @@ function T() {
   })
 }
 
-function I() {
+function N() {
   let [e, t] = Chunk73800.useState("1144308439720394944");
   return (0, Chunk255367.jsxs)(Chunk450272.$0, {
     children: [(0, Chunk255367.jsx)(Chunk481060.X6q, {
@@ -218,7 +218,7 @@ function I() {
   })
 }
 
-function N() {
+function I() {
   let {
     resetOnboardingAnnouncementModal: e
   } = (0, Chunk52647.Z)();

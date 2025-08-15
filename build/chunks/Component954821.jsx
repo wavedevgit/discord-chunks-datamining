@@ -31,8 +31,8 @@ let _ = e => {
     } = e, O = (0, m.Dt)(), v = (0, g.YB)(_), S = (null == v || null == (t = v.cover_image_asset) ? true : t.application_id) != null ? (0, p._W)(v.cover_image_asset.application_id, v.cover_image_asset, 440) : true, {
       analyticsLocations: T
     } = (0, u.ZP)(d.Z.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
-      cancelSubscription: I,
-      error: N,
+      cancelSubscription: N,
+      error: I,
       submitting: y
     } = (e => {
       let [t, n] = r.useState(false), [i, s] = r.useState(null);
@@ -50,7 +50,7 @@ let _ = e => {
         submitting: t
       }
     })(T), A = async () => {
-      await I(E.id) && C()
+      await N(E.id) && C()
     }, P = j.role_benefits.benefits.filter(e => e.ref_type === f.Qs.CHANNEL), R = j.role_benefits.benefits.filter(e => e.ref_type === f.Qs.INTANGIBLE), D = a()(E.currentPeriodEnd).format("MMMM Do, YYYY"), Z = b.intl.formatToPlainString(b.t.KsMRPz, {
       numChannels: P.length,
       numAdditionalBenefits: R.length,
@@ -71,8 +71,8 @@ let _ = e => {
           className: x.closeButton,
           onClick: C
         })]
-      }), null != N ? (0, i.jsx)(o.kzN, {
-        children: N.message
+      }), null != I ? (0, i.jsx)(o.kzN, {
+        children: I.message
       }) : null, (0, i.jsxs)(o.hzk, {
         className: x.content,
         children: [(0, i.jsx)(o.X6q, {

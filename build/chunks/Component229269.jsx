@@ -89,7 +89,7 @@ function S() {
       })
     }), (0, Chunk255367.jsx)(Chunk450272.E_, {
       label: "Google Pay - Add Payment Step Body Connector View",
-      children: (0, Chunk255367.jsx)(N, {
+      children: (0, Chunk255367.jsx)(I, {
         paymentRequestWallet: "googlePay"
       })
     }), (0, Chunk255367.jsx)(Chunk481060.X6q, {
@@ -108,7 +108,7 @@ function S() {
       })
     }), (0, Chunk255367.jsx)(Chunk450272.E_, {
       label: "Apple Pay - Add Payment Step Body Connector View",
-      children: (0, Chunk255367.jsx)(N, {
+      children: (0, Chunk255367.jsx)(I, {
         paymentRequestWallet: "applePay"
       })
     })]
@@ -134,7 +134,7 @@ function T(e) {
   return e.renderStepBody ? (0, i.jsx)(f.t, C({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, i.jsx)(m.Ch, C({}, n, e)) : (0, i.jsx)(m.Tr, C({}, n, e))
 }
 
-function I(e) {
+function N(e) {
   let {
     children: t,
     footer: n,
@@ -156,11 +156,11 @@ function I(e) {
   })
 }
 
-function N(e) {
+function I(e) {
   let {
     paymentRequestWallet: t
   } = e, n = r.useRef(null), [s, a] = r.useState(false);
-  return (0, i.jsx)(I, {
+  return (0, i.jsx)(N, {
     footer: (0, i.jsx)(h.Z, {
       primaryCTA: h.Z.CTAType.CONTINUE,
       primaryText: _.intl.string("applePay" === t ? _.t.WoXvJC : _.t.wnVVr6),
@@ -182,7 +182,7 @@ function y(e) {
   let {
     children: t
   } = e;
-  return (0, i.jsx)(I, {
+  return (0, i.jsx)(N, {
     className: j.choosePaymentTypeModal,
     children: (0, i.jsx)("div", {
       className: j.choosePaymentTypeContainer,

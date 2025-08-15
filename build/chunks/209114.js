@@ -5,7 +5,7 @@ require.d(exports, {
 });
 let r = (0, require("./427164.js").le)({
   kind: "user",
-  name: "2025-08_always_guild_media",
+  name: "2025-08-always-guild-media",
   defaultConfig: {
     enabled: false
   },

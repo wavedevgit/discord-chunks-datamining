@@ -59,9 +59,9 @@ let b = e => {
       S = (0, m.Z)(),
       T = (0, g.mN)(),
       {
-        fractionalState: I
+        fractionalState: N
       } = (0, o.Z)(),
-      N = (0, c.W)(),
+      I = (0, c.W)(),
       y = (0, d.Z)({
         location: "WhatsNewSection"
       }),
@@ -70,8 +70,8 @@ let b = e => {
         variant: n,
         hideCardsOnNarrowScreen: false,
         isPremiumSubscriber: T,
-        fractionalState: I,
-        isInReverseTrial: N,
+        fractionalState: N,
+        isInReverseTrial: I,
         showVoiceFiltersCard: y
       }),
       P = A.some(e => null != e.pillText);

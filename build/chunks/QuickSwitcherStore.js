@@ -108,7 +108,8 @@ function X() {
         query: "",
         guildId: Chunk914010.Z.getGuildId(),
         limit: 100,
-        fuzzy: true
+        fuzzy: true,
+        allowEmptyQueries: true
       });
     case Chunk212819.h8.VOICE_CHANNEL:
       return Chunk483360.ZP.queryChannels({
@@ -117,7 +118,8 @@ function X() {
         limit: 100,
         fuzzy: true,
         filter: () => true,
-        type: Chunk984933.Zb
+        type: Chunk984933.Zb,
+        allowEmptyQueries: true
       })
   }
   let i = [],

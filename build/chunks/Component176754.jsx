@@ -67,7 +67,7 @@ let h = e => {
     onRest: () => E(e => false * e)
   } : {
     blur: 0
-  }), O = (0, a.useMemo)(() => Math.round(750 + (200 * Math.random() - 100)), []), [v, S] = (0, a.useState)(0), [T, I] = (0, a.useState)(1), N = (0, o.q_F)({
+  }), O = (0, a.useMemo)(() => Math.round(750 + (200 * Math.random() - 100)), []), [v, S] = (0, a.useState)(0), [T, N] = (0, a.useState)(1), I = (0, o.q_F)({
     xOffset: v,
     config: {
       tension: 10,
@@ -76,7 +76,7 @@ let h = e => {
     }
   });
   return ((0, c.Z)(() => {
-    S(T * (.5 * Math.random() * 5 + 2.5)), I(e => false * e)
+    S(T * (.5 * Math.random() * 5 + 2.5)), N(e => false * e)
   }, O), p) ? g : (0, s.jsx)(l.animated.div, {
     style: {
       transform: null == (t = h.y) ? true : t.to(e => {
@@ -89,7 +89,7 @@ let h = e => {
         }
         return "translateY(".concat(t + n, "px)")
       }),
-      translateX: m ? N.xOffset.to(e => "".concat(e, "px")) : 0,
+      translateX: m ? I.xOffset.to(e => "".concat(e, "px")) : 0,
       scale: _.scale,
       filter: null == (n = C.blur) ? true : n.to(e => "blur(".concat(e, "px)")),
       opacity: null != u && u.changeOpacity ? u.containerVisibilityPercentage : 1

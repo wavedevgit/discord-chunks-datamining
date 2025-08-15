@@ -143,13 +143,13 @@ class w extends(i = Chunk73800.PureComponent) {
       className: y.externalRow,
       children: [(0, r.jsx)("div", {
         className: y.externalRowHeader,
-        children: N.intl.format(N.t["6mIX6u"], {
-          paymentGatewayName: I.Vz[e.paymentGateway]
+        children: I.intl.format(I.t["6mIX6u"], {
+          paymentGatewayName: N.Vz[e.paymentGateway]
         })
       }), (0, r.jsx)("div", {
         className: y.externalRowBody,
-        children: N.intl.format(N.t.eG0uZG, {
-          paymentGatewayName: I.Vz[e.paymentGateway],
+        children: I.intl.format(I.t.eG0uZG, {
+          paymentGatewayName: N.Vz[e.paymentGateway],
           billingHistoryLink: (0, O.JE)(e.paymentGateway, "BILLING_HISTORY")
         })
       })]

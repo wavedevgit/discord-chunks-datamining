@@ -1,7 +1,7 @@
 /** Chunk was on 96750 **/
 /** chunk id: 144830, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => v
 }), require("./415506.js"), require("./388685.js");
 var r, i, Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -30,8 +30,8 @@ function d(e) {
   }
   return e
 }
-var f = ((r = f || {}).ACTIVITY_FEED = "ACTIVITY_FEED", r.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", r.USER_ACTIVITY = "USER_ACTIVITY", r.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", r.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", r),
-  p = ((i = p || {}).START = "START", i.END = "END", i.TIME = "TIME", i);
+var p = ((r = p || {}).ACTIVITY_FEED = "ACTIVITY_FEED", r.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", r.USER_ACTIVITY = "USER_ACTIVITY", r.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", r.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", r),
+  f = ((i = f || {}).START = "START", i.END = "END", i.TIME = "TIME", i);
 let m = e => (t, n) => null == n ? "" : c.intl.format(e(), d({
     time: t
   }, n)),
@@ -162,7 +162,7 @@ let m = e => (t, n) => null == n ? "" : c.intl.format(e(), d({
     }
   };
 
-function h(e) {
+function v(e) {
   var t, n;
   return n = class extends(t = a.PureComponent) {
     componentDidMount() {
@@ -236,15 +236,15 @@ function h(e) {
         {
           time: u
         } = this.state,
-        f = this.getType();
-      if (null == f) return null;
-      let p = this.getTimeUnit(u, i, f),
-        m = g[i][f];
+        p = this.getType();
+      if (null == p) return null;
+      let f = this.getTimeUnit(u, i, p),
+        m = g[i][p];
       if (null == m) return null;
-      let h = m[p],
-        b = Math.floor((0, o.A3)(u, p));
+      let v = m[f],
+        _ = Math.floor((0, o.A3)(u, f));
       return (0, l.jsx)(e, (t = d({}, c), n = n = {
-        children: null == h ? true : h(b, a, s)
+        children: null == v ? true : v(_, a, s)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -265,5 +265,5 @@ function h(e) {
         })
       })
     }
-  }, u(n, "Locations", f), u(n, "Types", p), n
+  }, u(n, "Locations", p), u(n, "Types", f), n
 }

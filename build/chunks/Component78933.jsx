@@ -123,10 +123,10 @@ function ea(e) {
     eT = (0, h.p)({
       location: "UserProfileAccountPopout"
     }),
-    eI = (0, v.b)({
+    eN = (0, v.b)({
       location: "UserProfileAccountPopout"
     }),
-    eN = (0, g.Z)({
+    eI = (0, g.Z)({
       location: "UserProfileAccountPopout"
     }),
     ey = r.useRef(null),
@@ -140,7 +140,7 @@ function ea(e) {
       t && eP(String(Date.now()))
     }
   });
-  let [eR, eD] = (0, x.US)(eN ? [l.z.CUSTOM_STATUS_PROMPTS_COACHMARK] : []), eZ = eR === l.z.CUSTOM_STATUS_PROMPTS_COACHMARK, ew = r.useRef((0, K.Z)(e => e.shouldRenderTenureLevelUp)), ek = r.useMemo(() => (0, f.Z)(), []), [eL, eB] = r.useState(true);
+  let [eR, eD] = (0, x.US)(eI ? [l.z.CUSTOM_STATUS_PROMPTS_COACHMARK] : []), eZ = eR === l.z.CUSTOM_STATUS_PROMPTS_COACHMARK, ew = r.useRef((0, K.Z)(e => e.shouldRenderTenureLevelUp)), ek = r.useMemo(() => (0, f.Z)(), []), [eL, eB] = r.useState(true);
   r.useEffect(() => {
     setTimeout(() => {
       eB(false)
@@ -175,7 +175,7 @@ function ea(e) {
               user: t,
               displayProfile: ed,
               themeType: et.lY.POPOUT
-            }), (0, i.jsx)(I.Z, {
+            }), (0, i.jsx)(N.Z, {
               user: t,
               displayProfile: ed,
               themeType: et.lY.POPOUT,
@@ -211,7 +211,7 @@ function ea(e) {
               nickname: W.ZP.getName(null, null, t),
               onOpenProfile: ec ? true : eM,
               pronouns: null == ed ? true : ed.pronouns,
-              tags: (0, i.jsx)(N.Z, {
+              tags: (0, i.jsx)(I.Z, {
                 displayProfile: ed,
                 themeType: et.lY.POPOUT,
                 onClose: n,
@@ -234,7 +234,7 @@ function ea(e) {
             }), (0, i.jsx)(A.Z, {
               isPremiumUser: eS,
               onInteraction: n
-            }), eI ? (0, i.jsx)(Z.Z, {
+            }), eN ? (0, i.jsx)(Z.Z, {
               user: t,
               currentUser: t,
               displayProfile: ed,

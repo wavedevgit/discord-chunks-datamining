@@ -1,7 +1,7 @@
 /** Chunk was on 96750 **/
 /** chunk id: 415635, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => v
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -17,13 +17,13 @@ var Chunk255367 = require("./255367.js"),
   Chunk981631 = require("./981631.js"),
   Chunk57495 = require("./57495.js");
 
-function h(e) {
+function v(e) {
   let {
     channelId: t,
     guildId: n,
-    userId: h,
-    containerDimensions: b
-  } = e, v = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [_, y] = i.useState([]), O = _.length < 50;
+    userId: v,
+    containerDimensions: _
+  } = e, b = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [h, y] = i.useState([]), O = h.length < 50;
   i.useEffect(() => {
     function e(e) {
       var r;
@@ -32,17 +32,17 @@ function h(e) {
         userId: a,
         emoji: o,
         animationType: s,
-        animationId: p
+        animationId: f
       } = e;
-      if (null != h && h !== a || u.Z.getEnabled() && (0, d.Z)(null != (r = null == o ? true : o.name) ? r : "")) return;
-      let g = null != o && null != s && null != p;
-      if (i === t && !v && O && g) {
-        let e = (0, f._r)(o),
+      if (null != v && v !== a || u.Z.getEnabled() && (0, d.Z)(null != (r = null == o ? true : o.name) ? r : "")) return;
+      let g = null != o && null != s && null != f;
+      if (i === t && !b && O && g) {
+        let e = (0, p._r)(o),
           r = null != o.id && !o.animated,
           i = {
             id: (0, l.Z)(),
             animationType: s,
-            animationId: p,
+            animationId: f,
             shouldResize: r,
             url: e,
             userId: a
@@ -56,25 +56,25 @@ function h(e) {
     return o.Z.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
       o.Z.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
     }
-  }, [t, n, h, v, O]);
-  let S = i.useCallback(e => {
+  }, [t, n, v, b, O]);
+  let j = i.useCallback(e => {
     y(t => {
       let n = [...t],
         r = n.findIndex(t => t.id === e);
       return n.splice(r, 1), n
     })
   }, []);
-  return v ? null : (0, r.jsx)("div", {
+  return b ? null : (0, r.jsx)("div", {
     className: g.effectsWrapper,
     style: {
-      width: b.width
+      width: _.width
     },
     children: (0, r.jsx)("div", {
       className: g.effects,
-      children: _.map(e => (0, r.jsx)(p.Z, {
-        containerDimensions: b,
+      children: h.map(e => (0, r.jsx)(f.Z, {
+        containerDimensions: _,
         effect: e,
-        onComplete: S
+        onComplete: j
       }, e.id))
     })
   })

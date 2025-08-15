@@ -57,7 +57,7 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = e => {
+let N = e => {
     let {
       userRecord: t,
       placement: n
@@ -88,7 +88,7 @@ let I = e => {
       }))
     })
   },
-  N = e => {
+  I = e => {
     let {
       numSentReferrals: t,
       placement: n
@@ -111,19 +111,19 @@ let I = e => {
     } = e, n = t.length, r = n < 1 ? null : t[0], s = n < 2 ? null : t[1], a = n < 3 ? null : t[2];
     return (0, i.jsxs)("div", {
       className: O.userAvatarProgressBarContainer,
-      children: [(0, i.jsx)(I, {
+      children: [(0, i.jsx)(N, {
         userRecord: r,
         placement: 1
-      }), (0, i.jsx)(N, {
+      }), (0, i.jsx)(I, {
         numSentReferrals: n,
         placement: 1
-      }), (0, i.jsx)(I, {
+      }), (0, i.jsx)(N, {
         userRecord: s,
         placement: 2
-      }), (0, i.jsx)(N, {
+      }), (0, i.jsx)(I, {
         numSentReferrals: n,
         placement: 2
-      }), (0, i.jsx)(I, {
+      }), (0, i.jsx)(N, {
         userRecord: a,
         placement: 3
       })]
@@ -134,21 +134,21 @@ let I = e => {
       isInSettings: t = false
     } = e, s = (0, l.e7)([b.Z], () => b.Z.getRecipientStatus()), {
       referralSentUsers: m
-    } = (0, x.G)(), I = r.useMemo(() => m.map(e => new p.Z(e)), [m]), N = {
+    } = (0, x.G)(), N = r.useMemo(() => m.map(e => new p.Z(e)), [m]), I = {
       redeemed: 0,
       converted: 0,
       sent: s.size
     };
     s.forEach(e => {
-      e === f.Fe.REDEEMED && N.redeemed++, e === f.Fe.CONVERTED && (N.redeemed++, N.converted++)
+      e === f.Fe.REDEEMED && I.redeemed++, e === f.Fe.CONVERTED && (I.redeemed++, I.converted++)
     });
-    let A = N.sent === x.Q,
+    let A = I.sent === x.Q,
       P = h.Z.getArticleURL(E.BhN.REFERRAL_PROGRAM),
       {
         analyticsLocations: R
       } = (0, u.ZP)(d.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
       D = r.useRef(null),
-      Z = N.sent / x.Q * 100,
+      Z = I.sent / x.Q * 100,
       w = (0, i.jsxs)("div", {
         className: O.referralInfoContent,
         children: [(0, i.jsx)(_.ZP, {
@@ -167,12 +167,12 @@ let I = e => {
               hasSentAll: A
             })
           }), (0, i.jsx)(y, {
-            userRecords: I
+            userRecords: N
           }), (0, i.jsx)(c.Text, {
             variant: t ? "text-sm/normal" : "text-lg/medium",
             children: (0, j.Hg)({
               helpdeskArticle: P,
-              referralsStatuses: N
+              referralsStatuses: I
             })
           }), (0, i.jsx)("div", {
             className: a()(O.expandedProgressBarButtonContainer, {
@@ -212,7 +212,7 @@ let I = e => {
           })]
         })]
       }),
-      k = N.redeemed === x.Q;
+      k = I.redeemed === x.Q;
     return (0, i.jsx)(u.Gt, {
       value: R,
       children: (0, i.jsx)("div", {

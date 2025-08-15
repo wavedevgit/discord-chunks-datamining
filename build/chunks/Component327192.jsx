@@ -72,12 +72,12 @@ let z = e => {
       isJoining: a,
       joinErrorMessage: o,
       showJoinErrorMessage: c
-    } = (0, l.cj)([I.Z], () => ({
-      isJoining: I.Z.isJoining(s.id),
-      joinErrorMessage: "" === I.Z.joinErrorMessage(s.id) ? V.intl.string(V.t.j2d6Ki) : I.Z.joinErrorMessage(s.id),
-      showJoinErrorMessage: true !== I.Z.joinErrorMessage(s.id)
+    } = (0, l.cj)([N.Z], () => ({
+      isJoining: N.Z.isJoining(s.id),
+      joinErrorMessage: "" === N.Z.joinErrorMessage(s.id) ? V.intl.string(V.t.j2d6Ki) : N.Z.joinErrorMessage(s.id),
+      showJoinErrorMessage: true !== N.Z.joinErrorMessage(s.id)
     }), [s.id]);
-  return null != (0, l.e7)([N.Z], () => N.Z.getGuild(s.guild.id), [s.guild.id]) || (r = (0, i.jsx)(u.zx, {
+  return null != (0, l.e7)([I.Z], () => I.Z.getGuild(s.guild.id), [s.guild.id]) || (r = (0, i.jsx)(u.zx, {
     size: u.Ph.SMALL,
     onClick: function() {
       g.Z.joinServer(s.id, () => {})
@@ -128,7 +128,7 @@ function W(e) {
     } = e,
     [f, x] = r.useState(o.friendSync),
     [v, S] = r.useState(o.visibility),
-    [I, N] = r.useState(o.metadataVisibility),
+    [N, I] = r.useState(o.metadataVisibility),
     [y, A] = r.useState(o.showActivity),
     [P, D] = r.useState(null),
     [U, F] = r.useState(null),
@@ -137,7 +137,7 @@ function W(e) {
     X = (0, j.rR)(o.type),
     J = _.Z.get(X);
   r.useEffect(() => {
-    x(o.friendSync), S(o.visibility), N(o.metadataVisibility), A(o.showActivity)
+    x(o.friendSync), S(o.visibility), I(o.metadataVisibility), A(o.showActivity)
   }, [o]);
   let Q = {
       inProgressVisibility: P,
@@ -152,7 +152,7 @@ function W(e) {
       inProgressVisibility: e,
       inProgressMetadataVisibility: t
     } = $.current;
-    null != e && (S(e), g.Z.setVisibility(o.type, o.id, e), D(null)), null != t && (N(t), g.Z.setMetadataVisibility(o.type, o.id, t), F(null))
+    null != e && (S(e), g.Z.setVisibility(o.type, o.id, e), D(null)), null != t && (I(t), g.Z.setMetadataVisibility(o.type, o.id, t), F(null))
   }, [o]);
 
   function ee() {
@@ -347,7 +347,7 @@ function W(e) {
     })), (null == (t = _.Z.get(o.type)) ? true : t.hasMetadata) === true && (a = (0, i.jsx)(m.j7V, {
       className: G.connectionOptionSwitch,
       hideBorder: true,
-      value: 1 === I,
+      value: 1 === N,
       onChange: function(e) {
         let {
           verified: t
@@ -359,7 +359,7 @@ function W(e) {
           });
           return
         }
-        N(n), g.Z.setMetadataVisibility(o.type, o.id, n)
+        I(n), g.Z.setMetadataVisibility(o.type, o.id, n)
       },
       disabled: 1 !== v || null == o.metadata,
       children: (0, i.jsx)(m.Text, {

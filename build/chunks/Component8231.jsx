@@ -28,7 +28,7 @@ var Chunk255367 = require("./255367.js"),
   Chunk314907 = require("./314907.js"),
   Chunk826701 = require("./826701.js");
 
-function I(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function N(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -166,7 +166,7 @@ let y = () => (0, Chunk255367.jsx)("div", {
             variant: "text-lg/bold"
           })
         }), (0, i.jsx)("td", {}), (0, i.jsx)("td", {})]
-      }), n.map((e, t) => (0, i.jsx)(D, N(I({}, e), {
+      }), n.map((e, t) => (0, i.jsx)(D, I(N({}, e), {
         withBottomMargin: t === n.length - 1
       }), e.id))]
     })
@@ -290,7 +290,7 @@ let y = () => (0, Chunk255367.jsx)("div", {
                 tier2MonthlyPrice: M,
                 shouldUseDiscountPrice: R,
                 tier2DiscountedPriceString: w
-              }), U.map(e => (0, r.createElement)(Z, N(I({}, e), {
+              }), U.map(e => (0, r.createElement)(Z, I(N({}, e), {
                 key: e.id
               })))]
             })]

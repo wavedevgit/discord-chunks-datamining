@@ -29,10 +29,10 @@ let j = Chunk73800.forwardRef((e, t) => {
     subscriptionTier: C
   } = e, {
     analyticsLocations: O
-  } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), v = (0, m.Nx)(), S = (0, u.rO)(), T = r.useRef(null), [I, N] = r.useState(false);
+  } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), v = (0, m.Nx)(), S = (0, u.rO)(), T = r.useRef(null), [N, I] = r.useState(false);
   return r.useEffect(() => {
-    !s || E || I || null == T.current || T.current.play()
-  }, [s, E, I]), (0, i.jsx)(c.Gt, {
+    !s || E || N || null == T.current || T.current.play()
+  }, [s, E, N]), (0, i.jsx)(c.Gt, {
     value: O,
     children: (0, i.jsxs)("div", {
       ref: t,
@@ -57,7 +57,7 @@ let j = Chunk73800.forwardRef((e, t) => {
           poster: x.Z,
           className: f.footerArt,
           onEnded: () => {
-            N(true)
+            I(true)
           },
           ref: T,
           children: (0, i.jsx)("source", {

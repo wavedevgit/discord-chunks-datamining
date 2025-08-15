@@ -14,11 +14,11 @@ var Chunk255367 = require("./255367.js"),
 
 function d() {
   let e = (0, Chunk442837.e7)([Chunk709706.Z], () => Chunk709706.Z.getError());
-  return module ? (0, Chunk255367.jsx)(f, {
+  return module ? (0, Chunk255367.jsx)(p, {
     error: module
   }) : null
 }
-let f = e => {
+let p = e => {
   let {
     error: t
   } = e, [n, a] = (0, i.useState)(false), d = (0, o.Yzy)(!n, {
@@ -34,7 +34,7 @@ let f = e => {
       opacity: 0,
       translateY: 80
     }
-  }, "respect-motion-settings"), f = (() => {
+  }, "respect-motion-settings"), p = (() => {
     switch (t) {
       case s.r.ERROR_DOWNLOADING_DEPENDENCY:
         return c.intl.string(c.t.D9neaG);
@@ -52,7 +52,7 @@ let f = e => {
       children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "always-white",
-        children: f
+        children: p
       }), (0, r.jsx)(o.RyX, {
         onClick: () => a(true)
       })]

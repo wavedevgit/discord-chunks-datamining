@@ -1,8 +1,8 @@
 /** Chunk was on 96750 **/
 /** chunk id: 717881, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => j,
-  Z: () => x
+  P: () => x,
+  Z: () => I
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -42,7 +42,7 @@ function O(e) {
   return e
 }
 
-function S(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,7 +55,7 @@ function S(e, t) {
   }), e
 }
 
-function I(e) {
+function S(e) {
   let {
     type: t,
     source: n,
@@ -65,10 +65,10 @@ function I(e) {
     guildId: s,
     channelId: u,
     onAction: d,
-    actionColor: f
+    actionColor: p
   } = e;
   return (0, r.jsx)(c.Z, {
-    className: (0, v.l)(y, "actions", t),
+    className: (0, b.l)(y, "actions", t),
     type: t,
     source: n,
     activity: i,
@@ -76,21 +76,21 @@ function I(e) {
     user: o,
     guildId: s,
     look: a.zx.Looks.FILLED,
-    color: null != f ? f : a.zx.Colors.PRIMARY,
+    color: null != p ? p : a.zx.Colors.PRIMARY,
     channelId: u,
     onAction: d
   })
 }
-let j = Chunk387903.Z.Types,
-  x = function(e) {
+let x = Chunk387903.Z.Types,
+  I = function(e) {
     var {
       activity: t,
       user: n,
       useStoreStream: a = true,
       showActions: c = true,
-      hideHeader: v = false,
+      hideHeader: b = false,
       showChannelDetails: y = false
-    } = e, j = function(e, t) {
+    } = e, x = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -105,45 +105,45 @@ let j = Chunk387903.Z.Types,
       }
       return i
     }(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]);
-    let x = (0, l.e7)([h.Z, m.Z], () => {
+    let I = (0, l.e7)([v.Z, m.Z], () => {
         var e;
-        return m.Z.getChannel(null == (e = h.Z.getVoiceStateForUser(n.id)) ? true : e.channelId)
+        return m.Z.getChannel(null == (e = v.Z.getVoiceStateForUser(n.id)) ? true : e.channelId)
       }),
-      E = (0, d.E)("UserActivityContainer", x),
-      P = (0, l.e7)([p.Z], () => a ? p.Z.getAnyStreamForUser(n.id) : null),
-      C = (null == t ? true : t.type) === _.IIU.HANG_STATUS && E ? x : null,
-      T = (0, l.e7)([g.Z, h.Z, m.Z], () => {
+      P = (0, d.E)("UserActivityContainer", I),
+      C = (0, l.e7)([f.Z], () => a ? f.Z.getAnyStreamForUser(n.id) : null),
+      E = (null == t ? true : t.type) === h.IIU.HANG_STATUS && P ? I : null,
+      w = (0, l.e7)([g.Z, v.Z, m.Z], () => {
         var e, r;
-        return (0, o.Z)(t, _.xjy.EMBEDDED) ? g.Z.getGuild(null == (e = m.Z.getChannel(null == (r = h.Z.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != C ? g.Z.getGuild(C.getGuildId()) : null
+        return (0, o.Z)(t, h.xjy.EMBEDDED) ? g.Z.getGuild(null == (e = m.Z.getChannel(null == (r = v.Z.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != E ? g.Z.getGuild(E.getGuildId()) : null
       }),
-      N = (0, l.e7)([g.Z], () => null != P ? g.Z.getGuild(P.guildId) : null),
-      A = (0, l.e7)([u.Z], () => {
+      T = (0, l.e7)([g.Z], () => null != C ? g.Z.getGuild(C.guildId) : null),
+      N = (0, l.e7)([u.Z], () => {
         if (null != t)
           if (null != t.application_id) return u.Z.getApplication(t.application_id);
           else return u.Z.getApplicationByName(t.name);
         return null
       });
     return (i.useEffect(() => {
-      (null == t ? true : t.type) === _.IIU.HANG_STATUS && E && b.default.track(_.rMx.VIEW_HANG_STATUS, {
+      (null == t ? true : t.type) === h.IIU.HANG_STATUS && P && _.default.track(h.rMx.VIEW_HANG_STATUS, {
         source: "UserProfilePopout",
-        guild_id: null == C ? true : C.guild_id,
-        channel_id: null == C ? true : C.id
+        guild_id: null == E ? true : E.guild_id,
+        channel_id: null == E ? true : E.id
       })
-    }, [null == t ? true : t.type, E, C]), (null == t ? true : t.type) !== _.IIU.HANG_STATUS || E) ? (0, r.jsx)(s.Z, S(O({}, j), {
+    }, [null == t ? true : t.type, P, E]), (null == t ? true : t.type) !== h.IIU.HANG_STATUS || P) ? (0, r.jsx)(s.Z, j(O({}, x), {
       activity: t,
       user: n,
-      application: A,
-      hideHeader: v,
-      activityGuild: null != T ? T : N,
+      application: N,
+      hideHeader: b,
+      activityGuild: null != w ? w : T,
       showChannelDetails: y,
-      channel: y ? x : true,
-      renderActions: c ? () => (0, r.jsx)(I, S(O({}, j), {
-        applicationStream: P,
+      channel: y ? I : true,
+      renderActions: c ? () => (0, r.jsx)(S, j(O({}, x), {
+        applicationStream: C,
         activity: t,
         user: n
       })) : null,
-      onOpenSpotifyTrack: f.aG,
-      onOpenSpotifyArtist: f.d$,
-      onOpenSpotifyAlbum: f.Z5
+      onOpenSpotifyTrack: p.aG,
+      onOpenSpotifyArtist: p.d$,
+      onOpenSpotifyAlbum: p.Z5
     })) : null
   }

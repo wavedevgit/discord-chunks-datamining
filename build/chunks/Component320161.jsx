@@ -32,9 +32,9 @@ function b(e) {
     }, [S, T]), !c.wS) return (0, i.jsx)(i.Fragment, {
     children: d({})
   });
-  let I = _ >= f.length - 1,
-    N = I ? l.FGA.RED : l.FGA.GREEN,
-    y = E ? N : l.FGA.PRIMARY;
+  let N = _ >= f.length - 1,
+    I = N ? l.FGA.RED : l.FGA.GREEN,
+    y = E ? I : l.FGA.PRIMARY;
   return (0, i.jsx)(l.ua7, {
     text: (() => {
       var e;
@@ -42,7 +42,7 @@ function b(e) {
       let n = (0, s.clamp)(_ - 1, 0, f.length - 1),
         r = null != (e = f[n]) ? e : f[0];
       return (0, i.jsx)(l.UkV, {
-        isShaking: I,
+        isShaking: N,
         children: r()
       })
     })(),

@@ -1,7 +1,7 @@
 /** Chunk was on 30202 **/
 /** chunk id: 71363, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => I
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -28,10 +28,10 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk677599 = require("./677599.js"),
   Chunk865215 = require("./865215.js");
-let N = e => {
+let I = e => {
   let t, n, {
       isAllPerksVisible: s,
-      setIsAllPerksVisible: N,
+      setIsAllPerksVisible: I,
       previousComponent: y
     } = e,
     A = (0, f.ZP)({
@@ -55,7 +55,7 @@ let N = e => {
     U = (0, h.W)();
   B ? (t = S.intl.string(S.t["+vt7w8"]), n = S.intl.string(S.t.LgHbnJ)) : (t = S.intl.string(S.t.LgHbnJ), n = S.intl.string(S.t["+vt7w8"]));
   let V = () => {
-    N(false), g.default.track(v.rMx.NITRO_HOME_NAVIGATION, {
+    I(false), g.default.track(v.rMx.NITRO_HOME_NAVIGATION, {
       current_component: C.MQ.SEE_ALL,
       next_component: y,
       interaction_component: "Back Button"
@@ -147,7 +147,7 @@ let N = e => {
             className: T.bottomOfPageVisibilitySensor
           })
         }), (0, i.jsx)("img", {
-          src: I,
+          src: N,
           className: T.bottomIllustration,
           width: 112,
           height: 85,

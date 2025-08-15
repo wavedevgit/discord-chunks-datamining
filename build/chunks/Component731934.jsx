@@ -152,7 +152,7 @@ function R(e) {
     }, a.id)
   }, [s, t]), g = r.useCallback(() => (0, i.jsx)(u.Z, {
     children: (0, i.jsx)(c.Text, {
-      className: I.marginBottom8,
+      className: N.marginBottom8,
       variant: "eyebrow",
       color: "header-secondary",
       children: n

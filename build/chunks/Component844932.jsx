@@ -51,7 +51,7 @@ let b = () => {
     let [e, t] = Chunk73800.useState(Chunk474936.p9.TIER_0), [n, b] = Chunk73800.useState(Chunk45474.R.WHAT_YOU_LOSE), [_, j] = Chunk73800.useState(null), [E, C] = Chunk73800.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [O, v] = Chunk73800.useState([]), [S, T] = Chunk73800.useState(() => {
       let e = new Date;
       return module.setMonth(module.getMonth() + 1), module
-    }), [I, N] = Chunk73800.useState(null), [y, A] = Chunk73800.useState(false), [P, R] = Chunk73800.useState(false), [D, Z] = Chunk73800.useState(false);
+    }), [N, I] = Chunk73800.useState(null), [y, A] = Chunk73800.useState(false), [P, R] = Chunk73800.useState(false), [D, Z] = Chunk73800.useState(false);
     (0, Chunk73800.useEffect)(() => {
       (0, Chunk821849.Y2)()
     }, []), (0, Chunk73800.useEffect)(() => {
@@ -98,7 +98,7 @@ let b = () => {
           }]), C(Chunk474936.Xh.PREMIUM_MONTH_TIER_2)
       }
     }, [module]), (0, Chunk73800.useEffect)(() => {
-      [Chunk45474.R.CONFIRM_DISCOUNT, Chunk45474.R.DISCOUNT_APPLIED].includes(require) && null === _ && j(x()), require === Chunk45474.R.PREVIEW && null === I && N(new Chunk146528.Z({
+      [Chunk45474.R.CONFIRM_DISCOUNT, Chunk45474.R.DISCOUNT_APPLIED].includes(require) && null === _ && j(x()), require === Chunk45474.R.PREVIEW && null === N && I(new Chunk146528.Z({
         id: "",
         invoiceItems: [{
           id: "",
@@ -122,8 +122,8 @@ let b = () => {
         subscriptionPeriodStart: new Date,
         subscriptionPeriodEnd: S,
         status: Chunk981631.hUK.PAID
-      })), require !== Chunk45474.R.PREVIEW && null !== I && N(null)
-    }, [require, _, S, E, I]);
+      })), require !== Chunk45474.R.PREVIEW && null !== N && I(null)
+    }, [require, _, S, E, N]);
     let w = Chunk73800.useCallback(async () => {
       Z(true), await (0, Chunk481060.ZDy)(async () => t => (0, i.jsx)(d.x, f(h({}, t), {
         onClose: () => {
@@ -132,7 +132,7 @@ let b = () => {
         premiumType: e,
         churnDiscount: _,
         planId: E,
-        renewalInvoice: I,
+        renewalInvoice: N,
         renewalInvoiceDetails: {
           intervalType: p.rV.MONTH,
           intervalCount: 1
@@ -166,7 +166,7 @@ let b = () => {
           pauseReason: m.Id.UNKNOWN
         }
       })))
-    }, [module, _, E, I, y, P, require, S]);
+    }, [module, _, E, N, y, P, require, S]);
     return (0, Chunk73800.useEffect)(() => {
       D && w()
     }, [require, D, w]), (0, Chunk255367.jsxs)(Chunk450272.$0, {

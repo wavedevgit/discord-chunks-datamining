@@ -66,8 +66,8 @@ function j() {
       var e, t;
       return (0, Chunk865427.fD)() ? null == (t = Chunk304761.C.getCurrentBuildOverride()) || null == (e = exports.overrides) ? true : module.discord_web : null
     }),
-    [T, I] = (0, Chunk918222.R)("playground-overrideText", null),
-    [N, y] = (0, Chunk918222.R)("playground-defaultText", _[0].value),
+    [T, N] = (0, Chunk918222.R)("playground-overrideText", null),
+    [I, y] = (0, Chunk918222.R)("playground-defaultText", _[0].value),
     A = Chunk73800.useCallback(e => {
       let t = _.find(t => {
         let {
@@ -75,8 +75,8 @@ function j() {
         } = t;
         return n === e
       });
-      "" === e || null == e ? (y(_[0].value), I(null)) : null != t ? y(t.value) : (y("custom"), I(e))
-    }, [I, y]);
+      "" === e || null == e ? (y(_[0].value), N(null)) : null != t ? y(t.value) : (y("custom"), N(e))
+    }, [N, y]);
   return (0, Chunk255367.jsx)("div", {
     style: {
       "--playground-font-family": "mono" === j ? "gg mono" : "gg sans",
@@ -109,7 +109,7 @@ function j() {
             className: Chunk461059.select,
             options: _,
             onChange: e => A(e),
-            value: N
+            value: I
           })
         }), (0, Chunk255367.jsx)(Chunk481060.xJW, {
           children: (0, Chunk255367.jsx)("div", {
@@ -184,7 +184,7 @@ function j() {
             }) : null]
           }, e), C.map(t => {
             var n;
-            let r = null != (n = "custom" === N ? T : N) ? n : "";
+            let r = null != (n = "custom" === I ? T : I) ? n : "";
             return (0, i.jsx)("div", {
               className: x.textSample,
               children: (0, i.jsxs)("div", {
