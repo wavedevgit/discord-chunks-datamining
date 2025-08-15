@@ -11,20 +11,34 @@ let i = (0, require("./427164.js").le)({
     kind: "user",
     defaultConfig: {
       enabled: false,
-      showPlayButton: false
+      showPlayButton: false,
+      alternativeTitle: false
     },
     variations: {
       0: {
         enabled: false,
-        showPlayButton: false
+        showPlayButton: false,
+        alternativeTitle: false
       },
       1: {
         enabled: true,
-        showPlayButton: false
+        showPlayButton: false,
+        alternativeTitle: false
       },
       2: {
         enabled: true,
-        showPlayButton: true
+        showPlayButton: true,
+        alternativeTitle: false
+      },
+      3: {
+        enabled: true,
+        showPlayButton: false,
+        alternativeTitle: true
+      },
+      4: {
+        enabled: true,
+        showPlayButton: true,
+        alternativeTitle: true
       }
     }
   }),

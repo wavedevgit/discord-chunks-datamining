@@ -2,31 +2,33 @@
 /** chunk id: 509003, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I8: () => y,
-  Jc: () => I,
-  LK: () => v,
-  ON: () => b,
-  bP: () => S,
-  le: () => T,
-  oK: () => C,
-  sD: () => O,
-  x3: () => g,
-  xr: () => A,
-  yA: () => E,
-  yb: () => N
+  FT: () => S,
+  I8: () => O,
+  Jc: () => A,
+  LK: () => I,
+  ON: () => y,
+  bP: () => C,
+  le: () => N,
+  oK: () => w,
+  sD: () => v,
+  x3: () => E,
+  xr: () => R,
+  yA: () => b,
+  yb: () => P
 }), require("./49124.js"), require("./415506.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk782568 = require("./782568.js"),
   Chunk594190 = require("./594190.js"),
   Chunk104755 = require("./104755.js"),
+  Chunk355281 = require("./355281.js"),
   Chunk210817 = require("./210817.js"),
   Chunk817788 = require("./817788.js"),
   Chunk543696 = require("./543696.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,20 +37,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,109 +61,123 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e) {
-  if (e.distributor === d.GQo.ROBLOX && null != e.sku) {
+function E(e) {
+  if (e.distributor === f.GQo.ROBLOX && null != e.sku) {
     var t, n;
-    return "".concat(e.sku, ":").concat(null != (n = null == (t = e.gameMetadata) ? true : t[c.wF.PLACE_ID]) ? n : "")
+    return "".concat(e.sku, ":").concat(null != (n = null == (t = e.gameMetadata) ? true : t[u.wF.PLACE_ID]) ? n : "")
   }
   return null
 }
 
-function E(e, t) {
+function b(e, t) {
   return null == e && null != t || null != e && null == t || null != e && null != t && !i().isEqual(e, t)
 }
 
-function b(e, t) {
+function y(e, t) {
   var n, r, i;
-  let o = p({}, e),
+  let o = h({}, e),
     s = t.subgameInfo,
     l = t.application,
-    u = Number(null == (n = e.gameMetadata) ? true : n[c.wF.ROBLOX_TIME_STARTED]);
-  if ((isNaN(u) || 0 === u) && (u = null != (r = e.start) ? r : Date.now()), null == s) T(e) && (o.id = c.eB, o.name = d.EOG[d.GQo.ROBLOX]), o.gameMetadata = true, o.sku = true, o.start = u, o.lastFocused = Math.floor(u / 1e3);
+    c = Number(null == (n = e.gameMetadata) ? true : n[u.wF.ROBLOX_TIME_STARTED]);
+  if ((isNaN(c) || 0 === c) && (c = null != (r = e.start) ? r : Date.now()), null == s) N(e) && (o.id = u.eB, o.name = f.EOG[f.GQo.ROBLOX]), o.gameMetadata = true, o.sku = true, o.start = c, o.lastFocused = Math.floor(c / 1e3);
   else {
     let t = {};
     null != l && (0, a.ik)({
       exePath: e.exePath,
       name: l.name,
       id: l.id,
-      distributor: d.GQo.ROBLOX
+      distributor: f.GQo.ROBLOX
     }) && (0, a.ik)({
       exePath: e.exePath,
-      name: d.EOG[d.GQo.ROBLOX],
-      id: c.eB,
-      distributor: d.GQo.ROBLOX
-    }) ? (o.id = l.id, o.name = l.name, o.gameName = l.name, o.start = Date.now(), o.lastFocused = Math.floor(Date.now() / 1e3)) : (o.id = c.eB, o.name = d.EOG[d.GQo.ROBLOX], o.start = u), t[c.wF.ROBLOX_TIME_STARTED] = u.toString(), o.sku = null != (i = s.universeId) ? i : true, null != s.placeId && (t[c.wF.PLACE_ID] = s.placeId), null != s.jobId && (t[c.wF.JOB_ID] = s.jobId), null != s.robloxUserId && (t[c.wF.ROBLOX_USER_ID] = s.robloxUserId), o.gameMetadata = Object.keys(t).length > 0 ? t : true
+      name: f.EOG[f.GQo.ROBLOX],
+      id: u.eB,
+      distributor: f.GQo.ROBLOX
+    }) ? (o.id = l.id, o.name = l.name, o.gameName = l.name, o.start = Date.now(), o.lastFocused = Math.floor(Date.now() / 1e3)) : (o.id = u.eB, o.name = f.EOG[f.GQo.ROBLOX], o.start = c), t[u.wF.ROBLOX_TIME_STARTED] = c.toString(), o.sku = null != (i = s.universeId) ? i : true, null != s.placeId && (t[u.wF.PLACE_ID] = s.placeId), null != s.jobId && (t[u.wF.JOB_ID] = s.jobId), null != s.robloxUserId && (t[u.wF.ROBLOX_USER_ID] = s.robloxUserId), o.gameMetadata = Object.keys(t).length > 0 ? t : true
   }
   return o
 }
 
-function y(e) {
-  return null == e[c.SQ.UNIVERSE_ID] || null == e[c.SQ.PLACE_ID] || null == e[c.SQ.JOB_ID] || null == e[c.SQ.USER_ID] ? null : {
-    universeId: e[c.SQ.UNIVERSE_ID],
-    placeId: e[c.SQ.PLACE_ID],
-    jobId: e[c.SQ.JOB_ID],
-    robloxUserId: e[c.SQ.USER_ID]
-  }
-}
-
 function O(e) {
-  return e.distributor === d.GQo.ROBLOX && null != e.gameMetadata && null != e.gameMetadata[c.wF.PLACE_ID] ? JSON.stringify({
-    placeId: e.gameMetadata[c.wF.PLACE_ID]
-  }) : null
+  return null == e[u.SQ.UNIVERSE_ID] || null == e[u.SQ.PLACE_ID] || null == e[u.SQ.JOB_ID] || null == e[u.SQ.USER_ID] ? null : {
+    universeId: e[u.SQ.UNIVERSE_ID],
+    placeId: e[u.SQ.PLACE_ID],
+    jobId: e[u.SQ.JOB_ID],
+    robloxUserId: e[u.SQ.USER_ID]
+  }
 }
 
 function v(e) {
-  return e.distributor !== d.GQo.ROBLOX || null == e.gameMetadata || null == e.gameMetadata[c.wF.ROBLOX_TIME_STARTED] || e.id === c.eB || null == e.gameName ? {} : {
-    name: f.intl.formatToPlainString(f.t.G6BGd3, {
-      subgameName: e.gameName
-    }),
-    sync_id: e.gameMetadata[c.wF.ROBLOX_TIME_STARTED]
-  }
+  return e.distributor === f.GQo.ROBLOX && null != e.gameMetadata && null != e.gameMetadata[u.wF.PLACE_ID] ? JSON.stringify({
+    placeId: e.gameMetadata[u.wF.PLACE_ID]
+  }) : null
 }
 
 function I(e) {
-  var t;
-  if (e.type !== d.IIU.PLAYING || (null == (t = e.metadata) ? true : t.distributor) !== d.GQo.ROBLOX || e.application_id === c.eB) return e;
-  let n = Number(e.sync_id),
-    r = p({}, e);
-  return r.application_id = c.eB, r.name = d.EOG[d.GQo.ROBLOX], isNaN(n) || (r.timestamps = {
-    start: n
-  }), r
+  return e.distributor !== f.GQo.ROBLOX || null == e.gameMetadata || null == e.gameMetadata[u.wF.ROBLOX_TIME_STARTED] || e.id === u.eB || null == e.gameName ? {} : {
+    name: e.gameName,
+    sync_id: e.gameMetadata[u.wF.ROBLOX_TIME_STARTED]
+  }
 }
 
 function T(e) {
-  return e.distributor === d.GQo.ROBLOX && e.id !== c.eB
+  var t;
+  return (null == (t = e.metadata) ? true : t.distributor) === f.GQo.ROBLOX && e.application_id !== u.eB
 }
 
 function S(e) {
-  return e.thirdPartySkus.some(e => e.distributor === d.GQo.ROBLOX)
+  if (!T(e)) return e;
+  let t = l.m.getConfig({
+    location: "transformRobloxSubgameNames"
+  }).alternativeTitle ? _.t.HjVwGx : _.t.G6BGd3;
+  return g(h({}, e), {
+    name: _.intl.formatToPlainString(t, {
+      subgameName: e.name
+    })
+  })
 }
-async function A(e) {
+
+function A(e) {
+  if (e.type !== f.IIU.PLAYING || !T(e)) return e;
+  let t = Number(e.sync_id),
+    n = h({}, e);
+  return n.application_id = u.eB, n.name = f.EOG[f.GQo.ROBLOX], isNaN(t) || (n.timestamps = {
+    start: t
+  }), n
+}
+
+function N(e) {
+  return e.distributor === f.GQo.ROBLOX && e.id !== u.eB
+}
+
+function C(e) {
+  return e.thirdPartySkus.some(e => e.distributor === f.GQo.ROBLOX)
+}
+async function R(e) {
   var t;
-  let n = null == (t = u.Z.getSupplementalData(e)) ? true : t.rootPlaceId;
-  if (null != n) return await N(n);
+  let n = null == (t = d.Z.getSupplementalData(e)) ? true : t.rootPlaceId;
+  if (null != n) return await P(n);
   try {
     let t = await (0, s.v)([e]);
-    if (null != t[e] && null != t[e].rootPlaceId) return await N(t[e].rootPlaceId)
+    if (null != t[e] && null != t[e].rootPlaceId) return await P(t[e].rootPlaceId)
   } catch (e) {
     return Promise.reject(e)
   }
   return Promise.reject(Error("Failed to find root place id for activity"))
 }
-async function N(e) {
-  let t = await l.Z.getRobloxSubgameURL(e);
+async function P(e) {
+  let t = await c.Z.getRobloxSubgameURL(e);
   return await (0, o.Z)(t)
 }
 
-function C(e) {
-  return e.distributor !== d.GQo.ROBLOX || e.id === c.eB ? e : m(p({}, e), {
-    id: c.eB,
-    name: d.EOG[d.GQo.ROBLOX]
+function w(e) {
+  return e.distributor !== f.GQo.ROBLOX || e.id === u.eB ? e : g(h({}, e), {
+    id: u.eB,
+    name: f.EOG[f.GQo.ROBLOX]
   })
 }

@@ -81,7 +81,7 @@ function x(e, t) {
   };
   let n = _.m.getConfig({
       location: "presence_filtering"
-    }).enabled ? e : e.map(e => (0, p.Jc)(e)),
+    }).enabled ? e.map(e => (0, p.FT)(e)) : e.map(e => (0, p.Jc)(e)),
     r = f.R.getCurrentConfig({
       location: "presence_filtering"
     }, {
