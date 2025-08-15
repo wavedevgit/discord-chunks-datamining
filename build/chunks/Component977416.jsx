@@ -58,7 +58,7 @@ function f(e) {
       }
       return e
     }({}, f), n = n = {
-      className: u.coverContainer,
+      className: u.cover,
       disableInteraction: true
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

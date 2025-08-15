@@ -1,60 +1,35 @@
 /** Chunk was on 83545 **/
-/** chunk id: 53149, original params: t,n,e (module,exports,require) **/
+/** chunk id: 53149, original params: t,i,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => c
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk82659 = require("./82659.jsx"),
   Chunk87051 = require("./87051.js"),
   Chunk9156 = require("./9156.js"),
   Chunk621600 = require("./621600.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk213658 = require("./213658.js");
-let x = t => {
+  Chunk388032 = require("./388032.jsx");
+let c = t => {
   let {
-    onClose: n,
-    channelId: e,
-    transitionState: x
-  } = t, h = (0, s.e7)([r.ZP], () => r.ZP.isChannelMuted(null, e));
-  return (0, i.jsxs)(o.Y0X, {
-    transitionState: x,
-    size: o.CgR.SMALL,
-    "aria-label": d.intl.string(d.t.uAmAiI),
-    parentComponent: "MuteAppNotificationsModal",
-    children: [(0, i.jsx)(o.olH, {
-      className: u.closeButton,
-      onClick: n
-    }), (0, i.jsxs)(o.hzk, {
-      className: u.content,
-      children: [(0, i.jsx)("div", {
-        className: u.iconContainer,
-        children: h ? (0, i.jsx)(o.owu, {
-          size: "md"
-        }) : (0, i.jsx)(o.Dkj, {
-          size: "md"
-        })
-      }), (0, i.jsx)(o.X6q, {
-        className: u.heading,
-        variant: "heading-xl/bold",
-        children: h ? d.intl.string(d.t["4rg7cH"]) : d.intl.string(d.t.uAmAiI)
-      }), (0, i.jsx)(o.Text, {
-        className: u.infoText,
-        variant: "text-md/normal",
-        color: "text-default",
-        children: h ? d.intl.string(d.t["5vton5"]) : d.intl.string(d.t.mscFJS)
-      }), (0, i.jsx)(a.zx, {
-        className: u.button,
-        color: h ? a.zx.Colors.PRIMARY : a.zx.Colors.RED,
-        onClick: () => {
-          l.Z.updateChannelOverrideSettings(null, e, {
-            muted: !h
-          }, h ? c.ZB.Unmuted : c.ZB.Muted), n()
-        },
-        children: h ? d.intl.string(d.t.YqAjX1) : d.intl.string(d.t["w4m94+"])
-      })]
-    })]
+    onClose: i,
+    channelId: n,
+    transitionState: c
+  } = t, o = (0, r.e7)([a.ZP], () => a.ZP.isChannelMuted(null, n));
+  return (0, e.jsx)(l.Modal, {
+    transitionState: c,
+    onClose: i,
+    title: o ? d.intl.string(d.t["4rg7cH"]) : d.intl.string(d.t.uAmAiI),
+    subtitle: o ? d.intl.string(d.t["5vton5"]) : d.intl.string(d.t.mscFJS),
+    actions: [{
+      variant: o ? "primary" : "critical-primary",
+      text: o ? d.intl.string(d.t.YqAjX1) : d.intl.string(d.t["w4m94+"]),
+      onClick: () => {
+        s.Z.updateChannelOverrideSettings(null, n, {
+          muted: !o
+        }, o ? u.ZB.Unmuted : u.ZB.Muted), i()
+      }
+    }]
   })
 }
