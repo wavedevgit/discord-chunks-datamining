@@ -206,20 +206,18 @@ function ec(e) {
     modalSize: _
   } = ed(ea({}, e)), p = I.w.useExperiment({
     location: "oauth2_authorize"
-  }), h = null != a ? (0, r.jsx)("div", {
-    className: o()(er.fakeHeader, {
-      [er.moveUp]: !e.hideHeader
-    }),
-    children: a
-  }) : true, m = null != a || null != s || null != u ? (0, r.jsxs)("div", {
+  }), h = null != a || null != s || null != u ? (0, r.jsxs)("div", {
     className: er.authorize,
-    children: [(0, r.jsxs)("div", {
-      className: o()(er.content, d ? er.contentBackground : null, f ? er.noPadding : null),
-      children: [s, null != c || p.enabled ? null : u]
-    }), null == c && p.enabled ? (0, r.jsx)("div", {
-      className: o()(er.content, d ? er.contentBackground : null, f ? er.noPadding : null),
-      children: u
-    }) : null]
+    children: [a, (0, r.jsxs)("div", {
+      className: er.contentWrapper,
+      children: [(0, r.jsxs)("div", {
+        className: o()(er.content, d ? er.contentBackground : null, f ? er.noPadding : null),
+        children: [s, null != c || p.enabled ? null : u]
+      }), null == c && p.enabled ? (0, r.jsx)("div", {
+        className: o()(er.content, d ? er.contentBackground : null, f ? er.noPadding : null),
+        children: u
+      }) : null]
+    })]
   }) : null;
   return (0, r.jsx)(Q.j, es(ea({}, e), {
     onClose: () => {
@@ -230,9 +228,8 @@ function ec(e) {
     actions: l,
     title: n,
     subtitle: i,
-    input: h,
     "aria-label": t,
-    children: m
+    children: h
   }))
 }
 
@@ -530,7 +527,7 @@ function ed(e) {
         ty = eJ === c.Y.GUILD_INSTALL && e5.includes(u.x.WEBHOOK_INCOMING),
         tO = ty || eJ === c.Y.GUILD_INSTALL && (e5.includes(u.x.BOT) || e5.includes(u.x.APPLICATIONS_COMMANDS)),
         tv = (0, M.yE)(null != (n = eP.application.flags) ? n : 0, ee.udG.EMBEDDED) && eJ === c.Y.USER_INSTALL && e4.enabled;
-      m = (0, r.jsxs)(r.Fragment, {
+      h = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(Y.Z, {
           application: eP.application,
           accountScopes: e6
@@ -567,25 +564,25 @@ function ed(e) {
           selectedGuildId: eV,
           onChannelChange: eH
         }) : null]
-      }), e5.includes(u.x.BOT) && !d.fS(e8, k.Hn) && (N = "AUTHORIZE_BOT_PERMISSIONS"), to.length > 1 && (v = "SELECT_INSTALL_TYPE"), t_ = tO && null == eQ || ty && null == eZ, tf = true;
+      }), e5.includes(u.x.BOT) && !d.fS(e8, k.Hn) && (v = "AUTHORIZE_BOT_PERMISSIONS"), to.length > 1 && (m = "SELECT_INSTALL_TYPE"), t_ = tO && null == eQ || ty && null == eZ, tf = true;
       break;
     case "AUTHORIZE_BOT_PERMISSIONS":
       if (null == eP) return {
         label: en.intl.string(en.t.ZTNur6),
         body: (0, r.jsx)(eu, {})
       };
-      m = (0, r.jsx)(K.Z, {
+      h = (0, r.jsx)(K.Z, {
         application: eP.application,
         permissions: e8,
         deniedPermissions: eY,
         onPermissionsChange: td,
         guild: eQ
-      }), v = "AUTHORIZE_SCOPES", tf = true
+      }), m = "AUTHORIZE_SCOPES", tf = true
   }
   let tI = [];
   if (tp && null != eP) {
     let e = null == (_ = eP.bot) ? true : _.approximate_guild_count;
-    C = (0, r.jsxs)(r.Fragment, {
+    N = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(H.Z, {
         application: eP.application,
         scopes: e5,
@@ -599,7 +596,7 @@ function ed(e) {
       })]
     })
   }
-  return th && null != eP && null != eq && (h = (0, r.jsx)(q.Z, {
+  return th && null != eP && null != eq && (C = (0, r.jsx)(q.Z, {
     user: eq,
     application: eP.application,
     bot: eP.bot,
@@ -607,30 +604,30 @@ function ed(e) {
     showLogout: eg || false,
     location: eC,
     scopes: e5
-  })), tm && (tI.push(null != v ? {
+  })), tm && (tI.push(null != m ? {
     variant: "secondary",
-    onClick: () => eL(v),
+    onClick: () => eL(m),
     text: en.intl.string(en.t["13/7kZ"])
   } : {
     variant: "secondary",
     onClick: () => tr(false),
     text: en.intl.string(en.t["ETE/oK"])
   }), "SELECT_INSTALL_TYPE" !== eD && tI.push(eU ? {
-    onClick: null != N ? () => eL(N) : () => tr(true),
+    onClick: null != v ? () => eL(v) : () => tr(true),
     loading: ek,
-    disabled: null == C || t_,
-    text: t_ ? en.intl.string(en.t.BwwiSE) : null != N ? en.intl.string(en.t["3PatS0"]) : en.intl.string(en.t["y+/PEx"])
+    disabled: null == N || t_,
+    text: t_ ? en.intl.string(en.t.BwwiSE) : null != v ? en.intl.string(en.t["3PatS0"]) : en.intl.string(en.t["y+/PEx"])
   } : {
     disabled: true,
     loading: ek,
     text: en.intl.string(en.t.N22i9P),
     icon: g.cQm
   })), {
-    header: h,
-    body: m,
+    header: C,
+    body: h,
     actions: tI,
-    nextStep: N,
-    appDetails: C,
+    nextStep: v,
+    appDetails: N,
     sendAuthorize: tr,
     hasContentBackground: tf,
     noPadding: tg
