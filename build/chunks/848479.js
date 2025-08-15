@@ -82,6 +82,19 @@ class c extends Chunk77450.h {
       return null
     }
   }
+  enablePerfMemoryHooks(e) {
+    return o.ZP.enablePerfMemoryHooks(e)
+  }
+  disablePerfMemoryHooks() {
+    return Chunk998502.ZP.disablePerfMemoryHooks()
+  }
+  getPerfAttributedMemory() {
+    try {
+      return Chunk998502.ZP.getPerfAttributedMemory()
+    } catch (e) {
+      return null
+    }
+  }
   constructor() {
     var e, t;
     super(), s(this, "lastMemoryUsageKB", true), this.cpuCoreCount = null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getCPUCoreCount) ? true : module.call(exports), this.setupReportingTimer()

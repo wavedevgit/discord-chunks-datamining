@@ -547,6 +547,24 @@ let z = {
       } = this.getDiscordUtils();
       return null == module ? true : module()
     },
+    enablePerfMemoryHooks(e) {
+      let {
+        enablePerfMemoryHooks: t
+      } = this.getDiscordUtils();
+      return null == t ? true : t(e)
+    },
+    disablePerfMemoryHooks() {
+      let {
+        disablePerfMemoryHooks: e
+      } = this.getDiscordUtils();
+      return null == module ? true : module()
+    },
+    getPerfAttributedMemory() {
+      let {
+        getPerfAttributedMemory: e
+      } = this.getDiscordUtils();
+      return null == module ? true : module()
+    },
     showOpenDialog: e => I.fileManager.showOpenDialog({
       properties: e
     }),

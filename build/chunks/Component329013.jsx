@@ -50,65 +50,76 @@ let Z = () => {
     } = Chunk803038.Mc.useExperiment({
       location: "UserSettingsAppearanceClientThemes"
     });
-    return Chunk73800.useEffect(() => {
+    Chunk73800.useEffect(() => {
       Chunk704215 && Chunk626135.default.track(Chunk981631.rMx.PREMIUM_UPSELL_VIEWED, {
         type: Chunk474936.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
         location_stack: require
       })
-    }, [Chunk704215, require]), (0, Chunk255367.jsxs)("div", {
+    }, [Chunk704215, require]);
+    let x = Chunk780384 && Chunk704215 && (0, Chunk255367.jsxs)("div", {
+        children: [(0, Chunk255367.jsx)(Chunk755721.zx, {
+          className: Chunk505575.previewThemeButtonWide,
+          color: Chunk755721.zx.Colors.PRIMARY,
+          onClick: () => Z(),
+          children: Chunk388032.intl.string(Chunk388032.t["E+COuL"])
+        }), (0, Chunk255367.jsx)("div", {
+          className: Chunk505575.premiumTier2Divider
+        }), (0, Chunk255367.jsx)(Chunk165583.ZP, {
+          type: Chunk474936.cd.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
+          subscriptionTier: Chunk474936.Si.TIER_2
+        })]
+      }),
+      _ = (0, Chunk255367.jsxs)(Chunk255367.Fragment, {
+        children: [(0, Chunk255367.jsx)(Chunk705262.ZP.Gradient, {
+          disabled: !Chunk607070 && Chunk704215,
+          renderCTAButtons: () => {
+            if (!Chunk704215 || Chunk780384) return null;
+            let e = Chunk857595 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.bkQ4bG, {
+              percent: null == Chunk37234 ? true : Chunk37234.discount.amount
+            }) : Chunk388032.intl.string(Chunk388032.t.mr4K7O);
+            return Chunk607070 ? (0, Chunk255367.jsxs)("div", {
+              className: Chunk505575.tryItOutButtonsV2,
+              children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+                variant: "secondary",
+                text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
+                onClick: () => Z()
+              }), (0, Chunk255367.jsx)(Chunk638212.Z, {
+                subscriptionTier: Chunk474936.Si.TIER_2,
+                defaultTextOverride: module,
+                premiumModalAnalyticsLocation: {
+                  object: Chunk981631.qAy.BUTTON_CTA,
+                  objectType: Chunk981631.Qqv.BUY
+                },
+                fullWidth: true
+              })]
+            }) : (0, Chunk255367.jsxs)("div", {
+              className: Chunk505575.tryItOutButtons,
+              children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
+                variant: "secondary",
+                text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
+                onClick: () => Z()
+              }), (0, Chunk255367.jsx)(Chunk767714.Z, {
+                showGradient: false,
+                subscriptionTier: Chunk474936.Si.TIER_2,
+                textOptions: {
+                  textOverride: module
+                },
+                className: Chunk505575.premiumCta
+              })]
+            })
+          }
+        }), Chunk550385]
+      });
+    return (0, Chunk255367.jsxs)("div", {
       children: [(0, Chunk255367.jsxs)(Chunk705262.ZP, {
         type: Chunk705262.yH.SETTINGS,
         children: [(0, Chunk255367.jsx)(Chunk705262.ZP.Basic, {
           className: Chunk505575.basicThemeSelectors
-        }), (0, Chunk255367.jsx)(k, {}), (0, Chunk255367.jsxs)(Chunk504983.Z, {
+        }), (0, Chunk255367.jsx)(k, {}), Chunk607070 ? Chunk266454 : (0, Chunk255367.jsx)(Chunk504983.Z, {
           className: Chunk505575.featureBorder,
           isShown: Chunk704215,
           type: Chunk504983.Y.PREMIUM,
-          children: [(0, Chunk255367.jsx)(Chunk705262.ZP.Gradient, {
-            disabled: Chunk704215,
-            renderCTAButtons: () => {
-              if (!Chunk704215 || Chunk780384) return null;
-              let e = Chunk857595 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.bkQ4bG, {
-                  percent: null == Chunk37234 ? true : Chunk37234.discount.amount
-                }) : Chunk388032.intl.string(Chunk388032.t.mr4K7O),
-                t = Chunk607070 ? Chunk505575.tryItOutButtonsV2 : Chunk505575.tryItOutButtons;
-              return (0, Chunk255367.jsxs)("div", {
-                className: exports,
-                children: [(0, Chunk255367.jsx)(Chunk481060.zxk, {
-                  variant: "secondary",
-                  text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
-                  onClick: () => Z()
-                }), Chunk607070 ? (0, Chunk255367.jsx)(Chunk638212.Z, {
-                  subscriptionTier: Chunk474936.Si.TIER_2,
-                  defaultTextOverride: module,
-                  premiumModalAnalyticsLocation: {
-                    object: Chunk981631.qAy.BUTTON_CTA,
-                    objectType: Chunk981631.Qqv.BUY
-                  },
-                  fullWidth: true
-                }) : (0, Chunk255367.jsx)(Chunk767714.Z, {
-                  showGradient: false,
-                  subscriptionTier: Chunk474936.Si.TIER_2,
-                  textOptions: {
-                    textOverride: module
-                  },
-                  className: Chunk505575.premiumCta
-                })]
-              })
-            }
-          }), Chunk780384 && Chunk704215 && (0, Chunk255367.jsxs)("div", {
-            children: [(0, Chunk255367.jsx)(Chunk755721.zx, {
-              className: Chunk505575.previewThemeButtonWide,
-              color: Chunk755721.zx.Colors.PRIMARY,
-              onClick: () => Z(),
-              children: Chunk388032.intl.string(Chunk388032.t["E+COuL"])
-            }), (0, Chunk255367.jsx)("div", {
-              className: Chunk505575.premiumTier2Divider
-            }), (0, Chunk255367.jsx)(Chunk165583.ZP, {
-              type: Chunk474936.cd.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
-              subscriptionTier: Chunk474936.Si.TIER_2
-            })]
-          })]
+          children: Chunk266454
         })]
       }), (0, Chunk255367.jsx)(Chunk481060.$i$, {
         className: Chunk505575.divider

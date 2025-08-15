@@ -70,6 +70,10 @@ let i = {
     actions: ["POST_CONNECTION_OPEN"],
     inlineRequire: () => require("./863065.js").Z
   },
+  DesktopPerfAnalyticsManager: {
+    actions: ["POST_CONNECTION_OPEN"],
+    inlineRequire: () => require("./905870.js").Z
+  },
   HangStatusManager: {
     actions: ["POST_CONNECTION_OPEN", "VOICE_CHANNEL_SELECT", "LOGOUT", "GUILD_MEMBER_UPDATE"],
     inlineRequire: () => require("./669750.js").Z,

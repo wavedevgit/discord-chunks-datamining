@@ -216,36 +216,39 @@ let W = Object.freeze({
   J = e => {
     let {
       disabled: t
-    } = e, {
-      type: a,
-      delay: o
+    } = e, a = C.Mc.useExperiment({
+      location: "GradientSelectors"
+    }), {
+      type: o,
+      delay: s
     } = i.useContext(K), {
-      analyticsLocations: s
-    } = (0, h.ZP)(p.Z.CLIENT_THEMES_THEME_SELECTOR), [g, E] = (0, l.Wu)([N.Z], () => {
+      analyticsLocations: g
+    } = (0, h.ZP)(p.Z.CLIENT_THEMES_THEME_SELECTOR), [E, b] = (0, l.Wu)([N.Z], () => {
       var e;
       return [N.Z.isPreview, null == (e = N.Z.gradientPreset) ? true : e.id]
-    }), [b, y] = i.useState(false), [O, v] = i.useState(false), I = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), T = C.Mc.useExperiment({
+    }), [y, O] = i.useState(false), [v, I] = i.useState(false), T = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), S = C.Mc.useExperiment({
       location: "GradientSelectors"
     }).enabled;
     i.useEffect(() => {
-      (O === w.XV.length - 2 && "EDITOR" === a || E === c.Us.EASTER_EGG) && y(true)
-    }, [O, a, E]);
-    let S = (e, t) => {
-        if ((0, A.zO)(e.id), z({
-            isPersisted: !g,
-            analyticsLocations: s,
+      (v === w.XV.length - 2 && "EDITOR" === o || b === c.Us.EASTER_EGG) && O(true)
+    }, [v, o, b]);
+    let D = (e, t) => {
+        if (a.v2EditorEnabled && "SETTINGS" === o)(0, m.XO)(m.wh.CLIENT_THEMES), (0, d.xf)();
+        else if ((0, A.zO)(e.id), z({
+            isPersisted: !E,
+            analyticsLocations: g,
             themeName: c.Us[e.id]
           }), (0, f.ZI)({
             backgroundGradientPresetId: e.id,
             theme: e.theme,
-            useSystemTheme: g ? x.KW.OFF : true
-          }, o), null != t) {
-          if (b && y(false), t <= O || 0 === t) return void v(0);
-          v(e => e + 1)
+            useSystemTheme: E ? x.KW.OFF : true
+          }, s), null != t) {
+          if (y && O(false), t <= v || 0 === t) return void I(0);
+          I(e => e + 1)
         }
       },
-      D = () => {
-        if (!b) return null;
+      L = () => {
+        if (!y) return null;
         let e = w.qt[c.Us.EASTER_EGG];
         if (null == e) return null;
         async function t() {
@@ -258,22 +261,22 @@ let W = Object.freeze({
           className: U.easterEggSelection,
           children: [(0, r.jsx)(P.DR, {
             preset: e,
-            isSelected: E === c.Us.EASTER_EGG,
-            onSelect: () => S(e)
+            isSelected: b === c.Us.EASTER_EGG,
+            onSelect: () => D(e)
           }), (0, r.jsx)(u.Fmz, {
             importData: t,
-            shouldAnimate: !I,
+            shouldAnimate: !T,
             className: U.sparkles
           })]
         })
       };
     return (0, r.jsxs)(r.Fragment, {
-      children: [T && (0, r.jsx)(R.Z, {
+      children: [S && (0, r.jsx)(R.Z, {
         isDisabled: t,
         onSelect: () => {
           (0, m.XO)(m.wh.CUSTOM_THEME, {
-            from: "SETTINGS" === a ? m.tE.SETTING : m.tE.CLIENT_THEMES_EDITOR
-          }), "SETTINGS" === a && (0, d.xf)()
+            from: "SETTINGS" === o ? m.tE.SETTING : m.tE.CLIENT_THEMES_EDITOR
+          }), "SETTINGS" === o && (0, d.xf)()
         }
       }), w.XV.filter(e => {
         let {
@@ -282,13 +285,13 @@ let W = Object.freeze({
         return t !== c.Us.EASTER_EGG
       }).map((e, n) => (0, r.jsx)(P.DR, {
         preset: e,
-        isSelected: E === e.id,
-        onSelect: () => S(e, n),
+        isSelected: b === e.id,
+        onSelect: () => D(e, n),
         disabled: t,
         tabIndex: 0 !== n || t ? true : 0,
         showBadge: false,
         showLockedBadge: false
-      }, e.id)), D()]
+      }, e.id)), L()]
     })
   },
   $ = e => {
