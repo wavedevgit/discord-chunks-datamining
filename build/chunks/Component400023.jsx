@@ -1,7 +1,7 @@
 /** Chunk was on 86357 **/
 /** chunk id: 400023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => q
+  Z: () => Y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -92,7 +92,7 @@ function z(e, t) {
   return i
 }
 let W = (0, Chunk815061.animated)(Chunk481060.eTT),
-  Y = Chunk647438.memo(function(e) {
+  q = Chunk647438.memo(function(e) {
     var t, n;
     let {
       className: l,
@@ -114,8 +114,8 @@ let W = (0, Chunk815061.animated)(Chunk481060.eTT),
       hideSummaries: w = false,
       jumpBarClassName: R,
       typingGradient: k,
-      isChatInputBottomAligned: Y
-    } = e, [q, K] = i.useState(null != (n = O.Z.isAtBottom(g.id)) && n), X = i.useMemo(() => x ? (0, M.aJ)({
+      isChatInputBottomAligned: q
+    } = e, [Y, K] = i.useState(null != (n = O.Z.isAtBottom(g.id)) && n), X = i.useMemo(() => x ? (0, M.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
@@ -139,7 +139,7 @@ let W = (0, Chunk815061.animated)(Chunk481060.eTT),
       canLoadMore: null == T,
       handleScrollToBottom: i.useCallback(() => K(true), [K]),
       handleScrollFromBottom: i.useCallback(() => K(false), [K]),
-      additionalMessagePadding: 48 * !!Y
+      additionalMessagePadding: 48 * !!q
     }), J = (0, D.Z)({
       scrollerRef: Q.ref,
       isEditing: null != S,
@@ -217,8 +217,8 @@ let W = (0, Chunk815061.animated)(Chunk481060.eTT),
         fadeStart: eu,
         fadeEnd: ed
       } = (0, u.q_F)({
-        fadeStart: k && !q ? 96 : k ? 32 : 16,
-        fadeEnd: k && !q ? 24 : 24 * !!k,
+        fadeStart: k && !Y ? 96 : k ? 32 : 16,
+        fadeEnd: k && !Y ? 24 : 24 * !!k,
         config: {
           tension: 150,
           friction: 15,
@@ -230,7 +230,7 @@ let W = (0, Chunk815061.animated)(Chunk481060.eTT),
       children: [null != ei && ei, (0, r.jsxs)("div", {
         className: a()(H.messagesWrapper, l, "group-spacing-".concat(p)),
         children: [null == ei && et, (0, r.jsxs)(W, V(G({
-          style: Y ? {
+          style: q ? {
             mask: (0, o.to)([eu, ed], (e, t) => "linear-gradient(180deg, black 0%, black calc(100% - ".concat(e, "px), rgba(0,0,0,0) calc(100% - ").concat(t, "px), rgba(0,0,0,0) 100%)"))
           } : true,
           ref: ec,
@@ -269,7 +269,7 @@ let W = (0, Chunk815061.animated)(Chunk481060.eTT),
       })]
     })
   }, (e, t) => null != e.isHidden && null != t.isHidden && e.isHidden && t.isHidden),
-  q = Chunk647438.memo(function(e) {
+  Y = Chunk647438.memo(function(e) {
     var {
       channel: t,
       showingQuarantineBanner: n,
@@ -334,7 +334,7 @@ let W = (0, Chunk815061.animated)(Chunk481060.eTT),
       messages: F,
       channelStream: H,
       oldestUnreadMessageId: W,
-      editingMessageId: q
+      editingMessageId: Y
     } = function(e) {
       var t, n;
       let r = (0, c.e7)([P.Z], () => P.Z.getMessages(e.id), [e.id]),
@@ -388,7 +388,7 @@ let W = (0, Chunk815061.animated)(Chunk481060.eTT),
     return (0, r.jsx)(b.aQ.Provider, {
       value: (0, w.Z)(L, h),
       children: (0, r.jsx)(k.v, {
-        children: (0, r.jsx)(Y, V(G({}, d), {
+        children: (0, r.jsx)(q, V(G({}, d), {
           messageGroupSpacing: A,
           showNewMessagesBar: true,
           channel: t,
@@ -400,7 +400,7 @@ let W = (0, Chunk815061.animated)(Chunk481060.eTT),
           unreadCount: (0, c.e7)([Z.ZP], () => Z.ZP.getUnreadCount(t.id), [t]),
           hasUnreads: null != W,
           canChat: O,
-          editingMessageId: q,
+          editingMessageId: Y,
           fontSize: M,
           keyboardModeEnabled: U,
           showingQuarantineBanner: n,

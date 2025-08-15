@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk451478 = require("./451478.js"),
   Chunk768581 = require("./768581.js"),
   Chunk28660 = require("./28660.js"),
-  Chunk462997 = require("./462997.js"),
+  Chunk934424 = require("./934424.js"),
   Chunk572425 = require("./572425.js");
 
 function O(e, t, n) {
@@ -142,7 +142,7 @@ function C(e) {
       height: "100%",
       overflow: "visible",
       mask: "url(#".concat(L, ")"),
-      children: [v, (0, r.jsxs)("div", {
+      children: [v, (0, r.jsx)("div", {
         className: o()(y.banner, I),
         onMouseMove: () => M(true),
         onMouseLeave: () => M(false),
@@ -152,9 +152,9 @@ function C(e) {
           backgroundImage: null != U ? "url(".concat(U, ")") : true,
           backgroundColor: "COMPLETE" !== G ? c.Z.unsafe_rawColors.PRIMARY_800.css : Z
         },
-        children: [!j && (0, g.F8)(U) && (0, r.jsx)(p.Z, {
+        children: !j && (0, g.F8)(U) && (0, r.jsx)(p.Z, {
           className: y.gifTag
-        }), v]
+        })
       })]
     })]
   })

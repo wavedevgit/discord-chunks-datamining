@@ -16,8 +16,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk979651 = require("./979651.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk475413 = require("./475413.jsx"),
-  Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx");
 
 function g(e) {
@@ -30,16 +30,16 @@ function g(e) {
   } = (0, f.z)(), b = (0, i.e7)([d.Z], () => d.Z.isInChannel(t.id));
   if (!(0, i.e7)([u.Z], () => {
       let e = (0, s.dl)() && (0, s.zd)(t.id);
-      return (t.isPrivate() || u.Z.can(h.Plq.CONNECT, t)) && !e
+      return (t.isPrivate() || u.Z.can(p.Plq.CONNECT, t)) && !e
     })) return null;
-  let y = () => E === p.lY.MODAL || E === p.lY.MODAL_V2 ? m.intl.string(m.t["3xjX0d"]) : t.isDM() || t.isGroupDM() ? m.intl.string(m.t["7hwn2N"]) : t.isGuildStageVoice() ? m.intl.string(m.t.Acqcoq) : m.intl.string(m.t.BXxdl5),
-    O = () => E === p.lY.MODAL || E === p.lY.MODAL_V2 ? m.intl.string(m.t.VJlc0d) : t.isDM() || t.isGroupDM() ? m.intl.string(m.t.ozoE2N) : t.isGuildStageVoice() ? m.intl.string(m.t["7vb2cX"]) : m.intl.string(m.t["96ANUF"]),
+  let y = () => E === h.l.MODAL || E === h.l.MODAL_V2 ? m.intl.string(m.t["3xjX0d"]) : t.isDM() || t.isGroupDM() ? m.intl.string(m.t["7hwn2N"]) : t.isGuildStageVoice() ? m.intl.string(m.t.Acqcoq) : m.intl.string(m.t.BXxdl5),
+    O = () => E === h.l.MODAL || E === h.l.MODAL_V2 ? m.intl.string(m.t.VJlc0d) : t.isDM() || t.isGroupDM() ? m.intl.string(m.t.ozoE2N) : t.isGuildStageVoice() ? m.intl.string(m.t["7vb2cX"]) : m.intl.string(m.t["96ANUF"]),
     v = e => {
       e.stopPropagation(), null == n || n({
         action: "PRESS_JOIN_CALL_BUTTON"
       }), t.isGuildStageVoice() ? (0, c.Cq)(t) : (o.default.selectVoiceChannel(t.id), (0, l.Kh)(t.id)), null == g || g()
     };
-  return E === p.lY.MODAL_V2 ? (0, r.jsx)(_.tG, {
+  return E === h.l.MODAL_V2 ? (0, r.jsx)(_.tG, {
     text: b ? y() : O(),
     size: a.Ph.TINY,
     themeColor: "secondary",

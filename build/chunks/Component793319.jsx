@@ -510,7 +510,7 @@ let eI = function(e) {
               } = e, {
                 isShown: i
               } = t;
-              return (0, r.jsx)(Y.Z, {
+              return (0, r.jsx)(q.Z, {
                 ref: $,
                 centerButton: true,
                 onPopoutClick: L ? null : n,
@@ -575,7 +575,7 @@ let eI = function(e) {
             idle: null == (t = null == d ? true : d.idle) || t,
             whichPopoutIsOpen: m,
             setWhichPopoutIsOpen: g
-          }), K && (0, r.jsx)(q.Z, {
+          }), K && (0, r.jsx)(Y.Z, {
             channel: n,
             themeable: true,
             whichPopoutIsOpen: m,

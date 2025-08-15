@@ -2,7 +2,7 @@
 /** chunk id: 899007, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,9 +24,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk66856 = require("./66856.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,20 +36,20 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function N(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,73 +60,73 @@ function A(e, t) {
   return n
 }
 
-function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function C(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
+let R = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
-function R(e) {
+function P(e) {
   let {
     user: t,
     displayProfile: n,
     guildId: a,
     channelId: h,
-    themeType: T,
-    animateOnHover: A,
-    onOpenProfile: R,
-    className: P,
-    previewStatus: w
+    themeType: S,
+    animateOnHover: N,
+    onOpenProfile: P,
+    className: w,
+    previewStatus: D
   } = e, {
-    theme: D
+    theme: L
   } = (0, b.z)(), {
-    analyticsLocations: L
+    analyticsLocations: x
   } = (0, d.ZP)(u.Z.AVATAR), {
-    trackUserProfileAction: x
-  } = (0, m.KZ)(), M = p.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.p9.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
-    live: j
-  } = (0, g.Z)(t.id), [U] = j, {
-    status: G,
-    isMobileOnline: B
+    trackUserProfileAction: M
+  } = (0, m.KZ)(), k = p.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.p9.TIER_2), j = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
+    live: U
+  } = (0, g.Z)(t.id), [G] = U, {
+    status: B,
+    isMobileOnline: V
   } = (0, s.cj)([_.Z], () => ({
-    status: (0, c.Z)(U) ? O.Skl.STREAMING : _.Z.getStatus(t.id),
+    status: (0, c.Z)(G) ? O.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), V = true !== w ? w : G, F = [y.lY.MODAL, y.lY.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = o()(I.avatar, P), {
-    avatarDecorationSrc: H,
-    avatarSrc: Y,
-    eventHandlers: W
+  })), F = true !== D ? D : B, Z = [I.l.MODAL, I.l.MODAL_V2].includes(S) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(T.avatar, w), {
+    avatarDecorationSrc: Y,
+    avatarSrc: W,
+    eventHandlers: K
   } = (0, E.Z)({
     userId: t.id,
     guildId: null != n ? n.guildId : a,
-    size: F,
-    animateOnHover: A
-  }), K = (0, r.jsx)(C, {
-    src: Y,
-    avatarDecoration: H,
-    size: F,
+    size: Z,
+    animateOnHover: N
+  }), z = (0, r.jsx)(R, {
+    src: W,
+    avatarDecoration: Y,
+    size: Z,
     "aria-label": t.username,
-    imageClassName: null != R ? I.overlay : true,
-    status: k ? O.Skl.UNKNOWN : V,
-    statusBackdropColor: M && !k ? (0, l.QFD)(D) : true,
-    isMobile: B,
+    imageClassName: null != P ? T.overlay : true,
+    status: j ? O.Skl.UNKNOWN : F,
+    statusBackdropColor: k && !j ? (0, l.QFD)(L) : true,
+    isMobile: V,
     statusTooltip: true,
     statusTooltipDelay: y.vB
   });
-  return null == R ? (0, r.jsx)("div", N(S({}, W), {
-    className: Z,
-    children: K
-  })) : (0, r.jsx)(l.P3F, N(S({}, W), {
-    className: o()(Z, I.clickable),
+  return null == P ? (0, r.jsx)("div", C(A({}, K), {
+    className: H,
+    children: z
+  })) : (0, r.jsx)(l.P3F, C(A({}, K), {
+    className: o()(H, T.clickable),
     focusProps: {
-      ringClassName: I.focusRing
+      ringClassName: T.focusRing
     },
     onClick: () => {
-      x({
+      M({
         action: "PRESS_VIEW_PROFILE",
-        analyticsLocations: L
-      }), null == R || R()
+        analyticsLocations: x
+      }), null == P || P()
     },
-    children: K
+    children: z
   }))
 }

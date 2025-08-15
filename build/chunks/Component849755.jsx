@@ -19,8 +19,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk373826 = require("./373826.jsx"),
-  Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk636235 = require("./636235.js");
 
@@ -37,7 +37,7 @@ function v(e) {
     channelId: t.id
   }), [A, t.id]);
   i.useEffect(() => {
-    null != N && h.default.track(b.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+    null != N && h.default.track(E.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
       channel_id: t.id,
       guild_id: t.guild_id,
       location_stack: I
@@ -46,7 +46,7 @@ function v(e) {
   let C = e => {
     e.stopPropagation(), n({
       action: "PRESS_VOICE_CHANNEL_STATUS"
-    }), v === E.lY.POPOUT && (null == a || a()), (0, d.Z)({
+    }), v === b.l.POPOUT && (null == a || a()), (0, d.Z)({
       channel: t,
       sourceAnalyticsLocations: I
     })

@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk5192 = require("./5192.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk652853 = require("./652853.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk976794 = require("./976794.js");
 
@@ -30,7 +30,7 @@ function E(e) {
     className: y
   } = e, {
     themeType: O
-  } = (0, p.z)(), v = O === h.lY.MODAL_V2, I = f.ZP.getName(n, a, t), {
+  } = (0, p.z)(), v = O === h.l.MODAL_V2, I = f.ZP.getName(n, a, t), {
     trackUserProfileAction: T
   } = (0, _.KZ)(), {
     newestAnalyticsLocation: S

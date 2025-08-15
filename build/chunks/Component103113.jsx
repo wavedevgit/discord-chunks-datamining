@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk530 = require("./530.jsx"),
   Chunk679332 = require("./679332.jsx"),
   Chunk544989 = require("./544989.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk116649 = require("./116649.js");
 
@@ -119,7 +119,7 @@ function P(e) {
         }), (0, r.jsxs)(O.Z, {
           user: t,
           displayProfile: U,
-          themeType: S.lY.POPOUT,
+          themeType: S.l.POPOUT,
           children: [(0, r.jsx)(T.Z, {
             children: (0, r.jsx)(I.Z, {
               user: t,
@@ -131,13 +131,13 @@ function P(e) {
               user: t,
               displayProfile: U,
               guildId: n,
-              themeType: S.lY.POPOUT
+              themeType: S.l.POPOUT
             }), (0, r.jsx)(g.Z, {
               user: t,
               displayProfile: U,
               guildId: n,
               channelId: C,
-              themeType: S.lY.POPOUT,
+              themeType: S.l.POPOUT,
               onOpenProfile: H ? Z : true
             })]
           }), (0, r.jsxs)(a.Ttm, {
@@ -149,7 +149,7 @@ function P(e) {
               onOpenProfile: H ? Z : true,
               tags: (0, r.jsx)(E.Z, {
                 displayProfile: U,
-                themeType: S.lY.POPOUT,
+                themeType: S.l.POPOUT,
                 onClose: x
               })
             }), (0, r.jsx)(y.Z, {

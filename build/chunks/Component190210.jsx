@@ -119,7 +119,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     accessibilityLabel: M,
     channel: D,
     type: G,
-    focused: q,
+    focused: Y,
     onChange: en,
     onResize: eo,
     onBlur: es,
@@ -159,15 +159,15 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     disabled: eU,
     canAttachFiles: eB,
     canEveryoneSendMessages: eF
-  } = (0, H.TE)(D, G, ek, I), eH = !N.dN.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eG = !eH || !(null == (n = G.commands) ? true : n.enabled) || !q || p !== W.GI, eV = (0, Z.Z)(), {
+  } = (0, H.TE)(D, G, ek, I), eH = !N.dN.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eG = !eH || !(null == (n = G.commands) ? true : n.enabled) || !Y || p !== W.GI, eV = (0, Z.Z)(), {
     fontSize: ez
   } = (0, d.cj)([b.Z], () => ({
     fontSize: b.Z.fontSize,
     isSubmitButtonEnabled: b.Z.isSubmitButtonEnabled
-  })), eW = (0, d.e7)([w.Z], () => w.Z.isEnabled()), eY = (0, T.NE)(D);
+  })), eW = (0, d.e7)([w.Z], () => w.Z.isEnabled()), eq = (0, T.NE)(D);
   (0, H.hJ)(G, eU);
   let {
-    eventEmitter: eq,
+    eventEmitter: eY,
     handleEditorSelectionChanged: eK
   } = (0, H.x2)(ew, p, g), eX = i.useCallback(e => {
     var t, n;
@@ -178,7 +178,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
       heroFile: null
     }), null == (n = ew.current) || n.blur(), ed($(J({}, e), {
       announcementSendOptions: {
-        createThread: eY && eZ,
+        createThread: eq && eZ,
         threadName: i,
         publish: eI
       }
@@ -186,11 +186,11 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     r.push({
       type: m.re.MEDIA_GALLERY,
       items: [ee("attachment://".concat(et(eP.name)), false)],
-      id: "".concat(Y.Vm)
+      id: "".concat(q.Vm)
     }), e.value.length > 0 && r.push({
       type: m.re.TEXT_DISPLAY,
       content: e.value,
-      id: "".concat(Y.Kb)
+      id: "".concat(q.Kb)
     });
     let l = R.Z.getUploads(D.id, A.d.ChannelMessage),
       a = l.filter(e => (e.isImage || e.isVideo) && e.filename !== (null == eP ? true : eP.name)),
@@ -199,12 +199,12 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     return s.length > 0 && r.push({
       type: m.re.MEDIA_GALLERY,
       items: s,
-      id: "".concat(Y.m2)
+      id: "".concat(q.m2)
     }), o.forEach((e, t) => {
       r.push({
         type: m.re.FILE,
         file: ee("attachment://".concat(et(e.filename)), false).media,
-        id: "".concat(Y.kn + t),
+        id: "".concat(q.kn + t),
         name: et(e.filename),
         size: null
       })
@@ -214,12 +214,12 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     }), null == (t = ew.current) || t.blur(), ed($(J({}, e), {
       components: r,
       announcementSendOptions: {
-        createThread: eY && eZ,
+        createThread: eq && eZ,
         threadName: i,
         publish: eI
       }
     }))
-  }, [ed, eS, eP, D.id, eZ, eI, eY]), {
+  }, [ed, eS, eP, D.id, eZ, eI, eq]), {
     submit: eQ,
     handleSubmit: eJ
   } = (0, H.bL)(eX, G, ew, eM, D.id), {
@@ -257,7 +257,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     shouldHideExpressionPicker: e9,
     handleAutocompleteVisibilityChange: te,
     handleOuterClick: tt
-  } = (0, H.iV)(G, eq, ew), tn = (0, H.ae)(ew), tr = (0, H.Sg)(eQ, G, ew), ti = (0, H.O1)({
+  } = (0, H.iV)(G, eY, ew), tn = (0, H.ae)(ew), tr = (0, H.Sg)(eQ, G, ew), ti = (0, H.O1)({
     editorRef: ew,
     disabled: eU,
     textValue: p,
@@ -265,8 +265,8 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     chatInputType: G,
     submit: eX
   });
-  (0, L.S)(eq, D.guild_id, D.id);
-  let [tl, ta] = i.useState(false), to = q || tl || p.length > 0 || null != eP || eS.length > 0, {
+  (0, L.S)(eY, D.guild_id, D.id);
+  let [tl, ta] = i.useState(false), to = Y || tl || p.length > 0 || null != eP || eS.length > 0, {
     editorHeaderHeight: ts,
     paddingTop: tc
   } = (0, h.q_F)({
@@ -298,7 +298,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     })
   }, [D.id, eP, G.drafts.type]);
   return (0, r.jsx)(j.f6, {
-    value: eq,
+    value: eY,
     children: (0, r.jsxs)(_.Gt, {
       value: eT,
       children: [(0, r.jsxs)("div", {
@@ -349,7 +349,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                   children: (0, r.jsx)(B.Z, {
                     ref: ew,
                     id: S,
-                    focused: q,
+                    focused: Y,
                     useSlate: eH,
                     textValue: p,
                     richValue: g,
@@ -423,7 +423,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                 targetElementRef: tu,
                 renderPopout: () => (0, r.jsx)(er, {
                   channelId: D.id,
-                  canCreateThread: eY
+                  canCreateThread: eq
                 }),
                 shouldShow: td,
                 autoInvert: true,
@@ -449,7 +449,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                       children: [(0, r.jsx)(h.Uuj, {
                         size: "xs",
                         color: "white"
-                      }), eY && eZ ? (0, r.jsx)(h.or_, {
+                      }), eq && eZ ? (0, r.jsx)(h.or_, {
                         size: "xxs",
                         color: "white",
                         className: X.subIcon
@@ -470,7 +470,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           canOnlyUseTextCommands: false,
           canSendStickers: true,
           textValue: p,
-          focused: q,
+          focused: Y,
           expressionPickerView: e5,
           type: G,
           editorRef: ew,
@@ -633,8 +633,8 @@ function ea(e) {
         onChange: o,
         "aria-hidden": true,
         tabIndex: false,
-        maxFileSizeBytes: q.B,
-        onFileSizeError: () => (0, P.Z)(q.B)
+        maxFileSizeBytes: Y.B,
+        onFileSizeError: () => (0, P.Z)(Y.B)
       }), (0, r.jsx)(h.FmF, {
         size: "md",
         color: s ? p.Z.colors.INTERACTIVE_ACTIVE : p.Z.colors.INTERACTIVE_NORMAL

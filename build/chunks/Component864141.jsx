@@ -26,7 +26,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk849755 = require("./849755.jsx"),
   Chunk384298 = require("./384298.jsx"),
   Chunk670451 = require("./670451.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk704543 = require("./704543.js");
 
@@ -146,10 +146,10 @@ function w(e) {
               voiceChannel: i,
               onAction: L,
               onClose: R
-            }), w === T.lY.MODAL_V2 && B()]
-          }), w === T.lY.MODAL && B()]
+            }), w === T.l.MODAL_V2 && B()]
+          }), w === T.l.MODAL && B()]
         })
-      }), w !== T.lY.MODAL && w !== T.lY.MODAL_V2 && B()]
+      }), w !== T.l.MODAL && w !== T.l.MODAL_V2 && B()]
     })
   })
 }

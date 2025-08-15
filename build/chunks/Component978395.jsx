@@ -29,8 +29,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk116854 = require("./116854.jsx"),
   Chunk166584 = require("./166584.jsx"),
   Chunk915014 = require("./915014.jsx"),
-  Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk116649 = require("./116649.js");
 
@@ -68,7 +68,7 @@ function D(e) {
       pronouns: null == D ? true : D.pronouns,
       tags: (0, r.jsx)(_.Z, {
         displayProfile: D,
-        themeType: C.lY.POPOUT,
+        themeType: R.l.POPOUT,
         onClose: j
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
@@ -80,7 +80,7 @@ function D(e) {
           onOpenProfile: M
         })]
       })
-    }), G === R.OGo.PENDING_INCOMING && (0, r.jsx)(O.Z.Overlay, {
+    }), G === C.OGo.PENDING_INCOMING && (0, r.jsx)(O.Z.Overlay, {
       children: (0, r.jsx)(g.Z, {
         user: t,
         guildId: null == L ? true : L.id,

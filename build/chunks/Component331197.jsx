@@ -100,9 +100,9 @@ function O(e) {
   function W() {
     (0, d.v)(P, d.d.SOUNDBOARD), E === v.D.SOUNDBOARD ? (null == S || S(true), V()) : (null != E ? (Z(), G()) : Z(), null == S || S(v.D.SOUNDBOARD))
   }
-  let Y = i.useRef(null);
+  let q = i.useRef(null);
   return (0, r.jsx)(s.y, {
-    targetElementRef: Y,
+    targetElementRef: q,
     shouldShow: F && (E === v.D.SOUNDBOARD || null == E) || E === v.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
@@ -134,7 +134,7 @@ function O(e) {
       })
     },
     children: () => (0, r.jsx)(x.d, {
-      ref: Y,
+      ref: q,
       isTrayButton: true,
       themeable: O,
       label: w ? j.intl.string(j.t["Ox4/zc"]) : R ? j.intl.string(j.t["+YBKYG"]) : M ? j.intl.string(j.t.X1lQlp) : true,

@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk502762 = require("./502762.jsx"),
   Chunk848780 = require("./848780.jsx"),
   Chunk907179 = require("./907179.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk637079 = require("./637079.js"),
   Chunk609440 = require("./609440.js");
@@ -87,7 +87,7 @@ function T(e) {
         children: (0, r.jsx)(h.Z, {
           user: t,
           displayProfile: M,
-          themeType: E.lY.POPOUT,
+          themeType: E.l.POPOUT,
           children: (0, r.jsxs)("div", {
             className: y.container,
             children: [(0, r.jsx)("img", {

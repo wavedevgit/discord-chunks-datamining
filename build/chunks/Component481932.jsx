@@ -12,8 +12,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk699516 = require("./699516.js"),
   Chunk821706 = require("./821706.jsx"),
   Chunk562831 = require("./562831.js"),
-  Chunk228168 = require("./228168.js"),
-  Chunk981631 = require("./981631.js");
+  Chunk981631 = require("./981631.js"),
+  Chunk671955 = require("./671955.js");
 
 function f(e) {
   let {
@@ -29,8 +29,8 @@ function f(e) {
   } = (0, c.H)({
     userId: t.id
   }), b = m.length > 0 || g || E;
-  if (null == t || t.bot || p || h === d.OGo.BLOCKED) return null;
-  if (h === d.OGo.NONE && b) return n === u.lY.MODAL ? null : (0, r.jsx)(l.k9, {
+  if (null == t || t.bot || p || h === u.OGo.BLOCKED) return null;
+  if (h === u.OGo.NONE && b) return n === d.l.MODAL ? null : (0, r.jsx)(l.k9, {
     type: "banner",
     user: t,
     gameFriends: m,
@@ -40,10 +40,10 @@ function f(e) {
     shouldShowTooltip: f
   });
   switch (h) {
-    case d.OGo.FRIEND:
-    case d.OGo.PENDING_INCOMING:
-    case d.OGo.PENDING_OUTGOING:
-      if (n === u.lY.MODAL && h !== d.OGo.FRIEND) return null;
+    case u.OGo.FRIEND:
+    case u.OGo.PENDING_INCOMING:
+    case u.OGo.PENDING_OUTGOING:
+      if (n === d.l.MODAL && h !== u.OGo.FRIEND) return null;
       return (0, r.jsx)(l.g, {
         type: "banner",
         user: t,
@@ -52,7 +52,7 @@ function f(e) {
         shouldShowTooltip: f
       });
     default:
-      if (n === u.lY.MODAL) return null;
+      if (n === d.l.MODAL) return null;
       return (0, r.jsx)(l.Z7, {
         type: "banner",
         userId: t.id,

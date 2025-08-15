@@ -27,7 +27,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk420654 = require("./420654.jsx"),
   Chunk166584 = require("./166584.jsx"),
   Chunk915014 = require("./915014.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk57842 = require("./57842.js"),
   Chunk116649 = require("./116649.js");
@@ -58,7 +58,7 @@ function R(e) {
       pronouns: null == R ? true : R.pronouns,
       tags: (0, r.jsx)(_.Z, {
         displayProfile: R,
-        themeType: S.lY.POPOUT,
+        themeType: S.l.POPOUT,
         onClose: x
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {

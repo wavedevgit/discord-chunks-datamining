@@ -13,7 +13,7 @@ var Chunk780384 = require("./780384.js"),
   Chunk105759 = require("./105759.js"),
   Chunk898969 = require("./898969.jsx"),
   Chunk703614 = require("./703614.jsx"),
-  Chunk182294 = require("./182294.js"),
+  Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk908780 = require("./908780.js");
 let h = () => {
@@ -23,7 +23,7 @@ let h = () => {
       eventHandlers: t
     } = (0, Chunk518950.Z)({
       userId: null == module ? true : module.id,
-      size: Chunk182294.EF.SIZE_32,
+      size: Chunk268685.EF.SIZE_32,
       animateOnHover: true
     }),
     h = (0, Chunk410030.Fg)(),
@@ -54,7 +54,7 @@ let h = () => {
       }({
         src: exports,
         "aria-label": module.username,
-        size: Chunk182294.EF.SIZE_32
+        size: Chunk268685.EF.SIZE_32
       }, require))
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/bold",

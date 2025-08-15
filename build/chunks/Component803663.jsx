@@ -17,7 +17,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk979651 = require("./979651.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk475413 = require("./475413.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx");
 
 function g(e) {
@@ -37,7 +37,7 @@ function g(e) {
       action: "PRESS_STAGE_CHANNEL_LISTEN_BUTTON"
     }), s.AC(O, y), (0, o.Kh)(y), null == g || g()
   };
-  return E === h.lY.MODAL_V2 ? (0, r.jsx)(p.tG, {
+  return E === h.l.MODAL_V2 ? (0, r.jsx)(p.tG, {
     text: m.intl.string(m.t.ZYO5OD),
     size: a.Ph.TINY,
     themeColor: "secondary",

@@ -19,8 +19,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk502762 = require("./502762.jsx"),
   Chunk848780 = require("./848780.jsx"),
   Chunk907179 = require("./907179.jsx"),
-  Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk220566 = require("./220566.js");
 
@@ -54,7 +54,7 @@ function I(e) {
     openedAt: Z,
     onHide: N,
     sourceAnalyticsLocations: w = []
-  } = e, S = n === h.ME ? true : n, A = (0, i.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
+  } = e, S = n === O.ME ? true : n, A = (0, i.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: C
   } = (0, c.ZP)([...w, A ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), D = (0, f.ZB)({
     layout: "MODAL_V2",
@@ -90,7 +90,7 @@ function I(e) {
         children: (0, r.jsxs)(b.Z, {
           user: t,
           displayProfile: R,
-          themeType: O.lY.MODAL_V2,
+          themeType: h.l.MODAL_V2,
           children: [(0, r.jsx)("div", {
             className: v.background
           }), (0, r.jsxs)("div", {

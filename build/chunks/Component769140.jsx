@@ -36,8 +36,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk668700 = require("./668700.jsx"),
   Chunk384298 = require("./384298.jsx"),
   Chunk670451 = require("./670451.jsx"),
-  Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk704543 = require("./704543.js"),
   Chunk936524 = require("./936524.js"),
@@ -73,7 +73,7 @@ function V(e) {
   }), {
     previewUrl: J,
     isLoading: $
-  } = (0, E.Z)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, b.wq)(W), en = (0, _.Kt)() && (0, _.zd)(null == W ? true : W.id), er = (0, o.e7)([v.Z], () => null != W && !en && v.Z.canBasicChannel(M.S7T.CONNECT, W)), ei = (0, u.Z)($ ? null : J), ea = $ || null == J ? ei : J;
+  } = (0, E.Z)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, b.wq)(W), en = (0, _.Kt)() && (0, _.zd)(null == W ? true : W.id), er = (0, o.e7)([v.Z], () => null != W && !en && v.Z.canBasicChannel(x.S7T.CONNECT, W)), ei = (0, u.Z)($ ? null : J), ea = $ || null == J ? ei : J;
   if (null == Y || null == W || false === i.discoverable) return null;
   let eo = () => {
       let e = e => {
@@ -91,8 +91,8 @@ function V(e) {
         "aria-disabled": !ee,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: H === M.BRd.LIGHT ? B : G
-        }), Z !== x.lY.MODAL && Z !== x.lY.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
+          src: H === x.BRd.LIGHT ? B : G
+        }), Z !== M.l.MODAL && Z !== M.l.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             className: U.overlayText,
             variant: "text-sm/medium",
@@ -112,7 +112,7 @@ function V(e) {
           alt: "",
           src: ea,
           className: U.image
-        }), Z !== x.lY.MODAL && Z !== x.lY.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
+        }), Z !== M.l.MODAL && Z !== M.l.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             className: U.overlayText,
             variant: "text-sm/medium",
@@ -126,7 +126,7 @@ function V(e) {
         })]
       })
     },
-    es = () => Z !== x.lY.MODAL && Z !== x.lY.MODAL_V2 ? null : (0, r.jsxs)("div", {
+    es = () => Z !== M.l.MODAL && Z !== M.l.MODAL_V2 ? null : (0, r.jsxs)("div", {
       className: j.details,
       children: [(0, r.jsx)(P.Z, {
         channel: W,
@@ -148,9 +148,9 @@ function V(e) {
         disableUserPopout: e => e === t.id,
         overflowCountColor: "text-muted",
         "aria-label": k.intl.string(k.t.jNqDh4)
-      }), Z === x.lY.MODAL_V2 && ec()]
+      }), Z === M.l.MODAL_V2 && ec()]
     }),
-    el = () => Z === x.lY.MODAL || Z === x.lY.MODAL_V2 ? null : (0, r.jsx)(w.Z, {
+    el = () => Z === M.l.MODAL || Z === M.l.MODAL_V2 ? null : (0, r.jsx)(w.Z, {
       user: t,
       guild: Y,
       channel: W,
@@ -190,9 +190,9 @@ function V(e) {
         className: j.body,
         children: [(0, r.jsxs)("div", {
           className: j.content,
-          children: [eo(), es(), Z === x.lY.MODAL && ec()]
+          children: [eo(), es(), Z === M.l.MODAL && ec()]
         }), el()]
-      }), Z !== x.lY.MODAL && Z !== x.lY.MODAL_V2 && ec()]
+      }), Z !== M.l.MODAL && Z !== M.l.MODAL_V2 && ec()]
     })
   })
 }

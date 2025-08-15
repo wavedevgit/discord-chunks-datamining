@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk4517 = require("./4517.jsx"),
   Chunk895697 = require("./895697.jsx"),
   Chunk161572 = require("./161572.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk116649 = require("./116649.js");
 
@@ -119,7 +119,7 @@ function P(e) {
         }), (0, r.jsxs)(b.Z, {
           user: t,
           displayProfile: V,
-          themeType: S.lY.POPOUT,
+          themeType: S.l.POPOUT,
           children: [(0, r.jsx)(O.Z, {
             children: (0, r.jsx)(y.Z, {
               user: t,
@@ -133,18 +133,18 @@ function P(e) {
               user: t,
               displayProfile: V,
               guildId: C,
-              themeType: S.lY.POPOUT
+              themeType: S.l.POPOUT
             }), (0, r.jsx)(g.Z, {
               user: t,
               displayProfile: V,
               guildId: C,
               channelId: P,
-              themeType: S.lY.POPOUT,
+              themeType: S.l.POPOUT,
               onOpenProfile: k ? true : Y
             }), (0, r.jsx)(v.Z, {
               location: "BotUserProfilePopout",
               user: t,
-              themeType: S.lY.POPOUT,
+              themeType: S.l.POPOUT,
               onCloseProfile: x,
               disableToolbar: true
             })]

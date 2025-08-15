@@ -195,8 +195,8 @@ function R(e) {
       }, [e])
     }
   }(l), W = !(D || L || U || B), {
-    titleAnimatedStyle: Y,
-    opacities: q
+    titleAnimatedStyle: q,
+    opacities: Y
   } = function(e) {
     let t = (0, d.Z)(() => new o.Z.Value(0)),
       n = (0, d.Z)(() => new o.Z.Value(0)),
@@ -247,7 +247,7 @@ function R(e) {
   p || (R && J.push((0, r.jsx)(o.Z.div, {
     className: T.cardWrapper,
     style: W ? {
-      opacity: q[J.length]
+      opacity: Y[J.length]
     } : {},
     children: (0, r.jsx)(w, {
       iconUrl: u.YvY,
@@ -258,7 +258,7 @@ function R(e) {
   }, "invite")), M && J.push((0, r.jsx)(o.Z.div, {
     className: T.cardWrapper,
     style: W ? {
-      opacity: q[J.length]
+      opacity: Y[J.length]
     } : {},
     children: (0, r.jsx)(w, {
       iconUrl: u.$_T,
@@ -269,7 +269,7 @@ function R(e) {
   }, "customize")), k && J.push((0, r.jsx)(o.Z.div, {
     className: T.cardWrapper,
     style: W ? {
-      opacity: q[J.length]
+      opacity: Y[J.length]
     } : {},
     children: (0, r.jsx)(w, {
       iconUrl: u.qMX,
@@ -280,7 +280,7 @@ function R(e) {
   }, "message")), (0, O.isWeb)() && J.push((0, r.jsx)(o.Z.div, {
     className: T.cardWrapper,
     style: W ? {
-      opacity: q[J.length]
+      opacity: Y[J.length]
     } : {},
     children: (0, r.jsx)(w, {
       iconUrl: u.yIb,
@@ -291,7 +291,7 @@ function R(e) {
   }, "download")), J.push((0, r.jsx)(o.Z.div, {
     className: T.cardWrapper,
     style: W ? {
-      opacity: q[J.length]
+      opacity: Y[J.length]
     } : {},
     children: (0, r.jsx)(w, {
       iconUrl: u.Tg$,
@@ -310,7 +310,7 @@ function R(e) {
       children: (0, r.jsxs)("div", {
         className: T.inner,
         children: [(0, r.jsxs)(o.Z.div, {
-          style: Y,
+          style: q,
           children: [(0, r.jsx)(u.X6q, {
             className: T.titleName,
             variant: "heading-xxl/medium",

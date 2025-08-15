@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk724241 = require("./724241.jsx"),
   Chunk890876 = require("./890876.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk448239 = require("./448239.js");
 
@@ -78,7 +78,7 @@ function v(e) {
   }), J = (0, r.jsxs)(d.Z, {
     user: t,
     displayProfile: W,
-    themeType: b.lY.POPOUT,
+    themeType: b.l.POPOUT,
     pendingThemeColors: w,
     className: a()(O.container, k),
     forceShowPremium: i,
@@ -114,7 +114,7 @@ function v(e) {
       }), !G && (0, r.jsx)(f.Z, {
         location: "UserProfilePreview",
         user: t,
-        themeType: b.lY.POPOUT,
+        themeType: b.l.POPOUT,
         disableToolbar: U
       })]
     }), (0, r.jsx)(m.Z, {

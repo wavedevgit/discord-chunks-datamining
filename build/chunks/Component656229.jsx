@@ -12,7 +12,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk867176 = require("./867176.jsx"),
   Chunk654904 = require("./654904.jsx"),
   Chunk486324 = require("./486324.js"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk579534 = require("./579534.js");
 
@@ -44,7 +44,7 @@ function _(e) {
     user: t,
     displayProfile: n,
     guildId: _,
-    themeType: u.lY.POPOUT,
+    themeType: u.l.POPOUT,
     pendingBanner: h,
     pendingAccentColor: m,
     canUsePremiumProfileCustomization: p,

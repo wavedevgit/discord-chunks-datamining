@@ -11,7 +11,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk206074 = require("./206074.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk475413 = require("./475413.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e) {
@@ -28,8 +28,8 @@ function d(e) {
   return null == _ ? null : (0, r.jsx)(l.tG, {
     icon: a.v3n,
     text: u.intl.string(u.t["jaYS/v"]),
-    size: f === c.lY.MODAL_V2 ? i.Ph.TINY : i.Ph.SMALL,
-    fullWidth: f !== c.lY.MODAL_V2,
+    size: f === c.l.MODAL_V2 ? i.Ph.TINY : i.Ph.SMALL,
+    fullWidth: f !== c.l.MODAL_V2,
     themeColor: "secondary",
     onClick: e => {
       e.stopPropagation(), null == n || n({

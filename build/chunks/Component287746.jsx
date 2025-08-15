@@ -548,8 +548,8 @@ class ta extends Chunk647438.PureComponent {
           shouldRefocus: true
         };
         if (null != n && n.length > 0) {
-          let e = (0, eY.KZ)(n);
-          if ((0, eY.Bf)(e, null == u ? true : u.id)) return (0, eW.G)(d, e), {
+          let e = (0, eq.KZ)(n);
+          if ((0, eq.Bf)(e, null == u ? true : u.id)) return (0, eW.G)(d, e), {
             shouldClear: false,
             shouldRefocus: false
           };
@@ -720,7 +720,7 @@ class to extends Chunk647438.PureComponent {
         guildId: null == Chunk827498 ? true : Chunk827498.guild_id,
         location: "ChannelChat"
       }),
-      Y = Chunk436952.qM.getCurrentConfig({
+      q = Chunk436952.qM.getCurrentConfig({
         location: "ChannelChat"
       }).enabled,
       X = Chunk338390 && null != Chunk541099 && null != Chunk827498 && null != Chunk827498.guild_id;
@@ -976,14 +976,14 @@ let ts = Chunk647438.memo(function(e) {
     G = (0, d.e7)([eT.Z], () => eT.Z.getChannel(H)),
     V = (0, d.e7)([eL.default], () => t.type !== e3.d4z.DM ? null : eL.default.getUser(t.getRecipientId())),
     z = (0, d.e7)([em.ZP, eI.default], () => em.ZP.getUserCombo(eI.default.getId(), t.id)),
-    q = (0, b.iD)(t),
+    Y = (0, b.iD)(t),
     K = (0, b.d7)(t),
-    J = q.length > 0 || t.rateLimitPerUser > 0 || null != z || null != K,
+    J = Y.length > 0 || t.rateLimitPerUser > 0 || null != z || null != K,
     $ = (0, W.Z)("ChannelChat"),
     {
       showLinkedLobbyApplicationLoadingIndicator: et
-    } = (0, eq.Z)(t.linkedLobby),
-    en = (0, Y.Z)("ChannelChat");
+    } = (0, eY.Z)(t.linkedLobby),
+    en = (0, q.Z)("ChannelChat");
   return (0, r.jsx)(to, {
     channel: t,
     isEditing: null != (0, d.e7)([eA.Z], () => eA.Z.getEditingMessageId(t.id)),

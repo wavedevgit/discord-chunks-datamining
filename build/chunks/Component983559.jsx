@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk4517 = require("./4517.jsx"),
   Chunk277117 = require("./277117.jsx"),
   Chunk52639 = require("./52639.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk231688 = require("./231688.js");
 
@@ -88,7 +88,7 @@ function w(e) {
           ref: U,
           user: t,
           displayProfile: w,
-          themeType: Z.lY.SIDEBAR,
+          themeType: Z.l.SIDEBAR,
           themeOverride: M,
           children: [null != F.interactionType && (0, r.jsx)(l.animated.div, {
             style: H,
@@ -97,7 +97,7 @@ function w(e) {
             children: [(0, r.jsxs)(j.Z, {
               children: [(0, r.jsx)(O.Z, {
                 user: t,
-                themeType: Z.lY.SIDEBAR,
+                themeType: Z.l.SIDEBAR,
                 shouldShowTooltip: null === F.interactionType
               }), t.bot ? (0, r.jsx)(v.Z, {
                 user: t
@@ -110,7 +110,7 @@ function w(e) {
               children: [(0, r.jsx)(_.Z, {
                 user: t,
                 displayProfile: w,
-                themeType: Z.lY.SIDEBAR,
+                themeType: Z.l.SIDEBAR,
                 animateOnHover: !B,
                 className: N.banner
               }), (0, r.jsx)(C.Z, {
@@ -121,13 +121,13 @@ function w(e) {
                 user: t,
                 displayProfile: w,
                 channelId: f.id,
-                themeType: Z.lY.SIDEBAR,
+                themeType: Z.l.SIDEBAR,
                 onOpenProfile: T ? true : G
               }), (0, r.jsx)(S.Z, {
                 location: "UserProfileSidebar",
                 user: t,
                 channelId: f.id,
-                themeType: Z.lY.SIDEBAR,
+                themeType: Z.l.SIDEBAR,
                 disableToolbar: t.bot
               })]
             }), (0, r.jsx)(P.Z, {

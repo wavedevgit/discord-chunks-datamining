@@ -320,7 +320,7 @@ class eV extends Chunk647438.PureComponent {
           ref: e => {
             this._callContainerRef.current = e, this.props.callContainerRef.current = e
           },
-          children: (0, r.jsx)(q.ZP, {
+          children: (0, r.jsx)(Y.ZP, {
             timeout: 2e3,
             children: e => this.renderContent(e)
           })
@@ -565,7 +565,7 @@ class eV extends Chunk647438.PureComponent {
           canChangeLayout: g,
           canInvite: b
         } = this.viewProperties,
-        y = l ? (0, r.jsx)(Y.Z, {
+        y = l ? (0, r.jsx)(q.Z, {
           channel: n,
           stream: (null == o ? true : o.type) === eM.fO.STREAM ? (0, L.my)(o.id) : true,
           applicationId: (null == o ? true : o.type) === eM.fO.ACTIVITY ? o.applicationId : true,
@@ -758,7 +758,7 @@ let ez = function(e) {
     selectedStream: G
   } = (0, u.cj)([el.Z], () => ({
     selectedStream: null != B ? el.Z.getActiveStreamForStreamKey(B.id) : null
-  }), [B]), z = (0, u.e7)([ec.Z], () => ec.Z.getGuild(n.getGuildId())), W = (0, u.e7)([es.Z], () => es.Z.getCall(n.id), [n.id]), Y = (0, u.e7)([ed.ZP], () => ed.ZP.getMentionCount(n.id), [n.id]), q = (0, u.e7)([ea.default], () => ea.default.getId()), {
+  }), [B]), z = (0, u.e7)([ec.Z], () => ec.Z.getGuild(n.getGuildId())), W = (0, u.e7)([es.Z], () => es.Z.getCall(n.id), [n.id]), q = (0, u.e7)([ed.ZP], () => ed.ZP.getMentionCount(n.id), [n.id]), Y = (0, u.e7)([ea.default], () => ea.default.getId()), {
     popoutWindow: K,
     popoutWindowAlwaysOnTop: X
   } = (0, u.cj)([F.Z], () => ({
@@ -814,7 +814,7 @@ let ez = function(e) {
             call: W,
             popoutWindow: K,
             popoutWindowAlwaysOnTop: X,
-            mentionCount: Y,
+            mentionCount: q,
             selectedStream: G,
             mode: N,
             inCall: y,
@@ -825,7 +825,7 @@ let ez = function(e) {
             chatOpen: U,
             maxSidebarWidth: eC,
             shouldUseVoiceEffectsActionBar: em,
-            currentUserId: q,
+            currentUserId: Y,
             selectedParticipant: B,
             allActiveStreams: H,
             useNewInviteButton: er,

@@ -11,7 +11,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk111028 = require("./111028.jsx"),
   Chunk5192 = require("./5192.js"),
   Chunk652853 = require("./652853.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk16535 = require("./16535.js");
 
 function d(e, t, n) {
@@ -174,7 +174,7 @@ function y(e) {
     channel: n
   } = e, {
     themeType: d
-  } = (0, l.z)(), _ = d === c.lY.MODAL_V2 ? b : E, y = t.length > h, O = t.length - h + 1, v = O >= 10 ? g : m;
+  } = (0, l.z)(), _ = d === c.l.MODAL_V2 ? b : E, y = t.length > h, O = t.length - h + 1, v = O >= 10 ? g : m;
   return (0, r.jsx)("div", {
     className: u.container,
     children: _[(0, i.clamp)(t.length - 1, 0, _.length - 1)].map((e, i) => {

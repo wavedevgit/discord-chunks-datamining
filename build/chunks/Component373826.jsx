@@ -10,7 +10,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk111028 = require("./111028.jsx"),
   Chunk652853 = require("./652853.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk704543 = require("./704543.js");
 
 function c(e, t, n) {
@@ -80,7 +80,7 @@ function h(e) {
     themeType: p
   } = (0, o.z)(), h = "string" == typeof t ? t.trim() : t;
   if (null == h || "" === h) return null;
-  let m = () => p === s.lY.MODAL || p === s.lY.MODAL_V2 ? (0, r.jsx)(c, f(u({
+  let m = () => p === s.l.MODAL || p === s.l.MODAL_V2 ? (0, r.jsx)(c, f(u({
     color: "text-default"
   }, d), {
     children: h

@@ -30,8 +30,8 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk317271 = require("./317271.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk182294 = require("./182294.js"),
   Chunk957825 = require("./957825.js"),
+  Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk553517 = require("./553517.js"),
   R = ((r = {}).SYSTEM_MESSAGE = "system_message", r.COACHMARK = "coachmark", r);
@@ -91,12 +91,12 @@ function L(e) {
             className: z,
             user: r,
             "aria-label": r.username,
-            size: N.EF.SIZE_56
+            size: A.EF.SIZE_56
           }), null != F && (0, i.jsx)(_.Z, {
             className: W,
             user: F,
             "aria-label": r.username,
-            size: N.EF.SIZE_24
+            size: A.EF.SIZE_24
           })]
         }), (0, i.jsxs)("div", {
           className: Z.textContainer,
@@ -129,7 +129,7 @@ function L(e) {
               recipientIds: r.id
             }).then(() => {
               setTimeout(() => {
-                (0, E.PG)(A.X1.GIF, b.Ie.NORMAL), setTimeout(() => {
+                (0, E.PG)(N.X1.GIF, b.Ie.NORMAL), setTimeout(() => {
                   (0, E.ql)(w.intl.string(w.t.jrtJi4), true)
                 }, 50)
               }, 100)

@@ -80,8 +80,8 @@ let G = Chunk647438.memo(function(e) {
     channel: V,
     draftType: z,
     editorTextContent: W,
-    setValue: Y,
-    canOnlyUseTextCommands: q
+    setValue: q,
+    canOnlyUseTextCommands: Y
   } = e, K = (0, p.bp)(), X = i.useRef(null), Q = i.useRef(null), J = (0, o.e7)([I.Z], () => I.Z.getActivities()), $ = (0, o.e7)([g.Z], () => g.Z.getSettings().clipsEnabled), ee = (0, o.e7)([g.Z], () => g.Z.getLastClipsSession()), et = (0, o.Wu)([g.Z], () => g.Z.getNewClipIds()), en = (0, o.e7)([O.ZP], () => null == O.ZP.getCurrentSidebarChannelId(V.id)), {
     showClipsHeaderEntrypoint: er
   } = m.NV.useExperiment({
@@ -127,7 +127,7 @@ let G = Chunk647438.memo(function(e) {
       canStartThreads: eg || eb,
       useSlate: ey,
       hasClips: eu,
-      canUseApplicationCommands: !q,
+      canUseApplicationCommands: !Y,
       channel: V,
       activities: J,
       newClipsCount: ev,
@@ -183,7 +183,7 @@ let G = Chunk647438.memo(function(e) {
               },
               draftType: z,
               editorTextContent: W,
-              setValue: Y,
+              setValue: q,
               openClips: em
             }));
           default:

@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk530 = require("./530.jsx"),
   Chunk4517 = require("./4517.jsx"),
   Chunk5192 = require("./5192.js"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk580792 = require("./580792.js");
 
 function b(t) {
@@ -31,26 +31,26 @@ function b(t) {
   return (0, l.jsxs)(c.Z, {
     user: e,
     displayProfile: v,
-    themeType: p.lY.POPOUT,
+    themeType: p.l.POPOUT,
     className: h.profilePreviewContainer,
     children: [(0, l.jsxs)("header", {
       children: [(0, l.jsx)(u.Z, {
         user: e,
         displayProfile: v,
-        themeType: p.lY.POPOUT
+        themeType: p.l.POPOUT
       }), (0, l.jsx)("div", {
         inert: true,
         children: (0, l.jsx)(o.Z, {
           user: e,
           displayProfile: v,
-          themeType: p.lY.POPOUT,
+          themeType: p.l.POPOUT,
           previewStatus: S,
           className: h.avatar
         })
       }), (0, l.jsx)(m.Z, {
         location: "CustomStatusUserProfilePreview",
         user: e,
-        themeType: p.lY.POPOUT,
+        themeType: p.l.POPOUT,
         previewText: n,
         previewEmoji: b,
         placeholderText: g,
@@ -68,7 +68,7 @@ function b(t) {
         pronouns: null == v ? true : v.pronouns,
         tags: (0, l.jsx)(s.Z, {
           displayProfile: v,
-          themeType: p.lY.POPOUT
+          themeType: p.l.POPOUT
         })
       })
     })]

@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk530 = require("./530.jsx"),
   Chunk679332 = require("./679332.jsx"),
   Chunk544989 = require("./544989.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk231688 = require("./231688.js"),
   Chunk892273 = require("./892273.js");
@@ -80,7 +80,7 @@ function w(e) {
         ref: U,
         user: t,
         displayProfile: R,
-        themeType: I.lY.SIDEBAR,
+        themeType: I.l.SIDEBAR,
         themeOverride: M,
         children: [(0, r.jsxs)(l.u2, {
           children: [(0, r.jsx)(P.Z, {
@@ -92,13 +92,13 @@ function w(e) {
             children: [(0, r.jsx)(C.Z, {
               user: t,
               displayProfile: R,
-              themeType: I.lY.SIDEBAR,
+              themeType: I.l.SIDEBAR,
               animateOnHover: !B
             }), (0, r.jsx)(y.Z, {
               user: t,
               displayProfile: R,
               channelId: n.id,
-              themeType: I.lY.SIDEBAR,
+              themeType: I.l.SIDEBAR,
               onOpenProfile: w ? true : F
             })]
           }), (0, r.jsxs)("div", {
@@ -110,7 +110,7 @@ function w(e) {
               onOpenProfile: w ? true : F,
               tags: (0, r.jsx)(_.Z, {
                 displayProfile: R,
-                themeType: I.lY.SIDEBAR
+                themeType: I.l.SIDEBAR
               })
             }), (0, r.jsxs)(O.Z.Overlay, {
               className: N.overlay,

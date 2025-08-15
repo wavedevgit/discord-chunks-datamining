@@ -21,8 +21,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk483517 = require("./483517.jsx"),
   Chunk652853 = require("./652853.jsx"),
   Chunk788858 = require("./788858.jsx"),
-  Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk704543 = require("./704543.js");
 let v = 3;
@@ -40,8 +40,8 @@ function I(e) {
     canViewChannel: R,
     canConnect: P
   } = (0, i.cj)([_.Z], () => ({
-    canViewChannel: _.Z.can(b.Plq.VIEW_CHANNEL, I),
-    canConnect: I.isPrivate() || _.Z.can(b.Plq.CONNECT, I)
+    canViewChannel: _.Z.can(E.Plq.VIEW_CHANNEL, I),
+    canConnect: I.isPrivate() || _.Z.can(E.Plq.CONNECT, I)
   }));
   if (!R) return null;
   let w = () => {
@@ -88,7 +88,7 @@ function I(e) {
         })
       })
     },
-    L = A !== E.lY.MODAL && A !== E.lY.MODAL_V2 && A !== E.lY.SIDEBAR;
+    L = A !== b.l.MODAL && A !== b.l.MODAL_V2 && A !== b.l.SIDEBAR;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(h.Z, {
       className: O.voiceChannelDivider

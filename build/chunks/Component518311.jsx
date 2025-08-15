@@ -327,7 +327,7 @@ class eg extends(r = Chunk647438.PureComponent) {
     if (!require || this.isNotFriends()) return null;
     let o = [];
     return Chunk120356.forEach(e => {
-      let t = Y.default.getUser(e);
+      let t = q.default.getUser(e);
       null != t && o.push($.ZP.getName(t))
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk918324.searchBar,
@@ -654,7 +654,7 @@ class eg extends(r = Chunk647438.PureComponent) {
         channel: t
       } = this.props, n = (0, P.v_)(t);
       C.Z.search(e, null == t ? true : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
-        q.default.track(er.rMx.SEARCH_USER_LIST_STARTED, ec(es({}, n), {
+        Y.default.track(er.rMx.SEARCH_USER_LIST_STARTED, ec(es({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
           entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
           search_query_length: e.length
@@ -701,7 +701,7 @@ class eg extends(r = Chunk647438.PureComponent) {
         } = this.props,
         r = (0, P.v_)(n),
         i = true;
-      1 === e.length && (i = null == b.Z._openCachedDMChannel(e[0])), q.default.track(er.rMx.CREATE_DM_USER_LIST_CLICKED, ec(es({}, r), {
+      1 === e.length && (i = null == b.Z._openCachedDMChannel(e[0])), Y.default.track(er.rMx.CREATE_DM_USER_LIST_CLICKED, ec(es({}, r), {
         is_new_dm: i,
         entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
         entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -715,7 +715,7 @@ class eg extends(r = Chunk647438.PureComponent) {
         location: "New Group DM"
       }).then(e => {
         let t = {};
-        "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && b.Z.updateChannel(e, t, S.Z.NEW_GROUP_DM_INVITE_MODAL), q.default.track(er.rMx.GDM_EDIT_INTERACTED, {
+        "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && b.Z.updateChannel(e, t, S.Z.NEW_GROUP_DM_INVITE_MODAL), Y.default.track(er.rMx.GDM_EDIT_INTERACTED, {
           channel_id: e,
           channel_type: er.d4z.GROUP_DM,
           location: S.Z.NEW_GROUP_DM_INVITE_MODAL,
@@ -732,7 +732,7 @@ class eg extends(r = Chunk647438.PureComponent) {
           if (e.isDM() && n !== e.id) return void g.Z.call(n, false, true);
           g.Z.ring(n, t, "dm_invite")
         }
-      }), q.default.track(er.rMx.CREATE_DM_USER_LIST_CLICKED, ec(es({}, r), {
+      }), Y.default.track(er.rMx.CREATE_DM_USER_LIST_CLICKED, ec(es({}, r), {
         is_new_dm: true,
         entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
         entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -771,7 +771,7 @@ class eg extends(r = Chunk647438.PureComponent) {
         this.setState({
           copied: false
         })
-      }, 1e3), q.default.track(er.rMx.COPY_INSTANT_INVITE, {
+      }, 1e3), Y.default.track(er.rMx.COPY_INSTANT_INVITE, {
         server: null,
         channel: null != t ? t.id : null,
         channel_type: null != t ? t.type : null,
@@ -799,7 +799,7 @@ function eb(e) {
     analyticsLocations: s
   } = (0, I.ZP)(S.Z.NEW_GROUP_DM_INVITE_MODAL);
   if (!(0, w.a)(S.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
-  let c = (0, T.pT)(Array.from(t), Y.default, z.Z);
+  let c = (0, T.pT)(Array.from(t), q.default, z.Z);
   return (0, i.jsxs)("div", {
     className: el.customizationContainer,
     children: [(0, i.jsx)(R.B, {
@@ -900,7 +900,7 @@ function eC(e) {
     channel: r,
     location: g,
     subscribeToGlobalHotkey: m
-  }), E = (0, p.e7)([Y.default], () => Y.default.getUser(null == r ? true : r.getRecipientId()));
+  }), E = (0, p.e7)([q.default], () => q.default.getUser(null == r ? true : r.getRecipientId()));
   return null != (t = null == E ? true : E.bot) && t || null != (n = null == E ? true : E.isProvisional) && n ? null : O ? (0, i.jsx)(et.ZP.Icon, {
     ref: b,
     onClick: _,

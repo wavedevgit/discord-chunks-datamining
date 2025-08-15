@@ -14,8 +14,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk553795 = require("./553795.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk475413 = require("./475413.jsx"),
-  Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx");
 
 function h(e) {
@@ -31,7 +31,7 @@ function h(e) {
   if ((0, i.e7)([c.Z], () => null != c.Z.getAccount(null, t))) return null;
   let E = e => {
     e.stopPropagation();
-    let n = t === _.ABu.XBOX;
+    let n = t === f.ABu.XBOX;
     null == h || h({
       action: n ? "PRESS_CONNECT_XBOX_BUTTON" : "PRESS_CONNECT_PLAYSTATION_BUTTON"
     }), (0, l.Z)({
@@ -39,7 +39,7 @@ function h(e) {
       location: m
     })
   };
-  return g === f.lY.MODAL_V2 ? (0, r.jsx)(d.tG, {
+  return g === _.l.MODAL_V2 ? (0, r.jsx)(d.tG, {
     icon: n,
     text: p.intl.formatToPlainString(p.t.XWSHTU, {
       platform: o.Z.get(t).name

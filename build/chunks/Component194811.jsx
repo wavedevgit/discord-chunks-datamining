@@ -11,7 +11,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk111028 = require("./111028.jsx"),
   Chunk652853 = require("./652853.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk704543 = require("./704543.js");
 
 function d(e) {
@@ -31,7 +31,7 @@ function d(e) {
     className: u.header,
     children: [(0, r.jsxs)(o.Text, {
       className: u.headerText,
-      variant: _ === c.lY.SIDEBAR ? "text-xs/semibold" : "text-xs/medium",
+      variant: _ === c.l.SIDEBAR ? "text-xs/semibold" : "text-xs/medium",
       color: "header-primary",
       id: n,
       children: [(0, r.jsx)(s.Z, {

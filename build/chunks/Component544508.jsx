@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk81259 = require("./81259.jsx"),
   Chunk119848 = require("./119848.jsx"),
   Chunk801461 = require("./801461.js"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk631936 = require("./631936.js"),
   Chunk733469 = require("./733469.js");
@@ -133,11 +133,11 @@ let v = Chunk647438.forwardRef(function(e, t) {
         children: [(0, n.jsx)(f.Z, {
           user: D,
           displayProfile: N,
-          themeType: b.lY.SIDEBAR
+          themeType: b.l.SIDEBAR
         }), (0, n.jsx)(g.Z, {
           user: D,
           displayProfile: N,
-          themeType: b.lY.SIDEBAR
+          themeType: b.l.SIDEBAR
         }), C === O.Wq.PREVIEW && null != F && (0, n.jsx)("div", {
           className: _.legacyUsernameBadgeContainer,
           children: (0, n.jsx)(u.ua7, {

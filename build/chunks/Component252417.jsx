@@ -16,8 +16,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk545957 = require("./545957.js"),
   Chunk158776 = require("./158776.js"),
   Chunk652853 = require("./652853.jsx"),
-  Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk777267 = require("./777267.js");
 let y = Chunk481060.EFr.SIZE_40,
   O = (0, Chunk481060.pxk)(y);
@@ -49,7 +49,7 @@ function h(e) {
     guildId: g
   });
   return (0, n.jsxs)(l.P3F, {
-    focusProps: N === j.lY.MODAL_V2 ? {
+    focusProps: N === v.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -105,7 +105,7 @@ function h(e) {
       src: t.getAvatarURL(g, O),
       "aria-label": t.username,
       size: y,
-      status: S ? v.Skl.UNKNOWN : h,
+      status: S ? j.Skl.UNKNOWN : h,
       statusBackdropColor: S ? true : (0, l.QFD)(Z),
       isMobile: C,
       className: x.avatar

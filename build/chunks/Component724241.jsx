@@ -14,7 +14,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk271383 = require("./271383.js"),
   Chunk246946 = require("./246946.js"),
   Chunk654904 = require("./654904.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk116649 = require("./116649.js");
 
 function p(e) {
@@ -57,7 +57,7 @@ function p(e) {
       isTryItOut: T,
       tags: (0, r.jsx)(a.Z, {
         displayProfile: p,
-        themeType: f.lY.POPOUT,
+        themeType: f.l.POPOUT,
         pendingLegacyUsernameDisabled: O,
         pendingBadges: v,
         shouldOpenBadgeTooltip: A

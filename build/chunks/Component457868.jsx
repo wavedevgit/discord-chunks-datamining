@@ -65,8 +65,8 @@ function z(e) {
   return e
 }
 let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
-  Y = 44 + Chunk276264.x,
-  q = Chunk647438.memo(function(e) {
+  q = 44 + Chunk276264.x,
+  Y = Chunk647438.memo(function(e) {
     let {
       channel: t,
       sectionId: l,
@@ -110,7 +110,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
         plainText: e,
         rawText: n
       }), m.Z.startTyping(t.id)
-    }, [b, t]), Y = i.useCallback(e => {
+    }, [b, t]), q = i.useCallback(e => {
       e.stopPropagation(), (0, x.f)({
         guildId: t.guild_id,
         location: {
@@ -118,7 +118,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           object: F.qAy.BOOST_GEM_ICON
         }
       })
-    }, [t.guild_id]), q = (0, j.K)({
+    }, [t.guild_id]), Y = (0, j.K)({
       user: b,
       guildId: t.guild_id,
       location: "ThreadMembers"
@@ -173,11 +173,11 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           selected: K,
           applicationStream: R,
           premiumSince: null == Q ? null : new Date(Q),
-          onClickPremiumGuildIcon: Y,
+          onClickPremiumGuildIcon: q,
           itemProps: M,
           lostPermissionTooltipText: D ? true : H.intl.string(H.t["/QcoT0"]),
           isOwner: U,
-          nameplate: q,
+          nameplate: Y,
           onClick: e => {
             e.shiftKey ? null == V || V() : X(e => !e)
           },
@@ -300,7 +300,7 @@ function Q(e) {
       }),
       listRef: r
     }
-  }(l, Y), C = 0 === d.length || d.every(e => 0 === e.userIds.length);
+  }(l, q), C = 0 === d.length || d.every(e => 0 === e.userIds.length);
   if (i.useEffect(() => {
       M.default.track(F.rMx.MEMBER_LIST_VIEWED, {
         channel_id: t.id,
@@ -335,7 +335,7 @@ function Q(e) {
                 guildId: n.id
               }, i.id)
             },
-            rowHeight: Y,
+            rowHeight: q,
             renderRow: e => {
               let {
                 section: n,
@@ -344,7 +344,7 @@ function Q(e) {
                 userIds: l,
                 id: a
               } = d[n];
-              return (0, r.jsx)(q, {
+              return (0, r.jsx)(Y, {
                 channel: t,
                 sectionId: a,
                 userId: l[i],

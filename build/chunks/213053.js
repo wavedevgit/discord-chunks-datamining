@@ -15,7 +15,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk168551 = require("./168551.js"),
   Chunk168631 = require("./168631.js"),
   Chunk579132 = require("./579132.js"),
-  Chunk228168 = require("./228168.js");
+  Chunk671955 = require("./671955.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -39,10 +39,10 @@ function m(e) {
   return e
 }
 let g = {
-    [Chunk228168.lY.POPOUT]: "user-profile-popout",
-    [Chunk228168.lY.MODAL]: "user-profile-modal",
-    [Chunk228168.lY.MODAL_V2]: "user-profile-modal-v2",
-    [Chunk228168.lY.SIDEBAR]: "user-profile-sidebar"
+    [Chunk671955.l.POPOUT]: "user-profile-popout",
+    [Chunk671955.l.MODAL]: "user-profile-modal",
+    [Chunk671955.l.MODAL_V2]: "user-profile-modal-v2",
+    [Chunk671955.l.SIDEBAR]: "user-profile-sidebar"
   },
   E = "custom-user-profile-theme",
   b = Object.freeze({

@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk693450 = require("./693450.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk270816 = require("./270816.js");
@@ -113,7 +113,7 @@ function T(e) {
     }), null != M && (0, r.jsx)(j.Z, {
       user: t,
       displayProfile: B,
-      themeType: y.lY.MODAL_V2,
+      themeType: y.l.MODAL_V2,
       className: k.backgroundThemeContainer,
       forceUserTheme: true,
       children: (0, r.jsx)("div", {

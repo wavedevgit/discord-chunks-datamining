@@ -126,7 +126,7 @@ function ed(e) {
     canManageGuildEvent: f
   } = (0, E.XJ)(t), m = (0, o.e7)([K.Z], () => K.Z.getStageInstanceByChannel(t.id), [t.id]), g = (0, o.e7)([v.ZP], () => v.ZP.getGuildScheduledEvent(null == m ? true : m.guild_scheduled_event_id)), b = (0, o.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), {
     suppress: C
-  } = (0, Z.Z)(t), x = L.default.getId(), [j] = (0, er.Z)(t), O = q.ZP.isModerator(x, t.id), S = (0, W.B)(t.id), P = f(g), {
+  } = (0, Z.Z)(t), x = L.default.getId(), [j] = (0, er.Z)(t), O = Y.ZP.isModerator(x, t.id), S = (0, W.B)(t.id), P = f(g), {
     parentAnalyticsLocation: I
   } = (0, h.ZP)(), T = i.useRef(null);
   if (!b) return (0, r.jsx)(s.zx, {
@@ -271,10 +271,10 @@ let ef = Chunk647438.memo(function(e) {
     reachedLimit: O
   } = (0, P.Z)(t), E = (0, o.e7)([H.default], () => H.default.getCurrentUser()), R = (0, o.e7)([U.Z], () => (0, x.Z)(U.Z)), M = (0, o.e7)([F.Z], () => F.Z.getVoiceChannelId() === t.id, [t.id]), L = (0, o.e7)([f.Z], () => f.Z.getStreamParticipants(t.id)[0], [t.id]), B = (0, X.PK)(t.id), G = j > 0, V = O && !B || null != L && L.user.id !== (null == E ? true : E.id), z = (0, _.u)("AudioDeviceMenu", n, {
     entrypoint: el.A5.CARET
-  }), Y = i.useRef(null), q = i.useRef(null);
+  }), q = i.useRef(null), Y = i.useRef(null);
   if (null == E) return null;
   let K = (0, r.jsx)(c.yRy, {
-    targetElementRef: Y,
+    targetElementRef: q,
     renderPopout: e => {
       let {
         closePopout: t
@@ -300,7 +300,7 @@ let ef = Chunk647438.memo(function(e) {
         isShown: i
       } = t;
       return (0, r.jsx)(D.C, {
-        ref: Y,
+        ref: q,
         centerButton: true,
         hasPermission: v,
         enabled: y,
@@ -319,7 +319,7 @@ let ef = Chunk647438.memo(function(e) {
     children: [M && !l ? (0, r.jsxs)("div", {
       className: eo.buttonSection,
       children: [(0, r.jsx)(c.yRy, {
-        targetElementRef: q,
+        targetElementRef: Y,
         renderPopout: e => {
           let {
             closePopout: t
@@ -349,7 +349,7 @@ let ef = Chunk647438.memo(function(e) {
             isShown: i
           } = t;
           return (0, r.jsx)(k.Z, {
-            ref: q,
+            ref: Y,
             centerButton: true,
             onPopoutClick: n,
             selfMute: a,
@@ -407,7 +407,7 @@ let eg = Chunk647438.memo(function(e) {
   let {
     channel: t,
     isOnStartStageScreen: n
-  } = e, i = (0, et.Z)(t.id), l = (0, W.B)(t.id), a = (0, o.e7)([B.Z], () => B.Z.can(Y.yP, t), [t]), s = (0, en.Z)(t.id), c = (0, o.e7)([f.Z], () => null != t ? f.Z.getSelectedParticipant(t.id) : null), u = !s && null == c;
+  } = e, i = (0, et.Z)(t.id), l = (0, W.B)(t.id), a = (0, o.e7)([B.Z], () => B.Z.can(q.yP, t), [t]), s = (0, en.Z)(t.id), c = (0, o.e7)([f.Z], () => null != t ? f.Z.getSelectedParticipant(t.id) : null), u = !s && null == c;
   return n ? (0, r.jsx)(em, {
     channel: t
   }) : i || l ? (0, r.jsxs)("div", {

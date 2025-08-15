@@ -14,8 +14,8 @@ var Chunk755721 = require("./755721.js"),
   Chunk395361 = require("./395361.jsx"),
   Chunk652853 = require("./652853.jsx"),
   Chunk475413 = require("./475413.jsx"),
-  Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk704543 = require("./704543.js");
 
@@ -28,7 +28,7 @@ function m(e) {
   } = e, {
     themeType: O
   } = (0, u.z)(), v = (0, l.Ih)(b, E), I = (0, l.Fe)(b, E);
-  if (!(0, s.Z)(b) || !(0, o.Z)(b, _.xjy.PLAY) && !(0, o.Z)(b, _.xjy.SYNC)) return null;
+  if (!(0, s.Z)(b) || !(0, o.Z)(b, f.xjy.PLAY) && !(0, o.Z)(b, f.xjy.SYNC)) return null;
   let T = e => {
       null == e || e.stopPropagation(), null == y || y({
         action: "PRESS_PLAY_ON_SPOTIFY_BUTTON"
@@ -39,7 +39,7 @@ function m(e) {
         action: "PRESS_LISTEN_ALONG_ON_SPOTIFY_BUTTON"
       }), I.onClick()
     };
-  return O === f.lY.MODAL_V2 ? (0, r.jsxs)(r.Fragment, {
+  return O === _.l.MODAL_V2 ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.DY3, {
       text: I.tooltip,
       children: (0, r.jsx)(d.tG, {

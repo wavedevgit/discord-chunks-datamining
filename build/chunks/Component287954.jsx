@@ -2,7 +2,7 @@
 /** chunk id: 287954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,9 +11,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk497805 = require("./497805.jsx"),
   Chunk511341 = require("./511341.jsx"),
   Chunk215105 = require("./215105.jsx"),
-  Chunk228168 = require("./228168.js");
+  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,20 +23,20 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,15 +47,15 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function h(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +63,7 @@ function p(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -70,7 +71,7 @@ function h(e, t) {
   return i
 }
 
-function m(e) {
+function g(e) {
   let {
     interactionType: t,
     interactionSource: n,
@@ -81,7 +82,7 @@ function m(e) {
     align: "top",
     animationPosition: "right",
     spacing: 8
-  } : r === c.lY.MODAL || r === c.lY.MODAL_V2 || n === c.n_.ACTIVITY ? {
+  } : r === u.l.MODAL || r === u.l.MODAL_V2 || n === c.n_.ACTIVITY ? {
     position: "bottom",
     align: "center",
     animationPosition: "top",
@@ -94,47 +95,47 @@ function m(e) {
   }
 }
 
-function g(e) {
+function E(e) {
   var {
     user: t,
     guildId: n,
-    channelId: u,
-    themeType: f,
-    onClose: h,
-    children: g
-  } = e, E = p(e, ["user", "guildId", "channelId", "themeType", "onClose", "children"]);
+    channelId: d,
+    themeType: _,
+    onClose: m,
+    children: E
+  } = e, b = h(e, ["user", "guildId", "channelId", "themeType", "onClose", "children"]);
   let {
-    interactionType: b,
-    interactionSource: y,
-    resetInteraction: O,
-    interactionSourceId: v,
-    interactionPopoutTargetRef: I
-  } = (0, a.Xo)(), T = [c.lY.MODAL, c.lY.MODAL_V2].includes(f) ? (0, o.z)(t.id, n) : true, S = y === E.sourceType && b === c.P.REACT, A = y === E.sourceType && b === c.P.REPLY, N = (S || A) && v === E.sourceId;
-  return (0, r.jsx)(i.yRy, _(d({
-    targetElementRef: null != I ? I : true,
+    interactionType: y,
+    interactionSource: O,
+    resetInteraction: v,
+    interactionSourceId: I,
+    interactionPopoutTargetRef: T
+  } = (0, a.Xo)(), S = [u.l.MODAL, u.l.MODAL_V2].includes(_) ? (0, o.z)(t.id, n) : true, A = O === b.sourceType && y === c.P.REACT, N = O === b.sourceType && y === c.P.REPLY, C = (A || N) && I === b.sourceId;
+  return (0, r.jsx)(i.yRy, p(f({
+    targetElementRef: null != T ? T : true,
     renderPopout: e => {
       let {
         setPopoutRef: i
-      } = e, a = S ? s.Z : l.Z;
-      return (0, r.jsx)(a, d({
+      } = e, a = A ? s.Z : l.Z;
+      return (0, r.jsx)(a, f({
         user: t,
         guildId: n,
-        channelId: u,
-        themeType: f,
-        onClose: h,
-        modalKey: T,
+        channelId: d,
+        themeType: _,
+        onClose: m,
+        modalKey: S,
         setPopoutRef: i
-      }, E))
+      }, b))
     },
     onRequestClose: () => {
-      O(), null == h || h()
+      v(), null == m || m()
     },
-    shouldShow: N
-  }, m({
-    interactionType: b,
-    interactionSource: y,
-    themeType: f
+    shouldShow: C
+  }, g({
+    interactionType: y,
+    interactionSource: O,
+    themeType: _
   })), {
-    children: g
+    children: E
   }))
 }

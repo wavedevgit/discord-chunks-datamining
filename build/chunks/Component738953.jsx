@@ -41,7 +41,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk4517 = require("./4517.jsx"),
   Chunk978395 = require("./978395.jsx"),
   Chunk161572 = require("./161572.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk116649 = require("./116649.js");
 
@@ -195,7 +195,7 @@ function z(e) {
           }), (0, r.jsxs)(D.Z, {
             user: t,
             displayProfile: el,
-            themeType: B.lY.POPOUT,
+            themeType: B.l.POPOUT,
             children: [null != eu.interactionType && (0, r.jsx)(a.animated.div, {
               style: ed,
               className: F.backdrop
@@ -209,7 +209,7 @@ function z(e) {
                 appContext: et
               }), (0, r.jsx)(x.Z, {
                 shouldShowTooltip: null === eu.interactionType,
-                themeType: B.lY.POPOUT,
+                themeType: B.l.POPOUT,
                 user: t
               }), !eE && (0, r.jsx)(k.Z, {
                 type: "banner",
@@ -224,7 +224,7 @@ function z(e) {
                 user: t,
                 displayProfile: el,
                 guildId: Z,
-                themeType: B.lY.POPOUT
+                themeType: B.l.POPOUT
               }), (0, r.jsx)(w.Z, {
                 userId: t.id,
                 className: F.toast,
@@ -235,7 +235,7 @@ function z(e) {
                 displayProfile: el,
                 guildId: Z,
                 channelId: Y,
-                themeType: B.lY.POPOUT,
+                themeType: B.l.POPOUT,
                 onOpenProfile: $ ? true : eT
               }), eO && eh ? (0, r.jsx)(E.Z, {
                 positionKey: e_,
@@ -248,7 +248,7 @@ function z(e) {
                   user: t,
                   guildId: Z,
                   channelId: Y,
-                  themeType: B.lY.POPOUT,
+                  themeType: B.l.POPOUT,
                   onCloseProfile: Q,
                   prompt: eI
                 })
@@ -258,7 +258,7 @@ function z(e) {
                 user: t,
                 guildId: Z,
                 channelId: Y,
-                themeType: B.lY.POPOUT,
+                themeType: B.l.POPOUT,
                 onCloseProfile: Q,
                 prompt: ev ? eI : null
               })]

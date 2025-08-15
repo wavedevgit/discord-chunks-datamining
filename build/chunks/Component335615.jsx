@@ -151,9 +151,9 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
           decoration: "never"
         })),
         t = "<@".concat(u.id, ">");
-      V.S.dispatch(q.CkL.TEXTAREA_FOCUS, {
+      V.S.dispatch(Y.CkL.TEXTAREA_FOCUS, {
         channelId: _.id
-      }), V.S.dispatchToLastSubscribed(q.CkL.INSERT_TEXT, {
+      }), V.S.dispatchToLastSubscribed(Y.CkL.INSERT_TEXT, {
         plainText: e,
         rawText: t
       }), b.Z.startTyping(_.id)
@@ -161,8 +161,8 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
       null != C && (e.stopPropagation(), (0, N.f)({
         guildId: C,
         location: {
-          section: q.jXE.MEMBER_LIST,
-          object: q.qAy.BOOST_GEM_ICON
+          section: Y.jXE.MEMBER_LIST,
+          object: Y.qAy.BOOST_GEM_ICON
         }
       }))
     }, [C]);
@@ -251,7 +251,7 @@ let et = Chunk998502.ZP.getEnableHardwareAcceleration(),
       guildId: l,
       size: 16
     }), o = (0, h.e7)([D.default], () => new Intl.NumberFormat(D.default.locale).format(i), [i]);
-    return t === q.Skl.UNKNOWN ? (0, r.jsx)("div", {
+    return t === Y.Skl.UNKNOWN ? (0, r.jsx)("div", {
       className: X.membersGroup,
       children: (0, r.jsx)("div", {
         className: X.memberGroupsPlaceholder
@@ -536,7 +536,7 @@ class eo extends Chunk647438.Component {
       if (0 === r.length) return;
       let i = r.reduce((e, t) => {
         var n;
-        return t.type !== L.so.MEMBER || (e.num_users_visible++, t.isMobileOnline && e.num_users_visible_with_mobile_indicator++, null != t.activities && t.activities.length > 0 && (e.num_users_visible_with_activity++, t.activities.some(e => e.type === q.IIU.PLAYING) && e.num_users_visible_with_game_activity++), null != t.user.avatarDecoration && e.num_users_visible_with_avatar_decoration++, (null == (n = t.user.collectibles) ? true : n.nameplate) != null && e.num_users_visible_with_nameplate++), e
+        return t.type !== L.so.MEMBER || (e.num_users_visible++, t.isMobileOnline && e.num_users_visible_with_mobile_indicator++, null != t.activities && t.activities.length > 0 && (e.num_users_visible_with_activity++, t.activities.some(e => e.type === Y.IIU.PLAYING) && e.num_users_visible_with_game_activity++), null != t.user.avatarDecoration && e.num_users_visible_with_avatar_decoration++, (null == (n = t.user.collectibles) ? true : n.nameplate) != null && e.num_users_visible_with_nameplate++), e
       }, {
         num_users_visible: 0,
         num_users_visible_with_mobile_indicator: 0,
@@ -545,7 +545,7 @@ class eo extends Chunk647438.Component {
         num_users_visible_with_avatar_decoration: 0,
         num_users_visible_with_nameplate: 0
       });
-      this.lastReportedAnalyticsChannel = this.props.channel.id, x.ZP.trackWithMetadata(q.rMx.MEMBER_LIST_VIEWED, J({}, i))
+      this.lastReportedAnalyticsChannel = this.props.channel.id, x.ZP.trackWithMetadata(Y.rMx.MEMBER_LIST_VIEWED, J({}, i))
     })
   }
 }

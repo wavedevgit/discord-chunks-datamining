@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk502762 = require("./502762.jsx"),
   Chunk848780 = require("./848780.jsx"),
   Chunk907179 = require("./907179.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk491010 = require("./491010.js"),
   Chunk268293 = require("./268293.js");
@@ -67,7 +67,7 @@ function E(e) {
         ref: N,
         user: t,
         displayProfile: S,
-        themeType: C.lY.SIDEBAR,
+        themeType: C.l.SIDEBAR,
         themeOverride: P,
         children: (0, r.jsx)(l.u2, {
           children: (0, r.jsxs)("div", {

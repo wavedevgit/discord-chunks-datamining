@@ -1,7 +1,7 @@
 /** Chunk was on 62880 **/
 /** chunk id: 382405, original params: e,a,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => U
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -33,9 +33,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk614716 = require("./614716.js"),
   Chunk228168 = require("./228168.js"),
   Chunk616922 = require("./616922.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk704543 = require("./704543.js");
 
-function k(e) {
+function A(e) {
   for (var a = 1; a < arguments.length; a++) {
     var t = null != arguments[a] ? arguments[a] : {},
       s = Object.keys(t);
@@ -54,7 +55,7 @@ function k(e) {
   return e
 }
 
-function A(e) {
+function w(e) {
   let {
     user: a,
     entry: t,
@@ -77,31 +78,31 @@ function A(e) {
     sourceUserId: a.id,
     trackEntryPointImpression: true
   }), {
-    analyticsLocations: k
-  } = (0, c.ZP)(), A = (0, N.Z)({
+    analyticsLocations: A
+  } = (0, c.ZP)(), w = (0, N.Z)({
     display: "recent",
     user: a,
     entry: t,
-    analyticsLocations: k
-  }), Y = (0, f.Z)({
+    analyticsLocations: A
+  }), G = (0, f.Z)({
     userId: a.id,
-    onAction: A
+    onAction: w
   });
   return null == S ? (0, s.jsx)("article", {
     "aria-labelledby": j,
     children: (0, s.jsxs)(P.Z.Overlay, {
-      className: i()(R.card, d),
-      ref: Y,
+      className: i()(k.card, d),
+      ref: G,
       children: [n, (0, s.jsx)("div", {
-        className: R.body,
+        className: k.body,
         children: (0, s.jsxs)("div", {
-          className: R.content,
+          className: k.content,
           children: [(0, s.jsx)(x.E, {
             image: v,
             size: x.J.SIZE_60,
-            className: R.image
+            className: k.image
           }), (0, s.jsx)("div", {
-            className: R.details,
+            className: k.details,
             children: (0, s.jsx)("div", {
               children: (0, s.jsx)(Z.f, {
                 variant: "heading-sm/semibold",
@@ -114,33 +115,33 @@ function A(e) {
       })]
     })
   }) : (0, s.jsxs)(T.Z, {
-    ref: Y,
+    ref: G,
     className: d,
     subsection: O.Tb.RECENT_ACTIVITY,
-    onAction: A,
+    onAction: w,
     onClose: m,
     "aria-labelledby": j,
     children: [n, (0, s.jsx)("div", {
-      className: R.body,
+      className: k.body,
       children: (0, s.jsxs)("div", {
-        className: R.content,
+        className: k.content,
         children: [(0, s.jsx)(x.E, {
           image: v,
           size: x.J.SIZE_60,
-          className: R.clickableImage,
+          className: k.clickableImage,
           onClick: e => {
-            e.stopPropagation(), A({
+            e.stopPropagation(), w({
               action: "PRESS_IMAGE"
-            }), S(e), b !== O.lY.MODAL && b !== O.lY.MODAL_V2 && (null == m || m())
+            }), S(e), b !== R.l.MODAL && b !== R.l.MODAL_V2 && (null == m || m())
           }
         }), (0, s.jsxs)("div", {
-          className: R.details,
+          className: k.details,
           children: [(0, s.jsx)(r.P3F, {
-            className: R.clickableText,
+            className: k.clickableText,
             onClick: e => {
-              e.stopPropagation(), A({
+              e.stopPropagation(), w({
                 action: "PRESS_TEXT"
-              }), S(e), b !== O.lY.MODAL && b !== O.lY.MODAL_V2 && (null == m || m())
+              }), S(e), b !== R.l.MODAL && b !== R.l.MODAL_V2 && (null == m || m())
             },
             children: (0, s.jsx)(Z.f, {
               variant: "heading-sm/semibold",
@@ -149,7 +150,7 @@ function A(e) {
             })
           }), (0, s.jsx)(y.Gk, {
             location: y.Gt.USER_PROFILE,
-            className: R.badges,
+            className: k.badges,
             children: t.content_type === l.s.TOP_GAME ? p.Hs.map((e, a) => (0, s.jsx)(e, {
               entry: t
             }, "entry-".concat(a))) : u.W.map((e, a) => (0, s.jsx)(e, {
@@ -162,7 +163,7 @@ function A(e) {
   })
 }
 
-function Y(e) {
+function G(e) {
   let {
     user: a,
     entry: t,
@@ -194,26 +195,26 @@ function Y(e) {
     onClose: l,
     "aria-labelledby": d,
     children: [n, (0, s.jsx)("div", {
-      className: R.body,
+      className: k.body,
       children: (0, s.jsxs)("div", {
-        className: R.content,
+        className: k.content,
         children: [null == u || "" === u ? (0, s.jsx)(x.E, {
           aspectRatio: "crunchyroll",
           image: j,
           size: x.J.SIZE_60,
-          className: R.image
+          className: k.image
         }) : (0, s.jsx)(x.E, {
           aspectRatio: "crunchyroll",
           image: j,
           size: x.J.SIZE_60,
-          className: R.clickableImage,
+          className: k.clickableImage,
           onClick: e => {
             e.stopPropagation(), p({
               action: "PRESS_IMAGE"
             }), (0, m.Y)(u)
           }
         }), (0, s.jsxs)("div", {
-          className: R.details,
+          className: k.details,
           children: [null == u || "" === u ? (0, s.jsxs)("div", {
             children: [(0, s.jsx)(Z.f, {
               variant: "heading-sm/semibold",
@@ -224,7 +225,7 @@ function Y(e) {
               text: t.extra.media_subtitle
             })]
           }) : (0, s.jsxs)(r.P3F, {
-            className: R.clickableText,
+            className: k.clickableText,
             onClick: e => {
               e.stopPropagation(), p({
                 action: "PRESS_TEXT"
@@ -240,7 +241,7 @@ function Y(e) {
             })]
           }), (0, s.jsx)(y.Gk, {
             location: y.Gt.USER_PROFILE,
-            className: R.badges,
+            className: k.badges,
             children: v.t.map((e, a) => (0, s.jsx)(e, {
               entry: t
             }, "entry-".concat(a)))
@@ -251,7 +252,7 @@ function Y(e) {
   })
 }
 
-function w(e) {
+function M(e) {
   var a, t;
   let {
     user: n,
@@ -282,20 +283,20 @@ function w(e) {
     onClose: d,
     "aria-labelledby": j,
     children: [l, (0, s.jsx)("div", {
-      className: R.body,
+      className: k.body,
       children: (0, s.jsxs)("div", {
-        className: R.content,
+        className: k.content,
         children: [(0, s.jsx)(x.E, {
           image: u,
           size: x.J.SIZE_60,
-          className: R.clickableImage,
+          className: k.clickableImage,
           onClick: e => {
             e.stopPropagation(), v({
               action: "OPEN_SPOTIFY_ALBUM"
             }), (0, m.o)(S.Hw.ALBUM, _.external_parent_id)
           }
         }), (0, s.jsxs)("div", {
-          className: R.details,
+          className: k.details,
           children: [(0, s.jsxs)("div", {
             children: [(0, s.jsx)(Z.f, {
               variant: "heading-sm/semibold",
@@ -318,7 +319,7 @@ function w(e) {
             })]
           }), (0, s.jsx)(y.Gk, {
             location: y.Gt.USER_PROFILE,
-            className: R.badges,
+            className: k.badges,
             children: b.te.map((e, a) => (0, s.jsx)(e, {
               entry: i
             }, "entry-".concat(a)))
@@ -329,7 +330,7 @@ function w(e) {
   })
 }
 
-function G(e) {
+function L(e) {
   let {
     user: a,
     entry: t,
@@ -363,20 +364,20 @@ function G(e) {
     onClose: l,
     "aria-labelledby": r,
     children: [n, (0, s.jsx)("div", {
-      className: R.body,
+      className: k.body,
       children: (0, s.jsxs)("div", {
-        className: R.content,
+        className: k.content,
         children: [(0, s.jsx)(x.E, {
           image: d,
           size: x.J.SIZE_60,
-          className: R.clickableImage,
+          className: k.clickableImage,
           onClick: e => {
             e.stopPropagation(), u({
               action: "PRESS_IMAGE"
             }), p()
           }
         }), (0, s.jsxs)("div", {
-          className: R.details,
+          className: k.details,
           children: [(0, s.jsx)("div", {
             children: (0, s.jsx)(Z.f, {
               variant: "heading-sm/semibold",
@@ -390,7 +391,7 @@ function G(e) {
             })
           }), (0, s.jsx)(y.Gk, {
             location: y.Gt.USER_PROFILE,
-            className: R.badges,
+            className: k.badges,
             children: j.j.map((e, a) => (0, s.jsx)(e, {
               entry: t
             }, "entry-".concat(a)))
@@ -401,7 +402,7 @@ function G(e) {
   })
 }
 
-function M(e) {
+function U(e) {
   var {
     entry: a
   } = e, t = function(e, a) {
@@ -419,13 +420,13 @@ function M(e) {
     }
     return n
   }(e, ["entry"]);
-  return (0, d.dX)(a) ? (0, s.jsx)(A, k({
+  return (0, d.dX)(a) ? (0, s.jsx)(w, A({
     entry: a
-  }, t)) : (0, d.y0)(a) ? (0, s.jsx)(Y, k({
+  }, t)) : (0, d.y0)(a) ? (0, s.jsx)(G, A({
     entry: a
-  }, t)) : (0, d.dU)(a) ? (0, s.jsx)(w, k({
+  }, t)) : (0, d.dU)(a) ? (0, s.jsx)(M, A({
     entry: a
-  }, t)) : (0, d.Mq)(a) ? (0, s.jsx)(G, k({
+  }, t)) : (0, d.Mq)(a) ? (0, s.jsx)(L, A({
     entry: a
   }, t)) : null
 }

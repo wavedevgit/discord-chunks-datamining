@@ -38,9 +38,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk262210 = require("./262210.jsx"),
   Chunk670451 = require("./670451.jsx"),
   Chunk881530 = require("./881530.js"),
-  Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
   Chunk701488 = require("./701488.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk704543 = require("./704543.js");
 
@@ -123,11 +123,11 @@ function Y(e) {
     onClose: K
   }), es = () => {
     let e = (0, s.Z)(i) ? "crunchyroll" : "default",
-      t = J === k.lY.MODAL_V2 ? h.J.SIZE_100 : h.J.SIZE_60;
-    return i.type === j.IIU.HANG_STATUS ? (0, r.jsx)(b.Z, {
+      t = J === U.l.MODAL_V2 ? h.J.SIZE_100 : h.J.SIZE_60;
+    return i.type === k.IIU.HANG_STATUS ? (0, r.jsx)(b.Z, {
       hangStatusActivity: i,
       className: a()(B.hangStatusIcon, B.image, {
-        [B.small]: J !== k.lY.MODAL_V2
+        [B.small]: J !== U.l.MODAL_V2
       })
     }) : null == eo ? (0, r.jsx)(h.E, {
       image: ei,
@@ -147,7 +147,7 @@ function Y(e) {
         }), eo(e)
       }
     })
-  }, el = () => i.type === j.IIU.HANG_STATUS ? (0, r.jsx)(w.f, {
+  }, el = () => i.type === k.IIU.HANG_STATUS ? (0, r.jsx)(w.f, {
     variant: "heading-sm/semibold",
     text: (0, E.O8)(i),
     id: q
@@ -178,7 +178,7 @@ function Y(e) {
     text: i.name,
     id: q
   }), ec = () => {
-    if (i.type === j.IIU.HANG_STATUS) return null;
+    if (i.type === k.IIU.HANG_STATUS) return null;
     if ((0, u.Z)(i) && null != Z) return (0, r.jsx)(w.Z, {
       variant: "text-xs/normal",
       text: G.intl.formatToPlainString(G.t["hq/Qzc"], {
@@ -213,7 +213,7 @@ function Y(e) {
     })
   }, eu = () => {
     var e, t, n, a, o, s, l, u;
-    if (i.type === j.IIU.WATCHING) return null;
+    if (i.type === k.IIU.WATCHING) return null;
     if ((0, c.Z)(i)) return ed();
     if ((0, O.dS)(i) && (null == (e = i.party) ? true : e.size) != null && (null == (t = i.party) ? true : t.size.length) >= 2) {
       let e = G.intl.formatToPlainString(G.t["JC/3x8"], {
@@ -234,7 +234,7 @@ function Y(e) {
     }) : null
   }, ed = () => {
     var e, t, n, a;
-    return (null == (e = i.party) ? true : e.size) == null && i.application_id === U.Zc ? (0, r.jsxs)("div", {
+    return (null == (e = i.party) ? true : e.size) == null && i.application_id === j.Zc ? (0, r.jsxs)("div", {
       className: B.gameState,
       children: [(0, r.jsx)(p._, {
         href: i.state_url,
@@ -338,10 +338,10 @@ function Y(e) {
               user: t,
               activity: i,
               className: B.badges
-            }), ef(), J === k.lY.MODAL_V2 && eh()]
-          }), J === k.lY.MODAL && eh()]
+            }), ef(), J === U.l.MODAL_V2 && eh()]
+          }), J === U.l.MODAL && eh()]
         }), ep()]
-      }), J !== k.lY.MODAL && J !== k.lY.MODAL_V2 && eh()]
+      }), J !== U.l.MODAL && J !== U.l.MODAL_V2 && eh()]
     })
   })
 }

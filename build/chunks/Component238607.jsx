@@ -14,7 +14,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk475413 = require("./475413.jsx"),
   Chunk614716 = require("./614716.js"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p(e, t, n) {
@@ -82,8 +82,8 @@ function E(e) {
   if (null == y && null != n && (0, s.Z)(n)) return (0, r.jsx)(u.tG, {
     icon: v,
     text: _.intl.string(_.t.RscU7O),
-    size: E === f.lY.MODAL_V2 ? i.Ph.TINY : i.Ph.SMALL,
-    fullWidth: E !== f.lY.MODAL_V2,
+    size: E === f.l.MODAL_V2 ? i.Ph.TINY : i.Ph.SMALL,
+    fullWidth: E !== f.l.MODAL_V2,
     themeColor: "secondary",
     onClick: e => {
       e.stopPropagation(), null == p || p({
@@ -107,8 +107,8 @@ function E(e) {
       text: S,
       disabled: !N,
       submitting: I,
-      size: E === f.lY.MODAL_V2 ? i.Ph.TINY : i.Ph.SMALL,
-      fullWidth: E !== f.lY.MODAL_V2,
+      size: E === f.l.MODAL_V2 ? i.Ph.TINY : i.Ph.SMALL,
+      fullWidth: E !== f.l.MODAL_V2,
       themeColor: "secondary",
       onClick: e => {
         e.stopPropagation(), null == p || p({
@@ -123,8 +123,8 @@ function E(e) {
       text: S,
       disabled: !N,
       submitting: I,
-      size: E === f.lY.MODAL_V2 ? i.Ph.TINY : i.Ph.SMALL,
-      fullWidth: E !== f.lY.MODAL_V2,
+      size: E === f.l.MODAL_V2 ? i.Ph.TINY : i.Ph.SMALL,
+      fullWidth: E !== f.l.MODAL_V2,
       themeColor: "secondary",
       onClick: e => {
         e.stopPropagation(), null == p || p({

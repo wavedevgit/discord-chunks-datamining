@@ -11,7 +11,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk420660 = require("./420660.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk475413 = require("./475413.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e) {
@@ -25,7 +25,7 @@ function d(e) {
   let _ = e => (e.stopPropagation(), null == n || n({
     action: "PRESS_WATCH_BUTTON"
   }), window.open(f));
-  return d === c.lY.MODAL_V2 ? (0, r.jsx)(l.tG, {
+  return d === c.l.MODAL_V2 ? (0, r.jsx)(l.tG, {
     text: u.intl.string(u.t["I6JG4+"]),
     size: i.Ph.TINY,
     themeColor: "secondary",

@@ -1,7 +1,7 @@
 /** Chunk was on 1268 **/
 /** chunk id: 821179, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,21 +15,22 @@ var Chunk780384 = require("./780384.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk323759 = require("./323759.js");
-let f = (0, Chunk481060.pxk)(Chunk481060.EFr.SIZE_16);
+let j = (0, Chunk481060.pxk)(Chunk481060.EFr.SIZE_16);
 
-function j(e) {
+function v(e) {
   let {
     user: t,
-    guild: j,
-    nick: v,
-    onSelect: x
+    guild: v,
+    nick: x,
+    onSelect: y
   } = e, {
-    theme: y,
-    themeType: O
-  } = (0, d.z)(), h = t.hasAvatarForGuild(j.id);
+    theme: O,
+    themeType: h
+  } = (0, d.z)(), g = t.hasAvatarForGuild(v.id);
   return (0, n.jsxs)(a.P3F, {
-    focusProps: O === m.lY.MODAL_V2 ? {
+    focusProps: h === b.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -40,8 +41,8 @@ function j(e) {
         right: 8
       }
     },
-    className: b.row,
-    onClick: x,
+    className: f.row,
+    onClick: y,
     onContextMenu: e => {
       (0, l.jW)(e, async () => {
         let {
@@ -67,7 +68,7 @@ function j(e) {
             }
             return e
           }({}, t), i = i = {
-            guild: j
+            guild: v
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var r = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -83,38 +84,38 @@ function j(e) {
     },
     children: [(0, n.jsx)(c.Z, {
       tabIndex: false,
-      guild: j,
+      guild: v,
       showBadge: true,
-      className: null != j.icon ? b.icon : b.noIcon,
-      badgeStrokeColor: (0, o.Lq)((0, i.wj)(y) ? p.Ilk.PRIMARY_600 : p.Ilk.WHITE_500),
+      className: null != v.icon ? f.icon : f.noIcon,
+      badgeStrokeColor: (0, o.Lq)((0, i.wj)(O) ? p.Ilk.PRIMARY_600 : p.Ilk.WHITE_500),
       badgeTooltipColor: a.FGA.PRIMARY,
       badgeTooltipDelay: m.vB,
       size: c.Z.Sizes.MEDIUM,
       active: true
     }), (0, n.jsxs)("div", {
-      className: b.details,
+      className: f.details,
       children: [(0, n.jsx)("div", {
-        className: b.name,
-        children: j.name
-      }), h && (0, n.jsxs)("div", {
-        className: b.nick,
+        className: f.name,
+        children: v.name
+      }), g && (0, n.jsxs)("div", {
+        className: f.nick,
         children: [(0, n.jsx)(a.qEK, {
-          src: t.getAvatarURL(j.id, f),
+          src: t.getAvatarURL(v.id, j),
           size: a.EFr.SIZE_16,
-          className: b.avatar,
+          className: f.avatar,
           "aria-hidden": true
         }), (0, n.jsx)(a.Text, {
           variant: "text-xs/medium",
           children: (0, n.jsx)(s.Z, {
             delay: m.vB,
-            children: null != v ? v : u.ZP.getName(j.id, true, t)
+            children: null != x ? x : u.ZP.getName(v.id, true, t)
           })
         })]
-      }), !h && null != v && (0, n.jsx)(a.Text, {
+      }), !g && null != x && (0, n.jsx)(a.Text, {
         variant: "text-xs/medium",
         children: (0, n.jsx)(s.Z, {
           delay: m.vB,
-          children: v
+          children: x
         })
       })]
     })]

@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk262210 = require("./262210.jsx"),
   Chunk666984 = require("./666984.jsx"),
   Chunk670451 = require("./670451.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk704543 = require("./704543.js");
 
 function R(e, t, n) {
@@ -164,7 +164,7 @@ function L(e) {
           className: C.content,
           children: [(0, r.jsx)(f.E, {
             image: G,
-            size: M === N.lY.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
+            size: M === N.l.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
             className: C.clickableImage,
             onClick: e => {
               e.stopPropagation(), V({
@@ -188,10 +188,10 @@ function L(e) {
               user: t,
               activity: a,
               className: C.badges
-            }), H(), M === N.lY.MODAL_V2 && Y()]
-          }), M === N.lY.MODAL && Y()]
+            }), H(), M === N.l.MODAL_V2 && Y()]
+          }), M === N.l.MODAL && Y()]
         })
-      }), M !== N.lY.MODAL && M !== N.lY.MODAL_V2 && Y()]
+      }), M !== N.l.MODAL && M !== N.l.MODAL_V2 && Y()]
     })
   })
 }

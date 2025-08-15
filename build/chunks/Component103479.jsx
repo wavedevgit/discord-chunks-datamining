@@ -14,7 +14,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk591759 = require("./591759.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk475413 = require("./475413.jsx"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk704543 = require("./704543.js");
 async function p(e) {
@@ -47,7 +47,7 @@ function h(e) {
   } = (0, c.z)();
   if ((null == n ? true : n.buttons) == null || n.buttons.length < 1) return null;
   let l = (0, o.Z)(n);
-  return s === d.lY.MODAL_V2 ? (0, r.jsx)(r.Fragment, {
+  return s === d.l.MODAL_V2 ? (0, r.jsx)(r.Fragment, {
     children: n.buttons.map((e, o) => (0, r.jsx)(u.tG, {
       text: l ? f.intl.string(f.t["I6JG4+"]) : e,
       size: i.Ph.TINY,

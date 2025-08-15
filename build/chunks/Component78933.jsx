@@ -55,7 +55,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk587243 = require("./587243.jsx"),
   Chunk383832 = require("./383832.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk228168 = require("./228168.js"),
+  Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk54482 = require("./54482.js"),
   Chunk116649 = require("./116649.js");
@@ -168,17 +168,17 @@ function ea(e) {
           className: ei.themeContainer,
           user: t,
           displayProfile: ed,
-          themeType: et.lY.POPOUT,
+          themeType: et.l.POPOUT,
           children: [(0, i.jsxs)("div", {
             className: er.header,
             children: [(0, i.jsx)(y.Z, {
               user: t,
               displayProfile: ed,
-              themeType: et.lY.POPOUT
+              themeType: et.l.POPOUT
             }), (0, i.jsx)(N.Z, {
               user: t,
               displayProfile: ed,
-              themeType: et.lY.POPOUT,
+              themeType: et.l.POPOUT,
               onOpenProfile: ec ? true : eM
             }), eZ ? (0, i.jsx)(b.Z, {
               positionKey: eA,
@@ -189,14 +189,14 @@ function ea(e) {
                 ref: ey,
                 location: "UserProfileAccountPopout",
                 user: t,
-                themeType: et.lY.POPOUT,
+                themeType: et.l.POPOUT,
                 onCloseProfile: n,
                 prompt: ek
               })
             }) : (0, i.jsx)(B.Z, {
               location: "UserProfileAccountPopout",
               user: t,
-              themeType: et.lY.POPOUT,
+              themeType: et.l.POPOUT,
               onCloseProfile: n,
               prompt: eT ? ek : null
             })]
@@ -213,7 +213,7 @@ function ea(e) {
               pronouns: null == ed ? true : ed.pronouns,
               tags: (0, i.jsx)(I.Z, {
                 displayProfile: ed,
-                themeType: et.lY.POPOUT,
+                themeType: et.l.POPOUT,
                 onClose: n,
                 shouldOpenBadgeTooltip: null != el ? e => e === el : true,
                 shouldGlowTenureBadge: ew.current
