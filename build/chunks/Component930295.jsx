@@ -258,10 +258,14 @@ class N extends(r = Chunk73800.Component) {
       A.has(e.key) && this.handlePreload()
     }), O(this, "handleDocumentMouseDown", e => {
       let {
-        ignoreModalClicks: t
-      } = this.props, n = e.target, r = this.domElementRef.current;
-      if (null != r) {
-        if ((0, f.t)(r, n) || g.Z.isOpen() || t && (0, _.$s)()) return;
+        ignoreModalClicks: t,
+        closeOnClickOutside: n
+      } = this.props;
+      if (false === n) return;
+      let r = e.target,
+        i = this.domElementRef.current;
+      if (null != i) {
+        if ((0, f.t)(i, r) || g.Z.isOpen() || t && (0, _.$s)()) return;
         this.isValidClickStart = true
       }
     }), O(this, "handleDocumentMouseUp", e => {
@@ -279,5 +283,6 @@ O(N, "defaultProps", {
   autoInvert: false,
   nudgeAlignIntoViewport: false,
   spacing: 0,
-  loadingComponent: (0, Chunk255367.jsx)(Chunk920676.x, {})
+  loadingComponent: (0, Chunk255367.jsx)(Chunk920676.x, {}),
+  closeOnClickOutside: true
 }), O(N, "contextType", Chunk40851.ZP)

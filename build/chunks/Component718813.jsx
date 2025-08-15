@@ -182,10 +182,11 @@ class k extends(r = Chunk73800.PureComponent) {
     let {
       animating: e
     } = this.state, t = this.props, {
-      mode: n,
-      children: r,
-      baseLayer: l
-    } = exports, a = function(e, t) {
+      name: n,
+      mode: r,
+      children: l,
+      baseLayer: a
+    } = exports, c = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -199,21 +200,22 @@ class k extends(r = Chunk73800.PureComponent) {
         for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(exports, ["mode", "children", "baseLayer"]), c = module || require === L ? this.getAnimatedStyle() : null, u = (0, Chunk255367.jsx)(Chunk748780.Z.div, S(C({
+    }(exports, ["name", "mode", "children", "baseLayer"]), u = module || r === L ? this.getAnimatedStyle() : null, p = (0, Chunk255367.jsx)(Chunk748780.Z.div, S(C({
       ref: e => this.containerRef.current = null != e ? e.componentRef : true,
-      "aria-hidden": require === L,
+      "data-layer": null != require ? require : "base",
+      "aria-hidden": r === L,
       className: o()(Chunk256076.layer, {
-        [Chunk256076.baseLayer]: Chunk73800,
+        [Chunk256076.baseLayer]: Chunk120356,
         [Chunk256076.animating]: module,
-        "stop-animations": require === L
+        "stop-animations": r === L
       }),
-      style: Chunk442837
-    }, Chunk120356), {
-      children: r
+      style: Chunk215569
+    }, Chunk442837), {
+      children: Chunk73800
     }));
-    return Chunk73800 ? Chunk215569 : (0, Chunk255367.jsx)(Chunk481060.EqS, {
+    return Chunk120356 ? Chunk37234 : (0, Chunk255367.jsx)(Chunk481060.EqS, {
       containerRef: this.containerRef,
-      children: Chunk215569
+      children: Chunk37234
     })
   }
   getAnimatedStyle() {
@@ -273,6 +275,7 @@ class M extends Chunk73800.PureComponent {
   renderComponent(e, t, n) {
     let r;
     return r = "string" == typeof e ? Z[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(k, {
+      name: "string" == typeof e ? e : true,
       mode: t === n - 1 ? w : L,
       children: [(0, i.jsx)(D, {}), r]
     }, "layer-".concat(t))
