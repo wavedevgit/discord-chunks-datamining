@@ -54,7 +54,7 @@ function f() {
     a = (0, Chunk211644.ZP)(e => e.lastWinnerTime),
     r = 0 !== require ? l()(require).fromNow() : "n/a",
     f = (0, Chunk211644.ZP)(e => e.recentlyShown[0]),
-    j = module.map(e => {
+    g = module.map(e => {
       let {
         eventType: t,
         dismissibleContent: a
@@ -65,7 +65,7 @@ function f() {
         dismissibleContent: a
       }
     }),
-    g = Array.from(exports.keys()).map(e => ({
+    j = Array.from(exports.keys()).map(e => ({
       key: e.toString(),
       dismissibleContent: e
     }));
@@ -109,11 +109,11 @@ function f() {
       children: (0, Chunk951288.jsx)(Chunk681619.Z, {
         className: Chunk882754.candidatesTable,
         columns: v,
-        data: g
+        data: j
       })
     }), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)(Chunk681619.Z, {
       columns: b,
-      data: j
+      data: g
     })]
   })
 }

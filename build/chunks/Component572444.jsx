@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk653301 = require("./653301.js"),
   Chunk451429 = require("./451429.js");
 
-function j(e) {
+function g(e) {
   let {
     recording: t
   } = e;
@@ -47,7 +47,7 @@ function j(e) {
   })
 }
 
-function g(e) {
+function j(e) {
   let {
     recording: t,
     playing: a,
@@ -55,7 +55,7 @@ function g(e) {
     onStop: l
   } = e;
   return (0, n.jsx)(c.zF9, {
-    collapsibleContent: (0, n.jsx)(j, {
+    collapsibleContent: (0, n.jsx)(g, {
       recording: t
     }),
     children: e => {
@@ -101,7 +101,7 @@ function g(e) {
 function _() {
   let {
     name: e
-  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, a] = Chunk647438.useState(false), [l, i] = Chunk647438.useState([]), j = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [_, y] = Chunk647438.useState(null), C = Chunk647438.useRef(null), N = Chunk647438.useRef(null), [O, T] = Chunk647438.useState(.5), {
+  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, a] = Chunk647438.useState(false), [l, i] = Chunk647438.useState([]), g = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [_, y] = Chunk647438.useState(null), C = Chunk647438.useRef(null), N = Chunk647438.useRef(null), [T, O] = Chunk647438.useState(.5), {
     krispModels: E,
     krispModelOverride: S,
     inputMode: P,
@@ -139,7 +139,7 @@ function _() {
   function G(e) {
     if (t && z(), B(), null == F) return;
     let a = F.createBufferSource();
-    a.buffer = e.audioBuffer, N.current = F.createGain(), N.current.gain.value = O, a.connect(N.current), N.current.connect(F.destination), a.loop = true, a.start(), C.current = a, y(e)
+    a.buffer = e.audioBuffer, N.current = F.createGain(), N.current.gain.value = T, a.connect(N.current), N.current.connect(F.destination), a.loop = true, a.start(), C.current = a, y(e)
   }
   Chunk647438.useEffect(() => {
     B()
@@ -184,7 +184,7 @@ function _() {
           title: "Krisp Suppression Level",
           tag: Chunk481060.RB0.H3,
           children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
-            initialValue: j,
+            initialValue: g,
             onValueChange: Chunk846027.Z.setKrispSuppressionLevel,
             minValue: 0,
             maxValue: 100
@@ -286,7 +286,7 @@ function _() {
                 createdAt: Date.now(),
                 suppression: U,
                 echoCancellation: I,
-                krispSuppressionLevel: j
+                krispSuppressionLevel: g
               }])
             })
           },
@@ -296,9 +296,9 @@ function _() {
         title: "Volume",
         tag: Chunk481060.RB0.H3,
         children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
-          initialValue: O,
+          initialValue: T,
           asValueChanges: function(e) {
-            null != N.current && (N.current.gain.value = e, T(e))
+            null != N.current && (N.current.gain.value = e, O(e))
           },
           minValue: 0,
           maxValue: 1
@@ -306,7 +306,7 @@ function _() {
       }), (0, Chunk951288.jsx)(Chunk481060.hjN, {
         title: "Recordings",
         tag: Chunk481060.RB0.H3,
-        children: Chunk345959.map((e, t) => (0, n.jsx)(g, {
+        children: Chunk345959.map((e, t) => (0, n.jsx)(j, {
           recording: e,
           playing: e === _,
           onPlay: G,

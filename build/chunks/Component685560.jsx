@@ -25,9 +25,9 @@ var Chunk951288 = require("./951288.js"),
 let y = [Chunk704215.z.GUILD_POWERUP_PERKS_COACHMARK, Chunk704215.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, Chunk704215.z.GUILD_POWERUP_NOTIFICATION, Chunk704215.z.GUILD_TAG_AVAILABLE_COACHMARK, Chunk704215.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK],
   C = [Chunk704215.C.GUILD_POWERUP_LEVEL_1_COACHMARK, Chunk704215.C.GUILD_POWERUP_LEVEL_2_COACHMARK, Chunk704215.C.GUILD_POWERUP_LEVEL_3_COACHMARK, Chunk704215.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, Chunk704215.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK],
   N = [Chunk704215.C.ADOPT_CLAN_IDENTITY_NOTICE],
-  O = [Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, Chunk704215.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
+  T = [Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, Chunk704215.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
 
-function T(e) {
+function O(e) {
   switch (e) {
     case o.C.GUILD_POWERUP_LEVEL_1_COACHMARK:
       return "GUILD_POWERUP_LEVEL_1_COACHMARK";
@@ -45,7 +45,7 @@ function T(e) {
 }
 async function E(e, t, a) {
   await Promise.all(t.map(e => s.tn.patch({
-    url: g.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
+    url: j.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
     body: a ? {} : {
       ends_at: l()().add(1, "day")
     },
@@ -54,7 +54,7 @@ async function E(e, t, a) {
 }
 async function S(e) {
   await s.tn.post({
-    url: g.ANM.SEND_POWERUPS_SYSTEM_MESSAGE(e),
+    url: j.ANM.SEND_POWERUPS_SYSTEM_MESSAGE(e),
     rejectWithError: true
   })
 }
@@ -153,7 +153,7 @@ function P() {
         value: r.includes(e),
         children: (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: T(e)
+          children: O(e)
         })
       }, e))]
     }), (0, Chunk951288.jsxs)("div", {
@@ -169,7 +169,7 @@ function P() {
         value: r.includes(e),
         children: (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: T(e)
+          children: O(e)
         })
       }, e))]
     }), (0, Chunk951288.jsxs)("div", {
@@ -178,7 +178,7 @@ function P() {
         variant: "eyebrow",
         className: Chunk617659.header,
         children: "Reset Powerup Rollback DCs"
-      }), O.map(e => (0, n.jsx)(u.u, {
+      }), T.map(e => (0, n.jsx)(u.u, {
         className: _.formSwitch,
         contents: l,
         content: o.z[e],

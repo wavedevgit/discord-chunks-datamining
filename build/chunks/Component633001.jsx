@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 633001, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  Z: () => ej
+  Z: () => eg
 }), require("./388685.js"), require("./583741.js"), require("./539854.js"), require("./49124.js"), require("./35282.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -385,13 +385,13 @@ function et() {
         return (0, n.jsx)(r.Fragment, {
           children: (0, n.jsx)(m.ua7, {
             position: "left",
-            text: l === g.d5.TRACK_FOCUS ? "Tracked Focus Event" : "Clear Focus Event",
+            text: l === j.d5.TRACK_FOCUS ? "Tracked Focus Event" : "Clear Focus Event",
             children: e => {
               var r;
               return (0, n.jsx)("div", W(H({}, e), {
                 children: (0, n.jsxs)(m.Text, {
                   variant: "text-sm/medium",
-                  color: l === g.d5.TRACK_FOCUS ? "text-default" : "text-danger",
+                  color: l === j.d5.TRACK_FOCUS ? "text-default" : "text-danger",
                   children: [(0, n.jsx)(ee, {
                     pid: a,
                     tag: "span"
@@ -534,7 +534,7 @@ let ea = Chunk647438.memo(function(e) {
         children: e => (0, n.jsx)("div", W(H({}, e), {
           children: (0, n.jsx)(m.XZJ, {
             value: l,
-            onChange: () => void c(g.GO.ClickZones),
+            onChange: () => void c(j.GO.ClickZones),
             size: 18,
             type: m.XZJ.Types.INVERTED,
             shape: m.XZJ.Shapes.BOX,
@@ -552,7 +552,7 @@ let ea = Chunk647438.memo(function(e) {
         children: e => (0, n.jsx)("div", W(H({}, e), {
           children: (0, n.jsx)(m.XZJ, {
             value: i,
-            onChange: () => void c(g.GO.WidgetAreas),
+            onChange: () => void c(j.GO.WidgetAreas),
             size: 18,
             type: m.XZJ.Types.INVERTED,
             shape: m.XZJ.Shapes.BOX,
@@ -570,7 +570,7 @@ let ea = Chunk647438.memo(function(e) {
         children: e => (0, n.jsx)("div", W(H({}, e), {
           children: (0, n.jsx)(m.XZJ, {
             value: s,
-            onChange: () => void c(g.GO.DisabledGPUBoost),
+            onChange: () => void c(j.GO.DisabledGPUBoost),
             size: 18,
             type: m.XZJ.Types.INVERTED,
             shape: m.XZJ.Shapes.BOX,
@@ -588,7 +588,7 @@ let ea = Chunk647438.memo(function(e) {
         children: e => (0, n.jsx)("div", W(H({}, e), {
           children: (0, n.jsx)(m.XZJ, {
             value: o,
-            onChange: () => void c(g.GO.ForceGPUBoost),
+            onChange: () => void c(j.GO.ForceGPUBoost),
             size: 18,
             disabled: s,
             type: m.XZJ.Types.INVERTED,
@@ -722,31 +722,31 @@ let ea = Chunk647438.memo(function(e) {
   eo = {
     native: {
       label: "Native",
-      filter: e => e.type === j.C7.NativeLegacy || e.type === j.C7.NativeOOP
+      filter: e => e.type === g.C7.NativeLegacy || e.type === g.C7.NativeOOP
     },
     render: {
       label: "Render",
-      filter: e => e.type === j.C7.Renderer
+      filter: e => e.type === g.C7.Renderer
     },
     client: {
       label: "Client",
-      filter: e => e.type === j.C7.OOPModule || e.type === j.C7.LegacyModule
+      filter: e => e.type === g.C7.OOPModule || e.type === g.C7.LegacyModule
     }
   };
 
 function ec(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : j.l6.Info;
-  if (t === j.l6.Error) return "var(--text-danger)";
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : g.l6.Info;
+  if (t === g.l6.Error) return "var(--text-danger)";
   switch (e) {
-    case j.C7.NativeLegacy:
+    case g.C7.NativeLegacy:
       return "var(--yellow-500)";
-    case j.C7.NativeOOP:
+    case g.C7.NativeOOP:
       return "var(--green-500)";
-    case j.C7.Renderer:
+    case g.C7.Renderer:
       return "var(--brand-500)";
-    case j.C7.LegacyModule:
+    case g.C7.LegacyModule:
       return "var(--yellow-300)";
-    case j.C7.OOPModule:
+    case g.C7.OOPModule:
       return "var(--green-300)";
     default:
       return "var(--gray-400)"
@@ -786,11 +786,11 @@ let ed = [{
         variant: "text-md/normal",
         color: function(e) {
           switch (e) {
-            case j.l6.Info:
+            case g.l6.Info:
               return "text-primary";
-            case j.l6.Warning:
+            case g.l6.Warning:
               return "text-feedback-warning";
-            case j.l6.Error:
+            case g.l6.Error:
               return "text-danger";
             default:
               return "text-secondary"
@@ -817,15 +817,15 @@ let ed = [{
 
 function eu(e) {
   switch (e) {
-    case j.C7.NativeLegacy:
+    case g.C7.NativeLegacy:
       return m.GON;
-    case j.C7.NativeOOP:
+    case g.C7.NativeOOP:
       return m.ljO;
-    case j.C7.Renderer:
+    case g.C7.Renderer:
       return m.n6r;
-    case j.C7.LegacyModule:
+    case g.C7.LegacyModule:
       return m.pzj;
-    case j.C7.OOPModule:
+    case g.C7.OOPModule:
       return m.m3e;
     default:
       return m.pzj
@@ -975,8 +975,8 @@ function ev() {
       if (a(e)) returntrue
     }
     returnfalse
-  }), [module, Chunk755721, exports]), [j, g] = Chunk647438.useState(Chunk984370), [_, y] = Chunk647438.useState(null), N = Chunk647438.useMemo(() => module.find(e => e.key === _), [module, Chunk371651]), T = Chunk647438.useCallback(e => {
-    g(e)
+  }), [module, Chunk755721, exports]), [g, j] = Chunk647438.useState(Chunk984370), [_, y] = Chunk647438.useState(null), N = Chunk647438.useMemo(() => module.find(e => e.key === _), [module, Chunk371651]), O = Chunk647438.useCallback(e => {
+    j(e)
   }, []), {
     renderSelectedTab: E
   } = (0, Chunk621060.ZP)({
@@ -1089,7 +1089,7 @@ function ef() {
   })
 }
 
-function ej() {
+function eg() {
   let [e, t] = Chunk647438.useState("state");
   return (0, Chunk951288.jsxs)("div", {
     className: i()(Chunk451429.panel, Chunk454741.panel),

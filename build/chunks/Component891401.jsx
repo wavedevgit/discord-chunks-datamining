@@ -58,11 +58,11 @@ function C(e, t) {
 function N() {
   return (0, Chunk951288.jsxs)(Chunk481060.Ttm, {
     className: Chunk715639.container,
-    children: [(0, Chunk951288.jsx)(O, {}), (0, Chunk951288.jsx)(T, {})]
+    children: [(0, Chunk951288.jsx)(T, {}), (0, Chunk951288.jsx)(O, {})]
   })
 }
 
-function O() {
+function T() {
   var e, t;
   let a = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId()),
     l = (0, Chunk680783.Z)(require),
@@ -79,10 +79,10 @@ function O() {
     N = Chunk647438.useCallback(e => {
       P(null == l ? true : l.wallpaperId, e.target.value)
     }, [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
-    O = Chunk647438.useCallback(e => {
+    T = Chunk647438.useCallback(e => {
       S(null == l ? true : l.wallpaperId, e.target.value)
     }, [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
-    T = Chunk647438.useCallback(() => E(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
+    O = Chunk647438.useCallback(() => E(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
     I = Chunk647438.useCallback(() => P(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
     w = Chunk647438.useCallback(() => S(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
     R = Chunk647438.useCallback(e => {
@@ -147,7 +147,7 @@ function O() {
             size: "xs",
             color: "currentColor"
           }),
-          onClick: T,
+          onClick: O,
           className: Chunk715639.removeButton
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.ua7, {
@@ -202,7 +202,7 @@ function O() {
         children: [(0, Chunk951288.jsx)("input", {
           type: "color",
           value: Chunk704215.link_color,
-          onChange: O
+          onChange: T
         }, "linkColor-".concat(Chunk704215.link_color)), (0, Chunk951288.jsx)(Chunk481060.M0o, {
           color: "currentColor",
           tooltip: Chunk388032.intl.string(Chunk388032.t.N86XcH),
@@ -222,7 +222,7 @@ function O() {
   })
 }
 
-function T() {
+function O() {
   let e = Chunk647438.useCallback(() => {
       (0, Chunk675478.Z1)(Chunk704215.z.NITRO_TENURE_BADGE_LEVEL_UP)
     }, []),

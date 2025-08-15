@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 646466, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  O: () => O
+  O: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -69,7 +69,7 @@ let h = [{
       onCloseRequest: () => (0, Chunk481060.Mr3)(Chunk637443.c)
     })
   },
-  j = () => {
+  g = () => {
     let e = (0, Chunk373071.lb)(),
       {
         previewProfileEffectId: t,
@@ -103,7 +103,7 @@ let h = [{
       })]
     })
   },
-  g = () => {
+  j = () => {
     let {
       previewAvatarDecorationId: e,
       setPreviewAvatarDecorationId: t
@@ -331,7 +331,7 @@ let h = [{
           icon: Chunk481060.idN,
           "aria-label": "Open preview instructions"
         })]
-      }), (0, Chunk951288.jsx)(j, {}), (0, Chunk951288.jsx)(g, {}), (0, Chunk951288.jsx)(_, {
+      }), (0, Chunk951288.jsx)(g, {}), (0, Chunk951288.jsx)(j, {}), (0, Chunk951288.jsx)(_, {
         clearAssets: Chunk637443,
         clearIgnoredFiles: Chunk206878
       }), (0, Chunk951288.jsx)(y, {
@@ -340,7 +340,7 @@ let h = [{
       })]
     })
   },
-  O = () => {
+  T = () => {
     let [e, t] = Chunk647438.useState("preview");
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk198764.container,

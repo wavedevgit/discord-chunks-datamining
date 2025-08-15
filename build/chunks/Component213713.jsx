@@ -76,7 +76,7 @@ function Z(e) {
   var t, a;
   let {
     type: r
-  } = e, l = (0, u.e7)([T.Z], () => T.Z.getFilters()), i = null != (a = null == l || null == (t = l.types) ? true : t.has(r)) && a;
+  } = e, l = (0, u.e7)([O.Z], () => O.Z.getFilters()), i = null != (a = null == l || null == (t = l.types) ? true : t.has(r)) && a;
   return (0, n.jsx)(h.XZJ, {
     value: i,
     onClick: function() {
@@ -254,7 +254,7 @@ let D = e => {
   } = e, a = (0, _.Z)({
     applicationId: t.id,
     location: "DevToolsContentInventory",
-    source: g.m1.DevTools
+    source: j.m1.DevTools
   });
   return (0, n.jsx)(h.P3F, {
     onClick: a,

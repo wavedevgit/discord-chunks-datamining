@@ -94,9 +94,9 @@ function v() {
     hasPreloaded: Chunk787879.Z.hasPreloaded,
     hasMoreToLoad: Chunk787879.Z.hasMoreToLoad,
     isLoadingComplete: Chunk787879.Z.isLoadingComplete
-  })), j = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.currentRequestAnalyticsPayload), g = (0, Chunk399606.cj)([Chunk787879.Z], () => Chunk787879.Z.getChannelInfoMap()), _ = (0, Chunk399606.cj)([Chunk592125.Z], () => {
+  })), g = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.currentRequestAnalyticsPayload), j = (0, Chunk399606.cj)([Chunk787879.Z], () => Chunk787879.Z.getChannelInfoMap()), _ = (0, Chunk399606.cj)([Chunk592125.Z], () => {
     let e = {};
-    return Object.entries(g).forEach(t => {
+    return Object.entries(j).forEach(t => {
       let [a] = t, n = d.Z.getChannel(a);
       e[a] = null != n ? n : null
     }), module
@@ -175,17 +175,17 @@ function v() {
         }), (0, Chunk951288.jsxs)("div", {
           children: ["Is Loading Complete: ", f ? "✅" : "❌"]
         }), (0, Chunk951288.jsxs)("div", {
-          children: ["Last Loading Trigger: ", null == j ? true : j.loadingTrigger]
+          children: ["Last Loading Trigger: ", null == g ? true : g.loadingTrigger]
         })]
       }), (0, Chunk951288.jsxs)("div", {
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-lg/semibold",
           children: "Channel Info Map"
         }), (0, Chunk951288.jsxs)("div", {
-          children: ["Total Channels: ", Object.keys(g).length]
+          children: ["Total Channels: ", Object.keys(j).length]
         }), (0, Chunk951288.jsx)(Chunk681619.Z, {
           columns: b,
-          data: Object.entries(g).map(e => {
+          data: Object.entries(j).map(e => {
             var t, a;
             let [n, r] = e;
             return {

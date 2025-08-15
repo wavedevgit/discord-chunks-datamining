@@ -1,34 +1,108 @@
 /** Chunk was on 93886 **/
 /** chunk id: 107606, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
+  Chunk524437 = require("./524437.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk31336 = require("./31336.js"),
-  Chunk19759 = require("./19759.js"),
+  Chunk607070 = require("./607070.js"),
+  Chunk597688 = require("./597688.js"),
+  Chunk1870 = require("./1870.js"),
+  Chunk884697 = require("./884697.js"),
+  Chunk223143 = require("./223143.js"),
+  Chunk210887 = require("./210887.js"),
+  Chunk695346 = require("./695346.js"),
+  Chunk594174 = require("./594174.js"),
+  Chunk176038 = require("./176038.js"),
+  Chunk469115 = require("./469115.js"),
   Chunk685960 = require("./685960.js");
 
-function c() {
-  let e = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.isRandomlyChangingPremiumOptions);
-  return (0, Chunk951288.jsx)("div", {
+function f() {
+  var e, t, a, f, g, j, _, y;
+  (0, Chunk223143.mw)();
+  let C = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
+    N = Chunk695346.L1.useSetting(),
+    T = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
+    O = N.backgroundGradientPresetId,
+    E = (0, Chunk442837.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
+    S = (0, Chunk884697.Ad)(E),
+    P = (0, Chunk884697.jT)(E),
+    I = null == C || null == (e = C.avatarDecoration) ? true : module.skuId,
+    w = null == C || null == (a = C.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
+    R = null != I && null != (g = S.find(e => e.skuId === I)) ? g : null,
+    k = null != w && null != (j = P.find(e => e.skuId === w)) ? j : null,
+    Z = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == R ? true : R.skuId)),
+    A = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == k ? true : k.skuId)),
+    D = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.fontSize),
+    L = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.messageGroupSpacing),
+    M = Chunk695346.YC.useSetting();
+  return (0, Chunk176038.ub)(), (0, Chunk951288.jsxs)("div", {
     className: Chunk685960.container,
-    children: (0, Chunk951288.jsx)("div", {
-      "data-button-hoisted-classname-wrapper": true,
-      className: Chunk685960.button,
-      children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
-        children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
-          value: module,
-          note: "Randomizes theme, avatar decorations, and nameplates, every 5 seconds",
-          onChange: e => (0, i.Qh)({
-            isRandomlyChangingPremiumOptions: e
-          }),
-          hideBorder: true,
-          children: "Randomize Premium Features"
-        })
-      })
-    })
+    children: [(0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        variant: "heading-lg/semibold",
+        children: "Randomize customization settings"
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-md/normal",
+        children: "Randomly sets appearance-related settings. Leaving this tab or closing devtools will reset to your initial state."
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        variant: "primary",
+        size: "sm",
+        text: "Randomize Theme",
+        onClick: Chunk176038.aB
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        variant: "primary",
+        size: "sm",
+        text: "Randomize Collectibles",
+        onClick: Chunk176038.th
+      }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+        variant: "primary",
+        size: "sm",
+        text: "Randomize Appearance Settings",
+        onClick: Chunk176038._Y
+      })]
+    }), (0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        variant: "heading-lg/semibold",
+        children: "Current Settings"
+      }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+        variant: "text-md/normal",
+        children: ["Theme: ", T]
+      }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+        variant: "text-md/normal",
+        children: ["Client Theme ID:", " ", null != O ? null == (f = Chunk469115.qt[O]) ? true : f.getName() : "None"]
+      }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+        variant: "text-md/normal",
+        children: ["Avatar Decoration: ", null != (_ = null == Z ? true : Z.name) ? _ : "None"]
+      }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+        variant: "text-md/normal",
+        children: ["Nameplate: ", null != (y = null == A ? true : A.name) ? y : "None"]
+      }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+        variant: "text-md/normal",
+        children: ["Font Size: ", D, "px"]
+      }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+        variant: "text-md/normal",
+        children: ["Message Spacing: ", L]
+      }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
+        variant: "text-md/normal",
+        children: ["UI Density: ", M, " (", function(e) {
+          switch (e) {
+            case l.Pi.COMPACT:
+              return "Compact";
+            case l.Pi.COZY:
+              return "Cozy";
+            case l.Pi.DEFAULT:
+              return "Default";
+            case l.Pi.RESPONSIVE:
+              return "Responsive";
+            default:
+              return "Unknown"
+          }
+        }(M), ")"]
+      })]
+    })]
   })
 }
