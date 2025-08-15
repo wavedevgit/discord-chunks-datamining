@@ -148,7 +148,7 @@ function _(e) {
     comment: E,
     tags: T
   } = o, Z = {
-    variant: "text-md/normal",
+    variant: "heading-sm/semibold",
     color: "text-default"
   }, N = a.default.getCurrentUser(), S = (null == N ? true : N.id) === t.id;
   return s ? (0, r.jsxs)("div", {

@@ -37,7 +37,7 @@ function g(e) {
     children: [(0, r.jsxs)("div", {
       className: p.title,
       children: [(0, r.jsx)(a.X6q, {
-        variant: "heading-sm/medium",
+        variant: "text-xs/medium",
         color: "text-default",
         id: d,
         children: O
