@@ -1,7 +1,7 @@
-/** Chunk was on 86357 **/
+/** Chunk was on 78650 **/
 /** chunk id: 32750, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => d
 });
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -11,16 +11,16 @@ var Chunk481060 = require("./481060.js"),
   Chunk665906 = require("./665906.js"),
   Chunk388032 = require("./388032.jsx");
 
-function c(e) {
+function d(e) {
   var t;
   let n = (0, l.HL)(e),
-    c = (0, o.C7)(e),
+    d = (0, o.C7)(e),
     u = (0, o.tc)(e);
-  if ((e.isArchivedThread() ? u : c) && !n) return (null == (t = e.threadMetadata) ? true : t.archived) ? (0, r.jsx)(i.sNh, {
+  if ((e.isArchivedThread() ? u : d) && !n) return (null == (t = e.threadMetadata) ? true : t.archived) ? (0, i.jsx)(r.sNh, {
     id: "unarchive-thread",
     label: e.isForumPost() ? s.intl.string(s.t.cnRubW) : s.intl.string(s.t.S9E4Gx),
     action: () => a.Z.unarchiveThread(e, false)
-  }) : (0, r.jsx)(i.sNh, {
+  }) : (0, i.jsx)(r.sNh, {
     id: "archive-thread",
     label: e.isForumPost() ? s.intl.string(s.t.BTs4KS) : s.intl.string(s.t.wiIevb),
     action: () => a.Z.archiveThread(e, false)

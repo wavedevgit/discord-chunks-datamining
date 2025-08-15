@@ -1,4 +1,4 @@
-/** Chunk was on 86357 **/
+/** Chunk was on 78650 **/
 /** chunk id: 214906, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -16,30 +16,30 @@ var Chunk913527 = require("./913527.js"),
   Chunk388032 = require("./388032.jsx");
 
 function h(e) {
-  let [t, n, i] = (0, a.Wu)([c.Z], () => [c.Z.isMuted(e.id), c.Z.getMuteConfig(e.id), c.Z.hasJoined(e.id)]), h = (0, s.U)(n);
+  let [t, n, r] = (0, a.Wu)([d.Z], () => [d.Z.isMuted(e.id), d.Z.getMuteConfig(e.id), d.Z.hasJoined(e.id)]), h = (0, s.U)(n);
 
-  function f(t) {
+  function g(t) {
     u.Z.setNotificationSettings(e, {
       muted: t
     })
   }
-  return i ? t ? (0, r.jsx)(o.sNh, {
+  return r ? t ? (0, i.jsx)(o.sNh, {
     id: "unmute-channel",
-    label: e.isForumPost() ? p.intl.string(p.t["0JQfsL"]) : p.intl.string(p.t["Cq/TzM"]),
+    label: e.isForumPost() ? f.intl.string(f.t["0JQfsL"]) : f.intl.string(f.t["Cq/TzM"]),
     subtext: h,
-    action: () => f(false)
-  }) : (0, r.jsx)(o.sNh, {
+    action: () => g(false)
+  }) : (0, i.jsx)(o.sNh, {
     id: "mute-channel",
-    label: e.isForumPost() ? p.intl.string(p.t["nP+YkZ"]) : p.intl.string(p.t.bUUd8v),
-    action: () => f(true),
-    children: (0, d.k)().map(t => {
+    label: e.isForumPost() ? f.intl.string(f.t["nP+YkZ"]) : f.intl.string(f.t.bUUd8v),
+    action: () => g(true),
+    children: (0, c.k)().map(t => {
       let {
         value: n,
-        label: i
+        label: r
       } = t;
-      return (0, r.jsx)(o.sNh, {
+      return (0, i.jsx)(o.sNh, {
         id: "".concat(n),
-        label: i,
+        label: r,
         action: () => (function(t) {
           let n = t > 0 ? l()().add(t, "second").toISOString() : null;
           u.Z.setNotificationSettings(e, {
@@ -52,9 +52,9 @@ function h(e) {
         })(n)
       }, n)
     })
-  }) : (0, r.jsx)(o.sNh, {
+  }) : (0, i.jsx)(o.sNh, {
     id: "mute-disabled",
-    label: e.isForumPost() ? p.intl.string(p.t["nP+YkZ"]) : p.intl.string(p.t.bUUd8v),
+    label: e.isForumPost() ? f.intl.string(f.t["nP+YkZ"]) : f.intl.string(f.t.bUUd8v),
     disabled: true
   })
 }

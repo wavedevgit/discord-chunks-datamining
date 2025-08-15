@@ -1,43 +1,59 @@
 /** Chunk was on 66866 **/
 /** chunk id: 265299, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
+  Chunk670081 = require("./670081.js"),
   Chunk481060 = require("./481060.js"),
   Chunk509212 = require("./509212.js"),
   Chunk113434 = require("./113434.js"),
   Chunk497505 = require("./497505.js"),
+  Chunk530691 = require("./530691.js"),
   Chunk37303 = require("./37303.jsx"),
   Chunk722334 = require("./722334.jsx"),
   Chunk683650 = require("./683650.jsx"),
+  Chunk46140 = require("./46140.js"),
   Chunk506207 = require("./506207.js");
 
-function m(e) {
+function g(e) {
   let {
     questId: t
   } = e, {
     quests: n,
-    excludedQuests: m,
-    isFetchingCurrentQuests: f
-  } = (0, o.J2)({
+    excludedQuests: g,
+    isFetchingCurrentQuests: h
+  } = (0, s.J2)({
     fetchPolicy: "cache-or-network",
     callerSource: "embed"
-  }), _ = i.useMemo(() => n.find(e => e.id === t), [t, n]), g = i.useMemo(() => m.find(e => e.id === t), [t, m]);
-  return f ? (0, r.jsx)(l.$jN, {
-    className: p.spinner
-  }) : null != g ? (0, r.jsx)(u.W, {
+  }), b = i.useMemo(() => n.find(e => e.id === t), [t, n]), E = i.useMemo(() => g.find(e => e.id === t), [t, g]), C = i.useMemo(() => (null == b ? true : b.config.features.includes(l.S.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE)) === true, [null == b ? true : b.config.features]);
+  if (h) return (0, r.jsx)(a.$jN, {
+    className: _.spinner
+  });
+  if (null != E) return (0, r.jsx)(p.W, {
     questId: t
-  }) : null == _ ? (0, r.jsx)(d.o, {
+  });
+  if (null == b) return (0, r.jsx)(m.o, {
     questId: t,
-    reason: d.X.NOT_FOUND
-  }) : (0, a.HJ)(_) ? (0, r.jsx)(d.o, {
-    questId: t,
-    reason: d.X.MOBILE_ONLY
-  }) : (0, r.jsx)(c.Z, {
-    quest: _,
-    location: s.jn.QUESTS_EMBED,
-    sourceQuestContent: s.jn.QUESTS_EMBED
-  }, _.id)
+    reason: m.X.NOT_FOUND
+  });
+  if ((0, o.HJ)(b)) {
+    let {
+      enabled: e
+    } = u.S.getCurrentConfig({
+      location: f.dr.EMBED_DESKTOP
+    }, {
+      autoTrackExposure: C
+    });
+    if (!C || !e) return (0, r.jsx)(m.o, {
+      questId: t,
+      reason: m.X.MOBILE_ONLY
+    })
+  }
+  return (0, r.jsx)(d.Z, {
+    quest: b,
+    location: c.jn.QUESTS_EMBED,
+    sourceQuestContent: c.jn.QUESTS_EMBED
+  }, b.id)
 }
