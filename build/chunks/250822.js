@@ -9,6 +9,6 @@ var Chunk73800 = require("./73800.js"),
 let o = [];
 
 function a(e) {
-  let t = (0, l.e7)([i.Z], () => i.Z.getUserProfile(e));
+  let t = (0, i.e7)([l.Z], () => l.Z.getUserProfile(e));
   return (0, r.useMemo)(() => (null == t ? true : t.applicationRoleConnections) == null ? o : t.applicationRoleConnections, [null == t ? true : t.applicationRoleConnections])
 }

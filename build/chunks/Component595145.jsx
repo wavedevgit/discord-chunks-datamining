@@ -63,8 +63,8 @@ function en(e) {
     user: n,
     currentUser: en,
     guildId: er,
-    channelId: el,
-    messageId: ei,
+    channelId: ei,
+    messageId: el,
     roleId: eo,
     sessionId: ea,
     initialSection: ec,
@@ -83,21 +83,21 @@ function en(e) {
     userId: n.id,
     sourceSessionId: ea,
     guildId: er,
-    channelId: el,
-    messageId: ei,
+    channelId: ei,
+    messageId: el,
     roleId: eo,
     showGuildProfile: em
-  }), eO = l.useRef(null), ex = (0, s.Z)(eO), [eh, ev] = l.useState(false), e_ = (0, N.$m)(), eI = (0, a.q_F)({
+  }), eO = i.useRef(null), ex = (0, s.Z)(eO), [eh, ev] = i.useState(false), e_ = (0, N.$m)(), eI = (0, a.q_F)({
     opacity: +(null != e_.interactionType),
     config: {
       duration: 150
     }
-  }), eP = l.useMemo(() => null != er ? {
+  }), eP = i.useMemo(() => null != er ? {
     [er]: [n.id]
   } : {}, [er, n.id]);
   (0, d.$)(eP);
   let eE = (0, T.ZP)(n.id, em ? er : true),
-    eT = _.ZP.useName(null == eE ? true : eE.guildId, el, n),
+    eT = _.ZP.useName(null == eE ? true : eE.guildId, ei, n),
     {
       relationshipType: eZ,
       originApplicationId: eN
@@ -113,7 +113,7 @@ function en(e) {
     eA = (0, m.p)({
       location: "UserProfileModalV2"
     }),
-    eC = l.useMemo(() => null != eu ? eu : (0, g.Z)(), [eu]),
+    eC = i.useMemo(() => null != eu ? eu : (0, g.Z)(), [eu]),
     eD = (0, J.Z)({
       user: n,
       currentUser: en
@@ -127,7 +127,7 @@ function en(e) {
     eB = ee.intl.format(ee.t.KRe1Fh, {
       name: eT
     });
-  return l.useEffect(() => {
+  return i.useEffect(() => {
     let e = () => {
       ev(true), setTimeout(() => {
         ev(false)
@@ -191,7 +191,7 @@ function en(e) {
                   style: {
                     backgroundImage: "url(".concat(ew, ")")
                   }
-                }), null != e_.interactionType && (0, r.jsx)(i.animated.div, {
+                }), null != e_.interactionType && (0, r.jsx)(l.animated.div, {
                   style: eI,
                   className: et.backdrop
                 }), (0, r.jsx)(X.Z, {
@@ -215,13 +215,13 @@ function en(e) {
                       user: n,
                       displayProfile: eE,
                       guildId: er,
-                      channelId: el,
+                      channelId: ei,
                       themeType: Q.lY.MODAL_V2
                     }), (0, r.jsx)(V.Z, {
                       location: "UserProfileModalV2",
                       user: n,
                       guildId: er,
-                      channelId: el,
+                      channelId: ei,
                       themeType: Q.lY.MODAL_V2,
                       hasEntered: ed === a.Dvm.ENTERED,
                       prompt: eA && n.id === en.id ? eC : null,
@@ -233,7 +233,7 @@ function en(e) {
                     children: [(0, r.jsx)(F.Z, {
                       user: n,
                       onClose: ep,
-                      nickname: _.ZP.useName(null == eE ? true : eE.guildId, el, n),
+                      nickname: _.ZP.useName(null == eE ? true : eE.guildId, ei, n),
                       nicknameIcons: (0, r.jsx)(L.Z, {
                         size: "sm",
                         userId: n.id
@@ -251,28 +251,28 @@ function en(e) {
                         user: n,
                         applicationId: eN,
                         guildId: null != (t = null == eE ? true : eE.guildId) ? t : true,
-                        channelId: el,
+                        channelId: ei,
                         className: et.profileBanner
                       })
                     }), eR.map(e => {
                       var t;
                       let {
-                        applicationId: l
+                        applicationId: i
                       } = e;
                       return (0, r.jsx)(U.Z.Overlay, {
                         className: et.profileOverlay,
                         children: (0, r.jsx)(G.Z, {
                           user: n,
                           guildId: null != (t = null == eE ? true : eE.guildId) ? t : true,
-                          channelId: el,
+                          channelId: ei,
                           isGameRelationship: true,
-                          applicationId: l,
+                          applicationId: i,
                           className: et.profileBanner
                         })
-                      }, l)
+                      }, i)
                     }), n.isProvisional && (0, r.jsx)(U.Z.Overlay, {
                       className: et.profileOverlay,
-                      children: (0, r.jsx)(z.Z, {
+                      children: (0, r.jsx)(H.Z, {
                         heading: ee.intl.string(ee.t.Iyka0d),
                         headingVariant: "text-md/semibold",
                         headingIcon: (0, r.jsx)(a.Mgn, {
@@ -297,7 +297,7 @@ function en(e) {
                         user: n,
                         currentUser: en,
                         guildId: er,
-                        channelId: el,
+                        channelId: ei,
                         displayProfile: eE,
                         relationshipType: eZ,
                         onClose: ep
@@ -305,12 +305,12 @@ function en(e) {
                     }), (null == eE ? true : eE.bio) != null && (null == eE ? true : eE.bio) !== "" && !eS && (0, r.jsx)(C.Z, {
                       userBio: eE.bio,
                       setLineClamp: false
-                    }), eL.length > 0 && (0, r.jsx)(z.Z, {
+                    }), eL.length > 0 && (0, r.jsx)(H.Z, {
                       heading: ee.intl.string(ee.t["Uv/eT0"]),
                       children: (0, r.jsx)(R.Z, {
                         applicationIds: eL
                       })
-                    }), (0, r.jsx)(z.Z, {
+                    }), (0, r.jsx)(H.Z, {
                       heading: ee.intl.string(ee.t.a6XYDw),
                       children: (0, r.jsx)(B.Z, {
                         userId: n.id,
@@ -325,15 +325,15 @@ function en(e) {
                       headingVariant: "text-xs/medium",
                       headingColor: "currentColor",
                       scrollIntoView: es === Q.Tb.ROLES
-                    }), eG.length > 0 && (0, r.jsx)(z.Z, {
+                    }), eG.length > 0 && (0, r.jsx)(H.Z, {
                       heading: ee.intl.string(ee.t["3fe7U1"]),
                       scrollIntoView: es === Q.Tb.CONNECTIONS,
-                      children: (0, r.jsx)(H.Z, {
+                      children: (0, r.jsx)(z.Z, {
                         connections: eG,
                         userId: n.id,
                         className: et.profileAppConnections
                       })
-                    }), (0, r.jsx)(z.Z, {
+                    }), (0, r.jsx)(H.Z, {
                       heading: ee.intl.string(ee.t["mQKv+v"]),
                       scrollIntoView: es === Q.Tb.NOTE,
                       children: (0, r.jsx)(c.Z, {
@@ -371,7 +371,7 @@ function en(e) {
                   currentUser: en,
                   displayProfile: eE,
                   guildId: er,
-                  channelId: el,
+                  channelId: ei,
                   items: eD,
                   initialSection: ec,
                   initialSubsection: es,

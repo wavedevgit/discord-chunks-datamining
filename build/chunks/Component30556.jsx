@@ -17,18 +17,18 @@ function c(e) {
     onClose: c
   } = e, s = function(e, t) {
     if (null == e) return {};
-    var n, r, l = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var n, r, l = {},
-        i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-      return l
+      var n, r, i = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
-    return l
+    return i
   }(e, ["type", "userId", "onClose"]);
   let d = t === o.j8.TEXT ? o.tG : o.ef;
   return (0, r.jsx)(d, function(e) {
@@ -50,11 +50,11 @@ function c(e) {
     return e
   }({
     action: "SEND_MESSAGE",
-    icon: l.kBi,
+    icon: i.kBi,
     text: a.intl.string(a.t.zROXER),
     tooltipText: a.intl.string(a.t.zROXER),
     onClick: () => {
-      i.Z.openPrivateChannel({
+      l.Z.openPrivateChannel({
         recipientIds: n
       }), null == c || c()
     }

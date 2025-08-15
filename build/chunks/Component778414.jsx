@@ -46,33 +46,33 @@ function h(e) {
     widget: t
   } = e, n = function(e, t) {
     if (null == e) return {};
-    var n, r, l = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var n, r, l = {},
-        i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-      return l
+      var n, r, i = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
-    return l
+    return i
   }(e, ["widget"]);
   switch (t.type) {
-    case i.l.FAVORITE_GAMES:
+    case l.l.FAVORITE_GAMES:
       return (0, r.jsx)(m.Z, x({
         widget: t
       }, n));
-    case i.l.CURRENT_GAMES:
+    case l.l.CURRENT_GAMES:
       return (0, r.jsx)(p.Z, x({
         widget: t
       }, n));
-    case i.l.WANT_TO_PLAY_GAMES:
+    case l.l.WANT_TO_PLAY_GAMES:
       return (0, r.jsx)(b.Z, x({
         widget: t
       }, n));
-    case i.l.PLAYED_GAMES:
+    case l.l.PLAYED_GAMES:
       return (0, r.jsx)(g.Z, x({
         widget: t
       }, n));
@@ -85,17 +85,17 @@ function v(e) {
   let {
     user: t,
     guildId: n,
-    channelId: l
-  } = e, i = (0, f.Z)(t.id), {
+    channelId: i
+  } = e, l = (0, f.Z)(t.id), {
     widgets: a,
     isGameFetching: s
-  } = (0, u.Z)(i), d = (0, o.e7)([c.default], () => c.default.getId() === t.id);
+  } = (0, u.Z)(l), d = (0, o.e7)([c.default], () => c.default.getId() === t.id);
   return 0 === a.length && d ? (0, r.jsx)(y.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [a.map(e => (0, r.jsx)(h, {
       widget: e,
       user: t,
       guildId: n,
-      channelId: l,
+      channelId: i,
       isGameFetching: s
     }, e.id)), d && (0, r.jsx)(j.Z, {})]
   })
@@ -103,7 +103,7 @@ function v(e) {
 
 function _(e) {
   let t = (0, o.e7)([d.Z], () => d.Z.suggestedFetchAttempted);
-  return l.useEffect(() => {
+  return i.useEffect(() => {
     t || s.Z.fetchSuggestedGames()
   }, [t]), (0, r.jsx)(a.Ttm, {
     className: O.scroller,

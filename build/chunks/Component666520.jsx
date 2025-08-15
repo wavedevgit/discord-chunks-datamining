@@ -20,11 +20,11 @@ function p(e) {
     className: n,
     userId: p,
     onUpdate: m
-  } = e, g = (0, i.e7)([s.Z], () => s.Z.hidePersonalInformation), {
+  } = e, g = (0, l.e7)([s.Z], () => s.Z.hidePersonalInformation), {
     loading: b,
     note: j
-  } = (0, c.Z)(p), y = l.useRef(null);
-  return (l.useEffect(() => {
+  } = (0, c.Z)(p), y = i.useRef(null);
+  return (i.useEffect(() => {
     if (!t || g) return;
     let e = y.current;
     (null == e ? true : e.selectionStart) != null && (e.focus(), e.setSelection(e.value.length, e.value.length))

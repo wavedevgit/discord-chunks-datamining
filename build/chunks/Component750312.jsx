@@ -20,10 +20,10 @@ function g(e) {
   let {
     userId: t,
     widget: n,
-    children: i,
+    children: l,
     disableInteraction: g,
     className: b
-  } = e, [j, y] = l.useState(false), O = (0, s.Dt)(), x = (0, c.e7)([d.default], () => d.default.getId() === t), h = (0, u.kQ)(n);
+  } = e, [j, y] = i.useState(false), O = (0, s.Dt)(), x = (0, c.e7)([d.default], () => d.default.getId() === t), h = (0, u.kQ)(n);
   return (0, r.jsxs)("section", {
     className: o()(m.container, b),
     "aria-labelledby": O,
@@ -33,7 +33,7 @@ function g(e) {
       widget: n,
       disableInteraction: g
     }), (0, r.jsxs)(a.y5, {
-      children: [i, x && !h && !g && !j && (0, r.jsx)(p.Z, {
+      children: [l, x && !h && !g && !j && (0, r.jsx)(p.Z, {
         userId: t,
         widgetType: n.type,
         widgetGames: n.games,

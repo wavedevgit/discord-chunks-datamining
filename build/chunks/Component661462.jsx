@@ -18,30 +18,30 @@ function p(e) {
   let {
     user: t,
     currentUser: n,
-    section: l,
-    subsection: i,
+    section: i,
+    subsection: l,
     displayProfile: o,
     guildId: f,
     channelId: p,
     onClose: m
   } = e;
-  return l === u.oh.ACTIVITY ? (0, r.jsx)(a.Z, {
+  return i === u.oh.ACTIVITY ? (0, r.jsx)(a.Z, {
     user: t,
     currentUser: n,
     displayProfile: o,
     guildId: f,
     channelId: p,
-    subsection: i,
+    subsection: l,
     onClose: m
-  }) : l === u.oh.MUTUAL_FRIENDS ? (0, r.jsx)(c.Z, {
+  }) : i === u.oh.MUTUAL_FRIENDS ? (0, r.jsx)(c.Z, {
     user: t,
     guildId: f,
     channelId: p,
     onClose: m
-  }) : l === u.oh.MUTUAL_GUILDS ? (0, r.jsx)(s.Z, {
+  }) : i === u.oh.MUTUAL_GUILDS ? (0, r.jsx)(s.Z, {
     user: t,
     onClose: m
-  }) : l === u.oh.WIDGETS ? (0, r.jsx)(d.C, {
+  }) : i === u.oh.WIDGETS ? (0, r.jsx)(d.C, {
     user: t,
     guildId: f,
     channelId: p
@@ -66,7 +66,7 @@ function m(e) {
     section: x,
     subsection: h,
     text: v
-  }, _] = l.useState((n = function(e) {
+  }, _] = i.useState((n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -102,12 +102,12 @@ function m(e) {
   }), n));
   return (0, r.jsxs)("div", {
     className: f.container,
-    children: [(0, r.jsx)(i.Ttm, {
+    children: [(0, r.jsx)(l.Ttm, {
       orientation: "horizontal",
       className: f.scroller,
       fade: true,
       paddingFix: false,
-      children: (0, r.jsx)(i.njP, {
+      children: (0, r.jsx)(l.njP, {
         type: "top",
         look: "custom",
         selectedItem: x,
@@ -120,14 +120,14 @@ function m(e) {
             return null != (n = g.find(t => t.section === e)) ? n : t
           })
         },
-        children: g.map(e => (0, r.jsx)(i.njP.Item, {
+        children: g.map(e => (0, r.jsx)(l.njP.Item, {
           className: f.tabBarItem,
           id: e.section,
           "aria-label": e.text,
           children: e.text
         }, e.section))
       })
-    }), (0, r.jsx)(i.njP.Panel, {
+    }), (0, r.jsx)(l.njP.Panel, {
       id: x,
       "aria-label": v,
       className: f.tabBarPanel,

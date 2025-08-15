@@ -19,7 +19,7 @@ function u(e) {
   } = e, {
     mutualFriendsCount: u,
     mutualGuilds: f
-  } = (0, i.Z)(t), p = null == f ? true : f.length, m = (0, l.Z)(t), g = (0, r.k)({
+  } = (0, l.Z)(t), p = null == f ? true : f.length, m = (0, i.Z)(t), g = (0, r.k)({
     location: "useUserProfileModalV2TabBarItems"
   }), b = (0, o.Z)(t.id), j = [], y = t.id === (null == n ? true : n.id), O = b.length > 0;
   return g && (O || y) && j.push({

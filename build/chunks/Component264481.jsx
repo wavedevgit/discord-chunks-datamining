@@ -30,7 +30,7 @@ function x(e) {
   let {
     heading: t,
     bodyText: n,
-    children: l
+    children: i
   } = e;
   return (0, r.jsxs)("div", {
     className: g.empty,
@@ -45,7 +45,7 @@ function x(e) {
         color: "header-secondary",
         children: n
       })]
-    }), l]
+    }), i]
   })
 }
 
@@ -81,10 +81,10 @@ function _(e) {
     onClose: s
   } = e, d = u.ZP.getName(n, c, t), p = m.intl.formatToPlainString(m.t.sjSitL, {
     name: d
-  }), [b] = l.useState(() => {
+  }), [b] = i.useState(() => {
     var e;
-    return (null != (e = (0, i.sample)(y)) ? e : y[0])(d)
-  }), j = l.useCallback(() => {
+    return (null != (e = (0, l.sample)(y)) ? e : y[0])(d)
+  }), j = i.useCallback(() => {
     a.Z.openPrivateChannel({
       recipientIds: t.id
     }), null == s || s()
@@ -109,12 +109,12 @@ function I() {
   return (0, Chunk255367.jsx)("div", {
     className: Chunk839468.connectionPlatforms,
     children: O.map((t, n) => {
-      let l = d.Z.get(t);
-      if (null == l) return null;
-      let i = (0, o.wjy)(e) ? l.icon.darkPNG : l.icon.lightPNG;
+      let i = d.Z.get(t);
+      if (null == i) return null;
+      let l = (0, o.wjy)(e) ? i.icon.darkPNG : i.icon.lightPNG;
       return (0, r.jsx)("img", {
-        src: i,
-        alt: l.name,
+        src: l,
+        alt: i.name,
         className: g.connectionIcon
       }, n)
     })
@@ -124,9 +124,9 @@ function I() {
 function P(e) {
   let {
     onClose: t
-  } = e, n = l.useCallback(() => {
+  } = e, n = i.useCallback(() => {
     null == t || t(), c.Z.open(p.oAB.CONNECTIONS)
-  }, [t]), i = l.useCallback(() => {
+  }, [t]), l = i.useCallback(() => {
     null == t || t(), c.Z.open(p.oAB.CONTENT_AND_SOCIAL, "CONNECTED_GAMES")
   }, [t]);
   return (0, r.jsxs)(x, {
@@ -140,7 +140,7 @@ function P(e) {
         themeColor: "secondary"
       }), (0, r.jsx)(f.tG, {
         text: m.intl.string(m.t.GTCx0t),
-        onClick: i,
+        onClick: l,
         themeColor: "secondary"
       })]
     })]

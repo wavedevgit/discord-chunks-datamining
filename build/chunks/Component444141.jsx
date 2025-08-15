@@ -54,11 +54,11 @@ function p(e) {
   } = e, {
     analyticsLocations: b,
     sourceAnalyticsLocations: j
-  } = (0, i.ZP)(), {
+  } = (0, l.ZP)(), {
     context: y,
     trackUserProfileAction: O
   } = (0, a.KZ)(), x = (0, s.ZP)(t.id, n);
-  return (null == x ? true : x.guildId) == null || null == y ? null : (null == m ? true : m.guildId) != null ? (0, r.jsx)(l.sNh, {
+  return (null == x ? true : x.guildId) == null || null == y ? null : (null == m ? true : m.guildId) != null ? (0, r.jsx)(i.sNh, {
     id: "view-main-profile",
     label: d.intl.string(d.t.GISTtb),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
@@ -73,7 +73,7 @@ function p(e) {
         analyticsLocations: b
       }, y))
     }
-  }) : (0, r.jsx)(l.sNh, {
+  }) : (0, r.jsx)(i.sNh, {
     id: "view-server-profile",
     label: d.intl.string(d.t.DisZzM),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {

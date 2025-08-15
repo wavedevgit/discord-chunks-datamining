@@ -49,7 +49,7 @@ function S(e) {
     sourceAnalyticsLocations: M = []
   } = e, U = S === T.ME ? true : S, F = (0, u.ZP)(t.id, U), V = s.ZP.getName(U, w, t), Y = (0, c.Dt)(), {
     analyticsLocations: W
-  } = (0, a.ZP)([...M, o.Z.USER_PROFILE_MODAL]), H = (0, d.ZB)({
+  } = (0, a.ZP)([...M, o.Z.USER_PROFILE_MODAL]), z = (0, d.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: D,
@@ -57,25 +57,25 @@ function S(e) {
     channelId: w,
     messageId: A,
     roleId: C
-  }), z = (0, P.Z)(t);
+  }), H = (0, P.Z)(t);
   return (0, r.jsx)(a.Gt, {
     value: W,
     children: (0, r.jsx)(d.Mt, {
-      value: H,
+      value: z,
       openedAt: k,
       fetchStartedAt: null == F ? true : F.fetchStartedAt,
       fetchEndedAt: null == F ? true : F.fetchEndedAt,
       isLoaded: null == F ? true : F.isLoaded,
-      children: (0, r.jsx)(l.Y0X, {
+      children: (0, r.jsx)(i.Y0X, {
         "data-migration-pending": true,
         transitionState: G,
         className: N.root,
         hideShadow: true,
         "aria-labelledby": Y,
         parentComponent: "BotUserProfileModal",
-        children: (0, r.jsx)(l.y5t, {
-          component: (0, r.jsx)(l.nn4, {
-            children: (0, r.jsx)(l.H, {
+        children: (0, r.jsx)(i.y5t, {
+          component: (0, r.jsx)(i.nn4, {
+            children: (0, r.jsx)(i.H, {
               id: Y,
               children: Z.intl.format(Z.t.KRe1Fh, {
                 name: V
@@ -109,7 +109,7 @@ function S(e) {
                   location: "BotUserProfileModal",
                   user: t,
                   themeType: E.lY.MODAL,
-                  hasEntered: G === l.Dvm.ENTERED,
+                  hasEntered: G === i.Dvm.ENTERED,
                   onCloseProfile: B,
                   disableToolbar: true
                 }), (0, r.jsxs)("div", {
@@ -117,12 +117,12 @@ function S(e) {
                   children: [(0, r.jsx)(v.Z, {
                     type: "text",
                     userId: t.id,
-                    onClose: i.Z.popAll,
+                    onClose: l.Z.popAll,
                     className: N.messageTextButton
                   }), (0, r.jsx)(v.Z, {
                     type: "icon",
                     userId: t.id,
-                    onClose: i.Z.popAll,
+                    onClose: l.Z.popAll,
                     tooltipContainerClassName: N.messageIconButton
                   }), (0, r.jsx)(x.Z, {
                     user: t,
@@ -154,7 +154,7 @@ function S(e) {
                 currentUser: n,
                 displayProfile: F,
                 guildId: U,
-                items: z,
+                items: H,
                 initialSection: null != L ? L : E.oh.BOT_INFO,
                 initialSubsection: R,
                 onClose: B

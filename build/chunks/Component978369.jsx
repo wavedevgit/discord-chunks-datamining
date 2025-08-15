@@ -17,10 +17,10 @@ function u(e) {
     tags: t,
     widgetType: n,
     applicationId: u
-  } = e, f = (0, l.useRef)(null), {
+  } = e, f = (0, i.useRef)(null), {
     trackUserProfileAction: p
   } = (0, o.KZ)(), m = null != t ? t : [];
-  return (0, r.jsx)(i.yRy, {
+  return (0, r.jsx)(l.yRy, {
     targetElementRef: f,
     position: "right",
     align: "top",
@@ -28,15 +28,15 @@ function u(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(i.v2r, {
+      return (0, r.jsx)(l.v2r, {
         navId: "widget-game-tags",
         "aria-label": s.intl.string(s.t.r6EJOj),
         onClose: t,
         onSelect: () => {},
         children: Object.entries(c.aE).map(e => {
-          let [t, l] = e, o = l.tags.map(e => {
+          let [t, i] = e, o = i.tags.map(e => {
             let t = c.XV[e];
-            return null == t ? null : (0, r.jsx)(i.S89, {
+            return null == t ? null : (0, r.jsx)(l.S89, {
               id: e,
               label: t.getText(),
               checked: m.includes(e),
@@ -50,8 +50,8 @@ function u(e) {
               })(e)
             }, e)
           }).filter(Boolean);
-          return (0, r.jsx)(i.kSQ, {
-            label: l.getLabel(),
+          return (0, r.jsx)(l.kSQ, {
+            label: i.getLabel(),
             children: o
           }, t)
         })
@@ -61,7 +61,7 @@ function u(e) {
       var t, n;
       return (0, r.jsx)("div", {
         ref: f,
-        children: (0, r.jsx)(i.P3F, (t = function(e) {
+        children: (0, r.jsx)(l.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -81,7 +81,7 @@ function u(e) {
         }({}, e), n = n = {
           className: d.addButton,
           "aria-label": s.intl.string(s.t.r6EJOj),
-          children: (0, r.jsx)(i.Text, {
+          children: (0, r.jsx)(l.Text, {
             variant: "text-xxs/medium",
             color: "text-secondary",
             children: s.intl.string(s.t.fZSej4)

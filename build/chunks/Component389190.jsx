@@ -30,14 +30,14 @@ function g(e) {
     context: O,
     trackUserProfileAction: x
   } = (0, c.KZ)(), h = (0, o.Z)();
-  return l.useEffect(() => {
+  return i.useEffect(() => {
     (0, d.Z)(t.id, h)
-  }, [t.id, h]), (0, r.jsx)(i.zJl, {
+  }, [t.id, h]), (0, r.jsx)(l.zJl, {
     className: m.listScroller,
     fade: true,
     children: null == j ? (0, r.jsx)("div", {
       className: m.empty,
-      children: (0, r.jsx)(i.$jN, {})
+      children: (0, r.jsx)(l.$jN, {})
     }) : 0 === j.length ? (0, r.jsxs)("div", {
       className: m.empty,
       children: [(0, r.jsx)("div", {
@@ -49,19 +49,19 @@ function g(e) {
     }) : j.map(e => {
       let {
         key: t,
-        user: l,
-        status: i
+        user: i,
+        status: l
       } = e;
       return (0, r.jsx)(f.Z, {
-        user: l,
-        status: i,
+        user: i,
+        status: l,
         guildId: n,
         channelId: g,
         onSelect: () => {
           var e, t, n;
           null == b || b(), x({
             action: "PRESS_MUTUAL_FRIEND"
-          }), e = l.id, (0, u.openUserProfileModal)((t = function(e) {
+          }), e = i.id, (0, u.openUserProfileModal)((t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);

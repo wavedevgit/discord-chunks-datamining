@@ -21,18 +21,18 @@ function m(e) {
     widgetType: n
   } = e, m = function(e, t) {
     if (null == e) return {};
-    var n, r, l = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var n, r, l = {},
-        i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-      return l
+      var n, r, i = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
-    return l
+    return i
   }(e, ["widgetGames", "widgetType"]);
   let {
     games: g,
@@ -42,12 +42,12 @@ function m(e) {
     let {
       games: n
     } = function() {
-      let [e] = l.useState(() => (0, i.sampleSize)(c.qs, 4)), {
+      let [e] = i.useState(() => (0, l.sampleSize)(c.qs, 4)), {
         gameDataMap: t,
         isGameFetching: n
       } = (0, f.F)(e);
       return {
-        games: l.useMemo(() => e.map(e => {
+        games: i.useMemo(() => e.map(e => {
           let n = t[e];
           return {
             applicationId: e,
@@ -57,7 +57,7 @@ function m(e) {
         }), [e, t]),
         isGameFetching: n
       }
-    }(), r = new Set(t.map(e => e.applicationId)), s = n.filter(e => !r.has(e.applicationId)), [u, p, m] = (0, a.Wu)([d.Z], () => [d.Z.suggestedFetchIsLoading, d.Z.suggestedFetchError, d.Z.suggestedGameIds]), g = l.useMemo(() => {
+    }(), r = new Set(t.map(e => e.applicationId)), s = n.filter(e => !r.has(e.applicationId)), [u, p, m] = (0, a.Wu)([d.Z], () => [d.Z.suggestedFetchIsLoading, d.Z.suggestedFetchError, d.Z.suggestedGameIds]), g = i.useMemo(() => {
       var t, n;
       if (p || e === o.l.WANT_TO_PLAY_GAMES && (null == m || null == (t = m.suggestedWishlistGamesIds) ? true : t.length) === 0 || (null == m || null == (n = m.suggestedGamesIds) ? true : n.length) === 0) return s.map(e => e.applicationId);
       let r = [];
@@ -67,7 +67,7 @@ function m(e) {
       isGameFetching: j
     } = (0, f.F)(g);
     return {
-      games: l.useMemo(() => g.map(e => {
+      games: i.useMemo(() => g.map(e => {
         let t = b[e];
         return {
           applicationId: e,
@@ -79,7 +79,7 @@ function m(e) {
       isGameFetching: j,
       isSuggestedGamesLoading: u
     }
-  }(n, t), y = l.useCallback((e, t, r) => {
+  }(n, t), y = i.useCallback((e, t, r) => {
     s.Z.removeGameFromSuggestedGames(e), (0, u.ES)(n, {
       applicationId: e,
       gameName: t,

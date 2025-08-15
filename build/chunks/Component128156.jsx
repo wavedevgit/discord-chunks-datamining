@@ -52,9 +52,9 @@ function P(e) {
   } = (0, m.Z)({
     userId: t.id,
     guildId: E
-  }), G = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), k = t.id === n.id, B = (0, l.e7)([d.Z, s.Z], () => {
+  }), G = (0, i.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), k = t.id === n.id, B = (0, i.e7)([d.Z, s.Z], () => {
     let e = k ? d.Z.getStatus() : s.Z.getStatus(t.id);
-    return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
+    return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
   }), M = A.length > 0 || null != D, U = S && null == D && null == R && null != L, F = !B && (M || U), V = C.length > 0;
   if (!F && !V && G) return (0, r.jsx)("div", {
     className: I.cards,
@@ -82,7 +82,7 @@ function P(e) {
       onClose: N
     })
   }
-  return (0, r.jsxs)(i.Ttm, {
+  return (0, r.jsxs)(l.Ttm, {
     className: I.scroller,
     fade: true,
     children: [F ? (0, r.jsx)(x.Z, {
@@ -105,7 +105,7 @@ function P(e) {
             onClose: N,
             profileGuildId: null == P ? true : P.guildId
           })
-        }), A.map((e, l) => (0, r.jsx)("li", {
+        }), A.map((e, i) => (0, r.jsx)("li", {
           children: (0, r.jsx)(g.Z, {
             user: t,
             currentUser: n,
@@ -113,7 +113,7 @@ function P(e) {
             onClose: N,
             profileGuildId: null == P ? true : P.guildId
           })
-        }, "live-".concat(l))), w && U && (0, r.jsx)("li", {
+        }, "live-".concat(i))), w && U && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -125,7 +125,7 @@ function P(e) {
     }) : null, V ? (0, r.jsx)(x.Z, {
       heading: _.intl.string(_.t.jzgEoK),
       introText: k ? _.intl.format(_.t["4bk9Ag"], {
-        learnMoreHook: (e, t) => (0, r.jsx)(i.eee, {
+        learnMoreHook: (e, t) => (0, r.jsx)(l.eee, {
           href: u.Z.getArticleURL(v.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)

@@ -59,30 +59,30 @@ function x(e) {
     gameName: a
   } = e, c = function(e, t) {
     if (null == e) return {};
-    var n, r, l = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var n, r, l = {},
-        i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-      return l
+      var n, r, i = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
-    return l
+    return i
   }(e, ["applicationId", "userId", "gameName"]);
   let s = (0, o.Z)({
     location: "UserProfileWidgetGameDetailsCard",
     applicationId: t,
-    source: i.m1.UserProfile,
+    source: l.m1.UserProfile,
     sourceUserId: n,
     trackEntryPointImpression: true
   });
-  return null == s ? (0, r.jsx)(l.X6q, O(y({}, c), {
+  return null == s ? (0, r.jsx)(i.X6q, O(y({}, c), {
     children: a
-  })) : (0, r.jsx)(l.X6q, O(y({}, c), {
-    children: (0, r.jsx)(l.P3F, {
+  })) : (0, r.jsx)(i.X6q, O(y({}, c), {
+    children: (0, r.jsx)(i.P3F, {
       onClick: s,
       className: j.clickableText,
       children: a
@@ -94,19 +94,19 @@ function h(e) {
   let {
     text: t,
     user: n,
-    guildId: i,
+    guildId: l,
     channelId: o
   } = e;
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(l.PEf, {
+    children: [(0, r.jsx)(i.PEf, {
       size: "xxs",
-      color: l.TVs.colors.ICON_TERTIARY,
+      color: i.TVs.colors.ICON_TERTIARY,
       className: j.icon
-    }), (0, r.jsx)(l.nn4, {
+    }), (0, r.jsx)(i.nn4, {
       children: m.intl.format(m.t.TM0XDQ, {
-        name: c.ZP.getName(i, o, n)
+        name: c.ZP.getName(l, o, n)
       })
-    }), (0, r.jsx)(l.Text, {
+    }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-tertiary",
       children: t
@@ -118,17 +118,17 @@ function v(e) {
   let {
     applicationId: t,
     guildId: n,
-    channelId: l,
-    className: i
+    channelId: i,
+    className: l
   } = e, o = (0, p.Z)(t);
   return o.length > 0 ? (0, r.jsx)(s.Z, {
     label: m.intl.formatToPlainString(m.t.ujhJdH, {
       numFriends: o.length
     }),
-    className: i,
+    className: l,
     users: o,
     guildId: n,
-    channelId: l
+    channelId: i
   }) : null
 }
 
@@ -136,7 +136,7 @@ function _(e) {
   let {
     user: t,
     guildId: n,
-    channelId: i,
+    channelId: l,
     game: o,
     widgetType: c,
     loading: s = false,
@@ -173,10 +173,11 @@ function _(e) {
       gameName: _,
       applicationId: P,
       userId: t.id,
-      disableInteraction: p
+      disableInteraction: p,
+      hideTooltip: true
     }), (0, r.jsxs)("div", {
       className: j.details,
-      children: [p ? (0, r.jsx)(l.X6q, O(y({}, Z), {
+      children: [p ? (0, r.jsx)(i.X6q, O(y({}, Z), {
         children: _
       })) : (0, r.jsx)(x, y({
         applicationId: P,
@@ -186,7 +187,7 @@ function _(e) {
         text: E,
         user: t,
         guildId: n,
-        channelId: i
+        channelId: l
       }), (0, r.jsx)(u.Z, {
         tags: T,
         isCurrentUser: S,
@@ -196,7 +197,7 @@ function _(e) {
         className: j.socialProof,
         applicationId: P,
         guildId: n,
-        channelId: i
+        channelId: l
       })]
     }), !p && S && (0, r.jsx)(f.Z, {
       game: o,

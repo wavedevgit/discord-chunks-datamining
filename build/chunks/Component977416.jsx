@@ -1,11 +1,11 @@
 /** Chunk was on 76708 **/
 /** chunk id: 977416, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
-var Chunk255367 = require("./255367.js");
-require("./73800.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk255367 = require("./255367.js"),
+  Chunk73800 = require("./73800.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk817053 = require("./817053.jsx"),
   Chunk890814 = require("./890814.jsx"),
@@ -13,31 +13,34 @@ var Chunk481060 = require("./481060.js"),
   Chunk932366 = require("./932366.js"),
   Chunk845859 = require("./845859.js");
 
-function u(e) {
+function f(e) {
   var t, n, {
-      onClick: i,
-      loading: a
+      onClick: o,
+      loading: c = true
     } = e,
-    u = function(e, t) {
+    f = function(e, t) {
       if (null == e) return {};
-      var n, r, l = function(e, t) {
+      var n, r, i = function(e, t) {
         if (null == e) return {};
-        var n, r, l = {},
-          i = Object.keys(e);
-        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-        return l
+        var n, r, i = {},
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
-      return l
+      return i
     }(e, ["onClick", "loading"]);
-  return a ? (0, r.jsx)("div", {
-    className: s.loadingCover
+  let p = i.useRef(null);
+  return c ? (0, r.jsx)("div", {
+    className: d.loadingCover
   }) : (0, r.jsxs)("div", {
-    className: d.addButtonWrapper,
-    children: [(0, r.jsx)(o.Z, (t = function(e) {
+    ref: p,
+    className: u.addButtonWrapper,
+    onClick: o,
+    children: [(0, r.jsx)(a.Z, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -54,7 +57,8 @@ function u(e) {
         })
       }
       return e
-    }({}, u), n = n = {
+    }({}, f), n = n = {
+      className: u.coverContainer,
       disableInteraction: true
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -66,35 +70,41 @@ function u(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)), (0, r.jsx)("div", {
-      className: d.addButton,
+      className: u.addButton,
       children: (0, r.jsx)(l.hU, {
-        onClick: i,
+        onClick: e => {
+          e.stopPropagation(), o()
+        },
+        focusProps: {
+          ringTarget: p
+        },
         icon: l.svS,
-        variant: "overlay-secondary",
-        "aria-label": c.intl.string(c.t.E3l3Z2)
+        variant: "overlay-primary",
+        size: "sm",
+        "aria-label": s.intl.string(s.t.E3l3Z2)
       })
     })]
   })
 }
 
-function f(e) {
+function p(e) {
   let {
     userId: t,
     games: n,
-    isGameFetching: o,
-    isSuggestedGamesLoading: s,
-    onDismiss: f,
+    isGameFetching: i,
+    isSuggestedGamesLoading: a,
+    onDismiss: d,
     onClick: p
-  } = e, m = (0, i.Dt)();
+  } = e, m = (0, o.Dt)();
   return (0, r.jsxs)("aside", {
-    className: d.container,
+    className: u.container,
     "aria-labelledby": m,
     children: [(0, r.jsxs)("div", {
-      className: d.header,
+      className: u.header,
       children: [(0, r.jsx)(l.P3F, {
-        className: d.dismissButton,
-        "aria-label": c.intl.string(c.t["pUR+3t"]),
-        onClick: f,
+        className: u.dismissButton,
+        "aria-label": s.intl.string(s.t["pUR+3t"]),
+        onClick: d,
         children: (0, r.jsx)(l.Dio, {
           size: "sm",
           color: "currentColor"
@@ -103,23 +113,23 @@ function f(e) {
         id: m,
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: c.intl.string(c.t.zMUr6e)
+        children: s.intl.string(s.t.zMUr6e)
       })]
-    }), (0, r.jsx)(a.Z, {
+    }), (0, r.jsx)(c.Z, {
       games: n,
       renderGame: e => {
         let {
           applicationId: n,
           gameName: l,
-          imageSrc: i
+          imageSrc: o
         } = e;
-        return (0, r.jsx)(u, {
-          onClick: () => p(n, l, i),
+        return (0, r.jsx)(f, {
+          onClick: () => p(n, l, o),
           userId: t,
-          loading: s || o(n),
+          loading: a || i(n),
           applicationId: n,
           gameName: l,
-          imageSrc: i
+          imageSrc: o
         })
       }
     })]

@@ -32,9 +32,9 @@ function b(e) {
     mutualFriends: h,
     mutualFriendsCount: v
   } = (0, d.Z)(t), _ = (0, o.Z)();
-  return l.useEffect(() => {
+  return i.useEffect(() => {
     (0, u.Z)(t.id, _)
-  }, [t.id, _]), (0, r.jsx)(i.Ttm, {
+  }, [t.id, _]), (0, r.jsx)(l.Ttm, {
     className: g.scroller,
     fade: true,
     children: null == h ? Array.from({
@@ -51,12 +51,12 @@ function b(e) {
     }, t)) : 0 === h.length ? (0, r.jsx)(m.s_, {}) : h.map(e => {
       let {
         key: t,
-        user: l,
-        status: i
+        user: i,
+        status: l
       } = e;
       return (0, r.jsx)(p.Z, {
-        user: l,
-        status: i,
+        user: i,
+        status: l,
         guildId: n,
         channelId: b,
         onSelect: () => {
@@ -81,7 +81,7 @@ function b(e) {
             }
             return e
           }({}, O), t = t = {
-            userId: l.id,
+            userId: i.id,
             sourceAnalyticsLocations: y
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);

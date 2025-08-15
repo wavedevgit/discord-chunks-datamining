@@ -25,39 +25,39 @@ function x(e) {
   let {
     section: t,
     subsection: n,
-    user: l,
-    currentUser: i,
+    user: i,
+    currentUser: l,
     displayProfile: o,
     guildId: a,
     channelId: c,
     onClose: s
   } = e;
   return t === b.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
-    user: l,
-    currentUser: i,
+    user: i,
+    currentUser: l,
     displayProfile: o,
     guildId: a,
     onClose: s
   }) : t === b.oh.MUTUAL_FRIENDS ? (0, r.jsx)(m.Z, {
-    user: l,
+    user: i,
     guildId: a,
     channelId: c,
     onClose: s
   }) : t === b.oh.MUTUAL_GUILDS ? (0, r.jsx)(g.Z, {
-    user: l,
+    user: i,
     onClose: s
   }) : t === b.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
-    user: l
+    user: i
   }) : t === b.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
-    user: l,
-    currentUser: i,
+    user: i,
+    currentUser: l,
     displayProfile: o,
     guildId: a,
     subsection: n,
     onClose: s
   }) : (0, r.jsx)(p.Z, {
-    user: l,
-    currentUser: i,
+    user: i,
+    currentUser: l,
     displayProfile: o,
     subsection: n,
     onClose: s
@@ -77,10 +77,10 @@ function h(e) {
     onClose: _
   } = e, {
     trackUserProfileAction: I
-  } = (0, s.KZ)(), P = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), [{
+  } = (0, s.KZ)(), P = (0, l.e7)([c.Z], () => c.Z.hidePersonalInformation), [{
     section: E,
     subsection: T
-  }, Z] = l.useState({
+  }, Z] = i.useState({
     section: null != (d = null == (t = g.find(e => {
       let {
         section: t
@@ -89,13 +89,13 @@ function h(e) {
     })) ? true : t.section) ? d : null == (n = g[0]) ? true : n.section,
     subsection: v
   });
-  l.useEffect(() => {
+  i.useEffect(() => {
     null == g.find(e => e.section === E) && Z({
       section: g[0].section,
       subsection: true
     })
   }, [g, E]);
-  let N = l.useCallback(e => {
+  let N = i.useCallback(e => {
     I({
       action: "PRESS_SECTION",
       section: e

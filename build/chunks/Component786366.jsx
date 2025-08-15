@@ -17,7 +17,7 @@ function u(e) {
   let {
     icon: t,
     title: n,
-    description: l
+    description: i
   } = e;
   return (0, r.jsxs)("div", {
     className: d.row,
@@ -36,7 +36,7 @@ function u(e) {
         children: n
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
-        children: l
+        children: i
       })]
     })]
   })
@@ -45,7 +45,7 @@ function u(e) {
 function f(e) {
   let {
     user: t
-  } = e, n = (0, i.e7)([c.Z], () => {
+  } = e, n = (0, l.e7)([c.Z], () => {
     var e;
     return null == (e = c.Z.getUserProfile(t.id)) ? true : e.application
   }), {
@@ -55,7 +55,7 @@ function f(e) {
   } = (0, a.w)({
     flags: null == n ? true : n.flags
   });
-  return (0, r.jsxs)(l.zJ, {
+  return (0, r.jsxs)(i.zJ, {
     fade: true,
     className: d.scroller,
     children: [f && (0, r.jsx)(u, {

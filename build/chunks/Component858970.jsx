@@ -54,7 +54,7 @@ function I(e) {
     openedAt: Z,
     onHide: N,
     sourceAnalyticsLocations: S = []
-  } = e, w = n === x.ME ? true : n, A = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
+  } = e, w = n === x.ME ? true : n, A = (0, i.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: C
   } = (0, c.ZP)([...S, A ? a.Z.BLOCKED_PROFILE_MODAL : a.Z.IGNORED_PROFILE_MODAL]), D = (0, f.ZB)({
     layout: "MODAL_V2",
@@ -117,11 +117,11 @@ function I(e) {
               children: L.map((e, t) => {
                 let {
                   icon: n,
-                  description: l
+                  description: i
                 } = e;
                 return (0, r.jsx)(s.JZ, {
                   icon: n,
-                  title: l,
+                  title: i,
                   titleVariant: "text-md/normal",
                   color: o.TVs.colors.TEXT_DEFAULT.css
                 }, t)
@@ -129,7 +129,7 @@ function I(e) {
             }), (0, r.jsxs)(o.Kqy, {
               align: "center",
               children: [(0, r.jsx)(y.Z, {
-                size: i.Ph.MEDIUM,
+                size: l.Ph.MEDIUM,
                 isBlocked: A,
                 onClick: () => {
                   N(), (0, p.pQ)(_({

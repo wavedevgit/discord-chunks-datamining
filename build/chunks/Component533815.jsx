@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk86419 = require("./86419.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -16,7 +16,7 @@ function d(e) {
   let {
     game: t,
     widgetType: n,
-    iconSize: l = "refresh_sm",
+    iconSize: i = "refresh_sm",
     className: d
   } = e, u = () => {
     (0, a.$b)(n, t.applicationId)
@@ -45,9 +45,9 @@ function d(e) {
       }({}, e), n = n = {
         onClick: u,
         "aria-label": c.intl.string(c.t.HUvyDQ),
-        className: i()(d, s.clickable),
+        className: l()(d, s.clickable),
         children: (0, r.jsx)(o.XHJ, {
-          size: l,
+          size: i,
           className: s.icon,
           color: o.TVs.colors.STATUS_DANGER
         })

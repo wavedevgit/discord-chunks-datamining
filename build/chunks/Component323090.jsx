@@ -31,11 +31,11 @@ function O(e) {
     onClose: v
   } = e, {
     trackUserProfileAction: _
-  } = (0, s.KZ)(), I = (0, l.e7)([d.Z], () => {
+  } = (0, s.KZ)(), I = (0, i.e7)([d.Z], () => {
     var e;
     return null == (e = d.Z.getUserProfile(t.id)) ? true : e.application
-  }), P = (0, l.e7)([a.Z, c.Z], () => a.Z.getChannel(c.Z.getChannelId()));
-  return (0, r.jsxs)(i.zJl, {
+  }), P = (0, i.e7)([a.Z, c.Z], () => a.Z.getChannel(c.Z.getChannelId()));
+  return (0, r.jsxs)(l.zJl, {
     fade: true,
     className: y.scroller,
     children: [(null == O ? true : O.bio) != null && (null == O ? true : O.bio) !== "" && (0, r.jsx)(f.Z, {

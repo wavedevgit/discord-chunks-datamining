@@ -18,21 +18,21 @@ function a(e) {
     disableInteraction: s
   } = e, d = function(e, t) {
     if (null == e) return {};
-    var n, r, l = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var n, r, l = {},
-        i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-      return l
+      var n, r, i = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
-    return l
+    return i
   }(e, ["user", "widget", "isGameFetching", "containerClassName", "disableInteraction"]);
   let u = n.games[0];
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(i.Z, {
     userId: t.id,
     widget: n,
     className: c,
@@ -60,7 +60,7 @@ function a(e) {
       widgetType: n.type,
       loading: a(u.applicationId),
       disableInteraction: s
-    }, d)) : (0, r.jsx)(i.Z, {
+    }, d)) : (0, r.jsx)(l.Z, {
       widgetType: n.type
     })
   })

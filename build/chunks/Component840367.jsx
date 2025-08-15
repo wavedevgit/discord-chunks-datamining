@@ -29,8 +29,8 @@ function g(e) {
     headingId: d,
     widget: u,
     disableInteraction: g = false
-  } = e, j = (0, o.e7)([c.default], () => c.default.getId() === n), y = (0, s.kQ)(u), O = m[u.type](), x = j && u.games.length > 0 ? (t = u.type) === i.l.FAVORITE_GAMES ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
-    numGames: l.k[t]
+  } = e, j = (0, o.e7)([c.default], () => c.default.getId() === n), y = (0, s.kQ)(u), O = m[u.type](), x = j && u.games.length > 0 ? (t = u.type) === l.l.FAVORITE_GAMES ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
+    numGames: i.k[t]
   }) : true;
   return (0, r.jsxs)("div", {
     className: p.headerRow,
@@ -59,10 +59,10 @@ function b(e) {
   let {
     widget: t,
     disabled: n,
-    disabledInteraction: l,
+    disabledInteraction: i,
     userId: a
   } = e, s = (0, o.e7)([c.default], () => c.default.getId() === a);
-  return !l && (s || t.type === i.l.FAVORITE_GAMES && t.games.some(e => null != e.comment)) ? (0, r.jsxs)("div", {
+  return !i && (s || t.type === l.l.FAVORITE_GAMES && t.games.some(e => null != e.comment)) ? (0, r.jsxs)("div", {
     className: p.actions,
     children: [s && (0, r.jsx)(d.Z, {
       disabled: n,

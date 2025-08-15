@@ -51,7 +51,7 @@ function b(e) {
   let {
     widget: t,
     userId: b
-  } = e, j = l.useRef(null), y = e => {
+  } = e, j = i.useRef(null), y = e => {
     if (e.shiftKey) {
       (0, d.y8)(t.type), (0, u.L$)(f.qb.WIDGET_REMOVED);
       return
@@ -68,7 +68,7 @@ function b(e) {
     })
   }, O = () => {
     (0, c.G1)(b, t)
-  }, x = (0, i.e7)([s.default], () => s.default.getId() === b);
+  }, x = (0, l.e7)([s.default], () => s.default.getId() === b);
   return (0, r.jsx)(o.yRy, {
     targetElementRef: j,
     align: "top",

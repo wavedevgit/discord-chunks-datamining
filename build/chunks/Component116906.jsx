@@ -50,11 +50,11 @@ function I(e) {
   } = (0, p.Z)({
     userId: t.id,
     guildId: P
-  }), L = (0, l.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, G = (0, l.e7)([s.Z, c.Z], () => {
+  }), L = (0, i.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, G = (0, i.e7)([s.Z, c.Z], () => {
     let e = R ? s.Z.getStatus() : c.Z.getStatus(t.id);
-    return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
+    return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
   }), k = S.length > 0 || null != A, B = Z && null == A && null == D && null != C, M = !G && (k || B), U = w.length > 0;
-  return M || U || !L ? (0, r.jsxs)(i.zJl, {
+  return M || U || !L ? (0, r.jsxs)(l.zJl, {
     className: v.scroller,
     fade: true,
     children: [M ? (0, r.jsx)(m.Z, {
@@ -77,7 +77,7 @@ function I(e) {
             onClose: T,
             profileGuildId: null == I ? true : I.guildId
           })
-        }), S.map((e, l) => (0, r.jsx)("li", {
+        }), S.map((e, i) => (0, r.jsx)("li", {
           children: (0, r.jsx)(g.Z, {
             user: t,
             currentUser: n,
@@ -85,12 +85,12 @@ function I(e) {
             onClose: T,
             profileGuildId: null == I ? true : I.guildId
           })
-        }, "live-".concat(l)))]
+        }, "live-".concat(i)))]
       })
     }) : null, U ? (0, r.jsx)(m.Z, {
       heading: h.intl.string(h.t.M0zgnZ),
       introText: R ? h.intl.format(h.t["4bk9Ag"], {
-        learnMoreHook: (e, t) => (0, r.jsx)(i.eee, {
+        learnMoreHook: (e, t) => (0, r.jsx)(l.eee, {
           href: d.Z.getArticleURL(x.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
@@ -112,6 +112,6 @@ function I(e) {
     }) : null]
   }) : (0, r.jsx)("div", {
     className: _.empty,
-    children: (0, r.jsx)(i.$jN, {})
+    children: (0, r.jsx)(l.$jN, {})
   })
 }

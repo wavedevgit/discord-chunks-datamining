@@ -25,7 +25,7 @@ function p(e) {
     mutualGuilds: m,
     isFetching: g
   } = (0, s.Z)(t);
-  return (0, r.jsx)(l.Ttm, {
+  return (0, r.jsx)(i.Ttm, {
     className: f.scroller,
     fade: true,
     children: null == m && g ? Array.from({
@@ -41,19 +41,19 @@ function p(e) {
       })]
     }, t)) : (null != m || g) && (null == m ? true : m.length) !== 0 ? null == m ? true : m.map(e => {
       let {
-        guild: l,
+        guild: i,
         nick: o
       } = e;
       return (0, r.jsx)(d.Z, {
         user: t,
-        guild: l,
+        guild: i,
         nick: o,
         onSelect: () => {
           p({
             action: "PRESS_MUTUAL_GUILD"
-          }), (0, a.X)(l.id), n(), (0, i.xf)()
+          }), (0, a.X)(i.id), n(), (0, l.xf)()
         }
-      }, l.id)
+      }, i.id)
     }) : (0, r.jsx)(u.b0, {})
   })
 }

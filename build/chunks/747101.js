@@ -45,10 +45,10 @@ function s(e) {
   return r.useEffect(() => {
     if (e.length > 0) {
       let t = e.filter(e => o.Z.canFetch(e));
-      t.length > 0 && i.Z.getDetectableGamesSupplemental(t)
+      t.length > 0 && l.Z.getDetectableGamesSupplemental(t)
     }
   }, [e]), {
-    gameDataMap: (0, l.cj)([o.Z], () => {
+    gameDataMap: (0, i.cj)([o.Z], () => {
       let t = {};
       return e.forEach(e => {
         t[e] = o.Z.getGame(e)

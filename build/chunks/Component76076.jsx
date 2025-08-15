@@ -47,11 +47,11 @@ let b = {
     let {
       message: t,
       icon: n,
-      type: l
+      type: i
     } = e;
     return (0, r.jsxs)("div", {
       className: o()(g.toast, m.toast),
-      "data-type": l,
+      "data-type": i,
       children: [(0, r.jsx)("div", {
         className: m.toastIcon,
         children: n
@@ -66,10 +66,10 @@ let b = {
     let {
       className: t,
       onAutoHide: n
-    } = e, i = (0, u.be)(), f = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), [p, g] = l.useState(false), [y, O] = l.useState(null);
-    l.useEffect(() => {
-      null !== i ? (g(true), O(b[i]), s.uvj.announce(b[i].message)) : g(false)
-    }, [i]);
+    } = e, l = (0, u.be)(), f = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), [p, g] = i.useState(false), [y, O] = i.useState(null);
+    i.useEffect(() => {
+      null !== l ? (g(true), O(b[l]), s.uvj.announce(b[l].message)) : g(false)
+    }, [l]);
     let x = (0, s.Yzy)(p, {
       from: {
         transform: f ? "translateY(0)" : "translateY(-12px)",
@@ -90,7 +90,7 @@ let b = {
         clamp: true
       }
     }, "animate-always");
-    return l.useEffect(() => {
+    return i.useEffect(() => {
       if (p) {
         let e = setTimeout(() => {
           null == n || n()

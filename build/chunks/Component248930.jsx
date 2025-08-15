@@ -25,11 +25,11 @@ function x(e) {
   let {
     user: t,
     entry: n,
-    profileGuildId: i,
+    profileGuildId: l,
     className: x,
     onClose: h,
     hideContextMenu: v = false
-  } = e, _ = l.useRef(null), {
+  } = e, _ = i.useRef(null), {
     analyticsLocations: I
   } = (0, c.ZP)(a.Z.USER_PROFILE_RECENT_ACTIVITY_CARD), {
     themeType: P
@@ -50,7 +50,7 @@ function x(e) {
       user: t,
       children: (0, r.jsx)(f.Z, {
         user: t,
-        guildId: i,
+        guildId: l,
         themeType: P,
         sourceId: n.id,
         entry: n,

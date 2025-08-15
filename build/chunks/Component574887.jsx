@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk726542 = require("./726542.js"),
@@ -58,9 +58,9 @@ function v(e) {
   var t;
   let {
     account: n,
-    locale: l,
-    userId: i
-  } = e, o = null != (t = n.metadata) ? t : {}, m = (0, u.FI)(o[j.PC.CREATED_AT], l), v = c.Z.get((0, d.rR)(n.type));
+    locale: i,
+    userId: l
+  } = e, o = null != (t = n.metadata) ? t : {}, m = (0, u.FI)(o[j.PC.CREATED_AT], i), v = c.Z.get((0, d.rR)(n.type));
   return (0, r.jsxs)("li", {
     className: O.connection,
     children: [(0, r.jsx)(a.ua7, {
@@ -97,7 +97,7 @@ function v(e) {
             onClick: e => {
               (0, s.yw)(b.rMx.CONNECTED_ACCOUNT_VIEWED, {
                 platform_type: n.type,
-                other_user_id: i
+                other_user_id: l
               }), (0, g.q)({
                 href: t,
                 trusted: (null == v ? true : v.type) !== b.ABu.DOMAIN
@@ -137,10 +137,10 @@ function _(e) {
   let {
     connections: t,
     userId: n,
-    className: l
+    className: i
   } = e, a = (0, o.e7)([m.default], () => m.default.locale);
   return 0 === t.length ? null : (0, r.jsx)("ul", {
-    className: i()(O.container, l),
+    className: l()(O.container, i),
     children: t.map(e => (0, r.jsx)(v, {
       account: e,
       userId: n,

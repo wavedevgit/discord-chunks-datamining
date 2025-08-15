@@ -24,28 +24,28 @@ function f(e) {
     mutualGuilds: p,
     isFetching: m
   } = (0, c.Z)(t);
-  return (0, r.jsx)(l.zJl, {
+  return (0, r.jsx)(i.zJl, {
     className: u.listScroller,
     fade: true,
     children: null == p && m ? (0, r.jsx)("div", {
       className: u.empty,
-      children: (0, r.jsx)(l.$jN, {})
+      children: (0, r.jsx)(i.$jN, {})
     }) : (null != p || m) && (null == p ? true : p.length) !== 0 ? null == p ? true : p.map(e => {
       let {
-        guild: l,
+        guild: i,
         nick: a
       } = e;
       return (0, r.jsx)(s.Z, {
         user: t,
-        guild: l,
+        guild: i,
         nick: a,
         onSelect: () => {
           var e;
           f({
             action: "PRESS_MUTUAL_GUILD"
-          }), e = l.id, (0, o.X)(e), n(), (0, i.xf)()
+          }), e = i.id, (0, o.X)(e), n(), (0, l.xf)()
         }
-      }, l.id)
+      }, i.id)
     }) : (0, r.jsxs)("div", {
       className: u.empty,
       children: [(0, r.jsx)("div", {
