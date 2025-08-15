@@ -215,6 +215,8 @@ class L extends(r = Chunk442837.ZP.PersistedStore) {
       experiment: t,
       exposure_location: n,
       unit_type: r
+    }, {
+      flush: true
     }), P[o] = Date.now(), this.saveTrackedExposures(P))
   }
   trackCommonTriggerPointExposures(e) {
@@ -224,6 +226,8 @@ class L extends(r = Chunk442837.ZP.PersistedStore) {
         evaluation_id: t,
         exposure_location: e,
         unit_type: "user"
+      }, {
+        flush: true
       }), P[n] = Date.now(), this.saveTrackedExposures(P))
     }
   }
@@ -233,6 +237,8 @@ class L extends(r = Chunk442837.ZP.PersistedStore) {
       experiment: e,
       unit_type: "user",
       suppression_source: t
+    }, {
+      flush: true
     })
   }
   evaluationIds(e) {
@@ -261,6 +267,8 @@ class L extends(r = Chunk442837.ZP.PersistedStore) {
       y.error("Error saving tracked exposures", e), this.track(u.j_.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
         module: "discord_app",
         call: "ApexExperimentStore.saveTrackedExposures"
+      }, {
+        flush: true
       })
     }
   }

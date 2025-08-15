@@ -3,23 +3,24 @@
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk353926 = require("./353926.js"),
+  Chunk633289 = require("./633289.js"),
   Chunk160462 = require("./160462.js");
 
-function c() {
+function u() {
   Chunk160462.W.trigger()
 }
-class u extends(i = Chunk442837.ZP.Store) {
+class d extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk353926.Z)
+    this.waitFor(Chunk353926.Z, Chunk633289.Z)
   }
   constructor() {
     super(Chunk570140.Z, {
-      CONNECTION_OPEN: c
+      CONNECTION_OPEN: u
     }, Chunk570140.c.Early)
   }
-}(r = "displayName") in u ? Object.defineProperty(u, r, {
+}(r = "displayName") in d ? Object.defineProperty(d, r, {
   value: "ExperimentTriggerPointStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : u[r] = "ExperimentTriggerPointStore", new u
+}) : d[r] = "ExperimentTriggerPointStore", new d

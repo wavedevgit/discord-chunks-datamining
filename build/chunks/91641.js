@@ -40,7 +40,7 @@ class s {
   }
   trigger() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-    o(this.triggerPoint, this.experiments, a({}, this.params, module)), Chunk633289.Z.trackCommonTriggerPointExposures(this.params.location)
+    Chunk633289.Z.trackCommonTriggerPointExposures(this.params.location), o(this.triggerPoint, this.experiments, a({}, this.params, module))
   }
   getExperiments() {
     return this.experiments

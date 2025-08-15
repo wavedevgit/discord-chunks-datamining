@@ -6102,13 +6102,13 @@ let {
         light: {
           color: "gradient.end",
           lightness: "*0.9",
-          saturation: "*0.9",
+          saturation: "*0.6",
           opacity: .9
         },
         dark: {
           color: "gradient.end",
           lightness: "*1.5",
-          saturation: "*1.2",
+          saturation: "*1",
           opacity: .9
         }
       }
