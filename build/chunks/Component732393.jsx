@@ -1,7 +1,7 @@
-/** Chunk was on 78650 **/
+/** Chunk was on 86357 **/
 /** chunk id: 732393, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => b
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js");
 require("./73800.js");
@@ -18,58 +18,58 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk433307 = require("./433307.js");
 
-function b(e) {
+function g(e) {
   let {
     tag: t
   } = e, {
     name: n,
     emojiId: l,
     emojiName: a
-  } = t, d = (0, r.e7)([s.ZP], () => null != l ? s.ZP.getUsableCustomEmojiById(l) : null);
-  return (0, i.jsxs)(i.Fragment, {
-    children: [null != a || null != l ? (0, i.jsx)(o.Z, {
-      className: v.emoji,
+  } = t, c = (0, i.e7)([s.ZP], () => null != l ? s.ZP.getUsableCustomEmojiById(l) : null);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [null != a || null != l ? (0, r.jsx)(o.Z, {
+      className: m.emoji,
       emojiId: l,
       emojiName: a,
-      animated: !!(null == d ? true : d.animated)
+      animated: !!(null == c ? true : c.animated)
     }) : null, n]
   })
 }
 
-function Z(e) {
-  let t = (0, r.e7)([f.Z], () => f.Z.getChannel(e), [e]),
-    n = (0, c.C7)(t),
-    o = (0, r.e7)([f.Z], () => f.Z.getChannel(null == t ? true : t.parent_id), [t]),
+function b(e) {
+  let t = (0, i.e7)([p.Z], () => p.Z.getChannel(e), [e]),
+    n = (0, d.C7)(t),
+    o = (0, i.e7)([p.Z], () => p.Z.getChannel(null == t ? true : t.parent_id), [t]),
     s = (0, u.Vm)(o),
-    v = (0, u.eV)(t),
-    Z = v.length >= h.Cn,
-    p = (0, c.$R)(t);
+    m = (0, u.eV)(t),
+    b = m.length >= h.Cn,
+    y = (0, d.$R)(t);
   if (null == t) return (0, a.Zy)(), null;
-  if (!n || __OVERLAY__ || !t.isForumPost() || (null == s ? true : s.length) === 0 || !p || t.isModeratorReportChannel()) return null;
-  let m = null == s ? true : s.map(e => {
-    let n = v.includes(e);
-    return (0, i.jsx)(l.S89, {
+  if (!n || __OVERLAY__ || !t.isForumPost() || (null == s ? true : s.length) === 0 || !y || t.isModeratorReportChannel()) return null;
+  let _ = null == s ? true : s.map(e => {
+    let n = m.includes(e);
+    return (0, r.jsx)(l.S89, {
       id: e.id,
-      label: (0, i.jsx)(b, {
+      label: (0, r.jsx)(g, {
         tag: e
       }),
-      disabled: Z && !n,
+      disabled: b && !n,
       action: () => (e => {
-        let n = new Set(v);
+        let n = new Set(m);
         if (n.has(e)) n.delete(e);
         else {
-          if (Z) return;
+          if (b) return;
           n.add(e)
         }
-        let i = Array.from(n).map(e => e.id);
-        d.Z.updateForumPostTags(t.id, i)
+        let r = Array.from(n).map(e => e.id);
+        c.Z.updateForumPostTags(t.id, r)
       })(e),
       checked: n
     }, e.id)
   });
-  return (0, i.jsx)(l.sNh, {
+  return (0, r.jsx)(l.sNh, {
     id: "edit-tags",
-    label: g.intl.string(g.t["436ZFx"]),
-    children: m
+    label: f.intl.string(f.t["436ZFx"]),
+    children: _
   })
 }

@@ -1,5 +1,5 @@
-/** Chunk was on 7667 **/
-/** chunk id: 920454, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 63042 **/
+/** chunk id: 920454, original params: e,t,a (module,exports,require) **/
 module.exports = {
   channelOptionWrapper: "channelOptionWrapper_f9ff5f",
   icon: "icon_f9ff5f",

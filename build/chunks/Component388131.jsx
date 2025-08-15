@@ -1,18 +1,19 @@
 /** Chunk was on 46786 **/
 /** chunk id: 388131, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => b,
-  default: () => f
+  A: () => y,
+  default: () => C
 }), require("./388685.js");
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk741361 = require("./741361.js"),
   Chunk881052 = require("./881052.js"),
   Chunk911969 = require("./911969.js"),
   Chunk185413 = require("./185413.jsx"),
+  Chunk600164 = require("./600164.jsx"),
+  Chunk313201 = require("./313201.js"),
   Chunk592125 = require("./592125.js"),
   Chunk430824 = require("./430824.js"),
   Chunk700785 = require("./700785.js"),
@@ -21,24 +22,24 @@ var Chunk255367 = require("./255367.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk878713 = require("./878713.js");
 
-function b(e, t) {
+function y(e, t) {
   return {
     id: e,
     type: t,
-    deny: g.Hn,
+    deny: m.Hn,
     allow: p.yP
   }
 }
 
-function f(e) {
+function C(e) {
   let {
     transitionState: t,
     onClose: n,
-    channelId: g
-  } = e, f = (0, i.e7)([h.Z], () => h.Z.getChannel(g)), w = (0, i.e7)([x.Z], () => x.Z.getGuild(null == f ? true : f.getGuildId())), [C, _] = l.useState({}), [k, v] = l.useState(false), [E, j] = l.useState(null);
-  if (null == f || null == w) return null;
-  let M = async () => {
-    v(true);
+    channelId: m
+  } = e, C = (0, h.Dt)(), E = (0, a.e7)([x.Z], () => x.Z.getChannel(m)), S = (0, a.e7)([g.Z], () => g.Z.getGuild(null == E ? true : E.getGuildId())), [k, v] = l.useState({}), [w, R] = l.useState(false), [f, A] = l.useState(null);
+  if (null == E || null == S) return null;
+  let N = async () => {
+    R(true);
     try {
       await
       function(e, t) {
@@ -51,49 +52,64 @@ function f(e) {
           let {
             row: t
           } = e;
-          return t.rowType === m.aC.ROLE ? b(t.id, u.BN.ROLE) : b(t.id, u.BN.MEMBER)
+          return t.rowType === b.aC.ROLE ? y(t.id, s.BN.ROLE) : y(t.id, s.BN.MEMBER)
         });
         return (0, d.hw)(e.id, n, true)
-      }(f, C), n()
+      }(E, k), n()
     } catch (t) {
       let e = new o.Hx(t);
-      v(false), j(e)
+      R(false), A(e)
     }
   };
-  return (0, r.jsxs)(a.Modal, {
+  return (0, r.jsxs)(i.Y0X, {
     transitionState: t,
-    title: y.intl.string(y.t.dMJ3Y2),
-    onClose: n,
-    actions: [{
-      variant: "secondary",
-      text: y.intl.string(y.t["ETE/oK"]),
-      onClick: n
-    }, {
-      variant: "primary",
-      text: y.intl.string(y.t.OYkgVl),
-      onClick: M,
-      loading: k
-    }],
-    children: [(0, r.jsxs)(s.Text, {
-      variant: "text-md/normal",
-      color: "header-secondary",
-      className: S.headerSubtitle,
-      children: [(0, r.jsx)(s.ewx, {
-        size: "xs",
-        color: "currentColor",
-        className: S.headerSubtitleIcon
-      }), f.name]
+    "aria-labelledby": C,
+    size: i.CgR.SMALL,
+    className: _.modalRoot,
+    parentComponent: "AddModeratorsModal",
+    children: [(0, r.jsxs)(i.xBx, {
+      separator: false,
+      direction: u.Z.Direction.VERTICAL,
+      align: u.Z.Align.CENTER,
+      className: _.header,
+      children: [(0, r.jsx)(i.X6q, {
+        variant: "heading-xl/semibold",
+        children: j.intl.string(j.t.dMJ3Y2)
+      }), (0, r.jsxs)(i.Text, {
+        variant: "text-md/normal",
+        color: "header-secondary",
+        className: _.headerSubtitle,
+        children: [(0, r.jsx)(i.ewx, {
+          size: "xs",
+          color: "currentColor",
+          className: _.headerSubtitleIcon
+        }), E.name]
+      })]
     }), (0, r.jsx)(c.U, {
-      guild: w,
-      channel: f,
+      guild: S,
+      channel: E,
       permission: p.yP,
-      pendingAdditions: C,
-      setPendingAdditions: _
-    }), null != E ? (0, r.jsx)(s.Text, {
-      className: S.error,
+      pendingAdditions: k,
+      setPendingAdditions: v
+    }), null != f ? (0, r.jsx)(i.Text, {
+      className: _.error,
       variant: "text-xs/normal",
       color: "text-danger",
-      children: E.getAnyErrorMessage()
-    }) : null]
+      children: f.getAnyErrorMessage()
+    }) : null, (0, r.jsx)(i.mzw, {
+      children: (0, r.jsxs)(i.hE2, {
+        direction: "horizontal-reverse",
+        children: [(0, r.jsx)(i.zxk, {
+          variant: "primary",
+          text: j.intl.string(j.t.OYkgVl),
+          onClick: N,
+          loading: w
+        }), (0, r.jsx)(i.zxk, {
+          variant: "secondary",
+          text: j.intl.string(j.t["ETE/oK"]),
+          onClick: n
+        })]
+      })
+    })]
   })
 }

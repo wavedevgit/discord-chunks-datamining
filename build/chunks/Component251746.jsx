@@ -1,7 +1,7 @@
-/** Chunk was on 78650 **/
+/** Chunk was on 86357 **/
 /** chunk id: 251746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 });
 var Chunk255367 = require("./255367.js"),
   Chunk73800 = require("./73800.js"),
@@ -15,24 +15,24 @@ var Chunk255367 = require("./255367.js"),
   Chunk557135 = require("./557135.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function g(e) {
+function f(e) {
   let t = (0, u.Y)(e),
-    n = (0, o.e7)([c.Z], () => c.Z.isInChannel(e.id)),
-    l = (0, o.e7)([c.Z], () => !a().isEmpty(c.Z.getVoiceStatesForChannel(e.id))),
+    n = (0, o.e7)([d.Z], () => d.Z.isInChannel(e.id)),
+    l = (0, o.e7)([d.Z], () => !a().isEmpty(d.Z.getVoiceStatesForChannel(e.id))),
     {
-      needSubscriptionToAccess: g
-    } = (0, d.Z)(e.id),
-    v = r.useCallback(() => {
-      f.Z.handleVoiceConnect({
+      needSubscriptionToAccess: f
+    } = (0, c.Z)(e.id),
+    m = i.useCallback(() => {
+      p.Z.handleVoiceConnect({
         channel: e,
         connected: n,
-        needSubscriptionToAccess: g,
+        needSubscriptionToAccess: f,
         locked: false
       })
-    }, [e, n, g]);
-  return n || !t ? null : (0, i.jsx)(s.sNh, {
+    }, [e, n, f]);
+  return n || !t ? null : (0, r.jsx)(s.sNh, {
     id: "join-thread-voice",
     label: l ? h.intl.string(h.t["0D/6R0"]) : h.intl.string(h.t.My50nZ),
-    action: v
+    action: m
   })
 }

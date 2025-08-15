@@ -1,4 +1,4 @@
-/** Chunk was on 80890 **/
+/** Chunk was on 71993 **/
 /** chunk id: 24722, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   default: () => k
@@ -48,24 +48,24 @@ function k(e) {
     onClose: r,
     roleId: S,
     guildId: k
-  } = e, R = (0, a.e7)([y.Z], () => y.Z.getRole(S), [S]), [j, C] = o.useState(""), [M, T] = o.useState({}), [L, P] = o.useState(false);
-  o.useEffect(() => {
-    m.Z.requestMembers(k, j.trim().toLowerCase(), g._4)
-  }, [k, j]);
-  let E = o.useCallback(e => !e.roles.includes(S), [S]),
-    B = (0, g.lJ)(k, E),
-    I = o.useMemo(() => B.filter(e => (0, g.eg)(j, e)), [j, B]),
-    Z = o.useCallback(async () => {
+  } = e, j = (0, o.e7)([p.Z], () => p.Z.getRole(S), [S]), [C, R] = a.useState(""), [M, L] = a.useState({}), [P, E] = a.useState(false);
+  a.useEffect(() => {
+    m.Z.requestMembers(k, C.trim().toLowerCase(), g._4)
+  }, [k, C]);
+  let T = a.useCallback(e => !e.roles.includes(S), [S]),
+    B = (0, g.lJ)(k, T),
+    I = a.useMemo(() => B.filter(e => (0, g.eg)(C, e)), [C, B]),
+    Z = a.useCallback(async () => {
       let e = Object.values(M).map(e => e.row.id);
-      P(true);
+      E(true);
       try {
-        await p.Z.bulkAddMemberRoles(k, S, e), (0, f.H)(k, S, false), r()
+        await y.Z.bulkAddMemberRoles(k, S, e), (0, f.H)(k, S, false), r()
       } catch (e) {
-        P(false)
+        E(false)
       }
     }, [k, S, M, r]),
-    q = o.useCallback(e => {
-      T(t => {
+    q = a.useCallback(e => {
+      L(t => {
         let r = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var r = null != arguments[t] ? arguments[t] : {},
@@ -84,7 +84,7 @@ function k(e) {
             }
             return e
           }({}, t),
-          n = (0, d.G)(e);
+          n = (0, c.G)(e);
         return n in r ? delete r[n] : r[n] = {
           display: {
             type: u.F.MEMBER,
@@ -95,29 +95,29 @@ function k(e) {
         }, r
       })
     }, []),
-    U = o.useCallback(e => {
-      T(t => {
+    U = a.useCallback(e => {
+      L(t => {
         let {
           [e]: r
         } = t;
         return function(e, t) {
           if (null == e) return {};
-          var r, n, o = function(e, t) {
+          var r, n, a = function(e, t) {
             if (null == e) return {};
-            var r, n, o = {},
-              a = Object.keys(e);
-            for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
-            return o
+            var r, n, a = {},
+              o = Object.keys(e);
+            for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
+            return a
           }(e, t);
           if (Object.getOwnPropertySymbols) {
-            var a = Object.getOwnPropertySymbols(e);
-            for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+            var o = Object.getOwnPropertySymbols(e);
+            for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
           }
-          return o
+          return a
         }(t, [e].map(O))
       })
     }, []),
-    A = o.useMemo(() => I.map(e => {
+    A = a.useMemo(() => I.map(e => {
       var t;
       let r = _.ZP.getUserTag(e.user);
       return {
@@ -133,7 +133,7 @@ function k(e) {
         key: e.id
       }
     }), [I]),
-    H = o.useMemo(() => Object.keys(M).length, [M]),
+    H = a.useMemo(() => Object.keys(M).length, [M]),
     N = [{
       text: w.intl.string(w.t["ETE/oK"]),
       variant: "secondary",
@@ -142,7 +142,7 @@ function k(e) {
       text: w.intl.string(w.t.OYkgVl),
       variant: "primary",
       onClick: Z,
-      loading: L,
+      loading: P,
       disabled: 0 === H || H > h.ey
     }];
   return (0, n.jsxs)(i.I, {
@@ -150,20 +150,20 @@ function k(e) {
     transitionState: t,
     children: [(0, n.jsx)(b.x, {
       title: w.intl.string(w.t["ZYOK4+"]),
-      subtitle: null != R ? w.intl.format(w.t["qP+nub"], {
+      subtitle: null != j ? w.intl.format(w.t["qP+nub"], {
         numMembers: h.ey,
-        roleName: R.name
+        roleName: j.name
       }) : w.intl.format(w.t["3OxP4u"], {
         numMembers: h.ey
       }),
       alignCenter: true,
       titleTextVariant: "heading-xl/semibold"
     }), (0, n.jsx)(s.f, {
-      children: (0, n.jsx)(c.t, {
+      children: (0, n.jsx)(d.t, {
         listClassName: x.list,
         pendingAdditions: M,
-        query: j,
-        onQueryChange: C,
+        query: C,
+        onQueryChange: R,
         onClickRow: q,
         onRemovePendingAddition: U,
         roles: [],

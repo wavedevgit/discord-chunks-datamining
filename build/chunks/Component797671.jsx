@@ -1,5 +1,5 @@
-/** Chunk was on 7667 **/
-/** chunk id: 797671, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 63042 **/
+/** chunk id: 797671, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   default: () => S
 }), require("./539854.js"), require("./953529.js"), require("./388685.js"), require("./457542.js");
@@ -29,78 +29,78 @@ var Chunk255367 = require("./255367.js"),
   Chunk920454 = require("./920454.js");
 
 function S(e) {
-  var t, n;
+  var t, a;
   let {
     guildId: S,
     transitionState: j,
     onSubmit: B,
     onClose: D
-  } = e, E = (0, p.Dt)(), T = (0, p.Dt)(), R = (0, p.Dt)(), [M, W] = a.useState(w.Sc2), [G, k] = a.useState(w.d4z.GUILD_TEXT), [A, H] = a.useState(""), [U, O] = a.useState(false), P = (0, o.e7)([g.Z], () => g.Z.getGuild(S), [S]), Z = (0, m.m)(S), V = (0, h.Ui)(P), z = a.useMemo(() => (function(e) {
+  } = e, E = (0, p.Dt)(), T = (0, p.Dt)(), R = (0, p.Dt)(), [M, W] = r.useState(w.Sc2), [G, k] = r.useState(w.d4z.GUILD_TEXT), [A, H] = r.useState(""), [U, O] = r.useState(false), P = (0, o.e7)([g.Z], () => g.Z.getGuild(S), [S]), Z = (0, m.m)(S), V = (0, h.Ui)(P), z = r.useMemo(() => (function(e) {
     let {
       canCreateStageChannel: t,
-      canCreateMediaChannel: n
-    } = e, a = [{
-      icon: d.VL1,
+      canCreateMediaChannel: a
+    } = e, r = [{
+      icon: s.VL1,
       label: N.intl.string(N.t.pnuRXF),
       value: w.d4z.GUILD_TEXT,
       description: N.intl.string(N.t.Hf5Lb2)
     }, {
-      icon: d.gj8,
+      icon: s.gj8,
       label: N.intl.string(N.t.Sx55Oj),
       value: w.d4z.GUILD_VOICE,
       description: N.intl.string(N.t.pqfkoK)
     }];
-    return t && a.push({
-      icon: d.ewx,
+    return t && r.push({
+      icon: s.ewx,
       label: N.intl.string(N.t.pNWst7),
       value: w.d4z.GUILD_STAGE_VOICE,
       description: N.intl.string(N.t.VPAwgo)
-    }), a.push({
-      icon: d.Mmi,
+    }), r.push({
+      icon: s.Mmi,
       label: N.intl.string(N.t.eAVIDw),
       value: w.d4z.GUILD_FORUM,
       description: N.intl.string(N.t.iZ5pgo)
-    }), n && a.push({
-      icon: d.XBm,
+    }), a && r.push({
+      icon: s.XBm,
       label: N.intl.string(N.t["6x6fVl"]),
       value: w.d4z.GUILD_MEDIA,
       description: N.intl.string(N.t.JyCrwc),
       isBeta: true
-    }), a.map(e => {
+    }), r.map(e => {
       let {
         icon: t,
-        label: n,
-        value: a,
+        label: a,
+        value: r,
         description: i,
         isBeta: o
       } = e;
       return {
-        name: (0, r.jsxs)("div", {
+        name: (0, n.jsxs)("div", {
           className: y.channelOptionWrapper,
-          children: [(0, r.jsx)(t, {
+          children: [(0, n.jsx)(t, {
             className: y.icon
-          }), (0, r.jsxs)("div", {
-            children: [(0, r.jsxs)(d.Text, {
+          }), (0, n.jsxs)("div", {
+            children: [(0, n.jsxs)(s.Text, {
               variant: "text-md/normal",
               color: "header-primary",
-              children: [n, (0, r.jsx)(_.p, {
+              children: [a, (0, n.jsx)(_.p, {
                 isBeta: o
               })]
-            }), (0, r.jsx)(d.Text, {
+            }), (0, n.jsx)(s.Text, {
               variant: "text-xs/normal",
               color: "header-secondary",
               children: i
             })]
           })]
         }),
-        value: a,
+        value: r,
         channelIcon: t
       }
     })
   })({
     canCreateStageChannel: Z,
     canCreateMediaChannel: V
-  }), [Z, V]), F = (0, o.e7)([f.Z], () => f.Z.getCategories(S)._categories, [S]), X = a.useMemo(() => F.map(e => {
+  }), [Z, V]), F = (0, o.e7)([f.Z], () => f.Z.getCategories(S)._categories, [S]), X = r.useMemo(() => F.map(e => {
     let {
       channel: t
     } = e;
@@ -108,8 +108,8 @@ function S(e) {
       value: t.id,
       label: t.name
     }
-  }), [F]), q = null != (n = null == (t = z.find(e => e.value === G)) ? true : t.channelIcon) ? n : C.Vq, J = "" !== A;
-  return (0, r.jsx)("form", {
+  }), [F]), q = null != (a = null == (t = z.find(e => e.value === G)) ? true : t.channelIcon) ? a : C.Vq, J = "" !== A;
+  return (0, n.jsx)("form", {
     onSubmit: function(e) {
       if (e.preventDefault(), !J) return;
       O(true);
@@ -131,11 +131,11 @@ function S(e) {
         trackedActionData: {
           event: i.NetworkActionNames.CHANNEL_CREATE,
           properties: e => {
-            var t, n;
+            var t, a;
             return (0, l.iG)({
               is_private: true,
               channel_id: null == e || null == (t = e.body) ? true : t.id,
-              channel_type: null == e || null == (n = e.body) ? true : n.type
+              channel_type: null == e || null == (a = e.body) ? true : a.type
             })
           }
         },
@@ -146,11 +146,11 @@ function S(e) {
         O(false)
       })
     },
-    children: (0, r.jsx)(c.Modal, {
+    children: (0, n.jsx)(c.Modal, {
       transitionState: j,
       title: N.intl.string(N.t["fUYU+v"]),
       onClose: D,
-      actionBarInput: (0, r.jsx)(d.Avr, {
+      actionBarInput: (0, n.jsx)(s.Avr, {
         text: N.intl.string(N.t["13/7kZ"]),
         onClick: D
       }),
@@ -161,22 +161,22 @@ function S(e) {
         disabled: !J,
         type: "submit"
       }],
-      children: (0, r.jsxs)(d.Kqy, {
+      children: (0, n.jsxs)(s.Kqy, {
         gap: 16,
-        children: [(0, r.jsx)(d.xJW, {
+        children: [(0, n.jsx)(s.xJW, {
           title: N.intl.string(N.t.vHCZws),
           titleId: E,
-          children: (0, r.jsx)(d.q4e, {
+          children: (0, n.jsx)(s.q4e, {
             placeholder: N.intl.string(N.t["g/Rr2d"]),
             value: M,
             options: X,
             onChange: e => W(e),
             "aria-labelledby": E
           })
-        }), (0, r.jsx)(d.xJW, {
+        }), (0, n.jsx)(s.xJW, {
           title: N.intl.string(N.t["7ZcXGx"]),
           titleId: T,
-          children: (0, r.jsx)(d.FXm, {
+          children: (0, n.jsx)(s.FXm, {
             options: z,
             value: G,
             onChange: e => {
@@ -187,10 +187,10 @@ function S(e) {
             },
             "aria-labelledby": T
           })
-        }), (0, r.jsx)(d.xJW, {
+        }), (0, n.jsx)(s.xJW, {
           title: N.intl.string(N.t.PVbHDg),
           titleId: R,
-          children: (0, r.jsx)(s.Is, {
+          children: (0, n.jsx)(d.Is, {
             value: A,
             onChange: function(e) {
               (0, x.zi)(G) && (e = (0, I.Nj)(e)), H(e)
@@ -199,7 +199,7 @@ function S(e) {
             placeholder: N.intl.string(N.t["bw/b8P"]),
             className: y.inputWrapper,
             inputClassName: y.inputInner,
-            prefixElement: (0, r.jsx)(q, {
+            prefixElement: (0, n.jsx)(q, {
               className: y.inputPrefix,
               color: "currentColor",
               "aria-hidden": true
