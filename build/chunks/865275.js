@@ -111,7 +111,7 @@ class b extends Chunk836560.EventEmitter {
   _recomputeProgressByFile() {
     let e = {};
     return this.files.forEach(t => {
-      e[t.id] = (0, u.S)(t.loaded, t.currentSize)
+      e[t.id] = (0, u.SB)(t.loaded, t.currentSize)
     }), module
   }
   _addAttachmentsToPayload(e, t, n) {
@@ -156,7 +156,7 @@ class b extends Chunk836560.EventEmitter {
       this._cancel = e, this.alreadyStarted || this.emit("start", this._file), this.alreadyStarted = true
     }), p(this, "_handleProgress", (e, t, n) => {
       let r = Date.now(),
-        i = (0, u.S)(e, t),
+        i = (0, u.SB)(e, t),
         a = Math.floor((e - this._loaded) / ((r - this._lastUpdate) / 1e3));
       if (null != n) {
         var o;

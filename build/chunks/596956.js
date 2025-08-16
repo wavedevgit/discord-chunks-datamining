@@ -2,14 +2,19 @@
 /** chunk id: 596956, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => a,
-  T: () => i
-});
-var Chunk476326 = require("./476326.js");
+  LD: () => c,
+  Qn: () => u,
+  SB: () => l,
+  TC: () => s
+}), require("./415506.js");
+var Chunk544891 = require("./544891.js"),
+  Chunk668757 = require("./668757.js"),
+  Chunk476326 = require("./476326.js");
+let o = 50;
 
-function i(e, t) {
+function s(e, t) {
   if (t.id === e.uri || null != t.id && t.id === e.id) returntrue;
-  if (t.item.platform === r.ow.REACT_NATIVE) {
+  if (t.item.platform === a.ow.REACT_NATIVE) {
     let {
       item: r
     } = t, {
@@ -24,6 +29,62 @@ function i(e, t) {
   returnfalse
 }
 
-function a(e, t) {
+function l(e, t) {
   return 0 === t ? 0 : Math.min(Math.floor(e / t * 100), 100)
+}
+class c {
+  sliceBody(e, t) {
+    return e instanceof File ? e.slice(t) : e
+  }
+  doUpload(e, t) {
+    return (null == t ? true : t.fileByteRange) != null && (e.body = this.sliceBody(e.body, t.fileByteRange.start)), r.tn.put(e)
+  }
+}
+class u {
+  doUpload(e, t) {
+    var n, r, a;
+    let s, l = (0, i.gi)();
+    if (null == l) throw Error("Libdiscore client is not available");
+    if ((null == (n = e.body) ? true : n.uri) !== true && "string" == typeof e.body.uri && (s = e.body.uri.startsWith("file://") ? e.body.uri.slice(7) : e.body.uri), true === s || "" === s) throw Error("No file path found in request body");
+    let c = {
+        path: s,
+        byteRangeStart: null == t || null == (r = t.fileByteRange) ? true : r.start,
+        byteRangeEnd: null == t || null == (a = t.fileByteRange) ? true : a.end
+      },
+      u = l.httpRequest(e.url, {
+        method: "PUT",
+        body: c,
+        headers: e.headers
+      });
+    return new Promise((t, n) => {
+      let r = () => {
+        var i, a, s, c;
+        if (null == (i = e.signal) ? true : i.aborted) {
+          n(Error("Request cancelled")), l.cancelHttpRequest(u);
+          return
+        }
+        let d = l.getHttpRequestStatus(u);
+        if ((null == d ? true : d.status) === "success") t({
+          status: null == (a = d.response) ? true : a.status,
+          headers: null == (s = d.response) ? true : s.headers,
+          text: null == (c = d.response) ? true : c.body
+        });
+        else if ((null == d ? true : d.status) === "error") n(Error(d.error));
+        else if ((null == d ? true : d.status) === "progressing") {
+          if (true !== e.onRequestProgress && null != d.uploaded_bytes && d.uploaded_bytes > 0) {
+            let t = {
+              loaded: d.uploaded_bytes,
+              total: d.total_bytes
+            };
+            e.onRequestProgress(t)
+          }
+          setTimeout(r, o)
+        } else n(Error("Unknown upload status"))
+      };
+      r()
+    })
+  }
+  constructor() {
+    if (!(0, Chunk668757.X6)()) throw Error("Libdiscore is not loaded")
+  }
 }

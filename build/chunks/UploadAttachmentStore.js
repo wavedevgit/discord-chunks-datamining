@@ -71,7 +71,7 @@ function v(e) {
     channelId: t,
     id: n,
     draftType: r
-  } = e, i = [...g(t, r)], a = i.findIndex(e => (0, u.T)({
+  } = e, i = [...g(t, r)], a = i.findIndex(e => (0, u.TC)({
     uri: n,
     filename: n
   }, e));
