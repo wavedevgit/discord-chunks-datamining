@@ -1,4 +1,4 @@
-/** Chunk was on 86357 **/
+/** Chunk was on 36499 **/
 /** chunk id: 874341, original params: e,t,n (module,exports,require) **/
 module.exports = {
   emojiWrapper: "emojiWrapper__21d2d",

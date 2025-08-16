@@ -1,4 +1,4 @@
-/** Chunk was on 86357 **/
+/** Chunk was on 78650 **/
 /** chunk id: 933793, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -16,20 +16,20 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function h(e) {
-  let t = (0, i.e7)([u.Z], () => u.Z.getChannel(e.parent_id)),
-    n = (0, c.Xb)(e),
+  let t = (0, r.e7)([u.Z], () => u.Z.getChannel(e.parent_id)),
+    n = (0, d.Xb)(e),
     h = (0, o.kF)(e);
-  return (null == t ? true : t.isForumLikeChannel()) && n ? e.hasFlag(d.zZ.PINNED) ? (0, r.jsx)(l.sNh, {
+  return (null == t ? true : t.isForumLikeChannel()) && n ? e.hasFlag(c.zZ.PINNED) ? (0, i.jsx)(l.sNh, {
     id: "unpin-thread",
-    label: p.intl.string(p.t.trD8am),
+    label: f.intl.string(f.t.trD8am),
     action: () => s.Z.unpin(e)
-  }) : (0, r.jsx)(l.sNh, {
+  }) : (0, i.jsx)(l.sNh, {
     id: "pin-thread",
-    label: p.intl.string(p.t.EnaWho),
+    label: f.intl.string(f.t.EnaWho),
     action: function() {
       null != h ? a.Z.show({
-        title: p.intl.string(p.t.IMbjxs),
-        body: p.intl.string(p.t["mi5+Vl"]),
+        title: f.intl.string(f.t.IMbjxs),
+        body: f.intl.string(f.t["mi5+Vl"]),
         onConfirm: async () => {
           await s.Z.unpin(h), s.Z.pin(e)
         }

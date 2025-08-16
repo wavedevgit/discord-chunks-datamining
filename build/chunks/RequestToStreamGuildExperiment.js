@@ -1,19 +1,19 @@
-/** Chunk was on 86357 **/
+/** Chunk was on 49802 **/
 /** chunk id: 763624, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => a
 });
 var r, i, Chunk818083 = require("./818083.js");
-let a = {
+let o = {
     enableRequestToStream: false,
     enableVCStatusIcons: false,
     enableOpenTIVForPing: false
   },
-  o = (0, Chunk818083.B)({
+  a = (0, Chunk818083.B)({
     kind: "guild",
     id: "2025-08_request_to_stream",
     label: "Request to Stream",
-    defaultConfig: a,
+    defaultConfig: o,
     treatments: [{
       id: 1,
       label: "Request to Stream Enabled",
@@ -34,7 +34,7 @@ let a = {
           })
         }
         return e
-      }({}, a), i = i = {
+      }({}, o), i = i = {
         enableRequestToStream: true,
         enableVCStatusIcons: true,
         enableOpenTIVForPing: true

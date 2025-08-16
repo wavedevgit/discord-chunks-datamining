@@ -1,9 +1,9 @@
-/** Chunk was on 86357 **/
-/** chunk id: 147754, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 64099 **/
+/** chunk id: 147754, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => r
+  Z: () => i
 });
-let r = (0, require("./818083.js").B)({
+let i = (0, require("./818083.js").B)({
   kind: "guild",
   id: "2021-11_hub_events",
   label: "Hub Events",
