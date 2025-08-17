@@ -25,134 +25,134 @@ function v(e) {
     transitionState: n,
     clientSettingType: v,
     gameId: j
-  } = e, [C, k] = r.useState("unreported"), [b, y] = r.useState(""), [N, S] = r.useState(false), [f, R] = r.useState(false), [z, w] = r.useState(false), [I, M] = r.useState(false), A = (0, i.e7)([u.Z, c.ZP], () => {
+  } = e, [C, y] = r.useState("unreported"), [k, b] = r.useState(""), [f, N] = r.useState(false), [S, R] = r.useState(false), [w, z] = r.useState(false), [I, P] = r.useState(false), A = (0, i.e7)([u.Z, c.ZP], () => {
     var e;
     let t = null != j ? j : null == (e = c.ZP.getCurrentGameForAnalytics()) ? true : e.id;
     return null == t ? null : u.Z.getDetectableGame(t)
-  }), B = (0, i.e7)([x.default], () => {
+  }), B = (0, i.e7)([h.default], () => {
     var e;
-    let t = null != (e = null === x.default || true === x.default ? true : x.default.getMostRecentOverlayRenderMethod()) ? e : true;
+    let t = null != (e = null === h.default || true === h.default ? true : h.default.getMostRecentOverlayRenderMethod()) ? e : true;
     return null != t ? _.gl[t] : true
   }), H = r.useMemo(() => {
     let e = {
-      not_working: g.t.CHXHFR,
-      not_useful: g.t.a95skZ,
-      dont_like_changes: g.t.vgqMGx,
-      game_crashes_occurred: g.t.IFZ0SU,
-      poor_performance: g.t.exRczs,
-      bad_experience: g.t.qOm5R0,
-      too_many_notifications: g.t.XuBFBA,
-      other: g.t["YP/Ttr"]
+      not_working: p.t.CHXHFR,
+      not_useful: p.t.a95skZ,
+      game_crashes_occurred: p.t.IFZ0SU,
+      poor_performance: p.t.exRczs,
+      too_many_notifications: p.t.XuBFBA,
+      multiple_monitors: p.t.p8Eky8,
+      in_the_way_of_game: p.t.YP7Pio,
+      other: p.t["YP/Ttr"]
     };
     return Object.keys(e).map(t => ({
-      name: g.intl.string(e[t]),
+      name: p.intl.string(e[t]),
       value: t
     }))
-  }, []), P = async () => {
-    if ("unreported" === C && 0 === b.length) {
-      w(true), await (0, s._v)(100), w(false), M(true);
+  }, []), M = async () => {
+    if ("unreported" === C && 0 === k.length) {
+      z(true), await (0, s._v)(100), z(false), P(true);
       return
     }
-    S(true), await m.default.track(h.rMx.OVERLAY_DISABLED_SURVEY, {
+    N(true), await m.default.track(x.rMx.OVERLAY_DISABLED_SURVEY, {
       reason: C,
-      comment: b,
+      comment: k,
       client_setting_type: v,
       application_id: null == A ? true : A.id,
       application_name: null == A ? true : A.name,
       most_recent_overlay_render_method: B
-    }), await (0, s._v)(1e3), S(false), R(true), await (0, s._v)(1500), t()
+    }), await (0, s._v)(1e3), N(false), R(true), await (0, s._v)(1500), t()
   };
   return (0, d.ZP)(() => {
-    m.default.track(h.rMx.OPEN_MODAL, {
+    m.default.track(x.rMx.OPEN_MODAL, {
       type: "overlay_disabled_questionnaire_modal"
     })
   }), (0, a.jsxs)(l.Y0X, {
     transitionState: n,
-    "aria-label": g.intl.string(g.t.bomhnZ),
+    "aria-label": p.intl.string(p.t.bomhnZ),
     size: l.CgR.DYNAMIC,
-    className: p.root,
+    className: g.root,
     parentComponent: "OverlayDisabledSurveyModal",
     children: [(0, a.jsxs)(l.xBx, {
       children: [(0, a.jsxs)("div", {
-        className: p.header,
+        className: g.header,
         children: [(0, a.jsx)(l.X6q, {
           variant: "heading-lg/semibold",
           color: "header-primary",
-          children: g.intl.string(g.t["9JKzxc"])
+          children: p.intl.string(p.t["9JKzxc"])
         }), (0, a.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          className: p.description,
-          children: g.intl.string(g.t["2yjnmZ"])
+          className: g.description,
+          children: p.intl.string(p.t["2yjnmZ"])
         })]
       }), (0, a.jsx)(l.olH, {
         onClick: t,
-        className: p.closeButton
+        className: g.closeButton
       })]
     }), (0, a.jsx)(l.hzk, {
-      className: p.reasonContainer,
+      className: g.reasonContainer,
       children: (0, a.jsxs)(l.Ttm, {
         children: [(0, a.jsxs)("div", {
           children: [(0, a.jsx)(l.UkV, {
-            isShaking: z,
+            isShaking: w,
             intensity: 1,
-            className: p.radioHeader,
+            className: g.radioHeader,
             children: (0, a.jsx)(l.Text, {
               variant: "text-sm/semibold",
               color: I ? "text-danger" : "text-muted",
-              children: g.intl.string(g.t.yhUvdX)
+              children: p.intl.string(p.t.yhUvdX)
             })
           }), (0, a.jsx)(l.FXm, {
             value: C,
-            radioItemClassName: p.radioItem,
-            className: p.radioGroup,
+            radioItemClassName: g.radioItem,
+            className: g.radioGroup,
             radioPosition: "right",
             options: H,
             onChange: e => {
               let {
                 value: t
               } = e;
-              k(t), M(false), w(false)
+              y(t), P(false), z(false)
             }
           })]
         }), (0, a.jsxs)("div", {
-          className: p.commentContainer,
+          className: g.commentContainer,
           children: [(0, a.jsx)(l.Text, {
             variant: "text-sm/semibold",
             color: "text-muted",
-            className: p.commentHeader,
-            children: g.intl.string(g.t.LYnrhY)
+            className: g.commentHeader,
+            children: p.intl.string(p.t.LYnrhY)
           }), (0, a.jsx)(o.iS, {
             autosize: true,
-            value: b,
+            value: k,
             maxLength: 1e3,
             showRemainingCharacterCount: false,
-            placeholder: g.intl.string(g.t["gU+bVF"]),
-            onChange: y
+            placeholder: p.intl.string(p.t["gU+bVF"]),
+            onChange: b
           })]
         })]
       })
     }), (0, a.jsxs)(l.mzw, {
-      className: p.buttons,
+      className: g.buttons,
       children: [(0, a.jsx)(l.zxk, {
         variant: "secondary",
-        text: g.intl.string(g.t["5WxrcX"]),
-        disabled: N,
+        text: p.intl.string(p.t["5WxrcX"]),
+        disabled: f,
         onClick: () => {
           t()
         }
       }), (0, a.jsx)(l.UkV, {
-        isShaking: z,
+        isShaking: w,
         intensity: 1,
         children: (0, a.jsx)(o.zx, {
-          disabled: N,
-          submitting: N,
-          onClick: P,
+          disabled: f,
+          submitting: f,
+          onClick: M,
           color: (() => {
             switch (true) {
-              case f:
+              case S:
                 return o.zx.Colors.GREEN;
-              case z:
+              case w:
                 return o.zx.Colors.PRIMARY;
               default:
                 return o.zx.Colors.BRAND
@@ -160,14 +160,14 @@ function v(e) {
           })(),
           children: (() => {
             switch (true) {
-              case f:
+              case S:
                 return (0, a.jsx)(l.kmB, {});
-              case N:
+              case f:
                 return (0, a.jsx)(l.$jN, {
                   type: l.RAz.PULSING_ELLIPSIS
                 });
               default:
-                return g.intl.string(g.t.geKm7u)
+                return p.intl.string(p.t.geKm7u)
             }
           })()
         })
