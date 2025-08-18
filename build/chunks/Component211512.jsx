@@ -19,20 +19,20 @@ function a(e) {
     useVariant: c,
     useDisabled: d,
     onClick: f
-  } = t, g = a(), m = null == u ? true : u(), v = n(), b = null == c ? true : c(), x = null == d ? true : d();
+  } = t, g = a(), v = null == u ? true : u(), b = n(), m = null == c ? true : c(), p = null == d ? true : d();
   return (0, i.jsx)(l.x, {
     title: g,
-    className: r.settingButtonContainer,
+    className: s.settingButtonContainer,
     children: (0, i.jsxs)("div", {
-      className: r.settingButtonContent,
-      children: [null != m && (0, i.jsx)(s.R, {
-        type: s.g.DESCRIPTION,
-        children: m
+      className: s.settingButtonContent,
+      children: [null != v && (0, i.jsx)(r.R, {
+        type: r.g.DESCRIPTION,
+        children: v
       }), (0, i.jsx)(o.zxk, {
         onClick: f,
-        text: v,
-        variant: b,
-        disabled: x
+        text: b,
+        variant: m,
+        disabled: p
       })]
     })
   })

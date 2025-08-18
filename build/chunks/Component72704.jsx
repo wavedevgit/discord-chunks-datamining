@@ -13,23 +13,23 @@ function o(e) {
   } = e, {
     useValue: n,
     setValue: o,
-    useTitle: r,
+    useTitle: s,
     useSubtitle: a,
     useOptions: u,
     renderOptionLabel: c
-  } = t, d = r(), f = null == a ? true : a(), g = n(), m = u();
+  } = t, d = s(), f = null == a ? true : a(), g = n(), v = u();
   return (0, i.jsx)(l.xJW, {
     title: d,
-    className: s.selectContainer,
+    className: r.selectContainer,
     children: (0, i.jsxs)("div", {
-      className: s.selectContent,
+      className: r.selectContent,
       children: [null != f && (0, i.jsx)(l.R94, {
         type: l.geA.DESCRIPTION,
         children: f
       }), (0, i.jsx)(l.q4e, {
         value: g,
         onChange: e => o(e),
-        options: m,
+        options: v,
         renderOptionLabel: null != c ? c : true,
         renderOptionValue: null != c ? e => {
           let [t] = e;

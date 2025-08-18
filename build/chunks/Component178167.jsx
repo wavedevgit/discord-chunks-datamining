@@ -1,27 +1,26 @@
 /** Chunk was on 36878 **/
 /** chunk id: 178167, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => d
+  d: () => c
 });
 var Chunk951288 = require("./951288.js"),
   Chunk873546 = require("./873546.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk950796 = require("./950796.jsx"),
-  Chunk59662 = require("./59662.js"),
   Chunk990757 = require("./990757.js");
 
-function c(e) {
+function u(e) {
   let {
     icon: t,
     onClick: n,
     disabled: l
   } = e;
-  return (0, i.jsx)(s.zx, {
-    look: s.zx.Looks.BLANK,
-    size: s.zx.Sizes.NONE,
-    className: u.topBarButton,
-    innerClassName: u.iconButtonInner,
+  return (0, i.jsx)(r.zx, {
+    look: r.zx.Looks.BLANK,
+    size: r.zx.Sizes.NONE,
+    className: a.topBarButton,
+    innerClassName: a.iconButtonInner,
     onClick: n,
     disabled: l,
     children: (0, i.jsx)(t, {
@@ -30,31 +29,24 @@ function c(e) {
   })
 }
 
-function d(e) {
+function c(e) {
   let {
     onClose: t
-  } = e, {
-    history: n,
-    activeIndex: s,
-    forward: d,
-    back: f
-  } = (0, a.t)();
+  } = e;
   return (0, i.jsx)("div", {
-    className: u.topBar,
-    children: (0, i.jsx)(r.TF, {
+    className: a.topBar,
+    children: (0, i.jsx)(s.TF, {
       leading: (0, i.jsxs)("div", {
-        className: u.arrowButtons,
-        children: [(0, i.jsx)(c, {
+        className: a.arrowButtons,
+        children: [(0, i.jsx)(u, {
           icon: o.whL,
-          disabled: 0 === s,
-          onClick: f
-        }), (0, i.jsx)(c, {
+          disabled: true
+        }), (0, i.jsx)(u, {
           icon: o.ZSh,
-          disabled: s === n.length - 1,
-          onClick: d
+          disabled: true
         })]
       }),
-      trailing: l.tq && (0, i.jsx)(c, {
+      trailing: l.tq && (0, i.jsx)(u, {
         icon: o.Dio,
         onClick: t
       })

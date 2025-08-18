@@ -17,18 +17,17 @@ function f(e) {
   let {
     node: t
   } = e, {
-    history: n,
-    activeIndex: s,
-    pushPanel: o
-  } = (0, u.t)(), r = t.useTitle(), a = l.useMemo(() => t.layout.flatMap(e => e.layout), [t]), d = n[s] === t;
+    currentPanel: n,
+    setCurrentPanel: r
+  } = (0, u.t)(), o = t.useTitle(), s = l.useMemo(() => t.layout.flatMap(e => e.layout), [t]), a = (null == n ? true : n.key) === t.key;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(c.Z, {
       icon: t.icon,
-      title: r,
-      active: d,
-      onClick: () => o(t)
-    }), d && a.length > 1 && (0, i.jsx)(g, {
-      categories: a
+      title: o,
+      active: a,
+      onClick: () => r(t)
+    }), a && s.length > 1 && (0, i.jsx)(g, {
+      categories: s
     })]
   })
 }
@@ -36,7 +35,7 @@ function f(e) {
 function g(e) {
   let {
     categories: t
-  } = e, [n, s] = l.useState(0), [u, c] = (0, a.q_F)(() => ({
+  } = e, [n, r] = l.useState(0), [u, c] = (0, a.q_F)(() => ({
     y: 0,
     config: {
       mass: .1,
@@ -59,7 +58,7 @@ function g(e) {
     className: d.subnav,
     children: [(0, i.jsx)("div", {
       className: d.track,
-      children: (0, i.jsx)(r.animated.div, {
+      children: (0, i.jsx)(s.animated.div, {
         className: d.thumb,
         style: u
       })
@@ -67,11 +66,11 @@ function g(e) {
       children: f.map((e, t) => {
         let {
           title: l,
-          key: r
+          key: s
         } = e;
         return (0, i.jsx)(a.P3F, {
           onClick: () => {
-            s(t), c({
+            r(t), c({
               y: 40 * t
             })
           },
@@ -80,7 +79,7 @@ function g(e) {
             [d.active]: t === n
           }),
           children: l
-        }, r)
+        }, s)
       })
     })]
   })

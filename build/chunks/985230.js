@@ -10,13 +10,13 @@ let o = (0, Chunk509613.k4)("Voice", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.K3lovL),
     getLayout: () => []
   }),
-  r = (0, Chunk509613.k4)("Camera", {
+  s = (0, Chunk509613.k4)("Camera", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.FlNoSU),
     getLayout: () => []
   }),
   a = (0, Chunk509613.x1)("VoiceAndVideoPane", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.B1fFpa),
-    getLayout: () => [o, r]
+    getLayout: () => [o, s]
   }),
   u = (0, Chunk509613.wf)("VoiceAndVideo", {
     icon: Chunk657707.S6n,

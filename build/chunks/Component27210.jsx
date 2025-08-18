@@ -1,7 +1,7 @@
 /** Chunk was on 36878 **/
 /** chunk id: 27210, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => p
+  ZP: () => j
 }), require("./415506.js"), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,15 +14,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk292959 = require("./292959.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk881449 = require("./881449.js");
-let m = Chunk647438.createContext(true);
+let v = Chunk647438.createContext(true);
 
-function v(e) {
+function b(e) {
   let {
     sound: t
   } = e, {
     handlePreviewSound: n
   } = function() {
-    let e = l.useContext(m);
+    let e = l.useContext(v);
     if (null == e) throw Error("useSoundPlayback must be used within a SoundPlaybackProvider");
     return e
   }();
@@ -38,7 +38,7 @@ function v(e) {
     })
   })
 }
-let b = [{
+let m = [{
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk734934.p,
@@ -120,42 +120,42 @@ let b = [{
           className: g.soundRow,
           children: [(0, i.jsx)("span", {
             children: t
-          }), (0, i.jsx)(v, {
+          }), (0, i.jsx)(b, {
             sound: e.sound
           })]
         })
       },
       useValue: () => {
         var t;
-        let n = (0, s.e7)([d.Z], () => d.Z.isSoundDisabled(e.sound)),
+        let n = (0, r.e7)([d.Z], () => d.Z.isSoundDisabled(e.sound)),
           i = null == (t = e.useDisabled) ? true : t.call(e);
         return !n && !i
       },
       setValue: t => {
         let n = d.Z.getDisabledSounds().filter(t => t !== e.sound);
-        t || n.push(e.sound), r.default.setDisabledSounds(n)
+        t || n.push(e.sound), s.default.setDisabledSounds(n)
       },
       useDisabled: () => {
         var t;
         let n = null == (t = e.useDisabled) ? true : t.call(e),
-          i = (0, s.e7)([d.Z], () => d.Z.getDisableAllSounds());
+          i = (0, r.e7)([d.Z], () => d.Z.getDisableAllSounds());
         return n || i
       },
       useTooltip: e.useTooltip
     })
   })),
-  x = (0, Chunk509613.qs)("SelectedChannelNotifications", {
+  p = (0, Chunk509613.qs)("SelectedChannelNotifications", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.TzjwV1),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel()),
-    setValue: e => r.default.setNotifyMessagesInSelectedChannel(e)
+    setValue: e => s.default.setNotifyMessagesInSelectedChannel(e)
   }),
-  j = (0, Chunk509613.qs)("DisableAllNotificationSounds", {
+  x = (0, Chunk509613.qs)("DisableAllNotificationSounds", {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["2ZhCOT"]),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["+B0XLC"]),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
-    setValue: e => r.default.toggleDisableAllSounds(e)
+    setValue: e => s.default.toggleDisableAllSounds(e)
   }),
-  p = (0, Chunk509613.$l)("NotificationSoundsSettingList", {
+  j = (0, Chunk509613.$l)("NotificationSoundsSettingList", {
     collapseAfter: 4,
     useCollapsibleTitle: (e, t) => e ? f.intl.formatToPlainString(f.t["0JYT9/"], {
       count: t
@@ -165,7 +165,7 @@ let b = [{
     ContextProvider: function(e) {
       let {
         children: t
-      } = e, n = l.useRef(null), s = l.useCallback((e, t) => {
+      } = e, n = l.useRef(null), r = l.useCallback((e, t) => {
         t.stopPropagation(), t.preventDefault(), null != n.current && n.current.stop(), n.current = (0, c.GN)(e)
       }, []);
       l.useEffect(() => () => {
@@ -173,12 +173,12 @@ let b = [{
         null == (e = n.current) || e.stop()
       }, []);
       let o = l.useMemo(() => ({
-        handlePreviewSound: s
-      }), [s]);
-      return (0, i.jsx)(m.Provider, {
+        handlePreviewSound: r
+      }), [r]);
+      return (0, i.jsx)(v.Provider, {
         value: o,
         children: t
       })
     },
-    getLayout: () => [b[0].node, x, b[1].node, j, ...b.slice(2).map(e => e.node)]
+    getLayout: () => [m[0].node, p, m[1].node, x, ...m.slice(2).map(e => e.node)]
   })

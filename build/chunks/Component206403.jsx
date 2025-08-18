@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk845442 = require("./845442.js");
@@ -21,8 +21,8 @@ function u(e) {
     compact: f = false,
     onClick: g
   } = e;
-  return (0, i.jsxs)(r.P3F, {
-    className: s()(a.baseControlItem, {
+  return (0, i.jsxs)(s.P3F, {
+    className: r()(a.baseControlItem, {
       [a.compact]: f
     }),
     onClick: g,

@@ -1,41 +1,35 @@
 /** Chunk was on 36878 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => f
-}), require("./35282.js");
+  P: () => d
+});
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk481060 = require("./481060.js"),
   Chunk59662 = require("./59662.js"),
   Chunk829210 = require("./829210.jsx"),
-  Chunk388032 = require("./388032.jsx"),
   Chunk845435 = require("./845435.js");
 
-function f(e) {
+function d(e) {
   let {
     root: t,
     header: n,
     footer: l
   } = e, {
-    showNavigationMobile: f
+    showNavigationMobile: d
   } = (0, a.t)();
   return (0, i.jsxs)("div", {
-    className: s()(d.sidebar, {
-      [d.mobile]: o.tq,
-      [d.mobileNavigationOpen]: f
+    className: r()(c.sidebar, {
+      [c.mobile]: o.tq,
+      [c.mobileNavigationOpen]: d
     }),
-    children: [null != n && (0, i.jsx)(n, {}), (0, i.jsx)(r.E1j, {
-      placeholder: c.intl.string(c.t["5h0QOD"]),
-      query: "",
-      onChange: () => {},
-      className: d.search
-    }), (0, i.jsx)(r.zJl, {
-      className: d.navScroller,
+    children: [null != n && (0, i.jsx)(n, {}), (0, i.jsx)(s.zJl, {
+      className: c.navScroller,
       fade: true,
       children: (0, i.jsx)("nav", {
-        className: d.nav,
+        className: c.nav,
         children: (0, i.jsx)("ul", {
           children: t.layout.map(e => (0, i.jsx)("li", {
             children: (0, i.jsx)(u.Z, {
@@ -45,7 +39,7 @@ function f(e) {
         })
       })
     }), null != l && (0, i.jsx)("footer", {
-      className: d.footer,
+      className: c.footer,
       children: (0, i.jsx)(l, {})
     })]
   })

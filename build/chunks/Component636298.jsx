@@ -1,7 +1,7 @@
 /** Chunk was on 36878 **/
 /** chunk id: 636298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,7 +31,7 @@ function g(e) {
   })
 }
 
-function m(e) {
+function v(e) {
   let {
     title: t,
     onClose: n,
@@ -41,7 +41,7 @@ function m(e) {
     className: f.contentHeader,
     children: [(0, i.jsxs)("div", {
       className: f.contentHeaderLeft,
-      children: [r.tq && (0, i.jsx)(g, {
+      children: [s.tq && (0, i.jsx)(g, {
         icon: u.yFM,
         onClick: () => l(true)
       }), (0, i.jsx)(u.X6q, {
@@ -49,32 +49,32 @@ function m(e) {
         color: "header-secondary",
         children: t
       })]
-    }), !r.tq && (0, i.jsx)(g, {
+    }), !s.tq && (0, i.jsx)(g, {
       icon: u.Uz9,
       onClick: n
     })]
   })
 }
-let v = Chunk647438.memo(function(e) {
+let b = Chunk647438.memo(function(e) {
   let {
     onClose: t,
     setShowNavigationMobile: n,
     setting: l
-  } = e, s = l.useTitle(), {
+  } = e, r = null == l ? true : l.useTitle(), {
     showNavigationMobile: a
   } = (0, c.t)();
   return (0, i.jsxs)("div", {
     className: o()(f.content, {
-      [f.mobile]: r.tq,
+      [f.mobile]: s.tq,
       [f.mobileNavigationOpen]: a
     }),
-    children: [(0, i.jsx)(m, {
-      title: s,
+    children: [(0, i.jsx)(v, {
+      title: r,
       onClose: t,
       setShowNavigationMobile: n
     }), (0, i.jsx)(u.w0Z, {
       className: f.contentScroller,
-      children: (0, i.jsx)(d.Z, {
+      children: null != l && (0, i.jsx)(d.Z, {
         node: l
       })
     })]

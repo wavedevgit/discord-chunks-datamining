@@ -13,5 +13,5 @@ let a = (0, Chunk509613.qs)("VoiceActivityNotifications", {
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.rngMNz),
   useValue: Chunk695346.d8.useSetting,
   setValue: Chunk210176.I,
-  usePredicate: () => (0, Chunk462354.JN)("VoiceActivityNotifications")
+  usePredicate: () => (0, Chunk462354.Az)("VoiceActivityNotifications").enabled
 })

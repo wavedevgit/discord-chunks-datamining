@@ -13,15 +13,15 @@ function o(e) {
   } = e, {
     useValue: n,
     setValue: o,
-    useTitle: r,
+    useTitle: s,
     useSubtitle: a,
     useOptions: u
-  } = t, c = r(), d = null == a ? true : a(), f = n(), g = u();
+  } = t, c = s(), d = null == a ? true : a(), f = n(), g = u();
   return (0, i.jsx)(l.xJW, {
     title: c,
-    className: s.radioContainer,
+    className: r.radioContainer,
     children: (0, i.jsxs)("div", {
-      className: s.radioContent,
+      className: r.radioContent,
       children: [null != d && (0, i.jsx)(l.R94, {
         type: l.geA.DESCRIPTION,
         children: d
