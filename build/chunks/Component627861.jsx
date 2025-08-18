@@ -275,11 +275,11 @@ function ed(e) {
     partyStatusElement: N,
     presenceActivity: A
   } = e, Z = (0, C.A)(y), R = (0, p.ye)(y), {
-    bot: L
-  } = y, D = U.ZP.getApplicationIconURL({
+    bot: D
+  } = y, L = U.ZP.getApplicationIconURL({
     id: y.id,
     icon: y.icon,
-    bot: L
+    bot: D
   }), {
     staticBannerSrc: M,
     videoBannerSrc: k,
@@ -402,7 +402,7 @@ function ed(e) {
       videoBannerSrc: k,
       onClickBanner: eb,
       bannerAspectRatio: F,
-      iconSrc: null != D ? D : true,
+      iconSrc: null != L ? L : true,
       info: e,
       actions: eE,
       onClickContent: eb,
@@ -447,7 +447,7 @@ function ed(e) {
     videoBannerSrc: k,
     onClickBanner: eb,
     bannerAspectRatio: F,
-    iconSrc: null != D ? D : true,
+    iconSrc: null != L ? L : true,
     info: eI,
     actions: eE,
     onClickContent: eb,
@@ -469,15 +469,15 @@ function ep(e) {
     message: u,
     hideParty: d,
     onView: p
-  } = e, m = (0, _.O)(s), f = (0, o.e7)([P.default], () => P.default.getId()), g = (0, o.e7)([L.Z], () => {
-    if (null == u.application) return L.Z.findActivity(u.author.id, e => e.type === er.IIU.LISTENING);
+  } = e, m = (0, _.O)(s), f = (0, o.e7)([P.default], () => P.default.getId()), g = (0, o.e7)([D.Z], () => {
+    if (null == u.application) return D.Z.findActivity(u.author.id, e => e.type === er.IIU.LISTENING);
     {
       let e = u.author.id;
-      return (0, Y.H)(u) && (e = e === f && c.isPrivate() ? c.getRecipientId() : f), L.Z.getApplicationActivity(e, u.application.id)
+      return (0, Y.H)(u) && (e = e === f && c.isPrivate() ? c.getRecipientId() : f), D.Z.getApplicationActivity(e, u.application.id)
     }
-  }, [u, c, f]), h = (0, o.e7)([R.Z, D.Z], () => {
+  }, [u, c, f]), h = (0, o.e7)([R.Z, L.Z], () => {
     var e;
-    return null != (e = R.Z.getApplicationActivity(m.id)) ? e : D.Z.getApplicationActivity(m.id, true)
+    return null != (e = R.Z.getApplicationActivity(m.id)) ? e : L.Z.getApplicationActivity(m.id, true)
   }, [m.id]), b = (0, o.Wu)([A.Z], () => {
     var e;
     return null == g || null == g.party ? [] : Array.from(null != (e = A.Z.getParty(g.party.id)) ? e : [])

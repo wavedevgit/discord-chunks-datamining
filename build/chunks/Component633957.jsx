@@ -87,7 +87,7 @@ let F = Chunk647438.memo(function(e) {
     Q = null == q ? true : q.details,
     J = i.useMemo(() => {
       let e = new x.ZP(y);
-      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = D.wT), e
+      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = L.wT), e
     }, [y]),
     $ = (0, _.s5)({
       userId: V,
@@ -104,7 +104,7 @@ let F = Chunk647438.memo(function(e) {
     en = i.useId(),
     er = null != Y && Y.isLaunching && Y.componentId === en,
     ei = async () => {
-      P.default.track(L.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+      P.default.track(D.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: y.id,
         channel_id: A,
         channel_type: null == G ? true : G.type,
@@ -125,7 +125,7 @@ let F = Chunk647438.memo(function(e) {
         componentId: en
       })
     }, el = et.disabled ? M.intl.string(M.t.JBnc7O) : M.intl.string(M.t.cX9uLS), ea = (0, O.G)(J, () => {
-      P.default.track(L.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+      P.default.track(D.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: y.id,
         channel_id: A,
         channel_type: null == G ? true : G.type,

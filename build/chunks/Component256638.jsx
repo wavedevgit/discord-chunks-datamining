@@ -103,11 +103,11 @@ let ex = e => {
       error: n,
       location: i,
       allowClick: l = false
-    } = e, a = null == (t = (0, L.hp)(n)) ? true : t.errorCode, o = ev.intl.formatToPlainString(ev.t["ejOT9/"], {
+    } = e, a = null == (t = (0, D.hp)(n)) ? true : t.errorCode, o = ev.intl.formatToPlainString(ev.t["ejOT9/"], {
       errorCode: a
     }), {
       avErrorUIEnabled: s
-    } = (0, D.JN)({
+    } = (0, L.JN)({
       location: i
     });
     if (!s) return null;
@@ -183,9 +183,9 @@ let eP = 12633 == require.j ? Chunk647438.memo(function() {
     _ = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     j = (0, Chunk442837.e7)([Chunk933429.ZP], () => Chunk933429.ZP.getNotice()),
     {
-      analyticsLocations: L
+      analyticsLocations: D
     } = (0, Chunk906732.ZP)(),
-    D = null == Chunk100527 ? true : Chunk100527.type,
+    L = null == Chunk100527 ? true : Chunk100527.type,
     eg = (0, Chunk281956.J)(Chunk254854);
   Chunk647438.useEffect(() => {
     null != Chunk386146 && function(e, t) {
@@ -247,12 +247,12 @@ let eP = 12633 == require.j ? Chunk647438.memo(function() {
       });
     case Chunk981631.kVF.WIN32_DEPRECATED_MESSAGE:
       let {
-        dismissUntil: eL
+        dismissUntil: eD
       } = Chunk100527.metadata;
       return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.WARNING,
         children: [(0, Chunk951288.jsx)(Chunk481060.RyX, {
-          onClick: () => eT(eL),
+          onClick: () => eT(eD),
           noticeType: Chunk981631.kVF.WIN32_DEPRECATED_MESSAGE
         }), Chunk388032.intl.format(Chunk388032.t["08KQ1N"], {
           helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.WIN32_DEPRECATE)
@@ -260,12 +260,12 @@ let eP = 12633 == require.j ? Chunk647438.memo(function() {
       });
     case Chunk981631.kVF.WIN7_8_DEPRECATED_MESSAGE:
       let {
-        dismissUntil: eD
+        dismissUntil: eL
       } = Chunk100527.metadata;
       return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.WARNING,
         children: [(0, Chunk951288.jsx)(Chunk481060.RyX, {
-          onClick: () => eT(eD),
+          onClick: () => eT(eL),
           noticeType: Chunk981631.kVF.WIN7_8_DEPRECATED_MESSAGE
         }), Chunk388032.intl.format(Chunk388032.t["8Je+dX"], {
           helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.WIN7_8_DEPRECATE)

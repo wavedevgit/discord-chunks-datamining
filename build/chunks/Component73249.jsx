@@ -162,9 +162,9 @@ function A(e) {
       }), "IMAGE" === t.type) {
       i(true);
       try {
-        await h.ZP.saveImage(d, t.contentType, m.wV), (0, c.showToast)((0, c.createToast)(C.intl.string(C.t.cqpdJS), c.ToastType.SUCCESS))
+        await h.ZP.saveImage(d, t.contentType, m.wV), (0, S.rm)(d, true), (0, c.showToast)((0, c.createToast)(C.intl.string(C.t.cqpdJS), c.ToastType.SUCCESS))
       } catch (e) {
-        (0, c.showToast)((0, c.createToast)(C.intl.string(C.t["8Ve/S0"]), c.ToastType.FAILURE))
+        (0, S.rm)(d, false), (0, c.showToast)((0, c.createToast)(C.intl.string(C.t["8Ve/S0"]), c.ToastType.FAILURE))
       } finally {
         i(false)
       }
@@ -186,7 +186,7 @@ function L(e) {
   let n = (0, m.s$)((0, m.lT)(t.original, t.url), t.contentType, t.originalContentType);
   return (0, a.jsx)(w, {
     onClick: () => {
-      (0, S.yg)(S.uG.OPEN_LINK_PRESSED), (0, O.q)({
+      (0, S.yg)(S.uG.OPEN_LINK_PRESSED), (0, S.jc)(n), (0, O.q)({
         href: n
       })
     },
@@ -236,9 +236,9 @@ function N(e) {
     let e = (0, m.s$)((0, m.lT)(r.original, r.url), r.contentType, r.originalContentType, m.wV);
     try {
       var t;
-      await h.ZP.copyImage(e, null != (t = r.originalContentType) ? t : r.contentType), (0, c.showToast)((0, c.createToast)(C.intl.string(C.t.bhUpvL), c.ToastType.SUCCESS))
-    } catch (e) {
-      (0, c.showToast)((0, c.createToast)(C.intl.string(C.t.PTPbj4), c.ToastType.FAILURE))
+      await h.ZP.copyImage(e, null != (t = r.originalContentType) ? t : r.contentType), (0, S.gR)(e, true), (0, c.showToast)((0, c.createToast)(C.intl.string(C.t.bhUpvL), c.ToastType.SUCCESS))
+    } catch (t) {
+      (0, S.gR)(e, false), (0, c.showToast)((0, c.createToast)(C.intl.string(C.t.PTPbj4), c.ToastType.FAILURE))
     }
   }
   return (0, a.jsxs)(c.v2r, {
@@ -259,7 +259,11 @@ function N(e) {
         action: function() {
           (0, S.yg)(S.uG.COPY_LINK_PRESSED);
           let e = (0, m.s$)((0, m.lT)(r.original, r.url), r.contentType, r.originalContentType);
-          (0, f.JG)(e, () => (0, c.showToast)((0, c.createToast)(C.intl.string(C.t["L/PwZW"]), c.ToastType.SUCCESS)))
+          (0, f.JG)(e, () => {
+            (0, S.mL)(e, true), (0, c.showToast)((0, c.createToast)(C.intl.string(C.t["L/PwZW"]), c.ToastType.SUCCESS))
+          }, () => {
+            (0, S.mL)(e, false), (0, c.showToast)((0, c.createToast)(C.intl.string(C.t.uVV00N), c.ToastType.FAILURE))
+          })
         }
       }, "media-viewer-copy-link")]
     }), y, p]

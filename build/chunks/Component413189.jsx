@@ -41,8 +41,8 @@ function x(e) {
     R = f.qM.useExperiment({
       location: "ChatWallpaperSetSystemMessage"
     }).lightMode,
-    L = (0, c.ZP)(P),
-    D = (0, o.wjy)((0, s.ZP)()),
+    D = (0, c.ZP)(P),
+    L = (0, o.wjy)((0, s.ZP)()),
     {
       chatWallpaper: M,
       isUpdatingChatWallpaperFlag: k,
@@ -63,9 +63,9 @@ function x(e) {
   }, [M]), null == w) ? null : (I = H ? O.intl.format(O.t.z847Tk, {
     wallpaper_name: null != (n = null == M ? true : M.label) ? n : O.intl.string(O.t["UQMV/P"])
   }) : O.intl.format(O.t["+lKndX"], {
-    username: null == L ? true : L.nick,
+    username: null == D ? true : D.nick,
     wallpaper_name: null != (x = null == M ? true : M.label) ? x : O.intl.string(O.t["UQMV/P"])
-  }), Z ? D || R ? z && B ? S = O.intl.formatToPlainString(O.t.PzTpVV, {
+  }), Z ? L || R ? z && B ? S = O.intl.formatToPlainString(O.t.PzTpVV, {
     wallpaperName: null != (j = null == M ? true : M.label) ? j : O.intl.string(O.t["UQMV/P"])
   }) : H || V || !B || (S = O.intl.format(O.t.JwUhHh, {
     onClickNitro: () => {

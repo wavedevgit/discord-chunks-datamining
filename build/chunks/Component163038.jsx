@@ -58,7 +58,7 @@ function F(e) {
       channelId: r.id,
       baseChannelId: l,
       guildId: r.guild_id
-    }), (0, x.Kh)(l), L.default.track(M.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+    }), (0, x.Kh)(l), D.default.track(M.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
       moderator_report_id: t.channel_id,
       destination_channel_id: l,
       destination_message_id: t.id
@@ -117,7 +117,7 @@ function B(e) {
     }
   }(t, l);
   return (0, r.jsx)(g.Z, {
-    childrenExecutedCommand: (0, r.jsx)(D.Z, {
+    childrenExecutedCommand: (0, r.jsx)(L.Z, {
       reportingUserId: a,
       guildId: l.guild_id,
       channel: l,

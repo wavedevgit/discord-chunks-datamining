@@ -98,9 +98,9 @@ function R(e) {
         })
       }
     })) : null != Y && e.push(Y), e
-  }, [z, V, U, F, k, t.id, G, a, R, M, v, Y, C]), X = v ? (0, r.jsx)(D, {
+  }, [z, V, U, F, k, t.id, G, a, R, M, v, Y, C]), X = v ? (0, r.jsx)(L, {
     app: t
-  }) : (0, r.jsx)(L, {
+  }) : (0, r.jsx)(D, {
     app: t
   });
   return (0, r.jsx)(I.W, {
@@ -124,7 +124,7 @@ function R(e) {
   })
 }
 
-function L(e) {
+function D(e) {
   var t, n, a;
   let {
     app: c
@@ -163,7 +163,7 @@ function L(e) {
   })
 }
 
-function D(e) {
+function L(e) {
   let {
     app: t
   } = e, {

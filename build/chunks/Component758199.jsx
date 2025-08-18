@@ -84,12 +84,12 @@ function j(e) {
     embedUrl: w,
     infoUrl: Z,
     actions: R = [],
-    trackingConfig: L,
-    onClickContent: D,
+    trackingConfig: D,
+    onClickContent: L,
     onClickBanner: M
   } = e;
-  L = {
-    id: null != (n = null == (t = L) ? true : t.id) ? n : "0",
+  D = {
+    id: null != (n = null == (t = D) ? true : t.id) ? n : "0",
     linkType: null != (r = null == t ? true : t.linkType) ? r : h.Un.UNKNOWN,
     referrerId: null != (a = null == t ? true : t.referrerId) ? a : _.default.getId(),
     activityCustomId: null == t ? true : t.activityCustomId,
@@ -102,7 +102,7 @@ function j(e) {
   } = (0, m.Z)(null != A ? A : T), F = "linear-gradient(45deg, ".concat(k, ", ").concat(U, ")"), B = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), G = l.useRef(false), H = (0, d.O)(e => {
     if (false === G.current && e) {
       var t;
-      null == L || null == (t = L.onView) || t.call(L), (0, h.GF)(L.id, L.linkType, L.referrerId, L.activityCustomId), G.current = true
+      null == D || null == (t = D.onView) || t.call(D), (0, h.GF)(D.id, D.linkType, D.referrerId, D.activityCustomId), G.current = true
     }
   }, true), V = g.wS && null != w ? (0, i.jsx)(c.zx, {
     look: c.zx.Looks.BLANK,
@@ -110,7 +110,7 @@ function j(e) {
     "aria-label": E.intl.string(E.t.WqhZsr),
     className: C.linkIcon,
     onClick: () => {
-      (0, g.JG)(w, () => (0, u.showToast)((0, u.createToast)(E.intl.string(E.t["L/PwZW"]), u.ToastType.SUCCESS))), (0, h.Yu)(L.id, L.linkType)
+      (0, g.JG)(w, () => (0, u.showToast)((0, u.createToast)(E.intl.string(E.t["L/PwZW"]), u.ToastType.SUCCESS))), (0, h.Yu)(D.id, D.linkType)
     },
     children: (0, i.jsx)(u.xPt, {
       size: "xs",
@@ -128,14 +128,14 @@ function j(e) {
     let e = q.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), J = l.useMemo(() => !!Y && new URL(P).pathname.endsWith(".gif"), [Y, P]), $ = l.useMemo(() => {
-    if (null != D) return e => {
-      D(e), (0, h.KX)(L.id, L.linkType, h.j_.CONTENT, L.referrerId, L.activityCustomId)
+    if (null != L) return e => {
+      L(e), (0, h.KX)(D.id, D.linkType, h.j_.CONTENT, D.referrerId, D.activityCustomId)
     }
-  }, [D, L]), ee = l.useMemo(() => {
+  }, [L, D]), ee = l.useMemo(() => {
     if (null != M) return e => {
-      M(e), (0, h.KX)(L.id, L.linkType, h.j_.BANNER, L.referrerId, L.activityCustomId)
+      M(e), (0, h.KX)(D.id, D.linkType, h.j_.BANNER, D.referrerId, D.activityCustomId)
     }
-  }, [M, L]);
+  }, [M, D]);
   return (0, i.jsxs)("div", {
     ref: H,
     className: C.embed,
@@ -223,7 +223,7 @@ function j(e) {
               submitting: o,
               children: m,
               onClick(e) {
-                l(e), (0, h.KX)(L.id, L.linkType, s, L.referrerId, L.activityCustomId)
+                l(e), (0, h.KX)(D.id, D.linkType, s, D.referrerId, D.activityCustomId)
               }
             };
             return d ? (0, i.jsx)(u.ua7, {

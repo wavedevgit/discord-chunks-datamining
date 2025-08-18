@@ -81,8 +81,8 @@ let T = Chunk647438.memo(function(e) {
       analyticsLocations: R
     } = (0, u.ZP)(),
     {
-      onCopy: L,
-      copyRef: D
+      onCopy: D,
+      copyRef: L
     } = (0, d.Z)(A, null == Z || null == (t = Z.application_command) ? true : t.id),
     M = (0, o.e7)([h.Z], () => h.Z.getGuild(A.guild_id), [A.guild_id]);
   if (i.useEffect(() => {
@@ -124,7 +124,7 @@ let T = Chunk647438.memo(function(e) {
         }));
         return t
       }
-      let L = O.value;
+      let D = O.value;
       if (null != O.value) switch (O.type) {
         case c.jw.USER: {
           let e = O.value.toString(),
@@ -187,10 +187,10 @@ let T = Chunk647438.memo(function(e) {
           break;
         default: {
           let e = null == w || null == (u = w.choices) ? true : u.find(e => e.value === O.value);
-          null != e && (L = null != (d = e.name_localized) ? d : e.name)
+          null != e && (D = null != (d = e.name_localized) ? d : e.name)
         }
       }
-      return null == h && (h = S(null == L ? true : L.toString())), [(0, r.jsxs)(i.Fragment, {
+      return null == h && (h = S(null == D ? true : D.toString())), [(0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsxs)(s.Text, x(y({}, j), {
           children: [" ", null != (p = null == w ? true : w.name_localized) ? p : O.name, ": "]
         })), h]
@@ -215,11 +215,11 @@ let T = Chunk647438.memo(function(e) {
     onCopy: e => {
       var t, n, r;
       let i = null != (r = null == (n = window) || null == (t = n.getSelection()) ? true : t.toString()) ? r : "";
-      i.startsWith("/") && i.endsWith("\n") && L(e, Z)
+      i.startsWith("/") && i.endsWith("\n") && D(e, Z)
     },
     children: [(0, r.jsx)("div", {
       className: O.tooltip,
-      ref: D,
+      ref: L,
       children: N
     }), (0, r.jsx)("div", {
       className: O.tooltipPointer

@@ -99,7 +99,7 @@ function T(e) {
   } = (0, C.s)(), P = (null != (n = null == d || null == (t = d.description) ? true : t.trim().length) ? n : 0) > 0, [N, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
     selectedTab: Z,
     isPhantomPreview: R
-  } = (0, v.m)(), L = Z === O.y.GUILD_PRODUCTS_PREVIEW ? x.intl.string(x.t["LvXy/P"]) : x.intl.string(x.t.XyqKh4), D = P ? (0, r.jsxs)(r.Fragment, {
+  } = (0, v.m)(), D = Z === O.y.GUILD_PRODUCTS_PREVIEW ? x.intl.string(x.t["LvXy/P"]) : x.intl.string(x.t.XyqKh4), L = P ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(T, {
       lineClamp: w || 2 === N ? 2 : 3,
       children: (0, r.jsx)(s.Text, {
@@ -119,7 +119,7 @@ function T(e) {
   }) : (0, r.jsx)(s.Text, {
     variant: "text-sm/normal",
     color: "text-default",
-    children: R ? L : x.intl.string(x.t["NY/FIS"])
+    children: R ? D : x.intl.string(x.t["NY/FIS"])
   });
   return (0, r.jsxs)("div", {
     className: j.container,
@@ -165,7 +165,7 @@ function T(e) {
           })
         }), (0, r.jsx)(s.LZC, {
           size: 9
-        }), D]
+        }), L]
       })]
     }), (0, r.jsx)(S, {
       coverImageAsset: null == d ? true : d.cover_image_asset,

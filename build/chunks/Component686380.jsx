@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk754761 = require("./754761.js"),
   Chunk295234 = require("./295234.js");
 
-function L(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,7 +44,7 @@ function L(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class D extends Chunk647438.Component {
+class L extends Chunk647438.Component {
   getTitleText() {
     let e = Chunk594174.default.getUser(this.trialOffer.user_id),
       t = null != module ? module.username : "???",
@@ -146,7 +146,7 @@ class D extends Chunk647438.Component {
               "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), r.forEach(function(t) {
-                L(e, t, n[t])
+                D(e, t, n[t])
               })
             }
             return e
@@ -223,7 +223,7 @@ class D extends Chunk647438.Component {
     }
   }
   constructor(e) {
-    super(e), L(this, "trialOffer", true), L(this, "currentUser", true), L(this, "recipientHasNitro", true), L(this, "trialEndsAt", true), L(this, "analyticsLocations", true), L(this, "offerExpired", true), L(this, "isSender", true), L(this, "dmRefreshXPCohort", true), this.trialOffer = e.trialOffer, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.dmRefreshXPCohort = e.dmRefreshXPCohort, this.offerExpired = (0, T.B)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
+    super(e), D(this, "trialOffer", true), D(this, "currentUser", true), D(this, "recipientHasNitro", true), D(this, "trialEndsAt", true), D(this, "analyticsLocations", true), D(this, "offerExpired", true), D(this, "isSender", true), D(this, "dmRefreshXPCohort", true), this.trialOffer = e.trialOffer, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.dmRefreshXPCohort = e.dmRefreshXPCohort, this.offerExpired = (0, T.B)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
   }
 }
 
@@ -247,7 +247,7 @@ function M(e) {
   });
   return l ? (0, r.jsx)(m.OR, {
     isHorizontal: !c.tq
-  }) : n && null != i && true !== a ? (0, r.jsx)(D, {
+  }) : n && null != i && true !== a ? (0, r.jsx)(L, {
     trialOffer: i,
     currentUser: a,
     recipientHasNitro: o,

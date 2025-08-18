@@ -5,7 +5,7 @@ require.d(exports, {
   $w: () => M,
   Og: () => U,
   ZY: () => k,
-  sc: () => L,
+  sc: () => D,
   zs: () => F
 }), require("./314940.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
@@ -277,7 +277,7 @@ function R(e) {
   })
 }
 
-function L(e) {
+function D(e) {
   let {
     className: t,
     emoji: n
@@ -290,7 +290,7 @@ function L(e) {
   })
 }
 
-function D(e, t) {
+function L(e, t) {
   return null != e ? (0, r.jsx)("div", {
     className: e,
     children: t
@@ -312,12 +312,12 @@ function M(e) {
       var n;
       return e.id === (null == (n = t.attachmentIds) ? true : n[0])
     });
-    if (null != e) return D(n, (0, r.jsx)(R, {
+    if (null != e) return L(n, (0, r.jsx)(R, {
       className: i,
       attachment: e
     }))
   }
-  return null != t.emoji ? D(n, (0, r.jsx)(L, {
+  return null != t.emoji ? L(n, (0, r.jsx)(D, {
     className: l,
     emoji: t.emoji
   })) : true !== a ? a : null

@@ -143,7 +143,7 @@ let T = ["TOP_LEFT", "TOP_RIGHT"],
   Z = ["#61D5B2"],
   Chunk303893 = require("./303893.js"),
   Chunk313226 = require("./313226.js"),
-  D = [Chunk303893, Chunk313226];
+  L = [Chunk303893, Chunk313226];
 
 function M() {
   return require.e("77843").then(require.t.bind(require, 931152, 19)).then(e => {
@@ -275,13 +275,13 @@ function k(e) {
           }
         }
       }, {
-        sprite: "TOP_LEFT" === _ ? R : L
+        sprite: "TOP_LEFT" === _ ? R : D
       })
     }
   }, [O, C, _, d]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.Ji, {
       ref: E,
-      sprites: D,
+      sprites: L,
       colors: Z,
       spriteWidth: 45,
       spriteHeight: 45
@@ -372,15 +372,15 @@ function U(e) {
     R = l.useCallback(() => {
       I(false)
     }, []),
-    L = l.useCallback(() => {
+    D = l.useCallback(() => {
       (0, g.AI)({
         settingsVisible: true
       }), m.Z.open(v.oAB.POGGERMODE), I(false)
     }, []),
-    D = l.useCallback((e, t) => {
-      (null == t ? true : t.id.startsWith(w)) && L()
-    }, [L]);
-  l.useEffect(() => x(D));
+    L = l.useCallback((e, t) => {
+      (null == t ? true : t.id.startsWith(w)) && D()
+    }, [D]);
+  l.useEffect(() => x(L));
   let M = (0, i.jsx)(p.P3F, {
     className: y.iconWrapper,
     innerRef: S,
@@ -404,7 +404,7 @@ function U(e) {
         className: y.cannonWrapper,
         children: (0, i.jsx)(k, {
           onAnimationComplete: R,
-          onClick: L
+          onClick: D
         })
       })
     }) : null]

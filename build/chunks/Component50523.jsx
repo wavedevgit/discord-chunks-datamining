@@ -42,8 +42,8 @@ function v(e) {
     if (null == A) return;
     let e = h.ZP.getEmbeddedActivitiesForChannel(A).filter(e => e.applicationId === v.id);
     return e.length > 0 ? e[0].compositeInstanceId : true
-  }), R = (0, i.e7)([h.ZP], () => h.ZP.getCurrentEmbeddedActivity()), L = (0, b.Z)(), D = w === E.jy.CAN_LAUNCH, M = null != O ? O : y.customId, k = [];
-  D && k.push({
+  }), R = (0, i.e7)([h.ZP], () => h.ZP.getCurrentEmbeddedActivity()), D = (0, b.Z)(), L = w === E.jy.CAN_LAUNCH, M = null != O ? O : y.customId, k = [];
+  L && k.push({
     label: null == Z ? C.intl.string(C.t.RscU7O) : C.intl.string(C.t.VJlc0d),
     trackingArea: p.j_.PLAY,
     onClick() {
@@ -51,14 +51,14 @@ function v(e) {
         channelId: null != A ? A : true,
         applicationId: v.id,
         isStart: null == Z,
-        embeddedActivitiesManager: L,
+        embeddedActivitiesManager: D,
         customId: M,
         referrerId: j,
         analyticsLocations: N
       })
     },
     disabledReason: null != Z && (null == R ? true : R.compositeInstanceId) === Z ? C.intl.string(C.t.wJNK8P) : true
-  }), P && !D && k.push({
+  }), P && !L && k.push({
     label: C.intl.string(C.t.JeK1Wl),
     trackingArea: p.j_.PLAY,
     onClick() {

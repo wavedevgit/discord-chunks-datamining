@@ -36,9 +36,9 @@ function v(e) {
     {
       channel: Z,
       approximate_member_count: R,
-      approximate_presence_count: L
+      approximate_presence_count: D
     } = P,
-    D = P.state === b.r2o.ACCEPTING,
+    L = P.state === b.r2o.ACCEPTING,
     M = null != Z ? (0, m.jD)(Z) : null,
     k = null != T,
     U = null != M,
@@ -118,9 +118,9 @@ function v(e) {
         isBannerVisible: false
       })
     })]
-  })) : null != R && R >= 5 || null != L && L > 0 ? y = (0, r.jsx)(p.Z.Data, {
+  })) : null != R && R >= 5 || null != D && D > 0 ? y = (0, r.jsx)(p.Z.Data, {
     members: R,
-    membersOnline: L
+    membersOnline: D
   }) : U && (y = (0, r.jsx)(p.Z.Channel, {
     channel: M,
     guild: T
@@ -142,7 +142,7 @@ function v(e) {
         })]
       }), (0, r.jsx)(p.Z.Button, {
         onClick: Q,
-        submitting: D,
+        submitting: L,
         color: p.Z.Button.Colors.GREEN,
         children: F ? B ? E.intl.string(E.t["7vb2cX"]) : E.intl.string(E.t.gpqgam) : k ? E.intl.string(E.t.cEnaW1) : E.intl.string(E.t.XpeFYm)
       })]

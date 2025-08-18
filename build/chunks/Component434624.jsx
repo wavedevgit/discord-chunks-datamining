@@ -42,15 +42,15 @@ let g = Chunk647438.memo(function(e) {
       Z = (0, u.y)(w, m.aO),
       R = {};
     if (T && null != N) {
-      var L;
+      var D;
       let {
         accentColor: e,
         backgroundColor: r,
         opacity: i
-      } = N, l = null != (L = (0, o.wK)(null != r ? r : "", i)) ? L : "";
+      } = N, l = null != (D = (0, o.wK)(null != r ? r : "", i)) ? D : "";
       P && (R.borderColor = r), R.background = l, t = e, n = e
     }
-    let D = {
+    let L = {
       minWidth: Z,
       color: t,
       borderColor: n
@@ -71,7 +71,7 @@ let g = Chunk647438.memo(function(e) {
         animated: T && c.animated
       }), (0, r.jsx)("div", {
         className: A.reactionCount,
-        style: D,
+        style: L,
         children: w
       })]
     })

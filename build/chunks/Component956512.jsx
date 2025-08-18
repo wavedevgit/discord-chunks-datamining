@@ -52,15 +52,15 @@ function y(e) {
       return null != x.application && (null != n ? n : null == (t = _.Z.getGameByName(r)) ? true : t.id) === x.application.id
     }) : null),
     R = (0, i.e7)([f.Z], () => f.Z.getCurrentUserActiveStream()),
-    L = (0, i.e7)([g.Z], () => g.Z.getChannelId()),
-    D = E.default.extractTimestamp(x.id) + C.e < Date.now(),
+    D = (0, i.e7)([g.Z], () => g.Z.getChannelId()),
+    L = E.default.extractTimestamp(x.id) + C.e < Date.now(),
     M = (0, r.jsx)(r.Fragment, {
       children: (0, a._0)(x, j, I, y, false)
     }),
     {
       newestAnalyticsLocation: k
     } = (0, s.ZP)(S, o.Z.REQUEST_TO_STREAM_INVITE_EMBED);
-  return D ? t = O.intl.string(v.default.u4QmWl) : null != R ? t = O.intl.string(v.default.P0wwmJ) : L !== I.id ? t = O.intl.string(v.default.qRXatr) : null == Z && (t = O.intl.string(v.default["43zohI"])), (0, r.jsx)(c.W, {
+  return L ? t = O.intl.string(v.default.u4QmWl) : null != R ? t = O.intl.string(v.default.P0wwmJ) : D !== I.id ? t = O.intl.string(v.default.qRXatr) : null == Z && (t = O.intl.string(v.default["43zohI"])), (0, r.jsx)(c.W, {
     header: O.intl.string(v.default.DKHheX),
     title: j.name,
     staticBannerSrc: P,

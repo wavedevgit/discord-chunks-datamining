@@ -100,7 +100,7 @@ function Z(e) {
       })
     })
   };
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(D, {
     appName: u.name,
     title: P.intl.formatToPlainString(P.t.XDRjs7, {
       appName: u.name
@@ -163,7 +163,7 @@ function R(e) {
     return null == (e = g.Z.getBasicChannel(u.channel_id)) ? true : e.guild_id
   }, [u]), O = i.useMemo(() => null != E ? (0, y.y)(E, 45) : true, [E]), Z = (0, j.R)(null != (l = null == E ? true : E.id) ? l : ""), {
     openModal: R,
-    subscriptionPurchaseButtonState: D
+    subscriptionPurchaseButtonState: L
   } = (0, _.Z)({
     skuId: c,
     initialSubscribeForGuild: C
@@ -231,7 +231,7 @@ function R(e) {
       area: "purchase_button"
     })
   };
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(D, {
     appName: E.name,
     title: m.name,
     description: B,
@@ -267,7 +267,7 @@ function R(e) {
         icon: s.EOn,
         onHasClicked: G,
         subscriptionPlan: h,
-        state: D
+        state: L
       }) : (0, r.jsx)(s.zxk, {
         variant: "primary",
         text: P.intl.string(P.t.uuzaAA),
@@ -282,7 +282,7 @@ function R(e) {
   })
 }
 
-function L(e) {
+function D(e) {
   let {
     appName: t,
     title: n,

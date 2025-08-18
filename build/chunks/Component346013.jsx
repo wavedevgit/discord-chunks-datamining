@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk823708 = require("./823708.js"),
   Chunk527455 = require("./527455.js");
 
-function L(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function L(e) {
   return e
 }
 
-function D(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -181,7 +181,7 @@ function M(e) {
           children: e => (0, r.jsx)("div", {
             onMouseEnter: em,
             onMouseLeave: em,
-            children: (0, r.jsx)(u.qEK, D(L({}, e), {
+            children: (0, r.jsx)(u.qEK, L(D({}, e), {
               ref: G,
               size: u.EFr.SIZE_40,
               src: ep,
@@ -226,7 +226,7 @@ function M(e) {
                 roleId: er,
                 avatarUrl: H.avatarUrl,
                 newAnalyticsLocations: [d.Z.USERNAME],
-                children: e => (0, r.jsx)(u.rz2, D(L({}, e), {
+                children: e => (0, r.jsx)(u.rz2, L(D({}, e), {
                   ref: B,
                   name: H.authorName,
                   colorString: et,

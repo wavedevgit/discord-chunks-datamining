@@ -2,7 +2,7 @@
 /** chunk id: 674701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => R,
-  Z: () => L
+  Z: () => D
 });
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,15 +36,15 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk553517 = require("./553517.js"),
   R = ((r = {}).SYSTEM_MESSAGE = "system_message", r.COACHMARK = "coachmark", r);
 
-function L(e) {
+function D(e) {
   let {
     giftIntentType: t,
     premiumGiftIntentCardType: n,
     recipientUser: r,
     onMouseEnter: a,
     onMouseLeave: R,
-    popoutPosition: L,
-    analyticsPage: D,
+    popoutPosition: D,
+    analyticsPage: L,
     analyticsSection: M,
     glow: k,
     giftIntentSecondaryAction: U
@@ -167,7 +167,7 @@ function L(e) {
               analyticsLocation: "system_message" === n ? i.chat : i.actionButtonCoachmark,
               analyticsLocations: B,
               analyticsObject: {
-                page: D,
+                page: L,
                 section: M,
                 object: P.qAy.BUTTON_CTA,
                 objectType: P.Qqv.GIFT
@@ -193,10 +193,10 @@ function L(e) {
             })]
           })
         })]
-      }), null != L && (0, i.jsx)("div", {
+      }), null != D && (0, i.jsx)("div", {
         className: o()(Z.connector, {
-          [Z.leftPopoutConnector]: "left" === L,
-          [Z.rightPopoutConnector]: "right" === L
+          [Z.leftPopoutConnector]: "left" === D,
+          [Z.rightPopoutConnector]: "right" === D
         })
       })]
     })

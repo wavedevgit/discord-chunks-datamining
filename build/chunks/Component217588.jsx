@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk564651 = require("./564651.js"),
   Chunk975900 = require("./975900.js");
 
-function L(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function L(e) {
   return e
 }
 
-function D(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -136,7 +136,7 @@ let U = e => {
       let {
         channel: e
       } = g.current;
-      y.default.track(N.rMx.OPEN_POPOUT, L({
+      y.default.track(N.rMx.OPEN_POPOUT, D({
         type: N.jXE.STICKER_POPOUT,
         guild_id: e.getGuildId(),
         sticker_pack_id: n.pack_id
@@ -199,7 +199,7 @@ let U = e => {
       }), [l.guild_id]),
       {
         current: K
-      } = i.useRef(L({
+      } = i.useRef(D({
         guild_id: l.getGuildId()
       }, (0, p.v_)(l))),
       X = {
@@ -233,7 +233,7 @@ let U = e => {
       } = q.current;
       e()
     }, [S, j]), (0, d.ZP)(() => {
-      y.default.track(N.rMx.OPEN_POPOUT, L({
+      y.default.track(N.rMx.OPEN_POPOUT, D({
         type: ee
       }, K))
     }), S) ? (0, r.jsxs)(b.W_, {
@@ -314,7 +314,7 @@ let U = e => {
               align: m.Z.Align.START,
               justify: m.Z.Justify.START,
               className: R.otherEmojisContainer,
-              children: t.map(e => (0, r.jsx)(c.ua7, D(L({
+              children: t.map(e => (0, r.jsx)(c.ua7, L(D({
                 text: e.name
               }, b.b_), {
                 children: t => {
@@ -336,7 +336,7 @@ let U = e => {
                     }
                     return i
                   }(t, ["onMouseEnter", "onMouseLeave"]);
-                  return (0, r.jsx)("div", D(L({
+                  return (0, r.jsx)("div", L(D({
                     className: a()(R.otherEmoji, {
                       [Z.nonInteractingSticker]: null != z && z !== e.id
                     }),

@@ -34,11 +34,11 @@ async function C(e, t) {
       showAuthorizationError: false
     })) return [false, "no permission"];
   let {
-    preset: L,
-    resolution: D,
+    preset: D,
+    resolution: L,
     fps: M,
     soundshareEnabled: k
-  } = s.Z.getState(), U = null != (v = null == t ? true : t.preset) ? v : L, [F, B] = null != (O = (0, g.Z)(U, P, Z)) ? O : [], G = null != (y = null != F ? F : null == t ? true : t.resolution) ? y : D, H = null != (x = null != B ? B : null == t ? true : t.fps) ? x : M, V = null != (j = null == t ? true : t.previewDisabled) ? j : o.I0.getSetting(), z = null != (I = null == t ? true : t.soundshareEnabled) ? I : k;
+  } = s.Z.getState(), U = null != (v = null == t ? true : t.preset) ? v : D, [F, B] = null != (O = (0, g.Z)(U, P, Z)) ? O : [], G = null != (y = null != F ? F : null == t ? true : t.resolution) ? y : L, H = null != (x = null != B ? B : null == t ? true : t.fps) ? x : M, V = null != (j = null == t ? true : t.previewDisabled) ? j : o.I0.getSetting(), z = null != (I = null == t ? true : t.soundshareEnabled) ? I : k;
   return (0, _.Z)(U, G, H, P, Z, A) || (U = b.tI.PRESET_VIDEO, G = b.LY.RESOLUTION_720, H = b.ws.FPS_30), (0, i.Rc)({
     preset: U,
     resolution: G,

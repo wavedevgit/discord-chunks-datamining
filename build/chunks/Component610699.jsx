@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk969016 = require("./969016.js");
 
-function L(e) {
+function D(e) {
   let {
     members: t,
     membersOnline: n,
@@ -72,7 +72,7 @@ function L(e) {
   })
 }
 
-function D(e) {
+function L(e) {
   let {
     channel: t,
     guild: n,
@@ -153,12 +153,12 @@ function M(e) {
         return b.id === t
       })
     }),
-    L = y.Z.getChannel(null == (n = a.channel) ? true : n.id),
-    D = (0, c.e7)([j.Z], () => null != L && j.Z.can(A.Plq.USE_EMBEDDED_ACTIVITIES, L), [L]),
+    D = y.Z.getChannel(null == (n = a.channel) ? true : n.id),
+    L = (0, c.e7)([j.Z], () => null != D && j.Z.can(A.Plq.USE_EMBEDDED_ACTIVITIES, D), [D]),
     {
       analyticsLocations: M
     } = (0, f.ZP)(m.Z.INVITE_EMBED),
-    U = (0, c.Wu)([p.ZP], () => null != L ? p.ZP.getEmbeddedActivitiesForChannel(L.id).filter(e => e.applicationId === b.id).flatMap(e => Array.from(e.userIds)) : [], [L, b.id]),
+    U = (0, c.Wu)([p.ZP], () => null != D ? p.ZP.getEmbeddedActivitiesForChannel(D.id).filter(e => e.applicationId === b.id).flatMap(e => Array.from(e.userIds)) : [], [D, b.id]),
     F = (0, c.Wu)([I.default], () => U.map(e => I.default.getUser(e)).filter(e => null != e), [U]),
     B = i.useCallback(() => {
       (0, d.r$)({
@@ -178,14 +178,14 @@ function M(e) {
     if (null == a.guild) return (0, r.jsx)(N.Z, {});
     v = (0, P.Qs)(a.guild)
   }
-  let V = H && !D || H && T;
-  return (H && T && (l = Z.intl.string(Z.t.wJNK8P)), D || (l = Z.intl.string(Z.t.hHGrW1)), null == a.code || "" === a.code || null == O) ? null : (0, r.jsx)(f.Gt, {
+  let V = H && !L || H && T;
+  return (H && T && (l = Z.intl.string(Z.t.wJNK8P)), L || (l = Z.intl.string(Z.t.hHGrW1)), null == a.code || "" === a.code || null == O) ? null : (0, r.jsx)(f.Gt, {
     value: M,
     children: (0, r.jsx)(k, {
       app: O,
       activityUsers: F,
       isMember: H,
-      channel: L,
+      channel: D,
       guild: v,
       members: _,
       membersOnline: g,
@@ -254,7 +254,7 @@ function k(e) {
     onClickBanner: I,
     info: (0, r.jsxs)("div", {
       className: R.infoWrapper,
-      children: [(0, r.jsx)(D, {
+      children: [(0, r.jsx)(L, {
         channel: s,
         guild: c,
         hasEnded: !p,
@@ -263,7 +263,7 @@ function k(e) {
         activityUsers: a,
         guildId: c.id,
         activityText: Z.intl.string(Z.t.BMTj29)
-      }) : (0, r.jsx)(L, {
+      }) : (0, r.jsx)(D, {
         members: u,
         membersOnline: d,
         textColor: "none"

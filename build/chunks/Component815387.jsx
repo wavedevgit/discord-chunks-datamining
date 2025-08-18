@@ -1,7 +1,7 @@
 /** Chunk was on 91173 **/
 /** chunk id: 815387, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eL
+  Z: () => eD
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -337,7 +337,7 @@ let eR = Object.freeze({
           message: t,
           compact: n,
           usernameHook: o
-        }), (0, r.jsx)(D.f, {
+        }), (0, r.jsx)(L.f, {
           channel: i,
           message: t
         })]
@@ -431,7 +431,7 @@ let eR = Object.freeze({
         if (null != r) {
           await R.Z.loadThread(r);
           let t = U.Z.getChannel(r);
-          null != t && (0, L.ok)(t, e.shiftKey)
+          null != t && (0, D.ok)(t, e.shiftKey)
         }
       }, [t]), d = i.useCallback(() => {
         (0, a.ZDy)(async () => {
@@ -783,7 +783,7 @@ let eR = Object.freeze({
     [Chunk981631.uaV.REPORT_TO_MOD_DELETED_MESSAGE]: Chunk917318.Z,
     [Chunk981631.uaV.REPORT_TO_MOD_CLOSED_REPORT]: Chunk917318.Z
   }),
-  eL = Chunk647438.memo(function(e) {
+  eD = Chunk647438.memo(function(e) {
     let {
       message: t,
       channel: n,

@@ -4,6 +4,10 @@
 require.d(exports, {
   VO: () => h,
   fS: () => p,
+  gR: () => b,
+  jc: () => O,
+  mL: () => y,
+  rm: () => E,
   uG: () => d,
   yg: () => m
 }), require("./467055.js");
@@ -88,4 +92,37 @@ function m(e) {
       })
     }))
   })
+}
+
+function g() {
+  return {
+    channel_id: _.getState().channelId
+  }
+}
+
+function E(e, t) {
+  a.default.track(o.rMx.MEDIA_VIEWER_IMAGE_SAVED, l({
+    url: e,
+    success: t
+  }, g()))
+}
+
+function b(e, t) {
+  a.default.track(o.rMx.MEDIA_VIEWER_IMAGE_COPIED, l({
+    url: e,
+    success: t
+  }, g()))
+}
+
+function y(e, t) {
+  a.default.track(o.rMx.MEDIA_VIEWER_LINK_COPIED, l({
+    href: e,
+    success: t
+  }, g()))
+}
+
+function O(e) {
+  a.default.track(o.rMx.MEDIA_VIEWER_LINK_OPENED, l({
+    href: e
+  }, g()))
 }

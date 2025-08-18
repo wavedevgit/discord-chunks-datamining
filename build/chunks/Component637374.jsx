@@ -330,13 +330,13 @@ class z extends Chunk647438.Component {
       let {
         libraryApplication: t
       } = this.props;
-      e.preventDefault(), null != t && t.isHidden() ? (0, O.uL)(D.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, O.uL)(D.Z5c.APPLICATION_LIBRARY, {
+      e.preventDefault(), null != t && t.isHidden() ? (0, O.uL)(L.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, O.uL)(L.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : true
         }
       })
     }), F(this, "handleVerificationClick", e => {
-      e.stopPropagation(), e.preventDefault(), p.Z.open(D.oAB.ACCOUNT)
+      e.stopPropagation(), e.preventDefault(), p.Z.open(L.oAB.ACCOUNT)
     }), F(this, "handleAccept", e => {
       let {
         channelId: t,
@@ -345,13 +345,13 @@ class z extends Chunk647438.Component {
         type: i,
         giftInfo: l
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), N.default.track(D.rMx.OPEN_MODAL, {
+      e.preventDefault(), e.stopPropagation(), N.default.track(L.rMx.OPEN_MODAL, {
         type: "gift_accept",
         location: G(B({}, this.analyticsLocation), {
-          object: D.qAy.BUTTON_CTA
+          object: L.qAy.BUTTON_CTA
         })
       });
-      let a = i !== D.uaV.CUSTOM_GIFT ? true : r;
+      let a = i !== L.uaV.CUSTOM_GIFT ? true : r;
       (0, C.V)({
         processedCode: n,
         channelContext: t,
@@ -362,12 +362,12 @@ class z extends Chunk647438.Component {
       let {
         giftCode: t
       } = this.props;
-      null != t && t.isSubscription && (e.preventDefault(), p.Z.open(D.oAB.PREMIUM))
+      null != t && t.isSubscription && (e.preventDefault(), p.Z.open(L.oAB.PREMIUM))
     }), F(this, "handleClaimPromotion", e => {
       var t;
       e.stopPropagation(), e.preventDefault();
       let n = null == (t = this.props.giftCode) ? true : t.code;
-      null != n && window.open(D.Z5c.BILLING_PROMOTION_REDEMPTION(n))
+      null != n && window.open(L.Z5c.BILLING_PROMOTION_REDEMPTION(n))
     }), F(this, "renderCustomGiftBox", e => {
       let {
         width: t

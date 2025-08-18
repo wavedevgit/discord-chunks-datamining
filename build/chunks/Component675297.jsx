@@ -40,9 +40,9 @@ function C(e) {
     return s.Z.getRole(n, null != (e = null == t ? true : t.role_id) ? e : E.lds)
   }), A = (0, l.U)(t, 600), w = (0, _.C)(t), Z = (0, d.SO)(P), {
     shouldHideGuildPurchaseEntryPoints: R
-  } = (0, o.uP)(n), L = (0, _.k)(t);
+  } = (0, o.uP)(n), D = (0, _.k)(t);
   if (null == P || R) return null;
-  let D = () => (0, h.e)({
+  let L = () => (0, h.e)({
       guildId: n,
       guildProductListingId: t.id,
       analyticsLocation: C
@@ -75,7 +75,7 @@ function C(e) {
     imageUrl: A,
     name: t.name,
     description: t.description,
-    formattedPrice: L,
+    formattedPrice: D,
     role: N,
     ctaComponent: (0, r.jsx)(b.Z, {
       guildId: n,
@@ -84,8 +84,8 @@ function C(e) {
     }),
     productType: w,
     shouldShowFullDescriptionButton: v,
-    onShowFullDescription: D,
-    onTapCard: D,
+    onShowFullDescription: L,
+    onTapCard: L,
     actionMenu: M,
     showOpaqueBackground: T,
     hideRoleTag: O,
