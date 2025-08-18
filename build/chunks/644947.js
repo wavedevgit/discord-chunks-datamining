@@ -50,7 +50,7 @@ function d() {
 }
 
 function u(e) {
-  (0, a.j)(() => {
+  (0, o.j)(() => {
     c.setState(t => null == e ? t : e in t.captchaServeVolume ? {
       captchaServeVolume: l(i({}, t.captchaServeVolume), {
         [e]: t.captchaServeVolume[e] + 1

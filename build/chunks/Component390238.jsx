@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk238651 = require("./238651.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -32,49 +32,50 @@ function A(e) {
     transitionState: t,
     onClose: o,
     quest: C,
-    location: h,
-    reward: g,
+    location: m,
+    reward: f,
     sourceQuestContent: j
-  } = e, v = r.useRef(null), [p, N] = r.useState(null), A = r.useRef(new i.qA), y = (0, d.e7)([c.Z], () => c.Z.useReducedMotion), S = (null == (n = C.userStatus) ? true : n.claimedAt) != null, [k, q] = r.useState(S ? "claimed" : "loading");
+  } = e, p = r.useRef(null), [_, N] = r.useState(null), A = r.useRef(new s.qA), y = (0, d.e7)([c.Z], () => c.Z.useReducedMotion), S = (null == (n = C.userStatus) ? true : n.claimedAt) != null, [k, q] = r.useState(S ? "claimed" : "loading");
   r.useEffect(() => {
     if (!S) {
       let e = x.r.build(C.config),
-        n = e.rewardPlatforms.length > 0 ? e.rewardPlatforms[0] : f.y$.CROSS_PLATFORM;
-      (0, m.QB)(C.id, n, h).then(() => q("claimed")).catch(() => q("error"))
+        n = e.rewardPlatforms.length > 0 ? e.rewardPlatforms[0] : g.y$.CROSS_PLATFORM;
+      (0, h.QB)(C.id, n, m).then(() => q("claimed")).catch(() => q("error"))
     }
-  }, [C, h, S]);
+  }, [C, m, S]);
   let I = "loading" === k;
   return (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)(i.O_, {
+    children: [(0, a.jsx)(s.O_, {
       ref: N,
       className: R.confettiCanvas,
       environment: A.current
     }), (0, a.jsx)("div", {
-      ref: v,
+      ref: p,
       children: (0, a.jsx)(l.Y0X, {
+        "data-migration-pending": true,
         transitionState: t,
         size: l.CgR.DYNAMIC,
-        className: s()(R.rootContainer, {
+        className: i()(R.rootContainer, {
           [R.rootContainerLoading]: I
         }),
         hideShadow: true,
         parentComponent: "QuestsRewardInGameModal",
         children: I ? (0, a.jsx)(l.$jN, {
           type: l.$jN.Type.SPINNING_CIRCLE
-        }) : "error" === k ? (0, a.jsx)(_.Z, {
+        }) : "error" === k ? (0, a.jsx)(v.Z, {
           onClose: o
         }) : (0, a.jsx)(M, {
           quest: C,
-          rewardName: g.messages.name,
-          location: h,
+          rewardName: f.messages.name,
+          location: m,
           useReducedMotion: y,
           onClose: o,
           sourceQuestContent: j
         })
       })
     }), !y && !S && "claimed" === k && (0, a.jsx)(u.Z, {
-      confettiTarget: v.current,
-      confettiCanvas: p,
+      confettiTarget: p.current,
+      confettiCanvas: _,
       sprites: w.CA,
       colors: w.Br
     })]
@@ -86,10 +87,10 @@ function M(e) {
     quest: n,
     rewardName: t,
     location: o,
-    useReducedMotion: s,
-    onClose: i,
+    useReducedMotion: i,
+    onClose: s,
     sourceQuestContent: d
-  } = e, c = r.useMemo(() => (0, g.fh)(n, g.eC.HERO), [n]), u = c.isAnimated && !s;
+  } = e, c = r.useMemo(() => (0, f.fh)(n, f.eC.HERO), [n]), u = c.isAnimated && !i;
   return (0, a.jsxs)("div", {
     className: R.claimedRootContainer,
     children: [(0, a.jsxs)("div", {
@@ -107,22 +108,24 @@ function M(e) {
         className: R.headerForeground,
         children: [(0, a.jsx)("div", {
           className: R.previewContainer,
-          children: (0, a.jsx)(v.Z, {
+          children: (0, a.jsx)(p.Z, {
             autoplay: true,
             className: R.rewardTile,
             learnMoreStyle: null,
             quest: n,
             questContent: o,
-            location: p.dr.INGAME_REWARD_MODAL,
+            location: _.dr.INGAME_REWARD_MODAL,
             sourceQuestContent: d
           })
         }), (0, a.jsx)(l.olH, {
+          "data-migration-pending": true,
           className: R.close,
           withCircleBackground: true,
-          onClick: i
+          onClick: s
         })]
       })]
     }), (0, a.jsx)(l.mzw, {
+      "data-migration-pending": true,
       className: R.footerContainer,
       separator: false,
       children: (0, a.jsxs)("div", {
@@ -150,21 +153,21 @@ function y(e) {
     quest: n,
     location: t,
     onClose: o,
-    transitionState: s,
-    sourceQuestContent: i
-  } = e, d = r.useMemo(() => (0, h.K)(n.config), [n]);
+    transitionState: i,
+    sourceQuestContent: s
+  } = e, d = r.useMemo(() => (0, m.K)(n.config), [n]);
   return null == d ? null : (0, a.jsx)(j.A, {
     questOrQuests: n,
-    questContent: f.jn.REWARD_MODAL,
-    sourceQuestContent: i,
+    questContent: g.jn.REWARD_MODAL,
+    sourceQuestContent: s,
     overrideVisibility: true,
     children: () => (0, a.jsx)(A, {
       onClose: o,
-      transitionState: s,
+      transitionState: i,
       quest: n,
       location: t,
       reward: d,
-      sourceQuestContent: i
+      sourceQuestContent: s
     })
   })
 }

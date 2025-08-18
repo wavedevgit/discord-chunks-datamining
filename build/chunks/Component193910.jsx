@@ -147,13 +147,12 @@ function A(e) {
       guildId: t.guild_id
     })
   }
-
-  function V() {
+  async function V() {
     let e = w,
       n = "txt",
       r = "",
       i = w.match(T);
-    null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, v.d)([(0, x.dp)(new Blob([e], {
+    null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), await (0, v.d)([(0, x.dp)(new Blob([e], {
       type: "text/plain"
     }), "message.".concat(n), "text/plain")], t, A), C.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && C.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
       plainText: r

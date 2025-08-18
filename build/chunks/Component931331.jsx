@@ -10,8 +10,8 @@ var Chunk325767 = require("./325767.js");
 function o(e) {
   var t, r, {
       width: o = 106,
-      height: s = 43,
-      color: i = "currentColor",
+      height: i = 43,
+      color: s = "currentColor",
       foreground: C
     } = e,
     l = function(e, t) {
@@ -48,10 +48,10 @@ function o(e) {
     return e
   }({}, (0, a.Z)(l)), r = r = {
     width: o,
-    height: s,
+    height: i,
     viewBox: "0 0 106 43",
     children: (0, n.jsxs)("g", {
-      fill: i,
+      fill: s,
       className: C,
       fillRule: "evenodd",
       "aria-hidden": true,

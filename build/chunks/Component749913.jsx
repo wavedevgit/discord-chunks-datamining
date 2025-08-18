@@ -407,9 +407,9 @@ let eo = Chunk647438.memo(function(e) {
         null == t || t.focus(), j.getState().setTitleFocused(true), j.getState().setFormOpen(true), j.getState().setHasClickedForm(true)
       }
     });
-    let w = i.useCallback(e => {
+    let w = i.useCallback(async e => {
         let n = e.clipboardData.files[0];
-        null != n && n.type.startsWith("image/") && (e.preventDefault(), (0, H.d)([n], t, Z.d.FirstThreadMessage, {
+        null != n && n.type.startsWith("image/") && (e.preventDefault(), await (0, H.d)([n], t, Z.d.FirstThreadMessage, {
           origin: "clipboard"
         }), j.getState().setFormOpenFromUserAction())
       }, [t, j]),

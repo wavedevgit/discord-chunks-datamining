@@ -90,6 +90,7 @@ function S(e) {
   return (0, c.ZP)(() => {
     null != p && d.default.track(h.rMx.QUEST_SURVEY_DISPLAYED, C(p, n))
   }), null == p && o(), (0, r.jsx)(l.Y0X, {
+    "data-migration-pending": true,
     transitionState: a,
     size: l.CgR.DYNAMIC,
     className: g.modalRoot,
@@ -101,10 +102,12 @@ function S(e) {
       children: [(0, r.jsxs)(l.Mi4, {
         id: 0,
         children: [(0, r.jsxs)(l.xBx, {
+          "data-migration-pending": true,
           direction: u.Z.Direction.VERTICAL,
           separator: false,
           className: g.modalHeader,
           children: [(0, r.jsx)(l.olH, {
+            "data-migration-pending": true,
             className: g.closeBtn,
             onClick: o
           }), (0, r.jsx)("img", {
@@ -120,6 +123,7 @@ function S(e) {
             children: n.subtitle
           })]
         }), (0, r.jsx)(l.hzk, {
+          "data-migration-pending": true,
           className: g.modalContent,
           children: n.choices.map(e => (0, r.jsx)(A, {
             choice: e,
@@ -129,6 +133,7 @@ function S(e) {
       }), (0, r.jsxs)(l.Mi4, {
         id: 1,
         children: [(0, r.jsxs)(l.hzk, {
+          "data-migration-pending": true,
           className: g.completedModalContent,
           children: [(0, r.jsx)("img", {
             src: E,
@@ -143,6 +148,7 @@ function S(e) {
             children: m.intl.string(m.t.AvbrEB)
           })]
         }), (0, r.jsx)(l.mzw, {
+          "data-migration-pending": true,
           children: (0, r.jsxs)("div", {
             className: g.closeButtonContainer,
             children: [(0, r.jsx)(l.zxk, {

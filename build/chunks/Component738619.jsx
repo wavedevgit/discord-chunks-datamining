@@ -121,13 +121,13 @@ function D(t) {
     isInTextChannel: g
   } = t, {
     rateLimitPerUser: m
-  } = a, O = r.useRef(null), b = r.useRef(null), [S, y] = r.useState(false);
+  } = a, O = r.useRef(null), b = r.useRef(null), [y, S] = r.useState(false);
   if (r.useLayoutEffect(() => {
       if (null != O.current && null != b.current && g) {
         let t = () => {
           if (null != O.current && null != b.current) {
             let t = O.current.getBoundingClientRect();
-            b.current.scrollWidth + 48 > t.width ? y(true) : y(false)
+            b.current.scrollWidth + 48 > t.width ? S(true) : S(false)
           }
         };
         t();
@@ -142,18 +142,18 @@ function D(t) {
     activity: e,
     isFocused: i
   }) : null;
-  let [E, I, Z] = s, w = "";
-  1 === s.length ? w = j.intl.format(j.t.lJ9sZW, {
+  let [E, T, w] = s, I = "";
+  1 === s.length ? I = j.intl.format(j.t.lJ9sZW, {
     a: E
-  }) : 2 === s.length ? w = j.intl.format(j.t.rB0CUV, {
+  }) : 2 === s.length ? I = j.intl.format(j.t.rB0CUV, {
     a: E,
-    b: I
-  }) : 3 === s.length ? w = j.intl.format(j.t.StKTho, {
+    b: T
+  }) : 3 === s.length ? I = j.intl.format(j.t.StKTho, {
     a: E,
-    b: I,
-    c: Z
-  }) : s.length > 3 && (w = j.intl.format(j.t.Q8lUnJ, {}));
-  let P = S && s.length > 0 && s.length <= 3 ? j.intl.format(j.t["qD/0qa"], {}) : w;
+    b: T,
+    c: w
+  }) : s.length > 3 && (I = j.intl.format(j.t.Q8lUnJ, {}));
+  let Z = y && s.length > 0 && s.length <= 3 ? j.intl.format(j.t["qD/0qa"], {}) : I;
   return (0, n.jsxs)("div", {
     className: o()(x.typing, {
       "stop-animation": !i,
@@ -171,7 +171,7 @@ function D(t) {
         className: x.text,
         "aria-live": "polite",
         "aria-atomic": true,
-        children: P
+        children: Z
       }), (0, n.jsx)("span", {
         className: x.text,
         style: {
@@ -180,7 +180,7 @@ function D(t) {
         },
         "aria-hidden": true,
         ref: b,
-        children: w
+        children: I
       })]
     }), (0, n.jsx)(f.Z, {
       channel: a,
@@ -193,13 +193,13 @@ function D(t) {
 
 function M(t) {
   let e = (0, d.e7)([E.Z], () => E.Z.getTypingUsers(t.id)),
-    i = (0, d.e7)([I.default], () => I.default.getCurrentUser());
-  return a()(e).keys().filter(t => t !== (null == i ? true : i.id)).reject(t => S.Z.isBlockedOrIgnored(t)).map(t => I.default.getUser(t)).filter(P.lm).map(e => T.ZP.getName(t.guild_id, t.id, e)).value()
+    i = (0, d.e7)([T.default], () => T.default.getCurrentUser());
+  return a()(e).keys().filter(t => t !== (null == i ? true : i.id)).reject(t => y.Z.isBlockedOrIgnored(t)).map(t => T.default.getUser(t)).filter(Z.lm).map(e => P.ZP.getName(t.guild_id, t.id, e)).value()
 }
 
 function U(t) {
-  let e = (0, d.e7)([y.Z], () => y.Z.findActivity(t => null != t.application_id));
-  return (0, d.e7)([O.Z, g.Z, S.Z], () => (0, p.Z)(t, e, O.Z, g.Z, S.Z)) ? e : null
+  let e = (0, d.e7)([S.Z], () => S.Z.findActivity(t => null != t.application_id));
+  return (0, d.e7)([O.Z, g.Z, y.Z], () => (0, p.Z)(t, e, O.Z, g.Z, y.Z)) ? e : null
 }
 
 function R(t) {
@@ -229,7 +229,7 @@ function R(t) {
       activeTextColor: (0, c.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),
       activityInviteEducationActivity: U(r),
       typingUsers: s ? [] : a,
-      isFocused: (0, d.e7)([Z.Z], () => Z.Z.isFocused()),
+      isFocused: (0, d.e7)([w.Z], () => w.Z.isFocused()),
       guildId: r.guild_id,
       isComboing: null != l,
       channel: r,

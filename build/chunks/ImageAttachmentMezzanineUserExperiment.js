@@ -11,19 +11,29 @@ let a = (0, Chunk818083.B)({
   id: "2025-07_image_attachment_mezzanine",
   label: "Convert attachment images to WebP format for size optimization",
   defaultConfig: {
-    enabled: false
+    enabled: false,
+    compressOversizedClipboard: false
   },
   treatments: [{
     id: 1,
     label: "Control - No WebP conversion",
     config: {
-      enabled: false
+      enabled: false,
+      compressOversizedClipboard: false
     }
   }, {
     id: 2,
     label: "WebP conversion enabled",
     config: {
-      enabled: true
+      enabled: true,
+      compressOversizedClipboard: false
+    }
+  }, {
+    id: 3,
+    label: "WebP conversion + compress oversized clipboard",
+    config: {
+      enabled: true,
+      compressOversizedClipboard: true
     }
   }]
 });

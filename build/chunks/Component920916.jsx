@@ -136,6 +136,7 @@ function K(e) {
     }), (0, r.jsx)("div", {
       ref: g,
       children: (0, r.jsx)(u.Y0X, {
+        "data-migration-pending": true,
         transitionState: n,
         size: u.CgR.DYNAMIC,
         className: o()(G.rootContainer, {
@@ -213,12 +214,14 @@ function q(e) {
       }), (0, r.jsx)("div", {
         className: G.headerForeground,
         children: (0, r.jsx)(u.olH, {
+          "data-migration-pending": true,
           className: G.close,
           withCircleBackground: true,
           onClick: o
         })
       })]
     }), (0, r.jsx)(u.mzw, {
+      "data-migration-pending": true,
       separator: false,
       children: (0, r.jsxs)("div", {
         className: G.footerBody,

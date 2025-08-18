@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk238651 = require("./238651.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -38,14 +38,14 @@ function R(e) {
   var t, r, o, c, d;
   let {
     transitionState: u,
-    onClose: h,
-    quest: p,
+    onClose: p,
+    quest: x,
     location: j
-  } = e, _ = a.useRef(null), [f, g] = a.useState(null), v = a.useRef(new i.qA), L = (0, C.e7)([m.Z], () => m.Z.useReducedMotion), O = (null == (t = p.userStatus) ? true : t.claimedAt) != null, [M, k] = a.useState({
+  } = e, g = a.useRef(null), [_, f] = a.useState(null), v = a.useRef(new s.qA), L = (0, C.e7)([m.Z], () => m.Z.useReducedMotion), O = (null == (t = x.userStatus) ? true : t.claimedAt) != null, [M, k] = a.useState({
     state: "loading"
   });
   a.useEffect(() => {
-    O || (0, N.QB)(p.id, H.y$.CROSS_PLATFORM, j).then(e => {
+    O || (0, N.QB)(x.id, H.y$.CROSS_PLATFORM, j).then(e => {
       if ((null == e ? true : e.claimedAt) != null) return void k({
         state: "claimed",
         entitlements: e
@@ -60,21 +60,22 @@ function R(e) {
         errorReason: 0
       })
     })
-  }, [p, j, O]);
+  }, [x, j, O]);
   let w = "loading" === M.state,
     P = !L && !O && "claimed" === M.state,
     R = "claimed" === M.state && null != M.entitlements && M.entitlements.items.some(e => e.consumed);
   return (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(i.O_, {
-      ref: g,
+    children: [(0, n.jsx)(s.O_, {
+      ref: f,
       className: Z.confettiCanvas,
       environment: v.current
     }), (0, n.jsx)("div", {
-      ref: _,
+      ref: g,
       children: (0, n.jsx)(l.Y0X, {
+        "data-migration-pending": true,
         transitionState: u,
         size: l.CgR.DYNAMIC,
-        className: s()(Z.rootContainer, {
+        className: i()(Z.rootContainer, {
           [Z.rootContainerLoading]: w
         }),
         hideShadow: true,
@@ -83,18 +84,18 @@ function R(e) {
           type: l.$jN.Type.SPINNING_CIRCLE
         }) : "error" === M.state ? (0, n.jsx)(S, {
           errorReason: M.errorReason,
-          onClose: h
+          onClose: p
         }) : R ? (0, n.jsx)(T, {
           duration: (0, b.kb)(null != (c = null == (r = M.entitlements) ? true : r.items) ? c : []),
-          onClose: h
+          onClose: p
         }) : (0, n.jsx)(A, {
           duration: (0, b.kb)(null != (d = null == (o = M.entitlements) ? true : o.items) ? d : []),
-          onClose: h
+          onClose: p
         })
       })
-    }), P && (0, n.jsx)(x.Z, {
-      confettiTarget: _.current,
-      confettiCanvas: f,
+    }), P && (0, n.jsx)(h.Z, {
+      confettiTarget: g.current,
+      confettiCanvas: _,
       sprites: y.CA,
       colors: y.Br
     })]
@@ -107,6 +108,7 @@ function S(e) {
   } = e, r = M.intl.string(M.t.PbaUtr);
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)(l.xBx, {
+      "data-migration-pending": true,
       separator: false,
       className: Z.errorHeader,
       children: [(0, n.jsx)(l.X6q, {
@@ -114,16 +116,19 @@ function S(e) {
         variant: "heading-xl/medium",
         children: M.intl.string(M.t["UleS9/"])
       }), (0, n.jsx)(l.olH, {
+        "data-migration-pending": true,
         onClick: t,
         className: Z.errorModalCloseButton
       })]
     }), (0, n.jsx)(l.hzk, {
+      "data-migration-pending": true,
       className: Z.errorContent,
       children: (0, n.jsx)(l.Text, {
         variant: "text-md/normal",
         children: r
       })
     }), (0, n.jsx)(l.mzw, {
+      "data-migration-pending": true,
       className: Z.errorModalFooter,
       children: (0, n.jsx)(l.zxk, {
         variant: "primary",
@@ -140,12 +145,12 @@ function T(e) {
     onClose: r
   } = e, {
     theme: o
-  } = (0, l.TCT)(), s = (0, h.Z)({
+  } = (0, l.TCT)(), i = (0, p.Z)({
     forceFetch: true
-  }), i = (0, g.vc)(s.endsAt, "L"), C = a.useCallback(() => {
+  }), s = (0, f.vc)(i.endsAt, "L"), C = a.useCallback(() => {
     (0, j.$)(r)
   }, [r]);
-  return s.fractionalState === O.a$.NONE ? (0, n.jsx)("div", {
+  return i.fractionalState === O.a$.NONE ? (0, n.jsx)("div", {
     className: Z.spinnerContainer,
     children: (0, n.jsx)(l.$jN, {
       type: l.$jN.Type.SPINNING_CIRCLE
@@ -155,7 +160,7 @@ function T(e) {
       className: Z.nitroHeaderContainer,
       children: [(0, n.jsx)("div", {
         className: Z.nitroHeaderClouds
-      }), (0, n.jsx)(f.Z, {
+      }), (0, n.jsx)(_.Z, {
         className: Z.nitroHeaderWordmark
       }), (0, n.jsx)(l.Eep, {
         src: w,
@@ -164,18 +169,20 @@ function T(e) {
         zoomable: false,
         className: Z.nitroHeaderWumpus
       }), (0, n.jsx)(l.olH, {
+        "data-migration-pending": true,
         className: Z.nitroHeaderClose,
         onClick: r
       })]
     }), (0, n.jsxs)(l.mzw, {
+      "data-migration-pending": true,
       className: Z.footerContainer,
       separator: false,
-      children: [(0, n.jsx)(p.Z, {
+      children: [(0, n.jsx)(x.Z, {
         className: Z.beta
-      }), (0, n.jsx)(_.ZP, {
+      }), (0, n.jsx)(g.ZP, {
         className: Z.nitroHeading,
         premiumType: O.p9.TIER_2,
-        type: _.ZP.Types.PREMIUM_ACTIVATED,
+        type: g.ZP.Types.PREMIUM_ACTIVATED,
         theme: o
       }), (0, n.jsx)(l.Text, {
         variant: "text-md/normal",
@@ -183,7 +190,7 @@ function T(e) {
         children: M.intl.format(M.t.tgc1oq, {
           helpCenterLink: v.Z.getArticleURL(L.BhN.FRACTIONAL_PREMIUM_ABOUT),
           duration: t,
-          expirationDate: i
+          expirationDate: s
         })
       }), (0, n.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
@@ -202,9 +209,9 @@ function A(e) {
   let {
     duration: t,
     onClose: r
-  } = e, o = (0, h.Z)({
+  } = e, o = (0, p.Z)({
     forceFetch: true
-  }), i = (0, u.ZP)(), C = a.useCallback(() => {
+  }), s = (0, u.ZP)(), C = a.useCallback(() => {
     c.Z.open(L.oAB.SUBSCRIPTIONS, null, {}), r()
   }, [r]);
   if (!o.fetched) return (0, n.jsx)("div", {
@@ -218,16 +225,16 @@ function A(e) {
     duration: t
   });
   return (0, n.jsx)(l.f6W, {
-    theme: i,
+    theme: s,
     children: e => (0, n.jsxs)("div", {
-      className: s()(Z.claimedRootContainer, e),
+      className: i()(Z.claimedRootContainer, e),
       children: [(0, n.jsxs)("div", {
         className: Z.headerContainer,
         children: [(0, n.jsx)("img", {
           className: Z.headerBackground,
           src: k,
           alt: M.intl.string(M.t["8SsCa2"])
-        }), (0, n.jsx)(p.Z, {
+        }), (0, n.jsx)(x.Z, {
           className: Z.beta
         }), (0, n.jsxs)("div", {
           className: Z.headerForeground,
@@ -239,12 +246,14 @@ function A(e) {
               height: 120
             })
           }), (0, n.jsx)(l.olH, {
+            "data-migration-pending": true,
             className: Z.close,
             withCircleBackground: true,
             onClick: r
           })]
         })]
       }), (0, n.jsxs)(l.mzw, {
+        "data-migration-pending": true,
         className: Z.footerContainer,
         separator: false,
         children: [(0, n.jsx)(l.X6q, {
@@ -274,16 +283,16 @@ function V(e) {
     quest: t,
     location: r,
     onClose: o,
-    transitionState: s
-  } = e, i = (0, d.Z)(() => {
+    transitionState: i
+  } = e, s = (0, d.Z)(() => {
     var e;
     return (null == (e = t.userStatus) ? true : e.claimedAt) != null
   });
   return (a.useEffect(() => {
-    i && o()
-  }, [o, i]), i) ? null : (0, n.jsx)(R, {
+    s && o()
+  }, [o, s]), s) ? null : (0, n.jsx)(R, {
     onClose: o,
-    transitionState: s,
+    transitionState: i,
     quest: t,
     location: r
   })

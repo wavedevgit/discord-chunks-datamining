@@ -385,34 +385,32 @@ class U extends Chunk647438.Component {
         _ = null != (r = null != d ? d : f) ? r : a,
         E = (0, S._K)(i, this._getEditorWindow()) ? a : _;
       if (null == l || !E.isPrivate() && !o || E.isPrivate() && E.isManaged()) returnfalse;
-      let y = (e, t) => {
-          var n, r;
-          let i = g.Z.getActiveCommand(E.id);
-          if (null == i) return l(e, E, u.drafts.type, {
-            requireConfirm: true,
-            showLargeMessageDialog: t,
-            origin: "clipboard"
-          });
-          let a = null != (n = u.drafts.commandType) ? n : u.drafts.type,
-            o = null,
-            s = g.Z.getActiveOption(E.id);
-          null != (o = (null == s ? true : s.type) === h.jw.ATTACHMENT ? s : null == (r = i.options) ? true : r.find(e => {
-            if (e.type === h.jw.ATTACHMENT) return null == b.Z.getUpload(E.id, e.name, a)
-          })) && p.Z.setFile({
-            channelId: E.id,
+      let y = async (e, t) => {
+        var n, r;
+        let i = g.Z.getActiveCommand(E.id);
+        if (null == i) return await l(e, E, u.drafts.type, {
+          requireConfirm: true,
+          showLargeMessageDialog: t,
+          origin: "clipboard"
+        });
+        let a = null != (n = u.drafts.commandType) ? n : u.drafts.type,
+          o = null,
+          s = g.Z.getActiveOption(E.id);
+        null != (o = (null == s ? true : s.type) === h.jw.ATTACHMENT ? s : null == (r = i.options) ? true : r.find(e => {
+          if (e.type === h.jw.ATTACHMENT) return null == b.Z.getUpload(E.id, e.name, a)
+        })) && p.Z.setFile({
+          channelId: E.id,
+          id: o.name,
+          draftType: a,
+          file: {
             id: o.name,
-            draftType: a,
-            file: {
-              id: o.name,
-              platform: m.ow.WEB,
-              file: e[0]
-            }
-          })
-        },
-        O = null != s ? s : c,
-        {
-          files: v
-        } = G(e.clipboardData, u.uploadLongMessages ? O : null);
+            platform: m.ow.WEB,
+            file: e[0]
+          }
+        })
+      }, O = null != s ? s : c, {
+        files: v
+      } = G(e.clipboardData, u.uploadLongMessages ? O : null);
       return k("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,

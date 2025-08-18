@@ -36,7 +36,7 @@ let c = {
         captchaService: d,
         options: u
       } = e;
-    (0, o.ZDy)(async () => {
+    (0, a.ZDy)(async () => {
       let {
         default: e
       } = await r.e("12192").then(r.bind(r, 718742));
@@ -49,7 +49,7 @@ let c = {
         sitekey: c
       }, s, u, r))
     }, {
-      Layer: a.ZP,
+      Layer: o.ZP,
       modalKey: i.A
     })
   },
@@ -62,11 +62,11 @@ let c = {
         options: p
       } = e;
     return new Promise((e, m) => {
-      (0, o.ZDy)(async () => {
+      (0, a.ZDy)(async () => {
         let {
-          default: o
+          default: a
         } = await r.e("12192").then(r.bind(r, 718742));
-        return r => (0, n.jsx)(o, l({
+        return r => (0, n.jsx)(a, l({
           onCaptchaVerify: (t, r) => e({
             captcha_key: t,
             captcha_rqtoken: r,
@@ -79,12 +79,12 @@ let c = {
           }
         }, t, p, r))
       }, {
-        Layer: a.ZP,
+        Layer: o.ZP,
         modalKey: i.A
       })
     })
   },
   useIsCaptchaModalOpen: function() {
-    return (0, Chunk481060.s9z)(e => (0, o.DEQ)(e, i.A))
+    return (0, Chunk481060.s9z)(e => (0, a.DEQ)(e, i.A))
   }
 }

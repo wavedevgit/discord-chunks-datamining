@@ -19,6 +19,7 @@ let d = function(e) {
   } = e, n = (0, o.ZP)(), d = (0, i.wj)(n);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(a.xBx, {
+      "data-migration-pending": true,
       separator: false,
       className: l.header,
       children: [(0, r.jsx)("img", {
@@ -30,10 +31,12 @@ let d = function(e) {
         variant: "heading-xl/medium",
         children: s.intl.string(s.t.tWYWJy)
       }), (0, r.jsx)(a.olH, {
+        "data-migration-pending": true,
         onClick: t,
         className: l.modalCloseButton
       })]
     }), (0, r.jsx)(a.hzk, {
+      "data-migration-pending": true,
       className: l.content,
       scrollbarType: "none",
       children: (0, r.jsx)(a.Text, {
@@ -41,6 +44,7 @@ let d = function(e) {
         children: s.intl.string(s.t.JNQRU1)
       })
     }), (0, r.jsx)(a.mzw, {
+      "data-migration-pending": true,
       className: l.modalFooter,
       children: (0, r.jsx)(a.zxk, {
         variant: "primary",

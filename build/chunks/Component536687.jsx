@@ -122,6 +122,7 @@ function V(e) {
   let eb = (0, O.ZS)(eO),
     eC = "portrait" === eb;
   return (0, r.jsx)(p.Y0X, {
+    "data-migration-pending": true,
     transitionState: V,
     size: p.CgR.DYNAMIC,
     className: i()(w.modalRoot, {

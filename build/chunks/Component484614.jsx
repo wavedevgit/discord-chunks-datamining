@@ -29,7 +29,7 @@ class p extends(n = Chunk647438.PureComponent) {
       text: r
     } = this.props, {
       mode: n
-    } = this.state, a = n === Chunk481060.kO8.Modes.SUCCESS ? Chunk388032.intl.string(Chunk388032.t["t5VZ8/"]) : require;
+    } = this.state, o = n === Chunk481060.kO8.Modes.SUCCESS ? Chunk388032.intl.string(Chunk388032.t["t5VZ8/"]) : require;
     return (0, Chunk951288.jsx)(Chunk481060.kO8, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
