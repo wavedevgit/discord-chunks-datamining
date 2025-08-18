@@ -7,16 +7,16 @@ require.d(exports, {
   EY: () => L,
   I5: () => O,
   JQ: () => C,
-  RY: () => f,
+  RY: () => N,
   Sv: () => A,
   TX: () => x,
   ZW: () => T,
-  bK: () => N,
+  bK: () => m,
   n0: () => S,
   o6: () => M,
   oE: () => R,
   qS: () => P,
-  s: () => m,
+  s: () => f,
   sQ: () => d,
   wo: () => I
 });
@@ -39,7 +39,7 @@ var I = ((r = {}).POLICY_VIOLATION_DETAIL = "policy_violation_detail", r.LEARN_M
 class O {}
 E(O, "ICON_TYPE", "icon_type"), E(O, "HEADER", "header"), E(O, "BODY", "body"), E(O, "CTAS", "ctas"), E(O, "TIMESTAMP", "timestamp"), E(O, "THEME", "theme"), E(O, "CLIENT_VERSION_MESSAGE", "client_version_message"), E(O, "LEARN_MORE_LINK", "learn_more_link"), E(O, "CLASSIFICATION_ID", "classification_id");
 var S = ((i = {})[i.ViewViolationDetail = 0] = "ViewViolationDetail", i[i.ViewViolationsDropdown = 1] = "ViewViolationsDropdown", i[i.ClickLetUsKnow = 2] = "ClickLetUsKnow", i[i.ClickAgeVerificationLink = 3] = "ClickAgeVerificationLink", i[i.ClickSpamWebformLink = 4] = "ClickSpamWebformLink", i[i.ClickLearnMoreLink = 5] = "ClickLearnMoreLink", i[i.ClickCommunityGuidelinesLink = 6] = "ClickCommunityGuidelinesLink", i[i.ClickWarningSystemHelpcenterLink = 7] = "ClickWarningSystemHelpcenterLink", i),
-  m = ((o = {})[o.SystemDM = 0] = "SystemDM", o[o.StandingTab = 1] = "StandingTab", o[o.AppealIngestion = 2] = "AppealIngestion", o);
+  f = ((o = {})[o.SystemDM = 0] = "SystemDM", o[o.StandingTab = 1] = "StandingTab", o[o.AppealIngestion = 2] = "AppealIngestion", o);
 Object.freeze({
   SPEED_BUMP: Chunk981631.jXE.APPEAL_INGESTION_SPEED_BUMP,
   COLLECT_SIGNAL: Chunk981631.jXE.APPEAL_INGESTION_COLLECT_SIGNAL,
@@ -48,8 +48,8 @@ Object.freeze({
   THANKS: Chunk981631.jXE.APPEAL_INGESTION_THANKS,
   SPAM: Chunk981631.jXE.APPEAL_INGESTION_SPAM
 });
-var N = ((s = {})[s.DIDNT_VIOLATE_POLICY = 0] = "DIDNT_VIOLATE_POLICY", s[s.TOO_STRICT_UNFAIR = 1] = "TOO_STRICT_UNFAIR", s[s.DONT_AGREE_PENALTY = 2] = "DONT_AGREE_PENALTY", s[s.SOMETHING_ELSE = 3] = "SOMETHING_ELSE", s);
-let f = [0, 1, 2, 3],
+var m = ((s = {})[s.DIDNT_VIOLATE_POLICY = 0] = "DIDNT_VIOLATE_POLICY", s[s.TOO_STRICT_UNFAIR = 1] = "TOO_STRICT_UNFAIR", s[s.DONT_AGREE_PENALTY = 2] = "DONT_AGREE_PENALTY", s[s.SOMETHING_ELSE = 3] = "SOMETHING_ELSE", s);
+let N = [0, 1, 2, 3],
   A = 372,
   L = 279,
   T = {

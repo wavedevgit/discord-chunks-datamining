@@ -1,8 +1,9 @@
 /** Chunk was on 82961 **/
-/** chunk id: 753599, original params: t,e,n (module,exports,require) **/
+/** chunk id: 753599, original params: t,n,e (module,exports,require) **/
 module.exports = {
   row: "row__19fd1",
   rowMana: "rowMana__19fd1",
+  noInset: "noInset__19fd1",
   iconContainer: "iconContainer__19fd1",
   icon: "icon__19fd1",
   textContainer: "textContainer__19fd1",

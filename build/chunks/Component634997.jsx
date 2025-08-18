@@ -45,10 +45,10 @@ let L = function(e) {
   }, [M, n]), (0, r.jsxs)(l.Modal, {
     transitionState: t,
     onClose: L,
-    title: f.intl.string(f.t.JHNunp),
-    subtitle: f.intl.string(f.t["+BLIGh"]),
+    title: N.intl.string(N.t.JHNunp),
+    subtitle: N.intl.string(N.t["+BLIGh"]),
     actions: [{
-      text: f.intl.string(f.t.SJMnkZ),
+      text: N.intl.string(N.t.SJMnkZ),
       loading: x,
       icon: c.Gr1,
       iconPosition: "end",
@@ -58,10 +58,10 @@ let L = function(e) {
     }],
     actionBarInput: (0, r.jsxs)(u.Z, {
       onClick: () => {
-        p.Z.openUrl(d.Z.getArticleURL(m.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, I.x3)(M, I.d_.PRIMARY, I.sU.LEARN_MORE)
+        p.Z.openUrl(d.Z.getArticleURL(f.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, I.x3)(M, I.d_.PRIMARY, I.sU.LEARN_MORE)
       },
       className: A.learnMoreButton,
-      children: [f.intl.string(f.t["aA6q//"]), (0, r.jsx)(c.Gr1, {
+      children: [N.intl.string(N.t["aA6q//"]), (0, r.jsx)(c.Gr1, {
         size: "xs",
         color: "currentColor"
       })]
@@ -81,9 +81,9 @@ let L = function(e) {
       variant: "text-xs/medium",
       color: "text-muted",
       className: A.requestContainer,
-      children: f.intl.format(f.t.pJAxgY, {
+      children: N.intl.format(N.t.pJAxgY, {
         handleOnRequestHook: () => {
-          p.Z.openUrl(N.sQ.APPEALS_LINK), (0, I.x3)(M, I.d_.PRIMARY, I.sU.MANUAL_REVIEW_REQUEST)
+          p.Z.openUrl(m.sQ.APPEALS_LINK), (0, I.x3)(M, I.d_.PRIMARY, I.sU.MANUAL_REVIEW_REQUEST)
         }
       })
     })]

@@ -43,7 +43,7 @@ function h(e) {
   } = (0, c.a)({
     location: "UserProfileMutualFriendRow"
   }), {
-    voiceChannel: D
+    voiceChannel: I
   } = (0, u.Z)({
     userId: M ? t.id : true,
     guildId: g
@@ -119,7 +119,7 @@ function h(e) {
         user: t,
         activities: k,
         applicationStream: E,
-        voiceChannel: D
+        voiceChannel: I
       })]
     })]
   })

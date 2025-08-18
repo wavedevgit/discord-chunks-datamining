@@ -29,9 +29,9 @@ let N = function(e) {
     (0, _.lA)(L, _.d_.RETRY, n)
   }, [L, n]);
   let T = o.useMemo(() => [{
-    title: m.intl.string(m.t.FYkioq),
-    description: m.intl.string(m.t.xMfbR0),
-    buttonText: m.intl.string(m.t.RtOE1t),
+    title: I.intl.string(I.t.FYkioq),
+    description: I.intl.string(I.t.xMfbR0),
+    buttonText: I.intl.string(I.t.RtOE1t),
     buttonVariant: "primary",
     buttonIcon: s.Gr1,
     buttonLoading: p,
@@ -39,9 +39,9 @@ let N = function(e) {
       S(), (0, _.x3)(L, _.d_.RETRY, _.sU.GET_STARTED)
     }
   }, {
-    title: m.intl.string(m.t["LZO+HR"]),
-    description: m.intl.string(m.t.N2mHaG),
-    buttonText: m.intl.string(m.t["LZO+HR"]),
+    title: I.intl.string(I.t["LZO+HR"]),
+    description: I.intl.string(I.t.N2mHaG),
+    buttonText: I.intl.string(I.t["LZO+HR"]),
     buttonIcon: s.Gr1,
     onButtonPress: () => {
       c.Z.openUrl(u.sQ.APPEALS_LINK), (0, _.x3)(L, _.d_.RETRY, _.sU.MANUAL_REVIEW_REQUEST)
@@ -49,21 +49,21 @@ let N = function(e) {
   }], [S, L, p]);
   return (0, i.jsx)(s.Y0X, {
     transitionState: t,
-    className: I.root,
+    className: m.root,
     parentComponent: "AgeVerificationRetryModal",
     children: (0, i.jsxs)(s.hzk, {
-      className: I.content,
+      className: m.content,
       children: [(0, i.jsxs)("div", {
-        className: I.headersContainer,
+        className: m.headersContainer,
         children: [(0, i.jsx)(s.X6q, {
           variant: "heading-xl/bold",
-          children: m.intl.string(m.t["5l3R/v"])
+          children: I.intl.string(I.t["5l3R/v"])
         }), (0, i.jsx)(s.X6q, {
           variant: "heading-md/medium",
           color: "text-default",
-          children: m.intl.string(m.t.O7SO0N)
+          children: I.intl.string(I.t.O7SO0N)
         }), (0, i.jsx)(s.olH, {
-          className: I.modalClose,
+          className: m.modalClose,
           onClick: N
         })]
       }), T.map((e, t) => (0, i.jsx)(l.JZ, function(e) {
@@ -88,8 +88,8 @@ let N = function(e) {
       }, e), t)), (0, i.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
-        className: I.learnMore,
-        children: m.intl.format(m.t["L+FgkZ"], {
+        className: m.learnMore,
+        children: I.intl.format(I.t["L+FgkZ"], {
           handleOnHelpUrlHook: () => {
             c.Z.openUrl(a.Z.getArticleURL(E.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, _.x3)(L, _.d_.RETRY, _.sU.LEARN_MORE)
           }

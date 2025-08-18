@@ -1,7 +1,7 @@
 /** Chunk was on 82961 **/
-/** chunk id: 751744, original params: t,e,n (module,exports,require) **/
+/** chunk id: 751744, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => j
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk236289 = require("./236289.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx");
-let j = [{
+let _ = [{
     title: Chunk388032.intl.string(Chunk388032.t["1+E7LC"]),
     description: Chunk388032.intl.string(Chunk388032.t.BXiat7)
   }, {
@@ -26,25 +26,25 @@ let j = [{
     title: Chunk388032.intl.string(Chunk388032.t["oY/z1d"]),
     description: Chunk388032.intl.string(Chunk388032.t.wtj02d)
   }],
-  p = function(t) {
+  j = function(t) {
     let {
-      onClose: e,
-      transitionState: n,
-      classificationId: p
-    } = t, v = (0, l.e7)([m.Z], () => m.Z.getAgeVerificationWebviewUrl()), _ = (0, l.e7)([m.Z], () => m.Z.getIsLoadingAgeVerification()), b = r.useCallback(() => {
-      e(), x.Z.close()
-    }, [e]), g = r.useCallback(() => {
+      onClose: n,
+      transitionState: e,
+      classificationId: j
+    } = t, p = (0, l.e7)([m.Z], () => m.Z.getAgeVerificationWebviewUrl()), v = (0, l.e7)([m.Z], () => m.Z.getIsLoadingAgeVerification()), b = r.useCallback(() => {
+      n(), x.Z.close()
+    }, [n]), g = r.useCallback(() => {
       x.Z.success(), b(), x.Z.start_verification_check()
     }, [b]);
     return r.useEffect(() => {
-      "" !== v && a.Z.showAgeVerification({
-        webviewUrl: v,
+      "" !== p && a.Z.showAgeVerification({
+        webviewUrl: p,
         onComplete: g,
         useV1: true
       })
-    }, [v, g]), (0, i.jsx)(o.Modal, {
-      onClose: e,
-      transitionState: n,
+    }, [p, g]), (0, i.jsx)(o.Modal, {
+      onClose: n,
+      transitionState: e,
       title: f.intl.string(f.t["9SDLnp"]),
       subtitle: f.intl.string(f.t["yvx///"]),
       actions: [{
@@ -53,24 +53,24 @@ let j = [{
         variant: "secondary"
       }, {
         text: f.intl.string(f.t["54b8V1"]),
-        onClick: () => (0, u.FN)(p),
-        loading: _
+        onClick: () => (0, u.FN)(j),
+        loading: v
       }],
       children: (0, i.jsxs)(s.Kqy, {
         gap: 8,
         direction: "vertical",
         children: [(0, i.jsx)(c.z, {
-          children: j.map((t, e) => {
+          children: _.map((t, n) => {
             let {
-              title: n,
+              title: e,
               description: r
             } = t;
             return (0, i.jsx)(c.q, {
-              title: n,
+              title: e,
               description: r,
-              index: e,
+              index: n,
               listType: "numbered"
-            }, e)
+            }, n)
           })
         }), (0, i.jsxs)(s.Kqy, {
           gap: 8,

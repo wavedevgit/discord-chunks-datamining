@@ -1,11 +1,12 @@
-/** Chunk was on 1272 **/
+/** Chunk was on 30202 **/
 /** chunk id: 277537, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  yI: () => l
+  PO: () => a,
+  yI: () => s
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let l = (0, Chunk818083.B)({
+let s = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-07_family_center_v2",
   label: "Family Center V2",
@@ -20,4 +21,12 @@ let l = (0, Chunk818083.B)({
       enabled: true
     }
   }]
-})
+});
+
+function a(e) {
+  return s.useExperiment({
+    location: e
+  }, {
+    autoTrackExposure: false
+  }).enabled
+}

@@ -1,5 +1,5 @@
 /** Chunk was on 82961 **/
-/** chunk id: 138201, original params: t,e,n (module,exports,require) **/
+/** chunk id: 138201, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   JZ: () => d,
   rT: () => c
@@ -14,27 +14,27 @@ var Chunk481060 = require("./481060.js"),
 
 function a(t) {
   let {
-    title: e
+    title: n
   } = t;
   return (0, i.jsx)(o.Text, {
     variant: "text-sm/semibold",
     color: "header-secondary",
-    children: e
+    children: n
   })
 }
 
 function c(t) {
   let {
-    children: e,
-    title: n,
+    children: n,
+    title: e,
     description: r,
     accessibilityRole: l = "none",
     accessibilityLabel: c
   } = t;
   return (0, i.jsxs)("div", {
     className: s.tableRowGroup,
-    children: [null != n && (0, i.jsx)(a, {
-      title: n
+    children: [null != e && (0, i.jsx)(a, {
+      title: e
     }), null != r && (0, i.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
@@ -43,70 +43,75 @@ function c(t) {
       className: s.content,
       role: l,
       "aria-label": c,
-      children: e
+      children: n
     })]
   })
 }
 
 function d(t) {
   let {
-    icon: e,
-    title: n,
+    icon: n,
+    title: e,
     titleVariant: r = "text-md/semibold",
-    description: a,
-    descriptionVariant: c = "text-xs/medium",
-    iconClassName: d,
-    color: x,
-    buttonText: u,
-    buttonVariant: m = "secondary",
-    buttonSize: h = "sm",
-    buttonDisabled: f,
-    buttonIcon: j,
-    buttonIconPosition: p = "start",
-    buttonLoading: v,
-    onButtonPress: _,
-    listType: b = "icon",
-    index: g
-  } = t, C = null != u ? (0, i.jsx)(o.zxk, {
-    variant: m,
-    size: h,
-    text: u,
-    icon: j,
-    iconPosition: p,
-    disabled: f,
-    loading: v,
-    onClick: _,
-    "aria-label": u
+    titleColor: a = "header-primary",
+    description: c,
+    descriptionVariant: d = "text-xs/medium",
+    descriptionColor: x = "text-secondary",
+    iconClassName: u,
+    color: m,
+    buttonText: h,
+    buttonVariant: f = "secondary",
+    buttonSize: _ = "sm",
+    buttonDisabled: j,
+    buttonIcon: p,
+    buttonIconPosition: v = "start",
+    buttonLoading: b,
+    onButtonPress: g,
+    listType: C = "icon",
+    index: N,
+    noInset: w = false
+  } = t, y = null != h ? (0, i.jsx)(o.zxk, {
+    variant: f,
+    size: _,
+    text: h,
+    icon: p,
+    iconPosition: v,
+    disabled: j,
+    loading: b,
+    onClick: g,
+    "aria-label": h
   }) : true;
   return (0, i.jsxs)("div", {
-    className: l()(s.row, s.rowMana),
+    className: l()(s.row, s.rowMana, {
+      [s.noInset]: w
+    }),
     children: [(0, i.jsxs)(o.Kqy, {
       direction: "horizontal",
       gap: 16,
       align: "center",
-      children: ["numbered" === b && null != g ? (0, i.jsx)(o.X6q, {
+      children: ["numbered" === C && null != N ? (0, i.jsx)(o.X6q, {
         variant: "heading-md/semibold",
         color: "text-brand",
         className: s.number,
-        children: g + 1
-      }) : null != e && (0, i.jsx)("div", {
+        children: N + 1
+      }) : null != n && (0, i.jsx)("div", {
         className: s.iconContainer,
-        children: (0, i.jsx)(e, {
-          color: null != x ? x : "currentColor",
-          className: l()(s.icon, d)
+        children: (0, i.jsx)(n, {
+          color: null != m ? m : "currentColor",
+          className: l()(s.icon, u)
         })
       }), (0, i.jsxs)("div", {
         className: s.textContainer,
         children: [(0, i.jsx)(o.Text, {
           variant: r,
-          color: "header-primary",
-          children: n
-        }), null != a && (0, i.jsx)(o.Text, {
-          variant: c,
-          color: "text-secondary",
-          children: a
+          color: a,
+          children: e
+        }), null != c && (0, i.jsx)(o.Text, {
+          variant: d,
+          color: x,
+          children: c
         })]
       })]
-    }), C]
+    }), y]
   })
 }
