@@ -126,7 +126,7 @@ function V(e) {
 
 function U(e) {
   let t = (0, l.e7)([T.Z], () => T.Z.getQuest(e.questId));
-  return (null == t && null != e.previewQuest && (t = e.previewQuest), null != t) ? (0, n.jsx)(N.A, {
+  return (null == t && null != e.previewQuest && (t = e.previewQuest), null != t) ? (0, n.jsx)(B.A, {
     questOrQuests: t,
     questContent: R.jn.REWARD_MODAL,
     sourceQuestContent: e.sourceQuestContent,
@@ -181,7 +181,7 @@ function z(e) {
   } = e, A = (0, f.Z)(() => {
     var e;
     return (null == (e = s.userStatus) ? true : e.claimedAt) != null
-  }), N = k.r.build(s.config).rewardPlatforms, q = N.length > 1, [U, z] = o.useState(q ? null : N[0]), F = o.useRef(new i.qA), Q = o.useRef(null), [G, X] = o.useState(null), H = (0, l.e7)([b.Z], () => b.Z.useReducedMotion), $ = (0, l.e7)([O.Z], () => O.Z.hidePersonalInformation), {
+  }), B = k.r.build(s.config).rewardPlatforms, q = B.length > 1, [U, z] = o.useState(q ? null : B[0]), F = o.useRef(new i.qA), Q = o.useRef(null), [G, X] = o.useState(null), H = (0, l.e7)([b.Z], () => b.Z.useReducedMotion), $ = (0, l.e7)([O.Z], () => O.Z.hidePersonalInformation), {
     questStoreRewardCode: J,
     isFetchingRewardCode: Y,
     isClaimingReward: K
@@ -191,7 +191,7 @@ function z(e) {
     isClaimingReward: T.Z.isClaimingReward(s.id)
   })), ee = (0, j.O5)(), et = (0, S.oo)({
     quest: s
-  }), er = true === x ? (0, B.b)(s) : J, en = q && (null == (t = s.userStatus) ? true : t.claimedAt) == null && null == er, {
+  }), er = true === x ? (0, N.b)(s) : J, en = q && (null == (t = s.userStatus) ? true : t.claimedAt) == null && null == er, {
     claimCode: eo,
     fetchCode: ea,
     hasError: es,
@@ -262,10 +262,10 @@ function z(e) {
       rewardCode: er,
       hasTieredRewardCodes: et
     }),
-    ep = o.useMemo(() => N.map(e => ({
+    ep = o.useMemo(() => B.map(e => ({
       label: (0, S.t2)(e),
       value: e
-    })), [N]),
+    })), [B]),
     e_ = null;
   en && (e_ = (0, n.jsxs)(p.xJW, {
     title: M.intl.string(M.t.vVcTtL),
@@ -334,10 +334,9 @@ function z(e) {
     })
   }) : el && !en && (eC = (0, n.jsx)(p.xJW, {
     title: M.intl.string(M.t.srzsU1),
-    children: (0, n.jsx)(u.Is, {
+    children: (0, n.jsx)(p.oil, {
       disabled: true,
-      error: M.intl.string(M.t.rbZBMT),
-      inputClassName: W.errorInput
+      error: M.intl.string(M.t.rbZBMT)
     })
   }));
   let eh = o.useMemo(() => et ? (0, S.o9)({

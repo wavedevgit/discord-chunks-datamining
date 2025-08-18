@@ -45,7 +45,7 @@ function w(e) {
       value: n.id,
       options: t.map(e => ({
         value: e.id,
-        label: (0, u.F6)(e, p.default, f.Z, true)
+        label: (0, u.F6)(e, x.default, f.Z, true)
       })),
       onChange: e => {
         let n = t.find(t => t.id === e);
@@ -61,7 +61,7 @@ function w(e) {
 }
 
 function P(e) {
-  var t, n, l, f, p, P;
+  var t, n, l, f, x, P;
   let {
     channel: k,
     guild: A,
@@ -73,19 +73,19 @@ function P(e) {
     onClose: B,
     onSelectChannel: M,
     isEvent: U = false,
-    defaultOptions: F,
-    isSlideReady: z = true
-  } = e, V = i.useMemo(() => j.Z.getStageInstanceByChannel(k.id), [k.id]), [W, H] = i.useState(null != (n = null != (t = null == F ? true : F.topic) ? t : null == V ? true : V.topic) ? n : ""), [q, J] = i.useState(null != (l = null == F ? true : F.description) ? l : ""), [K] = i.useState(U), [Y, X] = i.useState(null != (f = null == F ? true : F.schedule) ? f : {
+    defaultOptions: z,
+    isSlideReady: F = true
+  } = e, V = i.useMemo(() => j.Z.getStageInstanceByChannel(k.id), [k.id]), [W, H] = i.useState(null != (n = null != (t = null == z ? true : z.topic) ? t : null == V ? true : V.topic) ? n : ""), [q, J] = i.useState(null != (l = null == z ? true : z.description) ? l : ""), [K] = i.useState(U), [Y, X] = i.useState(null != (f = null == z ? true : z.schedule) ? f : {
     startDate: (0, g.ib)()
-  }), [Q, $] = i.useState(K && (null == F ? true : F.schedule) != null), ee = (0, v.J)(k), et = (0, v.U)(k), en = null == V && ee && !K, [er, ei] = i.useState(en && et), el = (0, o.e7)([b.Z], () => b.Z.hasHotspot(E.v.LIVE_STAGE_NOTIFICATION_BADGE)), ea = C.j8.GUILD_ONLY, [eo] = i.useState(null != (P = null != (p = null == F ? true : F.privacyLevel) ? p : null == V ? true : V.privacy_level) ? P : ea), [es, ec] = i.useState(null == F ? true : F.recurrenceRule), ed = (0, N._d)(k.id), eu = (0, N.K3)(k.id), [eh, eg] = i.useState(false), e_ = (0, u.ZP)(k), em = (0, h.q)(A), eb = null != M, ef = em.length > 1;
+  }), [Q, $] = i.useState(K && (null == z ? true : z.schedule) != null), ee = (0, v.J)(k), et = (0, v.U)(k), en = null == V && ee && !K, [er, ei] = i.useState(en && et), el = (0, o.e7)([m.Z], () => m.Z.hasHotspot(E.v.LIVE_STAGE_NOTIFICATION_BADGE)), ea = C.j8.GUILD_ONLY, [eo] = i.useState(null != (P = null != (x = null == z ? true : z.privacyLevel) ? x : null == V ? true : V.privacy_level) ? P : ea), [es, ec] = i.useState(null == z ? true : z.recurrenceRule), ed = (0, N._d)(k.id), eu = (0, N.K3)(k.id), [eh, eg] = i.useState(false), e_ = (0, u.ZP)(k), eb = (0, h.q)(A), em = null != M, ef = eb.length > 1;
   (0, d.ZP)(() => {
-    x.default.track(O.rMx.START_STAGE_OPENED, {
+    p.default.track(I.rMx.START_STAGE_OPENED, {
       stage_instance_id: null == V ? true : V.id,
       can_start_public_stage: false,
       guild_id: k.guild_id
     })
   });
-  let ep = e => {
+  let ex = e => {
       if (e.preventDefault(), eo === C.j8.PUBLIC && W.length < 20 && !eh) return void eg(true);
       let t = {
         topic: W,
@@ -131,7 +131,7 @@ function P(e) {
       null == G || G(t)
     },
     {
-      color: ex,
+      color: ep,
       text: ev
     } = K ? {
       color: s.zx.Colors.BRAND,
@@ -149,8 +149,8 @@ function P(e) {
     ej = i.useRef(null);
   i.useEffect(() => {
     var e;
-    z && (null == (e = ej.current) || e.focus())
-  }, [z]);
+    F && (null == (e = ej.current) || e.focus())
+  }, [F]);
   let eN = Q && null != Y.startDate && Y.startDate >= a()();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.hzk, {
@@ -161,17 +161,15 @@ function P(e) {
           channelId: k.id
         })
       }), (0, r.jsxs)("form", {
-        onSubmit: ep,
+        onSubmit: ex,
         className: T.form,
         children: [(0, r.jsxs)(c.xJW, {
           title: U ? S.intl.string(S.t["0HbEQ0"]) : S.intl.string(S.t["5FPBOD"]),
-          className: T.topicFormItem,
           required: true,
-          children: [(0, r.jsx)(s.Is, {
-            className: T.textInput,
+          children: [(0, r.jsx)(c.oil, {
             onChange: e => H(e),
             placeholder: S.intl.string(S.t.ZwWrub),
-            maxLength: I.xA,
+            maxLength: O.xA,
             value: W,
             autoComplete: "off",
             inputRef: ej
@@ -186,12 +184,12 @@ function P(e) {
             className: T.warning,
             children: R.getAnyErrorMessage()
           }) : null]
-        }), eb && ef ? (0, r.jsx)(w, {
-          stageChannelsInGuild: em,
+        }), em && ef ? (0, r.jsx)(w, {
+          stageChannelsInGuild: eb,
           channel: k,
           onSelectChannel: M
         }) : null, K && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(m.Z, {
+          children: [(0, r.jsx)(b.Z, {
             className: T.formItem,
             onScheduleChange: X,
             onRecurrenceChange: e => {
@@ -221,7 +219,7 @@ function P(e) {
           sendStartNotification: er,
           setSendStartNotification: ei,
           showNotificationNewBadge: el
-        }) : null, eb && !ef ? (0, r.jsx)(c.Text, {
+        }) : null, em && !ef ? (0, r.jsx)(c.Text, {
           color: "header-secondary",
           variant: "text-xs/normal",
           className: T.channelSelection,
@@ -236,8 +234,8 @@ function P(e) {
       })]
     }), (0, r.jsxs)(c.mzw, {
       children: [(0, r.jsx)(s.zx, {
-        color: ex,
-        onClick: ep,
+        color: ep,
+        onClick: ex,
         disabled: "" === W || null == eo || U && !eN,
         submitting: Z,
         children: ev

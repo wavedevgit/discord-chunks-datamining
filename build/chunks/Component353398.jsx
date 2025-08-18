@@ -149,7 +149,7 @@ function R() {
   });
   let o = null != exports && null == exports.getFirstFieldErrorMessage("name") && null == exports.getFirstFieldErrorMessage("description");
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(A, {}), (0, Chunk951288.jsx)(k, {
+    children: [(0, Chunk951288.jsx)(A, {}), (0, Chunk951288.jsx)(L, {
       guild: module,
       guildTemplate: s
     }), Chunk512722 ? (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -292,12 +292,12 @@ function A() {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     guild: t,
     guildTemplate: n
   } = e;
-  return null == n ? (0, i.jsx)(L, {
+  return null == n ? (0, i.jsx)(k, {
     guild: t
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(g.xJW, {
@@ -335,7 +335,7 @@ function k(e) {
   })
 }
 
-function L(e) {
+function k(e) {
   let {
     guild: t
   } = e, n = (0, d.e7)([S], () => S.name), [r, a] = l.useState(false), s = async () => {

@@ -96,8 +96,8 @@ function R(e) {
       }
     }),
     [{
-      dragSourcePosition: k
-    }, L] = (0, o.L)({
+      dragSourcePosition: L
+    }, k] = (0, o.L)({
       accept: w,
       canDrop: () => R,
       collect: e => {
@@ -127,8 +127,8 @@ function R(e) {
     colors: D
   }), (0, r.jsxs)(d.njP.Item, {
     className: a()(S.row, {
-      [S.dragBefore]: null !== k && j < k,
-      [S.dragAfter]: null !== k && j > k
+      [S.dragBefore]: null !== L && j < L,
+      [S.dragAfter]: null !== L && j > L
     }),
     id: m.id,
     selectedItem: p,
@@ -148,7 +148,7 @@ function R(e) {
     "aria-label": m.name,
     clickableRef: e => {
       var t;
-      A(L(null != (t = null == e ? true : e.ref) ? t : null))
+      A(k(null != (t = null == e ? true : e.ref) ? t : null))
     },
     children: [l, null != N ? (0, r.jsx)(O.Z, {
       className: S.lock,
@@ -175,7 +175,7 @@ function Z(e) {
     handleDragStart: w,
     handleDragReset: Z,
     handleDragComplete: D
-  } = (0, y.Z)(o), A = i.useRef(null), k = i.useCallback(e => {
+  } = (0, y.Z)(o), A = i.useRef(null), L = i.useCallback(e => {
     var t, n;
     let r = o.findIndex(t => t.id === e);
     null == (n = A.current) || null == (t = n.getScrollerNode()) || t.scrollTo({
@@ -183,11 +183,11 @@ function Z(e) {
     })
   }, [o]);
   (0, g.ZP)(() => {
-    k(n)
+    L(n)
   }), i.useEffect(() => {
-    o.length > b && k(n), o.length !== b && x(o.length)
-  }, [o.length, b, x, k, n]);
-  let L = () => {
+    o.length > b && L(n), o.length !== b && x(o.length)
+  }, [o.length, b, x, L, n]);
+  let k = () => {
     m.Z.createRole(t.id), s(N.ZI.DISPLAY)
   };
   return (0, r.jsx)(f.ZP.Sidebar, {
@@ -220,7 +220,7 @@ function Z(e) {
           children: e => (0, r.jsx)(d.P3F, P(T({
             className: S.addRole
           }, e), {
-            onClick: L,
+            onClick: k,
             children: (0, r.jsx)(d.qJs, {
               size: "custom",
               color: "currentColor",

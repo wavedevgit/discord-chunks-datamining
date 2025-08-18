@@ -20,20 +20,20 @@ function d(e) {
     value: t,
     placeholder: n,
     onChange: i,
-    disabled: o,
+    disabled: s,
     className: c,
     autofocus: d
   } = e;
-  return (0, r.jsx)(s.iS, {
+  return (0, r.jsx)(o.iS, {
     className: l()(u.paragraphFieldBody, c),
     maxLength: a.RS,
     value: null != t ? t : "",
     placeholder: null != n ? n : "",
     onChange: i,
-    disabled: o,
+    disabled: s,
     autoFocus: d,
     autosize: true,
-    showRemainingCharacterCount: !o
+    showRemainingCharacterCount: !s
   })
 }
 
@@ -41,7 +41,7 @@ function m(e) {
   let {
     formField: t
   } = e;
-  return (0, r.jsx)(o.CA, {
+  return (0, r.jsx)(s.CA, {
     title: t.label,
     children: (0, r.jsx)(d, {
       className: u.disabledFieldBackground,
@@ -57,7 +57,7 @@ function f(e) {
     autofocus: n,
     onChange: i
   } = e;
-  return (0, r.jsx)(o.hK, {
+  return (0, r.jsx)(s.hK, {
     title: t.label,
     children: (0, r.jsx)(d, {
       value: t.response,

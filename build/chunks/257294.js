@@ -14,8 +14,5 @@ module.exports = {
   buttonRow: "buttonRow__0511a",
   removeButton: "removeButton__0511a",
   defaultImageView: "defaultImageView__0511a",
-  nameInput: "nameInput__0511a",
-  emojiButton: "emojiButton__0511a",
-  nameInputWrapper: "nameInputWrapper__0511a",
-  nameInputInner: "nameInputInner__0511a"
+  emojiButton: "emojiButton__0511a"
 }

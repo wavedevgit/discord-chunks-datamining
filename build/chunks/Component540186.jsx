@@ -20,7 +20,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk493748 = require("./493748.js");
 
-function p(e) {
+function x(e) {
   let {
     icon: t
   } = e;
@@ -33,7 +33,7 @@ function p(e) {
   })
 }
 
-function x(e) {
+function p(e) {
   let {
     icon: t,
     text: n
@@ -64,12 +64,12 @@ function v(e) {
     channel_id: l.id,
     topic: a.topic,
     description: a.description,
-    privacy_level: null != (t = a.privacyLevel) ? t : m.j8.PUBLIC
-  }, _ = (0, u.w8)(l.id, h.pV.SPEAKER), b = (0, u.Rk)(l.id, h.pV.AUDIENCE), p = _.slice(0, 5);
-  return null == p.find(e => {
+    privacy_level: null != (t = a.privacyLevel) ? t : b.j8.PUBLIC
+  }, _ = (0, u.w8)(l.id, h.pV.SPEAKER), m = (0, u.Rk)(l.id, h.pV.AUDIENCE), x = _.slice(0, 5);
+  return null == x.find(e => {
     var t;
     return (null == (t = e.user) ? true : t.id) === (null == s ? true : s.id)
-  }) && p.push({
+  }) && x.push({
     user: s,
     userNick: d.ZP.getName(n.id, l.id, s)
   }), (0, r.jsx)("div", {
@@ -82,9 +82,9 @@ function v(e) {
         showGuildPopout: false,
         setShowGuildPopout: () => {},
         source: g.k.UNSPECIFIED,
-        speakers: p,
+        speakers: x,
         speakerCount: _.length,
-        audienceCount: Math.max(1337, b),
+        audienceCount: Math.max(1337, m),
         channelName: l.name
       })
     })
@@ -115,38 +115,38 @@ function j(e) {
           id: o,
           className: f.__invalid_title,
           variant: "heading-xl/semibold",
-          children: b.intl.string(b.t.GXpXTE)
+          children: m.intl.string(m.t.GXpXTE)
         }), (0, r.jsx)(a.Text, {
           className: f.subtitle,
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: b.intl.string(b.t.JaYMvL)
+          children: m.intl.string(m.t.JaYMvL)
         })]
       }), (0, r.jsxs)("div", {
         className: f.__invalid_list,
-        children: [(0, r.jsx)(x, {
-          icon: (0, r.jsx)(p, {
+        children: [(0, r.jsx)(p, {
+          icon: (0, r.jsx)(x, {
             icon: a.Jmo
           }),
-          text: b.intl.string(b.t.u6oOcn)
-        }), (0, r.jsx)(x, {
-          icon: (0, r.jsx)(p, {
+          text: m.intl.string(m.t.u6oOcn)
+        }), (0, r.jsx)(p, {
+          icon: (0, r.jsx)(x, {
             icon: a.iFz
           }),
-          text: b.intl.string(b.t.QC8ymZ)
-        }), (0, r.jsx)(x, {
-          icon: (0, r.jsx)(p, {
+          text: m.intl.string(m.t.QC8ymZ)
+        }), (0, r.jsx)(p, {
+          icon: (0, r.jsx)(x, {
             icon: a.vdY
           }),
-          text: b.intl.string(b.t.mgGOT0)
-        }), (0, r.jsx)(x, {
+          text: m.intl.string(m.t.mgGOT0)
+        }), (0, r.jsx)(p, {
           icon: (0, r.jsx)(s.Z, {
             className: f.badgeIconBackground,
             foreground: f.badgeIconForeground,
             width: 40,
             height: 40
           }),
-          text: b.intl.format(b.t.qLmNLC, {
+          text: m.intl.format(m.t.qLmNLC, {
             articleURL: c.Z.getArticleURL(_.BhN.STAGE_CHANNEL_GUIDELINES)
           })
         })]
@@ -154,7 +154,7 @@ function j(e) {
     }), (0, r.jsxs)(a.mzw, {
       children: [(0, r.jsx)(a.zxk, {
         variant: "active",
-        text: b.intl.string(b.t.s8mM8P),
+        text: m.intl.string(m.t.s8mM8P),
         onClick: u,
         loading: d
       }), (0, r.jsx)("div", {
@@ -162,7 +162,7 @@ function j(e) {
         className: f.cancelButton,
         children: (0, r.jsx)(a.zxk, {
           variant: "secondary",
-          text: b.intl.string(b.t["ETE/oK"]),
+          text: m.intl.string(m.t["ETE/oK"]),
           onClick: h
         })
       }), (0, r.jsx)(l.zx, {
@@ -171,7 +171,7 @@ function j(e) {
         className: f.backButton,
         onClick: g,
         size: l.zx.Sizes.MIN,
-        children: b.intl.string(b.t["13/7kZ"])
+        children: m.intl.string(m.t["13/7kZ"])
       })]
     })]
   })

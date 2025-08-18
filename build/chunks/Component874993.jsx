@@ -41,17 +41,17 @@ function C(e) {
   } = (0, g.pH)(P), D = {
     [p.vh.MEMBERS]: O.intl.string(O.t.sx4E5u),
     [p.vh.CONTENT]: O.intl.string(O.t.fphZb2)
-  }, A = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), k = {
+  }, A = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), L = {
     isInEditMode: w,
     setEditingRule: E
-  }, L = i.useRef(k);
+  }, k = i.useRef(L);
   i.useEffect(() => {
-    L.current = k
+    k.current = L
   }), i.useEffect(() => {
     let {
       isInEditMode: e,
       setEditingRule: t
-    } = L.current;
+    } = k.current;
     e && t(null)
   }, [P]);
   let M = i.useCallback((e, t) => {

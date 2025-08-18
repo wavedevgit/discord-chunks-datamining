@@ -1,7 +1,7 @@
 /** Chunk was on 2668 **/
 /** chunk id: 10217, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => D
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,10 +29,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk572720 = require("./572720.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk134351 = require("./134351.js"),
-  Chunk892237 = require("./892237.js");
+  Chunk134351 = require("./134351.js");
 
-function L(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +50,7 @@ function L(e) {
   return e
 }
 
-function D(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,7 +62,7 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = function(e) {
+let D = function(e) {
   var t, n, a;
   let {
     clip: o,
@@ -75,21 +74,21 @@ let I = function(e) {
     onShare: v
   } = e, w = (0, u.Wu)([x.default], () => o.users.map(e => x.default.getUser(e)).filter(C.lm)), {
     analyticsLocations: N
-  } = (0, g.ZP)(b.Z.CLIPS_GALLERY_ITEM), [Z, L] = l.useState(false), D = l.useRef(null), I = (0, h.Z)(null != (a = null == (t = o.editMetadata) ? true : t.start) ? a : 0), _ = l.useRef(new d.sW(500, () => {
+  } = (0, g.ZP)(b.Z.CLIPS_GALLERY_ITEM), [Z, L] = l.useState(false), D = l.useRef(null), M = (0, y.Z)(null != (a = null == (t = o.editMetadata) ? true : t.start) ? a : 0), z = l.useRef(new d.sW(500, () => {
     var e;
     let t = D.current;
-    null != t && t.paused && (t.currentTime = I.current, null == (e = D.current) || e.play())
+    null != t && t.paused && (t.currentTime = M.current, null == (e = D.current) || e.play())
   })), R = l.useCallback(() => {
     let e = D.current;
     null != e && (e.pause(), e.src = "")
   }, []), A = l.useCallback(() => {
     var e;
-    L(true), null == (e = _.current) || e.delay()
+    L(true), null == (e = z.current) || e.delay()
   }, []), H = l.useCallback(() => {
     var e, t, n;
     L(false);
     let r = D.current;
-    null == (e = _.current) || e.cancel(), null != r && (r.pause(), r.currentTime = null != (n = null == (t = o.editMetadata) ? true : t.start) ? n : 0)
+    null == (e = z.current) || e.cancel(), null != r && (r.pause(), r.currentTime = null != (n = null == (t = o.editMetadata) ? true : t.start) ? n : 0)
   }, [null == (n = o.editMetadata) ? true : n.start]), V = l.useCallback(e => {
     var t, n;
     (null == (n = e.relatedTarget) || null == (t = n.parentElement) ? true : t.parentElement) !== e.currentTarget.parentElement && H()
@@ -112,13 +111,13 @@ let I = function(e) {
       onFocus: A,
       onMouseOver: A,
       onMouseLeave: H,
-      children: [(0, r.jsx)(T, {
+      children: [(0, r.jsx)(I, {
         clip: o,
         isNew: p,
         videoRef: D
       }), (0, r.jsxs)("div", {
         className: k.clipFooter,
-        children: [(0, r.jsx)(M, {
+        children: [(0, r.jsx)(T, {
           clip: o,
           focused: Z,
           onFocus: A
@@ -134,7 +133,7 @@ let I = function(e) {
           children: Y
         }), (0, r.jsxs)("div", {
           className: k.usersAndDelete,
-          children: [(0, r.jsx)(y.Z, {
+          children: [(0, r.jsx)(h.Z, {
             maxUsers: 4,
             users: w,
             onFocusOverflow: e => {
@@ -144,7 +143,7 @@ let I = function(e) {
               (null == a ? true : a.parentElement) !== i && (null == a || null == (l = a.parentElement) || null == (r = l.parentElement) ? true : r.parentElement) !== i && A()
             },
             "aria-label": S.intl.string(S.t.WTozwc)
-          }), Z && (0, r.jsx)(z, {
+          }), Z && (0, r.jsx)(_, {
             clip: o,
             actionsDisabled: c,
             exporting: s,
@@ -163,7 +162,7 @@ let I = function(e) {
   })
 };
 
-function T(e) {
+function I(e) {
   let {
     clip: t,
     isNew: n,
@@ -176,7 +175,7 @@ function T(e) {
   }, [t.length, t.editMetadata]), u = "".concat(c.seconds()).padStart(2, "0");
   return (0, r.jsxs)("div", {
     className: k.clipThumbContainer,
-    children: [(0, r.jsx)(_, {
+    children: [(0, r.jsx)(M, {
       clip: t,
       videoRef: a
     }), (0, r.jsxs)("div", {
@@ -211,40 +210,39 @@ function T(e) {
   })
 }
 
-function M(e) {
+function T(e) {
   var t;
   let {
     clip: n,
     focused: a,
-    onFocus: o
-  } = e, [s, c] = l.useState(n.name), u = !n.name, [d, b] = l.useState(false), [g, j] = l.useState(null != (t = n.name) ? t : ""), [h, y] = l.useState(false), x = async () => {
-    y(true), await (0, w.Tm)(n.id, {
-      name: "" === g ? true : g
-    }), y(false), b(false)
+    onFocus: i
+  } = e, [o, s] = l.useState(n.name), c = !n.name, [u, d] = l.useState(false), [m, b] = l.useState(null != (t = n.name) ? t : ""), [g, j] = l.useState(false), y = async () => {
+    j(true), await (0, w.Tm)(n.id, {
+      name: "" === m ? true : m
+    }), j(false), d(false)
   };
   return (l.useEffect(() => {
-    if (s !== n.name) {
+    if (o !== n.name) {
       var e;
-      c(n.name), j(null != (e = n.name) ? e : "")
+      s(n.name), b(null != (e = n.name) ? e : "")
     }
-  }, [n.name, s]), d) ? (0, r.jsx)(m.Is, {
-    inputClassName: i()(Z["heading-lg/medium"], k.clipTitleInput),
+  }, [n.name, o]), u) ? (0, r.jsx)(f.oil, {
     onClick: e => e.stopPropagation(),
-    value: g,
+    value: m,
     autoFocus: true,
     onKeyDown: e => {
-      "Enter" === e.key && x()
+      "Enter" === e.key && y()
     },
-    disabled: h,
-    onChange: j,
-    onBlur: x
+    disabled: g,
+    onChange: b,
+    onBlur: y
   }) : (0, r.jsxs)(f.P3F, {
     className: k.clipTitleInputPlaceholder,
-    onFocus: o,
+    onFocus: i,
     onClick: e => {
-      e.stopPropagation(), b(true)
+      e.stopPropagation(), d(true)
     },
-    children: [u ? (0, r.jsx)(f.X6q, {
+    children: [c ? (0, r.jsx)(f.X6q, {
       className: k.clipTitle,
       color: "text-muted",
       variant: "heading-lg/medium",
@@ -265,7 +263,7 @@ function M(e) {
   })
 }
 
-function _(e) {
+function M(e) {
   let {
     clip: t,
     videoRef: n
@@ -288,7 +286,7 @@ function _(e) {
   })
 }
 
-function z(e) {
+function _(e) {
   let {
     clip: t,
     exporting: n,
@@ -315,7 +313,7 @@ function z(e) {
     className: k.buttonContainer,
     children: [null != o && (0, r.jsx)(f.ua7, {
       text: S.intl.string(S.t.oyYWHB),
-      children: e => (0, r.jsx)(m.zx, D(L({}, e), {
+      children: e => (0, r.jsx)(m.zx, L(Z({}, e), {
         disabled: a,
         color: p ? m.zx.Colors.RED : m.zx.Colors.PRIMARY,
         onClick: b,
@@ -330,7 +328,7 @@ function z(e) {
       }))
     }), (0, r.jsx)(f.ua7, {
       text: S.intl.string(S.t.bt75u7),
-      children: e => (0, r.jsx)(m.zx, D(L({}, e), {
+      children: e => (0, r.jsx)(m.zx, L(Z({}, e), {
         disabled: a,
         color: m.zx.Colors.PRIMARY,
         onClick: g,
@@ -361,7 +359,7 @@ function z(e) {
           }
           return l
         }(e, ["onBlur"]);
-        return (0, r.jsx)(m.zx, D(L({}, l), {
+        return (0, r.jsx)(m.zx, L(Z({}, l), {
           disabled: a && !n,
           submitting: n,
           color: m.zx.Colors.BRAND,

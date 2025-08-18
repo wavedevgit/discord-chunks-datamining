@@ -1,14 +1,13 @@
 /** Chunk was on 31649 **/
 /** chunk id: 211065, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
   Chunk410575 = require("./410575.jsx"),
@@ -38,7 +37,7 @@ function w(t, e, n) {
   }) : t[e] = n, t
 }
 
-function N(t) {
+function P(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = null != arguments[e] ? arguments[e] : {},
       l = Object.keys(n);
@@ -51,7 +50,7 @@ function N(t) {
   return t
 }
 
-function E(t, e) {
+function N(t, e) {
   return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
     var n = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
@@ -64,17 +63,17 @@ function E(t, e) {
   }), t
 }
 
-function D(t) {
+function E(t) {
   return (0, l.jsxs)("div", {
-    className: P.statusOptionItem,
-    children: [(0, l.jsx)(u.qbd, {
+    className: y.statusOptionItem,
+    children: [(0, l.jsx)(s.qbd, {
       status: t.value,
       size: 10,
-      className: P.statusIcon
+      className: y.statusIcon
     }), t.label]
   })
 }
-class I extends Chunk647438.PureComponent {
+class D extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       sourceAnalyticsLocations: t,
@@ -118,51 +117,41 @@ class I extends Chunk647438.PureComponent {
       children: (0, Chunk951288.jsxs)("div", {
         className: Chunk486384.inputContainer,
         children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk486384.emojiButtonContainer,
-          children: (0, Chunk951288.jsx)(Chunk481060.yRy, {
-            targetElementRef: this.emojiButtonRef,
-            renderPopout: this.renderEmojiPicker,
-            position: "left",
-            animation: Chunk481060.yRy.Animation.NONE,
-            align: "top",
-            children: (t, e) => {
-              let {
-                isShown: n
-              } = e;
-              return (0, l.jsx)(m.Z, E(N({}, t), {
-                ref: this.emojiButtonRef,
-                active: n,
-                className: P.emojiButton,
-                tabIndex: 0,
-                renderButtonContents: this.getEmojiButtonRenderer()
-              }))
-            }
-          })
-        }), (0, Chunk951288.jsx)(Chunk755721.Is, {
+          className: Chunk486384.emojiButtonContainer
+        }), (0, Chunk951288.jsx)(Chunk481060.oil, {
           maxLength: Chunk875425.s0,
           value: exports,
-          inputClassName: Chunk486384.input,
           placeholder: Chunk388032.intl.string(Chunk388032.t["zYR38/"]),
           onChange: this.handleStatusChange,
-          onKeyPress: this.handleKeyPress,
-          autoFocus: true
-        }), exports.length > 0 || null != require ? (0, Chunk951288.jsx)(Chunk481060.P3F, {
-          focusProps: {
-            offset: {
-              top: 8,
-              bottom: 8,
-              left: false,
-              right: false
-            }
+          onKeyDown: this.handleKeyPress,
+          autoFocus: true,
+          clearable: {
+            show: exports.length > 0 || null != require
           },
-          className: Chunk486384.clearButton,
-          onClick: this.handleClearStatus,
-          children: (0, Chunk951288.jsx)(Chunk481060.k$p, {
-            size: "md",
-            color: "currentColor",
-            className: Chunk486384.clearIcon
-          })
-        }) : null]
+          onClear: this.handleClearStatus,
+          leading: {
+            type: "emoji",
+            button: (0, Chunk951288.jsx)(Chunk481060.yRy, {
+              targetElementRef: this.emojiButtonRef,
+              renderPopout: this.renderEmojiPicker,
+              position: "left",
+              animation: Chunk481060.yRy.Animation.NONE,
+              align: "top",
+              children: (t, e) => {
+                let {
+                  isShown: n
+                } = e;
+                return (0, l.jsx)(d.Z, N(P({}, t), {
+                  ref: this.emojiButtonRef,
+                  active: n,
+                  className: y.emojiButton,
+                  tabIndex: 0,
+                  renderButtonContents: this.getEmojiButtonRenderer()
+                }))
+              }
+            })
+          }
+        })]
       })
     })
   }
@@ -180,7 +169,7 @@ class I extends Chunk647438.PureComponent {
         options: Chunk875425.wS.map(t => ({
           value: t,
           key: t,
-          label: (0, C.Z)(t)
+          label: (0, v.Z)(t)
         })),
         onChange: this.handleChangeClearAfter
       })
@@ -196,13 +185,13 @@ class I extends Chunk647438.PureComponent {
       children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
         maxVisibleItems: 4,
         value: module,
-        options: Chunk875425.Df.map(t => E(N({}, t), {
+        options: Chunk875425.Df.map(t => N(P({}, t), {
           value: t.value,
           key: t.value,
           label: t.label()
         })),
         onChange: this.handleChangeStatus,
-        renderOptionLabel: D
+        renderOptionLabel: E
       })
     })
   }
@@ -211,7 +200,7 @@ class I extends Chunk647438.PureComponent {
       transitionState: t,
       onClose: e
     } = this.props;
-    return (0, Chunk951288.jsx)(Chunk410575.Z, E(N({}, this.analyticsLocation), {
+    return (0, Chunk951288.jsx)(Chunk410575.Z, N(P({}, this.analyticsLocation), {
       children: (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
         transitionState: module,
         className: Chunk486384.modalRoot,
@@ -258,8 +247,8 @@ class I extends Chunk647438.PureComponent {
     super(...t), w(this, "emojiButtonRef", a.createRef()), w(this, "state", {
       emojiInfo: null != this.props.customStatus ? this.props.customStatus.emoji : null,
       text: null != this.props.customStatus && null != this.props.customStatus.state ? this.props.customStatus.state : "",
-      clearAfter: (0, O.Z)(),
-      status: (0, v.Z)()
+      clearAfter: (0, j.Z)(),
+      status: (0, O.Z)()
     }), w(this, "handleClearStatus", () => {
       this.setState({
         emojiInfo: null,
@@ -302,12 +291,12 @@ class I extends Chunk647438.PureComponent {
         text: l,
         clearAfter: a,
         status: r
-      } = this.state, i = h.co.getSetting();
-      i !== r && (0, p.Z)({
+      } = this.state, i = p.co.getSetting();
+      i !== r && (0, f.Z)({
         nextStatus: r,
         prevStatus: i,
         analyticsContext: t
-      }), (0, j.Z)({
+      }), (0, g.Z)({
         text: l,
         emojiInfo: n,
         clearAfter: a,
@@ -321,7 +310,7 @@ class I extends Chunk647438.PureComponent {
       } = t, {
         onClose: n
       } = this.props;
-      return (0, l.jsx)(f.Z, {
+      return (0, l.jsx)(m.Z, {
         closePopout: e,
         onSelectEmoji: t => {
           let {
@@ -330,13 +319,13 @@ class I extends Chunk647438.PureComponent {
           } = t;
           this.handleEmojiChange(n), l && e()
         },
-        pickerIntention: T.Hz.STATUS,
+        pickerIntention: _.Hz.STATUS,
         onNavigateAway: n
       })
     })
   }
 }
-let Z = Chunk442837.ZP.connectStores([Chunk293273.Z, Chunk594174.default], () => {
+let I = Chunk442837.ZP.connectStores([Chunk293273.Z, Chunk594174.default], () => {
   let t = Chunk594174.default.getCurrentUser();
   return i()(null != module, "CustomStatusModal: user cannot be null"), {
     customStatus: Chunk293273.Z.getCustomStatusActivity(),
@@ -344,4 +333,4 @@ let Z = Chunk442837.ZP.connectStores([Chunk293273.Z, Chunk594174.default], () =>
   }
 }, {
   forwardRef: true
-})(I)
+})(D)

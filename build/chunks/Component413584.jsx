@@ -55,7 +55,7 @@ function A(e) {
   return e
 }
 
-function k(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,7 +67,7 @@ function k(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = "WELCOME_CHANNEL",
+let k = "WELCOME_CHANNEL",
   M = e => {
     var t;
     let l, {
@@ -89,7 +89,7 @@ let L = "WELCOME_CHANNEL",
           let {
             default: e
           } = await n.e("73196").then(n.bind(n, 514698));
-          return t => (0, r.jsx)(e, k(A({}, t), {
+          return t => (0, r.jsx)(e, L(A({}, t), {
             onConfirm: () => {
               h(), t.onClose()
             },
@@ -100,7 +100,7 @@ let L = "WELCOME_CHANNEL",
         })
       },
       [, G] = (0, c.c)({
-        type: L,
+        type: k,
         item: {
           channel: o,
           index: _
@@ -110,7 +110,7 @@ let L = "WELCOME_CHANNEL",
         }
       }),
       [, U] = (0, d.L)({
-        accept: L,
+        accept: k,
         hover: e => {
           f(e.channel, _, false)
         },
@@ -143,7 +143,7 @@ let L = "WELCOME_CHANNEL",
           let {
             default: e
           } = await n.e("68535").then(n.bind(n, 602320));
-          return t => (0, r.jsx)(e, k(A({}, t), {
+          return t => (0, r.jsx)(e, L(A({}, t), {
             guildId: s,
             welcomeChannel: o,
             onChannelReorder: f,
@@ -192,7 +192,7 @@ let L = "WELCOME_CHANNEL",
       null != t && (o()(e, a.channels) || ((0, y.Es)(t.id, {
         channels: e
       }), p(true)))
-    }, L = e => {
+    }, k = e => {
       null != t && e !== a.enabled && ((0, y.Es)(t.id, {
         enabled: e
       }), x(!s), p(true))
@@ -252,14 +252,14 @@ let L = "WELCOME_CHANNEL",
             let {
               default: e
             } = await n.e("90542").then(n.bind(n, 184782));
-            return n => (0, r.jsx)(e, k(A({}, n), {
+            return n => (0, r.jsx)(e, L(A({}, n), {
               guildId: t.id,
               isPreview: true
             }))
           })
         },
         onToggle: S || (null == N ? true : N.length) !== 0 ? () => {
-          L(!S)
+          k(!S)
         } : true,
         animateStatus: b,
         firstLine: S ? Z.intl.string(Z.t.JbB7Qk) : Z.intl.string(Z.t["/bd0Qk"]),
@@ -330,7 +330,7 @@ let L = "WELCOME_CHANNEL",
                 channels: t
               }), R(t), 0 === t.length && S && ((0, y.VP)({
                 enabled: false
-              }), L(false))
+              }), k(false))
             },
             onChannelReorder: G,
             isDropHovered: n === c,

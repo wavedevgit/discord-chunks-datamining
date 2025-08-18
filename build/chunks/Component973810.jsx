@@ -1,7 +1,7 @@
 /** Chunk was on 52030 **/
 /** chunk id: 973810, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./388685.js"), require("./49124.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,12 +15,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function g(e) {
   let {
     mfaChallenge: t,
     finish: n,
-    setSlide: m,
-    onClose: g,
+    setSlide: g,
+    onClose: m,
     headerAlignStart: x
   } = e, [p, S] = r.useState(false), [j, b] = r.useState(null), {
     challenge: y
@@ -48,7 +48,7 @@ function m(e) {
   };
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(u.Z.SlideHeader, {
-      onClose: g,
+      onClose: m,
       headerAlignStart: x
     }), null != j && (0, l.jsx)(u.Z.SlideContent, {
       children: (0, l.jsx)(u.Z.SlideError, {
@@ -56,7 +56,7 @@ function m(e) {
       })
     }), (0, l.jsx)(u.Z.SlideFooter, {
       mfaChallenge: t,
-      setSlide: m,
+      setSlide: g,
       leadingButton: (0, l.jsx)(a.zxk, {
         variant: "primary",
         text: f.intl.string(f.t.Xr3Ekp),

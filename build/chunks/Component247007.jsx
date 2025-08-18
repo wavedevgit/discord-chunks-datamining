@@ -27,7 +27,7 @@ function N(e) {
     guildInfo: i,
     onClick: a,
     submitting: s
-  } = e, o = null != (t = x.ZP.getGuildIconURL({
+  } = e, o = null != (t = f.ZP.getGuildIconURL({
     id: i.id,
     icon: i.icon,
     size: 40
@@ -42,7 +42,7 @@ function N(e) {
       children: (0, r.jsx)(h.Z, {
         className: _.guildIcon,
         iconSrc: o,
-        guild: (0, p.yS)((n = function(e) {
+        guild: (0, g.yS)((n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -93,20 +93,20 @@ let E = e => {
     guildsInfo: i,
     setGuildId: s,
     forceGuildScrollHeight: m
-  } = e, [h, x] = l.useState(null), [p, v] = l.useState(true), [E, S] = l.useState(null), y = () => t(f.tF.SUBMIT_SCHOOL), j = i;
-  return null != p && "" !== p && (j = i.filter(e => o()(p.toLowerCase(), e.name.toLowerCase()))), (0, r.jsxs)("div", {
+  } = e, [h, f] = l.useState(null), [g, v] = l.useState(true), [E, S] = l.useState(null), y = () => t(p.tF.SUBMIT_SCHOOL), j = i;
+  return null != g && "" !== g && (j = i.filter(e => o()(g.toLowerCase(), e.name.toLowerCase()))), (0, r.jsxs)("div", {
     className: _.container,
     children: [(0, r.jsx)(c.X6q, {
       className: a()(_.centerText, _.header),
       variant: "heading-xl/semibold",
-      children: g.intl.string(g.t.mOMeiY)
+      children: x.intl.string(x.t.mOMeiY)
     }), (0, r.jsx)("div", {
       className: _.description,
       children: (0, r.jsx)(c.Text, {
         className: _.centerText,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: g.intl.format(g.t.dZeiTE, {
+        children: x.intl.format(x.t.dZeiTE, {
           onJoinWaitlist: y
         })
       })
@@ -116,17 +116,13 @@ let E = e => {
       }),
       children: [(0, r.jsxs)("div", {
         className: _.searchContainer,
-        children: [(0, r.jsx)(c.Rj2, {
-          placeholder: g.intl.string(g.t["5h0QOD"]),
-          className: _.searchBox,
-          inputClassName: _.searchBoxInput,
-          searchIconClassName: _.searchBoxIcon,
-          closeIconClassName: _.searchBoxIcon,
+        children: [(0, r.jsx)(c.E1j, {
+          placeholder: x.intl.string(x.t["5h0QOD"]),
           onChange: e => {
             v(e)
           },
-          label: g.intl.string(g.t["5h0QOD"]),
-          searchTerm: p,
+          "aria-label": x.intl.string(x.t["5h0QOD"]),
+          query: null != g ? g : "",
           onClear: () => {
             v(true)
           }
@@ -142,11 +138,11 @@ let E = e => {
           return true === e ? null : (0, r.jsx)(N, {
             guildInfo: e,
             onClick: (l = e.id, async () => {
-              x(null), s(l), S(l);
+              f(null), s(l), S(l);
               try {
-                await d.Z.sendVerificationEmail(n, true, l), t(f.tF.VERIFY_PIN)
+                await d.Z.sendVerificationEmail(n, true, l), t(p.tF.VERIFY_PIN)
               } catch (e) {
-                x(new u.Hx(e))
+                f(new u.Hx(e))
               } finally {
                 S(null)
               }
@@ -163,11 +159,11 @@ let E = e => {
           }), (0, r.jsx)(c.X6q, {
             className: a()(_.centerText, _.header),
             variant: "heading-xl/semibold",
-            children: g.intl.string(g.t["1eUrDQ"])
+            children: x.intl.string(x.t["1eUrDQ"])
           }), (0, r.jsx)(c.Text, {
             className: _.centerText,
             variant: "text-md/normal",
-            children: g.intl.format(g.t.flgDKC, {
+            children: x.intl.format(x.t.flgDKC, {
               onJoinWaitlist: y
             })
           })]

@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk888113 = require("./888113.js");
-let x = (r = window.GLOBAL_ENV.INVITE_HOST, o = "", null == r && (r = location.host, o = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(o, "/"));
+let N = (r = window.GLOBAL_ENV.INVITE_HOST, o = "", null == r && (r = location.host, o = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(o, "/"));
 
 function y(e) {
   let {
@@ -66,13 +66,13 @@ function y(e) {
   return {
     content: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsxs)(u.xBx, {
-        className: N.header,
+        className: x.header,
         direction: p.Z.Direction.VERTICAL,
         separator: false,
         children: [(0, a.jsx)(u.X6q, {
           variant: "heading-xl/bold",
           color: "header-primary",
-          className: N.title,
+          className: x.title,
           children: h.intl.string(h.t.riOUtL)
         }), (0, a.jsx)(u.Text, {
           variant: "text-md/normal",
@@ -82,18 +82,16 @@ function y(e) {
       }), (0, a.jsxs)(u.hzk, {
         children: [(0, a.jsx)("form", {
           onSubmit: O,
-          className: N.inputForm,
+          className: x.inputForm,
           children: (0, a.jsx)(u.xJW, {
             title: h.intl.string(h.t.qreV29),
             error: v,
-            titleClassName: l()(N.formTitle, {
-              [N.error]: null != v
+            titleClassName: l()(x.formTitle, {
+              [x.error]: null != v
             }),
-            children: (0, a.jsx)(c.Is, {
+            children: (0, a.jsx)(u.oil, {
               value: s,
               onChange: y,
-              className: N.input,
-              inputClassName: N.inputInner,
               inputRef: T
             })
           })
@@ -101,12 +99,12 @@ function y(e) {
           color: "header-secondary",
           variant: "text-xs/normal",
           children: h.intl.format(h.t.lHTZl5, {
-            examples: "".concat(x).concat("wumpus-friends", ", ").concat("hTKzmak")
+            examples: "".concat(N).concat("wumpus-friends", ", ").concat("hTKzmak")
           })
         }), (0, a.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          className: N.connectCTA,
+          className: x.connectCTA,
           children: h.intl.format(h.t["8F/who"], {
             onClick: () => {
               r(), f.Z.open(b.oAB.CONNECTIONS)
@@ -123,7 +121,7 @@ function y(e) {
         disabled: 0 === s.length,
         loading: j
       }), (0, a.jsx)(c.zx, {
-        className: N.__invalid_skipButton,
+        className: x.__invalid_skipButton,
         look: c.zx.Looks.BLANK,
         size: c.zx.Sizes.MIN,
         onClick: t,

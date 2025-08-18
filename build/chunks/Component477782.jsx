@@ -1,62 +1,60 @@
 /** Chunk was on 33356 **/
 /** chunk id: 477782, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => d
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk117984 = require("./117984.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk662971 = require("./662971.js");
 
-function h(e) {
+function d(e) {
   let {
     onClose: t,
     transitionState: n
-  } = e, h = (0, l.Dt)(), [u, x] = i.useState("");
-  return (0, a.jsx)("form", {
+  } = e, d = (0, r.Dt)(), [h, u] = a.useState("");
+  return (0, i.jsx)("form", {
     onSubmit: function(e) {
-      e.preventDefault(), (0, o.CM)(u), t()
+      e.preventDefault(), (0, l.CM)(h), t()
     },
-    children: (0, a.jsxs)(r.Y0X, {
+    children: (0, i.jsxs)(s.Y0X, {
       transitionState: n,
-      "aria-labelledby": h,
+      "aria-labelledby": d,
       parentComponent: "AddFavoriteCategoryModal",
-      children: [(0, a.jsxs)(r.hzk, {
-        children: [(0, a.jsx)(r.X6q, {
-          id: h,
-          className: d.header,
+      children: [(0, i.jsxs)(s.hzk, {
+        children: [(0, i.jsx)(s.X6q, {
+          id: d,
+          className: c.header,
           variant: "heading-xl/semibold",
-          children: c.intl.string(c.t["ISN+ND"])
-        }), (0, a.jsx)(r.olH, {
+          children: o.intl.string(o.t["ISN+ND"])
+        }), (0, i.jsx)(s.olH, {
           onClick: t,
-          className: d.closeButton
-        }), (0, a.jsx)(r.xJW, {
-          title: c.intl.string(c.t.OCAkGB),
-          className: d.name,
-          children: (0, a.jsx)(s.Is, {
-            value: u,
-            onChange: x,
+          className: c.closeButton
+        }), (0, i.jsx)(s.xJW, {
+          title: o.intl.string(o.t.OCAkGB),
+          className: c.name,
+          children: (0, i.jsx)(s.oil, {
+            value: h,
+            onChange: u,
             maxLength: 100,
-            placeholder: c.intl.string(c.t.eTVbt7),
-            className: d.__invalid_inputWrapper,
+            placeholder: o.intl.string(o.t.eTVbt7),
             autoFocus: true
           })
         })]
-      }), (0, a.jsx)(r.mzw, {
-        children: (0, a.jsxs)(r.hE2, {
+      }), (0, i.jsx)(s.mzw, {
+        children: (0, i.jsxs)(s.hE2, {
           direction: "horizontal-reverse",
-          children: [(0, a.jsx)(r.zxk, {
+          children: [(0, i.jsx)(s.zxk, {
             variant: "primary",
-            text: c.intl.string(c.t["ISN+ND"]),
+            text: o.intl.string(o.t["ISN+ND"]),
             type: "submit",
-            disabled: "" === u
-          }), (0, a.jsx)(r.zxk, {
+            disabled: "" === h
+          }), (0, i.jsx)(s.zxk, {
             variant: "secondary",
-            text: c.intl.string(c.t["ETE/oK"]),
+            text: o.intl.string(o.t["ETE/oK"]),
             onClick: t
           })]
         })

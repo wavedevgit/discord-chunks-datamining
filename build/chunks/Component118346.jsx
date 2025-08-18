@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk624463 = require("./624463.js");
 
 function u() {
-  let [e, t] = Chunk647438.useState(false), [n, o] = Chunk647438.useState(false), [u, d] = Chunk647438.useState(false);
+  let [e, t] = Chunk647438.useState(false), [n, s] = Chunk647438.useState(false), [u, d] = Chunk647438.useState(false);
   Chunk647438.useEffect(() => {
     let e;
     return require && (e = setTimeout(() => {
@@ -69,7 +69,7 @@ function m(e) {
   let {
     isUserVerified: t
   } = e, n = t ? a.intl.string(a.t.qY1jHB) : a.intl.string(a.t.c6EUJC);
-  return (0, r.jsx)(o.PU, {
+  return (0, r.jsx)(s.PU, {
     className: c.editableRequirementContainer,
     icon: l._XJ,
     text: n,

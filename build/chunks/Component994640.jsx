@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk330966 = require("./330966.js");
-let g = (0, Chunk313201.hQ)(),
+let x = (0, Chunk313201.hQ)(),
   _ = e => {
     let {
       setStep: t,
@@ -28,8 +28,8 @@ let g = (0, Chunk313201.hQ)(),
       invite: v,
       onClose: N,
       isNUXFlow: E
-    } = e, [S, y] = l.useState(null), [j, I] = l.useState(false), b = async e => {
-      e.preventDefault(), y(null), I(true);
+    } = e, [S, y] = l.useState(null), [j, b] = l.useState(false), I = async e => {
+      e.preventDefault(), y(null), b(true);
       try {
         var r, l, a, s, o;
         let e = null != (o = null != (s = null == v || null == (r = v.guild) ? true : r.id) ? s : null == (l = m.Z.getChannel(null == v || null == (a = v.channel) ? true : a.id)) ? true : l.getGuildId()) ? o : true;
@@ -40,75 +40,75 @@ let g = (0, Chunk313201.hQ)(),
       } catch (e) {
         y(new d.Hx(e))
       } finally {
-        I(false)
+        b(false)
       }
-    }, O = p.intl.string(p.t.H1jCHB), C = p.intl.string(p.t.YfeHRE);
-    if (E) O = p.intl.string(p.t.LVyxND), C = p.intl.string(p.t.ECd7Rk);
+    }, O = g.intl.string(g.t.H1jCHB), T = g.intl.string(g.t.YfeHRE);
+    if (E) O = g.intl.string(g.t.LVyxND), T = g.intl.string(g.t.ECd7Rk);
     else if ((null == v ? true : v.guild) != null && v.guild.id !== h.fQ && (null == v ? true : v.approximate_member_count) != null) {
       let {
         name: e
       } = v.guild;
-      O = p.intl.formatToPlainString(p.t["4T4+p6"], {
+      O = g.intl.formatToPlainString(g.t["4T4+p6"], {
         guildName: e,
         count: v.approximate_member_count
       })
     }
     return (0, r.jsxs)("div", {
-      className: f.container,
+      className: p.container,
       children: [(0, r.jsx)("div", {
-        className: f.topImage
+        className: p.topImage
       }), (0, r.jsx)(o.X6q, {
-        className: a()(f.centerText, f.header),
+        className: a()(p.centerText, p.header),
         variant: "heading-xl/semibold",
         children: O
       }), (0, r.jsx)("div", {
-        className: f.descriptionWidth,
+        className: p.descriptionWidth,
         children: (0, r.jsx)(o.Text, {
-          className: f.centerText,
+          className: p.centerText,
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: C
+          children: T
         })
       }), (0, r.jsxs)("form", {
-        className: f.formContent,
-        onSubmit: b,
+        className: p.formContent,
+        onSubmit: I,
         children: [(0, r.jsxs)(o.xJW, {
           children: [(0, r.jsx)(o.vwX, {
-            id: g,
-            children: p.intl.string(p.t.kmCxkZ)
+            id: x,
+            children: g.intl.string(g.t.kmCxkZ)
           }), (0, r.jsx)(o.oil, {
-            placeholder: p.intl.string(p.t.ImAOh4),
+            placeholder: g.intl.string(g.t.ImAOh4),
             onChange: e => {
               u(e)
             },
             error: null == S ? true : S.getAnyErrorMessage(),
-            "aria-labelledby": g
+            "aria-labelledby": x
           })]
         }), (0, r.jsx)(o.Text, {
           color: "header-secondary",
-          className: f.formDescription,
+          className: p.formDescription,
           variant: "text-sm/normal",
-          children: p.intl.string(p.t.Cv7mmJ)
+          children: g.intl.string(g.t.Cv7mmJ)
         }), (0, r.jsx)(s.zx, {
           type: "submit",
           size: s.zx.Sizes.LARGE,
           color: s.zx.Colors.BRAND,
-          className: f.submitButton,
+          className: p.submitButton,
           submitting: j,
-          children: p.intl.string(p.t["8vmKOz"])
+          children: g.intl.string(g.t["8vmKOz"])
         }), (0, r.jsx)(o.Text, {
-          className: f.termsPhrase,
+          className: p.termsPhrase,
           color: "header-secondary",
           variant: "text-xs/normal",
-          children: p.intl.format(p.t.RPT0vr, {
-            termsURL: x.EYA.TERMS,
-            privacyURL: x.EYA.PRIVACY
+          children: g.intl.format(g.t.RPT0vr, {
+            termsURL: f.EYA.TERMS,
+            privacyURL: f.EYA.PRIVACY
           })
         }), E && (0, r.jsx)(s.zx, {
           look: s.zx.Looks.LINK,
           onClick: N,
-          className: f.cancelButton,
-          children: p.intl.string(p.t.hO6qJy)
+          className: p.cancelButton,
+          children: g.intl.string(g.t.hO6qJy)
         })]
       })]
     })

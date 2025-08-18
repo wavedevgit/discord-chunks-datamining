@@ -2,11 +2,10 @@
 /** chunk id: 837651, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  default: () => C
+  default: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk816814 = require("./816814.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -16,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk186603 = require("./186603.js");
 
-function g(e, t, r) {
+function p(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: true,
@@ -24,62 +23,62 @@ function g(e, t, r) {
     writable: true
   }) : e[t] = r, e
 }
-let f = e => {
+let g = e => {
   let {
     image: t,
     label: r,
     text: i,
-    children: s
+    children: o
   } = e;
-  return (0, n.jsxs)(c.Z, {
-    className: p.spacing,
-    children: [(0, n.jsx)(c.Z, {
+  return (0, n.jsxs)(a.Z, {
+    className: h.spacing,
+    children: [(0, n.jsx)(a.Z, {
       grow: 0,
       shrink: 0,
       basis: "156px",
-      justify: c.Z.Justify.CENTER,
-      className: p.image,
+      justify: a.Z.Justify.CENTER,
+      className: h.image,
       children: t
-    }), (0, n.jsx)(c.Z, {
-      direction: c.Z.Direction.VERTICAL,
-      justify: c.Z.Justify.CENTER,
+    }), (0, n.jsx)(a.Z, {
+      direction: a.Z.Direction.VERTICAL,
+      justify: a.Z.Justify.CENTER,
       children: (0, n.jsxs)("div", {
-        children: [(0, n.jsx)(o.vwX, {
+        children: [(0, n.jsx)(s.vwX, {
           tag: "h5",
-          className: p.headerSpacing,
+          className: h.headerSpacing,
           children: r
-        }), (0, n.jsx)(o.R94, {
-          type: o.R94.Types.DESCRIPTION,
+        }), (0, n.jsx)(s.R94, {
+          type: s.R94.Types.DESCRIPTION,
           children: i
-        }), s]
+        }), o]
       })
     })]
   })
 };
-class _ extends Chunk647438.PureComponent {
+class f extends Chunk647438.PureComponent {
   render() {
     var e;
     let {
       transitionState: t,
       onClose: i
     } = this.props, {
-      totpSecret: a,
-      code: g,
-      isVerifying: _
-    } = this.state, C = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.email, E = (0, Chunk287880.U0)(null != C ? C : "", Chunk816814), S = (0, Chunk951288.jsx)("form", {
+      totpSecret: o,
+      code: p,
+      isVerifying: f
+    } = this.state, _ = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.email, C = (0, Chunk287880.U0)(null != _ ? _ : "", Chunk816814), E = (0, Chunk951288.jsx)("form", {
       onSubmit: this.handleActivate,
       children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
         className: Chunk186603.inputContainer,
         align: Chunk600164.Z.Align.START,
-        children: [(0, Chunk951288.jsx)(Chunk755721.Is, {
-          value: g,
-          className: Chunk186603.input,
+        children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
+          value: p,
           placeholder: "000 000",
           maxLength: 7,
           autoComplete: "one-time-code",
           onChange: this.handleCodeChange,
           error: this.state.error,
-          autoFocus: true
+          autoFocus: true,
+          fullWidth: true
         }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
           grow: 0,
           shrink: 0,
@@ -87,7 +86,7 @@ class _ extends Chunk647438.PureComponent {
             variant: "primary",
             text: Chunk388032.intl.string(Chunk388032.t["/a5+YW"]),
             type: "submit",
-            loading: _
+            loading: f
           })
         })]
       })
@@ -117,7 +116,7 @@ class _ extends Chunk647438.PureComponent {
           })
         })]
       }), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
-        children: [(0, Chunk951288.jsx)(f, {
+        children: [(0, Chunk951288.jsx)(g, {
           image: (0, Chunk951288.jsx)("img", {
             alt: "",
             src: require("./340061.js"),
@@ -131,9 +130,9 @@ class _ extends Chunk647438.PureComponent {
           })
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
           className: Chunk186603.divider
-        }), (0, Chunk951288.jsx)(f, {
+        }), (0, Chunk951288.jsx)(g, {
           image: (0, Chunk951288.jsx)(Chunk198993.ZP, {
-            text: E
+            text: C
           }),
           label: Chunk388032.intl.string(Chunk388032.t["91InFx"]),
           text: Chunk388032.intl.string(Chunk388032.t.hFeBkp),
@@ -152,29 +151,29 @@ class _ extends Chunk647438.PureComponent {
           })
         }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
           className: Chunk186603.divider
-        }), (0, Chunk951288.jsx)(f, {
+        }), (0, Chunk951288.jsx)(g, {
           image: (0, Chunk951288.jsx)("img", {
             alt: "",
             src: require("./308777.js")
           }),
           label: Chunk388032.intl.string(Chunk388032.t["SaD/LS"]),
           text: Chunk388032.intl.string(Chunk388032.t.vI1ziY),
-          children: S
+          children: E
         })]
       })]
     })
   }
   constructor(...e) {
-    super(...e), g(this, "state", {
+    super(...e), p(this, "state", {
       code: "",
-      totpSecret: (0, u.bV)(),
+      totpSecret: (0, d.bV)(),
       error: null,
       isVerifying: false
-    }), g(this, "handleCodeChange", e => {
+    }), p(this, "handleCodeChange", e => {
       this.setState({
         code: e
       })
-    }), g(this, "handleActivate", e => {
+    }), p(this, "handleActivate", e => {
       e.preventDefault();
       let {
         totpSecret: t,
@@ -182,14 +181,14 @@ class _ extends Chunk647438.PureComponent {
       } = this.state;
       this.setState({
         isVerifying: true
-      }), a.Z.enable({
+      }), o.Z.enable({
         code: r,
-        secret: (0, u.Qe)(t)
+        secret: (0, d.Qe)(t)
       }).then(this.handleActivateSuccess, e => this.setState({
         error: e.body.message,
         isVerifying: false
       }))
-    }), g(this, "handleActivateSuccess", () => {
+    }), p(this, "handleActivateSuccess", () => {
       let {
         onClose: e,
         handleEnableMFASuccess: t
@@ -200,4 +199,4 @@ class _ extends Chunk647438.PureComponent {
     })
   }
 }
-let C = _
+let _ = f

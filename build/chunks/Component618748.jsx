@@ -38,7 +38,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk459560 = require("./459560.js");
 
-function k(e) {
+function L(e) {
   let {
     application: t,
     guild: n
@@ -78,7 +78,7 @@ function k(e) {
   })
 }
 
-function L(e) {
+function k(e) {
   let {
     application: t
   } = e, {
@@ -189,7 +189,7 @@ function G(e) {
         children: D.intl.string(D.t.KyGv0t)
       }), (0, r.jsx)(y.Z, {
         guild: n
-      }), c && (0, r.jsx)(L, {
+      }), c && (0, r.jsx)(k, {
         application: s
       }), (0, r.jsxs)("div", {
         className: A.tabBarContainer,
@@ -242,7 +242,7 @@ function G(e) {
           })
         })]
       }), t]
-    }), (0, r.jsx)(k, {
+    }), (0, r.jsx)(L, {
       application: s,
       guild: n
     })]

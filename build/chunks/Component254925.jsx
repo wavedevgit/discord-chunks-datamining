@@ -51,8 +51,8 @@ let P = function() {
   });
   if (null == w || null == R) return null;
   let A = Chunk580685.Y.VISIBLE.has(R.visibility),
-    k = (0, Chunk731722.up)(w),
-    L = !k || (null == R ? true : R.tag) == null,
+    L = (0, Chunk731722.up)(w),
+    k = !L || (null == R ? true : R.tag) == null,
     M = null != (e = R.badge) ? module : Chunk131085.QV["0"],
     G = null != (t = R.badgeColorPrimary) ? exports : Chunk131085.Ek["0"].primary,
     U = null != (n = R.badgeColorSecondary) ? require : Chunk131085.Ek["0"].secondary,
@@ -60,7 +60,7 @@ let P = function() {
       children: [(0, Chunk951288.jsx)(Chunk388661.Z, {
         className: Chunk616397.section,
         guildId: w.id,
-        isDisabled: L,
+        isDisabled: k,
         tag: null != (P = R.tag) ? P : "",
         badge: M,
         primaryColor: G,
@@ -108,7 +108,7 @@ let P = function() {
               })
             })
           })]
-        }), k ? (0, Chunk951288.jsxs)("div", {
+        }), L ? (0, Chunk951288.jsxs)("div", {
           className: Chunk616397.enableSwitchContainer,
           children: [(0, Chunk951288.jsx)("label", {
             htmlFor: "enable-server-tag",
@@ -119,9 +119,9 @@ let P = function() {
             })
           }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
             id: "enable-server-tag",
-            checked: !L,
+            checked: !k,
             onChange: () => {
-              if (L) {
+              if (k) {
                 var e;
                 Chunk434404.Z.updateGuildProfile(w.id, {
                   tag: null != (e = R.tag) ? module : "",
@@ -141,7 +141,7 @@ let P = function() {
               (0, Chunk441536.Z)(w.id, Chunk100527.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), Chunk434404.Z.close()
             }
           })
-        }), L ? (0, Chunk951288.jsx)(Chunk481060.nuw, {
+        }), k ? (0, Chunk951288.jsx)(Chunk481060.nuw, {
           children: (0, Chunk951288.jsx)("div", {
             className: Chunk616397.disabledForm,
             children: B
@@ -155,7 +155,7 @@ let P = function() {
           badge: M,
           primaryColor: G,
           secondaryColor: U
-        }), !L && (0, Chunk951288.jsx)(Chunk58909.Z, {
+        }), !k && (0, Chunk951288.jsx)(Chunk58909.Z, {
           guildId: w.id
         })]
       })]

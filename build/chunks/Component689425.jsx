@@ -2,15 +2,16 @@
 /** chunk id: 689425, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk603113 = require("./603113.js"),
   Chunk748780 = require("./748780.js"),
   Chunk374470 = require("./374470.js"),
   Chunk981631 = require("./981631.js");
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,19 +20,19 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      c(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
-let d = (e, t) => {
+let f = (e, t) => {
     let {
       x: n,
       y: r
@@ -41,8 +42,8 @@ let d = (e, t) => {
     } = t;
     return Math.pow(n - i, 2) + Math.pow(r - a, 2)
   },
-  f = 9;
-class _ extends(r = Chunk647438.PureComponent) {
+  _ = 9;
+class p extends(r = Chunk647438.PureComponent) {
   componentDidMount() {
     let {
       initialX: e,
@@ -59,7 +60,7 @@ class _ extends(r = Chunk647438.PureComponent) {
       i = !(arguments.length > 4) || true === arguments[4] || arguments[4];
     i && this.grabDimensions();
     let a = this.translate(e, t);
-    o.Z.spring(this.state.position, u({
+    s.Z.spring(this.state.position, d({
       toValue: {
         x: a.x,
         y: a.y
@@ -96,18 +97,18 @@ class _ extends(r = Chunk647438.PureComponent) {
     } = this.state, {
       className: n,
       children: r
-    } = this.props, a = [0, 1], s = ["0px", "1px"], l = Chunk748780.Z.accelerate(u({
+    } = this.props, a = [0, 1], o = ["0px", "1px"], l = Chunk748780.Z.accelerate(d({
       pointerEvents: module ? "none" : "auto",
       cursor: module ? "grabbing" : "grab",
       transform: [{
         translateX: exports.x.interpolate({
           inputRange: Chunk647438,
-          outputRange: Chunk374470
+          outputRange: Chunk603113
         })
       }, {
         translateY: exports.y.interpolate({
           inputRange: Chunk647438,
-          outputRange: Chunk374470
+          outputRange: Chunk603113
         })
       }]
     }, this.props.style));
@@ -115,18 +116,18 @@ class _ extends(r = Chunk647438.PureComponent) {
       ref: this._ref,
       className: require,
       onMouseDown: this.handleMouseDown,
-      style: Chunk981631,
+      style: Chunk374470,
       onDragStart: this.handleHTMLDragStart,
       children: r
     })
   }
   constructor(e) {
-    super(e), c(this, "_ref", a.createRef()), c(this, "_height", 0), c(this, "_width", 0), c(this, "_dragStart", {
+    super(e), u(this, "_ref", a.createRef()), u(this, "_height", 0), u(this, "_width", 0), u(this, "_dragStart", {
       x: 0,
       y: 0
-    }), c(this, "_offsetX", 0), c(this, "_offsetY", 0), c(this, "_removeListeners", () => {}), c(this, "handleHTMLDragStart", e => {
+    }), u(this, "_offsetX", 0), u(this, "_offsetY", 0), u(this, "_removeListeners", () => {}), u(this, "handleHTMLDragStart", e => {
       e.preventDefault()
-    }), c(this, "handleMouseDown", e => {
+    }), u(this, "handleMouseDown", e => {
       let {
         dragAnywhere: t,
         disabled: n,
@@ -136,7 +137,7 @@ class _ extends(r = Chunk647438.PureComponent) {
       let {
         position: i
       } = this.state, a = e.target;
-      if (e.button === l.AeJ.PRIMARY && (t || null != r && a.matches(r))) {
+      if (e.button === c.AeJ.PRIMARY && (t || null != r && a.matches(r))) {
         this.grabDimensions(), this._dragStart = {
           x: e.clientX,
           y: e.clientY
@@ -146,7 +147,7 @@ class _ extends(r = Chunk647438.PureComponent) {
           t.removeEventListener("mousemove", this.handleMouseMove), t.removeEventListener("mouseup", this.handleMouseUp)
         }
       }
-    }), c(this, "handleMouseMove", e => {
+    }), u(this, "handleMouseMove", e => {
       e.preventDefault();
       let {
         onDragStart: t,
@@ -157,40 +158,41 @@ class _ extends(r = Chunk647438.PureComponent) {
       let {
         dragging: i,
         dragging: a
-      } = this.state;
-      !i && d(this._dragStart, {
+      } = this.state, s = i;
+      !i && f(this._dragStart, {
         x: e.clientX,
         y: e.clientY
-      }) > f && (i = true), i && (this.animateToPosition(e.clientX - this._offsetX, e.clientY - this._offsetY, {
+      }) > _ && (s = true), s && (this.animateToPosition(e.clientX - this._offsetX, e.clientY - this._offsetY, {
         tension: 80,
         friction: 8
-      }, null, false), this.setState({
-        dragging: i
-      }, () => {
-        a || null == t || t(e.clientX, e.clientY), null == n || n(e.clientX, e.clientY)
+      }, null, false), (0, o.flushSync)(() => {
+        this.setState({
+          dragging: s
+        }), a || null == t || t(e.clientX, e.clientY), null == n || n(e.clientX, e.clientY)
       }))
-    }), c(this, "handleMouseUp", e => {
-      this._removeListeners(), this.state.dragging && this.setState({
-        dragging: false
-      }, () => {
+    }), u(this, "handleMouseUp", e => {
+      this._removeListeners(), this.state.dragging && (0, o.flushSync)(() => {
+        this.setState({
+          dragging: false
+        });
         let {
           onDragEnd: t
         } = this.props;
         null == t || t(e.clientX, e.clientY)
       })
     });
-    let t = new o.Z.Value(e.initialX),
-      n = new o.Z.Value(e.initialY);
+    let t = new s.Z.Value(e.initialX),
+      n = new s.Z.Value(e.initialY);
     this.state = {
       dragging: false,
-      position: new o.Z.ValueXY({
+      position: new s.Z.ValueXY({
         x: t,
         y: n
       })
     }
   }
 }
-c(_, "defaultProps", {
+u(p, "defaultProps", {
   maxX: 0,
   maxY: 0,
   initialX: 0,
@@ -198,4 +200,4 @@ c(_, "defaultProps", {
   disabled: false,
   dragAnywhere: false
 });
-let p = _
+let h = p

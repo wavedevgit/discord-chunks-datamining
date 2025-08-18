@@ -18,7 +18,7 @@ function d(e) {
     onClose: c,
     isSlideReady: u,
     headerAlignStart: h
-  } = e, [f, m] = r.useState(false), [g, x] = r.useState(null), [p, S] = r.useState(""), j = r.useRef(null);
+  } = e, [f, g] = r.useState(false), [m, x] = r.useState(null), [p, S] = r.useState(""), j = r.useRef(null);
   return r.useEffect(() => {
     if (u) {
       var e;
@@ -26,14 +26,14 @@ function d(e) {
     }
   }, [u]), (0, l.jsxs)("form", {
     onSubmit: e => {
-      e.preventDefault(), m(true), x(null), n({
+      e.preventDefault(), g(true), x(null), n({
         mfaType: "totp",
         data: p
       }).catch(e => {
         var t, n;
         x(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
       }).finally(() => {
-        m(false)
+        g(false)
       })
     },
     children: [(0, l.jsx)(a.Z.SlideHeader, {
@@ -54,7 +54,7 @@ function d(e) {
           spellCheck: "false",
           disabled: f
         }), (0, l.jsx)(a.Z.SlideError, {
-          error: g
+          error: m
         })]
       })
     }), (0, l.jsx)(a.Z.SlideFooter, {

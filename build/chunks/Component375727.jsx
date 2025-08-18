@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk33309 = require("./33309.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
@@ -34,33 +34,33 @@ let S = new Chunk710845.Z("EmojiStudio"),
     var t;
     let {
       userImage: n,
-      guildId: i
-    } = e, [h, w] = l.useState(n), k = (0, o.e7)([g.Z, f.Z, p.Z], () => {
+      guildId: a
+    } = e, [m, w] = l.useState(n), k = (0, o.e7)([g.Z, f.Z, p.Z], () => {
       let e = f.Z.getGuildId(),
         t = g.Z.getGuild(e);
       return p.Z.can(D.Plq.CREATE_GUILD_EXPRESSIONS, t) && null != t ? t.id : null
-    }), [M, R] = l.useState(null != i ? i : k), [P, L] = l.useState(null), [Z, z] = l.useState(null), [G, U] = l.useState(""), [W, B] = l.useState(null), [F, H] = l.useState(() => Date.now()), V = l.useRef(0), J = l.useRef(0), Y = l.useRef(false), K = l.useCallback(e => {
+    }), [M, R] = l.useState(null != a ? a : k), [P, L] = l.useState(null), [Z, z] = l.useState(null), [G, U] = l.useState(""), [W, B] = l.useState(null), [F, H] = l.useState(() => Date.now()), V = l.useRef(0), J = l.useRef(0), Y = l.useRef(false), K = l.useCallback(e => {
       let {
         reason: t
       } = e, n = null != P ? P : Z;
       v.default.track(D.rMx.EMOJI_STUDIO_ENDED, {
         reason: t,
         is_initial: 0 === V.current,
-        has_image: null != h,
+        has_image: null != m,
         error: null == n ? null : String(n),
         throttled_edit_count: J.current,
         session_duration_ms: Date.now() - F,
         has_guild_selected: null != M
       })
-    }, [P, Z, F, h, M]);
-    (0, m.zq)(() => {
+    }, [P, Z, F, m, M]);
+    (0, h.zq)(() => {
       Y.current || K({
         reason: "closed"
       })
     });
     let X = l.useCallback(async () => {
         if (L(null), null == M) return void L(_.ze.MISSING_GUILD);
-        if (null == h || (null == h ? true : h.file) == null || null == W) return void L(_.ze.MISSING_IMAGE_DATA);
+        if (null == m || (null == m ? true : m.file) == null || null == W) return void L(_.ze.MISSING_IMAGE_DATA);
         let e = null;
         try {
           e = await (0, d.rS)({
@@ -81,7 +81,7 @@ let S = new Chunk710845.Z("EmojiStudio"),
           emoji: e,
           guildId: M
         })
-      }, [M, h, W, K, G]),
+      }, [M, m, W, K, G]),
       q = l.useCallback(() => {
         K({
           reason: "back_button"
@@ -104,27 +104,27 @@ let S = new Chunk710845.Z("EmojiStudio"),
           var n, r;
           if ("" !== t) return t;
           let l = null != (r = null == e || null == (n = e.file) ? true : n.name) ? r : "",
-            i = l.lastIndexOf("."),
-            a = false === i ? l : l.substring(0, i);
-          return x.ZP.sanitizeEmojiName(a)
+            a = l.lastIndexOf("."),
+            i = false === a ? l : l.substring(0, a);
+          return x.ZP.sanitizeEmojiName(i)
         }), B(null != (t = null == e ? true : e.data) ? t : null)
       }, []);
     return (0, r.jsxs)("main", {
-      className: a()(I.main, {
-        [I.checkerboard]: null != h
+      className: i()(I.main, {
+        [I.checkerboard]: null != m
       }),
       children: [(0, r.jsx)(c.X6q, {
         variant: "heading-lg/medium",
         color: "header-primary",
         className: I.heading,
         children: y.intl.string(y.t.iMJO39)
-      }), null == h ? (0, r.jsx)(O.u, {
+      }), null == m ? (0, r.jsx)(O.u, {
         setImage: ee
       }) : (0, r.jsx)("div", {
         className: I.editor,
         children: (0, r.jsx)(C.v, {
-          file: h.file,
-          imageUri: h.data,
+          file: m.file,
+          imageUri: m.data,
           onUpdate: $,
           onThrottledEdit: Q
         })
@@ -175,7 +175,7 @@ let S = new Chunk710845.Z("EmojiStudio"),
               selected: M,
               onError: e => z(e),
               labelledBy: "guild-selector-label",
-              isEmojiAnimated: (0, s.v)(null == h || null == (t = h.file) ? true : t.type)
+              isEmojiAnimated: (0, s.v)(null == m || null == (t = m.file) ? true : t.type)
             }), null != Z && (0, r.jsx)(E.H, {
               error: Z,
               variant: "text-xs/medium",
@@ -196,11 +196,11 @@ let S = new Chunk710845.Z("EmojiStudio"),
             className: I.submit,
             onClick: X,
             fullWidth: true,
-            disabled: null == h || null == M || G.length < 2 || null != Z,
+            disabled: null == m || null == M || G.length < 2 || null != Z,
             children: y.intl.string(y.t.DU0dy8)
           })]
         })]
-      }), null != h ? (0, r.jsx)(T, {
+      }), null != m ? (0, r.jsx)(T, {
         back: q
       }) : (0, r.jsx)(c.olH, {
         onClick: () => (0, c.Mr3)(_.Hj),

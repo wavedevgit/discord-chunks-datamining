@@ -1,12 +1,12 @@
 /** Chunk was on 36605 **/
 /** chunk id: 451893, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js");
-let s = [{
+let o = [{
   position: 0,
   alpha: 0
 }, {
@@ -47,47 +47,47 @@ let s = [{
   alpha: 1
 }];
 
-function o(e) {
+function s(e) {
   let {
     className: t,
     children: n,
-    containerRef: o,
+    containerRef: s,
     faderSize: a,
     faderEdgeThreshold: c
   } = e, u = i.useRef(null), [d, m] = i.useState(0), [f, h] = i.useState(0), [p, x] = i.useState(0), g = i.useCallback(() => {
     null != u.current && (m(u.current.getDistanceFromTop()), h(u.current.getDistanceFromBottom()), x(u.current.getScrollerState().offsetHeight))
   }, []);
   i.useEffect(() => {
-    if (g(), null == o.current) return;
+    if (g(), null == s.current) return;
     let e = new ResizeObserver(() => {
       g()
     });
-    return e.observe(o.current), () => {
+    return e.observe(s.current), () => {
       e.disconnect()
     }
-  }, [u, o, g]);
+  }, [u, s, g]);
   let b = i.useMemo(() => {
     if (0 === d && 0 === f) return {};
     let e = [];
     if (e.push("to bottom"), d > 0) {
       let t = c > 0 ? 1 - Math.min(c, d) / c : 1;
-      for (let n = 0; n < s.length; n++) {
+      for (let n = 0; n < o.length; n++) {
         let {
           position: r,
           alpha: i
-        } = s[n], l = (r * a).toFixed(2);
+        } = o[n], l = (r * a).toFixed(2);
         e.push("hsla(0, 0%, 0%, ".concat(t + i * (1 - t), ") ").concat(l, "px"))
       }
     }
     if (f > 0) {
       let t = p - a,
         n = c > 0 ? 1 - Math.min(c, f) / c : 1;
-      for (let r = s.length - 1; r >= 0; r--) {
+      for (let r = o.length - 1; r >= 0; r--) {
         let {
           position: i,
           alpha: l
-        } = s[r], o = (t + (1 - i) * a).toFixed(2);
-        e.push("hsla(0, 0%, 0%, ".concat(n + l * (1 - n), ") ").concat(o, "px"))
+        } = o[r], s = (t + (1 - i) * a).toFixed(2);
+        e.push("hsla(0, 0%, 0%, ".concat(n + l * (1 - n), ") ").concat(s, "px"))
       }
     }
     return {

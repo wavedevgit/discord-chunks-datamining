@@ -1,70 +1,70 @@
 /** Chunk was on 25070 **/
 /** chunk id: 670794, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => c
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk82659 = require("./82659.jsx"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk194359 = require("./194359.js"),
   Chunk51144 = require("./51144.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk467438 = require("./467438.js");
+  Chunk388032 = require("./388032.jsx");
 
-function d(t) {
+function c(t) {
   let {
     user: n,
     nickname: i,
-    transitionState: d,
-    onClose: x
-  } = t, [h, m] = a.useState(false), [f, g] = a.useState(i), b = a.useRef(null), v = async t => {
-    t.preventDefault(), m(true);
+    transitionState: c,
+    onClose: d
+  } = t, [p, h] = l.useState(false), [x, g] = l.useState(i), m = l.useRef(null), f = async t => {
+    t.preventDefault(), h(true);
     try {
-      await r.Z.updateRelationship(n.id, f), x()
+      await r.Z.updateRelationship(n.id, x), d()
     } catch (t) {} finally {
-      m(false)
+      h(false)
     }
-  }, k = null == i ? c.intl.string(c.t.BGYkaG) : c.intl.string(c.t["8pOYUF"]);
+  }, b = null == i ? o.intl.string(o.t.BGYkaG) : o.intl.string(o.t["8pOYUF"]);
   return (0, e.jsx)("form", {
-    onSubmit: v,
-    children: (0, e.jsxs)(l.Modal, {
-      title: k,
-      transitionState: d,
-      subtitle: c.intl.string(c.t["NdQ+lJ"]),
-      onClose: x,
+    onSubmit: f,
+    children: (0, e.jsx)(a.Modal, {
+      title: b,
+      transitionState: c,
+      subtitle: o.intl.string(o.t["NdQ+lJ"]),
+      onClose: d,
       actions: [{
-        text: c.intl.string(c.t["ETE/oK"]),
-        onClick: x,
+        text: o.intl.string(o.t["ETE/oK"]),
+        onClick: d,
         variant: "secondary"
       }, {
-        text: c.intl.string(c.t.R3BPHx),
-        onSubmit: v,
+        text: o.intl.string(o.t.R3BPHx),
+        onSubmit: f,
         variant: "primary",
-        disabled: h,
+        disabled: p,
         type: "submit"
       }],
-      children: [(0, e.jsx)(u.xJW, {
-        title: c.intl.string(c.t.pqG6GR),
-        children: (0, e.jsx)(s.Is, {
-          inputRef: b,
-          value: null != f ? f : "",
-          placeholder: o.ZP.getName(n),
-          onChange: g,
-          maxLength: 32,
-          className: p.input,
-          autoFocus: true
-        })
-      }), (0, e.jsx)(u.Avr, {
-        onClick: () => {
-          var t;
-          g(null), null == (t = b.current) || t.focus()
-        },
-        text: c.intl.string(c.t["9qSBvL"]),
-        textVariant: "text-sm/medium",
-        type: "button"
-      })]
+      children: (0, e.jsxs)(s.Kqy, {
+        gap: 8,
+        children: [(0, e.jsx)(s.xJW, {
+          title: o.intl.string(o.t.pqG6GR),
+          children: (0, e.jsx)(s.oil, {
+            inputRef: m,
+            value: null != x ? x : "",
+            placeholder: u.ZP.getName(n),
+            onChange: g,
+            maxLength: 32,
+            autoFocus: true
+          })
+        }), (0, e.jsx)(s.Avr, {
+          onClick: () => {
+            var t;
+            g(null), null == (t = m.current) || t.focus()
+          },
+          text: o.intl.string(o.t["9qSBvL"]),
+          textVariant: "text-sm/medium",
+          type: "button"
+        })]
+      })
     })
   })
 }

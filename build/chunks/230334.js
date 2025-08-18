@@ -5,7 +5,6 @@ module.exports = {
   form: "form__97cfe",
   formItem: "formItem__97cfe",
   topicFormItem: "topicFormItem__97cfe",
-  textInput: "textInput__97cfe",
   warning: "warning__97cfe",
   broadcastInfoDescription: "broadcastInfoDescription__97cfe",
   broadcastInfoTooltip: "broadcastInfoTooltip__97cfe",

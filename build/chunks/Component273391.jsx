@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk36793 = require("./36793.js"),
   Chunk33309 = require("./33309.js"),
   Chunk755721 = require("./755721.js"),
@@ -60,8 +60,8 @@ let j = new Chunk710845.Z("ImageEditor"),
     let {
       file: t,
       imageUri: n,
-      onUpdate: i,
-      onThrottledEdit: m
+      onUpdate: a,
+      onThrottledEdit: h
     } = e, E = l.useRef({
       x: 0,
       y: 0
@@ -76,7 +76,7 @@ let j = new Chunk710845.Z("ImageEditor"),
     }), [L, Z] = l.useState(0), [z, G] = l.useState({
       x: 0,
       y: 0
-    }), [U, W] = l.useState(false), B = "image/gif" === t.type, F = (0, o.v)(t.type), H = F && !B, [V, J] = l.useState(null), Y = (0, d.h)(null != m ? m : f.dG, 500);
+    }), [U, W] = l.useState(false), B = "image/gif" === t.type, F = (0, o.v)(t.type), H = F && !B, [V, J] = l.useState(null), Y = (0, d.h)(null != h ? h : f.dG, 500);
     l.useEffect(() => {
       (0, g.Z)()
     }, []);
@@ -85,7 +85,7 @@ let j = new Chunk710845.Z("ImageEditor"),
         let {
           x: t,
           y: n
-        } = (0, h.U$)(e.x, e.y, R);
+        } = (0, m.U$)(e.x, e.y, R);
         E.current = {
           x: t,
           y: n
@@ -113,7 +113,7 @@ let j = new Chunk710845.Z("ImageEditor"),
           n = E.current.y,
           r = k.height,
           l = k.width,
-          i = D({
+          a = D({
             width: r,
             height: l
           }, T, F);
@@ -123,7 +123,7 @@ let j = new Chunk710845.Z("ImageEditor"),
         }), Z(e), M({
           width: r,
           height: l
-        }), P(i), null == Y || Y()
+        }), P(a), null == Y || Y()
       }, [k, L, K, T, F, Y]),
       $ = l.useCallback(() => {
         if (null == k) return {};
@@ -167,7 +167,7 @@ let j = new Chunk710845.Z("ImageEditor"),
         if (null == w.current || null == k) return;
         let r = Date.now(),
           l = w.current,
-          a = {
+          i = {
             height: p.eT,
             width: p.eT
           },
@@ -178,16 +178,16 @@ let j = new Chunk710845.Z("ImageEditor"),
               image: l,
               cropDimensions: O,
               cropOriginCoordinates: E.current,
-              maxDimensions: a,
+              maxDimensions: i,
               imageRotation: L,
               resizeWidth: p.eT,
               resizeHeight: p.eT
             }, k, T),
             {
               result: r,
-              cancelFn: i
-            } = await (0, h.$p)(n);
-          et.current = i, e = await r
+              cancelFn: a
+            } = await (0, m.$p)(n);
+          et.current = a, e = await r
         } catch (e) {
           j.error("Error cropping GIF", e), o = p.ze.GIF_CROPPING
         } finally {
@@ -197,10 +197,10 @@ let j = new Chunk710845.Z("ImageEditor"),
           image: l,
           cropDimensions: O,
           cropOriginCoordinates: E.current,
-          maxDimensions: a,
+          maxDimensions: i,
           imageRotation: L
         });
-        return i({
+        return a({
           imageData: e,
           imageDataTimestamp: r,
           error: o,
@@ -209,7 +209,7 @@ let j = new Chunk710845.Z("ImageEditor"),
           var e;
           null == (e = et.current) || e.call(et), et.current = null
         }
-      }, [t, L, B, H, i, k, T, n]);
+      }, [t, L, B, H, a, k, T, n]);
     l.useEffect(() => {
       en()
     }, [en, I, L, k, U, T, V]);
@@ -228,7 +228,7 @@ let j = new Chunk710845.Z("ImageEditor"),
       }, n, F))
     }, [F]);
     return (0, r.jsxs)("div", {
-      className: a()(x.imageEditor, {
+      className: i()(x.imageEditor, {
         [x.isDragging]: U
       }),
       style: {
@@ -239,7 +239,7 @@ let j = new Chunk710845.Z("ImageEditor"),
         children: [(0, r.jsx)("img", {
           onLoad: er,
           onError: () => {
-            i({
+            a({
               error: p.ze.IMAGE_LOAD,
               loading: false
             })
@@ -289,13 +289,13 @@ let j = new Chunk710845.Z("ImageEditor"),
               var n, r, l = function(e, t) {
                 if (null == e) return {};
                 var n, r, l = {},
-                  i = Object.keys(e);
-                for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+                  a = Object.keys(e);
+                for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
                 return l
               }(e, t);
               if (Object.getOwnPropertySymbols) {
-                var i = Object.getOwnPropertySymbols(e);
-                for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+                var a = Object.getOwnPropertySymbols(e);
+                for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
               }
               return l
             }(e, ["onClick"]);
@@ -353,8 +353,8 @@ let j = new Chunk710845.Z("ImageEditor"),
     let {
       width: n,
       height: r
-    } = e, l = 240 * t, i = n / r;
-    return n > r ? r = (n = l) / i : n = (r = l) * i, {
+    } = e, l = 240 * t, a = n / r;
+    return n > r ? r = (n = l) / a : n = (r = l) * a, {
       width: n,
       height: r
     }
@@ -364,29 +364,29 @@ function D(e, t, n) {
   let {
     width: r,
     height: l
-  } = C(e, t), i = Math.abs(240 - r) / 2, a = Math.abs(240 - l) / 2;
+  } = C(e, t), a = Math.abs(240 - r) / 2, i = Math.abs(240 - l) / 2;
   return n && (r < 240 || l < 240) ? {
     top: 0,
     bottom: 0,
     left: 0,
     right: 0
   } : {
-    top: a,
-    bottom: -a,
-    left: -i,
-    right: i
+    top: i,
+    bottom: -i,
+    left: -a,
+    right: a
   }
 }
 let y = (e, t, n) => {
   let {
     height: r,
     width: l
-  } = C(t, n), i = (r = Math.min(r, 240)) / (l = Math.min(l, 240)), a = {
+  } = C(t, n), a = (r = Math.min(r, 240)) / (l = Math.min(l, 240)), i = {
     height: r,
     width: l
-  }, s = Math.floor(i < 1 ? p.eT * i : p.eT / i), o = i < 1 ? s : p.eT, u = i > 1 ? s : p.eT;
+  }, s = Math.floor(a < 1 ? p.eT * a : p.eT / a), o = a < 1 ? s : p.eT, u = a > 1 ? s : p.eT;
   return b(_({}, e), {
-    cropDimensions: a,
+    cropDimensions: i,
     resizeHeight: o,
     resizeWidth: u
   })

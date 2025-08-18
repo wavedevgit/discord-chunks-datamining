@@ -1,16 +1,14 @@
 /** Chunk was on 6049 **/
 /** chunk id: 460461, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => w,
-  Z: () => Z
+  J: () => T,
+  Z: () => w
 }), require("./953529.js"), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./35282.js"), require("./804061.js"), require("./704826.js"), require("./413496.js"), require("./433524.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk692547 = require("./692547.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk225433 = require("./225433.jsx"),
   Chunk484614 = require("./484614.jsx"),
   Chunk852860 = require("./852860.jsx"),
   Chunk688465 = require("./688465.jsx"),
@@ -31,8 +29,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk539981 = require("./539981.js");
-let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
-  w = () => {
+let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
+  T = () => {
     let {
       guild: e,
       guildMetadata: t,
@@ -66,32 +64,32 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       }
     })
   },
-  R = () => {
+  P = () => {
     var e;
     let t = Chunk647438.useRef(null),
-      u = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
-      [w, R] = Chunk647438.useState(false);
+      c = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
+      [T, P] = Chunk647438.useState(false);
     Chunk647438.useEffect(() => {
-      w || null == Chunk852860 || ((0, Chunk456268.le)(), (0, Chunk456268.aC)(Chunk852860.id), (0, Chunk456268.i3)(Chunk852860.id), R(true))
-    }, [Chunk852860, w]);
+      T || null == Chunk852860 || ((0, Chunk456268.le)(), (0, Chunk456268.aC)(Chunk852860.id), (0, Chunk456268.i3)(Chunk852860.id), P(true))
+    }, [Chunk852860, T]);
     let {
-      canManageGuild: Z
+      canManageGuild: w
     } = (0, Chunk442837.cj)([Chunk496675.Z], () => ({
       canManageGuild: Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, Chunk852860)
-    })), D = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.isGuildMetadataLoaded()), A = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getMetadata() : null), k = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 && (null == A ? true : A.isPublished) ? Chunk999382.Z.getSlug() : null), [L, M] = Chunk647438.useState([true]), [G, U] = Chunk647438.useState(true), [B, F] = Chunk647438.useState([false]), [H, z] = Chunk647438.useState([""]);
+    })), R = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.isGuildMetadataLoaded()), Z = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getMetadata() : null), D = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 && (null == Z ? true : Z.isPublished) ? Chunk999382.Z.getSlug() : null), [A, L] = Chunk647438.useState([true]), [k, M] = Chunk647438.useState(true), [G, U] = Chunk647438.useState([false]), [B, F] = Chunk647438.useState([""]);
     Chunk647438.useEffect(() => {
-      if (null !== A) {
+      if (null !== Z) {
         let e = [],
           t = [];
-        A.socialLinks.forEach((n, r) => {
+        Z.socialLinks.forEach((n, r) => {
           if ("" !== n) {
             let i = (e => {
               try {
                 var t, n, r, i;
                 let l = new URL(e).hostname.split(".");
-                if (3 === l.length && "bandcamp" === l[1].toLowerCase()) return I.z.bandcamp.presentation;
+                if (3 === l.length && "bandcamp" === l[1].toLowerCase()) return C.z.bandcamp.presentation;
                 let a = null != (n = null == (t = l.shift()) ? true : t.toLowerCase()) ? n : "";
-                if ("www" === a && (a = null != (i = null == (r = l.shift()) ? true : r.toLowerCase()) ? i : ""), a in I.z) return I.z[a].presentation;
+                if ("www" === a && (a = null != (i = null == (r = l.shift()) ? true : r.toLowerCase()) ? i : ""), a in C.z) return C.z[a].presentation;
                 return null
               } catch (e) {
                 return null
@@ -99,58 +97,58 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             })(n);
             null !== i ? (t[r] = i, e[r] = true) : e[r] = false
           } else e[r] = true
-        }), z(exports), M(module), U(module.every(e => true === e))
+        }), F(exports), L(module), M(module.every(e => true === e))
       }
-    }, [A]);
-    let W = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getErrors() : null);
-    if (null == Chunk852860 || null == A) return null;
-    let V = e => {
-        _.Z.updateGuild({
+    }, [Z]);
+    let H = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getErrors() : null);
+    if (null == Chunk852860 || null == Z) return null;
+    let z = e => {
+        j.Z.updateGuild({
           discoverySplash: e
         })
       },
-      Y = e => {
+      W = e => {
         let t = () => {
-          (0, p.W1)(u.id, e), e ? (0, p.Vv)({
-            guildId: u.id,
-            primaryCategoryId: A.primaryCategoryId,
-            keywords: A.keywords,
-            emojiDiscoverabilityEnabled: A.emojiDiscoverabilityEnabled,
-            partnerActionedTimestamp: A.partnerActionedTimestamp,
-            partnerApplicationTimestamp: A.partnerApplicationTimestamp,
+          (0, m.W1)(c.id, e), e ? (0, m.Vv)({
+            guildId: c.id,
+            primaryCategoryId: Z.primaryCategoryId,
+            keywords: Z.keywords,
+            emojiDiscoverabilityEnabled: Z.emojiDiscoverabilityEnabled,
+            partnerActionedTimestamp: Z.partnerActionedTimestamp,
+            partnerApplicationTimestamp: Z.partnerApplicationTimestamp,
             isPublished: true,
-            reasonsToJoin: A.reasonsToJoin,
-            socialLinks: A.socialLinks,
-            about: A.about
-          }) : (0, p.Vv)({
-            guildId: u.id,
-            primaryCategoryId: A.primaryCategoryId,
-            keywords: A.keywords,
-            emojiDiscoverabilityEnabled: A.emojiDiscoverabilityEnabled,
-            partnerActionedTimestamp: A.partnerActionedTimestamp,
-            partnerApplicationTimestamp: A.partnerApplicationTimestamp,
+            reasonsToJoin: Z.reasonsToJoin,
+            socialLinks: Z.socialLinks,
+            about: Z.about
+          }) : (0, m.Vv)({
+            guildId: c.id,
+            primaryCategoryId: Z.primaryCategoryId,
+            keywords: Z.keywords,
+            emojiDiscoverabilityEnabled: Z.emojiDiscoverabilityEnabled,
+            partnerActionedTimestamp: Z.partnerActionedTimestamp,
+            partnerApplicationTimestamp: Z.partnerApplicationTimestamp,
             isPublished: false,
-            reasonsToJoin: A.reasonsToJoin,
-            socialLinks: A.socialLinks,
-            about: A.about
-          }), _.Z.saveGuild(u.id, {
-            discoverySplash: u.discoverySplash,
-            description: u.description
+            reasonsToJoin: Z.reasonsToJoin,
+            socialLinks: Z.socialLinks,
+            about: Z.about
+          }), j.Z.saveGuild(c.id, {
+            discoverySplash: c.discoverySplash,
+            description: c.description
           })
         };
         if (e) return void t();
-        null != u.vanityURLCode ? n.e("66731").then(n.bind(n, 241485)).then(e => {
+        null != c.vanityURLCode ? n.e("66731").then(n.bind(n, 241485)).then(e => {
           e.default.open(t)
         }) : t()
       },
-      K = e => {
+      V = e => {
         let {
           reason: t = "",
           emoji_name: n = ""
         } = e;
         return null !== t && t.length >= 10 && t.length <= 128 && null !== n
       },
-      q = [{
+      Y = [{
         title: Chunk388032.intl.string(Chunk388032.t["/SWsHx"]),
         items: [{
           description: Chunk388032.intl.string(Chunk388032.t.DU8jFx),
@@ -160,21 +158,21 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           completed: null !== Chunk852860.description && "" !== Chunk852860.description
         }, {
           description: Chunk388032.intl.string(Chunk388032.t.m3b3WF),
-          completed: null !== A.about && A.about.length >= 300 && A.about.length <= 2400
+          completed: null !== Z.about && Z.about.length >= 300 && Z.about.length <= 2400
         }, {
           description: Chunk388032.intl.string(Chunk388032.t.qpx5MD),
-          completed: null !== A.reasonsToJoin && A.reasonsToJoin.every(e => (e => {
+          completed: null !== Z.reasonsToJoin && Z.reasonsToJoin.every(e => (e => {
             let {
               reason: t = "",
               emoji_name: n = ""
             } = e;
             return (null === t || "" === t) && null === n
-          })(e) || K(e)) && A.reasonsToJoin.filter(K).length >= 2
+          })(e) || V(e)) && Z.reasonsToJoin.filter(V).length >= 2
         }]
       }],
-      X = (e, t) => {
-        let n = [...B];
-        n[e] = t, F(n)
+      K = (e, t) => {
+        let n = [...G];
+        n[e] = t, U(n)
       };
     return (0, Chunk951288.jsx)("div", {
       className: Chunk539981.settingsColumn,
@@ -206,8 +204,8 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       learnMoreURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SERVER_WEB_PAGES)
                     })]
                   }), (() => {
-                    if (!A.isPublished || null == k) return;
-                    let e = P + k;
+                    if (!Z.isPublished || null == D) return;
+                    let e = S + D;
                     return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
                       className: Chunk539981.noDividerFormSection,
                       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
@@ -241,8 +239,8 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         })]
                       }), (0, Chunk951288.jsx)(Chunk718157.E, {
                         guildId: Chunk852860.id,
-                        guildMetadata: A,
-                        isDisabled: !Z
+                        guildMetadata: Z,
+                        isDisabled: !w
                       }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
                         className: Chunk539981.noDividerFormSection,
                         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
@@ -250,14 +248,14 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           children: Chunk388032.intl.string(Chunk388032.t.oOPlPD)
                         }), (0, Chunk951288.jsx)(Chunk450474.Z, {
                           guild: Chunk852860,
-                          guildMetadata: A,
-                          disabled: !Z
+                          guildMetadata: Z,
+                          disabled: !w
                         })]
-                      }), (null == W ? true : W.category) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+                      }), (null == H ? true : H.category) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
                         color: "text-danger",
                         className: Chunk539981.error,
                         variant: "text-sm/normal",
-                        children: W.category
+                        children: H.category
                       }) : null]
                     })
                   })(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
@@ -278,27 +276,27 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                             size: Chunk755721.zx.Sizes.SMALL,
                             color: Chunk755721.zx.Colors.PRIMARY,
                             children: [Chunk388032.intl.string(Chunk388032.t.yG2pUl), (0, Chunk951288.jsx)(Chunk813197.ZP, {
-                              disabled: !Z,
-                              onChange: V
+                              disabled: !w,
+                              onChange: z
                             })]
                           })]
                         }), (0, Chunk951288.jsx)(Chunk208567.Z, {
                           image: Chunk852860.discoverySplash,
-                          makeURL: e => j.ZP.getGuildDiscoverySplashURL({
-                            id: u.id,
+                          makeURL: e => b.ZP.getGuildDiscoverySplashURL({
+                            id: c.id,
                             splash: e,
-                            size: 512 * (0, h.x_)()
+                            size: 512 * (0, g.x_)()
                           }),
-                          disabled: !Z,
-                          onChange: V,
+                          disabled: !w,
+                          onChange: z,
                           hint: Chunk388032.intl.string(Chunk388032.t.uPvxqK),
                           imageClassName: Chunk539981.imageUploaderInnerSquare,
                           hideSize: true
                         })]
-                      }), (null == W ? true : W.discovery_splash) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+                      }), (null == H ? true : H.discovery_splash) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
                         color: "text-danger",
                         variant: "text-sm/normal",
-                        children: W.discovery_splash
+                        children: H.discovery_splash
                       }) : null]
                     })
                   })(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
@@ -316,21 +314,21 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       placeholder: Chunk388032.intl.string(Chunk388032.t.rFa9Ul),
                       onChange: e => {
                         var t;
-                        _.Z.updateGuild({
+                        j.Z.updateGuild({
                           description: null != (t = null == e ? true : e.replaceAll("\n", "")) ? t : ""
                         })
                       },
                       maxLength: 120,
-                      disabled: !Z
+                      disabled: !w
                     })]
                   }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
                     className: Chunk539981.divider
                   }), (() => {
-                    if (null == A) return null;
-                    let e = 0 === A.reasonsToJoin.length ? [, , , , ].fill({
+                    if (null == Z) return null;
+                    let e = 0 === Z.reasonsToJoin.length ? [, , , , ].fill({
                       reason: "",
                       emoji_name: null
-                    }) : A.reasonsToJoin;
+                    }) : Z.reasonsToJoin;
                     return (0, Chunk951288.jsxs)(Chunk481060.hjN, {
                       children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
                         className: Chunk539981.formTitle,
@@ -347,10 +345,10 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           guildId: Chunk852860.id,
                           reasons: module
                         })
-                      }), (null == W ? true : W.reasons_to_join) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+                      }), (null == H ? true : H.reasons_to_join) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
                         color: "text-danger",
                         variant: "text-sm/normal",
-                        children: W.reasons_to_join
+                        children: H.reasons_to_join
                       }) : null]
                     })
                   })(), (0, Chunk951288.jsx)(Chunk481060.$i$, {
@@ -367,20 +365,20 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       }), (0, Chunk951288.jsx)(Chunk755721.iS, {
                         showCharacterCount: true,
                         className: Chunk539981.textArea,
-                        value: A.about,
+                        value: Z.about,
                         placeholder: Chunk388032.intl.string(Chunk388032.t.TduTbm),
                         onChange: e => {
-                          (0, p.mA)(u.id, e)
+                          (0, m.mA)(c.id, e)
                         },
                         minLength: 300,
                         maxLength: 2400,
-                        disabled: !Z,
-                        defaultDirty: (null == (e = A.about) ? true : module.length) > 0
-                      }, "text-area-".concat(D))]
-                    }), (null == W ? true : W.about) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+                        disabled: !w,
+                        defaultDirty: (null == (e = Z.about) ? true : module.length) > 0
+                      }, "text-area-".concat(R))]
+                    }), (null == H ? true : H.about) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
                       color: "text-danger",
                       variant: "text-sm/normal",
-                      children: W.about
+                      children: H.about
                     }) : null]
                   }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
                     className: Chunk539981.divider
@@ -392,87 +390,83 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       className: Chunk539981.description,
                       type: Chunk481060.geA.DESCRIPTION,
                       children: Chunk388032.intl.string(Chunk388032.t.d3kA9f)
-                    }), A.socialLinks.map((e, t) => (0, r.jsxs)("div", {
-                      className: T.socialLinksContainer,
-                      onMouseOver: () => X(t, true),
-                      onFocus: () => X(t, true),
-                      onMouseOut: () => X(t, false),
-                      onBlur: () => X(t, false),
-                      children: [(0, r.jsx)(o.q4e, {
-                        className: A.isPublished ? T.socialLinksDropdownMax : T.socialLinksDropdownMin,
-                        options: (e => {
-                          let t = Object.entries(I.z).filter(e => !H.includes(e[1].presentation)).map(e => ({
-                            label: e[1].presentation,
-                            value: e[0]
-                          }));
-                          return null == e || "" === e ? t : t.concat({
-                            label: e,
-                            value: e
-                          })
-                        })(H[t]),
-                        placeholder: S.intl.string(S.t.xSALIC),
-                        value: H[t],
-                        onChange: e => ((e, t) => {
-                          let n = [...A.socialLinks],
-                            r = [...H],
-                            i = [...L];
-                          r[t] = e, n[t] = I.z[e].baseUrl, i[t] = true, M(i), z(r), U(i.every(e => true === e)), (0, p.t$)(u.id, n)
-                        })(e, t),
-                        isDisabled: !Z
-                      }, "dropdown-" + t), (0, r.jsx)(s.Is, {
-                        value: e,
-                        className: A.isPublished ? T.socialLinksMax : T.socialLinksMin,
-                        onChange: e => ((e, t) => {
-                          let n = [...A.socialLinks],
-                            r = n[t],
-                            i = e;
-                          0 === r.length && i.length > 1 && false === RegExp("^https?:").test(i) && (i = "https://" + i), /\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) || (n[t] = i, (0, p.t$)(u.id, n))
-                        })(e, t),
-                        placeholder: S.intl.string(S.t.Q6o4pK),
-                        maxLength: 150,
-                        disabled: !Z
-                      }, "link-" + t), L[t] ? (0, r.jsx)(o.owK, {
-                        size: "custom",
-                        className: A.isPublished ? T.validationButtonMax : T.validationButtonMin,
-                        color: a.Z.unsafe_rawColors.GREEN_230.css,
-                        width: 20,
-                        height: 20
-                      }, "validation-passed-" + t) : (0, r.jsx)(o.k$p, {
-                        size: "custom",
-                        className: A.isPublished ? T.validationButtonMax : T.validationButtonMin,
-                        color: a.Z.unsafe_rawColors.RED_400.css,
-                        width: 20,
-                        height: 20
-                      }, "validation-failed-" + t), Z && (0, r.jsx)(c.Z, {
-                        className: B[t] ? A.isPublished ? T.deleteButtonMax : T.deleteButtonMin : A.isPublished ? T.deleteButtonHiddenMax : T.deleteButtonHiddenMin,
-                        onClick: () => (e => {
-                          let t = [...B];
-                          t.splice(e, 1), F(t);
-                          let n = [...L];
-                          n.splice(e, 1), M(n);
-                          let r = [...H];
-                          r.splice(e, 1), z(r);
-                          let i = [...A.socialLinks];
-                          i.splice(e, 1), (0, p.t$)(u.id, i)
-                        })(t)
-                      }, "delete-button-" + t)]
-                    }, "social-container-" + t)), (null == W ? true : W.social_links) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+                    }), Z.socialLinks.map((e, t) => {
+                      let n = B[t],
+                        i = Object.values(C.z).find(e => e.presentation === n),
+                        l = null != i ? "".concat(i.baseUrl) : true;
+                      return (0, r.jsxs)("div", {
+                        className: E.socialLinksContainer,
+                        onMouseOver: () => K(t, true),
+                        onFocus: () => K(t, true),
+                        onMouseOut: () => K(t, false),
+                        onBlur: () => K(t, false),
+                        children: [(0, r.jsx)(s.q4e, {
+                          className: Z.isPublished ? E.socialLinksDropdownMax : E.socialLinksDropdownMin,
+                          options: (e => {
+                            let t = Object.entries(C.z).filter(e => !B.includes(e[1].presentation)).map(e => ({
+                              label: e[1].presentation,
+                              value: e[0]
+                            }));
+                            return null == e || "" === e ? t : t.concat({
+                              label: e,
+                              value: e
+                            })
+                          })(B[t]),
+                          placeholder: I.intl.string(I.t.xSALIC),
+                          value: B[t],
+                          onChange: e => ((e, t) => {
+                            let n = [...Z.socialLinks],
+                              r = [...B],
+                              i = [...A];
+                            r[t] = e, n[t] = C.z[e].baseUrl, i[t] = true, L(i), F(r), M(i.every(e => true === e)), (0, m.t$)(c.id, n)
+                          })(e, t),
+                          isDisabled: !w
+                        }), (0, r.jsx)(s.oil, {
+                          value: e.replace(null != l ? l : "", ""),
+                          onChange: e => ((e, t) => {
+                            let n = [...Z.socialLinks],
+                              r = n[t],
+                              i = e;
+                            0 === r.length && i.length > 1 && false === RegExp("^https?:").test(i) && (i = "https://" + i), /\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) || (n[t] = i, (0, m.t$)(c.id, n))
+                          })("".concat(l).concat(e), t),
+                          placeholder: null != l ? true : I.intl.string(I.t.Q6o4pK),
+                          maxLength: 150,
+                          disabled: !w || null == B[t],
+                          fullWidth: true,
+                          leading: l,
+                          trailing: w ? {
+                            icon: s.XHJ,
+                            "aria-label": I.intl.string(I.t.N86XcH),
+                            onClick: () => (e => {
+                              let t = [...G];
+                              t.splice(e, 1), U(t);
+                              let n = [...A];
+                              n.splice(e, 1), L(n);
+                              let r = [...B];
+                              r.splice(e, 1), F(r);
+                              let i = [...Z.socialLinks];
+                              i.splice(e, 1), (0, m.t$)(c.id, i)
+                            })(t)
+                          } : true
+                        })]
+                      }, "social-container-" + t)
+                    }), (null == H ? true : H.social_links) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
                       color: "text-danger",
                       variant: "text-sm/normal",
-                      children: W.social_links
+                      children: H.social_links
                     }) : null, (0, Chunk951288.jsx)(Chunk481060.zxk, {
                       variant: "secondary",
                       size: "sm",
                       text: Chunk388032.intl.string(Chunk388032.t.QvovjY),
                       onClick: () => {
-                        if (A.socialLinks.length < 9) {
-                          let e = [...A.socialLinks];
-                          (0, Chunk456268.t$)(Chunk852860.id, module.concat("")), z(H.concat(""))
+                        if (Z.socialLinks.length < 9) {
+                          let e = [...Z.socialLinks];
+                          (0, Chunk456268.t$)(Chunk852860.id, module.concat("")), F(B.concat(""))
                         }
                       },
-                      disabled: !Z || A.socialLinks.length >= 9
+                      disabled: !w || Z.socialLinks.length >= 9
                     })]
-                  }), A.isPublished && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+                  }), Z.isPublished && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
                     children: [(0, Chunk951288.jsx)(Chunk481060.$i$, {
                       className: Chunk539981.divider
                     }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
@@ -487,23 +481,23 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         variant: "critical-primary",
                         size: "sm",
                         text: Chunk388032.intl.string(Chunk388032.t["DCHd/P"]),
-                        onClick: () => Y(false),
-                        disabled: !Z
+                        onClick: () => W(false),
+                        disabled: !w
                       })]
                     })]
-                  }), (null == W ? true : W.is_published) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+                  }), (null == H ? true : H.is_published) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
                     color: "text-danger",
                     variant: "text-sm/normal",
-                    children: W.is_published
+                    children: H.is_published
                   }) : null]
-                }), !A.isPublished && (0, Chunk951288.jsx)("div", {
+                }), !Z.isPublished && (0, Chunk951288.jsx)("div", {
                   className: Chunk539981.checklist,
                   children: (0, Chunk951288.jsx)(Chunk970061.Z, {
                     title: Chunk388032.intl.string(Chunk388032.t["2kCyn5"]),
-                    children: q,
+                    children: Y,
                     buttonLabel: Chunk388032.intl.string(Chunk388032.t.tVK6S0),
-                    buttonCallback: () => Y(true),
-                    disabled: !Z || !G
+                    buttonCallback: () => W(true),
+                    disabled: !w || !k
                   })
                 })]
               })
@@ -513,4 +507,4 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       })
     })
   },
-  Z = () => null == (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()) ? null : (0, Chunk951288.jsx)(R, {})
+  w = () => null == (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()) ? null : (0, Chunk951288.jsx)(P, {})

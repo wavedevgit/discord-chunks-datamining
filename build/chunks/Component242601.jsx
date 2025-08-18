@@ -423,26 +423,25 @@ class ey extends Chunk647438.PureComponent {
       }
     }), eg(this, "renderGuildHeaderUpsellPopout", e => {
       let {
-        showGuildBoostingProgressBarUpsell: t,
-        showGuildBoostingProgressBarSizeUpsell: n,
-        showRoleSubscriptionUpsell: i,
-        showInviteSplashUpsell: l,
-        showDiscoveryLandingPageSettingsUpsell: a,
-        showHubPrivacySettingsTooltip: o,
-        showMediaChannelUpsell: s,
-        showTierTemplatesUpsell: c,
-        shouldRenderCustomNotificationSoundsCoachmark: d,
-        shouldRenderGuildPowerupPerkCoachmark: p,
-        shouldRenderBoosterEnhancedRoleColorsCoachmark: f,
-        guild: h,
-        theme: g
+        showGuildBoostingProgressBarSizeUpsell: t,
+        showRoleSubscriptionUpsell: n,
+        showInviteSplashUpsell: i,
+        showDiscoveryLandingPageSettingsUpsell: l,
+        showHubPrivacySettingsTooltip: a,
+        showMediaChannelUpsell: o,
+        showTierTemplatesUpsell: s,
+        shouldRenderCustomNotificationSoundsCoachmark: c,
+        shouldRenderGuildPowerupPerkCoachmark: d,
+        shouldRenderBoosterEnhancedRoleColorsCoachmark: p,
+        guild: f,
+        theme: h
       } = this.props;
-      if (null == h) return this.renderGuildHeaderDropdownButton(e);
-      let m = [];
-      return (o && m.push(u.z.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP), t && m.push(u.z.GUILD_HEADER_PREMIUM_GUILD_PROGRESS), n && m.push(u.z.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK), i && m.push(u.z.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL), l && m.push(u.z.GUILD_HEADER_INVITE_SPLASH), a && m.push(u.z.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL), p && m.push(u.z.GUILD_POWERUP_PERKS_COACHMARK), f && m.push(u.z.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK), 0 === m.length) ? this.renderGuildHeaderDropdownButton(e) : (s && m.push(u.z.MEDIA_CHANNEL_UPSELL), c && m.push(u.z.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL), d && m.push(u.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK), (0, r.jsx)(ea.Z, {
-        contentTypes: m,
-        theme: g,
-        guild: h,
+      if (null == f) return this.renderGuildHeaderDropdownButton(e);
+      let g = [];
+      return (a && g.push(u.z.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP), t && g.push(u.z.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK), n && g.push(u.z.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL), i && g.push(u.z.GUILD_HEADER_INVITE_SPLASH), l && g.push(u.z.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL), d && g.push(u.z.GUILD_POWERUP_PERKS_COACHMARK), p && g.push(u.z.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK), 0 === g.length) ? this.renderGuildHeaderDropdownButton(e) : (o && g.push(u.z.MEDIA_CHANNEL_UPSELL), s && g.push(u.z.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL), c && g.push(u.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK), (0, r.jsx)(ea.Z, {
+        contentTypes: g,
+        theme: h,
+        guild: f,
         renderGuildHeaderDropdownButton: () => this.renderGuildHeaderDropdownButton(e)
       }))
     }), eg(this, "renderGuildHeaderDropdownButton", e => (0, w.jW)({
@@ -509,58 +508,57 @@ function ev(e) {
   i.useEffect(() => {
     n !== ei && er(!V)
   }, [n, ei, V]);
-  let [ea, eo] = (0, v.ZP)(e => [eu.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ed.R.GUILD_HEADER_TOOLTIPS)], s.X), es = (0, y.Z)(o), ep = (0, p.s9z)(p.JQI), ef = (0, c.e7)([X.Z], () => X.Z.hasLayers()), eh = (0, c.e7)([B.Z], () => B.Z.shouldShow(eO)), eg = g && (null == o ? true : o.premiumProgressBarEnabled) === false && !en.s.isDisallowPopupsSet(), em = (0, c.e7)([K.Z], () => K.Z.getMemberCount(n)), eb = g && null != em && em >= 30 && (null == o ? true : o.premiumProgressBarEnabled) === false && !en.s.isDisallowPopupsSet(), e_ = (0, P.Z)(n), eE = (null == o ? true : o.features.has(ec.oNc.HUB)) === true, ev = g && (null == o ? true : o.features.has(ec.oNc.DISCOVERABLE)) === true, eI = (0, E.Q)(), eC = (g || (null == o ? true : o.premiumTier) === ec.Eu4.NONE) && !en.s.isDisallowPopupsSet() && !eI, eS = (0, c.e7)([x.Z, X.Z], () => null != o && null != Z && g && !X.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), eN = (0, c.e7)([F.Z], () => F.Z.getChannel(a)), {
-    isPopoutOpen: eT
-  } = (0, S.y)(), eP = null != (t = null == o ? true : o.features.has(ec.oNc.COMMUNITY)) && t, ej = et.ZP.isNewUser(Z), ex = Y && !ej;
+  let [ea, eo] = (0, v.ZP)(e => [eu.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ed.R.GUILD_HEADER_TOOLTIPS)], s.X), es = (0, y.Z)(o), ep = (0, p.s9z)(p.JQI), ef = (0, c.e7)([X.Z], () => X.Z.hasLayers()), eh = (0, c.e7)([B.Z], () => B.Z.shouldShow(eO)), eg = (0, c.e7)([K.Z], () => K.Z.getMemberCount(n)), em = g && null != eg && eg >= 30 && (null == o ? true : o.premiumProgressBarEnabled) === false && !en.s.isDisallowPopupsSet(), eb = (0, P.Z)(n), e_ = (null == o ? true : o.features.has(ec.oNc.HUB)) === true, eE = g && (null == o ? true : o.features.has(ec.oNc.DISCOVERABLE)) === true, ev = (0, E.Q)(), eI = (g || (null == o ? true : o.premiumTier) === ec.Eu4.NONE) && !en.s.isDisallowPopupsSet() && !ev, eC = (0, c.e7)([x.Z, X.Z], () => null != o && null != Z && g && !X.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), eS = (0, c.e7)([F.Z], () => F.Z.getChannel(a)), {
+    isPopoutOpen: eN
+  } = (0, S.y)(), eT = null != (t = null == o ? true : o.features.has(ec.oNc.COMMUNITY)) && t, eP = et.ZP.isNewUser(Z), ej = Y && !eP;
   (0, N.Z)(o);
-  let eA = (0, I.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
-    eZ = (0, L.Z)(n),
-    ew = (0, T.Z)(n),
-    eL = (0, c.e7)([$.Z], () => $.Z.getChannelId()),
-    eR = (0, c.e7)([J.Z], () => J.Z.desyncedVoiceStatesCount),
-    eD = k.Y.useExperiment({
+  let ex = (0, I.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
+    eA = (0, L.Z)(n),
+    eZ = (0, T.Z)(n),
+    ew = (0, c.e7)([$.Z], () => $.Z.getChannelId()),
+    eL = (0, c.e7)([J.Z], () => J.Z.desyncedVoiceStatesCount),
+    eR = k.Y.useExperiment({
       location: "GuildSidebar"
     }, {
       autoTrackExposure: true
     }).enabled,
-    ek = (0, R.Z)(n),
-    eM = (0, D.Z)(null == Z ? true : Z.id, n) && (null == o ? true : o.premiumProgressBarEnabled) === false;
+    eD = (0, R.Z)(n),
+    ek = (0, D.Z)(null == Z ? true : Z.id, n) && (null == o ? true : o.premiumProgressBarEnabled) === false;
   return (0, r.jsx)(ey, {
     guildId: n,
     hideSelectedChannel: l,
     guild: o,
     scrollToChannel: f,
     selectedChannelId: l ? null : a,
-    selectedChannel: eN,
+    selectedChannel: eS,
     selectedVoiceChannelId: h,
     voiceStates: d,
-    rtcConnectedChannelId: eL,
-    rtcDesyncedVoiceStatesCount: eR,
+    rtcConnectedChannelId: ew,
+    rtcDesyncedVoiceStatesCount: eL,
     isUnavailable: j,
     theme: M,
     user: Z,
     hasChannelNotice: null != es || ea,
     anyLayerOpen: ep || ef,
-    showGuildBoostingProgressBarUpsell: eg,
-    showGuildBoostingProgressBarSizeUpsell: eb,
-    showInviteSplashUpsell: eC,
-    showDiscoveryLandingPageSettingsUpsell: ev,
+    showGuildBoostingProgressBarSizeUpsell: em,
+    showInviteSplashUpsell: eI,
+    showDiscoveryLandingPageSettingsUpsell: eE,
     showGuildHeaderTutorial: eh,
-    showGuildTemplateDirtyTooltip: eS,
-    showRoleSubscriptionUpsell: e_,
-    showHubPrivacySettingsTooltip: eE,
-    showNewUnreadsBar: eP,
-    showMediaChannelUpsell: eZ,
-    showTierTemplatesUpsell: ew,
-    isHeaderPopoutOpen: eT,
+    showGuildTemplateDirtyTooltip: eC,
+    showRoleSubscriptionUpsell: eb,
+    showHubPrivacySettingsTooltip: e_,
+    showNewUnreadsBar: eT,
+    showMediaChannelUpsell: eA,
+    showTierTemplatesUpsell: eZ,
+    isHeaderPopoutOpen: eN,
     enableStudyGroup: G,
     isGuildHeaderDismissibleTooltipShown: eo,
     canShowCoachMarkAtBottom: Y,
     headerAnalyticsLocations: el,
-    isTutorialHighlightDismissed: eA,
-    shouldRenderBurstCoachmark: ex,
-    shouldRenderCustomNotificationSoundsCoachmark: eD,
-    shouldRenderGuildPowerupPerkCoachmark: false === ek,
-    shouldRenderBoosterEnhancedRoleColorsCoachmark: eM
+    isTutorialHighlightDismissed: ex,
+    shouldRenderBurstCoachmark: ej,
+    shouldRenderCustomNotificationSoundsCoachmark: eR,
+    shouldRenderGuildPowerupPerkCoachmark: false === eD,
+    shouldRenderBoosterEnhancedRoleColorsCoachmark: ek
   })
 }

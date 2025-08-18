@@ -153,9 +153,9 @@ function q(e) {
       H.X(e)
     }
   }, v = e => {
-    let t = P.Z.can(G.Plq.ADMINISTRATOR, l) || P.Z.can(G.Plq.MANAGE_ROLES, n, true, true, true);
-    return n.isGuildStageVoice() && O.xS.has(e) ? F.intl.string(F.t.bTS5lZ) : !((!a.fS(e, G.Plq.MANAGE_ROLES) || t) && (null == e || P.Z.can(e, l) || t)) && F.intl.string(F.t.nOtPMD)
-  }, y = t.id === m, E = n.isForumLikeChannel() && a.e$(t.deny, G.Plq.SEND_MESSAGES), w = a.e$(t.deny, G.Plq.SEND_MESSAGES), Z = a.e$(t.deny, G.Plq.READ_MESSAGE_HISTORY), R = B.Z.generateChannelPermissionSpec(m, n, y, {
+    let t = P.Z.can(W.Plq.ADMINISTRATOR, l) || P.Z.can(W.Plq.MANAGE_ROLES, n, true, true, true);
+    return n.isGuildStageVoice() && O.xS.has(e) ? F.intl.string(F.t.bTS5lZ) : !((!a.fS(e, W.Plq.MANAGE_ROLES) || t) && (null == e || P.Z.can(e, l) || t)) && F.intl.string(F.t.nOtPMD)
+  }, y = t.id === m, E = n.isForumLikeChannel() && a.e$(t.deny, W.Plq.SEND_MESSAGES), w = a.e$(t.deny, W.Plq.SEND_MESSAGES), Z = a.e$(t.deny, W.Plq.READ_MESSAGE_HISTORY), R = B.Z.generateChannelPermissionSpec(m, n, y, {
     createPostsDisabled: E,
     sendMessagesDisabled: w,
     readMessageHistoryDisabled: Z,

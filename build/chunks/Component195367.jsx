@@ -109,8 +109,8 @@ function N(e) {
   } = e, {
     entityType: w,
     channelId: D,
-    description: _,
-    name: R,
+    description: R,
+    name: _,
     image: A,
     scheduledEndTime: X,
     scheduledStartTime: L,
@@ -166,8 +166,7 @@ function N(e) {
         title: y.intl.string(y.t["0HbEQ0"]),
         className: b.topicFormItem,
         required: true,
-        children: [(0, r.jsx)(s.Is, {
-          className: b.textInput,
+        children: [(0, r.jsx)(o.oil, {
           onChange: e => {
             Z({
               name: e
@@ -175,7 +174,7 @@ function N(e) {
           },
           placeholder: y.intl.string(y.t["6/yarq"]),
           maxLength: p.p,
-          value: R,
+          value: _,
           autoComplete: "off",
           inputRef: B
         }), (0, r.jsx)(C, {
@@ -214,7 +213,7 @@ function N(e) {
         className: b.formItem,
         children: [(0, r.jsx)(s.iS, {
           placeholder: y.intl.string(y.t["kWO/Ex"]),
-          value: _,
+          value: R,
           onChange: e => {
             Z({
               description: e

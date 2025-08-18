@@ -1,7 +1,7 @@
 /** Chunk was on 6049 **/
 /** chunk id: 1080, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => k
 }), require("./388685.js"), require("./781311.js"), require("./953529.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -236,7 +236,7 @@ let A = Chunk647438.forwardRef(function(e, t) {
   })
 });
 
-function k(e) {
+function L(e) {
   let {
     guildId: t,
     storedSearchQuery: n
@@ -300,7 +300,7 @@ function k(e) {
   }, "bans-header")
 }
 
-function L() {
+function k() {
   var e, t;
   let {
     guild: c,
@@ -319,7 +319,7 @@ function L() {
       null != e && I(t)(e) && r.push(e)
     }
     return r
-  }, [Chunk740903]), Z = Chunk647438.useMemo(() => P(Chunk246946, Chunk479531, Chunk626135), [Chunk246946, P, Chunk479531, Chunk626135]), D = null != Chunk246946, L = Z.length % 1e3 == 0 && Z.length > 0 && D, M = 0 === Z.length, [G, U] = Chunk647438.useState({
+  }, [Chunk740903]), Z = Chunk647438.useMemo(() => P(Chunk246946, Chunk479531, Chunk626135), [Chunk246946, P, Chunk479531, Chunk626135]), D = null != Chunk246946, k = Z.length % 1e3 == 0 && Z.length > 0 && D, M = 0 === Z.length, [G, U] = Chunk647438.useState({
     currentPage: 1,
     pageSize: 100
   });
@@ -334,10 +334,10 @@ function L() {
     F = Chunk647438.useMemo(() => a().chunk(Z, G.pageSize), [G.pageSize, Z]),
     H = Chunk647438.useCallback(e => {
       var t, n, r;
-      null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * G.pageSize > Z.length && L && !p && (z.current = null != (r = null == (n = Z[Z.length - 1]) ? true : n.id) ? r : null, B(z.current)), (null != F[e - 1] || L) && U(t => R(w({}, t), {
+      null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * G.pageSize > Z.length && k && !p && (z.current = null != (r = null == (n = Z[Z.length - 1]) ? true : n.id) ? r : null, B(z.current)), (null != F[e - 1] || k) && U(t => R(w({}, t), {
         currentPage: e
       }))
-    }, [G.pageSize, Z, L, F, B, Chunk367907]),
+    }, [G.pageSize, Z, k, F, B, Chunk367907]),
     z = Chunk647438.useRef(null);
   Chunk647438.useEffect(() => {
     B(z.current)
@@ -348,7 +348,7 @@ function L() {
   }, [F, G.currentPage]);
   return null == Chunk239091 ? null : (0, Chunk951288.jsxs)("div", {
     className: Chunk26682.container,
-    children: [(0, Chunk951288.jsx)(k, {
+    children: [(0, Chunk951288.jsx)(L, {
       guildId: Chunk434404,
       storedSearchQuery: Chunk479531
     }), (0, Chunk951288.jsxs)("div", {
@@ -358,7 +358,7 @@ function L() {
         bans: Chunk246946,
         sortedBans: W,
         ref: Chunk84613
-      }), !L && M && (0, Chunk951288.jsxs)(Chunk481060.ubH, {
+      }), !k && M && (0, Chunk951288.jsxs)(Chunk481060.ubH, {
         theme: Chunk51144,
         className: Chunk26682.emptyState,
         children: [(0, Chunk951288.jsx)(Chunk481060.oxh, {
@@ -378,7 +378,7 @@ function L() {
       className: Chunk26682.__invalid_paginationContainer,
       children: (0, Chunk951288.jsx)(Chunk481060.DsT, {
         className: Chunk26682.paginationInput,
-        totalCount: Z.length + (L ? G.pageSize : 0),
+        totalCount: Z.length + (k ? G.pageSize : 0),
         pageSize: G.pageSize,
         currentPage: G.currentPage,
         onPageChange: H,

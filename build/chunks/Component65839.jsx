@@ -47,18 +47,13 @@ let g = e => {
             variant: "text-md/normal",
             className: h.searchSubtitle,
             children: d.intl.string(d.t["5PoYtr"])
-          }), (0, r.jsx)(o.Rj2, {
-            searchTerm: t,
-            className: h.searchBox,
-            inputClassName: h.searchBoxInput,
-            closeIconClassName: h.closeIcon,
-            searchIconClassName: h.searchIcon,
-            label: d.intl.string(d.t.nL2wKC),
+          }), (0, r.jsx)(o.E1j, {
+            query: t,
+            "aria-label": d.intl.string(d.t.nL2wKC),
             placeholder: d.intl.string(d.t.nL2wKC),
             onChange: n,
             onClear: i,
-            onKeyPress: l,
-            cta: null != t && t.length > 0 ? d.intl.string(d.t["CU+6oK"]) : null
+            onKeyDown: l
           })]
         })
       })]

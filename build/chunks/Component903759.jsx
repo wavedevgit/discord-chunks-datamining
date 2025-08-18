@@ -1,7 +1,7 @@
 /** Chunk was on 67079 **/
 /** chunk id: 903759, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  u: () => m
+  u: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk746622 = require("./746622.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk443899 = require("./443899.js");
-let m = e => {
+let h = e => {
     let {
       setImage: t
     } = e, [n, s] = l.useState(null);
@@ -20,21 +20,21 @@ let m = e => {
       className: d.emptyState,
       children: (0, r.jsxs)("div", {
         className: d.dropZone,
-        children: [(0, r.jsx)(i.FmF, {
+        children: [(0, r.jsx)(a.FmF, {
           size: "lg",
-          color: i.TVs.colors.HEADER_MUTED,
+          color: a.TVs.colors.HEADER_MUTED,
           className: d.imagePlusIcon
         }), (0, r.jsxs)("div", {
           className: d.textContainer,
-          children: [(0, r.jsx)(i.Text, {
+          children: [(0, r.jsx)(a.Text, {
             variant: "text-md/medium",
             children: c.intl.format(c.t["Ks2/3d"], {
-              selectFileHook: (e, n) => (0, r.jsx)(h, {
+              selectFileHook: (e, n) => (0, r.jsx)(m, {
                 translatedContent: e,
                 setUserImage: t
               }, n)
             })
-          }), (0, r.jsx)(i.Text, {
+          }), (0, r.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "text-tertiary",
             children: c.intl.string(c.t.UTE8Cw)
@@ -43,19 +43,19 @@ let m = e => {
           error: o.ze.IMAGE_LOAD,
           variant: "text-sm/normal",
           color: "text-danger"
-        }), (0, r.jsx)(a.X, {
+        }), (0, r.jsx)(i.X, {
           onSuccess: t,
           onError: s
         })]
       })
     })
   },
-  h = e => {
+  m = e => {
     let {
       setUserImage: t,
       translatedContent: n
     } = e;
-    return (0, r.jsx)(i.P3F, {
+    return (0, r.jsx)(a.P3F, {
       focusProps: {
         within: true
       },

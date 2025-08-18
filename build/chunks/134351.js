@@ -14,7 +14,6 @@ module.exports = {
   clipThumbContainer: "clipThumbContainer__1d12e",
   clipFooter: "clipFooter__1d12e",
   clipTitleIcon: "clipTitleIcon__1d12e",
-  clipTitleInput: "clipTitleInput__1d12e",
   clipTitleInputPlaceholder: "clipTitleInputPlaceholder__1d12e",
   clipMetadata: "clipMetadata__1d12e",
   clipTitle: "clipTitle__1d12e",

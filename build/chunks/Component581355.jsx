@@ -1,7 +1,7 @@
 /** Chunk was on 73736 **/
 /** chunk id: 581355, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk785550 = require("./785550.js");
 
-function p(e) {
+function x(e) {
   let {
     guild: t,
     channel: n,
@@ -51,12 +51,12 @@ function p(e) {
         variant: "heading-xl/semibold",
         color: "header-primary",
         className: f.headerTitle,
-        children: null == i ? b.intl.string(b.t.DDF0cH) : b.intl.string(b.t.YPdQOj)
+        children: null == i ? m.intl.string(m.t.DDF0cH) : m.intl.string(m.t.YPdQOj)
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         className: f.headerSubtitle,
-        children: null == i ? b.intl.string(b.t.bqQIwc) : b.intl.string(b.t["I+9bLy"])
+        children: null == i ? m.intl.string(m.t.bqQIwc) : m.intl.string(m.t["I+9bLy"])
       })]
     }), (0, r.jsx)(h.Z, {
       guild: t,
@@ -71,13 +71,13 @@ function p(e) {
   })
 }
 
-function x(e) {
+function p(e) {
   var t, n, {
       channel: d,
       onClose: h,
-      transitionState: b
+      transitionState: m
     } = e,
-    x = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -97,8 +97,8 @@ function x(e) {
     N = i.useMemo(() => c.Z.getStageInstanceByChannel(d.id), [d.id]),
     {
       loading: y,
-      error: I,
-      onSave: O
+      error: O,
+      onSave: I
     } = (0, g.Z)(d, h),
     {
       modalStep: C,
@@ -110,9 +110,9 @@ function x(e) {
       handleDelayedSave: k
     } = (0, _.Z)({
       stageInstance: N,
-      defaultStep: m.lv.STAGE_CHANNEL_SETTINGS,
-      error: I,
-      onSave: O
+      defaultStep: b.lv.STAGE_CHANNEL_SETTINGS,
+      error: O,
+      onSave: I
     });
   return (i.useEffect(() => {
     null == j && h()
@@ -134,9 +134,9 @@ function x(e) {
     }
     return e
   }({
-    transitionState: b,
+    transitionState: m,
     "aria-labelledby": v
-  }, x), n = n = {
+  }, p), n = n = {
     size: a.CgR.SMALL,
     parentComponent: "StageChannelSettingsModal",
     children: (0, r.jsxs)(a.MyZ, {
@@ -144,24 +144,24 @@ function x(e) {
       width: 440,
       onSlideReady: T,
       children: [(0, r.jsx)(a.Mi4, {
-        id: m.lv.STAGE_CHANNEL_SETTINGS,
+        id: b.lv.STAGE_CHANNEL_SETTINGS,
         children: (0, r.jsx)("div", {
           className: f.slideContainer,
-          children: (0, r.jsx)(p, {
+          children: (0, r.jsx)(x, {
             guild: j,
             channel: d,
             stageInstance: N,
             headerId: v,
             onClose: h,
             loading: y,
-            error: I,
+            error: O,
             onSave: P,
             defaultOptions: w,
-            isSlideReady: S === m.lv.STAGE_CHANNEL_SETTINGS
+            isSlideReady: S === b.lv.STAGE_CHANNEL_SETTINGS
           })
         })
       }), (0, r.jsx)(a.Mi4, {
-        id: m.lv.PUBLIC_STAGE_PREVIEW,
+        id: b.lv.PUBLIC_STAGE_PREVIEW,
         children: (0, r.jsx)("div", {
           className: f.slideContainer,
           children: (0, r.jsx)(u.Z, {
@@ -172,7 +172,7 @@ function x(e) {
             loading: y,
             onNext: k,
             onCancel: h,
-            onBack: () => E(m.lv.STAGE_CHANNEL_SETTINGS)
+            onBack: () => E(b.lv.STAGE_CHANNEL_SETTINGS)
           })
         })
       })]

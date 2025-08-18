@@ -1,7 +1,6 @@
 /** Chunk was on 4530 **/
 /** chunk id: 989201, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  searchBar: "searchBar__4a43b",
   rowDivider: "rowDivider__4a43b",
   rowContainer: "rowContainer__4a43b",
   disabled: "disabled__4a43b",

@@ -336,7 +336,7 @@ class eR extends Chunk647438.PureComponent {
           className: s()(ec.marginTop40, ec.marginBottom40)
         })]
       }) : null,
-      W = e.isForumLikeChannel() ? (0, i.jsxs)("div", {
+      G = e.isForumLikeChannel() ? (0, i.jsxs)("div", {
         children: [(0, i.jsxs)(m.xJW, {
           children: [(0, i.jsx)(m.vwX, {
             error: this.getError("available_tags"),
@@ -364,7 +364,7 @@ class eR extends Chunk647438.PureComponent {
           className: s()(ec.marginTop40, ec.marginBottom40)
         })]
       }) : null,
-      G = e.isForumLikeChannel() ? (0, i.jsxs)("div", {
+      W = e.isForumLikeChannel() ? (0, i.jsxs)("div", {
         children: [(0, i.jsxs)("div", {
           className: eo.twoColumnSettings,
           children: [(0, i.jsxs)(m.xJW, {
@@ -647,34 +647,29 @@ class eR extends Chunk647438.PureComponent {
     return e.type === en.d4z.GUILD_CATEGORY ? (j = ea.intl.string(ea.t.OCAkGB), f = "category-name") : e.isForumPost() ? (j = ea.intl.string(ea.t.uyVrTE), f = "post-title") : R ? (j = ea.intl.string(ea.t.j3XWjI), f = "thread-name") : (j = ea.intl.string(ea.t.PVbHDg), f = "channel-name"), (0, i.jsxs)("div", {
       children: [(0, i.jsx)(m.xJW, {
         title: j,
-        children: (0, i.jsxs)("div", {
-          className: eo.nameInput,
-          children: [(0, i.jsx)(g.Is, {
-            inputRef: this.nameInputRef,
-            value: t,
-            onChange: this.handleChangeName,
-            onBlur: this.handleBlurName,
-            error: this.getError("name"),
-            name: f,
-            autoFocus: true,
-            disabled: T ? !v : !b,
-            maxLength: en.HN8,
-            className: eo.nameInputWrapper,
-            inputClassName: eo.nameInputInner,
-            focusProps: {
-              offset: {
-                right: false
-              }
-            }
-          }), (0, i.jsx)(eZ, {
-            onEmojiPicked: this.insertEmojiAtPosition,
-            channel: e,
-            guildId: null == e ? true : e.guild_id
-          })]
+        children: (0, i.jsx)(m.oil, {
+          fullWidth: true,
+          inputRef: this.nameInputRef,
+          value: t,
+          onChange: this.handleChangeName,
+          onBlur: this.handleBlurName,
+          error: this.getError("name"),
+          name: f,
+          autoFocus: true,
+          disabled: T ? !v : !b,
+          maxLength: en.HN8,
+          trailing: {
+            type: "emoji",
+            button: (0, i.jsx)(eZ, {
+              onEmojiPicked: this.insertEmojiAtPosition,
+              channel: e,
+              guildId: null == e ? true : e.guild_id
+            })
+          }
         })
       }), (0, i.jsx)(m.$i$, {
         className: s()(ec.marginTop40, ec.marginBottom40)
-      }), B, H, W, G, q, Q, F, z, Y, el, ej, eb, ey, ev, eC]
+      }), B, H, G, W, q, Q, F, z, Y, el, ej, eb, ey, ev, eC]
     })
   }
   renderBitrate(e) {

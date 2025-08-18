@@ -25,6 +25,5 @@ module.exports = {
   inviteIcon: "inviteIcon__921c5",
   inviteLargeIcon: "inviteLargeIcon__921c5 inviteIcon__921c5",
   downloadButtonSubtext: "downloadButtonSubtext__921c5",
-  inputError: "inputError__921c5",
   description: "description__921c5"
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 31649 **/
 /** chunk id: 66630, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => B
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -38,13 +38,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk343190 = require("./343190.js");
-let B = "CLEAR_AFTER";
+let M = "CLEAR_AFTER";
 
-function M(t) {
+function B(t) {
   var e, n;
   let {
     transitionState: r,
-    onClose: M,
+    onClose: B,
     sourceAnalyticsContext: U,
     sourceAnalyticsLocations: F = [],
     prompt: Y = null,
@@ -60,7 +60,7 @@ function M(t) {
   } = (0, h.ZP)(F, p.Z.CUSTOM_STATUS_MODAL), K = (0, o.e7)([g.default], () => {
     var t;
     return null != (t = g.default.getCurrentUser()) ? t : null
-  }), q = (0, N.a)(), [X, Q] = a.useState(null != (e = null == q ? true : q.state) ? e : ""), [$, J] = a.useState(null != (n = null == q ? true : q.emoji) ? n : null), [tt, te] = a.useState((0, x.Z)()), tn = a.useRef(null), tl = a.useRef(null), ta = a.useRef(null), [tr, ti] = a.useState(null != q && V ? (0, P.Z)(q) : null), [to, ts] = a.useState(H), [tu, tc] = a.useState(() => W && null != Y ? Y.label() : L.intl.string(L.t["xod36+"])), [td, tm] = a.useState(tu), {
+  }), q = (0, N.a)(), [X, Q] = a.useState(null != (e = null == q ? true : q.state) ? e : ""), [J, $] = a.useState(null != (n = null == q ? true : q.emoji) ? n : null), [tt, te] = a.useState((0, _.Z)()), tn = a.useRef(null), tl = a.useRef(null), ta = a.useRef(null), [tr, ti] = a.useState(null != q && V ? (0, w.Z)(q) : null), [to, ts] = a.useState(H), [tu, tc] = a.useState(() => W && null != Y ? Y.label() : L.intl.string(L.t["xod36+"])), [td, tm] = a.useState(tu), {
     ref: tf,
     width: tp
   } = (0, m.ZP)(tu);
@@ -86,15 +86,15 @@ function M(t) {
     null == (t = tn.current) || t.focus(), null == (e = tn.current) || e.setSelection(X.length, X.length)
   });
   let th = () => {
-      tt !== B && ((0, _.Z)({
+      tt !== M && ((0, x.Z)({
         text: X,
-        emojiInfo: $,
+        emojiInfo: J,
         clearAfter: tt,
         prompt: Y,
         customStatusLabel: tr,
         analyticsLocations: G,
         analyticsContext: U
-      }), M())
+      }), B())
     },
     tb = W ? L.intl.string(L.t.rp0aho) : L.intl.string(L.t.UcdRn5),
     tS = "custom-status-placeholder-text";
@@ -106,8 +106,8 @@ function M(t) {
         maxVisibleItems: Z.wS.length + 1,
         value: tt,
         options: z ? [{
-          value: B,
-          key: B,
+          value: M,
+          key: M,
           label: L.intl.string(L.t.E45wvL),
           disabled: true
         }, ...Z.wS.map(t => ({
@@ -129,7 +129,7 @@ function M(t) {
           } = t;
           return (0, l.jsx)("span", {
             className: i()(k.clearAfterSelectOptionLabel, a ? k.disabled : true),
-            children: e === B ? n : (0, y.Z)(e, z)
+            children: e === M ? n : (0, y.Z)(e, z)
           })
         },
         look: c.qQH.CUSTOM,
@@ -138,7 +138,7 @@ function M(t) {
       })
     }),
     onClose: async () => {
-      await M()
+      await B()
     },
     transitionState: r,
     actions: [{
@@ -151,7 +151,7 @@ function M(t) {
       children: (0, l.jsx)(I.Z, {
         user: K,
         previewText: X,
-        previewEmoji: $,
+        previewEmoji: J,
         placeHolderText: tu,
         transitionState: r,
         label: tr
@@ -178,7 +178,7 @@ function M(t) {
                 previous_label: tr,
                 new_label: e,
                 location_stack: F
-              }), ti(e), ts(false), null != e && tc((0, w.Z)(e))
+              }), ti(e), ts(false), null != e && tc((0, P.Z)(e))
             }
           })
         })
@@ -205,7 +205,7 @@ function M(t) {
                     emoji: l,
                     willClose: a
                   } = t;
-                  null != (n = l) && J(null != n.id ? {
+                  null != (n = l) && $(null != n.id ? {
                     id: n.id,
                     name: n.name,
                     animated: n.animated
@@ -216,7 +216,7 @@ function M(t) {
                   }), a && e()
                 },
                 pickerIntention: R.Hz.STATUS,
-                onNavigateAway: M
+                onNavigateAway: B
               })
             },
             position: "left",
@@ -249,11 +249,11 @@ function M(t) {
                 active: r,
                 className: k.emojiButton,
                 tabIndex: 0,
-                renderButtonContents: null == $ ? null : () => (0, l.jsx)(d.Z, {
+                renderButtonContents: null == J ? null : () => (0, l.jsx)(d.Z, {
                   className: k.emoji,
-                  emojiId: $.id,
-                  emojiName: $.name,
-                  animated: !!$.animated
+                  emojiId: J.id,
+                  emojiName: J.name,
+                  animated: !!J.animated
                 })
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(t, e) {
                 var n = Object.keys(t);
@@ -291,7 +291,7 @@ function M(t) {
         }), (0, l.jsx)(c.nn4, {
           id: tS,
           children: "".concat(L.intl.string(L.t.EVV6ub), ": ").concat(tu)
-        }), (X.length > 0 || null != $) && (0, l.jsx)("div", {
+        }), (X.length > 0 || null != J) && (0, l.jsx)("div", {
           className: i()(k.clearButtonWrapper, null != tr && k.buttonContainerWithLabel),
           children: (0, l.jsx)(c.P3F, {
             focusProps: {
@@ -305,7 +305,7 @@ function M(t) {
             "aria-label": L.intl.string(L.t.wfYTHR),
             className: k.clearButton,
             onClick: () => {
-              Q(""), J(null)
+              Q(""), $(null)
             },
             children: (0, l.jsx)(c.k$p, {
               size: "md",

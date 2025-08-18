@@ -2,7 +2,7 @@
 /** chunk id: 787561, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   X: () => Z,
-  Z: () => k
+  Z: () => L
 }), require("./953529.js"), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -431,7 +431,7 @@ let R = "dismissedCommunityFeaturesUpsell",
       })]
     })
   },
-  k = () => {
+  L = () => {
     let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild());
     return null == module ? null : module.features.has(Chunk981631.oNc.COMMUNITY) ? (0, Chunk951288.jsx)(A, {}) : (0, Chunk951288.jsx)(Chunk54842.Z, {
       guild: module

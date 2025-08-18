@@ -18,12 +18,12 @@ let s = e => {
     transitionState: t,
     size: l.CgR.DYNAMIC,
     fullscreenOnMobile: false,
-    className: a.modalRoot,
+    className: i.modalRoot,
     parentComponent: "Modal",
     children: (0, r.jsx)(l.hzk, {
       scrollbarType: "none",
-      className: a.modalContent,
-      children: (0, r.jsx)(i.I, {
+      className: i.modalContent,
+      children: (0, r.jsx)(a.I, {
         userImage: n,
         guildId: s
       })

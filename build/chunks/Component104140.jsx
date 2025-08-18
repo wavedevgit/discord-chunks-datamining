@@ -179,7 +179,6 @@ function v(e) {
           id: D
         }), null != m ? (0, r.jsx)("rect", {
           id: P,
-          className: u.badgeStroke,
           x: n - U + p,
           y: -p,
           width: U,
@@ -188,7 +187,6 @@ function v(e) {
           ry: U / 2
         }) : null, null != O ? (0, r.jsx)("rect", {
           id: w,
-          className: u.badgeStroke,
           x: n - (M + 2 * p) + p,
           y: n - (k + 2 * p) + p,
           width: M + 2 * p,

@@ -18,7 +18,7 @@ function d(e) {
     onClose: c,
     isSlideReady: u,
     headerAlignStart: h
-  } = e, [f, m] = r.useState(false), [g, x] = r.useState(null), [p, S] = r.useState(""), j = r.useRef(null), b = o.intl.string(o.t["C/ZAw8"]), y = o.intl.string(o.t.fZSi1N), v = r.useCallback(e => {
+  } = e, [f, g] = r.useState(false), [m, x] = r.useState(null), [p, S] = r.useState(""), j = r.useRef(null), b = o.intl.string(o.t["C/ZAw8"]), y = o.intl.string(o.t.fZSi1N), v = r.useCallback(e => {
     S(e), x(null)
   }, [S, x]);
   return r.useEffect(() => {
@@ -28,14 +28,14 @@ function d(e) {
     }
   }, [u]), (0, l.jsxs)("form", {
     onSubmit: e => {
-      e.preventDefault(), m(true), n({
+      e.preventDefault(), g(true), n({
         mfaType: "backup",
         data: p.replace(/-/g, "")
       }).catch(e => {
         var t, n;
         x(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
       }).finally(() => {
-        m(false)
+        g(false)
       })
     },
     children: [(0, l.jsx)(a.Z.SlideHeader, {
@@ -54,7 +54,7 @@ function d(e) {
           spellCheck: "false",
           disabled: f
         }), (0, l.jsx)(a.Z.SlideError, {
-          error: g
+          error: m
         })]
       })
     }), (0, l.jsx)(a.Z.SlideFooter, {

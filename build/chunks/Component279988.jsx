@@ -42,9 +42,6 @@ let g = function(e) {
     actionsLocation: v,
     fieldStyle: _,
     children: [(0, r.jsx)(c.EK, {
-      className: l()(m.fieldBackground, {
-        [m.withFooter]: 0 !== C
-      }),
       terms: y,
       channelId: t
     }), 0 !== C && (0, r.jsxs)(s.P3F, {

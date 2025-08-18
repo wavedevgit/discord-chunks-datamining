@@ -5,7 +5,6 @@ module.exports = {
   checkerboard: "checkerboard__4d307",
   previewPlaceholder: "previewPlaceholder__4d307",
   aside: "aside__4d307",
-  input: "input__4d307",
   preview: "preview__4d307",
   reactions: "reactions__4d307",
   jumbo: "jumbo__4d307",

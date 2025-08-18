@@ -1,8 +1,8 @@
 /** Chunk was on 95468 **/
 /** chunk id: 650233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  H: () => p,
-  default: () => x
+  H: () => g,
+  default: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,15 +16,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk759137 = require("./759137.js");
 
-function x(e) {
+function f(e) {
   let {
     transitionState: t,
     onClose: n,
-    isNUXFlow: x
+    isNUXFlow: f
   } = e;
   return l.useEffect(() => {
-    o.Z.hideHubUpsell(), x && s.Z.flowStep(u.MK.ORGANIC, u.EW.HUB_CONNECTION)
-  }, [x]), (0, r.jsx)(a.Y0X, {
+    o.Z.hideHubUpsell(), f && s.Z.flowStep(u.MK.ORGANIC, u.EW.HUB_CONNECTION)
+  }, [f]), (0, r.jsx)(a.Y0X, {
     className: h.modalRoot,
     transitionState: t,
     "aria-label": m.intl.string(m.t["3khS8P"]),
@@ -50,7 +50,7 @@ function x(e) {
             onClick: n,
             className: h.closeButton
           }), (0, r.jsx)(c.Z, {
-            isNUXFlow: x,
+            isNUXFlow: f,
             onClose: n
           })]
         })]
@@ -58,7 +58,7 @@ function x(e) {
     })
   })
 }
-let p = e => {
+let g = e => {
   let {
     invite: t
   } = e;

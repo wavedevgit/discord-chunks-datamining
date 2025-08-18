@@ -31,7 +31,7 @@ let _ = e => ({
       onError: d,
       labelledBy: j,
       isEmojiAnimated: O
-    } = e, E = (0, i.cj)([c.Z, m.ZP], () => Object.fromEntries(m.ZP.getFlattenedGuildIds().map(e => c.Z.getGuild(e)).filter(h.lm).map(e => [e.id, e]))), N = (0, i.cj)([s.ZP], () => Object.fromEntries(Object.entries(E).map(e => {
+    } = e, E = (0, a.cj)([c.Z, h.ZP], () => Object.fromEntries(h.ZP.getFlattenedGuildIds().map(e => c.Z.getGuild(e)).filter(m.lm).map(e => [e.id, e]))), N = (0, a.cj)([s.ZP], () => Object.fromEntries(Object.entries(E).map(e => {
       let [t, n] = e;
       return [t, function(e) {
         var t;
@@ -39,8 +39,8 @@ let _ = e => ({
           guild: n,
           emojis: r,
           isEmojiAnimated: l
-        } = e, i = null != (t = r.filter(e => e.animated === l && !(0, u.Kt)(e, n.id)).length) ? t : 0;
-        return (0, g.y4)(n) - i
+        } = e, a = null != (t = r.filter(e => e.animated === l && !(0, u.Kt)(e, n.id)).length) ? t : 0;
+        return (0, g.y4)(n) - a
       }({
         guild: n,
         emojis: s.ZP.getGuildEmoji(t),
@@ -57,7 +57,7 @@ let _ = e => ({
           size: o.Z.Sizes.SMALLER,
           active: true,
           className: x.icon
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
           className: x.text,
           children: t.label
@@ -75,11 +75,11 @@ let _ = e => ({
           className: x.icon
         }), (0, r.jsxs)("div", {
           className: x.optionLabelContainer,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(i.Text, {
             variant: "text-sm/medium",
             className: x.text,
             children: e.label
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(i.Text, {
             variant: "text-xs/normal",
             color: "text-tertiary",
             className: x.text,
@@ -93,8 +93,7 @@ let _ = e => ({
     return l.useEffect(() => {
       var e;
       C.length < 1 ? d(p.ze.NO_PERMISSIONS) : null != n && (null != (e = null == N ? true : N[n]) ? e : 0) < 1 ? d(f.evJ.TOO_MANY_EMOJI) : d(null)
-    }, [C, t, d, n, N]), (0, r.jsx)(a.q4e, {
-      className: x.guildSelector,
+    }, [C, t, d, n, N]), (0, r.jsx)(i.q4e, {
       onChange: t,
       options: C,
       popoutPosition: "top",

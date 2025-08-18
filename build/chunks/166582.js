@@ -2,8 +2,6 @@
 /** chunk id: 166582, original params: e,t,n (module,exports,require) **/
 module.exports = {
   searchHeader: "searchHeader__83bd4",
-  searchPageBox: "searchPageBox__83bd4",
-  searchPageInput: "searchPageInput__83bd4",
   headerTitleWrapper: "headerTitleWrapper__83bd4",
   arrow: "arrow__83bd4",
   searchPageTitle: "searchPageTitle__83bd4",

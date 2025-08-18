@@ -1,7 +1,7 @@
 /** Chunk was on 52030 **/
 /** chunk id: 124860, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Cd: () => g,
+  Cd: () => m,
   YR: () => p
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,11 +47,11 @@ function m(e, t) {
   }), e
 }
 
-function g(e) {
+function m(e) {
   var t, n;
   let {
     mfaChallenge: h,
-    mfaFinish: g,
+    mfaFinish: m,
     onEarlyClose: x,
     onClose: p,
     headerAlignStart: S,
@@ -61,7 +61,7 @@ function g(e) {
       mfaType: t,
       data: n
     } = e;
-    await g({
+    await m({
       mfaType: t,
       data: n,
       ticket: h.ticket
@@ -85,22 +85,22 @@ function g(e) {
       children: (0, l.jsx)(u.Z, f({}, w))
     }), (0, l.jsx)(i.Mi4, {
       id: "totp",
-      children: (0, l.jsx)(c.Z, m(f({}, w), {
+      children: (0, l.jsx)(c.Z, g(f({}, w), {
         isSlideReady: "totp" === v
       }))
     }), (0, l.jsx)(i.Mi4, {
       id: "sms",
-      children: (0, l.jsx)(d.Z, m(f({}, w), {
+      children: (0, l.jsx)(d.Z, g(f({}, w), {
         isSlideReady: "sms" === v
       }))
     }), (0, l.jsx)(i.Mi4, {
       id: "backup",
-      children: (0, l.jsx)(s.Z, m(f({}, w), {
+      children: (0, l.jsx)(s.Z, g(f({}, w), {
         isSlideReady: "backup" === v
       }))
     }), (0, l.jsx)(i.Mi4, {
       id: "password",
-      children: (0, l.jsx)(a.Z, m(f({}, w), {
+      children: (0, l.jsx)(a.Z, g(f({}, w), {
         isSlideReady: "password" === v
       }))
     })]
@@ -119,7 +119,7 @@ function x(e) {
     size: i.CgR.SMALL,
     "aria-label": h.intl.string(h.t.saHocH),
     parentComponent: "MFAModal",
-    children: (0, l.jsx)(g, {
+    children: (0, l.jsx)(m, {
       mfaChallenge: t,
       mfaFinish: n,
       onClose: s,

@@ -1,7 +1,7 @@
 /** Chunk was on 63359 **/
 /** chunk id: 436046, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => N
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,11 +20,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk181576 = require("./181576.js");
 
-function x(e) {
+function N(e) {
   let {
     onComplete: t,
     onClose: n
-  } = e, [a, x] = o.useState(null), [y, j] = o.useState(null), [E, v] = o.useState(false), C = (0, s.e7)([_.default], () => _.default.getCurrentUser()), T = o.useRef(null);
+  } = e, [a, N] = o.useState(null), [y, j] = o.useState(null), [E, v] = o.useState(false), C = (0, s.e7)([_.default], () => _.default.getCurrentUser()), T = o.useRef(null);
   async function O(e) {
     e.preventDefault(), i()(null != a, "Cannot submit null birthday."), v(true);
     try {
@@ -42,28 +42,28 @@ function x(e) {
     null != C && null != C.nsfwAllowed && t()
   }, [C, t]);
   let I = o.useCallback(e => {
-      x(e)
-    }, [x]),
+      N(e)
+    }, [N]),
     g = o.useCallback(() => {
       var e;
       null == (e = T.current) || e.focus()
     }, [T]);
   return null == C ? null : (0, r.jsxs)("form", {
-    className: N.content,
+    className: x.content,
     onSubmit: O,
     children: [(0, r.jsx)(u.gw7, {
       size: "custom",
       width: 56,
       height: 40,
-      className: N.logo,
+      className: x.logo,
       color: l.Z.unsafe_rawColors.BRAND_500.css
     }), (0, r.jsx)(u.X6q, {
-      className: N.title,
+      className: x.title,
       variant: "heading-xl/semibold",
       children: h.intl.string(h.t.n7i7sr)
     }), (0, r.jsx)(u.Text, {
       color: "text-default",
-      className: N.description,
+      className: x.description,
       variant: "text-md/normal",
       children: h.intl.format(h.t.fa8kW1, {
         helpURL: p.Z.getArticleURL(m.BhN.AGE_GATE)
@@ -73,7 +73,7 @@ function x(e) {
       children: (0, r.jsx)(f.Z, {
         required: true,
         autoFocus: true,
-        wrapperClassName: N.formItem,
+        wrapperClassName: x.formItem,
         label: h.intl.string(h.t.rhBeKS),
         name: "birthday",
         onChange: I,
@@ -82,9 +82,9 @@ function x(e) {
         value: a
       })
     }), (0, r.jsx)("div", {
-      className: N.footer,
+      className: x.footer,
       children: (0, r.jsx)("div", {
-        className: N.buttonWrapper,
+        className: x.buttonWrapper,
         children: (0, r.jsx)(c.zx, {
           buttonRef: T,
           type: "submit",

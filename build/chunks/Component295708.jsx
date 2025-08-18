@@ -1,33 +1,26 @@
 /** Chunk was on 6049 **/
 /** chunk id: 295708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => c
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk273504 = require("./273504.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk344687 = require("./344687.js"),
-  Chunk601374 = require("./601374.js");
+  Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function c(e) {
   let {
     rule: t,
     onChangeRule: n
-  } = e, [m, g] = i.useState(t.name);
-  return (0, r.jsxs)(a.xJW, {
-    children: [(0, r.jsx)(a.Text, {
-      className: u.triggerHeader,
-      variant: "text-sm/semibold",
-      children: c.intl.string(c.t.WVAHxM)
-    }), (0, r.jsx)(l.Is, {
-      className: d.ruleNameInput,
+  } = e, [c, d] = i.useState(t.name);
+  return (0, r.jsx)(l.xJW, {
+    title: o.intl.string(o.t.WVAHxM),
+    children: (0, r.jsx)(l.oil, {
       onChange: e => {
         var r, i;
-        g(e), n((r = function(e) {
+        d(e), n((r = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -58,12 +51,12 @@ function m(e) {
         }), r))
       },
       onClick: e => e.stopPropagation(),
-      onKeyPress: e => {
-        e.which === o.yXg.SPACE && e.stopPropagation()
+      onKeyDown: e => {
+        e.which === s.yXg.SPACE && e.stopPropagation()
       },
-      placeholder: c.intl.string(c.t["5AO43N"]),
-      maxLength: s.OU,
-      value: m
-    })]
+      placeholder: o.intl.string(o.t["5AO43N"]),
+      maxLength: a.OU,
+      value: c
+    })
   })
 }

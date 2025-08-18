@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk489813 = require("./489813.jsx"),
   Chunk707592 = require("./707592.jsx"),
@@ -27,10 +27,10 @@ function d(e) {
   } = n, f = i.useMemo(() => m.map((e, t) => ({
     name: e,
     value: t,
-    radioItemIconClassName: s()(u.multipleChoiceIcon, c),
+    radioItemIconClassName: o()(u.multipleChoiceIcon, c),
     radioBarClassName: u.multipleChoiceItem
   })), [m, c]);
-  return (0, r.jsx)(o.FXm, {
+  return (0, r.jsx)(s.FXm, {
     radioPosition: "right",
     disabled: t,
     options: f,
@@ -48,7 +48,6 @@ function m(e) {
   return (0, r.jsx)(a.CA, {
     title: t.label,
     children: (0, r.jsx)(c.Gi, {
-      className: u.disabledFieldBackground,
       value: n,
       disabled: true
     })

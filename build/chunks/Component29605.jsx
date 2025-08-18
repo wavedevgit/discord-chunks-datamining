@@ -1,9 +1,9 @@
 /** Chunk was on 6049 **/
 /** chunk id: 29605, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  FT: () => q,
+  FT: () => X,
   L3: () => K,
-  ZP: () => J
+  ZP: () => Q
 }), require("./388685.js"), require("./583741.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -196,14 +196,14 @@ let W = d().throttle(Chunk80932.OQ, 1e3),
         title: B.intl.string(B.t.sMOuub),
         maxSlots: (0, Z.y4)(s),
         emojiCount: i.length
-      }), (0, r.jsx)(q, {
+      }), (0, r.jsx)(X, {
         emojis: i,
         guild: s
       }), (0, r.jsx)(K, {
         title: B.intl.string(B.t.wWjQyc),
         maxSlots: (0, Z.y4)(s),
         emojiCount: l.length
-      }), (0, r.jsx)(q, {
+      }), (0, r.jsx)(X, {
         emojis: l,
         guild: s
       })]
@@ -225,7 +225,7 @@ let W = d().throttle(Chunk80932.OQ, 1e3),
       })]
     })
   },
-  q = e => {
+  X = e => {
     let {
       emojis: t,
       guild: n,
@@ -263,7 +263,7 @@ let W = d().throttle(Chunk80932.OQ, 1e3),
       }, e.id))]
     })
   },
-  X = e => {
+  q = e => {
     let t, n, i, {
         staticEmojiCount: l,
         animatedEmojiCount: a,
@@ -291,7 +291,7 @@ let W = d().throttle(Chunk80932.OQ, 1e3),
       }
     }))
   },
-  Q = () => (0, Chunk951288.jsxs)("div", {
+  J = () => (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
       tag: Chunk481060.RB0.H2,
       className: Chunk878341.emojiUploadUploadRequirementsHeading,
@@ -323,7 +323,7 @@ let W = d().throttle(Chunk80932.OQ, 1e3),
       })]
     })]
   }),
-  J = () => {
+  Q = () => {
     let e = Chunk647438.useRef(null),
       t = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
       [l, a] = Chunk647438.useState("");
@@ -351,11 +351,11 @@ let W = d().throttle(Chunk80932.OQ, 1e3),
         staticEmoji: H,
         totalStaticEmoji: V,
         animatedEmoji: K,
-        totalAnimatedEmoji: q
+        totalAnimatedEmoji: X
       } = (0, Chunk719403.t)({
         guild: exports
       }),
-      J = (0, Chunk556019.qt)({
+      Q = (0, Chunk556019.qt)({
         location: "guild_settings",
         autoTrackExposure: true
       }),
@@ -419,10 +419,10 @@ let W = d().throttle(Chunk80932.OQ, 1e3),
       }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
         tag: Chunk481060.RB0.H1,
         title: Chunk388032.intl.string(Chunk388032.t.sMOuub),
-        children: [(0, Chunk951288.jsx)(X, {
+        children: [(0, Chunk951288.jsx)(q, {
           guild: exports,
           staticEmojiCount: V,
-          animatedEmojiCount: q
+          animatedEmojiCount: X
         }), (0, Chunk951288.jsxs)(Chunk481060.hjN, {
           className: Chunk878341.uploader,
           children: [(0, Chunk951288.jsx)(Chunk481060.R94, {
@@ -435,7 +435,7 @@ let W = d().throttle(Chunk80932.OQ, 1e3),
             children: Chunk388032.intl.format(Chunk388032.t.uMkfTk, {
               onClick: () => Chunk434404.Z.open(exports.id, Chunk981631.pNK.ROLE_SUBSCRIPTIONS, true, Chunk981631.KsC.ROLE_SUBSCRIPTION_EMOJI)
             })
-          }), J.enabled ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+          }), Q.enabled ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
             children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
               variant: "primary",
               text: Chunk388032.intl.string(Chunk388032.t.DU0dy8),
@@ -446,7 +446,7 @@ let W = d().throttle(Chunk80932.OQ, 1e3),
               children: Chunk388032.intl.string(Chunk388032.t.EgNCTk)
             })]
           }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-            children: [(0, Chunk951288.jsx)(Q, {}), (0, Chunk951288.jsxs)(Chunk755721.zx, {
+            children: [(0, Chunk951288.jsx)(J, {}), (0, Chunk951288.jsxs)(Chunk755721.zx, {
               tabIndex: false,
               size: Chunk755721.zx.Sizes.MEDIUM,
               onClick: () => {

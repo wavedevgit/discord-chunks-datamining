@@ -1,7 +1,7 @@
 /** Chunk was on 69773 **/
 /** chunk id: 944844, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  t: () => p
+  t: () => h
 }), require("./415506.js");
 var Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
@@ -13,32 +13,32 @@ var Chunk647438 = require("./647438.js"),
   Chunk497350 = require("./497350.js");
 async function u(e, t, n) {
   var a, r, c, u;
-  let p = (0, d.B)(e);
-  if (null == p) throw await f(n, 1, "authorize"), Error("Unsupported client_id for two way link");
-  let h = null;
+  let h = (0, d.B)(e);
+  if (null == h) throw await f(n, 1, "authorize"), Error("Unsupported client_id for two way link");
+  let p = null;
   try {
     let {
       body: e
-    } = await l.Z.authorize(p, {
+    } = await l.Z.authorize(h, {
       twoWayLinkType: i.g.DEVICE_CODE,
       userCode: n
     });
-    h = e.url
+    p = e.url
   } catch (e) {
     throw await f(n, null != (r = null == e || null == (a = e.body) ? true : a.code) ? r : 0, "authorize"), Error("error during two way authorize")
   }
   let x = null;
   try {
-    o()(null != h, "No URL in authorize response");
+    o()(null != p, "No URL in authorize response");
     let {
       state: e
-    } = (0, s.xp)(h);
+    } = (0, s.xp)(p);
     o()(null != e, "Authorize URL state query parameter must be present"), x = e
   } catch (e) {
     throw await f(n, 2, "authorize"), Error("error parsing callback params")
   }
   try {
-    await l.Z.callback(p, {
+    await l.Z.callback(h, {
       code: t,
       state: x
     })
@@ -52,7 +52,7 @@ async function f(e, t, n) {
   } catch (e) {}
 }
 
-function p(e, t, n) {
+function h(e, t, n) {
   return a.useCallback(async (a, r) => {
     if (!r) {
       try {

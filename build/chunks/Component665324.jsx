@@ -109,13 +109,13 @@ function z(e) {
     guildId: i
   } = e, l = I.Z.getGuild(i), a = null != l ? (0, P.nL)(l) : 0;
   return 0 === t ? (0, r.jsx)(r.Fragment, {
-    children: L.intl.format(L.t["7E9Hd3"], {
+    children: k.intl.format(k.t["7E9Hd3"], {
       slots: n,
       totalSlots: a
     })
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.ua7, {
-      text: L.intl.formatToPlainString(L.t.tuuJJS, {
+      text: k.intl.formatToPlainString(k.t.tuuJJS, {
         currentBoostLevel: t
       }),
       children: e => (0, r.jsx)(m.P3F, {
@@ -132,7 +132,7 @@ function z(e) {
         tabIndex: false,
         children: (0, r.jsx)(S.Z, G({}, e))
       })
-    }), L.intl.format(L.t.HHCdvb, {
+    }), k.intl.format(k.t.HHCdvb, {
       slots: n,
       totalSlots: a,
       boostLevel: t
@@ -188,7 +188,7 @@ let W = e => {
       renderPopoutChildren: t => (0, r.jsx)(u.zx, U(G({}, t), {
         disabled: true,
         buttonRef: e,
-        children: L.intl.string(L.t["/uNYPD"])
+        children: k.intl.string(k.t["/uNYPD"])
       })),
       popoutTargetRef: module
     })
@@ -199,7 +199,7 @@ function Y(e) {
     guild: t
   } = e, [l, a] = (0, c.Wu)([_.Z], () => {
     var e;
-    return [null != (e = _.Z.getSoundsForGuild(t.id)) ? e : k.Hy, _.Z.isFetchingSounds() || _.Z.isFetchingDefaultSounds()]
+    return [null != (e = _.Z.getSoundsForGuild(t.id)) ? e : L.Hy, _.Z.isFetchingSounds() || _.Z.isFetchingDefaultSounds()]
   }), {
     canCreateExpressions: s
   } = (0, j.XJ)(t), o = i.useRef(null), d = (0, h.ZP)(), u = t.premiumTier, g = (0, P.yw)(t, l, u);
@@ -221,7 +221,7 @@ function Y(e) {
     }, []), a) return (0, r.jsx)(m.$jN, {});
   let x = B ? (0, r.jsx)(m.zxk, {
     variant: "primary",
-    text: L.intl.string(L.t["/uNYPD"]),
+    text: k.intl.string(k.t["/uNYPD"]),
     onClick: function() {
       (0, m.ZDy)(async () => {
         let {
@@ -240,7 +240,7 @@ function Y(e) {
         className: M.helpText,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: L.intl.string(L.t.BohnsL)
+        children: k.intl.string(k.t.BohnsL)
       }), (0, r.jsx)("div", {
         className: M.buttons,
         children: !f && x
@@ -254,9 +254,9 @@ function Y(e) {
         width: 272,
         height: 212
       }), (0, r.jsx)(m.OZU, {
-        note: L.intl.string(L.t.ZhoSBA),
+        note: k.intl.string(k.t.ZhoSBA),
         noteClassName: M.emptyText,
-        children: L.intl.string(L.t.I6P1p6)
+        children: k.intl.string(k.t.I6P1p6)
       }), x]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(m.$i$, {
@@ -279,11 +279,11 @@ function Y(e) {
         children: [(0, r.jsxs)("div", {
           className: M.tableHeaders,
           children: [(0, r.jsx)(H, {
-            children: L.intl.string(L.t.sMOuub)
+            children: k.intl.string(k.t.sMOuub)
           }), (0, r.jsx)(H, {
-            children: L.intl.string(L.t.lLFvlZ)
+            children: k.intl.string(k.t.lLFvlZ)
           }), (0, r.jsx)(H, {
-            children: L.intl.string(L.t["85qMS0"])
+            children: k.intl.string(k.t["85qMS0"])
           })]
         }), l.map(e => (0, r.jsx)(K, {
           sound: e,
@@ -330,7 +330,7 @@ function K(e) {
       await (0, g.PR)(f)
     }
   }, [y, f]);
-  let k = i.useCallback(() => {
+  let L = i.useCallback(() => {
       null != y && (0, N.openUserProfileModal)({
         userId: y.id,
         guildId: o.id,
@@ -367,7 +367,7 @@ function K(e) {
       })
     }), null != y && (0, r.jsxs)(m.P3F, {
       className: M.uploader,
-      onClick: k,
+      onClick: L,
       children: [(0, r.jsx)(m.qEK, {
         "aria-label": B,
         size: m.EFr.SIZE_24,
@@ -393,7 +393,7 @@ function K(e) {
             }))
           })
         },
-        "aria-label": L.intl.string(L.t.bt75u7),
+        "aria-label": k.intl.string(k.t.bt75u7),
         children: (0, r.jsx)(m.vdY, {
           size: "xs",
           color: "currentColor",
@@ -403,22 +403,22 @@ function K(e) {
         className: M.soundRemove,
         onClick: function(e) {
           e.stopPropagation(), (0, m.h7j)(e => (0, r.jsx)(m.ConfirmModal, U(G({
-            header: L.intl.formatToPlainString(L.t["PR/VbG"], {
+            header: k.intl.formatToPlainString(k.t["PR/VbG"], {
               soundName: u
             }),
-            confirmText: L.intl.string(L.t.oyYWHB),
-            cancelText: L.intl.string(L.t["ETE/oK"]),
+            confirmText: k.intl.string(k.t.oyYWHB),
+            cancelText: k.intl.string(k.t["ETE/oK"]),
             onConfirm: A
           }, e), {
             children: (0, r.jsx)(m.Text, {
               variant: "text-md/normal",
-              children: L.intl.format(L.t["u6+CmJ"], {
+              children: k.intl.format(k.t["u6+CmJ"], {
                 soundName: u
               })
             })
           })))
         },
-        "aria-label": L.intl.string(L.t.N86XcH),
+        "aria-label": k.intl.string(k.t.N86XcH),
         children: (0, r.jsx)(m.Dio, {
           size: "md",
           color: "currentColor",

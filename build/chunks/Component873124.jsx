@@ -17,7 +17,7 @@ function o(e) {
     onClose: d,
     isSlideReady: c,
     headerAlignStart: u
-  } = e, [h, f] = r.useState(false), [m, g] = r.useState(null), [x, p] = r.useState(""), S = r.useRef(null);
+  } = e, [h, f] = r.useState(false), [g, m] = r.useState(null), [x, p] = r.useState(""), S = r.useRef(null);
   return r.useEffect(() => {
     if (c) {
       var e;
@@ -30,7 +30,7 @@ function o(e) {
         data: x
       }).catch(e => {
         var t, n;
-        g(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
+        m(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
       }).finally(() => {
         f(false)
       })
@@ -50,7 +50,7 @@ function o(e) {
           spellCheck: "false",
           disabled: h
         }), (0, l.jsx)(s.Z.SlideError, {
-          error: m
+          error: g
         })]
       })
     }), (0, l.jsx)(s.Z.SlideFooter, {

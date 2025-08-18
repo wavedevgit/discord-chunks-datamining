@@ -2,7 +2,7 @@
 /** chunk id: 95152, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => w
+  default: () => P
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,10 +21,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk995751 = require("./995751.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk995751 = require("./995751.js");
 
-function v(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,20 +32,20 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
 }
 
-function T(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,15 +56,15 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = 104,
-  N = 16;
+let S = 104,
+  A = 16;
 
-function C(e) {
+function N(e) {
   var t, n, a;
   let {
     file: s
@@ -81,19 +80,19 @@ function C(e) {
     null != e && (e.onload = () => {
       let t = Math.max(.66, Math.min(e.naturalWidth / e.naturalHeight, 4));
       1 === t ? p({
-        width: A,
-        height: A
+        width: S,
+        height: S
       }) : t > 1 ? p({
-        width: A * t,
+        width: S * t,
         height: true
       }) : p({
         width: true,
-        height: A / t
+        height: S / t
       }), f(true)
     })
   }, []);
   let m = (0, u.Z)(h),
-    g = Math.max(16, (N + A - (null != (t = null == m ? true : m.width) ? t : 0)) / 2);
+    g = Math.max(16, (A + S - (null != (t = null == m ? true : m.width) ? t : 0)) / 2);
   return (0, r.jsx)("img", {
     ref: h,
     src: l,
@@ -104,17 +103,17 @@ function C(e) {
     alt: "",
     style: {
       width: null != (n = _.width) ? n : "initial",
-      height: null != (a = _.height) ? a : A,
+      height: null != (a = _.height) ? a : S,
       marginLeft: g,
       marginRight: g,
-      marginTop: null != _.height ? A - _.height - 33 : false
+      marginTop: null != _.height ? S - _.height - 33 : false
     }
   })
 }
-class R extends Chunk647438.Component {
+class C extends Chunk647438.Component {
   render() {
     var e;
-    return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk951288.jsx)(C, {
+    return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk951288.jsx)(N, {
       file: this.props.upload.item.file
     }) : (0, Chunk951288.jsx)("div", {
       className: o()(Chunk995751.icon, {
@@ -123,7 +122,7 @@ class R extends Chunk647438.Component {
     })
   }
 }
-class P extends Chunk647438.Component {
+class R extends Chunk647438.Component {
   componentDidMount() {
     var e;
     (null == (e = this.props.upload) ? true : module.showLargeMessageDialog) && this.props.upload.item.platform === Chunk476326.ow.WEB && Chunk626135.default.track(Chunk981631.rMx.OPEN_MODAL, {
@@ -145,9 +144,9 @@ class P extends Chunk647438.Component {
       upload: e,
       transitionState: t,
       messageMaxLength: n,
-      disableSpoiler: a
+      disableSpoiler: i
     } = this.props, {
-      hasSpoiler: c
+      hasSpoiler: a
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       "aria-label": Chunk388032.intl.string(Chunk388032.t["3AS4UF"]),
@@ -161,7 +160,7 @@ class P extends Chunk647438.Component {
           className: o()(Chunk995751.file, {
             [Chunk995751.expandable]: module.isImage
           }),
-          children: [(0, Chunk951288.jsx)(R, {
+          children: [(0, Chunk951288.jsx)(C, {
             upload: module
           }), (0, Chunk951288.jsxs)("div", {
             className: Chunk995751.description,
@@ -175,50 +174,47 @@ class P extends Chunk647438.Component {
               children: Chunk388032.intl.string(Chunk388032.t.Plcu09)
             }) : null]
           })]
-        }), (0, Chunk951288.jsxs)("div", {
-          className: Chunk995751.comment,
-          children: [(0, Chunk951288.jsx)("div", {
-            className: Chunk995751.label,
-            children: (0, Chunk951288.jsx)("span", {
-              children: Chunk388032.intl.string(Chunk388032.t.ILJuBg)
-            })
-          }), (0, Chunk951288.jsx)(Chunk755721.Is, {
-            className: o()(Chunk995751.channelTextAreaUpload, Chunk197571.marginTop8),
-            value: this.state.filename,
-            onChange: e => this.setState({
-              filename: e
-            }),
-            onKeyDown: e => {
-              if (e.which === E.yXg.ENTER) return this.handleSubmit()
-            }
-          }), module.isImage ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-            children: [(0, Chunk951288.jsx)("div", {
-              className: Chunk995751.label,
-              children: (0, Chunk951288.jsx)("span", {
-                children: Chunk388032.intl.string(Chunk388032.t.eOB2eX)
-              })
-            }), (0, Chunk951288.jsx)(Chunk755721.Is, {
-              className: o()(Chunk995751.channelTextAreaUpload, Chunk197571.marginTop8),
-              placeholder: Chunk388032.intl.string(Chunk388032.t.RNH1jo),
-              value: this.state.description,
-              onChange: e => this.setState({
-                description: e
+        }), (0, Chunk951288.jsx)("div", {
+          className: Chunk995751.form,
+          children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+            gap: 24,
+            children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+              gap: 16,
+              children: [(0, Chunk951288.jsx)(Chunk481060.xJW, {
+                title: Chunk388032.intl.string(Chunk388032.t.ILJuBg),
+                children: (0, Chunk951288.jsx)(Chunk481060.oil, {
+                  value: this.state.filename,
+                  onChange: e => this.setState({
+                    filename: e
+                  }),
+                  onKeyDown: e => {
+                    if (e.which === E.yXg.ENTER) return this.handleSubmit()
+                  }
+                })
+              }), module.isImage ? (0, Chunk951288.jsx)(Chunk481060.xJW, {
+                title: Chunk388032.intl.string(Chunk388032.t.eOB2eX),
+                children: (0, Chunk951288.jsx)(Chunk481060.oil, {
+                  placeholder: Chunk388032.intl.string(Chunk388032.t.RNH1jo),
+                  value: this.state.description,
+                  onChange: e => this.setState({
+                    description: e
+                  }),
+                  onKeyDown: e => {
+                    if (e.which === E.yXg.ENTER) return this.handleSubmit()
+                  }
+                })
+              }) : null]
+            }), true !== Chunk647438 && (0, Chunk951288.jsx)(Chunk481060.XZJ, {
+              value: Chunk120356,
+              onChange: (e, t) => this.setState({
+                hasSpoiler: t
               }),
-              onKeyDown: e => {
-                if (e.which === E.yXg.ENTER) return this.handleSubmit()
-              }
+              children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+                variant: "text-sm/normal",
+                children: Chunk388032.intl.string(Chunk388032.t["gsI+xM"])
+              })
             })]
-          }) : null, true !== Chunk120356 && (0, Chunk951288.jsx)(Chunk481060.XZJ, {
-            className: Chunk197571.marginBottom20,
-            value: Chunk166459,
-            onChange: (e, t) => this.setState({
-              hasSpoiler: t
-            }),
-            children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-              variant: "text-sm/normal",
-              children: Chunk388032.intl.string(Chunk388032.t["gsI+xM"])
-            })
-          })]
+          })
         })]
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk995751.footer,
@@ -245,16 +241,16 @@ class P extends Chunk647438.Component {
   }
   constructor(e) {
     var t, n, r, i, a, o;
-    super(e), v(this, "cancelAll", () => {
+    super(e), O(this, "cancelAll", () => {
       c.Z.clearAll(this.props.channelId, this.props.draftType), this.props.onClose()
-    }), v(this, "cancel", () => {
+    }), O(this, "cancel", () => {
       this.props.onClose()
-    }), v(this, "handleTextChange", (e, t, n) => {
+    }), O(this, "handleTextChange", (e, t, n) => {
       this.setState({
         textValue: t,
         richValue: n
       })
-    }), v(this, "handleSubmit", () => {
+    }), O(this, "handleSubmit", () => {
       let {
         upload: e,
         onClose: t,
@@ -272,7 +268,7 @@ class P extends Chunk647438.Component {
       }), t()
     });
     let s = e.ignoreDraft ? "" : p.Z.getDraft(this.props.channelId, e.draftType);
-    this.state = S(I({}, (0, f.eK)(s)), {
+    this.state = T(v({}, (0, f.eK)(s)), {
       textFocused: true,
       hasSpoiler: null != (i = null == (t = e.upload) ? true : t.spoiler) && i,
       filename: null != (a = null == (n = e.upload) ? true : n.filename) ? a : "",
@@ -282,9 +278,9 @@ class P extends Chunk647438.Component {
   }
 }
 
-function w(e) {
+function P(e) {
   let t = (0, _.Z)();
-  return e.upload.item.platform !== d.ow.WEB ? null : (0, r.jsx)(P, S(I({}, e), {
+  return e.upload.item.platform !== d.ow.WEB ? null : (0, r.jsx)(R, T(v({}, e), {
     file: e.upload.item.file,
     messageMaxLength: t
   }))

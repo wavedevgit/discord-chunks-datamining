@@ -1,7 +1,7 @@
 /** Chunk was on 6049 **/
 /** chunk id: 34112, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => k
+  Z: () => L
 }), require("./781311.js"), require("./539338.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -67,7 +67,7 @@ function D(e, t) {
 }
 let A = "DRAGGABLE_ROLE";
 
-function k(e) {
+function L(e) {
   let {
     setEditRoleId: t,
     guild: n,
@@ -100,7 +100,7 @@ function k(e) {
       let {
         row: l
       } = e;
-      if (0 === b.length) return (0, r.jsx)(L, {}, "empty-role");
+      if (0 === b.length) return (0, r.jsx)(k, {}, "empty-role");
       let o = b[l];
       return (0, r.jsx)(M, {
         role: o,
@@ -126,7 +126,7 @@ function k(e) {
   })
 }
 
-function L() {
+function k() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk810688.emptyRoles,
     children: [(0, Chunk951288.jsx)("div", {
@@ -158,13 +158,13 @@ function M(e) {
     disableDrag: N,
     setEditRoleId: E,
     setSelectedSection: T
-  } = e, k = (0, I.T)(g, h, d), L = null != k, [M, U] = i.useState(false), B = i.useMemo(() => ({
+  } = e, L = (0, I.T)(g, h, d), k = null != L, [M, U] = i.useState(false), B = i.useMemo(() => ({
     type: A,
     item: () => (_(d.id), {
       id: d.id,
       position: x
     }),
-    canDrag: () => M && !L,
+    canDrag: () => M && !k,
     collect: e => ({
       isDragging: e.isDragging()
     }),
@@ -173,11 +173,11 @@ function M(e) {
       if (null == n) return void O();
       y(n.roleId)
     }
-  }), [d, _, O, y, L, M, x]), [{
+  }), [d, _, O, y, k, M, x]), [{
     isDragging: F
   }, H] = (0, s.c)(B), z = i.useMemo(() => ({
     accept: A,
-    canDrop: () => !L,
+    canDrop: () => !k,
     collect: e => {
       let t = e.getItem();
       return null != t && e.isOver() && e.canDrop() ? {
@@ -189,7 +189,7 @@ function M(e) {
     drop: () => ({
       roleId: d.id
     })
-  }), [L, d]), [{
+  }), [k, d]), [{
     dragSourcePosition: W
   }, V] = (0, o.L)(z), Y = i.useCallback(e => {
     (0, m.jW)(e, async () => {
@@ -209,12 +209,12 @@ function M(e) {
     className: a()(w.roleRow, w.roleRowDragging)
   });
 
-  function q() {
+  function X() {
     E(d.id)
   }
 
-  function X() {
-    q(), T(S.ZI.MEMBERS)
+  function q() {
+    X(), T(S.ZI.MEMBERS)
   }
   return (0, r.jsxs)(u.P3F, {
     className: a()(w.roleRow, {
@@ -222,7 +222,7 @@ function M(e) {
       [w.containerDragBefore]: null != W && x < W,
       [w.containerDragAfter]: null != W && x > W
     }),
-    onClick: q,
+    onClick: X,
     onContextMenu: Y,
     innerRef: e => {
       H(V(e))
@@ -234,7 +234,7 @@ function M(e) {
     }),
     children: [(0, r.jsx)("div", {
       className: a()(w.dragIcon, R.dragSpacing, {
-        [w.dragIconHidden]: L || N
+        [w.dragIconHidden]: k || N
       }),
       onMouseEnter: () => U(true),
       onMouseLeave: () => U(false),
@@ -254,9 +254,9 @@ function M(e) {
         size: 24,
         className: w.roleIcon,
         defaultIconClassName: w.shield
-      }), null != k ? (0, r.jsx)(I.Z, {
+      }), null != L ? (0, r.jsx)(I.Z, {
         className: w.lock,
-        tooltipText: k
+        tooltipText: L
       }) : null, (0, r.jsx)(u.Text, {
         className: w.roleName,
         color: "header-primary",
@@ -274,7 +274,7 @@ function M(e) {
       position: "right",
       children: e => (0, r.jsxs)(u.P3F, D(Z({}, e), {
         className: a()(w.memberCountContainer, R.memberSpacing),
-        onClick: X,
+        onClick: q,
         children: [(0, r.jsx)(u.Text, {
           variant: "text-md/normal",
           color: "none",
@@ -290,12 +290,12 @@ function M(e) {
     }), (0, r.jsxs)("div", {
       className: a()(w.buttonsContainer, R.buttonsSpacing),
       children: [(0, r.jsx)(u.ua7, {
-        text: L ? P.intl.string(P.t["HO/oXl"]) : P.intl.string(P.t.bt75u7),
+        text: k ? P.intl.string(P.t["HO/oXl"]) : P.intl.string(P.t.bt75u7),
         children: e => (0, r.jsx)(u.hU, D(Z({}, e), {
           variant: "secondary",
-          "aria-label": L ? P.intl.string(P.t["HO/oXl"]) : P.intl.string(P.t.bt75u7),
-          icon: L ? u.tEF : u.vdY,
-          onClick: q
+          "aria-label": k ? P.intl.string(P.t["HO/oXl"]) : P.intl.string(P.t.bt75u7),
+          icon: k ? u.tEF : u.vdY,
+          onClick: X
         }))
       }), (0, r.jsx)(u.ua7, {
         text: P.intl.string(P.t.UKOtz8),

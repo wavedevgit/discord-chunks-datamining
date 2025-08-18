@@ -1,18 +1,17 @@
 /** Chunk was on 6284 **/
 /** chunk id: 635840, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk153867 = require("./153867.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk167739 = require("./167739.js");
-let C = [{
+let _ = [{
   value: "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_NOT_USING_ENOUGH",
   nameGetter: () => Chunk388032.intl.string(Chunk388032.t["+RZgNT"])
 }, {
@@ -29,50 +28,50 @@ let C = [{
   nameGetter: () => Chunk388032.intl.string(Chunk388032.t.wZLu3d)
 }];
 
-function u(e) {
+function C(e) {
   let {
     application: t,
     subscriptionId: i,
-    onClose: u
-  } = e, [N, m] = a.useState(false), [x, I] = a.useState(null), [S, h] = a.useState(""), T = a.useCallback(() => {
-    null != x && (o.default.track(d.rMx.PREMIUM_APP_CANCELLATION_SURVEY_SUBMITTED, {
+    onClose: C
+  } = e, [u, N] = a.useState(false), [x, m] = a.useState(null), [S, h] = a.useState(""), I = a.useCallback(() => {
+    null != x && (r.default.track(o.rMx.PREMIUM_APP_CANCELLATION_SURVEY_SUBMITTED, {
       answer: x,
       application_id: t.id,
       reason: S,
       subscription_id: i
-    }), u())
-  }, [t.id, i, x, u, S]);
+    }), C())
+  }, [t.id, i, x, C, S]);
   return a.useEffect(() => {
-    r.ZP.updatedUnsyncedSettings({
-      disableApplicationSubscriptionCancellationSurvey: N
+    l.ZP.updatedUnsyncedSettings({
+      disableApplicationSubscriptionCancellationSurvey: u
     })
-  }, [N]), (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsxs)(l.xBx, {
-      className: _.headerContainer,
+  }, [u]), (0, n.jsxs)(n.Fragment, {
+    children: [(0, n.jsxs)(s.xBx, {
+      className: c.headerContainer,
       separator: false,
       children: [(0, n.jsxs)("div", {
-        className: _.titleContainer,
-        children: [(0, n.jsx)(l.Text, {
-          className: _.headerTitle,
+        className: c.titleContainer,
+        children: [(0, n.jsx)(s.Text, {
+          className: c.headerTitle,
           variant: "text-lg/semibold",
-          children: c.intl.string(c.t.zPxMdX)
-        }), (0, n.jsx)(l.olH, {
-          className: _.modalCloseButton,
-          onClick: u
+          children: d.intl.string(d.t.zPxMdX)
+        }), (0, n.jsx)(s.olH, {
+          className: c.modalCloseButton,
+          onClick: C
         })]
-      }), (0, n.jsx)(l.LZC, {
+      }), (0, n.jsx)(s.LZC, {
         size: 8
-      }), (0, n.jsx)(l.Text, {
-        className: _.headerSubtitle,
+      }), (0, n.jsx)(s.Text, {
+        className: c.headerSubtitle,
         variant: "text-md/medium",
-        children: c.intl.string(c.t.QJGdBw)
+        children: d.intl.string(d.t.QJGdBw)
       })]
-    }), (0, n.jsxs)(l.hzk, {
+    }), (0, n.jsxs)(s.hzk, {
       children: [(0, n.jsx)("div", {
-        className: _.answerChoicesContainer,
-        children: (0, n.jsx)(l.FXm, {
+        className: c.answerChoicesContainer,
+        children: (0, n.jsx)(s.FXm, {
           value: x,
-          options: C.map(e => {
+          options: _.map(e => {
             let {
               nameGetter: t,
               value: i
@@ -82,32 +81,34 @@ function u(e) {
               value: i
             }
           }),
-          onChange: e => I(e.value),
+          onChange: e => m(e.value),
           withTransparentBackground: true
         })
-      }), "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_OTHER" === x && (0, n.jsx)(s.Is, {
-        autoFocus: true,
-        className: _.otherField,
-        placeholder: c.intl.string(c.t.s6tM8f),
-        value: S,
-        onChange: h
+      }), "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_OTHER" === x && (0, n.jsx)("div", {
+        className: c.otherField,
+        children: (0, n.jsx)(s.oil, {
+          autoFocus: true,
+          placeholder: d.intl.string(d.t.s6tM8f),
+          value: S,
+          onChange: h
+        })
       })]
-    }), (0, n.jsxs)(l.mzw, {
-      className: _.footer,
-      children: [(0, n.jsx)(l.zxk, {
+    }), (0, n.jsxs)(s.mzw, {
+      className: c.footer,
+      children: [(0, n.jsx)(s.zxk, {
         variant: "primary",
-        text: c.intl.string(c.t.geKm7u),
-        onClick: T,
+        text: d.intl.string(d.t.geKm7u),
+        onClick: I,
         disabled: null == x
-      }), (0, n.jsx)(l.XZJ, {
-        type: l.XZJ.Types.INVERTED,
-        value: N,
-        onChange: (e, t) => m(t),
+      }), (0, n.jsx)(s.XZJ, {
+        type: s.XZJ.Types.INVERTED,
+        value: u,
+        onChange: (e, t) => N(t),
         size: 20,
-        className: _.__invalid_checkbox,
-        children: (0, n.jsx)(l.Text, {
+        className: c.__invalid_checkbox,
+        children: (0, n.jsx)(s.Text, {
           variant: "text-sm/medium",
-          children: c.intl.string(c.t["3vPFQk"])
+          children: d.intl.string(d.t["3vPFQk"])
         })
       })]
     })]

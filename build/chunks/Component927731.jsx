@@ -75,7 +75,7 @@ function I(e) {
       return null != (t = w[e]) ? t : e
     });
     return (0, s.uniq)(e)
-  }, [E, w]), D = (0, p.ss)(t), A = (0, p.Gp)(), k = i.useCallback(() => {
+  }, [E, w]), D = (0, p.ss)(t), A = (0, p.Gp)(), L = i.useCallback(() => {
     A && g.jJ.trackExposure({
       guildId: t,
       location: "b2d9de_1"
@@ -92,10 +92,10 @@ function I(e) {
     }, {
       modalKey: N
     }) : S()
-  }, [t, T, S, l, A, D]), L = x.Lo(Z), M = i.useCallback(() => Z.forEach(x.GM), [Z]), G = (0, b.mY)(), U = (0, o.e7)([m.Z], () => m.Z.getProps().subsection);
-  return i.useEffect(() => (U === v.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && k(), () => {
+  }, [t, T, S, l, A, D]), k = x.Lo(Z), M = i.useCallback(() => Z.forEach(x.GM), [Z]), G = (0, b.mY)(), U = (0, o.e7)([m.Z], () => m.Z.getProps().subsection);
+  return i.useEffect(() => (U === v.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && L(), () => {
     (0, d.Mr3)(N)
-  }), [U, k]), (0, r.jsxs)(r.Fragment, {
+  }), [U, L]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: O.groupListings,
       children: [Z.map(e => (0, r.jsx)(j.Z, {
@@ -113,7 +113,7 @@ function I(e) {
         },
         onAfterDispatchNewListing: () => P(e)
       }, e)), (0, r.jsxs)(d.P3F, {
-        onClick: G ? true : k,
+        onClick: G ? true : L,
         className: a()(O.createTierButton, {
           [O.disabled]: G
         }),
@@ -131,7 +131,7 @@ function I(e) {
     }), (0, r.jsx)(c.W, {
       component: "div",
       className: O.contentRegion,
-      children: L && (0, r.jsx)(d.oXn, {
+      children: k && (0, r.jsx)(d.oXn, {
         children: (0, r.jsx)(u.Z, {
           onReset: M
         })

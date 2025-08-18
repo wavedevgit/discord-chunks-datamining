@@ -36,7 +36,7 @@ function d(e) {
   let {
     isUserVerified: t
   } = e, u = t ? a.intl.string(a.t.WWzQtb) : a.intl.string(a.t.woMjLS);
-  return (0, r.jsx)(s.PU, {
+  return (0, r.jsx)(o.PU, {
     className: c.editableRequirementContainer,
     icon: i.AtH,
     text: u,
@@ -72,7 +72,7 @@ function d(e) {
             reason: l.L.GUILD_PHONE_REQUIRED
           }, t))
         }, {
-          modalKey: o.M
+          modalKey: s.M
         })
       }
     })

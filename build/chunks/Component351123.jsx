@@ -75,7 +75,7 @@ function H(e, t) {
   }), e
 }
 
-function W(e) {
+function G(e) {
   let {
     channel: t,
     roles: n,
@@ -208,7 +208,7 @@ function W(e) {
   })
 }
 
-function G(e) {
+function W(e) {
   let {
     guild: t,
     channel: l,
@@ -260,7 +260,7 @@ function G(e) {
             disabled: !h
           }))
         })]
-      }), (0, i.jsx)(W, {
+      }), (0, i.jsx)(G, {
         channel: l,
         roles: d,
         members: u,
@@ -363,7 +363,7 @@ function F(e) {
               })
             }
           })]
-        }), (0, i.jsx)(W, {
+        }), (0, i.jsx)(G, {
           channel: l,
           roles: d,
           members: u,
@@ -472,7 +472,7 @@ let X = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
           }))
         })
       }
-    }) : null, s.isGuildStageVoice() ? (0, i.jsx)(G, {
+    }) : null, s.isGuildStageVoice() ? (0, i.jsx)(W, {
       guild: d,
       channel: s,
       permissionUpdates: m

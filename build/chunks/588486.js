@@ -31,7 +31,7 @@ var Chunk230367 = require("./230367.js"),
     return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ACTIVE = 1] = "ACTIVE", e[e.UNUSED = 2] = "UNUSED", e[e.BURNED = 3] = "BURNED", e
   }({}),
   m = function(e) {
-    return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DRAFT = 1] = "DRAFT", e[e.TESTING = 2] = "TESTING", e[e.TESTING_ENDED = 3] = "TESTING_ENDED", e[e.ROLLING_OUT = 4] = "ROLLING_OUT", e[e.ROLLED_OUT = 5] = "ROLLED_OUT", e[e.ARCHIVED = 6] = "ARCHIVED", e[e.AA_MODE = 7] = "AA_MODE", e
+    return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DRAFT = 1] = "DRAFT", e[e.MEASUREMENT = 2] = "MEASUREMENT", e[e.MEASUREMENT_ENDED = 3] = "MEASUREMENT_ENDED", e[e.ROLLING_OUT = 4] = "ROLLING_OUT", e[e.ROLLED_OUT = 5] = "ROLLED_OUT", e[e.ARCHIVED = 6] = "ARCHIVED", e[e.AA_MODE = 7] = "AA_MODE", e
   }({});
 class g extends Chunk495852.C {
   create(e) {
@@ -48,7 +48,7 @@ class g extends Chunk495852.C {
       unitType: 0,
       variants: [],
       rules: [],
-      status: 0,
+      phase: 0,
       surfaces: [],
       owningTeamName: "",
       cachedNotificationChannelId: "0",
@@ -117,7 +117,7 @@ class g extends Chunk495852.C {
           a.rules.push(s.$9.internalBinaryRead(e, e.uint32(), n));
           break;
         case 18:
-          a.status = e.int32();
+          a.phase = e.int32();
           break;
         case 19:
           if (i === r.TD.LengthDelimited)
@@ -155,7 +155,7 @@ class g extends Chunk495852.C {
     "0" !== e.id && t.tag(1, r.TD.Bit64).fixed64(e.id), "" !== e.name && t.tag(2, r.TD.LengthDelimited).string(e.name), e.createdAt && c.E.internalBinaryWrite(e.createdAt, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), "0" !== e.creatorId && t.tag(4, r.TD.Bit64).fixed64(e.creatorId), 0 !== e.version && t.tag(5, r.TD.Varint).int32(e.version), e.editedAt && c.E.internalBinaryWrite(e.editedAt, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), "0" !== e.editorId && t.tag(7, r.TD.Bit64).fixed64(e.editorId), "" !== e.title && t.tag(8, r.TD.LengthDelimited).string(e.title), "" !== e.description && t.tag(9, r.TD.LengthDelimited).string(e.description), e.hypothesis && l.Gm.internalBinaryWrite(e.hypothesis, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.techSpecLink && l.Gm.internalBinaryWrite(e.techSpecLink, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), 0 !== e.revision && t.tag(12, r.TD.Varint).int32(e.revision), "" !== e.hashKey && t.tag(13, r.TD.LengthDelimited).string(e.hashKey), 0 !== e.unitType && t.tag(14, r.TD.Varint).int32(e.unitType);
     for (let i = 0; i < e.variants.length; i++) b.internalBinaryWrite(e.variants[i], t.tag(15, r.TD.LengthDelimited).fork(), n).join();
     for (let i = 0; i < e.rules.length; i++) s.$9.internalBinaryWrite(e.rules[i], t.tag(16, r.TD.LengthDelimited).fork(), n).join();
-    if (0 !== e.status && t.tag(18, r.TD.Varint).int32(e.status), e.surfaces.length) {
+    if (0 !== e.phase && t.tag(18, r.TD.Varint).int32(e.phase), e.surfaces.length) {
       t.tag(19, r.TD.LengthDelimited).fork();
       for (let n = 0; n < e.surfaces.length; n++) t.int32(e.surfaces[n]);
       t.join()
@@ -249,9 +249,9 @@ class g extends Chunk495852.C {
       T: () => Chunk552018.$9
     }, {
       no: 18,
-      name: "status",
+      name: "phase",
       kind: "enum",
-      T: () => ["discord_protos.discord_experimentation.v1.Status", m]
+      T: () => ["discord_protos.discord_experimentation.v1.Phase", m]
     }, {
       no: 19,
       name: "surfaces",

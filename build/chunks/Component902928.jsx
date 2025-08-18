@@ -16,11 +16,11 @@ let f = e => {
   let {
     onComplete: t,
     data: n
-  } = e, f = (0, r.useId)(), p = null, h = null, x = n.scopes.some(e => (0, l.sg)(e));
-  return n.clientId === o.t.PLAYSTATION_APPLICATION_ID || n.clientId === o.t.PLAYSTATION_STAGING_APPLICATION_ID ? p = d.Z : x && (p = u.Z), null != n.twoWayLinkCode ? h = s.intl.string(s.t.QhATl5) : x && (h = s.intl.string(s.t.vBPvKy)), (0, a.jsxs)("div", {
+  } = e, f = (0, r.useId)(), h = null, p = null, x = n.scopes.some(e => (0, l.sg)(e));
+  return n.clientId === o.t.PLAYSTATION_APPLICATION_ID || n.clientId === o.t.PLAYSTATION_STAGING_APPLICATION_ID ? h = d.Z : x && (h = u.Z), null != n.twoWayLinkCode ? p = s.intl.string(s.t.QhATl5) : x && (p = s.intl.string(s.t.vBPvKy)), (0, a.jsxs)("div", {
     className: c.content,
-    children: [null != p ? (0, a.jsx)("img", {
-      src: p,
+    children: [null != h ? (0, a.jsx)("img", {
+      src: h,
       className: c.artwork,
       alt: "",
       "aria-labelledby": f
@@ -30,10 +30,10 @@ let f = e => {
         variant: "heading-xl/extrabold",
         id: f,
         children: s.intl.string(s.t.qDtJmJ)
-      }), null != h ? (0, a.jsx)(i.Text, {
+      }), null != p ? (0, a.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: h
+        children: p
       }) : null]
     }), (0, a.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,

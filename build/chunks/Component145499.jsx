@@ -123,7 +123,7 @@ let w = e => {
       return null != (e = _.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
       analyticsLocations: j
-    } = (0, m.ZP)(), D = (0, b.Z)(t.id), A = t.features.has(I.oNc.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, k = t.features.has(I.oNc.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : D, L = (0, x.Z)(t.id);
+    } = (0, m.ZP)(), D = (0, b.Z)(t.id), A = t.features.has(I.oNc.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, L = t.features.has(I.oNc.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : D, k = (0, x.Z)(t.id);
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
       }, [u]), l) return (0, r.jsx)(c.$jN, {});
@@ -186,11 +186,11 @@ let w = e => {
           V = C && !z && W === x.tier && U !== F.length,
           Y = V || F.length > 0,
           K = U - G,
-          q = n(872732),
-          X = B - F.length,
-          Q = V ? Math.min(5 - (F.length + 0) % 5, X) : 0,
-          J = [];
-        for (let e = 0; e < Q; e++) J.push((0, r.jsx)(R, {}, "placeholder-".concat(e)));
+          X = n(872732),
+          q = B - F.length,
+          J = V ? Math.min(5 - (F.length + 0) % 5, q) : 0,
+          Q = [];
+        for (let e = 0; e < J; e++) Q.push((0, r.jsx)(R, {}, "placeholder-".concat(e)));
         let $ = t.premiumTier < x.tier && D >= I.oCV[x.tier],
           ee = S.intl.string(S.t.dtFw5e),
           et = () => {
@@ -209,7 +209,7 @@ let w = e => {
             }))
           },
           en = false;
-        $ && (L ? (et = () => {
+        $ && (k ? (et = () => {
           let e = E.Cp[x.tier];
           null != e && (0, f.H6)(t.id, e)
         }, ee = S.intl.string(S.t.g7lkra), t.premiumTier + 1 !== x.tier && (en = true, l = S.intl.string(S.t.mTMkY2))) : (en = true, l = S.intl.string(S.t.hwPEJS)));
@@ -230,7 +230,7 @@ let w = e => {
         }) : V && (s = (0, r.jsx)(Z, {
           guild: t
         })), (0, r.jsxs)(N.Z, {
-          subscriptionCount: k,
+          subscriptionCount: L,
           tier: x,
           onSetRef: b,
           isAnimatedTo: m,
@@ -245,7 +245,7 @@ let w = e => {
               isDisabled: z,
               sticker: e,
               canManageSticker: w(e)
-            }, e.id)), J]
+            }, e.id)), Q]
           }), !z && !V && 0 === F.length && (0, r.jsx)("div", {
             className: a()(T.emptyTierWrapper, T.unusedTierWrapper),
             children: (0, r.jsx)(c.Text, {
@@ -258,7 +258,7 @@ let w = e => {
             children: [(0, r.jsx)("img", {
               alt: S.intl.string(S.t.BAhsws),
               className: T.emptyTierImage,
-              src: q
+              src: X
             }), (0, r.jsx)(c.Text, {
               className: T.unlockTierCtaHeading,
               variant: "text-md/normal",

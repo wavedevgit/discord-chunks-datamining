@@ -23,9 +23,9 @@ var r, Chunk647438 = require("./647438.js"),
   g = ((r = {})[r.CLAIM_ACCOUNT = 0] = "CLAIM_ACCOUNT", r[r.EMAIL_CONFIRMATION = 1] = "EMAIL_CONFIRMATION", r[r.VERIFICATION_FORM = 2] = "VERIFICATION_FORM", r);
 
 function b(e, t, n) {
-  let [r, s] = i.useState(false), c = (0, l.e7)([m.Z], () => m.Z.get(e)), u = (0, l.e7)([o.Z], () => o.Z.pendingState);
+  let [r, o] = i.useState(false), c = (0, l.e7)([m.Z], () => m.Z.get(e)), u = (0, l.e7)([s.Z], () => s.Z.pendingState);
   i.useEffect(() => {
-    t || d.ZP.fetchVerificationForm(e, n).finally(() => s(true))
+    t || d.ZP.fetchVerificationForm(e, n).finally(() => o(true))
   }, [e, n, t]);
   let h = i.useMemo(() => {
     var e, n;
@@ -56,8 +56,8 @@ function b(e, t, n) {
 
 function v(e, t, n) {
   let r = (0, l.e7)([c.Z], () => c.Z.getGuild(e)),
-    o = (0, l.e7)([s.Z], () => s.Z.getGuild());
-  return i.useMemo(() => n && (null == o ? true : o.id) === e ? o : null != r ? r : null != t ? (0, u.Rj)(t) : null, [n, o, e, r, t])
+    s = (0, l.e7)([o.Z], () => o.Z.getGuild());
+  return i.useMemo(() => n && (null == s ? true : s.id) === e ? s : null != r ? r : null != t ? (0, u.Rj)(t) : null, [n, s, e, r, t])
 }
 
 function _(e) {

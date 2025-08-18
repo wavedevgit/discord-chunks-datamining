@@ -13,8 +13,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk233828 = require("./233828.js");
 let Chunk412998 = require("./412998.js"),
   Chunk515695 = require("./515695.js"),
-  p = "".concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT.split("//")[1]).concat(Chunk981631.Z5c.ACTIVATE),
-  h = "".concat(location.protocol, "//").concat(p);
+  h = "".concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT.split("//")[1]).concat(Chunk981631.Z5c.ACTIVATE),
+  p = "".concat(location.protocol, "//").concat(h);
 
 function x(e) {
   let {
@@ -66,7 +66,7 @@ let m = e => {
         children: [(0, a.jsx)("div", {
           className: d.qrcodeCard,
           children: (0, a.jsx)(x, {
-            text: "".concat(h, "?user_code=").concat(encodeURIComponent(n))
+            text: "".concat(p, "?user_code=").concat(encodeURIComponent(n))
           })
         }), (0, a.jsxs)("div", {
           className: d.qrcodeText,
@@ -113,7 +113,7 @@ let m = e => {
             variant: "heading-xxl/semibold",
             color: "header-primary",
             className: d.fallbackContentHeading,
-            children: p
+            children: h
           }), (0, a.jsxs)("div", {
             className: d.fallbackContentTextGroup,
             children: [(0, a.jsx)(o.X6q, {

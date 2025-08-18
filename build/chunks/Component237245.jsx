@@ -68,9 +68,9 @@ function I(e) {
     settingsProfile: S
   } = e, T = I.id, [P, w] = i.useState(false), [R, Z] = i.useState(null), D = I.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, g.A)({
     guildId: I.id
-  })) ? t : 0, k = i.useCallback(() => {
+  })) ? t : 0, L = i.useCallback(() => {
     Z(null), h.Z.init(T, _.pNK.ACCESS)
-  }, [T]), L = i.useCallback(async e => {
+  }, [T]), k = i.useCallback(async e => {
     try {
       w(true), await e(), Z(null)
     } finally {
@@ -101,7 +101,7 @@ function I(e) {
     }] : [];
     await G(r, e, n)
   }, [G]), B = i.useCallback(e => {
-    if (l.isAgeRestricted !== (I.ownerConfiguredContentLevel === _.V_K.AGE_RESTRICTED) && L(async () => {
+    if (l.isAgeRestricted !== (I.ownerConfiguredContentLevel === _.V_K.AGE_RESTRICTED) && k(async () => {
         let e = l.isAgeRestricted ? _.V_K.AGE_RESTRICTED : _.V_K.DEFAULT;
         await M({
           ownerConfiguredContentLevel: e
@@ -111,7 +111,7 @@ function I(e) {
         requireTerms: t,
         termRules: n = []
       } = l, r = n.map(e => e.value.trim()).filter(e => "" !== e);
-      L(async () => {
+      k(async () => {
         if (I.features.has(_.oNc.DISCOVERABLE)) {
           let e = new Set(I.features);
           e.delete(_.oNc.DISCOVERABLE), await M({
@@ -125,7 +125,7 @@ function I(e) {
         pendingVerificationFields: t
       } = l;
       if (null == t) return;
-      L(async () => {
+      k(async () => {
         if (I.features.has(_.oNc.DISCOVERABLE)) {
           let e = new Set(I.features);
           e.delete(_.oNc.DISCOVERABLE), await M({
@@ -141,7 +141,7 @@ function I(e) {
         requireTerms: t,
         termRules: n = []
       } = l, r = n.map(e => e.value.trim()).filter(e => "" !== e);
-      L(async () => {
+      k(async () => {
         if (f.verificationDirty && await U(t, r, e), f.guildDirty) {
           (0, b.UA)(I, x);
           let e = new Set(I.features);
@@ -161,7 +161,7 @@ function I(e) {
         }
       })
     }
-  }, [l, L, I, f, M, U, S, G, x, E]), F = i.useCallback(() => {
+  }, [l, k, I, f, M, U, S, G, x, E]), F = i.useCallback(() => {
     var e;
     if (l.joinType === j.A.INVITE || l.joinType === j.A.DISCOVERABLE) {
       let {
@@ -201,7 +201,7 @@ function I(e) {
     onSaveText: H ? y.intl.string(y.t["qjtt/v"]) : true,
     submitting: P,
     errorMessage: R,
-    onReset: k,
+    onReset: L,
     onSave: F,
     disabled: H && !z
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 6049 **/
 /** chunk id: 247031, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => k
 }), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./539854.js"), require("./642613.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -330,7 +330,7 @@ class A extends Chunk647438.PureComponent {
     })
   }
 }
-let k = Chunk442837.ZP.connectStores([Chunk999382.Z, Chunk210887.Z, Chunk246946.Z], () => {
+let L = Chunk442837.ZP.connectStores([Chunk999382.Z, Chunk210887.Z, Chunk246946.Z], () => {
   let {
     bans: e,
     guild: t,
@@ -345,7 +345,7 @@ let k = Chunk442837.ZP.connectStores([Chunk999382.Z, Chunk210887.Z, Chunk246946.
   }
 })(A);
 
-function L() {
+function k() {
   var e;
   let {
     guild: t
@@ -357,5 +357,5 @@ function L() {
   }, {
     autoTrackExposure: true
   });
-  return require ? (0, Chunk951288.jsx)(Chunk1080.Z, {}) : (0, Chunk951288.jsx)(k, {})
+  return require ? (0, Chunk951288.jsx)(Chunk1080.Z, {}) : (0, Chunk951288.jsx)(L, {})
 }

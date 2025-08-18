@@ -1,8 +1,8 @@
 /** Chunk was on 73736 **/
 /** chunk id: 659972, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b,
-  k: () => m
+  Z: () => m,
+  k: () => b
 }), require("./953529.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,19 +15,19 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk131154 = require("./131154.jsx"),
   Chunk38981 = require("./38981.jsx"),
   Chunk302592 = require("./302592.js"),
-  m = ((r = {})[r.UNSPECIFIED = 0] = "UNSPECIFIED", r[r.TRENDING = 1] = "TRENDING", r[r.PERSONALIZED = 2] = "PERSONALIZED", r[r.USER_GUILDS = 3] = "USER_GUILDS", r[r.FRIENDS_GUILDS = 4] = "FRIENDS_GUILDS", r[r.INTRO_CARD = 5] = "INTRO_CARD", r[r.FEATURED = 6] = "FEATURED", r);
+  b = ((r = {})[r.UNSPECIFIED = 0] = "UNSPECIFIED", r[r.TRENDING = 1] = "TRENDING", r[r.PERSONALIZED = 2] = "PERSONALIZED", r[r.USER_GUILDS = 3] = "USER_GUILDS", r[r.FRIENDS_GUILDS = 4] = "FRIENDS_GUILDS", r[r.INTRO_CARD = 5] = "INTRO_CARD", r[r.FEATURED = 6] = "FEATURED", r);
 
-function b(e) {
+function m(e) {
   let {
     guild: t,
     stageInstance: n,
     showGuildPopout: r,
     setShowGuildPopout: a,
-    handleGuildNameClick: m,
-    source: b,
+    handleGuildNameClick: b,
+    source: m,
     speakers: f,
-    speakerCount: p,
-    audienceCount: x,
+    speakerCount: x,
+    audienceCount: p,
     channelName: v
   } = e, j = l.useRef(null), N = t.id;
   return (0, i.jsx)("div", {
@@ -43,7 +43,7 @@ function b(e) {
           targetElementRef: j,
           children: () => (0, i.jsxs)(s.P3F, {
             className: _.flexContainerRow,
-            onClick: m,
+            onClick: b,
             innerRef: j,
             children: [(0, i.jsx)(c.Z, {
               guild: t,
@@ -55,7 +55,7 @@ function b(e) {
                 color: "header-secondary",
                 variant: "text-sm/normal",
                 className: o()(_.guildName, {
-                  [_.disabled]: null == m
+                  [_.disabled]: null == b
                 }),
                 children: t.name
               }), (0, i.jsx)(d.Z, {
@@ -65,7 +65,7 @@ function b(e) {
           })
         }), (0, i.jsxs)("div", {
           className: _.rightJustifiedContent,
-          children: [6 === b && (0, i.jsx)("div", {
+          children: [6 === m && (0, i.jsx)("div", {
             className: _.featuredTag,
             children: (0, i.jsx)(s.Text, {
               variant: "text-sm/normal",
@@ -73,7 +73,7 @@ function b(e) {
               children: "Featured"
             })
           }), (0, i.jsx)(g.Z, {
-            count: x,
+            count: p,
             className: _.__invalid_audienceCount
           })]
         })]
@@ -90,7 +90,7 @@ function b(e) {
       }), (0, i.jsx)(h.Z, {
         guild: t,
         speakers: f,
-        speakerCount: p,
+        speakerCount: x,
         className: _.speakers
       }), null != v && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("hr", {

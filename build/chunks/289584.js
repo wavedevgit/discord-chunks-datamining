@@ -16,8 +16,8 @@ var Chunk647438 = require("./647438.js"),
 function h(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null,
     [h, g] = r.useState(false),
-    [_, m] = r.useState(null),
-    b = r.useMemo(() => d.Z.getStageInstanceByChannel(null == e ? true : e.id), [null == e ? true : e.id]),
+    [_, b] = r.useState(null),
+    m = r.useMemo(() => d.Z.getStageInstanceByChannel(null == e ? true : e.id), [null == e ? true : e.id]),
     f = (0, s.J)(e);
   return {
     loading: h,
@@ -29,12 +29,12 @@ function h(e, t) {
         sendStartNotification: h
       } = r;
       if (null != e && "" !== s && null != d) {
-        g(true), m(null), null != n && (i.Z.selectGuild(n), l.default.selectVoiceChannel(e.id));
+        g(true), b(null), null != n && (i.Z.selectGuild(n), l.default.selectVoiceChannel(e.id));
         try {
           let n;
-          null != b ? n = await c.Ef(e, s, d) : (n = await c.HO(e, s, d, null != h && h), f && o.Kw(u.v.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
+          null != m ? n = await c.Ef(e, s, d) : (n = await c.HO(e, s, d, null != h && h), f && o.Kw(u.v.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
         } catch (e) {
-          m(new a.Hx(e)), g(false)
+          b(new a.Hx(e)), g(false)
         }
       }
     }

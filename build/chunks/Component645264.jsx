@@ -47,14 +47,14 @@ let v = () => (0, Chunk951288.jsx)(Chunk852860.Z, {
     return (i.useEffect(() => {
       C && j === m.t && a()
     }, [C, a, j]), j === m.t) ? null : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(o.I, {
+      children: [(0, r.jsxs)(s.I, {
         transitionState: t,
         "aria-labelledby": O,
         size: "xl",
         onClose: a,
         children: [(0, r.jsx)("div", {
           className: b.closeButton,
-          children: (0, r.jsx)(s.P, {
+          children: (0, r.jsx)(o.P, {
             onClick: () => a(false)
           })
         }), (0, r.jsx)("div", {

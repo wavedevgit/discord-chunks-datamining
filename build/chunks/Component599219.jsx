@@ -95,8 +95,8 @@ function S(e) {
   o.useEffect(() => {
     n(L ? T.F.COMPLETE : M)
   }, [n, M, L]);
-  let [R, z] = o.useState(null), [H, W] = o.useState(null), [J, Y] = o.useState(false), V = (0, l.e7)([x.Z], () => x.Z.getType() === C.M5.INVITE_UNCLAIMED), q = o.useCallback(e => {
-    W(e), k(T.F.CREATION_INTENT), N.default.track(O.rMx.GUILD_TEMPLATE_SELECTED, {
+  let [R, z] = o.useState(null), [H, W] = o.useState(null), [J, Y] = o.useState(false), V = (0, l.e7)([N.Z], () => N.Z.getType() === C.M5.INVITE_UNCLAIMED), q = o.useCallback(e => {
+    W(e), k(T.F.CREATION_INTENT), x.default.track(O.rMx.GUILD_TEMPLATE_SELECTED, {
       template_name: e.label,
       template_code: e.code
     })

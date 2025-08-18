@@ -175,7 +175,7 @@ let ev = {
         };
       case ep.pNK.SOUNDBOARD:
         return {
-          section: ep.pNK.SOUNDBOARD, impressionName: i.ImpressionNames.GUILD_SETTINGS_SOUNDBOARD, label: ef.intl.string(ef.t.OWQNYm), ariaLabel: ef.intl.string(ef.t.OWQNYm), element: J.Z, predicate: () => t.canManageGuildExpressions
+          section: ep.pNK.SOUNDBOARD, impressionName: i.ImpressionNames.GUILD_SETTINGS_SOUNDBOARD, label: ef.intl.string(ef.t.OWQNYm), ariaLabel: ef.intl.string(ef.t.OWQNYm), element: Q.Z, predicate: () => t.canManageGuildExpressions
         };
       case ep.pNK.GUILD_TEMPLATES:
         return {
@@ -213,7 +213,7 @@ let ev = {
         };
       case ep.pNK.MODERATION:
         return {
-          section: ep.pNK.MODERATION, impressionName: i.ImpressionNames.GUILD_SETTINGS_MODERATION, label: ef.intl.string(ef.t["suhY+f"]), element: Q.ZP, predicate: () => t.canManageGuild && !t.guild.features.has(ep.oNc.COMMUNITY)
+          section: ep.pNK.MODERATION, impressionName: i.ImpressionNames.GUILD_SETTINGS_MODERATION, label: ef.intl.string(ef.t["suhY+f"]), element: J.ZP, predicate: () => t.canManageGuild && !t.guild.features.has(ep.oNc.COMMUNITY)
         };
       case ep.pNK.GUILD_AUTOMOD:
         return {
@@ -246,12 +246,12 @@ let ev = {
         };
       case ep.pNK.ONBOARDING:
         return {
-          section: ep.pNK.ONBOARDING, label: ef.intl.string(ef.t.LdxCKy), element: q.Z, ariaLabel: ef.intl.string(ef.t.LdxCKy), newIndicatorDismissibleContentTypes: t.onboardingEnabled ? null : [l.z.COMMUNITY_ONBOARDING_NEW_BADGE], notice: {
+          section: ep.pNK.ONBOARDING, label: ef.intl.string(ef.t.LdxCKy), element: X.Z, ariaLabel: ef.intl.string(ef.t.LdxCKy), newIndicatorDismissibleContentTypes: t.onboardingEnabled ? null : [l.z.COMMUNITY_ONBOARDING_NEW_BADGE], notice: {
             stores: [D.Z],
-            element: L.Z
+            element: k.Z
           }, predicate: () => (0, h.wC)(t.guild.id), decoration: function(e, t) {
             if (p.Z.getEnabled(e)) return ef.intl.string(ef.t.pPSmxs).toUpperCase();
-            if ((0, k.C)(e)) return ef.intl.string(ef.t.HDF4o6).toUpperCase();
+            if ((0, L.C)(e)) return ef.intl.string(ef.t.HDF4o6).toUpperCase();
             let n = A.ug,
               r = n.findIndex(e => e === t);
             if (false !== r) return ef.intl.formatToPlainString(ef.t["5r28iY"], {
@@ -302,7 +302,7 @@ let ev = {
         };
       case ep.pNK.GUILD_PREMIUM:
         return {
-          section: ep.pNK.GUILD_PREMIUM, impressionName: i.ImpressionNames.GUILD_SETTINGS_BOOST_STATUS, label: ef.intl.string(ef.t["8+VX4+"]), ariaLabel: ef.intl.string(ef.t["8+VX4+"]), element: X.Z, className: eb.serverBoostTabItem, icon: (0, r.jsx)(a.$Eu, {
+          section: ep.pNK.GUILD_PREMIUM, impressionName: i.ImpressionNames.GUILD_SETTINGS_BOOST_STATUS, label: ef.intl.string(ef.t["8+VX4+"]), ariaLabel: ef.intl.string(ef.t["8+VX4+"]), element: q.Z, className: eb.serverBoostTabItem, icon: (0, r.jsx)(a.$Eu, {
             color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
             size: "sm",
             className: eb.icon

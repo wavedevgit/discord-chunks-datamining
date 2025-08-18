@@ -12,8 +12,6 @@ module.exports = {
   customizationContainer: "customizationContainer_cba592",
   iconSelector: "iconSelector_cba592",
   channelNameLabel: "channelNameLabel_cba592",
-  channelNameInput: "channelNameInput_cba592",
-  channelNameInputInner: "channelNameInputInner_cba592",
   subtitleWarning: "subtitleWarning_cba592",
   scroller: "scroller_cba592",
   scrollerInner: "scrollerInner_cba592",

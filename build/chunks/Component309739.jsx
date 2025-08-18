@@ -250,20 +250,22 @@ function B() {
     }, [exports, require]);
   return 0 === exports.length ? null : (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY,
-    children: (0, Chunk951288.jsxs)(Chunk481060.hjN, {
+    children: (0, Chunk951288.jsx)(Chunk481060.hjN, {
       className: Chunk197571.marginBottom40,
-      children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
-        tag: Chunk481060.RB0.H5,
-        className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t["4F2KoK"])
-      }), (0, Chunk951288.jsx)(Chunk755721.Is, {
-        className: Chunk85240.searchInput,
-        value: require,
-        onChange: Chunk120356,
-        placeholder: Chunk388032.intl.string(Chunk388032.t.WPrtoa)
-      }), a.map(e => (0, i.jsx)(L, {
-        account: e
-      }, e.id))]
+      children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+        gap: 12,
+        children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
+          tag: Chunk481060.RB0.H5,
+          className: Chunk197571.marginBottom8,
+          children: Chunk388032.intl.string(Chunk388032.t["4F2KoK"])
+        }), (0, Chunk951288.jsx)(Chunk481060.E1j, {
+          query: require,
+          onChange: Chunk120356,
+          placeholder: Chunk388032.intl.string(Chunk388032.t.WPrtoa)
+        }), a.map(e => (0, i.jsx)(L, {
+          account: e
+        }, e.id))]
+      })
     })
   })
 }

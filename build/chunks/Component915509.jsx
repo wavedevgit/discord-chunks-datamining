@@ -15,8 +15,8 @@ function s(e) {
     errorText: t,
     title: n,
     description: s,
-    transitionState: u,
-    onCancel: d,
+    transitionState: d,
+    onCancel: u,
     onConfirm: p,
     children: g
   } = e, [m, b] = l.useState(false), h = l.useCallback(async () => {
@@ -29,22 +29,22 @@ function s(e) {
       b(false)
     }
   }, [p]);
-  return (0, r.jsxs)(a.Modal, {
-    transitionState: u,
-    onClose: d,
+  return (0, r.jsxs)(i.Modal, {
+    transitionState: d,
+    onClose: u,
     title: n,
     subtitle: s,
     actions: [{
       text: o.intl.string(o.t["ETE/oK"]),
       variant: "secondary",
-      onClick: d
+      onClick: u
     }, {
       text: o.intl.string(o.t.R3BPHx),
       onClick: h,
       variant: "primary",
       loading: m
     }],
-    children: [g, null != t && "" !== t ? (0, r.jsx)(i.Text, {
+    children: [g, null != t && "" !== t ? (0, r.jsx)(a.Text, {
       className: c.errorText,
       variant: "text-xs/normal",
       color: "text-danger",

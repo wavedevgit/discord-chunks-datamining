@@ -74,7 +74,7 @@ function K(e) {
   })
 }
 
-function q(e) {
+function X(e) {
   let {
     role: t,
     guildId: n,
@@ -110,7 +110,7 @@ function q(e) {
       })]
     }), (0, r.jsx)("div", {
       className: F.roleStyleContainer,
-      children: L.pM.map(e => {
+      children: k.pM.map(e => {
         let {
           id: u,
           colors: p,
@@ -158,7 +158,7 @@ function q(e) {
           variant: "text-sm/semibold",
           color: "button-outline-primary-text",
           children: U.intl.format(B.default.VpEDJS, {
-            magical: (0, r.jsx)(X, {})
+            magical: (0, r.jsx)(q, {})
           })
         }), (0, r.jsx)(g.Text, {
           variant: "text-xs/medium",
@@ -177,7 +177,7 @@ function q(e) {
   })
 }
 
-function X() {
+function q() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     {
       gradientStyle: t,
@@ -214,7 +214,7 @@ function X() {
   })
 }
 
-function Q(e) {
+function J(e) {
   var t, n;
   let {
     role: i,
@@ -252,7 +252,7 @@ function Q(e) {
   })
 }
 
-function J(e) {
+function Q(e) {
   let {
     role: t,
     guildId: n,
@@ -358,7 +358,7 @@ function ee(e) {
         children: (0, r.jsx)(Z.Z, {
           guild: t,
           role: n,
-          selectedSection: k.ZI.DISPLAY,
+          selectedSection: L.ZI.DISPLAY,
           setSelectedSection: l
         })
       }), (0, r.jsx)(K, {
@@ -371,13 +371,13 @@ function ee(e) {
         })
       }), (0, r.jsx)(g.$i$, {
         className: F.divider
-      }), (s || c) && null != u && (0, r.jsx)(q, {
+      }), (s || c) && null != u && (0, r.jsx)(X, {
         role: n,
         guildId: t.id,
         selectedStyle: u,
         disabled: p,
         shouldShowUpsell: c
-      }), u !== T.g.HOLOGRAPHIC && null != u && (0, r.jsx)(Q, {
+      }), u !== T.g.HOLOGRAPHIC && null != u && (0, r.jsx)(J, {
         role: n,
         disabled: p,
         currentStyle: u,
@@ -392,7 +392,7 @@ function ee(e) {
         guild: t,
         disabled: p,
         role: n
-      }), (0, r.jsx)(J, {
+      }), (0, r.jsx)(Q, {
         role: n,
         guildId: t.id,
         selectedStyle: u,

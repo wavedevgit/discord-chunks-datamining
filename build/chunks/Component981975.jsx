@@ -101,18 +101,18 @@ function w(e) {
   }, [n.id, t.id]), A = (0, c.Wu)([b.Z], () => {
     var e;
     return null != (e = b.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
-  }), k = A.length > 1 ? m.O1.OR : m.O1.AND, L = i.useMemo(() => k === m.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [k, A]), M = i.useMemo(() => new Set(L.map(e => e.connectionType)), [L]);
+  }), L = A.length > 1 ? m.O1.OR : m.O1.AND, k = i.useMemo(() => L === m.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [L, A]), M = i.useMemo(() => new Set(k.map(e => e.connectionType)), [k]);
 
   function G(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : true,
-      r = [...L];
+      r = [...k];
     r.push({
       connectionType: e,
       connectionMetadataField: true,
       applicationId: t,
       operator: true,
       value: true
-    }), (0, f.d_)(n.id, T(r, k))
+    }), (0, f.d_)(n.id, T(r, L))
   }
 
   function U() {
@@ -125,14 +125,14 @@ function w(e) {
     })
   }
   let B = null;
-  if (0 === L.length) B = (0, r.jsx)(P, {
+  if (0 === k.length) B = (0, r.jsx)(P, {
     handleAddVerificationClicked: U,
     locked: l
   });
-  else if (L.length > 0) {
+  else if (k.length > 0) {
     var F;
     let e = null;
-    L.length < 10 && (e = (0, r.jsx)(d.zxk, {
+    k.length < 10 && (e = (0, r.jsx)(d.zxk, {
       disabled: l,
       onClick: U,
       text: C.intl.string(C.t["OSvW5+"]),
@@ -181,7 +181,7 @@ function w(e) {
             "aria-labelledby": S
           })
         })
-      }(l, n.id, k, L, (e, t) => (0, f.d_)(n.id, T(e, t))), function(e, t, n, i, l) {
+      }(l, n.id, L, k, (e, t) => (0, f.d_)(n.id, T(e, t))), function(e, t, n, i, l) {
         function a(n, r) {
           let i = [];
           for (let t of e) i.push(E({}, t));
@@ -242,7 +242,7 @@ function w(e) {
             integrations: l
           }, e[0].configuration.connectionType + ":" + e[0].index))
         })
-      }(L, e => (0, f.d_)(n.id, T(e, k)), l, n.id, o), e]
+      }(k, e => (0, f.d_)(n.id, T(e, L)), l, n.id, o), e]
     })
   }
   return (0, r.jsx)(d.yWw, {

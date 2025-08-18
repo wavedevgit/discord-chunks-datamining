@@ -47,8 +47,8 @@ function E(e) {
       baseCode: w,
       guildScheduledEventId: Z
     }) : null,
-    _ = null == D || null == P,
-    R = (0, s.Z)(null != D ? D : ""),
+    R = null == D || null == P,
+    _ = (0, s.Z)(null != D ? D : ""),
     A = null != (n = null == P ? true : P.maxAge) ? n : y.value,
     X = null != (E = null == P ? true : P.maxUses) ? E : b.value;
   return (0, r.jsxs)("div", {
@@ -84,10 +84,10 @@ function E(e) {
     }), (0, r.jsxs)("div", {
       className: j.invite,
       children: [(0, r.jsx)(o.S, {
-        value: R,
+        value: _,
         autoFocus: false,
         onCopy: e => {
-          if (_) return;
+          if (R) return;
           (0, g.JG)(e);
           let t = (0, h.xC)(N.entity_type);
           m.default.track(f.rMx.COPY_INSTANT_INVITE, {

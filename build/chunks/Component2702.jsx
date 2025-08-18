@@ -1,19 +1,16 @@
 /** Chunk was on 42758 **/
-/** chunk id: 2702, original params: e,t,n (module,exports,require) **/
+/** chunk id: 2702, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => E
+  default: () => w
 }), require("./314940.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  u = require.n(Chunk512722),
+  i = require.n(Chunk512722),
   Chunk954955 = require("./954955.js"),
-  c = require.n(Chunk954955),
+  o = require.n(Chunk954955),
   Chunk278074 = require("./278074.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk809206 = require("./809206.js"),
   Chunk219496 = require("./219496.js"),
@@ -25,157 +22,150 @@ var Chunk951288 = require("./951288.js"),
   Chunk74538 = require("./74538.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk377238 = require("./377238.js"),
-  Chunk979712 = require("./979712.js");
-let N = e => {
+  Chunk377238 = require("./377238.js");
+let k = e => {
   let {
-    usernameStatus: t,
-    showHint: n
+    usernameStatus: n,
+    showHint: t
   } = e;
-  return (0, d.EQ)(t).with({
-    type: p.K.ERROR,
-    message: d.P.select()
-  }, e => (0, a.jsx)(x.Text, {
+  return (0, c.EQ)(n).with({
+    type: h.K.ERROR,
+    message: c.P.select()
+  }, e => (0, a.jsx)(d.Text, {
     variant: "text-sm/normal",
     color: "text-danger",
     children: e
   })).with({
-    type: p.K.AVAILABLE,
-    message: d.P.select()
-  }, e => (0, a.jsx)(x.Text, {
+    type: h.K.AVAILABLE,
+    message: c.P.select()
+  }, e => (0, a.jsx)(d.Text, {
     variant: "text-sm/normal",
     color: "text-feedback-positive",
     children: e
-  })).otherwise(() => n ? (0, a.jsx)(x.Text, {
+  })).otherwise(() => t ? (0, a.jsx)(d.Text, {
     variant: "text-sm/normal",
     color: "text-default",
-    children: U.intl.string(U.t.z7c4bG)
+    children: C.intl.string(C.t.z7c4bG)
   }) : null)
 };
 
-function E(e) {
-  var t;
+function w(e) {
+  var n;
   let {
-    transitionState: n,
-    onClose: i
-  } = e, r = (0, m.e7)([_.default], () => {
-    let e = _.default.getCurrentUser();
-    return u()(null != e, "ChangeUsernameModal: currentUser cannot be undefined"), e
-  }), o = s.useMemo(() => C.ZP.canEditDiscriminator(r) && !r.hasUniqueUsername(), [r]), [d, E] = s.useState(false), [y, L] = s.useState(r.username), [R, S] = s.useState(r.discriminator), [T, q] = s.useState(""), [F, B] = s.useState(false), W = (0, m.e7)([j.Z], () => j.Z.getErrors()), z = (0, b.n)(), M = r.hasUniqueUsername() && z, D = (0, g.a)(y, M, false, r.username), J = s.useRef(null), K = s.useMemo(() => {
-    var e, t, n;
-    return null != (n = null == W || null == (e = W.username) ? true : e[0]) ? n : null == W || null == (t = W.discriminator) ? true : t[0]
-  }, [W]);
-  s.useEffect(() => {
-    if (n === x.Dvm.ENTERED) {
+    transitionState: t,
+    onClose: s
+  } = e, l = (0, u.e7)([b.default], () => {
+    let e = b.default.getCurrentUser();
+    return i()(null != e, "ChangeUsernameModal: currentUser cannot be undefined"), e
+  }), c = r.useMemo(() => v.ZP.canEditDiscriminator(l) && !l.hasUniqueUsername(), [l]), [w, U] = r.useState(false), [y, E] = r.useState(l.username), [N, R] = r.useState(l.discriminator), [S, T] = r.useState(""), [q, W] = r.useState(false), z = (0, u.e7)([p.Z], () => p.Z.getErrors()), B = (0, x.n)(), L = l.hasUniqueUsername() && B, M = (0, f.a)(y, L, false, l.username), K = r.useRef(null), D = r.useMemo(() => {
+    var e, n, t;
+    return null != (t = null == z || null == (e = z.username) ? true : e[0]) ? t : null == z || null == (n = z.discriminator) ? true : n[0]
+  }, [z]);
+  r.useEffect(() => {
+    if (t === d.Dvm.ENTERED) {
       var e;
-      null == (e = J.current) || e.focus()
+      null == (e = K.current) || e.focus()
     }
-  }, [n]);
-  let Z = R !== r.discriminator;
-  async function A(e) {
-    e.preventDefault(), B(true);
-    let t = await (0, f.Mn)({
+  }, [t]);
+  let J = N !== l.discriminator;
+  async function Z(e) {
+    e.preventDefault(), W(true);
+    let n = await (0, m.Mn)({
       username: y,
-      discriminator: o ? R : true,
-      password: T
+      discriminator: c ? N : true,
+      password: S
     });
-    B(false), (null == t ? true : t.ok) && i()
+    W(false), (null == n ? true : n.ok) && s()
   }
-  let P = s.useMemo(() => c()(E, 50), []);
-  return (0, a.jsxs)(x.Y0X, {
-    transitionState: n,
+  let A = r.useMemo(() => o()(U, 50), []);
+  return (0, a.jsxs)(d.Y0X, {
+    transitionState: t,
     parentComponent: "ChangeUsernameModal",
-    children: [(0, a.jsxs)(x.xBx, {
+    children: [(0, a.jsxs)(d.xBx, {
       separator: false,
-      className: k.header,
-      children: [(0, a.jsx)(x.X6q, {
+      className: _.header,
+      children: [(0, a.jsx)(d.X6q, {
         color: "header-primary",
         variant: "heading-xl/bold",
-        className: k.title,
-        children: U.intl.string(U.t["m5or5+"])
-      }), (0, a.jsx)(x.Text, {
+        className: _.title,
+        children: C.intl.string(C.t["m5or5+"])
+      }), (0, a.jsx)(d.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
-        className: k.subtitle,
-        children: U.intl.string(U.t.SLJvy8)
-      }), (0, a.jsx)(x.olH, {
-        onClick: i,
-        className: k.modalCloseButton
+        className: _.subtitle,
+        children: C.intl.string(C.t.SLJvy8)
+      }), (0, a.jsx)(d.olH, {
+        onClick: s,
+        className: _.modalCloseButton
       })]
     }), (0, a.jsxs)("form", {
-      onSubmit: A,
-      children: [(0, a.jsxs)(x.hzk, {
-        className: k.content,
-        children: [(0, a.jsx)(x.xJW, {
-          title: U.intl.string(U.t.TWzdWl),
-          error: K,
-          children: (0, a.jsxs)("div", {
-            className: l()(I.input, k.multiInput, {
-              [I.error]: null != K,
-              [I.focused]: d
-            }),
-            children: [(0, a.jsx)(h.Is, {
+      onSubmit: Z,
+      children: [(0, a.jsxs)(d.hzk, {
+        className: _.content,
+        children: [(0, a.jsx)(d.xJW, {
+          title: C.intl.string(C.t.TWzdWl),
+          error: D,
+          children: (0, a.jsxs)(d.Kqy, {
+            direction: "horizontal",
+            gap: 4,
+            children: [(0, a.jsx)(d.oil, {
               name: "username",
-              "aria-label": U.intl.string(U.t.qqhR3N),
+              "aria-label": C.intl.string(C.t.qqhR3N),
               value: y,
-              maxLength: w.l$U,
-              onChange: L,
-              onFocus: () => P(true),
-              onBlur: () => P(false),
-              inputRef: J,
-              className: k.multiInputFirst,
-              inputClassName: l()(k.multiInputField, {
-                [k.lowercase]: r.hasUniqueUsername()
-              })
-            }), !r.hasUniqueUsername() && (0, a.jsx)(h.Is, {
+              maxLength: j.l$U,
+              onChange: E,
+              onFocus: () => A(true),
+              onBlur: () => A(false),
+              inputRef: K,
+              fullWidth: true
+            }), !l.hasUniqueUsername() && (0, a.jsx)(d.oil, {
               name: "discriminator",
-              "aria-label": U.intl.string(U.t.ozumaG),
+              "aria-label": C.intl.string(C.t.ozumaG),
               maxLength: 4,
-              value: R,
-              onChange: S,
-              onFocus: () => P(true),
-              onBlur: () => P(false),
-              disabled: !o,
-              className: k.multiInputLast,
-              inputClassName: k.multiInputField
+              value: N,
+              onChange: R,
+              onFocus: () => A(true),
+              onBlur: () => A(false),
+              disabled: !c,
+              leading: "#"
             })]
           })
-        }), Z ? (0, a.jsx)(x.Text, {
+        }), J ? (0, a.jsx)(d.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          className: k.discriminatorChangeWarning,
-          children: U.intl.string(U.t.mConUV)
-        }) : null, M ? (0, a.jsx)(v.Z, {
-          show: (null == D ? true : D.type) === p.K.ERROR || d,
+          className: _.discriminatorChangeWarning,
+          children: C.intl.string(C.t.mConUV)
+        }) : null, L ? (0, a.jsx)(g.Z, {
+          show: (null == M ? true : M.type) === h.K.ERROR || w,
           top: 8,
           bottom: 4,
-          children: (0, a.jsx)(N, {
-            usernameStatus: D,
-            showHint: r.hasUniqueUsername()
+          children: (0, a.jsx)(k, {
+            usernameStatus: M,
+            showHint: l.hasUniqueUsername()
           })
-        }) : null, (0, a.jsx)(x.xJW, {
-          className: k.password,
-          title: U.intl.string(U.t.TmdnJy),
-          error: null == W || null == (t = W.password) ? true : t[0],
-          children: (0, a.jsx)(x.oil, {
+        }) : null, (0, a.jsx)(d.xJW, {
+          className: _.password,
+          title: C.intl.string(C.t.TmdnJy),
+          error: null == z || null == (n = z.password) ? true : n[0],
+          children: (0, a.jsx)(d.oil, {
             type: "password",
-            value: T,
-            onChange: q
+            value: S,
+            onChange: T
           })
         })]
-      }), (0, a.jsxs)(x.mzw, {
-        children: [(0, a.jsx)(x.zxk, {
+      }), (0, a.jsxs)(d.mzw, {
+        children: [(0, a.jsx)(d.zxk, {
           variant: "primary",
-          text: U.intl.string(U.t.i4jeWV),
+          text: C.intl.string(C.t.i4jeWV),
           type: "submit",
-          loading: F
+          loading: q
         }), (0, a.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: k.cancel,
-          children: (0, a.jsx)(x.zxk, {
+          className: _.cancel,
+          children: (0, a.jsx)(d.zxk, {
             variant: "secondary",
-            text: U.intl.string(U.t["ETE/oK"]),
-            onClick: i
+            text: C.intl.string(C.t["ETE/oK"]),
+            onClick: s
           })
         })]
       })]

@@ -76,8 +76,8 @@ function A(e) {
   let {
     guild: t
   } = e, h = t.id, D = (0, a.e7)([O.Z], () => O.Z.getCurrentPage()), A = (0, C.Z)(h), {
-    hasChanges: k,
-    hasConfiguredAnythingForCurrentStep: L,
+    hasChanges: L,
+    hasConfiguredAnythingForCurrentStep: k,
     hasErrors: M
   } = (0, a.cj)([O.Z], () => ({
     hasChanges: O.Z.hasChanges(),
@@ -119,9 +119,9 @@ function A(e) {
     else if (D === y.PG.HOME_SETTINGS) return (0, r.jsx)(S.Z, {})
   }
   let K = D === y.xh[y.xh.length - 1],
-    q = async () => {
+    X = async () => {
       let e = _.Z.advancedMode;
-      if (k) try {
+      if (L) try {
         if (D === y.PG.DEFAULT_CHANNELS) await (0, f.DO)(t).then(() => e ? (0, v.rS)(t, {
           ignoreDefaultPrompt: true
         }) : Promise.resolve());
@@ -136,20 +136,20 @@ function A(e) {
         returnfalse
       }
       returntrue
-    }, X = async () => {
+    }, q = async () => {
       g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(h)), {
         step: y.PG[D],
         back: false,
-        skip: !k
-      })), (0, b.Nb)((0, y.lg)(D)), await q() && (0, b.IG)(h, D)
-    }, Q = async () => {
+        skip: !L
+      })), (0, b.Nb)((0, y.lg)(D)), await X() && (0, b.IG)(h, D)
+    }, J = async () => {
       g.default.track(T.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, Z(R({}, (0, m.hH)(h)), {
         step: y.PG[D],
         back: true,
         skip: false
-      })), await q() && (0, b.Wy)(h, D)
-    }, J = null;
-  G && (D === y.PG.SAFETY_CHECK ? J = (0, r.jsx)(N.j7, {}) : D === y.PG.DEFAULT_CHANNELS ? J = (0, r.jsx)(N.Io, {}) : D === y.PG.CUSTOMIZATION_QUESTIONS ? J = (0, r.jsx)(N.cZ, {}) : D === y.PG.HOME_SETTINGS && (J = (0, r.jsx)(N.g6, {})));
+      })), await X() && (0, b.Wy)(h, D)
+    }, Q = null;
+  G && (D === y.PG.SAFETY_CHECK ? Q = (0, r.jsx)(N.j7, {}) : D === y.PG.DEFAULT_CHANNELS ? Q = (0, r.jsx)(N.Io, {}) : D === y.PG.CUSTOMIZATION_QUESTIONS ? Q = (0, r.jsx)(N.cZ, {}) : D === y.PG.HOME_SETTINGS && (Q = (0, r.jsx)(N.g6, {})));
   let $ = (0, r.jsx)("div", {
       className: G ? w.hidden : true,
       children: (0, r.jsx)(d.zxk, {
@@ -158,17 +158,17 @@ function A(e) {
         text: P.intl.string(P.t["13/7kZ"]),
         icon: d.whL,
         iconPosition: "start",
-        onClick: Q,
+        onClick: J,
         disabled: G || M
       })
     }),
     ee = (0, r.jsx)(d.zxk, {
       size: "sm",
-      variant: L ? "primary" : "secondary",
-      text: L ? P.intl.string(P.t.PDTjLC) : P.intl.string(P.t["5WxrcX"]),
+      variant: k ? "primary" : "secondary",
+      text: k ? P.intl.string(P.t.PDTjLC) : P.intl.string(P.t["5WxrcX"]),
       icon: d.ZSh,
       iconPosition: "end",
-      onClick: X,
+      onClick: q,
       disabled: G || M
     });
   return (0, r.jsx)(o.W, {
@@ -191,7 +191,7 @@ function A(e) {
               alt: "wumpus"
             }), (0, r.jsxs)("div", {
               className: w.educationUpsell,
-              children: [J, (0, r.jsx)("div", {
+              children: [Q, (0, r.jsx)("div", {
                 className: w.educationUpsellArrow
               })]
             })]
