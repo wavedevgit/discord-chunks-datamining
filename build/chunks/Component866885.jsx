@@ -198,7 +198,7 @@ function Z(e) {
       referrer_id: B.referrerId,
       custom_id: B.customId
     };
-  return (null == _ ? true : _.guild_id) != null && (null == _ ? true : _.guild_id) !== "" && (el.guild_id = _.guild_id), (null == _ ? true : _.id) != null && (null == _ ? true : _.id) !== "" && (el.channel_id = _.id), (0, r.jsx)(y.ZP, {
+  return null != B.proxyTicket && (el.discord_proxy_ticket = B.proxyTicket), (null == _ ? true : _.guild_id) != null && (null == _ ? true : _.guild_id) !== "" && (el.guild_id = _.guild_id), (null == _ ? true : _.id) != null && (null == _ ? true : _.id) !== "" && (el.channel_id = _.id), (0, r.jsx)(y.ZP, {
     timeout: 2e3,
     children: e => {
       var t, n;

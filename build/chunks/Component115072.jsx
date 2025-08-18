@@ -45,7 +45,7 @@ function P(e) {
         return "Linux"
     }
     return ""
-  }((0, y.getOS)())), [$, ee] = r.useState(""), [et, en] = r.useState(""), [ei, er] = r.useState(""), [el, ea] = r.useState(""), [eo, es] = r.useState(false), [eu, ec] = r.useState(false), [ed, em] = r.useState(false), [eh, ef] = r.useState(null);
+  }((0, y.getOS)())), [$, ee] = r.useState(""), [et, en] = r.useState(""), [ei, er] = r.useState(""), [el, ea] = r.useState(""), [eo, es] = r.useState(false), [ec, eu] = r.useState(false), [ed, em] = r.useState(false), [eh, ef] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -55,8 +55,8 @@ function P(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "35309a92f3357f5d9bfd01fca365ca4ddbbc60b4" !== e.body.hash) {
-        let e = new Date("1755527091910"),
+      if (null != e.body && "2e33d76cdf30cbef00ce9009113257dc18183fe9" !== e.body.hash) {
+        let e = new Date("1755528140977"),
           t = new Date,
           n = (0, j.TD)(t, e);
         n.hours > 6 && ef(n.hours)
@@ -78,7 +78,7 @@ function P(e) {
     var e, t;
     if (em(false), "" === N || "" === R || null == I) return void es(true);
     let r = null == B || null == (e = B.features) ? true : e.find(e => (0, b.pD)(e) === G);
-    ec(true), es(false);
+    eu(true), es(false);
     let l = (0, O.D)(M.map(e => {
         let {
           item: t
@@ -103,7 +103,7 @@ function P(e) {
       } : {
         overridePlatformInformation: X
       }, l).catch(() => em(true));
-    ec(false), null != a && a.ok ? (ep && window.open(a.body.permalink_url, "_blank"), ev(), (0, u.ZDy)(async () => {
+    eu(false), null != a && a.ok ? (ep && window.open(a.body.permalink_url, "_blank"), ev(), (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("64648").then(n.bind(n, 81155));
@@ -167,67 +167,67 @@ function P(e) {
       origin: "clipboard"
     })])
   }, [M]);
-  return (0, i.jsxs)(u.Y0X, {
+  return (0, i.jsxs)(c.Y0X, {
     transitionState: k,
     "aria-label": S.intl.string(S.t.mCCdws),
-    size: u.CgR.MEDIUM,
+    size: c.CgR.MEDIUM,
     parentComponent: "BugReporterModal",
-    children: [(0, i.jsx)(u.xBx, {
-      children: (0, i.jsx)(u.X6q, {
+    children: [(0, i.jsx)(c.xBx, {
+      children: (0, i.jsx)(c.X6q, {
         variant: "heading-lg/semibold",
-        children: (0, i.jsx)(u.H, {
+        children: (0, i.jsx)(c.H, {
           children: S.intl.string(S.t["5Lqopa"])
         })
       })
-    }), (0, i.jsx)(u.hzk, {
+    }), (0, i.jsx)(c.hzk, {
       onPaste: ej,
       children: (0, i.jsxs)("form", {
         onSubmit: eg,
-        children: [null != ex && (0, i.jsx)(u.ToO, {
-          type: u.ToO.Types.DANGER,
+        children: [null != ex && (0, i.jsx)(c.ToO, {
+          type: c.ToO.Types.DANGER,
           body: S.intl.format(S.t["yY60+/"], {
             buildOverrideHook: () => (0, i.jsx)("b", {
               children: null == ex ? true : ex.id
             })
           }),
           title: S.intl.string(S.t["ZP/hEx"])
-        }), null == ex && null != eh && (0, i.jsx)(u.ToO, {
-          type: u.ToO.Types.DANGER,
+        }), null == ex && null != eh && (0, i.jsx)(c.ToO, {
+          type: c.ToO.Types.DANGER,
           title: S.intl.formatToPlainString(S.t["ql2Q/f"], {
             hours: eh
           }),
           body: S.intl.string(S.t.x18RUl)
-        }), (0, i.jsxs)(u.Kqy, {
+        }), (0, i.jsxs)(c.Kqy, {
           gap: 24,
           padding: {
             top: 8,
             bottom: 8
           },
-          children: [(0, i.jsx)(u.xJW, {
+          children: [(0, i.jsx)(c.xJW, {
             error: eo && "" === N ? S.intl.string(S.t.EkokLy) : null,
             title: S.intl.string(S.t.OZRgj4),
-            children: (0, i.jsx)(u.oil, {
+            children: (0, i.jsx)(c.oil, {
               placeholder: "Something is broken on this screen.",
               type: "text",
               value: N,
               maxLength: 100,
               onChange: A
             })
-          }), (0, i.jsxs)(u.xJW, {
+          }), (0, i.jsxs)(c.xJW, {
             error: eo && "" === R ? S.intl.string(S.t.EkokLy) : null,
             title: S.intl.string(S.t["1SplHx"]),
-            children: [(0, i.jsx)(u.Kx8, {
+            children: [(0, i.jsx)(c.Kx8, {
               placeholder: "What did you expect to see?",
               value: R,
               onChange: L
-            }), ep && (0, i.jsx)(u.R94, {
-              type: u.geA.DESCRIPTION,
+            }), ep && (0, i.jsx)(c.R94, {
+              type: c.geA.DESCRIPTION,
               children: "You can add additional information/media on the ticket after submitting"
             })]
-          }), (0, i.jsx)(u.xJW, {
+          }), (0, i.jsx)(c.xJW, {
             error: eo && true === I ? S.intl.string(S.t.EkokLy) : null,
             title: S.intl.string(S.t.xMXLdX),
-            children: (0, i.jsx)(u.q4e, {
+            children: (0, i.jsx)(c.q4e, {
               renderOptionLabel: e => (function(e) {
                 let t = e.priority;
                 return (0, i.jsxs)("div", {
@@ -242,13 +242,13 @@ function P(e) {
                         animated: true,
                         size: 48
                       })
-                    }), (0, i.jsx)(u.Text, {
+                    }), (0, i.jsx)(c.Text, {
                       color: "header-primary",
                       variant: "text-sm/semibold",
                       className: _.formPriorityTitle,
                       children: t.title
                     })]
-                  }), (0, i.jsx)(u.Text, {
+                  }), (0, i.jsx)(c.Text, {
                     color: "header-secondary",
                     variant: "text-xs/normal",
                     className: _.formPriorityDescription,
@@ -266,9 +266,9 @@ function P(e) {
               maxVisibleItems: 3,
               closeOnSelect: true
             })
-          }), ep && (0, i.jsx)(u.xJW, {
+          }), ep && (0, i.jsx)(c.xJW, {
             title: S.intl.string(S.t["77VVd3"]),
-            children: (0, i.jsx)(u.VcW, {
+            children: (0, i.jsx)(c.VcW, {
               value: G,
               options: null != (E = null == B || null == (C = B.features) || null == (P = C.filter(e => "" !== (0, b.pD)(e))) || null == (t = P.map(e => {
                 var t;
@@ -280,60 +280,60 @@ function P(e) {
               isDisabled: null == B,
               onChange: e => H(e)
             })
-          }), (0, i.jsx)(u.xJW, {
+          }), (0, i.jsx)(c.xJW, {
             title: S.intl.string(S.t["7p5pqq"]),
-            children: (0, i.jsx)(u.oil, {
+            children: (0, i.jsx)(c.oil, {
               placeholder: S.intl.string(S.t.HewMzs),
               type: "text",
               value: z,
               maxLength: 5e3,
               onChange: J
             })
-          }), (0, i.jsx)(u.xJW, {
-            children: (0, i.jsx)(u.XZJ, {
+          }), (0, i.jsx)(c.xJW, {
+            children: (0, i.jsx)(c.XZJ, {
               value: X,
               onChange: (e, t) => U(t),
               children: S.intl.string(S.t.ayhqiI)
             })
           }), X ? (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(u.xJW, {
+            children: [(0, i.jsx)(c.xJW, {
               title: S.intl.string(S.t.rrI4Tk),
-              children: (0, i.jsx)(u.oil, {
+              children: (0, i.jsx)(c.oil, {
                 placeholder: "Device",
                 value: K,
                 onChange: e => Y(e)
               })
-            }), (0, i.jsx)(u.xJW, {
+            }), (0, i.jsx)(c.xJW, {
               title: S.intl.string(S.t.kcHxi4),
-              children: (0, i.jsx)(u.q4e, {
+              children: (0, i.jsx)(c.q4e, {
                 value: F,
                 options: w,
                 onChange: e => Q(e)
               })
-            }), (0, i.jsx)(u.xJW, {
+            }), (0, i.jsx)(c.xJW, {
               title: S.intl.string(S.t.rEtxdn),
-              children: (0, i.jsx)(u.oil, {
+              children: (0, i.jsx)(c.oil, {
                 placeholder: "Operating System Version",
                 value: $,
                 onChange: e => ee(e)
               })
-            }), (0, i.jsx)(u.xJW, {
+            }), (0, i.jsx)(c.xJW, {
               title: S.intl.string(S.t["wy1M/v"]),
-              children: (0, i.jsx)(u.oil, {
+              children: (0, i.jsx)(c.oil, {
                 placeholder: "Client Version",
                 value: et,
                 onChange: e => en(e)
               })
-            }), (0, i.jsx)(u.xJW, {
+            }), (0, i.jsx)(c.xJW, {
               title: S.intl.string(S.t.f7kbVl),
-              children: (0, i.jsx)(u.oil, {
+              children: (0, i.jsx)(c.oil, {
                 placeholder: "Client Build Number",
                 value: ei,
                 onChange: e => er(e)
               })
-            }), (0, i.jsx)(u.xJW, {
+            }), (0, i.jsx)(c.xJW, {
               title: S.intl.string(S.t["4Z5+zs"]),
-              children: (0, i.jsx)(u.oil, {
+              children: (0, i.jsx)(c.oil, {
                 placeholder: "Locale",
                 value: el,
                 onChange: e => ea(e)
@@ -341,7 +341,7 @@ function P(e) {
             })]
           }) : null, (0, i.jsxs)(s.zx, {
             color: s.zx.Colors.PRIMARY,
-            children: [S.intl.string(S.t.HVxmOD), (0, i.jsx)(c.Z, {
+            children: [S.intl.string(S.t.HVxmOD), (0, i.jsx)(u.Z, {
               ref: T,
               onChange: e => {
                 var t, n;
@@ -354,8 +354,8 @@ function P(e) {
               },
               multiple: true
             })]
-          }), M.length > 0 ? (0, i.jsxs)(u.hjN, {
-            children: [(0, i.jsx)(u.vwX, {
+          }), M.length > 0 ? (0, i.jsxs)(c.hjN, {
+            children: [(0, i.jsx)(c.vwX, {
               children: "Preview"
             }), (0, i.jsx)("div", {
               ref: W,
@@ -376,38 +376,38 @@ function P(e) {
                           return t = e.id, void q(M.filter(e => e.id !== t))
                         },
                         dangerous: true,
-                        children: (0, i.jsx)(u.XHJ, {
+                        children: (0, i.jsx)(c.XHJ, {
                           size: "md",
                           color: "currentColor"
                         })
                       })
                     })
                   })]
-                }), (0, i.jsx)(u.Text, {
+                }), (0, i.jsx)(c.Text, {
                   variant: "text-xxs/medium",
                   color: "text-secondary",
                   children: e.filename
                 })]
               }, e.id))
             })]
-          }) : null, ed ? (0, i.jsx)(u.Text, {
+          }) : null, ed ? (0, i.jsx)(c.Text, {
             color: "text-danger",
             variant: "text-sm/normal",
             children: "Something went wrong, try again!"
           }) : null]
         })]
       })
-    }), (0, i.jsx)(u.mzw, {
-      children: (0, i.jsxs)(u.Kqy, {
+    }), (0, i.jsx)(c.mzw, {
+      children: (0, i.jsxs)(c.Kqy, {
         direction: "horizontal",
         gap: 8,
         justify: "end",
-        children: [(0, i.jsx)(u.zxk, {
+        children: [(0, i.jsx)(c.zxk, {
           variant: "primary",
           text: ep ? "Submit and Open Report" : "Submit Report",
-          loading: eu,
+          loading: ec,
           onClick: eg
-        }), (0, i.jsx)(u.zxk, {
+        }), (0, i.jsx)(c.zxk, {
           variant: "secondary",
           text: S.intl.string(S.t["ETE/oK"]),
           onClick: ev

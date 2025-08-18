@@ -64,7 +64,7 @@ function T(e) {
       })]
     }) : null
   }
-  return (0, r.jsx)(p.ZP, {
+  return null != n.proxyTicket && (A.discord_proxy_ticket = n.proxyTicket), (0, r.jsx)(p.ZP, {
     timeout: 2e3,
     children: e => {
       let {

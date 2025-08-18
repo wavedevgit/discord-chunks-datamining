@@ -137,7 +137,7 @@ function y(e) {
       return async () => {
         if (h) {
           try {
-            (0, c.s2)({
+            await (0, c.s2)({
               applicationId: g
             }), null == d || d({
               applicationId: g

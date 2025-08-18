@@ -2,8 +2,8 @@
 /** chunk id: 591472, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
-});
+  Z: () => y
+}), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk155268 = require("./155268.js"),
@@ -47,28 +47,46 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = null;
-
-function _(e) {
-  let {
-    applicationId: t
-  } = e, n = (0, o.ZP)(t);
-  null != n && (null != f && (f = null), f = {
-    applicationId: t,
-    url: n,
-    connectedSince: Date.now(),
-    layoutMode: s.U.FOCUSED
-  })
-}
+let f = null,
+  _ = new Map;
 
 function p(e) {
+  let {
+    applicationId: t
+  } = e;
+  _.set(t, true)
+}
+
+function h(e) {
+  let {
+    applicationId: t,
+    proxyTicket: n
+  } = e, r = (0, o.ZP)(t);
+  if (null == r) return void _.delete(t);
+  _.delete(t), null != f && (f = null), f = {
+    applicationId: t,
+    url: r,
+    connectedSince: Date.now(),
+    layoutMode: s.U.FOCUSED,
+    proxyTicket: n
+  }
+}
+
+function m(e) {
+  let {
+    applicationId: t
+  } = e;
+  _.delete(t)
+}
+
+function g(e) {
   let {
     applicationId: t
   } = e;
   (null == f ? true : f.applicationId) === t && (f = null)
 }
 
-function h(e) {
+function E(e) {
   let {
     applicationId: t,
     layoutMode: n
@@ -77,7 +95,7 @@ function h(e) {
     layoutMode: n
   }))
 }
-class m extends(r = Chunk442837.ZP.Store) {
+class b extends(r = Chunk442837.ZP.Store) {
   getConnectedFrame() {
     return f
   }
@@ -87,10 +105,16 @@ class m extends(r = Chunk442837.ZP.Store) {
   isFrameActive() {
     return null != f
   }
+  isLaunchingFrame(e) {
+    var t;
+    return null != e ? null != (t = _.get(e)) && t : _.size > 0
+  }
 }
-l(m, "displayName", "FramesStore");
-let g = new m(Chunk570140.Z, {
-  FRAME_LAUNCH: _,
-  FRAME_STOP: p,
-  FRAME_UPDATE_LAYOUT_MODE: h
+l(b, "displayName", "FramesStore");
+let y = new b(Chunk570140.Z, {
+  FRAME_LAUNCH_START: p,
+  FRAME_LAUNCH: h,
+  FRAME_LAUNCH_FAIL: m,
+  FRAME_STOP: g,
+  FRAME_UPDATE_LAYOUT_MODE: E
 })
