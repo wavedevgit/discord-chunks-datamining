@@ -213,10 +213,10 @@ let W = (0, Chunk815061.animated)(Chunk481060.eTT),
         var t;
         Q.ref.current = e, eo.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
       }),
-      {
+      [{
         fadeStart: eu,
         fadeEnd: ed
-      } = (0, u.q_F)({
+      }] = (0, u.q_F)({
         fadeStart: k && !Y ? 96 : k ? 32 : 16,
         fadeEnd: k && !Y ? 24 : 24 * !!k,
         config: {
@@ -224,7 +224,7 @@ let W = (0, Chunk815061.animated)(Chunk481060.eTT),
           friction: 15,
           clamp: true
         }
-      });
+      }, "respect-motion-settings", [k, Y]);
     return (0, r.jsxs)(s.bG, {
       navigator: J,
       children: [null != ei && ei, (0, r.jsxs)("div", {
