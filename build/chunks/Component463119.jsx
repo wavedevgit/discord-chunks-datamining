@@ -98,7 +98,7 @@ let L = e => {
       noCache: module,
       includeUnpublished: exports,
       includeBundles: true
-    }), null
+    }, true, true), null
   },
   D = e => {
     var {
