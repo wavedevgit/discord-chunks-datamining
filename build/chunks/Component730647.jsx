@@ -30,14 +30,14 @@ function d(e) {
     includeSoftDeleted: d,
     countryCode: p,
     dontFetchWhileTrue: m
-  } = e, f = (0, l.e7)([a.Z], () => a.Z.isConnected()), _ = (0, l.e7)([s.Z], () => null != t ? s.Z.getSubscriptionGroupListingsForGuildFetchState(t) : s.M.FETCHED), g = i.useRef(u), h = i.useCallback(() => {
+  } = e, f = (0, l.e7)([o.Z], () => o.Z.isConnected()), g = (0, l.e7)([s.Z], () => null != t ? s.Z.getSubscriptionGroupListingsForGuildFetchState(t) : s.M.FETCHED), _ = i.useRef(u), h = i.useCallback(() => {
     if (null == t || !f || true === m) return;
     let e = s.Z.getSubscriptionGroupListingsForGuildFetchState(t);
-    (g.current || e === s.M.NOT_FETCHED) && (g.current = false, o.FP(t, {
+    (_.current || e === s.M.NOT_FETCHED) && (_.current = false, a.FP(t, {
       includeSoftDeleted: d,
       countryCode: p
     }))
-  }, [f, t, d, p, m]), b = i.useMemo(() => _ === s.M.FETCHED && true !== g.current, [_, g]);
+  }, [f, t, d, p, m]), b = i.useMemo(() => g === s.M.FETCHED && true !== _.current, [g, _]);
   return (0, r.jsx)(c.Provider, {
     value: {
       listingsLoaded: b,

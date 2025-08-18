@@ -20,8 +20,8 @@ let m = {
       type: n,
       name: m,
       permissionOverwrites: f = [],
-      bitrate: _,
-      userLimit: g,
+      bitrate: g,
+      userLimit: _,
       parentId: h,
       skuId: b,
       branchId: E
@@ -36,7 +36,7 @@ let m = {
       name: m,
       permission_overwrites: f
     };
-    if (null != _ && _ !== d.epw && (C.bitrate = _), null != g && g > 0 && (C.user_limit = g), null != h && (C.parent_id = h), n === d.d4z.GUILD_STORE) {
+    if (null != g && g !== d.epw && (C.bitrate = g), null != _ && _ > 0 && (C.user_limit = _), null != h && (C.parent_id = h), n === d.d4z.GUILD_STORE) {
       if (null == b) throw Error("Unexpected missing SKU");
       C.sku_id = b, C.branch_id = E
     }
@@ -56,9 +56,9 @@ let m = {
         }
       },
       rejectWithError: false
-    }).then(e => (o.ZP.isOptInEnabled(t) && u.Z.updateChannelOverrideSettings(t, e.body.id, {
+    }).then(e => (a.ZP.isOptInEnabled(t) && u.Z.updateChannelOverrideSettings(t, e.body.id, {
       flags: p.ic.OPT_IN_ENABLED
-    }, s.ZB.OptedIn), a.Z.checkGuildTemplateDirty(t), e), e => {
+    }, s.ZB.OptedIn), o.Z.checkGuildTemplateDirty(t), e), e => {
       throw l.Z.dispatch({
         type: "CREATE_CHANNEL_MODAL_SUBMIT_FAILURE",
         errors: e.body

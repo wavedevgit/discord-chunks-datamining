@@ -24,14 +24,14 @@ function c(e) {
     let e = (0, l.i)(p);
     n = (0, r.jsx)("div", {
       className: s.userAppsBetaContent,
-      children: o.intl.format(o.t.wx1tLS, {
+      children: a.intl.format(a.t.wx1tLS, {
         handleDelete: m,
         reason: e
       })
     })
-  } else n = c.type === a.uaV.STAGE_RAISE_HAND ? o.intl.format(o.t["qDAX+/"], {
+  } else n = c.type === o.uaV.STAGE_RAISE_HAND ? a.intl.format(a.t["qDAX+/"], {
     handleDelete: m
-  }) : o.intl.format(o.t.uX3ecH, {
+  }) : a.intl.format(a.t.uX3ecH, {
     count: 1,
     countMessages: 1,
     handleDelete: m

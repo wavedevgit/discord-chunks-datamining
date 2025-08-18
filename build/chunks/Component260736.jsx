@@ -20,12 +20,12 @@ function m(e) {
     compact: t,
     message: n,
     channel: m
-  } = e, f = (0, o.ZP)(n), _ = (0, s.l)({
+  } = e, f = (0, a.ZP)(n), g = (0, s.l)({
     user: n.author,
     channelId: n.channel_id,
     guildId: m.guild_id,
     messageId: n.id
-  })(f), g = a.Z.getArticleURL(u.BhN.HD_STREAMING_POTION);
+  })(f), _ = o.Z.getArticleURL(u.BhN.HD_STREAMING_POTION);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: p.parentContainer,
@@ -37,12 +37,12 @@ function m(e) {
         compact: t,
         children: d.intl.format(d.t["u0qJ4+"], {
           actorName: f.nick,
-          actorHook: _
+          actorHook: g
         })
       })
     }), (0, r.jsxs)(i.P3F, {
       onClick: () => {
-        window.open(a.Z.getArticleURL(u.BhN.HD_STREAMING_POTION), "_blank")
+        window.open(o.Z.getArticleURL(u.BhN.HD_STREAMING_POTION), "_blank")
       },
       className: p.embed,
       children: [(0, r.jsx)(l.Z, {}), (0, r.jsxs)("div", {
@@ -56,7 +56,7 @@ function m(e) {
           color: "text-primary",
           variant: "text-xs/normal",
           children: d.intl.format(d.t["bmGF+f"], {
-            helpCenterLink: g
+            helpCenterLink: _
           })
         })]
       })]

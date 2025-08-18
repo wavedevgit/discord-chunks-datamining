@@ -120,8 +120,8 @@ class Z extends(r = Chunk647438.Component) {
       size: n,
       color: r,
       customDisabledColor: i,
-      isPlayShiny: a,
-      onDropdownOpen: o,
+      isPlayShiny: o,
+      onDropdownOpen: a,
       onDropdownClose: s,
       analyticsListSort: c,
       analyticsListIndex: u
@@ -145,8 +145,8 @@ class Z extends(r = Chunk647438.Component) {
       className: n,
       fullWidth: r,
       size: i,
-      customDisabledColor: a,
-      tooltipPosition: o
+      customDisabledColor: o,
+      tooltipPosition: a
     } = this.props;
     return (0, l.jsxs)("div", {
       className: S.disabledButtonWrapper,
@@ -154,12 +154,12 @@ class Z extends(r = Chunk647438.Component) {
         className: n,
         fullWidth: r,
         size: i,
-        color: null != a ? a : S.disabledButtonColor,
+        color: null != o ? o : S.disabledButtonColor,
         disabled: true,
         children: [this.getText(e), this.renderProgressBar()]
       }), (0, l.jsx)(u.ua7, {
         text: t,
-        position: o,
+        position: a,
         children: e => (0, l.jsx)("div", P({
           className: S.disabledButtonOverlay
         }, e))
@@ -188,15 +188,15 @@ class Z extends(r = Chunk647438.Component) {
       className: n,
       fullWidth: r,
       size: i,
-      color: a,
-      isCloudSyncing: o
+      color: o,
+      isCloudSyncing: a
     } = this.props;
     return (0, l.jsxs)(c.zx, {
       className: n,
       fullWidth: r,
       size: i,
-      color: null != a ? a : c.zx.Colors.GREEN,
-      submitting: "uninstalling" === e || o,
+      color: null != o ? o : c.zx.Colors.GREEN,
+      submitting: "uninstalling" === e || a,
       onClick: e => this.handleClick(e, t),
       children: [this.getText(e), this.renderProgressBar()]
     })
@@ -208,7 +208,7 @@ class Z extends(r = Chunk647438.Component) {
     } = this.props, n = this.getButtonState();
     if ("play" === require) return this.renderPlayButton();
     if ("preorder_wait" === require) return this.renderDisabledButton(require, function(e) {
-      let t = O.en(e.sku);
+      let t = v.en(e.sku);
       return null != t ? I.intl.formatToPlainString(I.t.Aqe2ZG, {
         date: t
       }) : null
@@ -257,12 +257,12 @@ class Z extends(r = Chunk647438.Component) {
 function R(e) {
   let {
     libraryApplication: t
-  } = e, n = (0, p.O)(), [r, i] = (0, o.Wu)([b.Z, E.Z], () => [(0, g.i)(t, b.Z, E.Z), b.Z.getState(t.id, t.branchId)], [t]), a = (0, o.e7)([h.Z], () => h.Z.isSyncing(t.id, t.branchId), [t]), s = (0, o.e7)([_.Z], () => _.Z.hasNoBuild(t.id, t.branchId), [t]);
+  } = e, n = (0, p.O)(), [r, i] = (0, a.Wu)([b.Z, E.Z], () => [(0, _.i)(t, b.Z, E.Z), b.Z.getState(t.id, t.branchId)], [t]), o = (0, a.e7)([h.Z], () => h.Z.isSyncing(t.id, t.branchId), [t]), s = (0, a.e7)([g.Z], () => g.Z.hasNoBuild(t.id, t.branchId), [t]);
   return (0, l.jsx)(Z, N(P({}, e), {
     analyticsContext: n,
     actionState: r,
     dispatchState: i,
-    isCloudSyncing: a,
+    isCloudSyncing: o,
     hasNoBuild: s
   }))
 }

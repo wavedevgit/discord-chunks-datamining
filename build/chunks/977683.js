@@ -13,15 +13,15 @@ var Chunk647438 = require("./647438.js"),
 
 function u(e, t) {
   var n;
-  let u = (0, o.v)(e),
-    d = (0, a.cE)(u.getChannelId())[u.id],
+  let u = (0, a.v)(e),
+    d = (0, o.cE)(u.getChannelId())[u.id],
     p = (0, c.Z)(null == (n = u.poll) ? true : n.expiry),
     m = l.Yk.useSetting(),
     f = (0, i.ZP)(),
-    _ = null != t ? t : f;
+    g = null != t ? t : f;
   return r.useMemo(() => (0, s.ZP)(u, d, {
     animateEmoji: m,
-    theme: _,
+    theme: g,
     formattedExpirationLabel: p
-  }), [m, u, d, p, _])
+  }), [m, u, d, p, g])
 }

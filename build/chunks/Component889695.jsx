@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk658722 = require("./658722.js"),
-  a = require.n(Chunk658722),
+  o = require.n(Chunk658722),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -38,7 +38,7 @@ function x(e) {
 function j(e) {
   let {
     guildId: t
-  } = e, n = (0, s.e7)([_.default], () => _.default.getCurrentUser()), l = (0, s.e7)([f.Z], () => f.Z.getGuild(t)), j = (0, s.e7)([m.Z], () => m.Z.getRolesSnapshot(t)), I = (0, s.e7)([m.Z], () => m.Z.getSortedRoles(t)), {
+  } = e, n = (0, s.e7)([g.default], () => g.default.getCurrentUser()), l = (0, s.e7)([f.Z], () => f.Z.getGuild(t)), j = (0, s.e7)([m.Z], () => m.Z.getRolesSnapshot(t)), I = (0, s.e7)([m.Z], () => m.Z.getSortedRoles(t)), {
     impersonateType: S,
     viewingRoles: T
   } = (0, s.cj)([E.Z], () => ({
@@ -62,24 +62,24 @@ function j(e) {
     D = i.useMemo(() => null != l && null != n ? I.filter(e => !(0, d.fI)(e)).filter(e => {
       var t;
       return !P || (null == (t = e.tags) ? true : t.subscription_listing_id) != null
-    }).filter(e => (null == R ? true : R.id) === e.id || g.r6(l, n.id, R, e)) : [], [l, n, P, R, I]);
+    }).filter(e => (null == R ? true : R.id) === e.id || _.r6(l, n.id, R, e)) : [], [l, n, P, R, I]);
   if (null == n || null == l || null == N) return null;
   let L = {};
   return (N.roles.forEach(e => {
     let t = j[e];
     null != t && (L[t.id] = t)
-  }), o.e$(g.I0({
+  }), a.e$(_.I0({
     forceRoles: L,
     context: l
-  }), o.$e(v.Plq.MANAGE_GUILD, v.Plq.MANAGE_ROLES)) || (0, u.eM)(l, n)) ? (0, r.jsx)("div", {
+  }), a.$e(O.Plq.MANAGE_GUILD, O.Plq.MANAGE_ROLES)) || (0, u.eM)(l, n)) ? (0, r.jsx)("div", {
     className: y.container,
     children: (0, r.jsx)(c.hQY, {
-      placeholder: O.intl.string(O.t.Sojqsr),
+      placeholder: v.intl.string(v.t.Sojqsr),
       value: A,
       onChange: w,
       autoFocus: true,
       children: e => {
-        let t = D.reduce((t, n) => (a()(e.toLowerCase(), n.name.toLowerCase()) && t.push((0, r.jsxs)(c.lo1, {
+        let t = D.reduce((t, n) => (o()(e.toLowerCase(), n.name.toLowerCase()) && t.push((0, r.jsxs)(c.lo1, {
             value: n.id,
             children: [(0, r.jsx)(c.lo1.Label, {
               children: x(n)
@@ -99,6 +99,6 @@ function j(e) {
     })
   }) : (0, r.jsx)(c.Text, {
     variant: "text-md/medium",
-    children: O.intl.string(O.t.MNSTbW)
+    children: v.intl.string(v.t.MNSTbW)
   })
 }

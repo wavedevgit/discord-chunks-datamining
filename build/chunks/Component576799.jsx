@@ -21,18 +21,18 @@ function f(e) {
     channel: n
   } = e, {
     isBlocked: f,
-    isIgnored: _
+    isIgnored: g
   } = (0, l.cj)([d.Z], () => ({
     isBlocked: d.Z.isBlockedForMessage(t),
     isIgnored: d.Z.isIgnoredForMessage(t)
-  }), [t]), g = (0, o.p)(), h = i.useMemo(() => ({
+  }), [t]), _ = (0, a.p)(), h = i.useMemo(() => ({
     [n.guild_id]: [t.author.id]
   }), [n.guild_id, t.author.id]);
-  (0, a.$)(h);
+  (0, o.$)(h);
   let b = i.useMemo(() => null != t.content && "" !== t.content ? (0, s.ZP)(t, {
     formatInline: true,
-    shouldFilterKeywords: g
-  }).content : null, [t, g]);
+    shouldFilterKeywords: _
+  }).content : null, [t, _]);
   return (0, r.jsxs)("div", {
     className: m.threadMessageAccessory,
     children: [(0, r.jsx)("img", {
@@ -48,8 +48,8 @@ function f(e) {
       children: function(e, t, n, i) {
         let {
           contentPlaceholder: l,
-          renderedContent: a,
-          leadingIcon: o,
+          renderedContent: o,
+          leadingIcon: a,
           trailingIcon: s
         } = (0, c.f)(e, t, n, i, m.threadMessageAccessoryContent, {
           trailingIconClass: m.threadMessageAccessoryContentTrailingIcon,
@@ -57,12 +57,12 @@ function f(e) {
           iconSize: p.WW
         });
         return (0, r.jsxs)(r.Fragment, {
-          children: [o, null != a ? a : (0, r.jsx)("span", {
+          children: [a, null != o ? o : (0, r.jsx)("span", {
             className: m.threadMessageAccessoryPlaceholder,
             children: l
           }), s]
         })
-      }(t, b, f, _)
+      }(t, b, f, g)
     })]
   })
 }

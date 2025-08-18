@@ -2,7 +2,7 @@
 /** chunk id: 515344, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   G: () => C,
-  z: () => v
+  z: () => O
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -26,26 +26,26 @@ function E(e) {
     isDiscoverable: t,
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: a
-  } = e, o = (0, f.Eb)({
+    integrationTypesConfig: o
+  } = e, a = (0, f.Eb)({
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: a
+    integrationTypesConfig: o
   }), s = (0, i.e7)([p.Z], () => {
     var e;
     return null != (e = p.Z.getGuildId()) ? e : true
   }), m = (0, i.e7)([c.Z, u.Z, d.Z], () => {
     let e = c.Z.getChannel(d.Z.getChannelId());
-    return null != e && (e.isPrivate() || u.Z.can(g.Plq.SEND_MESSAGES, e))
-  }, []), _ = (0, l.PZ)(e, s) && m;
+    return null != e && (e.isPrivate() || u.Z.can(_.Plq.SEND_MESSAGES, e))
+  }, []), g = (0, l.PZ)(e, s) && m;
   return {
     isDiscoverable: t,
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: a,
-    canViewApp: t || _,
-    canOpenAppLauncher: _,
-    isInstallable: o,
+    integrationTypesConfig: o,
+    canViewApp: t || g,
+    canOpenAppLauncher: g,
+    isInstallable: a,
     selectedGuildId: s
   }
 }
@@ -61,8 +61,8 @@ function C(e, t) {
     selectedGuildId: p
   } = E(e);
   return r.useMemo(() => n ? () => {
-    if (null == t || t(), i) return void(0, a.X)(e.id);
-    (0, o.transitionToGlobalDiscovery)({
+    if (null == t || t(), i) return void(0, o.X)(e.id);
+    (0, a.transitionToGlobalDiscovery)({
       tab: h.GlobalDiscoveryTab.APPS,
       applicationId: e.id,
       newSessionState: {
@@ -83,20 +83,20 @@ function C(e, t) {
   } : true, [e.id, i, n, c, u, d, l, t, p])
 }
 
-function v(e) {
+function O(e) {
   let {
     canViewApp: t,
     isInstallable: n
   } = E(e), i = C(e);
   return r.useMemo(() => t && null != i ? {
     label: b.intl.string(b.t.hvVgAQ),
-    trackingArea: _.j_.VIEW,
+    trackingArea: g.j_.VIEW,
     onClick() {
       i()
     }
   } : n && null != i ? {
     label: b.intl.string(b.t.NgXl3N),
-    trackingArea: _.j_.ADD_APP,
+    trackingArea: g.j_.ADD_APP,
     onClick() {
       i()
     }

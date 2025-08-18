@@ -4,11 +4,11 @@ require.d(exports, {
   Cg: () => f,
   Cp: () => P,
   Cs: () => x,
-  EY: () => O,
-  I5: () => g,
+  EY: () => v,
+  I5: () => _,
   JQ: () => j,
   RY: () => C,
-  Sv: () => v,
+  Sv: () => O,
   TX: () => T,
   ZW: () => y,
   bK: () => E,
@@ -18,9 +18,9 @@ require.d(exports, {
   qS: () => I,
   s: () => b,
   sQ: () => m,
-  wo: () => _
+  wo: () => g
 });
-var r, i, l, a, o, s, c, Chunk990547 = require("./990547.js"),
+var r, i, l, o, a, s, c, Chunk990547 = require("./990547.js"),
   Chunk981631 = require("./981631.js");
 
 function p(e, t, n) {
@@ -35,9 +35,9 @@ class m {}
 p(m, "TOS_LINK", "https://discord.com/terms"), p(m, "COMMUNITY_GUIDELINES", "https://discord.com/guidelines"), p(m, "APPEALS_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731"), p(m, "WARNING_SYSTEM_HELPCENTER_LINK", "https://support.discord.com/hc/articles/18210965981847"), p(m, "AGE_VERIFICATION_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731"), p(m, "SPAM_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731&tf_360055270593=__dc.ticket_form-tnsv1_appeals_other_questions__"), p(m, "LEARN_MORE_UU_APPEAL_LINK", "https://support.discord.com/hc/articles/360041820932");
 class f {}
 p(f, "CLASSIFICATION_ID", "classification_id"), p(f, "INCIDENT_TIMESTAMP", "incident_time");
-var _ = ((r = {}).POLICY_VIOLATION_DETAIL = "policy_violation_detail", r.LEARN_MORE_LINK = "learn_more_link", r);
-class g {}
-p(g, "ICON_TYPE", "icon_type"), p(g, "HEADER", "header"), p(g, "BODY", "body"), p(g, "CTAS", "ctas"), p(g, "TIMESTAMP", "timestamp"), p(g, "THEME", "theme"), p(g, "CLIENT_VERSION_MESSAGE", "client_version_message"), p(g, "LEARN_MORE_LINK", "learn_more_link"), p(g, "CLASSIFICATION_ID", "classification_id");
+var g = ((r = {}).POLICY_VIOLATION_DETAIL = "policy_violation_detail", r.LEARN_MORE_LINK = "learn_more_link", r);
+class _ {}
+p(_, "ICON_TYPE", "icon_type"), p(_, "HEADER", "header"), p(_, "BODY", "body"), p(_, "CTAS", "ctas"), p(_, "TIMESTAMP", "timestamp"), p(_, "THEME", "theme"), p(_, "CLIENT_VERSION_MESSAGE", "client_version_message"), p(_, "LEARN_MORE_LINK", "learn_more_link"), p(_, "CLASSIFICATION_ID", "classification_id");
 var h = ((i = {})[i.ViewViolationDetail = 0] = "ViewViolationDetail", i[i.ViewViolationsDropdown = 1] = "ViewViolationsDropdown", i[i.ClickLetUsKnow = 2] = "ClickLetUsKnow", i[i.ClickAgeVerificationLink = 3] = "ClickAgeVerificationLink", i[i.ClickSpamWebformLink = 4] = "ClickSpamWebformLink", i[i.ClickLearnMoreLink = 5] = "ClickLearnMoreLink", i[i.ClickCommunityGuidelinesLink = 6] = "ClickCommunityGuidelinesLink", i[i.ClickWarningSystemHelpcenterLink = 7] = "ClickWarningSystemHelpcenterLink", i),
   b = ((l = {})[l.SystemDM = 0] = "SystemDM", l[l.StandingTab = 1] = "StandingTab", l[l.AppealIngestion = 2] = "AppealIngestion", l);
 Object.freeze({
@@ -48,14 +48,14 @@ Object.freeze({
   THANKS: Chunk981631.jXE.APPEAL_INGESTION_THANKS,
   SPAM: Chunk981631.jXE.APPEAL_INGESTION_SPAM
 });
-var E = ((a = {})[a.DIDNT_VIOLATE_POLICY = 0] = "DIDNT_VIOLATE_POLICY", a[a.TOO_STRICT_UNFAIR = 1] = "TOO_STRICT_UNFAIR", a[a.DONT_AGREE_PENALTY = 2] = "DONT_AGREE_PENALTY", a[a.SOMETHING_ELSE = 3] = "SOMETHING_ELSE", a);
+var E = ((o = {})[o.DIDNT_VIOLATE_POLICY = 0] = "DIDNT_VIOLATE_POLICY", o[o.TOO_STRICT_UNFAIR = 1] = "TOO_STRICT_UNFAIR", o[o.DONT_AGREE_PENALTY = 2] = "DONT_AGREE_PENALTY", o[o.SOMETHING_ELSE = 3] = "SOMETHING_ELSE", o);
 let C = [0, 1, 2, 3],
-  v = 372,
-  O = 279,
+  O = 372,
+  v = 279,
   y = {
     impression_group: Chunk990547.ImpressionGroups.APPEAL_INGESTION
   };
-var x = ((o = {}).SPEED_BUMP = "speed-bump", o.COLLECT_SIGNAL = "collect-signal", o.CONFIRM_SUBMISSION = "confirm-submission", o.REQUEST_SENT = "request-sent", o.THANKS = "thanks", o);
+var x = ((a = {}).SPEED_BUMP = "speed-bump", a.COLLECT_SIGNAL = "collect-signal", a.CONFIRM_SUBMISSION = "confirm-submission", a.REQUEST_SENT = "request-sent", a.THANKS = "thanks", a);
 let j = {
   "speed-bump": {
     next: "collect-signal",

@@ -16,7 +16,7 @@ function c(e) {
     code: t,
     message: n
   } = e, [c, u] = t.split("/"), d = i.Z.getChannel(u), p = l.Z.getGuild(c);
-  return null != d && d.isGuildVocal() && null != p && a.Z.can(s.Plq.VIEW_CHANNEL, d) && a.Z.can(s.Plq.CONNECT, d) ? (0, r.jsx)(o.Z, {
+  return null != d && d.isGuildVocal() && null != p && o.Z.can(s.Plq.VIEW_CHANNEL, d) && o.Z.can(s.Plq.CONNECT, d) ? (0, r.jsx)(a.Z, {
     guild: p,
     channel: d,
     message: n

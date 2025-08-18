@@ -27,13 +27,13 @@ function E(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: h.buttonContainer,
-    children: (0, r.jsx)(o.zx, {
+    children: (0, r.jsx)(a.zx, {
       className: h.button,
-      color: o.Tt.BRAND,
+      color: a.Tt.BRAND,
       onClick: () => {
         (0, p.navigateToQuestHome)({
           fromContent: d.jn.EXCLUDED_QUEST_EMBED
-        }), c.default.track(_.rMx.QUEST_CONTENT_CLICKED, function(e) {
+        }), c.default.track(g.rMx.QUEST_CONTENT_CLICKED, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -52,12 +52,12 @@ function E(e) {
           return e
         }({
           quest_id: t,
-          click_id: (0, a.Z)(),
+          click_id: (0, o.Z)(),
           cta_name: u.jZ.VIEW_QUESTS,
           is_targeted: false
         }, (0, u.mH)(d.jn.EXCLUDED_QUEST_EMBED)))
       },
-      children: g.intl.string(g.t.GURBQk)
+      children: _.intl.string(_.t.GURBQk)
     })
   })
 }
@@ -82,12 +82,12 @@ function C(e) {
       children: [(0, r.jsx)(s.X6q, {
         variant: "lg" === i ? "heading-xl/bold" : "heading-lg/bold",
         color: "header-primary",
-        children: g.intl.string(g.t.vnP31d)
+        children: _.intl.string(_.t.vnP31d)
       }), (0, r.jsx)(s.Text, {
         variant: "lg" === i ? "text-sm/medium" : "text-xs/medium",
         color: "text-default",
         className: h.__invalid_mobileWebCopy,
-        children: g.intl.string(g.t.nuWSYW)
+        children: _.intl.string(_.t.nuWSYW)
       }), (0, r.jsx)(E, {
         questId: t
       })]

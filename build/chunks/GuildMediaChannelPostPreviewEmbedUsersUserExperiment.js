@@ -1,7 +1,7 @@
 /** Chunk was on 91173 **/
 /** chunk id: 312146, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ui: () => a,
+  Ui: () => o,
   p$: () => s
 });
 var Chunk818083 = require("./818083.js"),
@@ -22,7 +22,7 @@ let l = (0, Chunk818083.B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   var t;
   let {
     enabled: n
@@ -34,7 +34,7 @@ function a(e) {
   });
   return (null == e ? true : e.id) != null && n
 }
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   kind: "user",
   id: "2023-04_guild_media_channel_post_preview_embed_users",
   label: "Guild Role Subscription Users",
@@ -53,7 +53,7 @@ let o = (0, Chunk818083.B)({
 function s() {
   let {
     enabledForUser: e
-  } = o.useExperiment({
+  } = a.useExperiment({
     location: "96e84c_2"
   }, {
     autoTrackExposure: true

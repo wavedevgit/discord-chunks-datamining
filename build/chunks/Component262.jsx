@@ -15,7 +15,7 @@ function u(e) {
   let {
     children: t,
     messageReference: n,
-    guildName: o
+    guildName: a
   } = e, s = i.useRef(null);
   if (null == n) return (0, r.jsx)(l.eee, {
     children: t
@@ -25,15 +25,15 @@ function u(e) {
   } = n;
   return null == c ? (0, r.jsx)(l.eee, {
     children: t
-  }) : (0, r.jsx)(a.Z, {
+  }) : (0, r.jsx)(o.Z, {
     guildId: c,
-    name: o,
+    name: a,
     targetElementRef: s,
     children: e => {
       var n, i;
       let {
-        "aria-controls": a,
-        "aria-expanded": o
+        "aria-controls": o,
+        "aria-expanded": a
       } = e, c = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
@@ -89,16 +89,16 @@ function d(e) {
     message: i,
     compact: l
   } = e, {
-    content: a,
+    content: o,
     timestamp: d,
     messageReference: p
-  } = i, m = (0, o.ZP)(i), f = t(m), _ = (null != a ? a : "").split(" ").slice(0, false).join(" "), g = c.intl.format(c.t["47CZc3"], {
+  } = i, m = (0, a.ZP)(i), f = t(m), g = (null != o ? o : "").split(" ").slice(0, false).join(" "), _ = c.intl.format(c.t["47CZc3"], {
     username: m.nick,
     usernameHook: f,
-    webhookName: a,
+    webhookName: o,
     webhookNameHook: (e, t) => (0, r.jsx)(u, {
       messageReference: p,
-      guildName: _,
+      guildName: g,
       children: e
     }, t)
   });
@@ -106,6 +106,6 @@ function d(e) {
     icon: n(570111),
     timestamp: d,
     compact: l,
-    children: g
+    children: _
   })
 }

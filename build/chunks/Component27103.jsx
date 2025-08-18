@@ -1,7 +1,7 @@
 /** Chunk was on 91173 **/
 /** chunk id: 27103, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,12 +17,12 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk682392 = require("./682392.js");
 
-function _(e) {
+function g(e) {
   let {
     message: t,
     compact: n,
     usernameHook: i
-  } = e, _ = (0, s.ZP)(t), g = i(_), {
+  } = e, g = (0, s.ZP)(t), _ = i(g), {
     avatarSrc: h,
     eventHandlers: {
       onMouseEnter: b,
@@ -53,13 +53,13 @@ function _(e) {
           }),
           username: (0, r.jsxs)("div", {
             className: f.spanCorrection,
-            children: [(0, r.jsx)(a.Text, {
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
               className: f.username,
               children: m.intl.string(m.t.hG1StL)
-            }), (0, r.jsx)(o.Z, {
+            }), (0, r.jsx)(a.Z, {
               type: p.Hb.SYSTEM_DM,
               className: f.systemTag
             })]
@@ -71,8 +71,8 @@ function _(e) {
             [f.compact]: n
           }),
           children: m.intl.format(m.t.qntXNT, {
-            username: _.nick,
-            usernameHook: g
+            username: g.nick,
+            usernameHook: _
           })
         })]
       })

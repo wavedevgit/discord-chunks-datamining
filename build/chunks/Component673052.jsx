@@ -18,14 +18,14 @@ function d(e) {
     message: t,
     channel: n,
     compact: d
-  } = e, p = (0, a.ZP)(t), m = (0, o.l)({
+  } = e, p = (0, o.ZP)(t), m = (0, a.l)({
     user: t.author,
     channelId: n.id,
     guildId: n.guild_id,
     messageId: t.id
   })(p), f = (0, l.q)(t.applicationId);
   if (null == f) return null;
-  let _ = c.intl.format(c.t.mAtJTE, {
+  let g = c.intl.format(c.t.mAtJTE, {
     username: t.author.username,
     usernameHook: m,
     applicationName: f.name,
@@ -45,6 +45,6 @@ function d(e) {
     timestamp: t.timestamp,
     compact: d,
     contentClassName: u.systemMessage,
-    children: _
+    children: g
   })
 }

@@ -209,10 +209,7 @@ class K extends Chunk647438.PureComponent {
     let {
       invite: e
     } = this.props;
-    return null != module.stage_instance && null != module.guild ? (0, Chunk951288.jsx)(Chunk792766.Z, {
-      stageInstance: module.stage_instance,
-      guild: module.guild
-    }) : null != module.guild_scheduled_event ? (0, Chunk951288.jsx)(Chunk639946.r, {
+    return null != module.guild_scheduled_event ? (0, Chunk951288.jsx)(Chunk639946.r, {
       channel: module.channel,
       guildScheduledEvent: module.guild_scheduled_event
     }) : (0, Chunk951288.jsx)(Chunk588705.Z, {

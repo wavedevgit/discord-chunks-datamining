@@ -21,41 +21,41 @@ var Chunk647438 = require("./647438.js"),
 
 function b(e, t) {
   let n = (0, f.p$)(),
-    b = (0, g.LR)(e),
-    E = (0, i.e7)([c.ZP, o.default], () => {
-      let e = o.default.getId();
+    b = (0, _.LR)(e),
+    E = (0, i.e7)([c.ZP, a.default], () => {
+      let e = a.default.getId();
       return c.ZP.isMember(null == b ? true : b.guildId, e)
     }, [b]),
     C = (0, i.e7)([l.Z], () => null != b && (null == b ? true : b.channelId) != null && l.Z.isChannelGated(b.guildId, b.channelId), [b]),
-    v = t.hasFlag(h.iLy.IS_CROSSPOST),
+    O = t.hasFlag(h.iLy.IS_CROSSPOST),
     {
-      rawMediaPostEmbedData: O,
+      rawMediaPostEmbedData: v,
       guild: y,
       parentChannel: x,
       user: j,
       selectedGuildId: I,
       canAccess: S
-    } = (0, i.cj)([_.Z, u.Z, s.Z, p.default, d.Z], () => {
+    } = (0, i.cj)([g.Z, u.Z, s.Z, p.default, d.Z], () => {
       var e;
-      let t = null == (e = _.Z.getMediaPostEmbed(null == b ? true : b.threadId)) ? true : e.media,
+      let t = null == (e = g.Z.getMediaPostEmbed(null == b ? true : b.threadId)) ? true : e.media,
         n = u.Z.getGuild(null == b ? true : b.guildId),
         r = s.Z.getChannel(null == b ? true : b.channelId),
         i = p.default.getUser(null == t ? true : t.author_id),
         l = d.Z.getGuildId(),
-        o = null != r && (0, a.YO)(r);
+        a = null != r && (0, o.YO)(r);
       return {
         rawMediaPostEmbedData: t,
         guild: n,
         parentChannel: r,
         user: i,
         selectedGuildId: l,
-        canAccess: o
+        canAccess: a
       }
     }, [b]),
     T = r.useMemo(() => {
       var e, t;
-      let n = (0, g.ku)({
-        mediaPostEmbedData: O,
+      let n = (0, _.ku)({
+        mediaPostEmbedData: v,
         guild: y,
         parentChannel: x,
         user: j,
@@ -91,11 +91,11 @@ function b(e, t) {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)
-    }, [O, y, x, j, I, S]);
+    }, [v, y, x, j, I, S]);
   return r.useEffect(() => {
     if ((null == b ? true : b.threadId) != null) {
-      let e = _.Z.getEmbedFetchState(b.threadId);
-      true !== n || e !== _.M.NOT_FETCHED || E && false === C || !E && v || (0, m.xP)(null == b ? true : b.threadId)
+      let e = g.Z.getEmbedFetchState(b.threadId);
+      true !== n || e !== g.M.NOT_FETCHED || E && false === C || !E && O || (0, m.xP)(null == b ? true : b.threadId)
     }
-  }, [b, n, E, C, v]), T
+  }, [b, n, E, C, O]), T
 }

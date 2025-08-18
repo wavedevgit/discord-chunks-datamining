@@ -22,13 +22,13 @@ function p(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: d.votesData,
-    children: [t && (0, r.jsx)(a.T, {
+    children: [t && (0, r.jsx)(o.T, {
       children: u.intl.string(u.t["8DAM+/"])
-    }), (0, r.jsxs)(o.Text, {
+    }), (0, r.jsxs)(a.Text, {
       variant: "text-md/semibold",
       color: "none",
       children: [i, "%"]
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-xs/semibold",
       color: "none",
       children: n
@@ -41,24 +41,24 @@ function m(e) {
     answer: t,
     isExpired: n,
     myAvatarUrl: i,
-    canShowVoteCounts: a
-  } = e, o = true === t.isSelected, s = true === t.didSelfVote, u = true === t.isVictor;
+    canShowVoteCounts: o
+  } = e, a = true === t.isSelected, s = true === t.didSelfVote, u = true === t.isVictor;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.$w, {
       attachmentClassName: l()(d.attachment, {
-        [d.attachmentWithResults]: a
+        [d.attachmentWithResults]: o
       }),
       emojiClassName: d.emoji,
       media: t.pollMedia,
       fallback: (0, r.jsx)("div", {
         className: l()(d.attachment, d.mediaMissing)
       })
-    }), o && (0, r.jsx)(c.ZY, {
+    }), a && (0, r.jsx)(c.ZY, {
       size: 40,
       isVictor: u,
       isExpired: n,
       className: d.selectedIcon
-    }), a && (0, r.jsxs)(r.Fragment, {
+    }), o && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(p, {
         didSelfVote: s,
         percentage: t.votesPercentage,
@@ -79,8 +79,8 @@ function f(e) {
     isExpired: t,
     myAvatarUrl: n,
     answersInteraction: i,
-    canShowVoteCounts: a
-  } = e, o = function(e, t) {
+    canShowVoteCounts: o
+  } = e, a = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -124,7 +124,7 @@ function f(e) {
       isExpired: t,
       myAvatarUrl: n,
       answersInteraction: i,
-      canShowVoteCounts: a
+      canShowVoteCounts: o
     })
-  }, o))
+  }, a))
 }

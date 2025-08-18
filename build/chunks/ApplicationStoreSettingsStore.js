@@ -5,12 +5,12 @@ require.d(exports, {
 });
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let o = {
+let a = {
   matureAgree: false
 };
 class s extends(i = Chunk442837.ZP.Store) {
   get didMatureAgree() {
-    return o.matureAgree
+    return a.matureAgree
   }
 }(r = "displayName") in s ? Object.defineProperty(s, r, {
   value: "ApplicationStoreSettingsStore",
@@ -20,6 +20,6 @@ class s extends(i = Chunk442837.ZP.Store) {
 }) : s[r] = "ApplicationStoreSettingsStore";
 let c = new s(Chunk570140.Z, {
   APPLICATION_STORE_MATURE_AGREE: function() {
-    o.matureAgree = true
+    a.matureAgree = true
   }
 })

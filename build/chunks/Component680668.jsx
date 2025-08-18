@@ -1,7 +1,7 @@
 /** Chunk was on 91173 **/
 /** chunk id: 680668, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => O
 }), require("./997841.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,8 +22,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk105341 = require("./105341.js");
 
-function v(e) {
-  var t, v, O;
+function O(e) {
+  var t, O, v;
   let y, x, j, {
       onTransitionToInviteChannel: I,
       onAcceptInstantInvite: S,
@@ -45,7 +45,7 @@ function v(e) {
     F = null != M && M.isGuildVocal(),
     B = null != M && M.isGuildStageVoice(),
     G = (0, f.yE)(null != (t = P.flags) ? t : 0, l.$.IS_GUEST_INVITE),
-    H = null != (v = null == T ? true : T.features.has(b.oNc.HUB)) && v,
+    H = null != (O = null == T ? true : T.features.has(b.oNc.HUB)) && O,
     V = null == T ? true : T.id,
     {
       analyticsLocations: z
@@ -54,11 +54,11 @@ function v(e) {
     K = i.useCallback(() => Y(false), []),
     X = i.useRef(null),
     q = i.useCallback(() => {
-      Y(true), (0, o.CB)(V, "show profile", z)
+      Y(true), (0, a.CB)(V, "show profile", z)
     }, [V, z]),
-    Q = i.useCallback(() => {
+    J = i.useCallback(() => {
       let e = "noop";
-      k ? (I(), e = "transition") : (S(), e = "accept"), (0, o.r$)({
+      k ? (I(), e = "transition") : (S(), e = "accept"), (0, a.r$)({
         invite: P,
         action: e,
         inviter_id: N.author.id,
@@ -67,9 +67,9 @@ function v(e) {
     }, [P, N, z, k, I, S]);
   if (null == T) {
     if (null == P.guild) return (0, r.jsx)(h.Z, {});
-    (T = _.Qs(P.guild)).premiumTier = null != (O = P.guild.premium_tier) ? O : b.Eu4.NONE
+    (T = g.Qs(P.guild)).premiumTier = null != (v = P.guild.premium_tier) ? v : b.Eu4.NONE
   }
-  let J = (0, g.e)({
+  let Q = (0, _.e)({
     isVoiceChannel: F,
     isOwnInvite: w,
     isGuest: G,
@@ -97,10 +97,10 @@ function v(e) {
         disableBoostClick: true
       })
     })]
-  }), G && (j = (0, r.jsx)(a.DY3, {
+  }), G && (j = (0, r.jsx)(o.DY3, {
     className: C.tooltipContainer,
     text: E.intl.string(E.t["/FeTKy"]),
-    children: (0, r.jsx)(a.d3s, {
+    children: (0, r.jsx)(o.d3s, {
       size: "md",
       color: "currentColor",
       className: C.infoIcon
@@ -128,7 +128,7 @@ function v(e) {
     children: [(0, r.jsx)(p.Z.GuildSplash, {
       guild: T
     }), (0, r.jsx)(p.Z.Header, {
-      text: J,
+      text: Q,
       extra: j
     }), (0, r.jsxs)(p.Z.Body, {
       children: [(0, r.jsxs)("div", {
@@ -141,7 +141,7 @@ function v(e) {
           children: y
         })]
       }), (0, r.jsx)(p.Z.Button, {
-        onClick: Q,
+        onClick: J,
         submitting: L,
         color: p.Z.Button.Colors.GREEN,
         children: F ? B ? E.intl.string(E.t["7vb2cX"]) : E.intl.string(E.t.gpqgam) : k ? E.intl.string(E.t.cEnaW1) : E.intl.string(E.t.XpeFYm)
@@ -149,11 +149,11 @@ function v(e) {
     }), T.features.has(b.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: C.separator
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: E.intl.format(E.t["/o1IfH"], {
-          onClick: () => (0, a.ZDy)(async () => {
+          onClick: () => (0, o.ZDy)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("95468"), n.e("70799")]).then(n.bind(n, 650233));

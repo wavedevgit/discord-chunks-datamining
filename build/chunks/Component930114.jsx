@@ -20,7 +20,7 @@ function p(e) {
     channelContext: p,
     customGiftMessage: m,
     giftInfo: f
-  } = e, _ = false, g = null, h = l.default.getCurrentUser(), b = (0, s.yd)(null == h ? true : h.premiumType, u.p9.TIER_0);
+  } = e, g = false, _ = null, h = l.default.getCurrentUser(), b = (0, s.yd)(null == h ? true : h.premiumType, u.p9.TIER_0);
   (0, i.ZDy)(async () => {
     let {
       default: e
@@ -51,14 +51,14 @@ function p(e) {
         emojiName: null == f || null == (i = f.emoji) ? true : i.name,
         soundId: null == f || null == (l = f.sound) ? true : l.id,
         onComplete: (e, t) => {
-          g = e, t && (_ = t, e.isSubscription && null == a.Z.getPremiumSubscription(false) && (0, c.H)(true))
+          _ = e, t && (g = t, e.isSubscription && null == o.Z.getPremiumSubscription(false) && (0, c.H)(true))
         }
       }, n))
     }
   }, {
     onCloseCallback: () => {
       var e;
-      _ && null != g && !b && g.isSubscription && (null == g || null == (e = g.subscriptionPlan) ? true : e.premiumSubscriptionType) === u.p9.TIER_2 && o.S.dispatch(d.CkL.PREMIUM_SUBSCRIPTION_CREATED)
+      g && null != _ && !b && _.isSubscription && (null == _ || null == (e = _.subscriptionPlan) ? true : e.premiumSubscriptionType) === u.p9.TIER_2 && a.S.dispatch(d.CkL.PREMIUM_SUBSCRIPTION_CREATED)
     }
   })
 }

@@ -9,22 +9,22 @@ var Chunk442837 = require("./442837.js"),
   Chunk699516 = require("./699516.js"),
   Chunk697451 = require("./697451.jsx");
 
-function o(e) {
+function a(e) {
   let {
     message: t,
     channel: n,
-    compact: o
+    compact: a
   } = e, s = (0, i.e7)([l.Z], () => null != t.interaction && l.Z.isBlocked(t.interaction.user.id), [t.interaction]);
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     message: t,
     channel: n,
-    compact: o,
+    compact: a,
     isInteractionUserBlocked: s
   })
 }
 
 function s(e, t, n) {
-  return null != e.interaction && "" !== e.interaction.displayName ? (0, r.jsx)(o, {
+  return null != e.interaction && "" !== e.interaction.displayName ? (0, r.jsx)(a, {
     message: e,
     channel: t,
     compact: n

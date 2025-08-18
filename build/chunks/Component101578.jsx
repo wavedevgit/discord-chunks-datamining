@@ -19,11 +19,11 @@ let d = e => {
     hideParty: p
   } = e, {
     analyticsLocations: m
-  } = (0, a.ZP)(l.Z.INVITE_EMBED), f = null != d.application ? s.ZP.createFromServer(d.application) : null != d.activity && null != d.activity.party_id && (0, u.Ps)(d.activity.party_id) ? c.r9 : true, {
-    data: _
-  } = (0, o.IX)(null == (t = d.application) ? true : t.id), g = null != _ ? _ : f;
-  return null == g ? null : (0, r.jsx)(i.c, {
-    app: g,
+  } = (0, o.ZP)(l.Z.INVITE_EMBED), f = null != d.application ? s.ZP.createFromServer(d.application) : null != d.activity && null != d.activity.party_id && (0, u.Ps)(d.activity.party_id) ? c.r9 : true, {
+    data: g
+  } = (0, a.IX)(null == (t = d.application) ? true : t.id), _ = null != g ? g : f;
+  return null == _ ? null : (0, r.jsx)(i.c, {
+    app: _,
     channel: n,
     message: d,
     hideParty: p,

@@ -22,28 +22,28 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let _ = {},
-  g = 0,
+let g = {},
+  _ = 0,
   h = {},
   b = {},
   E = e => {
-    null != _[e] && delete _[e], g++
+    null != g[e] && delete g[e], _++
   };
 
 function C(e) {
   let {
     messageData: t,
     errorResponseBody: n
-  } = e, r = (0, a.hc)(t), i = {
+  } = e, r = (0, o.hc)(t), i = {
     id: r,
-    isBlockedEdit: (0, a.Bz)(t),
+    isBlockedEdit: (0, o.Bz)(t),
     messageData: t,
     errorMessage: (0, d.uF)(t, n)
   };
-  return _[r] = i, g++, true
+  return g[r] = i, _++, true
 }
 
-function v(e) {
+function O(e) {
   var t;
   let {
     channelId: n,
@@ -51,7 +51,7 @@ function v(e) {
   } = e, i = null == (t = s.Z.getChannel(n)) ? true : t.getGuildId();
   if (null == i) returnfalse;
   let l = b[i],
-    a = r.reduce((e, t) => {
+    o = r.reduce((e, t) => {
       var n;
       return t.type === m.uaV.AUTO_MODERATION_ACTION && (null == (n = t.embeds) ? true : n.some(e => {
         let {
@@ -60,25 +60,25 @@ function v(e) {
         return t === m.hBH.AUTO_MODERATION_NOTIFICATION
       })) ? null == e || false === u.default.compare(e, t.id) ? t.id : true : e
     }, l);
-  return null != a && b[i] !== a && (b[i] = a, true)
+  return null != o && b[i] !== o && (b[i] = o, true)
 }
-class O extends(r = Chunk442837.ZP.PersistedStore) {
+class v extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(c.Z), null != e && (_ = e.automodFailedMessages, h = e.mentionRaidDetectionByGuild)
+    this.waitFor(c.Z), null != e && (g = e.automodFailedMessages, h = e.mentionRaidDetectionByGuild)
   }
   getState() {
     return {
-      automodFailedMessages: _,
+      automodFailedMessages: g,
       mentionRaidDetectionByGuild: h,
       lastIncidentAlertMessage: b
     }
   }
   getMessage(e) {
     var t;
-    return null == e ? null : null != (t = _[e]) ? t : null
+    return null == e ? null : null != (t = g[e]) ? t : null
   }
   getMessagesVersion() {
-    return g
+    return _
   }
   getMentionRaidDetected(e) {
     var t;
@@ -89,20 +89,20 @@ class O extends(r = Chunk442837.ZP.PersistedStore) {
     return null != (t = b[e]) ? t : null
   }
 }
-f(O, "displayName", "GuildAutomodMessageStore"), f(O, "persistKey", "GuildAutomodMessages");
-let y = new O(Chunk570140.Z, {
+f(v, "displayName", "GuildAutomodMessageStore"), f(v, "persistKey", "GuildAutomodMessages");
+let y = new v(Chunk570140.Z, {
   CONNECTION_OPEN: function(e) {
-    return 0 !== Object.keys(_).length && (_ = {}, g++, true)
+    return 0 !== Object.keys(g).length && (g = {}, _++, true)
   },
-  LOAD_MESSAGES_SUCCESS: v,
-  LOCAL_MESSAGES_LOADED: v,
+  LOAD_MESSAGES_SUCCESS: O,
+  LOCAL_MESSAGES_LOADED: O,
   MESSAGE_CREATE: function(e) {
     let {
       guildId: t,
       message: n
     } = e;
     if (null == t || n.type !== m.uaV.AUTO_MODERATION_ACTION) returnfalse;
-    let r = (0, o.e5)(n);
+    let r = (0, a.e5)(n);
     return !!(0, p.nY)(r) && !!(0, p.OP)(r) && (b[t] = r.id, true)
   },
   MESSAGE_SEND_FAILED_AUTOMOD: C,

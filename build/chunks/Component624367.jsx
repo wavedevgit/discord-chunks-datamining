@@ -21,23 +21,23 @@ function d(e) {
     linkId: p
   } = e, {
     analyticsLocations: m
-  } = (0, l.ZP)(i.Z.ACTIVITY_BOOKMARK), [f] = (0, s.Z)([t]), _ = null != f && (0, a.ye)(f), {
-    data: g,
+  } = (0, l.ZP)(i.Z.ACTIVITY_BOOKMARK), [f] = (0, s.Z)([t]), g = null != f && (0, o.ye)(f), {
+    data: _,
     error: h
   } = (0, c.h)(null == f ? true : f.id, p);
-  return null == f || false === _ ? null : null != p && null == h && null != g ? (0, r.jsx)(l.Gt, {
+  return null == f || false === g ? null : null != p && null == h && null != _ ? (0, r.jsx)(l.Gt, {
     value: m,
     children: (0, r.jsx)(u.b, {
       application: f,
       customId: n,
-      customLink: g,
+      customLink: _,
       referrerId: d
     })
   }) : (0, r.jsx)(l.Gt, {
     value: m,
-    children: (0, r.jsx)(o.O, {
+    children: (0, r.jsx)(a.O, {
       app: f,
-      linkType: o.U.ACTIVITY,
+      linkType: a.U.ACTIVITY,
       activityCustomId: n,
       activityReferrerId: d
     })

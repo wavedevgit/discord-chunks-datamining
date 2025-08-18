@@ -28,18 +28,18 @@ async function b(e, t) {
   if (null == E || null == u.Z.getGuild(E)) return;
   let C = d.default.getCurrentUser();
   if (null == C) return;
-  await (0, o.$p)();
-  let v = Array.from(s.Z.getAllStickersIterator()),
-    O = v.filter(e => e.type === c.n0.GUILD).filter(e => h(e.guild_id) && (0, a.kl)(e, C, t)).sort((e, t) => -m.default.compare(e.id, t.id));
-  if (O.length > 5) {
-    let i = [O[Math.floor(Math.pow(Math.random(), 2) * O.length)].id];
+  await (0, a.$p)();
+  let O = Array.from(s.Z.getAllStickersIterator()),
+    v = O.filter(e => e.type === c.n0.GUILD).filter(e => h(e.guild_id) && (0, o.kl)(e, C, t)).sort((e, t) => -m.default.compare(e.id, t.id));
+  if (v.length > 5) {
+    let i = [v[Math.floor(Math.pow(Math.random(), 2) * v.length)].id];
     r.Z.sendStickers(t.id, i, "", {
       messageReference: {
         guild_id: null != (n = t.getGuildId()) ? n : true,
         channel_id: t.id,
         message_id: e
       },
-      location: g.dy.CHANNEL_PROMPT
+      location: _.dy.CHANNEL_PROMPT
     });
     return
   }
@@ -47,12 +47,12 @@ async function b(e, t) {
     emoji: e,
     channel: t,
     guildId: E,
-    intention: _.Hz.CHAT
+    intention: g.Hz.CHAT
   })).sort((e, t) => -m.default.compare(e.id, t.id));
   if (y.length > 10) {
     let n = y[Math.floor(Math.pow(Math.random(), 2) * y.length)];
     r.Z.sendMessage(t.id, l.ZP.parse(t, n.allNamesString), false, {
-      location: g.dy.CHANNEL_PROMPT,
+      location: _.dy.CHANNEL_PROMPT,
       messageReference: {
         guild_id: null != (f = t.getGuildId()) ? f : true,
         channel_id: t.id,
@@ -61,7 +61,7 @@ async function b(e, t) {
     });
     return
   }
-  let x = v.filter(e => e.type === c.n0.STANDARD),
+  let x = O.filter(e => e.type === c.n0.STANDARD),
     j = [x[Math.floor(Math.random() * x.length)].id];
   r.Z.sendStickers(t.id, j, "", {
     messageReference: {
@@ -69,6 +69,6 @@ async function b(e, t) {
       channel_id: t.id,
       message_id: e
     },
-    location: g.dy.CHANNEL_PROMPT
+    location: _.dy.CHANNEL_PROMPT
   })
 }

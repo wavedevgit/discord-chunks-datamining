@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -14,7 +14,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = s();
+let a = s();
 
 function s() {
   return {
@@ -32,7 +32,7 @@ class c extends(r = Chunk442837.ZP.PersistedStore) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          a(e, t, n[t])
+          o(e, t, n[t])
         })
       }
       return e
@@ -47,22 +47,22 @@ class c extends(r = Chunk442837.ZP.PersistedStore) {
       return n
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-    }), o = n
+    }), a = n
   }
   getState() {
-    return o
+    return a
   }
   getIgnoreTimestamps() {
-    return o.ignoreTimestamps
+    return a.ignoreTimestamps
   }
 }
-a(c, "displayName", "IgnoreNoticeStore"), a(c, "persistKey", "IgnoreNoticeStore");
+o(c, "displayName", "IgnoreNoticeStore"), o(c, "persistKey", "IgnoreNoticeStore");
 let u = new c(Chunk570140.Z, {
   RELATIONSHIP_IGNORE_USER_SUCCESS: function(e) {
     let {
       userId: t,
       timestamp: n
     } = e;
-    o.ignoreTimestamps[t] = n
+    a.ignoreTimestamps[t] = n
   }
 })

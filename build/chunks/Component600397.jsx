@@ -21,9 +21,9 @@ function f(e) {
     message: t,
     channel: n,
     author: f,
-    compact: _
+    compact: g
   } = e, {
-    nick: g
+    nick: _
   } = (0, s.Sw)(f, n), h = (0, c.l)({
     user: f,
     channelId: n.id,
@@ -32,24 +32,24 @@ function f(e) {
   })(), b = (0, l.q)(t.applicationId);
   if (null == b) return null;
   let E = p.intl.format(p.t.m7Lwam, {
-    username: g,
+    username: _,
     usernameHook: h,
     gameName: b.name,
     gameIconHook: e => (0, r.jsxs)("span", {
       className: m.gameContainer,
-      children: [(0, r.jsx)(a.Z, {
+      children: [(0, r.jsx)(o.Z, {
         game: b,
-        size: a.Z.Sizes.XXSMALL,
+        size: o.Z.Sizes.XXSMALL,
         className: m.inlineIcon
       }), " ", e]
     }),
-    helpdeskArticle: o.Z.getArticleURL(d.BhN.SOCIAL_LAYER_CONNECTIONS)
+    helpdeskArticle: a.Z.getArticleURL(d.BhN.SOCIAL_LAYER_CONNECTIONS)
   });
   return (0, r.jsx)(u.Z, {
     iconNode: (0, r.jsx)(i.iWm, {
       size: "sm"
     }),
-    compact: _,
+    compact: g,
     contentClassName: m.content,
     children: (0, r.jsx)("div", {
       children: E

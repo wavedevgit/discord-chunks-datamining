@@ -32,11 +32,11 @@ let s = function(e) {
     return i
   }(e, ["recipients", "size", "status", "isTyping", "className"]);
   let p = l.ny6[n],
-    m = (0, i.Wu)([o.default], () => t.slice(0, 2).map(e => {
-      let t = o.default.getUser(e);
+    m = (0, i.Wu)([a.default], () => t.slice(0, 2).map(e => {
+      let t = a.default.getUser(e);
       if (null != t) return t.getAvatarURL(true, p.size, false)
     }), [t, p.size]);
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     "aria-label": d["aria-label"],
     "aria-hidden": d["aria-hidden"],
     backSrc: m[0],

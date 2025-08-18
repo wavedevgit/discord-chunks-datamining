@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk481060 = require("./481060.js"),
@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
 let U = Chunk647438.memo(e => {
   let {
     start: t
-  } = e, [n, r] = i.useState(0), l = (0, Z.n)(), a = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), c = false === l || a;
+  } = e, [n, r] = i.useState(0), l = (0, Z.n)(), o = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), c = false === l || o;
   return i.useEffect(() => {
     let e = new s.Xp;
     return e.start(c ? 15 * A.Z.Millis.SECOND : A.Z.Millis.SECOND, () => {
@@ -60,23 +60,23 @@ let F = Chunk647438.memo(function(e) {
     } = e,
     {
       analyticsLocations: F
-    } = (0, h.ZP)(g.Z.ACTIVITY_INSTANCE_EMBED),
+    } = (0, h.ZP)(_.Z.ACTIVITY_INSTANCE_EMBED),
     B = (0, u.O)(),
-    G = (0, o.e7)([I.Z], () => I.Z.getChannel(A), [A]),
+    G = (0, a.e7)([I.Z], () => I.Z.getChannel(A), [A]),
     H = (null == G || null == (t = G.isThread) ? true : t.call(G)) ? null == G ? true : G.parent_id : A,
-    V = (0, o.e7)([j.default], () => j.default.getId()),
+    V = (0, a.e7)([j.default], () => j.default.getId()),
     {
       embeddedActivity: z,
       currentEmbeddedActivity: W,
       activityLaunchState: Y
-    } = (0, o.cj)([p.ZP], () => ({
+    } = (0, a.cj)([p.ZP], () => ({
       embeddedActivity: p.ZP.getEmbeddedActivitiesForChannel(null != H ? H : "").find(e => e.applicationId === y.id),
       currentEmbeddedActivity: p.ZP.getCurrentEmbeddedActivity(),
       activityLaunchState: p.ZP.getLaunchState(y.id, null != H ? H : true)
     }), [H, y.id]),
     K = null == z ? true : z.userIds,
-    X = (0, o.Wu)([T.default], () => Array.from(null != K ? K : []).map(e => T.default.getUser(e)).filter(w.lm), [K]),
-    q = (0, o.e7)([S.Z], () => {
+    X = (0, a.Wu)([T.default], () => Array.from(null != K ? K : []).map(e => T.default.getUser(e)).filter(w.lm), [K]),
+    q = (0, a.e7)([S.Z], () => {
       if (null == K) return null;
       for (let e of K) {
         let t = S.Z.findActivity(e, e => e.application_id === y.id);
@@ -84,15 +84,15 @@ let F = Chunk647438.memo(function(e) {
       }
       return null
     }, [y.id, K]),
-    Q = null == q ? true : q.details,
-    J = i.useMemo(() => {
+    J = null == q ? true : q.details,
+    Q = i.useMemo(() => {
       let e = new x.ZP(y);
       return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = L.wT), e
     }, [y]),
-    $ = (0, _.s5)({
+    $ = (0, g.s5)({
       userId: V,
       channelId: A,
-      application: J
+      application: Q
     }),
     ee = null == z,
     et = (0, R.NL)({
@@ -124,14 +124,14 @@ let F = Chunk647438.memo(function(e) {
         analyticsLocations: F,
         componentId: en
       })
-    }, el = et.disabled ? M.intl.string(M.t.JBnc7O) : M.intl.string(M.t.cX9uLS), ea = (0, O.G)(J, () => {
+    }, el = et.disabled ? M.intl.string(M.t.JBnc7O) : M.intl.string(M.t.cX9uLS), eo = (0, v.G)(Q, () => {
       P.default.track(D.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: y.id,
         channel_id: A,
         channel_type: null == G ? true : G.type,
         cta: "View"
       })
-    }), eo = N.ZP.getApplicationIconURL({
+    }), ea = N.ZP.getApplicationIconURL({
       id: y.id,
       icon: y.icon,
       bot: y.bot
@@ -142,7 +142,7 @@ let F = Chunk647438.memo(function(e) {
     eu = (0, C.r)(q),
     ed = [{
       label: ee ? M.intl.string(M.t.RscU7O) : M.intl.string(M.t.VJlc0d),
-      trackingArea: v.j_.PLAY,
+      trackingArea: O.j_.PLAY,
       onClick: ei,
       disabledReason: d,
       submitting: er
@@ -150,7 +150,7 @@ let F = Chunk647438.memo(function(e) {
   return (0, r.jsx)(E.W, {
     header: M.intl.string(M.t.pkq6Vl),
     title: y.name,
-    iconSrc: eo,
+    iconSrc: ea,
     info: (0, r.jsx)("div", {
       className: k.infoWrapper,
       children: ee ? (0, r.jsx)(c.Text, {
@@ -158,7 +158,7 @@ let F = Chunk647438.memo(function(e) {
         color: "none",
         children: el
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [null != Q && (0, r.jsxs)("div", {
+        children: [null != J && (0, r.jsxs)("div", {
           className: k.activityPresenceDetailsContainer,
           children: [null != ec && (0, r.jsxs)("div", {
             className: k.activityPresenceDetailsItemContainer,
@@ -176,7 +176,7 @@ let F = Chunk647438.memo(function(e) {
               })
             })]
           }), (0, r.jsxs)("div", {
-            className: a()(k.activityPresenceDetailsItemContainer, k.truncatesText),
+            className: o()(k.activityPresenceDetailsItemContainer, k.truncatesText),
             children: [(0, r.jsx)("div", {
               children: (0, r.jsx)(c.hH0, {
                 size: "xxs",
@@ -186,7 +186,7 @@ let F = Chunk647438.memo(function(e) {
               variant: "text-xs/medium",
               color: "none",
               lineClamp: 1,
-              children: Q
+              children: J
             })]
           })]
         }), es > 0 && (0, r.jsx)(C.K, {
@@ -197,10 +197,10 @@ let F = Chunk647438.memo(function(e) {
       })
     }),
     actions: ed,
-    onClickContent: ea,
+    onClickContent: eo,
     trackingConfig: {
       id: y.id,
-      linkType: v.Un.ACTIVITY_INSTANCE
+      linkType: O.Un.ACTIVITY_INSTANCE
     }
   })
 })

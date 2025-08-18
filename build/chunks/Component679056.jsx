@@ -7,7 +7,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk846519 = require("./846519.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -56,7 +56,7 @@ class s extends(r = Chunk647438.Component) {
       children: n,
       className: r,
       disable: l
-    } = this.props, a = Chunk647438 ? null : {
+    } = this.props, o = Chunk647438 ? null : {
       onMouseEnter: this.handlePause,
       onFocus: this.handlePause,
       onMouseLeave: this.handleResume,
@@ -69,7 +69,7 @@ class s extends(r = Chunk647438.Component) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          o(e, t, n[t])
+          a(e, t, n[t])
         })
       }
       return e
@@ -88,20 +88,20 @@ class s extends(r = Chunk647438.Component) {
     }), module))
   }
   constructor(...e) {
-    super(...e), o(this, "timer", new a.Xp), o(this, "state", {
+    super(...e), a(this, "timer", new o.Xp), a(this, "state", {
       hovered: false
-    }), o(this, "handlePause", () => {
+    }), a(this, "handlePause", () => {
       this.state.hovered || this.setState({
         hovered: true
       })
-    }), o(this, "handleResume", () => {
+    }), a(this, "handleResume", () => {
       this.setState({
         hovered: false
       })
     })
   }
 }
-o(s, "defaultProps", {
+a(s, "defaultProps", {
   disable: false,
   pauseOnHover: false
 });

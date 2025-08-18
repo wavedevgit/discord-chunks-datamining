@@ -1,10 +1,10 @@
 /** Chunk was on 91173 **/
 /** chunk id: 267101, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  SO: () => g,
+  SO: () => _,
   eD: () => p,
   hO: () => m,
-  r: () => _,
+  r: () => g,
   ue: () => f
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
@@ -20,11 +20,11 @@ var Chunk38618 = require("./38618.js"),
 let p = e => {
     let t = (0, i.e7)([u.Z], () => null != e ? u.Z.getGuildProductsForGuildFetchState(e) : u.M.FETCHED, [e]),
       n = (0, i.e7)([l.Z], () => l.Z.isConnected()),
-      [a, o] = r.useState(true);
+      [o, a] = r.useState(true);
     return r.useEffect(() => {
-      a && (t === u.M.NOT_FETCHED || t === u.M.FETCHED && u.Z.isGuildProductsCacheExpired(e)) && n && c.EB(e), o(!n)
-    }, [e, n, t, a]), {
-      listingsLoaded: t === u.M.FETCHED && !a
+      o && (t === u.M.NOT_FETCHED || t === u.M.FETCHED && u.Z.isGuildProductsCacheExpired(e)) && n && c.EB(e), a(!n)
+    }, [e, n, t, o]), {
+      listingsLoaded: t === u.M.FETCHED && !o
     }
   },
   m = function(e, t) {
@@ -32,21 +32,21 @@ let p = e => {
       requireCurrentGuild: n
     } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
       requireCurrentGuild: true
-    }, a = (0, i.e7)([l.Z], () => l.Z.isConnected()), o = (0, i.e7)([s.Z], () => s.Z.getGuildId());
+    }, o = (0, i.e7)([l.Z], () => l.Z.isConnected()), a = (0, i.e7)([s.Z], () => s.Z.getGuildId());
     return r.useEffect(() => {
       let r = u.Z.getGuildProductFetchState(t);
-      if ((!n || o === e) && a && r === u.M.NOT_FETCHED) try {
+      if ((!n || a === e) && o && r === u.M.NOT_FETCHED) try {
         c.cf(e, t)
       } catch (e) {}
-    }, [e, t, a, o, n]), (0, i.e7)([u.Z], () => u.Z.getGuildProduct(t))
+    }, [e, t, o, a, n]), (0, i.e7)([u.Z], () => u.Z.getGuildProduct(t))
   },
   f = function(e) {
     let {
       publishedOnly: t
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-    return (0, i.e7)([u.Z, a.Z], () => u.Z.getGuildProductsForGuild(e, {
-      publishedOnly: null != t ? t : !a.Z.isViewingServerShop(e)
+    return (0, i.e7)([u.Z, o.Z], () => u.Z.getGuildProductsForGuild(e, {
+      publishedOnly: null != t ? t : !o.Z.isViewingServerShop(e)
     }))
   },
-  _ = e => (0, i.e7)([u.Z], () => null == e ? true : u.Z.getGuildProduct(e)),
-  g = e => (0, i.e7)([o.Z], () => null != e && o.Z.can(d.Plq.ADMINISTRATOR, e))
+  g = e => (0, i.e7)([u.Z], () => null == e ? true : u.Z.getGuildProduct(e)),
+  _ = e => (0, i.e7)([a.Z], () => null != e && a.Z.can(d.Plq.ADMINISTRATOR, e))

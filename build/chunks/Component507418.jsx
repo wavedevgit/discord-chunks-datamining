@@ -17,23 +17,23 @@ var Chunk512722 = require("./512722.js"),
 
 function m(e, t) {
   var n, i, m, f;
-  if ((0, o.cp)(t)) return (0, r.jsx)(s.Z, {});
+  if ((0, a.cp)(t)) return (0, r.jsx)(s.Z, {});
   if ((0, p.Z)(t)) {
     let l = (null != (i = null == t || null == (n = t.author) ? true : n.username) ? i : "").split(" ").slice(0, false).join(" "),
       {
-        guild_id: o
+        guild_id: a
       } = t.messageReference;
-    if (null != o) return (0, r.jsx)(a.Z, {
+    if (null != a) return (0, r.jsx)(o.Z, {
       setPopoutRef: e.setPopoutRef,
-      guildId: o,
+      guildId: a,
       name: l
     })
   }
   if (null != t.interaction && "SENDING" === t.state) return (0, r.jsx)(r.Fragment, {});
-  let _ = null != t.webhookId ? t.author : d.default.getUser(t.author.id);
-  l()(null != _, "renderUserGuildPopout: user should never be null");
-  let g = d.default.getCurrentUser();
-  l()(null != g, "renderUserGuildPopout: currentUser should never be null");
+  let g = null != t.webhookId ? t.author : d.default.getUser(t.author.id);
+  l()(null != g, "renderUserGuildPopout: user should never be null");
+  let _ = d.default.getCurrentUser();
+  l()(null != _, "renderUserGuildPopout: currentUser should never be null");
   let h = u.Z.getChannel(t.channel_id);
   return l()(null != h, "renderUserGuildPopout: channel should never be null"), (0, r.jsx)(c.Z, (m = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -53,8 +53,8 @@ function m(e, t) {
     }
     return e
   }({}, e), f = f = {
-    user: _,
-    currentUser: g,
+    user: g,
+    currentUser: _,
     guildId: h.guild_id,
     channelId: t.channel_id,
     messageId: t.id

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk131388 = require("./131388.js"),
@@ -53,7 +53,7 @@ function S(e) {
   let {
     coverImageAsset: t,
     isPreview: n = false
-  } = e, i = f.QK.useSetting(), l = (0, E.n)() && i, [a, o] = (0, m.Z)(t, l), s = l ? (0, r.jsx)(d.Z, {
+  } = e, i = f.QK.useSetting(), l = (0, E.n)() && i, [o, a] = (0, m.Z)(t, l), s = l ? (0, r.jsx)(d.Z, {
     autoPlay: true,
     loop: true,
     className: j.coverImage,
@@ -66,10 +66,10 @@ function S(e) {
     className: j.coverImage
   });
   return (0, r.jsx)("div", {
-    ref: a,
+    ref: o,
     className: j.coverImageContainer,
-    children: null == o || n ? s : (0, r.jsx)("img", {
-      src: o,
+    children: null == a || n ? s : (0, r.jsx)("img", {
+      src: a,
       alt: "",
       className: j.coverImage
     })
@@ -84,11 +84,11 @@ function T(e) {
   } = e, m = l.id, {
     nickname: f,
     nickcolor: h
-  } = (0, o.cj)([_.ZP, g.default], () => {
+  } = (0, a.cj)([g.ZP, _.default], () => {
     var e, t;
-    let n = g.default.getCurrentUser();
-    a()(null != n, "user cannot be null");
-    let r = _.ZP.getMember(m, n.id);
+    let n = _.default.getCurrentUser();
+    o()(null != n, "user cannot be null");
+    let r = g.ZP.getMember(m, n.id);
     return {
       nickname: null != (e = null == r ? true : r.nick) ? e : b.ZP.getName(n),
       nickcolor: null != (t = null == r ? true : r.colorString) ? t : true
@@ -99,7 +99,7 @@ function T(e) {
   } = (0, C.s)(), P = (null != (n = null == d || null == (t = d.description) ? true : t.trim().length) ? n : 0) > 0, [N, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
     selectedTab: Z,
     isPhantomPreview: R
-  } = (0, v.m)(), D = Z === O.y.GUILD_PRODUCTS_PREVIEW ? x.intl.string(x.t["LvXy/P"]) : x.intl.string(x.t.XyqKh4), L = P ? (0, r.jsxs)(r.Fragment, {
+  } = (0, O.m)(), D = Z === v.y.GUILD_PRODUCTS_PREVIEW ? x.intl.string(x.t["LvXy/P"]) : x.intl.string(x.t.XyqKh4), L = P ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(T, {
       lineClamp: w || 2 === N ? 2 : 3,
       children: (0, r.jsx)(s.Text, {

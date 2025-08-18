@@ -1,7 +1,7 @@
 /** Chunk was on 91173 **/
 /** chunk id: 345114, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -67,13 +67,13 @@ function C(e) {
   })
 }
 
-function v(e) {
+function O(e) {
   var t, l;
   let {
     channel: f,
     message: h,
     compact: b
-  } = e, E = (0, s.ZP)(h), v = function(e) {
+  } = e, E = (0, s.ZP)(h), O = function(e) {
     let {
       author: t,
       channel: n,
@@ -85,8 +85,8 @@ function v(e) {
       messageId: r.id
     })(t), {
       analyticsLocations: u
-    } = (0, o.ZP)(a.Z.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE), m = r.roleSubscriptionData, f = i.useCallback(() => {
-      (0, d.uL)(_.Z5c.CHANNEL(l, g.oC.ROLE_SUBSCRIPTIONS), {
+    } = (0, a.ZP)(o.Z.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE), m = r.roleSubscriptionData, f = i.useCallback(() => {
+      (0, d.uL)(g.Z5c.CHANNEL(l, _.oC.ROLE_SUBSCRIPTIONS), {
         sourceLocationStack: u
       }), (null == m ? true : m.role_subscription_listing_id) != null && (0, p.y8)(l, n.id, r.id, m.role_subscription_listing_id)
     }, [l, n, r, m, u]);
@@ -101,14 +101,14 @@ function v(e) {
     channel: f,
     message: h,
     author: E
-  }), O = (null == (t = h.roleSubscriptionData) ? true : t.total_months_subscribed) != null && (null == (l = h.roleSubscriptionData) ? true : l.total_months_subscribed) <= 1;
-  return null == v ? null : (0, r.jsxs)(r.Fragment, {
+  }), v = (null == (t = h.roleSubscriptionData) ? true : t.total_months_subscribed) != null && (null == (l = h.roleSubscriptionData) ? true : l.total_months_subscribed) <= 1;
+  return null == O ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Z, {
       icon: n(570111),
       timestamp: h.timestamp,
       compact: b,
-      children: v
-    }), O && (0, r.jsx)(C, {
+      children: O
+    }), v && (0, r.jsx)(C, {
       guildId: f.guild_id,
       user: h.author,
       username: E.nick

@@ -50,7 +50,7 @@ function P(e) {
     message: t,
     snapshot: n,
     index: d
-  } = e, p = i.useMemo(() => new O.r(t, n, d), [t, n, d]), m = (0, a.e7)([g.Z, v.default, C.Z, E.Z, b.Z, u.Z], () => p.getForwardInfo(g.Z, v.default, C.Z, E.Z, b.Z, u.Z).footerInfo, [p], o.Z), f = i.useCallback(() => {
+  } = e, p = i.useMemo(() => new v.r(t, n, d), [t, n, d]), m = (0, o.e7)([_.Z, O.default, C.Z, E.Z, b.Z, u.Z], () => p.getForwardInfo(_.Z, O.default, C.Z, E.Z, b.Z, u.Z).footerInfo, [p], a.Z), f = i.useCallback(() => {
     (0, y.Z)(t)
   }, [t]);
   return null == m ? null : (0, r.jsxs)(c.P3F, {
@@ -77,10 +77,10 @@ function N(e) {
   let {
     message: n,
     snapshot: l,
-    index: o
-  } = e, s = i.useMemo(() => (0, x.Z)(n, l), [n, l]), c = _.RS.useSetting(), u = _.NA.useSetting(), b = (0, a.e7)([h.Z], () => h.Z.isDeveloper), E = (0, d.A)((null != (t = s.editedTimestamp) ? t : s.timestamp).valueOf()), {
+    index: a
+  } = e, s = i.useMemo(() => (0, x.Z)(n, l), [n, l]), c = g.RS.useSetting(), u = g.NA.useSetting(), b = (0, o.e7)([h.Z], () => h.Z.isDeveloper), E = (0, d.A)((null != (t = s.editedTimestamp) ? t : s.timestamp).valueOf()), {
     content: C,
-    hasSpoilerEmbeds: v
+    hasSpoilerEmbeds: O
   } = (0, m.Z)(s, {
     hideSimpleEmbedContent: c && u,
     isInteracting: false,
@@ -90,8 +90,8 @@ function N(e) {
     allowLinks: true,
     allowDevLinks: b,
     previewLinkTarget: true
-  }), O = (0, a.e7)([g.Z], () => g.Z.getChannel(n.channel_id)), y = _.jU.useSetting();
-  return null == O ? null : (0, r.jsxs)("div", {
+  }), v = (0, o.e7)([_.Z], () => _.Z.getChannel(n.channel_id)), y = g.jU.useSetting();
+  return null == v ? null : (0, r.jsxs)("div", {
     className: S.container,
     children: [(0, r.jsx)("div", {
       className: S.quote
@@ -104,20 +104,20 @@ function N(e) {
       }), (0, f.Z)({
         channelMessageProps: {
           message: s,
-          channel: O,
+          channel: v,
           compact: y
         },
-        hasSpoilerEmbeds: v,
+        hasSpoilerEmbeds: O,
         isInteracting: false,
         isMessageSnapshot: true,
         renderThreadAccessory: false
       }), (0, r.jsx)(P, {
         message: n,
         snapshot: l,
-        index: o
+        index: a
       })]
     })]
-  }, o)
+  }, a)
 }
 
 function A(e) {

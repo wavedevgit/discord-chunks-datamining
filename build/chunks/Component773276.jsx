@@ -21,21 +21,21 @@ function m(e) {
     messageId: n,
     transitionState: m,
     onClose: f
-  } = e, _ = (0, i.e7)([c.Z], () => c.Z.getFpMessageInfo(n)), g = _.attachments.map(e => e.id), h = _.attachments.map(e => e.filename), {
+  } = e, g = (0, i.e7)([c.Z], () => c.Z.getFpMessageInfo(n)), _ = g.attachments.map(e => e.id), h = g.attachments.map(e => e.filename), {
     reportFalsePositive: b,
     isReportFalsePositiveLoading: E
   } = (0, u.$)({
     onSuccess: () => {
-      (0, d.s)(f), a.Z.disableFalsePositiveButton(t, n)
+      (0, d.s)(f), o.Z.disableFalsePositiveButton(t, n)
     },
     onError: () => {
       (0, l.showToast)((0, l.createToast)(p.intl.string(p.t.R0RpRU), l.ToastType.FAILURE))
     },
     report: () => {
-      (0, o.Eq)(t, n, g, h)
+      (0, a.Eq)(t, n, _, h)
     }
   });
-  return _.attachments.length > 0 || f(), (0, r.jsx)(d.$, {
+  return g.attachments.length > 0 || f(), (0, r.jsx)(d.$, {
     messageId: n,
     channelId: t,
     isReportFalsePositiveLoading: E,

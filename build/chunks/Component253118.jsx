@@ -18,7 +18,7 @@ function c(e) {
     usernameHook: u,
     onClickPins: d,
     compact: p
-  } = e, m = (0, a.ZP)(c), f = m.nick, _ = u(m), g = () => {
+  } = e, m = (0, o.ZP)(c), f = m.nick, g = u(m), _ = () => {
     if (null == c.messageReference) return;
     let {
       channel_id: e,
@@ -35,7 +35,7 @@ function c(e) {
       color: "currentColor"
     })
   };
-  return (0, r.jsx)(o.Z, (t = function(e) {
+  return (0, r.jsx)(a.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -56,19 +56,19 @@ function c(e) {
     timestamp: c.timestamp,
     compact: p,
     children: null != c.messageReference ? null == d ? s.intl.format(s.t.lD5tur, {
-      usernameHook: _,
+      usernameHook: g,
       username: f,
-      messageOnClick: g
+      messageOnClick: _
     }) : s.intl.format(s.t.yIDvPD, {
-      usernameHook: _,
+      usernameHook: g,
       username: f,
       pinsActionOnClick: d,
-      messageOnClick: g
+      messageOnClick: _
     }) : null == d ? s.intl.format(s.t.vfkjq6, {
-      usernameHook: _,
+      usernameHook: g,
       username: f
     }) : s.intl.format(s.t.R7vZGR, {
-      usernameHook: _,
+      usernameHook: g,
       username: f,
       pinsActionOnClick: d
     })

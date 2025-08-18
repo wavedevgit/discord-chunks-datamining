@@ -1,7 +1,7 @@
 /** Chunk was on 91173 **/
 /** chunk id: 983436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,22 +16,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk105341 = require("./105341.js");
 
-function _(e) {
+function g(e) {
   let {
     guild: t,
     channel: n,
-    message: _
-  } = e, g = u.Z.getGuildId(), h = c.Z.getChannelId(g), b = i.useCallback(() => {
+    message: g
+  } = e, _ = u.Z.getGuildId(), h = c.Z.getChannelId(_), b = i.useCallback(() => {
     var e;
     d.default.track(p.rMx.CHANNEL_LINK_PREVIEW_JOINED, {
-      author_id: null == (e = _.author) ? true : e.id,
+      author_id: null == (e = g.author) ? true : e.id,
       link_guild_id: t.id,
       link_channel_id: n.id,
       link_channel_type: n.type,
-      guild_id: g,
+      guild_id: _,
       channel_id: h
-    }), (0, a.K)(t.id, n.id), l.default.selectVoiceChannel(n.id)
-  }, [_, t, n, g, h]), E = (0, r.jsx)(s.Z.Channel, {
+    }), (0, o.K)(t.id, n.id), l.default.selectVoiceChannel(n.id)
+  }, [g, t, n, _, h]), E = (0, r.jsx)(s.Z.Channel, {
     channel: n
   });
   return (0, r.jsx)(s.Z, {
@@ -49,7 +49,7 @@ function _(e) {
               guildName: t.name
             }), (0, r.jsx)("span", {
               className: f.infoBadge,
-              children: (0, r.jsx)(o.Z, {
+              children: (0, r.jsx)(a.Z, {
                 guild: t,
                 isBannerVisible: false
               })

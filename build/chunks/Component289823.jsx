@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk974674 = require("./974674.jsx"),
   Chunk438784 = require("./438784.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
 let m = {},
   f = 1 / 4;
 
-function _(e) {
+function g(e) {
   let {
     height: t,
     fillColor: n
@@ -38,7 +38,7 @@ function _(e) {
   })
 }
 
-function g(e) {
+function _(e) {
   let {
     isTyping: t,
     statusCoords: n,
@@ -50,7 +50,7 @@ function g(e) {
       top: n.y,
       left: n.x
     },
-    children: (0, r.jsx)(_, {
+    children: (0, r.jsx)(g, {
       height: n.height,
       fillColor: l
     })
@@ -136,11 +136,11 @@ let b = {
         frontSrc: l,
         size: s,
         isTyping: f,
-        status: _,
+        status: g,
         style: E,
         className: C
       } = e,
-      v = function(e, t) {
+      O = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
@@ -156,7 +156,7 @@ let b = {
         return i
       }(e, ["backSrc", "frontSrc", "size", "isTyping", "status", "style", "className"]);
     let {
-      size: O
+      size: v
     } = c.ny6[s], {
       statusCoords: y,
       frontAvatarOffsetPx: x,
@@ -164,22 +164,22 @@ let b = {
       backAvatarSizePx: I
     } = i.useMemo(() => {
       var e;
-      let t = "".concat(O, "-").concat(f);
+      let t = "".concat(v, "-").concat(f);
       return null != (e = m[t]) ? e : function(e, t, n) {
         let r = c.ny6[e],
           i = r.size / (d.z3 + d.o),
           l = i * d.z3,
-          a = i * d.o,
+          o = i * d.o,
           s = {
-            statusCoords: (0, o.Vq)(r, c.Skl.ONLINE, false, t),
+            statusCoords: (0, a.Vq)(r, c.Skl.ONLINE, false, t),
             frontAvatarSizePx: l,
             backAvatarSizePx: i,
-            frontAvatarOffsetPx: a,
-            frontAvatarCenter: a + l / 2
+            frontAvatarOffsetPx: o,
+            frontAvatarCenter: o + l / 2
           };
         return m[n] = s, s
       }(s, f, t)
-    }, [O, f, s]), S = (t = null != _, f ? b[s].typing : t ? b[s].status : b[s].default);
+    }, [v, f, s]), S = (t = null != g, f ? b[s].typing : t ? b[s].status : b[s].default);
     return (0, r.jsxs)("div", {
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -199,16 +199,16 @@ let b = {
         }
         return e
       }({
-        width: O,
-        height: O
+        width: v,
+        height: v
       }, E),
-      "aria-label": v["aria-label"],
-      "aria-hidden": v["aria-hidden"],
-      className: a()(p.container, C),
+      "aria-label": O["aria-label"],
+      "aria-hidden": O["aria-hidden"],
+      className: o()(p.container, C),
       children: [(0, r.jsxs)(u.ZP, {
         mask: S,
-        height: O,
-        width: O,
+        height: v,
+        width: v,
         children: [(0, r.jsx)("img", {
           src: n,
           alt: "",
@@ -224,12 +224,12 @@ let b = {
             src: l,
             size: j,
             isTyping: f,
-            status: _
+            status: g
           })
         })]
-      }), (0, r.jsx)(g, {
+      }), (0, r.jsx)(_, {
         statusCoords: y,
-        status: _,
+        status: g,
         isTyping: f
       })]
     })

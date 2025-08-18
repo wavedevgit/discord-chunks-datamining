@@ -19,10 +19,10 @@ function s(e) {
     iconNode: (0, r.jsx)(i.or_, {
       size: "md",
       color: "currentColor",
-      className: o.icon
+      className: a.icon
     }),
     timestamp: t.timestamp,
     compact: n,
-    children: a.intl.string(a.t.OCs36O)
+    children: o.intl.string(o.t.OCs36O)
   })
 }

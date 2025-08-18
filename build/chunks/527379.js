@@ -3,9 +3,9 @@
 require.d(exports, {
   Dr: () => f,
   YO: () => p,
-  _X: () => _,
+  _X: () => g,
   _o: () => m,
-  nb: () => g,
+  nb: () => _,
   zO: () => d
 });
 var Chunk570140 = require("./570140.js"),
@@ -62,12 +62,12 @@ async function f(e, t) {
   })
 }
 
-function _(e) {
-  let t = (0, o.lv)(e),
-    n = a.Z.getGuild(e);
+function g(e) {
+  let t = (0, a.lv)(e),
+    n = o.Z.getGuild(e);
   return !!t && null != n && (n.features.has(c.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) || n.features.has(c.oNc.COMMUNITY) || n.features.has(c.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? (0, l.uL)(c.Z5c.CHANNEL(e, u.oC.MEMBER_SAFETY)) : i.Z.open(n.id, c.pNK.MEMBERS), true)
 }
-async function g(e, t) {
+async function _(e, t) {
   let n = await (0, s._2)(e, t);
   return 0 === n.length ? [] : (await r.Z.dispatch({
     type: "FETCH_GUILD_MEMBER_SUPPLEMENTAL_SUCCESS",

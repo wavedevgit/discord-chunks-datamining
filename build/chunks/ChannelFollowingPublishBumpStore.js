@@ -13,12 +13,12 @@ var r, i, Chunk442837 = require("./442837.js"),
   Chunk630388 = require("./630388.js"),
   Chunk110630 = require("./110630.js"),
   Chunk981631 = require("./981631.js");
-let _ = "ChannelFollowingBumpChannels",
-  g = new Set,
+let g = "ChannelFollowingBumpChannels",
+  _ = new Set,
   h = new Set;
 class b extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default), g = new Set(Chunk433517.K.get(_))
+    this.waitFor(Chunk314897.default), _ = new Set(Chunk433517.K.get(g))
   }
   shouldShowBump(e) {
     return h.has(e)
@@ -37,10 +37,10 @@ let E = new b(Chunk570140.Z, {
       message: r,
       optimistic: i
     } = e;
-    if (i || g.has(n)) returnfalse;
+    if (i || _.has(n)) returnfalse;
     let l = c.Z.getChannel(n),
-      a = d.default.getCurrentUser();
-    if (!(null != l && l.type === f.d4z.GUILD_ANNOUNCEMENT && (0, m.Z)(r) && (null != a && (null == (t = r.author) ? true : t.id) === a.id ? u.Z.can(f.Plq.SEND_MESSAGES, l) : u.Z.can(f.Plq.MANAGE_MESSAGES, l)) && !p.yE(Number(r.flags), f.iLy.CROSSPOSTED))) returnfalse;
+      o = d.default.getCurrentUser();
+    if (!(null != l && l.type === f.d4z.GUILD_ANNOUNCEMENT && (0, m.Z)(r) && (null != o && (null == (t = r.author) ? true : t.id) === o.id ? u.Z.can(f.Plq.SEND_MESSAGES, l) : u.Z.can(f.Plq.MANAGE_MESSAGES, l)) && !p.yE(Number(r.flags), f.iLy.CROSSPOSTED))) returnfalse;
     h.add(r.id)
   },
   MESSAGE_UPDATE: function(e) {
@@ -62,6 +62,6 @@ let E = new b(Chunk570140.Z, {
     let {
       channelId: t
     } = e;
-    g.add(t), a.K.set(_, g), h.clear()
+    _.add(t), o.K.set(g, _), h.clear()
   }
 })

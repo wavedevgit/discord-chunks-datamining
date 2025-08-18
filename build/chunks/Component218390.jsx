@@ -1,8 +1,8 @@
 /** Chunk was on 30202 **/
 /** chunk id: 218390, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => eo,
-  Z: () => ed
+  C: () => ed,
+  Z: () => em
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,6 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk975298 = require("./975298.js"),
   Chunk15640 = require("./15640.js"),
   Chunk89057 = require("./89057.jsx"),
+  Chunk70097 = require("./70097.jsx"),
   Chunk406128 = require("./406128.jsx"),
   Chunk703656 = require("./703656.js"),
   Chunk246946 = require("./246946.js"),
@@ -45,6 +46,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk533525 = require("./533525.js"),
   Chunk232076 = require("./232076.js"),
   Chunk736519 = require("./736519.jsx"),
+  Chunk117791 = require("./117791.jsx"),
   Chunk767714 = require("./767714.jsx"),
   Chunk382791 = require("./382791.jsx"),
   Chunk823188 = require("./823188.jsx"),
@@ -57,45 +59,45 @@ var Chunk951288 = require("./951288.js"),
   Chunk458622 = require("./458622.js"),
   Chunk881188 = require("./881188.js"),
   Chunk434691 = require("./434691.js");
-let en = "to_premium_home_button",
-  ei = "premium home page",
-  er = "gifting_button",
-  es = "payment modal";
+let er = "to_premium_home_button",
+  es = "premium home page",
+  ea = "gifting_button",
+  el = "payment modal";
 
-function ea(e) {
+function eo(e) {
   let {
     premiumSubscription: t,
     isDiscountApplied: n,
     activeDiscountInfo: r,
     theme: s
-  } = e, a = t.hasActiveTrial, l = t.planIdFromItems === X.Xh.PREMIUM_YEAR_TIER_2, c = n || a, d = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, m = X.GP[t.planIdFromItems], g = w.ZP.formatPriceString(w.ZP.getDefaultPrice(m.id), m.interval), {
+  } = e, a = t.hasActiveTrial, l = t.planIdFromItems === Q.Xh.PREMIUM_YEAR_TIER_2, c = n || a, d = null != t.trialEndsAt ? o()(t.trialEndsAt).diff(o()(), "d") : 0, m = Q.GP[t.planIdFromItems], g = k.ZP.formatPriceString(k.ZP.getDefaultPrice(m.id), m.interval), {
     enabled: h
-  } = B.T.getCurrentConfig({
+  } = M.T.getCurrentConfig({
     location: "SubscriptionUserHeroSubheader"
   });
   if (c) {
     var f, b, x;
     return (0, i.jsxs)(i.Fragment, {
-      children: [(a || !l) && (0, i.jsx)(z.Cy, {
-        text: a ? Q.intl.string(Q.t.qYKftb) : Q.intl.string(Q.t.EyjDRE),
-        className: $.topRimPillWithSparkles,
-        colorOptions: (0, u.wj)(s) ? z.VE.PREMIUM_TIER_2_WHITE_FILL : z.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL
+      children: [(a || !l) && (0, i.jsx)(Y.Cy, {
+        text: a ? ee.intl.string(ee.t.qYKftb) : ee.intl.string(ee.t.EyjDRE),
+        className: et.topRimPillWithSparkles,
+        colorOptions: (0, u.wj)(s) ? Y.VE.PREMIUM_TIER_2_WHITE_FILL : Y.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL
       }), (a || !l) && (0, i.jsx)("div", {
-        className: $.rimGlowTier2
+        className: et.rimGlowTier2
       }), (0, i.jsx)(p.X6q, {
         variant: "heading-md/normal",
         color: "always-white",
-        className: $.trialHeader,
-        children: h ? "" : a ? Q.intl.format(Q.t["2CGBrq"], {
+        className: et.trialHeader,
+        children: h ? "" : a ? ee.intl.format(ee.t["2CGBrq"], {
           remainingTime: d,
           price: g
-        }) : l ? Q.intl.format(Q.t["+qqh6u"], {
-          percent: null != (f = null == r ? true : r.percentage) ? f : X.Bo,
+        }) : l ? ee.intl.format(ee.t["+qqh6u"], {
+          percent: null != (f = null == r ? true : r.percentage) ? f : Q.Bo,
           regularPrice: g
-        }) : Q.intl.formatToPlainString(Q.t["3Ziutb"], {
-          percent: null != (b = null == r ? true : r.percentage) ? b : X.M_,
+        }) : ee.intl.formatToPlainString(ee.t["3Ziutb"], {
+          percent: null != (b = null == r ? true : r.percentage) ? b : Q.M_,
           regularPrice: g,
-          numMonths: null != (x = null == r ? true : r.duration) ? x : X.rt
+          numMonths: null != (x = null == r ? true : r.duration) ? x : Q.rt
         })
       })]
     })
@@ -104,14 +106,14 @@ function ea(e) {
     style: {
       marginBottom: "18px"
     }
-  }) : (0, i.jsx)(Y.Z, {
+  }) : (0, i.jsx)(q.Z, {
     variant: true,
-    subscriptionTier: X.Si.TIER_2,
+    subscriptionTier: Q.Si.TIER_2,
     interval: m.interval
   })
 }
 
-function el() {
+function ec() {
   let e = (0, Chunk140465.t7)(),
     t = (0, Chunk140465.lr)(),
     n = (0, Chunk410030.ZP)(),
@@ -143,7 +145,7 @@ function el() {
             helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.FRACTIONAL_PREMIUM_ABOUT)
           })
         })]
-      }) : o ? (0, Chunk951288.jsx)(ea, {
+      }) : o ? (0, Chunk951288.jsx)(eo, {
         premiumSubscription: Chunk647438,
         isDiscountApplied: module,
         activeDiscountInfo: exports,
@@ -179,8 +181,8 @@ function el() {
           color: Chunk755721.zx.Colors.WHITE,
           onClick: () => {
             Chunk626135.default.track(Chunk981631.rMx.PREMIUM_SETTINGS_INTERACTED, {
-              cta_type: en,
-              target: ei
+              cta_type: er,
+              target: es
             }), (0, Chunk37234.xf)(), (0, Chunk703656.uL)(Chunk981631.Z5c.APPLICATION_STORE)
           },
           children: (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -195,8 +197,8 @@ function el() {
           color: Chunk755721.zx.Colors.WHITE,
           onClick: () => {
             Chunk626135.default.track(Chunk981631.rMx.PREMIUM_SETTINGS_INTERACTED, {
-              cta_type: en,
-              target: ei
+              cta_type: er,
+              target: es
             }), (0, Chunk37234.xf)(), (0, Chunk703656.uL)(Chunk981631.Z5c.APPLICATION_STORE)
           },
           children: (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -232,55 +234,53 @@ function el() {
   })
 }
 
-function eo(e) {
+function ed(e) {
   var t, n;
   let {
     className: r,
     config: s
-  } = e, l = (0, c.e7)([E.Z], () => E.Z.useReducedMotion) ? s.getStaticImageUrl() : s.getAnimatedImageUrl(), o = (0, U.Tl)(null != (t = s.gradientConfig) ? t : true), d = {
+  } = e, l = (0, c.e7)([E.Z], () => E.Z.useReducedMotion) ? s.getStaticImageUrl() : s.getAnimatedImageUrl(), o = (0, V.Tl)(null != (t = s.gradientConfig) ? t : true), d = {
     color: null != (n = s.textColor) ? n : "var(--always-white)"
   };
   return (0, i.jsxs)("div", {
-    className: a()($.giftCardPromotion, r),
+    className: a()(et.giftCardPromotion, r),
     style: o,
-    children: [(0, i.jsx)("img", {
-      alt: "",
-      className: $.giftImagePromotion,
-      "aria-hidden": true,
-      src: l
+    children: [(0, i.jsx)(I.Z, {
+      className: et.videoAsset,
+      src: l,
+      autoPlay: true,
+      loop: true,
+      muted: true,
+      playsInline: true
     }), (0, i.jsxs)("div", {
-      className: $.giftInfoPromotion,
+      className: et.giftInfoPromotion,
       children: [null != s.getBackgroundImageUrl && (0, i.jsx)("img", {
         alt: "",
         "aria-hidden": true,
-        className: $.giftCardPromotionBannerImage,
+        className: et.giftCardPromotionBannerImage,
         src: s.getBackgroundImageUrl()
       }), (0, i.jsx)(p.X6q, {
-        className: $.giftInfoTitlePromotion,
+        className: et.giftInfoTitlePromotion,
         style: d,
         variant: "text-lg/bold",
         children: s.title()
       }), (0, i.jsx)(p.Text, {
-        className: $.giftText,
+        className: et.giftText,
         style: d,
         variant: "text-sm/medium",
         children: s.body()
       }), null != s.additionalTerm && (0, i.jsx)(p.Text, {
-        className: $.giftAdditionalTerm,
+        className: et.giftAdditionalTerm,
         style: d,
         variant: "text-xxs/normal",
         children: s.additionalTerm()
-      }), (0, i.jsx)(F.Z, {
-        className: $.giftCardButton,
-        textOptions: {
-          textOverride: Q.intl.string(Q.t.Ve9Ge3),
-          textClassName: $.giftButtonCTA
-        },
-        color: m.zx.Colors.BRAND,
+      }), (0, i.jsx)(z.Z, {
+        variant: "expressive",
+        size: "md",
         onClick: () => {
-          D.default.track(J.rMx.PREMIUM_SETTINGS_INTERACTED, {
-            cta_type: er,
-            target: es
+          Z.default.track($.rMx.PREMIUM_SETTINGS_INTERACTED, {
+            cta_type: ea,
+            target: el
           })
         }
       })]
@@ -288,10 +288,10 @@ function eo(e) {
   })
 }
 
-function ec() {
+function eu() {
   var e;
   let t = null == (e = (0, Chunk347896.Z)()) ? true : module.billingSettingsMarketingBanner;
-  return null != exports ? (0, Chunk951288.jsx)(eo, {
+  return null != exports ? (0, Chunk951288.jsx)(ed, {
     config: exports
   }) : (0, Chunk951288.jsxs)("div", {
     className: Chunk458622.giftCard,
@@ -318,15 +318,15 @@ function ec() {
         color: Chunk755721.zx.Colors.CUSTOM,
         onClick: () => {
           Chunk626135.default.track(Chunk981631.rMx.PREMIUM_SETTINGS_INTERACTED, {
-            cta_type: er,
-            target: es
+            cta_type: ea,
+            target: el
           })
         }
       })]
     })]
   })
 }
-let ed = function() {
+let em = function() {
   let e = "PremiumManagementSettings",
     t = (0, Chunk211242.Q)(),
     {
@@ -348,36 +348,36 @@ let ed = function() {
       Chunk37234 || exports || await Promise.all([Chunk355467.jg(), Chunk355467.tZ(), (0, Chunk821849.Y2)(null, null, Chunk981631.JjL.DISCOVERY)]), Chunk780384(false)
     })
   }, [Chunk37234, exports]);
-  let [E, y] = Chunk647438.useState(false);
+  let [E, I] = Chunk647438.useState(false);
   if (Chunk37234) return (0, Chunk951288.jsx)(Chunk497321.Z, {});
   if (exports) return (0, Chunk951288.jsx)(Chunk89057.c8, {});
-  let R = a && null !== Chunk120356 && Chunk913527,
-    Z = Chunk755721.fetched && Chunk755721.isFractionalPremiumActive;
-  if (!Chunk483444 && !Chunk63063 && !o) return (0, Chunk951288.jsx)(Chunk406128.Z, {
+  let A = a && null !== Chunk120356 && Chunk913527,
+    D = Chunk755721.fetched && Chunk755721.isFractionalPremiumActive;
+  if (!Chunk703656 && !Chunk483444 && !o) return (0, Chunk951288.jsx)(Chunk406128.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.dyq9TU),
     note: null
   });
-  if (!Chunk483444 && !Chunk63063 || o) return (0, Chunk951288.jsx)(Chunk481060.$jN, {});
+  if (!Chunk703656 && !Chunk483444 || o) return (0, Chunk951288.jsx)(Chunk481060.$jN, {});
   let w = !!(null == Chunk120356 ? true : Chunk120356.hasActiveTrial);
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: require,
     children: (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsxs)("div", {
-        children: [(0, Chunk951288.jsx)(el, {}), Chunk410030 && (0, Chunk951288.jsx)(Chunk386733.Z, {
+        children: [(0, Chunk951288.jsx)(ec, {}), Chunk410030 && (0, Chunk951288.jsx)(Chunk386733.Z, {
           isInSettings: true
-        }), (0, Chunk951288.jsx)(ec, {}), (0, Chunk951288.jsx)(Chunk179984.Z, {
+        }), (0, Chunk951288.jsx)(eu, {}), (0, Chunk951288.jsx)(Chunk179984.Z, {
           hideCTAs: true,
           headingOverride: Chunk388032.intl.string(Chunk388032.t.dnVvQU),
-          hidePill: !Chunk74538,
+          hidePill: !Chunk63063,
           selectedPlanColumnClassName: Chunk458622.tier2PlanComparisonTableBackground,
           selectedPlanTier: Chunk474936.p9.TIER_2
         })]
       }), (0, Chunk951288.jsx)(Chunk622535.$, {
         innerRef: Chunk230711,
         onChange: e => {
-          e && !E && (D.default.track(J.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+          e && !E && (Z.default.track($.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: n
-          }), y(true))
+          }), I(true))
         },
         children: (0, Chunk951288.jsx)("div", {
           ref: Chunk230711,

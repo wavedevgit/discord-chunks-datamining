@@ -87,7 +87,7 @@ let S = () => (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       z = null != c.channel ? (0, p.jD)(c.channel) : null,
       M = null != c.target_application ? new _.ZP(c.target_application) : null,
       D = S || null == c.inviter ? null : new x.Z(c.inviter),
-      k = !(null != c.approximate_member_count && c.approximate_member_count > 100 || null != Z && Z.features.has(E.oNc.COMMUNITY)) && null != D,
+      k = !(null != c.approximate_member_count && c.approximate_member_count > 100 || null != Z && Z.features.has(I.oNc.COMMUNITY)) && null != D,
       O = null,
       U = false;
     if (null != Z) O = null == D ? f.intl.string(f.t["3rE1Pz"]) : f.intl.formatToPlainString(f.t["5u47vb"], {
@@ -164,7 +164,7 @@ let S = () => (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
             tooltipPosition: "left"
           }) : null, t, l]
         })]
-      }), o, null != M || U || (null == c || null == (n = c.guild) ? true : n.id) === I.fQ ? null : (0, i.jsx)(s.EJ, {
+      }), o, null != M || U || (null == c || null == (n = c.guild) ? true : n.id) === E.fQ ? null : (0, i.jsx)(s.EJ, {
         className: j.activityCount,
         online: c.approximate_presence_count,
         total: c.approximate_member_count,

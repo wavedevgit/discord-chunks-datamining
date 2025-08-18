@@ -1,7 +1,7 @@
 /** Chunk was on 91173 **/
 /** chunk id: 100604, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  r: () => _
+  r: () => g
 });
 var Chunk933557 = require("./933557.js"),
   Chunk356264 = require("./356264.js"),
@@ -40,24 +40,24 @@ function f(e, t) {
     })
   }
 }
-class _ {
+class g {
   getForwardInfo() {
     var e, t, n, u;
     let m = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk592125.Z,
-      _ = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Chunk594174.default,
-      g = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Chunk699516.Z,
+      g = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Chunk594174.default,
+      _ = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Chunk699516.Z,
       h = arguments.length > 3 && true !== arguments[3] ? arguments[3] : Chunk496675.Z,
       b = arguments.length > 4 && true !== arguments[4] ? arguments[4] : Chunk430824.Z,
       E = arguments.length > 5 && true !== arguments[5] ? arguments[5] : Chunk356264.Z,
       {
         snapshotIndex: C,
-        parentMessage: v,
-        messageSnapshot: O
+        parentMessage: O,
+        messageSnapshot: v
       } = this,
-      y = (0, Chunk55935.Xf)(O.message.timestamp),
+      y = (0, Chunk55935.Xf)(v.message.timestamp),
       x = m.getChannel(this.parentMessage.channel_id);
-    if (null != x && x.guild_id === (null == (e = v.messageReference) ? true : module.guild_id)) {
-      let e = m.getChannel(null == (n = v.messageReference) ? true : require.channel_id);
+    if (null != x && x.guild_id === (null == (e = O.messageReference) ? true : module.guild_id)) {
+      let e = m.getChannel(null == (n = O.messageReference) ? true : require.channel_id);
       if (null == module) {
         let e = b.getGuild(x.guild_id);
         return null == module ? {
@@ -70,7 +70,7 @@ class _ {
       if (!h.can(module.accessPermissions, module)) return {
         snapshotIndex: C
       };
-      let t = (0, Chunk933557.F6)(module, _, g, true);
+      let t = (0, Chunk933557.F6)(module, g, _, true);
       return {
         snapshotIndex: C,
         footerInfo: {
@@ -83,7 +83,7 @@ class _ {
         }
       }
     }
-    let j = null == (t = v.messageReference) ? true : exports.guild_id;
+    let j = null == (t = O.messageReference) ? true : exports.guild_id;
     if (null == j) return {
       snapshotIndex: C
     };

@@ -18,19 +18,19 @@ var Chunk951288 = require("./951288.js"),
 function f(e) {
   let {
     applicationId: t
-  } = e, [n, l, o] = (0, a.Wu)([d.Z], () => [d.Z.getApplication(t), d.Z.isFetchingApplication(t), d.Z.didFetchingApplicationFail(t)], [t]);
+  } = e, [n, l, a] = (0, o.Wu)([d.Z], () => [d.Z.getApplication(t), d.Z.isFetchingApplication(t), d.Z.didFetchingApplicationFail(t)], [t]);
   return (i.useEffect(() => {
-    null != n || l || o || u.ZP.fetchApplication(t)
-  }, [n, l, o, t]), null != n && (0, m.Eb)({
+    null != n || l || a || u.ZP.fetchApplication(t)
+  }, [n, l, a, t]), null != n && (0, m.Eb)({
     customInstallUrl: n.customInstallUrl,
     installParams: n.installParams,
     integrationTypesConfig: n.integrationTypesConfig
-  })) ? (0, r.jsx)(_, {
+  })) ? (0, r.jsx)(g, {
     application: n
   }) : null
 }
 
-function _(e) {
+function g(e) {
   let {
     application: t
   } = e, n = i.useCallback(() => {
@@ -42,10 +42,10 @@ function _(e) {
       }
     })
   }, [t.id]), {
-    analyticsLocations: a
-  } = (0, s.ZP)(o.Z.APP_OAUTH2_LINK_EMBED);
+    analyticsLocations: o
+  } = (0, s.ZP)(a.Z.APP_OAUTH2_LINK_EMBED);
   return (0, r.jsx)(s.Gt, {
-    value: a,
+    value: o,
     children: (0, r.jsx)(p.O, {
       app: t,
       linkType: p.U.OAUTH,

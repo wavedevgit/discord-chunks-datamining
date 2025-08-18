@@ -1,7 +1,7 @@
 /** Chunk was on 91173 **/
 /** chunk id: 50523, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => v
+  b: () => O
 }), require("./539854.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -22,34 +22,34 @@ var Chunk951288 = require("./951288.js"),
   Chunk374065 = require("./374065.js"),
   Chunk388032 = require("./388032.jsx");
 
-function v(e) {
+function O(e) {
   var t, n;
   let {
-    application: v,
-    customId: O,
+    application: O,
+    customId: v,
     customLink: y,
     embedUrl: x,
     referrerId: j
-  } = e, I = null == v || null == (t = v.bot) ? true : t.id, S = (0, c.ms)({
+  } = e, I = null == O || null == (t = O.bot) ? true : t.id, S = (0, c.ms)({
     context: {
       type: "contextless"
     },
-    applicationId: v.id,
-    botUserId: null == v || null == (n = v.bot) ? true : n.id
-  }), T = null != v && (0, s.ye)(v), P = null != I && T && S, {
+    applicationId: O.id,
+    botUserId: null == O || null == (n = O.bot) ? true : n.id
+  }), T = null != O && (0, s.ye)(O), P = null != I && T && S, {
     analyticsLocations: N
-  } = (0, a.ZP)(l.Z.ACTIVITY_CUSTOM_LINK), A = (0, i.e7)([f.Z], () => f.Z.getChannelId()), w = (0, E.KF)(A), Z = (0, i.e7)([h.ZP], () => {
+  } = (0, o.ZP)(l.Z.ACTIVITY_CUSTOM_LINK), A = (0, i.e7)([f.Z], () => f.Z.getChannelId()), w = (0, E.KF)(A), Z = (0, i.e7)([h.ZP], () => {
     if (null == A) return;
-    let e = h.ZP.getEmbeddedActivitiesForChannel(A).filter(e => e.applicationId === v.id);
+    let e = h.ZP.getEmbeddedActivitiesForChannel(A).filter(e => e.applicationId === O.id);
     return e.length > 0 ? e[0].compositeInstanceId : true
-  }), R = (0, i.e7)([h.ZP], () => h.ZP.getCurrentEmbeddedActivity()), D = (0, b.Z)(), L = w === E.jy.CAN_LAUNCH, M = null != O ? O : y.customId, k = [];
+  }), R = (0, i.e7)([h.ZP], () => h.ZP.getCurrentEmbeddedActivity()), D = (0, b.Z)(), L = w === E.jy.CAN_LAUNCH, M = null != v ? v : y.customId, k = [];
   L && k.push({
     label: null == Z ? C.intl.string(C.t.RscU7O) : C.intl.string(C.t.VJlc0d),
     trackingArea: p.j_.PLAY,
     onClick() {
-      (0, g.G6)({
+      (0, _.G6)({
         channelId: null != A ? A : true,
-        applicationId: v.id,
+        applicationId: O.id,
         isStart: null == Z,
         embeddedActivitiesManager: D,
         customId: M,
@@ -62,8 +62,8 @@ function v(e) {
     label: C.intl.string(C.t.JeK1Wl),
     trackingArea: p.j_.PLAY,
     onClick() {
-      (0, o.W)({
-        appId: v.id,
+      (0, a.W)({
+        appId: O.id,
         botId: I,
         analyticsLocations: N,
         customId: M,
@@ -71,16 +71,16 @@ function v(e) {
       })
     }
   });
-  let U = (0, m.G)(v);
+  let U = (0, m.G)(O);
   return (0, r.jsx)(d.W, {
     actions: k,
     onClickContent: U,
     embedUrl: x,
-    header: v.name,
-    iconSrc: _.ZP.getApplicationIconURL({
-      id: v.id,
-      icon: v.icon,
-      bot: v.bot
+    header: O.name,
+    iconSrc: g.ZP.getApplicationIconURL({
+      id: O.id,
+      icon: O.icon,
+      bot: O.bot
     }),
     info: (0, r.jsx)("div", {
       children: y.description
@@ -88,7 +88,7 @@ function v(e) {
     staticBannerSrc: y.getAssetURL(),
     title: y.title,
     trackingConfig: {
-      id: v.id,
+      id: O.id,
       linkType: u.U.CUSTOM_ACTIVITY_LINK,
       referrerId: j,
       activityCustomId: M

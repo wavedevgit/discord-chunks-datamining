@@ -2,16 +2,15 @@
 /** chunk id: 987209, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  KB: () => O,
-  b6: () => I,
-  wD: () => b
+  KB: () => y,
+  b6: () => v,
+  wD: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk597688 = require("./597688.js"),
   Chunk479446 = require("./479446.js"),
-  Chunk347896 = require("./347896.js"),
   Chunk717401 = require("./717401.js"),
   Chunk975104 = require("./975104.jsx"),
   Chunk669079 = require("./669079.js"),
@@ -19,65 +18,65 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
-let m = Chunk474936.Cj.STANDARD_BOX,
-  g = true,
-  [E, b, y] = (0, Chunk975104.Z)();
+let h = Chunk474936.Cj.STANDARD_BOX,
+  m = true,
+  [g, E, b] = (0, Chunk975104.Z)();
 
-function O(e) {
+function y(e) {
   let {
     isGift: t = false,
     giftRecipient: n,
-    giftMessage: u,
-    giftStyle: _,
-    giftingOrigin: b,
-    children: y
+    giftMessage: c,
+    giftStyle: f,
+    giftingOrigin: _,
+    children: E
   } = e, {
-    selectedSkuId: O
-  } = (0, f.JL)(), [v, I] = i.useState(n), [T, S] = i.useState(), [A, N] = i.useState(false), C = (0, d.pO)(v), R = null != (0, l.Z)(), P = g;
-  C && (P = R ? p.Cj.SEASONAL_STANDARD_BOX : null != _ ? _ : m);
-  let [w, D] = i.useState(P), L = (0, c.iE)(), [x, M] = i.useState(), [k, j] = i.useState(t && (0, d.MY)(v) === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == u ? h.intl.string(h.t.ZkOo1d) : u), [U, G] = i.useState(true), [B, V] = i.useState(true), F = (0, d.E5)(O, t), [Z, H] = i.useState(false), [Y, W] = i.useState(false), [K, z] = i.useState(), q = i.useCallback(e => {
+    selectedSkuId: b
+  } = (0, d.JL)(), [y, O] = i.useState(n), [v, I] = i.useState(), [T, S] = i.useState(false), A = (0, u.pO)(y), N = m;
+  A && (N = null != f ? f : h);
+  let [C, R] = i.useState(N), P = (0, l.iE)(), [w, D] = i.useState(), [L, x] = i.useState(t && (0, u.MY)(y) === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == c ? p.intl.string(p.t.ZkOo1d) : c), [M, k] = i.useState(true), [j, U] = i.useState(true), G = (0, u.E5)(b, t), [B, V] = i.useState(false), [F, Z] = i.useState(false), [H, Y] = i.useState(), W = i.useCallback(e => {
     let {
       onSubscriptionConfirmation: t
     } = e;
-    return W(true), (0, s.YD)(v, F).then(() => {
-      W(false), null == t || t(), H(true)
+    return Z(true), (0, s.YD)(y, G).then(() => {
+      Z(false), null == t || t(), V(true)
     }).catch(e => {
-      W(false), z(e), H(true)
+      Z(false), Y(e), V(true)
     })
-  }, [v, F, W, H, z]), X = (0, a.Wu)([o.Z], () => o.Z.recommendedGiftSkuIds);
-  return (0, r.jsx)(E.Provider, {
+  }, [y, G, Z, V, Y]), K = (0, a.Wu)([o.Z], () => o.Z.recommendedGiftSkuIds);
+  return (0, r.jsx)(g.Provider, {
     value: {
       isGift: t,
-      giftCode: F,
-      giftMessage: u,
-      giftRecipient: v,
-      setGiftRecipient: I,
-      giftRecipientError: T,
-      setGiftRecipientError: S,
-      validatingGiftRecipient: A,
-      setValidatingGiftRecipient: N,
-      soundEffect: U,
-      setSoundEffect: G,
-      emojiConfetti: B,
-      setEmojiConfetti: V,
-      customGiftMessage: k,
-      setCustomGiftMessage: j,
-      selectedGiftStyle: w,
-      setSelectedGiftStyle: D,
-      sendGiftMessage: q,
-      hasSentMessage: Z,
-      isSendingMessage: Y,
-      giftMessageError: K,
-      recommendedGiftSkuIds: X,
-      giftingOrigin: b,
-      claimableRewards: L,
-      selectedGiftingPromotionReward: x,
-      setSelectedGiftingPromotionReward: M
+      giftCode: G,
+      giftMessage: c,
+      giftRecipient: y,
+      setGiftRecipient: O,
+      giftRecipientError: v,
+      setGiftRecipientError: I,
+      validatingGiftRecipient: T,
+      setValidatingGiftRecipient: S,
+      soundEffect: M,
+      setSoundEffect: k,
+      emojiConfetti: j,
+      setEmojiConfetti: U,
+      customGiftMessage: L,
+      setCustomGiftMessage: x,
+      selectedGiftStyle: C,
+      setSelectedGiftStyle: R,
+      sendGiftMessage: W,
+      hasSentMessage: B,
+      isSendingMessage: F,
+      giftMessageError: H,
+      recommendedGiftSkuIds: K,
+      giftingOrigin: _,
+      claimableRewards: P,
+      selectedGiftingPromotionReward: w,
+      setSelectedGiftingPromotionReward: D
     },
-    children: y
+    children: E
   })
 }
-let v = {
+let O = {
     isGift: false,
     setGiftRecipient: Chunk981631.dG4,
     setGiftRecipientError: Chunk981631.dG4,
@@ -93,12 +92,12 @@ let v = {
     claimableRewards: true,
     setSelectedGiftingPromotionReward: Chunk981631.dG4
   },
-  I = e => {
+  v = e => {
     let {
       children: t
     } = e;
-    return (0, r.jsx)(E.Provider, {
-      value: v,
+    return (0, r.jsx)(g.Provider, {
+      value: O,
       children: t
     })
   }

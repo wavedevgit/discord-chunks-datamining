@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk447543 = require("./447543.js"),
   Chunk100527 = require("./100527.js"),
@@ -26,26 +26,26 @@ function C(e) {
       invite: n,
       message: l,
       currentUserId: C,
-      onTransitionToInviteChannel: v,
-      onAcceptInstantInvite: O
+      onTransitionToInviteChannel: O,
+      onAcceptInstantInvite: v
     } = e,
     y = C === l.author.id,
     x = n.state === h.r2o.ACCEPTING,
-    j = (0, o.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
-  a()(null == j || j.isPrivate(), "must be a private channel");
+    j = (0, a.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
+  o()(null == j || j.isPrivate(), "must be a private channel");
   let {
     analyticsLocations: I
   } = (0, u.ZP)(c.Z.INVITE_EMBED), S = null != j, T = i.useCallback(() => {
     let e = "noop";
-    S ? (v(), e = "transition") : (O(), e = "accept"), (0, s.r$)({
+    S ? (O(), e = "transition") : (v(), e = "accept"), (0, s.r$)({
       invite: n,
       action: e,
       inviter_id: l.author.id,
       invite_message_id: l.id
     }, I)
-  }, [n, l, I, S, v, O]);
+  }, [n, l, I, S, O, v]);
   if (null == j) {
-    if (null == n.channel) return (0, r.jsx)(g.Z, {});
+    if (null == n.channel) return (0, r.jsx)(_.Z, {});
     j = (0, p.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
   } else {
     t = j.recipients.reduce((e, t) => {
@@ -56,7 +56,7 @@ function C(e) {
     S && null != e && t.push(e)
   }
   let P = j.name;
-  (null == P || "" === P) && (P = t.length > 0 ? t.filter(_.lm).map(e => e.username).join(", ") : b.intl.string(b.t.LJpTRE));
+  (null == P || "" === P) && (P = t.length > 0 ? t.filter(g.lm).map(e => e.username).join(", ") : b.intl.string(b.t.LJpTRE));
   let N = b.intl.string(b.t.XpeFYm),
     A = d.Z.Button.Colors.GREEN;
   S && (N = b.intl.string(b.t.cEnaW1), A = d.Z.Button.Colors.PRIMARY);

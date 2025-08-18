@@ -22,8 +22,8 @@ let h = () => {
   var e;
   let [n, t] = Chunk647438.useState(false), a = Chunk695346.G6.useSetting(), {
     nickname: h,
-    dmsAllowed: E,
-    showActivity: I,
+    dmsAllowed: I,
+    showActivity: E,
     mutedServer: v,
     setNickname: f,
     setDmsAllowed: j,
@@ -90,11 +90,11 @@ let h = () => {
         })]
       }), (0, Chunk951288.jsx)(Chunk51331.Z, {
         title: Chunk388032.intl.string(Chunk388032.t["/2ed39"]),
-        value: E,
+        value: I,
         onChange: j
       }), Chunk120356 && (0, Chunk951288.jsx)(Chunk51331.Z, {
         title: Chunk388032.intl.string(Chunk388032.t.bN4m1N),
-        value: I,
+        value: E,
         onChange: S
       }), P && (0, Chunk951288.jsx)(Chunk51331.Z, {
         title: Chunk388032.intl.string(Chunk388032.t["0nZCqK"]),

@@ -2,11 +2,10 @@
 /** chunk id: 413605, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $P: () => c,
-  P1: () => f,
-  TY: () => u,
+  P1: () => d,
+  TY: () => c,
   Tx: () => s,
-  VR: () => _,
+  VR: () => f,
   W6: () => l,
   wx: () => Chunk245335.wx
 }), require("./749958.js"), require("./997431.js");
@@ -28,21 +27,17 @@ function l(e) {
 }
 
 function c(e) {
-  return null != e.channel && null != e.stage_instance
-}
-
-function u(e) {
   return e.target_type === a.Iq.STREAM && null != e.target_user
 }
 
-function d(e) {
+function u(e) {
   return e.type === a.wx.FRIEND || null == e.guild && null != e.inviter
 }
 
-function f(e) {
+function d(e) {
   return e.target_type === a.Iq.EMBEDDED_APPLICATION
 }
 
-function _(e) {
-  return "number" == typeof e.type ? e.type : o(e) ? a.wx.GROUP_DM : d(e) ? a.wx.FRIEND : a.wx.GUILD
+function f(e) {
+  return "number" == typeof e.type ? e.type : o(e) ? a.wx.GROUP_DM : u(e) ? a.wx.FRIEND : a.wx.GUILD
 }

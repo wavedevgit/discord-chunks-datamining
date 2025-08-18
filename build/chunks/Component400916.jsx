@@ -1,7 +1,7 @@
 /** Chunk was on 91173 **/
 /** chunk id: 400916, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,16 +17,16 @@ var Chunk512722 = require("./512722.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk914388 = require("./914388.js");
 
-function _(e) {
-  var t, n, i, _;
+function g(e) {
+  var t, n, i, g;
   let {
-    guildId: g,
+    guildId: _,
     productId: h
-  } = e, b = (0, a.e7)([u.Z], () => u.Z.getGuildProduct(h)), E = (null != (_ = null == b || null == (t = b.attachments) ? true : t.length) ? _ : 0) > 1, C = null == b || null == (i = b.attachments) || null == (n = i[0]) ? true : n.id;
-  return E ? (0, r.jsxs)(o.zx, {
+  } = e, b = (0, o.e7)([u.Z], () => u.Z.getGuildProduct(h)), E = (null != (g = null == b || null == (t = b.attachments) ? true : t.length) ? g : 0) > 1, C = null == b || null == (i = b.attachments) || null == (n = i[0]) ? true : n.id;
+  return E ? (0, r.jsxs)(a.zx, {
     onClick: function() {
       d.Z.open({
-        guildId: g,
+        guildId: _,
         productId: h
       })
     },
@@ -42,7 +42,7 @@ function _(e) {
       direction: c.Z.Directions.RIGHT
     })]
   }) : (l()(null != C, "No attachment"), (0, r.jsxs)(p.Z, {
-    guildId: g,
+    guildId: _,
     productId: h,
     attachmentId: C,
     innerClassName: f.textWithIcon,

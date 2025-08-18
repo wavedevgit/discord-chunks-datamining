@@ -1,7 +1,7 @@
 /** Chunk was on 91173 **/
 /** chunk id: 987909, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,7 +25,7 @@ function E(e) {
     assets: t,
     currentUser: n,
     message: r
-  } = e, i = (_.default.extractTimestamp(n.id) + _.default.extractTimestamp(r.id)) % t.length;
+  } = e, i = (g.default.extractTimestamp(n.id) + g.default.extractTimestamp(r.id)) % t.length;
   return t[i]
 }
 
@@ -38,7 +38,7 @@ function C(e) {
     stickers: d,
     event: p,
     eventProperties: m
-  } = e, _ = i.useMemo(() => E({
+  } = e, g = i.useMemo(() => E({
     assets: d,
     currentUser: t,
     message: l
@@ -49,7 +49,7 @@ function C(e) {
   }), [u, t, l]), b = i.useCallback(async () => {
     let {
       valid: e
-    } = await (0, g.v)({
+    } = await (0, _.v)({
       type: s.Ie.FORM,
       content: "",
       channel: n
@@ -60,7 +60,7 @@ function C(e) {
         message: n,
         sticker: r
       } = e;
-      o.Z.sendGreetMessage(t.id, r.id, o.Z.getSendMessageOptionsForReply({
+      a.Z.sendGreetMessage(t.id, r.id, a.Z.getSendMessageOptionsForReply({
         channel: t,
         message: n,
         shouldMention: true,
@@ -69,7 +69,7 @@ function C(e) {
     }({
       channel: n,
       message: l,
-      sticker: _
+      sticker: g
     }), function(e) {
       var t, n;
       let {
@@ -107,15 +107,15 @@ function C(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t))
     }({
-      sticker: _,
+      sticker: g,
       event: p,
       eventProperties: m
     }))
-  }, [n, l, _, p, m]);
-  return (0, r.jsx)(a.zx, {
+  }, [n, l, g, p, m]);
+  return (0, r.jsx)(o.zx, {
     icon: {
       type: "sticker",
-      asset: _,
+      asset: g,
       component: c.Z
     },
     text: h,
@@ -124,13 +124,13 @@ function C(e) {
   })
 }
 
-function v(e) {
+function O(e) {
   let {
     channel: t,
     message: n,
     buttonLabels: i,
-    stickers: a,
-    event: o,
+    stickers: o,
+    event: a,
     eventProperties: s
   } = e, c = m.default.getCurrentUser(), f = function(e) {
     let {
@@ -143,10 +143,10 @@ function v(e) {
       let i = t.guild_id;
       if (null == r || null == i) returnfalse;
       let l = (0, u.xl)(t),
-        a = p.Z.can(h.Plq.SEND_MESSAGES, t),
-        o = null == (e = d.ZP.getMember(i, r.id)) ? true : e.isPending,
+        o = p.Z.can(h.Plq.SEND_MESSAGES, t),
+        a = null == (e = d.ZP.getMember(i, r.id)) ? true : e.isPending,
         s = n.author.bot;
-      return a && !l && !o && !s
+      return o && !l && !a && !s
     })
   }({
     channel: t,
@@ -160,8 +160,8 @@ function v(e) {
       channel: t,
       message: n,
       buttonLabels: i,
-      stickers: a,
-      event: o,
+      stickers: o,
+      event: a,
       eventProperties: s
     })
   }) : null

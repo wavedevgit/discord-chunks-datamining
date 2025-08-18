@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk741914 = require("./741914.js"),
   Chunk104559 = require("./104559.js"),
@@ -19,13 +19,13 @@ function d(e) {
     variant: l,
     text: d,
     lineClamp: p
-  } = e, m = (0, o.xSt)(), f = i.useMemo(() => null == d ? null : (0, s.Z)(d, true, {
+  } = e, m = (0, a.xSt)(), f = i.useMemo(() => null == d ? null : (0, s.Z)(d, true, {
     allowHeading: null == p,
     allowList: null == p,
     initialHeaderLevel: m
   }), [d, p, m]);
-  return (0, r.jsx)(o.Text, {
-    className: a()(n, u.markup, {
+  return (0, r.jsx)(a.Text, {
+    className: o()(n, u.markup, {
       [c.lineClamp2Plus]: null != p && p > 1,
       [c.lineClamp1]: 1 === p
     }),

@@ -35,13 +35,13 @@ let c = Chunk647438.memo(function(e) {
     return i
   }(e, ["channel", "size", "facepileSizeOverride", "experimentLocation", "isTyping", "status", "className", "animated"]);
   let {
-    isFacepileEnabled: _
-  } = o.Z.useExperiment({
+    isFacepileEnabled: g
+  } = a.Z.useExperiment({
     location: c
   }, {
     autoTrackExposure: true
   });
-  return t.recipients.length >= 2 && _ && null == t.icon ? (0, r.jsx)(s.Z, {
+  return t.recipients.length >= 2 && g && null == t.icon ? (0, r.jsx)(s.Z, {
     "aria-label": f["aria-label"],
     "aria-hidden": f["aria-hidden"],
     className: p,
@@ -54,6 +54,6 @@ let c = Chunk647438.memo(function(e) {
     "aria-label": f["aria-label"],
     className: p,
     size: n,
-    src: (0, a.x)(t, 80, m)
+    src: (0, o.x)(t, 80, m)
   })
 })

@@ -13,8 +13,8 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u(e, t) {
-  if ((0, o.aP)({
-      action: o.Yy.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED,
+  if ((0, a.aP)({
+      action: a.Yy.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED,
       messageId: t,
       channelId: e
     }), !s.Z.canSubmitFpReport(t)) {
@@ -22,7 +22,7 @@ function u(e, t) {
       title: c.intl.string(c.t["iS/eFB"]),
       body: c.intl.string(c.t.YrjcgY),
       confirmText: c.intl.string(c.t.BddRzc)
-    }), a.Z.disableFalsePositiveButton(e, t);
+    }), o.Z.disableFalsePositiveButton(e, t);
     return
   }(0, i.ZDy)(async () => {
     let {

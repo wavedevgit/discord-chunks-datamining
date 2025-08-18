@@ -11,12 +11,12 @@ var Chunk647438 = require("./647438.js"),
   Chunk281320 = require("./281320.js");
 
 function s(e, t) {
-  let n = (0, i.e7)([o.Z], () => o.Z.getPriceTiersForGuildAndType(e, t)),
-    l = (0, i.e7)([o.Z], () => o.Z.getPriceTiersFetchStateForGuildAndType(e, t));
+  let n = (0, i.e7)([a.Z], () => a.Z.getPriceTiersForGuildAndType(e, t)),
+    l = (0, i.e7)([a.Z], () => a.Z.getPriceTiersFetchStateForGuildAndType(e, t));
   return r.useEffect(() => {
-    l === o.M.NOT_FETCHED && (0, a.T)(e, t)
+    l === a.M.NOT_FETCHED && (0, o.T)(e, t)
   }, [e, l, t]), {
-    loading: l === o.M.FETCHING,
+    loading: l === a.M.FETCHING,
     priceTiers: n
   }
 }
@@ -30,10 +30,10 @@ function c(e) {
   r.useEffect(() => {
     t(e)
   }, [t, e]);
-  let a = (0, l.YB)(e);
+  let o = (0, l.YB)(e);
   return {
-    loaded: null != a && !n,
-    subscriptionsSettings: a,
+    loaded: null != o && !n,
+    subscriptionsSettings: o,
     loading: n,
     error: i
   }

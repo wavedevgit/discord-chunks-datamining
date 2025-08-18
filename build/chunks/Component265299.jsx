@@ -1,7 +1,7 @@
 /** Chunk was on 91173 **/
 /** chunk id: 265299, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,19 +17,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk506207 = require("./506207.js");
 
-function g(e) {
+function _(e) {
   let {
     questId: t
   } = e, {
     quests: n,
-    excludedQuests: g,
+    excludedQuests: _,
     isFetchingCurrentQuests: h
   } = (0, s.J2)({
     fetchPolicy: "cache-or-network",
     callerSource: "embed"
-  }), b = i.useMemo(() => n.find(e => e.id === t), [t, n]), E = i.useMemo(() => g.find(e => e.id === t), [t, g]), C = i.useMemo(() => (null == b ? true : b.config.features.includes(l.S.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE)) === true, [null == b ? true : b.config.features]);
-  if (h) return (0, r.jsx)(a.$jN, {
-    className: _.spinner
+  }), b = i.useMemo(() => n.find(e => e.id === t), [t, n]), E = i.useMemo(() => _.find(e => e.id === t), [t, _]), C = i.useMemo(() => (null == b ? true : b.config.features.includes(l.S.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE)) === true, [null == b ? true : b.config.features]);
+  if (h) return (0, r.jsx)(o.$jN, {
+    className: g.spinner
   });
   if (null != E) return (0, r.jsx)(p.W, {
     questId: t
@@ -38,7 +38,7 @@ function g(e) {
     questId: t,
     reason: m.X.NOT_FOUND
   });
-  if ((0, o.HJ)(b)) {
+  if ((0, a.HJ)(b)) {
     let {
       enabled: e
     } = u.S.getCurrentConfig({

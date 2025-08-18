@@ -1,7 +1,7 @@
 /** Chunk was on 91173 **/
 /** chunk id: 56744, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,22 +20,22 @@ let f = Chunk647438.memo(function(e) {
     channel: n,
     referencedMessage: m,
     compact: f = false
-  } = e, _ = m.state === s.Y.LOADED ? m.message : true, g = (0, o.p)(), h = a.d.useExperiment({
+  } = e, g = m.state === s.Y.LOADED ? m.message : true, _ = (0, a.p)(), h = o.d.useExperiment({
     location: "repliedMessage"
-  }).enabled, b = i.useMemo(() => (null == _ ? true : _.content) != null && "" !== _.content ? (0, u.ZP)(_, {
+  }).enabled, b = i.useMemo(() => (null == g ? true : g.content) != null && "" !== g.content ? (0, u.ZP)(g, {
     formatInline: true,
     allowGameMentions: h,
-    shouldFilterKeywords: g
-  }).content : null, [_, g, h]), {
+    shouldFilterKeywords: _
+  }).content : null, [g, _, h]), {
     isReplyAuthorBlocked: E,
     isReplyAuthorIgnored: C
   } = (0, l.cj)([c.Z], () => ({
-    isReplyAuthorBlocked: null != _ && c.Z.isBlockedForMessage(_),
-    isReplyAuthorIgnored: null != _ && c.Z.isIgnoredForMessage(_)
-  }), [_]), v = (0, d.Uj)(_), O = (0, d.Uj)(t);
+    isReplyAuthorBlocked: null != g && c.Z.isBlockedForMessage(g),
+    isReplyAuthorIgnored: null != g && c.Z.isIgnoredForMessage(g)
+  }), [g]), O = (0, d.Uj)(g), v = (0, d.Uj)(t);
   return (0, r.jsx)(p.Z, {
-    repliedAuthor: v,
-    baseAuthor: O,
+    repliedAuthor: O,
+    baseAuthor: v,
     baseMessage: t,
     channel: n,
     referencedMessage: m,
@@ -48,7 +48,7 @@ let f = Chunk647438.memo(function(e) {
   })
 });
 
-function _(e, t, n, i, l) {
+function g(e, t, n, i, l) {
   return e.type !== m.uaV.REPLY || null == n ? null : (0, r.jsx)(f, {
     baseMessage: e,
     channel: t,

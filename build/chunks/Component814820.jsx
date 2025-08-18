@@ -23,21 +23,21 @@ let E = e => {
     let {
       channel: t,
       message: n
-    } = e, l = (0, _.y6)(n.id), c = i.useCallback(() => {
+    } = e, l = (0, g.y6)(n.id), c = i.useCallback(() => {
       (0, f.v)({
-        type: o.Ie.FORM,
+        type: a.Ie.FORM,
         content: "",
         channel: t
       }).then(e => {
         let {
           valid: r
         } = e;
-        r && (0, _.TZ)(t, n, l.id)
+        r && (0, g.TZ)(t, n, l.id)
       })
     }, [t, n, l]);
     return (0, r.jsx)("div", {
       className: b.welcomeCTA,
-      children: (0, r.jsx)(a.zx, {
+      children: (0, r.jsx)(o.zx, {
         icon: {
           type: "sticker",
           asset: l,
@@ -53,18 +53,18 @@ let E = e => {
     let {
       message: t,
       channel: n
-    } = e, i = n.getGuildId(), a = (0, l.e7)([m.default, p.Z, d.Z, u.ZP], () => {
+    } = e, i = n.getGuildId(), o = (0, l.e7)([m.default, p.Z, d.Z, u.ZP], () => {
       var e;
       let r = m.default.getCurrentUser(),
         l = (0, c.xl)(n),
-        a = p.Z.can(g.Plq.SEND_MESSAGES, n),
-        o = null != i && null != r && (null == (e = u.ZP.getMember(i, r.id)) ? true : e.isPending),
+        o = p.Z.can(_.Plq.SEND_MESSAGES, n),
+        a = null != i && null != r && (null == (e = u.ZP.getMember(i, r.id)) ? true : e.isPending),
         s = t.author.bot,
         f = d.Z.getGuild(i),
-        _ = null != f && (f.systemChannelFlags & g.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
-      return a && !l && !o && !s && _
+        g = null != f && (f.systemChannelFlags & _.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
+      return o && !l && !a && !s && g
     });
-    return null != i && a ? (0, r.jsx)(E, {
+    return null != i && o ? (0, r.jsx)(E, {
       message: t,
       channel: n
     }) : null

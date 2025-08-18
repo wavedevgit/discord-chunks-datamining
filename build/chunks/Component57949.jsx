@@ -17,7 +17,7 @@ function u(e) {
     guildProductListing: t,
     guildId: u,
     sourceAnalyticsLocations: d
-  } = e, p = false, m = (0, i.Z)(), f = t.id, _ = () => {
+  } = e, p = false, m = (0, i.Z)(), f = t.id, g = () => {
     p = true
   };
   (0, l.ZDy)(async () => {
@@ -52,7 +52,7 @@ function u(e) {
           guildId: u
         },
         loadId: m,
-        onComplete: _
+        onComplete: g
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -72,7 +72,7 @@ function u(e) {
         is_gift: false,
         sku_id: f,
         location_stack: Array.isArray(d) ? d : [d]
-      }), (0, a.fw)(), (0, o.p)()
+      }), (0, o.fw)(), (0, a.p)()
     },
     onCloseRequest: c.dG4
   })

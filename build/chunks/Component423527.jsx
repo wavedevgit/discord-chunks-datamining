@@ -321,10 +321,7 @@ class eu extends(r = Chunk647438.PureComponent) {
     let {
       invite: e
     } = this.props;
-    return (null == module ? true : module.stage_instance) != null && null != module.guild ? (0, Chunk951288.jsx)(Chunk792766.Z, {
-      stageInstance: module.stage_instance,
-      guild: module.guild
-    }) : (null == module ? true : module.guild_scheduled_event) != null ? (0, Chunk951288.jsx)(Chunk639946.r, {
+    return (null == module ? true : module.guild_scheduled_event) != null ? (0, Chunk951288.jsx)(Chunk639946.r, {
       channel: module.channel,
       guildScheduledEvent: module.guild_scheduled_event
     }) : (0, Chunk951288.jsx)(Chunk588705.Z, {

@@ -21,10 +21,10 @@ function u(e) {
     application: p,
     isEmbeddedApplication: m,
     isFrameApplication: f,
-    isGameLaunchable: _
+    isGameLaunchable: g
   } = e;
   if (d.author.id === u || !(0, s.Z)(t, d, p.id)) returnfalse;
-  let g = (0, a._)(t);
-  return !(!(0, o.n)(g) || (0, c.y)(g) || (0, l.g)(n, t) || (0, i.H)(d)) && (!!m && !!f || !!r.isPlatformEmbedded && !!_)
+  let _ = (0, o._)(t);
+  return !(!(0, a.n)(_) || (0, c.y)(_) || (0, l.g)(n, t) || (0, i.H)(d)) && (!!m && !!f || !!r.isPlatformEmbedded && !!g)
 }
 require("./981631.js")

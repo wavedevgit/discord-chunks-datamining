@@ -19,7 +19,7 @@ function u(e) {
     giftIntentSecondaryAction: u,
     channel: d
   } = e;
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     contentClassName: c.messageContentContainer,
     iconContainerClassName: c.iconContainer,
     iconNode: (0, r.jsx)(i.Dkj, {
@@ -29,7 +29,7 @@ function u(e) {
       giftIntentType: t,
       premiumGiftIntentCardType: l.U.SYSTEM_MESSAGE,
       recipientUser: n,
-      analyticsPage: (0, a.mE)(d),
+      analyticsPage: (0, o.mE)(d),
       analyticsSection: s.jXE.CHANNEL,
       giftIntentSecondaryAction: u
     })

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk831209 = require("./831209.js"),
   Chunk399606 = require("./399606.js"),
@@ -76,7 +76,7 @@ function M(e) {
     channel: F
   } = e, B = i.useRef(null), G = i.useRef(null), H = (0, P.J)(k, U), {
     setPopout: V
-  } = (0, E.Z)(U.id, A.d$), z = (0, b.qo)(U, F, V, true), W = O.QK.useSetting(), Y = (0, S.n)(), [K, X] = i.useState(false), [q, Q] = i.useState((null == H ? true : H.coverImage) == null), J = (0, c.e7)([y.ZP, x.default], () => {
+  } = (0, E.Z)(U.id, A.d$), z = (0, b.qo)(U, F, V, true), W = v.QK.useSetting(), Y = (0, S.n)(), [K, X] = i.useState(false), [q, J] = i.useState((null == H ? true : H.coverImage) == null), Q = (0, c.e7)([y.ZP, x.default], () => {
     var e;
     return y.ZP.isMember(null == H ? true : H.guildId, null == (e = x.default.getCurrentUser()) ? true : e.id)
   }, [H]), $ = (0, c.e7)([y.ZP], () => (null == H ? true : H.authorId) != null ? y.ZP.getMember(H.guildId, H.authorId) : null), ee = (0, m.Z)((null == $ ? true : $.avatarDecoration) != null ? null == $ ? true : $.avatarDecoration : null == H || null == (t = H.user) ? true : t.avatarDecoration), [et, en, er] = i.useMemo(() => {
@@ -84,7 +84,7 @@ function M(e) {
     return [null != (e = null == $ ? true : $.colorString) ? e : "inherit", null != (t = null == $ ? true : $.colorStrings) ? t : null, null == $ ? true : $.colorRoleId]
   }, [$]), ei = (0, C.X7)(null == $ ? true : $.guildId, null != (l = null == H ? true : H.authorId) ? l : true, en), {
     reducedMotion: el
-  } = i.useContext(u.Sfi), [ea, eo] = i.useState(false), es = i.useCallback(() => {
+  } = i.useContext(u.Sfi), [eo, ea] = i.useState(false), es = i.useCallback(() => {
     X(true)
   }, [X]), ec = i.useCallback(() => {
     X(false)
@@ -93,23 +93,23 @@ function M(e) {
       media_post_id: H.threadId,
       channel_id: F.id,
       can_access: H.canAccess,
-      is_member: J
-    }), H.canAccess ? (0, g.Z)(N.Z5c.CHANNEL(H.guildId, H.threadId, H.messageId)) : J ? (0, g.Z)(N.Z5c.CHANNEL(H.guildId, H.parentChannelId)) : await I.Ub(H.guildId, {}, {
+      is_member: Q
+    }), H.canAccess ? (0, _.Z)(N.Z5c.CHANNEL(H.guildId, H.threadId, H.messageId)) : Q ? (0, _.Z)(N.Z5c.CHANNEL(H.guildId, H.parentChannelId)) : await I.Ub(H.guildId, {}, {
       channelId: H.parentChannelId
     }))
-  }, [H, F, J]);
+  }, [H, F, Q]);
   if (null == H) return null;
   let ed = (0, j.NZ)({
       avatarDecoration: ee,
       size: (0, f.y9)(u.EFr.SIZE_40),
-      canAnimate: ea
+      canAnimate: eo
     }),
-    ep = null == (n = H.user) ? true : n.getAvatarURL(H.guildId, 40, ea),
+    ep = null == (n = H.user) ? true : n.getAvatarURL(H.guildId, 40, eo),
     em = () => {
-      el.enabled || eo(e => !e)
+      el.enabled || ea(e => !e)
     },
     ef = H.coverImage,
-    e_ = null != ef && (0, h.d$)(ef);
+    eg = null != ef && (0, h.d$)(ef);
   return (0, r.jsxs)("div", {
     className: Z.postPreviewContainer,
     children: [(0, r.jsxs)("div", {
@@ -119,22 +119,22 @@ function M(e) {
       children: [!q && (true === H.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
         src: R,
         alt: w.intl.string(w.t.rIbh8P),
-        className: a()(Z.thumbnail, {
+        className: o()(Z.thumbnail, {
           [Z.spoiler]: H.shouldSpoiler
         }),
         onContextMenu: z,
-        onError: () => Q(true)
-      }) : (0, r.jsx)(_.Z, {
-        src: !(Y && (W || K)) && e_ ? "".concat(ef, "?format=png") : ef,
+        onError: () => J(true)
+      }) : (0, r.jsx)(g.Z, {
+        src: !(Y && (W || K)) && eg ? "".concat(ef, "?format=png") : ef,
         backgroundSrc: "".concat(ef, "?format=png"),
         alt: w.intl.string(w.t.rIbh8P),
         aspectRatio: 16 / 9,
-        className: a()(Z.thumbnail, {
+        className: o()(Z.thumbnail, {
           [Z.spoiler]: H.shouldSpoiler
         }),
         imageChildClassName: Z.thumbnailImage,
         onContextMenu: z,
-        onError: () => Q(true)
+        onError: () => J(true)
       })), null != H.coverImageOverlayText && (0, r.jsx)(u.P3F, {
         onClick: eu,
         children: (0, r.jsx)("div", {
@@ -163,12 +163,12 @@ function M(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: a()(Z.descriptionHeaderText, Z.descriptionSubtitle),
+          className: o()(Z.descriptionHeaderText, Z.descriptionSubtitle),
           children: H.subtitle
         })]
       }), (0, r.jsxs)("div", {
         className: Z.descriptionFooter,
-        children: [null != H.authorId && null != ep && (0, r.jsx)(v.Z, {
+        children: [null != H.authorId && null != ep && (0, r.jsx)(O.Z, {
           targetElementRef: G,
           userId: H.authorId,
           guildId: H.guildId,
@@ -217,7 +217,7 @@ function M(e) {
                 colorString: et,
                 colorStrings: ei,
                 className: Z.authorName
-              }) : (0, r.jsx)(v.Z, {
+              }) : (0, r.jsx)(O.Z, {
                 targetElementRef: B,
                 userId: H.authorId,
                 guildId: H.guildId,
@@ -233,7 +233,7 @@ function M(e) {
                   colorStrings: ei,
                   className: Z.authorName
                 }))
-              }, (0, o.Z)())
+              }, (0, a.Z)())
             })
           })]
         }), H.canAccess ? (0, r.jsx)(u.zxk, {

@@ -1,13 +1,13 @@
 /** Chunk was on 91173 **/
 /** chunk id: 939170, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => a
+  b: () => o
 }), require("./997841.js");
 var Chunk630388 = require("./630388.js"),
   Chunk790642 = require("./790642.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e) {
+function o(e) {
   var t;
   return (0, r.yE)(null != (t = e.flags) ? t : 0, l.xPJ.IS_CONTENT_INVENTORY_ENTRY) && (0, i.Io)("isContentInventoryFallbackEmbed")
 }

@@ -26,23 +26,23 @@ function C(e) {
   let {
     message: t,
     compact: n
-  } = e, i = (0, a.e7)([u.Z], () => u.Z.getChannel(d.default.castMessageIdAsChannelId(t.id)));
-  return null == i ? null : (0, r.jsx)(v, {
+  } = e, i = (0, o.e7)([u.Z], () => u.Z.getChannel(d.default.castMessageIdAsChannelId(t.id)));
+  return null == i ? null : (0, r.jsx)(O, {
     channel: i,
     compact: n,
     isSystemMessage: (0, c.Z)(t)
   })
 }
 
-function v(e) {
+function O(e) {
   let {
     channel: t,
     compact: i,
     isSystemMessage: c
-  } = e, u = (0, a.e7)([m.Z], () => m.Z.getCount(t.id)), d = function(e) {
+  } = e, u = (0, o.e7)([m.Z], () => m.Z.getCount(t.id)), d = function(e) {
     var t;
-    let n = (0, a.e7)([m.Z], () => m.Z.getMostRecentMessage(e.id)),
-      i = (0, a.e7)([m.Z], () => m.Z.getCount(e.id)),
+    let n = (0, o.e7)([m.Z], () => m.Z.getMostRecentMessage(e.id)),
+      i = (0, o.e7)([m.Z], () => m.Z.getCount(e.id)),
       l = (0, f.Ok)(e);
     return (null == (t = e.threadMetadata) ? true : t.archived) ? b.intl.string(b.t.ZTo4HR) : null == i || 0 === i ? b.intl.string(b.t.HYtNyM) : null == n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("span", {
@@ -52,7 +52,7 @@ function v(e) {
         children: (0, f.Ye)(l)
       })]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(_.Z, {
+      children: [(0, r.jsx)(g.Z, {
         message: n,
         channel: e
       }), (0, r.jsx)("span", {
@@ -67,15 +67,15 @@ function v(e) {
         [E.cozy]: !i,
         [E.systemMessageSpine]: c
       })
-    }), (0, r.jsx)(o.P3F, {
+    }), (0, r.jsx)(a.P3F, {
       onClick: function(e) {
-        e.stopPropagation(), (0, g.ok)(t, e.shiftKey)
+        e.stopPropagation(), (0, _.ok)(t, e.shiftKey)
       },
       onKeyDown: function(e) {
         e.stopPropagation();
         let n = !e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey,
           r = e.shiftKey && !(e.altKey || e.ctrlKey || e.metaKey);
-        (e.which === h.yXg.SPACE || e.which === h.yXg.ENTER) && (e.preventDefault(), (n || r) && (0, g.ok)(t, r))
+        (e.which === h.yXg.SPACE || e.which === h.yXg.ENTER) && (e.preventDefault(), (n || r) && (0, _.ok)(t, r))
       },
       onContextMenu: function(e) {
         (0, s.jW)(e, async () => {
@@ -108,10 +108,10 @@ function v(e) {
       className: l()(E.container, {
         [E.systemMessageContainer]: c
       }),
-      children: (0, r.jsxs)(o.nuw, {
+      children: (0, r.jsxs)(a.nuw, {
         children: [(0, r.jsxs)("div", {
           className: E.topLine,
-          children: [(0, r.jsx)(o.nn4, {
+          children: [(0, r.jsx)(a.nn4, {
             children: b.intl.string(b.t["7Xm5QE"])
           }), (0, r.jsx)("span", {
             className: E.name,
@@ -121,7 +121,7 @@ function v(e) {
             "aria-hidden": !C,
             children: (0, p.WE)(u, t.id)
           })]
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           "aria-hidden": true,
           lineClamp: 1,

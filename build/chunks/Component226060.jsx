@@ -1,7 +1,7 @@
 /** Chunk was on 91173 **/
 /** chunk id: 226060, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,17 +18,17 @@ var Chunk512722 = require("./512722.js"),
   Chunk400916 = require("./400916.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function g(e) {
+function _(e) {
   let {
     guildId: t,
     guildProductListingId: n,
     sourceAnalyticsLocations: i
-  } = e, g = (0, a.e7)([p.Z], () => p.Z.getGuildProduct(n)), h = (0, a.e7)([c.Z], () => c.Z.getGuild(t), [t]), b = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), E = (0, u.n)();
-  return (l()(null != h, "guild cannot be null"), l()(null != g, "guildProductListing cannot be null"), (0, d.SO)(h)) ? (0, r.jsx)(o.ua7, {
-    text: _.intl.string(_.t.sAJr9f),
+  } = e, _ = (0, o.e7)([p.Z], () => p.Z.getGuildProduct(n)), h = (0, o.e7)([c.Z], () => c.Z.getGuild(t), [t]), b = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), E = (0, u.n)();
+  return (l()(null != h, "guild cannot be null"), l()(null != _, "guildProductListing cannot be null"), (0, d.SO)(h)) ? (0, r.jsx)(a.ua7, {
+    text: g.intl.string(g.t.sAJr9f),
     children: e => {
       var t, n;
-      return (0, r.jsx)(o.zxk, (t = function(e) {
+      return (0, r.jsx)(a.zxk, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -47,7 +47,7 @@ function g(e) {
         return e
       }({
         variant: "primary",
-        text: _.intl.string(_.t.xUi3BA)
+        text: g.intl.string(g.t.xUi3BA)
       }, e), n = n = {
         disabled: true
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -61,21 +61,21 @@ function g(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t))
     }
-  }) : g.has_entitlement ? null != g.attachments ? (0, r.jsx)(f.Z, {
+  }) : _.has_entitlement ? null != _.attachments ? (0, r.jsx)(f.Z, {
     guildId: h.id,
-    productId: g.id
-  }) : (0, r.jsx)(o.zxk, {
+    productId: _.id
+  }) : (0, r.jsx)(a.zxk, {
     variant: "secondary",
-    text: _.intl.string(_.t.RcTOGB),
+    text: g.intl.string(g.t.RcTOGB),
     disabled: true
-  }) : (0, r.jsx)(o.gtL, {
-    shineSize: o.gtL.ShineSizes.SMALL,
+  }) : (0, r.jsx)(a.gtL, {
+    shineSize: a.gtL.ShineSizes.SMALL,
     pauseAnimation: b || !E,
     onClick: () => (0, m.z)({
-      guildProductListing: g,
+      guildProductListing: _,
       guildId: h.id,
       sourceAnalyticsLocations: i
     }),
-    children: _.intl.string(_.t.xUi3BA)
+    children: g.intl.string(g.t.xUi3BA)
   })
 }
