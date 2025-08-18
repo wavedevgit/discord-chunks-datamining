@@ -34,12 +34,6 @@ let h = +Chunk70956.Z.Millis.DAY,
     }, {
       regex: "placeid:([0-9]+)",
       key: Chunk817788.SQ.PLACE_ID
-    }, {
-      regex: "userid:([0-9]+)",
-      key: Chunk817788.SQ.USER_ID
-    }, {
-      regex: "sid:([0-9a-zA-Z-]+)",
-      key: Chunk817788.SQ.JOB_ID
     }],
     leaveGameLogPrefix: "[FLog::SingleSurfaceApp] returnToLuaApp:"
   };

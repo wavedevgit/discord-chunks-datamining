@@ -98,17 +98,15 @@ function y(e, t) {
       name: f.EOG[f.GQo.ROBLOX],
       id: u.eB,
       distributor: f.GQo.ROBLOX
-    }) ? (a.id = l.id, a.name = l.name, a.gameName = l.name, a.start = Date.now(), a.lastFocused = Math.floor(Date.now() / 1e3)) : (a.id = u.eB, a.name = f.EOG[f.GQo.ROBLOX], a.start = c), t[u.wF.ROBLOX_TIME_STARTED] = c.toString(), a.sku = null != (i = s.universeId) ? i : true, null != s.placeId && (t[u.wF.PLACE_ID] = s.placeId), null != s.jobId && (t[u.wF.JOB_ID] = s.jobId), null != s.robloxUserId && (t[u.wF.ROBLOX_USER_ID] = s.robloxUserId), a.gameMetadata = Object.keys(t).length > 0 ? t : true
+    }) ? (a.id = l.id, a.name = l.name, a.gameName = l.name, a.start = Date.now(), a.lastFocused = Math.floor(Date.now() / 1e3)) : (a.id = u.eB, a.name = f.EOG[f.GQo.ROBLOX], a.start = c), t[u.wF.ROBLOX_TIME_STARTED] = c.toString(), a.sku = null != (i = s.universeId) ? i : true, null != s.placeId && (t[u.wF.PLACE_ID] = s.placeId), a.gameMetadata = Object.keys(t).length > 0 ? t : true
   }
   return a
 }
 
 function O(e) {
-  return null == e[u.SQ.UNIVERSE_ID] || null == e[u.SQ.PLACE_ID] || null == e[u.SQ.JOB_ID] || null == e[u.SQ.USER_ID] ? null : {
+  return null == e[u.SQ.UNIVERSE_ID] || null == e[u.SQ.PLACE_ID] ? null : {
     universeId: e[u.SQ.UNIVERSE_ID],
-    placeId: e[u.SQ.PLACE_ID],
-    jobId: e[u.SQ.JOB_ID],
-    robloxUserId: e[u.SQ.USER_ID]
+    placeId: e[u.SQ.PLACE_ID]
   }
 }
 
