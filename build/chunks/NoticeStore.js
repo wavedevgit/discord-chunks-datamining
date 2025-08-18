@@ -140,14 +140,14 @@ let eM = {
   ev = new Set([Chunk981631.kVF.NO_INPUT_DETECTED, Chunk981631.kVF.NO_INPUT_DEVICES_DETECTED, Chunk981631.kVF.STREAMER_MODE, Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER, Chunk981631.kVF.SPOTIFY_AUTO_PAUSED, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS, Chunk981631.kVF.BLOCKED_BY_PROXY]),
   eF = {},
   eV = {},
-  ex = Object.freeze({
+  eG = Object.freeze({
     id: null,
     message: null,
     buttonText: null,
     callback: true,
     metadata: null
   }),
-  eG = null;
+  ex = null;
 
 function ew(e) {
   return ej[e] + "-untilAtLeast"
@@ -633,7 +633,7 @@ let eH = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
           currentUser: t,
           selectedGuildId: n
         } = e;
-        return null != n && (0, G.s)(t, n)
+        return null != n && (0, x.s)(t, n)
       }
     }
   };
@@ -641,7 +641,7 @@ let eH = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
 function ez() {
   var e, t, n;
   if (!Chunk38618.Z.isConnected()) returnfalse;
-  eG = null;
+  ex = null;
   let r = Chunk594174.default.getCurrentUser();
   if (null == r) returnfalse;
   let i = Chunk78839.Z.getPremiumSubscription(),
@@ -661,7 +661,7 @@ function ez() {
         premiumSubscription: Chunk913527,
         selectedGuildId: l
       });
-      eG = function(e, t) {
+      ex = function(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -683,15 +683,15 @@ function ez() {
           })
         }
         return e
-      }({}, ex), {
+      }({}, eG), {
         type: require,
         metadata: Chunk442837
       });
       break
-    } if (null != eG) {
-    (null == (n = eG.metadata) ? true : require.sampleRate) != null && null == eV[eG.type] && (eV[eG.type] = Math.random() <= eG.metadata.sampleRate);
-    let e = false === eV[eG.type];
-    (eW(eG.type) || module) && (eG = null)
+    } if (null != ex) {
+    (null == (n = ex.metadata) ? true : require.sampleRate) != null && null == eV[ex.type] && (eV[ex.type] = Math.random() <= ex.metadata.sampleRate);
+    let e = false === eV[ex.type];
+    (eW(ex.type) || module) && (ex = null)
   }
 }
 
@@ -703,10 +703,10 @@ class eX extends(r = Chunk442837.ZP.Store) {
     this.syncWith([Chunk558724.Z, Chunk571474.Z, Chunk427123.Z, Chunk914010.Z, Chunk1844.Z, Chunk431.Z, Chunk881998.Z, Chunk553795.Z, Chunk581883.Z, Chunk487419.Z, Chunk569984.Z, Chunk199902.Z], ez), this.waitFor(Chunk594174.default, Chunk215427.Z, Chunk430824.Z, Chunk271383.ZP, Chunk19780.Z, Chunk131951.Z, Chunk246946.Z, Chunk353926.Z, Chunk914010.Z, Chunk23434.Z, Chunk768419.Z, Chunk594190.ZP, Chunk571474.Z, Chunk922156.Z, Chunk436181.Z, Chunk695103.Z, Chunk292959.Z, Chunk78839.Z, Chunk941128.Z, Chunk427123.Z, Chunk853872.Z, Chunk496675.Z, Chunk1844.Z, Chunk580130.Z, Chunk431.Z, Chunk553795.Z, Chunk41776.Z, Chunk674525.Z, Chunk417626.Z, Chunk569984.Z, Chunk199902.Z)
   }
   hasNotice() {
-    return null != eG && null != eG.type
+    return null != ex && null != ex.type
   }
   getNotice() {
-    return null == Chunk23434.Z.getAction() ? eG : null
+    return null == Chunk23434.Z.getAction() ? ex : null
   }
   isNoticeDismissed(e) {
     return eW(e)
@@ -759,7 +759,7 @@ let eJ = new eX(Chunk570140.Z, {
     let {
       voiceStates: t
     } = e;
-    return ((null == eG ? true : eG.type) === eg.kVF.INVITED_TO_SPEAK || t.some(e => {
+    return ((null == ex ? true : ex.type) === eg.kVF.INVITED_TO_SPEAK || t.some(e => {
       let {
         userId: t
       } = e;
@@ -781,10 +781,10 @@ let eJ = new eX(Chunk570140.Z, {
     return ez()
   },
   NOTICE_SHOW: function(e) {
-    eG = e.notice
+    ex = e.notice
   },
   NOTICE_DISMISS: function(e) {
-    return null != eG && (null == e.id || e.id === eG.id) && (eB(eG.type, e.isTemporary, e.untilAtLeast), ez())
+    return null != ex && (null == e.id || e.id === ex.id) && (eB(ex.type, e.isTemporary, e.untilAtLeast), ez())
   },
   NOTICE_DISABLE: function(e) {
     let {
@@ -793,7 +793,7 @@ let eJ = new eX(Chunk570140.Z, {
     return eB(t), ez()
   },
   LOGOUT: function() {
-    eF = {}, eV = {}, eG = null
+    eF = {}, eV = {}, ex = null
   },
   SUBSCRIPTION_PLANS_FETCH_SUCCESS: ez,
   AUTO_MODERATION_MENTION_RAID_DETECTION: ez,

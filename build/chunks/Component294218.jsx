@@ -75,7 +75,7 @@ let h = Chunk647438.memo(function(e) {
     subscribeToComponentDispatch: v,
     renderThreadAccessory: F,
     trackAnnouncementViews: V = false
-  } = e, x = function(e, t) {
+  } = e, G = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -89,7 +89,7 @@ let h = Chunk647438.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), G = i.type === P.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, w = i.isFirstMessageInForumPost(L), B = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
+  }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), x = i.type === P.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, w = i.isFirstMessageInForumPost(L), B = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
     content: W,
     hasSpoilerEmbeds: H
   } = (0, S.Z)(i, {
@@ -110,9 +110,9 @@ let h = Chunk647438.memo(function(e) {
     compact: l,
     className: o()(h, {
       [D.ephemeral]: (0, I.Pv)(i),
-      [D.disableInteraction]: G
+      [D.disableInteraction]: x
     }),
-    disableInteraction: G,
+    disableInteraction: x,
     childrenRepliedMessage: (0, g.Z)(i, L, Y, K, l),
     childrenExecutedCommand: (0, m.Z)(i, L, l),
     childrenHeader: (0, A.Z)(y(b({}, e), {
@@ -123,7 +123,7 @@ let h = Chunk647438.memo(function(e) {
     childrenAccessories: e.hideAccessories ? true : (0, R.Q)(e, H),
     childrenMessageContent: (0, f.Z)(e, W),
     childrenSystemMessage: (0, C.Z)(y(b({}, e), {
-      disableInteraction: G
+      disableInteraction: x
     })),
     onContextMenu: U,
     onClick: M,
@@ -133,5 +133,5 @@ let h = Chunk647438.memo(function(e) {
     "aria-describedby": ee,
     messageRef: Q,
     author: q
-  }, z, x))
+  }, z, G))
 })

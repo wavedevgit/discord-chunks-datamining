@@ -6,6 +6,7 @@ require.r(module.exports = {
   tier2ApplicationHomeSubheader: "tier2ApplicationHomeSubheader__6df1a",
   applicationHomeCard: "applicationHomeCard__6df1a",
   card: "card__6df1a",
+  withGiftBanner: "withGiftBanner__6df1a",
   tier0: "tier0__6df1a",
   pillMargin: "pillMargin__6df1a",
   wordmark: "wordmark__6df1a",

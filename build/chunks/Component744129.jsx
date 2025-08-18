@@ -115,7 +115,9 @@ function k(e) {
   } = e, v = (0, a.e7)([f.Z], () => f.Z.getPremiumTypeSubscription()), N = (0, a.e7)([j.default], () => j.default.getCurrentUser()), U = (0, E.N)(), k = null == U || null == (n = U.subscription_trial) ? true : n.sku_id, B = (null == v ? true : v.hasActiveTrial) ? null == N ? true : N.premiumType : null, H = (0, y.Ng)(), F = (0, L.t7)(), G = null != k || null != B ? I.C.PREMIUM_TRIAL : null != H || F ? I.C.PREMIUM_DISCOUNT : null, D = (0, d.ap)((0, u.ZP)()), z = (0, O.A1)(F, B, H, U, k);
   return (0, i.jsxs)(C.$, {
     color: "nitro-pink",
-    className: l()(T.card, o),
+    className: l()(T.card, o, {
+      [T.withGiftBanner]: h
+    }),
     children: [(0, i.jsx)(() => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)("img", {
         src: A,
