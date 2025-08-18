@@ -1,6 +1,9 @@
 /** Chunk was on web.js **/
 /** chunk id: 580309, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-module.exports = {
-  badge: "badge_dca3ba"
-}
+var r = {
+  badge: "badge_dca3ba",
+  default: "default_dca3ba",
+  expressive: "expressive_dca3ba"
+};
+require.r(module.exports = r)

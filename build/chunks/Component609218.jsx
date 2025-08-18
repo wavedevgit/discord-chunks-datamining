@@ -106,7 +106,7 @@ function j(e) {
                 loopAt: 5
               })
             }), null != J && (0, r.jsx)(l.C, {
-              badge: {
+              type: {
                 text: J
               }
             }), (0, r.jsx)(d.X6q, {

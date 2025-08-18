@@ -792,6 +792,44 @@ let {
         opacity: .3
       }
     },
+    BADGE_BACKGROUND_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      }
+    },
+    BADGE_BACKGROUND_EXPRESSIVE: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "WHITE",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "WHITE",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "WHITE",
+        opacity: 1
+      }
+    },
     BADGE_BRAND_BG: {
       category: "background",
       [r.DARK]: {
@@ -827,6 +865,44 @@ let {
       },
       [r.DARKER]: {
         raw: "BRAND_560",
+        opacity: 1
+      }
+    },
+    BADGE_TEXT_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "WHITE",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "WHITE",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "WHITE",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "WHITE",
+        opacity: 1
+      }
+    },
+    BADGE_TEXT_EXPRESSIVE: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "NEUTRAL_71",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "WHITE",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_71",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_71",
         opacity: 1
       }
     },

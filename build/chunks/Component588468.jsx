@@ -180,7 +180,7 @@ class Y extends H {
       children: [(0, Chunk951288.jsx)(Chunk965386.z5, {
         children: (0, Chunk951288.jsxs)(Chunk965386.BR, {
           children: [module, " ", null != require && (0, Chunk951288.jsx)(Chunk446673.C, {
-            badge: require
+            type: require
           })]
         })
       }), null != exports ? (0, Chunk951288.jsx)(Chunk965386.dY, {

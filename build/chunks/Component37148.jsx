@@ -147,14 +147,14 @@ function O(e) {
     graphic: n,
     badge: i,
     title: a,
-    titleTextVariant: c,
-    subtitle: h,
-    alignCenter: g = false,
-    leading: O,
-    trailing: v
+    titleTextVariant: l,
+    subtitle: c,
+    alignCenter: h = false,
+    leading: g,
+    trailing: O
   } = e, {
     headingId: I
-  } = (0, _.v)(), T = null != t, S = (0, f.MW)(n), A = g ? S ? b : y : E, N = null != n && (0, r.jsx)("div", {
+  } = (0, _.v)(), T = null != t, S = (0, f.MW)(n), A = h ? S ? b : y : E, N = null != n && (0, r.jsx)("div", {
     className: o()(p.headerGraphic, {
       [p.headerGraphicAnimated]: S
     }),
@@ -165,37 +165,34 @@ function O(e) {
   }), C = (0, r.jsx)(s.X6, {
     className: p.headerTitle,
     id: I,
-    variant: null != c ? c : "heading-lg/semibold",
+    variant: null != l ? l : "heading-lg/semibold",
     color: "text-primary",
     children: a
   }), R = (0, r.jsx)(s.xv, {
     className: p.headerSubtitle,
     variant: "text-md/normal",
     color: "text-secondary",
-    children: h
+    children: c
   }), P = null != n ? N : C, w = (0, r.jsx)("header", {
     className: o()(p.section, p.header, {
-      [p.headerCentered]: g
+      [p.headerCentered]: h
     }),
     children: (0, r.jsxs)(s.Kq, {
       gap: 8,
       children: [(0, r.jsx)("div", {
         className: p.headerLayout,
         children: (0, r.jsx)(A, {
-          leading: O,
-          trailing: v,
+          leading: g,
+          trailing: O,
           hasGradient: T,
           children: (0, r.jsx)("div", {
             className: p.headerMain,
             children: P
           })
         })
-      }), null != i && (0, r.jsx)("div", {
-        className: p.headerBadge,
-        children: (0, r.jsx)(l.C, {
-          badge: i
-        })
-      }), null != n && null != a && C, null != h && R]
+      }), (0, r.jsx)(v, {
+        badge: i
+      }), null != n && null != a && C, null != c && R]
     })
   });
   return T ? (0, r.jsx)(u.$, {
@@ -203,4 +200,16 @@ function O(e) {
     className: p.headerGradient,
     children: w
   }) : w
+}
+
+function v(e) {
+  let {
+    badge: t
+  } = e;
+  if (null == t) return null;
+  let n = (0, l.R)(t);
+  return (0, r.jsx)("div", {
+    className: p.headerBadge,
+    children: (0, r.jsx)(l.C, m({}, n))
+  })
 }

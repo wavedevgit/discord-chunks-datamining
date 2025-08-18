@@ -2,7 +2,7 @@
 /** chunk id: 562618, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => u
+  Y: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -12,26 +12,45 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk254477 = require("./254477.js");
 
-function u(e) {
+function u(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function d(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      u(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function f(e) {
   var t;
   let {
     title: n,
     body: i,
-    badge: u,
-    className: d,
-    textLink: f,
-    hasBottomMargin: _ = false
-  } = e, p = null == (t = null == f ? true : f.external) || t;
+    badge: s,
+    className: u,
+    textLink: d,
+    hasBottomMargin: f = false
+  } = e, p = null == (t = null == d ? true : d.external) || t;
   return (0, r.jsxs)("div", {
-    className: a()(c.header, d, {
-      [c.hasActions]: _
+    className: a()(c.header, u, {
+      [c.hasActions]: f
     }),
     children: [(0, r.jsxs)("div", {
-      children: [null != u && (0, r.jsx)("div", {
-        className: c.badgeContainer,
-        children: (0, r.jsx)(s.C, {
-          badge: u
-        })
+      children: [(0, r.jsx)(_, {
+        badge: s
       }), (0, r.jsx)(l.X6q, {
         variant: "heading-md/semibold",
         className: c.title,
@@ -41,15 +60,27 @@ function u(e) {
       variant: "text-sm/normal",
       className: c.headerBody,
       children: i
-    }), null != f && (0, r.jsx)(o.Anchor, {
-      href: f.link,
+    }), null != d && (0, r.jsx)(o.Anchor, {
+      href: d.link,
       target: p ? "_blank" : true,
       rel: p ? "noopener noreferrer" : true,
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         className: c.footerLink,
-        children: f.text
+        children: d.text
       })
     })]
+  })
+}
+
+function _(e) {
+  let {
+    badge: t
+  } = e;
+  if (null == t) return null;
+  let n = (0, s.R)(t);
+  return (0, r.jsx)("div", {
+    className: c.badgeContainer,
+    children: (0, r.jsx)(s.C, d({}, n))
   })
 }
