@@ -1,7 +1,7 @@
-/** Chunk was on 42521 **/
+/** Chunk was on 21046 **/
 /** chunk id: 303385, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,19 +12,19 @@ var Chunk815061 = require("./815061.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk895758 = require("./895758.js");
-let d = e => {
+let u = e => {
   let {
     quest: t,
     expansionSpring: n,
-    isFullyExpanded: d,
+    isFullyExpanded: u,
     partnerBranding: p,
     useReducedMotion: m
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: u.rewardTileSpacer
+      className: d.rewardTileSpacer
     }), (0, r.jsx)(s.animated.div, {
-      className: u.rewardTileContainer,
+      className: d.rewardTileContainer,
       style: {
         transform: (0, s.to)([n.to({
           range: [0, 1],
@@ -42,11 +42,11 @@ let d = e => {
         quest: t,
         questContent: a.jn.QUEST_BAR_V2,
         location: l.dr.QUESTS_BAR,
-        autoplay: d && !m,
+        autoplay: u && !m,
         sourceQuestContent: a.jn.QUEST_BAR_V2
       })
     }), (0, r.jsxs)(s.animated.div, {
-      className: u.rewardHighlightLogoCTA,
+      className: d.rewardHighlightLogoCTA,
       style: {
         transform: (0, s.to)([n.to({
           range: [0, 1],
@@ -57,10 +57,10 @@ let d = e => {
         })], (e, t) => "translate(".concat(e, "px, ").concat(t, "px)"))
       },
       children: [(0, r.jsx)("div", {
-        className: u.partnerBranding,
+        className: d.partnerBranding,
         children: p
       }), (0, r.jsx)(s.animated.div, {
-        className: u.rewardHighlightCTA,
+        className: d.rewardHighlightCTA,
         style: {
           opacity: n.to({
             range: [0, 1],

@@ -1,4 +1,4 @@
-/** Chunk was on 20166 **/
+/** Chunk was on 89035 **/
 /** chunk id: 804127, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   G: () => c,
@@ -20,7 +20,7 @@ function l(e) {
     rewardCode: l,
     selectedPlatformType: c,
     preview: d
-  } = e, [u, p] = n.useState(false), [_, f] = n.useState(false), m = n.useCallback(async (e, t, r) => {
+  } = e, [u, p] = n.useState(false), [m, f] = n.useState(false), _ = n.useCallback(async (e, t, r) => {
     try {
       f(true), await (0, i.QB)(e, t, r), p(false), f(false)
     } catch (e) {
@@ -35,9 +35,9 @@ function l(e) {
   }, []);
   return n.useEffect(() => {
     var e, n;
-    true === d || null != l || u || t || _ || r || s || (p(false), (null == (e = a.userStatus) ? true : e.claimedAt) == null && null != c ? m(a.id, c, o) : (null == (n = a.userStatus) ? true : n.claimedAt) != null && C(a.id))
-  }, [m, C, u, t, _, r, o, a, s, l, c, d]), {
-    claimCode: m,
+    true === d || null != l || u || t || m || r || s || (p(false), (null == (e = a.userStatus) ? true : e.claimedAt) == null && null != c ? _(a.id, c, o) : (null == (n = a.userStatus) ? true : n.claimedAt) != null && C(a.id))
+  }, [_, C, u, t, m, r, o, a, s, l, c, d]), {
+    claimCode: _,
     fetchCode: C,
     hasError: u,
     setHasError: p
@@ -54,31 +54,31 @@ function c(e) {
     quest: d,
     questContent: u,
     questContentCTA: p = s.jZ.GET_REWARD_CODE,
-    questContentPosition: _,
+    questContentPosition: m,
     requiresPlatformSelection: f,
-    selectedPlatformType: m,
+    selectedPlatformType: _,
     redemptionLink: C,
     sourceQuestContent: h
   } = e, b = (0, s.O5)();
   return n.useCallback(() => {
     var e;
-    f && null != m ? (r(d.id, m, u), b({
+    f && null != _ ? (r(d.id, _, u), b({
       questId: d.id,
       questContent: u,
       questContentCTA: p,
-      questContentPosition: _,
+      questContentPosition: m,
       sourceQuestContent: h
-    })) : l ? (null == (e = d.userStatus) ? true : e.claimedAt) != null ? i(d.id) : null != m && (r(d.id, m, u), b({
+    })) : l ? (null == (e = d.userStatus) ? true : e.claimedAt) != null ? i(d.id) : null != _ && (r(d.id, _, u), b({
       questId: d.id,
       questContent: u,
       questContentCTA: p,
-      questContentPosition: _,
+      questContentPosition: m,
       sourceQuestContent: h
     })) : (null != C && (b({
       questId: d.id,
       questContent: u,
       questContentCTA: s.jZ.REDEEM_REWARD,
-      questContentPosition: _,
+      questContentPosition: m,
       sourceQuestContent: h
     }), (0, a.q)({
       href: C,
@@ -87,10 +87,10 @@ function c(e) {
           questId: d.id,
           questContent: u,
           questContentCTA: s.jZ.VISIT_REDEMPTION_LINK,
-          questContentPosition: _,
+          questContentPosition: m,
           sourceQuestContent: h
         }), (0, o.Z)(C)
       }
     })), c())
-  }, [r, i, l, c, d.id, null == (t = d.userStatus) ? true : t.claimedAt, u, p, _, f, m, b, C, h])
+  }, [r, i, l, c, d.id, null == (t = d.userStatus) ? true : t.claimedAt, u, p, m, f, _, b, C, h])
 }

@@ -1,12 +1,12 @@
 /** Chunk was on 89311 **/
-/** chunk id: 499493, original params: e,t,r (module,exports,require) **/
+/** chunk id: 499493, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk592125 = require("./592125.js"),
@@ -22,43 +22,43 @@ var Chunk951288 = require("./951288.js"),
 let j = e => {
   let {
     entry: t,
-    onClose: r,
-    onReaction: i,
+    onClose: n,
+    onReaction: l,
     onRequestOpen: j,
-    disableActivityProfileLinks: b,
-    customCTA: O,
-    popoutClassname: y,
-    popoutPosition: _ = "right"
-  } = e, I = a.useRef(null), w = (0, o.e7)([u.Z, c.Z], () => c.Z.getChannel(u.Z.getChannelId())), P = (0, o.e7)([d.default], () => d.default.getUser(t.author_id)), {
-    nick: E,
+    disableActivityProfileLinks: O,
+    customCTA: y,
+    popoutClassname: b,
+    popoutPosition: I = "right"
+  } = e, E = i.useRef(null), w = (0, s.e7)([u.Z, c.Z], () => c.Z.getChannel(u.Z.getChannelId())), P = (0, s.e7)([d.default], () => d.default.getUser(t.author_id)), {
+    nick: N,
     avatar: S
-  } = a.useMemo(() => {
+  } = i.useMemo(() => {
     let e = null == P ? true : P.getAvatarURL(null == w ? true : w.guild_id, 48, false);
     return {
       nick: m.ZP.getName(null == w ? true : w.guild_id, null == w ? true : w.id, P),
       avatar: e
     }
   }, [P, w]);
-  return null == P ? null : (0, n.jsx)(s.yRy, {
-    targetElementRef: I,
-    position: _,
+  return null == P ? null : (0, r.jsx)(o.yRy, {
+    targetElementRef: E,
+    position: I,
     renderPopout: e => {
       let {
-        closePopout: a,
-        updatePosition: l
+        closePopout: i,
+        updatePosition: a
       } = e;
-      return (0, n.jsx)("div", {
-        className: y,
-        children: (0, n.jsx)(f.J, {
+      return (0, r.jsx)("div", {
+        className: b,
+        children: (0, r.jsx)(f.J, {
           entry: t,
-          closePopout: a,
-          updatePopoutPosition: l,
+          closePopout: i,
+          updatePopoutPosition: a,
           onReaction: () => {
-            null == i || i(), r(), a()
+            null == l || l(), n(), i()
           },
-          onUserPopoutClosed: () => a(),
+          onUserPopoutClosed: () => i(),
           disableGameProfileLinks: true,
-          disableActivityProfileLinks: b
+          disableActivityProfileLinks: O
         })
       })
     },
@@ -67,76 +67,76 @@ let j = e => {
       null == j || j()
     },
     children: e => {
-      var r, a;
-      return (0, n.jsx)(s.P3F, (r = function(e) {
+      var n, i;
+      return (0, r.jsx)(o.P3F, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-              value: n,
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = n
+            }) : e[t] = r
           })
         }
         return e
       }({
-        innerRef: I
-      }, e), a = a = {
-        className: v.profileEntryCard,
-        children: (0, n.jsx)(s.tEY, {
+        innerRef: E
+      }, e), i = i = {
+        className: h.profileEntryCard,
+        children: (0, r.jsx)(o.tEY, {
           offset: {
             top: 4,
             bottom: 4,
             left: 4,
             right: 4
           },
-          children: (0, n.jsxs)(n.Fragment, {
-            children: [(0, n.jsx)("img", {
-              className: v.avatar,
+          children: (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)("img", {
+              className: h.avatar,
               src: S,
               alt: x.intl.formatToPlainString(x.t.IzVXxc, {
-                userName: E
+                userName: N
               })
-            }), (0, n.jsx)("div", {
-              className: v.playerInfo,
-              children: (0, n.jsxs)("div", {
-                className: l()(h.column, h.gapXs),
-                children: [(0, n.jsx)(s.Text, {
+            }), (0, r.jsx)("div", {
+              className: h.playerInfo,
+              children: (0, r.jsxs)("div", {
+                className: a()(v.column, v.gapXs),
+                children: [(0, r.jsx)(o.Text, {
                   variant: "text-md/medium",
                   color: "text-primary",
                   lineClamp: 1,
-                  children: E
-                }), (0, n.jsx)(p.Gk, {
-                  location: p.Gt.APP_LAUNCHER,
-                  children: g.W.map((e, r) => (0, n.jsx)(e, {
+                  children: N
+                }), (0, r.jsx)(g.Gk, {
+                  location: g.Gt.APP_LAUNCHER,
+                  children: p.W.map((e, n) => (0, r.jsx)(e, {
                     entry: t
-                  }, r))
+                  }, n))
                 })]
               })
-            }), null != O ? O : (0, n.jsx)("div", {
-              className: v.reactions,
-              children: (0, n.jsx)(s.n$P, {
+            }), null != y ? y : (0, r.jsx)("div", {
+              className: h.reactions,
+              children: (0, r.jsx)(o.n$P, {
                 size: "sm"
               })
             })]
           })
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-        var r = Object.keys(e);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
-          r.push.apply(r, n)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
-        return r
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
-      }), r))
+        return n
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+      }), n))
     }
   })
 }

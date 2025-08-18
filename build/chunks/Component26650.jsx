@@ -1,52 +1,52 @@
-/** Chunk was on 37447 **/
+/** Chunk was on 64838 **/
 /** chunk id: 26650, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk377171 = require("./377171.js"),
   Chunk882771 = require("./882771.js");
-let l = Chunk647438.forwardRef(function(e, t) {
+let a = Chunk647438.forwardRef(function(e, t) {
   let {
     isInventory: n,
-    style: s,
-    children: l
+    style: r,
+    children: a
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, l.jsxs)("div", {
     ref: t,
-    className: a.desktopTooltip,
+    className: o.desktopTooltip,
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          l = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), l.forEach(function(t) {
+          var l;
+          l = n[t], t in e ? Object.defineProperty(e, t, {
+            value: l,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = l
         })
       }
       return e
     }({
       marginTop: 8 * !!n
-    }, s),
-    children: [(0, r.jsx)(o.d3s, {
+    }, r),
+    children: [(0, l.jsx)(s.d3s, {
       size: "custom",
-      className: a.infoIcon,
+      className: o.infoIcon,
       height: n ? 16 : 12,
       width: n ? 16 : 12,
       color: n ? i.Z.TEXT_MUTED : i.Z.WHITE
-    }), (0, r.jsx)(o.Text, {
+    }), (0, l.jsx)(s.Text, {
       color: n ? "text-muted" : "always-white",
       variant: n ? "text-xs/normal" : "text-xxs/normal",
-      children: l
+      children: a
     })]
   })
 })

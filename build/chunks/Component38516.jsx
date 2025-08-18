@@ -1,12 +1,12 @@
 /** Chunk was on 89311 **/
-/** chunk id: 38516, original params: e,t,r (module,exports,require) **/
+/** chunk id: 38516, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 }), require("./415506.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk643872 = require("./643872.js"),
   Chunk481060 = require("./481060.js"),
   Chunk810568 = require("./810568.js"),
@@ -18,28 +18,28 @@ let m = [Chunk643872.p.OFFICIAL, Chunk643872.p.TWITTER, Chunk643872.p.YOUTUBE];
 function f(e) {
   let {
     website: t,
-    trackClick: r
+    trackClick: n
   } = e, {
-    action: a,
-    icon: i,
+    action: i,
+    icon: l,
     title: u
   } = function(e) {
     switch (e.category) {
-      case l.p.OFFICIAL:
+      case a.p.OFFICIAL:
         return {
-          icon: (0, n.jsx)(o.enf, {
+          icon: (0, r.jsx)(s.enf, {
             colorClass: d.linkIcon
-          }), action: s.as.WebsiteLink, title: c.intl.string(c.t.fOUKvr)
+          }), action: o.as.WebsiteLink, title: c.intl.string(c.t.fOUKvr)
         };
-      case l.p.TWITTER:
+      case a.p.TWITTER:
         return {
-          icon: (0, n.jsx)(o.TAi, {
+          icon: (0, r.jsx)(s.TAi, {
             colorClass: d.linkIcon
-          }), action: s.as.XLink, title: c.intl.string(c.t["INic4+"])
+          }), action: o.as.XLink, title: c.intl.string(c.t["INic4+"])
         };
-      case l.p.YOUTUBE:
+      case a.p.YOUTUBE:
         return {
-          action: s.as.YouTubeLink, icon: (0, n.jsx)(o.$5w, {
+          action: o.as.YouTubeLink, icon: (0, r.jsx)(s.$5w, {
             colorClass: d.linkIcon
           }), title: c.intl.string(c.t.lNmxbG)
         };
@@ -47,91 +47,91 @@ function f(e) {
         throw Error("Unknown IGDB website category")
     }
   }(t);
-  return (0, n.jsx)(o.ua7, {
+  return (0, r.jsx)(s.ua7, {
     text: t.url,
     tooltipClassName: d.tooltip,
     tooltipContentClassName: d.tooltipContent,
     children: e => {
-      var l, s, {
+      var a, o, {
           onClick: c
         } = e,
         m = function(e, t) {
           if (null == e) return {};
-          var r, n, a = function(e, t) {
+          var n, r, i = function(e, t) {
             if (null == e) return {};
-            var r, n, a = {},
-              i = Object.keys(e);
-            for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
-            return a
+            var n, r, i = {},
+              l = Object.keys(e);
+            for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+            return i
           }(e, t);
           if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+            var l = Object.getOwnPropertySymbols(e);
+            for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
           }
-          return a
+          return i
         }(e, ["onClick"]);
-      return (0, n.jsx)(o.eee, (l = function(e) {
+      return (0, r.jsx)(s.eee, (a = function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-              value: n,
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = n
+            }) : e[t] = r
           })
         }
         return e
-      }({}, m), s = s = {
+      }({}, m), o = o = {
         className: d.linkAnchor,
         title: u,
         href: t.url,
         onClick: () => {
-          r(a), null == c || c()
+          n(i), null == c || c()
         },
         target: "_blank",
-        children: i
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
-        var r = Object.keys(e);
+        children: l
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
-          r.push.apply(r, n)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
-        return r
-      })(Object(s)).forEach(function(e) {
-        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
-      }), l))
+        return n
+      })(Object(o)).forEach(function(e) {
+        Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(o, e))
+      }), a))
     }
   })
 }
-let g = function(e) {
+let p = function(e) {
   let {
     detectedGame: t,
-    trackClick: r
+    trackClick: n
   } = e;
   if (null == t.websites) return null;
-  let a = t.websites.filter(e => {
+  let i = t.websites.filter(e => {
     let {
       category: t
     } = e;
     return m.includes(t)
   }).sort((e, t) => e.category - t.category);
-  return 0 === a.length ? null : (0, n.jsxs)("div", {
-    children: [(0, n.jsx)(o.X6q, {
+  return 0 === i.length ? null : (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(s.X6q, {
       className: u.sectionHeader,
       variant: "text-xs/semibold",
       color: "header-secondary",
       children: c.intl.string(c.t.Oj3o19)
-    }), (0, n.jsx)("div", {
-      className: i()(u.row, u.gapMd),
-      children: a.map(e => (0, n.jsx)(f, {
+    }), (0, r.jsx)("div", {
+      className: l()(u.row, u.gapMd),
+      children: i.map(e => (0, r.jsx)(f, {
         website: e,
-        trackClick: r
+        trackClick: n
       }, e.url))
     })]
   })

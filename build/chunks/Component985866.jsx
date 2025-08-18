@@ -1,4 +1,4 @@
-/** Chunk was on 20166 **/
+/** Chunk was on 89035 **/
 /** chunk id: 985866, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   default: () => U
@@ -53,9 +53,9 @@ function V(e) {
   } = e, l = (0, d.wj)((0, h.ZP)()), u = (0, I.h)({
     location: L.dr.REWARD_CODE_MODAL,
     questConfig: r.config
-  }), _ = (0, p.dQu)(c.Z.colors.INTERACTIVE_NORMAL).hex(), f = u ? _ : r.config.colors.primary, m = {
+  }), m = (0, p.dQu)(c.Z.colors.INTERACTIVE_NORMAL).hex(), f = u ? m : r.config.colors.primary, _ = {
     border: "1px solid ".concat(f),
-    background: "\n    linear-gradient(\n      150deg,\n      transparent 68%,\n      ".concat((0, x.aD)(f, .2), " 85%,\n      transparent 100%\n    ),\n    linear-gradient(\n      150deg,\n      transparent 13%,\n      ").concat((0, x.aD)(f, .6), " 44%,\n      transparent 76%\n    ),\n    ").concat(l ? "var(--black)" : "var(--white)", "\n    ")
+    background: "\n    linear-gradient(\n      150deg,\n      transparent 68%,\n      ".concat((0, v.aD)(f, .2), " 85%,\n      transparent 100%\n    ),\n    linear-gradient(\n      150deg,\n      transparent 13%,\n      ").concat((0, v.aD)(f, .6), " 44%,\n      transparent 76%\n    ),\n    ").concat(l ? "var(--black)" : "var(--white)", "\n    ")
   }, C = (0, A.B)(r, false), b = (null == (t = r.userStatus) ? true : t.claimedAt) != null || null != o, {
     header: g,
     subHeader: y
@@ -68,35 +68,35 @@ function V(e) {
     } = e, l = (null == (t = a.userStatus) ? true : t.claimedAt) != null || null != s, c = i ? "" : M.intl.string(M.t.UUKbio), d = i ? (0, S.o9)({
       quest: a,
       idx: null != (n = null == s ? true : s.tier) ? n : null == (r = a.userStatus) ? true : r.claimedTier
-    }) : null, u = k.r.build(a.config), p = null != d && null != (o = d.messages.name) ? o : u.defaultRewardName, _ = i ? M.intl.string(M.t.cfY4PD) : u.defaultRewardName;
+    }) : null, u = k.r.build(a.config), p = null != d && null != (o = d.messages.name) ? o : u.defaultRewardName, m = i ? M.intl.string(M.t.cfY4PD) : u.defaultRewardName;
     return {
       subHeader: l ? M.intl.string(M.t.YpswQk) : c,
-      header: l ? p : _
+      header: l ? p : m
     }
   }({
     quest: r,
     rewardCode: o,
     hasTieredRewardCodes: a
   }), {
-    hasError: w,
-    isLoading: O
-  } = (0, D.d7)();
+    hasError: O,
+    isLoading: w
+  } = (0, B.d7)();
   return (0, n.jsxs)("div", {
-    style: m,
+    style: _,
     className: W.rewardTile,
     children: [(0, n.jsxs)("div", {
       className: W.rewardTileWrapper,
       style: {
-        "--custom-reward-tile-border-color": u ? _ : r.config.colors.primary
+        "--custom-reward-tile-border-color": u ? m : r.config.colors.primary
       },
-      children: [O && !w && (0, n.jsx)(p.$jN, {
+      children: [w && !O && (0, n.jsx)(p.$jN, {
         className: W.rewardTileAssetStatusIcon,
         type: p.RAz.SPINNING_CIRCLE
-      }), w && (0, n.jsx)(p.fFY, {
+      }), O && (0, n.jsx)(p.fFY, {
         className: W.rewardTileAssetStatusIcon
       }), (0, n.jsx)(q.Z, {
         className: s()(W.rewardTileAsset, {
-          [W.rewardTileAssetLoading]: O || w
+          [W.rewardTileAssetLoading]: w || O
         }),
         quest: r,
         questContent: C.trackingCtx.content,
@@ -126,7 +126,7 @@ function V(e) {
 
 function U(e) {
   let t = (0, l.e7)([T.Z], () => T.Z.getQuest(e.questId));
-  return (null == t && null != e.previewQuest && (t = e.previewQuest), null != t) ? (0, n.jsx)(B.A, {
+  return (null == t && null != e.previewQuest && (t = e.previewQuest), null != t) ? (0, n.jsx)(N.A, {
     questOrQuests: t,
     questContent: R.jn.REWARD_MODAL,
     sourceQuestContent: e.sourceQuestContent,
@@ -176,12 +176,12 @@ function z(e) {
     questContent: c,
     questContentPosition: d,
     impressionRef: h,
-    preview: x,
+    preview: v,
     sourceQuestContent: I
   } = e, A = (0, f.Z)(() => {
     var e;
     return (null == (e = s.userStatus) ? true : e.claimedAt) != null
-  }), B = k.r.build(s.config).rewardPlatforms, q = B.length > 1, [U, z] = o.useState(q ? null : B[0]), F = o.useRef(new i.qA), Q = o.useRef(null), [G, X] = o.useState(null), H = (0, l.e7)([b.Z], () => b.Z.useReducedMotion), $ = (0, l.e7)([O.Z], () => O.Z.hidePersonalInformation), {
+  }), N = k.r.build(s.config).rewardPlatforms, q = N.length > 1, [U, z] = o.useState(q ? null : N[0]), Q = o.useRef(new i.qA), X = o.useRef(null), [G, F] = o.useState(null), H = (0, l.e7)([b.Z], () => b.Z.useReducedMotion), $ = (0, l.e7)([w.Z], () => w.Z.hidePersonalInformation), {
     questStoreRewardCode: J,
     isFetchingRewardCode: Y,
     isClaimingReward: K
@@ -189,9 +189,9 @@ function z(e) {
     questStoreRewardCode: T.Z.getRewardCode(s.id),
     isFetchingRewardCode: T.Z.isFetchingRewardCode(s.id),
     isClaimingReward: T.Z.isClaimingReward(s.id)
-  })), ee = (0, j.O5)(), et = (0, S.oo)({
+  })), ee = (0, x.O5)(), et = (0, S.oo)({
     quest: s
-  }), er = true === x ? (0, N.b)(s) : J, en = q && (null == (t = s.userStatus) ? true : t.claimedAt) == null && null == er, {
+  }), er = true === v ? (0, D.b)(s) : J, en = q && (null == (t = s.userStatus) ? true : t.claimedAt) == null && null == er, {
     claimCode: eo,
     fetchCode: ea,
     hasError: es,
@@ -204,12 +204,12 @@ function z(e) {
     requiresPlatformSelection: en,
     rewardCode: er,
     selectedPlatformType: U,
-    preview: x
+    preview: v
   }), el = es && !K && !Y;
   ! function(e) {
     let t = (0, C.Z)(e),
       r = g.default.useIsCaptchaModalOpen(),
-      n = (0, m.Z)(r),
+      n = (0, _.Z)(r),
       a = !!(!r && n);
     o.useEffect(() => {
       a && t()
@@ -251,7 +251,7 @@ function z(e) {
         variant: "text-sm/normal",
         color: "text-default",
         className: W.bodyCopy,
-        children: w.Z.parse(l, false, {
+        children: O.Z.parse(l, false, {
           allowLinks: true
         })
       }) : null
@@ -262,12 +262,12 @@ function z(e) {
       rewardCode: er,
       hasTieredRewardCodes: et
     }),
-    ep = o.useMemo(() => B.map(e => ({
+    ep = o.useMemo(() => N.map(e => ({
       label: (0, S.t2)(e),
       value: e
-    })), [B]),
-    e_ = null;
-  en && (e_ = (0, n.jsxs)(p.xJW, {
+    })), [N]),
+    em = null;
+  en && (em = (0, n.jsxs)(p.xJW, {
     title: M.intl.string(M.t.vVcTtL),
     children: [(0, n.jsx)(p.PhF, {
       placeholder: M.intl.string(M.t.EMrUHR),
@@ -314,20 +314,20 @@ function z(e) {
     }) : null]
   }));
   let ef = null == er && (Y || K),
-    em = ef && !en ? (0, n.jsx)(p.$jN, {}) : null,
+    e_ = ef && !en ? (0, n.jsx)(p.$jN, {}) : null,
     eC = null;
   null != er ? eC = (0, n.jsx)(p.xJW, {
     title: M.intl.string(M.t.srzsU1),
-    children: (0, n.jsx)(_.Z, {
+    children: (0, n.jsx)(m.Z, {
       value: $ ? M.intl.string(M.t["0n2u0t"]) : er.code,
       delay: 1e3,
       buttonColor: u.zx.Colors.BRAND,
       onCopy: () => {
-        $ && (0, v.JG)(er.code), ee({
+        $ && (0, j.JG)(er.code), ee({
           questId: s.id,
           questContent: c,
           questContentPosition: d,
-          questContentCTA: j.jZ.COPY_REWARD_CODE,
+          questContentCTA: x.jZ.COPY_REWARD_CODE,
           sourceQuestContent: I
         })
       }
@@ -361,21 +361,21 @@ function z(e) {
       sourceQuestContent: I
     }),
     ey = en && K,
-    ew = !ey && (en && null == U || ef),
-    eO = null != eb && "" !== eb,
-    ev = M.intl.string(M.t["23SS+/"]);
-  en ? ev = M.intl.string(M.t.SLZMi4) : !en && el ? ev = M.intl.string(M.t.gNJHHh) : eO && (ev = M.intl.string(M.t["+zx47e"]));
-  let ex = !H && null != er && !A && !el,
-    ej = null != em && et,
+    eO = !ey && (en && null == U || ef),
+    ew = null != eb && "" !== eb,
+    ej = M.intl.string(M.t["23SS+/"]);
+  en ? ej = M.intl.string(M.t.SLZMi4) : !en && el ? ej = M.intl.string(M.t.gNJHHh) : ew && (ej = M.intl.string(M.t["+zx47e"]));
+  let ev = !H && null != er && !A && !el,
+    ex = null != e_ && et,
     eS = (0, E.Gd)(s.id);
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(i.O_, {
-      ref: X,
+      ref: F,
       className: W.confettiCanvas,
-      environment: F.current
+      environment: Q.current
     }), (0, n.jsx)("div", {
       ref: e => {
-        Q.current = e, h.current = e
+        X.current = e, h.current = e
       },
       children: (0, n.jsxs)(p.Y0X, {
         transitionState: r,
@@ -386,7 +386,7 @@ function z(e) {
           children: [(0, n.jsx)(p.olH, {
             className: W.closeButton,
             onClick: () => a()
-          }), !ej && (0, n.jsx)(D.p, {
+          }), !ex && (0, n.jsx)(B.p, {
             source: L.dr.REWARD_CODE_MODAL,
             questId: s.id,
             children: (0, n.jsx)(V, {
@@ -397,7 +397,7 @@ function z(e) {
             })
           }), (0, n.jsxs)("div", {
             className: W.modalContent,
-            children: [ed, eu, e_, em, eC, null != s.config.cosponsorMetadata && null != eS && (0, n.jsxs)("div", {
+            children: [ed, eu, em, e_, eC, null != s.config.cosponsorMetadata && null != eS && (0, n.jsxs)("div", {
               className: W.cosponsorFooter,
               children: [(0, n.jsx)("img", {
                 className: W.cosponsorLogotype,
@@ -414,7 +414,7 @@ function z(e) {
                 variant: "text-md/normal",
                 color: "text-default",
                 className: W.cosponsorRedemptionInstructions,
-                children: w.Z.parse(s.config.cosponsorMetadata.redemptionInstructions, false, {
+                children: O.Z.parse(s.config.cosponsorMetadata.redemptionInstructions, false, {
                   allowLinks: true
                 })
               })]
@@ -423,15 +423,15 @@ function z(e) {
         }), (0, n.jsx)(p.mzw, {
           children: (0, n.jsx)(p.zxk, {
             variant: "primary",
-            text: ev,
+            text: ej,
             onClick: eg,
             loading: ey,
-            disabled: ew
+            disabled: eO
           })
         })]
       })
-    }), ex && (0, n.jsx)(y.Z, {
-      confettiTarget: Q.current,
+    }), ev && (0, n.jsx)(y.Z, {
+      confettiTarget: X.current,
       confettiCanvas: G,
       sprites: Z.CA,
       colors: Z.Br

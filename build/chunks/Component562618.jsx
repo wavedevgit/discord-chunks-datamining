@@ -43,7 +43,7 @@ function f(e) {
     className: u,
     textLink: d,
     hasBottomMargin: f = false
-  } = e, p = null == (t = null == d ? true : d.external) || t;
+  } = e, h = null == (t = null == d ? true : d.external) || t;
   return (0, r.jsxs)("div", {
     className: a()(c.header, u, {
       [c.hasActions]: f
@@ -56,14 +56,12 @@ function f(e) {
         className: c.title,
         children: n
       })]
-    }), null != i && "" !== i && (0, r.jsx)(l.Text, {
-      variant: "text-sm/normal",
-      className: c.headerBody,
-      children: i
+    }), (0, r.jsx)(p, {
+      body: i
     }), null != d && (0, r.jsx)(o.Anchor, {
       href: d.link,
-      target: p ? "_blank" : true,
-      rel: p ? "noopener noreferrer" : true,
+      target: h ? "_blank" : true,
+      rel: h ? "noopener noreferrer" : true,
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         className: c.footerLink,
@@ -82,5 +80,21 @@ function _(e) {
   return (0, r.jsx)("div", {
     className: c.badgeContainer,
     children: (0, r.jsx)(s.C, d({}, n))
+  })
+}
+
+function p(e) {
+  let {
+    body: t
+  } = e;
+  if (null == t) return null;
+  let n = Array.isArray(t) ? t : [t];
+  return 0 === n.length || n.every(e => null == e || "" === e) ? null : (0, r.jsx)("div", {
+    className: c.headerBody,
+    children: n.map((e, t) => (0, r.jsx)(l.Text, {
+      variant: "text-sm/normal",
+      color: "none",
+      children: e
+    }, t))
   })
 }

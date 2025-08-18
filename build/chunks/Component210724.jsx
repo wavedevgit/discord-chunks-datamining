@@ -1,4 +1,4 @@
-/** Chunk was on 42521 **/
+/** Chunk was on 21046 **/
 /** chunk id: 210724, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => k,
@@ -63,25 +63,25 @@ function k(e) {
   } = (0, S.qN)({
     quest: o,
     location: A.dr.QUESTS_BAR
-  }), D = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), V = (0, l.e7)([p.Z], () => p.Z.hasLayers()), M = s.useRef(null), L = s.useMemo(() => (0, f.q8)(o), [o]), W = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, Z = (0, u.Z)(W), U = (null == (n = o.userStatus) ? true : n.completedAt) != null, H = (0, u.Z)(U), {
+  }), D = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), V = (0, l.e7)([p.Z], () => p.Z.hasLayers()), M = s.useRef(null), L = s.useMemo(() => (0, g.q8)(o), [o]), W = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, Z = (0, d.Z)(W), U = (null == (n = o.userStatus) ? true : n.completedAt) != null, H = (0, d.Z)(U), {
     hasError: F,
     isLoading: z
   } = (0, O.d7)(), X = s.useContext(P.T) || k && I && !z && !q, K = s.useRef(X), Y = (0, w.B)(o, X && !F), G = s.useRef(false), J = s.useRef(false), $ = j.H.useConfig({
     location: A.dr.QUESTS_BAR
-  }).enabled && U, [ee, et] = s.useState(false), [en, er] = s.useState(false), [es, eo] = s.useState(true), [ea, ei] = s.useState(true), [el, ec] = s.useState(Y.preEnrollmentExpandedHeight), eu = s.useRef(null), ed = s.useCallback(e => {
+  }).enabled && U, [ee, et] = s.useState(false), [en, er] = s.useState(false), [es, eo] = s.useState(true), [ea, ei] = s.useState(true), [el, ec] = s.useState(Y.preEnrollmentExpandedHeight), ed = s.useRef(null), eu = s.useCallback(e => {
     $ || (eo(false), er(e))
   }, [$]), ep = s.useCallback(() => {
     var e, t;
-    ec((null != (t = null == (e = eu.current) ? true : e.offsetHeight) ? t : 84) + 2 * Y.paddingVertical)
+    ec((null != (t = null == (e = ed.current) ? true : e.offsetHeight) ? t : 84) + 2 * Y.paddingVertical)
   }, [Y.paddingVertical]), em = s.useCallback(() => {
-    ep(), ed(true)
-  }, [ep, ed]), eg = s.useCallback(() => {
+    ep(), eu(true)
+  }, [ep, eu]), ef = s.useCallback(() => {
     et(true)
-  }, []), ef = s.useCallback(() => {
-    et(false), J.current || U || ed(false)
-  }, [U, ed]), ex = s.useCallback(() => {
-    et(false), U || ed(false), J.current = false
-  }, [U, ed]), eh = s.useCallback(function() {
+  }, []), eg = s.useCallback(() => {
+    et(false), J.current || U || eu(false)
+  }, [U, eu]), ex = s.useCallback(() => {
+    et(false), U || eu(false), J.current = false
+  }, [U, eu]), eh = s.useCallback(function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
     if (en) return;
     let {
@@ -91,8 +91,8 @@ function k(e) {
   }, [em, en]), eb = s.useCallback(() => {
     eh()
   }, [eh]), e_ = s.useCallback(() => {
-    window.clearTimeout(G.current), Y.canCollapseOnBlur && !ee && (J.current || ed(false))
-  }, [ee, Y, ed]), ej = s.useCallback(() => {
+    window.clearTimeout(G.current), Y.canCollapseOnBlur && !ee && (J.current || eu(false))
+  }, [ee, Y, eu]), ej = s.useCallback(() => {
     var e;
     (0, m.dA)({
       questId: o.id,
@@ -125,8 +125,8 @@ function k(e) {
   }, [em, U, Y.shouldExpandOnQuestComplete]), s.useLayoutEffect(() => {
     W && !Z && J.current && em()
   }, [em, W, Z]), s.useLayoutEffect(() => {
-    U || !W || Z || J.current || ed(false)
-  }, [W, U, Z, ed]), s.useLayoutEffect(() => {
+    U || !W || Z || J.current || eu(false)
+  }, [W, U, Z, eu]), s.useLayoutEffect(() => {
     X !== K.current && ei(false), K.current = X
   }, [X]);
   let eC = W ? A.XZ : A.R4,
@@ -214,7 +214,7 @@ function k(e) {
       })
     }
   }, [X, ea, z, o.id, Q, Y.trackingCtx.content]), s.useEffect(() => {
-    (!I || q) && g.Z.clearTracking(), X && ea && !z && !F && k && g.Z.stopTracking(o.id)
+    (!I || q) && f.Z.clearTracking(), X && ea && !z && !F && k && f.Z.stopTracking(o.id)
   }, [I, q, X, ea, z, F, k, o.id]);
   let eS = (0, _.h)({
     location: A.dr.QUESTS_BAR,
@@ -265,12 +265,12 @@ function k(e) {
               springConfig: eC,
               isExpanded: en,
               children: (0, r.jsx)(n, {
-                expandedContentRef: eu,
+                expandedContentRef: ed,
                 expansionSpring: ey,
                 isExpanded: en,
                 isExpansionAnimationComplete: es,
-                onCtxMenuClosed: ef,
-                onCtxMenuOpened: eg,
+                onCtxMenuClosed: eg,
+                onCtxMenuOpened: ef,
                 onCtxMenuSelection: ex,
                 quest: o,
                 useReducedMotion: D,

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
@@ -16,22 +16,22 @@ let d = function(e) {
   let {
     className: t,
     color: n = "header-primary",
-    textOpacity: s = .9
+    textOpacity: o = .9
   } = e, d = (0, l.Fg)(), m = (0, i.wj)(d);
-  return (0, r.jsxs)(a.Text, {
+  return (0, s.jsxs)(a.Text, {
     variant: "text-xxs/medium",
     color: n,
-    className: o()(u.promotedTag, t),
-    children: [(0, r.jsx)("span", {
-      className: u.promotedTagBackground,
+    className: r()(c.promotedTag, t),
+    children: [(0, s.jsx)("span", {
+      className: c.promotedTagBackground,
       style: {
         backgroundColor: "rgba(0, 0, 0, ".concat(m ? .2 : .08, ")")
       }
-    }), (0, r.jsx)("span", {
+    }), (0, s.jsx)("span", {
       style: {
-        opacity: s
+        opacity: o
       },
-      children: c.intl.string(c.t.o6FLcH)
+      children: u.intl.string(u.t.o6FLcH)
     })]
   })
 }

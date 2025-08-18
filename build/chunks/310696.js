@@ -1,4 +1,4 @@
-/** Chunk was on 66866 **/
+/** Chunk was on 91173 **/
 /** chunk id: 310696, original params: e,t,n (module,exports,require) **/
 module.exports = {
   outerContainer: "outerContainer__092f9",
@@ -23,6 +23,5 @@ module.exports = {
   questInfo: "questInfo__092f9",
   heading: "heading__092f9",
   iconsContainer: "iconsContainer__092f9",
-  iconWrapper: "iconWrapper__092f9",
-  shareButton: "shareButton__092f9"
+  iconWrapper: "iconWrapper__092f9"
 }

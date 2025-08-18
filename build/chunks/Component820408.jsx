@@ -1,7 +1,7 @@
-/** Chunk was on 5863 **/
+/** Chunk was on 15076 **/
 /** chunk id: 820408, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,20 +20,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk586121 = require("./586121.js");
 
-function S(e) {
+function N(e) {
   let {
     onClose: t
   } = e, n = (0, o.O)(), {
-    analyticsLocations: S
-  } = (0, c.ZP)(), [N, f] = s.useState(false), b = s.useCallback(e => {
-    !N && e && (g.default.track(p.rMx.PREMIUM_UPSELL_VIEWED, {
+    analyticsLocations: N
+  } = (0, c.ZP)(), [S, f] = s.useState(false), b = s.useCallback(e => {
+    !S && e && (g.default.track(p.rMx.PREMIUM_UPSELL_VIEWED, {
       type: x.cd.CUSTOM_NOTIFICATION_SOUNDS_SETTINGS_UPSELL,
       location: n.location,
-      location_stack: S
+      location_stack: N
     }), f(true))
-  }, [n.location, S, N]), C = (0, d.O)(b, .8, true);
+  }, [n.location, N, S]), O = (0, d.O)(b, .8, true);
   return (0, i.jsxs)("div", {
-    ref: C,
+    ref: O,
     className: j.container,
     children: [(0, i.jsx)(r.SrA, {
       size: "md",

@@ -1070,7 +1070,7 @@ function eh() {
         align: "center"
       },
       title: "Header",
-      body: "Body",
+      body: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Only with Nitro"],
       size: "sm",
       asset: (0, Chunk951288.jsx)("img", {
         src: Chunk315416.Z,

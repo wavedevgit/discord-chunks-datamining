@@ -1,7 +1,7 @@
-/** Chunk was on 72375 **/
-/** chunk id: 333848, original params: e,n,i (module,exports,require) **/
+/** Chunk was on 91173 **/
+/** chunk id: 333848, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => m
 }), require("./415506.js");
 var Chunk990547 = require("./990547.js"),
   Chunk283693 = require("./283693.js"),
@@ -13,74 +13,74 @@ var Chunk990547 = require("./990547.js"),
   Chunk87051 = require("./87051.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js");
-let u = {
+let m = {
   createChannel(e) {
     let {
-      guildId: n,
-      type: i,
-      name: u,
-      permissionOverwrites: h = [],
-      bitrate: b,
-      userLimit: E,
-      parentId: C,
-      skuId: v,
-      branchId: g
+      guildId: t,
+      type: n,
+      name: m,
+      permissionOverwrites: f = [],
+      bitrate: _,
+      userLimit: g,
+      parentId: h,
+      skuId: b,
+      branchId: E
     } = e;
-    a.Z.dispatch({
+    l.Z.dispatch({
       type: "CREATE_CHANNEL_MODAL_SUBMIT",
-      guildId: n,
-      channelType: i
+      guildId: t,
+      channelType: n
     });
-    let A = {
-      type: i,
-      name: u,
-      permission_overwrites: h
+    let C = {
+      type: n,
+      name: m,
+      permission_overwrites: f
     };
-    if (null != b && b !== p.epw && (A.bitrate = b), null != E && E > 0 && (A.user_limit = E), null != C && (A.parent_id = C), i === p.d4z.GUILD_STORE) {
-      if (null == v) throw Error("Unexpected missing SKU");
-      A.sku_id = v, A.branch_id = g
+    if (null != _ && _ !== d.epw && (C.bitrate = _), null != g && g > 0 && (C.user_limit = g), null != h && (C.parent_id = h), n === d.d4z.GUILD_STORE) {
+      if (null == b) throw Error("Unexpected missing SKU");
+      C.sku_id = b, C.branch_id = E
     }
     return c.Z.post({
-      url: p.ANM.GUILD_CHANNELS(n),
-      body: A,
+      url: d.ANM.GUILD_CHANNELS(t),
+      body: C,
       oldFormErrors: true,
       trackedActionData: {
         event: r.NetworkActionNames.CHANNEL_CREATE,
         properties: e => {
-          var n, i;
-          return (0, t.iG)({
-            is_private: h.length > 0,
-            channel_id: null == e || null == (n = e.body) ? true : n.id,
-            channel_type: null == e || null == (i = e.body) ? true : i.type
+          var t, n;
+          return (0, i.iG)({
+            is_private: f.length > 0,
+            channel_id: null == e || null == (t = e.body) ? true : t.id,
+            channel_type: null == e || null == (n = e.body) ? true : n.type
           })
         }
       },
       rejectWithError: false
-    }).then(e => (_.ZP.isOptInEnabled(n) && d.Z.updateChannelOverrideSettings(n, e.body.id, {
-      flags: s.ic.OPT_IN_ENABLED
-    }, l.ZB.OptedIn), o.Z.checkGuildTemplateDirty(n), e), e => {
-      throw a.Z.dispatch({
+    }).then(e => (o.ZP.isOptInEnabled(t) && u.Z.updateChannelOverrideSettings(t, e.body.id, {
+      flags: p.ic.OPT_IN_ENABLED
+    }, s.ZB.OptedIn), a.Z.checkGuildTemplateDirty(t), e), e => {
+      throw l.Z.dispatch({
         type: "CREATE_CHANNEL_MODAL_SUBMIT_FAILURE",
         errors: e.body
       }), e
     })
   },
-  createRoleSubscriptionTemplateChannel: (e, n, i, a) => c.Z.post({
-    url: p.ANM.GUILD_CHANNELS(e),
+  createRoleSubscriptionTemplateChannel: (e, t, n, l) => c.Z.post({
+    url: d.ANM.GUILD_CHANNELS(e),
     body: {
-      name: n,
-      type: i,
-      topic: a
+      name: t,
+      type: n,
+      topic: l
     },
     oldFormErrors: true,
     trackedActionData: {
       event: r.NetworkActionNames.CHANNEL_CREATE,
       properties: e => {
-        var n, i;
-        return (0, t.iG)({
+        var t, n;
+        return (0, i.iG)({
           is_private: true,
-          channel_id: null == e || null == (n = e.body) ? true : n.id,
-          channel_type: null == e || null == (i = e.body) ? true : i.type
+          channel_id: null == e || null == (t = e.body) ? true : t.id,
+          channel_type: null == e || null == (n = e.body) ? true : n.type
         })
       }
     },

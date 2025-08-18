@@ -1,7 +1,7 @@
-/** Chunk was on 5863 **/
+/** Chunk was on 15076 **/
 /** chunk id: 569658, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,7 +20,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk821209 = require("./821209.js");
-let S = e => {
+let N = e => {
   let {
     channel: {
       type: t
@@ -29,7 +29,7 @@ let S = e => {
   return (0, u.r8)(t) || t === p.d4z.GUILD_CATEGORY
 };
 
-function N(e) {
+function S(e) {
   let {
     guildId: t,
     onSelected: n
@@ -39,10 +39,10 @@ function N(e) {
   } = (0, r.cj)([g.Z], () => {
     let e = g.Z.getCategories(t);
     return {
-      channels: (0, o.Z)(e._categories, e, S),
+      channels: (0, o.Z)(e._categories, e, N),
       categories: e
     }
-  }), N = l()(s).filter(e => {
+  }), S = l()(s).filter(e => {
     let {
       channel: t
     } = e;
@@ -65,7 +65,7 @@ function N(e) {
       children: (0, i.jsx)(a.VcW, {
         value: p.lds,
         onChange: n,
-        options: N,
+        options: S,
         renderOptionLabel: e => {
           let t = h.Z.getChannel(e.value);
           if (null == t) return e.label;

@@ -1,14 +1,14 @@
-/** Chunk was on 5863 **/
+/** Chunk was on 15076 **/
 /** chunk id: 74888, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => j
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
+var Chunk120356 = require("./120356.js"),
+  l = require.n(Chunk120356),
+  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk493773 = require("./493773.js"),
   Chunk11352 = require("./11352.js"),
   Chunk610617 = require("./610617.jsx"),
   Chunk413684 = require("./413684.jsx"),
@@ -18,112 +18,113 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk101105 = require("./101105.js");
 
-function v(e) {
+function p(e) {
   return (0, i.jsx)("div", {
-    className: p.sectionHeader,
+    className: x.sectionHeader,
     children: (0, i.jsx)(a.X6q, {
       variant: "text-xs/bold",
-      className: p.sectionHeaderTitle,
+      className: x.sectionHeaderTitle,
       color: "text-muted",
       children: e.title
     })
   })
 }
 
-function j(e) {
+function v(e) {
   return (0, i.jsxs)("div", {
-    children: [null != e.title && (0, i.jsx)(v, {
+    children: [null != e.title && (0, i.jsx)(p, {
       title: e.title
     }), (0, i.jsx)("div", {
-      className: r()(p.sectionContent, {
-        [p.sectionContentPadding]: true !== e.noPadding
+      className: l()(x.sectionContent, {
+        [x.sectionContentPadding]: true !== e.noPadding
       }),
       children: e.children
     })]
   })
 }
 
-function S(e) {
-  let {
-    onClose: t
-  } = e;
-  return (0, i.jsxs)(a.xBx, {
-    className: p.header,
-    children: [(0, i.jsxs)("div", {
-      className: p.headerLeft,
-      children: [(0, i.jsx)(a.Dkj, {
-        size: "md",
-        color: "currentColor",
-        className: p.headerBell
-      }), (0, i.jsx)(a.X6q, {
-        variant: "heading-lg/semibold",
-        children: x.intl.string(x.t.h850Sk)
-      })]
-    }), (0, i.jsx)(a.olH, {
-      onClick: t
-    })]
-  })
-}
-
-function N(e) {
-  let t = s.useRef(null),
-    n = d.Y.useExperiment({
-      location: "notification_settings_modal_redesign"
-    }, {
-      autoTrackExposure: true
-    }).enabled,
-    l = s.useRef(null);
-  return (0, o.Ng)(() => {
-    let n = setTimeout(() => {
-      e.scrollToChannels && null != t.current && null != l.current && t.current.scrollIntoViewNode({
-        node: l.current,
-        shouldScrollToStart: true,
-        padding: 40
+function j(e) {
+  var t, n, {
+      guildId: s
+    } = e,
+    l = function(e, t) {
+      if (null == e) return {};
+      var n, i, s = function(e, t) {
+        if (null == e) return {};
+        var n, i, s = {},
+          l = Object.keys(e);
+        for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (s[n] = e[n]);
+        return s
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var l = Object.getOwnPropertySymbols(e);
+        for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
+      }
+      return s
+    }(e, ["guildId"]);
+  let a = o.Y.useExperiment({
+    location: "notification_settings_modal_redesign"
+  }, {
+    autoTrackExposure: true
+  }).enabled;
+  return (0, i.jsxs)(r.Modal, (t = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        i = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), i.forEach(function(t) {
+        var i;
+        i = n[t], t in e ? Object.defineProperty(e, t, {
+          value: i,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = i
       })
-    }, 1e3);
-    return () => clearTimeout(n)
-  }), (0, i.jsxs)(a.Y0X, {
-    size: a.CgR.MEDIUM,
-    transitionState: e.transitionState,
-    "aria-label": x.intl.string(x.t.h850Sk),
-    parentComponent: "NotificationSettingsModalRedesign",
-    children: [(0, i.jsx)(S, {
-      onClose: e.onClose
-    }), (0, i.jsxs)(a.hzk, {
-      className: p.content,
-      scrollerRef: t,
-      children: [(0, i.jsx)(j, {
-        children: (0, i.jsx)(g.Z, {
-          guildId: e.guildId
-        })
-      }), (0, i.jsx)(j, {
-        title: x.intl.string(x.t["R9Ej9/"]),
-        noPadding: true,
-        children: (0, i.jsx)(m.Z, {
-          guildId: e.guildId
-        })
-      }), n && (0, i.jsx)(j, {
-        children: (0, i.jsx)(c.Z, {
-          onClose: e.onClose,
-          guildId: e.guildId,
-          isRedesign: true
-        })
-      }), (0, i.jsx)(j, {
-        title: x.intl.string(x.t["31DySk"]),
-        children: (0, i.jsx)(u.Z, {
-          guildId: e.guildId
-        })
-      }), (0, i.jsx)(v, {
-        title: x.intl.string(x.t.JrySi4)
-      }), (0, i.jsx)(h.Z, {
-        guildId: e.guildId,
-        requestScrollToBottom: () => {
-          null != t && null != t.current && t.current.scrollToBottom({
-            animate: true
-          })
-        },
-        ref: l
-      })]
+    }
+    return e
+  }({}, l), n = n = {
+    title: m.intl.string(m.t.h850Sk),
+    actions: [{
+      text: m.intl.string(m.t.i4jeWV),
+      onClick: l.onClose
+    }],
+    children: [(0, i.jsx)(v, {
+      noPadding: true,
+      children: (0, i.jsx)(h.Z, {
+        guildId: s
+      })
+    }), (0, i.jsx)(v, {
+      title: m.intl.string(m.t["R9Ej9/"]),
+      noPadding: true,
+      children: (0, i.jsx)(g.Z, {
+        guildId: s
+      })
+    }), a && (0, i.jsx)(v, {
+      children: (0, i.jsx)(d.Z, {
+        onClose: l.onClose,
+        guildId: s,
+        isRedesign: true
+      })
+    }), (0, i.jsx)(v, {
+      title: m.intl.string(m.t["31DySk"]),
+      children: (0, i.jsx)(c.Z, {
+        guildId: s
+      })
+    }), (0, i.jsx)(p, {
+      title: m.intl.string(m.t.JrySi4)
+    }), (0, i.jsx)(u.Z, {
+      guildId: s
     })]
-  })
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
+    }
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+  }), t))
 }

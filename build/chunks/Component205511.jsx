@@ -1,4 +1,4 @@
-/** Chunk was on 42521 **/
+/** Chunk was on 21046 **/
 /** chunk id: 205511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -37,7 +37,7 @@ function E(e) {
   let {
     quest: t,
     useReducedMotion: n
-  } = e, o = (0, g.n)(), l = (0, b.k3)(t.id, h.jn.QUEST_BAR_V2, h.jn.QUEST_BAR_V2), u = (0, b.g2)({
+  } = e, o = (0, f.n)(), l = (0, b.k3)(t.id, h.jn.QUEST_BAR_V2, h.jn.QUEST_BAR_V2), d = (0, b.g2)({
     useReducedMotion: n
   }), _ = (0, p.O5)(), j = (0, m.aM)(), {
     errorHints: E,
@@ -51,9 +51,9 @@ function E(e) {
         questContent: h.jn.QUEST_BAR_V2,
         questContentCTA: p.jZ.DEFIBRILLATOR,
         sourceQuestContent: h.jn.QUEST_BAR_V2
-      }), u.startAnimation()
+      }), d.startAnimation()
     },
-    afterRequest: u.stopAnimation
+    afterRequest: d.stopAnimation
   }), {
     header: T,
     renderBody: w
@@ -69,14 +69,14 @@ function E(e) {
       renderBody: e ? () => (0, r.jsx)(r.Fragment, {
         children: E.map((e, n) => {
           if (e.type === i.K.EXPIRED_CREDENTIAL && o) {
-            let s = d.Z.getAccount(e.connected_account_id, e.connected_account_type),
-              o = (0, f.C9)(e),
-              a = (0, f._j)(e);
+            let s = u.Z.getAccount(e.connected_account_id, e.connected_account_type),
+              o = (0, g.C9)(e),
+              a = (0, g._j)(e);
             return (0, r.jsx)(y, {
               children: v.intl.format(o, {
                 account_name: null == s ? true : s.name,
                 onClick: () => {
-                  (0, f.fY)({
+                  (0, g.fY)({
                     quest: t,
                     platformType: a
                   }, {
@@ -121,7 +121,7 @@ function E(e) {
           [C.disabled]: O
         }),
         onClick: () => S(),
-        children: u.render()
+        children: d.render()
       })]
     }), (0, r.jsxs)("div", {
       className: a()({
@@ -137,15 +137,15 @@ let O = function(e) {
   let {
     quest: t,
     taskDetails: n
-  } = e, o = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), a = (0, x.z6)(), i = s.useMemo(() => (0, f.B3)(t).filter(e => a.xboxAndPlaystationAccounts.find(t => t.type === e)), [a.xboxAndPlaystationAccounts, t]), {
+  } = e, o = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), a = (0, x.z6)(), i = s.useMemo(() => (0, g.B3)(t).filter(e => a.xboxAndPlaystationAccounts.find(t => t.type === e)), [a.xboxAndPlaystationAccounts, t]), {
     steps: c,
-    hasConnectedAccounts: d,
+    hasConnectedAccounts: u,
     isProgressingQuestForLaunchedGame: p,
     isQuestComplete: m
   } = s.useMemo(() => {
     var e;
     let s = i.length > 0,
-      o = s && (0, f.Bz)(t),
+      o = s && (0, g.Bz)(t),
       l = t.config.messages.gameTitle,
       c = (null == (e = t.userStatus) ? true : e.completedAt) != null;
     return {
@@ -207,7 +207,7 @@ let O = function(e) {
   return (0, r.jsx)(j.ZP, {
     heading: v.intl.string(v.t.UPWlJi),
     steps: c,
-    children: d && !p && !m && (0, r.jsx)(E, {
+    children: u && !p && !m && (0, r.jsx)(E, {
       useReducedMotion: o,
       quest: t
     })

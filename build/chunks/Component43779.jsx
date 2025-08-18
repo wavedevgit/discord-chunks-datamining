@@ -1,4 +1,4 @@
-/** Chunk was on 42521 **/
+/** Chunk was on 21046 **/
 /** chunk id: 43779, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -38,10 +38,10 @@ function S(e) {
     isVisibleInViewport: k,
     onReceiveErrorHints: q,
     sourceQuestContent: I
-  } = e, Q = s.useMemo(() => f.r.build(P.config), [P.config]), D = Q.defaultRewardName, V = Q.defaultRewardNameWithArticle, M = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, {
+  } = e, Q = s.useMemo(() => g.r.build(P.config), [P.config]), D = Q.defaultRewardName, V = Q.defaultRewardNameWithArticle, M = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, {
     ref: L,
     scrollHeight: W
-  } = (0, u.kE)(), Z = 104 !== W, {
+  } = (0, d.kE)(), Z = 104 !== W, {
     onAssetLoadComplete: U
   } = s.useContext(b.k), {
     expansionSpring: H
@@ -79,7 +79,7 @@ function S(e) {
   }), F = (null == (n = P.userStatus) ? true : n.completedAt) != null, z = (null == (o = P.userStatus) ? true : o.claimedAt) != null, X = (0, m.xN)(P.config), K = (0, m.LM)(P.config), {
     completedRatio: Y,
     completedRatioDisplay: G
-  } = (0, g.I)(P), J = (0, g.Bd)(P, I), $ = s.useMemo(() => z && X ? y.intl.format(y.t["8Op4c3"], {
+  } = (0, f.I)(P), J = (0, f.Bd)(P, I), $ = s.useMemo(() => z && X ? y.intl.format(y.t["8Op4c3"], {
     balanceHook: () => (0, r.jsxs)(T, {
       questId: P.id,
       children: [(0, r.jsx)(p.Z, {
@@ -110,7 +110,7 @@ function S(e) {
       className: E.description,
       children: J
     })
-  }, [J]), et = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
+  }, [J]), et = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
     className: E.container,
     children: [(0, r.jsxs)(i.animated.div, {

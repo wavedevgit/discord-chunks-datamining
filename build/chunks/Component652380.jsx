@@ -1,4 +1,4 @@
-/** Chunk was on 42521 **/
+/** Chunk was on 21046 **/
 /** chunk id: 652380, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F,
@@ -79,7 +79,7 @@ function M(e) {
   return {
     code: "PREVIEW-MODE-CODE",
     tier: 0,
-    platform: f.y$.CROSS_PLATFORM,
+    platform: g.y$.CROSS_PLATFORM,
     userId: "123",
     questId: e.id,
     claimedAt: null != (n = null == (t = e.userStatus) ? true : t.claimedAt) ? n : ""
@@ -177,7 +177,7 @@ let W = "1193992107035983872",
   };
 
 function U() {
-  var e, t, o, u, d, k, M, W;
+  var e, t, o, d, u, k, M, W;
   let [U, H] = Chunk647438.useState(Z), F = Chunk647438.useCallback(e => {
     H(I(q({}, e), {
       preview: true
@@ -325,12 +325,12 @@ function U() {
       sourceQuestContent: Chunk497505.jn.INTERNAL_PREVIEW_TOOL
     })
   }
-  let eu = Chunk647438.useMemo(() => {
+  let ed = Chunk647438.useMemo(() => {
       for (let [e, t] of Object.entries(U.config.taskConfigV2.tasks))
         if (null != exports.target) return exports.target;
       return 10 * Chunk70956.Z.Seconds.MINUTE
     }, [U.config.taskConfigV2.tasks]),
-    ed = Chunk647438.useMemo(() => Chunk754700.X.WATCH_VIDEO in U.config.taskConfigV2.tasks, [U.config.taskConfigV2.tasks]);
+    eu = Chunk647438.useMemo(() => Chunk754700.X.WATCH_VIDEO in U.config.taskConfigV2.tasks, [U.config.taskConfigV2.tasks]);
   a()(false !== U.preview && null != U.preview, "Preview config must have property preview: true");
   let ep = U.config.taskConfigV2.tasks[Chunk754700.X.WATCH_VIDEO];
   return (0, Chunk951288.jsxs)("div", {
@@ -346,7 +346,7 @@ function U() {
             if (null == e.userStatus) return R.a.UNENROLLED;
             if (null != e.userStatus.claimedAt) return R.a.CLAIMED;
             if (null != e.userStatus.completedAt) return R.a.COMPLETED_100;
-            let t = (0, g.il)(e),
+            let t = (0, f.il)(e),
               n = t.progressSeconds,
               r = t.targetSeconds;
             return n / r >= 1 ? R.a.COMPLETED_100 : n / r >= .75 ? R.a.COMPLETED_75 : n / r >= .5 ? R.a.COMPLETED_50 : n / r >= .25 ? R.a.COMPLETED_25 : R.a.ENROLLED
@@ -361,7 +361,7 @@ function U() {
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk301188.fields,
       children: (0, Chunk951288.jsx)(Chunk749912.Z, {
-        taskDuration: eu,
+        taskDuration: ed,
         taskConfigV2: U.config.taskConfigV2,
         onSelect: function(e) {
           F(I(q({}, U), {
@@ -392,7 +392,7 @@ function U() {
         assetKey: "gamePublisher",
         onMessageChange: eo,
         initialValue: U.config.messages.gamePublisher
-      }), ed && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }), eu && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk602683.Z, {
           title: "Video Title",
           assetKey: "videoTitle",
@@ -452,7 +452,7 @@ function U() {
         onFileChange: en,
         filters: [...Q, "svg"],
         initialValue: U.config.assets.logotype
-      }), ed && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }), eu && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk210851.Z, {
           title: "Quest Video",
           assetKey: "videoPlayerVideo",
@@ -578,7 +578,7 @@ function U() {
               F(I(q({}, U), {
                 userStatus: L({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .25 * eu
+                  streamProgressSeconds: .25 * ed
                 })
               }));
               break;
@@ -586,7 +586,7 @@ function U() {
               F(I(q({}, U), {
                 userStatus: L({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .5 * eu
+                  streamProgressSeconds: .5 * ed
                 })
               }));
               break;
@@ -594,7 +594,7 @@ function U() {
               F(I(q({}, U), {
                 userStatus: L({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .75 * eu
+                  streamProgressSeconds: .75 * ed
                 })
               }));
               break;
@@ -603,7 +603,7 @@ function U() {
                 userStatus: L({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: eu
+                  streamProgressSeconds: ed
                 })
               }));
               break;
@@ -613,7 +613,7 @@ function U() {
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: eu
+                  streamProgressSeconds: ed
                 })
               }))
           }
@@ -632,7 +632,7 @@ function U() {
           children: "Quest Bar"
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk301188.questBarPreviewWrapper,
-          children: [(null == (u = U.userStatus) ? true : Chunk820827.claimedAt) != null && (0, Chunk951288.jsx)(Chunk481060.Text, {
+          children: [(null == (d = U.userStatus) ? true : Chunk820827.claimedAt) != null && (0, Chunk951288.jsx)(Chunk481060.Text, {
             color: "text-secondary",
             variant: "text-sm/normal",
             children: "The Quest Bar is hidden when the user has claimed the reward."
@@ -671,7 +671,7 @@ function U() {
         withBorder: true,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
           children: "Channel Call Header"
-        }), (null == (d = U.userStatus) ? true : Chunk458708.claimedAt) != null && (0, Chunk951288.jsx)(Chunk481060.Text, {
+        }), (null == (u = U.userStatus) ? true : Chunk458708.claimedAt) != null && (0, Chunk951288.jsx)(Chunk481060.Text, {
           color: "text-secondary",
           variant: "text-sm/normal",
           children: "The Quest Channel Call Header is hidden when the user has claimed the reward."
@@ -724,7 +724,7 @@ function U() {
             children: "Invalid Quests Embed:"
           })
         })
-      }), ed && (0, Chunk951288.jsxs)(Chunk456799.Z, {
+      }), eu && (0, Chunk951288.jsxs)(Chunk456799.Z, {
         withBorder: true,
         allowClicks: true,
         children: [(0, Chunk951288.jsx)(Chunk481060.vwX, {
@@ -745,7 +745,7 @@ function U() {
                   questId: null != (n = U.id) ? n : "fake-quest-id",
                   overrideQuest: U,
                   autoplay: true,
-                  sourceQuestContent: f.jn.INTERNAL_PREVIEW_TOOL
+                  sourceQuestContent: g.jn.INTERNAL_PREVIEW_TOOL
                 }))
               }
             })

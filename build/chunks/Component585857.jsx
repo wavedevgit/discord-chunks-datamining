@@ -1,4 +1,4 @@
-/** Chunk was on 42521 **/
+/** Chunk was on 21046 **/
 /** chunk id: 585857, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q: () => m
@@ -13,16 +13,16 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk39625 = require("./39625.js");
 
-function d(e) {
+function u(e) {
   let {
     text: t,
     quest: n,
     sourceQuestContent: c
-  } = e, d = (0, a.O5)();
+  } = e, u = (0, a.O5)();
   return (0, r.jsx)(s.P3F, {
-    className: u.showConnectionsButton,
+    className: d.showConnectionsButton,
     onClick: () => {
-      d({
+      u({
         questId: n.id,
         questContent: i.jn.QUEST_BAR_V2,
         questContentCTA: a.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
@@ -44,7 +44,7 @@ function p(e) {
     quest: n,
     sourceQuestContent: s
   } = e;
-  return t.length > 0 ? (0, r.jsx)(d, {
+  return t.length > 0 ? (0, r.jsx)(u, {
     text: c.intl.string(c.t["qiS+xs"]),
     quest: n,
     sourceQuestContent: s

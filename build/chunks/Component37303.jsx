@@ -1,7 +1,7 @@
 /** Chunk was on 37447 **/
 /** chunk id: 37303, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,39 +17,39 @@ var Chunk497505 = require("./497505.js"),
   Chunk266843 = require("./266843.js"),
   Chunk556260 = require("./556260.js");
 
-function g(e) {
+function h(e) {
   let {
     quest: t,
     location: n,
-    initiallyExpanded: g,
-    contentPosition: h,
+    initiallyExpanded: h,
+    contentPosition: g,
     sourceQuestContent: x
-  } = e, [j, C] = s.useState(false), f = s.useCallback(() => C(true), []), b = s.useCallback(() => C(false), []), v = (0, i.tP)(t), {
-    containerRef: y,
-    size: O,
-    height: N
+  } = e, [C, j] = o.useState(false), f = o.useCallback(() => j(true), []), b = o.useCallback(() => j(false), []), y = (0, i.tP)(t), {
+    containerRef: v,
+    size: N,
+    height: O
   } = (0, m.h)(), {
-    expansionSpring: E,
-    isAnimating: T,
-    isExpanded: q,
+    expansionSpring: q,
+    isAnimating: E,
+    isExpanded: T,
     toggleExpanded: S
   } = (0, m.O)({
-    initiallyExpanded: g || (0, c.iM)({
+    initiallyExpanded: h || (0, u.iM)({
       location: n,
       quest: t
     })
-  }), P = null != N ? N : c.U0;
-  return (0, r.jsx)(l.A, {
+  }), P = null != O ? O : u.U0;
+  return (0, s.jsx)(l.A, {
     questOrQuests: t,
     questContent: n,
-    questContentPosition: h,
+    questContentPosition: g,
     trackGuildAndChannelMetadata: n === a.jn.QUESTS_EMBED,
     sourceQuestContent: x,
-    children: e => (0, r.jsx)(o.animated.div, {
+    children: e => (0, s.jsx)(r.animated.div, {
       style: {
-        maxHeight: n === a.jn.QUESTS_EMBED ? true : E.to({
+        maxHeight: n === a.jn.QUESTS_EMBED ? true : q.to({
           range: [0, 1],
-          output: [c.DJ, P]
+          output: [u.DJ, P]
         })
       },
       className: p.questsCard,
@@ -57,30 +57,30 @@ function g(e) {
       onMouseEnter: f,
       onBlur: b,
       onMouseLeave: b,
-      children: (0, r.jsxs)("div", {
+      children: (0, s.jsxs)("div", {
         ref: t => {
-          e.current = t, y.current = t
+          e.current = t, v.current = t
         },
-        children: [(0, r.jsx)(d.Z, {
-          isQuestExpired: v,
+        children: [(0, s.jsx)(d.Z, {
+          isQuestExpired: y,
           location: n,
           quest: t,
-          size: O,
-          expansionSpring: E,
-          isAnimating: T,
-          isExpanded: q,
-          contentPosition: h,
+          size: N,
+          expansionSpring: q,
+          isAnimating: E,
+          isExpanded: T,
+          contentPosition: g,
           toggleExpanded: S,
           sourceQuestContent: x
-        }), (0, r.jsx)(u.Z, {
+        }), (0, s.jsx)(c.Z, {
           quest: t,
-          isQuestExpired: v,
+          isQuestExpired: y,
           location: n,
-          size: O,
-          isFocused: j,
-          isExpanded: q,
-          isAnimating: T,
-          contentPosition: h,
+          size: N,
+          isFocused: C,
+          isExpanded: T,
+          isAnimating: E,
+          contentPosition: g,
           sourceQuestContent: x
         })]
       })

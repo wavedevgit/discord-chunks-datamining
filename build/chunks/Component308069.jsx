@@ -1,4 +1,4 @@
-/** Chunk was on 42521 **/
+/** Chunk was on 21046 **/
 /** chunk id: 308069, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -29,14 +29,14 @@ let _ = e => {
     useReducedMotion: v,
     isExpanded: C,
     isExpansionAnimationComplete: y
-  } = e, E = (0, u.aM)(), O = s.useCallback(() => {
-    (0, g.openDisclosureModal)(t, {
+  } = e, E = (0, d.aM)(), O = s.useCallback(() => {
+    (0, f.openDisclosureModal)(t, {
       content: p.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_DISCLOSURE,
       sourceQuestContent: p.jn.QUEST_BAR_V2
     })
   }, [t]), S = s.useCallback(() => {
-    (0, d.nc)(t, {
+    (0, u.nc)(t, {
       content: p.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_GAME_LINK,
       impressionId: E,
@@ -96,7 +96,7 @@ let _ = e => {
           color: l.TVs.colors.WHITE,
           className: b.promotedBadgeIcon
         })]
-      }), (0, r.jsx)(f.r, {
+      }), (0, r.jsx)(g.r, {
         onOpen: _,
         onClose: j,
         onSelect: o,

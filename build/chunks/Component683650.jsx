@@ -1,10 +1,10 @@
 /** Chunk was on 37447 **/
 /** chunk id: 683650, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  X: () => C,
+  X: () => j,
   o: () => f
 });
-var r, Chunk951288 = require("./951288.js");
+var s, Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk107508 = require("./107508.js"),
   Chunk87181 = require("./87181.js");
 
-function j() {
+function C() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk107508.buttonContainer,
     children: (0, Chunk951288.jsx)(Chunk755721.zx, {
@@ -34,42 +34,42 @@ function j() {
     })
   })
 }
-var C = ((r = {}).NOT_FOUND = "not_found", r.MOBILE_ONLY = "mobile_only", r);
+var j = ((s = {}).NOT_FOUND = "not_found", s.MOBILE_ONLY = "mobile_only", s);
 
 function f(e) {
   let {
     questId: t,
     reason: n = "not_found"
   } = e, {
-    containerRef: r,
-    size: o
+    containerRef: s,
+    size: r
   } = (0, m.h)();
-  return (0, c.Zk)(p.V_.UNKNOWN_QUEST, t), (0, s.jsxs)("div", {
+  return (0, u.Zk)(p.V_.UNKNOWN_QUEST, t), (0, o.jsxs)("div", {
     ref: e => {
-      r.current = e
+      s.current = e
     },
-    className: i()(h.container, {
-      [h.wide]: "lg" === o,
-      [h.tall]: "lg" !== o
+    className: i()(g.container, {
+      [g.wide]: "lg" === r,
+      [g.tall]: "lg" !== r
     }),
-    children: [(0, s.jsxs)("div", {
-      className: h.contentContainer,
-      children: [(0, s.jsx)(l.X6q, {
-        variant: "lg" === o ? "heading-xl/bold" : "heading-lg/bold",
+    children: [(0, o.jsxs)("div", {
+      className: g.contentContainer,
+      children: [(0, o.jsx)(l.X6q, {
+        variant: "lg" === r ? "heading-xl/bold" : "heading-lg/bold",
         color: "header-primary",
-        children: g.intl.string(g.t.vnP31d)
-      }), (0, s.jsx)(l.Text, {
-        variant: "lg" === o ? "text-sm/medium" : "text-xs/medium",
+        children: h.intl.string(h.t.vnP31d)
+      }), (0, o.jsx)(l.Text, {
+        variant: "lg" === r ? "text-sm/medium" : "text-xs/medium",
         color: "text-default",
-        className: h.__invalid_mobileWebCopy,
-        children: g.intl.string("mobile_only" === n ? g.t.Pag1gY : g.t.CTn0yc)
-      }), (0, s.jsx)(j, {})]
-    }), (0, s.jsx)("div", {
-      className: h.imgContainer,
-      children: (0, s.jsx)("img", {
+        className: g.__invalid_mobileWebCopy,
+        children: h.intl.string("mobile_only" === n ? h.t.Pag1gY : h.t.CTn0yc)
+      }), (0, o.jsx)(C, {})]
+    }), (0, o.jsx)("div", {
+      className: g.imgContainer,
+      children: (0, o.jsx)("img", {
         src: x,
         alt: "",
-        className: h.missingQuestImage
+        className: g.missingQuestImage
       })
     })]
   })

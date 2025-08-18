@@ -1,4 +1,4 @@
-/** Chunk was on 42521 **/
+/** Chunk was on 21046 **/
 /** chunk id: 457153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -33,7 +33,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
     shouldShowRewardsCTAWhenCollapsed: S
   } = e, T = (0, l.Jf)(_), w = s.useRef(null), P = (null == (n = _.userStatus) ? true : n.enrolledAt) != null, A = null != T ? T.percentComplete : j.percentComplete, [N, R] = s.useState(false);
   return (0, r.jsxs)(r.Fragment, {
-    children: [S && (0, r.jsx)(d.Z, {
+    children: [S && (0, r.jsx)(u.Z, {
       expansionSpring: x,
       overlayRef: O,
       progressBarRef: w,
@@ -44,21 +44,21 @@ let x = Chunk647438.forwardRef(function(e, t) {
     }), (0, r.jsx)(i.animated.div, {
       ref: t,
       "aria-hidden": h && b,
-      className: a()(o, f.contentCollapsed, {
-        [f.contentCollapsedExpanded]: h,
-        [f.contentCollapsedAccepted]: P
+      className: a()(o, g.contentCollapsed, {
+        [g.contentCollapsedExpanded]: h,
+        [g.contentCollapsedAccepted]: P
       }),
       style: {
         opacity: x.to({
           range: [0, 1],
           output: [1, 0]
         }),
-        backgroundImage: S ? "linear-gradient(90deg, ".concat(g.aY, ", ").concat(g.v6, ")") : true
+        backgroundImage: S ? "linear-gradient(90deg, ".concat(f.aY, ", ").concat(f.v6, ")") : true
       },
       onMouseEnter: () => R(true),
       onMouseLeave: () => R(false),
       children: (0, r.jsxs)("div", {
-        className: f.contentCollapsedWrapper,
+        className: g.contentCollapsedWrapper,
         children: [S && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(m.Z, {
             quest: _,
@@ -66,7 +66,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
             onCtxMenuClose: y,
             onCtxMenuSelect: E
           }), (0, r.jsx)("div", {
-            className: f.divider
+            className: g.divider
           })]
         }), P ? (0, r.jsx)(p.Z, {
           contentLocation: "collapsed",
@@ -74,7 +74,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
           progressBarRef: w,
           isExpanded: false,
           percentComplete: A
-        }) : null, S && (0, r.jsx)(u.y, {
+        }) : null, S && (0, r.jsx)(d.y, {
           quest: _,
           useReducedMotion: v,
           isExpanded: false,

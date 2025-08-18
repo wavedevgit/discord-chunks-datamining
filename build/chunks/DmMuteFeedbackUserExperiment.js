@@ -1,9 +1,9 @@
-/** Chunk was on 78650 **/
+/** Chunk was on 91173 **/
 /** chunk id: 305587, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Xs: () => r
+  Xs: () => i
 });
-let i = (0, require("./818083.js").B)({
+let r = (0, require("./818083.js").B)({
   kind: "user",
   id: "2024-09_dm_mute_feedback",
   label: "DM Mute Feedback Experiment",
@@ -19,10 +19,10 @@ let i = (0, require("./818083.js").B)({
   }]
 });
 
-function r(e) {
+function i(e) {
   let {
     enabled: t
-  } = i.getCurrentConfig({
+  } = r.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: true

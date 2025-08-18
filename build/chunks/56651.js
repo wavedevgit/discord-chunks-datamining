@@ -1,4 +1,4 @@
-/** Chunk was on 66866 **/
+/** Chunk was on 91173 **/
 /** chunk id: 56651, original params: e,t,n (module,exports,require) **/
 module.exports = {
   gameIcon: "gameIcon__5a366",

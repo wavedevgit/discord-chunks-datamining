@@ -1,4 +1,4 @@
-/** Chunk was on 42521 **/
+/** Chunk was on 21046 **/
 /** chunk id: 415104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -24,8 +24,8 @@ function _(e) {
   var t, n;
   let {
     quest: o,
-    className: u,
-    questContent: d,
+    className: d,
+    questContent: u,
     contentPosition: _,
     rowIndex: j,
     impressionRef: v,
@@ -35,22 +35,22 @@ function _(e) {
       questId: o.id,
       event: h.rMx.QUEST_HOVER,
       properties: {
-        content_id: d,
-        content_name: (0, i._b)(d)
+        content_id: u,
+        content_name: (0, i._b)(u)
       },
       sourceQuestContent: C
     }), w && (0, p.loadVideoQuestModal)()
-  }, [P, o.id, d, w, C]), N = s.useCallback(() => {
+  }, [P, o.id, u, w, C]), N = s.useCallback(() => {
     E(false), P({
       questId: o.id,
       event: h.rMx.QUEST_HOVER_OFF,
       properties: {
-        content_id: d,
-        content_name: (0, i._b)(d)
+        content_id: u,
+        content_name: (0, i._b)(u)
       },
       sourceQuestContent: C
     })
-  }, [P, o.id, d, C]), R = s.useContext(g.t), {
+  }, [P, o.id, u, C]), R = s.useContext(f.t), {
     visibilityElementRef: B,
     almostVisibleInViewport: k
   } = function(e) {
@@ -71,12 +71,12 @@ function _(e) {
     ref: e => {
       v.current = e, B.current = e
     },
-    className: a()(b.container, u),
+    className: a()(b.container, d),
     onMouseEnter: A,
     onMouseLeave: N,
     onFocus: A,
     onBlur: N,
-    children: [(0, r.jsx)(f.Z, {
+    children: [(0, r.jsx)(g.Z, {
       quest: o,
       isHovering: y,
       errorHints: O,
@@ -85,7 +85,7 @@ function _(e) {
       sourceQuestContent: C
     }), (0, r.jsx)(x.Z, {
       quest: o,
-      questContent: d,
+      questContent: u,
       isHovering: y,
       contentPosition: _,
       rowIndex: j,
@@ -97,12 +97,12 @@ function _(e) {
 }
 
 function j(e) {
-  return (0, r.jsx)(d.A, {
+  return (0, r.jsx)(u.A, {
     questOrQuests: e.quest,
     questContent: e.questContent,
     questContentPosition: e.contentPosition,
     questContentRowIndex: e.rowIndex,
-    trackGuildAndChannelMetadata: e.questContent === u.jn.QUESTS_EMBED,
+    trackGuildAndChannelMetadata: e.questContent === d.jn.QUESTS_EMBED,
     sourceQuestContent: e.sourceQuestContent,
     children: t => {
       var n, s;

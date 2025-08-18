@@ -1,4 +1,4 @@
-/** Chunk was on 42521 **/
+/** Chunk was on 21046 **/
 /** chunk id: 759853, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -32,7 +32,7 @@ let b = ["#51BC9D"],
     } = e, {
       completionSpring: E,
       startCompletionAnimation: O
-    } = (0, g.G)(), S = (null == (t = _.userStatus) ? true : t.completedAt) != null, T = s.useRef(false), w = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), P = s.useRef(null), A = (0, u.e7)([m.Z], () => m.Z.hasLayers()), N = (0, d.Z)(A), [R, B] = s.useState(null), [k, q] = s.useState(null), I = s.useRef(new i.qA({
+    } = (0, f.G)(), S = (null == (t = _.userStatus) ? true : t.completedAt) != null, T = s.useRef(false), w = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), P = s.useRef(null), A = (0, d.e7)([m.Z], () => m.Z.hasLayers()), N = (0, u.Z)(A), [R, B] = s.useState(null), [k, q] = s.useState(null), I = s.useRef(new i.qA({
       gravity: 0,
       wind: 0
     })), Q = (0, i.uR)(R, k), D = s.useCallback(() => {
@@ -45,10 +45,10 @@ let b = ["#51BC9D"],
           x: l,
           y: c
         } = e.getBoundingClientRect(), {
-          x: u,
-          y: d
+          x: d,
+          y: u
         } = t.getBoundingClientRect();
-        Q.createMultipleConfetti((n = l - u, r = c - d, s = e.clientHeight, o = e.clientWidth, a = function(e) {
+        Q.createMultipleConfetti((n = l - d, r = c - u, s = e.clientHeight, o = e.clientWidth, a = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -65,7 +65,7 @@ let b = ["#51BC9D"],
             })
           }
           return e
-        }({}, f.We), i = i = {
+        }({}, g.We), i = i = {
           position: {
             type: "static-random",
             minValue: {
@@ -113,7 +113,7 @@ let b = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [j, P, Q, w]), V = (0, d.Z)(v);
+    }, [j, P, Q, w]), V = (0, u.Z)(v);
     return (s.useEffect(() => {
       S && v && !V && (O(), D())
     }, [v, S, O, D, V]), s.useEffect(() => {
@@ -154,8 +154,8 @@ let b = ["#51BC9D"],
           ref: q,
           sprites: [h],
           colors: b,
-          spriteWidth: f.Ko,
-          spriteHeight: f.Ko
+          spriteWidth: g.Ko,
+          spriteHeight: g.Ko
         }), null != o.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
           className: a()(x.borders, x.bordersBottom),
           style: {

@@ -1,4 +1,4 @@
-/** Chunk was on 42521 **/
+/** Chunk was on 21046 **/
 /** chunk id: 647365, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => i
@@ -15,23 +15,23 @@ let i = function(e) {
     expansionSpring: i,
     isExpanded: l,
     isExpansionAnimationComplete: c,
-    onCtxMenuOpened: u,
-    onCtxMenuClosed: d,
+    onCtxMenuOpened: d,
+    onCtxMenuClosed: u,
     onCtxMenuSelection: p,
     quest: m,
-    useReducedMotion: g
+    useReducedMotion: f
   } = e;
   return (0, r.jsx)(o.Z, {
     expansionSpring: i,
     className: a.content,
     collapsedHeight: t,
-    onCtxMenuOpen: u,
-    onCtxMenuClose: d,
+    onCtxMenuOpen: d,
+    onCtxMenuClose: u,
     onCtxMenuSelect: p,
     isExpanded: l,
     isExpansionAnimationComplete: c,
     quest: m,
-    useReducedMotion: g,
+    useReducedMotion: f,
     ref: n,
     children: (0, r.jsx)(s.Z, {
       className: a.content,
@@ -39,7 +39,7 @@ let i = function(e) {
       isExpanded: l,
       isExpansionAnimationComplete: c,
       quest: m,
-      useReducedMotion: g
+      useReducedMotion: f
     })
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 42521 **/
+/** Chunk was on 21046 **/
 /** chunk id: 788284, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -14,8 +14,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk451478 = require("./451478.js"),
   Chunk302221 = require("./302221.js"),
   Chunk746887 = require("./746887.js");
-let g = [0, .5, 1],
-  f = {
+let f = [0, .5, 1],
+  g = {
     "layers[1].shapes[1].g.k.k": [0, .522, .278, .776, .5, .522, .278, .776, 1, .522, .278, .776],
     "layers[2].shapes[1].g.k.k": [0, .714, .271, .757, .5, .714, .271, .757, 1, .714, .271, .757]
   };
@@ -31,7 +31,7 @@ async function x(e, t) {
       });
       l().set(e, r, s)
     }
-  }(r, f, t), r
+  }(r, g, t), r
 }
 
 function h(e) {
@@ -41,7 +41,7 @@ function h(e) {
     className: o,
     quest: i,
     useReducedMotion: l
-  } = e, f = (0, c.e7)([d.Z], () => d.Z.isFocused()), h = s.useRef(null), [b, _] = s.useState(false), j = s.useMemo(() => {
+  } = e, g = (0, c.e7)([u.Z], () => u.Z.isFocused()), h = s.useRef(null), [b, _] = s.useState(false), j = s.useMemo(() => {
     if (null == i) return null;
     let e = (0, p.oo)(i.config.colors.primary),
       t = {
@@ -49,13 +49,13 @@ function h(e) {
         g: e.g / 255,
         b: e.b / 255
       },
-      n = g.reduce((e, n) => [...e, n, t.r, t.g, t.b], []);
+      n = f.reduce((e, n) => [...e, n, t.r, t.g, t.b], []);
     return x(i.id, n)
-  }, [i]), v = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, C = !l && f;
+  }, [i]), v = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, C = !l && g;
   s.useEffect(() => {
     var e, t, n, r;
-    f ? C && (null == (r = h.current) || null == (n = r.animation) || n.play()) : null == (t = h.current) || null == (e = t.animation) || e.goToAndStop(0, true)
-  }, [C, f]);
+    g ? C && (null == (r = h.current) || null == (n = r.animation) || n.play()) : null == (t = h.current) || null == (e = t.animation) || e.goToAndStop(0, true)
+  }, [C, g]);
   let y = s.useCallback(() => {
     _(true)
   }, []);
@@ -66,7 +66,7 @@ function h(e) {
     }
   }) : (0, r.jsx)("div", {
     className: a()(m.lottieAnimationBackgroundWrapper, o),
-    children: (0, r.jsx)(u.Fmz, {
+    children: (0, r.jsx)(d.Fmz, {
       ref: h,
       onComplete: y,
       importData: () => j,

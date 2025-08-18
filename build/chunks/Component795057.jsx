@@ -1,7 +1,7 @@
-/** Chunk was on 42521 **/
+/** Chunk was on 21046 **/
 /** chunk id: 795057, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => u,
+  ZP: () => d,
   y3: () => c
 });
 var Chunk951288 = require("./951288.js");
@@ -52,7 +52,7 @@ function c(e) {
     children: t
   })
 }
-let u = function(e) {
+let d = function(e) {
   let {
     children: t,
     heading: n,

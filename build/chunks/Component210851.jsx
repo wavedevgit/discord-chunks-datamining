@@ -1,4 +1,4 @@
-/** Chunk was on 42521 **/
+/** Chunk was on 21046 **/
 /** chunk id: 210851, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -13,12 +13,12 @@ let l = function(e) {
   let {
     assetKey: l,
     filters: c,
-    initialValue: u,
-    onFileChange: d,
+    initialValue: d,
+    onFileChange: u,
     title: p
-  } = e, [m, g] = s.useState(null), f = s.useRef(null);
+  } = e, [m, f] = s.useState(null), g = s.useRef(null);
   return s.useEffect(() => () => {
-    null != f.current && URL.revokeObjectURL(f.current)
+    null != g.current && URL.revokeObjectURL(g.current)
   }, []), (0, r.jsxs)(o.xJW, {
     children: [(0, r.jsx)(o.vwX, {
       tag: o.RB0.H5,
@@ -49,7 +49,7 @@ let l = function(e) {
         })]
       })
     }), (0, r.jsx)(a.Z, {
-      filename: null != (n = null != (t = null == m ? true : m.name) ? t : u) ? n : "",
+      filename: null != (n = null != (t = null == m ? true : m.name) ? t : d) ? n : "",
       filters: [{
         name: p,
         extensions: c
@@ -57,11 +57,11 @@ let l = function(e) {
       buttonText: "Browse",
       placeholder: "Select an asset",
       onFileSelect: function(e) {
-        if (g(null != e ? e : null), null == e) return;
+        if (f(null != e ? e : null), null == e) return;
         let t = URL.createObjectURL(e);
-        f.current = t;
+        g.current = t;
         let n = new URL(t);
-        n.searchParams.append("mimetype", e.type), n.searchParams.append("name", e.name), d(l, n.toString())
+        n.searchParams.append("mimetype", e.type), n.searchParams.append("name", e.name), u(l, n.toString())
       }
     })]
   })

@@ -1,7 +1,7 @@
-/** Chunk was on 5863 **/
+/** Chunk was on 15076 **/
 /** chunk id: 610617, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => y
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,20 +29,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk226339 = require("./226339.js");
 
-function L(e) {
+function y(e) {
   let {
     guildId: t,
     onClose: n,
     isRedesign: l = false
-  } = e, a = (0, c.e7)([x.Z], () => x.Z.getGuild(t)), L = (0, c.e7)([v.default], () => v.default.getCurrentUser()), {
-    playSound: T,
-    isPlaying: y,
-    soundpackPlaying: M
-  } = (0, N.Z)(), I = (0, S.OR)(t), P = j.ZP.canUseCustomNotificationSounds(L), A = P ? I : E.YC.CLASSIC, R = s.useRef(0), w = s.useRef(false), [G, D] = s.useState(false), U = (0, E.LB)(), k = s.useCallback(() => {
-    clearTimeout(w.current), R.current += 1, R.current > 10 && (D(true), h.K.set(E.CZ, true)), w.current = setTimeout(() => {
-      R.current = 0
+  } = e, a = (0, c.e7)([x.Z], () => x.Z.getGuild(t)), y = (0, c.e7)([v.default], () => v.default.getCurrentUser()), {
+    playSound: L,
+    isPlaying: T,
+    soundpackPlaying: P
+  } = (0, S.Z)(), M = (0, N.OR)(t), w = j.ZP.canUseCustomNotificationSounds(y), I = w ? M : C.YC.CLASSIC, A = s.useRef(0), G = s.useRef(false), [R, U] = s.useState(false), D = (0, C.LB)(), k = s.useCallback(() => {
+    clearTimeout(G.current), A.current += 1, A.current > 10 && (U(true), h.K.set(C.CZ, true)), G.current = setTimeout(() => {
+      A.current = 0
     }, 1e3)
-  }, []), [X, V] = o().partition(U, e => !e.requirePremium || e.requirePremium && P), W = X.map(e => {
+  }, []), [W, V] = o().partition(D, e => !e.requirePremium || e.requirePremium && w), X = W.map(e => {
     var t;
     return {
       name: e.label,
@@ -50,16 +50,16 @@ function L(e) {
       desc: e.description,
       radioBarClassName: (t = e.value, r()(_.option, {
         [_.optionRedesign]: l,
-        [_.optionPlaying]: t === M && y
+        [_.optionPlaying]: t === P && T
       }))
     }
-  }), [B, J] = (0, m.US)([u.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE]), Y = B === u.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE;
+  }), [J, Y] = (0, m.US)([u.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE]), B = J === u.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE;
   s.useEffect(() => () => {
-    J(O.L.AUTO_DISMISS)
-  }, [J]);
-  let z = j.ZP.canUseCustomNotificationSounds(L),
-    F = (0, c.e7)([p.ZP], () => p.ZP.isMuted(t), [t]);
-  return null == L ? null : (0, i.jsxs)("div", {
+    Y(E.L.AUTO_DISMISS)
+  }, [Y]);
+  let F = j.ZP.canUseCustomNotificationSounds(y),
+    z = (0, c.e7)([p.ZP], () => p.ZP.isMuted(t), [t]);
+  return null == y ? null : (0, i.jsxs)("div", {
     children: [(0, i.jsxs)("div", {
       className: _.header,
       children: [(0, i.jsx)(g.X6q, {
@@ -73,7 +73,7 @@ function L(e) {
           color: "currentColor",
           className: _.nitroWheel
         })
-      }), Y && (0, i.jsx)(g.IGR, {
+      }), B && (0, i.jsx)(g.IGR, {
         className: _.newBadge,
         text: Z.intl.string(Z.t.y2b7CA)
       })]
@@ -87,7 +87,7 @@ function L(e) {
           children: null == a ? true : a.name
         }, t)
       })
-    }), F && (0, i.jsxs)("div", {
+    }), z && (0, i.jsxs)("div", {
       className: _.warningContainer,
       children: [(0, i.jsx)(g.Mgn, {
         size: "custom",
@@ -104,17 +104,17 @@ function L(e) {
       title: Z.intl.string(Z.t.xxvoAg),
       children: (0, i.jsxs)("div", {
         className: r()({
-          [_.options]: !z
+          [_.options]: !F
         }),
         children: [(0, i.jsx)(g.FXm, {
           className: r()({
-            [_.options]: z
+            [_.options]: F
           }),
-          value: null != A ? A : E.YC.CLASSIC,
+          value: null != I ? I : C.YC.CLASSIC,
           onChange: e => {
-            T(e.value), P && (0, f.t)(t, A, e.value, "notificationSettings")
+            L(e.value), w && (0, f.t)(t, I, e.value, "notificationSettings")
           },
-          options: W,
+          options: X,
           radioItemClassName: _.option
         }), V.map((e, t) => (0, i.jsx)(b.Z, {
           className: _.playableOption,
@@ -124,7 +124,7 @@ function L(e) {
           location: "notificationSettings"
         }, "sound_option_".concat(t)))]
       })
-    }), !z && (0, i.jsx)(C.Z, {
+    }), !F && (0, i.jsx)(O.Z, {
       onClose: n
     })]
   })

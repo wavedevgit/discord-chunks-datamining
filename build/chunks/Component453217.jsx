@@ -1,4 +1,4 @@
-/** Chunk was on 42521 **/
+/** Chunk was on 21046 **/
 /** chunk id: 453217, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -54,27 +54,27 @@ let h = function(e) {
           quest: _,
           questContent: c.jn.QUEST_BAR,
           autoplay: false,
-          location: g.dr.QUESTS_BAR,
+          location: f.dr.QUESTS_BAR,
           sourceQuestContent: c.jn.QUEST_BAR
-        }), E ? (0, r.jsx)(d.Z, {
+        }), E ? (0, r.jsx)(u.Z, {
           className: x.questProgressBar,
           quest: _
         }) : (0, r.jsx)(i.Text, {
           className: x.questProgressHint,
           color: "always-white",
           variant: "text-sm/semibold",
-          children: f.intl.string(f.t["7e5k7O"])
+          children: g.intl.string(g.t["7e5k7O"])
         })]
       }) : (0, r.jsxs)("div", {
         className: x.brandingWrapper,
-        children: [(0, r.jsx)(u.ZP, {
+        children: [(0, r.jsx)(d.ZP, {
           className: x.partnerBranding,
           quest: _
         }), (0, r.jsx)(i.X6q, {
           color: "always-white",
           variant: "heading-sm/medium",
           className: x.questName,
-          children: f.intl.format(f.t.EAYZAg, {
+          children: g.intl.format(g.t.EAYZAg, {
             questName: _.config.messages.questName
           })
         })]

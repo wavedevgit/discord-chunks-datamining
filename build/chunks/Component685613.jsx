@@ -1,11 +1,11 @@
 /** Chunk was on 37447 **/
 /** chunk id: 685613, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  US: () => j,
-  ZP: () => C,
+  US: () => C,
+  ZP: () => j,
   fF: () => x
 });
-var r, s, Chunk951288 = require("./951288.js");
+var s, o, Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
@@ -17,29 +17,29 @@ var Chunk120356 = require("./120356.js"),
   Chunk78826 = require("./78826.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk593710 = require("./593710.js"),
-  x = ((r = {})[r.SMALL = 24] = "SMALL", r[r.MEDIUM = 32] = "MEDIUM", r),
-  j = ((s = {})[s.SMALL = 2] = "SMALL", s[s.MEDIUM = 8] = "MEDIUM", s);
-let C = function(e) {
+  x = ((s = {})[s.SMALL = 24] = "SMALL", s[s.MEDIUM = 32] = "MEDIUM", s),
+  C = ((o = {})[o.SMALL = 2] = "SMALL", o[o.MEDIUM = 8] = "MEDIUM", o);
+let j = function(e) {
   let {
     className: t,
     logotypeClassName: n,
-    gameTileSize: r = 24,
-    quest: s,
+    gameTileSize: s = 24,
+    quest: o,
     separatorSpacing: i = 2,
-    theme: x = g.BRd.DARK,
-    withCosponsor: j = true,
-    withGameTile: C = true,
+    theme: x = h.BRd.DARK,
+    withCosponsor: C = true,
+    withGameTile: j = true,
     onLoadComplete: f
-  } = e, b = (0, c.wj)(x) ? g.BRd.DARK : g.BRd.LIGHT, v = (0, d.Gd)(s.id, b), y = j && null != s.config.cosponsorMetadata && null != v;
-  return (0, o.jsxs)("div", {
-    className: a()(h.partnerBranding, t),
-    children: [C && (0, o.jsx)(p.Fl, {
+  } = e, b = (0, u.wj)(x) ? h.BRd.DARK : h.BRd.LIGHT, y = (0, d.Gd)(o.id, b), v = C && null != o.config.cosponsorMetadata && null != y;
+  return (0, r.jsxs)("div", {
+    className: a()(g.partnerBranding, t),
+    children: [j && (0, r.jsx)(p.Fl, {
       id: "QuestPartnerBranding_gameTile",
-      children: e => (0, o.jsx)("img", {
+      children: e => (0, r.jsx)("img", {
         ref: e,
-        className: h.partnerBrandingGameTile,
+        className: g.partnerBrandingGameTile,
         alt: "",
-        src: (0, m.fh)(s, m.eC.GAME_TILE, b).url,
+        src: (0, m.fh)(o, m.eC.GAME_TILE, b).url,
         style: {
           borderRadius: function(e) {
             switch (e) {
@@ -48,42 +48,42 @@ let C = function(e) {
               case 32:
                 return 4
             }
-          }(r),
-          width: r,
-          height: r
+          }(s),
+          width: s,
+          height: s
         },
         onLoad: f
       })
-    }), (0, o.jsx)(p.Fl, {
+    }), (0, r.jsx)(p.Fl, {
       id: "QuestPartnerBranding_gameLogotype",
-      children: e => (0, o.jsx)("img", {
+      children: e => (0, r.jsx)("img", {
         ref: e,
-        className: a()(h.partnerBrandingLogotype, n, {
-          [h.partnerBrandingLogotypeWithCosponsor]: y
+        className: a()(g.partnerBrandingLogotype, n, {
+          [g.partnerBrandingLogotypeWithCosponsor]: v
         }),
-        alt: s.config.messages.gameTitle,
-        src: (0, m.fh)(s, m.eC.LOGO_TYPE, b).url,
+        alt: o.config.messages.gameTitle,
+        src: (0, m.fh)(o, m.eC.LOGO_TYPE, b).url,
         onLoad: f
       })
-    }), y && (0, o.jsxs)(o.Fragment, {
-      children: [(0, o.jsx)("div", {
-        className: h.cosponsorBrandSeparatorWrapper,
+    }), v && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)("div", {
+        className: g.cosponsorBrandSeparatorWrapper,
         style: {
           margin: "0 ".concat(i, "px")
         },
-        children: (0, o.jsx)(u.P$X, {
-          className: h.cosponsorBrandSeparator,
+        children: (0, r.jsx)(c.P$X, {
+          className: g.cosponsorBrandSeparator,
           color: l.Z.colors.WHITE
         })
-      }), (0, o.jsx)(p.Fl, {
+      }), (0, r.jsx)(p.Fl, {
         id: "QuestPartnerBranding_cosponsorLogotype",
         children: e => {
-          var t, r;
-          return (0, o.jsx)("img", {
+          var t, s;
+          return (0, r.jsx)("img", {
             ref: e,
-            className: a()(h.partnerBrandingLogotype, h.partnerBrandingLogotypeWithCosponsor, n),
-            alt: null != (r = null == (t = s.config.cosponsorMetadata) ? true : t.name) ? r : "",
-            src: v.url,
+            className: a()(g.partnerBrandingLogotype, g.partnerBrandingLogotypeWithCosponsor, n),
+            alt: null != (s = null == (t = o.config.cosponsorMetadata) ? true : t.name) ? s : "",
+            src: y.url,
             onLoad: f
           })
         }

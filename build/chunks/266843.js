@@ -1,7 +1,7 @@
 /** Chunk was on 37447 **/
 /** chunk id: 266843, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  O: () => c,
+  O: () => u,
   h: () => l
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
@@ -11,10 +11,10 @@ var Chunk647438 = require("./647438.js"),
   Chunk87894 = require("./87894.js");
 
 function l() {
-  let [e, t] = Chunk647438.useState("lg"), [n, s] = Chunk647438.useState(true), l = (0, Chunk448986.Z)(e => {
+  let [e, t] = Chunk647438.useState("lg"), [n, o] = Chunk647438.useState(true), l = (0, Chunk448986.Z)(e => {
     let n = e.target,
-      r = e.contentRect.width;
-    return (s(n.scrollHeight), null == r || r > a.j2) ? t("lg") : r > a.Z0 ? t("sm") : t("xs")
+      s = e.contentRect.width;
+    return (o(n.scrollHeight), null == s || s > a.j2) ? t("lg") : s > a.Z0 ? t("sm") : t("xs")
   });
   return {
     containerRef: (0, Chunk393903.y)(l),
@@ -23,14 +23,14 @@ function l() {
   }
 }
 
-function c(e) {
+function u(e) {
   let {
     initiallyExpanded: t
-  } = e, [n, o] = r.useState(t), [i, a] = r.useState(false), l = r.useCallback(() => {
-    o(e => !e), a(true)
+  } = e, [n, r] = s.useState(t), [i, a] = s.useState(false), l = s.useCallback(() => {
+    r(e => !e), a(true)
   }, []), {
-    expansionSpring: c
-  } = (0, s.q_F)({
+    expansionSpring: u
+  } = (0, o.q_F)({
     expansionSpring: +!!n,
     config: {
       tension: 450,
@@ -39,7 +39,7 @@ function c(e) {
     onRest: () => a(false)
   });
   return {
-    expansionSpring: c,
+    expansionSpring: u,
     isAnimating: i,
     isExpanded: n,
     toggleExpanded: l

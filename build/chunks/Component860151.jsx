@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk192023 = require("./192023.js"),
   Chunk373370 = require("./373370.js"),
@@ -16,39 +16,39 @@ let d = function(e) {
   let {
     className: t,
     autoplay: n,
-    quest: s,
+    quest: r,
     questContent: d,
     taskDetails: E,
-    location: S,
-    sourceQuestContent: m
-  } = e, T = (0, o.DD)({
-    quest: s,
+    location: m,
+    sourceQuestContent: p
+  } = e, f = (0, a.DD)({
+    quest: r,
     taskDetails: E,
-    location: S,
+    location: m,
     questContent: d,
-    sourceQuestContent: m
-  }), A = (0, u.h)({
-    location: S,
-    questConfig: s.config
+    sourceQuestContent: p
+  }), j = (0, o.h)({
+    location: m,
+    questConfig: r.config
   });
   return (0, l.jsxs)("div", {
-    className: r()(c.wrapper, t),
-    style: A ? true : {
-      color: s.config.colors.primary
+    className: s()(c.wrapper, t),
+    style: j ? true : {
+      color: r.config.colors.primary
     },
-    children: [(0, l.jsx)(a.Z, {
+    children: [(0, l.jsx)(u.Z, {
       autoplay: n,
       className: c.rewardTile,
-      quest: s,
+      quest: r,
       questContent: d,
-      location: S,
-      sourceQuestContent: m
+      location: m,
+      sourceQuestContent: p
     }), (0, l.jsx)("div", {
       className: c.copy,
       children: (0, l.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: T
+        children: f
       })
     })]
   })

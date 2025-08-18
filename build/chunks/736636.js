@@ -1,4 +1,4 @@
-/** Chunk was on 66866 **/
+/** Chunk was on 91173 **/
 /** chunk id: 736636, original params: e,t,n (module,exports,require) **/
 module.exports = {
   guildShopEmbed: "guildShopEmbed__86fa6",

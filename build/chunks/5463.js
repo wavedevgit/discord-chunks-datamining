@@ -1,5 +1,5 @@
-/** Chunk was on 89311 **/
-/** chunk id: 5463, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 82052 **/
+/** chunk id: 5463, original params: e,a,r (module,exports,require) **/
 module.exports = {
   friends: "friends_b37a75",
   emptyState: "emptyState_b37a75 friends_b37a75",

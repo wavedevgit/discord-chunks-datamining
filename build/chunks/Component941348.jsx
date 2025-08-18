@@ -1,4 +1,4 @@
-/** Chunk was on 42521 **/
+/** Chunk was on 21046 **/
 /** chunk id: 941348, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -18,8 +18,8 @@ let p = function(e) {
     expandedContentRef: n,
     expansionSpring: p,
     isExpanded: m,
-    isExpansionAnimationComplete: g,
-    onCtxMenuOpened: f,
+    isExpansionAnimationComplete: f,
+    onCtxMenuOpened: g,
     onCtxMenuClosed: x,
     onCtxMenuSelection: h,
     quest: b,
@@ -33,34 +33,34 @@ let p = function(e) {
     expansionSpring: p,
     children: [(0, r.jsx)(l.Z, {
       ref: C,
-      className: d.content,
+      className: u.content,
       expansionSpring: p,
       isExpanded: m,
-      isExpansionAnimationComplete: g,
+      isExpansionAnimationComplete: f,
       quest: b,
       useReducedMotion: _,
       taskDetails: O,
-      onCtxMenuOpen: f,
+      onCtxMenuOpen: g,
       onCtxMenuClose: x,
       onCtxMenuSelect: h,
       overlayRef: y,
       shouldShowRewardsCTAWhenCollapsed: v
     }, v ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
       expansionSpring: p,
-      className: d.content,
+      className: u.content,
       collapsedHeight: j,
-      onCtxMenuOpen: f,
+      onCtxMenuOpen: g,
       onCtxMenuClose: x,
       onCtxMenuSelect: h,
       overlayRef: y,
       isExpanded: m,
-      isExpansionAnimationComplete: g,
+      isExpansionAnimationComplete: f,
       quest: b,
       useReducedMotion: _,
       ref: n,
       taskDetails: O,
       children: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(u.Z, {
+        children: [(0, r.jsx)(d.Z, {
           expansionSpring: p,
           isExpanded: m
         }), !E && (0, r.jsx)(a.Z, {
@@ -68,15 +68,15 @@ let p = function(e) {
           expansionSpring: p,
           useReducedMotion: _,
           isExpanded: m,
-          isExpansionAnimationComplete: g,
-          onCtxMenuOpen: f,
+          isExpansionAnimationComplete: f,
+          onCtxMenuOpen: g,
           onCtxMenuClose: x,
           onCtxMenuSelect: h
         })]
       })
     }), (0, r.jsx)("div", {
       ref: y,
-      className: d.overlay
+      className: u.overlay
     })]
   })
 }

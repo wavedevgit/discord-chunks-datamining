@@ -1,47 +1,47 @@
 /** Chunk was on 89311 **/
-/** chunk id: 426482, original params: e,t,r (module,exports,require) **/
+/** chunk id: 426482, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => m,
   Z: () => d
 }), require("./388685.js");
-var n, Chunk951288 = require("./951288.js"),
+var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk451697 = require("./451697.js"),
-  d = ((n = {})[n.SMALL = 0] = "SMALL", n[n.LARGE = 1] = "LARGE", n);
+  d = ((r = {})[r.SMALL = 0] = "SMALL", r[r.LARGE = 1] = "LARGE", r);
 
 function m(e) {
   var t;
   let {
-    game: r,
-    application: n,
-    size: l,
+    game: n,
+    application: r,
+    size: a,
     className: d
-  } = e, [m, f] = i.useState(false), g = null != (t = null == n ? true : n.name) ? t : r.name, p = null != r.firstReleaseDate ? new Date(r.firstReleaseDate) : null;
-  return null == r.coverImageUrl || m ? (0, a.jsxs)("div", {
-    className: o()(u.fallback, d),
-    children: [(0, a.jsx)("div", {
+  } = e, [m, f] = l.useState(false), p = null != (t = null == r ? true : r.name) ? t : n.name, g = null != n.firstReleaseDate ? new Date(n.firstReleaseDate) : null;
+  return null == n.coverImageUrl || m ? (0, i.jsxs)("div", {
+    className: s()(u.fallback, d),
+    children: [(0, i.jsx)("div", {
       className: u.spacer
-    }), (0, a.jsx)(s.xv, {
-      variant: 1 === l ? "text-md/medium" : "text-xs/medium",
+    }), (0, i.jsx)(o.xv, {
+      variant: 1 === a ? "text-md/medium" : "text-xs/medium",
       color: "always-white",
-      lineClamp: 1 === l ? 4 : 3,
-      children: g
-    }), (0, a.jsx)("div", {
+      lineClamp: 1 === a ? 4 : 3,
+      children: p
+    }), (0, i.jsx)("div", {
       className: u.spacer
-    }), (0, a.jsx)(s.xv, {
-      variant: 1 === l ? "text-sm/normal" : "text-xxs/normal",
+    }), (0, i.jsx)(o.xv, {
+      variant: 1 === a ? "text-sm/normal" : "text-xxs/normal",
       color: "always-white",
-      children: null != p ? "(".concat(null == p ? true : p.getFullYear(), ")") : null
+      children: null != g ? "(".concat(null == g ? true : g.getFullYear(), ")") : null
     })]
-  }) : (0, a.jsx)("img", {
+  }) : (0, i.jsx)("img", {
     className: d,
-    src: r.coverImageUrl,
+    src: n.coverImageUrl,
     alt: c.intl.formatToPlainString(c.t["3ev90d"], {
-      game: g
+      game: p
     }),
     onError: () => {
       f(true)
