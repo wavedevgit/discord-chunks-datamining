@@ -115,21 +115,21 @@ function V(e) {
     loaded: _
   } = (0, S.cl)(n), {
     messageCountText: y
-  } = (0, O.nP)(n), {
+  } = (0, T.nP)(n), {
     isNew: w,
-    hasUnreads: T
-  } = (0, O.J$)(n), N = i.useRef(null), {
-    handleLeftClick: P,
+    hasUnreads: O
+  } = (0, T.J$)(n), P = i.useRef(null), {
+    handleLeftClick: N,
     handleRightClick: R
   } = (0, A.Z)({
-    facepileRef: N,
+    facepileRef: P,
     goToThread: a,
     channel: n
   });
   i.useEffect(() => {
     null == x || x(b.current, p)
   }, [x, p]);
-  let Z = (0, O.xw)(n, s.z.CREATION_DATE, L.R6.POSTED_DURATION_AGO),
+  let Z = (0, T.xw)(n, s.z.CREATION_DATE, L.R6.POSTED_DURATION_AGO),
     F = (0, I.NN)(n),
     B = (0, k.nX)({
       id: t,
@@ -158,7 +158,7 @@ function V(e) {
     }(B, ["onFocus"]);
   return (0, r.jsxs)("li", {
     ref: b,
-    onClick: P,
+    onClick: N,
     onFocus: U,
     onContextMenu: R,
     className: l()(z.container, m, {
@@ -166,7 +166,7 @@ function V(e) {
     }),
     style: H({}, h),
     children: [(0, r.jsx)(d.P3F, H({
-      onClick: P,
+      onClick: N,
       focusProps: {
         ringTarget: b
       },
@@ -200,7 +200,7 @@ function V(e) {
         children: (0, r.jsx)(d.X6q, {
           variant: "heading-md/extrabold",
           className: z.title,
-          color: T ? "header-primary" : "text-muted",
+          color: O ? "header-primary" : "text-muted",
           style: {
             width: "".concat(h.width - 2 * E.I8, "px")
           },
@@ -224,7 +224,7 @@ function V(e) {
         children: (0, r.jsx)(W, {
           channel: n,
           firstMessage: v,
-          facepileRef: N
+          facepileRef: P
         })
       })
     })]
@@ -241,9 +241,9 @@ function G(e) {
   } = e, {
     isBlocked: s,
     isIgnored: c
-  } = (0, o.cj)([T.Z], () => ({
-    isBlocked: null != n && T.Z.isBlockedForMessage(n),
-    isIgnored: null != n && T.Z.isIgnoredForMessage(n)
+  } = (0, o.cj)([O.Z], () => ({
+    isBlocked: null != n && O.Z.isBlockedForMessage(n),
+    isIgnored: null != n && O.Z.isIgnoredForMessage(n)
   }));
   return s ? (0, r.jsx)($, {
     message: D.intl.string(D.t.Lkp2fH),
@@ -271,13 +271,13 @@ function q(e) {
     coords: l
   } = e, s = (0, o.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), {
     firstMedia: c
-  } = (0, O.mX)({
+  } = (0, T.mX)({
     firstMessage: n,
     formatInline: false,
     noStyleAndInteraction: false
   }), {
     hasUnreads: d
-  } = (0, O.J$)(t), u = (0, o.e7)([w.Z], () => w.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = _.QK.useSetting(), h = _.cC.useSetting(), g = (0, b.Z)(h, u), f = (0, N.aU)(n, s, false), [x, p] = (0, E.rI)(l.width - 2 * E.LT), j = (null == n ? true : n.blocked) || null == (null != a ? a : c), v = t.isMediaPost();
+  } = (0, T.J$)(t), u = (0, o.e7)([w.Z], () => w.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = _.QK.useSetting(), h = _.cC.useSetting(), g = (0, b.Z)(h, u), f = (0, P.aU)(n, s, false), [x, p] = (0, E.rI)(l.width - 2 * E.LT), j = (null == n ? true : n.blocked) || null == (null != a ? a : c), v = t.isMediaPost();
   return j ? (0, r.jsx)(Q, {
     channel: t,
     firstMessage: n,
@@ -373,7 +373,7 @@ let X = e => e.preventDefault(),
     } = e, {
       containsVideo: u,
       containsGif: m
-    } = i.useMemo(() => (0, N.cp)(t), [t]), b = i.useMemo(() => t.slice(R.$x, R.GV), [t]), j = (0, R.tu)({
+    } = i.useMemo(() => (0, P.cp)(t), [t]), b = i.useMemo(() => t.slice(R.$x, R.GV), [t]), j = (0, R.tu)({
       numAttachments: b.length,
       containerWidth: a,
       containerHeight: s
@@ -417,7 +417,7 @@ let X = e => e.preventDefault(),
           responsive: true
         })), a && (0, r.jsx)("div", {
           className: z.obscuredTagContainer,
-          children: (0, r.jsx)(P.Z, {
+          children: (0, r.jsx)(N.Z, {
             obscureReason: s,
             iconClassname: z.obscuredTag
           })
@@ -485,7 +485,7 @@ function Q(e) {
     hasUnreads: o
   } = e, c = _.jU.useSetting(), [u, m] = (0, E.rI)(s - 2 * E.LT), {
     content: h
-  } = (0, O.mX)({
+  } = (0, T.mX)({
     firstMessage: n,
     formatInline: false,
     noStyleAndInteraction: true

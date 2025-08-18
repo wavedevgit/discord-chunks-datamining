@@ -2,14 +2,13 @@
 /** chunk id: 276357, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk924826 = require("./924826.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk109434 = require("./109434.js"),
@@ -20,69 +19,69 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk183132 = require("./183132.js");
 
-function b() {
+function p() {
   return Promise.resolve()
 }
 
-function j(e) {
+function b(e) {
   let {
     channel: t,
     closePopout: n,
-    setPopoutRef: j
-  } = e, v = (0, m.Vm)(t), {
-    tagFilter: _
-  } = (0, u.H)(t.id), C = (0, u.v)(), y = (0, s.e7)([d.Z], () => d.Z.keyboardModeEnabled), w = i.useCallback(e => {
-    (0, h.e7)({
+    setPopoutRef: b
+  } = e, j = (0, u.Vm)(t), {
+    tagFilter: v
+  } = (0, d.H)(t.id), _ = (0, d.v)(), C = (0, s.e7)([c.Z], () => c.Z.keyboardModeEnabled), y = i.useCallback(e => {
+    (0, m.e7)({
       guildId: t.guild_id,
       channelId: t.id,
       tagId: e,
-      filterTagIds: Array.from(_),
-      added: !_.has(e),
+      filterTagIds: Array.from(v),
+      added: !v.has(e),
       location: {
-        page: f.ZY5.GUILD_CHANNEL,
-        section: f.jXE.FORUM_CHANNEL_HEADER,
-        object: f.qAy.CHANNEL_TAG
+        page: g.ZY5.GUILD_CHANNEL,
+        section: g.jXE.FORUM_CHANNEL_HEADER,
+        object: g.qAy.CHANNEL_TAG
       }
-    }), C.getState().toggleTagFilter(t.id, e)
-  }, [t, _, C]), T = i.useCallback(() => {
-    C.getState().setTagFilter(t.id, new Set), y || n()
-  }, [C, t.id, y, n]), O = (0, a.ZP)({
+    }), _.getState().toggleTagFilter(t.id, e)
+  }, [t, v, _]), w = i.useCallback(() => {
+    _.getState().setTagFilter(t.id, new Set), C || n()
+  }, [_, t.id, C, n]), O = (0, a.ZP)({
     id: "".concat(t.id, "-all-tags-dropdown-navigator"),
     isEnabled: true,
     wrap: true,
-    scrollToStart: b,
-    scrollToEnd: b
-  }), S = i.useRef(null);
+    scrollToStart: p,
+    scrollToEnd: p
+  }), T = i.useRef(null);
   return i.useEffect(() => {
     requestAnimationFrame(() => {
-      if (null != S.current) {
-        let e = S.current.querySelector(".".concat(p.tag));
+      if (null != T.current) {
+        let e = T.current.querySelector(".".concat(x.tag));
         null != e && e.focus()
       }
     })
-  }, []), (0, r.jsxs)(c.VqE, {
+  }, []), (0, r.jsxs)(o.VqE, {
     ref: e => {
-      null == j || j(e)
+      null == b || b(e)
     },
-    "aria-label": x.intl.string(x.t.TdqRTk),
-    className: p.container,
+    "aria-label": f.intl.string(f.t.TdqRTk),
+    className: x.container,
     children: [(0, r.jsx)("div", {
-      className: p.header,
+      className: x.header,
       children: (0, r.jsxs)("div", {
-        className: p.headerLeft,
-        children: [(0, r.jsx)(c.X6q, {
+        className: x.headerLeft,
+        children: [(0, r.jsx)(o.X6q, {
           color: "interactive-normal",
           variant: "heading-md/semibold",
-          className: p.headerText,
-          children: x.intl.string(x.t.HPu3kp)
+          className: x.headerText,
+          children: f.intl.string(f.t.HPu3kp)
         }), (0, r.jsx)("div", {
-          className: p.countContainer,
-          children: (0, r.jsx)(c.Text, {
-            className: p.countText,
+          className: x.countContainer,
+          children: (0, r.jsx)(o.Text, {
+            className: x.countText,
             color: "none",
             variant: "text-xs/medium",
             tabularNumbers: true,
-            children: _.size
+            children: v.size
           })
         })]
       })
@@ -127,15 +126,15 @@ function j(e) {
             return e
           }({
             ref: e => {
-              i.current = e, S.current = e
+              i.current = e, T.current = e
             }
           }, a), n = n = {
-            className: p.tagContainer,
-            children: v.map(e => (0, r.jsx)(g.Z, {
-              className: p.tag,
+            className: x.tagContainer,
+            children: j.map(e => (0, r.jsx)(h.Z, {
+              className: x.tag,
               tag: e,
-              selected: _.has(e.id),
-              onClick: () => w(e.id)
+              selected: v.has(e.id),
+              onClick: () => y(e.id)
             }, e.id))
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
@@ -150,19 +149,11 @@ function j(e) {
         }
       })
     }), (0, r.jsx)("div", {
-      className: p.separator
-    }), (0, r.jsx)(o.zx, {
-      look: o.zx.Looks.LINK,
-      size: o.zx.Sizes.MIN,
-      color: o.zx.Colors.CUSTOM,
-      className: p.clear,
-      "aria-label": x.intl.string(x.t["98EPQE"]),
-      onClick: T,
-      children: (0, r.jsx)(c.Text, {
-        variant: "text-sm/medium",
-        color: "text-link",
-        children: x.intl.string(x.t["98EPQE"])
-      })
+      className: x.separator
+    }), (0, r.jsx)(o.Avr, {
+      "aria-label": f.intl.string(f.t["98EPQE"]),
+      onClick: w,
+      text: f.intl.string(f.t["98EPQE"])
     })]
   })
 }

@@ -105,7 +105,7 @@ let ec = Chunk647438.memo(function(e) {
     let a = (0, h.e7)([q.ZP], () => q.ZP.getCurrentSidebarChannelId(r.parent_id) === r.id),
       {
         firstMessage: l
-      } = (0, O.cl)(r),
+      } = (0, T.cl)(r),
       s = function(e) {
         let {
           firstMessage: t,
@@ -137,7 +137,7 @@ let ec = Chunk647438.memo(function(e) {
       d = null == s ? true : s.firstMedia,
       {
         messageCountText: u
-      } = (0, T.nP)(r);
+      } = (0, O.nP)(r);
     return {
       channel: r,
       isOpen: a,
@@ -171,12 +171,12 @@ let ec = Chunk647438.memo(function(e) {
   }, [y, w, t]), i.useEffect(() => {
     null == a || a(C.current, t)
   }, [C, a, t]);
-  let N = i.useRef(null),
+  let P = i.useRef(null),
     {
-      handleLeftClick: P,
+      handleLeftClick: N,
       handleRightClick: E
     } = (0, M.Z)({
-      facepileRef: N,
+      facepileRef: P,
       goToThread: n,
       channel: d
     }),
@@ -208,13 +208,13 @@ let ec = Chunk647438.memo(function(e) {
   return (0, r.jsxs)("div", {
     ref: C,
     "data-item-id": t,
-    onClick: P,
+    onClick: N,
     onContextMenu: E,
     className: l()(el.container, ea.container, c, {
       [el.isOpen]: f
     }),
     children: [(0, r.jsx)(g.P3F, eo({
-      onClick: P,
+      onClick: N,
       focusProps: {
         ringTarget: C
       },
@@ -247,7 +247,7 @@ let ec = Chunk647438.memo(function(e) {
         children: (0, r.jsx)(em, {
           channel: d,
           firstMessage: j,
-          facepileRef: N
+          facepileRef: P
         })
       })]
     })]
@@ -263,7 +263,7 @@ function ed(e) {
     originalAuthor: s
   } = e, {
     hasUnreads: o
-  } = (0, T.J$)(t);
+  } = (0, O.J$)(t);
   return (0, r.jsxs)("div", {
     className: l()(ea.body, el.body),
     children: [(0, r.jsx)(E.ZP, {
@@ -289,7 +289,7 @@ let eu = Chunk647438.memo(function(e) {
     hasMediaAttachment: a,
     hasUnreads: s,
     originalAuthor: o
-  } = e, c = (0, h.e7)([N.Z], () => N.Z.isLoading(n.id)), d = (0, h.e7)([K.Z], () => K.Z.can(en.Plq.MANAGE_MESSAGES, n)), u = G.cC.useSetting(), m = (0, h.e7)([J.Z], () => J.Z.getGuildId()), {
+  } = e, c = (0, h.e7)([P.Z], () => P.Z.isLoading(n.id)), d = (0, h.e7)([K.Z], () => K.Z.can(en.Plq.MANAGE_MESSAGES, n)), u = G.cC.useSetting(), m = (0, h.e7)([J.Z], () => J.Z.getGuildId()), {
     contentPlaceholder: f,
     renderedContent: x
   } = null == t ? {
@@ -338,7 +338,7 @@ function em(e) {
     firstMessage: i
   } = e, {
     isNew: a
-  } = (0, T.J$)(t), l = (0, _.Q)(t.id), s = (null == i ? true : i.reactions) != null && i.reactions.length > 0;
+  } = (0, O.J$)(t), l = (0, _.Q)(t.id), s = (null == i ? true : i.reactions) != null && i.reactions.length > 0;
   return (0, r.jsxs)("div", {
     className: ea.footer,
     children: [(0, r.jsxs)("div", {
@@ -398,7 +398,7 @@ function eh(e) {
   } = e, {
     messageCountText: a,
     unreadCount: s
-  } = (0, T.nP)(t);
+  } = (0, O.nP)(t);
   return (0, r.jsxs)("div", {
     className: l()(el.messageCountBox, {
       [el.hasRead]: i && null == s
@@ -433,7 +433,7 @@ function eg(e) {
   let {
     firstMessage: t,
     channel: n
-  } = e, i = (0, h.e7)([W.Z], () => W.Z.getChannel(n.parent_id)), a = (0, T.Bs)(i), {
+  } = e, i = (0, h.e7)([W.Z], () => W.Z.getChannel(n.parent_id)), a = (0, O.Bs)(i), {
     disableReactionCreates: l,
     isLurking: s,
     isPendingMember: o
@@ -463,7 +463,7 @@ function ef(e) {
     channel: n
   } = e, {
     sortOrder: i
-  } = (0, w.H)(n.parent_id), a = (0, T.xw)(n, i), l = null == (t = n.threadMetadata) ? true : t.createTimestamp, s = null == l ? null : ei.intl.formatToPlainString(ei.t["13euCQ"], {
+  } = (0, w.H)(n.parent_id), a = (0, O.xw)(n, i), l = null == (t = n.threadMetadata) ? true : t.createTimestamp, s = null == l ? null : ei.intl.formatToPlainString(ei.t["13euCQ"], {
     timestamp: (0, $.vc)(d()(l), "LLLL")
   });
   return (0, r.jsx)(g.ua7, {
@@ -496,7 +496,7 @@ function ex(e) {
     channel: t,
     userIds: n,
     facepileRef: i
-  } = e, a = (0, T.iM)(t, n);
+  } = e, a = (0, O.iM)(t, n);
   return (0, r.jsx)("div", {
     ref: i,
     children: (0, r.jsx)(p.ZP, {
@@ -592,7 +592,7 @@ function eb(e) {
         shouldObscure: i,
         obscureReason: a,
         shouldShowAgeVerification: s
-      }), i && (0, r.jsx)(P.Z, {
+      }), i && (0, r.jsx)(N.Z, {
         iconClassname: el.obscuredTag,
         obscureReason: a
       })]

@@ -188,7 +188,7 @@ let J = e => {
       {
         tagFilter: ee
       } = (0, M.H)(x.id),
-      et = (0, h.e7)([T.Z], () => T.Z.getGuild(x.getGuildId())),
+      et = (0, h.e7)([O.Z], () => O.Z.getGuild(x.getGuildId())),
       en = (0, Z.r_)(x),
       {
         transitions: er,
@@ -347,12 +347,12 @@ let J = e => {
             })), s
           }, [t, e, o, a, l])
         }(t, a, l, d), j = p.isAllDone(), v = u || x || !(e => {
-          let t = P.default.extractTimestamp(e);
+          let t = N.default.extractTimestamp(e);
           return o()().isBefore(o()(t).add(o().duration(15, "days")))
         })(a.id), _ = i.useRef(0);
         return i.useEffect(() => (c || !j || v ? clearTimeout(_.current) : _.current = setTimeout(() => {
           s()
-        }, 60 * N.Z.Millis.SECOND), () => clearTimeout(_.current)), [j, v, s, c]), {
+        }, 60 * P.Z.Millis.SECOND), () => clearTimeout(_.current)), [j, v, s, c]), {
           onboardingSteps: p,
           isHidden: x,
           isDismissed: u,
@@ -461,7 +461,7 @@ let J = e => {
                   className: B.stepStatus
                 }) : (0, r.jsx)(g.G2e, {
                   disableColor: true,
-                  icon: (0, g.GSL)(O.Z),
+                  icon: (0, g.GSL)(T.Z),
                   style: q,
                   className: l()(B.stepStatus, B.completed)
                 }), (0, r.jsxs)("div", {

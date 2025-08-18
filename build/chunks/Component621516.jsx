@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk420196 = require("./420196.js"),
   Chunk433075 = require("./433075.js");
 
-function N(e) {
+function P(e) {
   let {
     handleHide: t
   } = e;
@@ -46,7 +46,7 @@ function N(e) {
   })
 }
 
-function P(e) {
+function N(e) {
   let {
     username: t,
     title: n,
@@ -162,7 +162,7 @@ let I = e => {
             color: "currentColor",
             className: y.icon
           }), C.intl.string(C.t.znhX2d)]
-        }), (0, r.jsx)(N, {
+        }), (0, r.jsx)(P, {
           handleHide: A
         })]
       }), (0, r.jsxs)("div", {
@@ -173,7 +173,7 @@ let I = e => {
             className: y.contentMediaContainer,
             children: (0, r.jsxs)("div", {
               className: y.contentVideoContainer,
-              children: [(0, r.jsx)(P, {
+              children: [(0, r.jsx)(N, {
                 username: C.intl.string(C.t.AkORcn),
                 videoSrc: "https://cdn.discordapp.com/assets/media_channel/admin_edu_discord_birthday.mp4",
                 title: C.intl.string(C.t.yO6Fxs),
@@ -181,7 +181,7 @@ let I = e => {
                 reaction: "⚡️",
                 reactionCount: "724",
                 classname: y.backgroundVideo
-              }), (0, r.jsx)(P, {
+              }), (0, r.jsx)(N, {
                 username: C.intl.string(C.t.DPg3YG),
                 videoSrc: "https://cdn.discordapp.com/assets/media_channel/admin_edu_wumpus_onboarding.mp4",
                 title: C.intl.string(C.t.R5XnCw),
@@ -189,7 +189,7 @@ let I = e => {
                 reactionCount: "84",
                 reaction: "\uD83D\uDC9E",
                 classname: y.backgroundVideo
-              }), (0, r.jsx)(P, {
+              }), (0, r.jsx)(N, {
                 username: C.intl.string(C.t.KIele3),
                 videoSrc: "https://cdn.discordapp.com/assets/media_channel/admin_edu_scientist_wumpus.mp4",
                 title: C.intl.string(C.t.pt88VV),
@@ -244,11 +244,11 @@ let I = e => {
             children: (0, r.jsxs)("div", {
               className: y.contentImageContainer,
               children: [(0, r.jsx)("img", {
-                src: I ? O : S,
+                src: I ? T : S,
                 alt: "",
                 className: y.previewEmbedImage
               }), (0, r.jsx)("img", {
-                src: I ? w : T,
+                src: I ? w : O,
                 alt: "",
                 className: y.previewEmbedImage
               })]

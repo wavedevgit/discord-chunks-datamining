@@ -2,7 +2,7 @@
 /** chunk id: 474366, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  q: () => O
+  q: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -59,7 +59,7 @@ function w(e) {
   })
 }
 
-function T(e) {
+function O(e) {
   let {
     containerRef: t,
     text: n
@@ -111,7 +111,7 @@ function T(e) {
   })
 }
 
-function O() {
+function T() {
   let e = Chunk647438.useRef(null);
   return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     className: Chunk65766.container,
@@ -140,7 +140,7 @@ function O() {
         variant: "text-md/medium",
         color: "text-secondary",
         children: Chunk388032.intl.format(Chunk764295.default["8N4c5+"], {
-          airhornHook: t => (0, r.jsx)(T, {
+          airhornHook: t => (0, r.jsx)(O, {
             containerRef: e,
             text: t
           })

@@ -2,7 +2,7 @@
 /** chunk id: 76451, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => P,
+  Z: () => N,
   _: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -33,11 +33,11 @@ let y = {
     scale: 1,
     opacity: 1
   },
-  T = {
+  O = {
     scale: 1,
     opacity: 1
   },
-  O = {
+  T = {
     tension: 2400,
     friction: 52
   };
@@ -87,7 +87,7 @@ function S(e) {
   })
 }
 
-function N(e) {
+function P(e) {
   let {
     channelId: t,
     closePopout: n
@@ -95,8 +95,8 @@ function N(e) {
     reducedMotion: d
   } = i.useContext(c.Sfi), f = (0, c.q_F)({
     from: d.enabled ? w : y,
-    to: T,
-    config: O
+    to: O,
+    config: T
   }, "animate-always"), x = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), b = (0, o.e7)([p.Z], () => p.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type));
   return (0, r.jsx)(s.animated.div, {
     className: C.popoutContainer,
@@ -132,7 +132,7 @@ function N(e) {
   })
 }
 
-function P(e) {
+function N(e) {
   let {
     channelId: t
   } = e, [n, a] = i.useState(false), l = (0, o.e7)([p.Z], () => p.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type)), s = l.length, c = s > 0;
@@ -156,7 +156,7 @@ function P(e) {
     }) : (0, r.jsx)(S, {
       onMouseEnter: d,
       channelId: t
-    }), n && (0, r.jsx)(N, {
+    }), n && (0, r.jsx)(P, {
       channelId: t,
       closePopout: () => {
         a(false)
