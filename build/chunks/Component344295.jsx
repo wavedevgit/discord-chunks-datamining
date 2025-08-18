@@ -220,7 +220,7 @@ class K extends Chunk647438.PureComponent {
     let {
       invite: e
     } = this.props;
-    return (null != module.stage_instance || null != module.guild_scheduled_event) && null != module.guild ? (0, Chunk951288.jsx)(Chunk388905.ZP, {
+    return null != module.guild_scheduled_event && null != module.guild ? (0, Chunk951288.jsx)(Chunk388905.ZP, {
       className: Chunk197571.marginTop20,
       children: (0, Chunk951288.jsx)(Chunk792766.y, {
         guild: module.guild,
@@ -229,12 +229,9 @@ class K extends Chunk647438.PureComponent {
     }) : null
   }
   renderAuthenticatedOrDownload() {
-    let {
-      invite: e
-    } = this.props, t = null != module.stage_instance ? Chunk388032.intl.string(Chunk388032.t["5UKyUl"]) : Chunk388032.intl.string(Chunk388032.t.ohMvm5);
     return (0, Chunk951288.jsxs)("div", {
       children: [(0, Chunk951288.jsxs)(Chunk388905.ZP, {
-        children: [this.renderAuthenticatedHeader(), this.renderButton(exports, this.handleAccept)]
+        children: [this.renderAuthenticatedHeader(), this.renderButton(Chunk388032.intl.string(Chunk388032.t.ohMvm5), this.handleAccept)]
       }), this.renderAuthenicatedFooter()]
     })
   }
@@ -343,7 +340,7 @@ class K extends Chunk647438.PureComponent {
         {
           invite: i
         } = t.props,
-        l = null != i.stage_instance || null != i.guild_scheduled_event;
+        l = null != i.guild_scheduled_event;
       return M.KO ? (0, r.jsx)(g.zx, {
         className: l ? U.marginTop20 : U.marginTop40,
         onClick: n,

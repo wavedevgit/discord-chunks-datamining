@@ -126,29 +126,31 @@ class W extends Chunk647438.PureComponent {
       hasResults: n,
       className: s,
       searchBarContainerClassName: l,
-      searchBarClassName: i
+      searchBarClassName: i,
+      popoutAlignment: o
     } = this.props, {
-      focused: o
-    } = this.state, c = Chunk72006.Sq(exports).length > 0;
+      focused: c
+    } = this.state, u = Chunk72006.Sq(exports).length > 0;
     return (0, Chunk951288.jsx)(Chunk481060.yRy, {
       targetElementRef: this._containerRef,
       renderPopout: this.renderPopout,
       position: "bottom",
+      align: Chunk299608,
       animation: Chunk481060.yRy.Animation.NONE,
-      shouldShow: Chunk299608,
+      shouldShow: c,
       autoInvert: false,
-      children: (t, u) => {
+      children: (t, o) => {
         var h;
         let {
           isShown: p
-        } = u;
+        } = o;
         return (0, r.jsx)("div", {
           className: s,
           ref: this._containerRef,
           children: (0, r.jsx)("div", {
             className: a()(F.search, l, {
-              [F.open]: c || o,
-              [F.focused]: o
+              [F.open]: u || c,
+              [F.focused]: c
             }),
             children: (0, r.jsx)(d.tEY, {
               focusTarget: {
@@ -160,7 +162,7 @@ class W extends Chunk647438.PureComponent {
                 ref: this._searchBarRef,
                 children: [this.renderInput(p), (0, r.jsx)(d.BK9, {
                   onClear: this.handleClearSearch,
-                  hasContent: c || n,
+                  hasContent: u || n,
                   className: F.icon,
                   isLoading: false
                 })]
@@ -422,25 +424,26 @@ function Q(e) {
     className: n,
     searchBarContainerClassName: l,
     searchBarClassName: a,
-    searchPopoutClassName: i
-  } = e, o = (0, O.Tm)(t), c = (0, u.e7)([f.Z], () => f.Z.keyboardModeEnabled), h = (0, u.e7)([w.Z], () => null != o ? w.Z.getEditorState(o) : null), p = s.useMemo(() => null != h ? h : b.nR(E.Jl(I.ZP)), [h]), {
-    isSearching: _,
-    isSearchActive: m,
-    hasResults: y
+    searchPopoutClassName: i,
+    popoutAlignment: o
+  } = e, c = (0, O.Tm)(t), h = (0, u.e7)([f.Z], () => f.Z.keyboardModeEnabled), p = (0, u.e7)([w.Z], () => null != c ? w.Z.getEditorState(c) : null), _ = s.useMemo(() => null != p ? p : b.nR(E.Jl(I.ZP)), [p]), {
+    isSearching: m,
+    isSearchActive: y,
+    hasResults: x
   } = (0, u.cj)([C.Z], () => {
-    let e = C.Z.getTotalCount(o);
+    let e = C.Z.getTotalCount(c);
     return {
       hasResults: null != e && e > 0,
-      isSearching: C.Z.getIsFetching(o),
-      isSearchActive: C.Z.hasSearchState(o)
+      isSearching: C.Z.getIsFetching(c),
+      isSearchActive: C.Z.hasSearchState(c)
     }
-  }), x = s.useRef(m);
+  }), v = s.useRef(y);
   s.useEffect(() => {
-    x.current && !m && (x.current = false, (0, k.IZ)({
+    v.current && !y && (v.current = false, (0, k.IZ)({
       searchContext: t
-    })), !x.current && m && (x.current = true)
-  }, [m, t]);
-  let v = s.useCallback(e => {
+    })), !v.current && y && (v.current = true)
+  }, [y, t]);
+  let j = s.useCallback(e => {
       let {
         queryString: n,
         query: r,
@@ -463,7 +466,7 @@ function Q(e) {
         searchMode: D.QIO.NEWEST
       })
     }, [t]),
-    j = (0, u.e7)([S.Z, g.Z], () => {
+    N = (0, u.e7)([S.Z, g.Z], () => {
       let e = (0, O.b7)(t) ? t.guildId : null;
       if (null != e) {
         let t = S.Z.getGuild(e);
@@ -476,23 +479,23 @@ function Q(e) {
       }
       return null
     }),
-    N = (0, P.xd)({
+    Z = (0, P.xd)({
       isXDMSearch: t.type === D.aib.DMS,
       location: "Search"
     }),
-    Z = (0, P.dB)({
+    M = (0, P.dB)({
       isXDMSearch: t.type === D.aib.DMS,
       location: "Search"
     }),
-    M = N || Z,
-    H = (0, R.$)({
+    H = Z || M,
+    U = (0, R.$)({
       location: "Search"
     }),
-    U = s.useMemo(() => t.type === D.aib.DMS ? L.intl.string(L.t.m7OrlZ) : H ? L.intl.formatToPlainString(L.t.LDZtFB, {
-      name: j
-    }) : M ? (0, r.jsxs)(r.Fragment, {
+    Q = s.useMemo(() => t.type === D.aib.DMS ? L.intl.string(L.t.m7OrlZ) : U ? L.intl.formatToPlainString(L.t.LDZtFB, {
+      name: N
+    }) : H ? (0, r.jsxs)(r.Fragment, {
       children: [L.intl.formatToPlainString(L.t.LDZtFB, {
-        name: j
+        name: N
       }), (0, r.jsx)("span", {
         className: F.keybind,
         children: (0, r.jsx)(d.M2$, {
@@ -500,20 +503,21 @@ function Q(e) {
           className: F.shortcut
         })
       })]
-    }) : L.intl.string(L.t["5h0QOD"]), [t.type, M, j, H]);
+    }) : L.intl.string(L.t["5h0QOD"]), [t.type, H, N, U]);
   return (0, r.jsx)(W, {
     className: n,
     searchPopoutClassName: i,
     searchBarContainerClassName: l,
     searchBarClassName: a,
     searchContext: t,
-    isSearching: _,
-    editorState: p,
-    hasResults: y,
-    keyboardModeEnabled: c,
-    onSearch: v,
-    isSearchActive: m,
-    placeholder: U
+    isSearching: m,
+    editorState: _,
+    hasResults: x,
+    keyboardModeEnabled: h,
+    onSearch: j,
+    isSearchActive: y,
+    placeholder: Q,
+    popoutAlignment: o
   })
 }
 

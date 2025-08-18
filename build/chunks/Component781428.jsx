@@ -335,9 +335,10 @@ class X extends(r = Chunk647438.PureComponent) {
         showMobileWebHandoff: c,
         disableAutofocusOnDefaultForm: u
       } = this.props,
-      h = !this.hasError("email") && this.hasError("password"),
-      p = (null == r ? true : r.stage_instance) != null;
-    return n = null == r || p ? null != l ? (0, i.jsx)(M.Z, {
+      h = !this.hasError("email") && this.hasError("password");
+    return n = null != r ? (0, i.jsx)(B.Z, {
+      invite: r
+    }) : null != l ? (0, i.jsx)(M.Z, {
       giftCode: l
     }) : (0, i.jsxs)("div", {
       className: H.header,
@@ -347,8 +348,6 @@ class X extends(r = Chunk647438.PureComponent) {
       }, "title"), false === (0, k.isAndroidWeb)() ? (0, i.jsx)(_.DK, {
         children: V.intl.string(V.t.euS7r6)
       }, "subtitle") : null]
-    }) : (0, i.jsx)(B.Z, {
-      invite: r
     }), (0, i.jsxs)(b.Z, {
       direction: b.Z.Direction.HORIZONTAL,
       align: b.Z.Align.CENTER,
@@ -418,9 +417,9 @@ class X extends(r = Chunk647438.PureComponent) {
             }), (0, i.jsx)(_.zx, {
               type: "submit",
               submitting: a === G.u34.LOGGING_IN,
-              color: p ? _.zx.Colors.GREEN : _.zx.Colors.BRAND,
+              color: _.zx.Colors.BRAND,
               className: K.marginBottom8,
-              children: p ? V.intl.string(V.t.wvVThI) : V.intl.string(V.t.dKhVQE)
+              children: V.intl.string(V.t.dKhVQE)
             }), (0, i.jsxs)("div", {
               className: K.marginTop4,
               children: [(0, i.jsx)("span", {

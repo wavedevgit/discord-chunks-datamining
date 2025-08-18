@@ -331,23 +331,22 @@ class eu extends(r = Chunk647438.PureComponent) {
   }
   renderInviteButton() {
     let {
-      invite: e,
-      consentRequired: t
+      consentRequired: e
     } = this.props, {
-      consent: n,
-      registering: r
-    } = this.state, l = Chunk388905.zx.Colors.BRAND, a = Chunk388032.intl.string(Chunk388032.t["825cFx"]);
-    return (null == module ? true : module.stage_instance) != null && (l = Chunk388905.zx.Colors.GREEN, a = Chunk388032.intl.string(Chunk388032.t["5UKyUl"])), (0, Chunk951288.jsx)(Chunk481060.ua7, {
-      text: !require && exports ? Chunk388032.intl.string(Chunk388032.t.AY4IVF) : null,
+      consent: t,
+      registering: n
+    } = this.state, r = Chunk388905.zx.Colors.BRAND, l = Chunk388032.intl.string(Chunk388032.t["825cFx"]);
+    return (0, Chunk951288.jsx)(Chunk481060.ua7, {
+      text: !exports && module ? Chunk388032.intl.string(Chunk388032.t.AY4IVF) : null,
       children: e => (0, i.jsx)("div", es(ea({
         className: ei.marginTop8
       }, e), {
         children: (0, i.jsx)(I.zx, {
           type: "submit",
-          submitting: r,
+          submitting: n,
           disabled: !this.hasConsent(),
-          color: l,
-          children: a
+          color: r,
+          children: l
         })
       }))
     })
@@ -367,7 +366,7 @@ class eu extends(r = Chunk647438.PureComponent) {
       dateOfBirthClientError: o,
       parsedDateOfBirth: c,
       globalNameFocused: u
-    } = this.state, d = (null == module ? true : module.stage_instance) != null || (null == module ? true : module.guild_scheduled_event) != null, h = e => {
+    } = this.state, d = (null == module ? true : module.guild_scheduled_event) != null, h = e => {
       this.setState({
         globalName: e
       })
