@@ -56,8 +56,8 @@ function S(e) {
     sourceQuestContent: P
   } = e, A = (0, h.sf)(n);
   null == A && w();
-  let [N, R] = (0, s.useState)(o), B = (0, h.KX)(), k = (0, f.O5)(), q = null == (t = (0, g.WD)()) ? true : t.getId(), I = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), Q = (0, j.g2)({
-    useReducedMotion: I,
+  let [N, R] = (0, s.useState)(o), B = (0, h.KX)(), k = (0, f.O5)(), I = null == (t = (0, g.WD)()) ? true : t.getId(), q = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), Q = (0, j.g2)({
+    useReducedMotion: q,
     className: y.colorTransition
   }), D = N.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), V = (0, x.Bz)(A), M = (0, i.e7)([m.Z], () => m.Z.getState().theme), L = (0, l.wj)(M) ? v.BRd.DARK : v.BRd.LIGHT, {
     startConsoleQuest: W,
@@ -189,7 +189,7 @@ function S(e) {
           }, {
             content: b.jn.CONNECTIONS_MODAL,
             ctaContent: f.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
-            impressionId: q,
+            impressionId: I,
             sourceQuestContent: P
           })
         }

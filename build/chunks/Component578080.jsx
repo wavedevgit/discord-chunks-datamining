@@ -86,7 +86,7 @@ function M(e) {
     fullWidth: true,
     onClick: n,
     size: u.zx.Sizes.NONE,
-    children: I.intl.string(I.t.lwQdjI)
+    children: q.intl.string(q.t.lwQdjI)
   }) : null
 }
 let L = Chunk647438.forwardRef(function(e, t) {
@@ -103,12 +103,12 @@ let L = Chunk647438.forwardRef(function(e, t) {
     onCtxMenuSelect: X,
     quest: K,
     useReducedMotion: Y
-  } = e, G = (0, l.e7)([v.Z], () => v.Z.isEnrolling(K.id), [K]), J = (0, h.aM)(), $ = (0, j.B6)(K.config.expiresAt), ee = S.r.build(K.config), et = (0, j.B6)(ee.rewardsExpireAt), en = s.useMemo(() => (0, O.fh)(K, O.eC.HERO), [K]), er = (0, R.tP)(ee.application.id), es = ee.features.has(B.S7.START_QUEST_CTA) ? x.jZ.START_QUEST : x.jZ.ACCEPT_QUEST, eo = ee.features.has(B.S7.START_QUEST_CTA) ? I.intl.string(I.t.E80Bdn) : I.intl.string(I.t.l7E81t), ea = s.useCallback(() => {
+  } = e, G = (0, l.e7)([v.Z], () => v.Z.isEnrolling(K.id), [K]), J = (0, h.aM)(), $ = (0, j.B6)(K.config.expiresAt), ee = S.r.build(K.config), et = (0, j.B6)(ee.rewardsExpireAt), en = s.useMemo(() => (0, O.fh)(K, O.eC.HERO), [K]), er = (0, R.tP)(ee.application.id), es = ee.features.has(B.S7.START_QUEST_CTA) ? x.jZ.START_QUEST : x.jZ.ACCEPT_QUEST, eo = ee.features.has(B.S7.START_QUEST_CTA) ? q.intl.string(q.t.E80Bdn) : q.intl.string(q.t.l7E81t), ea = s.useCallback(() => {
     (0, _.AH)(K.id, {
       questContent: C.jn.QUEST_BAR,
       questContentCTA: es,
       sourceQuestContent: C.jn.QUEST_BAR
-    }), ee.features.has(B.S7.START_QUEST_CTA) && (0, f.uL)(k.Z5c.ACTIVITY_DETAILS(q.In), true)
+    }), ee.features.has(B.S7.START_QUEST_CTA) && (0, f.uL)(k.Z5c.ACTIVITY_DETAILS(I.In), true)
   }, [K, es, ee.features]), ei = (0, R.hf)({
     quest: K,
     questContent: C.jn.QUEST_BAR,
@@ -181,9 +181,9 @@ let L = Chunk647438.forwardRef(function(e, t) {
                 className: Q.questAcceptedContentCopySubheading,
                 color: "always-white",
                 variant: "text-xxs/normal",
-                children: ef ? I.intl.formatToPlainString(I.t.APddvL, {
+                children: ef ? q.intl.formatToPlainString(q.t.APddvL, {
                   expirationDate: et
-                }) : I.intl.formatToPlainString(I.t["pX+fmp"], {
+                }) : q.intl.formatToPlainString(q.t["pX+fmp"], {
                   expirationDate: $
                 })
               })]
@@ -199,7 +199,7 @@ let L = Chunk647438.forwardRef(function(e, t) {
             sourceQuestContent: C.jn.QUEST_BAR,
             children: e => (0, r.jsx)(p.P3F, V(D({}, e), {
               className: Q.submenuWrapper,
-              "aria-label": I.intl.string(I.t.DEoVWV),
+              "aria-label": q.intl.string(q.t.DEoVWV),
               children: (0, r.jsx)(p.xhG, {
                 size: "md",
                 color: "currentColor",
@@ -214,7 +214,7 @@ let L = Chunk647438.forwardRef(function(e, t) {
           fullWidth: true,
           onClick: ei,
           size: u.zx.Sizes.NONE,
-          children: I.intl.string(I.t.cfY4PD)
+          children: q.intl.string(q.t.cfY4PD)
         }) : (0, r.jsx)(p.Text, {
           className: Q.description,
           color: "always-white",
@@ -244,7 +244,7 @@ let L = Chunk647438.forwardRef(function(e, t) {
               sourceQuestContent: C.jn.QUEST_BAR,
               children: e => (0, r.jsx)(p.P3F, V(D({}, e), {
                 className: Q.submenuWrapper,
-                "aria-label": I.intl.string(I.t.DEoVWV),
+                "aria-label": q.intl.string(q.t.DEoVWV),
                 children: (0, r.jsx)(p.xhG, {
                   size: "md",
                   color: "currentColor",
@@ -265,7 +265,7 @@ let L = Chunk647438.forwardRef(function(e, t) {
               className: Q.title,
               color: "always-white",
               variant: "heading-md/medium",
-              children: I.intl.format(I.t.EQa7oq, {
+              children: q.intl.format(q.t.EQa7oq, {
                 questName: K.config.messages.questName
               })
             }), (0, r.jsx)(p.Text, {

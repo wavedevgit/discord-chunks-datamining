@@ -2,7 +2,7 @@
 /** chunk id: 210724, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => k,
-  Z: () => q
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -57,8 +57,8 @@ function k(e) {
     location: A.dr.QUESTS_BAR
   }), k = (0, v.Zy)({
     location: A.dr.QUESTS_BAR
-  }), q = (0, l.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil), {
-    isQuestBarVisible: I,
+  }), I = (0, l.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil), {
+    isQuestBarVisible: q,
     reason: Q
   } = (0, S.qN)({
     quest: o,
@@ -66,7 +66,7 @@ function k(e) {
   }), D = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), V = (0, l.e7)([p.Z], () => p.Z.hasLayers()), M = s.useRef(null), L = s.useMemo(() => (0, g.q8)(o), [o]), W = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, Z = (0, d.Z)(W), U = (null == (n = o.userStatus) ? true : n.completedAt) != null, H = (0, d.Z)(U), {
     hasError: F,
     isLoading: z
-  } = (0, O.d7)(), X = s.useContext(P.T) || k && I && !z && !q, K = s.useRef(X), Y = (0, w.B)(o, X && !F), G = s.useRef(false), J = s.useRef(false), $ = j.H.useConfig({
+  } = (0, O.d7)(), X = s.useContext(P.T) || k && q && !z && !I, K = s.useRef(X), Y = (0, w.B)(o, X && !F), G = s.useRef(false), J = s.useRef(false), $ = j.H.useConfig({
     location: A.dr.QUESTS_BAR
   }).enabled && U, [ee, et] = s.useState(false), [en, er] = s.useState(false), [es, eo] = s.useState(true), [ea, ei] = s.useState(true), [el, ec] = s.useState(Y.preEnrollmentExpandedHeight), ed = s.useRef(null), eu = s.useCallback(e => {
     $ || (eo(false), er(e))
@@ -214,8 +214,8 @@ function k(e) {
       })
     }
   }, [X, ea, z, o.id, Q, Y.trackingCtx.content]), s.useEffect(() => {
-    (!I || q) && f.Z.clearTracking(), X && ea && !z && !F && k && f.Z.stopTracking(o.id)
-  }, [I, q, X, ea, z, F, k, o.id]);
+    (!q || I) && f.Z.clearTracking(), X && ea && !z && !F && k && f.Z.stopTracking(o.id)
+  }, [q, I, X, ea, z, F, k, o.id]);
   let eS = (0, _.h)({
     location: A.dr.QUESTS_BAR,
     questConfig: o.config
@@ -284,7 +284,7 @@ function k(e) {
     }
   })
 }
-let q = 12633 == require.j ? function() {
+let I = 12633 == require.j ? function() {
   let e = (0, Chunk667105.DH)();
   return null == module ? null : (0, Chunk951288.jsx)(Chunk78826.p, {
     source: Chunk46140.dr.QUESTS_BAR,

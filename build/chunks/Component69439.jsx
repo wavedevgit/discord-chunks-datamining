@@ -82,9 +82,9 @@ function E(e) {
     sourceQuestContent: N
   } = e, R = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), B = (0, h.g2)({
     useReducedMotion: R
-  }), k = (0, d.O5)(), q = (0, p._s)({
+  }), k = (0, d.O5)(), I = (0, p._s)({
     quest: S
-  }), I = (0, p.z)(S), Q = (0, p.B6)(S.config.expiresAt, {
+  }), q = (0, p.z)(S), Q = (0, p.B6)(S.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), {
@@ -209,7 +209,7 @@ function E(e) {
           return (0, c.vE)(e)
       }
     }
-  }) : (0, u.$J)(S) && !I && J !== f.LI.DESKTOP ? q ? (0, r.jsx)(a.zx, {
+  }) : (0, u.$J)(S) && !q && J !== f.LI.DESKTOP ? I ? (0, r.jsx)(a.zx, {
     color: a.Tt.PRIMARY,
     className: j.button,
     onClick: null != ea ? ea : true,

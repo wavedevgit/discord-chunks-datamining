@@ -1,0 +1,51 @@
+/** Chunk was on web.js **/
+/** chunk id: 708154, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => d
+});
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
+var Chunk680018 = require("./680018.jsx"),
+  Chunk481060 = require("./481060.js"),
+  Chunk550385 = require("./550385.js"),
+  Chunk119475 = require("./119475.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk574876 = require("./574876.js"),
+  Chunk374291 = require("./374291.js");
+
+function d() {
+  let e = () => {
+    (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME, {
+      from: Chunk550385.tE.CLIENT_THEMES_EDITOR
+    })
+  };
+  return (0, Chunk951288.jsxs)("div", {
+    className: Chunk574876.container,
+    children: [(0, Chunk951288.jsxs)("div", {
+      className: Chunk574876.topContent,
+      children: [(0, Chunk951288.jsx)("img", {
+        src: Chunk374291.Z,
+        className: Chunk574876.bannerImage,
+        alt: ""
+      }), (0, Chunk951288.jsxs)("div", {
+        className: Chunk574876.textContent,
+        children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
+          variant: "text-md/semibold",
+          color: "text-primary",
+          children: Chunk388032.intl.string(Chunk119475.default.XP4jzM)
+        }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+          variant: "text-sm/medium",
+          color: "text-tertiary",
+          children: Chunk388032.intl.string(Chunk119475.default.MJYvmJ)
+        })]
+      })]
+    }), (0, Chunk951288.jsx)(Chunk680018.z, {
+      variant: "secondary",
+      size: "sm",
+      text: Chunk388032.intl.string(Chunk119475.default.eGxkmp),
+      onClick: module,
+      fullWidth: true
+    })]
+  })
+}

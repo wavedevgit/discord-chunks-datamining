@@ -36,8 +36,8 @@ function S(e) {
     contentPosition: R,
     rowIndex: B,
     isVisibleInViewport: k,
-    onReceiveErrorHints: q,
-    sourceQuestContent: I
+    onReceiveErrorHints: I,
+    sourceQuestContent: q
   } = e, Q = s.useMemo(() => g.r.build(P.config), [P.config]), D = Q.defaultRewardName, V = Q.defaultRewardNameWithArticle, M = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, {
     ref: L,
     scrollHeight: W
@@ -79,7 +79,7 @@ function S(e) {
   }), F = (null == (n = P.userStatus) ? true : n.completedAt) != null, z = (null == (o = P.userStatus) ? true : o.claimedAt) != null, X = (0, m.xN)(P.config), K = (0, m.LM)(P.config), {
     completedRatio: Y,
     completedRatioDisplay: G
-  } = (0, f.I)(P), J = (0, f.Bd)(P, I), $ = s.useMemo(() => z && X ? y.intl.format(y.t["8Op4c3"], {
+  } = (0, f.I)(P), J = (0, f.Bd)(P, q), $ = s.useMemo(() => z && X ? y.intl.format(y.t["8Op4c3"], {
     balanceHook: () => (0, r.jsxs)(T, {
       questId: P.id,
       children: [(0, r.jsx)(p.Z, {
@@ -149,7 +149,7 @@ function S(e) {
                   autoplay: N,
                   onLoadComplete: U,
                   lazyLoad: true,
-                  sourceQuestContent: I
+                  sourceQuestContent: q
                 })
               })
             })]
@@ -161,7 +161,7 @@ function S(e) {
             location: v.dr.QUEST_HOME_DESKTOP,
             onLoadComplete: U,
             lazyLoad: true,
-            sourceQuestContent: I
+            sourceQuestContent: q
           })]
         })
       }), (0, r.jsxs)("div", {
@@ -193,8 +193,8 @@ function S(e) {
       questContent: A,
       contentPosition: R,
       rowIndex: B,
-      onReceiveErrorHints: q,
-      sourceQuestContent: I
+      onReceiveErrorHints: I,
+      sourceQuestContent: q
     })]
   })
 }

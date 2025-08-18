@@ -66,7 +66,7 @@ function k(e, t) {
   }), e
 }
 
-function q(e) {
+function I(e) {
   var t;
   let {
     quest: n,
@@ -130,7 +130,7 @@ function q(e) {
   })
 }
 
-function I(e) {
+function q(e) {
   let {
     quest: t,
     isHovering: n,
@@ -195,7 +195,7 @@ function Q(e) {
     className: R.container,
     children: [(0, r.jsx)("div", {
       className: R.heroAssetWrapper,
-      children: (0, r.jsx)(I, {
+      children: (0, r.jsx)(q, {
         quest: u,
         isHovering: m,
         showAssets: v
@@ -279,7 +279,7 @@ function Q(e) {
             })
           })]
         })]
-      }), (0, r.jsx)(q, {
+      }), (0, r.jsx)(I, {
         quest: u,
         errorHints: _,
         warningHints: j,
