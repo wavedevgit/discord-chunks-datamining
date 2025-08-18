@@ -13,7 +13,7 @@ require.d(exports, {
   bu: () => er,
   kb: () => W,
   s9: () => Y,
-  t9: () => X,
+  t9: () => Q,
   tr: () => et,
   vv: () => $,
   zM: () => K,
@@ -106,10 +106,10 @@ function B(e) {
 function V(e, t) {
   let n = [],
     r = e.getGuildId();
-  return [A.d4z.GUILD_CATEGORY, ...g.tx].includes(e.type) || n.push(new Promise(t => {
+  return [x.d4z.GUILD_CATEGORY, ...g.tx].includes(e.type) || n.push(new Promise(t => {
     E.Z.whenReady(e.id, () => t()), c.Z.fetchMessages({
       channelId: e.id,
-      limit: A.AQB
+      limit: x.AQB
     })
   })), Promise.all(n).then(() => {
     var n;
@@ -225,22 +225,22 @@ function K(e, t, n) {
 
 function q(e) {
   switch (e) {
-    case A.hes.RTC_CONNECTED:
-    case A.hes.RTC_CONNECTING:
-    case A.hes.RTC_DISCONNECTED:
+    case x.hes.RTC_CONNECTED:
+    case x.hes.RTC_CONNECTING:
+    case x.hes.RTC_DISCONNECTED:
       return e.replace(/^RTC_/, "VOICE_");
     default:
       return e
   }
 }
 
-function X(e, t, n) {
-  return e === A.mFx.JOIN && null != t && null != t.id && null != n.join
+function Q(e, t, n) {
+  return e === x.mFx.JOIN && null != t && null != t.id && null != n.join
 }
 
-function Q(e) {
+function X(e) {
   return o.tn.get({
-    url: A.ANM.APPLICATION_RPC(e),
+    url: x.ANM.APPLICATION_RPC(e),
     oldFormErrors: true,
     retries: 3,
     rejectWithError: true
@@ -251,24 +251,24 @@ function Q(e) {
     return t
   }, () => {
     throw new P.Z({
-      closeCode: A.$VG.INVALID_CLIENTID
+      closeCode: x.$VG.INVALID_CLIENTID
     }, "Invalid Client ID")
   })
 }
 async function J(e, t, n) {
   let r = d.Z.getApplication(t);
   if ("string" == typeof n)
-    if (e.transport === x.He.POST_MESSAGE) {
+    if (e.transport === A.He.POST_MESSAGE) {
       let e = (0, u.ZP)(t);
       if (null == e || !B(n, [e])) throw new P.Z({
-        closeCode: A.$VG.INVALID_ORIGIN
+        closeCode: x.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } else {
-      let e = await Q(t);
+      let e = await X(t);
       if (r = h.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new P.Z({
-        closeCode: A.$VG.INVALID_ORIGIN
+        closeCode: x.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
-    } null == r && (r = h.ZP.createFromServer(await Q(t)));
+    } null == r && (r = h.ZP.createFromServer(await X(t)));
   let {
     id: i,
     name: l,
@@ -290,7 +290,7 @@ async function $(e, t) {
 }
 
 function ee(e, t) {
-  null == t && (e.authorization.scopes = [x.lH])
+  null == t && (e.authorization.scopes = [A.lH])
 }
 
 function et(e) {
@@ -344,14 +344,14 @@ function en(e, t) {
 }
 
 function er(e) {
-  if (e !== x.He.POST_MESSAGE) throw new P.Z({
-    errorCode: A.lTL.INVALID_COMMAND
+  if (e !== A.He.POST_MESSAGE) throw new P.Z({
+    errorCode: x.lTL.INVALID_COMMAND
   }, 'command not available from "'.concat(e, " transport"))
 }
 
 function ei(e) {
   if (null == e.id) throw new P.Z({
-    errorCode: A.lTL.INVALID_COMMAND
+    errorCode: x.lTL.INVALID_COMMAND
   }, "Invalid application");
   return e.id
 }

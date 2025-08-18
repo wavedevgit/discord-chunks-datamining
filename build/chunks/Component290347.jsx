@@ -109,8 +109,8 @@ function P(e) {
     heroArtClassName: N,
     modalDismissibleContent: P,
     modalTopExtra: j,
-    header: x,
-    headerClassName: A,
+    header: A,
+    headerClassName: x,
     subHeader: Z,
     subHeaderExtra: w,
     featureCards: L,
@@ -120,7 +120,7 @@ function P(e) {
   } = e, {
     onClose: M,
     transitionState: U
-  } = n, G = (0, p.Dt)(), B = L.length % 2 == 0, V = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [H, F] = i.useState(Date.now()), [z, W] = i.useState(0), [Y, K] = i.useState(0), [q, X] = i.useState(false), [Q, J] = i.useState(true), $ = i.useRef(H), ee = i.useRef(z), et = i.useRef(Y), en = i.useRef(q), er = i.useRef(Q), [ei, el] = i.useState(S), ea = i.useRef(false);
+  } = n, G = (0, p.Dt)(), B = L.length % 2 == 0, V = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [H, F] = i.useState(Date.now()), [z, W] = i.useState(0), [Y, K] = i.useState(0), [q, Q] = i.useState(false), [X, J] = i.useState(true), $ = i.useRef(H), ee = i.useRef(z), et = i.useRef(Y), en = i.useRef(q), er = i.useRef(X), [ei, el] = i.useState(S), ea = i.useRef(false);
 
   function eo() {
     let e = Date.now(),
@@ -157,8 +157,8 @@ function P(e) {
       URL.revokeObjectURL(e.src)
     })
   }, [ei]), i.useEffect(() => {
-    $.current = H, ee.current = z, et.current = Y, en.current = q, er.current = Q
-  }, [H, z, Y, q, Q]), i.useEffect(() => () => {
+    $.current = H, ee.current = z, et.current = Y, en.current = q, er.current = X
+  }, [H, z, Y, q, X]), i.useEffect(() => () => {
     if ("video" === l.type || "embed" === l.type) {
       let [e, t] = eo();
       b.default.track(O.rMx.CHANGE_LOG_VIDEO_PLAYED, {
@@ -197,8 +197,8 @@ function P(e) {
       className: v.content,
       children: [(0, r.jsx)(s.X6q, {
         variant: "display-md",
-        className: a()(v.headerText, A),
-        children: x
+        className: a()(v.headerText, x),
+        children: A
       }), "video" === l.type ? (0, r.jsx)(f.Z, {
         className: a()(v.video, N),
         autoPlay: !V,
@@ -211,16 +211,16 @@ function P(e) {
         onPlay: e => {
           b.default.track(O.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
             change_log_id: R
-          }), F(Date.now()), X(true), J(e.currentTarget.muted)
+          }), F(Date.now()), Q(true), J(e.currentTarget.muted)
         },
         onEnded: e => {
-          eo(), J(e.currentTarget.muted), X(false)
+          eo(), J(e.currentTarget.muted), Q(false)
         },
         onVolumeChange: e => {
           eo(), J(e.currentTarget.muted)
         },
         onPause: e => {
-          eo(), J(e.currentTarget.muted), X(false)
+          eo(), J(e.currentTarget.muted), Q(false)
         },
         disablePictureInPicture: true,
         children: null == ei ? true : ei.map(e => {

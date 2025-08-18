@@ -114,7 +114,7 @@ let eu = e => {
       selected: t
     } = e, n = ec(e, ["selected"]);
     let l = (0, c.JA)("friends"),
-      a = (0, A.If)(),
+      a = (0, x.If)(),
       o = (0, d.e7)([R.Z], () => R.Z.canShowFriendsTabBadge()),
       u = (0, d.e7)([_.Z], () => _.Z.useReducedMotion),
       {
@@ -140,7 +140,7 @@ let eu = e => {
       children: [(0, r.jsx)(J.Qj, es(eo({
         onClick: () => {
           let e;
-          f ? (X.default.track(et.rMx.GIFT_INTENT_BADGE_CLICKED, {
+          f ? (Q.default.track(et.rMx.GIFT_INTENT_BADGE_CLICKED, {
             gift_intent_type: er.hX.FRIEND_ANNIVERSARY
           }), e = et.pJs.ALL, b.Z.setSection(et.pJs.ALL), (0, L.Gk)()) : e = q.ZP.getState().section, (0, O.Z)({
             tab_opened: e
@@ -261,7 +261,7 @@ let eu = e => {
   em = e => {
     let {
       isParentHovered: t
-    } = e, i = (0, x.gU)();
+    } = e, i = (0, A.gU)();
     return t ? (0, r.jsx)("div", {
       className: ea.familyCenterButtonContainer,
       children: (0, r.jsx)(J.bU, {

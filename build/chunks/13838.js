@@ -47,11 +47,11 @@ function j(e) {
     errorCode: T.lTL.INVALID_CHANNEL
   }, "Invalid nsfw channel id: ".concat(i.id))
 }
-let x = e => (0, v.Z)(e).keys({
+let A = e => (0, v.Z)(e).keys({
   channel_id: e.string().allow(null)
 });
 
-function A(e) {
+function x(e) {
   let {
     args: {
       channel_id: t
@@ -226,15 +226,15 @@ let Z = {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ, Chunk186901.lH]
     },
-    validation: x,
-    handler: A
+    validation: A,
+    handler: x
   },
   [Chunk981631.zMe.SPEAKING_STOP]: {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ, Chunk186901.lH]
     },
-    validation: x,
-    handler: A
+    validation: A,
+    handler: x
   },
   [Chunk981631.zMe.GUILD_CREATE]: {
     scope: Chunk243814.x.RPC,

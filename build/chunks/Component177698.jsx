@@ -68,11 +68,11 @@ let O = (0, Chunk703912.Z)(e => {
     disableGuildSelect: T,
     disclosures: P,
     integrationType: j,
-    pid: x,
-    signal: A
+    pid: A,
+    signal: x
   } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != j ? null == u ? true : u.get(j) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
-    let a = (0, h.jU)(x),
+    let a = (0, h.jU)(A),
       w = i.z1l;
     null != L && null != (0, l.ZP)({
       application: L,
@@ -123,7 +123,7 @@ let O = (0, Chunk703912.Z)(e => {
             null == t || t.removeEventListener("abort", n)
           }
         }
-      }(Z, A);
+      }(Z, x);
     (0, i.h7j)(e => (0, r.jsx)(o.OAuth2AuthorizeModal, _(b({}, e), {
       authorizations: u,
       clientId: n,

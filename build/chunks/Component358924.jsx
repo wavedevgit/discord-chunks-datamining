@@ -56,7 +56,7 @@ let K = [14, 14, 12, 12, 10, 8, 6],
       children: e
     })
   },
-  X = function(e) {
+  Q = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
     return (0, i.jsx)(u.Text, {
       className: o()(Y.textContent, t),
@@ -64,7 +64,7 @@ let K = [14, 14, 12, 12, 10, 8, 6],
       children: e
     })
   },
-  Q = (0, Chunk438139.Z)(e => {
+  X = (0, Chunk438139.Z)(e => {
     let {
       message: t
     } = e;
@@ -89,7 +89,7 @@ class $ extends Chunk647438.Component {
     } = this.props, {
       timestamps: t
     } = module;
-    return null == exports || !(0, Chunk833664.Z)(module) || (0, Chunk503438.Z)(module) ? null : X((0, Chunk122810.Z)(module) ? (0, Chunk951288.jsx)(Q, {
+    return null == exports || !(0, Chunk833664.Z)(module) || (0, Chunk503438.Z)(module) ? null : Q((0, Chunk122810.Z)(module) ? (0, Chunk951288.jsx)(X, {
       timestamps: exports
     }) : (0, Chunk951288.jsx)(Chunk707409.ZP, {
       start: exports.start,
@@ -133,7 +133,7 @@ class $ extends Chunk647438.Component {
             className: Chunk84822.largeImage
           })
         }), (0, Chunk951288.jsxs)("div", {
-          children: [q(null != Chunk647438 && "" !== Chunk647438 ? Chunk647438 : Chunk388032.intl.string(Chunk388032.t["2TbM/P"])), null != Chunk120356 ? X(Chunk120356) : null, this.renderTimePlayed()]
+          children: [q(null != Chunk647438 && "" !== Chunk647438 ? Chunk647438 : Chunk388032.intl.string(Chunk388032.t["2TbM/P"])), null != Chunk120356 ? Q(Chunk120356) : null, this.renderTimePlayed()]
         })]
       })
     })
@@ -354,7 +354,7 @@ er.Header = en, er.Body = e => {
         },
         children: (0, i.jsxs)("div", {
           className: Y.voiceSectionDetails,
-          children: [q(n.name, Y.voiceSectionText), X(f, Y.voiceSectionText)]
+          children: [q(n.name, Y.voiceSectionText), Q(f, Y.voiceSectionText)]
         })
       }), (0, i.jsx)(F.Z, {
         partySize: a,
@@ -378,7 +378,7 @@ er.Header = en, er.Body = e => {
         src: t,
         className: Y.gameSectionIcon
       }) : null, (0, i.jsxs)("div", {
-        children: [q(n), X(W.intl.formatToPlainString(W.t.C4WXvb, {
+        children: [q(n), Q(W.intl.formatToPlainString(W.t.C4WXvb, {
           memberCount: r.totalSize
         }))]
       }), (0, i.jsx)(F.Z, {
@@ -398,7 +398,7 @@ er.Header = en, er.Body = e => {
         className: Y.xboxSectionIcon
       }), (0, i.jsxs)("div", {
         className: Y.__invalid_xboxSectionDetails,
-        children: [q(t), X(W.intl.string(W.t["JG9r+/"]))]
+        children: [q(t), Q(W.intl.string(W.t["JG9r+/"]))]
       })]
     })
   })
@@ -432,7 +432,7 @@ er.Header = en, er.Body = e => {
           color: c.Z.unsafe_rawColors.SPOTIFY.css
         })]
       }) : (0, i.jsx)("div", {}), (0, i.jsxs)("div", {
-        children: [null != r ? q(r) : null, null != l ? X(l) : null]
+        children: [null != r ? q(r) : null, null != l ? Q(l) : null]
       }), (0, i.jsx)(F.Z, {
         minAvatarsShown: d ? 2 : 1,
         partySize: s,
@@ -485,7 +485,7 @@ er.Header = en, er.Body = e => {
         src: h.Z.get(z.ABu.TWITCH).icon.lightSVG,
         className: Y.twitchSectionIcon
       }), (0, i.jsxs)("div", {
-        children: [q(c), null != d ? X(d) : null]
+        children: [q(c), null != d ? Q(d) : null]
       }), null != l ? (0, i.jsx)(u.qEK, {
         src: l.getAvatarURL(s, 24),
         "aria-label": l.username,
@@ -505,7 +505,7 @@ er.Header = en, er.Body = e => {
   } = e, d = (0, s.e7)([k.Z], () => k.Z.getChannel(a.channelId)), [p, f] = (0, j.wq)(d), h = (0, i.jsxs)(u.P3F, {
     onClick: p ? o : true,
     className: Y.applicationStreamingPreviewWrapper,
-    children: [(0, i.jsx)(x.Z, {
+    children: [(0, i.jsx)(A.Z, {
       stream: a,
       className: Y.applicationStreamingPreviewSize
     }), (0, i.jsx)(u.Text, {
@@ -524,7 +524,7 @@ er.Header = en, er.Body = e => {
         "aria-label": l.username,
         className: Y.applicationStreamingAvatar
       }), (0, i.jsxs)("div", {
-        children: [q(H.ZP.getName(l)), X(g)]
+        children: [q(H.ZP.getName(l)), Q(g)]
       }), (0, i.jsx)(S.ZP, {
         size: S.ZP.Sizes.SMALL
       })]
@@ -573,7 +573,7 @@ er.Header = en, er.Body = e => {
         children: (0, i.jsx)(u.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
-          children: (0, i.jsx)(Q, {
+          children: (0, i.jsx)(X, {
             timestamps: _
           })
         })

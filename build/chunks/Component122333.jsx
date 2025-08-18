@@ -50,7 +50,7 @@ function j(e) {
   return e
 }
 
-function x(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,15 +63,15 @@ function x(e, t) {
   }), e
 }
 
-function A() {
+function x() {
   null != r && (0, Chunk481060.Mr3)(r)
 }
 class Z extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.subscribe("LOGOUT", A)
+    Chunk570140.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.subscribe("LOGOUT", x)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.unsubscribe("LOGOUT", A)
+    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.unsubscribe("LOGOUT", x)
   }
   handleConnectionOpen() {
     var e;
@@ -88,9 +88,9 @@ class Z extends Chunk317770.Z {
         Chunk390885.Z.flowStart(Chunk630724.MK.ORGANIC_MARKETING, Chunk630724.EW.NUF_STARTED)
     }
     let o = false,
-      A = Chunk914010.Z.getGuildId();
+      x = Chunk914010.Z.getGuildId();
     if (Chunk570140 === Chunk701476.M5.INVITE_UNCLAIMED) {
-      let e = Chunk430824.Z.getGuild(A);
+      let e = Chunk430824.Z.getGuild(x);
       null != module && (0, Chunk983736.Dc)(module) && (o = true, (0, Chunk524329.RM)(module.id))
     }
     let Z = () => 0 === Chunk486472.Z.totalGuilds && !Chunk358085.isPlatformEmbedded,
@@ -131,7 +131,7 @@ class Z extends Chunk317770.Z {
           let {
             default: e
           } = await Promise.all([n.e("71172"), n.e("1337"), n.e("42483"), n.e("63359")]).then(n.bind(n, 599219));
-          return n => (0, i.jsx)(e, x(j({}, n), {
+          return n => (0, i.jsx)(e, A(j({}, n), {
             onSlideChange: t
           }))
         }, {
@@ -154,7 +154,7 @@ class Z extends Chunk317770.Z {
       }
     }, {
       key: "Verification Gate with Claim Account",
-      open: e => (0, u.hk)(A, null != e ? e : true),
+      open: e => (0, u.hk)(x, null != e ? e : true),
       predicate: () => {
         var e;
         return Chunk317770 && !(null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isClaimed()) && !Chunk188785.a
@@ -165,13 +165,13 @@ class Z extends Chunk317770.Z {
         let {
           default: e
         } = await n.e("90542").then(n.bind(n, 184782));
-        return t => (0, i.jsx)(e, x(j({}, t), {
-          guildId: A
+        return t => (0, i.jsx)(e, A(j({}, t), {
+          guildId: x
         }))
       }, {
         onCloseCallback: e
       }),
-      predicate: () => null != A && null != Chunk995532.Z.get(A) && Chunk995532.Z.get(A) !== Chunk995532.a
+      predicate: () => null != x && null != Chunk995532.Z.get(x) && Chunk995532.Z.get(x) !== Chunk995532.a
     }], t = () => {
       Chunk929809.H(), Chunk390885.Z.flowStep(Chunk630724.MK.ANY, Chunk630724.EW.NUF_COMPLETE, true)
     }, [...module].reverse().forEach(e => {

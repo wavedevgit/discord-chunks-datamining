@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk677372 = require("./677372.js");
 
-function A(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -84,7 +84,7 @@ let L = e => {
       color: t
     } = e;
     return (0, r.jsx)(s.IGR, {
-      className: x.newBadge,
+      className: A.newBadge,
       color: null != t ? t : m.Z.STATUS_DANGER_BACKGROUND,
       text: j.intl.string(j.t.y2b7CA)
     })
@@ -130,7 +130,7 @@ let L = e => {
       }, [_, O, o, v, c]),
       C = T.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
-      children: [y && (0, r.jsx)(R, {}), (0, r.jsx)(u.Qj, Z(A({
+      children: [y && (0, r.jsx)(R, {}), (0, r.jsx)(u.Qj, Z(x({
         selected: t,
         route: C,
         icon: null != a ? a : s.EOn,
@@ -144,7 +144,7 @@ let L = e => {
       }))]
     })
   },
-  k = e => (0, r.jsx)(D, Z(A({}, e), {
+  k = e => (0, r.jsx)(D, Z(x({}, e), {
     children: (0, r.jsx)(L, {})
   })),
   M = Chunk647438.memo(function(e) {
@@ -155,24 +155,24 @@ let L = e => {
       reducedMotion: l = false
     } = e, a = null != i ? (0, g.Z)(i, s.EFr.SIZE_80, !l) : true, o = n.title(), c = null == (t = n.body) ? true : t.call(n), u = null == c || "" === c;
     return (0, r.jsxs)("div", {
-      className: x.shopMarketingTooltipContent,
+      className: A.shopMarketingTooltipContent,
       children: [(0, r.jsx)("div", {
-        className: x.avatarContainer,
+        className: A.avatarContainer,
         children: (0, r.jsx)(s.qEK, {
-          className: x.avatar,
+          className: A.avatar,
           src: n.imageSrc,
           avatarDecoration: a,
           size: s.EFr.SIZE_80,
           "aria-hidden": true
         })
       }), (0, r.jsxs)("div", {
-        className: x.shopMarketingTooltipText,
+        className: A.shopMarketingTooltipText,
         children: [(0, r.jsx)(s.X6q, {
           variant: u ? "heading-sm/medium" : "heading-sm/bold",
           children: o
         }), !u && (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
-          className: x.marketingBadgeTooltipContent,
+          className: A.marketingBadgeTooltipContent,
           children: c
         })]
       })]
@@ -203,27 +203,27 @@ let L = e => {
         assetId: I.assetIds[N],
         reducedMotion: S
       }),
-      tooltipClassName: x.marketingBadgeTooltip,
+      tooltipClassName: A.marketingBadgeTooltip,
       position: "right",
       delay: 100,
       allowOverflow: true,
       hideOnClick: false,
       "aria-label": "string" == typeof V ? V : j.intl.string(j.t.rSXaxc),
-      children: e => (0, r.jsxs)(D, Z(A(Z(A({
-        className: null != I.entryPointClassName ? (0, O.l)(x, I.entryPointClassName) : true
+      children: e => (0, r.jsxs)(D, Z(x(Z(x({
+        className: null != I.entryPointClassName ? (0, O.l)(A, I.entryPointClassName) : true
       }, C), {
         icon: I.entryPointIcon
       }), e), {
         onMouseEnter: () => G(e.onMouseEnter),
         onMouseLeave: () => B(e.onMouseLeave),
         children: [(0, r.jsx)("div", {
-          className: x.marketingButtonBackground,
+          className: A.marketingButtonBackground,
           style: {
             background: n
           },
           children: null != t && (0, r.jsx)("img", {
             src: t,
-            className: x.marketingButtonBackgroundImage,
+            className: A.marketingButtonBackgroundImage,
             alt: "",
             "aria-hidden": true
           })
@@ -242,7 +242,7 @@ let L = e => {
       let n = null != t.emojiName ? null == (e = b.ZP.getByName(t.emojiName)) ? true : e.surrogates : null;
       return (0, r.jsxs)(s.Text, {
         variant: "text-sm/medium",
-        className: x.marketingBadgeTooltipContent,
+        className: A.marketingBadgeTooltipContent,
         children: [null != n && (0, r.jsx)(c.Z, {
           emojiName: n
         }), t.title()]
@@ -250,12 +250,12 @@ let L = e => {
     }, [t]);
     return (0, r.jsx)(s.ua7, {
       text: l,
-      tooltipClassName: x.marketingBadgeTooltip,
+      tooltipClassName: A.marketingBadgeTooltip,
       position: "right",
       delay: 100,
       hideOnClick: false,
       "aria-label": t.title(),
-      children: e => (0, r.jsx)(D, Z(A({}, n, e), {
+      children: e => (0, r.jsx)(D, Z(x({}, n, e), {
         children: (0, r.jsx)(L, {
           color: t.badgeColor
         })
@@ -275,11 +275,11 @@ let L = e => {
         onShopButtonClick: s
       } = a,
       c = w(a, ["positionControlRef", "onShopButtonClick"]);
-    return (0, r.jsx)(_.Pk, Z(A({
+    return (0, r.jsx)(_.Pk, Z(x({
       targetElementRef: l,
       positionControlRef: o
     }, c), {
-      children: (0, r.jsx)(D, Z(A({}, n), {
+      children: (0, r.jsx)(D, Z(x({}, n), {
         listItemRef: l,
         collectibleShopTab: N.AW.ORBS,
         onClick: s
@@ -300,17 +300,17 @@ let L = e => {
       g = p ? null == f ? true : f.srcDarkHovered : null == f ? true : f.srcLightHovered,
       m = p ? null == h || null == (t = h.hovered) ? true : t.dark : null == h || null == (n = h.hovered) ? true : n.light;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(D, Z(A({}, s), {
+      children: [(0, r.jsxs)(D, Z(x({}, s), {
         onClick: () => a(P.L.TAKE_ACTION),
         listItemRef: c,
         children: [(0, r.jsx)("div", {
-          className: x.marketingButtonBackground,
+          className: A.marketingButtonBackground,
           style: null != m ? {
             background: m
           } : true,
           children: null != g && (0, r.jsx)("img", {
             src: g,
-            className: x.marketingButtonBackgroundImage,
+            className: A.marketingButtonBackgroundImage,
             alt: "",
             "aria-hidden": true
           })
@@ -343,26 +343,26 @@ let L = e => {
       },
       listItemRef: l
     };
-    if (o) return (0, r.jsx)(B, Z(A({}, u), {
+    if (o) return (0, r.jsx)(B, Z(x({}, u), {
       listScrollerRef: a
     }));
     if (null != s) switch (s.type) {
       case S.k2.TOOLTIP:
-        return (0, r.jsx)(G, Z(A({}, u), {
+        return (0, r.jsx)(G, Z(x({}, u), {
           displayOptions: s
         }));
       case S.k2.COACHTIP:
-        return (0, r.jsx)(U, Z(A({}, u), {
+        return (0, r.jsx)(U, Z(x({}, u), {
           displayOptions: s
         }));
       case S.k2.BADGE:
-        return (0, r.jsx)(k, A({}, u));
+        return (0, r.jsx)(k, x({}, u));
       case S.k2.COACHMARK:
-        return (0, r.jsx)(V, Z(A({
+        return (0, r.jsx)(V, Z(x({
           dismissContent: c
         }, u), {
           displayOptions: s
         }))
     }
-    return (0, r.jsx)(D, A({}, u))
+    return (0, r.jsx)(D, x({}, u))
   }

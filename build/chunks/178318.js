@@ -106,7 +106,7 @@ class j extends Chunk76238.Z {
     this._socket = e
   }
 }
-class x extends Chunk76238.Z {
+class A extends Chunk76238.Z {
   send(e) {
     (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY) && I.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
   }
@@ -120,7 +120,7 @@ class x extends Chunk76238.Z {
     this._sendCallback = e, this._closeCallback = t
   }
 }
-class A extends Chunk836560.EventEmitter {
+class x extends Chunk836560.EventEmitter {
   handleRequest(e, t) {
     let [n, r] = S(e.url).split("?"), i = S(e.method);
     if ("/rpc" === n && "OPTIONS" === i) return void T(e, t, {
@@ -138,7 +138,7 @@ class A extends Chunk836560.EventEmitter {
           } = null != (r = d.Z.toURLSafe(null != (e = n.get("callback")) ? e : "")) ? r : {};
           i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", v), t.writeHead(301), t.end()
         },
-        s = new x(!l ? o : T.bind(null, e, t), !l ? o : P.bind(null, e, t, 400), Number(n.get("v")), i);
+        s = new A(!l ? o : T.bind(null, e, t), !l ? o : P.bind(null, e, t, 400), Number(n.get("v")), i);
       if (l)(0, m.em)(s, S(e.headers).origin, n.get("client_id")).then(() => {
         let n = "";
         e.on("data", e => n += e), e.on("error", () => P(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
@@ -204,4 +204,4 @@ class A extends Chunk836560.EventEmitter {
     new y.ws.Server(require).on("connection", e => this.handleConnection(e))
   }
 }
-let Z = new A
+let Z = new x

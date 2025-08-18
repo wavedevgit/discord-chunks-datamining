@@ -72,8 +72,8 @@ let B = e => {
         return i
       }(e, ["selected", "nitroTabButtonRef", "route", "locationState"]);
     let q = (0, a.e7)([g.default], () => g.default.getCurrentUser()),
-      X = (0, a.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()),
-      Q = (0, _.Qo)(q, X),
+      Q = (0, a.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()),
+      X = (0, _.Qo)(q, Q),
       {
         enabled: J,
         variant: $
@@ -130,7 +130,7 @@ let B = e => {
     let ey = () => {
       eh === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eg(U.L.TAKE_ACTION), b.default.track(M.rMx.NITRO_TAB_VISITED, {
         badge_decorator: O,
-        has_premium: Q
+        has_premium: X
       }), null != eO && eE(U.L.USER_DISMISS)
     };
     if (ed === k.a$.NONE || ei || (O = 7, n = (0, r.jsx)(S.Z, {
@@ -142,12 +142,12 @@ let B = e => {
       })), el) n = (0, r.jsx)(P.Z, {}), O = 0;
     else if (ea) {
       let e = (0, j.$q)();
-      n = (0, r.jsx)(A._y, {
+      n = (0, r.jsx)(x._y, {
         isTabSelected: F,
         badgeCopy: G.intl.string(G.t.OS9KPj),
         offerExpiresAt: true === e ? null == en ? true : en.expires_at : null
       }), O = 4
-    } else eO === o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE ? (n = (0, r.jsx)(A._y, {
+    } else eO === o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE ? (n = (0, r.jsx)(x._y, {
       isTabSelected: F,
       badgeCopy: G.intl.string(G.t.y2b7CA),
       offerExpiresAt: null
@@ -156,7 +156,7 @@ let B = e => {
     }), O = 4) : null != eo ? (n = (0, r.jsx)(D.Z, {
       copy: eo,
       showStars: false
-    }), O = 1) : null != er ? (n = (0, r.jsx)(A.GN, {
+    }), O = 1) : null != er ? (n = (0, r.jsx)(x.GN, {
       userDiscount: er,
       isTabSelected: F,
       includesAmountOff: false
@@ -165,19 +165,19 @@ let B = e => {
       onSelect: () => (0, f.Q3)(o.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
         dismissAction: U.L.TAKE_ACTION
       })
-    }), O = 6) : (n = (0, r.jsx)(A.$H, {
+    }), O = 6) : (n = (0, r.jsx)(x.$H, {
       trialOffer: en,
       isTabSelected: F
     }), O = 4);
     let ev = G.intl.string(G.t.Ipxkoq);
-    Q && ee && (ev = G.intl.string(G.t["4gwVVl"])), !Q && J && ($ === v.Rx.TRY_NITRO && null != en ? ev = G.intl.string(G.t["3O6A4e"]) : $ === v.Rx.JOIN_NITRO ? ev = G.intl.string(G.t.brBiOz) : $ === v.Rx.GET_NITRO && (ev = G.intl.string(G.t.GayC1t))), es && ec.cohort !== I.xI.Control && (n = (0, r.jsx)(A._y, {
+    X && ee && (ev = G.intl.string(G.t["4gwVVl"])), !X && J && ($ === v.Rx.TRY_NITRO && null != en ? ev = G.intl.string(G.t["3O6A4e"]) : $ === v.Rx.JOIN_NITRO ? ev = G.intl.string(G.t.brBiOz) : $ === v.Rx.GET_NITRO && (ev = G.intl.string(G.t.GayC1t))), es && ec.cohort !== I.xI.Control && (n = (0, r.jsx)(x._y, {
       isTabSelected: F,
       badgeCopy: G.intl.string(G.t.RDE0SU),
       offerExpiresAt: null
     }), O = 4, ey = () => {
       b.default.track(M.rMx.NITRO_TAB_VISITED, {
         badge_decorator: O,
-        has_premium: Q
+        has_premium: X
       }), (0, j.ZL)()
     });
     let eI = (0, r.jsx)(c.Qj, (V = function(e) {
@@ -218,7 +218,7 @@ let B = e => {
     })(Object(H)).forEach(function(e) {
       Object.defineProperty(V, e, Object.getOwnPropertyDescriptor(H, e))
     }), V));
-    return es && ec.cohort === I.xI.Static ? (0, r.jsx)(x.X, {
+    return es && ec.cohort === I.xI.Static ? (0, r.jsx)(A.X, {
       children: eI
     }) : eu ? (0, r.jsx)(Z.C, {
       children: eI

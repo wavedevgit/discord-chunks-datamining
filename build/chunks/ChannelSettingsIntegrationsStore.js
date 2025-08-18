@@ -2,7 +2,7 @@
 /** chunk id: 533947, original params: e,t,n (module,exports,require) **/
 let r, i, l;
 require.d(exports, {
-  Z: () => A
+  Z: () => x
 }), require("./539854.js"), require("./388685.js");
 var a, Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
@@ -52,7 +52,7 @@ function N() {
   v = Chunk981631.QZA.OPEN, I = {}, C = false
 }
 let T = s().debounce(() => {
-  C && ((null == E || s().isEqual(E, P(E.id))) && (C = false), C || x.emitChange())
+  C && ((null == E || s().isEqual(E, P(E.id))) && (C = false), C || A.emitChange())
 }, 500);
 
 function P(e) {
@@ -99,7 +99,7 @@ class j extends(a = Chunk442837.ZP.Store) {
   }
 }
 b(j, "displayName", "ChannelSettingsIntegrationsStore");
-let x = new j(Chunk570140.Z, __OVERLAY__ ? {} : {
+let A = new j(Chunk570140.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_INIT: N,
     INTEGRATION_SETTINGS_SAVE_SUCCESS: N,
     CHANNEL_SETTINGS_SET_SECTION: function(e) {
@@ -179,4 +179,4 @@ let x = new j(Chunk570140.Z, __OVERLAY__ ? {} : {
       v = m.QZA.OPEN, I = null != (t = e.errors) ? t : {}
     }
   }),
-  A = x
+  x = A

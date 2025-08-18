@@ -227,7 +227,7 @@ let el = e => {
           align: "center"
         },
         shouldShow: true,
-        onRequestClose: () => l(X.L.USER_DISMISS),
+        onRequestClose: () => l(Q.L.USER_DISMISS),
         targetElementRef: e.targetElementRef
       };
       return i === u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK ? (0, r.jsxs)(r.Fragment, {
@@ -236,7 +236,7 @@ let el = e => {
           body: J.intl.string(J.t.apPgJC),
           actions: [{
             text: J.intl.string(J.t.LNoAQU),
-            onClick: () => l(X.L.TAKE_ACTION)
+            onClick: () => l(Q.L.TAKE_ACTION)
           }]
         })) : (0, r.jsx)(d.J2, en(et({}, a), {
           title: J.intl.string(J.t.hRT8tb),
@@ -245,12 +245,12 @@ let el = e => {
             text: J.intl.string(J.t.JN6EOD),
             onClick: e => {
               e.stopPropagation(), h.Z.open(q.oAB.CONTENT_AND_SOCIAL, null, {
-                scrollPosition: Q.FY.MESSAGE_REQUESTS_V2
-              }), l(X.L.TAKE_ACTION)
+                scrollPosition: X.FY.MESSAGE_REQUESTS_V2
+              }), l(Q.L.TAKE_ACTION)
             }
           }, {
             text: J.intl.string(J.t.LNoAQU),
-            onClick: () => l(X.L.USER_DISMISS),
+            onClick: () => l(Q.L.USER_DISMISS),
             variant: "secondary"
           }]
         }))]
@@ -270,13 +270,13 @@ let eo = (0, Chunk112724.Z)(function(e) {
     width: t
   } = e, n = (0, V.q)();
   (0, b.ZP)(() => {
-    f.Y(q.Z5c.MESSAGE_REQUESTS), (0, x.e)("message-requests"), R.default.track(q.rMx.MESSAGE_REQUESTS_VIEWED, {
+    f.Y(q.Z5c.MESSAGE_REQUESTS), (0, A.e)("message-requests"), R.default.track(q.rMx.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
     }), N.Z.increment({
       name: s.V.MESSAGE_REQUEST_VIEW
     })
   });
-  let l = (0, c.e7)([A.Z], () => A.Z.theme),
+  let l = (0, c.e7)([x.Z], () => x.Z.theme),
     o = (0, F.w)(),
     [u, d] = i.useState(false),
     h = (0, c.e7)([Z.ZP], () => {

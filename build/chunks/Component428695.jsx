@@ -67,8 +67,8 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       }),
       children: n
     }));
-    let x = null;
-    "function" == typeof l ? x = l() : null != l && (x = (0, r.jsx)(c.Text, {
+    let A = null;
+    "function" == typeof l ? A = l() : null != l && (A = (0, r.jsx)(c.Text, {
       className: a()({
         [h.center]: N
       }),
@@ -76,7 +76,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       color: "text-muted",
       children: l
     }));
-    let A = null != _ ? "".concat(_, "px") : "16px";
+    let x = null != _ ? "".concat(_, "px") : "16px";
     return (0, r.jsxs)("div", {
       className: a()(h.container, T),
       children: [true === y ? null : (0, r.jsx)(c.P3F, {
@@ -96,8 +96,8 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
         className: h.imageContainer,
         style: {
           marginTop: "".concat(O, "px"),
-          marginLeft: A,
-          marginRight: A
+          marginLeft: x,
+          marginRight: x
         },
         children: (0, r.jsx)("img", {
           className: h.image,
@@ -107,7 +107,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
         })
       }), (0, r.jsxs)("div", {
         className: h.message,
-        children: [j, x, P]
+        children: [j, A, P]
       })]
     })
   }

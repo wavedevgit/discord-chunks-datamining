@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 270759, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => x
 }), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js"), require("./704826.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk236202 = require("./236202.js");
 
-function x() {
+function A() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk236202.inviteToolbar,
     children: (0, Chunk951288.jsx)(Chunk518311.Z, {
@@ -40,7 +40,7 @@ function x() {
     })
   })
 }
-let A = function(e) {
+let x = function(e) {
   let {
     initialSection: t
   } = e, n = (0, o.TH)(), l = (0, o.k6)();
@@ -55,7 +55,7 @@ let A = function(e) {
     p.Y(N.Z5c.FRIENDS), (0, E.e)("friends")
   }, []);
   let _ = (0, c.e7)([y.Z], () => y.Z.theme),
-    A = (0, I.If)(),
+    x = (0, I.If)(),
     {
       section: Z,
       rows: w
@@ -86,13 +86,13 @@ let A = function(e) {
       id: N.pJs.PENDING,
       show: w.filter(N.pJs.PENDING).length > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [P.intl.string(P.t.p6IHGB), A > 0 && (0, r.jsx)(u.mAB, {
-          count: A,
+        children: [P.intl.string(P.t.p6IHGB), x > 0 && (0, r.jsx)(u.mAB, {
+          count: x,
           className: j.badge
         })]
       }),
       ariaLabel: P.intl.formatToPlainString(P.t.OAC0Z2, {
-        count: A.toString()
+        count: x.toString()
       }),
       className: j.item
     }, {
@@ -126,7 +126,7 @@ let A = function(e) {
       theme: _,
       children: e => (0, r.jsxs)(b.Z, {
         className: e,
-        toolbar: (0, r.jsx)(x, {}),
+        toolbar: (0, r.jsx)(A, {}),
         scrollable: s.tq,
         role: "navigation",
         "aria-labelledby": k,

@@ -578,7 +578,7 @@ class ep extends Chunk647438.PureComponent {
       } = this.props;
       return (0, r.jsx)(m.Z, {
         section: el.jXE.HERO,
-        children: (0, r.jsx)(X.Z, {
+        children: (0, r.jsx)(Q.Z, {
           pageSize: n,
           items: t.carouselItems.map(n => this.parseMediaItems(e, n, t.assets)),
           autoplayInterval: 8e3,
@@ -633,8 +633,8 @@ let ef = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
     }),
     isInTestMode: null != l && c,
     matureAgree: L.Z.didMatureAgree,
-    theme: x.Z.theme,
+    theme: A.Z.theme,
     locale: j.default.locale,
-    guild: null != s ? A.Z.getGuild(s.getGuildId()) : null
+    guild: null != s ? x.Z.getGuild(s.getGuildId()) : null
   }
 })(ep)))

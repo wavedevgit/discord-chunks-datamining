@@ -31,7 +31,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk117554 = require("./117554.js");
 
-function A(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,7 +47,7 @@ function Z(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -82,8 +82,8 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     return (0, i.jsx)(f.ua7, {
       text: l,
       children: e => (0, i.jsx)(n, Z({
-        className: o()(x.settingIcon, {
-          [x.hidden]: !a
+        className: o()(A.settingIcon, {
+          [A.hidden]: !a
         })
       }, e))
     })
@@ -99,18 +99,18 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       children: [(0, i.jsx)(E.Z, {
         game: e.application,
         size: E.Z.Sizes.SMALL,
-        className: x.gameIcon
+        className: A.gameIcon
       }), (0, i.jsxs)("div", {
-        className: x.nameCellInfo,
+        className: A.nameCellInfo,
         children: [(0, i.jsx)("div", {
-          className: x.nameCellText,
+          className: A.nameCellText,
           children: e.libraryApplication.getBranchedName(e.application)
         }), e.libraryApplication.hasFlag(P.eHb.PREMIUM) ? (0, i.jsx)(f.ua7, {
           text: j.intl.string(j.t.tG2SzM),
           children: e => (0, i.jsx)(f.SrA, Z({
             size: "md",
             color: "currentColor",
-            className: x.nitroIcon
+            className: A.nitroIcon
           }, e))
         }) : null]
       })]
@@ -142,7 +142,7 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       }) : j.intl.string(j.t.EoWLrq), (0, i.jsx)(_.Z, {
         align: _.Z.Align.CENTER,
         className: o()({
-          [x.lastPlayedCellNew]: e.isNew
+          [A.lastPlayedCellNew]: e.isNew
         }),
         children: t
       })
@@ -157,7 +157,7 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       let s = e.key === t.activeRowKey;
       return (0, i.jsxs)(l.Fragment, {
         children: [(0, i.jsxs)("div", {
-          className: x.settingIcons,
+          className: A.settingIcons,
           children: [(0, i.jsx)(k, {
             flag: P.eHb.PRIVATE,
             item: e,
@@ -169,8 +169,8 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
             icon: f.o8v,
             tooltip: j.intl.string(j.t.Az9eqq)
           }), (0, i.jsx)(T.Z, {
-            className: o()(x.settingIcon, {
-              [x.hidden]: !e.supportsCloudSync
+            className: o()(A.settingIcon, {
+              [A.hidden]: !e.supportsCloudSync
             }),
             libraryApplication: e.libraryApplication
           })]
@@ -181,7 +181,7 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
           libraryApplication: e.libraryApplication,
           color: s ? p.zx.Colors.GREEN : p.zx.Colors.PRIMARY,
           isPlayShiny: s && e.defaultAction === P.apO.PLAY,
-          size: x.actionButtonSize,
+          size: A.actionButtonSize,
           hideProgress: null != e.defaultAction,
           onDropdownOpen: () => null != t && t.setActiveRowKey(e),
           onDropdownClose: () => null != t && t.clearActiveRowKey()
@@ -219,10 +219,10 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       p = t.key === r;
     return (0, i.jsx)("div", {
       className: o()({
-        [x.rowWrapperActive]: d && !p,
-        [x.rowWrapperGlow]: p,
-        [x.rowWrapper]: !d && !p,
-        [x.rowWrapperDim]: !d && !t.isLaunchable
+        [A.rowWrapperActive]: d && !p,
+        [A.rowWrapperGlow]: p,
+        [A.rowWrapper]: !d && !p,
+        [A.rowWrapperDim]: !d && !t.isLaunchable
       }),
       ref: e => {
         c(e, t.key)
@@ -388,24 +388,24 @@ class G extends(r = Chunk647438.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), A(this, "_didUnmount", false), A(this, "_rowRefs", {}), A(this, "state", {
+    super(...e), x(this, "_didUnmount", false), x(this, "_rowRefs", {}), x(this, "state", {
       overflowMenuRowKey: null,
       highlightedApplicationKey: null != this.props.location.state ? this.props.location.state.applicationId : null
-    }), A(this, "setActiveRowKey", e => {
+    }), x(this, "setActiveRowKey", e => {
       this.setState({
         overflowMenuRowKey: e.key
       })
-    }), A(this, "clearActiveRowKey", () => {
+    }), x(this, "clearActiveRowKey", () => {
       this._didUnmount || this.setState({
         overflowMenuRowKey: null
       })
-    }), A(this, "handleRowMouseEnter", e => {
+    }), x(this, "handleRowMouseEnter", e => {
       this.props.isNavigatingByKeyboard || m.wX(e.key)
-    }), A(this, "handleRowMouseLeave", () => {
+    }), x(this, "handleRowMouseLeave", () => {
       this.props.isNavigatingByKeyboard || m.wX(null)
-    }), A(this, "setRowRef", (e, t) => {
+    }), x(this, "setRowRef", (e, t) => {
       this._rowRefs[t] = e
-    }), A(this, "handleApplicationContextMenu", (e, t) => {
+    }), x(this, "handleApplicationContextMenu", (e, t) => {
       this.setActiveRowKey(t);
       let {
         analyticsContext: r
@@ -461,6 +461,6 @@ function B(e) {
     isNavigatingByKeyboard: f
   }))
 }
-A(G, "defaultProps", {
+x(G, "defaultProps", {
   stickyHeader: false
 })

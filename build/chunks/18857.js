@@ -11,27 +11,27 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e, t, n) {
+function u(e, t) {
   let {
-    analyticsLocations: u
+    analyticsLocations: n
   } = (0, l.ZP)(t);
   return r.useCallback(() => {
     (0, i.yw)(s.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: {
-        section: n
+        source: t
       },
       guild_id: e.id,
-      location_stack: u
+      location_stack: n
     }), (0, o.Z)({
-      analyticsLocations: u,
+      analyticsLocations: n,
       analyticsSourceLocation: {
         page: s.ZY5.GUILD_CHANNEL,
-        section: n,
+        source: t,
         object: s.qAy.TOOLTIP
       },
       guild: e,
       perks: (0, a.VF)(),
       perkIntro: c.intl.string(c.t.ZhvSn5)
     })
-  }, [u, n, e])
+  }, [n, t, e])
 }

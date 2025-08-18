@@ -3,7 +3,7 @@
 require.d(exports, {
   Eo: () => j,
   VD: () => T,
-  ZP: () => x
+  ZP: () => A
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,7 +35,7 @@ function T(e) {
     guild: t,
     onClick: l,
     onView: o
-  } = e, [h, g] = i.useState(false), [O, T] = i.useState(false), [P, j] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
+  } = e, [h, g] = i.useState(false), [O, T] = i.useState(false), [P, j] = i.useState(false), A = i.useRef(null), x = i.useCallback(async () => {
     T(true);
     try {
       await l(t.id)
@@ -110,14 +110,14 @@ function T(e) {
         className: I.spinner
       })
     }), (0, r.jsx)(s.$, {
-      innerRef: x,
+      innerRef: A,
       onChange: Z,
       active: !h,
       threshold: .55,
       children: (0, r.jsxs)(f.Z, {
-        ref: x,
+        ref: A,
         className: I.card,
-        onClick: A,
+        onClick: x,
         disabled: O,
         onContextMenu: w,
         "aria-label": v.intl.string(v.t["M9wQ+f"]),
@@ -259,4 +259,4 @@ function j(e) {
     })
   })
 }
-let x = Chunk647438.memo(P)
+let A = Chunk647438.memo(P)

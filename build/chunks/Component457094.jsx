@@ -155,7 +155,7 @@ let e9 = (0, Chunk951752.l)(e => {
     let {
       location: t
     } = e, n = (0, ek.default)(t.pathname);
-    return null != n && (0, X.h)(() => h.Z.open(n.section, n.subsection, {
+    return null != n && (0, Q.h)(() => h.Z.open(n.section, n.subsection, {
       openWithoutBackstack: false,
       impressionSource: n.source
     })), (0, r.jsx)(g.Z, {
@@ -255,7 +255,7 @@ let tl = [{
     } = e, {
       id: n
     } = t.params;
-    return (0, X.h)(() => (0, ew.openUserProfileModal)({
+    return (0, Q.h)(() => (0, ew.openUserProfileModal)({
       userId: n,
       sourceAnalyticsLocations: [N.Z.URI_SCHEME]
     })), (0, r.jsx)(a.l_, {
@@ -271,7 +271,7 @@ let tl = [{
       gameId: n,
       action: i
     } = t.params;
-    return eQ.Z.whenInitialized(() => {
+    return eX.Z.whenInitialized(() => {
       eW.Z.whenInitialized(() => {
         switch (i) {
           case "launch": {
@@ -319,7 +319,7 @@ let tl = [{
       section: n,
       subsection: i
     } = t.params, o = (0, l.parse)(location.search).feature;
-    return (0, X.h)(() => en.v({
+    return (0, Q.h)(() => en.v({
       section: (0, et.Z)(e8.pNK, n),
       subsection: (0, et.Z)(e8.KsC, i),
       feature: o
@@ -340,7 +340,7 @@ let tl = [{
     } = e, {
       guildId: i
     } = t.params;
-    return (0, X.h)(() => {
+    return (0, Q.h)(() => {
       (0, s.ZDy)(async () => {
         let {
           default: e
@@ -405,7 +405,7 @@ let tl = [{
       guildId: n,
       guildEventId: i
     } = t.params;
-    return (0, X.h)(() => {
+    return (0, Q.h)(() => {
       (0, $.bO)({
         eventId: i
       })
@@ -424,7 +424,7 @@ let tl = [{
       section: i,
       subsection: l
     } = t.params;
-    return (0, X.h)(() => {
+    return (0, Q.h)(() => {
       ee.Z.open(n, (0, et.Z)(e8.pNK, i), true, (0, et.Z)(e8.KsC, l))
     }), (0, r.jsx)(a.l_, {
       to: e8.Z5c.CHANNEL(n)
@@ -531,7 +531,7 @@ class ts extends Chunk647438.PureComponent {
           let {
             summaryId: e
           } = (0, l.parse)(t);
-          null != e && ex.ZP.setSelectedSummary(i, e)
+          null != e && eA.ZP.setSelectedSummary(i, e)
         }
         if (null != s && f) {
           let e = eB.ZP.getCurrentSidebarChannelId(n) !== s,
@@ -576,7 +576,7 @@ class ts extends Chunk647438.PureComponent {
     } = ti(n), a = (0, ey.Ss)(r) && r !== e8.ME && r !== e8.I_8;
     if (null != i && (0, ey.cq)(i) && !(0, e4.AB)(i) && a) {
       let n = eV.Z.getChannel(i);
-      if (null == n) eA.Z.loadThread(i).then(() => to({
+      if (null == n) ex.Z.loadThread(i).then(() => to({
         channelId: i,
         guildId: r,
         pathname: t
@@ -588,7 +588,7 @@ class ts extends Chunk647438.PureComponent {
       if (null != l) {
         if (!((0, ey.cq)(l) && !(0, e4.AB)(i))) return null;
         let n = eV.Z.getChannel(l);
-        if (null == n) eA.Z.loadThread(l).then(() => to({
+        if (null == n) ex.Z.loadThread(l).then(() => to({
           channelId: l,
           guildId: r,
           pathname: t

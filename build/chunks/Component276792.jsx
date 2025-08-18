@@ -65,8 +65,8 @@ function E(e) {
     {
       onClose: j
     } = C,
-    x = null != (y = null == (t = I.button) ? true : t.copy) ? y : g.intl.string(g.t.YScQSE),
-    A = (null == (n = I.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
+    A = null != (y = null == (t = I.button) ? true : t.copy) ? y : g.intl.string(g.t.YScQSE),
+    x = (null == (n = I.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
   switch (null == (E = I.button) ? true : E.buttonAction) {
     case l.Wc.OPEN_MARKETING_PAGE:
       v = () => {
@@ -150,7 +150,7 @@ function E(e) {
         onClick: () => {
           u.default.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
             change_log_id: P,
-            cta_type: A,
+            cta_type: x,
             seconds_open: Math.round((Date.now() - e) / 1e3),
             target: P
           }), v()
@@ -159,7 +159,7 @@ function E(e) {
           alt: "",
           className: m.nitroIconSubHeader,
           src: b
-        }), x]
+        }), A]
       })
     },
     modalDismissibleContent: "" !== I.dismissKey ? Number(I.dismissKey) : true

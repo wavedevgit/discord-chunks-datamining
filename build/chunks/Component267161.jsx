@@ -119,7 +119,7 @@ function et(e) {
     }) : true,
     S = null;
   null != v && I ? (t = v.name, S = (0, r.jsx)("img", {
-    className: Q.appIcon,
+    className: X.appIcon,
     alt: q.intl.string(q.t.X4IxWF),
     src: C,
     "aria-hidden": true,
@@ -132,7 +132,7 @@ function et(e) {
     guild: m,
     size: y.Z.Sizes.MINI,
     active: true,
-    className: Q.guildIcon
+    className: X.guildIcon
   }), t = m.name) : null != h && (h.isDM() || h.isGroupDM()) ? (t = q.intl.string(q.t.YUU0RE), S = (0, r.jsx)(u.gw7, {
     size: "xs"
   })) : d.pathname.startsWith(z.Z5c.GLOBAL_DISCOVERY) ? (t = q.intl.string(q.t["4nEZLi"]), S = (0, r.jsx)(u.Jmo, {
@@ -143,7 +143,7 @@ function et(e) {
     size: "xs"
   })) : d.pathname.startsWith(z.Z5c.FRIENDS) ? (t = q.intl.string(q.t.TdEu5e), S = (0, r.jsx)(u.iFz, {
     size: "xs"
-  })) : d.pathname.startsWith(z.Z5c.FAMILY_CENTER) && (t = q.intl.string(X.default.RZqaJi), S = (0, r.jsx)(u.BFJ, {
+  })) : d.pathname.startsWith(z.Z5c.FAMILY_CENTER) && (t = q.intl.string(Q.default.RZqaJi), S = (0, r.jsx)(u.BFJ, {
     size: "xs"
   }));
   let T = i.useCallback(e => {
@@ -152,15 +152,15 @@ function et(e) {
   return null == t || "" === t ? null : (0, r.jsx)(u.ua7, {
     shouldShow: l,
     "aria-label": q.intl.string(q.t["7P/+q6"]),
-    tooltipContentClassName: Q.navigationTooltip,
+    tooltipContentClassName: X.navigationTooltip,
     text: (0, r.jsxs)(r.Fragment, {
       children: [q.intl.string(q.t["7P/+q6"]), (0, r.jsx)(u.M2$, {
         shortcut: ["mod", "k"]
       })]
     }),
     children: e => (0, r.jsxs)(u.P3F, $(J({
-      className: a()(Q.title, {
-        [Q.fastTravel]: l
+      className: a()(X.title, {
+        [X.fastTravel]: l
       })
     }, e, s), {
       onClick: l ? T : true,
@@ -202,7 +202,7 @@ function er(e) {
   let {
     withFastTravel: t,
     focusSectionProps: n
-  } = e, i = (0, c.e7)([k.Z], () => k.Z.getChannelId()), l = (0, A.$)({
+  } = e, i = (0, c.e7)([k.Z], () => k.Z.getChannelId()), l = (0, x.$)({
     location: "TitleText"
   }), a = (0, c.e7)([R.Z], () => {
     let e = R.Z.getChannel(i);
@@ -252,7 +252,7 @@ let ei = Chunk647438.memo(function() {
   }, []);
   let N = (0, Chunk984802.Ll)(),
     j = (0, Chunk442837.e7)([Chunk451478.Z, Chunk522474.Z], () => (0, Chunk228488.rB)()),
-    A = function(e) {
+    x = function(e) {
       let {
         showBackForwardButtons: t,
         showCollapsedSidebarIcons: n,
@@ -275,10 +275,10 @@ let ei = Chunk647438.memo(function() {
         className: t,
         leading: (0, r.jsxs)(r.Fragment, {
           children: [s && (0, r.jsx)(b.Z, {
-            firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === A ? e : true
+            firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === x ? e : true
           }), _ && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(u.P3F, $(J({}, "SIDEBAR" === A ? e : {}), {
-              className: Q.button,
+            children: [(0, r.jsx)(u.P3F, $(J({}, "SIDEBAR" === x ? e : {}), {
+              className: X.button,
               onClick: () => {
                 ee.setState({
                   isOpen: !ee.getState().isOpen
@@ -286,7 +286,7 @@ let ei = Chunk647438.memo(function() {
               },
               children: (0, r.jsx)(el, {})
             })), (0, r.jsx)(u.P3F, {
-              className: Q.button,
+              className: X.button,
               onClick: () => {
                 d.Z.open(z.oAB.ACCOUNT)
               },
@@ -296,29 +296,29 @@ let ei = Chunk647438.memo(function() {
               })
             })]
           }), O && (0, r.jsx)(T.Z, {
-            focusSectionProps: "NOTIFICATIONS_INBOX" === A ? e : true
+            focusSectionProps: "NOTIFICATIONS_INBOX" === x ? e : true
           })]
         }),
         title: (0, r.jsx)(er, {
           withFastTravel: o,
-          focusSectionProps: "TITLEBAR_FAST_TRAVEL" === A ? e : true
+          focusSectionProps: "TITLEBAR_FAST_TRAVEL" === x ? e : true
         }),
         trailing: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(E.Z, {
-            className: Q.button
+            className: X.button
           }), (0, r.jsx)(h.Z, {
             canShowReminder: true,
-            className: Q.button
-          }), y && (0, r.jsx)(x.Z, $(J({}, "RECENTS" === A ? e : {}), {
-            className: Q.button
+            className: X.button
+          }), y && (0, r.jsx)(A.Z, $(J({}, "RECENTS" === x ? e : {}), {
+            className: X.button
           })), p ? (0, r.jsx)(I.Z, {
-            focusSectionProps: "HELP" === A ? e : true,
-            className: Q.button
+            focusSectionProps: "HELP" === x ? e : true,
+            className: X.button
           }) : (0, r.jsx)(v.Z, {
-            focusSectionProps: "HELP" === A ? e : true,
-            className: Q.button
+            focusSectionProps: "HELP" === x ? e : true,
+            className: X.button
           }), (0, r.jsx)(C.Z, {
-            className: Q.button
+            className: X.button
           })]
         })
       })

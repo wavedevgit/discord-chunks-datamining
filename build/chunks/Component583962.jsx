@@ -97,7 +97,7 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
         config: D
       }), "respect-motion-settings", [M, T, G, U]),
       V = t.premiumTier < L && M >= x.oCV[L],
-      H = (0, E.Z)(t, h.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY, x.jXE.PREMIUM_GUILD_PROGRESS_BAR),
+      H = (0, E.Z)(t, h.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY),
       F = I.intl.formatToPlainString(I.t["2oNfMT"], {
         levelName: (0, y.e9)(L)
       }),

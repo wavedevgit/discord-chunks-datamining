@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 121711, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => X
+  Z: () => Q
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -89,7 +89,7 @@ function q(e) {
     onLoad: t
   })
 }
-let X = function() {
+let Q = function() {
   let {
     selectedTab: e,
     onSelectTab: t,
@@ -134,8 +134,8 @@ let X = function() {
     location: Chunk388032.intl.string(Chunk388032.t.JALI2N)
   });
   let K = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.BCBIlp, {}) : Chunk388032.intl.format(Chunk388032.t.lmMBf3, {}),
-    X = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.U9FY0N, {}) : Chunk388032.intl.string(Chunk388032.t.oWCrBg),
-    Q = Chunk647438.useRef(null),
+    Q = Chunk672188 ? Chunk388032.intl.format(Chunk388032.t.U9FY0N, {}) : Chunk388032.intl.string(Chunk388032.t.oWCrBg),
+    X = Chunk647438.useRef(null),
     J = Chunk647438.useCallback(() => {
       (0, Chunk507808.Y)({
         pageType: Chunk981631.ZY5.GLOBAL_DISCOVERY_QUESTS,
@@ -155,10 +155,10 @@ let X = function() {
     children: (0, Chunk951288.jsx)("div", {
       className: Chunk728963.container,
       children: Chunk672188 ? (0, Chunk951288.jsx)(Chunk466962.t.Provider, {
-        value: Q,
+        value: X,
         children: (0, Chunk951288.jsxs)(Chunk283293.Z, {
           onScroll: Chunk120356,
-          ref: Q,
+          ref: X,
           children: [(0, Chunk951288.jsx)(Chunk763433.a, {
             selectedTabId: module,
             handleTransition: exports,
@@ -172,7 +172,7 @@ let X = function() {
             })
           }), (0, Chunk951288.jsxs)(Chunk17845.Z, {
             title: Chunk164792,
-            description: X,
+            description: Q,
             betaTag: Chunk672188 && Chunk13299,
             button: Chunk672188 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
               children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
@@ -225,13 +225,13 @@ let X = function() {
             icon: Chunk481060.qDn
           })]
         }), (0, Chunk951288.jsx)(Chunk466962.t.Provider, {
-          value: Q,
+          value: X,
           children: (0, Chunk951288.jsxs)(Chunk283293.Z, {
             onScroll: Chunk120356,
-            ref: Q,
+            ref: X,
             children: [(0, Chunk951288.jsxs)(Chunk17845.Z, {
               title: Chunk164792,
-              description: X,
+              description: Q,
               button: (0, Chunk951288.jsx)(Chunk481060.zxk, {
                 variant: "overlay-primary",
                 text: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),

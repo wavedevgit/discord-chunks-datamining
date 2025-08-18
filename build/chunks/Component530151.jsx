@@ -99,7 +99,7 @@ function V(e, t) {
     case R.f07.ALLOCATING_DISK:
       return "".concat(e);
     default:
-      return (0, A.BU)(e, {
+      return (0, x.BU)(e, {
         useKibibytes: true
       })
   }
@@ -485,7 +485,7 @@ let Y = () => (0, Chunk951288.jsx)(B, {
       onClick: () => m.A1(t.applicationId, t.branchId)
     })
   },
-  X = e => {
+  Q = e => {
     let {
       item: t
     } = e;
@@ -495,7 +495,7 @@ let Y = () => (0, Chunk951288.jsx)(B, {
       onClick: () => m.al(t.applicationId, t.branchId)
     })
   },
-  Q = [{
+  X = [{
     key: "name",
     cellClassName: Chunk248241.nameCell,
     render: e => (0, r.jsxs)(v.Z, {
@@ -532,9 +532,9 @@ let Y = () => (0, Chunk951288.jsx)(B, {
         item: e
       }) : null != t && t.paused ? (0, r.jsx)(Y, {}) : (0, r.jsx)(K, {
         item: e
-      }), i = (0, r.jsx)(X, {
+      }), i = (0, r.jsx)(Q, {
         item: e
-      })) : i = (0, r.jsx)(X, {
+      })) : i = (0, r.jsx)(Q, {
         item: e
       }), (0, r.jsxs)(v.Z, {
         justify: v.Z.Justify.END,
@@ -586,7 +586,7 @@ class J extends Chunk647438.PureComponent {
         })]
       }), (0, Chunk951288.jsx)(Chunk167533.Z, {
         hasHeader: false,
-        columns: Q,
+        columns: X,
         data: module,
         className: Chunk248241.table,
         rowClassName: Chunk248241.row,

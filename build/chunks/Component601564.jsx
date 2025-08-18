@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 601564, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => x,
+  default: () => A,
   getPageSize: () => P
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
@@ -133,4 +133,4 @@ class j extends Chunk647438.PureComponent {
     }))
   }
 }
-let x = (0, Chunk843611.EN)((0, Chunk666743.Z)((0, Chunk112724.Z)(j)))
+let A = (0, Chunk843611.EN)((0, Chunk666743.Z)((0, Chunk112724.Z)(j)))
