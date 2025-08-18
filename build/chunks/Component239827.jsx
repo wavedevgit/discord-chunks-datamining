@@ -1,25 +1,22 @@
 /** Chunk was on 30202 **/
 /** chunk id: 239827, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk729020 = require("./729020.js");
-let d = Chunk647438.forwardRef(function(e, t) {
+let o = Chunk647438.forwardRef(function(e, t) {
   var n, r, {
-      currentPageIndex: s,
-      numPages: d,
-      onChangePage: u,
-      children: m,
-      className: p,
-      showPageCount: g = true
+      currentPageIndex: o,
+      numPages: c,
+      onChangePage: d,
+      children: u,
+      showPageCount: m = true
     } = e,
-    h = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
@@ -33,9 +30,13 @@ let d = Chunk647438.forwardRef(function(e, t) {
         for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
       return r
-    }(e, ["currentPageIndex", "numPages", "onChangePage", "children", "className", "showPageCount"]);
-  let f = s <= 0,
-    b = s >= d - 1;
+    }(e, ["currentPageIndex", "numPages", "onChangePage", "children", "showPageCount"]);
+  let g = m ? a.intl.format(a.t.MtpIws, {
+    currentPage: o + 1,
+    numPages: c
+  }) : a.intl.format(a.t.bKI77e, {
+    currentPage: o + 1
+  });
   return (0, i.jsxs)("div", (n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -54,47 +55,29 @@ let d = Chunk647438.forwardRef(function(e, t) {
     }
     return e
   }({
-    className: a()(c.__invalid_paginator, p),
     ref: t
-  }, h), r = r = {
-    children: [m, (0, i.jsxs)("div", {
-      className: c.pageActions,
-      children: [(0, i.jsx)(l.P3F, {
-        className: a()(c.pageButtonPrev, {
-          [c.disabled]: f
-        }),
-        tabIndex: f ? false : 0,
-        onClick: f ? true : () => u(s - 1),
-        children: (0, i.jsx)(l.V7D, {
-          size: "md",
-          color: "currentColor",
-          className: c.pageButtonIcon,
-          "aria-label": o.intl.string(o.t.vgfxaG)
-        })
-      }), g ? (0, i.jsx)("div", {
-        className: c.pageIndicator,
-        children: o.intl.format(o.t.MtpIws, {
-          currentPage: s + 1,
-          numPages: d
-        })
-      }) : (0, i.jsx)("div", {
-        className: c.pageIndicator,
-        children: o.intl.format(o.t.bKI77e, {
-          currentPage: s + 1
-        })
-      }), (0, i.jsx)(l.P3F, {
-        className: a()(c.pageButtonNext, {
-          [c.disabled]: b
-        }),
-        tabIndex: b ? false : 0,
-        onClick: b ? true : () => u(s + 1),
-        children: (0, i.jsx)(l.Fbu, {
-          size: "md",
-          color: "currentColor",
-          className: c.pageButtonIcon,
-          "aria-label": o.intl.string(o.t.XiOHRU)
-        })
-      })]
+  }, p), r = r = {
+    children: [u, (0, i.jsx)("div", {
+      className: l.pageActions,
+      children: (0, i.jsxs)("div", {
+        className: l.buttons,
+        children: [(0, i.jsx)(s.hU, {
+          variant: "icon-only",
+          icon: s.V7D,
+          disabled: o <= 0,
+          onClick: () => d(o - 1),
+          "aria-label": a.intl.string(a.t.vgfxaG)
+        }), (0, i.jsx)(s.Text, {
+          variant: "text-sm/medium",
+          children: g
+        }), (0, i.jsx)(s.hU, {
+          variant: "icon-only",
+          icon: s.Fbu,
+          disabled: o >= c - 1,
+          onClick: () => d(o + 1),
+          "aria-label": a.intl.string(a.t.XiOHRU)
+        })]
+      })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var n = Object.keys(e);

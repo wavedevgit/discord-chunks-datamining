@@ -534,7 +534,8 @@ class el extends(i = Chunk647438.PureComponent) {
       color: "currentColor",
       className: Chunk982710.descriptionIcon
     }), t = i.description;
-    let b = (0, Chunk951288.jsx)("div", {
+    let b = (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-sm/normal",
         className: Chunk982710.date,
         children: (0, Chunk55935.vc)(c()(i.createdAt), "MM/DD/YYYY")
       }),
@@ -605,7 +606,8 @@ class el extends(i = Chunk647438.PureComponent) {
       id: module.id,
       children: e => (0, r.jsxs)(p.P3F, J(X({
         onClick: this.handleExpandInfo,
-        className: l()(i ? K.payment : K.hoverablePayment, t, {
+        "data-expanded": i,
+        className: l()(K.payment, t, {
           [K.compact]: n
         }),
         focusProps: {
@@ -615,6 +617,7 @@ class el extends(i = Chunk647438.PureComponent) {
         children: [(0, r.jsxs)(x.Z, {
           className: K.summaryInfo,
           align: x.Z.Align.CENTER,
+          "data-expanded": i,
           children: [this.renderDescription(), (0, r.jsxs)("div", {
             className: K.amount,
             children: [this.renderStatus(), this.renderPrice()]

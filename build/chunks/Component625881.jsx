@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk544891 = require("./544891.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -29,20 +29,20 @@ let j = function(e) {
     onClose: a,
     onConfirm: j,
     userDiscountOffer: E
-  } = e, [O, P] = r.useState(false), [N, v] = r.useState(false), I = async e => {
+  } = e, [I, v] = r.useState(false), [N, P] = r.useState(false), O = async e => {
     try {
-      v(true), P(false), await s.tn.post({
-        url: x.ANM.USER_OFFER_REDEEM,
+      P(true), v(false), await o.tn.post({
+        url: y.ANM.USER_OFFER_REDEEM,
         body: {
           user_discount_offer_id: e
         },
         rejectWithError: true
       }), j()
     } catch (e) {
-      P(true)
+      v(true)
     }
-    v(false)
-  }, T = (0, u.ZP)(), S = (0, l.wj)(T) ? g : C, R = (0, _._)(t, b.Xh.PREMIUM_MONTH_TIER_2, E), w = (0, m.aS)(b.Xh.PREMIUM_MONTH_TIER_2, false, false, {
+    P(false)
+  }, T = (0, u.ZP)(), R = (0, l.wj)(T) ? g : C, S = (0, _._)(t, x.Xh.PREMIUM_MONTH_TIER_2, E), w = (0, m.aS)(x.Xh.PREMIUM_MONTH_TIER_2, false, false, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), D = (0, p.T4)(w.amount, w.currency);
@@ -57,18 +57,18 @@ let j = function(e) {
         className: h.confirmDiscountContent,
         children: [(0, i.jsx)(c.X6q, {
           variant: "heading-xl/bold",
-          children: y.intl.format(y.t.q9Vxu7, {
+          children: b.intl.format(b.t.q9Vxu7, {
             percent: E.discount.amount
           })
         }), (0, i.jsxs)("div", {
           className: h.confirmDiscountDescription,
           children: [(0, i.jsx)("img", {
             alt: "",
-            src: S,
+            src: R,
             className: h.confirmDiscountIcon
           }), (0, i.jsx)(c.Text, {
             variant: "text-sm/medium",
-            children: y.intl.format(y.t.Eq1RHB, {
+            children: b.intl.format(b.t.Eq1RHB, {
               percent: E.discount.amount,
               numMonths: E.discount.user_usage_limit,
               price: D
@@ -79,36 +79,36 @@ let j = function(e) {
           children: (0, i.jsx)(c.Text, {
             variant: "text-xs/semibold",
             className: h.confirmDiscountLegaleseText,
-            children: y.intl.format(y.t.hrGTjI, {
-              discountedPrice: R,
+            children: b.intl.format(b.t.hrGTjI, {
+              discountedPrice: S,
               billingPeriod: (0, m.JP)(E.discount.user_usage_limit_interval),
               numMonths: E.discount.user_usage_limit,
               fullPrice: D,
-              helpdeskArticle: d.Z.getArticleURL(x.BhN.PAID_TERMS)
+              helpdeskArticle: d.Z.getArticleURL(y.BhN.PAID_TERMS)
             })
           })
-        }), O && (0, i.jsx)("div", {
+        }), I && (0, i.jsx)("div", {
           className: h.redemptionFailedMessage,
           children: (0, i.jsx)(c.Text, {
             variant: "text-xs/semibold",
             className: h.redemptionFailedMessageCopy,
-            children: y.intl.string(y.t.AD6odn)
+            children: b.intl.string(b.t.AD6odn)
           })
         }), (0, i.jsxs)("div", {
-          className: o()(h.confirmDiscountButtons, {
-            [h.confrimDiscountsButtonsError]: O,
-            [h.confrimDiscountsButtonsNoError]: !O
+          className: s()(h.confirmDiscountButtons, {
+            [h.confrimDiscountsButtonsError]: I,
+            [h.confrimDiscountsButtonsNoError]: !I
           }),
           children: [(0, i.jsx)(c.Avr, {
             variant: "primary",
-            text: y.intl.string(y.t.zl7LZm),
+            text: b.intl.string(b.t.zl7LZm),
             onClick: () => a()
           }), (0, i.jsx)(c.zxk, {
             variant: "primary",
             size: "sm",
-            text: y.intl.string(y.t.CKSuZG),
+            text: b.intl.string(b.t.CKSuZG),
             loading: N,
-            onClick: () => I(E.id)
+            onClick: () => O(E.id)
           })]
         })]
       })

@@ -107,7 +107,7 @@ function Z(e) {
           return r
         }(e, ["ref"]);
         return (0, r.jsx)(_.Z, D(R({
-          className: l()(y.verticalFit, y.paginator),
+          className: y.verticalFit,
           currentPageIndex: c,
           onChangePage: x,
           numPages: a,

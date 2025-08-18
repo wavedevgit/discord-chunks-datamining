@@ -16,7 +16,6 @@ let a = Chunk647438.createContext({
     analyticsLocations: [],
     analyticsLocation: true,
     confettiCanvas: null,
-    discountPrimary: false,
     churnUserDiscountOffer: null,
     isFetchingChurnDiscountOffer: false,
     paymentsBlocked: false,

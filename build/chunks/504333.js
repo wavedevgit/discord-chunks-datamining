@@ -9,6 +9,5 @@ module.exports = {
   externalRowHeader: "externalRowHeader__01014",
   externalRowBody: "externalRowBody__01014",
   bottomDivider: "bottomDivider__01014",
-  verticalFit: "verticalFit__01014",
-  paginator: "paginator__01014"
+  verticalFit: "verticalFit__01014"
 }

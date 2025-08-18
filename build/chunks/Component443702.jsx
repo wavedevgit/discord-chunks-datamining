@@ -50,7 +50,6 @@ class T extends Chunk647438.PureComponent {
       isUpdatingPaymentSource: c
     } = this.props;
     return exports ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)("div", {
-      className: Chunk61365.__invalid_userSettingsBilling,
       children: [module && 0 === Object.keys(require).length ? (0, Chunk951288.jsx)(S, {}) : (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.BILLING_PAYMENT_METHODS,
         children: (0, Chunk951288.jsx)(Chunk390954.Z, {
@@ -75,9 +74,9 @@ class T extends Chunk647438.PureComponent {
             })]
           })
         })
-      }), (0, Chunk951288.jsx)(Chunk481060.Zbd, {
+      }), (0, Chunk951288.jsx)(Chunk481060.Wn, {
+        messageType: Chunk481060.QYI.INFO,
         className: Chunk61365.codeRedemptionRedirect,
-        type: Chunk481060.Zbd.Types.CUSTOM,
         children: Chunk388032.intl.format(Chunk388032.t["8b+FXF"], {
           onClick: this.handleRedemptionRedirect
         })

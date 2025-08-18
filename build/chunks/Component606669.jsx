@@ -133,7 +133,7 @@ function g() {
   return g && y.unshift((0, Chunk951288.jsx)(Chunk481060.kSQ, {
     children: (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "high-contrast",
-      label: "Enable High Contrast Mode",
+      label: Chunk388032.intl.string(Chunk388032.t.aZlePj),
       checked: _,
       action: () => (0, Chunk857595.vW)(_ ? Chunk607070.X.DEFAULT : Chunk607070.X.HIGH)
     })
