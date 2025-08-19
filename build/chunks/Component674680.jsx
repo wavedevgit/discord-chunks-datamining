@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 674680, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -51,17 +51,17 @@ function g(e) {
     size: g = l.EFr.SIZE_40
   } = e, m = (0, o.ZP)(), b = (0, c.oX)(n);
   if (null == b) return null;
-  let _ = (0, l.UCu)(g),
+  let O = (0, l.UCu)(g),
     {
-      name: O,
+      name: _,
       rarity: y
     } = b,
     {
       color: v
     } = (0, c.F7)(y),
     j = (0, i.wj)(m) ? f : h,
-    C = (_.size - _.offset - 2 * _.stroke) * .8,
-    E = _.size - _.stroke,
+    C = (O.size - O.offset - 2 * O.stroke) * .8,
+    E = O.size - O.stroke,
     x = {
       width: .4 * C,
       height: .4 * C
@@ -69,8 +69,8 @@ function g(e) {
     S = {
       width: x.width + 1,
       height: x.height + 1,
-      right: _.stroke + 1,
-      bottom: _.stroke + 1,
+      right: O.stroke + 1,
+      bottom: O.stroke + 1,
       padding: 0
     };
   return (0, r.jsxs)("div", {
@@ -78,9 +78,9 @@ function g(e) {
     style: {
       width: E,
       height: E,
-      padding: _.stroke
+      padding: O.stroke
     },
-    "aria-label": "".concat(null != (t = O()) ? t : ""),
+    "aria-label": "".concat(null != (t = _()) ? t : ""),
     children: [(0, r.jsx)("div", {
       className: d.trophyIconContainer,
       children: (0, r.jsx)(l.rm8, {

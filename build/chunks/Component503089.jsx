@@ -1,11 +1,11 @@
-/** Chunk was on 4756 **/
+/** Chunk was on 31930 **/
 /** chunk id: 503089, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  $x: () => _,
+  $x: () => E,
   ZP: () => N,
-  d7: () => w,
-  w6: () => I
+  d7: () => I,
+  w6: () => w
 }), require("./539854.js"), require("./361932.js"), require("./187205.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk486807 = require("./486807.js");
 
-function y(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +34,20 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      y(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,14 +59,14 @@ function S(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = Object.freeze({
+let S = Object.freeze({
     shouldPreventNavigation: false,
     onPreventNavigation: null,
     sidebarOpen: true
   }),
-  _ = 1.4,
-  I = 15,
-  w = 2;
+  E = 1.4,
+  w = 15,
+  I = 2;
 
 function j(e) {
   var t, n;
@@ -80,11 +80,11 @@ function j(e) {
     name: null == r ? true : r.impressionName,
     properties: null == r ? true : r.impressionProperties
   });
-  let u = null != (t = null == r ? true : r.element) ? t : m.VqG,
-    c = null != (n = null == r ? true : r.elementProps) ? n : {};
+  let c = null != (t = null == r ? true : r.element) ? t : b.VqG,
+    u = null != (n = null == r ? true : r.elementProps) ? n : {};
   return (0, i.jsx)(f.Z, {
     section: r.section,
-    children: (0, i.jsx)(u, S(O({}, c), {
+    children: (0, i.jsx)(c, O(y({}, u), {
       setPreventNavigation: l,
       refToScroller: o
     }))
@@ -109,7 +109,7 @@ class P extends Chunk647438.PureComponent {
     let {
       section: t
     } = e;
-    t !== this.props.section && (this._intensity = _)
+    t !== this.props.section && (this._intensity = E)
   }
   componentWillUnmount() {
     this._unmounted = true, this._subscribedStores.forEach(e => e.removeChangeListener(this.handleNoticeStoreUpdate)), this.props.sections.forEach(e => {
@@ -130,7 +130,7 @@ class P extends Chunk647438.PureComponent {
     return null != require && require.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (Chunk585483.S.dispatch(Chunk981631.CkL.SHAKE_APP, {
       duration: 300,
       intensity: this._intensity
-    }), this._intensity = Math.min(this._intensity + w, I), Chunk585483.S.dispatch(Chunk981631.CkL.EMPHASIZE_NOTICE), false) : (this._intensity = _, true)
+    }), this._intensity = Math.min(this._intensity + I, w), Chunk585483.S.dispatch(Chunk981631.CkL.EMPHASIZE_NOTICE), false) : (this._intensity = E, true)
   }
   renderSidebar(e) {
     let {
@@ -138,7 +138,7 @@ class P extends Chunk647438.PureComponent {
       title: n,
       showUserSettingsSearch: r
     } = this.props, s = e.flatMap(e => e.newIndicatorDismissibleContentTypes).filter(e => null != e), l = null != t ? t : e[0].section;
-    return (0, i.jsx)(c.ZP, {
+    return (0, i.jsx)(u.ZP, {
       contentTypes: s,
       children: t => {
         let {
@@ -150,19 +150,19 @@ class P extends Chunk647438.PureComponent {
           orientation: "vertical",
           "aria-label": n,
           children: [r ? (0, i.jsx)(h.Z, {
-            style: b.searchBar
+            style: C.searchBar
           }) : null, e.map((e, t) => {
             if (null != e.tabPredicate && !e.tabPredicate()) return null;
             switch (e.section) {
-              case v.ID.HEADER:
+              case m.ID.HEADER:
                 return (0, i.jsx)(o.njP.Header, {
                   children: e.label
                 }, t);
-              case v.ID.DIVIDER:
+              case m.ID.DIVIDER:
                 return (0, i.jsx)(o.njP.Separator, {}, t);
-              case v.ID.CUSTOM:
+              case m.ID.CUSTOM:
                 var n;
-                let r = null != (n = e.element) ? n : m.VqG;
+                let r = null != (n = e.element) ? n : b.VqG;
                 return (0, i.jsx)(r, {}, t);
               default:
                 return this.renderSettingsSectionTabBarItem(e, l === e.section, s)
@@ -195,7 +195,7 @@ class P extends Chunk647438.PureComponent {
       hideSidebar: l
     } = this.props, o = this.getPredicateSections(), a = Chunk481060.find(e => e.section === n);
     if (null == Chunk213609 || null == require) return null;
-    let c = null != (e = "string" == typeof Chunk213609.label ? Chunk213609.label : Chunk213609.ariaLabel) ? module : Chunk647438;
+    let u = null != (e = "string" == typeof Chunk213609.label ? Chunk213609.label : Chunk213609.ariaLabel) ? module : Chunk647438;
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
         location: Chunk647438,
@@ -222,14 +222,14 @@ class P extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), y(this, "_unmounted", false), y(this, "_intensity", _), y(this, "_subscribedStores", []), y(this, "scrollerRef", r.createRef()), y(this, "state", S(O({}, E), {
-      sidebarOpen: this.props.section !== m.oAB.SUBSCRIPTIONS && this.props.section !== m.oAB.PROFILE_CUSTOMIZATION
-    })), y(this, "setPreventNavigation", (e, t) => {
+    super(...e), _(this, "_unmounted", false), _(this, "_intensity", E), _(this, "_subscribedStores", []), _(this, "scrollerRef", r.createRef()), _(this, "state", O(y({}, S), {
+      sidebarOpen: this.props.section !== b.oAB.SUBSCRIPTIONS && this.props.section !== b.oAB.PROFILE_CUSTOMIZATION
+    })), _(this, "setPreventNavigation", (e, t) => {
       this.setState({
         shouldPreventNavigation: e,
         onPreventNavigation: t
       })
-    }), y(this, "handleSetSection", e => {
+    }), _(this, "handleSetSection", e => {
       let {
         onSetSection: t,
         sections: n
@@ -244,7 +244,7 @@ class P extends Chunk647438.PureComponent {
         } = null != (i = n.find(t => e === t.section)) ? i : {}, s = null != r ? r.stores : null;
         null != s && s.forEach(e => {
           this._subscribedStores.includes(e) || (e.addChangeListener(this.handleNoticeStoreUpdate), this._subscribedStores.push(e))
-        }), this.setState(S(O({}, E), {
+        }), this.setState(O(y({}, S), {
           sidebarOpen: false
         }))
       };
@@ -252,57 +252,57 @@ class P extends Chunk647438.PureComponent {
         category: "settings",
         message: "Set section: ".concat(e)
       })), i && null != r && r(s)
-    }), y(this, "handleClose", () => {
+    }), _(this, "handleClose", () => {
       if (this.validNavigation()) {
         let {
           onClose: e
         } = this.props;
         null == e || e()
       }
-    }), y(this, "handleNoticeStoreUpdate", () => {
-      this._unmounted || (this._intensity = _, this.forceUpdate())
-    }), y(this, "renderSettingsSectionTabBarItem", (e, t, n) => {
+    }), _(this, "handleNoticeStoreUpdate", () => {
+      this._unmounted || (this._intensity = E, this.forceUpdate())
+    }), _(this, "renderSettingsSectionTabBarItem", (e, t, n) => {
       let {
         section: r,
         label: s = null,
         ariaLabel: a,
-        onClick: u,
-        variant: c,
+        onClick: c,
+        variant: u,
         icon: h,
         className: p,
         newIndicator: g,
         newIndicatorDismissibleContentTypes: f,
-        badgeCount: v
-      } = e, y = null;
-      r === m.oAB.ACCOUNT && this.props.isEligibleForPomelo ? y = (0, i.jsx)(o.Mgn, {
+        badgeCount: m
+      } = e, _ = null;
+      r === b.oAB.ACCOUNT && this.props.isEligibleForPomelo ? _ = (0, i.jsx)(o.Mgn, {
         size: "custom",
         width: 20,
         height: 20,
         color: l.Z.colors.STATUS_WARNING.css
-      }) : null != e.decoration ? y = (0, i.jsx)(o.Text, {
+      }) : null != e.decoration ? _ = (0, i.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: e.decoration
-      }) : null != n && (null == f ? true : f.includes(n)) && !t ? y = null != g ? g : (0, i.jsx)(o.IGR, {
-        text: C.intl.string(C.t.y2b7CA)
-      }) : null != h ? y = h : null != v && v > 0 && (y = (0, i.jsx)(o.mAB, {
-        count: v
+      }) : null != n && (null == f ? true : f.includes(n)) && !t ? _ = null != g ? g : (0, i.jsx)(o.IGR, {
+        text: v.intl.string(v.t.y2b7CA)
+      }) : null != h ? _ = h : null != m && m > 0 && (_ = (0, i.jsx)(o.mAB, {
+        count: m
       }));
-      let O = r === m.oAB.PREMIUM ? (0, i.jsx)(d.Z, {
+      let y = r === b.oAB.PREMIUM ? (0, i.jsx)(d.Z, {
         label: s,
         isSelected: t,
-        decoration: y
-      }) : null == y ? s : (0, i.jsxs)("div", {
-        className: b.tabBarItemContainer,
-        children: [s, y]
+        decoration: _
+      }) : null == _ ? s : (0, i.jsxs)("div", {
+        className: C.tabBarItemContainer,
+        children: [s, _]
       });
       return (0, i.jsx)(o.njP.Item, {
-        variant: c,
+        variant: u,
         id: r,
-        onClick: u,
+        onClick: c,
         className: p,
         "aria-label": a,
-        children: O
+        children: y
       }, r)
     })
   }

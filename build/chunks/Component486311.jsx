@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 486311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -79,7 +79,7 @@ let j = {
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == C ? true : C.popout]), S = (0, s.s9z)(s.JQI), I = (0, a.e7)([d.Z], () => d.Z.hasLayers()), [P, N] = i.useState(null), w = null == P ? "animation" : "LOOP";
+    }, [t, null == C ? true : C.popout]), S = (0, s.s9z)(s.JQI), P = (0, a.e7)([d.Z], () => d.Z.hasLayers()), [I, N] = i.useState(null), w = null == I ? "animation" : "LOOP";
     i.useEffect(() => {
       (null == C ? true : C.popout) == null && N(null)
     }, [null == C ? true : C.popout]);
@@ -89,7 +89,7 @@ let j = {
       T = i.useRef(null);
     return (0, r.jsx)(s.yRy, {
       targetElementRef: T,
-      shouldShow: (null == C ? true : C.popout) != null && !(S || I),
+      shouldShow: (null == C ? true : C.popout) != null && !(S || P),
       nudgeAlignIntoViewport: true,
       animationPosition: "bottom",
       position: "right",
@@ -122,7 +122,7 @@ let j = {
             className: o()({
               [y.textImportant]: (null == C ? true : C.showUnread) === true
             }),
-            children: O.intl.string(_.default.yv3DJC)
+            children: _.intl.string(O.default.yv3DJC)
           }),
           selected: l,
           onClick: E,

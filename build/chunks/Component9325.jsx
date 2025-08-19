@@ -35,16 +35,16 @@ function b(e, t, n) {
 function v(e) {
   let {
     code: t
-  } = e, n = (0, l.e7)([o.Z], () => o.Z.getGuildTemplate(t));
+  } = e, n = (0, l.e7)([s.Z], () => s.Z.getGuildTemplate(t));
   return (i.useEffect(() => {
     (0, d.e)("guild_template_mobile")
-  }, []), null == n || n.state === g.Rj.RESOLVING) ? (0, r.jsx)(s.ZP, {
+  }, []), null == n || n.state === g.Rj.RESOLVING) ? (0, r.jsx)(o.ZP, {
     children: (0, r.jsx)(a.$jN, {})
-  }) : n.state === g.Rj.RESOLVED ? (0, r.jsxs)(s.ZP, {
+  }) : n.state === g.Rj.RESOLVED ? (0, r.jsxs)(o.ZP, {
     children: [(0, r.jsx)(u.Z, {
       guildTemplate: n,
       tall: true
-    }), (0, r.jsx)(s.zx, {
+    }), (0, r.jsx)(o.zx, {
       onClick: e => b(e, t, n),
       className: x.marginTop20,
       children: _.intl.string(_.t["a3Gl+f"])

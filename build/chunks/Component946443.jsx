@@ -1,9 +1,9 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 946443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   QP: () => N,
   ZP: () => S,
-  h6: () => P
+  h6: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk915087 = require("./915087.js");
 
 function S(e) {
-  var t, n, l, a, O, S, P;
+  var t, n, l, a, _, S, I;
   let {
     onJump: N,
     showTutorial: w,
@@ -63,17 +63,17 @@ function S(e) {
     (a.offsetTop < s || a.offsetTop > s + c) && i.scrollTo({
       to: a.offsetTop
     })
-  }), a = R, O = D, i.useEffect(() => {
+  }), a = R, _ = D, i.useEffect(() => {
     let e = () => {
       let e = a.channels.find(e => !e.collapsed);
-      null != e && O.markChannelRead(e)
+      null != e && _.markChannelRead(e)
     };
     return b.S.subscribe(C.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
       b.S.unsubscribe(C.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
-  }, [O, a.channels]), S = D, i.useEffect(() => {
+  }, [_, a.channels]), S = D, i.useEffect(() => {
     let e = e => {
-      ((0, _.isMac)() || (0, _.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && S.undoMarkChannelRead()
+      ((0, O.isMac)() || (0, O.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && S.undoMarkChannelRead()
     };
     return document.addEventListener("keydown", e), () => {
       document.removeEventListener("keydown", e)
@@ -92,7 +92,7 @@ function S(e) {
     return (0, r.jsx)(y.Z, {
       Icon: d.xx7,
       header: E.intl.string(E.t["6XMM+P"]),
-      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? E.intl.string(E.t.w9uDOT) : E.intl.string(E.t.BiUJCw)
+      tip: (null == (I = s().os) ? true : I.family) === "OS X" ? E.intl.string(E.t.w9uDOT) : E.intl.string(E.t.BiUJCw)
     })
   }
   return (0, r.jsx)(c.bG, {
@@ -142,7 +142,7 @@ function S(e) {
         }, l), n = n = {
           onScroll: L === j.jd.Done ? true : k,
           className: o()(x.scroller, "group-spacing-".concat(U)),
-          children: [w ? (0, r.jsx)(I, {
+          children: [w ? (0, r.jsx)(P, {
             setSeenTutorial: Z
           }) : null, (0, v.Z)(M, D, N), L === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
             className: x.spinner
@@ -162,7 +162,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     setSeenTutorial: t
   } = e;
@@ -197,7 +197,7 @@ function I(e) {
   })
 }
 
-function P() {
+function I() {
   return (0, Chunk951288.jsx)(Chunk240126.Z, {
     Icon: Chunk481060.xx7,
     disableStars: true,

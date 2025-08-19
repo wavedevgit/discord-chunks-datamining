@@ -1,4 +1,4 @@
-/** Chunk was on 31253 **/
+/** Chunk was on 11868 **/
 /** chunk id: 852923, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
 function I(e) {
   let t = c.Z.getVoiceChannelId();
   if (null == t) return;
-  let n = a.Z.getChannel(t);
+  let n = o.Z.getChannel(t);
   null != n && (0, s.RK)(n, e)
 }
 
@@ -27,24 +27,24 @@ function T(e) {
   var t, n;
   let {
     channelId: i
-  } = e, o = null != (t = (0, _._d)(i)) ? t : 0, a = null != (n = (0, _.K3)(i)) ? n : 0;
-  return o > 0 && a > 0 ? (0, r.jsx)("div", {
+  } = e, a = null != (t = (0, d._d)(i)) ? t : 0, o = null != (n = (0, d.K3)(i)) ? n : 0;
+  return a > 0 && o > 0 ? (0, r.jsx)("div", {
     className: E.blocked,
     children: (0, r.jsx)("div", {
       className: l()(E.blockedText, E.noIcon),
-      children: d.intl.string(d.t.xlJRfn)
-    })
-  }) : o > 0 ? (0, r.jsx)("div", {
-    className: E.blocked,
-    children: (0, r.jsx)("div", {
-      className: l()(E.blockedText, E.noIcon),
-      children: d.intl.string(d.t.WYad9f)
+      children: _.intl.string(_.t.xlJRfn)
     })
   }) : a > 0 ? (0, r.jsx)("div", {
     className: E.blocked,
     children: (0, r.jsx)("div", {
       className: l()(E.blockedText, E.noIcon),
-      children: d.intl.string(d.t.eHq2OD)
+      children: _.intl.string(_.t.WYad9f)
+    })
+  }) : o > 0 ? (0, r.jsx)("div", {
+    className: E.blocked,
+    children: (0, r.jsx)("div", {
+      className: l()(E.blockedText, E.noIcon),
+      children: _.intl.string(_.t.eHq2OD)
     })
   }) : null
 }

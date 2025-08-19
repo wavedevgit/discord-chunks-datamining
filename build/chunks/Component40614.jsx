@@ -1,7 +1,7 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 40614, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  V: () => O
+  V: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,17 +34,17 @@ function b(e) {
   })
 }
 
-function _(e) {
+function O(e) {
   var t;
   let {
     onClick: n
-  } = e, p = (0, l.e7)([a.Z], () => a.Z.getFakeGameData()), f = (0, l.e7)([u.ZP], () => u.ZP.getVisibleGame()), b = null != (t = null == p ? true : p.start) ? t : null == f ? true : f.start, _ = d.SE.useSetting().length > 0, {
-    now: O
+  } = e, p = (0, l.e7)([a.Z], () => a.Z.getFakeGameData()), f = (0, l.e7)([u.ZP], () => u.ZP.getVisibleGame()), b = null != (t = null == p ? true : p.start) ? t : null == f ? true : f.start, O = d.SE.useSetting().length > 0, {
+    now: _
   } = (0, s.tS)(), y = (0, i.useMemo)(() => null == b ? null : (0, c.T_)({
     start: b
-  }, O), [b, O]);
+  }, _), [b, _]);
   if (null == b) return null;
-  let v = [..._ ? [g.intl.string(h.default.jfDsyM)] : [], g.intl.string(g.t.BMTj29), y];
+  let v = [...O ? [g.intl.string(h.default.jfDsyM)] : [], g.intl.string(g.t.BMTj29), y];
   return (0, r.jsx)(o.P3F, {
     className: m.container,
     onClick: n,
@@ -58,14 +58,14 @@ function _(e) {
   })
 }
 
-function O(e) {
+function _(e) {
   let {
     onClick: t
   } = e, {
     isEnabled: n,
     showActivitySharingIndicatorWhenSharing: i
   } = (0, f.D)("not sharing link"), a = d.G6.useSetting(), s = (0, l.e7)([p.Z], () => p.Z.getStatus());
-  return !n || __OVERLAY__ ? null : a && s !== o.Skl.INVISIBLE ? i ? (0, r.jsx)(_, {
+  return !n || __OVERLAY__ ? null : a && s !== o.Skl.INVISIBLE ? i ? (0, r.jsx)(O, {
     onClick: t
   }) : null : (0, r.jsx)(b, {
     onClick: t

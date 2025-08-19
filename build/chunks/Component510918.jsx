@@ -1,4 +1,4 @@
-/** Chunk was on 78079 **/
+/** Chunk was on 12630 **/
 /** chunk id: 510918, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   v: () => N
@@ -121,7 +121,7 @@ let N = A => {
         secondaryTintColor: N
       }, Z));
     case L.x_.CROSSHAIRS:
-      return (0, n.jsx)(a.Q, x({
+      return (0, n.jsx)(s.Q, x({
         primaryTintColor: t,
         secondaryTintColor: N
       }, Z));
@@ -202,7 +202,7 @@ let N = A => {
         primaryTintColor: t
       }, Z));
     case L.x_.CROWN:
-      return (0, n.jsx)(s.O, x({
+      return (0, n.jsx)(a.O, x({
         primaryTintColor: t,
         secondaryTintColor: N
       }, Z));

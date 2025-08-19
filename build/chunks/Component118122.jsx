@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 118122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -65,21 +65,21 @@ function E(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, a = (0, l.Wu)([h.Z], () => h.Z.getGuildsArray()), E = (0, l.e7)([g.default], () => g.default.getCurrentUser()), x = i.useMemo(() => a.some(e => (0, f.eM)(e, E)), [a, E]), S = (0, o.s9z)(e => (0, o.DEQ)(e, O.PU)), {
-    analyticsLocations: I
-  } = (0, s.ZP)(), P = (0, r.jsx)(b.Z, {
+  } = e, a = (0, l.Wu)([h.Z], () => h.Z.getGuildsArray()), E = (0, l.e7)([g.default], () => g.default.getCurrentUser()), x = i.useMemo(() => a.some(e => (0, f.eM)(e, E)), [a, E]), S = (0, o.s9z)(e => (0, o.DEQ)(e, _.PU)), {
+    analyticsLocations: P
+  } = (0, s.ZP)(), I = (0, r.jsx)(b.Z, {
     showPill: false,
     id: "create-join-button",
     onClick: () => {
       (0, u.yU)() ? (0, d.Z)({
         analyticsSource: {
-          page: _.Sbl.CREATE_JOIN_GUILD_MODAL
+          page: O.Sbl.CREATE_JOIN_GUILD_MODAL
         },
         analyticsLocation: {
-          page: _.Sbl.CREATE_JOIN_GUILD_MODAL,
-          section: _.jXE.GUILD_CAP_UPSELL_MODAL
+          page: O.Sbl.CREATE_JOIN_GUILD_MODAL,
+          section: O.jXE.GUILD_CAP_UPSELL_MODAL
         },
-        analyticsLocations: I
+        analyticsLocations: P
       }) : c.Z.openCreateGuildModal({
         location: "Guild List"
       })
@@ -89,13 +89,13 @@ function E(e) {
     tooltip: y.intl.string(y.t.l5WIbW),
     icon: o.oFk
   });
-  return t ? P : (0, r.jsx)("div", {
+  return t ? I : (0, r.jsx)("div", {
     className: v.tutorialContainer,
     children: (0, r.jsxs)(p.Z, {
       tutorialId: x ? "create-more-servers" : "create-first-server",
       inlineSpecs: j,
       position: "right",
-      children: [P, null != n && (0, r.jsx)(m.ZP, {
+      children: [I, null != n && (0, r.jsx)(m.ZP, {
         name: y.intl.string(y.t["45xjMz"]),
         targetNode: n,
         below: true,

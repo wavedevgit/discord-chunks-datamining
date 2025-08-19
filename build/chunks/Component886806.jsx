@@ -28,14 +28,14 @@ function v(e) {
   let {
     location: t,
     transitionTo: l = b
-  } = e, [s, v] = i.useState("submitting"), E = i.useRef(true);
+  } = e, [o, v] = i.useState("submitting"), E = i.useRef(true);
   (0, c.ZP)(() => {
     (0, p.e)("verify_email");
     let e = (0, u.Z)(t);
     if (null == e) return void v("failed");
     (async () => {
       try {
-        let t = await o.Z.verify(e);
+        let t = await s.Z.verify(e);
         v("succeeded"), E.current = t
       } catch (e) {
         v("failed")
@@ -52,7 +52,7 @@ function v(e) {
         verifying_user_id: E.current
       }), (0, h.Z)("verify_email")
     }, []);
-  return "failed" === s ? (0, r.jsxs)(d.ZP, {
+  return "failed" === o ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(375673),
       className: a()(_.image, x.marginBottom20)
@@ -66,7 +66,7 @@ function v(e) {
       onClick: j,
       children: g.intl.string(g.t.dKhVQE)
     })]
-  }) : "succeeded" === s ? (0, r.jsxs)(d.ZP, {
+  }) : "succeeded" === o ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(73962),
       className: a()(_.image, x.marginBottom20)

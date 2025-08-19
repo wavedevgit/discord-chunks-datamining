@@ -1,11 +1,12 @@
-/** Chunk was on 30866 **/
-/** chunk id: 55589, original params: e,n,t (module,exports,require) **/
-let r, i, a;
+/** Chunk was on 31930 **/
+/** chunk id: 55589, original params: e,t,n (module,exports,require) **/
+"use strict";
+let i, r, s;
 require.d(exports, {
-  Z: () => S
+  Z: () => N
 }), require("./388685.js"), require("./539854.js");
-var o, l, Chunk913527 = require("./913527.js"),
-  s = require.n(Chunk913527),
+var l, o, Chunk913527 = require("./913527.js"),
+  c = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
   Chunk570140 = require("./570140.js"),
@@ -19,131 +20,131 @@ var o, l, Chunk913527 = require("./913527.js"),
   Chunk9156 = require("./9156.js"),
   Chunk594174 = require("./594174.js"),
   Chunk709054 = require("./709054.js");
-let y = new Chunk759174.h(e => {
+let S = new Chunk759174.h(e => {
   let {
-    isRequest: n,
-    isFavorite: t
+    isRequest: t,
+    isFavorite: n
   } = e;
-  return n ? [] : [t ? "FAVORITE" : "DEFAULT"]
+  return t ? [] : [n ? "FAVORITE" : "DEFAULT"]
 }, e => {
   let {
-    lastMessageId: n
+    lastMessageId: t
   } = e;
-  return -O.default.extractTimestamp(n)
+  return -O.default.extractTimestamp(t)
 });
 
-function j(e) {
-  let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : function(e) {
-    var n, t;
-    let r = null != (t = null != (n = v.ZP.lastMessageId(e.id)) ? n : e.lastMessageId) ? t : e.id,
-      i = e.isMessageRequestTimestamp;
-    if (null != i) {
-      let e = s()(i).valueOf(),
-        n = O.default.fromTimestamp(e);
-      return O.default.compare(r, n) > 0 ? r : n
+function E(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : function(e) {
+    var t, n;
+    let i = null != (n = null != (t = C.ZP.lastMessageId(e.id)) ? t : e.lastMessageId) ? n : e.id,
+      r = e.isMessageRequestTimestamp;
+    if (null != r) {
+      let e = c()(r).valueOf(),
+        t = O.default.fromTimestamp(e);
+      return O.default.compare(i, t) > 0 ? i : t
     }
-    return r
+    return i
   }(e);
   return {
     channelId: e.id,
-    lastMessageId: n,
+    lastMessageId: t,
     isFavorite: false,
-    isRequest: p.Z.isMessageRequest(e.id) || f.Z.isSpam(e.id)
+    isRequest: g.Z.isMessageRequest(e.id) || f.Z.isSpam(e.id)
   }
 }
 
-function I() {
-  y.clear(), Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
-    y.set(e.id, j(e))
+function w() {
+  S.clear(), Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
+    S.set(e.id, E(e))
   })
 }
 
-function E() {
+function I() {
   let e = Chunk592125.Z.getMutablePrivateChannels();
-  for (let n in module) y.set(exports, j(module[exports]))
+  for (let t in module) S.set(exports, E(module[exports]))
 }
-let w = (r = [], i = [], a = [], () => {
-  let e = y.values("FAVORITE"),
-    n = y.values("DEFAULT");
-  return (r !== module || i !== exports) && (a = [], module.forEach(e => {
+let j = (i = [], r = [], s = [], () => {
+  let e = S.values("FAVORITE"),
+    t = S.values("DEFAULT");
+  return (i !== module || r !== exports) && (s = [], module.forEach(e => {
     let {
-      channelId: n
+      channelId: t
     } = e;
-    return a.push(n)
-  }), r = module, exports.forEach(e => {
+    return s.push(t)
+  }), i = module, exports.forEach(e => {
     let {
-      channelId: n
+      channelId: t
     } = e;
-    return a.push(n)
-  }), i = exports), a
+    return s.push(t)
+  }), r = exports), s
 });
-class P extends(o = Chunk442837.ZP.Store) {
+class P extends(l = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk594174.default, Chunk355298.Z, Chunk9156.ZP), this.syncWith([Chunk9156.ZP, Chunk355298.Z], I)
+    this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk594174.default, Chunk355298.Z, Chunk9156.ZP), this.syncWith([Chunk9156.ZP, Chunk355298.Z], w)
   }
   getPrivateChannelIds() {
-    return w()
+    return j()
   }
   getSortedChannels() {
-    return [y.values("FAVORITE"), y.values("DEFAULT")]
+    return [S.values("FAVORITE"), S.values("DEFAULT")]
   }
   serializeForOverlay() {
     let e = {};
-    return y.values().forEach(n => {
+    return S.values().forEach(t => {
       let {
-        channelId: t,
-        lastMessageId: r
-      } = n;
-      e[t] = r
+        channelId: n,
+        lastMessageId: i
+      } = t;
+      e[n] = i
     }), module
   }
-}(l = "displayName") in P ? Object.defineProperty(P, l, {
+}(o = "displayName") in P ? Object.defineProperty(P, o, {
   value: "PrivateChannelSortStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : P[l] = "PrivateChannelSortStore";
-let S = new P(Chunk570140.Z, {
-  CONNECTION_OPEN: I,
-  CONNECTION_OPEN_SUPPLEMENTAL: I,
-  OVERLAY_INITIALIZE: I,
-  CACHE_LOADED: E,
-  CACHE_LOADED_LAZY: E,
+}) : P[o] = "PrivateChannelSortStore";
+let N = new P(Chunk570140.Z, {
+  CONNECTION_OPEN: w,
+  CONNECTION_OPEN_SUPPLEMENTAL: w,
+  OVERLAY_INITIALIZE: w,
+  CACHE_LOADED: I,
+  CACHE_LOADED_LAZY: I,
   CHANNEL_UPDATES: function(e) {
     let {
-      channels: n
+      channels: t
     } = e;
-    n.forEach(e => {
-      ((0, h.hv)(e.type) || y.has(e.id)) && y.set(e.id, j(e))
+    t.forEach(e => {
+      ((0, m.hv)(e.type) || S.has(e.id)) && S.set(e.id, E(e))
     })
   },
   CHANNEL_CREATE: function(e) {
     let {
-      channel: n
+      channel: t
     } = e;
-    if (!(0, h.hv)(n.type) || n.id === b.V) returnfalse;
-    y.set(n.id, j(n))
+    if (!(0, m.hv)(t.type) || t.id === p.V) returnfalse;
+    S.set(t.id, E(t))
   },
   CHANNEL_DELETE: function(e) {
     let {
-      channel: n
+      channel: t
     } = e;
-    return y.delete(n.id)
+    return S.delete(t.id)
   },
   MESSAGE_CREATE: function(e) {
     let {
-      channelId: n,
-      message: t
+      channelId: t,
+      message: n
     } = e;
-    if (!y.has(n)) returnfalse;
-    let r = m.Z.getChannel(n);
-    return null != r && y.set(n, j(r, t.id))
+    if (!S.has(t)) returnfalse;
+    let i = b.Z.getChannel(t);
+    return null != i && S.set(t, E(i, n.id))
   },
   GUILD_CREATE: function(e) {
-    let n = e.guild.id;
-    return y.delete(n)
+    let t = e.guild.id;
+    return S.delete(t)
   },
   LOGOUT: function() {
-    y.clear()
+    S.clear()
   }
 })

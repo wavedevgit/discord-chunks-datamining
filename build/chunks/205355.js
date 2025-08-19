@@ -1,4 +1,4 @@
-/** Chunk was on 31253 **/
+/** Chunk was on 11868 **/
 /** chunk id: 205355, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -6,14 +6,14 @@ require.d(exports, {
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
-let o = "".concat(Chunk981631.dGm, "/api/v2/scheduled-maintenances"),
-  a = "".concat(Chunk981631.dGm, "/api/v2/incidents/unresolved.json"),
+let a = "".concat(Chunk981631.dGm, "/api/v2/scheduled-maintenances"),
+  o = "".concat(Chunk981631.dGm, "/api/v2/incidents/unresolved.json"),
   c = {
     checkIncidents() {
       Promise.all([Chunk544891.tn.get({
-        url: "".concat(o, "/active.json"),
+        url: "".concat(a, "/active.json"),
         rejectWithError: true
-      }), Chunk544891.tn.get(a)]).then(e => {
+      }), Chunk544891.tn.get(o)]).then(e => {
         let [t, n] = e, [r] = t.body.scheduled_maintenances, [l] = n.body.incidents;
         i.Z.dispatch({
           type: "STATUS_PAGE_INCIDENT",
@@ -23,7 +23,7 @@ let o = "".concat(Chunk981631.dGm, "/api/v2/scheduled-maintenances"),
     },
     checkScheduledMaintenances() {
       Chunk544891.tn.get({
-        url: "".concat(o, "/upcoming.json"),
+        url: "".concat(a, "/upcoming.json"),
         rejectWithError: true
       }).then(e => {
         let [t] = e.body.scheduled_maintenances;

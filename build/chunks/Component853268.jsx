@@ -22,15 +22,15 @@ function d(e) {
     marginTopStyle: h,
     subtextClassName: p
   } = e;
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(o.Z, {
     className: null != h ? h : u.marginTop20,
-    align: s.Z.Align.CENTER,
+    align: o.Z.Align.CENTER,
     children: (0, r.jsx)(a.XZJ, {
       value: t,
       type: a.XZJ.Types.INVERTED,
       onChange: (e, t) => n(t),
       className: c.checkbox,
-      children: (0, r.jsx)(o.i_, {
+      children: (0, r.jsx)(s.i_, {
         className: l()(p, {
           [c.subText]: !d
         }),

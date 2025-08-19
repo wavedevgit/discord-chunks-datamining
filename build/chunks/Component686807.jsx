@@ -1,4 +1,4 @@
-/** Chunk was on 4756 **/
+/** Chunk was on 31930 **/
 /** chunk id: 686807, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,7 +19,7 @@ function h(e) {
   let {
     channelId: t
   } = e, n = (0, a.m7)(t);
-  if (null == n) return "[".concat(c.intl.string(c.t.bz1PZW), "]");
+  if (null == n) return "[".concat(u.intl.string(u.t.bz1PZW), "]");
   let o = n.isMediaChannel() ? r.XBm : (0, l.Th)(n.type);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(r.nn4, {
@@ -38,11 +38,11 @@ function h(e) {
 
 function p(e) {
   switch (e.ref_type) {
-    case u.Qs.CHANNEL:
+    case c.Qs.CHANNEL:
       return (0, i.jsx)(h, {
         channelId: e.ref_id
       });
-    case u.Qs.INTANGIBLE:
+    case c.Qs.INTANGIBLE:
       return e.name;
     default:
       (0, o.vE)(e)

@@ -1,4 +1,4 @@
-/** Chunk was on 78079 **/
+/** Chunk was on 12630 **/
 /** chunk id: 84502, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   s: () => i
@@ -20,11 +20,11 @@ function i(A) {
     primaryTintLuminances: n,
     primaryLuminanceWeights: r,
     secondaryBaseColors: i,
-    secondaryTintColor: a,
-    secondaryTintLuminances: s,
+    secondaryTintColor: s,
+    secondaryTintLuminances: a,
     secondaryLuminanceWeights: o
   } = A, g = null != t ? l(n, t, r) : e, c = [];
-  return null != i && null != s && null != o && (c = null != a ? l(s, a, o) : i), {
+  return null != i && null != a && null != o && (c = null != s ? l(a, s, o) : i), {
     primaryColorsTransformed: g,
     secondaryColorsTransformed: c
   }

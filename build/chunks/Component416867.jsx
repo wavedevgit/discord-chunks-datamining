@@ -1,4 +1,4 @@
-/** Chunk was on 4756 **/
+/** Chunk was on 31930 **/
 /** chunk id: 416867, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -13,16 +13,16 @@ var Chunk755721 = require("./755721.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk818235 = require("./818235.js");
 
-function c(e) {
+function u(e) {
   let {
     transitionState: t,
     Icon: n,
-    title: c,
+    title: u,
     body: d,
     onClose: h
   } = e, p = (0, l.Dt)();
   return (0, i.jsxs)(s.Y0X, {
-    className: u.container,
+    className: c.container,
     transitionState: t,
     "aria-labelledby": p,
     parentComponent: "ActionCompletedSuccessModal",
@@ -33,13 +33,13 @@ function c(e) {
         size: 24
       }), (0, i.jsx)(s.X6q, {
         id: p,
-        className: u.__invalid_title,
+        className: c.__invalid_title,
         variant: "heading-xl/semibold",
-        children: c
+        children: u
       }), (0, i.jsx)(s.LZC, {
         size: 8
       }), (0, i.jsx)(s.Text, {
-        className: u.body,
+        className: c.body,
         variant: "text-sm/normal",
         children: d
       })]
@@ -55,7 +55,7 @@ function c(e) {
 }
 
 function d(e) {
-  (0, s.h7j)(t => (0, i.jsx)(c, function(e) {
+  (0, s.h7j)(t => (0, i.jsx)(u, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);

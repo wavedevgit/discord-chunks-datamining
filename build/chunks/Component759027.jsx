@@ -71,7 +71,7 @@ function y(e) {
   let {
     subscription: T,
     onUpdated: O
-  } = e, [E, S] = r.useState(false), [P, I] = r.useState(false), [w, R] = r.useState(false), [k, Z] = r.useState(false), [A, D] = r.useState(null), L = e => (null == e && (e = T.status), e in g) ? g[e] : "Unknown status ".concat(e), M = e => {
+  } = e, [E, S] = r.useState(false), [P, I] = r.useState(false), [w, k] = r.useState(false), [R, Z] = r.useState(false), [A, D] = r.useState(null), L = e => (null == e && (e = T.status), e in g) ? g[e] : "Unknown status ".concat(e), M = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
   }, U = async e => {
@@ -124,9 +124,9 @@ function y(e) {
       D(e.body.message)
     }
     O()
-  }, B = (null == (t = v.GP[T.planIdFromItems]) ? true : t.premiumType) === v.p9.TIER_0, z = null == (a = T.metadata) ? true : a.ended_at, G = null != z ? new Date(z).toISOString().substring(0, 10) : "", V = T.hasActiveTrial, H = (null == (l = T.metadata) ? true : l.active_discount_id) != null;
+  }, B = (null == (t = b.GP[T.planIdFromItems]) ? true : t.premiumType) === b.p9.TIER_0, z = null == (a = T.metadata) ? true : a.ended_at, G = null != z ? new Date(z).toISOString().substring(0, 10) : "", V = T.hasActiveTrial, H = (null == (l = T.metadata) ? true : l.active_discount_id) != null;
   return (0, n.jsxs)("div", {
-    className: i()(b.card, B ? b.gradientWrapperTier0 : b.gradientWrapperTier2),
+    className: i()(v.card, B ? v.gradientWrapperTier0 : v.gradientWrapperTier2),
     children: [V && (0, n.jsx)(o.P3F, {
       className: f.badge,
       children: (0, n.jsx)(o.Text, {
@@ -147,7 +147,7 @@ function y(e) {
         variant: "text-md/normal",
         children: ["Type: ", (() => {
           let e = T.planIdFromItems;
-          return null == e ? "No plan id" : e in v.GP ? v.GP[e].name : "Unknown plan id ".concat(e)
+          return null == e ? "No plan id" : e in b.GP ? b.GP[e].name : "Unknown plan id ".concat(e)
         })(), " "]
       }), (0, n.jsxs)(o.Text, {
         variant: "text-md/normal",
@@ -171,7 +171,7 @@ function y(e) {
       className: f.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
-          R(!w)
+          k(!w)
         },
         className: f.collapsablePaneHeader,
         children: [(0, n.jsx)("div", {
@@ -206,7 +206,7 @@ function y(e) {
       className: f.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
-          Z(!k)
+          Z(!R)
         },
         className: f.collapsablePaneHeader,
         children: [(0, n.jsx)("div", {
@@ -215,9 +215,9 @@ function y(e) {
             children: "Active Discount Info"
           })
         }), (0, n.jsx)(c.Z, {
-          direction: k ? c.Z.Directions.UP : c.Z.Directions.DOWN
+          direction: R ? c.Z.Directions.UP : c.Z.Directions.DOWN
         })]
-      }), k && (0, n.jsxs)("ul", {
+      }), R && (0, n.jsxs)("ul", {
         className: f.collapsiblePaneList,
         children: [(0, n.jsxs)("li", {
           children: [(0, n.jsx)(o.Text, {

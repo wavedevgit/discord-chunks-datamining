@@ -1,5 +1,5 @@
-/** Chunk was on 31253 **/
-/** chunk id: 50953, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 93886 **/
+/** chunk id: 50953, original params: e,t,a (module,exports,require) **/
 module.exports = {
   premiumIcon: "premiumIcon__9671b",
   platformIcon: "platformIcon__9671b",

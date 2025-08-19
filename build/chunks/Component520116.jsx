@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 520116, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -67,7 +67,7 @@ function x(e) {
       className: C.messageContainer,
       onKeyDown: m
     }, g), l = l = {
-      children: [(0, r.jsx)(O.Z, {
+      children: [(0, r.jsx)(_.Z, {
         className: C.jumpButton,
         onJump: e => f(e, s.id)
       }), (0, r.jsx)(h.Z, {
@@ -106,14 +106,14 @@ function S(e) {
     location: "20e3b0_1"
   }, {
     autoTrackExposure: false
-  }), O = g.jU.useSetting(), E = (0, p.P1)(l), S = false, I = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), P = null != (n = null == (t = b.default.getUser(m.default.getId())) ? true : t.hasFlag(v.xW$.SPAMMER)) && n, N = [];
+  }), _ = g.jU.useSetting(), E = (0, p.P1)(l), S = false, P = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), I = null != (n = null == (t = b.default.getUser(m.default.getId())) ? true : t.hasFlag(v.xW$.SPAMMER)) && n, N = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
       n = i.messages.slice(0, y.hC);
     n.forEach(n => {
-      if (!I && (null == e || !e.isSame(n.timestamp, "day"))) {
-        let t = (0, _.vc)(n.timestamp, "LL");
+      if (!P && (null == e || !e.isSame(n.timestamp, "day"))) {
+        let t = (0, O.vc)(n.timestamp, "LL");
         N.push((0, r.jsx)(f.Z, {
           className: C.divider,
           children: t
@@ -123,9 +123,9 @@ function S(e) {
       t = n, S = S || (0, p.DQ)(n), N.push((0, r.jsx)(x, {
         channel: l,
         message: n,
-        compact: O,
+        compact: _,
         isGroupStart: i,
-        treatSpam: !P && h && (0, p.DQ)(n) && E,
+        treatSpam: !I && h && (0, p.DQ)(n) && E,
         gotoChannel: a
       }, n.id))
     }), i.messages.length >= y.hC && N.push((0, r.jsxs)(s.zx, {

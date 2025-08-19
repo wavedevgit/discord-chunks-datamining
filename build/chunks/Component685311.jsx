@@ -20,14 +20,14 @@ let p = function(e) {
     attemptDeepLink: l
   } = e, [p, m] = i.useState(0);
   i.useEffect(() => {
-    s.default.once("connected", () => {
+    o.default.once("connected", () => {
       m(1)
-    }), s.default.once("disconnected", () => {
-      (0, u.uL)((0, o.M)())
-    }), s.default.connect()
+    }), o.default.once("disconnected", () => {
+      (0, u.uL)((0, s.M)())
+    }), o.default.connect()
   }, []), i.useEffect(() => {
     if (0 !== p) return;
-    let e = setTimeout(() => (0, u.uL)((0, o.M)()), 3e3);
+    let e = setTimeout(() => (0, u.uL)((0, s.M)()), 3e3);
     return () => clearTimeout(e)
   }, [p]);
   let f = i.useCallback(async (e, t) => {
@@ -54,7 +54,7 @@ let p = function(e) {
           className: a()(h.marginTop8, h.marginCenterHorz),
           color: c.zx.Colors.LINK,
           look: c.zx.Looks.LINK,
-          onClick: () => (0, u.uL)((0, o.M)()),
+          onClick: () => (0, u.uL)((0, s.M)()),
           children: d.intl.string(d.t["2ixEBg"])
         })]
       });

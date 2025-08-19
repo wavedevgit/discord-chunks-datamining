@@ -1,7 +1,7 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 326838, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk313227 = require("./313227.js");
 
-function _(e) {
+function O(e) {
   let {
     invite: t,
     expired: n
@@ -47,7 +47,7 @@ function _(e) {
         })
       }), (0, r.jsxs)("div", {
         className: b.buttonContainer,
-        children: [(0, r.jsx)(O, {
+        children: [(0, r.jsx)(_, {
           expired: n,
           invite: t,
           isHoveringInvite: p
@@ -85,18 +85,18 @@ function _(e) {
   })
 }
 
-function O(e) {
+function _(e) {
   let {
     expired: t,
     invite: n,
     isHoveringInvite: l
-  } = e, o = (0, a.e7)([p.Z], () => p.Z.isInviteGameInstalled(n)), u = (0, a.e7)([p.Z], () => p.Z.isInviteJoinable(n)), [h, g] = i.useState(false), _ = i.useCallback(async () => {
+  } = e, o = (0, a.e7)([p.Z], () => p.Z.isInviteGameInstalled(n)), u = (0, a.e7)([p.Z], () => p.Z.isInviteJoinable(n)), [h, g] = i.useState(false), O = i.useCallback(async () => {
     g(true);
     try {
       await (0, f.MH)(n)
     } catch (e) {}
     g(false)
-  }, [n]), O = i.useCallback(async () => {
+  }, [n]), _ = i.useCallback(async () => {
     g(true);
     try {
       await (0, f.Ol)(n)
@@ -109,7 +109,7 @@ function O(e) {
       color: s.Tt.TRANSPARENT,
       disabled: h,
       size: s.Ph.SMALL,
-      onClick: _,
+      onClick: O,
       children: m.intl.string(m.t["s+J8Dg"])
     });
     else return null;
@@ -118,7 +118,7 @@ function O(e) {
     color: s.Tt.GREEN,
     disabled: h,
     size: s.Ph.SMALL,
-    onClick: O,
+    onClick: _,
     children: m.intl.string(m.t["/loN9/"])
   }) : null != n.fallback_url ? (0, r.jsx)(s.zx, {
     className: b.primaryButton,

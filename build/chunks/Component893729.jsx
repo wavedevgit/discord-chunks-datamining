@@ -1,8 +1,8 @@
-/** Chunk was on 4756 **/
+/** Chunk was on 31930 **/
 /** chunk id: 893729, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,16 +20,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk914933 = require("./914933.js");
 
-function C(e) {
+function v(e) {
   let {
     guildId: t,
     role: n,
     theme: s,
-    content: C = v.intl.string(v.t["6OSasb"]),
-    className: b
-  } = e, y = (0, o.e7)([p.default], () => p.default.getCurrentUser()), O = g.ZP.useName(t, null, y), S = (0, u.Kz)(n), E = r.useMemo(() => {
+    content: v = m.intl.string(m.t["6OSasb"]),
+    className: C
+  } = e, _ = (0, o.e7)([p.default], () => p.default.getCurrentUser()), y = g.ZP.useName(t, null, _), O = (0, c.Kz)(n), S = r.useMemo(() => {
     var e, t;
-    return (0, c.e5)((e = function(e) {
+    return (0, u.e5)((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -48,12 +48,12 @@ function C(e) {
       return e
     }({}, (0, d.ZP)({
       channelId: "0",
-      content: C,
+      content: v,
       tts: true,
       type: true,
       messageReference: true,
       allowedMentions: true,
-      author: y
+      author: _
     })), t = t = {
       state: f.yb.SENT,
       id: "0"
@@ -67,20 +67,20 @@ function C(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [y, C]), _ = {
-    nick: O,
+  }, [_, v]), E = {
+    nick: y,
     colorString: n.colorString,
     colorStrings: n.colorStrings
   };
   return (0, i.jsx)(a.f6W, {
     theme: s,
     children: e => (0, i.jsx)("div", {
-      className: l()(e, m.container, b),
+      className: l()(e, b.container, C),
       children: (0, i.jsx)(h.Z, {
         hideTimestamp: true,
-        author: _,
-        roleIcon: S,
-        message: E,
+        author: E,
+        roleIcon: O,
+        message: S,
         isGroupStart: true,
         disableInteraction: true
       })

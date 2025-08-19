@@ -1,9 +1,9 @@
-/** Chunk was on 4756 **/
+/** Chunk was on 31930 **/
 /** chunk id: 696936, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   W: () => a,
-  Z: () => u
+  Z: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,7 +17,7 @@ let a = {
   BROWN: Chunk762641.brownMessageBlock
 };
 
-function u(e) {
+function c(e) {
   let {
     color: t,
     icon: n,

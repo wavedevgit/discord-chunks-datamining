@@ -1,7 +1,7 @@
-/** Chunk was on 31253 **/
+/** Chunk was on 11868 **/
 /** chunk id: 401430, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Wt: () => d,
+  Wt: () => _,
   mc: () => E,
   q$: () => I
 }), require("./415506.js"), require("./997841.js"), require("./35282.js");
@@ -14,21 +14,21 @@ var Chunk570140 = require("./570140.js"),
   Chunk591759 = require("./591759.js"),
   Chunk978085 = require("./978085.js"),
   Chunk981631 = require("./981631.js");
-async function d(e, t) {
+async function _(e, t) {
   r.Z.dispatch({
     applicationId: e,
     type: "DEVELOPER_TEST_MODE_AUTHORIZATION_START"
   });
   try {
     if (!await (0, i.W5)(e)) throw Error("Do not have access!");
-    let n = o.Z.getApplication(e);
-    null == n && (n = a.ZP.createFromServer(await l.ZP.fetchApplication(e)));
-    let d = (0, c.yE)(n.flags, _.udG.EMBEDDED);
-    if (d && (null == t || !s.Z.URL_REGEX.test(t))) throw Error("Invalid Origin URL for embedded application");
-    return d || u.GR(n), r.Z.dispatch({
+    let n = a.Z.getApplication(e);
+    null == n && (n = o.ZP.createFromServer(await l.ZP.fetchApplication(e)));
+    let _ = (0, c.yE)(n.flags, d.udG.EMBEDDED);
+    if (_ && (null == t || !s.Z.URL_REGEX.test(t))) throw Error("Invalid Origin URL for embedded application");
+    return _ || u.GR(n), r.Z.dispatch({
       type: "DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS",
       applicationId: e,
-      originURL: d ? t : null
+      originURL: _ ? t : null
     }), n
   } catch (t) {
     return r.Z.dispatch({

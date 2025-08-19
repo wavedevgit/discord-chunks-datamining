@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 98597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   CN: () => N,
@@ -39,7 +39,7 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function I(e) {
   return e
 }
 
-function P(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -161,17 +161,17 @@ function A(e) {
     entrypoints: v
   } = (0, p._k)({
     location: "channel_base"
-  }), j = (0, s.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), S = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, s.e7)([y.Z], () => (0, f.b)(y.Z, j, t, S)), Z = (0, s.e7)([y.Z], () => y.Z.can(C.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTE) : E.intl.string(E.t.Sd8Ix8)), T = v ? E.intl.string(E.t["EE+P0N"]) : Z, A = l.useRef(null);
+  }), j = (0, s.e7)([_.Z], () => _.Z.getGuild(t.getGuildId())), S = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, s.e7)([y.Z], () => (0, f.b)(y.Z, j, t, S)), Z = (0, s.e7)([y.Z], () => y.Z.can(C.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTE) : E.intl.string(E.t.Sd8Ix8)), T = v ? E.intl.string(E.t["EE+P0N"]) : Z, A = l.useRef(null);
   if (o || !w || t.isModeratorReportChannel()) return null;
 
   function R() {
     if (null != j) {
-      let e = _.Z.getAllActiveStreams().filter(e => e.state !== C.jm8.ENDED && e.channelId === t.id);
+      let e = O.Z.getAllActiveStreams().filter(e => e.state !== C.jm8.ENDED && e.channelId === t.id);
       (0, c.ZDy)(async () => {
         let {
           default: r
         } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
-        return n => (0, i.jsx)(r, P(I({}, n), {
+        return n => (0, i.jsx)(r, I(P({}, n), {
           guild: j,
           channel: t,
           streamUserId: 1 === e.length ? e[0].ownerId : null,
@@ -198,7 +198,7 @@ function A(e) {
     })
   })), (0, i.jsx)(c.ua7, {
     text: T,
-    children: e => (0, i.jsx)(c.P3F, P(I({
+    children: e => (0, i.jsx)(c.P3F, I(P({
       className: a()(x.iconItem, h ? x.alwaysShown : true, b ? x.iconWithChannelInfo : x.iconNoChannelInfo)
     }, e), {
       onClick: R,
@@ -217,7 +217,7 @@ function R(e) {
   };
   return (0, i.jsx)(c.ua7, {
     text: E.intl.string(E.t.ROh4T0),
-    children: e => (0, i.jsx)(c.P3F, P(I({
+    children: e => (0, i.jsx)(c.P3F, I(P({
       className: x.iconItem
     }, e), {
       onClick: n,
@@ -241,7 +241,7 @@ function D(e) {
   };
   return (0, i.jsx)(c.ua7, {
     text: E.intl.string(E.t["N2c/Ul"]),
-    children: e => (0, i.jsx)(c.P3F, P(I({
+    children: e => (0, i.jsx)(c.P3F, I(P({
       className: x.iconItem
     }, e), {
       onClick: n,
@@ -259,21 +259,21 @@ class L extends(r = Chunk647438.PureComponent) {
     let {
       onContextMenu: t
     } = e;
-    return (0, i.jsx)(Z, P(I({}, this.props), {
+    return (0, i.jsx)(Z, I(P({}, this.props), {
       onContextMenu: t
     }))
   }
   renderEditButton() {
-    return (0, Chunk951288.jsx)(T, I({}, this.props))
+    return (0, Chunk951288.jsx)(T, P({}, this.props))
   }
   renderInviteButton() {
-    return (0, Chunk951288.jsx)(A, I({}, this.props))
+    return (0, Chunk951288.jsx)(A, P({}, this.props))
   }
   renderRemoveSuggestionButton() {
-    return (0, Chunk951288.jsx)(R, I({}, this.props))
+    return (0, Chunk951288.jsx)(R, P({}, this.props))
   }
   renderAcceptSuggestionButton() {
-    return (0, Chunk951288.jsx)(D, I({}, this.props))
+    return (0, Chunk951288.jsx)(D, P({}, this.props))
   }
   getClassName() {
     let {

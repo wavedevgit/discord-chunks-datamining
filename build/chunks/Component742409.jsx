@@ -1,4 +1,4 @@
-/** Chunk was on 78079 **/
+/** Chunk was on 12630 **/
 /** chunk id: 742409, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => d,
@@ -73,7 +73,7 @@ let d = function(A) {
     className: l()(u.container, e),
     children: [(0, n.jsx)(h, {
       className: u.unfocusedMessage,
-      avatar: a.Z,
+      avatar: s.Z,
       username: "Roka",
       usernameStyle: {
         color: "var(--brand-400)"
@@ -81,7 +81,7 @@ let d = function(A) {
       message: v.intl.string(f.default.bpghV1)
     }), (0, n.jsx)(h, {
       className: u.unfocusedMessage,
-      avatar: s.Z,
+      avatar: a.Z,
       username: "hongo",
       usernameStyle: {
         color: "var(--green-230)"

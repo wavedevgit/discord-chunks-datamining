@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 903672, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -42,9 +42,9 @@ function Z(e, t, n) {
     i = t ? C.ZP.roleFilter : null,
     l = t ? C.ZP.everyoneFilter : null,
     o = null;
-  null != e && null != r && (o = r === I.NgX.ALL_SERVERS ? null : e.getGuildId()), c.Z.fetchRecentMentions({
+  null != e && null != r && (o = r === P.NgX.ALL_SERVERS ? null : e.getGuildId()), c.Z.fetchRecentMentions({
     before: n,
-    limit: I.DJj,
+    limit: P.DJj,
     guildId: o,
     roles: i,
     everyone: l
@@ -68,7 +68,7 @@ function T(e) {
     guildFilter: C.ZP.guildFilter,
     roleFilter: C.ZP.roleFilter,
     everyoneFilter: C.ZP.everyoneFilter
-  })), O = (0, _.Us)({
+  })), _ = (0, O.Us)({
     location: "RecentMentions"
   }), v = (0, p.Z)(h), E = (0, p.Z)(g), x = (0, p.Z)(b);
   i.useEffect(() => {
@@ -77,12 +77,12 @@ function T(e) {
   }, [v, h, E, g, x, b, n, true]), (0, d.ZP)(() => {
     (null == l ? true : l.some(m.k5)) && (c.Z.clearMentions(), Z(n, true))
   }), i.useEffect(() => () => {
-    c.Z.truncateMentions(I.DJj)
+    c.Z.truncateMentions(P.DJj)
   }, []);
   let S = i.useCallback(() => null, []);
   return (0, r.jsx)(u.ZP, {
     className: o()(N.recentMentionsPopout, {
-      [N.widerInbox]: O
+      [N.widerInbox]: _
     }),
     scrollerClassName: N.scroller,
     onFetch: () => null,
@@ -102,7 +102,7 @@ function T(e) {
     renderHeader: S,
     renderEmptyState: D,
     renderMessage: A,
-    "aria-label": P.intl.string(P.t.jbV6MD),
+    "aria-label": I.intl.string(I.t.jbV6MD),
     listName: "recents"
   })
 }
@@ -135,7 +135,7 @@ function R(e) {
       gotoChannel: n,
       children: null != i ? (0, r.jsx)(s.M0o, {
         className: N.closeButton,
-        tooltip: P.intl.string(P.t.cpT0Cg),
+        tooltip: I.intl.string(I.t.cpT0Cg),
         color: s.YX$.TERTIARY,
         icon: (0, r.jsx)(s.Dio, {
           size: "xs",
@@ -153,7 +153,7 @@ function R(e) {
         channel: o,
         className: N.message,
         hideAccessories: u,
-        compact: O.jU.getSetting(),
+        compact: _.jU.getSetting(),
         animateAvatar: false,
         focusProps: w,
         trackAnnouncementViews: true

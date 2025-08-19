@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 791914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -31,7 +31,7 @@ function v(e) {
     closePopout: m
   } = e, {
     enabled: b,
-    inInbox: _
+    inInbox: O
   } = d.Z.useExperiment({
     location: "RecentsPopout"
   }), v = (0, f.Us)({
@@ -53,14 +53,14 @@ function v(e) {
         className: y.inboxTitle,
         variant: "text-lg/semibold",
         color: "interactive-active",
-        children: O.intl.string(O.t.GSmTKC)
+        children: _.intl.string(_.t.GSmTKC)
       }), (0, r.jsxs)(o.kL8, {
         className: y.controls,
         onClick: e => e.stopPropagation(),
         focusProps: {
           enabled: false
         },
-        "aria-label": O.intl.string(O.t["8k+6QU"]),
+        "aria-label": _.intl.string(_.t["8k+6QU"]),
         children: [(0, r.jsx)(j, {
           tab: t
         }), (0, r.jsx)(g.Z, {
@@ -77,41 +77,41 @@ function v(e) {
         className: y.tabBar,
         children: [(0, r.jsxs)(o.njP.Item, {
           id: l.X.FOR_YOU,
-          "aria-label": O.intl.string(O.t["En+D+v"]),
+          "aria-label": _.intl.string(_.t["En+D+v"]),
           className: y.tab,
-          children: [O.intl.string(O.t["En+D+v"]), (null == h ? true : h.badgeForYou) ? (0, r.jsx)(o.fWl, {
+          children: [_.intl.string(_.t["En+D+v"]), (null == h ? true : h.badgeForYou) ? (0, r.jsx)(o.fWl, {
             color: s.Z.STATUS_DANGER,
             className: y.iconBadge
           }) : null]
         }), (0, r.jsx)(o.njP.Item, {
           id: l.X.UNREADS,
           className: y.tab,
-          children: O.intl.string(O.t.sRUdBw)
+          children: _.intl.string(_.t.sRUdBw)
         }), (0, r.jsx)(o.njP.Item, {
-          "aria-label": O.intl.string(O.t["GRZF9/"]),
+          "aria-label": _.intl.string(_.t["GRZF9/"]),
           id: l.X.MENTIONS,
           className: y.tab,
-          children: O.intl.string(O.t["GRZF9/"])
+          children: _.intl.string(_.t["GRZF9/"])
         }), C ? (0, r.jsxs)(o.njP.Item, {
           "aria-label": "game_invites",
           id: l.X.GAME_INVITES,
           className: y.tab,
-          children: [O.intl.string(O.t.apq3cX), E > 0 ? (0, r.jsx)(o.fWl, {
+          children: [_.intl.string(_.t.apq3cX), E > 0 ? (0, r.jsx)(o.fWl, {
             color: s.Z.STATUS_DANGER,
             className: y.iconBadge
           }) : null]
-        }) : null, b && _ ? (0, r.jsx)(o.njP.Item, {
-          "aria-label": O.intl.string(O.t["2pAkDA"]),
+        }) : null, b && O ? (0, r.jsx)(o.njP.Item, {
+          "aria-label": _.intl.string(_.t["2pAkDA"]),
           id: l.X.BOOKMARKS,
           className: y.tab,
-          children: 0 === x ? O.intl.string(O.t["2pAkDA"]) : O.intl.formatToPlainString(O.t.I4fryM, {
+          children: 0 === x ? _.intl.string(_.t["2pAkDA"]) : _.intl.formatToPlainString(_.t.I4fryM, {
             count: x
           })
         }) : null, v ? (0, r.jsx)(o.njP.Item, {
           "aria-label": "scheduled",
           id: l.X.SCHEDULED,
           className: y.tab,
-          children: O.intl.string(O.t.Fn6Odn)
+          children: _.intl.string(_.t.Fn6Odn)
         }) : null]
       })
     })]
@@ -122,5 +122,5 @@ function j(e) {
   let {
     tab: t
   } = e;
-  return t === l.X.FOR_YOU ? (0, r.jsx)(h.Gp, {}) : t === l.X.UNREADS ? (0, r.jsx)(b.QP, {}) : t === l.X.MENTIONS ? (0, r.jsx)(m.Z, {}) : t === l.X.GAME_INVITES ? (0, r.jsx)(_.S, {}) : null
+  return t === l.X.FOR_YOU ? (0, r.jsx)(h.Gp, {}) : t === l.X.UNREADS ? (0, r.jsx)(b.QP, {}) : t === l.X.MENTIONS ? (0, r.jsx)(m.Z, {}) : t === l.X.GAME_INVITES ? (0, r.jsx)(O.S, {}) : null
 }

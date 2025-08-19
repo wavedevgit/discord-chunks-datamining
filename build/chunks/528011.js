@@ -1,4 +1,4 @@
-/** Chunk was on 31253 **/
+/** Chunk was on 11868 **/
 /** chunk id: 528011, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   g: () => O,
@@ -18,14 +18,14 @@ var Chunk149765 = require("./149765.js"),
   Chunk676770 = require("./676770.js");
 
 function T(e) {
-  let t = (0, i.e7)([o.Z, a.Z], () => {
-      let t = o.Z.getGuild(e);
+  let t = (0, i.e7)([a.Z, o.Z], () => {
+      let t = a.Z.getGuild(e);
       if (null == t) returnfalse;
-      let n = a.Z.getGuildPermissions(t);
+      let n = o.Z.getGuildPermissions(t);
       return null != n && r.Db(n, I.cv)
     }),
     n = (0, i.e7)([E.Z], () => null != e ? E.Z.getGuildIncident(e) : null),
-    l = null != n && (0, d.ur)(n);
+    l = null != n && (0, _.ur)(n);
   return {
     shouldShowIncidentActions: t,
     incidentData: n,
@@ -38,10 +38,10 @@ function O() {
   let t = function(e) {
       let t = s.default.getCurrentUser(),
         n = E.Z.getIncidentsByGuild();
-      for (let i of _.default.keys(n).map(e => o.Z.getGuild(e))) {
+      for (let i of d.default.keys(n).map(e => a.Z.getGuild(e))) {
         if (null == i) continue;
         let l = n[i.id];
-        if (!(null == l || !(0, d.i9)(l) && !(0, d.ur)(l) || (0, d.ur)(l) && i.id !== e) && r.Db(u.uB({
+        if (!(null == l || !(0, _.i9)(l) && !(0, _.ur)(l) || (0, _.ur)(l) && i.id !== e) && r.Db(u.uB({
             user: t,
             context: i,
             checkElevated: false
@@ -51,7 +51,7 @@ function O() {
     }(Chunk914010.Z.getGuildId()),
     n = null != (e = Chunk581883.Z.getGuildsProto()) ? module : {},
     i = null != exports ? require[exports] : null,
-    a = null != Chunk399606 && Chunk399606.disableRaidAlertNag;
+    o = null != Chunk399606 && Chunk399606.disableRaidAlertNag;
   return {
     show: null != exports && !Chunk496675,
     guildId: exports

@@ -1,4 +1,4 @@
-/** Chunk was on 78079 **/
+/** Chunk was on 12630 **/
 /** chunk id: 908474, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -22,7 +22,7 @@ function u(A) {
     if (null == A) return null;
     let e = new Date(A).getTime();
     return (0, o.fv)(e, o.jq.JOINED_AT)
-  }, []), C = r.useMemo(() => null == e ? null : E(d), [e, E, d]), B = r.useMemo(() => (0, s.J)(e.communicationDisabledUntil), [e.communicationDisabledUntil]), w = r.useMemo(() => null == e.communicationDisabledUntil ? new Date : new Date(e.communicationDisabledUntil), [e.communicationDisabledUntil]);
+  }, []), C = r.useMemo(() => null == e ? null : E(d), [e, E, d]), B = r.useMemo(() => (0, a.J)(e.communicationDisabledUntil), [e.communicationDisabledUntil]), w = r.useMemo(() => null == e.communicationDisabledUntil ? new Date : new Date(e.communicationDisabledUntil), [e.communicationDisabledUntil]);
   return null != d || B ? (0, n.jsx)(i.xJW, {
     title: f.intl.string(f.t["7V375+"]),
     titleClassName: v.infoTitle,
@@ -59,7 +59,7 @@ function u(A) {
         description: (0, n.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: (0, n.jsx)(a.Z, {
+          children: (0, n.jsx)(s.Z, {
             deadline: w,
             showUnits: true,
             stopAtOneSec: true

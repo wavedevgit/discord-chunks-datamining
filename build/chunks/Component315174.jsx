@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 315174, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => D,
@@ -59,7 +59,7 @@ function S(e, t) {
   }), e
 }
 
-function I(e) {
+function P(e) {
   var t;
   let {
     guild: n,
@@ -86,7 +86,7 @@ function I(e) {
         className: o()(E.bannerImg, {
           [E.bannerImgFullWidth]: s.tq
         }),
-        src: null != (t = _.ZP.getGuildBannerURL({
+        src: null != (t = O.ZP.getGuildBannerURL({
           id: n.id,
           banner: l
         }, c)) ? t : "",
@@ -97,7 +97,7 @@ function I(e) {
   })
 }
 
-function P(e) {
+function I(e) {
   let {
     guild: t,
     controller: n,
@@ -237,8 +237,8 @@ function R(e) {
         })
       })
     }
-  }, [l, p]), _ = (0, c.e7)([b.Z], () => (0, f.b)(b.Z, l)), O = i.useCallback(() => {
-    _ ? (0, u.ZDy)(async () => {
+  }, [l, p]), O = (0, c.e7)([b.Z], () => (0, f.b)(b.Z, l)), _ = i.useCallback(() => {
+    O ? (0, u.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
@@ -252,7 +252,7 @@ function R(e) {
       } = await n.e("88358").then(n.bind(n, 598402));
       return t => (0, r.jsx)(e, x({}, t))
     })
-  }, [_, l]);
+  }, [O, l]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.KeG, {
       targetElementRef: d,
@@ -297,7 +297,7 @@ function R(e) {
       }, e), {
         onClick: () => {
           var t;
-          null == (t = e.onClick) || t.call(e), O()
+          null == (t = e.onClick) || t.call(e), _()
         },
         children: (0, r.jsx)(u.ejJ, {
           size: "refresh_sm",
@@ -326,15 +326,15 @@ let D = Chunk647438.memo(function(e) {
     headerClassName: Z,
     communityInfoVisible: A,
     hasSubheader: D
-  } = e, M = j.features.has(v.oNc.ANIMATED_BANNER), k = (0, d.Z)(j), U = !k && (0, O.Z)(j), G = !k && A, B = (0, _.xR)(C) && M && !g, [V, H] = i.useState(false), F = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
+  } = e, M = j.features.has(v.oNc.ANIMATED_BANNER), k = (0, d.Z)(j), U = !k && (0, _.Z)(j), G = !k && A, B = (0, O.xR)(C) && M && !g, [V, F] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
   i.useEffect(() => {
-    if (B && n && !F.current && Y) return H(true), K.current = setTimeout(() => {
-      H(false)
+    if (B && n && !H.current && Y) return F(true), K.current = setTimeout(() => {
+      F(false)
     }, 5e3), () => {
       clearTimeout(K.current)
     }
   }, [B, n, Y]), i.useEffect(() => {
-    F.current = n
+    H.current = n
   }, [n]);
   let q = () => {
       let {
@@ -388,13 +388,13 @@ let D = Chunk647438.memo(function(e) {
             })) : (0, r.jsx)(T, S(x({}, Q), {
               children: w
             }))
-          }), U && (0, r.jsx)(P, {
+          }), U && (0, r.jsx)(I, {
             guild: j,
             controller: l,
             hasBanner: null != C,
             hasSubheader: null != D && D
           })]
-        }), null != C ? (0, r.jsx)(I, {
+        }), null != C ? (0, r.jsx)(P, {
           guild: j,
           controller: l,
           guildBanner: C,
@@ -405,9 +405,9 @@ let D = Chunk647438.memo(function(e) {
       }), B && q() ? (0, r.jsx)("div", {
         className: E.animatedBannerHoverLayer,
         onMouseEnter: () => {
-          H(true), clearTimeout(K.current)
+          F(true), clearTimeout(K.current)
         },
-        onMouseLeave: () => H(false),
+        onMouseLeave: () => F(false),
         style: {
           height: N
         }

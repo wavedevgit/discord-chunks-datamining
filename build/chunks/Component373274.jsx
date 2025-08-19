@@ -1,8 +1,8 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 373274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => ey,
-  j: () => eO
+  j: () => e_
 }), require("./388685.js"), require("./539854.js"), require("./35282.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -559,7 +559,7 @@ class eb extends(r = Chunk647438.PureComponent) {
         optInEnabled: g,
         withGuildIcon: m,
         isNewGuildPowerupsProgressBarEnabled: b,
-        shouldRenderBoosterEnhancedRoleColorsCoachmark: _
+        shouldRenderBoosterEnhancedRoleColorsCoachmark: O
       } = this.props;
       if (t === U.wZ) {
         let e = u.getGuildActionSection(),
@@ -574,7 +574,7 @@ class eb extends(r = Chunk647438.PureComponent) {
           case ea.z.GUILD_PREMIUM_PROGRESS_BAR:
             let l = e.getRows(),
               o = [];
-            return _ && o.push(d.z.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK), b ? (0, i.jsx)(N.Z, {
+            return O && o.push(d.z.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK), b ? (0, i.jsx)(N.Z, {
               guild: r,
               tooltipTypes: o,
               withMargin: l.length > 1
@@ -624,7 +624,7 @@ class eb extends(r = Chunk647438.PureComponent) {
               selected: a === eu.oC.MEMBER_SAFETY
             }, ea.z.GUILD_MOD_DASH_MEMBER_SAFETY);
           case ea.z.GUILD_BOOSTS:
-            return (0, i.jsx)(P.Z, {
+            return (0, i.jsx)(I.Z, {
               guildId: r.id,
               selected: a === eu.oC.GUILD_BOOSTS
             }, ea.z.GUILD_BOOSTS);
@@ -633,12 +633,12 @@ class eb extends(r = Chunk647438.PureComponent) {
         }
       }
       if (u.isPlaceholderRow(t, n)) return null;
-      let O = u.getChannelFromSectionRow(t, n);
-      if (null == O) return null;
+      let _ = u.getChannelFromSectionRow(t, n);
+      if (null == _) return null;
       let {
         category: y,
         channel: E
-      } = O, x = y instanceof U.VR, S = E.record, I = "".concat(t).concat(E.id);
+      } = _, x = y instanceof U.VR, S = E.record, P = "".concat(t).concat(E.id);
       switch (S.type) {
         case ec.d4z.GUILD_ANNOUNCEMENT:
         case ec.d4z.GUILD_TEXT:
@@ -665,7 +665,7 @@ class eb extends(r = Chunk647438.PureComponent) {
               selectedChannel: null != o && (o.id === E.id || o.parent_id === S.id) ? o : null,
               selectedVoiceChannelId: (null == s ? true : s.parent_id) === S.id ? c : null
             }) : null]
-          }, I);
+          }, P);
         case ec.d4z.GUILD_STAGE_VOICE:
           var w, Z;
           return (0, i.jsx)(ee.Z, {
@@ -679,7 +679,7 @@ class eb extends(r = Chunk647438.PureComponent) {
             speakerVoiceStates: null != (Z = h[E.id]) ? Z : [],
             disableManageChannels: f,
             isFavoriteCategory: x
-          }, I);
+          }, P);
         case ec.d4z.GUILD_VOICE:
           return (0, i.jsx)(eo.Z, {
             channel: S,
@@ -694,17 +694,17 @@ class eb extends(r = Chunk647438.PureComponent) {
             showTutorial: E.isFirstVoiceChannel,
             isFavoriteCategory: x,
             withGuildIcon: m
-          }, I);
+          }, P);
         case ec.d4z.GUILD_STORE:
           return (0, i.jsx)(et.Z, {
             channel: S,
             guild: r,
             position: E.position,
             selected: a === E.id
-          }, I);
+          }, P);
         case ec.d4z.GUILD_CATEGORY:
           if (t !== u.voiceChannelsSectionNumber) return null;
-          return (0, i.jsx)(F.kw, {
+          return (0, i.jsx)(H.kw, {
             channel: S
           }, "readonly-".concat(S.id));
         case ec.d4z.PUBLIC_THREAD:
@@ -720,7 +720,7 @@ class eb extends(r = Chunk647438.PureComponent) {
             canBeNewChannel: false,
             isFavoriteCategory: false,
             forceTopLevelThread: true
-          }, I);
+          }, P);
         default:
           return null
       }
@@ -774,7 +774,7 @@ class eb extends(r = Chunk647438.PureComponent) {
 ef(eb, "contextType", Chunk91192.qB), ef(eb, "defaultProps", {
   density: "default"
 });
-let e_ = e => {
+let eO = e => {
   let {
     guildId: t,
     guild: n,
@@ -782,7 +782,7 @@ let e_ = e => {
     selectedVoiceChannelId: o
   } = e, a = (0, u.e7)([m.Z], () => m.Z.keyboardModeEnabled), {
     analyticsLocations: d
-  } = (0, _.ZP)(b.Z.GUILD_CHANNEL_LIST), p = (0, u.e7)([R.Z], () => R.Z.getChannel(r)), f = (0, u.e7)([R.Z], () => R.Z.getChannel(o)), h = (0, u.e7)([M.Z], () => M.Z.getGuildId()), O = (0, x.DM)(t), y = l.useRef(null), v = l.useCallback((e, t) => {
+  } = (0, O.ZP)(b.Z.GUILD_CHANNEL_LIST), p = (0, u.e7)([R.Z], () => R.Z.getChannel(r)), f = (0, u.e7)([R.Z], () => R.Z.getChannel(o)), h = (0, u.e7)([M.Z], () => M.Z.getGuildId()), _ = (0, x.DM)(t), y = l.useRef(null), v = l.useCallback((e, t) => {
     let n = y.current;
     if (null != n)
       if (ec.Xyh.test(t) || (0, eu.AB)(t)) n.scrollToChannel(t, false, 2 * es.yE, () => {
@@ -810,15 +810,15 @@ let e_ = e => {
     setFocus: v,
     scrollToStart: j,
     scrollToEnd: C
-  }), P = E.setFocus;
+  }), I = E.setFocus;
   l.useEffect(() => {
-    null != r && P(r)
-  }, [r, P]);
+    null != r && I(r)
+  }, [r, I]);
   let N = (0, Z.Z)(t),
     w = (0, S.V)("NavigableChannels"),
     T = (0, u.e7)([k.default], () => k.default.getCurrentUser()),
-    A = (0, I.Z)(null == T ? true : T.id, t) && true === n.premiumProgressBarEnabled;
-  return (0, i.jsx)(_.Gt, {
+    A = (0, P.Z)(null == T ? true : T.id, t) && true === n.premiumProgressBarEnabled;
+  return (0, i.jsx)(O.Gt, {
     value: d,
     children: (0, i.jsx)(g.Z, {
       section: ec.jXE.GUILD_CHANNEL_LIST,
@@ -831,7 +831,7 @@ let e_ = e => {
           selectedVoiceChannel: f,
           stageChannelSpeakerVoiceStates: N,
           selectedGuildId: h,
-          optInEnabled: O,
+          optInEnabled: _,
           isNewGuildPowerupsProgressBarEnabled: w,
           shouldRenderBoosterEnhancedRoleColorsCoachmark: A
         }))
@@ -840,7 +840,7 @@ let e_ = e => {
   })
 };
 
-function eO(e) {
+function e_(e) {
   let t = (0, B.o)(),
     {
       isFavoritesPerk: n
@@ -848,7 +848,7 @@ function eO(e) {
     {
       density: r
     } = (0, p.TCT)();
-  return (0, i.jsx)(e_, eg(eh({}, e), {
+  return (0, i.jsx)(eO, eg(eh({}, e), {
     guildChannels: t,
     guildChannelsVersion: 0,
     withGuildIcon: n,
@@ -857,14 +857,14 @@ function eO(e) {
 }
 
 function ey(e) {
-  let t = (0, H.Z)(e.guild),
+  let t = (0, F.Z)(e.guild),
     n = (0, u.cj)([G.Z], () => G.Z.getGuild(e.guildId, {
       guildActionRows: t
     })),
     {
       density: r
     } = (0, p.TCT)();
-  return (0, i.jsx)(e_, eg(eh({}, e, n), {
+  return (0, i.jsx)(eO, eg(eh({}, e, n), {
     density: r
   }))
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 4756 **/
+/** Chunk was on 31930 **/
 /** chunk id: 446094, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -12,14 +12,14 @@ var Chunk647438 = require("./647438.js"),
 function o(e, t) {
   let [n, o] = i.useState(false), a = i.useCallback(async () => {
     o(true), await (0, s.c)(e, true), o(false), null == t || t()
-  }, [e, t]), u = (0, r.Z)({
+  }, [e, t]), c = (0, r.Z)({
     scrollPosition: l.Y_.GUILD_TAG
   });
   return {
     isAdopting: n,
     onAdoptTag: a,
     onEditProfile: i.useCallback(() => {
-      null == t || t(), u()
-    }, [u, t])
+      null == t || t(), c()
+    }, [c, t])
   }
 }

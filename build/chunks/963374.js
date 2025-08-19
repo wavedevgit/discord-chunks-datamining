@@ -1,4 +1,4 @@
-/** Chunk was on 78079 **/
+/** Chunk was on 12630 **/
 /** chunk id: 963374, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   nC: () => v
@@ -8,7 +8,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk697741 = require("./697741.js"),
   Chunk619864 = require("./619864.js"),
   Chunk193995 = require("./193995.js");
-let s = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
+let a = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
 
 function o(A) {
   return A.replace(/('|\u2019|\uFF07)(s|S)$/, "")
@@ -19,7 +19,7 @@ function g(A) {
 }
 
 function c(A) {
-  return s.has(A)
+  return a.has(A)
 }
 
 function f(A) {
@@ -32,7 +32,7 @@ function v(A) {
     n = new Set(function(A) {
       let e = arguments.length > 1 && true !== arguments[1] ? arguments[1] : l.$;
       return r()(A.split(/\W+/)).map(o).reject(f).map(g).reject(c).map(e).value()
-    }(A, t ? a.a : l.$));
+    }(A, t ? s.a : l.$));
   return A => (function A(e, t, n) {
     if (Array.isArray(e)) e.forEach(e => A(e, t, n));
     else if ("list" === e.type) e.items.forEach(e => A(e, t, n));

@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 332538, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Wj: () => w,
@@ -33,10 +33,10 @@ var Chunk951288 = require("./951288.js"),
 
 function N(e) {
   let t = (0, o.e7)([b.Z], () => b.Z.getNotificationStateForGuild(e), [e]),
-    n = (0, o.e7)([_.Z], () => _.Z.getStateForGuild(e)),
+    n = (0, o.e7)([O.Z], () => O.Z.getStateForGuild(e)),
     {
       trailing: m,
-      showUnread: P
+      showUnread: I
     } = function(e, t, n) {
       let l = (0, C.Z)(e).available,
         {
@@ -93,7 +93,7 @@ function N(e) {
           }
           return 0
         }, [n, r, e, t])
-      }(e, t), [u, m] = (0, d.XR)(null != t && !o && c > 0 ? a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK : null, c), b = u === a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK, _ = i.useMemo(() => {
+      }(e, t), [u, m] = (0, d.XR)(null != t && !o && c > 0 ? a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK : null, c), b = u === a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK, O = i.useMemo(() => {
         if (null == t || o || b) return;
         let n = function(e, t) {
           let n = g.Oe.find(e => {
@@ -107,7 +107,7 @@ function N(e) {
           let i = S.Cp[n],
             l = null != i ? t.allPowerups[i] : true;
           if (null != l) return {
-            type: O.J.LEVEL_REACHED,
+            type: _.J.LEVEL_REACHED,
             powerup: l,
             markAsDismissed: t => {
               (0, p.Qd)(r, e, true, t)
@@ -117,7 +117,7 @@ function N(e) {
         if (null != n) return n;
         let r = function(e, t, n) {
           var r, i;
-          let l = null != (i = null == (r = f.Z.getGuild(e)) ? true : r.premiumTier) ? i : I.Eu4.NONE,
+          let l = null != (i = null == (r = f.Z.getGuild(e)) ? true : r.premiumTier) ? i : P.Eu4.NONE,
             o = Array.from(S.Tg.values()).flatMap(r => r.length <= 0 || r.some(e => {
               if (null != t.unlockedPowerups[e]) returntrue;
               let n = S.Rx[e];
@@ -128,14 +128,14 @@ function N(e) {
             })).filter(h.lm);
           if (0 !== o.length) {
             if (1 === o.length && !(0, p.OY)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
-              type: O.J.PERKS_PURCHASABLE,
+              type: _.J.PERKS_PURCHASABLE,
               powerups: o,
               markAsDismissed: t => {
                 (0, p.Qd)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e, true, t)
               }
             };
             if (o.length > 1 && !(0, p.OY)(a.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, e)) return {
-              type: O.J.PERKS_PURCHASABLE,
+              type: _.J.PERKS_PURCHASABLE,
               powerups: o,
               markAsDismissed: t => {
                 (0, p.Qd)(a.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, e, true, t)
@@ -144,13 +144,13 @@ function N(e) {
           }
         }(e, t, s);
         if (null != r) return r
-      }, [e, t, o, b, s]), [E, x] = (0, d.bf)(null != _ ? a.z.GUILD_POWERUP_NOTIFICATION : null, {
-        cooldownDurationMs: O.d
+      }, [e, t, o, b, s]), [E, x] = (0, d.bf)(null != O ? a.z.GUILD_POWERUP_NOTIFICATION : null, {
+        cooldownDurationMs: _.d
       });
       return i.useMemo(() => {
         if (null != t) {
           if (o) return {
-            type: O.J.PERKS_AVAILABLE,
+            type: _.J.PERKS_AVAILABLE,
             markAsDismissed: r
           };
           if (b) {
@@ -159,11 +159,11 @@ function N(e) {
             if (0 === n.length) return;
             return {
               powerups: n,
-              type: O.J.NEW_PERK_AVAILABLE,
+              type: _.J.NEW_PERK_AVAILABLE,
               markAsDismissed: m
             }
           }
-          if (E === a.z.GUILD_POWERUP_NOTIFICATION && null != _) {
+          if (E === a.z.GUILD_POWERUP_NOTIFICATION && null != O) {
             var e, n;
             return e = function(e) {
               for (var t = 1; t < arguments.length; t++) {
@@ -182,9 +182,9 @@ function N(e) {
                 })
               }
               return e
-            }({}, _), n = n = {
+            }({}, O), n = n = {
               markAsDismissed: e => {
-                x(e), _.markAsDismissed(e)
+                x(e), O.markAsDismissed(e)
               }
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
@@ -198,29 +198,29 @@ function N(e) {
             }), e
           }
         }
-      }, [t, o, r, _, E, x, b, m, c])
+      }, [t, o, r, O, E, x, b, m, c])
     }(e, n);
-  if (null !== n && (null != m || P || null != N)) return {
+  if (null !== n && (null != m || I || null != N)) return {
     trailing: m,
-    showUnread: P,
+    showUnread: I,
     popout: N
   }
 }
 
 function w(e) {
-  let t = (0, o.e7)([_.Z], () => _.Z.getStateForGuild(e)),
+  let t = (0, o.e7)([O.Z], () => O.Z.getStateForGuild(e)),
     n = N(e);
   i.useEffect(() => {
     (0, m.jd)(e)
   }, [e]), i.useEffect(() => {
     var e;
-    null == n || null == (e = n.popout) || e.markAsDismissed(P.L.AUTO_DISMISS)
+    null == n || null == (e = n.popout) || e.markAsDismissed(I.L.AUTO_DISMISS)
   }, [n]), i.useEffect(() => {
     null != t && g.Oe.forEach(n => {
       let r = S.Cp[n];
       if (null == r || null == t.unlockedPowerups[r]) return;
       let i = S.Q1[n];
-      null != i && (0, p.Qd)(i, e, false, P.L.AUTO_DISMISS)
+      null != i && (0, p.Qd)(i, e, false, I.L.AUTO_DISMISS)
     })
   }, [e, t])
 }

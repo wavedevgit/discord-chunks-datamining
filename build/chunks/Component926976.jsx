@@ -81,7 +81,7 @@ function I(e) {
     }), (0, n.jsx)(u.P3F, {
       tag: "span",
       className: O.copyPropertyButton,
-      onClick: () => (0, b.JG)(JSON.stringify(l), () => s(true)),
+      onClick: () => (0, v.JG)(JSON.stringify(l), () => s(true)),
       children: i ? (0, n.jsx)(u.kmB, {
         color: "currentColor",
         size: "sm"
@@ -93,7 +93,7 @@ function I(e) {
   })
 }
 let w = new Set(["client_performance_cpu", "client_performance_memory"]),
-  R = [{
+  k = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -107,7 +107,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
         },
         onClose: s,
         filteredEvents: c
-      } = e, d = v.default.getUser(l), h = o()(r);
+      } = e, d = b.default.getUser(l), h = o()(r);
       return (0, n.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, n.jsxs)(x.ZP, {
@@ -120,7 +120,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
             children: [t, (0, n.jsx)(u.P3F, {
               tag: "span",
               className: O.copyEventButton,
-              onClick: () => (0, b.JG)(t),
+              onClick: () => (0, v.JG)(t),
               children: (0, n.jsx)(u.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -130,7 +130,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
             icon: u.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, b.JG)(JSON.stringify(function(e) {
+              (0, v.JG)(JSON.stringify(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var a = null != arguments[t] ? arguments[t] : {},
                     n = Object.keys(a);
@@ -228,10 +228,10 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
       })
     }
   }],
-  k = {
+  R = {
     events: {
       label: "Events",
-      filter: e => Object.entries(k).filter(e => {
+      filter: e => Object.entries(R).filter(e => {
         let [t] = e;
         return "events" !== t
       }).map(t => {
@@ -270,24 +270,24 @@ function A() {
   let e = Chunk647438.useRef(null),
     [t, a] = Chunk647438.useState(""),
     l = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.loggedEventsVersion),
-    [s, o] = Chunk647438.useState(() => Object.keys(k)),
+    [s, o] = Chunk647438.useState(() => Object.keys(R)),
     [m, x] = Chunk647438.useState(Chunk120816.Z.loggedEvents),
     h = Chunk647438.useCallback(e => {
       x(e)
     }, []);
   (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, Z, [Chunk120356]);
-  let v = Chunk129861.filter(e => {
+  let b = Chunk129861.filter(e => {
       for (let t of s)
-        if (k[t].filter(e)) returntrue;
+        if (R[t].filter(e)) returntrue;
       returnfalse
     }),
-    [b, f] = Chunk647438.useState(true),
-    _ = Chunk594174.find(e => e.key === b),
+    [v, f] = Chunk647438.useState(true),
+    _ = Chunk594174.find(e => e.key === v),
     {
       TabBar: P,
       renderSelectedTab: I
     } = (0, Chunk621060.ZP)({
-      tabs: R
+      tabs: k
     }, []);
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
@@ -311,7 +311,7 @@ function A() {
         className: Chunk599832.toolbarDivider
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk599832.filters,
-        children: Object.entries(k).map(e => {
+        children: Object.entries(R).map(e => {
           let [t, a] = e;
           return (0, n.jsx)(u.P3F, {
             className: i()(O.filter, s.includes(t) && O.activeFilter),

@@ -1,4 +1,4 @@
-/** Chunk was on 78079 **/
+/** Chunk was on 12630 **/
 /** chunk id: 412899, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   UB: () => F,
@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  s = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk772848 = require("./772848.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk924826 = require("./924826.js"),
@@ -126,7 +126,7 @@ function U(A) {
   })
 }
 let F = Chunk647438.forwardRef(function(A, e) {
-  var l, a, s;
+  var l, s, a;
   let o, {
       canRemove: c,
       className: E,
@@ -161,8 +161,8 @@ let F = Chunk647438.forwardRef(function(A, e) {
       })
     }, [C.id]),
     G = (0, h.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(),
-    U = null != (a = C.colorString) ? a : G,
-    F = null != (s = (0, f.wK)(U, .6)) ? s : true,
+    U = null != (s = C.colorString) ? s : G,
+    F = null != (a = (0, f.wK)(U, .6)) ? a : true,
     k = u.Z.unsafe_rawColors.WHITE_500.css,
     X = (0, f._i)(U);
   null != X && .3 > (0, f.Bd)(X) && (k = u.Z.unsafe_rawColors.PRIMARY_630.css), o = y ? (0, n.jsx)(w.Z, {
@@ -235,9 +235,9 @@ function k(A) {
     user: e,
     numRolesHidden: t,
     roleClassName: l
-  } = A, a = (0, g.JA)("overflow-more-roles-".concat(e.id)), s = r.useRef(null);
+  } = A, s = (0, g.JA)("overflow-more-roles-".concat(e.id)), a = r.useRef(null);
   return (0, n.jsx)(h.yRy, {
-    targetElementRef: s,
+    targetElementRef: a,
     renderPopout: e => {
       let {
         position: t
@@ -250,10 +250,10 @@ function k(A) {
     align: "center",
     children: A => (0, n.jsx)(h.tEY, {
       children: (0, n.jsx)("button", S(Z(S(Z({
-        ref: s
+        ref: a
       }, A), {
         className: i()(N.overflowButton, l)
-      }), a), {
+      }), s), {
         children: "+".concat(t)
       }))
     })
@@ -265,8 +265,8 @@ function X(A) {
     {
       guild: t,
       user: l,
-      handleAddRole: a,
-      roleClassName: s,
+      handleAddRole: s,
+      roleClassName: a,
       addButtonClassName: o,
       addButtonIconClassName: c
     } = A,
@@ -285,7 +285,7 @@ function X(A) {
         guild: t,
         roleStyle: u,
         roleFilter: C,
-        onSelect: a,
+        onSelect: s,
         onClose: e
       })
     },
@@ -295,7 +295,7 @@ function X(A) {
       children: (0, n.jsx)("button", S(Z(S(Z({
         ref: e
       }, A), {
-        className: i()(N.addButton, s, o),
+        className: i()(N.addButton, a, o),
         "aria-label": x.intl.string(x.t.e3Wly8),
         type: "button"
       }), f), {
@@ -314,7 +314,7 @@ function z(A) {
   let e, {
       user: t,
       guild: l,
-      userRoleIds: a,
+      userRoleIds: s,
       wrap: f = true,
       width: u,
       className: h,
@@ -325,17 +325,17 @@ function z(A) {
     w = r.useRef({}),
     D = r.useCallback(A => {
       var e;
-      let n = a.filter(e => e !== A.id);
+      let n = s.filter(e => e !== A.id);
       (null == (e = A.tags) ? true : e.guild_connections) === null ? E.Z.unassignGuildRoleConnection(l.id, A.id) : H.Z.updateMemberRoles(l.id, t.id, n, [], [A.id])
-    }, [a, l.id, t.id]),
+    }, [s, l.id, t.id]),
     M = r.useCallback(A => {
-      let e = a;
+      let e = s;
       e.includes(A) || (e = [...e, A]), H.Z.updateMemberRoles(l.id, t.id, e, [A], [])
-    }, [a, l.id, t.id]),
+    }, [s, l.id, t.id]),
     [p, I] = r.useState(null),
-    b = (0, v.Wu)([j.Z], () => j.Z.getManyRoles(l.id, a).sort(O.Z)),
+    b = (0, v.Wu)([j.Z], () => j.Z.getManyRoles(l.id, s).sort(O.Z)),
     Q = r.useMemo(() => null != p ? b.slice(0, p) : b, [b, p]),
-    P = a.length - Q.length;
+    P = s.length - Q.length;
   r.useLayoutEffect(() => {
     if (f) return;
     if ("number" != typeof u) throw Error("Unexpected null width");
@@ -353,7 +353,7 @@ function z(A) {
     I(e => A < Q.length ? A : e)
   }, [f, u, Q]);
   let y = m.default.getCurrentUser();
-  s()(null != y, "MemberRolesList: currentUser cannot be undefined");
+  a()(null != y, "MemberRolesList: currentUser cannot be undefined");
   let U = !d && V.Z.can(L.Plq.MANAGE_ROLES, l),
     z = T.e9(l, y.id),
     K = r.useMemo(() => "roles-".concat((0, o.Z)()), []),
@@ -393,7 +393,7 @@ function z(A) {
         return (0, n.jsxs)("div", S(Z({
           className: i()(N.root, h),
           "aria-label": x.intl.formatToPlainString(x.t.PCs0oq, {
-            numRoles: a.length
+            numRoles: s.length
           }),
           ref: t
         }, r), {

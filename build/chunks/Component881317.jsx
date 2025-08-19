@@ -66,18 +66,18 @@ let I = {
     } = e, a = e => {
       let t = async () => {
         await (0, m.yL)(i, e)
-      }, a = async t => await (0, m.RV)(i, e, t), o = e => {
+      }, a = async t => await (0, m.RV)(i, e, t), s = e => {
         let t = null == e ? true : e.token;
         i === h.BM.MESSAGE ? (0, p.eE)(t) : i === h.BM.USER ? (0, p.JM)(t) : i === h.BM.GUILD && (0, p.FO)(t)
       };
-      t(), (0, s.ZDy)(async () => {
+      t(), (0, o.ZDy)(async () => {
         let {
           default: e
         } = await n.e("94566").then(n.bind(n, 965072));
         return n => (0, r.jsx)(e, j(E({}, n), {
           onFormSubmit: a,
           onResend: t,
-          onSuccess: o,
+          onSuccess: s,
           headerText: x.intl.string(x.t.H3Q7U1),
           confirmButtonText: x.intl.string(x.t["13ofGh"]),
           impression: {
@@ -86,9 +86,9 @@ let I = {
         }))
       })
     };
-    return (0, r.jsxs)(s.P3F, {
+    return (0, r.jsxs)(o.P3F, {
       className: b.reportButton,
-      onClick: () => void(0, s.ZDy)(async () => {
+      onClick: () => void(0, o.ZDy)(async () => {
         let {
           default: e
         } = await n.e("93288").then(n.bind(n, 396410));
@@ -98,10 +98,10 @@ let I = {
           confirmButtonText: x.intl.string(x.t.PDTjLC)
         }))
       }),
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         children: t
-      }), (0, r.jsx)(s.LJT, {
+      }), (0, r.jsx)(o.LJT, {
         size: "sm",
         color: "currentColor"
       })]

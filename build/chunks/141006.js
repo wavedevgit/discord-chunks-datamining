@@ -1,11 +1,11 @@
-/** Chunk was on 96812 **/
-/** chunk id: 141006, original params: e,t,l (module,exports,require) **/
+/** Chunk was on 67325 **/
+/** chunk id: 141006, original params: e,r,l (module,exports,require) **/
 require.d(exports, {
   Eg: () => n,
-  SK: () => r,
+  SK: () => t,
   tl: () => o
 });
-let r = {
+let t = {
     primary_color: 0xa9c9ff,
     secondary_color: 0xffbbec,
     tertiary_color: 0xffc3a0

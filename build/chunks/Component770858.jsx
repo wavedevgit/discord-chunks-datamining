@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 770858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -36,8 +36,8 @@ function x(e) {
     onClick: d,
     selectedOverride: p = false,
     popoutProps: h,
-    ref: _
-  } = e, j = (0, l.Ie)("notifications-inbox"), [x, S] = i.useState(false), I = (0, m.D)(), P = p || I, {
+    ref: O
+  } = e, j = (0, l.Ie)("notifications-inbox"), [x, S] = i.useState(false), P = (0, m.D)(), I = p || P, {
     notificationCenterVariant: N
   } = (0, g.pN)({
     location: "NotificationsInboxButtonInner"
@@ -77,20 +77,20 @@ function x(e) {
       unreadChannelsCount: n.length,
       badgeDimensions: o
     }
-  }(P), A = N === g.jP.LEGACY ? a.xx7 : a.Dkj, R = (0, o.e7)([f.Z], () => f.Z.getChannelId()), D = i.useMemo(() => {
+  }(I), A = N === g.jP.LEGACY ? a.xx7 : a.Dkj, R = (0, o.e7)([f.Z], () => f.Z.getChannelId()), D = i.useMemo(() => {
     if (N === g.jP.SIDEBAR) return v.Z5c.CHANNEL(v.STv, R)
   }, [N, R]);
   return (0, r.jsxs)(u.H, {
-    ref: _,
+    ref: O,
     children: [(0, r.jsx)(c.Z, {
-      selected: P && N === g.jP.SIDEBAR,
+      selected: I && N === g.jP.SIDEBAR,
       hovered: x && N === g.jP.SIDEBAR,
       unread: T > 0,
       className: C.pill,
       disabled: N === g.jP.LEGACY
-    }), (0, r.jsx)(O.Z, {
+    }), (0, r.jsx)(_.Z, {
       children: (0, r.jsx)(a.aRk, {
-        selected: P || x,
+        selected: I || x,
         lowerBadge: w,
         lowerBadgeSize: Z,
         children: (0, r.jsx)(a.LYs, (t = function(e) {
@@ -113,7 +113,7 @@ function x(e) {
         }({}, j, h), n = n = {
           onClick: d,
           to: D,
-          selected: P || x,
+          selected: I || x,
           onMouseEnter: () => S(true),
           onMouseLeave: () => S(false),
           children: (0, r.jsx)(A, {

@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 620304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -46,7 +46,7 @@ function S(e) {
   return e
 }
 
-function I(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,12 +59,12 @@ function I(e, t) {
   }), e
 }
 
-function P(e) {
+function I(e) {
   let {
     guild: t,
     tooltipTypes: l,
-    withMargin: P
-  } = e, N = (0, y.Z)(t, "GuildPowerupsProgressBar"), w = (0, O.Z)(t.id), Z = i.useCallback(() => {
+    withMargin: I
+  } = e, N = (0, y.Z)(t, "GuildPowerupsProgressBar"), w = (0, _.Z)(t.id), Z = i.useCallback(() => {
     (0, v.Z)(t.id, f.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
   }, [t.id]), T = (0, c.e7)([m.Z], () => {
     var e;
@@ -90,7 +90,7 @@ function P(e) {
   let L = T >= N,
     M = i.useRef(null),
     [k, U] = (0, h.US)(l),
-    G = e => (0, r.jsx)(d.P3F, I(S({}, e), {
+    G = e => (0, r.jsx)(d.P3F, P(S({}, e), {
       "aria-label": true,
       role: "button",
       focusProps: {
@@ -104,14 +104,14 @@ function P(e) {
         null == e || null == (t = e.onClick) || t.call(e), Z()
       },
       className: o()(x.container, {
-        [x.containerWithMargin]: P
+        [x.containerWithMargin]: I
       }),
       onContextMenu: e => {
         w && (0, p.jW)(e, async () => {
           let {
             default: e
           } = await n.e("8570").then(n.bind(n, 651138));
-          return n => (0, r.jsx)(e, I(S({}, n), {
+          return n => (0, r.jsx)(e, P(S({}, n), {
             guild: t
           }))
         })
@@ -161,7 +161,7 @@ function P(e) {
     }));
   return null != k ? (0, r.jsx)(d.yRy, {
     targetElementRef: M,
-    renderPopout: () => k === u.z.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK ? (0, r.jsx)(_.Z, {
+    renderPopout: () => k === u.z.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK ? (0, r.jsx)(O.Z, {
       guild: t,
       markAsDismissed: U
     }) : null,
@@ -184,7 +184,7 @@ function N(e) {
     tooltipTypes: n,
     withMargin: i
   } = e;
-  return (0, r.jsx)(P, {
+  return (0, r.jsx)(I, {
     guild: t,
     tooltipTypes: n,
     withMargin: i

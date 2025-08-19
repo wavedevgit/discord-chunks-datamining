@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 602147, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -21,8 +21,8 @@ let m = Chunk647438.forwardRef(function(e, t) {
     selected: n,
     onClick: m,
     questId: b,
-    className: _
-  } = e, O = i.useCallback(() => {
+    className: O
+  } = e, _ = i.useCallback(() => {
     (0, a.k5)({
       source: p.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
     });
@@ -59,9 +59,9 @@ let m = Chunk647438.forwardRef(function(e, t) {
   return (0, r.jsx)(d.Z, {
     id: "guild-discover-button",
     ref: t,
-    className: _,
+    className: O,
     onClick: () => {
-      O(), true !== m && m()
+      _(), true !== m && m()
     },
     selected: n,
     tooltip: g.intl.string(g.t["4nEZLi"]),

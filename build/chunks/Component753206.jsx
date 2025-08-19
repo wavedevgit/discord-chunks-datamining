@@ -1,12 +1,13 @@
-/** Chunk was on 17768 **/
+/** Chunk was on 31930 **/
 /** chunk id: 753206, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk628238 = require("./628238.js"),
   Chunk750030 = require("./750030.js"),
   Chunk492593 = require("./492593.jsx"),
@@ -18,67 +19,67 @@ let g = Chunk647438.memo(function(e) {
   var t;
   let {
     message: n,
-    channel: i,
+    channel: s,
     compact: g,
     className: f,
-    isGroupStart: b,
-    hideSimpleEmbedContent: _ = true,
+    isGroupStart: m,
+    hideSimpleEmbedContent: b = true,
     disableInteraction: v,
-    previewGuildId: h,
-    preview: P,
-    author: x
-  } = e, C = null != h ? h : (0, c.k)(n), O = (0, l.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
-    content: y
+    previewGuildId: C,
+    preview: _,
+    author: y
+  } = e, O = null != C ? C : (0, a.k)(n), S = (0, o.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
+    content: E
   } = (0, u.Z)(n, {
-    hideSimpleEmbedContent: _,
-    allowList: O,
-    allowHeading: O,
+    hideSimpleEmbedContent: b,
+    allowList: S,
+    allowHeading: S,
     allowLinks: true,
     previewLinkTarget: true
-  }), j = a.useMemo(() => {
+  }), w = r.useMemo(() => {
     var t, n;
-    return (0, p.Z)((t = function(e) {
+    return (0, h.Z)((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), i.forEach(function(t) {
+          var i;
+          i = n[t], t in e ? Object.defineProperty(e, t, {
+            value: i,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = i
         })
       }
       return e
     }({}, e), n = n = {
-      channel: i,
-      guildId: C
+      channel: s,
+      guildId: O
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var i = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, i)
       }
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
-  }, [e, i, C]);
-  return (0, r.jsx)(s.Z, {
+  }, [e, s, O]);
+  return (0, i.jsx)(c.Z, {
     compact: g,
-    className: o()(f, {
-      [m.message]: true,
-      [m.cozyMessage]: !g,
-      [m.groupStart]: b
+    className: l()(f, {
+      [p.message]: true,
+      [p.cozyMessage]: !g,
+      [p.groupStart]: m
     }),
-    childrenHeader: j,
-    childrenMessageContent: (0, d.Z)(e, y),
+    childrenHeader: w,
+    childrenMessageContent: (0, d.Z)(e, E),
     disableInteraction: v,
-    author: x,
-    preview: P
+    author: y,
+    preview: _
   })
 })

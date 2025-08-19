@@ -1,8 +1,8 @@
-/** Chunk was on 4756 **/
+/** Chunk was on 31930 **/
 /** chunk id: 863750, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 }), require("./388685.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -24,7 +24,7 @@ let o = {
     channel_list_scrim: "Dim the channel list when chat appears"
   },
   a = {};
-class u extends(i = Chunk442837.ZP.DeviceSettingsStore) {
+class c extends(i = Chunk442837.ZP.DeviceSettingsStore) {
   getUserAgnosticState() {
     return {
       toggleStates: a
@@ -54,8 +54,8 @@ class u extends(i = Chunk442837.ZP.DeviceSettingsStore) {
     })
   }
 }
-l(u, "displayName", "DevToolsDesignTogglesStore"), l(u, "persistKey", "DevToolsDesignTogglesStore");
-let c = new u(Chunk570140.Z, {
+l(c, "displayName", "DevToolsDesignTogglesStore"), l(c, "persistKey", "DevToolsDesignTogglesStore");
+let u = new c(Chunk570140.Z, {
   DEV_TOOLS_DESIGN_TOGGLE_SET: function(e) {
     a[e.toggle] = e.value
   }

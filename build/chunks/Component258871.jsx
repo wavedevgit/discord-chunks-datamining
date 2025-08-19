@@ -1,7 +1,7 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 258871, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -48,7 +48,7 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = [{
+let O = [{
     key: "EVENTS",
     renderIcon: e => (0, r.jsx)(o.Que, {
       size: "md",
@@ -115,7 +115,7 @@ let _ = [{
       }))
     })
   }],
-  O = e => {
+  _ = e => {
     let {
       guild: t,
       channel: n
@@ -137,7 +137,7 @@ let _ = [{
       numEvents: o.length
     }), [o.length]), m = (0, f.t)(n);
     return (0, r.jsx)(r.Fragment, {
-      children: _.map(e => {
+      children: O.map(e => {
         let {
           key: i,
           getName: l,

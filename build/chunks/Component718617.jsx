@@ -1,4 +1,4 @@
-/** Chunk was on 78079 **/
+/** Chunk was on 12630 **/
 /** chunk id: 718617, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -40,7 +40,7 @@ function w(A) {
     className: p
   } = A, I = (0, i.e7)([f.ZP], () => f.ZP.getGuildSidebarState(w), [w]), H = null != (e = null == I ? true : I.details.modViewPanel) ? e : E.k.INFO, b = (0, o.Z)(t), O = null == H ? null : H === E.k.INFO ? "backwards" : "forwards", Q = (0, c.Z)(O), {
     reducedMotion: P
-  } = r.useContext(a.S), j = r.useCallback(A => {
+  } = r.useContext(s.S), j = r.useCallback(A => {
     null != I && (0, v.r)(w, t, I.baseChannelId, {
       modViewPanel: A
     })
@@ -52,7 +52,7 @@ function w(A) {
     }
   }), [D, H, j]);
   r.useEffect(() => (g.Z.enable(), g.Z.enableTemp(V), () => g.Z.disableTemp()), [V]);
-  let m = (0, s.Yzy)(H, {
+  let m = (0, a.Yzy)(H, {
     value: 0,
     from: {
       value: 1
@@ -72,7 +72,7 @@ function w(A) {
       overflow: "hidden"
     },
     children: m((A, e, r) => {
-      var i, a, s;
+      var i, s, a;
       let {
         key: o
       } = r;
@@ -104,8 +104,8 @@ function w(A) {
         }, P.enabled ? {
           opacity: null == (i = A.value) ? true : i.to(A => 1 - Math.abs(A))
         } : {
-          left: null == (a = A.value) ? true : a.to(B("left", Q)),
-          right: null == (s = A.value) ? true : s.to(B("right", Q))
+          left: null == (s = A.value) ? true : s.to(B("left", Q)),
+          right: null == (a = A.value) ? true : a.to(B("right", Q))
         }),
         children: function(A) {
           switch (A) {

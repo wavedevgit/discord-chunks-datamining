@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 836697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk264096 = require("./264096.js");
 
-function O(e) {
+function _(e) {
   let {
     onActivate: t,
     children: n
@@ -33,17 +33,17 @@ function O(e) {
       t(), null == (l = h.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
     }
   }, [h, d, f, t]), (0, r.jsxs)("div", {
-    className: _.container,
+    className: O.container,
     children: [(0, r.jsx)(o.yRy, {
       ref: h,
       targetElementRef: s,
       shouldShow: d,
       renderPopout: () => (0, r.jsxs)("div", {
-        className: _.popoutContainer,
+        className: O.popoutContainer,
         children: [(0, r.jsxs)("div", {
-          className: _.popoutContent,
+          className: O.popoutContent,
           children: [(0, r.jsxs)("div", {
-            className: _.coachmarkTextContainer,
+            className: O.coachmarkTextContainer,
             children: [(0, r.jsx)(o.X6q, {
               variant: "heading-md/medium",
               children: b.intl.string(b.t["0YV0YG"])
@@ -60,7 +60,7 @@ function O(e) {
             onClick: p
           })]
         }), (0, r.jsx)("div", {
-          className: _.popoutCaretLeft
+          className: O.popoutCaretLeft
         })]
       }),
       position: "right",
@@ -87,7 +87,7 @@ function O(e) {
           }
           return e
         }({}, e), n = n = {
-          className: _.popoutAnchor,
+          className: O.popoutAnchor,
           ref: s
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -123,7 +123,7 @@ function y(e) {
   let S = null != v && C.includes(v);
   return (i.useEffect(() => {
     !n && S && E !== v && y(true)
-  }, [n, S, E, v]), 0 === C.length) ? null : (0, r.jsx)(O, {
+  }, [n, S, E, v]), 0 === C.length) ? null : (0, r.jsx)(_, {
     onActivate: t,
     children: (0, r.jsx)(g.Z, {
       folderNode: x,
@@ -136,7 +136,7 @@ function y(e) {
       },
       folderButtonSize: "icon",
       folderButtonContent: (0, r.jsx)("div", {
-        className: _.pendingFolderButtonIcon,
+        className: O.pendingFolderButtonIcon,
         children: (0, r.jsx)(o.wGF, {
           size: "sm",
           color: "currentColor"

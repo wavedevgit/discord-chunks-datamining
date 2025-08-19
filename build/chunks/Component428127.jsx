@@ -1,7 +1,7 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 428127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,7 +22,7 @@ let b = {
   tension: 300
 };
 
-function _(e) {
+function O(e) {
   var t;
   let {
     guildChannels: n,
@@ -61,7 +61,7 @@ function _(e) {
   })
 }
 
-function O(e) {
+function _(e) {
   let {
     position: t,
     guildChannels: n,
@@ -70,12 +70,12 @@ function O(e) {
     jumpToChannel: d
   } = e, {
     bottomBar: f,
-    topBar: O
+    topBar: _
   } = (0, s.cj)([h.Z], () => h.Z.getUnreadStateForGuildId(n.id)), y = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
     mode: v,
     mentionCount: j,
     targetChannelId: C
-  } = "bottom" === t ? f : O, E = v === h.x.HIDDEN, x = (0, c.q_F)({
+  } = "bottom" === t ? f : _, E = v === h.x.HIDDEN, x = (0, c.q_F)({
     to: {
       transform: E ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
@@ -126,7 +126,7 @@ function O(e) {
             count: j
           })
         })
-      }) : v === h.x.VOICE_CHANNELS ? (0, r.jsx)(_, {
+      }) : v === h.x.VOICE_CHANNELS ? (0, r.jsx)(O, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: l

@@ -1,4 +1,4 @@
-/** Chunk was on 4756 **/
+/** Chunk was on 31930 **/
 /** chunk id: 528027, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -26,9 +26,9 @@ function d(e) {
     emojiId: null == p ? true : p.id,
     emojiName: null != d ? d : null == p ? true : p.name,
     animated: null != (t = null == p ? true : p.animated) && t,
-    className: s()(c.emojiIcon, h)
-  }) : (0, i.jsx)(u.Z, {
-    className: s()(c.emojiIcon, h),
+    className: s()(u.emojiIcon, h)
+  }) : (0, i.jsx)(c.Z, {
+    className: s()(u.emojiIcon, h),
     color: o.Z.CREATOR_REVENUE_LOCKED_CHANNEL_ICON
   })
 }

@@ -1,8 +1,8 @@
-/** Chunk was on 31253 **/
+/** Chunk was on 11868 **/
 /** chunk id: 523255, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   SI: () => s,
-  hZ: () => _
+  hZ: () => d
 });
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -13,10 +13,10 @@ var Chunk913527 = require("./913527.js"),
 let s = e => {
     var t;
     if (!u(e)) returnfalse;
-    let n = null == (t = a.Z.settings.userContent) ? true : t.safetyUserSentimentNoticeDismissedAt,
+    let n = null == (t = o.Z.settings.userContent) ? true : t.safetyUserSentimentNoticeDismissedAt,
       r = null != n ? l.E.toDate(n) : true,
-      o = null != r ? i()().diff(r, "days") : null;
-    if (null != n && !(null != o && o > 30)) returnfalse;
+      a = null != r ? i()().diff(r, "days") : null;
+    if (null != n && !(null != a && a > 30)) returnfalse;
     let {
       isEligible: s
     } = c.C.getCurrentConfig({
@@ -27,7 +27,7 @@ let s = e => {
     return s
   },
   u = e => null != e && Date.now() - e.createdAt.getTime() > 2592e6,
-  _ = () => {
+  d = () => {
     let e = Chunk835913.E.now();
     Chunk675478.hW.updateAsync("userContent", t => {
       t.safetyUserSentimentNoticeDismissedAt = e

@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 603592, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -21,8 +21,8 @@ let f = Chunk647438.forwardRef(function(e, t) {
     onContextMenu: g,
     icon: m,
     selected: b,
-    tooltip: _,
-    upperBadge: O,
+    tooltip: O,
+    upperBadge: _,
     lowerBadge: y,
     lowerBadgeSize: v,
     showPill: j = true,
@@ -30,8 +30,8 @@ let f = Chunk647438.forwardRef(function(e, t) {
     "aria-label": E,
     children: x,
     onMouseEnter: S,
-    onMouseLeave: I,
-    onMouseDown: P
+    onMouseLeave: P,
+    onMouseDown: I
   } = e, N = (0, a.Ie)(f), [w, Z] = i.useState(false);
   return (0, r.jsxs)(u.H, {
     children: [j ? (0, r.jsx)("div", {
@@ -41,11 +41,11 @@ let f = Chunk647438.forwardRef(function(e, t) {
         selected: b
       })
     }) : null, (0, r.jsx)(d.Z, {
-      text: _,
+      text: O,
       selected: b,
       children: (0, r.jsx)(s.aRk, {
         selected: true,
-        upperBadge: O,
+        upperBadge: _,
         lowerBadge: y,
         lowerBadgeSize: v,
         children: (0, r.jsx)(s.P3F, (n = function(e) {
@@ -71,14 +71,14 @@ let f = Chunk647438.forwardRef(function(e, t) {
             null == S || S(), Z(true)
           },
           onMouseLeave: () => {
-            null == I || I(), Z(false)
+            null == P || P(), Z(false)
           },
-          onMouseDown: P,
+          onMouseDown: I,
           className: o()(p.circleIconButton, C, {
             [p.selected]: b || w
           }),
           onClick: h,
-          "aria-label": "string" == typeof _ && null == E ? _ : E,
+          "aria-label": "string" == typeof O && null == E ? O : E,
           "aria-selected": b,
           onContextMenu: g,
           focusProps: {

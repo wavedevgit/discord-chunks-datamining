@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 900085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => q
@@ -109,7 +109,7 @@ let V = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
       category: y.Z.getChannel(t.parent_id)
     }
   })(B),
-  H = Chunk442837.ZP.connectStores([Chunk938475.ZP], e => {
+  F = Chunk442837.ZP.connectStores([Chunk938475.ZP], e => {
     let {
       channel: t
     } = e;
@@ -118,7 +118,7 @@ let V = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
       voiceStates: x.ZP.getVoiceStates(t.guild_id)[t.id]
     }
   })(B),
-  F = Chunk442837.ZP.connectStores([Chunk888369.default], e => {
+  H = Chunk442837.ZP.connectStores([Chunk888369.default], e => {
     let {
       guild: t
     } = e;
@@ -241,7 +241,7 @@ class Y extends Chunk647438.PureComponent {
     })
   }
   focusNode(e) {
-    I.S.dispatch(R.CkL.QUICKSWITCHER_RESULT_FOCUS, {
+    P.S.dispatch(R.CkL.QUICKSWITCHER_RESULT_FOCUS, {
       node: e
     })
   }
@@ -288,7 +288,7 @@ class Y extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), M(this, "scrollerRef", l.createRef()), M(this, "inputRef", l.createRef()), M(this, "_listId", (0, _.hQ)()), M(this, "state", {
+    super(...e), M(this, "scrollerRef", l.createRef()), M(this, "inputRef", l.createRef()), M(this, "_listId", (0, O.hQ)()), M(this, "state", {
       query: this.props.query,
       mouseFocusDisabled: true
     }), M(this, "handleInputChange", () => {
@@ -484,7 +484,7 @@ class Y extends Chunk647438.PureComponent {
             score: l ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
         case h.h8.VOICE_CHANNEL:
-          return (0, i.jsx)(H, {
+          return (0, i.jsx)(F, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -495,7 +495,7 @@ class Y extends Chunk647438.PureComponent {
             score: l ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
         case h.h8.GUILD:
-          return (0, i.jsx)(F, {
+          return (0, i.jsx)(H, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -572,7 +572,7 @@ class Y extends Chunk647438.PureComponent {
 
 function q(e) {
   let t = (0, s.cj)([w.Z], () => w.Z.getProps()),
-    n = (0, O.Pt)(),
+    n = (0, _.Pt)(),
     r = A.Z.useExperiment({
       location: "QuickSwitcher"
     }).enabled,

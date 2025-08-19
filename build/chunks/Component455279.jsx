@@ -1,13 +1,13 @@
-/** Chunk was on 58120 **/
+/** Chunk was on 66181 **/
 /** chunk id: 455279, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => D,
-  c: () => _
+  Z: () => E,
+  c: () => x
 }), require("./388685.js");
 var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk879443 = require("./879443.js"),
   c = require.n(Chunk879443),
   Chunk392711 = require("./392711.js"),
@@ -18,7 +18,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk151028 = require("./151028.js");
 
-function g(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,12 +26,12 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var _ = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
-let E = {
+var x = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
+let _ = {
   DEFAULT: Chunk151028.__invalid_default,
   RECORDING: Chunk151028.recording
 };
-class y extends Chunk647438.PureComponent {
+class j extends Chunk647438.PureComponent {
   componentWillUnmount() {
     null != this._unregisterNativeRecorder && this._unregisterNativeRecorder()
   }
@@ -65,7 +65,7 @@ class y extends Chunk647438.PureComponent {
         onClick: this.handleClick,
         onMouseDown: this.handleMouseDown,
         ref: this._containerRef,
-        className: a()(Chunk151028.recorderContainer, E[exports], {
+        className: l()(Chunk151028.recorderContainer, _[exports], {
           [Chunk151028.containerDisabled]: i
         }),
         children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
@@ -98,7 +98,7 @@ class y extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), g(this, "_inputId", u().uniqueId("key-recorder-")), g(this, "_unregisterNativeRecorder", null), g(this, "_mousedownMode", null), g(this, "_inputRef", s.createRef()), g(this, "_containerRef", s.createRef()), g(this, "setInputRef", e => {
+    super(...e), b(this, "_inputId", u().uniqueId("key-recorder-")), b(this, "_unregisterNativeRecorder", null), b(this, "_mousedownMode", null), b(this, "_inputRef", s.createRef()), b(this, "_containerRef", s.createRef()), b(this, "setInputRef", e => {
       var t;
       let {
         registerNativeRecorder: n,
@@ -110,16 +110,16 @@ class y extends Chunk647438.PureComponent {
         } catch (e) {
           this._unregisterNativeRecorder = null
         } else null != i && (new(c())(e).handleKey = i)
-    }), g(this, "handleClick", e => {
+    }), b(this, "handleClick", e => {
       e.stopPropagation(), e.preventDefault();
       let {
         onClick: t,
         disableOnClickWhileRecording: n
       } = this.props;
       n && "RECORDING" === this._mousedownMode || t()
-    }), g(this, "handleMouseDown", () => {
+    }), b(this, "handleMouseDown", () => {
       this._mousedownMode = this.props.mode
     })
   }
 }
-let D = y
+let E = j

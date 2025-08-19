@@ -1,7 +1,7 @@
-/** Chunk was on 31253 **/
+/** Chunk was on 11868 **/
 /** chunk id: 236069, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -40,16 +40,16 @@ function T(e) {
     guildId: t,
     analyticsLocations: n,
     analyticsLocation: i
-  } = e, [o, a] = (0, u.ww)({
+  } = e, [a, o] = (0, u.ww)({
     guildId: t,
     analyticsLocations: n,
     analyticsLocation: i,
     openWithoutBackstack: true
-  }), c = a ? E.intl.string(E.t["6ndMcn"]) : E.intl.string(E.t["0eiu6O"]), s = a ? E.intl.string(E.t.S09nw8) : E.intl.string(E.t.tEttXV);
+  }), c = o ? E.intl.string(E.t["6ndMcn"]) : E.intl.string(E.t["0eiu6O"]), s = o ? E.intl.string(E.t.S09nw8) : E.intl.string(E.t.tEttXV);
   return (0, r.jsxs)(l.qXd, {
     color: l.DM8.DANGER,
     children: [c, (0, r.jsx)(l.EyT, {
-      onClick: o,
+      onClick: a,
       children: s
     })]
   })
@@ -68,11 +68,11 @@ function O() {
   })
 }
 
-function N(e) {
-  let t = (0, i.e7)([a.default, c.ZP], () => {
+function p(e) {
+  let t = (0, i.e7)([o.default, c.ZP], () => {
     if (null == e.guildId) return new Set;
-    let t = a.default.getId();
+    let t = o.default.getId();
     return (0, s.no)(c.ZP.getMember(e.guildId, t))
   }, [e.guildId]);
-  return t.has(_.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || t.has(_.q.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(T, I({}, e)) : t.has(_.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(O, {}) : (0, r.jsx)(T, I({}, e))
+  return t.has(d.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || t.has(d.q.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(T, I({}, e)) : t.has(d.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(O, {}) : (0, r.jsx)(T, I({}, e))
 }

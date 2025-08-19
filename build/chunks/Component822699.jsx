@@ -94,8 +94,8 @@ function ei(e, t) {
 require("./179645.js"), Chunk442837.ZP.initialize();
 let el = (0, Chunk320830.Z)(Chunk781428.Z),
   ea = (0, Chunk320830.Z)(Chunk209411.Z),
-  es = (0, Chunk320830.Z)(Chunk344295.Z),
-  eo = (0, Chunk320830.Z)(Chunk236446.Z),
+  eo = (0, Chunk320830.Z)(Chunk344295.Z),
+  es = (0, Chunk320830.Z)(Chunk236446.Z),
   ec = (0, Chunk320830.Z)(Chunk39514.Z),
   eu = (0, Chunk320830.Z)(Chunk677760.Z),
   ed = (0, Chunk320830.Z)(Chunk423527.Z),
@@ -120,23 +120,23 @@ class eO extends Chunk647438.PureComponent {
       location: i
     } = e, {
       backgroundId: a
-    } = t, s = null != (n = (0, l.parse)(i.search).redirect_to) ? n : null;
-    (null == s || "" === s || !(0, w.B)(s) || s.startsWith($.Z5c.ME)) && (s = null);
-    let o = null;
-    if (null == r) o = (0, Z.gK)(s);
+    } = t, o = null != (n = (0, l.parse)(i.search).redirect_to) ? n : null;
+    (null == o || "" === o || !(0, w.B)(o) || o.startsWith($.Z5c.ME)) && (o = null);
+    let s = null;
+    if (null == r) s = (0, Z.gK)(o);
     else if ((null == r ? true : r.state) === $.r2o.RESOLVED) {
       let {
         guild: e,
         target_application: t
       } = r;
-      null != t ? null != a && (o = (0, A.xF)(t.id, a, 1024)) : null != e && "string" == typeof e.splash && (o = P.ZP.getGuildSplashURL({
+      null != t ? null != a && (s = (0, A.xF)(t.id, a, 1024)) : null != e && "string" == typeof e.splash && (s = P.ZP.getGuildSplashURL({
         id: e.id,
         splash: e.splash
       }))
     }
     return {
-      redirectTo: s,
-      splash: o
+      redirectTo: o,
+      splash: s
     }
   }
   componentDidMount() {
@@ -227,7 +227,7 @@ class eO extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         impressionName: Chunk990547.ImpressionNames.USER_REGISTRATION,
         path: Chunk981631.Z5c.REGISTER,
-        render: e => ee.a ? (0, r.jsx)(es, ei(er({}, e), {
+        render: e => ee.a ? (0, r.jsx)(eo, ei(er({}, e), {
           redirectTo: t,
           inviteKey: n
         })) : (0, r.jsx)(ed, ei(er({}, e), {
@@ -254,10 +254,10 @@ class eO extends Chunk647438.PureComponent {
             location: i,
             transitionTo: l
           } = e, a = (0, I.mb)(t, i.search);
-          return s.tq || s.Em ? (0, r.jsx)(eu, {
+          return o.tq || o.Em ? (0, r.jsx)(eu, {
             inviteKey: a,
             transitionTo: l
-          }, a) : (0, r.jsx)(es, {
+          }, a) : (0, r.jsx)(eo, {
             inviteKey: a,
             location: i,
             transitionTo: l,
@@ -277,9 +277,9 @@ class eO extends Chunk647438.PureComponent {
             location: i,
             transitionTo: l
           } = e;
-          return s.tq || s.Em ? (0, r.jsx)(z.Z, {
+          return o.tq || o.Em ? (0, r.jsx)(z.Z, {
             code: t
-          }, t) : (0, r.jsx)(eo, {
+          }, t) : (0, r.jsx)(es, {
             code: t,
             location: i,
             transitionTo: l,
@@ -355,14 +355,14 @@ let eN = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk
   let {
     match: i,
     location: l
-  } = e, a = null == i || null == (t = i.params) ? true : t.inviteCode, s = ee.a ? ee.Y : true, o = null != a ? (0, I.mb)(a, l.search) : s, c = null == i || null == (n = i.params) ? true : n.giftCode, u = null == i || null == (r = i.params) ? true : r.guildTemplateCode;
+  } = e, a = null == i || null == (t = i.params) ? true : t.inviteCode, o = ee.a ? ee.Y : true, s = null != a ? (0, I.mb)(a, l.search) : o, c = null == i || null == (n = i.params) ? true : n.giftCode, u = null == i || null == (r = i.params) ? true : r.guildTemplateCode;
   return {
-    inviteKey: o,
+    inviteKey: s,
     isAuthenticated: N.default.isAuthenticated(),
     giftCode: c,
     guildTemplateCode: u,
     gift: null != c ? S.Z.get(c) : null,
-    invite: null != o ? C.Z.getInvite(o) : null,
+    invite: null != s ? C.Z.getInvite(s) : null,
     guildTemplate: null != u ? v.Z.getGuildTemplate(u) : null,
     hasLoadedExperiments: b.Z.hasLoadedExperiments
   }

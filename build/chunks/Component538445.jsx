@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 538445, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -46,7 +46,7 @@ function N(e) {
       guild: t
     })
   }, [t, w]), T = (0, s.e7)([b.default], () => b.default.getCurrentUser()), A = function(e) {
-    let t = (0, s.e7)([m.Z], () => m.Z.getSortedRoles(e).find(O.YB));
+    let t = (0, s.e7)([m.Z], () => m.Z.getSortedRoles(e).find(_.YB));
     return (null == t ? true : t.colorStrings) != null ? t.colorStrings : {
       primaryColor: (0, a.Rf)(y.oC.primary_color),
       secondaryColor: (0, a.Rf)(y.oC.secondary_color),
@@ -75,15 +75,15 @@ function N(e) {
           }),
           usernameStyle: R,
           usernameClassName: o()(D, S.animateGradient),
-          username: _.ZP.getName(t.id, null, T),
+          username: O.ZP.getName(t.id, null, T),
           asset: (0, r.jsx)("img", {
             alt: "",
-            src: I.Z
+            src: P.Z
           })
         })
       }) : (0, r.jsx)("img", {
         alt: "",
-        src: P.Z,
+        src: I.Z,
         className: x.image
       }), (0, r.jsx)(c.olH, {
         className: x.close,

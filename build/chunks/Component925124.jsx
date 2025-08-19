@@ -91,8 +91,8 @@ function S(e) {
   let {
     offer: m,
     offerOptions: p,
-    forceRefetch: v
-  } = e, [b, _] = r.useState(false), [y, C] = r.useState(false), [T, O] = r.useState(false), [E, S] = r.useState(false);
+    forceRefetch: b
+  } = e, [v, _] = r.useState(false), [y, C] = r.useState(false), [T, O] = r.useState(false), [E, S] = r.useState(false);
   r.useEffect(() => {
     T && S(true);
     let e = setTimeout(() => {
@@ -106,23 +106,23 @@ function S(e) {
     id: P,
     expires_at: I,
     redeemed_at: w,
-    trial_id: R,
-    subscription_trial: k,
+    trial_id: k,
+    subscription_trial: R,
     referrer: Z
   } = m, A = null != (a = null == (t = p.find(e => {
     let {
       value: t
     } = e;
-    return t === R
+    return t === k
   })) ? true : t.label) ? a : "Unknown";
   null != Z && (A = "".concat(A, " from @").concat(Z.username));
   let D = null != I,
     L = null != I && new Date(I).getTime() < Date.now(),
-    M = (null == k ? true : k.sku_id) === g.Si.TIER_0,
+    M = (null == R ? true : R.sku_id) === g.Si.TIER_0,
     U = async () => {
       O(true), D ? await F({
         expiresAt: null
-      }) : await (0, d.ab)(m), v(), O(false)
+      }) : await (0, d.ab)(m), b(), O(false)
     }, F = async e => {
       O(true);
       try {
@@ -153,11 +153,11 @@ function S(e) {
           rejectWithError: true
         })
       } finally {
-        v(), O(false)
+        b(), O(false)
       }
     };
   r.useEffect(() => {
-    if (b) {
+    if (v) {
       let e = setTimeout(() => {
         _(false)
       }, 3e3);
@@ -173,7 +173,7 @@ function S(e) {
         clearTimeout(e)
       }
     }
-  }, [b, y]);
+  }, [v, y]);
   let B = "Active";
   return D && (B = "Acked"), L && (B = "Expired"), (0, n.jsxs)("div", {
     className: i()(j.card, M ? j.gradientWrapperTier0 : j.gradientWrapperTier2),
@@ -193,7 +193,7 @@ function S(e) {
         variant: "eyebrow",
         color: "always-white",
         children: ["Offer: ", P]
-      }), b ? (0, n.jsx)(c.dz2, {
+      }), v ? (0, n.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
         className: j.icon
@@ -205,12 +205,12 @@ function S(e) {
     }), (0, n.jsxs)(c.P3F, {
       className: i()(j.row, j.idRow),
       onClick: () => {
-        (0, x.JG)(R, () => C(true))
+        (0, x.JG)(k, () => C(true))
       },
       children: [(0, n.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "always-white",
-        children: ["Trial: ", R]
+        children: ["Trial: ", k]
       }), y ? (0, n.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
@@ -226,8 +226,8 @@ function S(e) {
         variant: "eyebrow",
         color: "always-white",
         children: ["Trial Length:", " ", (0, h.if)({
-          intervalType: null != (l = null == k ? true : k.interval) ? l : g.rV.MONTH,
-          intervalCount: null != (o = null == k ? true : k.interval_count) ? o : 1,
+          intervalType: null != (l = null == R ? true : R.interval) ? l : g.rV.MONTH,
+          intervalCount: null != (o = null == R ? true : R.interval_count) ? o : 1,
           capitalize: false
         })]
       })
@@ -280,7 +280,7 @@ function S(e) {
       })]
     }), (0, n.jsx)(c.P3F, {
       onClick: async () => {
-        O(true), await N(P, "trial"), v(), O(false)
+        O(true), await N(P, "trial"), b(), O(false)
       },
       children: (0, n.jsx)(c.XHJ, {
         size: "md",
@@ -302,16 +302,16 @@ function P(e) {
     offer: l,
     offerOptions: o,
     forceRefetch: u
-  } = e, [m, h] = r.useState(false), [p, v] = r.useState(false), [b, g] = r.useState(false), [_, y] = r.useState(false);
+  } = e, [m, h] = r.useState(false), [p, b] = r.useState(false), [v, g] = r.useState(false), [_, y] = r.useState(false);
   r.useEffect(() => {
-    b && y(true);
+    v && y(true);
     let e = setTimeout(() => {
       y(false)
     }, 500);
     return () => {
       clearTimeout(e)
     }
-  }, [b]);
+  }, [v]);
   let {
     id: C,
     expires_at: T,
@@ -323,11 +323,11 @@ function P(e) {
       value: t
     } = e;
     return t === E
-  })) ? true : t.label) ? a : "Unknown", I = null != T, w = null != T && new Date(T).getTime() < Date.now(), R = async () => {
-    g(true), I ? await k({
+  })) ? true : t.label) ? a : "Unknown", I = null != T, w = null != T && new Date(T).getTime() < Date.now(), k = async () => {
+    g(true), I ? await R({
       expiresAt: null
     }) : await (0, d.ab)(true, l), u(), g(false)
-  }, k = async e => {
+  }, R = async e => {
     let {
       expiresAt: t
     } = e;
@@ -355,7 +355,7 @@ function P(e) {
     }
     if (p) {
       let e = setTimeout(() => {
-        v(false)
+        b(false)
       }, 3e3);
       return () => {
         clearTimeout(e)
@@ -402,7 +402,7 @@ function P(e) {
     }), (0, n.jsxs)(c.P3F, {
       className: i()(j.row, j.idRow),
       onClick: () => {
-        (0, x.JG)(E, () => v(true))
+        (0, x.JG)(E, () => b(true))
       },
       children: [(0, n.jsxs)(c.Text, {
         variant: "eyebrow",
@@ -432,14 +432,14 @@ function P(e) {
       }), (0, n.jsx)("input", {
         type: "date",
         value: null != T ? T.substring(0, 10) : "",
-        onChange: e => k({
+        onChange: e => R({
           expiresAt: e.target.value
         })
       })]
     }), (0, n.jsxs)("div", {
       className: j.badgeContainer,
       children: [(0, n.jsx)(c.P3F, {
-        onClick: R,
+        onClick: k,
         className: i()(j.badge, j.clickable, {
           [j.acked]: I,
           [j.expired]: w
@@ -459,7 +459,7 @@ function P(e) {
       })]
     }), (0, n.jsx)("div", {
       className: i()(j.loadingContainer, {
-        [j.isLoading]: b || _
+        [j.isLoading]: v || _
       }),
       children: (0, n.jsx)(c.$jN, {})
     })]
@@ -467,7 +467,7 @@ function P(e) {
 }
 
 function I() {
-  let [e, t] = Chunk647438.useState([]), [a, l] = Chunk647438.useState([]), [i, s] = Chunk647438.useState(), [x, h] = Chunk647438.useState(), [g, N] = Chunk647438.useState([]), [I, w] = Chunk647438.useState([]), [R, k] = Chunk647438.useState(true), [Z, A] = Chunk647438.useState(10080), [D, L] = Chunk647438.useState([]), {
+  let [e, t] = Chunk647438.useState([]), [a, l] = Chunk647438.useState([]), [i, s] = Chunk647438.useState(), [x, h] = Chunk647438.useState(), [g, N] = Chunk647438.useState([]), [I, w] = Chunk647438.useState([]), [k, R] = Chunk647438.useState(true), [Z, A] = Chunk647438.useState(10080), [D, L] = Chunk647438.useState([]), {
     entitlements: M,
     deleteFractionalPremium: U,
     refreshEntitlementList: F
@@ -477,7 +477,7 @@ function I() {
   }, [F]), Chunk647438.useEffect(() => {
     L(M.filter(e => e.sourceType === f.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
   }, [M]), Chunk647438.useEffect(() => {
-    (0 === module.length || 0 === require.length || R) && y().then(e => {
+    (0 === module.length || 0 === require.length || k) && y().then(e => {
       let a = Object.keys(e.trial).map(t => ({
           label: t,
           value: e.trial[t]
@@ -488,17 +488,17 @@ function I() {
         }));
       t(a), l(n), null == i && s(a[0].value), null == x && h(n[0].value)
     })
-  }, [module, require, i, Chunk572004, R]), Chunk647438.useEffect(() => {
-    R && (k(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), T().then(e => {
+  }, [module, require, i, Chunk572004, k]), Chunk647438.useEffect(() => {
+    k && (R(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), T().then(e => {
       N(e.trial.sort((e, t) => e.id.localeCompare(t.id))), w(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
-  }, [R]);
+  }, [k]);
   let B = async () => {
-    null != i && (await C(i, "trial"), k(true))
+    null != i && (await C(i, "trial"), R(true))
   }, z = async () => {
-    null != Chunk572004 && (await C(Chunk572004, "discount"), k(true))
+    null != Chunk572004 && (await C(Chunk572004, "discount"), R(true))
   }, G = async () => {
-    await O(), k(true)
+    await O(), R(true)
   }, V = async () => {
     let e = new Date(Date.now() + 60 * Z * 1e3).toISOString();
     await E(module), F()
@@ -533,7 +533,7 @@ function I() {
             variant: "primary",
             size: "sm",
             text: "Refresh DevTools",
-            onClick: () => k(true)
+            onClick: () => R(true)
           })]
         })]
       }), (0, Chunk951288.jsxs)("section", {
@@ -586,7 +586,7 @@ function I() {
         }), Chunk474936.map(t => (0, n.jsx)(S, {
           offer: t,
           offerOptions: e,
-          forceRefetch: () => k(true)
+          forceRefetch: () => R(true)
         }, t.id))]
       }), I.length > 0 && (0, Chunk951288.jsxs)("section", {
         className: Chunk711322.section,
@@ -596,7 +596,7 @@ function I() {
         }), I.map(e => (0, n.jsx)(P, {
           offer: e,
           offerOptions: a,
-          forceRefetch: () => k(true)
+          forceRefetch: () => R(true)
         }, e.id))]
       }), (0, Chunk951288.jsxs)("section", {
         className: Chunk711322.section,

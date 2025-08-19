@@ -1,8 +1,8 @@
-/** Chunk was on 4756 **/
+/** Chunk was on 31930 **/
 /** chunk id: 798379, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => c
 }), require("./388685.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -30,7 +30,7 @@ class a extends(i = Chunk442837.ZP.PersistedStore) {
   }
 }
 l(a, "displayName", "RecentlyActiveCollapseStore"), l(a, "persistKey", "RecentlyActiveCollapseStore");
-let u = new a(Chunk570140.Z, {
+let c = new a(Chunk570140.Z, {
   SET_RECENTLY_ACTIVE_COLLAPSED: function(e) {
     let {
       guildId: t,

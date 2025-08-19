@@ -1,7 +1,7 @@
-/** Chunk was on 78921 **/
-/** chunk id: 241420, original params: e,t,a (module,exports,require) **/
+/** Chunk was on 78701 **/
+/** chunk id: 241420, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -19,55 +19,55 @@ function u(e) {
   let {
     guildId: t
   } = e;
-  return (0, n.jsxs)(r.Z, {
-    children: [(0, n.jsx)(s.Z, {
+  return (0, a.jsxs)(i.Z, {
+    children: [(0, a.jsx)(s.Z, {
       ingress: d.f4.SERVER_PRIVACY_MODAL,
       guildId: t
-    }), (0, n.jsx)(l.Z, {
+    }), (0, a.jsx)(l.Z, {
       ingress: d.f4.SERVER_PRIVACY_MODAL,
       guildId: t
-    }), (0, n.jsx)(o.Z, {
+    }), (0, a.jsx)(r.Z, {
       ingress: d.f4.SERVER_PRIVACY_MODAL,
       guildId: t
-    }), (0, n.jsx)(c.Z, {
+    }), (0, a.jsx)(c.Z, {
       ingress: d.f4.SERVER_PRIVACY_MODAL,
       guildId: t
-    }), (0, n.jsx)(i.Text, {
+    }), (0, a.jsx)(o.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      children: p.intl.format(p.t.LNsV09, {
+      children: _.intl.format(_.t.LNsV09, {
         policyLink: "https://discord.com/safety/360043709612-our-policies"
       })
     })]
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     guild: t,
-    transitionState: a,
-    onClose: r
-  } = e, c = "".concat(p.intl.string(p.t.BayiAg), "—").concat(null != t ? t.name : "??");
-  return (0, n.jsxs)(i.Y0X, {
-    transitionState: a,
-    size: i.CgR.SMALL,
+    transitionState: n,
+    onClose: i
+  } = e, c = "".concat(_.intl.string(_.t.BayiAg), "—").concat(null != t ? t.name : "??");
+  return (0, a.jsxs)(o.Y0X, {
+    transitionState: n,
+    size: o.CgR.SMALL,
     "aria-label": c,
     parentComponent: "PrivacySettings",
-    children: [(0, n.jsx)(i.xBx, {
-      children: (0, n.jsx)(i.X6q, {
+    children: [(0, a.jsx)(o.xBx, {
+      children: (0, a.jsx)(o.X6q, {
         variant: "heading-lg/semibold",
         children: c
       })
-    }), (0, n.jsx)(i.hzk, {
-      className: _.content,
-      children: (0, n.jsx)(u, {
+    }), (0, a.jsx)(o.hzk, {
+      className: p.content,
+      children: (0, a.jsx)(u, {
         guildId: t.id
       })
-    }), (0, n.jsx)(i.mzw, {
-      children: (0, n.jsx)(i.zxk, {
+    }), (0, a.jsx)(o.mzw, {
+      children: (0, a.jsx)(o.zxk, {
         variant: "primary",
-        text: p.intl.string(p.t.i4jeWV),
-        onClick: () => r()
+        text: _.intl.string(_.t.i4jeWV),
+        onClick: () => i()
       })
     })]
   })

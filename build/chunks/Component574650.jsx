@@ -1,14 +1,14 @@
-/** Chunk was on 31253 **/
+/** Chunk was on 11868 **/
 /** chunk id: 574650, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356);
-if (12633 == require.j) var Chunk843611 = require("./843611.js");
-var Chunk442837 = require("./442837.js"),
+  l = require.n(Chunk120356),
+  Chunk843611 = require("./843611.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk430824 = require("./430824.js"),
@@ -24,7 +24,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk342891 = require("./342891.js"),
   Chunk226910 = require("./226910.js");
 
-function A(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,34 +42,34 @@ function A(e) {
   }
   return e
 }
-let C = 12633 == require.j ? () => {
+let A = () => {
   var e, t;
   let i = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId(), []),
-    C = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(Chunk120356), [Chunk120356]),
-    m = (0, Chunk442837.e7)([Chunk937111.Z], () => null != Chunk120356 ? Chunk937111.Z.getRequest(Chunk120356) : null, [Chunk120356]),
-    g = (0, Chunk843611.TH)(),
-    P = (null == (e = (0, Chunk843611.LX)(g.pathname, Chunk981631.Z5c.CHANNEL(null == C ? true : C.id, Chunk176505.oC.GUILD_ONBOARDING))) ? true : module.isExact) === true;
-  if (null == C || !(0, Chunk983736.Dc)(C) || P) return null;
-  let D = null != (t = null == m ? true : m.applicationStatus) ? exports : Chunk246364.wB.STARTED,
-    b = null,
+    A = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(Chunk120356), [Chunk120356]),
+    g = (0, Chunk442837.e7)([Chunk937111.Z], () => null != Chunk120356 ? Chunk937111.Z.getRequest(Chunk120356) : null, [Chunk120356]),
+    P = (0, Chunk843611.TH)(),
+    C = (null == (e = (0, Chunk843611.LX)(P.pathname, Chunk981631.Z5c.CHANNEL(null == A ? true : A.id, Chunk176505.oC.GUILD_ONBOARDING))) ? true : module.isExact) === true;
+  if (null == A || !(0, Chunk983736.Dc)(A) || C) return null;
+  let D = null != (t = null == g ? true : g.applicationStatus) ? exports : Chunk246364.wB.STARTED,
     y = null,
     h = null,
+    b = null,
     U = [Chunk342891.notice, Chunk226910.notice];
   switch (D) {
     case Chunk246364.wB.SUBMITTED:
-      b = Chunk388032.intl.string(Chunk388032.t["5iLvS0"]), y = Chunk388032.intl.string(Chunk388032.t.mqtdmZ), h = () => {
+      y = Chunk388032.intl.string(Chunk388032.t["5iLvS0"]), h = Chunk388032.intl.string(Chunk388032.t.mqtdmZ), b = () => {
         (0, Chunk481060.h7j)(e => {
           var t, n;
-          return (0, r.jsx)(s.ConfirmModal, (t = A({
-            header: p.intl.string(p.t.aIz1oa),
-            confirmText: p.intl.string(p.t["cY+Ooa"]),
-            cancelText: p.intl.string(p.t["ETE/oK"]),
-            onConfirm: () => d.Z.removeGuildJoinRequest(C.id),
+          return (0, r.jsx)(s.ConfirmModal, (t = R({
+            header: f.intl.string(f.t.aIz1oa),
+            confirmText: f.intl.string(f.t["cY+Ooa"]),
+            cancelText: f.intl.string(f.t["ETE/oK"]),
+            onConfirm: () => _.Z.removeGuildJoinRequest(A.id),
             confirmButtonColor: c.zx.Colors.BRAND
           }, e), n = n = {
             children: (0, r.jsx)(s.Text, {
               variant: "text-md/normal",
-              children: p.intl.string(p.t["13tjTU"])
+              children: f.intl.string(f.t["13tjTU"])
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
@@ -85,20 +85,20 @@ let C = 12633 == require.j ? () => {
       };
       break;
     case Chunk246364.wB.REJECTED:
-      b = Chunk388032.intl.string(Chunk388032.t.lk30cX), y = Chunk388032.intl.string(Chunk388032.t["8RrsHh"]), h = () => {
+      y = Chunk388032.intl.string(Chunk388032.t.lk30cX), h = Chunk388032.intl.string(Chunk388032.t["8RrsHh"]), b = () => {
         (0, Chunk481060.ZDy)(async () => {
           let {
             default: e
           } = await require.e("3378").then(require.bind(require, 76075));
-          return t => (0, r.jsx)(e, A({
-            guildId: C.id
+          return t => (0, r.jsx)(e, R({
+            guildId: A.id
           }, t))
         })
       }, U.push(Chunk342891.error);
       break;
     default:
-      b = Chunk388032.intl.string(Chunk388032.t.G5YKXF), y = Chunk388032.intl.string(Chunk388032.t["r8/DT0"]), h = () => {
-        (0, Chunk305325.hk)(C.id)
+      y = Chunk388032.intl.string(Chunk388032.t.G5YKXF), h = Chunk388032.intl.string(Chunk388032.t["r8/DT0"]), b = () => {
+        (0, Chunk305325.hk)(A.id)
       }
   }
   return (0, Chunk951288.jsxs)("div", {
@@ -106,12 +106,12 @@ let C = 12633 == require.j ? () => {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       className: Chunk342891.header,
       variant: "text-sm/normal",
-      children: b
+      children: y
     }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
       variant: "overlay-primary",
       size: "sm",
-      onClick: h,
-      text: y
+      onClick: b,
+      text: h
     })]
   })
-} : null
+}

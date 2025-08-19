@@ -1,7 +1,7 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 385902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  K: () => _,
+  K: () => O,
   _: () => b
 });
 var Chunk647438 = require("./647438.js"),
@@ -40,10 +40,10 @@ function b(e, t) {
   }
 }
 
-function _(e, t) {
+function O(e, t) {
   var n, d, h, b;
-  let _ = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
-    O = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
+  let O = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
+    _ = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
     y = null != (b = (0, u.Z)(e)) && b,
     v = (0, c.q8)(e, t),
     j = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
@@ -52,14 +52,14 @@ function _(e, t) {
     x = null == E ? true : E.storeRemovalDate,
     S = null == j || null == (h = j.allPowerups) ? true : h[i.XW],
     {
-      onActivate: I
+      onActivate: P
     } = (0, f._C)(e, S),
-    P = !O && y && v && C && null != E && null != x && null != S && null != _,
+    I = !_ && y && v && C && null != E && null != x && null != S && null != O,
     N = r.useCallback(e => {
-      I(e)
-    }, [I]),
+      P(e)
+    }, [P]),
     w = r.useMemo(() => {
-      if (!P) return null;
+      if (!I) return null;
       let e = (0, p.Z)(x);
       return {
         firstHeader: E.title,
@@ -67,7 +67,7 @@ function _(e, t) {
           dateString: e
         }),
         firstBody: m.intl.formatToPlainString(g.default["/bW9tb"], {
-          serverName: _.name
+          serverName: O.name
         }),
         secondBody: m.intl.formatToPlainString(g.default.D09fdn, {
           dateString: e,
@@ -77,9 +77,9 @@ function _(e, t) {
         primaryButtonText: m.intl.string(g.default["0uo/LC"]),
         onPrimaryClick: N
       }
-    }, [P, E, x, _, N]);
+    }, [I, E, x, O, N]);
   return {
-    shouldShow: P,
+    shouldShow: I,
     modalConfig: w
   }
 }

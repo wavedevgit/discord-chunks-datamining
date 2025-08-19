@@ -1,4 +1,4 @@
-/** Chunk was on 31253 **/
+/** Chunk was on 11868 **/
 /** chunk id: 696014, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   s: () => c
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk886886 = require("./886886.js");
 
 function c() {
@@ -24,7 +24,7 @@ function c() {
         ref: e => {
           null != e && t(e.scrollHeight - e.clientHeight > 1)
         },
-        className: o()(a.lineClamp, i),
+        className: a()(o.lineClamp, i),
         style: n ? true : {
           lineClamp: c,
           WebkitLineClamp: c

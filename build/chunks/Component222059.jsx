@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 222059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   u: () => D
@@ -54,21 +54,21 @@ function R(e) {
     badge: f,
     link: m,
     showProgressBadge: b
-  } = e, [_, O] = i.useState(false), [y, v] = i.useState(false), [j, C] = i.useState(null), [N, R] = i.useState(0), D = (0, l.Ie)("home"), L = (0, d.oq)().activePanel === d.wh.APP_ICON, M = () => {
+  } = e, [O, _] = i.useState(false), [y, v] = i.useState(false), [j, C] = i.useState(null), [N, R] = i.useState(0), D = (0, l.Ie)("home"), L = (0, d.oq)().activePanel === d.wh.APP_ICON, M = () => {
     C(null), R(0), clearTimeout(j)
   };
   if (null == p) return null;
   let k = Z.intl.string(Z.t.YUU0RE);
-  y && (k = a.K.get(P.wli) ? Z.intl.string(Z.t.nkq1l5) : Z.intl.string(Z.t.Be8Q5O));
+  y && (k = a.K.get(I.wli) ? Z.intl.string(Z.t.nkq1l5) : Z.intl.string(Z.t.Be8Q5O));
   let U = null;
   !o && b && (U = (0, r.jsx)(c.Z, {
     className: T.downloadProgress,
     determineOwnVisibility: false
   }));
-  let G = o || _ || L,
+  let G = o || O || L,
     B = (0, r.jsx)(s.aRk, {
       selected: true,
-      lowerBadge: f > 0 ? (0, I.Ne)(f) : null,
+      lowerBadge: f > 0 ? (0, P.Ne)(f) : null,
       upperBadge: U,
       lowerBadgeSize: {
         width: (0, s.OVM)(f)
@@ -91,13 +91,13 @@ function R(e) {
         }
         return e
       }({
-        onMouseEnter: () => O(true),
-        onMouseLeave: () => O(false),
+        onMouseEnter: () => _(true),
+        onMouseLeave: () => _(false),
         onClick: () => {
           if (!__OVERLAY__ && (null != j && clearTimeout(j), C(setTimeout(M, 500)), R(N + 1), 15 === N)) {
             M();
-            let e = !a.K.get(P.wli);
-            a.K.set(P.wli, e), e && a.K.set(w.O5, true), e ? (0, h.GN)("discodo") : (0, h.GN)("user_leave"), v(true), setTimeout(() => {
+            let e = !a.K.get(I.wli);
+            a.K.set(I.wli, e), e && a.K.set(w.O5, true), e ? (0, h.GN)("discodo") : (0, h.GN)("user_leave"), v(true), setTimeout(() => {
               v(false)
             }, 1e3)
           }
@@ -111,9 +111,9 @@ function R(e) {
           pathname: m,
           state: {
             analyticsSource: {
-              page: P.ZY5.GUILD_CHANNEL,
-              section: P.jXE.NAVIGATION,
-              object: P.qAy.BUTTON_HOME
+              page: I.ZY5.GUILD_CHANNEL,
+              section: I.jXE.NAVIGATION,
+              object: I.qAy.BUTTON_HOME
             }
           }
         },
@@ -138,7 +138,7 @@ function R(e) {
       children: (0, r.jsxs)(x.H, {
         children: [(0, r.jsx)(E.Z, {
           selected: o,
-          hovered: _,
+          hovered: O,
           className: T.pill
         }), (0, r.jsx)(S.Z, {
           color: s.ua7.Colors.PRIMARY,

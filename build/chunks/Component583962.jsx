@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 583962, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   PD: () => A,
@@ -79,7 +79,7 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
     } = e, v = (0, y.Jh)(t.id), T = (0, b.Z)(t.id), A = (0, y.FZ)(v), R = null == A, L = null != A ? A : v, M = (0, c.e7)([C.Z], () => {
       var e;
       return null != (e = C.Z.getCountForGuild(t.id)) ? e : 0
-    }), k = (0, c.e7)([_.Z], () => _.Z.can(x.Plq.MANAGE_GUILD, t));
+    }), k = (0, c.e7)([O.Z], () => O.Z.can(x.Plq.MANAGE_GUILD, t));
     i.useEffect(() => {
       M !== T && (0, j.v)(t.id, T)
     }, [t.id, M, T]);
@@ -97,17 +97,17 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
         config: D
       }), "respect-motion-settings", [M, T, G, U]),
       V = t.premiumTier < L && M >= x.oCV[L],
-      H = (0, E.Z)(t, h.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY),
-      F = I.intl.formatToPlainString(I.t["2oNfMT"], {
+      F = (0, E.Z)(t, h.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY),
+      H = P.intl.formatToPlainString(P.t["2oNfMT"], {
         levelName: (0, y.e9)(L)
       }),
-      z = I.intl.format(I.t.dhKnYm, {
+      z = P.intl.format(P.t.dhKnYm, {
         numBoosts: T,
         numTotal: x.oCV[L]
       });
-    R && (F = (0, y.e9)(L), z = I.intl.format(I.t.B2byER, {
+    R && (H = (0, y.e9)(L), z = P.intl.format(P.t.B2byER, {
       numBoosts: T
-    })), F = F.toLocaleLowerCase();
+    })), H = H.toLocaleLowerCase();
     let W = (0, s.JA)("boosts-".concat(t.id)),
       K = i.useRef(null),
       [Y, q] = (0, g.US)(l),
@@ -126,7 +126,7 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
         },
         onClick: () => {
           var t, n;
-          null == e || null == (t = e.onClick) || t.call(e), null == i || null == (n = i.onClick) || n.call(i), H()
+          null == e || null == (t = e.onClick) || t.call(e), null == i || null == (n = i.onClick) || n.call(i), F()
         },
         className: o()(N.container, {
           [N.containerWithMargin]: d
@@ -152,7 +152,7 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
               color: "none",
               variant: "text-sm/medium",
               lineClamp: 1,
-              children: F
+              children: H
             })
           }), (0, r.jsxs)("div", {
             className: N.progressFraction,
@@ -162,11 +162,11 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
               className: N.progressText,
               lineClamp: 1,
               children: z
-            }), (0, r.jsx)(O.Z, {
+            }), (0, r.jsx)(_.Z, {
               className: N.count,
               height: 16,
               width: 16,
-              direction: O.Z.Directions.RIGHT
+              direction: _.Z.Directions.RIGHT
             })]
           })]
         }), (0, r.jsxs)("div", {
@@ -177,7 +177,7 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
             className: N.progressBar,
             style: B
           }), R ? (0, r.jsx)("span", {
-            "aria-label": I.intl.string(I.t["7iL1q6"]),
+            "aria-label": P.intl.string(P.t["7iL1q6"]),
             role: "img",
             className: N.tadaIcon,
             children: "\uD83C\uDF89"
@@ -186,9 +186,9 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
       }));
     return (0, r.jsx)("li", {
       children: (0, r.jsx)(p.ua7, {
-        text: V ? I.intl.formatToPlainString(P.default["9CtPjo"], {
+        text: V ? P.intl.formatToPlainString(I.default["9CtPjo"], {
           perk: (0, y.nW)(L)
-        }) : R ? I.intl.string(I.t["Y+V9go"]) : I.intl.formatToPlainString(I.t.UyDKl5, {
+        }) : R ? P.intl.string(P.t["Y+V9go"]) : P.intl.formatToPlainString(P.t.UyDKl5, {
           levelName: (0, y.nW)(L)
         }),
         position: "top",

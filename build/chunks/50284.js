@@ -1,4 +1,4 @@
-/** Chunk was on 31253 **/
+/** Chunk was on 11868 **/
 /** chunk id: 50284, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -18,18 +18,18 @@ async function I(e, t) {
   let n = u.default.getCurrentUser();
   if (null == n) return;
   let i = c.Z.getMessages(e),
-    I = i.toArray().filter(e => 0 > _.default.compare(e.id, t)).sort((e, t) => _.default.compare(e.id, t.id)).reverse()[0],
-    T = null == I ? _.default.atPreviousMillisecond(t) : I.id,
+    I = i.toArray().filter(e => 0 > d.default.compare(e.id, t)).sort((e, t) => d.default.compare(e.id, t.id)).reverse()[0],
+    T = null == I ? d.default.atPreviousMillisecond(t) : I.id,
     O = 0;
   i.forAll(e => {
-    _.default.compare(e.id, T) > 0 && (0, s.Ex)(e, n) && O++
+    d.default.compare(e.id, T) > 0 && (0, s.Ex)(e, n) && O++
   });
-  let N = a.Z.getChannel(e);
-  null != N && N.isThread() && (N.isArchivedThread() && await o.Z.unarchiveThread(N, false), l.Z.hasJoined(e) || await o.Z.joinThread(N, "Mark Unread")), E.log("Marking unread", {
+  let p = o.Z.getChannel(e);
+  null != p && p.isThread() && (p.isArchivedThread() && await a.Z.unarchiveThread(p, false), l.Z.hasJoined(e) || await a.Z.joinThread(p, "Mark Unread")), E.log("Marking unread", {
     channelId: e,
     messageId: t
   }), r.tn.post({
-    url: d.ANM.MESSAGE_ACK(e, T),
+    url: _.ANM.MESSAGE_ACK(e, T),
     body: {
       manual: true,
       mention_count: O

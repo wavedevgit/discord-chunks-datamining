@@ -1,5 +1,6 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 31930 **/
 /** chunk id: 630016, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.r(module.exports = {
   standardSidebarView: "standardSidebarView__23e6b",
   withUpsell: "withUpsell__23e6b",

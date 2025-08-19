@@ -1,8 +1,8 @@
-/** Chunk was on 4756 **/
+/** Chunk was on 31930 **/
 /** chunk id: 192635, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,7 +12,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk742795 = require("./742795.js"),
   Chunk200289 = require("./200289.js");
 
-function u(e) {
+function c(e) {
   let {
     Icon: t,
     className: n

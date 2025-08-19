@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 940777, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -78,18 +78,18 @@ function R() {
     B = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(G)),
     V = (0, Chunk905423.Z)(e => e.guildId) === Chunk981631.I_8,
     {
-      badge: H,
-      unread: F
+      badge: F,
+      unread: H
     } = (0, Chunk919755.Z)(U),
     z = function(e) {
       let t = (0, s.e7)([v.Z], () => v.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
-        r = (0, s.e7)([O.Z], () => {
+        r = (0, s.e7)([_.Z], () => {
           if (!n) returnfalse;
-          let t = O.Z.getCurrentUserActiveStream();
+          let t = _.Z.getCurrentUserActiveStream();
           return null != t && null != e[t.channelId]
         }),
-        i = (0, s.e7)([O.Z], () => O.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
+        i = (0, s.e7)([_.Z], () => _.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
         l = (0, s.e7)([j.Z], () => n && null != t && j.Z.hasVideo(t), [n, t]),
         o = (0, s.Wu)([p.ZP], () => C.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
         a = (0, s.e7)([p.ZP], () => Array.from(p.ZP.getSelfEmbeddedActivities().values()).some(t => {
@@ -112,7 +112,7 @@ function R() {
         activity: g
       })
     }(U),
-    W = H > 0 ? (0, Chunk593364.N)(H) : null,
+    W = F > 0 ? (0, Chunk593364.N)(F) : null,
     K = Chunk647438.useCallback(() => {
       D()
     }, [D]);
@@ -120,7 +120,7 @@ function R() {
     children: [(0, Chunk951288.jsx)(Chunk276952.Z, {
       selected: V,
       hovered: L,
-      unread: F && !k,
+      unread: H && !k,
       className: Chunk499951.pill
     }), (0, Chunk951288.jsx)(Chunk603274.Z, {
       onShow: K,
@@ -132,7 +132,7 @@ function R() {
           children: (0, Chunk951288.jsx)(Chunk481060.LYs, (e = T({}, Chunk120356), t = t = {
             ariaLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t["/uzRsr"], {
               guildName: Chunk388032.intl.string(Chunk388032.t.wMWycn),
-              mentions: H
+              mentions: F
             }),
             "aria-selected": V,
             to: {

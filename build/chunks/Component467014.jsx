@@ -1,4 +1,4 @@
-/** Chunk was on 78079 **/
+/** Chunk was on 12630 **/
 /** chunk id: 467014, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -19,7 +19,7 @@ function u(A) {
   let {
     userId: e,
     guildId: t
-  } = A, u = (0, l.e7)([a.ZP], () => a.ZP.getGuildSidebarState(t), [t]), {
+  } = A, u = (0, l.e7)([s.ZP], () => s.ZP.getGuildSidebarState(t), [t]), {
     messagesCount: h,
     linksCount: d,
     mediaCount: E
@@ -28,7 +28,7 @@ function u(A) {
     let n = (0, o.Ow)(e, A, {
       include_nsfw: true
     });
-    await (0, s.r)(t, e, u.baseChannelId, {
+    await (0, a.r)(t, e, u.baseChannelId, {
       modViewPanel: c.k.MESSAGE_HISTORY,
       additionalSearchQuery: n
     })

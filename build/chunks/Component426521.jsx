@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 426521, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => G
@@ -153,7 +153,7 @@ let U = Chunk647438.memo(function(e) {
             })
           } else await (0, d.Z)(r)
         }
-        _.default.track(w.rMx.NOTIFICATION_CENTER_ACTION, {
+        O.default.track(w.rMx.NOTIFICATION_CENTER_ACTION, {
           action_type: j.ud.CLICKED,
           notification_center_id: l.id,
           item_type: l.type,
@@ -161,9 +161,9 @@ let U = Chunk647438.memo(function(e) {
         })
       }
     }, [l, f, u]), m = null;
-    l.type === j.O7.INCOMING_FRIEND_REQUESTS && null != l.other_user ? m = (0, r.jsx)(P.Z, {
+    l.type === j.O7.INCOMING_FRIEND_REQUESTS && null != l.other_user ? m = (0, r.jsx)(I.Z, {
       userId: l.other_user.id
-    }) : l.type === j.O7.INCOMING_GAME_FRIEND_REQUESTS && null != l.other_user && (m = (0, r.jsx)(P.Z, {
+    }) : l.type === j.O7.INCOMING_GAME_FRIEND_REQUESTS && null != l.other_user && (m = (0, r.jsx)(I.Z, {
       userId: l.other_user.id,
       applicationId: l.applicationId
     }));
@@ -194,7 +194,7 @@ let U = Chunk647438.memo(function(e) {
         onClick: g,
         children: [f ? null : (0, r.jsx)("div", {
           className: T.unread
-        }), (0, r.jsx)(I.U, {
+        }), (0, r.jsx)(P.U, {
           item: l
         }), (0, r.jsxs)("div", {
           className: T.body,
@@ -211,7 +211,7 @@ let U = Chunk647438.memo(function(e) {
           }) : null, (0, r.jsx)(o.Text, {
             variant: "text-xs/medium",
             color: f ? "text-muted" : "header-secondary",
-            children: (0, C.a3)(O.default.extractTimestamp(l.id))
+            children: (0, C.a3)(_.default.extractTimestamp(l.id))
           }), m]
         })]
       }), b ? null : (0, r.jsx)(N.z, {

@@ -1,9 +1,9 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 906817, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   EM: () => m,
   WW: () => b,
-  ZP: () => _
+  ZP: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -53,14 +53,14 @@ function b(e, t) {
     }
   }
 }
-let _ = Chunk647438.memo(function(e) {
+let O = Chunk647438.memo(function(e) {
   let {
     sectionIndex: t,
     guild: n,
     guildChannels: m,
     guildChannelsVersion: b,
-    selectedChannelId: _,
-    disableManageChannels: O
+    selectedChannelId: O,
+    disableManageChannels: _
   } = e, {
     isFavoritesPerk: y
   } = (0, a.z)("ChannelListSection"), v = i.useCallback(() => {
@@ -68,8 +68,8 @@ let _ = Chunk647438.memo(function(e) {
     if (null == e) return;
     let t = null,
       r = e.getShownChannelAndThreadIds();
-    null != _ && r.includes(_) && (t = (0, s.KY)(m)), (0, s.Uo)(n.id, r, t)
-  }, [n.id, _, m, b]), {
+    null != O && r.includes(O) && (t = (0, s.KY)(m)), (0, s.Uo)(n.id, r, t)
+  }, [n.id, O, m, b]), {
     density: j
   } = (0, l.TCT)(), C = "compact" === j ? 8 : p.$k;
   switch (t) {
@@ -115,7 +115,7 @@ let _ = Chunk647438.memo(function(e) {
       return (0, r.jsx)(d.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: O,
+        disableManageChannels: _,
         children: (0, r.jsx)(c.Z, {
           inlineSpecs: p.MF,
           arrowAlignment: o.cy.TOP,
@@ -130,7 +130,7 @@ let _ = Chunk647438.memo(function(e) {
       return (0, r.jsx)(d.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: O
+        disableManageChannels: _
       })
     }
   }

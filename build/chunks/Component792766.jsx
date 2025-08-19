@@ -17,7 +17,7 @@ let u = e => {
     onlineCount: n
   } = e;
   if (null == t) return null;
-  let u = s.Qs(t),
+  let u = o.Qs(t),
     {
       name: d,
       description: h
@@ -27,7 +27,7 @@ let u = e => {
       variant: "heading-md/normal",
       color: "header-muted",
       className: c.alignStart,
-      children: o.intl.string(o.t.Eabu19)
+      children: s.intl.string(s.t.Eabu19)
     }), (0, r.jsxs)("div", {
       className: c.guild,
       children: [(0, r.jsx)(l.ZP, {
@@ -50,7 +50,7 @@ let u = e => {
             className: c.dot
           }), null != n && n > 0 ? (0, r.jsx)(i.Text, {
             variant: "text-sm/normal",
-            children: o.intl.format(o.t["LC+S+v"], {
+            children: s.intl.format(s.t["LC+S+v"], {
               membersOnline: n
             })
           }) : null]

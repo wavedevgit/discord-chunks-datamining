@@ -1,13 +1,13 @@
-/** Chunk was on 31253 **/
+/** Chunk was on 11868 **/
 /** chunk id: 847033, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P,
-  m: () => g
+  Z: () => C,
+  m: () => P
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk399606 = require("./399606.js"),
   Chunk704215 = require("./704215.js"),
   Chunk367907 = require("./367907.js"),
@@ -25,30 +25,30 @@ var Chunk951288 = require("./951288.js"),
   Chunk333866 = require("./333866.js"),
   Chunk629481 = require("./629481.js"),
   Chunk981631 = require("./981631.js");
-let m = 12633 == require.j ? Chunk647438.createContext(true) : null;
+let g = Chunk647438.createContext(true);
 
-function g() {
-  let e = Chunk647438.useContext(m);
-  return o()(null != module, "must use useGuildShopDisplayContext within a GuildShopDisplayContextProvider"), module
+function P() {
+  let e = Chunk647438.useContext(g);
+  return a()(null != module, "must use useGuildShopDisplayContext within a GuildShopDisplayContextProvider"), module
 }
 
-function P(e) {
+function C(e) {
   var t;
   let {
     children: n,
     initialTab: l,
-    guildId: o
-  } = e, g = (0, a.e7)([O.Z], () => O.Z.getGuild(o)), P = (0, a.e7)([E.Z], () => E.Z.isViewingServerShop(o)), D = (0, p.g)(g, "guild_shop_page"), b = (0, S.RF)(o, "guild_shop_page"), y = (null == g ? true : g.features.has(C.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === true, h = (0, d.mY)(null == g ? true : g.id), U = null == (t = (0, _.YB)(o)) ? true : t.server_shop_tab_order, M = [], k = R.y.GUILD_SHOP_FULL_PREVIEW;
-  P || y && h ? (M.push(U === f.a3.PRODUCTS_FIRST ? R.y.GUILD_PRODUCTS : R.y.GUILD_ROLE_SUBSCRIPTIONS), M.push(U === f.a3.PRODUCTS_FIRST ? R.y.GUILD_ROLE_SUBSCRIPTIONS : R.y.GUILD_PRODUCTS), k = M[0]) : y && !h ? (M.push(R.y.GUILD_PRODUCTS), k = R.y.GUILD_PRODUCTS) : !y && h && (M.push(R.y.GUILD_ROLE_SUBSCRIPTIONS), k = R.y.GUILD_ROLE_SUBSCRIPTIONS, D && M.push(R.y.GUILD_PRODUCTS_PREVIEW)), l = null != l ? l : k;
-  let [L, Z] = i.useState(l), j = D && !(h && b) || L === R.y.GUILD_PRODUCTS_PREVIEW;
+    guildId: a
+  } = e, P = (0, o.e7)([O.Z], () => O.Z.getGuild(a)), C = (0, o.e7)([E.Z], () => E.Z.isViewingServerShop(a)), D = (0, f.g)(P, "guild_shop_page"), y = (0, N.RF)(a, "guild_shop_page"), h = (null == P ? true : P.features.has(A.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === true, b = (0, _.mY)(null == P ? true : P.id), U = null == (t = (0, d.YB)(a)) ? true : t.server_shop_tab_order, M = [], v = S.y.GUILD_SHOP_FULL_PREVIEW;
+  C || h && b ? (M.push(U === m.a3.PRODUCTS_FIRST ? S.y.GUILD_PRODUCTS : S.y.GUILD_ROLE_SUBSCRIPTIONS), M.push(U === m.a3.PRODUCTS_FIRST ? S.y.GUILD_ROLE_SUBSCRIPTIONS : S.y.GUILD_PRODUCTS), v = M[0]) : h && !b ? (M.push(S.y.GUILD_PRODUCTS), v = S.y.GUILD_PRODUCTS) : !h && b && (M.push(S.y.GUILD_ROLE_SUBSCRIPTIONS), v = S.y.GUILD_ROLE_SUBSCRIPTIONS, D && M.push(S.y.GUILD_PRODUCTS_PREVIEW)), l = null != l ? l : v;
+  let [Z, L] = i.useState(l), k = D && !(b && y) || Z === S.y.GUILD_PRODUCTS_PREVIEW;
   return i.useEffect(() => {
-    Z(l)
-  }, [l]), (0, r.jsx)(m.Provider, {
+    L(l)
+  }, [l]), (0, r.jsx)(g.Provider, {
     value: {
-      selectedTab: L,
-      setSelectedTab: Z,
+      selectedTab: Z,
+      setSelectedTab: L,
       categoryTabs: M,
-      isPhantomPreview: j,
+      isPhantomPreview: k,
       handlePreviewDismiss: e => {
         (0, u.Q3)(c.z.SERVER_SHOP_PHANTOM_PREVIEW);
         let t = function(e) {
@@ -68,13 +68,13 @@ function P(e) {
             })
           }
           return e
-        }({}, (0, s.hH)(o));
-        if (L === R.y.GUILD_PRODUCTS_PREVIEW) e.stopPropagation(), Z(R.y.GUILD_ROLE_SUBSCRIPTIONS), t.action_taken = A.mz.DISMISS_TAB_PREVIEW;
+        }({}, (0, s.hH)(a));
+        if (Z === S.y.GUILD_PRODUCTS_PREVIEW) e.stopPropagation(), L(S.y.GUILD_ROLE_SUBSCRIPTIONS), t.action_taken = R.mz.DISMISS_TAB_PREVIEW;
         else {
           var n;
-          (0, I.dL)(C.Z5c.CHANNEL(o, null == (n = T.ZP.getDefaultChannel(o)) ? true : n.id)), t.action_taken = A.mz.DISMISS_FULL_PREVIEW
+          (0, I.dL)(A.Z5c.CHANNEL(a, null == (n = T.ZP.getDefaultChannel(a)) ? true : n.id)), t.action_taken = R.mz.DISMISS_FULL_PREVIEW
         }
-        N.default.track(C.rMx.GUILD_SHOP_PREVIEW_CLICK, t)
+        p.default.track(A.rMx.GUILD_SHOP_PREVIEW_CLICK, t)
       }
     },
     children: n

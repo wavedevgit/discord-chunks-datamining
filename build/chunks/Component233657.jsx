@@ -1,7 +1,7 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 233657, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -50,12 +50,12 @@ function b(e, t) {
   }), e
 }
 
-function _(e) {
+function O(e) {
   let {
     guild: t,
-    selected: _
+    selected: O
   } = e, {
-    hasUnread: O,
+    hasUnread: _,
     mentionCount: y
   } = (0, i.cj)([u.ZP], () => ({
     hasUnread: u.ZP.hasUnread(t.id, f.W.GUILD_EVENT),
@@ -83,7 +83,7 @@ function _(e) {
       className: e
     }),
     text: E,
-    selected: _,
+    selected: O,
     onClick: j,
     onContextMenu: e => {
       (0, a.jW)(e, async () => {
@@ -95,7 +95,7 @@ function _(e) {
         }))
       })
     },
-    showUnread: O && !v,
+    showUnread: _ && !v,
     trailing: !v && y > 0 ? (0, r.jsx)(o.mAB, {
       className: g.numberBadge,
       disableColor: true,

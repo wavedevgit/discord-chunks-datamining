@@ -109,7 +109,7 @@ function ed(e) {
       group: er.v0.EVENTS,
       render: () => (0, n.jsx)(E.Z, {})
     }];
-    return b.Z.isDeveloper && (e.push({
+    return v.Z.isDeveloper && (e.push({
       id: "shop",
       name: "Shop",
       group: er.v0.BILLING,
@@ -213,7 +213,7 @@ function ed(e) {
       name: "Widgets",
       group: er.v0.USERS,
       render: () => (0, n.jsx)(ea.Z, {})
-    }), b.Z.isDeveloper && (e.push({
+    }), v.Z.isDeveloper && (e.push({
       id: "content_inventory",
       name: "Content Inventory",
       group: er.v0.USERS,
@@ -262,7 +262,7 @@ function ed(e) {
       id: "gifting_intent",
       name: "Gifting Intent",
       group: er.v0.PREMIUM,
-      render: () => (0, n.jsx)(R.Z, {})
+      render: () => (0, n.jsx)(k.Z, {})
     }), e.push({
       id: "voice_filters",
       name: "Voice Filters",
@@ -277,7 +277,7 @@ function ed(e) {
       id: "skill_trees",
       name: "Skill Trees",
       group: er.v0.GUILDS,
-      render: () => (0, n.jsx)(k.Z, {})
+      render: () => (0, n.jsx)(R.Z, {})
     }), e.push({
       id: "language",
       name: "Language",
@@ -311,7 +311,7 @@ function ed(e) {
           icon: c.rgF,
           tooltip: "Pop Out",
           onClick: () => {
-            (0, v.bA)(el.KJ3.DEVTOOLS_POPOUT, () => (0, n.jsx)(p.Z, {
+            (0, b.bA)(el.KJ3.DEVTOOLS_POPOUT, () => (0, n.jsx)(p.Z, {
               windowKey: el.KJ3.DEVTOOLS_POPOUT,
               title: "DevTools",
               withTitleBar: true,

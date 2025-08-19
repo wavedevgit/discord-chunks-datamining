@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 449932, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -55,7 +55,7 @@ function v(e) {
         src: null != o ? o : n.user.getAvatarURL(t, 16),
         size: s.EFr.SIZE_16,
         className: l()(i, y.partyAvatar),
-        "aria-label": null != (a = n.nick) ? a : _.ZP.getName(n.user)
+        "aria-label": null != (a = n.nick) ? a : O.ZP.getName(n.user)
       }, e))
     }
   })
@@ -89,24 +89,24 @@ let C = e => {
     members: i,
     embeddedApp: l,
     onAction: s
-  } = e, f = null != l, b = f ? Array.from(l.embeddedActivity.userIds) : [], _ = (0, o.e7)([m.default, g.default], () => {
+  } = e, f = null != l, b = f ? Array.from(l.embeddedActivity.userIds) : [], O = (0, o.e7)([m.default, g.default], () => {
     if (f) return m.default.getUser(b[0]);
     if (null != i) {
       var e, t;
       return i.length <= 0 ? null : null != (t = null == (e = i.find(e => e.user.id !== g.default.getId())) ? true : e.user) ? t : i[0].user
     }
   });
-  if (null == _) return null;
+  if (null == O) return null;
   let v = f || (0, u.Z)(n),
     C = (0, h.vd)(t.type);
   return (0, r.jsxs)("div", {
     className: y.activity,
     children: [(0, r.jsx)("div", {
       className: y.channelActivityContainer,
-      children: v ? (0, r.jsx)(O.Z, {
+      children: v ? (0, r.jsx)(_.Z, {
         activity: n,
         embeddedApp: l,
-        user: _,
+        user: O,
         channel: t,
         sortedVoiceStates: i,
         onOpenSpotifyTrack: C ? p.aG : true,
@@ -115,7 +115,7 @@ let C = e => {
       }) : (0, r.jsx)(c.Z, {
         type: c.P.VOICE_CHANNEL,
         activity: n,
-        user: _,
+        user: O,
         guildId: t.getGuildId(),
         channelId: t.id,
         renderHeaderAccessory: null != i ? () => (0, r.jsx)(j, {
@@ -129,7 +129,7 @@ let C = e => {
         type: c.P.VOICE_CHANNEL,
         activity: n,
         embeddedActivity: null == l ? true : l.embeddedActivity,
-        user: _,
+        user: O,
         guildId: t.getGuildId(),
         channelId: t.id,
         color: a.zx.Colors.PRIMARY,

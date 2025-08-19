@@ -1,4 +1,4 @@
-/** Chunk was on 78079 **/
+/** Chunk was on 12630 **/
 /** chunk id: 376923, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   LD: () => B,
@@ -34,35 +34,35 @@ var d = ((n = {})[n.NO_GATE = 0] = "NO_GATE", n[n.NO_AGREEMENT = 1] = "NO_AGREEM
 function E(A, e) {
   var t, n;
   let r = (0, l.e7)([g.default], () => g.default.getUser(A), [A]),
-    a = (0, l.e7)([s.ZP], () => s.ZP.getMember(e, A), [e, A]),
+    s = (0, l.e7)([a.ZP], () => a.ZP.getMember(e, A), [e, A]),
     f = (0, l.e7)([o.Z], () => o.Z.getGuild(e), [e]);
-  return (0, i.Dc)(f) ? null == r || null == a || null == f ? 1 : (0, c.yE)(null != (t = a.flags) ? t : 0, v.q.BYPASSES_VERIFICATION) || (0, c.yE)(null != (n = a.flags) ? n : 0, v.q.COMPLETED_ONBOARDING) || null != a.isPending && !a.isPending ? 2 : 1 : 0
+  return (0, i.Dc)(f) ? null == r || null == s || null == f ? 1 : (0, c.yE)(null != (t = s.flags) ? t : 0, v.q.BYPASSES_VERIFICATION) || (0, c.yE)(null != (n = s.flags) ? n : 0, v.q.COMPLETED_ONBOARDING) || null != s.isPending && !s.isPending ? 2 : 1 : 0
 }
 
 function C(A, e) {
   var t;
   let n = (0, l.e7)([g.default], () => g.default.getUser(A), [A]),
-    r = (0, l.e7)([s.ZP], () => s.ZP.getMember(e, A), [e, A]);
+    r = (0, l.e7)([a.ZP], () => a.ZP.getMember(e, A), [e, A]);
   if (null == n || null == r) returnfalse;
   let i = (0, c.yE)(null != (t = r.flags) ? t : 0, v.q.BYPASSES_VERIFICATION),
-    a = (null == n ? true : n.isPhoneVerified()) || (null == n ? true : n.isStaff()),
+    s = (null == n ? true : n.isPhoneVerified()) || (null == n ? true : n.isStaff()),
     o = (null == r ? true : r.joinedAt) != null;
-  return n.verified || a || o || i
+  return n.verified || s || o || i
 }
 
 function B(A) {
-  let e = (0, l.e7)([a.default], () => a.default.locale);
+  let e = (0, l.e7)([s.default], () => s.default.locale);
   return r.useMemo(() => new Date(f.default.extractTimestamp(A)).toLocaleDateString(e, u), [A, e])
 }
 
 function w(A) {
-  let e = (0, l.e7)([a.default], () => a.default.locale);
+  let e = (0, l.e7)([s.default], () => s.default.locale);
   return r.useMemo(() => new Date(f.default.extractTimestamp(A)).toLocaleDateString(e, h), [A, e])
 }
 
 function D(A, e) {
-  let t = (0, l.e7)([a.default], () => a.default.locale),
-    n = (0, l.e7)([s.ZP], () => s.ZP.getMember(e, A), [e, A]),
+  let t = (0, l.e7)([s.default], () => s.default.locale),
+    n = (0, l.e7)([a.ZP], () => a.ZP.getMember(e, A), [e, A]),
     i = null == n ? true : n.joinedAt;
   return r.useMemo(() => null == i ? "" : new Date(i).toLocaleDateString(t, u), [i, t])
 }

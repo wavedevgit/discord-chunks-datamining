@@ -1,5 +1,6 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 31930 **/
 /** chunk id: 400963, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   premiumTrialBadge: "premiumTrialBadge_e4ef22",
   backgroundGradient: "backgroundGradient_e4ef22",

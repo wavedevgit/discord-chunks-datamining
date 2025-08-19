@@ -1,4 +1,4 @@
-/** Chunk was on 78079 **/
+/** Chunk was on 12630 **/
 /** chunk id: 477718, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
-  s = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk480137 = require("./480137.js"),
@@ -33,11 +33,11 @@ function Q(A) {
   var e, t;
   let {
     log: l,
-    member: a,
+    member: s,
     guild: c
   } = A, {
     analyticsLocations: h
-  } = (0, f.ZP)(), w = d.nm(l), M = d.QM(l), O = null == (e = d.V$(p.zUn.REASON, l)) ? true : e.newValue, Q = d.J5(l), P = (0, v.LJ)(l.id), j = (0, o.e7)([B.ZP], () => null != l.userId ? B.ZP.getMember(a.guildId, l.userId) : null, [a.guildId, l.userId]), V = (0, C.X7)(null == j ? true : j.guildId, null == j ? true : j.userId, null != (t = null == j ? true : j.colorStrings) ? t : null), m = r.useCallback(A => e => {
+  } = (0, f.ZP)(), w = d.nm(l), M = d.QM(l), O = null == (e = d.V$(p.zUn.REASON, l)) ? true : e.newValue, Q = d.J5(l), P = (0, v.LJ)(l.id), j = (0, o.e7)([B.ZP], () => null != l.userId ? B.ZP.getMember(s.guildId, l.userId) : null, [s.guildId, l.userId]), V = (0, C.X7)(null == j ? true : j.guildId, null == j ? true : j.userId, null != (t = null == j ? true : j.colorStrings) ? t : null), m = r.useCallback(A => e => {
     e.preventDefault(), e.stopPropagation(), null != A && (0, u.RE)(A, h)
   }, [h]), T = r.useCallback(() => null == l.user ? null : (0, n.jsx)(g.ua7, {
     text: I.intl.string(I.t.mvsi9v),
@@ -57,14 +57,14 @@ function Q(A) {
           variant: "text-sm/medium",
           tag: "span",
           children: ["@", (0, n.jsx)(g.PUh, {
-            name: D.ZP.getName(a.guildId, null, l.user),
+            name: D.ZP.getName(s.guildId, null, l.user),
             colorString: null != (e = null == j ? true : j.colorString) ? e : null,
             colorStrings: V
           })]
         })
       })
     }
-  }), [m, l.user, a.guildId, j, V])();
+  }), [m, l.user, s.guildId, j, V])();
   return (0, n.jsxs)("div", {
     className: i()(b.modInfoItem, H.auditLogItem),
     children: [(0, n.jsxs)("div", {
@@ -78,7 +78,7 @@ function Q(A) {
         }), null != M && (0, n.jsxs)(g.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: ["(", "string" == typeof M ? M : s()(M).fromNow(), ")"]
+          children: ["(", "string" == typeof M ? M : a()(M).fromNow(), ")"]
         })]
       }), (0, n.jsx)("div", {
         className: H.auditLogItemDate,

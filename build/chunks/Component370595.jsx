@@ -1,4 +1,4 @@
-/** Chunk was on 78079 **/
+/** Chunk was on 12630 **/
 /** chunk id: 370595, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -17,11 +17,11 @@ function o(A) {
     backPanel: t = l.k.INFO
   } = A;
   return (0, n.jsxs)("div", {
-    className: s.header,
+    className: a.header,
     children: [(0, n.jsx)("div", {
-      className: s.headerTitle,
+      className: a.headerTitle,
       children: (0, n.jsxs)(r.P3F, {
-        className: a.backButton,
+        className: s.backButton,
         onClick: () => null == e ? true : e(t),
         children: [(0, n.jsx)(r.whL, {
           size: "custom",
@@ -34,8 +34,8 @@ function o(A) {
       })
     }), (0, n.jsx)(r.M2$, {
       shortcut: "esc",
-      keyClassName: a.keyComboInner,
-      className: a.keyComboContainer
+      keyClassName: s.keyComboInner,
+      className: s.keyComboContainer
     })]
   })
 }

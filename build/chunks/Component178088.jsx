@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 178088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => w
@@ -44,37 +44,37 @@ function w(e) {
     dialogClassName: D
   } = e, {
     analyticsLocations: L
-  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [M, k] = i.useState(false), [U, G] = [(0, s.e7)([O.Z], () => {
+  } = (0, p.ZP)(d.Z.NOTIFICATION_CENTER), [M, k] = i.useState(false), [U, G] = [(0, s.e7)([_.Z], () => {
     var e, t;
-    return null != (t = null == (e = O.Z.settings.inbox) ? true : e.currentTab) ? t : c.X.UNREADS
+    return null != (t = null == (e = _.Z.settings.inbox) ? true : e.currentTab) ? t : c.X.UNREADS
   }), i.useCallback(e => {
-    _.hW.updateAsync("inbox", t => {
+    O.hW.updateAsync("inbox", t => {
       if (t.currentTab === e) returnfalse;
       t.currentTab = e
-    }, _.fy.FREQUENT_USER_ACTION)
+    }, O.fy.FREQUENT_USER_ACTION)
   }, [])], {
     showTutorial: B,
     setSeenTutorial: V
   } = function(e) {
-    let t = (0, s.e7)([O.Z], () => {
+    let t = (0, s.e7)([_.Z], () => {
         var e, t;
-        return null != (t = null == (e = O.Z.settings.inbox) ? true : e.viewedTutorial) && t
+        return null != (t = null == (e = _.Z.settings.inbox) ? true : e.viewedTutorial) && t
       }),
       n = i.useCallback(() => {
-        _.hW.updateAsync("inbox", e => {
+        O.hW.updateAsync("inbox", e => {
           e.viewedTutorial = true
-        }, _.fy.INFREQUENT_USER_ACTION)
+        }, O.fy.INFREQUENT_USER_ACTION)
       }, []);
     return {
       showTutorial: !t && e === c.X.UNREADS,
       setSeenTutorial: n
     }
-  }(U), H = i.useCallback(() => {
+  }(U), F = i.useCallback(() => {
     k(false), M && (null == n || n())
-  }, [n, M]), F = i.useCallback(() => {
+  }, [n, M]), H = i.useCallback(() => {
     k(!M), M ? null == n || n() : null == t || t()
   }, [n, t, M]);
-  i.useEffect(() => (y.S.subscribe(I.CkL.TOGGLE_INBOX, F), () => void y.S.unsubscribe(I.CkL.TOGGLE_INBOX, F)), [F]);
+  i.useEffect(() => (y.S.subscribe(P.CkL.TOGGLE_INBOX, H), () => void y.S.unsubscribe(P.CkL.TOGGLE_INBOX, H)), [H]);
   let {
     enabled: z,
     inInbox: W
@@ -89,8 +89,8 @@ function w(e) {
     U !== c.X.BOOKMARKS || z || W || G(c.X.MENTIONS)
   });
   let q = i.useCallback(e => {
-      e.shiftKey || H()
-    }, [H]),
+      e.shiftKey || F()
+    }, [F]),
     X = (0, b.Us)({
       location: "ForYou"
     });
@@ -103,10 +103,10 @@ function w(e) {
       align: T,
       autoInvert: false,
       shouldShow: M,
-      onRequestClose: H,
+      onRequestClose: F,
       renderPopout: function() {
         return (0, r.jsx)(u.VqE, {
-          "aria-label": P.intl.string(P.t.GSmTKC),
+          "aria-label": I.intl.string(I.t.GSmTKC),
           className: D,
           children: (0, r.jsx)("div", {
             className: o()(N.container, {
@@ -117,19 +117,19 @@ function w(e) {
                 tab: U,
                 setTab: G,
                 badgeState: w,
-                closePopout: H
+                closePopout: F
               }),
               children: U === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : U === c.X.MENTIONS ? (0, r.jsx)(j.Z, {
                 onJump: q
               }) : Y && U === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : z && W && U === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
-                closePopout: H
+                closePopout: F
               }) : U === c.X.SCHEDULED ? (0, r.jsx)(E._, {}) : (0, r.jsx)(a.SV, {
                 fallback: (0, r.jsx)(x.h6, {}),
                 children: (0, r.jsx)(x.ZP, {
                   onJump: q,
                   showTutorial: B,
                   setSeenTutorial: V,
-                  closePopout: H
+                  closePopout: F
                 })
               })
             })
@@ -143,7 +143,7 @@ function w(e) {
         let {
           isShown: n
         } = t;
-        return l(F, n, e, K)
+        return l(H, n, e, K)
       }
     })
   })

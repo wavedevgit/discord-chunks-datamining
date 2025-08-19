@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 474109, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -19,11 +19,11 @@ var Chunk951288 = require("./951288.js"),
 let m = "app-download-item",
   b = "add-server-item";
 
-function _() {
+function O() {
   returnfalse
 }
 
-function O(e) {
+function _(e) {
   var t;
   let n = s.default.getMutableGuildStates();
   return e === h.x8Z.SERVER_DISCOVERY_BADGE && !d.Z.hasViewed(h.x8Z.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? true : t.highImportanceMentionCount) > 0
@@ -54,10 +54,10 @@ let y = (0, Chunk251625.oH)((e, t, n) => ["null", ...t, ...e, b, h.x8Z.E3_SERVER
     }({}, e), i = i = {
       ref: t,
       items: d,
-      isUnread: _,
+      isUnread: O,
       textUnread: g.intl.string(g.t.y2b7CA),
       textMention: g.intl.string(g.t.y2b7CA),
-      isMentioned: O,
+      isMentioned: _,
       animate: f,
       expandedFolders: h
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

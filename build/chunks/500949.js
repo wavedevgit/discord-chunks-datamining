@@ -119,7 +119,7 @@ let B = {
     XYZ_D65: Chunk856308.Z
   },
   z = Object.fromEntries(Object.keys(B).map(e => [e, e]));
-Object.values(B).forEach(e => R.Z.register(e));
+Object.values(B).forEach(e => k.Z.register(e));
 let {
   SemanticColors: G
 } = Chunk521904.V, V = G, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
@@ -166,7 +166,7 @@ function Y(e) {
 }
 
 function J(e) {
-  return (0, k.Z)((0, Z.Z)(e, i.Z), {
+  return (0, R.Z)((0, Z.Z)(e, i.Z), {
     format: "hex"
   })
 }
@@ -233,17 +233,17 @@ function er(e) {
     outputSpace: o,
     space: o,
     progression: e => e ** s
-  }), v = [];
+  }), b = [];
   for (let e = 0; e < m; e++) {
     let t = h(e / m);
-    v.push(t)
+    b.push(t)
   }
-  v.push(c);
+  b.push(c);
   for (let e = 1; e < x; e++) {
     let t = p(1 - e / x);
-    v.push(t)
+    b.push(t)
   }
-  return Object.fromEntries(v.map((e, a) => ["".concat(t, "-").concat(a), e]))
+  return Object.fromEntries(b.map((e, a) => ["".concat(t, "-").concat(a), e]))
 }
 
 function el(e, t, a) {

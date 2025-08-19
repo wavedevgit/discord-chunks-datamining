@@ -1,4 +1,4 @@
-/** Chunk was on 78079 **/
+/** Chunk was on 12630 **/
 /** chunk id: 753042, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -24,7 +24,7 @@ function C(A) {
     member: e
   } = A, t = (0, l.e7)([c.Z], () => c.Z.getGuild(e.guildId), [e.guildId]), C = (0, o.mh)(e.userId, e.guildId), B = (0, o.mV)(e.userId, e.guildId), w = (0, o.LD)(e.userId), D = (0, o.wi)(e.userId, e.guildId);
   return (r.useEffect(() => {
-    (0, s.zO)(e.guildId)
+    (0, a.zO)(e.guildId)
   }, [e.guildId]), null == t) ? null : (0, n.jsx)(i.xJW, {
     title: d.intl.string(d.t["ldCE/v"]),
     titleClassName: E.infoTitle,
@@ -91,9 +91,9 @@ function C(A) {
           children: w
         })
       }), (0, n.jsx)(u._2, {
-        icon: (0, n.jsx)(a.Vj, {
+        icon: (0, n.jsx)(s.Vj, {
           guild: t,
-          size: a.Vj.Sizes.SMOL,
+          size: s.Vj.Sizes.SMOL,
           animate: false,
           className: E.guildIcon
         }),

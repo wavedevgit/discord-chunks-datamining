@@ -1,4 +1,4 @@
-/** Chunk was on 31253 **/
+/** Chunk was on 11868 **/
 /** chunk id: 132144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => I
@@ -20,12 +20,12 @@ let I = e => {
     noticeType: n
   } = e, I = i.useMemo(() => {
     switch (n) {
-      case d.kVF.PREMIUM_TIER_2_TRIAL_ENDING:
+      case _.kVF.PREMIUM_TIER_2_TRIAL_ENDING:
         let e = c.Z.getAlmostExpiringTrialOffers([E.Si.TIER_2]);
         return {
           cooldownDurationMs: (0, s.yg)(e[0])
         };
-      case d.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING:
+      case _.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING:
         let t = c.Z.getAlmostExpiringDiscountOffers([E.Si.TIER_2]);
         return {
           cooldownDurationMs: (0, s.yg)(t[0])
@@ -35,15 +35,15 @@ let I = e => {
           cooldownDurationMs: 1 / 0
         }
     }
-  }, [n]), [T, O] = (0, u.Tt)(t, I, _.R.NOTICE_BAR);
+  }, [n]), [T, O] = (0, u.Tt)(t, I, d.R.NOTICE_BAR);
   if (null == T) return null;
   if (T === l.z.NAGBAR_NOTICE_OFFER_EXPIRING) {
-    if (n === d.kVF.PREMIUM_TIER_2_TRIAL_ENDING) return (0, r.jsx)(a.Z, {
-      dismissCurrentNotice: () => O(_.L.USER_DISMISS),
+    if (n === _.kVF.PREMIUM_TIER_2_TRIAL_ENDING) return (0, r.jsx)(o.Z, {
+      dismissCurrentNotice: () => O(d.L.USER_DISMISS),
       subscriptionTier: E.Si.TIER_2
     });
-    if (n === d.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING) return (0, r.jsx)(o.Z, {
-      dismissCurrentNotice: () => O(_.L.USER_DISMISS),
+    if (n === _.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING) return (0, r.jsx)(a.Z, {
+      dismissCurrentNotice: () => O(d.L.USER_DISMISS),
       subscriptionTier: E.Si.TIER_2
     })
   }

@@ -43,11 +43,11 @@ let b = e => {
     }
   };
   return i.useEffect(() => {
-    n ? (N(true), o.k({
+    n ? (N(true), s.k({
       withAnalyticsToken: true
     }).then(() => N(false)).catch(() => N(false))) : N(false)
   }, [n]), i.useEffect(() => {
-    b || v || s.Z.getExperiments()
+    b || v || o.Z.getExperiments()
   }, [b, v]), i.useEffect(() => {
     let e = async e => {
       var t, n;

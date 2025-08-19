@@ -1,4 +1,4 @@
-/** Chunk was on 78079 **/
+/** Chunk was on 12630 **/
 /** chunk id: 791176, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -28,14 +28,14 @@ function w(A) {
     roleIds: l,
     guild: f,
     specMap: v
-  } = A, u = E.Plq[r], d = null != (t = null == (e = v[u.toString()]) ? true : e.title) ? t : (0, g.wt)(u), w = h._o.has(u), D = (0, a.Wu)([c.Z], () => c.Z.getManyRoles(f.id, l), [f.id, l]);
-  return (0, n.jsx)(s.ua7, {
+  } = A, u = E.Plq[r], d = null != (t = null == (e = v[u.toString()]) ? true : e.title) ? t : (0, g.wt)(u), w = h._o.has(u), D = (0, s.Wu)([c.Z], () => c.Z.getManyRoles(f.id, l), [f.id, l]);
+  return (0, n.jsx)(a.ua7, {
     "aria-label": C.intl.string(C.t["0g8Xd3"]),
     tooltipClassName: B.roleTooltipContainer,
     tooltipContentClassName: B.roleTooltipContentContainer,
     allowOverflow: true,
     text: (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(s.Text, {
+      children: [(0, n.jsx)(a.Text, {
         variant: "text-sm/normal",
         children: w ? C.intl.string(C.t["GEuu/P"]) : C.intl.string(C.t.wgGiCg)
       }), D.map(A => (0, n.jsx)("div", {
@@ -51,18 +51,18 @@ function w(A) {
         onMouseEnter: e,
         onMouseLeave: t
       } = A;
-      return (0, n.jsxs)(s.P3F, {
+      return (0, n.jsxs)(a.P3F, {
         className: i()(B.permissionChiplet, {
           [B.elevatedPermission]: w
         }),
         onMouseEnter: e,
         onMouseLeave: t,
-        children: [w && (0, n.jsx)(s.tQf, {
+        children: [w && (0, n.jsx)(a.tQf, {
           size: "custom",
           width: 16,
           height: 16,
-          color: s.TVs.colors.TEXT_BRAND
-        }), (0, n.jsx)(s.Text, {
+          color: a.TVs.colors.TEXT_BRAND
+        }), (0, n.jsx)(a.Text, {
           variant: "text-xs/medium",
           color: "interactive-normal",
           children: d
@@ -75,11 +75,11 @@ let D = Chunk647438.memo(function(A) {
   let {
     member: e,
     onNavigate: t
-  } = A, l = (0, a.e7)([f.Z], () => f.Z.getGuild(e.guildId), [e.guildId]), o = (0, h.B2)(e.userId, e.guildId, h.Qn), g = (0, h.B2)(e.userId, e.guildId, h.pd), c = Object.keys(o).length, D = Object.keys(g).length, M = r.useMemo(() => null != l ? v.Z.getGuildPermissionSpecMap(l) : null, [l]), p = r.useMemo(() => null != l ? v.Z.generateGuildPermissionSpec(l) : null, [l]), I = r.useMemo(() => {
+  } = A, l = (0, s.e7)([f.Z], () => f.Z.getGuild(e.guildId), [e.guildId]), o = (0, h.B2)(e.userId, e.guildId, h.Qn), g = (0, h.B2)(e.userId, e.guildId, h.pd), c = Object.keys(o).length, D = Object.keys(g).length, M = r.useMemo(() => null != l ? v.Z.getGuildPermissionSpecMap(l) : null, [l]), p = r.useMemo(() => null != l ? v.Z.generateGuildPermissionSpec(l) : null, [l]), I = r.useMemo(() => {
     if (null == l || null == M) return null;
     if (0 === c) return (0, n.jsx)("div", {
       className: i()(B.permissionChiplet, B.noModPerms),
-      children: (0, n.jsx)(s.Text, {
+      children: (0, n.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-feedback-positive",
         children: C.intl.string(C.t.sXhykZ)
@@ -101,23 +101,23 @@ let D = Chunk647438.memo(function(A) {
       })
     }), A
   }, [l, c, o, p, M]);
-  return null == l ? null : (0, n.jsx)(s.xJW, {
+  return null == l ? null : (0, n.jsx)(a.xJW, {
     title: (0, n.jsxs)("div", {
       className: B.headerContainer,
-      children: [(0, n.jsx)(s.Text, {
+      children: [(0, n.jsx)(a.Text, {
         variant: "eyebrow",
         color: "header-secondary",
         children: C.intl.string(C.t.ZCq2nJ)
-      }), (0, n.jsxs)(s.P3F, {
+      }), (0, n.jsxs)(a.P3F, {
         className: B.viewAllPermissions,
         onClick: () => t(d.k.PERMISSIONS),
-        children: [(0, n.jsx)(s.Text, {
+        children: [(0, n.jsx)(a.Text, {
           variant: "eyebrow",
           color: "interactive-normal",
           children: C.intl.format(C.t["0x6aTk"], {
             count: D
           })
-        }), (0, n.jsx)(s.Fbu, {
+        }), (0, n.jsx)(a.Fbu, {
           size: "custom",
           width: 16,
           height: 16

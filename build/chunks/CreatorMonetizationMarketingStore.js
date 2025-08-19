@@ -1,14 +1,14 @@
-/** Chunk was on 31253 **/
+/** Chunk was on 11868 **/
 /** chunk id: 674525, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
 });
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let a = [];
+let o = [];
 class c extends(i = Chunk442837.ZP.Store) {
   getEligibleGuildsForNagActivate() {
-    return a
+    return o
   }
 }(r = "displayName") in c ? Object.defineProperty(c, r, {
   value: "CreatorMonetizationMarketingStore",
@@ -21,6 +21,6 @@ let s = new c(Chunk570140.Z, {
     let {
       eligibleGuilds: t
     } = e;
-    a = t
+    o = t
   }
 })

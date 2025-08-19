@@ -1,4 +1,4 @@
-/** Chunk was on 4756 **/
+/** Chunk was on 31930 **/
 /** chunk id: 58468, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -17,26 +17,26 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let u = {},
-  c = u;
+let c = {},
+  u = c;
 
 function d() {
-  Chunk709054.default.keys(c).forEach(e => {
-    null == o.Z.getChannel(e) && delete c[e]
+  Chunk709054.default.keys(u).forEach(e => {
+    null == o.Z.getChannel(e) && delete u[e]
   })
 }
 class h extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(o.Z), c = null != e ? e : u
+    this.waitFor(o.Z), u = null != e ? e : c
   }
   getState() {
-    return c
+    return u
   }
   getCollapsed() {
-    return c
+    return u
   }
   isCollapsed(e) {
-    return c[e] || false
+    return u[e] || false
   }
 }
 a(h, "displayName", "CollapsedVoiceChannelStore"), a(h, "persistKey", "collapsedChannels");
@@ -47,7 +47,7 @@ let p = new h(Chunk570140.Z, {
     let {
       channelId: t
     } = e;
-    c[t] ? delete c[t] : c[t] = true, c = function(e) {
+    u[t] ? delete u[t] : u[t] = true, u = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -58,6 +58,6 @@ let p = new h(Chunk570140.Z, {
         })
       }
       return e
-    }({}, c)
+    }({}, u)
   }
 })

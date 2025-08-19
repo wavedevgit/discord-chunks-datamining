@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 109446, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -29,10 +29,10 @@ function C(e) {
     channel: t
   } = e, l = (0, a.Wu)([d.Z, g.ZP, h.Z], () => {
     let e = d.Z.getActiveJoinedRelevantThreadsForParent(t.guild_id, t.id);
-    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && h.Z.can(O.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
+    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && h.Z.can(_.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
       let n = g.ZP.lastMessageId(e.id),
         r = g.ZP.lastMessageId(t.id);
-      return _.default.compare(n, r)
+      return O.default.compare(n, r)
     }).reverse().value()
   }), c = t.isForumLikeChannel() ? 5 : 3;
   return i.useEffect(() => {

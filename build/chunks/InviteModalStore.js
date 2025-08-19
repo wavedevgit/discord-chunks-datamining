@@ -1,8 +1,8 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 590965, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
-  Z: () => I
+  Z: () => P
 }), require("./388685.js"), require("./539854.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -19,7 +19,7 @@ var i, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 
-function O(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function y(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -64,8 +64,8 @@ class S extends(i = Chunk442837.ZP.Store) {
     }
   }
 }
-O(S, "displayName", "InviteModalStore");
-let I = new S(Chunk570140.Z, {
+_(S, "displayName", "InviteModalStore");
+let P = new S(Chunk570140.Z, {
   OVERLAY_INITIALIZE: x,
   CONNECTION_OPEN: x,
   CONNECTION_CLOSED: function() {
@@ -86,7 +86,7 @@ let I = new S(Chunk570140.Z, {
         if (null == n) returnfalse;
         if (null != d.Z.getGuild(n.id) && !(0, a.TY)(t)) {
           let e = function(e) {
-            if ((0, a.W6)(e)) return _.oC.ROLE_SUBSCRIPTIONS;
+            if ((0, a.W6)(e)) return O.oC.ROLE_SUBSCRIPTIONS;
             let {
               channel: t
             } = e;

@@ -1,4 +1,4 @@
-/** Chunk was on 78079 **/
+/** Chunk was on 12630 **/
 /** chunk id: 501801, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   mp: () => V,
@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk913527 = require("./913527.js"),
   g = require.n(Chunk913527),
   Chunk866442 = require("./866442.js"),
@@ -65,7 +65,7 @@ class V extends Chunk647438.PureComponent {
       targetType: e,
       action: t,
       themeOverride: r
-    } = this.props, l = null != Chunk647438 ? Chunk404211["themeOverride".concat((0, Chunk624138.De)(Chunk647438))] : null, a = i()(Chunk404211.icon, Q[module], require === Chunk981631.rsA.MESSAGE_DELETE ? Chunk404211.targetMessage : require === Chunk981631.rsA.AUTO_MODERATION_BLOCK_MESSAGE || require === Chunk981631.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || require === Chunk981631.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || require === Chunk981631.rsA.AUTO_MODERATION_QUARANTINE_USER ? Chunk404211.autoModerationBlockMessage : ({
+    } = this.props, l = null != Chunk647438 ? Chunk404211["themeOverride".concat((0, Chunk624138.De)(Chunk647438))] : null, s = i()(Chunk404211.icon, Q[module], require === Chunk981631.rsA.MESSAGE_DELETE ? Chunk404211.targetMessage : require === Chunk981631.rsA.AUTO_MODERATION_BLOCK_MESSAGE || require === Chunk981631.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || require === Chunk981631.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || require === Chunk981631.rsA.AUTO_MODERATION_QUARANTINE_USER ? Chunk404211.autoModerationBlockMessage : ({
       [Chunk981631.KFR.ALL]: Chunk404211.targetAll,
       [Chunk981631.KFR.GUILD]: Chunk404211.targetGuild,
       [Chunk981631.KFR.CHANNEL]: Chunk404211.targetChannel,
@@ -103,15 +103,15 @@ function m(A) {
     log: e,
     guild: t,
     onContentClick: l,
-    className: a
+    className: s
   } = A, o = r.useCallback(A => {
     if (null == e.changes) return null;
     let o = 0,
-      u = s().flatten(e.changes.map(l => {
+      u = a().flatten(e.changes.map(l => {
         if (O(e, l)) return null;
         let {
           oldValue: i,
-          newValue: a
+          newValue: s
         } = (() => {
           if ((e.action === I.rsA.CHANNEL_UPDATE || e.action === I.rsA.CHANNEL_CREATE) && l.key === I.zUn.TYPE) {
             var A, t;
@@ -179,11 +179,11 @@ function m(A) {
               var e;
               let n = null != t ? null == (e = E.Z.getRole(t.id, A)) ? true : e.name : true;
               return null == n ? null : "@".concat(n)
-            }, a = A => {
+            }, s = A => {
               var e;
               let t = null == (e = d.Z.getChannel(A)) ? true : e.name;
               return null == t ? null : "#".concat(t)
-            }, o = s().keyBy(null != l ? l : [], "id"), g = s().keyBy(null != r ? r : [], "id"), c = s().difference(Object.keys(g), Object.keys(o)).map(A => g[A]), v = s().difference(Object.keys(o), Object.keys(g)).map(A => o[A]), u = s().intersection(Object.keys(g), Object.keys(o));
+            }, o = a().keyBy(null != l ? l : [], "id"), g = a().keyBy(null != r ? r : [], "id"), c = a().difference(Object.keys(g), Object.keys(o)).map(A => g[A]), v = a().difference(Object.keys(o), Object.keys(g)).map(A => o[A]), u = a().intersection(Object.keys(g), Object.keys(o));
             return (0, n.jsxs)("ul", {
               className: b.onboardingChangeLogContainer,
               children: [c.map(A => {
@@ -191,8 +191,8 @@ function m(A) {
                   role_ids: t,
                   channel_ids: r,
                   title: l,
-                  id: s
-                } = A, o = (null != t ? t : []).map(i).filter(w.lm), g = (null != r ? r : []).map(a).filter(w.lm);
+                  id: a
+                } = A, o = (null != t ? t : []).map(i).filter(w.lm), g = (null != r ? r : []).map(s).filter(w.lm);
                 return (0, n.jsxs)("li", {
                   children: [(0, n.jsxs)("div", {
                     className: b.onboardingChangeLogItemTitle,
@@ -220,7 +220,7 @@ function m(A) {
                       })
                     })]
                   })]
-                }, s)
+                }, a)
               }), v.map(A => (0, n.jsx)("li", {
                 children: (0, n.jsxs)("div", {
                   className: b.onboardingChangeLogItemTitle,
@@ -239,8 +239,8 @@ function m(A) {
                 let {
                   title: r,
                   id: l
-                } = t, o = A.role_ids.map(i).filter(w.lm), g = A.channel_ids.map(a).filter(w.lm), c = t.role_ids.map(i).filter(w.lm), v = t.channel_ids.map(a).filter(w.lm), u = s().difference(c, o), h = s().difference(o, c), d = s().difference(v, g), E = s().difference(g, v), C = [];
-                return (s().isEqual(A.title, t.title) || C.push("title"), s().isEqual(A.description, t.description) || C.push("description"), 0 === u.length && 0 === h.length && 0 === d.length && 0 === E.length && 0 === C.length) ? null : (0, n.jsxs)("li", {
+                } = t, o = A.role_ids.map(i).filter(w.lm), g = A.channel_ids.map(s).filter(w.lm), c = t.role_ids.map(i).filter(w.lm), v = t.channel_ids.map(s).filter(w.lm), u = a().difference(c, o), h = a().difference(o, c), d = a().difference(v, g), E = a().difference(g, v), C = [];
+                return (a().isEqual(A.title, t.title) || C.push("title"), a().isEqual(A.description, t.description) || C.push("description"), 0 === u.length && 0 === h.length && 0 === d.length && 0 === E.length && 0 === C.length) ? null : (0, n.jsxs)("li", {
                   children: [(0, n.jsxs)("div", {
                     className: b.onboardingChangeLogItemTitle,
                     children: [(0, n.jsx)(V, {
@@ -295,21 +295,21 @@ function m(A) {
               key: l
             } = A, {
               targetType: i,
-              action: a
+              action: s
             } = e;
             switch (l) {
               case I.zUn.WELCOME_MESSAGE:
                 return ((A, e) => {
-                  var t, r, l, i, a;
-                  let s = C.default.getUser(null == e || null == (t = e.author_ids) ? true : t[0]),
+                  var t, r, l, i, s;
+                  let a = C.default.getUser(null == e || null == (t = e.author_ids) ? true : t[0]),
                     o = C.default.getUser(null == (r = A.author_ids) ? true : r[0]),
-                    g = (null == s ? true : s.id) !== (null == o ? true : o.id) ? (0, n.jsx)("li", {
+                    g = (null == a ? true : a.id) !== (null == o ? true : o.id) ? (0, n.jsx)("li", {
                       children: (0, n.jsx)("div", {
                         className: b.onboardingChangeLogItemTitle,
                         children: (0, n.jsx)(f.Text, {
                           variant: "text-md/normal",
                           children: H.intl.format(H.t.PrOzAw, {
-                            oldUser: null != (l = null == s ? true : s.username) ? l : H.intl.string(H.t.PoWNfX),
+                            oldUser: null != (l = null == a ? true : a.username) ? l : H.intl.string(H.t.PoWNfX),
                             newUser: null != (i = null == o ? true : o.username) ? i : H.intl.string(H.t.PoWNfX)
                           })
                         })
@@ -321,7 +321,7 @@ function m(A) {
                         children: (0, n.jsx)(f.Text, {
                           variant: "text-md/normal",
                           children: H.intl.format(H.t.oB7rBQ, {
-                            oldMessage: null != (a = null == e ? true : e.message) ? a : H.intl.string(H.t.PoWNfX),
+                            oldMessage: null != (s = null == e ? true : e.message) ? s : H.intl.string(H.t.PoWNfX),
                             newMessage: A.message
                           })
                         })
@@ -335,8 +335,8 @@ function m(A) {
                 return ((A, e) => {
                   let t = A.map(A => A.channel_id),
                     r = e.map(A => A.channel_id),
-                    l = s().difference(r, t),
-                    o = s().difference(t, r),
+                    l = a().difference(r, t),
+                    o = a().difference(t, r),
                     g = e.filter(A => l.includes(A.channel_id)),
                     c = A.filter(A => o.includes(A.channel_id));
                   return (0, n.jsxs)("ul", {
@@ -346,7 +346,7 @@ function m(A) {
                         children: [(0, n.jsx)(V, {
                           actionType: I.vB8.CREATE,
                           targetType: i,
-                          action: a
+                          action: s
                         }), (0, n.jsx)(f.Text, {
                           variant: "text-md/normal",
                           children: H.intl.format(H.t["oFSu6+"], {
@@ -360,7 +360,7 @@ function m(A) {
                         children: [(0, n.jsx)(V, {
                           actionType: I.vB8.DELETE,
                           targetType: i,
-                          action: a
+                          action: s
                         }), (0, n.jsx)(f.Text, {
                           variant: "text-md/normal",
                           children: H.intl.format(H.t.GssWam, {
@@ -375,8 +375,8 @@ function m(A) {
                 return ((A, e) => {
                   let t = A.map(A => A.channel_id),
                     r = e.map(A => A.channel_id),
-                    l = s().difference(r, t),
-                    o = s().difference(t, r),
+                    l = a().difference(r, t),
+                    o = a().difference(t, r),
                     g = e.filter(A => l.includes(A.channel_id)),
                     c = A.filter(A => o.includes(A.channel_id));
                   return (0, n.jsxs)("ul", {
@@ -386,7 +386,7 @@ function m(A) {
                         children: [(0, n.jsx)(V, {
                           actionType: I.vB8.CREATE,
                           targetType: i,
-                          action: a
+                          action: s
                         }), (0, n.jsx)(f.Text, {
                           variant: "text-md/normal",
                           children: H.intl.format(H.t.HlGndH, {
@@ -400,7 +400,7 @@ function m(A) {
                         children: [(0, n.jsx)(V, {
                           actionType: I.vB8.DELETE,
                           targetType: i,
-                          action: a
+                          action: s
                         }), (0, n.jsx)(f.Text, {
                           variant: "text-md/normal",
                           children: H.intl.format(H.t["7pysg4"], {
@@ -422,8 +422,8 @@ function m(A) {
           let {
             changeItem: l,
             subChanges: i,
-            changeNumber: a,
-            log: s,
+            changeNumber: s,
+            log: a,
             oldValue: o,
             newValue: g,
             change: u
@@ -433,7 +433,7 @@ function m(A) {
             oldValue: o,
             newValue: g,
             count: Array.isArray(g) ? g.length : null,
-            subtarget: null != (t = null != (e = s.options.subtarget) ? e : u.subtarget) ? t : null,
+            subtarget: null != (t = null != (e = a.options.subtarget) ? e : u.subtarget) ? t : null,
             newColorHook: (A, e) => j(e, u.newValue),
             newColorsHook: (A, e) => {
               let {
@@ -490,8 +490,8 @@ function m(A) {
                   default:
                     return "text-feedback-warning"
                 }
-              }(s.actionType),
-              children: [a < 10 ? "0".concat(a) : a, (0, n.jsx)("span", {
+              }(a.actionType),
+              children: [s < 10 ? "0".concat(s) : s, (0, n.jsx)("span", {
                 className: b.dash,
                 children: "—"
               })]
@@ -504,23 +504,23 @@ function m(A) {
                 children: i
               }) : null]
             })]
-          }, a)
+          }, s)
         }({
           changeItem: "function" == typeof D ? D(l) : D,
           subChanges: u,
           changeNumber: ++o,
           log: e,
           oldValue: i,
-          newValue: a,
+          newValue: s,
           change: l
         })
       })).filter(w.lm);
     return (0, n.jsx)(f.P3F, {
       onClick: l,
-      className: i()(b.changeDetails, a),
+      className: i()(b.changeDetails, s),
       children: u
     })
-  }, [e, t, l, a]);
+  }, [e, t, l, s]);
   return r.useMemo(() => {
     switch (e.targetType) {
       case I.KFR.GUILD:

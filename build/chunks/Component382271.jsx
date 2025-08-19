@@ -1,12 +1,12 @@
 /** Chunk was on 84533 **/
-/** chunk id: 382271, original params: e,t,a (module,exports,require) **/
+/** chunk id: 382271, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  m: () => Z
+  m: () => w
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  n = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk257465 = require("./257465.jsx"),
   Chunk667202 = require("./667202.jsx"),
@@ -26,89 +26,90 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk734501 = require("./734501.js"),
   Chunk690813 = require("./690813.js");
-let C = e => {
+let Z = e => {
     let {
       recipient: t,
-      status: a,
-      onClose: i
+      status: r,
+      onClose: s
     } = e, {
-      avatarSrc: s,
+      avatarSrc: n,
       eventHandlers: l
-    } = (0, p.Z)({
+    } = (0, f.Z)({
       userId: null == t ? true : t.id,
       size: u.EFr.SIZE_56
-    }), o = g.ZP.getName(t), c = a === v.Fz.FAIL;
-    return (0, r.jsxs)("div", {
+    }), c = j.ZP.getName(t), d = r === v.Fz.FAIL;
+    return (0, a.jsxs)("div", {
       className: S.trialRecipientRow,
-      children: [(0, r.jsx)(u.qEK, function(e) {
+      children: [(0, a.jsx)(u.qEK, function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var a = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(a);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(a, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = a[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          var r = null != arguments[t] ? arguments[t] : {},
+            a = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), a.forEach(function(t) {
+            var a;
+            a = r[t], t in e ? Object.defineProperty(e, t, {
+              value: a,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = a
           })
         }
         return e
       }({
-        imageClassName: n()({
-          [S.erroredAvatar]: c
+        imageClassName: i()({
+          [S.erroredAvatar]: d
         }),
-        src: s,
-        "aria-label": o,
+        src: n,
+        "aria-label": c,
         size: u.EFr.SIZE_32
-      }, l)), c ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(u.Text, {
+      }, l)), d ? (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)(u.Text, {
           className: S.errorDisplayName,
           variant: "text-md/medium",
           color: "text-primary",
-          children: o
-        }), (0, r.jsx)(u.Text, {
+          children: c
+        }), (0, a.jsx)(u.Text, {
           variant: "text-md/medium",
           className: S.userName,
           color: "text-primary",
-          children: y.intl.format(y.t.RO3T4O, {
-            userName: o
+          children: E.intl.format(E.t.RO3T4O, {
+            userName: c
           })
         })]
-      }) : (0, r.jsx)(u.Text, {
+      }) : (0, a.jsx)(u.Text, {
         variant: "text-md/medium",
         className: S.trialRecipientRowDisplayName,
         color: "text-primary",
-        children: o
-      }), (0, r.jsx)(u.zxk, {
+        children: c
+      }), (0, a.jsx)(u.zxk, {
         variant: "secondary",
         size: "sm",
-        text: y.intl.string(y.t["E+yYpq"]),
+        text: E.intl.string(E.t["E+yYpq"]),
         icon: u.kBi,
         onClick: () => {
           var e;
-          return e = t.id, void(f.Z.hasLayers() && (0, x.xf)(), m.Z.openPrivateChannel({
+          return e = t.id, void(x.Z.hasLayers() && (0, h.xf)(), m.Z.openPrivateChannel({
             recipientIds: e
-          }), i())
+          }), s())
         }
       })]
     })
   },
-  Z = e => {
+  w = e => {
     let {
       results: t,
-      onClose: a
-    } = e, s = (0, l.e7)([b.Z], () => b.Z.getReferralsRemaining());
-    h.default.track(R.rMx.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
+      onClose: r,
+      isReminderConfirmation: n
+    } = e, i = (0, l.e7)([N.Z], () => N.Z.getReferralsRemaining());
+    g.default.track(b.rMx.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
     let {
-      reducedMotion: n
-    } = i.useContext(d.Sf);
-    return null === s ? (0, r.jsx)(u.$jN, {}) : (0, r.jsx)(c.I, {
-      graphic: n.enabled ? {
-        src: N.Z,
+      reducedMotion: m
+    } = s.useContext(o.Sf);
+    return null === i ? (0, a.jsx)(u.$jN, {}) : (0, a.jsx)(d.I, {
+      graphic: m.enabled ? {
+        src: y.Z,
         type: "image"
       } : {
         rive: u.p8m,
@@ -116,24 +117,25 @@ let C = e => {
       },
       gradientColor: "nitro-pink",
       title: (() => {
-        let e = y.intl.string(y.t.Pcb7KC),
-          a = t.filter(e => e.status === v.Fz.SUCCESS).length;
-        return s > 0 && (e = y.intl.formatToPlainString(y.t.iWtOfH, {
-          numReferrals: a
-        })), 0 === a && (e = y.intl.string(y.t["7VBEub"])), e
+        let e = t.filter(e => e.status === v.Fz.SUCCESS).length;
+        return 0 === e ? E.intl.string(E.t["7VBEub"]) : true === n ? E.intl.string(E.t.GP5lbm) : i > 0 ? E.intl.formatToPlainString(E.t.iWtOfH, {
+          numReferrals: e
+        }) : E.intl.string(E.t.Pcb7KC)
       })(),
-      subtitle: y.intl.format(y.t.CZaMHh, {
-        days: E.p,
-        helpdeskArticle: j.Z.getArticleURL(R.BhN.REFERRAL_PROGRAM)
+      subtitle: true === n ? E.intl.format(E.t["4gJJfH"], {
+        helpdeskArticle: p.Z.getArticleURL(b.BhN.REFERRAL_PROGRAM)
+      }) : E.intl.format(E.t.CZaMHh, {
+        days: R.p,
+        helpdeskArticle: p.Z.getArticleURL(b.BhN.REFERRAL_PROGRAM)
       }),
-      onClose: a,
-      transitionState: o.D.ENTERED,
-      children: (0, r.jsx)("div", {
+      onClose: r,
+      transitionState: c.D.ENTERED,
+      children: (0, a.jsx)("div", {
         className: S.trialRecipientContainer,
-        children: t.map(e => (0, r.jsx)(C, {
+        children: t.map(e => (0, a.jsx)(Z, {
           recipient: e.recipient,
           status: e.status,
-          onClose: a
+          onClose: r
         }, e.recipient.id))
       })
     })

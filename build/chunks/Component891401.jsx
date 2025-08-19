@@ -68,7 +68,7 @@ function T() {
     l = (0, Chunk680783.Z)(require),
     s = null == Chunk120356 ? true : Chunk120356.wallpaperId,
     d = (0, Chunk461762.Z)(Chunk392711),
-    b = Chunk647438.useCallback(e => {
+    v = Chunk647438.useCallback(e => {
       null != s && (0, h.i)(s, {
         opacity: e
       })
@@ -85,12 +85,12 @@ function T() {
     O = Chunk647438.useCallback(() => E(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
     I = Chunk647438.useCallback(() => P(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
     w = Chunk647438.useCallback(() => S(null == Chunk120356 ? true : Chunk120356.wallpaperId, true), [null == Chunk120356 ? true : Chunk120356.wallpaperId]),
-    R = Chunk647438.useCallback(e => {
+    k = Chunk647438.useCallback(e => {
       null != s && (0, h.i)(s, {
         token_mix_amount: Math.round(e)
       })
     }, [Chunk392711]),
-    k = Chunk647438.useCallback(() => {
+    R = Chunk647438.useCallback(() => {
       null != Chunk392711 && (0, Chunk151480.i)(Chunk392711, null)
     }, [Chunk392711]),
     Z = null != (e = null == Chunk704215 ? true : Chunk704215.opacity) ? module : 1,
@@ -188,7 +188,7 @@ function T() {
         defaultValue: 100,
         minValue: 0,
         maxValue: 100,
-        onValueChange: R
+        onValueChange: k
       }, "tokenMixAmount-".concat(A)), (0, Chunk951288.jsx)(Chunk481060.ua7, {
         text: "The color used for hyperlinks.",
         children: e => (0, n.jsx)(o.X6, C(y({
@@ -215,7 +215,7 @@ function T() {
         })]
       }), (0, Chunk951288.jsx)(Chunk755721.zx, {
         className: Chunk715639.resetButton,
-        onClick: k,
+        onClick: R,
         children: "Reset"
       })]
     })]

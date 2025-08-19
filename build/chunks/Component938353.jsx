@@ -163,8 +163,8 @@ function e8() {
 }
 let e2 = [Chunk981631.hBH.GIFV],
   e4 = 15 * Chunk70956.Z.Millis.MINUTE,
-  e6 = new Set(["discord-developers", "discord-testers", "discord-townhall", "discordgameslab"]),
-  e5 = e => () => {
+  e5 = new Set(["discord-developers", "discord-testers", "discord-townhall", "discordgameslab"]),
+  e6 = e => () => {
     let {
       url: t,
       proxyUrl: n,
@@ -186,7 +186,7 @@ class e7 extends(r = Chunk647438.Component) {
     let {
       channel: t
     } = this.props;
-    return !(t.isDM() && !t.isSystemDM() && !t.isGroupDM() && e6.has(e))
+    return !(t.isDM() && !t.isSystemDM() && !t.isGroupDM() && e5.has(e))
   }
   shouldComponentUpdate(e, t) {
     var n, r;
@@ -435,7 +435,7 @@ class e7 extends(r = Chunk647438.Component) {
               duration: r
             })
           },
-          gifFavoriteButton: e5(o),
+          gifFavoriteButton: e6(o),
           isSearchResult: this.props.isSearchResult
         },
         c = (0, eh.q)({
@@ -483,7 +483,7 @@ class e7 extends(r = Chunk647438.Component) {
     } = this.props;
     return (0, i.jsx)(eU.F, {
       gifAutoPlay: t,
-      getGifFavButton: e5,
+      getGifFavButton: e6,
       getOnMediaItemContextMenu: null == a ? true : e => t => {
         t.stopPropagation(), t.preventDefault(), null == a || a(t, e)
       },

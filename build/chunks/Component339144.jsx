@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 339144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => S,
@@ -32,8 +32,8 @@ function x(e, t, n) {
 }
 let S = Chunk647438.memo(function(e) {
   let t, l, u, S, {
-      stream: I,
-      canGoLive: P,
+      stream: P,
+      canGoLive: I,
       guildId: N,
       isStreaming: w,
       channel: Z,
@@ -62,20 +62,20 @@ let S = Chunk647438.memo(function(e) {
         location: M.location
       }), (0, s.h7)(D, false)
     }, [D, M, G]),
-    H = i.useCallback((e, t) => () => {
+    F = i.useCallback((e, t) => () => {
       (0, f.v)(G, f.d.LEAVE_ACTIVITY), d.Z.leaveActivity({
         location: t,
         applicationId: e,
         showFeedback: true
       })
     }, [G]),
-    F = i.useCallback(() => {
-      (0, b.Z)(I)
-    }, [I]),
+    H = i.useCallback(() => {
+      (0, b.Z)(P)
+    }, [P]),
     z = i.useCallback(() => {
-      let e = null != Z && (0, _.vd)(Z.type) ? Z : null,
+      let e = null != Z && (0, O.vd)(Z.type) ? Z : null,
         t = null != e ? e.getGuildId() : N;
-      if (k && null != A && null != O.Z.getVoiceChannelId()) {
+      if (k && null != A && null != _.Z.getVoiceChannelId()) {
         (0, g.s)("Activity Panel"), (0, m.Z)(A.pid);
         return
       }(0, a.ZDy)(async () => {
@@ -103,7 +103,7 @@ let S = Chunk647438.memo(function(e) {
             return e
           }({}, n), l = l = {
             sourcePID: null == A ? true : A.pid,
-            selectSource: !!U && null != O.Z.getVoiceChannelId(),
+            selectSource: !!U && null != _.Z.getVoiceChannelId(),
             guildId: t,
             analyticsLocation: j.Sbl.ACTIVITY_PANEL
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
@@ -119,13 +119,13 @@ let S = Chunk647438.memo(function(e) {
         }
       })
     }, [Z, N, A, U, k]),
-    W = (null != A || null == R || (0, c.R)()) && (w || P) ? (w ? (t = false, l = () => {
-      F(), (0, f.v)(G, f.d.STREAM, false)
+    W = (null != A || null == R || (0, c.R)()) && (w || I) ? (w ? (t = false, l = () => {
+      H(), (0, f.v)(G, f.d.STREAM, false)
     }, u = a.g5r, S = C.intl.string(C.t.S5anIS)) : T ? (t = false, l = () => {
       z(), (0, f.v)(G, f.d.STREAM, true)
     }, u = a.hGI, S = null != A ? C.intl.formatToPlainString(C.t.AB5gT0, {
       game: A.name
-    }) : C.intl.string(C.t.FeUKeH)) : (t = true, l = null, u = a.hGI, S = null != Z && (0, _.vd)(Z.type) ? C.intl.string(C.t.uQn9Bw) : null != N ? C.intl.string(C.t.fBXEoK) : C.intl.string(C.t.n3feND)), (0, r.jsx)("div", {
+    }) : C.intl.string(C.t.FeUKeH)) : (t = true, l = null, u = a.hGI, S = null != Z && (0, O.vd)(Z.type) ? C.intl.string(C.t.uQn9Bw) : null != N ? C.intl.string(C.t.fBXEoK) : C.intl.string(C.t.n3feND)), (0, r.jsx)("div", {
       className: E.panelButtonContainer,
       children: (0, r.jsx)(v.Z, {
         tooltipText: S,
@@ -141,10 +141,10 @@ let S = Chunk647438.memo(function(e) {
     }) : null,
     Y = null == R ? null : (0, r.jsx)(v.Z, {
       tooltipText: C.intl.string(C.t["R/FK4O"]),
-      onClick: H(R.applicationId, R.location),
+      onClick: F(R.applicationId, R.location),
       icon: a.PBZ
     }),
-    q = null == I ? null : (0, r.jsx)(h.Z, {});
+    q = null == P ? null : (0, r.jsx)(h.Z, {});
   return null == W && null == K && null == Y ? null : (0, r.jsxs)("div", {
     className: E.actions,
     children: [W, K, null != Y ? Y : q]

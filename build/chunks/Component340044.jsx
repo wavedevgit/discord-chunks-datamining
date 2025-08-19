@@ -1,4 +1,4 @@
-/** Chunk was on 49882 **/
+/** Chunk was on 69003 **/
 /** chunk id: 340044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -35,9 +35,9 @@ let p = Chunk647438.memo(function(e) {
     }(e, ["children", "isOverlay", "contextGuildId"]);
   let [g, m] = i.useState({
     maskImage: "none"
-  }), b = i.useRef(null), _ = (0, s.Z)(() => {
+  }), b = i.useRef(null), O = (0, s.Z)(() => {
     var e, t, n, r;
-    let i = null != (n = null == (e = O.current) ? true : e.getBoundingClientRect()) ? n : null,
+    let i = null != (n = null == (e = _.current) ? true : e.getBoundingClientRect()) ? n : null,
       l = null != (r = null == (t = b.current) ? true : t.getBoundingClientRect()) ? r : null;
     if (p || null == i || null == l) return void m({
       maskImage: "none"
@@ -50,10 +50,10 @@ let p = Chunk647438.memo(function(e) {
     m({
       maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(a, "px)")
     })
-  }), O = (0, a.y)(_), y = (0, c.yF)(h.userId, f);
+  }), _ = (0, a.y)(O), y = (0, c.yF)(h.userId, f);
   return (0, r.jsxs)("div", {
     className: o()(d.container, p && d.isOverlayContainer),
-    ref: O,
+    ref: _,
     children: [(0, r.jsx)("div", {
       className: d.usernameContainer,
       children: l

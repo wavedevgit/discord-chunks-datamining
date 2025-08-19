@@ -17,11 +17,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk451429 = require("./451429.js"),
   Chunk104444 = require("./104444.js");
 
-function v(e, t) {
+function b(e, t) {
   return e.store.getName().localeCompare(t.store.getName())
 }
 
-function b(e) {
+function v(e) {
   let {
     store: t,
     dataGetter: a
@@ -61,7 +61,7 @@ let f = [{
         children: ["Store is missing ", (0, n.jsx)("code", {
           children: "__getLocalVars"
         }), " method."]
-      }) : (0, n.jsx)(b, {
+      }) : (0, n.jsx)(v, {
         store: t,
         dataGetter: e => e.__getLocalVars()
       })
@@ -74,7 +74,7 @@ let f = [{
       let {
         store: t
       } = e;
-      return (0, n.jsx)(b, {
+      return (0, n.jsx)(v, {
         store: t,
         dataGetter: e => e
       })
@@ -116,7 +116,7 @@ function _() {
     c = Chunk647438.useMemo(() => Chunk120356.map(e => ({
       key: e._dispatchToken,
       store: e
-    })).sort(v), [Chunk120356]).filter(e => (function(e, t) {
+    })).sort(b), [Chunk120356]).filter(e => (function(e, t) {
       let {
         store: a
       } = e;

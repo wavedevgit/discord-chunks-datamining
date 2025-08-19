@@ -1,4 +1,4 @@
-/** Chunk was on 31253 **/
+/** Chunk was on 11868 **/
 /** chunk id: 69499, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => I,
@@ -36,8 +36,8 @@ class T extends Chunk647438.PureComponent {
       {
         skus: i,
         children: l,
-        applicationId: o,
-        primarySKU: a,
+        applicationId: a,
+        primarySKU: o,
         onSKUSelect: s
       } = require,
       u = function(e, t) {
@@ -90,12 +90,12 @@ class T extends Chunk647438.PureComponent {
         onSKUSelect: t,
         onMenuSelect: n
       } = this.props;
-      return (0, r.jsx)(o.v2r, {
+      return (0, r.jsx)(a.v2r, {
         onSelect: n,
         navId: "test-skus",
-        "aria-label": d.intl.string(d.t.ogxXGh),
-        onClose: a.Zy,
-        children: e.map(e => (0, r.jsx)(o.sNh, {
+        "aria-label": _.intl.string(_.t.ogxXGh),
+        onClose: o.Zy,
+        children: e.map(e => (0, r.jsx)(a.sNh, {
           id: "".concat(e.id),
           label: e.name,
           action: () => {
@@ -104,7 +104,7 @@ class T extends Chunk647438.PureComponent {
         }, "".concat(e.id)))
       })
     }), E(this, "handleContextMenu", e => {
-      e.stopPropagation(), a.vq(e, this.renderContextMenu)
+      e.stopPropagation(), o.vq(e, this.renderContextMenu)
     }), E(this, "handleClick", () => {
       let {
         onSKUSelect: e,
@@ -118,7 +118,7 @@ let O = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z], e => {
   var t;
   let {
     applicationId: n
-  } = e, r = (0, _.uF)(n, s.Z, u.Z);
+  } = e, r = (0, d.uF)(n, s.Z, u.Z);
   return {
     skus: (null != (t = u.Z.getForApplication(n)) ? t : []).sort((e, t) => null != r && e.id === r.id ? false : null != r && t.id === r.id ? 1 : e.name >= t.name ? false : 1),
     primarySKU: r

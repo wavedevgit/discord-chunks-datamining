@@ -53,7 +53,7 @@ class Z extends Chunk647438.PureComponent {
       authenticated: t,
       isResolved: n
     } = this.props;
-    n || o.Z.wait(() => {
+    n || s.Z.wait(() => {
       this.resolveGiftCode()
     }), t && !e.authenticated && this.handleAuthenticated(), !t && e.authenticated && this.setState({
       currentUser: null
@@ -198,8 +198,8 @@ class Z extends Chunk647438.PureComponent {
       giftCode: i,
       isResolved: l,
       isAccepting: a,
-      transitionTo: s,
-      location: o
+      transitionTo: o,
+      location: s
     } = this.props, {
       fetchingUser: c,
       continueOnWeb: u

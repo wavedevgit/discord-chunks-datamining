@@ -1,78 +1,78 @@
 /** Chunk was on 84533 **/
-/** chunk id: 28061, original params: e,t,a (module,exports,require) **/
+/** chunk id: 28061, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  n = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
   Chunk871952 = require("./871952.js");
 
-function c(e) {
+function d(e) {
   var t;
   let {
-    user: a,
-    checked: i,
-    onChange: c,
-    disabled: d
+    user: r,
+    checked: s,
+    onChange: d,
+    disabled: o
   } = e, {
     avatarSrc: u,
     eventHandlers: m
   } = (0, l.Z)({
-    userId: null == a ? true : a.id,
-    size: n.EFr.SIZE_32
-  }), x = null != (t = a.globalName) ? t : a.username;
-  return (0, r.jsxs)("div", {
-    className: o.container,
-    children: [(0, r.jsx)("div", {
-      className: o.userAvatar,
-      children: (0, r.jsx)(n.qEK, function(e) {
+    userId: null == r ? true : r.id,
+    size: i.EFr.SIZE_32
+  }), h = null != (t = r.globalName) ? t : r.username;
+  return (0, a.jsxs)("div", {
+    className: c.container,
+    children: [(0, a.jsx)("div", {
+      className: c.userAvatar,
+      children: (0, a.jsx)(i.qEK, function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var a = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(a);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(a, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = a[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          var r = null != arguments[t] ? arguments[t] : {},
+            a = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+          }))), a.forEach(function(t) {
+            var a;
+            a = r[t], t in e ? Object.defineProperty(e, t, {
+              value: a,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = a
           })
         }
         return e
       }({
-        className: s()({
-          [o.muted]: d
+        className: n()({
+          [c.muted]: o
         }),
         src: u,
-        "aria-label": x,
-        size: n.EFr.SIZE_32
+        "aria-label": h,
+        size: i.EFr.SIZE_32
       }, m))
-    }), (0, r.jsxs)("div", {
-      className: o.usernameContainer,
-      children: [(0, r.jsx)(n.Text, {
-        className: o.userName,
-        color: d ? "text-muted" : "text-default",
+    }), (0, a.jsxs)("div", {
+      className: c.usernameContainer,
+      children: [(0, a.jsx)(i.Text, {
+        className: c.userName,
+        color: o ? "text-muted" : "text-default",
         variant: "text-md/semibold",
-        children: a.username
-      }), (0, r.jsx)(n.Text, {
-        className: o.userName,
-        color: d ? "text-muted" : "text-secondary",
+        children: r.username
+      }), (0, a.jsx)(i.Text, {
+        className: c.userName,
+        color: o ? "text-muted" : "text-secondary",
         variant: "text-xs/normal",
-        children: "@".concat(x)
+        children: "@".concat(h)
       })]
-    }), (0, r.jsx)("div", {
-      className: o.checkbox,
-      children: (0, r.jsx)(n.XZJ, {
-        disabled: d,
-        value: i,
-        onChange: (e, t) => c(a, t)
+    }), (0, a.jsx)("div", {
+      className: c.checkbox,
+      children: (0, a.jsx)(i.XZJ, {
+        disabled: o,
+        value: s,
+        onChange: (e, t) => d(r, t)
       })
     })]
   })

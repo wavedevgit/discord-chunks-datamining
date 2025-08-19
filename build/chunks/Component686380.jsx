@@ -148,7 +148,7 @@ class D extends Chunk647438.Component {
         }), (0, d.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("83667"), n.e("84533"), n.e("83773")]).then(n.bind(n, 656139));
+          } = await Promise.all([n.e("84533"), n.e("83773")]).then(n.bind(n, 656139));
           return t => (0, r.jsx)(e, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},

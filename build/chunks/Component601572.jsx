@@ -1,7 +1,7 @@
-/** Chunk was on 90714 **/
-/** chunk id: 601572, original params: e,t,a (module,exports,require) **/
+/** Chunk was on 73870 **/
+/** chunk id: 601572, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => S
+  default: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,120 +26,120 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk142768 = require("./142768.js");
 
-function S(e) {
+function O(e) {
   let {
     transitionState: t,
-    videoEnabled: a,
-    onEnable: S,
-    onClose: I
-  } = e, w = b.Z.getCameraComponent(), N = (0, p.Dt)(), E = (0, h.Z)(), P = _.qF.useSetting(), [x, R] = i.useState((0, m.P)(C.default.getCurrentUser())), M = (0, s.O)(), {
-    analyticsLocations: U
-  } = (0, d.ZP)(l.Z.CAMERA_PREVIEW), D = i.useRef(null);
-  i.useEffect(() => {
-    y.default.track(v.rMx.OPEN_MODAL, {
+    videoEnabled: n,
+    onEnable: O,
+    onClose: S
+  } = e, w = h.Z.getCameraComponent(), x = (0, u.Dt)(), N = (0, b.Z)(), E = p.qF.useSetting(), [P, k] = o.useState((0, m.P)(C.default.getCurrentUser())), L = (0, s.O)(), {
+    analyticsLocations: M
+  } = (0, d.ZP)(l.Z.CAMERA_PREVIEW), R = o.useRef(null);
+  o.useEffect(() => {
+    T.default.track(A.rMx.OPEN_MODAL, {
       type: "Camera Preview Modal"
     })
-  }, []), i.useEffect(() => {
+  }, []), o.useEffect(() => {
     var e;
-    null == (e = D.current) || e.scrollToTop()
+    null == (e = R.current) || e.scrollToTop()
   }, []);
-  let L = async () => {
-    await j(), o.Z.setVideoEnabled(true), null == S || S()
-  }, j = async () => {
+  let U = async () => {
+    await D(), r.Z.setVideoEnabled(true), null == O || O()
+  }, D = async () => {
     try {
-      await (0, f.wG)(x, {
+      await (0, f.wG)(P, {
         location: function(e) {
           for (var t = 1; t < arguments.length; t++) {
-            var a = null != arguments[t] ? arguments[t] : {},
-              n = Object.keys(a);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(a, e).enumerable
-            }))), n.forEach(function(t) {
-              var n;
-              n = a[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
+            var n = null != arguments[t] ? arguments[t] : {},
+              a = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), a.forEach(function(t) {
+              var a;
+              a = n[t], t in e ? Object.defineProperty(e, t, {
+                value: a,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = n
+              }) : e[t] = a
             })
           }
           return e
         }({
-          page: v.ZY5.PREVIEW_CAMERA_MODAL
-        }, M.location)
+          page: A.ZY5.PREVIEW_CAMERA_MODAL
+        }, L.location)
       })
     } catch (e) {}
-    await I(), (0, g.Up)(x)
+    await S(), (0, g.Up)(P)
   };
-  return (0, n.jsx)(d.Gt, {
-    value: U,
-    children: (0, n.jsx)(c.Z, {
-      page: v.ZY5.PREVIEW_CAMERA_MODAL,
-      children: (0, n.jsxs)(r.Y0X, {
-        className: O.modalRoot,
-        size: r.CgR.DYNAMIC,
-        "aria-labelledby": N,
+  return (0, a.jsx)(d.Gt, {
+    value: M,
+    children: (0, a.jsx)(c.Z, {
+      page: A.ZY5.PREVIEW_CAMERA_MODAL,
+      children: (0, a.jsxs)(i.Y0X, {
+        className: v.modalRoot,
+        size: i.CgR.DYNAMIC,
+        "aria-labelledby": x,
         transitionState: t,
         parentComponent: "CameraPreviewModal",
-        children: [(0, n.jsxs)(r.hzk, {
-          className: E ? O.contentWithVideoBackgrounds : O.content,
-          scrollerRef: D,
-          children: [(0, n.jsx)(r.X6q, {
-            id: N,
-            className: O.header,
+        children: [(0, a.jsxs)(i.hzk, {
+          className: N ? v.contentWithVideoBackgrounds : v.content,
+          scrollerRef: R,
+          children: [(0, a.jsx)(i.X6q, {
+            id: x,
+            className: v.header,
             variant: "heading-xl/semibold",
-            children: a ? A.intl.string(A.t.LAwwbW) : A.intl.string(A.t["/HITVF"])
-          }), (0, n.jsx)(T.Z, {
+            children: n ? I.intl.string(I.t.LAwwbW) : I.intl.string(I.t["/HITVF"])
+          }), (0, a.jsx)(y.Z, {
             hidePreviewToggle: true,
             showSmallBackgroundOptions: true,
             hideDeviceHeader: true,
             hideCameraSettingsLink: true,
-            selectedBackgroundOption: x,
-            onSelectBackgroundOption: R,
-            hideDeviceSelector: a,
-            renderCamera: e => (0, n.jsxs)("div", {
-              className: O.cameraPreview,
-              children: [(0, n.jsx)("div", {
-                className: O.camera,
-                children: (0, n.jsx)(w, {
+            selectedBackgroundOption: P,
+            onSelectBackgroundOption: k,
+            hideDeviceSelector: n,
+            renderCamera: e => (0, a.jsxs)("div", {
+              className: v.cameraPreview,
+              children: [(0, a.jsx)("div", {
+                className: v.camera,
+                children: (0, a.jsx)(w, {
                   disabled: false,
                   deviceId: e,
                   width: 368,
                   height: 207
                 })
-              }), (0, n.jsx)(T.S, {})]
+              }), (0, a.jsx)(y.S, {})]
             }),
-            onLearnMore: I
+            onLearnMore: S
           })]
-        }), (0, n.jsxs)(r.mzw, {
-          justify: u.Z.Justify.BETWEEN,
+        }), (0, a.jsxs)(i.mzw, {
+          justify: _.Z.Justify.BETWEEN,
           children: [(() => {
-            let e = a ? A.intl.string(A.t.KQENho) : A.intl.string(A.t.kgIe9f);
-            return (0, n.jsx)(r.zxk, {
+            let e = n ? I.intl.string(I.t.KQENho) : I.intl.string(I.t.kgIe9f);
+            return (0, a.jsx)(i.zxk, {
               variant: "primary",
               size: "sm",
               text: e,
-              onClick: a ? j : L,
-              autoFocus: !a
+              onClick: n ? D : U,
+              autoFocus: !n
             })
-          })(), (0, n.jsx)(r.XZJ, {
+          })(), (0, a.jsx)(i.XZJ, {
             size: 18,
-            type: r.XZJ.Types.INVERTED,
-            value: P,
+            type: i.XZJ.Types.INVERTED,
+            value: E,
             onChange: () => {
-              _.qF.updateSetting(!P), y.default.track(v.rMx.UPDATE_USER_SETTINGS_LOCAL, {
-                always_preview_video: !P
+              p.qF.updateSetting(!E), T.default.track(A.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+                always_preview_video: !E
               })
             },
-            children: (0, n.jsx)(r.Text, {
+            children: (0, a.jsx)(i.Text, {
               variant: "text-sm/normal",
-              children: A.intl.string(A.t["3Ppr1t"])
+              children: I.intl.string(I.t["3Ppr1t"])
             })
           })]
-        }), (0, n.jsx)(r.olH, {
-          onClick: I,
-          className: O.modalClose
+        }), (0, a.jsx)(i.olH, {
+          onClick: S,
+          className: v.modalClose
         })]
       })
     })

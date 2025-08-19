@@ -1,7 +1,7 @@
-/** Chunk was on 31253 **/
+/** Chunk was on 11868 **/
 /** chunk id: 912193, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => _
+  b: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -19,8 +19,8 @@ function u() {
   Chunk846027.Z.setSilenceWarning(false)
 }
 
-function _() {
-  c = (0, Chunk481060.h7j)(e => (0, r.jsx)(o.default, function(e) {
+function d() {
+  c = (0, Chunk481060.h7j)(e => (0, r.jsx)(a.default, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -38,11 +38,11 @@ function _() {
     }
     return e
   }({
-    title: a.intl.string(a.t["zQ1+Jy"]),
-    body: a.intl.string(a.t.K1gWXl),
-    secondaryConfirmText: a.intl.string(a.t.XAiAgI),
+    title: o.intl.string(o.t["zQ1+Jy"]),
+    body: o.intl.string(o.t.K1gWXl),
+    secondaryConfirmText: o.intl.string(o.t.XAiAgI),
     onConfirmSecondary: u,
     onConfirm: s,
-    confirmText: a.intl.string(a.t.BddRzc)
+    confirmText: o.intl.string(o.t.BddRzc)
   }, e)))
 }

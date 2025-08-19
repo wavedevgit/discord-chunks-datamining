@@ -1,4 +1,4 @@
-/** Chunk was on 4756 **/
+/** Chunk was on 31930 **/
 /** chunk id: 577275, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -20,9 +20,9 @@ let s = function() {
         s(module.body)
       } catch (e) {}
       o(false)
-    }, u = Chunk647438.useRef(true);
+    }, c = Chunk647438.useRef(true);
   return Chunk647438.useEffect(() => {
-    (u.current || exports) && (u.current = false, a())
+    (c.current || exports) && (c.current = false, a())
   }, [exports]), {
     teams: require,
     loading: l,

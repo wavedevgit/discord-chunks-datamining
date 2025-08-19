@@ -1,4 +1,4 @@
-/** Chunk was on 31253 **/
+/** Chunk was on 11868 **/
 /** chunk id: 535278, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -16,15 +16,15 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk50953 = require("./50953.js");
-let T = 12633 == require.j ? function(e) {
+let T = function(e) {
   var t;
   let {
     dismissCurrentNotice: n,
     subscriptionTier: T
   } = e, {
     analyticsLocations: O
-  } = (0, a.ZP)(o.Z.PREMIUM_TIER_2_DISCOUNT_ENDING_NOTICE), N = (0, u.Ng)(), S = (0, l.Z)(null != N && null != N.expires_at ? Date.parse(N.expires_at) : 0);
-  return null == N || (null == (t = N.discount) ? true : t.plan_ids.some(e => _.GP[e].skuId !== T)) || null == N.expires_at || Object.values(S).every(e => 0 === e) ? null : (0, r.jsxs)(i.qXd, {
+  } = (0, o.ZP)(a.Z.PREMIUM_TIER_2_DISCOUNT_ENDING_NOTICE), p = (0, u.Ng)(), N = (0, l.Z)(null != p && null != p.expires_at ? Date.parse(p.expires_at) : 0);
+  return null == p || (null == (t = p.discount) ? true : t.plan_ids.some(e => d.GP[e].skuId !== T)) || null == p.expires_at || Object.values(N).every(e => 0 === e) ? null : (0, r.jsxs)(i.qXd, {
     color: i.DM8.PREMIUM_TIER_2,
     children: [(0, r.jsx)(i.RyX, {
       onClick: n
@@ -48,19 +48,19 @@ let T = 12633 == require.j ? function(e) {
         minutes: Math.max(e.minutes, 1),
         discountPercentage: n
       })
-    }(S, Number(N.discount.amount)), (0, r.jsx)(i.EyT, {
+    }(N, Number(p.discount.amount)), (0, r.jsx)(i.EyT, {
       onClick: () => {
         (0, c.Z)({
           subscriptionTier: T,
           analyticsLocations: O,
           analyticsObject: {
-            page: d.ZY5.IN_APP,
-            section: d.jXE.NOTIFICATION_BAR,
-            object: d.qAy.BUTTON_CTA
+            page: _.ZY5.IN_APP,
+            section: _.jXE.NOTIFICATION_BAR,
+            object: _.qAy.BUTTON_CTA
           }
         })
       },
       children: E.intl.string(E.t.zLXssL)
     })]
   })
-} : null
+}
