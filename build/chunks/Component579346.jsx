@@ -57,7 +57,8 @@ function h(e) {
       isGradient: _,
       gradientButtonClassName: m.gradientPicker,
       gradientDegrees: 90,
-      allowBlackCustomColor: true
+      allowBlackCustomColor: true,
+      customPickerPosition: "top"
     })]
   })
 }

@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk881449 = require("./881449.js");
 let v = Chunk647438.createContext(true);
 
-function b(e) {
+function m(e) {
   let {
     sound: t
   } = e, {
@@ -26,11 +26,11 @@ function b(e) {
     if (null == e) throw Error("useSoundPlayback must be used within a SoundPlaybackProvider");
     return e
   }();
-  return (0, i.jsx)(o.P3F, {
+  return (0, i.jsx)(r.P3F, {
     className: g.soundIcon,
     onClick: e => n(t, e),
     "aria-label": f.intl.string(f.t.Kd4uxM),
-    children: (0, i.jsx)(o.gj8, {
+    children: (0, i.jsx)(r.gj8, {
       size: "xs",
       color: "currentColor",
       className: g.icon,
@@ -38,7 +38,7 @@ function b(e) {
     })
   })
 }
-let m = [{
+let b = [{
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk734934.p,
@@ -120,14 +120,14 @@ let m = [{
           className: g.soundRow,
           children: [(0, i.jsx)("span", {
             children: t
-          }), (0, i.jsx)(b, {
+          }), (0, i.jsx)(m, {
             sound: e.sound
           })]
         })
       },
       useValue: () => {
         var t;
-        let n = (0, r.e7)([d.Z], () => d.Z.isSoundDisabled(e.sound)),
+        let n = (0, o.e7)([d.Z], () => d.Z.isSoundDisabled(e.sound)),
           i = null == (t = e.useDisabled) ? true : t.call(e);
         return !n && !i
       },
@@ -138,7 +138,7 @@ let m = [{
       useDisabled: () => {
         var t;
         let n = null == (t = e.useDisabled) ? true : t.call(e),
-          i = (0, r.e7)([d.Z], () => d.Z.getDisableAllSounds());
+          i = (0, o.e7)([d.Z], () => d.Z.getDisableAllSounds());
         return n || i
       },
       useTooltip: e.useTooltip
@@ -165,20 +165,20 @@ let m = [{
     ContextProvider: function(e) {
       let {
         children: t
-      } = e, n = l.useRef(null), r = l.useCallback((e, t) => {
+      } = e, n = l.useRef(null), o = l.useCallback((e, t) => {
         t.stopPropagation(), t.preventDefault(), null != n.current && n.current.stop(), n.current = (0, c.GN)(e)
       }, []);
       l.useEffect(() => () => {
         var e;
         null == (e = n.current) || e.stop()
       }, []);
-      let o = l.useMemo(() => ({
-        handlePreviewSound: r
-      }), [r]);
+      let r = l.useMemo(() => ({
+        handlePreviewSound: o
+      }), [o]);
       return (0, i.jsx)(v.Provider, {
-        value: o,
+        value: r,
         children: t
       })
     },
-    getLayout: () => [m[0].node, p, m[1].node, x, ...m.slice(2).map(e => e.node)]
+    getLayout: () => [b[0].node, p, b[1].node, x, ...b.slice(2).map(e => e.node)]
   })

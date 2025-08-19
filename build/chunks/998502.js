@@ -183,14 +183,15 @@ let z = {
     setObservedGamesCallback(e, t, n) {
       try {
         w = {};
-        let r = 0;
-        this.getDiscordUtils().setObservedGamesCallback(e.map(e => {
+        let r = 0,
+          i = this.getDiscordUtils();
+        (t && null != i.setObservedGamesCallback2 ? i.setObservedGamesCallback2 : i.setObservedGamesCallback)(e.map(e => {
           let t = ++r;
           return null != e.id && (w[t] = e.id), v(y({}, e), {
             cmdline: e.cmdLine,
             id: t
           })
-        }), t, e => n(e.map(Y)))
+        }), e => n(e.map(Y)))
       } catch (e) {}
     },
     setGameDetectionCallback(e) {
@@ -205,7 +206,9 @@ let z = {
       null == (e = (t = this.getDiscordUtils()).checkForRobloxSubgameUpdate) || module.call(exports)
     },
     setCandidateGamesCallback(e) {
-      this.getDiscordUtils().setCandidateGamesCallback(t => e(t.map(Y)))
+      this.getDiscordUtils().setCandidateGamesCallback(t => {
+        e(t.map(Y))
+      })
     },
     clearCandidateGamesCallback() {
       this.getDiscordUtils().clearCandidateGamesCallback()

@@ -1,12 +1,12 @@
 /** Chunk was on 36878 **/
 /** chunk id: 636298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -55,21 +55,21 @@ function v(e) {
     })]
   })
 }
-let b = Chunk647438.memo(function(e) {
+let m = Chunk647438.memo(function(e) {
   let {
     onClose: t,
     setShowNavigationMobile: n,
     setting: l
-  } = e, r = null == l ? true : l.useTitle(), {
+  } = e, o = null == l ? true : l.useTitle(), {
     showNavigationMobile: a
   } = (0, c.t)();
   return (0, i.jsxs)("div", {
-    className: o()(f.content, {
+    className: r()(f.content, {
       [f.mobile]: s.tq,
       [f.mobileNavigationOpen]: a
     }),
     children: [(0, i.jsx)(v, {
-      title: r,
+      title: o,
       onClose: t,
       setShowNavigationMobile: n
     }), (0, i.jsx)(u.w0Z, {

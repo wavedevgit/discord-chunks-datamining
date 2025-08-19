@@ -22,5 +22,5 @@ let a = (0, Chunk509613.Em)("ReactionNotifications", {
     value: Chunk524437.Ns.NOTIFICATIONS_DISABLED
   }],
   useValue: Chunk695346.fz.useSetting,
-  setValue: e => (0, l.MR)(e, o.fz.getSetting())
+  setValue: e => (0, l.MR)(e, r.fz.getSetting())
 })

@@ -74,7 +74,7 @@ function T(e) {
     displayProfile: B,
     size: 413,
     canAnimate: false
-  }), G = (0, i.e7)([_.Z], () => _.Z.getAllPending()), Z = (0, h.SD)({
+  }), G = (0, i.cj)([_.Z], () => _.Z.getAllPending()), Z = (0, h.SD)({
     userId: t.id,
     image: G.pendingAvatar
   }), Y = I ? O.BRd.DARK : O.BRd.LIGHT;

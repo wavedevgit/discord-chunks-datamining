@@ -12,7 +12,7 @@ let s = (0, Chunk509613.Em)("MobileNotificationDelay", {
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["eJE6+P"]),
   useOptions: () => Chunk392711.range(1, 11).map(e => ({
     value: 60 * e,
-    label: o.intl.formatToPlainString(o.t.iXLF9f, {
+    label: r.intl.formatToPlainString(r.t.iXLF9f, {
       minutes: e
     })
   })),

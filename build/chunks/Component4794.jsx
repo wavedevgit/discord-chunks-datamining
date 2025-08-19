@@ -18,12 +18,12 @@ let a = Chunk647438.memo(function(e) {
   } = t, [c, d] = l.useState(false), f = null == n ? true : n(c), g = null == u ? true : u();
   return (0, i.jsx)("div", {
     className: s.accordion,
-    children: (0, i.jsx)(o.I, {
+    children: (0, i.jsx)(r.I, {
       title: f,
       subtitle: g,
       isOpen: c,
       setIsOpen: d,
-      children: a.map(e => (0, i.jsx)(r.Z, {
+      children: a.map(e => (0, i.jsx)(o.Z, {
         node: e
       }, e.key))
     })
