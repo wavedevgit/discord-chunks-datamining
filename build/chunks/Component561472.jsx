@@ -42,7 +42,7 @@ let v = function(e) {
     icons: _.J6,
     onDrop: e => {
       if (I) returnfalse;
-      w && null != v && ((0, b.d)(e, v, j, {
+      w && null != v && ((0, b.d5)(e, v, j, {
         requireConfirm: O,
         showLargeMessageDialog: false,
         origin: "drag_drop"

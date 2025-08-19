@@ -409,7 +409,7 @@ let eo = Chunk647438.memo(function(e) {
     });
     let w = i.useCallback(async e => {
         let n = e.clipboardData.files[0];
-        null != n && n.type.startsWith("image/") && (e.preventDefault(), await (0, H.d)([n], t, Z.d.FirstThreadMessage, {
+        null != n && n.type.startsWith("image/") && (e.preventDefault(), await (0, H.d5)([n], t, Z.d.FirstThreadMessage, {
           origin: "clipboard"
         }), j.getState().setFormOpenFromUserAction())
       }, [t, j]),
@@ -629,7 +629,7 @@ let eu = Chunk647438.memo(function(e) {
             }),
             onChange: y,
             onSubmit: w,
-            promptToUpload: H.d,
+            promptToUpload: H.d5,
             disabled: a,
             onKeyDown: e => {
               ("ArrowUp" === e.key || "ArrowDown" === e.key) && e.stopPropagation(), b && "Escape" === e.key && !j.getState().submitting && (null == s || s.blur(), j.getState().setFormOpen(false), j.getState().setTitleFocused(false), j.getState().setBodyFocused(false), j.getState().setPreviewing(false))

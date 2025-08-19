@@ -69,7 +69,7 @@ function S(e) {
       className: C.fileInput,
       ref: u,
       onChange: e => {
-        null == a || a(), (0, j.d)(e.currentTarget.files, m, x.d.FirstThreadMessage, {
+        null == a || a(), (0, j.d5)(e.currentTarget.files, m, x.d.FirstThreadMessage, {
           requireConfirm: true,
           origin: "file_picker"
         }), b.S.dispatch(_.CkL.TEXTAREA_FOCUS), e.currentTarget.value = null

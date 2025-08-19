@@ -2,7 +2,7 @@
 /** chunk id: 127654, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   G: () => Z,
-  d: () => C
+  d5: () => C
 }), require("./539854.js"), require("./388685.js"), require("./415506.js");
 var Chunk481060 = require("./481060.js"),
   Chunk475179 = require("./475179.js"),
@@ -111,12 +111,13 @@ async function C(t, e, i) {
   if (t.length < 1) return;
   if (null != n && n.length !== t.length) throw Error("Unexpected mismatch between files and file metadata");
   let O = e.getGuildId(),
-    b = await P(Array.from(t), m, {
+    b = Array.from(t).map(t => t.type),
+    T = await P(Array.from(t), m, {
       channel: e,
       currentGuildId: O
     });
-  if ((0, y.Bf)(b, O)) return void Z(e, b);
-  if (f.Z.getUploadCount(e.id, i) + b.length > S.dN1) {
+  if ((0, y.Bf)(T, O)) return void Z(e, T);
+  if (f.Z.getUploadCount(e.id, i) + T.length > S.dN1) {
     (0, l.openUploadError)({
       title: w.intl.string(w.t.wOr6hI),
       help: w.intl.formatToPlainString(w.t["qqyp/f"], {
@@ -124,17 +125,17 @@ async function C(t, e, i) {
       })
     }), v.default.track(S.rMx.UPLOAD_FILE_LIMIT_ERROR, {
       existing_count: f.Z.getUploadCount(e.id, i),
-      new_count: b.length
+      new_count: T.length
     });
     return
   }
   if (e.type !== S.d4z.GUILD_VOICE && e.type !== S.d4z.GUILD_STAGE_VOICE || h.Z.getChatOpen(e.id) || r.Z.updateChatOpen(e.id, true), u) {
-    let t = b.map((t, e) => I({
+    let t = T.map((t, e) => I({
       file: t,
       platform: d.ow.WEB,
       isThumbnail: p,
       origin: m,
-      originalContentType: t.type
+      originalContentType: b[e]
     }, null == n ? true : n[e]));
     o.Z.addFiles({
       files: t,
@@ -143,14 +144,14 @@ async function C(t, e, i) {
       draftType: i
     })
   } else {
-    let t = b.map((t, i) => {
+    let t = T.map((t, i) => {
       let r = null != n ? n[i] : {};
       return new a.nH(I({
         file: t,
         platform: d.ow.WEB,
         isThumbnail: p,
         origin: m,
-        originalContentType: t.type
+        originalContentType: b[i]
       }, r), e.id)
     });
     s.Z.sendMessage(e.id, {

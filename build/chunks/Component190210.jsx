@@ -581,7 +581,7 @@ function el(e) {
     color: "transparent",
     look: "blank",
     onChange: e => {
-      (0, D.d)(e.currentTarget.files, t, A.d.ChannelMessage, {
+      (0, D.d5)(e.currentTarget.files, t, A.d.ChannelMessage, {
         requireConfirm: true,
         origin: "file_picker"
       }), e.currentTarget.value = null

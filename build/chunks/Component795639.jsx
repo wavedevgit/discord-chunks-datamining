@@ -83,7 +83,7 @@ let I = e => {
       height: 86 * e
     }
   }, [j]), R = i.useCallback(e => {
-    null != C && h.Z.remove(a.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type), (0, y.d)(e.currentTarget.files, a, f.Ie.CREATE_FORUM_POST.drafts.type, {
+    null != C && h.Z.remove(a.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type), (0, y.d5)(e.currentTarget.files, a, f.Ie.CREATE_FORUM_POST.drafts.type, {
       requireConfirm: true,
       isThumbnail: true,
       origin: "file_picker"

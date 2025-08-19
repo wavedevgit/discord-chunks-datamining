@@ -45,7 +45,7 @@ function b(t) {
     let t = new Blob([b], {
       type: "text/plain"
     });
-    await (0, c.d)([(0, i.dp)(t, "message.txt", "text/plain")], e, o.d.ChannelMessage, {
+    await (0, c.d5)([(0, i.dp)(t, "message.txt", "text/plain")], e, o.d.ChannelMessage, {
       requireConfirm: true,
       showLargeMessageDialog: true
     }), a.S.dispatchToLastSubscribed(f.CkL.CLEAR_TEXT)

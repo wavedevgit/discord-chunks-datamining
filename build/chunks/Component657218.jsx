@@ -486,7 +486,7 @@ function ee(e) {
       onBlur: g,
       onChange: b,
       onSubmit: y,
-      promptToUpload: k.d
+      promptToUpload: k.d5
     })]
   })
 }

@@ -287,7 +287,7 @@ class ta extends Chunk647438.PureComponent {
       renderAttachButton: this.renderAttachButton,
       renderAppLauncherButton: Chunk166459,
       renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-      promptToUpload: Chunk127654.d,
+      promptToUpload: Chunk127654.d5,
       highlighted: a,
       setEditorRef: e => this.editorRef = e
     }) : (0, Chunk951288.jsx)(Chunk893718.ZP, {
@@ -311,7 +311,7 @@ class ta extends Chunk647438.PureComponent {
       renderApplicationCommandIcon: this.renderApplicationCommandIcon,
       renderAppLauncherButton: Chunk166459,
       renderAppCommandButton: Chunk738619,
-      promptToUpload: Chunk127654.d,
+      promptToUpload: Chunk127654.d5,
       highlighted: a,
       setEditorRef: e => this.editorRef = e,
       onCommandSentinelTyped: Chunk144144,
