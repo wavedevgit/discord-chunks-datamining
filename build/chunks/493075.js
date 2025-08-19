@@ -13,7 +13,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk987338 = require("./987338.js");
 
 function u(e) {
-  return e === c.NZ.CONTROL ? a.k3.CONTROL : e === c.NZ.NOT_ELIGIBLE ? a.k3.UNSPECIFIED : a.k3.TREATMENT
+  return e === c.NZ.CONTROL ? a.qK.CONTROL : e === c.NZ.NOT_ELIGIBLE ? a.qK.UNSPECIFIED : a.qK.TREATMENT
 }
 
 function d() {
