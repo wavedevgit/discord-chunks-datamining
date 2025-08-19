@@ -1,14 +1,13 @@
 /** Chunk was on 91173 **/
 /** chunk id: 722334, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  W: () => C
+  W: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
   Chunk617136 = require("./617136.js"),
@@ -21,19 +20,20 @@ var Chunk120356 = require("./120356.js"),
   Chunk815648 = require("./815648.js"),
   Chunk87181 = require("./87181.js");
 
-function E(e) {
+function b(e) {
   let {
-    questId: t
+    questId: t,
+    fullWidth: n
   } = e;
   return (0, r.jsx)("div", {
-    className: h.buttonContainer,
-    children: (0, r.jsx)(a.zx, {
-      className: h.button,
-      color: a.Tt.BRAND,
+    className: _.buttonContainer,
+    children: (0, r.jsx)(a.zxk, {
+      fullWidth: n,
+      variant: "primary",
       onClick: () => {
-        (0, p.navigateToQuestHome)({
-          fromContent: d.jn.EXCLUDED_QUEST_EMBED
-        }), c.default.track(g.rMx.QUEST_CONTENT_CLICKED, function(e) {
+        (0, d.navigateToQuestHome)({
+          fromContent: u.jn.EXCLUDED_QUEST_EMBED
+        }), s.default.track(f.rMx.QUEST_CONTENT_CLICKED, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -53,50 +53,51 @@ function E(e) {
         }({
           quest_id: t,
           click_id: (0, o.Z)(),
-          cta_name: u.jZ.VIEW_QUESTS,
+          cta_name: c.jZ.VIEW_QUESTS,
           is_targeted: false
-        }, (0, u.mH)(d.jn.EXCLUDED_QUEST_EMBED)))
+        }, (0, c.mH)(u.jn.EXCLUDED_QUEST_EMBED)))
       },
-      children: _.intl.string(_.t.GURBQk)
+      text: g.intl.string(g.t.GURBQk)
     })
   })
 }
 
-function C(e) {
+function E(e) {
   let {
     questId: t
   } = e, {
     containerRef: n,
     size: i
-  } = (0, m.h)();
-  return (0, u.Zk)(f.V_.EXCLUDED_QUEST, t), (0, r.jsxs)("div", {
+  } = (0, p.h)();
+  return (0, c.Zk)(m.V_.EXCLUDED_QUEST, t), (0, r.jsxs)("div", {
     ref: e => {
       n.current = e
     },
-    className: l()(h.container, {
-      [h.wide]: "lg" === i,
-      [h.tall]: "lg" !== i
+    className: l()(_.container, {
+      [_.wide]: "lg" === i,
+      [_.tall]: "lg" !== i
     }),
     children: [(0, r.jsxs)("div", {
-      className: h.contentContainer,
-      children: [(0, r.jsx)(s.X6q, {
+      className: _.contentContainer,
+      children: [(0, r.jsx)(a.X6q, {
         variant: "lg" === i ? "heading-xl/bold" : "heading-lg/bold",
         color: "header-primary",
-        children: _.intl.string(_.t.vnP31d)
-      }), (0, r.jsx)(s.Text, {
+        children: g.intl.string(g.t.vnP31d)
+      }), (0, r.jsx)(a.Text, {
         variant: "lg" === i ? "text-sm/medium" : "text-xs/medium",
         color: "text-default",
-        className: h.__invalid_mobileWebCopy,
-        children: _.intl.string(_.t.nuWSYW)
-      }), (0, r.jsx)(E, {
-        questId: t
+        className: _.__invalid_mobileWebCopy,
+        children: g.intl.string(g.t.nuWSYW)
+      }), (0, r.jsx)(b, {
+        questId: t,
+        fullWidth: "lg" !== i
       })]
     }), (0, r.jsx)("div", {
-      className: h.imgContainer,
+      className: _.imgContainer,
       children: (0, r.jsx)("img", {
-        src: b,
+        src: h,
         alt: "",
-        className: h.missingQuestImage
+        className: _.missingQuestImage
       })
     })]
   })

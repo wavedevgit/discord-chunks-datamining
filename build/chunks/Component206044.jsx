@@ -74,12 +74,12 @@ let P = (0, Chunk815061.animated)(Chunk481060.CJ0),
       toggleExpanded: A,
       sourceQuestContent: L
     } = e, {
-      ref: B,
-      height: k
+      ref: k,
+      height: B
     } = (0, c.ZP)(), [I, Z] = o.useState(null), [U, W] = o.useState(null), G = (0, m.Z)(e => {
       let t = e.target;
       Z(t.offsetWidth), W(t.scrollWidth)
-    }), F = (0, d.y)(G), H = (0, v.uq)(w), X = w === g.jn.QUESTS_EMBED, Y = (0, h.t5)(r, N.dr.QUESTS_CARD, w, L), z = (null == (t = r.userStatus) ? true : t.completedAt) != null, V = (0, p.O5)(), J = (0, h.B6)(r.config.expiresAt), K = (0, h.B6)(x.r.build(r.config).rewardsExpireAt), $ = o.useMemo(() => null != r.config.cosponsorMetadata, [r]), ee = e => {
+    }), F = (0, d.y)(G), H = (0, v.uq)(w), X = w === g.jn.QUESTS_EMBED, Y = (0, h.t5)(r, O.dr.QUESTS_CARD, w, L), z = (null == (t = r.userStatus) ? true : t.completedAt) != null, V = (0, p.O5)(), J = (0, h.B6)(r.config.expiresAt), K = (0, h.B6)(x.r.build(r.config).rewardsExpireAt), $ = o.useMemo(() => null != r.config.cosponsorMetadata, [r]), ee = e => {
       e.stopPropagation(), e.currentTarget.blur(), A(), V({
         questId: r.id,
         questContent: w,
@@ -93,7 +93,7 @@ let P = (0, Chunk815061.animated)(Chunk481060.CJ0),
       gameTileSize: C.fF.MEDIUM,
       quest: r,
       separatorSpacing: C.US.MEDIUM,
-      theme: O.BR.DARK,
+      theme: N.BR.DARK,
       withGameTile: !X || null == r.config.cosponsorMetadata
     });
     return (0, s.jsxs)("div", {
@@ -104,7 +104,7 @@ let P = (0, Chunk815061.animated)(Chunk481060.CJ0),
       }),
       "aria-label": q.intl.string(q.t.dcl9MT),
       style: {
-        height: H ? k : true
+        height: H ? B : true
       },
       children: [(0, s.jsx)(b.Z, {
         quest: r,
@@ -146,7 +146,7 @@ let P = (0, Chunk815061.animated)(Chunk481060.CJ0),
                   quest: r,
                   questContent: w,
                   className: E.headerCollapsedRewardTile,
-                  location: N.dr.QUESTS_CARD,
+                  location: O.dr.QUESTS_CARD,
                   sourceQuestContent: L
                 })
               }), (0, s.jsxs)("div", {
@@ -164,7 +164,7 @@ let P = (0, Chunk815061.animated)(Chunk481060.CJ0),
             })
           }), (0, s.jsx)(a.animated.div, {
             ref: e => {
-              B.current = e
+              k.current = e
             },
             className: i()(E.headerExpandedContent, {
               [E.outerContainerGiftInventory]: H,

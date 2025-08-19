@@ -26,8 +26,8 @@ function h(e) {
     sourceQuestContent: x
   } = e, [C, j] = o.useState(false), f = o.useCallback(() => j(true), []), b = o.useCallback(() => j(false), []), y = (0, i.tP)(t), {
     containerRef: v,
-    size: N,
-    height: O
+    size: O,
+    height: N
   } = (0, m.h)(), {
     expansionSpring: q,
     isAnimating: E,
@@ -38,7 +38,7 @@ function h(e) {
       location: n,
       quest: t
     })
-  }), P = null != O ? O : u.U0;
+  }), P = null != N ? N : u.U0;
   return (0, s.jsx)(l.A, {
     questOrQuests: t,
     questContent: n,
@@ -65,7 +65,7 @@ function h(e) {
           isQuestExpired: y,
           location: n,
           quest: t,
-          size: N,
+          size: O,
           expansionSpring: q,
           isAnimating: E,
           isExpanded: T,
@@ -76,7 +76,7 @@ function h(e) {
           quest: t,
           isQuestExpired: y,
           location: n,
-          size: N,
+          size: O,
           isFocused: C,
           isExpanded: T,
           isAnimating: E,

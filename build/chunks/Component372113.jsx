@@ -96,7 +96,7 @@ function M(e) {
     questContent: r,
     questContentPosition: i,
     sourceQuestContent: d
-  } = e, m = n >= x.OH.COMPLETED, p = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), h = (0, a.e7)([C.Z], () => C.Z.isEnrolling(t.id)), j = (0, g.q8)(t), f = (0, g.Vl)(t), b = (0, N.Ks)({
+  } = e, m = n >= x.OH.COMPLETED, p = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), h = (0, a.e7)([C.Z], () => C.Z.isEnrolling(t.id)), j = (0, g.q8)(t), f = (0, g.Vl)(t), b = (0, O.Ks)({
     progressState: n,
     quest: t,
     questContent: r,
@@ -132,17 +132,17 @@ let _ = e => {
     quest: n,
     location: r,
     size: c,
-    isFocused: N,
+    isFocused: O,
     isQuestExpired: _,
     isExpanded: D,
     isAnimating: Q,
     contentPosition: A,
     sourceQuestContent: L
-  } = e, B = (0, x._Q)(n), k = (0, x.B6)(null == (t = n.userStatus) ? true : t.completedAt, {
+  } = e, k = (0, x._Q)(n), B = (0, x.B6)(null == (t = n.userStatus) ? true : t.completedAt, {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), I = B >= x.OH.ACCEPTED, Z = B >= x.OH.COMPLETED, U = (0, g.Xv)(n.config), W = D || Q, G = (0, x.t5)(n, q.dr.QUESTS_CARD, r, L), F = (0, h.O5)(), H = o.useMemo(() => b.r.build(n.config), [n.config]), X = (0, x.Rf)(n), Y = (0, f.DD)({
+  }), I = k >= x.OH.ACCEPTED, Z = k >= x.OH.COMPLETED, U = (0, g.Xv)(n.config), W = D || Q, G = (0, x.t5)(n, q.dr.QUESTS_CARD, r, L), F = (0, h.O5)(), H = o.useMemo(() => b.r.build(n.config), [n.config]), X = (0, x.Rf)(n), Y = (0, f.DD)({
     quest: n,
     taskDetails: X,
     location: q.dr.QUESTS_CARD,
@@ -173,7 +173,7 @@ let _ = e => {
               color: u.TVs.colors.WHITE
             })
           }), (0, s.jsx)(y.Z, {
-            autoplay: N,
+            autoplay: O,
             className: i()(S.gridImg, {
               [S.questRewardEmbed]: "lg" === c,
               [S.questRewardEmbedSm]: "sm" === c,
@@ -190,7 +190,7 @@ let _ = e => {
       }), (0, s.jsxs)("div", {
         className: i()(S.gridText, S.taskDetails),
         children: [(0, s.jsx)(u.Text, {
-          variant: (0, O.uq)(r) && !I && "lg" === c ? "text-lg/medium" : "lg" === c ? "text-md/medium" : "sm" === c ? "text-sm/medium" : "text-xs/medium",
+          variant: (0, N.uq)(r) && !I && "lg" === c ? "text-lg/medium" : "lg" === c ? "text-md/medium" : "sm" === c ? "text-sm/medium" : "text-xs/medium",
           className: S.taskInstructions,
           children: _ ? T.intl.formatToPlainString(T.t["ge+AJi"], {
             questName: n.config.messages.questName
@@ -247,7 +247,7 @@ let _ = e => {
             isQuestExpired: _,
             sharedQuestFields: H,
             collectibleQuestRewardDescription: Y,
-            formattedCompletionDate: k
+            formattedCompletionDate: B
           })
         })]
       }), z ? (0, s.jsxs)("div", {
@@ -282,7 +282,7 @@ let _ = e => {
           children: T.intl.string(T.t.LLLLPD)
         }), _ && !Z ? null : (0, s.jsx)(M, {
           quest: n,
-          progressState: B,
+          progressState: k,
           isCollectibleQuest: U,
           questContent: r,
           sourceQuestContent: L

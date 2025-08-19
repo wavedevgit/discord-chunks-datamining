@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx");
 
-function O(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       s = Object.keys(n);
@@ -61,7 +61,7 @@ function E(e) {
   var t;
   let n = (0, r.e7)([C.Z], () => C.Z.questDeliveryOverride, []),
     u = (0, h.GN)(e.questContent),
-    O = [j.jn.QUEST_BAR_V2, j.jn.QUEST_BAR].includes(e.questContent),
+    N = [j.jn.QUEST_BAR_V2, j.jn.QUEST_BAR].includes(e.questContent),
     q = (0, m.O5)(),
     E = (0, p.aM)(),
     T = (0, x.Yj)(e.quest),
@@ -89,24 +89,24 @@ function E(e) {
         ctaContent: m.jZ.CONTEXT_MENU_COPY_LINK,
         impressionId: E,
         sourceQuestContent: e.sourceQuestContent
-      }), (0, i.showToast)((0, i.createToast)(N.intl.string(N.t["+5kSoa"]), i.ToastType.SUCCESS)))
+      }), (0, i.showToast)((0, i.createToast)(O.intl.string(O.t["+5kSoa"]), i.ToastType.SUCCESS)))
     }, [E, e.quest.id, e.questContent, e.questContentPosition, e.sourceQuestContent, S]),
     A = e => (0, i.showToast)((0, i.createToast)(new l.Z(e, e.status).message, i.ToastType.FAILURE)),
     L = () => (0, g.is)(e.quest.id).catch(A),
-    B = o.useMemo(() => (0, s.jsx)(i.S89, {
+    k = o.useMemo(() => (0, s.jsx)(i.S89, {
       id: "delivery",
       label: "Show in Quest Bar",
       checked: (null == n ? true : n.id) === e.quest.id,
       action: _
     }), [_, e.quest.id, null == n ? true : n.id]),
-    k = e.shouldShowDisclosure && e.quest.id !== b.V6;
+    B = e.shouldShowDisclosure && e.quest.id !== b.V6;
   return (0, s.jsxs)(i.v2r, {
     variant: "fixed",
     onSelect: () => {
       null != e.onSelect ? e.onSelect() : (0, a.Zy)()
     },
     navId: "quests-entry",
-    "aria-label": N.intl.string(N.t.ogxXGh),
+    "aria-label": O.intl.string(O.t.ogxXGh),
     onClose: null != (t = null == e ? true : e.onClose) ? t : v.dG,
     children: [(0, s.jsxs)(i.kSQ, {
       children: [(0, s.jsx)(i.sNh, {
@@ -116,14 +116,14 @@ function E(e) {
         icon: i.zFc
       }), S && (0, s.jsx)(i.sNh, {
         id: "share-link",
-        label: N.intl.string(N.t.RDE0SU),
+        label: O.intl.string(O.t.RDE0SU),
         action: Q,
         icon: i.TIy
       }), false]
     }, "major-actions"), (0, s.jsxs)(i.kSQ, {
       children: [!e.hideLearnMore && (0, s.jsx)(i.sNh, {
         id: "learn-more",
-        label: N.intl.string(N.t.Ws2Bl5),
+        label: O.intl.string(O.t.Ws2Bl5),
         action: () => {
           q({
             questId: e.quest.id,
@@ -137,9 +137,9 @@ function E(e) {
           })
         },
         icon: i.qDn
-      }), k && (0, s.jsx)(i.sNh, {
+      }), B && (0, s.jsx)(i.sNh, {
         id: "display-disclosure",
-        label: N.intl.string(N.t.GcsZKC),
+        label: O.intl.string(O.t.GcsZKC),
         action: () => {
           (0, f.openDisclosureModal)(e.quest, {
             content: e.questContent,
@@ -151,7 +151,7 @@ function E(e) {
         }
       }), u && (0, s.jsx)(i.sNh, {
         id: "hide-entrypoint",
-        label: N.intl.string(N.t.NN79Ex),
+        label: O.intl.string(O.t.NN79Ex),
         action: () => {
           q({
             questId: e.quest.id,
@@ -159,13 +159,13 @@ function E(e) {
             questContentPosition: e.questContentPosition,
             questContentCTA: m.jZ.CONTEXT_MENU_HIDE_CONTENT,
             sourceQuestContent: e.sourceQuestContent
-          }), (0, h.GN)(e.questContent) && ((0, g.gl)(e.quest.id, e.questContent), O && (0, f.maybeShowSurveyForQuest)(e.quest))
+          }), (0, h.GN)(e.questContent) && ((0, g.gl)(e.quest.id, e.questContent), N && (0, f.maybeShowSurveyForQuest)(e.quest))
         },
-        subtext: N.intl.string(N.t["1u3YPD"])
+        subtext: O.intl.string(O.t["1u3YPD"])
       })]
     }, "minor-actions"), e.quest.preview && (0, s.jsxs)(i.kSQ, {
       label: "Preview Controls",
-      children: [B, (0, s.jsx)(i.sNh, {
+      children: [k, (0, s.jsx)(i.sNh, {
         id: "dismiss",
         label: "Reset Dismissibility",
         action: R
@@ -254,14 +254,14 @@ function T(e) {
         closePopout: t
       } = e;
       return a ? (0, s.jsx)(u.Z, {
-        children: (0, s.jsx)(E, q(O({}, h), {
+        children: (0, s.jsx)(E, q(N({}, h), {
           quest: l,
           questContent: c,
           questContentPosition: d,
           onClose: t,
           sourceQuestContent: p
         }))
-      }) : (0, s.jsx)(E, q(O({}, h), {
+      }) : (0, s.jsx)(E, q(N({}, h), {
         quest: l,
         questContent: c,
         questContentPosition: d,
