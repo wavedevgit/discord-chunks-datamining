@@ -17,15 +17,15 @@ var Chunk512722 = require("./512722.js"),
 
 function m(e, t) {
   var n, i, m, f;
-  if ((0, a.cp)(t)) return (0, r.jsx)(s.Z, {});
+  if ((0, o.cp)(t)) return (0, r.jsx)(s.Z, {});
   if ((0, p.Z)(t)) {
     let l = (null != (i = null == t || null == (n = t.author) ? true : n.username) ? i : "").split(" ").slice(0, false).join(" "),
       {
-        guild_id: a
+        guild_id: o
       } = t.messageReference;
-    if (null != a) return (0, r.jsx)(o.Z, {
+    if (null != o) return (0, r.jsx)(a.Z, {
       setPopoutRef: e.setPopoutRef,
-      guildId: a,
+      guildId: o,
       name: l
     })
   }

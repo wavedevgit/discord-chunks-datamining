@@ -30,7 +30,7 @@ function g(e) {
       link_channel_type: n.type,
       guild_id: _,
       channel_id: h
-    }), (0, o.K)(t.id, n.id), l.default.selectVoiceChannel(n.id)
+    }), (0, a.K)(t.id, n.id), l.default.selectVoiceChannel(n.id)
   }, [g, t, n, _, h]), E = (0, r.jsx)(s.Z.Channel, {
     channel: n
   });
@@ -49,7 +49,7 @@ function g(e) {
               guildName: t.name
             }), (0, r.jsx)("span", {
               className: f.infoBadge,
-              children: (0, r.jsx)(a.Z, {
+              children: (0, r.jsx)(o.Z, {
                 guild: t,
                 isBannerVisible: false
               })

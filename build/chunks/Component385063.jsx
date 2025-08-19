@@ -46,7 +46,7 @@ function p(e) {
         color: "text-link",
         children: d.intl.string(d.t["5Q9+/P"])
       }, "edit-group-button-".concat(t.id)),
-      onEditGroup: () => (0, a.B)(t.channel_id, o.Z.GROUP_DM_SYSTEM_MESSAGE_NAME)
+      onEditGroup: () => (0, o.B)(t.channel_id, a.Z.GROUP_DM_SYSTEM_MESSAGE_NAME)
     }) : d.intl.format(m ? d.t.SOQ4hI : d.t.oItgEx, {
       username: f.nick,
       usernameHook: g,

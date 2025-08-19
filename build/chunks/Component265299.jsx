@@ -28,7 +28,7 @@ function _(e) {
     fetchPolicy: "cache-or-network",
     callerSource: "embed"
   }), b = i.useMemo(() => n.find(e => e.id === t), [t, n]), E = i.useMemo(() => _.find(e => e.id === t), [t, _]), C = i.useMemo(() => (null == b ? true : b.config.features.includes(l.S.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE)) === true, [null == b ? true : b.config.features]);
-  if (h) return (0, r.jsx)(o.$jN, {
+  if (h) return (0, r.jsx)(a.$jN, {
     className: g.spinner
   });
   if (null != E) return (0, r.jsx)(p.W, {
@@ -38,7 +38,7 @@ function _(e) {
     questId: t,
     reason: m.X.NOT_FOUND
   });
-  if ((0, a.HJ)(b)) {
+  if ((0, o.HJ)(b)) {
     let {
       enabled: e
     } = u.S.getCurrentConfig({

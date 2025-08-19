@@ -1,19 +1,19 @@
 /** Chunk was on 91173 **/
 /** chunk id: 38267, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js");
 
-function o(e) {
+function a(e) {
   return Object.keys(e).some(t => e[t])
 }
 
-function a(e, t) {
-  let [n, a] = r.useState(t), [s, c] = r.useState(o(n)), u = r.useRef(s), d = r.useRef(null), p = r.useCallback(e => {
-    a(t => {
+function o(e, t) {
+  let [n, o] = r.useState(t), [s, c] = r.useState(a(n)), u = r.useRef(s), d = r.useRef(null), p = r.useCallback(e => {
+    o(t => {
       let n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -32,7 +32,7 @@ function a(e, t) {
           }
           return e
         }({}, t, e),
-        r = o(n);
+        r = a(n);
       return r !== u.current && (u.current = r, null != d.current && (cancelAnimationFrame(d.current), d.current = null), r ? c(true) : d.current = requestAnimationFrame(() => c(false))), n
     })
   }, []);

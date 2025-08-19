@@ -42,7 +42,7 @@ function x(e) {
       location: "ChatWallpaperSetSystemMessage"
     }).lightMode,
     D = (0, c.ZP)(P),
-    L = (0, a.wjy)((0, s.ZP)()),
+    L = (0, o.wjy)((0, s.ZP)()),
     {
       chatWallpaper: M,
       isUpdatingChatWallpaperFlag: k,
@@ -56,34 +56,34 @@ function x(e) {
     B = U === P.id,
     G = (0, l.e7)([p.default], () => p.default.getCurrentUser()),
     H = (null == G ? true : G.id) === P.author.id,
-    V = (0, u.m)(O.p9.TIER_2),
+    V = (0, u.m)(v.p9.TIER_2),
     z = _.t(N);
   return (i.useEffect(() => {
     null == M && g.Z.shouldFetchWallpapers && h.k9()
-  }, [M]), null == w) ? null : (I = H ? v.intl.format(v.t.z847Tk, {
-    wallpaper_name: null != (n = null == M ? true : M.label) ? n : v.intl.string(v.t["UQMV/P"])
-  }) : v.intl.format(v.t["+lKndX"], {
+  }, [M]), null == w) ? null : (I = H ? O.intl.format(O.t.z847Tk, {
+    wallpaper_name: null != (n = null == M ? true : M.label) ? n : O.intl.string(O.t["UQMV/P"])
+  }) : O.intl.format(O.t["+lKndX"], {
     username: null == D ? true : D.nick,
-    wallpaper_name: null != (x = null == M ? true : M.label) ? x : v.intl.string(v.t["UQMV/P"])
-  }), Z ? L || R ? z && B ? S = v.intl.formatToPlainString(v.t.PzTpVV, {
-    wallpaperName: null != (j = null == M ? true : M.label) ? j : v.intl.string(v.t["UQMV/P"])
-  }) : H || V || !B || (S = v.intl.format(v.t.JwUhHh, {
+    wallpaper_name: null != (x = null == M ? true : M.label) ? x : O.intl.string(O.t["UQMV/P"])
+  }), Z ? L || R ? z && B ? S = O.intl.formatToPlainString(O.t.PzTpVV, {
+    wallpaperName: null != (j = null == M ? true : M.label) ? j : O.intl.string(O.t["UQMV/P"])
+  }) : H || V || !B || (S = O.intl.format(O.t.JwUhHh, {
     onClickNitro: () => {
       (0, d.uL)(C.Z5c.NITRO_HOME)
     }
-  })) : S = v.intl.format(v.t.dBxFsL, {
+  })) : S = O.intl.format(O.t.dBxFsL, {
     learnMoreLink: m.Z.getArticleURL(C.BhN.DM_WALLPAPERS)
-  }) : S = v.intl.string(v.t["6JSOu7"]), (null == F ? true : F.isViewable) && B && !H && (T = (0, r.jsx)("div", {
+  }) : S = O.intl.string(O.t["6JSOu7"]), (null == F ? true : F.isViewable) && B && !H && (T = (0, r.jsx)("div", {
     className: y.action,
-    children: (0, r.jsx)(o.z, {
+    children: (0, r.jsx)(a.z, {
       variant: "primary",
-      text: v.intl.string(z ? v.t.o6850d : v.t["/ubFp6"]),
+      text: O.intl.string(z ? O.t.o6850d : O.t["/ubFp6"]),
       loading: k,
       onClick: () => {
         h.X(N, w, {
           shouldClear: !z,
           onError: () => {
-            (0, a.showToast)((0, a.createToast)(v.intl.string(v.t.F8FvU1), a.ToastType.FAILURE))
+            (0, o.showToast)((0, o.createToast)(O.intl.string(O.t.F8FvU1), o.ToastType.FAILURE))
           }
         })
       }

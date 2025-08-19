@@ -1,13 +1,13 @@
 /** Chunk was on 91173 **/
 /** chunk id: 160877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $: () => O,
+  $: () => v,
   s: () => C
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk470167 = require("./470167.js"),
   Chunk82659 = require("./82659.jsx"),
   Chunk572691 = require("./572691.js"),
@@ -36,9 +36,9 @@ let h = e => {
       embed: l
     } = e;
     if (!f.n2.has(l.type)) return null;
-    let o = true !== l.video && l.type !== a.h.GIFV ? l.video.url : null != (i = null == (t = l.thumbnail) ? true : t.url) ? i : null == (n = l.image) ? true : n.url;
-    return null == o ? null : (0, r.jsx)(E, {
-      url: o
+    let a = true !== l.video && l.type !== o.h.GIFV ? l.video.url : null != (i = null == (t = l.thumbnail) ? true : t.url) ? i : null == (n = l.image) ? true : n.url;
+    return null == a ? null : (0, r.jsx)(E, {
+      url: a
     })
   },
   E = e => {
@@ -49,11 +49,11 @@ let h = e => {
     return (0, r.jsx)("div", {
       className: _.mediaContainer,
       children: i ? (0, r.jsx)(u.Z, {
-        className: o()(_.video, _.media),
+        className: a()(_.video, _.media),
         controls: true,
         src: t
       }) : (0, r.jsx)("img", {
-        className: o()(_.image, _.media),
+        className: a()(_.image, _.media),
         src: t,
         alt: n
       })
@@ -67,13 +67,13 @@ function C(e) {
   }), e()
 }
 
-function O(e) {
+function v(e) {
   let {
     channelId: t,
     messageId: n,
     isReportFalsePositiveLoading: l,
-    analyticsContext: o,
-    attachmentPreview: a,
+    analyticsContext: a,
+    attachmentPreview: o,
     embedPreview: c,
     onConfirmPress: u,
     transitionState: d,
@@ -83,24 +83,24 @@ function O(e) {
       action: m.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
       channelId: t,
       messageId: n,
-      context: o
+      context: a
     }), p()
-  }, [t, n, o, p]), _ = i.useCallback(() => {
+  }, [t, n, a, p]), _ = i.useCallback(() => {
     null == u || u(), (0, m.aP)({
       action: m.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM,
       channelId: t,
       messageId: n,
-      context: o
+      context: a
     })
-  }, [t, n, o, u]);
+  }, [t, n, a, u]);
   return i.useEffect(() => {
     (0, m.aP)({
       action: m.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED,
       channelId: t,
       messageId: n,
-      context: o
+      context: a
     })
-  }, [t, n, o]), (0, r.jsxs)(s.Modal, {
+  }, [t, n, a]), (0, r.jsxs)(s.Modal, {
     transitionState: d,
     onClose: p,
     title: g.intl.string(g.t.TPpVkJ),
@@ -116,8 +116,8 @@ function O(e) {
       loading: l,
       disabled: l
     }],
-    children: [null != a && (0, r.jsx)(h, {
-      attachment: a
+    children: [null != o && (0, r.jsx)(h, {
+      attachment: o
     }), null != c && (0, r.jsx)(b, {
       embed: c
     })]

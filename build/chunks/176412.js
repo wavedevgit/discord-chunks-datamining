@@ -8,7 +8,7 @@ require.d(exports, {
 });
 var r, i, Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk25209 = require("./25209.js"),
   Chunk755721 = require("./755721.js"),
@@ -59,7 +59,7 @@ let S = (r = function(e) {
   })(Object(i)).forEach(function(e) {
     Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
   }), r),
-  T = a().pick((0, Chunk364458.Z)([Chunk428595.Z.RULES, {
+  T = o().pick((0, Chunk364458.Z)([Chunk428595.Z.RULES, {
     commandMention: S
   }, (0, Chunk691424.Z)({
     enableBuildOverrides: false,
@@ -73,8 +73,8 @@ function N(e) {
     application: n,
     location: r,
     sectionName: i,
-    commandName: o,
-    autoDismissOnClick: a = true,
+    commandName: a,
+    autoDismissOnClick: o = true,
     launchingComponentId: c,
     submitting: h = false,
     fetchesApplication: b = true,
@@ -83,7 +83,7 @@ function N(e) {
     context: t,
     applicationId: n.id,
     fetchesApplication: b
-  }), T = (0, x.Q)(S), P = (0, s.e7)([v.Z], () => v.Z.entrypoint()), N = l.useMemo(() => {
+  }), T = (0, x.Q)(S), P = (0, s.e7)([O.Z], () => O.Z.entrypoint()), N = l.useMemo(() => {
     var e, r, i;
     if ("channel" !== t.type) return null != (i = null == (e = n.bot) ? true : e.id) ? i : null == (r = (0, g.If)(t, n.id).descriptor) ? true : r.botId
   }, [t, n.id, n.bot]), A = (0, p.w1)({
@@ -96,7 +96,7 @@ function N(e) {
       let {
         applicationId: t
       } = e;
-      a && O.yT(y.ti.ACTIVITY), (0, f.yw)(j.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
+      o && v.yT(y.ti.ACTIVITY), (0, f.yw)(j.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
         location: r,
         application_id: t,
         section_name: i,
@@ -110,7 +110,7 @@ function N(e) {
     source: P,
     fetchesApplication: b,
     onConfirmActivityLaunchChecksAlertOpen: E
-  }), w = "primary", Z = u.Tt.BRAND, R = null != o ? o : I.intl.string(I.t.zKX8Nj);
+  }), w = "primary", Z = u.Tt.BRAND, R = null != a ? a : I.intl.string(I.t.zKX8Nj);
   return T === p.JS.JOIN ? (w = "active", Z = u.Tt.GREEN, R = I.intl.string(I.t.d9PsMj)) : T !== p.JS.LEAVE || h || (w = "critical-primary", R = I.intl.string(I.t["Hi1/aW"])), {
     onActivityItemSelected: A,
     activityAction: T,
@@ -121,8 +121,8 @@ function N(e) {
 }
 
 function A(e, t) {
-  let n = v.Z.entrypoint(),
-    r = l.useMemo(() => (0, o.debounce)((e, t) => {
+  let n = O.Z.entrypoint(),
+    r = l.useMemo(() => (0, a.debounce)((e, t) => {
       (0, f.yw)(j.rMx.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
         type: e,
         source: t

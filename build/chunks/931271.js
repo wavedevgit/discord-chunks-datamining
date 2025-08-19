@@ -24,7 +24,7 @@ function u(e) {
     isGameLaunchable: g
   } = e;
   if (d.author.id === u || !(0, s.Z)(t, d, p.id)) returnfalse;
-  let _ = (0, o._)(t);
-  return !(!(0, a.n)(_) || (0, c.y)(_) || (0, l.g)(n, t) || (0, i.H)(d)) && (!!m && !!f || !!r.isPlatformEmbedded && !!g)
+  let _ = (0, a._)(t);
+  return !(!(0, o.n)(_) || (0, c.y)(_) || (0, l.g)(n, t) || (0, i.H)(d)) && (!!m && !!f || !!r.isPlatformEmbedded && !!g)
 }
 require("./981631.js")

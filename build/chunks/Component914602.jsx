@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk86357 = require("./86357.jsx"),
   Chunk54936 = require("./54936.jsx"),
   Chunk687755 = require("./687755.jsx"),
@@ -34,13 +34,13 @@ class E extends(r = Chunk647438.PureComponent) {
       isHorizontal: n,
       className: r,
       renderCustomTagline: l,
-      renderCustomTitle: o,
-      renderCustomMedia: a,
+      renderCustomTitle: a,
+      renderCustomMedia: o,
       isEmbed: s
     } = this.props, c = Chunk86357 ? Chunk568836.$G : Chunk345898.Z;
     return (0, Chunk951288.jsx)(Chunk54936, {
       className: r,
-      renderMedia: null != a ? a : this.renderMedia,
+      renderMedia: null != o ? o : this.renderMedia,
       renderTitle: null != Chunk120356 ? Chunk120356 : () => module.name,
       renderTagline: null != Chunk647438 ? Chunk647438 : () => exports.tagline,
       renderActions: this.renderActions,
@@ -55,18 +55,18 @@ class E extends(r = Chunk647438.PureComponent) {
         renderCustomActions: n,
         isMouseOver: r,
         showBuyInline: l
-      } = this.props, o = (l || !t.requiresPayment) && !e;
+      } = this.props, a = (l || !t.requiresPayment) && !e;
       return null != n ? n() : (0, i.jsxs)("div", {
         className: h.priceOs,
         children: [(0, i.jsx)(s.Z, {
           type: s.Z.Types.DIRECTORY_TILE,
           sku: t,
           inLibrary: e,
-          className: o && r ? h.tilePriceWithVisibleBuyButton : h.tilePrice
+          className: a && r ? h.tilePriceWithVisibleBuyButton : h.tilePrice
         }), (0, i.jsx)(c.n, {
           systems: [_.TaA.WINDOWS],
           className: h.platform
-        }), o ? (0, i.jsx)("div", {
+        }), a ? (0, i.jsx)("div", {
           children: "deprecated!"
         }) : null]
       })
@@ -76,30 +76,30 @@ class E extends(r = Chunk647438.PureComponent) {
         muted: t,
         showMediaPlaceholder: n,
         onToggleMute: r,
-        sku: o,
+        sku: a,
         isHorizontal: s,
         storeListing: c
       } = this.props;
       return (0, i.jsxs)(l.Fragment, {
         children: [(0, i.jsx)(p.Z, {
-          className: a()(h.splashContainer, {
+          className: o()(h.splashContainer, {
             [h.splashContainerHorizontal]: s
           }),
-          video: null != c.previewVideo ? (0, m._W)(o.applicationId, c.previewVideo) : true,
-          image: null != c.thumbnail ? (0, m._W)(o.applicationId, c.thumbnail, 600) : null,
-          title: o.name,
+          video: null != c.previewVideo ? (0, m._W)(a.applicationId, c.previewVideo) : true,
+          image: null != c.thumbnail ? (0, m._W)(a.applicationId, c.thumbnail, 600) : null,
+          title: a.name,
           playing: e,
           muted: t,
           placeholder: n,
           onToggleMute: r,
           splashClassName: h.splashVideo,
           splashPlaceholderClassName: h.splashPlaceholder
-        }), o.exclusive ? (0, i.jsx)(d.Z, {
-          className: a()(h.exclusiveRegular, {
+        }), a.exclusive ? (0, i.jsx)(d.Z, {
+          className: o()(h.exclusiveRegular, {
             [h.exclusivePlaying]: e
           })
-        }) : o.isTheGameAwardsWinner ? (0, i.jsx)(u.Z, {
-          className: a()(h.exclusiveRegular, {
+        }) : a.isTheGameAwardsWinner ? (0, i.jsx)(u.Z, {
+          className: o()(h.exclusiveRegular, {
             [h.exclusivePlaying]: e
           })
         }) : null]

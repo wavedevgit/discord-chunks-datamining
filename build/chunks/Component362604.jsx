@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -26,25 +26,25 @@ function C(e) {
     message: t,
     channel: l,
     compact: C
-  } = e, O = (0, a.Wu)([p.Z], () => Array.from(p.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [v, y] = i.useState(null);
+  } = e, v = (0, o.Wu)([p.Z], () => Array.from(p.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [O, y] = i.useState(null);
   return (i.useEffect(() => {
     let e = setInterval(() => {
-      O.length > 0 && y(O[Math.floor(Math.random() * O.length)])
+      v.length > 0 && y(v[Math.floor(Math.random() * v.length)])
     }, 500);
     return () => clearInterval(e)
-  }, [O]), null == l.guild_id) ? null : (0, r.jsxs)("div", {
+  }, [v]), null == l.guild_id) ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(u.Z, {
-      className: o()(E.mainContainer, {
+      className: a()(E.mainContainer, {
         [E.compact]: C
       }),
       icon: n(570111),
       compact: C,
       children: (0, r.jsx)("div", {
-        className: o()(E.__invalid_content, {
+        className: a()(E.__invalid_content, {
           [E.compact]: C
         }),
         children: (0, r.jsx)("div", {
-          className: o()(E.__invalid_messageContent, {
+          className: a()(E.__invalid_messageContent, {
             [E.compact]: C
           }),
           children: "" !== t.content ? t.content : b.intl.string(b.t.wnn1DQ)
@@ -85,9 +85,9 @@ function C(e) {
               action_type: "sticker"
             }), (0, _.O)(t.id, l)
           },
-          children: null != v ? (0, r.jsx)(m.Z, {
+          children: null != O ? (0, r.jsx)(m.Z, {
             size: 32,
-            sticker: v
+            sticker: O
           }) : (0, r.jsx)(c.EO4, {
             size: "md",
             color: "currentColor"

@@ -17,13 +17,13 @@ let s = (e, t) => {
     },
     d = () => {
       c ? l.Z.show({
-        title: a.intl.string(a.t.pvRCSk),
-        body: a.intl.string(a.t.DRi46e),
-        confirmText: a.intl.string(a.t["6GQDFh"]),
+        title: o.intl.string(o.t.pvRCSk),
+        body: o.intl.string(o.t.DRi46e),
+        confirmText: o.intl.string(o.t["6GQDFh"]),
         confirmVariant: "critical-primary",
-        cancelText: a.intl.string(a.t.DmDzZG),
+        cancelText: o.intl.string(o.t.DmDzZG),
         onConfirm: () => (0, i.Mr3)(s),
-        onCancel: o.dG
+        onCancel: a.dG
       }) : (0, i.Mr3)(s)
     };
   (0, i.ZDy)(async () => {

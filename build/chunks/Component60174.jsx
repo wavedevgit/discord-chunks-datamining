@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk954955 = require("./954955.js"),
   s = require.n(Chunk954955),
   Chunk507274 = require("./507274.jsx"),
@@ -58,7 +58,7 @@ class N extends Chunk647438.Component {
       className: n,
       children: i,
       useChatFontScaling: l,
-      tabIndex: a = 0
+      tabIndex: o = 0
     } = this.props, {
       isReactionPickerActive: s
     } = this.state, c = exports.state === Chunk981631.yb.SENDING, f = module === Chunk566006.O.BURST;
@@ -77,7 +77,7 @@ class N extends Chunk647438.Component {
       };
     return exports.type === Chunk981631.uaV.EMOJI_ADDED && 0 === exports.reactions.length ? (0, Chunk951288.jsx)(Chunk387188.e, {
       message: exports,
-      className: o()(Chunk474936.reactionBtn, require)
+      className: a()(Chunk474936.reactionBtn, require)
     }) : (0, Chunk951288.jsx)(Chunk481060.yRy, {
       targetElementRef: this.ref,
       shouldShow: s,
@@ -96,13 +96,13 @@ class N extends Chunk647438.Component {
           tooltipClassName: x.__invalid_addReactionTooltip,
           children: (0, r.jsxs)(u.P3F, (l = P({}, e), s = s = {
             innerRef: this.ref,
-            tabIndex: a,
+            tabIndex: o,
             onClick: e => {
               this.handleAddReactionClick(e)
             },
             onMouseEnter: () => (0, d.x)(y.qR.AddReactionPopoutMouseEntered),
             onFocus: () => (0, d.x)(y.qR.AddReactionPopoutFocused),
-            className: o()(x.reactionBtn, {
+            className: a()(x.reactionBtn, {
               [x.active]: c
             }, n),
             children: [f ? (0, r.jsx)(u.Pt5, P({}, T)) : (0, r.jsx)(u.EO4, P({}, T)), i]
@@ -144,12 +144,12 @@ class N extends Chunk647438.Component {
       } = this.props;
       e.stopPropagation();
       let r = b.default.getCurrentUser();
-      t !== O.O.BURST || (0, C.I5)(r) || (0, f.m)({
+      t !== v.O.BURST || (0, C.I5)(r) || (0, f.m)({
         analytics: {
           type: x.cd.BURST_REACTION_UPSELL,
-          page: null != n.getGuildId() ? v.ZY5.GUILD_CHANNEL : v.ZY5.DM_CHANNEL,
+          page: null != n.getGuildId() ? O.ZY5.GUILD_CHANNEL : O.ZY5.DM_CHANNEL,
           section: (0, _.s4)(n),
-          object: v.qAy.INLINE_REACTION_PICKER_UPSELL
+          object: O.qAy.INLINE_REACTION_PICKER_UPSELL
         }
       }), this.handleReactionPickerToggle()
     }), T(this, "renderReactionPopout", e => {
@@ -159,14 +159,14 @@ class N extends Chunk647438.Component {
         type: n,
         channel: i,
         message: l
-      } = this.props, o = P({
+      } = this.props, a = P({
         openPopoutType: "message_reaction_emoji_picker"
-      }, n === O.O.BURST && {
+      }, n === v.O.BURST && {
         openPopoutType: "message_super_reaction_emoji_picker",
-        page: null != i.getGuildId() ? v.ZY5.GUILD_CHANNEL : v.ZY5.DM_CHANNEL,
+        page: null != i.getGuildId() ? O.ZY5.GUILD_CHANNEL : O.ZY5.DM_CHANNEL,
         section: (0, _.s4)(i),
-        object: v.qAy.REACTION_RAIL
-      }), a = (0, r.jsx)(h.$, {
+        object: O.qAy.REACTION_RAIL
+      }), o = (0, r.jsx)(h.$, {
         closePopout: t,
         channel: i,
         onSelectEmoji: e => {
@@ -177,7 +177,7 @@ class N extends Chunk647438.Component {
           } = e;
           this.onAddReaction(n, i), r && (i ? s()(t, 150)() : t())
         },
-        analyticsOverride: o,
+        analyticsOverride: a,
         messageId: l.id
       });
       return (0, r.jsx)(c.M.Consumer, {
@@ -187,8 +187,8 @@ class N extends Chunk647438.Component {
           } = e;
           return t ? (0, r.jsx)(u.VqE, {
             "aria-label": j.intl.string(j.t["7Xqzdn"]),
-            children: a
-          }) : a
+            children: o
+          }) : o
         }
       })
     })

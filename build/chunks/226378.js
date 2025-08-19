@@ -8,7 +8,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk527805 = require("./527805.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,46 +56,46 @@ function c(e) {
     } = e, u = null == t, d = {
       disabled: false,
       isJoinAction: !u,
-      text: u ? o.intl.string(o.t.I0v0Qk) : o.intl.string(o.t.sqe0ho),
+      text: u ? a.intl.string(a.t.I0v0Qk) : a.intl.string(a.t.sqe0ho),
       tooltip: true
     }, p = (0, i.WS)(c);
-    if (null != t && null != r && t.launchId === r.launchId) return s(a({}, d), {
+    if (null != t && null != r && t.launchId === r.launchId) return s(o({}, d), {
       disabled: true,
-      text: o.intl.string(o.t.DPfdsr),
-      tooltip: o.intl.string(o.t.wJNK8P)
+      text: a.intl.string(a.t.DPfdsr),
+      tooltip: a.intl.string(a.t.wJNK8P)
     });
-    if (u) return s(a({}, d), {
+    if (u) return s(o({}, d), {
       disabled: !p,
-      tooltip: p ? true : o.intl.string(o.t.f41E1t)
+      tooltip: p ? true : a.intl.string(a.t.f41E1t)
     });
     if (null != n && n !== l.Fw.CAN_JOIN) {
       let e;
       switch (n) {
         case l.Fw.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION:
-          e = o.intl.string(o.t.hHGrW1);
+          e = a.intl.string(a.t.hHGrW1);
           break;
         case l.Fw.ACTIVITY_AGE_GATED:
-          e = o.intl.string(o.t["4WuFRE"]);
+          e = a.intl.string(a.t["4WuFRE"]);
           break;
         case l.Fw.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS:
-          e = o.intl.string(o.t.uGDCc3);
+          e = a.intl.string(a.t.uGDCc3);
           break;
         case l.Fw.ACTIVITY_NOT_SUPPORTED_ON_OS:
-          e = o.intl.string(o.t.UXoQTk);
+          e = a.intl.string(a.t.UXoQTk);
           break;
         case l.Fw.CHANNEL_FULL:
-          e = o.intl.string(o.t.rZfiNj);
+          e = a.intl.string(a.t.rZfiNj);
           break;
         case l.Fw.NO_CHANNEL_CONNECT_PERMISSION:
-          e = o.intl.string(o.t.w5SApq);
+          e = a.intl.string(a.t.w5SApq);
           break;
         case l.Fw.NO_CHANNEL:
         case l.Fw.NO_GUILD:
         case l.Fw.NO_USER:
         case l.Fw.IS_AFK_CHANNEL:
-          e = o.intl.string(o.t.Etp6uL)
+          e = a.intl.string(a.t.Etp6uL)
       }
-      return s(a({}, d), {
+      return s(o({}, d), {
         disabled: true,
         tooltip: e
       })

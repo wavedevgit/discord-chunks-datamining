@@ -26,8 +26,8 @@ function h(e) {
     compact: i,
     usernameHook: h,
     channel: b
-  } = e, E = (0, o.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), C = (0, u.ZP)(n), O = h(C), {
-    avatarSrc: v,
+  } = e, E = (0, a.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), C = (0, u.ZP)(n), v = h(C), {
+    avatarSrc: O,
     eventHandlers: {
       onMouseEnter: y,
       onMouseLeave: x
@@ -41,7 +41,7 @@ function h(e) {
         [_.compact]: i
       }),
       iconNode: i ? null : (0, r.jsx)(p.S, {
-        src: v
+        src: O
       }),
       iconContainerClassName: _.iconContainer,
       compact: i,
@@ -57,7 +57,7 @@ function h(e) {
           }),
           username: (0, r.jsxs)("div", {
             className: _.spanCorrection,
-            children: [(0, r.jsx)(a.Text, {
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
@@ -76,7 +76,7 @@ function h(e) {
           }),
           children: g.intl.format(g.t.W0UBIy, {
             username: C.nick,
-            usernameHook: O,
+            usernameHook: v,
             guildName: null != (t = null == E ? true : E.name) ? t : ""
           })
         })]

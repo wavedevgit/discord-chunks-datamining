@@ -17,11 +17,11 @@ function s(e) {
     textVariant: s = "text-xs/medium"
   } = e, c = (0, l.dQu)(l.TVs.colors.INTERACTIVE_NORMAL).hex();
   return (0, r.jsx)("div", {
-    className: a.roleTagContainer,
+    className: o.roleTagContainer,
     children: (0, r.jsxs)("div", {
-      className: a.roleTag,
+      className: o.roleTag,
       children: [(0, r.jsx)("div", {
-        className: a.roleColor,
+        className: o.roleColor,
         style: {
           backgroundColor: (0, i.Rf)(n.color)
         }
@@ -32,7 +32,7 @@ function s(e) {
         variant: s,
         color: "text-default",
         children: [(0, r.jsx)(l.nn4, {
-          children: o.intl.string(o.t.RnyseH)
+          children: a.intl.string(a.t.RnyseH)
         }), n.name]
       }), true === t && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.LZC, {

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk468194 = require("./468194.js"),
   Chunk481060 = require("./481060.js"),
   Chunk904245 = require("./904245.js"),
@@ -37,7 +37,7 @@ function C() {
   })
 }
 
-function O(e) {
+function v(e) {
   let t, {
     hasNoVotes: n,
     victorEmoji: i
@@ -57,7 +57,7 @@ function O(e) {
   }) : null
 }
 
-function v(e) {
+function O(e) {
   let t;
   var {
     type: n
@@ -88,7 +88,7 @@ function v(e) {
       break;
     case "VICTOR":
       let {
-        victorAnswerText: o, victorVotePercentage: a
+        victorAnswerText: a, victorVotePercentage: o
       } = i;
       t = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
@@ -98,7 +98,7 @@ function v(e) {
             color: "text-default",
             className: E.victorAnswerText,
             scaleFontToUserSetting: true,
-            children: o
+            children: a
           }), (0, r.jsx)(_.ZY, {
             size: 16,
             className: E.victorIcon,
@@ -109,7 +109,7 @@ function v(e) {
           variant: "text-xs/medium",
           color: l,
           scaleFontToUserSetting: true,
-          children: [b.intl.string(b.t.ufIDIy), " • ", a, "%"]
+          children: [b.intl.string(b.t.ufIDIy), " • ", o, "%"]
         })]
       });
       break;
@@ -142,7 +142,7 @@ function y(e) {
     className: t,
     data: n,
     onClickPollLink: l
-  } = e, a = i.useMemo(() => (function(e) {
+  } = e, o = i.useMemo(() => (function(e) {
     if (0 === e.totalVotes) return {
       type: "NO_VOTES"
     };
@@ -156,15 +156,15 @@ function y(e) {
       type: "TIE",
       tiedVotePercentage: n
     }
-  })(n), [n]), c = null != n.victorEmoji || "NO_VOTES" === a.type;
+  })(n), [n]), c = null != n.victorEmoji || "NO_VOTES" === o.type;
   return (0, r.jsxs)("div", {
-    className: o()(E.container, {
+    className: a()(E.container, {
       [E.containerWithImage]: c
     }, t),
-    children: [(0, r.jsx)(O, {
-      hasNoVotes: "NO_VOTES" === a.type,
+    children: [(0, r.jsx)(v, {
+      hasNoVotes: "NO_VOTES" === o.type,
       victorEmoji: n.victorEmoji
-    }), (0, r.jsx)(v, function(e) {
+    }), (0, r.jsx)(O, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -181,7 +181,7 @@ function y(e) {
         })
       }
       return e
-    }({}, a)), null != l && (0, r.jsx)(s.zxk, {
+    }({}, o)), null != l && (0, r.jsx)(s.zxk, {
       size: "sm",
       onClick: l,
       variant: "secondary",
@@ -195,9 +195,9 @@ function x(e) {
   let {
     message: n,
     channel: l,
-    compact: o,
+    compact: a,
     disableInteraction: u = false
-  } = e, d = n.embeds[0], _ = i.useMemo(() => (0, g.Z)(d), [d]), C = (0, a.aF)(null != (t = null == _ ? true : _.questionText) ? t : "", h.Dv), O = (0, p.ZP)(n), v = (0, m.l)({
+  } = e, d = n.embeds[0], _ = i.useMemo(() => (0, g.Z)(d), [d]), C = (0, o.aF)(null != (t = null == _ ? true : _.questionText) ? t : "", h.Dv), v = (0, p.ZP)(n), O = (0, m.l)({
     user: n.author,
     channelId: l.id,
     guildId: l.guild_id,
@@ -216,10 +216,10 @@ function x(e) {
         size: "xs"
       }),
       timestamp: n.timestamp,
-      compact: o,
+      compact: a,
       children: b.intl.format(b.t["VJcK4+"], {
-        username: O.nick,
-        usernameHook: v(O),
+        username: v.nick,
+        usernameHook: O(v),
         title: C,
         titleOnClick: j
       })

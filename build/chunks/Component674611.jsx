@@ -16,9 +16,9 @@ function u(e) {
     messageId: t,
     channelId: n
   } = e, u = (0, l.e7)([s.Z], () => s.Z.canSubmitFpReport(t)), d = i.useCallback(() => {
-    (0, a.e)(n, t)
+    (0, o.e)(n, t)
   }, [n, t]);
-  return (0, r.jsx)(o.zxk, {
+  return (0, r.jsx)(a.zxk, {
     variant: "secondary",
     text: c.intl.string(c.t["4q1ElZ"]),
     onClick: d,

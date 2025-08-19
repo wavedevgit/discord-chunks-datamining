@@ -1,7 +1,7 @@
 /** Chunk was on 91173 **/
 /** chunk id: 482239, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,15 +9,15 @@ var Chunk739566 = require("./739566.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function o(e) {
   let {
     message: t,
-    channel: a,
+    channel: o,
     targetUser: s,
     actorUsernameHook: c,
     targetUsernameHook: u,
     compact: d
-  } = e, p = (0, i.ZP)(t), m = (0, i.Sw)(s, a), f = c(p), g = u(null != m ? m : true), _ = o.intl.format(o.t["32QI5+"], {
+  } = e, p = (0, i.ZP)(t), m = (0, i.Sw)(s, o), f = c(p), g = u(null != m ? m : true), _ = a.intl.format(a.t["32QI5+"], {
     actorName: p.nick,
     actorHook: f,
     targetName: null == m ? true : m.nick,

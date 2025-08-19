@@ -7,14 +7,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk901461 = require("./901461.js"),
   Chunk464891 = require("./464891.jsx");
-let a = Chunk647438.memo(Chunk464891.ZP);
+let o = Chunk647438.memo(Chunk464891.ZP);
 
 function s(e) {
   let {
     message: t,
     channel: n,
     author: i,
-    compact: o,
+    compact: a,
     animateAvatar: s,
     guildId: c,
     isGroupStart: u = true,
@@ -23,12 +23,12 @@ function s(e) {
     hideGuildTag: m,
     preview: f
   } = e;
-  return !(0, l.Z)(t) && (u || o) ? (0, r.jsx)(a, {
+  return !(0, l.Z)(t) && (u || a) ? (0, r.jsx)(o, {
     message: t,
     channel: n,
     author: i,
     guildId: c,
-    compact: o,
+    compact: a,
     animate: s,
     roleIcon: d,
     hideTimestamp: p,

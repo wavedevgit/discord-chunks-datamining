@@ -1,18 +1,18 @@
 /** Chunk was on 91173 **/
 /** chunk id: 885714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk430824 = require("./430824.js");
 
-function o(e) {
+function a(e) {
   var {
     onCloseCallback: t,
-    analyticsLocations: o
-  } = e, a = function(e, t) {
+    analyticsLocations: a
+  } = e, o = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -50,8 +50,8 @@ function o(e) {
           })
         }
         return e
-      }({}, t, a), i = i = {
-        analyticsLocations: o,
+      }({}, t, o), i = i = {
+        analyticsLocations: a,
         guildCount: l.Z.getGuildCount(),
         "aria-labelledby": "nitro-guild-cap-upsell"
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

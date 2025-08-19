@@ -30,19 +30,19 @@ function g(e) {
   } = e, n = null;
   switch (t) {
     case i.u.REPORT_TO_MOD_BAN_USER:
-      n = o.pgN;
+      n = a.pgN;
       break;
     case i.u.REPORT_TO_MOD_KICK_USER:
-      n = o.I9k;
+      n = a.I9k;
       break;
     case i.u.REPORT_TO_MOD_TIMEOUT_USER:
-      n = o.YlB;
+      n = a.YlB;
       break;
     case i.u.REPORT_TO_MOD_DELETED_MESSAGE:
-      n = o.XHJ;
+      n = a.XHJ;
       break;
     case i.u.REPORT_TO_MOD_CLOSED_REPORT:
-      n = o.kmB
+      n = a.kmB
   }
   return null != n ? (0, r.jsx)(n, {
     size: "refresh_sm",
@@ -55,27 +55,27 @@ function _(e) {
   let {
     message: n,
     channel: i,
-    compact: o
+    compact: a
   } = e, {
     author: d,
     mentions: f,
     type: _
-  } = n, h = (0, a.ZP)(n), b = n.getChannelId(), E = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), C = (0, a.JZ)(d, i), O = (0, s.l)({
+  } = n, h = (0, o.ZP)(n), b = n.getChannelId(), E = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), C = (0, o.JZ)(d, i), v = (0, s.l)({
     user: d,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(C), v = (0, a.Sw)(E, i), y = (0, s.l)({
+  })(C), O = (0, o.Sw)(E, i), y = (0, s.l)({
     user: E,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(v), x = null != (t = m[_]) ? t : null;
+  })(O), x = null != (t = m[_]) ? t : null;
   if (null == x) return null;
   let j = p.intl.format(x(), {
     actorName: h.nick,
-    actorHook: O,
-    targetName: null == v ? true : v.nick,
+    actorHook: v,
+    targetName: null == O ? true : O.nick,
     targetHook: y
   });
   return (0, r.jsx)(c.Z, {
@@ -83,7 +83,7 @@ function _(e) {
       type: _
     }),
     timestamp: n.timestamp,
-    compact: o,
+    compact: a,
     children: j
   })
 }
@@ -95,10 +95,10 @@ function h(e) {
     channel: i,
     compact: l
   } = e, {
-    author: o,
+    author: a,
     type: u
-  } = n, d = (0, a.ZP)(n), m = n.getChannelId(), _ = (0, a.JZ)(o, i), h = (0, s.l)({
-    user: o,
+  } = n, d = (0, o.ZP)(n), m = n.getChannelId(), _ = (0, o.JZ)(a, i), h = (0, s.l)({
+    user: a,
     channelId: m,
     guildId: i.guild_id,
     messageId: n.id
@@ -124,9 +124,9 @@ function b(e) {
     channel: n,
     compact: l
   } = e, {
-    type: o
+    type: a
   } = t;
-  return o === i.u.REPORT_TO_MOD_BAN_USER || o === i.u.REPORT_TO_MOD_KICK_USER || o === i.u.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(_, {
+  return a === i.u.REPORT_TO_MOD_BAN_USER || a === i.u.REPORT_TO_MOD_KICK_USER || a === i.u.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(_, {
     message: t,
     channel: n,
     compact: l

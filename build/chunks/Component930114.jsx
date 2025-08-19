@@ -51,14 +51,14 @@ function p(e) {
         emojiName: null == f || null == (i = f.emoji) ? true : i.name,
         soundId: null == f || null == (l = f.sound) ? true : l.id,
         onComplete: (e, t) => {
-          _ = e, t && (g = t, e.isSubscription && null == o.Z.getPremiumSubscription(false) && (0, c.H)(true))
+          _ = e, t && (g = t, e.isSubscription && null == a.Z.getPremiumSubscription(false) && (0, c.H)(true))
         }
       }, n))
     }
   }, {
     onCloseCallback: () => {
       var e;
-      g && null != _ && !b && _.isSubscription && (null == _ || null == (e = _.subscriptionPlan) ? true : e.premiumSubscriptionType) === u.p9.TIER_2 && a.S.dispatch(d.CkL.PREMIUM_SUBSCRIPTION_CREATED)
+      g && null != _ && !b && _.isSubscription && (null == _ || null == (e = _.subscriptionPlan) ? true : e.premiumSubscriptionType) === u.p9.TIER_2 && o.S.dispatch(d.CkL.PREMIUM_SUBSCRIPTION_CREATED)
     }
   })
 }

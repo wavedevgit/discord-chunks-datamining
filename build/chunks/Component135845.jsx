@@ -1,12 +1,12 @@
 /** Chunk was on 91173 **/
 /** chunk id: 135845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk447543 = require("./447543.js"),
   Chunk100527 = require("./100527.js"),
@@ -23,9 +23,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk105341 = require("./105341.js");
 
-function v(e) {
+function O(e) {
   let t, n, l, {
-      invite: v,
+      invite: O,
       currentUserId: y,
       guild: x,
       message: j,
@@ -33,37 +33,37 @@ function v(e) {
       onAcceptInstantInvite: S
     } = e,
     T = null == x ? true : x.id,
-    P = (0, a.e7)([f.Z], () => f.Z.getGuildId()),
-    N = (0, a.e7)([m.Z], () => null != v && null != v.target_user ? m.Z.getActiveStreamForUser(v.target_user.id, T) : null, [v, T]),
-    A = (0, a.e7)([m.Z], () => null != v && null != v.target_user ? m.Z.getStreamForUser(v.target_user.id, T) : null, [v, T]),
+    P = (0, o.e7)([f.Z], () => f.Z.getGuildId()),
+    N = (0, o.e7)([m.Z], () => null != O && null != O.target_user ? m.Z.getActiveStreamForUser(O.target_user.id, T) : null, [O, T]),
+    A = (0, o.e7)([m.Z], () => null != O && null != O.target_user ? m.Z.getStreamForUser(O.target_user.id, T) : null, [O, T]),
     {
       analyticsLocations: w
     } = (0, u.ZP)(c.Z.INVITE_EMBED),
-    Z = null != v && v.target_type === E.Iq.STREAM && null != v.target_user && null != N,
-    R = null != v && null != A && null != v.channel && null != v.guild && A.channelId === v.channel.id && A.guildId === v.guild.id;
-  o()(null != v, "Invite cannot be null");
+    Z = null != O && O.target_type === E.Iq.STREAM && null != O.target_user && null != N,
+    R = null != O && null != A && null != O.channel && null != O.guild && A.channelId === O.channel.id && A.guildId === O.guild.id;
+  a()(null != O, "Invite cannot be null");
   let {
     target_type: D,
     target_user: L
-  } = v;
-  o()(D === E.Iq.STREAM && null != L, "invalid streaming invite");
+  } = O;
+  a()(D === E.Iq.STREAM && null != L, "invalid streaming invite");
   let M = y === L.id,
-    k = v.state === b.r2o.ACCEPTING,
+    k = O.state === b.r2o.ACCEPTING,
     U = i.useCallback(() => {
       let e = "noop";
       Z ? (I(), e = "transition") : (S(), e = "accept"), (0, s.r$)({
-        invite: v,
+        invite: O,
         action: e,
         inviter_id: j.author.id,
         invite_message_id: j.id
       }, w)
-    }, [v, j, w, Z, I, S]),
+    }, [O, j, w, Z, I, S]),
     F = null != x;
   if (null == x) {
-    if (null == v.guild) return (0, r.jsx)(h.Z, {});
-    x = (0, g.Qs)(v.guild)
+    if (null == O.guild) return (0, r.jsx)(h.Z, {});
+    x = (0, g.Qs)(O.guild)
   }
-  let B = null != v.channel ? (0, p.jD)(v.channel) : null,
+  let B = null != O.channel ? (0, p.jD)(O.channel) : null,
     G = _.ZP.getName(L);
   F && !R ? l = M ? C.intl.string(C.t.oBLoZG) : C.intl.formatToPlainString(C.t["0QJmAw"], {
     name: G
@@ -80,7 +80,7 @@ function v(e) {
       text: C.intl.string(C.t["wS+5WV"])
     }), (0, r.jsxs)(d.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: O.headerLine,
+        className: v.headerLine,
         children: [(0, r.jsx)(d.Z.Icon, {
           guild: x,
           onClick: F && R ? U : true

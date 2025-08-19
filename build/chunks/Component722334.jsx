@@ -27,7 +27,7 @@ function b(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: _.buttonContainer,
-    children: (0, r.jsx)(a.zxk, {
+    children: (0, r.jsx)(o.zxk, {
       fullWidth: n,
       variant: "primary",
       onClick: () => {
@@ -52,7 +52,7 @@ function b(e) {
           return e
         }({
           quest_id: t,
-          click_id: (0, o.Z)(),
+          click_id: (0, a.Z)(),
           cta_name: c.jZ.VIEW_QUESTS,
           is_targeted: false
         }, (0, c.mH)(u.jn.EXCLUDED_QUEST_EMBED)))
@@ -79,11 +79,11 @@ function E(e) {
     }),
     children: [(0, r.jsxs)("div", {
       className: _.contentContainer,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(o.X6q, {
         variant: "lg" === i ? "heading-xl/bold" : "heading-lg/bold",
         color: "header-primary",
         children: g.intl.string(g.t.vnP31d)
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "lg" === i ? "text-sm/medium" : "text-xs/medium",
         color: "text-default",
         className: _.__invalid_mobileWebCopy,

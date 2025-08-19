@@ -27,10 +27,10 @@ function E(e) {
     onClick: n,
     beforeTransition: E,
     className: C,
-    openChatWithoutConnecting: O
-  } = e, v = (0, i.e7)([g.default, f.Z], () => null == t ? "" : (0, s.F6)(t, g.default, f.Z), [t]);
+    openChatWithoutConnecting: v
+  } = e, O = (0, i.e7)([g.default, f.Z], () => null == t ? "" : (0, s.F6)(t, g.default, f.Z), [t]);
   return (0, r.jsx)(l.ua7, {
-    text: v,
+    text: O,
     position: "top",
     children: e => {
       let {
@@ -51,18 +51,18 @@ function E(e) {
             let i = p.Z.getChannel(t);
             if (null != i && (0, d.bw)(i.type)) {
               if (n) {
-                o.Z.updateChatOpen(i.id, true), (0, u.uL)(b.Z5c.CHANNEL(e, t));
+                a.Z.updateChatOpen(i.id, true), (0, u.uL)(b.Z5c.CHANNEL(e, t));
                 return
               }
-              a.default.selectVoiceChannel(i.id);
+              o.default.selectVoiceChannel(i.id);
               return
             }(0, u.uL)(b.Z5c.CHANNEL(e, t))
-          }(null == t ? true : t.guild_id, null == t ? true : t.id, O))
+          }(null == t ? true : t.guild_id, null == t ? true : t.id, v))
         },
         onMouseEnter: i,
         onMouseLeave: s,
         iconType: (0, _.wl)(t),
-        children: v
+        children: O
       })
     }
   })

@@ -28,11 +28,11 @@ async function b(e, t) {
   if (null == E || null == u.Z.getGuild(E)) return;
   let C = d.default.getCurrentUser();
   if (null == C) return;
-  await (0, a.$p)();
-  let O = Array.from(s.Z.getAllStickersIterator()),
-    v = O.filter(e => e.type === c.n0.GUILD).filter(e => h(e.guild_id) && (0, o.kl)(e, C, t)).sort((e, t) => -m.default.compare(e.id, t.id));
-  if (v.length > 5) {
-    let i = [v[Math.floor(Math.pow(Math.random(), 2) * v.length)].id];
+  await (0, o.$p)();
+  let v = Array.from(s.Z.getAllStickersIterator()),
+    O = v.filter(e => e.type === c.n0.GUILD).filter(e => h(e.guild_id) && (0, a.kl)(e, C, t)).sort((e, t) => -m.default.compare(e.id, t.id));
+  if (O.length > 5) {
+    let i = [O[Math.floor(Math.pow(Math.random(), 2) * O.length)].id];
     r.Z.sendStickers(t.id, i, "", {
       messageReference: {
         guild_id: null != (n = t.getGuildId()) ? n : true,
@@ -61,7 +61,7 @@ async function b(e, t) {
     });
     return
   }
-  let x = O.filter(e => e.type === c.n0.STANDARD),
+  let x = v.filter(e => e.type === c.n0.STANDARD),
     j = [x[Math.floor(Math.random() * x.length)].id];
   r.Z.sendStickers(t.id, j, "", {
     messageReference: {

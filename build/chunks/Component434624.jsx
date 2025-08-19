@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk866442 = require("./866442.js"),
   Chunk596454 = require("./596454.jsx"),
   Chunk434650 = require("./434650.js"),
@@ -26,8 +26,8 @@ let _ = Chunk647438.memo(function(e) {
         me: b,
         me_burst: E,
         burst_count: C,
-        burst_colors: O,
-        readOnly: v,
+        burst_colors: v,
+        readOnly: O,
         isLurking: y,
         isGuest: x,
         isPendingMember: j,
@@ -36,7 +36,7 @@ let _ = Chunk647438.memo(function(e) {
       } = e,
       T = I === p.O.BURST,
       P = (0, m.y4)(b, E, I),
-      N = (0, d.v)(T && null != O ? O : []),
+      N = (0, d.v)(T && null != v ? v : []),
       A = i ? g : f,
       w = T ? C : h,
       Z = (0, u.y)(w, m.aO),
@@ -47,7 +47,7 @@ let _ = Chunk647438.memo(function(e) {
         accentColor: e,
         backgroundColor: r,
         opacity: i
-      } = N, l = null != (D = (0, a.wK)(null != r ? r : "", i)) ? D : "";
+      } = N, l = null != (D = (0, o.wK)(null != r ? r : "", i)) ? D : "";
       P && (R.borderColor = r), R.background = l, t = e, n = e
     }
     let L = {
@@ -56,13 +56,13 @@ let _ = Chunk647438.memo(function(e) {
       borderColor: n
     };
     return (0, r.jsxs)("div", {
-      className: o()(A.reaction, A.reactionInner, _, {
+      className: a()(A.reaction, A.reactionInner, _, {
         [A.reactionMe]: P,
-        [A.reactionReadOnly]: v && !y && !j && !x
+        [A.reactionReadOnly]: O && !y && !j && !x
       }),
       style: R,
       children: [(0, r.jsx)(s.Z, {
-        className: o()({
+        className: a()({
           [A.hideEmoji]: l
         }),
         emojiId: c.id,
@@ -95,11 +95,11 @@ let _ = Chunk647438.memo(function(e) {
       }
       return i
     }(e, ["showImmediate", "reactions"]);
-    let [o, a] = i.useState(false), [s, u] = i.useTransition(), d = i.useCallback(e => {
-      !e || o || s || u(() => {
-        a(true)
+    let [a, o] = i.useState(false), [s, u] = i.useTransition(), d = i.useCallback(e => {
+      !e || a || s || u(() => {
+        o(true)
       })
-    }, [o, s]), f = (0, c.O)(d), g = o && !s || t ? m.le : _;
+    }, [a, s]), f = (0, c.O)(d), g = a && !s || t ? m.le : _;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         ref: f

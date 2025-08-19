@@ -29,7 +29,7 @@ function _(e) {
       onMouseEnter: E,
       onMouseLeave: C
     }
-  } = (0, u.m)(true), O = "" !== t.content ? new Date(t.content).toLocaleString(f.intl.currentLocale, {
+  } = (0, u.m)(true), v = "" !== t.content ? new Date(t.content).toLocaleString(f.intl.currentLocale, {
     hour: "numeric",
     minute: "2-digit",
     month: "2-digit",
@@ -60,13 +60,13 @@ function _(e) {
           }),
           username: (0, r.jsxs)("div", {
             className: g.spanCorrection,
-            children: [(0, r.jsx)(o.Text, {
+            children: [(0, r.jsx)(a.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
               className: g.username,
               children: f.intl.string(f.t.hG1StL)
-            }), (0, r.jsx)(a.Z, {
+            }), (0, r.jsx)(o.Z, {
               type: m.Hb.SYSTEM_DM,
               className: g.systemTag
             })]
@@ -80,7 +80,7 @@ function _(e) {
           children: t.type === p.uaV.GUILD_INCIDENT_ALERT_MODE_ENABLED ? f.intl.format(f.t["+m8eDw"], {
             username: _.nick,
             usernameHook: h,
-            time: O
+            time: v
           }) : f.intl.format(f.t.BHeke3, {
             username: _.nick,
             usernameHook: h

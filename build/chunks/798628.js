@@ -9,7 +9,7 @@ var Chunk131193 = require("./131193.js"),
   Chunk731965 = require("./731965.js"),
   Chunk902704 = require("./902704.js");
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -28,7 +28,7 @@ function o(e) {
   return e
 }
 
-function a(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,8 +48,8 @@ let s = {},
         e(e => {
           var i;
           return {
-            polls: a(o({}, e.polls), {
-              [t]: a(o({}, e.polls[t]), {
+            polls: o(a({}, e.polls), {
+              [t]: o(a({}, e.polls[t]), {
                 [n]: r(null == (i = e.polls[t]) ? true : i[n])
               })
             })

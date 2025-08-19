@@ -22,8 +22,8 @@ function g(e) {
   let {
     guildId: _,
     productId: h
-  } = e, b = (0, o.e7)([u.Z], () => u.Z.getGuildProduct(h)), E = (null != (g = null == b || null == (t = b.attachments) ? true : t.length) ? g : 0) > 1, C = null == b || null == (i = b.attachments) || null == (n = i[0]) ? true : n.id;
-  return E ? (0, r.jsxs)(a.zx, {
+  } = e, b = (0, a.e7)([u.Z], () => u.Z.getGuildProduct(h)), E = (null != (g = null == b || null == (t = b.attachments) ? true : t.length) ? g : 0) > 1, C = null == b || null == (i = b.attachments) || null == (n = i[0]) ? true : n.id;
+  return E ? (0, r.jsxs)(o.zx, {
     onClick: function() {
       d.Z.open({
         guildId: _,

@@ -23,12 +23,12 @@ function _(e) {
     guildId: t,
     guildProductListingId: n,
     sourceAnalyticsLocations: i
-  } = e, _ = (0, o.e7)([p.Z], () => p.Z.getGuildProduct(n)), h = (0, o.e7)([c.Z], () => c.Z.getGuild(t), [t]), b = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), E = (0, u.n)();
-  return (l()(null != h, "guild cannot be null"), l()(null != _, "guildProductListing cannot be null"), (0, d.SO)(h)) ? (0, r.jsx)(a.ua7, {
+  } = e, _ = (0, a.e7)([p.Z], () => p.Z.getGuildProduct(n)), h = (0, a.e7)([c.Z], () => c.Z.getGuild(t), [t]), b = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), E = (0, u.n)();
+  return (l()(null != h, "guild cannot be null"), l()(null != _, "guildProductListing cannot be null"), (0, d.SO)(h)) ? (0, r.jsx)(o.ua7, {
     text: g.intl.string(g.t.sAJr9f),
     children: e => {
       var t, n;
-      return (0, r.jsx)(a.zxk, (t = function(e) {
+      return (0, r.jsx)(o.zxk, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -64,12 +64,12 @@ function _(e) {
   }) : _.has_entitlement ? null != _.attachments ? (0, r.jsx)(f.Z, {
     guildId: h.id,
     productId: _.id
-  }) : (0, r.jsx)(a.zxk, {
+  }) : (0, r.jsx)(o.zxk, {
     variant: "secondary",
     text: g.intl.string(g.t.RcTOGB),
     disabled: true
-  }) : (0, r.jsx)(a.gtL, {
-    shineSize: a.gtL.ShineSizes.SMALL,
+  }) : (0, r.jsx)(o.gtL, {
+    shineSize: o.gtL.ShineSizes.SMALL,
     pauseAnimation: b || !E,
     onClick: () => (0, m.z)({
       guildProductListing: _,

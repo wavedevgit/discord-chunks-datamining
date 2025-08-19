@@ -36,7 +36,7 @@ function f(e) {
   } = e, i = m[t];
   if (null == i) throw Error("Unexpected operating system: ".concat(t));
   let l = i.icon;
-  return (0, r.jsx)(o.ua7, {
+  return (0, r.jsx)(a.ua7, {
     text: i.getLabel(),
     children: e => {
       var t, i;

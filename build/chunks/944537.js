@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk879690 = require("./879690.js"),
   Chunk731965 = require("./731965.js");
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -26,7 +26,7 @@ function o(e) {
   return e
 }
 
-function a(e, t) {
+function o(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -42,14 +42,14 @@ var s = ((r = {})[r.ALL_CHANNELS_ACCESS = 0] = "ALL_CHANNELS_ACCESS", r[r.SOME_C
 let c = (0, Chunk879690.U)(e => ({
   listings: {},
   setListing: (t, n) => (0, l.j)(() => e(e => ({
-    listings: a(o({}, e.listings), {
+    listings: o(a({}, e.listings), {
       [t]: n(e.listings[t])
     })
   }))),
   editStateIdsForGroup: {},
   setEditStateIdsForGroup: (t, n) => (0, l.j)(() => {
     e(e => ({
-      editStateIdsForGroup: a(o({}, e.editStateIdsForGroup), {
+      editStateIdsForGroup: o(a({}, e.editStateIdsForGroup), {
         [t]: n(e.editStateIdsForGroup[t])
       })
     }))

@@ -13,7 +13,7 @@ var Chunk647438 = require("./647438.js"),
 function c(e) {
   let {
     bot: t
-  } = e, n = (0, o.ye)(e), {
+  } = e, n = (0, a.ye)(e), {
     url: c
   } = (0, l.Z)({
     applicationId: n ? e.id : true,
@@ -26,12 +26,12 @@ function c(e) {
       let {
         banner: e
       } = t;
-      r = (0, a.aN)({
+      r = (0, o.aN)({
         id: t.id,
         banner: e,
         size: 512,
         canAnimate: false
-      }), (0, a.xR)(e) && null == c && (l = (0, a.aN)({
+      }), (0, o.xR)(e) && null == c && (l = (0, o.aN)({
         id: t.id,
         banner: e,
         size: 512,
@@ -39,7 +39,7 @@ function c(e) {
       }))
     }
     if (n) {
-      let t = (0, o.yJ)(e);
+      let t = (0, a.yJ)(e);
       null != c && (r = c, u = s.u.ACTIVITY);
       let n = null == t ? true : t.activity_preview_video_asset_id;
       null != n && (l = (0, i.Z)(e.id, n), u = s.u.ACTIVITY)

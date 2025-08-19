@@ -20,12 +20,12 @@ function c(e, t) {
         try {
           let {
             url: r
-          } = await o.gs({
+          } = await a.gs({
             guildId: e,
             productId: t,
             attachmentId: n
           });
-          await a.L(r)
+          await o.L(r)
         } catch (t) {
           let e = t instanceof l.Hx ? t.getAnyErrorMessage() : true;
           i.Z.show({

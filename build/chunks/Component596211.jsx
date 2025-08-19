@@ -1,17 +1,17 @@
 /** Chunk was on 91173 **/
 /** chunk id: 596211, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk755721 = require("./755721.js"),
   Chunk406877 = require("./406877.js");
 
-function o(e) {
+function a(e) {
   var t, n, {
-      guildId: o,
-      productId: a,
+      guildId: a,
+      productId: o,
       attachmentId: s
     } = e,
     c = function(e, t) {
@@ -32,7 +32,7 @@ function o(e) {
   let {
     isLoading: u,
     downloadAttachment: d
-  } = (0, l.Z)(o, a);
+  } = (0, l.Z)(a, o);
   return (0, r.jsx)(i.zx, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

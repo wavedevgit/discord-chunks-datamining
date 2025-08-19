@@ -1,7 +1,7 @@
 /** Chunk was on 91173 **/
 /** chunk id: 331372, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -26,7 +26,7 @@ function l(e) {
   return e
 }
 
-function o(e, t) {
+function a(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -39,11 +39,11 @@ function o(e, t) {
   }), e
 }
 
-function a(e) {
+function o(e) {
   var {
     width: t = 440,
     height: n = 200,
-    avatar: a
+    avatar: o
   } = e, s = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -59,7 +59,7 @@ function a(e) {
     }
     return i
   }(e, ["width", "height", "avatar"]);
-  return (0, r.jsxs)("svg", o(l(o(l({}, (0, i.Z)(s)), {
+  return (0, r.jsxs)("svg", a(l(a(l({}, (0, i.Z)(s)), {
     width: t,
     height: n,
     viewBox: "0 0 ".concat(t, " ").concat(n),
@@ -125,7 +125,7 @@ function a(e) {
       y: "100",
       width: "56",
       height: "56",
-      children: a
+      children: o
     })]
   }))
 }

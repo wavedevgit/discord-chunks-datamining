@@ -53,13 +53,13 @@ function g(e) {
           }),
           username: (0, r.jsxs)("div", {
             className: f.spanCorrection,
-            children: [(0, r.jsx)(o.Text, {
+            children: [(0, r.jsx)(a.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
               className: f.username,
               children: m.intl.string(m.t.hG1StL)
-            }), (0, r.jsx)(a.Z, {
+            }), (0, r.jsx)(o.Z, {
               type: p.Hb.SYSTEM_DM,
               className: f.systemTag
             })]

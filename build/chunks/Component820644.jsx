@@ -16,10 +16,10 @@ function c(e) {
     text: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: l()(s.toast, a.toast),
-    children: [(0, r.jsx)(o.b7C, {
-      color: o.TVs.colors.TEXT_BRAND
-    }), (0, r.jsx)(o.Text, {
+    className: l()(s.toast, o.toast),
+    children: [(0, r.jsx)(a.b7C, {
+      color: a.TVs.colors.TEXT_BRAND
+    }), (0, r.jsx)(a.Text, {
       className: s.__invalid_content,
       color: "header-primary",
       variant: "text-md/normal",

@@ -45,9 +45,9 @@ let u = i().omit(Chunk428595.Z.RULES, ["codeBlock", "heading"]),
     parse: function(e, t, n) {
       var r;
       let i = l.Z.parse(e, t, n),
-        o = Math.min(6, (null != (r = n.initialHeaderLevel) ? r : 3) + i.level);
+        a = Math.min(6, (null != (r = n.initialHeaderLevel) ? r : 3) + i.level);
       return c(s({}, i), {
-        level: o
+        level: a
       })
     }
   }),

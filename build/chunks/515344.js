@@ -2,7 +2,7 @@
 /** chunk id: 515344, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   G: () => C,
-  z: () => O
+  z: () => v
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -26,11 +26,11 @@ function E(e) {
     isDiscoverable: t,
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: o
-  } = e, a = (0, f.Eb)({
+    integrationTypesConfig: a
+  } = e, o = (0, f.Eb)({
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: o
+    integrationTypesConfig: a
   }), s = (0, i.e7)([p.Z], () => {
     var e;
     return null != (e = p.Z.getGuildId()) ? e : true
@@ -42,10 +42,10 @@ function E(e) {
     isDiscoverable: t,
     customInstallUrl: n,
     installParams: r,
-    integrationTypesConfig: o,
+    integrationTypesConfig: a,
     canViewApp: t || g,
     canOpenAppLauncher: g,
-    isInstallable: a,
+    isInstallable: o,
     selectedGuildId: s
   }
 }
@@ -61,8 +61,8 @@ function C(e, t) {
     selectedGuildId: p
   } = E(e);
   return r.useMemo(() => n ? () => {
-    if (null == t || t(), i) return void(0, o.X)(e.id);
-    (0, a.transitionToGlobalDiscovery)({
+    if (null == t || t(), i) return void(0, a.X)(e.id);
+    (0, o.transitionToGlobalDiscovery)({
       tab: h.GlobalDiscoveryTab.APPS,
       applicationId: e.id,
       newSessionState: {
@@ -83,7 +83,7 @@ function C(e, t) {
   } : true, [e.id, i, n, c, u, d, l, t, p])
 }
 
-function O(e) {
+function v(e) {
   let {
     canViewApp: t,
     isInstallable: n

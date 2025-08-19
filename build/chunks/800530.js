@@ -4,11 +4,11 @@ require.d(exports, {
   Cg: () => f,
   Cp: () => P,
   Cs: () => x,
-  EY: () => v,
+  EY: () => O,
   I5: () => _,
   JQ: () => j,
   RY: () => C,
-  Sv: () => O,
+  Sv: () => v,
   TX: () => T,
   ZW: () => y,
   bK: () => E,
@@ -20,7 +20,7 @@ require.d(exports, {
   sQ: () => m,
   wo: () => g
 });
-var r, i, l, o, a, s, c, Chunk990547 = require("./990547.js"),
+var r, i, l, a, o, s, c, Chunk990547 = require("./990547.js"),
   Chunk981631 = require("./981631.js");
 
 function p(e, t, n) {
@@ -48,14 +48,14 @@ Object.freeze({
   THANKS: Chunk981631.jXE.APPEAL_INGESTION_THANKS,
   SPAM: Chunk981631.jXE.APPEAL_INGESTION_SPAM
 });
-var E = ((o = {})[o.DIDNT_VIOLATE_POLICY = 0] = "DIDNT_VIOLATE_POLICY", o[o.TOO_STRICT_UNFAIR = 1] = "TOO_STRICT_UNFAIR", o[o.DONT_AGREE_PENALTY = 2] = "DONT_AGREE_PENALTY", o[o.SOMETHING_ELSE = 3] = "SOMETHING_ELSE", o);
+var E = ((a = {})[a.DIDNT_VIOLATE_POLICY = 0] = "DIDNT_VIOLATE_POLICY", a[a.TOO_STRICT_UNFAIR = 1] = "TOO_STRICT_UNFAIR", a[a.DONT_AGREE_PENALTY = 2] = "DONT_AGREE_PENALTY", a[a.SOMETHING_ELSE = 3] = "SOMETHING_ELSE", a);
 let C = [0, 1, 2, 3],
-  O = 372,
-  v = 279,
+  v = 372,
+  O = 279,
   y = {
     impression_group: Chunk990547.ImpressionGroups.APPEAL_INGESTION
   };
-var x = ((a = {}).SPEED_BUMP = "speed-bump", a.COLLECT_SIGNAL = "collect-signal", a.CONFIRM_SUBMISSION = "confirm-submission", a.REQUEST_SENT = "request-sent", a.THANKS = "thanks", a);
+var x = ((o = {}).SPEED_BUMP = "speed-bump", o.COLLECT_SIGNAL = "collect-signal", o.CONFIRM_SUBMISSION = "confirm-submission", o.REQUEST_SENT = "request-sent", o.THANKS = "thanks", o);
 let j = {
   "speed-bump": {
     next: "collect-signal",

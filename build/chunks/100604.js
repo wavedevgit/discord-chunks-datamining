@@ -51,13 +51,13 @@ class g {
       E = arguments.length > 5 && true !== arguments[5] ? arguments[5] : Chunk356264.Z,
       {
         snapshotIndex: C,
-        parentMessage: O,
-        messageSnapshot: v
+        parentMessage: v,
+        messageSnapshot: O
       } = this,
-      y = (0, Chunk55935.Xf)(v.message.timestamp),
+      y = (0, Chunk55935.Xf)(O.message.timestamp),
       x = m.getChannel(this.parentMessage.channel_id);
-    if (null != x && x.guild_id === (null == (e = O.messageReference) ? true : module.guild_id)) {
-      let e = m.getChannel(null == (n = O.messageReference) ? true : require.channel_id);
+    if (null != x && x.guild_id === (null == (e = v.messageReference) ? true : module.guild_id)) {
+      let e = m.getChannel(null == (n = v.messageReference) ? true : require.channel_id);
       if (null == module) {
         let e = b.getGuild(x.guild_id);
         return null == module ? {
@@ -83,7 +83,7 @@ class g {
         }
       }
     }
-    let j = null == (t = O.messageReference) ? true : exports.guild_id;
+    let j = null == (t = v.messageReference) ? true : exports.guild_id;
     if (null == j) return {
       snapshotIndex: C
     };

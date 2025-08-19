@@ -36,7 +36,7 @@ let c = Chunk647438.memo(function(e) {
   }(e, ["channel", "size", "facepileSizeOverride", "experimentLocation", "isTyping", "status", "className", "animated"]);
   let {
     isFacepileEnabled: g
-  } = a.Z.useExperiment({
+  } = o.Z.useExperiment({
     location: c
   }, {
     autoTrackExposure: true
@@ -54,6 +54,6 @@ let c = Chunk647438.memo(function(e) {
     "aria-label": f["aria-label"],
     className: p,
     size: n,
-    src: (0, o.x)(t, 80, m)
+    src: (0, a.x)(t, 80, m)
   })
 })

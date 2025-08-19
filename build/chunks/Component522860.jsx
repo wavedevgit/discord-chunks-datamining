@@ -20,7 +20,7 @@ function c(e) {
     onJoinStream: d,
     usernameHook: p,
     compact: m
-  } = e, f = (0, o.ZP)(n), g = null == (t = n.call) ? true : t.duration, _ = p(f), h = s.intl.format(s.t.FKXvaG, {
+  } = e, f = (0, a.ZP)(n), g = null == (t = n.call) ? true : t.duration, _ = p(f), h = s.intl.format(s.t.FKXvaG, {
     username: f.nick,
     activityName: null != u ? u.name : "unknown",
     onJoinStream: d,
@@ -31,7 +31,7 @@ function c(e) {
     duration: g.humanize(),
     channelName: c.name,
     usernameHook: _
-  })), (0, r.jsx)(a.Z, {
+  })), (0, r.jsx)(o.Z, {
     iconNode: null != g ? (0, r.jsx)(i.g5r, {
       size: "custom",
       color: "currentColor",

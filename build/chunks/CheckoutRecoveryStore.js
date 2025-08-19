@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let a = false,
+let o = false,
   s = false,
   c = false;
 class u extends(i = Chunk442837.ZP.Store) {
@@ -13,7 +13,7 @@ class u extends(i = Chunk442837.ZP.Store) {
     return c
   }
   shouldFetchCheckoutRecovery() {
-    return !a && !s
+    return !o && !s
   }
 }(r = "displayName") in u ? Object.defineProperty(u, r, {
   value: "CheckoutRecoveryStore",
@@ -23,15 +23,15 @@ class u extends(i = Chunk442837.ZP.Store) {
 }) : u[r] = "CheckoutRecoveryStore";
 let d = new u(Chunk570140.Z, {
   CHECKOUT_RECOVERY_STATUS_FETCH_SUCCESS: function(e) {
-    s = true, a = false, c = e.isTargeted
+    s = true, o = false, c = e.isTargeted
   },
   CHECKOUT_RECOVERY_STATUS_FETCH_FAILURE: function() {
-    s = true, a = false
+    s = true, o = false
   },
   CHECKOUT_RECOVERY_STATUS_FETCH: function() {
-    a = true
+    o = true
   },
   LOGOUT: function() {
-    a = false, s = false, c = false
+    o = false, s = false, c = false
   }
 })

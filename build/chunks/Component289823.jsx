@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk974674 = require("./974674.jsx"),
   Chunk438784 = require("./438784.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -140,7 +140,7 @@ let b = {
         style: E,
         className: C
       } = e,
-      O = function(e, t) {
+      v = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
@@ -156,7 +156,7 @@ let b = {
         return i
       }(e, ["backSrc", "frontSrc", "size", "isTyping", "status", "style", "className"]);
     let {
-      size: v
+      size: O
     } = c.ny6[s], {
       statusCoords: y,
       frontAvatarOffsetPx: x,
@@ -164,22 +164,22 @@ let b = {
       backAvatarSizePx: I
     } = i.useMemo(() => {
       var e;
-      let t = "".concat(v, "-").concat(f);
+      let t = "".concat(O, "-").concat(f);
       return null != (e = m[t]) ? e : function(e, t, n) {
         let r = c.ny6[e],
           i = r.size / (d.z3 + d.o),
           l = i * d.z3,
-          o = i * d.o,
+          a = i * d.o,
           s = {
-            statusCoords: (0, a.Vq)(r, c.Skl.ONLINE, false, t),
+            statusCoords: (0, o.Vq)(r, c.Skl.ONLINE, false, t),
             frontAvatarSizePx: l,
             backAvatarSizePx: i,
-            frontAvatarOffsetPx: o,
-            frontAvatarCenter: o + l / 2
+            frontAvatarOffsetPx: a,
+            frontAvatarCenter: a + l / 2
           };
         return m[n] = s, s
       }(s, f, t)
-    }, [v, f, s]), S = (t = null != g, f ? b[s].typing : t ? b[s].status : b[s].default);
+    }, [O, f, s]), S = (t = null != g, f ? b[s].typing : t ? b[s].status : b[s].default);
     return (0, r.jsxs)("div", {
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -199,16 +199,16 @@ let b = {
         }
         return e
       }({
-        width: v,
-        height: v
+        width: O,
+        height: O
       }, E),
-      "aria-label": O["aria-label"],
-      "aria-hidden": O["aria-hidden"],
-      className: o()(p.container, C),
+      "aria-label": v["aria-label"],
+      "aria-hidden": v["aria-hidden"],
+      className: a()(p.container, C),
       children: [(0, r.jsxs)(u.ZP, {
         mask: S,
-        height: v,
-        width: v,
+        height: O,
+        width: O,
         children: [(0, r.jsx)("img", {
           src: n,
           alt: "",

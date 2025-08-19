@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -107,8 +107,8 @@ let U = e => {
       closePopout: t,
       sticker: n,
       channel: l,
-      refreshPositionKey: o
-    } = e, [s, u, d] = (0, a.Wu)([I.Z], () => [I.Z.getStickerPack(n.pack_id), !I.Z.hasLoadedStickerPacks, I.Z.isPremiumPack(n.pack_id)], [n]), m = (e => {
+      refreshPositionKey: a
+    } = e, [s, u, d] = (0, o.Wu)([I.Z], () => [I.Z.getStickerPack(n.pack_id), !I.Z.hasLoadedStickerPacks, I.Z.isPremiumPack(n.pack_id)], [n]), m = (e => {
       let {
         sticker: t,
         stickerPack: n
@@ -121,7 +121,7 @@ let U = e => {
     (0, j.Pq)(n.pack_id);
     let f = (0, j.Sd)(l),
       g = {
-        refreshPositionKey: o,
+        refreshPositionKey: a,
         channel: l
       },
       _ = i.useRef(g);
@@ -187,9 +187,9 @@ let U = e => {
       } = e,
       [j, I] = i.useState(null),
       [S, P] = i.useState(false),
-      U = v.default.getCurrentUser(),
+      U = O.default.getCurrentUser(),
       F = x.ZP.canUseCustomStickersEverywhere(U),
-      B = (0, a.e7)([O.Z], () => O.Z.getGuild(n.guild_id)),
+      B = (0, o.e7)([v.Z], () => v.Z.getGuild(n.guild_id)),
       G = null != B,
       [H, V] = i.useState(false),
       [z, W] = i.useState(null),
@@ -304,7 +304,7 @@ let U = e => {
                 }), (0, r.jsx)(c.CJ0, {
                   size: "md",
                   color: "currentColor",
-                  className: o()(R.showMoreEmojisArrow, {
+                  className: a()(R.showMoreEmojisArrow, {
                     [R.showMoreEmojisArrowCollapsed]: !H
                   })
                 })]
@@ -337,7 +337,7 @@ let U = e => {
                     return i
                   }(t, ["onMouseEnter", "onMouseLeave"]);
                   return (0, r.jsx)("div", L(D({
-                    className: o()(R.otherEmoji, {
+                    className: a()(R.otherEmoji, {
                       [Z.nonInteractingSticker]: null != z && z !== e.id
                     }),
                     onMouseEnter: () => {
@@ -391,18 +391,18 @@ let G = e => {
     channel: n,
     closePopout: i,
     refreshPositionKey: l
-  } = e, [o, a] = (0, j.XW)(t, true);
-  return null != o && (0, S.jl)(o) ? (0, r.jsx)(U, {
-    sticker: o,
+  } = e, [a, o] = (0, j.XW)(t, true);
+  return null != a && (0, S.jl)(a) ? (0, r.jsx)(U, {
+    sticker: a,
     closePopout: i,
     channel: n,
     refreshPositionKey: l
-  }) : null != o && (0, S.J8)(o) ? (0, r.jsx)(F, {
-    sticker: o,
+  }) : null != a && (0, S.J8)(a) ? (0, r.jsx)(F, {
+    sticker: a,
     channel: n,
     closePopout: i,
     refreshPositionKey: l
-  }) : a ? a && null == o ? (0, r.jsx)(B, {
+  }) : o ? o && null == a ? (0, r.jsx)(B, {
     channel: n,
     closePopout: i,
     sticker: t

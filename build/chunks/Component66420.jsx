@@ -18,7 +18,7 @@ function s(e) {
     compact: u,
     action: d
   } = e, p = n.reactions.length > 0;
-  return (0, r.jsxs)(o.Z, {
+  return (0, r.jsxs)(a.Z, {
     iconNode: t.isGroupDM() ? (0, r.jsx)(i.Dkj, {
       size: "md",
       color: "var(--premium-tier-2-purple-for-gradients-2)"
@@ -26,12 +26,12 @@ function s(e) {
       size: "md",
       color: "var(--premium-tier-2-purple-for-gradients-2)"
     }),
-    iconContainerClassName: a.iconContainer,
+    iconContainerClassName: o.iconContainer,
     compact: u,
-    contentClassName: a.content,
-    className: p ? a.withReactions : a.noReactions,
+    contentClassName: o.content,
+    className: p ? o.withReactions : o.noReactions,
     children: [(0, r.jsxs)("div", {
-      className: a.textContainer,
+      className: o.textContainer,
       children: [(0, r.jsx)(l.xv, {
         variant: "text-md/medium",
         color: "header-primary",

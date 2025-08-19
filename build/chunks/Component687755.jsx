@@ -14,10 +14,10 @@ let s = e => {
     className: t
   } = e;
   return (0, r.jsx)("div", {
-    className: l()(a.tag, t),
+    className: l()(o.tag, t),
     children: (0, r.jsx)("span", {
-      className: a.text,
-      children: o.intl.string(o.t["14lP0d"])
+      className: o.text,
+      children: a.intl.string(a.t["14lP0d"])
     })
   })
 }

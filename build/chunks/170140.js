@@ -22,14 +22,14 @@ var Chunk647438 = require("./647438.js"),
 function b(e, t) {
   let n = (0, f.p$)(),
     b = (0, _.LR)(e),
-    E = (0, i.e7)([c.ZP, a.default], () => {
-      let e = a.default.getId();
+    E = (0, i.e7)([c.ZP, o.default], () => {
+      let e = o.default.getId();
       return c.ZP.isMember(null == b ? true : b.guildId, e)
     }, [b]),
     C = (0, i.e7)([l.Z], () => null != b && (null == b ? true : b.channelId) != null && l.Z.isChannelGated(b.guildId, b.channelId), [b]),
-    O = t.hasFlag(h.iLy.IS_CROSSPOST),
+    v = t.hasFlag(h.iLy.IS_CROSSPOST),
     {
-      rawMediaPostEmbedData: v,
+      rawMediaPostEmbedData: O,
       guild: y,
       parentChannel: x,
       user: j,
@@ -42,20 +42,20 @@ function b(e, t) {
         r = s.Z.getChannel(null == b ? true : b.channelId),
         i = p.default.getUser(null == t ? true : t.author_id),
         l = d.Z.getGuildId(),
-        a = null != r && (0, o.YO)(r);
+        o = null != r && (0, a.YO)(r);
       return {
         rawMediaPostEmbedData: t,
         guild: n,
         parentChannel: r,
         user: i,
         selectedGuildId: l,
-        canAccess: a
+        canAccess: o
       }
     }, [b]),
     T = r.useMemo(() => {
       var e, t;
       let n = (0, _.ku)({
-        mediaPostEmbedData: v,
+        mediaPostEmbedData: O,
         guild: y,
         parentChannel: x,
         user: j,
@@ -91,11 +91,11 @@ function b(e, t) {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)
-    }, [v, y, x, j, I, S]);
+    }, [O, y, x, j, I, S]);
   return r.useEffect(() => {
     if ((null == b ? true : b.threadId) != null) {
       let e = g.Z.getEmbedFetchState(b.threadId);
-      true !== n || e !== g.M.NOT_FETCHED || E && false === C || !E && O || (0, m.xP)(null == b ? true : b.threadId)
+      true !== n || e !== g.M.NOT_FETCHED || E && false === C || !E && v || (0, m.xP)(null == b ? true : b.threadId)
     }
-  }, [b, n, E, C, O]), T
+  }, [b, n, E, C, v]), T
 }

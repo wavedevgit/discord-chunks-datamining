@@ -47,7 +47,7 @@ function Z(e) {
     inviteError: C.Z.getInviteError(t)
   }), [t]), L = null == R;
   i.useEffect(() => {
-    L && o.ZP.resolveInvite(t)
+    L && a.ZP.resolveInvite(t)
   }, [t, L]);
   let M = null != R ? R : {
       state: A.r2o.RESOLVING,
@@ -64,11 +64,11 @@ function Z(e) {
       return m.ZP.getGuildScheduledEvent(null == (e = M.guild_scheduled_event) ? true : e.id)
     }, [M]),
     H = () => {
-      null != M.channel && o.ZP.transitionToInviteSync(M)
+      null != M.channel && a.ZP.transitionToInviteSync(M)
     },
     V = () => {
       if (null == F && (null == R ? true : R.guild) != null) {
-        let e = O.Qs(R.guild);
+        let e = v.Qs(R.guild);
         if ((0, c.bN)() && (0, c.Yt)(e)) return void(0, s.mN)(w.L0.NSFW_SERVER_INVITE_EMBED)
       }(0, _.yU)() ? (0, h.Z)({
         analyticsSource: {
@@ -79,7 +79,7 @@ function Z(e) {
           section: A.jXE.GUILD_CAP_UPSELL_MODAL
         },
         analyticsLocations: k
-      }) : o.ZP.acceptInviteAndTransitionToInviteChannel({
+      }) : a.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: t,
         context: Z("Invite Button Embed")
       })
@@ -152,7 +152,7 @@ function Z(e) {
             break
           }
           if ((0, g.P1)(M)) {
-            z = (0, r.jsx)(v.Z, {
+            z = (0, r.jsx)(O.Z, {
               invite: M,
               getAcceptInviteContext: Z,
               message: n
@@ -167,7 +167,7 @@ function Z(e) {
           }))
       }
   }
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     section: A.jXE.INVITE_LINK,
     children: z
   })

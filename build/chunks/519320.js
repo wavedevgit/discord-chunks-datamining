@@ -1,8 +1,8 @@
 /** Chunk was on 91173 **/
 /** chunk id: 519320, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  EW: () => o,
-  Np: () => a,
+  EW: () => a,
+  Np: () => o,
   tb: () => l
 });
 var Chunk626135 = require("./626135.js"),
@@ -17,17 +17,17 @@ function l(e, t, n, l) {
   })
 }
 
-function o(e, t, n, l, o) {
+function a(e, t, n, l, a) {
   r.default.track(i.rMx.VOICE_MESSAGE_PLAYBACK_ENDED, {
     message_id: e,
     total_duration_secs: t,
     end_duration_secs: Math.min(null != t ? t : n, n),
     sender_user_id: l,
-    duration_listening_secs: o
+    duration_listening_secs: a
   })
 }
 
-function a(e, t) {
+function o(e, t) {
   r.default.track(i.rMx.VOICE_MESSAGE_PLAYBACK_FAILED, {
     message_id: e,
     error_message: t

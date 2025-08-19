@@ -19,24 +19,24 @@ let s = e => {
     isHorizontal: u = false
   } = e;
   return (0, r.jsxs)("div", {
-    className: l()(a.tile, {
-      [a.tileHorizontal]: u
+    className: l()(o.tile, {
+      [o.tileHorizontal]: u
     }, c),
     children: [(0, r.jsx)("div", {
-      className: l()(a.media, {
-        [a.mediaHorizontal]: u
+      className: l()(o.media, {
+        [o.mediaHorizontal]: u
       }),
       children: null == s ? true : s()
     }), (0, r.jsxs)("div", {
-      className: a.description,
-      children: [(0, r.jsx)(o.H, {
-        className: a.title,
+      className: o.description,
+      children: [(0, r.jsx)(a.H, {
+        className: o.title,
         children: null == t ? true : t()
       }), (0, r.jsx)("div", {
-        className: a.tagline,
+        className: o.tagline,
         children: null == n ? true : n()
       }), (0, r.jsx)("div", {
-        className: a.actions,
+        className: o.actions,
         children: null == i ? true : i()
       })]
     })]

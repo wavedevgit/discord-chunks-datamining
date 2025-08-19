@@ -20,7 +20,7 @@ let f = Chunk647438.memo(function(e) {
     channel: n,
     referencedMessage: m,
     compact: f = false
-  } = e, g = m.state === s.Y.LOADED ? m.message : true, _ = (0, a.p)(), h = o.d.useExperiment({
+  } = e, g = m.state === s.Y.LOADED ? m.message : true, _ = (0, o.p)(), h = a.d.useExperiment({
     location: "repliedMessage"
   }).enabled, b = i.useMemo(() => (null == g ? true : g.content) != null && "" !== g.content ? (0, u.ZP)(g, {
     formatInline: true,
@@ -32,10 +32,10 @@ let f = Chunk647438.memo(function(e) {
   } = (0, l.cj)([c.Z], () => ({
     isReplyAuthorBlocked: null != g && c.Z.isBlockedForMessage(g),
     isReplyAuthorIgnored: null != g && c.Z.isIgnoredForMessage(g)
-  }), [g]), O = (0, d.Uj)(g), v = (0, d.Uj)(t);
+  }), [g]), v = (0, d.Uj)(g), O = (0, d.Uj)(t);
   return (0, r.jsx)(p.Z, {
-    repliedAuthor: O,
-    baseAuthor: v,
+    repliedAuthor: v,
+    baseAuthor: O,
     baseMessage: t,
     channel: n,
     referencedMessage: m,

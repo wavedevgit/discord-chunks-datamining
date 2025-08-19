@@ -5,18 +5,18 @@ require.d(exports, {
 });
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let a = null;
+let o = null;
 class s extends(i = Chunk442837.ZP.Store) {
   hasAction() {
-    return null != a
+    return null != o
   }
   getAction() {
-    return a
+    return o
   }
 }
 
 function c(e) {
-  a = e.requiredAction
+  o = e.requiredAction
 }(r = "displayName") in s ? Object.defineProperty(s, r, {
   value: "UserRequiredActionStore",
   enumerable: true,

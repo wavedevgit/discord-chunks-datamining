@@ -18,10 +18,10 @@ var Chunk951288 = require("./951288.js"),
 function f(e) {
   let {
     applicationId: t
-  } = e, [n, l, a] = (0, o.Wu)([d.Z], () => [d.Z.getApplication(t), d.Z.isFetchingApplication(t), d.Z.didFetchingApplicationFail(t)], [t]);
+  } = e, [n, l, o] = (0, a.Wu)([d.Z], () => [d.Z.getApplication(t), d.Z.isFetchingApplication(t), d.Z.didFetchingApplicationFail(t)], [t]);
   return (i.useEffect(() => {
-    null != n || l || a || u.ZP.fetchApplication(t)
-  }, [n, l, a, t]), null != n && (0, m.Eb)({
+    null != n || l || o || u.ZP.fetchApplication(t)
+  }, [n, l, o, t]), null != n && (0, m.Eb)({
     customInstallUrl: n.customInstallUrl,
     installParams: n.installParams,
     integrationTypesConfig: n.integrationTypesConfig
@@ -42,10 +42,10 @@ function g(e) {
       }
     })
   }, [t.id]), {
-    analyticsLocations: o
-  } = (0, s.ZP)(a.Z.APP_OAUTH2_LINK_EMBED);
+    analyticsLocations: a
+  } = (0, s.ZP)(o.Z.APP_OAUTH2_LINK_EMBED);
   return (0, r.jsx)(s.Gt, {
-    value: o,
+    value: a,
     children: (0, r.jsx)(p.O, {
       app: t,
       linkType: p.U.OAUTH,

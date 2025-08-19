@@ -16,7 +16,7 @@ function c(e) {
   let {
     activityUsers: t,
     guildId: n,
-    activityText: o
+    activityText: a
   } = e;
   return (0, r.jsxs)("div", {
     className: s.wrapper,
@@ -28,24 +28,24 @@ function c(e) {
     }), (0, r.jsxs)(i.Text, {
       variant: "text-xs/normal",
       color: "none",
-      children: [t.length, " ", o]
+      children: [t.length, " ", a]
     })]
   })
 }
 
 function u(e) {
   switch (null == e ? true : e.type) {
-    case o.IIU.STREAMING:
+    case a.IIU.STREAMING:
       return {
-        text: a.intl.string(a.t["Jpkr/v"]), Icon: i.m3e
+        text: o.intl.string(o.t["Jpkr/v"]), Icon: i.m3e
       };
-    case o.IIU.LISTENING:
+    case a.IIU.LISTENING:
       return {
-        text: a.intl.string(a.t.kUEnxM), Icon: i.RZG
+        text: o.intl.string(o.t.kUEnxM), Icon: i.RZG
       };
     default:
       return {
-        text: a.intl.string(a.t.BMTj29), Icon: i.iWm
+        text: o.intl.string(o.t.BMTj29), Icon: i.iWm
       }
   }
 }

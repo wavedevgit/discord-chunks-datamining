@@ -4,7 +4,7 @@ require.d(exports, {
   Z: () => A
 }), require("./388685.js");
 var r, i, Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk570140 = require("./570140.js"),
@@ -19,8 +19,8 @@ let f = {},
   b = [],
   E = new Set,
   C = {},
-  O = {},
-  v = new Set;
+  v = {},
+  O = new Set;
 
 function y(e) {
   let t = d.Z.createFromServer(e),
@@ -32,7 +32,7 @@ function y(e) {
       function e(t) {
         let n = g.get(t);
         if (null == n || null == n.expiresAt) return;
-        let r = n.expiresAt.valueOf() - o()().valueOf();
+        let r = n.expiresAt.valueOf() - a()().valueOf();
         if (r <= 0) g.delete(t), delete f[t], N.emitChange();
         else {
           let n = f[t];
@@ -45,7 +45,7 @@ function y(e) {
 
 function x(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  if (t && !v.has(e.channel_id)) returnfalse;
+  if (t && !O.has(e.channel_id)) returnfalse;
   let n = (0, p.Fp)(e) ? (0, p.Q_)((null == e ? true : e.embeds) != null ? null == e ? true : e.embeds[0].url : true) : (0, p.Q_)(e.content);
   return 0 !== n.length && (n.forEach(e => {
     _.includes(e) || b.includes(e) || (j({
@@ -73,7 +73,7 @@ function S(e) {
     channelId: t,
     messages: n
   } = e;
-  v.add(t), n.forEach(e => x(e, true))
+  O.add(t), n.forEach(e => x(e, true))
 }
 
 function T(e) {
@@ -89,7 +89,7 @@ class P extends(r = Chunk442837.ZP.Store) {
     return null == t || t.isExpired() ? null : t
   }
   getError(e) {
-    return null != e ? O[e] : null
+    return null != e ? v[e] : null
   }
   getForGifterSKUAndPlan(e, t, n) {
     return Array.from(g.values()).filter(r => r.userId === e && r.skuId === t && (null == n || r.subscriptionPlanId === n) && !r.isExpired())
@@ -126,13 +126,13 @@ class P extends(r = Chunk442837.ZP.Store) {
 }) : P[i] = "GiftCodeStore";
 let N = new P(Chunk570140.Z, {
     CONNECTION_OPEN: function() {
-      return v.clear(), false
+      return O.clear(), false
     },
     CHANNEL_SELECT: function(e) {
       let {
         channelId: t
       } = e;
-      return null != t && v.add(t), false
+      return null != t && O.add(t), false
     },
     GIFT_CODE_RESOLVE: j,
     GIFT_CODE_RESOLVE_SUCCESS: function(e) {
@@ -171,7 +171,7 @@ let N = new P(Chunk570140.Z, {
       } = e;
       h = h.filter(e => e !== t);
       let r = g.get(t);
-      if (O[t] = n, null != r) switch (n.code) {
+      if (v[t] = n, null != r) switch (n.code) {
         case m.evJ.UNKNOWN_GIFT_CODE:
           g.set(t, r.set("revoked", true));
           break;

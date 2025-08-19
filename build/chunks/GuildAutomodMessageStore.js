@@ -34,16 +34,16 @@ function C(e) {
   let {
     messageData: t,
     errorResponseBody: n
-  } = e, r = (0, o.hc)(t), i = {
+  } = e, r = (0, a.hc)(t), i = {
     id: r,
-    isBlockedEdit: (0, o.Bz)(t),
+    isBlockedEdit: (0, a.Bz)(t),
     messageData: t,
     errorMessage: (0, d.uF)(t, n)
   };
   return g[r] = i, _++, true
 }
 
-function O(e) {
+function v(e) {
   var t;
   let {
     channelId: n,
@@ -51,7 +51,7 @@ function O(e) {
   } = e, i = null == (t = s.Z.getChannel(n)) ? true : t.getGuildId();
   if (null == i) returnfalse;
   let l = b[i],
-    o = r.reduce((e, t) => {
+    a = r.reduce((e, t) => {
       var n;
       return t.type === m.uaV.AUTO_MODERATION_ACTION && (null == (n = t.embeds) ? true : n.some(e => {
         let {
@@ -60,9 +60,9 @@ function O(e) {
         return t === m.hBH.AUTO_MODERATION_NOTIFICATION
       })) ? null == e || false === u.default.compare(e, t.id) ? t.id : true : e
     }, l);
-  return null != o && b[i] !== o && (b[i] = o, true)
+  return null != a && b[i] !== a && (b[i] = a, true)
 }
-class v extends(r = Chunk442837.ZP.PersistedStore) {
+class O extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(c.Z), null != e && (g = e.automodFailedMessages, h = e.mentionRaidDetectionByGuild)
   }
@@ -89,20 +89,20 @@ class v extends(r = Chunk442837.ZP.PersistedStore) {
     return null != (t = b[e]) ? t : null
   }
 }
-f(v, "displayName", "GuildAutomodMessageStore"), f(v, "persistKey", "GuildAutomodMessages");
-let y = new v(Chunk570140.Z, {
+f(O, "displayName", "GuildAutomodMessageStore"), f(O, "persistKey", "GuildAutomodMessages");
+let y = new O(Chunk570140.Z, {
   CONNECTION_OPEN: function(e) {
     return 0 !== Object.keys(g).length && (g = {}, _++, true)
   },
-  LOAD_MESSAGES_SUCCESS: O,
-  LOCAL_MESSAGES_LOADED: O,
+  LOAD_MESSAGES_SUCCESS: v,
+  LOCAL_MESSAGES_LOADED: v,
   MESSAGE_CREATE: function(e) {
     let {
       guildId: t,
       message: n
     } = e;
     if (null == t || n.type !== m.uaV.AUTO_MODERATION_ACTION) returnfalse;
-    let r = (0, a.e5)(n);
+    let r = (0, o.e5)(n);
     return !!(0, p.nY)(r) && !!(0, p.OP)(r) && (b[t] = r.id, true)
   },
   MESSAGE_SEND_FAILED_AUTOMOD: C,

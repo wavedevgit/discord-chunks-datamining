@@ -72,7 +72,7 @@ function u(e) {
         is_gift: false,
         sku_id: f,
         location_stack: Array.isArray(d) ? d : [d]
-      }), (0, o.fw)(), (0, a.p)()
+      }), (0, a.fw)(), (0, o.p)()
     },
     onCloseRequest: c.dG4
   })

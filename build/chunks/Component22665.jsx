@@ -1,12 +1,12 @@
 /** Chunk was on 91173 **/
 /** chunk id: 22665, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   s = require.n(Chunk913527),
   Chunk481060 = require("./481060.js"),
@@ -21,25 +21,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk424271 = require("./424271.js"),
   Chunk724913 = require("./724913.js"),
   Chunk328756 = require("./328756.js");
-let O = e => {
+let v = e => {
   let {
     reportingUserId: t,
     guildId: n,
     compact: l,
-    channel: a,
-    messageId: O,
-    reportedTimestamp: v
+    channel: o,
+    messageId: v,
+    reportedTimestamp: O
   } = e, y = f.default.getUser(t), x = i.useMemo(() => l ? (0, p.Z)((0, g.vc)(s()(), "LT")) : null, [l]), j = (0, m.l)({
     user: y,
-    channelId: a.id,
+    channelId: o.id,
     guildId: n,
-    messageId: O
-  })((0, u.JZ)(y, a)), I = null != y ? y.getAvatarURL(n, (0, c.pxk)(c.EFr.SIZE_16)) : C, S = null != y ? h.intl.format(_.default["+zqXZm"], {
+    messageId: v
+  })((0, u.JZ)(y, o)), I = null != y ? y.getAvatarURL(n, (0, c.pxk)(c.EFr.SIZE_16)) : C, S = null != y ? h.intl.format(_.default["+zqXZm"], {
     username: y.username,
     onUserClick: j
   }) : h.intl.string(_.default.xpRjfX);
   return (0, r.jsxs)("div", {
-    className: o()(E.messageSpine, E.repliedMessage, x),
+    className: a()(E.messageSpine, E.repliedMessage, x),
     children: [(0, r.jsx)(c.qEK, {
       src: I,
       size: c.EFr.SIZE_16,
@@ -57,7 +57,7 @@ let O = e => {
         className: b.timestampSeparator,
         children: "•"
       }), (0, r.jsx)(d.Z, {
-        timestamp: v,
+        timestamp: O,
         className: b.timestamp
       })]
     })]

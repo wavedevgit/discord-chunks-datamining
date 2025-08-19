@@ -15,10 +15,10 @@ function c(e) {
     message: t,
     channel: n,
     compact: c
-  } = e, u = (0, i.e7)([o.default], () => o.default.getCurrentUser()), d = (0, l.ZP)(t), p = (null == u ? true : u.id) === t.author.id ? s.intl.string(s.t.huMLgY) : s.intl.format(s.t.PVAL4O, {
+  } = e, u = (0, i.e7)([a.default], () => a.default.getCurrentUser()), d = (0, l.ZP)(t), p = (null == u ? true : u.id) === t.author.id ? s.intl.string(s.t.huMLgY) : s.intl.format(s.t.PVAL4O, {
     username: null == d ? true : d.nick
   });
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     channel: n,
     message: t,
     compact: c,

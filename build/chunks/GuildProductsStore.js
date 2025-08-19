@@ -2,7 +2,7 @@
 /** chunk id: 240864, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => d,
-  Z: () => O
+  Z: () => v
 }), require("./539854.js"), require("./388685.js");
 var r, i, l, Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
@@ -58,7 +58,7 @@ class C extends(r = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : C[l] = "GuildProductsStore";
-let O = new C(Chunk570140.Z, {
+let v = new C(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
     b.clear(), p = {}, m = {}, f = {}
   },

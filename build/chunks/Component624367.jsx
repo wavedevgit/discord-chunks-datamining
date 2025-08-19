@@ -21,7 +21,7 @@ function d(e) {
     linkId: p
   } = e, {
     analyticsLocations: m
-  } = (0, l.ZP)(i.Z.ACTIVITY_BOOKMARK), [f] = (0, s.Z)([t]), g = null != f && (0, o.ye)(f), {
+  } = (0, l.ZP)(i.Z.ACTIVITY_BOOKMARK), [f] = (0, s.Z)([t]), g = null != f && (0, a.ye)(f), {
     data: _,
     error: h
   } = (0, c.h)(null == f ? true : f.id, p);
@@ -35,9 +35,9 @@ function d(e) {
     })
   }) : (0, r.jsx)(l.Gt, {
     value: m,
-    children: (0, r.jsx)(a.O, {
+    children: (0, r.jsx)(o.O, {
       app: f,
-      linkType: a.U.ACTIVITY,
+      linkType: o.U.ACTIVITY,
       activityCustomId: n,
       activityReferrerId: d
     })

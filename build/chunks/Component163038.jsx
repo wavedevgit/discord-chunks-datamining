@@ -46,14 +46,14 @@ function F(e) {
     message: t,
     snapshot: n,
     index: u
-  } = e, p = i.useMemo(() => new d.r(t, n, u), [t, n, u]), f = (0, o.e7)([T.Z, R.default, w.Z, A.Z, N.Z, m.Z], () => p.getForwardInfo(T.Z, R.default, w.Z, A.Z, N.Z, m.Z).footerInfo, [p], a.Z), g = i.useCallback(() => {
+  } = e, p = i.useMemo(() => new d.r(t, n, u), [t, n, u]), f = (0, a.e7)([T.Z, R.default, w.Z, A.Z, N.Z, m.Z], () => p.getForwardInfo(T.Z, R.default, w.Z, A.Z, N.Z, m.Z).footerInfo, [p], o.Z), g = i.useCallback(() => {
     var e, n;
     let r = T.Z.getChannel(t.channel_id),
       i = N.Z.getGuild(null == r ? true : r.guild_id),
       l = null == (e = t.messageReference) ? true : e.channel_id,
-      o = Z.Z.getCurrentlySelectedChannelId(),
-      a = S.ZP.getCurrentSidebarChannelId(null == (n = t.messageReference) ? true : n.channel_id),
-      s = o === l && a === (null == r ? true : r.id);
+      a = Z.Z.getCurrentlySelectedChannelId(),
+      o = S.ZP.getCurrentSidebarChannelId(null == (n = t.messageReference) ? true : n.channel_id),
+      s = a === l && o === (null == r ? true : r.id);
     null == r || null == i || s || null == l || (j.Z.openModReportAsSidebar({
       channelId: r.id,
       baseChannelId: l,
@@ -88,8 +88,8 @@ function B(e) {
     mergedMessageRecord: t,
     content: n,
     channel: l,
-    reportingUserId: o,
-    reportedTimestamp: a
+    reportingUserId: a,
+    reportedTimestamp: o
   } = e, s = (0, g.JZ)(t.author, l), {
     onClickUsername: c,
     onClickAvatar: u,
@@ -100,29 +100,29 @@ function B(e) {
     let {
       popouts: n,
       setPopout: r
-    } = (0, O.Z)(e.id, k.d$), {
+    } = (0, v.Z)(e.id, k.d$), {
       usernameProfile: l,
-      avatarProfile: o
-    } = n, a = (0, C.XO)(e, t, l, r);
+      avatarProfile: a
+    } = n, o = (0, C.XO)(e, t, l, r);
     return {
-      onClickUsername: a,
-      onClickAvatar: (0, C.R9)(o, r),
+      onClickUsername: o,
+      onClickAvatar: (0, C.R9)(a, r),
       onPopoutRequestClose: i.useCallback(() => r({
         usernameProfile: false,
         avatarProfile: false,
         referencedUsernameProfile: false
       }), [r]),
       showUsernamePopout: l,
-      showAvatarPopout: o
+      showAvatarPopout: a
     }
   }(t, l);
   return (0, r.jsx)(_.Z, {
     childrenExecutedCommand: (0, r.jsx)(L.Z, {
-      reportingUserId: o,
+      reportingUserId: a,
       guildId: l.guild_id,
       channel: l,
       messageId: t.id,
-      reportedTimestamp: a,
+      reportedTimestamp: o,
       compact: false
     }),
     childrenHeader: (0, r.jsx)(b.ZP, {
@@ -155,7 +155,7 @@ function B(e) {
 function G(e) {
   var t, n, l;
   let {
-    message: a,
+    message: o,
     snapshot: s,
     index: c
   } = e, [d, m] = i.useState(true);
@@ -167,17 +167,17 @@ function G(e) {
   }, [null == s || null == (t = s.moderatorReport) ? true : t.reported_user_id]);
   let g = i.useMemo(() => {
       var e;
-      let t = (0, p.Z)(a, s);
+      let t = (0, p.Z)(o, s);
       return null != d && (null == s || null == (e = s.moderatorReport) ? true : e.reported_user_id) != null ? t.set("author", d) : t
-    }, [a, s, d]),
+    }, [o, s, d]),
     _ = I.RS.useSetting(),
     h = I.NA.useSetting(),
-    b = (0, o.e7)([P.Z], () => P.Z.isDeveloper),
+    b = (0, a.e7)([P.Z], () => P.Z.isDeveloper),
     E = (0, f.A)((null != (l = g.editedTimestamp) ? l : g.timestamp).valueOf()),
     {
       content: C,
-      hasSpoilerEmbeds: O
-    } = (0, v.Z)(g, {
+      hasSpoilerEmbeds: v
+    } = (0, O.Z)(g, {
       hideSimpleEmbedContent: _ && h,
       isInteracting: false,
       formatInline: false,
@@ -187,7 +187,7 @@ function G(e) {
       allowDevLinks: b,
       previewLinkTarget: true
     }),
-    x = (0, o.e7)([T.Z], () => T.Z.getChannel(a.channel_id));
+    x = (0, a.e7)([T.Z], () => T.Z.getChannel(o.channel_id));
   return null == x ? null : (0, r.jsx)("div", {
     className: U.container,
     children: (0, r.jsxs)("div", {
@@ -197,20 +197,20 @@ function G(e) {
         content: C,
         channel: x,
         reportingUserId: null == s || null == (n = s.moderatorReport) ? true : n.reporting_user_id,
-        reportedTimestamp: a.timestamp
+        reportedTimestamp: o.timestamp
       }), (0, y.Z)({
         channelMessageProps: {
           message: g,
           channel: x,
           compact: false
         },
-        hasSpoilerEmbeds: O,
+        hasSpoilerEmbeds: v,
         isInteracting: false,
         isMessageSnapshot: true,
         renderThreadAccessory: false,
         className: U.nestedAccessories
       }), (0, r.jsx)(F, {
-        message: a,
+        message: o,
         snapshot: s,
         index: c
       })]

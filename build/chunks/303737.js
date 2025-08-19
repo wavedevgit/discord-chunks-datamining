@@ -1,11 +1,11 @@
 /** Chunk was on 91173 **/
 /** chunk id: 303737, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  GN: () => O,
+  GN: () => v,
   be: () => C,
   g4: () => b,
   m7: () => h,
-  r4: () => v,
+  r4: () => O,
   sO: () => x,
   yL: () => y
 }), require("./539854.js"), require("./388685.js"), require("./993155.js"), require("./953529.js");
@@ -34,16 +34,16 @@ function h(e) {
 function b(e, t, n) {
   let r = (0, l.e7)([u.Z], () => u.Z.getSubscriptionListingsForGuild(e)),
     i = (0, d.n)(t => t.editStateIdsForGroup[e]),
-    o = (0, d.n)(e => e.listings);
+    a = (0, d.n)(e => e.listings);
   if (true === n || true === t) return null;
-  let a = r.filter(e => !e.soft_deleted && !e.archived).map(e => e.subscription_plans[0].price),
+  let o = r.filter(e => !e.soft_deleted && !e.archived).map(e => e.subscription_plans[0].price),
     s = [];
   true !== i && i.forEach(e => {
-    let t = o[e],
+    let t = a[e],
       n = null == t ? true : t.priceTier;
     null != n && s.push(n)
   });
-  let c = new Set(s.concat(a));
+  let c = new Set(s.concat(o));
   if (!c.has(n)) return null;
   let p = t.indexOf(n);
   if (false === p) return null;
@@ -78,28 +78,28 @@ function C(e) {
   let t = E(e);
   _[e] = t, t.forEach(e => {
     let t = e.set("flags", g.zZ.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "CHANNEL_CREATE",
       channel: t
     })
   })
 }
 
-function O(e) {
+function v(e) {
   var t;
   (null != (t = _[e]) ? t : E(e)).forEach(e => {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "CHANNEL_DELETE",
       channel: e
     })
   })
 }
-async function v(e, t) {
+async function O(e, t) {
   let n = [],
     r = [];
   t.forEach(t => {
     let i = m.Z.getChannel(t.ref_id);
-    null != i && (n.push(a.Z.createRoleSubscriptionTemplateChannel(e, i.name, i.type, i.topic)), r.push(i))
+    null != i && (n.push(o.Z.createRoleSubscriptionTemplateChannel(e, i.name, i.type, i.topic)), r.push(i))
   }), 0 !== n.length && (await Promise.allSettled(n)).forEach((n, i) => {
     let l = r[i].id;
     if ("fulfilled" === n.status) {
@@ -128,34 +128,34 @@ function y(e, t) {
     templateCategory: null,
     hasChangeFromTemplate: null
   };
-  let o = m.Z.getTemplateWithCategory(t, l);
-  if (null == o) return {
+  let a = m.Z.getTemplateWithCategory(t, l);
+  if (null == a) return {
     templateCategory: null,
     hasChangeFromTemplate: null
   };
-  let a = o.listings[0];
-  if ((null == i ? true : i.name) !== a.name || (null == i ? true : i.description) !== a.description || (null == i ? true : i.priceTier) !== a.price_tier || (null == i ? true : i.image) !== a.image || (null == i ? true : i.roleColor) !== a.role_color || (null == i || null == (n = i.channelBenefits) ? true : n.length) !== a.channels.length || (null == i || null == (r = i.intangibleBenefits) ? true : r.length) !== a.additional_perks.length) return {
-    templateCategory: o.category,
+  let o = a.listings[0];
+  if ((null == i ? true : i.name) !== o.name || (null == i ? true : i.description) !== o.description || (null == i ? true : i.priceTier) !== o.price_tier || (null == i ? true : i.image) !== o.image || (null == i ? true : i.roleColor) !== o.role_color || (null == i || null == (n = i.channelBenefits) ? true : n.length) !== o.channels.length || (null == i || null == (r = i.intangibleBenefits) ? true : r.length) !== o.additional_perks.length) return {
+    templateCategory: a.category,
     hasChangeFromTemplate: true
   };
-  for (let e = 0; e < a.channels.length; e++) {
+  for (let e = 0; e < o.channels.length; e++) {
     let t = i.channelBenefits[e],
-      n = a.channels[e];
+      n = o.channels[e];
     if (t.name !== n.name || t.description !== n.description || t.emoji_name !== n.emoji_name) return {
-      templateCategory: o.category,
+      templateCategory: a.category,
       hasChangeFromTemplate: true
     }
   }
-  for (let e = 0; e < a.additional_perks.length; e++) {
+  for (let e = 0; e < o.additional_perks.length; e++) {
     let t = i.intangibleBenefits[e],
-      n = a.additional_perks[e];
+      n = o.additional_perks[e];
     if (t.name !== n.name || t.description !== n.description || t.emoji_name !== n.emoji_name) return {
-      templateCategory: o.category,
+      templateCategory: a.category,
       hasChangeFromTemplate: true
     }
   }
   return {
-    templateCategory: o.category,
+    templateCategory: a.category,
     hasChangeFromTemplate: false
   }
 }

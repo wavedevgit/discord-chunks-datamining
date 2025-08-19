@@ -16,9 +16,9 @@ var Chunk481060 = require("./481060.js"),
 function u(e) {
   let {
     label: t,
-    backgroundColor: n = o.Z.BUTTON_SECONDARY_BACKGROUND,
+    backgroundColor: n = a.Z.BUTTON_SECONDARY_BACKGROUND,
     icon: l,
-    iconColor: a
+    iconColor: o
   } = e;
   return (0, r.jsxs)("div", {
     className: c.badge,
@@ -32,7 +32,7 @@ function u(e) {
       children: t
     }), (0, r.jsx)(l, {
       className: c.badgeIcon,
-      color: null != a ? a : "currentColor",
+      color: null != o ? o : "currentColor",
       "aria-hidden": true
     })]
   })

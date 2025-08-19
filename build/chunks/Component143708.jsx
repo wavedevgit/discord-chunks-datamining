@@ -25,22 +25,22 @@ function _(e) {
       channelId: E
     } = e,
     C = (0, i.e7)([s.default], () => s.default.getId()),
-    O = p.ZP.useName(h),
-    v = C === h.id,
+    v = p.ZP.useName(h),
+    O = C === h.id,
     y = (0, i.e7)([c.Z, u.Z], () => {
       let e = c.Z.getChannel(E);
       if (null == e) returnfalse;
       if (e.isPrivate()) returntrue;
       if (e.isThread()) {
-        let t = (0, a.xl)(e),
+        let t = (0, o.xl)(e),
           n = u.Z.can(m.Plq.SEND_MESSAGES_IN_THREADS, e);
         return !t && n
       }
       return u.Z.can(m.Plq.SEND_MESSAGES, e)
     });
-  return v ? (t = f.intl.string(f.t["F/OLvL"]), _ = f.intl.string(f.t.C89OLC)) : (_ = f.intl.string(f.t["YVub5+"]), b ? t = f.intl.string(f.t["57nBt7"]) : null != O && y ? (t = f.intl.formatToPlainString(f.t["9Akp1t"], {
-    username: O
-  }), n = (0, r.jsx)(o.Z.Button, {
+  return O ? (t = f.intl.string(f.t["F/OLvL"]), _ = f.intl.string(f.t.C89OLC)) : (_ = f.intl.string(f.t["YVub5+"]), b ? t = f.intl.string(f.t["57nBt7"]) : null != v && y ? (t = f.intl.formatToPlainString(f.t["9Akp1t"], {
+    username: v
+  }), n = (0, r.jsx)(a.Z.Button, {
     onClick: function() {
       let {
         id: e
@@ -53,15 +53,15 @@ function _(e) {
       }), null != E && l.Z.startTyping(E)
     },
     children: f.intl.string(f.t.P8tvKC)
-  })) : t = f.intl.string(f.t["SMJr+f"])), (0, r.jsxs)(o.Z, {
-    children: [(0, r.jsx)(o.Z.Header, {
+  })) : t = f.intl.string(f.t["SMJr+f"])), (0, r.jsxs)(a.Z, {
+    children: [(0, r.jsx)(a.Z.Header, {
       text: _
-    }), (0, r.jsxs)(o.Z.Body, {
+    }), (0, r.jsxs)(a.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: g.headerLine,
-        children: [(0, r.jsx)(o.Z.Icon, {
+        children: [(0, r.jsx)(a.Z.Icon, {
           expired: true
-        }), (0, r.jsx)(o.Z.Info, {
+        }), (0, r.jsx)(a.Z.Info, {
           expired: true,
           title: f.intl.string(f.t["Jhx/ub"]),
           children: t

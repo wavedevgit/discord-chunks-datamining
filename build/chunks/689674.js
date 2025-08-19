@@ -18,11 +18,11 @@ function d(e) {
     message: d,
     channel: p,
     enabled: m = true
-  } = e, f = (0, l.e7)([a.Z], () => {
+  } = e, f = (0, l.e7)([o.Z], () => {
     var e;
-    let t = a.Z.getGuild(p.guild_id);
+    let t = o.Z.getGuild(p.guild_id);
     return null != (e = null == t ? true : t.features.has(u.oNc.COMMUNITY)) && e
-  }, [p.guild_id]), g = (null == (t = d.messageReference) ? true : t.guild_id) != null && null != d.webhookId && d.hasFlag(u.iLy.IS_CROSSPOST) && null != p.guild_id, _ = p.type === i.d.GUILD_ANNOUNCEMENT && f, h = !d.hasFlag(u.iLy.EPHEMERAL) && (g || _), b = g && null != d.messageReference ? d.messageReference.message_id : d.id, E = g && null != d.messageReference ? d.messageReference.channel_id : p.id, C = g && (null == (n = d.messageReference) ? true : n.guild_id) != null ? d.messageReference.guild_id : p.guild_id, O = r.useCallback(e => {
+  }, [p.guild_id]), g = (null == (t = d.messageReference) ? true : t.guild_id) != null && null != d.webhookId && d.hasFlag(u.iLy.IS_CROSSPOST) && null != p.guild_id, _ = p.type === i.d.GUILD_ANNOUNCEMENT && f, h = !d.hasFlag(u.iLy.EPHEMERAL) && (g || _), b = g && null != d.messageReference ? d.messageReference.message_id : d.id, E = g && null != d.messageReference ? d.messageReference.channel_id : p.id, C = g && (null == (n = d.messageReference) ? true : n.guild_id) != null ? d.messageReference.guild_id : p.guild_id, v = r.useCallback(e => {
     e ? c.Z.handleMessageBecameVisible({
       messageId: b,
       channelId: p.id,
@@ -30,12 +30,12 @@ function d(e) {
       sourceChannelId: E,
       sourceGuildId: C
     }) : c.Z.handleMessageLostVisibility(b)
-  }, [b, p.id, p.guild_id, E, C]), v = s.Z.useExperiment({
+  }, [b, p.id, p.guild_id, E, C]), O = s.Z.useExperiment({
     location: "836a4b_1"
   }, {
     disable: !h || !m,
     autoTrackExposure: true
-  }).enabled, y = (0, o.O)(O, 0, v);
+  }).enabled, y = (0, a.O)(v, 0, O);
   return r.useEffect(() => () => {
     c.Z.handleMessageLostVisibility(b)
   }, [b]), y

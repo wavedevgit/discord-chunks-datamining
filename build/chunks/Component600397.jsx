@@ -37,13 +37,13 @@ function f(e) {
     gameName: b.name,
     gameIconHook: e => (0, r.jsxs)("span", {
       className: m.gameContainer,
-      children: [(0, r.jsx)(o.Z, {
+      children: [(0, r.jsx)(a.Z, {
         game: b,
-        size: o.Z.Sizes.XXSMALL,
+        size: a.Z.Sizes.XXSMALL,
         className: m.inlineIcon
       }), " ", e]
     }),
-    helpdeskArticle: a.Z.getArticleURL(d.BhN.SOCIAL_LAYER_CONNECTIONS)
+    helpdeskArticle: o.Z.getArticleURL(d.BhN.SOCIAL_LAYER_CONNECTIONS)
   });
   return (0, r.jsx)(u.Z, {
     iconNode: (0, r.jsx)(i.iWm, {

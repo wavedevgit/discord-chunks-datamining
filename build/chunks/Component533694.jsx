@@ -21,8 +21,8 @@ function g(e) {
   let {
     guildId: t,
     user: n,
-    username: a
-  } = e, s = (0, i.e7)([o.Z], () => !o.Z.useReducedMotion), c = n.getAvatarURL(t, 56, s), u = (0, r.jsx)("img", {
+    username: o
+  } = e, s = (0, i.e7)([a.Z], () => !a.Z.useReducedMotion), c = n.getAvatarURL(t, 56, s), u = (0, r.jsx)("img", {
     src: c,
     className: f.userAvatar,
     alt: ""
@@ -31,7 +31,7 @@ function g(e) {
     className: f.thankYouCard,
     role: "img",
     "aria-label": m.intl.formatToPlainString(m.t["utf8+f"], {
-      username: a
+      username: o
     }),
     children: [(0, r.jsx)(d.Z, {
       avatar: u
@@ -41,7 +41,7 @@ function g(e) {
       color: "status-positive-text",
       variant: "heading-xl/medium",
       children: m.intl.format(m.t["52BAtL"], {
-        username: a,
+        username: o,
         usernameHook: (e, t) => (0, r.jsx)(l.Text, {
           tag: "span",
           color: "status-positive-text",
@@ -57,13 +57,13 @@ function g(e) {
 function _(e) {
   var t, i, l;
   let {
-    channel: o,
+    channel: a,
     message: d,
     compact: f
-  } = e, _ = (0, a.ZP)(d), h = (0, s.l)({
+  } = e, _ = (0, o.ZP)(d), h = (0, s.l)({
     user: d.author,
-    channelId: o.id,
-    guildId: o.guild_id,
+    channelId: a.id,
+    guildId: a.guild_id,
     messageId: d.id
   })(_), b = m.intl.format(m.t.TQs67u, {
     username: _.nick,
@@ -71,7 +71,7 @@ function _(e) {
     productName: null != (l = null == (i = d.purchaseNotification) || null == (t = i.guild_product_purchase) ? true : t.product_name) ? l : "",
     handleProductListingClick: () => {
       var e, t, n;
-      (0, u.uL)(p.Z5c.GUILD_PRODUCT(o.guild_id, null != (n = null == (t = d.purchaseNotification) || null == (e = t.guild_product_purchase) ? true : e.listing_id) ? n : ""))
+      (0, u.uL)(p.Z5c.GUILD_PRODUCT(a.guild_id, null != (n = null == (t = d.purchaseNotification) || null == (e = t.guild_product_purchase) ? true : e.listing_id) ? n : ""))
     }
   });
   return (0, r.jsxs)(r.Fragment, {
@@ -82,7 +82,7 @@ function _(e) {
       children: b
     }), (0, r.jsx)(g, {
       username: _.nick,
-      guildId: o.guild_id,
+      guildId: a.guild_id,
       user: d.author
     })]
   })

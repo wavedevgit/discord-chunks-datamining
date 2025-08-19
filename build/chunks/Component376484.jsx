@@ -20,36 +20,36 @@ function f(e) {
   let {
     message: t,
     channel: i,
-    compact: a
+    compact: o
   } = e, s = null != t.embeds && t.embeds.length > 0;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(c.Z, {
       className: l()(m.mainContainer, {
-        [m.compact]: a
+        [m.compact]: o
       }),
       icon: n(570111),
-      compact: a,
+      compact: o,
       children: (0, r.jsx)("div", {
         className: l()(m.__invalid_content, {
-          [m.compact]: a
+          [m.compact]: o
         }),
         children: (0, r.jsx)("div", {
           className: l()(m.__invalid_messageContent, {
-            [m.compact]: a
+            [m.compact]: o
           }),
           children: t.content
         })
       })
     }), (0, r.jsx)("div", {
       className: l()(m.__invalid_embedContent, {
-        [m.compact]: a
+        [m.compact]: o
       }),
       children: (0, r.jsx)(g, {
         message: t
       })
     }), (0, r.jsx)("div", {
       className: m.actions,
-      children: (0, r.jsx)(o.zxk, {
+      children: (0, r.jsx)(a.zxk, {
         variant: "secondary",
         text: p.intl.string(p.t.zdBCIi),
         onClick: () => {
@@ -65,7 +65,7 @@ function g(e) {
   let {
     message: n
   } = e, [i] = null != (t = n.embeds) ? t : [];
-  return null == i ? null : (0, r.jsx)(a.ZP, {
+  return null == i ? null : (0, r.jsx)(o.ZP, {
     className: m.embed,
     embed: i,
     renderTitle: (e, t) => s.Z.parseEmbedTitle(t, true, {

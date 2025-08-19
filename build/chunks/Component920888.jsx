@@ -1,12 +1,12 @@
 /** Chunk was on 91173 **/
 /** chunk id: 920888, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => O
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk215569 = require("./215569.js"),
   Chunk481060 = require("./481060.js"),
   Chunk566006 = require("./566006.js"),
@@ -53,7 +53,7 @@ function E(e, t) {
   }), e
 }
 let C = (e, t) => null == e && null == t || e === t;
-class O extends Chunk647438.PureComponent {
+class v extends Chunk647438.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let n = e.message.reactions.length;
     return 0 === t.reactionsCount && n > 0 ? {
@@ -74,8 +74,8 @@ class O extends Chunk647438.PureComponent {
       isForumToolbar: b,
       channel: E,
       className: C,
-      forceAddReactions: O,
-      reactionClassName: v,
+      forceAddReactions: v,
+      reactionClassName: O,
       useChatFontScaling: y,
       forceHideReactionCreates: x,
       remainingReactions: j,
@@ -84,11 +84,11 @@ class O extends Chunk647438.PureComponent {
     } = this.props, {
       disableTransitionAppear: T
     } = this.state, P = y ? Chunk893973 : Chunk127947, N = S > 0;
-    if (!N && !O) return null;
-    let A = O || N;
+    if (!N && !v) return null;
+    let A = v || N;
     return (0, Chunk951288.jsxs)(Chunk215569.W, {
       component: "div",
-      className: o()(P.reactions, C),
+      className: a()(P.reactions, C),
       transitionAppear: !T,
       role: "group",
       transitionLeave: false,
@@ -108,12 +108,12 @@ class O extends Chunk647438.PureComponent {
         isPendingMember: h,
         isForumToolbar: b,
         useChatFontScaling: y,
-        className: v
+        className: O
       }), j > 0 && (0, Chunk951288.jsx)(Chunk481060.P3F, {
         onClick: t => {
           t.stopPropagation(), (0, m.op)(E, e)
         },
-        className: o()(P.reaction, v, P.remainingReactions),
+        className: a()(P.reaction, O, P.remainingReactions),
         "aria-label": Chunk388032.intl.string(Chunk388032.t.lfIHs7),
         children: (0, Chunk951288.jsxs)(Chunk481060.Text, {
           className: P.reactionInner,
@@ -127,7 +127,7 @@ class O extends Chunk647438.PureComponent {
         channel: E,
         useChatFontScaling: y,
         isHovered: this.state.isHovered,
-        className: o()({
+        className: a()({
           [P.forceShow]: A
         })
       })]
@@ -141,14 +141,14 @@ class O extends Chunk647438.PureComponent {
     })
   }
 }
-let v = e => {
+let O = e => {
   let {
     message: t,
     maxReactions: n,
     hoistReaction: l
   } = e, {
-    combinedReactions: o,
-    remainingReactions: a,
+    combinedReactions: a,
+    remainingReactions: o,
     visibleReactionsCount: s
   } = i.useMemo(() => {
     let e = [],
@@ -158,23 +158,23 @@ let v = e => {
         return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
       })(t.reactions, l),
       i = null != n && n < r.length ? r.slice(0, n) : r,
-      o = r.length - i.length,
-      a = r.length;
+      a = r.length - i.length,
+      o = r.length;
     return i.forEach(t => {
       t.burst_count > 0 && e.push(E(b({}, t), {
         type: c.O.BURST
       })), t.count > 0 && e.push(E(b({}, t), {
         type: c.O.NORMAL
-      })), null != t.me_vote && --a
+      })), null != t.me_vote && --o
     }), {
       combinedReactions: e,
-      visibleReactionsCount: a,
-      remainingReactions: o
+      visibleReactionsCount: o,
+      remainingReactions: a
     }
   }, [l, n, t.reactions]);
-  return (0, r.jsx)(O, E(b({}, e), {
+  return (0, r.jsx)(v, E(b({}, e), {
     visibleReactionsCount: s,
-    combinedReactions: o,
-    remainingReactions: a
+    combinedReactions: a,
+    remainingReactions: o
   }))
 }

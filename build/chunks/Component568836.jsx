@@ -44,10 +44,10 @@ function c(e, t) {
   }), e
 }
 let u = 660,
-  d = e => (0, r.jsx)(o.Z, c(s({}, e), {
+  d = e => (0, r.jsx)(a.Z, c(s({}, e), {
     className: l()(e.className, {
-      [a.embedVertical]: !e.isHorizontal,
-      [a.embedHorizontal]: e.isHorizontal
+      [o.embedVertical]: !e.isHorizontal,
+      [o.embedHorizontal]: e.isHorizontal
     })
   })),
   p = e => {
@@ -56,19 +56,19 @@ let u = 660,
     } = e;
     return (0, r.jsx)(d, c(s({}, e), {
       media: () => (0, r.jsx)("div", {
-        className: a.loadingDescription,
+        className: o.loadingDescription,
         children: (0, r.jsx)("div", {
-          className: l()(a.loadingBackgroundWrapper, {
-            [a.loadingBackgroundWrapperHorizontal]: t
+          className: l()(o.loadingBackgroundWrapper, {
+            [o.loadingBackgroundWrapperHorizontal]: t
           }),
           children: (0, r.jsx)("div", {
-            className: a.loadingBackground
+            className: o.loadingBackground
           })
         })
       }),
       title: () => (0, r.jsx)("div", {
-        className: l()(a.loadingImage, {
-          [a.loadingImageHorizontal]: t
+        className: l()(o.loadingImage, {
+          [o.loadingImageHorizontal]: t
         })
       })
     }))

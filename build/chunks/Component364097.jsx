@@ -20,30 +20,30 @@ function m(e) {
   let {
     code: m
   } = e, f = (0, i.e7)([s.Z], () => s.Z.getGuildTemplate(m));
-  if (null == f || f.state === c.Rj.RESOLVING) return (0, r.jsxs)(o.Z, {
-    children: [(0, r.jsx)(o.Z.Header, {
+  if (null == f || f.state === c.Rj.RESOLVING) return (0, r.jsxs)(a.Z, {
+    children: [(0, r.jsx)(a.Z.Header, {
       text: u.intl.string(u.t.Xj87YW)
-    }), (0, r.jsx)(o.Z.Body, {
+    }), (0, r.jsx)(a.Z.Body, {
       resolving: true
     })]
   });
-  if (f.state === c.Rj.EXPIRED) return (0, r.jsxs)(o.Z, {
-    children: [(0, r.jsx)(o.Z.Header, {
+  if (f.state === c.Rj.EXPIRED) return (0, r.jsxs)(a.Z, {
+    children: [(0, r.jsx)(a.Z.Header, {
       text: u.intl.string(u.t.C7ZRNz)
-    }), (0, r.jsxs)(o.Z.Body, {
-      children: [(0, r.jsx)(o.Z.Icon, {
+    }), (0, r.jsxs)(a.Z.Body, {
+      children: [(0, r.jsx)(a.Z.Icon, {
         expired: true
-      }), (0, r.jsx)(o.Z.Info, {
+      }), (0, r.jsx)(a.Z.Info, {
         expired: true,
         title: u.intl.string(u.t.A6MwXF)
       })]
     })]
   });
-  let g = __OVERLAY__ ? (0, r.jsx)(o.Z.Button, {
+  let g = __OVERLAY__ ? (0, r.jsx)(a.Z.Button, {
     isDisabled: true,
-    color: o.Z.Button.Colors.PRIMARY,
+    color: a.Z.Button.Colors.PRIMARY,
     children: u.intl.string(u.t.W7NTWl)
-  }) : (0, r.jsx)(o.Z.Button, {
+  }) : (0, r.jsx)(a.Z.Button, {
     onClick: () => {
       (0, l.ZDy)(async () => {
         let {
@@ -84,18 +84,18 @@ function m(e) {
       })
     },
     submitting: f.state === c.Rj.ACCEPTING,
-    color: o.Z.Button.Colors.GREEN,
+    color: a.Z.Button.Colors.GREEN,
     children: u.intl.string(u.t["a3Gl+f"])
   });
-  return (0, r.jsxs)(o.Z, {
-    children: [(0, r.jsx)(o.Z.Header, {
+  return (0, r.jsxs)(a.Z, {
+    children: [(0, r.jsx)(a.Z.Header, {
       text: u.intl.string(u.t.kAvFkJ)
-    }), (0, r.jsxs)(o.Z.Body, {
+    }), (0, r.jsxs)(a.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: p.headerLine,
-        children: [(0, r.jsx)(a.Z, {
+        children: [(0, r.jsx)(o.Z, {
           className: d.icon
-        }), (0, r.jsx)(o.Z.Info, {
+        }), (0, r.jsx)(a.Z.Info, {
           title: f.name,
           children: u.intl.format(u.t.cGXXHB, {
             usageCount: String(null != (t = f.usageCount) ? t : 0)

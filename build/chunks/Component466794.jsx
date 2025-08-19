@@ -1,14 +1,14 @@
 /** Chunk was on 91173 **/
 /** chunk id: 466794, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  X: () => o
+  X: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk343908 = require("./343908.js");
 
-function o(e) {
+function a(e) {
   let {
     tooltipText: t,
     textColor: n

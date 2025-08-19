@@ -11,21 +11,21 @@ function l(e) {
     onError: t,
     onSuccess: n,
     report: l
-  } = e, [o, a] = r.useState(false);
+  } = e, [a, o] = r.useState(false);
   return {
     reportFalsePositive: r.useCallback(async () => {
-      if (!o) {
-        a(true);
+      if (!a) {
+        o(true);
         try {
           await l(), null == n || n()
         } catch (n) {
           let e = new i.Hx(n);
           null == t || t(e)
         } finally {
-          a(false)
+          o(false)
         }
       }
-    }, [o, t, n, l]),
-    isReportFalsePositiveLoading: o
+    }, [a, t, n, l]),
+    isReportFalsePositiveLoading: a
   }
 }

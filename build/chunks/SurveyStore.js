@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => D
 }), require("./388685.js");
 var r, i, Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
@@ -52,13 +52,13 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = {
+let v = {
     hiddenSurveys: {},
     surveyOverride: null,
     lastFetched: null,
     lastSeen: null
   },
-  v = O,
+  O = v,
   y = {},
   x = null,
   j = false,
@@ -67,11 +67,11 @@ var S = ((i = S || {}).IS_OWNER = "is_owner", i.IS_ADMIN = "is_admin", i.IS_COMM
 let T = new Set(Object.values(S));
 
 function P() {
-  return null == v.lastFetched || Date.now() - v.lastFetched >= I
+  return null == O.lastFetched || Date.now() - O.lastFetched >= I
 }
 
 function N() {
-  !j && (P() || null != v.surveyOverride) && (j = true, (0, Chunk491428.wk)(v.surveyOverride, true))
+  !j && (P() || null != O.surveyOverride) && (j = true, (0, Chunk491428.wk)(O.surveyOverride, true))
 }
 
 function A(e) {
@@ -86,21 +86,21 @@ function A(e) {
       if (!T.has(e)) returnfalse;
     let i = t.includes("guild_size_all"),
       l = true;
-    for (let o of m.Z.getGuildsArray()) {
+    for (let a of m.Z.getGuildsArray()) {
       if (i || t.includes("guild_size")) {
-        let e = p.Z.getMemberCount(o.id);
+        let e = p.Z.getMemberCount(a.id);
         if (null == e || null != n[0] && e < n[0] || null != n[1] && e > n[1]) {
           l = false;
           continue
         }
       }
-      if (t.includes("is_community") && !o.features.has(h.oNc.COMMUNITY) || t.includes("is_hub") && !o.features.has(h.oNc.HUB)) continue;
+      if (t.includes("is_community") && !a.features.has(h.oNc.COMMUNITY) || t.includes("is_hub") && !a.features.has(h.oNc.HUB)) continue;
       if (t.includes("guild_permissions")) {
         if (0 === r.length) continue;
         let e = false;
         for (let t of r) try {
-          let n = a.vB(t);
-          if (f.Z.can(n, o)) {
+          let n = o.vB(t);
+          if (f.Z.can(n, a)) {
             e = true;
             break
           }
@@ -108,12 +108,12 @@ function A(e) {
         if (!e) continue
       }
       let s = _.default.getCurrentUser(),
-        c = (null == s ? true : s.id) === o.ownerId,
-        u = f.Z.can(h.Plq.ADMINISTRATOR, o);
+        c = (null == s ? true : s.id) === a.ownerId,
+        u = f.Z.can(h.Plq.ADMINISTRATOR, a);
       if (t.includes("is_owner") && !c || t.includes("is_admin") && !u) continue;
       null == (y = null != y ? y : {})[e.key] && (y[e.key] = e);
       let d = g.Z.getGuildId(),
-        m = null != d && d === o.id;
+        m = null != d && d === a.id;
       if ((!t.includes("is_viewing") || m) && !i) returntrue
     }
     return !!i && !!l
@@ -124,12 +124,12 @@ function w(e) {
   let {
     survey: t
   } = e;
-  j = false, v.lastFetched = Date.now(), null == v.hiddenSurveys && (v.hiddenSurveys = {});
+  j = false, O.lastFetched = Date.now(), null == O.hiddenSurveys && (O.hiddenSurveys = {});
   let n = null != t,
-    r = n && null == v.hiddenSurveys[t.key],
+    r = n && null == O.hiddenSurveys[t.key],
     i = n && A(t),
     l = c.K.get(h.z7k);
-  null == l || o()().diff(l, "day"), x = r && i && 1 ? t : null
+  null == l || a()().diff(l, "day"), x = r && i && 1 ? t : null
 }
 
 function Z() {
@@ -142,19 +142,19 @@ function Z() {
 }
 class R extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    v = null != e ? e : O, this.syncWith([g.Z], Z)
+    O = null != e ? e : v, this.syncWith([g.Z], Z)
   }
   getState() {
-    return v
+    return O
   }
   getCurrentSurvey() {
     return P() ? null : x
   }
   getSurveyOverride() {
-    return v.surveyOverride
+    return O.surveyOverride
   }
   getLastSeenTimestamp() {
-    return v.lastSeen
+    return O.lastSeen
   }
 }
 b(R, "displayName", "SurveyStore"), b(R, "persistKey", "SurveyStore"), b(R, "migrations", [e => {
@@ -179,20 +179,20 @@ let D = new R(Chunk570140.Z, {
     let {
       key: t
     } = e;
-    v.hiddenSurveys[t] = true, x = null, y = null != y ? y : {}, delete y[t]
+    O.hiddenSurveys[t] = true, x = null, y = null != y ? y : {}, delete y[t]
   },
   SURVEY_OVERRIDE: function(e) {
     let {
       id: t
     } = e;
-    v.surveyOverride = t, null != t && delete v.hiddenSurveys[t], (0, d.wk)(v.surveyOverride, true)
+    O.surveyOverride = t, null != t && delete O.hiddenSurveys[t], (0, d.wk)(O.surveyOverride, true)
   },
   PUSH_NOTIFICATION_CLICK: function() {},
   DISPLAYED_INVITE_SHOW: function() {},
   LOGOUT: function() {
-    v.hiddenSurveys = {}
+    O.hiddenSurveys = {}
   },
   SURVEY_SEEN: function() {
-    v.lastSeen = Date.now()
+    O.lastSeen = Date.now()
   }
 })

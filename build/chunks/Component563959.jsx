@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
 
 function m(e, t) {
   let n = i.useRef(null);
-  return i.useCallback(i => (o, a) => {
+  return i.useCallback(i => (a, o) => {
     let s = u.ZP.getApplicationIconURL({
         id: i.id,
         icon: i.icon,
@@ -27,7 +27,7 @@ function m(e, t) {
       {
         bot: d
       } = i;
-    return null == d ? o : (0, r.jsx)(c.Z, {
+    return null == d ? a : (0, r.jsx)(c.Z, {
       targetElementRef: n,
       userId: d.id,
       avatarUrl: s,
@@ -56,7 +56,7 @@ function m(e, t) {
           return e
         }({}, e), i = i = {
           ref: n,
-          children: o
+          children: a
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -68,7 +68,7 @@ function m(e, t) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
         }), t))
       }
-    }, a)
+    }, o)
   }, [e, t.id])
 }
 
@@ -77,7 +77,7 @@ function f(e) {
     message: t,
     channel: i,
     compact: l
-  } = e, c = (0, o.ZP)(t), u = t.application, f = (0, a.l)({
+  } = e, c = (0, a.ZP)(t), u = t.application, f = (0, o.l)({
     user: t.author,
     channelId: i.id,
     guildId: i.guild_id,
@@ -101,7 +101,7 @@ function g(e) {
     message: t,
     channel: i,
     compact: l
-  } = e, c = (0, o.ZP)(t), u = t.application, f = (0, a.l)({
+  } = e, c = (0, a.ZP)(t), u = t.application, f = (0, o.l)({
     user: t.author,
     channelId: i.id,
     guildId: i.guild_id,

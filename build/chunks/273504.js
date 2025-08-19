@@ -6,13 +6,13 @@ require.d(exports, {
   Lg: () => b,
   OU: () => _,
   RH: () => s,
-  Ux: () => a,
+  Ux: () => o,
   VW: () => d,
   Vg: () => h,
   Vk: () => m,
   _6: () => C,
   aj: () => g,
-  dc: () => O,
+  dc: () => v,
   fX: () => Chunk41381.f,
   hu: () => p,
   jj: () => Chunk401653.j,
@@ -23,7 +23,7 @@ require.d(exports, {
 var r, Chunk401653 = require("./401653.js"),
   Chunk95930 = require("./95930.js"),
   Chunk41381 = require("./41381.js"),
-  a = ((r = {})[r.PROFANITY = 1] = "PROFANITY", r[r.SEXUAL_CONTENT = 2] = "SEXUAL_CONTENT", r[r.SLURS = 3] = "SLURS", r);
+  o = ((r = {})[r.PROFANITY = 1] = "PROFANITY", r[r.SEXUAL_CONTENT = 2] = "SEXUAL_CONTENT", r[r.SLURS = 3] = "SLURS", r);
 Chunk41381.f.USER_PROFILE, Chunk41381.f.SERVER_POLICY, Chunk41381.f.MENTION_SPAM, Chunk41381.f.ML_SPAM, Chunk41381.f.DEFAULT_KEYWORD_LIST, Chunk41381.f.KEYWORD;
 let s = 1e3,
   c = 100,
@@ -38,4 +38,4 @@ let s = 1e3,
   b = 50,
   E = 20,
   C = 150,
-  O = "automod-profile-quarantine-alert"
+  v = "automod-profile-quarantine-alert"

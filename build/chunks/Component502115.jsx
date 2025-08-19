@@ -23,8 +23,8 @@ function s(e) {
     icon: n(508933),
     timestamp: t.timestamp,
     compact: i,
-    contentClassName: a.messageContent,
-    children: o.intl.format(o.t.bYdG3d, {
+    contentClassName: o.messageContent,
+    children: a.intl.format(a.t.bYdG3d, {
       onClick: s
     })
   })
@@ -39,8 +39,8 @@ function c(e) {
     icon: n(324606),
     timestamp: t.timestamp,
     compact: i,
-    contentClassName: a.messageContent,
-    children: o.intl.string(o.t.tu6tOT)
+    contentClassName: o.messageContent,
+    children: a.intl.string(a.t.tu6tOT)
   })
 }
 
@@ -55,12 +55,12 @@ function u(e) {
       width: 20,
       height: 20,
       color: "currentColor",
-      className: a.alertIcon
+      className: o.alertIcon
     }),
     timestamp: t.timestamp,
     compact: n,
-    contentClassName: a.messageContent,
-    children: o.intl.string(o.t.vzfXqq)
+    contentClassName: o.messageContent,
+    children: a.intl.string(a.t.vzfXqq)
   })
 }
 
@@ -75,11 +75,11 @@ function d(e) {
       width: 20,
       height: 20,
       color: "currentColor",
-      className: a.alertIcon
+      className: o.alertIcon
     }),
     timestamp: t.timestamp,
     compact: n,
-    contentClassName: a.messageContent,
-    children: o.intl.string(o.t["/Tfvyc"])
+    contentClassName: o.messageContent,
+    children: a.intl.string(a.t["/Tfvyc"])
   })
 }

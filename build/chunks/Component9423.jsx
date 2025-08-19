@@ -9,7 +9,7 @@ var Chunk825829 = require("./825829.js"),
   Chunk33803 = require("./33803.jsx"),
   Chunk517820 = require("./517820.jsx");
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,9 +46,9 @@ function s(e) {
     }
     return i
   }(e, ["message"]);
-  return (0, i.OP)(t) ? (0, r.jsx)(o.Z, a({
+  return (0, i.OP)(t) ? (0, r.jsx)(a.Z, o({
     message: t
-  }, n)) : (0, r.jsx)(l.Z, a({
+  }, n)) : (0, r.jsx)(l.Z, o({
     message: t
   }, n))
 }

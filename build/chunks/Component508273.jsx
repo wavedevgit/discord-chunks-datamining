@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk447543 = require("./447543.js"),
@@ -31,7 +31,7 @@ function y(e) {
     message: l,
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d
-  } = e, p = i.useRef(null), [f, _] = i.useState(true), [y, j] = i.useState(false), I = t.state === C.r2o.ACCEPTING, S = (0, a.e7)([u.Z], () => u.Z.useReducedMotion);
+  } = e, p = i.useRef(null), [f, _] = i.useState(true), [y, j] = i.useState(false), I = t.state === C.r2o.ACCEPTING, S = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
     j((null != (t = null == (e = p.current) ? true : e.clientHeight) ? t : 0) > 292)
@@ -51,46 +51,46 @@ function y(e) {
       } : {}
     }, [f, y, S]);
   return null == T ? (0, r.jsx)(E.Z, {}) : (0, r.jsxs)(s.P3F, {
-    className: o()(v.guildInviteContainer, {
-      [v.clickable]: y && f
+    className: a()(O.guildInviteContainer, {
+      [O.clickable]: y && f
     }),
     onClick: P,
     style: A,
     children: [(0, r.jsxs)("div", {
-      className: v.cardHeightMeasure,
+      className: O.cardHeightMeasure,
       ref: p,
       children: [(0, r.jsx)(b.Z7, {
         profile: T,
-        className: v.banner
+        className: O.banner
       }), (0, r.jsx)(b.N3, {
         profile: T
       }), (0, r.jsx)(h.Z, {
         profile: T
       }), (0, r.jsx)(g.E, {
         profile: T,
-        className: v.mainContent
+        className: O.mainContent
       })]
     }), y && !f ? (0, r.jsx)("div", {
-      className: v.hideDetailsButtonContainer,
+      className: O.hideDetailsButtonContainer,
       children: (0, r.jsx)(s.Avr, {
         textVariant: "text-xs/medium",
         variant: "secondary",
         size: "sm",
         onClick: N,
-        text: O.intl.string(O.t.xdCLeH)
+        text: v.intl.string(v.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
-      className: o()(v.footer, {
-        [v.floatingFooter]: y
+      className: a()(O.footer, {
+        [O.floatingFooter]: y
       }),
       children: [y && f ? (0, r.jsx)("div", {
-        className: v.gradient
+        className: O.gradient
       }) : null, (0, r.jsx)("div", {
-        className: o()(v.footerContent, {
-          [v.collapsedFooterContent]: y && f
+        className: a()(O.footerContent, {
+          [O.collapsedFooterContent]: y && f
         }),
         children: (0, r.jsx)("div", {
-          className: v.buttonContainer,
+          className: O.buttonContainer,
           children: (0, r.jsx)(x, {
             invite: t,
             profile: T,
@@ -111,8 +111,8 @@ function x(e) {
     invite: t,
     profile: n,
     isMemberOfGuild: l,
-    message: o,
-    submitting: a,
+    message: a,
+    submitting: o,
     onTransitionToInviteChannel: s,
     onAcceptInstantInvite: u
   } = e, {
@@ -125,14 +125,14 @@ function x(e) {
     (0, c.r$)({
       invite: t,
       action: e,
-      inviter_id: o.author.id,
-      invite_message_id: o.id
+      inviter_id: a.author.id,
+      invite_message_id: a.id
     }, h)
-  }, [t, o, h, l]);
+  }, [t, a, h, l]);
   return null == g ? null : (0, r.jsx)(_.o, {
     guildId: m,
     ctaType: g,
-    submitting: a,
+    submitting: o,
     onGoToGuild: s,
     onAcceptInvite: u,
     onStartApplication: u,

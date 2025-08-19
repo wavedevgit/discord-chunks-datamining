@@ -2,7 +2,7 @@
 /** chunk id: 158222, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   V6: () => c,
-  fn: () => a,
+  fn: () => o,
   xP: () => s
 });
 var Chunk544891 = require("./544891.js"),
@@ -10,7 +10,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk881052 = require("./881052.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e) {
+function o(e) {
   i.Z.dispatch({
     type: "DISMISS_MEDIA_POST_SHARE_PROMPT",
     threadId: e
@@ -23,7 +23,7 @@ async function s(e) {
   });
   try {
     let t = (await r.tn.get({
-      url: o.ANM.MEDIA_POST_RESHARE_GET_PREVIEW(e),
+      url: a.ANM.MEDIA_POST_RESHARE_GET_PREVIEW(e),
       rejectWithError: true
     })).body;
     i.Z.dispatch({
@@ -41,7 +41,7 @@ async function s(e) {
 async function c(e) {
   try {
     return (await r.tn.post({
-      url: o.ANM.UNFURL_EMBED_URLS,
+      url: a.ANM.UNFURL_EMBED_URLS,
       body: {
         urls: e
       },

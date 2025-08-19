@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk447543 = require("./447543.js"),
   Chunk100527 = require("./100527.js"),
@@ -26,24 +26,24 @@ function C(e) {
       invite: n,
       message: l,
       currentUserId: C,
-      onTransitionToInviteChannel: O,
-      onAcceptInstantInvite: v
+      onTransitionToInviteChannel: v,
+      onAcceptInstantInvite: O
     } = e,
     y = C === l.author.id,
     x = n.state === h.r2o.ACCEPTING,
-    j = (0, a.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
-  o()(null == j || j.isPrivate(), "must be a private channel");
+    j = (0, o.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
+  a()(null == j || j.isPrivate(), "must be a private channel");
   let {
     analyticsLocations: I
   } = (0, u.ZP)(c.Z.INVITE_EMBED), S = null != j, T = i.useCallback(() => {
     let e = "noop";
-    S ? (O(), e = "transition") : (v(), e = "accept"), (0, s.r$)({
+    S ? (v(), e = "transition") : (O(), e = "accept"), (0, s.r$)({
       invite: n,
       action: e,
       inviter_id: l.author.id,
       invite_message_id: l.id
     }, I)
-  }, [n, l, I, S, O, v]);
+  }, [n, l, I, S, v, O]);
   if (null == j) {
     if (null == n.channel) return (0, r.jsx)(_.Z, {});
     j = (0, p.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []

@@ -1,23 +1,23 @@
 /** Chunk was on 91173 **/
 /** chunk id: 467531, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => o,
-  W: () => a
+  B: () => a,
+  W: () => o
 });
 var Chunk544891 = require("./544891.js"),
   Chunk881052 = require("./881052.js"),
   Chunk981631 = require("./981631.js");
-async function o(e) {
+async function a(e) {
   let {
     channelId: t,
     messageId: n,
-    answerIds: o
+    answerIds: a
   } = e;
   try {
     await r.tn.put({
       url: l.ANM.POLL_ANSWERS(t, n),
       body: {
-        answer_ids: o
+        answer_ids: a
       },
       rejectWithError: false
     })
@@ -25,7 +25,7 @@ async function o(e) {
     throw new i.Hx(e)
   }
 }
-async function a(e) {
+async function o(e) {
   let {
     channelId: t,
     messageId: n

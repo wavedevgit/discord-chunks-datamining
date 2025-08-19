@@ -1,11 +1,15 @@
-/** Chunk was on 91173 **/
-/** chunk id: 623879, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 623879, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  FZ: () => l,
+  FZ: () => a,
   ZP: () => o
 });
-var r, Chunk818083 = require("./818083.js"),
-  l = ((r = {}).Control = "CONTROL", r.Social = "SOCIAL", r.Perks = "PERKS", r);
+var Chunk818083 = require("./818083.js"),
+  Chunk987338 = require("./987338.js"),
+  a = function(e) {
+    return e.Control = "CONTROL", e.Social = "SOCIAL", e.Perks = "PERKS", e
+  }({});
 let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-06_referral_program_dm_embed_refresh_experiment",
@@ -13,6 +17,7 @@ let o = (0, Chunk818083.B)({
   defaultConfig: {
     cohort: "CONTROL"
   },
+  commonTriggerPoint: Chunk987338.$P.CONNECTION_OPEN,
   treatments: [{
     id: 0,
     label: "Control group. Users experience existing flow.",

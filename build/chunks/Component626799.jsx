@@ -93,7 +93,7 @@ class S extends(r = Chunk647438.Component) {
       width: n,
       fetchFailed: r,
       renderFallback: l
-    } = this.props, a = require > Chunk568836.aL;
+    } = this.props, o = require > Chunk568836.aL;
     return null == module || null == exports ? r ? Chunk647438() : (0, Chunk951288.jsx)(Chunk568836.OR, {
       isHorizontal: Chunk442837
     }) : module.productLine === Chunk981631.POd.COLLECTIBLES ? (0, Chunk951288.jsx)(Chunk410575.Z, {
@@ -131,7 +131,7 @@ class S extends(r = Chunk647438.Component) {
         sku: e
       } = this.props;
       if (null == e) throw Error("Should not be link to ApplicationStoreListing without SKU");
-      return (0, v.ZI)(e.id, {
+      return (0, O.ZI)(e.id, {
         slug: e.slug,
         analyticsSource: this.analyticsLocation
       })
@@ -145,8 +145,8 @@ class S extends(r = Chunk647438.Component) {
         inLibrary: n,
         width: r,
         renderCustomTitle: l,
-        renderCustomTagline: o,
-        renderCustomMedia: a
+        renderCustomTagline: a,
+        renderCustomMedia: o
       } = this.props, {
         playing: s,
         muted: c
@@ -160,8 +160,8 @@ class S extends(r = Chunk647438.Component) {
         onToggleMute: this.handleToggleMute,
         renderCustomActions: () => this.renderActions(e),
         renderCustomTitle: l,
-        renderCustomTagline: o,
-        renderCustomMedia: a,
+        renderCustomTagline: a,
+        renderCustomMedia: o,
         isHorizontal: u,
         isEmbed: true
       })
@@ -171,18 +171,18 @@ class S extends(r = Chunk647438.Component) {
         application: n,
         skuId: r,
         libraryApplication: l,
-        renderCustomActions: o
+        renderCustomActions: a
       } = this.props;
-      if (null != o) return (0, i.jsx)("div", {
+      if (null != a) return (0, i.jsx)("div", {
         className: j.tileActions,
-        children: o()
+        children: a()
       });
       if (null == n) return null;
-      let a = null != n && n.primarySkuId === r,
+      let o = null != n && n.primarySkuId === r,
         c = null != l && l.hasFlag(y.eHb.HIDDEN);
       return (0, i.jsxs)("div", {
         className: j.tileActions,
-        children: [!a || c ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {
+        children: [!o || c ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {
           application: n,
           customDisabledColor: s.zx.Colors.PRIMARY,
           size: s.zx.Sizes.SMALL,
@@ -212,7 +212,7 @@ function P(e) {
     application: r,
     fetchFailed: C.Z.didFetchingSkuFail(t),
     inLibrary: null != n && b.Z.hasApplication(n.applicationId, n.applicationId, true),
-    storeListing: null != n ? O.Z.getForSKU(n.id) : null,
+    storeListing: null != n ? v.Z.getForSKU(n.id) : null,
     libraryApplication: null != n ? b.Z.getLibraryApplication(n.applicationId, n.applicationId, true) : null
   }
 }
