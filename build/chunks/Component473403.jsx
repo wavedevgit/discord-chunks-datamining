@@ -3,8 +3,8 @@
 require.d(exports, {
   ZP: () => k,
   _W: () => D,
-  ge: () => x,
-  je: () => Z
+  ge: () => Z,
+  je: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -77,7 +77,7 @@ function N(e) {
 }
 let L = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
-function x(e) {
+function Z(e) {
   let {
     channel: t,
     size: n = u.EFr.SIZE_20
@@ -89,7 +89,7 @@ function x(e) {
   })
 }
 
-function Z(e) {
+function x(e) {
   let {
     channel: t,
     size: n = u.EFr.SIZE_20
@@ -136,13 +136,13 @@ let D = e => {
         switch (e.type) {
           case S.d4z.DM:
             return function() {
-              return (0, r.jsx)(Z, {
+              return (0, r.jsx)(x, {
                 channel: e
               })
             };
           case S.d4z.GROUP_DM:
             return function() {
-              return (0, r.jsx)(x, {
+              return (0, r.jsx)(Z, {
                 channel: e
               })
             };
@@ -184,8 +184,8 @@ let D = e => {
       locked: O,
       hasActiveThreads: E,
       onClick: L,
-      onMouseDown: x,
-      onMouseUp: Z,
+      onMouseDown: Z,
+      onMouseUp: x,
       onContextMenu: k,
       connectDragPreview: G,
       className: M,
@@ -289,7 +289,7 @@ let D = e => {
       },
       children: (0, r.jsxs)("div", {
         ref: t,
-        className: l()(M, null != L || null != Z || null != x || H ? A.wrapper : A.notInteractive, (() => {
+        className: l()(M, null != L || null != x || null != Z || H ? A.wrapper : A.notInteractive, (() => {
           if (g) return l()(P.selectedChannel, T.SELECTED);
           if (y) return l()(P.selectedChannel, T.CONNECTED);
           if (O) return T.LOCKED;
@@ -316,8 +316,8 @@ let D = e => {
               return A.typeDefault
           }
         }(null != Y ? Y : W)),
-        onMouseUp: e => null == Z ? true : Z(e, s),
-        onMouseDown: e => null == x ? true : x(e, s),
+        onMouseUp: e => null == x ? true : x(e, s),
+        onMouseDown: e => null == Z ? true : Z(e, s),
         onContextMenu: e => null == k ? true : k(e, s),
         onMouseEnter: B,
         onMouseLeave: Q,
