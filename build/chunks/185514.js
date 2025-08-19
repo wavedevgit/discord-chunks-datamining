@@ -9,7 +9,7 @@ require.d(exports, {
 });
 var Chunk140492 = require("./140492.js"),
   Chunk475468 = require("./475468.js"),
-  Chunk703656 = require("./703656.js"),
+  Chunk891304 = require("./891304.js"),
   Chunk769654 = require("./769654.js"),
   Chunk944486 = require("./944486.js"),
   Chunk914010 = require("./914010.js"),
@@ -41,10 +41,10 @@ let u = {
   g = {
     binds: (0, Chunk358085.isMac)() ? ["mod+["] : ["alt+left"],
     comboKeysBindGlobal: true,
-    action: () => ((0, Chunk703656.op)(), false)
+    action: () => ((0, Chunk891304.Hm)("keybind"), false)
   },
   h = {
     binds: (0, Chunk358085.isMac)() ? ["mod+]"] : ["alt+right"],
     comboKeysBindGlobal: true,
-    action: () => ((0, Chunk703656.eH)(), false)
+    action: () => ((0, Chunk891304.TL)("keybind"), false)
   }

@@ -75,8 +75,10 @@ let O = Symbol("NO GUILD ID"),
 
 function k(e) {
   let t = e.data.type,
-    n = e.data.games.map(e => y(E({}, e), {
-      applicationId: e.game_id
+    n = e.data.games.map(e => ({
+      applicationId: e.game_id,
+      comment: e.comment,
+      tags: e.tags
     }));
   return {
     id: e.id,

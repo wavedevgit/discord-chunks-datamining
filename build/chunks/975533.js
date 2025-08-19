@@ -14,9 +14,9 @@ var Chunk570140 = require("./570140.js"),
   Chunk100527 = require("./100527.js"),
   Chunk924557 = require("./924557.js"),
   Chunk39604 = require("./39604.js"),
+  Chunk891304 = require("./891304.js"),
   Chunk569545 = require("./569545.js"),
   Chunk722835 = require("./722835.js"),
-  Chunk703656 = require("./703656.js"),
   Chunk352527 = require("./352527.js"),
   Chunk641015 = require("./641015.js"),
   Chunk183584 = require("./183584.js"),
@@ -201,7 +201,7 @@ let R = {
       }
     },
     [Chunk981631.kg4.NAVIGATE_BACK]: {
-      onTrigger: () => (0, Chunk703656.op)(),
+      onTrigger: () => (0, Chunk891304.Hm)("global_keybind"),
       keyEvents: {
         keyup: true,
         keydown: false,
@@ -210,7 +210,7 @@ let R = {
       }
     },
     [Chunk981631.kg4.NAVIGATE_FORWARD]: {
-      onTrigger: () => (0, Chunk703656.eH)(),
+      onTrigger: () => (0, Chunk891304.TL)("global_keybind"),
       keyEvents: {
         keyup: true,
         keydown: false,

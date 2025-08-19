@@ -104,7 +104,8 @@ function V() {
   }, [module.fetchPolicy, Chunk959078, exports, Chunk278074, Chunk754700, module.callerSource, Chunk780384.enabled]), {
     quests: Chunk512722,
     excludedQuests: a,
-    isFetchingCurrentQuests: Chunk278074
+    isFetchingCurrentQuests: Chunk278074,
+    hasFetched: exports
   }
 }
 
@@ -162,18 +163,20 @@ var W = function(e) {
 function K(e) {
   let {
     quests: t,
-    isFetchingCurrentQuests: n
+    isFetchingCurrentQuests: n,
+    hasFetched: r
   } = V({
     fetchPolicy: "cache-and-network",
     callerSource: "use_filtered_quests"
-  }), r = new Map(t.map(e => [e.id, e])), i = H(t), a = Y(t), o = [], s = [];
-  for (let t of o = "all" === e ? i : a) {
-    let e = r.get(t);
-    null != e && s.push(e)
+  }), i = new Map(t.map(e => [e.id, e])), a = H(t), o = Y(t), s = [], l = [];
+  for (let t of s = "all" === e ? a : o) {
+    let e = i.get(t);
+    null != e && l.push(e)
   }
   return {
-    quests: s,
-    isFetchingCurrentQuests: n
+    quests: l,
+    isFetchingCurrentQuests: n,
+    hasFetched: r
   }
 }
 

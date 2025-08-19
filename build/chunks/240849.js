@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => u
 });
-var Chunk703656 = require("./703656.js"),
+var Chunk891304 = require("./891304.js"),
   Chunk556296 = require("./556296.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
@@ -16,9 +16,9 @@ function l(e, t) {
 class c {
   initialize() {
     (0, Chunk358085.isDesktop)() && (Chunk998502.ZP.on("NAVIGATE_BACK", (e, t) => {
-      l(t, s.qXD.Back) && (0, r.op)()
+      l(t, s.qXD.Back) && (0, r.Hm)("native")
     }), Chunk998502.ZP.on("NAVIGATE_FORWARD", (e, t) => {
-      l(t, s.qXD.Forward) && (0, r.eH)()
+      l(t, s.qXD.Forward) && (0, r.TL)("native")
     }))
   }
 }

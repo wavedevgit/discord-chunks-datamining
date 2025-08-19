@@ -21,11 +21,11 @@ var Chunk951288 = require("./951288.js"),
 
 function g() {
   let [e, t] = Chunk647438.useState(false), {
-    hasPendingChanges: n,
-    pendingWidgets: a
+    saveablePendingWidgets: n,
+    hasSaveablePendingChanges: a
   } = (0, Chunk442837.cj)([Chunk224724.Z], () => ({
-    hasPendingChanges: Chunk224724.Z.hasPendingChanges(),
-    pendingWidgets: Chunk224724.Z.getPendingWidgets()
+    saveablePendingWidgets: Chunk224724.Z.getSaveablePendingWidgets(),
+    hasSaveablePendingChanges: Chunk224724.Z.hasSaveablePendingChanges()
   }));
   Chunk647438.useEffect(() => {
     let e = null;
@@ -38,18 +38,18 @@ function g() {
     }
   }, []);
   let g = Chunk647438.useCallback(async () => {
-      if (null !== Chunk120356) try {
-        await Chunk592183.Z.savePendingWidgets(Chunk120356)
+      if (null !== require) try {
+        await Chunk592183.Z.savePendingWidgets(require)
       } catch (e) {
         (0, Chunk872269.L$)(Chunk228168.qb.WIDGET_SAVE_FAILURE)
       }
-    }, [Chunk120356]),
+    }, [require]),
     E = Chunk647438.useCallback(() => {
       Chunk592183.Z.clearPendingWidgets()
     }, []);
-  return require ? (0, Chunk951288.jsx)("div", {
+  return Chunk120356 ? (0, Chunk951288.jsx)("div", {
     className: o()(Chunk461671.container, {
-      [Chunk461671.visible]: require
+      [Chunk461671.visible]: Chunk120356
     }),
     role: "status",
     children: (0, Chunk951288.jsxs)("div", {

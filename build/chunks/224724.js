@@ -2,108 +2,127 @@
 /** chunk id: 224724, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
-});
+  Z: () => N
+}), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk594174 = require("./594174.js"),
-  Chunk621853 = require("./621853.js");
-let c = null,
-  u = null,
-  d = false,
-  f = {
+  Chunk621853 = require("./621853.js"),
+  Chunk86419 = require("./86419.js");
+let u = null,
+  d = null,
+  f = false,
+  _ = {
     suggestedGamesIds: [],
     suggestedWishlistGamesIds: []
   },
-  _ = false,
   p = false,
-  h = false;
+  h = false,
+  m = false;
 
-function m(e) {
+function g(e) {
   let {
     widgets: t
   } = e;
-  if (c = t, null === u) {
+  if (u = t, null === d) {
     let e = s.default.getCurrentUser();
     if (null != e) {
       var n;
       let t = l.Z.getUserProfile(e.id);
-      u = null != (n = null == t ? true : t.widgets) ? n : []
+      d = null != (n = null == t ? true : t.widgets) ? n : []
     }
   }
 }
 
-function g() {
-  c = null, u = null
+function E() {
+  u = null, d = null
 }
 
-function E(e) {
+function b(e) {
   let {
     suggestedGamesIds: t,
     suggestedWishlistGamesIds: n
   } = e;
-  f.suggestedGamesIds = t, f.suggestedWishlistGamesIds = n, p = false, _ = false
-}
-
-function b() {
-  _ = true, p = false
+  _.suggestedGamesIds = t, _.suggestedWishlistGamesIds = n, h = false, p = false
 }
 
 function y() {
-  p = true, _ = false, h = true
+  p = true, h = false
 }
 
-function O(e) {
-  d = true
+function O() {
+  h = true, p = false, m = true
 }
 
 function v(e) {
-  d = false, null !== c && (u = c, c = null)
+  f = true
 }
 
 function I(e) {
-  d = false
+  f = false, null !== u && (d = null, u = null)
 }
 
 function T(e) {
+  f = false
+}
+
+function S(e) {
   let {
     applicationId: t
   } = e;
-  f.suggestedGamesIds = f.suggestedGamesIds.filter(e => e !== t), f.suggestedWishlistGamesIds = f.suggestedWishlistGamesIds.filter(e => e !== t)
+  _.suggestedGamesIds = _.suggestedGamesIds.filter(e => e !== t), _.suggestedWishlistGamesIds = _.suggestedWishlistGamesIds.filter(e => e !== t)
 }
-class S extends Chunk442837.ZP.Store {
+class A extends Chunk442837.ZP.Store {
   getPendingWidgets() {
-    return c
+    return u
+  }
+  getSaveablePendingWidgets() {
+    return null == u ? null : u.filter(e => e.games.length > 0)
   }
   hasPendingChanges() {
-    return null !== c && (null === u || !i().isEqual(c, u))
+    return null !== u && (null === d || !i().isEqual(u, d))
+  }
+  hasSaveablePendingChanges() {
+    if (null == u) returnfalse;
+    if (null == d) returntrue;
+    let e = new Map(d.map(e => [e.id, e])),
+      t = new Map(u.map(e => [e.id, e]));
+    for (let [n, r] of exports) {
+      let t = module.get(require);
+      if (null == exports) {
+        if (Chunk392711.games.length > 0) returntrue
+      } else if (!(0, Chunk86419.ou)(Chunk392711.games, exports.games, Chunk392711.type)) returntrue
+    }
+    for (let [n] of module)
+      if (!exports.has(require)) returntrue;
+    returnfalse
   }
   get isSubmitting() {
-    return d
-  }
-  get suggestedFetchError() {
-    return _
-  }
-  get suggestedFetchIsLoading() {
-    return p
-  }
-  get suggestedFetchAttempted() {
-    return h
-  }
-  get suggestedGameIds() {
     return f
   }
+  get suggestedFetchError() {
+    return p
+  }
+  get suggestedFetchIsLoading() {
+    return h
+  }
+  get suggestedFetchAttempted() {
+    return m
+  }
+  get suggestedGameIds() {
+    return _
+  }
 }
-let A = new S(Chunk570140.Z, {
-  WIDGET_PENDING_SET: m,
-  WIDGET_PENDING_SAVE_START: O,
-  WIDGET_PENDING_SAVE_SUCCESS: v,
-  WIDGET_PENDING_SAVE_FAILURE: I,
-  WIDGET_SUGGESTED_FETCH_SUCCESS: E,
-  WIDGET_SUGGESTED_FETCH_FAILURE: b,
-  WIDGET_SUGGESTED_FETCH_START: y,
-  WIDGET_PENDING_CLEAR: g,
-  WIDGET_SUGGESTED_REMOVE_GAME: T
+let N = new A(Chunk570140.Z, {
+  WIDGET_PENDING_SET: g,
+  WIDGET_PENDING_SAVE_START: v,
+  WIDGET_PENDING_SAVE_SUCCESS: I,
+  WIDGET_PENDING_SAVE_FAILURE: T,
+  WIDGET_SUGGESTED_FETCH_SUCCESS: b,
+  WIDGET_SUGGESTED_FETCH_FAILURE: y,
+  WIDGET_SUGGESTED_FETCH_START: O,
+  WIDGET_PENDING_CLEAR: E,
+  WIDGET_SUGGESTED_REMOVE_GAME: S
 })
