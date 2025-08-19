@@ -65,41 +65,41 @@ let C = e => {
     name: C
   } = t;
   (0, i.ZP)(() => {
-    h.default.track(O.rMx.OPEN_POPOUT, x({
+    h.default.track(y.rMx.OPEN_POPOUT, x({
       type: "Role Icon Popout",
       guild_id: n.id
     }, (0, a.v_)(g.Z.getChannel(b.Z.getChannelId(n.id)))))
   });
-  let S = (0, l.e7)([f.Z], () => null != t.roleId ? f.Z.getRole(n.id, t.roleId) : true),
-    E = (0, p.Z)(S),
-    N = E ? j.intl.formatToPlainString(j.t.t0928f, {
+  let N = (0, l.e7)([f.Z], () => null != t.roleId ? f.Z.getRole(n.id, t.roleId) : true),
+    S = (0, p.Z)(N),
+    E = S ? j.intl.formatToPlainString(j.t.t0928f, {
       name: C
     }) : j.intl.formatToPlainString(j.t.UDDkGx, {
       name: C
     }),
-    R = w(x({}, t), {
+    Z = w(x({}, t), {
       src: null == t.src ? t.src : (0, u.o)(t.src, 40),
       size: 40
     }),
-    T = E ? () => {
-      (0, m.uL)(O.Z5c.CHANNEL(n.id, v.oC.ROLE_SUBSCRIPTIONS))
+    R = S ? () => {
+      (0, m.uL)(y.Z5c.CHANNEL(n.id, v.oC.ROLE_SUBSCRIPTIONS))
     } : () => {
       (0, d.f)({
         guildId: n.id,
         location: {
-          section: O.jXE.ROLE_ICON_POPOUT
+          section: y.jXE.ROLE_ICON_POPOUT
         }
       })
     };
   return (0, r.jsx)(o.VqE, {
-    children: (0, r.jsx)(y.W_, {
+    children: (0, r.jsx)(O.W_, {
       children: (0, r.jsxs)("div", {
         className: P.popoutContainer,
         children: [(0, r.jsxs)("div", {
           className: P.mainContent,
           children: [(0, r.jsx)("div", {
             className: P.roleIconContainer,
-            children: (0, r.jsx)(c.Z, w(x({}, R), {
+            children: (0, r.jsx)(c.Z, w(x({}, Z), {
               enableTooltip: false,
               className: P.__invalid_roleIcon,
               enableHeight: false
@@ -114,14 +114,14 @@ let C = e => {
               })
             }), (0, r.jsx)(o.Text, {
               variant: "text-sm/normal",
-              children: N
+              children: E
             })]
           })]
         }), (0, r.jsx)(o.zxk, {
           size: "sm",
           variant: "secondary",
           text: j.intl.string(j.t["H930+P"]),
-          onClick: T,
+          onClick: R,
           icon: o.$Eu,
           fullWidth: true,
           autoFocus: true

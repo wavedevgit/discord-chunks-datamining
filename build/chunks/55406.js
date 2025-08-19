@@ -50,8 +50,8 @@ let p = o().defaultRules.lheading,
   f = o().defaultRules.image,
   b = o().defaultRules.list,
   h = o().defaultRules.blockQuote,
-  y = o().defaultRules.paragraph,
-  O = /\{(.+?)}/,
+  O = o().defaultRules.paragraph,
+  y = /\{(.+?)}/,
   v = /^\$(\w+?)\$/;
 r = require("./235375.jsx");
 let j = e => {
@@ -59,8 +59,8 @@ let j = e => {
       transformUpperCase: t = false
     } = e;
     return (e, n, r) => {
-      let l = O.exec(e[1]),
-        i = e[1].replace(O, "");
+      let l = y.exec(e[1]),
+        i = e[1].replace(y, "");
       return t && (i = i.toUpperCase()), {
         className: null != l ? l[1] : null,
         level: "=" === e[2] ? 1 : 2,
@@ -94,7 +94,7 @@ let j = e => {
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading),
     heading: u({}, m, "function" == typeof r.customRules.heading ? r.customRules.heading(e) : r.customRules.heading),
     blockQuote: u({}, h, "function" == typeof r.customRules.blockQuote ? r.customRules.blockQuote(e) : r.customRules.blockQuote),
-    paragraph: u({}, y, "function" == typeof r.customRules.paragraph ? r.customRules.paragraph(e) : r.customRules.paragraph)
+    paragraph: u({}, O, "function" == typeof r.customRules.paragraph ? r.customRules.paragraph(e) : r.customRules.paragraph)
   });
 
 function x(e) {

@@ -25,7 +25,7 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function _(e) {
   }
   return e
 }
-class h extends Chunk647438.PureComponent {
+class _ extends Chunk647438.PureComponent {
   componentDidMount() {
     this.mountedAt = Date.now(), this.maxScrolledPercentage = 0, this.track(Chunk981631.rMx.CHANGE_LOG_OPENED, {}, true)
   }
@@ -46,7 +46,7 @@ class h extends Chunk647438.PureComponent {
   }
   render() {
     var e, t;
-    return (0, Chunk951288.jsx)(Chunk388080.Z, (e = _({}, this.props), t = t = {
+    return (0, Chunk951288.jsx)(Chunk388080.Z, (e = h({}, this.props), t = t = {
       onClose: this.close,
       onScroll: this.handleScroll,
       track: this.track
@@ -82,13 +82,13 @@ class h extends Chunk647438.PureComponent {
           date: a,
           revision: i
         } = o,
-        s = _({
+        l = h({
           change_log_id: "".concat(a, ":").concat(i)
         }, n);
-      r || (s = _({
+      r || (l = h({
         seconds_open: Math.round((Date.now() - t.mountedAt) / 1e3),
         max_scrolled_percentage: 100 * parseInt(t.maxScrolledPercentage.toPrecision(4), 10)
-      }, s)), l.default.track(e, s)
+      }, l)), c.default.track(e, l)
     })
   }
 }
@@ -97,18 +97,18 @@ function g(e) {
   let {
     changelog: t,
     loaded: n,
-    clientTooOld: l
-  } = (0, s.E)();
+    clientTooOld: c
+  } = (0, l.E)();
   if (o.useEffect(() => {
       if (n && null != t) return () => i.Z.markChangelogAsSeen(t.id, t.date)
-    }, [n, t]), l) return (0, r.jsx)(a.Y0X, {
+    }, [n, t]), c) return (0, r.jsx)(a.Y0X, {
     transitionState: e.transitionState,
     parentComponent: "ChangeLog",
     children: (0, r.jsx)("div", {
-      className: m.empty,
+      className: p.empty,
       children: (0, r.jsx)(a.X6q, {
         variant: "heading-lg/medium",
-        children: p.intl.string(p.t.V9ospq)
+        children: m.intl.string(m.t.V9ospq)
       })
     })
   });
@@ -117,10 +117,10 @@ function g(e) {
       transitionState: e.transitionState,
       parentComponent: "ChangeLog",
       children: (0, r.jsx)("div", {
-        className: m.empty,
+        className: p.empty,
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
-          children: p.intl.string(p.t.O1iRT0)
+          children: m.intl.string(m.t.O1iRT0)
         })
       })
     });
@@ -128,7 +128,7 @@ function g(e) {
       transitionState: e.transitionState,
       parentComponent: "ChangeLog",
       children: (0, r.jsx)("div", {
-        className: m.empty,
+        className: p.empty,
         children: (0, r.jsx)(a.$jN, {
           type: a.$jN.Type.WANDERING_CUBES
         })
@@ -137,7 +137,7 @@ function g(e) {
   return (0, r.jsx)(a.Y0X, {
     transitionState: e.transitionState,
     parentComponent: "ChangeLog",
-    children: (0, r.jsx)(h, {
+    children: (0, r.jsx)(_, {
       changeLog: t
     })
   })

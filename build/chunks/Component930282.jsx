@@ -4,7 +4,7 @@
 require.d(exports, {
   HR: () => h,
   L5: () => b,
-  ZP: () => y
+  ZP: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -33,7 +33,7 @@ function h(e, t) {
   } = e;
   return (0, c.Z)(e, t, ["message"]) && l.content === o.content && l.state === o.state && (null == (n = l.editedTimestamp) ? true : n.toString()) === (null == (r = o.editedTimestamp) ? true : r.toString())
 }
-let y = Chunk647438.memo(function(e) {
+let O = Chunk647438.memo(function(e) {
   var t;
   let {
     className: n,
@@ -42,8 +42,8 @@ let y = Chunk647438.memo(function(e) {
     content: c,
     onUpdate: m,
     contentRef: h,
-    compact: y
-  } = e, O = o.state === p.yb.SEND_FAILED, v = o.state === p.yb.SENDING, j = o.isCommandType(), P = null == (t = o.editedTimestamp) ? true : t.toString(), x = l.useRef(false);
+    compact: O
+  } = e, y = o.state === p.yb.SEND_FAILED, v = o.state === p.yb.SENDING, j = o.isCommandType(), P = null == (t = o.editedTimestamp) ? true : t.toString(), x = l.useRef(false);
   return l.useLayoutEffect(() => {
     x.current ? null != m && m() : x.current = true
   }, [m, o.content, c, P, a]), (0, r.jsxs)("div", {
@@ -53,12 +53,12 @@ let y = Chunk647438.memo(function(e) {
       [g.messageContent]: true,
       [g.isSending]: v && !j,
       [g.markupRtl]: "rtl" === s()(o.content),
-      [g.isFailed]: O,
+      [g.isFailed]: y,
       [g.isUnsupported]: o.isUnsupported
     }),
     children: [null != a ? a : b(o, c), (0, r.jsx)(d.Z, {
       message: o,
-      compact: y,
+      compact: O,
       location: d.H.WITH_CONTENT
     })]
   })

@@ -2,7 +2,7 @@
 /** chunk id: 397589, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,23 +20,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk975405 = require("./975405.js");
-let O = e => {
+let y = e => {
   var t;
   let {
     message: n
-  } = e, O = l.useRef(null), v = (0, p.p7)("Message Header") && n.hasPotions(), j = a.Z.getChannel(n.getChannelId()), P = null == (t = n.potions) ? true : t[0], x = l.useMemo(() => {
+  } = e, y = l.useRef(null), v = (0, p.p7)("Message Header") && n.hasPotions(), j = a.Z.getChannel(n.getChannelId()), P = null == (t = n.potions) ? true : t[0], x = l.useMemo(() => {
     var e;
     if (null == P) return null;
     let t = s.default.getUser(P.used_by);
     return null != (e = (0, u.y)(null == j ? true : j.getGuildId(), null == j ? true : j.id, t)) ? e : null == t ? true : t.globalName
   }, [P, j]), w = l.useCallback(() => {
-    if (null != O.current && (0, f.Uw)(n)) {
+    if (null != y.current && (0, f.Uw)(n)) {
       let {
         x: e,
         y: t,
         width: r,
         height: l
-      } = O.current.getBoundingClientRect();
+      } = y.current.getBoundingClientRect();
       (0, m.Z)(n, {
         x: e,
         y: t,
@@ -75,8 +75,8 @@ let O = e => {
           }
           return e
         }({
-          ref: O,
-          className: y.potionBadge
+          ref: y,
+          className: O.potionBadge
         }, e), n = n = {
           children: [(0, r.jsx)(o.l22, {
             size: "custom",

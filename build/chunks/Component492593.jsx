@@ -54,29 +54,29 @@ let h = function(e) {
     compact: n = false,
     contentOnly: o = false,
     zalgo: h = true,
-    preview: y = false,
-    disableInteraction: O = false,
+    preview: O = false,
+    disableInteraction: y = false,
     childrenRepliedMessage: v,
     childrenExecutedCommand: j,
     childrenHeader: P,
     childrenSystemMessage: x,
     childrenButtons: w,
     childrenMessageContent: C,
-    childrenAccessories: S,
-    messageRef: E,
-    focusProps: N = {
+    childrenAccessories: N,
+    messageRef: S,
+    focusProps: E = {
       offset: {
         left: 4,
         right: 4
       }
     },
-    hasThread: R,
-    isSystemMessage: T,
-    hasReply: Z,
+    hasThread: Z,
+    isSystemMessage: R,
+    hasReply: T,
     author: I,
-    onMouseEnter: _,
-    onMouseLeave: k
-  } = e, M = function(e, t) {
+    onMouseEnter: k,
+    onMouseLeave: M
+  } = e, D = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -91,15 +91,15 @@ let h = function(e) {
     }
     return l
   }(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
-  let D = (0, a.e7)([m.Z], () => (null == I ? true : I.guildId) == null || (null == I ? true : I.colorRoleId) == null ? null : m.Z.getRole(I.guildId, I.colorRoleId)),
-    A = (0, p.yH)(null == I ? true : I.guildId, D) && (0, d.S2)(I),
+  let _ = (0, a.e7)([m.Z], () => (null == I ? true : I.guildId) == null || (null == I ? true : I.colorRoleId) == null ? null : m.Z.getRole(I.guildId, I.colorRoleId)),
+    A = (0, p.yH)(null == I ? true : I.guildId, _) && (0, d.S2)(I),
     [L, G] = l.useState(false),
     U = l.useCallback(e => {
-      G(true), null == _ || _(e)
-    }, [_]),
-    B = l.useCallback(e => {
-      G(false), null == k || k(e)
+      G(true), null == k || k(e)
     }, [k]),
+    B = l.useCallback(e => {
+      G(false), null == M || M(e)
+    }, [M]),
     F = (0, u.Y)({
       location: "BaseMessage"
     }),
@@ -108,7 +108,7 @@ let h = function(e) {
         animate: L,
         setAnimate: G
       },
-      children: (0, r.jsx)(c.tEY, b(f({}, N), {
+      children: (0, r.jsx)(c.tEY, b(f({}, E), {
         children: (0, r.jsxs)("div", b(f({
           className: i()(t, {
             [g.gradient]: A,
@@ -116,29 +116,29 @@ let h = function(e) {
             [g.wrapper]: true,
             [g.contentOnly]: o,
             [g.compact]: n,
-            [g.preview]: y,
+            [g.preview]: O,
             [g.cozy]: !n,
             [g.zalgo]: h,
-            [g.hasThread]: R,
-            [g.isSystemMessage]: T,
-            [g.hasReply]: Z
+            [g.hasThread]: Z,
+            [g.isSystemMessage]: R,
+            [g.hasReply]: T
           }),
-          ref: E
-        }, M), {
+          ref: S
+        }, D), {
           role: "article",
           onMouseEnter: U,
           onMouseLeave: B,
           children: [v, j, (0, r.jsxs)("div", {
             className: g.contents,
             children: [x, P, null == x && C]
-          }), S, null != w ? (0, r.jsx)("div", {
+          }), N, null != w ? (0, r.jsx)("div", {
             className: g.buttonContainer,
             children: w
           }) : null]
         }))
       }))
     });
-  return O ? (0, r.jsx)(c.Rny, {
+  return y ? (0, r.jsx)(c.Rny, {
     children: H
   }) : H
 }

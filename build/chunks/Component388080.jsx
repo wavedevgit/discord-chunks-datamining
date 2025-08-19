@@ -2,14 +2,14 @@
 /** chunk id: 388080, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
-  l = require.n(Chunk913527),
+  c = require.n(Chunk913527),
   Chunk481060 = require("./481060.js"),
   Chunk446411 = require("./446411.jsx"),
   Chunk468846 = require("./468846.jsx"),
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk491068 = require("./491068.js"),
   Chunk400167 = require("./400167.js");
 
-function j(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,9 +32,9 @@ function j(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let k = Chunk454585.Z.reactParserFor(Chunk55406.default.getDefaultRules(Chunk491068)),
-  v = {};
-class C extends Chunk647438.PureComponent {
+let v = Chunk454585.Z.reactParserFor(Chunk55406.default.getDefaultRules(Chunk491068)),
+  C = {};
+class k extends Chunk647438.PureComponent {
   track(e, t, n) {
     this.props.track(e, t, n)
   }
@@ -155,9 +155,9 @@ class C extends Chunk647438.PureComponent {
           tabIndex: 0,
           role: "region",
           "aria-label": Chunk388032.intl.string(Chunk388032.t.HzBchI),
-          children: [this.renderVideo(), k(module.body, false, {
+          children: [this.renderVideo(), v(module.body, false, {
             changeLog: this,
-            interpolations: v,
+            interpolations: C,
             onLinkClick: this.trackLinkClick
           })]
         })
@@ -168,7 +168,7 @@ class C extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), j(this, "scrollerRef", o.createRef()), j(this, "handleScroll", () => {
+    super(...e), x(this, "scrollerRef", o.createRef()), x(this, "handleScroll", () => {
       let {
         current: e
       } = this.scrollerRef;
@@ -176,30 +176,30 @@ class C extends Chunk647438.PureComponent {
         var t, n;
         null == (t = (n = this.props).onScroll) || t.call(n, e)
       }
-    }), j(this, "trackLinkClick", e => {
+    }), x(this, "trackLinkClick", e => {
       this.props.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
         cta_type: "inline_link",
         target: e
       }, false)
-    }), j(this, "renderHeader", () => {
+    }), x(this, "renderHeader", () => {
       let {
         changeLog: e
       } = this.props;
-      return (0, r.jsxs)(p.Z.Child, {
+      return (0, r.jsxs)(m.Z.Child, {
         grow: 1,
         shrink: 1,
-        children: [(0, r.jsx)(c.X6q, {
+        children: [(0, r.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
           children: y.intl.string(y.t.LRmNAg)
-        }), (0, r.jsx)(c.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
-          className: x.date,
+          className: O.date,
           children: y.intl.format(y.t.Fb8xx8, {
-            date: null != e.date && "" !== e.date ? l()(e.date).toDate() : new Date
+            date: null != e.date && "" !== e.date ? c()(e.date).toDate() : new Date
           })
         })]
       })
     })
   }
 }
-let S = C
+let E = k

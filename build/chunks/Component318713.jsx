@@ -23,24 +23,24 @@ let m = Chunk647438.memo(function(e) {
       timestampFormat: f,
       isVisibleOnlyOnHover: b = false,
       cozyAlt: h = false,
-      isInline: y = true,
-      id: O,
+      isInline: O = true,
+      id: y,
       isEdited: v = false,
       application: j,
       tooltipPosition: P
-    } = e, x = l.useMemo(() => new Date(m), [m]), w = l.useMemo(() => (0, s.Hg)(x), [x]), C = l.useMemo(() => null != f ? (0, s.vc)(x, f) : o ? (0, s.vc)(x, "LT") : (0, s.Y4)(x, true), [x, f, o]), S = l.useMemo(() => o ? (0, u.Z)(C) : null, [o, C]), E = l.useMemo(() => v ? d.intl.formatToPlainString(d.t.CDzOFR, {
+    } = e, x = l.useMemo(() => new Date(m), [m]), w = l.useMemo(() => (0, s.Hg)(x), [x]), C = l.useMemo(() => null != f ? (0, s.vc)(x, f) : o ? (0, s.vc)(x, "LT") : (0, s.Y4)(x, true), [x, f, o]), N = l.useMemo(() => o ? (0, u.Z)(C) : null, [o, C]), S = l.useMemo(() => v ? d.intl.formatToPlainString(d.t.CDzOFR, {
       timeFormatted: w
     }) : w, [v, w]);
     return (0, r.jsx)("span", {
-      className: i()(n, S, {
+      className: i()(n, N, {
         [p.timestamp]: true,
         [p.timestampVisibleOnHover]: b,
-        [p.timestampInline]: y,
+        [p.timestampInline]: O,
         [p.alt]: h
       }),
       children: null == j ? (0, r.jsx)(a.ua7, {
         text: () => (0, s.vc)(x, "LLLL"),
-        "aria-label": E,
+        "aria-label": S,
         tooltipClassName: p.timestampTooltip,
         position: P,
         delay: 750,
@@ -48,7 +48,7 @@ let m = Chunk647438.memo(function(e) {
           tooltipProps: e,
           timeFormatted: C,
           timestamp: x,
-          id: O,
+          id: y,
           compact: o,
           children: t
         })
@@ -59,7 +59,7 @@ let m = Chunk647438.memo(function(e) {
         children: (0, r.jsx)(g, {
           timeFormatted: C,
           timestamp: x,
-          id: O,
+          id: y,
           compact: o,
           children: t
         })

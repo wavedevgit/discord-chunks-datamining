@@ -22,24 +22,24 @@ let b = Chunk647438.lazy(() => Promise.all([require.e("51889"), require.e("85831
 function h(e, t) {
   let {
     hideSimpleEmbedContent: h,
-    formatInline: y = false,
-    noStyleAndInteraction: O = false,
+    formatInline: O = false,
+    noStyleAndInteraction: y = false,
     isInteracting: v = false,
     allowHeading: j = false,
     allowList: P = false,
     allowLinks: x = false,
     allowDevLinks: w = false,
     previewLinkTarget: C = false,
-    viewingChannelId: S
-  } = t, E = (0, i.p)(), N = o.d.useExperiment({
+    viewingChannelId: N
+  } = t, S = (0, i.p)(), E = o.d.useExperiment({
     location: "useMessageRenderedContent"
-  }).enabled, R = (0, p.o)({
+  }).enabled, Z = (0, p.o)({
     location: "useMessageRenderedContent"
-  }), [T, Z] = l.useState(false), I = l.useCallback(e => {
-    e && Z(true)
+  }), [R, T] = l.useState(false), I = l.useCallback(e => {
+    e && T(true)
   }, []);
   return l.useEffect(() => {
-    Z(false)
+    T(false)
   }, [e.content]), l.useMemo(() => {
     if (null != e.customRenderedContent) return e.customRenderedContent;
     if (e.isUnsupported) return {
@@ -57,13 +57,13 @@ function h(e, t) {
         }
       })
     }
-    return R.enabled ? {
+    return Z.enabled ? {
       content: (0, r.jsx)(l.Suspense, {
         children: (0, r.jsx)(d.v.Provider, {
           value: {
             messageId: e.id,
             channelId: e.channel_id,
-            viewingChannelId: S,
+            viewingChannelId: N,
             guildId: (0, s.k)(e),
             setHasSpoilerEmbeds: I
           },
@@ -72,20 +72,20 @@ function h(e, t) {
           })
         })
       }),
-      hasSpoilerEmbeds: T
+      hasSpoilerEmbeds: R
     } : (0, c.ZP)(e, {
       hideSimpleEmbedContent: h,
-      formatInline: y,
-      noStyleAndInteraction: O,
+      formatInline: O,
+      noStyleAndInteraction: y,
       isInteracting: v,
       allowHeading: j,
       allowList: P,
       allowLinks: x,
       allowDevLinks: w,
       previewLinkTarget: C,
-      shouldFilterKeywords: E,
-      viewingChannelId: S,
-      allowGameMentions: N
+      shouldFilterKeywords: S,
+      viewingChannelId: N,
+      allowGameMentions: E
     })
-  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, h, y, O, v, j, P, x, C, E, w, S, R.enabled, N, T])
+  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, h, O, y, v, j, P, x, C, S, w, N, Z.enabled, E, R])
 }
