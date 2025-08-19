@@ -5,9 +5,10 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk704215 = require("./704215.js"),
+var Chunk657707 = require("./657707.js"),
+  Chunk704215 = require("./704215.js"),
   Chunk740111 = require("./740111.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk680018 = require("./680018.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk963249 = require("./963249.jsx"),
   Chunk703656 = require("./703656.js"),
@@ -17,8 +18,7 @@ var Chunk704215 = require("./704215.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk605548 = require("./605548.js"),
-  Chunk74316 = require("./74316.js");
+  Chunk605548 = require("./605548.js");
 
 function _(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -61,40 +61,40 @@ function E(e) {
       analyticsLocation: N,
       isLightTheme: T
     } = e,
-    P = "AnnouncementModalVariant1_".concat(i.z[Number(I.dismissKey)]),
+    P = "AnnouncementModalVariant1_".concat(l.z[Number(I.dismissKey)]),
     {
       onClose: j
     } = C,
-    A = null != (y = null == (t = I.button) ? true : t.copy) ? y : g.intl.string(g.t.YScQSE),
-    x = (null == (n = I.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
+    A = null != (y = null == (t = I.button) ? true : t.copy) ? y : m.intl.string(m.t.YScQSE),
+    x = (null == (n = I.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
   switch (null == (E = I.button) ? true : E.buttonAction) {
-    case l.Wc.OPEN_MARKETING_PAGE:
+    case a.Wc.OPEN_MARKETING_PAGE:
       v = () => {
-        (0, c.uL)(h.Z5c.APPLICATION_STORE), j()
+        (0, u.uL)(g.Z5c.APPLICATION_STORE), j()
       };
       break;
-    case l.Wc.OPEN_TIER_1_PAYMENT_MODAL:
-      v = () => (0, s.Z)({
-        subscriptionTier: f.Si.TIER_1,
+    case a.Wc.OPEN_TIER_1_PAYMENT_MODAL:
+      v = () => (0, c.Z)({
+        subscriptionTier: h.Si.TIER_1,
         analyticsLocations: S,
         analyticsObject: O(_({}, N), {
-          object: h.qAy.BUTTON_CTA,
-          objectType: h.Qqv.TIER_1
+          object: g.qAy.BUTTON_CTA,
+          objectType: g.Qqv.TIER_1
         }),
         onClose: e => {
           e && j()
         }
       });
       break;
-    case l.Wc.OPEN_TIER_2_PAYMENT_MODAL:
-    case l.Wc.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
+    case a.Wc.OPEN_TIER_2_PAYMENT_MODAL:
+    case a.Wc.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
     default:
-      v = () => (0, s.Z)({
-        subscriptionTier: f.Si.TIER_2,
+      v = () => (0, c.Z)({
+        subscriptionTier: h.Si.TIER_2,
         analyticsLocations: S,
         analyticsObject: O(_({}, N), {
-          object: h.qAy.BUTTON_CTA,
-          objectType: h.Qqv.TIER_2
+          object: g.qAy.BUTTON_CTA,
+          objectType: g.Qqv.TIER_2
         }),
         onClose: e => {
           e && j()
@@ -102,10 +102,10 @@ function E(e) {
       })
   }
   let Z = "" !== I.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
-      children: ["\xa0", (0, r.jsx)(o.eee, {
-        className: m.termsApplyAnchor,
-        href: d.Z.getArticleURL(I.helpArticleId),
-        children: g.intl.string(g.t["sBp+u7"])
+      children: ["\xa0", (0, r.jsx)(s.eee, {
+        className: b.termsApplyAnchor,
+        href: p.Z.getArticleURL(I.helpArticleId),
+        children: m.intl.string(m.t["sBp+u7"])
       })]
     }) : true,
     w = {
@@ -120,9 +120,9 @@ function E(e) {
     type: "image",
     src: T ? I.heroArtImageLinkLightTheme : I.heroArtImageLinkDarkTheme
   });
-  let L = "" !== I.modalTopPill ? () => (0, r.jsx)(p.mn, {
+  let L = "" !== I.modalTopPill ? () => (0, r.jsx)(f.mn, {
     text: I.modalTopPill,
-    className: m.modalTopPill
+    className: b.modalTopPill
   }) : true;
   return {
     renderModalProps: C,
@@ -141,25 +141,19 @@ function E(e) {
     changeLogId: P,
     button: () => {
       let e = Date.now();
-      return (0, r.jsxs)(o.gtL, {
-        "data-migration-pending": true,
-        className: m.button,
-        innerClassName: m.innerButton,
-        wrapperClassName: m.tier2Gradient,
-        size: a.zx.Sizes.SMALL,
+      return (0, r.jsx)(o.z, {
+        variant: "expressive",
+        size: "md",
         onClick: () => {
-          u.default.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
+          d.default.track(g.rMx.CHANGE_LOG_CTA_CLICKED, {
             change_log_id: P,
             cta_type: x,
             seconds_open: Math.round((Date.now() - e) / 1e3),
             target: P
           }), v()
         },
-        children: [(0, r.jsx)("img", {
-          alt: "",
-          className: m.nitroIconSubHeader,
-          src: b
-        }), A]
+        text: A,
+        icon: i.SrA
       })
     },
     modalDismissibleContent: "" !== I.dismissKey ? Number(I.dismissKey) : true

@@ -1,13 +1,15 @@
 /** Chunk was on 1272 **/
 /** chunk id: 290347, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => A
 }), require("./388685.js"), require("./415506.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk146187 = require("./146187.jsx"),
+  Chunk304789 = require("./304789.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk446411 = require("./446411.jsx"),
@@ -24,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk188784 = require("./188784.js");
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +45,7 @@ function I(e) {
   return e
 }
 
-function C(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,18 +57,18 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = [],
-  N = e => {
+let T = [],
+  P = e => {
     let {
       tagText: t,
       className: n
     } = e;
-    return (0, r.jsx)(s.IGR, {
-      className: a()(v.tag, n),
+    return (0, r.jsx)(u.IGR, {
+      className: a()(C.tag, n),
       text: t
     })
   },
-  T = e => {
+  j = e => {
     let {
       header: t,
       subHeader: n,
@@ -75,25 +77,25 @@ let S = [],
       wideStyle: o
     } = e;
     return (0, r.jsxs)("div", {
-      className: a()(v.featureCard, {
-        [v.wideStyle]: o
+      className: a()(C.featureCard, {
+        [C.wideStyle]: o
       }),
-      children: [null != l ? (0, r.jsx)(N, {
+      children: [null != l ? (0, r.jsx)(P, {
         tagText: l,
-        className: v.featureCardTag
+        className: C.featureCardTag
       }) : null, (0, r.jsx)("img", {
         alt: "",
-        className: a()(v.featureCardImg, {
-          [v.wideStyle]: o
+        className: a()(C.featureCardImg, {
+          [C.wideStyle]: o
         }),
         src: i
       }), (0, r.jsxs)("div", {
-        className: v.featureCardTextGroup,
-        children: [(0, r.jsx)(s.X6q, {
+        className: C.featureCardTextGroup,
+        children: [(0, r.jsx)(u.X6q, {
           variant: "heading-md/extrabold",
-          className: v.featureCardTextHeader,
+          className: C.featureCardTextHeader,
           children: t
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           children: n
         })]
@@ -101,33 +103,33 @@ let S = [],
     })
   };
 
-function P(e) {
+function A(e) {
   let {
     className: t,
     renderModalProps: n,
     heroArt: l,
-    heroArtClassName: N,
-    modalDismissibleContent: P,
-    modalTopExtra: j,
-    header: A,
-    headerClassName: x,
-    subHeader: Z,
-    subHeaderExtra: w,
-    featureCards: L,
-    changeLogId: R,
-    button: D,
-    body: k
+    heroArtClassName: P,
+    modalDismissibleContent: A,
+    modalTopExtra: x,
+    header: Z,
+    headerClassName: w,
+    subHeader: L,
+    subHeaderExtra: R,
+    featureCards: D,
+    changeLogId: k,
+    button: M,
+    body: U
   } = e, {
-    onClose: M,
-    transitionState: U
-  } = n, G = (0, p.Dt)(), B = L.length % 2 == 0, V = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [H, F] = i.useState(Date.now()), [z, W] = i.useState(0), [Y, K] = i.useState(0), [q, Q] = i.useState(false), [X, J] = i.useState(true), $ = i.useRef(H), ee = i.useRef(z), et = i.useRef(Y), en = i.useRef(q), er = i.useRef(X), [ei, el] = i.useState(S), ea = i.useRef(false);
+    onClose: G,
+    transitionState: B
+  } = n, V = (0, h.Dt)(), H = D.length % 2 == 0, F = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [z, W] = i.useState(Date.now()), [Y, K] = i.useState(0), [q, Q] = i.useState(0), [X, J] = i.useState(false), [$, ee] = i.useState(true), et = i.useRef(z), en = i.useRef(Y), er = i.useRef(q), ei = i.useRef(X), el = i.useRef($), [ea, eo] = i.useState(T), es = i.useRef(false);
 
-  function eo() {
+  function ec() {
     let e = Date.now(),
-      t = e - $.current,
-      n = ee.current,
-      r = et.current;
-    return en.current && (W(n += t), er.current || K(r += t)), F(e), [n, r]
+      t = e - et.current,
+      n = en.current,
+      r = er.current;
+    return ei.current && (K(n += t), el.current || Q(r += t)), W(e), [n, r]
   }
   return i.useEffect(() => {
     let e = async () => {
@@ -142,135 +144,140 @@ function P(e) {
               type: "text/vtt"
             }),
             i = URL.createObjectURL(r);
-          return C(I({}, e), {
+          return N(S({}, e), {
             src: i
           })
         });
-        el(await Promise.all(t))
+        eo(await Promise.all(t))
       } catch (e) {
-        _.Z.captureException(e), el(S)
+        E.Z.captureException(e), eo(T)
       }
     };
-    true !== ea.current && e(), ea.current = true
-  }, [l, ei]), i.useEffect(() => () => {
-    null != ei && ei.forEach(e => {
+    true !== es.current && e(), es.current = true
+  }, [l, ea]), i.useEffect(() => () => {
+    null != ea && ea.forEach(e => {
       URL.revokeObjectURL(e.src)
     })
-  }, [ei]), i.useEffect(() => {
-    $.current = H, ee.current = z, et.current = Y, en.current = q, er.current = X
-  }, [H, z, Y, q, X]), i.useEffect(() => () => {
+  }, [ea]), i.useEffect(() => {
+    et.current = z, en.current = Y, er.current = q, ei.current = X, el.current = $
+  }, [z, Y, q, X, $]), i.useEffect(() => () => {
     if ("video" === l.type || "embed" === l.type) {
-      let [e, t] = eo();
-      b.default.track(O.rMx.CHANGE_LOG_VIDEO_PLAYED, {
-        change_log_id: R,
+      let [e, t] = ec();
+      O.default.track(y.rMx.CHANGE_LOG_VIDEO_PLAYED, {
+        change_log_id: k,
         seconds_played: Math.round(e / 1e3)
-      }), b.default.track(O.rMx.CHANGE_LOG_VIDEO_UNMUTE, {
-        change_log_id: R,
+      }), O.default.track(y.rMx.CHANGE_LOG_VIDEO_UNMUTE, {
+        change_log_id: k,
         seconds_unmuted: Math.round(t / 1e3)
       })
     }
-  }, [R, l.type]), i.useEffect(() => {
-    null != P && (0, g.kk)(P);
+  }, [k, l.type]), i.useEffect(() => {
+    null != A && (0, b.kk)(A);
     let e = Date.now();
-    return b.default.track(O.rMx.CHANGE_LOG_OPENED, {
-      change_log_id: R
+    return O.default.track(y.rMx.CHANGE_LOG_OPENED, {
+      change_log_id: k
     }), () => {
-      b.default.track(O.rMx.CHANGE_LOG_CLOSED, {
-        change_log_id: R,
+      O.default.track(y.rMx.CHANGE_LOG_CLOSED, {
+        change_log_id: k,
         seconds_open: Math.round((Date.now() - e) / 1e3)
-      }), null != P && (0, h.Q3)(P, {
-        dismissAction: E.L.DISMISS
+      }), null != A && (0, m.Q3)(A, {
+        dismissAction: v.L.DISMISS
       })
     }
-  }, [P, R]), (0, r.jsxs)(s.Y0X, {
+  }, [A, k]), (0, r.jsx)(u.Y0X, {
     "data-migration-pending": true,
-    className: a()(v.root, t),
-    transitionState: U,
-    "aria-labelledby": G,
+    className: a()(C.root, C.largeBorderRadius, t),
+    transitionState: B,
+    "aria-labelledby": V,
     parentComponent: "PremiumAnnouncementModalVariant1",
-    children: [(0, r.jsx)(s.olH, {
-      "data-migration-pending": true,
-      className: v.closeButton,
-      onClick: M
-    }), null == j ? true : j(), (0, r.jsxs)(s.hzk, {
-      "data-migration-pending": true,
-      className: v.content,
-      children: [(0, r.jsx)(s.X6q, {
-        variant: "display-md",
-        className: a()(v.headerText, x),
-        children: A
-      }), "video" === l.type ? (0, r.jsx)(f.Z, {
-        className: a()(v.video, N),
-        autoPlay: !V,
-        loop: true,
-        muted: true,
-        controls: true,
-        controlsList: "nofullscreen nodownload noremoteplayback noplaybackrate",
-        src: l.src,
-        poster: l.poster,
-        onPlay: e => {
-          b.default.track(O.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
-            change_log_id: R
-          }), F(Date.now()), Q(true), J(e.currentTarget.muted)
-        },
-        onEnded: e => {
-          eo(), J(e.currentTarget.muted), Q(false)
-        },
-        onVolumeChange: e => {
-          eo(), J(e.currentTarget.muted)
-        },
-        onPause: e => {
-          eo(), J(e.currentTarget.muted), Q(false)
-        },
-        disablePictureInPicture: true,
-        children: null == ei ? true : ei.map(e => {
-          let t = (0, y.getLanguages)().find(t => t.code === e.locale);
-          return null == t ? null : (0, r.jsx)("track", {
-            label: t.englishName,
-            kind: "captions",
-            srcLang: t.code,
-            src: e.src,
-            default: e.isDefault
-          }, e.locale)
+    children: (0, r.jsxs)(c.$, {
+      color: "nitro-pink",
+      children: [(0, r.jsx)("div", {
+        className: C.closeButtonContainer,
+        children: (0, r.jsx)(s.P, {
+          "data-migration-pending": true,
+          onClick: async () => await G()
         })
-      }) : "embed" === l.type ? (0, r.jsx)(u.BC, {
-        className: a()(v.video, N),
-        allowFullScreen: false,
-        href: l.href,
-        thumbnail: l.thumbnail,
-        video: l.embed,
-        provider: d.pn.YOUTUBE,
-        maxWidth: l.embed.width,
-        maxHeight: l.embed.height,
-        renderVideoComponent: m.lV,
-        renderImageComponent: m.Yi,
-        renderLinkComponent: m.iT,
-        onPlay: () => {
-          b.default.track(O.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
-            change_log_id: R
+      }), null == x ? true : x(), (0, r.jsxs)(u.hzk, {
+        "data-migration-pending": true,
+        className: C.content,
+        children: [(0, r.jsx)(u.X6q, {
+          variant: "display-md",
+          className: a()(C.headerText, w),
+          children: Z
+        }), "video" === l.type ? (0, r.jsx)(g.Z, {
+          className: a()(C.video, P),
+          autoPlay: !F,
+          loop: true,
+          muted: true,
+          controls: true,
+          controlsList: "nofullscreen nodownload noremoteplayback noplaybackrate",
+          src: l.src,
+          poster: l.poster,
+          onPlay: e => {
+            O.default.track(y.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
+              change_log_id: k
+            }), W(Date.now()), J(true), ee(e.currentTarget.muted)
+          },
+          onEnded: e => {
+            ec(), ee(e.currentTarget.muted), J(false)
+          },
+          onVolumeChange: e => {
+            ec(), ee(e.currentTarget.muted)
+          },
+          onPause: e => {
+            ec(), ee(e.currentTarget.muted), J(false)
+          },
+          disablePictureInPicture: true,
+          children: null == ea ? true : ea.map(e => {
+            let t = (0, I.getLanguages)().find(t => t.code === e.locale);
+            return null == t ? null : (0, r.jsx)("track", {
+              label: t.englishName,
+              kind: "captions",
+              srcLang: t.code,
+              src: e.src,
+              default: e.isDefault
+            }, e.locale)
           })
-        }
-      }) : "image" === l.type ? (0, r.jsx)("img", {
-        alt: "",
-        className: a()(v.video, N),
-        src: l.src
-      }) : null, (0, r.jsxs)(s.Text, {
-        variant: "text-md/normal",
-        color: "text-secondary",
-        className: v.subHeader,
-        children: [Z, null == w ? true : w()]
-      }), null != k && (0, r.jsx)(s.X6q, {
-        variant: "heading-md/medium",
-        className: v.bodyText,
-        children: k
-      }), L.length > 0 && (0, r.jsx)("div", {
-        className: a()(v.featureCardGroup, {
-          [v.wideStyle]: B
-        }),
-        children: L.map((e, t) => (0, r.jsx)(T, C(I({}, e), {
-          wideStyle: B
-        }), "".concat(e.header, "_").concat(t)))
-      }), D()]
-    })]
+        }) : "embed" === l.type ? (0, r.jsx)(p.BC, {
+          className: a()(C.video, P),
+          allowFullScreen: false,
+          href: l.href,
+          thumbnail: l.thumbnail,
+          video: l.embed,
+          provider: f.pn.YOUTUBE,
+          maxWidth: l.embed.width,
+          maxHeight: l.embed.height,
+          renderVideoComponent: _.lV,
+          renderImageComponent: _.Yi,
+          renderLinkComponent: _.iT,
+          onPlay: () => {
+            O.default.track(y.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
+              change_log_id: k
+            })
+          }
+        }) : "image" === l.type ? (0, r.jsx)("img", {
+          alt: "",
+          className: a()(C.video, P),
+          src: l.src
+        }) : null, (0, r.jsxs)(u.Text, {
+          variant: "text-md/normal",
+          color: "text-secondary",
+          className: C.subHeader,
+          children: [L, null == R ? true : R()]
+        }), null != U && (0, r.jsx)(u.X6q, {
+          variant: "heading-md/medium",
+          className: C.bodyText,
+          children: U
+        }), D.length > 0 && (0, r.jsx)("div", {
+          className: a()(C.featureCardGroup, {
+            [C.wideStyle]: H
+          }),
+          children: D.map((e, t) => (0, r.jsx)(j, N(S({}, e), {
+            wideStyle: H
+          }), "".concat(e.header, "_").concat(t)))
+        }), M()]
+      })]
+    })
   })
 }
