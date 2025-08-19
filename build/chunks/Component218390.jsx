@@ -275,7 +275,7 @@ function ed(e) {
         variant: "text-xxs/normal",
         children: s.additionalTerm()
       }), (0, i.jsx)(z.Z, {
-        variant: "expressive",
+        variant: "secondary",
         size: "md",
         onClick: () => {
           Z.default.track($.rMx.PREMIUM_SETTINGS_INTERACTED, {

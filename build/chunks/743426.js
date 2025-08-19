@@ -397,13 +397,15 @@ class v extends Chunk47770.Z {
       automaticGainControl: null == (n = t.automaticGainControlConfig) ? true : n.enabled,
       automaticGainControlConfig: t.automaticGainControlConfig,
       noiseCancellation: t.noiseCancellation,
+      noiseCancellationDuringProcessing: t.noiseCancellationDuringProcessing,
       voiceFilters: t.voiceFilters,
       loopbackUseAudioMode: t.loopbackUseAudioMode
     }), null != (0, d.zS)().setEmitVADLevel2 ? (0, d.zS)().setEmitVADLevel2(e || this.listenerCount(s.aB.VoiceActivity) > 0) : (0, d.zS)().setEmitVADLevel(e || this.listenerCount(s.aB.VoiceActivity) > 0, e, {
       echoCancellation: t.echoCancellation,
       noiseSuppression: t.noiseSuppression,
       automaticGainControl: null == (r = t.automaticGainControlConfig) ? true : r.enabled,
-      noiseCancellation: t.noiseCancellation
+      noiseCancellation: t.noiseCancellation,
+      noiseCancellationDuringProcessing: t.noiseCancellationDuringProcessing
     })
   }
   setMaybePreprocessMute(e) {

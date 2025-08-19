@@ -33,13 +33,13 @@ function g(e) {
   } = (0, h.JL)(), {
     setSelectedGiftingPromotionReward: E,
     selectedGiftingPromotionReward: S,
-    claimableRewards: v
-  } = (0, x.wD)(), P = (0, a.e7)([u.default], () => u.default.getCurrentUser());
+    claimableRewards: v,
+    claimableVariants: P
+  } = (0, x.wD)(), O = (0, a.e7)([u.default], () => u.default.getCurrentUser());
   r.useEffect(() => {
-    let e = null != v && v.length > 0;
-    null == S && e && E(v[0])
+    null != v && v.length > 0 && null == S && E(v[0])
   }, [v, S, E]), s()(null != l, "Expected plan to selected"), s()(null != g, "Expected selectedSkuId"), s()(null != y, "Step should be set");
-  let O = null == v ? true : v.map(e => (e => {
+  let b = null == v ? true : v.map(e => (e => {
       let n = e.skuId;
       return (0, i.jsx)(d.Z, {
         skuId: n,
@@ -49,21 +49,21 @@ function g(e) {
         className: L.giftSelectItem
       }, n)
     })(e)),
-    b = null != S && null != P ? (0, i.jsx)(C.Z, {
+    Z = null != S && null != O ? (0, i.jsx)(C.Z, {
       avatarDecorationOverride: {
         asset: S.assetId
       },
-      user: P,
+      user: O,
       guildId: null,
       avatarSize: o.EFr.SIZE_152
     }) : null,
-    Z = (0, i.jsx)(f.O3, {
+    I = (0, i.jsx)(f.O3, {
       children: (0, i.jsx)(o.mzw, {
         className: L.modalFooter,
         children: (0, i.jsx)(c.y, {
           onStepChange: e => {
-            null != P && null != S && p.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
-              user_id: P.id,
+            null != O && null != S && p.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+              user_id: O.id,
               reward_sku_id: S.skuId
             }), n(e)
           },
@@ -75,7 +75,7 @@ function g(e) {
         })
       })
     }),
-    I = (0, i.jsx)(o.X6q, {
+    M = (0, i.jsx)(o.X6q, {
       variant: "heading-lg/bold",
       color: "header-primary",
       children: _.intl.string(_.t["Rp0+ZG"])
@@ -87,7 +87,7 @@ function g(e) {
         direction: "horizontal",
         justify: "space-between",
         align: "center",
-        children: [I, (0, i.jsx)(o.olH, {
+        children: [M, (0, i.jsx)(o.olH, {
           onClick: t
         })]
       })
@@ -98,14 +98,14 @@ function g(e) {
         padding: {
           top: 24
         },
-        children: [b, (0, i.jsx)(o.Kqy, {
+        children: [Z, (0, i.jsx)(o.Kqy, {
           gap: 8,
           padding: {
             top: 12
           },
-          children: O
+          children: b
         })]
       })
-    }), Z]
+    }), I]
   })
 }

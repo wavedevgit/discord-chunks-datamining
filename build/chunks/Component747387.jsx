@@ -49,18 +49,18 @@ function b(e, t) {
 }
 let v = e => {
   var {
-    captchaService: t = l.hP.RECAPTCHA,
+    captchaService: t = p.hP.RECAPTCHA,
     sitekey: n,
     rqdata: v,
     onRender: m,
-    onVerify: g,
-    onError: C,
-    onOpen: O,
+    onVerify: O,
+    onError: g,
+    onOpen: C,
     onClose: E,
     onChalExpired: w,
-    size: j,
-    userflow: x
-  } = e, R = function(e, t) {
+    size: R,
+    userflow: j
+  } = e, x = function(e, t) {
     if (null == e) return {};
     var n, r, a = function(e, t) {
       if (null == e) return {};
@@ -87,75 +87,75 @@ let v = e => {
       })
     }, [P, t, n]),
     I = a.useCallback(e => {
-      p.Z.increment({
+      l.Z.increment({
         name: s.V.CAPTCHA_EVENT,
         tags: ["event_name:".concat(e), "captcha_service:".concat(t)]
       })
     }, [t]),
     D = a.useCallback(() => {
-      if (t === l.hP.HCAPTCHA) {
+      if (t === p.hP.HCAPTCHA) {
         var e, n;
         null != v && "" !== v && null != _.current && (null == (e = _.current) || e.setData({
           rqdata: v
-        })), "invisible" === j && null != _.current && (null == (n = _.current) || n.execute())
+        })), "invisible" === R && null != _.current && (null == (n = _.current) || n.execute())
       }
-    }, [v, _, j, t]),
-    N = a.useCallback(() => {
+    }, [v, _, R, t]),
+    L = a.useCallback(() => {
       k || (S("initial-load"), I("initial-load"), A(true)), D()
     }, [I, k, S, D]);
   a.useEffect(() => {
     D()
   }, [D]), a.useEffect(() => {
-    N()
-  }, [N]);
-  let L = a.useCallback(() => {
-      S("error"), I("error"), D(), null == C || C()
-    }, [S, I, D, C]),
-    T = a.useCallback(e => {
-      S("verify"), I("verify"), g(e)
-    }, [I, g, S]),
-    Z = a.useCallback(() => {
-      S("render"), (0, u.emitCaptchaDistributionMetric)(x), null == m || m()
-    }, [m, S, x]),
+    L()
+  }, [L]);
+  let T = a.useCallback(() => {
+      S("error"), I("error"), D(), null == g || g()
+    }, [S, I, D, g]),
+    Z = a.useCallback(e => {
+      S("verify"), I("verify"), O(e)
+    }, [I, O, S]),
+    N = a.useCallback(() => {
+      S("render"), (0, u.emitCaptchaDistributionMetric)(j), null == m || m()
+    }, [m, S, j]),
     M = a.useCallback(() => {
-      S("open"), I("open"), (0, u.emitCaptchaDistributionMetric)(x), null == O || O()
-    }, [I, O, S, x]),
+      S("open"), I("open"), (0, u.emitCaptchaDistributionMetric)(j), null == C || C()
+    }, [I, C, S, j]),
     V = a.useCallback(() => {
       S("close"), null == E || E(), D()
     }, [E, S, D]),
     z = a.useCallback(() => {
       S("chal-expire"), null == w || w()
     }, [w, S]);
-  return ((null == n || "" === n) && (n = f.OL7), t === l.hP.RECAPTCHA) ? (0, r.jsx)(o.Z, b(y({}, R), {
-    onLoad: N,
-    onRender: Z,
-    onVerify: T,
-    onError: L,
+  return ((null == n || "" === n) && (n = f.OL7), t === p.hP.RECAPTCHA) ? (0, r.jsx)(o.Z, b(y({}, x), {
+    onLoad: L,
+    onRender: N,
+    onVerify: Z,
+    onError: T,
     sitekey: n
-  })) : t === l.hP.RECAPTCHA_ENTERPRISE ? (0, r.jsx)(h._, b(y({}, R), {
-    onLoad: N,
-    onRender: Z,
-    onVerify: T,
-    onError: L,
+  })) : t === p.hP.RECAPTCHA_ENTERPRISE ? (0, r.jsx)(h._, b(y({}, x), {
+    onLoad: L,
+    onRender: N,
+    onVerify: Z,
+    onError: T,
     sitekey: n,
-    action: x
-  })) : t === l.hP.HCAPTCHA ? (0, r.jsx)(i.Z, b(y({
+    action: j
+  })) : t === p.hP.HCAPTCHA ? (0, r.jsx)(i.Z, b(y({
     ref: _
-  }, R), {
+  }, x), {
     sitekey: n,
-    onLoad: N,
-    onError: L,
-    onVerify: T,
+    onLoad: L,
+    onError: T,
+    onVerify: Z,
     onChalExpired: z,
     onOpen: M,
     onClose: V,
-    size: j,
+    size: R,
     reCaptchaCompat: false
-  })) : (0, r.jsx)(o.Z, b(y({}, R), {
+  })) : (0, r.jsx)(o.Z, b(y({}, x), {
     sitekey: n,
-    onLoad: N,
-    onRender: Z,
-    onVerify: T,
-    onError: L
+    onLoad: L,
+    onRender: N,
+    onVerify: Z,
+    onError: T
   }))
 }

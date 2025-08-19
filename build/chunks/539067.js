@@ -12,24 +12,24 @@ var Chunk647438 = require("./647438.js"),
 function s(e) {
   let {
     userId: t
-  } = e, r = (0, l.e7)([i.Z], () => i.Z.getSecureFramesRosterMapEntry(t)), [s, o] = n.useState(true), [c, d] = n.useState(false), [f, E] = n.useState(false), y = n.useCallback(async (e, t) => {
-    o(true);
+  } = e, r = (0, l.e7)([u.Z], () => u.Z.getSecureFramesRosterMapEntry(t)), [s, c] = n.useState(true), [o, f] = n.useState(false), [d, E] = n.useState(false), y = n.useCallback(async (e, t) => {
+    c(true);
     try {
       let r = a.GB,
-        n = await (0, u.uX)(r),
-        l = await (0, u.J6)(e, t, r);
-      d(n), E(l)
+        n = await (0, i.uX)(r),
+        l = await (0, i.J6)(e, t, r);
+      f(n), E(l)
     } catch (e) {
-      d(false), E(false)
+      f(false), E(false)
     } finally {
-      o(false)
+      c(false)
     }
   }, []);
   return n.useEffect(() => {
-    null == r ? (d(false), E(false), o(false)) : y(t, r)
+    null == r ? (f(false), E(false), c(false)) : y(t, r)
   }, [r, y, t]), {
     loading: s,
-    isCurrentUserKeyPersistent: c,
-    isOtherUserKeyPersistent: f
+    isCurrentUserKeyPersistent: o,
+    isOtherUserKeyPersistent: d
   }
 }

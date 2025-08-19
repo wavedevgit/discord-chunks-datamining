@@ -175,6 +175,7 @@ class L extends Chunk839548.Z {
               automaticGainControl: this.automaticGainControl.enabled,
               automaticGainControlConfig: this.automaticGainControl,
               noiseCancellation: this.noiseCancellation,
+              noiseCancellationDuringProcessing: this.noiseCancellationDuringProcessing,
               voiceFilters: null != this.voiceFilterId
             }), n.setNoInputThreshold(false), n.setNoInputCallback(this.handleNoInput), this.videoSupported && (t.setOnVideoCallback(this.handleVideo), null == (h = t.setOnFirstFrameCallback) || h.call(t, this.handleFirstFrame), null == (g = t.setOnDesktopSourceEnded) || g.call(t, this.handleDesktopSourceEnded), null == (E = t.setOnSoundshare) || E.call(t, this.handleSoundshare), null == (b = t.setOnSoundshareEnded) || b.call(t, this.handleSoundshareEnded), null == (y = t.setOnSoundshareFailed) || y.call(t, this.handleSoundshareFailed)), null == (p = t.setOnMLSFailureCallback) || p.call(t, this.handleMLSFailure), this.setConnectionState(v.$j.CONNECTED), this.emit(m.Sh.Connected, o, {
               address: s,
@@ -387,6 +388,11 @@ class L extends Chunk839548.Z {
   setNoiseCancellation(e) {
     this.noiseCancellation = e, (0, b.zS)().setTransportOptions({
       noiseCancellation: this.noiseCancellation
+    })
+  }
+  setNoiseCancellationDuringProcessing(e) {
+    this.noiseCancellationDuringProcessing = e, (0, b.zS)().setTransportOptions({
+      noiseCancellationDuringProcessing: this.noiseCancellationDuringProcessing
     })
   }
   getNoiseCancellation() {
@@ -833,7 +839,7 @@ class L extends Chunk839548.Z {
   constructor(e, t, n) {
     super(e, t), I(this, "mediaEngineConnectionId", "Native-".concat(P++)), I(this, "goLiveSourceIdentifier", true), I(this, "selfVideo", false), I(this, "forceAudioNormal", false), I(this, "forceAudioPriority", false), I(this, "codecs", []), I(this, "videoEncoderFallbackPending", false), I(this, "desktopDegradationPreference", (0, b.zS)().DegradationPreference.MAINTAIN_FRAMERATE), I(this, "sourceDesktopDegradationPreference", (0, b.zS)().DegradationPreference.DISABLED), I(this, "videoDegradationPreference", (0, b.zS)().DegradationPreference.BALANCED), I(this, "localPans", {}), I(this, "remoteAudioSSRCs", {}), I(this, "remoteVideoSSRCs", {}), I(this, "inputMode", v.pM.VOICE_ACTIVITY), I(this, "vadThreshold", false), I(this, "vadAutoThreshold", true), I(this, "vadKrispActivationThreshold", .5), I(this, "vadUseKrisp", true), I(this, "vadLeading", 5), I(this, "vadTrailing", 25), I(this, "pttReleaseDelay", 20), I(this, "soundshareActive", false), I(this, "soundshareId", null), I(this, "soundshareSentSpeakingEvent", false), I(this, "echoCancellation", true), I(this, "noiseSuppression", true), I(this, "automaticGainControl", {
       enabled: true
-    }), I(this, "noiseCancellation", false), I(this, "voiceFilterId", null), I(this, "experimentalEncoders", false), I(this, "hardwareH264", true), I(this, "softwareH264", true), I(this, "attenuationFactor", .5), I(this, "attenuateWhileSpeakingSelf", false), I(this, "attenuateWhileSpeakingOthers", true), I(this, "qos", true), I(this, "conn", true), I(this, "minimumJitterBufferLevel", 0), I(this, "postponeDecodeLevel", 100), I(this, "reconnectInterval", 6e4), I(this, "keyframeInterval", 0), I(this, "clipsKeyFrameInterval", 0), I(this, "videoQualityMeasurement", ""), I(this, "videoEncoderExperiments", ""), I(this, "numFastUdpReconnects", 0), I(this, "simulcastLQDisabledSsrc", true), I(this, "lastPreparedTransitionId", false), I(this, "lastExecutedTransitionId", false), I(this, "logger", true), I(this, "transportInfo", true), I(this, "onConnectStarted", true), I(this, "handleSpeakingNative", (e, t) => {
+    }), I(this, "noiseCancellation", false), I(this, "noiseCancellationDuringProcessing", false), I(this, "voiceFilterId", null), I(this, "experimentalEncoders", false), I(this, "hardwareH264", true), I(this, "softwareH264", true), I(this, "attenuationFactor", .5), I(this, "attenuateWhileSpeakingSelf", false), I(this, "attenuateWhileSpeakingOthers", true), I(this, "qos", true), I(this, "conn", true), I(this, "minimumJitterBufferLevel", 0), I(this, "postponeDecodeLevel", 100), I(this, "reconnectInterval", 6e4), I(this, "keyframeInterval", 0), I(this, "clipsKeyFrameInterval", 0), I(this, "videoQualityMeasurement", ""), I(this, "videoEncoderExperiments", ""), I(this, "numFastUdpReconnects", 0), I(this, "simulcastLQDisabledSsrc", true), I(this, "lastPreparedTransitionId", false), I(this, "lastExecutedTransitionId", false), I(this, "logger", true), I(this, "transportInfo", true), I(this, "onConnectStarted", true), I(this, "handleSpeakingNative", (e, t) => {
       let n = v.Dg.NONE;
       n = "boolean" == typeof t ? t ? v.Dg.VOICE : v.Dg.NONE : t, this.handleSpeakingFlags(e, n)
     }), I(this, "handleNativeMuteToggled", () => {

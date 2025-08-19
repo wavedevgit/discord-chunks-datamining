@@ -9,13 +9,13 @@ var Chunk455412 = require("./455412.js"),
   Chunk684700 = require("./684700.js"),
   c = "hcaptcha-api-script-id",
   s = "hcaptchaOnLoad",
-  l = [],
-  p = function(e) {
+  p = [],
+  l = function(e) {
     true === e && (e = {});
     var t = (0, o.as)(e.scriptLocation);
     delete e.scriptLocation;
     var n = (0, o.$h)(t),
-      r = l.find(function(e) {
+      r = p.find(function(e) {
         return e.scope === n.window
       });
     if (n.document.getElementById(c) && r) return r.promise;
@@ -23,14 +23,14 @@ var Chunk455412 = require("./455412.js"),
       n.window[s] = r;
       var i = e.apihost || "https://js.hcaptcha.com";
       delete e.apihost;
-      var l = n.document.createElement("script");
-      l.id = c, l.src = i + "/1/api.js?render=explicit&onload=" + s, l.async = true === e.loadAsync || e.loadAsync, delete e.loadAsync, l.onerror = function(e) {
+      var p = n.document.createElement("script");
+      p.id = c, p.src = i + "/1/api.js?render=explicit&onload=" + s, p.async = true === e.loadAsync || e.loadAsync, delete e.loadAsync, p.onerror = function(e) {
         return a("script-error")
       };
-      var p = (0, o.Ku)(e);
-      l.src += "" !== p ? "&" + p : "", t.appendChild(l)
+      var l = (0, o.Ku)(e);
+      p.src += "" !== l ? "&" + l : "", t.appendChild(p)
     });
-    return l.push({
+    return p.push({
       promise: a,
       scope: n.window
     }), a
@@ -77,7 +77,7 @@ let d = function(e) {
         r = e.endpoint,
         a = e.host,
         i = e.imghost;
-      p({
+      l({
         apihost: t,
         assethost: n,
         endpoint: r,

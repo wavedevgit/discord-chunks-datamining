@@ -381,16 +381,16 @@ function et(e) {
     selectedPlan: f
   } = (0, m.JL)(), {
     isGift: _,
-    claimableRewards: p,
-    giftRecipient: g
-  } = (0, h.wD)(), E = (0, y.pO)(g);
+    giftRecipient: p,
+    claimableRewards: g
+  } = (0, h.wD)(), E = (0, y.pO)(p);
   return i = null != i ? i : d, n = null != n ? n : null == f ? true : f.id, (0, r.jsxs)(r.Fragment, {
     children: [null != n && s.includes(n) ? (0, r.jsx)(en, {
       paymentSources: i,
       onStepChange: t,
       selectedPlanId: n,
       isGift: _,
-      claimableRewards: p,
+      claimableRewards: g,
       shouldRenderUpdatedPaymentModal: l,
       isTrial: c
     }) : (0, r.jsx)(u.zxk, {

@@ -1,35 +1,35 @@
 /** Chunk was on 94904 **/
 /** chunk id: 785792, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  b: () => s
+  b: () => a
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk840937 = require("./840937.js");
 
-function s(e) {
+function a(e) {
   let {
     chunks: t,
     columns: r,
     className: c
-  } = e, s = o.useMemo(() => ({
+  } = e, a = o.useMemo(() => ({
     "--secure-frames-columns": r
   }), [r]);
   return null == t ? (0, n.jsx)("div", {
-    className: a.loading,
-    children: (0, n.jsx)(l.$jN, {})
+    className: s.loading,
+    children: (0, n.jsx)(i.$jN, {})
   }) : (0, n.jsx)("div", {
-    style: s,
-    className: i()(a.code, c),
+    style: a,
+    className: l()(s.code, c),
     children: t.map((e, t) => (0, n.jsx)("div", {
-      className: i()(a.chunk, {
-        [a.divider]: t > r - 1
+      className: l()(s.chunk, {
+        [s.divider]: t > r - 1
       }),
-      children: (0, n.jsx)(l.Text, {
-        className: a.codeText,
+      children: (0, n.jsx)(i.Text, {
+        className: s.codeText,
         variant: "code",
         color: "text-default",
         children: e

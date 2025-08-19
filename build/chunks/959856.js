@@ -149,6 +149,7 @@ class C extends Chunk47770.Z {
     return Promise.reject(Error("getNoiseCancellationStats is not supported on browsers."))
   }
   setNoiseCancellationEnableStats(e) {}
+  setNoiseCancellationDuringProcessing(e) {}
   getAudioInputDevices() {
     return (0, Chunk740197.Hg)()
   }
