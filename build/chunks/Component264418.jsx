@@ -101,7 +101,7 @@ function g(e) {
       ref: v,
       children: [(0, r.jsx)(c.u, {
         onClick: S,
-        colorMix: null != y
+        variant: null != y ? "color-mix" : true
       }), null != m ? (0, r.jsx)(s.V, {
         asset: m,
         size: g

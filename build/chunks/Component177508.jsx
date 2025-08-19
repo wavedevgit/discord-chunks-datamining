@@ -1053,8 +1053,8 @@ function eg() {
 }
 
 function eh() {
-  let [e, t] = Chunk647438.useState(false), [n, s] = Chunk647438.useState(false), [a, l] = Chunk647438.useState(false), [o, c] = Chunk647438.useState(false), [d, u] = Chunk647438.useState(false), [m, p] = Chunk647438.useState(false), [g, h] = Chunk647438.useState(false), [f, b] = Chunk647438.useState(false), [x, _] = Chunk647438.useState(false), [j, E] = Chunk647438.useState(false), [C, O] = Chunk647438.useState(false), [T, I] = Chunk647438.useState(false), [y, A] = Chunk647438.useState(false), [P, R] = Chunk647438.useState(false), [D, Z] = Chunk647438.useState(false), [w, k] = Chunk647438.useState(false), [L, B] = Chunk647438.useState(false), [M, U] = Chunk647438.useState(false), [V, F] = Chunk647438.useState(false), [H, z] = Chunk647438.useState(false), q = Chunk647438.useRef(null), X = Chunk647438.useRef(null), J = Chunk647438.useRef(null), Q = Chunk647438.useRef(null), $ = Chunk647438.useRef(null), ee = Chunk647438.useRef(null), et = Chunk647438.useRef(null), en = Chunk647438.useRef(null), ei = Chunk647438.useRef(null), er = Chunk647438.useRef(null), es = Chunk647438.useRef(null), ea = Chunk647438.useRef(null), el = Chunk647438.useRef(null), eo = Chunk647438.useRef(null), ec = Chunk647438.useRef(null), ed = Chunk647438.useRef(null), eu = Chunk647438.useRef(null), em = Chunk647438.useRef(null), ep = Chunk647438.useRef(null), eg = Chunk647438.useRef(null), eh = Chunk647438.useCallback(() => {
-    exports(false), Chunk120356(false), Chunk392711(false), Chunk442837(false), Chunk680018(false), Chunk861066(false), Chunk179538(false), Chunk257465(false), Chunk82659(false), Chunk103866(false), Chunk37148(false), Chunk240872(false), Chunk705262(false), Chunk581612(false), Chunk594174(false), Chunk799071(false), Chunk706705(false), Chunk981631(false), Chunk177475(false), Chunk691739(false)
+  let [e, t] = Chunk647438.useState(false), [n, s] = Chunk647438.useState(false), [a, l] = Chunk647438.useState(false), [o, c] = Chunk647438.useState(false), [d, u] = Chunk647438.useState(false), [m, p] = Chunk647438.useState(false), [g, h] = Chunk647438.useState(false), [f, b] = Chunk647438.useState(false), [x, _] = Chunk647438.useState(false), [j, E] = Chunk647438.useState(false), [C, O] = Chunk647438.useState(false), [T, I] = Chunk647438.useState(false), [y, A] = Chunk647438.useState(false), [P, R] = Chunk647438.useState(false), [D, Z] = Chunk647438.useState(false), [w, k] = Chunk647438.useState(false), [L, B] = Chunk647438.useState(false), [M, U] = Chunk647438.useState(false), [V, F] = Chunk647438.useState(false), [H, z] = Chunk647438.useState(false), [q, X] = Chunk647438.useState(false), J = Chunk647438.useRef(null), Q = Chunk647438.useRef(null), $ = Chunk647438.useRef(null), ee = Chunk647438.useRef(null), et = Chunk647438.useRef(null), en = Chunk647438.useRef(null), ei = Chunk647438.useRef(null), er = Chunk647438.useRef(null), es = Chunk647438.useRef(null), ea = Chunk647438.useRef(null), el = Chunk647438.useRef(null), eo = Chunk647438.useRef(null), ec = Chunk647438.useRef(null), ed = Chunk647438.useRef(null), eu = Chunk647438.useRef(null), em = Chunk647438.useRef(null), ep = Chunk647438.useRef(null), eg = Chunk647438.useRef(null), eh = Chunk647438.useRef(null), ef = Chunk647438.useRef(null), eb = Chunk647438.useRef(null), ex = Chunk647438.useCallback(() => {
+    exports(false), Chunk120356(false), Chunk392711(false), Chunk442837(false), Chunk680018(false), Chunk861066(false), Chunk179538(false), Chunk257465(false), Chunk82659(false), Chunk103866(false), Chunk37148(false), Chunk240872(false), Chunk705262(false), Chunk581612(false), Chunk594174(false), Chunk799071(false), Chunk706705(false), Chunk981631(false), Chunk177475(false), Chunk691739(false), X(false)
   }, []);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk726927.section,
@@ -1062,9 +1062,9 @@ function eh() {
       variant: "heading-xl/semibold",
       children: "Popovers"
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: q,
+      targetElementRef: J,
       shouldShow: module,
-      onRequestClose: eh,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1079,12 +1079,12 @@ function eh() {
       badge: "new",
       actions: [{
         text: "Button",
-        onClick: eh
+        onClick: ex
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: X,
+      targetElementRef: Q,
       shouldShow: require,
-      onRequestClose: eh,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1098,12 +1098,12 @@ function eh() {
       badge: "new",
       actions: [{
         text: "Button",
-        onClick: eh
+        onClick: ex
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: J,
+      targetElementRef: $,
       shouldShow: a,
-      onRequestClose: eh,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1112,12 +1112,12 @@ function eh() {
       body: "Lorem ipsum dolor sit amet, consectetur elit. Sed do eiusmod.",
       actions: [{
         text: "Button",
-        onClick: eh
+        onClick: ex
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: Q,
+      targetElementRef: ee,
       shouldShow: Chunk971809,
-      onRequestClose: eh,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1131,7 +1131,7 @@ function eh() {
       badge: "new",
       actions: [{
         text: "Button",
-        onClick: eh
+        onClick: ex
       }],
       textLink: {
         text: "Learn More",
@@ -1139,9 +1139,9 @@ function eh() {
         external: true
       }
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: $,
+      targetElementRef: et,
       shouldShow: Chunk836459,
-      onRequestClose: eh,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1155,17 +1155,17 @@ function eh() {
       badge: "new",
       actions: [{
         text: "Primary",
-        onClick: eh,
+        onClick: ex,
         variant: "primary"
       }, {
         text: "Secondary",
-        onClick: eh,
+        onClick: ex,
         variant: "secondary"
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: ee,
+      targetElementRef: en,
       shouldShow: Chunk374415,
-      onRequestClose: eh,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1178,9 +1178,9 @@ function eh() {
       }),
       badge: "new"
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: et,
+      targetElementRef: ei,
       shouldShow: Chunk780842,
-      onRequestClose: eh,
+      onRequestClose: ex,
       caretConfig: {
         position: "top",
         align: "end"
@@ -1194,12 +1194,12 @@ function eh() {
       badge: "new",
       actions: [{
         text: "Got it",
-        onClick: eh
+        onClick: ex
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: en,
+      targetElementRef: er,
       shouldShow: Chunk279570,
-      onRequestClose: eh,
+      onRequestClose: ex,
       caretConfig: {
         position: "left",
         align: "start"
@@ -1213,12 +1213,12 @@ function eh() {
       badge: "early_access",
       actions: [{
         text: "Close",
-        onClick: eh
+        onClick: ex
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: ei,
+      targetElementRef: es,
       shouldShow: Chunk667202,
-      onRequestClose: eh,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "custom",
@@ -1233,12 +1233,12 @@ function eh() {
       badge: "beta",
       actions: [{
         text: "Amazing!",
-        onClick: eh
+        onClick: ex
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: er,
+      targetElementRef: ea,
       shouldShow: Chunk369585,
-      onRequestClose: eh,
+      onRequestClose: ex,
       position: "right",
       caretConfig: {
         position: "left",
@@ -1253,12 +1253,12 @@ function eh() {
       badge: "new",
       actions: [{
         text: "Perfect!",
-        onClick: eh
+        onClick: ex
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: es,
+      targetElementRef: el,
       shouldShow: Chunk213734,
-      onRequestClose: eh,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1273,12 +1273,12 @@ function eh() {
       badge: "new",
       actions: [{
         text: "Looks Great!",
-        onClick: eh
+        onClick: ex
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: ea,
+      targetElementRef: eo,
       shouldShow: Chunk681715,
-      onRequestClose: eh,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1293,12 +1293,12 @@ function eh() {
       badge: "beta",
       actions: [{
         text: "Nice!",
-        onClick: eh
+        onClick: ex
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: el,
+      targetElementRef: ec,
       shouldShow: Chunk514361,
-      onRequestClose: eh,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1317,12 +1317,12 @@ function eh() {
       },
       actions: [{
         text: "Get Nitro",
-        onClick: eh
+        onClick: ex
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: eo,
+      targetElementRef: ed,
       shouldShow: Chunk377089,
-      onRequestClose: eh,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1337,12 +1337,12 @@ function eh() {
       gradientColor: "purple",
       actions: [{
         text: "Try it now",
-        onClick: eh
+        onClick: ex
       }]
     }), (0, Chunk951288.jsx)(Chunk907862.Mb, {
-      targetElementRef: ec,
+      targetElementRef: eu,
       shouldShow: Chunk580747,
-      onRequestClose: eh,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1354,12 +1354,12 @@ function eh() {
       gradientColor: "blue",
       action: {
         text: "Learn More",
-        onClick: eh
+        onClick: ex
       }
     }), (0, Chunk951288.jsx)(Chunk907862.Mb, {
-      targetElementRef: ed,
+      targetElementRef: em,
       shouldShow: Chunk526156,
-      onRequestClose: eh,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1372,12 +1372,29 @@ function eh() {
       gradientColor: "blue",
       action: {
         text: "Learn More",
-        onClick: eh
+        onClick: ex
+      }
+    }), (0, Chunk951288.jsx)(Chunk907862.Mb, {
+      targetElementRef: ep,
+      shouldShow: Chunk554042,
+      onRequestClose: ex,
+      caretConfig: {
+        position: "bottom",
+        align: "center"
+      },
+      title: "Vith Image",
+      body: "Click the video to view it in the media viewer!",
+      assetUrl: "https://placehold.co/232x131.png",
+      badge: "new",
+      gradientColor: "blue",
+      action: {
+        text: "Learn More",
+        onClick: ex
       }
     }), (0, Chunk951288.jsx)(Chunk466590.e, {
-      targetElementRef: eu,
-      shouldShow: Chunk554042,
-      onRequestClose: eh,
+      targetElementRef: eg,
+      shouldShow: Chunk726985,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1424,9 +1441,9 @@ function eh() {
       }],
       onStepChange: e => {}
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
-      targetElementRef: em,
-      shouldShow: Chunk726985,
-      onRequestClose: eh,
+      targetElementRef: eh,
+      shouldShow: Chunk231338,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1441,13 +1458,13 @@ function eh() {
       gradientColor: "nitro-pink",
       actions: [{
         text: "Subscribe to Nitro",
-        onClick: eh,
+        onClick: ex,
         variant: "expressive"
       }]
     }), (0, Chunk951288.jsx)(Chunk466590.e, {
-      targetElementRef: ep,
-      shouldShow: Chunk231338,
-      onRequestClose: eh,
+      targetElementRef: ef,
+      shouldShow: Chunk518797,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1495,9 +1512,9 @@ function eh() {
       }],
       onStepChange: e => {}
     }), (0, Chunk951288.jsx)(Chunk907862.Mb, {
-      targetElementRef: eg,
-      shouldShow: Chunk518797,
-      onRequestClose: eh,
+      targetElementRef: eb,
+      shouldShow: q,
+      onRequestClose: ex,
       caretConfig: {
         position: "bottom",
         align: "center"
@@ -1508,7 +1525,7 @@ function eh() {
       badge: "new",
       action: {
         text: "Experience More",
-        onClick: eh,
+        onClick: ex,
         variant: "expressive"
       }
     }), (0, Chunk951288.jsxs)("div", {
@@ -1528,21 +1545,21 @@ function eh() {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Small Content",
-          buttonRef: q,
+          buttonRef: J,
           onClick: () => {
-            eh(), exports(true)
+            ex(), exports(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Medium Content",
-          buttonRef: X,
+          buttonRef: Q,
           onClick: () => {
-            eh(), Chunk120356(true)
+            ex(), Chunk120356(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
-          buttonRef: J,
+          buttonRef: $,
           onClick: () => {
-            eh(), Chunk392711(true)
+            ex(), Chunk392711(true)
           },
           text: "No Asset"
         })]
@@ -1564,21 +1581,21 @@ function eh() {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "External Link",
-          buttonRef: Q,
+          buttonRef: ee,
           onClick: () => {
-            eh(), Chunk442837(true)
+            ex(), Chunk442837(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Two Actions",
-          buttonRef: $,
+          buttonRef: et,
           onClick: () => {
-            eh(), Chunk680018(true)
+            ex(), Chunk680018(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
-          buttonRef: ee,
+          buttonRef: en,
           onClick: () => {
-            eh(), Chunk861066(true)
+            ex(), Chunk861066(true)
           },
           text: "No Actions"
         })]
@@ -1600,30 +1617,30 @@ function eh() {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Custom Caret API",
-          buttonRef: et,
+          buttonRef: ei,
           onClick: () => {
-            eh(), Chunk179538(true)
+            ex(), Chunk179538(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Left Side Caret",
-          buttonRef: en,
+          buttonRef: er,
           onClick: () => {
-            eh(), Chunk257465(true)
+            ex(), Chunk257465(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Custom Offset",
-          buttonRef: ei,
+          buttonRef: es,
           onClick: () => {
-            eh(), Chunk82659(true)
+            ex(), Chunk82659(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Left Center",
-          buttonRef: er,
+          buttonRef: ea,
           onClick: () => {
-            eh(), Chunk103866(true)
+            ex(), Chunk103866(true)
           }
         })]
       })]
@@ -1644,23 +1661,23 @@ function eh() {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Purple Gradient",
-          buttonRef: es,
+          buttonRef: el,
           onClick: () => {
-            eh(), Chunk37148(true)
+            ex(), Chunk37148(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Blue Gradient",
-          buttonRef: ea,
+          buttonRef: eo,
           onClick: () => {
-            eh(), Chunk240872(true)
+            ex(), Chunk240872(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Nitro Pink Gradient",
-          buttonRef: el,
+          buttonRef: ec,
           onClick: () => {
-            eh(), Chunk705262(true)
+            ex(), Chunk705262(true)
           }
         })]
       })]
@@ -1681,23 +1698,30 @@ function eh() {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Voice Filters",
-          buttonRef: eo,
+          buttonRef: ed,
           onClick: () => {
-            eh(), Chunk581612(true)
+            ex(), Chunk581612(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Video Media Viewer",
-          buttonRef: ec,
+          buttonRef: eu,
           onClick: () => {
-            eh(), Chunk594174(true)
+            ex(), Chunk594174(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Video with Different Preview",
-          buttonRef: ed,
+          buttonRef: em,
           onClick: () => {
-            eh(), Chunk799071(true)
+            ex(), Chunk799071(true)
+          }
+        }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          variant: "primary",
+          text: "With image",
+          buttonRef: ep,
+          onClick: () => {
+            ex(), Chunk706705(true)
           }
         })]
       })]
@@ -1718,9 +1742,9 @@ function eh() {
         children: (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Multi-Step",
-          buttonRef: eu,
+          buttonRef: eg,
           onClick: () => {
-            eh(), Chunk706705(true)
+            ex(), Chunk981631(true)
           }
         })
       })]
@@ -1741,23 +1765,23 @@ function eh() {
         children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Expressive Popover",
-          buttonRef: em,
+          buttonRef: eh,
           onClick: () => {
-            eh(), Chunk981631(true)
+            ex(), Chunk177475(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Expressive Multi-Step",
-          buttonRef: ep,
+          buttonRef: ef,
           onClick: () => {
-            eh(), Chunk177475(true)
+            ex(), Chunk691739(true)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
           variant: "primary",
           text: "Expressive Video",
-          buttonRef: eg,
+          buttonRef: eb,
           onClick: () => {
-            eh(), Chunk691739(true)
+            ex(), X(true)
           }
         })]
       })]

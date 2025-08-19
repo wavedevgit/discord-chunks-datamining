@@ -86,8 +86,7 @@ function N(e) {
     caretConfig: y,
     children: (0, i.jsxs)("div", {
       children: [(0, i.jsx)(u.u, {
-        onClick: T,
-        colorMix: false
+        onClick: T
       }), null != x ? (0, i.jsx)(c.V, {
         asset: (0, i.jsx)("img", {
           src: x,

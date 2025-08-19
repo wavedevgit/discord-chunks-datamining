@@ -119,7 +119,7 @@ function y(e) {
       ref: T,
       children: [(0, r.jsx)(u.u, {
         onClick: L,
-        colorMix: null != R.gradientColor
+        variant: null != R.gradientColor ? "color-mix" : true
       }), null != R.asset ? (0, r.jsx)(l.V, {
         asset: R.asset,
         size: O

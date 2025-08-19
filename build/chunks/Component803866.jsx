@@ -1,15 +1,15 @@
 /** Chunk was on web.js **/
-/** chunk id: 237872, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 803866, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  u: () => d
+  N: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk146187 = require("./146187.jsx"),
   Chunk681803 = require("./681803.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk254477 = require("./254477.js");
+  Chunk37751 = require("./37751.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -36,18 +36,17 @@ function u(e) {
 function d(e) {
   let {
     onClick: t,
-    "aria-label": n = s.intl.string(s.t.cpT0Cg),
-    variant: c
+    "aria-label": n = s.intl.string(s.t.cpT0Cg)
   } = e, {
-    firstFocusableItemProps: d
+    firstFocusableItemProps: c
   } = i.useContext(o.M);
   return (0, r.jsx)("div", {
     className: l.closeButton,
     children: (0, r.jsx)(a.P, u({
-      size: "sm",
+      size: "xs",
       "aria-label": n,
       onClick: t,
-      variant: c
-    }, d))
+      variant: "overlay-secondary"
+    }, c))
   })
 }

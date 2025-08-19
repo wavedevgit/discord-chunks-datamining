@@ -69,13 +69,13 @@ function f(e, t) {
 
 function _(e) {
   var {
-    colorMix: t = false,
+    variant: t = "icon-only",
     "aria-label": n
-  } = e, s = d(e, ["colorMix", "aria-label"]);
+  } = e, s = d(e, ["variant", "aria-label"]);
   return (0, r.jsx)(a.Y, u(l({}, s), {
     "aria-label": null != n ? n : o.intl.string(o.t.cpT0Cg),
     icon: i.Uz9,
-    variant: t ? "color-mix" : "icon-only",
+    variant: t,
     text: true,
     fullWidth: false
   }))

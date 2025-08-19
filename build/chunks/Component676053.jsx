@@ -13,8 +13,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk744399 = require("./744399.jsx"),
   Chunk454028 = require("./454028.jsx"),
   Chunk966902 = require("./966902.jsx"),
-  Chunk237872 = require("./237872.jsx"),
   Chunk562618 = require("./562618.jsx"),
+  Chunk803866 = require("./803866.jsx"),
   Chunk37751 = require("./37751.js");
 
 function h(e, t, n) {
@@ -131,8 +131,8 @@ function v(e) {
       children: [(0, r.jsx)(o.Z, {
         ref: R,
         src: g,
-        width: 240,
-        height: 135,
+        width: 232,
+        height: 131,
         autoPlay: true,
         muted: true,
         loop: true,
@@ -155,9 +155,8 @@ function v(e) {
     hasVideo: true,
     children: (0, r.jsxs)("div", {
       ref: N,
-      children: [(0, r.jsx)(f.u, {
-        onClick: L,
-        colorMix: true
+      children: [(0, r.jsx)(_.N, {
+        onClick: L
       }), (0, r.jsx)(d.$, {
         caretConfig: v
       }), (0, r.jsx)(u.V, {
@@ -166,7 +165,7 @@ function v(e) {
           children: M
         }),
         size: "video"
-      }), (0, r.jsx)(_.Y, {
+      }), (0, r.jsx)(f.Y, {
         title: t,
         body: n,
         badge: I,

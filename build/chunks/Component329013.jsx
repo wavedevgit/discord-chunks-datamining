@@ -1,8 +1,8 @@
 /** Chunk was on 30202 **/
 /** chunk id: 329013, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  g: () => L,
-  i: () => w
+  g: () => B,
+  i: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,6 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk514361 = require("./514361.js"),
   Chunk803038 = require("./803038.js"),
+  Chunk607270 = require("./607270.jsx"),
   Chunk705262 = require("./705262.jsx"),
   Chunk550385 = require("./550385.js"),
   Chunk266454 = require("./266454.js"),
@@ -35,13 +36,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk505575 = require("./505575.js");
-let Z = () => {
+let w = () => {
     (0, Chunk266454.Q3)(Chunk704215.z.CLIENT_THEMES_SPARKLE_PREVIEW, {
       dismissAction: Chunk921944.L.PRIMARY,
       forceTrack: true
     }), (0, Chunk550385.XO)(Chunk550385.wh.CLIENT_THEMES), (0, Chunk37234.xf)()
   },
-  w = () => {
+  k = () => {
     var e, t;
     let n, {
         analyticsLocations: a
@@ -51,7 +52,7 @@ let Z = () => {
       u = (0, Chunk104494.Ng)(),
       m = (0, Chunk104494.Wp)(Chunk857595, Chunk474936.Si.TIER_2),
       {
-        v2EditorEnabled: x
+        v2EditorEnabled: _
       } = Chunk803038.Mc.useExperiment({
         location: "UserSettingsAppearanceClientThemes"
       });
@@ -61,11 +62,11 @@ let Z = () => {
         location_stack: Chunk704215
       })
     }, [Chunk780384, Chunk704215]);
-    let _ = Chunk37234 && Chunk780384 && (0, Chunk951288.jsxs)("div", {
+    let j = Chunk37234 && Chunk780384 && (0, Chunk951288.jsxs)("div", {
         children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
           className: Chunk505575.previewThemeButtonWide,
           color: Chunk755721.zx.Colors.PRIMARY,
-          onClick: () => Z(),
+          onClick: () => w(),
           children: Chunk388032.intl.string(Chunk388032.t["E+COuL"])
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk505575.premiumTier2Divider
@@ -74,7 +75,7 @@ let Z = () => {
           subscriptionTier: Chunk474936.Si.TIER_2
         })]
       }),
-      T = (n = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      N = (n = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk705262.ZP.Gradient, {
           disabled: !Chunk550385 && Chunk780384,
           renderCTAButtons: () => {
@@ -87,7 +88,7 @@ let Z = () => {
               children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
                 variant: "secondary",
                 text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
-                onClick: () => Z()
+                onClick: () => w()
               }), (0, Chunk951288.jsx)(Chunk638212.Z, {
                 subscriptionTier: Chunk474936.Si.TIER_2,
                 defaultTextOverride: module,
@@ -102,7 +103,7 @@ let Z = () => {
               children: [(0, Chunk951288.jsx)(Chunk481060.zxk, {
                 variant: "secondary",
                 text: Chunk388032.intl.string(Chunk388032.t["E+COuL"]),
-                onClick: () => Z()
+                onClick: () => w()
               }), (0, Chunk951288.jsx)(Chunk767714.Z, {
                 showGradient: false,
                 subscriptionTier: Chunk474936.Si.TIER_2,
@@ -128,14 +129,14 @@ let Z = () => {
         type: Chunk705262.yH.SETTINGS,
         children: [(0, Chunk951288.jsx)(Chunk705262.ZP.Basic, {
           className: Chunk505575.basicThemeSelectors
-        }), (0, Chunk951288.jsx)(k, {}), Chunk984802]
+        }), (0, Chunk951288.jsx)(L, {}), Chunk550385 && (0, Chunk951288.jsx)(Chunk607270.Z, {}), Chunk984802]
       }), (0, Chunk951288.jsx)(Chunk481060.$i$, {
         className: Chunk505575.divider
       })]
     })
   };
 
-function k() {
+function L() {
   let e = (0, Chunk984802.A6)(),
     {
       theme: t,
@@ -158,8 +159,8 @@ function k() {
     })
   })
 }
-let L = () => (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.isPreview) ? null : (0, Chunk951288.jsx)(Chunk481060.zxk, {
+let B = () => (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.isPreview) ? null : (0, Chunk951288.jsx)(Chunk481060.zxk, {
   variant: "primary",
   text: Chunk388032.intl.string(Chunk388032.t.qYXrkZ),
-  onClick: Z
+  onClick: w
 })
