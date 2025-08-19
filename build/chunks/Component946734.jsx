@@ -46,21 +46,23 @@ class E {
   getNicknameGuildPairs() {
     return this.generateNicknameGuildPairs(this.user)
   }
-  renderNicknamePairs() {
-    return this.getNicknameGuildPairs().map((e, t) => {
-      let [n, l] = e, a = (0, r.jsx)(s.P3F, {
+  renderNicknamePairs(e) {
+    return this.getNicknameGuildPairs().map((t, n) => {
+      let [l, a] = t, o = (0, r.jsx)(s.P3F, {
         tag: "span",
         onClick: this.handleClick,
-        children: n
+        children: l
       });
-      return l.length > 0 && (a = (0, r.jsx)(s.DY3, {
+      return a.length > 0 && (o = (0, r.jsx)(s.DY3, {
         className: j.tooltip,
-        text: l.join(", "),
+        text: a.join(", "),
         position: "bottom",
-        children: a
+        shouldShow: e,
+        delay: 50,
+        children: o
       })), (0, r.jsxs)(i.Fragment, {
-        children: [0 !== t ? ", " : null, a]
-      }, t)
+        children: [0 !== n ? ", " : null, o]
+      }, n)
     })
   }
   constructor({
@@ -130,7 +132,11 @@ function S(e) {
     userId: n,
     analyticsLocations: f,
     channelId: t.id
-  });
+  }), [y, _] = i.useState(false), x = i.useCallback(() => {
+    _(true)
+  }, [_]), O = i.useCallback(() => {
+    _(false)
+  }, [_]);
   return 0 === m.getNicknameGuildPairs().length && 0 === l.length ? (0, r.jsx)("div", {
     className: j.spacer
   }) : (0, r.jsxs)(d.Gt, {
@@ -168,7 +174,10 @@ function S(e) {
     }) : null, m.getNicknameGuildPairs().length > 0 ? (0, r.jsx)(p.Z, {
       position: "bottom",
       className: j.nicknames,
-      children: m.renderNicknamePairs()
+      delay: 0,
+      onTooltipShow: x,
+      onTooltipHide: O,
+      children: m.renderNicknamePairs(!y)
     }) : null]
   })
 }
