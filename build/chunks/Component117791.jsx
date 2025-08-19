@@ -46,8 +46,9 @@ let d = e => {
     subscriptionTier: t,
     premiumModalAnalyticsLocation: n,
     giftMessage: d,
-    onClick: u
-  } = e, m = function(e, t) {
+    onClick: u,
+    buttonTextOverride: m
+  } = e, p = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -61,7 +62,7 @@ let d = e => {
       for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
-  }(e, ["subscriptionTier", "premiumModalAnalyticsLocation", "giftMessage", "onClick"]);
+  }(e, ["subscriptionTier", "premiumModalAnalyticsLocation", "giftMessage", "onClick", "buttonTextOverride"]);
   return (0, i.jsx)(l.Z, c(o({
     isGift: true
   }, {
@@ -73,11 +74,11 @@ let d = e => {
     children: e => {
       let {
         onClick: n
-      } = e, l = (0, a.L)(t);
+      } = e, l = null != m ? m : (0, a.L)(t);
       return (0, i.jsx)(r.z, c(o({
         onClick: n,
         icon: s.OgN
-      }, m), {
+      }, p), {
         text: l
       }))
     }

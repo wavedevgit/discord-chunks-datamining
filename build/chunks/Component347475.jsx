@@ -1,7 +1,7 @@
 /** Chunk was on 30202 **/
 /** chunk id: 347475, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,43 +10,56 @@ var Chunk120356 = require("./120356.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
+  Chunk47280 = require("./47280.js"),
   Chunk736519 = require("./736519.jsx"),
+  Chunk117791 = require("./117791.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk602062 = require("./602062.js"),
-  Chunk568147 = require("./568147.js");
-let p = e => {
+  Chunk867038 = require("./867038.js"),
+  Chunk568147 = require("./568147.js"),
+  Chunk373425 = require("./373425.js");
+let b = e => {
   let {
     className: t,
     location: n,
     analyticsLocation: r
-  } = e, {
-    analyticsLocations: p
-  } = (0, o.ZP)(n);
+  } = e, b = (0, c.ZP)({
+    location: "GiftNitro"
+  }), {
+    analyticsLocations: x
+  } = (0, o.ZP)(n), _ = b ? g : p;
   return (0, i.jsx)(o.Gt, {
-    value: p,
+    value: x,
     children: (0, i.jsxs)("div", {
-      className: s()(u.container, t),
+      className: s()(_.container, t),
       children: [(0, i.jsxs)("div", {
-        className: u.textContainer,
+        className: _.textContainer,
         children: [(0, i.jsx)(l.X6q, {
           variant: "heading-lg/extrabold",
-          className: u.heading,
-          children: d.intl.string(d.t.Ve9Ge3)
+          className: _.heading,
+          children: m.intl.string(m.t.Ve9Ge3)
         }), (0, i.jsx)(l.Text, {
           variant: "text-sm/medium",
-          children: d.intl.string(d.t.yQ06u7)
-        }), (0, i.jsx)(c.Z, {
-          className: u.giftCardButton,
+          children: m.intl.string(m.t.yQ06u7)
+        }), b ? (0, i.jsx)("div", {
+          className: g.giftButtonContainer,
+          children: (0, i.jsx)(u.Z, {
+            buttonTextOverride: m.intl.string(m.t.Ve9Ge3),
+            premiumModalAnalyticsLocation: r,
+            variant: "secondary"
+          })
+        }) : (0, i.jsx)(d.Z, {
+          className: p.giftCardButton,
           textOptions: {
-            textOverride: d.intl.string(d.t.Ve9Ge3),
-            textClassName: u.giftButtonCTA
+            textOverride: m.intl.string(m.t.Ve9Ge3),
+            textClassName: p.giftButtonCTA
           },
           color: a.zx.Colors.CUSTOM,
           premiumModalAnalyticsLocation: r
         })]
       }), (0, i.jsx)("img", {
-        src: m,
-        className: u.bannerImage,
+        src: b ? f.Z : h,
+        className: _.bannerImage,
         alt: "gift nitro banner"
       })]
     })
