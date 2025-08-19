@@ -41,28 +41,28 @@ function m(e) {
     messageId: f,
     stopPropagation: g = false,
     ariaLabel: b
-  } = e, j = r.useRef(null), {
-    analyticsLocations: O
-  } = (0, a.ZP)(o.Z.USERNAME), y = (0, c.ZP)(m, null == t ? true : t.id), v = (0, s.j)({
+  } = e, j = l.useRef(null), {
+    analyticsLocations: v
+  } = (0, a.ZP)(o.Z.USERNAME), O = (0, c.ZP)(m, null == t ? true : t.id), y = (0, s.j)({
     displayNameStyles: null == t ? true : t.displayNameStyles
-  }), T = r.useCallback(e => {
+  }), T = l.useCallback(e => {
     let i = d.Z.getChannel(n);
     null != i && null != t && (0, h.Pv)(e, t, i)
   }, [t, n]);
-  return r.useCallback(e => (r, o) => {
+  return l.useCallback(e => (l, o) => {
     let s = null == e ? true : e.colorStrings,
-      c = y && null != s && null != s.primaryColor && null != s.secondaryColor,
+      c = O && null != s && null != s.primaryColor && null != s.secondaryColor,
       d = t => {
         var n, o, a;
-        return (0, i.jsx)(l.rz2, (o = p({}, null != t ? t : {}), a = a = {
+        return (0, i.jsx)(r.rz2, (o = p({}, null != t ? t : {}), a = a = {
           ref: j,
           onContextMenu: T,
-          name: (0, l.qgQ)(r),
+          name: (0, r.qgQ)(l),
           colorString: null != (n = null == e ? true : e.colorString) ? n : null,
           roleName: null == e ? true : e.colorRoleName,
           colorStrings: c ? s : null,
           "aria-label": b,
-          className: v
+          className: y
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -75,7 +75,7 @@ function m(e) {
         }), o))
       };
     return (0, i.jsx)(a.Gt, {
-      value: O,
+      value: v,
       children: null != t ? (0, i.jsx)(u.Z, {
         targetElementRef: j,
         user: t,
@@ -94,21 +94,21 @@ function m(e) {
             }
           }, function(e, t) {
             if (null == e) return {};
-            var n, i, r = function(e, t) {
+            var n, i, l = function(e, t) {
               if (null == e) return {};
-              var n, i, r = {},
-                l = Object.keys(e);
-              for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-              return r
+              var n, i, l = {},
+                r = Object.keys(e);
+              for (i = 0; i < r.length; i++) n = r[i], t.indexOf(n) >= 0 || (l[n] = e[n]);
+              return l
             }(e, t);
             if (Object.getOwnPropertySymbols) {
-              var l = Object.getOwnPropertySymbols(e);
-              for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+              var r = Object.getOwnPropertySymbols(e);
+              for (i = 0; i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
             }
-            return r
+            return l
           }(e, ["onClick"])))
         }
       }) : d(true)
     }, o)
-  }, [O, t, n, m, f, T, g, b, y, v])
+  }, [v, t, n, m, f, T, g, b, O, y])
 }

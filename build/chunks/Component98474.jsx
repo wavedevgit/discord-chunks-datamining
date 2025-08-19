@@ -1,7 +1,7 @@
 /** Chunk was on 38626 **/
 /** chunk id: 98474, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,26 +49,26 @@ function j(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = [];
+let v = [];
 
-function y(e) {
+function O(e) {
   let {
     messageId: t,
     emoji: n,
-    startPosition: y,
-    targetPosition: v
-  } = e, [T, S] = r.useState(0), [x, E] = r.useState(0), [R, I] = r.useState(null), {
+    startPosition: O,
+    targetPosition: y
+  } = e, [T, x] = l.useState(0), [S, E] = l.useState(0), [R, I] = l.useState(null), {
     confettiCanvas: N
-  } = r.useContext(u.h), P = (0, l.uR)(N, R), C = r.useMemo(() => [{
+  } = l.useContext(u.h), P = (0, r.uR)(N, R), C = l.useMemo(() => [{
     src: null == n.id ? m.ZP.getURL(n.name) : p.ZP.getEmojiURL({
       id: n.id,
       animated: false,
       size: 22
     }),
     colorize: false
-  }], [n.name, n.id]), w = v.x - v.width / 2 * .5, Z = v.y - v.height / 2 * .5, A = (0, s.q_F)({
+  }], [n.name, n.id]), w = y.x - y.width / 2 * .5, Z = y.y - y.height / 2 * .5, A = (0, s.q_F)({
     from: {
-      y: y.y
+      y: O.y
     },
     to: {
       y: Z
@@ -85,7 +85,7 @@ function y(e) {
     }
   }), M = (0, s.q_F)({
     from: {
-      x: y.x,
+      x: O.x,
       scale: 1,
       opacity: 1
     },
@@ -105,24 +105,24 @@ function y(e) {
       let {
         x: t
       } = e;
-      S(t)
+      x(t)
     }
   });
-  return r.useEffect(() => {
-    T > 0 && x > 0 && P.createConfetti(j(b({}, f.We), {
+  return l.useEffect(() => {
+    T > 0 && S > 0 && P.createConfetti(j(b({}, f.We), {
       position: {
         type: "static",
         value: {
           x: T,
-          y: x
+          y: S
         }
       }
     }))
-  }, [P, T, x]), (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(l.Ji, {
+  }, [P, T, S]), (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(r.Ji, {
       ref: I,
       sprites: C,
-      colors: O,
+      colors: v,
       spriteWidth: f.Ko,
       spriteHeight: f.Ko
     }), (0, i.jsx)(d.ZP, {

@@ -17,10 +17,10 @@ function h(e) {
   let {
     reactionRef: t,
     count: n
-  } = e, i = r.useRef(n), s = (0, o.e7)([a.Z], () => a.Z.getState()), d = (0, u.Z)(), h = (0, c.Z)(t);
-  return r.useEffect(() => {
+  } = e, i = l.useRef(n), s = (0, o.e7)([a.Z], () => a.Z.getState()), d = (0, u.Z)(), h = (0, c.Z)(t);
+  return l.useEffect(() => {
     if (n > i.current && null != h) {
-      let e = (0, l.clamp)(n, s.confettiCount / 2, 2 * s.confettiCount);
+      let e = (0, r.clamp)(n, s.confettiCount / 2, 2 * s.confettiCount);
       d.fire(h.x, h.y, {
         count: e
       })

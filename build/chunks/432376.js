@@ -9,8 +9,8 @@ function i(e) {
     channel: t,
     canChat: n,
     renderReactions: i,
-    canAddNewReactions: r,
-    isLurking: l,
+    canAddNewReactions: l,
+    isLurking: r,
     isGuest: o,
     communicationDisabled: a,
     isActiveChannelOrUnarchivableThread: s,
@@ -18,7 +18,7 @@ function i(e) {
   } = e, u = t.isPrivate(), d = t.isSystemDM(), h = (n || u) && s;
   return {
     disableReactionReads: !i,
-    disableReactionCreates: l || o || !h || !((true === r || u) && !d && s),
-    disableReactionUpdates: l || o || !h || true === a || true === c
+    disableReactionCreates: r || o || !h || !((true === l || u) && !d && s),
+    disableReactionUpdates: r || o || !h || true === a || true === c
   }
 }

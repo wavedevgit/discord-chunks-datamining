@@ -21,8 +21,8 @@ let b = async e => {
   var t;
   let {
     effect: n
-  } = e, i = await (0, h.T)(n.channelId, null != (t = n.messageId) ? t : m.lds, n.emoji.name), r = await (0, p.aB)("".concat(n.channelId, ":").concat(n.messageId, ":").concat(n.emoji.name), n.url, i, n.color);
-  return r.assets[0].p = n.url, r
+  } = e, i = await (0, h.T)(n.channelId, null != (t = n.messageId) ? t : m.lds, n.emoji.name), l = await (0, p.aB)("".concat(n.channelId, ":").concat(n.messageId, ":").concat(n.emoji.name), n.url, i, n.color);
+  return l.assets[0].p = n.url, l
 };
 
 function j(e) {
@@ -31,8 +31,8 @@ function j(e) {
     effect: n,
     onComplete: i,
     emojiSize: o = 20
-  } = e, s = l.useRef(null), h = o * p.Vz, m = (h + o) / 2;
-  return l.useEffect(() => {
+  } = e, s = r.useRef(null), h = o * p.Vz, m = (h + o) / 2;
+  return r.useEffect(() => {
     let e;
     if (null != n) return !async function() {
       if (null != s.current) {
@@ -58,9 +58,9 @@ function j(e) {
     }(), () => {
       null != e && e.destroy()
     }
-  }, [i, n, o]), (0, r.jsx)("div", {
+  }, [i, n, o]), (0, l.jsx)("div", {
     className: f.effectsWrapper,
-    children: (0, r.jsx)("div", {
+    children: (0, l.jsx)("div", {
       className: a()(f.effect, t),
       style: {
         transform: "translateY(".concat(m, "px)"),

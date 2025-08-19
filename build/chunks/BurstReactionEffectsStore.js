@@ -4,9 +4,9 @@ require.d(exports, {
   I: () => s,
   Z: () => m
 }), require("./388685.js"), require("./467055.js");
-var i, r, l, Chunk442837 = require("./442837.js"),
+var i, l, r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
-  s = ((r = {}).HOVER = "HOVER", r.EXTERNAL = "EXTERNAL", r.RANDOM = "RANDOM", r);
+  s = ((l = {}).HOVER = "HOVER", l.EXTERNAL = "EXTERNAL", l.RANDOM = "RANDOM", l);
 let c = {},
   u = {},
   d = {},
@@ -20,33 +20,33 @@ class p extends(i = Chunk442837.ZP.Store) {
   }
   getEffectForEmojiId(e, t, n) {
     var i;
-    let r = h(t, n);
-    return null == (i = u[e]) ? true : i[r]
+    let l = h(t, n);
+    return null == (i = u[e]) ? true : i[l]
   }
-}(l = "displayName") in p ? Object.defineProperty(p, l, {
+}(r = "displayName") in p ? Object.defineProperty(p, r, {
   value: "BurstReactionEffectsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : p[l] = "BurstReactionEffectsStore";
+}) : p[r] = "BurstReactionEffectsStore";
 let m = new p(Chunk570140.Z, {
   BURST_REACTION_EFFECT_CLEAR: e => {
     var t;
     let {
       channelId: n,
       messageId: i,
-      emoji: r
-    } = e, l = h(i, r);
-    null == (t = u[n]) || delete t[l]
+      emoji: l
+    } = e, r = h(i, l);
+    null == (t = u[n]) || delete t[r]
   },
   BURST_REACTION_EFFECT_PLAY: e => {
     var t, n, i;
     let {
-      channelId: r,
-      messageId: l,
+      channelId: l,
+      messageId: r,
       emoji: o,
       key: a
-    } = e, s = h(l, o);
+    } = e, s = h(r, o);
     if (((e, t) => {
         var n;
         let i;
@@ -60,23 +60,23 @@ let m = new p(Chunk570140.Z, {
           default:
             i = "EXTERNAL"
         }
-        let r = Object.fromEntries(Object.entries(null != (n = u[t]) ? n : {}).filter(e => {
+        let l = Object.fromEntries(Object.entries(null != (n = u[t]) ? n : {}).filter(e => {
           let [, t] = e;
           return t === i
         }));
-        if (Object.keys(r).length >= 5 && "EXTERNAL" === e) {
-          for (let e in r)
+        if (Object.keys(l).length >= 5 && "EXTERNAL" === e) {
+          for (let e in l)
             if (null == d[t] || null == d[t][e]) {
-              delete u[t][e], delete r[e];
+              delete u[t][e], delete l[e];
               break
             }
         }
-        return Object.keys(r).length
-      })(a, r) >= 5) return;
-    let c = null != (t = u[r]) ? t : {},
-      p = (null != (n = d[r]) ? n : {})[s],
+        return Object.keys(l).length
+      })(a, l) >= 5) return;
+    let c = null != (t = u[l]) ? t : {},
+      p = (null != (n = d[l]) ? n : {})[s],
       m = c[s];
-    ("HOVER" !== a || null == m) && ("HOVER" === m && "EXTERNAL" === a && null != p && ("function" == typeof p.destroy && p.destroy(), null == (i = d[r]) || delete i[s], m = true), null == m && (null != u[r] ? u[r][s] = a : u[r] = {
+    ("HOVER" !== a || null == m) && ("HOVER" === m && "EXTERNAL" === a && null != p && ("function" == typeof p.destroy && p.destroy(), null == (i = d[l]) || delete i[s], m = true), null == m && (null != u[l] ? u[l][s] = a : u[l] = {
       [s]: a
     }))
   },
@@ -85,18 +85,18 @@ let m = new p(Chunk570140.Z, {
       channelId: t,
       messageId: n,
       emoji: i,
-      animation: r
-    } = e, l = h(n, i);
-    null == d[t] && (d[t] = {}), d[t][l] = r
+      animation: l
+    } = e, r = h(n, i);
+    null == d[t] && (d[t] = {}), d[t][r] = l
   },
   BURST_REACTION_PICKER_ANIMATION_ADD: e => {
     let {
       messageId: t,
       emojiName: n,
       emojiId: i,
-      startPosition: r
+      startPosition: l
     } = e;
-    c["".concat(t, ":").concat(n, ":").concat(null != i ? i : "")] = r
+    c["".concat(t, ":").concat(n, ":").concat(null != i ? i : "")] = l
   },
   BURST_REACTION_PICKER_ANIMATION_CLEAR: e => {
     let {

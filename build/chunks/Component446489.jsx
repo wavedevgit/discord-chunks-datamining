@@ -4,7 +4,7 @@ require.d(exports, {
   Z: () => b,
   y: () => g
 });
-var i, r, Chunk951288 = require("./951288.js"),
+var i, l, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
@@ -61,17 +61,17 @@ function g(e, t, n) {
     return null != n && n > 0 ? Math.min(i, n) * t : i * t
   }
 }
-class b extends(r = Chunk647438.PureComponent) {
+class b extends(l = Chunk647438.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     let {
       prevValue: n,
       currValue: i,
-      nextValue: r
+      nextValue: l
     } = t;
     return null == n && i !== e.value ? {
       prevValue: u.Z.isFocused() ? i : null,
       currValue: e.value
-    } : null != r && r !== e.value ? {
+    } : null != l && l !== e.value ? {
       nextValue: e.value
     } : null
   }
@@ -85,9 +85,9 @@ class b extends(r = Chunk647438.PureComponent) {
   animateBetween(e, t) {
     let n, {
       forcePosition: i,
-      animationSpeed: r
+      animationSpeed: l
     } = this.props;
-    this.prevAnimate.setValue(1), null != i ? 0 === i ? (this.currAnimate.setValue(0), n = 2) : 2 === i && (this.currAnimate.setValue(2), n = 0) : e > t ? (this.currAnimate.setValue(0), n = 2) : (this.currAnimate.setValue(2), n = 0), c.Z.parallel([c.Z.timing(this.prevAnimate, f(n, r)), c.Z.timing(this.currAnimate, f(1, r))]).start(this.animateNext)
+    this.prevAnimate.setValue(1), null != i ? 0 === i ? (this.currAnimate.setValue(0), n = 2) : 2 === i && (this.currAnimate.setValue(2), n = 0) : e > t ? (this.currAnimate.setValue(0), n = 2) : (this.currAnimate.setValue(2), n = 0), c.Z.parallel([c.Z.timing(this.prevAnimate, f(n, l)), c.Z.timing(this.currAnimate, f(1, l))]).start(this.animateNext)
   }
   getAnimatedStyle(e) {
     let {
@@ -129,8 +129,8 @@ class b extends(r = Chunk647438.PureComponent) {
     } = this.state, {
       color: n,
       formatString: i
-    } = this.props, r = s().omit(this.props, ["value", "digitWidth", "padStartLength", "forcePosition"]);
-    if (null == module) return (0, Chunk951288.jsx)("div", p(h({}, r), {
+    } = this.props, l = s().omit(this.props, ["value", "digitWidth", "padStartLength", "forcePosition"]);
+    if (null == module) return (0, Chunk951288.jsx)("div", p(h({}, l), {
       style: {
         color: require,
         minWidth: this.getMinWidth(exports)
@@ -138,7 +138,7 @@ class b extends(r = Chunk647438.PureComponent) {
       children: null != i ? i(this.padValue(exports)) : this.padValue(exports)
     }));
     let o = Math.max(module, exports);
-    return (0, Chunk951288.jsxs)("div", p(h({}, r), {
+    return (0, Chunk951288.jsxs)("div", p(h({}, l), {
       style: {
         color: require,
         position: "relative",
