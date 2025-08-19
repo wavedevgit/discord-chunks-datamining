@@ -197,7 +197,7 @@ function k(e) {
   });
   return (0, r.jsx)(y.Z, {
     className: P.authBox,
-    children: () => [(0, r.jsx)(g.Z, {
+    children: () => [(0, r.jsx)(f.Z, {
       guildTemplate: t
     }, "template"), (0, r.jsx)("div", {
       className: P.formContainer,

@@ -44,7 +44,7 @@ function Z(e) {
   }, [n]), (0, r.jsx)("div", {
     className: S.qrCodeContainer,
     children: "" !== t && n ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(f.ZP, {
+      children: [(0, r.jsx)(g.ZP, {
         className: S.qrCode,
         size: 160,
         text: t
@@ -94,12 +94,12 @@ function R(e) {
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(Z, {
           text: 1 === t.step ? "https://discord.com/ra/".concat(t.fingerprint) : ""
-        }), (0, r.jsx)(g.Dx, {
+        }), (0, r.jsx)(f.Dx, {
           className: C.marginBottom8,
           children: N.intl.string(N.t.UPiHaG)
         }), null != i ? (0, r.jsx)(P, {
           children: i
-        }) : (0, r.jsx)(g.DK, {
+        }) : (0, r.jsx)(f.DK, {
           children: N.intl.format(N.t["Qq+A6u"], {})
         }), (0, r.jsx)(c.zx, {
           size: c.Ph.LARGE,
@@ -131,10 +131,10 @@ function R(e) {
           size: u.EFr.SIZE_120,
           isMobile: true,
           status: O.Sk.ONLINE
-        }), (0, r.jsx)(g.Dx, {
+        }), (0, r.jsx)(f.Dx, {
           className: C.marginBottom8,
           children: N.intl.string(N.t.apGCUV)
-        }), (0, r.jsx)(g.DK, {
+        }), (0, r.jsx)(f.DK, {
           children: N.intl.format(N.t.Cbl5JC, {
             username: "".concat(j.ZP.getUserTag(e))
           })
@@ -164,19 +164,19 @@ function w(e) {
     state: c,
     rsaKeyPair: d,
     cancel: h,
-    handleFailure: g
+    handleFailure: f
   } = function(e) {
     let [t, n] = i.useState(0), [r, l] = i.useState(false), [s, o] = i.useState({
       step: 0
-    }), [c, u] = i.useState(null), d = (0, p.Z)(), h = i.useMemo(() => new a.Z(1500, 3e4), []), g = (0, m.Z)(() => {
+    }), [c, u] = i.useState(null), d = (0, p.Z)(), h = i.useMemo(() => new a.Z(1500, 3e4), []), f = (0, m.Z)(() => {
       o({
         step: 0
       }), d ? n(e => e + 1) : (A.info("document is not visible, will defer reconnection when document becomes visible."), l(true))
-    }), f = i.useCallback(() => {
+    }), g = i.useCallback(() => {
       A.error("Could not complete QR code login, trying to restart with a new QR code."), o({
         step: 0
-      }), h.pending || h.fail(g)
-    }, [g, h]);
+      }), h.pending || h.fail(f)
+    }, [f, h]);
     return i.useEffect(() => {
       d && r && 0 === s.step && (A.info("reconnecting, now that document is visible"), l(false), n(e => e + 1))
     }, [s, d, r, l]), i.useEffect(() => {
@@ -198,7 +198,7 @@ function w(e) {
       let m = () => {
         d ? (d = false, r.send(JSON.stringify({
           op: "heartbeat"
-        }))) : (i("heartbeat timeout, reconnecting."), r.close(), f())
+        }))) : (i("heartbeat timeout, reconnecting."), r.close(), g())
       };
       return r.onmessage = async t => {
         let {
@@ -226,7 +226,7 @@ function w(e) {
           }
           case "pending_login": {
             let e = l.ticket;
-            null == e && f(), o({
+            null == e && g(), o({
               step: 4,
               ticket: e
             });
@@ -259,7 +259,7 @@ function w(e) {
             return
           }
           case "cancel":
-            i("remote auth handshake cancelled."), g();
+            i("remote auth handshake cancelled."), f();
             return;
           case "hello": {
             i("got hello, auth timeout=".concat(l.timeout_ms, "ms"));
@@ -280,19 +280,19 @@ function w(e) {
           encoded_public_key: a
         })), u(l)
       }, r.onclose = e => {
-        i("disconnected, code: ".concat(e.code, " ").concat(e.reason)), f()
+        i("disconnected, code: ".concat(e.code, " ").concat(e.reason)), g()
       }, r.onerror = e => {
-        i("disconnected, error: ".concat(JSON.stringify(e))), f()
+        i("disconnected, error: ".concat(JSON.stringify(e))), g()
       }, () => {
         i("cleaning up"), r.onopen = () => null, r.onmessage = () => null, r.onclose = () => null, r.onerror = () => null, r.close(1e3), h.cancel(), null != c && clearTimeout(c), null != s && clearInterval(s)
       }
-    }, [g, e, t, h, f]), {
+    }, [f, e, t, h, g]), {
       state: s,
       rsaKeyPair: c,
-      cancel: g,
-      handleFailure: f
+      cancel: f,
+      handleFailure: g
     }
-  }(t), f = function(e) {
+  }(t), g = function(e) {
     switch (e) {
       case 0:
       case 1:
@@ -317,18 +317,18 @@ function w(e) {
         let n = await (0, E.FW)(d, e.body.encrypted_token);
         t(n)
       } catch (e) {
-        g()
-      } else g()
+        f()
+      } else f()
     }).catch(() => {
-      g()
+      f()
     })
-  }, [c, t, d, g]), (0, r.jsxs)(r.Fragment, {
+  }, [c, t, d, f]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: S.verticalSeparator
     }), (0, r.jsx)(u.qBt, {
       fillParent: true,
       className: S.qrLogin,
-      step: f,
+      step: g,
       steps: [0, 1],
       children: (0, r.jsx)("div", {
         className: S.qrLoginInner,

@@ -1,18 +1,19 @@
-/** Chunk was on 85362 **/
-/** chunk id: 989941, original params: e,t,n (module,exports,require) **/
-let r;
+/** Chunk was on 69416 **/
+/** chunk id: 989941, original params: e,t,r (module,exports,require) **/
+"use strict";
+let l;
 require.d(exports, {
-  Z: () => l
+  Z: () => i
 });
 var Chunk145597 = require("./145597.js");
 
-function l(e, t) {
+function i(e, t) {
   if (__OVERLAY__) {
     let e = t.getGame(),
-      n = (0, i.getPID)();
-    return null == e || null == n ? null : (null == r ? true : r.id) === e.id && (null == r ? true : r.pid) === n ? r : r = {
+      r = (0, n.getPID)();
+    return null == e || null == r ? null : (null == l ? true : l.id) === e.id && (null == l ? true : l.pid) === r ? l : l = {
       id: e.id,
-      pid: n,
+      pid: r,
       pidPath: [],
       nativeProcessObserverId: 0,
       hidden: false,

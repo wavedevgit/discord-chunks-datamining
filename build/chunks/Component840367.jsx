@@ -29,7 +29,7 @@ function b(e) {
     headingId: u,
     widget: d,
     disableInteraction: b = false
-  } = e, m = (0, a.e7)([c.default], () => c.default.getId() === r), y = (0, s.kQ)(d), j = p[d.type](), v = m && d.games.length > 0 ? (t = d.type) === i.l.FAVORITE_GAMES ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
+  } = e, m = (0, a.e7)([c.default], () => c.default.getId() === r), j = (0, s.kQ)(d), y = p[d.type](), v = m && d.games.length > 0 ? (t = d.type) === i.l.FAVORITE_GAMES ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
     numGames: l.k[t]
   }) : true;
   return (0, n.jsxs)("div", {
@@ -40,7 +40,7 @@ function b(e) {
         variant: "text-xs/medium",
         color: "text-default",
         id: u,
-        children: j
+        children: y
       }), null != v && (0, n.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
@@ -48,7 +48,7 @@ function b(e) {
       })]
     }), (0, n.jsx)(O, {
       widget: d,
-      disabled: y,
+      disabled: j,
       disabledInteraction: b,
       userId: r
     })]

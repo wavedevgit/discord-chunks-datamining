@@ -137,7 +137,7 @@ function Y(e) {
 let J = Chunk647438.memo(function(e) {
     let {
       trackedGame: t
-    } = e, a = (0, d.e7)([v.ZP], () => v.ZP.getGameOrTransformedSubgameForPID(t.pid)), r = (0, d.e7)([S.Z], () => S.Z.getGameForPID(t.pid)), l = (0, d.e7)([v.ZP], () => null == a ? null : v.ZP.getGameOverlayStatus(a));
+    } = e, a = (0, d.e7)([b.ZP], () => b.ZP.getGameOrTransformedSubgameForPID(t.pid)), r = (0, d.e7)([S.Z], () => S.Z.getGameForPID(t.pid)), l = (0, d.e7)([b.ZP], () => null == a ? null : b.ZP.getGameOverlayStatus(a));
     return (0, n.jsxs)("div", {
       className: G.panelGroup,
       children: [(0, n.jsx)(m.Text, {
@@ -408,12 +408,12 @@ function et() {
 let ea = Chunk647438.memo(function(e) {
     let {
       pid: t
-    } = e, a = (0, d.e7)([_.default, v.ZP], () => {
+    } = e, a = (0, d.e7)([_.default, b.ZP], () => {
       var e, a;
       if (null == t) return null;
       let n = null == (e = _.default.getTrackedGameByPid(t)) ? true : e.fullscreenType;
       if (null != n) return n;
-      let r = v.ZP.getGameOrTransformedSubgameForPID(t);
+      let r = b.ZP.getGameOrTransformedSubgameForPID(t);
       return null != (a = null == r ? true : r.fullscreenType) ? a : p.Jx.UNKNOWN
     }, [t]);
     return (0, n.jsxs)(m.Text, {
@@ -854,7 +854,7 @@ let ex = ["__webpack_require__", "fn"],
         stack: x,
         data: h,
         timestamp: p
-      } = r, b = o()(p), v = eu(c);
+      } = r, v = o()(p), b = eu(c);
       return (0, n.jsxs)(m.w0Z, {
         className: G.subPanelScroller,
         children: [(0, n.jsxs)(f.Z, {
@@ -864,7 +864,7 @@ let ex = ["__webpack_require__", "fn"],
               color: ec(c, d)
             },
             className: G.headerIcon,
-            children: (0, n.jsx)(v, {
+            children: (0, n.jsx)(b, {
               color: "currentColor",
               size: "sm"
             })
@@ -894,11 +894,11 @@ let ex = ["__webpack_require__", "fn"],
           className: G.commonProperties,
           children: [(0, n.jsx)(D.Z9, {
             name: "Timestamp",
-            copyValue: b.toISOString(),
+            copyValue: v.toISOString(),
             children: (0, n.jsx)("time", {
-              dateTime: b.toISOString(),
-              title: (0, w.vc)(b, "LLLL"),
-              children: (0, w.vc)(b, "L h:mm:ss.SSS")
+              dateTime: v.toISOString(),
+              title: (0, w.vc)(v, "LLLL"),
+              children: (0, w.vc)(v, "L h:mm:ss.SSS")
             })
           }), (0, n.jsx)(D.Z9, {
             name: "Log Type",
@@ -949,7 +949,7 @@ let ex = ["__webpack_require__", "fn"],
       })
     }
   }],
-  eb = {
+  ev = {
     searchType: Chunk886118.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -963,11 +963,11 @@ let ex = ["__webpack_require__", "fn"],
     throttleMs: 100
   };
 
-function ev() {
+function eb() {
   let [e, t] = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_getOverlayLoggingBreadcrumbs(), [], Chunk136015.Q), {
     ref: a,
     height: l
-  } = (0, Chunk393238.ZP)(), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_isOverlayModuleLoggingEnabled()), [o, c] = Chunk647438.useState(Chunk913527), [u, x] = Chunk647438.useState(Object.keys(eo)), [p, v] = Chunk647438.useState(""), f = Chunk647438.useMemo(() => 0 === exports ? [] : module.filter(e => {
+  } = (0, Chunk393238.ZP)(), s = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.DEV_isOverlayModuleLoggingEnabled()), [o, c] = Chunk647438.useState(Chunk913527), [u, x] = Chunk647438.useState(Object.keys(eo)), [p, b] = Chunk647438.useState(""), f = Chunk647438.useMemo(() => 0 === exports ? [] : module.filter(e => {
     for (let t of u) {
       let {
         filter: a
@@ -982,7 +982,7 @@ function ev() {
   } = (0, Chunk621060.ZP)({
     tabs: ep
   }, []);
-  (0, Chunk301801.BO)(Chunk593472, Chunk984370, Chunk352527, eb, [module]);
+  (0, Chunk301801.BO)(Chunk593472, Chunk984370, Chunk352527, ev, [module]);
   let S = Chunk647438.useCallback(e => {
     c(e), h.Z.setModuleLogging(e)
   }, []);
@@ -1112,6 +1112,6 @@ function eg() {
           children: "Logging"
         })
       })]
-    }), "state" === module && (0, Chunk951288.jsx)(ef, {}), "logging" === module && (0, Chunk951288.jsx)(ev, {})]
+    }), "state" === module && (0, Chunk951288.jsx)(ef, {}), "logging" === module && (0, Chunk951288.jsx)(eb, {})]
   })
 }

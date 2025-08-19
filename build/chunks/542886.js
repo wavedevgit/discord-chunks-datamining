@@ -11,5 +11,6 @@ module.exports = {
   error: "error__2cbe8",
   pendingCancellation: "pendingCancellation__2cbe8",
   pendingCancellationIcon: "pendingCancellationIcon__2cbe8",
-  pendingCancellationMessage: "pendingCancellationMessage__2cbe8"
+  pendingCancellationMessage: "pendingCancellationMessage__2cbe8",
+  footer: "footer__2cbe8"
 }

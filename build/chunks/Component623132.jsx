@@ -20,7 +20,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk932366 = require("./932366.js"),
   Chunk776385 = require("./776385.js");
 
-function y(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -39,7 +39,7 @@ function y(e) {
   return e
 }
 
-function j(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -79,9 +79,9 @@ function v(e) {
     sourceUserId: r,
     trackEntryPointImpression: true
   });
-  return null == s ? (0, n.jsx)(l.X6q, j(y({}, c), {
+  return null == s ? (0, n.jsx)(l.X6q, y(j({}, c), {
     children: o
-  })) : (0, n.jsx)(l.X6q, j(y({}, c), {
+  })) : (0, n.jsx)(l.X6q, y(j({}, c), {
     children: (0, n.jsx)(l.P3F, {
       onClick: s,
       className: m.clickableText,
@@ -177,9 +177,9 @@ function E(e) {
       hideTooltip: true
     }), (0, n.jsxs)("div", {
       className: m.details,
-      children: [g ? (0, n.jsx)(l.X6q, j(y({}, I), {
+      children: [g ? (0, n.jsx)(l.X6q, y(j({}, I), {
         children: E
-      })) : (0, n.jsx)(v, y({
+      })) : (0, n.jsx)(v, j({
         applicationId: w,
         userId: t.id,
         gameName: E

@@ -43,11 +43,11 @@ let h = [{
     label: "[none selected]",
     value: null
   },
-  b = {
+  v = {
     label: "[preview all]",
     value: null
   },
-  v = () => {
+  b = () => {
     (0, Chunk481060.nfh)(Chunk637443.g) ? (0, Chunk481060.Mr3)(Chunk637443.g) : (0, Chunk481060.ZDy)(async () => {
       let {
         ShopAssetsPreviewInstructionModal: e
@@ -109,7 +109,7 @@ let h = [{
       setPreviewAvatarDecorationId: t
     } = (0, Chunk619899.N9)(), {
       avatarDecorationAssets: a
-    } = (0, Chunk619899.xq)(), i = Chunk647438.useMemo(() => [b, ...require.map(e => ({
+    } = (0, Chunk619899.xq)(), i = Chunk647438.useMemo(() => [v, ...require.map(e => ({
       label: e.name,
       value: e.name
     }))], [require]);
@@ -327,7 +327,7 @@ let h = [{
         }), (0, Chunk951288.jsx)(Chunk481060.hU, {
           variant: "icon-only",
           size: "sm",
-          onClick: v,
+          onClick: b,
           icon: Chunk481060.idN,
           "aria-label": "Open preview instructions"
         })]

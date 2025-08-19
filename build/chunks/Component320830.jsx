@@ -35,8 +35,8 @@ function m(e) {
   }
   return e
 }
-let g = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
-  f = {
+let f = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+  g = {
     friction: 10,
     tension: 130
   },
@@ -60,7 +60,7 @@ let g = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
       animateTo(e, t) {
         s.Z.spring(this.anim, m({
           toValue: e
-        }, f)).start(t)
+        }, g)).start(t)
       }
       getAnimatedStyle(e) {
         return this.state.shouldAnimate ? {
@@ -100,7 +100,7 @@ let g = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         super(...e), p(this, "timeout", true), p(this, "anim", new s.Z.Value(0)), p(this, "state", {
           shouldAnimate: !o.tq
         }), p(this, "handleResize", () => {
-          let e = window.innerWidth > g;
+          let e = window.innerWidth > f;
           !this.state.shouldAnimate && e && this.anim.setValue(1), this.setState({
             shouldAnimate: e
           })

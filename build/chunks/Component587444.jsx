@@ -1,8 +1,8 @@
 /** Chunk was on 27978 **/
 /** chunk id: 587444, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f,
-  u: () => g
+  Z: () => g,
+  u: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
 
-function g(e) {
+function f(e) {
   let {
     text: t,
     buttonCta: i,
@@ -67,7 +67,7 @@ function g(e) {
   })
 }
 
-function f(e) {
+function g(e) {
   let {
     text: t,
     buttonCta: n,
@@ -76,7 +76,7 @@ function f(e) {
   } = e;
   return (0, r.jsx)(o.ZP, {
     theme: i,
-    children: (0, r.jsx)(g, {
+    children: (0, r.jsx)(f, {
       text: t,
       buttonCta: n,
       onClick: l

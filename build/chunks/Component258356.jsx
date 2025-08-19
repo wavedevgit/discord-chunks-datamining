@@ -1,8 +1,8 @@
 /** Chunk was on 27978 **/
 /** chunk id: 258356, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  X: () => g,
-  Z: () => f
+  X: () => f,
+  Z: () => g
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -51,7 +51,7 @@ function m(e) {
   })
 }
 
-function g(e) {
+function f(e) {
   var t;
   let {
     invite: n
@@ -99,7 +99,7 @@ function g(e) {
   })
 }
 
-function f(e) {
+function g(e) {
   let {
     invite: t,
     channel: n,

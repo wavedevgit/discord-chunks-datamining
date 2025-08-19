@@ -1,11 +1,11 @@
-/** Chunk was on 81498 **/
+/** Chunk was on 4756 **/
 /** chunk id: 503089, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   $x: () => _,
   ZP: () => N,
-  d7: () => I,
-  w6: () => w
+  d7: () => w,
+  w6: () => I
 }), require("./539854.js"), require("./361932.js"), require("./187205.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -65,8 +65,8 @@ let E = Object.freeze({
     sidebarOpen: true
   }),
   _ = 1.4,
-  w = 15,
-  I = 2;
+  I = 15,
+  w = 2;
 
 function j(e) {
   var t, n;
@@ -130,7 +130,7 @@ class P extends Chunk647438.PureComponent {
     return null != require && require.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (Chunk585483.S.dispatch(Chunk981631.CkL.SHAKE_APP, {
       duration: 300,
       intensity: this._intensity
-    }), this._intensity = Math.min(this._intensity + I, w), Chunk585483.S.dispatch(Chunk981631.CkL.EMPHASIZE_NOTICE), false) : (this._intensity = _, true)
+    }), this._intensity = Math.min(this._intensity + w, I), Chunk585483.S.dispatch(Chunk981631.CkL.EMPHASIZE_NOTICE), false) : (this._intensity = _, true)
   }
   renderSidebar(e) {
     let {

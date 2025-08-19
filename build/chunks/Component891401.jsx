@@ -68,7 +68,7 @@ function T() {
     l = (0, Chunk680783.Z)(require),
     s = null == Chunk120356 ? true : Chunk120356.wallpaperId,
     d = (0, Chunk461762.Z)(Chunk392711),
-    v = Chunk647438.useCallback(e => {
+    b = Chunk647438.useCallback(e => {
       null != s && (0, h.i)(s, {
         opacity: e
       })

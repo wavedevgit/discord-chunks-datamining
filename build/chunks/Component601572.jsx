@@ -1,4 +1,4 @@
-/** Chunk was on 3500 **/
+/** Chunk was on 90714 **/
 /** chunk id: 601572, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   default: () => S
@@ -33,17 +33,17 @@ function S(e) {
     onEnable: S,
     onClose: I
   } = e, w = b.Z.getCameraComponent(), N = (0, p.Dt)(), E = (0, h.Z)(), P = _.qF.useSetting(), [x, R] = i.useState((0, m.P)(C.default.getCurrentUser())), M = (0, s.O)(), {
-    analyticsLocations: D
-  } = (0, d.ZP)(l.Z.CAMERA_PREVIEW), L = i.useRef(null);
+    analyticsLocations: U
+  } = (0, d.ZP)(l.Z.CAMERA_PREVIEW), D = i.useRef(null);
   i.useEffect(() => {
     y.default.track(v.rMx.OPEN_MODAL, {
       type: "Camera Preview Modal"
     })
   }, []), i.useEffect(() => {
     var e;
-    null == (e = L.current) || e.scrollToTop()
+    null == (e = D.current) || e.scrollToTop()
   }, []);
-  let U = async () => {
+  let L = async () => {
     await j(), o.Z.setVideoEnabled(true), null == S || S()
   }, j = async () => {
     try {
@@ -73,23 +73,23 @@ function S(e) {
     await I(), (0, g.Up)(x)
   };
   return (0, n.jsx)(d.Gt, {
-    value: D,
+    value: U,
     children: (0, n.jsx)(c.Z, {
       page: v.ZY5.PREVIEW_CAMERA_MODAL,
       children: (0, n.jsxs)(r.Y0X, {
-        className: A.modalRoot,
+        className: O.modalRoot,
         size: r.CgR.DYNAMIC,
         "aria-labelledby": N,
         transitionState: t,
         parentComponent: "CameraPreviewModal",
         children: [(0, n.jsxs)(r.hzk, {
-          className: E ? A.contentWithVideoBackgrounds : A.content,
-          scrollerRef: L,
+          className: E ? O.contentWithVideoBackgrounds : O.content,
+          scrollerRef: D,
           children: [(0, n.jsx)(r.X6q, {
             id: N,
-            className: A.header,
+            className: O.header,
             variant: "heading-xl/semibold",
-            children: a ? O.intl.string(O.t.LAwwbW) : O.intl.string(O.t["/HITVF"])
+            children: a ? A.intl.string(A.t.LAwwbW) : A.intl.string(A.t["/HITVF"])
           }), (0, n.jsx)(T.Z, {
             hidePreviewToggle: true,
             showSmallBackgroundOptions: true,
@@ -99,9 +99,9 @@ function S(e) {
             onSelectBackgroundOption: R,
             hideDeviceSelector: a,
             renderCamera: e => (0, n.jsxs)("div", {
-              className: A.cameraPreview,
+              className: O.cameraPreview,
               children: [(0, n.jsx)("div", {
-                className: A.camera,
+                className: O.camera,
                 children: (0, n.jsx)(w, {
                   disabled: false,
                   deviceId: e,
@@ -115,12 +115,12 @@ function S(e) {
         }), (0, n.jsxs)(r.mzw, {
           justify: u.Z.Justify.BETWEEN,
           children: [(() => {
-            let e = a ? O.intl.string(O.t.KQENho) : O.intl.string(O.t.kgIe9f);
+            let e = a ? A.intl.string(A.t.KQENho) : A.intl.string(A.t.kgIe9f);
             return (0, n.jsx)(r.zxk, {
               variant: "primary",
               size: "sm",
               text: e,
-              onClick: a ? j : U,
+              onClick: a ? j : L,
               autoFocus: !a
             })
           })(), (0, n.jsx)(r.XZJ, {
@@ -134,12 +134,12 @@ function S(e) {
             },
             children: (0, n.jsx)(r.Text, {
               variant: "text-sm/normal",
-              children: O.intl.string(O.t["3Ppr1t"])
+              children: A.intl.string(A.t["3Ppr1t"])
             })
           })]
         }), (0, n.jsx)(r.olH, {
           onClick: I,
-          className: A.modalClose
+          className: O.modalClose
         })]
       })
     })

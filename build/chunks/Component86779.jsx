@@ -35,7 +35,7 @@ let E = "mweb_handoff_nonce",
         fingerprint: t,
         handoff_token: n
       } = (0, Chunk593473.parse)(window.location.search),
-      f = Array.isArray(exports) ? exports.length > 1 ? exports[0] : null : exports,
+      g = Array.isArray(exports) ? exports.length > 1 ? exports[0] : null : exports,
       S = null != Chunk70956 ? Chunk70956 : null !== module ? module : true;
     Chunk647438.useEffect(() => {
       null !== Chunk70956 && module !== Chunk70956 && Chunk570140.Z.dispatch({
@@ -44,7 +44,7 @@ let E = "mweb_handoff_nonce",
       })
     }, [Chunk70956, module]);
     let [C, T] = Chunk647438.useState(null), A = Chunk647438.useCallback(e => {
-      T(e), g.default.track(x.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
+      T(e), f.default.track(x.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
         reason: e,
         fingerprint: (0, a.K)(S)
       }, {

@@ -28,7 +28,7 @@ let p = e => {
         return "UNKNOWN TYPE:"
     }
   },
-  b = [{
+  v = [{
     key: "events",
     render(e) {
       let {
@@ -38,7 +38,7 @@ let p = e => {
       return "".concat(t, " ").concat(s.z[a])
     }
   }],
-  v = [{
+  b = [{
     key: "candidates",
     render(e) {
       let {
@@ -108,11 +108,11 @@ function f() {
       className: Chunk882754.candidatesTableContainer,
       children: (0, Chunk951288.jsx)(Chunk681619.Z, {
         className: Chunk882754.candidatesTable,
-        columns: v,
+        columns: b,
         data: j
       })
     }), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: b,
+      columns: v,
       data: g
     })]
   })

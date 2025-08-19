@@ -43,12 +43,12 @@ function v(e) {
     })()
   });
   let j = i.useCallback(() => {
-      l(g.Z5c.LOGIN, {
+      l(f.Z5c.LOGIN, {
         source: "verify_email"
       })
     }, [l]),
     I = i.useCallback(() => {
-      m.default.track(g.rMx.VERIFY_ACCOUNT_APP_OPENED, {
+      m.default.track(f.rMx.VERIFY_ACCOUNT_APP_OPENED, {
         verifying_user_id: E.current
       }), (0, h.Z)("verify_email")
     }, []);
@@ -58,13 +58,13 @@ function v(e) {
       className: a()(_.image, x.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: x.marginBottom8,
-      children: f.intl.string(f.t.PCgG39)
+      children: g.intl.string(g.t.PCgG39)
     }), (0, r.jsx)(d.DK, {
       className: x.marginBottom40,
-      children: f.intl.string(f.t.tQpeAw)
+      children: g.intl.string(g.t.tQpeAw)
     }), (0, r.jsx)(d.zx, {
       onClick: j,
-      children: f.intl.string(f.t.dKhVQE)
+      children: g.intl.string(g.t.dKhVQE)
     })]
   }) : "succeeded" === s ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
@@ -72,10 +72,10 @@ function v(e) {
       className: a()(_.image, x.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: x.marginBottom40,
-      children: f.intl.string(f.t.dAfGb2)
+      children: g.intl.string(g.t.dAfGb2)
     }), (0, r.jsx)(d.zx, {
       onClick: I,
-      children: f.intl.string(f.t.uJWIj4)
+      children: g.intl.string(g.t.uJWIj4)
     })]
   }) : (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
@@ -83,10 +83,10 @@ function v(e) {
       className: a()(_.image, x.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: x.marginBottom8,
-      children: f.intl.string(f.t["0c8+5u"])
+      children: g.intl.string(g.t["0c8+5u"])
     }), (0, r.jsx)(d.DK, {
       className: x.marginBottom40,
-      children: f.intl.string(f.t.ULTCBA)
+      children: g.intl.string(g.t.ULTCBA)
     }), (0, r.jsx)(d.zx, {
       submitting: true,
       color: d.zx.Colors.PRIMARY

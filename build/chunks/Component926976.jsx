@@ -81,7 +81,7 @@ function I(e) {
     }), (0, n.jsx)(u.P3F, {
       tag: "span",
       className: O.copyPropertyButton,
-      onClick: () => (0, v.JG)(JSON.stringify(l), () => s(true)),
+      onClick: () => (0, b.JG)(JSON.stringify(l), () => s(true)),
       children: i ? (0, n.jsx)(u.kmB, {
         color: "currentColor",
         size: "sm"
@@ -107,7 +107,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
         },
         onClose: s,
         filteredEvents: c
-      } = e, d = b.default.getUser(l), h = o()(r);
+      } = e, d = v.default.getUser(l), h = o()(r);
       return (0, n.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, n.jsxs)(x.ZP, {
@@ -120,7 +120,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
             children: [t, (0, n.jsx)(u.P3F, {
               tag: "span",
               className: O.copyEventButton,
-              onClick: () => (0, v.JG)(t),
+              onClick: () => (0, b.JG)(t),
               children: (0, n.jsx)(u.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -130,7 +130,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
             icon: u.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, v.JG)(JSON.stringify(function(e) {
+              (0, b.JG)(JSON.stringify(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var a = null != arguments[t] ? arguments[t] : {},
                     n = Object.keys(a);
@@ -276,13 +276,13 @@ function A() {
       x(e)
     }, []);
   (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, Z, [Chunk120356]);
-  let b = Chunk129861.filter(e => {
+  let v = Chunk129861.filter(e => {
       for (let t of s)
         if (k[t].filter(e)) returntrue;
       returnfalse
     }),
-    [v, f] = Chunk647438.useState(true),
-    _ = Chunk594174.find(e => e.key === v),
+    [b, f] = Chunk647438.useState(true),
+    _ = Chunk594174.find(e => e.key === b),
     {
       TabBar: P,
       renderSelectedTab: I

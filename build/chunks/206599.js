@@ -43,14 +43,14 @@ function u(e) {
       gameDataMap: O,
       isGameFetching: m
     } = (0, s.F)(p),
-    [y, j] = n.useState([]),
+    [j, y] = n.useState([]),
     v = n.useCallback(e => i.Z.noDataAvailable(e), []),
     x = (r = p.map(e => m(e)), n.useMemo(() => r.join("\x1f"), [r]));
   return n.useEffect(() => {
     let t = p.filter(e => v(e));
     t.length > 0 && a(t, e)
   }, [O, x, p, e, a, v]), n.useEffect(() => {
-    j(p.map(e => {
+    y(p.map(e => {
       let t = O[e];
       return {
         applicationId: e,
@@ -59,7 +59,7 @@ function u(e) {
       }
     }))
   }, [p, O, e]), {
-    games: y,
+    games: j,
     isGameFetching: m,
     onAddGame: b
   }

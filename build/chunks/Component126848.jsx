@@ -1,4 +1,4 @@
-/** Chunk was on 81498 **/
+/** Chunk was on 4756 **/
 /** chunk id: 126848, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -32,10 +32,10 @@ function C(e) {
     S = (null == b ? true : b.trial_id) === v.a7,
     E = [];
   O && E.push(o.z.BOGO_2025_NITRO_TAB_BADGE);
-  let [_, w] = (0, a.US)(E, true, true);
+  let [_, I] = (0, a.US)(E, true, true);
   return r.useEffect(() => {
-    true === C && _ === o.z.BOGO_2025_NITRO_TAB_BADGE && w(f.L.AUTO_DISMISS)
-  }, [w, C, _]), t = O ? (0, i.jsx)(h.Z, {}) : null != y ? (0, i.jsx)(p.GN, {
+    true === C && _ === o.z.BOGO_2025_NITRO_TAB_BADGE && I(f.L.AUTO_DISMISS)
+  }, [I, C, _]), t = O ? (0, i.jsx)(h.Z, {}) : null != y ? (0, i.jsx)(p.GN, {
     isTabSelected: C,
     userDiscount: y,
     includesAmountOff: false

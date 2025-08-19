@@ -1,11 +1,11 @@
-/** Chunk was on 81498 **/
+/** Chunk was on 4756 **/
 /** chunk id: 493544, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   ID: () => b,
   NM: () => S,
   Xi: () => O,
-  ZP: () => I,
+  ZP: () => w,
   bT: () => E
 });
 var i, r, Chunk951288 = require("./951288.js"),
@@ -122,7 +122,7 @@ let _ = Object.freeze({
   scrollableCustom: "contentColumnCustom"
 });
 
-function w(e) {
+function I(e) {
   let {
     isMobile: t,
     mobileSidebarOpen: n,
@@ -151,7 +151,7 @@ function w(e) {
     })
   })
 }
-let I = function(e) {
+let w = function(e) {
   let {
     sidebar: t,
     content: n,
@@ -164,7 +164,7 @@ let I = function(e) {
     mobileSidebarOpen: b,
     toggleSidebar: O,
     hideSidebar: S = false
-  } = e, E = l.useRef(null), I = l.useRef(null), j = (0, g.Z)(r), P = (0, p.Yzy)(S, {
+  } = e, E = l.useRef(null), w = l.useRef(null), j = (0, g.Z)(r), P = (0, p.Yzy)(S, {
     from: {
       position: "absolute",
       opacity: 0
@@ -182,7 +182,7 @@ let I = function(e) {
       to: 0
     })
   }, [r, j, E]);
-  let x = (0, s.jsx)(w, {
+  let x = (0, s.jsx)(I, {
     isMobile: d.tq,
     mobileSidebarOpen: b,
     closeAction: o
@@ -245,10 +245,10 @@ let I = function(e) {
             children: [(0, s.jsx)(y.Provider, {
               value: E.current,
               children: (0, s.jsx)("div", {
-                ref: I,
+                ref: w,
                 className: m.contentColumnScrollable,
                 children: (0, s.jsx)(p.JcV, {
-                  containerRef: I,
+                  containerRef: w,
                   children: n
                 })
               })
@@ -273,12 +273,12 @@ let I = function(e) {
                   className: a()(m.contentColumn, m[i], {
                     [m.mobileContent]: d.tq
                   }),
-                  ref: I,
+                  ref: w,
                   style: d.tq ? {
                     maxWidth: window.innerWidth
                   } : true,
                   children: S ? n : (0, s.jsx)(p.JcV, {
-                    containerRef: I,
+                    containerRef: w,
                     children: n
                   })
                 })

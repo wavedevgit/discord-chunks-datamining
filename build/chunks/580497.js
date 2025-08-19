@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 580497, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -17,7 +17,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk954824 = require("./954824.js"),
   Chunk981631 = require("./981631.js");
 
-function f(e) {
+function g(e) {
   let t = function(e) {
       var t;
       let n = null == (t = a().os) ? true : t.family;
@@ -33,7 +33,7 @@ function f(e) {
       return "discord://"
     }(e),
     n = (0, o.zS)(t);
-  null != n && p.default.track(g.rMx.DEEP_LINK_CLICKED, {
+  null != n && p.default.track(f.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, c.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource

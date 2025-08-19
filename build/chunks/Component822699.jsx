@@ -102,8 +102,8 @@ let el = (0, Chunk320830.Z)(Chunk781428.Z),
   eh = (0, Chunk320830.Z)(Chunk718182.Z),
   ep = (0, Chunk320830.Z)(Chunk223543.Z),
   em = (0, Chunk320830.Z)(Chunk886806.Z),
-  eg = (0, Chunk320830.Z)(Chunk698177.Z),
-  ef = (0, Chunk320830.Z)(Chunk479495.Z),
+  ef = (0, Chunk320830.Z)(Chunk698177.Z),
+  eg = (0, Chunk320830.Z)(Chunk479495.Z),
   e_ = (0, Chunk320830.Z)(Chunk299852.Z),
   ex = (0, Chunk320830.Z)(Chunk761305.Z),
   eb = (0, Chunk320830.Z)(Chunk637776.Z),
@@ -294,7 +294,7 @@ class eO extends Chunk647438.PureComponent {
         render: e => (0, r.jsx)(eb, er({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.VERIFY_REQUEST,
-        render: e => (0, r.jsx)(eg, er({}, e))
+        render: e => (0, r.jsx)(ef, er({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.DISABLE_EMAIL_NOTIFICATIONS,
         render: e => (0, r.jsx)(e_, er({}, e))
@@ -306,12 +306,12 @@ class eO extends Chunk647438.PureComponent {
         render: e => (0, r.jsx)(eh, er({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.REJECT_IP,
-        render: e => (0, r.jsx)(ef, er({
+        render: e => (0, r.jsx)(eg, er({
           source: $.Z5c.REJECT_IP
         }, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.REJECT_MFA,
-        render: e => (0, r.jsx)(ef, er({
+        render: e => (0, r.jsx)(eg, er({
           source: $.Z5c.REJECT_MFA
         }, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
@@ -319,7 +319,7 @@ class eO extends Chunk647438.PureComponent {
         render: e => (0, r.jsx)(ep, er({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.RESET,
-        render: e => (0, r.jsx)(ef, er({
+        render: e => (0, r.jsx)(eg, er({
           source: $.Z5c.RESET
         }, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {

@@ -2,7 +2,7 @@
 /** chunk id: 621060, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   ZP: () => j,
-  v0: () => b
+  v0: () => v
 }), require("./388685.js"), require("./539854.js"), require("./642613.js");
 var n, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,8 +16,8 @@ var n, Chunk951288 = require("./951288.js"),
   Chunk823379 = require("./823379.js"),
   Chunk246992 = require("./246992.js"),
   Chunk451429 = require("./451429.js"),
-  b = ((n = {}).NONE = "", n.EXPERIMENTS = "Experiments", n.EVENTS = "Events", n.PREMIUM = "Premium", n.BILLING = "Billing", n.USERS = "Users", n.GUILDS = "Guilds", n.UI = "UI", n.GAMES = "Games", n.AUDIO_VIDEO = "Audio / Video", n.DEVELOPMENT = "Development", n);
-let v = ["Experiments", "Events", "Premium", "Billing", "Users", "Guilds", "UI", "Games", "Audio / Video", "Development"],
+  v = ((n = {}).NONE = "", n.EXPERIMENTS = "Experiments", n.EVENTS = "Events", n.PREMIUM = "Premium", n.BILLING = "Billing", n.USERS = "Users", n.GUILDS = "Guilds", n.UI = "UI", n.GAMES = "Games", n.AUDIO_VIDEO = "Audio / Video", n.DEVELOPMENT = "Development", n);
+let b = ["Experiments", "Events", "Premium", "Billing", "Users", "Guilds", "UI", "Games", "Audio / Video", "Development"],
   f = Chunk647438.forwardRef(function(e, t) {
     let {
       id: a,
@@ -41,7 +41,7 @@ function g(e) {
     tabs: t,
     selectedTabId: a,
     onSelectTab: n
-  } = e, i = l.useRef(new Map), [s, b] = l.useState(() => new Set), {
+  } = e, i = l.useRef(new Map), [s, v] = l.useState(() => new Set), {
     ref: g,
     width: j
   } = (0, u.ZP)(), _ = l.useRef(null);
@@ -51,7 +51,7 @@ function g(e) {
     let s = new Set,
       o = null != j ? j : 0;
     for (let c of (o -= null != (n = null == (e = i.current.get(a)) ? true : e.getBoundingClientRect().width) ? n : 0, t)) c.id !== a && (o -= null != (l = null == (r = i.current.get(c.id)) ? true : r.getBoundingClientRect().width) ? l : 0) < 0 && s.add(c.id);
-    b(s)
+    v(s)
   }, [t, j, g, a]);
   let y = l.useCallback(e => {
     var a, l;
@@ -59,7 +59,7 @@ function g(e) {
       closePopout: i
     } = e, s = t.filter(e => null == e.group), c = {};
     for (let e of t) null != e.group && (null != c[a = e.group] || (c[a] = []), c[e.group].push(e));
-    for (let e of v) null == (l = c[e]) || l.sort((e, t) => {
+    for (let e of b) null == (l = c[e]) || l.sort((e, t) => {
       var a, n;
       return (null != (a = (0, o.q)(e.name)) ? a : "").localeCompare(null != (n = (0, o.q)(t.name)) ? n : "")
     });
@@ -79,7 +79,7 @@ function g(e) {
           label: a,
           action: () => n(t)
         }, t)
-      }), v.map(e => (0, r.jsx)(d.kSQ, {
+      }), b.map(e => (0, r.jsx)(d.kSQ, {
         label: e,
         children: c[e].map(e => {
           let {

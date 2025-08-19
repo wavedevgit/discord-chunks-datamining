@@ -1,6 +1,6 @@
-/** Chunk was on 81498 **/
+/** Chunk was on 45356 **/
 /** chunk id: 621287, original params: e,t,n (module,exports,require) **/
-var i = {
+var s = {
   "./bg.png": "135316",
   "./cs.png": "107217",
   "./da.png": "120273",
@@ -34,17 +34,17 @@ var i = {
   "./zh-TW.png": "408999"
 };
 
-function r(e) {
-  return n(s(e))
+function i(e) {
+  return n(r(e))
 }
 
-function s(e) {
-  if (!n.o(i, e)) {
+function r(e) {
+  if (!n.o(s, e)) {
     var t = Error("Cannot find module '" + e + "'");
     throw t.code = "MODULE_NOT_FOUND", t
   }
-  return i[e]
+  return s[e]
 }
-r.keys = function() {
-  return Object.keys(i)
-}, r.resolve = s, module.exports = r, r.id = 621287
+i.keys = function() {
+  return Object.keys(s)
+}, i.resolve = r, module.exports = i, i.id = 621287

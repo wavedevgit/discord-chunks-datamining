@@ -51,7 +51,7 @@ function O(e) {
   let {
     widget: t,
     userId: O
-  } = e, m = l.useRef(null), y = e => {
+  } = e, m = l.useRef(null), j = e => {
     if (e.shiftKey) {
       (0, u.y8)(t.type), (0, d.L$)(f.qb.WIDGET_REMOVED);
       return
@@ -66,7 +66,7 @@ function O(e) {
     }, {
       stackingBehavior: "stack"
     })
-  }, j = () => {
+  }, y = () => {
     (0, c.G1)(O, t)
   }, v = (0, i.e7)([s.default], () => s.default.getId() === O);
   return (0, n.jsx)(a.yRy, {
@@ -89,13 +89,13 @@ function O(e) {
           children: v ? (0, n.jsx)(a.sNh, {
             id: "remove-widget",
             label: g.intl.string(g.t.Mm07YW),
-            action: y,
+            action: j,
             color: "danger",
             icon: a.XHJ
           }) : (0, n.jsx)(a.sNh, {
             id: "flag-widget",
             label: g.intl.string(g.t.D4GvHB),
-            action: j,
+            action: y,
             color: "danger",
             icon: a.U65
           })

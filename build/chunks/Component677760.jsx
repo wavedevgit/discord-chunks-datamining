@@ -129,7 +129,7 @@ function A(e) {
   }(e, ["children", "cardChildren", "startAnimHeightPx", "innerStyle"]), [d, h] = i.useState(C(c)), {
     ref: p,
     height: m
-  } = (0, u.ZP)(), g = (0, s.q_F)({
+  } = (0, u.ZP)(), f = (0, s.q_F)({
     height: null != m && 0 !== m ? "".concat(m, "px") : "".concat(a, "px"),
     config: l.config.stiff
   });
@@ -138,10 +138,10 @@ function A(e) {
     e !== d && h(e)
   }, [c, d]), (0, r.jsxs)(l.animated.div, {
     className: y.inviteCard,
-    style: g,
+    style: f,
     children: [(0, r.jsx)(l.animated.div, {
       className: y.inviteChildContainer,
-      style: g,
+      style: f,
       children: (0, r.jsx)("section", {
         ref: p,
         className: null == o ? true : o(d),
@@ -203,7 +203,7 @@ function R(e) {
     guild: i
   } = null != t ? t : {}, l = {};
   if ((null == i ? true : i.splash) != null) {
-    let e = f.ZP.getGuildSplashURL({
+    let e = g.ZP.getGuildSplashURL({
       id: i.id,
       splash: i.splash
     });
@@ -228,7 +228,7 @@ function w(e) {
   return i.useEffect(() => {
     (0, h.e)("invite_mobile")
   }, []), i.useEffect(() => {
-    null != l && l.state === j.r2o.RESOLVED && g.default.track(j.rMx.INVITE_VIEWED, {
+    null != l && l.state === j.r2o.RESOLVED && f.default.track(j.rMx.INVITE_VIEWED, {
       invite_code: t,
       friends_count: null == l ? true : l.friends_count
     }, {
@@ -239,7 +239,7 @@ function w(e) {
     onAcceptInvite: e => {
       ! function(e, t, n) {
         var r, i, l;
-        null == e || e.preventDefault(), g.default.track(j.rMx.INVITE_APP_OPENED, {
+        null == e || e.preventDefault(), f.default.track(j.rMx.INVITE_APP_OPENED, {
           invite_code: (0, x.jX)(t),
           guild_id: null == n || null == (r = n.guild) ? true : r.id,
           channel_id: null == n || null == (i = n.channel) ? true : i.id,

@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk711322 = require("./711322.js"),
   Chunk451429 = require("./451429.js");
 
-function b(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var a = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(a);
@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var a = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,13 +53,13 @@ let f = {
     let {
       default: e
     } = await require.e("77370").then(require.bind(require, 83950));
-    return t => (0, n.jsx)(e, b({}, t))
+    return t => (0, n.jsx)(e, v({}, t))
   },
   EmailEnterModal: async () => {
     let {
       default: e
     } = await require.e("93288").then(require.bind(require, 396410));
-    return t => (0, n.jsx)(e, v(b({}, t), {
+    return t => (0, n.jsx)(e, b(v({}, t), {
       headerText: x.intl.string(x.t.ZLRYGR),
       confirmButtonText: x.intl.string(x.t.PDTjLC),
       confirmButtonVariant: "primary"
@@ -69,7 +69,7 @@ let f = {
     let {
       default: e
     } = await require.e("94566").then(require.bind(require, 965072));
-    return t => (0, n.jsx)(e, v(b({}, t), {
+    return t => (0, n.jsx)(e, b(v({}, t), {
       headerText: x.intl.string(x.t.H3Q7U1),
       onFormSubmit: () => {},
       onResend: () => {},
@@ -84,7 +84,7 @@ let f = {
     let {
       default: e
     } = await require.e("22447").then(require.bind(require, 686768));
-    return t => (0, n.jsx)(e, v(b({}, t), {
+    return t => (0, n.jsx)(e, b(v({}, t), {
       entryPoint: s.cU.DEV_TOOLS_AGE_VERIFICATION_RETRY_MODAL
     }))
   },
@@ -92,7 +92,7 @@ let f = {
     let {
       default: e
     } = await Promise.all([require.e("71172"), require.e("1337"), require.e("26328")]).then(require.bind(require, 746882));
-    return t => (0, n.jsx)(e, v(b({}, t), {
+    return t => (0, n.jsx)(e, b(v({}, t), {
       source: m.L0.NSFW_SERVER
     }))
   },
@@ -100,7 +100,7 @@ let f = {
     let {
       default: e
     } = await require.e("75435").then(require.bind(require, 751744));
-    return t => (0, n.jsx)(e, v(b({}, t), {
+    return t => (0, n.jsx)(e, b(v({}, t), {
       classificationId: "123"
     }))
   },
@@ -108,7 +108,7 @@ let f = {
     let {
       default: e
     } = await require.e("28382").then(require.bind(require, 537623));
-    return t => (0, n.jsx)(e, v(b({}, t), {
+    return t => (0, n.jsx)(e, b(v({}, t), {
       guildId: "123",
       messageId: null
     }))

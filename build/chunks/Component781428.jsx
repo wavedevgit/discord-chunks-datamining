@@ -633,7 +633,7 @@ class X extends(r = Chunk647438.PureComponent) {
           invite: this.props.invite
         })
       } catch (t) {
-        let e = (0, f.p)(t);
+        let e = (0, g.p)(t);
         this.setState({
           errors: e
         })
@@ -710,7 +710,7 @@ class X extends(r = Chunk647438.PureComponent) {
           })
         })))
       } catch (t) {
-        let e = (0, f.p)(t);
+        let e = (0, g.p)(t);
         this.setState({
           errors: e
         })

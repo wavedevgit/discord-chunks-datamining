@@ -23,7 +23,7 @@ function f(e) {
     channelId: p,
     loading: b = false,
     disableInteraction: O = false
-  } = e, m = (0, c.Z)(t.applicationId), y = m.length > 0, j = l.default.getCurrentUser(), v = (null == j ? true : j.id) === r;
+  } = e, m = (0, c.Z)(t.applicationId), j = m.length > 0, y = l.default.getCurrentUser(), v = (null == y ? true : y.id) === r;
   return b ? (0, n.jsx)("div", {
     className: u.loadingCover
   }) : (0, n.jsxs)("div", {
@@ -34,13 +34,13 @@ function f(e) {
       applicationId: t.applicationId,
       userId: r,
       disableInteraction: O,
-      className: y ? d.socialProofBackdrop : true
+      className: j ? d.socialProofBackdrop : true
     }), !O && v && (0, n.jsx)(o.Z, {
       game: t,
       widgetType: f,
       className: d.removeGameButton,
       iconSize: "xs"
-    }), !O && y && (0, n.jsx)(i.Z, {
+    }), !O && j && (0, n.jsx)(i.Z, {
       label: s.intl.formatToPlainString(s.t.ujhJdH, {
         numFriends: m.length
       }),

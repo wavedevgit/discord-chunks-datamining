@@ -91,8 +91,8 @@ function S(e) {
   let {
     offer: m,
     offerOptions: p,
-    forceRefetch: b
-  } = e, [v, _] = r.useState(false), [y, C] = r.useState(false), [T, O] = r.useState(false), [E, S] = r.useState(false);
+    forceRefetch: v
+  } = e, [b, _] = r.useState(false), [y, C] = r.useState(false), [T, O] = r.useState(false), [E, S] = r.useState(false);
   r.useEffect(() => {
     T && S(true);
     let e = setTimeout(() => {
@@ -122,7 +122,7 @@ function S(e) {
     U = async () => {
       O(true), D ? await F({
         expiresAt: null
-      }) : await (0, d.ab)(m), b(), O(false)
+      }) : await (0, d.ab)(m), v(), O(false)
     }, F = async e => {
       O(true);
       try {
@@ -153,11 +153,11 @@ function S(e) {
           rejectWithError: true
         })
       } finally {
-        b(), O(false)
+        v(), O(false)
       }
     };
   r.useEffect(() => {
-    if (v) {
+    if (b) {
       let e = setTimeout(() => {
         _(false)
       }, 3e3);
@@ -173,7 +173,7 @@ function S(e) {
         clearTimeout(e)
       }
     }
-  }, [v, y]);
+  }, [b, y]);
   let B = "Active";
   return D && (B = "Acked"), L && (B = "Expired"), (0, n.jsxs)("div", {
     className: i()(j.card, M ? j.gradientWrapperTier0 : j.gradientWrapperTier2),
@@ -193,7 +193,7 @@ function S(e) {
         variant: "eyebrow",
         color: "always-white",
         children: ["Offer: ", P]
-      }), v ? (0, n.jsx)(c.dz2, {
+      }), b ? (0, n.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
         className: j.icon
@@ -280,7 +280,7 @@ function S(e) {
       })]
     }), (0, n.jsx)(c.P3F, {
       onClick: async () => {
-        O(true), await N(P, "trial"), b(), O(false)
+        O(true), await N(P, "trial"), v(), O(false)
       },
       children: (0, n.jsx)(c.XHJ, {
         size: "md",
@@ -302,16 +302,16 @@ function P(e) {
     offer: l,
     offerOptions: o,
     forceRefetch: u
-  } = e, [m, h] = r.useState(false), [p, b] = r.useState(false), [v, g] = r.useState(false), [_, y] = r.useState(false);
+  } = e, [m, h] = r.useState(false), [p, v] = r.useState(false), [b, g] = r.useState(false), [_, y] = r.useState(false);
   r.useEffect(() => {
-    v && y(true);
+    b && y(true);
     let e = setTimeout(() => {
       y(false)
     }, 500);
     return () => {
       clearTimeout(e)
     }
-  }, [v]);
+  }, [b]);
   let {
     id: C,
     expires_at: T,
@@ -355,7 +355,7 @@ function P(e) {
     }
     if (p) {
       let e = setTimeout(() => {
-        b(false)
+        v(false)
       }, 3e3);
       return () => {
         clearTimeout(e)
@@ -402,7 +402,7 @@ function P(e) {
     }), (0, n.jsxs)(c.P3F, {
       className: i()(j.row, j.idRow),
       onClick: () => {
-        (0, x.JG)(E, () => b(true))
+        (0, x.JG)(E, () => v(true))
       },
       children: [(0, n.jsxs)(c.Text, {
         variant: "eyebrow",
@@ -459,7 +459,7 @@ function P(e) {
       })]
     }), (0, n.jsx)("div", {
       className: i()(j.loadingContainer, {
-        [j.isLoading]: v || _
+        [j.isLoading]: b || _
       }),
       children: (0, n.jsx)(c.$jN, {})
     })]

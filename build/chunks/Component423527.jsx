@@ -193,7 +193,7 @@ class eu extends(r = Chunk647438.PureComponent) {
       giftCode: o,
       onRegister: c,
       usernameSuggestion: u
-    } = this.props, d = null != Chunk120356 ? Chunk120356.code : null, h = null != Chunk593473 ? Chunk593473.skuId : null, p = Chunk882037.MD.getState(), m = (0, Chunk624138.Ew)(Chunk990547) ? null : exports === Chunk990547, f = Chunk188785.a ? await (0, Chunk692483.K)(exports) : exports, _ = Chunk188785.a ? await (0, Chunk692483.K)(require) : require;
+    } = this.props, d = null != Chunk120356 ? Chunk120356.code : null, h = null != Chunk593473 ? Chunk593473.skuId : null, p = Chunk882037.MD.getState(), m = (0, Chunk624138.Ew)(Chunk990547) ? null : exports === Chunk990547, g = Chunk188785.a ? await (0, Chunk692483.K)(exports) : exports, _ = Chunk188785.a ? await (0, Chunk692483.K)(require) : require;
     Chunk585483.S.dispatch(Chunk981631.CkL.WAVE_EMPHASIZE), this.setState({
       registering: true,
       apiErrors: {}
@@ -471,8 +471,8 @@ class eu extends(r = Chunk647438.PureComponent) {
       globalNameFocused: d,
       emailClientError: h,
       usernameClientError: m,
-      passwordClientError: g,
-      dateOfBirthClientError: f,
+      passwordClientError: f,
+      dateOfBirthClientError: g,
       registering: _,
       apiErrors: {
         email: b,
@@ -593,7 +593,7 @@ class eu extends(r = Chunk647438.PureComponent) {
           password: e,
           passwordClientError: 0 === e.length ? en.intl.string(en.t.EkokLy) : null
         }),
-        error: null != g ? g : ec(j),
+        error: null != f ? f : ec(j),
         type: "password",
         autoComplete: "new-password",
         setRef: e => {
@@ -608,7 +608,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         name: "date_of_birth",
         onChange: this.handleBirthdayChange,
         ref: this.dateOfBirthRef,
-        error: null != f ? f : ec(y),
+        error: null != g ? g : ec(y),
         value: u,
         required: true,
         onFocus: this.trackInputFocus,
@@ -779,10 +779,10 @@ class eu extends(r = Chunk647438.PureComponent) {
 }
 
 function ed(e) {
-  let t = (0, d.cj)([G.Z, F.default, f.Z, R.Z, Z.Z], () => ({
+  let t = (0, d.cj)([G.Z, F.default, g.Z, R.Z, Z.Z], () => ({
       consentRequired: G.Z.getAuthenticationConsentRequired(),
       authenticated: F.default.isAuthenticated(),
-      isUnderage: f.Z.isUnderageAnonymous(),
+      isUnderage: g.Z.isUnderageAnonymous(),
       country: R.Z.getCountryCode(),
       hasLoggedInAccounts: Z.Z.getHasLoggedInAccounts()
     })),

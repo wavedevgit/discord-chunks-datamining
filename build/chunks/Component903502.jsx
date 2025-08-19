@@ -29,7 +29,7 @@ let h = [{
 }];
 
 function p() {
-  let [e, t] = Chunk647438.useState(null), [a, p] = Chunk647438.useState(0), [b, v] = Chunk647438.useState(1e3), [f, g] = Chunk647438.useState(0), j = (0, Chunk442837.e7)([Chunk115470.Z], () => {
+  let [e, t] = Chunk647438.useState(null), [a, p] = Chunk647438.useState(0), [v, b] = Chunk647438.useState(1e3), [f, g] = Chunk647438.useState(0), j = (0, Chunk442837.e7)([Chunk115470.Z], () => {
     var t;
     return null === module ? null : null != (t = Chunk115470.Z.getFeedbackConfig(Chunk531578.nw[module])) ? exports : Chunk178635.R[Chunk531578.nw[module]]
   }), _ = Object.entries(Chunk531578.nw), y = _.slice(_.length / 2).map(e => {
@@ -94,9 +94,9 @@ function p() {
           onChange: e => p(parseFloat(e))
         }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
           options: h,
-          value: b,
+          value: v,
           onChange: e => {
-            v(e)
+            b(e)
           },
           popoutLayerContext: Chunk246992.O$
         })]
@@ -143,7 +143,7 @@ function p() {
         onClick: () => void(null != j && Chunk570140.Z.dispatch({
           type: "FEEDBACK_OVERRIDE_SET",
           feedbackType: j.feedbackType,
-          cooldown: require * b,
+          cooldown: require * v,
           chance: f / 100
         })),
         disabled: !C

@@ -85,7 +85,7 @@ class v extends(r = Chunk647438.PureComponent) {
         className: x.marginTop8,
         color: d.zx.Colors.LINK,
         look: d.zx.Looks.LINK,
-        onClick: () => r(g.Z5c.SETTINGS("notifications", f.vG)),
+        onClick: () => r(f.Z5c.SETTINGS("notifications", g.vG)),
         children: _.intl.string(_.t.YYTira)
       })]
     })

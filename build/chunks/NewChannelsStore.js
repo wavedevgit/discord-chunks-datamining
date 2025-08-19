@@ -1,4 +1,4 @@
-/** Chunk was on 81498 **/
+/** Chunk was on 4756 **/
 /** chunk id: 22082, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -48,15 +48,15 @@ function _(e) {
   })), S[e] = Date.now())
 }
 
-function w() {
+function I() {
   Chunk709054.default.keys(O).forEach(e => {
     let t = O[e];
     O[e] = new Set([...t].filter(t => !v.ZP.isChannelOrParentOptedIn(e, t)))
   })
 }
-class I extends(i = Chunk442837.ZP.Store) {
+class w extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk984933.ZP, Chunk314897.default, Chunk271383.ZP, Chunk9156.ZP, Chunk306680.ZP, Chunk581883.Z), this.syncWith([Chunk9156.ZP], w)
+    this.waitFor(Chunk984933.ZP, Chunk314897.default, Chunk271383.ZP, Chunk9156.ZP, Chunk306680.ZP, Chunk581883.Z), this.syncWith([Chunk9156.ZP], I)
   }
   getNewChannelIds(e) {
     var t;
@@ -68,13 +68,13 @@ class I extends(i = Chunk442837.ZP.Store) {
     let i = g.Z.getGuild(e);
     return null != i && !!i.features.has(b.oNc.COMMUNITY) && (null != e && null == O[e] && _(e), (null == (n = O[e]) ? true : n.has(t)) && null == f.ZP.getTrackedAckMessageId(t))
   }
-}(r = "displayName") in I ? Object.defineProperty(I, r, {
+}(r = "displayName") in w ? Object.defineProperty(w, r, {
   value: "NewChannelsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : I[r] = "NewChannelsStore";
-let j = new I(Chunk570140.Z, {
+}) : w[r] = "NewChannelsStore";
+let j = new w(Chunk570140.Z, {
   BULK_CLEAR_RECENTS: function(e) {
     let {
       guildId: t,

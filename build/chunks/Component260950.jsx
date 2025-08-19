@@ -145,7 +145,7 @@ function N() {
           variant: "heading-lg/semibold",
           className: Chunk451429.header,
           children: "Previous Subscriptions"
-        }), E.map(e => (0, n.jsx)(v.Z, {
+        }), E.map(e => (0, n.jsx)(b.Z, {
           subscription: e,
           onUpdated: O
         }, e.id))]

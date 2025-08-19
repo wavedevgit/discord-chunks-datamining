@@ -1,15 +1,18 @@
 /** Chunk was on 27069 **/
 /** chunk id: 778414, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  C: () => x,
-  Z: () => j
-});
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk296009 = require("./296009.js"),
+  C: () => S,
+  Z: () => P
+}), require("./388685.js");
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk296009 = require("./296009.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk355467 = require("./355467.js"),
+  Chunk981312 = require("./981312.js"),
   Chunk314897 = require("./314897.js"),
+  Chunk351402 = require("./351402.js"),
   Chunk206599 = require("./206599.js"),
   Chunk747101 = require("./747101.js"),
   Chunk517157 = require("./517157.js"),
@@ -19,9 +22,10 @@ var Chunk296009 = require("./296009.js"),
   Chunk455731 = require("./455731.jsx"),
   Chunk430790 = require("./430790.jsx"),
   Chunk795990 = require("./795990.jsx"),
+  Chunk388032 = require("./388032.jsx"),
   Chunk830202 = require("./830202.js");
 
-function y(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -40,7 +44,7 @@ function y(e) {
   return e
 }
 
-function j(e) {
+function P(e) {
   var {
     widget: t
   } = e, r = function(e, t) {
@@ -59,20 +63,20 @@ function j(e) {
     return l
   }(e, ["widget"]);
   switch (t.type) {
-    case l.l.FAVORITE_GAMES:
-      return (0, n.jsx)(f.Z, y({
+    case i.l.FAVORITE_GAMES:
+      return (0, n.jsx)(O.Z, E({
         widget: t
       }, r));
-    case l.l.CURRENT_GAMES:
-      return (0, n.jsx)(d.Z, y({
+    case i.l.CURRENT_GAMES:
+      return (0, n.jsx)(b.Z, E({
         widget: t
       }, r));
-    case l.l.WANT_TO_PLAY_GAMES:
-      return (0, n.jsx)(p.Z, y({
+    case i.l.WANT_TO_PLAY_GAMES:
+      return (0, n.jsx)(j.Z, E({
         widget: t
       }, r));
-    case l.l.PLAYED_GAMES:
-      return (0, n.jsx)(g.Z, y({
+    case i.l.PLAYED_GAMES:
+      return (0, n.jsx)(m.Z, E({
         widget: t
       }, r));
     default:
@@ -80,30 +84,49 @@ function j(e) {
   }
 }
 
-function v(e) {
-  let {
-    user: t,
-    guildId: r,
-    channelId: l
-  } = e, a = (0, u.Z)(t.id), {
-    widgets: d,
-    isGameFetching: f
-  } = (0, s.Z)(a), g = (0, i.e7)([o.default], () => o.default.getId() === t.id), p = 0 === d.length && g;
-  return ((0, c.J)(g, d), p) ? (0, n.jsx)(O.Z, {}) : (0, n.jsxs)(n.Fragment, {
-    children: [d.map(e => (0, n.jsx)(j, {
-      widget: e,
-      user: t,
-      guildId: r,
-      channelId: l,
-      isGameFetching: f
-    }, e.id)), g && (0, n.jsx)(b.Z, {})]
+function w() {
+  return (0, Chunk951288.jsxs)("div", {
+    className: Chunk830202.ukTeenDisclaimer,
+    children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
+      size: "xs"
+    }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      "aria-label": Chunk388032.intl.string(Chunk388032.t["7blcz8"]),
+      variant: "text-xs/normal",
+      color: "text-muted",
+      children: Chunk388032.intl.string(Chunk388032.t["7blcz8"])
+    })]
   })
 }
 
-function x(e) {
-  return (0, n.jsx)(a.Ttm, {
-    className: m.scroller,
+function _(e) {
+  let {
+    user: t,
+    guildId: r,
+    channelId: i
+  } = e, o = (0, p.Z)(t.id), {
+    widgets: b,
+    isGameFetching: O
+  } = (0, g.Z)(o), m = (0, a.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
+    let [e, t] = (0, a.Wu)([d.Z], () => [d.Z.ipCountryCode, d.Z.ipCountryCodeRequest]), r = (0, s.U)();
+    return l.useEffect(() => {
+      null == e && null == t && r && (0, c.GE)()
+    }, [e, t, r]), "GB" === e && r
+  })(), x = 0 === b.length && m;
+  return ((0, f.J)(m, b), x) ? (0, n.jsx)(v.Z, {}) : (0, n.jsxs)(n.Fragment, {
+    children: [j && (0, n.jsx)(w, {}), b.map(e => (0, n.jsx)(P, {
+      widget: e,
+      user: t,
+      guildId: r,
+      channelId: i,
+      isGameFetching: O
+    }, e.id)), m && (0, n.jsx)(y.Z, {})]
+  })
+}
+
+function S(e) {
+  return (0, n.jsx)(o.Ttm, {
+    className: h.scroller,
     fade: true,
-    children: (0, n.jsx)(v, y({}, e))
+    children: (0, n.jsx)(_, E({}, e))
   })
 }

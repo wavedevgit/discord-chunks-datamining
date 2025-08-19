@@ -153,10 +153,10 @@ class K extends Chunk647438.PureComponent {
     }({}, a, n))
   }
   renderSpinner(e) {
-    return (0, r.jsxs)(g.ZP, {
-      children: [(0, r.jsx)(g.Dx, {
+    return (0, r.jsxs)(f.ZP, {
+      children: [(0, r.jsx)(f.Dx, {
         children: e
-      }), (0, r.jsx)(g.Hh, {})]
+      }), (0, r.jsx)(f.Hh, {})]
     })
   }
   renderInvalidInvite() {
@@ -196,11 +196,11 @@ class K extends Chunk647438.PureComponent {
   }
   renderAppOpened(e) {
     let t = null != e ? e : this.handleContinue;
-    return (0, r.jsxs)(g.ZP, {
-      children: [(0, r.jsx)(g.Dx, {
+    return (0, r.jsxs)(f.ZP, {
+      children: [(0, r.jsx)(f.Dx, {
         className: U.marginBottom8,
         children: B.intl.string(B.t.csrAMD)
-      }), (0, r.jsx)(g.DK, {
+      }), (0, r.jsx)(f.DK, {
         children: B.intl.string(B.t["m1+IBg"])
       }), this.renderButton(B.intl.string(B.t.fIv16O), () => t())]
     })
@@ -341,12 +341,12 @@ class K extends Chunk647438.PureComponent {
           invite: i
         } = t.props,
         l = null != i.guild_scheduled_event;
-      return M.KO ? (0, r.jsx)(g.zx, {
+      return M.KO ? (0, r.jsx)(f.zx, {
         className: l ? U.marginTop20 : U.marginTop40,
         onClick: n,
-        color: l ? g.zx.Colors.GREEN : g.zx.Colors.BRAND,
+        color: l ? f.zx.Colors.GREEN : f.zx.Colors.BRAND,
         children: e
-      }) : (0, r.jsx)(g.v6, {
+      }) : (0, r.jsx)(f.v6, {
         className: U.marginTop40
       })
     })
