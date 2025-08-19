@@ -2,18 +2,18 @@
 /** chunk id: 110560, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  loadVideoQuestModal: () => H,
-  maybeShowSurveyForQuest: () => Z,
-  navigateToQuestHome: () => F,
-  openAppWithQuest: () => K,
-  openDisclosureModal: () => V,
-  openPushToPhoneModal: () => z,
-  openQuestInGameRewardModal: () => U,
-  openQuestMinorEnrollmentBlockModal: () => B,
-  openQuestOrbsRewardModal: () => G,
-  openQuestsNitroRewardModal: () => j,
-  openQuestsRewardCodeModal: () => k,
-  openVideoQuestModal: () => Y
+  loadVideoQuestModal: () => Y,
+  maybeShowSurveyForQuest: () => H,
+  navigateToQuestHome: () => Z,
+  openAppWithQuest: () => z,
+  openDisclosureModal: () => F,
+  openPushToPhoneModal: () => q,
+  openQuestInGameRewardModal: () => G,
+  openQuestMinorEnrollmentBlockModal: () => V,
+  openQuestOrbsRewardModal: () => B,
+  openQuestsNitroRewardModal: () => U,
+  openQuestsRewardCodeModal: () => j,
+  openVideoQuestModal: () => W
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -34,6 +34,7 @@ var Chunk772848 = require("./772848.js"),
   Chunk569984 = require("./569984.js"),
   Chunk497505 = require("./497505.js"),
   Chunk184299 = require("./184299.js"),
+  Chunk530691 = require("./530691.js"),
   Chunk66340 = require("./66340.js"),
   Chunk862847 = require("./862847.js"),
   Chunk5881 = require("./5881.js"),
@@ -44,7 +45,7 @@ var Chunk772848 = require("./772848.js"),
   Chunk981631 = require("./981631.js"),
   Chunk49898 = require("./49898.js");
 
-function P(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -53,20 +54,20 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      P(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
 }
 
-function D(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -77,15 +78,15 @@ function D(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = "in-app",
-  M = "Discord Widget";
+let M = "in-app",
+  k = "Discord Widget";
 
-function k(e) {
+function j(e) {
   let {
     questId: t,
     questContent: i,
@@ -98,7 +99,7 @@ function k(e) {
     let {
       default: e
     } = await Promise.all([n.e("37447"), n.e("64838"), n.e("27458"), n.e("21046"), n.e("89035")]).then(n.bind(n, 985866));
-    return n => (0, r.jsx)(e, L(w({}, n), {
+    return n => (0, r.jsx)(e, x(D({}, n), {
       questId: t,
       questContentPosition: a,
       questContent: i,
@@ -109,25 +110,25 @@ function k(e) {
   })
 }
 
-function j(e, t) {
+function U(e, t) {
   var i;
   (null == (i = e.userStatus) ? true : i.claimedAt) == null ? (0, s.ZDy)(async () => {
     let {
       default: i
     } = await Promise.all([n.e("8016"), n.e("62332"), n.e("39562")]).then(n.bind(n, 824393));
-    return n => (0, r.jsx)(i, L(w({}, n), {
+    return n => (0, r.jsx)(i, x(D({}, n), {
       quest: e,
       location: t
     }))
   }) : (0, u.$)()
 }
 
-function U(e, t, i) {
+function G(e, t, i) {
   (0, s.ZDy)(async () => {
     let {
       default: a
     } = await n.e("88938").then(n.bind(n, 390238));
-    return n => (0, r.jsx)(a, L(w({}, n), {
+    return n => (0, r.jsx)(a, x(D({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -135,24 +136,24 @@ function U(e, t, i) {
   })
 }
 
-function G(e, t) {
+function B(e, t) {
   (0, s.ZDy)(async () => {
     let {
       default: i
     } = await Promise.all([n.e("66317"), n.e("7121")]).then(n.bind(n, 383294));
-    return n => (0, r.jsx)(i, L(w({}, n), {
+    return n => (0, r.jsx)(i, x(D({}, n), {
       quest: e,
       location: t
     }))
   })
 }
 
-function B(e, t, i) {
+function V(e, t, i) {
   (0, s.ZDy)(async () => {
     let {
       default: a
     } = await n.e("58641").then(n.bind(n, 828664));
-    return n => (0, r.jsx)(a, L(w({}, n), {
+    return n => (0, r.jsx)(a, x(D({}, n), {
       quest: e,
       location: t,
       sourceQuestContent: i
@@ -160,7 +161,7 @@ function B(e, t, i) {
   })
 }
 
-function V(e, t) {
+function F(e, t) {
   (0, h._3)({
     questId: e.id,
     questContent: t.content,
@@ -172,21 +173,21 @@ function V(e, t) {
     let {
       default: i
     } = await n.e("4266").then(n.bind(n, 316210));
-    return n => (0, r.jsx)(i, L(w({}, n), {
+    return n => (0, r.jsx)(i, x(D({}, n), {
       questContent: t.content,
       quest: e
     }))
   })
 }
 
-function F() {
+function Z() {
   let {
     fromContent: e,
     questId: t
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
   (0, Chunk150560.Z.getState().setUtmCurrentContext)({
-    utmSourceCurrent: M,
-    utmMediumCurrent: x,
+    utmSourceCurrent: k,
+    utmMediumCurrent: M,
     utmCampaignCurrent: exports,
     utmContentCurrent: Object.keys(Chunk497505.jn).find(t => b.jn[t] === e)
   });
@@ -196,28 +197,28 @@ function F() {
   }), (0, Chunk37234.xf)(), (0, Chunk703656.uL)(Chunk981631.Z5c.QUEST_HOME + require)
 }
 
-function Z(e) {
-  let t = (0, I.T)({
+function H(e) {
+  let t = (0, T.T)({
       quest: e
     }),
     n = {
-      location: N.dr.QUESTS_BAR
+      location: C.dr.QUESTS_BAR
     };
-  if (!(0, v.j)(n)) return;
-  let r = (0, T.Z)({
+  if (!(0, I.j)(n)) return;
+  let r = (0, S.Z)({
     entityName: e.config.messages.gameTitle
   });
-  t.log("Showing survey ".concat(r.id)), (0, S.C)({
+  t.log("Showing survey ".concat(r.id)), (0, A.C)({
     questId: e.id,
     survey: r
   })
 }
 
-function H() {
+function Y() {
   return Promise.all([require.e("66816"), require.e("27458"), require.e("32249"), require.e("89828")]).then(require.bind(require, 536687))
 }
 
-function Y(e) {
+function W(e) {
   var t;
   let {
     quest: n,
@@ -226,15 +227,27 @@ function Y(e) {
     sourceQuestContentCTA: l,
     autoplay: c = true,
     skipEnrollmentCheck: u = false
-  } = e, d = (0, i.Z)();
-  if ((0, O.D)(N.dr.VIDEO_MODAL) && !u && (null == (t = n.userStatus) ? true : t.enrolledAt) == null && !(0, m.zi)(n)) {
+  } = e;
+  if ((0, m.HJ)(n)) {
+    let e = n.config.features.includes(C.S7.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE),
+      {
+        enabled: t
+      } = O.S.getCurrentConfig({
+        location: C.dr.VIDEO_MODAL
+      }, {
+        autoTrackExposure: e
+      });
+    if (t && e) return void q(n)
+  }
+  let d = (0, i.Z)();
+  if ((0, v.D)(C.dr.VIDEO_MODAL) && !u && (null == (t = n.userStatus) ? true : t.enrolledAt) == null && !(0, m.zi)(n)) {
     E.Z.isEnrolling(n.id) || (0, g.AH)(n.id, {
       questContent: a,
       questContentCTA: h.jZ.ACCEPT_QUEST,
       sourceQuestContent: o
     });
     let e = y.ZP.getState().getVideoProgress(n.id);
-    null != e && e.timestampSec > 1 && ((0, g.lx)(n.id), _.default.track(C.rMx.QUEST_VIDEO_ENROLLMENT_RETRY_ATTEMPTED, {
+    null != e && e.timestampSec > 1 && ((0, g.lx)(n.id), _.default.track(R.rMx.QUEST_VIDEO_ENROLLMENT_RETRY_ATTEMPTED, {
       quest_id: n.id,
       source_quest_content: (0, h._b)(o),
       source_quest_content_cta: l,
@@ -243,8 +256,8 @@ function Y(e) {
   }(0, s.ZDy)(async () => {
     let {
       default: e
-    } = await H();
-    return t => (0, r.jsx)(e, L(w({}, t), {
+    } = await Y();
+    return t => (0, r.jsx)(e, x(D({}, t), {
       openStartClockTime: performance.now(),
       questId: n.id,
       autoplay: c,
@@ -262,7 +275,7 @@ function Y(e) {
   })
 }
 
-function W(e) {
+function K(e) {
   var t;
   let n = null == (t = platform.os) ? true : t.family,
     r = "quest";
@@ -279,27 +292,27 @@ function W(e) {
   return "discord://"
 }
 
-function K(e) {
-  let t = W(e),
+function z(e) {
+  let t = K(e),
     n = (0, a.zS)(t);
-  null != n && _.default.track(C.rMx.DEEP_LINK_CLICKED, {
+  null != n && _.default.track(R.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, o.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
   }), p.Z.launch(t, t => {
     t || (0, d.dL)({
-      pathname: C.Z5c.QUEST_HOME,
+      pathname: R.Z5c.QUEST_HOME,
       hash: e
     })
   })
 }
 
-function z(e) {
+function q(e) {
   (0, s.ZDy)(async () => {
     let {
       default: t
     } = await Promise.all([n.e("20193"), n.e("33628")]).then(n.bind(n, 570387));
-    return n => (0, r.jsx)(t, L(w({}, n), {
+    return n => (0, r.jsx)(t, x(D({}, n), {
       questId: e.id,
       questName: e.config.messages.questName
     }))
