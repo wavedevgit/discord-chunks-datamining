@@ -2,7 +2,7 @@
 /** chunk id: 778414, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   C: () => x,
-  Z: () => y
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,7 +10,7 @@ var Chunk296009 = require("./296009.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk314897 = require("./314897.js"),
-  Chunk117029 = require("./117029.js"),
+  Chunk206599 = require("./206599.js"),
   Chunk747101 = require("./747101.js"),
   Chunk517157 = require("./517157.js"),
   Chunk985748 = require("./985748.jsx"),
@@ -21,7 +21,7 @@ var Chunk296009 = require("./296009.js"),
   Chunk795990 = require("./795990.jsx"),
   Chunk830202 = require("./830202.js");
 
-function j(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -40,7 +40,7 @@ function j(e) {
   return e
 }
 
-function y(e) {
+function j(e) {
   var {
     widget: t
   } = e, r = function(e, t) {
@@ -60,19 +60,19 @@ function y(e) {
   }(e, ["widget"]);
   switch (t.type) {
     case l.l.FAVORITE_GAMES:
-      return (0, n.jsx)(f.Z, j({
+      return (0, n.jsx)(f.Z, y({
         widget: t
       }, r));
     case l.l.CURRENT_GAMES:
-      return (0, n.jsx)(d.Z, j({
+      return (0, n.jsx)(d.Z, y({
         widget: t
       }, r));
     case l.l.WANT_TO_PLAY_GAMES:
-      return (0, n.jsx)(p.Z, j({
+      return (0, n.jsx)(p.Z, y({
         widget: t
       }, r));
     case l.l.PLAYED_GAMES:
-      return (0, n.jsx)(g.Z, j({
+      return (0, n.jsx)(g.Z, y({
         widget: t
       }, r));
     default:
@@ -90,7 +90,7 @@ function v(e) {
     isGameFetching: f
   } = (0, s.Z)(a), g = (0, i.e7)([o.default], () => o.default.getId() === t.id), p = 0 === d.length && g;
   return ((0, c.J)(g, d), p) ? (0, n.jsx)(O.Z, {}) : (0, n.jsxs)(n.Fragment, {
-    children: [d.map(e => (0, n.jsx)(y, {
+    children: [d.map(e => (0, n.jsx)(j, {
       widget: e,
       user: t,
       guildId: r,
@@ -104,6 +104,6 @@ function x(e) {
   return (0, n.jsx)(a.Ttm, {
     className: m.scroller,
     fade: true,
-    children: (0, n.jsx)(v, j({}, e))
+    children: (0, n.jsx)(v, y({}, e))
   })
 }

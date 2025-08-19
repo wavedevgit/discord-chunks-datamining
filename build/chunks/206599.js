@@ -1,5 +1,5 @@
 /** Chunk was on 27069 **/
-/** chunk id: 117029, original params: e,t,r (module,exports,require) **/
+/** chunk id: 206599, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   J: () => d,
   K: () => u
@@ -43,14 +43,14 @@ function u(e) {
       gameDataMap: O,
       isGameFetching: m
     } = (0, s.F)(p),
-    [j, y] = n.useState([]),
+    [y, j] = n.useState([]),
     v = n.useCallback(e => i.Z.noDataAvailable(e), []),
     x = (r = p.map(e => m(e)), n.useMemo(() => r.join("\x1f"), [r]));
   return n.useEffect(() => {
     let t = p.filter(e => v(e));
     t.length > 0 && a(t, e)
   }, [O, x, p, e, a, v]), n.useEffect(() => {
-    y(p.map(e => {
+    j(p.map(e => {
       let t = O[e];
       return {
         applicationId: e,
@@ -59,7 +59,7 @@ function u(e) {
       }
     }))
   }, [p, O, e]), {
-    games: j,
+    games: y,
     isGameFetching: m,
     onAddGame: b
   }

@@ -103,6 +103,15 @@ let f = {
     return t => (0, n.jsx)(e, v(b({}, t), {
       classificationId: "123"
     }))
+  },
+  AutomodRaidResolveModal: async () => {
+    let {
+      default: e
+    } = await require.e("28382").then(require.bind(require, 537623));
+    return t => (0, n.jsx)(e, v(b({}, t), {
+      guildId: "123",
+      messageId: null
+    }))
   }
 };
 

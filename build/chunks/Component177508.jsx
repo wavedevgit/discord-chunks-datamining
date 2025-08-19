@@ -1351,7 +1351,6 @@ function eh() {
       body: "Click the video to view it in the media viewer!",
       assetUrl: "https://cdn.discordapp.com/assets/server-subscription-tier-template/upsell.mov",
       badge: "new",
-      gradientColor: "blue",
       action: {
         text: "Learn More",
         onClick: ex
@@ -1369,7 +1368,6 @@ function eh() {
       previewUrl: "https://cdn.discordapp.com/assets/server_products/storefront/default-header.mov",
       assetUrl: "https://cdn.discordapp.com/assets/server-subscription-tier-template/upsell.mov",
       badge: "new",
-      gradientColor: "blue",
       action: {
         text: "Learn More",
         onClick: ex
@@ -1386,7 +1384,6 @@ function eh() {
       body: "Click the video to view it in the media viewer!",
       assetUrl: "https://placehold.co/232x131.png",
       badge: "new",
-      gradientColor: "blue",
       action: {
         text: "Learn More",
         onClick: ex

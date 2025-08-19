@@ -23,15 +23,15 @@ function b(e) {
     children: i,
     disableInteraction: b,
     className: O
-  } = e, [m, j] = l.useState(false), y = (0, s.Dt)(), v = (0, c.e7)([u.default], () => u.default.getId() === t), x = (0, d.kQ)(r), h = l.useCallback(() => {
-    j(true)
+  } = e, [m, y] = l.useState(false), j = (0, s.Dt)(), v = (0, c.e7)([u.default], () => u.default.getId() === t), x = (0, d.kQ)(r), h = l.useCallback(() => {
+    y(true)
   }, []);
   return (0, n.jsxs)("section", {
     className: a()(p.container, O),
-    "aria-labelledby": y,
+    "aria-labelledby": j,
     children: [(0, n.jsx)(f.Z, {
       userId: t,
-      headingId: y,
+      headingId: j,
       widget: r,
       disableInteraction: b
     }), (0, n.jsxs)(o.y5, {

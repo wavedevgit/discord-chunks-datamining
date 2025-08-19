@@ -559,7 +559,9 @@ function eC(e) {
 }
 
 function eR(e) {
-  X(e.pid) && Q(e.pid, "successfullyShown", true), F(e.pid, "overlay_successfully_shown");
+  X(e.pid) && Q(e.pid, "successfullyShown", true), F(e.pid, "overlay_successfully_shown", {
+    pid: e.pid
+  });
   let t = W(e.pid);
   return null == t || (s.Z.updateTrackedGame(e.pid, t), true)
 }

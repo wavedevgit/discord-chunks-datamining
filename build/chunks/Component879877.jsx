@@ -21,13 +21,13 @@ function p(e) {
     isCurrentUser: r,
     widgetType: i,
     applicationId: a
-  } = e, c = null == t ? true : t.filter(e => null != (0, d.zK)(e)), s = (0, l.useRef)(new Map), p = (0, l.useRef)(null), [y, v] = (0, l.useState)(0), [x, h] = (0, l.useState)(false), {
+  } = e, c = null == t ? true : t.filter(e => null != (0, d.zK)(e)), s = (0, l.useRef)(new Map), p = (0, l.useRef)(null), [j, v] = (0, l.useState)(0), [x, h] = (0, l.useState)(false), {
     trackUserProfileAction: E
-  } = (0, o.KZ)(), P = j(p, c, s, v);
+  } = (0, o.KZ)(), P = y(p, c, s, v);
   if ((0, l.useEffect)(() => (P(), window.addEventListener("resize", P), () => {
       window.removeEventListener("resize", P)
     }), [P, null == c ? true : c.join("")]), null == c || 0 === c.length) return null;
-  let w = x ? c : c.slice(0, c.length - y);
+  let w = x ? c : c.slice(0, c.length - j);
   return (0, n.jsxs)("div", {
     className: g.tagListContainer,
     children: [(0, n.jsx)("ul", {
@@ -42,14 +42,14 @@ function p(e) {
           null != t && s.current.set(e, t)
         }
       }, e))
-    }), y > 0 && (x ? (0, n.jsx)(m, {
+    }), j > 0 && (x ? (0, n.jsx)(m, {
       onClick: () => {
         h(false), E({
           action: "COLLAPSE_GAME_TAGS"
         })
       }
     }) : (0, n.jsx)(O, {
-      numHidden: y,
+      numHidden: j,
       onClick: () => {
         h(true), E({
           action: "EXPAND_GAME_TAGS"
@@ -175,7 +175,7 @@ let b = e => {
       })
     })
   },
-  j = (e, t, r, n) => (0, l.useCallback)(() => {
+  y = (e, t, r, n) => (0, l.useCallback)(() => {
     var l, i;
     if (null == t) return void n(0);
     let a = null != (i = null == (l = e.current) ? true : l.getBoundingClientRect().width) ? i : 0,

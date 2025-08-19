@@ -83,10 +83,10 @@ function b(e) {
     source: c.m1.UserProfile,
     sourceUserId: i,
     trackEntryPointImpression: true
-  }), j = null != r ? r : u.intl.string(u.t.GIWFlJ), y = u.intl.formatToPlainString(u.t["8QLQBw"], {
-    gameName: j
+  }), y = null != r ? r : u.intl.string(u.t.GIWFlJ), j = u.intl.formatToPlainString(u.t["8QLQBw"], {
+    gameName: y
   }), v = e => O ? e() : (0, n.jsx)(o.ua7, {
-    text: j,
+    text: y,
     children: t => e(t)
   });
   return v(null == m ? e => (0, n.jsx)("div", g(f({
@@ -98,7 +98,7 @@ function b(e) {
     })
   })) : e => (0, n.jsx)(o.P3F, g(f({}, e), {
     onClick: m,
-    "aria-label": y,
+    "aria-label": j,
     className: a()(d.clickable, b),
     children: (0, n.jsx)(p, {
       imageSrc: t,
