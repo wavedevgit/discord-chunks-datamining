@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 729700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,20 +13,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk703656 = require("./703656.js"),
   Chunk335131 = require("./335131.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk524970 = require("./524970.js");
-let g = e => {
+  Chunk388032 = require("./388032.jsx");
+let h = e => {
   let {
     displayOptions: t,
     targetElementRef: n,
-    onRequestClose: g,
-    onClick: m
+    onRequestClose: h,
+    onClick: g
   } = e, {
-    analyticsLocations: b
-  } = (0, c.ZP)(s.Z.HOME_PAGE_SHOP_TAB), _ = (0, o.ZP)(), O = (0, a.wj)(_) ? t.assetDark : t.assetLight, E = i.useRef(g);
-  return E.current = g, i.useEffect(() => () => {
+    analyticsLocations: m
+  } = (0, c.ZP)(s.Z.HOME_PAGE_SHOP_TAB), b = (0, o.ZP)(), _ = (0, a.wj)(b) ? t.assetDark : t.assetLight, O = i.useRef(h);
+  return O.current = h, i.useEffect(() => () => {
     var e;
-    null == (e = E.current) || e.call(E)
+    null == (e = O.current) || e.call(O)
   }, []), (0, r.jsx)(l.J2, {
     targetElementRef: n,
     position: "right",
@@ -38,22 +37,21 @@ let g = e => {
     },
     title: t.title(),
     body: t.body(),
-    asset: (0, r.jsx)("img", {
-      className: h.art,
-      src: O,
-      alt: ""
-    }),
+    graphic: {
+      type: "image",
+      src: _
+    },
     actions: [{
       text: f.intl.string(f.t.fYfGgI),
       variant: "primary",
       onClick: () => {
-        null == m || m(), (0, u.uL)(p.Z5c.COLLECTIBLES_SHOP), (0, d.mK)({
+        null == g || g(), (0, u.uL)(p.Z5c.COLLECTIBLES_SHOP), (0, d.mK)({
           openInLayer: false,
-          analyticsLocations: b,
+          analyticsLocations: m,
           analyticsSource: s.Z.HOME_PAGE_SHOP_TAB
         })
       }
     }],
-    onRequestClose: g
+    onRequestClose: h
   })
 }

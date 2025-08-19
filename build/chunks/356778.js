@@ -53,7 +53,7 @@ let E = {
   },
   C = (0, Chunk131193.F)(() => new Map),
   B = (A, e) => {
-    (0, s.j)(() => {
+    (0, a.j)(() => {
       C.setState(t => {
         let n = t.get(A);
         return null == n ? t.set(A, v({}, E, e)) : t.set(A, v({}, n, e)), t
@@ -93,12 +93,12 @@ function M(A, e, t) {
     let {
       addtionalQuery: l,
       shouldDispatch: i = false
-    } = n, s = r.useMemo(() => d(A, e, t, l), [A, e, t, l]), v = w(s), h = (0, o.Z)(s), [C, M] = r.useState({});
+    } = n, a = r.useMemo(() => d(A, e, t, l), [A, e, t, l]), v = w(a), h = (0, o.Z)(a), [C, M] = r.useState({});
     return r.useEffect(() => {
-      if (h !== s) {
+      if (h !== a) {
         let n = D(A, t, l),
           r = new g.Yn(e, f.aib.GUILD, n);
-        B(s, {
+        B(a, {
           searchFetcher: r,
           messageCount: u,
           lastMessage: null
@@ -106,14 +106,14 @@ function M(A, e, t) {
           r.fetch(A => {
             let t = A.body,
               n = t.messages[0];
-            if (B(s, {
+            if (B(a, {
                 searchFetcher: r,
                 result: t,
                 messageCount: t.total_results,
                 lastMessage: n
               }), M({}), i) {
               var l, o, g;
-              a.Z.dispatch({
+              s.Z.dispatch({
                 type: "MOD_VIEW_SEARCH_MESSAGES_SUCCESS",
                 guildId: e,
                 data: [{
@@ -131,7 +131,7 @@ function M(A, e, t) {
               })
             }
           }, A => {}, A => {
-            B(s, {
+            B(a, {
               messageCount: 0,
               lastMessage: null
             }), M({})
@@ -139,17 +139,17 @@ function M(A, e, t) {
         })
       }
       return () => {}
-    }, [A, e, v, s, t, l, h, i]), null != v ? v : E
+    }, [A, e, v, a, t, l, h, i]), null != v ? v : E
   }(A, e, "messages", t)
 }
 
 function p(A, e, t, n) {
   let l = r.useMemo(() => d(A, e, t, n, true), [A, e, t, n]),
     i = w(l),
-    s = (0, o.Z)(l);
+    a = (0, o.Z)(l);
   return {
     key: l,
-    previousKey: s,
+    previousKey: a,
     state: i
   }
 }
@@ -157,8 +157,8 @@ function p(A, e, t, n) {
 function I(A, e, t) {
   var n, l, i;
   let {
-    key: s,
-    state: a
+    key: a,
+    state: s
   } = p(A, e, "messages", t), {
     key: o,
     state: c
@@ -177,8 +177,8 @@ function I(A, e, t) {
     let e = A.messages,
       t = A.links,
       n = A.media;
-    B(s, e), B(o, t), B(v, n)
-  }, [o, v, s]), w = r.useCallback(A => {
+    B(a, e), B(o, t), B(v, n)
+  }, [o, v, a]), w = r.useCallback(A => {
     C({
       messages: A,
       links: A,
@@ -207,9 +207,9 @@ function I(A, e, t) {
         lastMessage: null
       });
       else {
-        var t, n, r, l, i, s;
+        var t, n, r, l, i, a;
         let A = e.tabs.messages,
-          a = e.tabs.links,
+          s = e.tabs.links,
           o = e.tabs.media;
         C({
           messages: {
@@ -217,12 +217,12 @@ function I(A, e, t) {
             lastMessage: null != (n = null == A ? true : A.messages[0]) ? n : null
           },
           links: {
-            messageCount: null != (r = null == a ? true : a.total_results) ? r : 0,
-            lastMessage: null != (l = null == a ? true : a.messages[0]) ? l : null
+            messageCount: null != (r = null == s ? true : s.total_results) ? r : 0,
+            lastMessage: null != (l = null == s ? true : s.messages[0]) ? l : null
           },
           media: {
             messageCount: null != (i = null == o ? true : o.total_results) ? i : 0,
-            lastMessage: null != (s = null == o ? true : o.messages[0]) ? s : null
+            lastMessage: null != (a = null == o ? true : o.messages[0]) ? a : null
           }
         })
       }
@@ -234,7 +234,7 @@ function I(A, e, t) {
   }, [A, e, d, E, w, C]);
   let [M, I] = r.useState({});
   return {
-    messagesCount: null != (n = null == a ? true : a.messageCount) ? n : u,
+    messagesCount: null != (n = null == s ? true : s.messageCount) ? n : u,
     linksCount: null != (l = null == c ? true : c.messageCount) ? l : u,
     mediaCount: null != (i = null == h ? true : h.messageCount) ? i : u
   }

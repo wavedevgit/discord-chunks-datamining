@@ -41,27 +41,27 @@ function N(A) {
     t = 0;
   return A.reverse().forEach(A => {
     var n, r, l;
-    let s = [],
-      a = null,
+    let a = [],
+      s = null,
       o = null,
       f = null;
-    if (null != A.reason && s.push(new g.ms(d.zUn.REASON, null, A.reason)), null != A.changes)
+    if (null != A.reason && a.push(new g.ms(d.zUn.REASON, null, A.reason)), null != A.changes)
       for (let e of A.changes) {
         let A = new g.ms(e.key, e.old_value, e.new_value);
-        s.push(A), A.key === d.zUn.NAME ? a = A : A.key === d.zUn.TYPE ? f = A : A.key === d.zUn.TITLE && (o = A)
+        a.push(A), A.key === d.zUn.NAME ? s = A : A.key === d.zUn.TYPE ? f = A : A.key === d.zUn.TITLE && (o = A)
       }
     if (A.action_type === d.rsA.MEMBER_PRUNE) {
       let e = null != A && null != A.options && null != A.options.delete_member_days ? A.options.delete_member_days : 1,
         t = new g.ms(d.zUn.PRUNE_DELETE_DAYS, null, e);
-      s.push(t)
+      a.push(t)
     }
-    A.action_type === d.rsA.AUTO_MODERATION_BLOCK_MESSAGE && (null == (r = A.options) ? true : r.auto_moderation_rule_name) != null && s.push(new g.ms(d.zUn.AUTO_MODERATION_TRIGGERED_RULE_NAME, null, A.options.auto_moderation_rule_name)), A.action_type === d.rsA.VOICE_CHANNEL_STATUS_CREATE && (null == (n = A.options) ? true : n.status) != null && s.push(new g.ms(d.zUn.STATUS, null, A.options.status));
+    A.action_type === d.rsA.AUTO_MODERATION_BLOCK_MESSAGE && (null == (r = A.options) ? true : r.auto_moderation_rule_name) != null && a.push(new g.ms(d.zUn.AUTO_MODERATION_TRIGGERED_RULE_NAME, null, A.options.auto_moderation_rule_name)), A.action_type === d.rsA.VOICE_CHANNEL_STATUS_CREATE && (null == (n = A.options) ? true : n.status) != null && a.push(new g.ms(d.zUn.STATUS, null, A.options.status));
     let v = new g.ZP({
         id: A.id,
         action: A.action_type,
         targetId: A.target_id,
         userId: A.user_id,
-        changes: s,
+        changes: a,
         options: A.options
       }),
       u = e[0];
@@ -76,8 +76,8 @@ function N(A) {
       }), t++;
       return
     }
-    if (v.actionType === d.vB8.DELETE && (null != a || null != o)) {
-      let A = null != (l = null == a ? true : a.oldValue) ? l : null == o ? true : o.oldValue;
+    if (v.actionType === d.vB8.DELETE && (null != s || null != o)) {
+      let A = null != (l = null == s ? true : s.oldValue) ? l : null == o ? true : o.oldValue;
       (v.targetType === d.KFR.CHANNEL || v.targetType === d.KFR.CHANNEL_OVERWRITE) && null !== f && (0, c.r8)(f.oldValue) && (A = "#".concat(A)), null == L[v.targetType] ? L[v.targetType] = {
         [v.targetId]: A
       } : L[v.targetType][v.targetId] = A
@@ -191,9 +191,9 @@ let R = new S(Chunk570140.Z, {
       guildScheduledEvents: r,
       automodRules: l,
       threads: i,
-      applicationCommands: s
+      applicationCommands: a
     } = A;
-    if (P = false, w = t, M = n, p = r, I = l, H = i, b = s, (0 === e.length || e.length < d.Rg9) && (j = false), e.length > 0) {
+    if (P = false, w = t, M = n, p = r, I = l, H = i, b = a, (0 === e.length || e.length < d.Rg9) && (j = false), e.length > 0) {
       let A = N(e);
       B = [...B, ...A]
     }

@@ -32,9 +32,7 @@ let _ = e => {
     {
       handleCardVisibilityChange: x
     } = (0, g.E)(S, "home", "marketing featured block"),
-    {
-      featuredBlockBanner: j
-    } = (0, f.YG)(O, C),
+    j = (0, f.YG)(O, C),
     P = l.useRef(null),
     T = S === o.T.NAMEPLATES_V3,
     L = T ? "NAMEPLATES VOL.3" : null,
@@ -51,7 +49,7 @@ let _ = e => {
         backgroundImage: "url(".concat(j, ")")
       },
       onClick: () => {
-        y("shop marketing tile", S), u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        y("shop marketing tile", S), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == I ? true : I.sessionId,
           sku_id: S,
           page_type: "home",
@@ -91,9 +89,9 @@ let _ = e => {
         className: h.featuredBlockButtonContainer,
         children: (0, n.jsx)(c.zxk, {
           variant: "overlay-primary",
-          text: m.intl.string(m.t.jVcuVV),
+          text: b.intl.string(b.t.jVcuVV),
           onClick: e => {
-            y("shop marketing take me there button", S), e.stopPropagation(), u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            y("shop marketing take me there button", S), e.stopPropagation(), u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == I ? true : I.sessionId,
               sku_id: S,
               page_type: "home",

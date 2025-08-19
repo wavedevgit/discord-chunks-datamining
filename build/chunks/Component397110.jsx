@@ -8,8 +8,8 @@ require("./647438.js");
 var Chunk331595 = require("./331595.js"),
   Chunk84502 = require("./84502.js");
 let i = ["#847D8B", "#D1CDD5"],
-  s = [.2, .65],
-  a = [{
+  a = [.2, .65],
+  s = [{
     base: 4,
     tint: 1
   }, {
@@ -42,8 +42,8 @@ let i = ["#847D8B", "#D1CDD5"],
     } = (0, l.s)({
       primaryBaseColors: i,
       primaryTintColor: c,
-      primaryTintLuminances: s,
-      primaryLuminanceWeights: a
+      primaryTintLuminances: a,
+      primaryLuminanceWeights: s
     });
     return (0, n.jsxs)("svg", (e = function(A) {
       for (var e = 1; e < arguments.length; e++) {

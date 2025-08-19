@@ -22,7 +22,7 @@ let f = (A, e) => {
     userId: n,
     colorRoleId: r
   } = A;
-  (0, s.openUserProfileModal)({
+  (0, a.openUserProfileModal)({
     userId: n,
     guildId: t,
     sourceAnalyticsLocations: e,
@@ -65,11 +65,11 @@ function u(A, e, t) {
 }
 
 function h(A) {
-  return (0, l.e7)([o.Z, a.Z], () => {
+  return (0, l.e7)([o.Z, s.Z], () => {
     var e;
     if (null == A) return null;
     let t = o.Z.getGuild(A.guildId);
-    return null == t || null == A.highestRoleId ? null : null != (e = a.Z.getRole(t.id, A.highestRoleId)) ? e : null
+    return null == t || null == A.highestRoleId ? null : null != (e = s.Z.getRole(t.id, A.highestRoleId)) ? e : null
   }, [A])
 }
 var d = ((n = {})[n.LOADING = 0] = "LOADING", n[n.SUCCESS_STILL_INDEXING = 1] = "SUCCESS_STILL_INDEXING", n[n.SUCCESS_EMPTY = 2] = "SUCCESS_EMPTY", n[n.SUCCESS_FULL = 3] = "SUCCESS_FULL", n);

@@ -90,10 +90,10 @@ let m = {
           targetElementRef: b,
           shouldShow: g,
           onRequestClose: () => E(false),
-          asset: t ? (0, r.jsx)("img", {
-            src: "sm" === h ? l.Z : s.Z,
-            alt: "Placeholder"
-          }) : true,
+          graphic: t ? {
+            type: "image",
+            src: "sm" === h ? l.Z : s.Z
+          } : true,
           caretConfig: {
             position: u,
             align: f

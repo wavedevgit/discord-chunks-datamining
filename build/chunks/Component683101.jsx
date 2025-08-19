@@ -57,7 +57,7 @@ class E extends Chunk647438.PureComponent {
       searchOffset: t,
       index: r,
       totalResults: l
-    } = this.props, s = i().find(module, A => A.isSearchHit);
+    } = this.props, a = i().find(module, A => A.isSearchHit);
     if (null == Chunk374470) return null;
     let o = Chunk592125.Z.getChannel(Chunk374470.channel_id);
     if (null == Chunk239091) return null;
@@ -87,7 +87,7 @@ class E extends Chunk647438.PureComponent {
               id: u,
               message: Chunk374470,
               channel: Chunk239091,
-              onContextMenu: A => this.handleContextMenu(A, s),
+              onContextMenu: A => this.handleContextMenu(A, a),
               animateAvatar: false,
               subscribeToComponentDispatch: false,
               trackAnnouncementViews: true,
@@ -133,7 +133,7 @@ class E extends Chunk647438.PureComponent {
           if (null != n && !n.isCollapsed) returntrue;
           if (null == A || null == e) returnfalse;
           for (;
-            (0, s.k)(A) && A !== e;) {
+            (0, a.k)(A) && A !== e;) {
             let {
               tagName: e
             } = A;

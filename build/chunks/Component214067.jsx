@@ -8,8 +8,8 @@ require("./647438.js");
 var Chunk331595 = require("./331595.js"),
   Chunk84502 = require("./84502.js");
 let i = ["#4282d8", "#47baff", "#b5e3ff", "#f0f0f0"],
-  s = ["#816bee", "#b79cf8", "#f0f0f0"],
-  a = [.1, .4, .8, 1],
+  a = ["#816bee", "#b79cf8", "#f0f0f0"],
+  s = [.1, .4, .8, 1],
   o = [{
     base: 8,
     tint: 1
@@ -62,9 +62,9 @@ let i = ["#4282d8", "#47baff", "#b5e3ff", "#f0f0f0"],
     } = (0, l.s)({
       primaryBaseColors: i,
       primaryTintColor: u,
-      primaryTintLuminances: a,
+      primaryTintLuminances: s,
       primaryLuminanceWeights: o,
-      secondaryBaseColors: s,
+      secondaryBaseColors: a,
       secondaryTintColor: h,
       secondaryTintLuminances: g,
       secondaryLuminanceWeights: c

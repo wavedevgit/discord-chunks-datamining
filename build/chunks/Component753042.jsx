@@ -24,7 +24,7 @@ function C(A) {
     member: e
   } = A, t = (0, l.e7)([c.Z], () => c.Z.getGuild(e.guildId), [e.guildId]), C = (0, o.mh)(e.userId, e.guildId), B = (0, o.mV)(e.userId, e.guildId), w = (0, o.LD)(e.userId), D = (0, o.wi)(e.userId, e.guildId);
   return (r.useEffect(() => {
-    (0, a.zO)(e.guildId)
+    (0, s.zO)(e.guildId)
   }, [e.guildId]), null == t) ? null : (0, n.jsx)(i.xJW, {
     title: d.intl.string(d.t["ldCE/v"]),
     titleClassName: E.infoTitle,
@@ -91,9 +91,9 @@ function C(A) {
           children: w
         })
       }), (0, n.jsx)(u._2, {
-        icon: (0, n.jsx)(s.Vj, {
+        icon: (0, n.jsx)(a.Vj, {
           guild: t,
-          size: s.Vj.Sizes.SMOL,
+          size: a.Vj.Sizes.SMOL,
           animate: false,
           className: E.guildIcon
         }),

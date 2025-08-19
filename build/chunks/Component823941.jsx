@@ -80,7 +80,7 @@ function k(e) {
     hideLimitedTimeBadge: l = false
   } = e, {
     backgroundColors: a
-  } = (0, v.Z)(t.styles), d = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), p = (0, s.e7)([b.Z], () => b.Z.isFocused()), {
+  } = (0, v.Z)(t.styles), d = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), p = (0, s.e7)([m.Z], () => m.Z.isFocused()), {
     bannerOverrides: g,
     shopAllBannerStatic: f,
     shopAllBannerAnimated: h
@@ -102,7 +102,7 @@ function k(e) {
         height: 28,
         color: "currentColor",
         className: j.discordIcon
-      }), (0, n.jsx)(m.Z, {
+      }), (0, n.jsx)(b.Z, {
         className: j.discordWordmark
       })]
     }) : (0, n.jsx)(c.LZC, {
@@ -132,7 +132,7 @@ function k(e) {
     }), !l && (0, n.jsx)(C.Z, {
       category: t,
       className: j.limitedTimeBadge,
-      display: "banner"
+      display: C.k.BANNER
     })]
   })
 }

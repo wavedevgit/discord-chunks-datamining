@@ -78,15 +78,16 @@ class h extends Chunk803358.Z {
       mobile_banner: u,
       banner: _,
       banner_asset: m,
-      hero_banner: g,
-      hero_banner_asset: E,
-      featured_block: b,
-      hero_logo: y,
-      banner_text_color: O,
-      hero_banner_config: v,
-      hero_logo_display_config: I
-    } = e, T = f(e, ["products", "logo", "hero_ranking", "pdp_bg", "mobile_bg", "mobile_banner", "banner", "banner_asset", "hero_banner", "hero_banner_asset", "featured_block", "hero_logo", "banner_text_color", "hero_banner_config", "hero_logo_display_config"]);
-    return new h(d(c({}, super.fromServer(T)), {
+      catalog_banner_asset: g,
+      hero_banner: E,
+      hero_banner_asset: b,
+      featured_block: y,
+      hero_logo: O,
+      banner_text_color: v,
+      hero_banner_config: I,
+      hero_logo_display_config: T
+    } = e, S = f(e, ["products", "logo", "hero_ranking", "pdp_bg", "mobile_bg", "mobile_banner", "banner", "banner_asset", "catalog_banner_asset", "hero_banner", "hero_banner_asset", "featured_block", "hero_logo", "banner_text_color", "hero_banner_config", "hero_logo_display_config"]);
+    return new h(d(c({}, super.fromServer(S)), {
       products: t.reduce((e, t) => {
         let n = i.Z.fromServer(t);
         return (p(n.type) || 0 !== n.items.length) && e.push(n), e
@@ -98,16 +99,17 @@ class h extends Chunk803358.Z {
       mobileBanner: u,
       banner: _,
       bannerAsset: m,
-      heroBanner: g,
-      heroBannerAsset: E,
-      featuredBlock: b,
-      heroLogo: y,
-      bannerTextColor: O,
-      heroBannerConfig: null != v ? o.Z.fromServer(v) : true,
-      heroLogoDisplayConfig: null != I ? s.X.fromServer(I) : true
+      catalogBannerAsset: g,
+      heroBanner: E,
+      heroBannerAsset: b,
+      featuredBlock: y,
+      heroLogo: O,
+      bannerTextColor: v,
+      heroBannerConfig: null != I ? o.Z.fromServer(I) : true,
+      heroLogoDisplayConfig: null != T ? s.X.fromServer(T) : true
     }))
   }
   constructor(e) {
-    super(e), l(this, "products", true), l(this, "logo", true), l(this, "heroRanking", true), l(this, "pdpBg", true), l(this, "mobileBg", true), l(this, "mobileBanner", true), l(this, "banner", true), l(this, "bannerAsset", true), l(this, "heroBanner", true), l(this, "heroBannerAsset", true), l(this, "featuredBlock", true), l(this, "heroLogo", true), l(this, "bannerTextColor", true), l(this, "heroBannerConfig", true), l(this, "heroLogoDisplayConfig", true), this.products = e.products, this.logo = e.logo, this.heroRanking = e.heroRanking, this.pdpBg = e.pdpBg, this.mobileBg = e.mobileBg, this.mobileBanner = e.mobileBanner, this.banner = e.banner, this.bannerAsset = e.bannerAsset, this.heroBanner = e.heroBanner, this.featuredBlock = e.featuredBlock, this.heroLogo = e.heroLogo, this.heroBannerAsset = e.heroBannerAsset, this.bannerTextColor = e.bannerTextColor, this.heroBannerConfig = e.heroBannerConfig, this.heroLogoDisplayConfig = e.heroLogoDisplayConfig
+    super(e), l(this, "products", true), l(this, "logo", true), l(this, "heroRanking", true), l(this, "pdpBg", true), l(this, "mobileBg", true), l(this, "mobileBanner", true), l(this, "banner", true), l(this, "bannerAsset", true), l(this, "catalogBannerAsset", true), l(this, "heroBanner", true), l(this, "heroBannerAsset", true), l(this, "featuredBlock", true), l(this, "heroLogo", true), l(this, "bannerTextColor", true), l(this, "heroBannerConfig", true), l(this, "heroLogoDisplayConfig", true), this.products = e.products, this.logo = e.logo, this.heroRanking = e.heroRanking, this.pdpBg = e.pdpBg, this.mobileBg = e.mobileBg, this.mobileBanner = e.mobileBanner, this.banner = e.banner, this.bannerAsset = e.bannerAsset, this.catalogBannerAsset = e.catalogBannerAsset, this.heroBanner = e.heroBanner, this.featuredBlock = e.featuredBlock, this.heroLogo = e.heroLogo, this.heroBannerAsset = e.heroBannerAsset, this.bannerTextColor = e.bannerTextColor, this.heroBannerConfig = e.heroBannerConfig, this.heroLogoDisplayConfig = e.heroLogoDisplayConfig
   }
 }

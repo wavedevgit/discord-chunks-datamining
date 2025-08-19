@@ -2,7 +2,7 @@
 /** chunk id: 141011, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function b(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,16 +47,16 @@ function b(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let m = e => {
+let b = e => {
   let {
     asset: t,
     size: r = p.yV,
     className: a,
-    style: m,
+    style: b,
     children: h,
     categoryBannerOverride: _
   } = e, v = (0, o.e7)([c.Z], () => c.Z.saturation), O = l.useMemo(() => {
-    if (null == t) return m;
+    if (null == t) return b;
     let e = null != t && /^http/i.test(t) || null != t && /^blob:https?:\/\/[^\/]+\//i.test(t) ? t : (0, d.uV)(t, {
         size: r,
         format: "jpg"
@@ -65,20 +65,20 @@ let m = e => {
         filter: "blur(2px)",
         transform: "scale(1.02)"
       } : {};
-    if (1 === v) return f(b(f({}, m), {
+    if (1 === v) return f(m(f({}, b), {
       backgroundImage: (null == _ ? true : _.addGradient) ? "url(".concat(e, "), linear-gradient(180deg, rgba(0, 71, 94, 0.6) 5%, rgba(9, 33, 65, 0.6) 95%)") : "url(".concat(e, ")"),
       backgroundBlendMode: "multiply",
       backgroundSize: "cover",
       backgroundPosition: "center"
     }), n);
     let l = (0, u.aD)(s.Z.unsafe_rawColors.BLACK_500.resolve().hex(), 1 - v);
-    return f(b(f({}, m), {
+    return f(m(f({}, b), {
       backgroundImage: "linear-gradient(".concat(l, ", ").concat(l, "), url(").concat(e, ")"),
       backgroundBlendMode: "saturation",
       backgroundSize: "cover",
       backgroundPosition: "center"
     }), n)
-  }, [t, r, v, m, null == _ ? true : _.blur, null == _ ? true : _.addGradient]);
+  }, [t, r, v, b, null == _ ? true : _.blur, null == _ ? true : _.addGradient]);
   return (0, n.jsx)("div", {
     className: i()(g.banner, a),
     style: O,

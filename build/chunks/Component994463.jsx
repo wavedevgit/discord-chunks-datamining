@@ -394,8 +394,8 @@ class c extends Chunk647438.Component {
   }
   constructor(...A) {
     super(...A), o(this, "state", {
-      x: new s.Z.Value(0),
-      y: new s.Z.Value(0)
+      x: new a.Z.Value(0),
+      y: new a.Z.Value(0)
     }), o(this, "_isMounted", false), o(this, "shouldLoop", () => this._isMounted)
   }
 }

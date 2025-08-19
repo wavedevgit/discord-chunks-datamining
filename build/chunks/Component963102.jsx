@@ -39,7 +39,7 @@ function k(e) {
     selected: l,
     handleTransition: a
   } = e;
-  return (0, n.jsx)(b.Z.Title, {
+  return (0, n.jsx)(m.Z.Title, {
     onClick: () => a(t),
     wrapperClassName: L.tabWrapper,
     className: i()(L.tab, {
@@ -55,8 +55,8 @@ function I(e) {
     selected: r,
     displayText: a,
     handleTransition: o
-  } = e, [s, u] = l.useState(false), d = l.useRef(null), [p, m] = l.useState(0), h = l.useRef(false), _ = e => {
-    clearTimeout(p), m(setTimeout(() => {
+  } = e, [s, u] = l.useState(false), d = l.useRef(null), [p, b] = l.useState(0), h = l.useRef(false), _ = e => {
+    clearTimeout(p), b(setTimeout(() => {
       u(e)
     }, 100)), e && (h.current = f.Z.keyboardModeEnabled)
   }, v = e => {
@@ -90,7 +90,7 @@ function I(e) {
         let {
           isShown: p
         } = l;
-        return (0, n.jsx)(b.Z.Title, (s = function(e) {
+        return (0, n.jsx)(m.Z.Title, (s = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
@@ -147,8 +147,8 @@ function N(e) {
     onClose: a,
     selectedTab: g,
     handleTransition: f
-  } = e, S = (0, p.ZP)(), N = (0, s.e7)([O.default], () => O.default.getCurrentUser()), w = (null == N ? true : N.isStaff()) || (null == N ? true : N.isStaffPersonal()) || false, {
-    enabled: A
+  } = e, S = (0, p.ZP)(), N = (0, s.e7)([O.default], () => O.default.getCurrentUser()), A = (null == N ? true : N.isStaff()) || (null == N ? true : N.isStaffPersonal()) || false, {
+    enabled: w
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
   }), B = [{
@@ -158,7 +158,7 @@ function N(e) {
     tab: j.AW.CATALOG,
     displayText: T.intl.string(T.t.Ah5sJi)
   }];
-  A && B.push({
+  w && B.push({
     tab: j.AW.ORBS,
     displayText: T.intl.string(T.t.EBYkzs)
   });
@@ -169,27 +169,27 @@ function N(e) {
         pageType: Z,
         sectionType: P.jXE.ORBS_BALANCE_MENU,
         ctaObject: P.qAy.CTA_TO_QUEST_HOME
-      }), (0, m.navigateToQuestHome)({
+      }), (0, b.navigateToQuestHome)({
         fromContent: o.j.ORBS_BALANCE_MENU
       })
     }, [R, t, Z]),
     M = (0, y.eN)("collectibles_shop_header_bar");
   return (0, n.jsx)(c.f6W, {
     theme: S,
-    children: e => (0, n.jsxs)(b.Z, {
+    children: e => (0, n.jsxs)(m.Z, {
       disableDoubleClick: true,
       className: i()(e, L.headerBar, {
         [L.fullscreenHeaderBar]: t
       }),
-      innerClassname: A ? L.headerBarInner : true,
-      toolbar: t || !w ? null : (0, n.jsx)(l.Fragment, {}),
+      innerClassname: w ? L.headerBarInner : true,
+      toolbar: t || !A ? null : (0, n.jsx)(l.Fragment, {}),
       children: [(0, n.jsxs)(c.P3F, {
         className: L.shopHomeLink,
         onClick: () => f(j.AW.HOME),
         "aria-label": T.intl.string(T.t.pWG4zc) + " home",
         children: [(0, n.jsx)(C.Z, {
           className: L.discordLogo
-        }), (0, n.jsx)(b.Z.Title, {
+        }), (0, n.jsx)(m.Z.Title, {
           children: T.intl.string(T.t.pWG4zc)
         })]
       }), (0, n.jsx)("div", {
@@ -211,12 +211,12 @@ function N(e) {
             handleTransition: f
           }, t)
         })
-      }), (A || t || M) && (0, n.jsxs)("div", {
+      }), (w || t || M) && (0, n.jsxs)("div", {
         className: L.alignedRightContent,
         children: [M && (0, n.jsx)(x.Z, {
           handleTransition: f,
           selectedTab: g
-        }), A && (0, n.jsx)(v.V9, {
+        }), w && (0, n.jsx)(v.V9, {
           anchorPillType: t ? "SHOP_FULLSCREEN" : "SHOP",
           analyticsPage: Z,
           cardAlignment: v.V9.CardAlignment.END,

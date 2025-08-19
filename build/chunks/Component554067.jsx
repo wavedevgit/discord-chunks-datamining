@@ -22,14 +22,14 @@ function g(e) {
   } = e, {
     searchQuery: g,
     onSetSearchQuery: f
-  } = (0, s.S)(), [b, m] = l.useState(""), h = (0, o.sp)();
+  } = (0, s.S)(), [m, b] = l.useState(""), h = (0, o.sp)();
   return l.useEffect(() => {
     let e = setTimeout(() => {
-      f(b)
+      f(m)
     }, 250);
     return () => clearTimeout(e)
-  }, [b, f]), l.useEffect(() => {
-    m(g)
+  }, [m, f]), l.useEffect(() => {
+    b(g)
   }, [g]), (0, n.jsx)(a.P3F, {
     ignoreKeyPress: true,
     onClick: () => {
@@ -47,12 +47,12 @@ function g(e) {
       size: "sm",
       className: p.searchBar,
       onKeyDown: e => {
-        "Enter" === e.key && f(b)
+        "Enter" === e.key && f(m)
       },
-      query: b,
-      onChange: m,
+      query: m,
+      onChange: b,
       onClear: () => {
-        m(""), i.default.track(u.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        b(""), i.default.track(u.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == h ? true : h.sessionId,
           page_section: null == h ? true : h.pageSection,
           page_category: null == h ? true : h.pageCategory,

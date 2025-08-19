@@ -39,13 +39,13 @@ function N(e) {
   let {
     isFetchingCategories: r,
     isFullScreen: N,
-    scrollerRef: w,
-    tab: A
+    scrollerRef: A,
+    tab: w
   } = e, B = (0, p.sp)(), R = null != (t = null == B ? true : B.sessionId) ? t : "", {
     noCache: Z,
     includeUnpublished: D
   } = (0, v.Z)(), M = (0, i.e7)([u.default], () => u.default.getCurrentUser()), F = (0, i.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [H, W] = l.useState(1), V = (0, c.Fg)(), U = (0, o.ap)(V), [z, G, q] = l.useMemo(() => {
-    switch (A) {
+    switch (w) {
       case O.AW.AVATAR_DECORATIONS:
         return [E.intl.string(E.t.dRZYND), U ? P.Z : j.Z, a.Z.AVATAR_DECORATION];
       case O.AW.PROFILE_EFFECTS:
@@ -55,29 +55,29 @@ function N(e) {
       case O.AW.BUNDLES:
         return [E.intl.string(E.t.FYFppq), U ? x.Z : S.Z, a.Z.BUNDLE]
     }
-  }, [A, U]), K = (0, f.a)(), Y = l.useMemo(() => K(F.filter(e => {
+  }, [w, U]), K = (0, f.a)(), Y = l.useMemo(() => K(F.filter(e => {
     var t;
     return e.type === q || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
-  })), [F, q, K]), X = (0, b.l)(Y);
+  })), [F, q, K]), X = (0, m.l)(Y);
   return (l.useEffect(() => {
-    (0, m.n)({
+    (0, b.n)({
       sessionId: R,
-      checkpoint: m.a.SHOP_MOUNTED,
-      tab: A,
+      checkpoint: b.a.SHOP_MOUNTED,
+      tab: w,
       isFullScreen: N,
       unpublishedCategoriesShown: D,
       cacheDisabled: Z
     })
   }, []), l.useEffect(() => {
-    r || (0, m.n)({
+    r || (0, b.n)({
       sessionId: R,
-      checkpoint: m.a.SHOP_RENDERED,
-      tab: A,
+      checkpoint: b.a.SHOP_RENDERED,
+      tab: w,
       isFullScreen: N,
       unpublishedCategoriesShown: D,
       cacheDisabled: Z
     })
-  }, [R, N, D, Z, r, A]), r || null == M) ? (0, n.jsx)(h.Z, {}) : (0, n.jsxs)(n.Fragment, {
+  }, [R, N, D, Z, r, w]), r || null == M) ? (0, n.jsx)(h.Z, {}) : (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(G, ")")
@@ -99,7 +99,7 @@ function N(e) {
             product: e,
             user: M,
             category: r,
-            tab: A
+            tab: w
           }, e.skuId)
         }, e.skuId)
       })
@@ -118,9 +118,9 @@ function N(e) {
               page_category: null == B ? true : B.pageCategory,
               page_index: e,
               page_size: 40,
-              cta_name: "".concat(A, " page ").concat(e),
-              page_type: A
-            }), W(e), null == w || null == (t = w.current) || t.scrollToTop({
+              cta_name: "".concat(w, " page ").concat(e),
+              page_type: w
+            }), W(e), null == A || null == (t = A.current) || t.scrollToTop({
               animate: true
             })
           },

@@ -1,11 +1,12 @@
 /** Chunk was on 17768 **/
 /** chunk id: 794324, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
+  Oi: () => p,
   YG: () => d,
   hr: () => u,
-  kc: () => m,
-  mB: () => g,
-  t0: () => p
+  kc: () => g,
+  mB: () => f,
+  t0: () => m
 });
 var Chunk647438 = require("./647438.js"),
   Chunk264181 = require("./264181.js"),
@@ -35,20 +36,24 @@ let u = e => {
     }, [t, n, a, e, i])
   },
   d = (e, t) => {
-    let n = (0, l.zL)(c.jE.FEATURED_BLOCK);
-    return r.useMemo(() => {
-      var r;
-      let a = null == e ? true : e.featuredBlock,
-        o = null != a ? (0, i.uV)(a, {
-          size: s.J0,
-          format: "png"
-        }) : true;
-      return {
-        featuredBlockBanner: null != (r = null != n ? n : null == t ? true : t.bannerUrl) ? r : o
-      }
-    }, [n, e, t])
+    var n;
+    let r = (0, l.zL)(c.jE.FEATURED_BLOCK),
+      a = (0, i.uV)(null == e ? true : e.featuredBlock, {
+        size: s.J0,
+        format: "png"
+      });
+    return null != (n = null != r ? r : null == t ? true : t.bannerUrl) ? n : a
   },
   p = e => {
+    var t, n;
+    let r = (0, l.zL)(c.jE.CATALOG_BANNER_STATIC),
+      a = (0, l.zL)(c.jE.CATALOG_BANNER_ANIMATED);
+    return {
+      catalogBannerStatic: null != r ? r : null == (t = e.catalogBannerAsset) ? true : t.static,
+      catalogBannerAnimated: null != a ? a : null == (n = e.catalogBannerAsset) ? true : n.animated
+    }
+  },
+  m = e => {
     let t = (0, l.zL)(c.jE.SHOP_ALL_BANNER_STATIC),
       n = (0, l.zL)(c.jE.SHOP_ALL_BANNER_ANIMATED);
     return r.useMemo(() => {
@@ -61,11 +66,11 @@ let u = e => {
       }
     }, [t, n, e])
   },
-  m = e => {
+  g = e => {
     let t = (0, l.zL)(c.jE.PDP_BACKGROUND);
     return null != t ? t : e.pdpBg
   },
-  g = e => {
+  f = e => {
     let t = (0, l.zL)(c.jE.SHOP_BUTTON_BG_HOVER),
       n = (0, l.zL)(c.jE.SHOP_BUTTON_BG_HOVER_DARK),
       i = (0, l.zL)(c.jE.SHOP_BUTTON_BG_HOVER_LIGHT),
@@ -80,14 +85,14 @@ let u = e => {
         hasPreviewAssets: false
       };
       let f = null == e || null == (r = e.refTargetBackground) ? true : r.asset,
-        b = null == f ? true : f.resting,
-        _ = null == f ? true : f.hovered;
+        _ = null == f ? true : f.resting,
+        b = null == f ? true : f.hovered;
       return {
         hasPreviewAssets: g,
-        buttonBGHoverDark: null != (l = null != n ? n : t) ? l : null == _ ? true : _.dark,
-        buttonBGHoverLight: null != (c = null != i ? i : t) ? c : null == _ ? true : _.light,
-        buttonBGRestingDark: null != (p = null != s ? s : o) ? p : null == b ? true : b.dark,
-        buttonBGRestingLight: null != (m = null != u ? u : o) ? m : null == b ? true : b.light,
+        buttonBGHoverDark: null != (l = null != n ? n : t) ? l : null == b ? true : b.dark,
+        buttonBGHoverLight: null != (c = null != i ? i : t) ? c : null == b ? true : b.light,
+        buttonBGRestingDark: null != (p = null != s ? s : o) ? p : null == _ ? true : _.dark,
+        buttonBGRestingLight: null != (m = null != u ? u : o) ? m : null == _ ? true : _.light,
         coachtipAvatar: null != d ? d : null == e ? true : e.avatar
       }
     }, [t, n, i, o, s, u, d, e])

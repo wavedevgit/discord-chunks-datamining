@@ -1,23 +1,22 @@
 /** Chunk was on 1272 **/
 /** chunk id: 355251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => c
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk907862 = require("./907862.js"),
   Chunk481060 = require("./481060.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk934919 = require("./934919.js");
+  Chunk388032 = require("./388032.jsx");
 
-function u(e) {
+function c(e) {
   let {
     guildId: t,
-    markAsDismissed: u,
-    targetElementRef: d
-  } = e, p = i.useCallback(() => {
-    u(o.L.TAKE_ACTION), (0, a.ZDy)(async () => {
+    markAsDismissed: c,
+    targetElementRef: u
+  } = e, d = i.useCallback(() => {
+    c(o.L.TAKE_ACTION), (0, a.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("15076"), n.e("39672")]).then(n.bind(n, 907941));
@@ -54,19 +53,19 @@ function u(e) {
         }), i))
       }
     })
-  }, [t, u]), f = i.useCallback(() => {
-    u(o.L.USER_DISMISS)
-  }, [u]);
+  }, [t, c]), p = i.useCallback(() => {
+    c(o.L.USER_DISMISS)
+  }, [c]);
   return (0, r.jsx)(l.J2, {
-    targetElementRef: d,
+    targetElementRef: u,
     shouldShow: true,
     title: s.intl.string(s.t["2l9beX"]),
     body: s.intl.string(s.t.gdqdND),
-    asset: (0, r.jsx)("img", {
-      className: c.image,
+    graphic: {
+      type: "image",
       src: n(297806),
-      alt: ""
-    }),
+      aspectRatio: "6/4"
+    },
     size: "lg",
     caretConfig: {
       position: "top",
@@ -75,12 +74,12 @@ function u(e) {
     actions: [{
       text: s.intl.string(s.t.RzWDqa),
       variant: "primary",
-      onClick: p
+      onClick: d
     }, {
       text: s.intl.string(s.t.TulDPj),
       variant: "secondary",
-      onClick: f
+      onClick: p
     }],
-    onRequestClose: f
+    onRequestClose: p
   })
 }

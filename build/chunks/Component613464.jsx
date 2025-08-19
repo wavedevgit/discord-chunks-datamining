@@ -34,7 +34,7 @@ function H(A) {
     className: H,
     infoPanelClassName: b,
     style: O
-  } = A, Q = (0, D.m)(t), P = (0, s.e7)([w.default], () => w.default.getUser(e), [e]), j = (0, s.e7)([B.ZP], () => B.ZP.getMember(t, e), [t, e]), [V, m] = r.useState(null == P || null == j), T = (0, g.Z)(j), y = r.useRef(null), {
+  } = A, Q = (0, D.m)(t), P = (0, a.e7)([w.default], () => w.default.getUser(e), [e]), j = (0, a.e7)([B.ZP], () => B.ZP.getMember(t, e), [t, e]), [V, m] = r.useState(null == P || null == j), T = (0, g.Z)(j), y = r.useRef(null), {
     analyticsLocations: L
   } = (0, u.ZP)(v.Z.GUILD_MEMBER_MOD_VIEW), x = (0, d.ZP)(e, t), N = (0, c.ZP)();
   return (r.useEffect(() => {
@@ -61,9 +61,9 @@ function H(A) {
   }, [t, e]), Q) ? V || null == P || null == j ? (0, n.jsx)("div", {
     className: i()(I.sidebarContainer, I.loadingContainer, H),
     style: O,
-    children: (0, n.jsx)(a.$jN, {
+    children: (0, n.jsx)(s.$jN, {
       animated: true,
-      type: V ? a.$jN.Type.SPINNING_CIRCLE : a.$jN.Type.CHASING_DOTS
+      type: V ? s.$jN.Type.SPINNING_CIRCLE : s.$jN.Type.CHASING_DOTS
     })
   }) : (0, n.jsx)(u.Gt, {
     value: L,

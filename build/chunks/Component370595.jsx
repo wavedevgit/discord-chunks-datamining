@@ -17,11 +17,11 @@ function o(A) {
     backPanel: t = l.k.INFO
   } = A;
   return (0, n.jsxs)("div", {
-    className: a.header,
+    className: s.header,
     children: [(0, n.jsx)("div", {
-      className: a.headerTitle,
+      className: s.headerTitle,
       children: (0, n.jsxs)(r.P3F, {
-        className: s.backButton,
+        className: a.backButton,
         onClick: () => null == e ? true : e(t),
         children: [(0, n.jsx)(r.whL, {
           size: "custom",
@@ -34,8 +34,8 @@ function o(A) {
       })
     }), (0, n.jsx)(r.M2$, {
       shortcut: "esc",
-      keyClassName: s.keyComboInner,
-      className: s.keyComboContainer
+      keyClassName: a.keyComboInner,
+      className: a.keyComboContainer
     })]
   })
 }

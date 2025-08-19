@@ -31,7 +31,7 @@ let d = e => {
       for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
     }
     return a
-  }(m, ["pendingAvatar"]), b = (0, o.SD)({
+  }(m, ["pendingAvatar"]), _ = (0, o.SD)({
     userId: d.id,
     image: g
   });
@@ -55,7 +55,7 @@ let d = e => {
       }
       return e
     }({}, f), n = n = {
-      pendingAvatar: b,
+      pendingAvatar: _,
       user: d,
       pendingBadges: [(0, s.X)()],
       canUsePremiumCustomization: p,

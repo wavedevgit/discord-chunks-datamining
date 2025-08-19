@@ -56,9 +56,9 @@ let D = e => {
   M = function(e) {
     let {
       isFullScreen: t = true,
-      tab: r = w.AW.HOME
+      tab: r = A.AW.HOME
     } = e;
-    (0, b.z)(f.f);
+    (0, m.z)(f.f);
     let a = (0, p.Z)((0, o.Z)()),
       c = (0, s.e7)([v.default], () => v.default.getCurrentUser()),
       B = (0, N.G)("CollectiblesShop"),
@@ -75,7 +75,7 @@ let D = e => {
     } = (0, k.Db)(), {
       currentTab: H,
       hasFilters: W
-    } = (0, j.S)(), V = l.useMemo(() => r === w.AW.HOME && H && W() ? H : r, [r, H, W]), {
+    } = (0, j.S)(), V = l.useMemo(() => r === A.AW.HOME && H && W() ? H : r, [r, H, W]), {
       categories: U,
       refreshCategories: z
     } = (0, y.ZP)({
@@ -85,7 +85,7 @@ let D = e => {
       tab: V,
       isFullScreen: t
     });
-    (0, m.D)();
+    (0, b.D)();
     let G = (0, S.O)(U),
       [q, K] = l.useState(),
       Y = (0, s.e7)([C.Z], () => {
@@ -109,9 +109,9 @@ let D = e => {
     l.useEffect(() => {
       er()
     }, [er]), l.useEffect(() => {
-      t || (0, d.Y)(A.Z5c.COLLECTIBLES_SHOP)
+      t || (0, d.Y)(w.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
-    let en = (0, s.e7)([_.Z], () => _.Z.getLayers().includes(A.S9g.COLLECTIBLES_SHOP)),
+    let en = (0, s.e7)([_.Z], () => _.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
       el = l.useRef(null),
       ea = l.useRef(null);
     (0, u.Tbt)(el);
@@ -135,7 +135,7 @@ let D = e => {
         newValue: {
           sessionId: a,
           pageCategory: Y,
-          pageSize: w.kN
+          pageSize: A.kN
         },
         children: (0, n.jsx)(D, {
           onClose: F,
@@ -154,9 +154,9 @@ let D = e => {
               selectedTab: $
             }), (0, n.jsx)("div", {
               className: i()(R.shopViewWrapper, {
-                [R.visible]: ee === w.f7.VISIBLE,
-                [R.in]: ee === w.f7.IN,
-                [R.out]: ee === w.f7.OUT
+                [R.visible]: ee === A.f7.VISIBLE,
+                [R.in]: ee === A.f7.IN,
+                [R.out]: ee === A.f7.OUT
               }),
               children: (0, n.jsx)(P.Z, {
                 tab: $,

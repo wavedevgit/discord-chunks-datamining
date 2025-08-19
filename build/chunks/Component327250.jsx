@@ -70,28 +70,28 @@ function T(A) {
     user: e,
     guildId: t,
     onClose: r
-  } = A, l = e.id, a = (0, i.e7)([p.Z, D.Z, d.default], () => l === d.default.getId() ? p.Z.getStatus() : D.Z.getStatus(l, t), [l, t]);
+  } = A, l = e.id, s = (0, i.e7)([p.Z, D.Z, d.default], () => l === d.default.getId() ? p.Z.getStatus() : D.Z.getStatus(l, t), [l, t]);
   return (0, n.jsxs)("div", {
     className: j.topRow,
     children: [(0, n.jsxs)("div", {
       className: j.memberNameContainer,
       children: [(0, n.jsx)("div", {
         className: j.memberAvatar,
-        children: (0, n.jsx)(s.qEK, {
+        children: (0, n.jsx)(a.qEK, {
           src: e.getAvatarURL(t, 48),
           "aria-label": e.username,
-          size: s.EFr.SIZE_48,
-          status: a
+          size: a.EFr.SIZE_48,
+          status: s
         })
       }), (0, n.jsxs)("div", {
         className: j.memberNameAndTagContainer,
         children: [(0, n.jsxs)("div", {
           className: j.memberNameTextContainer,
-          children: [(0, n.jsx)(s.Text, {
+          children: [(0, n.jsx)(a.Text, {
             variant: "text-lg/medium",
-            children: (0, n.jsx)(s.PUh, {
+            children: (0, n.jsx)(a.PUh, {
               name: b.ZP.getName(t, null, e),
-              colorString: s.TVs.colors.HEADER_PRIMARY.css,
+              colorString: a.TVs.colors.HEADER_PRIMARY.css,
               colorStrings: null
             })
           }), (0, n.jsx)(h.ZP, {
@@ -103,19 +103,19 @@ function T(A) {
             className: j.memberClanTag,
             containerClassName: j.memberClanTagContainer
           })]
-        }), (0, n.jsx)(s.Text, {
+        }), (0, n.jsx)(a.Text, {
           variant: "text-md/medium",
           color: "text-default",
           children: O.ZP.getUserTag(e)
         })]
       })]
-    }), (0, n.jsx)(s.Text, {
+    }), (0, n.jsx)(a.Text, {
       variant: "text-md/medium",
       color: "text-default",
-      children: (0, n.jsx)(s.P3F, {
+      children: (0, n.jsx)(a.P3F, {
         className: j.closeAction,
         onClick: r,
-        children: (0, n.jsx)(s.Dio, {
+        children: (0, n.jsx)(a.Dio, {
           size: "md",
           color: "currentColor"
         })
@@ -130,7 +130,7 @@ function y(A) {
     text: t,
     disabled: r,
     children: i,
-    onClick: a
+    onClick: s
   } = A, o = function(A, e) {
     if (null == A) return {};
     var t, n, r = function(A, e) {
@@ -146,15 +146,15 @@ function y(A) {
     }
     return r
   }(A, ["tag", "text", "disabled", "children", "onClick"]);
-  return (0, n.jsx)(s.ua7, {
+  return (0, n.jsx)(a.ua7, {
     text: t,
-    children: A => (0, n.jsx)(s.P3F, m(V({}, o, A), {
+    children: A => (0, n.jsx)(a.P3F, m(V({}, o, A), {
       tag: e,
       "aria-label": t,
       className: l()(j.bottomRowAction, {
         [j.bottomRowActionDisabled]: r
       }),
-      onClick: r ? true : a,
+      onClick: r ? true : s,
       children: (0, n.jsx)("div", {
         className: j.innerBottomRowAction,
         children: i
@@ -195,11 +195,11 @@ function L(A) {
       disabled: L,
       text: P.intl.string(P.t["g33r/P"]),
       onClick: () => {
-        a.Z.openPrivateChannel({
+        s.Z.openPrivateChannel({
           recipientIds: e.id
         })
       },
-      children: (0, n.jsx)(s.kBi, {
+      children: (0, n.jsx)(a.kBi, {
         size: "custom",
         color: "currentColor",
         width: 24,
@@ -209,7 +209,7 @@ function L(A) {
       disabled: !C,
       text: P.intl.string(P.t["3glT6e"]),
       onClick: () => {
-        (0, s.ZDy)(async () => {
+        (0, a.ZDy)(async () => {
           let {
             default: A
           } = await t.e("5454").then(t.bind(t, 854360));
@@ -221,17 +221,17 @@ function L(A) {
           }))
         })
       },
-      children: (0, n.jsx)(s.I9k, {
+      children: (0, n.jsx)(a.I9k, {
         size: "custom",
         width: 24,
         height: 24,
-        color: s.TVs.colors.TEXT_DEFAULT.css
+        color: a.TVs.colors.TEXT_DEFAULT.css
       })
     }), (0, n.jsx)(y, {
       disabled: !D,
       text: P.intl.string(P.t["5MBJ5O"]),
       onClick: () => {
-        (0, s.ZDy)(async () => {
+        (0, a.ZDy)(async () => {
           let {
             default: A
           } = await t.e("43350").then(t.bind(t, 98746));
@@ -243,11 +243,11 @@ function L(A) {
           }))
         })
       },
-      children: (0, n.jsx)(s.pgN, {
+      children: (0, n.jsx)(a.pgN, {
         size: "custom",
         width: 24,
         height: 24,
-        color: s.TVs.colors.TEXT_DEFAULT.css
+        color: a.TVs.colors.TEXT_DEFAULT.css
       })
     }), (0, n.jsx)(y, {
       disabled: !p,
@@ -264,11 +264,11 @@ function L(A) {
           modReportId: x
         })
       },
-      children: (0, n.jsx)(s.YlB, {
+      children: (0, n.jsx)(a.YlB, {
         size: "custom",
         width: 24,
         height: 24,
-        color: s.TVs.colors.TEXT_DEFAULT.css
+        color: a.TVs.colors.TEXT_DEFAULT.css
       })
     }), (0, n.jsx)(y, {
       text: P.intl.string(P.t.IHTjzM),
@@ -276,11 +276,11 @@ function L(A) {
         T(u.jQ.COPY_ID), (0, H.JG)(e.id)
       },
       disabled: !H.wS,
-      children: (0, n.jsx)(s.VuL, {
+      children: (0, n.jsx)(a.VuL, {
         size: "custom",
         width: 24,
         height: 24,
-        color: s.TVs.colors.TEXT_DEFAULT.css
+        color: a.TVs.colors.TEXT_DEFAULT.css
       })
     })]
   })
@@ -291,8 +291,8 @@ function x(A) {
     userId: e,
     guildId: t,
     onClose: r
-  } = A, l = (0, i.e7)([I.default], () => I.default.getUser(e), [e]), s = (0, i.e7)([C.ZP], () => C.ZP.getMember(t, e), [t, e]);
-  return null == l || null == s ? null : (0, n.jsxs)("div", {
+  } = A, l = (0, i.e7)([I.default], () => I.default.getUser(e), [e]), a = (0, i.e7)([C.ZP], () => C.ZP.getMember(t, e), [t, e]);
+  return null == l || null == a ? null : (0, n.jsxs)("div", {
     className: j.container,
     children: [(0, n.jsx)(T, {
       user: l,
@@ -300,7 +300,7 @@ function x(A) {
       onClose: r
     }), (0, n.jsx)(L, {
       user: l,
-      member: s,
+      member: a,
       guildId: t
     })]
   })

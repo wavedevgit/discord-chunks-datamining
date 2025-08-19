@@ -27,13 +27,13 @@ let p = {
     }), a = (0, o.FF)("CollectiblesBrowse"), {
       setItemTypeFilter: g,
       reset: f,
-      setCurrentTab: b
-    } = (0, s.S)(), m = n.useMemo(() => e !== u.AW.ORBS || r ? (0, u.RE)(e) && a ? u.AW.CATALOG : e : u.AW.HOME, [e, r, a]), [h, _] = n.useState(m), [v, O] = n.useState(u.f7.VISIBLE);
+      setCurrentTab: m
+    } = (0, s.S)(), b = n.useMemo(() => e !== u.AW.ORBS || r ? (0, u.RE)(e) && a ? u.AW.CATALOG : e : u.AW.HOME, [e, r, a]), [h, _] = n.useState(b), [v, O] = n.useState(u.f7.VISIBLE);
     n.useEffect(() => {
-      b(h)
-    }, [h, b]), n.useEffect(() => {
-      _(m)
-    }, [m]);
+      m(h)
+    }, [h, m]), n.useEffect(() => {
+      _(b)
+    }, [b]);
     let {
       clearError: C
     } = (0, c.a)(), E = (0, l.k6)(), y = n.useCallback(async (e, r) => {

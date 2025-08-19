@@ -39,12 +39,12 @@ function x(e) {
   let g = (0, d.FF)("CollectiblesBrowse"),
     f = l.useRef(null),
     {
-      handleScroll: m
+      handleScroll: b
     } = (0, s.z)(f, r),
     {
       setCategoryRef: _,
       handleScrollToCategory: v
-    } = (0, b.xV)(f.current),
+    } = (0, m.xV)(f.current),
     [O, C] = l.useState(g),
     [E, y] = l.useState(false);
   return l.useEffect(() => {
@@ -69,7 +69,7 @@ function x(e) {
       children: [(0, n.jsx)(o.yWw, {
         className: S.shopScroll,
         ref: f,
-        onScroll: m,
+        onScroll: b,
         children: (0, n.jsx)(j, {
           isFullScreen: t,
           isSmallScreen: E,
@@ -95,17 +95,17 @@ let j = e => {
     isSmallScreen: r,
     filterBarOpen: a,
     setFilterBarOpen: s,
-    tab: b,
+    tab: m,
     scrollerRef: x,
     sortedCategories: j,
     setCategoryRef: P
   } = e, T = (0, d.FF)("CollectiblesBrowse"), L = l.useRef(null), k = (0, p.S)(e => e.hasDefaultFilters()), I = (0, u.sp)(), {
     handlePageChange: N,
-    currentPage: w
+    currentPage: A
   } = (0, _.h)({
     scrollerRef: x,
     sortedCategories: j
-  }), A = l.useCallback(e => {
+  }), w = l.useCallback(e => {
     c.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == I ? true : I.sessionId,
       page_section: null == I ? true : I.pageSection,
@@ -152,7 +152,7 @@ let j = e => {
             children: [(0, n.jsx)(o.Text, {
               variant: "text-md/semibold",
               children: y.intl.string(y.t.uaX709)
-            }), (0, n.jsx)(m.Z, {})]
+            }), (0, n.jsx)(b.Z, {})]
           }), (0, n.jsx)("div", {
             ref: B,
             children: (0, n.jsx)(o.zxk, {
@@ -185,21 +185,21 @@ let j = e => {
       }), T && !k ? (0, n.jsx)(v.Z, {
         isFullScreen: t,
         scrollerRef: x,
-        tab: b
-      }, b) : (0, C.RE)(b) ? (0, n.jsx)(O.Z, {
+        tab: m
+      }, m) : (0, C.RE)(m) ? (0, n.jsx)(O.Z, {
         isFullScreen: t,
         scrollerRef: x,
-        tab: b
-      }, b) : (0, n.jsx)(u.k0, {
+        tab: m
+      }, m) : (0, n.jsx)(u.k0, {
         newValue: {
-          pageIndex: w
+          pageIndex: A
         },
         children: (0, n.jsx)(f.Z, {
           isFullScreen: t,
           sortedCategories: j,
           setCategoryRef: P,
-          currentPage: w,
-          handlePageChange: A
+          currentPage: A,
+          handlePageChange: w
         })
       })]
     })

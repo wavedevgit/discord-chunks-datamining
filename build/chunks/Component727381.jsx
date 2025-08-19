@@ -50,10 +50,10 @@ function w(A) {
     location: r,
     className: g,
     onNavigate: E
-  } = A, w = (0, i.e7)([o.default], () => o.default.getUser(e), [e]), D = (0, i.e7)([a.ZP], () => a.ZP.getMember(t, e), [t, e]);
+  } = A, w = (0, i.e7)([o.default], () => o.default.getUser(e), [e]), D = (0, i.e7)([s.ZP], () => s.ZP.getMember(t, e), [t, e]);
   return null == w || null == D ? null : (0, n.jsxs)("div", {
     className: l()(C.container, g),
-    children: [(0, n.jsx)(B, {}), (0, n.jsxs)(s.Ttm, {
+    children: [(0, n.jsx)(B, {}), (0, n.jsxs)(a.Ttm, {
       className: C.innerContainer,
       children: [(0, n.jsx)(h.Z, {
         member: D

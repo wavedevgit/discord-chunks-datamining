@@ -31,19 +31,19 @@ let v = () => {
       sortDirection: r
     } = e;
     return t === s.E.RECENCY ? {
-      label: m.intl.string(m.t["51Bhi4"]),
+      label: b.intl.string(b.t["51Bhi4"]),
       value: "recent"
     } : t === s.E.PRICE ? r === o.F.ASC ? {
-      label: m.intl.string(m.t.m8RVU1),
+      label: b.intl.string(b.t.m8RVU1),
       value: "price-asc"
     } : {
-      label: m.intl.string(m.t.zBwQJC),
+      label: b.intl.string(b.t.zBwQJC),
       value: "price-desc"
     } : t === s.E.RELEVANCE ? {
-      label: m.intl.string(m.t["XoeT//"]),
+      label: b.intl.string(b.t["XoeT//"]),
       value: "relevance"
     } : {
-      label: m.intl.string(m.t.Y68e5u),
+      label: b.intl.string(b.t.Y68e5u),
       value: "popularity"
     }
   }, []), y = Chunk647438.useCallback(e => ({
@@ -69,7 +69,7 @@ let v = () => {
     }
   })[e], []), S = Chunk647438.useCallback(e => {
     let r = E(y(e));
-    u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == a ? true : a.sessionId,
       page_section: null == a ? true : a.pageSection,
       page_category: null == a ? true : a.pageCategory,

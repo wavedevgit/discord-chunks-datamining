@@ -637,7 +637,7 @@ let ev = 12633 == require.j ? Chunk647438.memo(function(e) {
         }), (0, r.jsx)(H.Z, {
           category: l,
           className: ea.limitedTimeBadge,
-          display: "card"
+          display: H.k.CARD
         }), el || ei || !Y ? eP ? (0, r.jsx)(m.IGR, {
           text: es.intl.string(es.t["0TmQRE"]),
           disableColor: true,

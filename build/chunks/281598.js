@@ -57,12 +57,14 @@ function u(e, t) {
   }), e
 }
 var d = function(e) {
-    return e.SHOP_ALL_BANNER_STATIC = "shop_all_banner.jpg", e.SHOP_ALL_BANNER_ANIMATED = "shop_all_banner_animated.webm", e.HERO_BANNER_STATIC = "hero_banner.jpg", e.HERO_BANNER_ANIMATED = "hero_banner_animated.webm", e.HERO_LOGO = "hero_logo.png", e.FEATURED_BLOCK = "featured_block.png", e.UPSELL_BANNER = "upsell_banner.jpg", e.UPSELL_BANNER_POPOUT = "upsell_banner_popout.png", e.PDP_BACKGROUND = "pdp_bg.jpg", e.SHOP_BUTTON_BG_HOVER = "shop_button_bg_hover.png", e.SHOP_BUTTON_BG_HOVER_DARK = "shop_button_bg_hover_dark.png", e.SHOP_BUTTON_BG_HOVER_LIGHT = "shop_button_bg_hover_light.png", e.SHOP_BUTTON_BG_RESTING = "shop_button_bg_resting.png", e.SHOP_BUTTON_BG_RESTING_DARK = "shop_button_bg_resting_dark.png", e.SHOP_BUTTON_BG_RESTING_LIGHT = "shop_button_bg_resting_light.png", e.COACHTIP_AVATAR = "coachtip_avatar.png", e.LOGO = "logo.png", e.MOBILE_BANNER = "mobile_banner.jpg", e.MOBILE_BACKGROUND = "mobile_bg.jpg", e
+    return e.CATALOG_BANNER_STATIC = "catalog_banner.jpg", e.CATALOG_BANNER_ANIMATED = "catalog_banner_animated.webm", e.SHOP_ALL_BANNER_STATIC = "shop_all_banner.jpg", e.SHOP_ALL_BANNER_ANIMATED = "shop_all_banner_animated.webm", e.HERO_BANNER_STATIC = "hero_banner.jpg", e.HERO_BANNER_ANIMATED = "hero_banner_animated.webm", e.HERO_LOGO = "hero_logo.png", e.FEATURED_BLOCK = "featured_block.png", e.UPSELL_BANNER = "upsell_banner.jpg", e.UPSELL_BANNER_POPOUT = "upsell_banner_popout.png", e.PDP_BACKGROUND = "pdp_bg.jpg", e.SHOP_BUTTON_BG_HOVER = "shop_button_bg_hover.png", e.SHOP_BUTTON_BG_HOVER_DARK = "shop_button_bg_hover_dark.png", e.SHOP_BUTTON_BG_HOVER_LIGHT = "shop_button_bg_hover_light.png", e.SHOP_BUTTON_BG_RESTING = "shop_button_bg_resting.png", e.SHOP_BUTTON_BG_RESTING_DARK = "shop_button_bg_resting_dark.png", e.SHOP_BUTTON_BG_RESTING_LIGHT = "shop_button_bg_resting_light.png", e.COACHTIP_AVATAR = "coachtip_avatar.png", e.LOGO = "logo.png", e.MOBILE_BANNER = "mobile_banner.jpg", e.MOBILE_BACKGROUND = "mobile_bg.jpg", e
   }({}),
   f = function(e) {
     return e.PROFILE_EFFECT = "profile_effect", e.AVATAR_DECORATION = "avatar_decoration", e
   }({});
 let _ = {
+    "catalog_banner.jpg": "catalog_banner.jpg",
+    "catalog_banner_animated.webm": "catalog_banner_animated.webm",
     "shop_all_banner.jpg": "shop_all_banner.jpg",
     "shop_all_banner_animated.webm": "shop_all_banner_animated.webm",
     "hero_banner.jpg": "hero_banner.jpg",

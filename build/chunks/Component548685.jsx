@@ -39,8 +39,8 @@ let T = e => {
     hasSorting: k,
     prioritizeUserDiscounts: I,
     tab: N,
-    buttonContainerClassName: w
-  } = e, A = (0, o.e7)([d.default], () => d.default.getCurrentUser()), B = b.ZP.canUseCollectibles(A), R = (0, y.G)("FeedBlock"), {
+    buttonContainerClassName: A
+  } = e, w = (0, o.e7)([d.default], () => d.default.getCurrentUser()), B = m.ZP.canUseCollectibles(w), R = (0, y.G)("FeedBlock"), {
     sortType: Z,
     setSortType: D,
     sortedItems: M,
@@ -50,7 +50,7 @@ let T = e => {
   } = (0, C.Z)(T, B, I), V = (0, E.St)(M), U = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), z = (0, o.e7)([p.Z], () => p.Z.isFocused()), G = !U && z, {
     animationPhase: q,
     startAnimation: K
-  } = (0, O.y)(), Y = (0, m.sp)(), X = null != (t = null == Y ? true : Y.sessionId) ? t : "", Q = l.useRef(null), J = l.useCallback(e => {
+  } = (0, O.y)(), Y = (0, b.sp)(), X = null != (t = null == Y ? true : Y.sessionId) ? t : "", Q = l.useRef(null), J = l.useCallback(e => {
     K({
       isShuffling: false,
       onOutroComplete: () => D(e)
@@ -59,7 +59,7 @@ let T = e => {
       sort_type: e
     })
   }, [K, D, X]);
-  return null == A ? null : (0, n.jsxs)("div", {
+  return null == w ? null : (0, n.jsxs)("div", {
     className: i()(P.popularPicksSection, P.centeredSection),
     children: [(0, n.jsxs)("div", {
       className: P.blockHeader,
@@ -117,7 +117,7 @@ let T = e => {
           variant: "text-md/medium",
           children: x.intl.string(x.t.uaX709)
         }), (0, n.jsx)("div", {
-          className: w,
+          className: A,
           children: (0, n.jsx)(s.PhF, {
             options: F,
             select: J,
@@ -129,7 +129,7 @@ let T = e => {
             serialize: e => e
           })
         }), (0, n.jsx)("div", {
-          className: w,
+          className: A,
           children: (0, n.jsx)(s.zxk, {
             variant: "secondary",
             text: x.intl.string(x.t.X3tnc3),
@@ -159,7 +159,7 @@ let T = e => {
             className: P.shuffleOutro
           }, "".concat(e.skuId, "-").concat(t));
           else q === O.g.SORT_OUT ? r = P.sortChangedOutro : q === O.g.SHUFFLE_IN ? r = P.shuffleIntro : q === O.g.SORT_IN && (r = P.sortChangedIntro);
-        return (0, n.jsx)(m.k0, {
+        return (0, n.jsx)(b.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "popular picks",
@@ -168,7 +168,7 @@ let T = e => {
           children: (0, n.jsx)(v.Z, {
             product: e,
             category: l,
-            user: A,
+            user: w,
             tab: N,
             className: r
           })

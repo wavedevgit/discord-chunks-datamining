@@ -39,8 +39,8 @@ function y(e) {
     skus: k,
     currentPage: I,
     totalCount: N,
-    isFetchingResults: w
-  } = (0, b.a)(), A = (0, o.Wu)([p.Z], () => p.Z.getProductsBySkus(k)), B = l.useCallback(() => {
+    isFetchingResults: A
+  } = (0, m.a)(), w = (0, o.Wu)([p.Z], () => p.Z.getProductsBySkus(k)), B = l.useCallback(() => {
     var e;
     null == y || null == (e = y.current) || e.scrollToTop({
       animate: true
@@ -50,11 +50,11 @@ function y(e) {
     B()
   }, [R, B]);
   let Z = (0, g.a)(),
-    D = l.useMemo(() => Z(A), [Z, A]);
+    D = l.useMemo(() => Z(w), [Z, w]);
   l.useEffect(() => {
-    r || (0, m.n)({
+    r || (0, b.n)({
       sessionId: j,
-      checkpoint: m.a.SHOP_RENDERED,
+      checkpoint: b.a.SHOP_RENDERED,
       tab: S,
       isFullScreen: a,
       unpublishedCategoriesShown: T,
@@ -68,7 +68,7 @@ function y(e) {
       queryPageSize: W
     } = (0, f.S)(),
     [V, U] = l.useState(false),
-    z = r || w || null == L;
+    z = r || A || null == L;
   l.useEffect(() => {
     if (z) return void U(false);
     D.length > 0 && U(true)

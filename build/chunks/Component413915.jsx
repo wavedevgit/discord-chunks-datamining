@@ -1,7 +1,7 @@
-/** Chunk was on 66181 **/
-/** chunk id: 413915, original params: e,t,n (module,exports,require) **/
-require.d(exports, {
-  Z: () => d
+/** Chunk was on 8124 **/
+/** chunk id: 413915, original params: a,e,t (module,exports,require) **/
+require.r(exports), require.d(exports, {
+  default: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,24 +10,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk172751 = require("./172751.jsx"),
   Chunk131085 = require("./131085.js"),
   Chunk298282 = require("./298282.js");
-let d = Chunk647438.memo(function(e) {
+let b = Chunk647438.memo(function(a) {
   let {
-    guildId: t,
-    guildProfile: n
-  } = e;
-  return (0, i.jsx)("div", {
-    className: c.tagContainer,
-    children: (0, i.jsxs)("div", {
-      className: c.tag,
-      children: [null != n.badge && (0, i.jsx)(l.eI, {
-        src: (0, a.Ic)(t, n.badge, o.Gg.SIZE_32),
-        tag: n.tag,
-        size: o.Gg.SIZE_32,
-        className: c.badge
-      }), (0, i.jsx)(s.Text, {
+    guildId: e,
+    guildProfile: t
+  } = a;
+  return (0, s.jsx)("div", {
+    className: r.tagContainer,
+    children: (0, s.jsxs)("div", {
+      className: r.tag,
+      children: [null != t.badge && (0, s.jsx)(c.eI, {
+        src: (0, i.Ic)(e, t.badge, g.Gg.SIZE_32),
+        tag: t.tag,
+        size: g.Gg.SIZE_32,
+        className: r.badge
+      }), (0, s.jsx)(d.Text, {
         tag: "span",
         variant: "heading-xl/semibold",
-        children: n.tag
+        children: t.tag
       })]
     })
   })

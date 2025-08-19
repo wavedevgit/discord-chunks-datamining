@@ -5,7 +5,7 @@ require.d(exports, {
   C0: () => Al,
   C2: () => $,
   EN: () => z,
-  F1: () => As,
+  F1: () => Aa,
   HE: () => k,
   HN: () => Y,
   Iv: () => Ag,
@@ -33,7 +33,7 @@ require.d(exports, {
   uB: () => AA,
   vc: () => Ao,
   vm: () => An,
-  zT: () => Aa
+  zT: () => As
 }), require("./415506.js"), require("./539854.js"), require("./49124.js");
 var Chunk654861 = require("./654861.js"),
   r = require.n(Chunk654861),
@@ -335,10 +335,10 @@ let Z = new Chunk710845.Z("AuditLogUtils"),
     [Chunk981631.zUn.VERIFICATION_ENABLED]: A => true === A.newValue ? L.t.fnkzDQ : L.t.WYT6kZ,
     [Chunk981631.zUn.MANUAL_APPROVAL_ENABLED]: A => true === A.newValue ? L.t.jzSvVV : L.t.WxyOtr
   }, R()),
-  As = () => x({
+  Aa = () => x({
     [Chunk981631.zUn.STATUS]: () => Chunk388032.t.HyCSnJ
   }, R()),
-  Aa = () => ({
+  As = () => ({
     [Chunk981631.zUn.DESCRIPTION]: () => Chunk388032.t.nsUZKS,
     [Chunk981631.zUn.BRAND_COLOR_PRIMARY]: () => Chunk388032.t.qe9mgI,
     [Chunk981631.zUn.CUSTOM_BANNER_HASH]: () => Chunk388032.t["04b5KC"],
@@ -842,9 +842,9 @@ function AE(A) {
       let r = null != A.changes ? A.changes.find(A => A.key === V.zUn.ENTITY_TYPE) : null;
       if (null == r) return L.t["UZ+U3N"];
       switch (r.newValue) {
-        case s.w.MESSAGE:
+        case a.w.MESSAGE:
           return L.t["PyEa+P"];
-        case s.w.FORUM_POST:
+        case a.w.FORUM_POST:
           return L.t.hCuAb2;
         default:
           return L.t["UZ+U3N"]
@@ -1175,14 +1175,14 @@ function AD(A, e) {
                       r = O.Ge(n, t),
                       l = O.Ge(t, n),
                       i = [],
-                      s = [];
+                      a = [];
                     for (let A in m.zZ) {
                       let e = m.zZ[A];
-                      O.yE(r, e) && i.push(e), O.yE(l, e) && s.push(e)
+                      O.yE(r, e) && i.push(e), O.yE(l, e) && a.push(e)
                     }
                     return {
                       added: i,
-                      removed: s
+                      removed: a
                     }
                   }(A.oldValue, A.newValue);
                 if (t.length > 0) {
@@ -1293,14 +1293,14 @@ function AM(A, e) {
     r = o.Od(n, t),
     l = o.Od(t, n),
     i = [],
-    s = [];
+    a = [];
   for (let A in V.Plq) {
     let e = V.Plq[A];
-    o.e$(r, e) && i.push(e), o.e$(l, e) && s.push(e)
+    o.e$(r, e) && i.push(e), o.e$(l, e) && a.push(e)
   }
   return {
     added: i,
-    removed: s
+    removed: a
   }
 }
 

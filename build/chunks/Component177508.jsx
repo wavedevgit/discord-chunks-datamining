@@ -1072,10 +1072,10 @@ function eh() {
       title: "Header",
       body: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Only with Nitro"],
       size: "sm",
-      asset: (0, Chunk951288.jsx)("img", {
-        src: Chunk315416.Z,
-        alt: "Small placeholder"
-      }),
+      graphic: {
+        type: "image",
+        src: Chunk315416.Z
+      },
       badge: "new",
       actions: [{
         text: "Button",
@@ -1091,10 +1091,10 @@ function eh() {
       },
       title: "Header",
       body: "Body",
-      asset: (0, Chunk951288.jsx)("img", {
-        src: Chunk453707.Z,
-        alt: "Medium placeholder"
-      }),
+      graphic: {
+        type: "image",
+        src: Chunk453707.Z
+      },
       badge: "new",
       actions: [{
         text: "Button",
@@ -1124,10 +1124,10 @@ function eh() {
       },
       title: "Ipsum Dolor",
       body: "Lorem ipsum dolor sit amet, consectetur elit. Sed do eiusmod.",
-      asset: (0, Chunk951288.jsx)("img", {
-        src: Chunk453707.Z,
-        alt: "Medium placeholder"
-      }),
+      graphic: {
+        type: "image",
+        src: Chunk453707.Z
+      },
       badge: "new",
       actions: [{
         text: "Button",
@@ -1148,10 +1148,10 @@ function eh() {
       },
       title: "Header",
       body: "Body",
-      asset: (0, Chunk951288.jsx)("img", {
-        src: Chunk453707.Z,
-        alt: "Medium placeholder"
-      }),
+      graphic: {
+        type: "image",
+        src: Chunk453707.Z
+      },
       badge: "new",
       actions: [{
         text: "Primary",
@@ -1172,10 +1172,10 @@ function eh() {
       },
       title: "No Actions",
       body: "This popover has no action buttons, just content to display.",
-      asset: (0, Chunk951288.jsx)("img", {
-        src: Chunk453707.Z,
-        alt: "Medium placeholder"
-      }),
+      graphic: {
+        type: "image",
+        src: Chunk453707.Z
+      },
       badge: "new"
     }), (0, Chunk951288.jsx)(Chunk907862.J2, {
       targetElementRef: ei,
@@ -1187,10 +1187,10 @@ function eh() {
       },
       title: "Custom Caret API",
       body: "Using CaretConfig with END placement",
-      asset: (0, Chunk951288.jsx)("img", {
-        src: Chunk453707.Z,
-        alt: "Medium placeholder"
-      }),
+      graphic: {
+        type: "image",
+        src: Chunk453707.Z
+      },
       badge: "new",
       actions: [{
         text: "Got it",
@@ -1206,10 +1206,10 @@ function eh() {
       },
       title: "Left Side Caret",
       body: "Caret positioned on the left side at start",
-      asset: (0, Chunk951288.jsx)("img", {
-        src: Chunk453707.Z,
-        alt: "Medium placeholder"
-      }),
+      graphic: {
+        type: "image",
+        src: Chunk453707.Z
+      },
       badge: "early_access",
       actions: [{
         text: "Close",
@@ -1226,10 +1226,10 @@ function eh() {
       },
       title: "Custom Offset",
       body: "Caret positioned 50px from center with custom offset",
-      asset: (0, Chunk951288.jsx)("img", {
-        src: Chunk453707.Z,
-        alt: "Medium placeholder"
-      }),
+      graphic: {
+        type: "image",
+        src: Chunk453707.Z
+      },
       badge: "beta",
       actions: [{
         text: "Amazing!",
@@ -1246,10 +1246,10 @@ function eh() {
       },
       title: "Left Center Positioning",
       body: "Popover appears to the right with caret centered on the left side",
-      asset: (0, Chunk951288.jsx)("img", {
-        src: Chunk453707.Z,
-        alt: "Medium placeholder"
-      }),
+      graphic: {
+        type: "image",
+        src: Chunk453707.Z
+      },
       badge: "new",
       actions: [{
         text: "Perfect!",
@@ -1265,10 +1265,10 @@ function eh() {
       },
       title: "Purple Gradient",
       body: "This popover has a beautiful purple gradient background",
-      asset: (0, Chunk951288.jsx)("img", {
-        src: Chunk453707.Z,
-        alt: "Medium placeholder"
-      }),
+      graphic: {
+        type: "image",
+        src: Chunk453707.Z
+      },
       gradientColor: "purple",
       badge: "new",
       actions: [{
@@ -1285,10 +1285,10 @@ function eh() {
       },
       title: "Blue Gradient",
       body: "This popover showcases the blue gradient option",
-      asset: (0, Chunk951288.jsx)("img", {
-        src: Chunk453707.Z,
-        alt: "Medium placeholder"
-      }),
+      graphic: {
+        type: "image",
+        src: Chunk453707.Z
+      },
       gradientColor: "blue",
       badge: "beta",
       actions: [{
@@ -1305,10 +1305,10 @@ function eh() {
       },
       title: "Nitro Pink Gradient",
       body: "Experience the premium nitro-pink gradient effect",
-      asset: (0, Chunk951288.jsx)("img", {
-        src: Chunk453707.Z,
-        alt: "Medium placeholder"
-      }),
+      graphic: {
+        type: "image",
+        src: Chunk453707.Z
+      },
       gradientColor: "nitro-pink",
       textLink: {
         text: "Learn about Nitro",
@@ -1329,10 +1329,10 @@ function eh() {
       },
       title: "Voice Filters",
       body: "Experience enhanced voice quality with our latest filtering technology. Perfect for gaming and streaming.",
-      asset: (0, Chunk951288.jsx)("img", {
-        src: Chunk715720.Z,
-        alt: "Voice Filters"
-      }),
+      graphic: {
+        type: "image",
+        src: Chunk715720.Z
+      },
       badge: "new",
       gradientColor: "purple",
       actions: [{
@@ -1399,10 +1399,10 @@ function eh() {
       steps: [{
         title: "Welcome to Quests!",
         body: "Journey to Quest Home in Discover to start earning Orbs.",
-        asset: (0, Chunk951288.jsx)("img", {
-          src: Chunk453707.Z,
-          alt: "Medium placeholder"
-        }),
+        graphic: {
+          type: "image",
+          src: Chunk453707.Z
+        },
         badge: "new",
         action: {
           text: "Next"
@@ -1411,10 +1411,10 @@ function eh() {
       }, {
         title: "Earn Rewards",
         body: "Complete quests to earn Orbs and unlock exclusive rewards.",
-        asset: (0, Chunk951288.jsx)("img", {
-          src: Chunk715720.Z,
-          alt: "Quest Rewards"
-        }),
+        graphic: {
+          type: "image",
+          src: Chunk715720.Z
+        },
         action: {
           text: "Next"
         },
@@ -1422,10 +1422,10 @@ function eh() {
       }, {
         title: "Quest Complete!",
         body: "You're all set to start your quest adventure. Good luck!",
-        asset: (0, Chunk951288.jsx)("img", {
-          src: Chunk453707.Z,
-          alt: "Medium placeholder"
-        }),
+        graphic: {
+          type: "image",
+          src: Chunk453707.Z
+        },
         action: {
           text: "Get Started"
         },
@@ -1447,10 +1447,10 @@ function eh() {
       },
       title: "Experience Voice Filters",
       body: "Enhanced voice quality with our latest filtering technology. Try the expressive button!",
-      asset: (0, Chunk951288.jsx)("img", {
-        src: Chunk715720.Z,
-        alt: "Voice Filters"
-      }),
+      graphic: {
+        type: "image",
+        src: Chunk715720.Z
+      },
       badge: "new",
       gradientColor: "nitro-pink",
       actions: [{
@@ -1469,10 +1469,10 @@ function eh() {
       steps: [{
         title: "Discover Features",
         body: "Explore amazing new capabilities in Discord.",
-        asset: (0, Chunk951288.jsx)("img", {
-          src: Chunk453707.Z,
-          alt: "Medium placeholder"
-        }),
+        graphic: {
+          type: "image",
+          src: Chunk453707.Z
+        },
         badge: "new",
         action: {
           text: "Continue"
@@ -1481,10 +1481,10 @@ function eh() {
       }, {
         title: "Unlock Potential",
         body: "Learn how to make the most of your Discord experience.",
-        asset: (0, Chunk951288.jsx)("img", {
-          src: Chunk715720.Z,
-          alt: "Features"
-        }),
+        graphic: {
+          type: "image",
+          src: Chunk715720.Z
+        },
         action: {
           text: "Almost There"
         },
@@ -1492,10 +1492,10 @@ function eh() {
       }, {
         title: "Ready to Go!",
         body: "You're all set! Notice the expressive button animation.",
-        asset: (0, Chunk951288.jsx)("img", {
-          src: Chunk453707.Z,
-          alt: "Medium placeholder"
-        }),
+        graphic: {
+          type: "image",
+          src: Chunk453707.Z
+        },
         action: {
           text: "Get Started",
           variant: "expressive"

@@ -2,9 +2,9 @@
 /** chunk id: 524329, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Es: () => c,
-  RM: () => s,
+  RM: () => a,
   VP: () => g,
-  Xb: () => a,
+  Xb: () => s,
   sm: () => o,
   y0: () => i
 }), require("./953529.js");
@@ -19,7 +19,7 @@ let i = function(A) {
       isLurking: e
     })
   },
-  s = async A => {
+  a = async A => {
     r.Z.dispatch({
       type: "WELCOME_SCREEN_FETCH_START"
     });
@@ -39,7 +39,7 @@ let i = function(A) {
         type: "WELCOME_SCREEN_FETCH_FAIL"
       })
     }
-  }, a = () => {
+  }, s = () => {
     Chunk570140.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_RESET"
     })

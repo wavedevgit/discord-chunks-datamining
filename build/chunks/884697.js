@@ -167,6 +167,7 @@ let E = e => (null == e ? true : e.premiumType) != null,
   },
   D = (e, t) => {
     var n;
+    if (null == e || "" === e) return "";
     let {
       CDN_HOST: r,
       API_ENDPOINT: i

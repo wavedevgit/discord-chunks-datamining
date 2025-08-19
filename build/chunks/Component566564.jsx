@@ -41,7 +41,7 @@ let k = e => {
       isFullScreen: u
     } = e, {
       noCache: p,
-      includeUnpublished: m
+      includeUnpublished: b
     } = (0, h.Z)(), [S, P] = l.useState(false), k = (0, d.sp)(), I = null != (t = null == k ? true : k.sessionId) ? t : "";
     l.useEffect(() => {
       (0, f.n)({
@@ -49,18 +49,18 @@ let k = e => {
         checkpoint: f.a.SHOP_MOUNTED,
         tab: c,
         isFullScreen: u,
-        unpublishedCategoriesShown: m,
+        unpublishedCategoriesShown: b,
         cacheDisabled: p
       })
     }, [c]);
     let {
       isFetchingShopHome: N,
-      fetchShopHomeError: w,
-      shopBlocks: A,
+      fetchShopHomeError: A,
+      shopBlocks: w,
       refreshShopHome: B
     } = (0, g.E)(c, {
       noCache: p,
-      includeUnpublished: m,
+      includeUnpublished: b,
       includeBundles: true,
       logPerf: true
     }, {
@@ -71,19 +71,19 @@ let k = e => {
       B()
     }, [B]);
     return (l.useEffect(() => {
-      null != w || N || 0 === A.length || (0, f.n)({
+      null != A || N || 0 === w.length || (0, f.n)({
         sessionId: I,
         checkpoint: f.a.SHOP_RENDERED,
         tab: c,
         isFullScreen: u,
-        unpublishedCategoriesShown: m,
+        unpublishedCategoriesShown: b,
         cacheDisabled: p
       })
-    }, [w, N, A.length, m, p, I, c, u]), null != w) ? (0, n.jsx)(b.Z, {
+    }, [A, N, w.length, b, p, I, c, u]), null != A) ? (0, n.jsx)(m.Z, {
       onRetry: R,
-      errorOrigin: b.i.SHOP_PAGE,
-      errorMessage: w.message
-    }) : N || 0 === A.length ? (0, n.jsxs)("div", {
+      errorOrigin: m.i.SHOP_PAGE,
+      errorMessage: A.message
+    }) : N || 0 === w.length ? (0, n.jsxs)("div", {
       className: i()(L.loadingContainer, L.feedContent),
       children: [(0, n.jsx)(C.Z, {
         isLoading: N,
@@ -101,7 +101,7 @@ let k = e => {
         tab: c
       })]
     }) : (0, n.jsx)(n.Fragment, {
-      children: A.map((e, t) => ((e, t, l) => {
+      children: w.map((e, t) => ((e, t, l) => {
         if (null == e) return null;
         let d = null,
           p = false;
@@ -170,7 +170,7 @@ let k = e => {
           }),
           children: d
         }, l)
-      })(e, t > 0 ? A[t - 1] : null, t))
+      })(e, t > 0 ? w[t - 1] : null, t))
     })
   },
   I = e => {
@@ -181,7 +181,7 @@ let k = e => {
       transitionState: i
     } = e, o = l.useRef(null), {
       handleScroll: g
-    } = (0, c.z)(o, a), f = (0, p.R)("CollectiblesFeedShop"), b = (0, m.R)(), h = (0, d.sp)(), [_, v] = l.useState(j.IV), [O, C] = l.useState(false);
+    } = (0, c.z)(o, a), f = (0, p.R)("CollectiblesFeedShop"), m = (0, b.R)(), h = (0, d.sp)(), [_, v] = l.useState(j.IV), [O, C] = l.useState(false);
     return l.useEffect(() => {
       if (null != o.current) {
         let e = () => {
@@ -205,7 +205,7 @@ let k = e => {
           children: [(0, n.jsx)(k, {
             handleTransition: r,
             numVisibleItems: _,
-            isFetchingCategories: b,
+            isFetchingCategories: m,
             tab: a,
             isFullScreen: t
           }), a !== j.AW.CATALOG && _ >= f && (0, n.jsxs)("div", {

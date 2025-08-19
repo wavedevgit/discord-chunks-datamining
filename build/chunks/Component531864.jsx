@@ -2,7 +2,7 @@
 /** chunk id: 531864, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -91,12 +91,12 @@ let g = {
     size: g,
     skuId: "1217625794382401577"
   }],
-  b = e => {
+  m = e => {
     let {
       peaking: t,
       transitioning: r,
       style: a
-    } = e, g = window.innerHeight, [b, m] = l.useState(false), h = f.map(e => {
+    } = e, g = window.innerHeight, [m, b] = l.useState(false), h = f.map(e => {
       let {
         skuId: t
       } = e;
@@ -104,13 +104,13 @@ let g = {
     });
     return l.useEffect(() => {
       r && setTimeout(() => {
-        m(true)
+        b(true)
       }, d.lb)
     }, [r]), (0, n.jsx)("div", {
       style: a,
       className: i()(p.jumbleWrapper, {
         [p.peaking]: t,
-        [p.transitioned]: b
+        [p.transitioned]: m
       }),
       children: f.map((e, t) => {
         var l, a;
@@ -118,8 +118,8 @@ let g = {
           top: i,
           left: c,
           rotation: f,
-          size: b,
-          skuId: m
+          size: m,
+          skuId: b
         } = e, _ = null == (l = h[t]) ? true : l.items[0], v = null == (a = h[t]) ? true : a.type, O = v === o.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, n.jsxs)("div", {
           className: p.asset,
@@ -127,8 +127,8 @@ let g = {
             top: r ? -g - O : i,
             left: r ? "".concat(c - 75 - 350 * Math.random()) : c,
             transform: "rotate(".concat(f, "deg)"),
-            height: b.y,
-            width: b.x,
+            height: m.y,
+            width: m.x,
             transitionDelay: "".concat(Math.random() / 3, "s"),
             transitionDuration: "".concat(d.lb - 200 * Math.random(), "ms")
           },
@@ -139,7 +139,7 @@ let g = {
             isPurchased: false,
             isHovering: true
           })]
-        }, m + t)
+        }, b + t)
       })
     })
   }

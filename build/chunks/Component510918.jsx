@@ -121,7 +121,7 @@ let N = A => {
         secondaryTintColor: N
       }, Z));
     case L.x_.CROSSHAIRS:
-      return (0, n.jsx)(s.Q, x({
+      return (0, n.jsx)(a.Q, x({
         primaryTintColor: t,
         secondaryTintColor: N
       }, Z));
@@ -202,7 +202,7 @@ let N = A => {
         primaryTintColor: t
       }, Z));
     case L.x_.CROWN:
-      return (0, n.jsx)(a.O, x({
+      return (0, n.jsx)(s.O, x({
         primaryTintColor: t,
         secondaryTintColor: N
       }, Z));

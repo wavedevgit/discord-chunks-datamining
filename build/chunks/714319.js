@@ -1,8 +1,8 @@
 /** Chunk was on 12630 **/
 /** chunk id: 714319, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
-  G: () => s,
-  Z: () => a
+  G: () => a,
+  Z: () => s
 });
 var n, Chunk536895 = require("./536895.js");
 
@@ -37,9 +37,9 @@ function i(A, e) {
     Object.defineProperty(A, t, Object.getOwnPropertyDescriptor(e, t))
   }), A
 }
-var s = ((n = {}).UPDATE_ITEM_COUNT = "UPDATE_ITEM_COUNT", n.SET_FOCUSED_INDEX = "SET_FOCUSED_INDEX", n);
+var a = ((n = {}).UPDATE_ITEM_COUNT = "UPDATE_ITEM_COUNT", n.SET_FOCUSED_INDEX = "SET_FOCUSED_INDEX", n);
 
-function a(A, e) {
+function s(A, e) {
   switch (e.type) {
     case r.Us.NAVIGATE_UP:
       return i(l({}, A), {
