@@ -20,8 +20,8 @@ function u(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let d = 5 * Chunk70956.Z.Millis.MINUTE,
-  f = 1048576;
+let d = 15 * Chunk70956.Z.Millis.MINUTE,
+  f = 1835008;
 
 function _() {
   return Chunk358085.isPlatformEmbedded && (0, Chunk358085.isWindows)()
@@ -33,7 +33,9 @@ class p extends Chunk147913.Z {
   }
   handlePostConnectionOpen() {
     var e, t;
-    _() && "development" === (null == (e = (t = Chunk579806.Z.remoteApp).getReleaseChannel) ? true : module.call(exports)) && (this._checkInterval = setInterval(() => {
+    if (!_()) return;
+    let n = null == (e = (t = Chunk579806.Z.remoteApp).getReleaseChannel) ? true : module.call(exports);
+    ("development" === require || "canary" === require) && (this._checkInterval = setInterval(() => {
       this.trackPerformanceStats()
     }, d))
   }
@@ -43,7 +45,7 @@ class p extends Chunk147913.Z {
       let n = Chunk848479.Z.getMemoryUsageElectronProcessTypeDetails();
       if (null == require) return;
       (null != (t = null == (e = require.renderer) ? true : module.wss_priv_kb) ? exports : 0) > f && Chunk848479.Z.enablePerfMemoryHooks({
-        allocationThresholdKB: 256
+        allocationThresholdKB: 128
       }) && (this._heapHooksInstalled = true)
     }
     if (this._heapHooksInstalled) {

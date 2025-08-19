@@ -1644,7 +1644,7 @@ function ri(e) {
     },
     quality: i
   };
-  null != o && o.desktopSource.id !== d.desktopSource.id && (eW.setClipsSource(null), (0, ea.isWindows)() && null != o.desktopSource.soundshareId && T.pn(o.desktopSource.soundshareId)), null != l && t6(l, c), o = d;
+  null != o && (eW.setClipsSource(null), (0, ea.isWindows)() && null != o.desktopSource.soundshareId && T.pn(o.desktopSource.soundshareId)), null != l && t6(l, c), o = d;
   let f = tC(),
     _ = tP().videoHook;
   eW.setClipsSource({

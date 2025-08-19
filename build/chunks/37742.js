@@ -2,6 +2,7 @@
 /** chunk id: 37742, original params: e,t,n (module,exports,require) **/
 module.exports = {
   container: "container__38524",
+  containerV2: "containerV2__38524",
   connectedCounter: "connectedCounter__38524",
   icon: "icon__38524",
   tooltip: "tooltip__38524",
@@ -9,6 +10,7 @@ module.exports = {
   headerText: "headerText__38524",
   content: "content__38524",
   activityCounterRow: "activityCounterRow__38524",
+  activityCounterRowV2: "activityCounterRowV2__38524",
   activityOverview: "activityOverview__38524",
   emptyActivity: "emptyActivity__38524",
   actionSection: "actionSection__38524",

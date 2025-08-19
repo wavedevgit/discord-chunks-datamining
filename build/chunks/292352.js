@@ -3,14 +3,15 @@
 require.d(exports, {
   AG: () => f,
   MY: () => h,
-  Mu: () => b,
+  Mu: () => U,
   Of: () => T,
   QH: () => M,
-  TX: () => m,
-  Wz: () => v,
-  YC: () => U,
+  TX: () => v,
+  U: () => Y,
+  Wz: () => F,
+  YC: () => b,
   _6: () => D,
-  _w: () => A,
+  _w: () => p,
   dG: () => R,
   f2: () => y,
   i0: () => S,
@@ -18,11 +19,11 @@ require.d(exports, {
   ip: () => C,
   ix: () => N,
   ne: () => L,
-  tx: () => Y,
-  vH: () => p,
+  tx: () => O,
+  vH: () => A,
   zE: () => I
 }), require("./388685.js");
-var i, r, l, a, d, u, s, Chunk860911 = require("./860911.js"),
+var i, r, l, a, o, d, s, Chunk860911 = require("./860911.js"),
   Chunk70956 = require("./70956.js"),
   Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx");
@@ -31,83 +32,108 @@ let T = 30 * Chunk70956.Z.Millis.SECOND,
   S = 3,
   I = 26,
   C = 64,
-  A = (t, e) => "https://discord.com/feature/family-center/my-family/".concat(t, "/").concat(e),
+  p = (t, e) => "https://discord.com/feature/family-center/my-family/".concat(t, "/").concat(e),
   g = 4,
   y = 5 * Chunk70956.Z.Millis.MINUTE,
-  p = "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  A = "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
   N = (0, Chunk860911.Ft)(Object.freeze({
     FAMILY_CENTER_SETTINGS: "/family-center/settings",
     FAMILY_CENTER_MY_FAMILY: "/family-center/my-family"
   }), [":", "?", "@"]);
 var L = ((i = {})[i.PENDING = 1] = "PENDING", i[i.ACTIVE = 2] = "ACTIVE", i[i.INACTIVE = 3] = "INACTIVE", i[i.DECLINED = 4] = "DECLINED", i[i.EXPIRED = 5] = "EXPIRED", i),
-  h = ((r = {})[r.USER_ADD = 1] = "USER_ADD", r[r.GUILD_ADD = 2] = "GUILD_ADD", r[r.USER_INTERACTION = 3] = "USER_INTERACTION", r[r.GUILD_INTERACTION = 4] = "GUILD_INTERACTION", r[r.USER_CALLED = 5] = "USER_CALLED", r),
+  h = ((r = {})[r.USER_ADD = 1] = "USER_ADD", r[r.GUILD_ADD = 2] = "GUILD_ADD", r[r.USER_INTERACTION = 3] = "USER_INTERACTION", r[r.GUILD_INTERACTION = 4] = "GUILD_INTERACTION", r[r.USER_CALLED = 5] = "USER_CALLED", r[r.TOTAL_VOICE_MINUTES = 6] = "TOTAL_VOICE_MINUTES", r[r.PURCHASES = 7] = "PURCHASES", r),
   R = ((l = {}).ACTIVITY = "ACTIVITY", l.REQUESTS = "REQUESTS", l.SETTINGS = "SETTINGS", l),
   M = ((a = {})[a.ACTIVITY = 0] = "ACTIVITY", a[a.REQUESTS = 1] = "REQUESTS", a[a.SETTINGS = 2] = "SETTINGS", a),
-  b = ((d = {}).SIDENAV = "SIDENAV", d.SETTINGS = "SETTINGS", d),
-  D = ((u = {})[u.SIDENAV = 0] = "SIDENAV", u[u.SETTINGS = 1] = "SETTINGS", u),
-  U = ((s = {})[s.TabChange = 0] = "TabChange", s[s.ShowQRCodeModal = 1] = "ShowQRCodeModal", s[s.RevealQRCode = 2] = "RevealQRCode", s[s.ScanQRCodeButton = 3] = "ScanQRCodeButton", s[s.ScanQRCode = 4] = "ScanQRCode", s[s.LoadMore = 5] = "LoadMore", s[s.SelectTeen = 6] = "SelectTeen", s[s.HideQRCode = 7] = "HideQRCode", s);
-let Y = new Map([
-  [3, {
-    tooltipHeader: () => Chunk388032.intl.string(Chunk345909.default.kvTgWF),
-    tooltipDescription: t => t ? _.intl.string(c.default.cY19ub) : _.intl.string(c.default["K5r+sL"]),
-    sectionHeader: t => _.intl.formatToPlainString(c.default["4T3zWV"], {
-      count: t
-    }),
-    sectionDescription: t => t ? _.intl.string(c.default.cY19ub) : _.intl.string(c.default["K5r+sL"]),
-    timestampFormatter: () => ({
-      today: Chunk388032.intl.string(Chunk345909.default.fLBUx8),
-      yesterday: Chunk388032.intl.string(Chunk345909.default.cHHgxM),
-      days: Chunk345909.default.qvKjp6
-    })
-  }],
-  [5, {
-    tooltipHeader: () => Chunk388032.intl.string(Chunk345909.default.D7Sng4),
-    tooltipDescription: t => t ? _.intl.string(c.default["w7j/Li"]) : _.intl.string(c.default.SCIaWF),
-    sectionHeader: t => _.intl.formatToPlainString(c.default["0GE4Nj"], {
-      count: t
-    }),
-    sectionDescription: t => t ? _.intl.string(c.default["w7j/Li"]) : _.intl.string(c.default.SCIaWF),
-    timestampFormatter: () => ({
-      today: Chunk388032.intl.string(Chunk345909.default.IHd5cX),
-      yesterday: Chunk388032.intl.string(Chunk345909.default.wOsfxs),
-      days: Chunk345909.default.oCk8c3
-    })
-  }],
-  [1, {
-    tooltipHeader: () => Chunk388032.intl.string(Chunk345909.default.kIcKAg),
-    tooltipDescription: t => t ? _.intl.string(c.default.HvsFJS) : _.intl.string(c.default["1/QpPz"]),
-    sectionHeader: t => _.intl.formatToPlainString(c.default["TEvo+P"], {
-      count: t
-    }),
-    sectionDescription: t => t ? _.intl.string(c.default.HvsFJS) : _.intl.string(c.default["1/QpPz"]),
-    timestampFormatter: () => ({
-      today: Chunk388032.intl.string(Chunk345909.default.JUHIYW),
-      yesterday: Chunk388032.intl.string(Chunk345909.default.GiswUV),
-      days: Chunk345909.default.fwQgEx
-    })
-  }],
-  [2, {
-    tooltipHeader: () => Chunk388032.intl.string(Chunk345909.default["NulX9/"]),
-    tooltipDescription: t => t ? _.intl.string(c.default.Lmz9Vl) : _.intl.string(c.default.MTFxYW),
-    sectionHeader: t => _.intl.formatToPlainString(c.default["7feG7e"], {
-      count: t
-    }),
-    sectionDescription: t => t ? _.intl.string(c.default.Lmz9Vl) : _.intl.string(c.default.MTFxYW)
-  }],
-  [4, {
-    tooltipHeader: () => Chunk388032.intl.string(Chunk345909.default.CcrbCw),
-    tooltipDescription: O,
-    sectionHeader: t => _.intl.formatToPlainString(c.default.rcPInZ, {
-      count: t
-    }),
-    sectionDescription: O
-  }]
-]);
+  U = ((o = {}).SIDENAV = "SIDENAV", o.SETTINGS = "SETTINGS", o),
+  D = ((d = {})[d.SIDENAV = 0] = "SIDENAV", d[d.SETTINGS = 1] = "SETTINGS", d),
+  b = ((s = {})[s.TabChange = 0] = "TabChange", s[s.ShowQRCodeModal = 1] = "ShowQRCodeModal", s[s.RevealQRCode = 2] = "RevealQRCode", s[s.ScanQRCodeButton = 3] = "ScanQRCodeButton", s[s.ScanQRCode = 4] = "ScanQRCode", s[s.LoadMore = 5] = "LoadMore", s[s.SelectTeen = 6] = "SelectTeen", s[s.HideQRCode = 7] = "HideQRCode", s);
+let O = new Map([
+    [3, {
+      priority: 100,
+      tooltipHeader: () => Chunk388032.intl.string(Chunk345909.default.kvTgWF),
+      tooltipDescription: t => t ? _.intl.string(c.default.cY19ub) : _.intl.string(c.default["K5r+sL"]),
+      sectionHeader: t => _.intl.formatToPlainString(c.default["4T3zWV"], {
+        count: t
+      }),
+      sectionDescription: t => t ? _.intl.string(c.default.cY19ub) : _.intl.string(c.default["K5r+sL"]),
+      timestampFormatter: () => ({
+        today: Chunk388032.intl.string(Chunk345909.default.fLBUx8),
+        yesterday: Chunk388032.intl.string(Chunk345909.default.cHHgxM),
+        days: Chunk345909.default.qvKjp6
+      })
+    }],
+    [5, {
+      priority: 200,
+      tooltipHeader: () => Chunk388032.intl.string(Chunk345909.default.D7Sng4),
+      tooltipDescription: t => t ? _.intl.string(c.default["w7j/Li"]) : _.intl.string(c.default.SCIaWF),
+      sectionHeader: t => _.intl.formatToPlainString(c.default["0GE4Nj"], {
+        count: t
+      }),
+      sectionDescription: t => t ? _.intl.string(c.default["w7j/Li"]) : _.intl.string(c.default.SCIaWF),
+      timestampFormatter: () => ({
+        today: Chunk388032.intl.string(Chunk345909.default.IHd5cX),
+        yesterday: Chunk388032.intl.string(Chunk345909.default.wOsfxs),
+        days: Chunk345909.default.oCk8c3
+      })
+    }],
+    [1, {
+      priority: 300,
+      tooltipHeader: () => Chunk388032.intl.string(Chunk345909.default.kIcKAg),
+      tooltipDescription: t => t ? _.intl.string(c.default.HvsFJS) : _.intl.string(c.default["1/QpPz"]),
+      sectionHeader: t => _.intl.formatToPlainString(c.default["TEvo+P"], {
+        count: t
+      }),
+      sectionDescription: t => t ? _.intl.string(c.default.HvsFJS) : _.intl.string(c.default["1/QpPz"]),
+      timestampFormatter: () => ({
+        today: Chunk388032.intl.string(Chunk345909.default.JUHIYW),
+        yesterday: Chunk388032.intl.string(Chunk345909.default.GiswUV),
+        days: Chunk345909.default.fwQgEx
+      })
+    }],
+    [2, {
+      priority: 400,
+      tooltipHeader: () => Chunk388032.intl.string(Chunk345909.default["NulX9/"]),
+      tooltipDescription: t => t ? _.intl.string(c.default.Lmz9Vl) : _.intl.string(c.default.MTFxYW),
+      sectionHeader: t => _.intl.formatToPlainString(c.default["7feG7e"], {
+        count: t
+      }),
+      sectionDescription: t => t ? _.intl.string(c.default.Lmz9Vl) : _.intl.string(c.default.MTFxYW)
+    }],
+    [4, {
+      priority: 500,
+      tooltipHeader: () => Chunk388032.intl.string(Chunk345909.default.CcrbCw),
+      tooltipDescription: m,
+      sectionHeader: t => _.intl.formatToPlainString(c.default.rcPInZ, {
+        count: t
+      }),
+      sectionDescription: m
+    }]
+  ]),
+  Y = new Map([
+    [6, {
+      priority: 175,
+      tooltipHeader: () => Chunk388032.intl.string(Chunk345909.default.eo4Fxs),
+      tooltipDescription: t => t ? _.intl.string(c.default["Mx+/eX"]) : _.intl.string(c.default.n3otj4),
+      sectionHeader: t => _.intl.formatToPlainString(c.default.eGFWUV, {
+        count: t
+      }),
+      sectionDescription: t => t ? _.intl.string(c.default["Mx+/eX"]) : _.intl.string(c.default.n3otj4)
+    }],
+    [7, {
+      priority: 150,
+      tooltipHeader: () => Chunk388032.intl.string(Chunk345909.default.aOLJDw),
+      tooltipDescription: t => t ? _.intl.string(c.default.c9BHsr) : _.intl.string(c.default["85PtWl"]),
+      sectionHeader: t => _.intl.formatToPlainString(c.default.SIgpS0, {
+        count: t
+      }),
+      sectionDescription: t => t ? _.intl.string(c.default.c9BHsr) : _.intl.string(c.default["85PtWl"])
+    }]
+  ]);
 
-function O(t, e) {
+function m(t, e) {
   return t ? e ? _.intl.string(c.default.c0NgBQ) : _.intl.string(c.default.dcvNX1) : e ? _.intl.string(c.default.DLVyFx) : _.intl.string(c.default["823ugY"])
 }
-let m = () => ({
+let v = () => ({
     seconds: Chunk388032.intl.string(Chunk345909.default.CJdoeX),
     minutes: Chunk345909.default.InzMn5,
     hours: Chunk345909.default.ErkYCA,
@@ -115,7 +141,7 @@ let m = () => ({
     days: Chunk345909.default.pWig19,
     date: Chunk345909.default.MP3kho
   }),
-  v = () => ({
+  F = () => ({
     seconds: Chunk388032.intl.string(Chunk345909.default.BqsamZ),
     minutes: Chunk345909.default.kX3wJi,
     hours: Chunk345909.default.J18GbG,

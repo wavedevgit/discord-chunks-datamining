@@ -12,17 +12,18 @@ let l = e => {
   let {
     header: t,
     displayType: n
-  } = e, l = (0, s.C7)(n);
+  } = e, l = (0, s.C7)(n), o = (0, s.A)(n);
   return (0, i.jsxs)("div", {
     className: a.counter,
     children: [(0, i.jsx)(r.X6q, {
       variant: "heading-xxl/medium",
       color: l > 0 ? "text-brand" : "text-muted",
       children: (0, i.jsx)(r.y5t, {
-        children: null != l ? l : 0
+        children: o
       })
     }), (0, i.jsx)(r.Text, {
       variant: "text-sm/semibold",
+      className: a.counterText,
       children: t
     })]
   })

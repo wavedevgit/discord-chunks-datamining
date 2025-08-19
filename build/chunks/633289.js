@@ -26,7 +26,7 @@ class l extends Chunk299021.Z {
     }, Chunk570140.c.Early), this.track = function() {
       for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
       return Chunk626135.default.track(...exports)
-    }
+    }, this.surface = "discord_app"
   }
 }
 let c = new l

@@ -88,8 +88,9 @@ function E(e) {
 function b(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-let y = new Chunk579092.Yd("ApexExperimentStore"),
-  O = [Chunk341691.Cm.User],
+let y = new Chunk579092.Yd("ApexExperimentStore");
+(null == window.TextEncoder || null == window.TextDecoder) && require("./251171.js");
+let O = [Chunk341691.Cm.User],
   v = {
     user: {},
     guild: {}
@@ -150,6 +151,7 @@ class L extends(r = Chunk442837.ZP.PersistedStore) {
         }
       }
     }
+    returntrue
   }
   createOverride(e, t) {
     T = p(f({}, T), {
@@ -265,7 +267,7 @@ class L extends(r = Chunk442837.ZP.PersistedStore) {
       })
     } catch (e) {
       y.error("Error saving tracked exposures", e), this.track(u.j_.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
-        module: "discord_app",
+        module: this.surface,
         call: "ApexExperimentStore.saveTrackedExposures"
       }, {
         flush: true
@@ -288,7 +290,7 @@ class L extends(r = Chunk442837.ZP.PersistedStore) {
     return D(e)
   }
   constructor(...e) {
-    super(...e), d(this, "track", () => Promise.resolve())
+    super(...e), d(this, "track", () => Promise.resolve()), d(this, "surface", "unset")
   }
 }
 d(L, "displayName", "ApexExperimentStore"), d(L, "persistKey", "ApexExperimentStore")
