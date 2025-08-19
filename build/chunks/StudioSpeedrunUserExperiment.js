@@ -2,7 +2,7 @@
 /** chunk id: 556019, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  qt: () => l
+  qt: () => c
 });
 var Chunk203311 = require("./203311.js"),
   Chunk818083 = require("./818083.js");
@@ -66,40 +66,63 @@ let a = (0, Chunk818083.B)({
         enabled: true
       }
     }]
+  }),
+  l = (0, Chunk818083.B)({
+    kind: "user",
+    id: "2025-08-emoji_studio_speedrun",
+    label: "Emoji Studio V2 Speedrun",
+    defaultConfig: {
+      enabled: false
+    },
+    treatments: [{
+      id: 1,
+      label: "Enabled - Instant Upload, Emoji Editing Support",
+      config: {
+        enabled: true
+      }
+    }]
   });
 
-function l(e) {
+function c(e) {
   let {
     location: t,
     autoTrackExposure: n,
     disable: i = false
-  } = e, l = (0, r.$u)(t), {
-    enabled: c,
-    showExpressionPickerButton: u
+  } = e, c = (0, r.$u)(t), {
+    enabled: u,
+    showExpressionPickerButton: d
   } = a.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
-    disable: l || i
+    disable: c || i
   }), {
-    enabled: d
+    enabled: f
   } = o.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
-    disable: l || i
+    disable: c || i
   }), {
-    enabled: f
+    enabled: _
   } = s.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
-    disable: l || i
+    disable: c || i
+  }), {
+    enabled: p
+  } = l.useExperiment({
+    location: t
+  }, {
+    autoTrackExposure: n,
+    disable: c || i
   });
   return {
-    enabled: c,
-    isMobileEnabled: d,
-    isEntrypointEnabled: f || u,
-    isEntrypointExperimentEnabled: f
+    enabled: u,
+    isMobileEnabled: f,
+    isEntrypointEnabled: d || _ || p,
+    isEntrypointExperimentEnabled: _,
+    isV2SpeedrunExperimentEnabled: p
   }
 }

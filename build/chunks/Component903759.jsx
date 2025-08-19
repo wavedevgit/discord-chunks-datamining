@@ -1,7 +1,7 @@
 /** Chunk was on 67079 **/
 /** chunk id: 903759, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  u: () => h
+  u: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk746622 = require("./746622.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk443899 = require("./443899.js");
-let h = e => {
+let m = e => {
     let {
       setImage: t
     } = e, [n, s] = l.useState(null);
@@ -29,7 +29,7 @@ let h = e => {
           children: [(0, r.jsx)(a.Text, {
             variant: "text-md/medium",
             children: c.intl.format(c.t["Ks2/3d"], {
-              selectFileHook: (e, n) => (0, r.jsx)(m, {
+              selectFileHook: (e, n) => (0, r.jsx)(h, {
                 translatedContent: e,
                 setUserImage: t
               }, n)
@@ -50,7 +50,7 @@ let h = e => {
       })
     })
   },
-  m = e => {
+  h = e => {
     let {
       setUserImage: t,
       translatedContent: n

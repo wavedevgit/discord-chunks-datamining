@@ -12,7 +12,7 @@ let o = e => {
   let {
     name: t,
     onNameChange: n
-  } = e, o = l.useRef(null), u = l.useRef(null), [c, d] = l.useState(false), h = l.useCallback(e => {
+  } = e, o = l.useRef(null), u = l.useRef(null), [c, d] = l.useState(false), m = l.useCallback(e => {
     var t;
     u.current = null == (t = o.current) ? true : t.selectionStart, n(e = (e = e.replace(/\s/g, "_")).length < 2 ? e : i.ZP.sanitizeEmojiName(e))
   }, [n]);
@@ -22,7 +22,7 @@ let o = e => {
       null == (e = o.current) || e.setSelectionRange(u.current, u.current), u.current = null
     }
   });
-  let m = l.useCallback(() => {
+  let h = l.useCallback(() => {
       d(false)
     }, []),
     g = l.useCallback(() => {
@@ -33,10 +33,10 @@ let o = e => {
     error: c ? "" : true,
     minLength: 2,
     value: t,
-    onChange: h,
+    onChange: m,
     placeholder: s.intl.string(s.t.U2JFHR),
     name: "emoji_name",
-    onBlur: m,
+    onBlur: h,
     onFocus: g,
     required: true
   })

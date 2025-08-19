@@ -27,18 +27,18 @@ function h(e) {
   } = e, [C, j] = o.useState(false), f = o.useCallback(() => j(true), []), b = o.useCallback(() => j(false), []), y = (0, i.tP)(t), {
     containerRef: v,
     size: O,
-    height: N
+    height: E
   } = (0, m.h)(), {
-    expansionSpring: q,
-    isAnimating: E,
-    isExpanded: T,
-    toggleExpanded: S
+    expansionSpring: N,
+    isAnimating: q,
+    isExpanded: S,
+    toggleExpanded: T
   } = (0, m.O)({
     initiallyExpanded: h || (0, u.iM)({
       location: n,
       quest: t
     })
-  }), P = null != N ? N : u.U0;
+  }), P = null != E ? E : u.U0;
   return (0, s.jsx)(l.A, {
     questOrQuests: t,
     questContent: n,
@@ -47,7 +47,7 @@ function h(e) {
     sourceQuestContent: x,
     children: e => (0, s.jsx)(r.animated.div, {
       style: {
-        maxHeight: n === a.jn.QUESTS_EMBED ? true : q.to({
+        maxHeight: n === a.jn.QUESTS_EMBED ? true : N.to({
           range: [0, 1],
           output: [u.DJ, P]
         })
@@ -66,11 +66,11 @@ function h(e) {
           location: n,
           quest: t,
           size: O,
-          expansionSpring: q,
-          isAnimating: E,
-          isExpanded: T,
+          expansionSpring: N,
+          isAnimating: q,
+          isExpanded: S,
           contentPosition: g,
-          toggleExpanded: S,
+          toggleExpanded: T,
           sourceQuestContent: x
         }), (0, s.jsx)(c.Z, {
           quest: t,
@@ -78,8 +78,8 @@ function h(e) {
           location: n,
           size: O,
           isFocused: C,
-          isExpanded: T,
-          isAnimating: E,
+          isExpanded: S,
+          isAnimating: q,
           contentPosition: g,
           sourceQuestContent: x
         })]

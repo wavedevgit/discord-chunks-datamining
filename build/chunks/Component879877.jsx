@@ -22,11 +22,11 @@ function p(e) {
     widgetType: i,
     applicationId: a
   } = e, c = null == t ? true : t.filter(e => null != (0, d.zK)(e)), s = (0, l.useRef)(new Map), p = (0, l.useRef)(null), [y, v] = (0, l.useState)(0), [x, h] = (0, l.useState)(false), {
-    trackUserProfileAction: P
-  } = (0, o.KZ)(), E = j(p, c, s, v);
-  if ((0, l.useEffect)(() => (E(), window.addEventListener("resize", E), () => {
-      window.removeEventListener("resize", E)
-    }), [E, null == c ? true : c.join("")]), null == c || 0 === c.length) return null;
+    trackUserProfileAction: E
+  } = (0, o.KZ)(), P = j(p, c, s, v);
+  if ((0, l.useEffect)(() => (P(), window.addEventListener("resize", P), () => {
+      window.removeEventListener("resize", P)
+    }), [P, null == c ? true : c.join("")]), null == c || 0 === c.length) return null;
   let w = x ? c : c.slice(0, c.length - y);
   return (0, n.jsxs)("div", {
     className: g.tagListContainer,
@@ -44,14 +44,14 @@ function p(e) {
       }, e))
     }), y > 0 && (x ? (0, n.jsx)(m, {
       onClick: () => {
-        h(false), P({
+        h(false), E({
           action: "COLLAPSE_GAME_TAGS"
         })
       }
     }) : (0, n.jsx)(O, {
       numHidden: y,
       onClick: () => {
-        h(true), P({
+        h(true), E({
           action: "EXPAND_GAME_TAGS"
         })
       },

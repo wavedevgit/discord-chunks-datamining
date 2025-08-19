@@ -1,19 +1,43 @@
 /** Chunk was on 67079 **/
 /** chunk id: 546200, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  EmojiStudioModal: () => s
+  EmojiStudioModal: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk375727 = require("./375727.jsx"),
   Chunk867248 = require("./867248.js");
-let s = e => {
+
+function s(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+let o = e => {
   let {
     transitionState: t,
-    userImage: n,
-    guildId: s
-  } = e;
+    guildId: n
+  } = e, o = "userImage" in e ? e.userImage : true, u = "emoji" in e ? e.emoji : true, c = s({
+    guildId: n
+  }, null != u ? {
+    emoji: u
+  } : null != o ? {
+    userImage: o
+  } : {});
   return (0, r.jsx)(l.Y0X, {
     transitionState: t,
     size: l.CgR.DYNAMIC,
@@ -23,10 +47,7 @@ let s = e => {
     children: (0, r.jsx)(l.hzk, {
       scrollbarType: "none",
       className: i.modalContent,
-      children: (0, r.jsx)(a.I, {
-        userImage: n,
-        guildId: s
-      })
+      children: (0, r.jsx)(a.I, s({}, c))
     })
   })
 }

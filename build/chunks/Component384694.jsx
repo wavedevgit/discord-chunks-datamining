@@ -19,11 +19,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk503366 = require("./503366.js");
-let _ = e => ({
+let b = e => ({
     label: e.name,
     value: e.id
   }),
-  b = e => d.Z.can(f.Plq.CREATE_GUILD_EXPRESSIONS, e),
+  _ = e => d.Z.can(f.Plq.CREATE_GUILD_EXPRESSIONS, e),
   j = e => {
     let {
       onChange: t,
@@ -31,7 +31,7 @@ let _ = e => ({
       onError: d,
       labelledBy: j,
       isEmojiAnimated: O
-    } = e, E = (0, a.cj)([c.Z, h.ZP], () => Object.fromEntries(h.ZP.getFlattenedGuildIds().map(e => c.Z.getGuild(e)).filter(m.lm).map(e => [e.id, e]))), N = (0, a.cj)([s.ZP], () => Object.fromEntries(Object.entries(E).map(e => {
+    } = e, E = (0, a.cj)([c.Z, m.ZP], () => Object.fromEntries(m.ZP.getFlattenedGuildIds().map(e => c.Z.getGuild(e)).filter(h.lm).map(e => [e.id, e]))), N = (0, a.cj)([s.ZP], () => Object.fromEntries(Object.entries(E).map(e => {
       let [t, n] = e;
       return [t, function(e) {
         var t;
@@ -46,7 +46,7 @@ let _ = e => ({
         emojis: s.ZP.getGuildEmoji(t),
         isEmojiAnimated: O
       })]
-    })), [E, O]), C = l.useMemo(() => Object.values(E).filter(b).map(_), [E]), D = l.useCallback(e => {
+    })), [E, O]), y = l.useMemo(() => Object.values(E).filter(_).map(b), [E]), D = l.useCallback(e => {
       let [t] = e;
       if (null == t || null == t.value) return null;
       let n = E[t.value];
@@ -63,7 +63,7 @@ let _ = e => ({
           children: t.label
         })]
       })
-    }, [E]), y = l.useCallback(e => {
+    }, [E]), C = l.useCallback(e => {
       if (null == e || null == e.value) return null;
       let t = E[e.value];
       return null == t ? null : (0, r.jsxs)("div", {
@@ -92,17 +92,17 @@ let _ = e => ({
     }, [N, E]);
     return l.useEffect(() => {
       var e;
-      C.length < 1 ? d(p.ze.NO_PERMISSIONS) : null != n && (null != (e = null == N ? true : N[n]) ? e : 0) < 1 ? d(f.evJ.TOO_MANY_EMOJI) : d(null)
-    }, [C, t, d, n, N]), (0, r.jsx)(i.q4e, {
+      y.length < 1 ? d(p.ze.NO_PERMISSIONS) : null != n && (null != (e = null == N ? true : N[n]) ? e : 0) < 1 ? d(f.evJ.TOO_MANY_EMOJI) : d(null)
+    }, [y, t, d, n, N]), (0, r.jsx)(i.q4e, {
       onChange: t,
-      options: C,
+      options: y,
       popoutPosition: "top",
       popoutWidth: 240,
-      renderOptionLabel: y,
+      renderOptionLabel: C,
       renderOptionValue: D,
       value: n,
       "aria-labelledby": j,
-      placeholder: C.length < 1 ? v.intl.string(v.t.jHpxws) : v.intl.string(v.t["4mqeQE"]),
-      isDisabled: C.length < 1
+      placeholder: y.length < 1 ? v.intl.string(v.t.jHpxws) : v.intl.string(v.t["4mqeQE"]),
+      isDisabled: y.length < 1
     })
   }

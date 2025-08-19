@@ -26,7 +26,7 @@ function p(e) {
     return null == (e = u.Z.getGuild(n)) ? true : e.name
   });
   return (0, r.jsxs)("div", {
-    className: a()(m.toast, h.toast),
+    className: a()(h.toast, m.toast),
     children: [(0, r.jsx)(o.Z, {
       emojiId: t.id,
       size: "default"

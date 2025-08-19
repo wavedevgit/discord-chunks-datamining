@@ -1,14 +1,15 @@
 /** Chunk was on 27069 **/
 /** chunk id: 286957, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  XV: () => a,
-  aE: () => c,
-  zK: () => o
+  XV: () => o,
+  aE: () => u,
+  kd: () => s,
+  zK: () => c
 });
-var Chunk379405 = require("./379405.js"),
+var n, Chunk379405 = require("./379405.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
-let a = {
+let o = {
     [Chunk379405._.BETTER_THAN_YOU]: {
       getText: () => Chunk388032.intl.string(Chunk388032.t.jbIRBA),
       icon: Chunk481060.jrt
@@ -86,21 +87,25 @@ let a = {
       icon: Chunk481060.iFz
     }
   },
-  o = e => {
-    let t = a[e];
+  c = e => {
+    let t = o[e];
     return null != t ? t : null
+  };
+var s = ((n = {}).RADIO = "radio", n.CHECKBOX = "checkbox", n);
+let u = {
+  skill_level: {
+    getLabel: () => Chunk388032.intl.string(Chunk388032.t.MKqADA),
+    type: "radio",
+    tags: [Chunk379405._.BETTER_THAN_YOU, Chunk379405._.NOOB, Chunk379405._.LEARNING_THE_ROPES, Chunk379405._.GETTING_GOOD, Chunk379405._.SKILLED, Chunk379405._.EXPERT, Chunk379405._.MASTER]
   },
-  c = {
-    skill_level: {
-      getLabel: () => Chunk388032.intl.string(Chunk388032.t.MKqADA),
-      tags: [Chunk379405._.BETTER_THAN_YOU, Chunk379405._.NOOB, Chunk379405._.LEARNING_THE_ROPES, Chunk379405._.GETTING_GOOD, Chunk379405._.SKILLED, Chunk379405._.EXPERT, Chunk379405._.MASTER]
-    },
-    rating: {
-      getLabel: () => Chunk388032.intl.string(Chunk388032.t["7/umur"]),
-      tags: [Chunk379405._.LIKE_IT, Chunk379405._.LOVE_IT, Chunk379405._.KIND_OF_LOVE_IT, Chunk379405._.KIND_OF_HATE_IT, Chunk379405._.FRUSTRATED, Chunk379405._.RAGE_QUITTING, Chunk379405._.TOO_EASY]
-    },
-    looking_for: {
-      getLabel: () => Chunk388032.intl.string(Chunk388032.t["5Dez19"]),
-      tags: [Chunk379405._.LFG, Chunk379405._.OPEN_TO_PLAY, Chunk379405._.LOOKING_FOR_TIPS, Chunk379405._.LOOKING_TO_LEARN, Chunk379405._.OPEN_TO_TEACH]
-    }
+  rating: {
+    getLabel: () => Chunk388032.intl.string(Chunk388032.t["7/umur"]),
+    type: "checkbox",
+    tags: [Chunk379405._.LIKE_IT, Chunk379405._.LOVE_IT, Chunk379405._.KIND_OF_LOVE_IT, Chunk379405._.KIND_OF_HATE_IT, Chunk379405._.FRUSTRATED, Chunk379405._.RAGE_QUITTING, Chunk379405._.TOO_EASY]
+  },
+  looking_for: {
+    getLabel: () => Chunk388032.intl.string(Chunk388032.t["5Dez19"]),
+    type: "checkbox",
+    tags: [Chunk379405._.LFG, Chunk379405._.OPEN_TO_PLAY, Chunk379405._.LOOKING_FOR_TIPS, Chunk379405._.LOOKING_TO_LEARN, Chunk379405._.OPEN_TO_TEACH]
   }
+}

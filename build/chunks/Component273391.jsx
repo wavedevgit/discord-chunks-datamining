@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk645765 = require("./645765.js");
 
-function _(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function _(e) {
   return e
 }
 
-function b(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,14 +61,14 @@ let j = new Chunk710845.Z("ImageEditor"),
       file: t,
       imageUri: n,
       onUpdate: a,
-      onThrottledEdit: h
+      onThrottledEdit: m
     } = e, E = l.useRef({
       x: 0,
       y: 0
-    }), [I, S] = l.useState({
+    }), [I, w] = l.useState({
       x: 0,
       y: 0
-    }), w = l.useRef(null), [T, A] = l.useState(1), [k, M] = l.useState(null), [R, P] = l.useState({
+    }), S = l.useRef(null), [T, A] = l.useState(1), [M, k] = l.useState(null), [P, R] = l.useState({
       top: 0,
       bottom: 0,
       left: 0,
@@ -76,76 +76,76 @@ let j = new Chunk710845.Z("ImageEditor"),
     }), [L, Z] = l.useState(0), [z, G] = l.useState({
       x: 0,
       y: 0
-    }), [U, W] = l.useState(false), B = "image/gif" === t.type, F = (0, o.v)(t.type), H = F && !B, [V, J] = l.useState(null), Y = (0, d.h)(null != h ? h : f.dG, 500);
+    }), [U, F] = l.useState(false), B = "image/gif" === t.type, W = (0, o.v)(t.type), H = W && !B, [V, J] = l.useState(null), Y = (0, d.h)(null != m ? m : f.dG, 500);
     l.useEffect(() => {
       (0, g.Z)()
     }, []);
     let K = l.useCallback(e => {
-        if (null == w.current) return;
+        if (null == S.current) return;
         let {
           x: t,
           y: n
-        } = (0, m.U$)(e.x, e.y, R);
+        } = (0, h.U$)(e.x, e.y, P);
         E.current = {
           x: t,
           y: n
-        }, w.current.style.transform = "translate3d(".concat(t, "px, ").concat(n, "px, 0) rotate(").concat(L, "deg)"), S({
+        }, S.current.style.transform = "translate3d(".concat(t, "px, ").concat(n, "px, 0) rotate(").concat(L, "deg)"), w({
           x: t,
           y: n
         })
-      }, [w, L, R]),
+      }, [S, L, P]),
       X = l.useCallback(e => {
-        if (null == k) return;
-        let t = D(k, e, F),
+        if (null == M) return;
+        let t = D(M, e, W),
           {
             x: n,
             y: r
           } = E.current;
-        A(e), P(t), K({
+        A(e), R(t), K({
           x: n,
           y: r
         }), null == Y || Y()
-      }, [k, K, F, Y]),
+      }, [M, K, W, Y]),
       q = l.useCallback(() => {
-        if (null == w.current || null == k) return;
+        if (null == S.current || null == M) return;
         let e = (L + 90) % 360,
           t = -E.current.x,
           n = E.current.y,
-          r = k.height,
-          l = k.width,
+          r = M.height,
+          l = M.width,
           a = D({
             width: r,
             height: l
-          }, T, F);
+          }, T, W);
         K({
           x: n,
           y: t
-        }), Z(e), M({
+        }), Z(e), k({
           width: r,
           height: l
-        }), P(a), null == Y || Y()
-      }, [k, L, K, T, F, Y]),
-      $ = l.useCallback(() => {
-        if (null == k) return {};
+        }), R(a), null == Y || Y()
+      }, [M, L, K, T, W, Y]),
+      Q = l.useCallback(() => {
+        if (null == M) return {};
         let {
           height: e,
           width: t
-        } = C(N(k, L), T);
+        } = y(N(M, L), T);
         return {
           height: e,
           width: t,
           minHeight: e,
           minWidth: t
         }
-      }, [k, L, T]),
-      Q = l.useCallback(e => {
+      }, [M, L, T]),
+      $ = l.useCallback(e => {
         G({
           x: e.clientX - E.current.x,
           y: e.clientY - E.current.y
-        }), W(true)
+        }), F(true)
       }, []);
     l.useEffect(() => {
-      let e = () => W(false);
+      let e = () => F(false);
       return window.addEventListener("mouseup", e), () => window.removeEventListener("mouseup", e)
     }, []);
     let ee = l.useCallback(e => {
@@ -164,16 +164,16 @@ let j = new Chunk710845.Z("ImageEditor"),
     let et = l.useRef(null),
       en = l.useCallback(async () => {
         let e;
-        if (null == w.current || null == k) return;
+        if (null == S.current || null == M) return;
         let r = Date.now(),
-          l = w.current,
+          l = S.current,
           i = {
             height: p.eT,
             width: p.eT
           },
           o = null;
         if (null != et.current && (et.current(), et.current = null), B) try {
-          let n = y({
+          let n = C({
               file: t,
               image: l,
               cropDimensions: O,
@@ -182,11 +182,11 @@ let j = new Chunk710845.Z("ImageEditor"),
               imageRotation: L,
               resizeWidth: p.eT,
               resizeHeight: p.eT
-            }, k, T),
+            }, M, T),
             {
               result: r,
               cancelFn: a
-            } = await (0, m.$p)(n);
+            } = await (0, h.$p)(n);
           et.current = a, e = await r
         } catch (e) {
           j.error("Error cropping GIF", e), o = p.ze.GIF_CROPPING
@@ -209,24 +209,24 @@ let j = new Chunk710845.Z("ImageEditor"),
           var e;
           null == (e = et.current) || e.call(et), et.current = null
         }
-      }, [t, L, B, H, a, k, T, n]);
+      }, [t, L, B, H, a, M, T, n]);
     l.useEffect(() => {
       en()
-    }, [en, I, L, k, U, T, V]);
+    }, [en, I, L, M, U, T, V]);
     let er = l.useCallback(() => {
-      if (null == w.current) return;
-      let e = w.current.naturalWidth,
-        t = w.current.naturalHeight;
-      M({
+      if (null == S.current) return;
+      let e = S.current.naturalWidth,
+        t = S.current.naturalHeight;
+      k({
         width: e,
         height: t
       });
       let n = Math.min(Math.max(e, t) / Math.min(e, t), 4);
-      J(n), A(n), P(D({
+      J(n), A(n), R(D({
         width: e,
         height: t
-      }, n, F))
-    }, [F]);
+      }, n, W))
+    }, [W]);
     return (0, r.jsxs)("div", {
       className: i()(x.imageEditor, {
         [x.isDragging]: U
@@ -244,21 +244,21 @@ let j = new Chunk710845.Z("ImageEditor"),
               loading: false
             })
           },
-          style: _({
-            opacity: +(null != k),
+          style: b({
+            opacity: +(null != M),
             transform: "translate3d(".concat(E.current.x, "px, ").concat(E.current.y, "px, 0) rotate(").concat(L, "deg)")
-          }, $()),
+          }, Q()),
           className: x.image,
           src: n,
           crossOrigin: "anonymous",
           alt: v.intl.string(v.t.EYR1FR),
-          ref: w,
-          onMouseDown: Q,
+          ref: S,
+          onMouseDown: $,
           draggable: false
         }), !H && (0, r.jsx)("div", {
           className: x.overlay,
           style: {
-            opacity: +(null != k),
+            opacity: +(null != M),
             width: O.width,
             height: O.height
           },
@@ -299,7 +299,7 @@ let j = new Chunk710845.Z("ImageEditor"),
               }
               return l
             }(e, ["onClick"]);
-            return (0, r.jsx)(u.zx, b(_({
+            return (0, r.jsx)(u.zx, _(b({
               className: x.toolButton,
               look: u.zx.Looks.BLANK,
               size: u.Ph.NONE,
@@ -349,7 +349,7 @@ let j = new Chunk710845.Z("ImageEditor"),
       height: r
     }
   },
-  C = (e, t) => {
+  y = (e, t) => {
     let {
       width: n,
       height: r
@@ -364,7 +364,7 @@ function D(e, t, n) {
   let {
     width: r,
     height: l
-  } = C(e, t), a = Math.abs(240 - r) / 2, i = Math.abs(240 - l) / 2;
+  } = y(e, t), a = Math.abs(240 - r) / 2, i = Math.abs(240 - l) / 2;
   return n && (r < 240 || l < 240) ? {
     top: 0,
     bottom: 0,
@@ -377,15 +377,15 @@ function D(e, t, n) {
     right: a
   }
 }
-let y = (e, t, n) => {
+let C = (e, t, n) => {
   let {
     height: r,
     width: l
-  } = C(t, n), a = (r = Math.min(r, 240)) / (l = Math.min(l, 240)), i = {
+  } = y(t, n), a = (r = Math.min(r, 240)) / (l = Math.min(l, 240)), i = {
     height: r,
     width: l
   }, s = Math.floor(a < 1 ? p.eT * a : p.eT / a), o = a < 1 ? s : p.eT, u = a > 1 ? s : p.eT;
-  return b(_({}, e), {
+  return _(b({}, e), {
     cropDimensions: i,
     resizeHeight: o,
     resizeWidth: u

@@ -20,7 +20,7 @@ function l(e) {
     rewardCode: l,
     selectedPlatformType: c,
     preview: d
-  } = e, [u, p] = n.useState(false), [m, f] = n.useState(false), _ = n.useCallback(async (e, t, r) => {
+  } = e, [u, p] = n.useState(false), [m, f] = n.useState(false), h = n.useCallback(async (e, t, r) => {
     try {
       f(true), await (0, i.QB)(e, t, r), p(false), f(false)
     } catch (e) {
@@ -35,9 +35,9 @@ function l(e) {
   }, []);
   return n.useEffect(() => {
     var e, n;
-    true === d || null != l || u || t || m || r || s || (p(false), (null == (e = o.userStatus) ? true : e.claimedAt) == null && null != c ? _(o.id, c, a) : (null == (n = o.userStatus) ? true : n.claimedAt) != null && C(o.id))
-  }, [_, C, u, t, m, r, a, o, s, l, c, d]), {
-    claimCode: _,
+    true === d || null != l || u || t || m || r || s || (p(false), (null == (e = o.userStatus) ? true : e.claimedAt) == null && null != c ? h(o.id, c, a) : (null == (n = o.userStatus) ? true : n.claimedAt) != null && C(o.id))
+  }, [h, C, u, t, m, r, a, o, s, l, c, d]), {
+    claimCode: h,
     fetchCode: C,
     hasError: u,
     setHasError: p
@@ -56,30 +56,30 @@ function c(e) {
     questContentCTA: p = s.jZ.GET_REWARD_CODE,
     questContentPosition: m,
     requiresPlatformSelection: f,
-    selectedPlatformType: _,
+    selectedPlatformType: h,
     redemptionLink: C,
-    sourceQuestContent: h
+    sourceQuestContent: _
   } = e, b = (0, s.O5)();
   return n.useCallback(() => {
     var e;
-    f && null != _ ? (r(d.id, _, u), b({
+    f && null != h ? (r(d.id, h, u), b({
       questId: d.id,
       questContent: u,
       questContentCTA: p,
       questContentPosition: m,
-      sourceQuestContent: h
-    })) : l ? (null == (e = d.userStatus) ? true : e.claimedAt) != null ? i(d.id) : null != _ && (r(d.id, _, u), b({
+      sourceQuestContent: _
+    })) : l ? (null == (e = d.userStatus) ? true : e.claimedAt) != null ? i(d.id) : null != h && (r(d.id, h, u), b({
       questId: d.id,
       questContent: u,
       questContentCTA: p,
       questContentPosition: m,
-      sourceQuestContent: h
+      sourceQuestContent: _
     })) : (null != C && (b({
       questId: d.id,
       questContent: u,
       questContentCTA: s.jZ.REDEEM_REWARD,
       questContentPosition: m,
-      sourceQuestContent: h
+      sourceQuestContent: _
     }), (0, o.q)({
       href: C,
       onConfirm: () => {
@@ -88,9 +88,9 @@ function c(e) {
           questContent: u,
           questContentCTA: s.jZ.VISIT_REDEMPTION_LINK,
           questContentPosition: m,
-          sourceQuestContent: h
+          sourceQuestContent: _
         }), (0, a.Z)(C)
       }
     })), c())
-  }, [r, i, l, c, d.id, null == (t = d.userStatus) ? true : t.claimedAt, u, p, m, f, _, b, C, h])
+  }, [r, i, l, c, d.id, null == (t = d.userStatus) ? true : t.claimedAt, u, p, m, f, h, b, C, _])
 }

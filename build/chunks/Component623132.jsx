@@ -1,7 +1,7 @@
 /** Chunk was on 27069 **/
 /** chunk id: 623132, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -132,7 +132,7 @@ function h(e) {
   }) : null
 }
 
-function P(e) {
+function E(e) {
   let {
     user: t,
     guildId: r,
@@ -142,8 +142,8 @@ function P(e) {
     loading: s = false,
     disableInteraction: g = false
   } = e, {
-    gameName: P = p.intl.string(p.t.GIWFlJ),
-    imageSrc: E,
+    gameName: E = p.intl.string(p.t.GIWFlJ),
+    imageSrc: P,
     applicationId: w,
     comment: _,
     tags: S
@@ -169,8 +169,8 @@ function P(e) {
   }) : (0, n.jsxs)("div", {
     className: m.card,
     children: [(0, n.jsx)(u.Z, {
-      imageSrc: E,
-      gameName: P,
+      imageSrc: P,
+      gameName: E,
       applicationId: w,
       userId: t.id,
       disableInteraction: g,
@@ -178,11 +178,11 @@ function P(e) {
     }), (0, n.jsxs)("div", {
       className: m.details,
       children: [g ? (0, n.jsx)(l.X6q, y(j({}, I), {
-        children: P
+        children: E
       })) : (0, n.jsx)(v, j({
         applicationId: w,
         userId: t.id,
-        gameName: P
+        gameName: E
       }, I)), null != _ && (0, n.jsx)(x, {
         text: _,
         user: t,
