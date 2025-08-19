@@ -1,10 +1,11 @@
 /** Chunk was on 14021 **/
 /** chunk id: 910673, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => R
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk82659 = require("./82659.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk230711 = require("./230711.js"),
   Chunk782568 = require("./782568.js"),
@@ -16,23 +17,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk247206 = require("./247206.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk326898 = require("./326898.js"),
-  Chunk444812 = require("./444812.js");
-let h = t => {
+  Chunk388032 = require("./388032.jsx");
+let R = t => {
   let {
     channelId: e,
-    messageId: h,
-    transitionState: A,
-    onClose: v
-  } = t, R = (0, u.Z)(), L = (0, c.Jm)(), x = (0, _.m8)(), p = l.useMemo(() => L && x, [L, x]), b = l.useCallback(t => {
-    (0, _.aP)({
+    messageId: R,
+    transitionState: g,
+    onClose: L
+  } = t, v = (0, _.Z)(), O = (0, I.Jm)(), P = (0, d.m8)(), h = l.useMemo(() => O && P, [O, P]), M = l.useCallback(t => {
+    (0, d.aP)({
       action: t,
       channelId: e,
-      messageId: h
+      messageId: R
     })
-  }, [e, h]), y = l.useCallback(() => {
-    v(), b(_.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE), (0, a.ZDy)(async () => {
+  }, [e, R]), T = l.useCallback(() => {
+    L(), M(d.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE), (0, o.ZDy)(async () => {
       let {
         default: t
       } = await n(788679);
@@ -55,91 +54,53 @@ let h = t => {
         return t
       }({
         channelId: e,
-        messageId: h
+        messageId: R
       }, n))
     })
-  }, [e, h, v, b]);
-  l.useEffect(() => {
-    (0, _.aP)({
-      action: _.Yy.EXPLICIT_MEDIA_LEARN_MORE_VIEWED,
+  }, [e, R, L, M]);
+  return l.useEffect(() => {
+    (0, d.aP)({
+      action: d.Yy.EXPLICIT_MEDIA_LEARN_MORE_VIEWED,
       channelId: e,
-      messageId: h
+      messageId: R
     })
-  }, [e, h]);
-  let T = l.useCallback(() => p ? m.intl.format(m.t["TGqx+v"], {
-    handleOnHelpUrlHook: () => {
-      s.Z.openUrl(E.Z.getArticleURL(I.BhN.TIGGER_PAWTECT_LEARN_MORE)), b(_.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE)
-    }
-  }) : x ? null : m.intl.format(m.t.Ge0HUl, {
-    handleFalsePositiveHook: () => {
-      y(), b(_.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE)
-    }
-  }), [p, x, y, b]);
-  return (0, r.jsxs)(a.Y0X, {
-    transitionState: A,
-    "aria-label": m.intl.string(m.t.xdm3XF),
-    parentComponent: "ExplicitMediaLearnMoreModal",
-    children: [(0, r.jsx)(a.xBx, {
-      separator: false,
-      className: C.modalHeader,
-      children: (0, r.jsx)("img", {
-        src: g,
-        alt: m.intl.string(m.t.id3fND),
-        className: C.headerImg
-      })
-    }), (0, r.jsxs)(a.hzk, {
-      className: C.modalBody,
-      children: [(0, r.jsx)(a.X6q, {
-        variant: "heading-lg/bold",
-        className: C.modalInteriorHeader,
-        children: m.intl.string(m.t.sGW77u)
-      }), (0, r.jsx)(a.Text, {
-        variant: "text-md/normal",
-        color: "header-secondary",
-        children: function() {
-          if (p) return m.intl.string(m.t.f3ARDQ);
-          let t = m.intl.string(m.t.RUw0ZG),
-            e = m.intl.string(m.t["E/oQYG"]);
-          return R ? t : e
-        }()
-      }), (0, r.jsxs)("div", {
-        className: C.buttonContainer,
-        children: [p ? (0, r.jsx)(a.zxk, {
-          variant: "primary",
-          text: m.intl.string(m.t.KPGVWl),
-          onClick: function() {
-            v(), b(_.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY), s.Z.showAgeVerificationGetStartedModal(d.cU.SENSITIVE_MEDIA_LEARN_MORE)
-          },
-          fullWidth: true
-        }) : R ? (0, r.jsx)(a.zxk, {
-          variant: "primary",
-          text: m.intl.string(m.t["9D+zGR"]),
-          onClick: function() {
-            b(_.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS), i.Z.open(I.oAB.CONTENT_AND_SOCIAL, null, {
-              scrollPosition: f.FY.EXPLICIT_MEDIA_REDACTION_V2
-            }), v()
-          },
-          fullWidth: true
-        }) : (0, r.jsx)(a.zxk, {
-          variant: "primary",
-          text: m.intl.string(m.t.hvVgAQ),
-          onClick: () => {
-            (0, o.Z)(E.Z.getArticleURL(I.BhN.EXPLICIT_MEDIA_REDACTION))
-          },
-          fullWidth: true
-        }), (0, r.jsx)(a.zxk, {
-          variant: "secondary",
-          text: m.intl.string(m.t.bmbHPD),
-          onClick: function() {
-            v(), b(_.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS)
-          },
-          fullWidth: true
-        }), (0, r.jsx)(a.Text, {
-          variant: "text-sm/medium",
-          color: "header-secondary",
-          children: T()
-        })]
-      })]
-    })]
+  }, [e, R]), (0, r.jsx)(i.Modal, {
+    title: A.intl.string(A.t.sGW77u),
+    subtitle: function() {
+      if (h) return A.intl.format(A.t["1L0hub"], {
+        handleOnHelpUrlHook: () => {
+          E.Z.openUrl(c.Z.getArticleURL(f.BhN.TIGGER_PAWTECT_LEARN_MORE)), M(d.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE)
+        }
+      });
+      let t = A.intl.string(A.t.RUw0ZG),
+        e = A.intl.string(A.t["E/oQYG"]);
+      return v ? t : e
+    }(),
+    actions: [function() {
+      if (!P && !h) return {
+        text: A.intl.string(A.t.ZH7P2t),
+        onClick: T,
+        variant: "secondary"
+      }
+    }(), h ? {
+      text: A.intl.string(A.t.KPGVWl),
+      onClick: function() {
+        L(), M(d.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY), E.Z.showAgeVerificationGetStartedModal(u.cU.SENSITIVE_MEDIA_LEARN_MORE)
+      }
+    } : v ? {
+      text: A.intl.string(A.t["9D+zGR"]),
+      onClick: function() {
+        M(d.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS), a.Z.open(f.oAB.CONTENT_AND_SOCIAL, null, {
+          scrollPosition: C.FY.EXPLICIT_MEDIA_REDACTION_V2
+        }), L()
+      }
+    } : {
+      text: A.intl.string(A.t.hvVgAQ),
+      onClick: () => {
+        (0, s.Z)(c.Z.getArticleURL(f.BhN.EXPLICIT_MEDIA_REDACTION))
+      }
+    }].filter(t => true !== t),
+    onClose: () => (L(), M(d.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS), Promise.resolve()),
+    transitionState: g
   })
 }
