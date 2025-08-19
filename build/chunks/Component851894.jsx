@@ -153,7 +153,7 @@ function w(e) {
           user: s,
           guildId: null == t ? true : t.id,
           nameplate: U,
-          nameplateData: true === U ? F : true,
+          nameplateData: null == U ? F : true,
           isHighlighted: true
         }) : null,
         children: (0, i.jsx)(I.Z, {

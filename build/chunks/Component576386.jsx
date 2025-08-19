@@ -54,7 +54,8 @@ let h = e => {
       onSelect: r,
       onOpenShop: a,
       available: i,
-      purchased: c
+      purchased: c,
+      isPerGuild: u
     } = e;
     return null == (0, o.e7)([d.default], () => d.default.getCurrentUser()) ? null : (0, n.jsxs)(s.u2D, {
       className: b.inventory,
@@ -73,7 +74,7 @@ let h = e => {
               color: "currentColor"
             }), (0, n.jsx)(s.Text, {
               variant: "text-xs/normal",
-              children: p.intl.string(p.t.PoWNfX)
+              children: u ? p.intl.string(p.t.CHf9iI) : p.intl.string(p.t.PoWNfX)
             })]
           }), (0, n.jsxs)(s.P3F, {
             className: b.inventoryControlsButton,

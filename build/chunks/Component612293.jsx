@@ -77,12 +77,12 @@ function j(e) {
     onClose: j,
     guildId: P,
     initialSelectedNameplate: E
-  } = e, x = (0, i.e7)([h.ZP], () => null != P && null != f ? h.ZP.getMember(P, f.id) : null), S = null != P ? null == x || null == (r = x.collectibles) || null == (t = r.nameplate) ? true : t.skuId : null == f || null == (d = f.collectibles) || null == (c = d.nameplate) ? true : c.skuId, w = g.find(e => e.skuId === S), {
-    pendingNameplate: R
-  } = (0, b.Zx)(f, P), [I, A] = (0, a.useState)(() => {
+  } = e, x = (0, i.e7)([h.ZP], () => null != P && null != f ? h.ZP.getMember(P, f.id) : null), S = null == x || null == (r = x.collectibles) || null == (t = r.nameplate) ? true : t.skuId, w = null == f || null == (d = f.collectibles) || null == (c = d.nameplate) ? true : c.skuId, R = null != P ? S : w, I = g.find(e => e.skuId === R), {
+    pendingNameplate: A
+  } = (0, b.Zx)(f, P), [N, k] = (0, a.useState)(() => {
     var e;
-    return true !== R ? R : null != (e = null != E ? E : w) ? e : null
-  }), N = (null == I ? true : I.skuId) === (true === R ? null == w ? true : w.skuId : null == R ? true : R.skuId), [k, T] = (0, a.useState)(() => null != I && g.some(e => e.id === I.id)), D = (0, a.useCallback)(e => {
+    return true !== A ? A : null != (e = null != E ? E : I) ? e : null
+  }), T = (null == N ? true : N.skuId) === (true === A ? null == I ? true : I.skuId : null == A ? true : A.skuId), [D, L] = (0, a.useState)(() => null != N && g.some(e => e.id === N.id)), B = (0, a.useCallback)(e => {
     j(), (0, u.mK)({
       analyticsLocations: C,
       analyticsSource: s.Z.EDIT_NAMEPLATE_MODAL,
@@ -107,32 +107,33 @@ function j(e) {
       className: y.content,
       scrollbarType: "none",
       children: [(0, n.jsx)(_.Z, {
-        selected: I,
+        selected: N,
         onSelect: (e, t) => {
-          A(e), T(null != t && t)
+          k(e), L(null != t && t)
         },
-        onOpenShop: D,
+        onOpenShop: B,
         available: v,
-        purchased: g
+        purchased: g,
+        isPerGuild: null != P
       }), (0, n.jsx)(m.Z, {
         user: f,
         guildId: P,
-        selectedNameplate: I,
-        purchased: k
+        selectedNameplate: N,
+        purchased: D
       })]
     }), (0, n.jsxs)(l.mzw, {
       "data-migration-pending": true,
       className: y.modalFooter,
-      children: [k || null == I ? (0, n.jsx)(l.zxk, {
+      children: [D || null == N ? (0, n.jsx)(l.zxk, {
         variant: "primary",
         text: O.intl.string(O.t.Jh8fJy),
-        disabled: N,
+        disabled: T,
         onClick: () => {
-          null != P ? (0, p.RH)(I) : (0, o.Rx)(I), j()
+          null != P ? (0, p.RH)(N) : (0, o.Rx)(N), j()
         }
       }) : (0, n.jsx)(l.zxk, {
         variant: "primary",
-        onClick: () => D(null == I ? true : I.skuId),
+        onClick: () => B(null == N ? true : N.skuId),
         text: O.intl.string(O.t.fYfGgI)
       }), (0, n.jsx)(l.zxk, {
         variant: "secondary",

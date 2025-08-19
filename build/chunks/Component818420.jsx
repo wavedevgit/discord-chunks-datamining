@@ -62,7 +62,7 @@ function x(e) {
       }), (true === O ? (j ? C : E) != null : null != O) && (0, i.jsx)(a.zxk, {
         variant: "secondary",
         size: "sm",
-        text: f.intl.string(f.t["9zwziY"]),
+        text: j ? f.intl.string(f.t.CHf9iI) : f.intl.string(f.t["9zwziY"]),
         onClick: P
       })]
     })
