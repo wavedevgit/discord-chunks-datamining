@@ -1,14 +1,14 @@
-/** Chunk was on 12756 **/
+/** Chunk was on 99799 **/
 /** chunk id: 34854, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => i
 });
 var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
-let l = {
+let i = {
   updateNote(e, t) {
     r.tn.put({
-      url: i.ANM.NOTE(e),
+      url: o.ANM.NOTE(e),
       body: {
         note: t
       },

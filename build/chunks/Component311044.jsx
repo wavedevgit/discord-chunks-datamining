@@ -1,7 +1,7 @@
-/** Chunk was on 12756 **/
+/** Chunk was on 99799 **/
 /** chunk id: 311044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,30 +17,30 @@ var Chunk951288 = require("./951288.js"),
   Chunk264481 = require("./264481.jsx"),
   Chunk443680 = require("./443680.js");
 
-function b(e) {
+function g(e) {
   let {
     user: t,
     guildId: n,
-    channelId: b,
-    onClose: j
+    channelId: g,
+    onClose: h
   } = e, {
-    analyticsLocations: y
+    analyticsLocations: x
   } = (0, a.ZP)(), {
-    context: O,
-    trackUserProfileAction: h
+    context: _,
+    trackUserProfileAction: j
   } = (0, s.KZ)(), {
-    mutualFriends: x,
-    mutualFriendsCount: v
-  } = (0, d.Z)(t), _ = (0, o.Z)();
-  return i.useEffect(() => {
-    (0, u.Z)(t.id, _)
-  }, [t.id, _]), (0, r.jsx)(l.Ttm, {
-    className: g.scroller,
+    mutualFriends: v,
+    mutualFriendsCount: y
+  } = (0, d.Z)(t), I = (0, l.Z)();
+  return o.useEffect(() => {
+    (0, u.Z)(t.id, I)
+  }, [t.id, I]), (0, r.jsx)(i.Ttm, {
+    className: b.scroller,
     fade: true,
-    children: null == x ? Array.from({
-      length: null != v ? v : 10
+    children: null == v ? Array.from({
+      length: null != y ? y : 10
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: g.friendsLoadingItem,
+      className: b.friendsLoadingItem,
       children: [(0, r.jsx)(c.ZT, {
         width: 40,
         opacity: .08
@@ -48,20 +48,20 @@ function b(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === x.length ? (0, r.jsx)(m.s_, {}) : x.map(e => {
+    }, t)) : 0 === v.length ? (0, r.jsx)(m.s_, {}) : v.map(e => {
       let {
         key: t,
-        user: i,
-        status: l
+        user: o,
+        status: i
       } = e;
       return (0, r.jsx)(p.Z, {
-        user: i,
-        status: l,
+        user: o,
+        status: i,
         guildId: n,
-        channelId: b,
+        channelId: g,
         onSelect: () => {
           var e, t;
-          null == j || j(), h({
+          null == h || h(), j({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -80,9 +80,9 @@ function b(e) {
               })
             }
             return e
-          }({}, O), t = t = {
-            userId: i.id,
-            sourceAnalyticsLocations: y
+          }({}, _), t = t = {
+            userId: o.id,
+            sourceAnalyticsLocations: x
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

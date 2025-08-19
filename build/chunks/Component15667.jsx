@@ -1,4 +1,4 @@
-/** Chunk was on 59727 **/
+/** Chunk was on 1056 **/
 /** chunk id: 15667, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -25,7 +25,7 @@ let c = e => {
       className: s.breadcrumbsHeader,
       color: "header-secondary",
       variant: "heading-sm/semibold",
-      children: e.isModeratorReport ? l.intl.string(o.default["6mx/DA"]) : l.intl.string(l.t["+3V9Tk"])
+      children: e.isModeratorReport ? o.intl.string(l.default["6mx/DA"]) : o.intl.string(o.t["+3V9Tk"])
     }), t.map((e, t) => (0, r.jsxs)("div", {
       className: s.breadcrumbContainer,
       children: [(0, r.jsx)("div", {

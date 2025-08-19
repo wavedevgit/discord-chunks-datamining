@@ -1,7 +1,7 @@
-/** Chunk was on 12756 **/
-/** chunk id: 978369, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 27069 **/
+/** chunk id: 978369, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,15 +12,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk44258 = require("./44258.js");
 
-function u(e) {
+function d(e) {
   let {
     tags: t,
-    widgetType: n,
-    applicationId: u
-  } = e, f = (0, i.useRef)(null), {
-    trackUserProfileAction: p
-  } = (0, o.KZ)(), m = null != t ? t : [];
-  return (0, r.jsx)(l.yRy, {
+    widgetType: r,
+    applicationId: d
+  } = e, f = (0, l.useRef)(null), {
+    trackUserProfileAction: g
+  } = (0, a.KZ)(), p = null != t ? t : [];
+  return (0, n.jsx)(i.yRy, {
     targetElementRef: f,
     position: "right",
     align: "top",
@@ -28,73 +28,73 @@ function u(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(l.v2r, {
+      return (0, n.jsx)(i.v2r, {
         navId: "widget-game-tags",
         "aria-label": s.intl.string(s.t.r6EJOj),
         onClose: t,
         onSelect: () => {},
         children: Object.entries(c.aE).map(e => {
-          let [t, i] = e, o = i.tags.map(e => {
+          let [t, l] = e, a = l.tags.map(e => {
             let t = c.XV[e];
-            return null == t ? null : (0, r.jsx)(l.S89, {
+            return null == t ? null : (0, n.jsx)(i.S89, {
               id: e,
               label: t.getText(),
-              checked: m.includes(e),
+              checked: p.includes(e),
               action: () => (e => {
-                let t = new Set(m);
-                t.has(e) ? (t.delete(e), p({
+                let t = new Set(p);
+                t.has(e) ? (t.delete(e), g({
                   action: "REMOVE_GAME_TAGS"
-                })) : (t.add(e), p({
+                })) : (t.add(e), g({
                   action: "ADD_GAME_TAGS"
-                })), (0, a.n$)(n, u, Array.from(t))
+                })), (0, o.n$)(r, d, Array.from(t))
               })(e)
             }, e)
           }).filter(Boolean);
-          return (0, r.jsx)(l.kSQ, {
-            label: i.getLabel(),
-            children: o
+          return (0, n.jsx)(i.kSQ, {
+            label: l.getLabel(),
+            children: a
           }, t)
         })
       })
     },
     children: e => {
-      var t, n;
-      return (0, r.jsx)("div", {
+      var t, r;
+      return (0, n.jsx)("div", {
         ref: f,
-        children: (0, r.jsx)(l.P3F, (t = function(e) {
+        children: (0, n.jsx)(i.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
+            var r = null != arguments[t] ? arguments[t] : {},
+              n = Object.keys(r);
+            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(r, e).enumerable
+            }))), n.forEach(function(t) {
+              var n;
+              n = r[t], t in e ? Object.defineProperty(e, t, {
+                value: n,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = r
+              }) : e[t] = n
             })
           }
           return e
-        }({}, e), n = n = {
-          className: d.addButton,
+        }({}, e), r = r = {
+          className: u.addButton,
           "aria-label": s.intl.string(s.t.r6EJOj),
-          children: (0, r.jsx)(l.Text, {
+          children: (0, n.jsx)(i.Text, {
             variant: "text-xxs/medium",
             color: "text-secondary",
             children: s.intl.string(s.t.fZSej4)
           })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-          var n = Object.keys(e);
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+          var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
+            var n = Object.getOwnPropertySymbols(e);
+            r.push.apply(r, n)
           }
-          return n
-        })(Object(n)).forEach(function(e) {
-          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+          return r
+        })(Object(r)).forEach(function(e) {
+          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
         }), t))
       })
     }

@@ -1,4 +1,4 @@
-/** Chunk was on 12756 **/
+/** Chunk was on 99799 **/
 /** chunk id: 444141, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -50,43 +50,43 @@ function p(e) {
     guildId: n,
     channelId: p,
     displayProfile: m,
-    onClose: g
+    onClose: b
   } = e, {
-    analyticsLocations: b,
-    sourceAnalyticsLocations: j
-  } = (0, l.ZP)(), {
-    context: y,
-    trackUserProfileAction: O
-  } = (0, a.KZ)(), h = (0, s.ZP)(t.id, n);
-  return (null == h ? true : h.guildId) == null || null == y ? null : (null == m ? true : m.guildId) != null ? (0, r.jsx)(i.sNh, {
+    analyticsLocations: g,
+    sourceAnalyticsLocations: h
+  } = (0, i.ZP)(), {
+    context: x,
+    trackUserProfileAction: _
+  } = (0, a.KZ)(), j = (0, s.ZP)(t.id, n);
+  return (null == j ? true : j.guildId) == null || null == x ? null : (null == m ? true : m.guildId) != null ? (0, r.jsx)(o.sNh, {
     id: "view-main-profile",
     label: d.intl.string(d.t.GISTtb),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
-      displayName: o.ZP.getName(true, true, t)
+      displayName: l.ZP.getName(true, true, t)
     }),
     action: () => {
-      null == g || g(), (0, c.openUserProfileModal)(f(u({}, y), {
+      null == b || b(), (0, c.openUserProfileModal)(f(u({}, x), {
         showGuildProfile: false,
-        sourceAnalyticsLocations: j
-      })), O(u({
+        sourceAnalyticsLocations: h
+      })), _(u({
         action: "PRESS_VIEW_MAIN_PROFILE",
-        analyticsLocations: b
-      }, y))
+        analyticsLocations: g
+      }, x))
     }
-  }) : (0, r.jsx)(i.sNh, {
+  }) : (0, r.jsx)(o.sNh, {
     id: "view-server-profile",
     label: d.intl.string(d.t.DisZzM),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
-      displayName: o.ZP.getName(n, p, t)
+      displayName: l.ZP.getName(n, p, t)
     }),
     action: () => {
-      null == g || g(), (0, c.openUserProfileModal)(f(u({}, y), {
+      null == b || b(), (0, c.openUserProfileModal)(f(u({}, x), {
         showGuildProfile: true,
-        sourceAnalyticsLocations: j
-      })), O(u({
+        sourceAnalyticsLocations: h
+      })), _(u({
         action: "PRESS_VIEW_SERVER_PROFILE",
-        analyticsLocations: b
-      }, y))
+        analyticsLocations: g
+      }, x))
     }
   })
 }

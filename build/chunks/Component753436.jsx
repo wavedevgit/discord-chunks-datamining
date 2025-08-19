@@ -1,5 +1,5 @@
-/** Chunk was on 12756 **/
-/** chunk id: 753436, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 27069 **/
+/** chunk id: 753436, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   S: () => f
 });
@@ -17,37 +17,37 @@ var Chunk594174 = require("./594174.js"),
 function f(e) {
   let {
     game: t,
-    userId: n,
+    userId: r,
     widgetType: f,
-    guildId: p,
-    channelId: m,
-    loading: g = false,
-    disableInteraction: b = false
-  } = e, j = (0, c.Z)(t.applicationId), y = j.length > 0, O = i.default.getCurrentUser(), h = (null == O ? true : O.id) === n;
-  return g ? (0, r.jsx)("div", {
-    className: d.loadingCover
-  }) : (0, r.jsxs)("div", {
-    className: u.container,
-    children: [(0, r.jsx)(o.Z, {
+    guildId: g,
+    channelId: p,
+    loading: b = false,
+    disableInteraction: O = false
+  } = e, m = (0, c.Z)(t.applicationId), j = m.length > 0, y = l.default.getCurrentUser(), v = (null == y ? true : y.id) === r;
+  return b ? (0, n.jsx)("div", {
+    className: u.loadingCover
+  }) : (0, n.jsxs)("div", {
+    className: d.container,
+    children: [(0, n.jsx)(a.Z, {
       imageSrc: t.imageSrc,
       gameName: t.gameName,
       applicationId: t.applicationId,
-      userId: n,
-      disableInteraction: b,
-      className: y ? u.socialProofBackdrop : true
-    }), !b && h && (0, r.jsx)(a.Z, {
+      userId: r,
+      disableInteraction: O,
+      className: j ? d.socialProofBackdrop : true
+    }), !O && v && (0, n.jsx)(o.Z, {
       game: t,
       widgetType: f,
-      className: u.removeGameButton,
+      className: d.removeGameButton,
       iconSize: "xs"
-    }), !b && y && (0, r.jsx)(l.Z, {
+    }), !O && j && (0, n.jsx)(i.Z, {
       label: s.intl.formatToPlainString(s.t.ujhJdH, {
-        numFriends: j.length
+        numFriends: m.length
       }),
-      className: u.socialProof,
-      users: j,
-      guildId: p,
-      channelId: m,
+      className: d.socialProof,
+      users: m,
+      guildId: g,
+      channelId: p,
       visuallyHideLabel: true
     })]
   })

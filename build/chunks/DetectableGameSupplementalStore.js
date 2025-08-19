@@ -115,6 +115,9 @@ class h extends(r = Chunk442837.ZP.Store) {
     let r = null == (n = s.get(e)) ? true : n.coverImageUrl;
     return null == r ? null : null == t ? r : "".concat(r, "?width=").concat(t.width, "&height=").concat(t.height)
   }
+  noDataAvailable(e) {
+    return u.has(e)
+  }
 }
 o(h, "displayName", "DetectableGameSupplementalStore");
 let m = new h(Chunk570140.Z, {

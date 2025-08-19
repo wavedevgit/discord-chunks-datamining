@@ -1,7 +1,7 @@
-/** Chunk was on 12756 **/
-/** chunk id: 566007, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 27069 **/
+/** chunk id: 566007, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,59 +9,59 @@ var Chunk750312 = require("./750312.jsx"),
   Chunk189988 = require("./189988.jsx"),
   Chunk623132 = require("./623132.jsx");
 
-function a(e) {
+function o(e) {
   var {
     user: t,
-    widget: n,
-    isGameFetching: a,
+    widget: r,
+    isGameFetching: o,
     containerClassName: c,
     disableInteraction: s
-  } = e, d = function(e, t) {
+  } = e, u = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var r, n, l = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      var r, n, l = {},
+        i = Object.keys(e);
+      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
     }
-    return i
+    return l
   }(e, ["user", "widget", "isGameFetching", "containerClassName", "disableInteraction"]);
-  let u = n.games[0];
-  return (0, r.jsx)(i.Z, {
+  let d = r.games[0];
+  return (0, n.jsx)(l.Z, {
     userId: t.id,
-    widget: n,
+    widget: r,
     className: c,
     disableInteraction: s,
-    children: null != u ? (0, r.jsx)(o.Z, function(e) {
+    children: null != d ? (0, n.jsx)(a.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        var r = null != arguments[t] ? arguments[t] : {},
+          n = Object.keys(r);
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(r, e).enumerable
+        }))), n.forEach(function(t) {
+          var n;
+          n = r[t], t in e ? Object.defineProperty(e, t, {
+            value: n,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = n
         })
       }
       return e
     }({
       user: t,
-      game: u,
-      widgetType: n.type,
-      loading: a(u.applicationId),
+      game: d,
+      widgetType: r.type,
+      loading: o(d.applicationId),
       disableInteraction: s
-    }, d)) : (0, r.jsx)(l.Z, {
-      widgetType: n.type
+    }, u)) : (0, n.jsx)(i.Z, {
+      widgetType: r.type
     })
   })
 }

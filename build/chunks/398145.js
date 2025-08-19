@@ -1,4 +1,4 @@
-/** Chunk was on 12756 **/
+/** Chunk was on 99799 **/
 /** chunk id: 398145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -13,13 +13,13 @@ function a(e) {
     mutualGuilds: t
   } = (0, r.Z)(e), n = null == t ? true : t.length;
   return [{
-    section: l.oh.BOT_INFO,
-    text: o.intl.string(o.t.jGoPJS)
+    section: i.oh.BOT_INFO,
+    text: l.intl.string(l.t.jGoPJS)
   }, {
-    section: l.oh.MUTUAL_GUILDS,
-    text: (0, i.Z)(n)
+    section: i.oh.MUTUAL_GUILDS,
+    text: (0, o.Z)(n)
   }, {
-    section: l.oh.BOT_DATA_ACCESS,
-    text: o.intl.string(o.t.WstFb2)
+    section: i.oh.BOT_DATA_ACCESS,
+    text: l.intl.string(l.t.WstFb2)
   }]
 }

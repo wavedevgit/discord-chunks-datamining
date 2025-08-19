@@ -1,17 +1,16 @@
-/** Chunk was on 12756 **/
-/** chunk id: 778414, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 27069 **/
+/** chunk id: 778414, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  C: () => _,
-  Z: () => x
+  C: () => x,
+  Z: () => y
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
-  Chunk296009 = require("./296009.js"),
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
+var Chunk296009 = require("./296009.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk314897 = require("./314897.js"),
-  Chunk592183 = require("./592183.js"),
-  Chunk224724 = require("./224724.js"),
+  Chunk117029 = require("./117029.js"),
   Chunk747101 = require("./747101.js"),
   Chunk517157 = require("./517157.js"),
   Chunk985748 = require("./985748.jsx"),
@@ -22,60 +21,60 @@ var Chunk951288 = require("./951288.js"),
   Chunk795990 = require("./795990.jsx"),
   Chunk830202 = require("./830202.js");
 
-function h(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = n
     })
   }
   return e
 }
 
-function x(e) {
+function y(e) {
   var {
     widget: t
-  } = e, n = function(e, t) {
+  } = e, r = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var r, n, l = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      var r, n, l = {},
+        i = Object.keys(e);
+      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
     }
-    return i
+    return l
   }(e, ["widget"]);
   switch (t.type) {
     case l.l.FAVORITE_GAMES:
-      return (0, r.jsx)(m.Z, h({
+      return (0, n.jsx)(f.Z, j({
         widget: t
-      }, n));
+      }, r));
     case l.l.CURRENT_GAMES:
-      return (0, r.jsx)(p.Z, h({
+      return (0, n.jsx)(d.Z, j({
         widget: t
-      }, n));
+      }, r));
     case l.l.WANT_TO_PLAY_GAMES:
-      return (0, r.jsx)(b.Z, h({
+      return (0, n.jsx)(p.Z, j({
         widget: t
-      }, n));
+      }, r));
     case l.l.PLAYED_GAMES:
-      return (0, r.jsx)(g.Z, h({
+      return (0, n.jsx)(g.Z, j({
         widget: t
-      }, n));
+      }, r));
     default:
       return null
   }
@@ -84,30 +83,27 @@ function x(e) {
 function v(e) {
   let {
     user: t,
-    guildId: n,
-    channelId: i
-  } = e, l = (0, f.Z)(t.id), {
-    widgets: a,
-    isGameFetching: s
-  } = (0, u.Z)(l), d = (0, o.e7)([c.default], () => c.default.getId() === t.id);
-  return 0 === a.length && d ? (0, r.jsx)(y.Z, {}) : (0, r.jsxs)(r.Fragment, {
-    children: [a.map(e => (0, r.jsx)(x, {
+    guildId: r,
+    channelId: l
+  } = e, a = (0, u.Z)(t.id), {
+    widgets: d,
+    isGameFetching: f
+  } = (0, s.Z)(a), g = (0, i.e7)([o.default], () => o.default.getId() === t.id), p = 0 === d.length && g;
+  return ((0, c.J)(g, d), p) ? (0, n.jsx)(O.Z, {}) : (0, n.jsxs)(n.Fragment, {
+    children: [d.map(e => (0, n.jsx)(y, {
       widget: e,
       user: t,
-      guildId: n,
-      channelId: i,
-      isGameFetching: s
-    }, e.id)), d && (0, r.jsx)(j.Z, {})]
+      guildId: r,
+      channelId: l,
+      isGameFetching: f
+    }, e.id)), g && (0, n.jsx)(b.Z, {})]
   })
 }
 
-function _(e) {
-  let t = (0, o.e7)([d.Z], () => d.Z.suggestedFetchAttempted);
-  return i.useEffect(() => {
-    t || s.Z.fetchSuggestedGames()
-  }, [t]), (0, r.jsx)(a.Ttm, {
-    className: O.scroller,
+function x(e) {
+  return (0, n.jsx)(a.Ttm, {
+    className: m.scroller,
     fade: true,
-    children: (0, r.jsx)(v, h({}, e))
+    children: (0, n.jsx)(v, j({}, e))
   })
 }

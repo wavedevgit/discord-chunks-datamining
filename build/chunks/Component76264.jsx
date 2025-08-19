@@ -1,4 +1,4 @@
-/** Chunk was on 59727 **/
+/** Chunk was on 1056 **/
 /** chunk id: 76264, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -16,16 +16,16 @@ let d = e => {
       child: t,
       onClick: n
     } = e, [a] = t;
-    return (0, r.jsxs)(l.P3F, {
+    return (0, r.jsxs)(o.P3F, {
       className: i()(c.childButton, s.listElement),
       onClick: () => n(t),
-      children: [(0, r.jsx)(l.Text, {
+      children: [(0, r.jsx)(o.Text, {
         className: c.childText,
         variant: "text-md/semibold",
         children: a
-      }), (0, r.jsx)(o.Z, {
+      }), (0, r.jsx)(l.Z, {
         className: c.childIcon,
-        direction: o.Z.Directions.RIGHT
+        direction: l.Z.Directions.RIGHT
       })]
     })
   },

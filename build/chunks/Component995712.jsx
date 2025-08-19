@@ -1,4 +1,4 @@
-/** Chunk was on 59727 **/
+/** Chunk was on 1056 **/
 /** chunk id: 995712, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -18,7 +18,7 @@ let c = e => {
     id: c,
     icon: d,
     name: u
-  } = n, m = null != (t = l.ZP.getGuildIconURL({
+  } = n, _ = null != (t = o.ZP.getGuildIconURL({
     id: c,
     icon: d,
     size: 32
@@ -28,7 +28,7 @@ let c = e => {
     children: [(0, r.jsx)(a.X6q, {
       className: s.header,
       variant: "heading-sm/semibold",
-      children: o.intl.string(o.t.nTe4HB)
+      children: l.intl.string(l.t.nTe4HB)
     }), (0, r.jsx)("div", {
       className: s.guildContainer,
       children: (0, r.jsxs)("div", {
@@ -39,7 +39,7 @@ let c = e => {
           height: 32,
           className: s.guildIconMask,
           children: (0, r.jsx)("img", {
-            src: m,
+            src: _,
             alt: "",
             className: s.guildIcon
           })

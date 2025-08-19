@@ -1,4 +1,4 @@
-/** Chunk was on 12756 **/
+/** Chunk was on 99799 **/
 /** chunk id: 661462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -18,30 +18,30 @@ function p(e) {
   let {
     user: t,
     currentUser: n,
-    section: i,
-    subsection: l,
-    displayProfile: o,
+    section: o,
+    subsection: i,
+    displayProfile: l,
     guildId: f,
     channelId: p,
     onClose: m
   } = e;
-  return i === u.oh.ACTIVITY ? (0, r.jsx)(a.Z, {
+  return o === u.oh.ACTIVITY ? (0, r.jsx)(a.Z, {
     user: t,
     currentUser: n,
-    displayProfile: o,
+    displayProfile: l,
     guildId: f,
     channelId: p,
-    subsection: l,
+    subsection: i,
     onClose: m
-  }) : i === u.oh.MUTUAL_FRIENDS ? (0, r.jsx)(c.Z, {
+  }) : o === u.oh.MUTUAL_FRIENDS ? (0, r.jsx)(c.Z, {
     user: t,
     guildId: f,
     channelId: p,
     onClose: m
-  }) : i === u.oh.MUTUAL_GUILDS ? (0, r.jsx)(s.Z, {
+  }) : o === u.oh.MUTUAL_GUILDS ? (0, r.jsx)(s.Z, {
     user: t,
     onClose: m
-  }) : i === u.oh.WIDGETS ? (0, r.jsx)(d.C, {
+  }) : o === u.oh.WIDGETS ? (0, r.jsx)(d.C, {
     user: t,
     guildId: f,
     channelId: p
@@ -56,17 +56,17 @@ function m(e) {
     displayProfile: d,
     guildId: u,
     channelId: m,
-    items: g,
-    initialSection: b,
-    initialSubsection: j,
-    onClose: y
+    items: b,
+    initialSection: g,
+    initialSubsection: h,
+    onClose: x
   } = e, {
-    trackUserProfileAction: O
-  } = (0, o.KZ)(), [{
-    section: h,
-    subsection: x,
-    text: v
-  }, _] = i.useState((n = function(e) {
+    trackUserProfileAction: _
+  } = (0, l.KZ)(), [{
+    section: j,
+    subsection: v,
+    text: y
+  }, I] = o.useState((n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -83,13 +83,13 @@ function m(e) {
       })
     }
     return e
-  }({}, null != (t = g.find(e => {
+  }({}, null != (t = b.find(e => {
     let {
       section: t
     } = e;
-    return t === b
-  })) ? t : g[0]), a = a = {
-    subsection: j
+    return t === g
+  })) ? t : b[0]), a = a = {
+    subsection: h
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -102,34 +102,34 @@ function m(e) {
   }), n));
   return (0, r.jsxs)("div", {
     className: f.container,
-    children: [(0, r.jsx)(l.Ttm, {
+    children: [(0, r.jsx)(i.Ttm, {
       orientation: "horizontal",
       className: f.scroller,
       fade: true,
       paddingFix: false,
-      children: (0, r.jsx)(l.njP, {
+      children: (0, r.jsx)(i.njP, {
         type: "top",
         look: "custom",
-        selectedItem: h,
+        selectedItem: j,
         onItemSelect: e => {
-          O({
+          _({
             action: "PRESS_SECTION",
             section: e
-          }), _(t => {
+          }), I(t => {
             var n;
-            return null != (n = g.find(t => t.section === e)) ? n : t
+            return null != (n = b.find(t => t.section === e)) ? n : t
           })
         },
-        children: g.map(e => (0, r.jsx)(l.njP.Item, {
+        children: b.map(e => (0, r.jsx)(i.njP.Item, {
           className: f.tabBarItem,
           id: e.section,
           "aria-label": e.text,
           children: e.text
         }, e.section))
       })
-    }), (0, r.jsx)(l.njP.Panel, {
-      id: h,
-      "aria-label": v,
+    }), (0, r.jsx)(i.njP.Panel, {
+      id: j,
+      "aria-label": y,
       className: f.tabBarPanel,
       children: (0, r.jsx)(p, {
         user: c,
@@ -137,9 +137,9 @@ function m(e) {
         displayProfile: d,
         guildId: u,
         channelId: m,
-        section: h,
-        subsection: x,
-        onClose: y
+        section: j,
+        subsection: v,
+        onClose: x
       })
     })]
   })

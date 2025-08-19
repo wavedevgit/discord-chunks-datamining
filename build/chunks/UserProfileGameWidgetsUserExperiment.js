@@ -1,11 +1,11 @@
-/** Chunk was on 93886 **/
-/** chunk id: 447448, original params: e,t,a (module,exports,require) **/
+/** Chunk was on 99799 **/
+/** chunk id: 447448, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  k: () => i
+  k: () => l
 });
 var Chunk818083 = require("./818083.js"),
   Chunk438379 = require("./438379.js");
-let l = (0, Chunk818083.B)({
+let i = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-07_user_profile_game_widgets",
   label: "User Profile Game Widgets",
@@ -21,20 +21,20 @@ let l = (0, Chunk818083.B)({
   }]
 });
 
-function i(e) {
+function l(e) {
   let {
     location: t,
-    autoTrackExposure: a = true
-  } = e, n = (0, r.J)({
+    autoTrackExposure: n = true
+  } = e, r = (0, o.J)({
     location: t,
-    autoTrackExposure: a
+    autoTrackExposure: n
   }), {
-    enabled: i
-  } = l.useExperiment({
+    enabled: l
+  } = i.useExperiment({
     location: t
   }, {
-    autoTrackExposure: a,
-    disable: n
+    autoTrackExposure: n,
+    disable: r
   });
-  return i
+  return l
 }

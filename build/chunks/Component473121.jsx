@@ -1,4 +1,4 @@
-/** Chunk was on 59727 **/
+/** Chunk was on 1056 **/
 /** chunk id: 473121, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -16,10 +16,10 @@ let d = e => {
     node: {
       header: d,
       subheader: u,
-      button: m
+      button: _
     },
-    isModeratorReport: p
-  } = e, _ = (null == m ? true : m.type) === "submit", g = a.useRef(l.Z.reactParserFor((t = function(e) {
+    isModeratorReport: m
+  } = e, p = (null == _ ? true : _.type) === "submit", g = a.useRef(o.Z.reactParserFor((t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -36,8 +36,8 @@ let d = e => {
       })
     }
     return e
-  }({}, l.Z.defaultRules), n = n = {
-    link: o.s
+  }({}, o.Z.defaultRules), n = n = {
+    link: l.s
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,7 +58,7 @@ let d = e => {
       variant: "text-md/normal",
       color: "header-secondary",
       children: g.current(u)
-    }) : null, _ && !p && (0, r.jsx)(i.Text, {
+    }) : null, p && !m && (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: s.intl.format(s.t.Q0tSKS, {})
     })]

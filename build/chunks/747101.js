@@ -1,28 +1,28 @@
-/** Chunk was on 12756 **/
-/** chunk id: 747101, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 27069 **/
+/** chunk id: 747101, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   F: () => s,
-  Z: () => d
+  Z: () => u
 }), require("./539854.js"), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk224706 = require("./224706.js"),
   Chunk669764 = require("./669764.js");
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = n
     })
   }
   return e
@@ -30,39 +30,39 @@ function a(e) {
 
 function c(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
+    var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var n = Object.getOwnPropertySymbols(e);
+      r.push.apply(r, n)
     }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    return r
+  })(Object(t)).forEach(function(r) {
+    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
 
 function s(e) {
-  return r.useEffect(() => {
+  return n.useEffect(() => {
     if (e.length > 0) {
-      let t = e.filter(e => o.Z.canFetch(e));
-      t.length > 0 && l.Z.getDetectableGamesSupplemental(t)
+      let t = e.filter(e => a.Z.canFetch(e));
+      t.length > 0 && i.Z.getDetectableGamesSupplemental(t)
     }
   }, [e]), {
-    gameDataMap: (0, i.cj)([o.Z], () => {
+    gameDataMap: (0, l.cj)([a.Z], () => {
       let t = {};
       return e.forEach(e => {
-        t[e] = o.Z.getGame(e)
+        t[e] = a.Z.getGame(e)
       }), t
     }),
-    isGameFetching: r.useCallback(e => o.Z.isFetching(e), [])
+    isGameFetching: n.useCallback(e => a.Z.isFetching(e), [])
   }
 }
 
-function d(e) {
+function u(e) {
   let {
     gameDataMap: t,
-    isGameFetching: n
-  } = s(r.useMemo(() => (function(e) {
+    isGameFetching: r
+  } = s(n.useMemo(() => (function(e) {
     let t = [];
     return e.forEach(e => {
       e.games.forEach(e => {
@@ -71,18 +71,18 @@ function d(e) {
     }), [...new Set(t)]
   })(e), [e]));
   return {
-    widgets: r.useMemo(() => e.map(e => {
-      let n = e.games.map(e => {
-        let n = t[e.applicationId];
-        return c(a({}, e), {
-          gameName: null == n ? true : n.name,
-          imageSrc: null == n ? true : n.coverImageUrl
+    widgets: n.useMemo(() => e.map(e => {
+      let r = e.games.map(e => {
+        let r = t[e.applicationId];
+        return c(o({}, e), {
+          gameName: null == r ? true : r.name,
+          imageSrc: null == r ? true : r.coverImageUrl
         })
       });
-      return c(a({}, e), {
-        games: n
+      return c(o({}, e), {
+        games: r
       })
     }), [e, t]),
-    isGameFetching: n
+    isGameFetching: r
   }
 }

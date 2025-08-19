@@ -1,7 +1,7 @@
-/** Chunk was on 12756 **/
+/** Chunk was on 99799 **/
 /** chunk id: 389190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,29 +16,29 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk878449 = require("./878449.js");
 
-function g(e) {
+function b(e) {
   let {
     user: t,
     guildId: n,
-    channelId: g,
-    onClose: b
+    channelId: b,
+    onClose: g
   } = e, {
-    mutualFriends: j
+    mutualFriends: h
   } = (0, s.Z)(t), {
-    analyticsLocations: y
+    analyticsLocations: x
   } = (0, a.ZP)(), {
-    context: O,
-    trackUserProfileAction: h
-  } = (0, c.KZ)(), x = (0, o.Z)();
-  return i.useEffect(() => {
-    (0, d.Z)(t.id, x)
-  }, [t.id, x]), (0, r.jsx)(l.zJl, {
+    context: _,
+    trackUserProfileAction: j
+  } = (0, c.KZ)(), v = (0, l.Z)();
+  return o.useEffect(() => {
+    (0, d.Z)(t.id, v)
+  }, [t.id, v]), (0, r.jsx)(i.zJl, {
     className: m.listScroller,
     fade: true,
-    children: null == j ? (0, r.jsx)("div", {
+    children: null == h ? (0, r.jsx)("div", {
       className: m.empty,
-      children: (0, r.jsx)(l.$jN, {})
-    }) : 0 === j.length ? (0, r.jsxs)("div", {
+      children: (0, r.jsx)(i.$jN, {})
+    }) : 0 === h.length ? (0, r.jsxs)("div", {
       className: m.empty,
       children: [(0, r.jsx)("div", {
         className: m.emptyIconFriends
@@ -46,22 +46,22 @@ function g(e) {
         className: m.emptyText,
         children: p.intl.string(p.t["/5p4g4"])
       })]
-    }) : j.map(e => {
+    }) : h.map(e => {
       let {
         key: t,
-        user: i,
-        status: l
+        user: o,
+        status: i
       } = e;
       return (0, r.jsx)(f.Z, {
-        user: i,
-        status: l,
+        user: o,
+        status: i,
         guildId: n,
-        channelId: g,
+        channelId: b,
         onSelect: () => {
           var e, t, n;
-          null == b || b(), h({
+          null == g || g(), j({
             action: "PRESS_MUTUAL_FRIEND"
-          }), e = i.id, (0, u.openUserProfileModal)((t = function(e) {
+          }), e = o.id, (0, u.openUserProfileModal)((t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -78,9 +78,9 @@ function g(e) {
               })
             }
             return e
-          }({}, O), n = n = {
+          }({}, _), n = n = {
             userId: e,
-            sourceAnalyticsLocations: y
+            sourceAnalyticsLocations: x
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

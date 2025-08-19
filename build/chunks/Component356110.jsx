@@ -1,4 +1,4 @@
-/** Chunk was on 59727 **/
+/** Chunk was on 1056 **/
 /** chunk id: 356110, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -19,27 +19,27 @@ let s = e => {
     }, [s]);
     let u = t.name,
       {
-        title: m,
-        options: p
+        title: _,
+        options: m
       } = t.data,
-      _ = a.useCallback(e => {
+      p = a.useCallback(e => {
         null != e && (d(e), n(e))
       }, [n]);
     return (0, r.jsxs)("div", {
-      className: o.marginBottom8,
-      children: [null != m && (0, r.jsx)("div", {
-        className: o.marginBottom8,
+      className: l.marginBottom8,
+      children: [null != _ && (0, r.jsx)("div", {
+        className: l.marginBottom8,
         children: (0, r.jsxs)(i.Text, {
           variant: "text-sm/bold",
-          children: [m, t.should_submit_data && (0, r.jsx)("span", {
-            className: l.required,
+          children: [_, t.should_submit_data && (0, r.jsx)("span", {
+            className: o.required,
             children: "*"
           })]
         })
       }), (0, r.jsx)(i.q4e, {
         value: c,
-        onChange: _,
-        options: p
+        onChange: p,
+        options: m
       })]
     }, u)
   },
@@ -50,12 +50,12 @@ let s = e => {
       state: a
     } = e, i = t.map(e => {
       var t, i;
-      let l = e.name;
+      let o = e.name;
       return (0, r.jsx)(s, {
         element: e,
-        initialOption: null != (i = null == a || null == (t = a[l]) ? true : t.value) ? i : true,
-        onChange: e => n(l, e)
-      }, l)
+        initialOption: null != (i = null == a || null == (t = a[o]) ? true : t.value) ? i : true,
+        onChange: e => n(o, e)
+      }, o)
     });
     return (0, r.jsx)("div", {
       children: i

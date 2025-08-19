@@ -1,7 +1,7 @@
-/** Chunk was on 12756 **/
+/** Chunk was on 99799 **/
 /** chunk id: 323090, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,52 +21,52 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk54966 = require("./54966.js");
 
-function O(e) {
+function _(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: O,
-    guildId: h,
-    subsection: x,
-    onClose: v
+    displayProfile: _,
+    guildId: j,
+    subsection: v,
+    onClose: y
   } = e, {
-    trackUserProfileAction: _
-  } = (0, s.KZ)(), I = (0, i.e7)([d.Z], () => {
+    trackUserProfileAction: I
+  } = (0, s.KZ)(), O = (0, o.e7)([d.Z], () => {
     var e;
     return null == (e = d.Z.getUserProfile(t.id)) ? true : e.application
-  }), P = (0, i.e7)([a.Z, c.Z], () => a.Z.getChannel(c.Z.getChannelId()));
-  return (0, r.jsxs)(l.zJl, {
+  }), Z = (0, o.e7)([a.Z, c.Z], () => a.Z.getChannel(c.Z.getChannelId()));
+  return (0, r.jsxs)(i.zJl, {
     fade: true,
-    className: y.scroller,
-    children: [(null == O ? true : O.bio) != null && (null == O ? true : O.bio) !== "" && (0, r.jsx)(f.Z, {
-      userBio: O.bio,
+    className: x.scroller,
+    children: [(null == _ ? true : _.bio) != null && (null == _ ? true : _.bio) !== "" && (0, r.jsx)(f.Z, {
+      userBio: _.bio,
       setLineClamp: false
-    }), (null == I ? true : I.popularApplicationCommandIds) != null && null != P && (0, r.jsx)(u.Z, {
-      applicationId: I.id,
-      commandIds: I.popularApplicationCommandIds,
-      channel: P,
-      guildId: h,
-      onClick: v
-    }), (null == O ? true : O.guildId) != null && (0, r.jsx)(g.Z, {
+    }), (null == O ? true : O.popularApplicationCommandIds) != null && null != Z && (0, r.jsx)(u.Z, {
+      applicationId: O.id,
+      commandIds: O.popularApplicationCommandIds,
+      channel: Z,
+      guildId: j,
+      onClick: y
+    }), (null == _ ? true : _.guildId) != null && (0, r.jsx)(b.Z, {
       user: t,
       currentUser: n,
-      guildId: O.guildId,
-      scrollIntoView: x === b.Tb.ROLES
+      guildId: _.guildId,
+      scrollIntoView: v === g.Tb.ROLES
     }), (0, r.jsx)(m.Z, {
-      heading: j.intl.string(j.t["A//N4u"]),
+      heading: h.intl.string(h.t["A//N4u"]),
       children: (0, r.jsx)(p.Z, {
         userId: t.id,
-        guildId: h,
-        tooltipDelay: b.vB
+        guildId: j,
+        tooltipDelay: g.vB
       })
     }), (0, r.jsx)(m.Z, {
-      heading: j.intl.string(j.t["mQKv+v"]),
-      scrollIntoView: x === b.Tb.NOTE,
-      children: (0, r.jsx)(o.Z, {
+      heading: h.intl.string(h.t["mQKv+v"]),
+      scrollIntoView: v === g.Tb.NOTE,
+      children: (0, r.jsx)(l.Z, {
         userId: t.id,
-        className: y.note,
-        autoFocus: x === b.Tb.NOTE,
-        onUpdate: () => _({
+        className: x.note,
+        autoFocus: v === g.Tb.NOTE,
+        onUpdate: () => I({
           action: "SET_NOTE"
         })
       })

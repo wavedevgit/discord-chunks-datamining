@@ -1,7 +1,7 @@
-/** Chunk was on 59727 **/
+/** Chunk was on 1056 **/
 /** chunk id: 266080, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,27 +12,27 @@ var Chunk951288 = require("./951288.js"),
   Chunk430824 = require("./430824.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let m = e => {
+let _ = e => {
   let {
     guildId: t,
     reportId: n
-  } = e, [m, p] = a.useState(false), _ = c.Z.getGuild(t), g = null != _;
+  } = e, [_, m] = a.useState(false), p = c.Z.getGuild(t), g = null != p;
   a.useEffect(() => {
-    p(!g)
+    m(!g)
   }, [g]);
-  let b = a.useCallback(() => {
-    p(true), l.ZP.trackWithMetadata(d.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
+  let f = a.useCallback(() => {
+    m(true), o.ZP.trackWithMetadata(d.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
       guild_id: t,
       report_id: n
-    }), o.Z.leaveGuild(t)
+    }), l.Z.leaveGuild(t)
   }, [t, n]);
-  return null == _ ? null : (0, r.jsx)(s.JZ, {
+  return null == p ? null : (0, r.jsx)(s.JZ, {
     title: u.intl.string(u.t.cU96io),
     description: u.intl.formatToPlainString(u.t["26mR6+"], {
-      guildName: null == _ ? true : _.name
+      guildName: null == p ? true : p.name
     }),
-    buttonText: m ? u.intl.string(u.t["9Ak99v"]) : u.intl.string(u.t.F3qExs),
-    buttonDisabled: m,
+    buttonText: _ ? u.intl.string(u.t["9Ak99v"]) : u.intl.string(u.t.F3qExs),
+    buttonDisabled: _,
     buttonVariant: "critical-primary",
     onButtonPress: () => {
       (0, i.h7j)(e => {
@@ -56,16 +56,16 @@ let m = e => {
           return e
         }({
           header: u.intl.formatToPlainString(u.t["1GX6Pz"], {
-            name: _.name
+            name: p.name
           }),
           confirmText: u.intl.string(u.t.J2TBi4),
           cancelText: u.intl.string(u.t["ETE/oK"]),
-          onConfirm: b
+          onConfirm: f
         }, e), n = n = {
           children: (0, r.jsx)(i.Text, {
             variant: "text-md/normal",
             children: u.intl.format(u.t.ZEXC0t, {
-              name: _.name
+              name: p.name
             })
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

@@ -1,112 +1,66 @@
-/** Chunk was on 12756 **/
-/** chunk id: 272289, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 27069 **/
+/** chunk id: 272289, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
-}), require("./388685.js"), require("./539854.js");
+  Z: () => u
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk392711 = require("./392711.js"),
-  Chunk296009 = require("./296009.js"),
   Chunk399606 = require("./399606.js"),
-  Chunk804919 = require("./804919.js"),
-  Chunk592183 = require("./592183.js"),
   Chunk224724 = require("./224724.js"),
   Chunk86419 = require("./86419.js"),
-  Chunk747101 = require("./747101.js"),
+  Chunk117029 = require("./117029.js"),
   Chunk977416 = require("./977416.jsx");
 
-function m(e) {
+function u(e) {
   var {
-    widgetGames: t,
-    widgetType: n
-  } = e, m = function(e, t) {
+    widgetType: t
+  } = e, r = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var r, n, l = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      var r, n, l = {},
+        i = Object.keys(e);
+      for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
     }
-    return i
-  }(e, ["widgetGames", "widgetType"]);
+    return l
+  }(e, ["widgetType"]);
   let {
-    games: g,
-    isGameFetching: b,
-    isSuggestedGamesLoading: j
-  } = function(e, t) {
-    let {
-      games: n
-    } = function() {
-      let [e] = i.useState(() => (0, l.sampleSize)(c.qs, 4)), {
-        gameDataMap: t,
-        isGameFetching: n
-      } = (0, f.F)(e);
-      return {
-        games: i.useMemo(() => e.map(e => {
-          let n = t[e];
-          return {
-            applicationId: e,
-            gameName: null == n ? true : n.name,
-            imageSrc: null == n ? true : n.coverImageUrl
-          }
-        }), [e, t]),
-        isGameFetching: n
-      }
-    }(), r = new Set(t.map(e => e.applicationId)), s = n.filter(e => !r.has(e.applicationId)), [u, p, m] = (0, a.Wu)([d.Z], () => [d.Z.suggestedFetchIsLoading, d.Z.suggestedFetchError, d.Z.suggestedGameIds]), g = i.useMemo(() => {
-      var t, n;
-      if (p || e === o.l.WANT_TO_PLAY_GAMES && (null == m || null == (t = m.suggestedWishlistGamesIds) ? true : t.length) === 0 || (null == m || null == (n = m.suggestedGamesIds) ? true : n.length) === 0) return s.map(e => e.applicationId);
-      let r = [];
-      return e === o.l.WANT_TO_PLAY_GAMES ? r.push(...m.suggestedWishlistGamesIds.slice(0, 4)) : r.push(...m.suggestedGamesIds.slice(0, 4)), r.length < 4 && r.push(...s.slice(0, 4 - r.length).map(e => e.applicationId)), r
-    }, [s, m, p, e]), {
-      gameDataMap: b,
-      isGameFetching: j
-    } = (0, f.F)(g);
-    return {
-      games: i.useMemo(() => g.map(e => {
-        let t = b[e];
-        return {
-          applicationId: e,
-          gameName: null == t ? true : t.name,
-          imageSrc: null == t ? true : t.coverImageUrl,
-          comment: null == t ? true : t.comment
-        }
-      }), [g, b]),
-      isGameFetching: j,
-      isSuggestedGamesLoading: u
-    }
-  }(n, t), y = i.useCallback((e, t, r) => {
-    s.Z.removeGameFromSuggestedGames(e), (0, u.ES)(n, {
+    games: u,
+    isGameFetching: d,
+    onAddGame: f
+  } = (0, c.K)(t), [g] = (0, i.Wu)([a.Z], () => [a.Z.suggestedFetchIsLoading]), p = l.useCallback((e, r, n) => {
+    f(e), (0, o.ES)(t, {
       applicationId: e,
-      gameName: t,
-      imageSrc: r
+      gameName: r,
+      imageSrc: n
     })
-  }, [n]);
-  return (0, r.jsx)(p.Z, function(e) {
+  }, [f, t]);
+  return (0, n.jsx)(s.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      var r = null != arguments[t] ? arguments[t] : {},
+        n = Object.keys(r);
+      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(r, e).enumerable
+      }))), n.forEach(function(t) {
+        var n;
+        n = r[t], t in e ? Object.defineProperty(e, t, {
+          value: n,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : e[t] = n
       })
     }
     return e
   }({
-    games: g,
-    isGameFetching: b,
-    isSuggestedGamesLoading: j,
-    onClick: y
-  }, m))
+    games: u,
+    isGameFetching: d,
+    isSuggestedGamesLoading: g,
+    onClick: p
+  }, r))
 }

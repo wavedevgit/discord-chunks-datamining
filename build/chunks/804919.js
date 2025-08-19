@@ -1,14 +1,14 @@
-/** Chunk was on 12756 **/
-/** chunk id: 804919, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 27069 **/
+/** chunk id: 804919, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  LM: () => o,
+  LM: () => a,
   oD: () => c,
-  qs: () => a
+  qs: () => o
 });
 var Chunk379405 = require("./379405.js"),
   Chunk296009 = require("./296009.js"),
   Chunk388032 = require("./388032.jsx");
-let o = {
+let a = {
     VALORANT: "700136079562375258",
     ROBLOX: "363445589247131668",
     LEAGUE_OF_LEGENDS: "1402418696126992445",
@@ -26,46 +26,46 @@ let o = {
     RED_DEAD_REDEMPTION_2: "1402418648332898466",
     ELDEN_RING: "1402418436809953330"
   },
-  a = Object.values(o),
+  o = Object.values(a),
   c = () => [{
     id: "0",
     type: Chunk296009.l.FAVORITE_GAMES,
     games: [{
-      applicationId: o.VALORANT,
+      applicationId: a.VALORANT,
       comment: Chunk388032.intl.string(Chunk388032.t["7CCylJ"])
     }]
   }, {
     id: "1",
     type: Chunk296009.l.CURRENT_GAMES,
     games: [{
-      applicationId: o.ROBLOX,
+      applicationId: a.ROBLOX,
       tags: [Chunk379405._.OPEN_TO_PLAY, Chunk379405._.LIKE_IT]
     }, {
-      applicationId: o.LEAGUE_OF_LEGENDS,
+      applicationId: a.LEAGUE_OF_LEGENDS,
       tags: [Chunk379405._.LFG, Chunk379405._.LIKE_IT]
     }]
   }, {
     id: "2",
     type: Chunk296009.l.WANT_TO_PLAY_GAMES,
     games: [{
-      applicationId: o.MINECRAFT
+      applicationId: a.MINECRAFT
     }, {
-      applicationId: o.COUNTERSTRIKE_2
+      applicationId: a.COUNTERSTRIKE_2
     }, {
-      applicationId: o.OVERWATCH_2
+      applicationId: a.OVERWATCH_2
     }, {
-      applicationId: o.APEX_LEGENDS
+      applicationId: a.APEX_LEGENDS
     }]
   }, {
     id: "3",
     type: Chunk296009.l.PLAYED_GAMES,
     games: [{
-      applicationId: o.FORTNITE
+      applicationId: a.FORTNITE
     }, {
-      applicationId: o.GRAND_THEFT_AUTO_V
+      applicationId: a.GRAND_THEFT_AUTO_V
     }, {
-      applicationId: o.DOTA_2
+      applicationId: a.DOTA_2
     }, {
-      applicationId: o.ROCKET_LEAGUE
+      applicationId: a.ROCKET_LEAGUE
     }]
   }]

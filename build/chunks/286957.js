@@ -1,14 +1,14 @@
-/** Chunk was on 12756 **/
-/** chunk id: 286957, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 27069 **/
+/** chunk id: 286957, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  XV: () => o,
+  XV: () => a,
   aE: () => c,
-  zK: () => a
+  zK: () => o
 });
 var Chunk379405 = require("./379405.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
-let o = {
+let a = {
     [Chunk379405._.BETTER_THAN_YOU]: {
       getText: () => Chunk388032.intl.string(Chunk388032.t.jbIRBA),
       icon: Chunk481060.jrt
@@ -86,8 +86,8 @@ let o = {
       icon: Chunk481060.iFz
     }
   },
-  a = e => {
-    let t = o[e];
+  o = e => {
+    let t = a[e];
     return null != t ? t : null
   },
   c = {

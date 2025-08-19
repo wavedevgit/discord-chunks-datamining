@@ -1,38 +1,38 @@
-/** Chunk was on 12756 **/
-/** chunk id: 430790, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 27069 **/
+/** chunk id: 430790, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk810473 = require("./810473.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk684066 = require("./684066.js");
 
-function u() {
+function d() {
   let e = 0 === (0, Chunk810473.Z)().length,
     t = Chunk647438.useCallback(() => {
       (0, Chunk481060.ZDy)(async () => {
         let {
           default: e
         } = await require.e("38576").then(require.bind(require, 925170));
-        return t => (0, r.jsx)(e, function(e) {
+        return t => (0, n.jsx)(e, function(e) {
           for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
+            var r = null != arguments[t] ? arguments[t] : {},
+              n = Object.keys(r);
+            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(r, e).enumerable
+            }))), n.forEach(function(t) {
+              var n;
+              n = r[t], t in e ? Object.defineProperty(e, t, {
+                value: n,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = r
+              }) : e[t] = n
             })
           }
           return e
@@ -42,7 +42,7 @@ function u() {
       })
     }, []);
   return (0, Chunk951288.jsxs)(Chunk481060.P3F, {
-    className: o()(Chunk684066.addWidgetButton, module && Chunk684066.disabled),
+    className: a()(Chunk684066.addWidgetButton, module && Chunk684066.disabled),
     onClick: module ? true : exports,
     "aria-disabled": module,
     children: [(0, Chunk951288.jsx)(Chunk481060.qJs, {

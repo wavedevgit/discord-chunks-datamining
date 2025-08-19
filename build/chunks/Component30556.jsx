@@ -1,4 +1,4 @@
-/** Chunk was on 12756 **/
+/** Chunk was on 99799 **/
 /** chunk id: 30556, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -17,20 +17,20 @@ function c(e) {
     onClose: c
   } = e, s = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var n, r, o = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      var n, r, o = {},
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+      return o
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
     }
-    return i
+    return o
   }(e, ["type", "userId", "onClose"]);
-  let d = t === o.j8.TEXT ? o.tG : o.ef;
+  let d = t === l.j8.TEXT ? l.tG : l.ef;
   return (0, r.jsx)(d, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -50,11 +50,11 @@ function c(e) {
     return e
   }({
     action: "SEND_MESSAGE",
-    icon: i.kBi,
+    icon: o.kBi,
     text: a.intl.string(a.t.zROXER),
     tooltipText: a.intl.string(a.t.zROXER),
     onClick: () => {
-      l.Z.openPrivateChannel({
+      i.Z.openPrivateChannel({
         recipientIds: n
       }), null == c || c()
     }

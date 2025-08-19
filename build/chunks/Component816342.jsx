@@ -1,4 +1,4 @@
-/** Chunk was on 59727 **/
+/** Chunk was on 1056 **/
 /** chunk id: 816342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -20,25 +20,25 @@ let g = e => {
     user: t,
     channelId: n,
     reportId: g,
-    reportType: b
-  } = e, h = (0, i.e7)([u.Z], () => u.Z.isBlocked(t.id), [t.id]), x = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), f = a.useMemo(() => m.ZP.getName(null == x ? true : x.guild_id, null == x ? true : x.id, t), [x, t]), v = a.useCallback(() => {
-    o.ZP.trackWithMetadata(p.rMx.IAR_BLOCK_USER_BUTTON_CLICKED, {
+    reportType: f
+  } = e, b = (0, i.e7)([u.Z], () => u.Z.isBlocked(t.id), [t.id]), h = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), x = a.useMemo(() => _.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), v = a.useCallback(() => {
+    l.ZP.trackWithMetadata(m.rMx.IAR_BLOCK_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: g
-    }), l.Z.blockUser(t.id, {
+    }), o.Z.blockUser(t.id, {
       location: "ReportMenuBlockUser-iOS"
     }).then(() => {
       s.Z.showBlockSuccessToast(t.id, n)
     })
   }, [t, g, n]);
   return (0, r.jsx)(c.JZ, {
-    title: _.intl.formatToPlainString(_.t["Q1o/f3"], {
-      username: f
+    title: p.intl.formatToPlainString(p.t["Q1o/f3"], {
+      username: x
     }),
-    description: _.intl.string(_.t.G08MKi),
-    buttonText: h ? _.intl.string(_.t.ot2tSk) : _.intl.string(_.t["l+7PZW"]),
-    buttonDisabled: h,
+    description: p.intl.string(p.t.G08MKi),
+    buttonText: b ? p.intl.string(p.t.ot2tSk) : p.intl.string(p.t["l+7PZW"]),
+    buttonDisabled: b,
     onButtonPress: v,
-    buttonVariant: "application" === b.name && h ? "secondary" : "critical-primary"
+    buttonVariant: "application" === f.name && b ? "secondary" : "critical-primary"
   })
 }

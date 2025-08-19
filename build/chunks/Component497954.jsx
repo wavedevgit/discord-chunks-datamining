@@ -1,7 +1,7 @@
-/** Chunk was on 59727 **/
+/** Chunk was on 1056 **/
 /** chunk id: 497954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,30 +14,30 @@ var Chunk951288 = require("./951288.js"),
   Chunk5192 = require("./5192.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = e => {
+let p = e => {
   let {
     user: t,
     channelId: n,
-    reportId: _
+    reportId: p
   } = e, {
     isIgnored: g,
-    isBlocked: b
+    isBlocked: f
   } = (0, i.cj)([d.Z], () => ({
     isIgnored: d.Z.isIgnored(t.id),
     isBlocked: d.Z.isBlocked(t.id)
-  }), [t]), h = (0, i.e7)([c.Z], () => c.Z.getChannel(n), [n]), x = a.useMemo(() => u.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), f = a.useCallback(() => {
-    o.ZP.trackWithMetadata(m.rMx.IAR_IGNORE_USER_BUTTON_CLICKED, {
+  }), [t]), b = (0, i.e7)([c.Z], () => c.Z.getChannel(n), [n]), h = a.useMemo(() => u.ZP.getName(null == b ? true : b.guild_id, null == b ? true : b.id, t), [b, t]), x = a.useCallback(() => {
+    l.ZP.trackWithMetadata(_.rMx.IAR_IGNORE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
-      report_id: _
-    }), l.Z.ignoreUser(t.id, "web_iar_ignore_user_element", n)
-  }, [t, _, n]), v = a.useMemo(() => g || b, [g, b]);
+      report_id: p
+    }), o.Z.ignoreUser(t.id, "web_iar_ignore_user_element", n)
+  }, [t, p, n]), v = a.useMemo(() => g || f, [g, f]);
   return (0, r.jsx)(s.JZ, {
-    title: p.intl.formatToPlainString(p.t.U3yyFh, {
-      username: x
+    title: m.intl.formatToPlainString(m.t.U3yyFh, {
+      username: h
     }),
-    description: p.intl.string(p.t.naWE6e),
-    buttonText: v ? p.intl.string(p.t.nDdxOD) : p.intl.string(p.t.ICYEfX),
+    description: m.intl.string(m.t.naWE6e),
+    buttonText: v ? m.intl.string(m.t.nDdxOD) : m.intl.string(m.t.ICYEfX),
     buttonDisabled: v,
-    onButtonPress: f
+    onButtonPress: x
   })
 }

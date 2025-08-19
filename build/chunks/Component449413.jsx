@@ -1,4 +1,4 @@
-/** Chunk was on 59727 **/
+/** Chunk was on 1056 **/
 /** chunk id: 449413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -15,7 +15,7 @@ let c = e => {
     node: {
       info: c
     }
-  } = e, d = a.useRef(l.Z.reactParserFor((t = function(e) {
+  } = e, d = a.useRef(o.Z.reactParserFor((t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -32,8 +32,8 @@ let c = e => {
       })
     }
     return e
-  }({}, l.Z.defaultRules), n = n = {
-    link: o.s
+  }({}, o.Z.defaultRules), n = n = {
+    link: l.s
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

@@ -1,4 +1,4 @@
-/** Chunk was on 12756 **/
+/** Chunk was on 99799 **/
 /** chunk id: 744802, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -35,24 +35,24 @@ function c(e) {
     currentUser: c
   } = e, s = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var n, r, o = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      var n, r, o = {},
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+      return o
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
     }
-    return i
+    return o
   }(e, ["location", "user", "currentUser"]);
-  return (0, i.T)({
+  return (0, o.T)({
     location: t
-  }) && n.id !== c.id && !n.bot ? (0, r.jsx)(o.Z, a({
+  }) && n.id !== c.id && !n.bot ? (0, r.jsx)(l.Z, a({
     user: n
-  }, s)) : (0, r.jsx)(l.Z, a({
+  }, s)) : (0, r.jsx)(i.Z, a({
     user: n
   }, s))
 }

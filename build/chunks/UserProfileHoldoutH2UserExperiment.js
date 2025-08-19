@@ -1,9 +1,9 @@
-/** Chunk was on 93886 **/
-/** chunk id: 438379, original params: e,t,a (module,exports,require) **/
+/** Chunk was on 99799 **/
+/** chunk id: 438379, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => r
+  J: () => o
 });
-let n = (0, require("./818083.js").B)({
+let r = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-07_user_profile_holdout_h2",
   label: "User Profile Holdout H2 Experiment",
@@ -19,16 +19,16 @@ let n = (0, require("./818083.js").B)({
   }]
 });
 
-function r(e) {
+function o(e) {
   let {
     location: t,
-    autoTrackExposure: a = true
+    autoTrackExposure: n = true
   } = e, {
-    isInHoldout: r
-  } = n.useExperiment({
+    isInHoldout: o
+  } = r.useExperiment({
     location: t
   }, {
-    autoTrackExposure: a
+    autoTrackExposure: n
   });
-  return r
+  return o
 }

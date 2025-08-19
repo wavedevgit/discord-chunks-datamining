@@ -1,4 +1,4 @@
-/** Chunk was on 59727 **/
+/** Chunk was on 1056 **/
 /** chunk id: 273744, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   s: () => c
@@ -6,7 +6,7 @@ require.d(exports, {
 var r, a, Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk159635 = require("./159635.js"),
-  o = require.n(Chunk159635),
+  l = require.n(Chunk159635),
   Chunk481060 = require("./481060.js");
 let c = (r = function(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -25,7 +25,7 @@ let c = (r = function(e) {
     })
   }
   return e
-}({}, o().defaultRules.link), a = a = {
+}({}, l().defaultRules.link), a = a = {
   react: function(e, t, n) {
     return (0, i.jsx)(s.eee, {
       href: e.target,
