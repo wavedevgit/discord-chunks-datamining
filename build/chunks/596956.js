@@ -3,9 +3,10 @@
 "use strict";
 require.d(exports, {
   LD: () => c,
-  Qn: () => u,
+  Qn: () => d,
   SB: () => l,
-  TC: () => s
+  TC: () => s,
+  Z_: () => u
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
   Chunk668757 = require("./668757.js"),
@@ -40,7 +41,11 @@ class c {
     return (null == t ? true : t.fileByteRange) != null && (e.body = this.sliceBody(e.body, t.fileByteRange.start)), r.tn.put(e)
   }
 }
-class u {
+
+function u(e) {
+  return !!(e.platform === a.ow.REACT_NATIVE && null != e.uri && e.uri.startsWith("file://") && (0, i.X6)())
+}
+class d {
   doUpload(e, t) {
     var n, r, a;
     let s, l = (0, i.gi)();

@@ -168,7 +168,7 @@ class k extends Chunk476326.ZP {
       r = (0, Chunk481981.m)({
         location: "CloudUpload"
       }).enableResumableUploads;
-    if (Chunk392711 && this.item.platform === Chunk476326.ow.REACT_NATIVE && (this._uploadHttpClient = new Chunk596956.Qn, this._libdiscoreEnabled = true), require || Chunk392711) return await this.uploadFileWithResumption(this.responseUrl, module, exports);
+    if (Chunk392711 && (0, Chunk596956.Z_)(this.item) && (this._uploadHttpClient = new Chunk596956.Qn, this._libdiscoreEnabled = true), require || Chunk392711) return await this.uploadFileWithResumption(this.responseUrl, module, exports);
     let a = {
       "Content-Type": exports
     };
