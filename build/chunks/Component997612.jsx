@@ -181,7 +181,8 @@ function T(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: m.page,
-        children: [(0, r.jsx)("div", {
+        children: [(0, r.jsx)(a.zJl, {
+          fade: true,
           className: m.sidebar,
           children: (0, r.jsx)(f.N, {
             groups: n.groups,

@@ -1,7 +1,7 @@
 /** Chunk was on 2535 **/
 /** chunk id: 923422, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => A
+  default: () => x
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,6 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk991346 = require("./991346.js"),
   Chunk606669 = require("./606669.jsx"),
   Chunk53432 = require("./53432.jsx"),
+  Chunk226884 = require("./226884.jsx"),
   Chunk74869 = require("./74869.jsx"),
   Chunk45570 = require("./45570.jsx"),
   Chunk308512 = require("./308512.jsx"),
@@ -25,43 +26,43 @@ var Chunk951288 = require("./951288.js"),
   Chunk69021 = require("./69021.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let A = (0, Chunk108843.Z)(function(e) {
+let x = (0, Chunk108843.Z)(function(e) {
   let {
     webBuildOverride: t,
     onSelect: n,
     onInteraction: s
-  } = e, [u, A] = l.useState(false), x = (0, f.Z)(), D = (0, v.Z)(), I = (0, O.Z)(), _ = (0, y.Z)(), T = (0, h.Z)(), Z = (0, S.Z)(), N = (0, E.Z)(), m = (0, j.Z)(), {
-    analyticsLocations: k
-  } = (0, d.ZP)(), C = l.useMemo(() => (0, b.j)(), []);
-  async function R() {
+  } = e, [u, x] = l.useState(false), D = (0, v.Z)(), I = (0, S.Z)(), _ = (0, O.Z)(), N = (0, y.Z)(), T = (0, j.Z)(), Z = (0, h.Z)(), m = (0, E.Z)(), k = (0, P.Z)(), C = (0, f.Z)(), {
+    analyticsLocations: R
+  } = (0, d.ZP)(), L = l.useMemo(() => (0, b.j)(), []);
+  async function B() {
     try {
-      A(true), await (0, g.bF)(), window.location.reload(true)
+      x(true), await (0, g.bF)(), window.location.reload(true)
     } catch (e) {
-      A(false)
+      x(false)
     }
   }
-  let L = (0, p.VO)().filter(e => {
+  let V = (0, p.VO)().filter(e => {
     let {
       section: t
     } = e;
     return t !== c.ID.HEADER && t !== c.ID.CUSTOM && t !== c.ID.DIVIDER && "logout" !== t
   }).filter(e => null == e.predicate || e.predicate());
   return (0, a.jsx)(d.Gt, {
-    value: k,
-    children: (0, a.jsxs)(i.v2r, {
+    value: R,
+    children: (0, a.jsxs)(r.v2r, {
       navId: "user-settings-cog",
-      onClose: r.Zy,
-      "aria-label": w.intl.string(w.t.opYYHh),
+      onClose: i.Zy,
+      "aria-label": A.intl.string(A.t.opYYHh),
       onSelect: n,
       onInteraction: s,
-      children: [L.map(e => {
+      children: [V.map(e => {
         var t, n;
         let {
           section: l,
-          label: r,
+          label: i,
           onClick: c
         } = e, s = l.replace(/\W/gi, "_");
-        return (0, a.jsx)(i.sNh, (t = function(e) {
+        return (0, a.jsx)(r.sNh, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               a = Object.keys(n);
@@ -81,32 +82,34 @@ let A = (0, Chunk108843.Z)(function(e) {
         }({
           id: s
         }, {
-          label: r,
+          label: i,
           action: () => null != c ? c() : function(e, t) {
-            let n = Object.values(P.oAB).filter(t => t === e)[0];
+            let n = Object.values(w.oAB).filter(t => t === e)[0];
             null != n && o.Z.open(n, true, {
               analyticsLocations: t
             })
-          }(l, k)
+          }(l, R)
         }), n = n = {
           children: (e => {
             switch (e) {
-              case P.oAB.GAMES:
-                return x;
-              case P.oAB.STREAMER_MODE:
+              case w.oAB.GAMES:
                 return D;
-              case P.oAB.APPEARANCE:
+              case w.oAB.STREAMER_MODE:
                 return I;
-              case P.oAB.ACCESSIBILITY:
+              case w.oAB.APPEARANCE:
                 return _;
-              case P.oAB.VOICE:
-                return T;
-              case P.oAB.TEXT:
-                return Z;
-              case P.oAB.EXPERIMENTS:
+              case w.oAB.ACCESSIBILITY:
                 return N;
-              case P.oAB.DEVELOPER_OPTIONS:
+              case w.oAB.VOICE:
+                return T;
+              case w.oAB.TEXT:
+                return Z;
+              case w.oAB.EXPERIMENTS:
                 return m;
+              case w.oAB.DEVELOPER_OPTIONS:
+                return k;
+              case w.oAB.DESIGN_SYSTEMS:
+                return C;
               default:
                 return null
             }
@@ -121,11 +124,11 @@ let A = (0, Chunk108843.Z)(function(e) {
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t), s)
-      }), e.user.isStaff() && C.length > 0 ? (0, a.jsx)(i.sNh, {
+      }), e.user.isStaff() && L.length > 0 ? (0, a.jsx)(r.sNh, {
         label: "Build Overrides",
         id: "build_overrides",
-        children: (0, a.jsx)(i.kSQ, {
-          children: C.map(e => (0, a.jsx)(i.k5B, {
+        children: (0, a.jsx)(r.kSQ, {
+          children: L.map(e => (0, a.jsx)(r.k5B, {
             id: "input-".concat(e.payload),
             group: "build_overrides",
             label: e.id,
@@ -135,12 +138,12 @@ let A = (0, Chunk108843.Z)(function(e) {
             }
           }, "input-".concat(e.payload)))
         })
-      }) : null, null != t ? (0, a.jsx)(i.kSQ, {
-        children: (0, a.jsx)(i.sNh, {
+      }) : null, null != t ? (0, a.jsx)(r.kSQ, {
+        children: (0, a.jsx)(r.sNh, {
           id: "clear-build-override",
           disabled: u,
-          label: w.intl.string(w.t["/Nz9ra"]),
-          action: R,
+          label: A.intl.string(A.t["/Nz9ra"]),
+          action: B,
           color: "danger"
         })
       }) : null]

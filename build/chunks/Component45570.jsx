@@ -13,6 +13,6 @@ function o() {
   return (0, Chunk326528.b)().map(e => (0, a.jsx)(l.sNh, {
     id: e.id,
     label: e.title,
-    action: () => (0, i.Z)(e.id)
+    action: () => (0, r.Z)(e.id)
   }, e.id))
 }

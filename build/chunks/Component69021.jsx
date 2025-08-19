@@ -1,7 +1,7 @@
 /** Chunk was on 2535 **/
 /** chunk id: 69021, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => f
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -49,13 +49,13 @@ function O(e, t) {
   }), e
 }
 
-function E() {
+function f() {
   let {
     layoutDebuggingEnabled: e,
     isStaff: t,
     isDeveloper: n,
-    isLoggingGatewayEvents: E,
-    isLoggingOverlayEvents: f,
+    isLoggingGatewayEvents: f,
+    isLoggingOverlayEvents: E,
     isLoggingAnalyticsEvents: v,
     isAnalyticsDebuggerEnabled: S,
     isTracingRequests: h,
@@ -87,9 +87,9 @@ function E() {
     }
   }), {
     horizontalSpacing: _,
-    verticalSpacing: T,
-    maxHorizontalSpacing: Z,
-    maxVerticalSpacing: N
+    verticalSpacing: N,
+    maxHorizontalSpacing: T,
+    maxVerticalSpacing: Z
   } = (0, Chunk482215.i)(), {
     setHorizontalSpacing: m,
     setVerticalSpacing: k
@@ -201,19 +201,19 @@ function E() {
     children: [(0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "gateway-events",
       label: "Gateway Events",
-      checked: E,
+      checked: f,
       action: () => {
         (0, Chunk179658.y)({
-          logGatewayEvents: !E
+          logGatewayEvents: !f
         })
       }
     }, "gateway-events"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "overlay-events",
       label: "Overlay RPC Events",
-      checked: f,
+      checked: E,
       action: () => {
         (0, Chunk179658.y)({
-          logOverlayEvents: !f
+          logOverlayEvents: !E
         })
       }
     }, "overlay-events"), (0, Chunk951288.jsx)(Chunk481060.S89, {
@@ -254,11 +254,11 @@ function E() {
   }, "design-tools")), module && (R.push((0, Chunk951288.jsx)(Chunk481060.II_, {
     id: "horizontal-spacing",
     label: "Horizontal Spacing",
-    control: (e, t) => (0, a.jsx)(i._wy, O(y({}, e), {
+    control: (e, t) => (0, a.jsx)(r._wy, O(y({}, e), {
       ref: t,
       value: _,
       minValue: 0,
-      maxValue: Z,
+      maxValue: T,
       onChange: e => m(e),
       renderValue: e => "".concat(Math.round(e), "px"),
       "aria-label": "Horizontal Spacing"
@@ -266,11 +266,11 @@ function E() {
   }, "horizontal-spacing")), R.push((0, Chunk951288.jsx)(Chunk481060.II_, {
     id: "vertical-spacing",
     label: "Vertical Spacing",
-    control: (e, t) => (0, a.jsx)(i._wy, O(y({}, e), {
+    control: (e, t) => (0, a.jsx)(r._wy, O(y({}, e), {
       ref: t,
-      value: T,
+      value: N,
       minValue: 0,
-      maxValue: N,
+      maxValue: Z,
       onChange: e => k(e),
       "aria-label": "Horizontal Spacing",
       renderValue: e => "".concat(Math.round(e), "px")
