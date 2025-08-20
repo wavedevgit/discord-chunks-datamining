@@ -1,7 +1,7 @@
 /** Chunk was on 81709 **/
 /** chunk id: 440984, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  D: () => g
+  D: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,64 +21,64 @@ var Chunk951288 = require("./951288.js"),
   Chunk982404 = require("./982404.js"),
   Chunk299156 = require("./299156.js");
 
-function g(e) {
+function C(e) {
   let {
     premiumSubscription: t,
     premiumType: n,
-    onClose: g,
-    confettiCanvas: C,
-    userWasChurned: j = false,
-    userDiscountOffer: E
-  } = e, I = (0, l.ZP)(), v = (0, s.wj)(I) ? b : h, N = r.useRef(null), [P, O] = r.useState(false), T = (0, p._)(t, f.Xh.PREMIUM_MONTH_TIER_2, E), R = (0, d.aS)(f.Xh.PREMIUM_MONTH_TIER_2, false, false, {
+    onClose: C,
+    confettiCanvas: g,
+    userWasChurned: E = false,
+    userDiscountOffer: j
+  } = e, N = (0, l.ZP)(), I = (0, s.wj)(N) ? y : h, v = r.useRef(null), [O, P] = r.useState(false), T = (0, p._)(t, f.Xh.PREMIUM_MONTH_TIER_2, j), R = (0, d.aS)(f.Xh.PREMIUM_MONTH_TIER_2, false, false, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
-  }), S = (0, m.T4)(R.amount, R.currency), w = (0, a.e7)([c.Z], () => c.Z.useReducedMotion);
+  }), S = (0, m.T4)(R.amount, R.currency), D = (0, a.e7)([c.Z], () => c.Z.useReducedMotion);
   if (r.useEffect(() => {
-      null != N.current && null != T && O(true)
-    }, [N, P, T]), null == E || null == T) return null;
-  let D = x.intl.format(x.t.gPzMHR, {
-      numMonths: E.discount.user_usage_limit,
+      null != v.current && null != T && P(true)
+    }, [v, O, T]), null == j || null == T) return null;
+  let w = x.intl.format(x.t.gPzMHR, {
+      numMonths: j.discount.user_usage_limit,
       discountedPrice: T,
       regularPrice: S
     }),
     k = (0, i.jsx)("div", {
-      className: y.whatYouLoseButtonContainer,
+      className: b.whatYouLoseButtonContainer,
       children: (0, i.jsx)(o.zxk, {
         variant: "primary",
         text: x.intl.string(x.t["/r8g/v"]),
-        onClick: g
+        onClick: C
       })
     });
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(_.Z, {
       premiumType: n,
-      className: y.cancellationHeader,
-      onClose: g
+      className: b.cancellationHeader,
+      onClose: C
     }), (0, i.jsx)("div", {
-      ref: N,
+      ref: v,
       children: (0, i.jsx)(o.hzk, {
         "data-migration-pending": true,
-        className: y.body,
+        className: b.body,
         children: null != T ? (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsxs)("div", {
-            className: y.discountAppliedBody,
+            className: b.discountAppliedBody,
             children: [(0, i.jsx)("img", {
               alt: "",
-              src: v,
-              className: y.nitroIcon
+              src: I,
+              className: b.nitroIcon
             }), (0, i.jsx)(o.X6q, {
               variant: "heading-xl/bold",
-              children: j ? x.intl.string(x.t.gOOPaG) : x.intl.string(x.t.PZSyRk)
+              children: E ? x.intl.string(x.t.gOOPaG) : x.intl.string(x.t.PZSyRk)
             })]
           }), (0, i.jsx)("div", {
-            className: y.bodyString,
-            children: D
+            className: b.bodyString,
+            children: w
           }), k]
         }) : (0, i.jsx)(o.$jN, {})
       })
-    }), !w && P && (0, i.jsx)(u.Z, {
-      confettiTarget: N.current,
-      confettiCanvas: C,
+    }), !D && O && (0, i.jsx)(u.Z, {
+      confettiTarget: v.current,
+      confettiCanvas: g,
       confettiVelocityMultiplier: .75
     })]
   })

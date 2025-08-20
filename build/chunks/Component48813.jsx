@@ -35,44 +35,44 @@ let R = [Chunk981631.O0b.PAST_DUE, Chunk981631.O0b.PAUSED, Chunk981631.O0b.BILLI
     var t, n, s;
     let {
       analyticsLocation: S,
-      analyticsLocations: w,
-      onClose: D,
+      analyticsLocations: D,
+      onClose: w,
       transitionState: k,
       premiumSubscription: A
     } = e, {
       initialStep: L
     } = e, M = r.useRef(new a.qA), [U, B] = r.useState(null), Z = null == (t = (0, _.Af)(A)) ? true : t.planId, z = null != Z ? _.ZP.getPremiumType(Z) : null;
     o()(null != z, "Should not be cancelling Nitro without premiumType");
-    let F = z === P.p9.TIER_0 || z === P.p9.TIER_1 || z === P.p9.TIER_2;
-    null == L && (L = F ? j.R.WHAT_YOU_LOSE : j.R.CONFIRM);
-    let [Y, H, W, X] = (0, N.q)(L, A, w), q = (0, m.Q)(), V = (0, y.UV)(), {
+    let F = z === O.p9.TIER_0 || z === O.p9.TIER_1 || z === O.p9.TIER_2;
+    null == L && (L = F ? E.R.WHAT_YOU_LOSE : E.R.CONFIRM);
+    let [Y, H, W, X] = (0, v.q)(L, A, D), q = (0, m.Q)(), V = (0, b.UV)(), {
       churnUserDiscountOffer: G,
       isFetchingChurnDiscountOffer: K
-    } = (0, y.WR)(!V || null != A.canceledAt && Y !== j.R.CONFIRM_DISCOUNT), J = (0, b._)(A, P.Xh.PREMIUM_MONTH_TIER_2, G), [Q] = (0, x.ED)({
+    } = (0, b.WR)(!V || A.status === P.O0b.CANCELED && Y !== E.R.CONFIRM_DISCOUNT), J = (0, y._)(A, O.Xh.PREMIUM_MONTH_TIER_2, G), [Q] = (0, x.ED)({
       subscriptionId: A.id,
       items: (0, _.Ue)(null != (s = null == (n = A.renewalMutations) ? true : n.items) ? s : A.items),
       renewal: true,
-      analyticsLocations: w,
+      analyticsLocations: D,
       analyticsLocation: u.Z.CANCEL_INVOICE_PREVIEW
-    }), $ = null !== Q ? _.ZP.getIntervalForInvoice(Q) : null, ee = (0, _.aS)(P.Xh.PREMIUM_MONTH_TIER_2, false, false, {
+    }), $ = null !== Q ? _.ZP.getIntervalForInvoice(Q) : null, ee = (0, _.aS)(O.Xh.PREMIUM_MONTH_TIER_2, false, false, {
       currency: A.currency,
       paymentSourceId: A.paymentSourceId
     }), et = (0, f.T4)(ee.amount, ee.currency), en = r.useCallback(() => {
       switch (Y) {
-        case j.R.CONFIRM:
+        case E.R.CONFIRM:
           return (0, i.jsx)(h.G, {});
-        case j.R.CONFIRM_DISCOUNT:
-          return (0, i.jsx)(g.U, {});
-        case j.R.DISCOUNT_APPLIED:
-          return (0, i.jsx)(C.i, {});
-        case j.R.PREVIEW:
-          return (0, i.jsx)(I.w, {});
-        case j.R.WHAT_YOU_LOSE:
+        case E.R.CONFIRM_DISCOUNT:
+          return (0, i.jsx)(C.U, {});
+        case E.R.DISCOUNT_APPLIED:
+          return (0, i.jsx)(g.i, {});
+        case E.R.PREVIEW:
+          return (0, i.jsx)(N.w, {});
+        case E.R.WHAT_YOU_LOSE:
         default:
-          return (0, i.jsx)(v.n, {})
+          return (0, i.jsx)(I.n, {})
       }
     }, [Y]), ei = r.useCallback(async () => {
-      if (R.includes(A.status)) await (0, c.EO)(A.id, w, S);
+      if (R.includes(A.status)) await (0, c.EO)(A.id, D, S);
       else {
         var e, t;
         let n = null != (t = null == (e = A.renewalMutations) ? true : e.items) ? t : A.items,
@@ -82,12 +82,12 @@ let R = [Chunk981631.O0b.PAST_DUE, Chunk981631.O0b.PAUSED, Chunk981631.O0b.BILLI
         }, {
           amount: 0,
           currency: A.currency
-        }, (0, _.UX)(i, A.currency, A.paymentSourceId), w, S)
+        }, (0, _.UX)(i, A.currency, A.paymentSourceId), D, S)
       }
-    }, [A, w, S]), er = async () => {
+    }, [A, D, S]), er = async () => {
       if (null == G) throw Error("Churn user discount offer is null");
-      null != A.canceledAt ? await (0, c.df)(A, G) : await l.tn.post({
-        url: O.ANM.USER_OFFER_REDEEM,
+      A.status === P.O0b.CANCELED ? await (0, c.df)(A, G) : await l.tn.post({
+        url: P.ANM.USER_OFFER_REDEEM,
         body: {
           user_discount_offer_id: G.id
         },
@@ -95,13 +95,13 @@ let R = [Chunk981631.O0b.PAST_DUE, Chunk981631.O0b.PAUSED, Chunk981631.O0b.BILLI
       })
     };
     return (0, i.jsx)(d.Gt, {
-      value: w,
-      children: (0, i.jsxs)(E.D.Provider, {
+      value: D,
+      children: (0, i.jsxs)(j.D.Provider, {
         value: {
           setStep: H,
           premiumType: z,
           onClose: () => {
-            D(), p.default.track(O.rMx.CANCELLATION_FLOW_STEP, function(e) {
+            w(), p.default.track(P.rMx.CANCELLATION_FLOW_STEP, function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   i = Object.keys(n);
@@ -119,16 +119,16 @@ let R = [Chunk981631.O0b.PAST_DUE, Chunk981631.O0b.PAUSED, Chunk981631.O0b.BILLI
               }
               return e
             }({
-              from_step: j.O[Y],
+              from_step: E.O[Y],
               to_step: null,
               step_duration_ms: Date.now() - W,
               flow_duration_ms: Date.now() - X,
-              location_stack: w
-            }, (0, N.b)(A)))
+              location_stack: D
+            }, (0, v.b)(A)))
           },
           transitionState: k,
           premiumSubscription: A,
-          analyticsLocations: w,
+          analyticsLocations: D,
           analyticsLocation: S,
           confettiCanvas: U,
           churnUserDiscountOffer: G,

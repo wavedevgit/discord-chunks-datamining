@@ -85,13 +85,13 @@ function T(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.X6q, {
       variant: "heading-xl/semibold",
-      color: "always-white",
+      color: "text-primary",
       children: j.intl.format(j.t["50bA2N"], {
         percent: n.percentage
       })
     }), (0, i.jsx)(s.Text, {
       variant: "text-sm/medium",
-      color: "text-secondary",
+      color: "text-default",
       children: j.intl.format(j.t.N43FMz, {
         numMonths: n.duration,
         discountedPrice: c,
@@ -110,13 +110,13 @@ function N(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.X6q, {
       variant: "heading-xl/semibold",
-      color: "always-white",
+      color: "text-primary",
       children: j.intl.format(j.t.sFO20N, {
         percent: t.discount.amount
       })
     }), (0, i.jsx)(s.Text, {
       variant: "text-sm/medium",
-      color: "text-secondary",
+      color: "text-default",
       children: j.intl.format(j.t["PH7Q+f"], {
         numMonths: t.discount.user_usage_limit,
         discountedPrice: r,
@@ -160,12 +160,14 @@ let I = function(e) {
   return (0, c.Q0)(w) ? null : (0, i.jsx)("div", {
     className: E.churnDiscountBannerBackground,
     children: (0, i.jsx)(r.$, {
+      color: "nitro-pink",
       className: E.headerGradient,
       children: (0, i.jsxs)("div", {
         className: E.churnDiscountBanner,
         children: [(0, i.jsxs)("div", {
           className: E.headerLabel,
           children: [(0, i.jsx)(u.Z, {
+            color: "currentcolor",
             className: E.churnDiscountBannerWordMark,
             "aria-label": j.intl.string(j.t.lpNrPj)
           }), null != A && (0, i.jsx)(f.mn, {
@@ -177,7 +179,7 @@ let I = function(e) {
           }), (0, i.jsx)(s.Text, {
             className: E.churnDiscountBannerExpiryDate,
             variant: "text-sm/medium",
-            color: "text-secondary",
+            color: "text-primary",
             children: null != A && k
           })]
         }), (0, i.jsx)("div", {
@@ -210,7 +212,7 @@ let I = function(e) {
                   children: [(0, i.jsx)(s.ua7, {
                     text: n,
                     children: n => (0, i.jsx)(s.zxk, v(O({}, n), {
-                      variant: "overlay-primary",
+                      variant: "expressive",
                       disabled: e,
                       text: j.intl.string(j.t["dylp//"]),
                       size: "md",
@@ -238,7 +240,7 @@ let I = function(e) {
             src: C,
             alt: "",
             draggable: false
-          }), ";"]
+          })]
         })]
       })
     })

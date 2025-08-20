@@ -61,7 +61,7 @@ let _ = () => {
     },
     gradientColor: A ? "nitro-pink" : "nitro-green",
     transitionState: module,
-    title: null != _.canceledAt ? Chunk388032.intl.string(Chunk388032.t["2Otztr"]) : "".concat(Chunk388032.intl.format(Chunk388032.t.q9Vxu7, {
+    title: _.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.string(Chunk388032.t["2Otztr"]) : "".concat(Chunk388032.intl.format(Chunk388032.t.q9Vxu7, {
       percent: C.discount.amount
     })),
     actions: P,
@@ -77,7 +77,7 @@ let _ = () => {
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: null != _.canceledAt ? Chunk388032.intl.format(Chunk388032.t.mY3ysL, {
+        children: _.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.format(Chunk388032.t.mY3ysL, {
           discountedPrice: O,
           billingPeriod: (0, Chunk74538.JP)(C.discount.user_usage_limit_interval),
           numMonths: C.discount.user_usage_limit,
