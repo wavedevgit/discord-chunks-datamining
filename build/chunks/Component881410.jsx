@@ -96,7 +96,8 @@ function f(e) {
       children: (0, n.jsx)(a.zxk, d({
         variant: "secondary",
         size: "sm",
-        text: s.intl.string(s.t.uqw8wM),
+        icon: a.qJs,
+        text: s.intl.string(s.t.SgTOtb),
         disabled: t
       }, e))
     })
