@@ -41,7 +41,7 @@ function b(e) {
     }
   }), T = (0, a.e7)([u.Z], () => u.Z.getState().soundshareEnabled), S = d.Z.supports(g.AN.DESKTOP_CAPTURE_APPLICATIONS), A = (0, a.e7)([d.Z], () => d.Z.supports(g.AN.SOUNDSHARE)), C = (0, a.e7)([d.Z], () => d.Z.supportsScreenSoundshare()), N = (0, p.Z)(t, v), R = (0, _.Z)(t, v, m.Vq), P = null != I && A && (!I.startsWith("screen") || C), w = (0, a.e7)([d.Z], () => d.Z.getUseSystemScreensharePicker() && (0, f.isLinux)()), D = i.useCallback(() => {
     (null == I ? true : I.startsWith("prepicked:")) ? d.Z.getMediaEngine().eachConnection(e => {
-      e.context === g.Yn.STREAM && e.presentDesktopSourcePicker()
+      e.context === g.Yn.STREAM && e.presentDesktopSourcePicker("window")
     }): n()
   }, [I, n]), x = i.useCallback(() => {
     let {
