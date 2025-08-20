@@ -69,7 +69,7 @@ let N = e => {
     }),
     ref: w,
     children: (0, r.jsx)("div", {
-      className: A.container,
+      className: o()(A.container, A.responsiveContainer),
       children: (0, r.jsxs)(f.Gt, {
         value: L,
         children: [P ? (0, r.jsxs)(r.Fragment, {

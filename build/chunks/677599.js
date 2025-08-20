@@ -3,6 +3,7 @@
 "use strict";
 module.exports = {
   container: "container_ca1a02",
+  responsiveContainer: "responsiveContainer_ca1a02",
   perksDiscoverability: "perksDiscoverability_ca1a02",
   whatsNew: "whatsNew_ca1a02",
   giftNitro: "giftNitro_ca1a02",

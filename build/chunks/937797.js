@@ -2,20 +2,37 @@
 /** chunk id: 937797, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D: () => r
+  D: () => i,
+  X: () => a
 });
-let r = (0, require("./427164.js").le)({
-  name: "2025-08-quest-ad-fetch-active-check",
-  kind: "user",
-  defaultConfig: {
-    enabled: false
-  },
-  variations: {
-    0: {
+var Chunk427164 = require("./427164.js");
+let i = (0, Chunk427164.le)({
+    name: "2025-08-quest-ad-fetch-active-check",
+    kind: "user",
+    defaultConfig: {
       enabled: false
     },
-    1: {
-      enabled: true
+    variations: {
+      0: {
+        enabled: false
+      },
+      1: {
+        enabled: true
+      }
     }
-  }
-})
+  }),
+  a = (0, Chunk427164.le)({
+    name: "2025-08-sponsored-quest",
+    kind: "user",
+    defaultConfig: {
+      enabled: false
+    },
+    variations: {
+      0: {
+        enabled: false
+      },
+      1: {
+        enabled: true
+      }
+    }
+  })

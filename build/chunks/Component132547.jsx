@@ -55,7 +55,7 @@ let N = e => {
       className: A.mainPageScroller,
       ref: n,
       children: (0, r.jsx)("div", {
-        className: A.container,
+        className: o()(A.container, A.responsiveContainer),
         children: (0, r.jsxs)(f.Gt, {
           value: P,
           children: [(0, r.jsx)(y.Z, {
