@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk599832 = require("./599832.js"),
   Chunk451429 = require("./451429.js");
-let E = [{
+let T = [{
     key: "id",
     cellClassName: Chunk599832.eventColumn,
     render(e) {
@@ -54,7 +54,7 @@ let E = [{
       return t.toLocaleString()
     }
   }],
-  T = [{
+  E = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -139,7 +139,7 @@ function S() {
     TabBar: v,
     renderSelectedTab: j
   } = (0, Chunk621060.ZP)({
-    tabs: T
+    tabs: E
   }, []), S = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk647438.useCallback(e => {
     h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
@@ -181,7 +181,7 @@ function S() {
         placeholder: "Search by experiment id"
       })]
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: E,
+      columns: T,
       data: Chunk658722,
       selectedRowKey: Chunk913527,
       onClickRow: e => d(e.key)

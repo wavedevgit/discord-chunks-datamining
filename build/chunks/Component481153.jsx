@@ -1,12 +1,12 @@
 /** Chunk was on 27978 **/
 /** chunk id: 481153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk812206 = require("./812206.js"),
@@ -24,44 +24,44 @@ var Chunk951288 = require("./951288.js"),
   Chunk569964 = require("./569964.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
-let O = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z, Chunk594174.default], e => {
+let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z, Chunk594174.default], e => {
   let {
     giftCode: t
-  } = e, n = f.Z.get(t.skuId), {
+  } = e, n = m.Z.get(t.skuId), {
     subscriptionPlanId: r
   } = t;
   return {
     sku: n,
     subscriptionPlan: null != r ? (0, _.oE)(r) : null,
     application: c.Z.getApplication(n.applicationId),
-    gifter: m.default.getUser(t.userId)
+    gifter: p.default.getUser(t.userId)
   }
 })(e => {
   let {
     error: t,
     giftCode: n,
     gifter: l,
-    sku: o,
+    sku: s,
     application: c,
-    subscriptionPlan: m
-  } = e, g = null == l ? v.intl.string(v.t.lTGZAg) : v.intl.formatToPlainString(v.t.TjWdPT, {
+    subscriptionPlan: p
+  } = e, g = null == l ? E.intl.string(E.t.lTGZAg) : E.intl.formatToPlainString(E.t.TjWdPT, {
     username: l.username
-  }), f = o.name;
-  return null != m && (f = v.intl.formatToPlainString(m.interval === E.rV.MONTH ? v.t.CTpcCQ : v.t.rgPWGx, {
-    skuName: o.name,
-    intervalCount: m.intervalCount
+  }), m = s.name;
+  return null != p && (m = E.intl.formatToPlainString(p.interval === v.rV.MONTH ? E.t.CTpcCQ : E.t.rgPWGx, {
+    skuName: s.name,
+    intervalCount: p.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
-    children: [null != n.giftStyle ? (0, r.jsx)(p.Z, {
+    children: [null != n.giftStyle ? (0, r.jsx)(f.Z, {
       defaultAnimationState: h.SR.LOOP,
       giftStyle: n.giftStyle,
-      className: j.seasonalIcon
+      className: b.seasonalIcon
     }) : (0, r.jsx)(u.qE, {
       src: null != l ? l.getAvatarURL(true, 100) : null,
       size: a.EFr.DEPRECATED_SIZE_100,
       className: I.marginBottom20
     }), null != t ? (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
-        children: v.intl.string(v.t.mDFGFh)
+        children: E.intl.string(E.t.mDFGFh)
       }), (0, r.jsx)(u.Dx, {
         children: t
       })]
@@ -69,13 +69,13 @@ let O = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
       children: [(0, r.jsx)(u.DK, {
         children: g
       }), (0, r.jsxs)(u.Dx, {
-        className: s()(I.marginTop8, b.flexCenter),
-        children: [o.productLine !== x.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
+        className: o()(I.marginTop8, j.flexCenter),
+        children: [s.productLine !== x.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
           size: d.Z.Sizes.MEDIUM,
-          className: j.applicationIcon,
+          className: b.applicationIcon,
           game: c,
-          skuId: o.id
-        }), f]
+          skuId: s.id
+        }), m]
       })]
     })]
   })

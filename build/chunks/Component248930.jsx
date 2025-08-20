@@ -66,14 +66,14 @@ function v(e) {
           onShowToolbar: () => A({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          renderMoreButtonPopout: y ? true : e => (0, r.jsx)(x.Z, {
+          renderMoreButtonPopout: y ? true : e => (0, r.jsx)(g.Z, {
             display: "recent",
             entry: t,
             user: n,
             onClose: _,
             children: e
           }),
-          children: (0, r.jsx)(g.Z, {
+          children: (0, r.jsx)(x.Z, {
             entry: t,
             user: n,
             onClose: _,

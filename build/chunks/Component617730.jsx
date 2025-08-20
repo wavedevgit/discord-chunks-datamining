@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 617730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,7 +16,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk292660 = require("./292660.js");
 
-function m(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,19 +48,19 @@ function g(e, t) {
   }), e
 }
 
-function f(e) {
+function m(e) {
   let {
     invite: t,
     onAcceptInvite: n,
-    disableUser: f = false
+    disableUser: m = false
   } = e;
   if (null == t) return null;
   let _ = null != t.guild ? (0, a.Qs)(t.guild) : null,
-    x = null != t.channel ? (0, s.jD)(t.channel) : null,
-    E = null != t.target_application ? new l.ZP(t.target_application) : null,
-    v = f || null == t.inviter ? null : new o.Z(t.inviter),
-    j = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != _ && _.features.has(d.oNc.COMMUNITY)) && null != v && (0, c.WT)(t),
-    b = (e => {
+    x = null != t.channel ? (0, o.jD)(t.channel) : null,
+    v = null != t.target_application ? new l.ZP(t.target_application) : null,
+    E = m || null == t.inviter ? null : new s.Z(t.inviter),
+    b = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != _ && _.features.has(d.oNc.COMMUNITY)) && null != E && (0, c.WT)(t),
+    j = (e => {
       let {
         state: t
       } = e;
@@ -74,30 +74,30 @@ function f(e) {
     })(t),
     I = {
       invite: t,
-      user: v,
+      user: E,
       guild: _,
       channel: x,
-      application: E
+      application: v
     };
   return (0, c.JI)(t) ? (0, r.jsx)(u.Z, {
     invite: t,
     channel: x,
-    isSubmitting: b,
+    isSubmitting: j,
     onAcceptInvite: n
   }) : (0, r.jsxs)("div", {
-    className: p.container,
+    className: f.container,
     children: [(0, r.jsx)(c.GB, {
-      application: E,
+      application: v,
       guild: _,
-      user: j || (0, c.X7)(t) ? v : null
-    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, g(m({}, I), {
-      showBigUserIcon: j
-    })), (0, r.jsx)(c.UM, g(m({}, I), {
-      showBigUserIcon: j
-    })), (0, r.jsx)(c.V6, m({}, I)), (0, r.jsx)(i.zx, {
+      user: b || (0, c.X7)(t) ? E : null
+    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, g(p({}, I), {
+      showBigUserIcon: b
+    })), (0, r.jsx)(c.UM, g(p({}, I), {
+      showBigUserIcon: b
+    })), (0, r.jsx)(c.V6, p({}, I)), (0, r.jsx)(i.zx, {
       onClick: n,
-      submitting: b,
-      className: p.acceptButton,
+      submitting: j,
+      className: f.acceptButton,
       children: h.intl.string(h.t.ohMvm5)
     })]
   })

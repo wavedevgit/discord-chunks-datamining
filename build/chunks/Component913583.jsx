@@ -17,12 +17,12 @@ function d(e) {
   let {
     onDismiss: t
   } = e;
-  return (0, s.Z)({
+  return (0, o.Z)({
     type: i.ImpressionTypes.MODAL,
     name: i.ImpressionNames.MULTI_ACCOUNT_SWITCH_LANDING
-  }), (0, r.jsxs)(o.ZP, {
+  }), (0, r.jsxs)(s.ZP, {
     className: u.chooseAccountAuthBox,
-    children: [(0, r.jsx)(o.Dx, {
+    children: [(0, r.jsx)(s.Dx, {
       children: c.intl.string(c.t["bVbB6+"])
     }), (0, r.jsx)(l.Text, {
       className: u.chooseAccountHelpText,

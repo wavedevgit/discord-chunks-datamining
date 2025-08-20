@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 587444, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f,
+  Z: () => m,
   u: () => g
 });
 var Chunk951288 = require("./951288.js");
@@ -28,14 +28,14 @@ function g(e) {
     children: [(0, r.jsx)(a.Ee, {
       src: n(689411)
     }), (0, r.jsx)(a.Dx, {
-      className: l()(m.marginTop20, m.marginBottom8, p.flexCenter),
+      className: l()(p.marginTop20, p.marginBottom8, f.flexCenter),
       children: d.intl.string(d.t.eL5z0t)
     }), (0, r.jsx)(a.DK, {
-      className: m.marginBottom40,
+      className: p.marginBottom40,
       children: d.intl.string(d.t["poAv6+"])
-    }), (0, r.jsxs)(o.Zbd, {
+    }), (0, r.jsxs)(s.Zbd, {
       className: h.card,
-      type: o.Zbd.Types.CUSTOM,
+      type: s.Zbd.Types.CUSTOM,
       children: [(0, r.jsx)("img", {
         alt: "",
         className: h.cardAccentLeft,
@@ -49,12 +49,12 @@ function g(e) {
         direction: c.Z.Direction.VERTICAL,
         align: c.Z.Align.STRETCH,
         grow: 0,
-        children: [(0, r.jsx)(o.Text, {
+        children: [(0, r.jsx)(s.Text, {
           tag: "strong",
           className: h.buttonTitle,
           variant: "text-md/normal",
           style: {
-            color: s.Z.unsafe_rawColors.PRIMARY_300.css
+            color: o.Z.unsafe_rawColors.PRIMARY_300.css
           },
           children: t
         }), (0, r.jsx)(a.zx, {
@@ -67,7 +67,7 @@ function g(e) {
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     text: t,
     buttonCta: n,

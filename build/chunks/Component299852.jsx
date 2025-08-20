@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 299852, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => b
 }), require("./35282.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function E(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,7 +28,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 Chunk442837.ZP.initialize();
-class v extends(r = Chunk647438.PureComponent) {
+class E extends(r = Chunk647438.PureComponent) {
   componentDidMount() {
     let e = (0, Chunk129293.Z)(this.props.location),
       t = (0, Chunk593473.parse)(this.props.location.search);
@@ -47,7 +47,7 @@ class v extends(r = Chunk647438.PureComponent) {
         body: {
           user: n
         }
-      } = e, r = new p.Z(n);
+      } = e, r = new f.Z(n);
       this.setState({
         success: true,
         busy: false,
@@ -85,7 +85,7 @@ class v extends(r = Chunk647438.PureComponent) {
         className: x.marginTop8,
         color: d.zx.Colors.LINK,
         look: d.zx.Looks.LINK,
-        onClick: () => r(g.Z5c.SETTINGS("notifications", f.vG)),
+        onClick: () => r(g.Z5c.SETTINGS("notifications", m.vG)),
         children: _.intl.string(_.t.YYTira)
       })]
     })
@@ -148,7 +148,7 @@ class v extends(r = Chunk647438.PureComponent) {
     return module ? this.renderBusy() : exports ? this.renderSuccess() : this.renderError()
   }
   constructor(...e) {
-    super(...e), E(this, "state", {
+    super(...e), v(this, "state", {
       busy: true,
       success: false,
       user: null,
@@ -156,9 +156,9 @@ class v extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-E(v, "defaultProps", {
+v(E, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let j = Chunk442837.ZP.connectStores([Chunk896797.Z], () => ({
+let b = Chunk442837.ZP.connectStores([Chunk896797.Z], () => ({
   defaultRoute: Chunk896797.Z.defaultRoute
-}))(v)
+}))(E)

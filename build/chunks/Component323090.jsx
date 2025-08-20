@@ -51,21 +51,21 @@ function j(e) {
       user: n,
       currentUser: t,
       guildId: j.guildId,
-      scrollIntoView: _ === g.Tb.ROLES
+      scrollIntoView: _ === x.Tb.ROLES
     }), (0, r.jsx)(p.Z, {
-      heading: x.intl.string(x.t["A//N4u"]),
+      heading: g.intl.string(g.t["A//N4u"]),
       children: (0, r.jsx)(m.Z, {
         userId: n.id,
         guildId: v,
-        tooltipDelay: g.vB
+        tooltipDelay: x.vB
       })
     }), (0, r.jsx)(p.Z, {
-      heading: x.intl.string(x.t["mQKv+v"]),
-      scrollIntoView: _ === g.Tb.NOTE,
+      heading: g.intl.string(g.t["mQKv+v"]),
+      scrollIntoView: _ === x.Tb.NOTE,
       children: (0, r.jsx)(i.Z, {
         userId: n.id,
         className: h.note,
-        autoFocus: _ === g.Tb.NOTE,
+        autoFocus: _ === x.Tb.NOTE,
         onUpdate: () => I({
           action: "SET_NOTE"
         })

@@ -35,13 +35,13 @@ function O(e) {
     onClose: Z
   } = e, {
     trackUserProfileAction: T
-  } = (0, f.KZ)(), A = (0, o.e7)([d.Z], () => d.Z.getGuildId()), C = (0, c.Y)({
+  } = (0, f.KZ)(), A = (0, o.e7)([d.Z], () => d.Z.getGuildId()), N = (0, c.Y)({
     userId: n.id
-  }), N = (0, o.e7)([u.Z], () => u.Z.hidePersonalInformation), E = (0, o.e7)([s.default], () => s.default.locale), S = (0, p.Z)(n.id), w = (0, m.Z)(n.id);
+  }), C = (0, o.e7)([u.Z], () => u.Z.hidePersonalInformation), E = (0, o.e7)([s.default], () => s.default.locale), S = (0, p.Z)(n.id), w = (0, m.Z)(n.id);
   return (0, r.jsxs)(l.zJl, {
     fade: true,
     className: I.scroller,
-    children: [(null == O ? true : O.bio) != null && (null == O ? true : O.bio) !== "" && !N && (0, r.jsx)(b.Z, {
+    children: [(null == O ? true : O.bio) != null && (null == O ? true : O.bio) !== "" && !C && (0, r.jsx)(b.Z, {
       userBio: O.bio,
       setLineClamp: false
     }), (null == O ? true : O.guildId) != null && (0, r.jsx)(v.Z, {
@@ -59,10 +59,10 @@ function O(e) {
       children: (0, r.jsx)(a.n, {
         userId: n.id
       })
-    }), C.length > 0 && (0, r.jsx)(j.Z, {
+    }), N.length > 0 && (0, r.jsx)(j.Z, {
       heading: y.intl.string(y.t["Uv/eT0"]),
-      children: (0, r.jsx)(x.Z, {
-        applicationIds: C
+      children: (0, r.jsx)(g.Z, {
+        applicationIds: N
       })
     }), (0, r.jsx)(j.Z, {
       heading: y.intl.string(y.t.a6XYDw),
@@ -74,7 +74,7 @@ function O(e) {
     }), S.length > 0 && (0, r.jsx)(j.Z, {
       heading: y.intl.string(y.t["3fe7U1"]),
       scrollIntoView: P === _.Tb.CONNECTIONS,
-      children: (0, r.jsx)(g.ZP, {
+      children: (0, r.jsx)(x.ZP, {
         connectedAccounts: S,
         className: I.connections,
         userId: n.id,
@@ -82,7 +82,7 @@ function O(e) {
       })
     }), w.length > 0 && (0, r.jsx)(j.Z, {
       heading: y.intl.string(y.t.PHjkRE),
-      children: w.map(e => (0, r.jsx)(g.tH, {
+      children: w.map(e => (0, r.jsx)(x.tH, {
         className: I.appsConnections,
         applicationRoleConnection: e,
         locale: E,

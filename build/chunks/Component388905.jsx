@@ -80,10 +80,11 @@ let I = e => {
     let {
       className: t,
       id: n,
-      children: i
+      children: i,
+      variant: o = "heading-xl/semibold"
     } = e;
     return (0, r.jsx)(s.X6q, {
-      variant: "heading-xl/semibold",
+      variant: o,
       color: "header-primary",
       className: a()(g.title, t),
       id: n,

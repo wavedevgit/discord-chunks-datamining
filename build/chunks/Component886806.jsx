@@ -1,96 +1,70 @@
 /** Chunk was on 27978 **/
 /** chunk id: 886806, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk970683 = require("./970683.js"),
   Chunk893776 = require("./893776.js"),
   Chunk493773 = require("./493773.js"),
   Chunk129293 = require("./129293.js"),
-  Chunk388905 = require("./388905.jsx"),
+  Chunk80206 = require("./80206.jsx"),
   Chunk17894 = require("./17894.js"),
   Chunk108427 = require("./108427.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk767307 = require("./767307.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk388032 = require("./388032.jsx");
 
-function E(e) {
+function m(e) {
   n.g.location.assign(e)
 }
 
-function v(e) {
+function _(e) {
   let {
     location: t,
-    transitionTo: l = E
-  } = e, [o, v] = i.useState("submitting"), j = i.useRef(true);
-  (0, c.ZP)(() => {
-    (0, p.e)("verify_email");
-    let e = (0, u.Z)(t);
-    if (null == e) return void v("failed");
+    transitionTo: n = m
+  } = e, [l, _] = i.useState("submitting"), x = i.useRef(true);
+  (0, a.ZP)(() => {
+    (0, h.e)("verify_email");
+    let e = (0, c.Z)(t);
+    if (null == e) return void _("failed");
     (async () => {
       try {
-        let t = await a.Z.verify(e);
-        v("succeeded"), j.current = t
+        let t = await s.Z.verify(e);
+        _("succeeded"), x.current = t
       } catch (e) {
-        v("failed")
+        _("failed")
       }
     })()
   });
-  let b = i.useCallback(() => {
-      l(g.Z5c.LOGIN, {
+  let v = i.useCallback(() => {
+      n(p.Z5c.LOGIN, {
         source: "verify_email"
       })
-    }, [l]),
-    I = i.useCallback(() => {
-      m.default.track(g.rMx.VERIFY_ACCOUNT_APP_OPENED, {
-        verifying_user_id: j.current
-      }), (0, h.Z)("verify_email")
+    }, [n]),
+    E = i.useCallback(() => {
+      f.default.track(p.rMx.VERIFY_ACCOUNT_APP_OPENED, {
+        verifying_user_id: x.current
+      }), (0, d.Z)("verify_email")
     }, []);
-  return "failed" === o ? (0, r.jsxs)(d.ZP, {
-    children: [(0, r.jsx)(d.Ee, {
-      src: n(375673),
-      className: s()(_.image, x.marginBottom20)
-    }), (0, r.jsx)(d.Dx, {
-      className: x.marginBottom8,
-      children: f.intl.string(f.t.PCgG39)
-    }), (0, r.jsx)(d.DK, {
-      className: x.marginBottom40,
-      children: f.intl.string(f.t.tQpeAw)
-    }), (0, r.jsx)(d.zx, {
-      onClick: b,
-      children: f.intl.string(f.t.dKhVQE)
-    })]
-  }) : "succeeded" === o ? (0, r.jsxs)(d.ZP, {
-    children: [(0, r.jsx)(d.Ee, {
-      src: n(73962),
-      className: s()(_.image, x.marginBottom20)
-    }), (0, r.jsx)(d.Dx, {
-      className: x.marginBottom40,
-      children: f.intl.string(f.t.dAfGb2)
-    }), (0, r.jsx)(d.zx, {
-      onClick: I,
-      children: f.intl.string(f.t.uJWIj4)
-    })]
-  }) : (0, r.jsxs)(d.ZP, {
-    children: [(0, r.jsx)(d.Ee, {
-      src: n(892235),
-      className: s()(_.image, x.marginBottom20)
-    }), (0, r.jsx)(d.Dx, {
-      className: x.marginBottom8,
-      children: f.intl.string(f.t["0c8+5u"])
-    }), (0, r.jsx)(d.DK, {
-      className: x.marginBottom40,
-      children: f.intl.string(f.t.ULTCBA)
-    }), (0, r.jsx)(d.zx, {
-      submitting: true,
-      color: d.zx.Colors.PRIMARY
-    })]
+  return "failed" === l ? (0, r.jsx)(u.Z, {
+    title: g.intl.string(g.t.PCgG39),
+    subtitle: g.intl.string(g.t.tQpeAw),
+    buttonText: g.intl.string(g.t.dKhVQE),
+    onButtonClick: v
+  }) : "succeeded" === l ? (0, r.jsx)(u.Z, {
+    title: g.intl.string(g.t.dAfGb2),
+    buttonText: g.intl.string(g.t.uJWIj4),
+    onButtonClick: E,
+    image: (0, r.jsx)(o.dQ, {
+      alt: g.intl.string(g.t.dAfGb2)
+    })
+  }) : (0, r.jsx)(u.Z, {
+    title: g.intl.string(g.t["0c8+5u"]),
+    subtitle: g.intl.string(g.t.ULTCBA),
+    loading: true
   })
 }
 Chunk442837.ZP.initialize()

@@ -1,11 +1,12 @@
-/** Chunk was on 96858 **/
-/** chunk id: 721751, original params: e,t,n (module,exports,require) **/
-let r;
+/** Chunk was on 93426 **/
+/** chunk id: 721751, original params: e,t,r (module,exports,require) **/
+let n;
 require.d(exports, {
-  Z: () => j
+  Z: () => B
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk843611 = require("./843611.js"),
   Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -15,34 +16,36 @@ var Chunk951288 = require("./951288.js"),
   Chunk568154 = require("./568154.jsx"),
   Chunk353926 = require("./353926.js"),
   Chunk703656 = require("./703656.js"),
+  Chunk546247 = require("./546247.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk816282 = require("./816282.js");
 let Chunk575703 = require("./575703.js"),
   Chunk2984 = require("./2984.js"),
   O = [Chunk981631.Z5c.LOGIN, Chunk981631.Z5c.LOGIN_HANDOFF, Chunk981631.Z5c.REGISTER, Chunk981631.Z5c.INVITE(""), Chunk981631.Z5c.GIFT_CODE(""), Chunk981631.Z5c.GUILD_TEMPLATE_LOGIN(""), Chunk981631.Z5c.GUILD_TEMPLATE(""), Chunk981631.Z5c.DISABLE_EMAIL_NOTIFICATIONS, Chunk981631.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, Chunk981631.Z5c.BILLING_PREMIUM_SUBSCRIBE, Chunk981631.Z5c.BILLING_PAYMENT_SOURCES_CREATE, Chunk981631.Z5c.BILLING_PAYMENTS, Chunk981631.Z5c.BILLING_PREMIUM_SWITCH_PLAN, Chunk981631.Z5c.BILLING_GUILD_SUBSCRIPTIONS_PURCHASE, Chunk981631.Z5c.VERIFY, Chunk981631.Z5c.VERIFY_HUB_EMAIL, Chunk981631.Z5c.REJECT_IP, Chunk981631.Z5c.REJECT_MFA, Chunk981631.Z5c.AUTHORIZE_IP, Chunk981631.Z5c.AUTHORIZE_PAYMENT, Chunk981631.Z5c.RESET, Chunk981631.Z5c.HANDOFF, Chunk981631.Z5c.REPORT, Chunk981631.Z5c.REPORT_SECOND_LOOK, Chunk981631.Z5c.ACCOUNT_REVERT("")];
 
-function g(e) {
+function b(e) {
   return O.some(t => e.startsWith(t))
 }
-let I = e => (r = e, e);
+let _ = e => (n = e, e),
+  Z = [Chunk981631.Z5c.VERIFY, Chunk981631.Z5c.VERIFY_HUB_EMAIL];
 
-function T(e) {
+function w(e) {
   let {
     children: t
-  } = e;
-  switch (function() {
-      let [e, t] = i.useState(false), [n, o] = i.useState(true), l = (0, c.e7)([p.Z], () => p.Z.hasLoadedExperiments);
-      return ((0, a.Z)(() => {}, 300), true !== r) ? r : !n && l ? (e || t(true), I("default")) : n ? I("default") : "loading"
-    }()) {
+  } = e, r = function() {
+    let [e, t] = l.useState(false), [r, i] = l.useState(true), s = (0, c.e7)([p.Z], () => p.Z.hasLoadedExperiments);
+    return ((0, u.Z)(() => {}, 300), true !== n) ? n : !r && s ? (e || t(true), _("default")) : r ? _("default") : "loading"
+  }(), o = (0, s.TH)(), a = Z.includes(o.pathname);
+  switch (r) {
     case "default":
-      return (0, o.jsxs)(o.Fragment, {
-        children: [(0, o.jsx)("img", {
+      return (0, i.jsxs)(i.Fragment, {
+        children: [a ? (0, i.jsx)(g.Z, {}) : (0, i.jsx)("img", {
           className: m.artwork,
-          src: _,
-          alt: ""
-        }), (0, o.jsx)("img", {
-          className: m.logoWithText,
           src: E,
+          alt: ""
+        }), (0, i.jsx)("img", {
+          className: m.logoWithText,
+          src: I,
           alt: ""
         }), t]
       });
@@ -51,7 +54,7 @@ function T(e) {
       return null
   }
 }
-class Z extends Chunk647438.Component {
+class y extends Chunk647438.Component {
   componentDidMount() {
     window.addEventListener("resize", this.handleResize)
   }
@@ -59,23 +62,23 @@ class Z extends Chunk647438.Component {
     window.removeEventListener("resize", this.handleResize)
   }
   mobileTransitionTo(e, t) {
-    if (g(e))(0, f.uL)(e, t);
+    if (b(e))(0, x.uL)(e, t);
     else {
-      let n = null != t && null != t.search ? t.search : null;
-      window.location = null == n ? e : "".concat(e, "?").concat(n)
+      let r = null != t && null != t.search ? t.search : null;
+      window.location = null == r ? e : "".concat(e, "?").concat(r)
     }
   }
   mobileReplaceWith(e) {
-    g(e) ? (0, f.dL)(e) : window.location = e
+    b(e) ? (0, x.dL)(e) : window.location = e
   }
   renderDefault() {
     let {
       splash: e
     } = this.props, t = (0, Chunk951288.jsx)(Chunk605782.Z, {
       component: Chunk647438.Fragment,
-      children: Chunk647438.Children.map(this.props.children, e => i.cloneElement(e, {
-        transitionTo: f.uL,
-        replaceWith: f.dL
+      children: Chunk647438.Children.map(this.props.children, e => l.cloneElement(e, {
+        transitionTo: x.uL,
+        replaceWith: x.dL
       }))
     });
     return (0, Chunk951288.jsx)("div", {
@@ -90,7 +93,7 @@ class Z extends Chunk647438.Component {
             splash: module,
             children: exports
           })]
-        }) : (0, Chunk951288.jsx)(T, {
+        }) : (0, Chunk951288.jsx)(w, {
           children: exports
         })
       })
@@ -99,7 +102,7 @@ class Z extends Chunk647438.Component {
   renderMobile() {
     return (0, Chunk951288.jsx)(Chunk605782.Z, {
       component: Chunk647438.Fragment,
-      children: Chunk647438.Children.map(this.props.children, e => i.cloneElement(e, {
+      children: Chunk647438.Children.map(this.props.children, e => l.cloneElement(e, {
         transitionTo: this.mobileTransitionTo,
         replaceWith: this.mobileReplaceWith
       }))
@@ -113,13 +116,13 @@ class Z extends Chunk647438.Component {
   }
   constructor(e) {
     super(e),
-      function(e, t, n) {
+      function(e, t, r) {
         t in e ? Object.defineProperty(e, t, {
-          value: n,
+          value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = n
+        }) : e[t] = r
       }(this, "handleResize", () => {
         this.setState({
           isMobileWidth: window.innerWidth <= 485
@@ -129,4 +132,4 @@ class Z extends Chunk647438.Component {
       }
   }
 }
-let j = Z
+let B = y

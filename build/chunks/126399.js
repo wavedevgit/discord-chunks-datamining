@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 /** chunk id: 126399, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => p
 }), require("./388685.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -19,7 +19,7 @@ function h(e, t) {
     handoff_source: t
   })
 }
-class p extends Chunk317770.Z {
+class f extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("BROWSER_HANDOFF_END", this.handleEnd), Chunk570140.Z.subscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff)
   }
@@ -44,16 +44,16 @@ class p extends Chunk317770.Z {
       let {
         body: t
       } = e;
-      (0, s.Vb)(t.user), l.Z.loginToken(t.token, false), h(true, a)
+      (0, o.Vb)(t.user), l.Z.loginToken(t.token, false), h(true, a)
     }, e => {
-      if (null != i && h(false, a), l.Z.setFingerprint(i), (0, s.lx)(), a === o.F.ROLE_SUBSCRIPTION) {
+      if (null != i && h(false, a), l.Z.setFingerprint(i), (0, o.lx)(), a === s.F.ROLE_SUBSCRIPTION) {
         var t;
         c.default.track(d.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
           reason: null != (t = e.message) ? t : e.text,
           handoff_source: a
         })
       }
-    }) : null != i ? (l.Z.setFingerprint(i), h(false, a), (0, s.lx)()) : (l.Z.setFingerprint(i), (0, s.by)())
+    }) : null != i ? (l.Z.setFingerprint(i), h(false, a), (0, o.lx)()) : (l.Z.setFingerprint(i), (0, o.by)())
   }
   constructor(...e) {
     super(...e),
@@ -74,8 +74,8 @@ class p extends Chunk317770.Z {
           handoffToken: t,
           fingerprint: n,
           handoffSource: true
-        }) : (l.Z.setFingerprint(null), (0, s.by)())
+        }) : (l.Z.setFingerprint(null), (0, o.by)())
       })
   }
 }
-let m = new p
+let p = new f

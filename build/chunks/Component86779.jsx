@@ -21,13 +21,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk78224 = require("./78224.js");
-let j = "mweb_handoff_nonce",
-  b = "mweb_handoff_nonce_expiration",
+let b = "mweb_handoff_nonce",
+  j = "mweb_handoff_nonce_expiration",
   I = +Chunk70956.Z.Millis.MINUTE,
-  O = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
-  N = new Set(["deep_link_failed"]),
+  N = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
+  O = new Set(["deep_link_failed"]),
   y = () => {
-    Chunk433517.K.remove(j), Chunk433517.K.remove(b)
+    Chunk433517.K.remove(b), Chunk433517.K.remove(j)
   },
   S = () => {
     let e = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getFingerprint()),
@@ -35,7 +35,7 @@ let j = "mweb_handoff_nonce",
         fingerprint: t,
         handoff_token: n
       } = (0, Chunk593473.parse)(window.location.search),
-      f = Array.isArray(exports) ? exports.length > 1 ? exports[0] : null : exports,
+      m = Array.isArray(exports) ? exports.length > 1 ? exports[0] : null : exports,
       S = null != Chunk70956 ? Chunk70956 : null !== module ? module : true;
     Chunk647438.useEffect(() => {
       null !== Chunk70956 && module !== Chunk70956 && Chunk570140.Z.dispatch({
@@ -46,14 +46,14 @@ let j = "mweb_handoff_nonce",
     let [C, Z] = Chunk647438.useState(null), A = Chunk647438.useCallback(e => {
       Z(e), g.default.track(x.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
         reason: e,
-        fingerprint: (0, s.K)(S)
+        fingerprint: (0, o.K)(S)
       }, {
         fingerprint: S
       })
-    }, [Z, S]), T = Chunk433517.K.get(j);
+    }, [Z, S]), T = Chunk433517.K.get(b);
     if ("null" === require && null === C && A("deep_link_failed"), null != require && "null" !== require && null == T && null === C && A("nonce_missing"), Chunk647438.useEffect(() => {
         if (null != T) {
-          let e = Chunk433517.K.get(b);
+          let e = Chunk433517.K.get(j);
           (null == module || Date.now() >= module) && (A("nonce_expired"), y())
         }
       }, [T, A]), Chunk647438.useEffect(() => {
@@ -64,7 +64,7 @@ let j = "mweb_handoff_nonce",
             handoff_token: require
           },
           rejectWithError: true
-        }).then(e => p.Z.loginToken(e.body.token, false)).then(() => {
+        }).then(e => f.Z.loginToken(e.body.token, false)).then(() => {
           Chunk626135.default.track(Chunk981631.rMx.LOGIN_SUCCESSFUL, {
             source: Chunk981631.uRl.MOBILE_WEB_HANDOFF,
             is_new_user: false,
@@ -81,8 +81,8 @@ let j = "mweb_handoff_nonce",
       }, [require, T, C, S, A]), null == S) return null;
     let P = null == C ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [Chunk388032.intl.string(Chunk388032.t.uJ1Jsb), (0, Chunk951288.jsx)("br", {}), Chunk388032.intl.string(Chunk388032.t.GHVWAg)]
-    }) : N.has(C) ? Chunk388032.intl.string(Chunk388032.t.EPt55u) : O.has(C) ? Chunk388032.intl.string(Chunk388032.t.g87kTk) : true;
-    return null != C && N.has(C) ? (0, Chunk951288.jsx)("div", {
+    }) : O.has(C) ? Chunk388032.intl.string(Chunk388032.t.EPt55u) : N.has(C) ? Chunk388032.intl.string(Chunk388032.t.g87kTk) : true;
+    return null != C && O.has(C) ? (0, Chunk951288.jsx)("div", {
       className: Chunk78224.errorContainer,
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         color: "interactive-normal",
@@ -98,7 +98,7 @@ let j = "mweb_handoff_nonce",
         color: Chunk755721.zx.Colors.BRAND_INVERTED,
         onClick: () => {
           let e = Chunk970648.Z.generateNonce();
-          Chunk433517.K.set(j, module), Chunk433517.K.set(b, Date.now() + I);
+          Chunk433517.K.set(b, module), Chunk433517.K.set(j, Date.now() + I);
           let t = new URL(Chunk981631.x0X),
             n = new URLSearchParams(window.location.search);
           require.delete("fingerprint"), require.delete("handoff_token");

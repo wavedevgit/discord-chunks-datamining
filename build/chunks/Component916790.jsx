@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk687278 = require("./687278.js"),
   Chunk451429 = require("./451429.js");
 
-function T(e) {
+function E(e) {
   return parseFloat(e.toFixed(3))
 }
 let S = [{
@@ -47,7 +47,7 @@ let S = [{
     let {
       trace: t
     } = e;
-    return "".concat(T(t.time), " ms")
+    return "".concat(E(t.time), " ms")
   }
 }];
 
@@ -86,7 +86,7 @@ let w = [{
           })
         }), (0, n.jsxs)(g.Z9, {
           name: "Total Time",
-          children: [T(a.totalTime), " ms"]
+          children: [E(a.totalTime), " ms"]
         })]
       }), (0, n.jsx)(u.zJl, {
         className: O.inspectorContainer,
@@ -128,11 +128,11 @@ function I(e) {
       } = e;
       return (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)("div", {
-          className: i()(O.errorToolbar, E.toolbar),
+          className: i()(O.errorToolbar, T.toolbar),
           children: (0, n.jsx)("div", {
-            className: E.toolbarGroup,
+            className: T.toolbarGroup,
             children: (0, n.jsx)(d.zx, {
-              className: E.toolbarButton,
+              className: T.toolbarButton,
               size: d.zx.Sizes.MIN,
               onClick: () => console.error(t.error),
               children: "Log to Console"
@@ -157,13 +157,13 @@ function I(e) {
     minHeight: 100,
     initialHeight: a,
     children: [(0, n.jsx)(s, {}), (0, n.jsxs)(x.ZP, {
-      className: i()(E.headerBar, O.subPanelHeaderBar),
+      className: i()(T.headerBar, O.subPanelHeaderBar),
       children: [(0, n.jsx)(x.ZP.Icon, {
         icon: u.xVZ,
         tooltip: t.name
       }), (0, n.jsx)(x.ZP.Title, {
-        wrapperClassName: i()(E.headerTitle, E.dispatcherHeader),
-        className: E.headerTitleText,
+        wrapperClassName: i()(T.headerTitle, T.dispatcherHeader),
+        className: T.headerTitleText,
         children: t.name
       }), (0, n.jsx)(x.ZP.Icon, {
         icon: u.TIy,
@@ -186,7 +186,7 @@ function I(e) {
     })]
   })
 }
-let k = [{
+let R = [{
     key: "action",
     cellClassName: Chunk687278.actionColumn,
     render(e) {
@@ -206,7 +206,7 @@ let k = [{
       let {
         actionLog: t
       } = e;
-      return "".concat(T(t.totalTime), " ms")
+      return "".concat(E(t.totalTime), " ms")
     }
   }, {
     key: "timestamp",
@@ -218,7 +218,7 @@ let k = [{
       return c()(t.createdAt).format("HH:mm:ss.SSS")
     }
   }],
-  R = {
+  k = {
     searchType: Chunk886118.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -253,7 +253,7 @@ function Z() {
     g = Chunk647438.useCallback(e => {
       h(e)
     }, []);
-  (0, Chunk301801.BO)(exports, Chunk4912 ? c : Chunk913527, Chunk257785, R);
+  (0, Chunk301801.BO)(exports, Chunk4912 ? c : Chunk913527, Chunk257785, k);
   let _ = Chunk647438.useCallback(e => {
       d(o), b(e)
     }, [Chunk913527]),
@@ -280,7 +280,7 @@ function Z() {
         placeholder: "Search by action name"
       })]
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: k,
+      columns: R,
       data: Chunk981631,
       selectedRowKey: null == Chunk55935 ? true : Chunk55935.id.toString(),
       onClickRow: e => j(e.actionLog)

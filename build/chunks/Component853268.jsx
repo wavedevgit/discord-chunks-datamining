@@ -20,18 +20,18 @@ function d(e) {
     subText: i,
     muted: d,
     marginTopStyle: h,
-    subtextClassName: p
+    subtextClassName: f
   } = e;
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(s.Z, {
     className: null != h ? h : u.marginTop20,
-    align: o.Z.Align.CENTER,
-    children: (0, r.jsx)(s.XZJ, {
+    align: s.Z.Align.CENTER,
+    children: (0, r.jsx)(o.XZJ, {
       value: t,
-      type: s.XZJ.Types.INVERTED,
+      type: o.XZJ.Types.INVERTED,
       onChange: (e, t) => n(t),
       className: c.checkbox,
       children: (0, r.jsx)(a.i_, {
-        className: l()(p, {
+        className: l()(f, {
           [c.subText]: !d
         }),
         children: i

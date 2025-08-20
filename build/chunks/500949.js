@@ -119,7 +119,7 @@ let B = {
     XYZ_D65: Chunk856308.Z
   },
   U = Object.fromEntries(Object.keys(B).map(e => [e, e]));
-Object.values(B).forEach(e => k.Z.register(e));
+Object.values(B).forEach(e => R.Z.register(e));
 let {
   SemanticColors: G
 } = Chunk521904.V, V = G, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
@@ -166,7 +166,7 @@ function Y(e) {
 }
 
 function J(e) {
-  return (0, R.Z)((0, Z.Z)(e, i.Z), {
+  return (0, k.Z)((0, Z.Z)(e, i.Z), {
     format: "hex"
   })
 }

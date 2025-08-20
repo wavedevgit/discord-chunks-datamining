@@ -107,7 +107,7 @@ function ed(e) {
       id: "dispatcher",
       name: "Dispatcher",
       group: er.v0.EVENTS,
-      render: () => (0, n.jsx)(T.Z, {})
+      render: () => (0, n.jsx)(E.Z, {})
     }];
     return b.Z.isDeveloper && (e.push({
       id: "shop",
@@ -163,7 +163,7 @@ function ed(e) {
       id: "design_toggles",
       name: "Design Toggles",
       group: er.v0.UI,
-      render: () => (0, n.jsx)(E.Z, {})
+      render: () => (0, n.jsx)(T.Z, {})
     }), e.push({
       id: "appearance_randomizer",
       name: "Appearance Randomizer",
@@ -262,7 +262,7 @@ function ed(e) {
       id: "gifting_intent",
       name: "Gifting Intent",
       group: er.v0.PREMIUM,
-      render: () => (0, n.jsx)(k.Z, {})
+      render: () => (0, n.jsx)(R.Z, {})
     }), e.push({
       id: "voice_filters",
       name: "Voice Filters",
@@ -277,7 +277,7 @@ function ed(e) {
       id: "skill_trees",
       name: "Skill Trees",
       group: er.v0.GUILDS,
-      render: () => (0, n.jsx)(R.Z, {})
+      render: () => (0, n.jsx)(k.Z, {})
     }), e.push({
       id: "language",
       name: "Language",

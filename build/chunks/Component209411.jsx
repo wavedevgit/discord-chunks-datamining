@@ -24,30 +24,30 @@ function x(e) {
   let x = i.useCallback(t => {
       if (function(e) {
           var t;
-          let n = (0, s.LX)(e, {
-            path: f.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
+          let n = (0, o.LX)(e, {
+            path: m.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
           });
           return (null == n || null == (t = n.params) ? true : t.channelId) === _.oC.ROLE_SUBSCRIPTIONS
-        }(t)) p.dL(t);
+        }(t)) f.dL(t);
       else {
         var n;
-        (null != (n = e.transitionTo) ? n : p.uL)(t)
+        (null != (n = e.transitionTo) ? n : f.uL)(t)
       }
     }, [e.transitionTo]),
     {
-      isAuthenticated: E,
-      loginStatus: v
-    } = (0, o.cj)([m.default], () => ({
-      isAuthenticated: m.default.isAuthenticated(),
-      loginStatus: m.default.getLoginStatus()
+      isAuthenticated: v,
+      loginStatus: E
+    } = (0, s.cj)([p.default], () => ({
+      isAuthenticated: p.default.isAuthenticated(),
+      loginStatus: p.default.getLoginStatus()
     })),
     {
-      location: j,
-      redirectTo: b
+      location: b,
+      redirectTo: j
     } = e,
-    [I, O] = i.useState(E);
+    [I, N] = i.useState(v);
 
-  function N(e) {
+  function O(e) {
     let {
       handoffKey: t,
       handoffToken: n,
@@ -57,30 +57,30 @@ function x(e) {
       handoffKey: t,
       handoffToken: n,
       handoffSource: r
-    }), O(false)
+    }), N(false)
   }
   return ((0, u.ZP)(() => {
-    if (null != j) {
+    if (null != b) {
       let {
         handoff_key: e,
         handoff_token: t
-      } = (0, l.parse)(j.search);
+      } = (0, l.parse)(b.search);
       if (null != e && null != t) {
-        let n = null != b ? (0, d.L)(b) : true;
+        let n = null != j ? (0, d.L)(j) : true;
         I ? a.Z.logout("handoff", null).finally(() => {
-          N({
+          O({
             handoffKey: e,
             handoffToken: t,
             handoffSource: n
           })
-        }) : N({
+        }) : O({
           handoffKey: e,
           handoffToken: t,
           handoffSource: n
         })
       }
     }
-  }), I || v === f.u34.LOGGING_IN) ? (0, r.jsx)(g.q, {}) : (0, r.jsx)(g.Z, (t = function(e) {
+  }), I || E === m.u34.LOGGING_IN) ? (0, r.jsx)(g.q, {}) : (0, r.jsx)(g.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

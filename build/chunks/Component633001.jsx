@@ -90,7 +90,7 @@ let K = {
         width: 100,
         height: 100
       }
-    }, T.Z.getWidgetDefaultSettings(F.Odu.CLICK_ZONE_DEBUG)), {
+    }, E.Z.getWidgetDefaultSettings(F.Odu.CLICK_ZONE_DEBUG)), {
       pinned: true
     }),
     [Chunk981631.Odu.PERFORMANCE_DEBUG]: e => W(H({
@@ -106,7 +106,7 @@ let K = {
         width: "auto",
         height: "auto"
       }
-    }, T.Z.getWidgetDefaultSettings(F.Odu.PERFORMANCE_DEBUG)), {
+    }, E.Z.getWidgetDefaultSettings(F.Odu.PERFORMANCE_DEBUG)), {
       pinned: true
     })
   },
@@ -300,7 +300,7 @@ let J = Chunk647438.memo(function(e) {
   });
 
 function $(e) {
-  let t, a = (t = Object.values((0, d.Wu)([T.Z], () => T.Z.getWidgetsForLayout(B.$S))), t.find(t => t.type === e));
+  let t, a = (t = Object.values((0, d.Wu)([E.Z], () => E.Z.getWidgetsForLayout(B.$S))), t.find(t => t.type === e));
   return [a, () => {
     if (null != a)(0, x.E9)(a.id);
     else {
@@ -975,10 +975,10 @@ function eb() {
       if (a(e)) returntrue
     }
     returnfalse
-  }), [module, Chunk755721, exports]), [j, g] = Chunk647438.useState(Chunk984370), [_, y] = Chunk647438.useState(null), N = Chunk647438.useMemo(() => module.find(e => e.key === _), [module, Chunk371651]), E = Chunk647438.useCallback(e => {
+  }), [module, Chunk755721, exports]), [j, g] = Chunk647438.useState(Chunk984370), [_, y] = Chunk647438.useState(null), N = Chunk647438.useMemo(() => module.find(e => e.key === _), [module, Chunk371651]), T = Chunk647438.useCallback(e => {
     g(e)
   }, []), {
-    renderSelectedTab: T
+    renderSelectedTab: E
   } = (0, Chunk621060.ZP)({
     tabs: ep
   }, []);
@@ -995,7 +995,7 @@ function eb() {
       clearTimeout(module)
     }
   }, []);
-  let [P, I] = Chunk647438.useState(false), k = Chunk647438.useRef(null), Z = Chunk647438.useCallback(() => {
+  let [P, I] = Chunk647438.useState(false), R = Chunk647438.useRef(null), Z = Chunk647438.useCallback(() => {
     (0, Chunk572004.JG)(JSON.stringify(module)), Chunk55935(true)
   }, [module]);
   return Chunk647438.useEffect(() => {

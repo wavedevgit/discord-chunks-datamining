@@ -21,8 +21,8 @@ function m(e) {
     userId: m,
     onUpdate: p
   } = e, b = (0, l.e7)([s.Z], () => s.Z.hidePersonalInformation), {
-    loading: g,
-    note: x
+    loading: x,
+    note: g
   } = (0, a.Z)(m), h = o.useRef(null);
   return (o.useEffect(() => {
     if (!n || b) return;
@@ -33,12 +33,12 @@ function m(e) {
     children: (0, r.jsx)(i.lcI, {
       ref: h,
       className: f.textarea,
-      disabled: g,
-      placeholder: g ? u.intl.string(u.t["WLKx//"]) : u.intl.string(u.t.VBhOe3),
+      disabled: x,
+      placeholder: x ? u.intl.string(u.t["WLKx//"]) : u.intl.string(u.t.VBhOe3),
       "aria-label": u.intl.string(u.t.PbMNh4),
       onBlur: e => {
         let n = e.currentTarget.value;
-        (null != x ? x : "") !== n && (null == p || p(), c.Z.updateNote(m, n))
+        (null != g ? g : "") !== n && (null == p || p(), c.Z.updateNote(m, n))
       },
       onKeyPress: e => {
         if (13 === e.which)
@@ -48,7 +48,7 @@ function m(e) {
           } else e.preventDefault(), e.currentTarget.blur();
         else e.which === d.yXg.SPACE && e.stopPropagation()
       },
-      defaultValue: null != x ? x : true,
+      defaultValue: null != g ? g : true,
       maxLength: d.vuo
     })
   })

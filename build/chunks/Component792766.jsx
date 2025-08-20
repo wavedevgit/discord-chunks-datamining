@@ -17,7 +17,7 @@ let u = e => {
     onlineCount: n
   } = e;
   if (null == t) return null;
-  let u = o.Qs(t),
+  let u = s.Qs(t),
     {
       name: d,
       description: h
@@ -34,9 +34,9 @@ let u = e => {
         mask: l.ZP.Masks.SQUIRCLE,
         width: 40,
         height: 40,
-        children: (0, r.jsx)(s.Z, {
+        children: (0, r.jsx)(o.Z, {
           guild: u,
-          size: s.Z.Sizes.MEDIUM,
+          size: o.Z.Sizes.MEDIUM,
           active: true
         })
       }), (0, r.jsxs)("div", {

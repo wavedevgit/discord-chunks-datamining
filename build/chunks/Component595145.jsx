@@ -75,11 +75,11 @@ function er(e) {
     openedAt: em,
     onClose: ep,
     showGuildProfile: eb = true,
-    sourceAnalyticsLocations: eg = [],
-    disableActionsForPreview: ex = false
+    sourceAnalyticsLocations: ex = [],
+    disableActionsForPreview: eg = false
   } = e, {
     analyticsLocations: eh
-  } = (0, f.ZP)([...eg, u.Z.USER_PROFILE_MODAL_V2]), ej = (0, P.ZB)({
+  } = (0, f.ZP)([...ex, u.Z.USER_PROFILE_MODAL_V2]), ej = (0, P.ZB)({
     layout: "MODAL_V2",
     userId: t.id,
     sourceSessionId: ea,
@@ -88,7 +88,7 @@ function er(e) {
     messageId: ei,
     roleId: ec,
     showGuildProfile: eb
-  }), ev = o.useRef(null), e_ = (0, s.Z)(ev), [ey, eI] = o.useState(false), eO = (0, C.$m)(), eP = (0, c.q_F)({
+  }), ev = o.useRef(null), e_ = (0, s.Z)(ev), [ey, eI] = o.useState(false), eO = (0, N.$m)(), eP = (0, c.q_F)({
     opacity: +(null != eO.interactionType),
     config: {
       duration: 150
@@ -100,8 +100,8 @@ function er(e) {
   let eT = (0, T.ZP)(t.id, eb ? eo : true),
     eA = I.ZP.useName(null == eT ? true : eT.guildId, el, t),
     {
-      relationshipType: eC,
-      originApplicationId: eN
+      relationshipType: eN,
+      originApplicationId: eC
     } = (0, i.cj)([v.Z], () => ({
       relationshipType: v.Z.getRelationshipType(t.id),
       originApplicationId: v.Z.getOriginApplicationId(t.id)
@@ -119,10 +119,10 @@ function er(e) {
       user: t,
       currentUser: er
     }),
-    eL = (0, x.Y)({
+    eL = (0, g.Y)({
       userId: t.id
     }),
-    eR = (0, g.vh)(t.id),
+    eR = (0, x.vh)(t.id),
     eU = (0, A.Z)(t.id),
     eM = (0, m.Dt)(),
     ek = en.intl.format(en.t.KRe1Fh, {
@@ -145,7 +145,7 @@ function er(e) {
       fetchStartedAt: null == eT ? true : eT.fetchStartedAt,
       fetchEndedAt: null == eT ? true : eT.fetchEndedAt,
       isLoaded: null == eT ? true : eT.isLoaded,
-      children: (0, r.jsx)(C.NJ, {
+      children: (0, r.jsx)(N.NJ, {
         value: eO,
         children: (0, r.jsx)(c.UkV, {
           isShaking: ey,
@@ -157,7 +157,7 @@ function er(e) {
             transitionState: eu,
             "aria-labelledby": eM,
             parentComponent: "UserProfileModalV2",
-            children: [ex ? (0, r.jsxs)("div", {
+            children: [eg ? (0, r.jsxs)("div", {
               className: et.previewBar,
               children: [(0, r.jsxs)(c.X6q, {
                 id: eM,
@@ -183,7 +183,7 @@ function er(e) {
               })
             }), (0, r.jsx)(c.y5t, {
               children: (0, r.jsxs)(G.Z, {
-                className: ex ? et.disabled : true,
+                className: eg ? et.disabled : true,
                 user: t,
                 displayProfile: eT,
                 themeType: ee.l.MODAL_V2,
@@ -211,7 +211,7 @@ function er(e) {
                       userId: t.id,
                       onClose: ep,
                       className: et.interactionToast
-                    }), (0, r.jsx)(N.Z, {
+                    }), (0, r.jsx)(C.Z, {
                       location: "UserProfileModalV2",
                       user: t,
                       displayProfile: eT,
@@ -226,7 +226,7 @@ function er(e) {
                       themeType: ee.l.MODAL_V2,
                       hasEntered: eu === c.Dvm.ENTERED,
                       prompt: ew && t.id === er.id ? eB : null,
-                      disableToolbar: ex
+                      disableToolbar: eg
                     })]
                   }), (0, r.jsxs)(c.Ttm, {
                     fade: true,
@@ -246,11 +246,11 @@ function er(e) {
                         themeType: ee.l.MODAL_V2,
                         onClose: ep
                       })
-                    }), eC === $.OGo.PENDING_INCOMING && (0, r.jsx)(G.Z.Overlay, {
+                    }), eN === $.OGo.PENDING_INCOMING && (0, r.jsx)(G.Z.Overlay, {
                       className: et.profileOverlay,
                       children: (0, r.jsx)(R.Z, {
                         user: t,
-                        applicationId: eN,
+                        applicationId: eC,
                         guildId: null != (n = null == eT ? true : eT.guildId) ? n : true,
                         channelId: el,
                         className: et.profileBanner
@@ -273,7 +273,7 @@ function er(e) {
                       }, o)
                     }), t.isProvisional && (0, r.jsx)(G.Z.Overlay, {
                       className: et.profileOverlay,
-                      children: (0, r.jsx)(z.Z, {
+                      children: (0, r.jsx)(K.Z, {
                         heading: en.intl.string(en.t.Iyka0d),
                         headingVariant: "text-md/semibold",
                         headingIcon: (0, r.jsx)(c.Mgn, {
@@ -300,18 +300,18 @@ function er(e) {
                         guildId: eo,
                         channelId: el,
                         displayProfile: eT,
-                        relationshipType: eC,
+                        relationshipType: eN,
                         onClose: ep
                       })
                     }), (null == eT ? true : eT.bio) != null && (null == eT ? true : eT.bio) !== "" && !eE && (0, r.jsx)(w.Z, {
                       userBio: eT.bio,
                       setLineClamp: false
-                    }), eL.length > 0 && (0, r.jsx)(z.Z, {
+                    }), eL.length > 0 && (0, r.jsx)(K.Z, {
                       heading: en.intl.string(en.t["Uv/eT0"]),
                       children: (0, r.jsx)(L.Z, {
                         applicationIds: eL
                       })
-                    }), (0, r.jsx)(z.Z, {
+                    }), (0, r.jsx)(K.Z, {
                       heading: en.intl.string(en.t.a6XYDw),
                       children: (0, r.jsx)(M.Z, {
                         userId: t.id,
@@ -326,15 +326,15 @@ function er(e) {
                       headingVariant: "text-xs/medium",
                       headingColor: "currentColor",
                       scrollIntoView: ed === Q.Tb.ROLES
-                    }), eU.length > 0 && (0, r.jsx)(z.Z, {
+                    }), eU.length > 0 && (0, r.jsx)(K.Z, {
                       heading: en.intl.string(en.t["3fe7U1"]),
                       scrollIntoView: ed === Q.Tb.CONNECTIONS,
-                      children: (0, r.jsx)(H.Z, {
+                      children: (0, r.jsx)(z.Z, {
                         connections: eU,
                         userId: t.id,
                         className: et.profileAppConnections
                       })
-                    }), (0, r.jsx)(z.Z, {
+                    }), (0, r.jsx)(K.Z, {
                       heading: en.intl.string(en.t["mQKv+v"]),
                       scrollIntoView: ed === Q.Tb.NOTE,
                       children: (0, r.jsx)(a.Z, {
@@ -367,7 +367,7 @@ function er(e) {
                     profileEffectId: null == eT ? true : eT.profileEffectId,
                     isHovering: e_
                   })]
-                }), (0, r.jsx)(K.Z, {
+                }), (0, r.jsx)(H.Z, {
                   user: t,
                   currentUser: er,
                   displayProfile: eT,

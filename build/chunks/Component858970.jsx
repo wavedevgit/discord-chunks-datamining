@@ -52,11 +52,11 @@ function O(e) {
     roleId: Z,
     transitionState: T,
     openedAt: A,
-    onHide: C,
-    sourceAnalyticsLocations: N = []
+    onHide: N,
+    sourceAnalyticsLocations: C = []
   } = e, E = t === j.ME ? true : t, S = (0, o.e7)([d.Z], () => d.Z.isBlocked(n.id)), {
     analyticsLocations: w
-  } = (0, a.ZP)([...N, S ? c.Z.BLOCKED_PROFILE_MODAL : c.Z.IGNORED_PROFILE_MODAL]), B = (0, f.ZB)({
+  } = (0, a.ZP)([...C, S ? c.Z.BLOCKED_PROFILE_MODAL : c.Z.IGNORED_PROFILE_MODAL]), B = (0, f.ZB)({
     layout: "MODAL_V2",
     userId: n.id,
     showGuildProfile: true,
@@ -87,7 +87,7 @@ function O(e) {
         className: y.root,
         "aria-label": U,
         parentComponent: "RestrictedUserProfileModalV2",
-        children: (0, r.jsxs)(g.Z, {
+        children: (0, r.jsxs)(x.Z, {
           user: n,
           displayProfile: L,
           themeType: v.l.MODAL_V2,
@@ -132,15 +132,15 @@ function O(e) {
                 size: l.Ph.MEDIUM,
                 isBlocked: S,
                 onClick: () => {
-                  C(), (0, m.pQ)(I({
+                  N(), (0, m.pQ)(I({
                     action: S ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: w
                   }, B))
                 }
-              }), (0, r.jsx)(x.Z, {
+              }), (0, r.jsx)(g.Z, {
                 userId: n.id,
                 onClick: () => {
-                  C(), (0, m.pQ)(I({
+                  N(), (0, m.pQ)(I({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                     analyticsLocations: w
                   }, B))

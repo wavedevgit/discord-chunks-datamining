@@ -101,14 +101,14 @@ function g(e) {
 function _() {
   let {
     name: e
-  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, a] = Chunk647438.useState(false), [l, i] = Chunk647438.useState([]), j = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [_, y] = Chunk647438.useState(null), C = Chunk647438.useRef(null), N = Chunk647438.useRef(null), [O, E] = Chunk647438.useState(.5), {
-    krispModels: T,
+  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, a] = Chunk647438.useState(false), [l, i] = Chunk647438.useState([]), j = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [_, y] = Chunk647438.useState(null), C = Chunk647438.useRef(null), N = Chunk647438.useRef(null), [O, T] = Chunk647438.useState(.5), {
+    krispModels: E,
     krispModelOverride: S,
     inputMode: P,
     echoCancellation: w,
     autoThreshold: I,
-    vadUseKrisp: k,
-    vadKrispActivationThreshold: R,
+    vadUseKrisp: R,
+    vadKrispActivationThreshold: k,
     noiseCancellation: Z,
     noiseSuppression: A,
     noiseSuppressionSupported: D,
@@ -198,7 +198,7 @@ function _() {
               Chunk846027.Z.setKrispModelOverride("")
             },
             isSelected: e => e === S,
-            options: T.map(e => ({
+            options: E.map(e => ({
               label: e,
               value: e
             })),
@@ -235,17 +235,17 @@ function _() {
             tag: Chunk481060.RB0.H3,
             children: (0, Chunk951288.jsx)(Chunk481060.j7V, {
               hideBorder: true,
-              value: k,
+              value: R,
               onChange: e => d.Z.setMode(v.pM.VOICE_ACTIVITY, {
                 vadUseKrisp: e
               }),
               children: "Use Krisp VAD"
             })
-          }), k && (0, Chunk951288.jsx)(Chunk481060.hjN, {
+          }), R && (0, Chunk951288.jsx)(Chunk481060.hjN, {
             title: "Krisp VAD Activation Threshold",
             tag: Chunk481060.RB0.H3,
             children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
-              initialValue: R,
+              initialValue: k,
               onValueChange: e => d.Z.setMode(v.pM.VOICE_ACTIVITY, {
                 vadKrispActivationThreshold: e
               }),
@@ -298,7 +298,7 @@ function _() {
         children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
           initialValue: O,
           asValueChanges: function(e) {
-            null != N.current && (N.current.gain.value = e, E(e))
+            null != N.current && (N.current.gain.value = e, T(e))
           },
           minValue: 0,
           maxValue: 1

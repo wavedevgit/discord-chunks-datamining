@@ -70,8 +70,8 @@ function y(e) {
   var t, a, l, p, y, C, N;
   let {
     subscription: O,
-    onUpdated: E
-  } = e, [T, S] = r.useState(false), [P, w] = r.useState(false), [I, k] = r.useState(false), [R, Z] = r.useState(false), [A, D] = r.useState(null), L = e => (null == e && (e = O.status), e in j) ? j[e] : "Unknown status ".concat(e), M = e => {
+    onUpdated: T
+  } = e, [E, S] = r.useState(false), [P, w] = r.useState(false), [I, R] = r.useState(false), [k, Z] = r.useState(false), [A, D] = r.useState(null), L = e => (null == e && (e = O.status), e in j) ? j[e] : "Unknown status ".concat(e), M = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
   }, z = async e => {
@@ -107,7 +107,7 @@ function y(e) {
       url: "/debug/subscriptions/".concat(O.id),
       body: r,
       rejectWithError: false
-    }), E()
+    }), T()
   }, F = async () => {
     try {
       await s.tn.post({
@@ -123,7 +123,7 @@ function y(e) {
     } catch (e) {
       D(e.body.message)
     }
-    E()
+    T()
   }, B = (null == (t = v.GP[O.planIdFromItems]) ? true : t.premiumType) === v.p9.TIER_0, U = null == (a = O.metadata) ? true : a.ended_at, G = null != U ? new Date(U).toISOString().substring(0, 10) : "", V = O.hasActiveTrial, H = (null == (l = O.metadata) ? true : l.active_discount_id) != null;
   return (0, n.jsxs)("div", {
     className: i()(b.card, B ? b.gradientWrapperTier0 : b.gradientWrapperTier2),
@@ -171,7 +171,7 @@ function y(e) {
       className: f.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
-          k(!I)
+          R(!I)
         },
         className: f.collapsablePaneHeader,
         children: [(0, n.jsx)("div", {
@@ -206,7 +206,7 @@ function y(e) {
       className: f.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
-          Z(!R)
+          Z(!k)
         },
         className: f.collapsablePaneHeader,
         children: [(0, n.jsx)("div", {
@@ -215,9 +215,9 @@ function y(e) {
             children: "Active Discount Info"
           })
         }), (0, n.jsx)(c.Z, {
-          direction: R ? c.Z.Directions.UP : c.Z.Directions.DOWN
+          direction: k ? c.Z.Directions.UP : c.Z.Directions.DOWN
         })]
-      }), R && (0, n.jsxs)("ul", {
+      }), k && (0, n.jsxs)("ul", {
         className: f.collapsiblePaneList,
         children: [(0, n.jsxs)("li", {
           children: [(0, n.jsx)(o.Text, {
@@ -241,7 +241,7 @@ function y(e) {
       className: f.collapsablePane,
       children: [(0, n.jsxs)(o.P3F, {
         onClick: () => {
-          S(!T)
+          S(!E)
         },
         className: f.collapsablePaneHeader,
         children: [(0, n.jsx)("div", {
@@ -250,9 +250,9 @@ function y(e) {
             children: "Metadata"
           })
         }), (0, n.jsx)(c.Z, {
-          direction: T ? c.Z.Directions.UP : c.Z.Directions.DOWN
+          direction: E ? c.Z.Directions.UP : c.Z.Directions.DOWN
         })]
-      }), T && (0, n.jsx)("ul", {
+      }), E && (0, n.jsx)("ul", {
         className: f.collapsiblePaneList,
         children: Object.entries(O.metadata).map(e => {
           let [t, a] = e;

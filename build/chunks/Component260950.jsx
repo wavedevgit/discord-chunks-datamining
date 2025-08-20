@@ -61,7 +61,7 @@ function N() {
     [a, l] = Chunk647438.useState("511651880837840896"),
     [x, j] = Chunk647438.useState([]),
     [N, O] = Chunk647438.useState(false),
-    E = Chunk647438.useCallback(async () => {
+    T = Chunk647438.useCallback(async () => {
       try {
         O(true), await (0, Chunk355467.jg)(), await (0, Chunk232567.In)(exports.id), Chunk474936(await y())
       } finally {
@@ -69,9 +69,9 @@ function N() {
       }
     }, [exports]);
   Chunk647438.useEffect(() => {
-    E()
-  }, [E]);
-  let T = Chunk647438.useMemo(() => Chunk255078.filter(e => e.status !== f.O0b.ACTIVE).sort((e, t) => e.id > t.id ? false : 1), [Chunk255078]),
+    T()
+  }, [T]);
+  let E = Chunk647438.useMemo(() => Chunk255078.filter(e => e.status !== f.O0b.ACTIVE).sort((e, t) => e.id > t.id ? false : 1), [Chunk255078]),
     S = async () => {
       await Chunk544891.tn.post({
         url: "/debug/subscription",
@@ -79,12 +79,12 @@ function N() {
           plan_id: require
         },
         rejectWithError: false
-      }), await E()
+      }), await T()
     }, P = async () => {
       await Chunk544891.tn.del({
         url: "/debug/subscription",
         rejectWithError: false
-      }), await E()
+      }), await T()
     };
   return (0, Chunk951288.jsx)(Chunk481060.zJl, {
     className: Chunk451429.panel,
@@ -100,7 +100,7 @@ function N() {
           disabled: N,
           look: Chunk755721.zx.Looks.BLANK,
           size: Chunk755721.zx.Sizes.ICON,
-          onClick: E,
+          onClick: T,
           children: (0, Chunk951288.jsx)("span", {
             title: "Refresh",
             children: (0, Chunk951288.jsx)(Chunk481060.DuK, {
@@ -127,7 +127,7 @@ function N() {
         })
       }), null != module && (0, Chunk951288.jsx)(Chunk759027.Z, {
         subscription: module,
-        onUpdated: E
+        onUpdated: T
       }), (0, Chunk951288.jsx)(Chunk481060.X6q, {
         variant: "heading-lg/semibold",
         className: Chunk451429.header,
@@ -140,14 +140,14 @@ function N() {
           text: "End All Subscriptions",
           onClick: P
         })
-      }), T.length > 0 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }), E.length > 0 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
           variant: "heading-lg/semibold",
           className: Chunk451429.header,
           children: "Previous Subscriptions"
-        }), T.map(e => (0, n.jsx)(b.Z, {
+        }), E.map(e => (0, n.jsx)(b.Z, {
           subscription: e,
-          onUpdated: E
+          onUpdated: T
         }, e.id))]
       })]
     })

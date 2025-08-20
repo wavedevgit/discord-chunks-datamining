@@ -26,18 +26,18 @@ let d = new u(Chunk570140.Z, {
     let {
       code: t
     } = e;
-    c[t] = o.kEZ.OPENING, null === a && (a = o.kEZ.OPENING)
+    c[t] = s.kEZ.OPENING, null === a && (a = s.kEZ.OPENING)
   },
   NATIVE_APP_MODAL_OPENED: function(e) {
     let {
       code: t
     } = e;
-    c[t] = o.kEZ.OPEN, a = o.kEZ.OPEN
+    c[t] = s.kEZ.OPEN, a = s.kEZ.OPEN
   },
   NATIVE_APP_MODAL_OPEN_FAILED: function(e) {
     let {
       code: t
     } = e;
-    c[t] = o.kEZ.OPEN_FAIL, (null === a || a === o.kEZ.OPENING) && (a = o.kEZ.OPEN_FAIL)
+    c[t] = s.kEZ.OPEN_FAIL, (null === a || a === s.kEZ.OPENING) && (a = s.kEZ.OPEN_FAIL)
   }
 })

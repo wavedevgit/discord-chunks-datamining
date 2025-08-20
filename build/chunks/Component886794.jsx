@@ -54,7 +54,7 @@ function E(e) {
     channelId: E,
     messageId: S,
     roleId: w
-  }), W = o.useRef(null), H = (0, i.Z)(W);
+  }), W = o.useRef(null), z = (0, i.Z)(W);
   return (0, r.jsx)(a.Gt, {
     value: F,
     children: (0, r.jsx)(f.Mt, {
@@ -89,7 +89,7 @@ function E(e) {
                 user: n
               })
             }), (0, r.jsxs)("div", {
-              children: [(0, r.jsx)(g.Z, {
+              children: [(0, r.jsx)(x.Z, {
                 user: n,
                 displayProfile: k,
                 themeType: Z.l.MODAL
@@ -117,14 +117,14 @@ function E(e) {
                   onClose: R
                 })
               }), (0, r.jsxs)("div", {
-                className: N.container,
+                className: C.container,
                 children: [(0, r.jsx)(l.njP, {
-                  className: N.tabBar,
+                  className: C.tabBar,
                   type: "top",
                   selectedItem: O.oh.BOT_INFO,
                   onItemSelect: P.dG4,
                   children: (0, r.jsx)(l.njP.Item, {
-                    className: N.tabBarItem,
+                    className: C.tabBarItem,
                     id: O.oh.BOT_INFO,
                     "aria-label": T.intl.string(T.t.jGoPJS),
                     children: (0, r.jsx)(l.Text, {
@@ -134,8 +134,8 @@ function E(e) {
                   }, O.oh.BOT_INFO)
                 }), (0, r.jsxs)(l.zJl, {
                   fade: true,
-                  className: C.scroller,
-                  children: [(0, r.jsx)(x.Z, {
+                  className: N.scroller,
+                  children: [(0, r.jsx)(g.Z, {
                     userId: n.id,
                     userBio: null == k ? true : k.bio,
                     setLineClamp: false
@@ -153,7 +153,7 @@ function E(e) {
           })
         }), (null == k ? true : k.profileEffectId) != null && (0, r.jsx)(d.Z, {
           profileEffectId: null == k ? true : k.profileEffectId,
-          isHovering: H
+          isHovering: z
         })]
       })
     })

@@ -38,10 +38,10 @@ function O(e) {
     voiceActivityStatusEnabled: A
   } = (0, i.U)({
     location: "UserProfileModalActivity"
-  }), C = (0, u.b)({
+  }), N = (0, u.b)({
     location: "UserProfileModalActivity"
   }), {
-    live: N,
+    live: C,
     recent: E,
     stream: S
   } = (0, f.Z)(n.id), {
@@ -53,7 +53,7 @@ function O(e) {
   }), D = (0, o.e7)([c.Z], () => c.Z.isFetchingUserOutbox(n.id)), L = n.id === t.id, R = (0, o.e7)([s.Z, a.Z], () => {
     let e = L ? s.Z.getStatus() : a.Z.getStatus(n.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), U = N.length > 0 || null != S, M = A && null == S && null == B && null != w, k = !R && (U || M), G = E.length > 0;
+  }), U = C.length > 0 || null != S, M = A && null == S && null == B && null != w, k = !R && (U || M), G = E.length > 0;
   return k || G || !D ? (0, r.jsxs)(l.zJl, {
     className: y.scroller,
     fade: true,
@@ -61,7 +61,7 @@ function O(e) {
       "aria-label": _.intl.string(_.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: y.activityList,
-        children: [!C && M && (0, r.jsx)("li", {
+        children: [!N && M && (0, r.jsx)("li", {
           children: (0, r.jsx)(h.Z, {
             user: n,
             currentUser: t,
@@ -69,7 +69,7 @@ function O(e) {
             onClose: T
           })
         }), null != S && (0, r.jsx)("li", {
-          children: (0, r.jsx)(x.Z, {
+          children: (0, r.jsx)(g.Z, {
             location: "UserProfileModalActivity",
             user: n,
             currentUser: t,
@@ -77,7 +77,7 @@ function O(e) {
             onClose: T,
             profileGuildId: null == O ? true : O.guildId
           })
-        }), N.map((e, o) => (0, r.jsx)("li", {
+        }), C.map((e, o) => (0, r.jsx)("li", {
           children: (0, r.jsx)(b.Z, {
             user: n,
             currentUser: t,
@@ -99,7 +99,7 @@ function O(e) {
       children: (0, r.jsx)("ul", {
         className: y.activityList,
         children: E.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(g.Z, {
+          children: (0, r.jsx)(x.Z, {
             location: "UserProfileModalActivity",
             user: n,
             currentUser: t,
