@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 165540, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,7 +32,7 @@ let S = Chunk647438.forwardRef(function(e, t) {
       type: d,
       animateRef: m
     } = e, g = (0, o.e7)([h.Z], () => h.Z.shouldShowPopup() && h.Z.activeViewType() === d), {
-      Component: _,
+      Component: y,
       events: C,
       play: x
     } = (0, b.Z)("ChannelAppLauncherButton");
@@ -42,11 +42,11 @@ let S = Chunk647438.forwardRef(function(e, t) {
       }
     }), [C]);
     let S = i.useCallback(() => {
-        g ? p.yT(f.ti.DISMISSED) : ((0, y.Q3)(s.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
+        g ? p.yT(f.ti.DISMISSED) : ((0, _.Q3)(s.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
           dismissAction: O.L.TAKE_ACTION
         }), p.__(f._b.TEXT, d), u.ux()), x()
       }, [g, d, x]),
-      P = (0, r.jsx)(_, {
+      I = (0, r.jsx)(y, {
         size: "refresh_sm",
         color: "currentColor"
       });
@@ -91,7 +91,7 @@ let S = Chunk647438.forwardRef(function(e, t) {
         },
         innerClassName: E.buttonContents
       }, C), l = l = {
-        children: P
+        children: I
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -104,7 +104,7 @@ let S = Chunk647438.forwardRef(function(e, t) {
       }), n))
     })
   }),
-  P = Chunk647438.memo(function(e) {
+  I = Chunk647438.memo(function(e) {
     let {
       channel: t,
       type: n,
@@ -120,7 +120,7 @@ let S = Chunk647438.forwardRef(function(e, t) {
     } = (0, C.xL)();
     return c ? (0, r.jsxs)("div", {
       className: E.channelAppLauncher,
-      children: [(0, r.jsx)(_.Z, {
+      children: [(0, r.jsx)(y.Z, {
         channel: t,
         animationContainerClassName: E.entrypointAnimation,
         glowClassName: E.animationGlow,

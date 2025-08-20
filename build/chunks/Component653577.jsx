@@ -27,8 +27,8 @@ function O(e) {
     subtitle: O,
     onClick: _,
     enableHangStatus: y,
-    allowChannelTopic: j
-  } = e, v = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = null != v && v.length > 0, x = (0, c.ZP)(t, true), E = (!y || !!j) && x, S = null != O && O.length > 0;
+    allowChannelTopic: v
+  } = e, j = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = null != j && j.length > 0, x = (0, c.ZP)(t, true), E = (!y || !!v) && x, S = null != O && O.length > 0;
   if (i.useEffect(() => {
       C && f.default.track(h.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
@@ -43,7 +43,7 @@ function O(e) {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
       children: (0, r.jsx)(d.Z, {
-        children: p.Z.parseVoiceChannelStatus(v, true, {
+        children: p.Z.parseVoiceChannelStatus(j, true, {
           channelId: t.id
         })
       })

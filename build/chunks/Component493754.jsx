@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk811130 = require("./811130.js");
 
-function y(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function y(e) {
   return e
 }
 
-function _(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,7 +68,7 @@ function C(e) {
     let {
       default: e
     } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
-    return n => (0, r.jsx)(e, _(y({}, n), {
+    return n => (0, r.jsx)(e, y(_({}, n), {
       guild: t,
       channel: i,
       streamUserId: l,
@@ -110,24 +110,24 @@ function x(e) {
     }(e, ["stream", "applicationId", "channel", "exitFullScreen", "appContext", "analyticsLocation", "className"]);
   let E = null == a ? true : a.getGuildId(),
     S = null == a ? true : a.id,
-    P = (0, s.e7)([h.Z], () => null != E ? h.Z.getGuild(E) : null, [E]),
-    I = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(S), [S]);
-  if (!(null != P && null != a && f.Z.can(m.Plq.CREATE_INSTANT_INVITE, a))) return null;
+    I = (0, s.e7)([h.Z], () => null != E ? h.Z.getGuild(E) : null, [E]),
+    P = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(S), [S]);
+  if (!(null != I && null != a && f.Z.can(m.Plq.CREATE_INSTANT_INVITE, a))) return null;
   let Z = g.intl.string(g.t.VINpSE);
   return null != n ? Z = g.intl.string(g.t["6VQaqa"]) : null != i && (Z = g.intl.string(g.t["OzOM/v"])), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.zx, _(y({
+    children: [(0, r.jsx)(c.zx, y(_({
       size: null != (t = j.size) ? t : c.zx.Sizes.SMALL,
       color: b.buttonColor,
       onClick: () => {
-        o()(null != P, "guild cannot be null"), o()(null != a, "channel cannot be null"), C({
-          guild: P,
+        o()(null != I, "guild cannot be null"), o()(null != a, "channel cannot be null"), C({
+          guild: I,
           channel: a,
           streamUserId: null == n ? true : n.ownerId,
           applicationId: i,
           appContext: x,
           exitFullScreen: u,
           analyticsLocation: v,
-          guildScheduledEvent: I
+          guildScheduledEvent: P
         })
       },
       className: l()(O, b.textButton)
@@ -140,7 +140,7 @@ function x(e) {
       className: l()(O, b.iconButton),
       exitFullScreen: u,
       analyticsLocation: v,
-      guildScheduledEvent: I
+      guildScheduledEvent: P
     })]
   })
 }

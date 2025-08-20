@@ -23,20 +23,20 @@ let b = function(e) {
   } = e, {
     activePickerChannelId: n,
     openPickerForChannel: b,
-    closePicker: y
+    closePicker: _
   } = (0, s.B)(), {
-    canAccessPicker: _,
+    canAccessPicker: y,
     entryPoint: C
   } = (0, c.m)({
     location: "channel_header_toolbar",
     channelId: t.id
-  }), x = (0, u.Nj)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), v = _ && C === o.FN.TOOLBAR && x, [O, j] = (0, d.US)(v ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = O === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, S = i.useCallback(() => {
-    E && j(m.L.TAKE_ACTION), n === t.id ? (y(), p.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {
+  }), x = (0, u.Nj)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), v = y && C === o.FN.TOOLBAR && x, [O, j] = (0, d.US)(v ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = O === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, S = i.useCallback(() => {
+    E && j(m.L.TAKE_ACTION), n === t.id ? (_(), p.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {
       action: "close"
     })) : (b(t.id), p.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {
       action: "open"
     }))
-  }, [n, t.id, y, b, E, j]);
+  }, [n, t.id, _, b, E, j]);
   return v ? (0, r.jsx)(h.JO, {
     onClick: S,
     tooltip: g.intl.string(g.t.GixvUl),

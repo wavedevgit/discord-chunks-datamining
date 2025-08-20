@@ -3,8 +3,8 @@
 require.d(exports, {
   RB: () => y,
   VH: () => O,
-  Vi: () => j,
-  Vu: () => v,
+  Vi: () => v,
+  Vu: () => j,
   q7: () => _
 });
 var Chunk692547 = require("./692547.js"),
@@ -61,7 +61,7 @@ let O = {
     }
   },
   y = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
-  j = e => {
+  v = e => {
     switch (e) {
       case i.DY.GO_LIVE_PUSH:
         return {
@@ -95,7 +95,7 @@ let O = {
         return null
     }
   },
-  v = e => {
+  j = e => {
     switch (e.item_enum) {
       case i.AM.UPDATE_PROFILE:
         return l.Y9;

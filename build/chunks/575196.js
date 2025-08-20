@@ -4,7 +4,8 @@
 require.d(exports, {
   e3: () => l,
   gj: () => O,
-  yf: () => v
+  yf: () => v,
+  yz: () => I
 }), require("./539854.js"), require("./388685.js");
 var Chunk688619 = require("./688619.js"),
   i = require.n(Chunk688619),
@@ -59,4 +60,9 @@ function v(e, t) {
       return "".concat(t, ": ").concat(n, ";")
     }).join("\n"), "\n    ");
   return ".".concat(l, " {\n      ", "--custom-theme-background", ": ").concat(t, ";\n      ", "--custom-theme-primary-color", ": ").concat(n, ";\n      ", "--custom-theme-secondary-color", ": ").concat(r, ";\n      ").concat(c, "\n    }")
+}
+let I = function(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0,
+    n = e.slice();
+  return 1 === e.length && n.push(e[0]), "linear-gradient(".concat(t, "deg, ").concat(n.join(", "), ")")
 }

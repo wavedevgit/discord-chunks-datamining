@@ -127,16 +127,16 @@ class O extends Chunk647438.PureComponent {
       popoutPosition: m
     } = Chunk120356, {
       offsetX: b,
-      offsetY: y
+      offsetY: _
     } = this.state, C = {
       left: null != Chunk232495 ? Chunk647438.x + Chunk232495 : true,
       top: null != Chunk10401 ? Chunk647438.y + Chunk10401 : true
     }, O = e => {
       let t = n && !e;
       return {
-        [_.animating]: t,
-        [_.notAnimating]: !t,
-        [_.highPriority]: u
+        [y.animating]: t,
+        [y.notAnimating]: !t,
+        [y.highPriority]: u
       }
     }, j = this.getTutorialPopoutText();
     return (0, Chunk951288.jsx)(Chunk997638.ZP, v(x({
@@ -157,30 +157,30 @@ class O extends Chunk647438.PureComponent {
           isShown: i
         } = t;
         return (0, r.jsx)(d.P3F, v(x({}, e), {
-          className: _.indicator,
+          className: y.indicator,
           style: C,
           innerRef: this.contentRef,
           children: (0, r.jsxs)("div", {
-            className: a()(_.animationContainer, O(i)),
+            className: a()(y.animationContainer, O(i)),
             children: [(e => {
               let t = n && !e;
               returntrue !== u ? null : (0, r.jsxs)("div", {
                 children: [(0, r.jsx)("div", {
-                  className: a()(_.top, {
-                    [_.animating]: t,
-                    [_.notAnimating]: !t
+                  className: a()(y.top, {
+                    [y.animating]: t,
+                    [y.notAnimating]: !t
                   })
                 }), (0, r.jsx)("div", {
-                  className: a()(_.bottom, {
-                    [_.animating]: t,
-                    [_.notAnimating]: !t
+                  className: a()(y.bottom, {
+                    [y.animating]: t,
+                    [y.notAnimating]: !t
                   })
                 })]
               })
             })(i), (0, r.jsx)("div", {
-              className: a()(_.innerCircle, O(i))
+              className: a()(y.innerCircle, O(i))
             }), (0, r.jsx)("div", {
-              className: a()(_.outerCircle, O(i))
+              className: a()(y.outerCircle, O(i))
             })]
           })
         }))

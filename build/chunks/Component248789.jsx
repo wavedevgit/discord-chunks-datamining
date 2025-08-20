@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 248789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y: () => y
+  Y: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,19 +49,19 @@ function b(e, t) {
   }), e
 }
 
-function y(e) {
+function _(e) {
   let {
     channelId: t,
-    warningId: y,
-    senderId: _
+    warningId: _,
+    senderId: y
   } = e, C = i.useCallback(() => {
-    (0, u.T)(t, [y])
-  }, [t, y]), x = (0, a.e7)([c.Z], () => c.Z.isBlocked(_)), v = i.useMemo(() => ({
+    (0, u.T)(t, [_])
+  }, [t, _]), x = (0, a.e7)([c.Z], () => c.Z.isBlocked(y)), v = i.useMemo(() => ({
     channelId: t,
-    warningId: y,
-    senderId: _,
+    warningId: _,
+    senderId: y,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2
-  }), [t, y, _]);
+  }), [t, _, y]);
   i.useEffect(() => {
     (0, p.KQ)(b(g({}, v), {
       viewName: p.pb.SAFETY_WARNING_BANNER
@@ -85,9 +85,9 @@ function y(e) {
             onClose: l
           } = n;
           return (0, r.jsx)(e, {
-            otherUserId: _,
+            otherUserId: y,
             channelId: t,
-            warningId: y,
+            warningId: _,
             warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
             transitionState: i,
             onClose: l
@@ -96,14 +96,14 @@ function y(e) {
       }, {
         modalKey: f.X_
       }), O(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
-    }, [t, _, y, O]),
+    }, [t, y, _, O]),
     E = i.useCallback(() => {
       C(), O(p.NM.USER_BANNER_BLOCK_CONFIRM)
     }, [C, O]),
     S = i.useCallback(() => {
       C(), O(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
     }, [C, O]),
-    P = i.useCallback(() => {
+    I = i.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
           default: e
@@ -121,16 +121,16 @@ function y(e) {
               null == l || l(), O(p.NM.USER_BANNER_BLOCK_CANCEL)
             },
             onClose: l,
-            userId: _,
+            userId: y,
             channelId: t
           })
         }
       })
-    }, [E, S, _, t, O]);
+    }, [E, S, y, t, O]);
   return (0, r.jsx)(h.Q, {
     channelId: t,
-    warningId: y,
-    senderId: _,
+    warningId: _,
+    senderId: y,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
     header: m.intl.string(m.t.ZzlB5u),
     description: m.intl.string(m.t["D1aU+v"]),
@@ -142,7 +142,7 @@ function y(e) {
     }, ...x ? [] : [{
       text: m.intl.string(m.t["7q0bNT"]),
       variant: "secondary",
-      onClick: P
+      onClick: I
     }]]
   })
 }

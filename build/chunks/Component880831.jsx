@@ -56,18 +56,18 @@ function T(e) {
     renderedContent: N,
     trailingIcon: A,
     leadingIcon: w
-  } = (0, y.f)(n, Z, l, o, I.messageContent, {
-    trailingIconClass: I.messageContentTrailingIcon,
-    leadingIconClass: I.messageContentLeadingIcon,
-    iconSize: P.WW
-  }), R = (0, _.cv)(n), M = R.length > 0 ? R.map(e => (0, r.jsx)(C.Z, {
-    className: I.sticker,
+  } = (0, _.f)(n, Z, l, o, P.messageContent, {
+    trailingIconClass: P.messageContentTrailingIcon,
+    leadingIconClass: P.messageContentLeadingIcon,
+    iconSize: I.WW
+  }), R = (0, y.cv)(n), M = R.length > 0 ? R.map(e => (0, r.jsx)(C.Z, {
+    className: P.sticker,
     size: 128,
     sticker: e,
     isInteracting: x
   }, e.id)) : null;
   return (0, r.jsxs)(u.P3F, {
-    className: I.toast,
+    className: P.toast,
     onMouseEnter: () => {
       j(true)
     },
@@ -76,8 +76,8 @@ function T(e) {
     },
     onClick: S,
     children: [(0, r.jsxs)("div", {
-      className: a()(I.messageContentWrapper, {
-        [I.mentioned]: n.mentioned
+      className: a()(P.messageContentWrapper, {
+        [P.mentioned]: n.mentioned
       }),
       children: [null != M ? null : w, null != (t = null != N ? N : M) ? t : (0, r.jsx)("span", {
         children: T
@@ -89,7 +89,7 @@ function T(e) {
         userId: n.author.id,
         avatar: s.guildMemberAvatar
       }) : n.author.getAvatarURL(d, 32),
-      className: I.avatar
+      className: P.avatar
     })]
   })
 }
@@ -141,11 +141,11 @@ function N(e) {
     isFrozen: l,
     count: 3,
     lingerMs: Z
-  }), m = i.useRef({}), [g, b] = i.useState({}), y = i.useCallback((e, t) => {
+  }), m = i.useRef({}), [g, b] = i.useState({}), _ = i.useCallback((e, t) => {
     null == t ? delete m.current[e] : m.current[e] = t
-  }, []), _ = i.useRef(g);
+  }, []), y = i.useRef(g);
   i.useLayoutEffect(() => {
-    _.current = g
+    y.current = g
   }), i.useLayoutEffect(() => {
     let e = {},
       t = 0;
@@ -153,7 +153,7 @@ function N(e) {
       var n;
       let i = null != (n = m.current[r.id]) ? n : 0;
       e[r.id] = t, t += i + 8
-    }(0, o.isEqual)(e, _.current) || b(e)
+    }(0, o.isEqual)(e, y.current) || b(e)
   }, [f]);
   let C = f.map(e => ({
       message: e,
@@ -205,8 +205,8 @@ function N(e) {
         p(false)
       },
       children: v((e, t) => (0, r.jsx)(s.animated.div, {
-        ref: e => y(t.message.id, null != e ? e.offsetHeight : null),
-        className: I.toastWrapper,
+        ref: e => _(t.message.id, null != e ? e.offsetHeight : null),
+        className: P.toastWrapper,
         style: e,
         children: (0, r.jsx)(T, {
           message: t.message

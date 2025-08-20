@@ -1,7 +1,7 @@
 /** Chunk was on 27434 **/
-/** chunk id: 99528, original params: t,n,e (module,exports,require) **/
+/** chunk id: 99528, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,13 +11,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk924301 = require("./924301.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(t) {
-  let n = (0, i.e7)([a.ZP], () => a.ZP.getGuildScheduledEvent(t), [t]);
-  return null == t || null == n ? null : (0, l.jsx)(r.sNh, {
+function a(t) {
+  let e = (0, r.e7)([u.ZP], () => u.ZP.getGuildScheduledEvent(t), [t]);
+  return null == t || null == e ? null : (0, l.jsx)(i.sNh, {
     id: "report-event",
     label: c.intl.string(c.t.IBA5wc),
-    action: () => (0, o.d$)(n),
-    icon: r.U65,
+    action: () => (0, o.d$)(e),
+    icon: i.U65,
     color: "danger"
   })
 }

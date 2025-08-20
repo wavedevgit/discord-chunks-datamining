@@ -145,8 +145,8 @@ class K extends Chunk98597.ZP {
       mentionCount: _,
       isFavoriteSuggestion: y
     } = this.props, {
-      shouldShowGuildVerificationPopout: j
-    } = this.state, v = this.getVoiceStatesCount(), C = (0, Chunk951288.jsxs)("li", {
+      shouldShowGuildVerificationPopout: v
+    } = this.state, j = this.getVoiceStatesCount(), C = (0, Chunk951288.jsxs)("li", {
       className: o()(this.getModeClass(), {
         [Chunk55940.disabled]: this.isDisabled()
       }),
@@ -205,7 +205,7 @@ class K extends Chunk98597.ZP {
                 channel: e,
                 unread: b,
                 mentionCount: _,
-                userCount: v,
+                userCount: j,
                 isSubscriptionGated: g,
                 needSubscriptionToAccess: m
               })
@@ -337,7 +337,7 @@ function q(e) {
       bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, a.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), f = (0, E.ZP)(n.id), h = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, v.pV.AUDIENCE), {
+  }), p = (0, a.e7)([S.Z], () => S.Z.isCollapsed(n.parent_id)), f = (0, E.ZP)(n.id), h = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, j.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: O
   } = (0, b.Z)(n.id), _ = (0, a.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), y = (0, x.xJ)(n.id), P = (0, M.Z)({

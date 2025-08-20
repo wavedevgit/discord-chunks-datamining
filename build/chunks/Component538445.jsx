@@ -39,7 +39,7 @@ function N(e) {
   } = (0, d.ZP)(u.Z.GUILD_BOOSTING_ENHANCED_ROLE_COLOR_COACHMARK), Z = i.useCallback(() => {
     (0, f.u)({
       analyticsLocation: {
-        section: j.jXE.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK
+        section: v.jXE.BOOSTER_ENHANCED_ROLE_COLORS_COACHMARK
       },
       numberOfBoostsToAdd: 1,
       analyticsLocations: w,
@@ -88,7 +88,7 @@ function N(e) {
       }), (0, r.jsx)(c.olH, {
         className: E.close,
         innerClassName: E.innerClose,
-        onClick: () => null == n ? true : n(v.L.USER_DISMISS)
+        onClick: () => null == n ? true : n(j.L.USER_DISMISS)
       })]
     }),
     header: (0, r.jsx)(c.Text, {

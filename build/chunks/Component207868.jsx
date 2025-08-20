@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 207868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,10 +19,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = Chunk647438.memo(function(e) {
+let y = Chunk647438.memo(function(e) {
   let {
     channel: t
-  } = e, n = (0, u.Z)(), l = (0, o.e7)([f.Z], () => f.Z.isInChannel(t.id)), _ = (0, o.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), C = (0, o.e7)([h.Z], () => h.Z.can(b.Plq.CONNECT, t)), {
+  } = e, n = (0, u.Z)(), l = (0, o.e7)([f.Z], () => f.Z.isInChannel(t.id)), y = (0, o.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), C = (0, o.e7)([h.Z], () => h.Z.can(b.Plq.CONNECT, t)), {
     needSubscriptionToAccess: x
   } = (0, d.Z)(t.id), v = (0, p.$R)(t), O = i.useCallback(() => {
     c.Z.handleVoiceConnect({
@@ -42,6 +42,6 @@ let _ = Chunk647438.memo(function(e) {
   }).enabled && !n && !l && C && v && t.isVocalThread()) ? (0, r.jsx)(g.ZP.Icon, {
     icon: s.Csw,
     onClick: O,
-    tooltip: _ ? y.intl.string(y.t.fdEeb2) : y.intl.string(y.t.focH1t)
+    tooltip: y ? _.intl.string(_.t.fdEeb2) : _.intl.string(_.t.focH1t)
   }) : null
 })

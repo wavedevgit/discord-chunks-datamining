@@ -40,13 +40,13 @@ function y(e) {
   }
   return e
 }
-let j = Chunk981631.IlC.APP,
-  v = false,
+let v = Chunk981631.IlC.APP,
+  j = false,
   C = false,
   x = [];
 
 function E() {
-  v = true
+  j = true
 }
 class S extends(i = Chunk442837.ZP.Store) {
   initialize() {
@@ -54,7 +54,7 @@ class S extends(i = Chunk442837.ZP.Store) {
   }
   isOpen() {
     let e = __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP;
-    return !!(v && x.length > 0 && j === module)
+    return !!(j && x.length > 0 && v === module)
   }
   getProps() {
     return {
@@ -69,7 +69,7 @@ let I = new S(Chunk570140.Z, {
   OVERLAY_INITIALIZE: E,
   CONNECTION_OPEN: E,
   CONNECTION_CLOSED: function() {
-    v = false
+    j = false
   },
   INVITE_MODAL_OPEN: function(e) {
     let t = e.invite;
@@ -104,7 +104,7 @@ let I = new S(Chunk570140.Z, {
         let [n] = e;
         return n.code === t.code
       })) returnfalse;
-    j = e.context, C = false;
+    v = e.context, C = false;
     let n = function(e) {
       let {
         approximate_member_count: t,

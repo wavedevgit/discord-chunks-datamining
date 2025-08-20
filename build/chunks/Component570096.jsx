@@ -19,19 +19,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk942889 = require("./942889.js");
-let _ = e => {
+let y = e => {
   let {
     user: t,
     markAsDismissed: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: y.assetContainer,
+    className: _.assetContainer,
     children: [(0, r.jsx)(f.Z, {
       user: t,
       rank: 1,
       avatarSize: s.EFr.SIZE_56
     }), (0, r.jsx)(s.P3F, {
-      className: y.closeIcon,
+      className: _.closeIcon,
       onClick: () => {
         n(g.L.USER_DISMISS)
       },
@@ -46,7 +46,7 @@ let _ = e => {
 function C(e) {
   let {
     children: t
-  } = e, n = [a.z.LEADERBOARD_NUX_COACHMARK], [f, y] = (0, u.US)(n, true), C = (0, l.e7)([p.default], () => p.default.getCurrentUser()), x = i.useRef(null);
+  } = e, n = [a.z.LEADERBOARD_NUX_COACHMARK], [f, _] = (0, u.US)(n, true), C = (0, l.e7)([p.default], () => p.default.getCurrentUser()), x = i.useRef(null);
   return f !== a.z.LEADERBOARD_NUX_COACHMARK || null == C ? t : (0, r.jsx)(s.yRy, {
     targetElementRef: x,
     renderPopout: () => (e => {
@@ -55,7 +55,7 @@ function C(e) {
         markAsDismissed: n
       } = e;
       return (0, r.jsx)(d.ZP, {
-        asset: (0, r.jsx)(_, {
+        asset: (0, r.jsx)(y, {
           user: t,
           markAsDismissed: n
         }),
@@ -75,7 +75,7 @@ function C(e) {
       })
     })({
       user: C,
-      markAsDismissed: y
+      markAsDismissed: _
     }),
     position: "left",
     animation: s.yRy.Animation.TRANSLATE,

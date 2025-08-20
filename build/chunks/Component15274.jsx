@@ -55,17 +55,15 @@ function d(e, t) {
 function f(e) {
   let {
     eventId: t,
-    parentGuildId: a,
-    recurrenceId: o
+    recurrenceId: a
   } = e;
   (0, i.ZD)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("22347"), n.e("25046")]).then(n.bind(n, 697849));
+    } = await Promise.all([n.e("4096"), n.e("25046")]).then(n.bind(n, 697849));
     return n => (0, r.jsx)(e, c({
       guildScheduledEventId: t,
-      parentGuildId: a,
-      initialRecurrenceId: o
+      initialRecurrenceId: a
     }, n))
   })
 }
@@ -83,7 +81,7 @@ function p(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("42743"), n.e("22569")]).then(n.bind(n, 312757));
+    } = await n.e("21395").then(n.bind(n, 312757));
     return n => (0, r.jsx)(t, d(c({}, n), {
       channel: e
     }))

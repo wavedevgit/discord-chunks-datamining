@@ -54,8 +54,8 @@ function R(e) {
     badge: f,
     link: m,
     showProgressBadge: b
-  } = e, [O, _] = i.useState(false), [y, j] = i.useState(false), [v, C] = i.useState(null), [N, R] = i.useState(0), D = (0, l.Ie)("home"), M = (0, d.oq)().activePanel === d.wh.APP_ICON, L = () => {
-    C(null), R(0), clearTimeout(v)
+  } = e, [O, _] = i.useState(false), [y, v] = i.useState(false), [j, C] = i.useState(null), [N, R] = i.useState(0), D = (0, l.Ie)("home"), M = (0, d.oq)().activePanel === d.wh.APP_ICON, L = () => {
+    C(null), R(0), clearTimeout(j)
   };
   if (null == p) return null;
   let k = Z.intl.string(Z.t.YUU0RE);
@@ -94,11 +94,11 @@ function R(e) {
         onMouseEnter: () => _(true),
         onMouseLeave: () => _(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != v && clearTimeout(v), C(setTimeout(L, 500)), R(N + 1), 15 === N)) {
+          if (!__OVERLAY__ && (null != j && clearTimeout(j), C(setTimeout(L, 500)), R(N + 1), 15 === N)) {
             L();
             let e = !a.K.get(P.wli);
-            a.K.set(P.wli, e), e && a.K.set(w.O5, true), e ? (0, h.GN)("discodo") : (0, h.GN)("user_leave"), j(true), setTimeout(() => {
-              j(false)
+            a.K.set(P.wli, e), e && a.K.set(w.O5, true), e ? (0, h.GN)("discodo") : (0, h.GN)("user_leave"), v(true), setTimeout(() => {
+              v(false)
             }, 1e3)
           }
         },

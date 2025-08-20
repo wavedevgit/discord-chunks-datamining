@@ -123,7 +123,7 @@ let V = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
       guild: t
     } = e;
     return {
-      unread: j.default.hasUnread(t.id)
+      unread: v.default.hasUnread(t.id)
     }
   })(Chunk415795.ic),
   z = Chunk442837.ZP.connectStores([Chunk306680.ZP], e => {
@@ -324,7 +324,7 @@ class Y extends Chunk647438.PureComponent {
         case h.h8.TEXT_CHANNEL:
         case h.h8.VOICE_CHANNEL:
           let r = t.record,
-            l = v.Z.getGuild(r.getGuildId());
+            l = j.Z.getGuild(r.getGuildId());
           if (null == l) return;
           switch (r.type) {
             case R.d4z.GUILD_TEXT:

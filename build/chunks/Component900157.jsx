@@ -69,19 +69,19 @@ function N(e) {
     channelViewSource: N = "Split View"
   } = e, A = (0, o.e7)([C.Z], () => C.Z.getChannel(t)), w = (0, o.e7)([v.Z], () => v.Z.getGuild(null == A ? true : A.getGuildId())), R = (0, f.ZP)(A);
   var M = A;
-  let k = (0, o.e7)([O.Z], () => null != M && !a().isEmpty(O.Z.getVoiceStatesForChannel(M.id)));
+  let D = (0, o.e7)([O.Z], () => null != M && !a().isEmpty(O.Z.getVoiceStatesForChannel(M.id)));
   i.useEffect(() => {
-    k && null != M && (s.Z.dispatch({
+    D && null != M && (s.Z.dispatch({
       type: "SIDEBAR_CLOSE",
       baseChannelId: M.parent_id
-    }), (0, _.ad)(M, {
+    }), (0, y.ad)(M, {
       source: E.on.VOICE_AUTO_OPEN
     }))
-  }, [k, M]);
-  let D = i.useRef(false);
+  }, [D, M]);
+  let L = i.useRef(false);
   if (i.useEffect(() => {
-      if (null == A || D.current) return;
-      D.current = true;
+      if (null == A || L.current) return;
+      L.current = true;
       let e = (0, p.K)(C.Z.getChannel(A.id), true);
       (0, d.yw)(S.rMx.CHANNEL_OPENED, T(Z({}, e, (0, d.$H)(A.id)), {
         channel_view: N
@@ -89,7 +89,7 @@ function N(e) {
         channelId: A.id
       })
     }, [A, N]), null == A || null == w) return null;
-  let L = (0, r.jsx)(j.Z, {
+  let k = (0, r.jsx)(j.Z, {
     channel: A,
     baseChannelId: l
   });
@@ -98,9 +98,9 @@ function N(e) {
       channel: A,
       draftType: x.d.ChannelMessage
     }), (0, r.jsx)(b.ZP, {
-      toolbar: L,
-      "aria-label": P.intl.string(P.t.Pwe8tL),
-      children: (0, y.ud)({
+      toolbar: k,
+      "aria-label": I.intl.string(I.t.Pwe8tL),
+      children: (0, _.ud)({
         channel: A,
         channelName: R,
         guild: w,
@@ -116,11 +116,11 @@ function N(e) {
           })
         },
         handleClick: function() {
-          null != A && (0, _.Kh)(A.id)
+          null != A && (0, y.Kh)(A.id)
         }
       })
     }), (0, r.jsx)("div", {
-      className: I.chat,
+      className: P.chat,
       children: (0, r.jsx)(m.Z, {
         channel: A,
         guild: w,

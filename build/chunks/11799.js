@@ -29,8 +29,8 @@ let p = () => {
     } = e, g = (0, i.e7)([u.Z], () => u.Z.shouldReload()), m = r.useRef(false), [b, O] = r.useState(false), {
       initialized: _,
       loading: y,
-      items: j,
-      hasMore: v,
+      items: v,
+      hasMore: j,
       cursor: C,
       errored: x
     } = (0, i.cj)([c.Z], () => ({
@@ -52,8 +52,8 @@ let p = () => {
     }, [t, _]);
     let I = (0, o.Z)();
     r.useEffect(() => () => {
-      p ? !I() && (x || j.length > 100) && (0, s.jF)() : n && j.length > 100 && (0, s.jF)()
-    }, [n, j, p, I, x]), r.useEffect(() => {
+      p ? !I() && (x || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
+    }, [n, v, p, I, x]), r.useEffect(() => {
       let e = g && t;
       (!_ || e) && (0, s.jk)({
         limit: null != h ? h : f ? 8 : 20,
@@ -63,7 +63,7 @@ let p = () => {
       })
     }, [_, g, t, f, E, S, h]);
     let P = r.useCallback(async e => {
-      !m.current && _ && v && null != C && (e || !x) && (m.current = true, O(true), await (0, s.jk)({
+      !m.current && _ && j && null != C && (e || !x) && (m.current = true, O(true), await (0, s.jk)({
         after: C,
         with_mentions: f,
         roles_filter: E,
@@ -72,12 +72,12 @@ let p = () => {
       }, () => {
         m.current = false
       }), O(false))
-    }, [_, v, C, x, f, E, S]);
+    }, [_, j, C, x, f, E, S]);
     return {
       initialized: _,
       loading: y,
-      items: j,
-      hasMore: v,
+      items: v,
+      hasMore: j,
       loadMore: P,
       loadingMore: b,
       setReadNotifItemToAcked: e => {

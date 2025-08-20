@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 52639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,12 +21,12 @@ var Chunk81897 = require("./81897.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk439178 = require("./439178.js");
 
-function _(e) {
+function y(e) {
   let {
     user: t,
     channelId: n
   } = e, {
-    analyticsLocations: _
+    analyticsLocations: y
   } = (0, l.ZP)(), {
     context: C
   } = (0, s.KZ)(), x = (0, i.Z)(), {
@@ -35,11 +35,11 @@ function _(e) {
     mutualGuilds: j
   } = (0, c.Z)(t), E = !t.bot && null != v && v > 0, S = null != j && j.length > 0;
   return E || S ? (0, r.jsxs)(m.Z.Overlay, {
-    className: y.overlay,
+    className: _.overlay,
     children: [S && (0, r.jsx)(g.Z, {
       section: "MUTUAL_GUILDS",
       header: b.intl.string(b.t["4lTDZm"]),
-      listClassName: y.list,
+      listClassName: _.list,
       items: j.map(e => {
         let {
           guild: n,
@@ -53,16 +53,16 @@ function _(e) {
         }, n.id)
       })
     }), S && E && (0, r.jsx)(p.Z, {
-      className: y.divider
+      className: _.divider
     }), E && (0, r.jsx)(g.Z, {
       section: "MUTUAL_FRIENDS",
       header: b.intl.string(b.t["0mTJ3t"]),
-      listClassName: y.list,
+      listClassName: _.list,
       onExpand: () => (0, u.Z)(t.id, x),
       items: null == O ? Array.from({
         length: v
       }).map((e, t) => (0, r.jsxs)("div", {
-        className: y.loadingMutualFriend,
+        className: _.loadingMutualFriend,
         children: [(0, r.jsx)(a.ZT, {
           width: 40,
           opacity: .08
@@ -101,7 +101,7 @@ function _(e) {
               return e
             }({}, C), t = t = {
               userId: i.id,
-              sourceAnalyticsLocations: _
+              sourceAnalyticsLocations: y
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

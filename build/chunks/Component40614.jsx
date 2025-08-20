@@ -44,7 +44,7 @@ function O(e) {
     start: b
   }, _), [b, _]);
   if (null == b) return null;
-  let j = [...O ? [g.intl.string(h.default.jfDsyM)] : [], g.intl.string(g.t.BMTj29), y];
+  let v = [...O ? [g.intl.string(h.default.jfDsyM)] : [], g.intl.string(g.t.BMTj29), y];
   return (0, r.jsx)(o.P3F, {
     className: m.container,
     onClick: n,
@@ -53,7 +53,7 @@ function O(e) {
       variant: "text-xs/medium",
       color: "text-feedback-positive",
       lineClamp: 1,
-      children: j.join(" \xb7 ")
+      children: v.join(" \xb7 ")
     })
   })
 }

@@ -32,9 +32,9 @@ function j(e) {
     whichPopoutIsOpen: E,
     setWhichPopoutIsOpen: S
   } = e, {
-    parentAnalyticsLocation: P
+    parentAnalyticsLocation: I
   } = (0, u.ZP)(), {
-    Component: I,
+    Component: P,
     play: Z,
     events: {
       onMouseEnter: T,
@@ -43,14 +43,14 @@ function j(e) {
   } = (0, o.j)(), A = t.getGuildId(), {
     mute: w,
     suppress: R
-  } = (0, y.Z)(t), M = (0, l.e7)([_.Z], () => _.Z.isDeaf()), k = w || R || M, D = (0, m.sR)({
-    isSoundboardButtonDisabled: k
-  }), [L, U] = (0, h.cv)(D), {
+  } = (0, _.Z)(t), M = (0, l.e7)([y.Z], () => y.Z.isDeaf()), D = w || R || M, L = (0, m.sR)({
+    isSoundboardButtonDisabled: D
+  }), [k, U] = (0, h.cv)(L), {
     analyticsLocations: B
   } = (0, u.ZP)(), {
-    isHovered: F,
-    setIsHovered: H,
-    onMouseEnter: G,
+    isHovered: G,
+    setIsHovered: F,
+    onMouseEnter: H,
     onMouseLeave: V
   } = (0, f.Z)(200, 300);
 
@@ -82,7 +82,7 @@ function j(e) {
           guildId: A,
           sourceAnalyticsLocations: B
         }, t), i = i = {
-          onInteraction: (0, p.u)("SoundboardContextMenu", P)
+          onInteraction: (0, p.u)("SoundboardContextMenu", I)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -98,33 +98,33 @@ function j(e) {
   }
 
   function W() {
-    (0, d.v)(P, d.d.SOUNDBOARD), E === v.D.SOUNDBOARD ? (null == S || S(true), V()) : (null != E ? (Z(), G()) : Z(), null == S || S(v.D.SOUNDBOARD))
+    (0, d.v)(I, d.d.SOUNDBOARD), E === v.D.SOUNDBOARD ? (null == S || S(true), V()) : (null != E ? (Z(), H()) : Z(), null == S || S(v.D.SOUNDBOARD))
   }
-  let q = i.useRef(null);
+  let Y = i.useRef(null);
   return (0, r.jsx)(s.y, {
-    targetElementRef: q,
-    shouldShow: F && (E === v.D.SOUNDBOARD || null == E) || E === v.D.SOUNDBOARD,
+    targetElementRef: Y,
+    shouldShow: G && (E === v.D.SOUNDBOARD || null == E) || E === v.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      H(false), null == S || S(true)
+      F(false), null == S || S(true)
     },
     renderPopout: e => {
       let {
         closePopout: n
       } = e;
-      return k ? null : (0, r.jsx)(C.Z, {
+      return D ? null : (0, r.jsx)(C.Z, {
         children: (0, r.jsx)("div", {
-          onMouseEnter: G,
+          onMouseEnter: H,
           onMouseLeave: V,
           children: (0, r.jsx)(b.Z, {
             guildId: A,
             channel: t,
             onClose: n,
-            gridNotice: L === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(g.o, {
+            gridNotice: k === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(g.o, {
               onClose: n,
               markAsDismissed: U
             }),
@@ -134,22 +134,22 @@ function j(e) {
       })
     },
     children: () => (0, r.jsx)(x.d, {
-      ref: q,
+      ref: Y,
       isTrayButton: true,
       themeable: j,
       label: w ? O.intl.string(O.t["Ox4/zc"]) : R ? O.intl.string(O.t["+YBKYG"]) : M ? O.intl.string(O.t.X1lQlp) : true,
-      iconComponent: I,
-      disabled: k,
+      iconComponent: P,
+      disabled: D,
       onContextMenu: z,
       onClick: W,
       onMouseEnter: () => {
-        G(), T()
+        H(), T()
       },
       onMouseLeave: () => {
         null == E && (V(), N())
       },
-      isActive: F || E === v.D.SOUNDBOARD,
-      color: F || E === v.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: G || E === v.D.SOUNDBOARD,
+      color: G || E === v.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

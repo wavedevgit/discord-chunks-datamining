@@ -26,11 +26,11 @@ let C = false,
   E = new Set,
   S = null;
 
-function P() {
+function I() {
   x = "", v = 0, O = [], E = new Set, C = false, S = null
 }
 
-function I(e) {
+function P(e) {
   x = e, v = 0, Z()
 }
 
@@ -39,9 +39,9 @@ function Z() {
   let e = Chunk592125.Z.getChannel(S);
   if (0 === x.trim().length) return null != r && r.clearQuery(), O = function(e) {
     let t = b.Z.getFriendIDs(),
-      n = y.default.getCurrentUser();
-    return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ...y.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
-      let n = y.default.getUser(t);
+      n = _.default.getCurrentUser();
+    return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ..._.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
+      let n = _.default.getUser(t);
       return null == n || n.isProvisional || e.push({
         user: n,
         comparator: h.ZP.getName(n)
@@ -90,7 +90,7 @@ function T() {
 }
 
 function N(e, t) {
-  if (m.Z.hasConsented(_.pjP.PERSONALIZATION)) {
+  if (m.Z.hasConsented(y.pjP.PERSONALIZATION)) {
     var n, r, i, l;
     let a = null != (i = null == (n = u.Z.getUserAffinity(e.user.id)) ? true : n.communicationProbability) ? i : 0,
       o = null != (l = null == (r = u.Z.getUserAffinity(t.user.id)) ? true : r.communicationProbability) ? l : 0;
@@ -110,13 +110,13 @@ function A(e) {
       comparator: r
     }
     of t) {
-    let t = y.default.getUser(e);
+    let t = _.default.getUser(e);
     null != t && n.push({
       user: t,
       comparator: r
     })
   }
-  O = n, L.emitChange()
+  O = n, k.emitChange()
 }
 
 function w() {
@@ -124,19 +124,19 @@ function w() {
 }
 
 function R(e) {
-  if (e.key !== _.vTt) returnfalse;
-  C = true, T(), r = w(), S = null, I("")
+  if (e.key !== y.vTt) returnfalse;
+  C = true, T(), r = w(), S = null, P("")
 }
 
 function M(e) {
-  if (e.key !== _.vTt) returnfalse;
-  k()
+  if (e.key !== y.vTt) returnfalse;
+  D()
 }
 
-function k() {
-  null != r && (r.destroy(), r = null), P()
+function D() {
+  null != r && (r.destroy(), r = null), I()
 }
-class D extends(i = Chunk442837.ZP.Store) {
+class L extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk594174.default, Chunk592125.Z, Chunk699516.Z, Chunk353926.Z, Chunk480294.Z), this.syncWith([Chunk594174.default, Chunk592125.Z], Z), this.syncWith([Chunk699516.Z], T)
   }
@@ -161,15 +161,15 @@ class D extends(i = Chunk442837.ZP.Store) {
       hasFriends: j
     }
   }
-}(l = "displayName") in D ? Object.defineProperty(D, l, {
+}(l = "displayName") in L ? Object.defineProperty(L, l, {
   value: "PrivateChannelRecipientsInviteStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : D[l] = "PrivateChannelRecipientsInviteStore";
-let L = new D(Chunk570140.Z, {
+}) : L[l] = "PrivateChannelRecipientsInviteStore";
+let k = new L(Chunk570140.Z, {
     CONNECTION_OPEN: function() {
-      P()
+      I()
     },
     CHANNEL_SELECT: function(e) {
       let {
@@ -178,18 +178,18 @@ let L = new D(Chunk570140.Z, {
       } = e;
       if (null != t) returnfalse;
       let r = C;
-      return P(), C = r, S = n, Z()
+      return I(), C = r, S = n, Z()
     },
     MODAL_PUSH: R,
     SHOW_ACTION_SHEET: R,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-      C = true, T(), r = w(), S = e.channelId, I("")
+      C = true, T(), r = w(), S = e.channelId, P("")
     },
     MODAL_POP: M,
     HIDE_ACTION_SHEET: M,
-    PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: k,
+    PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: D,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function(e) {
-      S = e.channelId, I(e.query)
+      S = e.channelId, P(e.query)
     },
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
       v = e.row
@@ -207,4 +207,4 @@ let L = new D(Chunk570140.Z, {
       E.delete(t), E = new Set(E)
     }
   }),
-  U = L
+  U = k

@@ -1,23 +1,21 @@
 /** Chunk was on 91488 **/
 /** chunk id: 258871, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => m
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
-  Chunk442837 = require("./442837.js"),
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
+var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk554747 = require("./554747.js"),
   Chunk434479 = require("./434479.jsx"),
   Chunk593364 = require("./593364.jsx"),
   Chunk703656 = require("./703656.js"),
   Chunk944486 = require("./944486.js"),
-  Chunk147754 = require("./147754.js"),
   Chunk688438 = require("./688438.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +34,7 @@ function m(e) {
   return e
 }
 
-function b(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,51 +46,28 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = [{
-    key: "EVENTS",
-    renderIcon: e => (0, r.jsx)(o.Que, {
-      size: "md",
-      color: "currentColor",
-      className: e
-    }),
-    getName: e => {
-      let {
-        numEvents: t
-      } = e;
-      return t > 0 ? g.intl.formatToPlainString(g.t.IBdqSk, {
-        number: t
-      }) : g.intl.string(g.t.tlopTE)
-    },
-    handler: e => (0, o.ZDy)(async () => {
-      let {
-        default: t
-      } = await Promise.all([n.e("22347"), n.e("56236"), n.e("25688")]).then(n.bind(n, 17671));
-      return n => (0, r.jsx)(t, b(m({}, n), {
-        guildId: e.id
-      }))
-    })
-  }, {
+let g = [{
     key: "JOIN_SERVERS",
-    renderIcon: e => (0, r.jsx)(o.Jmo, {
+    renderIcon: e => (0, r.jsx)(l.Jmo, {
       size: "md",
       color: "currentColor",
       className: e
     }),
     getName: () => Chunk388032.intl.string(Chunk388032.t.K50GHR),
-    handler: (e, t) => (0, u.XU)(e.id, t.id)
+    handler: (e, t) => (0, s.XU)(e.id, t.id)
   }, {
     key: "ADD_SERVERS",
-    renderIcon: e => (0, r.jsx)(o.qJs, {
+    renderIcon: e => (0, r.jsx)(l.qJs, {
       size: "md",
       color: "currentColor",
       className: e
     }),
     getName: () => Chunk388032.intl.string(Chunk388032.t.emRpdX),
-    handler: (e, t) => (0, o.ZDy)(async () => {
+    handler: (e, t) => (0, l.ZDy)(async () => {
       let {
         default: i
       } = await n.e("79764").then(n.bind(n, 533202));
-      return n => (0, r.jsx)(i, b(m({}, n), {
+      return n => (0, r.jsx)(i, h(f({}, n), {
         directoryGuildName: e.name,
         directoryGuildId: e.id,
         directoryChannelId: t.id
@@ -100,60 +75,42 @@ let O = [{
     })
   }, {
     key: "INVITE_MEMBERS",
-    renderIcon: e => (0, r.jsx)(o.ejJ, {
+    renderIcon: e => (0, r.jsx)(l.ejJ, {
       className: e
     }),
     getName: () => Chunk388032.intl.string(Chunk388032.t.MJQOuL),
-    handler: (e, t) => (0, o.ZDy)(async () => {
+    handler: (e, t) => (0, l.ZDy)(async () => {
       let {
         default: i
       } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
-      return n => (0, r.jsx)(i, b(m({}, n), {
+      return n => (0, r.jsx)(i, h(f({}, n), {
         guild: e,
         channel: t,
-        source: h.t4x.HUB_SIDEBAR
+        source: d.t4x.HUB_SIDEBAR
       }))
     })
   }],
-  _ = e => {
+  m = e => {
     let {
       guild: t,
       channel: n
-    } = e, o = (0, a.ZP)(t.id);
-    i.useEffect(() => {
-      p.Z.trackExposure({
-        guildId: t.id,
-        location: "543af8_1"
-      })
-    }, [t.id]);
-    let {
-      showHubEventsList: u
-    } = p.Z.useExperiment({
-      guildId: t.id,
-      location: "543af8_2"
-    }, {
-      autoTrackExposure: false
-    }), h = (0, l.e7)([d.Z], () => null != n && d.Z.getChannelId() === n.id), g = i.useMemo(() => ({
-      numEvents: o.length
-    }), [o.length]), m = (0, f.t)(n);
+    } = e, l = (0, i.e7)([c.Z], () => null != n && c.Z.getChannelId() === n.id), s = (0, u.t)(n);
     return (0, r.jsx)(r.Fragment, {
-      children: O.map(e => {
+      children: g.map(e => {
         let {
           key: i,
-          getName: l,
-          handler: o,
-          renderIcon: a
-        } = e;
-        if (!u && "EVENTS" === i) return null;
-        let d = "".concat(i, "-").concat(t.id);
-        return (0, r.jsx)(s.m, {
-          id: d,
-          renderIcon: a,
-          text: l(g),
-          selected: h && "JOIN_SERVERS" === i,
-          onClick: null != n ? () => o(t, n) : true,
-          trailing: "JOIN_SERVERS" === i && m > 0 ? (0, c.N)(m) : null
-        }, d)
+          getName: c,
+          handler: u,
+          renderIcon: d
+        } = e, p = "".concat(i, "-").concat(t.id);
+        return (0, r.jsx)(o.m, {
+          id: p,
+          renderIcon: d,
+          text: c(),
+          selected: l && "JOIN_SERVERS" === i,
+          onClick: null != n ? () => u(t, n) : true,
+          trailing: "JOIN_SERVERS" === i && s > 0 ? (0, a.N)(s) : null
+        }, p)
       })
     })
   }

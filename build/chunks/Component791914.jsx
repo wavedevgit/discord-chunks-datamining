@@ -1,7 +1,7 @@
 /** Chunk was on 91488 **/
 /** chunk id: 791914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,7 +23,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk407067 = require("./407067.js");
 
-function j(e) {
+function v(e) {
   let {
     tab: t,
     setTab: n,
@@ -34,7 +34,7 @@ function j(e) {
     inInbox: O
   } = d.Z.useExperiment({
     location: "RecentsPopout"
-  }), j = (0, f.Us)({
+  }), v = (0, f.Us)({
     location: "RecentsHeader"
   }), {
     enabled: C
@@ -61,7 +61,7 @@ function j(e) {
           enabled: false
         },
         "aria-label": _.intl.string(_.t["8k+6QU"]),
-        children: [(0, r.jsx)(v, {
+        children: [(0, r.jsx)(j, {
           tab: t
         }), (0, r.jsx)(g.Z, {
           closePopout: m
@@ -107,7 +107,7 @@ function j(e) {
           children: 0 === E ? _.intl.string(_.t["2pAkDA"]) : _.intl.formatToPlainString(_.t.I4fryM, {
             count: E
           })
-        }) : null, j ? (0, r.jsx)(o.njP.Item, {
+        }) : null, v ? (0, r.jsx)(o.njP.Item, {
           "aria-label": "scheduled",
           id: l.X.SCHEDULED,
           className: y.tab,
@@ -118,7 +118,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function j(e) {
   let {
     tab: t
   } = e;

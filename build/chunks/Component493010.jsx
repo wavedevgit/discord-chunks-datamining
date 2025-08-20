@@ -29,7 +29,7 @@ let x = function(e) {
   } = e;
   i.useEffect(() => {
     (0, p.Q3)(l.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
-      dismissAction: y.L.AUTO
+      dismissAction: _.L.AUTO
     })
   }, []);
   let v = i.useCallback(() => {
@@ -37,7 +37,7 @@ let x = function(e) {
     }, [t.id]),
     O = (0, r.jsx)(h.ZP.Icon, {
       icon: a.Dio,
-      tooltip: _.intl.string(_.t.cpT0Cg),
+      tooltip: y.intl.string(y.t.cpT0Cg),
       onClick: v
     });
   return (0, r.jsxs)(u.Z, {
@@ -49,10 +49,10 @@ let x = function(e) {
       draftType: f.d.ChannelMessage
     }), (0, r.jsxs)(h.ZP, {
       toolbar: O,
-      "aria-label": _.intl.string(_.t.BIYAqa),
+      "aria-label": y.intl.string(y.t.BIYAqa),
       children: [(0, r.jsx)(h.ZP.ChannelIcon, {
         icon: a.kBi,
-        "aria-label": _.intl.string(_.t.Kx5kCA)
+        "aria-label": y.intl.string(y.t.Kx5kCA)
       }), (0, r.jsx)(h.ZP.Title, {
         children: t.name
       })]

@@ -1,10 +1,10 @@
 /** Chunk was on 5665 **/
 /** chunk id: 99325, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Dr: () => y,
+  Dr: () => _,
   Rq: () => g,
   So: () => b,
-  Su: () => _,
+  Su: () => y,
   YZ: () => h,
   _Q: () => C,
   bF: () => f,
@@ -135,7 +135,7 @@ let g = i()(async (e, t) => {
       channelId: e
     })
   },
-  y = async function(e, t, n) {
+  _ = async function(e, t, n) {
     let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : u.AR.UNCATEGORIZED,
       i = await a.tn.patch({
         url: d.ANM.DIRECTORY_CHANNEL_ENTRY(e, t),
@@ -150,7 +150,7 @@ let g = i()(async (e, t) => {
       channelId: e,
       entry: i.body
     })
-  }, _ = (e, t) => {
+  }, y = (e, t) => {
     o.Z.dispatch({
       type: "GUILD_DIRECTORY_CATEGORY_SELECT",
       channelId: e,

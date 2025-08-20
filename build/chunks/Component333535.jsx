@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
 function b(e) {
   let {
     threadId: t
-  } = e, n = (0, l.e7)([s.Z], () => s.Z.getChannel(t)), b = (0, l.e7)([s.Z], () => s.Z.getChannel(null == n ? true : n.parent_id)), y = i.useCallback(() => {
+  } = e, n = (0, l.e7)([s.Z], () => s.Z.getChannel(t)), b = (0, l.e7)([s.Z], () => s.Z.getChannel(null == n ? true : n.parent_id)), _ = i.useCallback(() => {
     null != n && null != b && ((0, o.yw)(f.rMx.MEDIA_POST_SHARE_PROMPT_CLICKED, {
       media_post_id: n.id
     }), (0, u.JG)((0, c.EO)(n, b)))
@@ -46,7 +46,7 @@ function b(e) {
         text: m.intl.string(m.t.C5UQCw),
         variant: "primary",
         icon: a.xPt,
-        onClick: y
+        onClick: _
       })]
     }), (0, r.jsx)(a.P3F, {
       className: g.closeButton,

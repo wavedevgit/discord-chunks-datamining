@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 406326, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,7 +37,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,12 +50,12 @@ function y(e, t) {
   }), e
 }
 
-function _(e) {
+function y(e) {
   let {
     searchContext: t,
     searchMode: l,
     onSearchModeChange: s,
-    totalResults: _,
+    totalResults: y,
     isIndexing: x,
     isSearching: v,
     documentsIndexed: O
@@ -67,18 +67,18 @@ function _(e) {
   }), S = (0, p.KS)({
     isXDMSearch: t.type === f.aib.DMS,
     location: "SearchHeader"
-  }), P = (0, h.I)(t), {
-    totalFilters: I
-  } = (0, c.hE)(P), Z = i.useMemo(() => {
+  }), I = (0, h.I)(t), {
+    totalFilters: P
+  } = (0, c.hE)(I), Z = i.useMemo(() => {
     if (t.type === f.aib.DMS && j) {
       var e, n;
-      let t = null != (n = null == (e = (0, u.$G)(P).channel_id) ? true : e.length) ? n : 0;
+      let t = null != (n = null == (e = (0, u.$G)(I).channel_id) ? true : e.length) ? n : 0;
       return t > 0 ? m.intl.format(m.t.A2dqWF, {
         filterCount: t
       }) : m.intl.string(m.t.tc619f)
     }
     return null
-  }, [j, t.type, P]), T = i.useMemo(() => [{
+  }, [j, t.type, I]), T = i.useMemo(() => [{
     label: m.intl.string(m.t.CbaapK),
     value: f.QIO.NEWEST
   }, {
@@ -92,13 +92,13 @@ function _(e) {
       let {
         default: e
       } = await n.e("37979").then(n.bind(n, 238088));
-      return n => (0, r.jsx)(e, y(b({}, n), {
+      return n => (0, r.jsx)(e, _(b({}, n), {
         searchContext: t
       }))
     })
-  }, [t]), A = i.useMemo(() => I > 0 ? m.intl.format(m.t.uaR4sL, {
-    filterCount: I
-  }) : m.intl.string(m.t.UdhTtr), [I]);
+  }, [t]), A = i.useMemo(() => P > 0 ? m.intl.format(m.t.uaR4sL, {
+    filterCount: P
+  }) : m.intl.string(m.t.UdhTtr), [P]);
   return (0, r.jsxs)("header", {
     className: a()(g.searchHeader, {
       [g.searchHeaderWithSubtitle]: null != Z
@@ -107,7 +107,7 @@ function _(e) {
       className: g.totalResults,
       role: "status",
       children: (0, r.jsx)(C, {
-        totalResults: _,
+        totalResults: y,
         subtitle: Z,
         isIndexing: x,
         isSearching: v,
@@ -186,7 +186,7 @@ function v(e) {
     text: m.intl.formatToPlainString(m.t["4Y3O+P"], {
       count: t
     }),
-    children: e => (0, r.jsxs)("div", y(b({
+    children: e => (0, r.jsxs)("div", _(b({
       className: g.totalResultsWrapper
     }, e), {
       children: [(0, r.jsx)(o.Text, {

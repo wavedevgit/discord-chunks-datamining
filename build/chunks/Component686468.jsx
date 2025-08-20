@@ -54,7 +54,7 @@ function j(e) {
   } = e, {
     participants: n,
     usersInSummary: i
-  } = (0, _.Z)(t.id);
+  } = (0, y.Z)(t.id);
   return (0, r.jsxs)("div", {
     className: v.audienceSummary,
     children: [(0, r.jsx)(u.ZP, {
@@ -89,14 +89,14 @@ function E(e) {
   let {
     channel: t,
     onContinueClick: n
-  } = e, l = (0, o.e7)([b.Z], () => b.Z.can(y.yP, t), [t]), s = t.guild_id, {
+  } = e, l = (0, o.e7)([b.Z], () => b.Z.can(_.yP, t), [t]), s = t.guild_id, {
     canCreateGuildEvent: u
-  } = (0, m.XJ)(t), d = (0, C.Z)(t.id), _ = i.useRef(null);
+  } = (0, m.XJ)(t), d = (0, C.Z)(t.id), y = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: v.container,
-    ref: _,
+    ref: y,
     children: [(0, r.jsx)(g.Z, {
-      eventTargetRef: _
+      eventTargetRef: y
     }), (0, r.jsxs)("div", {
       className: v.content,
       children: [(0, r.jsxs)("div", {

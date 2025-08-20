@@ -38,7 +38,7 @@ function P(e) {
     voiceStates: g,
     isChannelSelected: b,
     shouldShowSettingNudge: _
-  } = e, j = i.useMemo(() => {
+  } = e, v = i.useMemo(() => {
     var e;
     return null == g || g.length > 50 ? {} : {
       [o.getGuildId()]: null != (e = g.map(e => {
@@ -49,9 +49,9 @@ function P(e) {
       })) ? e : []
     }
   }, [o, g]);
-  (0, c.$)(j);
-  let v = (0, u.ZP)(o),
-    C = Array.from((0, u.uF)(v).values()),
+  (0, c.$)(v);
+  let j = (0, u.ZP)(o),
+    C = Array.from((0, u.uF)(j).values()),
     I = null != (t = null == g ? true : g.filter(O.lm)) ? t : [],
     P = (0, a.e7)([m.Z], () => {
       let e = {};
@@ -163,9 +163,9 @@ function N(e) {
   }), u = (0, a.e7)([h.Z], () => h.Z.getGuild(t.guild_id));
   return null == (0, f.KS)(t, u) ? null : (0, r.jsxs)("div", {
     className: o()(S.popoutHeaderContainer, I.popoutHeaderContainer),
-    children: [(0, r.jsx)(j.Z, {
+    children: [(0, r.jsx)(v.Z, {
       channel: t
-    }), c ? (0, r.jsx)(v.Z, {
+    }), c ? (0, r.jsx)(j.Z, {
       userCount: i,
       video: s,
       channel: t

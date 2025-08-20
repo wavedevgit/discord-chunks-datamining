@@ -37,7 +37,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,12 +50,12 @@ function y(e, t) {
   }), e
 }
 
-function _(e) {
+function y(e) {
   let {
     channel: t,
     speaker: l,
     className: f
-  } = e, _ = i.useRef(null), {
+  } = e, y = i.useRef(null), {
     newestAnalyticsLocation: C
   } = (0, d.ZP)(), x = (0, u.bp)(), {
     reducedMotion: v
@@ -66,7 +66,7 @@ function _(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
-      return n => (0, r.jsx)(e, y(b({}, n), {
+      return n => (0, r.jsx)(e, _(b({}, n), {
         user: l.user,
         guildId: t.guild_id,
         channel: t,
@@ -80,17 +80,17 @@ function _(e) {
     })
   };
   return (0, r.jsx)(h.Z, {
-    targetElementRef: _,
+    targetElementRef: y,
     user: l.user,
     guildId: t.guild_id,
     channelId: t.id,
     clickTrap: true,
     children: e => (0, r.jsx)(o.ua7, {
-      targetElementRef: _,
+      targetElementRef: y,
       text: l.userNick,
       position: "bottom",
-      children: n => (0, r.jsx)(o.P3F, y(b({}, n, e), {
-        innerRef: _,
+      children: n => (0, r.jsx)(o.P3F, _(b({}, n, e), {
+        innerRef: y,
         onClick: t => {
           t.stopPropagation(), e.onClick(t)
         },
@@ -117,7 +117,7 @@ function C(e) {
     guildId: n.guild_id,
     users: t,
     max: 10,
-    renderUser: (e, t, i) => (0, r.jsx)(_, {
+    renderUser: (e, t, i) => (0, r.jsx)(y, {
       channel: n,
       speaker: e,
       className: t

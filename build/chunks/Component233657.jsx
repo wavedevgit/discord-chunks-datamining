@@ -60,12 +60,12 @@ function O(e) {
   } = (0, i.cj)([u.ZP], () => ({
     hasUnread: u.ZP.hasUnread(t.id, f.W.GUILD_EVENT),
     mentionCount: u.ZP.getMentionCount(t.id, f.W.GUILD_EVENT)
-  }), [t.id]), j = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
-  async function v() {
+  }), [t.id]), v = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
+  async function j() {
     await (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("22347"), n.e("56236"), n.e("25688")]).then(n.bind(n, 17671));
+      } = await Promise.all([n.e("4096"), n.e("56236"), n.e("25688")]).then(n.bind(n, 17671));
       return n => (0, r.jsx)(e, b(m({}, n), {
         guildId: t.id
       }))
@@ -84,7 +84,7 @@ function O(e) {
     }),
     text: x,
     selected: O,
-    onClick: v,
+    onClick: j,
     onContextMenu: e => {
       (0, a.jW)(e, async () => {
         let {
@@ -95,8 +95,8 @@ function O(e) {
         }))
       })
     },
-    showUnread: _ && !j,
-    trailing: !j && y > 0 ? (0, r.jsx)(o.mAB, {
+    showUnread: _ && !v,
+    trailing: !v && y > 0 ? (0, r.jsx)(o.mAB, {
       className: g.numberBadge,
       disableColor: true,
       count: y

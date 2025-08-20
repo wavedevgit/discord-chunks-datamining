@@ -53,15 +53,15 @@ function f(e) {
     hideEditButton: g = false
   } = e, {
     isEntryAdmin: b,
-    canEdit: y,
-    canRemove: _
+    canEdit: _,
+    canRemove: y
   } = (0, u.Z)(t), C = (0, o.Z)({
     id: t.guildId,
     label: d.intl.string(d.t["94lLDw"]),
     onSuccess: m
   });
   i.useEffect(() => {
-    y || _ || null != C || (0, a.Zy)()
+    _ || y || null != C || (0, a.Zy)()
   });
   let x = () => {
     c.kx(t.channelId, t.guildId)
@@ -76,7 +76,7 @@ function f(e) {
     "aria-label": d.intl.string(d.t.HpQykZ),
     onSelect: f,
     children: [(0, r.jsxs)(l.kSQ, {
-      children: [y && !g ? (0, r.jsx)(l.sNh, {
+      children: [_ && !g ? (0, r.jsx)(l.sNh, {
         id: "update-entry",
         label: d.intl.string(d.t.XnuOvL),
         action: function() {
@@ -89,7 +89,7 @@ function f(e) {
             }))
           }), v()
         }
-      }) : null, _ ? (0, r.jsx)(l.sNh, {
+      }) : null, y ? (0, r.jsx)(l.sNh, {
         id: "remove-from-hub",
         label: d.intl.string(d.t.KUxYWF),
         action: function() {

@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk777261 = require("./777261.js"),
   Chunk883760 = require("./883760.js");
 
-function P(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function P(e) {
   return e
 }
 
-function I(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -113,13 +113,13 @@ function N(e) {
           var {
             onClick: i
           } = e, l = Z(e, ["onClick"]);
-          return (0, r.jsx)(h.zx, I(P({}, l), {
+          return (0, r.jsx)(h.zx, P(I({}, l), {
             onClick: () => {
               null == i || i(), (0, c.ZDy)(async () => {
                 let {
                   default: e
                 } = await n.e("34191").then(n.bind(n, 303647));
-                return n => (0, r.jsx)(e, I(P({}, n), {
+                return n => (0, r.jsx)(e, P(I({}, n), {
                   entry: t
                 }))
               })
@@ -149,7 +149,7 @@ function N(e) {
               var {
                 onClick: i
               } = e, l = Z(e, ["onClick"]);
-              return (0, r.jsx)(h.zx, I(P({}, n, l), {
+              return (0, r.jsx)(h.zx, P(I({}, n, l), {
                 ref: s,
                 onClick: e => {
                   null == i || i(), t(e)
@@ -172,7 +172,7 @@ let A = e => {
   var t;
   let {
     entry: l
-  } = e, [a, h] = i.useState(false), x = null != (0, o.e7)([y.Z], () => y.Z.getGuild(l.guildId)), v = async () => {
+  } = e, [a, h] = i.useState(false), x = null != (0, o.e7)([_.Z], () => _.Z.getGuild(l.guildId)), v = async () => {
     h(true);
     try {
       x ? (0, b.X)(l.guildId) : await d.Z.joinGuild(l.guildId, {
@@ -181,11 +181,11 @@ let A = e => {
     } finally {
       h(false)
     }
-  }, S = _.ZP.getGuildSplashURL({
+  }, S = y.ZP.getGuildSplashURL({
     id: l.guildId,
     splash: l.splash,
     size: 300 * (0, g.x_)()
-  }), Z = null != (t = _.ZP.getGuildIconURL({
+  }), Z = null != (t = y.ZP.getGuildIconURL({
     id: l.guildId,
     icon: l.icon,
     size: 40
@@ -197,7 +197,7 @@ let A = e => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 643560));
-        return t => (0, r.jsx)(e, I(P({}, t), {
+        return t => (0, r.jsx)(e, P(I({}, t), {
           entry: l
         }))
       })

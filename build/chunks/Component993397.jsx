@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 993397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => _
 }), require("./314940.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -65,7 +65,7 @@ function b(e) {
     })
   })
 }
-let y = Chunk647438.memo(function(e) {
+let _ = Chunk647438.memo(function(e) {
   var t;
   let {
     messages: n,
@@ -75,7 +75,7 @@ let y = Chunk647438.memo(function(e) {
     collapsedReason: c
   } = e, {
     hasJumpTarget: p = false
-  } = n, [f, y] = i.useState(p), _ = i.useCallback(() => y(e => !e), []), C = n.hasUnread ? n.content.length - 1 : n.content.length;
+  } = n, [f, _] = i.useState(p), y = i.useCallback(() => _(e => !e), []), C = n.hasUnread ? n.content.length - 1 : n.content.length;
   return (0, r.jsxs)("div", {
     className: a()({
       [g.groupStart]: true,
@@ -88,7 +88,7 @@ let y = Chunk647438.memo(function(e) {
       count: C,
       compact: o,
       expanded: f,
-      onClick: _,
+      onClick: y,
       collapsedReason: c
     }, "collapsed-message-item"), f ? n.content.map((e, t) => {
       if (e.type === h.ys_.DIVIDER && t > 0) {

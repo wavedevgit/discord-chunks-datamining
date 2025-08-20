@@ -1,20 +1,20 @@
-/** Chunk was on 15105 **/
-/** chunk id: 951206, original params: t,n,e (module,exports,require) **/
+/** Chunk was on 97755 **/
+/** chunk id: 951206, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => p
+  F: () => s
 });
 var Chunk512722 = require("./512722.js"),
-  d = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk846027 = require("./846027.js"),
   Chunk287734 = require("./287734.js"),
   Chunk131951 = require("./131951.js"),
   Chunk254238 = require("./254238.js"),
   Chunk893387 = require("./893387.js");
 
-function p(t, n) {
-  var e;
-  let i = null != (e = t.sessionId) ? e : "";
-  (0, _._)(i), (0, _.s6)();
-  let p = null != n ? n : t.channelId;
-  d()(null != p, "attempted to transfer to unknown channel"), t.selfMute !== a.Z.isSelfMute() && l.Z.toggleSelfMute(), t.selfDeaf !== a.Z.isSelfDeaf() && l.Z.toggleSelfDeaf(), (0, s.Z)(p, "discord_client", i), r.default.selectVoiceChannel(p, false)
+function s(e, t) {
+  var n;
+  let r = null != (n = e.sessionId) ? n : "";
+  (0, o._)(r), (0, o.s6)();
+  let s = null != t ? t : e.channelId;
+  l()(null != s, "attempted to transfer to unknown channel"), e.selfMute !== c.Z.isSelfMute() && i.Z.toggleSelfMute(), e.selfDeaf !== c.Z.isSelfDeaf() && i.Z.toggleSelfDeaf(), (0, a.Z)(s, "discord_client", r), u.default.selectVoiceChannel(s, false)
 }

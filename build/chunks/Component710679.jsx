@@ -1,16 +1,16 @@
 /** Chunk was on 56236 **/
 /** chunk id: 710679, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => Z
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
-  Chunk724912 = require("./724912.js"),
   Chunk41776 = require("./41776.js"),
   Chunk501655 = require("./501655.js"),
   Chunk427679 = require("./427679.js"),
   Chunk592125 = require("./592125.js"),
+  Chunk430824 = require("./430824.js"),
   Chunk496675 = require("./496675.js"),
   Chunk19780 = require("./19780.js"),
   Chunk594174 = require("./594174.js"),
@@ -18,7 +18,6 @@ var Chunk442837 = require("./442837.js"),
   Chunk924301 = require("./924301.js"),
   Chunk951539 = require("./951539.js"),
   Chunk146768 = require("./146768.js"),
-  Chunk592126 = require("./592126.js"),
   Chunk236373 = require("./236373.js"),
   Chunk230900 = require("./230900.js"),
   Chunk954313 = require("./954313.js"),
@@ -27,107 +26,101 @@ var Chunk442837 = require("./442837.js"),
   Chunk462179 = require("./462179.jsx"),
   Chunk981631 = require("./981631.js");
 
-function P(e) {
-  var n, t, P;
+function Z(e) {
+  var n, t, Z;
   let {
-    guildEvent: E,
-    guildId: k,
+    guildEvent: k,
     truncate: N,
-    onActionTaken: w,
-    className: I,
-    isNew: S
+    onActionTaken: P,
+    className: E,
+    isNew: w
   } = e, {
-    id: T,
-    guild_id: _,
+    id: I,
+    guild_id: S,
     channel_id: D,
-    creator_id: G,
+    creator_id: T,
     name: L,
-    description: R,
-    entity_type: H,
+    description: _,
+    entity_type: G,
     image: M,
-    recurrence_rule: U
-  } = E, z = (0, y.DK)(E), A = (0, r.e7)([f.ZP], () => f.ZP.isInterestedInEventRecurrence(T, z), [T, z]), J = (0, r.e7)([o.Z], () => o.Z.isLurking(_), [_]), B = (0, r.e7)([a.Z], () => a.Z.getStageInstanceByChannel(D), [D]), X = (0, r.e7)([s.Z], () => s.Z.getChannel(D), [D]), W = (0, r.e7)([g.default], () => g.default.getUser(G), [G]), {
-    speakers: V
+    recurrence_rule: R
+  } = k, z = (0, b.DK)(k), A = (0, i.e7)([h.ZP], () => h.ZP.isInterestedInEventRecurrence(I, z), [I, z]), U = (0, i.e7)([l.Z], () => l.Z.isLurking(S), [S]), J = (0, i.e7)([a.Z], () => a.Z.getStageInstanceByChannel(D), [D]), B = (0, i.e7)([s.Z], () => s.Z.getGuild(S), [S]), q = (0, i.e7)([o.Z], () => o.Z.getChannel(D), [D]), K = (0, i.e7)([g.default], () => g.default.getUser(T), [T]), {
+    speakers: W
   } = (0, v.Z)({
     id: D,
     data: {
       guild: null,
-      instance: B,
+      instance: J,
       speakers: [],
       participantCount: 0
     },
     context: {
-      guildId: _,
-      instance: B
+      guildId: S,
+      instance: J
     }
-  }), q = (0, r.e7)([d.Z], () => d.Z.getChannelId()), K = (0, f.xt)(E), Q = q === D && null != q && K, F = V.filter(e => e.type === c.Ui.VOICE), Y = F.length, $ = (0, r.e7)([u.Z], () => u.Z.can(C.Plq.CONNECT, X), [X]), ee = (0, h.ZP)(E), {
-    isMember: en,
-    guild: et
-  } = (0, m.Z)(_, T), ei = (0, Z.Z)({
-    guild: et,
-    channel: X,
-    guildScheduledEvent: E,
-    isActive: K,
+  }), X = (0, i.e7)([d.Z], () => d.Z.getChannelId()), F = (0, h.xt)(k), H = X === D && null != X && F, V = W.filter(e => e.type === c.Ui.VOICE), Q = V.length, Y = (0, i.e7)([u.Z], () => u.Z.can(C.Plq.CONNECT, q), [q]), $ = (0, m.ZP)(k), ee = null != B, en = (0, y.Z)({
+    guild: B,
+    channel: q,
+    guildScheduledEvent: k,
+    isActive: F,
     recurrenceId: z,
-    onActionTaken: w
-  }), er = (0, l.Z)(k), el = J ? true : e => (0, p.bO)({
-    eventId: T,
-    parentGuildId: k,
+    onActionTaken: P
+  }), et = U ? true : e => (0, p.bO)({
+    eventId: I,
     recurrenceId: e
   });
-  return (0, i.jsx)(O.Z, (t = function(e) {
+  return (0, r.jsx)(O.Z, (t = function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
-        i = Object.keys(t);
-      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+        r = Object.keys(t);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
         return Object.getOwnPropertyDescriptor(t, e).enumerable
-      }))), i.forEach(function(n) {
-        var i;
-        i = t[n], n in e ? Object.defineProperty(e, n, {
-          value: i,
+      }))), r.forEach(function(n) {
+        var r;
+        r = t[n], n in e ? Object.defineProperty(e, n, {
+          value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[n] = i
+        }) : e[n] = r
       })
     }
     return e
   }({
-    guild: et,
-    channel: X,
-    creator: W,
+    guild: B,
+    channel: q,
+    creator: K,
     name: L,
-    entityType: H,
-    description: null != R ? R : true,
-    location: null != (n = (0, b.cS)(E)) ? n : true,
-    imageSource: null != M ? (0, x.Z)(E) : true,
+    entityType: G,
+    description: null != _ ? _ : true,
+    location: null != (n = (0, f.cS)(k)) ? n : true,
+    imageSource: null != M ? (0, x.Z)(k) : true,
     imageLocation: O.Q.THUMBNAIL,
-    isActive: K,
-    isUserLurking: J,
-    isJoined: Q,
-    isMember: en,
-    isHub: er,
-    speakers: F,
-    canConnect: $,
-    speakerCount: Y,
+    isActive: F,
+    isUserLurking: U,
+    isJoined: H,
+    isMember: ee,
+    speakers: V,
+    canConnect: Y,
+    speakerCount: Q,
     rsvped: A,
-    canInvite: ee
-  }, ei), P = P = {
-    className: I,
-    onClick: el,
+    canInvite: $
+  }, en), Z = Z = {
+    className: E,
+    onClick: et,
     truncate: N,
-    isNew: S,
-    guildEvent: E,
-    recurrenceRule: (0, j.KV)(U),
+    isNew: w,
+    guildEvent: k,
+    recurrenceRule: (0, j.KV)(R),
     recurrenceId: z
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(P)) : (function(e, n) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(Z)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      t.push.apply(t, i)
+      var r = Object.getOwnPropertySymbols(e);
+      t.push.apply(t, r)
     }
     return t
-  })(Object(P)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(P, e))
+  })(Object(Z)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(Z, e))
   }), t))
 }

@@ -69,8 +69,8 @@ let g = e => {
       handleClearSearch: f,
       handleSearchKeyPress: m,
       currentCategoryId: b,
-      handleSelectCategory: y,
-      categoryCounts: _,
+      handleSelectCategory: _,
+      categoryCounts: y,
       allEntriesCount: C,
       isLoading: x
     } = e;
@@ -91,7 +91,7 @@ let g = e => {
             look: "brand",
             selectedItem: b,
             onItemSelect: e => {
-              y(e)
+              _(e)
             },
             children: [(0, r.jsx)(o.njP.Item, {
               className: h.tabBarItem,
@@ -105,7 +105,7 @@ let g = e => {
               return (0, r.jsx)(o.njP.Item, {
                 className: h.tabBarItem,
                 id: t,
-                children: "".concat(n, " ").concat(null != _[t] ? "(".concat(_[t], ")") : "")
+                children: "".concat(n, " ").concat(null != y[t] ? "(".concat(y[t], ")") : "")
               }, t)
             })]
           })

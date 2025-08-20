@@ -28,14 +28,14 @@ function v(e) {
   let {
     recipientUser: t,
     voiceChannel: n
-  } = e, i = (0, y.ZP)(n), s = (0, h.s)(t, "RingToVoiceBanner", n.id), {
+  } = e, i = (0, _.ZP)(n), s = (0, h.s)(t, "RingToVoiceBanner", n.id), {
     userIsInCall: u,
     isUserRinging: m
   } = (0, o.cj)([p.Z], () => {
     let e = null;
     return s && null != n.id && (e = p.Z.getParticipant(n.id, t.id)), {
       userIsInCall: null != e,
-      isUserRinging: null != e && e.type === _.fO.USER && e.ringing
+      isUserRinging: null != e && e.type === y.fO.USER && e.ringing
     }
   }), v = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), j = null != v ? (0, g.EB)(v, 32, true) : null, E = !s || u && !m;
   return ((0, d.Z)({

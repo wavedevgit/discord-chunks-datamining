@@ -22,13 +22,13 @@ var Chunk442837 = require("./442837.js"),
 function b(e) {
   var t, b;
   let {
-    channel: y,
-    children: _
-  } = e, C = (0, i.e7)([u.Z], () => u.Z.isBlocked(y.getRecipientId()));
-  (0, o.Z)(y.id);
-  let x = (0, s.Z)(y.id),
-    v = y.isSystemDM(),
-    O = C && !v && !y.isMultiUserDM(),
+    channel: _,
+    children: y
+  } = e, C = (0, i.e7)([u.Z], () => u.Z.isBlocked(_.getRecipientId()));
+  (0, o.Z)(_.id);
+  let x = (0, s.Z)(_.id),
+    v = _.isSystemDM(),
+    O = C && !v && !_.isMultiUserDM(),
     j = {};
   if (v) {
     let e = x ? (0, r.jsxs)(r.Fragment, {
@@ -48,7 +48,7 @@ function b(e) {
       open(p.Z.getArticleURL(f.BhN.SYSTEM_DMS))
     }, j.imageSrc = n(780961)
   } else O && (j.message = g.intl.string(g.t["9T6N5+"]), j.buttonText = g.intl.string(g.t.XyHpKC), j.onButtonClick = () => {
-    a.Z.unblockUser(y.getRecipientId())
+    a.Z.unblockUser(_.getRecipientId())
   });
   return (0, r.jsx)(h.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -68,7 +68,7 @@ function b(e) {
     }
     return e
   }({}, j), b = b = {
-    children: _
+    children: y
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(b)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

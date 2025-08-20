@@ -14,20 +14,20 @@ function o(e) {
   let {
     steps: t,
     stepIndex: n,
-    onClick: l
+    onClick: r
   } = e;
-  return (0, r.jsx)("div", {
+  return (0, l.jsx)("div", {
     className: s.container,
     children: t.map((e, t) => {
       let o = n === t;
-      return (0, r.jsxs)(a.P3F, {
-        onClick: () => l(t),
+      return (0, l.jsxs)(a.P3F, {
+        onClick: () => r(t),
         className: s.stepContainer,
-        children: [(0, r.jsx)("div", {
+        children: [(0, l.jsx)("div", {
           className: i()(s.progressBar, {
             [s.selectedProgressBar]: o
           })
-        }), (0, r.jsx)(a.Text, {
+        }), (0, l.jsx)(a.Text, {
           color: o ? "text-brand" : "text-muted",
           variant: "text-xs/normal",
           children: e

@@ -103,8 +103,8 @@ class k extends Chunk98597.ZP {
       isSubscriptionGated: b,
       isFavoriteSuggestion: _,
       subtitle: y,
-      forceTopLevelThread: j,
-      embeddedApps: v,
+      forceTopLevelThread: v,
+      embeddedApps: j,
       resolvedUnreadSetting: C,
       withGuildIcon: x,
       enableActivities: E
@@ -249,7 +249,7 @@ class k extends Chunk98597.ZP {
           channel: t
         }))
       });
-      let i = v.Z.getGuild(t.getGuildId());
+      let i = j.Z.getGuild(t.getGuildId());
       null != i && (0, u.jW)(e, async () => {
         let {
           default: e
@@ -279,14 +279,14 @@ function G(e) {
     unread: x.ZP.hasUnread(t.id),
     ackMessageId: x.ZP.ackMessageId(t.id),
     isLowImportanceMention: x.ZP.getIsMentionLowImportance(t.id)
-  })), g = (0, a.e7)([E.ZP], () => E.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([j.Z, C.Z], () => {
-    let e = j.Z.getChannel(t.parent_id);
+  })), g = (0, a.e7)([E.ZP], () => E.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([v.Z, C.Z], () => {
+    let e = v.Z.getChannel(t.parent_id);
     return {
       canManageChannel: C.Z.can(T.Plq.MANAGE_CHANNELS, t),
       canReorderChannel: true !== i && (n.id === A._ || (null != e ? C.Z.can(T.Plq.MANAGE_CHANNELS, e) : C.Z.can(T.Plq.MANAGE_CHANNELS, n)))
     }
   }), O = (0, a.e7)([_.Z], () => _.Z.shouldIndicateNewChannel(n.id, t.id)), {
-    needSubscriptionToAccess: v,
+    needSubscriptionToAccess: j,
     isSubscriptionGated: I
   } = (0, b.Z)(t.id), P = (0, a.e7)([E.ZP], () => E.ZP.isFavorite(n.id, t.id)), w = (0, a.e7)([S.default], () => {
     let e = S.default.getCurrentUser();
@@ -296,7 +296,7 @@ function G(e) {
     isChannelCollapsed: false,
     isChannelSelected: s,
     isSubscriptionGated: I,
-    needSubscriptionToAccess: v,
+    needSubscriptionToAccess: j,
     isNewChannel: O,
     muted: o,
     enableActivities: Z,
@@ -306,7 +306,7 @@ function G(e) {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
     isSubscriptionGated: I,
-    needSubscriptionToAccess: v,
+    needSubscriptionToAccess: j,
     isNewChannel: O && e.canBeNewChannel,
     isFavoriteSuggestion: l && !P,
     canShowThreadPreviewForUser: w,

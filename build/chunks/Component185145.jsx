@@ -22,8 +22,8 @@ function g(e) {
   let {
     guild: t,
     disabledUntil: n
-  } = e, [g, b] = (0, d.i)(t.id), y = (0, i.e7)([c.ZP, s.default], () => c.ZP.getMember(t.id, s.default.getId()), [t.id]);
-  return (0, u.$)(y), (0, r.jsxs)("div", {
+  } = e, [g, b] = (0, d.i)(t.id), _ = (0, i.e7)([c.ZP, s.default], () => c.ZP.getMember(t.id, s.default.getId()), [t.id]);
+  return (0, u.$)(_), (0, r.jsxs)("div", {
     children: [g ? (0, r.jsx)(p.Z, {
       onClose: () => b(t.id),
       guildName: t.name

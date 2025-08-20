@@ -71,8 +71,8 @@ let p = Chunk647438.forwardRef(function(e, t) {
     isPopoutBlocked: m,
     onPopoutOpen: g,
     onPopoutClose: b,
-    onRequestClose: y
-  } = e, [_, C] = i.useState(false), {
+    onRequestClose: _
+  } = e, [y, C] = i.useState(false), {
     isHovered: x,
     setIsHovered: v,
     onMouseEnter: O,
@@ -81,22 +81,22 @@ let p = Chunk647438.forwardRef(function(e, t) {
   } = (0, o.Z)(200, 300);
 
   function S(e) {
-    "focus" === e.type || _ || O()
+    "focus" === e.type || y || O()
   }
 
-  function P() {
-    _ || j()
+  function I() {
+    y || j()
   }
 
-  function I(e) {
-    E(), C(!_), _ ? null == b || b() : null == g || g(), (!x || _) && e()
+  function P(e) {
+    E(), C(!y), y ? null == b || b() : null == g || g(), (!x || y) && e()
   }
   i.useImperativeHandle(t, () => ({
     hidePopout() {
       v(false), C(false)
     }
   }), [v, C]);
-  let Z = x && !m || _;
+  let Z = x && !m || y;
   return (0, r.jsx)(a.yRy, {
     targetElementRef: p,
     animation: a.yRy.Animation.FADE,
@@ -106,14 +106,14 @@ let p = Chunk647438.forwardRef(function(e, t) {
     align: f,
     spacing: 16,
     onRequestClose: () => {
-      if ((null == y ? true : y()) === l.F) return l.F;
+      if ((null == _ ? true : _()) === l.F) return l.F;
       v(false), C(false), null == b || b()
     },
     renderPopout: e => (0, r.jsx)(d, u({
       isHovered: Z,
       onFocus: () => C(true),
       onMouseEnter: O,
-      onMouseLeave: P,
+      onMouseLeave: I,
       renderPopout: n
     }, e)),
     children: e => {
@@ -123,14 +123,14 @@ let p = Chunk647438.forwardRef(function(e, t) {
       } = e;
       return (0, r.jsx)(r.Fragment, {
         children: h({
-          onClick: e => I(() => t(e)),
+          onClick: e => P(() => t(e)),
           onKeyDown: e => {
-            (e.key === s.vn.ENTER || e.key === s.vn.SPACE) && I(() => n(e))
+            (e.key === s.vn.ENTER || e.key === s.vn.SPACE) && P(() => n(e))
           },
           className: c.actionBarButton,
           onMouseEnter: S,
-          onMouseLeave: P,
-          isActive: _
+          onMouseLeave: I,
+          isActive: y
         })
       })
     }

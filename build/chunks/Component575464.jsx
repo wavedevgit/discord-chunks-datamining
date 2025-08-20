@@ -24,15 +24,15 @@ function m(e) {
     row: m,
     hideDiscriminator: g,
     comparator: b,
-    selected: y,
-    checked: _,
+    selected: _,
+    checked: y,
     disabled: C = false,
     inlineUsername: x = true,
     onClick: v,
     onMouseEnter: O,
     "aria-setsize": j,
     "aria-posinset": E
-  } = e, S = (0, o.e7)([p.Z], () => p.Z.getStatus(i.id)), P = (0, a.JA)(String(i.id));
+  } = e, S = (0, o.e7)([p.Z], () => p.Z.getStatus(i.id)), I = (0, a.JA)(String(i.id));
   return (0, r.jsx)(s.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -61,16 +61,16 @@ function m(e) {
     onMouseEnter: () => {
       null != O && O(m)
     }
-  }, P), n = n = {
+  }, I), n = n = {
     role: "option",
-    "aria-selected": _,
+    "aria-selected": y,
     "aria-disabled": C,
     "aria-setsize": j,
     "aria-posinset": E,
     children: (0, r.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,
       className: l()(f.friend, {
-        [f.friendSelected]: y,
+        [f.friendSelected]: _,
         [f.twoRows]: !x
       }),
       children: [(0, r.jsx)(u.Z, {
@@ -102,7 +102,7 @@ function m(e) {
       }), (0, r.jsx)(s.XZJ, {
         displayOnly: true,
         size: 22,
-        value: _,
+        value: y,
         disabled: C,
         className: f.checkbox
       })]

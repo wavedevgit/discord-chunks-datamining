@@ -27,11 +27,11 @@ let O = Chunk647438.memo(function(e) {
     let {
       channelId: t,
       width: n
-    } = e, l = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), a = (0, s.e7)([y.ZP], () => y.ZP.getMostRecentMessageCombo(t), [t]), [u, p] = i.useState(false);
+    } = e, l = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), a = (0, s.e7)([_.ZP], () => _.ZP.getMostRecentMessageCombo(t), [t]), [u, p] = i.useState(false);
     i.useEffect(() => {
       if (null == a ? true : a.displayed) return;
       p(false), setImmediate(() => {
-        p((null != a ? (0, _.Eo)(a.combo) : 0) > 0)
+        p((null != a ? (0, y.Eo)(a.combo) : 0) > 0)
       });
       let e = setTimeout(() => {
         p(false), null != a && (0, g.ew)(a)
@@ -52,7 +52,7 @@ let O = Chunk647438.memo(function(e) {
       children: (0, r.jsx)(c.Text, {
         className: v.comboScore,
         variant: "text-sm/bold",
-        children: (0, _.Eo)(a.combo)
+        children: (0, y.Eo)(a.combo)
       })
     })
   }),
@@ -64,7 +64,7 @@ let O = Chunk647438.memo(function(e) {
       color: l,
       square: o,
       flair: s
-    } = i.useMemo(() => (0, _.yz)(n), [n]), u = (0, p.Lq)(l);
+    } = i.useMemo(() => (0, y.yz)(n), [n]), u = (0, p.Lq)(l);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.Text, {
         className: v.comboValue,
@@ -121,13 +121,13 @@ let O = Chunk647438.memo(function(e) {
   E = Chunk647438.memo(function(e) {
     let {
       channelId: t
-    } = e, n = (0, s.e7)([h.default], () => h.default.getId()), l = (0, s.e7)([f.Z], () => f.Z.isTyping(t, n), [t, n]), a = (0, s.e7)([b.Z], () => b.Z.isEnabled()), d = (0, s.e7)([y.ZP], () => y.ZP.isComboing(n, t), [t, n]), {
+    } = e, n = (0, s.e7)([h.default], () => h.default.getId()), l = (0, s.e7)([f.Z], () => f.Z.isTyping(t, n), [t, n]), a = (0, s.e7)([b.Z], () => b.Z.isEnabled()), d = (0, s.e7)([_.ZP], () => _.ZP.isComboing(n, t), [t, n]), {
       ref: p,
       width: m = 0
-    } = (0, u.ZP)(), [g, _] = i.useState(false), x = (0, C.Z)(t), E = a && d && l;
+    } = (0, u.ZP)(), [g, y] = i.useState(false), x = (0, C.Z)(t), E = a && d && l;
     i.useEffect(() => {
-      E && _(true);
-      let e = setTimeout(() => _(E), 1e3);
+      E && y(true);
+      let e = setTimeout(() => y(E), 1e3);
       return () => clearTimeout(e)
     }, [E]);
     let S = (0, c.q_F)({
@@ -136,21 +136,21 @@ let O = Chunk647438.memo(function(e) {
         pointerEvents: "none",
         config: o.config.stiff
       }),
-      P = i.useMemo(() => null != x ? x : {
+      I = i.useMemo(() => null != x ? x : {
         value: 0,
         multiplier: 1
       }, [x]),
-      I = i.useRef(P);
+      P = i.useRef(I);
     i.useEffect(() => {
-      (P.multiplier > 1 || P.value > 0) && (I.current = P)
-    }, [P]);
+      (I.multiplier > 1 || I.value > 0) && (P.current = I)
+    }, [I]);
     let {
       multiplier: Z,
       value: T
     } = i.useMemo(() => ({
-      value: E ? P.value : I.current.value,
-      multiplier: E ? P.multiplier : I.current.multiplier
-    }), [E, P, I]);
+      value: E ? I.value : P.current.value,
+      multiplier: E ? I.multiplier : P.current.multiplier
+    }), [E, I, P]);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(O, {
         channelId: t,

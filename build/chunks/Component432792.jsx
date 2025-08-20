@@ -60,7 +60,7 @@ let C = () => (0, Chunk930153.Lk)(document.body.style.getPropertyValue("--custom
   S = e => {
     let {
       customIconSrcs: t
-    } = e, n = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), i = true !== t ? t.animated : v.Z, o = true !== t ? t.static : j.Z;
+    } = e, n = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), i = true !== t ? t.animated : j.Z, o = true !== t ? t.static : v.Z;
     return n || null == i ? (0, r.jsx)("img", {
       src: o,
       className: y.orbAsset,
@@ -70,10 +70,10 @@ let C = () => (0, Chunk930153.Lk)(document.body.style.getPropertyValue("--custom
       loop: true,
       className: y.orbAsset,
       children: [(0, r.jsx)("source", {
-        src: v.Z,
+        src: j.Z,
         type: "video/webm"
       }), (0, r.jsx)("img", {
-        src: j.Z,
+        src: v.Z,
         className: y.orbAsset,
         alt: "Orb"
       })]
@@ -132,7 +132,7 @@ function P(e) {
     onGetTargetElementDimensions: p,
     spacing: f,
     position: h = "right"
-  } = e, [g, m] = i.useState("bottom" === u), [O, _] = i.useState(true), [y, j] = i.useState(String(Date.now())), v = (0, c.Z)(), C = i.useCallback(e => {
+  } = e, [g, m] = i.useState("bottom" === u), [O, _] = i.useState(true), [y, v] = i.useState(String(Date.now())), j = (0, c.Z)(), C = i.useCallback(e => {
     let n = t(e);
     n !== O && _(n)
   }, [O, t]), x = a.current, E = i.useCallback(() => {
@@ -152,10 +152,10 @@ function P(e) {
         height: t,
         width: n
       }), null != r) {
-      if (C(r), i && j(String(Date.now())), d) return;
+      if (C(r), i && v(String(Date.now())), d) return;
       let e = r.top < window.innerHeight / 2;
       if (e === g) return;
-      m(e), j(String(Date.now()))
+      m(e), v(String(Date.now()))
     }
   }, [g, C, p, d]);
   (0, b.fu)({
@@ -165,7 +165,7 @@ function P(e) {
     targetElementRef: a
   });
   let I = i.useMemo(() => d ? null != u ? u : "bottom" : g ? "top" : "bottom", [d, u, g]),
-    P = O && !v,
+    P = O && !j,
     N = i.Children.map(l, e => i.cloneElement(e, {
       align: I
     }));

@@ -26,11 +26,11 @@ let O = [Chunk981631.Z5c.ME, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.
       renderDiscoveryButton: _,
       isGuildBarScrolling: y
     } = e, {
-      enabled: j
+      enabled: v
     } = (0, u.WX)({
       location: "orbs_discovery_onboarding_coachmark"
     }), {
-      shouldShow: v,
+      shouldShow: j,
       questId: C,
       onClose: x,
       onCtaClick: E,
@@ -74,7 +74,7 @@ let O = [Chunk981631.Z5c.ME, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.
         onDiscoveryButtonClick: f.dG4
       }
     })({
-      isVirtualCurrencyEnabled: j,
+      isVirtualCurrencyEnabled: v,
       onShowCoachmarkHandler: (0, d.O5)({
         targetElementRef: t,
         scrollToBottom: n
@@ -93,7 +93,7 @@ let O = [Chunk981631.Z5c.ME, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.
       targetElementRef: t,
       targetQuestId: C,
       renderDiscoveryButton: _,
-      showingCoachmark: v,
+      showingCoachmark: j,
       isGuildBarScrolling: y,
       onDiscoveryButtonClick: S,
       innerCoachmarkProps: I

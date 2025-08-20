@@ -56,7 +56,7 @@ function m(e) {
       o.S.unsubscribe(d.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
-  let y = p.intl.string(p.t.h850Sk);
+  let _ = p.intl.string(p.t.h850Sk);
   return (0, r.jsx)(l.yRy, {
     targetElementRef: b,
     shouldShow: m,
@@ -77,9 +77,9 @@ function m(e) {
       return (0, r.jsx)(a.ZP.Icon, f(h({}, e), {
         ref: b,
         onClick: () => g(e => !e),
-        tooltip: i ? null : y,
+        tooltip: i ? null : _,
         icon: n === u.iN.NO_MESSAGES ? l.owu : l.Dkj,
-        "aria-label": y,
+        "aria-label": _,
         selected: i
       }))
     }

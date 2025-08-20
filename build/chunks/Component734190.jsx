@@ -230,7 +230,7 @@ let T = Chunk647438.memo(function(e) {
                 userCount: F,
                 video: D,
                 channel: t
-              }) : null, (0, _.Z)(L) ? (0, r.jsx)(j.Z, {
+              }) : null, (0, _.Z)(L) ? (0, r.jsx)(v.Z, {
                 mentionsCount: L,
                 isMentionLowImportance: k
               }) : null]
@@ -238,7 +238,7 @@ let T = Chunk647438.memo(function(e) {
           })
         }))]
       })
-    }), (0, r.jsx)(v.Z, {
+    }), (0, r.jsx)(j.Z, {
       channel: t,
       collapsed: !P,
       collapsedMax: 6,

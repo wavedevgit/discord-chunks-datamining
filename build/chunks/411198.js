@@ -5,20 +5,19 @@ require.d(exports, {
   $5: () => y,
   B3: () => O,
   Ee: () => p,
-  Jh: () => A,
-  Q0: () => v,
+  Jh: () => S,
   Qs: () => b,
   R: () => E,
-  Rj: () => T,
-  cL: () => N,
-  dS: () => C,
-  e: () => I,
+  Rj: () => I,
+  cL: () => C,
+  dS: () => A,
+  e: () => v,
   lM: () => _,
   rk: () => m,
   sp: () => g,
   wD: () => h,
-  yS: () => S,
-  z$: () => R
+  yS: () => T,
+  z$: () => N
 }), require("./953529.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -71,7 +70,7 @@ function _(e) {
 }
 
 function p(e, t, n) {
-  var r, i, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, T, S, A, C, N, R, P, D, L;
+  var r, i, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, T, S, A, C, N, R, w, x, L;
   return (0, o.oI)(s.VI, n, {
     id: e.id,
     joinedAt: t.joinedAt,
@@ -106,11 +105,11 @@ function p(e, t, n) {
     maxMembers: null != (C = e.max_members) ? C : s.Cx.maxMembers,
     nsfwLevel: null != (N = e.nsfw_level) ? N : s.Cx.nsfwLevel,
     ownerConfiguredContentLevel: null != (R = e.owner_configured_content_level) ? R : null,
-    hubType: null != (P = e.hub_type) ? P : null,
-    latestOnboardingQuestionId: null != (D = e.latest_onboarding_question_id) ? D : null,
+    hubType: null != (w = e.hub_type) ? w : null,
+    latestOnboardingQuestionId: null != (x = e.latest_onboarding_question_id) ? x : null,
     profile: null != (L = e.profile) ? L : null,
-    premiumFeatures: null != e.premium_features ? w(e.premium_features) : null,
-    moderatorReporting: null != e.moderator_reporting ? x(e.moderator_reporting) : null
+    premiumFeatures: null != e.premium_features ? P(e.premium_features) : null,
+    moderatorReporting: null != e.moderator_reporting ? D(e.moderator_reporting) : null
   })
 }
 
@@ -155,7 +154,7 @@ function E(e, t) {
 }
 
 function b(e) {
-  return R({
+  return N({
     id: e.id,
     name: e.name,
     description: e.description,
@@ -174,7 +173,7 @@ function b(e) {
 
 function y(e) {
   var t, n;
-  return R({
+  return N({
     id: e.id,
     name: e.name,
     description: e.description,
@@ -187,7 +186,7 @@ function y(e) {
 
 function O(e) {
   var t;
-  return R({
+  return N({
     id: e.id,
     name: e.name,
     icon: null != (t = e.icon) ? t : null
@@ -195,20 +194,8 @@ function O(e) {
 }
 
 function v(e) {
-  var t, n, r;
-  return R({
-    id: e.id,
-    name: e.name,
-    icon: null != (t = e.icon) ? t : null,
-    description: null != (n = e.description) ? n : null,
-    splash: null != (r = e.splash) ? r : null,
-    features: (0, a.G)(e.features)
-  })
-}
-
-function I(e) {
   var t, n, r, i;
-  return R({
+  return N({
     id: e.guildId,
     name: null != (t = e.name) ? t : "",
     icon: null != (n = e.icon) ? n : null,
@@ -218,9 +205,9 @@ function I(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   var t, n, r, i;
-  return R({
+  return N({
     id: e.id,
     name: e.name,
     icon: null != (t = e.icon) ? t : null,
@@ -231,9 +218,9 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   var t, n, r, i;
-  return R({
+  return N({
     id: e.id,
     name: e.name,
     icon: null != (t = e.icon) ? t : null,
@@ -244,9 +231,9 @@ function S(e) {
   })
 }
 
-function A(e) {
+function S(e) {
   var t, n, r, i, o, l;
-  return P({
+  return R({
     id: e.id,
     name: e.name || "",
     description: e.description || null,
@@ -288,7 +275,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   var t;
   return {
     id: e.id,
@@ -312,7 +299,7 @@ function C(e) {
     vanity_url_code: null != (t = e.vanityURLCode) ? t : null,
     premium_tier: e.premiumTier,
     premium_progress_bar_enabled: e.premiumProgressBarEnabled,
-    premium_features: null != e.premiumFeatures ? D(e.premiumFeatures) : null,
+    premium_features: null != e.premiumFeatures ? w(e.premiumFeatures) : null,
     system_channel_flags: e.systemChannelFlags,
     discovery_splash: e.discoverySplash,
     rules_channel_id: e.rulesChannelId,
@@ -327,28 +314,28 @@ function C(e) {
     hub_type: e.hubType,
     latest_onboarding_question_id: e.latestOnboardingQuestionId,
     profile: e.profile,
-    moderator_reporting: null != e.moderatorReporting ? L(e.moderatorReporting) : null,
+    moderator_reporting: null != e.moderatorReporting ? x(e.moderatorReporting) : null,
     incidents_data: null
   }
 }
 
-function N(e) {
+function C(e) {
   let t = f(u({}, e), {
     features: (0, a.G)(e.features),
     joinedAt: null != e.joinedAt ? new Date(e.joinedAt) : null
   });
-  return delete t.roles, delete t.member, P(t)
+  return delete t.roles, delete t.member, R(t)
+}
+
+function N(e) {
+  return R(u({}, s.Cx, e))
 }
 
 function R(e) {
-  return P(u({}, s.Cx, e))
-}
-
-function P(e) {
   return (0, o.bk)(s.VI, e)
 }
 
-function w(e) {
+function P(e) {
   return {
     features: e.features,
     additionalEmojiSlots: e.additional_emoji_slots,
@@ -357,7 +344,7 @@ function w(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   return {
     features: e.features,
     additional_emoji_slots: e.additionalEmojiSlots,
@@ -366,14 +353,14 @@ function D(e) {
   }
 }
 
-function x(e) {
+function D(e) {
   return {
     moderatorReportingEnabled: e.moderator_reporting_enabled,
     moderatorReportChannelId: e.moderator_report_channel_id
   }
 }
 
-function L(e) {
+function x(e) {
   return {
     moderator_reporting_enabled: e.moderatorReportingEnabled,
     moderator_report_channel_id: e.moderatorReportChannelId

@@ -52,7 +52,7 @@ function I(e) {
     var e, t;
     return null != (t = null == (e = p.Z.getGuild(n.guild_id)) ? true : e.features.has(C.oNc.COMMUNITY)) && t
   });
-  if ((0, O.Z)(L)) return (0, r.jsx)(v.Z, {
+  if ((0, O.Z)(L)) return (0, r.jsx)(j.Z, {
     mentionsCount: L,
     isMentionLowImportance: k
   });
@@ -77,7 +77,7 @@ function I(e) {
     children: (0, o.NGo)(z)
   });
   let K = null != (t = null == N ? true : N.length) ? t : 0;
-  return null != w && w && F ? (0, r.jsx)(j.Z, {
+  return null != w && w && F ? (0, r.jsx)(v.Z, {
     userCount: K,
     video: B || V,
     channel: n

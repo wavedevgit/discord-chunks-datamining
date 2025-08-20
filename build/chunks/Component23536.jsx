@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 23536, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => _
 }), require("./784620.js"), require("./973216.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,12 +19,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx");
 let b = [];
 
-function y(e) {
+function _(e) {
   let {
     channel: t,
-    onJump: y
+    onJump: _
   } = e, {
-    items: _,
+    items: y,
     state: C
   } = (0, l.cj)([p.Z], () => {
     var e, n;
@@ -33,7 +33,7 @@ function y(e) {
       items: null != (e = null == r ? true : r.items) ? e : b,
       state: null != (n = null == r ? true : r.state) ? n : p.M.LOADING
     }
-  }), x = i.useMemo(() => _.map(e => e.message), [_]), v = (0, l.e7)([h.ZP], () => h.ZP.hasUnreadPins(t.id));
+  }), x = i.useMemo(() => y.map(e => e.message), [y]), v = (0, l.e7)([h.ZP], () => h.ZP.hasUnreadPins(t.id));
   i.useEffect(() => {
     v && s.Z.ackPins(t.id)
   }, [v, t.id]), (0, c.ZP)(() => {
@@ -47,9 +47,9 @@ function y(e) {
     j = i.useCallback(() => {
       var e;
       s.Z.fetchPins(t.id, {
-        before: null == (e = _.at(false)) ? true : e.pinnedAt
+        before: null == (e = y.at(false)) ? true : e.pinnedAt
       })
-    }, [t.id, _]),
+    }, [t.id, y]),
     E = (0, l.e7)([d.Z], () => (0, a.ap)(d.Z.theme));
   return (0, r.jsx)(o.VqE, {
     "aria-label": g.intl.string(g.t["mp1N//"]),
@@ -61,7 +61,7 @@ function y(e) {
       hasMore: C === p.M.LOADED_HAS_MORE,
       analyticsName: "Channel Pins",
       renderEmptyState: function() {
-        if (_.length > 0) return;
+        if (y.length > 0) return;
         let e = g.intl.string(t.isPrivate() ? g.t.rhqcbG : g.t.fmyaWF),
           i = E ? n(306059) : n(281485);
         return (0, r.jsx)(f.nH, {
@@ -76,7 +76,7 @@ function y(e) {
       onCloseMessage: function(e, n) {
         null != e && (n.shiftKey ? s.Z.unpinMessage(t, e.id) : m.Z.confirmUnpin(t, e))
       },
-      onJump: y,
+      onJump: _,
       loadMore: j,
       getProTip: function() {
         return t.isPrivate() ? g.intl.string(g.t["3dLGAg"]) : g.intl.string(g.t.KTbRcn)

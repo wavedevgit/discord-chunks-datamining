@@ -33,20 +33,20 @@ function v(e) {
   }), a = (0, h.Kt)(), {
     verifyAgreementButtonText: c,
     verifyGateDescription: v
-  } = (0, h.a1)((0, m.Y2)(t) ? _.L0.NSFW_SERVER : _.L0.NSFW_CHANNEL), O = i.useCallback(() => {
+  } = (0, h.a1)((0, m.Y2)(t) ? y.L0.NSFW_SERVER : y.L0.NSFW_CHANNEL), O = i.useCallback(() => {
     null != t && u.Z.nsfwReturnToSafety(t.id)
   }, [t]), j = i.useCallback(() => {
     null != t && u.Z.nsfwAgree(t.id)
   }, [t]), E = i.useCallback(() => {
     d.Z.showAgeVerificationGetStartedModal(p.cU.NSFW_GUILD)
-  }, []), S = (0, m.Y2)(t), P = C.intl.string(S ? C.t.xi46lp : C.t.ZmwvDQ);
+  }, []), S = (0, m.Y2)(t), I = C.intl.string(S ? C.t.xi46lp : C.t.ZmwvDQ);
   return a ? (0, r.jsx)(f.Z, {
     guildId: null == t ? true : t.id,
     channelId: n,
     modalType: p.it.NSFW_CHANNEL_AGE_VERIFY,
     onAgree: E,
     onDisagree: O,
-    title: P,
+    title: I,
     description: v,
     agreement: c,
     agreementButtonColor: s.zx.Colors.BRAND,
@@ -60,7 +60,7 @@ function v(e) {
     onDisagree: O,
     title: C.intl.string(S ? C.t["H0SG/v"] : C.t.NEabBQ),
     description: C.intl.format(S ? C.t["6++3cX"] : C.t["2kHZen"], {
-      helpURL: b.Z.getArticleURL(y.BhN.NSFW_AGE_GATING)
+      helpURL: b.Z.getArticleURL(_.BhN.NSFW_AGE_GATING)
     }),
     agreement: null,
     disagreement: C.intl.string(C.t["/g10LC"]),
@@ -71,7 +71,7 @@ function v(e) {
     modalType: p.it.NSFW_CHANNEL_VERIFIED,
     onAgree: j,
     onDisagree: O,
-    title: P,
+    title: I,
     description: C.intl.string(S ? C.t.ZtuRtr : C.t.E4Cd5O),
     agreement: C.intl.string(C.t.wVq7ur),
     disagreement: C.intl.string(C.t["/g10LC"])

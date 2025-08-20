@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 705563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,18 +20,18 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk482722 = require("./482722.js");
 
-function y(e) {
+function _(e) {
   let {
     channelId: t,
     showProfile: n = false,
-    showTrailingDivider: y = false
-  } = e, _ = d.default.cast(t), {
+    showTrailingDivider: _ = false
+  } = e, y = d.default.cast(t), {
     joinRequest: C,
     isModmin: x,
     guildId: v,
     maxMembers: O
   } = (0, i.cj)([p.Z, c.Z, u.Z], () => {
-    let e = p.Z.getRequest(_),
+    let e = p.Z.getRequest(y),
       t = c.Z.getGuild(null == e ? true : e.guildId);
     return {
       joinRequest: e,
@@ -41,8 +41,8 @@ function y(e) {
     }
   }), j = (0, i.e7)([s.Z], () => null != v ? s.Z.getMemberCount(v) : 0), E = null != O && (null != j ? j : 0) >= O, {
     approveRequest: S,
-    rejectRequest: P,
-    submitting: I
+    rejectRequest: I,
+    submitting: P
   } = (0, f.s)(null == C ? true : C.guildId, null == C ? true : C.userId, null == C ? true : C.joinRequestId);
   return null != C && C.applicationStatus === h.wB.SUBMITTED && x ? (0, r.jsxs)("div", {
     className: b.buttons,
@@ -73,7 +73,7 @@ function y(e) {
           size: "sm",
           text: g.intl.string(g.t.BzjDQE)
         }, e), n = n = {
-          loading: I,
+          loading: P,
           onClick: S,
           disabled: E
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -91,8 +91,8 @@ function y(e) {
       variant: "critical-primary",
       size: "sm",
       text: g.intl.string(g.t.hDtbs7),
-      onClick: P,
-      disabled: I || C.applicationStatus !== h.wB.SUBMITTED
+      onClick: I,
+      disabled: P || C.applicationStatus !== h.wB.SUBMITTED
     }), n && (0, r.jsx)(l.zxk, {
       onClick: () => {
         (0, o.openUserProfileModal)({
@@ -103,6 +103,6 @@ function y(e) {
       variant: "secondary",
       size: "sm",
       text: g.intl.string(g.t.iXAna2)
-    }), y && (0, r.jsx)(a.ZP.Divider, {})]
+    }), _ && (0, r.jsx)(a.ZP.Divider, {})]
   }) : null
 }

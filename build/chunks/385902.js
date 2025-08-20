@@ -45,16 +45,16 @@ function O(e, t) {
   let O = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
     _ = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
     y = null != (b = (0, u.Z)(e)) && b,
-    j = (0, c.q8)(e, t),
-    v = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
-    C = (null == v || null == (n = v.unlockedPowerups) ? true : n[i.A$]) != null,
-    x = null == v || null == (d = v.allPowerups) ? true : d[i.A$],
+    v = (0, c.q8)(e, t),
+    j = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
+    C = (null == j || null == (n = j.unlockedPowerups) ? true : n[i.A$]) != null,
+    x = null == j || null == (d = j.allPowerups) ? true : d[i.A$],
     E = null == x ? true : x.storeRemovalDate,
-    S = null == v || null == (h = v.allPowerups) ? true : h[i.XW],
+    S = null == j || null == (h = j.allPowerups) ? true : h[i.XW],
     {
       onActivate: I
     } = (0, f._C)(e, S),
-    P = !_ && y && j && C && null != x && null != E && null != S && null != O,
+    P = !_ && y && v && C && null != x && null != E && null != S && null != O,
     N = r.useCallback(e => {
       I(e)
     }, [I]),

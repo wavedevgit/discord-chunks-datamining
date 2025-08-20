@@ -32,21 +32,21 @@ function S(e) {
     channel: t,
     idle: n,
     whichPopoutIsOpen: S,
-    setWhichPopoutIsOpen: P
-  } = e, I = (0, l.e7)([u.ZP], () => u.ZP.isLaunchingActivity()), Z = (0, p.KF)(t.id), T = (0, p.g5)(Z), N = Z !== p.jy.CAN_LAUNCH || I, {
+    setWhichPopoutIsOpen: I
+  } = e, P = (0, l.e7)([u.ZP], () => u.ZP.isLaunchingActivity()), Z = (0, p.KF)(t.id), T = (0, p.g5)(Z), N = Z !== p.jy.CAN_LAUNCH || P, {
     isHovered: A,
     setIsHovered: w,
     onMouseEnter: R,
     onMouseLeave: M
-  } = (0, C.Z)(200, 300), k = (0, d.p)({
+  } = (0, C.Z)(200, 300), D = (0, d.p)({
     surface: s.eR.VOICE_LAUNCHER
-  }), D = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), L = !N, U = i.useCallback(e => {
+  }), L = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), k = !N, U = i.useCallback(e => {
     "focus" !== e.type && R()
   }, [R]), B = (0, c.bp)() === O.IlC.POPOUT, {
-    parentAnalyticsLocation: F,
-    newestAnalyticsLocation: H
-  } = (0, g.ZP)(), G = i.useCallback(() => {
-    (0, y.v)(F, y.d.ACTIVITY), (0, b.Z)({
+    parentAnalyticsLocation: G,
+    newestAnalyticsLocation: F
+  } = (0, g.ZP)(), H = i.useCallback(() => {
+    (0, _.v)(G, _.d.ACTIVITY), (0, b.Z)({
       context: null != t ? {
         type: "channel",
         channel: t
@@ -54,13 +54,13 @@ function S(e) {
         type: "contextless"
       },
       openInPopout: B,
-      analyticsLocation: H
+      analyticsLocation: F
     })
-  }, [t, B, H, F]), V = [];
+  }, [t, B, F, G]), V = [];
   N || V.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !N && V.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), N || V.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let z = i.useRef(false),
     W = i.useRef(null);
-  return (0, r.jsx)(_.ZP, {
+  return (0, r.jsx)(y.ZP, {
     contentTypes: V,
     children: e => {
       let {
@@ -77,14 +77,14 @@ function S(e) {
         align: "center",
         spacing: 16,
         onRequestClose: () => {
-          w(false), null == P || P(true)
+          w(false), null == I || I(true)
         },
         renderPopout: e => {
           let {
             closePopout: n,
             setPopoutRef: i
           } = e;
-          return L ? (0, r.jsx)(f.m, {
+          return k ? (0, r.jsx)(f.m, {
             ref: e => {
               null == i || i(e)
             },
@@ -96,9 +96,9 @@ function S(e) {
             onClick: () => l(j.L.UNKNOWN)
           }) : (0, r.jsx)(r.Fragment, {})
         },
-        children: () => (0, r.jsx)(_.Xf, {
+        children: () => (0, r.jsx)(y.Xf, {
           contentType: a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE,
-          latestVersion: k,
+          latestVersion: D,
           children: e => {
             let {
               visibleContent: t,
@@ -135,10 +135,10 @@ function S(e) {
                     children: (0, r.jsx)(x.Z, {
                       disabled: N,
                       "aria-label": T,
-                      label: L ? true : T,
-                      isActivityActive: D,
+                      label: k ? true : T,
+                      isActivityActive: L,
                       onClick: () => {
-                        G(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(j.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(j.L.TAKE_ACTION)
+                        H(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(j.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(j.L.TAKE_ACTION)
                       },
                       onMouseEnter: U,
                       onMouseLeave: M

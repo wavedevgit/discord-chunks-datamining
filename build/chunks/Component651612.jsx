@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 651612, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,11 +20,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk332139 = require("./332139.js");
 
-function _(e) {
+function y(e) {
   var {
     channelId: t,
     className: n
-  } = e, _ = function(e, t) {
+  } = e, y = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -72,15 +72,15 @@ function _(e) {
     handler: E
   });
   let S = x ? b.intl.string(b.t["5MstTk"]) : b.intl.string(b.t.kkKapK),
-    P = [S];
-  j > 0 && P.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
+    I = [S];
+  j > 0 && I.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
     mentionCount: j
-  })), O > 0 && P.push(b.intl.string(b.t.x5zAGR));
-  let I = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
+  })), O > 0 && I.push(b.intl.string(b.t.x5zAGR));
+  let P = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
     Z = j > 0 ? j : O,
     T = Z > 0;
   return (0, r.jsxs)("div", {
-    className: y.wrapper,
+    className: _.wrapper,
     children: [(0, r.jsx)(c.d, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -103,15 +103,15 @@ function _(e) {
       buttonRef: C,
       onClick: v,
       label: S,
-      "aria-label": P.join(", "),
+      "aria-label": I.join(", "),
       tooltipPosition: "top",
-      iconComponent: I === m.MI.NO_CHAT ? o.sXD : o.hic,
+      iconComponent: P === m.MI.NO_CHAT ? o.sXD : o.hic,
       themeable: true,
       className: n
-    }, _)), T ? (0, r.jsx)(s.Z, {
+    }, y)), T ? (0, r.jsx)(s.Z, {
       hasMentions: j > 0,
       truncatedCount: Z > 99 ? "99+" : Z,
-      className: y.badge
+      className: _.badge
     }) : null]
   })
 }

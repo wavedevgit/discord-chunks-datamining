@@ -152,6 +152,7 @@ function P(e) {
     roleSubscriptionData: e.role_subscription_data,
     purchaseNotification: e.purchase_notification,
     poll: null == e.poll ? true : (0, l.Z)(e.poll),
+    sharedClientTheme: e.shared_client_theme,
     potions: e.potions,
     giftInfo: null == G ? true : G,
     giftingPrompt: B,

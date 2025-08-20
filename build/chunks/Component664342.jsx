@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function P(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function P(e) {
   return e
 }
 
-function I(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -78,7 +78,7 @@ function Z(e) {
     autoInvert: false,
     onRequestClose: () => a(false),
     renderPopout: function(e) {
-      return (0, r.jsx)(T, I(P({}, e), {
+      return (0, r.jsx)(T, P(I({}, e), {
         channel: t
       }))
     },
@@ -86,7 +86,7 @@ function Z(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsx)(_.ZP.Icon, I(P({}, e), {
+      return (0, r.jsx)(y.ZP.Icon, P(I({}, e), {
         ref: o,
         onClick: s,
         tooltip: n ? null : c,
@@ -103,7 +103,7 @@ function T(e) {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, y = (0, c.Z)(t, "Sidebar Overflow"), _ = (0, d.Z)(t), v = (0, f.Z)(t), O = (0, m.Z)(t), j = (0, a.Z)(t), P = (0, u.Z)(t), I = (0, h.Z)(t.id), Z = (0, p.Z)(t), T = (0, s.Z)(t), N = (0, o.Z)(t), A = (0, b.Z)({
+  } = e, _ = (0, c.Z)(t, "Sidebar Overflow"), y = (0, d.Z)(t), v = (0, f.Z)(t), O = (0, m.Z)(t), j = (0, a.Z)(t), I = (0, u.Z)(t), P = (0, h.Z)(t.id), Z = (0, p.Z)(t), T = (0, s.Z)(t), N = (0, o.Z)(t), A = (0, b.Z)({
     id: t.id,
     label: S.intl.string(S.t.DQ797u)
   }), w = (0, g.Z)(t);
@@ -117,7 +117,7 @@ function T(e) {
     "aria-label": S.intl.string(S.t["1NBjqa"]),
     onSelect: i,
     children: [(0, r.jsxs)(l.kSQ, {
-      children: [y, (0, r.jsx)(l.sNh, {
+      children: [_, (0, r.jsx)(l.sNh, {
         id: "open",
         label: S.intl.string(S.t.IxVmZm),
         action: R
@@ -125,7 +125,7 @@ function T(e) {
     }), (0, r.jsxs)(l.kSQ, {
       children: [v, O]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [Z, _, I]
+      children: [Z, y, P]
     }), (0, r.jsxs)(l.kSQ, {
       children: [(0, r.jsx)(l.sNh, {
         id: "search",
@@ -147,7 +147,7 @@ function T(e) {
         }
       })]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [w, j, P, T]
+      children: [w, j, I, T]
     }), (0, r.jsxs)(l.kSQ, {
       children: [N, A]
     })]
@@ -166,10 +166,10 @@ function N(e) {
       channel: t
     }) : null, (0, r.jsx)(Z, {
       channel: t
-    }), (0, r.jsx)(_.ZP.Icon, {
+    }), (0, r.jsx)(y.ZP.Icon, {
       icon: l.Dio,
       tooltip: S.intl.string(S.t.cpT0Cg),
-      onClick: () => (0, j.vN)((0, y.e)(t), null != n ? n : t.parent_id)
+      onClick: () => (0, j.vN)((0, _.e)(t), null != n ? n : t.parent_id)
     })]
   })
 }

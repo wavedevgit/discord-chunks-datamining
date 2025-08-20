@@ -114,12 +114,12 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     richValue: g,
     className: j,
     id: S,
-    required: P,
-    disabled: I,
+    required: I,
+    disabled: P,
     accessibilityLabel: M,
-    channel: D,
-    type: G,
-    focused: Y,
+    channel: L,
+    type: H,
+    focused: q,
     onChange: en,
     onResize: eo,
     onBlur: es,
@@ -132,107 +132,107 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     maxCharacterCount: em,
     placeholder: eg,
     "aria-describedby": eb,
-    "aria-labelledby": ey,
-    setEditorRef: e_,
+    "aria-labelledby": e_,
+    setEditorRef: ey,
     autoCompletePosition: eC,
     children: ex,
     disableThemedBackground: ev = false,
     emojiPickerCloseOnModalOuterClick: eO,
     parentModalKey: ej
-  } = e, eE = v.Z.useField("channelDrafts")[D.id], eS = null != (l = null == eE ? true : eE.title) ? l : "", eP = null == eE ? true : eE.heroFile, eI = null == (o = null == eE ? true : eE.publish) || o, eZ = null == (u = null == eE ? true : eE.createThread) || u;
-  s()(null != G, "chat input type must be set");
+  } = e, eE = v.Z.useField("channelDrafts")[L.id], eS = null != (l = null == eE ? true : eE.title) ? l : "", eI = null == eE ? true : eE.heroFile, eP = null == (o = null == eE ? true : eE.publish) || o, eZ = null == (u = null == eE ? true : eE.createThread) || u;
+  s()(null != H, "chat input type must be set");
   let {
     analyticsLocations: eT
-  } = (0, _.ZP)(y.Z.CHANNEL_TEXT_AREA), eN = (0, H.qz)(t), eA = i.useRef(null), ew = i.useRef(null), eR = i.useRef(null), eM = i.useRef(null);
-  null == e_ || e_(ew.current);
+  } = (0, y.ZP)(_.Z.CHANNEL_TEXT_AREA), eN = (0, F.qz)(t), eA = i.useRef(null), ew = i.useRef(null), eR = i.useRef(null), eM = i.useRef(null);
+  null == ey || ey(ew.current);
   let {
-    activeCommand: ek
+    activeCommand: eD
   } = (0, d.cj)([C.Z], () => {
     var e, t;
     return {
-      activeCommand: (null == (e = G.commands) ? true : e.enabled) ? C.Z.getActiveCommand(D.id) : null,
-      activeCommandSection: (null == (t = G.commands) ? true : t.enabled) ? C.Z.getActiveCommandSection(D.id) : null
+      activeCommand: (null == (e = H.commands) ? true : e.enabled) ? C.Z.getActiveCommand(L.id) : null,
+      activeCommandSection: (null == (t = H.commands) ? true : t.enabled) ? C.Z.getActiveCommandSection(L.id) : null
     }
   }), {
-    isLurking: eD,
-    isPendingMember: eL,
+    isLurking: eL,
+    isPendingMember: ek,
     disabled: eU,
     canAttachFiles: eB,
-    canEveryoneSendMessages: eF
-  } = (0, H.TE)(D, G, ek, I), eH = !N.dN.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eG = !eH || !(null == (n = G.commands) ? true : n.enabled) || !Y || p !== W.GI, eV = (0, Z.Z)(), {
+    canEveryoneSendMessages: eG
+  } = (0, F.TE)(L, H, eD, P), eF = !N.dN.useSetting() && !(0, D.isAndroidWeb)() && null != window.ResizeObserver, eH = !eF || !(null == (n = H.commands) ? true : n.enabled) || !q || p !== W.GI, eV = (0, Z.Z)(), {
     fontSize: ez
   } = (0, d.cj)([b.Z], () => ({
     fontSize: b.Z.fontSize,
     isSubmitButtonEnabled: b.Z.isSubmitButtonEnabled
-  })), eW = (0, d.e7)([w.Z], () => w.Z.isEnabled()), eq = (0, T.NE)(D);
-  (0, H.hJ)(G, eU);
+  })), eW = (0, d.e7)([w.Z], () => w.Z.isEnabled()), eY = (0, T.NE)(L);
+  (0, F.hJ)(H, eU);
   let {
-    eventEmitter: eY,
+    eventEmitter: eq,
     handleEditorSelectionChanged: eK
-  } = (0, H.x2)(ew, p, g), eX = i.useCallback(e => {
+  } = (0, F.x2)(ew, p, g), eX = i.useCallback(e => {
     var t, n;
     let r = [],
       i = eS.length > 0 ? eS : e.value.length > 0 ? e.value.slice(0, 80) : K.intl.string(K.t["7Xm5QE"]);
-    if (null == eP) return (0, v.c)(D.id, {
+    if (null == eI) return (0, v.c)(L.id, {
       title: "",
       heroFile: null
     }), null == (n = ew.current) || n.blur(), ed($(J({}, e), {
       announcementSendOptions: {
-        createThread: eq && eZ,
+        createThread: eY && eZ,
         threadName: i,
-        publish: eI
+        publish: eP
       }
     }));
     r.push({
       type: m.re.MEDIA_GALLERY,
-      items: [ee("attachment://".concat(et(eP.name)), false)],
-      id: "".concat(q.Vm)
+      items: [ee("attachment://".concat(et(eI.name)), false)],
+      id: "".concat(Y.Vm)
     }), e.value.length > 0 && r.push({
       type: m.re.TEXT_DISPLAY,
       content: e.value,
-      id: "".concat(q.Kb)
+      id: "".concat(Y.Kb)
     });
-    let l = R.Z.getUploads(D.id, A.d.ChannelMessage),
-      a = l.filter(e => (e.isImage || e.isVideo) && e.filename !== (null == eP ? true : eP.name)),
-      o = l.filter(e => !e.isImage && !e.isVideo && e.filename !== (null == eP ? true : eP.name)),
+    let l = R.Z.getUploads(L.id, A.d.ChannelMessage),
+      a = l.filter(e => (e.isImage || e.isVideo) && e.filename !== (null == eI ? true : eI.name)),
+      o = l.filter(e => !e.isImage && !e.isVideo && e.filename !== (null == eI ? true : eI.name)),
       s = a.map(e => ee("attachment://".concat(et(e.filename)), false));
     return s.length > 0 && r.push({
       type: m.re.MEDIA_GALLERY,
       items: s,
-      id: "".concat(q.m2)
+      id: "".concat(Y.m2)
     }), o.forEach((e, t) => {
       r.push({
         type: m.re.FILE,
         file: ee("attachment://".concat(et(e.filename)), false).media,
-        id: "".concat(q.kn + t),
+        id: "".concat(Y.kn + t),
         name: et(e.filename),
         size: null
       })
-    }), (0, v.c)(D.id, {
+    }), (0, v.c)(L.id, {
       title: "",
       heroFile: null
     }), null == (t = ew.current) || t.blur(), ed($(J({}, e), {
       components: r,
       announcementSendOptions: {
-        createThread: eq && eZ,
+        createThread: eY && eZ,
         threadName: i,
-        publish: eI
+        publish: eP
       }
     }))
-  }, [ed, eS, eP, D.id, eZ, eI, eq]), {
+  }, [ed, eS, eI, L.id, eZ, eP, eY]), {
     submit: eQ,
     handleSubmit: eJ
-  } = (0, H.bL)(eX, G, ew, eM, D.id), {
+  } = (0, F.bL)(eX, H, ew, eM, L.id), {
     autocompleteRef: e$,
     handleMaybeShowAutocomplete: e0,
     handleHideAutocomplete: e1
-  } = (0, H.jx)(), e2 = i.useCallback(() => {
+  } = (0, F.jx)(), e2 = i.useCallback(() => {
     var e;
     return null == eM || null == (e = eM.current) ? true : e.hide()
   }, []), {
     editorHeight: e8,
     handleResize: e3
-  } = (0, H.oR)(eo), {
+  } = (0, F.oR)(eo), {
     handleTab: e4,
     handleEnter: e7,
     handleMoveSelection: e6
@@ -252,21 +252,21 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
         return !!(!n && (null == (i = t.current) ? true : i.onMoveSelection(r))) || (null == (l = e.current) ? true : l.onMoveSelection(r)) || false
       }, [n])
     }
-  }(e$, eA, eG), {
+  }(e$, eA, eH), {
     expressionPickerView: e5,
     shouldHideExpressionPicker: e9,
     handleAutocompleteVisibilityChange: te,
     handleOuterClick: tt
-  } = (0, H.iV)(G, eY, ew), tn = (0, H.ae)(ew), tr = (0, H.Sg)(eQ, G, ew), ti = (0, H.O1)({
+  } = (0, F.iV)(H, eq, ew), tn = (0, F.ae)(ew), tr = (0, F.Sg)(eQ, H, ew), ti = (0, F.O1)({
     editorRef: ew,
     disabled: eU,
     textValue: p,
-    channelId: D.id,
-    chatInputType: G,
+    channelId: L.id,
+    chatInputType: H,
     submit: eX
   });
-  (0, L.S)(eY, D.guild_id, D.id);
-  let [tl, ta] = i.useState(false), to = Y || tl || p.length > 0 || null != eP || eS.length > 0, {
+  (0, k.S)(eq, L.guild_id, L.id);
+  let [tl, ta] = i.useState(false), to = q || tl || p.length > 0 || null != eI || eS.length > 0, {
     editorHeaderHeight: ts,
     paddingTop: tc
   } = (0, h.q_F)({
@@ -291,15 +291,15 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     return () => clearTimeout(e)
   }, []), tg = i.useCallback(() => {
     var e;
-    if (null == eP) return;
-    let t = null == (e = R.Z.getUploads(D.id, G.drafts.type).find(e => e.filename === eP.name)) ? true : e.id;
-    null != t && f.Z.remove(D.id, t, A.d.ChannelMessage), (0, v.c)(D.id, {
+    if (null == eI) return;
+    let t = null == (e = R.Z.getUploads(L.id, H.drafts.type).find(e => e.filename === eI.name)) ? true : e.id;
+    null != t && f.Z.remove(L.id, t, A.d.ChannelMessage), (0, v.c)(L.id, {
       heroFile: null
     })
-  }, [D.id, eP, G.drafts.type]);
+  }, [L.id, eI, H.drafts.type]);
   return (0, r.jsx)(O.f6, {
-    value: eY,
-    children: (0, r.jsxs)(_.Gt, {
+    value: eq,
+    children: (0, r.jsxs)(y.Gt, {
       value: eT,
       children: [(0, r.jsxs)("div", {
         ref: eN,
@@ -321,12 +321,12 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                   height: ts,
                   paddingTop: tc
                 },
-                children: [null != eP ? (0, r.jsx)(ei, {
-                  file: eP,
+                children: [null != eI ? (0, r.jsx)(ei, {
+                  file: eI,
                   onRemoveHeroImage: tg
-                }) : null, null != eP ? null : (0, r.jsx)(ea, {
-                  channel: D,
-                  onImageUploaded: e => (0, v.c)(D.id, {
+                }) : null, null != eI ? null : (0, r.jsx)(ea, {
+                  channel: L,
+                  onImageUploaded: e => (0, v.c)(L.id, {
                     heroFile: e
                   }),
                   onFocus: () => ta(true)
@@ -337,7 +337,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                   className: X.titleInput,
                   placeholder: K.intl.string(K.t.Z8fYjI),
                   value: eS,
-                  onChange: e => (0, v.c)(D.id, {
+                  onChange: e => (0, v.c)(L.id, {
                     title: e.target.value
                   })
                 })]
@@ -349,16 +349,16 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                   children: (0, r.jsx)(B.Z, {
                     ref: ew,
                     id: S,
-                    focused: Y,
-                    useSlate: eH,
+                    focused: q,
+                    useSlate: eF,
                     textValue: p,
                     richValue: g,
                     disabled: eU,
                     placeholder: eg,
-                    required: P,
+                    required: I,
                     accessibilityLabel: M,
-                    isPreviewing: (eD || eL) && eF,
-                    channel: D,
+                    isPreviewing: (eL || ek) && eG,
+                    channel: L,
                     type: U.Ie.CREATE_ANNOUNCEMENT_POST,
                     canPasteFiles: eB,
                     uploadPromptCharacterCount: z.en1,
@@ -381,17 +381,17 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                     fontSize: ez,
                     spellcheckEnabled: eW,
                     canOnlyUseTextCommands: false,
-                    "aria-labelledby": ey
+                    "aria-labelledby": e_
                   })
                 })
               })]
             }), (0, r.jsx)("div", {
               className: X.attachmentsContainer,
               children: (0, r.jsx)(V.Z, {
-                channelId: D.id,
-                type: G,
+                channelId: L.id,
+                type: H,
                 canAttachFiles: eB,
-                ignoreFile: null == eP ? true : eP.name,
+                ignoreFile: null == eI ? true : eI.name,
                 smallAttachments: true
               })
             })]
@@ -403,11 +403,11 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           children: [(0, r.jsxs)("div", {
             className: X.footerPart,
             children: [(0, r.jsx)(el, {
-              channel: D
-            }), (0, r.jsx)(F.Z, {
+              channel: L
+            }), (0, r.jsx)(G.Z, {
               type: U.Ie.CREATE_ANNOUNCEMENT_POST,
               disabled: eU,
-              channel: D,
+              channel: L,
               handleSubmit: eJ,
               isEmpty: 0 === p.trim().length,
               showAllButtons: true
@@ -422,8 +422,8 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
               children: (0, r.jsx)(h.yRy, {
                 targetElementRef: tu,
                 renderPopout: () => (0, r.jsx)(er, {
-                  channelId: D.id,
-                  canCreateThread: eq
+                  channelId: L.id,
+                  canCreateThread: eY
                 }),
                 shouldShow: td,
                 autoInvert: true,
@@ -449,7 +449,7 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                       children: [(0, r.jsx)(h.Uuj, {
                         size: "xs",
                         color: "white"
-                      }), eq && eZ ? (0, r.jsx)(h.or_, {
+                      }), eY && eZ ? (0, r.jsx)(h.or_, {
                         size: "xxs",
                         color: "white",
                         className: X.subIcon
@@ -463,16 +463,16 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
         }), (0, r.jsx)(x.Z, {
           targetRef: eN,
           ref: e$,
-          channel: D,
+          channel: L,
           canMentionRoles: eh,
           canMentionChannels: ef,
-          useNewSlashCommands: eH,
+          useNewSlashCommands: eF,
           canOnlyUseTextCommands: false,
           canSendStickers: true,
           textValue: p,
-          focused: Y,
+          focused: q,
           expressionPickerView: e5,
-          type: G,
+          type: H,
           editorRef: ew,
           onSendMessage: eQ,
           onSendSticker: () => {},
@@ -483,11 +483,11 @@ let en = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
         }), ex]
       }), e9 ? null : (0, r.jsx)(E.Z, {
         positionTargetRef: eN,
-        type: G,
+        type: H,
         onSelectGIF: tr,
         onSelectEmoji: tn,
         onSelectSticker: ti,
-        channel: D,
+        channel: L,
         closeOnModalOuterClick: eO,
         parentModalKey: ej,
         position: "top",
@@ -560,7 +560,7 @@ function ei(e) {
       className: X.heroImage
     }), o ? (0, r.jsx)(j.ZP, {
       className: X.heroOverlay,
-      children: (0, r.jsx)(G.Z, {
+      children: (0, r.jsx)(H.Z, {
         tooltip: K.intl.string(K.t.VjC219),
         onClick: n,
         dangerous: true,
@@ -581,7 +581,7 @@ function el(e) {
     color: "transparent",
     look: "blank",
     onChange: e => {
-      (0, D.d5)(e.currentTarget.files, t, A.d.ChannelMessage, {
+      (0, L.d5)(e.currentTarget.files, t, A.d.ChannelMessage, {
         requireConfirm: true,
         origin: "file_picker"
       }), e.currentTarget.value = null
@@ -628,13 +628,13 @@ function ea(e) {
       onMouseOver: d,
       onMouseOut: m,
       onFocus: l,
-      children: [(0, r.jsx)(I.ZP, {
+      children: [(0, r.jsx)(P.ZP, {
         ref: a,
         onChange: o,
         "aria-hidden": true,
         tabIndex: false,
-        maxFileSizeBytes: Y.B,
-        onFileSizeError: () => (0, P.Z)(Y.B)
+        maxFileSizeBytes: q.B,
+        onFileSizeError: () => (0, I.Z)(q.B)
       }), (0, r.jsx)(h.FmF, {
         size: "md",
         color: s ? p.Z.colors.INTERACTIVE_ACTIVE : p.Z.colors.INTERACTIVE_NORMAL

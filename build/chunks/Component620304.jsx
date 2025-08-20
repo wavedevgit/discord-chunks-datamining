@@ -65,7 +65,7 @@ function P(e) {
     tooltipTypes: l,
     withMargin: P
   } = e, N = (0, y.Z)(t, "GuildPowerupsProgressBar"), w = (0, _.Z)(t.id), Z = i.useCallback(() => {
-    (0, j.Z)(t.id, f.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
+    (0, v.Z)(t.id, f.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
   }, [t.id]), T = (0, c.e7)([m.Z], () => {
     var e;
     return null != (e = m.Z.getCountForGuild(t.id)) ? e : 0
@@ -169,7 +169,7 @@ function P(e) {
     align: "top",
     shouldShow: true,
     closeOnScroll: true,
-    onRequestClose: () => U(v.L.INDIRECT_ACTION),
+    onRequestClose: () => U(j.L.INDIRECT_ACTION),
     animation: d.yRy.Animation.TRANSLATE,
     children: e => (0, r.jsx)("div", {
       ref: L,

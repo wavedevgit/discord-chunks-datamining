@@ -49,9 +49,9 @@ function E(e) {
     user: t,
     channel: n,
     onHide: E
-  } = e, S = (0, m.ZP)(t.id), P = (0, s.ZP)(), I = (0, a.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
+  } = e, S = (0, m.ZP)(t.id), I = (0, s.ZP)(), P = (0, a.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: Z
-  } = (0, u.ZP)(I ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), T = (0, h.ZB)({
+  } = (0, u.ZP)(P ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), T = (0, h.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
@@ -68,7 +68,7 @@ function E(e) {
         user: t,
         displayProfile: S,
         themeType: C.l.SIDEBAR,
-        themeOverride: P,
+        themeOverride: I,
         children: (0, r.jsx)(l.u2, {
           children: (0, r.jsxs)("div", {
             className: v.container,
@@ -88,21 +88,21 @@ function E(e) {
                   children: x.intl.string(x.t.b33pLC)
                 }), (0, r.jsx)(o.Text, {
                   variant: "text-sm/medium",
-                  children: x.intl.format(I ? x.t["8F+WNz"] : x.t["/cZp5u"], {
+                  children: x.intl.format(P ? x.t["8F+WNz"] : x.t["/cZp5u"], {
                     username: p.ZP.getName(n.guild_id, n.id, t)
                   })
                 })]
               }), (0, r.jsxs)(o.Kqy, {
                 align: "center",
-                children: [(0, r.jsx)(_.Z, {
-                  isBlocked: I,
+                children: [(0, r.jsx)(y.Z, {
+                  isBlocked: P,
                   onClick: () => {
                     E(), (0, f.pQ)(j({
-                      action: I ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+                      action: P ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                       analyticsLocations: Z
                     }, T))
                   }
-                }), (0, r.jsx)(y.Z, {
+                }), (0, r.jsx)(_.Z, {
                   userId: t.id,
                   onClick: () => {
                     E(), (0, f.pQ)(j({

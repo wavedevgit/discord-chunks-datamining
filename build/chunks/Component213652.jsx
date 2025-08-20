@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 213652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,12 +20,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk689598 = require("./689598.js");
 
-function _(e) {
+function y(e) {
   let {
     channel: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, o.ZP)(), _ = (0, l.e7)([f.Z], () => f.Z.getSelectedParticipant(t.id)), C = (null == _ ? true : _.type) === g.fO.STREAM, x = (0, l.e7)([p.Z], () => C ? p.Z.getActiveStreamForStreamKey(_.id) : null), {
+  } = (0, o.ZP)(), y = (0, l.e7)([f.Z], () => f.Z.getSelectedParticipant(t.id)), C = (null == y ? true : y.type) === g.fO.STREAM, x = (0, l.e7)([p.Z], () => C ? p.Z.getActiveStreamForStreamKey(y.id) : null), {
     ignoreSenderPreference: v
   } = u.Z.useExperiment({
     location: "ActionBarClipsButton"
@@ -37,7 +37,7 @@ function _(e) {
   } = (0, l.cj)([s.Z], () => ({
     viewerClippingAllowed: null != x && (s.Z.isViewerClippingAllowedForUser(x.ownerId) || v),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), E = s.Z.getSettings().clipsEnabled, S = (null == x ? true : x.ownerId) === h.default.getId(), P = !E || !(S || O) || j || null == _, I = i.useCallback(e => {
+  })), E = s.Z.getSettings().clipsEnabled, S = (null == x ? true : x.ownerId) === h.default.getId(), I = !E || !(S || O) || j || null == y, P = i.useCallback(e => {
     var t, n;
     return (0, r.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -70,12 +70,12 @@ function _(e) {
     }), t))
   }, []);
   return (0, r.jsx)(d.Z, {
-    className: y.actionBarButton,
+    className: _.actionBarButton,
     onClick: () => {
-      P || ((0, m.v)(n, m.d.CLIP), S ? (0, c.C1)() : (0, c.C1)(_.id))
+      I || ((0, m.v)(n, m.d.CLIP), S ? (0, c.C1)() : (0, c.C1)(y.id))
     },
-    disabled: P,
-    iconComponent: I,
+    disabled: I,
+    iconComponent: P,
     label: null == x ? b.intl.string(b.t.eg5qtb) : S || O ? E ? j ? true : b.intl.string(b.t.U4URzM) : b.intl.string(b.t.wSS1yM) : b.intl.string(b.t.aRifJS),
     grow: false
   })

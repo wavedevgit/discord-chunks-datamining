@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk149715 = require("./149715.js"),
   Chunk162130 = require("./162130.js");
 
-function _(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -140,7 +140,7 @@ class x extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "scaleAnimation", new o.Z.Value(0)), _(this, "spriteAnimation", new o.Z.Value(0)), _(this, "spriteOpacity", new o.Z.Value(0)), _(this, "widthAnimation", new o.Z.Value(0))
+    super(...e), y(this, "scaleAnimation", new o.Z.Value(0)), y(this, "spriteAnimation", new o.Z.Value(0)), y(this, "spriteOpacity", new o.Z.Value(0)), y(this, "widthAnimation", new o.Z.Value(0))
   }
 }
 
@@ -153,7 +153,7 @@ function v(e) {
     onClick: o,
     width: u,
     guildId: b
-  } = e, y = (0, p.ZP)(), _ = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), C = (0, s.e7)([h.Z], () => h.Z.isFocused()), v = n.map(e => {
+  } = e, _ = (0, p.ZP)(), y = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), C = (0, s.e7)([h.Z], () => h.Z.isFocused()), v = n.map(e => {
     var t, n;
     if (e.type !== m.fO.USER) return null;
     let {
@@ -164,12 +164,12 @@ function v(e) {
     } = e;
     return (0, r.jsx)(x, {
       className: g.participant,
-      width: (0, d.pxk)(_),
-      theme: y,
+      width: (0, d.pxk)(y),
+      theme: _,
       children: (0, r.jsx)(f.Z, {
         userId: l.id,
-        src: l.getAvatarURL(b, (0, d.pxk)(_), s && C),
-        size: _,
+        src: l.getAvatarURL(b, (0, d.pxk)(y), s && C),
+        size: y,
         muted: null != (t = null == a ? true : a.isVoiceMuted()) && t,
         deafen: null != (n = null == a ? true : a.isVoiceDeafened()) && n,
         speaking: s,

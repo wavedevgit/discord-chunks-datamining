@@ -66,7 +66,7 @@ function P(e, t) {
 }
 
 function N(e, t, n) {
-  return null != t && !!t && !(0, v.ig)(n, e.type)
+  return null != t && !!t && !(0, j.ig)(n, e.type)
 }
 
 function w(e, t) {
@@ -116,7 +116,7 @@ function T(e) {
     forceShowButtons: l,
     hasChannelInfo: o = false
   } = e;
-  if ((0, s.e7)([y.Z, j.Z], () => n || j.Z.getGuildId() === C.I_8 || !y.Z.can(C.Plq.MANAGE_CHANNELS, t) && !y.Z.can(C.Plq.MANAGE_ROLES, t) && !y.Z.can(C.Plq.MANAGE_WEBHOOKS, t) || (0, b.r8)(t.type) && !y.Z.can(C.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !y.Z.can(C.Plq.CONNECT, t) || !b.dF.has(t.type) || t.isModeratorReportChannel())) return null;
+  if ((0, s.e7)([y.Z, v.Z], () => n || v.Z.getGuildId() === C.I_8 || !y.Z.can(C.Plq.MANAGE_CHANNELS, t) && !y.Z.can(C.Plq.MANAGE_ROLES, t) && !y.Z.can(C.Plq.MANAGE_WEBHOOKS, t) || (0, b.r8)(t.type) && !y.Z.can(C.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !y.Z.can(C.Plq.CONNECT, t) || !b.dF.has(t.type) || t.isModeratorReportChannel())) return null;
 
   function d() {
     u.ZP.open(t.id)
@@ -158,21 +158,21 @@ function A(e) {
     forceShowButtons: h,
     hasChannelInfo: b = false
   } = e, {
-    entrypoints: j
+    entrypoints: v
   } = (0, p._k)({
     location: "channel_base"
-  }), v = (0, s.e7)([_.Z], () => _.Z.getGuild(t.getGuildId())), S = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, s.e7)([y.Z], () => (0, f.b)(y.Z, v, t, S)), Z = (0, s.e7)([y.Z], () => y.Z.can(C.Plq.CREATE_INSTANT_INVITE, t) ? x.intl.string(x.t.zJrgTE) : x.intl.string(x.t.Sd8Ix8)), T = j ? x.intl.string(x.t["EE+P0N"]) : Z, A = l.useRef(null);
+  }), j = (0, s.e7)([_.Z], () => _.Z.getGuild(t.getGuildId())), S = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, s.e7)([y.Z], () => (0, f.b)(y.Z, j, t, S)), Z = (0, s.e7)([y.Z], () => y.Z.can(C.Plq.CREATE_INSTANT_INVITE, t) ? x.intl.string(x.t.zJrgTE) : x.intl.string(x.t.Sd8Ix8)), T = v ? x.intl.string(x.t["EE+P0N"]) : Z, A = l.useRef(null);
   if (o || !w || t.isModeratorReportChannel()) return null;
 
   function R() {
-    if (null != v) {
+    if (null != j) {
       let e = O.Z.getAllActiveStreams().filter(e => e.state !== C.jm8.ENDED && e.channelId === t.id);
       (0, c.ZDy)(async () => {
         let {
           default: r
         } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
         return n => (0, i.jsx)(r, P(I({}, n), {
-          guild: v,
+          guild: j,
           channel: t,
           streamUserId: 1 === e.length ? e[0].ownerId : null,
           source: C.t4x.GUILD_CHANNELS,
@@ -181,7 +181,7 @@ function A(e) {
       })
     }
   }
-  let D = j ? c.oLu : c.ejJ,
+  let D = v ? c.oLu : c.ejJ,
     M = (0, i.jsx)(D, {
       size: "xs",
       className: E.actionIcon,

@@ -26,8 +26,8 @@ function O(e) {
     O = (0, d.j0)(e.id),
     _ = (0, i.u)(e),
     y = (0, c.g)(e.id),
-    j = (0, r.e7)([a.Z], () => a.Z.getNewMemberActions(e.id), [e.id]),
-    v = (0, u.Z)(e.id),
+    v = (0, r.e7)([a.Z], () => a.Z.getNewMemberActions(e.id), [e.id]),
+    j = (0, u.Z)(e.id),
     C = (0, s.PE)(e.id),
     x = (0, o.n2)(e.id),
     E = [],
@@ -36,5 +36,5 @@ function O(e) {
     P = (0, g.lN)(!(0, f.r1)(e.id)),
     N = e.features.has(b.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
     w = (0, h.Z)(e.id);
-  return S && E.push(m.z.GUILD_HUB_HEADER_OPTIONS), !C && y && v && null != j && j.length > 0 ? E.push(m.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && E.push(m.z.GUILD_PREMIUM_PROGRESS_BAR), !S && y && E.push(m.z.GUILD_HOME), t && E.push(m.z.GUILD_SCHEDULED_EVENTS), !S && I && P && E.push(m.z.CHANNELS_AND_ROLES), O && E.push(m.z.GUILD_ROLE_SUBSCRIPTIONS), _ && E.push(m.z.GUILD_SHOP), (x && (I || N) || n && e.features.has(b.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && E.push(m.z.GUILD_MOD_DASH_MEMBER_SAFETY), w && E.push(m.z.GUILD_BOOSTS), E
+  return S && E.push(m.z.GUILD_HUB_HEADER_OPTIONS), !C && y && j && null != v && v.length > 0 ? E.push(m.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && E.push(m.z.GUILD_PREMIUM_PROGRESS_BAR), !S && y && E.push(m.z.GUILD_HOME), t && E.push(m.z.GUILD_SCHEDULED_EVENTS), !S && I && P && E.push(m.z.CHANNELS_AND_ROLES), O && E.push(m.z.GUILD_ROLE_SUBSCRIPTIONS), _ && E.push(m.z.GUILD_SHOP), (x && (I || N) || n && e.features.has(b.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && E.push(m.z.GUILD_MOD_DASH_MEMBER_SAFETY), w && E.push(m.z.GUILD_BOOSTS), E
 }

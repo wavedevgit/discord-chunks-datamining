@@ -48,7 +48,7 @@ function N() {
         visibleContent: t
       } = e;
       return t === o.z.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, r.jsx)(s.IGR, {
-        text: I.intl.string(I.t.y2b7CA),
+        text: P.intl.string(P.t.y2b7CA),
         color: l.Z.BUTTON_DANGER_BACKGROUND
       }) : null
     }
@@ -61,15 +61,15 @@ function A(e) {
     options: a,
     onFileUpload: f,
     onClose: m,
-    onSelect: y,
+    onSelect: _,
     draftType: A,
     editorTextContent: w,
     setValue: R,
     openClips: M
   } = e, {
-    analyticsLocations: k,
-    newestAnalyticsLocation: D
-  } = (0, d.ZP)(), L = (0, g.Dt)({
+    analyticsLocations: D,
+    newestAnalyticsLocation: L
+  } = (0, d.ZP)(), k = (0, g.Dt)({
     channel: t
   });
 
@@ -78,14 +78,14 @@ function A(e) {
   }
 
   function B() {
-    _.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, O.JM)("/"))
+    y.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, O.JM)("/"))
   }
 
-  function F() {
+  function G() {
     M()
   }
 
-  function H() {
+  function F() {
     (0, h.Q3)(o.z.POLLS_CHAT_INPUT_COACHMARK, {
       dismissAction: S.L.TAKE_ACTION
     }), (0, s.ZDy)(async () => {
@@ -125,12 +125,12 @@ function A(e) {
         }), i))
       }
     }, {
-      modalKey: P.$z
+      modalKey: I.$z
     })
   }
 
-  function G() {
-    _.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
+  function H() {
+    y.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
       guild_id: t.guild_id
@@ -142,7 +142,7 @@ function A(e) {
         type: "contextless"
       },
       openInPopout: false,
-      analyticsLocation: D
+      analyticsLocation: L
     }), (0, u.w1)({
       guildId: t.guild_id
     })
@@ -159,16 +159,16 @@ function A(e) {
     })
   }
   return i.useEffect(() => {
-    _.default.track(E.rMx.OPEN_POPOUT, {
+    y.default.track(E.rMx.OPEN_POPOUT, {
       type: "Send Attachment",
       channel_id: t.id,
       guild_id: t.guild_id
     })
   }, [t.guild_id, t.id]), (0, r.jsx)(s.v2r, {
-    onSelect: y,
+    onSelect: _,
     navId: "channel-attach",
     onClose: m,
-    "aria-label": I.intl.string(I.t.Xm41aW),
+    "aria-label": P.intl.string(P.t.Xm41aW),
     className: Z.menu,
     children: a.map(function(e) {
       var n;
@@ -204,13 +204,13 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "clips",
             label: i,
-            action: F
+            action: G
           }, "clips");
         case j.r.POLL:
           return (0, r.jsx)(s.sNh, {
             id: "poll",
             label: i,
-            action: H
+            action: F
           }, "poll");
         case j.r.INVITE_TO_PLAY_GAME:
           return (0, r.jsx)(s.sNh, {
@@ -222,7 +222,7 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.JOIN,
                 activity: n,
-                location: k[k.length - 1]
+                location: D[D.length - 1]
               })
             }
           }, "play");
@@ -236,7 +236,7 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.LISTEN,
                 activity: n,
-                location: k[k.length - 1]
+                location: D[D.length - 1]
               })
             }
           }, "listen");
@@ -250,7 +250,7 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.WATCH,
                 activity: n,
-                location: k[k.length - 1]
+                location: D[D.length - 1]
               })
             }
           }, "watch");
@@ -270,7 +270,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "activity",
             label: i,
-            action: G,
+            action: H,
             hint: (0, r.jsx)(N, {})
           }, "activity");
         case j.r.SCHEDULED_MESSAGE:
@@ -280,7 +280,7 @@ function A(e) {
             action: () => (0, g.$f)({
               channel: t
             }),
-            children: L
+            children: k
           }, "scheduled_message");
         default:
           return null

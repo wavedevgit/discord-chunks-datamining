@@ -56,23 +56,23 @@ function w(e) {
   let {
     user: t,
     channel: n
-  } = e, w = __OVERLAY__ || !(0, d.Z)(t.id), R = (0, g.ZP)(t.id), M = (0, s.ZP)(), k = i.useRef(Date.now()), {
-    analyticsLocations: D
-  } = (0, u.ZP)(c.Z.USER_PROFILE_SIDEBAR), L = (0, f.ZB)({
+  } = e, w = __OVERLAY__ || !(0, d.Z)(t.id), R = (0, g.ZP)(t.id), M = (0, s.ZP)(), D = i.useRef(Date.now()), {
+    analyticsLocations: L
+  } = (0, u.ZP)(c.Z.USER_PROFILE_SIDEBAR), k = (0, f.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
-  }), U = i.useRef(null), B = (0, o.Z)(U), F = e => {
+  }), U = i.useRef(null), B = (0, o.Z)(U), G = e => {
     (0, b.openUserProfileModal)(A({
-      sourceAnalyticsLocations: D,
+      sourceAnalyticsLocations: L,
       hideRestrictedProfile: true
-    }, L, e))
+    }, k, e))
   };
   return (0, r.jsx)(u.Gt, {
-    value: D,
+    value: L,
     children: (0, r.jsx)(f.Mt, {
-      value: L,
-      openedAt: k.current,
+      value: k,
+      openedAt: D.current,
       fetchStartedAt: null == R ? true : R.fetchStartedAt,
       fetchEndedAt: null == R ? true : R.fetchEndedAt,
       isLoaded: null == R ? true : R.isLoaded,
@@ -80,10 +80,10 @@ function w(e) {
         ref: U,
         user: t,
         displayProfile: R,
-        themeType: I.l.SIDEBAR,
+        themeType: P.l.SIDEBAR,
         themeOverride: M,
         children: [(0, r.jsxs)(l.u2, {
-          children: [(0, r.jsx)(P.Z, {
+          children: [(0, r.jsx)(I.Z, {
             children: (0, r.jsx)(S.Z, {
               user: t
             })
@@ -92,14 +92,14 @@ function w(e) {
             children: [(0, r.jsx)(C.Z, {
               user: t,
               displayProfile: R,
-              themeType: I.l.SIDEBAR,
+              themeType: P.l.SIDEBAR,
               animateOnHover: !B
-            }), (0, r.jsx)(y.Z, {
+            }), (0, r.jsx)(_.Z, {
               user: t,
               displayProfile: R,
               channelId: n.id,
-              themeType: I.l.SIDEBAR,
-              onOpenProfile: w ? true : F
+              themeType: P.l.SIDEBAR,
+              onOpenProfile: w ? true : G
             })]
           }), (0, r.jsxs)("div", {
             className: N.body,
@@ -107,10 +107,10 @@ function w(e) {
               user: t,
               nickname: h.ZP.getName(null, n.id, t),
               pronouns: null == R ? true : R.pronouns,
-              onOpenProfile: w ? true : F,
-              tags: (0, r.jsx)(_.Z, {
+              onOpenProfile: w ? true : G,
+              tags: (0, r.jsx)(y.Z, {
                 displayProfile: R,
-                themeType: I.l.SIDEBAR
+                themeType: P.l.SIDEBAR
               })
             }), (0, r.jsxs)(j.Z.Overlay, {
               className: N.overlay,
@@ -136,10 +136,10 @@ function w(e) {
           className: T.footer,
           children: (0, r.jsx)(a.P3F, {
             onClick: () => {
-              F(), (0, m.pQ)(A({
+              G(), (0, m.pQ)(A({
                 action: "PRESS_VIEW_PROFILE",
-                analyticsLocations: D
-              }, L))
+                analyticsLocations: L
+              }, k))
             },
             className: T.footerButton,
             children: Z.intl.string(Z.t["+Xp3ho"])

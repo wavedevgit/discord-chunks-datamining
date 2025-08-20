@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 402130, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,23 +37,23 @@ function b(e) {
   return e
 }
 
-function y(e) {
+function _(e) {
   let {
     channel: t
-  } = e, [n] = t.recipients, y = (0, l.e7)([s.default], () => s.default.getUser(n)), _ = (0, l.e7)([s.default], () => s.default.getCurrentUser()), C = (0, d.Z)(), [x, v] = (0, u.Z)(n);
+  } = e, [n] = t.recipients, _ = (0, l.e7)([s.default], () => s.default.getUser(n)), y = (0, l.e7)([s.default], () => s.default.getCurrentUser()), C = (0, d.Z)(), [x, v] = (0, u.Z)(n);
   if (i.useEffect(() => {
       (0, o.t)()
     }, []), i.useEffect(() => {
-      (0, p.Z)(null != y ? y : n, {
+      (0, p.Z)(null != _ ? _ : n, {
         type: "sidebar",
-        withMutualFriendsCount: (null == y ? true : y.bot) !== true,
+        withMutualFriendsCount: (null == _ ? true : _.bot) !== true,
         withMutualFriends: false,
         withMutualGuilds: true,
         channelId: t.id
       })
-    }, [y, n, t.id]), null == y || null == _ || !C) return null;
-  let O = "user-profile-sidebar-heading-".concat(y.id),
-    j = c.ZP.getName(null, t.id, y);
+    }, [_, n, t.id]), null == _ || null == y || !C) return null;
+  let O = "user-profile-sidebar-heading-".concat(_.id),
+    j = c.ZP.getName(null, t.id, _);
   return (0, r.jsx)("aside", {
     "aria-labelledby": O,
     children: (0, r.jsx)(a.y5t, {
@@ -66,15 +66,15 @@ function y(e) {
         })
       }),
       children: x ? (0, r.jsx)(f.Z, b({
-        user: y,
-        currentUser: _,
+        user: _,
+        currentUser: y,
         onHide: v
-      }, e)) : y.isNonUserBot() ? (0, r.jsx)(h.Z, b({
-        user: y,
-        currentUser: _
+      }, e)) : _.isNonUserBot() ? (0, r.jsx)(h.Z, b({
+        user: _,
+        currentUser: y
       }, e)) : (0, r.jsx)(m.Z, b({
-        user: y,
-        currentUser: _
+        user: _,
+        currentUser: y
       }, e))
     })
   })

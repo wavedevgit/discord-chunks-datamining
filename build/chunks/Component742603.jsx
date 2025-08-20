@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk39219 = require("./39219.js"),
   Chunk430864 = require("./430864.js");
 
-function F(e) {
+function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,7 +61,7 @@ function F(e) {
   return e
 }
 
-function H(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,18 +74,18 @@ function H(e, t) {
   }), e
 }
 
-function G(e) {
+function H(e) {
   let {
     focusedParticipant: t,
     channel: n
   } = e, i = (0, u.bp)(), l = (0, o.e7)([Z.Z], () => Z.Z.getLayout(n.id, i));
-  return (0, r.jsx)(I.Z, {
+  return (0, r.jsx)(P.Z, {
     children: (0, r.jsx)(w.Z, {
       participant: t,
       maxVisibleUsers: 5,
       guildId: n.getGuildId(),
       channelId: n.id,
-      disableInteraction: i === k.IlC.POPOUT || l === k.AEg.FULL_SCREEN
+      disableInteraction: i === D.IlC.POPOUT || l === D.AEg.FULL_SCREEN
     })
   })
 }
@@ -120,7 +120,7 @@ function z(e) {
     } = e,
     a = (0, N.Z)(l, true),
     o = (0, b.qY)(l.id),
-    c = null != o ? (0, y.DK)(o) : null,
+    c = null != o ? (0, _.DK)(o) : null,
     u = null != o;
   if ((null == i ? true : i.type) === M.fO.ACTIVITY) null != n && (t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(C.ZP.Divider, {
@@ -133,7 +133,7 @@ function z(e) {
       variant: "text-md/normal",
       color: "none",
       children: (0, d.Z)(n.name)
-    }), a && (0, r.jsx)(G, {
+    }), a && (0, r.jsx)(H, {
       channel: l,
       focusedParticipant: i
     })]
@@ -149,12 +149,12 @@ function z(e) {
         channel: l,
         stream: n,
         color: a ? "header-primary" : "none"
-      }), a && (0, r.jsx)(G, {
+      }), a && (0, r.jsx)(H, {
         channel: l,
         focusedParticipant: i
       })]
     })
-  } else u && (t = (0, r.jsx)(_.Z, {
+  } else u && (t = (0, r.jsx)(y.Z, {
     guildEvent: o,
     recurrenceId: c
   }));
@@ -177,30 +177,30 @@ function W(e) {
   } = (0, o.cj)([Z.Z], () => ({
     focusedParticipant: Z.Z.getSelectedParticipant(t.id),
     participantsOpen: Z.Z.getParticipantsOpen(t.id)
-  }), [t.id]), y = i.useContext(P.h9), _ = (0, f.ZP)(t), S = (0, m.KS)(t), [I] = (0, p.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), N = L.intl.string(L.t.BVZqJi);
-  t.isDM() ? N = L.intl.string(L.t.jN2DfX) : t.isGroupDM() && (N = L.intl.string(L.t["e5y+go"]));
+  }), [t.id]), _ = i.useContext(I.h9), y = (0, f.ZP)(t), S = (0, m.KS)(t), [P] = (0, p.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), N = k.intl.string(k.t.BVZqJi);
+  t.isDM() ? N = k.intl.string(k.t.jN2DfX) : t.isGroupDM() && (N = k.intl.string(k.t["e5y+go"]));
   let w = (0, o.e7)([h.Z], () => h.Z.getChannelStatus(t)),
-    k = t.isGuildVoice() && u && null != w && w.length > 0,
-    G = (0, T.ZP)(t),
-    V = k ? (0, r.jsx)(s.ua7, {
-      text: L.intl.string(L.t.Mgpxi4),
+    D = t.isGuildVoice() && u && null != w && w.length > 0,
+    H = (0, T.ZP)(t),
+    V = D ? (0, r.jsx)(s.ua7, {
+      text: k.intl.string(k.t.Mgpxi4),
       delay: 500,
       position: "bottom",
-      shouldShow: G,
-      children: e => (0, r.jsxs)(s.P3F, H(F({}, e), {
+      shouldShow: H,
+      children: e => (0, r.jsxs)(s.P3F, F(G({}, e), {
         className: a()(U.channelStatusClickable, {
-          [U.hoverable]: G
+          [U.hoverable]: H
         }),
-        onClick: G ? W : true,
+        onClick: H ? W : true,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           className: a()(U.channelStatus, B.markup, {
-            [U.hoverable]: G
+            [U.hoverable]: H
           }),
           children: O.Z.parseVoiceChannelStatus(w, true, {
             channelId: t.id
           })
-        }), G && (0, r.jsx)(s.vdY, {
+        }), H && (0, r.jsx)(s.vdY, {
           size: "custom",
           color: "currentColor",
           className: a()(U.pencilIcon, U.hoverable),
@@ -215,24 +215,24 @@ function W(e) {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 339340));
-      return n => (0, r.jsx)(e, F({
+      return n => (0, r.jsx)(e, G({
         channel: t
       }, n))
     }, {
       modalKey: R.a
     })
   }
-  let q = (0, E.m$)({
+  let Y = (0, E.m$)({
     channelId: t.id
   });
   return (0, r.jsxs)("div", {
     className: U.subtitleContainer,
     children: [(0, r.jsx)(s.f6W, {
-      theme: D.BR.DARK,
+      theme: L.BR.DARK,
       children: e => (0, r.jsxs)(C.ZP, {
         onDoubleClick: x.O,
         transparent: true,
-        showToolbar: !y,
+        showToolbar: !_,
         className: a()(e, U.headerBar),
         innerClassName: U.headerBarChildren,
         toolbarClassName: U.toolbar,
@@ -250,11 +250,11 @@ function W(e) {
             children: [null != S ? (0, r.jsx)(C.ZP.ChannelIcon, {
               icon: S,
               "aria-label": N
-            }) : null, _, q && (0, r.jsx)(s.ua7, {
-              text: L.intl.string(L.t.QyZ4TU),
-              children: e => (0, r.jsx)(s.tQf, H(F({}, e), {
+            }) : null, y, Y && (0, r.jsx)(s.ua7, {
+              text: k.intl.string(k.t.QyZ4TU),
+              children: e => (0, r.jsx)(s.tQf, F(G({}, e), {
                 size: "xs",
-                "aria-label": L.intl.string(L.t.VHXh8f),
+                "aria-label": k.intl.string(k.t.VHXh8f),
                 color: s.TVs.colors.INTERACTIVE_NORMAL,
                 className: U.secureFramesIcon
               }))
@@ -264,7 +264,7 @@ function W(e) {
           channel: t,
           guild: l
         }), (0, r.jsx)(z, {
-          focusedApplication: I,
+          focusedApplication: P,
           focusedParticipant: b,
           channel: t
         })]

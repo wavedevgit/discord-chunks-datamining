@@ -180,8 +180,8 @@ class ee extends Chunk98597.ZP {
       canReorderChannel: O,
       canMoveMembers: _,
       showTutorial: y,
-      hasActiveEvent: j,
-      embeddedApps: v,
+      hasActiveEvent: v,
+      embeddedApps: j,
       isSubscriptionGated: C,
       isFavoriteSuggestion: x,
       withGuildIcon: E
@@ -231,9 +231,9 @@ class ee extends Chunk98597.ZP {
                 ref: this.channelItemRef,
                 className: X.iconVisibility,
                 iconClassName: o()({
-                  [X.iconLive]: j
+                  [X.iconLive]: v
                 }),
-                hasActiveEvent: j,
+                hasActiveEvent: v,
                 channel: e,
                 selected: !x && t,
                 connected: n,
@@ -255,12 +255,12 @@ class ee extends Chunk98597.ZP {
                   unread: i,
                   mentionCount: a,
                   userCount: w,
-                  embeddedActivitiesCount: v.length,
+                  embeddedActivitiesCount: j.length,
                   isSubscriptionGated: C
                 }),
                 "aria-describedby": (0, b.Z)({
                   channel: e,
-                  embeddedApps: v
+                  embeddedApps: j
                 }),
                 withGuildIcon: E
               }, p), {
@@ -346,7 +346,7 @@ class ee extends Chunk98597.ZP {
       let {
         channel: e
       } = this.props, t = e.getGuildId();
-      null != t && (0, C.n)(t) && (0, v.hk)(t), this.handleVoiceConnect()
+      null != t && (0, C.n)(t) && (0, j.hk)(t), this.handleVoiceConnect()
     }), Q(this, "handleVoiceStatusClick", e => {
       let {
         connected: t,
@@ -453,7 +453,7 @@ function en(e) {
   }), f = (0, a.e7)([U.Z], () => U.Z.hasVideo(n.id)), g = (0, h.ZP)(n), m = (0, O.ZP)(n), b = (0, E.qY)(n.id), {
     isSubscriptionGated: _,
     needSubscriptionToAccess: y
-  } = (0, x.Z)(n.id), v = (0, j.Z)(), C = (0, a.e7)([k.ZP], () => k.ZP.isFavorite(t.id, n.id)), S = e.connected || (null == v ? true : v.channelId) === n.id, {
+  } = (0, x.Z)(n.id), j = (0, v.Z)(), C = (0, a.e7)([k.ZP], () => k.ZP.isFavorite(t.id, n.id)), S = e.connected || (null == j ? true : j.channelId) === n.id, {
     enableHangStatus: P,
     allowChannelTopic: w
   } = I.n.useExperiment({

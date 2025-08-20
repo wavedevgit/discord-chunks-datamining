@@ -1,7 +1,7 @@
 /** Chunk was on 84722 **/
 /** chunk id: 296864, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => j
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,38 +20,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk602872 = require("./602872.js");
 
-function C(e) {
+function j(e) {
   var n;
   let {
     transitionState: t,
-    event: C,
+    event: j,
     onSuccess: f,
-    onClose: y
+    onClose: N
   } = e, {
-    guild_id: N,
+    guild_id: y,
     privacy_level: k
-  } = C, b = (0, r.e7)([d.Z], () => d.Z.getChannel(C.channel_id), [C]), E = (0, r.e7)([h.Z], () => h.Z.getGuild(N), [N]), {
-    canManageGuildEvent: w
-  } = (0, o.XJ)(null != b ? b : E), I = w(C), O = (0, r.e7)([c.Z], () => c.Z.isLurking(N), [N]), S = C.entity_type === g.WX.STAGE_INSTANCE, [Z, T] = l.useState(S), [_, {
-    loading: G,
-    error: P
+  } = j, E = (0, r.e7)([d.Z], () => d.Z.getChannel(j.channel_id), [j]), w = (0, r.e7)([h.Z], () => h.Z.getGuild(y), [y]), {
+    canManageGuildEvent: b
+  } = (0, o.XJ)(null != E ? E : w), I = b(j), Z = (0, r.e7)([c.Z], () => c.Z.isLurking(y), [y]), S = j.entity_type === g.WX.STAGE_INSTANCE, [O, _] = l.useState(S), [T, {
+    loading: P,
+    error: A
   }] = (0, v.Z)();
   if (!I) return null;
-  let A = k === g.j8.PUBLIC ? j.intl.string(j.t.HhlaLC) : j.intl.string(j.t.GI3xXV),
+  let G = k === g.j8.PUBLIC ? C.intl.string(C.t.HhlaLC) : C.intl.string(C.t.GI3xXV),
     L = () => {
-      null == f || f(), y(), (0, u.Ku)(false)
+      null == f || f(), N(), (0, u.Ku)(false)
     },
     X = async () => {
-      await _(C, Z, {
+      await T(j, O, {
         onSuccess: L
       })
     };
   return (0, i.jsxs)(a.Modal, {
     transitionState: t,
-    onClose: y,
-    title: C.name,
-    subtitle: j.intl.format(j.t.UMajoq, {
-      privacyLevel: A,
+    onClose: N,
+    title: j.name,
+    subtitle: C.intl.format(C.t.UMajoq, {
+      privacyLevel: G,
       privacyLevelHook: (e, n) => k !== g.j8.PUBLIC ? null : (0, i.jsxs)("div", {
         className: p.privacyLevel,
         children: [(0, i.jsx)(s.enf, {
@@ -66,47 +66,47 @@ function C(e) {
     }),
     actions: [{
       variant: "secondary",
-      text: j.intl.string(j.t.CZGqeX),
+      text: C.intl.string(C.t.CZGqeX),
       onClick: () => {
-        y()
+        N()
       }
     }, {
       variant: "active",
-      text: j.intl.string(j.t.cK1GGR),
+      text: C.intl.string(C.t.cK1GGR),
       onClick: X,
-      loading: G
+      loading: P
     }],
     children: [(0, i.jsx)(x.Z, {
-      guild: E,
-      channel: b,
-      name: C.name,
-      description: null != (n = C.description) ? n : true,
-      imageSource: (0, m.Z)(C),
+      guild: w,
+      channel: E,
+      name: j.name,
+      description: null != (n = j.description) ? n : true,
+      imageSource: (0, m.Z)(j),
       isActive: false,
-      isUserLurking: O,
+      isUserLurking: Z,
       speakers: [],
       speakerCount: 0,
       rsvped: true,
-      guildEvent: C
+      guildEvent: j
     }), S && (0, i.jsx)(s.XZJ, {
       className: p.verticalSpacing,
       type: s.XZJ.Types.INVERTED,
-      value: Z,
+      value: O,
       onChange: e => {
         let {
           currentTarget: n
         } = e;
-        return T(n.checked)
+        return _(n.checked)
       },
       children: (0, i.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: j.intl.string(j.t.dGNtgI)
+        children: C.intl.string(C.t.dGNtgI)
       })
-    }), null != P && null != P.getAnyErrorMessage() ? (0, i.jsx)(s.Text, {
+    }), null != A && null != A.getAnyErrorMessage() ? (0, i.jsx)(s.Text, {
       color: "text-danger",
       variant: "text-sm/normal",
       className: p.errorMessage,
-      children: P.getAnyErrorMessage()
+      children: A.getAnyErrorMessage()
     }) : null]
   })
 }

@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk258628 = require("./258628.js");
 
 function E(e, t, n) {
-  return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === v.IIU.PLAYING && (0, u.Z)(t, v.xjy.JOIN))
+  return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === j.IIU.PLAYING && (0, u.Z)(t, j.xjy.JOIN))
 }
 let S = Chunk647438.memo(function(e) {
   let t, l, u, S, {
@@ -56,7 +56,7 @@ let S = Chunk647438.memo(function(e) {
     } = (0, p.ZP)(),
     B = E(M, D, R),
     V = i.useCallback(() => {
-      o()(null != D, "Received null activity"), (0, f.v)(G, f.d.INVITE), y.default.track(v.rMx.OPEN_MODAL, {
+      o()(null != D, "Received null activity"), (0, f.v)(G, f.d.INVITE), y.default.track(j.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
         application_id: D.application_id,
         location: L.location
@@ -105,7 +105,7 @@ let S = Chunk647438.memo(function(e) {
             sourcePID: null == A ? true : A.pid,
             selectSource: !!U && null != _.Z.getVoiceChannelId(),
             guildId: t,
-            analyticsLocation: v.Sbl.ACTIVITY_PANEL
+            analyticsLocation: j.Sbl.ACTIVITY_PANEL
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -127,19 +127,19 @@ let S = Chunk647438.memo(function(e) {
       game: A.name
     }) : C.intl.string(C.t.FeUKeH)) : (t = true, l = null, u = a.hGI, S = null != Z && (0, O.vd)(Z.type) ? C.intl.string(C.t.uQn9Bw) : null != N ? C.intl.string(C.t.fBXEoK) : C.intl.string(C.t.n3feND)), (0, r.jsx)("div", {
       className: x.panelButtonContainer,
-      children: (0, r.jsx)(j.Z, {
+      children: (0, r.jsx)(v.Z, {
         tooltipText: S,
         disabled: t,
         onClick: l,
         icon: u
       })
     })) : null,
-    K = B && null == R ? (0, r.jsx)(j.Z, {
+    K = B && null == R ? (0, r.jsx)(v.Z, {
       tooltipText: C.intl.string(C.t["hC/Ze3"]),
       onClick: V,
       icon: a.ejJ
     }) : null,
-    Y = null == R ? null : (0, r.jsx)(j.Z, {
+    Y = null == R ? null : (0, r.jsx)(v.Z, {
       tooltipText: C.intl.string(C.t["R/FK4O"]),
       onClick: F(R.applicationId, R.location),
       icon: a.PBZ

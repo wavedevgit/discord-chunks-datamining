@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk805787 = require("./805787.js");
 
-function P(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function P(e) {
   }
   return e
 }
-let I = e => {
+let P = e => {
     let {
       style: t,
       className: n,
@@ -57,7 +57,7 @@ let I = e => {
       text: i,
       children: e => {
         var i, o;
-        return (0, r.jsx)("div", (i = P({
+        return (0, r.jsx)("div", (i = I({
           className: a()(n, S.iconWidget),
           style: t
         }, e), o = o = {
@@ -79,19 +79,19 @@ let I = e => {
     let {
       currentStatus: t,
       channel: l
-    } = e, o = i.useRef(y.Z.getRecentCustomStatuses()), [Z, T] = i.useState(false), N = (0, _.V)(), [A, w] = i.useState(null != t ? t : null), R = (0, c.e7)([m.default], () => m.default.getCurrentUser()), M = i.useMemo(() => [], []), k = i.useRef(null).current;
+    } = e, o = i.useRef(_.Z.getRecentCustomStatuses()), [Z, T] = i.useState(false), N = (0, y.V)(), [A, w] = i.useState(null != t ? t : null), R = (0, c.e7)([m.default], () => m.default.getCurrentUser()), M = i.useMemo(() => [], []), D = i.useRef(null).current;
     i.useEffect(() => (Z || M.push(u.z.HANG_STATUS_NEW_BADGE), () => {
-      Z && (null == k || k(O.L.PRIMARY))
-    }), [Z, M, k]);
-    let D = i.useCallback(e => {
+      Z && (null == D || D(O.L.PRIMARY))
+    }), [Z, M, D]);
+    let L = i.useCallback(e => {
         e.stopPropagation(), (0, b.Sc)(true)
       }, []),
-      L = e => {
+      k = e => {
         e.stopPropagation(), (0, d.ZDy)(async () => {
           let {
             default: e
           } = await n.e("1631").then(n.bind(n, 333541));
-          return t => (0, r.jsx)(e, P({}, t))
+          return t => (0, r.jsx)(e, I({}, t))
         }), T(true)
       },
       U = i.useCallback(e => {
@@ -117,7 +117,7 @@ let I = e => {
           visibleContent: n,
           markAsDismissed: i
         } = e;
-        return k = i, (0, r.jsxs)("div", {
+        return D = i, (0, r.jsxs)("div", {
           className: S.container,
           children: [n === u.z.HANG_STATUS_NEW_BADGE && (0, r.jsxs)("div", {
             className: S.onboarding,
@@ -165,7 +165,7 @@ let I = e => {
                   onClick: e => {
                     e.stopPropagation(), (0, b.Zx)(n, true), T(true)
                   },
-                  children: (0, r.jsx)(I, {
+                  children: (0, r.jsx)(P, {
                     className: a()(S.iconWidget, {
                       [S.selectedWidget]: n === (null == t ? true : t.state)
                     }),
@@ -182,9 +182,9 @@ let I = e => {
                 }, n)
               }), (0, r.jsx)(d.P3F, {
                 "aria-label": E.intl.string(E.t.S90Fub),
-                onClick: D,
+                onClick: L,
                 onMouseEnter: () => w(null),
-                children: (0, r.jsx)(I, {
+                children: (0, r.jsx)(P, {
                   className: S.optionButton,
                   name: E.intl.string(E.t.S90Fub),
                   icon: (0, r.jsx)(d.t6m, {
@@ -209,7 +209,7 @@ let I = e => {
                     t.stopPropagation(), (0, b._s)(e.status, e.emoji, true), T(true)
                   },
                   className: S.statusOptionContainer,
-                  children: [(0, r.jsx)(I, {
+                  children: [(0, r.jsx)(P, {
                     className: a()(S.iconWidget, {
                       [S.selectedWidget]: i
                     }),
@@ -235,8 +235,8 @@ let I = e => {
                 }, "custom-status-".concat(n))
               }), o.current.length > 0 ? (0, r.jsx)(d.P3F, {
                 "aria-label": null != t ? E.intl.string(E.t.IN2LTk) : E.intl.string(E.t.UDg0qK),
-                onClick: L,
-                children: (0, r.jsx)(I, {
+                onClick: k,
+                children: (0, r.jsx)(P, {
                   className: S.optionButton,
                   name: null != t ? E.intl.string(E.t.IN2LTk) : E.intl.string(E.t.UDg0qK),
                   icon: (0, r.jsx)(d.vdY, {
@@ -249,7 +249,7 @@ let I = e => {
                 })
               }, "custom-status-edit") : (0, r.jsxs)(d.P3F, {
                 "aria-label": E.intl.string(E.t.UDg0qK),
-                onClick: L,
+                onClick: k,
                 className: S.setCustomButton,
                 children: [(0, r.jsx)(d.vdY, {
                   size: "xs",

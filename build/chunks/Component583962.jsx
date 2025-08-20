@@ -76,12 +76,12 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITI
       guild: t,
       tooltipTypes: l,
       withMargin: d
-    } = e, j = (0, y.Jh)(t.id), T = (0, b.Z)(t.id), A = (0, y.FZ)(j), R = null == A, M = null != A ? A : j, L = (0, c.e7)([C.Z], () => {
+    } = e, v = (0, y.Jh)(t.id), T = (0, b.Z)(t.id), A = (0, y.FZ)(v), R = null == A, M = null != A ? A : v, L = (0, c.e7)([C.Z], () => {
       var e;
       return null != (e = C.Z.getCountForGuild(t.id)) ? e : 0
     }), k = (0, c.e7)([O.Z], () => O.Z.can(E.Plq.MANAGE_GUILD, t));
     i.useEffect(() => {
-      L !== T && (0, v.v)(t.id, T)
+      L !== T && (0, j.v)(t.id, T)
     }, [t.id, L, T]);
     let U = R ? "100%" : "".concat(Math.min(100, T / E.oCV[M] * 100), "%"),
       {

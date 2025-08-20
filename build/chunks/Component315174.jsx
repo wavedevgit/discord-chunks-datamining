@@ -105,7 +105,7 @@ function P(e) {
     hasSubheader: l
   } = e, {
     value: s
-  } = n.springs, c = t.features.has(j.oNc.DISCOVERABLE), d = (0, r.jsx)("div", {
+  } = n.springs, c = t.features.has(v.oNc.DISCOVERABLE), d = (0, r.jsx)("div", {
     className: x.communityInfo,
     children: c && (0, r.jsx)(u.ua7, {
       text: C.intl.string(C.t.O8lDIy),
@@ -188,7 +188,7 @@ function T(e) {
     children: [(0, r.jsx)(y.Z, {
       guild: i,
       isBannerVisible: n
-    }), i.id === v._ && (0, r.jsx)(N, {}), (0, r.jsx)(Z, {
+    }), i.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(Z, {
       guild: i
     }), null != l && (0, r.jsx)(u.P3F, {
       className: x.headerButton,
@@ -244,7 +244,7 @@ function R(e) {
       } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
       return t => (0, r.jsx)(e, S(E({}, t), {
         guild: l,
-        source: j.t4x.GUILD_HEADER
+        source: v.t4x.GUILD_HEADER
       }))
     }) : (0, u.ZDy)(async () => {
       let {
@@ -280,7 +280,7 @@ function R(e) {
             children: [(0, r.jsx)(y.Z, {
               guild: l,
               isBannerVisible: t
-            }), l.id === v._ && (0, r.jsx)(N, {}), (0, r.jsx)(Z, {
+            }), l.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(Z, {
               guild: l
             })]
           }), (0, r.jsx)("div", {
@@ -304,7 +304,7 @@ function R(e) {
           color: "currentColor"
         })
       }))
-    }), l.id === j.STv && (0, r.jsx)(h.p, {})]
+    }), l.id === v.STv && (0, r.jsx)(h.p, {})]
   })
 }
 let D = Chunk647438.memo(function(e) {
@@ -319,14 +319,14 @@ let D = Chunk647438.memo(function(e) {
     disableBannerAnimation: g,
     "aria-expanded": b,
     "aria-controls": y,
-    guild: v,
+    guild: j,
     guildBanner: C,
     animationOverlayHeight: N,
     children: w,
     headerClassName: Z,
     communityInfoVisible: A,
     hasSubheader: D
-  } = e, L = v.features.has(j.oNc.ANIMATED_BANNER), k = (0, d.Z)(v), U = !k && (0, _.Z)(v), G = !k && A, B = (0, O.xR)(C) && L && !g, [V, F] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
+  } = e, L = j.features.has(v.oNc.ANIMATED_BANNER), k = (0, d.Z)(j), U = !k && (0, _.Z)(j), G = !k && A, B = (0, O.xR)(C) && L && !g, [V, F] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !H.current && Y) return F(true), K.current = setTimeout(() => {
       F(false)
@@ -350,7 +350,7 @@ let D = Chunk647438.memo(function(e) {
     }),
     Q = {
       bannerVisible: n,
-      guild: v,
+      guild: j,
       onClick: c,
       onContextMenu: f,
       ariaControls: y,
@@ -358,7 +358,7 @@ let D = Chunk647438.memo(function(e) {
       guildHeaderRef: W
     };
   return (0, r.jsx)(u.f6W, {
-    theme: n ? j.BRd.DARK : true,
+    theme: n ? v.BRd.DARK : true,
     children: e => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         "data-has-banner": q(),
@@ -389,13 +389,13 @@ let D = Chunk647438.memo(function(e) {
               children: w
             }))
           }), U && (0, r.jsx)(P, {
-            guild: v,
+            guild: j,
             controller: l,
             hasBanner: null != C,
             hasSubheader: null != D && D
           })]
         }), null != C ? (0, r.jsx)(I, {
-          guild: v,
+          guild: j,
           controller: l,
           guildBanner: C,
           animate: V

@@ -22,8 +22,8 @@ let p = function(e) {
     buttonSubmitting: m,
     onButtonClick: g,
     imageSrc: b,
-    animationSrc: y,
-    secondaryButtonText: _,
+    animationSrc: _,
+    secondaryButtonText: y,
     onSecondaryButtonClick: C,
     children: x,
     useReducedMotion: v = false
@@ -37,8 +37,8 @@ let p = function(e) {
     alt: "",
     src: b,
     className: d.image
-  }) : null != y && (j = (0, r.jsx)(s.Fmz, {
-    importData: y,
+  }) : null != _ && (j = (0, r.jsx)(s.Fmz, {
+    importData: _,
     shouldAnimate: !v,
     className: d.animation
   })), (0, r.jsxs)("div", {
@@ -59,14 +59,14 @@ let p = function(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: d.buttonContainer,
-      children: [null != _ && (0, r.jsx)(o.zx, {
+      children: [null != y && (0, r.jsx)(o.zx, {
         className: d.button,
         size: o.zx.Sizes.SMALL,
         onClick: C,
         look: o.zx.Looks.LINK,
         color: o.zx.Colors.PRIMARY,
         submitting: m,
-        children: _
+        children: y
       }), null != h && (0, r.jsx)(o.zx, {
         className: d.button,
         innerClassName: d.innerButton,

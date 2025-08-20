@@ -37,7 +37,7 @@ function v(e) {
     g(1);
     try {
       await c.Z.sendActivityInvite({
-        type: y.mFx.STREAM_REQUEST,
+        type: _.mFx.STREAM_REQUEST,
         channelId: l.id,
         activity: n,
         content: "<@".concat(a, ">"),
@@ -50,7 +50,7 @@ function v(e) {
     }
     g(2)
   }
-  if (b && (t = C.intl.string(_.default.qRXatr)), n.type === y.IIU.PLAYING) {
+  if (b && (t = C.intl.string(y.default.qRXatr)), n.type === _.IIU.PLAYING) {
     let e = null == u ? true : u.getIconURL(46);
     return (0, r.jsxs)("div", {
       className: x.activityRow,
@@ -79,7 +79,7 @@ function v(e) {
         disabled: b || 2 === f,
         fullWidth: true,
         size: "sm",
-        text: 2 === f ? C.intl.string(_.default["8HU1Mz"]) : C.intl.string(_.default.DKHheX),
+        text: 2 === f ? C.intl.string(y.default["8HU1Mz"]) : C.intl.string(y.default.DKHheX),
         onClick: v
       }), null != t && (0, r.jsx)(s.Text, {
         className: x.disabledReason,
@@ -95,7 +95,7 @@ function O(e) {
   let {
     userId: t,
     channel: n
-  } = e, s = (0, o.e7)([g.default], () => g.default.getUser(t)), c = (0, o.e7)([f.Z], () => f.Z.getActivities(t, n.getGuildId())), d = (0, b.Z)(t, n.id), m = null == s || !d, _ = i.useMemo(() => l.uniqWith(c.filter(e => e.type === y.IIU.PLAYING), (e, t) => {
+  } = e, s = (0, o.e7)([g.default], () => g.default.getUser(t)), c = (0, o.e7)([f.Z], () => f.Z.getActivities(t, n.getGuildId())), d = (0, b.Z)(t, n.id), m = null == s || !d, y = i.useMemo(() => l.uniqWith(c.filter(e => e.type === _.IIU.PLAYING), (e, t) => {
     if (e.application_id === t.application_id) returntrue;
     let n = h.Z.getGameByName(e.name),
       r = h.Z.getGameByName(t.name);
@@ -113,7 +113,7 @@ function O(e) {
       className: x.root,
       children: (0, r.jsx)("div", {
         className: x.activityList,
-        children: _.map(e => (0, r.jsx)(v, {
+        children: y.map(e => (0, r.jsx)(v, {
           activity: e,
           channel: n,
           userId: t

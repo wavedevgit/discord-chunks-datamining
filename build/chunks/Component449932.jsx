@@ -23,7 +23,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk754231 = require("./754231.jsx"),
   Chunk342273 = require("./342273.js");
 
-function j(e) {
+function v(e) {
   let {
     guildId: t,
     member: n,
@@ -61,7 +61,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function j(e) {
   let {
     members: t,
     guildId: n
@@ -71,7 +71,7 @@ function v(e) {
     guildId: n,
     users: t,
     max: 6,
-    renderUser: (e, t, i) => (0, r.jsx)(j, {
+    renderUser: (e, t, i) => (0, r.jsx)(v, {
       guildId: n,
       member: e,
       className: t
@@ -97,13 +97,13 @@ let C = e => {
     }
   });
   if (null == O) return null;
-  let j = f || (0, u.Z)(n),
+  let v = f || (0, u.Z)(n),
     C = (0, h.vd)(t.type);
   return (0, r.jsxs)("div", {
     className: y.activity,
     children: [(0, r.jsx)("div", {
       className: y.channelActivityContainer,
-      children: j ? (0, r.jsx)(_.Z, {
+      children: v ? (0, r.jsx)(_.Z, {
         activity: n,
         embeddedApp: l,
         user: O,
@@ -118,7 +118,7 @@ let C = e => {
         user: O,
         guildId: t.getGuildId(),
         channelId: t.id,
-        renderHeaderAccessory: null != i ? () => (0, r.jsx)(v, {
+        renderHeaderAccessory: null != i ? () => (0, r.jsx)(j, {
           guildId: t.guild_id,
           members: i
         }) : true

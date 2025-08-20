@@ -62,9 +62,9 @@ function S() {
               dismissAction: C.L.INDIRECT_ACTION,
               groupName: C.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, b.Y)({
-              pageType: v.ZY5.ORBS_ANNOUNCEMENT_MODAL,
-              sectionType: v.jXE.ORBS_ANNOUNCEMENT_MODAL,
-              ctaObject: v.qAy.CTA_TO_ORB_INTRO_QUEST
+              pageType: j.ZY5.ORBS_ANNOUNCEMENT_MODAL,
+              sectionType: j.jXE.ORBS_ANNOUNCEMENT_MODAL,
+              ctaObject: j.qAy.CTA_TO_ORB_INTRO_QUEST
             }), (0, f.navigateToQuestHome)({
               questId: x.V6,
               fromContent: l.j.ORBS_ANNOUNCEMENT_MODAL

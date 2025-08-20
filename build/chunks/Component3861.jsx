@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 3861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,13 +18,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk394024 = require("./394024.js");
-let y = (0, Chunk112724.Z)(e => {
+let _ = (0, Chunk112724.Z)(e => {
   let {
     participants: t,
     filteredParticipants: n,
     selectedParticipant: l,
-    participantsVersion: y,
-    layout: _,
+    participantsVersion: _,
+    layout: y,
     onSelectParticipant: C,
     onContextMenuParticipant: x,
     onFullscreenParticipant: v,
@@ -32,8 +32,8 @@ let y = (0, Chunk112724.Z)(e => {
     hasConnectPermission: j,
     className: E,
     inCall: S,
-    showParticipants: P = true,
-    width: I,
+    showParticipants: I = true,
+    width: P,
     height: Z,
     idle: T,
     mode: N,
@@ -43,8 +43,8 @@ let y = (0, Chunk112724.Z)(e => {
   } = e;
   i.useEffect(() => {
     c.S.dispatch(m.CkL.REMEASURE_TARGET)
-  }, [I, Z, R.width, R.height]);
-  let M = i.useMemo(() => n.filter(e => e.type !== g.fO.ACTIVITY || !e.participants.some(e => (0, a.J)(e))), [n, y]);
+  }, [P, Z, R.width, R.height]);
+  let M = i.useMemo(() => n.filter(e => e.type !== g.fO.ACTIVITY || !e.participants.some(e => (0, a.J)(e))), [n, _]);
   return (null == w ? true : w.channelId) === O.id ? (0, r.jsx)(d.Z, {
     height: Z
   }) : (null == O ? true : O.isGuildVocal()) && !S ? (0, r.jsx)(u.Z, {
@@ -53,7 +53,7 @@ let y = (0, Chunk112724.Z)(e => {
     hasConnectPermission: j
   }) : N === m.WtW.VOICE ? (0, r.jsx)(o.Z, {
     guildId: O.guild_id,
-    width: I,
+    width: P,
     className: b.voiceCallWrapper,
     participants: t,
     onContextMenu: x
@@ -84,10 +84,10 @@ let y = (0, Chunk112724.Z)(e => {
     className: E,
     idle: T,
     height: Z,
-    width: I,
-    layout: _,
+    width: P,
+    layout: y,
     inCall: S,
     channel: O,
-    showParticipants: P
+    showParticipants: I
   })
 })

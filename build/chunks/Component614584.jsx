@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 614584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -61,16 +61,16 @@ let S = Chunk647438.memo(function(e) {
   let {
     baseMessage: n,
     referencedMessage: S,
-    channel: P,
-    compact: I = false,
+    channel: I,
+    compact: P = false,
     referencedUsernameProfile: Z,
     referencedAvatarProfile: T,
     setPopout: N,
     isReplySpineClickable: A,
     showReplySpine: w
-  } = e, R = S.state === f.Y.LOADED ? S.message : true, M = (0, y.Uj)(R), k = (0, u.p)(), D = s.d.useExperiment({
+  } = e, R = S.state === f.Y.LOADED ? S.message : true, M = (0, _.Uj)(R), D = (0, u.p)(), L = s.d.useExperiment({
     location: "repliedMessage"
-  }).enabled, L = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = i.useMemo(() => {
+  }).enabled, k = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = i.useMemo(() => {
     if (null == R) return null;
     let e = (0, o.Z)(R);
     if (e.type === v.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(g.Z.getSystemMessageUserJoin(e.id), {
@@ -79,7 +79,7 @@ let S = Chunk647438.memo(function(e) {
     }));
     if (e.type === v.uaV.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.Rp)((0, c.PA)({
       username: null != M ? M.nick : e.author.username,
-      guildId: null == P ? true : P.guild_id,
+      guildId: null == I ? true : I.guild_id,
       roleSubscriptionData: e.roleSubscriptionData
     }));
     if (e.type === v.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.Rp)((0, p.Y)({
@@ -99,58 +99,58 @@ let S = Chunk647438.memo(function(e) {
       let t = {
           formatInline: true,
           allowLinks: true,
-          shouldFilterKeywords: k
+          shouldFilterKeywords: D
         },
-        n = e.isFirstMessageInForumPost(P) ? E(j({}, t), {
+        n = e.isFirstMessageInForumPost(I) ? E(j({}, t), {
           noStyleAndInteraction: true,
           allowHeading: true,
           allowList: true,
-          allowGameMentions: D
+          allowGameMentions: L
         }) : E(j({}, t), {
           formatInline: true,
-          allowHeading: L,
-          allowList: L,
-          allowGameMentions: D
+          allowHeading: k,
+          allowList: k,
+          allowGameMentions: L
         });
       return (0, b.ZP)(e, n).content
     }
     return null
-  }, [R, M, P, L, k, D]), {
+  }, [R, M, I, k, D, L]), {
     isReplyAuthorBlocked: B,
-    isReplyAuthorIgnored: F
+    isReplyAuthorIgnored: G
   } = (0, l.cj)([m.Z], () => ({
     isReplyAuthorBlocked: null != R && m.Z.isBlockedForMessage(R),
     isReplyAuthorIgnored: null != R && m.Z.isIgnoredForMessage(R)
-  }), [R]), H = (0, x.wq)(null == R ? true : R.author.id, P.id), G = (0, x.$3)(n, R), V = (0, x.Wl)(R, P, Z, N), z = (0, x.rY)(T, N), W = i.useCallback(() => {
+  }), [R]), F = (0, x.wq)(null == R ? true : R.author.id, I.id), H = (0, x.$3)(n, R), V = (0, x.Wl)(R, I, Z, N), z = (0, x.rY)(T, N), W = i.useCallback(() => {
     N({
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [N]), q = (0, y.Uj)(n);
-  return (0, r.jsx)(_.Z, {
+  }, [N]), Y = (0, _.Uj)(n);
+  return (0, r.jsx)(y.Z, {
     repliedAuthor: M,
     baseMessage: n,
-    channel: P,
-    baseAuthor: q,
+    channel: I,
+    baseAuthor: Y,
     referencedMessage: S,
     content: U,
-    compact: I,
+    compact: P,
     isReplyAuthorBlocked: B,
-    isReplyAuthorIgnored: F,
+    isReplyAuthorIgnored: G,
     showAvatarPopout: T,
     showUsernamePopout: Z,
     renderPopout: C.Z,
     onClickAvatar: z,
     onClickUsername: V,
-    onClickReply: G,
-    onContextMenu: H,
+    onClickReply: H,
+    onContextMenu: F,
     onPopoutRequestClose: W,
     isReplySpineClickable: A,
     showReplySpine: w
   })
 });
 
-function P(e) {
+function I(e) {
   let {
     message: t,
     channel: n,

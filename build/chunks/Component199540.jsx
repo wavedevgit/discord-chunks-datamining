@@ -86,8 +86,8 @@ function b(e) {
     folderGroupId: O,
     folderButtonContent: _,
     onClick: y,
-    onContextMenu: j,
-    onHoverChange: v,
+    onContextMenu: v,
+    onHoverChange: j,
     onKeyDown: C,
     treeItemProps: {
       onFocus: x
@@ -109,10 +109,10 @@ function b(e) {
     }
     return i
   }(e.treeItemProps, ["onFocus"]), [P, N] = i.useState(false), w = i.useCallback(() => {
-    a || N(true), null == v || v(true)
-  }, [a, v]), Z = i.useCallback(() => {
-    a || N(false), null == v || v(false)
-  }, [a, v]), T = o || null == u ? null : (0, p.Or)(u), A = !o && d > 0 ? (0, p.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
+    a || N(true), null == j || j(true)
+  }, [a, j]), Z = i.useCallback(() => {
+    a || N(false), null == j || j(false)
+  }, [a, j]), T = o || null == u ? null : (0, p.Or)(u), A = !o && d > 0 ? (0, p.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
   return (0, r.jsx)(s.tEY, {
     children: (0, r.jsx)(s.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -134,7 +134,7 @@ function b(e) {
     }({
       className: h.folderButton,
       onClick: y,
-      onContextMenu: j,
+      onContextMenu: v,
       onMouseEnter: w,
       onMouseLeave: Z,
       onKeyDown: C,

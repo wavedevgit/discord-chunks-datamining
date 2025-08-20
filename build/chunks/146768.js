@@ -20,16 +20,16 @@ function s(e) {
       participantCount: d
     },
     context: g
-  } = e, p = (0, i.e7)([a.Z, c.Z], () => {
+  } = e, p = (0, r.e7)([o.Z, a.Z], () => {
     var e;
-    return a.Z.getGuild(null == (e = c.Z.getChannel(n)) ? true : e.getGuildId())
-  }, [n]), f = (0, i.e7)([o.Z], () => o.Z.getStageInstanceByChannel(n), [n]), h = (0, r.w8)(n, l.pV.SPEAKER), v = (0, r.Rk)(n), m = null != f ? h : u, j = (null != f ? v : d) - m.length;
+    return o.Z.getGuild(null == (e = a.Z.getChannel(n)) ? true : e.getGuildId())
+  }, [n]), h = (0, r.e7)([c.Z], () => c.Z.getStageInstanceByChannel(n), [n]), m = (0, i.w8)(n, l.pV.SPEAKER), v = (0, i.Rk)(n), j = null != h ? m : u, f = (null != h ? v : d) - j.length;
   return {
     channelId: n,
     guild: null != p ? p : t,
-    stage: null != f ? f : s,
-    speakers: m,
-    audienceCount: j,
+    stage: null != h ? h : s,
+    speakers: j,
+    audienceCount: f,
     context: g
   }
 }

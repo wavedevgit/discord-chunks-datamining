@@ -48,7 +48,7 @@ let P = "orbs_discovery_reheat_coachmark",
       }),
       ctaText: I.intl.string(I.t["cA+7mp"])
     }), [c, s]);
-    return (0, r.jsx)(j.G6, {
+    return (0, r.jsx)(v.G6, {
       errorBoundarySource: "ORBS_DISCOVERY_REHEAT_COACHMARK",
       targetElementRef: t,
       targetQuestId: a,
@@ -75,7 +75,7 @@ let P = "orbs_discovery_reheat_coachmark",
         isVirtualCurrencyEnabled: n
       } = e, r = (0, _.F)({
         location: P
-      }), [y, j] = i.useState(false), v = (e => {
+      }), [y, v] = i.useState(false), j = (e => {
         let {
           isIntroQuestUnclaimed: t
         } = (0, o.cj)([p.Z], () => {
@@ -93,7 +93,7 @@ let P = "orbs_discovery_reheat_coachmark",
         return null != n && r.enabled && !(0, m.EO)(n) && t
       })({
         location: P
-      }), I = (0, o.e7)([h.Z], () => h.Z.hasLayers()), N = (0, s.s9z)(s.JQI), w = n && v && !r && !(N || I), [Z, T] = (0, c.US)(w ? [a.z.VIRTUAL_CURRENCY_DISCOVERY_REHEAT_COACHMARK] : []), A = Z === a.z.VIRTUAL_CURRENCY_DISCOVERY_REHEAT_COACHMARK, R = i.useCallback(() => {
+      }), I = (0, o.e7)([h.Z], () => h.Z.hasLayers()), N = (0, s.s9z)(s.JQI), w = n && j && !r && !(N || I), [Z, T] = (0, c.US)(w ? [a.z.VIRTUAL_CURRENCY_DISCOVERY_REHEAT_COACHMARK] : []), A = Z === a.z.VIRTUAL_CURRENCY_DISCOVERY_REHEAT_COACHMARK, R = i.useCallback(() => {
         T(x.L.TAKE_ACTION), (0, u.k5)({
           source: E.GlobalDiscoveryAnalyticsLocations.VIRTUAL_CURRENCY_REHEAT_COACHMARK
         }), (0, f.navigateToQuestHome)({
@@ -110,7 +110,7 @@ let P = "orbs_discovery_reheat_coachmark",
         })
       }, [T]);
       return i.useEffect(() => {
-        n && A && !y && (j(true), t())
+        n && A && !y && (v(true), t())
       }, [A, t, n, y]), {
         shouldShow: A,
         onCtaClick: R,
@@ -120,7 +120,7 @@ let P = "orbs_discovery_reheat_coachmark",
       }
     })({
       isVirtualCurrencyEnabled: Z,
-      onShowCoachmarkHandler: (0, j.O5)({
+      onShowCoachmarkHandler: (0, v.O5)({
         targetElementRef: t,
         scrollToBottom: n
       })
@@ -163,7 +163,7 @@ let P = "orbs_discovery_reheat_coachmark",
       renderDiscoveryButton: I,
       isGuildBarScrolling: w,
       shouldShow: A
-    }, R)) : (0, r.jsx)(v.u, {
+    }, R)) : (0, r.jsx)(j.u, {
       targetElementRef: t,
       scrollToBottom: n,
       renderDiscoveryButton: I,

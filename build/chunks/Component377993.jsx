@@ -58,7 +58,7 @@ function w(e) {
     channel: o,
     status: u,
     activities: d
-  } = e, p = (0, a.e7)([_.Z], () => null != _.Z.getTypingUsers(o.id)[t.id]), f = (0, a.e7)([C.default], () => C.default.getCurrentUser()), x = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), O = (0, a.e7)([y.Z], () => y.Z.getNickname(t.id)), E = (0, h.Z)(t.id), Z = i.useRef(null), N = e => {
+  } = e, p = (0, a.e7)([y.Z], () => null != y.Z.getTypingUsers(o.id)[t.id]), f = (0, a.e7)([C.default], () => C.default.getCurrentUser()), x = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), O = (0, a.e7)([_.Z], () => _.Z.getNickname(t.id)), E = (0, h.Z)(t.id), Z = i.useRef(null), N = e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
@@ -85,15 +85,15 @@ function w(e) {
         decoration: "never"
       })),
       n = "<@".concat(t.id, ">");
-    v.S.dispatch(P.CkL.TEXTAREA_FOCUS, {
+    v.S.dispatch(I.CkL.TEXTAREA_FOCUS, {
       channelId: o.id
-    }), v.S.dispatchToLastSubscribed(P.CkL.INSERT_TEXT, {
+    }), v.S.dispatchToLastSubscribed(I.CkL.INSERT_TEXT, {
       plainText: e,
       rawText: n
     }), c.Z.startTyping(o.id)
   }, R = (0, m.K)({
     user: t
-  }), [M, k] = i.useState(false);
+  }), [M, D] = i.useState(false);
   return (0, r.jsx)(g.Z, {
     targetElementRef: Z,
     user: t,
@@ -102,7 +102,7 @@ function w(e) {
     spacing: 16,
     onShiftClick: w,
     shouldShow: M,
-    onRequestClose: () => k(false),
+    onRequestClose: () => D(false),
     children: e => {
       var {
         onClick: n,
@@ -127,7 +127,7 @@ function w(e) {
         user: t,
         currentUser: f,
         isOwner: t.id === o.ownerId,
-        ownerTooltipText: I.intl.string(I.t["MRXZ+/"]),
+        ownerTooltipText: P.intl.string(P.t["MRXZ+/"]),
         shouldAnimateStatus: A,
         isTyping: p,
         status: u,
@@ -140,7 +140,7 @@ function w(e) {
         nick: O,
         nameplate: R,
         onClick: e => {
-          e.shiftKey ? null == w || w() : k(e => !e)
+          e.shiftKey ? null == w || w() : D(e => !e)
         },
         onMouseDown: e => {
           M ? e.stopPropagation() : null == i || i(e)
@@ -167,16 +167,16 @@ function M(e) {
     analyticsLocations: s
   } = (0, d.ZP)(u.Z.MEMBER_LIST), {
     listItems: c
-  } = (0, a.e7)([y.Z, C.default, b.Z], () => {
+  } = (0, a.e7)([_.Z, C.default, b.Z], () => {
     let e = (0, O.T)(t.recipients, C.default),
       n = {};
     for (let t of e) {
       var r, i, l;
-      y.Z.isFriend(t.id) || t.id === (null == (r = C.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
-        status: null != (i = b.Z.getStatus(t.id)) ? i : P.Skl.OFFLINE,
+      _.Z.isFriend(t.id) || t.id === (null == (r = C.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
+        status: null != (i = b.Z.getStatus(t.id)) ? i : I.Skl.OFFLINE,
         activities: null != (l = b.Z.getActivities(t.id)) ? l : N
       } : n[t.id] = {
-        status: P.Skl.OFFLINE,
+        status: I.Skl.OFFLINE,
         activities: N
       }
     }
@@ -194,7 +194,7 @@ function M(e) {
     }
   }, [t], R);
   i.useEffect(() => {
-    x.default.track(P.rMx.MEMBER_LIST_VIEWED, {
+    x.default.track(I.rMx.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id
@@ -212,7 +212,7 @@ function M(e) {
           fade: true,
           children: [(0, r.jsxs)(f.Z, {
             className: Z.membersGroup,
-            children: ["".concat(I.intl.string(I.t["9Oq93t"]), "—").concat(c.length, " "), h && (0, r.jsx)(p.Z, {
+            children: ["".concat(P.intl.string(P.t["9Oq93t"]), "—").concat(c.length, " "), h && (0, r.jsx)(p.Z, {
               type: p.Z.Types.STAFF_ONLY_DM
             })]
           }), c.map(e => (0, r.jsx)(w, {

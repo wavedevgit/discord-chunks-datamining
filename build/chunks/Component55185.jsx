@@ -21,7 +21,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk87587 = require("./87587.js"),
   Chunk354810 = require("./354810.js");
-async function j(e) {
+async function v(e) {
   await d.hW.updateAsync("status", t => {
     t.status = s.Gm.create({
       value: e
@@ -29,7 +29,7 @@ async function j(e) {
   }, d.fy.INFREQUENT_USER_ACTION)
 }
 
-function v(e) {
+function j(e) {
   let {
     closePopout: t
   } = e;
@@ -41,7 +41,7 @@ function v(e) {
       size: "sm",
       text: O.intl.string(b.default.Poezn5),
       onClick: () => {
-        t(), j(c.Skl.ONLINE)
+        t(), v(c.Skl.ONLINE)
       },
       fullWidth: true
     })
@@ -80,7 +80,7 @@ function C(e) {
       })]
     }), (0, i.jsx)(c.rsf, {
       onChange: e => {
-        u.G6.updateSetting(e), n && j(e ? c.Skl.ONLINE : c.Skl.INVISIBLE)
+        u.G6.updateSetting(e), n && v(e ? c.Skl.ONLINE : c.Skl.INVISIBLE)
       },
       checked: t
     })]
@@ -164,7 +164,7 @@ function S(e) {
       children: O.intl.format(b.default["vtp/IS"], {
         learnMoreLink: f.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), (0, i.jsx)(v, {
+    }), (0, i.jsx)(j, {
       closePopout: t
     })]
   })
@@ -234,7 +234,7 @@ function N(e) {
       children: O.intl.format(b.default["vtp/IS"], {
         learnMoreLink: f.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), (0, i.jsx)(v, {
+    }), (0, i.jsx)(j, {
       closePopout: t
     })]
   })

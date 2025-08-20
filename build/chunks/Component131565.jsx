@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 131565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,18 +19,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk173893 = require("./173893.js"),
   b = require("./413135.js").Buffer;
 
-function y(e) {
+function _(e) {
   let {
     chatWallpaperState: t
   } = e, n = c.qM.useExperiment({
     location: "channel_chat_wallpaper"
-  }).enabled, d = (0, h.Z)(t.wallpaperId), f = null != d ? (0, a.I)(d.asset) : null, y = (null == d ? true : d.thumbhash) != null ? (0, l.xS)(b.from(d.thumbhash, "base64")) : true, [_, C] = i.useState(y);
+  }).enabled, d = (0, h.Z)(t.wallpaperId), f = null != d ? (0, a.I)(d.asset) : null, _ = (null == d ? true : d.thumbhash) != null ? (0, l.xS)(b.from(d.thumbhash, "base64")) : true, [y, C] = i.useState(_);
   return (i.useEffect(() => {
     null == f && t.isViewable && u.Z.shouldFetchWallpapers && (0, p.k9)()
   }, [f, t.isViewable]), i.useEffect(() => {
     if (null == f) return void C(true);
     let e = performance.now();
-    C(y), (0, o.p)(f, t => {
+    C(_), (0, o.p)(f, t => {
       if (t === f) {
         C(true);
         let n = performance.now();
@@ -40,11 +40,11 @@ function y(e) {
         })
       }
     })
-  }, [f, y]), t.isViewable && null != d) ? (0, r.jsxs)(r.Fragment, {
-    children: [null != _ && (0, r.jsx)("div", {
+  }, [f, _]), t.isViewable && null != d) ? (0, r.jsxs)(r.Fragment, {
+    children: [null != y && (0, r.jsx)("div", {
       className: g.thumbhashContainer,
       children: (0, r.jsx)("img", {
-        src: _,
+        src: y,
         alt: "",
         "aria-hidden": true
       })
@@ -58,11 +58,11 @@ function y(e) {
   }) : null
 }
 
-function _(e) {
+function y(e) {
   let {
     channel: t
   } = e, n = (0, f.Z)(t.id);
-  return null == n || !n.isViewable || !t.isDM() && !t.isMultiUserDM() && !t.isGroupDM() || d.t(t) && !n.isPreview ? null : (0, r.jsx)(y, {
+  return null == n || !n.isViewable || !t.isDM() && !t.isMultiUserDM() && !t.isGroupDM() || d.t(t) && !n.isPreview ? null : (0, r.jsx)(_, {
     chatWallpaperState: n
   })
 }

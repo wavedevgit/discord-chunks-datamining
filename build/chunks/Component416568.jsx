@@ -236,7 +236,7 @@ function eu(e) {
   } = e, [s] = (0, p.Wu)([M.ZP], () => {
     let e = M.ZP.getGuildsTree();
     return [e, e.version]
-  }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), f = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([v.Z], () => v.Z.isFullscreenInContext()), [_, C] = i.useState(false), x = i.useCallback(() => C(true), []), E = i.useCallback(() => C(false), []), A = i.useRef(false), [R] = i.useState(() => new h.V7), D = i.useRef(null), B = i.useRef(null), V = (0, u.OP)(), {
+  }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), f = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), [_, C] = i.useState(false), x = i.useCallback(() => C(true), []), E = i.useCallback(() => C(false), []), A = i.useRef(false), [R] = i.useState(() => new h.V7), D = i.useRef(null), B = i.useRef(null), V = (0, u.OP)(), {
     ref: F
   } = V, H = function(e, t) {
     if (null == e) return {};
@@ -274,7 +274,7 @@ function eu(e) {
   }), [er]);
   let {
     analyticsLocations: eu
-  } = (0, j.ZP)(y.Z.GUILDS_LIST), {
+  } = (0, v.ZP)(y.Z.GUILDS_LIST), {
     pathname: ed
   } = (0, c.TH)(), ep = eo(ed);
   (0, O.Ng)(() => {
@@ -357,7 +357,7 @@ function eu(e) {
       location: "GuildsBar"
     }),
     e_ = eO === I.u3.SERVER_RAIL_BOTTOM;
-  return (0, r.jsx)(j.Gt, {
+  return (0, r.jsx)(v.Gt, {
     value: eu,
     children: (0, r.jsx)(m.f6W, {
       theme: a,

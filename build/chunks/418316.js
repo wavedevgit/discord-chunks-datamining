@@ -32,7 +32,7 @@ function h(e) {
 }
 
 function g(e) {
-  var t, n, r, g, m, b, O, _, y, j, v, C, x, E, S;
+  var t, n, r, g, m, b, O, _, y, v, j, C, x, E, S;
   let {
     item: I,
     renderApplication: P
@@ -48,7 +48,7 @@ function g(e) {
         count: R
       });
     case d.O7.MOBILE_NATIVE_UPDATE_AVAILABLE:
-      let D = null != (v = null == (j = I.local_id) ? true : j.split("_").pop()) ? v : "unknown";
+      let D = null != (j = null == (v = I.local_id) ? true : v.split("_").pop()) ? j : "unknown";
       return "Update to build ".concat(D, " available!");
     case d.DY.FRIEND_SUGGESTION_CREATED:
       return a.Z.getRelationshipType(N), p.OGo.PENDING_OUTGOING, null != (C = I.body) ? C : "";

@@ -11,8 +11,8 @@ require.d(exports, {
   oE: () => f,
   pB: () => p,
   y: () => _,
-  yS: () => j,
-  yr: () => v
+  yS: () => v,
+  yr: () => j
 }), require("./781311.js");
 var Chunk879690 = require("./879690.js"),
   Chunk524437 = require("./524437.js"),
@@ -127,8 +127,8 @@ let d = (0, Chunk879690.U)(e => ({
   O = () => d.getState().dmsAllowed,
   _ = () => d.getState().nickname,
   y = () => d.getState().showActivity,
-  j = () => d.getState().mutedServer,
-  v = () => {
+  v = () => d.getState().mutedServer,
+  j = () => {
     var e, t;
     let {
       nickname: n

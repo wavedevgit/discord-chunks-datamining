@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk348130 = require("./348130.js"),
   Chunk359165 = require("./359165.js");
 
-function P(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function P(e) {
   return e
 }
 
-function I(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -130,7 +130,7 @@ function T(e) {
             }
             return i
           }(e, ["onClick"]);
-          return (0, r.jsx)(c.P3F, I(P({}, l), {
+          return (0, r.jsx)(c.P3F, P(I({}, l), {
             className: E.clickableTile,
             onClick: () => {
               null == i || i(), (0, g.Z)({
@@ -189,7 +189,7 @@ function N(e) {
     newestAnalyticsLocation: u
   } = (0, m.ZP)(f.Z.VC_TILE_ACTIVITY_INVITE), {
     entrypoints: p
-  } = (0, _._k)({
+  } = (0, y._k)({
     location: "single_user_tile"
   }), {
     enabled: h
@@ -204,7 +204,7 @@ function N(e) {
       let {
         default: e
       } = await Promise.all([n.e("7654"), n.e("62292")]).then(n.bind(n, 560114));
-      return n => (0, r.jsx)(e, I(P({}, n), {
+      return n => (0, r.jsx)(e, P(I({}, n), {
         guild: l,
         channel: t,
         source: O.t4x.ACTIVITY_ENTRY_POINT_TILE
@@ -214,7 +214,7 @@ function N(e) {
     })
   }
 
-  function y() {
+  function _() {
     (0, g.Z)({
       context: null != t ? {
         type: "channel",
@@ -251,7 +251,7 @@ function N(e) {
             variant: "secondary",
             icon: C,
             text: j.intl.string(j.t.qnFavb),
-            onClick: y
+            onClick: _
           })]
         })]
       })
@@ -277,14 +277,14 @@ function A(e) {
       guildId: n.id
     }).slice(0, 3),
     {
-      analyticsLocations: _
+      analyticsLocations: y
     } = (0, m.ZP)(f.Z.VC_TILE_ACTIVITY_SUGGESTION),
     S = i.useMemo(() => ({
       channel: t,
       type: "channel"
     }), [t]);
   return (0, r.jsx)(m.Gt, {
-    value: _,
+    value: y,
     children: (0, r.jsxs)(v.Z, {
       className: E.root,
       children: [s > 300 ? (0, r.jsx)(c.Text, {
@@ -309,7 +309,7 @@ function A(e) {
             tile_type: "activity suggestion",
             close_type: "permanent",
             n_participants: d
-          }), (0, y.Q3)(o.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
+          }), (0, _.Q3)(o.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
         },
         children: [(0, r.jsx)(C.Z, {}), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",

@@ -30,7 +30,7 @@ let v = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
       hasConnectPermission: l
     } = e, b = (0, h.J)(n.guild_id), O = i.useCallback(() => {
       b ? (0, p.hk)(n.guild_id, () => u.default.selectVoiceChannel(n.id)) : u.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, b]), j = t.filter(e => e.type === y.Ui.VOICE), E = 4 === j.length ? 2 : 3, S = (0, o.Wu)([d.Z], () => j.map(e => d.Z.getParticipant(n.id, e.id)).filter(g.lm), [n.id, j]);
+    }, [n.id, n.guild_id, b]), j = t.filter(e => e.type === _.Ui.VOICE), E = 4 === j.length ? 2 : 3, S = (0, o.Wu)([d.Z], () => j.map(e => d.Z.getParticipant(n.id, e.id)).filter(g.lm), [n.id, j]);
     return (0, r.jsxs)("div", {
       className: x.container,
       children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)("div", {
@@ -79,7 +79,7 @@ let v = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
           onClick: O,
           size: s.zx.Sizes.MEDIUM,
           children: l ? C.intl.string(C.t["7vb2cX"]) : C.intl.string(C.t.TVBCKS)
-        }), (0, r.jsx)(_.e, {
+        }), (0, r.jsx)(y.e, {
           channel: n
         })]
       })]

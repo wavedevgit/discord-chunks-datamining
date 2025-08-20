@@ -106,9 +106,9 @@ let x = Chunk647438.memo(function(e) {
         buttonText: y.intl.string(y.t["+IrDzM"]),
         header: B,
         art: (0, r.jsx)("img", {
-          src: v.Z,
+          src: j.Z,
           alt: "",
-          className: j.chatWallpaperDMListCoachmarkArt
+          className: v.chatWallpaperDMListCoachmarkArt
         }),
         body: V,
         align: L

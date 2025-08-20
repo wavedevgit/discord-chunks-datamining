@@ -1,7 +1,7 @@
 /** Chunk was on 5665 **/
 /** chunk id: 377929, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,7 +58,7 @@ function S(e, t) {
   }), e
 }
 
-function P(e) {
+function I(e) {
   let {
     channel: t
   } = e, [n, l] = i.useState(false), a = i.useRef(null);
@@ -76,7 +76,7 @@ function P(e) {
     autoInvert: false,
     onRequestClose: () => l(false),
     renderPopout: function(e) {
-      return (0, r.jsx)(I, S(E({}, e), {
+      return (0, r.jsx)(P, S(E({}, e), {
         channel: t
       }))
     },
@@ -96,15 +96,15 @@ function P(e) {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, l = (0, c.Z)(t), C = (0, f.Z)(t), E = (0, b.Z)(t.id), S = (0, g.Z)(t), P = (0, _.Z)({
+  } = e, l = (0, c.Z)(t), C = (0, f.Z)(t), E = (0, b.Z)(t.id), S = (0, g.Z)(t), I = (0, y.Z)({
     id: t.id,
     label: j.intl.string(j.t.DQ797u)
-  }), I = (0, u.Z)(t), Z = (0, d.Z)(t), T = (0, p.Z)(t, "Toolbar Overflow"), N = (0, m.Z)(t), A = (0, h.Z)(t), w = (0, y.Z)(t), R = x.vF.useSetting(), M = (0, o.e7)([v.Z], () => !a().isEmpty(v.Z.getVoiceStatesForChannel(t.id)));
+  }), P = (0, u.Z)(t), Z = (0, d.Z)(t), T = (0, p.Z)(t, "Toolbar Overflow"), N = (0, m.Z)(t), A = (0, h.Z)(t), w = (0, _.Z)(t), R = x.vF.useSetting(), M = (0, o.e7)([v.Z], () => !a().isEmpty(v.Z.getVoiceStatesForChannel(t.id)));
   return (0, r.jsxs)(s.v2r, {
     navId: "thread-context",
     onClose: n,
@@ -123,7 +123,7 @@ function I(e) {
     }), (0, r.jsxs)(s.kSQ, {
       children: [w, l, C, Z]
     }), (0, r.jsxs)(s.kSQ, {
-      children: [I, P]
+      children: [P, I]
     })]
   })
 }

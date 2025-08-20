@@ -54,7 +54,7 @@ function Z(e, t, n) {
 function T(e) {
   let {
     onJump: t
-  } = e, n = (0, a.e7)([y.Z, v.Z], () => y.Z.getChannel(v.Z.getChannelId())), {
+  } = e, n = (0, a.e7)([y.Z, j.Z], () => y.Z.getChannel(j.Z.getChannelId())), {
     messages: l,
     hasMore: s,
     loading: f,
@@ -70,11 +70,11 @@ function T(e) {
     everyoneFilter: C.ZP.everyoneFilter
   })), _ = (0, O.Us)({
     location: "RecentMentions"
-  }), j = (0, p.Z)(h), x = (0, p.Z)(g), E = (0, p.Z)(b);
+  }), v = (0, p.Z)(h), x = (0, p.Z)(g), E = (0, p.Z)(b);
   i.useEffect(() => {
     if (!C.ZP.hasLoadedEver) return void Z(n, true);
-    (null != j && h !== j || null != x && g !== x || null != E && b !== E) && Z(n, true)
-  }, [j, h, x, g, E, b, n, true]), (0, d.ZP)(() => {
+    (null != v && h !== v || null != x && g !== x || null != E && b !== E) && Z(n, true)
+  }, [v, h, x, g, E, b, n, true]), (0, d.ZP)(() => {
     (null == l ? true : l.some(m.k5)) && (c.Z.clearMentions(), Z(n, true))
   }), i.useEffect(() => () => {
     c.Z.truncateMentions(I.DJj)
@@ -126,7 +126,7 @@ function R(e) {
   if (null == t) return null;
   let o = y.Z.getChannel(t.channel_id);
   if (null == o || (0, g.aC)(o) && l && (0, f.sf)()) return null;
-  let a = j.Z.didAgree(o.getGuildId()),
+  let a = v.Z.didAgree(o.getGuildId()),
     u = !!(0, g.aC)(o) && !a;
   return (0, r.jsxs)("div", {
     className: N.container,

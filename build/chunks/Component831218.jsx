@@ -323,7 +323,7 @@ class V extends(r = Chunk647438.Component) {
       let o = Math.round((t.offsetHeight - 44 * i) / 44),
         a = o > n.length ? n.slice(0, o + 1) : n,
         s = a.map(e => null != r[e] ? r[e].getRecipientId() : null),
-        c = n.some(e => (0, j.Z)(e)),
+        c = n.some(e => (0, v.Z)(e)),
         u = {
           num_users_visible: a.length,
           num_users_visible_with_mobile_indicator: s.filter(e => null != e && A.Z.isMobileOnline(e)).length
@@ -352,7 +352,7 @@ class V extends(r = Chunk647438.Component) {
         totalRowCount: o,
         preRenderedChildren: a
       } = this.state, s = r[n[t]];
-      return null == s ? null : (0, i.jsx)(v.W, {
+      return null == s ? null : (0, i.jsx)(j.W, {
         channel: s,
         selected: s.id === l,
         "aria-posinset": a + t + 1,
@@ -443,8 +443,8 @@ let F = e => {
   }, []);
   (0, S.z)(E.R);
   let {
-    analyticsLocations: j
-  } = (0, _.ZP)(b.Z.CONTACTS_LIST), v = (0, Z.Ll)(), {
+    analyticsLocations: v
+  } = (0, _.ZP)(b.Z.CONTACTS_LIST), j = (0, Z.Ll)(), {
     keyboardModeEnabled: C,
     version: I
   } = (0, p.cj)([m.Z, T.Z], () => ({
@@ -487,7 +487,7 @@ let F = e => {
     setFocus: M
   });
   return (0, i.jsx)(_.Gt, {
-    value: j,
+    value: v,
     children: (0, i.jsx)(u.bG, {
       navigator: F,
       children: (0, i.jsx)(V, G(U({}, e), {
@@ -495,7 +495,7 @@ let F = e => {
         channels: O,
         privateChannelIds: y,
         listRef: D,
-        theme: null != v ? v : r,
+        theme: null != j ? j : r,
         version: I,
         createDMCTAButtonVariant: c
       }))

@@ -22,8 +22,8 @@ function g(e) {
     onClose: t,
     onConfirm: g,
     onCancel: b,
-    channel: y,
-    analyticsType: _,
+    channel: _,
+    analyticsType: y,
     popoutText: C,
     animation: x
   } = e;
@@ -46,9 +46,9 @@ function g(e) {
       }
       return e
     }({
-      type: _
-    }, (0, c.v_)(y)))
-  }, [_, y]);
+      type: y
+    }, (0, c.v_)(_)))
+  }, [y, _]);
   let v = i.useCallback(() => {
       null == g || g(), t()
     }, [g, t]),

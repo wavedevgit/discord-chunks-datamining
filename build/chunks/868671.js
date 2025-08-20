@@ -35,14 +35,14 @@ function v(e) {
     guildId: O
   } = e, [j, E] = r.useState(false), {
     requestId: S,
-    entries: P,
-    impressionCappedEntryIds: I,
+    entries: I,
+    impressionCappedEntryIds: P,
     hasLeaderboardEntry: Z
-  } = (0, m.Z)(v), T = (0, i.e7)([p.Z], () => p.Z.hidden), N = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([o.Z], () => o.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(O), [O]), R = (0, h.E)(w), M = null != R && R && (null == A ? true : A.isForumChannel()) === false, [k, D, L, U] = r.useMemo(() => {
+  } = (0, m.Z)(v), T = (0, i.e7)([p.Z], () => p.Z.hidden), N = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([o.Z], () => o.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(O), [O]), R = (0, h.E)(w), M = null != R && R && (null == A ? true : A.isForumChannel()) === false, [D, L, k, U] = r.useMemo(() => {
     let e;
-    if (null == P || 0 === P.length || null == S || !M) return [t, n, x];
-    let r = j ? P.length : Z ? 4 : 3,
-      i = P.slice(0, r);
+    if (null == I || 0 === I.length || null == S || !M) return [t, n, x];
+    let r = j ? I.length : Z ? 4 : 3,
+      i = I.slice(0, r);
     e = T ? [{
       type: a.so.HIDDEN_CONTENT_INVENTORY
     }] : i.map(e => ({
@@ -51,16 +51,16 @@ function v(e) {
       requestId: S
     }));
     let l = {
-      id: y.G,
+      id: _.G,
       type: a.so.CONTENT_INVENTORY_GROUP,
-      key: y.G,
+      key: _.G,
       count: e.length,
       index: n.length,
       title: C.intl.string(C.t["6gwSFR"]),
       onToggleExpand: () => {
         E(e => {
           let t = !e;
-          return u.default.track(_.rMx.MEMBERLIST_CONTENT_FEED_TOGGLED, {
+          return u.default.track(y.rMx.MEMBERLIST_CONTENT_FEED_TOGGLED, {
             channel_id: v,
             guild_id: O,
             expanded: t
@@ -68,15 +68,15 @@ function v(e) {
         })
       },
       expanded: j,
-      expandedCount: P.length,
+      expandedCount: I.length,
       feedHeight: e.map(g.iZ).reduce((e, t) => e + t, 0)
     };
     return [
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [v, P, j, t, O, S, n, x, T, M, Z]), B = r.useRef(0), F = r.useRef(P), H = r.useRef(true), G = r.useRef({
-    impressionCappedEntryIds: I
+  }, [v, I, j, t, O, S, n, x, T, M, Z]), B = r.useRef(0), G = r.useRef(I), F = r.useRef(true), H = r.useRef({
+    impressionCappedEntryIds: P
   }), V = r.useCallback(e => {
     var t;
     let n = Math.floor(e / g.YN),
@@ -84,33 +84,33 @@ function v(e) {
     B.current = Math.max(B.current, r)
   }, [U]);
   return r.useEffect(() => {
-    F.current = P
-  }, [P]), r.useEffect(() => {
-    G.current = {
-      impressionCappedEntryIds: I
+    G.current = I
+  }, [I]), r.useEffect(() => {
+    H.current = {
+      impressionCappedEntryIds: P
     }
-  }, [I]), r.useEffect(() => (B.current = 0, H.current = Date.now(), () => {
+  }, [P]), r.useEffect(() => (B.current = 0, F.current = Date.now(), () => {
     var e, t;
-    if (null == S || null == H.current || Date.now() - H.current < 3e3) return;
-    let n = null != (t = null == (e = F.current) ? true : e.map(e => e.id)) ? t : [],
+    if (null == S || null == F.current || Date.now() - F.current < 3e3) return;
+    let n = null != (t = null == (e = G.current) ? true : e.map(e => e.id)) ? t : [],
       r = n.slice(0, B.current);
-    !T && N && M && ((0, f.e)(_.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
+    !T && N && M && ((0, f.e)(y.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
       request_id: S,
-      first_shown_at: H.current,
+      first_shown_at: F.current,
       item_ids: r,
       surface_type: b.Kd.GUILD_MEMBER_LIST,
       channel_id: v,
       guild_id: O,
       all_item_ids: n,
-      impression_capped_item_ids: [...G.current.impressionCappedEntryIds]
+      impression_capped_item_ids: [...H.current.impressionCappedEntryIds]
     }), (0, d.wm)("useInjectContentInventoryFeed") && l.Z.dispatch({
       type: "CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS",
       itemIds: r
     }))
   }), [S, v, O, T, N, M]), {
-    groups: k,
-    rows: D,
-    version: L,
+    groups: D,
+    rows: L,
+    version: k,
     updateMaxRowSeen: V
   }
 }

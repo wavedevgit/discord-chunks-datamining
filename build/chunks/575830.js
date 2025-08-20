@@ -1,7 +1,7 @@
-/** Chunk was on 30557 **/
-/** chunk id: 575830, original params: t,n,e (module,exports,require) **/
+/** Chunk was on 79521 **/
+/** chunk id: 575830, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -9,19 +9,19 @@ var Chunk647438 = require("./647438.js"),
   Chunk637565 = require("./637565.js"),
   Chunk14263 = require("./14263.js");
 
-function s(t, n) {
-  let e = (0, l.e7)([d.Z], () => null != t ? d.Z.getRolesSnapshot(t.id) : true),
-    s = (0, a.Z)(null == t ? true : t.id);
-  return i.useMemo(() => {
-    let i = null != t && null != e ? (0, r.T)(t, e, n) : [],
-      l = 0;
-    for (let t of i) {
-      let n = t.id;
-      if (null != n) {
-        let t = null == s ? true : s[n];
-        null != t && (l += t)
+function o(e, t) {
+  let n = (0, i.e7)([r.Z], () => null != e ? r.Z.getRolesSnapshot(e.id) : true),
+    o = (0, a.Z)(null == e ? true : e.id);
+  return l.useMemo(() => {
+    let l = null != e && null != n ? (0, u.T)(e, n, t) : [],
+      i = 0;
+    for (let e of l) {
+      let t = e.id;
+      if (null != t) {
+        let e = null == o ? true : o[t];
+        null != e && (i += e)
       }
     }
-    return l
-  }, [s, t, n, e])
+    return i
+  }, [o, e, t, n])
 }

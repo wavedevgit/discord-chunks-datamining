@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function P(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = Chunk647438.memo(function(e) {
+let P = Chunk647438.memo(function(e) {
     let {
       guildId: t,
       channelId: n,
@@ -118,7 +118,7 @@ let I = Chunk647438.memo(function(e) {
             [E.faded]: c || u
           })
         })]
-      }), (0, r.jsx)(I, {
+      }), (0, r.jsx)(P, {
         guildId: i,
         channelId: l.id,
         user: s,
@@ -139,7 +139,7 @@ let I = Chunk647438.memo(function(e) {
       user: o,
       blocked: d
     } = t, v = l.getGuildId(), O = C.default.getId(), {
-      newestAnalyticsLocation: I
+      newestAnalyticsLocation: P
     } = (0, g.ZP)(m.Z.AUDIENCE_TILE), T = (0, f.bp)(), N = (0, u.e7)([x.ZP], () => {
       var e;
       return null != v && (null == (e = x.ZP.getMember(v, o.id)) ? true : e.premiumSince) != null
@@ -158,14 +158,14 @@ let I = Chunk647438.memo(function(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
-        return t => (0, r.jsx)(e, P(S({}, t), {
+        return t => (0, r.jsx)(e, I(S({}, t), {
           user: o,
           guildId: v,
           channel: l,
           showMediaItems: true,
           showStageChannelItems: true,
           showChatItems: false,
-          onInteraction: (0, y.u)("GuildChannelUserContextMenu", I, {
+          onInteraction: (0, _.u)("GuildChannelUserContextMenu", P, {
             targetUserId: o.id,
             tileType: j.TH.USER
           })
@@ -173,14 +173,14 @@ let I = Chunk647438.memo(function(e) {
       }, {
         context: T
       })
-    }, [o, O, T, v, l, I]);
-    return (0, r.jsx)(_.Z, {
+    }, [o, O, T, v, l, P]);
+    return (0, r.jsx)(y.Z, {
       targetElementRef: A,
       user: o,
       guildId: l.guild_id,
       channelId: l.id,
       clickTrap: true,
-      children: e => (0, r.jsx)(p.P3F, P(S({
+      children: e => (0, r.jsx)(p.P3F, I(S({
         innerRef: A,
         className: a()(E.tileContainer, {
           [E.singleIcon]: N || d,
