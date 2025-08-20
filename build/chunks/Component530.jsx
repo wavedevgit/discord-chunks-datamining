@@ -58,7 +58,8 @@ function g(e) {
           textClassName: m.nicknameWithDisplayNameStyles,
           shouldWrap: true,
           loop: true,
-          inProfile: true
+          inProfile: true,
+          shouldUnderlineOnHover: null != T
         })
       }) : (0, r.jsx)(o.Text, {
         className: m.nickname,

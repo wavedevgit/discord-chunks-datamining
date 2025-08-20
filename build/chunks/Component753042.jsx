@@ -1,4 +1,4 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 753042, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -24,16 +24,16 @@ function C(A) {
     member: e
   } = A, t = (0, l.e7)([c.Z], () => c.Z.getGuild(e.guildId), [e.guildId]), C = (0, o.mh)(e.userId, e.guildId), B = (0, o.mV)(e.userId, e.guildId), w = (0, o.LD)(e.userId), D = (0, o.wi)(e.userId, e.guildId);
   return (r.useEffect(() => {
-    (0, s.zO)(e.guildId)
+    (0, a.zO)(e.guildId)
   }, [e.guildId]), null == t) ? null : (0, n.jsx)(i.xJW, {
     title: d.intl.string(d.t["ldCE/v"]),
     titleClassName: E.infoTitle,
-    children: (0, n.jsxs)(u.WM, {
-      children: [(0, n.jsx)(u._2, {
+    children: (0, n.jsxs)(h.WM, {
+      children: [(0, n.jsx)(h._2, {
         icon: (0, n.jsx)(i.lZ8, {
           size: "custom",
-          width: u.Mn,
-          height: u.Mn
+          width: h.Mn,
+          height: h.Mn
         }),
         name: (0, n.jsx)(i.Text, {
           variant: "text-sm/medium",
@@ -42,20 +42,20 @@ function C(A) {
         }),
         description: C ? (0, n.jsx)(i.sV5, {
           size: "custom",
-          width: u.Mn,
-          height: u.Mn,
+          width: h.Mn,
+          height: h.Mn,
           color: i.TVs.colors.STATUS_POSITIVE
         }) : (0, n.jsx)(i.CTb, {
           size: "custom",
-          width: u.Mn,
-          height: u.Mn,
+          width: h.Mn,
+          height: h.Mn,
           color: i.TVs.colors.STATUS_DANGER
         })
-      }), B !== o.qc.NO_GATE && (0, n.jsx)(u._2, {
+      }), B !== o.qc.NO_GATE && (0, n.jsx)(h._2, {
         icon: (0, n.jsx)(i.snC, {
           size: "custom",
-          width: u.Mn,
-          height: u.Mn
+          width: h.Mn,
+          height: h.Mn
         }),
         name: (0, n.jsx)(i.Text, {
           variant: "text-sm/medium",
@@ -64,21 +64,21 @@ function C(A) {
         }),
         description: B === o.qc.AGREED ? (0, n.jsx)(i.sV5, {
           size: "custom",
-          width: u.Mn,
-          height: u.Mn,
+          width: h.Mn,
+          height: h.Mn,
           color: i.TVs.colors.STATUS_POSITIVE
         }) : (0, n.jsx)(i.CTb, {
           size: "custom",
-          width: u.Mn,
-          height: u.Mn,
+          width: h.Mn,
+          height: h.Mn,
           color: i.TVs.colors.STATUS_DANGER
         })
-      }), (0, n.jsx)(u._2, {
+      }), (0, n.jsx)(h._2, {
         icon: (0, n.jsx)(i.gw7, {
           size: "custom",
           color: "currentColor",
-          width: u.Mn,
-          height: u.Mn
+          width: h.Mn,
+          height: h.Mn
         }),
         name: (0, n.jsx)(i.Text, {
           variant: "text-sm/medium",
@@ -90,10 +90,10 @@ function C(A) {
           color: "text-default",
           children: w
         })
-      }), (0, n.jsx)(u._2, {
-        icon: (0, n.jsx)(a.Vj, {
+      }), (0, n.jsx)(h._2, {
+        icon: (0, n.jsx)(s.Vj, {
           guild: t,
-          size: a.Vj.Sizes.SMOL,
+          size: s.Vj.Sizes.SMOL,
           animate: false,
           className: E.guildIcon
         }),
@@ -107,11 +107,11 @@ function C(A) {
           color: "text-default",
           children: D
         })
-      }), (0, n.jsx)(u._2, {
+      }), (0, n.jsx)(h._2, {
         icon: (0, n.jsx)(i.ejJ, {
           size: "custom",
-          width: u.Mn,
-          height: u.Mn
+          width: h.Mn,
+          height: h.Mn
         }),
         name: (0, n.jsx)(i.Text, {
           variant: "text-sm/medium",
@@ -127,7 +127,7 @@ function C(A) {
             showJoinMethodContextAsFooter: true,
             onClickInviter: A => {
               let t = f.Z.getChannelId();
-              (0, v.r)(e.guildId, A.id, null != t ? t : h.lds)
+              (0, v.r)(e.guildId, A.id, null != t ? t : u.lds)
             }
           })
         })

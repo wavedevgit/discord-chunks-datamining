@@ -1,4 +1,4 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 479099, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => M,
@@ -7,7 +7,7 @@ require.d(exports, {
 var n, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -65,18 +65,18 @@ function M(A) {
     ariaLabel: H
   } = A, {
     name: b,
-    emojiId: O,
-    emojiName: Q
-  } = e, P = null != p, [j, V] = l.useState(false), m = (0, o.e7)([u.ZP], () => null != O ? u.ZP.getUsableCustomEmojiById(O) : null), T = P || null != M, y = (!P || !j) && (null != O || null != Q), L = 0 === n, x = l.useRef(null), N = (0, o.e7)([v.Z], () => v.Z.keyboardModeEnabled), Z = (0, r.jsxs)(r.Fragment, {
+    emojiId: Q,
+    emojiName: O
+  } = e, P = null != p, [V, j] = l.useState(false), m = (0, o.e7)([h.ZP], () => null != Q ? h.ZP.getUsableCustomEmojiById(Q) : null), T = P || null != M, y = (!P || !V) && (null != Q || null != O), L = 0 === n, x = l.useRef(null), N = (0, o.e7)([v.Z], () => v.Z.keyboardModeEnabled), Z = (0, r.jsxs)(r.Fragment, {
     children: [y ? (0, r.jsx)(f.Z, {
-      className: a()(C.emoji, {
+      className: s()(C.emoji, {
         [C.small]: L
       }),
-      emojiId: O,
-      emojiName: Q,
+      emojiId: Q,
+      emojiName: O,
       animated: !!(null == m ? true : m.animated),
       size: "reaction"
-    }) : null, j && P && (0, r.jsx)("div", {
+    }) : null, V && P && (0, r.jsx)("div", {
       className: C.closeCircle,
       children: (0, r.jsx)(g.Dio, {
         size: "md",
@@ -91,7 +91,7 @@ function M(A) {
     })]
   }), S = {
     key: e.id,
-    className: a()(C.pill, {
+    className: s()(C.pill, {
       [C.disabled]: i,
       [C.clickable]: T,
       [C.small]: L,
@@ -102,7 +102,7 @@ function M(A) {
       null == M || M(A), null == p || p(e), N || null == x.current || x.current.blur()
     },
     onContextMenu: A => (A => {
-      let n = h.Sb.getSetting();
+      let n = u.Sb.getSetting();
       d.wS && n && (0, c.jW)(A, async () => {
         let {
           default: A
@@ -112,9 +112,9 @@ function M(A) {
         }))
       })
     })(A),
-    onMouseEnter: () => P && V(true),
-    onMouseLeave: () => P && V(false)
-  }, R = (0, s.JA)("forum-tag-".concat(e.id));
+    onMouseEnter: () => P && j(true),
+    onMouseLeave: () => P && j(false)
+  }, R = (0, a.JA)("forum-tag-".concat(e.id));
   return T ? (0, r.jsx)(g.P3F, w(B(w(B({}, R), {
     innerRef: x,
     focusProps: {
@@ -148,7 +148,7 @@ function p(A) {
       }, A.id))
     }),
     children: A => (0, r.jsx)("div", w(B({}, A), {
-      className: a()(C.pill, {
+      className: s()(C.pill, {
         [C.small]: l
       }),
       children: (0, r.jsxs)(g.Text, {

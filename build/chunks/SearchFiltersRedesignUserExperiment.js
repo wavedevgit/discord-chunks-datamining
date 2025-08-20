@@ -2,14 +2,14 @@
 /** chunk id: 28964, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  dB: () => s,
-  xd: () => l
+  KS: () => l,
+  nP: () => s
 });
 var Chunk818083 = require("./818083.js"),
   Chunk154579 = require("./154579.js");
 let a = {
-    isPopoutFiltersRedesignEnabled: false,
-    isResultFiltersRedesignEnabled: false
+    isNoTopFiltersRedesignEnabled: false,
+    isSuggestTopFiltersRedesignEnabled: false
   },
   o = (0, Chunk818083.B)({
     kind: "user",
@@ -18,24 +18,17 @@ let a = {
     defaultConfig: a,
     treatments: [{
       id: 1,
-      label: "Enable better popout filters",
+      label: "No top filters",
       config: {
-        isPopoutFiltersRedesignEnabled: true,
-        isResultFiltersRedesignEnabled: false
+        isNoTopFiltersRedesignEnabled: true,
+        isSuggestTopFiltersRedesignEnabled: false
       }
     }, {
       id: 2,
-      label: "Enable better result filters",
+      label: "Suggest top filters",
       config: {
-        isPopoutFiltersRedesignEnabled: false,
-        isResultFiltersRedesignEnabled: true
-      }
-    }, {
-      id: 3,
-      label: "Enable better popout and result filters",
-      config: {
-        isPopoutFiltersRedesignEnabled: true,
-        isResultFiltersRedesignEnabled: true
+        isNoTopFiltersRedesignEnabled: false,
+        isSuggestTopFiltersRedesignEnabled: true
       }
     }]
   });
@@ -49,7 +42,7 @@ function s(e) {
     location: n,
     autoTrackExposure: r
   }), {
-    isPopoutFiltersRedesignEnabled: s
+    isNoTopFiltersRedesignEnabled: s
   } = o.useExperiment({
     location: n
   }, {
@@ -68,7 +61,7 @@ function l(e) {
     location: n,
     autoTrackExposure: r
   }), {
-    isResultFiltersRedesignEnabled: s
+    isSuggestTopFiltersRedesignEnabled: s
   } = o.useExperiment({
     location: n
   }, {

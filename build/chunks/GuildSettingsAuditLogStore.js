@@ -1,4 +1,4 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 987707, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -25,11 +25,11 @@ let E = Chunk149765.$e(Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.BAN_MEMBERS
   I = [],
   H = [],
   b = [],
-  O = true,
-  Q = false,
+  Q = true,
+  O = false,
   P = false,
-  j = true,
-  V = false,
+  V = true,
+  j = false,
   m = null,
   T = Chunk981631.rsA.ALL,
   y = null,
@@ -41,43 +41,43 @@ function N(A) {
     t = 0;
   return A.reverse().forEach(A => {
     var n, r, l;
-    let a = [],
-      s = null,
+    let s = [],
+      a = null,
       o = null,
       f = null;
-    if (null != A.reason && a.push(new g.ms(d.zUn.REASON, null, A.reason)), null != A.changes)
+    if (null != A.reason && s.push(new g.ms(d.zUn.REASON, null, A.reason)), null != A.changes)
       for (let e of A.changes) {
         let A = new g.ms(e.key, e.old_value, e.new_value);
-        a.push(A), A.key === d.zUn.NAME ? s = A : A.key === d.zUn.TYPE ? f = A : A.key === d.zUn.TITLE && (o = A)
+        s.push(A), A.key === d.zUn.NAME ? a = A : A.key === d.zUn.TYPE ? f = A : A.key === d.zUn.TITLE && (o = A)
       }
     if (A.action_type === d.rsA.MEMBER_PRUNE) {
       let e = null != A && null != A.options && null != A.options.delete_member_days ? A.options.delete_member_days : 1,
         t = new g.ms(d.zUn.PRUNE_DELETE_DAYS, null, e);
-      a.push(t)
+      s.push(t)
     }
-    A.action_type === d.rsA.AUTO_MODERATION_BLOCK_MESSAGE && (null == (r = A.options) ? true : r.auto_moderation_rule_name) != null && a.push(new g.ms(d.zUn.AUTO_MODERATION_TRIGGERED_RULE_NAME, null, A.options.auto_moderation_rule_name)), A.action_type === d.rsA.VOICE_CHANNEL_STATUS_CREATE && (null == (n = A.options) ? true : n.status) != null && a.push(new g.ms(d.zUn.STATUS, null, A.options.status));
+    A.action_type === d.rsA.AUTO_MODERATION_BLOCK_MESSAGE && (null == (r = A.options) ? true : r.auto_moderation_rule_name) != null && s.push(new g.ms(d.zUn.AUTO_MODERATION_TRIGGERED_RULE_NAME, null, A.options.auto_moderation_rule_name)), A.action_type === d.rsA.VOICE_CHANNEL_STATUS_CREATE && (null == (n = A.options) ? true : n.status) != null && s.push(new g.ms(d.zUn.STATUS, null, A.options.status));
     let v = new g.ZP({
         id: A.id,
         action: A.action_type,
         targetId: A.target_id,
         userId: A.user_id,
-        changes: a,
+        changes: s,
         options: A.options
       }),
-      u = e[0];
+      h = e[0];
     if (function(A, e, t) {
         let n = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 30,
           r = arguments.length > 4 && true !== arguments[4] ? arguments[4] : 50;
         return null != A && A.action === e.action && A.targetId === e.targetId && A.userId === e.userId && i().isEqual(A.options, e.options) && e.timestampStart.diff(A.timestampStart, "minutes") < n && t < r && e.targetType !== d.KFR.INVITE && e.action !== d.rsA.MESSAGE_DELETE && e.action !== d.rsA.MESSAGE_BULK_DELETE && e.action !== d.rsA.MESSAGE_PIN && e.action !== d.rsA.MESSAGE_UNPIN && e.action !== d.rsA.MEMBER_MOVE && e.action !== d.rsA.MEMBER_DISCONNECT && e.action !== d.rsA.BOT_ADD && e.action !== d.rsA.APPLICATION_COMMAND_PERMISSION_UPDATE && e.action !== d.rsA.MEMBER_PRUNE
-      }(u, v, t)) {
-      e[0] = u.merge({
-        changes: [...u.changes, ...v.changes],
+      }(h, v, t)) {
+      e[0] = h.merge({
+        changes: [...h.changes, ...v.changes],
         timestampEnd: v.timestampStart
       }), t++;
       return
     }
-    if (v.actionType === d.vB8.DELETE && (null != s || null != o)) {
-      let A = null != (l = null == s ? true : s.oldValue) ? l : null == o ? true : o.oldValue;
+    if (v.actionType === d.vB8.DELETE && (null != a || null != o)) {
+      let A = null != (l = null == a ? true : a.oldValue) ? l : null == o ? true : o.oldValue;
       (v.targetType === d.KFR.CHANNEL || v.targetType === d.KFR.CHANNEL_OVERWRITE) && null !== f && (0, c.r8)(f.oldValue) && (A = "#".concat(A)), null == L[v.targetType] ? L[v.targetType] = {
         [v.targetId]: A
       } : L[v.targetType][v.targetId] = A
@@ -92,8 +92,8 @@ function Z(A) {
   } = A;
   if (e !== d.pNK.AUDIT_LOG) returnfalse;
   let t = v.ZP.getMembers(C),
-    n = h.Z.getGuild(C),
-    r = null != C ? u.Z.getUnsafeMutableRoles(C) : true;
+    n = u.Z.getGuild(C),
+    r = null != C ? h.Z.getUnsafeMutableRoles(C) : true;
   D = i()(t).filter(A => A.roles.some(e => {
     if (null != n) {
       if (A.userId === n.ownerId) returntrue;
@@ -128,19 +128,19 @@ class S extends(n = Chunk442837.ZP.Store) {
     return b
   }
   get isInitialLoading() {
-    return O
+    return Q
   }
   get isLoading() {
-    return Q
+    return O
   }
   get isLoadingNextPage() {
     return P
   }
   get hasOlderLogs() {
-    return j
+    return V
   }
   get hasError() {
-    return V
+    return j
   }
   get userIds() {
     return D
@@ -168,14 +168,14 @@ class S extends(n = Chunk442837.ZP.Store) {
 }) : S[r] = "GuildSettingsAuditLogStore";
 let R = new S(Chunk570140.Z, {
   AUDIT_LOG_FETCH_START: function() {
-    Q = true
+    O = true
   },
   AUDIT_LOG_FETCH_SUCCESS: function(A) {
     var e;
-    x = 0, O = false, Q = false, j = true, V = false, B = N(A.logs), w = A.integrations, M = A.webhooks, p = A.guildScheduledEvents, I = null != (e = A.automodRules) ? e : [], H = A.threads, b = A.applicationCommands, A.logs.length < d.Rg9 && (j = false)
+    x = 0, Q = false, O = false, V = true, j = false, B = N(A.logs), w = A.integrations, M = A.webhooks, p = A.guildScheduledEvents, I = null != (e = A.automodRules) ? e : [], H = A.threads, b = A.applicationCommands, A.logs.length < d.Rg9 && (V = false)
   },
   AUDIT_LOG_FETCH_FAIL: function() {
-    Q = false, V = true, B = []
+    O = false, j = true, B = []
   },
   AUDIT_LOG_FETCH_NEXT_PAGE_START: function(A) {
     let {
@@ -191,9 +191,9 @@ let R = new S(Chunk570140.Z, {
       guildScheduledEvents: r,
       automodRules: l,
       threads: i,
-      applicationCommands: a
+      applicationCommands: s
     } = A;
-    if (P = false, w = t, M = n, p = r, I = l, H = i, b = a, (0 === e.length || e.length < d.Rg9) && (j = false), e.length > 0) {
+    if (P = false, w = t, M = n, p = r, I = l, H = i, b = s, (0 === e.length || e.length < d.Rg9) && (V = false), e.length > 0) {
       let A = N(e);
       B = [...B, ...A]
     }
@@ -230,6 +230,6 @@ let R = new S(Chunk570140.Z, {
     })
   },
   GUILD_SETTINGS_CLOSE: function() {
-    B = [], D = [], T = Chunk981631.rsA.ALL, m = null, y = null, L = {}, x = 0, O = true, w = [], M = [], p = [], I = [], H = []
+    B = [], D = [], T = Chunk981631.rsA.ALL, m = null, y = null, L = {}, x = 0, Q = true, w = [], M = [], p = [], I = [], H = []
   }
 })

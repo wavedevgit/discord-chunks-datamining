@@ -1,4 +1,4 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 727381, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -50,17 +50,17 @@ function w(A) {
     location: r,
     className: g,
     onNavigate: E
-  } = A, w = (0, i.e7)([o.default], () => o.default.getUser(e), [e]), D = (0, i.e7)([s.ZP], () => s.ZP.getMember(t, e), [t, e]);
+  } = A, w = (0, i.e7)([o.default], () => o.default.getUser(e), [e]), D = (0, i.e7)([a.ZP], () => a.ZP.getMember(t, e), [t, e]);
   return null == w || null == D ? null : (0, n.jsxs)("div", {
     className: l()(C.container, g),
-    children: [(0, n.jsx)(B, {}), (0, n.jsxs)(a.Ttm, {
+    children: [(0, n.jsx)(B, {}), (0, n.jsxs)(s.Ttm, {
       className: C.innerContainer,
-      children: [(0, n.jsx)(h.Z, {
+      children: [(0, n.jsx)(u.Z, {
         member: D
       }), (0, n.jsx)(d.Z, {
         userId: e,
         guildId: t
-      }), (0, n.jsx)(u.Z, {
+      }), (0, n.jsx)(h.Z, {
         member: D,
         onNavigate: E
       }), (0, n.jsx)(f.Z, {

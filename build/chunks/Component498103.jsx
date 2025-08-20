@@ -1,4 +1,4 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 498103, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   T: () => f
@@ -8,8 +8,8 @@ require("./647438.js");
 var Chunk331595 = require("./331595.js"),
   Chunk84502 = require("./84502.js");
 let i = ["#be0351", "#ff2c52"],
-  a = ["#ffb84b", "#ffe361"],
-  s = [.12, .25],
+  s = ["#ffb84b", "#ffe361"],
+  a = [.12, .25],
   o = [{
     base: 5,
     tint: 1
@@ -29,8 +29,8 @@ let i = ["#be0351", "#ff2c52"],
     var e, t, {
         width: f = 24,
         height: v = 24,
-        primaryTintColor: u,
-        secondaryTintColor: h
+        primaryTintColor: h,
+        secondaryTintColor: u
       } = A,
       d = function(A, e) {
         if (null == A) return {};
@@ -52,11 +52,11 @@ let i = ["#be0351", "#ff2c52"],
       secondaryColorsTransformed: C
     } = (0, l.s)({
       primaryBaseColors: i,
-      primaryTintColor: u,
-      primaryTintLuminances: s,
+      primaryTintColor: h,
+      primaryTintLuminances: a,
       primaryLuminanceWeights: o,
-      secondaryBaseColors: a,
-      secondaryTintColor: h,
+      secondaryBaseColors: s,
+      secondaryTintColor: u,
       secondaryTintLuminances: g,
       secondaryLuminanceWeights: c
     });

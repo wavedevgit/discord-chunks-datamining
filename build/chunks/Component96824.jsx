@@ -1,14 +1,14 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 96824, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
-  S: () => u
+  S: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk772848 = require("./772848.js"),
   Chunk331595 = require("./331595.js"),
   Chunk84502 = require("./84502.js");
-let s = ["#be0351", "#ff2c52", "#f0f0f0"],
+let a = ["#be0351", "#ff2c52", "#f0f0f0"],
   o = ["#ffb84b", "#ffe361", "#f0f0f0"],
   g = [.3, .4, 1],
   c = [{
@@ -32,10 +32,10 @@ let s = ["#be0351", "#ff2c52", "#f0f0f0"],
     base: 2,
     tint: 1
   }],
-  u = A => {
+  h = A => {
     var e, t, {
-        width: u = 24,
-        height: h = 24,
+        width: h = 24,
+        height: u = 24,
         primaryTintColor: d,
         secondaryTintColor: E
       } = A,
@@ -58,8 +58,8 @@ let s = ["#be0351", "#ff2c52", "#f0f0f0"],
       {
         primaryColorsTransformed: w,
         secondaryColorsTransformed: D
-      } = (0, a.s)({
-        primaryBaseColors: s,
+      } = (0, s.s)({
+        primaryBaseColors: a,
         primaryTintColor: d,
         primaryTintLuminances: g,
         primaryLuminanceWeights: c,
@@ -86,8 +86,8 @@ let s = ["#be0351", "#ff2c52", "#f0f0f0"],
       }
       return A
     }({}, (0, i.Z)(C)), t = t = {
-      width: u,
-      height: h,
+      width: h,
+      height: u,
       viewBox: "0 0 16 16",
       fill: "none",
       xmlns: "http://www.w3.org/2000/svg",

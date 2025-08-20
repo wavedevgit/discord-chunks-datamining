@@ -402,7 +402,8 @@ function eg(e) {
     userName: eM,
     displayNameStyles: null == f ? true : f.displayNameStyles,
     effectDisplayType: $ || s || em ? D.F.ANIMATED : D.F.PLAIN,
-    loop: $
+    loop: $,
+    boldFontOpacity: .9
   }), e1 = eN ? (0, r.jsxs)(r.Fragment, {
     children: [e0, (0, r.jsx)(U.ZP, {
       primaryGuild: null == f ? true : f.primaryGuild,

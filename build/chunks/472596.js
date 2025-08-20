@@ -1,12 +1,12 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 472596, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   RE: () => f,
-  RN: () => u,
+  RN: () => h,
   po: () => d,
   vN: () => v,
   xb: () => E,
-  zq: () => h
+  zq: () => u
 });
 var n, Chunk647438 = require("./647438.js"),
   Chunk399606 = require("./399606.js"),
@@ -22,7 +22,7 @@ let f = (A, e) => {
     userId: n,
     colorRoleId: r
   } = A;
-  (0, a.openUserProfileModal)({
+  (0, s.openUserProfileModal)({
     userId: n,
     guildId: t,
     sourceAnalyticsLocations: e,
@@ -47,7 +47,7 @@ function v(A, e, t, n) {
   }, [A, l, n, t, e])
 }
 
-function u(A, e, t) {
+function h(A, e, t) {
   let {
     analyticsLocations: n
   } = (0, i.ZP)();
@@ -64,12 +64,12 @@ function u(A, e, t) {
   }, [A, t, n, e])
 }
 
-function h(A) {
-  return (0, l.e7)([o.Z, s.Z], () => {
+function u(A) {
+  return (0, l.e7)([o.Z, a.Z], () => {
     var e;
     if (null == A) return null;
     let t = o.Z.getGuild(A.guildId);
-    return null == t || null == A.highestRoleId ? null : null != (e = s.Z.getRole(t.id, A.highestRoleId)) ? e : null
+    return null == t || null == A.highestRoleId ? null : null != (e = a.Z.getRole(t.id, A.highestRoleId)) ? e : null
   }, [A])
 }
 var d = ((n = {})[n.LOADING = 0] = "LOADING", n[n.SUCCESS_STILL_INDEXING = 1] = "SUCCESS_STILL_INDEXING", n[n.SUCCESS_EMPTY = 2] = "SUCCESS_EMPTY", n[n.SUCCESS_FULL = 3] = "SUCCESS_FULL", n);

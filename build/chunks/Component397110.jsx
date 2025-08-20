@@ -1,4 +1,4 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 397110, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   K: () => o
@@ -8,8 +8,8 @@ require("./647438.js");
 var Chunk331595 = require("./331595.js"),
   Chunk84502 = require("./84502.js");
 let i = ["#847D8B", "#D1CDD5"],
-  a = [.2, .65],
-  s = [{
+  s = [.2, .65],
+  a = [{
     base: 4,
     tint: 1
   }, {
@@ -42,8 +42,8 @@ let i = ["#847D8B", "#D1CDD5"],
     } = (0, l.s)({
       primaryBaseColors: i,
       primaryTintColor: c,
-      primaryTintLuminances: a,
-      primaryLuminanceWeights: s
+      primaryTintLuminances: s,
+      primaryLuminanceWeights: a
     });
     return (0, n.jsxs)("svg", (e = function(A) {
       for (var e = 1; e < arguments.length; e++) {

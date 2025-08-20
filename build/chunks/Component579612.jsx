@@ -24,7 +24,8 @@ var Chunk120356 = require("./120356.js"),
 
 function m(e) {
   let {
-    channel: t
+    channel: t,
+    className: n
   } = e;
   if (t.isDM()) {
     let e = t.getRecipientId(),
@@ -45,9 +46,10 @@ function m(e) {
     size: o.EFr.SIZE_20,
     experimentLocation: "search_popout"
   });
-  let n = (0, l.KS)(t);
-  return null == n ? null : (0, r.jsx)(n, {
-    className: h.searchResultChannelIcon
+  let i = (0, l.KS)(t);
+  return null == i ? null : (0, r.jsx)(i, {
+    className: n,
+    color: "currentColor"
   })
 }
 

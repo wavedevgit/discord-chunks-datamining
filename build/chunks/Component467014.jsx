@@ -1,7 +1,7 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 467014, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,24 +15,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk87819 = require("./87819.js");
 
-function u(A) {
+function h(A) {
   let {
     userId: e,
     guildId: t
-  } = A, u = (0, l.e7)([a.ZP], () => a.ZP.getGuildSidebarState(t), [t]), {
-    messagesCount: h,
+  } = A, h = (0, l.e7)([s.ZP], () => s.ZP.getGuildSidebarState(t), [t]), {
+    messagesCount: u,
     linksCount: d,
     mediaCount: E
-  } = (0, o.P2)(e, t), C = new Intl.NumberFormat(f.intl.currentLocale).format(h), B = new Intl.NumberFormat(f.intl.currentLocale).format(d), w = new Intl.NumberFormat(f.intl.currentLocale).format(E), D = r.useCallback(async A => {
-    if (null == u) return;
+  } = (0, o.P2)(e, t), C = new Intl.NumberFormat(f.intl.currentLocale).format(u), B = new Intl.NumberFormat(f.intl.currentLocale).format(d), w = new Intl.NumberFormat(f.intl.currentLocale).format(E), D = r.useCallback(async A => {
+    if (null == h) return;
     let n = (0, o.Ow)(e, A, {
       include_nsfw: true
     });
-    await (0, s.r)(t, e, u.baseChannelId, {
+    await (0, a.r)(t, e, h.baseChannelId, {
       modViewPanel: c.k.MESSAGE_HISTORY,
       additionalSearchQuery: n
     })
-  }, [t, u, e]);
+  }, [t, h, e]);
   return (0, n.jsx)(i.xJW, {
     title: f.intl.string(f.t.vCn2Tk),
     titleClassName: v.infoTitle,
@@ -49,7 +49,7 @@ function u(A) {
           color: "text-default",
           children: f.intl.string(f.t.OIgYlZ)
         }),
-        description: h === o.II ? (0, n.jsx)(i.$jN, {
+        description: u === o.II ? (0, n.jsx)(i.$jN, {
           type: i.RAz.SPINNING_CIRCLE,
           className: v.loadingSpinner
         }) : (0, n.jsx)(i.Text, {
@@ -57,7 +57,7 @@ function u(A) {
           color: "interactive-normal",
           children: C
         }),
-        onNavigate: h > 0 ? () => D(o.mw.MESSAGES) : true
+        onNavigate: u > 0 ? () => D(o.mw.MESSAGES) : true
       }), (0, n.jsx)(g._2, {
         icon: (0, n.jsx)(i.xPt, {
           size: "custom",

@@ -1,8 +1,8 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 742409, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => d,
-  l: () => h
+  l: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,22 +18,22 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk215486 = require("./215486.js");
 
-function h(A) {
+function u(A) {
   return (0, n.jsxs)("div", {
-    className: l()(u.messageContainer, A.className),
+    className: l()(h.messageContainer, A.className),
     children: [(0, n.jsx)("div", {
-      className: u.avatarContainer,
+      className: h.avatarContainer,
       children: "string" == typeof A.avatar ? (0, n.jsx)("img", {
-        className: u.avatar,
+        className: h.avatar,
         src: A.avatar,
         alt: "".concat(A.username, " avatar"),
         width: 40,
         height: 40
       }) : A.avatar
     }), (0, n.jsxs)("div", {
-      className: u.contentContainer,
+      className: h.contentContainer,
       children: [(0, n.jsxs)("div", {
-        className: u.usernameContainer,
+        className: h.usernameContainer,
         children: ["string" == typeof A.username ? (0, n.jsx)(i.Text, {
           "data-text": A.username,
           className: A.usernameClassName,
@@ -41,7 +41,7 @@ function h(A) {
           style: A.usernameStyle,
           children: A.username
         }) : A.username, true !== A.decorations && (0, n.jsx)("div", {
-          className: u.decorationsContainer,
+          className: h.decorationsContainer,
           children: A.decorations
         })]
       }), null != A.message && (0, n.jsx)(i.Text, {
@@ -70,24 +70,24 @@ let d = function(A) {
     return r
   }(A, ["className"]);
   return (0, n.jsxs)("div", {
-    className: l()(u.container, e),
-    children: [(0, n.jsx)(h, {
-      className: u.unfocusedMessage,
-      avatar: a.Z,
+    className: l()(h.container, e),
+    children: [(0, n.jsx)(u, {
+      className: h.unfocusedMessage,
+      avatar: s.Z,
       username: "Roka",
       usernameStyle: {
         color: "var(--brand-400)"
       },
       message: v.intl.string(f.default.bpghV1)
-    }), (0, n.jsx)(h, {
-      className: u.unfocusedMessage,
-      avatar: s.Z,
+    }), (0, n.jsx)(u, {
+      className: h.unfocusedMessage,
+      avatar: a.Z,
       username: "hongo",
       usernameStyle: {
         color: "var(--green-230)"
       },
       message: v.intl.string(f.default["rnpv7+"])
-    }), (0, n.jsx)(h, {
+    }), (0, n.jsx)(u, {
       avatar: o.Z,
       username: "Lily",
       usernameStyle: {
@@ -112,16 +112,16 @@ let d = function(A) {
         }
         return A
       }({}, t))
-    }), (0, n.jsx)(h, {
-      className: u.unfocusedMessage,
+    }), (0, n.jsx)(u, {
+      className: h.unfocusedMessage,
       avatar: g.Z,
       username: "sharon",
       usernameStyle: {
         color: "var(--brand-400)"
       },
       message: v.intl.string(f.default.GlWVJC)
-    }), (0, n.jsx)(h, {
-      className: u.unfocusedMessage,
+    }), (0, n.jsx)(u, {
+      className: h.unfocusedMessage,
       avatar: o.Z,
       username: "Lily",
       usernameStyle: {

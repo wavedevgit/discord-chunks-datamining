@@ -1,13 +1,13 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 995532, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => d,
-  a: () => a
+  a: () => s
 });
 var n, r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let a = {},
-  s = {},
+let s = {},
+  a = {},
   o = {},
   g = false,
   c = false,
@@ -17,19 +17,19 @@ function v(A) {
   let {
     guild: e
   } = A.invite;
-  return (null == e ? true : e.welcome_screen) != null && (s[e.id] = e.welcome_screen, true)
+  return (null == e ? true : e.welcome_screen) != null && (a[e.id] = e.welcome_screen, true)
 }
 
-function u(A) {
+function h(A) {
   let {
     welcomeScreen: e,
     guildId: t
   } = A;
-  s[t] = null != e ? e : a
+  a[t] = null != e ? e : s
 }
-class h extends(r = Chunk442837.ZP.Store) {
+class u extends(r = Chunk442837.ZP.Store) {
   get(A) {
-    if (null != A) return s[A]
+    if (null != A) return a[A]
   }
   isFetching() {
     return c
@@ -43,20 +43,20 @@ class h extends(r = Chunk442837.ZP.Store) {
   }
   isEmpty(A) {
     if (null == A) returntrue;
-    let e = s[A];
+    let e = a[A];
     return null == e || 0 === e.welcome_channels.length
   }
-}(n = "displayName") in h ? Object.defineProperty(h, n, {
+}(n = "displayName") in u ? Object.defineProperty(u, n, {
   value: "WelcomeScreenStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : h[n] = "WelcomeScreenStore";
-let d = new h(Chunk570140.Z, {
+}) : u[n] = "WelcomeScreenStore";
+let d = new u(Chunk570140.Z, {
   INVITE_RESOLVE_SUCCESS: v,
   INVITE_ACCEPT_SUCCESS: v,
-  WELCOME_SCREEN_SUBMIT_SUCCESS: u,
-  WELCOME_SCREEN_UPDATE: u,
+  WELCOME_SCREEN_SUBMIT_SUCCESS: h,
+  WELCOME_SCREEN_UPDATE: h,
   WELCOME_SCREEN_VIEW: function(A) {
     let {
       guildId: e,
@@ -84,7 +84,7 @@ let d = new h(Chunk570140.Z, {
       welcomeScreen: e,
       guildId: t
     } = A;
-    s[t] = null != e ? e : a
+    a[t] = null != e ? e : s
   },
   WELCOME_SCREEN_FETCH_FAIL: function() {
     c = false, f = true

@@ -1,4 +1,4 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 683101, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk374815 = require("./374815.js");
 
-function u(A, e, t) {
+function h(A, e, t) {
   return e in A ? Object.defineProperty(A, e, {
     value: t,
     enumerable: true,
@@ -24,14 +24,14 @@ function u(A, e, t) {
   }) : A[e] = t, A
 }
 
-function h(A) {
+function u(A) {
   for (var e = 1; e < arguments.length; e++) {
     var t = null != arguments[e] ? arguments[e] : {},
       n = Object.keys(t);
     "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(A) {
       return Object.getOwnPropertyDescriptor(t, A).enumerable
     }))), n.forEach(function(e) {
-      u(A, e, t[e])
+      h(A, e, t[e])
     })
   }
   return A
@@ -57,21 +57,21 @@ class E extends Chunk647438.PureComponent {
       searchOffset: t,
       index: r,
       totalResults: l
-    } = this.props, a = i().find(module, A => A.isSearchHit);
+    } = this.props, s = i().find(module, A => A.isSearchHit);
     if (null == Chunk374470) return null;
     let o = Chunk592125.Z.getChannel(Chunk374470.channel_id);
     if (null == Chunk239091) return null;
-    let u = "search-result-".concat(Chunk374470.id);
+    let h = "search-result-".concat(Chunk374470.id);
     return (0, Chunk951288.jsx)(Chunk481060.tEY, {
       ringTarget: this.hitRef,
       ringClassName: Chunk374815.__invalid_searchResultFocusRing,
       offset: 4,
-      children: (0, Chunk951288.jsxs)("li", d(h({
+      children: (0, Chunk951288.jsxs)("li", d(u({
         className: Chunk374815.container
       }, exports), {
         "aria-posinset": 1 + require + Chunk647438,
         "aria-setsize": Chunk392711,
-        "aria-labelledby": u,
+        "aria-labelledby": h,
         children: [(0, Chunk951288.jsx)(Chunk481060.P3F, {
           tabIndex: false,
           onClick: this.handleMessageClick,
@@ -84,10 +84,10 @@ class E extends Chunk647438.PureComponent {
             ref: this.hitRef,
             className: Chunk374815.message,
             children: (0, Chunk951288.jsx)(Chunk294218.Z, {
-              id: u,
+              id: h,
               message: Chunk374470,
               channel: Chunk239091,
-              onContextMenu: A => this.handleContextMenu(A, a),
+              onContextMenu: A => this.handleContextMenu(A, s),
               animateAvatar: false,
               subscribeToComponentDispatch: false,
               trackAnnouncementViews: true,
@@ -107,18 +107,18 @@ class E extends Chunk647438.PureComponent {
     })
   }
   constructor(...A) {
-    super(...A), u(this, "containerRef", r.createRef()), u(this, "hitRef", r.createRef()), u(this, "handleContextMenu", (A, e) => {
+    super(...A), h(this, "containerRef", r.createRef()), h(this, "hitRef", r.createRef()), h(this, "handleContextMenu", (A, e) => {
       let r = c.Z.getChannel(e.channel_id);
       null != r && (A.stopPropagation(), (0, o.jW)(A, async () => {
         let {
           default: A
         } = await Promise.all([t.e("76676"), t.e("93077"), t.e("69363")]).then(t.bind(t, 858341));
-        return t => (0, n.jsx)(A, d(h({}, t), {
+        return t => (0, n.jsx)(A, d(u({}, t), {
           message: e,
           channel: r
         }))
       }))
-    }), u(this, "jumpTo", A => {
+    }), h(this, "jumpTo", A => {
       null != A && (A.preventDefault(), A.stopPropagation());
       let {
         onJump: e,
@@ -126,14 +126,14 @@ class E extends Chunk647438.PureComponent {
         index: n
       } = this.props, r = t.find(A => A.isSearchHit);
       null != r && e(r, n)
-    }), u(this, "handleMessageClick", A => {
+    }), h(this, "handleMessageClick", A => {
       if (function(A, e) {
           var t;
           let n = null == (t = window) ? true : t.getSelection();
           if (null != n && !n.isCollapsed) returntrue;
           if (null == A || null == e) returnfalse;
           for (;
-            (0, a.k)(A) && A !== e;) {
+            (0, s.k)(A) && A !== e;) {
             let {
               tagName: e
             } = A;

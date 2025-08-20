@@ -175,7 +175,8 @@ function Z(e) {
       userName: eI,
       displayNameStyles: es,
       effectDisplayType: (null == em ? true : em.animate) ? m.F.ANIMATED : m.F.PLAIN,
-      loop: true
+      loop: true,
+      shouldUnderlineOnHover: null != H
     }) : eI,
     "data-text": en + er
   }, eS = i.useMemo(() => j && !Z ? (0, r.jsx)(y.ZP, {

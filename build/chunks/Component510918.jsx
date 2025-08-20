@@ -1,4 +1,4 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 510918, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   v: () => N
@@ -78,7 +78,7 @@ let N = A => {
   }(A, ["badge", "primaryTintColor", "secondaryTintColor"]);
   switch (e) {
     case L.x_.SWORD:
-      return (0, n.jsx)(j.V, x({
+      return (0, n.jsx)(V.V, x({
         primaryTintColor: t,
         secondaryTintColor: N
       }, Z));
@@ -91,7 +91,7 @@ let N = A => {
         primaryTintColor: t
       }, Z));
     case L.x_.TOADSTOOL:
-      return (0, n.jsx)(V.T, x({
+      return (0, n.jsx)(j.T, x({
         primaryTintColor: t,
         secondaryTintColor: N
       }, Z));
@@ -121,7 +121,7 @@ let N = A => {
         secondaryTintColor: N
       }, Z));
     case L.x_.CROSSHAIRS:
-      return (0, n.jsx)(a.Q, x({
+      return (0, n.jsx)(s.Q, x({
         primaryTintColor: t,
         secondaryTintColor: N
       }, Z));
@@ -131,7 +131,7 @@ let N = A => {
         secondaryTintColor: N
       }, Z));
     case L.x_.FORCE:
-      return (0, n.jsx)(u.S, x({
+      return (0, n.jsx)(h.S, x({
         primaryTintColor: t,
         secondaryTintColor: N
       }, Z));
@@ -156,12 +156,12 @@ let N = A => {
         secondaryTintColor: N
       }, Z));
     case L.x_.SNOW:
-      return (0, n.jsx)(O.X, x({
+      return (0, n.jsx)(Q.X, x({
         primaryTintColor: t,
         secondaryTintColor: N
       }, Z));
     case L.x_.SOUND:
-      return (0, n.jsx)(Q.H, x({
+      return (0, n.jsx)(O.H, x({
         primaryTintColor: t,
         secondaryTintColor: N
       }, Z));
@@ -185,7 +185,7 @@ let N = A => {
         secondaryTintColor: N
       }, Z));
     case L.x_.FROG:
-      return (0, n.jsx)(h.L, x({
+      return (0, n.jsx)(u.L, x({
         primaryTintColor: t,
         secondaryTintColor: N
       }, Z));
@@ -202,7 +202,7 @@ let N = A => {
         primaryTintColor: t
       }, Z));
     case L.x_.CROWN:
-      return (0, n.jsx)(s.O, x({
+      return (0, n.jsx)(a.O, x({
         primaryTintColor: t,
         secondaryTintColor: N
       }, Z));

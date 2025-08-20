@@ -1,4 +1,4 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 718617, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -38,21 +38,21 @@ function w(A) {
     onClose: D,
     analyticsLocation: M,
     className: p
-  } = A, I = (0, i.e7)([f.ZP], () => f.ZP.getGuildSidebarState(w), [w]), H = null != (e = null == I ? true : I.details.modViewPanel) ? e : E.k.INFO, b = (0, o.Z)(t), O = null == H ? null : H === E.k.INFO ? "backwards" : "forwards", Q = (0, c.Z)(O), {
+  } = A, I = (0, i.e7)([f.ZP], () => f.ZP.getGuildSidebarState(w), [w]), H = null != (e = null == I ? true : I.details.modViewPanel) ? e : E.k.INFO, b = (0, o.Z)(t), Q = null == H ? null : H === E.k.INFO ? "backwards" : "forwards", O = (0, c.Z)(Q), {
     reducedMotion: P
-  } = r.useContext(a.S), j = r.useCallback(A => {
+  } = r.useContext(s.S), V = r.useCallback(A => {
     null != I && (0, v.r)(w, t, I.baseChannelId, {
       modViewPanel: A
     })
-  }, [I, w, t]), V = r.useMemo(() => ({
+  }, [I, w, t]), j = r.useMemo(() => ({
     [C.EkH.CLOSE_MODAL]: {
       binds: ["esc"],
       comboKeysBindGlobal: true,
-      action: () => H === E.k.INFO ? D() : j(E.k.INFO)
+      action: () => H === E.k.INFO ? D() : V(E.k.INFO)
     }
-  }), [D, H, j]);
-  r.useEffect(() => (g.Z.enable(), g.Z.enableTemp(V), () => g.Z.disableTemp()), [V]);
-  let m = (0, s.Yzy)(H, {
+  }), [D, H, V]);
+  r.useEffect(() => (g.Z.enable(), g.Z.enableTemp(j), () => g.Z.disableTemp()), [j]);
+  let m = (0, a.Yzy)(H, {
     value: 0,
     from: {
       value: 1
@@ -72,7 +72,7 @@ function w(A) {
       overflow: "hidden"
     },
     children: m((A, e, r) => {
-      var i, a, s;
+      var i, s, a;
       let {
         key: o
       } = r;
@@ -104,30 +104,30 @@ function w(A) {
         }, P.enabled ? {
           opacity: null == (i = A.value) ? true : i.to(A => 1 - Math.abs(A))
         } : {
-          left: null == (a = A.value) ? true : a.to(B("left", Q)),
-          right: null == (s = A.value) ? true : s.to(B("right", Q))
+          left: null == (s = A.value) ? true : s.to(B("left", O)),
+          right: null == (a = A.value) ? true : a.to(B("right", O))
         }),
         children: function(A) {
           switch (A) {
             case E.k.INFO:
-              return (0, n.jsx)(u.Z, {
-                userId: t,
-                guildId: w,
-                onNavigate: j,
-                className: p
-              });
-            case E.k.MESSAGE_HISTORY:
               return (0, n.jsx)(h.Z, {
                 userId: t,
                 guildId: w,
-                onNavigate: () => j(E.k.INFO),
+                onNavigate: V,
+                className: p
+              });
+            case E.k.MESSAGE_HISTORY:
+              return (0, n.jsx)(u.Z, {
+                userId: t,
+                guildId: w,
+                onNavigate: () => V(E.k.INFO),
                 className: p
               });
             case E.k.PERMISSIONS:
               return (0, n.jsx)(d.Z, {
                 userId: t,
                 guildId: w,
-                onNavigate: () => j(E.k.INFO),
+                onNavigate: () => V(E.k.INFO),
                 className: p
               });
             default:

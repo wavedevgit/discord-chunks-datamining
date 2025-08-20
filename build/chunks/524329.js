@@ -1,10 +1,10 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 524329, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   Es: () => c,
-  RM: () => a,
+  RM: () => s,
   VP: () => g,
-  Xb: () => s,
+  Xb: () => a,
   sm: () => o,
   y0: () => i
 }), require("./953529.js");
@@ -19,7 +19,7 @@ let i = function(A) {
       isLurking: e
     })
   },
-  a = async A => {
+  s = async A => {
     r.Z.dispatch({
       type: "WELCOME_SCREEN_FETCH_START"
     });
@@ -39,7 +39,7 @@ let i = function(A) {
         type: "WELCOME_SCREEN_FETCH_FAIL"
       })
     }
-  }, s = () => {
+  }, a = () => {
     Chunk570140.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_RESET"
     })

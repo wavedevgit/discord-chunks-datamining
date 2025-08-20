@@ -1,4 +1,4 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 963374, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   nC: () => f
@@ -7,9 +7,9 @@ var Chunk392711 = require("./392711.js"),
   r = require.n(Chunk392711),
   Chunk619864 = require("./619864.js"),
   Chunk193995 = require("./193995.js");
-let a = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
+let s = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
 
-function s(A) {
+function a(A) {
   return A.replace(/('|\u2019|\uFF07)(s|S)$/, "")
 }
 
@@ -18,7 +18,7 @@ function o(A) {
 }
 
 function g(A) {
-  return a.has(A)
+  return s.has(A)
 }
 
 function c(A) {
@@ -28,7 +28,7 @@ function c(A) {
 function f(A) {
   let e = arguments.length > 1 && true !== arguments[1] && arguments[1],
     t = A.length >= l.zV && A.length <= l.y_ && e,
-    n = new Set(r()(A.split(/\W+/)).map(s).reject(c).map(o).reject(g).map(i.a).value());
+    n = new Set(r()(A.split(/\W+/)).map(a).reject(c).map(o).reject(g).map(i.a).value());
   return A => (function A(e, t, n) {
     if (Array.isArray(e)) e.forEach(e => A(e, t, n));
     else if ("list" === e.type) e.items.forEach(e => A(e, t, n));
@@ -38,7 +38,7 @@ function f(A) {
       e.content.split(/(\W+)/g).forEach(e => {
         ! function(A, e) {
           let t = arguments.length > 2 && true !== arguments[2] && arguments[2];
-          if (c(A = o(s(A))) || g(A)) returnfalse;
+          if (c(A = o(a(A))) || g(A)) returnfalse;
           let n = (0, i.a)(A);
           if (t) {
             for (let A of e.values())

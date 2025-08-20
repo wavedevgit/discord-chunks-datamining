@@ -1,4 +1,4 @@
-/** Chunk was on 12630 **/
+/** Chunk was on 7318 **/
 /** chunk id: 327250, original params: A,e,t (module,exports,require) **/
 require.d(exports, {
   ZP: () => x
@@ -33,7 +33,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk428331 = require("./428331.js");
 
-function V(A) {
+function j(A) {
   for (var e = 1; e < arguments.length; e++) {
     var t = null != arguments[e] ? arguments[e] : {},
       n = Object.keys(t);
@@ -70,52 +70,52 @@ function T(A) {
     user: e,
     guildId: t,
     onClose: r
-  } = A, l = e.id, s = (0, i.e7)([p.Z, D.Z, d.default], () => l === d.default.getId() ? p.Z.getStatus() : D.Z.getStatus(l, t), [l, t]);
+  } = A, l = e.id, a = (0, i.e7)([p.Z, D.Z, d.default], () => l === d.default.getId() ? p.Z.getStatus() : D.Z.getStatus(l, t), [l, t]);
   return (0, n.jsxs)("div", {
-    className: j.topRow,
+    className: V.topRow,
     children: [(0, n.jsxs)("div", {
-      className: j.memberNameContainer,
+      className: V.memberNameContainer,
       children: [(0, n.jsx)("div", {
-        className: j.memberAvatar,
-        children: (0, n.jsx)(a.qEK, {
+        className: V.memberAvatar,
+        children: (0, n.jsx)(s.qEK, {
           src: e.getAvatarURL(t, 48),
           "aria-label": e.username,
-          size: a.EFr.SIZE_48,
-          status: s
+          size: s.EFr.SIZE_48,
+          status: a
         })
       }), (0, n.jsxs)("div", {
-        className: j.memberNameAndTagContainer,
+        className: V.memberNameAndTagContainer,
         children: [(0, n.jsxs)("div", {
-          className: j.memberNameTextContainer,
-          children: [(0, n.jsx)(a.Text, {
+          className: V.memberNameTextContainer,
+          children: [(0, n.jsx)(s.Text, {
             variant: "text-lg/medium",
-            children: (0, n.jsx)(a.PUh, {
+            children: (0, n.jsx)(s.PUh, {
               name: b.ZP.getName(t, null, e),
-              colorString: a.TVs.colors.HEADER_PRIMARY.css,
+              colorString: s.TVs.colors.HEADER_PRIMARY.css,
               colorStrings: null
             })
-          }), (0, n.jsx)(h.ZP, {
+          }), (0, n.jsx)(u.ZP, {
             primaryGuild: null == e ? true : e.primaryGuild,
             userId: null == e ? true : e.id,
             contextGuildId: t,
-            badgeSize: Q.Gg.SIZE_16,
+            badgeSize: O.Gg.SIZE_16,
             textVariant: "heading-md/semibold",
-            className: j.memberClanTag,
-            containerClassName: j.memberClanTagContainer
+            className: V.memberClanTag,
+            containerClassName: V.memberClanTagContainer
           })]
-        }), (0, n.jsx)(a.Text, {
+        }), (0, n.jsx)(s.Text, {
           variant: "text-md/medium",
           color: "text-default",
-          children: O.ZP.getUserTag(e)
+          children: Q.ZP.getUserTag(e)
         })]
       })]
-    }), (0, n.jsx)(a.Text, {
+    }), (0, n.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "text-default",
-      children: (0, n.jsx)(a.P3F, {
-        className: j.closeAction,
+      children: (0, n.jsx)(s.P3F, {
+        className: V.closeAction,
         onClick: r,
-        children: (0, n.jsx)(a.Dio, {
+        children: (0, n.jsx)(s.Dio, {
           size: "md",
           color: "currentColor"
         })
@@ -130,7 +130,7 @@ function y(A) {
     text: t,
     disabled: r,
     children: i,
-    onClick: s
+    onClick: a
   } = A, o = function(A, e) {
     if (null == A) return {};
     var t, n, r = function(A, e) {
@@ -146,17 +146,17 @@ function y(A) {
     }
     return r
   }(A, ["tag", "text", "disabled", "children", "onClick"]);
-  return (0, n.jsx)(a.ua7, {
+  return (0, n.jsx)(s.ua7, {
     text: t,
-    children: A => (0, n.jsx)(a.P3F, m(V({}, o, A), {
+    children: A => (0, n.jsx)(s.P3F, m(j({}, o, A), {
       tag: e,
       "aria-label": t,
-      className: l()(j.bottomRowAction, {
-        [j.bottomRowActionDisabled]: r
+      className: l()(V.bottomRowAction, {
+        [V.bottomRowActionDisabled]: r
       }),
-      onClick: r ? true : s,
+      onClick: r ? true : a,
       children: (0, n.jsx)("div", {
-        className: j.innerBottomRowAction,
+        className: V.innerBottomRowAction,
         children: i
       })
     }))
@@ -168,21 +168,21 @@ function L(A) {
     user: e,
     member: r,
     guildId: l
-  } = A, h = (0, i.e7)([B.Z], () => B.Z.getGuild(l)), {
+  } = A, u = (0, i.e7)([B.Z], () => B.Z.getGuild(l)), {
     canKickUser: C,
     canBanUser: D,
     canModerateMembers: p
   } = (0, i.cj)([w.Z, I.default, B.Z], () => ({
-    canKickUser: (0, v.BK)(e, h),
-    canBanUser: (0, v.mm)(e, h),
-    canModerateMembers: null != h && (0, f.F)(h.id, e.id, [I.default, B.Z, w.Z])
-  }), [e, h]), b = (0, g.b)(r), {
-    analyticsLocations: O,
-    newestAnalyticsLocation: Q
-  } = (0, o.ZP)(), T = (0, u.sE)(l, {
+    canKickUser: (0, v.BK)(e, u),
+    canBanUser: (0, v.mm)(e, u),
+    canModerateMembers: null != u && (0, f.F)(u.id, e.id, [I.default, B.Z, w.Z])
+  }), [e, u]), b = (0, g.b)(r), {
+    analyticsLocations: Q,
+    newestAnalyticsLocation: O
+  } = (0, o.ZP)(), T = (0, h.sE)(l, {
     targetUserId: e.id,
-    location: Q,
-    locations: O
+    location: O,
+    locations: Q
   }), L = (0, i.e7)([d.default], () => d.default.getId() === (null == e ? true : e.id)), x = (0, i.e7)([M.Z, E.Z], () => {
     let A = M.Z.getChannelId(l),
       e = null != A ? E.Z.getChannel(A) : null,
@@ -190,16 +190,16 @@ function L(A) {
     return null != t ? t : true
   }, [l]);
   return (0, n.jsxs)("div", {
-    className: j.bottomRow,
+    className: V.bottomRow,
     children: [(0, n.jsx)(y, {
       disabled: L,
       text: P.intl.string(P.t["g33r/P"]),
       onClick: () => {
-        s.Z.openPrivateChannel({
+        a.Z.openPrivateChannel({
           recipientIds: e.id
         })
       },
-      children: (0, n.jsx)(a.kBi, {
+      children: (0, n.jsx)(s.kBi, {
         size: "custom",
         color: "currentColor",
         width: 24,
@@ -209,45 +209,45 @@ function L(A) {
       disabled: !C,
       text: P.intl.string(P.t["3glT6e"]),
       onClick: () => {
-        (0, a.ZDy)(async () => {
+        (0, s.ZDy)(async () => {
           let {
             default: A
           } = await t.e("5454").then(t.bind(t, 854360));
-          return t => (0, n.jsx)(A, m(V({}, t), {
-            location: Q,
+          return t => (0, n.jsx)(A, m(j({}, t), {
+            location: O,
             guildId: l,
             user: e,
             modReportId: x
           }))
         })
       },
-      children: (0, n.jsx)(a.I9k, {
+      children: (0, n.jsx)(s.I9k, {
         size: "custom",
         width: 24,
         height: 24,
-        color: a.TVs.colors.TEXT_DEFAULT.css
+        color: s.TVs.colors.TEXT_DEFAULT.css
       })
     }), (0, n.jsx)(y, {
       disabled: !D,
       text: P.intl.string(P.t["5MBJ5O"]),
       onClick: () => {
-        (0, a.ZDy)(async () => {
+        (0, s.ZDy)(async () => {
           let {
             default: A
           } = await t.e("43350").then(t.bind(t, 98746));
-          return t => (0, n.jsx)(A, m(V({}, t), {
-            location: Q,
+          return t => (0, n.jsx)(A, m(j({}, t), {
+            location: O,
             guildId: l,
             user: e,
             modReportId: x
           }))
         })
       },
-      children: (0, n.jsx)(a.pgN, {
+      children: (0, n.jsx)(s.pgN, {
         size: "custom",
         width: 24,
         height: 24,
-        color: a.TVs.colors.TEXT_DEFAULT.css
+        color: s.TVs.colors.TEXT_DEFAULT.css
       })
     }), (0, n.jsx)(y, {
       disabled: !p,
@@ -256,31 +256,31 @@ function L(A) {
         b ? (0, c.q)({
           guildId: r.guildId,
           userId: r.userId,
-          anaylticsLocations: O
+          anaylticsLocations: Q
         }) : (0, c.z)({
           guildId: r.guildId,
           userId: r.userId,
-          anaylticsLocations: O,
+          anaylticsLocations: Q,
           modReportId: x
         })
       },
-      children: (0, n.jsx)(a.YlB, {
+      children: (0, n.jsx)(s.YlB, {
         size: "custom",
         width: 24,
         height: 24,
-        color: a.TVs.colors.TEXT_DEFAULT.css
+        color: s.TVs.colors.TEXT_DEFAULT.css
       })
     }), (0, n.jsx)(y, {
       text: P.intl.string(P.t.IHTjzM),
       onClick: () => {
-        T(u.jQ.COPY_ID), (0, H.JG)(e.id)
+        T(h.jQ.COPY_ID), (0, H.JG)(e.id)
       },
       disabled: !H.wS,
-      children: (0, n.jsx)(a.VuL, {
+      children: (0, n.jsx)(s.VuL, {
         size: "custom",
         width: 24,
         height: 24,
-        color: a.TVs.colors.TEXT_DEFAULT.css
+        color: s.TVs.colors.TEXT_DEFAULT.css
       })
     })]
   })
@@ -291,16 +291,16 @@ function x(A) {
     userId: e,
     guildId: t,
     onClose: r
-  } = A, l = (0, i.e7)([I.default], () => I.default.getUser(e), [e]), a = (0, i.e7)([C.ZP], () => C.ZP.getMember(t, e), [t, e]);
-  return null == l || null == a ? null : (0, n.jsxs)("div", {
-    className: j.container,
+  } = A, l = (0, i.e7)([I.default], () => I.default.getUser(e), [e]), s = (0, i.e7)([C.ZP], () => C.ZP.getMember(t, e), [t, e]);
+  return null == l || null == s ? null : (0, n.jsxs)("div", {
+    className: V.container,
     children: [(0, n.jsx)(T, {
       user: l,
       guildId: t,
       onClose: r
     }), (0, n.jsx)(L, {
       user: l,
-      member: a,
+      member: s,
       guildId: t
     })]
   })

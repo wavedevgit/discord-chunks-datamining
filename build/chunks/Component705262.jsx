@@ -233,12 +233,11 @@ let W = Object.freeze({
       (v === w.XV.length - 2 && "EDITOR" === o || b === c.Us.EASTER_EGG) && O(true)
     }, [v, o, b]);
     let D = (e, t) => {
-        if (a.v2EditorEnabled && "SETTINGS" === o)(0, m.XO)(m.wh.CLIENT_THEMES), (0, d.xf)();
-        else if ((0, A.zO)(e.id), z({
+        if ((0, A.zO)(e.id), z({
             isPersisted: !E,
             analyticsLocations: g,
             themeName: c.Us[e.id]
-          }), (0, f.ZI)({
+          }), E && a.v2EditorEnabled && "SETTINGS" === o ? x(e) : (0, f.ZI)({
             backgroundGradientPresetId: e.id,
             theme: e.theme,
             useSystemTheme: E ? L.KW.OFF : true
@@ -247,7 +246,13 @@ let W = Object.freeze({
           I(e => e + 1)
         }
       },
-      x = () => {
+      x = async e => {
+        await (0, f.ZI)({
+          backgroundGradientPresetId: e.id,
+          theme: e.theme,
+          useSystemTheme: E ? L.KW.OFF : true
+        }, j.fy.SLOW_USER_ACTION), (0, m.XO)(m.wh.CLIENT_THEMES), (0, d.xf)()
+      }, M = () => {
         if (!y) return null;
         let e = w.qt[c.Us.EASTER_EGG];
         if (null == e) return null;
@@ -291,7 +296,7 @@ let W = Object.freeze({
         tabIndex: 0 !== n || t ? true : 0,
         showBadge: false,
         showLockedBadge: false
-      }, e.id)), x()]
+      }, e.id)), M()]
     })
   },
   $ = e => {
