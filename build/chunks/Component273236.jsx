@@ -6,21 +6,21 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk603113 = require("./603113.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk814125 = require("./814125.js"),
   Chunk920178 = require("./920178.js");
 let x = Chunk647438.forwardRef(function(e, t) {
-  let {} = e, [a, r] = s.useState("before"), [x, j] = s.useState(false), [g, _] = s.useState(false);
+  let {} = e, [r, a] = s.useState("before"), [x, j] = s.useState(false), g = s.useRef(false);
   s.useImperativeHandle(t, () => ({
-    maybeChangeToAfterTab: () => (g || b("after"), g)
+    maybeChangeToAfterTab: () => (g.current || _("after"), g.current)
   }));
-  let b = s.useCallback(e => {
+  let _ = s.useCallback(e => {
     j(true), setTimeout(() => {
       l.unstable_batchedUpdates(() => {
-        "after" === e && _(true), j(false), r(e)
+        "after" === e && (g.current = true), j(false), a(e)
       })
     }, 400)
   }, []);
@@ -36,45 +36,45 @@ let x = Chunk647438.forwardRef(function(e, t) {
       }), (0, i.jsx)(c.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        children: o.intl.string(o.t.c0Fhpa)
+        children: d.intl.string(d.t.c0Fhpa)
       }), (0, i.jsx)(c.Text, {
         className: m.__invalid_subtitle,
         variant: "text-md/normal",
         color: "header-secondary",
-        children: o.intl.string(o.t.dKPfBQ)
+        children: d.intl.string(d.t.dKPfBQ)
       })]
     }), (0, i.jsxs)("div", {
-      className: d.container,
+      className: o.container,
       children: [(0, i.jsxs)("div", {
-        className: d.tabs,
+        className: o.tabs,
         children: [(0, i.jsx)("div", {
-          className: d.tabBackground,
+          className: o.tabBackground,
           style: {
-            left: "before" === a ? 0 : "50%"
+            left: "before" === r ? 0 : "50%"
           }
         }), (0, i.jsx)(c.P3F, {
-          className: d.tab,
-          onClick: () => b("before"),
+          className: o.tab,
+          onClick: () => _("before"),
           children: (0, i.jsx)(c.Text, {
             variant: "text-sm/medium",
-            color: "before" === a ? "header-primary" : "text-muted",
-            children: o.intl.string(o.t.sLv7LC)
+            color: "before" === r ? "header-primary" : "text-muted",
+            children: d.intl.string(d.t.sLv7LC)
           })
         }), (0, i.jsx)(c.P3F, {
-          className: d.tab,
-          onClick: () => b("after"),
+          className: o.tab,
+          onClick: () => _("after"),
           children: (0, i.jsx)(c.Text, {
             variant: "text-sm/medium",
-            color: "after" === a ? "header-primary" : "text-muted",
-            children: o.intl.string(o.t.R8eSY2)
+            color: "after" === r ? "header-primary" : "text-muted",
+            children: d.intl.string(d.t.R8eSY2)
           })
         })]
       }), (0, i.jsxs)("div", {
-        className: d.previewContainer,
+        className: o.previewContainer,
         children: [(0, i.jsxs)("div", {
-          className: d.guilds,
+          className: o.guilds,
           children: [(0, i.jsx)("div", {
-            className: d.unreadGuild,
+            className: o.unreadGuild,
             children: (0, i.jsx)("img", {
               src: n(180681),
               width: 36,
@@ -82,7 +82,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
               alt: "Example Guild Icon"
             })
           }), (0, i.jsx)("div", {
-            className: "after" === a ? d.guild : d.unreadGuild,
+            className: "after" === r ? o.guild : o.unreadGuild,
             children: (0, i.jsx)("img", {
               src: n(390115),
               width: 36,
@@ -90,7 +90,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
               alt: "Example Guild Icon"
             })
           }), (0, i.jsx)("div", {
-            className: "after" === a ? d.guild : d.unreadGuild,
+            className: "after" === r ? o.guild : o.unreadGuild,
             children: (0, i.jsx)("img", {
               src: n(536411),
               width: 36,
@@ -99,44 +99,44 @@ let x = Chunk647438.forwardRef(function(e, t) {
             })
           })]
         }), (0, i.jsxs)("div", {
-          className: d.channels,
+          className: o.channels,
           children: [(0, i.jsx)(u, {
             mention: true,
-            name: o.intl.string(o.t.WFejRk)
+            name: d.intl.string(d.t.WFejRk)
           }), (0, i.jsx)(u, {
-            name: o.intl.string(o.t.jqWm9f)
+            name: d.intl.string(d.t.jqWm9f)
           }), (0, i.jsx)(u, {
-            grey: "after" === a,
-            name: o.intl.string(o.t.p9z9Iy)
+            grey: "after" === r,
+            name: d.intl.string(d.t.p9z9Iy)
           }), (0, i.jsx)(u, {
-            grey: "after" === a,
-            name: o.intl.string(o.t["2bdWDw"])
+            grey: "after" === r,
+            name: d.intl.string(d.t["2bdWDw"])
           }), (0, i.jsx)(u, {
-            name: o.intl.string(o.t["Ci+Our"])
+            name: d.intl.string(d.t["Ci+Our"])
           }), (0, i.jsx)(u, {
-            grey: "after" === a,
-            name: o.intl.string(o.t["/7TEdn"])
+            grey: "after" === r,
+            name: d.intl.string(d.t["/7TEdn"])
           }), (0, i.jsx)(u, {
-            grey: "after" === a,
-            name: o.intl.string(o.t["Ime/t7"])
+            grey: "after" === r,
+            name: d.intl.string(d.t["Ime/t7"])
           })]
         })]
       }), (0, i.jsx)(h, {
-        hidden: x || "after" === a,
-        className: d.tipBefore1,
-        text: o.intl.string(o.t.WrPMOD)
+        hidden: x || "after" === r,
+        className: o.tipBefore1,
+        text: d.intl.string(d.t.WrPMOD)
       }), (0, i.jsx)(h, {
-        hidden: x || "after" === a,
-        className: d.tipBefore2,
-        text: o.intl.string(o.t["pApL7+"])
+        hidden: x || "after" === r,
+        className: o.tipBefore2,
+        text: d.intl.string(d.t["pApL7+"])
       }), (0, i.jsx)(h, {
-        hidden: x || "before" === a,
-        className: d.tipAfter1,
-        text: o.intl.string(o.t.eZb3iY)
+        hidden: x || "before" === r,
+        className: o.tipAfter1,
+        text: d.intl.string(d.t.eZb3iY)
       }), (0, i.jsx)(h, {
-        hidden: x || "before" === a,
-        className: d.tipAfter2,
-        text: o.intl.string(o.t.M3KrJS)
+        hidden: x || "before" === r,
+        className: o.tipAfter2,
+        text: d.intl.string(d.t.M3KrJS)
       })]
     })]
   })
@@ -149,16 +149,16 @@ function h(e) {
     hidden: s
   } = e;
   return (0, i.jsxs)("div", {
-    className: r()(n, d.tip, {
-      [d.hidden]: s
+    className: a()(n, o.tip, {
+      [o.hidden]: s
     }),
     children: [(0, i.jsx)(c.Text, {
-      className: d.__invalid_tipText,
+      className: o.__invalid_tipText,
       variant: "text-sm/normal",
       color: "text-secondary",
       children: t
     }), (0, i.jsx)("div", {
-      className: d.tipLine
+      className: o.tipLine
     })]
   })
 }
@@ -170,17 +170,17 @@ function u(e) {
     name: s
   } = e;
   return (0, i.jsxs)("div", {
-    className: r()(d.channel, {
-      [d.grey]: t,
-      [d.mention]: n
+    className: a()(o.channel, {
+      [o.grey]: t,
+      [o.mention]: n
     }),
     children: [(0, i.jsx)(c.VL1, {
       size: "xs",
       color: "currentColor",
-      className: d.channelIcon
+      className: o.channelIcon
     }), (0, i.jsx)(c.Text, {
       variant: "text-md/medium",
-      className: d.channelName,
+      className: o.channelName,
       children: s
     })]
   })

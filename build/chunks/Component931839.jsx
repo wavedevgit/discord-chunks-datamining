@@ -1,17 +1,17 @@
 /** Chunk was on 53512 **/
 /** chunk id: 931839, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  O: () => d,
+  O: () => o,
   Z: () => m
 });
 var i, Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk686529 = require("./686529.js"),
-  d = ((i = {})[i.Intro = 0] = "Intro", i[i.Customize = 1] = "Customize", i[i.Tips = 2] = "Tips", i);
+  o = ((i = {})[i.Intro = 0] = "Intro", i[i.Customize = 1] = "Customize", i[i.Tips = 2] = "Tips", i);
 
 function m(e) {
   let {
@@ -20,7 +20,7 @@ function m(e) {
     submitted: i
   } = e;
   return (0, s.jsxs)("div", {
-    className: o.tabs,
+    className: d.tabs,
     children: [(0, s.jsx)(x, {
       tab: 0,
       selectedTab: t,
@@ -48,15 +48,15 @@ function x(e) {
     tab: t,
     selectedTab: n,
     label: i,
-    disabled: a,
+    disabled: r,
     onClick: c
   } = e;
-  return a ? (0, s.jsxs)("div", {
-    className: r()(o.tab, {
-      [o.current]: n === t
+  return r ? (0, s.jsxs)("div", {
+    className: a()(d.tab, {
+      [d.current]: n === t
     }),
     children: [(0, s.jsx)("div", {
-      className: o.progressBar
+      className: d.progressBar
     }), (0, s.jsx)(l.Text, {
       variant: "text-xs/medium",
       color: n === t ? "text-brand" : "text-muted",
@@ -64,11 +64,11 @@ function x(e) {
     })]
   }) : (0, s.jsxs)(l.P3F, {
     onClick: () => c(t),
-    className: r()(o.tab, {
-      [o.current]: n === t
+    className: a()(d.tab, {
+      [d.current]: n === t
     }),
     children: [(0, s.jsx)("div", {
-      className: o.progressBar
+      className: d.progressBar
     }), (0, s.jsx)(l.Text, {
       variant: "text-xs/medium",
       color: n === t ? "text-brand" : "text-muted",

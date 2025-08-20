@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk340541 = require("./340541.js"),
@@ -22,11 +22,11 @@ var Chunk951288 = require("./951288.js"),
 function b(e) {
   let {
     count: t
-  } = e, [n, a] = s.useState("server");
+  } = e, [n, r] = s.useState("server");
   return (0, i.jsxs)(c.Ttm, {
     className: g.content,
     children: [(0, i.jsxs)("div", {
-      className: r()(g.header, _.header),
+      className: a()(g.header, _.header),
       children: [(0, i.jsx)(c.owK, {
         size: "custom",
         color: "currentColor",
@@ -53,7 +53,7 @@ function b(e) {
         }
       }), (0, i.jsx)(c.P3F, {
         className: _.tab,
-        onClick: () => a("server"),
+        onClick: () => r("server"),
         children: (0, i.jsx)(c.Text, {
           variant: "text-sm/medium",
           color: "server" === n ? "header-primary" : "text-muted",
@@ -61,7 +61,7 @@ function b(e) {
         })
       }), (0, i.jsx)(c.P3F, {
         className: _.tab,
-        onClick: () => a("channel"),
+        onClick: () => r("channel"),
         children: (0, i.jsx)(c.Text, {
           variant: "text-sm/medium",
           color: "channel" === n ? "header-primary" : "text-muted",
@@ -70,22 +70,22 @@ function b(e) {
       })]
     }), (0, i.jsxs)("div", {
       className: _.container,
-      children: [(0, i.jsx)(v, {
+      children: [(0, i.jsx)(f, {
         hidden: "channel" === n
-      }), (0, i.jsx)(f, {
+      }), (0, i.jsx)(v, {
         hidden: "server" === n
       })]
     })]
   })
 }
 
-function v(e) {
+function f(e) {
   let {
     hidden: t
-  } = e, n = (0, l.e7)([d.Z, m.ZP], () => {
+  } = e, n = (0, l.e7)([o.Z, m.ZP], () => {
     var e;
-    return null == (e = d.Z.getGuild(m.ZP.getFlattenedGuildIds()[0])) ? true : e.name
-  }), [a, h] = s.useState(0);
+    return null == (e = o.Z.getGuild(m.ZP.getFlattenedGuildIds()[0])) ? true : e.name
+  }), [r, h] = s.useState(0);
   s.useEffect(() => {
     if (t) return;
     let e = 0,
@@ -96,18 +96,18 @@ function v(e) {
   }, [t]);
   let {
     entrypoints: u
-  } = (0, o._k)({
+  } = (0, d._k)({
     location: "tips_tab"
   });
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
       className: _.containerInner,
       children: (0, i.jsxs)("div", {
-        className: r()(_.serversSection, {
+        className: a()(_.serversSection, {
           [_.hidden]: t,
-          [_.showBigMenu]: a >= 1,
-          [_.fadeChannels]: a >= 1,
-          [_.showModal]: a >= 3
+          [_.showBigMenu]: r >= 1,
+          [_.fadeChannels]: r >= 1,
+          [_.showModal]: r >= 3
         }),
         children: [(0, i.jsxs)("div", {
           className: _.channels,
@@ -118,12 +118,12 @@ function v(e) {
               color: "interactive-active",
               lineClamp: 1,
               children: null != n ? n : "Keyboard Nerds"
-            }), a >= 1 ? (0, i.jsx)(c.Dio, {
+            }), r >= 1 ? (0, i.jsx)(c.Dio, {
               size: "md",
               color: "currentColor",
               className: _.icon
             }) : (0, i.jsx)(x.Z, {
-              className: r()(_.__invalid_downCaret, _.icon),
+              className: a()(_.__invalid_downCaret, _.icon),
               width: 24,
               height: 24
             })]
@@ -158,7 +158,7 @@ function v(e) {
           }), (0, i.jsx)("div", {
             className: _.divider
           }), (0, i.jsx)(C, {
-            active: a >= 2,
+            active: r >= 2,
             text: j.intl.string(j.t.h850Sk),
             icon: (0, i.jsx)(c.Dkj, {
               size: "sm",
@@ -253,27 +253,27 @@ function v(e) {
     }), (0, i.jsx)(p, {
       text: j.intl.string(j.t["C//fOz"]),
       className: _.tipServers2,
-      hidden: t || a < 4
+      hidden: t || r < 4
     })]
   })
 }
 
-function f(e) {
+function v(e) {
   let {
     hidden: t
-  } = e, [n, a] = s.useState(0);
+  } = e, [n, r] = s.useState(0);
   return s.useEffect(() => {
     if (t) return;
     let e = 0,
-      n = [1e3, 1e3, 1e3, 800, 800].map((t, n) => setTimeout(() => a(n + 1), e += t));
+      n = [1e3, 1e3, 1e3, 800, 800].map((t, n) => setTimeout(() => r(n + 1), e += t));
     return () => {
-      n.forEach(e => clearTimeout(e)), setTimeout(() => a(0), 150)
+      n.forEach(e => clearTimeout(e)), setTimeout(() => r(0), 150)
     }
   }, [t]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
       className: _.containerInner,
       children: (0, i.jsxs)("div", {
-        className: r()(_.channelsSection, {
+        className: a()(_.channelsSection, {
           [_.hidden]: t,
           [_.fadeOtherChannels]: n >= 2,
           [_.showLeftMenu]: n >= 2,
@@ -304,7 +304,7 @@ function f(e) {
             name: j.intl.string(j.t["Ime/t7"])
           })]
         }), (0, i.jsxs)("div", {
-          className: r()(_.menu, _.leftMenu),
+          className: a()(_.menu, _.leftMenu),
           children: [(0, i.jsx)(C, {
             small: true,
             text: j.intl.string(j.t["w4m94+"]),
@@ -324,7 +324,7 @@ function f(e) {
             })
           })]
         }), (0, i.jsxs)("div", {
-          className: r()(_.menu, _.rightMenu),
+          className: a()(_.menu, _.rightMenu),
           children: [(0, i.jsx)(C, {
             small: true,
             text: j.intl.string(j.t.hZrr6u),
@@ -389,7 +389,7 @@ function p(e) {
     hidden: s
   } = e;
   return (0, i.jsxs)("div", {
-    className: r()(n, _.tip, {
+    className: a()(n, _.tip, {
       [_.hidden]: s
     }),
     children: [(0, i.jsx)(c.Text, {
@@ -408,10 +408,10 @@ function N(e) {
     grey: t,
     nodot: n,
     selected: s,
-    name: a
+    name: r
   } = e;
   return (0, i.jsxs)("div", {
-    className: r()(_.channel, {
+    className: a()(_.channel, {
       [_.grey]: t || n,
       [_.nodot]: n,
       [_.selected]: s
@@ -423,7 +423,7 @@ function N(e) {
     }), (0, i.jsx)(c.Text, {
       variant: "text-md/medium",
       className: _.channelName,
-      children: a
+      children: r
     })]
   })
 }
@@ -433,16 +433,16 @@ function C(e) {
     text: t,
     active: n,
     small: s,
-    icon: a
+    icon: r
   } = e;
   return (0, i.jsxs)("div", {
-    className: r()(_.menuItem, {
+    className: a()(_.menuItem, {
       [_.active]: n
     }),
     children: [(0, i.jsx)(c.Text, {
       variant: s ? "text-xs/normal" : "text-sm/normal",
       color: n ? "always-white" : "interactive-normal",
       children: t
-    }), a]
+    }), r]
   })
 }
