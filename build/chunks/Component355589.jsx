@@ -188,7 +188,7 @@ let J = e => {
       {
         tagFilter: ee
       } = (0, M.H)(x.id),
-      et = (0, h.e7)([O.Z], () => O.Z.getGuild(x.getGuildId())),
+      et = (0, h.e7)([T.Z], () => T.Z.getGuild(x.getGuildId())),
       en = (0, Z.r_)(x),
       {
         transitions: er,
@@ -461,7 +461,7 @@ let J = e => {
                   className: B.stepStatus
                 }) : (0, r.jsx)(g.G2e, {
                   disableColor: true,
-                  icon: (0, g.GSL)(T.Z),
+                  icon: (0, g.GSL)(O.Z),
                   style: q,
                   className: l()(B.stepStatus, B.completed)
                 }), (0, r.jsxs)("div", {

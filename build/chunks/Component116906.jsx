@@ -69,7 +69,7 @@ function O(e) {
             onClose: T
           })
         }), null != S && (0, r.jsx)("li", {
-          children: (0, r.jsx)(g.Z, {
+          children: (0, r.jsx)(x.Z, {
             location: "UserProfileModalActivity",
             user: n,
             currentUser: t,
@@ -99,7 +99,7 @@ function O(e) {
       children: (0, r.jsx)("ul", {
         className: y.activityList,
         children: E.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(x.Z, {
+          children: (0, r.jsx)(g.Z, {
             location: "UserProfileModalActivity",
             user: n,
             currentUser: t,

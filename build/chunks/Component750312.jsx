@@ -27,7 +27,7 @@ function p(e) {
     j(true)
   }, []);
   return (0, n.jsxs)("section", {
-    className: a()(g.container, O),
+    className: a()(b.container, O),
     "aria-labelledby": y,
     children: [(0, n.jsx)(f.Z, {
       userId: t,
@@ -35,7 +35,7 @@ function p(e) {
       widget: r,
       disableInteraction: p
     }), (0, n.jsxs)(o.y5, {
-      children: [i, v && !x && !p && !m && (0, n.jsx)(b.Z, {
+      children: [i, v && !x && !p && !m && (0, n.jsx)(g.Z, {
         userId: t,
         widgetType: r.type,
         onDismiss: h

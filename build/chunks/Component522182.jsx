@@ -1,17 +1,20 @@
 /** Chunk was on 16811 **/
 /** chunk id: 522182, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk335131 = require("./335131.js"),
+  Chunk592183 = require("./592183.js"),
+  Chunk224724 = require("./224724.js"),
   Chunk475413 = require("./475413.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
+function f(e) {
   var {
     onClose: n
   } = e, t = function(e, n) {
@@ -30,10 +33,10 @@ function s(e) {
     return o
   }(e, ["onClose"]);
   let {
-    analyticsLocations: s,
-    newestAnalyticsLocation: d
-  } = (0, l.ZP)();
-  return (0, r.jsx)(c.ef, function(e) {
+    analyticsLocations: f,
+    newestAnalyticsLocation: m
+  } = (0, i.ZP)(), p = (0, o.e7)([s.Z], () => s.Z.hasSaveablePendingChanges());
+  return (0, r.jsx)(d.ef, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         r = Object.keys(t);
@@ -52,14 +55,15 @@ function s(e) {
     return e
   }({
     action: "VISIT_SHOP",
-    icon: o.EOn,
-    tooltipText: a.intl.string(a.t.b2d0Nz),
+    icon: l.EOn,
+    tooltipText: u.intl.string(u.t.b2d0Nz),
     themeColor: "secondary",
     onClick: () => {
-      (0, i.mK)({
-        analyticsLocations: s,
+      if (p) return void a.Z.notifyPendingWidgets();
+      (0, c.mK)({
+        analyticsLocations: f,
         openInLayer: false,
-        analyticsSource: d
+        analyticsSource: m
       }), null == n || n()
     }
   }, t))

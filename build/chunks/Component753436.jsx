@@ -19,8 +19,8 @@ function f(e) {
     game: t,
     userId: r,
     widgetType: f,
-    guildId: b,
-    channelId: g,
+    guildId: g,
+    channelId: b,
     loading: p = false,
     disableInteraction: O = false
   } = e, m = (0, c.Z)(t.applicationId), j = m.length > 0, y = l.default.getCurrentUser(), v = (null == y ? true : y.id) === r;
@@ -46,8 +46,8 @@ function f(e) {
       }),
       className: d.socialProof,
       users: m,
-      guildId: b,
-      channelId: g,
+      guildId: g,
+      channelId: b,
       visuallyHideLabel: true
     })]
   })

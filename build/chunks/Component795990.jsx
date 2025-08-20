@@ -24,22 +24,22 @@ function p(e) {
     localizedName: a
   } = (0, o.$)(r);
   return (0, n.jsxs)("div", {
-    className: g.placeholderDetailCard,
+    className: b.placeholderDetailCard,
     children: [(0, n.jsx)("div", {
-      className: g.placeholderCover,
+      className: b.placeholderCover,
       children: null != l && "" !== l ? (0, n.jsx)("img", {
         src: l,
         alt: null != a ? a : "",
-        className: g.placeholderGameImage
+        className: b.placeholderGameImage
       }) : (0, n.jsx)("div", {
-        className: g.placeholderGameFallback
+        className: b.placeholderGameFallback
       })
     }), (0, n.jsxs)("div", {
-      className: g.placeholderText,
+      className: b.placeholderText,
       children: [(0, n.jsx)("div", {
-        className: g.placeholderBar
+        className: b.placeholderBar
       }), (0, n.jsx)("div", {
-        className: g.placeholderBar
+        className: b.placeholderBar
       })]
     })]
   })
@@ -50,7 +50,7 @@ function O(e) {
     widgetType: t
   } = e, r = t === i.l.WANT_TO_PLAY_GAMES ? [c.LM.ROBLOX, c.LM.VALORANT, c.LM.LEAGUE_OF_LEGENDS] : [c.LM.ZENLESS_ZONE_ZERO, c.LM.ELDEN_RING, c.LM.RED_DEAD_REDEMPTION_2];
   return (0, n.jsx)("div", {
-    className: g.placeholderCoverGrid,
+    className: b.placeholderCoverGrid,
     children: r.map((e, t) => (0, n.jsx)(m, {
       applicationId: e
     }, t))
@@ -65,13 +65,13 @@ function m(e) {
     localizedName: l
   } = (0, o.$)(t);
   return (0, n.jsx)("div", {
-    className: g.placeholderCoverItem,
+    className: b.placeholderCoverItem,
     children: null != r && "" !== r ? (0, n.jsx)("img", {
       src: r,
       alt: null != l ? l : "",
-      className: g.placeholderGameImage
+      className: b.placeholderGameImage
     }) : (0, n.jsx)("div", {
-      className: g.placeholderGameFallback
+      className: b.placeholderGameFallback
     })
   })
 }
@@ -83,9 +83,9 @@ function j(e) {
     (0, s.qH)(t), (0, u.L$)(d.qb.WIDGET_ADDED)
   }, [t]);
   return (0, n.jsxs)(a.P3F, {
-    className: g.widgetPromptContainer,
+    className: b.widgetPromptContainer,
     onClick: r,
-    "aria-label": "Add widget: ".concat(b.intl.string(f.NP[t])),
+    "aria-label": "Add widget: ".concat(g.intl.string(f.NP[t])),
     children: [(() => {
       switch (t) {
         case i.l.FAVORITE_GAMES:
@@ -102,9 +102,9 @@ function j(e) {
           return null
       }
     })(), (0, n.jsxs)("div", {
-      className: g.widgetPromptOverlay,
+      className: b.widgetPromptOverlay,
       children: [(0, n.jsx)("div", {
-        className: g.addButton,
+        className: b.addButton,
         children: (0, n.jsx)(a.oFk, {
           size: "md",
           color: "currentColor"
@@ -112,7 +112,7 @@ function j(e) {
       }), (0, n.jsx)(a.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: b.intl.string(f.NP[t])
+        children: g.intl.string(f.NP[t])
       })]
     })]
   })

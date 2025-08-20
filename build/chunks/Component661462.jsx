@@ -57,8 +57,8 @@ function p(e) {
     guildId: u,
     channelId: p,
     items: b,
-    initialSection: x,
-    initialSubsection: g,
+    initialSection: g,
+    initialSubsection: x,
     onClose: h
   } = e, {
     trackUserProfileAction: j
@@ -87,9 +87,9 @@ function p(e) {
     let {
       section: n
     } = e;
-    return n === x
+    return n === g
   })) ? n : b[0]), c = c = {
-    subsection: g
+    subsection: x
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(c)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

@@ -244,11 +244,11 @@ let I = e => {
             children: (0, r.jsxs)("div", {
               className: y.contentImageContainer,
               children: [(0, r.jsx)("img", {
-                src: I ? T : S,
+                src: I ? O : S,
                 alt: "",
                 className: y.previewEmbedImage
               }), (0, r.jsx)("img", {
-                src: I ? w : O,
+                src: I ? w : T,
                 alt: "",
                 className: y.previewEmbedImage
               })]

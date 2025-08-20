@@ -51,11 +51,11 @@ function N(e) {
         style: a[t],
         children: true === e.isVideo ? (0, r.jsx)(j.Z, {
           src: e.src,
-          className: T.thumbnail,
+          className: O.thumbnail,
           "aria-hidden": true
         }) : (0, r.jsx)("img", {
           src: e.src,
-          className: T.thumbnail,
+          className: O.thumbnail,
           "aria-hidden": true,
           alt: null != (n = null == e ? true : e.alt) ? n : ""
         })
@@ -145,31 +145,31 @@ let I = e => {
     })
   }, Z = (0, r.jsx)(v.Z, {
     color: u.Tt.CUSTOM,
-    className: T.uploadFileInputContainer,
-    innerClassName: T.uploadThumbnailContainer,
+    className: O.uploadFileInputContainer,
+    innerClassName: O.uploadThumbnailContainer,
     onChange: R,
     multiple: false,
     "aria-hidden": true,
     filters: S,
     "aria-describedby": P,
-    "aria-label": I ? O.intl.string(O.t.MxJI3d) : O.intl.string(O.t.CbiofX),
+    "aria-label": I ? T.intl.string(T.t.MxJI3d) : T.intl.string(T.t.CbiofX),
     children: I ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(N, {
         mediaAttachments: j,
         containerWidth: E.width,
         containerHeight: E.height
       }), (0, r.jsxs)("div", {
-        className: l()(T.changeThumbnailLabelContainer, {
-          [T.changeThumbnailLabelOverflow]: (null == j ? true : j.length) > 2
+        className: l()(O.changeThumbnailLabelContainer, {
+          [O.changeThumbnailLabelOverflow]: (null == j ? true : j.length) > 2
         }),
         children: [(0, r.jsx)(m.Text, {
           variant: "text-xs/medium",
           color: "header-secondary",
-          children: O.intl.string(O.t.MxJI3d)
+          children: T.intl.string(T.t.MxJI3d)
         }), null == C && (0, r.jsx)(m.vdY, {
           size: "xs",
           color: "currentColor",
-          className: T.editIcon
+          className: O.editIcon
         })]
       })]
     }) : (0, r.jsxs)(r.Fragment, {
@@ -178,30 +178,30 @@ let I = e => {
         width: 39,
         height: 39,
         color: "currentColor",
-        className: T.uploadIcon
+        className: O.uploadIcon
       }), (0, r.jsx)(m.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: O.intl.string(O.t.CbiofX)
+        children: T.intl.string(T.t.CbiofX)
       })]
     })
   });
   return (0, r.jsx)("div", {
-    className: T.thumbnailContainer,
+    className: O.thumbnailContainer,
     style: E,
     children: null != C ? (0, r.jsx)(p.Z, {
       actions: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(x.Z, {
-          className: T.action,
-          tooltip: O.intl.string(O.t.Y8ujqq),
+          className: O.action,
+          tooltip: T.intl.string(T.t.Y8ujqq),
           onClick: M,
           children: (0, r.jsx)(m.vdY, {
             size: "xs",
             color: "currentColor"
           })
         }), (0, r.jsx)(x.Z, {
-          className: T.action,
-          tooltip: O.intl.string(O.t.vN7REx),
+          className: O.action,
+          tooltip: T.intl.string(T.t.vN7REx),
           onClick: () => h.Z.remove(a.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type),
           dangerous: true,
           children: (0, r.jsx)(m.XHJ, {
@@ -216,7 +216,7 @@ let I = e => {
       handleEditModal: M,
       keyboardModeEnabled: b,
       size: p.q.SMALL,
-      className: T.attachmentListItem,
+      className: O.attachmentListItem,
       children: Z
     }) : Z
   })

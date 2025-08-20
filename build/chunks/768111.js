@@ -21,22 +21,22 @@ function u(e) {
     mutualGuilds: f
   } = (0, l.Z)(n), m = null == f ? true : f.length, p = (0, o.Z)(n), b = (0, r.k)({
     location: "useUserProfileModalV2TabBarItems"
-  }), x = (0, i.Z)(n.id), g = [], h = n.id === (null == t ? true : t.id), j = x.length > 0;
-  return b && (j || h) && g.push({
+  }), g = (0, i.Z)(n.id), x = [], h = n.id === (null == t ? true : t.id), j = g.length > 0;
+  return b && (j || h) && x.push({
     text: d.intl.string(d.t.laViw8),
     section: s.oh.WIDGETS,
     subsection: true
-  }), g.push({
+  }), x.push({
     text: d.intl.string(d.t.chq59f),
     section: s.oh.ACTIVITY,
     subsection: true
-  }), n.id !== (null == t ? true : t.id) && p && (g.push({
+  }), n.id !== (null == t ? true : t.id) && p && (x.push({
     text: (0, c.Z)(u),
     section: s.oh.MUTUAL_FRIENDS,
     subsection: true
-  }), g.push({
+  }), x.push({
     text: (0, a.Z)(m),
     section: s.oh.MUTUAL_GUILDS,
     subsection: true
-  })), g
+  })), x
 }

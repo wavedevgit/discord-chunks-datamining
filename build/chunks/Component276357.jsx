@@ -45,17 +45,17 @@ function b(e) {
     }), _.getState().toggleTagFilter(t.id, e)
   }, [t, v, _]), w = i.useCallback(() => {
     _.getState().setTagFilter(t.id, new Set), C || n()
-  }, [_, t.id, C, n]), O = (0, a.ZP)({
+  }, [_, t.id, C, n]), T = (0, a.ZP)({
     id: "".concat(t.id, "-all-tags-dropdown-navigator"),
     isEnabled: true,
     wrap: true,
     scrollToStart: p,
     scrollToEnd: p
-  }), T = i.useRef(null);
+  }), O = i.useRef(null);
   return i.useEffect(() => {
     requestAnimationFrame(() => {
-      if (null != T.current) {
-        let e = T.current.querySelector(".".concat(x.tag));
+      if (null != O.current) {
+        let e = O.current.querySelector(".".concat(x.tag));
         null != e && e.focus()
       }
     })
@@ -86,7 +86,7 @@ function b(e) {
         })]
       })
     }), (0, r.jsx)(l.bG, {
-      navigator: O,
+      navigator: T,
       children: (0, r.jsx)(l.SJ, {
         children: e => {
           var t, n, {
@@ -126,7 +126,7 @@ function b(e) {
             return e
           }({
             ref: e => {
-              i.current = e, T.current = e
+              i.current = e, O.current = e
             }
           }, a), n = n = {
             className: x.tagContainer,

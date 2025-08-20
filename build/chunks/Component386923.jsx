@@ -2,7 +2,7 @@
 /** chunk id: 386923, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -178,7 +178,7 @@ let y = {
     })
   };
 
-function O(e) {
+function T(e) {
   let t, {
       guild: n
     } = e,

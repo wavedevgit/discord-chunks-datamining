@@ -1,7 +1,7 @@
 /** Chunk was on 27069 **/
 /** chunk id: 502587, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,7 +32,7 @@ function f(e) {
   return e
 }
 
-function b(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -45,10 +45,10 @@ function b(e, t) {
   }), e
 }
 
-function g(e) {
+function b(e) {
   let {
     widget: t
-  } = e, g = l.useRef(null), p = e => {
+  } = e, b = l.useRef(null), p = e => {
     if (e.shiftKey) {
       (0, c.y8)(t.type), (0, s.L$)(u.qb.WIDGET_REMOVED);
       return
@@ -56,7 +56,7 @@ function g(e) {
       let {
         default: e
       } = await r.e("70887").then(r.bind(r, 37668));
-      return r => (0, n.jsx)(e, b(f({}, r), {
+      return r => (0, n.jsx)(e, g(f({}, r), {
         userId: o.default.getId(),
         widget: t
       }))
@@ -65,7 +65,7 @@ function g(e) {
     })
   };
   return (0, n.jsx)(i.yRy, {
-    targetElementRef: g,
+    targetElementRef: b,
     align: "top",
     position: "right",
     disablePointerEvents: false,
@@ -91,8 +91,8 @@ function g(e) {
         })
       })
     },
-    children: e => (0, n.jsx)(i.hU, b(f({}, e), {
-      buttonRef: g,
+    children: e => (0, n.jsx)(i.hU, g(f({}, e), {
+      buttonRef: b,
       icon: i.xhG,
       variant: "secondary",
       "aria-label": d.intl.string(d.t.xpSHSk),

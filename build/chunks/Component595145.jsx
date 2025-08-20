@@ -75,11 +75,11 @@ function er(e) {
     openedAt: em,
     onClose: ep,
     showGuildProfile: eb = true,
-    sourceAnalyticsLocations: ex = [],
-    disableActionsForPreview: eg = false
+    sourceAnalyticsLocations: eg = [],
+    disableActionsForPreview: ex = false
   } = e, {
     analyticsLocations: eh
-  } = (0, f.ZP)([...ex, u.Z.USER_PROFILE_MODAL_V2]), ej = (0, P.ZB)({
+  } = (0, f.ZP)([...eg, u.Z.USER_PROFILE_MODAL_V2]), ej = (0, P.ZB)({
     layout: "MODAL_V2",
     userId: t.id,
     sourceSessionId: ea,
@@ -119,10 +119,10 @@ function er(e) {
       user: t,
       currentUser: er
     }),
-    eL = (0, g.Y)({
+    eL = (0, x.Y)({
       userId: t.id
     }),
-    eR = (0, x.vh)(t.id),
+    eR = (0, g.vh)(t.id),
     eU = (0, A.Z)(t.id),
     eM = (0, m.Dt)(),
     ek = en.intl.format(en.t.KRe1Fh, {
@@ -157,7 +157,7 @@ function er(e) {
             transitionState: eu,
             "aria-labelledby": eM,
             parentComponent: "UserProfileModalV2",
-            children: [eg ? (0, r.jsxs)("div", {
+            children: [ex ? (0, r.jsxs)("div", {
               className: et.previewBar,
               children: [(0, r.jsxs)(c.X6q, {
                 id: eM,
@@ -183,7 +183,7 @@ function er(e) {
               })
             }), (0, r.jsx)(c.y5t, {
               children: (0, r.jsxs)(G.Z, {
-                className: eg ? et.disabled : true,
+                className: ex ? et.disabled : true,
                 user: t,
                 displayProfile: eT,
                 themeType: ee.l.MODAL_V2,
@@ -226,7 +226,7 @@ function er(e) {
                       themeType: ee.l.MODAL_V2,
                       hasEntered: eu === c.Dvm.ENTERED,
                       prompt: ew && t.id === er.id ? eB : null,
-                      disableToolbar: eg
+                      disableToolbar: ex
                     })]
                   }), (0, r.jsxs)(c.Ttm, {
                     fade: true,

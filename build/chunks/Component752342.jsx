@@ -83,7 +83,7 @@ function E(e) {
               })
             })
           }),
-          children: (0, r.jsxs)(x.Z, {
+          children: (0, r.jsxs)(g.Z, {
             user: n,
             displayProfile: F,
             themeType: A.l.MODAL,
@@ -135,7 +135,7 @@ function E(e) {
               })]
             }), (0, r.jsxs)("div", {
               className: C.body,
-              children: [(0, r.jsx)(g.Z, {
+              children: [(0, r.jsx)(x.Z, {
                 className: C.username,
                 user: n,
                 nickname: Y,

@@ -97,7 +97,7 @@ function P(e) {
             onClose: N
           })
         }), null != B && (0, r.jsx)("li", {
-          children: (0, r.jsx)(g.Z, {
+          children: (0, r.jsx)(x.Z, {
             location: "UserProfileModalV2Activity",
             user: n,
             currentUser: t,
@@ -134,7 +134,7 @@ function P(e) {
       children: (0, r.jsx)("ul", {
         className: O.cards,
         children: w.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(x.Z, {
+          children: (0, r.jsx)(g.Z, {
             location: "UserProfileModalV2Activity",
             user: n,
             currentUser: t,

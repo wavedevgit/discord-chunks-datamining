@@ -2,8 +2,8 @@
 /** chunk id: 497805, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v,
-  z: () => E
+  Z: () => O,
+  z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,12 +12,11 @@ var Chunk481060 = require("./481060.js"),
   Chunk317770 = require("./317770.js"),
   Chunk40851 = require("./40851.jsx"),
   Chunk594174 = require("./594174.js"),
-  Chunk585483 = require("./585483.js"),
   Chunk592183 = require("./592183.js"),
   Chunk224724 = require("./224724.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,22 +25,22 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -49,69 +48,66 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let g = null;
+let m = null;
 
-function E(e, t) {
+function g(e, t) {
   return "USER_PROFILE_MODAL_KEY:".concat(e, ":").concat(null == t ? "" : t)
 }
-async function b(e) {
+async function E(e) {
   var t, {
       userId: a,
       section: o,
-      subsection: u,
-      guildId: _,
-      channelId: m,
-      showGuildProfile: b = true,
+      subsection: f,
+      guildId: h,
+      channelId: E,
+      showGuildProfile: y = true,
       appContext: O,
       customStatusPrompt: v,
       disableActionsForPreview: I = false
     } = e,
-    T = h(e, ["userId", "section", "subsection", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]);
+    T = p(e, ["userId", "section", "subsection", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]);
   let S = l.default.getUser(a);
   if (null == S) return;
   let A = l.default.getCurrentUser();
-  null != A && (g = await (0, i.ZDy)(async () => {
+  null != A && (m = await (0, i.ZDy)(async () => {
     let e = (await Promise.all([n.e("1268"), n.e("27069"), n.e("62880"), n.e("16811")]).then(n.bind(n, 866035))).default;
-    return t => (0, r.jsx)(e, p({
+    return t => (0, r.jsx)(e, _({
       user: S,
       currentUser: A,
-      guildId: _,
+      guildId: h,
       initialSection: o,
-      initialSubsection: u,
-      channelId: m,
-      showGuildProfile: b,
+      initialSubsection: f,
+      channelId: E,
+      showGuildProfile: y,
       customStatusPrompt: v,
       disableActionsForPreview: I
     }, t, T))
   }, {
-    modalKey: E(a, b ? _ : true),
-    contextKey: (0, i.VnL)(null != (t = null != O ? O : (0, s.GB)()) ? t : f.IlC.APP),
+    modalKey: g(a, y ? h : true),
+    contextKey: (0, i.VnL)(null != (t = null != O ? O : (0, s.GB)()) ? t : d.IlC.APP),
     onCloseRequest: () => {
-      if (d.Z.hasSaveablePendingChanges()) {
-        c.S.dispatch(f.CkL.SHAKE_PROFILE_MODAL), c.S.dispatch(f.CkL.EMPHASIZE_NOTICE);
-        return
-      }
-      y()
+      if (u.Z.hasSaveablePendingChanges()) return void c.Z.notifyPendingWidgets();
+      b()
     }
   }))
 }
 
-function y() {
-  null != g && ((0, Chunk481060.Mr3)(g), Chunk592183.Z.clearPendingWidgets()), g = null
+function b() {
+  null != m && ((0, Chunk481060.Mr3)(m), Chunk592183.Z.clearPendingWidgets()), m = null
 }
-class O extends Chunk317770.Z {
+class y extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("USER_PROFILE_MODAL_OPEN", b), Chunk570140.Z.subscribe("USER_PROFILE_MODAL_CLOSE", y)
+    Chunk570140.Z.subscribe("USER_PROFILE_MODAL_OPEN", E), Chunk570140.Z.subscribe("USER_PROFILE_MODAL_CLOSE", b)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("USER_PROFILE_MODAL_OPEN", b), Chunk570140.Z.unsubscribe("USER_PROFILE_MODAL_CLOSE", y)
+    Chunk570140.Z.unsubscribe("USER_PROFILE_MODAL_OPEN", E), Chunk570140.Z.unsubscribe("USER_PROFILE_MODAL_CLOSE", b)
   }
 }
-let v = new O
+let O = new y

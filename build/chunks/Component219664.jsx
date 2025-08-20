@@ -115,10 +115,10 @@ function V(e) {
     loaded: _
   } = (0, S.cl)(n), {
     messageCountText: y
-  } = (0, T.nP)(n), {
+  } = (0, O.nP)(n), {
     isNew: w,
-    hasUnreads: O
-  } = (0, T.J$)(n), P = i.useRef(null), {
+    hasUnreads: T
+  } = (0, O.J$)(n), P = i.useRef(null), {
     handleLeftClick: N,
     handleRightClick: R
   } = (0, A.Z)({
@@ -129,7 +129,7 @@ function V(e) {
   i.useEffect(() => {
     null == x || x(b.current, p)
   }, [x, p]);
-  let Z = (0, T.xw)(n, s.z.CREATION_DATE, L.R6.POSTED_DURATION_AGO),
+  let Z = (0, O.xw)(n, s.z.CREATION_DATE, L.R6.POSTED_DURATION_AGO),
     F = (0, I.NN)(n),
     B = (0, k.nX)({
       id: t,
@@ -200,7 +200,7 @@ function V(e) {
         children: (0, r.jsx)(d.X6q, {
           variant: "heading-md/extrabold",
           className: z.title,
-          color: O ? "header-primary" : "text-muted",
+          color: T ? "header-primary" : "text-muted",
           style: {
             width: "".concat(h.width - 2 * E.I8, "px")
           },
@@ -241,9 +241,9 @@ function G(e) {
   } = e, {
     isBlocked: s,
     isIgnored: c
-  } = (0, o.cj)([O.Z], () => ({
-    isBlocked: null != n && O.Z.isBlockedForMessage(n),
-    isIgnored: null != n && O.Z.isIgnoredForMessage(n)
+  } = (0, o.cj)([T.Z], () => ({
+    isBlocked: null != n && T.Z.isBlockedForMessage(n),
+    isIgnored: null != n && T.Z.isIgnoredForMessage(n)
   }));
   return s ? (0, r.jsx)($, {
     message: D.intl.string(D.t.Lkp2fH),
@@ -271,13 +271,13 @@ function q(e) {
     coords: l
   } = e, s = (0, o.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), {
     firstMedia: c
-  } = (0, T.mX)({
+  } = (0, O.mX)({
     firstMessage: n,
     formatInline: false,
     noStyleAndInteraction: false
   }), {
     hasUnreads: d
-  } = (0, T.J$)(t), u = (0, o.e7)([w.Z], () => w.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = _.QK.useSetting(), h = _.cC.useSetting(), g = (0, b.Z)(h, u), f = (0, P.aU)(n, s, false), [x, p] = (0, E.rI)(l.width - 2 * E.LT), j = (null == n ? true : n.blocked) || null == (null != a ? a : c), v = t.isMediaPost();
+  } = (0, O.J$)(t), u = (0, o.e7)([w.Z], () => w.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = _.QK.useSetting(), h = _.cC.useSetting(), g = (0, b.Z)(h, u), f = (0, P.aU)(n, s, false), [x, p] = (0, E.rI)(l.width - 2 * E.LT), j = (null == n ? true : n.blocked) || null == (null != a ? a : c), v = t.isMediaPost();
   return j ? (0, r.jsx)(Q, {
     channel: t,
     firstMessage: n,
@@ -485,7 +485,7 @@ function Q(e) {
     hasUnreads: o
   } = e, c = _.jU.useSetting(), [u, m] = (0, E.rI)(s - 2 * E.LT), {
     content: h
-  } = (0, T.mX)({
+  } = (0, O.mX)({
     firstMessage: n,
     formatInline: false,
     noStyleAndInteraction: true

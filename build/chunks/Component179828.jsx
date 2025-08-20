@@ -84,7 +84,7 @@ function T(e) {
     canManageRoles: f,
     onAddRole: m,
     onRemoveRole: p
-  } = e, x = f && null != s, g = o.useRef(null), j = o.useMemo(() => "roles-".concat((0, l.Z)()), []), T = (0, i.ZP)({
+  } = e, g = f && null != s, x = o.useRef(null), j = o.useMemo(() => "roles-".concat((0, l.Z)()), []), T = (0, i.ZP)({
     id: j,
     isEnabled: true,
     scrollToStart: _.Cyb,
@@ -114,8 +114,8 @@ function T(e) {
           "aria-label": N,
           ref: n
         }, t), {
-          children: [C, x && (0, r.jsx)(v.Z, {
-            buttonRef: g,
+          children: [C, g && (0, r.jsx)(v.Z, {
+            buttonRef: x,
             guild: a,
             guildMember: s,
             numRoles: A,
@@ -136,7 +136,7 @@ function A(e) {
   } = e, i = Z(e, ["user", "currentUser", "guildId"]);
   let {
     trackUserProfileAction: c
-  } = (0, x.KZ)(), h = (0, a.e7)([m.Z], () => m.Z.getGuild(l)), v = (0, a.e7)([u.ZP], () => u.ZP.getMember(l, n.id)), I = null == v ? true : v.roles, A = (0, a.Wu)([f.Z], () => f.Z.getManyRoles(l, null != I ? I : []).sort(g.Z), [I, l]), [N] = (0, a.Wu)([p.Z], () => [p.Z.can(_.Plq.MANAGE_ROLES, h), p.Z.getGuildVersion(l)]), C = o.useCallback(e => {
+  } = (0, g.KZ)(), h = (0, a.e7)([m.Z], () => m.Z.getGuild(l)), v = (0, a.e7)([u.ZP], () => u.ZP.getMember(l, n.id)), I = null == v ? true : v.roles, A = (0, a.Wu)([f.Z], () => f.Z.getManyRoles(l, null != I ? I : []).sort(x.Z), [I, l]), [N] = (0, a.Wu)([p.Z], () => [p.Z.can(_.Plq.MANAGE_ROLES, h), p.Z.getGuildVersion(l)]), C = o.useCallback(e => {
     var t, r;
     c({
       action: "REMOVE_ROLE"

@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk179538 = require("./179538.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk975298 = require("./975298.js"),
@@ -105,21 +105,23 @@ let b = function() {
       children: Chunk388032.intl.format(Chunk388032.t.kqC5vr, {
         boostAnyGuildHook: (e, t) => {
           let n = null != y,
-            i = (0, r.jsx)(a.zx, {
+            i = (0, o.qgQ)(e),
+            s = (0, r.jsx)("div", {
               className: p.cta,
-              disabled: n,
-              color: a.zx.Colors.LINK,
-              look: a.zx.Looks.LINK,
-              onClick: n ? true : b,
-              children: e
-            }, t);
+              children: (0, r.jsx)(a.A, {
+                variant: "primary",
+                onClick: n ? true : b,
+                text: i,
+                disabled: n
+              }, t)
+            });
           return n ? (0, r.jsx)(c.Z, {
             text: y,
             "aria-label": y.toString(),
             children: e => (0, r.jsx)("span", E(m({}, e), {
-              children: i
+              children: s
             }))
-          }, t) : i
+          }, t) : s
         }
       })
     })]

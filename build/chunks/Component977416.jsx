@@ -1,7 +1,7 @@
 /** Chunk was on 27069 **/
 /** chunk id: 977416, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -45,7 +45,7 @@ function f(e, t) {
   }), e
 }
 
-function b(e) {
+function g(e) {
   var {
     gameName: t,
     onClick: r,
@@ -65,14 +65,14 @@ function b(e) {
     }
     return l
   }(e, ["gameName", "onClick", "loading"]);
-  let b = null != t ? t : c.intl.string(c.t.GIWFlJ),
-    g = c.intl.formatToPlainString(c.t["3mb1s7"], {
-      game: b
+  let g = null != t ? t : c.intl.string(c.t.GIWFlJ),
+    b = c.intl.formatToPlainString(c.t["3mb1s7"], {
+      game: g
     });
   return i ? (0, n.jsx)("div", {
     className: s.loadingCover
   }) : (0, n.jsx)(l.ua7, {
-    text: g,
+    text: b,
     children: e => (0, n.jsxs)(l.P3F, f(d({
       className: u.addButton
     }, e), {
@@ -91,7 +91,7 @@ function b(e) {
   })
 }
 
-function g(e) {
+function b(e) {
   let {
     userId: t,
     games: r,
@@ -99,10 +99,10 @@ function g(e) {
     isSuggestedGamesLoading: s,
     onDismiss: d,
     onClick: f
-  } = e, g = (0, i.Dt)();
+  } = e, b = (0, i.Dt)();
   return (0, n.jsxs)("aside", {
     className: u.container,
-    "aria-labelledby": g,
+    "aria-labelledby": b,
     children: [(0, n.jsxs)("div", {
       className: u.header,
       children: [(0, n.jsx)(l.P3F, {
@@ -114,7 +114,7 @@ function g(e) {
           color: "currentColor"
         })
       }), (0, n.jsx)(l.X6q, {
-        id: g,
+        id: b,
         variant: "text-xs/medium",
         color: "text-secondary",
         children: c.intl.string(c.t.zMUr6e)
@@ -127,7 +127,7 @@ function g(e) {
           gameName: l,
           imageSrc: i
         } = e;
-        return (0, n.jsx)(b, {
+        return (0, n.jsx)(g, {
           onClick: () => f(r, l, i),
           userId: t,
           loading: s || a(r),

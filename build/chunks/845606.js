@@ -1,6 +1,6 @@
 /** Chunk was on 90542 **/
-/** chunk id: 845606, original params: e,n,a (module,exports,require) **/
+/** chunk id: 845606, original params: e,n,i (module,exports,require) **/
 require.d(exports, {
-  _: () => i
+  _: () => a
 });
-let i = "Guild Welcome Screen"
+let a = "Guild Welcome Screen"

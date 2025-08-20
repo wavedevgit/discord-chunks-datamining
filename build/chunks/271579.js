@@ -2,9 +2,9 @@
 /** chunk id: 271579, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  WS: () => m,
-  ZP: () => E,
-  zS: () => g
+  WS: () => _,
+  ZP: () => h,
+  zS: () => p
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk264344 = require("./264344.js"),
   i = require.n(Chunk264344),
@@ -28,14 +28,11 @@ function l(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let c = "com.discord",
-  u = 0x3ac14d3a,
-  d = "com.hammerandchisel.discord",
-  f = "https://discordapp.page.link",
-  _ = "https://discordapp.onelink.me",
-  p = "Hs5r";
+let c = "https://discordapp.page.link",
+  u = "https://discordapp.onelink.me",
+  d = "Hs5r";
 
-function h() {
+function f() {
   var e, t;
   let n = ["WebView", "(iPhone|iPod|iPad)(?!.*Safari/)"],
     r = RegExp("(".concat(require.join("|"), ")"), "ig"),
@@ -44,13 +41,13 @@ function h() {
   return (null === i() || true === i() || null == (t = i().os) ? true : exports.family) !== "iOS" || Chunk511266
 }
 
-function m() {
+function _() {
   return (0, Chunk772848.Z)()
 }
 
-function g(e) {
-  let t = e.startsWith(_),
-    n = e.startsWith(f);
+function p(e) {
+  let t = e.startsWith(u),
+    n = e.startsWith(c);
   if (!t && !n) return null;
   try {
     let t = new URL(e).searchParams,
@@ -69,30 +66,22 @@ function g(e) {
   }
 }
 
-function E(e, t) {
-  var n, r;
+function h(e, t) {
   let {
-    utmSource: i,
-    androidFallbackLink: a,
-    iosFallbackLink: l
-  } = t, m = s(t, ["utmSource", "androidFallbackLink", "iosFallbackLink"]), g = new URL(e);
-  for (let e in m) {
-    let t = m[e];
-    null != t && g.searchParams.set(e, t)
+    utmSource: n,
+    androidFallbackLink: r,
+    iosFallbackLink: i
+  } = t, a = s(t, ["utmSource", "androidFallbackLink", "iosFallbackLink"]), l = new URL(e);
+  for (let e in a) {
+    let t = a[e];
+    null != t && l.searchParams.set(e, t)
   }
-  let E = encodeURIComponent(g.toString()),
-    b = encodeURIComponent("discord://app/open#".concat(g.toString())),
-    y = encodeURIComponent((0, o.Z)()),
-    O = +!!h(),
-    v = null != a ? encodeURIComponent(a) : null,
-    I = null != l ? encodeURIComponent(l) : null;
-  if ((null == (r = window) || null == (n = r.location) ? true : n.hash) === "#test") {
-    let e = 1 === O ? "true" : "false",
-      t = "".concat(_, "/").concat(p, "/?deep_link_value=").concat(E, "&pid=").concat(i, "&af_force_deeplink=").concat(e, "&af_og_description=").concat(y, "&af_dp=").concat(b);
-    return null != v && (t += "&af_android_url=".concat(v)), null != I && (t += "&af_ios_url=".concat(I)), console.log("Redirecting to ".concat(t)), t
-  } {
-    let e = encodeURIComponent(g.toString()),
-      t = "".concat(f, "/?link=").concat(e, "&utm_source=").concat(i, "&apn=").concat(c, "&isi=").concat(u, "&ibi=").concat(d, "&sd=").concat(y, "&efr=").concat(O);
-    return null != v && (t += "&afl=".concat(v)), null != I && (t += "&ifl=".concat(I)), t
-  }
+  let c = encodeURIComponent(l.toString()),
+    _ = encodeURIComponent("discord://app/open#".concat(l.toString())),
+    p = encodeURIComponent((0, o.Z)()),
+    h = f() ? "true" : "false",
+    m = null != r ? encodeURIComponent(r) : null,
+    g = null != i ? encodeURIComponent(i) : null,
+    E = "".concat(u, "/").concat(d, "/?deep_link_value=").concat(c, "&pid=").concat(n, "&af_force_deeplink=").concat(h, "&af_og_description=").concat(p, "&af_dp=").concat(_);
+  return null != m && (E += "&af_android_url=".concat(m)), null != g && (E += "&af_ios_url=".concat(g)), E
 }

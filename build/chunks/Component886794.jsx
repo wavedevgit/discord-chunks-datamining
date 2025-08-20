@@ -89,7 +89,7 @@ function E(e) {
                 user: n
               })
             }), (0, r.jsxs)("div", {
-              children: [(0, r.jsx)(x.Z, {
+              children: [(0, r.jsx)(g.Z, {
                 user: n,
                 displayProfile: k,
                 themeType: Z.l.MODAL
@@ -135,7 +135,7 @@ function E(e) {
                 }), (0, r.jsxs)(l.zJl, {
                   fade: true,
                   className: N.scroller,
-                  children: [(0, r.jsx)(g.Z, {
+                  children: [(0, r.jsx)(x.Z, {
                     userId: n.id,
                     userBio: null == k ? true : k.bio,
                     setLineClamp: false

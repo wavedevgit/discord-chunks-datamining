@@ -103,7 +103,7 @@ function x(e) {
       color: l.TVs.colors.ICON_TERTIARY,
       className: m.icon
     }), (0, n.jsx)(l.nn4, {
-      children: g.intl.format(g.t.TM0XDQ, {
+      children: b.intl.format(b.t.TM0XDQ, {
         name: c.ZP.getName(i, a, r)
       })
     }), (0, n.jsx)(l.Text, {
@@ -120,9 +120,9 @@ function h(e) {
     guildId: r,
     channelId: l,
     className: i
-  } = e, a = (0, b.Z)(t);
+  } = e, a = (0, g.Z)(t);
   return a.length > 0 ? (0, n.jsx)(s.Z, {
-    label: g.intl.formatToPlainString(g.t.ujhJdH, {
+    label: b.intl.formatToPlainString(b.t.ujhJdH, {
       numFriends: a.length
     }),
     className: i,
@@ -140,15 +140,15 @@ function P(e) {
     game: a,
     widgetType: c,
     loading: s = false,
-    disableInteraction: b = false
+    disableInteraction: g = false
   } = e, {
-    gameName: P = g.intl.string(g.t.GIWFlJ),
+    gameName: P = b.intl.string(b.t.GIWFlJ),
     imageSrc: E,
     applicationId: w,
     comment: S,
     tags: I
   } = a, _ = {
-    variant: "heading-sm/semibold",
+    variant: "heading-sm/medium",
     color: "text-default"
   }, T = o.default.getCurrentUser(), N = (null == T ? true : T.id) === t.id;
   return s ? (0, n.jsxs)("div", {
@@ -173,11 +173,11 @@ function P(e) {
       gameName: P,
       applicationId: w,
       userId: t.id,
-      disableInteraction: b,
+      disableInteraction: g,
       hideTooltip: true
     }), (0, n.jsxs)("div", {
       className: m.details,
-      children: [b ? (0, n.jsx)(l.X6q, y(j({}, _), {
+      children: [g ? (0, n.jsx)(l.X6q, y(j({}, _), {
         children: P
       })) : (0, n.jsx)(v, j({
         applicationId: w,
@@ -193,14 +193,14 @@ function P(e) {
         isCurrentUser: N,
         widgetType: c,
         applicationId: w,
-        disableInteraction: b
-      }), !b && (0, n.jsx)(h, {
+        disableInteraction: g
+      }), !g && (0, n.jsx)(h, {
         className: m.socialProof,
         applicationId: w,
         guildId: r,
         channelId: i
       })]
-    }), !b && N && (0, n.jsx)(f.Z, {
+    }), !g && N && (0, n.jsx)(f.Z, {
       game: a,
       widgetType: c,
       className: m.removeGameButton
