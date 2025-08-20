@@ -68,7 +68,7 @@ function P(e) {
         widget: t
       }, r));
     case i.l.CURRENT_GAMES:
-      return (0, n.jsx)(b.Z, E({
+      return (0, n.jsx)(p.Z, E({
         widget: t
       }, r));
     case i.l.WANT_TO_PLAY_GAMES:
@@ -103,17 +103,17 @@ function _(e) {
     user: t,
     guildId: r,
     channelId: i
-  } = e, o = (0, p.Z)(t.id), {
-    widgets: b,
+  } = e, o = (0, b.Z)(t.id), {
+    widgets: p,
     isGameFetching: O
   } = (0, g.Z)(o), m = (0, a.e7)([u.default], () => u.default.getId() === t.id), j = (() => {
     let [e, t] = (0, a.Wu)([d.Z], () => [d.Z.ipCountryCode, d.Z.ipCountryCodeRequest]), r = (0, s.U)();
     return l.useEffect(() => {
       null == e && null == t && r && (0, c.GE)()
     }, [e, t, r]), "GB" === e && r
-  })(), x = 0 === b.length && m;
-  return ((0, f.J)(m, b), x) ? (0, n.jsx)(v.Z, {}) : (0, n.jsxs)(n.Fragment, {
-    children: [j && (0, n.jsx)(w, {}), b.map(e => (0, n.jsx)(P, {
+  })(), x = 0 === p.length && m;
+  return ((0, f.J)(m, p), x) ? (0, n.jsx)(v.Z, {}) : (0, n.jsxs)(n.Fragment, {
+    children: [j && (0, n.jsx)(w, {}), p.map(e => (0, n.jsx)(P, {
       widget: e,
       user: t,
       guildId: r,

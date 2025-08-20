@@ -1,7 +1,7 @@
 /** Chunk was on 27069 **/
 /** chunk id: 750312, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,26 +16,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk272289 = require("./272289.jsx"),
   Chunk415734 = require("./415734.js");
 
-function b(e) {
+function p(e) {
   let {
     userId: t,
     widget: r,
     children: i,
-    disableInteraction: b,
+    disableInteraction: p,
     className: O
   } = e, [m, j] = l.useState(false), y = (0, s.Dt)(), v = (0, c.e7)([u.default], () => u.default.getId() === t), x = (0, d.kQ)(r), h = l.useCallback(() => {
     j(true)
   }, []);
   return (0, n.jsxs)("section", {
-    className: a()(p.container, O),
+    className: a()(b.container, O),
     "aria-labelledby": y,
     children: [(0, n.jsx)(f.Z, {
       userId: t,
       headingId: y,
       widget: r,
-      disableInteraction: b
+      disableInteraction: p
     }), (0, n.jsxs)(o.y5, {
-      children: [i, v && !x && !b && !m && (0, n.jsx)(g.Z, {
+      children: [i, v && !x && !p && !m && (0, n.jsx)(g.Z, {
         userId: t,
         widgetType: r.type,
         onDismiss: h

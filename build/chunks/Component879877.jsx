@@ -1,7 +1,7 @@
 /** Chunk was on 27069 **/
 /** chunk id: 879877, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,15 +15,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk44258 = require("./44258.js");
 
-function p(e) {
+function b(e) {
   let {
     tags: t,
     isCurrentUser: r,
     widgetType: i,
     applicationId: a
-  } = e, c = null == t ? true : t.filter(e => null != (0, d.zK)(e)), s = (0, l.useRef)(new Map), p = (0, l.useRef)(null), [y, v] = (0, l.useState)(0), [x, h] = (0, l.useState)(false), {
+  } = e, c = null == t ? true : t.filter(e => null != (0, d.zK)(e)), s = (0, l.useRef)(new Map), b = (0, l.useRef)(null), [y, v] = (0, l.useState)(0), [x, h] = (0, l.useState)(false), {
     trackUserProfileAction: E
-  } = (0, o.KZ)(), P = j(p, c, s, v);
+  } = (0, o.KZ)(), P = j(b, c, s, v);
   if ((0, l.useEffect)(() => (P(), window.addEventListener("resize", P), () => {
       window.removeEventListener("resize", P)
     }), [P, null == c ? true : c.join("")]), null == c || 0 === c.length) return null;
@@ -33,7 +33,7 @@ function p(e) {
     children: [(0, n.jsx)("ul", {
       className: g.tagList,
       "aria-label": f.intl.string(f.t.EfjTi4),
-      children: w.map(e => (0, n.jsx)(b, {
+      children: w.map(e => (0, n.jsx)(p, {
         tag: e,
         isCurrentUser: r,
         applicationId: a,
@@ -55,7 +55,7 @@ function p(e) {
           action: "EXPAND_GAME_TAGS"
         })
       },
-      ref: p
+      ref: b
     })), r && (0, n.jsx)(u.Z, {
       tags: t,
       widgetType: i,
@@ -63,7 +63,7 @@ function p(e) {
     })]
   })
 }
-let b = e => {
+let p = e => {
     let {
       tag: t,
       isCurrentUser: r,
@@ -73,8 +73,8 @@ let b = e => {
     } = e, u = (0, d.zK)(t);
     if (null == u) return null;
     let {
-      getText: p,
-      icon: b
+      getText: b,
+      icon: p
     } = u, O = () => {
       (0, s.RZ)(a, l, t), (0, c.pQ)({
         action: "REMOVE_GAME_TAGS"
@@ -83,12 +83,12 @@ let b = e => {
     return (0, n.jsxs)("li", {
       className: g.tag,
       ref: o,
-      children: [(0, n.jsx)(b, {
+      children: [(0, n.jsx)(p, {
         size: "xxs"
       }), (0, n.jsx)(i.Text, {
         variant: "text-xxs/medium",
         color: "text-secondary",
-        children: p()
+        children: b()
       }), r && (0, n.jsx)(i.ua7, {
         text: f.intl.string(f.t.Otv9fH),
         children: e => {
@@ -114,7 +114,7 @@ let b = e => {
             onClick: O,
             className: g.removeButton,
             "aria-label": f.intl.formatToPlainString(f.t.GCn1nZ, {
-              tag: p()
+              tag: b()
             }),
             children: (0, n.jsx)(i.Dio, {
               size: "xxs"

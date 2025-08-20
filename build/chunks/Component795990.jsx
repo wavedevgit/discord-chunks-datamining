@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk958461 = require("./958461.js");
 
-function b(e) {
+function p(e) {
   let {
     widgetType: t
   } = e, r = t === i.l.FAVORITE_GAMES ? c.LM.BALDURS_GATE_3 : c.LM.CYBERPUNK_2077, {
@@ -24,22 +24,22 @@ function b(e) {
     localizedName: a
   } = (0, o.$)(r);
   return (0, n.jsxs)("div", {
-    className: p.placeholderDetailCard,
+    className: b.placeholderDetailCard,
     children: [(0, n.jsx)("div", {
-      className: p.placeholderCover,
+      className: b.placeholderCover,
       children: null != l && "" !== l ? (0, n.jsx)("img", {
         src: l,
         alt: null != a ? a : "",
-        className: p.placeholderGameImage
+        className: b.placeholderGameImage
       }) : (0, n.jsx)("div", {
-        className: p.placeholderGameFallback
+        className: b.placeholderGameFallback
       })
     }), (0, n.jsxs)("div", {
-      className: p.placeholderText,
+      className: b.placeholderText,
       children: [(0, n.jsx)("div", {
-        className: p.placeholderBar
+        className: b.placeholderBar
       }), (0, n.jsx)("div", {
-        className: p.placeholderBar
+        className: b.placeholderBar
       })]
     })]
   })
@@ -50,7 +50,7 @@ function O(e) {
     widgetType: t
   } = e, r = t === i.l.WANT_TO_PLAY_GAMES ? [c.LM.ROBLOX, c.LM.VALORANT, c.LM.LEAGUE_OF_LEGENDS] : [c.LM.ZENLESS_ZONE_ZERO, c.LM.ELDEN_RING, c.LM.RED_DEAD_REDEMPTION_2];
   return (0, n.jsx)("div", {
-    className: p.placeholderCoverGrid,
+    className: b.placeholderCoverGrid,
     children: r.map((e, t) => (0, n.jsx)(m, {
       applicationId: e
     }, t))
@@ -65,13 +65,13 @@ function m(e) {
     localizedName: l
   } = (0, o.$)(t);
   return (0, n.jsx)("div", {
-    className: p.placeholderCoverItem,
+    className: b.placeholderCoverItem,
     children: null != r && "" !== r ? (0, n.jsx)("img", {
       src: r,
       alt: null != l ? l : "",
-      className: p.placeholderGameImage
+      className: b.placeholderGameImage
     }) : (0, n.jsx)("div", {
-      className: p.placeholderGameFallback
+      className: b.placeholderGameFallback
     })
   })
 }
@@ -83,14 +83,14 @@ function j(e) {
     (0, s.qH)(t), (0, u.L$)(d.qb.WIDGET_ADDED)
   }, [t]);
   return (0, n.jsxs)(a.P3F, {
-    className: p.widgetPromptContainer,
+    className: b.widgetPromptContainer,
     onClick: r,
     "aria-label": "Add widget: ".concat(g.intl.string(f.N[t])),
     children: [(() => {
       switch (t) {
         case i.l.FAVORITE_GAMES:
         case i.l.CURRENT_GAMES:
-          return (0, n.jsx)(b, {
+          return (0, n.jsx)(p, {
             widgetType: t
           });
         case i.l.WANT_TO_PLAY_GAMES:
@@ -102,9 +102,9 @@ function j(e) {
           return null
       }
     })(), (0, n.jsxs)("div", {
-      className: p.widgetPromptOverlay,
+      className: b.widgetPromptOverlay,
       children: [(0, n.jsx)("div", {
-        className: p.addButton,
+        className: b.addButton,
         children: (0, n.jsx)(a.oFk, {
           size: "md",
           color: "currentColor"

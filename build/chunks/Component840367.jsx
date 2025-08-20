@@ -1,7 +1,7 @@
 /** Chunk was on 27069 **/
 /** chunk id: 840367, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,21 +15,21 @@ var Chunk624238 = require("./624238.js"),
   Chunk825354 = require("./825354.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk635318 = require("./635318.js");
-let p = {
+let b = {
   [Chunk296009.l.FAVORITE_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.sUQar6),
   [Chunk296009.l.CURRENT_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.SqNnur),
   [Chunk296009.l.WANT_TO_PLAY_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.bWSQwc),
   [Chunk296009.l.PLAYED_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.scOKER)
 };
 
-function b(e) {
+function p(e) {
   var t;
   let {
     userId: r,
     headingId: u,
     widget: d,
-    disableInteraction: b = false
-  } = e, m = (0, a.e7)([c.default], () => c.default.getId() === r), j = (0, s.kQ)(d), y = p[d.type](), v = m && d.games.length > 0 ? (t = d.type) === i.l.FAVORITE_GAMES ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
+    disableInteraction: p = false
+  } = e, m = (0, a.e7)([c.default], () => c.default.getId() === r), j = (0, s.kQ)(d), y = b[d.type](), v = m && d.games.length > 0 ? (t = d.type) === i.l.FAVORITE_GAMES ? f.intl.string(f.t.wiXdER) : f.intl.format(f.t["zR1+09"], {
     numGames: l.k[t]
   }) : true;
   return (0, n.jsxs)("div", {
@@ -49,7 +49,7 @@ function b(e) {
     }), (0, n.jsx)(O, {
       widget: d,
       disabled: j,
-      disabledInteraction: b,
+      disabledInteraction: p,
       userId: r
     })]
   })

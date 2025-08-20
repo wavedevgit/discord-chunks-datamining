@@ -45,7 +45,7 @@ function g(e, t) {
   }), e
 }
 
-function p(e) {
+function b(e) {
   let {
     imageSrc: t,
     gameName: r
@@ -69,13 +69,13 @@ function p(e) {
   })
 }
 
-function b(e) {
+function p(e) {
   let {
     imageSrc: t,
     gameName: r,
     applicationId: l,
     userId: i,
-    className: b,
+    className: p,
     hideTooltip: O = false
   } = e, m = (0, s.Z)({
     location: "GameCover",
@@ -90,17 +90,17 @@ function b(e) {
     children: t => e(t)
   });
   return v(null == m ? e => (0, n.jsx)("div", g(f({
-    className: b
+    className: p
   }, e), {
-    children: (0, n.jsx)(p, {
+    children: (0, n.jsx)(b, {
       imageSrc: t,
       gameName: r
     })
   })) : e => (0, n.jsx)(o.P3F, g(f({}, e), {
     onClick: m,
     "aria-label": y,
-    className: a()(d.clickable, b),
-    children: (0, n.jsx)(p, {
+    className: a()(d.clickable, p),
+    children: (0, n.jsx)(b, {
       imageSrc: t,
       gameName: r
     })
@@ -132,8 +132,8 @@ function O(e) {
   let s = a()(d.coverContainer, l);
   return i ? (0, n.jsx)("div", {
     className: s,
-    children: (0, n.jsx)(p, f({}, c))
-  }) : (0, n.jsx)(b, f({
+    children: (0, n.jsx)(b, f({}, c))
+  }) : (0, n.jsx)(p, f({
     className: s,
     applicationId: t,
     userId: r,

@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function b(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function O(e) {
       let {
         default: e
       } = await r.e("70887").then(r.bind(r, 37668));
-      return r => (0, n.jsx)(e, b(p({}, r), {
+      return r => (0, n.jsx)(e, p(b({}, r), {
         userId: s.default.getId(),
         widget: t
       }))
@@ -102,7 +102,7 @@ function O(e) {
         })
       })
     },
-    children: e => (0, n.jsx)(a.hU, b(p({}, e), {
+    children: e => (0, n.jsx)(a.hU, p(b({}, e), {
       buttonRef: m,
       icon: a.xhG,
       variant: "secondary",

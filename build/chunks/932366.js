@@ -1,4 +1,4 @@
-/** Chunk was on 99799 **/
+/** Chunk was on 75283 **/
 /** chunk id: 932366, original params: e,t,n (module,exports,require) **/
 module.exports = {
   gameCover: "gameCover__1a3d6",
@@ -6,5 +6,5 @@ module.exports = {
   gameCoverImage: "gameCoverImage__1a3d6 gameCover__1a3d6",
   fallback: "fallback__1a3d6 gameCover__1a3d6",
   clickable: "clickable__1a3d6",
-  loadingCover: "loadingCover__1a3d6 gameCover__1a3d6"
+  loadingCover: "loadingCover__1a3d6 coverContainer__1a3d6 gameCover__1a3d6"
 }

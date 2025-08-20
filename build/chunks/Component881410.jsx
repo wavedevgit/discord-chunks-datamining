@@ -35,16 +35,16 @@ function f(e) {
   let {
     disabled: t,
     widgetType: r
-  } = e, [f] = (0, a.ynZ)(), g = l.useRef(null), p = l.useCallback(e => {
+  } = e, [f] = (0, a.ynZ)(), g = l.useRef(null), b = l.useCallback(e => {
     (0, c.ES)(r, {
       applicationId: e
     })
   }, [r]), {
-    options: b,
+    options: p,
     matchSorterOptions: O
   } = (0, o.h)(), m = l.useCallback(e => {
     var t, r;
-    return "" === e.trim() ? b : (0, i.Lu)(b, e, (t = d({}, O), r = r = {
+    return "" === e.trim() ? p : (0, i.Lu)(p, e, (t = d({}, O), r = r = {
       threshold: i.Lu.rankings.CONTAINS
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
@@ -56,7 +56,7 @@ function f(e) {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
     }), t))
-  }, [b, O]);
+  }, [p, O]);
   return (0, n.jsx)(a.yRy, {
     targetElementRef: g,
     position: "bottom",
@@ -71,7 +71,7 @@ function f(e) {
         autoFocus: true,
         value: f,
         onChange: e => {
-          p(e), t()
+          b(e), t()
         },
         onClose: t,
         multiSelect: false,

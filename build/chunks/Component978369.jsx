@@ -62,31 +62,31 @@ function f(e) {
     widgetType: r,
     applicationId: f
   } = e, g = (0, l.useRef)(null), {
-    trackUserProfileAction: p
-  } = (0, a.KZ)(), b = (0, l.useMemo)(() => null != t ? t : [], [t]), O = (0, l.useCallback)(function(e) {
+    trackUserProfileAction: b
+  } = (0, a.KZ)(), p = (0, l.useMemo)(() => null != t ? t : [], [t]), O = (0, l.useCallback)(function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      n = new Set(b);
+      n = new Set(p);
     if (t) {
       let t = Object.values(c.aE).find(t => t.tags.includes(e));
       null != t && (t.tags.forEach(e => {
         n.delete(e)
-      }), n.add(e), p({
+      }), n.add(e), b({
         action: "ADD_GAME_TAGS"
       }))
-    } else n.has(e) ? (n.delete(e), p({
+    } else n.has(e) ? (n.delete(e), b({
       action: "REMOVE_GAME_TAGS"
-    })) : (n.add(e), p({
+    })) : (n.add(e), b({
       action: "ADD_GAME_TAGS"
     }));
     (0, o.n$)(r, f, Array.from(n))
-  }, [b, p, r, f]), m = (0, l.useCallback)(e => {
-    let t = new Set(b);
+  }, [p, b, r, f]), m = (0, l.useCallback)(e => {
+    let t = new Set(p);
     e.forEach(e => {
       t.delete(e)
-    }), p({
+    }), b({
       action: "REMOVE_GAME_TAGS"
     }), (0, o.n$)(r, f, Array.from(t))
-  }, [b, p, r, f]);
+  }, [p, b, r, f]);
   return (0, n.jsx)(i.yRy, {
     targetElementRef: g,
     position: "right",
@@ -96,7 +96,7 @@ function f(e) {
         closePopout: t
       } = e;
       return (0, n.jsx)(d, {
-        currentTags: b,
+        currentTags: p,
         onTagSelect: O,
         onNoneSelect: m,
         onClose: t

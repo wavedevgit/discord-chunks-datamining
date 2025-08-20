@@ -103,7 +103,7 @@ function x(e) {
       color: l.TVs.colors.ICON_TERTIARY,
       className: m.icon
     }), (0, n.jsx)(l.nn4, {
-      children: p.intl.format(p.t.TM0XDQ, {
+      children: b.intl.format(b.t.TM0XDQ, {
         name: c.ZP.getName(i, a, r)
       })
     }), (0, n.jsx)(l.Text, {
@@ -122,7 +122,7 @@ function h(e) {
     className: i
   } = e, a = (0, g.Z)(t);
   return a.length > 0 ? (0, n.jsx)(s.Z, {
-    label: p.intl.formatToPlainString(p.t.ujhJdH, {
+    label: b.intl.formatToPlainString(b.t.ujhJdH, {
       numFriends: a.length
     }),
     className: i,
@@ -142,7 +142,7 @@ function E(e) {
     loading: s = false,
     disableInteraction: g = false
   } = e, {
-    gameName: E = p.intl.string(p.t.GIWFlJ),
+    gameName: E = b.intl.string(b.t.GIWFlJ),
     imageSrc: P,
     applicationId: w,
     comment: _,
@@ -158,11 +158,11 @@ function E(e) {
     }), (0, n.jsx)("div", {
       className: m.details,
       children: (0, n.jsxs)("div", {
-        className: b.placeholderText,
+        className: p.placeholderText,
         children: [(0, n.jsx)("div", {
-          className: b.placeholderBar
+          className: p.placeholderBar
         }), (0, n.jsx)("div", {
-          className: b.placeholderBar
+          className: p.placeholderBar
         })]
       })
     })]
