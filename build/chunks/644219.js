@@ -19,5 +19,6 @@ module.exports = {
   flexCentered: "flexCentered__3ce43",
   tooltip: "tooltip__3ce43",
   pillContainer: "pillContainer__3ce43",
-  pillIcon: "pillIcon__3ce43"
+  pillIcon: "pillIcon__3ce43",
+  referralBanner: "referralBanner__3ce43"
 }

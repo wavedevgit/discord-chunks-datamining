@@ -1,9 +1,11 @@
 /** Chunk was on 66181 **/
 /** chunk id: 647277, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  _: () => C
+  _: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
+  Chunk120356 = require("./120356.js"),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
@@ -19,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk756555 = require("./756555.js"),
   Chunk295234 = require("./295234.js");
 
-function x(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -37,20 +39,20 @@ function x(e) {
   }
   return e
 }
-let _ = e => {
+let E = e => {
     let {
       startingScreen: t,
       analyticsLocations: r
     } = e;
-    l.default.track(g.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+    c.default.track(f.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
       location_stack: r
-    }), (0, s.ZDy)(async () => {
+    }), (0, l.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 656139));
       return n => {
         var r, s;
-        return (0, i.jsx)(e, (r = x({}, n), s = s = {
+        return (0, i.jsx)(e, (r = j({}, n), s = s = {
           startingScreen: t
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
@@ -65,111 +67,113 @@ let _ = e => {
       }
     })
   },
-  j = e => {
+  C = e => {
     let {
       user: t
     } = e, {
       avatarSrc: n,
       eventHandlers: r
-    } = (0, a.Z)({
+    } = (0, o.Z)({
       userId: t.id,
-      size: s.EFr.SIZE_24
+      size: l.EFr.SIZE_24
     });
-    return (0, i.jsx)(s.qEK, x({
-      className: f.reminderAvatar,
+    return (0, i.jsx)(l.qEK, j({
+      className: x.reminderAvatar,
       src: n,
-      "aria-label": (0, c.oY)(t),
-      size: s.EFr.SIZE_24
+      "aria-label": (0, u.oY)(t),
+      size: l.EFr.SIZE_24
     }, r), t.id)
   },
-  E = e => {
+  O = e => {
     let {
       referralSentUsers: t,
       allRedeemed: n
     } = e;
     return (0, i.jsxs)("div", {
-      className: f.reminderContainer,
+      className: x.reminderContainer,
       children: [(0, i.jsxs)("div", {
-        className: f.remindersSentContainer,
-        children: [t.map(e => (0, i.jsx)(j, {
+        className: x.remindersSentContainer,
+        children: [t.map(e => (0, i.jsx)(C, {
           user: e
-        }, e.id)), (0, i.jsx)(s.Text, {
+        }, e.id)), (0, i.jsx)(l.Text, {
           variant: "text-md/medium",
           color: "text-primary",
-          className: f.reminderAvatarText,
+          className: x.reminderAvatarText,
           children: (e => {
             let {
               recipientNames: t
             } = e, [n, i, r] = t;
-            return 1 === t.length ? h.intl.format(h.t["B/IYFR"], {
+            return 1 === t.length ? b.intl.format(b.t["B/IYFR"], {
               recipientName: n
-            }) : 2 === t.length ? h.intl.format(h.t.uIOxcH, {
+            }) : 2 === t.length ? b.intl.format(b.t.uIOxcH, {
               firstRecipientName: n,
               secondRecipientName: i
-            }) : 3 === t.length ? h.intl.format(h.t["1k64R0"], {
+            }) : 3 === t.length ? b.intl.format(b.t["1k64R0"], {
               firstRecipientName: n,
               secondRecipientName: i,
               thirdRecipientName: r
             }) : ""
           })({
-            recipientNames: t.map(e => (0, c.oY)(e))
+            recipientNames: t.map(e => (0, u.oY)(e))
           })
         })]
-      }), (0, i.jsx)(s.zxk, {
+      }), (0, i.jsx)(l.zxk, {
         variant: "secondary",
         size: "sm",
         disabled: n,
-        text: h.intl.string(h.t.NPCYFR),
-        onClick: () => _({
-          startingScreen: p.K.REMINDER,
+        text: b.intl.string(b.t.NPCYFR),
+        onClick: () => E({
+          startingScreen: h.K.REMINDER,
           analyticsLocations: []
         })
       })]
     })
   },
-  C = () => {
+  v = e => {
     let {
-      referralSentUsers: e
-    } = (0, Chunk796634.G)(), t = (0, Chunk442837.e7)([Chunk276444.Z], () => Chunk276444.Z.getRecipientStatus()).values().every(e => e === d.Fe.REDEEMED);
-    return (0, Chunk951288.jsxs)("div", {
-      className: Chunk756555.container,
-      children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk756555.bannerContainer,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Eep, {
-          src: Chunk295234.Z,
+      className: t
+    } = e, {
+      referralSentUsers: n
+    } = (0, g.G)(), r = (0, a.e7)([p.Z], () => p.Z.getRecipientStatus()).values().every(e => e === m.Fe.REDEEMED);
+    return (0, i.jsxs)("div", {
+      className: s()(x.container, t),
+      children: [(0, i.jsxs)("div", {
+        className: x.bannerContainer,
+        children: [(0, i.jsx)(l.Eep, {
+          src: _.Z,
           height: 84,
           width: 144
-        }), (0, Chunk951288.jsxs)("div", {
-          className: Chunk756555.bannerContent,
-          children: [(0, Chunk951288.jsxs)("div", {
-            className: Chunk756555.bannerContentText,
-            children: [(0, Chunk951288.jsx)(Chunk481060.X6q, {
+        }), (0, i.jsxs)("div", {
+          className: x.bannerContent,
+          children: [(0, i.jsxs)("div", {
+            className: x.bannerContentText,
+            children: [(0, i.jsx)(l.X6q, {
               variant: "heading-md/semibold",
               color: "header-primary",
-              children: Chunk388032.intl.string(Chunk388032.t.USo4s7)
-            }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+              children: b.intl.string(b.t.USo4s7)
+            }), (0, i.jsx)(l.Text, {
               variant: "text-md/medium",
               color: "text-secondary",
-              children: module.length === Chunk796634.Q ? true === exports ? Chunk388032.intl.format(Chunk388032.t["1aEjsL"], {
-                helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM)
-              }) : Chunk388032.intl.format(Chunk388032.t["+u3AOD"], {
-                helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM)
-              }) : Chunk388032.intl.format(Chunk388032.t["omMr+f"], {
-                helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM)
+              children: n.length === g.Q ? true === r ? b.intl.format(b.t["1aEjsL"], {
+                helpdeskArticle: d.Z.getArticleURL(f.BhN.REFERRAL_PROGRAM)
+              }) : b.intl.format(b.t["+u3AOD"], {
+                helpdeskArticle: d.Z.getArticleURL(f.BhN.REFERRAL_PROGRAM)
+              }) : b.intl.format(b.t["omMr+f"], {
+                helpdeskArticle: d.Z.getArticleURL(f.BhN.REFERRAL_PROGRAM)
               })
             })]
-          }), (0, Chunk951288.jsx)(Chunk481060.zxk, {
+          }), (0, i.jsx)(l.zxk, {
             variant: "primary",
-            text: Chunk388032.intl.string(Chunk388032.t.Lm2nFR),
-            onClick: () => _({
-              startingScreen: Chunk656139.K.SELECT_FRIENDS,
+            text: b.intl.string(b.t.Lm2nFR),
+            onClick: () => E({
+              startingScreen: h.K.SELECT_FRIENDS,
               analyticsLocations: []
             })
           })]
         })]
-      }), module.length > 0 && (0, Chunk951288.jsx)(E, {
-        referralSentUsers: module,
-        allRedeemed: exports
+      }), n.length > 0 && (0, i.jsx)(O, {
+        referralSentUsers: n,
+        allRedeemed: r
       })]
     })
   }

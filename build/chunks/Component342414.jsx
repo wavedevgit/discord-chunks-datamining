@@ -60,7 +60,7 @@ let z = e => {
     } = X(), h = null;
     l ? h = (0, i.jsx)(v.Z, {
       variant: v.C.SUBSCRIBER_HOME
-    }) : o ? h = (0, i.jsx)(k.Z, {}) : c && (h = (0, i.jsx)(L.Z, {}));
+    }) : o ? h = (0, i.jsx)(k.Z, {}) : c && (h = (0, i.jsx)(T._, {}));
     let f = (0, a.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()),
       b = (0, O.N)(),
       x = (0, C.Ng)(),
@@ -183,7 +183,9 @@ let z = e => {
               },
               className: Chunk644219.button
             })
-          }), require.cohort === Chunk504692.S$.Control ? (0, Chunk951288.jsx)(Chunk386733.Z, {}) : (0, Chunk951288.jsx)(Chunk647277._, {})]
+          }), require.cohort === Chunk504692.S$.Control ? (0, Chunk951288.jsx)(Chunk386733.Z, {}) : (0, Chunk951288.jsx)(Chunk647277._, {
+            className: Chunk644219.referralBanner
+          })]
         })
       })]
     })
